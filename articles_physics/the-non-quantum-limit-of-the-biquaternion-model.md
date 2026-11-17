@@ -26,7 +26,7 @@ The conventions are those of the companions: $\mathbb{B}=\mathbb{C}\otimes_{\mat
 | the phase | $\frac{S_{\tilde\Xi}}{\hbar}=\mathrm{Sc}\!\left(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural}\right)$ | a pure number; nothing left to move |
 | the bracket | $[x,p]=i\,\hbar$ | it vanishes: the Poisson bracket |
 
-**The three rows do not agree, and that is the argument.** The third is the classical result; the first is its opposite, since $\Box-k_{m}^{2}$ stiffens until propagation is suppressed. One knob cannot deliver both.
+**The three rows do not agree, and that is the argument.** The third is the classical result; the first is its opposite, since $\Box_\Phi-k_{m}^{2}$ stiffens until propagation is suppressed. One knob cannot deliver both.
 
 **At fixed wavelength it does not even leave the other family.** On shell $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_{m}^{2}$, so $\frac{k_{\Phi}}{k_{m}}=\gamma\beta$ and $\frac{k_{t}^{\prime}}{k_{m}}=\gamma$. Send $\hbar\to0$ at fixed $k_{\Phi}$: both tend to zero and to one, and the triangle collapses onto the mass side.
 

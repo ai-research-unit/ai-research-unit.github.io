@@ -19,14 +19,14 @@
 **Conventions.** The algebra, the sectors, the pairing and the mass are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
 \qquad
 D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi,
 \qquad
 D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta ,
 $$
 
-with the mechanical momentum $\vec\pi=-i\hbar\vec\nabla-q\vec A$ and the potential energy $-ϙ\varphi$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.
+with the mechanical momentum $\vec\pi=-i\hbar\vec\nabla_\Phi-q\vec A$ and the potential energy $-ϙ\varphi$. The Proca potential is written $\tilde A$ when the distinction from the connection matters, and $\tilde A_\Phi$ is reserved for the connection.
 
 ## The Carrier and the Measure
 
@@ -47,7 +47,7 @@ with the mechanical momentum $\vec\pi=-i\hbar\vec\nabla-q\vec A$ and the potenti
 $$
 S=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F_{\mathrm{gco}}\tilde F_{\mathrm{gco}}\bigr)-\tfrac12k_m^{2}\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr],
 \qquad
-\tilde F_{\mathrm{gco}}=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr) .
+\tilde F_{\mathrm{gco}}=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr) .
 $$
 
 The field strength carries the connection, so the connection enters twice: once through the derivative and once through $\tilde F$. **That is not the Dirac case**, where the field strength is absent from the equation and the coupling enters once, and it is not the scalar case either, where the covariant square is the only carrier of the coupling.
@@ -74,17 +74,17 @@ The first term is the free density, the second is bilinear — one power of each
 **The coupled operator is the free operator with the covariant d'Alembertian in the transverse factor.**
 
 $$
-P_{\mathrm{gco}}=\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2}-\tilde\nabla_{\mathrm{gco}}D_{\mathrm{gco}},
+P_{\mathrm{gco}}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}-\tilde\nabla_{\mathrm{gco},\Phi}D_{\mathrm{gco}},
 \qquad
-D_{\mathrm{gco}}\tilde A=\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr),
+D_{\mathrm{gco}}\tilde A=\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 $$
 
-which is $\tilde\nabla_{\mathrm{gco}}\tilde F_{\mathrm{gco}}-k_m^{2}\tilde A$ and therefore the coupled equation. The second-order operator is the sum of the squared components plus the curvature, and the curvature is a pure vector.
+which is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde F_{\mathrm{gco}}-k_m^{2}\tilde A$ and therefore the coupled equation. The second-order operator is the sum of the squared components plus the curvature, and the curvature is a pure vector.
 
 **The two projectors are the covariant ones and the split is the free split.** With
 
 $$
-P_L^{\mathrm{gco}}=\tilde\nabla_{\mathrm{gco}}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\bigr)^{-1}D_{\mathrm{gco}},
+P_L^{\mathrm{gco}}=\tilde\nabla_{\mathrm{gco},\Phi}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\bigr)^{-1}D_{\mathrm{gco}},
 \qquad
 P_T^{\mathrm{gco}}=1-P_L^{\mathrm{gco}},
 $$
@@ -92,7 +92,7 @@ $$
 the same two-line computation as in the free case gives
 
 $$
-\boxed{\;P_{\mathrm{gco}}=\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2}\bigr)P_T^{\mathrm{gco}}-k_m^{2}P_L^{\mathrm{gco}}\; }
+\boxed{\;P_{\mathrm{gco}}=\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}\bigr)P_T^{\mathrm{gco}}-k_m^{2}P_L^{\mathrm{gco}}\; }
 $$
 
 because the covariant gradient and the covariant divergence still compose to the covariant d'Alembertian. **The mass is still the only thing that acts on the longitudinal direction**, and it acts on it with no derivative, no connection and no background in it.
@@ -100,7 +100,7 @@ because the covariant gradient and the covariant divergence still compose to the
 **So the determinant is the covariant transverse cube times the same single factor.**
 
 $$
-\det P_{\mathrm{gco}}=\bigl(\det(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2})\bigr)^{3}\cdot\bigl(-k_m^{2}\bigr).
+\det P_{\mathrm{gco}}=\bigl(\det((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2})\bigr)^{3}\cdot\bigl(-k_m^{2}\bigr).
 $$
 
 The coupling deforms the transverse factor and leaves the longitudinal one alone. **That is the article's sharpest statement about the integral's structure**: a background changes the three propagating states' spectrum, their dispersion and their determinant, and changes nothing whatever about the constrained mode's eigenvalue.
@@ -112,7 +112,7 @@ The coupling deforms the transverse factor and leaves the longitudinal one alone
 **The constraint survives because the curvature has no scalar part.** Applying $D_{\mathrm{gco}}$ to the coupled equation gives
 
 $$
-D_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}\tilde F_{\mathrm{gco}}=k_m^{2}D_{\mathrm{gco}}\tilde A ,
+D_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}\tilde F_{\mathrm{gco}}=k_m^{2}D_{\mathrm{gco}}\tilde A ,
 $$
 
 and the left side is a total divergence of an antisymmetric object plus the scalar part of the curvature, which vanishes. **The curvature's vanishing scalar part is exact and is not an approximation**: the curvature of a biquaternionic connection is a pure vector by construction, and $\mathrm{Sc}$ of a pure vector is zero. Hence
@@ -120,7 +120,7 @@ and the left side is a total divergence of an antisymmetric object plus the scal
 $$
 k_m^{2}D_{\mathrm{gco}}\tilde A=0
 \qquad\Longrightarrow\qquad
-\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0 ,
+\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0 ,
 $$
 
 the **covariant Lorenz condition**, forced by the equation and not imposed on it.
@@ -130,7 +130,7 @@ the **covariant Lorenz condition**, forced by the equation and not imposed on it
 **The constraint is what the saddle's longitudinal part is, and the mass is what it costs.** In the transverse-longitudinal split the saddle is
 
 $$
-\tilde A^{\mathrm{cl}}=-\frac{P_T^{\mathrm{gco}}\tilde J}{\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2}}+\frac{P_L^{\mathrm{gco}}\tilde J}{k_m^{2}} ,
+\tilde A^{\mathrm{cl}}=-\frac{P_T^{\mathrm{gco}}\tilde J}{(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}}+\frac{P_L^{\mathrm{gco}}\tilde J}{k_m^{2}} ,
 $$
 
 exactly as in the free case with the covariant operators in place. **The longitudinal response is still local and still weighted by $1/k_m^{2}$**, and this is the same statement as the free article's: the constrained direction does not propagate.
@@ -153,7 +153,7 @@ exactly as in the free case with the covariant operators in place. **The longitu
 
 $$
 \Gamma_{\mathrm{1\,loop}}=\tfrac12\mathrm{Tr}\log P_{\mathrm{gco}}
-=3\cdot\tfrac12\mathrm{Tr}\log\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2}\bigr)+\tfrac12\mathrm{Tr}\log(-k_m^{2}),
+=3\cdot\tfrac12\mathrm{Tr}\log\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}\bigr)+\tfrac12\mathrm{Tr}\log(-k_m^{2}),
 $$
 
 with the last term a constant. **The background's one-loop effect on the Proca field is three times its effect on a charged scalar**, and this is the integral's form of the statement that a massive vector has three states in a background as well as in vacuum.
@@ -180,7 +180,7 @@ with the last term a constant. **The background's one-loop effect on the Proca f
 
 ## Open Questions
 
-**1. What is the determinant in a background where the covariant operators do not commute with the projectors?** The split uses $D_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}$, which holds because the curvature has no scalar part. Whether the projectors commute with the covariant d'Alembertian, and hence whether the split is a spectral split as well as an algebraic one, is not shown here.
+**1. What is the determinant in a background where the covariant operators do not commute with the projectors?** The split uses $D_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$, which holds because the curvature has no scalar part. Whether the projectors commute with the covariant d'Alembertian, and hence whether the split is a spectral split as well as an algebraic one, is not shown here.
 
 **2. Does the constraint's deformation have an integral consequence?** The ordinary divergence of the saddle is a functional of the background. Whether that functional is a total derivative, and whether it can be written as a surface term of the effective action, is open.
 
@@ -194,7 +194,7 @@ with the last term a constant. **The background's one-loop effect on the Proca f
 
 The coupled Proca functional integral runs over a different configuration space from the free one. The material sector is not closed, the coupling forces the carrier to $\mathbb{B}$, the measure doubles to eight real components per point, and the free integral is the real slice. That is the article's first and largest fact, and it has no counterpart in the scalar, spinor or Klein–Gordon pairs.
 
-The action is quadratic in the Proca field for a fixed connection, with the free density, a bilinear mixed term and a term quadratic in the connection; the expansion was checked to $3.6\times10^{-15}$ and the mixed term's scalar part vanishes identically. The operator is the free operator with the covariant d'Alembertian, and it splits as $(\tilde\nabla^{\natural}\tilde\nabla-k_m^{2})P_T-k_m^{2}P_L$: the coupling deforms the transverse cube and leaves the longitudinal eigenvalue at $-k_m^{2}$, so the determinant is the covariant transverse determinant cubed times the same single factor. The covariant Lorenz condition is forced exactly, because the curvature is a pure vector and has no scalar part; the ordinary condition is not, and the difference is bilinear in the connection.
+The action is quadratic in the Proca field for a fixed connection, with the free density, a bilinear mixed term and a term quadratic in the connection; the expansion was checked to $3.6\times10^{-15}$ and the mixed term's scalar part vanishes identically. The operator is the free operator with the covariant d'Alembertian, and it splits as $((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi-k_m^{2})P_T-k_m^{2}P_L$: the coupling deforms the transverse cube and leaves the longitudinal eigenvalue at $-k_m^{2}$, so the determinant is the covariant transverse determinant cubed times the same single factor. The covariant Lorenz condition is forced exactly, because the curvature is a pure vector and has no scalar part; the ordinary condition is not, and the difference is bilinear in the connection.
 
 The coupled field has a charge, because the enlarged carrier has a phase and the mass term is phase-invariant; the measure gains a circle per point with unit Jacobian, and the gauge invariance is exact at every step with no link and no ghost. The one-loop effective action is three times a charged scalar's plus a constant.
 
@@ -205,15 +205,15 @@ The coupled field has a charge, because the enlarged carrier has a phase and the
 | $\mathbb{B}$, $\mathbb{B}_\Phi$ | The coupled carrier, eight real dimensions; the free carrier, four |
 | $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The connection |
 | $\tilde A$ | The Proca potential, now a general element of $\mathbb{B}$ |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | The covariant gradient |
-| $\tilde F_{\mathrm{gco}}=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$ | The coupled field strength |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | The covariant gradient |
+| $\tilde F_{\mathrm{gco}}=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | The coupled field strength |
 | $\tilde V=\mathrm{Vect}(\tilde A_\Phi^{\natural}\tilde A)$ | The bilinear term; a pure vector |
 | $\mathrm{Sc}(\tilde V)=0$ | Why the mixed term does not touch the constraint |
-| $P_{\mathrm{gco}}=(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2})P_T^{\mathrm{gco}}-k_m^{2}P_L^{\mathrm{gco}}$ | The coupled split |
-| $\det P_{\mathrm{gco}}=(\det(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2}))^{3}(-k_m^{2})$ | The determinant; coupling deforms only the cube |
-| $D_{\mathrm{gco}}\tilde A=\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ | The covariant Lorenz condition |
+| $P_{\mathrm{gco}}=((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2})P_T^{\mathrm{gco}}-k_m^{2}P_L^{\mathrm{gco}}$ | The coupled split |
+| $\det P_{\mathrm{gco}}=(\det((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}))^{3}(-k_m^{2})$ | The determinant; coupling deforms only the cube |
+| $D_{\mathrm{gco}}\tilde A=\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ | The covariant Lorenz condition |
 | $e^{iϙ\Gamma/\hbar}$ | The gauge transformation; unit Jacobian |
-| $3\cdot\frac12\mathrm{Tr}\log(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2})$ | The one-loop term; three times a scalar's |
+| $3\cdot\frac12\mathrm{Tr}\log((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2})$ | The one-loop term; three times a scalar's |
 
 ## Further Reading
 

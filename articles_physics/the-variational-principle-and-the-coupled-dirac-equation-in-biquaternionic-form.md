@@ -7,11 +7,11 @@ This article states the action whose Euler–Lagrange equations are the coupled 
 **The equation.** The coupled pair is
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 $$
 
 with the connection in the material sector $\mathbb{B}_\Phi$ and with central scalar coefficients in the abelian case.
@@ -38,10 +38,10 @@ with $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$. The coupled action is the 
 
 $$
 \boxed{\;
-S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
+S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]\;}
 $$
 
-with $\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural}$.
+with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural}$.
 
 **The two kinetic terms carry different operators, and that is the parent's arrangement.** The left part carries the conjugate and the right part carries the operator, so the two differ in the sign of the spatial derivative and in the sign of the connection's spatial slots. That arrangement is what makes the two spatial derivatives conjugate to each other, which is what the two-component structure of the equation requires.
 
@@ -99,19 +99,19 @@ $$
 with the two residuals
 
 $$
-r_L=\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L-k_m\tilde\Xi_R,
+r_L=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L-k_m\tilde\Xi_R,
 \qquad
-r_R=\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R-k_m\tilde\Xi_L .
+r_R=\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\tilde\Xi_L .
 $$
 
 Stationarity for every variation of compact support is $r_L=r_R=0$, which is the coupled pair.
 
-**The coefficient, once.** Varying $\tilde\Xi_R^{*}$ gives $\frac{\hbar c}{2}\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R]$; varying $\tilde\Xi_R$ gives the same expression again after the operator is moved to the other slot by self-adjointness. The two halves add, the $\frac12$ cancels, and the coefficient is $\hbar c$. The coupling does not change the argument, because the connection's contribution to the two halves is the same central number in both.
+**The coefficient, once.** Varying $\tilde\Xi_R^{*}$ gives $\frac{\hbar c}{2}\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R]$; varying $\tilde\Xi_R$ gives the same expression again after the operator is moved to the other slot by self-adjointness. The two halves add, the $\frac12$ cancels, and the coefficient is $\hbar c$. The coupling does not change the argument, because the connection's contribution to the two halves is the same central number in both.
 
-**The count.** Each residual is an element of $\mathbb{B}$ with eight real components, so the pair is sixteen real equations on sixteen real unknowns. The compatibility condition is obtained by applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to the first residual and using the second:
+**The count.** Each residual is an element of $\mathbb{B}$ with eight real components, so the pair is sixteen real equations on sixteen real unknowns. The compatibility condition is obtained by applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first residual and using the second:
 
 $$
-\Bigl(\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
+\Bigl(\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
 $$
 
 the covariant wave equation with the curvature term. The coupling therefore changes the compatibility condition in exactly one place, the curvature, and nowhere else.
@@ -169,7 +169,7 @@ The inner unit $e_\mu$ is what turns the product into a current, and the right m
 **Energy and momentum.** The Lagrangian does not depend explicitly on the coordinates when the connection is constant, so the four translations give four conserved charges with
 
 $$
-T_{\mu\nu}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\nu}\tilde\Xi_p\Bigr]-\delta_{\mu\nu}\,\mathcal{L},
+T_{\mu\nu}=\sum_{p}\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_p^{*}\,s_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\Phi,\nu}\tilde\Xi_p\Bigr]-\delta_{\mu\nu}\,\mathcal{L},
 $$
 
 and the gradient in the current is the covariant one. **When the connection depends on position the conservation is modified**: the divergence of the stress tensor is not zero but the Lorentz force density,
@@ -233,7 +233,7 @@ with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary poin
 The coupled action is the free action with the two gradients replaced by the two covariant operators,
 
 $$
-S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 and its variation gives the coupled pair. The mass term is invariant under a local central phase without help; the kinetic term is not; the repair is the covariant derivative with the gauge law's sign, and it is unique within the abelian class.
@@ -252,7 +252,7 @@ The constant setting is closed — a finite product of exponentials up to the ga
 | --- | --- |
 | $S$ | The coupled action; functional on the pair $(\tilde\Xi_L,\tilde\Xi_R)$ |
 | $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^{3}r$ | Integration measure; $r'_t=ct'$ the material time |
-| $\tilde\nabla_{\mathrm{gco}},\ \tilde\nabla_{\mathrm{gco}}^{\natural}$ | Covariant derivative and its $\natural$-image |
+| $\tilde\nabla_{\mathrm{gco},\Phi},\ (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ | Covariant derivative and its $\natural$-image |
 | $\tilde A_\Phi,\ \tilde F$ | Potential biquaternion and curvature |
 | $\lambda=e^{iϙ\Gamma/\hbar}$ | Local central phase; $\Gamma$ real |
 | $r_L,r_R$ | The two residuals; $r_L=r_R=0$ is the coupled pair |

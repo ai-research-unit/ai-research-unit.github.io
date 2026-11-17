@@ -156,7 +156,7 @@ which is the box, and it is the only numerical check the identity needs.
 **What the element is good for.** Three lines, each a place where the three wave numbers enter at once.
 
 - On the plane wave $\tilde{Ξ}=\tilde{Ξ}_{0}\exp\bigl(-i\theta_{\mathrm{pwp}})$ the exponent is $\mathrm{Sc}(\tilde K_{\Phi}\tilde R_{\Phi}^{\natural})=\vec k_{\Phi}\cdot\vec r_{\Phi}-k_{t}^{\prime}\,r'_t$, the phase in inverse lengths and in no other unit.
-- The gradient acts by left multiplication by $i\tilde K_{\Phi}$, $\tilde\nabla_\Phi\tilde{Ξ}=i\tilde K_{\Phi}\tilde{Ξ}$, and the d'Alembertian by $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, $\Box\tilde{Ξ}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}\tilde{Ξ}=k_m^{2}\tilde{Ξ}$, which is why the massive operator of the series is written $\Box-k_m^{2}$.
+- The gradient acts by left multiplication by $i\tilde K_{\Phi}$, $\tilde\nabla_\Phi\tilde{Ξ}=i\tilde K_{\Phi}\tilde{Ξ}$, and the d'Alembertian by $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$, $\Box_\Phi\tilde{Ξ}=-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}\tilde{Ξ}=k_m^{2}\tilde{Ξ}$, which is why the massive operator of the series is written $\Box_\Phi-k_m^{2}$.
 - On the null cone, where $k_m=0$ and $k_{t}^{\prime}=k_{\Phi}$, the element is null and therefore a zero divisor, and the equation $\tilde K_{\Phi}\tilde{Ξ}_{0}=0$ has a two-dimensional kernel there. That is the massless case of §*The Massless Case*, and it exists because the norm has vanished, not because a limit was taken.
 
 The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
@@ -165,7 +165,7 @@ The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\
 
 ## What a Wave Number Is
 
-**It is the gradient of the phase.** Write a plane wave as $e^{-i\theta_{\mathrm{pwp}}}$. The spatial entry is the gradient of the phase, $\vec k_{\Phi}=\vec\nabla\phi$, and the temporal entry is the rate of the phase divided by the speed of light, $k_{t}^{\prime}=-(1/c)\,\partial\phi/\partial t$. The two are the same derivative read in space and in time, which is why the single element $\tilde K_{\Phi}=ik_{t}^{\prime}e_t+\vec k_{\Phi}$ carries both and why neither entry needs a constant inside the equation.
+**It is the gradient of the phase.** Write a plane wave as $e^{-i\theta_{\mathrm{pwp}}}$. The spatial entry is the gradient of the phase, $\vec k_{\Phi}=\vec\nabla_\Phi\phi$, and the temporal entry is the rate of the phase divided by the speed of light, $k_{t}^{\prime}=-(1/c)\,\partial\phi/\partial t$. The two are the same derivative read in space and in time, which is why the single element $\tilde K_{\Phi}=ik_{t}^{\prime}e_t+\vec k_{\Phi}$ carries both and why neither entry needs a constant inside the equation.
 
 **It counts radians per unit length.** The phase turns by one radian over a distance $1/k_{\Phi}$ and by a full turn over $2\pi/k_{\Phi}$. So a wave number is an angle per unit length, and the ordinary wave number, the count of turns per metre, is $k_{\Phi}/(2\pi)$. The same counting gives the nodes: consecutive nodal surfaces are $\pi/k_{\Phi}$ apart, so $k_{\Phi}/\pi$ of them fit in a metre, and a wave of wave number $k_{\Phi}$ crossing a chamber of length $L$ puts $k_{\Phi}L/\pi$ nodes in it.
 
@@ -285,7 +285,7 @@ The rule of the series is that a coefficient of a differential operator is an in
 | site in the series | form written | which wave number |
 |---|---|---|
 | the Dirac chiral pair | $k_m$ | the mass |
-| the Klein–Gordon operator | $\Box-k_m^{2}$ | the mass |
+| the Klein–Gordon operator | $\Box_\Phi-k_m^{2}$ | the mass |
 | the shift of the Cauchy theory | $\kappa=-i k_m$ | the mass |
 | the temporal entry of the harmonic parameter | $k_{t}^{\prime}$ | the energy |
 | the spatial entry of the same parameter | $k_m$ | the mass |
@@ -312,7 +312,7 @@ $$
 
 The parameter's square is the squared wave number of the state, and by the box its modulus is the momentum wave number. That is the box of this article read inside the operator, and it is why the two entries are wave numbers of different kinds rather than one number written twice: the temporal entry is the whole hypotenuse and the spatial entry is one leg, so the difference of their squares is the remaining leg.
 
-**The operator and the parameter are the same object.** The massive d'Alembertian is $\Box-k_m^{2}$ and the harmonic parameter is a wave element whose temporal entry is $k_{t}^{\prime}$ and whose spatial entry is $k_m$. Both are inverse lengths, both could be written as the same display, and neither needs a conversion inside the equation. That is the practical gain of the wave-number notation: the coefficient of the operator, the entry of the parameter and the component of the four-vector are one number.
+**The operator and the parameter are the same object.** The massive d'Alembertian is $\Box_\Phi-k_m^{2}$ and the harmonic parameter is a wave element whose temporal entry is $k_{t}^{\prime}$ and whose spatial entry is $k_m$. Both are inverse lengths, both could be written as the same display, and neither needs a conversion inside the equation. That is the practical gain of the wave-number notation: the coefficient of the operator, the entry of the parameter and the component of the four-vector are one number.
 
 ## The Mass Wave Number
 
@@ -344,7 +344,7 @@ the reduced Compton wavelength, $386.159\ \mathrm{fm}$ for the electron. That di
 
 **It is the range of the force the particle carries.** The Yukawa potential is $e^{-r/\lambda_m}/r$, so the distance $1/k_m$ is where the exponential has fallen by $1/e$, and beyond it the force is gone. A force carried by a massless particle has $k_m=0$ and no range at all, which is the same statement as the divergence of $1/k_m$.
 
-**It is the distance a mass term measures.** The coefficient $k_m$ in $\Box-k_m^{2}$ fixes the distance at which the Green function stops falling as $1/r$ and starts falling exponentially. The operator coefficient and the range of the force are one distance, and in wave numbers the coefficient and the range are the same symbol read two ways.
+**It is the distance a mass term measures.** The coefficient $k_m$ in $\Box_\Phi-k_m^{2}$ fixes the distance at which the Green function stops falling as $1/r$ and starts falling exponentially. The operator coefficient and the range of the force are one distance, and in wave numbers the coefficient and the range are the same symbol read two ways.
 
 **It is not a size.** The two comparisons point in opposite directions and that is the argument. For the electron the distance is $386\ \mathrm{fm}$, while the particle is pointlike below $10^{-18}\ \mathrm{m}$: the distance exceeds every bound on the radius by five orders of magnitude. For the proton the distance is $0.21\ \mathrm{fm}$, while the charge radius is $0.84\ \mathrm{fm}$: the distance falls short of the radius by a factor of four. A number that is sometimes far too large and sometimes too small is not a radius, and §*It Is Not the Size of the Particle* collects the comparisons.
 
@@ -513,7 +513,7 @@ $$
 
 The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of the plane-wave phase: a real wave vector dotted with a real position, so the angle is real.
 
-That is the definition, and it is the form in which the number enters every equation of the series: the spatial gradient $\vec\nabla$ carries an inverse length, and on a plane wave it returns $i\vec k_{\Phi}$. The biquaternionic gradient $\tilde\nabla_\Phi$ does the same, and on a plane wave it returns $i$ times the four-wave-number.
+That is the definition, and it is the form in which the number enters every equation of the series: the spatial gradient $\vec\nabla_\Phi$ carries an inverse length, and on a plane wave it returns $i\vec k_{\Phi}$. The biquaternionic gradient $\tilde\nabla_\Phi$ does the same, and on a plane wave it returns $i$ times the four-wave-number.
 
 ### The Phase Winding
 
@@ -824,7 +824,7 @@ e^{-i\theta_{\mathrm{pwp}}}
 \underbrace{e^{-i\theta_{\mathrm{pwp}}}}_{\chi},
 $$
 
-with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi$ the exponent gives $\partial_{r'_t}\chi=-i\Omega\chi$, and $\Omega$ is quadratic in $\vec k_{\Phi}$, so the number $k_{\Phi}^{2}$ is the symbol of the operator $-\Delta$:
+with $f$ the rest-frame clock of §*The Rest-Frame Clock*. On the envelope $\chi$ the exponent gives $\partial_{r'_t}\chi=-i\Omega\chi$, and $\Omega$ is quadratic in $\vec k_{\Phi}$, so the number $k_{\Phi}^{2}$ is the symbol of the operator $-\Delta_\Phi$:
 
 $$
 i\,\frac{\partial\chi}{\partial r'_t}=-\frac{1}{2k_m}\,\Delta_\Phi\,\chi
@@ -912,7 +912,7 @@ For the electron $k_m=2.5896\times10^{12}\ \mathrm{m^{-1}}$, and it is the same 
 
 None of the three is the size of the particle: the proton's charge radius times its mass wave number is four, and the electron is pointlike far below its own inverse. At $m=0$ the triangle degenerates, $k_{t}^{\prime}=k_{\Phi}$ and the mass wave number is no longer a wave number of the problem. The massless equations of the series are exact for that reason, not approximate.
 
-The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $k_{t}^{\prime}=k_m+\Omega$, note that the triangle then reads $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta_{\mathrm{nr}}=\Omega/(2k_m)$, is the small parameter, and the error of the truncation is $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ in closed form. The leading term is $\hbar c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $k_{\Phi}^{2}\to-\Delta$, is the free Schrödinger equation.
+The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $k_{t}^{\prime}=k_m+\Omega$, note that the triangle then reads $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta_{\mathrm{nr}}=\Omega/(2k_m)$, is the small parameter, and the error of the truncation is $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ in closed form. The leading term is $\hbar c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $k_{\Phi}^{2}\to-\Delta_\Phi$, is the free Schrödinger equation.
 
 ## Summary of Notation
 
@@ -943,6 +943,6 @@ The non-relativistic limit is one operation on the triangle. Split off the mass 
 - [Physics Units and Common Elements Conventions](physics-units-and-common-elements-conventions.html), for the five dimensions, the derived units, and the cautions on $k$ and on $\lambda$.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the gradient as a pure element and the unit of each derivative.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair in which the mass wave number appears as a coefficient and for the harmonic parameter whose entries are the energy wave number and the mass wave number.
-- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the operator $\Box-k_m^{2}$ and the non-relativistic limit.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the operator $\Box_\Phi-k_m^{2}$ and the non-relativistic limit.
 - [The Biquaternion D'Alembertian and Its Green's Functions](the-biquaternion-dalembertian-and-its-greens-functions.html), for the Yukawa kernel whose range is $1/k_m$.
 - [Conformal Invariance and the Massless Limit in Biquaternionic Form](conformal-invariance-and-the-massless-limit-in-biquaternionic-form.html), for the degenerate case $k_m\to0$.

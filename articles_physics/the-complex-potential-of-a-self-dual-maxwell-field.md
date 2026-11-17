@@ -71,7 +71,7 @@ $$
 u=t+z,\qquad v=t-z,\qquad w=x-iy,\qquad \bar w=x+iy,
 $$
 
-with $\partial/\partial u=\tfrac12(\partial/\partial h_t+\partial/\partial r_z)$, $\partial/\partial v=\tfrac12(\partial/\partial h_t-\partial/\partial r_z)$, $\partial/\partial w=\tfrac12(\partial/\partial r_x+i\partial/\partial r_y)$, $\partial/\partial\bar w=\tfrac12(\partial/\partial r_x-i\partial/\partial r_y)$, and $\Box=4(\partial^2/\partial u\,\partial v-\partial^2/\partial w\,\partial\bar w)$. The four components of the potential form a $2\times2$ complex matrix, and it is the matrix, not the 4-vector, in which the structure is visible:
+with $\partial/\partial u=\tfrac12(\partial/\partial h_t+\partial/\partial r_z)$, $\partial/\partial v=\tfrac12(\partial/\partial h_t-\partial/\partial r_z)$, $\partial/\partial w=\tfrac12(\partial/\partial r_x+i\partial/\partial r_y)$, $\partial/\partial\bar w=\tfrac12(\partial/\partial r_x-i\partial/\partial r_y)$, and $\Box_\Phi=4(\partial^2/\partial u\,\partial v-\partial^2/\partial w\,\partial\bar w)$. The four components of the potential form a $2\times2$ complex matrix, and it is the matrix, not the 4-vector, in which the structure is visible:
 
 $$
 C=\begin{pmatrix}C_u & C_w\ C_{\bar w} & C_v\end{pmatrix},
@@ -89,7 +89,7 @@ which is the form in which the gauge condition joins the matrix picture.
 
 ## The Two-Component Gauge and the Reduced System
 
-In these coordinates the self-duality condition plus the Lorentz gauge admits a gauge in which only two components survive, $C_{\bar w}$ and $C_v$, the other two, $C_u$ and $C_w$, being zero. The removal is the source's: the residual gauge freedom of the system is $C_\mu\mapsto C_\mu+\partial\lambda/\partial x_\mu$ with $\Box\lambda=0$, which preserves the Lorentz gauge, and a parameter with that freedom can always be chosen to satisfy $C_u=\partial\lambda/\partial u$, $C_w=\partial\lambda/\partial\bar w$, because the compatibility condition $\partial C_u/\partial \bar w=\partial C_w/\partial u$ for those two equations holds identically on the equations of motion. Subtraction then removes both components at once.
+In these coordinates the self-duality condition plus the Lorentz gauge admits a gauge in which only two components survive, $C_{\bar w}$ and $C_v$, the other two, $C_u$ and $C_w$, being zero. The removal is the source's: the residual gauge freedom of the system is $C_\mu\mapsto C_\mu+\partial\lambda/\partial x_\mu$ with $\Box_\Phi\lambda=0$, which preserves the Lorentz gauge, and a parameter with that freedom can always be chosen to satisfy $C_u=\partial\lambda/\partial u$, $C_w=\partial\lambda/\partial\bar w$, because the compatibility condition $\partial C_u/\partial \bar w=\partial C_w/\partial u$ for those two equations holds identically on the equations of motion. Subtraction then removes both components at once.
 
 In that gauge the system reduces to the pair
 
@@ -102,7 +102,7 @@ $$
 which is the source's system, and which is the Weyl system of a massless two-spinor written in these coordinates. It is the content of the whole construction that this pair is solved by one function. Put
 
 $$
-C_{\bar w}=\frac{\partial G}{\partial u},\qquad C_v=\frac{\partial G}{\partial \bar w},\qquad \Box G=0 .
+C_{\bar w}=\frac{\partial G}{\partial u},\qquad C_v=\frac{\partial G}{\partial \bar w},\qquad \Box_\Phi G=0 .
 $$
 
 Then the first equation holds identically, because it is the equality of the mixed partials $\partial^2G/\partial\bar w\,\partial u=\partial^2G/\partial u\,\partial\bar w$, and the second is the wave equation itself,
@@ -110,10 +110,10 @@ Then the first equation holds identically, because it is the equality of the mix
 $$
 \frac{\partial^2G}{\partial v\,\partial u}=\frac{\partial^2G}{\partial w\,\partial\bar w}
 \iff
-\Box G=0 ,
+\Box_\Phi G=0 ,
 $$
 
-since $\Box G=4(\partial^2G/\partial u\,\partial v-\partial^2G/\partial w\,\partial\bar w)$. The first is an identity on any $G$ and needs no check; the second is the wave equation. On the plane wave $G=\exp i(\vec k_\Phi\cdot\vec r-\omega h_t)$ the two sides of the first both equal $\tfrac{i}{4}(k_z-\omega)(k_y+ik_x)G$, and the two sides of the second are $\tfrac14(k_z^2-\omega^2)G$ and $-\tfrac14(k_x^2+k_y^2)G$, equal exactly when $\omega^2=\vec k_\Phi\cdot\vec k_\Phi$. So the pair holds identically for every harmonic plane wave, and the closed forms were confirmed numerically at a random point.
+since $\Box_\Phi G=4(\partial^2G/\partial u\,\partial v-\partial^2G/\partial w\,\partial\bar w)$. The first is an identity on any $G$ and needs no check; the second is the wave equation. On the plane wave $G=\exp i(\vec k_\Phi\cdot\vec r-\omega h_t)$ the two sides of the first both equal $\tfrac{i}{4}(k_z-\omega)(k_y+ik_x)G$, and the two sides of the second are $\tfrac14(k_z^2-\omega^2)G$ and $-\tfrac14(k_x^2+k_y^2)G$, equal exactly when $\omega^2=\vec k_\Phi\cdot\vec k_\Phi$. So the pair holds identically for every harmonic plane wave, and the closed forms were confirmed numerically at a random point.
 
 The pair is therefore not a differential system to be solved: one of its equations is an identity and the other is the wave equation. **Every solution of the reduced system is obtained by differentiating one complex solution of the wave equation**, and the source states the converse for every solution of the homogeneous Maxwell equations. The construction is a generation procedure, and the generation is differentiation.
 
@@ -141,7 +141,7 @@ G=\frac{\bar w}{z+r},
 r=\sqrt{w\bar w+z^2}=\sqrt{r_x^2+r_y^2+r_z^2},
 $$
 
-which satisfies $\Box G=0$ and the eikonal, and which is the stereographic projection $S^2\to\mathbb{C}$ from one pole. The potential is
+which satisfies $\Box_\Phi G=0$ and the eikonal, and which is the stereographic projection $S^2\to\mathbb{C}$ from one pole. The potential is
 
 $$
 C_{\bar w}=\frac{\partial G}{\partial u}=-\frac{\bar w}{2r(r_z+r)},
@@ -203,7 +203,7 @@ and each part is a real Maxwell field obeying the ordinary conservation laws. At
 
 The Coulomb scalar is the first member of a one-parameter family, $G_{\mathrm{ϙ}}=\mathrm{ϙ}\,\bar w/(z+r)$, and the charge is $\mathrm{ϙ}/4$. What fixes $\mathrm{ϙ}$ is not the wave equation. Two exact statements show it.
 
-**The wave equation and the eikonal are scale invariant.** $\Box G=0$ is linear and the eikonal is quadratic in the derivatives, so $G_{\mathrm{ϙ}}$ satisfies both for every $\mathrm{ϙ}$; the Coulomb-like field therefore exists for every charge. This is why the family is a family.
+**The wave equation and the eikonal are scale invariant.** $\Box_\Phi G=0$ is linear and the eikonal is quadratic in the derivatives, so $G_{\mathrm{ϙ}}$ satisfies both for every $\mathrm{ϙ}$; the Coulomb-like field therefore exists for every charge. This is why the family is a family.
 
 **The first-order conditions are not.** The programme's generating function is not an arbitrary harmonic scalar: it is subject to the two constraints
 
@@ -241,13 +241,13 @@ G=\exp\,i(\vec k_\Phi\cdot\vec r-\omega h_t),
 \omega^2=\vec k_\Phi\cdot\vec k_\Phi ,
 $$
 
-satisfies the pair exactly, since it is $\Box G=0$ together with an identity; the potential built from it, however, does not satisfy the duality-purity condition, and the failure is of the order of the field itself: checked here at five wave vectors, $\lvert\vec E+i\vec H\rvert$ is between $1.1$ and $1.3$ times $\lvert\vec E\rvert$, and $\lvert\vec E-i\vec H\rvert$ between $0.86$ and $0.96$ times it, so neither combination vanishes. The failure is not a small deformation to be removed by a better gauge, and the field is not a null field either: $\lvert\vec E\rvert/\lvert\vec H\rvert$ is between $2.0$ and $3.6$ across the same five wave vectors, where nullness would put it at $1$. It is a plain non-duality-pure complex field, and the ratio drifts without bound as $\vec k_\Phi$ approaches the third axis, where the potential degenerates and both fields vanish. This is the source's own remark that the corresponding Maxwell field is charge-free: it belongs to the other solution class, not to a deformation of this one. The wave equation is therefore not sufficient; the self-duality of the field is an extra condition on the scalar, and in the programme's construction that extra condition is the pair above together with the twistor, which is nonlinear.
+satisfies the pair exactly, since it is $\Box_\Phi G=0$ together with an identity; the potential built from it, however, does not satisfy the duality-purity condition, and the failure is of the order of the field itself: checked here at five wave vectors, $\lvert\vec E+i\vec H\rvert$ is between $1.1$ and $1.3$ times $\lvert\vec E\rvert$, and $\lvert\vec E-i\vec H\rvert$ between $0.86$ and $0.96$ times it, so neither combination vanishes. The failure is not a small deformation to be removed by a better gauge, and the field is not a null field either: $\lvert\vec E\rvert/\lvert\vec H\rvert$ is between $2.0$ and $3.6$ across the same five wave vectors, where nullness would put it at $1$. It is a plain non-duality-pure complex field, and the ratio drifts without bound as $\vec k_\Phi$ approaches the third axis, where the potential degenerates and both fields vanish. This is the source's own remark that the corresponding Maxwell field is charge-free: it belongs to the other solution class, not to a deformation of this one. The wave equation is therefore not sufficient; the self-duality of the field is an extra condition on the scalar, and in the programme's construction that extra condition is the pair above together with the twistor, which is nonlinear.
 
 This is the linear face of induced nonlinearity. The linear equations of the potential — the wave equation — admit far more solutions than the self-dual fields, and what restricts them is a nonlinear condition on the generating function, imposed not for convenience but as the definition of the admissible class. The corpus records the same phenomenon from the other side in *The Algebrodynamical Programme*: there the primary equation is nonlinear and the Maxwell equations are its consequence; here the Maxwell equation is linear and the nonlinearity is what selects its self-dual sector.
 
 ## Summary
 
-The complex potential of a self-dual Maxwell field is a $2\times2$ complex matrix whose entries are the four null-coordinate components $C_u=\Pi+C_z$, $C_w=C_x-iC_y$, $C_{\bar w}=C_x+iC_y$, $C_v=\Pi-C_z$. Duality purity, $\vec E+i\vec H=0$ with $\vec E=-\partial\vec C/\partial h_t-\vec\nabla_\Phi\Pi$ and $\vec H=\vec\nabla_\Phi\times\vec C$, together with the complex Lorentz gauge, is four complex first-order conditions on four complex unknowns; no real field can satisfy it, since the condition forces a real field to vanish. In the gauge $C_u=C_w=0$ the system reduces to $\partial C_{\bar w}/\partial \bar w=\partial C_v/\partial u$, $\partial C_{\bar w}/\partial v=\partial C_v/\partial w$, and with $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ the first equation is the equality of mixed partials and the second is $\Box G=0$: the reduced system is solved by one complex harmonic scalar, and the field strengths are its second derivatives.
+The complex potential of a self-dual Maxwell field is a $2\times2$ complex matrix whose entries are the four null-coordinate components $C_u=\Pi+C_z$, $C_w=C_x-iC_y$, $C_{\bar w}=C_x+iC_y$, $C_v=\Pi-C_z$. Duality purity, $\vec E+i\vec H=0$ with $\vec E=-\partial\vec C/\partial h_t-\vec\nabla_\Phi\Pi$ and $\vec H=\vec\nabla_\Phi\times\vec C$, together with the complex Lorentz gauge, is four complex first-order conditions on four complex unknowns; no real field can satisfy it, since the condition forces a real field to vanish. In the gauge $C_u=C_w=0$ the system reduces to $\partial C_{\bar w}/\partial \bar w=\partial C_v/\partial u$, $\partial C_{\bar w}/\partial v=\partial C_v/\partial w$, and with $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ the first equation is the equality of mixed partials and the second is $\Box_\Phi G=0$: the reduced system is solved by one complex harmonic scalar, and the field strengths are its second derivatives.
 
 The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\vec r/(4r^3)$, the Coulomb field of a charge $\tfrac14$ with a magnetic partner of the same modulus. The family $G_{\mathrm{ϙ}}=\mathrm{ϙ}\bar w/(z+r)$ satisfies the wave equation and the eikonal for every $\mathrm{ϙ}$ and the programme's two first-order constraints only at $\mathrm{ϙ}=1$, because those constraints are linear on one side and quadratic on the other; that mismatch is the mechanism of charge quantisation, and it fixes $|ϙ|=\tfrac14$. The constraints admit $\bar w/(z+r)$ and $\bar w/(z-r)$ but not the programme's second eikonal solution $f^-=w/(r-z)$, which the quadratic eikonal cannot distinguish from its conjugate. The reduced system is strictly weaker than duality purity — a plane-wave scalar satisfies it and produces a field that is not duality pure — so the linear construction does not by itself characterise the physical class; the nonlinear condition does. One printed component of the source, $C_{\bar w}=-2ϙ\bar w/(z+r)$, is missing a factor $1/r$.
 
@@ -264,8 +264,8 @@ The Coulomb member of the family is $G=\bar w/(z+r)$, giving $\vec E=-i\vec H=\v
 | $\partial\Pi/\partial h_t+\vec\nabla_\Phi\cdot\vec C=0$ | Complex Lorentz gauge |
 | $u,v,w,\bar w$ | $u=t+z$, $v=t-z$, $w=x-iy$, $\bar w=x+iy$ |
 | $C_u,C_v,C_w,C_{\bar w}$ | $\Pi+C_z$, $\Pi-C_z$, $C_x-iC_y$, $C_x+iC_y$; entries of the potential matrix |
-| $\Box=4(\partial^2/\partial u\,\partial v-\partial^2/\partial w\,\partial\bar w)$ | Wave operator in these coordinates |
-| $G$ | Superpotential: complex scalar with $\Box G=0$ generating the potential |
+| $\Box_\Phi=4(\partial^2/\partial u\,\partial v-\partial^2/\partial w\,\partial\bar w)$ | Wave operator in these coordinates |
+| $G$ | Superpotential: complex scalar with $\Box_\Phi G=0$ generating the potential |
 | $\vec E,\vec H$ | Complex field strengths of the construction, the source's tilde; $\mathbb C$-valued, and the corpus's real field is cited only where the text says so; vacuum, $\epsilon_r=\mu_r=1$, with the magnetic field in units of $\vec E/c$ |
 | $C_{\bar w}=\partial G/\partial u$, $C_v=\partial G/\partial \bar w$ | The two surviving components in the gauge $C_u=C_w=0$ |
 | $\partial G/\partial w=G\,\partial G/\partial u$, $\partial G/\partial v=G\,\partial G/\partial\bar w$ | First-order constraints; they make $G$ come from the twistor |

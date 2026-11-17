@@ -9,7 +9,7 @@
 *First, the action has two terms and the fluid's two ingredients are those terms.* Written in $\rho_{\mathrm{num}}$ and $S$, the Lagrangian density is
 
 $$
-\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\nabla S)^{2}}{2m}+V\Bigr)-\frac{\hbar^{2}}{2m}(\nabla \varrho)^{2},
+\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V\Bigr)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2},
 $$
 
 a phase term, a kinetic term, a gradient energy and an external potential. There is no quantum potential in it and no barotropic pressure: no term is a function of the density alone. The quantum potential appears only after the variation, as the derivative of the third term, and the pressure that term implies is a Korteweg stress.
@@ -39,18 +39,18 @@ The first is the whole of the kinetic term: the scale contributes $\pm i\varrho\
 **Substituting and multiplying by $\hbar$ gives the Lagrangian in the fluid's variables.**
 
 $$
-\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\nabla S)^{2}}{2m}+V\Bigr)-\frac{\hbar^{2}}{2m}(\nabla \varrho)^{2}\;}
+\boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V\Bigr)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}\;}
 $$
 
 The four terms are, in order, the phase term, the kinetic energy of the flow, the external potential's energy, and the energy stored in the density's gradient. The last is the only term that survives when the phase is constant, and it is the whole of the quantum effect: a fluid at rest with a non-uniform density has an energy, and a classical fluid at rest does not.
 
-**The coefficient of the gradient energy is fixed by the mass and by nothing else.** It is $\hbar^{2}/2m$ per unit of $(\nabla \varrho)^{2}$, which is $\hbar^{2}/8m$ per unit of $(\nabla\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$. The two forms are the same number and not merely the same up to a total derivative, by the chain rule $\nabla\rho_{\mathrm{num}}=2\varrho\nabla \varrho$, and the second is the form in which the term appears in the Korteweg literature. No other coefficient is available: the term must have two derivatives, must be even in $\varrho$, and must be the only scalar the amplitude can make at that order.
+**The coefficient of the gradient energy is fixed by the mass and by nothing else.** It is $\hbar^{2}/2m$ per unit of $(\vec\nabla_\Phi \varrho)^{2}$, which is $\hbar^{2}/8m$ per unit of $(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$. The two forms are the same number and not merely the same up to a total derivative, by the chain rule $\vec\nabla_\Phi\rho_{\mathrm{num}}=2\varrho\nabla \varrho$, and the second is the form in which the term appears in the Korteweg literature. No other coefficient is available: the term must have two derivatives, must be even in $\varrho$, and must be the only scalar the amplitude can make at that order.
 
-**What is absent is as informative as what is present.** There is no term in $\dot \varrho$ and no term in $\nabla\theta$ that is not inside the square. The first absence is why the density has no kinetic energy of its own; the second is why the flow's energy is the square of a gradient and therefore why the vorticity vanishes identically rather than by a constraint. Both are properties of the first-order rung. At the rung above, the two densities appear and the second absence disappears.
+**What is absent is as informative as what is present.** There is no term in $\dot \varrho$ and no term in $\vec\nabla_\Phi\theta$ that is not inside the square. The first absence is why the density has no kinetic energy of its own; the second is why the flow's energy is the square of a gradient and therefore why the vorticity vanishes identically rather than by a constraint. Both are properties of the first-order rung. At the rung above, the two densities appear and the second absence disappears.
 
 ## The Two Variations
 
-**Varying the phase gives continuity, and the variation is one line.** Since $\mathcal L_{\mathrm{fl}}$ depends on $S$ only through $\partial_{t'}S$ and $\nabla S$,
+**Varying the phase gives continuity, and the variation is one line.** Since $\mathcal L_{\mathrm{fl}}$ depends on $S$ only through $\partial_{t'}S$ and $\vec\nabla_\Phi S$,
 
 $$
 \partial_{t'}\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{t'}S)}+\sum_j\partial_j\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_jS)}=0
@@ -58,29 +58,29 @@ $$
 \partial_{t'}\rho_{\mathrm{num}}+\sum_j\partial_j\bigl(\rho_{\mathrm{num}}v_j\bigr)=0,
 $$
 
-with $\vec v=\nabla S/m$. The current that appears is the canonical one, $\vec j=\rho_{\mathrm{num}}\vec v$, and it is also the Noether current of the phase shift: the Lagrangian is invariant under $S\mapsto S+\text{constant}$, and the associated density is exactly $\rho_{\mathrm{num}}$. **At this rung the conserved density and the charge density are the same object**, which is why the article can speak of one continuity equation and the relativistic articles cannot.
+with $\vec v=\vec\nabla_\Phi S/m$. The current that appears is the canonical one, $\vec j=\rho_{\mathrm{num}}\vec v$, and it is also the Noether current of the phase shift: the Lagrangian is invariant under $S\mapsto S+\text{constant}$, and the associated density is exactly $\rho_{\mathrm{num}}$. **At this rung the conserved density and the charge density are the same object**, which is why the article can speak of one continuity equation and the relativistic articles cannot.
 
 **Varying the amplitude gives the quantum Hamilton–Jacobi equation.** The variation is taken in $\varrho$ and not in $\rho_{\mathrm{num}}$, because $\varrho$ is the coordinate and $\rho_{\mathrm{num}}=\varrho^{2}$ is a function of it. The gradient term varies as
 
 $$
-\delta\int-\frac{\hbar^{2}}{2m}(\nabla \varrho)^{2}=\frac{\hbar^{2}}{m}\int\Delta \varrho\,\delta \varrho,
+\delta\int-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}=\frac{\hbar^{2}}{m}\int\Delta_\Phi \varrho\,\delta \varrho,
 $$
 
-and the three remaining terms vary as $2\varrho\,\delta \varrho\,[-\partial_{t'}S-\frac{(\nabla S)^{2}}{2m}-V]$. Dividing the Euler–Lagrange equation by $2\varrho$ and using $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$,
+and the three remaining terms vary as $2\varrho\,\delta \varrho\,[-\partial_{t'}S-\frac{(\vec\nabla_\Phi S)^{2}}{2m}-V]$. Dividing the Euler–Lagrange equation by $2\varrho$ and using $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$,
 
 $$
-\partial_{t'}S+\frac{(\nabla S)^{2}}{2m}+V+Q=0 .
+\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V+Q=0 .
 $$
 
 **That is the fluid's energy equation and it is one equation, not two.** Its gradient is the acceleration law,
 
 $$
-\frac{\mathrm{D}\vec v}{\mathrm{D}t}=-\frac{1}{m}\nabla(V+Q),
+\frac{\mathrm{D}\vec v}{\mathrm{D}t}=-\frac{1}{m}\vec\nabla_\Phi(V+Q),
 \qquad
 \frac{\mathrm{D}}{\mathrm{D}t}=\partial_{t'}+\vec v\cdot\nabla,
 $$
 
-because $\nabla(\nabla S)^{2}/2m=(\vec v\cdot\nabla)\vec v$ when the vorticity vanishes. The two displays are one statement differentiated, and the block's article says the same: continuity, energy and acceleration over-determine a fluid, and here the third is the second's gradient.
+because $\vec\nabla_\Phi(\vec\nabla_\Phi S)^{2}/2m=(\vec v\cdot\nabla)\vec v$ when the vorticity vanishes. The two displays are one statement differentiated, and the block's article says the same: continuity, energy and acceleration over-determine a fluid, and here the third is the second's gradient.
 
 **The pair is closed and the count is right.** Two real fields and two real equations, with the velocity a function of the phase. The action has no constraint and needs no multiplier, and that is the first-order rung's privilege: the word has two factors, the two factors are the two fields, and the map is a bijection away from $\varrho=0$. At the rung above, the word has four factors and the count breaks.
 
@@ -89,10 +89,10 @@ because $\nabla(\nabla S)^{2}/2m=(\vec v\cdot\nabla)\vec v$ when the vorticity v
 **The third term of the Lagrangian is the whole of the quantum effect, and the quantum potential is its derivative.** Write the gradient energy as a functional of the density,
 
 $$
-\mathcal E_{\mathrm{grad}}[\rho_{\mathrm{num}}]=\frac{\hbar^{2}}{8m}\int\frac{(\nabla\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}=\frac{\hbar^{2}}{2m}\int(\nabla \varrho)^{2},
+\mathcal E_{\mathrm{grad}}[\rho_{\mathrm{num}}]=\frac{\hbar^{2}}{8m}\int\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}=\frac{\hbar^{2}}{2m}\int(\vec\nabla_\Phi \varrho)^{2},
 $$
 
-the equality of the two forms being the chain rule, $\nabla\rho_{\mathrm{num}}=2\varrho\nabla \varrho$. Then
+the equality of the two forms being the chain rule, $\vec\nabla_\Phi\rho_{\mathrm{num}}=2\varrho\nabla \varrho$. Then
 
 $$
 \frac{\delta\mathcal E_{\mathrm{grad}}}{\delta\rho_{\mathrm{num}}}=Q .
@@ -101,13 +101,13 @@ $$
 *Proof.* Varying the first form,
 
 $$
-\delta\mathcal E_{\mathrm{grad}}=\frac{\hbar^{2}}{8m}\int\Bigl[\frac{2\nabla\rho_{\mathrm{num}}\cdot\nabla\delta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}}-\frac{(\nabla\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}^{2}}\,\delta\rho_{\mathrm{num}}\Bigr],
+\delta\mathcal E_{\mathrm{grad}}=\frac{\hbar^{2}}{8m}\int\Bigl[\frac{2\vec\nabla_\Phi\rho_{\mathrm{num}}\cdot\nabla\delta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}}-\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}^{2}}\,\delta\rho_{\mathrm{num}}\Bigr],
 $$
 
-and one integration by parts turns the first bracket into $-2\delta\rho_{\mathrm{num}}\,[\Delta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}-(\nabla\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}]$, which with the second leaves $-\delta\rho_{\mathrm{num}}\,[2\Delta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}-(\nabla\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}]$. With $\Delta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}=2\Delta \varrho/\varrho+2(\nabla \varrho)^{2}/\varrho^{2}$ and $(\nabla\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}=4(\nabla \varrho)^{2}/\varrho^{2}$, the bracket including its sign is $-4\Delta \varrho/\varrho$ — the two gradient-squared pieces cancel — and the variation is
+and one integration by parts turns the first bracket into $-2\delta\rho_{\mathrm{num}}\,[\Delta_\Phi\rho_{\mathrm{num}}/\rho_{\mathrm{num}}-(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}]$, which with the second leaves $-\delta\rho_{\mathrm{num}}\,[2\Delta_\Phi\rho_{\mathrm{num}}/\rho_{\mathrm{num}}-(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}]$. With $\Delta_\Phi\rho_{\mathrm{num}}/\rho_{\mathrm{num}}=2\Delta_\Phi \varrho/\varrho+2(\vec\nabla_\Phi \varrho)^{2}/\varrho^{2}$ and $(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}^{2}=4(\vec\nabla_\Phi \varrho)^{2}/\varrho^{2}$, the bracket including its sign is $-4\Delta_\Phi \varrho/\varrho$ — the two gradient-squared pieces cancel — and the variation is
 
 $$
-\delta\mathcal E_{\mathrm{grad}}=-\frac{\hbar^{2}}{2m}\int\delta\rho_{\mathrm{num}}\,\frac{\Delta \varrho}{\varrho}=\int\delta\rho_{\mathrm{num}}\,Q . \qquad\blacksquare
+\delta\mathcal E_{\mathrm{grad}}=-\frac{\hbar^{2}}{2m}\int\delta\rho_{\mathrm{num}}\,\frac{\Delta_\Phi \varrho}{\varrho}=\int\delta\rho_{\mathrm{num}}\,Q . \qquad\blacksquare
 $$
 
 **Three things follow, and they are the article's reason for existing.**
@@ -118,21 +118,21 @@ $$
 
 *The fluid is of Korteweg type and not of Euler type.* A Korteweg fluid is one whose stress depends on the gradients of the density, and that is exactly what the third term supplies. The literature on quantum hydrodynamics says this, and the action says why: the gradient energy is the only term the algebra permits at that order.
 
-**The sign is the sign of a pressure.** $Q$ is positive at the centre of a localised packet and falls as the density falls, so $\nabla Q$ points inward there and the force $-\nabla Q$ points outward. The packet spreads. Nothing in the action chooses this; it is the sign of the $\hbar^{2}$ term, which is the sign that makes the energy positive.
+**The sign is the sign of a pressure.** $Q$ is positive at the centre of a localised packet and falls as the density falls, so $\vec\nabla_\Phi Q$ points inward there and the force $-\vec\nabla_\Phi Q$ points outward. The packet spreads. Nothing in the action chooses this; it is the sign of the $\hbar^{2}$ term, which is the sign that makes the energy positive.
 
 ## The Velocity Is Not Canonical
 
-**No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid.** In the action above the velocity is $\nabla S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes
+**No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid.** In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes
 
 $$
-\mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{\hbar^{2}}{2m}(\nabla \varrho)^{2}+\vec\lambda\cdot\Bigl(\vec v-\frac{\nabla S}{m}\Bigr),
+\mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}+\vec\lambda\cdot\Bigl(\vec v-\frac{\vec\nabla_\Phi S}{m}\Bigr),
 $$
 
 and the three variations are these. Varying $\vec\lambda$ returns the definition, so the constraint is the chart's and carries no physics. Varying $\vec v$ fixes the multiplier, $\vec\lambda=\rho_{\mathrm{num}}m\vec v$, which is the momentum density and nothing else. Varying $S$ gives continuity with $\vec j=\vec\lambda/m$, which is the same equation as before. **The promotion buys a name and no equation**, and the multiplier is not an independent field: it is determined by the equation that would have defined it.
 
 **What the promotion does buy is the correct statement of the constraint.** At the rungs above, the velocity's place is taken by the rapidity, and its momentum vanishes identically — the relativistic companion computes $\partial\mathcal L/\partial\dot\theta_{\mathrm{rpd}}=0$ on every configuration. Here the same fact is $p_{\vec v}=0$ once the velocity is promoted: it is then a coordinate with no kinetic term, so its conjugate is zero rather than small. **The two statements are the same statement in two charts**, and the fluid chart is the one in which it is visible without algebra; at this rung the density's momentum $p_r=0$ is the same fact in the chart that needs no promotion.
 
-**A rotational fluid needs two more fields and cannot be written with $\vec v$ alone.** If the flow is not a gradient, the velocity must be represented as $\vec v=\nabla\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\nabla\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
+**A rotational fluid needs two more fields and cannot be written with $\vec v$ alone.** If the flow is not a gradient, the velocity must be represented as $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 
@@ -152,9 +152,9 @@ and the three variations are these. Varying $\vec\lambda$ returns the definition
 
 ## Summary
 
-**The action.** $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S+\frac{(\nabla S)^{2}}{2m}+V)-\frac{\hbar^{2}}{2m}(\nabla \varrho)^{2}$, four terms, no quantum potential and no barotropic pressure.
+**The action.** $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}$, four terms, no quantum potential and no barotropic pressure.
 
-**The two variations.** The phase gives continuity, $\partial_{t'}\rho_{\mathrm{num}}+\nabla\cdot(\rho_{\mathrm{num}}\vec v)=0$. The amplitude gives $\partial_{t'}S+\frac{(\nabla S)^{2}}{2m}+V+Q=0$, and its gradient is the acceleration law with the quantum force the only force.
+**The two variations.** The phase gives continuity, $\partial_{t'}\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec v)=0$. The amplitude gives $\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V+Q=0$, and its gradient is the acceleration law with the quantum force the only force.
 
 **The quantum potential.** $Q=\delta\mathcal E_{\mathrm{grad}}/\delta\rho_{\mathrm{num}}$, a chemical potential of a density-gradient energy; the stress $\sigma^{Q}_{ij}$ is that energy's pressure tensor; the fluid is of Korteweg type.
 
@@ -170,9 +170,9 @@ and the three variations are these. Varying $\vec\lambda$ returns the definition
 | $\varrho$ | Amplitude; $\varrho>0$; the chart's coordinate |
 | $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Density; here also the conserved and the charge density |
 | $S=\hbar\theta_{\mathrm{pha}}$ | Phase; canonically conjugate to the density |
-| $\vec v=\nabla S/m$ | Three-velocity; a gradient, not a field |
-| $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$ | Quantum potential; $Q=\delta\mathcal E_{\mathrm{grad}}/\delta\rho_{\mathrm{num}}$ |
-| $\mathcal E_{\mathrm{grad}}$ | Gradient energy; $\frac{\hbar^{2}}{2m}\int(\nabla \varrho)^{2}=\frac{\hbar^{2}}{8m}\int\frac{(\nabla\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}$ |
+| $\vec v=\vec\nabla_\Phi S/m$ | Three-velocity; a gradient, not a field |
+| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; $Q=\delta\mathcal E_{\mathrm{grad}}/\delta\rho_{\mathrm{num}}$ |
+| $\mathcal E_{\mathrm{grad}}$ | Gradient energy; $\frac{\hbar^{2}}{2m}\int(\vec\nabla_\Phi \varrho)^{2}=\frac{\hbar^{2}}{8m}\int\frac{(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}}{\rho_{\mathrm{num}}}$ |
 | $\sigma^{Q}_{ij}$ | The gradient energy's stress tensor; $\partial_j\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_iQ$ |
 | $V$ | External potential; $V=0$ for the free field |
 | $\vec\lambda$ | Multiplier of the promoted constraint; equal to $m\vec j$ |

@@ -12,7 +12,7 @@ i\hbar\,c\,\partial/\partial r'_t\,\tilde\Xi = \tilde H_\Psi\,\tilde\Xi,
 \tilde\Xi \in \mathbb{B}.
 $$
 
-The coefficients $h_t$ and $\vec h_\Psi$ are numbers here: $\tilde H_\Psi$ is an element of the algebra and not a differential operator, so the equation is an ordinary differential equation in $r'_t$ and describes a finite-dimensional system. The differential case, in which those coefficients contain $\nabla$, is *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, and every statement below holds there coefficient by coefficient.
+The coefficients $h_t$ and $\vec h_\Psi$ are numbers here: $\tilde H_\Psi$ is an element of the algebra and not a differential operator, so the equation is an ordinary differential equation in $r'_t$ and describes a finite-dimensional system. The differential case, in which those coefficients contain $\vec\nabla_\Phi$, is *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, and every statement below holds there coefficient by coefficient.
 
 Dividing by $i\hbar\,c$ gives the same equation in a second writing, where the generator is the observable multiplied by $-i$ over one real scale,
 
@@ -176,7 +176,7 @@ $$
 \tilde{Ξ}(r'_t) \in \mathbb{B}\;},
 $$
 
-where $i$ is the scalar imaginary and $\hbar$ is the reduced Planck constant. Because $i$ is central, $i\tilde H_\Psi=\tilde H_\Psi i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}$ is an algebra, $\tilde H_\Psi\tilde{Ξ}\in\mathbb{B}$ for constant $\tilde H_\Psi$: the equation is consistent in the carrier, and no ideal is needed for the consistency. A coefficient containing $\nabla$ differentiates the coefficients of $\tilde{Ξ}$ and multiplies no element on the left, so it changes nothing about the carrier.
+where $i$ is the scalar imaginary and $\hbar$ is the reduced Planck constant. Because $i$ is central, $i\tilde H_\Psi=\tilde H_\Psi i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}$ is an algebra, $\tilde H_\Psi\tilde{Ξ}\in\mathbb{B}$ for constant $\tilde H_\Psi$: the equation is consistent in the carrier, and no ideal is needed for the consistency. A coefficient containing $\vec\nabla_\Phi$ differentiates the coefficients of $\tilde{Ξ}$ and multiplies no element on the left, so it changes nothing about the carrier.
 
 **Solution.** Since $-i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi$ and the scalar and vector parts commute,
 

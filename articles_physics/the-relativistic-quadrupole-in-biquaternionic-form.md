@@ -20,7 +20,7 @@ The article is classical throughout, and the scope is the *relativistic* quadrup
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the potential and field-strength biquaternions.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F}$, the Riemann–Silberstein vector, and the self-dual decomposition.
 
-Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$; the biquaternionic gradient is $\tilde{\nabla} = e_t\partial/\partial R_t + \vec\nabla$ with $\vec\nabla = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
+Throughout, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_\mu^2 = -e_t$; the central scalar imaginary is $i$, $i^2 = -1$; the material sector is $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$; the biquaternionic gradient is $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec\nabla_\Phi$ with $\vec\nabla_\Phi = \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. The speed of light in the medium is $c = 1/\sqrt{\epsilon\mu}$. The irreducible rotation representation of dimension $2l+1$ is written $D^{(l)}$, so the monopole is $D^{(0)}$, the dipole and every vector is $D^{(1)}$, and the quadrupole is $D^{(2)}$.
 
 ## The Quadrupole as a Higher Multipole
 
@@ -237,7 +237,7 @@ a magnetic dipole proportional to the electric dipole and the velocity: the movi
 In the near zone the quadrupole field is the gradient of the quadrupole potential, and it falls off as $r^{-4}$:
 
 $$
-\vec E_{quad}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\vec\nablaΞ_{quad} ,
+\vec E_{quad}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\vec\nabla_\PhiΞ_{quad} ,
 \qquad
 Ξ_{quad}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\,\frac{1}{2r^3}\mathcal{Q}_{ij}\vec u_i\vec u_j .
 $$
@@ -303,7 +303,7 @@ $$
 
 a pure-vector biquaternion, and the **value** is an element of the six-real-dimensional vector part, which as a rotation module is $D^{(1)}$. The **angular content** of the field, however, is a property of the function $\tilde{F}(\cdot,r'_t)$, living in the infinite-dimensional space of functions on the sphere, and it is that space which contains the $D^{(2)}$ of the quadrupole. The quadrupole field is a vector-valued function whose components depend on the angles through degree-two harmonics; the value at a point is spin one, while the angular map is spin two. There is no contradiction, because the two belong to different spaces: the value algebra is finite, the function space is not.
 
-The same separation explains the fate of the quadrupole under the algebra's own operations. The product of two field values, or the composition of two gradients, discards the symmetric traceless part — the quaternion product keeps only $D^{(0)}\oplus D^{(1)}$, and $\vec\nabla\vec\nabla = -\Delta\,e_t$ keeps only the trace — so no local algebraic operation performed on the field at a point can manufacture a quadrupole. What produces the quadrupole is the integration against the source, that is, the *retarded solution*, which is a non-local operation; and the angular degree two is produced by the source's angular structure, not by the multiplication of values.
+The same separation explains the fate of the quadrupole under the algebra's own operations. The product of two field values, or the composition of two gradients, discards the symmetric traceless part — the quaternion product keeps only $D^{(0)}\oplus D^{(1)}$, and $\vec\nabla_\Phi\vec\nabla_\Phi = -\Delta_\Phi\,e_t$ keeps only the trace — so no local algebraic operation performed on the field at a point can manufacture a quadrupole. What produces the quadrupole is the integration against the source, that is, the *retarded solution*, which is a non-local operation; and the angular degree two is produced by the source's angular structure, not by the multiplication of values.
 
 ### The Two Decompositions
 
@@ -384,7 +384,7 @@ The quadrupole moment is not an algebra element: it is a rank-two tensor, outsid
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}, \mathbb{B}_{V}$ | Centre and complex vector part of $\mathbb{B}$ |
-| $\tilde{\nabla} = e_t\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t+\vec\nabla_\Phi$ | Biquaternionic gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian (series convention) |
 | $\tilde{A}_{\Phi} = i\,a'_t\,e_t+\vec A$ | Four-potential, an element of $\mathbb{B}_{\Phi}$ |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |

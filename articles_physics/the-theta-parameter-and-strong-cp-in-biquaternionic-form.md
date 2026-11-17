@@ -32,7 +32,7 @@ Two things follow, and the article states them separately. The framework **suppl
 
 **Notation.** The imaginary unit is the central $i$, with $i^2=-1$; it commutes with the four units, so wherever two central units meet in a product they are reduced before the display is read. Every field equation of this article is written with the **biquaternionic gradient** $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, an element of the algebra whose coefficients are derivatives; it acts from the left, its conjugate is $(\tilde\nabla_\Phi)^{\natural}$, and the **d'Alembertian** $\Box_\Phi$ is its quaternionic norm. The derivative on the material sector, the time coefficient included, is that article's.
 
-**The free equation and the massive one.** The free equation is first order in one field, $\tilde\nabla_\Phi\tilde F=0$. The massive equation is not, because $\tilde\nabla^2$ is not scalar: $e_t$ commutes with the three spatial units, so the two orders of a mixed derivative add a vector term instead of cancelling, and the diagonal part is not the d'Alembertian either. The massive equation is the **chiral pair**
+**The free equation and the massive one.** The free equation is first order in one field, $\tilde\nabla_\Phi\tilde F=0$. The massive equation is not, because $\tilde\nabla_\Phi^2$ is not scalar: $e_t$ commutes with the three spatial units, so the two orders of a mixed derivative add a vector term instead of cancelling, and the diagonal part is not the d'Alembertian either. The massive equation is the **chiral pair**
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
@@ -193,7 +193,7 @@ Because it is the integral of a parity-odd density, the theta term violates $P$ 
 
 The physical theta parameter is $\bar\theta=\theta_{\mathrm{vac}}+\arg\det M_q$, and the neutron electric dipole moment bounds it by $|\bar\theta|\lesssim10^{-10}$, which is the strong CP problem: the framework, like the Standard Model without additional structure, gives no reason for the near-vanishing. The framework supplies the CP-odd density as the invariant $I_2$, read as the imaginary component of the norm of the field element, and supplies the periodicity and the vacuum structure, but it does not supply the value of $\theta_{\mathrm{vac}}$, which is a coefficient in the action and not an element of the algebra; the resolution is imported.
 
-The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that relates the two parts, and the massive equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, since $\tilde\nabla^2$ is not scalar.
+The field content is carried by the gradient and by the chirality subscript: the gradient acts from the left, the mass is the one term that relates the two parts, and the massive equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, since $\tilde\nabla_\Phi^2$ is not scalar.
 
 ## Summary of Notation
 

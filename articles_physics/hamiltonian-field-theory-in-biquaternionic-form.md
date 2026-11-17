@@ -10,7 +10,7 @@ The conventions are those of the read list: the algebra, the invertibles, the se
 
 $$
 \mathcal{L}=-\mathrm{Sc}\!\left[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})\right]-k_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]
-=|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-k_m^{2}|\xi|^2,
+=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-k_m^{2}|\xi|^2,
 \qquad k_m=\dfrac{mc}{\hbar},
 $$
 
@@ -49,10 +49,10 @@ $$
 and the **total Hamiltonian** is its integral over space, $H=\int\mathcal{H}\,d^3r$. Substituting the density and the momentum field gives
 
 $$
-\mathcal{H}=|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2+k_m^{2}|\xi|^2,
+\mathcal{H}=|\partial\xi/\partial r'_t|^2+|\vec\nabla_\Phi\xi|^2+k_m^{2}|\xi|^2,
 $$
 
-the sum of three squares. Two remarks fix the sign bookkeeping. First, **the Hamiltonian density is not minus the Lagrangian density**, although it is so for a mechanical Lagrangian whose kinetic energy is quadratic in the velocities: here $-\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-k_m^{2}|\xi|^2$, which differs from $\mathcal{H}$ by the kinetic term again, since the Legendre transform of a complex field pairs $\pi$ with $\partial\xi/\partial r'_t$ *and* $\pi^\dagger$ with $\left(\partial\xi/\partial r'_t\right)^{*}$. Second, **the density is the energy density**: the expression above is exactly the time–time component $T_{00}$ that *Noether's Theorem in Biquaternionic Form* obtains from translation invariance, positive because it is a sum of squares. The Hamiltonian of the field and the energy of the field are the same functional, and that is not a coincidence of the conventions but the content of the Legendre transform for a Lagrangian with no explicit time dependence.
+the sum of three squares. Two remarks fix the sign bookkeeping. First, **the Hamiltonian density is not minus the Lagrangian density**, although it is so for a mechanical Lagrangian whose kinetic energy is quadratic in the velocities: here $-\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-k_m^{2}|\xi|^2$, which differs from $\mathcal{H}$ by the kinetic term again, since the Legendre transform of a complex field pairs $\pi$ with $\partial\xi/\partial r'_t$ *and* $\pi^\dagger$ with $\left(\partial\xi/\partial r'_t\right)^{*}$. Second, **the density is the energy density**: the expression above is exactly the time–time component $T_{00}$ that *Noether's Theorem in Biquaternionic Form* obtains from translation invariance, positive because it is a sum of squares. The Hamiltonian of the field and the energy of the field are the same functional, and that is not a coincidence of the conventions but the content of the Legendre transform for a Lagrangian with no explicit time dependence.
 
 ### The Hamiltonian Field Equations
 
@@ -94,9 +94,9 @@ with the conjugates carrying the mirrored signs. The bracket is antisymmetric an
 The energy density is conserved along the motion by a local conservation law. Differentiating $\mathcal{H}$ in time and using the equation of motion gives
 
 $$
-\boxed{\ \partial/\partial r'_t\mathcal{H}+\nabla\cdot\vec S=0\ },
+\boxed{\ \partial/\partial r'_t\mathcal{H}+\vec\nabla_\Phi\cdot\vec S=0\ },
 \qquad
-\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\nabla\xi+\partial\xi/\partial r'_t\,\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*});
+\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\vec\nabla_\Phi\xi+\partial\xi/\partial r'_t\,\vec\nabla_\Phi\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*});
 $$
 
 the mass terms cancel between the time derivative of $k_m^{2}|\xi|^2$ and the equation of motion, and the surviving terms are a divergence. The vector $\vec S$ is the **energy flux**. For a single plane wave $\xi=\xi_0\exp(i\theta_{\mathrm{pwp}})$ one has $\vec S=2\omega\vec k_\Phi|\xi_0|^2$, directed along the wavevector, so the energy travels the way the wave travels. Integrating the conservation law over a volume and using the vanishing of the flux at infinity makes the four-momentum
@@ -129,7 +129,7 @@ $$
 \boxed{\;\mathcal{H}=\mathrm{Sc}\!\left[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})\right]+k_m^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\;}.
 $$
 
-The second term is the mass form, positive and central. The first is the **kinetic-plus-gradient form**, and the identity $\mathrm{Sc}[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})]=|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2$ is where the $i r'_t$ convention does its quiet work: the time coefficient of the gradient is $\partial/\partial R_t\,\xi=-ic^{-1}\partial\xi/\partial r'_t$, so $|\partial/\partial R_t\,\xi|^2=|\partial\xi/\partial r'_t|^2$ and the kinetic term is *positive*, not negative. This is the same sign that makes the norm of a material four-vector have inertia $(3,1)$ and the d'Alembertian $\Box=\partial^2/\partial R_t^2+\Delta$; a reader who computes $|\partial/\partial R_t\,\xi|^2$ as $-|\partial\xi/\partial r'_t|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde Q_1^{*}\tilde Q_1$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{B}_{\Psi}$ — and it is *this* form, not the holomorphic norm $\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ of inertia $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.
+The second term is the mass form, positive and central. The first is the **kinetic-plus-gradient form**, and the identity $\mathrm{Sc}[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})]=|\partial\xi/\partial r'_t|^2+|\vec\nabla_\Phi\xi|^2$ is where the $i r'_t$ convention does its quiet work: the time coefficient of the gradient is $\partial/\partial R_t\,\xi=-ic^{-1}\partial\xi/\partial r'_t$, so $|\partial/\partial R_t\,\xi|^2=|\partial\xi/\partial r'_t|^2$ and the kinetic term is *positive*, not negative. This is the same sign that makes the norm of a material four-vector have inertia $(3,1)$ and the d'Alembertian $\Box_\Phi=\partial^2/\partial R_t^2+\Delta_\Phi$; a reader who computes $|\partial/\partial R_t\,\xi|^2$ as $-|\partial\xi/\partial r'_t|^2$ has conjugated the operator instead of the field, and will find the kinetic energy negative. The form $\tilde Q_1^{*}\tilde Q_1$ is of course positive definite on the algebra — that is the Hermitian form of $\mathbb{B}_{\Psi}$ — and it is *this* form, not the holomorphic norm $\langle\tilde Q_1\rangle_{\natural} = \langle\tilde Q_1,\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ of inertia $(3,1)$, that the energy density uses. The distinction matters: the norm's vanishing set is the light cone, the Hermitian form's is only the origin.
 
 ### The Energy–Momentum Biquaternion
 
@@ -144,7 +144,7 @@ $$
 
 The scalar part of the biquaternion divergence is the continuity equation. This is the *same packaging* that the companion article on stress–energy gives the electromagnetic field, $\tilde\Sigma_{\Psi}=\frac{1}{2}\tilde F\tilde F^{*}=W\,e_t+\frac{i}{c}\vec S$, whose scalar part is the Poynting theorem; the scalar field's energy density sits in the scalar direction of the informational sector and its flux in the three vector directions $i\vec e_\mu$, so the two fields' energy–momentum biquaternions are elements of the same sector in the same arrangement. The one difference is that the electromagnetic $\tilde\Sigma_{\Psi}$ is bilinear in the field strength whereas the scalar $\tilde\Sigma_{\Psi}$ is bilinear in the gradient of the field, which is the field-theoretic way of saying that the scalar field carries no spin and its energy comes entirely from the derivatives.
 
-The static limit makes the arrangement visible. For a time-independent field the flux vanishes, $\tilde\Sigma_{\Psi}=\mathcal{H}e_t$, and the conservation law reduces to $\nabla\cdot\vec S=0$, which is empty; the energy is conserved trivially. For a running wave it is the other way: $\mathcal{H}$ and $|\vec S|/c$ are equal and the biquaternion has the null-field pattern of a single travelling wave, exactly as the companion stress–energy article records for the massless scalar and for the electromagnetic wave.
+The static limit makes the arrangement visible. For a time-independent field the flux vanishes, $\tilde\Sigma_{\Psi}=\mathcal{H}e_t$, and the conservation law reduces to $\vec\nabla_\Phi\cdot\vec S=0$, which is empty; the energy is conserved trivially. For a running wave it is the other way: $\mathcal{H}$ and $|\vec S|/c$ are equal and the biquaternion has the null-field pattern of a single travelling wave, exactly as the companion stress–energy article records for the massless scalar and for the electromagnetic wave.
 
 ### The Brackets in the Algebra
 
@@ -165,7 +165,7 @@ the Hamiltonian density splits accordingly,
 $$
 \mathcal{H}=\frac12\left[
 \left(\left(\partial\xi_{1}/\partial r'_t\right)^{2}+\left(\partial\xi_{2}/\partial r'_t\right)^{2}\right)
-+|\nabla\xi_1|^2+|\nabla\xi_2|^2
++|\vec\nabla_\Phi\xi_1|^2+|\vec\nabla_\Phi\xi_2|^2
 +k_m^{2}\left(\xi_1^2+\xi_2^2\right)
 \right],
 $$
@@ -200,9 +200,9 @@ What the algebra does not give, and what a reader should not expect, is a modifi
 
 The Hamiltonian field theory of the central scalar field is built from three objects.
 
-**The conjugate momentum and the density.** The momentum field is $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$ and its conjugate $\pi^\dagger=\partial\xi/\partial r'_t$; the Legendre transform is regular, so the phase space is unconstrained. The Hamiltonian density is $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}=|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2+k_m^{2}|\xi|^2$, which is not minus the Lagrangian density and is the energy density $T_{00}$ of the translation current. In the algebra it is the Hermitian form $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})]+k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$, positive because the $i r'_t$ convention puts the kinetic term in with a plus.
+**The conjugate momentum and the density.** The momentum field is $\pi=\left(\partial\xi/\partial r'_t\right)^{\,*}$ and its conjugate $\pi^\dagger=\partial\xi/\partial r'_t$; the Legendre transform is regular, so the phase space is unconstrained. The Hamiltonian density is $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}=|\partial\xi/\partial r'_t|^2+|\vec\nabla_\Phi\xi|^2+k_m^{2}|\xi|^2$, which is not minus the Lagrangian density and is the energy density $T_{00}$ of the translation current. In the algebra it is the Hermitian form $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})]+k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$, positive because the $i r'_t$ convention puts the kinetic term in with a plus.
 
-**The equations and the bracket.** Hamilton's field equations, $\partial\xi/\partial r'_t=\delta H/\delta\pi^\dagger$ and $\partial\pi/\partial r'_t=-\delta H/\delta\xi^\dagger$, are the Klein–Gordon equation; the field Poisson bracket is the integral over space of the local canonical bracket, with $\{\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi(\vec y)\}=\delta^3(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and its Jacobi identity is inherited locally from the canonical pair. The density satisfies the continuity equation $\partial/\partial r'_t\mathcal{H}+\nabla\cdot\vec S=0$ with flux $\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\nabla\xi+\partial\xi/\partial r'_t\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*})$, positive-directed along the wavevector for a plane wave.
+**The equations and the bracket.** Hamilton's field equations, $\partial\xi/\partial r'_t=\delta H/\delta\pi^\dagger$ and $\partial\pi/\partial r'_t=-\delta H/\delta\xi^\dagger$, are the Klein–Gordon equation; the field Poisson bracket is the integral over space of the local canonical bracket, with $\{\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi(\vec y)\}=\delta^3(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$, and its Jacobi identity is inherited locally from the canonical pair. The density satisfies the continuity equation $\partial/\partial r'_t\mathcal{H}+\vec\nabla_\Phi\cdot\vec S=0$ with flux $\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\vec\nabla_\Phi\xi+\partial\xi/\partial r'_t\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*})$, positive-directed along the wavevector for a plane wave.
 
 **The packaging and the sector interpretation.** Density and flux are the scalar and vector parts of the Hermitian biquaternion $\tilde\Sigma_{\Psi}=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\tilde\nabla_\Phi\tilde\Sigma_{\Psi}=0$ on shell — the electromagnetic arrangement. Splitting the central field into its two sector scalars, the energy is the sum of the two sectors' kinetic, gradient and mass terms with the same sign, whereas the charge is their difference with opposite signs.
 
@@ -213,16 +213,16 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | Symbol | Meaning |
 |---|---|
 | $\tilde{Ξ}=\xi\,e_t$ | The central scalar field, $\xi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$ |
-| $\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-k_m^{2}|\xi|^2$ | The Lagrangian density, the sign fixed by *Noether's Theorem in Biquaternionic Form* |
+| $\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-k_m^{2}|\xi|^2$ | The Lagrangian density, the sign fixed by *Noether's Theorem in Biquaternionic Form* |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the inverse reduced Compton wavelength, the mass parameter of the Klein–Gordon equation |
 | $\pi=\partial\mathcal{L}/\partial\left(\partial\xi/\partial r'_t\right)=\left(\partial\xi/\partial r'_t\right)^{\,*}$ | The conjugate momentum field, and $\pi^\dagger=\partial\xi/\partial r'_t$ its conjugate |
 | $\tilde\Pi=\pi\,e_t\in\mathbb{B}_{C}$ | The conjugate momentum field as a central biquaternion |
-| $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}$ | The Hamiltonian density; it is $|\partial\xi/\partial r'_t|^2+|\nabla\xi|^2+k_m^{2}|\xi|^2$ and equals the energy density $T_{00}$ |
+| $\mathcal{H}=\pi\partial\xi/\partial r'_t+\pi^\dagger\left(\partial\xi/\partial r'_t\right)^{\,*}-\mathcal{L}$ | The Hamiltonian density; it is $|\partial\xi/\partial r'_t|^2+|\vec\nabla_\Phi\xi|^2+k_m^{2}|\xi|^2$ and equals the energy density $T_{00}$ |
 | $H=\int\mathcal{H}\,d^3r$ | The total Hamiltonian |
 | $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla_\Phi\tilde{Ξ})^{*}(\tilde\nabla_\Phi\tilde{Ξ})]+k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | The Hamiltonian density as the sum of two Hermitian forms |
 | $\{\xi(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),\pi(\vec y)\}=\delta^3(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)$ | The canonical field bracket, with the mirrored brackets for the conjugates |
 | $\{A,B\}$ | The field Poisson bracket on functionals, the integral over space of the local canonical bracket |
-| $\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\nabla\xi+\partial\xi/\partial r'_t\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*})$ | The energy flux; $\partial/\partial r'_t\mathcal{H}+\nabla\cdot\vec S=0$ |
+| $\vec S=-(\left(\partial\xi/\partial r'_t\right)^{\,*}\vec\nabla_\Phi\xi+\partial\xi/\partial r'_t\nabla\xi^{\,*})=-c^2(\pi\nabla\xi+\pi^\dagger\nabla\xi^{\,*})$ | The energy flux; $\partial/\partial r'_t\mathcal{H}+\vec\nabla_\Phi\cdot\vec S=0$ |
 | $\tilde\Sigma_{\Psi}=\mathcal{H}e_t+\frac{i}{c}\vec S\in\mathbb{B}_{\Psi}$ | The energy–momentum biquaternion of the field, with $\tilde\nabla_\Phi\tilde\Sigma_{\Psi}=0$ on shell |
 | $p_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_\mu\,\xi)=\partial/\partial R_\mu\xi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
 | $H_{DW}=\sum_\mu p_\mu\partial/\partial R_\mu\,\xi-\mathcal{L}=\frac12\sum_\mu p_\mu p_\mu+\frac12k_m^{2}\xi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |

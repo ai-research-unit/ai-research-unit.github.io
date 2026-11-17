@@ -14,7 +14,7 @@ Three statements organise the article.
 
 The article derives the matching, the threshold and the two tables of numbers. It does not derive the second-quantized statements: the pair number, the Bogoliubov mixing and the vacuum persistence amplitude are those of *Scalar Pair Creation in Biquaternionic Form*, the operator content of the sea is that of *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form*, and the mode count of a cavity is that of *The Vacuum State and the Casimir Effect in Biquaternionic Form*. What the framework supplies is the location of the threshold on the mass shell, and the criterion that separates a confining model which can create pairs from one which cannot.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$. No array and no column is written below.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace, the material sector, on which $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$; the gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$; the Dirac equation is the chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ with $k_m=mc/\hbar$; and the minimal coupling replaces $\tilde\nabla_\Phi$ by $D=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$. No array and no column is written below.
 
 ## The Well and the Gap
 
@@ -233,7 +233,7 @@ a shift of the left side of the mass shell by a central scalar. The companion ar
 The Dirac oscillator's substitution is a shift of the other side. Its non-minimal term replaces $\vec p$ by $\vec p-im\omega\beta\vec r$, so it acts on the spatial part of the gradient and on nothing else, and the shifted gradients are
 
 $$
-\vec\nabla_{\pm}=\vec\nabla\pm\frac{m\,\omega}{\hbar}\,\vec r .
+\vec\nabla_{\pm,\Phi}=\vec\nabla_\Phi\pm\frac{m\,\omega}{\hbar}\,\vec r .
 $$
 
 Multiplying the two shifts, as the companion article on the oscillator does, the cross terms reduce to a central commutator and a spin–orbit term, and the confining term that survives in the identity is a positive addition, $+m^{2}\omega^{2}r^{2}$:
@@ -307,7 +307,7 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1$, $\vec e_x,\vec e_y,\vec e_z$ | Quaternion units, $\vec e_\eta^{2}=-e_t$ |
 | $\mathbb{B}_{\Phi}$ | Material sector, with $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$ |
-| $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient |
 | $\tilde{Ξ}_{1}$, $\tilde{Ξ}_{2}$ | The two components of the reduced spinor |
 | $V_0$, $L$, $a=L/2$ | Well depth, width, and half-width |
 | $ϙ\xi(r_x)=-V_0$ inside the well | Electrostatic potential energy |
@@ -320,7 +320,7 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | $L_{\min}=\frac{\pi\hbar c}{\sqrt{V_0^{2}-2V_0\,mc^{2}}}$ | Least width at which one level dives at fixed depth; the $n_{\mathrm{w}}$-th dive is at $n_{\mathrm{w}}L_{\min}$ |
 | $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ | Mass shell, split into its two sides |
 | $k_{t}^{\prime}=\frac{E}{\hbar\,c}$, $k_{\Phi}=\frac{p}{\hbar}$ | Temporal coefficient and momentum wave number |
-| $\vec\nabla_{\pm}=\vec\nabla\pm\frac{m\,\omega}{\hbar}\vec r$ | The two non-minimal shifts of the oscillator |
+| $\vec\nabla_{\pm,\Phi}=\vec\nabla_\Phi\pm\frac{m\,\omega}{\hbar}\vec r$ | The two non-minimal shifts of the oscillator |
 | $\mathcal Q_{+}\mathcal Q_{-}\ge0$ | Oscillator identity: the gap is empty at every frequency |
 | $\omega$ | Oscillator frequency, a real scalar; the pseudoscalar $\omega=-\vec e_z$ of the algebra is not used here |
 | $\beta$ | The frame action of the oscillator, a right action equal to $\pm1$ on the two frame parts |

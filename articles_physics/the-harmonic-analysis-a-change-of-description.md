@@ -57,7 +57,7 @@ $$
 
 **Plancherel.** Conditional: the transform is an isometry of $L^{2}$ exactly at the Hermitian roots. At the others it preserves $\lVert\tilde\Pi_+f\rVert^{2}+\lVert\tilde\Pi_-f\rVert^{2}$, and the excess is measured by $\lVert\tilde{Z}\rVert^{2}=1+2\lVert\vec p\rVert^{2}$.
 
-**The symbol.** $\partial_\mu\mapsto2\pi i\tilde{Z}\omega_\mu$, so $\Box\mapsto-(2\pi)^{2}(\omega_0^{2}+\omega_1^{2}+\omega_2^{2}+\omega_3^{2})$ and the hyperbolic $\partial_t^{2}-\Delta$ has symbol $-4\pi^{2}(\omega_0^{2}-\lvert\vec\omega\rvert^{2})$, which vanishes on the null cone. The transform of a solution is supported on the zero set of the symbol.
+**The symbol.** $\partial_\mu\mapsto2\pi i\tilde{Z}\omega_\mu$, so $\Box_\Phi\mapsto-(2\pi)^{2}(\omega_0^{2}+\omega_1^{2}+\omega_2^{2}+\omega_3^{2})$ and the hyperbolic $\partial_t^{2}-\Delta_\Phi$ has symbol $-4\pi^{2}(\omega_0^{2}-\lvert\vec\omega\rvert^{2})$, which vanishes on the null cone. The transform of a solution is supported on the zero set of the symbol.
 
 **The two contours.** The conjugate kernel splits into $\tilde\Pi_+e^{2\pi i\omega t}+\tilde\Pi_-e^{-2\pi i\omega t}$, so a kernel in one variable is two-sided even when all poles lie in one half-plane. Its exponential type is $2\pi\rho$, the distance of the nearest pole from the axis, and a pole on the axis gives decay only as boundedness.
 
@@ -190,12 +190,12 @@ The derivative becomes the element $2\pi i\tilde{Z}\omega_\mu$, and a gradient i
 **The d'Alembertian becomes a scalar, and the sign is carried by the square of the root.** Since the symbol of $\partial_\mu$ is $2\pi i\tilde{Z}\omega_\mu$ and $\tilde{Z}^{2}=e_t$, the symbol of $\partial_\mu^{2}$ is $-(2\pi\omega_\mu)^{2}e_t$, and
 
 $$
-\mathcal{F}\left[\Box F_{\mathrm{fn}}\right](\omega)=-(2\pi)^{2}\left(\omega_0^{2}+\omega_1^{2}+\omega_2^{2}+\omega_3^{2}\right)\mathcal{F}[F_{\mathrm{fn}}](\omega).
+\mathcal{F}\left[\Box_\Phi F_{\mathrm{fn}}\right](\omega)=-(2\pi)^{2}\left(\omega_0^{2}+\omega_1^{2}+\omega_2^{2}+\omega_3^{2}\right)\mathcal{F}[F_{\mathrm{fn}}](\omega).
 $$
 
 The multiplier is a negative scalar and it vanishes only at $\omega=0$: this operator is elliptic, and a solution whose transform is a function has transform supported at the origin.
 
-**The operator with a cone for a zero set is the hyperbolic one.** For $\partial_t^{2}-\Delta$ the symbol is $-4\pi^{2}(\omega_0^{2}-\omega_1^{2}-\omega_2^{2}-\omega_3^{2})$, whose zero set is the null cone $\omega_0^{2}=\lvert\vec\omega\rvert^{2}$. A solution has its transform supported there. The two operators differ by the sign of the Laplacian, and that sign is the sign that $\tilde{Z}^{2}=e_t$ supplies through the square of the imaginary scalar.
+**The operator with a cone for a zero set is the hyperbolic one.** For $\partial_t^{2}-\Delta_\Phi$ the symbol is $-4\pi^{2}(\omega_0^{2}-\omega_1^{2}-\omega_2^{2}-\omega_3^{2})$, whose zero set is the null cone $\omega_0^{2}=\lvert\vec\omega\rvert^{2}$. A solution has its transform supported there. The two operators differ by the sign of the Laplacian, and that sign is the sign that $\tilde{Z}^{2}=e_t$ supplies through the square of the imaginary scalar.
 
 **The check is a single substitution.** At a frequency with $\omega_0=\lvert\vec\omega\rvert$ the hyperbolic symbol is $-4.4\times10^{-15}$ and the elliptic one is $-39.478$; off the cone, at $\omega=(1,0.3,-0.4,0.5)$, the hyperbolic symbol is $-19.739$. One of them has a cone for a zero set and the other has a point, and the difference is the inertia.
 
@@ -304,7 +304,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **The Tomita operator is the star.** By definition $S(\Lambda\zeta)=\Lambda^{*}\zeta$ for $\Lambda=L_{\tilde{Q}}$, and the definite adjoint of a left multiplication is $L_{\tilde{Q}^{*}}$, so $S(\tilde{Q})=\tilde{Q}^{*}$. It is antilinear, involutive and antiunitary, with $\langle S\tilde{Q}_1,S\tilde{Q}_2\rangle=\overline{\langle\tilde{Q}_1,\tilde{Q}_2\rangle}$ and $\lVert S\tilde{Q}_1\rVert=\lVert\tilde{Q}_1\rVert$; both identities are exact in the eight real dimensions, measured at $0$ to machine precision.
 
-**The modular operator is the identity and the modular flow is trivial.** Since $S$ is antiunitary, its polar decomposition is $S=\jmath$ with $\Delta=S^{*}S=\mathrm{id}$, so $\sigma_t(\Lambda)=\Lambda$ for every $t$. The modular conjugation exchanges the sides, $\jmath L_{\tilde{Q}}\jmath=R_{\tilde{Q}^{*}}$, which is the definite shadow of the indefinite identity $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$.
+**The modular operator is the identity and the modular flow is trivial.** Since $S$ is antiunitary, its polar decomposition is $S=\jmath$ with $\Delta_\Phi=S^{*}S=\mathrm{id}$, so $\sigma_t(\Lambda)=\Lambda$ for every $t$. The modular conjugation exchanges the sides, $\jmath L_{\tilde{Q}}\jmath=R_{\tilde{Q}^{*}}$, which is the definite shadow of the indefinite identity $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$.
 
 ### Why the Flow Is Trivial
 
@@ -314,7 +314,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 **On the canonical Krein space the operator is not definable.** The indefinite adjoint of a left multiplication is a right multiplication, $(L_{\tilde{Q}})^{\dagger}=R_{\bar{\tilde{Q}}}$, which lies in the image only for central $\tilde{Q}$. The left regular image is therefore not closed under the indefinite adjoint, so it is not a Krein–von Neumann algebra, and the map $\tilde{Q}\mapsto\tilde{Q}^{\dagger}$ leaves the algebra. The smallest Krein–von Neumann envelope is $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}\cong M_4(\mathbb{C})$, of complex dimension sixteen, and it has no separating vector: for every $\zeta\neq0$ there is a non-zero $T$ with $T\zeta=0$. So the envelope carries no modular pair either.
 
-**The twisted symmetries work and the modular conjugation does not commute with them.** For $J'=R_c$ with $c^{*}=c$ and $c^{2}=e_t$ the image is a $J'$-algebra with $S'={}^{*}$ and $\Delta'=\mathrm{id}$, but the modular conjugation must commute with the fundamental symmetry, and $\jmath'J'(\tilde{Q})=c\tilde{Q}^{*}$ against $J'\jmath'(\tilde{Q})=\tilde{Q}^{*}c$, which agree only for central $c$. The definite theory is available, the indefinite one is available only in the definite case, and the gap is a commutator.
+**The twisted symmetries work and the modular conjugation does not commute with them.** For $J'=R_c$ with $c^{*}=c$ and $c^{2}=e_t$ the image is a $J'$-algebra with $S'={}^{*}$ and $\Delta_\Phi'=\mathrm{id}$, but the modular conjugation must commute with the fundamental symmetry, and $\jmath'J'(\tilde{Q})=c\tilde{Q}^{*}$ against $J'\jmath'(\tilde{Q})=\tilde{Q}^{*}c$, which agree only for central $c$. The definite theory is available, the indefinite one is available only in the definite case, and the gap is a commutator.
 
 ## The Interpretations
 
@@ -388,13 +388,13 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 
 ### III.2.h — The Modular Clock Is Trivial, and That Is a Statement About the Vector
 
-**The object.** The Tomita operator $S={}^{*}$ of the left regular image at the unit, its polar decomposition $\Delta=\mathrm{id}$, and the modular flow $\sigma_t=\mathrm{id}$.
+**The object.** The Tomita operator $S={}^{*}$ of the left regular image at the unit, its polar decomposition $\Delta_\Phi=\mathrm{id}$, and the modular flow $\sigma_t=\mathrm{id}$.
 
 **The warrant.** The unit is cyclic and separating, the vector state is $\mathrm{Sc}$, and $\mathrm{Sc}$ is the trace; a tracial vector state gives a trivial modular operator. The indefinite version does not exist, because the image is not closed under the indefinite adjoint and its envelope has no separating vector.
 
 **The reading.** The algebra alone carries no thermal time. A modular flow is a clock that a state supplies to an algebra, and the algebra's canonical state, the unit, supplies a stopped clock: the flow is the identity at every parameter. So a thermal reading needs either a different state or a larger algebra, and the corpus's thermal articles take the second route: *Curved-Spacetime KMS and Modular Flow* and *The Bisognano–Wichmann Theorem under the Biquaternion Framework* work with the modular flow of a wedge, which is not the flow of the unit, and *The Unruh Effect in Biquaternionic Form* reads that flow by an accelerated observer. The triviality is therefore not a defect of the algebra: it is the exact statement of which vector the algebra's own clock belongs to.
 
-**The limit.** The indefinite modular theory is unavailable, so no thermal statement is claimed from the Krein structure. The twisted symmetries supply a modular pair with $\Delta'=\mathrm{id}$, and their modular conjugation does not commute with the fundamental symmetry except for a central parameter.
+**The limit.** The indefinite modular theory is unavailable, so no thermal statement is claimed from the Krein structure. The twisted symmetries supply a modular pair with $\Delta_\Phi'=\mathrm{id}$, and their modular conjugation does not commute with the fundamental symmetry except for a central parameter.
 
 ## The Limits
 
@@ -447,7 +447,7 @@ so the conjugation is the identity on $C(R)$ and a rotation through the angle $4
 | the transverse frame | $\nu,\eta$ | $R\nu=\eta$, $\nu R=-\eta$, $\eta R=\nu$ |
 | the two placements | $R'=\pm R$ | the two-sided kernels that fix a part |
 | the exponential type | $2\pi\rho$ | $\rho$ the distance of the nearest pole from the real axis |
-| the Tomita operator | $S$ | the star, with $\Delta=\mathrm{id}$ and $\jmath=S$ |
+| the Tomita operator | $S$ | the star, with $\Delta_\Phi=\mathrm{id}$ and $\jmath=S$ |
 | the Krein envelope | $\mathbb{B}\otimes\mathbb{B}_{\mathrm{opp}}$ | $M_4(\mathbb{C})$, complex dimension sixteen |
 
 ## Further Reading

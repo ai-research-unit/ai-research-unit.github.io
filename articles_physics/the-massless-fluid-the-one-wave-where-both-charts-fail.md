@@ -130,10 +130,10 @@ and the quantum stress $\sigma^{Q}_{ij}$ carries the same factor. **So the whole
 
 **The third column is constant, and that constancy is the $1/m$ law.** Halving the mass doubles the potential, and no refinement of the arithmetic changes the exponent.
 
-**The force is the exception, and it is the whole of the physics.** The acceleration law is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and $\gamma^{-1}=m/E$ cancels the $1/m$:
+**The force is the exception, and it is the whole of the physics.** The acceleration law is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and $\gamma^{-1}=m/E$ cancels the $1/m$:
 
 $$
-\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{\hbar^{2}}{2E}\,\nabla\Bigl(\frac{\Box_\Phi\varrho}{\varrho}\Bigr),
+\frac{\mathrm{d}\vec p}{\mathrm{d}t}=\frac{\hbar^{2}}{2E}\,\vec\nabla_\Phi\Bigl(\frac{\Box_\Phi\varrho}{\varrho}\Bigr),
 $$
 
 **which contains no mass at all.** At fixed energy the rate of momentum transfer is the same at every mass: **the Bohm potential diverges and the Bohm force does not.** A reader who quotes "$Q_{\mathrm{qnt}}$ diverges" as the statement that the guidance fails near the wall has quoted the potential and not the force.

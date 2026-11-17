@@ -348,8 +348,8 @@ Two things are left visible. First, a **defect in the parent**: the curvature fo
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
-| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t$ |
-| $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t$ |
+| $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |

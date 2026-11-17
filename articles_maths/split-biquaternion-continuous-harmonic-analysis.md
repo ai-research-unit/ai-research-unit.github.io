@@ -297,7 +297,7 @@ The continuous Fourier transform is the natural tool for analysing the different
 
 ### The Gradient
 
-Let $\tilde{\nabla}$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}_{\mathrm{spl}}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F_{\mathrm{fn}} : V \to \mathbb{B}_{\mathrm{spl}}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:
+Let $\tilde\nabla_\Phi$ be the split biquaternion gradient on a four-dimensional subspace $V \subset \mathbb{B}_{\mathrm{spl}}$, with coordinates $Q_t, Q_x, Q_y, Q_z$. For a function $F_{\mathrm{fn}} : V \to \mathbb{B}_{\mathrm{spl}}$, the Fourier transform in the variable $Q_t$ (with the other coordinates treated as parameters, or with a full four-dimensional transform) diagonalizes the partial derivative $\partial/\partial Q_t$:
 
 $$
 \mathcal{F}[\partial/\partial Q_t F_{\mathrm{fn}}](\omega) = 2\pi \rho \omega \, \mathcal{F}[F_{\mathrm{fn}}](\omega),
@@ -315,10 +315,10 @@ where $\omega_0, \omega_1, \omega_2, \omega_3$ are the frequency variables conju
 
 ### The d'Alembertian
 
-The d'Alembertian $\Box = \partial^2/\partial Q_t^2 + \Delta$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
+The d'Alembertian $\Box_\Phi = \partial^2/\partial Q_t^2 + \Delta_\Phi$ is a scalar operator, and it commutes with the Fourier transform. Under the transform,
 
 $$
-\mathcal{F}[\Box F_{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F_{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F_{\mathrm{fn}}](\omega).
+\mathcal{F}[\Box_\Phi F_{\mathrm{fn}}](\omega) = \left((2\pi \omega_0)^2 - (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) \mathcal{F}[F_{\mathrm{fn}}](\omega) = -4\pi^2 (\omega_0^2 - \omega_1^2 - \omega_2^2 - \omega_3^2) \mathcal{F}[F_{\mathrm{fn}}](\omega).
 $$
 
 The multiplier is a scalar (times $e_t$), and it vanishes on the **null cone**
@@ -327,11 +327,11 @@ $$
 \omega_0^2 = \omega_1^2 + \omega_2^2 + \omega_3^2.
 $$
 
-So the Fourier transform of a solution of $\Box F_{\mathrm{fn}} = 0$ is supported on the null cone.
+So the Fourier transform of a solution of $\Box_\Phi F_{\mathrm{fn}} = 0$ is supported on the null cone.
 
 ### The Square of the Gradient
 
-The square of the gradient $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta) + 2\sum_k \vec e_k \partial^2/(\partial Q_t\,\partial Q_k)$ is a split-biquaternion-valued operator. Under the transform, it becomes multiplication by
+The square of the gradient $\tilde\nabla_\Phi^2 = (\partial^2/\partial Q_t^2 - \Delta_\Phi) + 2\sum_k \vec e_k \partial^2/(\partial Q_t\,\partial Q_k)$ is a split-biquaternion-valued operator. Under the transform, it becomes multiplication by
 
 $$
 -4\pi^2 \Big[\Big(\omega_0^2 - \sum_k \omega_k^2\Big) e_t + 2\omega_0 \sum_k \vec e_k \omega_k\Big],
@@ -341,7 +341,7 @@ which is a split-biquaternion-valued multiplier.
 
 ### The Convective Derivative
 
-The convective derivative $\tilde{D} = \tilde Q_1^{\natural} \tilde{\nabla}$ becomes multiplication by the split biquaternion
+The convective derivative $\tilde{D} = \tilde Q_1^{\natural} \tilde\nabla_\Phi$ becomes multiplication by the split biquaternion
 
 $$
 \tilde Q_1^{\natural} \cdot 2\pi \rho (\omega_0 e_t + \omega_1 \vec e_x + \omega_2 \vec e_y + \omega_3 \vec e_z),
@@ -358,10 +358,10 @@ The general principle is that the continuous Fourier transform **diagonalizes th
 In the idempotent basis, the differential operators act componentwise on the two idempotent components. For a function $F_{\mathrm{fn}} = F_{\mathrm{fn},+} \tilde\Pi_1 + F_{\mathrm{fn},-} \tilde\Pi_2$ with $F_{\mathrm{fn},\pm} \in \mathbb{H}$, the gradient acts as
 
 $$
-\tilde{\nabla} F_{\mathrm{fn}} = (\tilde{\nabla} F_{\mathrm{fn},+}) \tilde\Pi_1 + (\tilde{\nabla} F_{\mathrm{fn},-}) \tilde\Pi_2,
+\tilde\nabla_\Phi F_{\mathrm{fn}} = (\tilde\nabla_\Phi F_{\mathrm{fn},+}) \tilde\Pi_1 + (\tilde\nabla_\Phi F_{\mathrm{fn},-}) \tilde\Pi_2,
 $$
 
-where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.
+where $\tilde\nabla_\Phi$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way. So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately, and the Fourier transform diagonalizes the operators in each component.
 
 ## The Vanishing-Norm Issue
 
@@ -412,7 +412,7 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 1. **The precise invertibility condition.** Under what conditions on the zero-divisor values is the continuous transform invertible? The answer is not known.
 
-2. **The support of the transform of solutions of $\tilde{\nabla}F_{\mathrm{fn}} = 0$.** The Fourier transform of a solution of the gradient equation $\tilde{\nabla}F_{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?
+2. **The support of the transform of solutions of $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$.** The Fourier transform of a solution of the gradient equation $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ is supported on a set determined by the symbol of the gradient. What is the structure of this set?
 
 3. **The Plancherel theorem for general functions.** Under what conditions does the Plancherel theorem hold for functions that take zero-divisor values? The current statement requires square-integrability, which is a norm condition and does not detect the zero divisors.
 
@@ -454,7 +454,7 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 | $K_\rho(\vec Q)$ | Split biquaternion Fourier kernel |
 | $\hat{f}(\zeta)$ | Continuous split-biquaternion Fourier transform |
 | $f * g$ | Convolution |
-| $\tilde{\nabla}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, d'Alembertian, gradient square, convective derivative |
+| $\tilde\nabla_\Phi, \Box_\Phi, \tilde\nabla_\Phi^2, \tilde{D}$ | Gradient, d'Alembertian, gradient square, convective derivative |
 
 ## Further Reading
 

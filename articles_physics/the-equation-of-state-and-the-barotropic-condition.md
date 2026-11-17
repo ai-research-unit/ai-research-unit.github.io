@@ -36,19 +36,19 @@ the derivative at fixed entropy, and the second derivative is the one that coupl
 
 $$
 \partial_{t'}\vec\omega_{\mathrm{vrt}}
-=\nabla\times\bigl(\vec v\times\vec\omega_{\mathrm{vrt}}\bigr)
-+\frac{\nabla\rho_{\mathrm{mass}}\times\nabla p_{\mathrm{th}}}{\rho_{\mathrm{mass}}^{2}} .
+=\vec\nabla_\Phi\times\bigl(\vec v\times\vec\omega_{\mathrm{vrt}}\bigr)
++\frac{\vec\nabla_\Phi\rho_{\mathrm{mass}}\times\nabla p_{\mathrm{th}}}{\rho_{\mathrm{mass}}^{2}} .
 $$
 
-The last term is the baroclinic torque, and it is the only source of vorticity in a flow that starts from rest. It vanishes exactly when the two gradients are parallel, which is the case for a barotropic fluid whose pressure is a function of the density: then $\nabla p_{\mathrm{th}}=(\mathrm{d}p_{\mathrm{th}}/\mathrm{d}\rho_{\mathrm{mass}})\nabla\rho_{\mathrm{mass}}$ and the cross product is zero.
+The last term is the baroclinic torque, and it is the only source of vorticity in a flow that starts from rest. It vanishes exactly when the two gradients are parallel, which is the case for a barotropic fluid whose pressure is a function of the density: then $\vec\nabla_\Phi p_{\mathrm{th}}=(\mathrm{d}p_{\mathrm{th}}/\mathrm{d}\rho_{\mathrm{mass}})\vec\nabla_\Phi\rho_{\mathrm{mass}}$ and the cross product is zero.
 
 **The exact condition is the Gibbs–Duhem relation, and barotropicity is the strong form of it.** The pressure force per unit mass is
 
 $$
-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}=\nabla h-T\nabla s_{\mathrm{spc}} ,
+\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}=\vec\nabla_\Phi h-T\nabla s_{\mathrm{spc}} ,
 $$
 
-with $h$ the specific enthalpy, $\mathrm{d}h=T\,\mathrm{d}s_{\mathrm{spc}}+\mathrm{d}p_{\mathrm{th}}/\rho_{\mathrm{mass}}$. So the pressure force is a gradient exactly when the flow is isentropic, $\nabla s_{\mathrm{spc}}=\vec 0$; and a barotropic law makes it a gradient whatever the entropy field does, because then $h=h(\rho_{\mathrm{mass}})$ and $\nabla h$ is a function of the density alone. That is why the condition is stated on the law and not on the flow: a barotropic fluid needs no knowledge of its entropy field to be gradient-forced. [The Direction of the Fluid-Wave Correspondence, Field by Field](the-direction-of-the-fluid-wave-correspondence-field-by-field.html) uses this form as the force half of its criterion.
+with $h$ the specific enthalpy, $\mathrm{d}h=T\,\mathrm{d}s_{\mathrm{spc}}+\mathrm{d}p_{\mathrm{th}}/\rho_{\mathrm{mass}}$. So the pressure force is a gradient exactly when the flow is isentropic, $\vec\nabla_\Phi s_{\mathrm{spc}}=\vec 0$; and a barotropic law makes it a gradient whatever the entropy field does, because then $h=h(\rho_{\mathrm{mass}})$ and $\vec\nabla_\Phi h$ is a function of the density alone. That is why the condition is stated on the law and not on the flow: a barotropic fluid needs no knowledge of its entropy field to be gradient-forced. [The Direction of the Fluid-Wave Correspondence, Field by Field](the-direction-of-the-fluid-wave-correspondence-field-by-field.html) uses this form as the force half of its criterion.
 
 **The identity is exact and it is checked by expansion.** Substituting Euler's equation into the curl of the velocity, in two dimensions for definiteness, gives the two terms on the right and nothing else: the pressure gradient contributes the baroclinic term, and the convective term contributes the vorticity transport. No term is dropped and the coefficient of the cross product is $1/\rho_{\mathrm{mass}}^{2}$.
 
@@ -90,7 +90,7 @@ with $h$ the specific enthalpy, $\mathrm{d}h=T\,\mathrm{d}s_{\mathrm{spc}}+\math
 **So barotropicity constrains one term and not the force.** It says the pressure is a function of the density alone; it says nothing about the other terms. The separation is exact and it is what makes the later article's caveat necessary: the reverse map needs the pressure to be local in the density because its nonlinear term is local in the modulus, and it needs the second-gradient term because that term is what the Laplacian becomes. A fluid with the first and not the second is a first-order fluid and lies outside the image; a fluid with the second and not the first is a medium without a law of state.
 
 $$
--\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}-\nabla Q_{\mathrm{kor}} ,
+-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}-\vec\nabla_\Phi Q_{\mathrm{kor}} ,
 $$
 
 with $Q_{\mathrm{kor}}$ the second-gradient term of [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html). The first term is the pressure's and the second is the medium's, and barotropicity is a statement about the first alone.
@@ -113,7 +113,7 @@ with $Q_{\mathrm{kor}}$ the second-gradient term of [The Reverse Madelung Map: F
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That the pressure force per unit mass is $\nabla h-T\nabla s_{\mathrm{spc}}$ by Gibbs–Duhem, so it is a gradient exactly when the flow is isentropic, and that barotropicity is the sufficient form of that condition. That a general fluid's state needs two variables and a barotropic fluid's needs one, with the count falling from five to four. That the baroclinic torque is $\nabla\rho_{\mathrm{mass}}\times\nabla p_{\mathrm{th}}/\rho_{\mathrm{mass}}^{2}$ and vanishes for a barotropic fluid, by expansion. That the polytropic exponent fixes the sound speed, and that the four families of the table are the ones the physics supplies. That the field's fluid has no thermodynamic pressure and a quantum force that is not local in the density.
+**Established.** That the pressure force per unit mass is $\vec\nabla_\Phi h-T\nabla s_{\mathrm{spc}}$ by Gibbs–Duhem, so it is a gradient exactly when the flow is isentropic, and that barotropicity is the sufficient form of that condition. That a general fluid's state needs two variables and a barotropic fluid's needs one, with the count falling from five to four. That the baroclinic torque is $\vec\nabla_\Phi\rho_{\mathrm{mass}}\times\nabla p_{\mathrm{th}}/\rho_{\mathrm{mass}}^{2}$ and vanishes for a barotropic fluid, by expansion. That the polytropic exponent fixes the sound speed, and that the four families of the table are the ones the physics supplies. That the field's fluid has no thermodynamic pressure and a quantum force that is not local in the density.
 
 **Interpretation.** That the barotropic condition is a *closure* condition rather than a thermodynamic one, and that it is the fluid's best approximation to having no thermodynamics at all. That the coupling of the obstructions should be read as evidence that the clean case is fragile is a reading of the Bjerknes identity, not a theorem about fluids.
 
@@ -125,7 +125,7 @@ A fluid's pressure depends on two variables in general, the density and the spec
 
 The baroclinic torque is the source of vorticity in a fluid started from rest, and it vanishes exactly when the pressure is a function of the density. So barotropicity keeps an irrotational flow irrotational, and the converse does not hold.
 
-By Gibbs–Duhem the pressure force is $\nabla h-T\nabla s_{\mathrm{spc}}$, a gradient exactly when the flow is isentropic. Barotropicity is the stronger hypothesis that makes it a gradient without any knowledge of the entropy field.
+By Gibbs–Duhem the pressure force is $\vec\nabla_\Phi h-T\nabla s_{\mathrm{spc}}$, a gradient exactly when the flow is isentropic. Barotropicity is the stronger hypothesis that makes it a gradient without any knowledge of the entropy field.
 
 The barotropic families are the polytropes, and the exponent is the whole of the difference between them: $\gamma=1$ isothermal, $\gamma=4/3$ and $\gamma=5/3$ for the degenerate electron gas, $\gamma=2$ for a pairwise interaction.
 

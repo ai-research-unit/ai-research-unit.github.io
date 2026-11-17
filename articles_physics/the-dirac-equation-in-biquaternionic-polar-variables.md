@@ -219,7 +219,7 @@ The second bracket is the momentum, and the algebra states it without a rule. Si
 $$
 \tilde\nabla_\Phi\theta_{\mathrm{pha}}
 =e_t\frac{\partial\theta_{\mathrm{pha}}}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\eta}
-=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}e_t+\nabla\theta_{\mathrm{pha}}
+=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}e_t+\vec\nabla_\Phi\theta_{\mathrm{pha}}
 =i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}
 =\tilde K_{\Phi},
 $$

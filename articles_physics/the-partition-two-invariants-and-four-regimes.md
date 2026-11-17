@@ -102,7 +102,7 @@ $$
 **The two conditions are also functionally independent, and that is a statement about gradients.** With coordinates $(Q_t,Q_x,Q_y,Q_z)$,
 
 $$
-\nabla N=2(Q_t,Q_x,Q_y,Q_z),\qquad \nabla B^{2}=2(0,Q_x,Q_y,Q_z),
+\vec\nabla_\Phi N=2(Q_t,Q_x,Q_y,Q_z),\qquad \vec\nabla_\Phi B^{2}=2(0,Q_x,Q_y,Q_z),
 $$
 
 **and the two are proportional only where $Q_t=0$, or where the vector part vanishes.** So the map $\tilde Q\mapsto(N,B^{2})$ has rank two except on the hyperplane $Q_t=0$ and on the scalar line, and it has rank one on those two sets.
@@ -333,7 +333,7 @@ $$
 **On the intersection the two walls are tangent.** The gradients are
 
 $$
-\nabla N=2(Q_t,Q_x,Q_y,Q_z),\qquad \nabla B^{2}=2(0,Q_x,Q_y,Q_z),
+\vec\nabla_\Phi N=2(Q_t,Q_x,Q_y,Q_z),\qquad \vec\nabla_\Phi B^{2}=2(0,Q_x,Q_y,Q_z),
 $$
 
 **and they coincide exactly where $Q_t=0$, which on the two cones is the intersection.** Away from the origin both gradients are non-zero, so both cones are smooth there and their tangent hyperplanes agree. At the origin both gradients vanish and both cones are singular.
@@ -539,7 +539,7 @@ $$
 
 ### I.10.e — On the Nilpotent Cone the Two Dials Are One Dial
 
-**Read:** $\nabla N=\nabla B^{2}$ exactly on $\{Q_t=0\}$, and on the two cones that set is $\Sigma_{00}$.
+**Read:** $\vec\nabla_\Phi N=\vec\nabla_\Phi B^{2}$ exactly on $\{Q_t=0\}$, and on the two cones that set is $\Sigma_{00}$.
 
 **The tangency is an exact statement about first order.** At a square-zero element a displacement changes the two invariants by the same amount to first order, because the scalar coordinate is absent from both gradients and the vector part enters both identically.
 

@@ -159,9 +159,9 @@ The two variations of the central action give two equations, and they are the pa
 **Varying the phase.** $\partial S/\partial\theta_{\mathrm{pha}}=0$ gives, with $\rho_{\mathrm{num}}=\varrho^{2}$,
 
 $$
-\partial_{r'_t}\bigl(\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)-\nabla\cdot\bigl(\varrho^{2}\nabla\theta_{\mathrm{pha}}\bigr)=0
+\partial_{r'_t}\bigl(\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)-\vec\nabla_\Phi\cdot\bigl(\varrho^{2}\vec\nabla_\Phi\theta_{\mathrm{pha}}\bigr)=0
 \qquad\Longleftrightarrow\qquad
-\nabla\cdot\bigl(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\bigr)-\partial_{r'_t}\bigl(\rho_{\mathrm{num}}\partial_{r'_t}S_{\tilde\Xi}\bigr)=0,
+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}\bigr)-\partial_{r'_t}\bigl(\rho_{\mathrm{num}}\partial_{r'_t}S_{\tilde\Xi}\bigr)=0,
 $$
 
 which is the parent's transport equation. The two forms differ by the overall sign and by the factor $\hbar$, and neither changes the solution set.
@@ -232,7 +232,7 @@ which is the companion's $-2k_m\rho_{\mathrm{chg}}$ with the parent's $\rho_{\ma
 
 $$
 \partial_{r'_t}j_{r'_t}+\sum_{\eta}\partial_{r_\eta}j_\eta
-=2\Bigl[\partial_{r'_t}\bigl(\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)-\nabla\cdot\bigl(\varrho^{2}\nabla\theta_{\mathrm{pha}}\bigr)\Bigr],
+=2\Bigl[\partial_{r'_t}\bigl(\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)-\vec\nabla_\Phi\cdot\bigl(\varrho^{2}\vec\nabla_\Phi\theta_{\mathrm{pha}}\bigr)\Bigr],
 $$
 
 whose bracket is the transport equation. So the conservation of the charge is the Euler–Lagrange equation of the phase, exactly, and not merely a consequence of it. In the element form the same statement needs the equation and its conjugate; here it needs one variation.

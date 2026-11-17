@@ -59,7 +59,7 @@ $$
 **A phase is a translation, and that is the identity in its most useful form.** For a linear angle $\theta$,
 
 $$
-\mathcal{F}\bigl[e^{i\theta}f\bigr](\omega)=\hat f\bigl(\omega-\nabla\theta\bigr),
+\mathcal{F}\bigl[e^{i\theta}f\bigr](\omega)=\hat f\bigl(\omega-\vec\nabla_\Phi\theta\bigr),
 $$
 
 so multiplying by a phase moves the support by the phase gradient and changes nothing else. The check used 64 samples with $m=7$: the two sides agreed to $1.1\times10^{-14}$, and the coefficient that had stood at index $0$ with modulus $0.087043$ stood at index $7$ with the same modulus. **The action's phase becomes a place, and a place carries no phase.** §*The Cross-Check with the Polar Path Integral* is this sentence applied to the kernel.
@@ -118,7 +118,7 @@ the convolution of the two transforms, which is the harmonic analysis article's 
 
 ## Summary
 
-The transform's variable is the gradient of the field's own phase. The polar parent proves $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_\Phi$ for any real angle, and this article reads the transform as extracting that coefficient: on a linear phase the transform is supported on the single wave number equal to the gradient, with modulus $\sqrt{N}$ on a lattice of $N$ samples and every other coefficient at round-off. The general statement is that a phase is a translation, $\mathcal{F}[e^{i\theta}f](\omega)=\hat f(\omega-\nabla\theta)$, so the action's phase becomes a place and contributes nothing to the place.
+The transform's variable is the gradient of the field's own phase. The polar parent proves $\tilde\nabla_\Phi\theta_{\mathrm{pha}}=\tilde K_\Phi$ for any real angle, and this article reads the transform as extracting that coefficient: on a linear phase the transform is supported on the single wave number equal to the gradient, with modulus $\sqrt{N}$ on a lattice of $N$ samples and every other coefficient at round-off. The general statement is that a phase is a translation, $\mathcal{F}[e^{i\theta}f](\omega)=\hat f(\omega-\vec\nabla_\Phi\theta)$, so the action's phase becomes a place and contributes nothing to the place.
 
 The word is a product of four element-valued functions, and the transform of a product is a convolution, checked to $1.4\times10^{-15}$ on 64 samples. So the four factors do not survive the transform as four factors, and no momentum-space function is the scale, the angle, the boost or the rotor. What survives is one element-valued density per mode, supported at the wave number, together with the direction of that wave number and two signs: the sign of the frequency and the sign of the direction, which on the massless shell selects between the two idempotents $\tfrac12(e_t\pm i\hat n\cdot\vec e)$.
 
@@ -131,7 +131,7 @@ The amplitude's own word has four factors, and they are constants of the mode, b
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; four factors, eight parameters |
 | $\theta_{\mathrm{pha}}$ | The word's angle; the action's phase per $\hbar$ |
 | $\tilde K_\Phi=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | The wave number; the gradient of the angle |
-| $\mathcal{F}[e^{i\theta}f](\omega)=\hat f(\omega-\nabla\theta)$ | A phase is a translation of the support |
+| $\mathcal{F}[e^{i\theta}f](\omega)=\hat f(\omega-\vec\nabla_\Phi\theta)$ | A phase is a translation of the support |
 | $\mathcal{F}[fg]=\mathcal{F}[f]*\mathcal{F}[g]$ | The transform of a product is a convolution |
 | $\hat n=\vec k_\Phi/k_t'$ | The direction of the support point |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm i\hat n\cdot\vec e)$ | The two idempotents the direction selects on the cone |

@@ -7,7 +7,7 @@
 **The two displays, side by side, and their difference.**
 
 $$
-S_{\mathrm{op}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}+\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
+S_{\mathrm{op}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}+\text{terms in }\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}\Bigr],
 $$
 
 $$
@@ -62,7 +62,7 @@ $$
 **What is deleted.**
 
 $$
-\Delta S=-\int\mathrm{d}^{4}\varrho\;\bigl[\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\bigr],
+\Delta S=-\int\mathrm{d}^{4}\varrho\;\bigl[\text{terms in }\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}\bigr],
 $$
 
 three gradients and not eight: the phase's gradient is not among them, and neither are the rotor's angles, because those enter the one-form and not the potential.
@@ -103,7 +103,7 @@ three gradients and not eight: the phase's gradient is not among them, and neith
 
 ## Verification
 
-**The two displays were compared term by term.** The boxed action and the operator-setting action differ by the bracket in $\nabla \varrho$, $\nabla\theta_{\mathrm{rpd}}$ and $\nabla\theta_{\mathrm{axr}}$, and by nothing else: the phase term, the frame potential and the mass term are identical in both. **The comparison is an inspection of the parent's own text.**
+**The two displays were compared term by term.** The boxed action and the operator-setting action differ by the bracket in $\vec\nabla_\Phi \varrho$, $\vec\nabla_\Phi\theta_{\mathrm{rpd}}$ and $\vec\nabla_\Phi\theta_{\mathrm{axr}}$, and by nothing else: the phase term, the frame potential and the mass term are identical in both. **The comparison is an inspection of the parent's own text.**
 
 **The momentum count was checked against the coordinates.** One velocity, the phase's, appears linearly in the boxed action, so seven momenta vanish or are fixed and one is the coefficient of the phase's rate. **The count matches the parent's statement of seven and two.**
 
@@ -131,7 +131,7 @@ The surviving system is a constrained one: seven momenta zero or fixed, two evol
 | $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density in the constant setting |
 | $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ | The frame potential, including the mass function $\mathcal V$ |
 | $S_{\mathrm{op}}$, $S_{\mathrm{box}}$ | The operator-setting action; the boxed constant-setting action |
-| $\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}$ | The three gradients the limit deletes |
+| $\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}$ | The three gradients the limit deletes |
 | $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection; $q$ its charge, the parent's $ϙ=-q$ |
 | $\vec\pi=\vec p-q\vec A$, $\mathcal E=E-q\varphi$ | Mechanical momentum and energy |
 | $\epsilon=1/(\pi_{\Phi}L)$, $\delta=1/(k_mL)$ | The two parameters of the deleted terms' size |

@@ -12,7 +12,7 @@ This article asks what the biquaternion framework contributes to that statement.
 
 3. **The Weyl transformation is a level-1 statement, and it must not be confused with the $i r'_t$ construction of the coordinate.** The framework obtains the Lorentzian sign pattern from the level-1 form read on the material sector with the time coordinate written $i r'_t$: the minus sign is one use of $i^2=-1$, and the signs are an output rather than an input. A Weyl rescaling changes the level-1 form, and therefore changes the level-2 interpretation; it does not change the $i r'_t$ assignment or the sector split. The anomaly is a statement about the level-1 form's variation under a rescaling, and it is the one place in this subcategory where a conformal rescaling of the primary convention is contemplated. The three levels are kept apart throughout.
 
-4. **The coefficient has a fixed shape, and the algebra contributes only its multiplicity.** In four dimensions the trace is $(4\pi)^{-2}(cW^2-aE_4+b\Box R)$, with $a$ and $c$ rational and additive over fields; the spin weights of a scalar, a Dirac fermion, and a vector are $1:11:62$ for $a$ and $1:6:12$ for $c$. The algebra fixes how many copies of the per-component number a biquaternion field contributes, and it fixes nothing else: not the weights, not the curvature invariants, not the scheme-dependent $\Box R$. This is the same division the partition-function, functional-integral, and determinant articles make; it is *not* a claim that the biquaternion scalar is a multiplicity of complex scalars, for the reason those articles give.
+4. **The coefficient has a fixed shape, and the algebra contributes only its multiplicity.** In four dimensions the trace is $(4\pi)^{-2}(cW^2-aE_4+b\Box_\Phi R)$, with $a$ and $c$ rational and additive over fields; the spin weights of a scalar, a Dirac fermion, and a vector are $1:11:62$ for $a$ and $1:6:12$ for $c$. The algebra fixes how many copies of the per-component number a biquaternion field contributes, and it fixes nothing else: not the weights, not the curvature invariants, not the scheme-dependent $\Box_\Phi R$. This is the same division the partition-function, functional-integral, and determinant articles make; it is *not* a claim that the biquaternion scalar is a multiplicity of complex scalars, for the reason those articles give.
 
 5. **The anomaly and the $\theta$ vacuum are the two structural quantum effects of this group.** The trace anomaly is the failure of a *conformal* symmetry; the $\theta$ vacuum of the next article is the failure of a *topological* triviality. Both arise from the same place — the regularised determinant, and in particular its non-central part — and the determinant article's distinction between the central case (a determinant that factors) and the non-central case (a determinant with a phase) is what separates them. The trace anomaly is a central statement about a non-central operator; the $\theta$ vacuum is a statement about the phase that the non-central operator acquires.
 
@@ -42,11 +42,11 @@ So $T_\mu{}_\mu=0$ is the statement that the classical action is Weyl invariant,
 
 **The improved tensor.** For a scalar the canonical tensor is not traceless even for the massless action at the conformal coupling; adding the improvement term
 $$
-T_{\mathrm{imp},\mu\nu} = T_{\mathrm{can},\mu\nu} + \zeta\big(g_{\mu\nu}\Box - \nabla_\mu\nabla_\nu\big)\xi^2 ,
+T_{\mathrm{imp},\mu\nu} = T_{\mathrm{can},\mu\nu} + \zeta\big(g_{\mu\nu}\Box_\Phi - \nabla_\mu\nabla_\nu\big)\xi^2 ,
 \qquad
 \zeta=\frac{d-2}{4(d-1)},
 $$
-produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box-\partial^2/\partial R_\mu\partial R_\nu$, with $\Box$ read on the flat background. The arithmetic is short. The added trace is $\zeta(d-1)\Box\xi^2$, which on shell is $2\zeta(d-1)\sum_\mu(\partial\xi/\partial R_\mu)^2$, because $\Box\xi^2=2\sum_\mu(\partial\xi/\partial R_\mu)^2+2\xi\,\Box\xi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\xi/\partial R_\mu)^2$; the value $\zeta=(d-2)/(4(d-1))$ cancels the two, giving $\zeta=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
+produces $T_\mu{}_\mu=0$ on shell, the bracket reducing in flat coordinates to $\delta_{\mu\nu}\Box_\Phi-\partial^2/\partial R_\mu\partial R_\nu$, with $\Box_\Phi$ read on the flat background. The arithmetic is short. The added trace is $\zeta(d-1)\Box_\Phi\xi^2$, which on shell is $2\zeta(d-1)\sum_\mu(\partial\xi/\partial R_\mu)^2$, because $\Box_\Phi\xi^2=2\sum_\mu(\partial\xi/\partial R_\mu)^2+2\xi\,\Box_\Phi\xi$ and the second term vanishes for a massless field, while the canonical trace is $-\tfrac{d-2}{2}\sum_\mu(\partial\xi/\partial R_\mu)^2$; the value $\zeta=(d-2)/(4(d-1))$ cancels the two, giving $\zeta=\tfrac16$ at $d=4$. This is worth recording because it fixes the normalisation against which the quantum trace is measured: the anomaly is a statement about the improved tensor, and a calculation that omits the improvement term reports a classical trace instead of an anomaly.
 
 **The $i r'_t$ interpretation.** The flat metric is $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the level-2 interpretation of the level-1 form is the material reading $Q_t=i q'_t$, $Q_\eta=q_\eta$, as *Frame and Metric Conventions* fixes. The trace $T_\mu{}_\mu$ is the contraction with $\delta_{\mu\nu}$, and it is a level-2 object numerically while being a level-1 statement structurally. This is important for the Weyl transformation: a rescaling of the level-1 form is *not* a change of the $i r'_t$ assignment, and the two operations are different. The section on the three levels makes this precise.
 
@@ -86,9 +86,9 @@ $$
 $$
 and the central charge is $c=1$ for a real scalar, $c=2$ for a complex scalar, and it is additive over decoupled fields. The coefficient is the Seeley–DeWitt value $a_1=R/6$ of the minimal scalar, since $\frac{1}{4\pi}a_1=R/(24\pi)$; the value $c=1$ per real scalar is the standard one (Polyakov 1981), and it is proportional to the number of real components: the anomaly's coefficient counts components.
 
-**Four dimensions.** In four dimensions the trace for a free field is a linear combination of the Euler density, the Weyl-square term, and $\Box R$:
+**Four dimensions.** In four dimensions the trace for a free field is a linear combination of the Euler density, the Weyl-square term, and $\Box_\Phi R$:
 $$
-\boxed{\;T_\mu{}_\mu = \frac{1}{(4\pi)^2}\big(c\,W^2 - a\,E_4 + b\,\Box R\big)\;},
+\boxed{\;T_\mu{}_\mu = \frac{1}{(4\pi)^2}\big(c\,W^2 - a\,E_4 + b\,\Box_\Phi R\big)\;},
 $$
 with $E_4=\sum_{\mu,\nu,\rho,\sigma}R_{\mu\nu\rho\sigma}R_{\mu\nu\rho\sigma}-4\sum_{\mu,\nu}R_{\mu\nu}R_{\mu\nu}+R^2$ the Euler density and $W^2=\sum_{\mu,\nu,\rho,\sigma}W_{\mu\nu\rho\sigma}W_{\mu\nu\rho\sigma}$ the Weyl-square term; the minus on the Euler density is the convention of Duff's review, and a text that writes $+aE_4$ defines $a$ with the opposite sign. In that convention the coefficients are rational functions of the field content,
 $$
@@ -96,7 +96,7 @@ a=\frac{1}{90}\big(n_s+11n_f+62n_v\big),
 \qquad
 c=\frac{1}{120}\big(n_s+6n_f+12n_v\big),
 $$
-for $n_s$ real scalars, $n_f$ Dirac fermions, and $n_v$ vector fields: $a=\tfrac{1}{90},\tfrac{11}{90},\tfrac{62}{90}$ and $c=\tfrac{1}{120},\tfrac{1}{20},\tfrac{1}{10}$ for one field of each kind. Both are additive over decoupled fields, and both are independent of the renormalised coupling. The symbol $c$ here is the Weyl-square coefficient and is not the two-dimensional central charge of the previous paragraph; the two share a letter in the literature and nothing else. The $\Box R$ term is the exception to scheme independence: its coefficient is moved by a finite local counterterm, so only $a$ and $c$ are predictions of the field content.
+for $n_s$ real scalars, $n_f$ Dirac fermions, and $n_v$ vector fields: $a=\tfrac{1}{90},\tfrac{11}{90},\tfrac{62}{90}$ and $c=\tfrac{1}{120},\tfrac{1}{20},\tfrac{1}{10}$ for one field of each kind. Both are additive over decoupled fields, and both are independent of the renormalised coupling. The symbol $c$ here is the Weyl-square coefficient and is not the two-dimensional central charge of the previous paragraph; the two share a letter in the literature and nothing else. The $\Box_\Phi R$ term is the exception to scheme independence: its coefficient is moved by a finite local counterterm, so only $a$ and $c$ are predictions of the field content.
 
 **Multiplicity.** The pattern in both dimensions is that the anomaly coefficient is the sum over the field's internal components of each component's contribution, weighted by its spin. A field whose internal space is $n$-real-dimensional contributes $n$ times a single real component's coefficient, with the spin weight read off the ratios above: $1:11:62$ for $a$ and $1:6:12$ for $c$. The framework's task is therefore to count the components of a biquaternion field; that is the next section.
 
@@ -124,7 +124,7 @@ The one metric is read at three levels in the series, and the Weyl transformatio
 
 **Level 1.** The level-1 form is the biquaternion norm of *Frame and Metric Conventions*, whose metric is $\delta_{\mu\nu}$. A Weyl rescaling is a change of its normalisation, and the anomalous trace measures the response. The rescaling is *not* a change of the algebra, of the basis, or of the trace: it changes the one form, and that form is the only object the anomaly's definition varies.
 
-**Level 2.** The level-2 reading is the same form read on the material sector, with $Q_t=i q'_t$ and $Q_\eta=q_\eta$, which is the substitution *Frame and Metric Conventions* fixes. A Weyl rescaling rescales the level-1 form, and the level-2 coefficients with it, but it does not change the $i r'_t$ assignment or the sector split. The minus of the material $\Box$ comes from $i^2=-1$ in $\partial/\partial i r'_t$ and nothing else, and no sign in the anomaly formula is to be "corrected" on the basis of the level-1 form.
+**Level 2.** The level-2 reading is the same form read on the material sector, with $Q_t=i q'_t$ and $Q_\eta=q_\eta$, which is the substitution *Frame and Metric Conventions* fixes. A Weyl rescaling rescales the level-1 form, and the level-2 coefficients with it, but it does not change the $i r'_t$ assignment or the sector split. The minus of the material $\Box_\Phi$ comes from $i^2=-1$ in $\partial/\partial i r'_t$ and nothing else, and no sign in the anomaly formula is to be "corrected" on the basis of the level-1 form.
 
 **Level 3.** The third level is the older display, the arrays in which the literature prints the same objects. It is a display, not a convention of this article: *Matrix Representations Conventions* fixes it, and *Operator and Calculus Conventions* states why it is legacy. The display enters the anomaly only as the standard transcription of the four-dimensional trace. A calculation in the display and a calculation with biquaternion elements must agree on the anomaly, because the anomaly is a physical coefficient; where they appear to disagree it is the transcription that is wrong.
 
@@ -140,7 +140,7 @@ T_\mu{}_\mu \supset \frac{\beta(g)}{2g}\,O ,
 $$
 where $O$ is the operator multiplying the coupling. The relation is standard (the trace anomaly and the $\beta$ function are the same coefficient read in two ways), and it is the reason the anomaly is not removable by a counterterm: removing it would contradict the running that *The Renormalization Group in Biquaternionic Form* computes.
 
-**Scheme dependence.** The $a$ and $c$ coefficients are scheme-independent in four dimensions; the coefficient of $\Box R$ is not, and it is adjusted by a finite local counterterm. The anomaly's scheme-independent part is therefore a genuine prediction of the field content, which is exactly what makes it a useful check on the framework's counting. A reader who finds a $\Box R$ coefficient differing between articles is looking at a scheme choice, not at a disagreement.
+**Scheme dependence.** The $a$ and $c$ coefficients are scheme-independent in four dimensions; the coefficient of $\Box_\Phi R$ is not, and it is adjusted by a finite local counterterm. The anomaly's scheme-independent part is therefore a genuine prediction of the field content, which is exactly what makes it a useful check on the framework's counting. A reader who finds a $\Box_\Phi R$ coefficient differing between articles is looking at a scheme choice, not at a disagreement.
 
 **The anomaly's one-loop exactness.** In a conformal theory the anomaly is one-loop exact: the higher loops do not add new terms of the anomalous form. This is the statement that $a_{d/2}$ is local and that the conformal variation of the determinant is exhausted by it, and it is standard. It is also the reason an anomaly computed at one loop in the framework is final, and it is worth stating because it is the exception rather than the rule for one-loop results.
 
@@ -148,11 +148,11 @@ where $O$ is the operator multiplying the coupling. The relation is standard (th
 
 ## The Chiral Pair and the Mass
 
-**The chiral pair.** The derivatives are the gradient and its quaternion conjugate, fixed in *Operator and Calculus Conventions*, §*The Gradient*; $\Box$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde{Ξ}_{L}$ is the $-1$ part and $\tilde{Ξ}_{R}$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_\mu$ it is
+**The chiral pair.** The derivatives are the gradient and its quaternion conjugate, fixed in *Operator and Calculus Conventions*, §*The Gradient*; $\Box_\Phi$ is the scalar composition of the two. The massive dynamics is the chiral pair of *The Dirac Equation in Biquaternionic Form*, and its two letters are the two values of the chirality: $\tilde{Ξ}_{L}$ is the $-1$ part and $\tilde{Ξ}_{R}$ the $+1$ part. No one-field first-order massive equation stands beside the pair, because the square of the gradient is not scalar. In the coordinates $Q_\mu$ it is
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\,\partial R_\eta},
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\,\partial R_\eta},
 $$
-where the mixed term survives because $e_t$ commutes with the spatial units, and $\Delta_Q$ is the convention's Laplacian. Only the composition with the conjugate is scalar, and that composition is the series' $\Box$. Both identities are derived forms, read from the multiplication of the units.
+where the mixed term survives because $e_t$ commutes with the spatial units, and $\Delta_\Phi$ is the convention's Laplacian. Only the composition with the conjugate is scalar, and that composition is the series' $\Box_\Phi$. Both identities are derived forms, read from the multiplication of the units.
 
 **The mass.** The mass term is the right multiplication $\tilde{Ξ}\mapsto k_m\,\tilde{Ξ}(i\vec e_x)$, the frame's timelike basis operator up to the scalar $m$. The chirality basis operator multiplies on the right as well, and the two basis operators anticommute, because $\vec e_x\vec e_z=-\vec e_z\vec e_x$. The mass therefore carries $\tilde{Ξ}_{L}$ into a multiple of $\tilde{Ξ}_{R}$ and $\tilde{Ξ}_{R}$ into a multiple of $\tilde{Ξ}_{L}$: it exchanges the two values. This is a derived form, and it was checked on generic elements. The gradient multiplies on the left, where it commutes with the chirality basis operator, so the free pair carries each value into itself. The massive operator mixes the two values: it is not block-diagonal in them, and its determinant is not the product of the two free determinants.
 
@@ -192,7 +192,7 @@ The first identity is exact, so the second and third are exact; a central differ
 - The definition of $T_{\mu\nu}$ as the metric variation of the action, the improvement term, and the classical vanishing of the trace.
 - The one-loop trace as the conformal variation of $\log\det S^{(2)}$; the heat-kernel expansion; the identification of $a_{d/2}$ as the anomalous coefficient.
 - The values $c=1$ per real scalar in two dimensions and the four-dimensional $a$ and $c$ coefficients for scalar, fermion, and vector fields.
-- The relation $T_\mu{}_\mu\supset\frac{\beta}{2g}O$, the scheme dependence of $\Box R$, and the one-loop exactness of the anomaly (Adler–Bardeen non-renormalisation).
+- The relation $T_\mu{}_\mu\supset\frac{\beta}{2g}O$, the scheme dependence of $\Box_\Phi R$, and the one-loop exactness of the anomaly (Adler–Bardeen non-renormalisation).
 - The proper-time representation $\Gamma_1=-\tfrac12\int_0^\infty\frac{dr'_t}{r'_{t}}\mathrm{Tr}\,\exp(-r'_t S^{(2)})$ and the small-$r'_t$ expansion of the heat kernel, $\mathrm{Tr}\,\exp(-r'_t S^{(2)})\sim(4\pi r'_t)^{-d/2}\int\sqrt g\,(a_0+a_1r'_t+\cdots)$, with $k=d/2$ as the anomalous coefficient.
 
 **Interpretation.**
@@ -212,7 +212,7 @@ The trace anomaly in biquaternionic form is the standard anomaly with the framew
 $$
 \boxed{\;T_\mu{}_\mu\big|_{\text{one loop}} = \frac{2}{\sqrt{|g|}}g_{\mu\nu}\frac{\delta\Gamma_1}{\delta g_{\mu\nu}} = \frac{1}{(4\pi)^{d/2}}\,a_{d/2}\;},
 $$
-proportional to the Seeley–DeWitt coefficient, which is local and one-loop exact. In two dimensions $T_\mu{}_\mu=\frac{c}{24\pi}R$ with $c$ counting real components; in four dimensions $T_\mu{}_\mu=\frac{1}{(4\pi)^2}(cW^2-aE_4+b\Box R)$ with $a$ and $c$ fixed by the field content. The framework's contributions are the trace of an operator in the algebra's four complex dimensions, four for the identity action, the level-1 norm with $\dim_\mathbb{C}\mathbb{B}=4$, and the component count four complex and eight real; the counting is checked in finite dimension by $\frac{\partial}{\partial s}\log\det(e^sK)\big|_{s=0}=\dim K$. The Weyl transformation rescales the level-1 form and nothing else, and the regularisation of the determinant, the curvature invariants, and the coefficients of $E_4$ and $W^2$ are standard and transcribed.
+proportional to the Seeley–DeWitt coefficient, which is local and one-loop exact. In two dimensions $T_\mu{}_\mu=\frac{c}{24\pi}R$ with $c$ counting real components; in four dimensions $T_\mu{}_\mu=\frac{1}{(4\pi)^2}(cW^2-aE_4+b\Box_\Phi R)$ with $a$ and $c$ fixed by the field content. The framework's contributions are the trace of an operator in the algebra's four complex dimensions, four for the identity action, the level-1 norm with $\dim_\mathbb{C}\mathbb{B}=4$, and the component count four complex and eight real; the counting is checked in finite dimension by $\frac{\partial}{\partial s}\log\det(e^sK)\big|_{s=0}=\dim K$. The Weyl transformation rescales the level-1 form and nothing else, and the regularisation of the determinant, the curvature invariants, and the coefficients of $E_4$ and $W^2$ are standard and transcribed.
 
 ## Summary of Notation
 
@@ -226,8 +226,8 @@ proportional to the Seeley–DeWitt coefficient, which is local and one-loop exa
 | $\mathrm{Tr}$ | The functional trace over the field space, as in $\Gamma_1$; a different object from the element trace |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^2$ | Level-1 quaternionic norm, coefficients $\delta_{\mu\nu}=(1,1,1,1)$; $\dim_\mathbb{C}\mathbb{B}=4$ |
 | $Q_t=i q'_t$, $Q_\eta=q_\eta$ | The material reading; the substitution is carried by $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ |
-| $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient; on $\mathbb{B}_{\Phi}$, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so $\partial/\partial R_t=\partial/\partial i r'_t$ |
-| $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ | Quaternion conjugate of the gradient, $\varepsilon=(1,-1,-1,-1)$ |
+| $\tilde\nabla_\Phi=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient; on $\mathbb{B}_{\Phi}$, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, so $\partial/\partial R_t=\partial/\partial i r'_t$ |
+| $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ | Quaternion conjugate of the gradient, $\varepsilon=(1,-1,-1,-1)$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The chiral pair, the massive dynamics of the field |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Series d'Alembertian |
 | $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$ | Weyl transformation; a level-1 rescaling |

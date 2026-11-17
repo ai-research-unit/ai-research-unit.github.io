@@ -363,7 +363,7 @@ The key differences are:
 
 5. **The relation to the polar decomposition.** How do the elementary functions interact with the polar decomposition of the algebra, in its two-factor form and in its exponential form?
 
-6. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general split biquaternion $\tilde{Q}$?
+6. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis? For example, what is $\tilde\nabla_\Phi \exp(\tilde{Q})$ for a general split biquaternion $\tilde{Q}$?
 
 ## Summary
 

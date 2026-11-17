@@ -97,8 +97,8 @@ so that $a$ is the angular field and $f_a$ is the scale of the breaking.  The ki
 
 $$
 -\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*}\,\tilde\nabla_\Phi\tilde{Ξ}\right)
-= \frac12\left[(\partial/\partial r'_t\,\rho)^2 - (\nabla\rho)^2\right]
-+ \frac{\rho^2}{2f_a^2}\left[(\partial/\partial r'_t\,a)^2 - (\nabla a)^2\right],
+= \frac12\left[(\partial/\partial r'_t\,\rho)^2 - (\vec\nabla_\Phi\rho)^2\right]
++ \frac{\rho^2}{2f_a^2}\left[(\partial/\partial r'_t\,a)^2 - (\vec\nabla_\Phi a)^2\right],
 $$
 
 which shows the two modes: the radial mode $\rho$, massive from the Peccei–Quinn potential, and the angular mode $a$, whose kinetic term is canonical after $\rho$ is replaced by its expectation value $\sqrt2\,v_0 = f_a$. The angular field is the **axion**, and its coupling to the rest of the theory is entirely through the symmetry-breaking terms, which is the defining property of a pseudo-Goldstone boson. The identification of the Peccei–Quinn symmetry with the central phase is exact; the identification of the central scalar with the Peccei–Quinn scalar is the modelling step.

@@ -8,7 +8,7 @@ This article develops the biquaternionic interpretation of both. The square of t
 
 Three boundaries are respected. The Klein–Gordon **path integral** and the scalar propagator belong to the spin-$0$ subcategory and are cited, not re-derived. The **spin-half path integral** and the **fermionic field path integral** are different objects: the former is the non-relativistic spinning path integral and the latter is the quantised-field integral belonging to *Biquaternion Quantum Fields*; neither is the single-particle Dirac path integral treated here. The general apparatus of the d'Alembertian and its Green's functions belongs to *the generalities*.
 
-**The conventions are the series conventions, and they are cited here and not developed.** The algebra, its four units and the central scalar imaginary are those of *Algebra and Element Conventions*, §*The Algebra and Its Basis* and §*The Base and Its Units*: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box$ are those of *Operator and Calculus Conventions*, §*The Gradient*. The chiral pair is written as the two first-order lines of §*The Two First-Order Equations and Their Symbol*, each composed with the conjugate of the other giving $\Box$, and no letter gathers the two. The coordinates $x_\mu=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$, are those of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the four-momentum element $\tilde{P}_{\Phi}$ is that of *Algebra and Element Conventions*, §*The Four-Vectors and the Currents*.
+**The conventions are the series conventions, and they are cited here and not developed.** The algebra, its four units and the central scalar imaginary are those of *Algebra and Element Conventions*, §*The Algebra and Its Basis* and §*The Base and Its Units*: $e_t$ is the unit of the algebra and $i$ is central. The gradient $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box_\Phi$ are those of *Operator and Calculus Conventions*, §*The Gradient*. The chiral pair is written as the two first-order lines of §*The Two First-Order Equations and Their Symbol*, each composed with the conjugate of the other giving $\Box_\Phi$, and no letter gathers the two. The coordinates $x_\mu=(x_0,x_1,x_2,x_3)$, the material sector $\mathbb{B}_{\Phi}$ and its interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$, are those of *Frame and Metric Conventions*, §*The $\mathbb{B}_{\Phi}$ Frame*, and the four-momentum element $\tilde{P}_{\Phi}$ is that of *Algebra and Element Conventions*, §*The Four-Vectors and the Currents*.
 
 **The dynamics is the chiral pair.**
 
@@ -102,7 +102,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\mathcal S_L = \Box_\Phi\,\mathcal S_L,
 $$
 
-the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -N/\hbar^{2}$; the operator is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, it is $\Delta - \partial^2/\partial x_0^2$, with $\Delta$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
+the composition of two left multiplications by the two gradients, whose product is central (*Operator and Calculus Conventions*, §*The Gradient*). In symbols that is the identity $i\tilde K_{\Phi}\,i\tilde K_{\Phi}^{\natural} = -N/\hbar^{2}$; the operator is $\Box_\Phi=\sum_\mu\partial^2/\partial R_\mu^2$, and on the material reading, $Q_t=i q'_t$ and $Q_\eta=q_\eta$, it is $\Delta_\Phi - \partial^2/\partial x_0^2$, with $\Delta_\Phi$ the Laplacian in the three real spatial coordinates. The square is therefore the series' own scalar operator and not a second one, and that is what makes the first-order operator a square root.
 
 This is standard relativistic quantum physics (see the Further Reading); the companion article *The Feynman Propagator in Biquaternionic Form* treats the same object in the biquaternion framework. Two structural facts are needed here.
 
@@ -113,10 +113,10 @@ $$
 -\frac{i\,\hbar^{2}}{N + m^{2}c^{2} - i\epsilon}\,
 \exp(-i(p\cdot(x-x_2))/\hbar),
 \qquad
-\left(\Box - k_m^{2}\right)\mathcal{G}_F = i\,\delta^{(4)},
+\left(\Box_\Phi - k_m^{2}\right)\mathcal{G}_F = i\,\delta^{(4)},
 $$
 
-for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box$ acts on the exponential as multiplication by $-N/\hbar^2$, the difference is exactly that operator, and formally
+for the scalar (Klein–Gordon) Feynman propagator, the spin-$0$ object of the companion subcategory. It carries the same $i$ as $\mathcal S$, so the two kernels have one and the same Green's-function normalisation and differ by the first-order operator alone. Since $\Box_\Phi$ acts on the exponential as multiplication by $-N/\hbar^2$, the difference is exactly that operator, and formally
 
 $$
 \boxed{\;\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F,
@@ -132,7 +132,7 @@ $$
 = \left(\Box_\Phi-k_m^{2}\right)\mathcal{G}_F ,
 $$
 
-the two mass-gradient terms cancelling because each of them carries the same gradient, and $\Box-k_m^{2}$ being the operator that $\mathcal{G}_F$ inverts. The Dirac propagator is therefore the Klein–Gordon propagator with the first-order operator applied; if the scalar kernel is available as a path integral, the Dirac propagator is available from it by a differential operation. This is one of the two standard resolutions of the first-order problem, and it is the one the biquaternion algebra states most directly: the inverse of the first-order operator is the conjugate first-order operator times the inverse of its square, and its square is central.
+the two mass-gradient terms cancelling because each of them carries the same gradient, and $\Box_\Phi-k_m^{2}$ being the operator that $\mathcal{G}_F$ inverts. The Dirac propagator is therefore the Klein–Gordon propagator with the first-order operator applied; if the scalar kernel is available as a path integral, the Dirac propagator is available from it by a differential operation. This is one of the two standard resolutions of the first-order problem, and it is the one the biquaternion algebra states most directly: the inverse of the first-order operator is the conjugate first-order operator times the inverse of its square, and its square is central.
 
 **The propagator is not one path integral with one phase.** The worldline proper-time representation makes the same point in a Lorentz-invariant way. Since
 
@@ -141,7 +141,7 @@ $$
 = \int_0^\infty dT\,\exp\left(iT\left(-\bigl(N + m^{2}c^{2}\bigr) + i\epsilon\right)/\hbar\right),
 $$
 
-the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(i\hbar T(\Box - k_m^{2}))|x\rangle$, and that kernel is a sum over worldlines,
+the scalar propagator is the integral over a proper time $T$ of a kernel $\langle x_2|\exp(i\hbar T(\Box_\Phi - k_m^{2}))|x\rangle$, and that kernel is a sum over worldlines,
 
 $$
 \mathcal{G}_F(x,x_2) = \int_0^\infty dT\int_{x(0)=x}^{x(T)=x_2}\mathcal{D}x(\tau)\;
@@ -186,7 +186,7 @@ $$
 with $\mathcal{N}(T)$ the standard Gaussian normalisation $\propto T^{-2}$, whose precise constant depends on the measure convention and is not needed below. Three features of this expression carry the physics.
 
 - The **proper time $T$ is the Schwinger parameter**, and the exponent is the classical action of a relativistic free particle, $\frac{(x-x_2)^2}{4T}$ being the kinetic term and $\hbar^{2}k_m^{2}T=m^{2}c^{2}T$ the mass term, both in units of action; the path integral over $x(\tau)$ is the statement that the exponent is extremised by a straight line, with the fluctuations around it producing the prefactor.
-- The **mass is a constant in the exponent**. There is no spin and no algebra-valued weight: $\mathcal{G}_F$ is a scalar, and it obeys $(\Box - k_m^{2})\mathcal{G}_F = i\delta^{(4)}$ up to the measure convention.
+- The **mass is a constant in the exponent**. There is no spin and no algebra-valued weight: $\mathcal{G}_F$ is a scalar, and it obeys $(\Box_\Phi - k_m^{2})\mathcal{G}_F = i\delta^{(4)}$ up to the measure convention.
 - The **first-order structure enters only through the differential prefactor**. The Dirac propagator is obtained by applying $\left(\tilde\nabla_\Phi + k_m\right)$ to $\mathcal{G}_F$, which is why the spin is invisible until that operation is performed.
 
 The same proper-time integral is the bridge to the worldline of the next section: replacing the constant mass by a general worldline interaction, and adding the odd variables, converts this scalar kernel into the algebra-valued kernel of the pair.
@@ -327,7 +327,7 @@ the two-part Dirac equation in 1+1 dimensions. The corner weight $i\epsilon\,k_m
 
 The path integral must carry the composition law of a kernel and the Green's-function equation, and both are transparent in the biquaternion framework.
 
-**Composition belongs to the proper-time kernel, not to $\mathcal S$.** Write $K_T(x,x_2)$ for the kernel of $\exp\left(iT\left(\Box-k_m^{2}\right)\right)$. Then
+**Composition belongs to the proper-time kernel, not to $\mathcal S$.** Write $K_T(x,x_2)$ for the kernel of $\exp\left(iT\left(\Box_\Phi-k_m^{2}\right)\right)$. Then
 
 $$
 \int d^4y\;K_{T_1}(x,y)\,K_{T_2}(y,x_2) = K_{T_1+T_2}(x,x_2),
@@ -469,9 +469,9 @@ so that the four values are $4I_4$, $-2\gamma_\alpha$, $0$ and $2\gamma_\alpha\g
 
 ## Summary
 
-The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu} + \tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}$ is the algebra-valued spin factor $\mathcal{F}[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
+The Dirac path integral is the sum over worldlines that computes the propagator, the pair of element-valued kernels $\mathcal S_L$, $\mathcal S_R$ satisfying $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$ and $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$. Because the Dirac operator is first order, the path integral is organised in one of two standard ways. In the **proper-time** way, the scalar Klein–Gordon kernel is written as a worldline sum over material curves in $\mathbb{B}_{\Phi}$ with central phase $S_0$, and the Dirac propagator is obtained by applying the conjugate first-order operators: $\mathcal S_L = \left(\tilde\nabla_\Phi + k_m\right)\mathcal{G}_F$ and $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+ k_m\right)\mathcal{G}_F$, the identity following because each line composed with the conjugate of the other is $\Box_\Phi$. In the **spinning-worldline** way, an odd Grassmann variable $\tilde{Ξ}_{\mu}$ is added at each point with kinetic term $\frac{i}{2}\sum_\mu\tilde{Ξ}_{\mu}\frac{d\tilde{Ξ}_{\mu}}{d\tau}$; a pair of odd variables is an element of the algebra with $\tilde{Ξ}_{\mu}\tilde{Ξ}_{\nu} + \tilde{Ξ}_{\nu}\tilde{Ξ}_{\mu} = -\frac12\varepsilon_\mu\delta_{\mu\nu}e_t$; the path integral over $\tilde{Ξ}$ is the algebra-valued spin factor $\mathcal{F}[x]$; and the full worldline integral reproduces the propagator (Berezin–Marinov, Brink–Di Vecchia–Howe).
 
-In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is invertible up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (\tilde{P}_{\Phi}-i\,mc)/(N+m^{2}c^{2})$ and $\mathcal S_R = (\tilde{P}_{\Phi}^{\natural}-i\,mc)/(N+m^{2}c^{2})$, and the identity that the two lines compose to $\Box-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two components of the pair, the corners carry the weight $i\epsilon\,k_m$ and are the mass insertions that join them, and the continuum limit is the two-dimensional propagator.
+In the biquaternion framework, a single odd variable is not an element of the algebra and a pair is, because every product of two units is invertible up to sign; the spin factor is the path-ordered product of those elements, and squaring the first-order operator returns the central Klein–Gordon operator. In momentum space the two components of the propagator are $\mathcal S_L = (\tilde{P}_{\Phi}-i\,mc)/(N+m^{2}c^{2})$ and $\mathcal S_R = (\tilde{P}_{\Phi}^{\natural}-i\,mc)/(N+m^{2}c^{2})$, and the identity that the two lines compose to $\Box_\Phi-k_m^{2}$ is the whole of the square. The scalar path integral of the companion subcategory is the kernel that the first-order factor acts on, a consequence of this identity rather than an independent construction. Feynman's checkerboard is the discrete realisation of the same structure in 1+1 dimensions: the two directions are the two components of the pair, the corners carry the weight $i\epsilon\,k_m$ and are the mass insertions that join them, and the continuum limit is the two-dimensional propagator.
 
 ## Summary of Notation
 
@@ -480,9 +480,9 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $\mathbb{B}$ | Biquaternion algebra; $e_t$ its unit, $\vec e_x, \vec e_y, \vec e_z$ the three vector units |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector; the worldline position $\tilde R_\Phi$ |
 | $i$ | Central scalar imaginary |
-| $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$, $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$ | The pair as two first-order lines with a source; each composed with the conjugate of the other is $\Box$ |
-| $\Box$ | Series d'Alembertian, $\sum_\mu\partial^2/\partial R_\mu^2$; $\Delta-\partial^2/\partial x_0^2$ on the material reading |
-| $\Delta$ | Laplacian in the three real spatial coordinates |
+| $\tilde\nabla_\Phi\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)}$, $(\tilde\nabla_\Phi)^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)}$ | The pair as two first-order lines with a source; each composed with the conjugate of the other is $\Box_\Phi$ |
+| $\Box_\Phi$ | Series d'Alembertian, $\sum_\mu\partial^2/\partial R_\mu^2$; $\Delta_\Phi-\partial^2/\partial x_0^2$ on the material reading |
+| $\Delta_\Phi$ | Laplacian in the three real spatial coordinates |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric on the four slots, the one metric of the series; the interval is $\sum_\mu Q_\mu^2$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Plain weight, the sign of each squared unit: positive on the time slot, negative on the three spatial ones |
 | $x_\mu$ | Real coordinates of the material sector, $x_0 = r'_{t}$ |
@@ -492,7 +492,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 | $1/k_m$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m=mc/\hbar$ is the mass parameter |
 | $\tilde{Ξ}$, $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The field and its two parts, one per letter of the pair |
 | $\mathcal S_L$, $\mathcal S_R$ | Dirac propagator and its two components, the two lines with a source |
-| $\mathcal{G}_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box-k_m^{2}\right)\mathcal{G}_F = i\delta^{(4)}$ |
+| $\mathcal{G}_F(x-x_2)$ | Scalar (Klein–Gordon) Feynman propagator, $\left(\Box_\Phi-k_m^{2}\right)\mathcal{G}_F = i\delta^{(4)}$ |
 | $\mathcal S_L = \left(\tilde\nabla_\Phi+k_m\right)\mathcal{G}_F$, $\mathcal S_R = \left((\tilde\nabla_\Phi)^{\natural}+k_m\right)\mathcal{G}_F$ | Dirac propagator as the scalar kernel acted on |
 | $T$ | Proper time (Schwinger parameter) |
 | $x(\tau)$, $dR_\mu/d\tau$ | Worldline and its tangent, summed over the four slots |

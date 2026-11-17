@@ -15,11 +15,11 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 **The equation.** The coupled pair is
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
 $$
 
 Here $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ is the potential biquaternion, an element of the material sector $\mathbb{B}_\Phi$, with central scalar coefficients in the abelian case. That centality is the single fact the whole article turns on.
@@ -43,7 +43,7 @@ Differentiate the word and divide by it, as the parent does, and add the connect
 **The logarithmic derivative, coupled.**
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
 =\tilde\Xi^{-1}\frac{\partial\tilde\Xi}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
 =\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
@@ -179,10 +179,10 @@ $$
 \tilde K_{\Phi,\mathrm{gco}}\longmapsto\tilde\nabla_\Phi\Bigl(\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Lambda\Bigr)+\frac{ϙ}{\hbar}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Lambda\bigr)=\tilde K_{\Phi,\mathrm{gco}} .
 $$
 
-**The invariant is the curvature.** Define $\tilde F:=\tilde\nabla_\Phi^{\natural}\tilde\nabla_{\mathrm{gco}}$ restricted to its vector part; the operator identity of the covariant-derivative article gives
+**The invariant is the curvature.** Define $\tilde F:=\tilde\nabla_\Phi^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ restricted to its vector part; the operator identity of the covariant-derivative article gives
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
 $$
 
 and $\tilde F$ is unchanged by the transformation, since a gradient can be absorbed and a field strength cannot. In the abelian case $\tilde F$ is the Maxwell biquaternion of *Maxwell's Equations in the Biquaternionic Formulation*.
@@ -241,7 +241,7 @@ The rotor is the spin and the coupling does not turn it.
 
 ## Summary
 
-The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.
+The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.
 
 The coupling enters the logarithmic derivative as one added element, $\frac{iϙ}{\hbar}\tilde A_\Phi$. Because that element is central per component, it lands in the phase bracket and in the boost bracket and in neither of the other two. The scale and the rotor are untouched by type, not by accident.
 
@@ -265,7 +265,7 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 | $\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
 | $\theta_{\mathrm{axr}}\in[0,2\pi)$ | Angle of the rotor $\tilde u_{\mathrm r}$; $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Potential biquaternion; material sector; coefficients central in the abelian case |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\frac{iϙ}{\hbar}\tilde A_\Phi$ | The added element: central imaginary slot plus Hermitian vector slot |
 | $\tilde K_\Phi=i\frac{E}{\hbar c}e_t+\frac{\vec p}{\hbar}$ | Canonical wavevector, from $\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ | Covariant wavevector; gauge invariant; names the boost |

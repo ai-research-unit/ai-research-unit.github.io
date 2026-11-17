@@ -67,7 +67,7 @@ which is the block's display, arrived at as an equation of motion.
 **The acceleration law is the gradient of the shell and is not a third equation.** Differentiating the display in space, with $\partial_jp_k=\partial_kp_j$ and $\partial_jE=-\partial_tp_j$, gives
 
 $$
-\frac{\mathrm{d}\vec p}{\mathrm{d}t}=-\frac{1}{\gamma}\nabla Q_{\mathrm{qnt}},
+\frac{\mathrm{d}\vec p}{\mathrm{d}t}=-\frac{1}{\gamma}\vec\nabla_\Phi Q_{\mathrm{qnt}},
 \qquad
 \frac{\mathrm{d}}{\mathrm{d}t}=\partial_t+\vec v\cdot\nabla,
 $$
@@ -88,13 +88,13 @@ and the quadratic form is a difference and not a sum. The gradient energy is the
 
 **Three consequences, and the block states each of them in another language.**
 
-*The quantum potential changes sign.* $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ with an indefinite $\Box_\Phi$, so a density that varies in time contributes with the opposite sign to one that varies in space. The non-relativistic quantum potential is $\Delta$'s and is negative at a maximum of $\varrho$; this one is not sign-definite at all.
+*The quantum potential changes sign.* $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ with an indefinite $\Box_\Phi$, so a density that varies in time contributes with the opposite sign to one that varies in space. The non-relativistic quantum potential is $\Delta_\Phi$'s and is negative at a maximum of $\varrho$; this one is not sign-definite at all.
 
 *The action cannot see the sign $\varepsilon$.* The block's charged article names the density's indefinite sign as the free article's defect which the coupling moves and does not repair. In the action it is one line: $\varepsilon$ is central and $\varepsilon^{2}=1$, so it cancels in $\tilde\Xi^{*}\tilde\Xi$ and in $\mathcal A_\mu$, and the two branches $\varepsilon=\pm1$ give the same Lagrangian. **The action is blind to the branch and the charge density's sign is what blindness costs.**
 
 *The functional has no ground state, and that is not a defect of the fluid reading.* A field theory with an indefinite quadratic form has no lowest configuration, which is why the relativistic object of this block is a field and not a fluid with a rest state. **The action says this before any quantization**, and the second category's Fock space is where the two signs become particles and antiparticles.
 
-**At the rung below the form is definite and the difference is the whole of the difference between the two rungs.** The Schrödinger fluid's gradient energy is $\frac{\hbar^{2}}{2m}\int(\nabla \varrho)^{2}$, a sum of squares, and its quantum potential is a Laplacian's. One operator, one sign, one sheet.
+**At the rung below the form is definite and the difference is the whole of the difference between the two rungs.** The Schrödinger fluid's gradient energy is $\frac{\hbar^{2}}{2m}\int(\vec\nabla_\Phi \varrho)^{2}$, a sum of squares, and its quantum potential is a Laplacian's. One operator, one sign, one sheet.
 
 ## The Stress as the Translation Current
 
@@ -128,7 +128,7 @@ and it splits into the two terms the action has. The first is the dust's: $\part
 
 **The action.** $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu \varrho)^{2}$, a dust term and a gradient energy, both per proper volume.
 
-**The variations.** The phase gives $\partial_\mu(\rho_{\mathrm{num}}V_{\Phi,\mu})=0$; the amplitude gives $\sum_\mu V_\mu V_\mu=-c^{2}-2Q_{\mathrm{qnt}}/m$; the gradient of the second is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$.
+**The variations.** The phase gives $\partial_\mu(\rho_{\mathrm{num}}V_{\Phi,\mu})=0$; the amplitude gives $\sum_\mu V_\mu V_\mu=-c^{2}-2Q_{\mathrm{qnt}}/m$; the gradient of the second is $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$.
 
 **The shell.** An equation of motion and not a hypothesis; two fields, two equations, no constraint.
 

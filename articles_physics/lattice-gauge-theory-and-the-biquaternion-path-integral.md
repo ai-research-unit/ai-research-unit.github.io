@@ -73,7 +73,7 @@ The lattice replaces the derivative by a difference, and the link supplies the p
 $$
 (D_\mu\xi)(n)\longmapsto\frac{1}{a}\Big(\tilde U_\mu(n)\xi(n+\vec u_\mu)-\xi(n)\Big),
 $$
-which transforms as $\tilde U(n)\big(D_\mu\xi\big)(n)$ at the site $n$, exactly as the continuum covariant derivative does. The backward difference uses $\tilde U_\mu(n-\vec u_\mu)^{-1}$; the symmetric combination recovers the Hermitian part. In the algebra's notation the lattice is a discretization of $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$, with the central part becoming an ordinary difference and the spatial part becoming the covariant difference above. The discretization is not unique, and the different choices differ by $O(a)$ terms that are irrelevant to the continuum limit; what is not optional is the link factor, which is what makes the difference gauge covariant.
+which transforms as $\tilde U(n)\big(D_\mu\xi\big)(n)$ at the site $n$, exactly as the continuum covariant derivative does. The backward difference uses $\tilde U_\mu(n-\vec u_\mu)^{-1}$; the symmetric combination recovers the Hermitian part. In the algebra's notation the lattice is a discretization of $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\,\partial/\partial R_\mu$, with the central part becoming an ordinary difference and the spatial part becoming the covariant difference above. The discretization is not unique, and the different choices differ by $O(a)$ terms that are irrelevant to the continuum limit; what is not optional is the link factor, which is what makes the difference gauge covariant.
 
 ## The Plaquette and the Wilson Action
 
@@ -189,7 +189,7 @@ $$
 $$
 where $N=2$ for the framework's group and the $O(1)$ denotes the perimeter and tiling corrections. The special case $N=2$, in which the fundamental representation is real, replaces $2N^2$ by $N^2$ at leading order: the one-plaquette average is
 $$
-\big\langle \mathrm{Sc}\,\tilde U_\Box\big\rangle
+\big\langle \mathrm{Sc}\,\tilde U_\Box_\Phi\big\rangle
 =\frac{I_2(\beta)}{I_1(\beta)}
 =\frac{\beta}{4}+O(\beta^3),
 $$
@@ -289,7 +289,7 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $W(C)=\tfrac2N\mathrm{Sc}\prod_{l\in C}\tilde U_l$ | Lattice Wilson loop |
 | $\langle W(C)\rangle\sim \exp(-\sigma A)$ | Area law; $\sigma$ the string tension |
 | $\sigma a^2=-\ln(\beta/2N^2)+O(1)$ | Leading strong-coupling string tension |
-| $\langle\mathrm{Sc}\,\tilde U_\Box\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
+| $\langle\mathrm{Sc}\,\tilde U_\Box_\Phi\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $a,b$ | Colour indices, written low; the lattice spacing is also written $a$ and is a length, not an index |

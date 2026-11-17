@@ -142,7 +142,7 @@ $$
 which is precisely the positive-frequency part of the commutator function and is annihilated by the Klein–Gordon operator in each variable,
 
 $$
-\left(\Box_{\Phi,x}-\mu^2\right)W(x-y)=0,
+\left(\Box_{\Phi}-\mu^2\right)W(x-y)=0,
 $$
 
 because every mode in the integral is on shell. The Feynman propagator is the time-ordered combination

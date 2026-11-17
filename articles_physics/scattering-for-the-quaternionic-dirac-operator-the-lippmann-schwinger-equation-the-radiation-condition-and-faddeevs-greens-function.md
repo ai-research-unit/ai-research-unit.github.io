@@ -15,7 +15,7 @@ The interpretation list for the parts the corpus already owns is short: *Biquate
 The setting is three-dimensional and the operator is the spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions*,
 
 $$
-D_3 = \sum_{\mu=1}^{3} \vec e_\mu\,\partial/\partial R_\mu, \qquad D_3^2 = -\Delta .
+D_3 = \sum_{\mu=1}^{3} \vec e_\mu\,\partial/\partial R_\mu, \qquad D_3^2 = -\Delta_\Phi .
 $$
 
 Its action on a pure-vector field is the classical pair of operations. Writing $u = u_x\vec e_x+u_y\vec e_y+u_z\vec e_z$ for a vector field identified with its biquaternion,
@@ -89,7 +89,7 @@ $$
 D_\alpha \vec B = 0, \qquad D_\alpha = D_3 + R_{\alpha(x)} .
 $$
 
-This is the source's Remark 5.1, attributing the relation to a paper of Kravchenko's on force-free fields. It is worth separating from the corpus's constant-parameter shift by more than a footnote: *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* treat the **constant-coefficient** Beltrami case, where $\alpha$ commutes with $D_3$ and the second-order companion is the scalar $\Delta+\alpha^2$, whereas here $\alpha$ is a function and right multiplication by it does not commute with $\partial/\partial R_\mu$, so the companion is not a scalar operator and the theory of *Biquaternion Regular Functions* does not apply to it unchanged. Three objects are written $D_\alpha$ in play — the constant-parameter shift of *Biquaternion Regular Functions*, the gradient-coefficient operator $D\pm L_{\vec\alpha_f}$ of the electromagnetic articles, and this variable scalar-coefficient one — and this article names the distinction once so that they are not read for one another.
+This is the source's Remark 5.1, attributing the relation to a paper of Kravchenko's on force-free fields. It is worth separating from the corpus's constant-parameter shift by more than a footnote: *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* treat the **constant-coefficient** Beltrami case, where $\alpha$ commutes with $D_3$ and the second-order companion is the scalar $\Delta_\Phi+\alpha^2$, whereas here $\alpha$ is a function and right multiplication by it does not commute with $\partial/\partial R_\mu$, so the companion is not a scalar operator and the theory of *Biquaternion Regular Functions* does not apply to it unchanged. Three objects are written $D_\alpha$ in play — the constant-parameter shift of *Biquaternion Regular Functions*, the gradient-coefficient operator $D\pm L_{\vec\alpha_f}$ of the electromagnetic articles, and this variable scalar-coefficient one — and this article names the distinction once so that they are not read for one another.
 
 ## The Two Factorisations of the Helmholtz Equation
 
@@ -102,7 +102,7 @@ $$
 = \left(\frac{\partial}{\partial r'_t} + iD_3\right)\left(\frac{\partial}{\partial r'_t} - iD_3\right),
 $$
 
-the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box = \Delta_Q + \partial^2/\partial R_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $\partial^2/\partial {r'_{t}}^2+\Delta_\Phi+2i\partial/\partial r'_tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\theta_{\mathrm{pwt}})$ so that $\partial/\partial r'_t$ acts as $i\omega$, the factorisation is
+the wave operator in the source's sign; the corpus's d'Alembertian is its **negative**, $\Box_\Phi = \Delta_\Phi + \partial^2/\partial R_t^2$ in *Biquaternion Analysis*, and the two conventions are not to be mixed. **The source prints this identity with the same factor twice**, which is not correct as it stands — with both factors equal, the cross terms add instead of cancelling and the right-hand side is $\partial^2/\partial {r'_{t}}^2+\Delta_\Phi+2i\partial/\partial r'_tD_3$ — so what is written here is the corrected form, the two factors carrying opposite signs, whose cross terms cancel because $D_3$ has constant coefficients. In the time-harmonic case, with the dependence $\exp(i\theta_{\mathrm{pwt}})$ so that $\partial/\partial r'_t$ acts as $i\omega$, the factorisation is
 
 $$
 -\Delta_\Phi - \frac{\omega^2}{c^2} = (D_3+k_\Phi)(D_3-k_\Phi), \qquad k_\Phi=\frac{\omega}{c},
@@ -115,14 +115,14 @@ the scalar shift of *Biquaternion Regular Functions* with its two branches $D_{3
 There is a second factorisation, and it is the one the scattering theory needs. With the parameter a **vector** $\vec k_\Phi=k_{\Phi x}\vec e_x+k_{\Phi y}\vec e_y+k_{\Phi z}\vec e_z$ and either multiplication,
 
 $$
-(D_3+L_\eta)(D_3-L_\eta) = (D_3-L_\eta)(D_3+L_\eta) = -\Delta - \vec k_\Phi^2 = -\Delta + \lvert\vec k_\Phi\rvert^2 ,
+(D_3+L_\eta)(D_3-L_\eta) = (D_3-L_\eta)(D_3+L_\eta) = -\Delta_\Phi - \vec k_\Phi^2 = -\Delta_\Phi + \lvert\vec k_\Phi\rvert^2 ,
 $$
 
 $$
-(D_3+L_{i\vec k_\Phi})(D_3-L_{i\vec k_\Phi}) = (D_3-L_{i\vec k_\Phi})(D_3+L_{i\vec k_\Phi}) = -\Delta - i^2\vec k_\Phi^2 = -\Delta - \lvert\vec k_\Phi\rvert^2 ,
+(D_3+L_{i\vec k_\Phi})(D_3-L_{i\vec k_\Phi}) = (D_3-L_{i\vec k_\Phi})(D_3+L_{i\vec k_\Phi}) = -\Delta_\Phi - i^2\vec k_\Phi^2 = -\Delta_\Phi - \lvert\vec k_\Phi\rvert^2 ,
 $$
 
-where $\vec k_\Phi^2 = -\vec k_\Phi\cdot\vec k_\Phi = -\lvert\vec k_\Phi\rvert^2$ is the quaternion square of the vector. The two lines are one computation, the second being the first with $\vec k_\Phi\mapsto i\vec k_\Phi$, and between them they are the reason for the two signs the rest of the article carries. A shift by a **real** vector has the Klein–Gordon-type companion $-\Delta+\lvert\vec k_\Phi\rvert^2$, the sign of the square *opposite* to the scalar branch above; a shift by an **imaginary** vector has the Helmholtz companion $-\Delta-\lvert\vec k_\Phi\rvert^2$, which is the scalar branch's companion with $\alpha=\lvert\vec k_\Phi\rvert$. Both orderings agree in each line, and not because the parameter is a vector: a *constant* parameter of any kind commutes with $D_3$. The dependence on the side appears one step later, in the plane-wave substitution, and it is treated where it is used.
+where $\vec k_\Phi^2 = -\vec k_\Phi\cdot\vec k_\Phi = -\lvert\vec k_\Phi\rvert^2$ is the quaternion square of the vector. The two lines are one computation, the second being the first with $\vec k_\Phi\mapsto i\vec k_\Phi$, and between them they are the reason for the two signs the rest of the article carries. A shift by a **real** vector has the Klein–Gordon-type companion $-\Delta_\Phi+\lvert\vec k_\Phi\rvert^2$, the sign of the square *opposite* to the scalar branch above; a shift by an **imaginary** vector has the Helmholtz companion $-\Delta_\Phi-\lvert\vec k_\Phi\rvert^2$, which is the scalar branch's companion with $\alpha=\lvert\vec k_\Phi\rvert$. Both orderings agree in each line, and not because the parameter is a vector: a *constant* parameter of any kind commutes with $D_3$. The dependence on the side appears one step later, in the plane-wave substitution, and it is treated where it is used.
 
 ## The Green's Function, Its Boundary Representation and the Radiation Condition
 
@@ -134,7 +134,7 @@ $$
 F_\eta(x-y) := -\frac{\exp(ik\lvert x-y\rvert)}{4\pi\lvert x-y\rvert}, \qquad x,y\in\mathbb{R}^3,\ x\ne y .
 $$
 
-The range angle is $\theta_{\mathrm{rgh}}=k_\Phi\lvert x-y\rvert$, real because the wave number and the distance are real. It solves $\Delta u+k_\Phi^2u=0$ away from $y$, and its far-field behaviour is
+The range angle is $\theta_{\mathrm{rgh}}=k_\Phi\lvert x-y\rvert$, real because the wave number and the distance are real. It solves $\Delta_\Phi u+k_\Phi^2u=0$ away from $y$, and its far-field behaviour is
 
 $$
 F_\eta(x-y) = -\frac{\exp(ik\lvert x\rvert)}{4\pi\lvert x\rvert}\,\exp(-ik\vec u_x\cdot y) + O(\lvert x\rvert^{-2}), \qquad
@@ -158,7 +158,7 @@ $$
 \mathcal V_{\mathrm{vek},\pm\alpha} = -(D_3\mp\alpha)\mathrm{Sd}_\alpha = \left(\alpha+\frac{r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z}{\lvert r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\rvert^{2}}-i\alpha\vec u_x\right)\mathrm{Sd}_\alpha ,
 $$
 
-read at $\alpha=k_\Phi$: since $D_{-k_\Phi}=D_3-k_\Phi$ is the negative branch $D_{3,-k_\Phi}$, the source's kernel is $C_\eta=-(D_3-k_\Phi)\mathrm{Sd}_{k_\Phi}=\mathcal{V}_{\mathrm{vek},+k_\Phi}$. The two branches share the second-order companion, for $(D_3+k_\Phi)(D_3-k_\Phi)=-\Delta-k_\Phi^2$ either way, so the companion cannot tell them apart and each of $\mathcal V_{\mathrm{vek},\pm k_\Phi}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal{V}_{\mathrm{vek},+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_\eta$ to $D_{-k_\Phi}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik_\Phi\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_\eta$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k_\Phi^2$ and $\Delta+k_\Phi^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.
+read at $\alpha=k_\Phi$: since $D_{-k_\Phi}=D_3-k_\Phi$ is the negative branch $D_{3,-k_\Phi}$, the source's kernel is $C_\eta=-(D_3-k_\Phi)\mathrm{Sd}_{k_\Phi}=\mathcal{V}_{\mathrm{vek},+k_\Phi}$. The two branches share the second-order companion, for $(D_3+k_\Phi)(D_3-k_\Phi)=-\Delta_\Phi-k_\Phi^2$ either way, so the companion cannot tell them apart and each of $\mathcal V_{\mathrm{vek},\pm k_\Phi}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal{V}_{\mathrm{vek},+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_\eta$ to $D_{-k_\Phi}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+\exp(ik_\Phi\lvert r-r_2\rvert)/(4\pi\lvert r-r_2\rvert)$, whereas the proposition writes $F_\eta$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta_\Phi-k_\Phi^2$ and $\Delta_\Phi+k_\Phi^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\mathrm{Sd}_\alpha$, is the one with the minus, and it is the one used in this article.
 
 ### The boundary representation
 
@@ -252,13 +252,13 @@ so the kernels of the Lippmann–Schwinger equation are weakly singular, hence t
 **Uniqueness** of the homogeneous solution comes from the unique continuation principle, quoted as the source's Lemma 8.5 from Colton and Kress, with the proof going back to Müller. Let $G\subset\mathbb{R}^3$ be a domain, $P\in\mathbb{N}$, and $u_1,\dots,u_P\in C^2(G)$ real-valued with
 
 $$
-\lvert\Delta u_p\rvert \le c\sum_{q=1}^{P}\bigl\{\lvert u_q\rvert+\lvert\operatorname{grad}u_q\rvert\bigr\} \qquad \text{in } G, \qquad p=1,\dots,P ,
+\lvert\Delta_\Phi u_p\rvert \le c\sum_{q=1}^{P}\bigl\{\lvert u_q\rvert+\lvert\operatorname{grad}u_q\rvert\bigr\} \qquad \text{in } G, \qquad p=1,\dots,P ,
 $$
 
 for some constant $c$. If every $u_p$ vanishes in a neighbourhood of some point $x_0\in G$, then every $u_p$ is identically zero in $G$. To reach this hypothesis from the equation, the source applies $D_3$ to the homogeneous form of (8.2), $(D_3+R_\eta)u-m(x)u\vec k_\Phi=0$ — the source prints the left multiplier $L_\eta$ in this one line, which is a different operator from the right multiplier $R_\eta$ of its scattering problem when $\vec k_\Phi$ is a vector — obtaining
 
 $$
-\Delta u = (D_3u)\vec k_\Phi - D_3\bigl(m(x)u\vec k_\Phi\bigr),
+\Delta_\Phi u = (D_3u)\vec k_\Phi - D_3\bigl(m(x)u\vec k_\Phi\bigr),
 $$
 
 which is then expanded in scalar and vector parts into a system of the required shape, with the derivatives of $u$ and of $m$ on the right. The two hypotheses on $m$ above are exactly what this expansion needs.
@@ -278,10 +278,10 @@ The last construction of the source is the one that points at the inverse proble
 Three substitution identities are computed. For the Laplacian,
 
 $$
-(\Delta_\Phi+k_\Phi^2)\bigl(\exp(i\theta_{\mathrm{spa}})b\bigr) = \exp(i\theta_{\mathrm{spa}})\bigl(\Delta+2i\vec k_\Phi\cdot\nabla\bigr)b ,
+(\Delta_\Phi+k_\Phi^2)\bigl(\exp(i\theta_{\mathrm{spa}})b\bigr) = \exp(i\theta_{\mathrm{spa}})\bigl(\Delta_\Phi+2i\vec k_\Phi\cdot\nabla\bigr)b ,
 $$
 
-so that the Helmholtz operator becomes the **conjugate** operator $-\Delta-2ik\cdot\nabla-\lambda^2$ below. For the unshifted Dirac operator,
+so that the Helmholtz operator becomes the **conjugate** operator $-\Delta_\Phi-2ik\cdot\nabla-\lambda^2$ below. For the unshifted Dirac operator,
 
 $$
 (D_3-L_{i\vec k_\Phi})\bigl(\exp(ik\cdot x)b\bigr) = \exp(ik\cdot x)D_3b ,
@@ -318,7 +318,7 @@ $$
 (\Delta_\Phi+k_\Phi^2)\bigl(\exp(it\gamma\cdot r_x)w\bigr) = \exp(it\gamma\cdot r_x)\bigl(-h_t^2+k_\Phi^2+2it\gamma\cdot\nabla+\Delta_\Phi\bigr)w ,
 $$
 
-so the operator to invert is $-\Delta-2it\gamma\cdot\nabla-\lambda^2$ with
+so the operator to invert is $-\Delta_\Phi-2it\gamma\cdot\nabla-\lambda^2$ with
 
 $$
 \lambda^2 = k_\Phi^2-t^2 .
@@ -347,7 +347,7 @@ $$
 \boxed{\;G_{\mathrm{lor},\gamma}(\lambda,z) = (D_3+L_{iz\gamma}-k_\Phi)\,g_\gamma(\lambda,z)\;}
 $$
 
-for the left-multiplication case, obtained from $(D_3+L_{iz\gamma}-k_\Phi)(D_3+L_{iz\gamma}+k_\Phi) = -\Delta-2iz\gamma\cdot\nabla-\lambda^2$ with $\lambda^2=k_\Phi^2-z^2$, and a **different** Faddeev Green's function
+for the left-multiplication case, obtained from $(D_3+L_{iz\gamma}-k_\Phi)(D_3+L_{iz\gamma}+k_\Phi) = -\Delta_\Phi-2iz\gamma\cdot\nabla-\lambda^2$ with $\lambda^2=k_\Phi^2-z^2$, and a **different** Faddeev Green's function
 
 $$
 \boxed{\;G^{\mathrm R}_\gamma(\lambda,z) = (D_3+L_{iz\gamma}-R_{i\eta})\,g_\gamma(\lambda,z)\;}
@@ -378,7 +378,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 **Established, in the sense that it was recomputed here.**
 
-- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_\eta)(D_3\mp R_\eta)=-\Delta+\lvert\vec k_\Phi\rvert^2$ and the same with $i\vec k_\Phi$, both orderings; $(D_3-L_{i\vec k_\Phi})(\exp(i\theta_{\mathrm{spa}})b)=\exp(i\theta_{\mathrm{spa}})D_3b$; and $\vec k_\Phi b+b\vec k_\Phi=-2\vec k_\Phi\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_\eta$ and $R_\eta$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
+- The vector factorisation and the plane-wave substitution identities of the third and seventh sections: $(D_3\pm R_\eta)(D_3\mp R_\eta)=-\Delta_\Phi+\lvert\vec k_\Phi\rvert^2$ and the same with $i\vec k_\Phi$, both orderings; $(D_3-L_{i\vec k_\Phi})(\exp(i\theta_{\mathrm{spa}})b)=\exp(i\theta_{\mathrm{spa}})D_3b$; and $\vec k_\Phi b+b\vec k_\Phi=-2\vec k_\Phi\cdot b$ for vector $b$ with the collapse failing for a general quaternion. The two-sided vocabulary — which of $L_\eta$ and $R_\eta$ the source uses in each section, and why either answers for a constant parameter — was reconstructed here, because the source does not state it.
 - The identification $C_\eta=\mathcal{V}_{\mathrm{vek},+k_\Phi}$ in the corpus's notation, and with it the decision that the corpus's kernel sign, not the source's section 2.1 sign, is the one to keep.
 
 **Not established, and left visible.**
@@ -415,8 +415,8 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | Symbol | Meaning |
 |---|---|
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Basis of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; $\vec e_\eta^2=-e_t$; central scalar imaginary $i$ |
-| $D_3=\sum_{\mu=1}^3 \vec e_\mu\,\partial/\partial R_\mu$ | Spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions*; $D_3^2=-\Delta$; the source's $D$ |
-| $D=iD_3$ | The corpus's other square root of the Laplacian, $D^2=\Delta$; distinct from the source's $D$ |
+| $D_3=\sum_{\mu=1}^3 \vec e_\mu\,\partial/\partial R_\mu$ | Spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions*; $D_3^2=-\Delta_\Phi$; the source's $D$ |
+| $D=iD_3$ | The corpus's other square root of the Laplacian, $D^2=\Delta_\Phi$; distinct from the source's $D$ |
 | $D_3u=-\operatorname{div}u+\operatorname{curl}u$ | The action on a pure-vector field, the bridge to Maxwell's equations |
 | $L_kq=kq$, $R_kq=qk$ | Left and right multiplication; the letter names the side |
 | $D_\alpha=D_3+R_\alpha$ | The corpus's shift, constant parameter; a different object from the gradient-coefficient $D_\alpha=D_3+\operatorname{grad}\log\sqrt{\alpha}$ of the electromagnetic articles |
@@ -445,6 +445,6 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 - H. Isozaki, "Inverse scattering theory for Dirac operators", *Annales de l'Institut Henri Poincaré, section A* **66** (1997) 237–270, for Faddeev's Green's operator $g_\gamma$, its bounds and their use in the inverse problem, quoted in the last section.
 - A. I. Nachman and M. J. Ablowitz, "A multidimensional inverse scattering method", *Studies in Applied Mathematics* **71** (1984) 243–250; R. Beals and R. R. Coifman, "Multidimensional inverse scattering and nonlinear partial differential equations", *Proceedings of Symposia in Pure Mathematics* **43** (1985) 45–70; and J. Sylvester and G. Uhlmann, "A global uniqueness theorem for an inverse boundary value problem", *Annals of Mathematics* **125** (1987) 153–169, for the Faddeev method in multidimensions.
 - A. McIntosh and M. Mitrea, "Clifford algebras and Maxwell's equations in Lipschitz domains", *Mathematical Methods in the Applied Sciences* **22** (1999) 1599–1629, for the Dirac-operator form of Maxwell's equations on Lipschitz domains.
-- C. Müller, "On the behavior of solutions of the differential equation $\Delta u=F(x,u)$ in a neighborhood of a point", *Communications on Pure and Applied Mathematics* **7** (1954) 505–515, for the unique continuation principle.
+- C. Müller, "On the behavior of solutions of the differential equation $\Delta_\Phi u=F(x,u)$ in a neighborhood of a point", *Communications on Pure and Applied Mathematics* **7** (1954) 505–515, for the unique continuation principle.
 - A. F. Fercher, "Optical coherence tomography", *Journal of Biomedical Optics* **1** (1996) 153–173; A. F. Fercher, W. Drexler, C. K. Hitzenberger and T. Lasser, "Optical coherence tomography — principles and applications", *Reports on Progress in Physics* **66** (2003) 239–303, for the tomographic motivation of the chapter.
 - Companion articles: [Biquaternion Regular Functions](../articles_maths/biquaternion-regular-functions.html) (the shift $D_\alpha$ and its integral theory); [Maxwell's Equations in Chiral Media — The Quaternionic Reformulation](maxwells-equations-in-chiral-media-the-quaternionic-reformulation.html) (the radiation condition, the two reductions and the zero-divisor caveat); [Electromagnetism in Media — The Local Complex Structure at Work](electromagnetism-in-media-the-local-complex-structure-at-work.html) (the Helmholtz and shifted kernels); [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html), [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html) and [Idempotents](../articles_maths/idempotents.html) (the algebra of the cone, the non-pure zero divisor $1+i\vec u_x$ and its idempotents); [The Biquaternion D'Alembertian and Its Green's Functions](the-biquaternion-dalembertian-and-its-greens-functions.html) and [Exercise: The Retarded Potentials and the Green's Function](exercise-the-retarded-potentials-and-the-greens-function.html) (the four-dimensional Green's functions, not used here); [Quaternion Harmonic Analysis](../articles_maths/quaternion-harmonic-analysis.html) (the Radon transform and the Fourier slice theorem, the measured side of tomography); [Coulomb Scattering and Rutherford's Formula in Biquaternionic Form](coulomb-scattering-and-rutherfords-formula-in-biquaternionic-form.html) (the Born approximation as the corpus has it); [Integrable Systems](../articles_maths/integrable-systems.html) and [Soliton Theory](../articles_maths/soliton-theory.html) (the one-dimensional inverse scattering transform and the Lax–AKNS route); [Clifford Analysis](../articles_maths/clifford-analysis.html) (monogenic functions and the shifted operator on the real Clifford side); [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html).

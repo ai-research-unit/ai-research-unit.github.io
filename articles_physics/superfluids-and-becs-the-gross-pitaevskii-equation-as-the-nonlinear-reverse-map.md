@@ -19,13 +19,13 @@
 $$
 \psi=\sqrt{\rho_{\mathrm{num}}}\,e^{iS/\hbar},
 \qquad
-\vec v=\frac{1}{m}\nabla S ,
+\vec v=\frac{1}{m}\vec\nabla_\Phi S ,
 $$
 
 with $\rho_{\mathrm{num}}$ the number density of condensed particles and $\vec v$ the velocity of the condensate's flow. The Gross–Pitaevskii equation is
 
 $$
-i\hbar\,\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta\psi+g\lvert\psi\rvert^{2}\psi ,
+i\hbar\,\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+g\lvert\psi\rvert^{2}\psi ,
 $$
 
 with $g$ the contact coupling, positive for a repulsive interaction and negative for an attractive one.
@@ -80,7 +80,7 @@ which is checked by substitution: the three terms cancel identically for every $
 
 ## The Linear Limit
 
-**Setting the coupling to zero gives the free Schrödinger equation.** With $g=0$ the Gross–Pitaevskii equation is $i\hbar\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta\psi$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.
+**Setting the coupling to zero gives the free Schrödinger equation.** With $g=0$ the Gross–Pitaevskii equation is $i\hbar\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi$, the free equation of the trilogy. In the fluid's variables the pressure vanishes, so the limit is the pressureless member of the reverse map's family, and its only force is the quantum potential.
 
 **So the linear equation is the non-interacting limit and not the fundamental law.** The order parameter is the same object in both cases; what changes is whether the interaction is present. A condensate with $g=0$ is a gas of non-interacting bosons, which is the case in which the condensate is a single-particle state and the fluid has nothing to carry but the quantum potential.
 
@@ -131,7 +131,7 @@ The block's denial stands: the sharing is of formulas, not of objects, and the h
 | $\psi=\sqrt{\rho_{\mathrm{num}}}e^{iS/\hbar}$ | Order parameter |
 | $\rho_{\mathrm{num}},\ \rho_0$ | Number density and its uniform value |
 | $S$ | Action; the phase is $S/\hbar$ |
-| $\vec v=\nabla S/m$ | Condensate velocity |
+| $\vec v=\vec\nabla_\Phi S/m$ | Condensate velocity |
 | $g$ | Contact coupling; $g=4\pi\hbar^{2}a_{\mathrm{sc}}/m$ |
 | $a_{\mathrm{sc}}$ | s-wave scattering length |
 | $\mu_{\mathrm{chm}}$ | Chemical potential |

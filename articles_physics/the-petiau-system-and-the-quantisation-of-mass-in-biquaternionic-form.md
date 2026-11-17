@@ -41,9 +41,9 @@ where $\tilde Q_1$ and $\tilde Q_2$ are two biquaternion fields and $m=k_m$ is t
 The system is invariant under $\tilde Q_1\to\tilde Q_1G$, $\tilde Q_2\to\tilde Q_2G$ for a $*$-unitary biquaternion $G$, and its superposition $D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}$, with $\sigma$ an idempotent of the algebra, is **strictly equivalent to Dirac's equation**. That equivalence, the spin axis it makes explicit, and the isospin reading of the doubled solution count are recorded in the standard-model agenda article and are not repeated here. What matters for the present article is one structural fact: **the mass enters as a single scalar parameter $m$ multiplying the other field**, and the two fields obey the same second-order equation, obtained by applying the conjugate gradient,
 
 $$
-\Box\tilde Q_1 = m^2\tilde Q_1,
+\Box_\Phi\tilde Q_1 = m^2\tilde Q_1,
 \qquad
-\Box\tilde Q_2 = m^2\tilde Q_2.
+\Box_\Phi\tilde Q_2 = m^2\tilde Q_2.
 $$
 
 The mass is a number, the same for both fields, and this is the Standard Model's situation reproduced in the algebra.
@@ -63,9 +63,9 @@ For a constant central $\tilde m_{\mathrm{fld}}=m e_t$ the equations reduce to t
 The reduction is not the point; the eigenvalue is. Applying the conjugate gradient to the first-order pair, and taking $\tilde m_{\mathrm{fld}}$ constant so that the derivatives do not act on it, gives
 
 $$
-\boxed{\;\Box\tilde Q_1 = \tilde Q_1\,\bigl(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}\bigr),
+\boxed{\;\Box_\Phi\tilde Q_1 = \tilde Q_1\,\bigl(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}\bigr),
 \qquad
-\Box\tilde Q_2 = \tilde Q_2\,\bigl(\tilde m_{\mathrm{fld}}^{*}\tilde m_{\mathrm{fld}}\bigr)\;}.
+\Box_\Phi\tilde Q_2 = \tilde Q_2\,\bigl(\tilde m_{\mathrm{fld}}^{*}\tilde m_{\mathrm{fld}}\bigr)\;}.
 $$
 
 The mass is no longer a number multiplying the field; it is an **operator** acting on the field from the right, and the mass-squareds of the two fields are the eigenvalues of $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}$ (equivalently of $\tilde m_{\mathrm{fld}}^{*}\tilde m_{\mathrm{fld}}$, which has the same nonzero spectrum). The mass field $\tilde m_{\mathrm{fld}}$ has become the object that **determines** the masses, and the two masses of a doublet are read off from one biquaternion.
@@ -197,7 +197,7 @@ What none of the three does is derive a mass from the algebra. The formula's inp
 
 The article's accounting, collected.
 
-**Supplied by the algebra, and verified here.** The Lanczos feedback system and its equivalence to a massive spin-$\frac{1}{2}$ equation; the promotion of the scalar mass to a biquaternion $\tilde m_{\mathrm{fld}}$ and the consequent eigenvalue equation $\Box\tilde Q_1=\tilde Q_1(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})$, $\Box\tilde Q_2=\tilde Q_2(\tilde m_{\mathrm{fld}}^{*}\tilde m_{\mathrm{fld}})$, whose two eigenvalues are the two masses of the doublet; the identity $\det\mathsf{M}_2(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})=|\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}|^2$, so that a singular mass field always leaves a massless mode; and the exact reduction of the closed Petiau system to Lanczos for a constant spin-0 field. These are statements about $\mathbb{B}$ and its modules, they are independent of any empirical input, and each was checked on random elements.
+**Supplied by the algebra, and verified here.** The Lanczos feedback system and its equivalence to a massive spin-$\frac{1}{2}$ equation; the promotion of the scalar mass to a biquaternion $\tilde m_{\mathrm{fld}}$ and the consequent eigenvalue equation $\Box_\Phi\tilde Q_1=\tilde Q_1(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})$, $\Box_\Phi\tilde Q_2=\tilde Q_2(\tilde m_{\mathrm{fld}}^{*}\tilde m_{\mathrm{fld}})$, whose two eigenvalues are the two masses of the doublet; the identity $\det\mathsf{M}_2(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})=|\langle\tilde m_{\mathrm{fld}}\rangle_{\natural}|^2$, so that a singular mass field always leaves a massless mode; and the exact reduction of the closed Petiau system to Lanczos for a constant spin-0 field. These are statements about $\mathbb{B}$ and its modules, they are independent of any empirical input, and each was checked on random elements.
 
 **Transcribed from the source.** The nonlinear character of the closed system; the double-periodic Petiau waves, their interpolation between de Broglie waves at $k=0$ and solitons at $k=1$, and the quantisation of the amplitude and the proper mass; and the Hamiltonian $H=C_0\mu^4k^2$. These are Petiau's results, reached in his non-linear wave mechanics, and the corpus records them with their provenance and without re-derivation.
 
@@ -207,7 +207,7 @@ The article's accounting, collected.
 
 ## Open Questions
 
-1. **The second-order form of the closed system.** The eigenvalued form $\Box\tilde Q_1=\tilde Q_1(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})$ is the constant-$\tilde m_{\mathrm{fld}}$ reduction. For a field-valued $\tilde m_{\mathrm{fld}}$ or $\tilde Q_3$ the derivatives act on the mass field as well, and the second-order system acquires terms the corpus has not written. The two-sided derivative the closed system needs is the subject of the companion articles on the covariant derivative and on the curvature; whether one biquaternion equation can carry it is open.
+1. **The second-order form of the closed system.** The eigenvalued form $\Box_\Phi\tilde Q_1=\tilde Q_1(\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*})$ is the constant-$\tilde m_{\mathrm{fld}}$ reduction. For a field-valued $\tilde m_{\mathrm{fld}}$ or $\tilde Q_3$ the derivatives act on the mass field as well, and the second-order system acquires terms the corpus has not written. The two-sided derivative the closed system needs is the subject of the companion articles on the covariant derivative and on the curvature; whether one biquaternion equation can carry it is open.
 
 2. **The quantisation of $\mu$.** Petiau's quantisation of the proper mass comes from the periodic-orbit structure of the nonlinear system. Whether that structure can be stated inside $\mathbb{B}$ — as a condition on the elliptic modulus, on an idempotent, or on a topological invariant of the solution — is not settled, and the corpus records only the shape of the result.
 
@@ -231,7 +231,7 @@ The empirical side is kept separate: **Barut's** formula $M(N)=M_e\bigl(1+\tfrac
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_x \vec e_y=\vec e_z$ cyclic |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta$ (series convention) |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian, $\partial^2/\partial R_t^2+\Delta_\Phi$ (series convention) |
 | $\tilde Q_1,\ \tilde Q_2$ | Lanczos spin-$\frac{1}{2}$ fields |
 | $m=k_m$ | Scalar mass parameter, inverse-length units |
 | $\tilde m_{\mathrm{fld}}$ | Einstein–Mayer mass biquaternion |

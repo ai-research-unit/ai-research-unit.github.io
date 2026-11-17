@@ -96,7 +96,7 @@ the homotopy classes of morphisms between a cofibrant replacement of $X$ and a f
 
 ### Simplicial Sets
 
-**Definition.** The category $\Delta$ has as objects the finite nonempty ordered sets $[n] = \{0 < 1 < \cdots < n\}$ and as morphisms the order-preserving maps. A **simplicial set** is a functor $\Delta_{\mathrm{opp}} \to \mathbf{Set}$; a **simplicial object** in a category $\mathcal{C}$ is a functor $\Delta_{\mathrm{opp}}\to\mathcal{C}$. The value on $[n]$ is the set of $n$-simplices, the face maps $\partial_i$ are induced by the injections omitting $i$, and the degeneracies $s_i$ by the surjections repeating $i$.
+**Definition.** The category $\Delta_\Phi$ has as objects the finite nonempty ordered sets $[n] = \{0 < 1 < \cdots < n\}$ and as morphisms the order-preserving maps. A **simplicial set** is a functor $\Delta_{\mathrm{opp}} \to \mathbf{Set}$; a **simplicial object** in a category $\mathcal{C}$ is a functor $\Delta_{\mathrm{opp}}\to\mathcal{C}$. The value on $[n]$ is the set of $n$-simplices, the face maps $\partial_i$ are induced by the injections omitting $i$, and the degeneracies $s_i$ by the surjections repeating $i$.
 
 **Theorem (geometric realisation).** There is a Quillen adjunction $|\!-\!| \dashv \operatorname{Sing}$ between simplicial sets with the Quillen model structure and topological spaces with the Quillen model structure, where $|\Delta_n|$ is the standard simplex of *Simplicial and Singular Homology* and $\operatorname{Sing}(X)_n = \operatorname{Hom}_{\mathbf{Top}}(\Delta_n, X)$. The derived functors give equivalences of homotopy categories
 
@@ -124,7 +124,7 @@ and $\operatorname{Sing}$ carries the CW complexes to the Kan complexes.
 
 ### Monoidal and Enriched Structure
 
-**Definition.** A **monoidal model category** is a model category with a symmetric monoidal structure, a unit object, and the **pushout-product axiom**: for a cofibration $i$ and a cofibration $j$ the induced map $i\Box j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A **simplicial model category** is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.
+**Definition.** A **monoidal model category** is a model category with a symmetric monoidal structure, a unit object, and the **pushout-product axiom**: for a cofibration $i$ and a cofibration $j$ the induced map $i\Box_\Phi j$ on the pushout-product is a cofibration, acyclic if either $i$ or $j$ is. A **simplicial model category** is a model category enriched over simplicial sets with a compatible action, so that the mapping objects $\operatorname{Map}(X,Y)$ are simplicial sets and the axioms of Quillen's homotopical algebra hold.
 
 **Theorem.** Let $\mathcal{C}$ be a monoidal model category.
 
@@ -154,13 +154,13 @@ Homotopy colimits and limits are the derived functors of colimit and limit; they
 | $\operatorname{Ho}(\mathcal{C}) = \mathcal{C}[\mathcal{W}^{-1}]$ | Homotopy category; morphisms $\pi\operatorname{Hom}(QX,RY)$ |
 | $\operatorname{hocolim}$, $\operatorname{holim}$ | Homotopy colimit and limit; derived functors of colim and lim |
 | $\mathbb{L}F$, $\mathbb{R}G$ | Total left and right derived functors of a Quillen adjunction |
-| $\Delta$, $\mathbf{sSet}$, $\operatorname{Sing}$, $|\!-\!|$ | Simplex category, simplicial sets, singular functor, geometric realisation |
+| $\Delta_\Phi$, $\mathbf{sSet}$, $\operatorname{Sing}$, $|\!-\!|$ | Simplex category, simplicial sets, singular functor, geometric realisation |
 | $\Lambda^n_k$ | Simplicial horn; Kan fibration has the RLP against its inclusion |
 | $\mathrm{Ch}_{\geq 0}(R)$ | Nonnegatively graded chain complexes; projective model structure |
 | Dold–Kan | Equivalence simplicial $R$-modules $\leftrightarrow$ chain complexes |
 | $L_S\mathcal{C}$ | Left Bousfield localisation at a set of morphisms $S$ |
 | $\operatorname{Map}(X,Y)$ | Function complex in a simplicial model category; $\pi_0\operatorname{Map}(X,Y) = \operatorname{Ho}(\mathcal{C})(X,Y)$ |
-| Pushout-product $i\Box j$ | Axiom making the monoidal structure homotopy invariant |
+| Pushout-product $i\Box_\Phi j$ | Axiom making the monoidal structure homotopy invariant |
 | Dwyer–Kan localisation | Simplicial localisation presenting an $\infty$-category |
 | $R$ | Commutative ring with identity $1 \neq 0$ |
 

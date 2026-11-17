@@ -53,7 +53,7 @@ $$
 
 and all three coefficients are free: this is the whole difference from the massless case, where the Lorenz condition degenerates into the statement $\vec k_\Phi\cdot\vec A_0=0$ and removes $A_L$.
 
-**The fields of the three states.** With $\vec E=-\nabla a'_t-\partial_{r'_t}\vec A$ and $\vec B=\nabla\times\vec A$, and with the Lorenz condition imposed, the transverse amplitudes give
+**The fields of the three states.** With $\vec E=-\vec\nabla_\Phi a'_t-\partial_{r'_t}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$, and with the Lorenz condition imposed, the transverse amplitudes give
 
 $$
 \vec E=\omega A_\pm\,\varepsilon_{\mathrm{fop},\pm}\sin\theta_{\mathrm{pwp}},

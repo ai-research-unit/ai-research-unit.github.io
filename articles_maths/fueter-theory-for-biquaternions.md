@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article develops Fueter theory in the quaternionic and biquaternionic setting: the Fueter operator, the regular functions it defines, and the construction that produces them from holomorphic functions of one complex variable. It follows the articles on biquaternion analysis and on biquaternion analysis on subspaces, where $\tilde{\nabla}$, $\tilde{\nabla}^{\natural}$ and the d'Alembertian $\Box$ were defined; the article on biquaternion integration, for the fundamental solution and the Cauchy integral formula; and the articles on biquaternion norm and invertibility and on biquaternion zero divisors, for invertibility failure on the null cone.
+This article develops Fueter theory in the quaternionic and biquaternionic setting: the Fueter operator, the regular functions it defines, and the construction that produces them from holomorphic functions of one complex variable. It follows the articles on biquaternion analysis and on biquaternion analysis on subspaces, where $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box_\Phi$ were defined; the article on biquaternion integration, for the fundamental solution and the Cauchy integral formula; and the articles on biquaternion norm and invertibility and on biquaternion zero divisors, for invertibility failure on the null cone.
 
 The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, the scalar imaginary is $i$, and a biquaternion is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. On the quaternion subspace $\mathbb{B}_{H}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\vec q = q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$, $\rho = \|\vec q\|$. The subspaces $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{iH}$ are as in the article on biquaternion analysis on subspaces.
 
@@ -13,26 +13,26 @@ The treatment is purely mathematical, and no theorem is asserted beyond its hypo
 On $\mathbb{B}_{H}$ the **Fueter operator**, also called the **Cauchy–Riemann–Fueter operator**, is the biquaternion-valued first-order operator
 
 $$
-\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu, \qquad \tilde{\nabla}F_{\mathrm{fn}} = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu F_{\mathrm{fn}},
+\tilde\nabla_\Phi = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu, \qquad \tilde\nabla_\Phi F_{\mathrm{fn}} = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu F_{\mathrm{fn}},
 $$
 
 acting on the left. Its **conjugate** is obtained by negating the vector part, $\vec e_k \mapsto -\vec e_k$:
 
 $$
-\tilde{\nabla}^{\natural} = \partial/\partial Q_t - \vec D, \qquad \vec D = \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z, \qquad \tilde{\nabla} = \partial/\partial Q_t + \vec D.
+(\tilde\nabla_\Phi)^{\natural} = \partial/\partial Q_t - \vec D, \qquad \vec D = \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z, \qquad \tilde\nabla_\Phi = \partial/\partial Q_t + \vec D.
 $$
 
-The operator $\tilde{\nabla}$ is exactly the biquaternionic gradient of the article on biquaternion analysis restricted to $\mathbb{B}_{H}$, where the complex coefficients $Q_\mu$ reduce to the real coordinates $q_\mu$. It is the **Cauchy–Riemann operator** of the theory (classically the Dirac operator).
+The operator $\tilde\nabla_\Phi$ is exactly the biquaternionic gradient of the article on biquaternion analysis restricted to $\mathbb{B}_{H}$, where the complex coefficients $Q_\mu$ reduce to the real coordinates $q_\mu$. It is the **Cauchy–Riemann operator** of the theory (classically the Dirac operator).
 
 ### Factorization of the Laplacian
 
-**Proposition.** On $\mathbb{B}_{H}$, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_t$, where $\Delta_4 = \sum_{\mu\in\{t,x,y,z\}} \partial^2/\partial Q_\mu^2$.
+**Proposition.** On $\mathbb{B}_{H}$, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_4 e_t$, where $\Delta_4 = \sum_{\mu\in\{t,x,y,z\}} \partial^2/\partial Q_\mu^2$.
 
-**Proof.** Expand $\tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial^2/\partial Q_\mu\partial Q_\nu$, with $e_t^{\natural} = e_t$ and $\vec e_\mu^{\natural} = -\vec e_\mu$. The diagonal contribution is $\sum_\mu e_\mu e_\mu^{\natural} \partial^2/\partial Q_\mu^2 = \Delta_4 e_t$, since $e_t e_t^{\natural} = 1$ and $\vec e_\mu \vec e_\mu^{\natural} = -\vec e_\mu^2 = 1$. For $\mu < \nu$ the coefficient is $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$, equal to $-\vec e_\nu + \vec e_\nu = 0$ when $\mu = t < \nu$ and to $-e_\mu e_\nu - e_\nu e_\mu = 0$ when $\mu, \nu \in \{x,y,z\}$ by anticommutativity. Hence the off-diagonal vanishes, and the same argument gives $\tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_t$.
+**Proof.** Expand $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural} \partial^2/\partial Q_\mu\partial Q_\nu$, with $e_t^{\natural} = e_t$ and $\vec e_\mu^{\natural} = -\vec e_\mu$. The diagonal contribution is $\sum_\mu e_\mu e_\mu^{\natural} \partial^2/\partial Q_\mu^2 = \Delta_4 e_t$, since $e_t e_t^{\natural} = 1$ and $\vec e_\mu \vec e_\mu^{\natural} = -\vec e_\mu^2 = 1$. For $\mu < \nu$ the coefficient is $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$, equal to $-\vec e_\nu + \vec e_\nu = 0$ when $\mu = t < \nu$ and to $-e_\mu e_\nu - e_\nu e_\mu = 0$ when $\mu, \nu \in \{x,y,z\}$ by anticommutativity. Hence the off-diagonal vanishes, and the same argument gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_4 e_t$.
 
 ### Relation to the Cauchy–Riemann Operator
 
-The factorization makes $\tilde{\nabla}$ a square root of the Laplacian, hence the **Cauchy–Riemann operator** of $\mathbb{R}^4$ up to normalization: since $\vec D^2 = -\Delta_3 e_t$, the product $(\partial/\partial Q_t + \vec D)(\partial/\partial Q_t - \vec D)$ equals $\partial^2/\partial Q_t^2 + \Delta_3 = \Delta_4$. On a slice $\mathbb{C}_I$ (below), the part of $\tilde{\nabla}$ differentiating along the slice is the complex Cauchy–Riemann operator $\partial/\partial q_t + I\partial/\partial\rho$, so $\tilde{\nabla}F_{\mathrm{fn}} = 0$ is the quaternionic Cauchy–Riemann equation. In Clifford-algebra language, $\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{0,3}$ and $\mathbb{B}$ its complexification, the even subalgebra of $\mathrm{Cl}_{1,3}$; hence the term **monogenic** for Fueter-regular functions.
+The factorization makes $\tilde\nabla_\Phi$ a square root of the Laplacian, hence the **Cauchy–Riemann operator** of $\mathbb{R}^4$ up to normalization: since $\vec D^2 = -\Delta_3 e_t$, the product $(\partial/\partial Q_t + \vec D)(\partial/\partial Q_t - \vec D)$ equals $\partial^2/\partial Q_t^2 + \Delta_3 = \Delta_4$. On a slice $\mathbb{C}_I$ (below), the part of $\tilde\nabla_\Phi$ differentiating along the slice is the complex Cauchy–Riemann operator $\partial/\partial q_t + I\partial/\partial\rho$, so $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ is the quaternionic Cauchy–Riemann equation. In Clifford-algebra language, $\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{0,3}$ and $\mathbb{B}$ its complexification, the even subalgebra of $\mathrm{Cl}_{1,3}$; hence the term **monogenic** for Fueter-regular functions.
 
 **The names and the priority.** The operator is named for Rudolf Fueter, whose 1932 paper established the construction developed below. The quaternionic Cauchy–Riemann conditions and the Cauchy integral formula were obtained earlier, however, by Cornelius Lanczos in the fourth chapter of his 1919 doctoral dissertation on the functional-theoretic relations of Maxwell's aether equations, where the quaternionic generalisation of the Cauchy–Riemann equations is formulated and applied to the homogeneous Maxwell equation, and the integral formula now called the **Cauchy–Lanczos–Fueter formula** is given. The earlier work was not continued, and the theory was rediscovered by Moisil and Fueter in 1931–1932. The corpus records the priority as the claim of Lanczos's commentators Gsponer and Hurni, resting on the dissertation itself (*A Brief History of Biquaternions in Physics*); nothing below depends on the attribution.
 
@@ -40,20 +40,20 @@ The factorization makes $\tilde{\nabla}$ a square root of the Laplacian, hence t
 
 ### Left and Right Regularity
 
-**Definition.** Let $F_{\mathrm{fn}} : \Omega \to \mathbb{B}$ be differentiable on an open set $\Omega \subseteq \mathbb{B}_{H}$. Then $F_{\mathrm{fn}}$ is **left-regular** if $\tilde{\nabla}F_{\mathrm{fn}} = 0$, and **right-regular** if
+**Definition.** Let $F_{\mathrm{fn}} : \Omega \to \mathbb{B}$ be differentiable on an open set $\Omega \subseteq \mathbb{B}_{H}$. Then $F_{\mathrm{fn}}$ is **left-regular** if $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$, and **right-regular** if
 
 $$
-F_{\mathrm{fn}}\tilde{\nabla} = 0, \qquad F_{\mathrm{fn}}\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} \partial/\partial Q_\mu F_{\mathrm{fn}}\, e_\mu .
+F_{\mathrm{fn}}\tilde\nabla_\Phi = 0, \qquad F_{\mathrm{fn}}\tilde\nabla_\Phi = \sum_{\mu\in\{t,x,y,z\}} \partial/\partial Q_\mu F_{\mathrm{fn}}\, e_\mu .
 $$
 
-The conditions differ in general because $\mathbb{B}$ is not commutative. Left-regular functions form a right $\mathbb{B}$-module ($\tilde{\nabla}(F_{\mathrm{fn}}a) = (\tilde{\nabla}F_{\mathrm{fn}})a = 0$ for constant $a$) and right-regular functions a left module ($(aF_{\mathrm{fn}})\tilde{\nabla} = a(F_{\mathrm{fn}}\tilde{\nabla}) = 0$); neither is two-sided in general.
+The conditions differ in general because $\mathbb{B}$ is not commutative. Left-regular functions form a right $\mathbb{B}$-module ($\tilde\nabla_\Phi(F_{\mathrm{fn}}a) = (\tilde\nabla_\Phi F_{\mathrm{fn}})a = 0$ for constant $a$) and right-regular functions a left module ($(aF_{\mathrm{fn}})\tilde\nabla_\Phi = a(F_{\mathrm{fn}}\tilde\nabla_\Phi) = 0$); neither is two-sided in general.
 
 ### The Componentwise System
 
 Write $F_{\mathrm{fn}} = \sum_\mu F_\mu e_\mu$ and $\vec F = F_1 \vec e_x + F_2 \vec e_y + F_3 \vec e_z$. The scalar-vector decomposition of the article on biquaternion analysis on subspaces gives
 
 $$
-\tilde{\nabla}F_{\mathrm{fn}} = (\partial/\partial Q_t F_0 - \mathrm{div}\,\vec F) + (\partial/\partial Q_t \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F),
+\tilde\nabla_\Phi F_{\mathrm{fn}} = (\partial/\partial Q_t F_0 - \mathrm{div}\,\vec F) + (\partial/\partial Q_t \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F),
 $$
 
 with $\mathrm{div}\,\vec F = \sum_{\mu\in\{x,y,z\}} \partial/\partial Q_\mu\,F_\mu$, $\mathrm{grad}\,F_0 = \sum_{\mu\in\{x,y,z\}} (\partial/\partial Q_\mu\,F_0)\vec e_\mu$ and $\mathrm{rot}\,\vec F = \sum_{\mu,\nu,\lambda\in\{x,y,z\}} \epsilon_{\mu\nu\lambda}(\partial/\partial Q_\mu\,F_\nu)\vec e_\lambda$. Hence left-regularity is
@@ -62,13 +62,13 @@ $$
 \boxed{\; \partial/\partial Q_t F_0 = \mathrm{div}\,\vec F, \qquad \partial/\partial Q_t \vec F = -\mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F \;},
 $$
 
-while the right action gives the same system with $+\mathrm{rot}\,\vec F$. The two systems differ only in the sign of the curl term and coincide exactly when $\mathrm{rot}\,\vec F = 0$. This is the **quaternionic Cauchy–Riemann system**: one biquaternion equation, equivalently eight real equations for the eight real components of $F_{\mathrm{fn}}$. The reflection $q_k \mapsto -q_k$ interchanges $\tilde{\nabla}$ and $\tilde{\nabla}^{\natural}$, so the conjugate theory is the mirror image; conjugating $\tilde{\nabla}F_{\mathrm{fn}} = 0$ shows that ${F_{\mathrm{fn}}}^{\natural}$ is right-regular for $\tilde{\nabla}^{\natural}$.
+while the right action gives the same system with $+\mathrm{rot}\,\vec F$. The two systems differ only in the sign of the curl term and coincide exactly when $\mathrm{rot}\,\vec F = 0$. This is the **quaternionic Cauchy–Riemann system**: one biquaternion equation, equivalently eight real equations for the eight real components of $F_{\mathrm{fn}}$. The reflection $q_k \mapsto -q_k$ interchanges $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$, so the conjugate theory is the mirror image; conjugating $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ shows that ${F_{\mathrm{fn}}}^{\natural}$ is right-regular for $(\tilde\nabla_\Phi)^{\natural}$.
 
 ## Harmonicity and the Mean Value Property
 
 **Proposition.** Every left- or right-regular function is harmonic: $\Delta_4 F_{\mathrm{fn}} = 0$ componentwise.
 
-**Proof.** If $\tilde{\nabla}F_{\mathrm{fn}} = 0$, then $\Delta_4 F_{\mathrm{fn}} = \tilde{\nabla}^{\natural}(\tilde{\nabla}F_{\mathrm{fn}}) = 0$; if $F_{\mathrm{fn}}\tilde{\nabla} = 0$, then $\Delta_4 F_{\mathrm{fn}} = (F_{\mathrm{fn}}\tilde{\nabla})\tilde{\nabla}^{\natural} = 0$, with the operators acting on the right.
+**Proof.** If $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$, then $\Delta_4 F_{\mathrm{fn}} = (\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi F_{\mathrm{fn}}) = 0$; if $F_{\mathrm{fn}}\tilde\nabla_\Phi = 0$, then $\Delta_4 F_{\mathrm{fn}} = (F_{\mathrm{fn}}\tilde\nabla_\Phi)(\tilde\nabla_\Phi)^{\natural} = 0$, with the operators acting on the right.
 
 Consequently every regular function is real-analytic and enjoys the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates (article on biquaternion integration). Since each complex component is harmonic, the **mean value property** holds: for $F_{\mathrm{fn}}$ regular near the closed ball $\bar{B}(\tilde{Q}_0, r)$,
 
@@ -87,10 +87,10 @@ The Fueter operator was defined above as a square root of the Laplacian. The reg
 On a domain $\Omega \subseteq \mathbb{R}^2$ the **Dirichlet principle** states that the harmonic functions are the minimisers of the Dirichlet energy
 
 $$
-\mathcal{E}[F] = \int_\Omega |\nabla F|^2\,dA
+\mathcal{E}[F] = \int_\Omega |\tilde\nabla_\Phi F|^2\,dA
 $$
 
-among functions with prescribed boundary values, the Euler–Lagrange equation being $\Delta F = 0$. In the plane a function is harmonic if and only if it is locally the sum of a holomorphic and an antiholomorphic term, and the Cauchy–Riemann condition is the restriction to one of the two terms. The variational principle reaches that restriction through the boundary data: prescribing the **conjugate** data on $\partial\Omega$, the values of the conjugate function, determines the harmonic representative, and the representative is the regular function. In two dimensions the conjugate datum is the normal derivative, and the pair (minimise the Dirichlet energy, prescribe the conjugate data) is the standard Neumann problem for $\Delta$; the Cauchy–Riemann equation is its compatibility statement. This is the accurate content of the statement that the Cauchy–Riemann equations follow from a variational principle: the principle produces harmonicity, and the conjugate boundary data selects the regular representative among the harmonic functions.
+among functions with prescribed boundary values, the Euler–Lagrange equation being $\Delta_\Phi F = 0$. In the plane a function is harmonic if and only if it is locally the sum of a holomorphic and an antiholomorphic term, and the Cauchy–Riemann condition is the restriction to one of the two terms. The variational principle reaches that restriction through the boundary data: prescribing the **conjugate** data on $\partial\Omega$, the values of the conjugate function, determines the harmonic representative, and the representative is the regular function. In two dimensions the conjugate datum is the normal derivative, and the pair (minimise the Dirichlet energy, prescribe the conjugate data) is the standard Neumann problem for $\Delta_\Phi$; the Cauchy–Riemann equation is its compatibility statement. This is the accurate content of the statement that the Cauchy–Riemann equations follow from a variational principle: the principle produces harmonicity, and the conjugate boundary data selects the regular representative among the harmonic functions.
 
 ### The Null-Lagrangian Identity
 
@@ -109,30 +109,30 @@ $$
 so it contributes only a boundary integral to $\int_\Omega$, and the identity itself has been checked numerically to the finite-difference level on a hundred-point grid. The consequence is that the two functionals
 
 $$
-\mathcal{E}_{\mathrm{CR}}[F] = \int_\Omega |\bar{\partial}F|^2\,dA, \qquad \mathcal{E}[F] = \int_\Omega |\nabla F|^2\,dA
+\mathcal{E}_{\mathrm{CR}}[F] = \int_\Omega |\bar{\partial}F|^2\,dA, \qquad \mathcal{E}[F] = \int_\Omega |\tilde\nabla_\Phi F|^2\,dA
 $$
 
-differ by a boundary term and therefore have the **same Euler–Lagrange equation**, $\Delta X = \Delta Y = 0$. The regularity condition $\partial F = 0$ is then picked out by the conjugate boundary data of the preceding paragraph, exactly as in the Dirichlet principle. The two routes are one principle, read before and after the integration by parts.
+differ by a boundary term and therefore have the **same Euler–Lagrange equation**, $\Delta_\Phi X = \Delta_\Phi Y = 0$. The regularity condition $\partial F = 0$ is then picked out by the conjugate boundary data of the preceding paragraph, exactly as in the Dirichlet principle. The two routes are one principle, read before and after the integration by parts.
 
 ### Lanczos's Statement and Its Four-Dimensional Form
 
-Lanczos states the principle in the source's notation. With $F = X + iY$, $\nabla = \partial/\partial a + i\partial/\partial a'$ and $R^2 = (a-\zeta)^2 + (a'-\eta)^2$, he derives the Cauchy–Riemann equations from the variational principle
+Lanczos states the principle in the source's notation. With $F = X + iY$, $\tilde\nabla_\Phi = \partial/\partial a + i\partial/\partial a'$ and $R^2 = (a-\zeta)^2 + (a'-\eta)^2$, he derives the Cauchy–Riemann equations from the variational principle
 
 $$
 \delta\int (X^2 + Y^2)\,da\,da' = 0
 $$
 
-subject to a given regular integration domain and to the prescribed values of $\int F\,\nabla\log(R^{-2})\,da\,da'$ for every point $(\zeta,\eta)$ of the boundary. He then states the four-dimensional form of the same principle,
+subject to a given regular integration domain and to the prescribed values of $\int F\,\tilde\nabla_\Phi\log(R^{-2})\,da\,da'$ for every point $(\zeta,\eta)$ of the boundary. He then states the four-dimensional form of the same principle,
 
 $$
 \delta\int (X^2 + Y^2 + Z^2 + T^2)\,da\,db\,dc\,dt = 0,
 $$
 
-with prescribed boundary values of $\int F\nabla R^{-2}\,da\,db\,dc\,dt$, and notes that this same principle — with complex components for $F$ and imaginary $t$ — is the "Hamiltonian principle" he applies to the world as a whole, "the universal basis of the whole theory, both as regards the field equations and as regards the dynamics", the boundary conditions for the world being left to be found. The functional is written in the source with the components $X, Y, \ldots$ of the function $F$; if those are read as the components of $F$ itself, the integrand is $|F|^2$ and the unconstrained Euler–Lagrange equation is $F = 0$, so the content is carried by the prescribed conjugate integral. What the corpus records is the principle and the boundary datum, together with the identity above, which is the mechanism by which the Dirichlet energy and the Cauchy–Riemann energy share their Euler–Lagrange system. The four-dimensional case is the same identity with the quaternionic $\tilde{\nabla}$ in place of the planar operators, and the boundary term is the surface term of the dissertation's action.
+with prescribed boundary values of $\int F\nabla R^{-2}\,da\,db\,dc\,dt$, and notes that this same principle — with complex components for $F$ and imaginary $t$ — is the "Hamiltonian principle" he applies to the world as a whole, "the universal basis of the whole theory, both as regards the field equations and as regards the dynamics", the boundary conditions for the world being left to be found. The functional is written in the source with the components $X, Y, \ldots$ of the function $F$; if those are read as the components of $F$ itself, the integrand is $|F|^2$ and the unconstrained Euler–Lagrange equation is $F = 0$, so the content is carried by the prescribed conjugate integral. What the corpus records is the principle and the boundary datum, together with the identity above, which is the mechanism by which the Dirichlet energy and the Cauchy–Riemann energy share their Euler–Lagrange system. The four-dimensional case is the same identity with the quaternionic $\tilde\nabla_\Phi$ in place of the planar operators, and the boundary term is the surface term of the dissertation's action.
 
 ### What the Principle Does and Does Not Say
 
-The principle is the Dirichlet principle, and it is standard; it is recorded here because Lanczos made it the foundation of the whole theory and because it is the one member of the corpus's variational apparatus that applies to the regularity equation itself rather than to a field action. It does not produce the Cauchy–Riemann equations from an unconstrained minimisation: the Euler–Lagrange equation of $\int|\partial F|^2$ is the harmonicity $\Delta F = 0$, which is weaker than $\partial F = 0$, and it is the conjugate boundary data that restricts the harmonic minimiser to the regular representative. In two dimensions this is the Neumann problem, and the same structure recurs in the four-dimensional case with the Fueter operator. The corpus's field-theoretic use of the same identity is the Dirichlet energy of harmonic maps and, in two dimensions, its conformal invariance; the regularity equation is the elliptic member of that family.
+The principle is the Dirichlet principle, and it is standard; it is recorded here because Lanczos made it the foundation of the whole theory and because it is the one member of the corpus's variational apparatus that applies to the regularity equation itself rather than to a field action. It does not produce the Cauchy–Riemann equations from an unconstrained minimisation: the Euler–Lagrange equation of $\int|\partial F|^2$ is the harmonicity $\Delta_\Phi F = 0$, which is weaker than $\partial F = 0$, and it is the conjugate boundary data that restricts the harmonic minimiser to the regular representative. In two dimensions this is the Neumann problem, and the same structure recurs in the four-dimensional case with the Fueter operator. The corpus's field-theoretic use of the same identity is the Dirichlet energy of harmonic maps and, in two dimensions, its conformal invariance; the regularity equation is the elliptic member of that family.
 
 ## The Fueter Construction
 
@@ -159,7 +159,7 @@ is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is bo
 **Proof.** For $g = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ with central $A, B$, one has $\partial/\partial q_\mu\,A = (\partial/\partial\rho A)(\vec u_{\mathrm d})_\mu$, $\sum_{\mu\in\{x,y,z\}} \vec e_\mu (\vec u_{\mathrm d})_\mu = \vec u_{\mathrm d}$, and $\sum_{\mu,\nu\in\{x,y,z\}}(\partial/\partial q_\mu\,(\vec u_{\mathrm d})_\nu)\vec e_\mu \vec e_\nu = (-3 - \vec u_{\mathrm d}^2)/\rho = -2/\rho$, because $\vec u_{\mathrm d}^2 = -1$. These give
 
 $$
-\tilde{\nabla} g = g\tilde{\nabla} = \left(\partial/\partial Q_t A - \partial/\partial\rho B - \frac{2B}{\rho}\right) + \vec u_{\mathrm d}\,(\partial/\partial Q_t B + \partial/\partial\rho A),
+\tilde\nabla_\Phi g = g\tilde\nabla_\Phi = \left(\partial/\partial Q_t A - \partial/\partial\rho B - \frac{2B}{\rho}\right) + \vec u_{\mathrm d}\,(\partial/\partial Q_t B + \partial/\partial\rho A),
 $$
 
 so $g$ is left-regular if and only if it is right-regular, and this holds exactly when $\partial/\partial Q_t A = \partial/\partial\rho B + 2B/\rho$ and $\partial/\partial Q_t B = -\partial/\partial\rho A$. Using the radial form of $\Delta_{\mathbb{R}^3}$, the identity $\Delta_{\mathbb{R}^3}(B\vec u_{\mathrm d}) = \vec u_{\mathrm d}(\Delta_{\mathbb{R}^3}B - 2B/\rho^2)$, and the harmonicity of $u, v$, one gets $\Delta_4 f_{\mathrm{ax},0} = P + \vec u_{\mathrm d}Q$ with $P = 2u_\rho/\rho$, $Q = 2(\rho v_\rho - v)/\rho^2$; the Cauchy–Riemann equations then give $Q_\rho + 2Q/\rho = \partial/\partial Q_t P$ and $-P_\rho = \partial/\partial Q_t Q$, and $P, Q$ extend continuously to $\rho = 0$.
@@ -184,7 +184,7 @@ A function is **axially symmetric** if $F_{\mathrm{fn}}(q_t + \vec u_{\mathrm d}
 
 ### The Fueter–Sce Theorem and Its Hypotheses
 
-**Theorem (Fueter–Sce).** Let $n \ge 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1, \dots, e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f_{\mathrm{ax},0}$ to $\mathbb{R}^{n+1}$ (complex unit replaced by a unit vector of $\mathbb{R}^n$, $a'$ by the radius). Then $F_{\mathrm{fn}} = \Delta^{(n-1)/2} f_{\mathrm{ax},0}$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator $\partial/\partial Q_t + \sum_{j=1}^{n} e_j \partial/\partial Q_j$ on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
+**Theorem (Fueter–Sce).** Let $n \ge 1$ be odd, let $\mathrm{Cl}_{0,n}$ have generators $e_1, \dots, e_n$, and let $f_0$ be holomorphic on a disc, with axial extension $f_{\mathrm{ax},0}$ to $\mathbb{R}^{n+1}$ (complex unit replaced by a unit vector of $\mathbb{R}^n$, $a'$ by the radius). Then $F_{\mathrm{fn}} = \Delta_\Phi^{(n-1)/2} f_{\mathrm{ax},0}$ is monogenic, annihilated on the left and on the right by the Cauchy–Riemann operator $\partial/\partial Q_t + \sum_{j=1}^{n} e_j \partial/\partial Q_j$ on the ball where the extension is defined. For $n = 3$ the exponent is $1$, recovering Fueter's construction.
 
 Three hypotheses are needed, and none can be dropped. First, $f_0$ must be **holomorphic** on $D(0,R)$, so its Taylor series converges there; the induced series then converges on $B(0,R)$, since $\Delta_4(\tilde{Q}^n)$ is a homogeneous polynomial of degree $n-2$ with at most polynomial growth in $n$, while $|a_n| r^n = O(1)$ for $r < R$ by Cauchy's estimates. Second, the construction has the **affine kernel** $a_1A + a_0$, so a one-to-one correspondence requires the Taylor coefficients to vanish to order two, $a_0 = a_1 = 0$, equivalently one works modulo affine functions. Third, **parity**: $(n-1)/2$ must be a non-negative integer, so $n$ must be odd, as in the quaternion and biquaternion case $n = 3$.
 
@@ -193,18 +193,18 @@ Three hypotheses are needed, and none can be dropped. First, $f_0$ must be **hol
 A series with biquaternionic coefficients placed on the right, $f(\tilde{Q}) = \sum_{n \ge 0} \tilde{Q}^n a_n$, converges absolutely on $\|\tilde{Q}\| < R$ with $R^{-1} = \limsup_n \|a_n\|^{1/n}$, because $\|\tilde{Q}^n\| = \|\tilde{Q}\|^n$. Its sum is **slice-regular**, or Cullen-regular: holomorphic on each slice. Slice-regular functions form a different class from the Fueter-regular ones; for example, $\tilde{Q} \mapsto \tilde{Q}$ is slice-regular, but
 
 $$
-\tilde{\nabla}\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0.
+\tilde\nabla_\Phi\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0.
 $$
 
 The Fueter construction is precisely the operation converting slice-regular, or holomorphic, data into Fueter-regular functions.
 
-For real Taylor coefficients, $f_{\mathrm{ax},0}(\tilde{Q}) = \sum_{n \ge 0} a_n \tilde{Q}^n$, and term-by-term application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n \ge 0} a_n \Delta_4(\tilde{Q}^n)$, which begins at $n = 2$ and converges normally on $B(0,R)$ because $\Delta_4(\tilde{Q}^n)$ has degree $n-2$ and at most polynomial growth; term-by-term differentiation is therefore justified. In general, with $\mathcal{P}_k$ the biquaternion-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \tilde{\nabla}P = 0\}$ the **monogenic homogeneous polynomials**, the Fischer decomposition $\mathcal{P}_k = \bigoplus_{j=0}^{k} \tilde{Q}^j \mathcal{M}_{k-j}$ gives every Fueter-regular function on $B(0,R)$ a normally convergent expansion $F_{\mathrm{fn}} = \sum_{k \ge 0} F_{\mathrm{fn},k}$ with $F_{\mathrm{fn},k} \in \mathcal{M}_k$, the analogue of the Taylor series of complex analysis.
+For real Taylor coefficients, $f_{\mathrm{ax},0}(\tilde{Q}) = \sum_{n \ge 0} a_n \tilde{Q}^n$, and term-by-term application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n \ge 0} a_n \Delta_4(\tilde{Q}^n)$, which begins at $n = 2$ and converges normally on $B(0,R)$ because $\Delta_4(\tilde{Q}^n)$ has degree $n-2$ and at most polynomial growth; term-by-term differentiation is therefore justified. In general, with $\mathcal{P}_k$ the biquaternion-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \tilde\nabla_\Phi P = 0\}$ the **monogenic homogeneous polynomials**, the Fischer decomposition $\mathcal{P}_k = \bigoplus_{j=0}^{k} \tilde{Q}^j \mathcal{M}_{k-j}$ gives every Fueter-regular function on $B(0,R)$ a normally convergent expansion $F_{\mathrm{fn}} = \sum_{k \ge 0} F_{\mathrm{fn},k}$ with $F_{\mathrm{fn},k} \in \mathcal{M}_k$, the analogue of the Taylor series of complex analysis.
 
 ## The Biquaternionic Case
 
-On $\mathbb{B}_{H}$ the theory is the classical one with biquaternion coefficients, since the quaternion subspace is a division algebra: $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is positive-definite, so every nonzero element is invertible. The fundamental solution $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 0$ off the origin and $\tilde{\nabla}G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ distributionally, so the only singularity of the Cauchy theory is the point $\tilde{Q} = 0$.
+On $\mathbb{B}_{H}$ the theory is the classical one with biquaternion coefficients, since the quaternion subspace is a division algebra: $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is positive-definite, so every nonzero element is invertible. The fundamental solution $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ satisfies $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ off the origin and $\tilde\nabla_\Phi G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ distributionally, so the only singularity of the Cauchy theory is the point $\tilde{Q} = 0$.
 
-On $\mathbb{B}_{iH}$ the theory is the same, up to the constant central factor by which the two gradients differ. Every coefficient there is purely imaginary, so the gradient is $\tilde{\nabla}_{i\mathbb{H}} = -i\,\tilde{\nabla}_{\mathbb{H}}$ in the same four coordinates; since $-i$ is an invertible central constant, $\tilde{\nabla}_{i\mathbb{H}}F_{\mathrm{fn}} = 0$ if and only if $\tilde{\nabla}_{\mathbb{H}}F_{\mathrm{fn}} = 0$. The left- and right-regular functions are therefore the same class as on $\mathbb{B}_{H}$, and the Cauchy kernel is the kernel of $\mathbb{B}_{H}$ multiplied by $i$. Only the second-order operator changes sign, $\tilde{\nabla}\tilde{\nabla}^{\natural} = -\Delta_4 e_t$; its solutions are again the ordinary harmonic functions, so the harmonicity, the mean value property, and the monogenic Taylor expansion carry over unchanged. In this sense $\mathbb{B}_{iH}$ adds no new case to Fueter theory: it is the definite counterpart of $\mathbb{B}_{H}$, as $\mathbb{B}_{\Psi}$ is the indefinite counterpart of $\mathbb{B}_{\Phi}$.
+On $\mathbb{B}_{iH}$ the theory is the same, up to the constant central factor by which the two gradients differ. Every coefficient there is purely imaginary, so the gradient is $\tilde\nabla_{i\mathbb{H},\Phi} = -i\,\tilde\nabla_{\mathbb{H},\Phi}$ in the same four coordinates; since $-i$ is an invertible central constant, $\tilde\nabla_{i\mathbb{H},\Phi}F_{\mathrm{fn}} = 0$ if and only if $\tilde\nabla_{\mathbb{H},\Phi}F_{\mathrm{fn}} = 0$. The left- and right-regular functions are therefore the same class as on $\mathbb{B}_{H}$, and the Cauchy kernel is the kernel of $\mathbb{B}_{H}$ multiplied by $i$. Only the second-order operator changes sign, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = -\Delta_4 e_t$; its solutions are again the ordinary harmonic functions, so the harmonicity, the mean value property, and the monogenic Taylor expansion carry over unchanged. In this sense $\mathbb{B}_{iH}$ adds no new case to Fueter theory: it is the definite counterpart of $\mathbb{B}_{H}$, as $\mathbb{B}_{\Psi}$ is the indefinite counterpart of $\mathbb{B}_{\Phi}$.
 
 On $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ the second-order operator is the wave operator, $\Box_{\mathbb{B}_{\Phi}} = (-\partial^2/\partial q'^2_t + \Delta_{\mathbb{R}^3})e_t$ and $\Box_{\mathbb{B}_{\Psi}} = (\partial^2/\partial q_t^2 - \Delta_{\mathbb{R}^3})e_t$, of inertias $(3,1)$ and $(1,3)$: hyperbolic, hence without elliptic regularity, and the axial coefficients then satisfy a wave-type system rather than a Laplace system. The zero divisors form the **null cone** $(q'_t)^2 = q_x^2 + q_y^2 + q_z^2$ on $\mathbb{B}_{\Phi}$ (and $q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ on $\mathbb{B}_{\Psi}$), exactly where the biquaternion norm vanishes. Its nonzero elements are not invertible, so the pointwise inversion of $\tilde{Q}$ underlying the Cauchy kernel fails there, and the Euclidean kernel is not the fundamental solution of the gradient on these subspaces, as the articles on biquaternion integration and on biquaternion analysis on subspaces record. Domains for the Cauchy theory must avoid the cone, not merely the origin.
 
@@ -212,7 +212,7 @@ On the full algebra $\mathbb{B}$ the biquaternion norm $\langle\tilde{Q}\rangle_
 
 ## Summary
 
-The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_t$. On the anti-quaternion subspace $\mathbb{B}_{iH}$ the gradient differs from this one by the constant central factor $-i$, so the regular functions and the Cauchy kernel are those of $\mathbb{B}_{H}$, up to $i$, and only the sign of the second-order operator changes. Left-regularity $\tilde{\nabla}F_{\mathrm{fn}} = 0$ and right-regularity $F_{\mathrm{fn}}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise Cauchy–Riemann–Fueter system and coincide for axially symmetric functions; every regular function is harmonic, hence real-analytic, and satisfies the mean value property. The regularity condition has a variational origin as the Dirichlet principle of the Cauchy–Riemann operator: the Cauchy–Riemann energy and the Dirichlet energy differ by a null Lagrangian and share their Euler–Lagrange system, and the conjugate boundary data of Lanczos's 1919 statement selects the regular representative among the harmonic functions.
+The Fueter operator $\tilde\nabla_\Phi = \sum_\mu e_\mu \partial/\partial Q_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_4 e_t$. On the anti-quaternion subspace $\mathbb{B}_{iH}$ the gradient differs from this one by the constant central factor $-i$, so the regular functions and the Cauchy kernel are those of $\mathbb{B}_{H}$, up to $i$, and only the sign of the second-order operator changes. Left-regularity $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ and right-regularity $F_{\mathrm{fn}}\tilde\nabla_\Phi = 0$ differ only in the sign of the curl term of the componentwise Cauchy–Riemann–Fueter system and coincide for axially symmetric functions; every regular function is harmonic, hence real-analytic, and satisfies the mean value property. The regularity condition has a variational origin as the Dirichlet principle of the Cauchy–Riemann operator: the Cauchy–Riemann energy and the Dirichlet energy differ by a null Lagrangian and share their Euler–Lagrange system, and the conjugate boundary data of Lanczos's 1919 statement selects the regular representative among the harmonic functions.
 
 The Fueter construction sends a holomorphic $f_0$ to the induced function $F_{\mathrm{fn}} = \Delta_4 f_{\mathrm{ax},0} = 2u_\rho/\rho + \vec u_{\mathrm d}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two. The Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$, under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. Regular functions have the induced series and the monogenic Taylor expansion, while slice-regular series form the distinct class that the construction converts into regular functions. On $\mathbb{B}_{H}$ the origin is the only singularity, but on the full algebra the six-dimensional null quadric obstructs inversion, the Fueter operator is not elliptic over $\mathbb{C}$, and the imaginary units are no longer the sphere $S^2$; the full-algebra case remains open.
 
@@ -222,15 +222,15 @@ The Fueter construction sends a holomorphic $f_0$ to the induced function $F_{\m
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{H}$ | Quaternion subspace, with real coordinates $q_\mu$; the domain of Fueter theory |
-| $\mathbb{B}_{iH}$ | Anti-quaternion subspace, all coefficients purely imaginary; regularity is the same class as on $\mathbb{B}_{H}$, with $\Box = -\Delta_4 e_t$ |
+| $\mathbb{B}_{iH}$ | Anti-quaternion subspace, all coefficients purely imaginary; regularity is the same class as on $\mathbb{B}_{H}$, with $\Box_\Phi = -\Delta_4 e_t$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Biquaternion; $\tilde{Q} = \sum_\mu q_\mu e_\mu$ on $\mathbb{B}_{H}$ |
 | $\vec q = \sum_k q_k \vec e_k$, $\rho = \|\vec q\|$, $\vec u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, and its direction |
-| $\tilde{\nabla} = \partial/\partial Q_t + \vec D$, $\vec D = \sum_{\mu\in\{x,y,z\}} \vec e_\mu \partial/\partial Q_\mu$ | Fueter (Cauchy–Riemann–Fueter) operator, acting on the left |
-| $\tilde{\nabla}^{\natural} = \partial/\partial Q_t - \vec D$ | Conjugate Fueter operator |
-| $\Delta_4 = \sum_\mu \partial^2/\partial Q_\mu^2$ | Four-dimensional Laplacian; $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_t$ |
+| $\tilde\nabla_\Phi = \partial/\partial Q_t + \vec D$, $\vec D = \sum_{\mu\in\{x,y,z\}} \vec e_\mu \partial/\partial Q_\mu$ | Fueter (Cauchy–Riemann–Fueter) operator, acting on the left |
+| $(\tilde\nabla_\Phi)^{\natural} = \partial/\partial Q_t - \vec D$ | Conjugate Fueter operator |
+| $\Delta_4 = \sum_\mu \partial^2/\partial Q_\mu^2$ | Four-dimensional Laplacian; $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_4 e_t$ |
 | $\partial, \bar{\partial}$ | Planar Cauchy–Riemann operators, $\partial = \partial/\partial a - i\partial/\partial a'$, $\bar{\partial} = \partial/\partial a + i\partial/\partial a'$ (variational section) |
-| $F_{\mathrm{fn}}$ left-regular | $\tilde{\nabla}F_{\mathrm{fn}} = 0$; monogenic in Clifford language |
-| $F_{\mathrm{fn}}$ right-regular | $F_{\mathrm{fn}}\tilde{\nabla} = 0$ |
+| $F_{\mathrm{fn}}$ left-regular | $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$; monogenic in Clifford language |
+| $F_{\mathrm{fn}}$ right-regular | $F_{\mathrm{fn}}\tilde\nabla_\Phi = 0$ |
 | $I$, $S^2$ | Imaginary unit, $I^2 = -1$; on $\mathbb{B}_{H}$ these form the two-sphere |
 | $\mathbb{C}_I = \mathbb{R} + I\mathbb{R}$ | Slice, a copy of the complex plane; slice-regular functions live on unions of slices |
 | $A, B$ | Axial coefficients of an axially symmetric function, $F_{\mathrm{fn}} = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ |

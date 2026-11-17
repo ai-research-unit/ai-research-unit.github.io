@@ -195,13 +195,13 @@ because the quaternion units anticommute while the wedge is antisymmetric, so th
 The same Hermitian pairing that gives $g$ and $\omega$ gives the Poisson bracket directly. For a real function $f(\vec q,\vec p)$ define the **phase-space biquaternion gradient**
 
 $$
-\nabla f=\sum_{\mu\in\{t,x,y,z\}}e_\mu\left(\frac{\partial f}{\partial q_\mu}+i\frac{\partial f}{\partial p_\mu}\right).
+\tilde\nabla_\Phi f=\sum_{\mu\in\{t,x,y,z\}}e_\mu\left(\frac{\partial f}{\partial q_\mu}+i\frac{\partial f}{\partial p_\mu}\right).
 $$
 
 Then
 
 $$
-\mathrm{Sc}\!\left((\nabla f)^{*}\,\nabla g\right)
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi f)^{*}\,\tilde\nabla_\Phi g\right)
 =\sum_\mu\left(\frac{\partial f}{\partial q_\mu}\frac{\partial g}{\partial q_\mu}
 +\frac{\partial f}{\partial p_\mu}\frac{\partial g}{\partial p_\mu}\right)
 +i\sum_\mu\left(\frac{\partial f}{\partial q_\mu}\frac{\partial g}{\partial p_\mu}
@@ -211,10 +211,10 @@ $$
 whose imaginary part is the Poisson bracket:
 
 $$
-\boxed{\;\{f,g\}=\mathrm{Im}\,\mathrm{Sc}\!\left((\nabla f)^{*}\,\nabla g\right)\;}.
+\boxed{\;\{f,g\}=\mathrm{Im}\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi f)^{*}\,\tilde\nabla_\Phi g\right)\;}.
 $$
 
-The conjugate here must be the **Hermitian** one, $(\nabla f)^{*}$, and not the quaternion conjugate alone: the gradient is a complex biquaternion, and conjugating only its quaternion structure would flip the relative sign between the two terms of the real part and symmetrise the imaginary part. With the Hermitian conjugate the real part is the positive-definite metric pairing of the two gradients and the imaginary part is the antisymmetric symplectic pairing. The bracket is thus the imaginary part of the same Hermitian pairing, evaluated on gradients, and the identity displays the Kähler structure in the bracket itself: the metric and the bracket are two projections of one complex pairing. This is verified directly on the canonical functions, where $\nabla q_\mu=e_\mu$ and $\nabla p_\mu=ie_\mu$, giving $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$.
+The conjugate here must be the **Hermitian** one, $(\tilde\nabla_\Phi f)^{*}$, and not the quaternion conjugate alone: the gradient is a complex biquaternion, and conjugating only its quaternion structure would flip the relative sign between the two terms of the real part and symmetrise the imaginary part. With the Hermitian conjugate the real part is the positive-definite metric pairing of the two gradients and the imaginary part is the antisymmetric symplectic pairing. The bracket is thus the imaginary part of the same Hermitian pairing, evaluated on gradients, and the identity displays the Kähler structure in the bracket itself: the metric and the bracket are two projections of one complex pairing. This is verified directly on the canonical functions, where $\tilde\nabla_\Phi q_\mu=e_\mu$ and $\tilde\nabla_\Phi p_\mu=ie_\mu$, giving $\{q_\mu,p_\nu\}=\delta_{\mu\nu}$.
 
 ## The Biquaternion Norm and Its Cone
 
@@ -282,7 +282,7 @@ $$
 \boxed{\;\langle\tilde P_{\Phi}\rangle_{\natural}=-\frac{\omega^2}{c^2}+\vec k_\Phi^2\;},
 $$
 
-and $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k_\Phi^2$ of the wave equation $\Box\tilde{Ξ}=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k_\Phi$, whose wave biquaternion is $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$, the operator $\Box=\partial^2/\partial R_t^2+\Delta$ acts as the eigenvalue
+and $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ is the dispersion relation $\omega^2/c^2=\vec k_\Phi^2$ of the wave equation $\Box_\Phi\tilde{Ξ}=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k_\Phi$, whose wave biquaternion is $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$, the operator $\Box_\Phi=\partial^2/\partial R_t^2+\Delta_\Phi$ acts as the eigenvalue
 
 $$
 (iK_0)^2+(i\vec k_\Phi)^2
@@ -290,7 +290,7 @@ $$
 \qquad K_0=\frac{i\omega}{c},
 $$
 
-so $\Box\tilde{Ξ}=0$ is exactly $\langle\tilde P_{\Phi}\rangle_{\natural}=0$; the overall sign of the symbol is immaterial for the kernel, and the **biquaternion-norm cone is the characteristic cone of the d'Alembertian.** The cone is thus at once the zero-divisor cone of the algebra, the light cone of the material sector, and the wave cone of the field equation.
+so $\Box_\Phi\tilde{Ξ}=0$ is exactly $\langle\tilde P_{\Phi}\rangle_{\natural}=0$; the overall sign of the symbol is immaterial for the kernel, and the **biquaternion-norm cone is the characteristic cone of the d'Alembertian.** The cone is thus at once the zero-divisor cone of the algebra, the light cone of the material sector, and the wave cone of the field equation.
 
 ## The Coadjoint Orbit and the Biquaternion-Norm Level Sets
 
@@ -330,8 +330,8 @@ The material of this article divides as follows.
 1. The Hermitian pairing's scalar part splits as $g+i\omega$: the metric and the symplectic form are the real and imaginary parts of one complex pairing. The algebra carries the pairing; the split is forced by the Hermitian conjugation.
 2. The algebra's complex structure $i$ is the Kähler $J$; it satisfies $g(i\vec Z,\vec W)=\omega(\vec Z,\vec W)$ and $g(i\vec Z,i\vec W)=g(\vec Z,\vec W)$ identically.
 3. The symplectic form is the scalar part of a biquaternion two-form: $\omega=\frac{i}{2}\mathrm{Sc}(d\vec Z\wedge d\vec Z^{*})$, and $d\vec Z\wedge d\vec Z=0$.
-4. The Poisson bracket is the imaginary part of the same pairing on gradients: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^{*}\nabla g)$.
-5. The biquaternion-norm cone is simultaneously the zero-divisor cone of the algebra, the light cone of the material sector, and the characteristic cone of $\Box$; and it is the degenerate member of the family of coadjoint orbits.
+4. The Poisson bracket is the imaginary part of the same pairing on gradients: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\tilde\nabla_\Phi f)^{*}\tilde\nabla_\Phi g)$.
+5. The biquaternion-norm cone is simultaneously the zero-divisor cone of the algebra, the light cone of the material sector, and the characteristic cone of $\Box_\Phi$; and it is the degenerate member of the family of coadjoint orbits.
 
 ## Summary
 
@@ -340,7 +340,7 @@ The symplectic form and the biquaternion-norm cone are the two canonical quadrat
 - For the phase-space biquaternion $\vec Z=\vec q+i\vec p$, the Hermitian scalar pairing satisfies $\mathrm{Sc}(\vec Z^{*}\vec W)=g(\vec Z,\vec W)+i\omega(\vec Z,\vec W)$, with $g$ the Euclidean metric of phase space and $\omega$ the symplectic form $\omega=\sum_\mu dq_\mu\wedge dp_\mu$.
 - The algebra's complex structure $i$ is the Kähler $J$: $g(i\vec Z,\vec W)=\omega(\vec Z,\vec W)$ and $g(i\vec Z,i\vec W)=g(\vec Z,\vec W)$.
 - The symplectic potential is $\varpi=\frac12\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*} d\vec Z)$, with $d\varpi=\omega$; equivalently $\omega=\frac{i}{2}\mathrm{Sc}(d\vec Z\wedge d\vec Z^{*})$, while $d\vec Z\wedge d\vec Z=0$.
-- The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\nabla f)^{*}\nabla g)$ with $\nabla f=\sum_\mu e_\mu(\partial/\partial q_\mu\,f+i\partial/\partial p_\mu\,f)$.
+- The Poisson bracket is the imaginary part of the same pairing: $\{f,g\}=\mathrm{Im}\,\mathrm{Sc}((\tilde\nabla_\Phi f)^{*}\tilde\nabla_\Phi g)$ with $\tilde\nabla_\Phi f=\sum_\mu e_\mu(\partial/\partial q_\mu\,f+i\partial/\partial p_\mu\,f)$.
 - The holomorphic companion of the Hermitian pairing is the biquaternion norm $\langle\vec Z\rangle_{\natural} = \langle\vec Z,\vec Z\rangle_{\natural}=\sum_\mu Z_\mu^2$, whose zero set is the biquaternion-norm cone. On the material sector the cone is the light cone $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$ and the characteristic cone $\langle\tilde P_{\Phi}\rangle_{\natural}=0$ of the d'Alembertian; in the algebra it is the zero-divisor cone; on the coadjoint orbit it is the degenerate level $S=0$ of a family whose non-degenerate members carry the Souriau form.
 
 The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairing, the metric is its symmetric (real) part, the algebra's complex structure is the compatible $J$, and the biquaternion-norm cone is the isotropic cone of the holomorphic form of the same complex structure. Nothing in this article is quantum: the Hermitian pairing is read as a classical phase-space form, and the cone is the classical light and wave cone.
@@ -359,7 +359,7 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (holomorphic) |
 | $\langle\vec Z,\vec W\rangle=\mathrm{Sc}(\vec Z\vec W^{\natural}) = \langle\vec Z,\vec W\rangle_{\natural}$ | Symmetric general plain bilinear form of $\langle\cdot,\cdot\rangle_{\natural}$ |
 | $\langle\tilde R_\Phi\rangle_{\natural}=0$, $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Light cone of the material sector |
-| $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$ | Characteristic cone of $\Box$ |
+| $\langle\tilde P_{\Phi}\rangle_{\natural}=0$, $\tilde P_{\Phi}=\frac{i\omega}{c}e_t+\vec k_\Phi$ | Characteristic cone of $\Box_\Phi$ |
 | $\langle\vec S\rangle_{\natural}=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
 | $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{ij\eta}S_i dS_j\wedge dS_\eta$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

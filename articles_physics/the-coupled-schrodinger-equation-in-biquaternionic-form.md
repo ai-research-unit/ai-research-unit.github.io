@@ -17,7 +17,7 @@ with $h_t$ and $\vec h_\Psi$ fixed numbers. A fixed Hamiltonian has no room for 
 This article puts the electromagnetic connection into that equation. The replacement is one rule, the ordinary derivative becomes a covariant one,
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 \qquad
 \tilde A_\Phi=i\,\frac{\varphi}{c}\,e_t+\vec A,
 $$
@@ -111,7 +111,7 @@ and its conservation is one line from the equation and its conjugate. The factor
 $$
 \tilde A_\Phi\longmapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma,
 \qquad\text{that is}\qquad
-\vec A\longmapsto\vec A-\nabla\Gamma,
+\vec A\longmapsto\vec A-\vec\nabla_\Phi\Gamma,
 \qquad
 \varphi\longmapsto\varphi+\partial_{t'}\Gamma .
 $$
@@ -197,7 +197,7 @@ $$
 
 so the right side is the equation's residual contracted with the field and projected on the imaginary part of the scalar part: it vanishes on every solution and the continuity equation is exact off shell. The same identity in the free case is the free article's, with $D_\eta\to\partial_\eta$.
 
-**Gauge invariance.** Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ and $A_\eta\mapsto A_\eta-\partial_\eta\Gamma$, the two factors of the bilinear acquire $\lambda$ and $\lambda^{-1}$, and $\lambda$ is central, so they cancel; and each $D_\eta\tilde\Xi$ is multiplied by $\lambda$, so the two factors acquire $\lambda^{-1}$ and $\lambda$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\nabla\Gamma$, and with the connection in place the shift is absorbed.
+**Gauge invariance.** Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ and $A_\eta\mapsto A_\eta-\partial_\eta\Gamma$, the two factors of the bilinear acquire $\lambda$ and $\lambda^{-1}$, and $\lambda$ is central, so they cancel; and each $D_\eta\tilde\Xi$ is multiplied by $\lambda$, so the two factors acquire $\lambda^{-1}$ and $\lambda$ and cancel again. The current is invariant, and so is the density. This is the property the free current lacks and the coupling supplies: for $ϙ=0$ a local phase shift changes $\vec j$ by a term in $\vec\nabla_\Phi\Gamma$, and with the connection in place the shift is absorbed.
 
 **The charge current, and the source.** Multiplying by $ϙ$ gives the charge density $\rho_{\mathrm{chg}}:=ϙ n$ and the charge current $\vec J:=ϙ\vec j$, and the continuity equation is theirs unchanged. That current is the source of the inhomogeneous Maxwell equation, in the form the Maxwell article and the coupled Klein–Gordon companion use,
 
@@ -300,7 +300,7 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $ϙ$ | The coupling constant; minus the electric charge of the older convention |
 | $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ | The material-sector connection; $\varphi$ and $\vec A$ real |
 | $\varphi=c\,a'_t$ | The electric potential, so that $ϙ\varphi$ is an energy |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | The covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | The covariant derivative |
 | $D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi$, $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ | Its slots in the $t'$ language |
 | $\vec\pi_\eta=-i\hbar D_\eta=-i\hbar\partial_\eta+ϙA_\eta$ | The mechanical momentum |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | The free Hermitian Hamiltonian |
@@ -309,7 +309,7 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $j_\eta$, $j_t=n$ | The particle current and its temporal component |
 | $\rho_{\mathrm{chg}}=ϙ n$, $\vec J=ϙ\vec j$ | The charge density and the charge current |
 | $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge factor; $\Gamma$ real |
-| $\Gamma$ | The gauge function; $\vec A\mapsto\vec A-\nabla\Gamma$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ |
+| $\Gamma$ | The gauge function; $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ |
 
 ## Further Reading
 

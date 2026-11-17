@@ -20,13 +20,13 @@
 
 ### One scalar, not an element
 
-**The Klein–Gordon operator is second order, and its symbol is a number.** Write $\mathcal{P}=\Box-k_m^{2}$ for the operator of *The First-Order Root of the Biquaternion Klein–Gordon Operator*, with $\Box$ the material d'Alembertian. On a plane wave the gradient is replaced by its symbol and
+**The Klein–Gordon operator is second order, and its symbol is a number.** Write $\mathcal{P}=\Box_\Phi-k_m^{2}$ for the operator of *The First-Order Root of the Biquaternion Klein–Gordon Operator*, with $\Box_\Phi$ the material d'Alembertian. On a plane wave the gradient is replaced by its symbol and
 
 $$
 \sigma_{\mathcal{P}}(k_{t}^{\prime},\vec k_\Phi)=k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}.
 $$
 
-This is a complex number and not an element of $\mathbb{B}$, and the reason is one line: $\Box$ is the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, whose symbol is the norm $\tilde K_\Phi\tilde K_\Phi^{\natural}$, and the norm of a quaternion is central. **The second-order symbol is left multiplication by a scalar.** The first-order symbol $i\tilde K_\Phi$ is not, and that single difference is the source of everything in this article.
+This is a complex number and not an element of $\mathbb{B}$, and the reason is one line: $\Box_\Phi$ is the composition $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, whose symbol is the norm $\tilde K_\Phi\tilde K_\Phi^{\natural}$, and the norm of a quaternion is central. **The second-order symbol is left multiplication by a scalar.** The first-order symbol $i\tilde K_\Phi$ is not, and that single difference is the source of everything in this article.
 
 **A scalar symbol has an all-or-nothing rank.** Left multiplication by $\sigma$ is invertible when $\sigma\ne0$ and zero when $\sigma=0$. There is no third case and no intermediate dimension. The graded ranks of the two preceding articles — three off the light cone and two on it — belong to $L_{i\tilde K_\Phi}$, which is not scalar. The second-order symbol has rank four on the whole algebra the moment it is non-zero, and rank zero on the set where it vanishes:
 
@@ -111,7 +111,7 @@ $$
 \mathcal{S}=\frac{1}{i}\frac{\partial}{\partial r'_t}-k_m+\frac{1}{2k_m}\Delta_\Phi ,
 $$
 
-with $\Delta=\vec\nabla^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-i\theta_{\mathrm{rst}}}$ has been divided out. **The division of the rest clock and the subtraction of $k_m$ from the energy are the same operation**, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2k_m$.
+with $\Delta_\Phi=\vec\nabla_\Phi^{2}$, and $\mathcal{S}\chi=0$ is the free Schrödinger equation for the envelope, after the rest clock $e^{-i\theta_{\mathrm{rst}}}$ has been divided out. **The division of the rest clock and the subtraction of $k_m$ from the energy are the same operation**, and they are the same operation as passing from $\mathcal{P}$ to $\mathcal{S}$ up to the coefficient $2k_m$.
 
 The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real interval give a real angle.
 
@@ -207,7 +207,7 @@ $$
 \sigma=c\Bigl(k_{\mathrm{s}}-\frac{k_{\Phi}^{2}}{2k_m}\Bigr)+d=c\,\sigma_{\mathrm{s}}+d,
 $$
 
-a two-parameter family: the scale $c$ and the additive constant $d$. The constant is not an accident of the ansatz and not a gap in the argument. **A constant added to a symbol is a constant potential**, and a constant potential is Galilei-invariant exactly: the boost multiplies the wave function by the phase $e^{i\theta_{\mathrm{gal}}}$, with the boost angle $\theta_{\mathrm{gal}}=m\vec v_b\cdot\vec r-\frac{1}{2}m\lvert\vec v_b\rvert^{2}h_t$ real because the mass, the boost velocity, the position and the time are real, and the cross terms it brings to $i\partial_{h_t}$ and to $-\nabla^{2}/(2k_m)$ cancel against it. The free constant of the symbol and the phase of the boost are the same freedom, seen from the two sides.
+a two-parameter family: the scale $c$ and the additive constant $d$. The constant is not an accident of the ansatz and not a gap in the argument. **A constant added to a symbol is a constant potential**, and a constant potential is Galilei-invariant exactly: the boost multiplies the wave function by the phase $e^{i\theta_{\mathrm{gal}}}$, with the boost angle $\theta_{\mathrm{gal}}=m\vec v_b\cdot\vec r-\frac{1}{2}m\lvert\vec v_b\rvert^{2}h_t$ real because the mass, the boost velocity, the position and the time are real, and the cross terms it brings to $i\partial_{h_t}$ and to $-\vec\nabla_\Phi^{2}/(2k_m)$ cancel against it. The free constant of the symbol and the phase of the boost are the same freedom, seen from the two sides.
 
 **Modulo that freedom the symbol is unique up to scale, and the affineness is forced.** Fixing the zero of the energy so that $d=0$, which is what the rest clock does, leaves the one-dimensional line spanned by $\sigma_{\mathrm{s}}$. Setting $c=0$ leaves only constants, and a constant symbol has no dispersion relation at all: its zero set is empty or the whole space. **So there is no Galilei-invariant symbol of degree one in the wave numbers other than the zero symbol, and every invariant shape of these degrees is affine. Affineness is not a choice among invariant shapes, and it is not merely one member of the family: the family is affine as a whole.**
 
@@ -335,7 +335,7 @@ The condition on the source is homogeneous in either variable, and the symbol is
 
 | Symbol | Meaning |
 |---|---|
-| $\sigma_{\mathcal{P}}$ | the symbol of $\Box-k_m^{2}$, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$; a complex number |
+| $\sigma_{\mathcal{P}}$ | the symbol of $\Box_\Phi-k_m^{2}$, $k_{t}^{\prime\,2}-k_{\Phi}^{2}-k_m^{2}$; a complex number |
 | $\mathcal{S}$ | the operator with symbol $\sigma_{\mathrm{s}}$; first order in $r'_t$, second in space |
 | $k_{\mathrm{s}}$ | the energy above rest, $k_{t}^{\prime}-k_m=(E-mc^{2})/(\hbar c)$ |
 | $\sigma_{\mathrm{s}}$ | the Schrödinger symbol, $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$; affine |

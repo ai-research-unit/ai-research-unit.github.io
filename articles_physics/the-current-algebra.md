@@ -179,7 +179,7 @@ The derivative of the word separates into four brackets of four types, and the b
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity |
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\hat s$ | Spin element |
 | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
-| $\tilde\nabla_\Phi$ | Algebra's derivative, $-ie_t\partial_{r'_{t}}+\nabla$ |
+| $\tilde\nabla_\Phi$ | Algebra's derivative, $-ie_t\partial_{r'_{t}}+\vec\nabla_\Phi$ |
 
 ## Further Reading
 

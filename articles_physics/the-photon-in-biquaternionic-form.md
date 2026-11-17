@@ -27,7 +27,7 @@ $$
 \mathbb{B}_{\Psi} = \{\tilde{Q} : \tilde{Q}^{*} = \tilde{Q}\} = \mathrm{span}_\mathbb{R}\{h_t\,e_t, i h'_{x}\,\vec e_x, i h'_{y}\,\vec e_y, i h'_{z}\,\vec e_z\},
 $$
 
-with $r'_t,h'_{x},h'_{y},h'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and measure $\vec E$ and $\vec H$ in the invertibles $\sqrt{\epsilon_0}$ and $\sqrt{\mu_0}$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i q'_t$ and $Q_\eta=q_\eta$.
+with $r'_t,h'_{x},h'_{y},h'_{z}$ real, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde{Q}_1,\tilde{Q}_2\rangle$. The biquaternionic gradient is $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$, the field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, and for the free field we set $\epsilon=\epsilon_0$, $\mu=\mu_0$ and measure $\vec E$ and $\vec H$ in the invertibles $\sqrt{\epsilon_0}$ and $\sqrt{\mu_0}$, in which $c=1/\sqrt{\epsilon\mu}$ gives $\tilde{F}=i\vec E-\vec H$. The Riemann–Silberstein vector is $\vec N=\vec E+ic\vec B$ with $\vec B=\mu\vec H$, so that $\tilde{F}=i\sqrt{\epsilon}\,\vec N$. The material reading is $Q_t=i q'_t$ and $Q_\eta=q_\eta$.
 
 ## The Photon as the Quantum of the Biquaternion Maxwell Field
 
@@ -254,7 +254,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{h_t\,e_t,i h'_{x}\,\vec e_x,i h'_{y}\,\vec e_y,i h'_{z}\,\vec e_z\}$ |
 | $\mathbb{B}_{H}$ | Real quaternion subspace |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$ | Isomorphism with $M_2(\mathbb{C})$ |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H=i\sqrt{\epsilon}\,\vec N$ | Field-strength biquaternion (vanishing scalar part) |
 | $\vec N=\vec E+ic\vec B$, $\vec B=\mu\vec H$ | Riemann–Silberstein vector; $\tilde{F}=i\sqrt{\epsilon}\,\vec N$ |

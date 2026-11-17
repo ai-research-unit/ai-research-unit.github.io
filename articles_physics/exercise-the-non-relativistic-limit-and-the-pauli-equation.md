@@ -15,9 +15,9 @@ Five problems are worked:
 **The operators, fixed once.** Every derivative in this exercise is the biquaternionic gradient
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$
@@ -25,7 +25,7 @@ $$
 and its norm is the d'Alembertian
 
 $$
-\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q .
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi .
 $$
 
 On the material sector, where $Q_t=i q'_t$, the gradient and its conjugate read
@@ -50,7 +50,7 @@ $$
 \sum_\eta\vec e_\eta\pi_\eta=-i\,\hbar\,D_{3}^{A},
 $$
 
-with $\pi_\eta=p_\eta-qA_\eta$ and $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial r_\eta-\frac{iqA_{\eta}}{\hbar})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco}}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
+with $\pi_\eta=p_\eta-qA_\eta$ and $D_3^A=\sum_\eta\vec e_\eta(\partial/\partial r_\eta-\frac{iqA_{\eta}}{\hbar})$ the pure part of the gauged gradient. The corpus names this family $\tilde\nabla_{\mathrm{gco},\Phi}$ in *The Covariant Derivative and the Gauge Connection in Biquaternionic Form*, where the potential is written $i\,a'_t\,e_t+\vec A$; the exercise keeps its own $\tilde A_{\Phi}=Ξ e_t-\vec A$ and writes the operator out rather than borrowing the name. A plane wave $\exp\!\bigl(i(k_{t}^{\prime}x_0-\vec k_\Phi\cdot\vec q)\bigr)$, with $x_0=r'_{t}$, replaces the gradient by the element
 
 $$
 -i\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi,
@@ -69,10 +69,10 @@ $$
 The massive case is not of that form, and the reason is a square. The square of the gradient is not scalar: the time unit commutes with the three spatial units instead of anticommuting with them, so the mixed derivatives add, and each spatial unit squares to $-e_t$, which puts the wrong sign on the Laplacian. Explicitly, on a general field,
 
 $$
-\tilde\nabla^2=\Box_\Phi-2\Delta_\Phi-2i\sum_\eta\vec e_\eta\frac{\partial^2}{\partial r'_t\,\partial r_\eta},
+\tilde\nabla_\Phi^2=\Box_\Phi-2\Delta_\Phi-2i\sum_\eta\vec e_\eta\frac{\partial^2}{\partial r'_t\,\partial r_\eta},
 $$
 
-so $\tilde\nabla^2\neq\Box$ and no scalar mass can be subtracted from the square. The massive equation is therefore a pair of first-order equations in two fields, the **chiral pair**, and it is stated below. No one-field first-order massive equation is written anywhere in this exercise.
+so $\tilde\nabla_\Phi^2\neq\Box_\Phi$ and no scalar mass can be subtracted from the square. The massive equation is therefore a pair of first-order equations in two fields, the **chiral pair**, and it is stated below. No one-field first-order massive equation is written anywhere in this exercise.
 
 **On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial/\partial r'_t\,\tilde{Ξ}_{\mathrm{odd}}\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, and it does not perform a systematic Foldy–Wouthuysen transformation. It also does not state the sector ($\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$) status of the intermediate operators it uses. Problems 3 and 4 supply those orders and that status. Where the parent is silent this is stated explicitly and not silently filled in.
 
@@ -286,7 +286,7 @@ $$
 
 and the spatial components give $\vec\pi=p-q\vec A$, that is the pure part of the gradient becomes $D_3^A$ with $\sum_\eta\vec e_\eta\pi_\eta=-i\,\hbar\,D_{3}^{A}$. The electrostatic energy is collected in $V=qΞ$. The sign of the coupling is tied to the metric and to the convention for $A_\mu$; the mostly-plus convention often writes the opposite sign. Within this article the statement above is used throughout.
 
-*Step 2: the commutator of the kinetic momenta.* With $p=-i\,\hbar\nabla$ and $\nabla=\sum_\eta\vec e_\eta\partial/\partial r_\eta$ the pure part of the gradient,
+*Step 2: the commutator of the kinetic momenta.* With $p=-i\,\hbar\nabla$ and $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\partial/\partial r_\eta$ the pure part of the gradient,
 
 $$
 [\pi_i,\pi_j]=-q\bigl([p_i,A_j]+[A_i,p_j]\bigr)
@@ -297,10 +297,10 @@ $$
 so that
 
 $$
-\vec\pi\times\vec\pi=i\,\hbar\,q\,\vec B,\qquad  \vec B=\nabla\times\vec A .
+\vec\pi\times\vec\pi=i\,\hbar\,q\,\vec B,\qquad  \vec B=\vec\nabla_\Phi\times\vec A .
 $$
 
-Equivalently, $p\times\vec A+\vec A\times p=-i\,\hbar\,\vec B$; the two terms are individually non-Hermitian but their sum is Hermitian. This is the parent's $\vec\pi\times\vec\pi=iq\vec B$, with $q$ the charge and the coupling $\frac{ϙ}{\hbar}$ carried in $\vec\pi$. The curl here is the curl of the corpus's pure gradient: for $\vec A=\sum_\eta A_\eta\vec e_\eta$ the product $D_3\vec A$ is $-\nabla\cdot\vec A$ in its scalar part and $\nabla\times\vec A$ in its pure part, with no reversed sign, so $B_\eta=\epsilon_{\eta ji}\partial/\partial r_jA_i$ is the Cartesian curl and no sign of this exercise had to be changed on that account.
+Equivalently, $p\times\vec A+\vec A\times p=-i\,\hbar\,\vec B$; the two terms are individually non-Hermitian but their sum is Hermitian. This is the parent's $\vec\pi\times\vec\pi=iq\vec B$, with $q$ the charge and the coupling $\frac{ϙ}{\hbar}$ carried in $\vec\pi$. The curl here is the curl of the corpus's pure gradient: for $\vec A=\sum_\eta A_\eta\vec e_\eta$ the product $D_3\vec A$ is $-\vec\nabla_\Phi\cdot\vec A$ in its scalar part and $\vec\nabla_\Phi\times\vec A$ in its pure part, with no reversed sign, so $B_\eta=\epsilon_{\eta ji}\partial/\partial r_jA_i$ is the Cartesian curl and no sign of this exercise had to be changed on that account.
 
 *Step 3: the square of the gradient's pure part.* The product identity of the algebra is the product of two pure elements,
 
@@ -373,34 +373,34 @@ A direct use of the algebra, with $[S_1,E]$ above and $S_1=-\frac{1}{2\,m\,c}\su
 $$
 -\tfrac12[S_1,[S_1,E]]
 =-\frac{\hbar\,q}{4\,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)
--\frac{q}{8\,k_m^{2}}\,\nabla\cdot\vec E .
+-\frac{q}{8\,k_m^{2}}\,\vec\nabla_\Phi\cdot\vec E .
 $$
 
-The first term comes from the antisymmetric part of $\vec e_j\vec e_\eta=-\delta_{j\eta}+\epsilon_{j\eta l}\vec e_l$; the second comes from the symmetric part. Since $\nabla\cdot\vec E=-\nabla^2V/q$, the second term is the Darwin term $+\hbar^{2}\nabla^2 V/(8m^2c^2)$. In the large part, $i\vec a$ acts as $\boldsymbol\sigma\cdot\vec a$, so the two terms read
+The first term comes from the antisymmetric part of $\vec e_j\vec e_\eta=-\delta_{j\eta}+\epsilon_{j\eta l}\vec e_l$; the second comes from the symmetric part. Since $\vec\nabla_\Phi\cdot\vec E=-\vec\nabla_\Phi^2V/q$, the second term is the Darwin term $+\hbar^{2}\vec\nabla_\Phi^2 V/(8m^2c^2)$. In the large part, $i\vec a$ acts as $\boldsymbol\sigma\cdot\vec a$, so the two terms read
 
 $$
 -\frac{\hbar\,q}{4\,m^{2}\,c^{2}}\,\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
--\frac{q}{8\,k_m^{2}}\,\nabla\cdot\vec E .
+-\frac{q}{8\,k_m^{2}}\,\vec\nabla_\Phi\cdot\vec E .
 $$
 
-*Step 2: the Darwin term.* Since $\vec E=-\nablaΞ$ and $V=qΞ$,
+*Step 2: the Darwin term.* Since $\vec E=-\vec\nabla_\PhiΞ$ and $V=qΞ$,
 
 $$
-\frac{1}{8\,k_m^{2}}\nabla^2V=-\frac{q}{8\,k_m^{2}}\nabla\cdot\vec E .
+\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2V=-\frac{q}{8\,k_m^{2}}\vec\nabla_\Phi\cdot\vec E .
 $$
 
-This is the Darwin term. Its Hermiticity is immediate: $\nabla\cdot\vec E$ is a real function of position.
+This is the Darwin term. Its Hermiticity is immediate: $\vec\nabla_\Phi\cdot\vec E$ is a real function of position.
 
-*Step 3: the spin–orbit term.* Since $\nabla V=q\nablaΞ=-q\vec E$,
+*Step 3: the spin–orbit term.* Since $\vec\nabla_\Phi V=q\nablaΞ=-q\vec E$,
 
 $$
 -\frac{\hbar\,q}{4\,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
-=\frac{\hbar}{4\,m^{2}\,c^{2}}\,\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)
+=\frac{\hbar}{4\,m^{2}\,c^{2}}\,\boldsymbol\sigma\cdot(\vec\nabla_\Phi V\times\vec\pi)
 =\frac{\hbar}{4\,m^{2}\,c^{2}}\,\frac1r\frac{dV}{dr}\,\boldsymbol\sigma\cdot\vec L
 \qquad(\text{central }V),
 $$
 
-where $\vec E\times\vec\pi$ has been written with $\vec E=-\nablaΞ$. For a central electrostatic field, whose vector potential may be neglected so that $\vec\pi\to p$, the last factor is the standard spin–orbit coupling with $\vec L=\vec r\times p$ and $\vec S=\frac{\hbar}{2}\boldsymbol\sigma$. The coefficient $1/(4m^2c^2)$ already contains the Thomas factor of $\tfrac12$: a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value, and the factor of $\tfrac12$ is the Thomas precession correction. With $\vec S=\frac{\hbar}{2}\boldsymbol\sigma$, the term reads $\dfrac{1}{2m^2c^2}\dfrac1r\dfrac{dV}{dr}\vec L\cdot\vec S$, the standard spin–orbit coupling.
+where $\vec E\times\vec\pi$ has been written with $\vec E=-\vec\nabla_\PhiΞ$. For a central electrostatic field, whose vector potential may be neglected so that $\vec\pi\to p$, the last factor is the standard spin–orbit coupling with $\vec L=\vec r\times p$ and $\vec S=\frac{\hbar}{2}\boldsymbol\sigma$. The coefficient $1/(4m^2c^2)$ already contains the Thomas factor of $\tfrac12$: a naive Lorentz transformation to the instantaneous rest frame of the electron would give twice this value, and the factor of $\tfrac12$ is the Thomas precession correction. With $\vec S=\frac{\hbar}{2}\boldsymbol\sigma$, the term reads $\dfrac{1}{2m^2c^2}\dfrac1r\dfrac{dV}{dr}\vec L\cdot\vec S$, the standard spin–orbit coupling.
 
 *Step 4: the relativistic kinetic correction.* The free large-part energy is the expansion of $\sqrt{m^2c^4+O^2}$, and the next term is fixed by the same $O^2$:
 
@@ -432,7 +432,7 @@ $$
 \boxed{\;
 H=\frac{\vec \pi^{2}}{2\,m}+qΞ-\frac{\hbar\,q}{2\,m}\boldsymbol\sigma\cdot\vec B
 -\frac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}
-+\frac{1}{8\,k_m^{2}}\nabla^2 V
++\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2 V
 -\frac{\hbar\,q}{4\,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
 \;}
 $$
@@ -469,14 +469,14 @@ with the exact Dirac shift $\delta E_{\rm exact}=-\dfrac{m(\mathfrak{Z}\alpha)^4
 - $qΞ$: multiplication by the real function $qΞ$, Hermitian;
 - $-\frac{\hbar\,q}{2\,m}\boldsymbol\sigma\cdot\vec B$: $\sigma_\eta$ and the real field $B_\eta$ are Hermitian;
 - $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$: minus a real multiple of the square of the Hermitian $(\boldsymbol\sigma\cdot\vec\pi)^2$;
-- $\frac{1}{8\,k_m^{2}}\nabla^2 V$: multiplication by a real function;
+- $\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2 V$: multiplication by a real function;
 - $-\frac{\hbar\,q}{4\,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$: this is the one term whose Hermiticity is not automatic. Using $[\pi_i,E_j]=-i\,\hbar\partial/\partial r_i\,E_j$,
 
 $$
-(\vec E\times\vec\pi)_i^\dagger=(\vec E\times\vec\pi)_i+i\,\hbar\,(\nabla\times\vec E)_i ,
+(\vec E\times\vec\pi)_i^\dagger=(\vec E\times\vec\pi)_i+i\,\hbar\,(\vec\nabla_\Phi\times\vec E)_i ,
 $$
 
-so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\nablaΞ$ for an electrostatic field, $\nabla\times\vec E=-\nabla\times\nablaΞ=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\nabla V\times\vec\pi)$ makes this manifest, because $\nabla V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part and $\nabla\times\vec E=-\partial/\partial r'_t\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.
+so the term is Hermitian if and only if $\vec\nabla_\Phi\times\vec E=0$, its failure of Hermiticity being proportional to the curl. Since $\vec E=-\vec\nabla_\PhiΞ$ for an electrostatic field, $\vec\nabla_\Phi\times\vec E=-\vec\nabla_\Phi\times\nablaΞ=0$ identically, and the term is Hermitian. Writing it instead as $\boldsymbol\sigma\cdot(\vec\nabla_\Phi V\times\vec\pi)$ makes this manifest, because $\vec\nabla_\Phi V$ is a gradient. For a general time-dependent field, where $\vec E$ has a solenoidal part and $\vec\nabla_\Phi\times\vec E=-\partial/\partial r'_t\,\vec B$, the antisymmetric part does not vanish and the non-relativistic reduction requires the symmetrized ordering; this is the only place in the reduction where the result is convention- and ordering-sensitive beyond the metric conventions already noted.
 
 *Step 2: the $\mathbb{B}_{\Psi}$ representatives.* Under the isomorphism, a Hermitian $2\times2$ matrix $h_t\,I_2+\vec h_\Psi\cdot\boldsymbol\sigma$ corresponds to the Hermitian biquaternion $h_t\,e_t+i\vec h_\Psi\in\mathbb{B}_{\Psi}$. Applying it term by term, with $\vec B=\sum_\eta B_\eta\vec e_\eta$ and $(\vec E\times\vec\pi)=(\vec E\times\vec\pi)_k\vec e_\eta$,
 
@@ -486,7 +486,7 @@ so the term is Hermitian if and only if $\nabla\times\vec E=0$, its failure of H
 | $qΞ$ | $(qΞ)\,e_t$ | $\mathbb{B}_{\Psi}$ |
 | $-\frac{\hbar\,q}{2\,m}\boldsymbol\sigma\cdot\vec B$ | $-\frac{\hbar\,q}{2\,m}\,i\vec B$ | $\mathbb{B}_{\Psi}$ |
 | $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $-\dfrac{1}{8m^3c^2}\bigl(\vec\pi^2-i\,\hbar\,q\,\vec B\bigr)^2$ | $\mathbb{B}_{\Psi}$ |
-| $\frac{1}{8\,k_m^{2}}\nabla^2 V$ | $\frac{1}{8\,k_m^{2}}(\nabla^2V)\,e_t$ | $\mathbb{B}_{\Psi}$ |
+| $\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2 V$ | $\frac{1}{8\,k_m^{2}}(\vec\nabla_\Phi^2V)\,e_t$ | $\mathbb{B}_{\Psi}$ |
 | $-\frac{\hbar\,q}{4\,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $-\frac{\hbar\,q}{4\,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)$ | $\mathbb{B}_{\Psi}$ |
 
 Every term of the reduced, two-component Hamiltonian is Hermitian, hence every term lands in $\mathbb{B}_{\Psi}$. This is the precise content of the parent's remark that the spin term is an observable of the informational sector; the remark applies term by term. Each representative is a left multiplication by an element, which is what makes the identification possible at all.
@@ -525,7 +525,7 @@ No other right multiplication and no other differential operator occurs in the r
 | $\vec\pi^2 c/(2\,m\,c)$ | $1/m$ | $(\mathrm{kg\,m\,s^{-1}})^2$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $qΞ$ | $\mathrm C$ | $\mathrm{kg\,m^2\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\frac{\hbar\,q}{2\,m}\boldsymbol\sigma\cdot\vec B$ | $\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$ | $\mathrm{kg\,s^{-2}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
-| $-\frac{q}{8\,k_m^{2}}\nabla\cdot\vec E$ | $\mathrm C\,\mathrm{kg^2m^4s^{-2}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $-\frac{q}{8\,k_m^{2}}\vec\nabla_\Phi\cdot\vec E$ | $\mathrm C\,\mathrm{kg^2m^4s^{-2}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\frac{\hbar\,q}{4\,m^{2}\,c^{2}}\boldsymbol\sigma\cdot(\vec E\times\vec\pi)$ | $\mathrm C\,\mathrm{kg\,m^2s^{-1}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg^2m^2s^{-4}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\dfrac{(\boldsymbol\sigma\cdot\vec\pi)^4}{8m^3c^2}$ | $\mathrm{kg^{-3}m^{-2}s^{2}}$ | $\mathrm{kg^4m^4s^{-4}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 
@@ -541,7 +541,7 @@ $$
 S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_\eta\,(\cdot)\,\vec e_z=\frac{i}{2\,k_m}\bigl(D_3^A\cdot\bigr)\vec e_z ,
 $$
 
-produces the Pauli Hamiltonian $i\,\hbar\,c\partial\tilde{Ξ}_{\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/k_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla_\Phi\to\tilde\nabla_\Phi-\frac{i\,q\,\tilde{A}_{\Phi}}{\hbar}$, gives $[\pi_i,\pi_j]=i\,\hbar\,q\,\epsilon_{ij\eta}\,B_{\eta}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\hbar\,q\,\boldsymbol{\sigma}\,\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^{2}\nabla^2 V/(8m^2c^2)=-(\frac{q}{8\,k_m^{2}})\nabla\cdot\vec E$ and the spin–orbit coupling $-(\frac{\hbar\,q}{4\,m^{2}\,c^{2}})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{\hbar}{4\,m^{2}\,c^{2}})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
+produces the Pauli Hamiltonian $i\,\hbar\,c\partial\tilde{Ξ}_{\mathrm{evn}}/\partial r'_t=\bigl[\vec\pi^2 c/(2\,m\,c)+qΞ-(qc/k_m/2)\boldsymbol\sigma\cdot\vec B\bigr]\tilde{Ξ}_{\mathrm{evn}}$, reproducing the parent article. The minimal substitution in the gradient, $\tilde\nabla_\Phi\to\tilde\nabla_\Phi-\frac{i\,q\,\tilde{A}_{\Phi}}{\hbar}$, gives $[\pi_i,\pi_j]=i\,\hbar\,q\,\epsilon_{ij\eta}\,B_{\eta}$ and $(\boldsymbol\sigma\cdot\vec\pi)^2=\vec\pi^2-\hbar\,q\,\boldsymbol{\sigma}\,\vec B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\vec\mu=(q/m)\vec S$, hence $\mu_B=ec\dfrac{1}{2\,k_{m_e}}$ for the electron. At the next order in $1/c$, the second-order term $-\tfrac12[S_1,[S_1,E]]$ of the first transformation gives the Darwin term $+\hbar^{2}\vec\nabla_\Phi^2 V/(8m^2c^2)=-(\frac{q}{8\,k_m^{2}})\vec\nabla_\Phi\cdot\vec E$ and the spin–orbit coupling $-(\frac{\hbar\,q}{4\,m^{2}\,c^{2}})\boldsymbol\sigma\cdot(\vec E\times\vec\pi)=(\frac{\hbar}{4\,m^{2}\,c^{2}})r^{-1}(dV/dr)\boldsymbol\sigma\cdot\vec L$, while the expansion of the free large-part energy gives the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\vec\pi)^4/(8m^3c^2)$. The second transformation removes the residual odd term $O_1$ and adds no even term at this order. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
 Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb{B}_{\Psi}$. The objects that do not are the two-sided operators of the reduction — the mass term $\beta mc^2$ and the odd operator $O$, which end in right multiplications by $i\vec e_x$ and by $\vec e_y$ and so are not left multiplications by an element — together with the anti-Hermitian generator $iS_1$ and the rest-energy phase, which is not Hermitian and belongs to neither sector. The real structure $\flat$ — whose opposite-sign action on the sectors a Majorana-type coupling would carry — is not the parent's mass term, which is the linear coupling of the two chiralities. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ grading by ${}^{*}$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
 
@@ -563,7 +563,7 @@ Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathb
 | $O=c\sum_\eta\vec e_\eta\pi_\eta(\cdot)\vec e_y=-i\,\hbar\,c\,D_{3}^{A}\,\vec e_{y}$ | The odd operator; $O^2=c^2(\vec\pi^2-i\,\hbar\,q\,\vec B)$ |
 | $\omega=-\vec e_z$, $\omega^2=-e_t$ | The pseudoscalar of the frame |
 | $\vec\pi=p-q\vec A$ | Kinetic momentum |
-| $\vec B=\nabla\times\vec A$, $\vec E$ | Magnetic, electric fields |
+| $\vec B=\vec\nabla_\Phi\times\vec A$, $\vec E$ | Magnetic, electric fields |
 | $V=qΞ$ | Potential energy |
 | $H=\beta mc^2+O+E$, $E=qΞ$ | Split Hamiltonian; odd and even parts |
 | $S_1=-\frac{i}{2\,m\,c^{2}}\beta O=-\frac{1}{2\,m\,c}\sum_\eta\vec e_\eta\pi_\eta(\cdot)\vec e_z$ | Foldy–Wouthuysen generator |

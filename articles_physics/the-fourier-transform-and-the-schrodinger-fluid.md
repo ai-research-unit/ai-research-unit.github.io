@@ -14,17 +14,17 @@
 
 ## Conventions
 
-The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\nabla S/m$, and the quantum potential is
+The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\vec\nabla_\Phi S/m$, and the quantum potential is
 
 $$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta \varrho}{\varrho}
-=-\frac{\hbar^{2}}{4m}\Bigl(\Delta\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi \varrho}{\varrho}
+=-\frac{\hbar^{2}}{4m}\Bigl(\Delta_\Phi\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$
 
 The transform is the transform of [The Derivative, the Field and the Transform](the-derivative-the-field-and-the-transform.html), with the symbol rule of [The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables](the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html):
 
 $$
-\nabla\longmapsto i\vec k,
+\vec\nabla_\Phi\longmapsto i\vec k,
 \qquad
 \frac{\partial}{\partial t'}\longmapsto-i\omega,
 \qquad
@@ -57,7 +57,7 @@ Q=0,
 \sigma^{Q}_{ij}=0 ,
 $$
 
-the last because $\nabla\ln\rho_{\mathrm{num}}$ vanishes identically when the scale is constant. **The density is blind to the wave number and the velocity is read from the wave number alone**; neither statement needs the other, and no cancellation occurs in either.
+the last because $\vec\nabla_\Phi\ln\rho_{\mathrm{num}}$ vanishes identically when the scale is constant. **The density is blind to the wave number and the velocity is read from the wave number alone**; neither statement needs the other, and no cancellation occurs in either.
 
 **The four checks are one check.** Each of the four quantities above is a functional of the scale and of its derivatives. A constant scale has vanishing derivatives of every order, so every such functional vanishes. The quantum potential, the quantum stress and the quantum force are therefore zero at a mode for one reason and not three.
 
@@ -96,7 +96,7 @@ and the failure is not a small correction. **The check is direct.** On a grid of
 **The size of what the interference adds is a number, and it is quadratic in the separation.** Take two modes with $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$, so that $\eta$ is the second amplitude relative to the first and $\Delta k$ their separation. Then, the mean being over a period,
 
 $$
-\Bigl\langle\frac{\nabla^{2}\varrho}{\varrho}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
+\Bigl\langle\frac{\vec\nabla_\Phi^{2}\varrho}{\varrho}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
 $$
 
 **The two powers are the content of the formula**: the correction is second order in the amplitude that was added and second order in the label separation, which is what a correlation supported at a difference of labels has to be. Checked with a one-hundred-node quadrature: $\eta=0.1$ with $\Delta k=2$ gave $0.02020202$ against the predicted $0.02000000$, and $\eta=0.01$ with $\Delta k=1$ gave $0.00005000$ against $0.00005000$. **The closed form is $\tfrac12(\Delta k)^{2}\eta^{2}/(1-\eta^{2})$**, of which the displayed line is the first term; at $\eta=0.2$, $\Delta k=1$ it gives $0.020833333$ and the quadrature agrees to nine digits.
@@ -132,7 +132,7 @@ around a loop that links a nodal line of winding $n$. A mode has no such loop, s
 **The vorticity does not follow the same rule, and the difference is worth stating.** The velocity is $\hbar\nabla\theta/m$, so
 
 $$
-\nabla\times\vec v=\frac{\hbar}{m}\nabla\times\nabla\theta=0
+\vec\nabla_\Phi\times\vec v=\frac{\hbar}{m}\vec\nabla_\Phi\times\nabla\theta=0
 $$
 
 wherever the phase is twice differentiable — at a mode and at every superposition alike. **The vorticity vanishes identically at every order of superposition**, and what a superposition supplies is not a vorticity but a place where the phase is not a function, that is a node. The fluid is irrotational everywhere the flow is defined, and the rotation it does carry is a circulation around a hole in its domain. That is the precise sense in which this rung's rotation is topological and not local, and it contrasts with the spinor rung, where the vorticity is a local quantity read off a frame.
@@ -188,14 +188,14 @@ The momentum of a mode lives in the phase bracket and the quantum data live in t
 | $a$ | The complex amplitude of a mode |
 | $\vec k=\vec p/\hbar$, $\omega=E/\hbar$ | The label of a mode |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | The density; constant at a mode |
-| $\vec v=\nabla S/m=\hbar\vec k/m$ | The velocity; constant at a mode |
-| $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
+| $\vec v=\vec\nabla_\Phi S/m=\hbar\vec k/m$ | The velocity; constant at a mode |
+| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | The quantum potential; zero at a mode |
 | $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | The quantum stress; zero at a mode |
 | $2\sqrt{\rho_1\rho_2}\cos(\theta_1-\theta_2)$ | The interference term of a superposition |
 | $\eta$, $\Delta k$ | The second amplitude relative to the first, and the separation of the two labels; the mean curvature they add is $\tfrac12\eta^{2}(\Delta k)^{2}$ |
 | $\varepsilon=\pm1$ | The branch; the datum the transform does not read |
 | $n$ | The winding of a loop around a nodal line |
-| $\nabla\mapsto i\vec k$, $\partial_{t'}\mapsto-i\omega$ | The symbol rule |
+| $\vec\nabla_\Phi\mapsto i\vec k$, $\partial_{t'}\mapsto-i\omega$ | The symbol rule |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

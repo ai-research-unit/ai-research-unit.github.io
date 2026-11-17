@@ -2,27 +2,27 @@
 
 ## Introduction
 
-The companion article *The Biquaternion D'Alembertian and Its Green's Functions* owns the shifted gradient $\tilde{\nabla}_\kappa = \tilde\nabla_\Phi + \kappa$, the **generalized Maxwell–Dirac equation** $(\tilde\nabla_\Phi + \kappa)B = F$, the scalar operator the source calls the **Klein–Gordon–Fock–Schrödinger equation** (KGFSh), its symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$, and the real-$\kappa$ dichotomy that selects the case with non-trivial homogeneous solutions. That section closed with an explicit gap: the source's own fundamental solution — the displayed equation the corpus's record calls "the source's explicit Eq. (36)" — was **not stated**, because the degraded text of the paper then at hand did not allow its signs to be checked, and the corpus does not state an equation it cannot verify. The article also deferred the source's first-order integral representation of the solution.
+The companion article *The Biquaternion D'Alembertian and Its Green's Functions* owns the shifted gradient $\tilde\nabla_{\kappa,\Phi} = \tilde\nabla_\Phi + \kappa$, the **generalized Maxwell–Dirac equation** $(\tilde\nabla_\Phi + \kappa)B = F$, the scalar operator the source calls the **Klein–Gordon–Fock–Schrödinger equation** (KGFSh), its symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$, and the real-$\kappa$ dichotomy that selects the case with non-trivial homogeneous solutions. That section closed with an explicit gap: the source's own fundamental solution — the displayed equation the corpus's record calls "the source's explicit Eq. (36)" — was **not stated**, because the degraded text of the paper then at hand did not allow its signs to be checked, and the corpus does not state an equation it cannot verify. The article also deferred the source's first-order integral representation of the solution.
 
 This article closes that gap. It takes the same programme's later journal paper on the **biquaternion representation of the Dirac equations and bispinor fields**, whose text layer is usable, and it states and verifies the solution theory the earlier record left open: the fundamental solution of the KGFSh operator and its support, the general solution of the inhomogeneous equation, and the bispinor fields that the homogeneous equation carries. The operator itself, its square, its symbol and the convention crossing $\kappa = -im$ are **not** re-derived here; they belong to the d'Alembertian article and are used as given.
 
 Four boundaries are respected. (i) The corpus's own Dirac equation, its square, its reduction to Klein–Gordon and its spinor module belong to *The Dirac Equation in Biquaternionic Form*, *Klein–Gordon from the Dirac Square in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; this article adds the external programme's solution theory and says where it differs. (ii) The corpus's Klein–Gordon propagator and the corpus's massive scalar kernel are the subject of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*; this article uses that kernel only as the contrast that makes the programme's result visible. (iii) The identification of $B$ with a Maxwell field is a claim about the interpretation of $B$, not about the operator, and is not reopened. (iv) Nothing here is a derivation of quantum physics or a comparison with measured particle data; the equation is chosen by the programme, and the corpus records what the chosen equation implies.
 
-Two conventions are load-bearing. The source's **two bigradients** are $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, with $\nabla$ the pure-vector gradient acting by left quaternion multiplication and $\tau = r'_{t}$. They are the corpus's gradient pair times $i$,
+Two conventions are load-bearing. The source's **two bigradients** are $\vec\nabla_{\pm,\Phi} = \partial/\partial\tau \pm i\nabla$, with $\vec\nabla_\Phi$ the pure-vector gradient acting by left quaternion multiplication and $\tau = r'_{t}$. They are the corpus's gradient pair times $i$,
 
 $$
-\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi, \qquad \vec\nabla^{-}_\Phi = i(\tilde\nabla_\Phi)^{\natural},
+\vec\nabla_{+,\Phi} = i\tilde\nabla_\Phi, \qquad \vec\nabla_{-,\Phi} = i(\tilde\nabla_\Phi)^{\natural},
 \qquad \partial/\partial\tau = -i\,\partial/\partial r'_t ,
 $$
 
 which was checked exactly. The source's **wave operator** is therefore minus the corpus's d'Alembertian,
 
 $$
-\vec\nabla^{-}_\Phi\vec\nabla^{+}_\Phi = \vec\nabla^{+}_\Phi\vec\nabla^{-}_\Phi = \Box_{\text{s}} := \partial^2/\partial\tau^2 - \Delta_\Phi = -\,\Box_\Phi ,
+\vec\nabla_{-,\Phi}\vec\nabla_{+,\Phi} = \vec\nabla_{+,\Phi}\vec\nabla_{-,\Phi} = \Box_{\text{s},\Phi} := \partial^2/\partial\tau^2 - \Delta_\Phi = -\,\Box_\Phi ,
 \qquad \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 ,
 $$
 
-and the source's operator differs in sign from the corpus's. Consequently the source's mass $m$ in $(\vec\nabla^{\pm}_\Phi + m)B = F$ is related to the corpus's central shift by $\kappa = -im$, and the case the source studies — an **imaginary** $m = i\rho$ — is the corpus's **real** $\kappa = \rho$, the case in which the homogeneous equation has non-trivial solutions. Every identification below is stated on the source's side and translated once; the factors of $i$ are not left to the reader.
+and the source's operator differs in sign from the corpus's. Consequently the source's mass $m$ in $(\vec\nabla_{\pm,\Phi} + m)B = F$ is related to the corpus's central shift by $\kappa = -im$, and the case the source studies — an **imaginary** $m = i\rho$ — is the corpus's **real** $\kappa = \rho$, the case in which the homogeneous equation has non-trivial solutions. Every identification below is stated on the source's side and translated once; the factors of $i$ are not left to the reader.
 
 ## The Matrix Form and the Matrix of the Gradient
 
@@ -41,29 +41,29 @@ Three facts follow, and each is worth stating because the source's wording invit
 
 - **The three spacelike matrices close on $\mathrm{Cl}_{3,0}$, not on $\mathrm{Cl}_{1,3}$.** Left multiplications by $ie_j$ and $i\vec e_\eta$, $j\neq\eta$, anticommute, $\{D_j,D_\eta\} = 0$, exactly, since $e_j\vec e_\eta = -\vec e_\eta e_j$. So the three of them are a Clifford set with all positive squares.
 - **The fourth is not part of that set.** $D^0 = I$ commutes with everything, so $\{D_0,D_j\} = 2D_j \neq 0$: the source's index identity is a statement about each matrix with itself, not an anticommutation over four indices. The corpus's own Dirac dictionary supplies a genuine Clifford set through the matrix image $Ξ$; the two objects are different and must not be conflated.
-- **The "matrix Dirac operator" is the regular representation of the gradient.** Since $D = \partial/\partial\tau I + \sum_j D_j\partial/\partial R_j$ is the matrix of $\partial/\partial\tau + i\nabla = \vec\nabla^{+}_\Phi$, the matrix form of the source's first-order equation is the matrix form of left multiplication by a biquaternion — no more and no less. The corpus's Dirac dictionary says the same thing from the other side: $\mathbb{B} = \mathrm{End}(S)$, and every complex-linear operator on the spinor module is some biquaternion.
+- **The "matrix Dirac operator" is the regular representation of the gradient.** Since $D = \partial/\partial\tau I + \sum_j D_j\partial/\partial R_j$ is the matrix of $\partial/\partial\tau + i\nabla = \vec\nabla_{+,\Phi}$, the matrix form of the source's first-order equation is the matrix form of left multiplication by a biquaternion — no more and no less. The corpus's Dirac dictionary says the same thing from the other side: $\mathbb{B} = \mathrm{End}(S)$, and every complex-linear operator on the spinor module is some biquaternion.
 
 ## The Square and the Two Senses of "the Square of the Dirac Operator"
 
 With the two bigradients fixed, the composition lemma of the source is immediate and was verified on a test field at the finite-difference floor,
 
 $$
-\vec\nabla^{-}_\Phi\vec\nabla^{+}_\Phi = \vec\nabla^{+}_\Phi\vec\nabla^{-}_\Phi = \Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi ,
+\vec\nabla_{-,\Phi}\vec\nabla_{+,\Phi} = \vec\nabla_{+,\Phi}\vec\nabla_{-,\Phi} = \Box_{\text{s},\Phi} = \partial^2/\partial\tau^2 - \Delta_\Phi ,
 $$
 
 and the square of the mass-shifted operator is **not** the d'Alembertian but a shifted, first-order-carrying operator,
 
 $$
-\bigl(\vec\nabla^{-}_\Phi + m\bigr)\bigl(\vec\nabla^{+}_\Phi + m\bigr)
-= \Box_{\text{s}} + m^2 + 2m\,\partial/\partial\tau
+\bigl(\vec\nabla_{-,\Phi} + m\bigr)\bigl(\vec\nabla_{+,\Phi} + m\bigr)
+= \Box_{\text{s},\Phi} + m^2 + 2m\,\partial/\partial\tau
 = \bigl(\partial/\partial\tau + m\bigr)^2 - \Delta_\Phi ,
 $$
 
 also verified, and in the imaginary case $m = i\rho$,
 
 $$
-\bigl(\vec\nabla^{-}_\Phi + i\rho\bigr)\bigl(\vec\nabla^{+}_\Phi + i\rho\bigr)
-= \Box_{\text{s}} - \rho^2 + 2i\rho\,\partial/\partial\tau .
+\bigl(\vec\nabla_{-,\Phi} + i\rho\bigr)\bigl(\vec\nabla_{+,\Phi} + i\rho\bigr)
+= \Box_{\text{s},\Phi} - \rho^2 + 2i\rho\,\partial/\partial\tau .
 $$
 
 This is the KGFSh operator the d'Alembertian article owns, and it is where the programme and the corpus part company in a way worth naming. The corpus's Dirac pair is chirality off-diagonal,
@@ -75,22 +75,22 @@ $$
 \bigl(\Box_\Phi - k_m^{2}\bigr)\tilde{Ξ}_{R,L} = 0 ,
 $$
 
-and it squares to the Klein–Gordon operator **with no first-order term**, because the mass enters once on each side; here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The programme carries the *same* mass twice on the same side, $(\vec\nabla^{\pm}_\Phi + m)(\vec\nabla^{\mp}_\Phi + m)$, and the cross term $2m\partial/\partial\tau$ it produces survives. Both computations are correct; they are squares of different operators. The corpus's result — the second-order equation implied by the biquaternionic Dirac equation is Klein–Gordon — is therefore not contradicted by the programme, and the programme's operator is not the corpus's mass term: the corpus's mass is the additive central $\Box - k_m^{2}$ with $k_m=mc/\hbar$ real, while $2\kappa\partial/\partial R_t$ is first order and cannot be written as $\Box - k_m^{2}$. The d'Alembertian article states this separation; the present article keeps it. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+and it squares to the Klein–Gordon operator **with no first-order term**, because the mass enters once on each side; here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length. The programme carries the *same* mass twice on the same side, $(\vec\nabla_{\pm,\Phi} + m)(\vec\nabla_{\mp,\Phi} + m)$, and the cross term $2m\partial/\partial\tau$ it produces survives. Both computations are correct; they are squares of different operators. The corpus's result — the second-order equation implied by the biquaternionic Dirac equation is Klein–Gordon — is therefore not contradicted by the programme, and the programme's operator is not the corpus's mass term: the corpus's mass is the additive central $\Box_\Phi - k_m^{2}$ with $k_m=mc/\hbar$ real, while $2\kappa\partial/\partial R_t$ is first order and cannot be written as $\Box_\Phi - k_m^{2}$. The d'Alembertian article states this separation; the present article keeps it. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 One identity is the engine of everything that follows. Because the shifted operator is a conjugation of the wave operator,
 
 $$
 \boxed{\;
-\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau
-= \exp(-m\tau)\,\Box_{\text{s}}\,\exp(+m\tau)\;},
+\Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau
+= \exp(-m\tau)\,\Box_{\text{s},\Phi}\,\exp(+m\tau)\;},
 $$
 
 verified on a test field, every solution of the programme's homogeneous scalar equation is an exponentially weighted wave,
 
 $$
-\Bigl(\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau\,\Bigr)u = 0
+\Bigl(\Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau\,\Bigr)u = 0
 \qquad\Longleftrightarrow\qquad
-u = \exp(-m\tau)v , \quad \Box_{\text{s}}v = 0 .
+u = \exp(-m\tau)v , \quad \Box_{\text{s},\Phi}v = 0 .
 $$
 
 For **real** $m$ the weight is a genuine exponential in $\tau$; for the corpus's real $\kappa = \rho$, that is for the source's imaginary $m = i\rho$, it is a phase $\exp(-i\theta_{\mathrm{rpt}})$, with the kernel angle $\theta_{\mathrm{rpt}}=\rho\tau$ real because the kernel parameter and the time are real, and the operator is the one whose symbol the d'Alembertian article evaluated. The same identity applied to the Green's function is the sharp-support statement of the next section.
@@ -130,16 +130,16 @@ which is $\exp(-m\tau)$ times the massless retarded kernel $G_{\mathrm{ret}} = \
 
 ### The sharp kernel, and the contrast that makes it interesting
 
-The corpus's massive scalar operator behaves differently, and the difference is the one substantive analytic gain this paper offers. For $\Box - k_m^{2}$ the retarded and advanced kernels "acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions" — the d'Alembertian article's own words, and the Klein–Gordon propagator article works the tail out. For the KGFSh operator the opposite happens. Because
+The corpus's massive scalar operator behaves differently, and the difference is the one substantive analytic gain this paper offers. For $\Box_\Phi - k_m^{2}$ the retarded and advanced kernels "acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions" — the d'Alembertian article's own words, and the Klein–Gordon propagator article works the tail out. For the KGFSh operator the opposite happens. Because
 
 $$
-\Bigl(\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau\,\Bigr)G
-= \exp(-m\tau)\Box_{\text{s}}\Bigl(\exp(m\tau)G\Bigr) ,
+\Bigl(\Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau\,\Bigr)G
+= \exp(-m\tau)\Box_{\text{s},\Phi}\Bigl(\exp(m\tau)G\Bigr) ,
 $$
 
 a kernel is a solution for the shifted operator exactly when $\exp(m\tau)G$ is a solution for the wave operator, so the shifted kernel is $\tilde{Ξ}_{m} = \exp(-m\tau)G_{\mathrm{ret}}$ and its support is **exactly the cone**, with a $\delta$ rather than a Bessel profile on it. In the language of the classical theory this is Huygens' principle: the solution at a point depends on the data on the cone alone, not on the interior. The massless wave operator has it in $3+1$ dimensions, the Klein–Gordon operator does not, and the programme's first-order term restores it.
 
-The source draws the right conclusion from this — that the additional term "significantly simplifies" the fundamental solution compared with the Klein–Gordon one — and the corpus can now state the simplification exactly, together with its price. The price is that the operator is no longer self-adjoint: the adjoint of $\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau$ carries $-2m\partial/\partial\tau$, and the weight $\exp(-m\tau)$ is a damping for real $m$ and a rotation for imaginary $m$. Huygens and self-adjointness are not the same property, and the programme buys the first with the second.
+The source draws the right conclusion from this — that the additional term "significantly simplifies" the fundamental solution compared with the Klein–Gordon one — and the corpus can now state the simplification exactly, together with its price. The price is that the operator is no longer self-adjoint: the adjoint of $\Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau$ carries $-2m\partial/\partial\tau$, and the weight $\exp(-m\tau)$ is a damping for real $m$ and a rotation for imaginary $m$. Huygens and self-adjointness are not the same property, and the programme buys the first with the second.
 
 ## The Homogeneous Equation and the Class Question
 
@@ -148,7 +148,7 @@ The source's Theorem 5 states that for $\operatorname{Re}m \neq 0$ the homogeneo
 $$
 u(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \exp(-m\tau)\,\exp(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) \mp |\vec k_\Phi|\tau)) ,
 \qquad
-\Bigl(\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau\,\Bigr)u = 0 \quad \text{identically.}
+\Bigl(\Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau\,\Bigr)u = 0 \quad \text{identically.}
 $$
 
 This was checked: for real $m = 0.9$ the residual of $u$ sits at the finite-difference floor while a control with the wrong frequency gives $1.5$, a ratio of $2\times10^{6}$. Such a $u$ grows like $\exp(m|\tau|)$ as $\tau \to -\infty$, so it is not tempered and has no Fourier transform; the source's proof therefore proves the tempered statement, not the general one. The corpus states it that way: **for $\operatorname{Re}m \neq 0$ a tempered solution of the homogeneous KGFSh equation vanishes**, and the general solution is $\exp(-m\tau)$ times an arbitrary wave. The distinction is not academic — it is the same distinction that makes the Cauchy problem for the operator non-trivial, and the d'Alembertian article's own Kirchhoff paragraph already relies on it.
@@ -169,18 +169,18 @@ a superposition of the plane waves of the next section weighted by a free profil
 The solution of the programme's first-order equation is assembled from the kernel in one line. For
 
 $$
-\bigl(\vec\nabla^{\pm}_\Phi + m\bigr)B = F ,
+\bigl(\vec\nabla_{\pm,\Phi} + m\bigr)B = F ,
 $$
 
 the source's Theorem 2 gives
 
 $$
-B = B_0 + \bigl(\vec\nabla^{\mp}_\Phi + m\bigr)\bigl(F * \tilde{Ξ}_{m}\bigr) ,
+B = B_0 + \bigl(\vec\nabla_{\mp,\Phi} + m\bigr)\bigl(F * \tilde{Ξ}_{m}\bigr) ,
 $$
 
-with $B_0$ any solution of the **first-order** homogeneous equation $(\vec\nabla^{\pm}_\Phi + m)B_0 = 0$ — not of the KGFSh equation whose kernel is $\tilde{Ξ}_{m}$; the two are different equations, and the class question of the preceding section turns on the difference — and $*$ the source's biquaternionic convolution, which pairs the algebra product with the functional convolution of the four coefficient distributions. The verification is algebraic and was carried out: applying the operator to the second term collapses the composition to $(\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau)(F * \tilde{Ξ}_{m}) = F * \bigl(\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau\,\bigr)\tilde{Ξ}_{m} = F * \delta(\tau)\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = F$, the step that the source writes out and that the corpus reproduces because it is the whole content of the theorem. Theorems 3, 6 and 7 of the source are the same statement in the imaginary and harmonic cases; the corpus records them as one theorem re-expressed rather than as four independent results.
+with $B_0$ any solution of the **first-order** homogeneous equation $(\vec\nabla_{\pm,\Phi} + m)B_0 = 0$ — not of the KGFSh equation whose kernel is $\tilde{Ξ}_{m}$; the two are different equations, and the class question of the preceding section turns on the difference — and $*$ the source's biquaternionic convolution, which pairs the algebra product with the functional convolution of the four coefficient distributions. The verification is algebraic and was carried out: applying the operator to the second term collapses the composition to $(\Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau)(F * \tilde{Ξ}_{m}) = F * \bigl(\Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau\,\bigr)\tilde{Ξ}_{m} = F * \delta(\tau)\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = F$, the step that the source writes out and that the corpus reproduces because it is the whole content of the theorem. Theorems 3, 6 and 7 of the source are the same statement in the imaginary and harmonic cases; the corpus records them as one theorem re-expressed rather than as four independent results.
 
-This is the piece the d'Alembertian article marked as the source's own. The corpus's own formulation of the same content is the Kirchhoff representation it states in second-order form; the source's is first order and carries the extra $\vec\nabla^{\mp}_\Phi + m$ applied to a scalar potential. The corpus can now record both, because the kernel they both use is the same $\tilde{Ξ}_{m}$ and it is verified.
+This is the piece the d'Alembertian article marked as the source's own. The corpus's own formulation of the same content is the Kirchhoff representation it states in second-order form; the source's is first order and carries the extra $\vec\nabla_{\mp,\Phi} + m$ applied to a scalar potential. The corpus can now record both, because the kernel they both use is the same $\tilde{Ξ}_{m}$ and it is verified.
 
 **The first-order kernel is not small, and $B_0$ must not be read as its zero.** The class question above concerns the scalar equation; the term $B_0$ solves the first-order one, and that equation has solutions in both cases the source treats. For the corpus's real $\kappa = \rho$, which is the source's imaginary mass, they are the plane-wave family recorded in *Bispinors of a Scalar Field and the Linear Dispersion* below, on the shifted cone. For the source's real mass, which is the corpus's imaginary shift $\kappa = -im$, they are the singular solutions the paper exhibits: a spinorial analogue of the Yukawa potential, a string-like solution, and a stationary solution carrying a finite field charge. None of them is used here and their densities are not recomputed; the record is that the space is populated in both cases, so that the "any" in the general solution is doing real work.
 
@@ -189,11 +189,11 @@ This is the piece the d'Alembertian article marked as the source's own. The corp
 The programme generates its bispinor fields from a scalar potential by exactly the **monogenic completion** the d'Alembertian article records,
 
 $$
-\tilde{Ξ}_{\rho} = \bigl(\vec\nabla^{\mp}_\Phi + i\rho\bigr)\tilde{Ξ}_{\rho} ,
+\tilde{Ξ}_{\rho} = \bigl(\vec\nabla_{\mp,\Phi} + i\rho\bigr)\tilde{Ξ}_{\rho} ,
 \qquad
-\bigl(\vec\nabla^{\pm}_\Phi + i\rho\bigr)\tilde{Ξ}_{\rho} = 0
+\bigl(\vec\nabla_{\pm,\Phi} + i\rho\bigr)\tilde{Ξ}_{\rho} = 0
 \ \text{ whenever }\
-\bigl(\Box_{\text{s}} - \rho^2 + 2i\rho\partial/\partial\tau\,\bigr)\tilde{Ξ}_{\rho} = 0 ,
+\bigl(\Box_{\text{s},\Phi} - \rho^2 + 2i\rho\partial/\partial\tau\,\bigr)\tilde{Ξ}_{\rho} = 0 ,
 $$
 
 which was verified on the plane-wave family. The source calls $\tilde{Ξ}_{\rho}$ the **scalar potential of the bispinor C-field**, and $\tilde{Ξ}_{\rho} = i\rho\tilde{Ξ}_{\rho} + \partial/\partial\tau\,\tilde{Ξ}_{\rho} \pm i\nabla\tilde{Ξ}_{\rho}$ is its bispinor. Everything the corpus needs to know about these fields follows from the dispersion of the scalar potential, so that is where the content is.
@@ -221,13 +221,13 @@ The source's most quotable result is about the amplitude of the plane-wave bispi
 
 $$
 \begin{aligned}
-\bigl(\vec\nabla^{\pm}_\Phi + i\rho\bigr)\tilde{Ξ}_{\vec\zeta}^{\pm} &= \mp\,|\vec\zeta|\,\bigl(i + \vec u_\zeta\bigr)\tilde{Ξ}_{\vec\zeta}^{\pm} ,\\[2pt]
-\bigl(\vec\nabla^{\pm}_\Phi + i\rho\bigr)\tilde{Ξ}_{\vec\zeta}^{\mp} &= \pm\,|\vec\zeta|\,\bigl(i - \vec u_\zeta\bigr)\tilde{Ξ}_{\vec\zeta}^{\mp} ,
+\bigl(\vec\nabla_{\pm,\Phi} + i\rho\bigr)\tilde{Ξ}_{\vec\zeta}^{\pm} &= \mp\,|\vec\zeta|\,\bigl(i + \vec u_\zeta\bigr)\tilde{Ξ}_{\vec\zeta}^{\pm} ,\\[2pt]
+\bigl(\vec\nabla_{\pm,\Phi} + i\rho\bigr)\tilde{Ξ}_{\vec\zeta}^{\mp} &= \pm\,|\vec\zeta|\,\bigl(i - \vec u_\zeta\bigr)\tilde{Ξ}_{\vec\zeta}^{\mp} ,
 \end{aligned}
 \qquad \vec u_\zeta = \vec\zeta/|\vec\zeta| ,
 $$
 
-the two signs being independent, each line carrying one sign throughout: the sign in $\nabla$ is the sign in the bracket, and the branch label on $\tilde{Ξ}$ is the dispersion's own. The first line is the diagonal pairing, the second the crossed one. Each prefactor is closed and null, of norm $\sqrt2|\vec\zeta|$, and each is a multiple of an idempotent's image: on the diagonal line it is $\mp\,2|\vec\zeta|\,i\tilde\Pi_2(\vec u_\zeta)$, so that bispinor lies in $\mathbb{B}\tilde\Pi_2(\vec u_\zeta)$, the carrier of the corpus's idempotent; on the crossed line it is $\pm\,2|\vec\zeta|\,i\tilde\Pi_1(\vec u_\zeta)$, the other ideal of the pair. The source's harmonic bispinors are the diagonal line, applied to the two branches,
+the two signs being independent, each line carrying one sign throughout: the sign in $\vec\nabla_\Phi$ is the sign in the bracket, and the branch label on $\tilde{Ξ}$ is the dispersion's own. The first line is the diagonal pairing, the second the crossed one. Each prefactor is closed and null, of norm $\sqrt2|\vec\zeta|$, and each is a multiple of an idempotent's image: on the diagonal line it is $\mp\,2|\vec\zeta|\,i\tilde\Pi_2(\vec u_\zeta)$, so that bispinor lies in $\mathbb{B}\tilde\Pi_2(\vec u_\zeta)$, the carrier of the corpus's idempotent; on the crossed line it is $\pm\,2|\vec\zeta|\,i\tilde\Pi_1(\vec u_\zeta)$, the other ideal of the pair. The source's harmonic bispinors are the diagonal line, applied to the two branches,
 
 $$
 S^{\pm}_{\vec\zeta} = \tfrac{1}{2}\bigl(i + \vec u_\zeta\bigr)\,\tilde{Ξ}_{\vec\zeta}^{\pm} ,
@@ -248,7 +248,7 @@ where $\tilde{\Pi}_{1,2}(\vec u)$ is the corpus's rank-one Hermitian idempotent,
 2. **The amplitude is in the material sector.** $\tilde{\Pi}_2$ is Hermitian, $\tilde{\Pi}_2^{*} = \tilde{\Pi}_2$, hence in $\mathbb{B}_{\Psi}$; and $S$ is anti-Hermitian, $S^{*} = -S$, hence in $\mathbb{B}_{\Phi}$, the material sector — which is the statement $i\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ the conventions article records. So the programme's harmonic bispinor is the material-sector image of a pure state, and the corpus's sector language carries the whole of the source's "particle" vocabulary for these objects.
 3. **The harmonic bispinor is $N$-degenerate.** With the corpus's norm $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$, $\langle S\rangle_{\natural} = \tfrac14(i^2) + \tfrac14|\vec u_\zeta|^2 = 0$, so $S$ lies on the zero-divisor cone. The same vanishes under the source's pseudonorm, the sesquilinear form of its Definition 3. So under either interpretation the programme's bispinor is null: a bispinor field of the programme's "massive" first-order equation is an element of the null cone, which is the algebraic content of the family's lightlike dispersion.
 4. **The normalisation needs one correction.** The source states norm $1$ and pseudonorm $0$. The pseudonorm statement is exact. The norm statement is not, with the source's own factor $\tfrac12$: $|S|^2 = \tfrac12$ and $|S| = 1/\sqrt2$. The unit-norm null representative is $\sqrt2\,S = \tfrac{1}{\sqrt2}(i + \vec u_\zeta)\,\tilde{Ξ} = \sqrt2\,i\,\tilde{\Pi}_2(\vec u_\zeta)\,\tilde{Ξ}$, which was checked to have norm $1$ and pseudonorm $0$ and to lie in the same ideal. The corpus records the nullity and the ideal membership as the invariant content and the factor $\sqrt2$ as a normalisation slip in the source.
-5. **The stationary family has the same structure.** For $B = B(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\theta_{\mathrm{mat}})$ the source sets $\vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \nabla$ and obtains the $\omega$-spinors
+5. **The stationary family has the same structure.** For $B = B(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\theta_{\mathrm{mat}})$ the source sets $\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi$ and obtains the $\omega$-spinors
 
 Throughout, $\theta_{\mathrm{mat}}:=\omega_n\tau$ is the Matsubara angle: $\omega_n=2\pi n/\mathcal{B}$ is real, so the thermal factor $\exp(-i\theta_{\mathrm{mat}})$ is a phase of modulus one even though it lives on the Euclidean circle. It carries the periodicity and no decay.
 
@@ -265,22 +265,22 @@ whose amplitude $(1 - i\vec u_e)/k_{\mathrm{hel}}$ is again null, again a multip
 Factoring the time dependence reduces the programme's equation to a Helmholtz problem, and the source's Theorem 8 states the stationary solution as
 
 $$
-B = \bigl(\vec\nabla^{\mp}_{\Phi,\omega} + \rho\bigr)\bigl(\xi * F\bigr) + S_\omega ,
+B = \bigl(\vec\nabla_\Phi^{\mp}_{\Phi,\omega} + \rho\bigr)\bigl(\xi * F\bigr) + S_\omega ,
 \qquad
-\vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \nabla ,
+\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi ,
 $$
 
 with $\xi$ the fundamental solution of the Helmholtz equation $\Delta_\Phi\xi + k_{\mathrm{hel}}^{2}\xi = \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, $k_{\mathrm{hel}} = \omega + \rho$. The source's displayed kernel is $\xi = -\frac{1}{4\pi R}(a\exp(k_{\mathrm{hel}}R) + (1-a)\exp(-k_{\mathrm{hel}}R))$, and **the exponent has lost its $i$**: with real $k_{\mathrm{hel}}$ those exponentials do not solve the Helmholtz equation, while with $k_{\mathrm{hel}} \to ik_{\mathrm{hel}}$ they do. The restoration was verified numerically — the ball integral of $(\Delta_\Phi + k_{\mathrm{hel}}^{2})$ applied to $-\frac{1}{4\pi R}\exp(\pm ik_{\mathrm{hel}}R)$ is $+1$ at the floor — and it is consistent with the source's own plane-wave representation $\xi_0 = \int_{|\vec u_e|=1}p(\vec u_e)\exp(-ik(\vec u_e\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)))dS(\vec u_e)$, which uses a real wave number. This is a text-layer loss rather than an error of the mathematics, in the same family as the lost $i$'s the earlier record noted, and it is recorded as such.
 
-Two further source statements in this section are worth keeping with their status attached. The composition of the two stationary operators is $\bigl(\vec\nabla^{\pm}_{\Phi,\omega} + \rho\bigr)\bigl(\vec\nabla^{\mp}_{\Phi,\omega} + \rho\bigr) = (\omega+\rho)^2 + \Delta_\Phi$, which is the monochromatic form of the shifted square and is verified with the rest. And the source's assertion that the Cauchy problem for the stationary operator has, for $\operatorname{Re}k_{\mathrm{hel}} \neq 0$, only the trivial homogeneous solution repeats the class question of the earlier section in the elliptic setting, where it is unproblematic: a Helmholtz equation with a complex wave number has no bounded homogeneous solutions on the whole space, and the source's standing assumption of a Fourier-transformable amplitude is the assumption actually being used.
+Two further source statements in this section are worth keeping with their status attached. The composition of the two stationary operators is $\bigl(\vec\nabla_\Phi^{\pm}_{\Phi,\omega} + \rho\bigr)\bigl(\vec\nabla_\Phi^{\mp}_{\Phi,\omega} + \rho\bigr) = (\omega+\rho)^2 + \Delta_\Phi$, which is the monochromatic form of the shifted square and is verified with the rest. And the source's assertion that the Cauchy problem for the stationary operator has, for $\operatorname{Re}k_{\mathrm{hel}} \neq 0$, only the trivial homogeneous solution repeats the class question of the earlier section in the elliptic setting, where it is unproblematic: a Helmholtz equation with a complex wave number has no bounded homogeneous solutions on the whole space, and the source's standing assumption of a Fourier-transformable amplitude is the assumption actually being used.
 
 ## What the Programme's Solution Theory Establishes and What It Does Not
 
 Established, and verified above by recomputation.
 
-1. The composition lemma $\vec\nabla^{-}_\Phi\vec\nabla^{+}_\Phi = \vec\nabla^{+}_\Phi\vec\nabla^{-}_\Phi = \Box_{\text{s}}$, and the shifted square $\bigl(\vec\nabla^{\mp}_\Phi + m\bigr)\bigl(\vec\nabla^{\pm}_\Phi + m\bigr) = \Box_{\text{s}} + m^2 + 2m\partial/\partial\tau = (\partial/\partial\tau + m)^2 - \Delta_\Phi$.
+1. The composition lemma $\vec\nabla_{-,\Phi}\vec\nabla_{+,\Phi} = \vec\nabla_{+,\Phi}\vec\nabla_{-,\Phi} = \Box_{\text{s},\Phi}$, and the shifted square $\bigl(\vec\nabla_{\mp,\Phi} + m\bigr)\bigl(\vec\nabla_{\pm,\Phi} + m\bigr) = \Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau = (\partial/\partial\tau + m)^2 - \Delta_\Phi$.
 2. The exponential-substitution identity, hence the fundamental solution of the KGFSh operator as $\exp(-m\tau)$ times the wave kernel, hence the **sharp, light-cone-supported kernel** with a $\delta$ profile — the source's Eq. (36), with the correction that both light-cone terms carry the common factor $\exp(-m\tau)$ and the advanced term therefore carries $\exp(+mR)$.
-3. The general solution of the inhomogeneous equation, $B = B_0 + (\vec\nabla^{\mp}_\Phi + m)(F * \tilde{Ξ}_{m})$, by the defining property of the kernel, with $B_0$ in the kernel of the first-order operator $(\vec\nabla^{\pm}_\Phi + m)$ — a space populated in both cases the programme treats, by plane waves on the shifted cone and by the singular solutions of the real-mass case, so that it is not the trivial space of the class question.
+3. The general solution of the inhomogeneous equation, $B = B_0 + (\vec\nabla_{\mp,\Phi} + m)(F * \tilde{Ξ}_{m})$, by the defining property of the kernel, with $B_0$ in the kernel of the first-order operator $(\vec\nabla_{\pm,\Phi} + m)$ — a space populated in both cases the programme treats, by plane waves on the shifted cone and by the singular solutions of the real-mass case, so that it is not the trivial space of the class question.
 4. The monogenic completion of a scalar potential into a bispinor, and the exact plane-wave family: the linear dispersion $\omega = \rho \pm |\vec\zeta|$, group velocity of unit magnitude, phase velocities $1 \pm \rho/|\vec\zeta|$, and the stationary mode $\omega = 0$ at $|\vec\zeta| = \rho$.
 5. The nullity of the harmonic bispinor's amplitude; its identity with $i\tilde{\Pi}_2(\vec u_\zeta)$; its membership in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, a minimal left ideal here; and its placement in the material sector $\mathbb{B}_{\Phi}$.
 6. The stationary route, the Helmholtz kernel with its exponent restored, and the $\omega$-spinors with the same null amplitude.
@@ -297,7 +297,7 @@ Not established, or corrected in the source.
 
 The immediate problem is set by the companion article. *The Biquaternion D'Alembertian and Its Green's Functions* had established the shifted gradient, the generalized Maxwell–Dirac equation, the Klein–Gordon–Fock–Schrödinger operator, its symbol and the convention crossing $\kappa = -im$, and had explicitly declined to state the source's fundamental solution because the text in hand could not be checked. The present article closes that gap from the source's later journal paper, whose text layer is usable, and it does so by verification rather than by transcription.
 
-The operator's square, $(\vec\nabla^{\mp}_\Phi+m)(\vec\nabla^{\pm}_\Phi+m) = (\partial/\partial\tau+m)^2-\Delta_\Phi$, is a conjugation of the wave operator, $\exp(-m\tau)\Box_{\text{s}}\exp(m\tau)$. That single identity gives everything in this article. It makes the fundamental solution $\exp(-m\tau)$ times the massless kernel, hence supported exactly on the light cone with a $\delta$ profile where the corpus's massive scalar kernel carries a Bessel tail inside the cone: the programme's first-order term buys Huygens' principle at the price of self-adjointness. It makes the general solution of the homogeneous equation $\exp(-m\tau)$ times an arbitrary wave, which is why the source's theorem that no non-trivial homogeneous solution exists for $\operatorname{Re}m \neq 0$ holds only in the tempered class, and why the counterexample is one line. And it makes the plane-wave family's dispersion exactly linear, $\omega = \rho \pm |\vec\zeta|$: a shifted cone, not a curved mass shell, with group velocity of unit magnitude, phase velocities $1 \pm \rho/|\vec\zeta|$ and a stationary mode at $|\vec\zeta| = \rho$.
+The operator's square, $(\vec\nabla_{\mp,\Phi}+m)(\vec\nabla_{\pm,\Phi}+m) = (\partial/\partial\tau+m)^2-\Delta_\Phi$, is a conjugation of the wave operator, $\exp(-m\tau)\Box_{\text{s},\Phi}\exp(m\tau)$. That single identity gives everything in this article. It makes the fundamental solution $\exp(-m\tau)$ times the massless kernel, hence supported exactly on the light cone with a $\delta$ profile where the corpus's massive scalar kernel carries a Bessel tail inside the cone: the programme's first-order term buys Huygens' principle at the price of self-adjointness. It makes the general solution of the homogeneous equation $\exp(-m\tau)$ times an arbitrary wave, which is why the source's theorem that no non-trivial homogeneous solution exists for $\operatorname{Re}m \neq 0$ holds only in the tempered class, and why the counterexample is one line. And it makes the plane-wave family's dispersion exactly linear, $\omega = \rho \pm |\vec\zeta|$: a shifted cone, not a curved mass shell, with group velocity of unit magnitude, phase velocities $1 \pm \rho/|\vec\zeta|$ and a stationary mode at $|\vec\zeta| = \rho$.
 
 The bispinors carry the algebra's own content. The amplitude of a plane-wave bispinor is $\tfrac12(i+\vec u_\zeta)$, which is $i\tilde{\Pi}_2(\vec u_\zeta)$, the central phase times one of the corpus's rank-one Hermitian idempotents — a pure state of the informational sector. So the programme's harmonic bispinor lies in the Peirce carrier $\mathbb{B}\tilde{\Pi}_2$, which is the minimal left ideal here; it is anti-Hermitian and therefore in the material sector $\mathbb{B}_{\Phi}$, and it is null, hence a zero divisor, under the corpus's norm and under the source's pseudonorm alike. A bispinor of a "massive" first-order equation is an element of the null cone: that, and not the borrowed words *boson* and *lepton*, is what the algebra says. The normalisation the source states is off by $\sqrt2$, the static amplitude it prints does not follow from its own formula, and the exponent of its Helmholtz kernel has lost an $i$; the corpus records the corrections and keeps the structure.
 
@@ -305,19 +305,19 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 
 | Symbol | Meaning |
 |---|---|
-| $\vec\nabla^{\pm}_\Phi = \partial/\partial\tau \pm i\nabla$, $\tau = r'_{t}$ | The source's two bigradients; $\vec\nabla^{+}_\Phi = i\tilde\nabla_\Phi$, $\vec\nabla^{-}_\Phi = i(\tilde\nabla_\Phi)^{\natural}$ |
-| $\Box_{\text{s}} = \partial^2/\partial\tau^2 - \Delta_\Phi = -\Box_\Phi$ | The source's wave operator, minus the corpus's d'Alembertian |
-| $\bigl(\vec\nabla^{\pm}_\Phi + m\bigr)B = F$ | The source's first-order equation; the corpus's generalized Maxwell–Dirac equation with $\kappa = -im$ |
-| $\Box_{\text{s}} + m^2 + 2m\partial/\partial\tau = (\partial/\partial\tau+m)^2-\Delta_\Phi = \exp(-m\tau)\Box_{\text{s}}\exp(m\tau)$ | The KGFSh operator and its conjugation form |
+| $\vec\nabla_{\pm,\Phi} = \partial/\partial\tau \pm i\nabla$, $\tau = r'_{t}$ | The source's two bigradients; $\vec\nabla_{+,\Phi} = i\tilde\nabla_\Phi$, $\vec\nabla_{-,\Phi} = i(\tilde\nabla_\Phi)^{\natural}$ |
+| $\Box_{\text{s},\Phi} = \partial^2/\partial\tau^2 - \Delta_\Phi = -\Box_\Phi$ | The source's wave operator, minus the corpus's d'Alembertian |
+| $\bigl(\vec\nabla_{\pm,\Phi} + m\bigr)B = F$ | The source's first-order equation; the corpus's generalized Maxwell–Dirac equation with $\kappa = -im$ |
+| $\Box_{\text{s},\Phi} + m^2 + 2m\partial/\partial\tau = (\partial/\partial\tau+m)^2-\Delta_\Phi = \exp(-m\tau)\Box_{\text{s},\Phi}\exp(m\tau)$ | The KGFSh operator and its conjugation form |
 | $m = i\rho$, $\rho$ real | The source's imaginary-mass case; the corpus's real shift $\kappa = \rho$, the case with non-trivial homogeneous solutions |
 | $\tilde{Ξ}_{m} = \frac{\exp(-m\tau)}{4\pi R}\delta(\tau-R)$, $R=|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ | Retarded fundamental solution; the source's Eq. (36); supported on the cone |
-| $B = B_0 + (\vec\nabla^{\mp}_\Phi+m)(F*\tilde{Ξ}_{m})$ | General solution of the inhomogeneous equation, $B_0$ solving the first-order equation |
-| $\tilde{Ξ}_{\rho} = (\vec\nabla^{\mp}_\Phi + i\rho)\tilde{Ξ}_{\rho}$ | Bispinor of the scalar potential $\tilde{Ξ}_{\rho}$ (monogenic completion) |
+| $B = B_0 + (\vec\nabla_{\mp,\Phi}+m)(F*\tilde{Ξ}_{m})$ | General solution of the inhomogeneous equation, $B_0$ solving the first-order equation |
+| $\tilde{Ξ}_{\rho} = (\vec\nabla_{\mp,\Phi} + i\rho)\tilde{Ξ}_{\rho}$ | Bispinor of the scalar potential $\tilde{Ξ}_{\rho}$ (monogenic completion) |
 | $\omega = \rho \pm\lvert\vec\zeta\rvert$ | Exact linear dispersion of the plane-wave family; group velocity of unit magnitude |
 | $S^{\pm}_{\vec\zeta} = \tfrac12(i+\vec u_\zeta)\tilde{Ξ}_{\vec\zeta}^{\pm} = i\tilde{\Pi}_2(\vec u_\zeta)\tilde{Ξ}_{\vec\zeta}^{\pm}$ | Harmonic bispinor; null, in the minimal left ideal, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{\Pi}_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | The corpus's idempotents: pure states, Hermitian, null |
 | $D_j$, $j=0,\dots,3$ | The source's $4\times4$ matrices: $D_0=I$, $D_j$ the matrix of left multiplication by $ie_j$; $D_j^2=I$ |
-| $\vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \nabla$, $k_{\mathrm{hel}} = \omega+\rho$ | Stationary (monochromatic) operators and wave number |
+| $\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi$, $k_{\mathrm{hel}} = \omega+\rho$ | Stationary (monochromatic) operators and wave number |
 
 ## Further Reading
 

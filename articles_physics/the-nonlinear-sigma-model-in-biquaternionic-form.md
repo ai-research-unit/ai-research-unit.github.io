@@ -12,7 +12,7 @@ The findings are the following.
 $$
 \partial/\partial R_{1,\mu} j_\nu - \partial/\partial R_{1,\nu} j_\mu + \left[j_\mu,j_\nu\right] = 0 ,
 $$
-which was verified numerically to the finite-difference error. The two-derivative Lagrangian $\mathcal{L}_2 = -\frac{f^2}{2}\mathrm{Sc}(\overline{\partial/\partial R_{1,\mu}\,\tilde U}\partial/\partial R_{1,\mu}\,\tilde U)$ is invariant under the global **left–right action** $\tilde U\mapsto g_L\tilde U g_R^{*}$ with $g_{L,R}$ constant unit quaternions — verified exactly — and reduces at quadratic order to the canonical kinetic term $\frac12[\sum_a\big((\partial/\partial r'_t\pi_a)^2-(\nabla\pi_a)^2\big)]$ of the Goldstone fields. The target is the group manifold $\mathbb{S}^3$ in the non-abelian case and $\mathbb{S}^1$ in the abelian case.
+which was verified numerically to the finite-difference error. The two-derivative Lagrangian $\mathcal{L}_2 = -\frac{f^2}{2}\mathrm{Sc}(\overline{\partial/\partial R_{1,\mu}\,\tilde U}\partial/\partial R_{1,\mu}\,\tilde U)$ is invariant under the global **left–right action** $\tilde U\mapsto g_L\tilde U g_R^{*}$ with $g_{L,R}$ constant unit quaternions — verified exactly — and reduces at quadratic order to the canonical kinetic term $\frac12[\sum_a\big((\partial/\partial r'_t\pi_a)^2-(\vec\nabla_\Phi\pi_a)^2\big)]$ of the Goldstone fields. The target is the group manifold $\mathbb{S}^3$ in the non-abelian case and $\mathbb{S}^1$ in the abelian case.
 - **Interpretation.** Interpreting the unit real quaternion as the framework's nonlinear sigma-model field, and the biquaternion norm as the invariant metric on the group, is the interpretive step that identifies the framework's target manifold. The Goldstone correspondence — the nonlinear field as the exponential of the broken generators — is the standard coset construction, imported.
 - **Gap, left visible.** The framework's group-valued field realises a **global** $SU(2)_L\times SU(2)_R$ symmetry of the principal chiral model. It does not supply the axial–vector decomposition of currents tied to chirality, nor the Wess–Zumino–Witten term, nor the anomaly: those belong to the spinor sector and to the general gauge apparatus. The nonlinear sigma model on the framework's target is therefore complete as a geometric construction and incomplete as a chiral one.
 
@@ -82,7 +82,7 @@ $$
 the kinetic term is canonical, $\mathcal{L}_{\mathrm{kin}} = \frac12[(\partial h)^2 + (\partial\vartheta_{\mathrm{fld}})^2]$, and the potential depends on the modulus alone, so the angular field $\vartheta_{\mathrm{fld}}$ is exactly flat. Below the radial mass the field $h$ may be integrated out; because every non-derivative coupling of $\vartheta_{\mathrm{fld}}$ involves $h$, the resulting Lagrangian for $\vartheta_{\mathrm{fld}}$ alone contains only derivatives, and its lowest-order term is
 
 $$
-\mathcal{L}_\text{eff} = \frac12\left[(\partial/\partial r'_t\vartheta_{\mathrm{fld}})^2 - (\nabla\vartheta_{\mathrm{fld}})^2\right] + \cdots
+\mathcal{L}_\text{eff} = \frac12\left[(\partial/\partial r'_t\vartheta_{\mathrm{fld}})^2 - (\vec\nabla_\Phi\vartheta_{\mathrm{fld}})^2\right] + \cdots
 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial R_{1,\mu}\,\tilde U}\,\partial/\partial R_{1,\mu}\,\tilde U\right) + \cdots,
 \qquad
 \tilde U = \exp(i\theta_{\mathrm{gld}})e_t ,\qquad \theta_{\mathrm{gld}}:=\vartheta_{\mathrm{fld}}/f ,
@@ -136,7 +136,7 @@ $$
 the overall minus sign being the one that makes the kinetic term positive; at quadratic order, expanding $\tilde U = e_t + \vec\pi/f + \cdots$ and using $\mathrm{Sc}(e_ae_b) = -\delta_{ab}$,
 
 $$
-\mathcal{L}_2 = \frac12\left[\sum_a\big((\partial/\partial r'_t\pi_a)^2-(\nabla\pi_a)^2\big)\right] + O(\pi^4),
+\mathcal{L}_2 = \frac12\left[\sum_a\big((\partial/\partial r'_t\pi_a)^2-(\vec\nabla_\Phi\pi_a)^2\big)\right] + O(\pi^4),
 $$
 
 the canonical kinetic term of three real Goldstone fields. The higher terms are the interactions, all of them derivative and all of them fixed by the geometry: the coefficient of each is the corresponding structure constant of $\mathrm{SU}(2)$ contracted with the momenta.
@@ -247,7 +247,7 @@ with $\pi$ a real central-valued scalar. The two-derivative Lagrangian is again 
 
 $$
 \mathcal{L}_2 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial R_{1,\mu}\,\tilde U}\,\partial/\partial R_{1,\mu}\,\tilde U\right)
-= \frac12\left[(\partial/\partial r'_t\pi)^2 - (\nabla\pi)^2\right],
+= \frac12\left[(\partial/\partial r'_t\pi)^2 - (\vec\nabla_\Phi\pi)^2\right],
 $$
 
 the equality being exact for the phase field, whose biquaternion norm carries no $\pi$-dependent factor: the abelian model is free. The target is the circle $\mathbb{S}^1$ of phases, with the shift symmetry $\pi\to\pi+\text{const}$ realised nonlinearly. The compactness of the phase is the statement $\pi\sim\pi+2\pi f$, so the target is a circle of circumference proportional to $f$ and the field's values are angles. This is the abelian sigma model of the Goldstone companion, and it is also the structure that the axion's shift symmetry requires: the axion is the pseudo-Goldstone boson of a broken global $\mathrm{U}(1)$, and its low-energy Lagrangian is the abelian nonlinear sigma model with the shift symmetry broken only by the anomaly. The companion article on the axion and the Peccei–Quinn mechanism develops that case.
@@ -304,7 +304,7 @@ The two-derivative Lagrangian is the biquaternion norm of the derivative,
 
 $$
 \boxed{\;\mathcal{L}_2 = -\frac{f^2}{2}\,\mathrm{Sc}\!\left(\overline{\partial/\partial R_{1,\mu}\,\tilde U}\,\partial/\partial R_{1,\mu}\,\tilde U\right)
-= \frac12\left[\sum_a\big((\partial/\partial r'_t\pi_a)^2-(\nabla\pi_a)^2\big)\right] + O(\pi^4)\;},
+= \frac12\left[\sum_a\big((\partial/\partial r'_t\pi_a)^2-(\vec\nabla_\Phi\pi_a)^2\big)\right] + O(\pi^4)\;},
 $$
 
 with the invariant metric $ds^2 = \frac12\mathrm{Sc}(\overline{\tilde U^{*}d\tilde U}\tilde U^{*}d\tilde U)$ the same object. It is invariant under the global left–right action $\tilde U\mapsto g_L\tilde U g_R^{*}$, whose diagonal is the unbroken subgroup and whose axial directions are the broken ones, and the Maurer–Cartan form $j^R_\mu = \tilde U^{*}\partial/\partial R_{1,\mu}\,\tilde U$ is flat,

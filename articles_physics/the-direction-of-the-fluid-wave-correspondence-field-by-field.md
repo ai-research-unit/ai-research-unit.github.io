@@ -19,7 +19,7 @@
 **The reverse direction is conditional and its output is nonlinear.** It is defined on barotropic irrotational inviscid flows that carry the quantum term, and on that class its output is
 
 $$
-i\hbar\,\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta\psi+V(\rho_{\mathrm{num}})\psi ,
+i\hbar\,\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+V(\rho_{\mathrm{num}})\psi ,
 \qquad
 \frac{\mathrm{d}V}{\mathrm{d}\rho_{\mathrm{num}}}=\frac{1}{\rho_{\mathrm{num}}}\frac{\mathrm{d}p_{\mathrm{th}}}{\mathrm{d}\rho_{\mathrm{num}}} ,
 $$
@@ -33,18 +33,18 @@ which is linear exactly when the pressure is constant. Both statements are in [T
 **"Irrotational, inviscid, barotropic" is not three hypotheses. It is one criterion cut into three pieces by the way it is usually stated.** The forward map produces a velocity that is a gradient and a force that is a gradient. The reverse map needs both properties back:
 
 $$
-\vec v=\frac{1}{m}\nabla S ,
+\vec v=\frac{1}{m}\vec\nabla_\Phi S ,
 \qquad
-\mathrm{D}_{\mathrm{mat}}\vec v=-\nabla\Phi_{\mathrm{acc}} ,
+\mathrm{D}_{\mathrm{mat}}\vec v=-\vec\nabla_\Phi\Phi_{\mathrm{acc}} ,
 $$
 
 with $\Phi_{\mathrm{acc}}$ an acceleration potential, a scalar of dimension velocity squared.
 
-**Given the two, the Hamilton–Jacobi equation is a definition and not an assumption.** Take the gradient of $\partial_{t'}S+\lvert\nabla S\rvert^{2}/2m+\Phi_{\mathrm{acc}}$ with $\vec v=\nabla S/m$: the first term contributes $\nabla\partial_{t'}S$, the second contributes $(\nabla S\cdot\nabla)\nabla S/m$ — the curl term of $\nabla(\lvert\vec v\rvert^{2}/2)$ vanishes because $\vec v$ is a gradient — and the third contributes $-\mathrm{D}_{\mathrm{mat}}\vec v$. The sum is zero by the second property, so the bracket is a function of time alone, and a function of time is absorbed into $S$. So $S$ exists and satisfies the equation, and nothing beyond the two properties is assumed.
+**Given the two, the Hamilton–Jacobi equation is a definition and not an assumption.** Take the gradient of $\partial_{t'}S+\lvert\nabla S\rvert^{2}/2m+\Phi_{\mathrm{acc}}$ with $\vec v=\vec\nabla_\Phi S/m$: the first term contributes $\vec\nabla_\Phi\partial_{t'}S$, the second contributes $(\vec\nabla_\Phi S\cdot\nabla)\vec\nabla_\Phi S/m$ — the curl term of $\vec\nabla_\Phi(\lvert\vec v\rvert^{2}/2)$ vanishes because $\vec v$ is a gradient — and the third contributes $-\mathrm{D}_{\mathrm{mat}}\vec v$. The sum is zero by the second property, so the bracket is a function of time alone, and a function of time is absorbed into $S$. So $S$ exists and satisfies the equation, and nothing beyond the two properties is assumed.
 
-**The first property is on the velocity, and it is irrotationality.** A gradient has no curl, so $\nabla\times\vec v=\vec 0$ is necessary, and on a simply connected domain it is sufficient. On a domain with a hole it is sufficient up to the period, which is the winding of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html).
+**The first property is on the velocity, and it is irrotationality.** A gradient has no curl, so $\vec\nabla_\Phi\times\vec v=\vec 0$ is necessary, and on a simply connected domain it is sufficient. On a domain with a hole it is sufficient up to the period, which is the winding of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html).
 
-**The first property is the rank-zero member of a family, and the family is indexed by the rank of the vorticity.** A rotational velocity is not without potentials: the Clebsch form writes it with three functions, $\vec v=\nabla\phi_{\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\nabla\beta_{\mathrm{clb}}/m$, and the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ carries the whole vorticity. So what the reverse map needs is not the absence of vorticity but a vorticity whose rank the target can hold, and a single complex unknown holds one rank and no more. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the hierarchy, and states the medium whose data do carry a pair: the spinning fluid of the Dirac block.
+**The first property is the rank-zero member of a family, and the family is indexed by the rank of the vorticity.** A rotational velocity is not without potentials: the Clebsch form writes it with three functions, $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}/m+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}/m$, and the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ carries the whole vorticity. So what the reverse map needs is not the absence of vorticity but a vorticity whose rank the target can hold, and a single complex unknown holds one rank and no more. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the hierarchy, and states the medium whose data do carry a pair: the spinning fluid of the Dirac block.
 
 **The second property is on the force, and the other two folk conditions are its two failure modes.** The force has three parts and each can fail to be a gradient on its own. The pressure part is a gradient exactly when the flow is isentropic, by the Gibbs–Duhem relation of [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), and barotropicity is the *stronger* hypothesis that makes it a gradient whatever the entropy field does. The viscous part is a gradient only in special flows — the unidirectional one is the case — and in general it is not, which is the inviscid condition. The external part is a gradient exactly when the external field is conservative.
 
@@ -92,7 +92,7 @@ a function of the density plus the quantum term. Miss the first and the fluid is
 
 **Baroclinic flow has no wave equivalent because its state is two-dimensional.** The pressure depends on the density and on a second advected variable, so the nonlinear term of the reverse map has no function to be; and the pressure force is not a gradient, so even the phase fails to exist.
 
-**The non-barotropic row is the subtler failure and it is worth separating from the baroclinic one.** An incompressible irrotational flow is gradient-forced even when its pressure is not a function of the density, because a uniform density makes $(1/\rho_{\mathrm{mass}})\nabla p_{\mathrm{th}}$ a gradient by inspection. So the phase exists, the map runs, and the equation it produces has a potential that is a function of position. That is a wave equation with an external field, which is linear and is not a law of the fluid: the reverse map has produced a solution of somebody else's equation.
+**The non-barotropic row is the subtler failure and it is worth separating from the baroclinic one.** An incompressible irrotational flow is gradient-forced even when its pressure is not a function of the density, because a uniform density makes $(1/\rho_{\mathrm{mass}})\vec\nabla_\Phi p_{\mathrm{th}}$ a gradient by inspection. So the phase exists, the map runs, and the equation it produces has a potential that is a function of position. That is a wave equation with an external field, which is linear and is not a law of the fluid: the reverse map has produced a solution of somebody else's equation.
 
 **The applied fields inherit the obstruction and add one of their own.** Geophysical flows are rotational and baroclinic at once, and their wave-like behaviour is the KdV equation of a weakly nonlinear long-wave limit, which is nonlinear and which exists because the limit discards the rotation. Plasma models carry a magnetic field and a velocity field coupled to each other, and their wave-like behaviour is a nonlinear mode coupling, not a linear equation. Computational fluid dynamics solves the Navier–Stokes equation directly, and its turbulence is the statement that the discarded nonlinearity is the whole of the interesting behaviour.
 

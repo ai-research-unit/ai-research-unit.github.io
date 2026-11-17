@@ -68,7 +68,7 @@ $$
 \mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi,
 $$
 
-which are the kinetic momentum and the kinetic energy. Both are invariant under the gauge transformation of §*The Gauge Transformation Read on the Word*, term by term: the phase gradient shifts by $+\frac{ϙ}{\hbar}\nabla\Gamma$ and $\vec A$ by $-\nabla\Gamma$; the phase rate shifts by $-\frac{ϙ}{\hbar}\partial_{t'}\Gamma$ and $\varphi$ by $+\partial_{t'}\Gamma$.
+which are the kinetic momentum and the kinetic energy. Both are invariant under the gauge transformation of §*The Gauge Transformation Read on the Word*, term by term: the phase gradient shifts by $+\frac{ϙ}{\hbar}\vec\nabla_\Phi\Gamma$ and $\vec A$ by $-\vec\nabla_\Phi\Gamma$; the phase rate shifts by $-\frac{ϙ}{\hbar}\partial_{t'}\Gamma$ and $\varphi$ by $+\partial_{t'}\Gamma$.
 
 **The same statement for the general element, and its limit.** For a general element the bracket's central-imaginary part carries the phase rate and the boost's contribution, and the connection adds to the sum and cannot tell the two apart. That is not a defect: it is the exact statement that the potential shifts the phase and does not touch the rapidity, because the rapidity is the modulus of the Hermitian part and the added number is not Hermitian. The constant setting makes the same point in the flow's own numbers, and it is where the article turns next.
 
@@ -104,7 +104,7 @@ The shifted element is Hermitian, of the same form as the unshifted one, with tw
 
 ## The Central Field in the Operator Setting
 
-**The word collapses.** With $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\epsilon\,e_t$, where $\epsilon=\pm1$ is the branch, the boost is trivial and the rotor is trivial, and the three surviving parameters are the scale, the phase and the sign. The equation is now the operator setting's, $\hat H=-\hbar^{2}\Delta/2m+V$ with the connection in it, and the article writes
+**The word collapses.** With $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\epsilon\,e_t$, where $\epsilon=\pm1$ is the branch, the boost is trivial and the rotor is trivial, and the three surviving parameters are the scale, the phase and the sign. The equation is now the operator setting's, $\hat H=-\hbar^{2}\Delta_\Phi/2m+V$ with the connection in it, and the article writes
 
 $$
 \hat H^{\mathrm{gco}}=\frac{\tilde{\vec\pi}^{\,2}}{2m}-ϙ\varphi+\hat V,
@@ -115,19 +115,19 @@ $$
 **The continuity equation.** Varying the phase gives the covariant continuity equation,
 
 $$
-\partial_{t'}\big(\varrho^{2}\big)+\nabla\cdot\Big(\varrho^{2}\,\frac{\nabla S-q\vec A}{m}\Big)=0,
+\partial_{t'}\big(\varrho^{2}\big)+\vec\nabla_\Phi\cdot\Big(\varrho^{2}\,\frac{\vec\nabla_\Phi S-q\vec A}{m}\Big)=0,
 \qquad
 S=\hbar\,\theta_{\mathrm{pha}},
 $$
 
-so the current is $\varrho^{2}(\nabla S-q\vec A)/m=\varrho^{2}\vec\pi/m$, which is the free current with the kinetic momentum in place of the gradient. Nothing else changes: the density is $\varrho^{2}$, the velocity is $\vec\pi/m$, and the equation is the statement that the density is transported by the kinetic velocity and not by the canonical one.
+so the current is $\varrho^{2}(\vec\nabla_\Phi S-q\vec A)/m=\varrho^{2}\vec\pi/m$, which is the free current with the kinetic momentum in place of the gradient. Nothing else changes: the density is $\varrho^{2}$, the velocity is $\vec\pi/m$, and the equation is the statement that the density is transported by the kinetic velocity and not by the canonical one.
 
 **The Hamilton–Jacobi equation.** Collecting the real part of the equation for $\varrho$ gives
 
 $$
-\partial_{t'}S+\frac{|\nabla S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
+\partial_{t'}S+\frac{|\vec\nabla_\Phi S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
 \qquad
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta \varrho}{\varrho},
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta_\Phi \varrho}{\varrho},
 $$
 
 the quantum Hamilton–Jacobi equation of the coupled field. The three changes from the free equation are the kinetic momentum in the kinetic term, the potential energy, and nothing else. **The quantum potential is unchanged**, and the reason is the article's first finding read on the scale: $Q$ is built from $\varrho$ and its ordinary Laplacian, and the connection cannot enter the scale gradient because it is central imaginary.
@@ -140,13 +140,13 @@ $$
 
 is the kinetic energy of the flow, and it is gauge invariant. In terms of the phase and the potential it is the free kinetic energy plus the potential, which is the classical statement that the total energy minus the potential energy is the kinetic one. The gauge invariance is worth one line: $\theta_{\mathrm{pha}}$ shifts by $+ϙ\Gamma/\hbar$ and $\varphi$ by $+\partial_{t'}\Gamma$, so the two halves of $\mathcal E$ move in the same direction and by the same amount, and the article records that the phase rate alone is not gauge invariant — only the combination is.
 
-**The vorticity.** The velocity is $\vec v=\vec\pi/m=(\nabla S-q\vec A)/m$, and its curl is
+**The vorticity.** The velocity is $\vec v=\vec\pi/m=(\vec\nabla_\Phi S-q\vec A)/m$, and its curl is
 
 $$
-\nabla\times\vec v=\frac{ϙ}{m}\,\vec B,
+\vec\nabla_\Phi\times\vec v=\frac{ϙ}{m}\,\vec B,
 $$
 
-because $\nabla\times\nabla S$ vanishes identically. So the canonical flow is irrotational — that is the free article's statement, and it is exact — while the kinetic flow is rotational exactly where the magnetic field is, and nowhere else. With $ϙ$ the negative of the electric charge this is $\nabla\times\vec v=-(q/m)\vec B$, the standard sign for a positive charge. The same identity is what the flux quantization of §*Flux and Circulation* integrates.
+because $\vec\nabla_\Phi\times\nabla S$ vanishes identically. So the canonical flow is irrotational — that is the free article's statement, and it is exact — while the kinetic flow is rotational exactly where the magnetic field is, and nowhere else. With $ϙ$ the negative of the electric charge this is $\vec\nabla_\Phi\times\vec v=-(q/m)\vec B$, the standard sign for a positive charge. The same identity is what the flux quantization of §*Flux and Circulation* integrates.
 
 **The two limits of the same word.** In the constant setting the vector potential shifts the rotor's axis, and in the operator setting it enters the phase gradient. The two are one statement: the rotor's axis is the direction of the momentum, and the phase gradient is the momentum's value. What differs is which of them the equation uses, and that depends on whether the operator has spatial derivatives.
 
@@ -166,7 +166,7 @@ $$
 
 **The gauge group is the translation of one coordinate.** Seven of the eight parameters are inert under the gauge group and one is translated, by a function of the spacetime point. That is the polar form of the statement that the gauge group is the centre's $\mathrm{U}(1)$: on the chart, the centre acts as the additive group of the phase. The element-form companion says the same thing from the other side — the transformation touches the connection and the field's central phase and no other parameter — and the polar statement is the sharper one because it names the coordinate.
 
-**What is invariant.** Everything built from $\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$, from $\partial_{t'}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\varphi$, and from the other six parameters. The scale, the rapidity, the two axes, the density, the rapidity's rate and the gap are invariant, and the two combinations of the phase with the connection are invariant. The phase itself is not, and neither is its rate alone.
+**What is invariant.** Everything built from $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$, from $\partial_{t'}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\varphi$, and from the other six parameters. The scale, the rapidity, the two axes, the density, the rapidity's rate and the gap are invariant, and the two combinations of the phase with the connection are invariant. The phase itself is not, and neither is its rate alone.
 
 **The free article's "no gauge freedom" and what the coupling does to it.** The free polar article records that the free equation fixes the phase's rate and that there is no gauge freedom to fix: $\theta_{\mathrm{pha}}$ is a physical coordinate whose evolution is determined. The coupling does not contradict that; it splits the statement in two. The *rate* of the phase is still determined, and it is the gauge-invariant combination $\mathcal E$ that is determined; the phase itself acquires an arbitrary additive function, and the equation determines only the differences. So a coordinate that was physical becomes a coordinate with a gauge direction, and the direction is exactly the one whose conjugate momentum is the density.
 
@@ -221,12 +221,12 @@ In the constant setting the coupled element is $\tilde H^{\mathrm{gco}}_\Psi=(h_
 In the operator setting, for the central field,
 
 $$
-\partial_{t'}\varrho^{2}+\nabla\cdot\Big(\varrho^{2}\frac{\nabla S-q\vec A}{m}\Big)=0,
+\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot\Big(\varrho^{2}\frac{\vec\nabla_\Phi S-q\vec A}{m}\Big)=0,
 \qquad
-\partial_{t'}S+\frac{|\nabla S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
+\partial_{t'}S+\frac{|\vec\nabla_\Phi S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
 $$
 
-the covariant Madelung pair, with the quantum potential $Q=-\hbar^{2}\Delta \varrho/2m\varrho$ unchanged. The kinetic momentum is invariant, the kinetic energy $-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$ is invariant, the vorticity is $ϙ\vec B/m$, and the circulation around a loop is $\big(2\pi\hbar n+ϙ\Phi_B\big)/m$.
+the covariant Madelung pair, with the quantum potential $Q=-\hbar^{2}\Delta_\Phi \varrho/2m\varrho$ unchanged. The kinetic momentum is invariant, the kinetic energy $-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$ is invariant, the vorticity is $ϙ\vec B/m$, and the circulation around a loop is $\big(2\pi\hbar n+ϙ\Phi_B\big)/m$.
 
 ## Summary of Notation
 
@@ -244,7 +244,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\hbar^{2}\Delta \var
 | $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A$ | The kinetic momentum |
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$ | The kinetic energy |
 | $S=\hbar\theta_{\mathrm{pha}}$ | The action of the flow |
-| $Q=-\hbar^{2}\Delta \varrho/2m\varrho$ | The quantum potential |
+| $Q=-\hbar^{2}\Delta_\Phi \varrho/2m\varrho$ | The quantum potential |
 | $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density; $\rho_{\mathrm{num}}=2n$ |
 | $h_t$, $\vec h_\Psi$ | The canonical energy and momentum of the constant setting |
 | $h_t-ϙ\varphi$, $\vec h_\Psi-q\vec A$ | The kinetic energy and momentum |

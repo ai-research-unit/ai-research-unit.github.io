@@ -54,7 +54,7 @@ is invariant: if $\tilde\nabla_\Phi\tilde{Ξ} = 0$ then $\tilde\nabla_\Phi(\lamb
 
 **Two realizations, which agree on the mass.** The symmetry is a property of the algebra, not of a particular field, but two fields of the corpus carry it, and they are worth displaying side by side because the mass term acts the same way in both.
 
-- **The complex scalar biquaternion field.** Take $\tilde{Ξ} = \xi_{\mathrm{gau}}\,e_t$ with $\xi_{\mathrm{gau}}$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box - k_m^{2})\tilde{Ξ} = 0$. The mass term is *linear* in the field, so under $\tilde{Ξ} \mapsto \lambda\tilde{Ξ}$ both sides acquire the same factor $\lambda$ and the equation is invariant. Here the global $\mathrm{U}(1)$ survives the mass.
+- **The complex scalar biquaternion field.** Take $\tilde{Ξ} = \xi_{\mathrm{gau}}\,e_t$ with $\xi_{\mathrm{gau}}$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box_\Phi - k_m^{2})\tilde{Ξ} = 0$. The mass term is *linear* in the field, so under $\tilde{Ξ} \mapsto \lambda\tilde{Ξ}$ both sides acquire the same factor $\lambda$ and the equation is invariant. Here the global $\mathrm{U}(1)$ survives the mass.
 - **The biquaternion Dirac field.** Take the massless chiral pair of *The Dirac Equation in Biquaternionic Form*, whose two lines are the two Weyl equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. Each line carries one value of a massless fermion; the full massless field is the pair, not either line alone. The massive form is the linear, off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$. Its mass term is *linear* in the field, so it too passes the central phase through unchanged and the global $\mathrm{U}(1)$ survives the mass. The mass term nonetheless plays a distinguished role: it relates the two parts of the subscript, and it is the **axial** symmetry, not the phase symmetry, that it breaks — a point taken up in §*The Mass Term and the Axial Symmetry* below. The two-sided form of the same physics is recorded there as well, because it is the form in which the mass is a multiplication on the right rather than a pairing.
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -166,7 +166,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} = \underbrace{\left(\partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_t + \sum_{\eta=1}^{3}\left(\partial/\partial R_t\,A_\eta - \partial/\partial R_\eta A_0\right)\vec e_\eta - \mathrm{rot}\,\vec A.
 $$
 
-The scalar part is the **gauge scalar** $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ of the Maxwell article, which transforms as $S_2 = S - \Box\Gamma$ and is therefore pure gauge. The vector part is gauge invariant. Define the **field-strength biquaternion** as the vector part,
+The scalar part is the **gauge scalar** $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ of the Maxwell article, which transforms as $S_2 = S - \Box_\Phi\Gamma$ and is therefore pure gauge. The vector part is gauge invariant. Define the **field-strength biquaternion** as the vector part,
 
 $$
 \tilde{F} = \mathrm{Vect}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = (\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi} - S .
@@ -210,7 +210,7 @@ The field strength is the **commutator of two covariant derivatives**, contracte
 
 ### The homogeneous equations are an identity, not an equation of motion
 
-Because $\tilde{F}$ is *constructed* from $\tilde{A}_{\Phi}$ — its electric components are $F_{0\eta} = \partial/\partial R_t\,A_\eta - \partial/\partial R_\eta A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial r'_t\vec A - \nabla\xi_{\mathrm{scp}}$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, the homogeneous equations are not independent.
+Because $\tilde{F}$ is *constructed* from $\tilde{A}_{\Phi}$ — its electric components are $F_{0\eta} = \partial/\partial R_t\,A_\eta - \partial/\partial R_\eta A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial/\partial r'_t\vec A - \vec\nabla_\Phi\xi_{\mathrm{scp}}$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, the homogeneous equations are not independent.
 
 ## The Gauge Principle and the Maxwell Field
 
@@ -432,7 +432,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\bar{\tilde{Ξ}} = \tilde{Ξ}^*i\vec e_x$ | the Dirac adjoint, a pairing of two states and not an action on one |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | the material and informational sectors |
 | $\mathbb{B}_{C}$ | the complex scalar subspace, the centre of the algebra |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | the biquaternionic gradient, its quaternion conjugate, the d'Alembertian |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | the biquaternionic gradient, its quaternion conjugate, the d'Alembertian |
 | $\bar e_\mu$ | the conjugate basis, $\bar e_t = e_t$ and $\bar e_\eta = -\vec e_\eta$ |
 | $\lambda = \exp(i\theta_{\mathrm{gau}})$ | the local central phase; $\Gamma$ a real scalar |
 | $ϙ$ | the coupling constant (charge), not fixed by the algebra |
@@ -440,7 +440,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\tilde{A}_{\Phi,2} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$ | the gauge transformation of the connection |
 | $D\tilde{Ξ} = \tilde\nabla_\Phi\tilde{Ξ} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}$ | the covariant derivative, written as an action |
 | $D_\mu = \partial/\partial R_\mu +\frac{i\,ϙ}{\hbar}A_\mu$ | its components |
-| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box\Gamma$ | the gauge scalar; Lorenz gauge $S = 0$ |
+| $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2 = S - \Box_\Phi\Gamma$ | the gauge scalar; Lorenz gauge $S = 0$ |
 | $\tilde{F} = \mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ | the field strength, the curvature |
 | $F_{\mu\nu} = \partial/\partial R_\mu A_\nu - \partial/\partial R_\nu A_\mu$ | the abelian curvature components |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | the one-sided chiral pair; the mass is linear in the field |

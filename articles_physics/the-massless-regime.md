@@ -208,7 +208,7 @@ $$
 **The discriminant is non-zero on the stratum.**
 
 $$
-\Delta=4Q_t^{2}-4N=4Q_t^{2}\neq0 .
+\Delta_\Phi=4Q_t^{2}-4N=4Q_t^{2}\neq0 .
 $$
 
 So the stratum is the locus of elements with vanishing norm and non-vanishing discriminant. In the $2\times2$ matrix images the sentence reads: the determinant is zero and the discriminant is not. That is the exact opposite of the previous stratum, where the determinant was non-zero and the discriminant was not.
@@ -216,7 +216,7 @@ So the stratum is the locus of elements with vanishing norm and non-vanishing di
 **The two gradients are independent.**
 
 $$
-\nabla N=2(Q_t,\vec Q),\qquad \nabla B^{2}=2(0,\vec Q),
+\vec\nabla_\Phi N=2(Q_t,\vec Q),\qquad \vec\nabla_\Phi B^{2}=2(0,\vec Q),
 $$
 
 and they are proportional only if $Q_t=0$ or $\vec Q=0$, neither of which holds on the stratum. So the null cone and the spectral cone cross transversally along the whole stratum, and their intersection — the doubly degenerate stratum — is nowhere dense in the null cone there.

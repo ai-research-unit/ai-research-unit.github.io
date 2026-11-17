@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops Fueter theory in the split biquaternion setting: the Fueter operator, the functions it defines, the construction that produces them from holomorphic functions of one complex variable, and the relation to the biquaternion and split quaternion theories. It follows *Split-Biquaternion Analysis* and *Split-Biquaternion Regular Functions*, where the Cauchy–Riemann operator $\tilde{\nabla}$ and its conjugate $\tilde{\nabla}^{\natural}$ were constructed, and it uses the algebra and the zero divisors of *Split-Biquaternion Algebra* and *Split-Biquaternion Zero Divisors*.
+This article develops Fueter theory in the split biquaternion setting: the Fueter operator, the functions it defines, the construction that produces them from holomorphic functions of one complex variable, and the relation to the biquaternion and split quaternion theories. It follows *Split-Biquaternion Analysis* and *Split-Biquaternion Regular Functions*, where the Cauchy–Riemann operator $\tilde\nabla_\Phi$ and its conjugate $(\tilde\nabla_\Phi)^{\natural}$ were constructed, and it uses the algebra and the zero divisors of *Split-Biquaternion Algebra* and *Split-Biquaternion Zero Divisors*.
 
 The treatment is purely mathematical, and no theorem is asserted beyond its hypotheses. Throughout the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_x^2 = \vec e_y^2 = \vec e_z^2 = -e_t$, the central split complex unit is $j$ with $j^2 = +e_t$, and a split biquaternion is $\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}} Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{C}_{\mathrm{spl}}$. On the quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ the coordinates are real, $\tilde{Q} = \sum_\mu q_\mu e_\mu$, with $\vec q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, $\rho = \|\vec q\|$, $\vec u_{\mathrm d} = \vec q/\rho$, .
 
@@ -14,31 +14,31 @@ The treatment is purely mathematical, and no theorem is asserted beyond its hypo
 On the quaternion subspace the **Fueter operator**, also called the **Cauchy–Riemann–Fueter operator**, is the split-biquaternion-valued first-order operator
 
 $$
-\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial/\partial Q_\mu = \partial/\partial Q_t + \vec D , \qquad \vec D = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z ,
+\tilde\nabla_\Phi = \sum_{\mu\in\{t,x,y,z\}} e_\mu\,\partial/\partial Q_\mu = \partial/\partial Q_t + \vec D , \qquad \vec D = \vec e_x\partial/\partial Q_x + \vec e_y\partial/\partial Q_y + \vec e_z\partial/\partial Q_z ,
 $$
 
-acting on the left. Its **conjugate** is obtained by negating the vector part, $\tilde{\nabla}^{\natural} = \partial/\partial Q_t - \vec D$. This is the split biquaternion case of the Cauchy–Riemann operator; the older name for it in the physics literature is not used here.
+acting on the left. Its **conjugate** is obtained by negating the vector part, $(\tilde\nabla_\Phi)^{\natural} = \partial/\partial Q_t - \vec D$. This is the split biquaternion case of the Cauchy–Riemann operator; the older name for it in the physics literature is not used here.
 
 ### Factorization of the Laplacian
 
-**Proposition.** On the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4 e_t$, where $\Delta_4 = \sum_{\mu\in\{t,x,y,z\}}\partial^2/\partial Q_\mu^2$.
+**Proposition.** On the quaternion subspace, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_4 e_t$, where $\Delta_4 = \sum_{\mu\in\{t,x,y,z\}}\partial^2/\partial Q_\mu^2$.
 
-**Proof.** Expand $\tilde{\nabla}\tilde{\nabla}^{\natural} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural}\,\partial^2/\partial Q_\mu\partial Q_\nu$ with $e_t^{\natural} = e_t$ and $\vec e_\mu^{\natural} = -\vec e_\mu$. The diagonal term is $\sum_\mu e_\mu e_\mu^{\natural}\,\partial^2/\partial Q_\mu^2 = \Delta_4 e_t$, since $\vec e_\mu \vec e_\mu^{\natural} = -\vec e_\mu^2 = e_t$; the off-diagonal coefficient $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$ vanishes by anticommutativity of the units. The same argument gives $\tilde{\nabla}^{\natural}\tilde{\nabla}$.
+**Proof.** Expand $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \sum_{\mu,\nu} e_\mu e_\nu^{\natural}\,\partial^2/\partial Q_\mu\partial Q_\nu$ with $e_t^{\natural} = e_t$ and $\vec e_\mu^{\natural} = -\vec e_\mu$. The diagonal term is $\sum_\mu e_\mu e_\mu^{\natural}\,\partial^2/\partial Q_\mu^2 = \Delta_4 e_t$, since $\vec e_\mu \vec e_\mu^{\natural} = -\vec e_\mu^2 = e_t$; the off-diagonal coefficient $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural}$ vanishes by anticommutativity of the units. The same argument gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$.
 
 ### Relation to the Cauchy–Riemann Operator
 
-The factorization makes $\tilde{\nabla}$ a square root of the Laplacian: with $\vec D^2 = -\Delta_3 e_t$ one has $(\partial/\partial Q_t+\vec D)(\partial/\partial Q_t-\vec D) = \partial^2/\partial Q_t^2+\Delta_3 = \Delta_4$. On a slice $\mathbb{C}_I$ (below), the part of $\tilde{\nabla}$ differentiating along the slice is the complex Cauchy–Riemann operator $\partial/\partial q_t + I\,\partial/\partial\rho$, so $\tilde{\nabla}F_{\mathrm{fn}} = 0$ is the quaternionic Cauchy–Riemann equation. In Clifford language $\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{0,3}$, and Fueter-regular functions are its **monogenic** functions.
+The factorization makes $\tilde\nabla_\Phi$ a square root of the Laplacian: with $\vec D^2 = -\Delta_3 e_t$ one has $(\partial/\partial Q_t+\vec D)(\partial/\partial Q_t-\vec D) = \partial^2/\partial Q_t^2+\Delta_3 = \Delta_4$. On a slice $\mathbb{C}_I$ (below), the part of $\tilde\nabla_\Phi$ differentiating along the slice is the complex Cauchy–Riemann operator $\partial/\partial q_t + I\,\partial/\partial\rho$, so $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ is the quaternionic Cauchy–Riemann equation. In Clifford language $\mathbb{H}$ is the even subalgebra of $\mathrm{Cl}_{0,3}$, and Fueter-regular functions are its **monogenic** functions.
 
 ## Fueter-Regular Functions
 
 ### Left and Right Regularity
 
-**Definition.** Let $F_{\mathrm{fn}} : \Omega \to \mathbb{B}_{\mathrm{spl}}$ be differentiable on an open set $\Omega \subseteq \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. Then $F_{\mathrm{fn}}$ is **left-regular** if $\tilde{\nabla}F_{\mathrm{fn}} = 0$, and **right-regular** if $F_{\mathrm{fn}}\tilde{\nabla} = \sum_\mu \partial/\partial Q_\mu\,F_{\mathrm{fn}}\,e_\mu = 0$.
+**Definition.** Let $F_{\mathrm{fn}} : \Omega \to \mathbb{B}_{\mathrm{spl}}$ be differentiable on an open set $\Omega \subseteq \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$. Then $F_{\mathrm{fn}}$ is **left-regular** if $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$, and **right-regular** if $F_{\mathrm{fn}}\tilde\nabla_\Phi = \sum_\mu \partial/\partial Q_\mu\,F_{\mathrm{fn}}\,e_\mu = 0$.
 
 The two conditions differ because the algebra is noncommutative; left-regular functions are stable under right multiplication by quaternion constants and right-regular functions under left multiplication, neither being stable on the other side in general. On the full algebra the operator is the idempotent-split pair of quaternion operators, so a function is regular if and only if both of its idempotent components are regular:
 
 $$
-\tilde{\nabla}F_{\mathrm{fn}} = \left(\tilde{\nabla}F_{\mathrm{fn},+}\right)\tilde\Pi_1 + \left(\tilde{\nabla}F_{\mathrm{fn},-}\right)\tilde\Pi_2 = 0 \iff \tilde{\nabla}F_{\mathrm{fn},+} = \tilde{\nabla}F_{\mathrm{fn},-} = 0 .
+\tilde\nabla_\Phi F_{\mathrm{fn}} = \left(\tilde\nabla_\Phi F_{\mathrm{fn},+}\right)\tilde\Pi_1 + \left(\tilde\nabla_\Phi F_{\mathrm{fn},-}\right)\tilde\Pi_2 = 0 \iff \tilde\nabla_\Phi F_{\mathrm{fn},+} = \tilde\nabla_\Phi F_{\mathrm{fn},-} = 0 .
 $$
 
 ### The Componentwise System
@@ -46,7 +46,7 @@ $$
 Writing $F_{\mathrm{fn}} = \sum_\mu F_\mu e_\mu$ and $\vec F = F_1\vec e_x+F_2\vec e_y+F_3\vec e_z$, the scalar-vector decomposition gives
 
 $$
-\tilde{\nabla}F_{\mathrm{fn}} = \left(\partial/\partial Q_t\,F_0 - \mathrm{div}\,\vec F\right) + \left(\partial/\partial Q_t\,\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right) ,
+\tilde\nabla_\Phi F_{\mathrm{fn}} = \left(\partial/\partial Q_t\,F_0 - \mathrm{div}\,\vec F\right) + \left(\partial/\partial Q_t\,\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right) ,
 $$
 
 with $\mathrm{div}\,\vec F = \sum_{\mu\in\{x,y,z\}}\partial/\partial Q_\mu\,F_\mu$, $\mathrm{grad}\,F_0 = \sum_{\mu\in\{x,y,z\}}(\partial/\partial Q_\mu\,F_0)\vec e_\mu$ and $\mathrm{rot}\,\vec F = \sum_{\mu,\nu,\lambda\in\{x,y,z\}}\epsilon_{\mu\nu\lambda}(\partial/\partial Q_\mu\,F_\nu)\vec e_\lambda$. Hence left-regularity is
@@ -61,7 +61,7 @@ the quaternionic Cauchy–Riemann–Fueter system, one algebra equation equivale
 
 **Proposition.** Every left- or right-regular function is harmonic for the four-dimensional Laplacian: $\Delta_4F_{\mathrm{fn}} = 0$ componentwise.
 
-**Proof.** If $\tilde{\nabla}F_{\mathrm{fn}} = 0$, then $\Delta_4F_{\mathrm{fn}} = \tilde{\nabla}^{\natural}(\tilde{\nabla}F_{\mathrm{fn}}) = 0$; if $F_{\mathrm{fn}}\tilde{\nabla} = 0$, then $\Delta_4F_{\mathrm{fn}} = (F_{\mathrm{fn}}\tilde{\nabla})\tilde{\nabla}^{\natural} = 0$ with the operators acting on the right.
+**Proof.** If $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$, then $\Delta_4F_{\mathrm{fn}} = (\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi F_{\mathrm{fn}}) = 0$; if $F_{\mathrm{fn}}\tilde\nabla_\Phi = 0$, then $\Delta_4F_{\mathrm{fn}} = (F_{\mathrm{fn}}\tilde\nabla_\Phi)(\tilde\nabla_\Phi)^{\natural} = 0$ with the operators acting on the right.
 
 Consequently every regular function is real-analytic and satisfies the maximum principle, Liouville's theorem, the identity theorem and the Cauchy estimates on the quaternion subspace, where the system is elliptic. Since each component is harmonic, the **mean value property** holds: for $F_{\mathrm{fn}}$ regular near the closed ball $\bar{B}(\tilde{Q}_0,r)$,
 
@@ -95,7 +95,7 @@ $$
 
 is defined and real-analytic on $B(0,R)$, by continuity at $\rho = 0$, and is both left- and right-Fueter-regular there.
 
-**Proof.** For $g = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ one has $\tilde{\nabla}g = g\tilde{\nabla}  = (\partial/\partial Q_t\,A - \partial/\partial\rho B - 2B/\rho) + \vec u_{\mathrm d}(\partial/\partial Q_t\,B + \partial/\partial\rho A)$, using $\vec u_{\mathrm d}^2 = -1$ and $\sum_{\mu,\nu\in\{x,y,z\}}(\partial/\partial q_\mu\,(\vec u_{\mathrm d})_\nu)\vec e_\mu \vec e_\nu = (-3-\vec u_{\mathrm d}^2)/\rho = -2/\rho$; so $g$ is left-regular exactly when it is right-regular, and this holds when $\partial/\partial Q_t\,A = \partial/\partial\rho B + 2B/\rho$ and $\partial/\partial Q_t\,B = -\partial/\partial\rho A$. Applying $\Delta_4$ to the axial extension and using the radial Laplacian identity gives the two scalar coefficients $2u_\rho/\rho$ and $2(\rho v_\rho - v)/\rho^2$, whose Cauchy–Riemann relations are exactly the two conditions.
+**Proof.** For $g = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ one has $\tilde\nabla_\Phig = g\tilde\nabla_\Phi  = (\partial/\partial Q_t\,A - \partial/\partial\rho B - 2B/\rho) + \vec u_{\mathrm d}(\partial/\partial Q_t\,B + \partial/\partial\rho A)$, using $\vec u_{\mathrm d}^2 = -1$ and $\sum_{\mu,\nu\in\{x,y,z\}}(\partial/\partial q_\mu\,(\vec u_{\mathrm d})_\nu)\vec e_\mu \vec e_\nu = (-3-\vec u_{\mathrm d}^2)/\rho = -2/\rho$; so $g$ is left-regular exactly when it is right-regular, and this holds when $\partial/\partial Q_t\,A = \partial/\partial\rho B + 2B/\rho$ and $\partial/\partial Q_t\,B = -\partial/\partial\rho A$. Applying $\Delta_4$ to the axial extension and using the radial Laplacian identity gives the two scalar coefficients $2u_\rho/\rho$ and $2(\rho v_\rho - v)/\rho^2$, whose Cauchy–Riemann relations are exactly the two conditions.
 
 ### The Kernel and Injectivity
 
@@ -137,13 +137,13 @@ A series with split biquaternion coefficients placed on the right, $f(\tilde{Q})
 
 $$
 \boxed{\;
-\tilde{\nabla}\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0
+\tilde\nabla_\Phi\tilde{Q} = \sum_{\mu\in\{t,x,y,z\}}e_\mu e_\mu = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = -2e_t \neq 0
 \;}.
 $$
 
 The Fueter construction is precisely the operation converting slice-regular, or holomorphic, data into Fueter-regular functions.
 
-For real Taylor coefficients, term-by-term application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n\ge0}a_n\Delta_4(\tilde{Q}^n)$, beginning at $n = 2$ and converging normally on $B(0,R)$ because $\Delta_4(\tilde{Q}^n)$ is homogeneous of degree $n-2$ with at most polynomial growth in $n$. In general, with $\mathcal{P}_k$ the algebra-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P\in\mathcal{P}_k : \tilde{\nabla}P = 0\}$ the monogenic ones, the Fischer decomposition $\mathcal{P}_k = \bigoplus_{j=0}^{k}\tilde{Q}^j\mathcal{M}_{k-j}$ gives every Fueter-regular function on the ball a normally convergent expansion into monogenic homogeneous pieces, the analogue of the Taylor series of complex analysis.
+For real Taylor coefficients, term-by-term application of $\Delta_4$ gives the induced series $\tau(f_0) = \sum_{n\ge0}a_n\Delta_4(\tilde{Q}^n)$, beginning at $n = 2$ and converging normally on $B(0,R)$ because $\Delta_4(\tilde{Q}^n)$ is homogeneous of degree $n-2$ with at most polynomial growth in $n$. In general, with $\mathcal{P}_k$ the algebra-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P\in\mathcal{P}_k : \tilde\nabla_\Phi P = 0\}$ the monogenic ones, the Fischer decomposition $\mathcal{P}_k = \bigoplus_{j=0}^{k}\tilde{Q}^j\mathcal{M}_{k-j}$ gives every Fueter-regular function on the ball a normally convergent expansion into monogenic homogeneous pieces, the analogue of the Taylor series of complex analysis.
 
 ## The Split Biquaternionic Case
 
@@ -159,7 +159,7 @@ The split quaternion theory, by contrast, is the four-dimensional algebra $\math
 
 ## Summary
 
-The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\,\partial/\partial Q_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4e_t$, and left-regularity $\tilde{\nabla}F_{\mathrm{fn}} = 0$ and right-regularity $F_{\mathrm{fn}}\tilde{\nabla} = 0$ differ only in the sign of the curl term of the componentwise system, coinciding for axially symmetric functions; every regular function is harmonic, hence real-analytic on the quaternion subspace, and satisfies the mean value property. On the full algebra regularity is the pair of quaternionic regularities of the two idempotent components, a splitting with no counterpart in the simple biquaternion algebra. The Fueter construction sends a holomorphic $f_0$ to the induced function $\Delta_4f_{\mathrm{ax},0} = 2u_\rho/\rho + \vec u_{\mathrm d}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two, and the Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. The imaginary units of the full algebra form the four-dimensional manifold $S^2\times S^2$ rather than a sphere, so the slice approach must select one root at a time. On the quaternion subspace the origin is the only singularity; on the full algebra the coefficient ring is the split complex algebra and the singular set is the union of the two ideals, a union of two linear four-spaces rather than a quadric, this being the exact difference from the biquaternion theory, whose singular set is the six-dimensional null quadric and whose operator loses ellipticity over $\mathbb{C}$.
+The Fueter operator $\tilde\nabla_\Phi = \sum_\mu e_\mu\,\partial/\partial Q_\mu$ and its conjugate factor the four-dimensional Laplacian on the quaternion subspace, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_4e_t$, and left-regularity $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ and right-regularity $F_{\mathrm{fn}}\tilde\nabla_\Phi = 0$ differ only in the sign of the curl term of the componentwise system, coinciding for axially symmetric functions; every regular function is harmonic, hence real-analytic on the quaternion subspace, and satisfies the mean value property. On the full algebra regularity is the pair of quaternionic regularities of the two idempotent components, a splitting with no counterpart in the simple biquaternion algebra. The Fueter construction sends a holomorphic $f_0$ to the induced function $\Delta_4f_{\mathrm{ax},0} = 2u_\rho/\rho + \vec u_{\mathrm d}(2v_\rho/\rho - 2v/\rho^2)$, which is both left- and right-regular; it is $\mathbb{C}$-linear with the affine functions as kernel, hence injective exactly for holomorphic functions whose Taylor coefficients vanish to order two, and the Fueter–Sce theorem extends it to odd-dimensional Clifford algebras with the power $(n-1)/2$ under the hypotheses of holomorphic convergence, order-two vanishing and odd dimension. The imaginary units of the full algebra form the four-dimensional manifold $S^2\times S^2$ rather than a sphere, so the slice approach must select one root at a time. On the quaternion subspace the origin is the only singularity; on the full algebra the coefficient ring is the split complex algebra and the singular set is the union of the two ideals, a union of two linear four-spaces rather than a quadric, this being the exact difference from the biquaternion theory, whose singular set is the six-dimensional null quadric and whose operator loses ellipticity over $\mathbb{C}$.
 
 ## Summary of Notation
 
@@ -169,10 +169,10 @@ The Fueter operator $\tilde{\nabla} = \sum_\mu e_\mu\,\partial/\partial Q_\mu$ a
 | $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ | Quaternion subspace, the domain of Fueter theory |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$, $Q_\mu \in \mathbb{C}_{\mathrm{spl}}$ | Split biquaternion; real coefficients on the quaternion subspace |
 | $\vec q = \sum_{\mu\in\{x,y,z\}} q_\mu\vec e_\mu$, $\rho = \|\vec q\|$, $\vec u_{\mathrm d} = \vec q/\rho$ | Vector part, its modulus, its direction |
-| $\tilde{\nabla} = \partial/\partial Q_t + \vec D$, $\vec D = \sum_{\mu\in\{x,y,z\}} \vec e_\mu\,\partial/\partial Q_\mu$ | Fueter operator, acting on the left |
-| $\tilde{\nabla}^{\natural} = \partial/\partial Q_t - \vec D$ | Conjugate Fueter operator |
-| $\Delta_4 = \sum_\mu\partial^2/\partial Q_\mu^2$ | Four-dimensional Laplacian, $\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \Delta_4e_t$ |
-| $F_{\mathrm{fn}}$ left-regular / right-regular | $\tilde{\nabla}F_{\mathrm{fn}} = 0$ / $F_{\mathrm{fn}}\tilde{\nabla} = 0$ |
+| $\tilde\nabla_\Phi = \partial/\partial Q_t + \vec D$, $\vec D = \sum_{\mu\in\{x,y,z\}} \vec e_\mu\,\partial/\partial Q_\mu$ | Fueter operator, acting on the left |
+| $(\tilde\nabla_\Phi)^{\natural} = \partial/\partial Q_t - \vec D$ | Conjugate Fueter operator |
+| $\Delta_4 = \sum_\mu\partial^2/\partial Q_\mu^2$ | Four-dimensional Laplacian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_4e_t$ |
+| $F_{\mathrm{fn}}$ left-regular / right-regular | $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ / $F_{\mathrm{fn}}\tilde\nabla_\Phi = 0$ |
 | $I$, $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | Imaginary unit, $I^2 = -1$; slice |
 | $A, B$ | Axial coefficients, $F_{\mathrm{fn}} = A(q_t,\rho) + \vec u_{\mathrm d}B(q_t,\rho)$ |
 | $f_{\mathrm{ax},0}$, $\Delta_4f_{\mathrm{ax},0}$ | Axial extension of $f_0$ and its Fueter-induced function |

@@ -53,7 +53,7 @@ $$
 =\epsilon\vec E^2-\frac{\vec B^2}{\mu}+\frac{2i}{c}\,\vec E\cdot\vec B ,
 $$
 
-so that $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)=\tfrac12(\epsilon\vec E^2-\vec B^2/\mu)$, which is the Maxwell Lagrangian density. The imaginary part is proportional to $\vec E\cdot\vec B$, the invariant $I_2$, and it is the term whose integral is a surface term: $\vec E\cdot\vec B=-\nabla\cdot(a'_t\vec B)-\partial_{t'}(\vec A\cdot\vec B)/c$ up to the signs of the corpus's conventions. It therefore drops from the variation and contributes nothing to the equation; it is the $F\tilde F$ term of the standard theory, and its absence from the equation is why the action can be written with the real part alone.
+so that $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)=\tfrac12(\epsilon\vec E^2-\vec B^2/\mu)$, which is the Maxwell Lagrangian density. The imaginary part is proportional to $\vec E\cdot\vec B$, the invariant $I_2$, and it is the term whose integral is a surface term: $\vec E\cdot\vec B=-\vec\nabla_\Phi\cdot(a'_t\vec B)-\partial_{t'}(\vec A\cdot\vec B)/c$ up to the signs of the corpus's conventions. It therefore drops from the variation and contributes nothing to the equation; it is the $F\tilde F$ term of the standard theory, and its absence from the equation is why the action can be written with the real part alone.
 
 **The mass term is the invariant length.** $\langle\tilde A_\Phi\rangle_\natural$ is the Minkowski square of the four-vector and it is real, so $\tfrac12k_m^2\langle\tilde A_\Phi\rangle_\natural$ is real and quadratic in the potential. There is no other quadratic invariant of a real four-vector, so the mass term is fixed up to its coefficient.
 
@@ -89,12 +89,12 @@ and it is four real equations, one per component. The count is the count of the 
 
 ## The Lorenz Condition Is a Consequence
 
-**The divergence argument.** Apply the conjugate gradient to the equation and take the scalar part. The left side is $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde F)$, which vanishes identically for a pure-vector $\tilde F$ because the scalar part of $\tilde\nabla^{\natural}\tilde\nabla$ applied to a vector is a total divergence of an antisymmetric object; the right side is $k_m^2\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)=k_m^2S$. So
+**The divergence argument.** Apply the conjugate gradient to the equation and take the scalar part. The left side is $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde F)$, which vanishes identically for a pure-vector $\tilde F$ because the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ applied to a vector is a total divergence of an antisymmetric object; the right side is $k_m^2\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)=k_m^2S$. So
 
 $$
 k_m^2S=0
 \qquad\Longrightarrow\qquad
-S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\frac{\partial a'_t}{\partial r'_t}+\nabla\cdot\vec A=0 ,
+S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\frac{\partial a'_t}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec A=0 ,
 $$
 
 which is the Lorenz condition. The parent proves the identity; this article records what the variational reading adds, which is the interpretation and not the proof.
@@ -163,10 +163,10 @@ symmetric term by term: the improvement was needed to symmetrise the canonical f
 **A toroidal family.** Because the action implies the Lorenz condition and hence the componentwise Klein–Gordon equation, solutions can be built from scalar ones. Take a real scalar $\psi$ with $(\Box_\Phi-k_m^2)\psi=0$ and set
 
 $$
-\vec A=\nabla\psi\times\vec r ,\qquad a'_t=0 .
+\vec A=\vec\nabla_\Phi\psi\times\vec r ,\qquad a'_t=0 .
 $$
 
-Then $\nabla\cdot\vec A=\vec r\cdot(\nabla\times\nabla\psi)-\nabla\psi\cdot(\nabla\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\nabla(\Box_\Phi\psi)\times\vec r=k_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(k'_t r'_t)$ and $\kappa^2=k'^2_t-k_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
+Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nabla\psi)-\vec\nabla_\Phi\psi\cdot(\vec\nabla_\Phi\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\vec\nabla_\Phi(\Box_\Phi\psi)\times\vec r=k_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(k'_t r'_t)$ and $\kappa^2=k'^2_t-k_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
 
 **No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $k_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.
 

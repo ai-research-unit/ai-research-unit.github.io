@@ -115,7 +115,7 @@ $$
 \tag{3.11, 3.12}
 $$
 
-which the paper expands into a two-line vector form, its (3.13), and then into the four-equation form of its (3.14). Here $D = (\partial/\partial r'_t, \nabla)$ is the gradient biquaternion and $DF$ is its product on the left with $F$, its (3.8) and (3.9) giving the left and right actions. The paper states in the same place that (3.11), (3.12) and (3.13) are each equivalent to (3.14), which is the component form; the later sections cite the same equation as (3.11), (3.13) and (3.14) interchangeably, and the numbers are reproduced here as the paper prints them rather than regularised.
+which the paper expands into a two-line vector form, its (3.13), and then into the four-equation form of its (3.14). Here $D = (\partial/\partial r'_t, \vec\nabla_\Phi)$ is the gradient biquaternion and $DF$ is its product on the left with $F$, its (3.8) and (3.9) giving the left and right actions. The paper states in the same place that (3.11), (3.12) and (3.13) are each equivalent to (3.14), which is the component form; the later sections cite the same equation as (3.11), (3.13) and (3.14) interchangeably, and the numbers are reproduced here as the paper prints them rather than regularised.
 
 This is the whole content of the derivation: one conservation law, one quadratic form, one gradient. The corpus's own *Exercise: The Electromagnetic Energy–Momentum Tensor* obtains the four-divergence balance $\sum_\mu\varepsilon_\mu\,\partial T_{\mu\nu}/\partial R_\mu = -f_\nu$ from the field-strength bilinear; the paper's route is the same balance written as a biquaternion and set to zero, and the two sections are companion interpretations of the same law.
 
@@ -125,12 +125,12 @@ Every version of the system that the paper writes down was recomputed against th
 
 | Paper's equation | Content | Residual against $\mathrm{Re}\{F^{*}DF\}$ |
 |---|---|---|
-| (3.14), first line | $E\cdot(\partial/\partial r'_tE - \nabla\times H) + H\cdot(\partial/\partial r'_tH + \nabla\times E) = 0$ | $1.8 \times 10^{-15}$ |
+| (3.14), first line | $E\cdot(\partial/\partial r'_tE - \vec\nabla_\Phi\times H) + H\cdot(\partial/\partial r'_tH + \vec\nabla_\Phi\times E) = 0$ | $1.8 \times 10^{-15}$ |
 | (3.14), second line | $e_tE + g_0H + H\times J_0 - E\times I_0 = 0$ | $1.8 \times 10^{-15}$ |
 | (7.5) first | $J_0\cdot E + I_0\cdot H = 0$ | $1.8 \times 10^{-15}$ |
 | (7.5) second | $e_tE + g_0H - J_0\times H + I_0\times E = 0$ | $1.8 \times 10^{-15}$ |
-| (4.4) first | $\partial/\partial r'_t\,W + \nabla\cdot S = 0$ | $2.7 \times 10^{-15}$ |
-| (4.4) second | $\partial/\partial r'_tS + \nabla W = Q$ | $3.6 \times 10^{-15}$ |
+| (4.4) first | $\partial/\partial r'_t\,W + \vec\nabla_\Phi\cdot S = 0$ | $2.7 \times 10^{-15}$ |
+| (4.4) second | $\partial/\partial r'_tS + \vec\nabla_\Phi W = Q$ | $3.6 \times 10^{-15}$ |
 | (5.1)–(5.5) | $\partial/\partial r'_tS_\alpha - \partial/\partial R_\beta\sigma_{\alpha\beta} = 0$ | $3.6 \times 10^{-15}$ |
 
 The first and third rows are the scalar part of the identity, the second and fourth its vector part, and the last three rows its energy, momentum and tensor forms. The rows are not independent restatements for their own sake. The first is the component system the derivation yields; the third and fourth are the same system read in terms of the **regular currents** of section 7; the fifth and sixth are its energy and momentum content; and the last is the statement that the divergence of the **energy–momentum tensor** vanishes. The paper's section 5 goes from the tensor to (3.14) and section 4 goes from (3.14) to the energy form, and both directions are exact. In the tensor form the energy density, the momentum density and the Maxwell stress enter as
@@ -151,9 +151,9 @@ The caution the paper itself attaches belongs here: the nonlinear equation is **
 The four regular currents of (7.3) are
 
 $$
-e_t = \nabla\cdot\vec E, \qquad g_0 = \nabla\cdot\vec H, \qquad
-\vec J_0 = \partial/\partial r'_t\vec E - \nabla\times\vec H, \qquad
-\vec I_0 = \partial/\partial r'_t\vec H + \nabla\times\vec E,
+e_t = \vec\nabla_\Phi\cdot\vec E, \qquad g_0 = \vec\nabla_\Phi\cdot\vec H, \qquad
+\vec J_0 = \partial/\partial r'_t\vec E - \vec\nabla_\Phi\times\vec H, \qquad
+\vec I_0 = \partial/\partial r'_t\vec H + \vec\nabla_\Phi\times\vec E,
 \tag{7.3}
 $$
 
@@ -192,14 +192,14 @@ The definitions (7.3) coincide in form with Maxwell's equations in the symmetric
 The paper then states, as its (7.6), that the regular charges and currents satisfy the continuity conditions
 
 $$
-\frac{\partial e_t}{\partial r'_t} + \nabla\cdot\vec J_0 = 0, \qquad
-\frac{\partial g_0}{\partial r'_t} - \nabla\cdot\vec I_0 = 0.
+\frac{\partial e_t}{\partial r'_t} + \vec\nabla_\Phi\cdot\vec J_0 = 0, \qquad
+\frac{\partial g_0}{\partial r'_t} - \vec\nabla_\Phi\cdot\vec I_0 = 0.
 \tag{7.6}
 $$
 
-**The first line is wrong as printed.** From the definitions, $\partial/\partial r'_te_t = \partial/\partial r'_t\nabla\cdot\vec E = \nabla\cdot\partial/\partial r'_t\vec E$, and $\nabla\cdot\vec J_0 = \nabla\cdot(\partial/\partial r'_t\vec E - \nabla\times\vec H) = \nabla\cdot\partial/\partial r'_t\vec E$, since the divergence of a curl vanishes. The two are **equal**, not opposite, so the relation that holds is
+**The first line is wrong as printed.** From the definitions, $\partial/\partial r'_te_t = \partial/\partial r'_t\nabla\cdot\vec E = \vec\nabla_\Phi\cdot\partial/\partial r'_t\vec E$, and $\vec\nabla_\Phi\cdot\vec J_0 = \vec\nabla_\Phi\cdot(\partial/\partial r'_t\vec E - \vec\nabla_\Phi\times\vec H) = \vec\nabla_\Phi\cdot\partial/\partial r'_t\vec E$, since the divergence of a curl vanishes. The two are **equal**, not opposite, so the relation that holds is
 
-$$\boxed{\;\frac{\partial e_t}{\partial r'_t} - \nabla\cdot\vec J_0 = 0\;},$$
+$$\boxed{\;\frac{\partial e_t}{\partial r'_t} - \vec\nabla_\Phi\cdot\vec J_0 = 0\;},$$
 
 and the printed sum is not zero but twice $\partial/\partial r'_t\nabla\cdot\vec E$, which is $4.9$ at worst over $100$ random samplings of a smooth test field and generically nonzero. The second line is correct as printed, and the two lines are then consistent with each other and with the electric–magnetic symmetry the paper uses everywhere else: the electric pair and the magnetic pair carry the **same** relative sign once the magnetic current is the dual of the electric one. The relation is a consequence of the definitions and of the equality of mixed partial derivatives — a Clairaut identity — which is why the paper could reasonably call it easy to verify and still get one sign wrong.
 
@@ -248,11 +248,11 @@ The paper also gives the covariant form, its (12.11): $F = F_0\exp(i\theta_{\mat
 The paper also derives the charge from the singularity. Applying the gradient to the Coulomb field (12.10) in the rest frame gives its (13.16),
 
 $$
-J_1 = DF = \nabla\cdot\frac{\alpha\,\vec r}{r^3} = 4\pi\alpha\,\delta(\vec r),
+J_1 = DF = \vec\nabla_\Phi\cdot\frac{\alpha\,\vec r}{r^3} = 4\pi\alpha\,\delta(\vec r),
 \tag{13.16}
 $$
 
-by the identity $\nabla\cdot(\vec r/r^3) = 4\pi\delta(\vec r)$ of its (13.15). Comparing that with the singular four-current $e\gamma(1,\vec v)\delta(\vec r - \vec r_1)$ of its (13.13) gives
+by the identity $\vec\nabla_\Phi\cdot(\vec r/r^3) = 4\pi\delta(\vec r)$ of its (13.15). Comparing that with the singular four-current $e\gamma(1,\vec v)\delta(\vec r - \vec r_1)$ of its (13.13) gives
 
 $$
 e = 4\pi\alpha,
@@ -295,9 +295,9 @@ The paper's section 14 puts $n$ singularities into the field and asks when the t
 The paper's section 11 asks when the energy flow of the field swirls. The twist is the rotor of the Umov–Poynting vector,
 
 $$
-\Omega = \nabla\times\vec S = \nabla\times[\vec E\,\vec H]
-= (\nabla\cdot\vec H + \vec H\cdot\nabla)\vec E
-- (\nabla\cdot\vec E + \vec E\cdot\nabla)\vec H,
+\Omega = \vec\nabla_\Phi\times\vec S = \vec\nabla_\Phi\times[\vec E\,\vec H]
+= (\vec\nabla_\Phi\cdot\vec H + \vec H\cdot\nabla)\vec E
+- (\vec\nabla_\Phi\cdot\vec E + \vec E\cdot\nabla)\vec H,
 \tag{11.1}
 $$
 
@@ -376,8 +376,8 @@ No external source was consulted for the mathematics.
 | Constant-amplitude plane waves, arbitrary real $(\omega, \vec k_\Phi)$ | Solutions, $5.3 \times 10^{-15}$; $99$ of $100$ non-null, so no dispersion relation follows |
 | Superposition of two plane waves | Fails in $100$ of $100$ cases for arbitrary amplitudes, and in all $100$ for null-but-otherwise-arbitrary amplitudes; a sum of two **Maxwell** plane waves is a solution because it is a Maxwell field |
 | (12.10) Coulomb field with running phase | Solves the equation, $1.2 \times 10^{-12}$; the phase is left free by the equation, and an arbitrary nonlinear phase $\theta_{\mathrm{pha}}(r'_t) = \cos(\omega r'_t/c)$ gives $1.7 \times 10^{-13}$ |
-| (7.6) second line, $\partial/\partial r'_tg_0 - \nabla\cdot\vec I_0 = 0$ | Correct |
-| (7.6) first line, $\partial/\partial r'_te_t + \nabla\cdot\vec J_0 = 0$ | **Wrong as printed**; the true identity is $\partial/\partial r'_te_t - \nabla\cdot\vec J_0 = 0$, and the printed sum equals $2\partial/\partial r'_t\nabla\cdot\vec E$, $5.0$ at worst in the test |
+| (7.6) second line, $\partial/\partial r'_tg_0 - \vec\nabla_\Phi\cdot\vec I_0 = 0$ | Correct |
+| (7.6) first line, $\partial/\partial r'_te_t + \vec\nabla_\Phi\cdot\vec J_0 = 0$ | **Wrong as printed**; the true identity is $\partial/\partial r'_te_t - \vec\nabla_\Phi\cdot\vec J_0 = 0$, and the printed sum equals $2\partial/\partial r'_t\nabla\cdot\vec E$, $5.0$ at worst in the test |
 | (11.4) $\Omega = 2f(\vec b\,\partial/\partial r_x f - \vec a\,\partial/\partial r_y f)$ | Correct identity, $1.8 \times 10^{-15}$ |
 | Flat normal field: the exact Maxwell conditions | $\partial/\partial r'_t f = \partial/\partial n f$, $\partial/\partial n\,\theta_{\mathrm{pha}} = 0$, $\partial/\partial a f = -f\partial/\partial b\,\theta_{\mathrm{pha}}$, $\partial/\partial b f = f\partial/\partial a\,\theta_{\mathrm{pha}}$; each necessary (a violation gives $2.4$–$5.3$) and jointly sufficient ($0$) |
 | (11.3) $F = (\vec a\exp(i\theta_{\mathrm{pha}}) + \vec b\exp(-i\theta_{\mathrm{pha}}))f$ | **Wrong**; (11.2) gives $F = f\exp(i\theta_{\mathrm{pha}})(\vec a - i\vec b)$, agreeing only at $\theta_{\mathrm{pha}} = \pi/4$; the printed form is not null |
@@ -412,13 +412,13 @@ The corpus keeps the corpus's own formulation. What the paper contributes that t
 | $Z = (r'_t, \vec r)$ | Space-time as a real biquaternion; $dZ$ the hypersurface element |
 | $U$, $\bar U$, $U^{*}$ | $*$-Unitary biquaternion of the Lorentz action and its two conjugates |
 | $F = \vec E + i\vec H$ | Riemann–Silberstein field, carried as $(0, \vec E + i\vec H)$; the corpus's $\tilde F$ is a different object |
-| $DF$ | The gradient biquaternion applied to $F$; $DF = (\nabla\cdot A,\ \partial/\partial r'_tA + i\nabla\times A)$ for $F = (0, A)$ |
+| $DF$ | The gradient biquaternion applied to $F$; $DF = (\vec\nabla_\Phi\cdot A,\ \partial/\partial r'_tA + i\nabla\times A)$ for $F = (0, A)$ |
 | $d\Sigma = \tfrac12F^{*}dZF$ | The energy–momentum flow differential (3.1) |
 | $W$, $\vec S$ | Energy density $\tfrac12(E^2 + H^2)$ and Umov–Poynting vector $\vec E\times\vec H$ |
 | $\sigma_{\alpha\beta}$ | Maxwell stress, $T_{\alpha\beta} = -\sigma_{\alpha\beta}$ |
 | $e_t, g_0, \vec J_0, \vec I_0$ | Regular electric and magnetic charge and current densities (7.3) |
 | $J = (e_t + ig_0,\ \vec J_0 + i\vec I_0)$ | The regular 4-current biquaternion (7.2) |
-| $\Omega = \nabla\times\vec S$ | The twist of the energy flow (11.1) |
+| $\Omega = \vec\nabla_\Phi\times\vec S$ | The twist of the energy flow (11.1) |
 | $f$, $\theta_{\mathrm{pha}}$ | Amplitude and phase of a flat normal field (11.2) |
 | $\alpha$, $e = 4\pi\alpha$ | Amplitude of the Coulomb wave (12.10) and the charge it carries |
 

@@ -11,7 +11,7 @@ $$
 and the covariant derivative is
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
 $$
 
 acting by left multiplication. Here $\Gamma$ is a real gauge function and $ϙ$ is the charge. The coupling is not an addition: it is the term the localization of the algebra's central phase forces.
@@ -19,12 +19,12 @@ acting by left multiplication. Here $\Gamma$ is a real gauge function and $ϙ$ i
 **The equation.**
 
 $$
-\boxed{\;\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\boxed{\;\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R\;}
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R\;}
 $$
 
-with $\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ the quaternion conjugate of the operator, and with $k_m=mc/\hbar$ the mass wave number. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=0$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=0$.
+with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ the quaternion conjugate of the operator, and with $k_m=mc/\hbar$ the mass wave number. In the massless case the two members decouple, $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=0$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=0$.
 
 **Three things are established here.**
 
@@ -90,7 +90,7 @@ $$
 \tilde\Xi\longmapsto\tilde\nabla_\Phi\tilde\Xi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}\tilde\Xi,
 $$
 
-that is, $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ acting from the left. The term $\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}\tilde\Xi$ is the **interaction term**, and it is exactly the term the localized central phase forces.
+that is, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ acting from the left. The term $\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}\tilde\Xi$ is the **interaction term**, and it is exactly the term the localized central phase forces.
 
 **The conjugate entry is not the negative of the entry.** Since $\natural$ fixes $e_t$ and negates the three spatial units, a potential with real coefficients has
 
@@ -105,12 +105,12 @@ For a purely electric potential $\tilde A_{\Phi}^{\natural}=+\tilde A_{\Phi}$, s
 **Component form.** Write $\tilde A_{\Phi}=\sum_\mu A_\mu e_\mu$ with complex scalar coefficients $A_\mu$ — the abelian case, in which the connection coefficients are central scalars and commute with one another and with the units. Since each $A_\mu$ is central, the covariant derivative separates:
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\sum_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\mu},
+\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\Phi,\mu},
 \qquad
-\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu,
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\frac{\partial}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu,
 $$
 
-with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial x_\eta$. Each $\tilde\nabla_{\mathrm{gco},\mu}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_\mu$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.
+with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial x_\eta$. Each $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$ is a central scalar operator: the derivative acts on the coefficients only and the $A_\mu$ are complex numbers, so every component commutes with every element of $\mathbb{B}$ and with every invertible element.
 
 **That one line is the whole of the polar reading.** Because each component is central, the interaction term passes through the field and can be written on either side of it. It cannot rotate a non-central factor; it multiplies the whole word. The polar companion draws every consequence of that sentence, and this article uses it once, in §*Larmor Precession and the Gyromagnetic Ratio*.
 
@@ -122,7 +122,7 @@ $$
 
 since $\tilde A_{\Phi}^{*}=-\tilde A_{\Phi}$ on $\mathbb{B}_{\Phi}$. The factor $i$ is what converts the anti-Hermitian connection into a Hermitian coupling.
 
-**Sign convention.** The pair of signs is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ and $\lambda=\exp(i\theta_{\mathrm{gau}})$. Here
+**Sign convention.** The pair of signs is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ and $\lambda=\exp(i\theta_{\mathrm{gau}})$. Here
 
 $$
 \theta_{\mathrm{gau}}:=\frac{ϙ\,\Gamma}{\hbar}
@@ -133,7 +133,7 @@ is the gauge angle. The parent's open question writes the standard physics conve
 **Left action, and the mirror through $\natural$.** Every coupling used here acts on the left. The mirror — derivative and connection both on the right — is not a second prescription. The renaming theorem gives
 
 $$
-\bigl(\tilde\Xi\,\tilde\nabla_{\mathrm{gco}}\bigr)^{\natural}=\tilde\nabla_{\mathrm{gco}}^{\natural}\,\tilde\Xi^{\natural},
+\bigl(\tilde\Xi\,\tilde\nabla_{\mathrm{gco},\Phi}\bigr)^{\natural}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\,\tilde\Xi^{\natural},
 $$
 
 so the right-action equation on $\tilde\Xi$ is the left-action equation on $\tilde\Xi^{\natural}$, with the operator the second member already carries. The side is given by position, and $\natural$ is what changes it.
@@ -202,10 +202,10 @@ $$
 
 $$
 \begin{aligned}
-\tilde\nabla_{\mathrm{gco},2}\bigl(\lambda\tilde\Xi_R\bigr)
+\tilde\nabla_{\mathrm{gco},\Phi,2}\bigl(\lambda\tilde\Xi_R\bigr)
 &=\tilde\nabla_\Phi\bigl(\lambda\tilde\Xi_R\bigr)+\frac{i\,ϙ}{\hbar}\bigl(\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma\bigr)\bigl(\lambda\tilde\Xi_R\bigr)\\
 &=\lambda\,\tilde\nabla_\Phi\tilde\Xi_R+\frac{i\,ϙ}{\hbar}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\lambda\tilde\Xi_R+\frac{i\,ϙ}{\hbar}\lambda\,\tilde A_{\Phi}\tilde\Xi_R-\frac{i\,ϙ}{\hbar}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\lambda\tilde\Xi_R\\
-&=\lambda\,\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R .
+&=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R .
 \end{aligned}
 $$
 
@@ -214,15 +214,15 @@ The two $\tilde\nabla_\Phi\Gamma$ terms cancel and the central $\lambda$ moves t
 **The second member** repeats the computation with $\natural$ throughout, using $\tilde A_{\Phi,2}^{\natural}=\tilde A_{\Phi}^{\natural}-(\tilde\nabla_\Phi)^{\natural}\Gamma$, and gives
 
 $$
-\tilde\nabla_{\mathrm{gco},2}^{\natural}\bigl(\lambda\tilde\Xi_L\bigr)=\lambda\,\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L .
+\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\bigl(\lambda\tilde\Xi_L\bigr)=\lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L .
 $$
 
 **Both members are homogeneous with the same factor.**
 
 $$
-\tilde\nabla_{\mathrm{gco},2}\tilde\Xi_{R,2}=\lambda\,\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R,
+\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde\Xi_{R,2}=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco},2}^{\natural}\tilde\Xi_{L,2}=\lambda\,\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L .
+\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}\tilde\Xi_{L,2}=\lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L .
 $$
 
 The common factor follows from $\lambda$ being a central *scalar*: $\natural$ negates the three spatial units and fixes the coefficients, so it leaves $\lambda$ alone. Consequently the coupled equation holds in every gauge when it holds in one, and the phase of the field is not observable on its own.
@@ -230,20 +230,20 @@ The common factor follows from $\lambda$ being a central *scalar*: $\natural$ ne
 **The second-order consequence.** The covariant derivative satisfies the operator identity
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_{\mu}\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_{\mu}\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F
 $$
 
-(*The Covariant Derivative and Gauge Connection in Biquaternionic Form*), the scalar part being the covariant d'Alembertian and the vector part the curvature. Applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to the first member and using the second gives
+(*The Covariant Derivative and Gauge Connection in Biquaternionic Form*), the scalar part being the covariant d'Alembertian and the vector part the curvature. Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the first member and using the second gives
 
 $$
-\Bigl(\sum_{\mu}\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
+\Bigl(\sum_{\mu}\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0,
 $$
 
-a covariant wave equation with a curvature term. The corresponding statement for $\tilde\Xi_L$ carries $\tilde\nabla_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}^{\natural}$ in place of $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}$. The curvature is the part of the connection that no phase can absorb: a gradient can be gauged away and a field strength cannot.
+a covariant wave equation with a curvature term. The corresponding statement for $\tilde\Xi_L$ carries $\tilde\nabla_{\mathrm{gco},\Phi}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ in place of $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$. The curvature is the part of the connection that no phase can absorb: a gradient can be gauged away and a field strength cannot.
 
 ## The Massive Case
 
-Suppose the coupled massive pair holds in one gauge. The left-hand side of the transformed first member is $\lambda\,\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R$, and the right-hand side is
+Suppose the coupled massive pair holds in one gauge. The left-hand side of the transformed first member is $\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R$, and the right-hand side is
 
 $$
 k_m\tilde\Xi_{L,2}=k_m\lambda\,\tilde\Xi_L,
@@ -318,7 +318,7 @@ On a plane wave it is $\hbar c\,\kappa_t$ in the covariant reading and $\hbar c\
 **Momentum.** If $\tilde A_{\Phi}$ does not depend on $x_\eta$, the charge is the corresponding component of
 
 $$
-\vec P=\int\mathrm{d}^{3}\varrho\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,(-i\hbar)\nabla\tilde\Xi\bigr],
+\vec P=\int\mathrm{d}^{3}\varrho\;\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\,(-i\hbar)\vec\nabla_\Phi\tilde\Xi\bigr],
 $$
 
 and again the covariant momentum is the canonical one plus $\frac{ϙ}{\hbar}\vec A$ in units of $\hbar$. A uniform vector potential therefore shifts the momentum and not the dispersion.
@@ -441,11 +441,11 @@ With every index low and each slot carrying the interval's weight $\varepsilon_\
 The coupled Dirac equation of the biquaternion framework is
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
 $$
 
 with the interaction term $\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}\tilde\Xi$ that the localized central phase forces. In the massless case the members decouple.
@@ -485,11 +485,11 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 | $\tilde A_{\Phi,2}=\tilde A_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Gauge law of the connection; $\Gamma$ real |
 | $\lambda=\exp(i\theta_{\mathrm{gau}})$ | Local central phase; $\theta_{\mathrm{gau}}=ϙ\Gamma/\hbar$ |
 | $ϙ$ | Charge; the algebra fixes neither its value nor its sign |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant derivative, left action |
-| $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{i\,ϙ}{\hbar}A_\mu$ | Components; central scalars |
-| $\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant derivative, left action |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial/\partial R_\mu+\frac{i\,ϙ}{\hbar}A_\mu$ | Components; central scalars |
+| $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}^{\natural}$ | Its $\natural$-image; the operator of the second member |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
-| $\tilde F$ | Field strength; $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F$ |
+| $\tilde F$ | Field strength; $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F$ |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_{\Phi}$ | Covariant wavevector; gauge invariant; in $\mathbb{B}_{\Phi}$ |
 | $\kappa_t,\vec\kappa$ | Components of $\tilde K_{\Phi,\mathrm{gco}}$; $\kappa_t^{2}-|\vec\kappa|^{2}=k_m^{2}$ |
 | $\pi_t,\vec\pi$ | Components of the canonical $\tilde K_\Phi$; the mass shell is displaced by $-\frac{ϙ}{\hbar}\tilde A_{\Phi}$ |

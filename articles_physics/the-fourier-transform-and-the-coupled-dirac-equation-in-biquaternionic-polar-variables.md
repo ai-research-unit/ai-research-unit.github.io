@@ -30,7 +30,7 @@ $$
 
 **The temporal slot is fixed once and then used.** Because $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the plane wave's phase carries $-k_t'r_t'$, the temporal slot of the symbol is $+ik_t'$. On $\tilde\Xi=\tilde\Xi_0\exp(i\theta_{\mathrm{pha}})$ with $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_t'r_t'$ one has $\tilde\nabla_\Phi e^{i\theta_{\mathrm{pha}}}=i\tilde K_\Phi e^{i\theta_{\mathrm{pha}}}$, which is the polar parent's identity and the only symbol statement used below.
 
-**The coupled operator and the gauge phase.** The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$, the gauge law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\lambda=\exp(i\theta_{\mathrm{gau}})$, and the gauge angle is
+**The coupled operator and the gauge phase.** The parent's covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$, the gauge law is $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with the field transforming by $\lambda=\exp(i\theta_{\mathrm{gau}})$, and the gauge angle is
 
 $$
 \theta_{\mathrm{gau}}=\frac{ϙ\,\Gamma}{\hbar},
@@ -78,7 +78,7 @@ with the two diagonal entries equal to the same real central number and no wave 
 
 **The determinant is the shell, and the mass appears in it as a square.** Composing the two members gives $i\tilde K_\Phi^{\natural}i\tilde K_\Phi=k_m^{2}$ and the determinant of the display above is $k_m^{2}-\langle i\tilde K_\Phi\rangle_\natural=k_m^{2}-k^{2}$. Over the same twenty draws the computed element equalled $k_m^{2}-k^{2}$ with deviation $0.0$. **That is why the dispersion relation is one scalar equation**: the mass's off-diagonality is annihilated by the second member's diagonal action, and what survives is one number.
 
-**Finding 1, third part: the coupling mixes modes exactly when the connection depends on position.** The count used a grid of sixty-four samples and one input mode at index eleven. A constant connection left one occupied mode of sixty-four, with the median coefficient at $3.6\times10^{-16}$ of the peak. A smooth bump of width $0.6$ left seventeen of sixty-four. A spike of one sample left sixty-three of sixty-four. A linear connection left all sixty-four, with the envelope $\lvert G(k_0+\Delta)\rvert\cdot\lvert\Delta\rvert$ constant at $38.4$ to within $1.3\%$ over $\Delta=1,\dots,8$.
+**Finding 1, third part: the coupling mixes modes exactly when the connection depends on position.** The count used a grid of sixty-four samples and one input mode at index eleven. A constant connection left one occupied mode of sixty-four, with the median coefficient at $3.6\times10^{-16}$ of the peak. A smooth bump of width $0.6$ left seventeen of sixty-four. A spike of one sample left sixty-three of sixty-four. A linear connection left all sixty-four, with the envelope $\lvert G(k_0+\Delta_\Phi)\rvert\cdot\lvert\Delta_\Phi\rvert$ constant at $38.4$ to within $1.3\%$ over $\Delta_\Phi=1,\dots,8$.
 
 **The envelope is the transform of the profile, and the numbers are its regimes.** A constant profile has a delta for a transform, so the convolution reproduces the mode; a smooth profile has a narrow transform, so it mixes a few neighbours; a spike has a nearly flat transform, so it mixes everything; a linear profile has a transform that is a derivative of a delta, so the coupling falls as the inverse of the separation. **The mixing is a statement about the profile's smoothness and not about its size**: a strong constant connection mixes nothing and a weak spiky one mixes everything.
 
@@ -90,7 +90,7 @@ with the two diagonal entries equal to the same real central number and no wave 
 
 **Gauge freedom is the only rearrangement that leaves the equation fixed.** The parent's transformation moves $\tilde\Xi$ by a central phase and $\tilde A_\Phi$ by a gradient, and the pair is form-invariant. In the word it moves $\theta_{\mathrm{pha}}$ and nothing else. In momentum space it moves the support, and how it moves it depends on one property of $\Gamma$.
 
-**A linear gauge phase translates.** With $\theta_{\mathrm{gau}}$ linear, the multiplication is a translation of the support by $\nabla\theta_{\mathrm{gau}}$, so the count of occupied modes is preserved and each mode keeps its amplitude up to the phase. The parent's constant-potential case is exactly this: the gauge that removes a constant connection is linear in $\Gamma$, and it acts on a plane wave by multiplication.
+**A linear gauge phase translates.** With $\theta_{\mathrm{gau}}$ linear, the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, so the count of occupied modes is preserved and each mode keeps its amplitude up to the phase. The parent's constant-potential case is exactly this: the gauge that removes a constant connection is linear in $\Gamma$, and it acts on a plane wave by multiplication.
 
 **A non-linear gauge phase re-superposes.** With $\theta_{\mathrm{gau}}$ quadratic the multiplication is a convolution, the count of occupied modes grows, and the spectrum is rearranged rather than moved. The equation is still form-invariant, so nothing observable has changed; what has changed is the mode decomposition, which is a description.
 
@@ -120,7 +120,7 @@ with the two diagonal entries equal to the same real central number and no wave 
 
 In momentum space a mode is a point and an element, and the element's word has four constants. The kinetic term is diagonal in momentum in every setting, because the derivative is a multiplier at each wave number; the mass term is diagonal in momentum and off-diagonal in the part label, because it is a constant central coefficient. The determinant of the symbol is $k_m^{2}-k^{2}$, exact over twenty draws, which is why the mass shell is one scalar equation.
 
-The coupling is the only source of mode mixing, and the mixing is the smoothness of the connection read in the mode basis. One mode in gave one mode out for a constant connection, seventeen for a smooth bump, sixty-three for a spike and all sixty-four for a linear one, whose envelope fell as $1/\Delta k$ with $\lvert G\rvert\cdot\lvert\Delta\rvert=38.4$ to within $1.3\%$. A strong constant connection mixes nothing and a weak spiky one mixes everything.
+The coupling is the only source of mode mixing, and the mixing is the smoothness of the connection read in the mode basis. One mode in gave one mode out for a constant connection, seventeen for a smooth bump, sixty-three for a spike and all sixty-four for a linear one, whose envelope fell as $1/\Delta k$ with $\lvert G\rvert\cdot\lvert\Delta_\Phi\rvert=38.4$ to within $1.3\%$. A strong constant connection mixes nothing and a weak spiky one mixes everything.
 
 Gauge freedom is the only rearrangement that leaves the equation fixed, and it removes the mixing exactly when the connection is a pure gradient, which is exactly when the curvature vanishes: $0.0$ for a constant $\tilde A_t$ against $0.9$ for $\tilde A_t=i\,0.9x$. A linear gauge phase $\theta_{\mathrm{gau}}=\frac{ϙ\Gamma}{\hbar}$ translates the support and preserves the count; anything else re-superposes. **The parent's two settings are the two cases of that one distinction.**
 
@@ -129,14 +129,14 @@ Gauge freedom is the only rearrangement that leaves the equation fixed, and it r
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; four factors, eight parameters |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ | The parent's covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ | The parent's covariant derivative |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ | The covariant wave number; the mode's label |
 | $-k_m$ on the diagonal | The mass: diagonal in momentum, off-diagonal in the part label |
 | $k_m^{2}-k^{2}$ | The determinant of the symbol; its zero is the shell |
 | $\theta_{\mathrm{gau}}=\frac{ϙ\,\Gamma}{\hbar}$ | The gauge angle |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_\natural$ | The quaternionic norm; scale and angle |
 | $\tilde\Xi^{\natural}\tilde\Xi/N(\tilde\Xi)$ | The rotor read relative to the norm; gauge invariant |
-| $\lvert G(k_0+\Delta)\rvert\cdot\lvert\Delta\rvert$ | The envelope of the linear connection's mixing |
+| $\lvert G(k_0+\Delta_\Phi)\rvert\cdot\lvert\Delta_\Phi\rvert$ | The envelope of the linear connection's mixing |
 
 ## Further Reading
 

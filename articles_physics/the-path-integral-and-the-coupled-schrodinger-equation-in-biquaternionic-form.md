@@ -16,14 +16,14 @@
 
 **The two settings are again kept apart, and the coupling has a different face in each.** In the constant setting the coupling is a shift of two numbers, $h_t\mapsto h_t-ϙ\varphi$ and $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$, and the integral's exponent is the free exponent with the shifted numbers. In the operator setting the coupling is a covariant Laplacian and a potential, and the integral is the free integral with three extra terms. No result is transferred between them.
 
-**Conventions.** The algebra, the sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the action, the measure and the $i\epsilon$ are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, so that
+**Conventions.** The algebra, the sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the action, the measure and the $i\epsilon$ are the free companion's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, so that
 
 $$
 D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi,
 \qquad
 D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta,
 \qquad
-\vec\pi=-i\hbar\vec\nabla-q\vec A,
+\vec\pi=-i\hbar\vec\nabla_\Phi-q\vec A,
 $$
 
 with the mechanical momentum $\vec\pi$ and the potential energy $-ϙ\varphi$. The charge $ϙ$ is minus the electric charge of the older convention, and its value is inserted, not derived.
@@ -76,7 +76,7 @@ $$
 \qquad
 \varphi\mapsto\varphi-\partial_{t'}\Gamma,
 \qquad
-\vec A\mapsto\vec A+\vec\nabla\Gamma,
+\vec A\mapsto\vec A+\vec\nabla_\Phi\Gamma,
 $$
 
 which is the standard transformation with the sign convention of $D_t$ and $D_\eta$ above.
@@ -167,7 +167,7 @@ The gauge transformation is a central phase at each point, its Jacobian is one, 
 | $ϙ$ | The coupling constant; minus the older electric charge |
 | $D_t=\partial_{t'}-\frac{iϙ}{\hbar}\varphi$ | Covariant temporal derivative |
 | $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ | Covariant spatial derivative |
-| $\vec\pi=-i\hbar\vec\nabla-q\vec A$ | Mechanical momentum |
+| $\vec\pi=-i\hbar\vec\nabla_\Phi-q\vec A$ | Mechanical momentum |
 | $A_{\mathrm{gco}}=i\hbar D_t-\frac{1}{2m}(-i\hbar\vec D)^{2}$ | The first-order operator of the integral |
 | $\det(A_{\mathrm{gco}})^{-1}$ | The coupled determinant; power unchanged |
 | $e^{\frac{iϙ}{\hbar}\Gamma}$ | The gauge transformation; unit Jacobian |

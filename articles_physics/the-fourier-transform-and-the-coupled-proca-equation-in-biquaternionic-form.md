@@ -15,7 +15,7 @@ $$
 
 The first bracket is the free Proca symbol with $\pi$ in place of $k$ — translation and rank-one projector together — and the second is the commutator of two covariant derivatives. **The first term is what the transform says and the second is what the transform cannot say**, and the article is the separation of the two.
 
-**The translation is exact and it is the corpus's own identity.** The parent proves $\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}=\sum_\mu\tilde\nabla^{2}_{\mathrm{gco},\mu}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)}$, a decomposition of the covariant d'Alembertian into a symmetric sum of squares and a curvature. **In frequency space the first piece is $-\pi^{2}$ and the second is the curvature term**, so the identity is exactly the symbol's two terms and the article's first finding is that no third term exists.
+**The translation is exact and it is the corpus's own identity.** The parent proves $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)}$, a decomposition of the covariant d'Alembertian into a symmetric sum of squares and a curvature. **In frequency space the first piece is $-\pi^{2}$ and the second is the curvature term**, so the identity is exactly the symbol's two terms and the article's first finding is that no third term exists.
 
 **The second finding is that the same four-wave-number can give different symbols.** Two connections can agree in $\pi$ at a point and disagree in $F$ there, and the symbol's difference is $\frac{i\varkappa}{\hbar}$ times the difference of the curvatures: for two connections used below, $\lvert F_{21}\rvert$ is $0$ and $0.9$ while $\pi$ agrees at the point of evaluation. **So the symbol is not a function of the momentum alone**, and that is the exact statement of what a Fourier description of a gauge theory loses.
 
@@ -30,7 +30,7 @@ The first bracket is the free Proca symbol with $\pi$ in place of $k$ — transl
 The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The gradient and the covariant derivative are those of *Operator and Calculus Conventions* and *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule for a gauge-covariant operator is quoted in derived form:
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\longmapsto i\pi_\mu ,
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\longmapsto i\pi_\mu ,
 \qquad
 \pi_\mu=\hbar k_\mu-q A_\mu ,
 \qquad
@@ -44,7 +44,7 @@ with $\varkappa$ the coupling and $A_\mu$ the background potential. **The shift 
 **The minimal substitution and the field strength are the parent's.** The substitution is $\tilde\nabla_\Phi\mapsto\tilde\nabla_\Phi+\frac{i\varkappa}{\hbar}\tilde A_\Phi$, and the covariant field strength is
 
 $$
-\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco}})^{\natural}\tilde A\bigr)
+\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)
 =\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)
 +\frac{i\varkappa}{\hbar}\,\mathrm{Vect}\bigl(\tilde A_\Phi^{\natural}\tilde A\bigr) ,
 $$
@@ -54,8 +54,8 @@ whose second term is the parent's extra piece, measured between $0.7$ and $12$ o
 **The square-splitting identity is the parent's and it is the article's spine.** For a connection with curvature $F^{(\Phi)}$,
 
 $$
-(\tilde\nabla_{\mathrm{gco}})^{\natural}\tilde\nabla_{\mathrm{gco}}
-=\sum_\mu\tilde\nabla^{2}_{\mathrm{gco},\mu}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)} ,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
+=\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)} ,
 \qquad
 \bigl[D_{\mathrm{gco},\mu},D_{\mathrm{gco},\nu}\bigr]=\frac{i\varkappa}{\hbar}F^{(\Phi)}_{\mu\nu} ,
 $$
@@ -70,7 +70,7 @@ the commutator checked on a test function to $1.1\times10^{-5}$. **The first dis
 
 **The transform acts on the identity and gives the decomposition, term by term.** Applying the symbol rule to the square splitting, the symmetric sum of squares becomes $-\pi^{2}$ — the four-momentum's interval with a sign — and the curvature term becomes $\frac{i\varkappa}{\hbar}F^{(\Phi)}$. **There is no third term because the identity has two**, and the article's first claim is only that the identity survives the transform unchanged.
 
-**The identity is the d'Alembertian's and the Proca symbol adds two pieces of its own.** The square splitting decomposes $\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}$, which is the covariant d'Alembertian; the Proca operator is that d'Alembertian less the projector onto the Lorenz form and less $k_m^{2}$. So the symbol's three pieces are the interval, the projector and the curvature, and the first two together are the free symbol at $\pi$. **The curvature is the only piece the free article has no counterpart for**, and every statement below about the obstruction is a statement about that piece alone.
+**The identity is the d'Alembertian's and the Proca symbol adds two pieces of its own.** The square splitting decomposes $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}$, which is the covariant d'Alembertian; the Proca operator is that d'Alembertian less the projector onto the Lorenz form and less $k_m^{2}$. So the symbol's three pieces are the interval, the projector and the curvature, and the first two together are the free symbol at $\pi$. **The curvature is the only piece the free article has no counterpart for**, and every statement below about the obstruction is a statement about that piece alone.
 
 **The translation term is a scalar and the curvature term is a matrix.** $-\pi^{2}$ is one number times the identity in the amplitude space; $\frac{i\varkappa}{\hbar}F^{(\Phi)}$ is a two-form's matrix, antisymmetric and traceless in the four-vector reading. **So the symbol is a scalar plus a traceless part**, and any statement about a trace is a statement about the translation alone.
 

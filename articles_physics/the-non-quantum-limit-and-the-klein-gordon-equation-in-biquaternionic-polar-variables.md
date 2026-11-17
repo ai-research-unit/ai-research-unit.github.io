@@ -26,7 +26,7 @@ the Compton wavelength over the length on which the scale varies. **$\delta\ll1$
 
 **The restriction is the parent's.** The pair is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and the parent proves that class is invariant only under a central Hamiltonian. The limit is defined there, as in the first-order family.
 
-**Conventions.** Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector, with $r'_{t}=ct'$ and no setting of $c=1$; $\rho_{\mathrm{num}}=\varrho^{2}$ the proper density; $k_{m}=mc/\hbar$ and $k_{\Phi}=\lvert\vec p\rvert/\hbar$; $\tilde P_\Phi=i(E/c)e_{t}+\vec p$ with $\vec p=\nabla S_{\tilde\Xi}$ and $E=-c\,\partial_{r'_{t}}S_{\tilde\Xi}$.
+**Conventions.** Those of the polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector, with $r'_{t}=ct'$ and no setting of $c=1$; $\rho_{\mathrm{num}}=\varrho^{2}$ the proper density; $k_{m}=mc/\hbar$ and $k_{\Phi}=\lvert\vec p\rvert/\hbar$; $\tilde P_\Phi=i(E/c)e_{t}+\vec p$ with $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-c\,\partial_{r'_{t}}S_{\tilde\Xi}$.
 
 ## The Word, the Pair, and the Norm
 
@@ -37,7 +37,7 @@ the Compton wavelength over the length on which the scale varies. **$\delta\ll1$
 $$
 \left(\frac{\partial S_{\tilde\Xi}}{\partial r'_{t}}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
-\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_{t}}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_{t}}\right)=0 .
+\vec\nabla_\Phi\cdot\!\left(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_{t}}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_{t}}\right)=0 .
 $$
 
 The first is the amplitude equation, read by the parent as the mass shell with the mass term shifted; the second is the transport equation, written on the products so that it survives at a node.
@@ -93,7 +93,7 @@ the exact form being $\langle\tilde\nabla_\Phi S_{\tilde\Xi}\rangle_{\natural}=-
 
 **Why the sign is negative and what it selects.** The field is an element of $\mathbb{B}_\Phi$, the anti-Hermitian sector, where the quaternionic norm of a timelike element is negative; the parent's own display for the four-velocity carries the same sign, $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}+\frac{\hbar^{2}}{m^{2}}\Box_\Phi \varrho/\varrho$. So the shell condition says the four-momentum is timelike and of length $mc$. A spacelike four-momentum would give a norm of the other sign and no solution, which is the algebraic form of the statement that the mass shell has two sheets and no third.
 
-**The characters are straight timelike lines.** With $\vec p=\nabla S_{\tilde\Xi}$ and $E=-c\,\partial_{r'_{t}}S_{\tilde\Xi}$ constant on the shell,
+**The characters are straight timelike lines.** With $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-c\,\partial_{r'_{t}}S_{\tilde\Xi}$ constant on the shell,
 
 $$
 \frac{d\vec r}{dt'}=\frac{c^{2}\vec p}{E}=\vec v ,
@@ -110,7 +110,7 @@ so the rays are straight, and the flow is the four-velocity's spatial part. **Th
 **The transport equation, in the article's letters.**
 
 $$
-\frac{\partial}{\partial r'_{t}}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_{t}}\right)-\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)=0 ,
+\frac{\partial}{\partial r'_{t}}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_{t}}\right)-\vec\nabla_\Phi\cdot\!\left(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}\right)=0 ,
 $$
 
 which is $c\,\partial\rho_{\mathrm{chg}}/\partial t'+\vec\nabla_\Phi\cdot\vec j=0$ with $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ and $\vec j=\rho_{\mathrm{num}}\vec p/m$. **The density is the proper density and the charge density is the proper density times $\gamma$**; the two differ by the factor the four-velocity's temporal component supplies.
@@ -167,7 +167,7 @@ $$
 
 $$
 \frac{\varrho}{\hbar^{2}}\left[\left(\frac{\partial S}{\partial r'_{t}}\right)^{2}-\lvert\nabla S\rvert^{2}-m^{2}c^{2}+\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho}\right]
-+\frac{i}{\hbar \varrho}\left[\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S\right)-\frac{\partial}{\partial r'_{t}}\!\left(\rho_{\mathrm{num}}\frac{\partial S}{\partial r'_{t}}\right)\right],
++\frac{i}{\hbar \varrho}\left[\vec\nabla_\Phi\cdot\!\left(\rho_{\mathrm{num}}\vec\nabla_\Phi S\right)-\frac{\partial}{\partial r'_{t}}\!\left(\rho_{\mathrm{num}}\frac{\partial S}{\partial r'_{t}}\right)\right],
 $$
 
 so the real part vanishes exactly on the parent's amplitude line and the imaginary part exactly on its transport line. The equivalence runs both ways and was confirmed as an identity.
@@ -176,7 +176,7 @@ so the real part vanishes exactly on the parent's amplitude line and the imagina
 
 **The two parameters were checked against each other.** $\delta=\hbar/(mcL)$ and $\epsilon=\hbar/(\lvert\vec p\rvert L)$ give $\delta/\epsilon=\lvert\vec p\rvert/(mc)=\gamma\beta$, so $\delta<\epsilon$ exactly when $\gamma\beta<1$. The relation was checked for $\beta=0.1$ and $\beta=0.9$.
 
-**The discarded term's two sizes were checked.** $2m\lvert Q_{\mathrm{qnt}}\rvert/(m^{2}c^{2})=\hbar^{2}/(m^{2}c^{2}L^{2})=\delta^{2}$ and $\lvert Q_{\mathrm{qnt}}\rvert/T_{\mathrm{kin}}=\hbar^{2}|\Box \varrho|/(2m\varrho\,T_{\mathrm{kin}})\sim\epsilon^{2}$, the second with the Gaussian profile.
+**The discarded term's two sizes were checked.** $2m\lvert Q_{\mathrm{qnt}}\rvert/(m^{2}c^{2})=\hbar^{2}/(m^{2}c^{2}L^{2})=\delta^{2}$ and $\lvert Q_{\mathrm{qnt}}\rvert/T_{\mathrm{kin}}=\hbar^{2}|\Box_\Phi \varrho|/(2m\varrho\,T_{\mathrm{kin}})\sim\epsilon^{2}$, the second with the Gaussian profile.
 
 **What was not checked.** No numerical solution of the time-dependent Klein–Gordon equation was run and no flux was computed. The claims are about terms and identities, and both were verified as algebra.
 

@@ -17,7 +17,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 *First, the connection enters the chart as one additive central term in the covariant bracket, and nothing else.* Because each $A_\mu$ is a complex scalar, it commutes with the whole word, so
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
 =\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
 $$
 
@@ -28,14 +28,14 @@ with the connection's term added after the word has been differentiated and with
 $$
 \partial_{r'_t}S_{\tilde\Xi}\ \mapsto\ \partial_{r'_t}S_{\tilde\Xi}-ϙ\,a'_t ,
 \qquad
-\nabla S_{\tilde\Xi}\ \mapsto\ \nabla S_{\tilde\Xi}+ϙ\,\vec A ,
+\vec\nabla_\Phi S_{\tilde\Xi}\ \mapsto\ \vec\nabla_\Phi S_{\tilde\Xi}+ϙ\,\vec A ,
 $$
 
 where $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action and $\tilde A_\Phi=i a'_t e_t+\vec A$ the material connection. The two substitutions are the two classical replacements in one step, and the two signs are the metric's and not a convention.
 
 *Third, the coupled pair is the parent's pair with that substitution and no other change.* The amplitude equation becomes the mass shell with the mechanical momentum and the same quantum potential; the transport equation becomes the divergence of the mechanical current; the quantum potential is untouched, because it depends on the density alone and the density is $\varrho^{2}$ in both cases. The vorticity is *not* untouched: the free flow is a gradient flow and therefore irrotational, and the coupled flow has vorticity $ϙ\vec B$. That is the one qualitative change the chart exhibits, and §*The Current, the Vorticity and the Flux* computes it.
 
-**Scope.** The connection is treated as an external field with a constant or a varying profile, and the equation is the component equation of the element companion — the one that decouples, that the action produces, and that the current belongs to. The element companion's other equation, $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$, is the subject of §*What the Chart Cannot Carry*, where the chart shows why it is not a two-function system. The operator setting, in which the amplitude and the action are functions of the coordinates and the equation becomes a PDE, is the Madelung problem of the standard literature and is cited rather than re-derived.
+**Scope.** The connection is treated as an external field with a constant or a varying profile, and the equation is the component equation of the element companion — the one that decouples, that the action produces, and that the current belongs to. The element companion's other equation, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, is the subject of §*What the Chart Cannot Carry*, where the chart shows why it is not a two-function system. The operator setting, in which the amplitude and the action are functions of the coordinates and the equation becomes a PDE, is the Madelung problem of the standard literature and is cited rather than re-derived.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The material time is $r'_t=c\,t'$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, and the coupling is $ϙ$.
 
@@ -55,7 +55,7 @@ with the three parameters $(\varrho,\theta_{\mathrm{pha}},\varepsilon)$ a biject
 **The one coefficient and the one pair.** The spin-zero field is central, so it has one coefficient and the polar pair describes the whole of it rather than a slice. A value that leaves the centre has four coefficients obeying four independent equations, and the pair would then describe one of them, the mixed case being the constant-polarization case $\tilde\Xi=\tilde Q_{\mathrm{amp}}g$. The coupling preserves that structure exactly: $A_\mu$ is central, it commutes with the constant $\tilde Q_{\mathrm{amp}}$, and
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\big(\tilde Q_{\mathrm{amp}}g\big)=\tilde Q_{\mathrm{amp}}\,\tilde\nabla_{\mathrm{gco},\mu}g ,
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\big(\tilde Q_{\mathrm{amp}}g\big)=\tilde Q_{\mathrm{amp}}\,\tilde\nabla_{\mathrm{gco},\Phi,\mu}g ,
 $$
 
 so the polarized field solves the coupled equation exactly when the scalar $g$ does. The polar chart of the coupled theory is therefore the chart of one charged scalar, and the fourfold multiplicity is a constant factor that the chart carries without seeing.
@@ -65,7 +65,7 @@ so the polarized field solves the coupled equation exactly when the scalar $g$ d
 **The identity.** Differentiate the word, divide by it, add the connection:
 
 $$
-\mathcal A^{\mathrm{gco}}_\mu:=\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+\mathcal A^{\mathrm{gco}}_\mu:=\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
 =\underbrace{\frac{\partial_\mu \varrho}{\varrho}+i\,\partial_\mu\theta_{\mathrm{pha}}
 +\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}}_{\text{the free bracket }\mathcal A_\mu}
@@ -134,7 +134,7 @@ and the whole effect of the potential is absorbed by a reparameterisation of one
 **The factorisation.** For a central field the covariant derivative factors exactly:
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\bigl(\varrho\,e^{i\theta_{\mathrm{pha}}}e_t\bigr)
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigl(\varrho\,e^{i\theta_{\mathrm{pha}}}e_t\bigr)
 =e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_\mu \varrho+i\,\varrho\,\kappa^{\mathrm{kin}}_\mu\Bigr)e_t ,
 \qquad
 \kappa^{\mathrm{kin}}_\mu:=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu .
@@ -151,7 +151,7 @@ $$
 $$
 $$
 \boxed{\;
-\nabla\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\nabla S_{\tilde\Xi}-q\vec A\bigr)\Bigr)
+\vec\nabla_\Phi\cdot\Bigl(\rho_{\mathrm{num}}\bigl(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A\bigr)\Bigr)
 -\frac{\partial}{\partial r'_t}\Bigl(\rho_{\mathrm{num}}\bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙ\,a'_t\bigr)\Bigr)=0\;}
 $$
 
@@ -165,12 +165,12 @@ $$
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi \varrho}{\varrho},
 $$
 
-so the sum $E+ϙca'_t$ is the mechanical energy and $\vec p-q\vec A$ the mechanical momentum, and the mass shell is shifted by the quantum potential exactly as in the free article. The quantum potential is unchanged because it is $-\frac{\hbar^{2}}{2m}\Box \varrho/\varrho$ and $\varrho$ is not touched by the coupling; in the logarithmic form of the free article it is a functional of $\rho_{\mathrm{num}}$ alone, and the density is the density.
+so the sum $E+ϙca'_t$ is the mechanical energy and $\vec p-q\vec A$ the mechanical momentum, and the mass shell is shifted by the quantum potential exactly as in the free article. The quantum potential is unchanged because it is $-\frac{\hbar^{2}}{2m}\Box_\Phi \varrho/\varrho$ and $\varrho$ is not touched by the coupling; in the logarithmic form of the free article it is a functional of $\rho_{\mathrm{num}}$ alone, and the density is the density.
 
 **The second equation is the continuity of the mechanical current.** Dividing by $m$ and reading the two factors as the density and the current, it is
 
 $$
-\frac{\partial\rho_{\mathrm{chg}}}{\partial r'_t}+\nabla\cdot\vec j_{\mathrm{mech}}=0,
+\frac{\partial\rho_{\mathrm{chg}}}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec j_{\mathrm{mech}}=0,
 \qquad
 \vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}\bigl(\vec p-q\vec A\bigr),
 $$
@@ -194,7 +194,7 @@ and it is gauge invariant: the phase's shift and the potential's shift cancel in
 **The vorticity.** The free flow is the gradient of the action and is therefore irrotational. The coupled flow is not:
 
 $$
-\nabla\times\bigl(\vec p-q\vec A\bigr)=\nabla\times\nabla S_{\tilde\Xi}+ϙ\nabla\times\vec A=ϙ\,\vec B ,
+\vec\nabla_\Phi\times\bigl(\vec p-q\vec A\bigr)=\vec\nabla_\Phi\times\nabla S_{\tilde\Xi}+ϙ\vec\nabla_\Phi\times\vec A=ϙ\,\vec B ,
 $$
 
 exactly, with no approximation and no quantum correction. So the mechanical flow's vorticity is the magnetic field times the coupling, and the statement "the flow is a gradient" becomes "the flow is a gradient plus the vector potential": the free article's irrotationality is the statement $\vec B=0$, and it is not a property of the scalar field but a property of the connection it is coupled to.
@@ -213,11 +213,11 @@ the first term because $\vec p=\hbar\nabla\theta$ is a gradient and its circulat
 
 ## What the Chart Cannot Carry
 
-**The other element equation.** The element companion distinguishes two coupled equations, $\Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$, which agree in the free theory and differ by the curvature. The chart's pair is the chart of the first. The second's residual in the chart is
+**The other element equation.** The element companion distinguishes two coupled equations, $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ and $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, which agree in the free theory and differ by the curvature. The chart's pair is the chart of the first. The second's residual in the chart is
 
 $$
-\tilde\Xi^{-1}\Bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}-k_m^{2}\Bigr)\tilde\Xi
-=\tilde\Xi^{-1}\Bigl(\Box_{\mathrm{gco}}-k_m^{2}\Bigr)\tilde\Xi
+\tilde\Xi^{-1}\Bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}-k_m^{2}\Bigr)\tilde\Xi
+=\tilde\Xi^{-1}\Bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\Bigr)\tilde\Xi
 +\frac{i\,ϙ}{\hbar}\,\tilde\Xi^{-1}\tilde F\,\tilde\Xi ,
 $$
 
@@ -260,15 +260,15 @@ and the second term is the field strength conjugated by the field.
 The coupled Klein–Gordon equation in polar variables is the free pair with the mechanical momentum. The word is the parent's, its domain is unchanged, and the connection enters the logarithmic derivative as one additive central term,
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
 $$
 
-so it touches the scale bracket in the temporal slot and the phase bracket in the spatial ones and cannot reach the boost or the rotor. For a central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\mu}(\varrho e^{i\theta}e_t)=e^{i\theta}(\partial_\mu \varrho+i\varrho\kappa^{\mathrm{kin}}_\mu)e_t$, and the pair becomes
+so it touches the scale bracket in the temporal slot and the phase bracket in the spatial ones and cannot reach the boost or the rotor. For a central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}(\varrho e^{i\theta}e_t)=e^{i\theta}(\partial_\mu \varrho+i\varrho\kappa^{\mathrm{kin}}_\mu)e_t$, and the pair becomes
 
 $$
 \bigl(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t\bigr)^{2}-\bigl\lvert\nabla S_{\tilde\Xi}-q\vec A\bigr\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
-\nabla\cdot\bigl(\rho_{\mathrm{num}}(\nabla S_{\tilde\Xi}-q\vec A)\bigr)-\frac{\partial}{\partial r'_t}\bigl(\rho_{\mathrm{num}}(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)\bigr)=0 .
+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)\bigr)-\frac{\partial}{\partial r'_t}\bigl(\rho_{\mathrm{num}}(\partial_{r'_t}S_{\tilde\Xi}-ϙa'_t)\bigr)=0 .
 $$
 
 The quantum potential and the density are unchanged; the momentum is not, the current is gauge invariant, the vorticity is $ϙ\vec B$, and the circulation is $2\pi\hbar n+ϙ\Phi_B$. The chart carries the component equation and cannot carry the algebra's equation, whose curvature term is a general element after conjugation by the field; that is the polar face of the element companion's prohibition on central fields in a nonzero field strength.

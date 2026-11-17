@@ -191,7 +191,7 @@ which is the standard thermodynamic identity for a one-component fluid at consta
 
 $$
 p_{\mathrm{qnt}}=\rho_{\mathrm{num}}\,Q_{\mathrm{qnt}}
-=-\frac{\hbar^{2}}{4m}\Box\rho_{\mathrm{num}}
+=-\frac{\hbar^{2}}{4m}\Box_\Phi\rho_{\mathrm{num}}
 +\frac{\hbar^{2}}{8m}\frac{\partial_\eta\rho_{\mathrm{num}}\,\partial_\eta\rho_{\mathrm{num}}}{\rho_{\mathrm{num}}},
 $$
 
@@ -247,7 +247,7 @@ The quantum part violates determinacy at second order: $p_{\mathrm{qnt}}=\rho_{\
 | $p_{\mathrm{th}}$ | Thermal pressure |
 | $p_{\mathrm{qnt}}$ | Quantum part of the pressure |
 | $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ | Effective pressure |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
+| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$ | Quantum potential, with the minus sign |
 | $w_{\mathrm{fl}}$ | Energy density |
 | $s_{\mathrm{ent}}$ | Entropy density |
 | $n_{\mathrm{num}}$ | Number density |

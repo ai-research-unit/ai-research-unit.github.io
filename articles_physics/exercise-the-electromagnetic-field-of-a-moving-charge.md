@@ -38,13 +38,13 @@ t'_{\mathrm{ret}} = t' - \frac{R}{c},
 \qquad
 R = \left|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - (x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_{\mathrm{ret}})\right|,
 $$
-so that the observation point $(t', r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ enters both directly and through the emission point $(t'_{\mathrm{ret}},(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_{\mathrm{ret}}))$. The exercise is to keep those two points distinct, differentiate the implicit construction in one biquaternionic step, and read off the field. The specific demands are: (i) derive $\partial/\partial t' t'_{\mathrm{ret}}$ and $\nabla t'_{\mathrm{ret}}$ and the resulting biquaternion $(\tilde\nabla_\Phi)^{\natural}t'_{\mathrm{ret}}$; (ii) exhibit the velocity–acceleration split at the level of the biquaternion brackets, not merely in components; (iii) verify the $1/R^2$ and $1/R$ falloffs by recomputation on a configuration that isolates each part; (iv) check $\kappa$ and the charge sign on uniform motion and on accelerated motion; and (v) fix the rotor convention and determine the correct transformation law for the field.
+so that the observation point $(t', r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ enters both directly and through the emission point $(t'_{\mathrm{ret}},(x_q\,\vec e_x+y_q\,\vec e_y+z_q\,\vec e_z)(t'_{\mathrm{ret}}))$. The exercise is to keep those two points distinct, differentiate the implicit construction in one biquaternionic step, and read off the field. The specific demands are: (i) derive $\partial/\partial t' t'_{\mathrm{ret}}$ and $\vec\nabla_\Phi t'_{\mathrm{ret}}$ and the resulting biquaternion $(\tilde\nabla_\Phi)^{\natural}t'_{\mathrm{ret}}$; (ii) exhibit the velocity–acceleration split at the level of the biquaternion brackets, not merely in components; (iii) verify the $1/R^2$ and $1/R$ falloffs by recomputation on a configuration that isolates each part; (iv) check $\kappa$ and the charge sign on uniform motion and on accelerated motion; and (v) fix the rotor convention and determine the correct transformation law for the field.
 
 Numerical checks quoted below were performed on subluminal worldlines with a Newton-solved retarded time, and the reported figures are the maximum componentwise discrepancies. All source quantities are evaluated at the retarded time.
 
 ## Problem 1: The Retarded Time and the Liénard–Wiechert Potential
 
-**Statement.** (a) Derive $\partial/\partial t' t'_{\mathrm{ret}} = 1/\kappa$ and $\nabla t'_{\mathrm{ret}} = -\vec u_R/(c\kappa)$ from the implicit definition of $t'_{\mathrm{ret}}$. (b) Assemble the Liénard–Wiechert potential $\tilde{A}_{\Phi} = \frac{\mu ϙ}{4\pi D}\tilde{V}_{\Phi}/\gamma$ and verify the three identities
+**Statement.** (a) Derive $\partial/\partial t' t'_{\mathrm{ret}} = 1/\kappa$ and $\vec\nabla_\Phi t'_{\mathrm{ret}} = -\vec u_R/(c\kappa)$ from the implicit definition of $t'_{\mathrm{ret}}$. (b) Assemble the Liénard–Wiechert potential $\tilde{A}_{\Phi} = \frac{\mu ϙ}{4\pi D}\tilde{V}_{\Phi}/\gamma$ and verify the three identities
 $$
 D = R\kappa = -\frac{1}{c}\,\mathrm{Sc}\!\left((\tilde{V}_{\Phi}/\gamma)(iR\,e_t+\vec R)^{\natural}\right),
 \qquad
@@ -68,11 +68,11 @@ $$
 $$
 For the gradient, write $\partial/\partial R_j R = \vec u_{R_j} - \left(\vec u_R\cdot\vec v\right)\partial/\partial R_j t'_{\mathrm{ret}}$, so
 $$
-\nabla t'_{\mathrm{ret}} = -\frac{1}{c}\nabla R = -\frac{\vec u_R}{c} + \frac{\vec u_R\cdot\vec v}{c}\nabla t'_{\mathrm{ret}}
+\vec\nabla_\Phi t'_{\mathrm{ret}} = -\frac{1}{c}\vec\nabla_\Phi R = -\frac{\vec u_R}{c} + \frac{\vec u_R\cdot\vec v}{c}\vec\nabla_\Phi t'_{\mathrm{ret}}
 \;\Longrightarrow\;
-\kappa\,\nabla t'_{\mathrm{ret}} = -\frac{\vec u_R}{c}
+\kappa\,\vec\nabla_\Phi t'_{\mathrm{ret}} = -\frac{\vec u_R}{c}
 \;\Longrightarrow\;
-\nabla t'_{\mathrm{ret}} = -\frac{\vec u_R}{c\kappa}.
+\vec\nabla_\Phi t'_{\mathrm{ret}} = -\frac{\vec u_R}{c\kappa}.
 $$
 Two points are worth recording because they are used implicitly throughout. First, $\kappa = 1-\vec u_R\cdot\vec\beta$ is *not* bounded below by $1$: for a receding charge, $\vec u_R\cdot\vec\beta<0$ and $\kappa>1$. The retarded formulas require $\kappa>0$, i.e. subluminal motion and no caustic; this restriction is not stated in the parent and returns as a gap below. Second, the field point and the source point are genuinely different events: $\vec R$ is the separation from the *emission* event, and the source velocity $\vec v(t'_{\mathrm{ret}})$ is the velocity at emission, not at the observation time. Every appearance of $\beta$ below is retarded.
 
@@ -386,7 +386,7 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 | $\tilde{V}_{\Phi} = \gamma\left(ic\,e_t+\vec v(t'_{\mathrm{ret}})\right)$ | Four-velocity biquaternion, $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$ |
 | $\tilde{V}_{\Phi}/\gamma = ic\,e_t+\vec v(t'_{\mathrm{ret}})$ | Retarded coordinate velocity, the four-velocity divided by $\gamma$ |
 | $iR\,e_t+\vec R$ | Retarded null separation, in $\mathbb{B}_{\Phi}$ |
-| $\tilde\Lambda_{\Phi,\mathrm{ret}} = (\tilde{\nabla}_\Phi)^{\natural}t'_{\mathrm{ret}} = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
+| $\tilde\Lambda_{\Phi,\mathrm{ret}} = (\tilde\nabla_\Phi)^{\natural}t'_{\mathrm{ret}} = \frac{1}{c\kappa}(-ie_t+\vec u_R)$ | Gradient of the retarded time (null, hence a zero divisor and not $*$-unitary) |
 | $\tilde{\mathcal L}_{\Phi,\mathrm{ret}} = \tilde{\mathcal L}_{\Phi}(\vec u_R) = i\tilde\Pi(\vec u_R) = \tfrac{i}{2}e_t-\tfrac12\vec u_R$ | Future null four-vector of the retarded pure state; the null factor of $\tilde\Lambda_{\Phi,\mathrm{ret}}$ is $-2\tilde{\mathcal L}_{\Phi,\mathrm{ret}}$ |
 | $\tilde{F}_v, \tilde{F}_a$ | Velocity and acceleration (radiation) parts of the field |
 | $\vec E_v, \vec E_a$ | Their electric components; $\vec B = \frac{1}{c}\vec u_R\times\vec E$ |

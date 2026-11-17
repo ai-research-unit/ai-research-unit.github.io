@@ -6,7 +6,7 @@ The graviton is the quantum of the metric's deviation from flatness: the massles
 
 The framework's account of the graviton is the cleanest illustration of how it builds a higher-spin field. The graviton's carrier is the **symmetric trace-free square of the material vector**, and its decomposition is the framework's own:
 
-**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=q_t+i q'_t$ and $Q_\eta=q_\eta+i q'_{\eta}$, with $q_t=h_t$, $q'_t=r'_t$, $q_\eta=x_\eta$ and $q'_{\eta}=h'_{x_\eta}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_\eta=q_\eta$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a declared sign.
+**Frame.** Displays are read in the $\mathbb{B}$ frame, with the derivative $\partial/\partial R_\mu$ and the coefficients $Q_\mu=q_\mu+iq'_\mu$, written out in full as $Q_t=q_t+i q'_t$ and $Q_\eta=q_\eta+i q'_{\eta}$, with $q_t=h_t$, $q'_t=r'_t$, $q_\eta=x_\eta$ and $q'_{\eta}=h'_{x_\eta}$. The reading used below is the material one, $Q_t=i q'_t$ and $Q_\eta=q_\eta$: the labels are summed directly with the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and the d'Alembertian is $\Box_\Phi=\sum_\mu\partial^2/\partial R_\mu^2$, whose one minus on the time term is the square of the $i$ in $Q_t$, not a declared sign.
 
 $$
 \boxed{\;\left(V\odot V\right)_{\text{sym}} = 0\oplus 2 ,
@@ -39,8 +39,8 @@ $$
 with $h=\sum_{\mu,\nu}\delta_{\mu\nu}h_{\mu\nu}$ the trace, and the field equation is the linearized Einstein equation
 
 $$
-\Box h_{\mu\nu}-2\sum_\rho\partial/\partial R_{(\mu}\,\partial/\partial R_\rho h_{\nu)\rho}+\partial/\partial R_\mu\,\partial/\partial R_\nu h
--\delta_{\mu\nu}\left(\Box h-\sum_{\rho,\sigma}\partial^2/\partial R_\rho\partial R_\sigma h_{\rho\sigma}\right)
+\Box_\Phi h_{\mu\nu}-2\sum_\rho\partial/\partial R_{(\mu}\,\partial/\partial R_\rho h_{\nu)\rho}+\partial/\partial R_\mu\,\partial/\partial R_\nu h
+-\delta_{\mu\nu}\left(\Box_\Phi h-\sum_{\rho,\sigma}\partial^2/\partial R_\rho\partial R_\sigma h_{\rho\sigma}\right)
 = -\kappa^2\,T_{\mu\nu} .
 $$
 
@@ -61,7 +61,7 @@ $$
 -\partial/\partial R_\nu\,\partial/\partial R_\sigma h_{\mu\rho}-\partial/\partial R_\mu\,\partial/\partial R_\rho h_{\nu\sigma}\right),
 $$
 
-which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\delta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_\mu\partial/\partial R_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
+which is invariant under the shift because the shift is a gradient, and which is the field strength of the graviton. The trace-reversed field $\bar{h}_{\mu\nu}=h_{\mu\nu}-\tfrac12\delta_{\mu\nu}h$ simplifies the equation, and the **de Donder** (harmonic) gauge $\sum_\mu\partial/\partial R_\mu\bar{h}_{\mu\nu}=0$ reduces it to the wave equation $\Box_\Phi\bar{h}_{\mu\nu}=-\kappa^2 T_{\mu\nu}$, exactly as the Lorentz gauge reduces the Maxwell equation.
 
 ### The Gauge Symmetry as Coordinate Freedom
 
@@ -71,7 +71,7 @@ The framework's interpretation is that the gauge parameter is a **material vecto
 
 ### The Residual Gauge and the Physical Content
 
-The de Donder gauge does not exhaust the gauge freedom: transformations with $\Box\zeta_\mu=0$ preserve it, and the residual gauge can be used to remove further components. The physical content is what survives both the gauge and the constraints, and it is identified most cleanly in the transverse-traceless decomposition, to which the next section turns.
+The de Donder gauge does not exhaust the gauge freedom: transformations with $\Box_\Phi\zeta_\mu=0$ preserve it, and the residual gauge can be used to remove further components. The physical content is what survives both the gauge and the constraints, and it is identified most cleanly in the transverse-traceless decomposition, to which the next section turns.
 
 ## The Count of Degrees of Freedom
 

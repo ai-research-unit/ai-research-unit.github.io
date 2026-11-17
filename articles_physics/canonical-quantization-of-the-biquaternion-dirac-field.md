@@ -21,7 +21,7 @@ The article is organized as follows. The next section fixes the classical field 
 
 The next section gives the Hamiltonian, the normal-ordering constant, and the four-momentum and charge. A section on spin and statistics records why anticommutation is forced here, without developing the full spin–statistics theorem, which the companion article *The Spin–Statistics Theorem in Biquaternionic Form* treats on its own. A section relates the result to the KMS thermal-state framework. The article then gives an explicit accounting of what is standard and what is open. It closes with the summary, the notation table, and further reading.
 
-Every derivative of the field in this article is the corpus gradient $\tilde\nabla_\Phi$ or its conjugate $(\tilde\nabla_\Phi)^{\natural}$, defined once in §*The Two First-Order Equations and Their Symbol*: $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
+Every derivative of the field in this article is the corpus gradient $\tilde\nabla_\Phi$ or its conjugate $(\tilde\nabla_\Phi)^{\natural}$, defined once in §*The Two First-Order Equations and Their Symbol*: $\tilde\nabla_\Phi=\sum_\mu e_\mu\,\partial/\partial R_\mu$ and $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ with $\varepsilon=(1,-1,-1,-1)$. No other derivative operator is written. No operator below is a basis operator named by an abstract glyph: each is an element of $\mathbb{B}$, an action written out with its sides in position — the element multiplied on the left and the element multiplied on the right, both visible — or a number. Where an operator is two-sided, the two elements are named in the sentence that introduces it.
 
 ## The Classical Field and Its Conjugate Momentum
 
@@ -44,10 +44,10 @@ one equation per chirality. The single equation $\tilde\nabla_\Phi\tilde{Ξ}=0$ 
 Two formulations now carry the name *Dirac equation*, and they must not be read as one. The pair above is the corpus's **one-sided** equation: both gradients act from the left, and the mass is the off-diagonal pairing of the two chiral halves. Kravchenko's **two-sided** equation, for a biquaternion field $F$,
 
 $$
-\bigl(i\partial/\partial r'_t+\nabla\bigr)F-k_m\,i\,\overline{F}\,\vec e_z=0,
+\bigl(i\partial/\partial r'_t+\vec\nabla_\Phi\bigr)F-k_m\,i\,\overline{F}\,\vec e_z=0,
 $$
 
-with $\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ the spatial gradient, is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, the coefficient conjugation, and it is not the Dirac adjoint $\bar{\tilde{Ξ}}$ of the sections below. The two are related by the explicit dictionary with conjugation in the mass term, in the parent article's section of that name, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
+with $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ the spatial gradient, is a different operator: the spatial gradient acts from the left, the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\overline{\cdot}$ — a bar over the field, the coefficient conjugation, and it is not the Dirac adjoint $\bar{\tilde{Ξ}}$ of the sections below. The two are related by the explicit dictionary with conjugation in the mass term, in the parent article's section of that name, but they are not the same equation, and their mass terms are of different kinds. This article quantizes the one-sided pair; the two-sided equation is recorded only to keep the two apart.
 
 The solutions article works on the elements themselves. An element of $\mathbb{B}$ has four complex coefficients, exactly the four components of the Dirac spinor, so the element is the carrier of the field and no separate module is introduced; the two chiral halves of the pair are the two parts $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ of that one element. There the pair is the two equations
 
@@ -64,13 +64,13 @@ whose solutions, normalizations, and spin sums are established in the parent art
 The gradient and its conjugate are the two derivative operators of the article, and they are fixed here once:
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
-\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
-with $\Delta_Q:=\sum_\eta\partial^2/\partial R_\eta^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$, where $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ is the same operator written in the material parameters.
+with $\Delta_\Phi:=\sum_\eta\partial^2/\partial R_\eta^2$ the spatial Laplacian. On the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$, where $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ is the same operator written in the material parameters.
 
 The chiral pair is two first-order equations on two elements,
 
@@ -80,7 +80,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-and composing each line with the conjugate of the other gives $\Box$ on its half. The mass is the off-diagonal coupling of the two lines, and no letter is written for the two together (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*).
+and composing each line with the conjugate of the other gives $\Box_\Phi$ on its half. The mass is the off-diagonal coupling of the two lines, and no letter is written for the two together (*Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*).
 
 Read on one element — the carrier of the field, as the preceding paragraph fixes — the massless action is written out with the side in position:
 
@@ -88,7 +88,7 @@ $$
 \tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y ,
 $$
 
-with $Q_\eta$ running over the three spatial coordinates. The sides are the whole of the content. The time term carries $e_t$ on the left, and $e_t$ is the unit of the algebra, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right. The operator is therefore **two-sided**, and the two elements are the ones just named. Its square is the d'Alembertian: the cross terms cancel because left and right multiplications commute and $\vec e_x\vec e_y=-\vec e_y\vec e_x$, the time term contributes $-\partial^2/\partial {r'_t}^2$ because $\vec e_x^2=-e_t$, and the spatial terms contribute $+\Delta_Q$ because $\vec e_y^2=-e_t$ and $\vec e_\eta\vec e_l+\vec e_l\vec e_\eta=-2\delta_{\eta l}e_t$. Verified on plane-wave symbols at $4\times10^{-15}$.
+with $Q_\eta$ running over the three spatial coordinates. The sides are the whole of the content. The time term carries $e_t$ on the left, and $e_t$ is the unit of the algebra, so that term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right. The operator is therefore **two-sided**, and the two elements are the ones just named. Its square is the d'Alembertian: the cross terms cancel because left and right multiplications commute and $\vec e_x\vec e_y=-\vec e_y\vec e_x$, the time term contributes $-\partial^2/\partial {r'_t}^2$ because $\vec e_x^2=-e_t$, and the spatial terms contribute $+\Delta_\Phi$ because $\vec e_y^2=-e_t$ and $\vec e_\eta\vec e_l+\vec e_l\vec e_\eta=-2\delta_{\eta l}e_t$. Verified on plane-wave symbols at $4\times10^{-15}$.
 
 On a plane wave the same action is the momentum form
 
@@ -97,7 +97,7 @@ $$
 \qquad\text{whose square is } -N ,
 $$
 
-with $p_0=E_{\vec p}/c$ and $p_\eta$ the physical momentum components, and $N=\langle\tilde P_\Phi\rangle_{\natural}=-p_0^{2}+\lvert\vec p\rvert^{2}$ the norm of the four-momentum, so that $N=-m^{2}\,c^{2}$ on the mass shell. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_\eta/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\eta\vec e_\eta\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box$ and to $-N$ respectively, the second equal to $-m^{2}c^{2}$ on the mass shell.
+with $p_0=E_{\vec p}/c$ and $p_\eta$ the physical momentum components, and $N=\langle\tilde P_\Phi\rangle_{\natural}=-p_0^{2}+\lvert\vec p\rvert^{2}$ the norm of the four-momentum, so that $N=-m^{2}\,c^{2}$ on the mass shell. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_\eta/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\eta\vec e_\eta\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box_\Phi$ and to $-N$ respectively, the second equal to $-m^{2}c^{2}$ on the mass shell.
 
 Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
@@ -544,15 +544,15 @@ The extension is a transcription of standard canonical quantization onto the par
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
-| $\tilde{\nabla}^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its quaternion conjugate, $\varepsilon=(+1,-1,-1,-1)$ |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Biquaternionic gradient (Dirac operator) |
+| $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its quaternion conjugate, $\varepsilon=(+1,-1,-1,-1)$ |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian, $\Delta_\Phi=\sum_\eta\partial^2/\partial R_\eta^2$; in $r'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | Classical Dirac field, an element of $\mathbb{B}$, in its two chiral halves |
 | $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\bar{\tilde{Ξ}}X=\mathrm{Sc}(\tilde{Ξ}^*iX\vec e_x)$ | Dirac adjoint: Hermitian conjugate, then right multiplication by $i\vec e_x$ |
 | $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ | Dirac pairing; equals $\bar{\tilde{Ξ}}\tilde{Ξ}$ |
 | $e_\mu$ | Basis unit: $e_t$ for $\mu=t$, $\vec e_\eta$ for $\mu=k$ |
-| $\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$ | Massless action of the pair read on one element; its square is $\Box$ |
+| $\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$ | Massless action of the pair read on one element; its square is $\Box_\Phi$ |
 | $\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$ | The same action on a plane wave; its square is $-N$ |
 | $\mathcal{L}$ | Dirac Lagrangian density of the two lines |
 | $\pi=\partial\mathcal{L}/\partial(\partial\tilde{Ξ}/\partial r'_t)=i\tilde{Ξ}^*$ | Conjugate momentum; $\pi-i\tilde{Ξ}^*\approx0$ is second class |

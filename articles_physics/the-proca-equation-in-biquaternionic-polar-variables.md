@@ -254,17 +254,17 @@ The rapidity flows with density $\varrho^2$, and the conservation is exact. This
 **The condition is one scalar equation.** On the timelike branch the scalar part of the conjugate gradient is
 
 $$
-S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\frac{\partial a'_t}{\partial r'_t}+\nabla\cdot\vec A ,
+S=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\frac{\partial a'_t}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec A ,
 $$
 
 and substituting the word gives, with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$,
 
 $$
 S=\varepsilon\Bigl[c\,\frac{\partial \varrho}{\partial r'_t}-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
-+\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0 .
++\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\vec\nabla_\Phi\cdot\hat u_{\mathrm b}\Bigr]=0 .
 $$
 
-The display is the divergence of the four-vector written in the word's variables, and nothing more: the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\nabla\cdot(\varepsilon rs\hat u_{\mathrm b})$. It is one equation on four parameters, and on shell it removes one of them, leaving the three polarizations of the source article's count.
+The display is the divergence of the four-vector written in the word's variables, and nothing more: the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\vec\nabla_\Phi\cdot(\varepsilon rs\hat u_{\mathrm b})$. It is one equation on four parameters, and on shell it removes one of them, leaving the three polarizations of the source article's count.
 
 **What it is.** The divergence of the four-potential is a continuity equation outright, because on the timelike branch the four-potential is the current: with $\varrho=\sqrt{-\langle\tilde A_\Phi\rangle_\natural}$ and $u_\mu=A_\mu/\varrho$ one has $A_\mu=\varrho u_\mu$ and $S=\sum_\mu\partial_\mu(ru_\mu)$, so the Lorenz condition is the conservation of the field's own current in the flow's own density. That reading is [The Spin-One Fluid](the-spin-one-fluid.html)'s, and it is exact.
 

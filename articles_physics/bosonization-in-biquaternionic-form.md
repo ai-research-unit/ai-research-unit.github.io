@@ -52,7 +52,7 @@ and they were checked by recomputation on generic elements. The conjugation ther
 
 **The four-dimensional comparison.** In the full four-slot frame the operator that carries the split is the right multiplication $Q\mapsto-iQ\vec e_z$ (*Special Element Conventions*, §*The Chirality Convention*); being a right multiplication, it carries the right slot, and that side is what the comparison turns on. It carries the central $i$, so the coefficient conjugation reverses it and therefore exchanges the two values: a real element there is one value together with the conjugate of the other, which is a Majorana field and not a Majorana–Weyl one (*The Neutrino and Majorana Fermions in Biquaternionic Form*). The whole difference between the two arenas is that single factor of $i$: in the arena the chirality is a product of invertibles, and the conjugation fixes it. This is the fermionic side's true content, and the bosonic side must match it.
 
-**The boson.** The boson is a single real scalar field $\xi_{\mathrm{scl}}$, and it is central: it multiplies every element by the same number, and its exponentials $\exp(2i\sqrt\pi\,\xi_{\mathrm{scl}})$ are central. Its free dynamics is the massless equation $\Box\xi_{\mathrm{scl}}=0$ of *Operator and Calculus Conventions*, §*The Gradient*, and its stress tensor is a central scalar. The bosonic side of the dictionary is therefore the centre's dynamics, and this is the identification the next sections use.
+**The boson.** The boson is a single real scalar field $\xi_{\mathrm{scl}}$, and it is central: it multiplies every element by the same number, and its exponentials $\exp(2i\sqrt\pi\,\xi_{\mathrm{scl}})$ are central. Its free dynamics is the massless equation $\Box_\Phi\xi_{\mathrm{scl}}=0$ of *Operator and Calculus Conventions*, §*The Gradient*, and its stress tensor is a central scalar. The bosonic side of the dictionary is therefore the centre's dynamics, and this is the identification the next sections use.
 
 ## The Abelian Bosonization Dictionary
 
@@ -371,7 +371,7 @@ and the framework's contribution is to name the two sides: the fermion is an ele
 | $\xi_{\mathrm{scl}}$ | The real boson field, central |
 | $\alpha$ | Short-distance cutoff in the dictionary |
 | $\theta_{\mathrm{cen}}$ | Phase of the mass, $m=|m|e^{i\theta_{\mathrm{cen}}}$; also the $\theta_{\mathrm{vac}}$-vacuum angle |
-| $\Box$ | The d'Alembertian (*Operator and Calculus Conventions*); the boson's free equation is $\Box\xi_{\mathrm{scl}}=0$ |
+| $\Box_\Phi$ | The d'Alembertian (*Operator and Calculus Conventions*); the boson's free equation is $\Box_\Phi\xi_{\mathrm{scl}}=0$ |
 | $\beta=2\sqrt\pi$ | Sine-Gordon coupling |
 | $:\!\exp(i\theta_{\mathrm{cen}}\xi_{\mathrm{scl}})\!:$ | Vertex operator; dimension $\theta_{\mathrm{cen}}^2/4\pi$ on the full field and $\theta_{\mathrm{cen}}^2/8\pi$ on one half |
 | $T_{\mu\nu}$ | Stress tensor of the boson |

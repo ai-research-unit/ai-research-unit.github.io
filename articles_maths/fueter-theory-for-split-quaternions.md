@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article develops Fueter theory in the split-quaternion setting: the **Fueter operator**, the **Fueter-regular** functions it defines, the **axial and slice** approach, and the power-series description. In the quaternion and biquaternion theories the Fueter operator is a square root of the definite Laplacian on the quaternion subspace, and the Fueter construction converts holomorphic functions of one complex variable into regular functions by applying a power of the Laplacian to their axial extension. In the split inertia the second-order operator is not a Laplacian but the **ultrahyperbolic** operator $\Box = \partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ of inertia $(2,2)$, and the spherical symmetry on which the classical scalar case rests is replaced by hyperbolic symmetry. The slice results survive verbatim; the axial construction does not, and the reason is the indefinite form together with the zero divisors.
+This article develops Fueter theory in the split-quaternion setting: the **Fueter operator**, the **Fueter-regular** functions it defines, the **axial and slice** approach, and the power-series description. In the quaternion and biquaternion theories the Fueter operator is a square root of the definite Laplacian on the quaternion subspace, and the Fueter construction converts holomorphic functions of one complex variable into regular functions by applying a power of the Laplacian to their axial extension. In the split inertia the second-order operator is not a Laplacian but the **ultrahyperbolic** operator $\Box_\Phi = \partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ of inertia $(2,2)$, and the spherical symmetry on which the classical scalar case rests is replaced by hyperbolic symmetry. The slice results survive verbatim; the axial construction does not, and the reason is the indefinite form together with the zero divisors.
 
 The article owns the Fueter theory of the category. It relies on *Split-Quaternion Regular Functions* for the Cauchy–Riemann operator and its factorization, on *Split-Quaternion Roots of Minus One* for the imaginary units, and on the power-series material developed in *Split-Quaternion Analysis* and *Split-Quaternion Elementary Functions*. It is compared throughout with the biquaternion counterpart *Fueter Theory for Biquaternions* and with the quaternion theory. No physics is invoked, and the first-order operator is called the **Cauchy–Riemann operator**, not the Dirac operator.
 
@@ -14,8 +14,8 @@ The article owns the Fueter theory of the category. It relies on *Split-Quaterni
 **Definition.** The **Fueter operator** (the **Cauchy–Riemann–Fueter operator**) and its **conjugate** are
 
 $$
-\nabla = e_t\,\partial/\partial q_t + \vec e_x\,\partial/\partial q_x + \vec e_y\,\partial/\partial q_y + \vec e_z\,\partial/\partial q_z = \partial/\partial q_t + \vec D, \qquad
-\bar{\nabla} = \partial/\partial q_t - \vec D, \qquad
+\tilde\nabla_\Phi = e_t\,\partial/\partial q_t + \vec e_x\,\partial/\partial q_x + \vec e_y\,\partial/\partial q_y + \vec e_z\,\partial/\partial q_z = \partial/\partial q_t + \vec D, \qquad
+\bar{\tilde\nabla_\Phi} = \partial/\partial q_t - \vec D, \qquad
 \vec D = \vec e_x\,\partial/\partial q_x + \vec e_y\,\partial/\partial q_y + \vec e_z\,\partial/\partial q_z,
 $$
 
@@ -23,15 +23,15 @@ acting on the left. The operators are the same expressions as in the quaternion 
 
 ### Factorization of the Ultrahyperbolic Operator
 
-**Proposition.** $\nabla\bar{\nabla} = \bar{\nabla}\nabla = \Box e_t$, where
+**Proposition.** $\tilde\nabla_\Phi\bar{\tilde\nabla_\Phi} = \bar{\tilde\nabla_\Phi}\tilde\nabla_\Phi = \Box_\Phi e_t$, where
 
 $$
-\Box = \partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2
+\Box_\Phi = \partial^2/\partial q_t^2 + \partial^2/\partial q_x^2 - \partial^2/\partial q_y^2 - \partial^2/\partial q_z^2
 $$
 
 is the **ultrahyperbolic operator** of inertia $(2,2)$.
 
-**Proof.** Expand $\nabla\bar{\nabla} = \sum_{\mu,\nu}e_\mu e_\nu^{\natural}\,\partial^2/\partial q_\mu\partial q_\nu$. The diagonal coefficients are $e_te_t^{\natural} = e_t$, $\vec e_x\vec e_x^{\natural} = -\vec e_x^2 = e_t$, $\vec e_y\vec e_y^{\natural} = -\vec e_y^2 = -e_t$, $\vec e_z\vec e_z^{\natural} = -e_t$; the off-diagonal coefficients vanish by the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 0$ for $\mu\neq\nu$.
+**Proof.** Expand $\tilde\nabla_\Phi\bar{\tilde\nabla_\Phi} = \sum_{\mu,\nu}e_\mu e_\nu^{\natural}\,\partial^2/\partial q_\mu\partial q_\nu$. The diagonal coefficients are $e_te_t^{\natural} = e_t$, $\vec e_x\vec e_x^{\natural} = -\vec e_x^2 = e_t$, $\vec e_y\vec e_y^{\natural} = -\vec e_y^2 = -e_t$, $\vec e_z\vec e_z^{\natural} = -e_t$; the off-diagonal coefficients vanish by the Clifford relations $e_\mu e_\nu^{\natural} + e_\nu e_\mu^{\natural} = 0$ for $\mu\neq\nu$.
 
 Thus the Fueter operator is a square root not of the Laplacian but of a wave operator: it is the Cauchy–Riemann operator of the Clifford algebra $\mathrm{Cl}_{2,2}$, of inertia $(2,2)$. This is the single structural sign that separates the theory from the quaternion ($\mathrm{Cl}_{0,3}$) and biquaternion ($\mathrm{Cl}_{1,3}$) cases.
 
@@ -43,7 +43,7 @@ On the full algebra the Fueter operator is exactly the Cauchy–Riemann operator
 
 ### Left and Right Regularity
 
-**Definition.** Let $\Omega$ be open in $\mathbb{R}^4$, and let $F : \Omega \to \mathbb{H}_{\mathrm{spl}}$ be continuously differentiable. Then $F$ is **left-Fueter-regular** if $\nabla F = 0$; **right-Fueter-regular** if $F\nabla := \sum_\mu\partial/\partial q_\mu\,F\,e_\mu = 0$; and **anti-regular** if $\bar\nabla F = 0$. As in the rest of the category, **regular** means left-regular, and the first-order operator $\nabla$ is the one inverted.
+**Definition.** Let $\Omega$ be open in $\mathbb{R}^4$, and let $F : \Omega \to \mathbb{H}_{\mathrm{spl}}$ be continuously differentiable. Then $F$ is **left-Fueter-regular** if $\tilde\nabla_\Phi F = 0$; **right-Fueter-regular** if $F\nabla := \sum_\mu\partial/\partial q_\mu\,F\,e_\mu = 0$; and **anti-regular** if $\bar\nabla F = 0$. As in the rest of the category, **regular** means left-regular, and the first-order operator $\tilde\nabla_\Phi$ is the one inverted.
 
 ### The Componentwise System
 
@@ -55,9 +55,9 @@ $$
 
 with the divergence, gradient and curl taken for the indefinite form $N|_V$. Left- and right-regularity differ only in the sign of the curl term, exactly as in the quaternion case.
 
-**Proposition (harmonicity).** Every Fueter-regular function is $\Box$-harmonic: $\nabla F = 0$ implies $\Box F = \bar\nabla\nabla F = 0$. The converse is false.
+**Proposition (harmonicity).** Every Fueter-regular function is $\Box_\Phi$-harmonic: $\tilde\nabla_\Phi F = 0$ implies $\Box_\Phi F = \bar\nabla\nabla F = 0$. The converse is false.
 
-**Proof.** Immediate from the factorization; the function $F_0 = q_t$ is $\Box$-harmonic but $\nabla q_t = e_t \neq 0$.
+**Proof.** Immediate from the factorization; the function $F_0 = q_t$ is $\Box_\Phi$-harmonic but $\tilde\nabla_\Phi q_t = e_t \neq 0$.
 
 ## The Axial and Slice Approach
 
@@ -85,13 +85,13 @@ This is the first departure from the quaternion theory, where the imaginary unit
 
 $$
 \boxed{\;
-\nabla F = (\partial/\partial q_t + I\,\partial/\partial\rho)F = 2\,\partial/\partial\bar A\,F
+\tilde\nabla_\Phi F = (\partial/\partial q_t + I\,\partial/\partial\rho)F = 2\,\partial/\partial\bar A\,F
 \;},
 $$
 
 so $F$ is regular if and only if $F$ is holomorphic in $A$ in the classical sense. Hence every classical holomorphic function of $A = q_t+I\rho$, extended by constancy in the orthogonal directions, is Fueter-regular.
 
-**Proof.** Restricted to functions of $q_t,\rho$, the operator is $\nabla = e_t\,\partial/\partial q_t + I\,\partial/\partial\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar A = q_t - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial/\partial\bar A = \tfrac12(\partial/\partial q_t + I\,\partial/\partial\rho)$.
+**Proof.** Restricted to functions of $q_t,\rho$, the operator is $\tilde\nabla_\Phi = e_t\,\partial/\partial q_t + I\,\partial/\partial\rho$, and $I^2 = -1$ makes $\mathbb{R}[I]$ a copy of $\mathbb{C}$ with $\bar A = q_t - I\rho$; the classical Cauchy–Riemann operator of that copy is $\partial/\partial\bar A = \tfrac12(\partial/\partial q_t + I\,\partial/\partial\rho)$.
 
 This slice statement is exact and requires no modification for the split inertia, because on a slice the form is definite (the slice is a copy of $\mathbb{C}$). It is the part of the theory that survives intact.
 
@@ -125,7 +125,7 @@ $$
 \sum_{\mu,\nu}(\partial/\partial v_\nu\,\vec u_\mu)\,\vec e_\nu \vec e_\mu = \frac{1}{\rho}\sum_\nu \vec e_\nu^2 - \frac{1}{\rho^3}\sum_{\mu,\nu} g_{\nu\nu} v_\mu v_\nu\, \vec e_\nu \vec e_\mu, \qquad \sum_\nu \vec e_\nu^2 = 1,
 $$
 
-and the second sum is not a scalar multiple of $\vec u$ but has the nonzero vector part $2v_x(-v_z\vec e_y+v_y\vec e_z)$ together with the Euclidean scalar part $-|\vec v|_E^2$. Hence the definite Fueter construction, with $\Box$ in place of $\Delta_4$, does **not** in general produce regular functions, and there is no direct radial/spherical version of Fueter's theorem in the split inertia.
+and the second sum is not a scalar multiple of $\vec u$ but has the nonzero vector part $2v_x(-v_z\vec e_y+v_y\vec e_z)$ together with the Euclidean scalar part $-|\vec v|_E^2$. Hence the definite Fueter construction, with $\Box_\Phi$ in place of $\Delta_4$, does **not** in general produce regular functions, and there is no direct radial/spherical version of Fueter's theorem in the split inertia.
 
 **Remark.** What remains is the slice construction of the previous subsection, which is exact and local to each slice, and the general Clifford-algebraic theory of monogenic functions on $\mathrm{Cl}_{2,2}$, which is inertia-independent for the Fischer decomposition below. The axial radial construction is the part that fails, and its failure is measured by the vector part displayed above.
 
@@ -135,9 +135,9 @@ and the second sum is not a scalar multiple of $\vec u$ but has the nonzero vect
 
 **Proof.** The Euclidean operator norm is submultiplicative, so $\|\tilde q^n\| \le \|\tilde q\|^n$ and the series is dominated by the scalar series $\sum\|a_n\|\|\tilde q\|^n$; on a slice, $\tilde q = A$ and the sum is a power series in the slice variable.
 
-**Proposition.** The coordinate function $\tilde q$ is slice-regular but not Fueter-regular: $\nabla \tilde q = \sum_\mu e_\mu e_\mu = e_t^2+\vec e_x^2+\vec e_y^2+\vec e_z^2 = 1-1+1+1 = 2e_t \neq 0$. In general the slice-regular class is strictly larger than the Fueter-regular class, and the Fueter construction is the operation that converts the first into the second.
+**Proposition.** The coordinate function $\tilde q$ is slice-regular but not Fueter-regular: $\tilde\nabla_\Phi \tilde q = \sum_\mu e_\mu e_\mu = e_t^2+\vec e_x^2+\vec e_y^2+\vec e_z^2 = 1-1+1+1 = 2e_t \neq 0$. In general the slice-regular class is strictly larger than the Fueter-regular class, and the Fueter construction is the operation that converts the first into the second.
 
-**Theorem (Fischer decomposition).** Let $\mathcal{P}_k$ be the $\mathbb{H}_{\mathrm{spl}}$-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \nabla P = 0\}$ the **monogenic homogeneous polynomials**. Then
+**Theorem (Fischer decomposition).** Let $\mathcal{P}_k$ be the $\mathbb{H}_{\mathrm{spl}}$-valued homogeneous polynomials of degree $k$ and $\mathcal{M}_k = \{P \in \mathcal{P}_k : \tilde\nabla_\Phi P = 0\}$ the **monogenic homogeneous polynomials**. Then
 
 $$
 \boxed{\;
@@ -147,27 +147,27 @@ $$
 
 so every Fueter-regular function on a ball has a normally convergent expansion in monogenic homogeneous polynomials, the analogue of the Taylor series of complex analysis.
 
-**Proof.** This is the standard Fischer decomposition for a real Clifford algebra with a non-degenerate quadratic form; it depends only on the non-degeneracy of $\langle\cdot\rangle_{\natural}$ and the factorization $\Box = \nabla\bar\nabla$, both of which hold with the split inertia.
+**Proof.** This is the standard Fischer decomposition for a real Clifford algebra with a non-degenerate quadratic form; it depends only on the non-degeneracy of $\langle\cdot\rangle_{\natural}$ and the factorization $\Box_\Phi = \tilde\nabla_\Phi\bar\nabla$, both of which hold with the split inertia.
 
 ## Relation to the Quaternion and Biquaternion Fueter Theories
 
-The biquaternion article *Fueter Theory for Biquaternions* develops the operator on the quaternion subspace $\mathbb{B}_{H}$, where $\tilde\nabla\tilde{\nabla}^{\natural} = \Delta_4 e_t$ is the definite Laplacian; there the imaginary units form the sphere $S^2$, the axial representation and the Fueter construction are classical, the Fueter–Sce theorem holds for odd $n$ with the power $(n-1)/2$, and the Cauchy kernel is singular only at the origin. On the indefinite biquaternion subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the second-order operator becomes a wave operator and the elliptic tools disappear, while the full algebra $\mathbb{B}$ has the six-dimensional null quadric as an obstruction.
+The biquaternion article *Fueter Theory for Biquaternions* develops the operator on the quaternion subspace $\mathbb{B}_{H}$, where $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \Delta_4 e_t$ is the definite Laplacian; there the imaginary units form the sphere $S^2$, the axial representation and the Fueter construction are classical, the Fueter–Sce theorem holds for odd $n$ with the power $(n-1)/2$, and the Cauchy kernel is singular only at the origin. On the indefinite biquaternion subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the second-order operator becomes a wave operator and the elliptic tools disappear, while the full algebra $\mathbb{B}$ has the six-dimensional null quadric as an obstruction.
 
 The split-quaternion theory is the case in which **every** direction is of that indefinite kind: the second-order operator is ultrahyperbolic on the whole algebra, the imaginary units form a two-sheeted hyperboloid rather than a sphere, and the axial construction is obstructed on the null cone and replaced by a hyperbolic structure outside the timelike region. The slice statements survive because each slice restores a definite (complex) structure, and the Fischer decomposition survives because it needs only non-degeneracy; the radial Fueter construction and the Fueter–Sce parity theorem do not transfer, because they rest on spherical symmetry of a definite form. In Clifford terms the split-quaternion Fueter theory is the monogenic function theory of $\mathrm{Cl}_{2,2}$, to be compared with the $\mathrm{Cl}_{0,3}$ theory of the quaternions and the $\mathrm{Cl}_{1,3}$ theory of the biquaternions. Nothing quaternion- or biquaternion-specific — no imaginary sphere $S^2$, no definite half, no Euclidean Cauchy kernel — is imported.
 
 ## Summary
 
-The Fueter operator $\nabla = \sum_\mu e_\mu\,\partial/\partial q_\mu$ and its conjugate satisfy $\nabla\bar\nabla = \bar\nabla\nabla = \Box e_t$, the ultrahyperbolic operator $\partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ of inertia $(2,2)$; the Fueter operator is the Cauchy–Riemann operator of $\mathrm{Cl}_{2,2}$, non-elliptic, with the null cone as its characteristic set. Fueter-regular functions are the solutions of $\nabla F = 0$, equivalently of the split Cauchy–Riemann–Fueter system, and every such function is $\Box$-harmonic. The imaginary units are the two-sheeted hyperboloid $\{\langle I\rangle_{\natural}=1\}$ in $V$, not a sphere; on any slice $\mathbb{C}_I$ the operator reduces to the classical Cauchy–Riemann operator $\partial/\partial q_t + I\,\partial/\partial\rho$, so holomorphic functions of the slice variable are regular. The axial representation $F = A + \vec uB$ is available exactly on the timelike region $\langle \vec v\rangle_{\natural}>0$, degenerates on the null cone, and is replaced by a hyperbolic structure on the spacelike region; and the radial Fueter construction does not transfer, because the level sets of $\langle \vec v\rangle_{\natural}$ are hyperboloids rather than spheres and the radial identity acquires the vector part $2q_x(-q_z\vec e_y+q_y\vec e_z)$. Right-coefficient series are slice-regular on $\|\tilde q\| < R$, the coordinate $\tilde q$ is slice-regular but not regular, and the Fischer decomposition $\mathcal{P}_k = \bigoplus_j \tilde q^j\mathcal{M}_{k-j}$ gives the monogenic Taylor expansion. The split-quaternion theory is the fully indefinite member of the family: the slice and Fischer parts survive, and the radial, spherical and Fueter–Sce parts do not.
+The Fueter operator $\tilde\nabla_\Phi = \sum_\mu e_\mu\,\partial/\partial q_\mu$ and its conjugate satisfy $\tilde\nabla_\Phi\bar\nabla = \bar\nabla\nabla = \Box_\Phi e_t$, the ultrahyperbolic operator $\partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ of inertia $(2,2)$; the Fueter operator is the Cauchy–Riemann operator of $\mathrm{Cl}_{2,2}$, non-elliptic, with the null cone as its characteristic set. Fueter-regular functions are the solutions of $\tilde\nabla_\Phi F = 0$, equivalently of the split Cauchy–Riemann–Fueter system, and every such function is $\Box_\Phi$-harmonic. The imaginary units are the two-sheeted hyperboloid $\{\langle I\rangle_{\natural}=1\}$ in $V$, not a sphere; on any slice $\mathbb{C}_I$ the operator reduces to the classical Cauchy–Riemann operator $\partial/\partial q_t + I\,\partial/\partial\rho$, so holomorphic functions of the slice variable are regular. The axial representation $F = A + \vec uB$ is available exactly on the timelike region $\langle \vec v\rangle_{\natural}>0$, degenerates on the null cone, and is replaced by a hyperbolic structure on the spacelike region; and the radial Fueter construction does not transfer, because the level sets of $\langle \vec v\rangle_{\natural}$ are hyperboloids rather than spheres and the radial identity acquires the vector part $2q_x(-q_z\vec e_y+q_y\vec e_z)$. Right-coefficient series are slice-regular on $\|\tilde q\| < R$, the coordinate $\tilde q$ is slice-regular but not regular, and the Fischer decomposition $\mathcal{P}_k = \bigoplus_j \tilde q^j\mathcal{M}_{k-j}$ gives the monogenic Taylor expansion. The split-quaternion theory is the fully indefinite member of the family: the slice and Fischer parts survive, and the radial, spherical and Fueter–Sce parts do not.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
-| $\nabla = \partial/\partial q_t + \vec D$, $\bar\nabla = \partial/\partial q_t - \vec D$ | the Fueter (Cauchy–Riemann–Fueter) operator and its conjugate | *Split-Quaternion Regular Functions* |
+| $\tilde\nabla_\Phi = \partial/\partial q_t + \vec D$, $\bar\nabla = \partial/\partial q_t - \vec D$ | the Fueter (Cauchy–Riemann–Fueter) operator and its conjugate | *Split-Quaternion Regular Functions* |
 | $\vec D = \sum_\mu \vec e_\mu\,\partial/\partial q_\mu$ | the vector-derivative part | this article |
-| $\Box = \partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ | the ultrahyperbolic operator, inertia $(2,2)$ | this article |
-| $\nabla F = 0$ | left-Fueter-regular (monogenic); $F\nabla=0$ right-regular | this article |
+| $\Box_\Phi = \partial^2/\partial q_t^2+\partial^2/\partial q_x^2-\partial^2/\partial q_y^2-\partial^2/\partial q_z^2$ | the ultrahyperbolic operator, inertia $(2,2)$ | this article |
+| $\tilde\nabla_\Phi F = 0$ | left-Fueter-regular (monogenic); $F\nabla=0$ right-regular | this article |
 | $I$, $\{\langle I\rangle_{\natural}=1\}$ | an imaginary unit, and the two-sheeted hyperboloid of imaginary units | *Split-Quaternion Roots of Minus One* |
 | $\mathbb{C}_I = \mathbb{R}+I\mathbb{R}$ | a slice, a copy of the complex plane | this article |
 | $\rho = \sqrt{\langle \vec v\rangle_{\natural}}$, $\vec u = \vec v/\rho$ | axial radius and direction, on the timelike region $\langle \vec v\rangle_{\natural}>0$ | this article |

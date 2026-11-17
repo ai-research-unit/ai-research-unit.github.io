@@ -606,7 +606,7 @@ $$
 4\pi m=\oint_\Sigma\vec H\cdot d\vec\sigma=\sum_L\oint_L C\cdot d\ell .
 $$
 
-Only the singular part of $C$ contributes, and that part must be pure gauge, $C_{\text{sing}}=\nabla\Lambda$: otherwise $\vec H$ itself would be singular on $L$, contrary to the hypothesis. Each loop integral is therefore the increment $\delta\Lambda$ of a multivalued complex function. Gauge invariance and single-valuedness of $\tilde{Ξ}$ then give
+Only the singular part of $C$ contributes, and that part must be pure gauge, $C_{\text{sing}}=\vec\nabla_\Phi\Lambda$: otherwise $\vec H$ itself would be singular on $L$, contrary to the hypothesis. Each loop integral is therefore the increment $\delta\Lambda$ of a multivalued complex function. Gauge invariance and single-valuedness of $\tilde{Ξ}$ then give
 
 $$
 \delta\Lambda=b^{-1}\ln\mathcal{J}_{\mathrm{FP}}\tilde{Ξ}=b^{-1}\,2\pi i n,\qquad n\in\mathbb Z ,

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The coupled Klein–Gordon article states two equations side by side and leaves the choice between them open.** *The Coupled Klein–Gordon Equation in Biquaternionic Form* writes (E1) $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ and (E2) $\Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$, records that they coincide in the free limit and differ by the field strength, adopts E2, and puts E1's admissibility in its Open Questions. It also states, at §*The Two Coupled Equations*, that E2 is the equation of the corpus's action for "a connection whose coefficients are purely imaginary in every slot", and calls the electric slot's bookkeeping "the one addition". Those two sentences are the door this article walks through.
+**The coupled Klein–Gordon article states two equations side by side and leaves the choice between them open.** *The Coupled Klein–Gordon Equation in Biquaternionic Form* writes (E1) $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ and (E2) $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, records that they coincide in the free limit and differ by the field strength, adopts E2, and puts E1's admissibility in its Open Questions. It also states, at §*The Two Coupled Equations*, that E2 is the equation of the corpus's action for "a connection whose coefficients are purely imaginary in every slot", and calls the electric slot's bookkeeping "the one addition". Those two sentences are the door this article walks through.
 
 **The transform turns the choice into a comparison of two polynomials.** Wherever the connection is constant both equations have constant coefficients, so both have a symbol, and the symbols are central scalars differing by one term. Momentum space does not decide which equation the physics should use. It decides what each equation *is*, exactly, and it shows that the difference the parent defers to experiment is a difference between two real numbers rather than a difference between two kinds of number.
 
@@ -244,7 +244,7 @@ The parent's measured complex symbol, $-8.8876+1.86i$, is reproduced exactly by 
 - *The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, for the same two symbols read in the word and for the ordering term the chart cannot write.
 - *The Fourier Transform, the Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the action's Euler–Lagrange operator and the reading of the fork from the functional.
 - *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase and the sign of the coupling.
-- *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for $\tilde\nabla_{\mathrm{gco}}$, the commutator and $\tilde F$.
+- *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for $\tilde\nabla_{\mathrm{gco},\Phi}$, the commutator and $\tilde F$.
 - *Landau Levels in Biquaternionic Form*, for the ladder that a constant field strength produces.
 - *Derivatives, Fields and Transforms*, for the symbol rule and the convolution theorem.
 - *Operator and Calculus Conventions*, for $\partial/\partial R_t=-i\,\partial/\partial r_t'$ and the sign of the d'Alembertian.

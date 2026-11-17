@@ -64,16 +64,16 @@ The companion article separates two objects that both carry the name *Dirac equa
 **The two-sided equation** is Kravchenko's dictionary form, a single equation on the element $F\in\mathbb{B}$, with the constants carried,
 
 $$
-\Bigl(i\frac{\partial}{\partial r'_t}+\nabla\Bigr)F-k_{m_n}\,i\,\bar{F}\,\vec e_z=0,
+\Bigl(i\frac{\partial}{\partial r'_t}+\vec\nabla_\Phi\Bigr)F-k_{m_n}\,i\,\bar{F}\,\vec e_z=0,
 $$
 
-with $\nabla$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla_\Phi)^{\natural}$, so the equation is $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{L}=F$ and $\tilde{Ξ}_{R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
+with $\vec\nabla_\Phi$ the spatial gradient and the bar the coefficientwise complex conjugation, to be read apart from the Dirac adjoint. The time derivative and the gradient act on the left, the mass term on the right, through $\vec e_z$, and it carries the conjugation. On the material sector the left side is $-(\tilde\nabla_\Phi)^{\natural}$, so the equation is $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$, which is the second member of the one-sided pair under $\tilde{Ξ}_{L}=F$ and $\tilde{Ξ}_{R}=-i\bar F\vec e_z$; that element carries the value R when $F$ carries L, checked on a hundred elements. That reading is not a change of basis: it is **antilinear**, because of the bar. The two operators are therefore distinct — one mass pairs the two values of one element, the other conjugates the element and multiplies it on the right — and they agree only on the solutions, through that antilinear reading.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
 | Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_n}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_n}\tilde{Ξ}_{R}$ | $(\tilde\nabla_\Phi)^{\natural}F=-k_{m_n} i\,\bar F\,\vec e_z$ |
 | Field | $\tilde{Ξ}\in\mathbb{B}$, two values | $F\in\mathbb{B}$ |
-| Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left, by $i\partial/\partial r'_t$ and $\nabla$ |
+| Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left, by $i\partial/\partial r'_t$ and $\vec\nabla_\Phi$ |
 | Mass | the off-diagonal pair of the two values | right multiplication by $\vec e_z$, with $\bar F$ |
 | Chirality | the value carried by each part | the unit $\vec e_z$ of the mass term |
 | Status here | the definition, used throughout | quoted; not used |
@@ -270,7 +270,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $i$ | Scalar imaginary, $i^2=-1$, central |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors; $\mathbb{B}=\mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ |
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient, the Dirac operator, acting on the left |
-| $\nabla$, $Q_t=i q'_t$ | Spatial gradient; imaginary time of the material sector |
+| $\vec\nabla_\Phi$, $Q_t=i q'_t$ | Spatial gradient; imaginary time of the material sector |
 | $\Box_\Phi$ | The d'Alembertian in the material reading, the quaternionic norm of the gradient |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The field, an element of $\mathbb{B}$; $\tilde{Ξ}_{L}$ the value L, $\tilde{Ξ}_{R}$ the value R, at the axis $\vec e_z$ |
 | $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ | The algebra's real structure |
@@ -278,7 +278,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 | $b=ϙ_L\tilde\Pi_++ϙ_R\tilde\Pi_-=\tfrac{ϙ_L+ϙ_R}{2}e_t+\tfrac{i}{2}(ϙ_L-ϙ_R)\vec e_z$ | The charge element, in $\mathbb{B}_{\Psi}$; the charge is the right multiplication by $b$ |
 | $D_\mu\tilde{Ξ}=\partial\tilde{Ξ}/\partial R_\mu+\frac{i}{\hbar}A_\mu\tilde{Ξ} b$ | Covariant derivative of the chiral charge; the curvature is $\frac{i}{\hbar}F_{\mu\nu}\tilde{Ξ} b$ |
 | $\tilde{Ξ} b=0$ | Neutrality constraint; no nonzero solution unless $ϙ_L=0$ or $ϙ_R=0$ |
-| $(i\partial/\partial r'_t+\nabla)F-k_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
+| $(i\partial/\partial r'_t+\vec\nabla_\Phi)F-k_{m_n} i\,\bar F\,\vec e_z=0$ | Kravchenko's two-sided equation, $F\in\mathbb{B}$; the bar is the coefficientwise conjugation |
 | $\gamma_\mu[\mathbb{B}_{\Phi}]$, $\gamma_5$ | The gamma frame of the legacy section; used only in §*The Legacy Pauli Gamma Formulation* |
 | $G_N = \sigma\exp(i\theta_{\mathrm{cen}})+\bar{\sigma}\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $\mathrm{U}(2)=\mathrm{U}(1)\oplus\mathrm{SU}(2)$ | Maximal compact algebra in $\mathbb{B}$; dimension $4$ |

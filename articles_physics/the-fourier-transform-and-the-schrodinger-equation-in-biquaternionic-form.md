@@ -180,7 +180,7 @@ verified over one hundred draws to $1.4\times10^{-14}$. **The zeros are $\hbar\o
 
 ## Open Questions
 
-**The first question is the operator setting.** What replaces the two-point zero set when the Hamiltonian contains $\nabla$? The polar companion's answer is that the frequency becomes a function of position, a local frequency; whether that function has a zero set with a geometric meaning is not settled here.
+**The first question is the operator setting.** What replaces the two-point zero set when the Hamiltonian contains $\vec\nabla_\Phi$? The polar companion's answer is that the frequency becomes a function of position, a local frequency; whether that function has a zero set with a geometric meaning is not settled here.
 
 **The second is the sign of the imaginary part.** For a non-central root the zeros are complex, and the sign of their imaginary part decides growth or decay. Which sign a given Hamiltonian produces, and whether the two signs are separated by the cone, is not computed here.
 

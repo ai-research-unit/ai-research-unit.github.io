@@ -334,7 +334,7 @@ $$
 and its mixed components give the momentum density
 
 $$
-\vec P=\frac{1}{2i}\Big(\operatorname{Sc}\big(\tilde{Ξ}^*\nabla\tilde{Ξ}\big)-\operatorname{Sc}\big((\nabla\tilde{Ξ})^{*}\tilde{Ξ}\big)\Big)+\frac12\nabla\times\vec S .
+\vec P=\frac{1}{2i}\Big(\operatorname{Sc}\big(\tilde{Ξ}^*\vec\nabla_\Phi\tilde{Ξ}\big)-\operatorname{Sc}\big((\vec\nabla_\Phi\tilde{Ξ})^{*}\tilde{Ξ}\big)\Big)+\frac12\vec\nabla_\Phi\times\vec S .
 $$
 
 Compare this with the spin term of the Gordon identity: the spin contribution to the momentum density carries the coefficient $\tfrac12$, while the spin contribution to the electric current carries $1$. The spin-density gradient is therefore **twice as effective** at producing an electric current as at contributing to the linear momentum, and that factor of two is the Dirac value $g=2$ seen from the angular-momentum side.
@@ -350,14 +350,14 @@ $$
 and it does not contain the bound spin-momentum term; that term is restored by the antisymmetric part of the Belinfante improvement. Integrating, the spin contribution to the total angular momentum is
 
 $$
-\int\vec r\times\big(\tfrac12\nabla\times\vec S\big)\,d^3r=\int\vec S\,d^3r,
+\int\vec r\times\big(\tfrac12\vec\nabla_\Phi\times\vec S\big)\,d^3r=\int\vec S\,d^3r,
 $$
 
 so the division by two is necessary for angular momentum and its absence is the statement of $g=2$ in the current.
 
 ### Spin in Maxwell's equations
 
-The same strategy — split a conserved density into a transport part and a curl of a spin density — applies to light. For monochromatic Maxwell fields in the Riemann–Silberstein form, the time-averaged momentum density splits as $\vec P=\vec P_{\rm free}+\vec P_{\rm bound}$ with $\vec P_{\rm bound}=\tfrac12\nabla\times\vec S$, and the spin density can be identified, in the paraxial or pure-helicity case, with either $\vec S=\frac{\mu_0}{2i\omega}\vec H^{*}\times\vec H$ or $\vec S=\frac{\epsilon_0}{2i\omega}\vec E^{*}\times\vec E$; the two agree for a helicity state and may differ otherwise. This is the electromagnetic analogue of the Dirac decomposition, and the companion articles on the Riemann–Silberstein vector and on angular momentum and spin in biquaternionic form develop the same objects in the framework's notation.
+The same strategy — split a conserved density into a transport part and a curl of a spin density — applies to light. For monochromatic Maxwell fields in the Riemann–Silberstein form, the time-averaged momentum density splits as $\vec P=\vec P_{\rm free}+\vec P_{\rm bound}$ with $\vec P_{\rm bound}=\tfrac12\vec\nabla_\Phi\times\vec S$, and the spin density can be identified, in the paraxial or pure-helicity case, with either $\vec S=\frac{\mu_0}{2i\omega}\vec H^{*}\times\vec H$ or $\vec S=\frac{\epsilon_0}{2i\omega}\vec E^{*}\times\vec E$; the two agree for a helicity state and may differ otherwise. This is the electromagnetic analogue of the Dirac decomposition, and the companion articles on the Riemann–Silberstein vector and on angular momentum and spin in biquaternionic form develop the same objects in the framework's notation.
 
 ## The Biquaternion Reading
 

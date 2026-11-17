@@ -12,7 +12,7 @@ The question naturally arises whether electromagnetic waves can form shocks. Thi
 
 This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.
 
-The biquaternionic gradient $\tilde\nabla_\Phi$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box_\Phi\tilde{F} = -\sqrt{\mu}\,(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
+The biquaternionic gradient $\tilde\nabla_\Phi$, the field-strength biquaternion $\tilde{F}$, the four-current $\tilde J_{\Phi}$, and the wave equation $\Box_\Phi\tilde{F} = -\sqrt{\mu}\,(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde\nabla_\Phi = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.
 
 ## Why Linear Vacuum Maxwell Has No Shocks
 
@@ -40,7 +40,7 @@ This is a **linear, constant-coefficient, hyperbolic** equation. Two structural 
 
 **Feature 1: The equation is linear.** If $\tilde{F}_1$ and $\tilde{F}_2$ are solutions, then any linear combination $\alpha\tilde{F}_1 + \beta\tilde{F}_2$ is also a solution. There is no mechanism for the solution to steepen or to form a discontinuity spontaneously.
 
-**Feature 2: The characteristics are the light cone.** The characteristic equation of the wave operator $\Box$ is
+**Feature 2: The characteristics are the light cone.** The characteristic equation of the wave operator $\Box_\Phi$ is
 
 $$
 \left(\frac{\nu_4}{c_0}\right)^2 - \|\nu\|^2 = 0,
@@ -120,10 +120,10 @@ The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific st
 
 ### A Constant Zeroth-Order Term Does Not Change the Jump Condition
 
-The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \vec\nabla^{+}_\Phi + f + F$, $\vec\nabla^{+}_\Phi = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
+The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \vec\nabla_{+,\Phi} + f + F$, $\vec\nabla_{+,\Phi} = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
 
 $$
-\vec\nabla^{+}_\Phi B = \{\vec\nabla^{+}_\Phi B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
+\vec\nabla_{+,\Phi} B = \{\vec\nabla_{+,\Phi} B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
 \qquad
 (f+F)\circ B = \{(f+F)\circ B\} ,
 $$
@@ -180,7 +180,7 @@ The field strength is not the only object whose discontinuities the programme co
 $$
 \partial/\partial\tau\,\rho + \mathrm{div}\,\vec J = 0,
 \qquad
-\nabla\rho + \partial/\partial\tau\,\vec J - i\,\mathrm{rot}\,\vec J = 0,
+\vec\nabla_\Phi\rho + \partial/\partial\tau\,\vec J - i\,\mathrm{rot}\,\vec J = 0,
 $$
 
 which is the scalar and vector part of $D^-\tilde J_{\Phi,\mathrm{eg}} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec\nu\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec\nu\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
@@ -283,25 +283,25 @@ Magnetohydrodynamics is the setting in which the fluid and electromagnetic descr
 For a conducting fluid of velocity $\vec v$ and magnetic diffusivity $\eta$, the magnetic field obeys
 
 $$
-\partial/\partial r'_t\vec B = \nabla\times(\vec v\times\vec B) + \eta\,\nabla^2\vec B,
+\partial/\partial r'_t\vec B = \vec\nabla_\Phi\times(\vec v\times\vec B) + \eta\,\vec\nabla_\Phi^2\vec B,
 $$
 
-while the vorticity of the same flow, $\vec\omega = \nabla\times\vec v$, obeys the Helmholtz equation
+while the vorticity of the same flow, $\vec\omega = \vec\nabla_\Phi\times\vec v$, obeys the Helmholtz equation
 
 $$
-\partial/\partial r'_t\vec\omega = \nabla\times(\vec v\times\vec\omega) + \nu\,\nabla^2\vec\omega
+\partial/\partial r'_t\vec\omega = \vec\nabla_\Phi\times(\vec v\times\vec\omega) + \nu\,\vec\nabla_\Phi^2\vec\omega
 $$
 
 with the kinematic viscosity $\nu$. The two equations have the same form, in the same velocity field, with the magnetic field in the place of the vorticity and the magnetic diffusivity in the place of the kinematic viscosity. The vector identity behind both, valid for divergence-free fields, is
 
 $$
--\nabla\times(\vec v\times\vec B) = (\vec B\cdot\nabla)\vec v - (\vec v\cdot\nabla)\vec B,
+-\vec\nabla_\Phi\times(\vec v\times\vec B) = (\vec B\cdot\nabla)\vec v - (\vec v\cdot\nabla)\vec B,
 $$
 
 so that each is of the advection–diffusion type
 
 $$
-\partial/\partial r'_t\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\nabla^2\vec Q,
+\partial/\partial r'_t\vec Q + (\vec v\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec v + \kappa\,\vec\nabla_\Phi^2\vec Q,
 $$
 
 with the diffusivity $\kappa = \eta$ for the field and $\kappa = \nu$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\nu = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
@@ -404,7 +404,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 |---|---|
 | $c = 1/\sqrt{\epsilon\mu}$ | **Speed of light in the medium** (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
-| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu \partial/\partial R_\mu$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu \partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian |
 | $\tilde U_{\mathrm n}$ | Unit normal to the surface, $i\nu_t e_t + \vec u$ in the $i r'_t$ convention; the spatial case is the pure $\vec u$ |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |

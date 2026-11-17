@@ -201,8 +201,8 @@ The limit is stated once and it is not small: the two values of the basis operat
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
 | $L_aR_b$ | the basis operator, $L_aR_b\tilde X=a\tilde Xb$, with a left and a right slot |
 | left slot, right slot, both slots, no single side | operator chirality, the membership in one of the two images |
-| $\tilde\nabla$ | the biquaternion gradient, acting by left multiplication |
-| $\tilde\nabla^{\natural}$ | its quaternion conjugate, related to the other side by $\mathsf C L(a^{\natural})\mathsf C=R(a)$ |
+| $\tilde\nabla_\Phi$ | the biquaternion gradient, acting by left multiplication |
+| $(\tilde\nabla_\Phi)^{\natural}$ | its quaternion conjugate, related to the other side by $\mathsf C L(a^{\natural})\mathsf C=R(a)$ |
 | $u$ | a scalar-free element with $u^2=-e_t$ |
 | $-iR_u$ | the basis operator that realises the split, a pure right multiplier: an example of the right slot and not the definition |
 | $\tfrac12(\mathrm I\pm iR_u)$ | the two chiral projectors, derived from the sign |

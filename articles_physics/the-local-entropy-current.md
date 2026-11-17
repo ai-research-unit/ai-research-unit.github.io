@@ -52,7 +52,7 @@ $$
 **The declaration buys exactly one thing: it makes the scalar part real.** For an element $\tilde Q$ with components $Q_\mu$, the corpus's divergence has the scalar part
 
 $$
-\mathrm{Sc}\left(\tilde\nabla^{\natural}\tilde Q\right)=\partial_\mu Q_\mu
+\mathrm{Sc}\left((\tilde\nabla_\Phi)^{\natural}\tilde Q\right)=\partial_\mu Q_\mu
 $$
 
 **for every element and not only for a Hermitian one** — the identity is a property of the operator and of nothing else, and the two $\varepsilon$ weights of the gradient and the two signs of the scalar part cancel in each slot. **What Hermiticity adds is the reality of the right-hand side.** With $\tilde Q^{*}=\tilde Q$ the four coefficients are real, so $\partial_\mu Q_\mu$ is a real number and it can be compared with zero. For an anti-Hermitian element the coefficients are pure imaginary, the same scalar part is $i$ times a real number, and an inequality written on it would compare an imaginary quantity with zero, which is meaningless. **The declaration is therefore not a convention about signs; it is the condition under which the second law has a truth value.**
@@ -197,7 +197,7 @@ quoted from [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-
 
 ## Summary
 
-The entropy current is $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$, with $J_{\Phi,\mathrm{ent},t}=s_{\mathrm{ent}}\gamma$ and $J_{\Phi,\mathrm{ent},\eta}=s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta}$, every index low, and it is **declared Hermitian**: all four coefficients real, the star conjugation fixing the element. Hermiticity is exactly the condition under which $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde J)=\partial_\mu J_\mu$ is a real number, which is why the declaration is the corpus's mechanism for making entropy inequalities meaningful; the alternative spelling with a written $\mathrm{Re}$ is equivalent and is not used here.
+The entropy current is $\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\gamma(e_t+\vec\beta_{\mathrm{vel}})$, with $J_{\Phi,\mathrm{ent},t}=s_{\mathrm{ent}}\gamma$ and $J_{\Phi,\mathrm{ent},\eta}=s_{\mathrm{ent}}\gamma\beta_{\mathrm{vel},\eta}$, every index low, and it is **declared Hermitian**: all four coefficients real, the star conjugation fixing the element. Hermiticity is exactly the condition under which $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J)=\partial_\mu J_\mu$ is a real number, which is why the declaration is the corpus's mechanism for making entropy inequalities meaningful; the alternative spelling with a written $\mathrm{Re}$ is equivalent and is not used here.
 
 The self-contraction is the proper entropy density squared, $J_{\Phi,\mathrm{ent},t}^{2}-\lvert\vec J_{\Phi,\mathrm{ent}}\rvert^{2}=\gamma^{2}s_{\mathrm{ent}}^{2}(1-\beta_{\mathrm{vel}}^{2})=s_{\mathrm{ent}}^{2}$, checked at three velocities with $s_{\mathrm{ent}}=3$ where the value is $9$ in every frame; the quaternionic norm of the same element is $\gamma^{2}s_{\mathrm{ent}}^{2}(1+\beta_{\mathrm{vel}}^{2})$ and is not the invariant, the two coinciding only when the temporal slot carries an $i$. The thermal element of the moving-frame article has the quaternionic norm $-\beta^{2}$, the sign difference being exactly that $i$.
 
@@ -225,7 +225,7 @@ The functional of [Coarse-Graining and the Biquaternion Entropy Functional](coar
 | $J_{\Phi,\mathrm{ent},t}^{2}-\lvert\vec J_{\Phi,\mathrm{ent}}\rvert^{2}$ | The contraction of the current with itself, the invariant this article uses |
 | $\tilde Q$, $Q_t$, $Q_\eta$ | A general element and its temporal and spatial coefficients |
 | $\mathrm{Sc}$ | Scalar part |
-| $\tilde\nabla^{\natural}$ | The algebra's divergence operator |
+| $(\tilde\nabla_\Phi)^{\natural}$ | The algebra's divergence operator |
 | $\tilde Q^{*}$ | The conjugation; $\tilde Q^{*}=\tilde Q$ is Hermiticity |
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element |
 | $w_{\mathrm{fl}}$, $p_{\mathrm{th}}$ | Energy density, thermal pressure |

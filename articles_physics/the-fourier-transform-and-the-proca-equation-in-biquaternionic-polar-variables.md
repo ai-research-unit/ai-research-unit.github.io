@@ -145,10 +145,10 @@ which *Degenerate Solutions of the Biquaternionic Proca Equation* proves is **on
 
 $$
 S=\varepsilon\Bigl[c\,\frac{\partial \varrho}{\partial r'_t}-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
-+\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0 ,
++\tfrac12 rs\,\frac{\partial\theta_{\mathrm{rpd}}}{\partial r'_t}-\tfrac12 rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\vec\nabla_\Phi\cdot\hat u_{\mathrm b}\Bigr]=0 ,
 $$
 
-with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, and observes that the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\nabla\cdot(\varepsilon rs\hat u_{\mathrm b})$. **On a mode every derivative becomes a multiplication**, so the display collapses to
+with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$, and observes that the first two terms are $\partial_{r'_t}(\varepsilon rc)$ and the last three are $-\vec\nabla_\Phi\cdot(\varepsilon rs\hat u_{\mathrm b})$. **On a mode every derivative becomes a multiplication**, so the display collapses to
 
 $$
 [kA]=k_t'a_t'-\vec k_\Phi\cdot\vec a=0 ,

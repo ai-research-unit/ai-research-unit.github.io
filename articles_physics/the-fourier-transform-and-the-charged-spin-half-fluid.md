@@ -12,7 +12,7 @@
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, the gauge transformation $\lambda=\exp(iϙ\Gamma/\hbar)$ with $\Gamma$ real, and
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $ϙ$, the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, the gauge transformation $\lambda=\exp(iϙ\Gamma/\hbar)$ with $\Gamma$ real, and
 
 $$
 \tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi ,

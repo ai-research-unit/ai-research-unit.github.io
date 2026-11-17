@@ -368,7 +368,7 @@ The paravector calculus is therefore the calculus of *one-sided* basis operators
 $$
 L_{\tilde\nabla_\Phi}\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 \qquad
-L_{\tilde\nabla^{\natural}}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+L_{(\tilde\nabla_\Phi)^{\natural}}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
 a pair of lines in which the gradient acts from the left on each chiral half and the mass is the off-diagonal pairing that mixes them. The second is **two-sided**,

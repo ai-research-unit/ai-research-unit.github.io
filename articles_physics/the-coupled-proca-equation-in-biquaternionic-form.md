@@ -7,11 +7,11 @@ This article couples the Proca field to an electromagnetic connection and reads 
 **The equation.**
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
 \qquad
-\tilde F=\frac12\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A-\tilde\nabla_{\mathrm{gco}}\tilde A\bigr)_{\mathrm{V}},
+\tilde F=\frac12\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr)_{\mathrm{V}},
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi},
 $$
 
 with $\tilde A$ the Proca potential, $\tilde A_\Phi$ the connection, $k_m=mc/\hbar$, and the subscript $\mathrm{V}$ the pure-vector part of an element. The second display is one half of the antisymmetric part of the covariant gradient, and the article writes it in that form because the symmetric half is the covariant divergence, which is a different object.
@@ -22,7 +22,7 @@ with $\tilde A$ the Proca potential, $\tilde A_\Phi$ the connection, $k_m=mc/\hb
 
 *Second, the field strength carries the connection, unlike the Dirac case.* The Proca equation contains $\tilde F$, and $\tilde F$ is built from the covariant gradient, so the connection enters the equation twice: once through the derivative and once through the field strength. In the Dirac equation the field strength is not in the equation at all, and the coupling enters once. The extra term is $\frac{iϙ}{\hbar}\mathrm{Vect}(\tilde A_{\Phi}^{\natural}\tilde A)$, it is bilinear in the two potentials, and it is the algebra's form of the commutator term that a non-abelian field strength carries.
 
-*Third, the Lorenz condition survives, and it survives in covariant form.* The second-order operator $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}$ is the sum of the squared components plus the curvature, and the curvature term is a pure vector, so it has no scalar part. The scalar part of the coupled equation therefore forces $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ exactly, with no term to spare. What is not forced is the *ordinary* divergence: the covariant condition differs from it by a term bilinear in the connection.
+*Third, the Lorenz condition survives, and it survives in covariant form.* The second-order operator $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$ is the sum of the squared components plus the curvature, and the curvature term is a pure vector, so it has no scalar part. The scalar part of the coupled equation therefore forces $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ exactly, with no term to spare. What is not forced is the *ordinary* divergence: the covariant condition differs from it by a term bilinear in the connection.
 
 *Fourth, the carrier now has a central phase, so the field now has a charge.* The free Proca field is real, the central imaginary leaves the material sector, and the free article's conclusion is that there is no second current. A complex field has the phase, the phase is a symmetry of the coupled equation, and the Noether current exists. That current is the source the inhomogeneous Maxwell equation needs, and its existence is the reason the free article could not supply one.
 
@@ -61,22 +61,22 @@ The right side is real and central, so it is neither anti-Hermitian nor Hermitia
 **One operator, one element.**
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 \qquad
 \tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta,
 $$
 
-acting from the left. The sign pair is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ and $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=ϙ\Gamma/\hbar$.
+acting from the left. The sign pair is the gauge principle's: $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ and $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=ϙ\Gamma/\hbar$.
 
 **The connection is central per component in the abelian case.** With $A_\mu$ scalar coefficients that commute with the units and with one another, the covariant derivative separates:
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\sum_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\mu},
+\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu e_\mu\,\tilde\nabla_{\mathrm{gco},\Phi,\mu},
 \qquad
-\tilde\nabla_{\mathrm{gco},\mu}=\frac{\partial}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu .
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\frac{\partial}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu .
 $$
 
-Each $\tilde\nabla_{\mathrm{gco},\mu}$ is a *central* operator: it multiplies every element of $\mathbb{B}$ from either side without changing its type. That centality is the single fact on which everything in the two coupled Proca articles turns, and it is the reason the polar companion can state the coupling as a shift of four scalar slots.
+Each $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$ is a *central* operator: it multiplies every element of $\mathbb{B}$ from either side without changing its type. That centality is the single fact on which everything in the two coupled Proca articles turns, and it is the reason the polar companion can state the coupling as a shift of four scalar slots.
 
 **The two forms of the operator agree.** The per-component display and the element display are the same operator, because $A_\mu$ is central:
 
@@ -89,14 +89,14 @@ The equality is the reason the article can use the per-component form for comput
 **The conjugate operator.**
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
 \qquad
 \tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta .
 $$
 
 For a purely electric potential $\tilde A_\Phi^{\natural}=+\tilde A_\Phi$; for a purely magnetic one $\tilde A_\Phi^{\natural}=-\tilde A_\Phi$; for a general potential it is neither. The asymmetry is the algebra's statement that the electric and magnetic slots of the connection enter the conjugate derivative with opposite signs, and it is why the field strength below is not simply twice the magnetic part.
 
-**The side is the left, and the mirror is the renaming.** Every coupling here acts on the left. The right-action equation on $\tilde A$ is the left-action equation on $\tilde A^{\natural}$, by the renaming identity $(\tilde A\tilde\nabla_{\mathrm{gco}})^{\natural}=\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A^{\natural}$, so the two sides are one construction and not two.
+**The side is the left, and the mirror is the renaming.** Every coupling here acts on the left. The right-action equation on $\tilde A$ is the left-action equation on $\tilde A^{\natural}$, by the renaming identity $(\tilde A\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A^{\natural}$, so the two sides are one construction and not two.
 
 ## Gauge Covariance
 
@@ -127,12 +127,12 @@ and $\natural$ leaves $\lambda$ alone, since $\natural$ negates the spatial unit
 **The first derivative is covariant.**
 
 $$
-\tilde\nabla_{\mathrm{gco},2}\bigl(\lambda\tilde A\bigr)
+\tilde\nabla_{\mathrm{gco},\Phi,2}\bigl(\lambda\tilde A\bigr)
 =\tilde\nabla_\Phi\bigl(\lambda\tilde A\bigr)+\frac{i\,ϙ}{\hbar}\bigl(\tilde A_\Phi-\tilde\nabla_\Phi\Gamma\bigr)\lambda\tilde A
-=\lambda\,\tilde\nabla_{\mathrm{gco}}\tilde A .
+=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde A .
 $$
 
-The two $\tilde\nabla_\Phi\Gamma$ terms cancel and $\lambda$ passes to the left past the connection and past the field. The second derivative repeats the computation with $\natural$ throughout and gives $\tilde\nabla_{\mathrm{gco},2}^{\natural}(\lambda\tilde A)=\lambda\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A$.
+The two $\tilde\nabla_\Phi\Gamma$ terms cancel and $\lambda$ passes to the left past the connection and past the field. The second derivative repeats the computation with $\natural$ throughout and gives $\tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\lambda\tilde A)=\lambda(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A$.
 
 **The field strength is covariant.**
 
@@ -145,7 +145,7 @@ because $\mathrm{Vect}$ commutes with left multiplication by a central element a
 **The equation is covariant, massive as well as massless.** Both sides acquire one factor $\lambda$:
 
 $$
-\tilde\nabla_{\mathrm{gco},2}\tilde F_2=\lambda\,\tilde\nabla_{\mathrm{gco}}\tilde F,
+\tilde\nabla_{\mathrm{gco},\Phi,2}\tilde F_2=\lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde F,
 \qquad
 k_m^2\tilde A_2=\lambda\,k_m^2\tilde A .
 $$
@@ -157,8 +157,8 @@ The mass term is homogeneous because it is linear in the field; it is the *bilin
 **The definition.**
 
 $$
-\tilde F=\frac12\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A-\tilde\nabla_{\mathrm{gco}}\tilde A\bigr)_{\mathrm{V}}
-=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr),
+\tilde F=\frac12\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr)_{\mathrm{V}}
+=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 $$
 
 the two displays agreeing because the pure-vector part of an element and the part of its $\natural$-image are related by the sign of the whole, and the antisymmetric combination of the gradient and its conjugate is the vector part of either.
@@ -194,32 +194,32 @@ The second term is nonzero. Its size runs from $0.7$ to $12$ over a hundred rand
 **The operator identity.** The covariant d'Alembertian splits into a scalar part and a curvature part:
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}
-=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F^{(\Phi)},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
+=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F^{(\Phi)},
 $$
 
-with $\tilde F^{(\Phi)}$ the curvature of the connection. The first term is scalar — each $\tilde\nabla_{\mathrm{gco},\mu}$ is central, so the four squares are central operators and their sum multiplies every element uniformly. The second term is a pure vector, and a pure vector has no scalar part.
+with $\tilde F^{(\Phi)}$ the curvature of the connection. The first term is scalar — each $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$ is central, so the four squares are central operators and their sum multiplies every element uniformly. The second term is a pure vector, and a pure vector has no scalar part.
 
-**The scalar part of the equation therefore forces the constraint.** Applying $\tilde\nabla_{\mathrm{gco}}^{\natural}$ to the equation and taking the scalar part,
+**The scalar part of the equation therefore forces the constraint.** Applying $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ to the equation and taking the scalar part,
 
 $$
-k_m^2\,\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)
-=\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde F\bigr)
-=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}\,\mathrm{Sc}\bigl(\tilde F\bigr)=0,
+k_m^2\,\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)
+=\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde F\bigr)
+=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\,\mathrm{Sc}\bigl(\tilde F\bigr)=0,
 $$
 
 since $\tilde F$ is a pure vector. The constraint is exact, it holds for every configuration that solves the equation, and it is *covariant*:
 
 $$
-\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0
+\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0
 \qquad\Longleftrightarrow\qquad
-\frac{\partial a'_t}{\partial r'_t}+\nabla\cdot\vec A
+\frac{\partial a'_t}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec A
 =-\frac{i\,ϙ}{\hbar}\,\mathrm{Sc}\bigl(\tilde A_\Phi^{\natural}\tilde A\bigr).
 $$
 
 **The two readings of that line.** The left reading is the covariant Lorenz condition, and it is the one the equation forces. The right reading is the ordinary divergence, and it is *not* zero: it is fixed by the potential, slot by slot, since $\mathrm{Sc}(\tilde A_\Phi^{\natural}\tilde A)$ is one scalar built from the two potentials. For a purely electric constant potential the right side is $\frac{ϙ a}{\hbar}a'_t$ in the article's units, so even a constant electrostatic potential moves the ordinary divergence.
 
-**Why the curvature does not spoil it.** The naive expectation is that a background field strength should source the constraint, as it does for a non-abelian massive vector. The algebra's answer is precise and different: the curvature term in the operator identity is scalar-free. The trace sees only $\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$, the four operators commute with each other as central operators, and the commutator's contribution is confined to the traceless part of the equation. The constraint is untouched; the *transport of the frame* is what the curvature moves, and that is the polar companion's subject.
+**Why the curvature does not spoil it.** The naive expectation is that a background field strength should source the constraint, as it does for a non-abelian massive vector. The algebra's answer is precise and different: the curvature term in the operator identity is scalar-free. The trace sees only $\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$, the four operators commute with each other as central operators, and the commutator's contribution is confined to the traceless part of the equation. The constraint is untouched; the *transport of the frame* is what the curvature moves, and that is the polar companion's subject.
 
 **A check on a lattice.** Applying the composite to a random pure-vector field on a periodic lattice gives a scalar part of size $3\times10^{-13}$ in the free case and $4\times10^{-13}$ in a background with constant field strength — the same number, which is the numerical form of the statement that the curvature does not enter the trace. The same computation with the cross terms of the composite deleted — that is, with the algebra's units treated as commuting — gives zero identically, which locates the whole effect in the non-commutativity of the units.
 
@@ -255,7 +255,7 @@ that is $E\mapsto E+ϙ c\,a'_t$ with $E=\hbar\omega$. The numerical check is exa
 **The Noether current.**
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\mu}\tilde A\bigr)
+j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A\bigr)
 $$
 
 in the article's pairing, one real number per component, and it is the object the inhomogeneous Maxwell equation needs. Two statements about it are exact and are the article's reason for stating it at all: it is invariant under the gauge group, and it is conserved on solutions by the equation and its conjugate.
@@ -294,11 +294,11 @@ in the article's pairing, one real number per component, and it is the object th
 The coupled Proca equation is
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
 \qquad
-\tilde F=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr),
+\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 $$
 
 with the field an element of $\mathbb{B}$ and the free field its real slice.
@@ -319,16 +319,16 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\tilde A=i\,a'_t\,e_t+\vec A$ | The coupled Proca potential, an element of $\mathbb{B}$; $a'_t$ and $\vec A$ complex |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, an element of $\mathbb{B}_\Phi$; $A_\mu$ central in the abelian case |
 | $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$ | Its $\natural$-image; the conjugate derivative's connection |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
-| $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{iϙ}{\hbar}A_\mu$ | Its central per-component form |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial/\partial R_\mu+\frac{iϙ}{\hbar}A_\mu$ | Its central per-component form |
 | $\partial/\partial R_t=-i\,\partial/\partial r'_t$ | Material time derivative |
-| $\tilde F=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$ | Field strength; covariant with $\lambda$ |
+| $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; covariant with $\lambda$ |
 | $\tilde F^{(\Phi)}$ | Curvature of the connection |
 | $\tilde C=\frac{iϙ}{\hbar}\tilde A_\Phi$ | The coupling element of a constant background |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $ϙ$ | Charge; a parameter of the framework |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$, $\vartheta_{\mathrm{gau}}=ϙ\Gamma/\hbar$ | Central gauge phase; $\Gamma$ real |
-| $j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\mu}\tilde A)$ | The charge current |
+| $j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A)$ | The charge current |
 
 ## Further Reading
 

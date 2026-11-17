@@ -126,7 +126,7 @@ which is the form the polar article verifies numerically. The mass term enters t
 
 ## The Mass Term, the Branch, and the Constraint
 
-**The Hessian has rank three.** The kinetic part of the chart's Lagrangian is $\tfrac12\epsilon\vec E^2$ with $\vec E=-\nabla a'_t-\partial_{t'}\vec A$, so only $\vec A$ carries velocities, and
+**The Hessian has rank three.** The kinetic part of the chart's Lagrangian is $\tfrac12\epsilon\vec E^2$ with $\vec E=-\vec\nabla_\Phi a'_t-\partial_{t'}\vec A$, so only $\vec A$ carries velocities, and
 
 $$
 \frac{\partial^2\mathcal{L}}{\partial\dot q^i\partial\dot q^j}
@@ -158,7 +158,7 @@ The chart's gain is the first row: the boost is parametrized, not constrained, s
 
 $$
 S=\varepsilon\Bigl[c\,\partial_{r'_t}\varrho-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
-+\tfrac12rs\,\partial_{r'_t}\theta_{\mathrm{rpd}}-\tfrac12rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\nabla\cdot\hat u_{\mathrm b}\Bigr]=0,
++\tfrac12rs\,\partial_{r'_t}\theta_{\mathrm{rpd}}-\tfrac12rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\vec\nabla_\Phi\cdot\hat u_{\mathrm b}\Bigr]=0,
 $$
 
 with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$. It is the divergence of the four-vector in the chart's variables, and it is the secondary constraint. On shell it removes one of the four parameters and leaves three.

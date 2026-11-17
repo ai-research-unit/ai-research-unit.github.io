@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The coupled equation adds one term to the Dirac operator, and this article asks what the transform does to that term.** *The Coupled Dirac Equation in Biquaternionic Form* replaces the gradient with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$. The first summand is a derivative and the second is a multiplication, and the transform treats the two differently. Everything below is the reading of that difference.
+**The coupled equation adds one term to the Dirac operator, and this article asks what the transform does to that term.** *The Coupled Dirac Equation in Biquaternionic Form* replaces the gradient with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$. The first summand is a derivative and the second is a multiplication, and the transform treats the two differently. Everything below is the reading of that difference.
 
 **The finding is a classification of one term by its order.** The coupling acts as a multiplier in momentum space exactly when $\tilde A_\Phi$ is constant. A linear $\tilde A_\Phi$ gives a first-order differential operator. A general $\tilde A_\Phi$ gives a convolution, which is an integral operator of no finite order. The three cases are one ladder, and the ladder is the article.
 
@@ -45,9 +45,9 @@ and both are the polar parent's, quoted at the temporal slot so that no sign is 
 **The parent's covariant derivative is quoted once.** It is
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi ,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
 $$
 
 with $ϙ$ the charge, $k_m=mc/\hbar$ the mass wave number, and $\tilde A_\Phi$ the connection of the gauge principle. In the abelian component form the parent uses, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ with complex scalar coefficients, and each component of the covariant derivative is a central scalar operator. That sentence is the parent's and its consequences are the polar companion's; this article uses only that the coefficients are central.
@@ -120,7 +120,7 @@ $$
 
 **The gauge phase is $\theta_{\mathrm{gau}}=\frac{ϙ\,\Gamma}{\hbar}$ and the field transforms by a central phase.** The parent's law is $\tilde\Xi_2=\lambda\tilde\Xi$ with $\lambda=\exp(i\theta_{\mathrm{gau}})$ and $\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$ for real $\Gamma$. The multiplier $\lambda$ is central and of unit modulus, so the transform sees it as one scalar function and nothing else.
 
-**Finding 4.** Gauge invariance is a translation in momentum space when the gauge phase is linear, and a phase is linear in the position exactly when its gradient is constant. For a linear $\theta_{\mathrm{gau}}$ the multiplication is a translation of the support by $\nabla\theta_{\mathrm{gau}}$, and the mode count is preserved. For a non-linear $\theta_{\mathrm{gau}}$ the multiplication is a convolution, and the mode count is not preserved.
+**Finding 4.** Gauge invariance is a translation in momentum space when the gauge phase is linear, and a phase is linear in the position exactly when its gradient is constant. For a linear $\theta_{\mathrm{gau}}$ the multiplication is a translation of the support by $\vec\nabla_\Phi\theta_{\mathrm{gau}}$, and the mode count is preserved. For a non-linear $\theta_{\mathrm{gau}}$ the multiplication is a convolution, and the mode count is not preserved.
 
 **The linear case, with a count and a residual.** One mode at index $11$ of $128$, multiplied by $\exp(i\theta_{\mathrm{gau}})$ with $\theta_{\mathrm{gau}}=\frac{ϙ}{\hbar}\Gamma$ and $\Gamma$ linear, came back as one mode at index $24$ for a gauge gradient of thirteen modes and at index $40$ for one of twenty-nine. The residuals against the exact translated spectrum were $4.3\times10^{-15}$ and $1.9\times10^{-15}$ of the peak, and the occupied count was one of one hundred and twenty-eight in both cases.
 
@@ -174,7 +174,7 @@ The shift of the wave number is a translation. At constant $\tilde A_\Phi$ the n
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ | The parent's covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ | The parent's covariant derivative |
 | $\tilde A_\Phi=i a_t e_t+\vec a$ | The connection in the material sector; $a_t$, $\vec a$ real |
 | $i\tilde K_\Phi$, $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |
 | $i\tilde K_{\Phi,\mathrm{gco}}=i(\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi)$ | The symbol of the coupled derivative |

@@ -28,7 +28,7 @@ $$
 
 **What the article does not do.** It does not produce a second integral, does not evaluate the coupled kernel, and does not decide the gauge-fixing question for a dynamical connection. It reads the enlarged integral and says what the enlargement is.
 
-**Conventions.** The algebra, the word, the sectors and the pairing are the polar equation article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant gradient is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The Proca potential is $\tilde A$; the connection is $\tilde A_\Phi$. The Hermitian factor is $H=\varrho\tilde U_{\Psi,\mathrm b}$ with $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$, and the unitary factor is $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. **The word is the polar decomposition $\tilde A=H\Omega$ and it is a bijection onto the N-regular set**, not onto the whole algebra; the equation article's domain statements apply and are not repeated.
+**Conventions.** The algebra, the word, the sectors and the pairing are the polar equation article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling is $ϙ$, and the covariant gradient is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The Proca potential is $\tilde A$; the connection is $\tilde A_\Phi$. The Hermitian factor is $H=\varrho\tilde U_{\Psi,\mathrm b}$ with $\tilde U_{\Psi,\mathrm b}=\cosh u+i\sinh u\,\hat u_{\mathrm b}$, and the unitary factor is $\Omega=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$. **The word is the polar decomposition $\tilde A=H\Omega$ and it is a bijection onto the N-regular set**, not onto the whole algebra; the equation article's domain statements apply and are not repeated.
 
 ## The Word of the Enlarged Carrier
 
@@ -94,7 +94,7 @@ which is the $a^{-4}$ an eight-component Gaussian carries. **The radial power pl
 
 ## The Constraint and the Mass
 
-**The divergence's square is displayed in the coupled chart exactly as in the free one, with the covariant divergence in it.** The exponent's second piece is $-\frac12S_{\mathrm{gco}}^{2}$ with $S_{\mathrm{gco}}=\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$, and its saddle is $S_{\mathrm{gco}}=0$, the covariant Lorenz condition. **The mechanism is the free article's: a quadratic entry makes an equation and not a delta.**
+**The divergence's square is displayed in the coupled chart exactly as in the free one, with the covariant divergence in it.** The exponent's second piece is $-\frac12S_{\mathrm{gco}}^{2}$ with $S_{\mathrm{gco}}=\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$, and its saddle is $S_{\mathrm{gco}}=0$, the covariant Lorenz condition. **The mechanism is the free article's: a quadratic entry makes an equation and not a delta.**
 
 **The saddle's chart is a full eight-parameter word and its constraint is one of the eight.** The classical field is $\tilde A^{\mathrm{cl}}=-P_{\mathrm{gco}}^{-1}\tilde J$, a general element, so its word is $(\varrho,\theta_{\mathrm{pha}},u,\vartheta_1,\vartheta_2,\psi_1,\psi_2,\psi_3)$ with the covariant condition restricting the combination that the covariant divergence measures. **The chart therefore reads the saddle completely**, which the free chart could not do for the kernel.
 
@@ -162,7 +162,7 @@ The constraint's square is displayed, its saddle is the covariant Lorenz conditi
 | $\varrho^{3}$ | The free chart's radial power |
 | $\int_0^\infty \varrho^{7}\mathrm{d}\varrho\,e^{-a\varrho^{2}}=3/a^{4}$ | Eight components' worth of Gaussian weight |
 | $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$ | The gauge transformation as a coordinate shift |
-| $S_{\mathrm{gco}}=\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$ | The displayed constraint; its saddle is the covariant condition |
+| $S_{\mathrm{gco}}=\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | The displayed constraint; its saddle is the covariant condition |
 | $-k_m^{2}$ | The ghost; a momentum-space eigenvalue the chart does not see |
 
 ## Further Reading

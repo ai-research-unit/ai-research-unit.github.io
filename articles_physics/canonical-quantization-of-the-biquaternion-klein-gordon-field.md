@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion article *The Klein–Gordon Equation in Biquaternionic Form* closes on a two-fold defect. The equation $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+The companion article *The Klein–Gordon Equation in Biquaternionic Form* closes on a two-fold defect. The equation $\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0$ is second order in the time coordinate and has no first-order square root inside $\mathbb{B}$, and its conserved density is not positive definite, so that it admits no one-particle interpretation, the negative-frequency branch carrying the sign of the frequency. Canonical quantization is the standard resolution of both defects at once: the field becomes an operator, the negative-frequency branch becomes an antiparticle branch, and the non-positive density becomes the charge of a many-particle theory. This article carries that resolution out for the framework's scalar field. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 Its question is the one the Dirac and Maxwell companion articles asked for their own fields: how much of the second-quantized structure is supplied by the algebra $\mathbb{B}$, and how much is transcribed from standard quantum field theory? The answer for the scalar is the cleanest of the three, and it is largely negative in a way that is worth stating at the outset.
 
@@ -39,7 +39,7 @@ $$
 Because $\partial/\partial R_t=-i\partial/\partial r'_t$, the Lagrangian written in the physical time is
 
 $$
-\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\nabla\xi|^2-k_m^{2}|\xi|^2 .
+\mathcal{L}=|\partial\xi/\partial r'_t|^2-|\vec\nabla_\Phi\xi|^2-k_m^{2}|\xi|^2 .
 $$
 
 The **conjugate momentum** is
@@ -54,7 +54,7 @@ and the Legendre transform is **regular**: $\pi$ determines $\partial\xi/\partia
 The equation of motion obtained by varying the action is the parent's biquaternion Klein–Gordon equation,
 
 $$
-\left(\Box-k_m^{2}\right)\tilde{Ξ}=0 ,
+\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0 ,
 $$
 with $k_m=mc/\hbar$ the mass wave number.
 
@@ -86,7 +86,7 @@ k_{t}^{\prime}=\frac{\omega}{c},
 =-k_{t}^{\prime\,2}+k_{\Phi}^{2}=-k_m^{2} .
 $$
 
-Here $k_{\Phi}=|\vec k_\Phi|=\frac{p}{\hbar}$ is the momentum wave number, and the norm is a central **scalar** of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $(ik_{t}^{\prime})^{2}e_t=-k_{t}^{\prime\,2}e_t$ and $\vec k_\Phi\vec k_\Phi^{\natural}=k_\Phi^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $\hbar$ is real and central, so the division touches no coefficient's sector: $\tilde K_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar$: the division by $\hbar$ is the whole of the wave number, so the phase carries no separate $\hbar$ once $\tilde K_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(-i\theta_{\mathrm{pwp}})e_t$ into $\left(\Box-k_m^{2}\right)\tilde{Ξ}=0$ gives $k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_m^{2}$, which is the mass-shell condition $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ already contained in the norm.
+Here $k_{\Phi}=|\vec k_\Phi|=\frac{p}{\hbar}$ is the momentum wave number, and the norm is a central **scalar** of $\mathbb{B}_{C}$, not a multiple of $e_t$: the two factors are $(ik_{t}^{\prime})^{2}e_t=-k_{t}^{\prime\,2}e_t$ and $\vec k_\Phi\vec k_\Phi^{\natural}=k_\Phi^{2}e_t$, so the temporal square enters with a minus and the spatial with a plus, and the three wave numbers close the mass shell. $\hbar$ is real and central, so the division touches no coefficient's sector: $\tilde K_{\Phi}$ is anti-Hermitian like $\tilde P_{\Phi}$, stays in $\mathbb{B}_{\Phi}$, and carries the dimension $\mathrm{L}^{-1}$. The plane-wave phase is the scalar part $\mathrm{Sc}(\tilde K_{\Phi}\tilde{R}_\Phi^{\natural})=-k_{t}^{\prime}\,r'_t+\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, which is $\mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural})/\hbar$: the division by $\hbar$ is the whole of the wave number, so the phase carries no separate $\hbar$ once $\tilde K_{\Phi}$ is named. Substituting $\tilde{Ξ}=\xi_0\exp(-i\theta_{\mathrm{pwp}})e_t$ into $\left(\Box_\Phi-k_m^{2}\right)\tilde{Ξ}=0$ gives $k_{t}^{\prime\,2}-k_{\Phi}^{2}=k_m^{2}$, which is the mass-shell condition $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ already contained in the norm.
 
 ## Equal-Time Commutation Relations
 
@@ -187,7 +187,7 @@ The angle is $\theta_{\mathrm{spa}}=\vec k_\Phi\cdot\vec r$, the spatial part of
 The Hamiltonian density is the time–time component of the canonical energy–momentum tensor; with $\xi_{\mathrm{fop}}$ carrying an inverse length and $r'_t$ a length, the density needs one factor $\hbar\,c$ to be an energy,
 
 $$
-H=\hbar c\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\nabla\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+k_m^{2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
+H=\hbar c\int d^3r\left(\left(\partial\xi_{\mathrm{fop}}/\partial r'_t\right)^{\dagger} \partial\xi_{\mathrm{fop}}/\partial r'_t+\vec\nabla_\Phi\xi_{\mathrm{fop}}^{\dagger}\cdot\nabla\xi_{\mathrm{fop}}+k_m^{2}\xi_{\mathrm{fop}}^{\dagger}\xi_{\mathrm{fop}}\right).
 $$
 
 Substituting the mode expansion and using the commutators gives, before normal ordering,
@@ -291,7 +291,7 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the scalar field's value space |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, $\langle\tilde R_\Phi\rangle_{\natural}=\tilde R_\Phi\tilde{R}_\Phi^{\natural}$ | Material coordinate, $\in\mathbb{B}_{\Phi}$, and its biquaternion norm; spacelike means $N>0$ |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian |
 | $\tilde{Ξ}=\xi\,e_t$, $\xi=(\xi_1+i\xi_2)/\sqrt2$ | Scalar field, valued in the centre; real components |
 | $\mathcal{L}=-\,\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]-k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar Lagrangian density |

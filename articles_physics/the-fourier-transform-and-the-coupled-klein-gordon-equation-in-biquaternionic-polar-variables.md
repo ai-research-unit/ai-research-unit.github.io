@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The polar parent has a table of what the chart shows and what it hides, and one row of that table is wrong.** *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables* writes, at §*What the Chart Shows and What It Hides*, that "$\tilde F$ does not appear in the pair at all", and calls this "the sharpest statement of what a coordinate system can and cannot show". The chart does show the field strength: its own §*The Current, the Vorticity and the Flux* computes $\nabla\times(\vec p-q\vec A)=ϙ\vec B$ exactly. What the chart cannot show is the fork between the two coupled equations, and that is a different property with a different reason.
+**The polar parent has a table of what the chart shows and what it hides, and one row of that table is wrong.** *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables* writes, at §*What the Chart Shows and What It Hides*, that "$\tilde F$ does not appear in the pair at all", and calls this "the sharpest statement of what a coordinate system can and cannot show". The chart does show the field strength: its own §*The Current, the Vorticity and the Flux* computes $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ exactly. What the chart cannot show is the fork between the two coupled equations, and that is a different property with a different reason.
 
-**The reason is that the chart's bracket is one charge squared.** The polar form's second-order object is a modulus squared, $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\big]$, and a modulus squared differentiates to one covariant derivative composed with its own adjoint. That is the squared reading of the covariant square, with the same charge in both factors. **The paired reading needs two opposite charges once each**, and a modulus cannot supply two charges: it has one.
+**The reason is that the chart's bracket is one charge squared.** The polar form's second-order object is a modulus squared, $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, and a modulus squared differentiates to one covariant derivative composed with its own adjoint. That is the squared reading of the covariant square, with the same charge in both factors. **The paired reading needs two opposite charges once each**, and a modulus cannot supply two charges: it has one.
 
 **So the chart is the chart of one equation, and the article says which.** Its dispersion is the mass shell in the mechanical four-momentum, and in the mechanical variables the squared reading is *exactly* free while the paired reading keeps a residual linear in the frequency. Measured at $k_t'=2.770584$: the mechanical variable is $3.080584$, the squared reading's residual at that point is $0.0$, and the paired reading's residual is $-1.909962$, which is $2c_t$ times the mechanical frequency.
 
@@ -32,7 +32,7 @@ $$
 
 ## The Bracket Is One Charge Squared
 
-**The covariant bracket is one additive central term and the chart's objects are its modulus and its phase.** The parent's identity is $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{iϙ}{\hbar}A_\mu$, so on a central field the bracket is $(\partial_\mu\ln \varrho)+i(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu)$ and the two real equations are its real and imaginary parts. **The modulus of that bracket is the density times the mechanical four-momentum**, and the square of the modulus is the kinetic term of every functional in the family.
+**The covariant bracket is one additive central term and the chart's objects are its modulus and its phase.** The parent's identity is $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi=\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{iϙ}{\hbar}A_\mu$, so on a central field the bracket is $(\partial_\mu\ln \varrho)+i(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu)$ and the two real equations are its real and imaginary parts. **The modulus of that bracket is the density times the mechanical four-momentum**, and the square of the modulus is the kinetic term of every functional in the family.
 
 **A modulus squared differentiates to one charge squared.** Varying $\int\bigl\lvert(\partial_{R_t}+c_t)\Xi\bigr\rvert^{2}$ with respect to $\Xi^{*}$ returns $(\partial_{R_t}+c_t)^{2}\Xi$; that is the squared reading, and it is a statement about differentiation and not about the chart's coordinates. **Whatever coordinates the field is written in, the functional that the chart's bracket belongs to produces the same operator**, because the operator is the functional's own variation and the coordinates are a bijection.
 
@@ -43,7 +43,7 @@ $$
 $$
 \boxed{\;
 \frac{\delta S_{\mathrm{p}}}{\delta\tilde\Xi^{*}}
-=\tilde\nabla_{\mathrm{gco},\mu}^{2}\tilde\Xi
+=\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi
 \;}
 $$
 
@@ -63,7 +63,7 @@ which is the squared reading. **The chart is the chart of the squared equation a
 
 ## The Chart Shows the Field Strength as a Curl
 
-**The vorticity is the parent's and it is exact.** The mechanical flow is $\vec p-q\vec A$, its curl is $\nabla\times\vec p-q\nabla\times\vec A=-q\vec B$, which is $ϙ\vec B$ with $q=-ϙ$ and $\vec p=\nabla S$ a gradient, and the parent prints this without approximation. Measured on a $256^{2}$ grid with a periodic vector potential of field strength up to $3.200$, the largest discrepancy between $\nabla\times(\vec p-q\vec A)$ and $ϙ\vec B$ is $1.1\times10^{-13}$, while the curl of $\vec p$ alone is $7.8\times10^{-14}$.
+**The vorticity is the parent's and it is exact.** The mechanical flow is $\vec p-q\vec A$, its curl is $\vec\nabla_\Phi\times\vec p-q\nabla\times\vec A=-q\vec B$, which is $ϙ\vec B$ with $q=-ϙ$ and $\vec p=\vec\nabla_\Phi S$ a gradient, and the parent prints this without approximation. Measured on a $256^{2}$ grid with a periodic vector potential of field strength up to $3.200$, the largest discrepancy between $\vec\nabla_\Phi\times(\vec p-q\vec A)$ and $ϙ\vec B$ is $1.1\times10^{-13}$, while the curl of $\vec p$ alone is $7.8\times10^{-14}$.
 
 **So the field strength is the chart's most visible object, not its most hidden one.** A curl of a vector field is exactly what a chart carrying a density and a phase can compute, and the parent's own section computes it. **The row of the table that says $\tilde F$ does not appear is the row to correct**, and the correction is not a nicety: it is the difference between a chart that is blind to curvature and a chart that is blind to a cross term.
 
@@ -73,7 +73,7 @@ which is the squared reading. **The chart is the chart of the squared equation a
 
 ## The Polar Variable Is the Mechanical One
 
-**The chart's wave number is the mechanical momentum and not the canonical one.** The parent's substitution is $\partial_{r_t'}S_{\tilde\Xi}\mapsto\partial_{r_t'}S_{\tilde\Xi}-ϙa_t'$ and $\nabla S_{\tilde\Xi}\mapsto\nabla S_{\tilde\Xi}-q\vec A$, so the variable the transform pairs with the coordinate is $\tilde K_{\Phi,\mathrm{gco}}$ and not $\tilde K_\Phi$. **A chart whose variable already contains the potential has diagonalised the potential away**, and what it diagonalises is the reading whose shell is free in that variable.
+**The chart's wave number is the mechanical momentum and not the canonical one.** The parent's substitution is $\partial_{r_t'}S_{\tilde\Xi}\mapsto\partial_{r_t'}S_{\tilde\Xi}-ϙa_t'$ and $\vec\nabla_\Phi S_{\tilde\Xi}\mapsto\nabla S_{\tilde\Xi}-q\vec A$, so the variable the transform pairs with the coordinate is $\tilde K_{\Phi,\mathrm{gco}}$ and not $\tilde K_\Phi$. **A chart whose variable already contains the potential has diagonalised the potential away**, and what it diagonalises is the reading whose shell is free in that variable.
 
 **The squared reading is exactly free in the mechanical variable.** The shell $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$ becomes $k_t'^{\mathrm{mech}\,2}=\lvert\vec\kappa^{\mathrm{mech}}\rvert^{2}+k_m^{2}$ with $k_t'^{\mathrm{mech}}=k_t'-c_t$ and $\vec\kappa^{\mathrm{mech}}=\vec\kappa+\vec a$. Measured at $k_t'=2.770584$, the mechanical value is $3.080584$ and the residual is $0.0$. **The chart's free-looking dispersion is the squared reading's, exactly.**
 
@@ -113,7 +113,7 @@ which is the squared reading. **The chart is the chart of the squared equation a
 
 The chart's second-order object is a modulus squared, and a modulus squared differentiates to one covariant derivative composed with its own adjoint: the squared reading, with the same charge in both factors. The paired reading needs two opposite charges once each, and a modulus is symmetric in its factors, so the chart cannot write it. **The chart is the chart of the squared equation**, and the fork between the two readings is invisible to it because the fork is an antisymmetrisation.
 
-The parent's table has one row to correct. The chart does not hide the field strength: its own vorticity section computes $\nabla\times(\vec p-q\vec A)=ϙ\vec B$ exactly, and measured on a $256^{2}$ grid with a periodic potential the discrepancy is $1.1\times10^{-13}$ against a field strength of $3.200$. **The chart shows $\tilde F$ because $\tilde F$ is a derivative, and it cannot show the fork because the fork is an antisymmetrisation**; a chart can be good at one and bad at the other.
+The parent's table has one row to correct. The chart does not hide the field strength: its own vorticity section computes $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ exactly, and measured on a $256^{2}$ grid with a periodic potential the discrepancy is $1.1\times10^{-13}$ against a field strength of $3.200$. **The chart shows $\tilde F$ because $\tilde F$ is a derivative, and it cannot show the fork because the fork is an antisymmetrisation**; a chart can be good at one and bad at the other.
 
 The chart's variable is the mechanical momentum, and in it the squared reading is exactly free: at $k_t'=2.770584$ the mechanical value is $3.080584$ with residual $0.0$, while the paired reading keeps a residual of $-1.909962$, which is $2c_t$ times the mechanical frequency. **So the chart does not merely prefer one reading; it puts that reading in free form** and leaves the other with a term linear in the energy.
 
@@ -124,12 +124,12 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word; on a central field, $\varrho\,e^{i\theta_{\mathrm{pha}}}$ |
-| $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$ | The covariant bracket: one additive central term |
+| $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ | The covariant bracket: one additive central term |
 | $S_{\mathrm{p}}$ | The chart's kinetic functional, a modulus squared |
-| $\tilde\nabla_{\mathrm{gco},\mu}^{2}\tilde\Xi$ | The operator $S_{\mathrm{p}}$ produces: the squared reading |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi$ | The operator $S_{\mathrm{p}}$ produces: the squared reading |
 | $c_\mu=\frac{iϙ}{\hbar}A_\mu$ | The per-slot coefficient; $c_t$ real, $c_\eta$ imaginary |
 | $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$ | The mechanical four-momentum; the chart's variable |
-| $\nabla\times(\vec p-q\vec A)=ϙ\vec B$ | The vorticity: the field strength the chart shows |
+| $\vec\nabla_\Phi\times(\vec p-q\vec A)=ϙ\vec B$ | The vorticity: the field strength the chart shows |
 | $k_t'^{\mathrm{mech}}=k_t'-c_t$ | The mechanical frequency; the squared shell is free in it |
 | $2c_t(c_t-k_t')$ | The cross term the chart cannot carry |
 

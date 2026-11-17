@@ -140,7 +140,7 @@ independent of $\vec A$ and of $\varphi$. A central difference at $k_x=0.4$ with
 
 **The constant setting's pole pair.** The zeros of the determinant are at $\hbar\omega=h_t-ϙ\varphi\pm\lvert\vec h_\Psi-q\vec A\rvert$, each twice. **The pair is the free pair translated by $-ϙ\varphi$ and its half-gap enlarged by $\vec A$.**
 
-**The spacing is gauge invariant.** The spacing is $2\lvert\vec h_\Psi-q\vec A\rvert$ and the position is $h_t-ϙ\varphi$. Under a gauge transformation with $\vec A\mapsto\vec A-\nabla\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, the constant setting admits only linear $\Gamma$, for which both shifts are constants: the position moves by $-ϙ\partial_{t'}\Gamma$ and the field's phase moves by $+ϙ\Gamma/\hbar$. **The two cancel in the frequency, and the spacing is untouched by either**, which is the frequency-space form of the parent's check.
+**The spacing is gauge invariant.** The spacing is $2\lvert\vec h_\Psi-q\vec A\rvert$ and the position is $h_t-ϙ\varphi$. Under a gauge transformation with $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, the constant setting admits only linear $\Gamma$, for which both shifts are constants: the position moves by $-ϙ\partial_{t'}\Gamma$ and the field's phase moves by $+ϙ\Gamma/\hbar$. **The two cancel in the frequency, and the spacing is untouched by either**, which is the frequency-space form of the parent's check.
 
 **The ranks are the free ranks.** The symbol is invertible off the zeros, has rank two at a zero and rank zero at the single zero of a scalar Hamiltonian. **The connection changes none of the three numbers**, and the reason is that it changes the symbol's arguments and not its type.
 

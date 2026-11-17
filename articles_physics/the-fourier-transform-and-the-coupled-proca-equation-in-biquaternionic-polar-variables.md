@@ -19,7 +19,7 @@
 The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule for a gauge-covariant operator:
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\longmapsto i\pi_\mu ,
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\longmapsto i\pi_\mu ,
 \qquad
 \pi_\mu=\hbar k_\mu-q A_\mu ,
 \qquad
@@ -70,7 +70,7 @@ which is a Hermitian matrix with a real symmetric part and an imaginary antisymm
 
 **What that means for the chart's phase bracket is the sharpest statement in the article.** The parent's logarithmic derivative of the coupled word has an imaginary central bracket, and the parent shows that the connection merges with that bracket and with the scale bracket. **In frequency space the returned imaginary part of the symbol is the *derivative* of the connection, not the connection**: the symbol sees $F=\mathrm{d}A$ and not $A$. So the bracket's own gradient is not the symbol's imaginary part, and the two are related by one more derivative.
 
-**The relation is the parent's square splitting read at the level of types.** $\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco}}$ has a scalar part and a two-form part; the scalar part is the constraint's symbol and the two-form part is the obstruction. **So the chart's imaginary central bracket and the symbol's imaginary part are the same object's two derivatives**, and the article states the fact without claiming a closed formula for the passage.
+**The relation is the parent's square splitting read at the level of types.** $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}$ has a scalar part and a two-form part; the scalar part is the constraint's symbol and the two-form part is the obstruction. **So the chart's imaginary central bracket and the symbol's imaginary part are the same object's two derivatives**, and the article states the fact without claiming a closed formula for the passage.
 
 ## The Branch Disappears and the Cone Collapses
 

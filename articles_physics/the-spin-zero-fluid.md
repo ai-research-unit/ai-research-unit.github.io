@@ -12,7 +12,7 @@ Space as a Fluid](the-relativistic-quantum-space-as-a-fluid.html)'s word read on
 **Four statements are new here, and each is one line of algebra.**
 
 - The conserved density is the charge density $\rho_{\mathrm{chg}}$, not the marker density $\rho_{\mathrm{num}}$.
-- The gradient of the amplitude equation is the acceleration law, and it reads $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$.
+- The gradient of the amplitude equation is the acceleration law, and it reads $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$.
 - The four-velocity is a gradient, so the vorticity 2-form vanishes; the curl of the three-velocity need not, and it is not vorticity.
 - The quantum term admits a stress and not a pressure, so there is no equation of state at a point.
 
@@ -51,14 +51,14 @@ $$
 $$
 \left(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho}
 \qquad\text{and}\qquad
-\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0 .
+\vec\nabla_\Phi\cdot\!\left(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)=0 .
 $$
 
 The first is the amplitude equation and the second is the transport equation. The equivalence runs both ways: every solution of the pair gives a solution of the equation, and every nowhere-zero solution of the equation gives a solution of the pair.
 
 ### The amplitude equation is the mass shell with a curvature term
 
-**Write the momentum as the algebra writes it**, $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, with $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ and $\vec p=\nabla S_{\tilde\Xi}$. Then the amplitude equation is
+**Write the momentum as the algebra writes it**, $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, with $E=-c\,\partial S_{\tilde\Xi}/\partial r'_t$ and $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$. Then the amplitude equation is
 
 $$
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},
@@ -75,7 +75,7 @@ $$
 **The transport equation is the divergence of the current.** With $\tilde J_{\Phi}=(\rho_{\mathrm{num}}/m)\tilde P_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ and $\tilde V_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}/m$, the scalar part of the divergence is
 
 $$
-\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right)=\frac{1}{m}\left[\nabla\cdot\!\left(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right],
+\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right)=\frac{1}{m}\left[\vec\nabla_\Phi\cdot\!\left(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}\right)-\frac{\partial}{\partial r'_t}\!\left(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\right)\right],
 $$
 
 and the bracket is the transport equation. Conservation and the imaginary part of the equation are the same equation, not two that agree.
@@ -93,18 +93,18 @@ $$
 **The conserved density is the charge density and not the marker density.** Writing the transport equation in physical time, with $\partial_{r'_t}=c^{-1}\partial_t$, gives
 
 $$
-\partial_{t}\rho_{\mathrm{chg}}+\nabla\cdot\!\left(\rho_{\mathrm{chg}}\vec v\right)=0 .
+\partial_{t}\rho_{\mathrm{chg}}+\vec\nabla_\Phi\cdot\!\left(\rho_{\mathrm{chg}}\vec v\right)=0 .
 $$
 
-The algebra is one line: $\nabla\cdot(\rho_{\mathrm{num}}\vec p)=m\nabla\cdot(\rho_{\mathrm{chg}}\vec v)$ because $\vec p=\gamma m\vec v$ and $\rho_{\mathrm{num}}\gamma=\rho_{\mathrm{chg}}$, and $\partial_{r'_t}(\rho_{\mathrm{num}}\partial_{r'_t}S_{\tilde\Xi})=-mc\,\partial_{r'_t}\rho_{\mathrm{chg}}$.
+The algebra is one line: $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec p)=m\nabla\cdot(\rho_{\mathrm{chg}}\vec v)$ because $\vec p=\gamma m\vec v$ and $\rho_{\mathrm{num}}\gamma=\rho_{\mathrm{chg}}$, and $\partial_{r'_t}(\rho_{\mathrm{num}}\partial_{r'_t}S_{\tilde\Xi})=-mc\,\partial_{r'_t}\rho_{\mathrm{chg}}$.
 
-**The marker density obeys a different equation, and the difference is the time dilation.** $\rho_{\mathrm{num}}$ is the density in the fluid's own frame; $\rho_{\mathrm{chg}}$ is the density in the frame in which the flow is measured. They differ by $\gamma$, and $\gamma$ is not constant along the flow. A reader who writes $\partial_t\rho_{\mathrm{num}}+\nabla\cdot(\rho_{\mathrm{num}}\vec v)=0$ has written the continuity equation of a different fluid; the correct statement carries $\rho_{\mathrm{chg}}$ on both occurrences.
+**The marker density obeys a different equation, and the difference is the time dilation.** $\rho_{\mathrm{num}}$ is the density in the fluid's own frame; $\rho_{\mathrm{chg}}$ is the density in the frame in which the flow is measured. They differ by $\gamma$, and $\gamma$ is not constant along the flow. A reader who writes $\partial_t\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec v)=0$ has written the continuity equation of a different fluid; the correct statement carries $\rho_{\mathrm{chg}}$ on both occurrences.
 
 **The scalar field has no boost factor, so $\gamma$ is signed.** $\gamma=E/(mc^{2})$ and on the negative sheet $E<0$, so $\gamma<0$ and the four-velocity is past-directed. This is not a pathology of the notation; it is the sign defect of the charge density that the parent article records, in the fluid's own terms.
 
 ## The Euler Equation
 
-**A fluid's acceleration law is the gradient of its energy equation, and here that gradient is one line.** Differentiating the mass shell in space, with $\vec p=\nabla S_{\tilde\Xi}$ and $E=-\partial_t S_{\tilde\Xi}$ so that $\partial_jE=-\partial_tp_j$, and using $\partial_jp_k=\partial_kp_j$,
+**A fluid's acceleration law is the gradient of its energy equation, and here that gradient is one line.** Differentiating the mass shell in space, with $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ and $E=-\partial_t S_{\tilde\Xi}$ so that $\partial_jE=-\partial_tp_j$, and using $\partial_jp_k=\partial_kp_j$,
 
 $$
 \frac{E}{c^{2}}\partial_jE-p_k\partial_jp_k=m\partial_jQ_{\mathrm{qnt}}
@@ -115,7 +115,7 @@ $$
 **The result is the acceleration law of the fluid**, written with the momentum and not the velocity,
 
 $$
-\boxed{\;\frac{\mathrm{d}\vec p}{\mathrm{d}t}=-\frac{1}{\gamma}\nabla Q_{\mathrm{qnt}}\;}
+\boxed{\;\frac{\mathrm{d}\vec p}{\mathrm{d}t}=-\frac{1}{\gamma}\vec\nabla_\Phi Q_{\mathrm{qnt}}\;}
 \qquad
 \frac{\mathrm{d}}{\mathrm{d}t}=\partial_t+\vec v\cdot\nabla,\quad \vec p=m\gamma\vec v .
 $$
@@ -143,7 +143,7 @@ and it vanishes identically on the $N$-regular set, because partial derivatives 
 **The curl of the three-velocity is not the vorticity, and the difference is worth one paragraph.** Since $\vec v=\vec p/(m\gamma)$ and $\vec p$ is a gradient,
 
 $$
-\nabla\times\vec v=\nabla\!\left(\frac{1}{m\gamma}\right)\times\vec p ,
+\vec\nabla_\Phi\times\vec v=\vec\nabla_\Phi\!\left(\frac{1}{m\gamma}\right)\times\vec p ,
 $$
 
 which need not vanish. A flow that is accelerated from rest develops a non-zero curl of $\vec v$ even though $\omega_{\mu\nu}=0$. The reason is that $\vec v$ is not the spatial part of a four-vector; $\gamma\vec v$ is. The vorticity of a relativistic fluid is the 2-form of the four-velocity, and that one is zero. A reader who computes the curl of $\vec v$ and reports vorticity has computed a frame artefact.
@@ -154,13 +154,13 @@ which need not vanish. A flow that is accelerated from rest develops a non-zero 
 
 **A fluid has an equation of state when its pressure is a function of its density at the same event.** The scalar fluid has no such function, and the reason is the curvature in $Q_{\mathrm{qnt}}$.
 
-**The objection is that the quantum term looks like a pressure.** In the non-relativistic fluid the term $-\nabla Q$ is conventionally called the quantum pressure, and the name suggests a $p(\rho_{\mathrm{num}})$. The name is a misnomer twice over. First, $Q_{\mathrm{qnt}}$ depends on the density's first and second derivatives and not on its value, so a barotropic pressure would have to be a differential operator rather than a function: $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}[\tfrac12\Box_\Phi\ln\rho_{\mathrm{num}}+\tfrac14(\partial\ln\rho_{\mathrm{num}})^{2}]$. Second, the force is the gradient of an energy and not the gradient of a pressure over a density: $-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$ is not $-\rho_{\mathrm{num}}^{-1}\nabla p$ for any function $p$ of the density's value.
+**The objection is that the quantum term looks like a pressure.** In the non-relativistic fluid the term $-\vec\nabla_\Phi Q$ is conventionally called the quantum pressure, and the name suggests a $p(\rho_{\mathrm{num}})$. The name is a misnomer twice over. First, $Q_{\mathrm{qnt}}$ depends on the density's first and second derivatives and not on its value, so a barotropic pressure would have to be a differential operator rather than a function: $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}[\tfrac12\Box_\Phi\ln\rho_{\mathrm{num}}+\tfrac14(\partial\ln\rho_{\mathrm{num}})^{2}]$. Second, the force is the gradient of an energy and not the gradient of a pressure over a density: $-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$ is not $-\rho_{\mathrm{num}}^{-1}\vec\nabla_\Phi p$ for any function $p$ of the density's value.
 
 **The class the fluid belongs to has a name, and naming it is the honest statement.** A fluid whose stress depends on the gradients of its density rather than on the density alone is a Korteweg fluid, and a Korteweg fluid has no equation of state in the algebraic sense and a perfectly definite stress. This fluid is of that class, and the parent article's identity is what shows it: its pressure is a function of $\rho_{\mathrm{num}}$ and of the first two derivatives of $\rho_{\mathrm{num}}$, and of nothing else.
 
 **What does exist is a stress, and the stress is not a pressure.** The quantum force has the divergence form $\partial_\eta\sigma_{j\eta}$ with the tensor $\sigma$ exhibited in [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), and that tensor is not isotropic: it is not $p\,\delta_{ij}$ for any scalar $p$. A divergence of an anisotropic stress is a force, not a pressure. So the fluid is one with a quantum stress and without an equation of state, and the two statements are consistent because a stress tensor carries more than a scalar pressure.
 
-**The reader's check is the order of the derivatives.** A barotropic pressure makes the force density $-\nabla p(\rho_{\mathrm{num}})=-p'(\rho_{\mathrm{num}})\nabla\rho_{\mathrm{num}}$, a term along the density's gradient and first order in it. The force density here is $\rho_{\mathrm{num}}\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and $Q_{\mathrm{qnt}}$ already carries two derivatives of $\ln\rho_{\mathrm{num}}$, so the force is third order. No function of the density's value can turn two derivatives into none.
+**The reader's check is the order of the derivatives.** A barotropic pressure makes the force density $-\vec\nabla_\Phi p(\rho_{\mathrm{num}})=-p'(\rho_{\mathrm{num}})\vec\nabla_\Phi\rho_{\mathrm{num}}$, a term along the density's gradient and first order in it. The force density here is $\rho_{\mathrm{num}}\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and $Q_{\mathrm{qnt}}$ already carries two derivatives of $\ln\rho_{\mathrm{num}}$, so the force is third order. No function of the density's value can turn two derivatives into none.
 
 **This is where the scalar fluid differs from the thermal fluid.** A thermal fluid at a point has an equation of state, because its state is a density operator with a temperature and the pressure is a functional of that state. The scalar fluid of this block has no temperature and no state; it has a density and an action. The equation of state appears in *Biquaternion Relativistic Quantum Thermodynamics* and it is not anticipated here.
 
@@ -202,7 +202,7 @@ m\,\mathrm{D}v_j=-\frac{1}{\gamma^{2}}\partial_jQ_{\mathrm{qnt}}-m\,v_j\,\mathrm
 \mathrm{D}=\partial_t+\vec v\cdot\nabla .
 $$
 
-**The right side of the first line is a gradient multiplied by the scalar $\gamma^{-1}$, and a scalar multiple of a gradient is not a gradient.** So the third item survives the projection as a statement of *direction* and not of integrability: the force is longitudinal and has no transverse part, but it is not the gradient of a potential unless $\gamma$ is constant along the flow. The second line adds a further term, and that term is not a gradient either. Both failures are the same $\gamma$, and they are the same $\gamma$ that makes $\nabla\times\vec v$ non-zero while $\omega_{\mu\nu}$ vanishes.
+**The right side of the first line is a gradient multiplied by the scalar $\gamma^{-1}$, and a scalar multiple of a gradient is not a gradient.** So the third item survives the projection as a statement of *direction* and not of integrability: the force is longitudinal and has no transverse part, but it is not the gradient of a potential unless $\gamma$ is constant along the flow. The second line adds a further term, and that term is not a gradient either. Both failures are the same $\gamma$, and they are the same $\gamma$ that makes $\vec\nabla_\Phi\times\vec v$ non-zero while $\omega_{\mu\nu}$ vanishes.
 
 **Where $\gamma$ is constant along the flow the frame form closes, and there the potential is $\Phi_{\mathrm{acc}}=Q_{\mathrm{qnt}}/(m\gamma^{2})$.** The non-relativistic limit is such a case, and so is any flow of uniform rapidity. The criterion is a statement about four-vectors; read in a frame it is exact only where the frame and the flow agree, and the agreement is $\mathrm{D}\gamma=0$.
 
@@ -221,10 +221,10 @@ $$
 $$
 \hbar^{2}\frac{\Box_\Phi\psi}{\psi}
 =\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho}+\Bigl[\Bigl(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\Bigr)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}\Bigr]
-+\frac{i\hbar}{\varrho}\Bigl[2\nabla \varrho\cdot\nabla S_{\tilde\Xi}-2\frac{\partial \varrho}{\partial r'_t}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}+\varrho\,\Box_\Phi S_{\tilde\Xi}\Bigr] .
++\frac{i\hbar}{\varrho}\Bigl[2\vec\nabla_\Phi \varrho\cdot\nabla S_{\tilde\Xi}-2\frac{\partial \varrho}{\partial r'_t}\frac{\partial S_{\tilde\Xi}}{\partial r'_t}+\varrho\,\Box_\Phi S_{\tilde\Xi}\Bigr] .
 $$
 
-**The real part is the amplitude equation term by term, and the imaginary part is the transport equation.** Set equal to $m^{2}c^{2}$ the first returns the mass shell with the curvature added; set equal to zero the second is $\varrho^{-1}$ times $\nabla\cdot(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi})-\partial_{r'_t}(\rho_{\mathrm{num}}\partial_{r'_t}S_{\tilde\Xi})$. So the two directions of the map meet here with no remainder: the pair is the linear equation read in fluid variables, and the linear equation is the pair written in one complex unknown.
+**The real part is the amplitude equation term by term, and the imaginary part is the transport equation.** Set equal to $m^{2}c^{2}$ the first returns the mass shell with the curvature added; set equal to zero the second is $\varrho^{-1}$ times $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\partial_{r'_t}(\rho_{\mathrm{num}}\partial_{r'_t}S_{\tilde\Xi})$. So the two directions of the map meet here with no remainder: the pair is the linear equation read in fluid variables, and the linear equation is the pair written in one complex unknown.
 
 **That exactness is what the block's other articles cannot have, and it is worth saying why.** For the Gross–Pitaevskii fluid the map runs the other way and the equation it produces is nonlinear; for a classical fluid the equation its $\psi$ obeys is nonlocal and is not a wave equation at all. The scalar fluid is the one case in the block where both directions close on a local linear equation, and the reason is that $V=0$ is the only member of the family in which nothing is added to the free operator.
 
@@ -259,7 +259,7 @@ $$
 
 ### The non-relativistic limit
 
-**With the rest energy removed the pair becomes the Madelung system.** The action carries $mc^{2}t$, the amplitude equation becomes the quantum Hamilton–Jacobi equation with the WKB potential $Q_{\mathrm{qnt}}\to-\frac{\hbar^{2}}{2m}\frac{\nabla^{2}\varrho}{\varrho}$, and the transport equation becomes the continuity equation of the Schrödinger fluid. The factor $1/\gamma$ of the acceleration law goes to one. The parent article carries the derivation and this article does not repeat it.
+**With the rest energy removed the pair becomes the Madelung system.** The action carries $mc^{2}t$, the amplitude equation becomes the quantum Hamilton–Jacobi equation with the WKB potential $Q_{\mathrm{qnt}}\to-\frac{\hbar^{2}}{2m}\frac{\vec\nabla_\Phi^{2}\varrho}{\varrho}$, and the transport equation becomes the continuity equation of the Schrödinger fluid. The factor $1/\gamma$ of the acceleration law goes to one. The parent article carries the derivation and this article does not repeat it.
 
 **The limit is the check on the reading.** A fluid reading that did not reproduce the Madelung pair in the non-relativistic limit would be a different fluid. It does, term by term, and that is the warrant for calling the relativistic object a fluid at all.
 
@@ -279,12 +279,12 @@ $$
 2. **The density is a bilinear and the conserved density is not it.** $\rho_{\mathrm{num}}=\varrho^{2}$ is the density in the fluid's frame; the conserved quantity is $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, and $\gamma$ is signed on the negative sheet.
 3. **Continuity is the imaginary part of the wave equation**, and the equivalence runs both ways: every solution gives a pair, every nowhere-zero solution of the pair gives a field.
 4. **The velocity is a gradient**, $v_{\Phi,\mu}=\partial_\mu S_{\tilde\Xi}/m$, and it is invertible only where $Q_{\mathrm{qnt}}$ vanishes. **No other field fluid has a velocity that is a gradient.**
-5. **There is one force and it is a gradient.** $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and the factor $1/\gamma$ is the relativistic inertia: the same gradient accelerates a fast flow less.
-6. **There is no equation of state, and the class has a name.** The stress is a Korteweg stress — a function of the density and its first two derivatives — and the force is third order in $\nabla\ln\rho_{\mathrm{num}}$, so no function of the density's value can produce it.
-7. **A stress exists and is not a pressure.** The quantum stress is anisotropic, and a divergence of an anisotropic stress is a force and not $-\rho_{\mathrm{num}}^{-1}\nabla p$.
+5. **There is one force and it is a gradient.** $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and the factor $1/\gamma$ is the relativistic inertia: the same gradient accelerates a fast flow less.
+6. **There is no equation of state, and the class has a name.** The stress is a Korteweg stress — a function of the density and its first two derivatives — and the force is third order in $\vec\nabla_\Phi\ln\rho_{\mathrm{num}}$, so no function of the density's value can produce it.
+7. **A stress exists and is not a pressure.** The quantum stress is anisotropic, and a divergence of an anisotropic stress is a force and not $-\rho_{\mathrm{num}}^{-1}\vec\nabla_\Phi p$.
 8. **The flow is irrotational identically, off the nodes.** The vorticity 2-form of the four-velocity vanishes for every solution, and that is stronger than the statement that a particular flow is curl-free.
 9. **The circulation is quantised by the nodes and not by the flow.** $\oint\vec p\cdot\mathrm{d}\vec l=2\pi\hbar n$ around a loop that links a nodal line, and $hn/m$ is the circulation of $\vec p/m$ and not of $\vec v$.
-10. **The curl of the three-velocity need not vanish, and it is not vorticity.** $\nabla\times\vec v=\nabla(1/m\gamma)\times\vec p$: a frame artefact, since $\gamma\vec v$ and not $\vec v$ is the spatial part of a four-vector.
+10. **The curl of the three-velocity need not vanish, and it is not vorticity.** $\vec\nabla_\Phi\times\vec v=\vec\nabla_\Phi(1/m\gamma)\times\vec p$: a frame artefact, since $\gamma\vec v$ and not $\vec v$ is the spatial part of a four-vector.
 11. **The degenerate set is the nodal set**, $\varrho=0$, of codimension two, and it is where the word, the fluid reading and the quantised circulation all begin.
 12. **Its non-relativistic limit is the Madelung–Bohm fluid**, with $\gamma\to1$, and it is the only one of the three whose classical counterpart is a textbook quantum fluid rather than a textbook continuum medium.
 
@@ -300,7 +300,7 @@ $$
 | density | $\rho_{\mathrm{num}}=\varrho^{2}$, a bilinear | $\varrho=\sqrt{-A^{2}}$, the field's own norm | $\rho_{\mathrm{num}}$, a factor of the word |
 | velocity | $\partial_\mu S/m$, a gradient | $A_\mu/\varrho$, the field's direction | $ic\tilde U^{-2}$, the frame |
 | continuity | the imaginary part of the wave equation | the Lorenz condition | the conservation of $\tilde J$, a separate statement |
-| force | $-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, a gradient | $-\nabla\ln \varrho-E_\mu/\varrho$ | the divergence of the stress, antisymmetric part included |
+| force | $-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, a gradient | $-\vec\nabla_\Phi\ln \varrho-E_\mu/\varrho$ | the divergence of the stress, antisymmetric part included |
 | vorticity | zero identically | $\varrho\,\omega=F-\mathrm{d}\varrho\wedge u$ | the antisymmetrised frame gradient |
 | spin in the word | none | none | the rotor |
 | equation of state | none; a Korteweg stress | $p=\epsilon=\tfrac12m^{2}\varrho^{2}$ | none; the spin's transport closes the system |
@@ -340,7 +340,7 @@ $$
 
 ## What Is Established and What Is Interpretation
 
-**Established.** The collapse of the word to three data. The pair, exactly, with no term dropped. The mass shell with $2mQ_{\mathrm{qnt}}$, and $Q_{\mathrm{qnt}}$ as the d'Alembertian of the amplitude over the amplitude. The current as $\rho_{\mathrm{num}}\tilde V_{\Phi}$, with the charge density as its temporal component. The continuity equation for $\rho_{\mathrm{chg}}$, derived in one line. The acceleration law, by the gradient of the mass shell, with the factor $\gamma^{-1}$. The vanishing of $\omega_{\mu\nu}$ off the nodes, and the quantisation of circulation at a node. The non-vanishing of $\nabla\times\vec v$ as a frame artefact. The absence of an algebraic equation of state, from $Q_{\mathrm{qnt}}$ carrying two derivatives of the density. That the four items of the reverse map's criterion are met, the force item exactly in the four-vector form, $\sum_\nu V_\nu\partial_\nu V_\mu=-\partial_\mu(Q_{\mathrm{qnt}}/m)$, every index low, and the velocity item up to the factor $\gamma$. That $(\Box_\Phi-k_m^{2})\psi=0$ returns the pair by substitution, the real part the amplitude equation and the imaginary part the transport equation, verified term by term. That the pressureless condition is what makes the output linear.
+**Established.** The collapse of the word to three data. The pair, exactly, with no term dropped. The mass shell with $2mQ_{\mathrm{qnt}}$, and $Q_{\mathrm{qnt}}$ as the d'Alembertian of the amplitude over the amplitude. The current as $\rho_{\mathrm{num}}\tilde V_{\Phi}$, with the charge density as its temporal component. The continuity equation for $\rho_{\mathrm{chg}}$, derived in one line. The acceleration law, by the gradient of the mass shell, with the factor $\gamma^{-1}$. The vanishing of $\omega_{\mu\nu}$ off the nodes, and the quantisation of circulation at a node. The non-vanishing of $\vec\nabla_\Phi\times\vec v$ as a frame artefact. The absence of an algebraic equation of state, from $Q_{\mathrm{qnt}}$ carrying two derivatives of the density. That the four items of the reverse map's criterion are met, the force item exactly in the four-vector form, $\sum_\nu V_\nu\partial_\nu V_\mu=-\partial_\mu(Q_{\mathrm{qnt}}/m)$, every index low, and the velocity item up to the factor $\gamma$. That $(\Box_\Phi-k_m^{2})\psi=0$ returns the pair by substitution, the real part the amplitude equation and the imaginary part the transport equation, verified term by term. That the pressureless condition is what makes the output linear.
 
 **The comparison is established as a table and not as a claim.** Every entry of §*The Three Fluids* is a statement already proved in one of the three articles, and the entries are what makes the identification systematic: the count of parameters and equations, the gradient structure of the velocity, the vanishing of the vorticity, the Korteweg class of the stress, the absence of an equation of state, and the codimension of the degenerate set. The correspondence of §*The Correspondence, Compared with the Other Two* rests on those entries.
 
@@ -354,9 +354,9 @@ The scalar field's word collapses to a scale, an angle and a branch, so the flui
 
 The one complex equation separates into two real equations without remainder. The amplitude equation is the mass shell with the amplitude's curvature added, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ with $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$. The transport equation is the conservation of the current $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$.
 
-The conserved density is the charge density $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, not the marker density, and the continuity equation is $\partial_t\rho_{\mathrm{chg}}+\nabla\cdot(\rho_{\mathrm{chg}}\vec v)=0$.
+The conserved density is the charge density $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, not the marker density, and the continuity equation is $\partial_t\rho_{\mathrm{chg}}+\vec\nabla_\Phi\cdot(\rho_{\mathrm{chg}}\vec v)=0$.
 
-The gradient of the mass shell is the acceleration law, $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, with $\vec p=m\gamma\vec v$. The force is a gradient and nothing else, and the inertia is $\gamma m$.
+The gradient of the mass shell is the acceleration law, $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, with $\vec p=m\gamma\vec v$. The force is a gradient and nothing else, and the inertia is $\gamma m$.
 
 The four-velocity is a gradient, so the vorticity 2-form vanishes off the nodes. The curl of the three-velocity need not vanish, and it is a frame artefact. The circulation of the momentum is zero around a loop that links no node, and $2\pi\hbar n$ around one that does.
 
@@ -364,7 +364,7 @@ There is no equation of state in the algebraic sense. $Q_{\mathrm{qnt}}$ carries
 
 The mass shell is two-sheeted, and both sheets carry a positive marker density. The sign of the charge density is the sign of the energy, which is the direction of the flow in time.
 
-The fluid meets the reverse map's criterion. Its four-velocity is a gradient, so it is irrotational; its four-acceleration is minus the gradient of one scalar, $\sum_\nu V_\nu\partial_\nu V_\mu=-\partial_\mu(Q_{\mathrm{qnt}}/m)$; its potential is $V=0$, a function of the density degenerately; and it carries no first-order time derivative, so it is not merely inviscid but barred from being viscous. The frame form of the criterion acquires factors of $\gamma$, and they are the same $\gamma$ that makes $\nabla\times\vec v$ non-zero.
+The fluid meets the reverse map's criterion. Its four-velocity is a gradient, so it is irrotational; its four-acceleration is minus the gradient of one scalar, $\sum_\nu V_\nu\partial_\nu V_\mu=-\partial_\mu(Q_{\mathrm{qnt}}/m)$; its potential is $V=0$, a function of the density degenerately; and it carries no first-order time derivative, so it is not merely inviscid but barred from being viscous. The frame form of the criterion acquires factors of $\gamma$, and they are the same $\gamma$ that makes $\vec\nabla_\Phi\times\vec v$ non-zero.
 
 Compared with the block's other two fluids, this one is the only gradient flow. Its density is a bilinear and not the field, its vorticity is zero rather than read off a frame or from a field strength, and its force is one gradient where the spin-one fluid has two forces and the spin-half fluid has a stress. What it shares with them is the skeleton of the correspondence: an exact word, a reverse map onto a class, and a piece of extra structure — here a Korteweg stress — that makes the fluid a classical medium. The three fields pick the three ways a medium can exceed a dust, and the scalar case picks the gradient of the state.
 
@@ -383,7 +383,7 @@ With $V=0$ the reverse map's output is linear, and it is $(\Box_\Phi-k_m^{2})\ps
 | $r'_t=ct$ | Material time coordinate, a length |
 | $\tilde P_{\Phi}=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$ | Four-momentum |
 | $\tilde V_{\Phi}=\tilde P_{\Phi}/m$ | Four-velocity, with $v_{\Phi,\mu}$ its components |
-| $\vec p=\nabla S_{\tilde\Xi}$ | Three-momentum; also $\gamma m\vec v$ |
+| $\vec p=\vec\nabla_\Phi S_{\tilde\Xi}$ | Three-momentum; also $\gamma m\vec v$ |
 | $\vec v=\vec p/(m\gamma)$ | Three-velocity |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor, $\cosh\theta$ on the future sheet |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |

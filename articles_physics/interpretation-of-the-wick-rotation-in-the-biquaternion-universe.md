@@ -130,7 +130,7 @@ $$
 Z_E = \int  \mathcal{D}\xi\; \exp(-S_E[\xi]/\hbar),
 $$
 
-with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta$, which is elliptic and well behaved.
+with a decaying integrand, and it is convergent (at least formally). The basis of the procedure is that the wave operator of the Lorentzian formulation, $-\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$, becomes the Euclidean Laplacian $\partial^2/\partial \tau^2/c^2 + \Delta_\Phi$, which is elliptic and well behaved.
 
 In the biquaternion interpretation, the operation is the following. The Lorentzian field $\xi$ on $\mathbb{B}_{\Phi}$ is continued to a field on $\mathbb{B}_{H}$ by the substitution $i r'_t \mapsto c\tau$. The d'Alembertian, read on the material sector, is
 
@@ -141,7 +141,7 @@ $$
 and the same operator, read on the real coordinates of $\mathbb{B}_{H}$, is
 
 $$
-\boxed{\;\Box = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta\;}.
+\boxed{\;\Box_\Phi = \frac{1}{c^2}\frac{\partial^2}{\partial \tau^2} + \Delta_\Phi\;}.
 $$
 
 The oscillating phase $\exp(iS)$ becomes the decaying exponential $\exp(-S_E)$, where $S_E$ is the action of the continued field. This is the standard procedure, expressed in the biquaternion framework as a change of the reality condition on one field.
@@ -155,7 +155,7 @@ The reason the change is useful is that $\mathbb{B}_{H}$ is the compact real sli
 | Property | $\mathbb{B}_{H}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|
 | Inertia of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
-| d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta$ (elliptic) | $-\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ (hyperbolic) |
+| d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta_\Phi$ (elliptic) | $-\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ (hyperbolic) |
 | Zero divisors | None | Light cone |
 | Division algebra | Yes | No |
 | Symmetry group | $SO(4)$, compact | $SO(3, 1)$, non-compact |
@@ -273,7 +273,7 @@ The interpretation organizes the applications into a split between those that tr
 - M. Le Bellac, *Thermal Field Theory* (Cambridge, 1996), for the finite-temperature imaginary-time formalism.
 - M. Creutz, *Quarks, Gluons and Lattices* (Cambridge, 1983), for lattice gauge theory.
 - A. M. Polyakov, *Gauge Fields and Strings* (Harwood, 1987), for instantons and non-perturbative effects.
-- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the elliptic quaternionic analysis of the subspace $\mathbb{B}_{H}$.
+- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta_\Phi u = 0$ und $\Delta_\Phi\Delta_\Phi u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the elliptic quaternionic analysis of the subspace $\mathbb{B}_{H}$.
 - Roger Penrose, *The Road to Reality* (Knopf, 2004), Chapters 18 and 33, for the complex structure of spacetime.
 - V. V. Kassandrov, "Urusovskii's Geometry, Algebrodynamics and Universal Quantum-like Kinematics in Complex Space", arXiv:1209.2377 [physics.gen-ph] (2012), for an arrival at the same two-subspace split from kinematics, with the priority reversed: there the physical half is $\mathbb{B}_{H}$ and the Lorentzian sector is the derived one, which is the reverse of this article's reading. The comparison is drawn in *The SO(4) Route to the Euclidean Frame*.
 - Companion articles: [The SO(4) Route to the Euclidean Frame](the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html), for the second route to a Euclidean frame and the comparison with this reading; [The Element, the Six Subspaces and the Two Ledgers](the-element-the-six-subspaces-and-the-two-ledgers.html), for the involutions whose fixed spaces are the subspaces used here; [Each Sector Is the Other's Clock](each-sector-is-the-others-clock-the-sector-exchange-as-relational-time.html), for the exchange that multiplies the whole element and is not this continuation; [The Effective Optical Metric of the Local Complex Structure](the-effective-optical-metric-of-the-local-complex-structure.html), for the medium in which $\epsilon\mu<0$ produces the change of slice.

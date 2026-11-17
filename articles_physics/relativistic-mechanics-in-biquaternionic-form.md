@@ -13,7 +13,7 @@ The purpose is not to derive new physics. The purpose is to rewrite the establis
 
 These identities are algebraic, not physical. They are the reason the biquaternion algebra is the natural home of relativistic mechanics.
 
-The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$. Its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_t \partial/\partial R_t - \vec e_x \partial/\partial R_x - \vec e_y \partial/\partial R_y - \vec e_z \partial/\partial R_z$. The interval on the material sector has inertia $(3,1)$, the minus carried by the $i$ of $R_t=i r'_t$, so that $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\vec v$) is reserved for particle and frame velocities.
+The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde\nabla_\Phi = e_t \partial/\partial R_t + \vec e_x \partial/\partial R_x + \vec e_y \partial/\partial R_y + \vec e_z \partial/\partial R_z$. Its quaternion conjugate is $(\tilde\nabla_\Phi)^{\natural} = e_t \partial/\partial R_t - \vec e_x \partial/\partial R_x - \vec e_y \partial/\partial R_y - \vec e_z \partial/\partial R_z$. The interval on the material sector has inertia $(3,1)$, the minus carried by the $i$ of $R_t=i r'_t$, so that $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $v$ (or $\vec v$) is reserved for particle and frame velocities.
 
 ## The Four-Position
 
@@ -173,7 +173,7 @@ $$
 \boxed{\;\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = 0\;}
 $$
 
-where $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,
+where $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ is the quaternion conjugate of the biquaternionic gradient. Expanding the scalar part,
 
 $$
 \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}\right) = \partial/\partial R_t(ic\rho) + \mathrm{div}\,\vec j = c\,\frac{\partial \rho}{\partial r'_t} + \mathrm{div}\,\vec j,
@@ -198,10 +198,10 @@ $$
 Here $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ is the d'Alembertian in the biquaternion form, and $k_m = m\,c/\hbar$ is the mass wave number, with $\hbar$ the reduced Planck constant. Expanding,
 
 $$
-\Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
+\Box_\Phi\tilde{Ξ} = (k_m)^{2}\tilde{Ξ},
 $$
 
-which is the standard Klein–Gordon equation $(\Box-k_m^{2})\tilde{Ξ}=0$, with $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ on the material coordinate. The biquaternion form is compact and manifestly Lorentz-covariant.
+which is the standard Klein–Gordon equation $(\Box_\Phi-k_m^{2})\tilde{Ξ}=0$, with $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ on the material coordinate. The biquaternion form is compact and manifestly Lorentz-covariant.
 
 ## The Dirac Equation
 
@@ -309,8 +309,8 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}} = d\tilde{P}_{\Phi}/d\tau$ | Four-force biquaternion |
 | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | Four-current biquaternion |
 | $\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm (scalar quadratic form) |
-| $\tilde{\nabla} = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
-| $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ | Quaternion-conjugate gradient |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \vec e_x\partial/\partial R_x + \vec e_y\partial/\partial R_y + \vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
+| $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \vec e_x\partial/\partial R_x - \vec e_y\partial/\partial R_y - \vec e_z\partial/\partial R_z$ | Quaternion-conjugate gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | d'Alembertian |
 | $\tau$ | Proper time |
 | $m$ | Rest mass |

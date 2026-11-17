@@ -24,7 +24,7 @@ Every display below is an element, a product of elements, or a conjugation of on
 
 **The frame.** Every display is written in the $\mathbb{B}_{\Phi}$ frame, where $Q_t=i q'_t$ and $r'_t$ is a length, the time carried with the constant kept, $r'_t=c\,t'$; the metric coefficient of the seconds $t'$ is $g_{tt}=-c^{2}$ and the quadratic form in $r'_t$ is $\langle\tilde Q\rangle_{\natural}=-{r'_{t}}^{2}+r_x^{2}+r_y^{2}+r_z^{2}$ (*Frame and Metric Conventions*). The constant $c$ is carried in every display below, and none of them sets it to one.
 
-**The two operators.** The gradient $\tilde\nabla_\Phi$ and the d'Alembertian $\Box_\Phi$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its quaternion conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box$, and it is a convention of the series, not a result of this article.
+**The two operators.** The gradient $\tilde\nabla_\Phi$ and the d'Alembertian $\Box_\Phi$ are the series operators (*Operator and Calculus Conventions*); the article names them and does not restate them. It uses one property, which the same article fixes: the product of the gradient with its quaternion conjugate is the d'Alembertian. That product is the sense in which the two first-order operators of the pair below are square roots of $\Box_\Phi$, and it is a convention of the series, not a result of this article.
 
 **The letters.** The basis operator of a frame is the right multiplication by the third unit with the phase $-i$, a pure right multiplier whose side is the right slot,
 $$

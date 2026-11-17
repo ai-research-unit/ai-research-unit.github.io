@@ -47,10 +47,10 @@ $$
 S = \sum_{k=1}^{n} f(\gamma(\tau_k))\,(Q_k - Q_{k-1}).
 $$
 
-With $\|\Delta\| = \max_k (t_k - t_{k-1})$, the **split complex integral** of $f$ along $\gamma$ is the limit
+With $\|\Delta_\Phi\| = \max_k (t_k - t_{k-1})$, the **split complex integral** of $f$ along $\gamma$ is the limit
 
 $$
-\int_\gamma f(Q)\,dQ = \lim_{\|\Delta\| \to 0} S.
+\int_\gamma f(Q)\,dQ = \lim_{\|\Delta_\Phi\| \to 0} S.
 $$
 
 **Theorem.** For piecewise $C^1$ $\gamma$ and continuous $f$ the Riemann sums converge, and
@@ -62,10 +62,10 @@ $$
 **Proof.** The product in $\mathbb{C}_{\mathrm{spl}}$ is bilinear, and $f$ is continuous, so the argument of the complex case applies verbatim: on each smooth piece
 
 $$
-Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\| \leq \omega(\|\Delta\|)(t_k - t_{k-1}),
+Q_k - Q_{k-1} = \int_{t_{k-1}}^{t_k} \gamma'(t)\,dt = \gamma'(\tau_k)(t_k - t_{k-1}) + \rho_k, \qquad \|\rho_k\| \leq \omega(\|\Delta_\Phi\|)(t_k - t_{k-1}),
 $$
 
-with $\omega(\|\Delta\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\| \,\omega(\|\Delta\|)(b-a) \to 0$.
+with $\omega(\|\Delta_\Phi\|) \to 0$ by uniform continuity of $\gamma'$ on the finitely many pieces. Hence $S$ differs from the Riemann sum of $t \mapsto f(\gamma(t))\gamma'(t)$ by a term bounded in norm by $\max_{\gamma^*}\|f\| \,\omega(\|\Delta_\Phi\|)(b-a) \to 0$.
 
 The integral exists because $\mathbb{C}_{\mathrm{spl}}$ is a complete normed space under $\| \cdot \|$, exactly as $\mathbb{C}$ is under the modulus; completeness is what makes the limit of Riemann sums legitimate, and it is not affected by the presence of zero divisors.
 
@@ -144,12 +144,12 @@ and the conjugate is computed the same way with $j$ replaced by $-j$, which inte
 **Proposition (the d'Alembertian).** For the conjugate operator $\bar D = 2\,\partial/\partial Q = \partial/\partial q + j\,\partial/\partial q'$,
 
 $$
-\bar D D = D \bar D = \Box := \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\,\partial^2/\partial Q_+\partial Q_-.
+\bar D D = D \bar D = \Box_\Phi := \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\,\partial^2/\partial Q_+\partial Q_-.
 $$
 
 **Proof.** Expanding, $\bar D D = (\partial/\partial q + j\partial/\partial q')(\partial/\partial q - j\partial/\partial q') = \partial^2/\partial q^2 - j^2 \partial^2/\partial q'^2 = \partial^2/\partial q^2 - \partial^2/\partial q'^2$, the mixed terms cancelling; the same expansion gives $D\bar D$. In the idempotent coordinates $\partial^2/\partial Q_+\partial Q_- = \tfrac14(\partial^2/\partial q^2 - \partial^2/\partial q'^2)$.
 
-So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\zeta_1 - j\,\zeta_2$, whose norm is $\zeta_1^2 - \zeta_2^2$, so it is invertible off the two lines $\zeta_1 = \pm\zeta_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box = 4\partial^2/\partial Q_+\partial Q_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
+So the split Cauchy–Riemann operator factors the wave operator, not the Laplacian. It is therefore not elliptic: the principal symbol of $D$ is $\zeta_1 - j\,\zeta_2$, whose norm is $\zeta_1^2 - \zeta_2^2$, so it is invertible off the two lines $\zeta_1 = \pm\zeta_2$ and a zero divisor on them; those lines are exactly the set on which the symbol of $\Box_\Phi = 4\partial^2/\partial Q_+\partial Q_-$ vanishes. This is the analytic face of the algebra's zero divisors, and the next sections show that it is the same set.
 
 ### The Cauchy–Riemann Equations
 
@@ -183,7 +183,7 @@ $$
 \frac{\partial u}{\partial q} = \frac{\partial v}{\partial q'}, \qquad \frac{\partial u}{\partial q'} = \frac{\partial v}{\partial q},
 $$
 
-and then $u$ and $v$ each satisfy the wave equation $\Box u = \Box v = 0$.
+and then $u$ and $v$ each satisfy the wave equation $\Box_\Phi u = \Box_\Phi v = 0$.
 
 ## The Cauchy–Goursat Theorem
 
@@ -310,7 +310,7 @@ The common cause of all five is the same: the two idempotent components are inde
 
 ### The Characteristic Lines
 
-**Definition.** The **null directions** of $\mathbb{C}_{\mathrm{spl}}$ are the two directions spanned by $\Pi_+$ and by $\Pi_-$, equivalently the level lines of $Q_+$ and of $Q_-$. They are the characteristics of the operator $\Box$, and their union through the origin is the zero-divisor cone.
+**Definition.** The **null directions** of $\mathbb{C}_{\mathrm{spl}}$ are the two directions spanned by $\Pi_+$ and by $\Pi_-$, equivalently the level lines of $Q_+$ and of $Q_-$. They are the characteristics of the operator $\Box_\Phi$, and their union through the origin is the zero-divisor cone.
 
 The behaviour of the integral along a null line is instructive. Let $f$ be split complex differentiable and let $\gamma$ run along a line on which $Q_+$ is constant. Then $dQ_+ = 0$, so $dQ = \Pi_-\,dQ_-$ and
 
@@ -402,7 +402,7 @@ The differences are consequences of the single sign $j^2 = +1$ against $i^2 = -1
 |---|---|---|
 | Coefficient ring | field, no zero divisors | ring, zero divisors $1 \pm j$ |
 | Cauchy–Riemann operator | $\partial/\partial q + i\partial/\partial q'$, elliptic | $\partial/\partial q - j\partial/\partial q'$, hyperbolic |
-| Second-order operator | Laplacian $\Delta$ | d'Alembertian $\Box$ |
+| Second-order operator | Laplacian $\Delta_\Phi$ | d'Alembertian $\Box_\Phi$ |
 | Characteristic set | $\{0\}$ | the null cone $\langle Q\rangle_{*} = 0$ |
 | Fundamental solution | a Cauchy kernel $Q^{-1}$ up to a constant, singular at a point | supported on the null rays |
 | Cauchy–Goursat, closed contour | holds | holds, but is soft |
@@ -464,9 +464,9 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\ome
 | $\partial/\partial Q_\pm$ | Null-coordinate derivatives |
 | $D = \partial/\partial q - j\partial/\partial q'$ | Split Cauchy–Riemann operator, $D = 2\partial/\partial\bar Q$ |
 | $\bar D = \partial/\partial q + j\partial/\partial q'$ | Conjugate operator |
-| $\Box = \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\partial^2/\partial Q_+\partial Q_-$ | d'Alembertian |
-| $\|\Delta\|$ | Mesh of a partition of $[a,b]$, for the Riemann sums |
-| $\omega(\|\Delta\|)$ | Modulus of continuity of $\gamma'$ on a partition of mesh $\|\Delta\|$ |
+| $\Box_\Phi = \partial^2/\partial q^2 - \partial^2/\partial q'^2 = 4\partial^2/\partial Q_+\partial Q_-$ | d'Alembertian |
+| $\|\Delta_\Phi\|$ | Mesh of a partition of $[a,b]$, for the Riemann sums |
+| $\omega(\|\Delta_\Phi\|)$ | Modulus of continuity of $\gamma'$ on a partition of mesh $\|\Delta_\Phi\|$ |
 | $H$ | Heaviside function, $H(t) = 1$ for $t > 0$ and $0$ for $t < 0$ |
 | $E = H(Q_-)\delta(Q_+)\Pi_+ + H(Q_+)\delta(Q_-)\Pi_-$ | Fundamental solution of $D$, supported on the two null rays |
 | $\operatorname{Res}_L f$ | Residue at a null line $L$, an idempotent coefficient |

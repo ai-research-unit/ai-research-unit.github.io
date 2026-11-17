@@ -78,7 +78,7 @@ D=\sum_\mu \varepsilon_\mu\, c_\mu\,\frac{\partial}{\partial x_\mu},\qquad
 D^{2}=\Box_\Phi=\sum_\mu\frac{\partial^{2}}{\partial R_\mu^{2}}=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
 $$
 
-The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The minus on the time term of $\Box$ is the square of the $i$ in $Q_t=i q'_t$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
+The sign vector is the one that makes the square the d'Alembertian: the time direction enters with $c_0^{2}=-1$ and the three space directions with $c_k^{2}=+1$. The minus on the time term of $\Box_\Phi$ is the square of the $i$ in $Q_t=i q'_t$: the derivative is taken with respect to a coefficient that is imaginary, and $i^{2}=-1$ is the whole of the sign. The operator carries no $i$; the $i$ of a plane wave comes from the wave and not from the frame.
 
 **The conjugation.** The charge conjugation of this article is
 
@@ -171,10 +171,10 @@ $$
 
 The equation is first order in the time derivative, so the deviation is fixed by its value at one time: a field self-conjugate at one time stays self-conjugate at every time. The sign in front of $m$ is not a change of mass. It is the reversal of the frequency that the conjugation performs on the symbol, and the squared operator sees neither sign.
 
-**The mass shell is unchanged.** Squaring the equation and using $\mathcal{C}^{2}=1$ and $D^{2}=\Box$,
+**The mass shell is unchanged.** Squaring the equation and using $\mathcal{C}^{2}=1$ and $D^{2}=\Box_\Phi$,
 
 $$
-\Box\,\tilde{Ξ}=D^{2}\tilde{Ξ}=k_mD\,\tilde{Ξ}^c=k_m^{2}\,\tilde{Ξ} ,
+\Box_\Phi\,\tilde{Ξ}=D^{2}\tilde{Ξ}=k_mD\,\tilde{Ξ}^c=k_m^{2}\,\tilde{Ξ} ,
 $$
 
 so a plane wave of the field sits on $N=-m^{2}c^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -285,7 +285,7 @@ The framework transcribes both facts, and neither is a derivation.
 | Weyl: four real components; Majorana: four; Dirac: eight | supplied | the dimensions of a value and of a fixed space of an involution |
 | The charge conjugation is the coefficient bar | supplied | the bar is the only conjugate-linear automorphism; the phase in front of it is convention |
 | The conjugation commutes with the kinetic operator | supplied | the four coefficients of the operator are real |
-| The mass shell stays $N=-m^{2}c^{2}$ | supplied | $D^{2}=\Box$ and $\mathcal{C}^{2}=1$ |
+| The mass shell stays $N=-m^{2}c^{2}$ | supplied | $D^{2}=\Box_\Phi$ and $\mathcal{C}^{2}=1$ |
 | The vector current of the self-conjugate field vanishes | supplied | the anticommutation of the components |
 | A commuting element gives the opposite pattern | recorded | the same computation without anticommutation |
 | The sector split is not the Majorana real form | supplied | the operator does not preserve $\mathbb{B}_{\Phi}$ |
@@ -383,7 +383,7 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*}=({}^{\natural})^{\,*}$ | Quaternion, complex and Hermitian conjugations |
 | $Q^{\flat}=-Q^{*}$ | Algebra's real structure; fixed space $\mathbb{B}_{\Phi}$ |
 | $c_0:\tilde{Ξ}\mapsto\tilde{Ξ}\vec e_x$; $c_k:\tilde{Ξ}\mapsto\vec e_\eta\tilde{Ξ}\vec e_y$ | The four real multipliers of the frame; $c_0^2=-1$, $c_k^2=+1$, pairwise anticommuting |
-| $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ | Kinetic operator; $D^2=\Box$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$ |
+| $D=\sum_\mu\varepsilon_\mu c_\mu\partial/\partial x_\mu$ | Kinetic operator; $D^2=\Box_\Phi$; $D_p=-i\sum_\mu\varepsilon_\mu p_\mu c_\mu$ |
 | $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ | d'Alembertian; $\Delta_\Phi$ is the material Laplacian |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $\mathcal{C}:\tilde{Ξ}\mapsto i\bar{\tilde{Ξ}}$ | Charge conjugation; $\mathcal{C}^2=1$, $\xi\mathcal{C}=-\mathcal{C}\xi$, $\mathcal{C}D=D\mathcal{C}$ |

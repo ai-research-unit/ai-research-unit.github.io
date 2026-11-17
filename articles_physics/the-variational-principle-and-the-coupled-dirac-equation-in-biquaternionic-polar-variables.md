@@ -57,10 +57,10 @@ with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. **The coeffici
 
 **The mass terms.** The mass term is $\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L$, and in the chart it is a function of the parameters with no derivative. The parent polar article's mass-term proposition gives the relation between the parts, $\tilde\Xi_0^{L}=-\mathcal B_\Psi\tilde\Xi_0^{R}$ with $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and the scalar part of the mass term is therefore a fixed multiple of $\varrho^{2}$. The mass enters the action as an algebraic term and never as a velocity; that is the reason the action has one velocity and not four.
 
-**The potential.** The coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}$, and because $\tilde A_\Phi$ is central per component it passes through $\tilde\Xi^{-1}$:
+**The potential.** The coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}$, and because $\tilde A_\Phi$ is central per component it passes through $\tilde\Xi^{-1}$:
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=\tilde\Xi^{-1}\tilde\nabla_\Phi\tilde\Xi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=\tilde\Xi^{-1}\tilde\nabla_\Phi\tilde\Xi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi .
 $$
 
 So the potential adds one algebraic term and no derivative, and the action's potential term is
@@ -172,7 +172,7 @@ The four brackets are the decomposition of the logarithmic derivative, and the c
 **The four brackets, with the coupling.** For each component,
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
 =\frac{1}{2}\partial_\mu\ln\rho_{\mathrm{num}}
 +i\Bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu^{\,t}\Bigr)
 +\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
@@ -204,7 +204,7 @@ The chart's parameters become fields, and the action acquires gradient terms.
 **What changes.** In the operator setting the rapidity $\theta_{\mathrm{rpd}}$ and the rotor angle $\theta_{\mathrm{axr}}$ are functions of position, so the boost bracket and the rotor bracket contribute to the spatial slots of the kinetic term and not only to the temporal one. The action becomes
 
 $$
-S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}+\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
+S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}+\text{terms in }\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}\Bigr],
 $$
 
 and the gradient terms are the quantum potential's, in the spin-half-fluid form.

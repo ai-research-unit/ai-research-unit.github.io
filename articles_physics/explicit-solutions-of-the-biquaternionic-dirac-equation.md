@@ -79,25 +79,25 @@ i.e., $-k_{t}^{\prime\,2} + \|\vec k_\Phi\|^2 = -k_m^{2}$, which is the standard
 
 ## The Field as the Gradient of a Scalar Potential
 
-The completion of the next section has a shifted form, and the shift is the operator of the companion *The Biquaternion D'Alembertian and Its Green's Functions*. With the **shifted gradient** $\tilde{\nabla}_\kappa = \tilde\nabla_\Phi + \kappa$,
+The completion of the next section has a shifted form, and the shift is the operator of the companion *The Biquaternion D'Alembertian and Its Green's Functions*. With the **shifted gradient** $\tilde\nabla_{\kappa,\Phi} = \tilde\nabla_\Phi + \kappa$,
 $$
-\tilde{\nabla}_\kappa(\tilde\nabla_\Phi)^{\natural}_\kappa = \Box_\Phi + 2\kappa\,\partial/\partial R_t + \kappa^2 ,
+\tilde\nabla_{\kappa,\Phi}(\tilde\nabla_{\kappa,\Phi})^{\natural} = \Box_\Phi + 2\kappa\,\partial/\partial R_t + \kappa^2 ,
 $$
 because the two spatial parts cancel in the sum of the operator and its conjugate, $\tilde\nabla_\Phi+(\tilde\nabla_\Phi)^{\natural}=2e_t\,\partial/\partial R_t=2\,\partial/\partial R_t$, since $e_t=1$. A **scalar** solution of that operator therefore produces a field of the algebra,
 $$
 \left(\Box_\Phi + 2\kappa\,\partial/\partial R_t + \kappa^2\right) u = 0
 \quad\Longrightarrow\quad
-\tilde{\nabla}_\kappa\left((\tilde\nabla_\Phi)^{\natural}_\kappa u\right) = 0 ,
+\tilde\nabla_{\kappa,\Phi}\left((\tilde\nabla_{\kappa,\Phi})^{\natural} u\right) = 0 ,
 $$
-and the field is the shifted conjugate gradient of a potential: one element of $\mathbb{B}$ built from another by differentiation, with no column and no second carrier. At $\kappa = 0$ it is the completion $\tilde{Ξ}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ of the next section, and for $\kappa \neq 0$ it is its shifted form. The source calls the scalar generator a **C-field** and takes the field to be the convolution of $(\tilde\nabla_\Phi)^{\natural}_\kappa\tilde{Ξ}_{0}$ with it, which is how the same construction produces extended rather than only elementary solutions; the convolution is the one developed in the companion article on distributions.
+and the field is the shifted conjugate gradient of a potential: one element of $\mathbb{B}$ built from another by differentiation, with no column and no second carrier. At $\kappa = 0$ it is the completion $\tilde{Ξ}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ of the next section, and for $\kappa \neq 0$ it is its shifted form. The source calls the scalar generator a **C-field** and takes the field to be the convolution of $(\tilde\nabla_{\kappa,\Phi})^{\natural}\tilde{Ξ}_{0}$ with it, which is how the same construction produces extended rather than only elementary solutions; the convolution is the one developed in the companion article on distributions.
 
 **Why the elementary field is null.** For the elementary case the potential is a plane wave, $\xi_{\mathrm{scl}}=\exp(-i\theta_{\mathrm{pwp}})$, and the field is read off by differentiating it. In the coordinate $Q_t=i q'_t$ the time derivative is $\partial\xi_{\mathrm{scl}}/\partial R_t=-\omega\xi_{\mathrm{scl}}$ and the three spatial ones are $\partial_k\xi_{\mathrm{scl}}=ik_k\xi_{\mathrm{scl}}$, so
 $$
-(\tilde\nabla_\Phi)^{\natural}_\kappa\,\xi_{\mathrm{scl}} = \bigl((\kappa-\omega)\,e_t - i k_x\vec e_x - i k_y\vec e_y - i k_z\vec e_z\bigr)\xi_{\mathrm{scl}} ,
+(\tilde\nabla_{\kappa,\Phi})^{\natural}\,\xi_{\mathrm{scl}} = \bigl((\kappa-\omega)\,e_t - i k_x\vec e_x - i k_y\vec e_y - i k_z\vec e_z\bigr)\xi_{\mathrm{scl}} ,
 $$
 and its quaternion norm is the shifted symbol of the operator,
 $$
-\left\langle(\tilde\nabla_\Phi)^{\natural}_\kappa\,\xi_{\mathrm{scl}}\right\rangle_{\natural} = (\omega-\kappa)^2 - \|\vec k_\Phi\|^2 .
+\left\langle(\tilde\nabla_{\kappa,\Phi})^{\natural}\,\xi_{\mathrm{scl}}\right\rangle_{\natural} = (\omega-\kappa)^2 - \|\vec k_\Phi\|^2 .
 $$
 The two lines are one statement in two languages: the norm of the field vanishes exactly when the potential solves the shifted scalar equation, so the field is a zero divisor on the shifted cone, as the massless plane-wave fields of the preceding subsection are on the light cone. The zero-divisor cone of the algebra is the light cone, and the shifted cone is the norm-zero set of the shifted operator. The source normalises its representatives and records separate norm and pseudonorm values for them; the corpus keeps the invariant statement, that the element is null, and the dictionary between the source's mass $m$ and the corpus shift $\kappa$ — $\kappa = -i\,k_m$, so that the source's imaginary mass is a real shift — is the one recorded in the d'Alembertian companion.
 
@@ -109,17 +109,17 @@ $$
 \tilde{Ξ}_{R}=1/k_m(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} ,
 $$
 
-so a free Dirac field carries nothing that one part does not already carry, and the consistency of the pair is the Klein–Gordon equation $\Box\tilde{Ξ}_{R}=\tilde{Ξ}_{R}\,k_m^{2}$ of *Klein–Gordon from the Dirac Square in Biquaternionic Form*. The source states the same identity in its own variables, the second half computed from the first by differentiation. One structural difference separates this from the shifted completion above: the shift contributes the first-order-in-time term $2\kappa\,\partial/\partial R_t$ and so moves the cone, whereas the mass contributes a constant and leaves the cone where it is. The mass is not a central shift of the operator — it is the off-diagonal pairing of *The Massive Case* — and what the two share is only the shape of the implication, one half of the field being a gradient of the other.
+so a free Dirac field carries nothing that one part does not already carry, and the consistency of the pair is the Klein–Gordon equation $\Box_\Phi\tilde{Ξ}_{R}=\tilde{Ξ}_{R}\,k_m^{2}$ of *Klein–Gordon from the Dirac Square in Biquaternionic Form*. The source states the same identity in its own variables, the second half computed from the first by differentiation. One structural difference separates this from the shifted completion above: the shift contributes the first-order-in-time term $2\kappa\,\partial/\partial R_t$ and so moves the cone, whereas the mass contributes a constant and leaves the cone where it is. The mass is not a central shift of the operator — it is the off-diagonal pairing of *The Massive Case* — and what the two share is only the shape of the implication, one half of the field being a gradient of the other.
 
-**The potential is defined only up to a constrained shift.** The map $u\mapsto(\tilde\nabla_\Phi)^{\natural}_\kappa u$ is not injective. Any $u'$ with $(\tilde\nabla_\Phi)^{\natural}_\kappa u'=0$ leaves the field unchanged, and such $u'$ are supplied by the scalars: every $\zeta$ solving the shifted scalar equation gives one, $u'=\tilde{\nabla}_\kappa\zeta$, because $(\tilde\nabla_\Phi)^{\natural}_\kappa\tilde{\nabla}_\kappa=\Box_\Phi+2\kappa\,\partial/\partial R_t+\kappa^2$. The potential is therefore fixed only up to
+**The potential is defined only up to a constrained shift.** The map $u\mapsto(\tilde\nabla_{\kappa,\Phi})^{\natural} u$ is not injective. Any $u'$ with $(\tilde\nabla_{\kappa,\Phi})^{\natural} u'=0$ leaves the field unchanged, and such $u'$ are supplied by the scalars: every $\zeta$ solving the shifted scalar equation gives one, $u'=\tilde\nabla_{\kappa,\Phi}\zeta$, because $(\tilde\nabla_{\kappa,\Phi})^{\natural}\tilde\nabla_{\kappa,\Phi}=\Box_\Phi+2\kappa\,\partial/\partial R_t+\kappa^2$. The potential is therefore fixed only up to
 
 $$
-u\longmapsto u+\tilde{\nabla}_\kappa\zeta ,
+u\longmapsto u+\tilde\nabla_{\kappa,\Phi}\zeta ,
 \qquad
-\bigl(\Box+2\kappa\,\partial/\partial R_t+\kappa^2\bigr)\zeta=0 ,
+\bigl(\Box_\Phi+2\kappa\,\partial/\partial R_t+\kappa^2\bigr)\zeta=0 ,
 $$
 
-which was checked on both branches of the shifted cone. The gauge function is **constrained** by the scalar equation, and that is what separates this freedom from a local phase: no arbitrary function, no connection, no curvature, no gauge boson. What the freedom states is structural, and it is the electromagnetic analogy taken at its word: the field is the invariant object and the scalar is its potential, as the field strength is the invariant object of the Maxwell potential, so that the free Dirac field stands to its Klein–Gordon potential as a strength stands to a potential. The source states the same for the free massive field, whose Dirac field is invariant under a shift of its Klein–Gordon potentials by a solution of the conjugate Dirac equation; under the dictionary $\kappa=-i\,k_m$, that is $k_m=i\kappa$, that operator is $i(\tilde\nabla_\Phi)^{\natural}_\kappa$, the shifted conjugate gradient up to the unit $i$, so the corpus records the structure once. The source adds that its alternative, potential-based transformation of the Dirac field is nonlinear on the field and free of two-valuedness under a full rotation. The boundary is worth keeping explicit: that alternative is a solution-generating map, and the linear representation on the algebra, whose two-valuedness *The Spin–Statistics Theorem in Biquaternionic Form* uses, is untouched by it.
+which was checked on both branches of the shifted cone. The gauge function is **constrained** by the scalar equation, and that is what separates this freedom from a local phase: no arbitrary function, no connection, no curvature, no gauge boson. What the freedom states is structural, and it is the electromagnetic analogy taken at its word: the field is the invariant object and the scalar is its potential, as the field strength is the invariant object of the Maxwell potential, so that the free Dirac field stands to its Klein–Gordon potential as a strength stands to a potential. The source states the same for the free massive field, whose Dirac field is invariant under a shift of its Klein–Gordon potentials by a solution of the conjugate Dirac equation; under the dictionary $\kappa=-i\,k_m$, that is $k_m=i\kappa$, that operator is $i(\tilde\nabla_{\kappa,\Phi})^{\natural}$, the shifted conjugate gradient up to the unit $i$, so the corpus records the structure once. The source adds that its alternative, potential-based transformation of the Dirac field is nonlinear on the field and free of two-valuedness under a full rotation. The boundary is worth keeping explicit: that alternative is a solution-generating map, and the linear representation on the algebra, whose two-valuedness *The Spin–Statistics Theorem in Biquaternionic Form* uses, is untouched by it.
 
 
 ## Spherical and Cylindrical Solutions
@@ -131,10 +131,10 @@ Spherical solutions of the biquaternionic Dirac equation can be constructed by t
 The construction is more involved than the corresponding construction for the Maxwell equation, because $\tilde\nabla_\Phi$ is not the operator whose square is the scalar wave operator. One has
 
 $$
-\tilde{\nabla}^2 = \frac{\partial^2}{\partial R_t^2} - \Delta + 2\,\frac{\partial}{\partial R_t}\,\vec\nabla ,
+\tilde\nabla_\Phi^2 = \frac{\partial^2}{\partial R_t^2} - \Delta_\Phi + 2\,\frac{\partial}{\partial R_t}\,\vec\nabla_\Phi ,
 $$
 
-a derived form, whose first-order cross term does not vanish, so $\tilde{\nabla}^2 \neq \Box$. It is the **conjugate** gradient that squares to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, so the completion operator is $(\tilde\nabla_\Phi)^{\natural}$: for every harmonic scalar function $\tilde{Ξ}$ with $\Box\tilde{Ξ} = 0$, the function $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ satisfies
+a derived form, whose first-order cross term does not vanish, so $\tilde\nabla_\Phi^2 \neq \Box_\Phi$. It is the **conjugate** gradient that squares to the d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, so the completion operator is $(\tilde\nabla_\Phi)^{\natural}$: for every harmonic scalar function $\tilde{Ξ}$ with $\Box_\Phi\tilde{Ξ} = 0$, the function $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ satisfies
 
 $$
 \tilde\nabla_\Phi\left((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}\right) = \Box_\Phi\tilde{Ξ} = 0
@@ -156,9 +156,9 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 
 **Completion.** The operator whose square is the d'Alembertian is the conjugate gradient, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$, so $\tilde{Ξ}\mapsto(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}$ carries every harmonic scalar into a solution. The spherical and cylindrical families are the completed harmonics, and the constancy of the construction is why they are indexed by the scalar harmonics of the same geometry.
 
-**The field as a gradient.** With the shifted gradient $\tilde\nabla_\kappa=\tilde\nabla_\Phi+\kappa$ one has $\tilde\nabla_\kappa\tilde\nabla_\kappa^{\natural}=\Box+2\kappa\,\partial/\partial R_t+\kappa^{2}$, so a scalar solving the shifted equation produces the field $\tilde\nabla_\kappa^{\natural}u$. For a plane-wave potential the field is null exactly when the potential solves that equation, so the field is a zero divisor on the shifted cone; at $\kappa=0$ the cone is the light cone. In the massive pair the same shape holds with the mass in place of the shift, each half being the completion of the other, but the mass contributes a constant and leaves the cone where it is.
+**The field as a gradient.** With the shifted gradient $\tilde\nabla_{\kappa,\Phi}=\tilde\nabla_\Phi+\kappa$ one has $\tilde\nabla_{\kappa,\Phi}\tilde\nabla_{\kappa,\Phi}^{\natural}=\Box_\Phi+2\kappa\,\partial/\partial R_t+\kappa^{2}$, so a scalar solving the shifted equation produces the field $\tilde\nabla_{\kappa,\Phi}^{\natural}u$. For a plane-wave potential the field is null exactly when the potential solves that equation, so the field is a zero divisor on the shifted cone; at $\kappa=0$ the cone is the light cone. In the massive pair the same shape holds with the mass in place of the shift, each half being the completion of the other, but the mass contributes a constant and leaves the cone where it is.
 
-**The gauge freedom is constrained.** The potential is fixed only up to $u\mapsto u+\tilde\nabla_\kappa\zeta$ with $\zeta$ a solution of the shifted scalar equation. The gauge function obeys the same equation as the potential, and that is what separates the freedom from a local phase: no arbitrary function, no connection, no curvature, no gauge boson.
+**The gauge freedom is constrained.** The potential is fixed only up to $u\mapsto u+\tilde\nabla_{\kappa,\Phi}\zeta$ with $\zeta$ a solution of the shifted scalar equation. The gauge function obeys the same equation as the potential, and that is what separates the freedom from a local phase: no arbitrary function, no connection, no curvature, no gauge boson.
 
 ## Summary of Notation
 
@@ -171,16 +171,16 @@ Cylindrical solutions are similarly constructed from cylindrical harmonics by th
 | $k_m=\dfrac{mc}{\hbar}$ | The mass wave number, the coefficient of the mass term |
 | $k_\Phi=\omega\sqrt{\epsilon\mu}$ | The propagation wave number of the medium, equal to $k_t^{\prime}$ on the light cone |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | The d'Alembertian, a central scalar |
-| $\tilde\nabla_\kappa=\tilde\nabla_\Phi+\kappa$ | The shifted gradient, with $\kappa\in\mathbb{C}$ central |
+| $\tilde\nabla_{\kappa,\Phi}=\tilde\nabla_\Phi+\kappa$ | The shifted gradient, with $\kappa\in\mathbb{C}$ central |
 | $\xi_{\mathrm{scl}}$ | The scalar (pseudoscalar-potential) coefficient, the potential of the elementary field |
 | $u$, $\zeta$ | The scalar potential of the field and the gauge function of the constrained shift |
-| $\vec\nabla$, $\Delta$ | The spatial gradient and the Laplacian; $\tilde\nabla^{2}=\partial_t^{2}-\Delta+2\,\partial_t\vec\nabla$ |
+| $\vec\nabla_\Phi$, $\Delta_\Phi$ | The spatial gradient and the Laplacian; $\tilde\nabla_\Phi^{2}=\partial_t^{2}-\Delta_\Phi+2\,\partial_t\vec\nabla_\Phi$ |
 
 ## Further Reading
 
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the chiral pair, the value of an element and the two-sided dictionary that these solutions obey.
 - [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), for $k_m$, $k_\Phi$ and $k_t^{\prime}$ and the unit argument that fixes the coefficient of the mass term.
-- [The Biquaternion D'Alembertian and Its Green's Functions](the-biquaternion-dalembertian-and-its-greens-functions.html), for the shifted operator $\tilde\nabla_\kappa$ and its symbol.
+- [The Biquaternion D'Alembertian and Its Green's Functions](the-biquaternion-dalembertian-and-its-greens-functions.html), for the shifted operator $\tilde\nabla_{\kappa,\Phi}$ and its symbol.
 - [Klein–Gordon from the Dirac Square in Biquaternionic Form](klein-gordon-from-the-dirac-square-in-biquaternionic-form.html), for the consistency condition that makes the two halves of the massive pair one field.
 
 - V. V. Kassandrov and N. V. Markova, "New symmetries, conserved quantities and gauge nature of a free Dirac field," arXiv:2209.00460 (2022), for the free Dirac field read as the gauge-invariant strength of a quadruple of Klein–Gordon potentials fixed only up to a constrained gradient shift, for its own two-field form $b=(i/m)Wa$ in which one half is the derivative of the other, for the singular solutions of the shifted kernel — the spinorial Yukawa analogue, a string-like solution and a stationary solution of finite field charge — and for the remark that the potential-based transformation of the Dirac field is nonlinear and free of two-valuedness, recorded in §*The Field as the Gradient of a Scalar Potential* above as a boundary and not as a replacement of the canonical law.

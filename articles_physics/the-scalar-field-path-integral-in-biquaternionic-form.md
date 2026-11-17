@@ -59,7 +59,7 @@ Z=\int\mathcal{D}\tilde{Ξ}\;\exp(i\theta_{\mathrm{act}}),
 \exp(i\theta_{\mathrm{act}})\ \text{a central }{}^{*}\text{-unitary} .
 $$
 
-Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **centre**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box-\mu^2)$ on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$ is
+Three features of this rewriting are structural rather than cosmetic. First, the integration variable is a function into the **centre**, so the path integral is an ordinary functional integral over complex functions, equivalently over pairs of real functions, and the state module on which spinor fields live is not integrated over at all. Second, the quadratic form in the exponent is the biquaternion norm shifted by the mass: the momentum-space symbol of $(\Box_\Phi-\mu^2)$ on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$ is
 
 $$
 \frac{\omega^2}{c^2}-\vec k_\Phi^2-\mu^2
@@ -93,7 +93,7 @@ $$
 \big[\pi\,\partial\xi_{\mathrm{scl}}/\partial r'_t+\pi^\dagger\left(\partial\xi_{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}(\xi_{\mathrm{scl}},\pi)\big]\right),
 $$
 
-the **phase-space** or Hamiltonian form of the functional integral. The momentum is now an independent integration variable, and because the field is complex both kinetic terms appear, with the corresponding boundary terms fixed at the endpoints. Because the Hamiltonian is quadratic in $\pi$, the momentum integral is a Gaussian and can be performed explicitly; it reproduces the Lagrangian form, since with the Hamiltonian $\mathcal{H}=c^{2}\pi\pi^{\dagger}+|\nabla\xi_{\mathrm{scl}}|^{2}+\mu^{2}|\xi_{\mathrm{scl}}|^{2}$ the saddle value of $\pi\partial\xi_{\mathrm{scl}}/\partial r'_t+\pi^{\dagger}\left(\partial\xi_{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}$ is $2|\partial\xi_{\mathrm{scl}}/\partial r'_t|^{2}-|\partial\xi_{\mathrm{scl}}/\partial r'_t|^{2}-|\nabla\xi_{\mathrm{scl}}|^{2}-\mu^{2}|\xi_{\mathrm{scl}}|^{2}=\mathcal{L}$. The saddle point of the momentum integral is
+the **phase-space** or Hamiltonian form of the functional integral. The momentum is now an independent integration variable, and because the field is complex both kinetic terms appear, with the corresponding boundary terms fixed at the endpoints. Because the Hamiltonian is quadratic in $\pi$, the momentum integral is a Gaussian and can be performed explicitly; it reproduces the Lagrangian form, since with the Hamiltonian $\mathcal{H}=c^{2}\pi\pi^{\dagger}+|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^{2}+\mu^{2}|\xi_{\mathrm{scl}}|^{2}$ the saddle value of $\pi\partial\xi_{\mathrm{scl}}/\partial r'_t+\pi^{\dagger}\left(\partial\xi_{\mathrm{scl}}/\partial r'_t\right)^{\dagger}-\mathcal{H}$ is $2|\partial\xi_{\mathrm{scl}}/\partial r'_t|^{2}-|\partial\xi_{\mathrm{scl}}/\partial r'_t|^{2}-|\vec\nabla_\Phi\xi_{\mathrm{scl}}|^{2}-\mu^{2}|\xi_{\mathrm{scl}}|^{2}=\mathcal{L}$. The saddle point of the momentum integral is
 
 $$
 \frac{\partial\mathcal{H}}{\partial\pi}=\partial\xi_{\mathrm{scl}}/\partial r'_t
@@ -196,10 +196,10 @@ The functional integral is made convergent by continuing to imaginary time. Writ
 $$
 S_E[\tilde{Ξ}]=\int d^4r_E\left[(\partial/\partial\tau\,{\xi_{\mathrm{scl}}}^*)(\partial/\partial\tau\,\xi_{\mathrm{scl}})
 +\sum_\eta(\partial/\partial x_\eta\,{\xi_{\mathrm{scl}}}^*)(\partial/\partial x_\eta\,\xi_{\mathrm{scl}})+\mu^2{\xi_{\mathrm{scl}}}^*\xi_{\mathrm{scl}}\right]
-=\int d^4r_E\;\mathrm{Sc}\!\left[\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ}\right],
+=\int d^4r_E\;\mathrm{Sc}\!\left[\tilde{Ξ}^{*}(-\Box_\Phi+\mu^2)\tilde{Ξ}\right],
 $$
 
-with $\Delta_E=\partial^2/\partial\tau^2+\Delta_\Phi$ the Euclidean Laplacian, and the functional integral becomes
+with $\Box_\Phi=\partial^2/\partial\tau^2+\Delta_\Phi$ the Euclidean Laplacian, and the functional integral becomes
 
 $$
 Z_E=\int\mathcal{D}\tilde{Ξ}\;\exp(-S_E[\tilde{Ξ}]/\hbar),
@@ -215,9 +215,9 @@ D_n=a\,D_{n-1}-b^2D_{n-2},
 D_0=1,\quad D_1=a ,
 $$
 
-which follows from expanding along the first row. The inverse $A^{-1}$ is the lattice propagator, and in the continuum limit $h\to0$ the matrix $(-\Delta_E+\mu^2)^{-1}$ becomes the Euclidean two-point function. This is the standard lattice definition of a scalar functional integral, and it is the definition that gives the measure a meaning.
+which follows from expanding along the first row. The inverse $A^{-1}$ is the lattice propagator, and in the continuum limit $h\to0$ the matrix $(-\Box_\Phi+\mu^2)^{-1}$ becomes the Euclidean two-point function. This is the standard lattice definition of a scalar functional integral, and it is the definition that gives the measure a meaning.
 
-**The continuum limit and the free energy.** In the limit the functional integral defines $\ln Z_E$, whose per-volume limit is the free energy density of the Euclidean scalar theory; the determinant $\det(-\Delta_E+\mu^2)$ is central, as every object of the scalar sector is, and its logarithm is the one-loop vacuum energy. The divergent part of that logarithm is the Euclidean form of the vacuum energy that the companion quantization's normal ordering removes, and its finite part is the quantity the Casimir companion computes for boundary conditions. The Euclidean formulation adds no new framework content; it makes the measure and the determinant well defined and puts the vacuum energy on the same footing as the propagator.
+**The continuum limit and the free energy.** In the limit the functional integral defines $\ln Z_E$, whose per-volume limit is the free energy density of the Euclidean scalar theory; the determinant $\det(-\Box_\Phi+\mu^2)$ is central, as every object of the scalar sector is, and its logarithm is the one-loop vacuum energy. The divergent part of that logarithm is the Euclidean form of the vacuum energy that the companion quantization's normal ordering removes, and its finite part is the quantity the Casimir companion computes for boundary conditions. The Euclidean formulation adds no new framework content; it makes the measure and the determinant well defined and puts the vacuum energy on the same footing as the propagator.
 
 ## The Vacuum Persistence Amplitude and Pair Creation
 
@@ -270,7 +270,7 @@ Four statements summarise what the framework contributes to the scalar functiona
 
 **The configuration space is the centre.** The configuration space of the theory is the space of central-valued functions; the action, the source and the measure are central; the state module is a spectator. This is why the scalar functional integral is an ordinary complex functional integral and why no Grassmann or spinor structure appears.
 
-**The quadratic form is the biquaternion norm.** The momentum-space symbol of the Gaussian's operator is $-(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2)$ with $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$, and it vanishes on the mass shell, the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three interpretations of one algebraic object, and the framework's convention for $\Box$ makes them mutually consistent.
+**The quadratic form is the biquaternion norm.** The momentum-space symbol of the Gaussian's operator is $-(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2)$ with $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$, and it vanishes on the mass shell, the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$. The shell's geometry, the Gaussian's width and the pole of the propagator are three interpretations of one algebraic object, and the framework's convention for $\Box_\Phi$ makes them mutually consistent.
 
 **The phase is central, and the Wick rotation is a sector relabelling.** The phase $\exp(i\theta_{\mathrm{act}})$ is a central $*$-unitary, so it multiplies the whole configuration space uniformly. The continuation to imaginary time is the relabelling of the material coordinate $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z\in\mathbb{B}_{\Phi}$ by the real coefficient $c\tau$, which is the passage to the quaternion subspace on which the biquaternion norm is positive definite; this is the standard Wick rotation read as a change of sector, and it is what makes the Euclidean Gaussian converge.
 
@@ -307,7 +307,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\mathbb{B}_{C}=\mathrm{span}_{\mathbb{R}}\{e_t,ie_t\}$ | Centre; the configuration space's value space |
 | $\tilde{Ξ}=\xi_{\mathrm{scl}}\,e_t$, $\tilde J_{\Phi}=J\,e_t$, $\xi_{\mathrm{scl}}=(\xi_{\mathrm{scl},1}+i\xi_{\mathrm{scl},2})/\sqrt2$ | Scalar field and central source; real components |
 | $\tilde R_\Phi=i r'_t\,e_t+r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material coordinate |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ | Gradient and d'Alembertian |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\mu \vec e_\mu\,\partial/\partial R_\mu$, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ | Gradient and d'Alembertian |
 | $S[\tilde{Ξ}]$ | Central scalar action |
 | $Z[\tilde J_{\Phi}]=\int\mathcal{D}\tilde{Ξ}\,\exp(\,iS+i\int[\mathrm{Sc}(\tilde J_{\Phi}^{*}\tilde{Ξ})+\mathrm{Sc}(\tilde{Ξ}^{*}\tilde J_{\Phi})])$ | Generating functional |
 | $\mathcal{D}\tilde{Ξ}$ | Functional measure on central-valued configurations |
@@ -317,7 +317,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\mathcal{G}_F(\tilde P_{\Phi})=-i/(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon)$ | Propagator in material notation |
 | $\tilde P_{\Phi}=\hbar\,(i\omega/c\,e_t+\vec k_\Phi)$, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $\pi_{\mathrm{fop}}=-\frac{i\,\hbar}{\xi_{\mathrm{scl}}}$ | Momentum representation; yields $[\xi_{\mathrm{fop}},\pi_{\mathrm{fop}}]=i\,\hbar\,\delta^{(3)}$ |
-| $S_E[\tilde{Ξ}]=\int\mathrm{Sc}(\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ})$ | Euclidean action (Wick rotation) |
+| $S_E[\tilde{Ξ}]=\int\mathrm{Sc}(\tilde{Ξ}^{*}(-\Box_\Phi+\mu^2)\tilde{Ξ})$ | Euclidean action (Wick rotation) |
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=\vert Z[\tilde Q_5]\vert^2/\vert Z[0]\vert^2$ | Vacuum persistence amplitude |
 | $2\,\mathrm{Sc}(e_t)=2$, $2\,\mathrm{Sc}[\tilde Q_2,\tilde Q_1]=0$ | Scalar-part identity; no bosonic mode in $\mathbb{B}$ |
 

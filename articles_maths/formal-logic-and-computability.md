@@ -49,7 +49,7 @@ The completeness theorem has a sharp form: if $T$ is recursively axiomatised, a 
 
 ### Compactness
 
-**Theorem (compactness).** Let $T$ be a theory. If every finite subset of $T$ has a model then $T$ has a model. Equivalently, if $T \models \varphi$ then $\Delta \models \varphi$ for some finite $\Delta \subseteq T$.
+**Theorem (compactness).** Let $T$ be a theory. If every finite subset of $T$ has a model then $T$ has a model. Equivalently, if $T \models \varphi$ then $\Delta_\Phi \models \varphi$ for some finite $\Delta_\Phi \subseteq T$.
 
 **Proof.** Assume every finite subset of $T$ has a model. Then every finite subset of $T$ is consistent, by soundness. A derivation is finite and uses only finitely many nonlogical axioms, so $T$ itself is consistent; by completeness $T$ has a model. The second form is the contrapositive of the first applied to $T \cup \{\neg\varphi\}$.
 
@@ -81,16 +81,16 @@ The machine operates on a **tape**, a function $\mathbb{Z} \to \Gamma$ that is b
 
 The input is written on the tape as a block of $1$s with the head at its left end, and the machine is started in $q_0$. A partial function $f : \mathbb{N}^k \dashrightarrow \mathbb{N}$ is **Turing-computable** if there is a machine which, started on the input written in unary with the arguments separated by blanks, halts with the value of $f$ written in unary precisely when $f$ is defined at that input.
 
-**Example (successor).** Let $Q = \{q_0, q_{\mathrm{h}}\}$, $\Gamma = \{\Box, 1\}$, and let $\delta(q_0, 1) = (q_0, 1, R)$, $\delta(q_0, \Box) = (q_{\mathrm{h}}, 1, R)$. Started on $1^n$, the machine moves right across the block of $n$ ones, writes a $1$ in the blank cell to its right, and halts; the tape holds $1^{n+1}$. The machine computes the successor function.
+**Example (successor).** Let $Q = \{q_0, q_{\mathrm{h}}\}$, $\Gamma = \{\Box_\Phi, 1\}$, and let $\delta(q_0, 1) = (q_0, 1, R)$, $\delta(q_0, \Box_\Phi) = (q_{\mathrm{h}}, 1, R)$. Started on $1^n$, the machine moves right across the block of $n$ ones, writes a $1$ in the blank cell to its right, and halts; the tape holds $1^{n+1}$. The machine computes the successor function.
 
-**Example (addition).** Let $Q = \{q_0, q_1, q_2, q_{\mathrm{h}}\}$ and $\Gamma = \{\Box, 1\}$, with
-
-$$
-\delta(q_0,1)=(q_0,1,R), \quad \delta(q_0,\Box)=(q_1,1,R), \quad \delta(q_1,1)=(q_1,1,R),
-$$
+**Example (addition).** Let $Q = \{q_0, q_1, q_2, q_{\mathrm{h}}\}$ and $\Gamma = \{\Box_\Phi, 1\}$, with
 
 $$
-\delta(q_1,\Box)=(q_2,\Box,L), \quad \delta(q_2,1)=(q_{\mathrm{h}},\Box,R).
+\delta(q_0,1)=(q_0,1,R), \quad \delta(q_0,\Box_\Phi)=(q_1,1,R), \quad \delta(q_1,1)=(q_1,1,R),
+$$
+
+$$
+\delta(q_1,\Box_\Phi)=(q_2,\Box_\Phi,L), \quad \delta(q_2,1)=(q_{\mathrm{h}},\Box_\Phi,R).
 $$
 
 Started on $1^n 1^m$ with the head at the left end, the machine scans the first block in $q_0$, replaces the separating blank by a $1$, scans the second block in $q_1$, steps left onto the last $1$, and erases it in $q_2$. The tape then holds $1^n\,1\,1^{m-1} = 1^{n+m}$, and the cases $n = 0$ and $m = 0$ are read from the same instructions, a block of length $0$ being simply absent. Thus the machine computes addition.
@@ -243,7 +243,7 @@ Peano arithmetic is the recursively axiomatised theory of the natural numbers. I
 | $\mathcal{L}$ | A first-order language |
 | $T \vdash \varphi$ | $\varphi$ is derivable from the theory $T$ |
 | $T \models \varphi$ | $\varphi$ is satisfied in every model of $T$ |
-| $T$, $\Delta$ | Theory (set of sentences); finite subtheory |
+| $T$, $\Delta_\Phi$ | Theory (set of sentences); finite subtheory |
 | $\mathrm{Con}_T$ | Arithmetised consistency of $T$: $\neg\mathrm{Prov}_T(\# 0=1)$ |
 | $Q$, $\Gamma$, $\delta$ | States, tape alphabet, transition function of a Turing machine |
 | $q_0$, $q_{\mathrm{h}}$, | Initial state, halting state, blank symbol |

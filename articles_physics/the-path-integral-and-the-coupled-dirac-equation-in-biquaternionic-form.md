@@ -7,11 +7,11 @@
 **The coupled pair, and the covariant derivative.**
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 $$
 
 with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{B}_\Phi$, central per component in the abelian case, and $ϙ$ the charge. The action that produces this pair is *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form*, and the solutions in a constant potential are *The Coupled Dirac Equation in Biquaternionic Form*. Neither is re-derived here. This article takes the action as its input and asks what the exponential does with it.
@@ -52,9 +52,9 @@ and this is the corpus's sign and not the textbook sign. *The Coupled Dirac Equa
 **The two kernels.** The propagator is the pair $\mathcal S_L,\mathcal S_R$ of *The Path Integral and the Dirac Equation in Biquaternionic Form*, now satisfying the two lines with the covariant operators,
 
 $$
-\tilde\nabla_{\mathrm{gco}}\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)},
+\tilde\nabla_{\mathrm{gco},\Phi}\mathcal S_R-k_m\mathcal S_L=i\delta^{(4)},
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)} .
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\mathcal S_L-k_m\mathcal S_R=i\delta^{(4)} .
 $$
 
 Each is an element of $\mathbb{B}$ and not a scalar, and the two are the conjugates of each other in the sense of the free article. The kernel is B-valued in the coupled case for the same reason as in the free case, and nothing about that changes here.
@@ -79,7 +79,7 @@ with $\mathcal{F}$ the spin factor. The odd variables are integrated at fixed $x
 
 **The gauge term is central, and that is the whole of its algebraic behaviour.** $S_{\mathrm{gco}}$ is a real number for every path. Its exponential is therefore a central element of modulus one, and multiplying the weight by a central element cannot reorder the path-ordered spin factor, cannot rescale it, and cannot rotate it. The connection multiplies the weight of a history; it does not enter the history's algebra. That one sentence is the worldline form of the polar companion's type table, and every statement below is a consequence of it.
 
-**The two lines of the pair see conjugate gauge terms.** The $L$ line's operator is $\tilde\nabla_{\mathrm{gco}}^{\natural}$, whose connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$. The two kernels therefore carry
+**The two lines of the pair see conjugate gauge terms.** The $L$ line's operator is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, whose connection entry is $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$. The two kernels therefore carry
 
 $$
 S_{\mathrm{gco}}^{R}[x]=-\!ϙ\!\int\bigl(A_t\,\mathrm{d}r'_t+\textstyle\sum_\eta A_\eta\,\mathrm{d}r_\eta\bigr),
@@ -204,7 +204,7 @@ $$
 **The discrete model takes the coupling without approximation.** In Feynman's checkerboard, described in *The Path Integral and the Dirac Equation in Biquaternionic Form*, a path is a sequence of lightlike steps and corners, with a phase for each step and a factor $i\epsilon k_m$ for each corner. Minimal coupling adds one factor per step,
 
 $$
-\exp\Bigl(-\frac{iϙ}{\hbar}\tilde A_\Phi\cdot\Delta\tilde R_\Phi\Bigr)
+\exp\Bigl(-\frac{iϙ}{\hbar}\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi\Bigr)
 \ \text{per directed step},
 $$
 
@@ -254,8 +254,8 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$, $\mathbb{B}_\Phi$ | Biquaternion algebra; its material (anti-Hermitian) sector, the home of $\tilde R_\Phi$ and $\tilde A_\Phi$ |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, acting from the left, central per component in the abelian case |
-| $\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{iϙ}{\hbar}\tilde A_\Phi^{\natural}$ | Its quaternion conjugate, the $L$ line's operator |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, acting from the left, central per component in the abelian case |
+| $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{iϙ}{\hbar}\tilde A_\Phi^{\natural}$ | Its quaternion conjugate, the $L$ line's operator |
 | $ϙ$ | Charge; the coupling constant of the prescription |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Potential biquaternion, real coefficients in the abelian case |
 | $\tilde A_\Phi^{\natural}=A_te_t-\sum_\eta A_\eta\vec e_\eta$ | Its conjugate; equal for a purely electric potential, opposite for a purely magnetic one |

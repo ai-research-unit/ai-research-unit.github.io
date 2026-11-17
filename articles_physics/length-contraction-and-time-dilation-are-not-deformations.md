@@ -13,7 +13,7 @@ The article assumes *The Lorentz Transformation as a Biquaternionic Rotation* fo
 ### The Definitions
 
 - **Length contraction**: a rod of proper length $L_0$ has length $L_0/\gamma$ in a frame in which it moves with speed $\beta c$ along its axis.
-- **Time dilation**: a clock's proper interval $\Delta\tau$ is observed as $\Delta t=\gamma\Delta\tau$ in a frame in which it moves with speed $\beta c$.
+- **Time dilation**: a clock's proper interval $\Delta_\Phi\tau$ is observed as $\Delta t=\gamma\Delta_\Phi\tau$ in a frame in which it moves with speed $\beta c$.
 
 Both use $\gamma=(1-\beta^{2})^{-1/2}$.
 
@@ -22,7 +22,7 @@ Both use $\gamma=(1-\beta^{2})^{-1/2}$.
 $$
 L=\frac{L_0}{\gamma}=L_0\sqrt{1-\beta^{2}},
 \qquad
-\Delta t=\gamma\,\Delta\tau=\frac{\Delta\tau}{\sqrt{1-\beta^{2}}} .
+\Delta t=\gamma\,\Delta_\Phi\tau=\frac{\Delta_\Phi\tau}{\sqrt{1-\beta^{2}}} .
 $$
 
 The two factors are reciprocal, and that reciprocity is the reason the effects look paradoxical when they are stated without their protocols.
@@ -234,7 +234,7 @@ A moving rod has coordinate length $L_0/\gamma$ and a moving clock has coordinat
 | $\beta$ | speed in units of $c$ |
 | $\gamma=(1-\beta^{2})^{-1/2}$ | the Lorentz factor |
 | $L_0$, $L$ | proper and coordinate length |
-| $\Delta\tau$, $\Delta t$ | proper and coordinate time |
+| $\Delta_\Phi\tau$, $\Delta t$ | proper and coordinate time |
 | $s^{2}=t^{2}-x^{2}$ | the interval |
 | $\mathrm{Cg}_{\tilde U}$ | the congruence, which preserves $N$ |
 

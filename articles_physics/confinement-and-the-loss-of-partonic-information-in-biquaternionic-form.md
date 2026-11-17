@@ -23,7 +23,7 @@ $$
 
 with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. This exponent carries the factor $\frac{ϙ}{\hbar}$ explicitly, the product of the charge and the inverse action, so that it is a pure number with no unit and no charge set to one. The state of the informational sector is the corpus's $\tilde{Ϛ}_{\Psi}$, of trace one and parametrized by the Bloch vector $\vec s_{\Psi}$, and the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
 
-The derivative of this article is the corpus's gradient $\tilde\nabla_\Phi$, with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box$, fixed in *Operator and Calculus Conventions*, where the material-sector reading of the time derivative is stated as well. Every other first-order operator here is written from these, by a shift or by the central imaginary. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.
+The derivative of this article is the corpus's gradient $\tilde\nabla_\Phi$, with its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ and the d'Alembertian $\Box_\Phi$, fixed in *Operator and Calculus Conventions*, where the material-sector reading of the time derivative is stated as well. Every other first-order operator here is written from these, by a shift or by the central imaginary. No other first-order operator is introduced, and no letter stands for a side: an action that is not a multiplication by an element is written out as one, in the form $f\mapsto fb$.
 
 ## Confinement and the Order Parameter
 
@@ -349,7 +349,7 @@ D_\alpha \tilde{p} = 0, \qquad \alpha = -(i\omega \vec e_x + m \vec e_y)\in\math
 \qquad D_\alpha = D + M_\alpha ,
 $$
 
-with $D=iD_3=i\sum_{\eta=1}^{3}\vec e_\eta\,\partial/\partial R_\eta$ ($D^2=\Delta$) and $M_\alpha$ the right action $f\mapsto f\alpha$. A direct reduction of $R$ gives $\alpha'=\omega\vec e_x-im\vec e_y=i\alpha$. The operators $D_{\alpha'}$ and $D_\alpha$ are not the same, but their degeneracy loci are, since $\langle i\alpha\rangle_{\natural}=-\langle\alpha\rangle_{\natural}$, so the mass-shell statement is unchanged. The source writes $\alpha$, and that normalization is kept below. So the massive time-harmonic Dirac field is, after one change of variables, an $\alpha$-hyperholomorphic biquaternionic function, and the whole boundary-value theory of $D_\alpha$ — the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas, the Cauchy integral theorem, the Morera theorem and the boundary-value criterion — becomes available to the bag.
+with $D=iD_3=i\sum_{\eta=1}^{3}\vec e_\eta\,\partial/\partial R_\eta$ ($D^2=\Delta_\Phi$) and $M_\alpha$ the right action $f\mapsto f\alpha$. A direct reduction of $R$ gives $\alpha'=\omega\vec e_x-im\vec e_y=i\alpha$. The operators $D_{\alpha'}$ and $D_\alpha$ are not the same, but their degeneracy loci are, since $\langle i\alpha\rangle_{\natural}=-\langle\alpha\rangle_{\natural}$, so the mass-shell statement is unchanged. The source writes $\alpha$, and that normalization is kept below. So the massive time-harmonic Dirac field is, after one change of variables, an $\alpha$-hyperholomorphic biquaternionic function, and the whole boundary-value theory of $D_\alpha$ — the Borel–Pompeiu formula, the Cauchy integral formula, the Plemelj–Sokhotski formulas, the Cauchy integral theorem, the Morera theorem and the boundary-value criterion — becomes available to the bag.
 
 ### The Mass Shell Is the Zero-Divisor Condition
 
@@ -470,7 +470,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathbb{B}$ | The biquaternion algebra of *Algebra and Element Conventions* |
 | $e_t, \vec e_x, \vec e_y, \vec e_z$ | The coefficient basis; the structure constants are those of *Algebra and Element Conventions* |
 | $i$ | The central scalar imaginary |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The gradient, its quaternion conjugate and the d'Alembertian, *Operator and Calculus Conventions* |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The gradient, its quaternion conjugate and the d'Alembertian, *Operator and Calculus Conventions* |
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Informational and material sectors |
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu\in\mathbb{B}_{\Phi}$ | Gauge connection (material sector) |
 | $T_a = i\vec e_a\in\mathbb{B}_{\Psi}$ | Generators realized in the informational sector |
@@ -492,7 +492,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\mathrm{U}(2)$, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, $\dim_\mathbb{R} = 4$ | Ceiling on the framework's compact gauge algebra |
 | $A$ | Real-linear bijection from the source's four-component functions to biquaternion-valued functions (bag model) |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | One-sided Dirac pair; the subscripts $L$ and $R$ are the two values of the chirality |
-| $D_3=\sum_\eta\vec e_\eta\partial/\partial R_\eta$, $D_3^2=-\Delta$ | Spatial Dirac operator of the dictionary |
+| $D_3=\sum_\eta\vec e_\eta\partial/\partial R_\eta$, $D_3^2=-\Delta_\Phi$ | Spatial Dirac operator of the dictionary |
 | $\mathcal{N}F=(i\partial/\partial r'_t+D_3)F-k_mi\,\overline{F}\,\vec e_z$ | Two-sided Dirac operator; the bar is the conjugation in the mass term |
 | $\overline{\cdot}$ | Componentwise complex conjugation; the mass term's antilinear factor |
 | $R=D_3-\partial M_{\vec e_x}/\partial r'_t-mM_{\vec e_y}$, $\mathcal{N}=u^{+}Ru^{-}$ | Conjugation-free operator, after $i\cdot i=-1$; $u^{\pm}$ are the two halves of the change of variables |

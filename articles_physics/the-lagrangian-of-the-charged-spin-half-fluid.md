@@ -14,7 +14,7 @@
 
 **Position in the block.** This is the variational companion of [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html) and the sixth of the eight articles of this layer. It is the article in which the coupling changes the least: the canonical table of [The Lagrangian of the Spin-Half Fluid](the-lagrangian-of-the-spin-half-fluid.html) is reproduced line for line.
 
-**Conventions.** Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
+**Conventions.** Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
 
 ## The Coupling in the Brackets
 
@@ -24,7 +24,7 @@ $$
 \frac{iϙ}{\hbar}\tilde A_\Phi=\frac{iϙ}{\hbar}a'_t\,e_t+\frac{iϙ}{\hbar}\vec A,
 $$
 
-and the first term is central imaginary while the second is Hermitian with a real vector coefficient. In the bracket decomposition of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$,
+and the first term is central imaginary while the second is Hermitian with a real vector coefficient. In the bracket decomposition of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$,
 
 | bracket | type | what the free bracket reads | what the connection adds |
 | --- | --- | --- | --- |

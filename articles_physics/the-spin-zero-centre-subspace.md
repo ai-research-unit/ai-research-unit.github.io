@@ -259,14 +259,14 @@ so the centre is invariant and the restricted equation is the ordinary complex K
 **The covariant square fails, and the failure is informative.** With a gauged derivative whose coefficients are central, the square of the gradient acting on a central field is
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}(\xi e_t)
-=\Big(\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}\xi\Big)e_t+\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F ,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
+=\Big(\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t+\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F ,
 $$
 
 and the second term is a pure vector, so the centre is not invariant under that operator whenever the field strength does not vanish. The component form
 
 $$
-\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}\tilde\Xi=k_m^{2}\tilde\Xi
+\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi=k_m^{2}\tilde\Xi
 $$
 
 does preserve the centre, because each derivative is central. The two writings, which agree identically when no connection is present, are separated by the coupling, and the carrier keeps the component form.

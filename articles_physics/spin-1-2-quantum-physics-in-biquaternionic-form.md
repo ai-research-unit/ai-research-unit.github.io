@@ -299,13 +299,13 @@ The identification extends from a single spin-1/2 particle to a **spin-1/2 field
 The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair
 
 $$
-\boxed{\;\tilde{\nabla}_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}\;},
+\boxed{\;\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L}, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}\;},
 $$
 
 where $\tilde{Ξ} = \tilde{Ξ}_{L} + \tilde{Ξ}_{R}$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
 
 $$
-\tilde{\nabla}_\Phi\tilde{Ξ} = 0,
+\tilde\nabla_\Phi\tilde{Ξ} = 0,
 $$
 
 which is a first-order equation for the field $\tilde{Ξ}$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -351,7 +351,7 @@ We can now make a precise statement about what the biquaternion framework contai
 
 6. **The Dirac equation.** The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde{\nabla}_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{iqA_{\mu}}{\hbar}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
+7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{iqA_{\mu}}{\hbar}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 
@@ -416,7 +416,7 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*} = 2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Born-rule expectation value; scalar-part image $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
-| $\tilde{\nabla}_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L},\ (\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Biquaternionic Dirac equation (linear chiral pair) |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R}$ | Biquaternionic Dirac equation (linear chiral pair) |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

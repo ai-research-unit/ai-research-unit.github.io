@@ -13,9 +13,9 @@ The scope is the transformation itself: its generator, its free-particle closed 
 **Conventions.** Every derivative in this article is the biquaternionic gradient of *Operator and Calculus Conventions*,
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
 \varepsilon=(1,-1,-1,-1),
 $$
@@ -23,7 +23,7 @@ $$
 with $e_t$ the identity of the algebra and $e_x,e_y,e_z$ the three pure units, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$ and $\vec e_x\vec e_y=-\vec e_y\vec e_x=\vec e_z$ and cyclic, so that $\vec e_j\vec e_\eta=-\delta_{j\eta}e_t+\epsilon_{j\eta l}\vec e_l$. Its norm is the d'Alembertian
 
 $$
-\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
 $$
 
 and on the material sector, where $Q_t=i q'_t$, the two gradients and the norm read
@@ -393,15 +393,15 @@ $$
 H_{\mathrm{Pauli}}
 &=\frac{\vec \pi^{2}}{2\,m}+ϙA_0-\frac{\hbar\,ϙ}{2\,m}\,i\vec B\\[2pt]
 &\quad-\frac{\hbar\,ϙ}{4\,m^{2}\,c^{2}}\,i(\vec E\times\vec\pi)
-+\frac{1}{8\,k_m^{2}}\nabla^2(ϙA_0),
++\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2(ϙA_0),
 \end{aligned}
 \;}
 $$
 
-whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\vec\pi^2-i\,\hbar\,ϙ\,\vec B\bigr)^2/(8m^3c^2)$, which is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The square is taken of $O^2/c^2=\vec\pi^2-i\,\hbar\,ϙ\,\vec B$ rather than of $\vec\pi^2$, because the two differ by the Zeeman term and it is the operator the transformation actually produces. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\nabla A_0$, the Darwin term has the equivalent forms
+whose terms beyond the leading kinetic and electrostatic ones are the spin–Zeeman term, the spin–orbit coupling and the Darwin term — the coefficient $1/(4m^2c^2)$ of the spin–orbit term already contains the Thomas factor of $\frac12$ — together with the relativistic kinetic correction $-\bigl(\vec\pi^2-i\,\hbar\,ϙ\,\vec B\bigr)^2/(8m^3c^2)$, which is the field version of the free term $-\vec p^4/(8m^3c^2)$ displayed above. The square is taken of $O^2/c^2=\vec\pi^2-i\,\hbar\,ϙ\,\vec B$ rather than of $\vec\pi^2$, because the two differ by the Zeeman term and it is the operator the transformation actually produces. The companion exercise *Exercise: The Non-Relativistic Limit and the Pauli Equation* derives each in the biquaternion framework; they are quoted here as the standard content of the transformation. For the electrostatic case $\vec E=-\vec\nabla_\Phi A_0$, the Darwin term has the equivalent forms
 
 $$
-\frac{1}{8\,k_m^{2}}\nabla^2(ϙA_0)=-\frac{ϙ}{8\,k_m^{2}}\nabla\cdot\vec E .
+\frac{1}{8\,k_m^{2}}\vec\nabla_\Phi^2(ϙA_0)=-\frac{ϙ}{8\,k_m^{2}}\vec\nabla_\Phi\cdot\vec E .
 $$
 
 The point to record is structural: every correction is **even** under the frame grading — each is a scalar or a spin–magnetic coupling, and none exchanges the two frequency parts — which is the statement that the transformation has succeeded in removing the odd part to the stated order. The residual odd terms, suppressed by a further factor of $v^2/c^2$ relative to $O$, are removed by $S_2$.
@@ -475,8 +475,8 @@ The biquaternion interpretation turns on two splits that must not be conflated. 
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | Hermitian ($+$) and anti-Hermitian ($-$) sectors; $\mathbb{B}_{\Phi}$ is the material sector |
-| $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
-| $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
+| $\tilde\nabla_\Phi=\sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; every derivative in the article |
+| $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$ | Its conjugate, $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | The d'Alembertian, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector |
 | $D_3=\sum_\eta\vec e_\eta\partial/\partial q_\eta$ | Pure part of the gradient; $D_3^A$ its minimally coupled form |
 | $\beta F=iF\vec e_x$ | Mass grading, the right multiplication by $i\vec e_x$; $\beta^2=e_t$ |

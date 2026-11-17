@@ -180,16 +180,16 @@ $$
 so that
 
 $$
-\Box f(s) = \left[(\partial/\partial R_t\,s)^2 + \sum_{\mu\in\{x,r_y,r_z\}}(\partial/\partial R_\mu s)^2\right] \frac{d^2f}{ds^2}(s)
-+ \bigl(\Box s\bigr) \frac{df}{ds}(s)
+\Box_\Phi f(s) = \left[(\partial/\partial R_t\,s)^2 + \sum_{\mu\in\{x,r_y,r_z\}}(\partial/\partial R_\mu s)^2\right] \frac{d^2f}{ds^2}(s)
++ \bigl(\Box_\Phi s\bigr) \frac{df}{ds}(s)
 = \left[-\frac{\omega^2}{c^2} + \vec k_\Phi^2\right] \frac{d^2f}{ds^2}(s)
 = \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 $$
 
-since $s$ is linear and $\Box s = 0$. Hence
+since $s$ is linear and $\Box_\Phi s = 0$. Hence
 
 $$
-\boxed{\; \Box f(s) = 0 \ \text{ for every smooth } f \;}
+\boxed{\; \Box_\Phi f(s) = 0 \ \text{ for every smooth } f \;}
 \qquad\Longleftrightarrow\qquad
 \langle\tilde P_{\Phi}\rangle_{\natural} = 0 .
 $$
@@ -203,7 +203,7 @@ $$
 \vec k_1 = (1,0,0),\quad \vec k_2 = (0,1,0),\quad \vec k_3 = (0.6,0.8,0),
 $$
 
-with $\omega_i = c|\vec k_i|$, so that each $\langle\tilde P_{\Phi,i}\rangle_{\natural} = 0$. Evaluating $\BoxΞ = \partial^2/\partial R_t^2Ξ + \DeltaΞ$ numerically at a generic event gives $|\BoxΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box$.
+with $\omega_i = c|\vec k_i|$, so that each $\langle\tilde P_{\Phi,i}\rangle_{\natural} = 0$. Evaluating $\Box_\PhiΞ = \partial^2/\partial R_t^2Ξ + \Delta_\PhiΞ$ numerically at a generic event gives $|\Box_\PhiΞ| \sim 10^{-8}$ at the finite-difference resolution used, i.e. zero. The cross terms between different modes, which the single-mode test cannot see, are the content of the check and they cancel because each mode is separately in the kernel of $\Box_\Phi$.
 
 The factorization has a second face. Because $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and the two factors commute, the wave equation is also $\tilde\nabla_\Phi((\tilde\nabla_\Phi)^{\natural}Ξ) = 0$, and the cone is the set of directions in which the first-order operator $(\tilde\nabla_\Phi)^{\natural}$ has a nontrivial kernel of the special form $f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural}))$. The light cone is the characteristic cone of the operator, and it is the same object as the zero set of the biquaternion norm.
 
@@ -296,7 +296,7 @@ $$
 
 so $\mathcal{Z}$ meets the material sector exactly in the light cone $|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z| = c|r'_t|$, and every nonzero real null point is a real multiple of an idempotent $\tilde\Pi(-\vec u_x) = \tfrac12(e_t - i\vec u_x)$. The division subalgebras $\mathbb{B}_{C}$ and $\mathbb{B}_{H}$ contain no zero divisors; the cones in the two Hermitian-type sectors $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the two real faces of $\mathcal{Z}$, of which the material one is the physical light cone.
 
-The cone is also the locus of propagation. Because $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P_{\Phi}$ satisfies $\Box f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, which is $\omega = c|\vec k_\Phi|$ and the zero-divisor condition on $\tilde P_{\Phi}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
+The cone is also the locus of propagation. Because $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the biquaternion norm of the gradient, a four-wavevector $\tilde P_{\Phi}$ satisfies $\Box_\Phi f(\mathrm{Sc}(\tilde P_{\Phi}\tilde{Q}^{\natural})) = \langle\tilde P_{\Phi}\rangle_{\natural}\frac{d^2f}{ds^2}$ for every smooth $f$; the wave equation holds for every such phase precisely when $\langle\tilde P_{\Phi}\rangle_{\natural} = 0$, which is $\omega = c|\vec k_\Phi|$ and the zero-divisor condition on $\tilde P_{\Phi}$. The cone is invariant under rotor conjugation because the biquaternion norm is multiplicative, and its three physical guises — the massless shell in momentum space, the null field in field space, and the dispersionless wavevector in wave space — are one algebraic locus.
 
 The light cone is the set on which elements of the biquaternion algebra cease to be invertible; the algebra's failure of division is the algebraic form of the existence of lightlike propagation.
 

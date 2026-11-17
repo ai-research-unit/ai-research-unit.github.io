@@ -78,7 +78,7 @@ $$
 =\frac{2\pi\hbar\,n}{m},
 $$
 
-where the third equality uses $\nabla S_{\tilde\Xi}=\hbar\nabla\theta_{\mathrm{phs}}$ and the fourth the winding. In the corpus's units the quantum of circulation is
+where the third equality uses $\vec\nabla_\Phi S_{\tilde\Xi}=\hbar\nabla\theta_{\mathrm{phs}}$ and the fourth the winding. In the corpus's units the quantum of circulation is
 
 $$
 \kappa_{1}=\frac{2\pi\hbar}{m}=\frac{2\pi c}{k_m},
@@ -86,11 +86,11 @@ $$
 
 the second form using $k_m=mc/\hbar$. The result is exact, it does not depend on the shape or the radius of the loop, and it does not depend on the amplitude profile: only the map's degree enters.
 
-**The object integrated is the mechanical momentum over the mass, and the three-velocity is a different integral.** $\tilde V_\Phi=\tilde P_\Phi/m$ is the flow variable of the word; the physical three-velocity is $\vec v=\vec p/(m\gamma)$, so $\oint\vec v\cdot\mathrm{d}\vec l=\kappa_1 n/\gamma$ is quantised only where $\gamma$ is constant on the loop, which is [The Spin-Zero Fluid](the-spin-zero-fluid.html)'s qualification. At the first-order rung the two integrals coincide, $\vec v=\nabla S/m$ with no factor, and [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the statement on $\vec v$ directly.
+**The object integrated is the mechanical momentum over the mass, and the three-velocity is a different integral.** $\tilde V_\Phi=\tilde P_\Phi/m$ is the flow variable of the word; the physical three-velocity is $\vec v=\vec p/(m\gamma)$, so $\oint\vec v\cdot\mathrm{d}\vec l=\kappa_1 n/\gamma$ is quantised only where $\gamma$ is constant on the loop, which is [The Spin-Zero Fluid](the-spin-zero-fluid.html)'s qualification. At the first-order rung the two integrals coincide, $\vec v=\vec\nabla_\Phi S/m$ with no factor, and [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the statement on $\vec v$ directly.
 
 ### The loop's independence, checked
 
-**The circulation was checked numerically on a vortex profile at three radii and three windings.** Take the phase angle $\theta_{\mathrm{phs}}=n\arctan(r_y/r_x)$ and an amplitude that vanishes on the axis, $f(r)=Ar\exp(-r^{2}/2\sigma^{2})$ with $A=1.3$ and $\sigma=0.8$. The circulation of $\nabla\theta_{\mathrm{phs}}$ was evaluated by a polygonal quadrature of $4000$ chords on circles of radius $0.3$, $0.8$ and $2.0$:
+**The circulation was checked numerically on a vortex profile at three radii and three windings.** Take the phase angle $\theta_{\mathrm{phs}}=n\arctan(r_y/r_x)$ and an amplitude that vanishes on the axis, $f(r)=Ar\exp(-r^{2}/2\sigma^{2})$ with $A=1.3$ and $\sigma=0.8$. The circulation of $\vec\nabla_\Phi\theta_{\mathrm{phs}}$ was evaluated by a polygonal quadrature of $4000$ chords on circles of radius $0.3$, $0.8$ and $2.0$:
 
 | winding $n$ | $R=0.3$ | $R=0.8$ | $R=2.0$ | $2\pi n$ |
 |---|---|---|---|---|
@@ -98,7 +98,7 @@ the second form using $k_m=mc/\hbar$. The result is exact, it does not depend on
 | $2$ | $12.566\,370\,614$ | $12.566\,370\,614$ | $12.566\,370\,614$ | $12.566\,370\,614$ |
 | $-1$ | $-6.283\,185\,307$ | $-6.283\,185\,307$ | $-6.283\,185\,307$ | $-6.283\,185\,307$ |
 
-The three radii give the same number to every digit printed, and the number agrees with $2\pi n$ to the last bit, the residual being at most $4\times10^{-16}$ and pure roundoff. **The exactness is structural and not a coincidence of the mesh**: the sum of the chords' angle increments is the unwrapped total angle of the polygonal loop, which is $2\pi n$ times the degree of the map and depends on no chord length. A quadrature that evaluated $\nabla\theta_{\mathrm{phs}}$ from a finite difference of $\theta_{\mathrm{phs}}$ instead would carry a truncation error falling as the square of the chord; this one carries none, and the table's last column is the reason it is quoted at three radii. The amplitude profile was not used at all, which is the content of the statement that only the degree enters. The amplitude vanishes at the axis, $f(0)=0$, so the density vanishes there and the nodal line is present in the profile.
+The three radii give the same number to every digit printed, and the number agrees with $2\pi n$ to the last bit, the residual being at most $4\times10^{-16}$ and pure roundoff. **The exactness is structural and not a coincidence of the mesh**: the sum of the chords' angle increments is the unwrapped total angle of the polygonal loop, which is $2\pi n$ times the degree of the map and depends on no chord length. A quadrature that evaluated $\vec\nabla_\Phi\theta_{\mathrm{phs}}$ from a finite difference of $\theta_{\mathrm{phs}}$ instead would carry a truncation error falling as the square of the chord; this one carries none, and the table's last column is the reason it is quoted at three radii. The amplitude profile was not used at all, which is the content of the statement that only the degree enters. The amplitude vanishes at the axis, $f(0)=0$, so the density vanishes there and the nodal line is present in the profile.
 
 ### The sign, and the orientation
 
@@ -108,7 +108,7 @@ The three radii give the same number to every digit printed, and the number agre
 
 ### The current is regular where the velocity is not
 
-**The velocity diverges at the node and the current does not, because the density vanishes faster.** With a phase winding $n$ the gradient of the phase is $\nabla\theta_{\mathrm{phs}}=n\,\hat\varphi/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is
+**The velocity diverges at the node and the current does not, because the density vanishes faster.** With a phase winding $n$ the gradient of the phase is $\vec\nabla_\Phi\theta_{\mathrm{phs}}=n\,\hat\varphi/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is
 
 $$
 \lvert\vec v\rvert=\frac{\hbar\lvert n\rvert}{m\,r},
@@ -130,16 +130,16 @@ The product is regular at the node and vanishes there. This is not a coincidence
 **The quantum potential diverges at the node while the quantum energy stays finite and negative.** The quantum potential is fixed by the corpus's sign convention,
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 $$
 
 and for the linear core, with no dependence on the axial coordinate, the box is the transverse Laplacian,
 
 $$
-\Box\lVert\tilde\Xi\rVert=\frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial f}{\partial r}\right)
+\Box_\Phi\lVert\tilde\Xi\rVert=\frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial f}{\partial r}\right)
 =\frac{A}{r},
 \qquad
-\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\frac{1}{r^{2}},
+\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}=\frac{1}{r^{2}},
 \qquad
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{1}{r^{2}} .
 $$
@@ -164,14 +164,14 @@ $$
 \tilde\Xi=f(r)\,e^{in\varphi}\,e^{-ik_t r'_t}\,e_t
 $$
 
-with $f$ real and positive away from the axis, $r$ the distance from the axis, $\varphi$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\hbar c\,k_t$. The action is $S_{\tilde\Xi}=\hbar(n\varphi-k_t r'_t)$, so $\nabla S_{\tilde\Xi}=\hbar n\,\hat\varphi/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\hbar k_t$.
+with $f$ real and positive away from the axis, $r$ the distance from the axis, $\varphi$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\hbar c\,k_t$. The action is $S_{\tilde\Xi}=\hbar(n\varphi-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\hbar n\,\hat\varphi/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\hbar k_t$.
 
-The transport equation is satisfied identically. It reads $\nabla\cdot(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.
+The transport equation is satisfied identically. It reads $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.
 
 The amplitude equation is one ordinary differential equation in $r$. With $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_t}^{2}$ and the phase above, the polar form's first equation becomes
 
 $$
-k_t^{2}-\frac{n^{2}}{r^{2}}=k_m^{2}-\frac{\Box f}{f},
+k_t^{2}-\frac{n^{2}}{r^{2}}=k_m^{2}-\frac{\Box_\Phi f}{f},
 \qquad\text{that is}\qquad
 \frac{1}{r}\frac{\partial}{\partial r}\!\left(r\frac{\partial f}{\partial r}\right)
 =\left(k_m^{2}-k_t^{2}\right)f+\frac{n^{2}}{r^{2}}f .
@@ -293,9 +293,9 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $A$ | Slope of the linear core, $f=Ar$ |
 | $k_t$ | Temporal wave number of the ansatz, $E=\hbar c k_t$ |
 | $k_m=mc/\hbar$ | Mass wave number |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential |
+| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential |
 | $w_{\mathrm{qnt}}$ | Quantum energy density |
-| $\Box$ | D'Alembertian of the material sector |
+| $\Box_\Phi$ | D'Alembertian of the material sector |
 | $\delta_{\mu\nu}$ | The one metric, all coefficients $+1$; indices stay low |
 | $\varepsilon_\mu$ | Sign weight, $+1$ temporal and $-1$ spatial |
 | $\hbar,\ m,\ c$ | Action quantum, mass, speed of light |

@@ -122,7 +122,7 @@ $$
 the proper-time form, with the ultraviolet divergence residing in the small-$s$ end. For the central scalar the second variation is the operator
 
 $$
-S^{(2)}[\xi_c] = -\,\Box + \mathcal{H}(\rho_c),
+S^{(2)}[\xi_c] = -\,\Box_\Phi + \mathcal{H}(\rho_c),
 \qquad
 \xi = \frac{1}{\sqrt2}\left(\xi_1 + i\xi_2\right),
 \qquad
@@ -170,7 +170,7 @@ $$
 
 the scheme constants $c_i$ entering only the terms without the logarithm. The coefficient is positive for every real $ϙ$ and $\lambda$: the gauge loop contributes $12ϙ^4$ and the two scalar loops $\tfrac94\lambda^2 + \tfrac14\lambda^2 = \tfrac52\lambda^2$, all with the same sign. This is the sign that makes radiative symmetry breaking possible.
 
-**The centrality of the correction.** The fluctuation operator $-\Box + \mathcal{H}(\rho_c)$ has central coefficients, so it commutes with the central phase and its determinant depends on the background only through the invariant $\rho_c$; the correction $\mathcal{V}_1$ is therefore a function of the central invariant $\rho$ alone. The two real components of the fluctuation lie one in each sector and contribute with their own field-dependent masses, $m_1^2(\rho) = \frac{\lambda}{2}(3\rho-v_0^2)$ and $m_2^2(\rho) = \frac{\lambda}{2}(\rho-v_0^2)$, and the multiplicity of the correction is the component count, two. This is the one structural statement the framework contributes to the computation: the radiative correction cannot generate a non-central operator, so the symmetry that the classical potential has is the symmetry the effective potential has. It is the same statement as the sector factorization of the effective action in the companion article, read at one loop.
+**The centrality of the correction.** The fluctuation operator $-\Box_\Phi + \mathcal{H}(\rho_c)$ has central coefficients, so it commutes with the central phase and its determinant depends on the background only through the invariant $\rho_c$; the correction $\mathcal{V}_1$ is therefore a function of the central invariant $\rho$ alone. The two real components of the fluctuation lie one in each sector and contribute with their own field-dependent masses, $m_1^2(\rho) = \frac{\lambda}{2}(3\rho-v_0^2)$ and $m_2^2(\rho) = \frac{\lambda}{2}(\rho-v_0^2)$, and the multiplicity of the correction is the component count, two. This is the one structural statement the framework contributes to the computation: the radiative correction cannot generate a non-central operator, so the symmetry that the classical potential has is the symmetry the effective potential has. It is the same statement as the sector factorization of the effective action in the companion article, read at one loop.
 
 ## The Coleman–Weinberg Mechanism
 
@@ -269,7 +269,7 @@ Four statements summarise what the framework contributes to the effective potent
 
 ## Summary
 
-The scalar sector of the biquaternion framework is the complex central field $\tilde{Ξ} = \xi\,e_t$, whose renormalizable invariant potential $V_0 = \frac{\lambda}{4}(\rho - v_0^2)^2$ is a function of the modulus $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = |\xi|^2$ alone. Its one-loop effective potential inherits that invariance: a central background has a fluctuation operator $-\Box + \mathcal{H}(\rho_c)$ with central coefficients, which commutes with the central phase and depends on the background only through $\rho$, so the effective potential is a function of $\rho$ and nothing else and the radiative correction cannot generate a non-central operator.
+The scalar sector of the biquaternion framework is the complex central field $\tilde{Ξ} = \xi\,e_t$, whose renormalizable invariant potential $V_0 = \frac{\lambda}{4}(\rho - v_0^2)^2$ is a function of the modulus $\rho = \mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ}) = |\xi|^2$ alone. Its one-loop effective potential inherits that invariance: a central background has a fluctuation operator $-\Box_\Phi + \mathcal{H}(\rho_c)$ with central coefficients, which commutes with the central phase and depends on the background only through $\rho$, so the effective potential is a function of $\rho$ and nothing else and the radiative correction cannot generate a non-central operator.
 
 For the classically scale-invariant case $v_0 = 0$ the one-loop potential is
 
@@ -302,7 +302,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; value space of the scalar |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
-| $\tilde{\nabla} = e_t\,\partial/\partial R_t + \sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Biquaternionic gradient; d'Alembertian |
+| $\tilde\nabla_\Phi = e_t\,\partial/\partial R_t + \sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Biquaternionic gradient; d'Alembertian |
 | $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$ | Complex central scalar |
 | $\tilde{Ξ}_{\mathrm{cl}} = \delta W/\delta\tilde J_{\Phi}$ | Classical field; $\tilde{Ξ}_{\mathrm{cl}}=\xi_c\,e_t$ for a constant background |
 | $\delta\tilde{Ξ}$ | Fluctuation about the background, $\tilde{Ξ}_{\mathrm{cl}}+\delta\tilde{Ξ}$ |
@@ -315,7 +315,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle\tilde{J}_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}_{\Phi}]$ | Effective action (Legendre transform) |
 | $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ | One-loop effective action (determinant) |
 | $V_\text{eff} = -\Gamma/\text{vol}$, $\mathcal{V}_\text{eff}(\rho)$ | Effective potential; its restriction to the invariant |
-| $S^{(2)}[\xi_c] = -\Box + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |
+| $S^{(2)}[\xi_c] = -\Box_\Phi + \mathcal{H}(\rho_c)$ | Central fluctuation operator; $\mathcal{H}$ the scalar Hessian |
 | $\mathcal{V}_1(\rho) = \frac{1}{64\pi^2}\sum_i n_i m_i^4[\ln(m_i^2/\mu^2) - c_i]$ | One-loop effective potential (Coleman–Weinberg form) |
 | $m_1^2(\rho) = \frac{\lambda}{2}(3\rho - v_0^2)$, $m_2^2(\rho) = \frac{\lambda}{2}(\rho - v_0^2)$ | Field-dependent masses of the two real scalar modes |
 | $m_1^2 = \frac32\lambda \rho$, $m_2^2 = \frac{\lambda}{2}\rho$ ($v_0 = 0$); $m_A^2(\rho) = 2ϙ^2\rho$ | Scale-invariant scalar masses; gauge mass; $n_A = 3$ |

@@ -87,9 +87,9 @@ The magnetisation current of a mode is the divergence of a constant bilinear, so
 
 **The fluid article's vorticity 2-form is the antisymmetrised gradient of the frame element, and a constant frame has none.** So a mode is irrotational and the question is what a superposition does.
 
-**The measurement.** On a grid of sixty-four events with $m=c=\hbar=1$, one mode at $\vec k_\Phi=(0.6,0)$ gave $\max\lvert\nabla\times\vec v\rvert=3.8\times10^{-17}$ — machine zero. Two modes at $\vec k_\Phi=(0.6,0)$ and $(0.6,\Delta)$, amplitudes $1.0$ and $0.8$, same spin, gave
+**The measurement.** On a grid of sixty-four events with $m=c=\hbar=1$, one mode at $\vec k_\Phi=(0.6,0)$ gave $\max\lvert\nabla\times\vec v\rvert=3.8\times10^{-17}$ — machine zero. Two modes at $\vec k_\Phi=(0.6,0)$ and $(0.6,\Delta_\Phi)$, amplitudes $1.0$ and $0.8$, same spin, gave
 
-| $\Delta$ | $\max\lvert\nabla\times\vec v\rvert$ | the density's range |
+| $\Delta_\Phi$ | $\max\lvert\nabla\times\vec v\rvert$ | the density's range |
 | --- | --- | --- |
 | $0.2$ | $1.03\times10^{-2}$ | $5.131$ to $7.560$ |
 | $0.4$ | $1.14\times10^{-1}$ | $1.013$ to $7.563$ |
@@ -135,7 +135,7 @@ The magnetisation current of a mode is the divergence of a constant bilinear, so
 
 ## Open Questions
 
-1. **A law for the off-diagonal vorticity.** Whether $\max\lvert\nabla\times\vec v\rvert$ for a pair is a function of the momentum transfer alone, at fixed amplitudes, is not settled by three rows. The Gordon form's linear factor in $k_\nu$ suggests it is, and the saturation between $\Delta=0.6$ and a larger separation suggests a bound.
+1. **A law for the off-diagonal vorticity.** Whether $\max\lvert\nabla\times\vec v\rvert$ for a pair is a function of the momentum transfer alone, at fixed amplitudes, is not settled by three rows. The Gordon form's linear factor in $k_\nu$ suggests it is, and the saturation between $\Delta_\Phi=0.6$ and a larger separation suggests a bound.
 
 2. **The frame's velocity against the current's.** §*The Vorticity Is Inter-Mode* was measured on $\tilde J_\Phi/\rho_{\mathrm{num}}$. Whether the frame's own velocity has the same vanishing on the diagonal and the same growth off it, and whether the two differ only by a curl-free term, is not settled here.
 
@@ -167,7 +167,7 @@ A mode's loop invariant is the identity. The transport's Lorentz element is ther
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin direction |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | The rapidity and the rotor's angle |
 | $\omega_{\mu\nu}$ | The vorticity 2-form |
-| $\Delta$ | The separation of two wave numbers |
+| $\Delta_\Phi$ | The separation of two wave numbers |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 
 ## Further Reading

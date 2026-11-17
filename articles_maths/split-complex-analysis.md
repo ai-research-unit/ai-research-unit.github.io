@@ -406,7 +406,7 @@ The differences between split complex analysis and complex analysis are conseque
 | Multiplication | $i^2 = -1$ | $j^2 = +1$ |
 | Zero divisors | none | $1 \pm j$ |
 | Cauchy–Riemann | $\partial u/\partial q = \partial v/\partial q'$, $\partial u/\partial q' = -\partial v/\partial q$ | $\partial u/\partial q = \partial v/\partial q'$, $\partial u/\partial q' = \partial v/\partial q$ |
-| Harmonic equation | $\Delta u = 0$ | $\Box u = 0$ |
+| Harmonic equation | $\Delta_\Phi u = 0$ | $\Box_\Phi u = 0$ |
 | Cauchy integral | yes | no |
 | Residue theory | yes | no |
 | Liouville | yes | no |
@@ -441,7 +441,7 @@ The article develops the subject in that basis: contour integrals along paths, p
 | $\Pi_- = (1 - j)/2$ | Negative idempotent |
 | $Q = Q_+ \Pi_+ + Q_- \Pi_-$ | Idempotent decomposition |
 | $\int_\gamma f(Q) \, dQ$ | Contour integral |
-| $\Box = \partial^2/\partial q^2 - \partial^2/\partial q'^2$ | d'Alembertian |
+| $\Box_\Phi = \partial^2/\partial q^2 - \partial^2/\partial q'^2$ | d'Alembertian |
 
 ## Further Reading
 

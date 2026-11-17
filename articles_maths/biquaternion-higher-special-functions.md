@@ -321,10 +321,10 @@ These questions are entirely open. The biquaternion zeta function is a research 
 
 ### The Setting
 
-The analysis article defined the biquaternion gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}$. For a biquaternion-valued function $F$ on $V$, the solutions of the equations
+The analysis article defined the biquaternion gradient $\tilde\nabla_\Phi$, the d'Alembertian $\Box_\Phi$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}$. For a biquaternion-valued function $F$ on $V$, the solutions of the equations
 
 $$
-\tilde{\nabla}F = 0, \qquad \Box F = 0
+\tilde\nabla_\Phi F = 0, \qquad \Box_\Phi F = 0
 $$
 
 are the biquaternion analogues of holomorphic functions and harmonic functions. The special functions of the analysis are the kernels and fundamental solutions associated with these equations.
@@ -337,7 +337,7 @@ $$
 G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4}, \qquad \tilde{Q} \neq 0.
 $$
 
-It satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
+It satisfies $\tilde\nabla_\Phi G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions, where $\delta_0$ is the delta distribution at the origin.
 
 In the oscillatory regime, with $\lVert\vec Q\rVert$ real and $\vec u$ a root of $-1$, $G_{\mathrm{fn}}(\lVert\vec Q\rVert \vec u) = -\lVert\vec Q\rVert \vec u / (\lVert\vec Q\rVert^4 \|\vec u\|^4) = -\vec u/(\lVert\vec Q\rVert^3 \|\vec u\|^4)$, which is the quaternion analogue of the Cauchy kernel $1/A$ in complex analysis. The Euclidean norm $\|\vec u\|$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
 
@@ -371,7 +371,7 @@ Its construction is standard from the fundamental solution of the d'Alembertian,
 
 3. **The Hardy spaces.** What are the biquaternion analogues of the Hardy spaces $H^p$ and the Bergman spaces?
 
-4. **The reproducing kernel.** Is there a reproducing kernel for the space of functions satisfying $\tilde{\nabla}F = 0$ on a domain?
+4. **The reproducing kernel.** Is there a reproducing kernel for the space of functions satisfying $\tilde\nabla_\Phi F = 0$ on a domain?
 
 These questions are open.
 
@@ -395,7 +395,7 @@ The common thread is the **complex norm** $\lVert\vec Q\rVert$: the two regimes 
 
 3. **The zeta function.** Can the biquaternion zeta function be defined, and what are its properties? Is there an analogue of the Riemann hypothesis?
 
-4. **The special functions from the analysis.** What are the explicit forms of the Poisson kernel, the Green's function, and the reproducing kernel for the spaces of functions satisfying $\tilde{\nabla}F = 0$ or $\Box F = 0$?
+4. **The special functions from the analysis.** What are the explicit forms of the Poisson kernel, the Green's function, and the reproducing kernel for the spaces of functions satisfying $\tilde\nabla_\Phi F = 0$ or $\Box_\Phi F = 0$?
 
 5. **The relation to Clifford analysis.** How do the biquaternion special functions relate to the corresponding functions in Clifford analysis?
 
@@ -430,7 +430,7 @@ The biquaternion special functions are therefore a partially developed subject: 
 | ${}_2F_1$ | Hypergeometric function |
 | $\Gamma, \varkappa_{\mathrm{crd}}$ | Gamma and zeta functions |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
-| $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
+| $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla_\Phi$ |
 
 ## Further Reading
 
@@ -439,7 +439,7 @@ The biquaternion special functions are therefore a partially developed subject: 
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the polar forms.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the roots of $-1$.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the zero divisors and nilpotents.
-- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
+- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta_\Phi u = 0$ und $\Delta_\Phi\Delta_\Phi u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 

@@ -58,13 +58,13 @@ $$
 is the gauge degree of freedom of the companion article: it transforms as
 
 $$
-S_2=S-\Box\Gamma,
+S_2=S-\Box_\Phi\Gamma,
 $$
 
 and the field strength is invariant, $\tilde{F}_2=\tilde{F}$. The companion article states plainly that $S$ "is a gauge artifact" and that the **Lorenz gauge** $S=0$ is "a choice of gauge, not a physical condition". In that gauge the potential obeys the second-order equation
 
 $$
-\Box\tilde{A}_{\Phi}=-\mu\tilde J_{\Phi},\qquad \tilde J_{\Phi}=ic\rho\,e_t+\vec J.
+\Box_\Phi\tilde{A}_{\Phi}=-\mu\tilde J_{\Phi},\qquad \tilde J_{\Phi}=ic\rho\,e_t+\vec J.
 $$
 
 Two equivalent formulations of the classical theory are therefore available, and the choice matters for quantization.
@@ -244,7 +244,7 @@ The verdict is therefore not a ranking. **Maxwell is a transcription of standard
 
 ## Summary
 
-The biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ is first order, and its natural variable $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is gauge invariant; its real and imaginary parts separate the homogeneous and the inhomogeneous Maxwell equations. But $\tilde{F}$ has no canonical partner, and no local Lagrangian in four dimensions produces the field equation by varying $\tilde{F}$ alone. Canonical quantization must therefore return to the potential $\tilde{A}_{\Phi}$, and with it the gauge freedom $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, whose field is $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ with $S_2=S-\Box\Gamma$.
+The biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ is first order, and its natural variable $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is gauge invariant; its real and imaginary parts separate the homogeneous and the inhomogeneous Maxwell equations. But $\tilde{F}$ has no canonical partner, and no local Lagrangian in four dimensions produces the field equation by varying $\tilde{F}$ alone. Canonical quantization must therefore return to the potential $\tilde{A}_{\Phi}$, and with it the gauge freedom $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$, whose field is $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ with $S_2=S-\Box_\Phi\Gamma$.
 
 The Legendre transform is singular. The conjugate momenta are $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary and Gauss's law $\mathrm{div}\,\vec\pi\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi})=0$.
 
@@ -261,7 +261,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec e_x\partial/\partial R_x+\vec e_y\partial/\partial R_y+\vec e_z\partial/\partial R_z$ | Biquaternionic gradient |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Quaternion-conjugate gradient |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $\tilde{A}_{\Phi}=i\,a'_t\,e_t+\vec A$ | Potential biquaternion (in $\mathbb{B}_{\Phi}$) |
@@ -269,7 +269,7 @@ The extension is a transcription of standard canonical quantization into the fra
 | $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$ | Four-current; the source enters as $\sqrt{\mu}\,\tilde J_{\Phi}$ |
 | $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell equation |
 | $\Gamma$ | Gauge function, $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ |
-| $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2=S-\Box\Gamma$ | Gauge degree of freedom; Lorenz gauge $S=0$ |
+| $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$, $S_2=S-\Box_\Phi\Gamma$ | Gauge degree of freedom; Lorenz gauge $S=0$ |
 | $\delta_{\mu\nu}$ | Unit metric, all four coefficients $+1$; $\sum_{\mu,\nu}\delta_{\mu\nu}Q_\mu Q_\nu$ is the biquaternion norm on $\mathbb{B}_{\Phi}$, with $Q_t=i q'_t$ |
 | $\mathcal{L}=-\tfrac14 \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}$ | Maxwell Lagrangian density (potential formulation) |
 | $\pi_\mu=\partial\mathcal{L}/\partial(\partial/\partial R_t A_\mu)=-F_{t\mu}$ | Conjugate momenta: $\pi_0\approx0$, $\vec\pi=-i\vec E$ |

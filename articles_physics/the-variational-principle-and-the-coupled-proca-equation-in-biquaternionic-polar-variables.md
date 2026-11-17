@@ -104,7 +104,7 @@ exactly, with the other seven parameters fixed: the gauge transformation is the 
 
 $$
 \rho_{\mathrm{chg}}=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}\theta_{\mathrm{pha}})}
-=\mathrm{Sc}\bigl(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},t}\tilde A\bigr),
+=\mathrm{Sc}\bigl(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,t}\tilde A\bigr),
 $$
 
 the temporal slot of the element form's current, by the chain rule and because the phase's generator on the field is multiplication by $i$. The identity is exact and it is the chart's cleanest statement about the current: the charge density is the momentum of the one coordinate that the gauge group translates, and no other coordinate's momentum contributes to it.
@@ -165,7 +165,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=R\,\varrho^{2}$, $R(0)=1$ | The mass term in the chart; $R$ the frame's scalar |
 | $G^{ab}(q)$ | The chart's metric; the coefficient of the kinetic form |
 | $\tilde A_\Phi$, $A_\mu$ | The connection and its central components |
-| $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative in the chart |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative in the chart |
 | $\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$ | The one gradient the connection shifts |
 | $\lambda=\exp(i\vartheta_{\mathrm{gau}})$ | Central gauge unit; translates $\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\partial\mathcal{L}/\partial(\partial_{r'_t}\theta_{\mathrm{pha}})$ | Charge density as the phase's conjugate momentum |

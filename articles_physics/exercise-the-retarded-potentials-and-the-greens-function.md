@@ -2,17 +2,17 @@
 
 ## Introduction
 
-This is an exercise in the electromagnetism series. It takes the wave equation for the potential biquaternion that *Maxwell's Equations in the Biquaternionic Formulation* states in the Lorenz gauge, and it constructs, verifies, and uses the Green's function that solves that equation. The parent states the potential equation and refers the reader to the standard references for the kernel's precise form; the retarded kernel $G_\Box = \frac{1}{4\pi R}\,\delta(r'_t - R)$ and the retarded convolution are stated, but not derived, in the companion article *Radiation from Accelerated Charges in Biquaternionic Form*, which uses the same kernel and says so explicitly — "We do not re-derive this structure; we only specialize it." This exercise supplies the missing derivation, checks the kernel on cases that did not suggest it, and states the boundary condition that selects the retarded kernel over the advanced one. It is the first step of the series that is purely about the *inverse* of the wave operator: the object that turns a source into a field.
+This is an exercise in the electromagnetism series. It takes the wave equation for the potential biquaternion that *Maxwell's Equations in the Biquaternionic Formulation* states in the Lorenz gauge, and it constructs, verifies, and uses the Green's function that solves that equation. The parent states the potential equation and refers the reader to the standard references for the kernel's precise form; the retarded kernel $G_\Box_\Phi = \frac{1}{4\pi R}\,\delta(r'_t - R)$ and the retarded convolution are stated, but not derived, in the companion article *Radiation from Accelerated Charges in Biquaternionic Form*, which uses the same kernel and says so explicitly — "We do not re-derive this structure; we only specialize it." This exercise supplies the missing derivation, checks the kernel on cases that did not suggest it, and states the boundary condition that selects the retarded kernel over the advanced one. It is the first step of the series that is purely about the *inverse* of the wave operator: the object that turns a source into a field.
 
-**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The potential biquaternion $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$; the four-current $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, whose normalised form is $\sqrt{\mu}\,\tilde J_{\Phi} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$; the Lorenz-gauge potential wave equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the medium speed $c = 1/\sqrt{\epsilon\mu}$ and its vacuum value $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. Throughout, $c$ is the speed of light in the medium and $\vec v$ is reserved for particle and frame velocities.
+**What is assumed.** The algebra, the sectors, the conjugations, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Operator and Calculus Conventions* and *Frame and Metric Conventions*, and none is restated here. The potential biquaternion $\tilde{A}_{\Phi} = i\,a'_te_t + \vec A$; the four-current $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, whose normalised form is $\sqrt{\mu}\,\tilde J_{\Phi} = \frac{i\rho}{\sqrt{\epsilon}}e_t + \sqrt{\mu}\,\vec J$; the Lorenz-gauge potential wave equation $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$; the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$; the medium speed $c = 1/\sqrt{\epsilon\mu}$ and its vacuum value $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. Throughout, $c$ is the speed of light in the medium and $\vec v$ is reserved for particle and frame velocities.
 
-**What is to be shown.** Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a *boundary condition*, not an algebraic consequence. (4) The retarded potentials $\xi_{\mathrm{scp}}$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz gauge. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
+**What is to be shown.** Five things. (1) The wave operator, its defining equation for the Green's function, and the convolution that solves the potential equation. (2) The retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$, derived from the light-cone delta with its Jacobian, and verified by applying $\Box_\Phi$ to it. (3) That the advanced kernel solves the same equation, so the retarded choice is a *boundary condition*, not an algebraic consequence. (4) The retarded potentials $\xi_{\mathrm{scp}}$ and $\vec A$ obtained by convolving the kernel with the source, together with the automatic Lorenz gauge. (5) The static limit, which reproduces the Coulomb and Biot–Savart solutions and matches the parent's static result. Each problem is stated and solved in full, and the exercise closes by naming what the parent does not establish.
 
-**The result.** With $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box = \Delta_Q + \partial^2/\partial R_t^2$ is
+**The result.** With $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, the retarded Green's function of the wave operator $\Box_\Phi = \Delta_\Phi + \partial^2/\partial R_t^2$ is
 $$
 \boxed{\;G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t - R\right), \qquad \Box_\Phi\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\;}
 $$
-and the retarded solution of the potential equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ is
+and the retarded solution of the potential equation $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ is
 $$
 \boxed{\;\tilde{A}_{\Phi}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\mu}{4\pi}\int \frac{\tilde J_{\Phi}(\vec y,\,r'_t - R)}{R}\,d^3y,
 \qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z - \vec y|\;},
@@ -28,21 +28,21 @@ $$
 
 The parent fixes the potential wave equation in the Lorenz gauge,
 $$
-\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}, \qquad \tilde J_{\Phi} = ic\rho\,e_t + \vec J,
+\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}, \qquad \tilde J_{\Phi} = ic\rho\,e_t + \vec J,
 $$
 and the companion article observes that "the physically correct solution is the retarded one, built by convolution over the past light cone," displaying the kernel and the convolution but leaving the derivation to the standard references. An exercise built on a parent tests it: the task here is to *construct* the kernel from the operator, to *verify* it by applying the operator, and to *use* it to obtain the retarded potentials.
 
-The problem is an inverse problem. The operator $\Box$ is a linear differential operator with constant coefficients, and a Green's function is a distributional inverse: a kernel $G$ such that $\Box_{\tilde{Q}} G(\tilde{Q}) = -\delta^{(4)}(\tilde{Q})$, so that convolution with a source produces a solution. Two features make this more than bookkeeping, and both are traps.
+The problem is an inverse problem. The operator $\Box_\Phi$ is a linear differential operator with constant coefficients, and a Green's function is a distributional inverse: a kernel $G$ such that $\Box_\Phi G(\tilde{Q}) = -\delta^{(4)}(\tilde{Q})$, so that convolution with a source produces a solution. Two features make this more than bookkeeping, and both are traps.
 
 First, the kernel is concentrated on the light cone, and the delta function that concentrates it is a delta function of an *argument that vanishes on the cone*. When that argument is $r'_t - R$ the coefficient is $1/(4\pi R)$; when it is written as the invariant ${r'_{t}}^2 - R^2$ the coefficient is $1/(2\pi)$, and the two are related by the Jacobian $\left|d({r'_{t}}^2 - R^2)/dr'_t\right| = 2R$ evaluated at the future root. A derivation that drops the Jacobian gets the wrong power of $R$ and the wrong constant. The exercise makes this step explicit and checks it numerically.
 
-Second, the defining equation does not determine the kernel. Both the retarded kernel (supported on the future cone) and the advanced kernel (supported on the past cone) satisfy $\Box G = -\delta^{(4)}$, and they differ by a solution of the homogeneous wave equation. What selects the retarded one is a *boundary condition* — no incoming radiation from the past — not an algebraic property of $\Box$. The exercise states the condition, exhibits the advanced kernel that the equation alone admits, and shows which contour prescription implements which choice.
+Second, the defining equation does not determine the kernel. Both the retarded kernel (supported on the future cone) and the advanced kernel (supported on the past cone) satisfy $\Box_\Phi G = -\delta^{(4)}$, and they differ by a solution of the homogeneous wave equation. What selects the retarded one is a *boundary condition* — no incoming radiation from the past — not an algebraic property of $\Box_\Phi$. The exercise states the condition, exhibits the advanced kernel that the equation alone admits, and shows which contour prescription implements which choice.
 
 Two points of discipline are kept in view. Every displayed formula is applied to a case other than the one that suggested it: the kernel is applied to a generic smooth function of the retarded time and to an off-centre and a static source, not only to the on-origin case from which it is guessed; and the retarded potentials are checked against the Coulomb and Biot–Savart solutions, which are independent of the construction. The parent is treated as a source of assertions until the computation has been done.
 
 ## Problem 1: The Wave Operator and the Defining Equation
 
-**Statement.** (a) Show that with $\partial/\partial R_t = -i\partial/\partial r'_t$ the d'Alembertian $\Box = \partial^2/\partial R_t^2 + \Delta_Q$ is the wave operator $\Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}_{\Phi}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\Phi,2})\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}$ solves the potential equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$.
+**Statement.** (a) Show that with $\partial/\partial R_t = -i\partial/\partial r'_t$ the d'Alembertian $\Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$ is the wave operator $\Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and identify its symbol. (b) State the defining equation for the Green's function $G(\tilde{Q})$ and explain the sign. (c) Show that if $G$ satisfies it, then the convolution $\tilde{A}_{\Phi}(\tilde{Q}) = \mu\int G(\tilde{Q} - \tilde{R}_{\Phi,2})\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}$ solves the potential equation $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$.
 
 **Solution.** (a) Since $\partial/\partial R_t = -i\partial/\partial r'_t = -i\partial/\partial r'_t$,
 $$
@@ -50,31 +50,31 @@ $$
 \qquad\text{so}\qquad
 \Box_\Phi = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2} .
 $$
-The temporal term is negative and the spatial terms positive: $\Box$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(-i\theta_{\mathrm{pwp}})$, the operator has symbol
+The temporal term is negative and the spatial terms positive: $\Box_\Phi$ is *hyperbolic*, the wave operator, not the elliptic operator obtained from it by the Wick rotation, in which all four directions enter with the same sign. The distinction matters here: the retarded kernel below is the fundamental solution of the hyperbolic operator, whereas the elliptic Cauchy kernel treated in the companion articles on biquaternion integration and analysis on subspaces is the fundamental solution of the Wick-rotated one. Acting on a plane wave $\exp(-i\theta_{\mathrm{pwp}})$, the operator has symbol
 $$
-\Box \;\longmapsto\; -\lvert\vec k_\Phi\rvert^{2} + \frac{\omega^2}{c^2} = \frac{\omega^2}{c^2} - \lvert\vec k_\Phi\rvert^{2} .
+\Box_\Phi \;\longmapsto\; -\lvert\vec k_\Phi\rvert^{2} + \frac{\omega^2}{c^2} = \frac{\omega^2}{c^2} - \lvert\vec k_\Phi\rvert^{2} .
 $$
 
-(b) The Green's function is the distributional inverse of $\Box$. We define it by
+(b) The Green's function is the distributional inverse of $\Box_\Phi$. We define it by
 $$
-\Box_{\tilde{Q}}\,G(\tilde{Q}) = -\delta^{(4)}(\tilde{Q}),
+\Box_\Phi\,G(\tilde{Q}) = -\delta^{(4)}(\tilde{Q}),
 \qquad
 \delta^{(4)}(\tilde{Q}) = \delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 $$
-with the physical measure $d^3y\,dr'_{t,2}$ for the convolution (the parent writes $d^4R_2$ for the four-dimensional volume element; the constant conventions relating the four-dimensional delta, the volume element, and the kernel are fixed here once and for all by using $d^3y\,dr'_{t,2}$). The minus sign is not free: the potential equation carries $-\mu\tilde J_{\Phi}$ on the right, so a kernel with $\Box G = -\delta^{(4)}$ gives that sign directly. With $\Box G = +\delta^{(4)}$ one would have to insert a compensating minus in the convolution; we fix both once by the convention above.
+with the physical measure $d^3y\,dr'_{t,2}$ for the convolution (the parent writes $d^4R_2$ for the four-dimensional volume element; the constant conventions relating the four-dimensional delta, the volume element, and the kernel are fixed here once and for all by using $d^3y\,dr'_{t,2}$). The minus sign is not free: the potential equation carries $-\mu\tilde J_{\Phi}$ on the right, so a kernel with $\Box_\Phi G = -\delta^{(4)}$ gives that sign directly. With $\Box_\Phi G = +\delta^{(4)}$ one would have to insert a compensating minus in the convolution; we fix both once by the convention above.
 
 (c) Differentiation under the convolution integral gives
 $$
-\Box_{\tilde{Q}}\tilde{A}_{\Phi}(\tilde{Q})
-= \mu\int \Box_{\tilde{Q}}G(\tilde{Q} - \tilde{R}_{\Phi,2})\,\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}
+\Box_\Phi\tilde{A}_{\Phi}(\tilde{Q})
+= \mu\int \Box_\PhiG(\tilde{Q} - \tilde{R}_{\Phi,2})\,\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}
 = \mu\int \bigl(-\delta^{(4)}(\tilde{Q} - \tilde{R}_{\Phi,2})\bigr)\tilde J_{\Phi}(\tilde{R}_{\Phi,2})\,d^3y\,dr'_{t,2}
 = -\mu\,\tilde J_{\Phi}(\tilde{Q}),
 $$
-where in the last step the delta picks out $\tilde{R}_{\Phi,2} = \tilde{Q}$. The derivative acts only on $G$, because $\tilde J_{\Phi}$ does not depend on $\tilde{Q}$; equivalently $\Box_{\tilde{Q}}G(\tilde{Q}-\tilde{R}_{\Phi,2}) = \Box_{\tilde{R}_{\Phi,2}}G(\tilde{Q}-\tilde{R}_{\Phi,2})$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
+where in the last step the delta picks out $\tilde{R}_{\Phi,2} = \tilde{Q}$. The derivative acts only on $G$, because $\tilde J_{\Phi}$ does not depend on $\tilde{Q}$; equivalently $\Box_\PhiG(\tilde{Q}-\tilde{R}_{\Phi,2}) = \Box_\PhiG(\tilde{Q}-\tilde{R}_{\Phi,2})$, which is the statement that the operator has constant coefficients and is translation invariant. This is the convolution property that makes a Green's function useful: once $G$ is known, every source is solved by one integral.
 
 ## Problem 2: The Retarded Green's Function and the Light-Cone Jacobian
 
-**Statement.** (a) Show that $G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\delta(r'_t - R)$, with $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, satisfies the defining equation, by applying $\Box$ to it directly and identifying the two cancellations that make it work. (b) Derive the same kernel from the invariant delta on the light cone, exhibiting the Jacobian factor that converts the invariant argument into $r'_t - R$. (c) Confirm the coefficient by the Fourier representation with the retarded contour. Check the result on a case other than the one that suggested it.
+**Statement.** (a) Show that $G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\delta(r'_t - R)$, with $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$, satisfies the defining equation, by applying $\Box_\Phi$ to it directly and identifying the two cancellations that make it work. (b) Derive the same kernel from the invariant delta on the light cone, exhibiting the Jacobian factor that converts the invariant argument into $r'_t - R$. (c) Confirm the coefficient by the Fourier representation with the retarded contour. Check the result on a case other than the one that suggested it.
 
 **Solution. (a) Applying the operator to the kernel.** Let $g = r'_t - R$ and, for a smooth function $u$, consider
 $$
@@ -82,22 +82,22 @@ G_u(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{u(g)}{4\pi R}.
 $$
 Write $\xi_{\mathrm{scp}} = 1/(4\pi R)$, so that $G_u = \xi_{\mathrm{scp}}\, u(g)$. The chain rule gives
 $$
-\Delta_\Phi G_u = u\,\Delta_\Phi\xi_{\mathrm{scp}} + 2\frac{du}{dg}\,\nabla\xi_{\mathrm{scp}}\cdot\nabla g + \frac{du}{dg}\,\xi_{\mathrm{scp}}\,\Delta_\Phi g + \frac{d^2u}{dg^2}\,\xi_{\mathrm{scp}}\,(\nabla g)^2,
+\Delta_\Phi G_u = u\,\Delta_\Phi\xi_{\mathrm{scp}} + 2\frac{du}{dg}\,\vec\nabla_\Phi\xi_{\mathrm{scp}}\cdot\nabla g + \frac{du}{dg}\,\xi_{\mathrm{scp}}\,\Delta_\Phi g + \frac{d^2u}{dg^2}\,\xi_{\mathrm{scp}}\,(\vec\nabla_\Phi g)^2,
 \qquad
 \partial^2/\partial {r'_{t}}^2 G_u = \frac{d^2u}{dg^2}\,\xi_{\mathrm{scp}},
 $$
-and therefore, with $\Box = \Delta_Q + \partial^2/\partial R_t^2$,
+and therefore, with $\Box_\Phi = \Delta_\Phi + \partial^2/\partial R_t^2$,
 $$
 \Box_\Phi G_u
 = \frac{u(g)}{4\pi}\,\Delta_\Phi\frac{1}{R}
-+ \frac{\frac{du}{dg}(g)}{4\pi}\left[2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta_\Phi g\right]
-+ \frac{\frac{d^2u}{dg^2}(g)}{4\pi R}\left[(\nabla g)^2 - 1\right].
++ \frac{\frac{du}{dg}(g)}{4\pi}\left[2\,\vec\nabla_\Phi\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta_\Phi g\right]
++ \frac{\frac{d^2u}{dg^2}(g)}{4\pi R}\left[(\vec\nabla_\Phi g)^2 - 1\right].
 $$
 Three elementary radial identities now decide the outcome:
 $$
-(\nabla g)^2 = 1,
+(\vec\nabla_\Phi g)^2 = 1,
 \qquad
-2\,\nabla\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta_\Phi g = 0,
+2\,\vec\nabla_\Phi\frac{1}{R}\cdot\nabla g + \frac{1}{R}\Delta_\Phi g = 0,
 \qquad
 \Delta_\Phi\frac{1}{R} = -4\pi\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z).
 $$
@@ -112,7 +112,7 @@ G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{\delta(
 \Box_\Phi\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = -\delta^{(4)}(\tilde{Q}) .
 $$
 
-Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $\frac{du}{dg}$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $\frac{du}{dg}$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the *argument* $g$: because $(\nabla g)^2 = 1$ exactly, the two second-derivative terms combine, and because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.
+Two remarks are worth making, because both are places where a plausible-looking derivation goes wrong. First, the vanishing of the $\frac{du}{dg}$ coefficient is not automatic; it is the precise statement that the single-layer shell on the cone cancels. A kernel of the form $\frac{f(R)}{R}$ with the wrong radial power, or with an extra angular factor, leaves a nonvanishing $\frac{du}{dg}$ term and does not reproduce a point source at the origin. Second, the vanishing is a statement about the *argument* $g$: because $(\vec\nabla_\Phi g)^2 = 1$ exactly, the two second-derivative terms combine, and because $2\vec\nabla_\Phi(1/R)\cdot\nabla g + (1/R)\Delta_\Phi g = 0$ exactly, the first-derivative terms combine. Both identities were recomputed symbolically in $x,y,z$ and hold identically.
 
 **(b) The light-cone delta and its Jacobian.** The same kernel is a distribution concentrated on the light cone. The cone is the zero set of the invariant
 $$
@@ -168,9 +168,9 @@ Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ 
 
 ## Problem 3: Retarded, Advanced, and the Boundary Condition
 
-**Statement.** (a) Exhibit the advanced kernel $G_{\mathrm{adv}}$ and show that it satisfies the same defining equation $\Box G = -\delta^{(4)}$. (b) Show that the difference $G_{\mathrm{ret}} - G_{\mathrm{adv}}$ solves the homogeneous wave equation, so the defining equation alone does not select the retarded kernel. (c) State the boundary condition that selects the retarded kernel for radiation problems and the boundary condition that selects the advanced one, and identify the contour prescription that implements each.
+**Statement.** (a) Exhibit the advanced kernel $G_{\mathrm{adv}}$ and show that it satisfies the same defining equation $\Box_\Phi G = -\delta^{(4)}$. (b) Show that the difference $G_{\mathrm{ret}} - G_{\mathrm{adv}}$ solves the homogeneous wave equation, so the defining equation alone does not select the retarded kernel. (c) State the boundary condition that selects the retarded kernel for radiation problems and the boundary condition that selects the advanced one, and identify the contour prescription that implements each.
 
-**Solution. (a) The advanced kernel.** The computation of Problem 2(a) used only $g = r'_t - R$. With $g_+ = r'_t + R$ one has $\nabla g_+ = +\vec u_R$, so $(\nabla g_+)^2 = 1$ and the bracket $2\nabla(1/R)\cdot\nabla g_+ + (1/R)\Delta g_+$ has the opposite sign of $\nabla g_+$ relative to $\nabla(1/R)$ but is again zero, because $\nabla(1/R)$ is parallel to $\vec u_R$ while the two terms of the bracket are equal and opposite. Hence the same argument gives
+**Solution. (a) The advanced kernel.** The computation of Problem 2(a) used only $g = r'_t - R$. With $g_+ = r'_t + R$ one has $\vec\nabla_\Phi g_+ = +\vec u_R$, so $(\vec\nabla_\Phi g_+)^2 = 1$ and the bracket $2\vec\nabla_\Phi(1/R)\cdot\nabla g_+ + (1/R)\Delta_\Phi g_+$ has the opposite sign of $\vec\nabla_\Phi g_+$ relative to $\vec\nabla_\Phi(1/R)$ but is again zero, because $\vec\nabla_\Phi(1/R)$ is parallel to $\vec u_R$ while the two terms of the bracket are equal and opposite. Hence the same argument gives
 $$
 G_{\mathrm{adv}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi R}\,\delta\!\left(r'_t + R\right),
 \qquad
@@ -178,13 +178,13 @@ G_{\mathrm{adv}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi
 $$
 with support on the past light cone. In the invariant form it is $G_{\mathrm{adv}} = \frac{1}{2\pi}\mathrm{H}_{\mathrm{hvs}}(-r'_t)\delta({r'_{t}}^2 - R^2)$, and the Jacobian at the past root $r'_t = -R$ is again $2R$.
 
-**(b) The homogeneous difference.** Since $\Box$ is linear, $\Box(G_{\mathrm{ret}} - G_{\mathrm{adv}}) = 0$:
+**(b) The homogeneous difference.** Since $\Box_\Phi$ is linear, $\Box_\Phi(G_{\mathrm{ret}} - G_{\mathrm{adv}}) = 0$:
 $$
 G_{\mathrm{ret}} - G_{\mathrm{adv}} = \frac{1}{4\pi R}\Bigl[\delta\!\left(r'_t - R\right) - \delta\!\left(r'_t + R\right)\Bigr],
 \qquad
 \Box_\Phi\,(G_{\mathrm{ret}} - G_{\mathrm{adv}}) = 0 .
 $$
-The difference is supported on both cones and is a solution of the source-free wave equation. It follows that the defining equation has an infinite family of solutions, all differing by solutions of the homogeneous equation, and that no algebraic manipulation of $\Box$ alone can single out the retarded one. The smeared pairing confirms this in both directions: $\int G_{\mathrm{ret}}\,\Box\xi = \int G_{\mathrm{adv}}\,\Box\xi = -\xi(0)$ for the Gaussian test function, while $\int (G_{\mathrm{ret}} - G_{\mathrm{adv}})\,\Box\xi = 0$.
+The difference is supported on both cones and is a solution of the source-free wave equation. It follows that the defining equation has an infinite family of solutions, all differing by solutions of the homogeneous equation, and that no algebraic manipulation of $\Box_\Phi$ alone can single out the retarded one. The smeared pairing confirms this in both directions: $\int G_{\mathrm{ret}}\,\Box_\Phi\xi = \int G_{\mathrm{adv}}\,\Box_\Phi\xi = -\xi(0)$ for the Gaussian test function, while $\int (G_{\mathrm{ret}} - G_{\mathrm{adv}})\,\Box_\Phi\xi = 0$.
 
 **(c) Which boundary condition selects which.** The retarded kernel is selected by the *causality* (outgoing-radiation, Sommerfeld) condition: the field at an event is determined by the sources in its past light cone, and there is no radiation arriving from past null infinity. In the contour language this is the prescription in which both $\omega$-poles are displaced *below* the real axis, so that the field vanishes for $r'_t$ earlier than the source and is supported on the future cone. The advanced kernel is selected by the time-reversed condition: the field is determined by sources in its future light cone, with no radiation escaping to future null infinity, corresponding to both poles displaced *above* the real axis and support on the past cone. The Feynman choice, one pole on each side, is the time-ordered combination; it is neither retarded nor advanced, and its relation to the two is treated in the companion article on the Feynman propagator. The two choices and the two contour prescriptions were checked numerically on the mode integral of Problem 2(c): the retarded contour gives support for $r'_t>0$ and the advanced contour for $r'_t<0$, with residuals at the $10^{-4}$ to $10^{-3}$ level set by the finite displacement $\epsilon$.
 
@@ -220,11 +220,11 @@ A word on the two retarded-time Jacobians, because the exercise's first trap and
 $$
 S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi}\right) = \partial/\partial R_t\,A_0 + \mathrm{div}\,\vec A = \frac{1}{c}\partial/\partial r'_t\,\xi_{\mathrm{scp}} + \mathrm{div}\,\vec A,
 $$
-which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box_\Phi = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, applying $(\tilde\nabla_\Phi)^{\natural}$ and taking the scalar part gives
+which is the biquaternionic form of $\sum_\mu\partial A_\mu/\partial R_\mu$ and whose vanishing is the Lorenz condition. Since $\tilde{A}_{\Phi}$ solves $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ and $\Box_\Phi = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$, applying $(\tilde\nabla_\Phi)^{\natural}$ and taking the scalar part gives
 $$
 \Box_\Phi S = \mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\,\Box_\Phi\tilde{A}_{\Phi}\right) = -\mu\,\mathrm{Sc}\!\left((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi}\right) = -\mu\left(c\,\partial/\partial r'_t\,\rho + \mathrm{div}\,\vec J\right) = 0,
 $$
-where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz gauge. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further gauge-fixing step — the gauge condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $(\tilde\nabla_\Phi)^{\natural}$ would have produced $\Box S \neq 0$.
+where the last equality is the conservation of charge, and where the derivatives commute because the coefficients are constant. Thus $S$ is a solution of the homogeneous wave equation. The retarded solution of $\Box_\Phi S = 0$ with no incoming radiation is $S = 0$: the retarded potentials automatically satisfy the Lorenz gauge. This is why the Lorenz-gauge wave equation and its retarded solution can be written together, as the companion article does, without a further gauge-fixing step — the gauge condition is a consequence of charge conservation plus the retarded boundary condition, not an extra assumption. It is also a consistency check on the sign conventions: a sign error in $\tilde J_{\Phi}$ or in $(\tilde\nabla_\Phi)^{\natural}$ would have produced $\Box_\Phi S \neq 0$.
 
 ## Problem 5: The Static Limit and the Coulomb–Biot–Savart Check
 
@@ -243,18 +243,18 @@ The kernel that was $\frac{\delta(r'_t-R)}{4\pi R}$ becomes the Newton kernel $\
 $$
 \Delta_\Phi\xi_{\mathrm{scp}} = \frac{1}{4\pi\epsilon}\int \rho(\vec y)\,\Delta_\Phi\frac{1}{R}\,d^3y = -\frac{1}{\epsilon}\int\rho(\vec y)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z-\vec y)\,d^3y = -\frac{\rho(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)}{\epsilon},
 $$
-and likewise $\Delta_\Phi\vec A = -\mu\vec J(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; in biquaternion form $\Delta\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$, which is the static limit of $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
+and likewise $\Delta_\Phi\vec A = -\mu\vec J(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$; in biquaternion form $\Delta_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$, which is the static limit of $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$. For a point charge at the origin, $\rho = ϙ\,\delta^{(3)}(\vec y)$, so
 $$
 \boxed{\;\xi_{\mathrm{scp}} = \frac{ϙ}{4\pi\epsilon R},
 \qquad
-\vec E = -\nabla\xi_{\mathrm{scp}} = \frac{ϙ\,\vec u_R}{4\pi\epsilon R^2},
+\vec E = -\vec\nabla_\Phi\xi_{\mathrm{scp}} = \frac{ϙ\,\vec u_R}{4\pi\epsilon R^2},
 \qquad
 \tilde{F} = i\sqrt{\epsilon}\,\vec E = \frac{iϙ\,\vec u_R}{4\pi\sqrt{\epsilon}\,R^2}\;}
 $$
-which is exactly the parent's static point-charge field; the retarded construction reproduces it as a limiting case. The parent reaches this field from the first-order static equation by taking the gradient of the Newton kernel; here the same field follows from the second-order potential equation, whose static solution is the Newton kernel itself, differentiated once to give $\vec E$. Both routes yield the same Coulomb field, and the retarded potentials supply the second-order route. For a steady current, starting from $\vec A$ and using $\nabla(1/R) = -\vec u_R/R^2$,
+which is exactly the parent's static point-charge field; the retarded construction reproduces it as a limiting case. The parent reaches this field from the first-order static equation by taking the gradient of the Newton kernel; here the same field follows from the second-order potential equation, whose static solution is the Newton kernel itself, differentiated once to give $\vec E$. Both routes yield the same Coulomb field, and the retarded potentials supply the second-order route. For a steady current, starting from $\vec A$ and using $\vec\nabla_\Phi(1/R) = -\vec u_R/R^2$,
 $$
-\vec B = \nabla\times\vec A
-= \frac{\mu}{4\pi}\int \nabla\frac{1}{R}\times\vec J(\vec y)\,d^3y
+\vec B = \vec\nabla_\Phi\times\vec A
+= \frac{\mu}{4\pi}\int \vec\nabla_\Phi\frac{1}{R}\times\vec J(\vec y)\,d^3y
 = \frac{\mu}{4\pi}\int \frac{\vec J(\vec y)\times\vec u_R}{R^2}\,d^3y,
 $$
 the Biot–Savart law (the sign is the standard one, with $\vec u_R$ pointing from the source to the field point). These are the exercise's independent checks: the retarded potentials, constructed from the light-cone kernel, reduce on time-independent sources to the two classical static solutions, which were known before the construction and were not used to build it.
@@ -263,15 +263,15 @@ the Biot–Savart law (the sign is the standard one, with $\vec u_R$ pointing fr
 
 The parent and its companion are correct where they are defined, and the derivation above closes their main gap, which is the construction and verification of the kernel. Four points are left as they stand rather than closed.
 
-1. **The kernel was stated, not derived.** The radiation companion displays $G_\Box = \frac{1}{4\pi R}\delta(r'_t-R)$ and the retarded convolution and says it does not re-derive the structure; the parent states the potential equation and refers the reader to the standard references for the kernel. This exercise supplies the derivation, the Jacobian, and the boundary condition. This is a presentation gap, now closed.
+1. **The kernel was stated, not derived.** The radiation companion displays $G_\Box_\Phi = \frac{1}{4\pi R}\delta(r'_t-R)$ and the retarded convolution and says it does not re-derive the structure; the parent states the potential equation and refers the reader to the standard references for the kernel. This exercise supplies the derivation, the Jacobian, and the boundary condition. This is a presentation gap, now closed.
 
-2. **The parent's first-order Green's function for $\tilde\nabla_\Phi$ is unverified.** The parent also states a biquaternion-valued kernel $\tilde{G}_{\Phi,\tilde{\nabla}}$ solving $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde{\nabla}} = \delta(\tilde{Q})e_t$, with an explicit vector term, and immediately adds that it satisfies the equation "up to a sign convention for the delta distribution" and that its precise form "should be verified against the standard references." The defining equation with $+\delta e_t$ and the satisfaction statement with $-\delta e_t$ do not agree, and the vector term's normalization is not fixed. This exercise does not use that object — the potential equation is second order, and its kernel is the scalar $G_\Box$ derived above — and it records the first-order kernel as an unverified parent statement rather than inheriting it.
+2. **The parent's first-order Green's function for $\tilde\nabla_\Phi$ is unverified.** The parent also states a biquaternion-valued kernel $\tilde{G}_{\Phi,\tilde\nabla_\Phi}$ solving $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde\nabla_\Phi} = \delta(\tilde{Q})e_t$, with an explicit vector term, and immediately adds that it satisfies the equation "up to a sign convention for the delta distribution" and that its precise form "should be verified against the standard references." The defining equation with $+\delta e_t$ and the satisfaction statement with $-\delta e_t$ do not agree, and the vector term's normalization is not fixed. This exercise does not use that object — the potential equation is second order, and its kernel is the scalar $G_\Box_\Phi$ derived above — and it records the first-order kernel as an unverified parent statement rather than inheriting it.
 
 3. **The retarded choice is a boundary condition.** The defining equation admits both the retarded and the advanced kernel, and the retarded one is selected by causality, not by the algebra. The parent states that the physically relevant kernel is the retarded one but does not state the selection principle; Problem 3 supplies it, and the exercise records that the selection is a physical input.
 
 4. **The kernel is that of a constant, non-dispersive medium.** All of the above holds with $c = 1/\sqrt{\epsilon\mu}$ constant, i.e. for a homogeneous, non-dispersive medium. In a dispersive medium the operator is not local in time and the simple retarded kernel does not apply; in a medium whose parameters vary in space the operator has variable coefficients and the free kernel is only the first term of a geometric-optics expansion. The parent's local complex structure makes $c$ a field, and the form of the kernel in that setting is not settled here. This is a genuine gap, not a bookkeeping point.
 
-5. **The equivalence of the first- and second-order formulations is inherited, not re-derived.** The parent states that $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ and $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ are equivalent in the Lorenz gauge while noting that $\sqrt{\mu}\,\tilde{J}_{\Phi}$ and $\tilde J_{\Phi}$ differ by normalization factors. This exercise uses only the second-order equation, with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, and verifies it directly against the retarded potentials and the static limit; it does not re-derive the mapping between the two source normalizations.
+5. **The equivalence of the first- and second-order formulations is inherited, not re-derived.** The parent states that $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ and $\Box_\Phi\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$ are equivalent in the Lorenz gauge while noting that $\sqrt{\mu}\,\tilde{J}_{\Phi}$ and $\tilde J_{\Phi}$ differ by normalization factors. This exercise uses only the second-order equation, with $\tilde J_{\Phi} = ic\rho\,e_t + \vec J$, and verifies it directly against the retarded potentials and the static limit; it does not re-derive the mapping between the two source normalizations.
 
 ## Further Problems
 
@@ -285,7 +285,7 @@ The parent and its companion are correct where they are defined, and the derivat
 
 5. **The far-zone fall-off.** For a localized source, show from the retarded potential alone that the radiated part of the field falls as $1/R$ while the bound part falls as $1/R^2$, without introducing a moving charge. This isolates the light-cone structure of the kernel from the worldline kinematics.
 
-6. **The chiral kernel, which is not this kernel.** For the Drude–Born–Fedorov chiral medium the reduction of the medium article *A Chiral Medium: One Quaternionic Equation* gives the quaternionic operator $M=\beta\sqrt{\epsilon\mu}\,\partial/\partial r'_t\,D+\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$, whose fundamental solution is causal but is **not** obtained from $G_\Box$ by substitution. $M$ is of *second* order in the derivatives — the term $\partial/\partial r'_t\,D$ is what raises it above the first-order non-chiral reduction — and $MM^{*}$ is fourth order, so its kernel is neither the delta-on-the-cone $G_\Box$ of this exercise nor the parent's unverified first-order $\tilde{G}_{\Phi,\tilde{\nabla}}$: it is a third kind of object, and one the corpus can actually construct, since Kravchenko's $V_{\mathrm{vek},\alpha}$ is the worked example of a first-order quaternionic kernel with a radiation condition. At each fixed frequency the symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$, so the kernel is built from $K_{\alpha(\omega)}$; but the prefactor degenerates at $\omega=c/\beta$, where the transform carries a **double** pole together with an essential singularity through $\exp(ic(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(\omega-a))$, and the causal kernel is a Heaviside function times a series rather than a delta on the cone. Determine how far the light-cone support of this exercise survives when $\beta\neq0$, and whether it is restored in the limit $\beta\to0$ together with the one-parameter family. This separates the part of the retarded structure that belongs to the quaternionic first-order operator from the part that belongs to the second-order wave operator.
+6. **The chiral kernel, which is not this kernel.** For the Drude–Born–Fedorov chiral medium the reduction of the medium article *A Chiral Medium: One Quaternionic Equation* gives the quaternionic operator $M=\beta\sqrt{\epsilon\mu}\,\partial/\partial r'_t\,D+\sqrt{\epsilon\mu}\,\partial/\partial r'_t-iD$, whose fundamental solution is causal but is **not** obtained from $G_\Box_\Phi$ by substitution. $M$ is of *second* order in the derivatives — the term $\partial/\partial r'_t\,D$ is what raises it above the first-order non-chiral reduction — and $MM^{*}$ is fourth order, so its kernel is neither the delta-on-the-cone $G_\Box_\Phi$ of this exercise nor the parent's unverified first-order $\tilde{G}_{\Phi,\tilde\nabla_\Phi}$: it is a third kind of object, and one the corpus can actually construct, since Kravchenko's $V_{\mathrm{vek},\alpha}$ is the worked example of a first-order quaternionic kernel with a radiation condition. At each fixed frequency the symbol factors as $i(\beta\sqrt{\epsilon\mu}\,\omega-1)(D+\alpha(\omega))$, so the kernel is built from $K_{\alpha(\omega)}$; but the prefactor degenerates at $\omega=c/\beta$, where the transform carries a **double** pole together with an essential singularity through $\exp(ic(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/(\omega-a))$, and the causal kernel is a Heaviside function times a series rather than a delta on the cone. Determine how far the light-cone support of this exercise survives when $\beta\neq0$, and whether it is restored in the limit $\beta\to0$ together with the one-parameter family. This separates the part of the retarded structure that belongs to the quaternionic first-order operator from the part that belongs to the second-order wave operator.
 
 ## Summary
 
@@ -296,7 +296,7 @@ G_{\mathrm{ret}}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \frac{1}{4\pi
 \Box_\Phi\,G_{\mathrm{ret}} = -\delta(r'_t)\,\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 \qquad R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|,
 $$
-derived in three ways that agree: by applying $\Box$ to a radial ansatz $\frac{u(r'_t-R)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\nabla g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\nabla(1/R)\cdot\nabla g + (1/R)\Delta g = 0$, and the $u$ coefficient because $\Delta(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi}\mathrm{H}_{\mathrm{hvs}}(r'_t)\delta({r'_{t}}^2 - R^2)$ by the Jacobian conversion $\delta({r'_{t}}^2 - R^2) = \frac{1}{2R}\delta(r'_t-R)$; and from the Fourier amplitude $\frac{c^2}{c^2\lvert\vec k_\Phi\rvert^{2}-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.
+derived in three ways that agree: by applying $\Box_\Phi$ to a radial ansatz $\frac{u(r'_t-R)}{4\pi R}$ and exhibiting the two cancellations (the $\frac{d^2u}{dg^2}$ coefficient because $(\vec\nabla_\Phi g)^2 = 1/c^2$, the $\frac{du}{dg}$ coefficient because $2\vec\nabla_\Phi(1/R)\cdot\nabla g + (1/R)\Delta_\Phi g = 0$, and the $u$ coefficient because $\Delta_\Phi(1/R) = -4\pi\delta^{(3)}$); from the invariant light-cone delta $\frac{1}{2\pi}\mathrm{H}_{\mathrm{hvs}}(r'_t)\delta({r'_{t}}^2 - R^2)$ by the Jacobian conversion $\delta({r'_{t}}^2 - R^2) = \frac{1}{2R}\delta(r'_t-R)$; and from the Fourier amplitude $\frac{c^2}{c^2\lvert\vec k_\Phi\rvert^{2}-\omega^2}$ with the retarded contour. The kernel was verified as a distributional identity by smearing against a Gaussian test function, and the retarded potential was verified to solve the homogeneous wave equation for generic, off-centre, oscillating, and static sources.
 
 The defining equation does not select the kernel: the advanced kernel $\frac{1}{4\pi R}\delta(r'_t+R)$ solves it equally, the difference is a solution of the homogeneous equation, and the retarded choice is fixed by the causality (no-incoming-radiation) boundary condition, implemented by displacing both frequency poles below the real axis. Convolving the retarded kernel with the source gives the retarded potentials
 $$
@@ -320,7 +320,7 @@ with all sources at the retarded time $r'_t - R$; the retarded solution is autom
 | $\partial/\partial R_t = -i\partial/\partial r'_t$ | Temporal component of the gradient |
 | $\Box_\Phi = \Delta_\Phi - \frac{\partial^2}{\partial {r'_{t}}^2}$ | Wave operator (d'Alembertian) |
 | $\delta^{(4)}(\tilde{Q}) = \delta(r'_t)\delta^{(3)}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ | Four-dimensional Dirac delta |
-| $G(\tilde{Q})$ | Green's function, $\Box G = -\delta^{(4)}$ |
+| $G(\tilde{Q})$ | Green's function, $\Box_\Phi G = -\delta^{(4)}$ |
 | $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$ | Retarded Green's function |
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(r'_t + R)$ | Advanced Green's function |
 | $\sigma = {r'_{t}}^2 - R^2$ | Light-cone invariant (argument of the invariant delta) |

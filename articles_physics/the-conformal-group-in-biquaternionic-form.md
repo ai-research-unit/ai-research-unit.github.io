@@ -15,7 +15,7 @@ The answer is a boundary rather than an embedding, and the boundary falls in a d
 
 The compactification is the one part of the picture the article does build, and it is built on a form the earlier sections do not use. The space on which the conformal group acts globally is the $*$-unitary group $\mathrm{U}(2)=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}$ — compact, of real dimension $4$, and not the norm-units $SL(2,\mathbb{C})$ — and the two sectors are its Cayley charts, poled each in the other. The boundary is a slice of the zero-divisor cone, and the sphere at its base turns out to be the Bloch sphere of the informational sector read as generators. That construction is *The Compactification from the Star*; it does not put the group inside the algebra, and it does not force a compact universe.
 
-The conventions are those of the read-list companions: the algebra, the invertibles, the sectors, the biquaternion norm, the four forms, the gradient and its conjugate, the d'Alembertian and the trace are theirs, and none is restated here. Every derivative acting on an algebra-valued field in the article is the corpus gradient $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, §*The Gradient*, and no other letter names it; the coordinate derivatives $\partial/\partial R_\mu$ are declared in the section that uses them. $\Box$ is the quaternionic norm of the gradient in *Operator and Calculus Conventions*, and the material-sector reading of that one operator is fixed in §*The Quaternionic Bilinear Product, Its Form and Its Norm*. Throughout, $c$ is the speed of light in the medium, and the temporal coordinate of $\mathbb{B}_{\Phi}$ is the corpus's $Q_t=i q'_t$.
+The conventions are those of the read-list companions: the algebra, the invertibles, the sectors, the biquaternion norm, the four forms, the gradient and its conjugate, the d'Alembertian and the trace are theirs, and none is restated here. Every derivative acting on an algebra-valued field in the article is the corpus gradient $\tilde\nabla_\Phi$ of *Operator and Calculus Conventions*, §*The Gradient*, and no other letter names it; the coordinate derivatives $\partial/\partial R_\mu$ are declared in the section that uses them. $\Box_\Phi$ is the quaternionic norm of the gradient in *Operator and Calculus Conventions*, and the material-sector reading of that one operator is fixed in §*The Quaternionic Bilinear Product, Its Form and Its Norm*. Throughout, $c$ is the speed of light in the medium, and the temporal coordinate of $\mathbb{B}_{\Phi}$ is the corpus's $Q_t=i q'_t$.
 
 ## The Conformal Group and Its Generators
 
@@ -320,7 +320,7 @@ and every derivative in it is the gradient defined in the introduction. This is 
 
 The mass cannot be a term of the same kind. The square of the gradient is not scalar: the unit $e_t$ is the identity of the algebra, so it commutes with the three spatial units, and the two orders of a mixed derivative add, not cancel,
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\,\partial R_\eta},
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\,\partial R_\eta},
 $$
 while the product with the conjugate is scalar,
 $$
@@ -333,7 +333,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
-both members acting from the left on their own field, so no glyph names a side. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and substituting the second returns $\Box\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, so the pair is one dynamics on two fields: the mass couples the halves, and each half obeys the d'Alembertian at mass $m$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+both members acting from the left on their own field, so no glyph names a side. Applying $(\tilde\nabla_\Phi)^{\natural}$ to the first member and substituting the second returns $\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$, so the pair is one dynamics on two fields: the mass couples the halves, and each half obeys the d'Alembertian at mass $m$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 This is the operator form of the boundary drawn above. The massless law is first order in one field and the massive law is first order in two; no rewriting puts the mass into a first-order equation for one field, and the mass is exactly what breaks the conformal invariance. The algebra is large enough for both, and the passage from one to the other is the price the boundary charges.
 

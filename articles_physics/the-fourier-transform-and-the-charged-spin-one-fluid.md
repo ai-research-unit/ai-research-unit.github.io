@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The coupled Proca constraint is the only constraint in the block that is nonlinear in the momentum space.** Its covariant half is a multiplier: $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ transforms to a linear condition on the amplitude at each label. Its ordinary half is not: the constraint fixes the multiplier $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)$ to equal $-\frac{iϙ}{\hbar}\langle\tilde A\rangle_\natural$, a product, and a product transforms to a **correlation** of the amplitude with its own conjugate. **So the constraint equates a label-local expression to a label-delocal one**, and that asymmetry is the article's finding.
+**The coupled Proca constraint is the only constraint in the block that is nonlinear in the momentum space.** Its covariant half is a multiplier: $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ transforms to a linear condition on the amplitude at each label. Its ordinary half is not: the constraint fixes the multiplier $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)$ to equal $-\frac{iϙ}{\hbar}\langle\tilde A\rangle_\natural$, a product, and a product transforms to a **correlation** of the amplitude with its own conjugate. **So the constraint equates a label-local expression to a label-delocal one**, and that asymmetry is the article's finding.
 
 **The immediate consequence is that the constraint cannot be solved label by label.** Every other constraint in the block — the Lorenz condition of the free vector fluid, the mass shell of the scalar, the transversality of a polarisation — is a condition on the amplitude at one point of the momentum space, and it determines that amplitude there. This one is one scalar equation per label whose right-hand side is an integral over all labels. No change of basis removes the correlation, because a correlation is the multiplication in the position variable and the multiplication is the physical product of two field values.
 
@@ -17,11 +17,11 @@
 The charged spin-one fluid's: $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho>0$, eight real parameters for the eight real components, the coupling $ϙ$, and
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi ,
 \qquad
-\tilde F=\tfrac12\bigl(\tilde\nabla^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco}}\tilde A\bigr)_{V},
+\tilde F=\tfrac12\bigl((\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde A-\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr)_{V},
 \qquad
-\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^{2}\tilde A .
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^{2}\tilde A .
 $$
 
 The transform carries a subscript and no accent, as the series requires: the transform of a glyph is written with $\mathrm{trf}$, so the amplitude is $\tilde A_{\mathrm{trf}}(\tilde K_\Phi)$ and its correlation with its conjugate is $\tilde A_{\mathrm{trf}}*\tilde A_{\mathrm{trf}}^{\natural}$. The field itself is $\tilde A$.
@@ -33,9 +33,9 @@ The symbol rule is the scalar rung's, and the product rule is the one proved in 
 **The trace of the coupled equation forces the covariant condition, exactly and blindly to the frame, and the ordinary divergence is then the amplitude.**
 
 $$
-\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0
+\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0
 \qquad\Longrightarrow\qquad
-\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)
+\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)
 =-\frac{iϙ}{\hbar}\langle\tilde A\rangle_{\natural}
 =-\frac{iϙ}{\hbar}\,\varrho^{2}e^{2i\theta_{\mathrm{pha}}} .
 $$
@@ -60,7 +60,7 @@ The left side is a linear operator applied pointwise, so it constrains this comp
 
 $$
 ϙ=0:\qquad
-\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde A\bigr)=0
+\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A\bigr)=0
 \qquad\Longleftrightarrow\qquad
 \tilde K_\Phi\cdot\tilde A_{\mathrm{trf}}(\tilde K_\Phi)=0\ \text{at each label}.
 $$
@@ -148,11 +148,11 @@ Across the eight Fourier articles the invisible object is always either a produc
 |---|---|
 | $ϙ$ | The coupling |
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The eight-parameter word |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+iϙ\tilde A_\Phi/\hbar$ | The covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+iϙ\tilde A_\Phi/\hbar$ | The covariant derivative |
 | $\tilde F$ | The field strength, built from covariant gradients |
 | $k_m=mc/\hbar$ | The mass wave number |
-| $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-(iϙ/\hbar)\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | The ordinary divergence; the amplitude |
-| $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ | The covariant constraint; a multiplier |
+| $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A)=-(iϙ/\hbar)\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | The ordinary divergence; the amplitude |
+| $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ | The covariant constraint; a multiplier |
 | $\tilde K_\Phi$ | The label, the transform's variable |
 | $\tilde A_{\mathrm{trf}}(\tilde K_\Phi)$ | The amplitude at a label, with no hat on the transform |
 | $\langle\tilde A\rangle_\natural=\tilde A\tilde A^{\natural}$ | The natural norm; equal to $\varrho^{2}$ only on the real slice |

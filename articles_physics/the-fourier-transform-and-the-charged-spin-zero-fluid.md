@@ -12,7 +12,7 @@
 
 ## Conventions
 
-The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\varkappa}{\hbar}\tilde A_\Phi$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$. The mechanical momentum is
+The charged companion's: $\tilde A_\Phi=i a_t'e_t+\vec A$ with $a_t'$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\varkappa}{\hbar}\tilde A_\Phi$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$. The mechanical momentum is
 
 $$
 \tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+\varkappa\tilde A_\Phi,
@@ -22,7 +22,7 @@ $$
 \mathcal E=-\hbar c\,k_t'+\varkappa a_t' ,
 $$
 
-and the field strength is $\tilde F=\tilde\nabla^{\natural}\tilde A_\Phi-\tilde\nabla\tilde A_\Phi$ read as the two-form of [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html). The symbol rule is the free companion's.
+and the field strength is $\tilde F=(\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi-\tilde\nabla_\Phi\tilde A_\Phi$ read as the two-form of [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html). The symbol rule is the free companion's.
 
 ## The Translated Shell
 

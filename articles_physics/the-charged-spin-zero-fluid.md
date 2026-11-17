@@ -13,14 +13,14 @@ again identically, again for every solution, and with no quantum correction. **S
 **The equation.** The coupled Klein–Gordon equation is the free one with covariant derivatives,
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi,
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
 \qquad
 \tilde A_\Phi=i\,a'_t\,e_t+\vec A,
 $$
 
-with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the material sector $\mathbb{B}_\Phi$ and its four coefficients are the scalar and the vector potential. **The connection is central per component in the abelian case**, which is the fact the whole article turns on: $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ is a central operator, it commutes with the complete polar decomposition, and it adds one scalar to each bracket of the logarithmic derivative without disturbing the bracket's type.
+with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the material sector $\mathbb{B}_\Phi$ and its four coefficients are the scalar and the vector potential. **The connection is central per component in the abelian case**, which is the fact the whole article turns on: $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ is a central operator, it commutes with the complete polar decomposition, and it adds one scalar to each bracket of the logarithmic derivative without disturbing the bracket's type.
 
 **Three things are established.**
 
@@ -41,7 +41,7 @@ with $a'_t$ and $\vec A$ real, so that $\tilde A_\Phi$ is an element of the mate
 **The coupling enters the logarithmic derivative as one added central element, and the type table says where it can land.** Differentiating the word, dividing by it and adding the connection gives
 
 $$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
 =\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\Bigl(\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\frac{ϙ}{\hbar}A_\mu\Bigr)
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
@@ -130,7 +130,7 @@ The first bracket vanishes because the action is a function and not a one-form, 
 
 **The third row is the article's sharpest single statement about the rest of the block.** The spin companion proves that its *vorticity proper* — the part that annihilates the velocity — is rank two for every solution, a two-form on the three dimensions of the rest space, and that only its *raw* derivative reaches rank four, and only through the acceleration. **The scalar fluid's vorticity is the field strength itself.** It is rank four wherever $\vec E\cdot\vec B\ne0$, with no acceleration and no frame, and its rank is a property of the connection rather than of the flow. So the two fluids reach the rank-four row of [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) by different routes, and only one of them reaches it with its vorticity.
 
-**The rung below states the same identity with no qualifier and with a lower rank.** [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html) has $\nabla\times\vec v=ϙ\vec B/m$ exactly, because its velocity is a three-velocity and not a normalised four-vector, and there the rank is two for every field: a non-relativistic velocity has no time component, so the electric half of $F$ has nowhere to enter the vorticity. The two statements together measure what the second order of the equation adds — the normalisation of the velocity and the mixing of $\vec E$ and $\vec B$ — and both are absent one rung down.
+**The rung below states the same identity with no qualifier and with a lower rank.** [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html) has $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$ exactly, because its velocity is a three-velocity and not a normalised four-vector, and there the rank is two for every field: a non-relativistic velocity has no time component, so the electric half of $F$ has nowhere to enter the vorticity. The two statements together measure what the second order of the equation adds — the normalisation of the velocity and the mixing of $\vec E$ and $\vec B$ — and both are absent one rung down.
 
 **What the vorticity is not, in this fluid.** It is not a dynamical variable: it is a function of the connection and of nothing else, and the fluid carries no vorticity equation, no Helmholtz transport and no conserved helicity. It is also not a spin, because the scalar sector has no spin: the word's last factor is the branch, and a branch is not an orientation.
 
@@ -170,12 +170,12 @@ whose spatial slots are the display a reader expects:
 
 $$
 \frac{\mathrm{d}\vec p^{\mathrm{mech}}}{\mathrm{d}t}
-=-ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\gamma^{-1}\nabla Q_{\mathrm{qnt}},
+=-ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}},
 \qquad
 \vec p^{\mathrm{mech}}=\vec p-q\vec A .
 $$
 
-**The sign of the four-vector form is the metric's and the spatial form is the check.** With all the indices low, the Lorentz term is $-ϙ\sum_\nu\varepsilon_\nu F_{\mu\nu}V_\nu$, whose spatial slots are $-ϙE_i\gamma-ϙ(\vec v\times\vec B)_i\gamma$; dividing by the $\gamma$ that converts $\mathrm{d}/\mathrm{d}\tau$ to $\mathrm{d}/\mathrm{d}t$ leaves the display above with both of its sub-terms at order zero in $\gamma$. **With $ϙ$ the negative of the electric charge the display reads $q(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$**, which is the standard force on a charge $q$: the sign is the coupling's, and the mass shell is what fixes it, because the potential energy is $-ϙ\varphi$. The free article's $-ϙ\to0$ case is its own acceleration law, term for term.
+**The sign of the four-vector form is the metric's and the spatial form is the check.** With all the indices low, the Lorentz term is $-ϙ\sum_\nu\varepsilon_\nu F_{\mu\nu}V_\nu$, whose spatial slots are $-ϙE_i\gamma-ϙ(\vec v\times\vec B)_i\gamma$; dividing by the $\gamma$ that converts $\mathrm{d}/\mathrm{d}\tau$ to $\mathrm{d}/\mathrm{d}t$ leaves the display above with both of its sub-terms at order zero in $\gamma$. **With $ϙ$ the negative of the electric charge the display reads $q(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$**, which is the standard force on a charge $q$: the sign is the coupling's, and the mass shell is what fixes it, because the potential energy is $-ϙ\varphi$. The free article's $-ϙ\to0$ case is its own acceleration law, term for term.
 
 **The check was carried out symbolically and it is exact.** Taking an arbitrary action $S$ and an arbitrary potential $A_\mu$ in one time and one space dimension, defining $Q_{\mathrm{qnt}}$ by the mass shell above and $V=\tilde P^{\mathrm{mech}}/m$, the identity
 
@@ -282,7 +282,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 
 ## Summary
 
-The charged Klein–Gordon equation is $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is the free article's $\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon$ substituted into it.
+The charged Klein–Gordon equation is $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is the free article's $\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon$ substituted into it.
 
 The connection is central per component, so it merges with the scale and the phase brackets and cannot reach the branch. On the central field the kinematics is therefore exactly a shift of the phase rate, and the shift is the classical substitution in one element: $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$.
 
@@ -290,7 +290,7 @@ The density is $\varrho^{2}$ and the conserved density is the mechanical phase r
 
 The vorticity is $ϙF/m$ exactly, so the fluid is irrotational exactly where the field strength vanishes. Its rank is $0$, $2$ or $4$, and four exactly where $\vec E\cdot\vec B\ne0$, which is the rank no free fluid of the block reaches with its vorticity proper. The circulation is $2\pi\hbar n+ϙ\Phi_B$, and the flux term survives where the field strength vanishes on the loop.
 
-The force is the Lorentz force plus the free quantum gradient, $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$, and it comes from the one gradient of the coupled mass shell. The quantum potential, the Korteweg stress and the absence of an equation of state are untouched, because the field is external and the amplitude is untouched.
+The force is the Lorentz force plus the free quantum gradient, $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$, and it comes from the one gradient of the coupled mass shell. The quantum potential, the Korteweg stress and the absence of an equation of state are untouched, because the field is external and the amplitude is untouched.
 
 The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gauge invariant, and the number density's sign never moves. The degenerate set is $\varrho=0$, as it was. The reverse map's domain is now a set of triples — density, action, connection — and it is well defined on gauge orbits rather than on triples.
 
@@ -303,7 +303,7 @@ The charge-sign boundary moves with the potential at $|ϙca'_t|=|E|$ and is gaug
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The phase coordinate; moves under a gauge transformation |
 | $\varepsilon$ | The branch; untouched by the connection |
 | $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ | The connection; $a'_t$ and $\vec A$ real, so $\tilde A_\Phi\in\mathbb{B}_\Phi$ |
-| $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative; central per component |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative; central per component |
 | $ϙ$ | The coupling |
 | $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ | The action |
 | $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$ | The canonical momentum; $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ |

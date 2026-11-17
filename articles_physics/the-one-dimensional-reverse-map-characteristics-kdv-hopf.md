@@ -13,10 +13,10 @@
 **A one-dimensional flow is irrotational for free.** Take $\vec v=u(x)\,\vec e_x$, a velocity with one component depending on one coordinate. Its curl is
 
 $$
-\nabla\times\vec v=\bigl(\partial_yu_z-\partial_zu_y\bigr)\vec e_x+\dots=0,
+\vec\nabla_\Phi\times\vec v=\bigl(\partial_yu_z-\partial_zu_y\bigr)\vec e_x+\dots=0,
 $$
 
-because every transverse derivative of every component vanishes. So the potential exists, $\vec v=\nabla S/m$ reduces to $u=(1/m)\,\partial_xS$, and the first condition of the reverse map costs nothing.
+because every transverse derivative of every component vanishes. So the potential exists, $\vec v=\vec\nabla_\Phi S/m$ reduces to $u=(1/m)\,\partial_xS$, and the first condition of the reverse map costs nothing.
 
 **The count closes at two and the map is therefore defined everywhere on the barotropic class.** The data are the density and the potential, which is exactly a wave function's modulus and argument. So one dimension is the case in which the reverse map has no obstruction of counting at all.
 

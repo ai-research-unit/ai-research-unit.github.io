@@ -140,7 +140,7 @@ $$
 \mathrm{Sc}\bigl(\tilde\nabla_\Phi^{\natural}\tilde\Sigma_\Psi\bigr)=0,
 $$
 
-which is $\partial_t w_{\mathrm{fl}}+\nabla\cdot\vec S_{\mathrm P}=0$ in the flat case: an energy density whose rate of change is the divergence of its flux. The quantum stress article proves that on solutions the flux carries the quantum potential and that the divergence of the quantum part is the quantum force.
+which is $\partial_t w_{\mathrm{fl}}+\vec\nabla_\Phi\cdot\vec S_{\mathrm P}=0$ in the flat case: an energy density whose rate of change is the divergence of its flux. The quantum stress article proves that on solutions the flux carries the quantum potential and that the divergence of the quantum part is the quantum force.
 
 **The law is one real equation and the element has four slots, so three of the four are not constrained by it.** That is not a defect: a conservation law constrains the four-vector's divergence and leaves its curl free, and the curl is the dynamics that the field equation supplies. The same division appears in the scalar fluid, where the continuity equation constrains the density and the mass shell supplies the momentum.
 

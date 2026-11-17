@@ -295,10 +295,10 @@ Almost nothing is known about the split biquaternion zeta function. The followin
 
 ### The Setting
 
-The analysis article defined the split biquaternion gradient $\tilde{\nabla}$, the d'Alembertian $\Box$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}_{\mathrm{spl}}$. The solutions of the equations
+The analysis article defined the split biquaternion gradient $\tilde\nabla_\Phi$, the d'Alembertian $\Box_\Phi$, and the convective derivative $\tilde{D}$ on a four-dimensional subspace $V \subset \mathbb{B}_{\mathrm{spl}}$. The solutions of the equations
 
 $$
-\tilde{\nabla}F = 0, \qquad \Box F = 0
+\tilde\nabla_\Phi F = 0, \qquad \Box_\Phi F = 0
 $$
 
 are the split biquaternion analogues of holomorphic functions and harmonic functions. The special functions of the analysis are the kernels and fundamental solutions associated with these equations.
@@ -311,7 +311,7 @@ $$
 G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4}, \qquad \tilde{Q} \neq 0.
 $$
 
-It satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:
+It satisfies $\tilde\nabla_\Phi G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$ in the sense of distributions. In the idempotent basis, it decomposes:
 
 $$
 G_{\mathrm{fn}}(\tilde{Q}) = G_{\mathrm{fn}}(\tilde{Q}_+) \tilde\Pi_1 + G_{\mathrm{fn}}(\tilde{Q}_-) \tilde\Pi_2,
@@ -347,7 +347,7 @@ Its construction is standard from the fundamental solution, and it decomposes in
 
 3. **The Hardy spaces.** What are the split biquaternion analogues of the Hardy spaces $H^p$ and the Bergman spaces?
 
-4. **The reproducing kernel.** Is there a reproducing kernel for the space of functions satisfying $\tilde{\nabla}F = 0$ on a domain?
+4. **The reproducing kernel.** Is there a reproducing kernel for the space of functions satisfying $\tilde\nabla_\Phi F = 0$ on a domain?
 
 ## The General Principle
 
@@ -369,7 +369,7 @@ The common thread is the **idempotent decomposition**: the split biquaternion al
 
 3. **The zeta function.** Can the split biquaternion zeta function be defined, and what are its properties? Is there an analogue of the Riemann hypothesis?
 
-4. **The special functions from the analysis.** What are the explicit forms of the Poisson kernel, the Green's function, and the reproducing kernel for the spaces of functions satisfying $\tilde{\nabla}F = 0$ or $\Box F = 0$?
+4. **The special functions from the analysis.** What are the explicit forms of the Poisson kernel, the Green's function, and the reproducing kernel for the spaces of functions satisfying $\tilde\nabla_\Phi F = 0$ or $\Box_\Phi F = 0$?
 
 5. **The relation to Clifford analysis.** How do the split biquaternion special functions relate to the corresponding functions in Clifford analysis with split inertia?
 
@@ -407,7 +407,7 @@ The split biquaternion special functions are therefore a partially developed sub
 | ${}_2F_1, {}_pF_q$ | Gauss and generalized hypergeometric functions |
 | $\Gamma$ | Gamma function |
 | $\omega$ | Riemann zeta function |
-| $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
+| $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla_\Phi$ |
 | $P(\tilde{Q}, \tilde Q_1)$ | Poisson kernel |
 | $G(\tilde Q, \tilde Q_1)$ | Green's function |
 
@@ -418,5 +418,5 @@ The split biquaternion special functions are therefore a partially developed sub
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
-- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
+- R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta_\Phi u = 0$ und $\Delta_\Phi\Delta_\Phi u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
 

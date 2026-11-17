@@ -110,7 +110,7 @@ each twice. **The scalar potential translates the pair and the vector potential 
 
 **Where the invariants live.** They live in the field and in its word, and their integrals are the Noether charges. **The transform diagonalises the charges and does not determine the invariants**, and that asymmetry is the polar chart's rendering of the difference between a label and a value.
 
-**The gauge covariance of the invariants.** Under a gauge transformation the phase's gradient shifts by $-\nabla\Gamma$ and $\vec A$ by $+\nabla\Gamma$... in the parent's sign convention $\vec A\mapsto\vec A-\nabla\Gamma$ and $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so $\hbar\nabla\theta-q\vec A$ is invariant. **Both invariants are gauge invariant and both are field-dependent**, and the pair of properties is what a symbol cannot have.
+**The gauge covariance of the invariants.** Under a gauge transformation the phase's gradient shifts by $-\vec\nabla_\Phi\Gamma$ and $\vec A$ by $+\vec\nabla_\Phi\Gamma$... in the parent's sign convention $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ and $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so $\hbar\nabla\theta-q\vec A$ is invariant. **Both invariants are gauge invariant and both are field-dependent**, and the pair of properties is what a symbol cannot have.
 
 **A caution about $\vec k$.** The symbol's argument $\vec k$ is the transform's label and not the field's mechanical momentum. They agree on a single plane wave and disagree on every superposition. **Reading $\hbar\vec k-q\vec A$ as the field's momentum is the error this section exists to prevent.**
 

@@ -247,7 +247,7 @@ The action is transitive, and simply transitive on ordered triples of distinct p
 
 **The physical reading is a degeneracy and not a symmetry.** Two copies of the same module can be exchanged by an isomorphism, so nothing in the module forbids the exchange; but the exchange is not an automorphism of the algebra and it changes no physics. The multiplicity is bookkeeping, and the multiplicity of the regular module is exactly the number of Peirce columns, which is two because the matrix algebra is $2\times2$.
 
-**The boundary.** The Dirac module $\Delta=S\oplus S^{\mathrm{c}}$ is not this sum. There the two summands are related by a real structure and are not isomorphic over $\mathbb{R}$, so the sum is a genuine pair and not a multiplicity. The two-looking notations must not be identified, and the section is explicit about which is which.
+**The boundary.** The Dirac module $\Delta_\Phi=S\oplus S^{\mathrm{c}}$ is not this sum. There the two summands are related by a real structure and are not isomorphic over $\mathbb{R}$, so the sum is a genuine pair and not a multiplicity. The two-looking notations must not be identified, and the section is explicit about which is which.
 
 ### I.4.c — A Splitting That the Action Cannot See Is a Splitting of the Frame
 

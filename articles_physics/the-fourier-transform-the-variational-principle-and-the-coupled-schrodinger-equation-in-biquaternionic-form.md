@@ -109,15 +109,15 @@ and the identity is exact by construction. **The sign is the Lagrangian's**: a L
 
 ## Gauge Invariance of the Symbol, and the Resolution of the Sign
 
-**The two shifts.** Under a gauge transformation $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$, the connection moves as $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\nabla\Gamma$. A mode's phase moves as $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so its frequency and wave vector move as
+**The two shifts.** Under a gauge transformation $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$, the connection moves as $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so its frequency and wave vector move as
 
 $$
 \omega\longmapsto\omega-\frac{ϙ}{\hbar}\partial_{t'}\Gamma,
 \qquad
-\vec k\longmapsto\vec k+\frac{ϙ}{\hbar}\nabla\Gamma .
+\vec k\longmapsto\vec k+\frac{ϙ}{\hbar}\vec\nabla_\Phi\Gamma .
 $$
 
-**The symbol is invariant.** Substituting the four shifts into $\sigma_{\mathrm{gco}}$ cancels $\partial_{t'}\Gamma$ in the frequency term and $\nabla\Gamma$ in the mechanical momentum, so $\sigma_{\mathrm{gco}}$ is unchanged. **Verified over one hundred draws with constant $\Gamma$: the residual was $8.9\times10^{-16}$.**
+**The symbol is invariant.** Substituting the four shifts into $\sigma_{\mathrm{gco}}$ cancels $\partial_{t'}\Gamma$ in the frequency term and $\vec\nabla_\Phi\Gamma$ in the mechanical momentum, so $\sigma_{\mathrm{gco}}$ is unchanged. **Verified over one hundred draws with constant $\Gamma$: the residual was $8.9\times10^{-16}$.**
 
 **What the invariance says.** The symbol is a function of $\mathcal E=\hbar\omega+ϙ\varphi$ and $\vec\pi=\hbar\vec k-q\vec A$ and of nothing else. **The four ingredients are not independent**, and the symbol's two arguments are the two invariants of the polar companion.
 
@@ -169,7 +169,7 @@ The symbol is gauge invariant in the invariant coordinates: the four shifts canc
 | $\sigma_{\mathrm{gco}}(\omega)=\hbar\omega\,e_t-\tilde H^{\mathrm{gco}}_\Psi$ | The element symbol; the form's kernel |
 | $\sigma_{\mathrm{gco}}(\omega,\vec k)=\hbar\omega+ϙ\varphi-\lvert\hbar\vec k-q\vec A\rvert^{2}/(2m)$ | The scalar symbol; operator setting |
 | $\mathcal E=\hbar\omega+ϙ\varphi$, $\vec\pi=\hbar\vec k-q\vec A$ | The two invariants; the symbol's only arguments |
-| $\omega\mapsto\omega-\frac{ϙ}{\hbar}\partial_{t'}\Gamma$, $\vec k\mapsto\vec k+\frac{ϙ}{\hbar}\nabla\Gamma$ | The mode's gauge shifts; they cancel in the symbol |
+| $\omega\mapsto\omega-\frac{ϙ}{\hbar}\partial_{t'}\Gamma$, $\vec k\mapsto\vec k+\frac{ϙ}{\hbar}\vec\nabla_\Phi\Gamma$ | The mode's gauge shifts; they cancel in the symbol |
 | $E=-\sigma_{\mathrm{gco}}(0,\vec k)$ | The energy as minus the symbol at zero frequency |
 | $\partial\sigma_{\mathrm{gco}}/\partial\omega=\hbar$ | The Legendre slope; unchanged by the coupling |
 | $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$ | The vanishing mixed derivative; the class's mark |

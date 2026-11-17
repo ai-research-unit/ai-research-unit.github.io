@@ -25,23 +25,23 @@ The article derives the substitution, the split of a state into its two frame pa
 **The gradient and the d'Alembertian.** Every derivative in this article is the corpus gradient. The conventions are stated once, here, and used without restatement:
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\,\frac{\partial}{\partial R_\mu},
+\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\,\frac{\partial}{\partial R_\mu},
 \qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\,\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\,\frac{\partial}{\partial R_\mu},
 \qquad
-\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$. Write $\vec\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ for the spatial part, so that $\tilde\nabla=e_t\,\partial/\partial R_t+\vec\nabla$ and $\vec\nabla\vec\nabla=-\Delta_Q$. On the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$.
+with $\varepsilon=(1,-1,-1,-1)$ and $\Delta_\Phi=\sum_\eta\partial^2/\partial R_\eta^2$. Write $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ for the spatial part, so that $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\vec\nabla_\Phi$ and $\vec\nabla_\Phi\vec\nabla_\Phi=-\Delta_\Phi$. On the material sector $\mathbb{B}_{\Phi}$, where $Q_t=i q'_t$ and $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$.
 
-**Why the mass needs two fields.** The plain square of the gradient is not scalar. The three spatial units anticommute, so $\vec\nabla\vec\nabla=-\Delta_Q$ is scalar, but the time unit $e_t$ commutes with them instead of anticommuting, and the mixed term survives:
+**Why the mass needs two fields.** The plain square of the gradient is not scalar. The three spatial units anticommute, so $\vec\nabla_\Phi\vec\nabla_\Phi=-\Delta_\Phi$ is scalar, but the time unit $e_t$ commutes with them instead of anticommuting, and the mixed term survives:
 
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2e_t\,\frac{\partial}{\partial R_t}\,\vec\nabla
-\;\neq\;\Box .
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2e_t\,\frac{\partial}{\partial R_t}\,\vec\nabla_\Phi
+\;\neq\;\Box_\Phi .
 $$
 
-The quaternion conjugate removes that term, because $(\tilde\nabla_\Phi)^{\natural}$ enters with $-\vec\nabla$ and the two mixed terms cancel. The root of $\Box$ inside the algebra is therefore the **pair** $(\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural})$, never one gradient alone. Consequently the free equation stays first order in one field, $\tilde\nabla_\Phi\tilde F=0$, and the massive equation needs two fields, the **chiral pair**
+The quaternion conjugate removes that term, because $(\tilde\nabla_\Phi)^{\natural}$ enters with $-\vec\nabla_\Phi$ and the two mixed terms cancel. The root of $\Box_\Phi$ inside the algebra is therefore the **pair** $(\tilde\nabla_\Phi,(\tilde\nabla_\Phi)^{\natural})$, never one gradient alone. Consequently the free equation stays first order in one field, $\tilde\nabla_\Phi\tilde F=0$, and the massive equation needs two fields, the **chiral pair**
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
@@ -79,7 +79,7 @@ $$
 The first is a **single right action**, the right multiplication by the element $i\vec e_x$; the second is a **two-sided action**, with the element $\vec e_\eta$ on the left and the element $\vec e_z$ on the right. Both are Hermitian and square to the identity, the mixed products are $\beta\alpha_\eta:Q\mapsto i\vec e_\eta Q\vec e_y$ and $\alpha_\eta\beta:Q\mapsto-i\vec e_\eta Q\vec e_y$, and $\beta\alpha_\eta\beta=-\alpha_\eta$. The non-minimal shift of the gradient is written once,
 
 $$
-\vec\nabla_\pm:=\vec\nabla\pm\dfrac{\omega\,k_m}{c}\,\vec r,
+\vec\nabla_\pm:=\vec\nabla_\Phi\pm\dfrac{\omega\,k_m}{c}\,\vec r,
 \qquad
 \vec r=\sum_\eta\vec e_\eta Q_\eta ,
 $$
@@ -107,10 +107,10 @@ The coefficient is now real, and the action $Q\mapsto\vec e_\eta Q\vec e_y$ is H
 **The shift of the gradient.** The substitution is a shift of the spatial part of the gradient and of nothing else, because the momentum operator is the spatial gradient: $p_\eta=-i\,\hbar\partial/\partial R_\eta$ gives
 
 $$
-\vec p - im\omega\beta\vec r \;=\; -i\,\hbar\left(\vec\nabla+\dfrac{\omega\,k_m}{c}\,\beta\vec r\right).
+\vec p - im\omega\beta\vec r \;=\; -i\,\hbar\left(\vec\nabla_\Phi+\dfrac{\omega\,k_m}{c}\,\beta\vec r\right).
 $$
 
-The shift carries $\beta$, and $\beta$ is a right action, so the multiplied position acts first and the element $i\vec e_x$ acts last: the shift is $\dfrac{\omega\,k_m}{c}$ times the action $\tilde{Ξ}\mapsto(\vec r\tilde{Ξ})\,i\vec e_x$. On a state that $\beta$ fixes, that is the shift $\vec\nabla\to\vec\nabla_+$; on a state that $\beta$ negates, it is the shift $\vec\nabla\to\vec\nabla_-$. The two signs of one shift are the whole content of the substitution, and they are why the pair below has two lines.
+The shift carries $\beta$, and $\beta$ is a right action, so the multiplied position acts first and the element $i\vec e_x$ acts last: the shift is $\dfrac{\omega\,k_m}{c}$ times the action $\tilde{Ξ}\mapsto(\vec r\tilde{Ξ})\,i\vec e_x$. On a state that $\beta$ fixes, that is the shift $\vec\nabla_\Phi\to\vec\nabla_+$; on a state that $\beta$ negates, it is the shift $\vec\nabla_\Phi\to\vec\nabla_-$. The two signs of one shift are the whole content of the substitution, and they are why the pair below has two lines.
 
 **The pair.** The source's equation acts on one field and carries the mass in the diagonal slot. In the algebra that equation is not one equation but two, because the operator that multiplies the mass, $\beta$, is diagonal in the frame grading while every $\alpha_\eta$ is off-diagonal in it. Projecting the source's equation on the two frame parts, and using that $\alpha_\eta$ carries each part into the other, gives the coupled pair
 
@@ -179,7 +179,7 @@ $$
 = \vec p^{\,2} + m^2\omega^2\vec r^{\,2} -3\,\hbar\,m\,\omega ,
 $$
 
-because $[Q_\eta,p_\eta]=i\,\hbar$ in each of the three spatial directions, the sum of the three gives $3\,i\,\hbar$, and $im\omega\,(3\,i\,\hbar)=-3\,\hbar\,m\,\omega$ through one more use of $i^2=-1$. In the algebra the same three terms are the diagonal of $\vec\nabla_-\vec\nabla_+$: the two shifts multiply to $-\frac{\omega^2\,k_m^{2}}{c^2}\vec r^{\,2}$, the two derivatives to $-\Delta_Q=\frac{\vec p^{2}}{\hbar^{2}}$, and the cross term of $\partial/\partial R_\eta$ with $Q_\eta$ in each direction gives the commutator, which is where the zero point comes from.
+because $[Q_\eta,p_\eta]=i\,\hbar$ in each of the three spatial directions, the sum of the three gives $3\,i\,\hbar$, and $im\omega\,(3\,i\,\hbar)=-3\,\hbar\,m\,\omega$ through one more use of $i^2=-1$. In the algebra the same three terms are the diagonal of $\vec\nabla_-\vec\nabla_+$: the two shifts multiply to $-\frac{\omega^2\,k_m^{2}}{c^2}\vec r^{\,2}$, the two derivatives to $-\Delta_\Phi=\frac{\vec p^{2}}{\hbar^{2}}$, and the cross term of $\partial/\partial R_\eta$ with $Q_\eta$ in each direction gives the commutator, which is where the zero point comes from.
 
 **The cross part.** A term with $j\ne k$ carries the product of two different spatial units, and that product is invertible again, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ with $\epsilon_{xyz}=+1$. The pair of ordered terms with the indices exchanged carries the same unit with the opposite sign, so only the antisymmetric part of the coefficient survives, and it is
 
@@ -320,7 +320,7 @@ The comparison isolates where the relativistic content lives. In the free theory
 
 Three structural statements can now be made in the algebra.
 
-**The substitution is a shift of the odd part.** The gradient $\tilde\nabla=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ has a frame-even part ($e_t\,\partial/\partial R_t$, the timelike direction) and a frame-odd part ($\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, the spacelike directions). What the substitution adds to the operator is the action $\tilde{Ξ}\mapsto-cm\omega\sum_\eta\vec e_\eta\,(Q_\eta\tilde{Ξ})\,\vec e_y$, and that action is frame-odd, since it anticommutes with $\beta$; it is also linear in the position. Multiplying the two first-order operators of the pair returns a second-order operator that is central except for one remainder: the pieces built from the two shifted gradients combine as in the free case, and what survives beside the centre is the spin–orbit part. In the elements it is
+**The substitution is a shift of the odd part.** The gradient $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ has a frame-even part ($e_t\,\partial/\partial R_t$, the timelike direction) and a frame-odd part ($\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$, the spacelike directions). What the substitution adds to the operator is the action $\tilde{Ξ}\mapsto-cm\omega\sum_\eta\vec e_\eta\,(Q_\eta\tilde{Ξ})\,\vec e_y$, and that action is frame-odd, since it anticommutes with $\beta$; it is also linear in the position. Multiplying the two first-order operators of the pair returns a second-order operator that is central except for one remainder: the pieces built from the two shifted gradients combine as in the free case, and what survives beside the centre is the spin–orbit part. In the elements it is
 
 $$
 -2m\omega\,S=-2m\omega\sum_\eta  L_{\mathrm{orb},\eta}\,i\vec e_\eta
@@ -358,7 +358,7 @@ k_{t}^{\prime}=\frac{E}{\hbar\,c},
 k_{\Phi}=\frac{p}{\hbar},
 $$
 
-the temporal coefficient on the left and the spatial part on the right. The oscillator's substitution acts on the spatial part and on nothing else, as the paragraph *The shift of the gradient* states: $\vec p\mapsto\vec p-im\omega\beta\vec r$ is a shift of $\vec\nabla$, and the two opposite shifts $\vec\nabla_{\pm}$ supply the diagonal term $+m^{2}\omega^{2}\vec r^{\,2}$ of the boxed identity, since the raw product of the shifts, $-\omega^{2}m^{2}\vec r^{\,2}$, is flipped by the overall sign. The confining term is therefore an addition to the right-hand side, positive when the oscillator frequency is positive, and it pushes every level away from the gap. An electrostatic potential does the opposite thing in the opposite place: it is the central shift $D=\tilde\nabla_\Phi-\frac{ϙ\,a'_{t}}{\hbar}e_t$, so it moves $k_{t}^{\prime}$ by a real amount and drags the level down until it reaches $-mc^{2}$. That is the Klein step of the companion article, and its bounded form is the well whose lowest level dives at $V_0^{\mathrm{cr}}=mc^{2}[1+\sqrt{1+(n_{\mathrm{w}}\pi/(k_mL))^{2}}\,]$, as computed in *Pair Creation in a Bounded Region in Biquaternionic Form*.
+the temporal coefficient on the left and the spatial part on the right. The oscillator's substitution acts on the spatial part and on nothing else, as the paragraph *The shift of the gradient* states: $\vec p\mapsto\vec p-im\omega\beta\vec r$ is a shift of $\vec\nabla_\Phi$, and the two opposite shifts $\vec\nabla_{\pm,\Phi}$ supply the diagonal term $+m^{2}\omega^{2}\vec r^{\,2}$ of the boxed identity, since the raw product of the shifts, $-\omega^{2}m^{2}\vec r^{\,2}$, is flipped by the overall sign. The confining term is therefore an addition to the right-hand side, positive when the oscillator frequency is positive, and it pushes every level away from the gap. An electrostatic potential does the opposite thing in the opposite place: it is the central shift $D=\tilde\nabla_\Phi-\frac{ϙ\,a'_{t}}{\hbar}e_t$, so it moves $k_{t}^{\prime}$ by a real amount and drags the level down until it reaches $-mc^{2}$. That is the Klein step of the companion article, and its bounded form is the well whose lowest level dives at $V_0^{\mathrm{cr}}=mc^{2}[1+\sqrt{1+(n_{\mathrm{w}}\pi/(k_mL))^{2}}\,]$, as computed in *Pair Creation in a Bounded Region in Biquaternionic Form*.
 
 **The three confinements.** A step in the mass is the third case, and it is stable for the oscillator's reason: the mass is the chirality-mixing term, a change of it shifts no frequency, so the transmitted wave is evanescent and there is no threshold; that is the bag-model mechanism of Bardeen, Chanowitz, Drell, Weinstein and Yan, used precisely because it has no Klein threshold. Two of the three confinements are stable and one is not, and the reading is uniform: the confining term that acts off the temporal coefficient cannot create pairs, and the one that acts on it can. The oscillator has been the corpus's model of relativistic confinement, and this reading adds what the model's spectrum already implies: its confinement is of the stable kind, and the exact solvability and the pair stability are two faces of the same substitution.
 
@@ -394,7 +394,7 @@ $$
 
 with the aligned branch independent of $l$ and hence an infinitely degenerate level at $E = \pm mc^2$. In one dimension the spin–orbit term is absent and the spectrum is $E^2 = m^2c^4 +2\,\hbar\,m\,\omega c^2 n$, $n = 0,1,2,\dots$.
 
-In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\tilde{Ξ}\mapsto-cm\omega\sum_\eta\vec e_\eta\,(Q_\eta\tilde{Ξ})\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_\eta L_{\mathrm{orb},\eta}i\vec e_\eta$, which in the elements is $-\dfrac{4\omega\,k_m}{c}\sum_\eta(L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$. The zero-point cancellation is the sum of the commutator $[Q_\eta,p_\eta]=i\,\hbar$ over the three spatial directions, converted to $-3\,\hbar\,m\,\omega$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator. The spectrum also settles the question of what this confinement can do to the vacuum: since $\mathcal{Q}_+\mathcal{Q}_-\ge0$, the gap is empty at every frequency and the model cannot create pairs, whereas an electrostatic well can, once its depth passes the threshold of *Pair Creation in a Bounded Region in Biquaternionic Form*. The stability and the exact solvability are two consequences of the one substitution.
+In the biquaternion framework the substitution shifts the frame-odd part of the gradient, and in the actions its imaginary coefficient is spent on the action: the added term is $\tilde{Ξ}\mapsto-cm\omega\sum_\eta\vec e_\eta\,(Q_\eta\tilde{Ξ})\,\vec e_y$, a real coefficient times a Hermitian, frame-odd action. The product is central except for the Hermitian remainder $-2m\omega\sum_\eta L_{\mathrm{orb},\eta}i\vec e_\eta$, which in the elements is $-\dfrac{4\omega\,k_m}{c}\sum_\eta(L_{\mathrm{orb},\eta}e_t)\tilde S_{\Psi,\eta}$. The zero-point cancellation is the sum of the commutator $[Q_\eta,p_\eta]=i\,\hbar$ over the three spatial directions, converted to $-3\,\hbar\,m\,\omega$ by one factor $i^2=-1$. The zero modes of the shifted operator are the supersymmetric partner structure that the companion article develops. One field never carries the mass: the mass needs the pair, because $\tilde\nabla_\Phi^2$ is not scalar, and the whole derivation uses the one gradient and its two shifts, with no matrix, no array and no Clifford generator. The spectrum also settles the question of what this confinement can do to the vacuum: since $\mathcal{Q}_+\mathcal{Q}_-\ge0$, the gap is empty at every frequency and the model cannot create pairs, whereas an electrostatic well can, once its depth passes the threshold of *Pair Creation in a Bounded Region in Biquaternionic Form*. The stability and the exact solvability are two consequences of the one substitution.
 
 ## Summary of Notation
 
@@ -407,8 +407,8 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $\tilde\nabla_\Phi$ | The corpus gradient, $e_t\,\partial/\partial R_t+\vec e_x\,\partial/\partial R_x+\vec e_y\,\partial/\partial R_y+\vec e_z\,\partial/\partial R_z$ |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, with $\varepsilon=(1,-1,-1,-1)$ |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | The d'Alembertian; on $\mathbb{B}_{\Phi}$, $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
-| $\vec\nabla = \sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Spatial part of the gradient; $\vec\nabla\vec\nabla = -\Delta_Q$ |
-| $\vec\nabla_\pm = \vec\nabla\pm\dfrac{\omega\,k_m}{c}\vec r$ | The two non-minimal shifts of the spatial gradient |
+| $\vec\nabla_\Phi = \sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ | Spatial part of the gradient; $\vec\nabla_\Phi\vec\nabla_\Phi = -\Delta_\Phi$ |
+| $\vec\nabla_\pm = \vec\nabla_\Phi\pm\dfrac{\omega\,k_m}{c}\vec r$ | The two non-minimal shifts of the spatial gradient |
 | $\omega = -\vec e_z$, $\omega^2=-e_t$ | The pseudoscalar; the right factor carried by a velocity action |
 | $Q\mapsto aQb$ | Action on a state; the two-sided multiplication, written out |
 | $\beta:\ Q\mapsto iQ\vec e_x$ | Frame action; the single right action by $i\vec e_x$; $\beta^2=\mathrm I$ |
@@ -418,7 +418,7 @@ In the biquaternion framework the substitution shifts the frame-odd part of the 
 | $H = c\sum_\eta\alpha_\eta(p_\eta-im\omega\beta Q_\eta) + \beta mc^2$ | Dirac-oscillator Hamiltonian, the source's equation |
 | $p_\eta=-i\,\hbar\partial/\partial R_\eta$, $\vec p=\sum_\eta\vec e_\eta p_\eta$ | Corpus momentum operator, the spatial gradient in disguise |
 | $\vec p - im\omega\beta\vec r$ | Non-minimal substitution, the frame-odd shift |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, as two first-order lines on a pair of elements of $\mathbb{B}$; each line composed with its partner is $\Box$ |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, as two first-order lines on a pair of elements of $\mathbb{B}$; each line composed with its partner is $\Box_\Phi$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The chiral pair, $k_m=mc/\hbar$ |
 | $\tilde{Ξ}_{+}$, $\tilde{Ξ}_{-}$ | The two frame parts, $\beta\tilde{Ξ}_{\pm}=\pm\tilde{Ξ}_{\pm}$; large and small |
 | $\mathcal{Q}_\pm:\ \tilde{Ξ}\mapsto i\,\hbar\,\vec \nabla_{\mp}\,\tilde{Ξ}\,\omega$ | Factorised conjugate actions; $\mathcal{Q}_+\mathcal{Q}_-=\hbar^{2}\,\vec \nabla_{-}\,\vec \nabla_{+}$ |

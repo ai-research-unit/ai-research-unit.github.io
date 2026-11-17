@@ -12,9 +12,9 @@ The article runs as follows. §*One Operator, Two Readings* separates the basis 
 
 The conventions are the series'. The algebra, the invertibles, the sectors and the metric are those of *Algebra and Element Conventions* and *Frame and Metric Conventions*; the basis operators and their multiplication are those of *Matrix Representations Conventions*, and the comparison of the biquaternion algebra with the even half is the dictionary of the same article. None of them is restated here. A basis operator enters by its two multipliers, and the short names used later — the frame basis operator, the chirality basis operator, $\omega$, the three $\eta$ factors — are bound to those multipliers where they are introduced; no basis operator is named without its product being written at least once. The derivatives are the series' gradient, written once here and never as a basis operator,
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
-\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q,
+\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu},\qquad
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,
 $$
 with $\varepsilon=(1,-1,-1,-1)$, and on the material sector $\partial/\partial R_t=-i\,\partial/\partial r'_t$, so that there $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$. No basis operator of this article carries a derivative.
 
@@ -229,7 +229,7 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\,\tilde{Ξ}_{R},
 $$
-with $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector, so that eliminating one part returns $\Box\tilde{Ξ}=k_m^{2}\tilde{Ξ}$, the Klein–Gordon equation exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+with $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ on the material sector, so that eliminating one part returns $\Box_\Phi\tilde{Ξ}=k_m^{2}\tilde{Ξ}$, the Klein–Gordon equation exactly, with no overall sign left to fix. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The consequence is immediate. Set $\tilde{Ξ}_{R}=0$ in a massive field: the first member reads $0=k_m\tilde{Ξ}_{L}$, so $\tilde{Ξ}_{L}=0$ as well, and a massive field carries both parts. A field of one letter alone is not a solution. At $m=0$ the pair decouples into $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$, one member for each part, so a field of one part alone is allowed. That decoupling is the operator-level content of the statement that the letter and the helicity agree only in the massless limit.
 

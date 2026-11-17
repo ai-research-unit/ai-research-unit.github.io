@@ -22,7 +22,7 @@ The article is organised as follows. The next section fixes the field, the pairi
 
 ## The Field, the Pairing and the Two Equations
 
-The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla_\Phi$, read on the material chart $x_t=r'_t$ and $x_\eta=r_\eta$, the d'Alembertian $\Box$, the two components of the pair, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
+The conventions are those of the companion articles: the algebra and its units, the gradient $\tilde\nabla_\Phi$, read on the material chart $x_t=r'_t$ and $x_\eta=r_\eta$, the d'Alembertian $\Box_\Phi$, the two components of the pair, and the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. A bilinear of this article is a **pairing** and never an action. It is the scalar part of the product of the Hermitian conjugate of the field, one element built from the field, and the fixed element $i\vec e_x$,
 $$\mathrm{Sc}\bigl(\tilde{Ξ}^*iX\vec e_x\bigr),$$
 where $X$ is the element the bilinear reads. The fixed element $i\vec e_x$ is the only datum the pairing adds to the field, and it is the same one for every bilinear below. The **slot action** of the index $\mu$ is the action
 $$\tilde Q\longmapsto ie_\mu\tilde Q\vec e_{\nu(\mu)},$$
@@ -69,11 +69,11 @@ The **two-sided** writing is the action
 $$\tilde Q\longmapsto \sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)},$$
 and it is the one this article needs, because every bilinear above carries a right slot as well as a left one. The two writings describe one dynamics, and each is first order.
 
-The composition of the two-sided action is read slot by slot. The slot of this action is the unit $e_\mu$ on the left and $\vec e_{\nu(\mu)}$ on the right, with no factor $i$: the $i$ belongs to the **slot action** of the section above, which is what the bilinears are built from, and a sum that carried it in every slot would be the $\gamma$ display of the reference article, whose square is $-\Box$ and not $\Box$. Composed with itself, the unit slot multiplies the element by $-1$ on the time slot, because $e_t^2=+1$ and $\vec e_x^2=-1$, and by $+1$ on each spatial slot, because $\vec e_\eta^2=\vec e_y^2=-1$; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
-$$\tilde Q\longmapsto\Box\tilde Q,
+The composition of the two-sided action is read slot by slot. The slot of this action is the unit $e_\mu$ on the left and $\vec e_{\nu(\mu)}$ on the right, with no factor $i$: the $i$ belongs to the **slot action** of the section above, which is what the bilinears are built from, and a sum that carried it in every slot would be the $\gamma$ display of the reference article, whose square is $-\Box_\Phi$ and not $\Box_\Phi$. Composed with itself, the unit slot multiplies the element by $-1$ on the time slot, because $e_t^2=+1$ and $\vec e_x^2=-1$, and by $+1$ on each spatial slot, because $\vec e_\eta^2=\vec e_y^2=-1$; two different slots composed in the two orders cancel in pairs, because the derivatives commute; so the action composed with itself is
+$$\tilde Q\longmapsto\Box_\Phi\tilde Q,
 \qquad
-\Box=\sum_\eta\frac{\partial^2}{\partial x_\eta^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,$$
-which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box$ the free equation $\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)}=k_m\tilde{Ξ}$ squares to $(\Box-k_m^{2})\tilde{Ξ}=0$, the second-order equation of the reference article, and a plane wave obeys $k_{t}^{\prime2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$.
+\Box_\Phi=\sum_\eta\frac{\partial^2}{\partial x_\eta^2}-\frac{\partial^2}{\partial x_t^2}=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi,$$
+which is the corpus's d'Alembertian: $R_t=i\,x_t$ is the imaginary time, so $\partial^2/\partial R_t^2=-\partial^2/\partial x_t^2$. The verification is exact: the six cross compositions sum to zero, and the four diagonal ones to the four signs above. With this $\Box_\Phi$ the free equation $\sum_\mu e_\mu\frac{\partial\tilde{Ξ}}{\partial x_\mu}\vec e_{\nu(\mu)}=k_m\tilde{Ξ}$ squares to $(\Box_\Phi-k_m^{2})\tilde{Ξ}=0$, the second-order equation of the reference article, and a plane wave obeys $k_{t}^{\prime2}=\lvert\vec k_\Phi\rvert^{2}+k_m^{2}$.
 
 ### The Two Values and the Axial Bilinear
 
@@ -155,7 +155,7 @@ The term is the axial current multiplying the axial slot action on the field. It
 $$\Bigl((\nabla_t\tilde{Ξ})\vec e_x+\sum_\eta\vec e_\eta(\nabla_\eta\tilde{Ξ})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_\eta A_\eta\,\vec e_\eta\tilde{Ξ}\vec e_z\vec e_y=k_m\tilde{Ξ},$$
 with $A_0=0$, and the two parts are read separately.
 
-**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_\eta^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_\eta^2=\Delta_\Phi$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
+**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_\eta^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_\eta^2=\Delta_\Phi$, the spatial part of $\Box_\Phi$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
 
 ## The Local Channels and Their Sectors
 
@@ -346,7 +346,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 |---|---|
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; $\vec e_\eta^2 = -e_t$, central $i$ |
 | $\tilde Q\mapsto ie_\mu\tilde Q\vec e_{\nu(\mu)}$ | Slot action of the index $\mu$; $\nu(t)=x$, $\nu(\eta)=y$ |
-| $\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)}$ | Two-sided Dirac action; composed with itself it is $\Box$ |
+| $\sum_\mu e_\mu\frac{\partial\tilde Q}{\partial x_\mu}\vec e_{\nu(\mu)}$ | Two-sided Dirac action; composed with itself it is $\Box_\Phi$ |
 | $\mathrm{Sc}\bigl(\tilde{Ξ}^*iX\vec e_x\bigr)$ | The bilinear form; every density below is this scalar part read at one element $X$ |
 | $S_{\mathrm d}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ | Scalar density (mass channel) |
 | $P_5=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_z\vec e_x)$ | Pseudoscalar density, the parity-odd partner of $S_{\mathrm d}$; the quaternion representative $P=S_{\mathrm d}\vec e_z$ has $P\cdot P=-S_{\mathrm d}^2$, a different object from the density square $P_5^2$ |

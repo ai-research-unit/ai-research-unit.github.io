@@ -28,7 +28,7 @@ $$
 \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2 .
 $$
 
-The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. The scalar mass enters as the length $\hbar/(mc)$, so that the scalar equation is $(\Box-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\hbar/(mc)$ is the mass length.
+The biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — the unit metric $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and on the real material slice it is the interval $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$, whose one minus is the square of the $i$ in $Q_t=i q'_t$. The scalar mass enters as the length $\hbar/(mc)$, so that the scalar equation is $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\sqrt{\mu}\,\tilde{J}_{\Phi}=\frac{i\rho}{\sqrt{\epsilon}}e_t+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The reduction formula is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Here $\hbar/(mc)$ is the mass length.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $\mathsf{T}_{00}$ carries a sign in the $i r'_t$ convention: for the electromagnetic field $\mathsf{T}_{00}=-W$, while the physical energy density is $T_{tt}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -61,23 +61,23 @@ $$
 \hbar/(mc) .
 $$
 
-Because $\Box$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\xi$ the variation gives
+Because $\Box_\Phi$ is central and scalar, the field decomposes into its four components and the Euler–Lagrange equation is componentwise the scalar equation. For a real scalar component $\xi$ the variation gives
 
 $$
-\Box\xi - (k_m)^{2}\xi = 0 ,
+\Box_\Phi\xi - (k_m)^{2}\xi = 0 ,
 $$
 
 that is,
 
 $$
-\left(\Box-(k_m)^{2}\right)\tilde{Ξ} = 0 ,
+\left(\Box_\Phi-(k_m)^{2}\right)\tilde{Ξ} = 0 ,
 $$
 
 the biquaternionic Klein–Gordon equation of the companion article. The overall sign of $\mathcal{L}_\xi$ is fixed by the requirement that the energy be positive, as the stress–energy section shows; in the coordinates $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the kinetic term of $\mathcal{L}_\xi$ written out is
 
 $$
-\mathcal{L}_\xi = -\tfrac12\left(-\left(\partial\xi/\partial r'_t\right)^{2}+(\nabla\xi)^2\right)-\tfrac12(k_m)^{2}\xi^2
-= \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\nabla\xi)^2-\frac12(k_m)^{2}\xi^2 ,
+\mathcal{L}_\xi = -\tfrac12\left(-\left(\partial\xi/\partial r'_t\right)^{2}+(\vec\nabla_\Phi\xi)^2\right)-\tfrac12(k_m)^{2}\xi^2
+= \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\vec\nabla_\Phi\xi)^2-\frac12(k_m)^{2}\xi^2 ,
 $$
 
 and it is this sign that makes the energy density of the next section positive. A complex scalar field, equivalently two real scalar fields, carries the doubling that the Klein–Gordon article records.
@@ -146,14 +146,14 @@ $$
 the sign being the one that makes $T_{tt}>0$; the canonical Noether tensor is the negative of this expression, and the two differ only by the overall sign just discussed. Its components are, with $Q_t=i q'_t$ and $Q_\eta=q_\eta$, the time row carrying the minus of $i^2$,
 
 $$
-\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\nabla\xi)^2 + \frac12(k_m)^{2}\xi^2 > 0\ } ,
+\boxed{\ T_{tt} = \frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2} + \frac12(\vec\nabla_\Phi\xi)^2 + \frac12(k_m)^{2}\xi^2 > 0\ } ,
 $$
 
 $$
 T_{t\eta} = T_{\eta t} = -\frac{1}{c}\,\partial\xi/\partial r'_t\,\partial/\partial R_\eta\,\xi ,
 \qquad
 T_{j\eta} = T_{\eta j} = \partial/\partial R_j\,\xi\,\partial/\partial R_\eta\,\xi
-+ \delta_{j\eta}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\nabla\xi)^2-\frac12(k_m)^{2}\xi^2\right) .
++ \delta_{j\eta}\left(\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}-\frac12(\vec\nabla_\Phi\xi)^2-\frac12(k_m)^{2}\xi^2\right) .
 $$
 
 For a right-moving massless wave, $\xi=f(x-r'_{t})$, these reduce to $T_{tt}=T_{xx}=(\partial\xi/\partial r_x)^2$ and $T_{tx}=T_{tt}$, the null-field pattern of a single traveling wave.
@@ -297,7 +297,7 @@ $$
 The component $\nu=0$ of this statement is the **Poynting theorem**,
 
 $$
-\partial/\partial r'_t W + \nabla\cdot\vec S + \vec E\cdot\vec J = 0 ,
+\partial/\partial r'_t W + \vec\nabla_\Phi\cdot\vec S + \vec E\cdot\vec J = 0 ,
 $$
 
 the $\nu=k$ components are the momentum-balance equations that underlie radiation pressure, and the biquaternionic form of the whole statement is the single equation
@@ -348,7 +348,7 @@ $$
 \hbar/(mc),
 $$
 
-has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=0$, and the electromagnetic action
+has the Euler–Lagrange equation $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$, and the electromagnetic action
 
 $$
 S_{\mathrm{em}} = -\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\,d^4r ,
@@ -361,7 +361,7 @@ has the equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$, wit
 The scalar stress–energy is $T_{\mu\nu}=\partial/\partial R_\mu\,\xi\partial/\partial R_\nu\,\xi+\delta_{\mu\nu}\mathcal{L}_\xi$, with
 
 $$
-T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12(k_m)^{2}\xi^2>0,
+T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\vec\nabla_\Phi\xi)^2+\frac12(k_m)^{2}\xi^2>0,
 \qquad
 \sum_\mu\partial/\partial R_\mu T_{\mu\nu}=0 \ \text{on shell},
 $$
@@ -393,7 +393,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $S=\int\mathcal{L}\,d^4r$ | Action; $\mathcal{L}$ the Lagrangian density |
 | $\mathcal{L}_\xi=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\tilde{Ξ}\,\partial/\partial R_\mu\,\tilde{Ξ}^{\natural}-\tfrac12(k_m)^{2}\tilde{Ξ}\tilde{Ξ}^{\natural}$ | Scalar Lagrangian |
 | $\hbar/(mc)$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m$ is the scalar mass parameter |
-| $(\Box-(k_m)^{2})\tilde{Ξ}=0$ | Biquaternionic Klein–Gordon equation |
+| $(\Box_\Phi-(k_m)^{2})\tilde{Ξ}=0$ | Biquaternionic Klein–Gordon equation |
 | $F_{\mu\nu}=\partial/\partial R_\mu A_\nu-\partial/\partial R_\nu A_\mu$; $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength |
 | $S_{\mathrm{em}}=-\frac14\int \sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}d^4r$ | Electromagnetic action |
 | $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$; $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}_{\Phi}$ | Biquaternionic Maxwell system |
@@ -405,7 +405,7 @@ symmetric, traceless, and conserved source-free — all verified by direct compu
 | $\sum_\mu T_{Q_\mu Q_\mu}=-T_{tt}+T_{\eta\eta}=0$ | Tracelessness |
 | $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}=-f_\nu$, $\mathsf{T}_{\mu\nu}=\tfrac12\mathrm{Sc}(\tilde F\mathcal{E}_\mu\tilde F^{*}\mathcal{E}_\nu)$; plain derivative, $i r'_t$ coordinates $Q_t=i q'_t$ | Conservation with source per direction; Lorentz four-force |
 | $T_{\mu\nu}=\partial/\partial R_\mu\,\xi\partial/\partial R_\nu\,\xi+\delta_{\mu\nu}\mathcal{L}_\xi$ | Scalar stress–energy |
-| $T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\nabla\xi)^2+\frac12(k_m)^{2}\xi^2$ | Scalar energy density, positive |
+| $T_{tt}=\frac{1}{2c^2}\left(\partial\xi/\partial r'_t\right)^{2}+\frac12(\vec\nabla_\Phi\xi)^2+\frac12(k_m)^{2}\xi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

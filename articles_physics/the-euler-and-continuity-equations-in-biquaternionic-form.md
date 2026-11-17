@@ -27,11 +27,11 @@ and it is data of the fluid, not a consequence of the other equations. A fluid w
 **The three equations are these.** In the flat coordinates and with $t'=r'_t/c$ the time in seconds,
 
 $$
-\partial_{t'}\rho_{\mathrm{mass}}+\nabla\cdot\bigl(\rho_{\mathrm{mass}}\vec v\bigr)=0,
+\partial_{t'}\rho_{\mathrm{mass}}+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{mass}}\vec v\bigr)=0,
 $$
 
 $$
-\partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}+\vec f_{\mathrm{ext}},
+\partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}+\vec f_{\mathrm{ext}},
 $$
 
 $$
@@ -74,7 +74,7 @@ $$
 
 ## The Material Derivative Is a Pairing
 
-**The material derivative is the scalar product of the flow with the gradient.** With the material gradient $\tilde\nabla_\Phi=-i e_t\,\partial_{r'_t}+\vec\nabla$ and the general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu}Q_{2\mu}$, the identity is
+**The material derivative is the scalar product of the flow with the gradient.** With the material gradient $\tilde\nabla_\Phi=-i e_t\,\partial_{r'_t}+\vec\nabla_\Phi$ and the general quaternionic bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu}Q_{2\mu}$, the identity is
 
 $$
 \bigl\langle\tilde V_\Phi,\tilde\nabla_\Phi f\bigr\rangle_{\natural}=c\,\partial_{r'_t}f+\vec v\cdot\nabla f
@@ -100,7 +100,7 @@ the four-current of the markers, with the temporal slot carrying $c\rho_{\mathrm
 
 $$
 \bigl\langle\tilde\nabla_\Phi,\tilde J_\Phi\bigr\rangle_{\natural}
-=c\,\partial_{r'_t}\rho_{\mathrm{num}}+\nabla\cdot\bigl(\rho_{\mathrm{num}}\vec v\bigr)
+=c\,\partial_{r'_t}\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\vec v\bigr)
 $$
 
 holds, and the continuity equation is its vanishing. The check is the same expansion: the temporal slot gives $(-i\partial_{r'_t})(ic\rho_{\mathrm{num}})=+c\partial_{r'_t}\rho_{\mathrm{num}}$, and the three spatial slots give the divergence.
@@ -113,7 +113,7 @@ holds, and the continuity equation is its vanishing. The check is the same expan
 
 $$
 \mathrm{D}_{\mathrm{mat}}\tilde V_\Phi
-=-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}+\vec f_{\mathrm{ext}} .
+=-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}+\vec f_{\mathrm{ext}} .
 $$
 
 The left-hand side is the element whose vector part is $\mathrm{D}_{\mathrm{mat}}\vec v$ and whose scalar part is zero; the right-hand side is a pure vector because both terms are gradients and forces. The equation is therefore three real equations, one per spatial slot, and the temporal slot reads $0=0$.
@@ -184,7 +184,7 @@ The complex structure is unused. The temporal slot holds the constant $ic$, so n
 | $\langle\tilde V_\Phi\rangle_{\natural}=-c^{2}/\gamma^{2}$ | Its quaternionic norm |
 | $\gamma=1/\sqrt{1-\lvert\vec v\rvert^{2}/c^{2}}$ | Lorentz factor |
 | $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi$ | Current element |
-| $\tilde\nabla_\Phi=-i e_t\partial_{r'_t}+\vec\nabla$ | Material gradient |
+| $\tilde\nabla_\Phi=-i e_t\partial_{r'_t}+\vec\nabla_\Phi$ | Material gradient |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\sum_\mu Q_{1\mu}Q_{2\mu}$ | General quaternionic bilinear form |
 | $\mathrm{D}_{\mathrm{mat}}=c\partial_{r'_t}+\vec v\cdot\nabla$ | Material derivative |
 | $r'_t=c t'$ | Material time coordinate, a length |

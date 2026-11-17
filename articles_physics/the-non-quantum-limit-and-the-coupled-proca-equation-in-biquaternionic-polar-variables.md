@@ -26,7 +26,7 @@ exactly, for every value of the other six parameters. **The phase is the argumen
 
 **The restriction.** The word is defined for $\varrho>0$; the cone is $\varrho=0$; the limit is a statement on that domain.
 
-**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the word $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the frame a full unit; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
+**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the word $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with the frame a full unit; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
 
 ## The Word, the Norm and the Four Brackets
 
@@ -48,14 +48,14 @@ with the same four types as the Dirac chart: real central, central imaginary, He
 **The chart's tetrad.** The second-order operator reads
 
 $$
-\tilde A^{-1}\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde A
-=\sum_\mu\bigl(\tilde A^{-1}e_\mu^{\natural}\tilde A\bigr)\tilde\nabla_{\mathrm{gco},\mu}
-\Bigl(\tilde A^{-1}\tilde\nabla_{\mathrm{gco}}\tilde A\Bigr)+\text{(the frame's derivative terms)},
+\tilde A^{-1}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde A
+=\sum_\mu\bigl(\tilde A^{-1}e_\mu^{\natural}\tilde A\bigr)\tilde\nabla_{\mathrm{gco},\Phi,\mu}
+\Bigl(\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\Bigr)+\text{(the frame's derivative terms)},
 $$
 
 so **the equation is the free one written in the field's own frame**, the four units conjugated by $\tilde A$. **That conjugation is the chart's real content**, and in the limit it is the statement that the frame in which the equation is read varies slowly.
 
-**The constraint.** $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$, the covariant Lorenz condition, one real equation among eight. **At leading order it is $\kappa\cdot\tilde A_0=0$**, the transversality of the polarisation.
+**The constraint.** $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$, the covariant Lorenz condition, one real equation among eight. **At leading order it is $\kappa\cdot\tilde A_0=0$**, the transversality of the polarisation.
 
 ## The Ordering
 
@@ -134,7 +134,7 @@ $$
 
 **The four bracket types were checked against the charts' table.** Real central, central imaginary, Hermitian and real vector part, in that order; the potential joins the phase bracket's temporal slot and the boost bracket's spatial slots. **The types are the Dirac chart's and the limit's order structure follows.**
 
-**The constraint's leading order was checked.** $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ at leading order is $\kappa\cdot\tilde A_0=0$, the transversality of the polarisation. **The check is a substitution of the word's leading term.**
+**The constraint's leading order was checked.** $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ at leading order is $\kappa\cdot\tilde A_0=0$, the transversality of the polarisation. **The check is a substitution of the word's leading term.**
 
 **What was not checked.** No closed form for the invariant length in the six angles was derived, and no solution of the order-one system was integrated. **The first omission is the parent's and is recorded as a limitation of the chart**, not of the limit.
 
@@ -156,7 +156,7 @@ Order zero is the mechanical mass shell together with the transverse polarisatio
 | $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ | The norm; the phase as its argument |
 | $\tilde A^{-1}e_\mu^{\natural}\tilde A$ | The field's own tetrad |
 | $\kappa_t$, $\vec\kappa$; $\vec\pi=\hbar\vec\kappa$ | The covariant wavevector's slots; the mechanical momentum |
-| $\mathrm{Sc}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)=0$ | The covariant Lorenz constraint |
+| $\mathrm{Sc}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)=0$ | The covariant Lorenz constraint |
 | $\epsilon=1/(\pi_{\Phi}L)$ | The parameter; available here and not in the free chart |
 
 ## Further Reading

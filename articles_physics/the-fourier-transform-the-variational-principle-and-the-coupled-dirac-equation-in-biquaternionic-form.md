@@ -45,15 +45,15 @@ $$
 **The parent's action is quoted once and not re-derived.** It is
 
 $$
-S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
+S=\frac{\hbar c}{2}\int\mathrm{d}^{4}r\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R-k_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr],
 $$
 
 with
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi ,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi ,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural},
 \qquad
 k_m=\frac{mc}{\hbar},
 $$
@@ -186,10 +186,10 @@ checked to $2.2\times10^{-16}$ over the four rows below.
 **At a varying connection the symbol does not exist, and what replaces it is an operator whose one unfamiliar term is the curvature.** The parent's identity is
 
 $$
-(\tilde\nabla_{\mathrm{gco}})^{\natural}\tilde\nabla_{\mathrm{gco}}
-=\sum_\mu\tilde\nabla^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F ,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
+=\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F ,
 \qquad
-\bigl[\tilde\nabla_{\mathrm{gco},\mu},\tilde\nabla_{\mathrm{gco},\nu}\bigr]=\frac{i\,ϙ}{\hbar}\tilde F_{\mu\nu},
+\bigl[\tilde\nabla_{\mathrm{gco},\Phi,\mu},\tilde\nabla_{\mathrm{gco},\Phi,\nu}\bigr]=\frac{i\,ϙ}{\hbar}\tilde F_{\mu\nu},
 $$
 
 and it is the parent's, checked there to $1.1\times10^{-5}$ on a test function.
@@ -205,7 +205,7 @@ measured as a residual of $0.0\times10^{0}$. **A pure vector is $\natural$-antis
 **So the composed operator is a central scalar exactly when the added term vanishes.** With $\tilde F=0$ the operator is a multiple of the identity, as §*The Second Variation Is One Number, for a New Reason* measures. With $\tilde F\neq0$ it is not, and the compatibility condition
 
 $$
-\Bigl(\sum_\mu\tilde\nabla^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
+\Bigl(\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
 $$
 
 is an equation between elements and not an equation between numbers. **That is the precise sense in which the zero-pole relation stops**: the free article's relation is between a number and its inverse, and here one of the two is not a number.
@@ -306,7 +306,7 @@ On the shell the mode form vanishes — $3.6\times10^{-15}$ against $-32.554945$
 
 | Symbol | Meaning |
 | --- | --- |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ | The parent's covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi$ | The parent's covariant derivative |
 | $ϙ$ | The charge |
 | $k_m=mc/\hbar$ | The mass wave number |
 | $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$ | The symbol of the gradient; temporal slot $+ik_t'$ |

@@ -233,22 +233,22 @@ The partial derivatives commute: $\partial^2/\partial Q_\mu\partial Q_\nu F_{\ma
 The **split-biquaternion gradient** is the operator
 
 $$
-\tilde{\nabla} = e_t \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu.
+\tilde\nabla_\Phi = e_t \partial/\partial Q_t + \vec e_x \partial/\partial Q_x + \vec e_y \partial/\partial Q_y + \vec e_z \partial/\partial Q_z = \sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu.
 $$
 
 It acts on a split-biquaternion-valued function $F_{\mathrm{fn}}$ on $V$ by the rule
 
 $$
-\tilde{\nabla} F_{\mathrm{fn}} = \left(\sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu\right)\left(\sum_{\nu\in\{t,x,y,z\}} F_\nu e_\nu\right) = \sum_{\mu\in\{t,x,y,z\}} \sum_{\nu\in\{t,x,y,z\}} (\partial/\partial Q_\mu F_\nu) \, e_\mu e_\nu.
+\tilde\nabla_\Phi F_{\mathrm{fn}} = \left(\sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu\right)\left(\sum_{\nu\in\{t,x,y,z\}} F_\nu e_\nu\right) = \sum_{\mu\in\{t,x,y,z\}} \sum_{\nu\in\{t,x,y,z\}} (\partial/\partial Q_\mu F_\nu) \, e_\mu e_\nu.
 $$
 
-The tilde on $\tilde{\nabla}$ signals that it is a split-biquaternion-valued operator: its coefficients are $e_\mu$, which are quaternion units, and its "scalar" parts are the partial derivatives $\partial/\partial Q_\mu$.
+The tilde on $\tilde\nabla_\Phi$ signals that it is a split-biquaternion-valued operator: its coefficients are $e_\mu$, which are quaternion units, and its "scalar" parts are the partial derivatives $\partial/\partial Q_\mu$.
 
-Writing $F_{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1 \vec e_x + F_2 \vec e_y + F_3 \vec e_z$, we can compute $\tilde{\nabla}F_{\mathrm{fn}}$ in scalar-vector form. Separating the cases in the double sum, we obtain
+Writing $F_{\mathrm{fn}} = F_0 + \vec F$ with $\vec F = F_1 \vec e_x + F_2 \vec e_y + F_3 \vec e_z$, we can compute $\tilde\nabla_\Phi F_{\mathrm{fn}}$ in scalar-vector form. Separating the cases in the double sum, we obtain
 
 $$
 \boxed{\;
-\tilde{\nabla}F_{\mathrm{fn}} = \left(\partial/\partial Q_t F_0 - \mathrm{div}\,\vec F\right) + \left(\partial/\partial Q_t \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right)
+\tilde\nabla_\Phi F_{\mathrm{fn}} = \left(\partial/\partial Q_t F_0 - \mathrm{div}\,\vec F\right) + \left(\partial/\partial Q_t \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right)
 \;},
 $$
 
@@ -262,16 +262,16 @@ The formula is identical to the biquaternion case. The reason is that the operat
 
 ### The Quaternion Conjugate of the Gradient
 
-The **quaternion conjugate** of $\tilde{\nabla}$ is obtained by negating the vector part:
+The **quaternion conjugate** of $\tilde\nabla_\Phi$ is obtained by negating the vector part:
 
 $$
-\tilde{\nabla}^{\natural} = e_t \partial/\partial Q_t - \vec e_x \partial/\partial Q_x - \vec e_y \partial/\partial Q_y - \vec e_z \partial/\partial Q_z.
+(\tilde\nabla_\Phi)^{\natural} = e_t \partial/\partial Q_t - \vec e_x \partial/\partial Q_x - \vec e_y \partial/\partial Q_y - \vec e_z \partial/\partial Q_z.
 $$
 
-The product $\tilde{\nabla}^{\natural}F_{\mathrm{fn}}$ is computed in the same way:
+The product $(\tilde\nabla_\Phi)^{\natural}F_{\mathrm{fn}}$ is computed in the same way:
 
 $$
-\tilde{\nabla}^{\natural}F_{\mathrm{fn}} = \left(\partial/\partial Q_t F_0 + \mathrm{div}\,\vec F\right) + \left(\partial/\partial Q_t \vec F - \mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F\right).
+(\tilde\nabla_\Phi)^{\natural}F_{\mathrm{fn}} = \left(\partial/\partial Q_t F_0 + \mathrm{div}\,\vec F\right) + \left(\partial/\partial Q_t \vec F - \mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F\right).
 $$
 
 ### The d'Alembertian
@@ -279,82 +279,82 @@ $$
 The **d'Alembertian** is the second-order operator obtained by composing the gradient with its quaternion conjugate:
 
 $$
-\Box = \tilde{\nabla} \tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural} \tilde{\nabla}.
+\Box_\Phi = \tilde\nabla_\Phi (\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi.
 $$
 
 We compute both products and show that they are equal.
 
-**Computation of $\tilde{\nabla}\tilde{\nabla}^{\natural}$.** We compute $\tilde{\nabla}\tilde{\nabla}^{\natural}$ as a product of operators, using the fact that the $e_\mu$ are constants:
+**Computation of $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$.** We compute $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ as a product of operators, using the fact that the $e_\mu$ are constants:
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \left(\sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu\right)\left(\sum_{\nu\in\{t,x,y,z\}} e_\nu^{\natural} \partial/\partial Q_\nu\right),
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = \left(\sum_{\mu\in\{t,x,y,z\}} e_\mu \partial/\partial Q_\mu\right)\left(\sum_{\nu\in\{t,x,y,z\}} e_\nu^{\natural} \partial/\partial Q_\nu\right),
 $$
 
 where $e_t^{\natural} = e_t$ and $\vec e_\mu^{\natural} = -\vec e_\mu$ for $\mu = 1, 2, 3$. Expanding and separating the cases, the cross terms cancel, and we obtain
 
 $$
 \boxed{\;
-\tilde{\nabla}\tilde{\nabla}^{\natural} = e_t (\partial^2/\partial Q_t^2 + \Delta)
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = e_t (\partial^2/\partial Q_t^2 + \Delta_\Phi)
 \;},
 $$
 
-where $\Delta = \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2$ is the ordinary three-dimensional Laplacian.
+where $\Delta_\Phi = \partial^2/\partial Q_x^2 + \partial^2/\partial Q_y^2 + \partial^2/\partial Q_z^2$ is the ordinary three-dimensional Laplacian.
 
-**Computation of $\tilde{\nabla}^{\natural}\tilde{\nabla}$.** By the same computation,
+**Computation of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$.** By the same computation,
 
 $$
-\tilde{\nabla}^{\natural}\tilde{\nabla} = e_t (\partial^2/\partial Q_t^2 + \Delta).
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = e_t (\partial^2/\partial Q_t^2 + \Delta_\Phi).
 $$
 
 **Equality.** We have shown
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \left(\partial^2/\partial Q_t^2 + \Delta\right) e_t.
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \left(\partial^2/\partial Q_t^2 + \Delta_\Phi\right) e_t.
 $$
 
-The operator $\partial^2/\partial Q_t^2 + \Delta$ is the **four-dimensional Laplacian**, and we write
+The operator $\partial^2/\partial Q_t^2 + \Delta_\Phi$ is the **four-dimensional Laplacian**, and we write
 
 $$
-\Box = \partial^2/\partial Q_t^2 + \Delta.
+\Box_\Phi = \partial^2/\partial Q_t^2 + \Delta_\Phi.
 $$
 
-The operator $\Box$ is a scalar operator: it multiplies a split biquaternion by the identity $e_t$. It acts component-wise on the coefficients of $F_{\mathrm{fn}}$.
+The operator $\Box_\Phi$ is a scalar operator: it multiplies a split biquaternion by the identity $e_t$. It acts component-wise on the coefficients of $F_{\mathrm{fn}}$.
 
-### The Product $\tilde{\nabla}^2$
+### The Product $\tilde\nabla_\Phi^2$
 
-We now compute the product $\tilde{\nabla}\tilde{\nabla}$, which is different from the d'Alembertian because it uses the gradient twice, without the quaternion conjugate.
+We now compute the product $\tilde\nabla_\Phi\tilde\nabla_\Phi$, which is different from the d'Alembertian because it uses the gradient twice, without the quaternion conjugate.
 
 $$
-\tilde{\nabla}\tilde{\nabla} = \sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}} e_\mu e_\nu \partial^2/\partial Q_\mu\partial Q_\nu.
+\tilde\nabla_\Phi\tilde\nabla_\Phi = \sum_{\mu\in\{t,x,y,z\}}\sum_{\nu\in\{t,x,y,z\}} e_\mu e_\nu \partial^2/\partial Q_\mu\partial Q_\nu.
 $$
 
 Separating the cases as before, we obtain
 
 $$
 \boxed{\;
-\tilde{\nabla}\tilde{\nabla} = e_t \left(\partial^2/\partial Q_t^2 - \Delta\right) + 2\sum_{\mu=1}^{3} \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)
+\tilde\nabla_\Phi\tilde\nabla_\Phi = e_t \left(\partial^2/\partial Q_t^2 - \Delta_\Phi\right) + 2\sum_{\mu=1}^{3} \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)
 \;}.
 $$
 
 In scalar-vector form,
 
 $$
-\tilde{\nabla}\tilde{\nabla} = \left(\partial^2/\partial Q_t^2 - \Delta\right) + 2\sum_{\mu=1}^{3} \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu).
+\tilde\nabla_\Phi\tilde\nabla_\Phi = \left(\partial^2/\partial Q_t^2 - \Delta_\Phi\right) + 2\sum_{\mu=1}^{3} \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu).
 $$
 
-The scalar part is $\partial^2/\partial Q_t^2 - \Delta$, which is the **wave operator**, and the vector part is $2\sum_\mu \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)$.
+The scalar part is $\partial^2/\partial Q_t^2 - \Delta_\Phi$, which is the **wave operator**, and the vector part is $2\sum_\mu \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)$.
 
 The two products differ:
 
 $$
-\tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \left(\partial^2/\partial Q_t^2 + \Delta\right) e_t,
+\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \left(\partial^2/\partial Q_t^2 + \Delta_\Phi\right) e_t,
 $$
 
 $$
-\tilde{\nabla}\tilde{\nabla} = \left(\partial^2/\partial Q_t^2 - \Delta\right) + 2\sum_{\mu=1}^{3} \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu).
+\tilde\nabla_\Phi\tilde\nabla_\Phi = \left(\partial^2/\partial Q_t^2 - \Delta_\Phi\right) + 2\sum_{\mu=1}^{3} \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu).
 $$
 
-The d'Alembertian is a scalar operator with $\partial^2/\partial Q_t^2 + \Delta$. The product $\tilde{\nabla}\tilde{\nabla}$ is a split-biquaternion-valued operator with scalar part $\partial^2/\partial Q_t^2 - \Delta$ and vector part $2\sum_\mu \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)$.
+The d'Alembertian is a scalar operator with $\partial^2/\partial Q_t^2 + \Delta_\Phi$. The product $\tilde\nabla_\Phi\tilde\nabla_\Phi$ is a split-biquaternion-valued operator with scalar part $\partial^2/\partial Q_t^2 - \Delta_\Phi$ and vector part $2\sum_\mu \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)$.
 
 This is a key structural fact: the gradient has **two** natural second-order products, the d'Alembertian (via the conjugate) and the square (via the product with itself). The formulas are identical to the biquaternion case.
 
@@ -369,7 +369,7 @@ $$
 be a split biquaternion with real coefficients. The **split-biquaternion convective derivative** is the operator
 
 $$
-\tilde{D} = \tilde{S}^{\natural} \tilde{\nabla},
+\tilde{D} = \tilde{S}^{\natural} \tilde\nabla_\Phi,
 $$
 
 where $\tilde{S}^{\natural} = s_0 e_t - s_1 \vec e_x - s_2 \vec e_y - s_3 \vec e_z$ is the quaternion conjugate.
@@ -411,10 +411,10 @@ This contains terms that couple the four components of $\tilde{S}$ to the partia
 Because the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $F_{\mathrm{fn}} = F_{\mathrm{fn},+} \tilde\Pi_1 + F_{\mathrm{fn},-} \tilde\Pi_2$ with $F_{\mathrm{fn},\pm} \in \mathbb{H}$, the gradient acts componentwise:
 
 $$
-\tilde{\nabla} F_{\mathrm{fn}} = (\tilde{\nabla} F_{\mathrm{fn},+}) \tilde\Pi_1 + (\tilde{\nabla} F_{\mathrm{fn},-}) \tilde\Pi_2,
+\tilde\nabla_\Phi F_{\mathrm{fn}} = (\tilde\nabla_\Phi F_{\mathrm{fn},+}) \tilde\Pi_1 + (\tilde\nabla_\Phi F_{\mathrm{fn},-}) \tilde\Pi_2,
 $$
 
-where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way.
+where $\tilde\nabla_\Phi$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way.
 
 So the split biquaternion analysis is the quaternion analysis applied to each of the two idempotent components separately. This is the cleanest way to understand the structure of the theory, and it is a consequence of the semisimple structure of the algebra.
 
@@ -423,8 +423,8 @@ So the split biquaternion analysis is the quaternion analysis applied to each of
 The approach in this article is the split biquaternion analogue of the quaternionic analysis of Fueter. The key features are:
 
 - The function is defined on a four-dimensional real subspace $V \subset \mathbb{B}_{\mathrm{spl}}$, with four real coordinates.
-- The differential operators are split-biquaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\tilde{\nabla}^{\natural}$.
-- The "regular" functions are those satisfying $\tilde{\nabla}F_{\mathrm{fn}} = 0$, the split biquaternion analogue of the Cauchy–Riemann equations.
+- The differential operators are split-biquaternion-valued: the gradient $\tilde\nabla_\Phi$ and its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$.
+- The "regular" functions are those satisfying $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$, the split biquaternion analogue of the Cauchy–Riemann equations.
 
 This approach is closely related to **Clifford analysis**, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients. The split biquaternion algebra is isomorphic to the even subalgebra of a definite (Euclidean) Clifford algebra, $\mathbb{B}_{\mathrm{spl}} \cong \mathrm{Cl}_{0,4}^+ \cong \mathrm{Cl}_{4,0}^+ \cong \mathrm{Cl}_{0,3}$, and the split biquaternion analysis developed here is the four-dimensional case of the general Clifford analysis.
 
@@ -464,13 +464,13 @@ The biquaternion root set has dimension 4 (the non-trivial family is four-dimens
 
 The following questions are not answered in this article and are left for later work:
 
-1. **Invariance.** Under what transformations of the four-dimensional subspace $V$ do the operators $\tilde{\nabla}$, $\Box$, and $\tilde{\nabla}^2$ transform in a simple way?
+1. **Invariance.** Under what transformations of the four-dimensional subspace $V$ do the operators $\tilde\nabla_\Phi$, $\Box_\Phi$, and $\tilde\nabla_\Phi^2$ transform in a simple way?
 
-2. **Solutions of $\tilde{\nabla}F_{\mathrm{fn}} = 0$.** What is the structure of split-biquaternion-valued functions on $V$ that satisfy $\tilde{\nabla}F_{\mathrm{fn}} = 0$? This is the split biquaternion analogue of the Cauchy–Riemann equations.
+2. **Solutions of $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$.** What is the structure of split-biquaternion-valued functions on $V$ that satisfy $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$? This is the split biquaternion analogue of the Cauchy–Riemann equations.
 
-3. **Solutions of $\Box F_{\mathrm{fn}} = 0$.** What is the structure of solutions of the four-dimensional Laplace equation?
+3. **Solutions of $\Box_\Phi F_{\mathrm{fn}} = 0$.** What is the structure of solutions of the four-dimensional Laplace equation?
 
-4. **The convective operator.** What is the complete structure of $\tilde{D}\tilde{\nabla}$, and what does it represent mathematically?
+4. **The convective operator.** What is the complete structure of $\tilde{D}\tilde\nabla_\Phi$, and what does it represent mathematically?
 
 5. **The general case.** Can the analysis be extended from a four-dimensional subspace $V$ to the full split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$?
 
@@ -484,7 +484,7 @@ The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ is a real vector spac
 
 A direct definition of differentiability with respect to the split biquaternion variable is problematic, because of the ambiguity of left and right division and the presence of zero divisors. The standard approach is to restrict to a four-dimensional real subspace $V \subset \mathbb{B}_{\mathrm{spl}}$, with four real coordinates, and to define the differential operators on this subspace.
 
-The **split-biquaternion gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a split-biquaternion-valued first-order operator. Its quaternion conjugate $\tilde{\nabla}^{\natural}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = (\partial^2/\partial Q_t^2 + \Delta)e_t$ is a scalar second-order operator. The **square** $\tilde{\nabla}^2 = (\partial^2/\partial Q_t^2 - \Delta) + 2\sum_\mu \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)$ is a split-biquaternion-valued second-order operator. The **convective derivative** $\tilde{D} = \tilde{S}^{\natural}\tilde{\nabla}$ is a split-biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
+The **split-biquaternion gradient** $\tilde\nabla_\Phi = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a split-biquaternion-valued first-order operator. Its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$ is obtained by negating the vector part. The **d'Alembertian** $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural} = (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = (\partial^2/\partial Q_t^2 + \Delta_\Phi)e_t$ is a scalar second-order operator. The **square** $\tilde\nabla_\Phi^2 = (\partial^2/\partial Q_t^2 - \Delta_\Phi) + 2\sum_\mu \vec e_\mu \partial^2/(\partial Q_t\,\partial Q_\mu)$ is a split-biquaternion-valued second-order operator. The **convective derivative** $\tilde{D} = \tilde{S}^{\natural}\tilde\nabla_\Phi$ is a split-biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
 
 The formulas for the operators are **identical** to the biquaternion case, because the operators act on functions of four real variables and the multiplication of the coefficients is the same up to the sign of the extra unit. What is different is the algebraic structure of the domains on which the operators are defined:
 
@@ -517,10 +517,10 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $d(\tilde Q_1, \tilde Q_2) = \|\tilde Q_1 - \tilde Q_2\|$ | Distance |
 | $V$ | A four-dimensional real subspace, coordinates $Q_t, Q_x, Q_y, Q_z$ |
 | $F_{\mathrm{fn}}$ | Split-biquaternion-valued function on $V$ |
-| $\tilde{\nabla}$ | Split-biquaternion gradient |
-| $\tilde{\nabla}^{\natural}$ | Quaternion conjugate of the gradient |
-| $\Box$ | d'Alembertian (wave operator) |
-| $\tilde{\nabla}^2$ | Square of the split-biquaternion gradient |
+| $\tilde\nabla_\Phi$ | Split-biquaternion gradient |
+| $(\tilde\nabla_\Phi)^{\natural}$ | Quaternion conjugate of the gradient |
+| $\Box_\Phi$ | d'Alembertian (wave operator) |
+| $\tilde\nabla_\Phi^2$ | Square of the split-biquaternion gradient |
 | $\tilde{D}$ | Split-biquaternion convective derivative |
 | $\{\tilde{Ζ} \in \mathbb{B}_{\mathrm{spl}} : \tilde{Ζ}^2 = -1\} \cong \mathbb{S}^2\times\mathbb{S}^2$ | Root set of $-1$, a compact four-dimensional manifold |
 

@@ -38,9 +38,9 @@ for every admissible $f$. Conversely, if $E$ and $E'$ are two fundamental soluti
 
 *Proof.* The first assertion is linearity: $L(E+h)=LE+Lh=\delta$. For the converse, $L(E-E')=\delta-\delta=0$ by linearity, so the difference solves the homogeneous equation. The selection of a special fundamental solution is the extra condition that picks the decay, the growth or the support.
 
-**Example (the Newtonian potential operator).** Let $L=-\Delta$ and let $\Phi$ be the Newtonian potential of *Distributions and Fundamental Solutions*, $-\Delta\Phi=\delta$. Then $T_\Phi f=\Phi*f$ solves $-\Delta u=f$ for compactly supported $f$, and when $n\ge3$ it is the solution that vanishes at infinity; the general solution is $T_\Phi f+h$ with $h$ harmonic, and in the tempered class the ambiguity is exactly the harmonic polynomials. The operator $T_\Phi$ gains two derivatives: it maps the compactly supported distributions into $C^\infty$ away from the support of $f$, and it maps $H^s(\mathbb{R}^n)$ into $H^{s+2}_{\mathrm{loc}}(\mathbb{R}^n)$, so it inverts the Laplacian and improves regularity at the same time.
+**Example (the Newtonian potential operator).** Let $L=-\Delta_\Phi$ and let $\Phi$ be the Newtonian potential of *Distributions and Fundamental Solutions*, $-\Delta_\Phi\Phi=\delta$. Then $T_\Phi f=\Phi*f$ solves $-\Delta_\Phi u=f$ for compactly supported $f$, and when $n\ge3$ it is the solution that vanishes at infinity; the general solution is $T_\Phi f+h$ with $h$ harmonic, and in the tempered class the ambiguity is exactly the harmonic polynomials. The operator $T_\Phi$ gains two derivatives: it maps the compactly supported distributions into $C^\infty$ away from the support of $f$, and it maps $H^s(\mathbb{R}^n)$ into $H^{s+2}_{\mathrm{loc}}(\mathbb{R}^n)$, so it inverts the Laplacian and improves regularity at the same time.
 
-**Example (the heat and wave operators).** Let $L=\partial/\partial t-\Delta$ on $\mathbb{R}^n\times\mathbb{R}$ and let $E$ be the heat kernel of *Distributions and Fundamental Solutions*. Then $T_E$ is the **heat semigroup**: $(T_Ef)(x,t)=\int E(x-y,t)f(y)\,dy$ for $t>0$, $T_E$ is a strongly continuous semigroup of contractions on $L^{n}$, and it solves the Cauchy problem of the heat equation. For the wave operator $\Box=\partial^2/\partial t^2-\Delta_x$ the fundamental solution supported in the forward cone defines the **wave propagator**, and its finite support is finite propagation speed. Both operators are convolution operators of *Convolution Operators*, and their semigroup and group properties are those of *Unbounded Operators and Spectral Measures*.
+**Example (the heat and wave operators).** Let $L=\partial/\partial t-\Delta_\Phi$ on $\mathbb{R}^n\times\mathbb{R}$ and let $E$ be the heat kernel of *Distributions and Fundamental Solutions*. Then $T_E$ is the **heat semigroup**: $(T_Ef)(x,t)=\int E(x-y,t)f(y)\,dy$ for $t>0$, $T_E$ is a strongly continuous semigroup of contractions on $L^{n}$, and it solves the Cauchy problem of the heat equation. For the wave operator $\Box_\Phi=\partial^2/\partial t^2-\Delta_x$ the fundamental solution supported in the forward cone defines the **wave propagator**, and its finite support is finite propagation speed. Both operators are convolution operators of *Convolution Operators*, and their semigroup and group properties are those of *Unbounded Operators and Spectral Measures*.
 
 ### Composition and the Inverse of a Product
 
@@ -78,9 +78,9 @@ in the sense that the distribution $1/\sigma_L(\zeta)$ is the Fourier transform 
 
 | Operator $L$ | Fundamental solution $E$ | Multiplier $1/\sigma_L(\zeta)$ | Inverse on |
 |---|---|---|---|
-| $-\Delta$ | Newtonian potential $\Phi$ | $1/|\zeta|^2$ | $\mathcal{S}$, up to harmonic term |
-| $\partial/\partial t-\Delta$ | heat kernel | $1/(i\tau+|\zeta|^2)$ | causal $f$, $t>0$ |
-| $\Box$ | cone-supported solution | $1/(\tau^2-|\zeta|^2)$ | causal $f$ |
+| $-\Delta_\Phi$ | Newtonian potential $\Phi$ | $1/|\zeta|^2$ | $\mathcal{S}$, up to harmonic term |
+| $\partial/\partial t-\Delta_\Phi$ | heat kernel | $1/(i\tau+|\zeta|^2)$ | causal $f$, $t>0$ |
+| $\Box_\Phi$ | cone-supported solution | $1/(\tau^2-|\zeta|^2)$ | causal $f$ |
 | $\partial/\partial x$ | Heaviside step | $1/(i\zeta)$ | $\mathcal{S}$ modulo constants |
 | $1-d^2/dx^2$ | $\tfrac12\exp(-|x|)$ | $1/(1+\zeta^2)$ | all of $L^2$ |
 
@@ -112,7 +112,7 @@ and the operator $T_{E^{\dagger}}$ is the inverse of $L^{\dagger}$ in the same s
 
 *Proof.* The kernel of $T_E$ is $K(x,y)=E(x-y)$, so the kernel of its adjoint is $\overline{K(y,x)}=\overline{E(y-x)}=E^{\dagger}(x-y)$, which is the kernel of $T_{E^{\dagger}}$; hence $(T_E)^{\dagger}=T_{E^{\dagger}}$. Applying the adjoint to the identity $LT_E=I$ gives $T_E^{\dagger}L^{\dagger}=I$, that is $T_{E^{\dagger}}L^{\dagger}=I$, and the general equivalence between $T_GL^{\dagger}=I$ and $L^{\dagger}G=\delta$ of the first theorem yields $L^{\dagger}E^{\dagger}=\delta$.
 
-**Corollary (the self-adjoint case).** If $L=L^{\dagger}$ and $E$ is real-valued, then $E$ is even, $E(-x)=E(x)$, and the fundamental solution operator is a self-adjoint convolution operator. The Newtonian potential for $-\Delta$ and the kernel $\tfrac12\exp(-|x|)$ for $1-d^2/dx^2$ are the instances.
+**Corollary (the self-adjoint case).** If $L=L^{\dagger}$ and $E$ is real-valued, then $E$ is even, $E(-x)=E(x)$, and the fundamental solution operator is a self-adjoint convolution operator. The Newtonian potential for $-\Delta_\Phi$ and the kernel $\tfrac12\exp(-|x|)$ for $1-d^2/dx^2$ are the instances.
 
 *Proof.* The identity $L^{\dagger}E^{\dagger}=\delta$ with $L=L^{\dagger}$ and $E$ real reads $LE^{\dagger}=\delta$, so $E^{\dagger}$ is a fundamental solution of $L$; the difference $E-E^{\dagger}$ solves the homogeneous equation, and in the cases listed it vanishes because the fundamental solutions there are the ones selected by decay. Then $E^{\dagger}=E$, which is $E(-x)=E(x)$.
 
@@ -140,7 +140,7 @@ where $S$ and $S'$ are smoothing operators, and on every Sobolev space of finite
 
 *Proof.* The cut-off parametrix $\chi E$ inverts $L$ modulo a smoothing operator on the interior; the boundary correction is the solution of a boundary-value problem that removes the boundary values of the remainder, and it exists when the homogeneous problem is trivial, by the invertibility criterion of *The Green Operator*. The exact identity then follows from the approximate one by solving away the smoothing remainder, and the difference between the parametrix and the Green operator is a smoothing operator.
 
-**Example (the method of images).** For the half-space $\Omega=\{x : x_n>0\}$ with the Dirichlet condition the Green function of $-\Delta$ is
+**Example (the method of images).** For the half-space $\Omega=\{x : x_n>0\}$ with the Dirichlet condition the Green function of $-\Delta_\Phi$ is
 
 $$
 G(x,y) = \Phi(x-y) - \Phi(x-y^*) , \qquad y^* = (y_1,\dots,y_{n-1},-y_n) ,
@@ -164,8 +164,8 @@ For an operator with variable coefficients the convolution reading fails and is 
 | $\delta$ | Delta distribution |
 | $S$, $S'$ | Smoothing remainders of the parametrix |
 | $\sigma_L(\zeta)$ | Symbol of $L$ |
-| $\Phi$ | Newtonian potential, fundamental solution of $-\Delta$ |
-| $\Box$ | Wave operator $\partial^2/\partial t^2-\Delta_x$ |
+| $\Phi$ | Newtonian potential, fundamental solution of $-\Delta_\Phi$ |
+| $\Box_\Phi$ | Wave operator $\partial^2/\partial t^2-\Delta_x$ |
 | $1/\sigma_L$ | Fourier multiplier of $T_E$ |
 | $E^{\dagger}(x)=\overline{E(-x)}$ | Reflected conjugate, fundamental solution of $L^{\dagger}$ |
 | $T_{E^{\dagger}}$ | Adjoint of $T_E$, inverse of $L^{\dagger}$ |

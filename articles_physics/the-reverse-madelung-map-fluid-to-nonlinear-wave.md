@@ -21,19 +21,19 @@
 $$
 \psi=\sqrt{\rho_{\mathrm{num}}}\,e^{i\Phi/\sigma_{\mathrm{dsp}}},
 \qquad
-\vec v=\nabla\Phi ,
+\vec v=\vec\nabla_\Phi\Phi ,
 $$
 
 where $\Phi$ is the velocity potential and $\sigma_{\mathrm{dsp}}$ the dispersion constant of the wave equation, the linear equation
 
 $$
-i\sigma_{\mathrm{dsp}}\,\partial_{t'}\psi=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta\psi+V_{\mathrm{ext}}\,\psi
+i\sigma_{\mathrm{dsp}}\,\partial_{t'}\psi=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta_\Phi\psi+V_{\mathrm{ext}}\,\psi
 $$
 
 splits into two real equations. The imaginary part is the continuity equation,
 
 $$
-\partial_{t'}\rho_{\mathrm{num}}+\nabla\cdot\bigl(\rho_{\mathrm{num}}\vec v\bigr)=0,
+\partial_{t'}\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\vec v\bigr)=0,
 $$
 
 and the real part is the Hamilton–Jacobi equation with a second-gradient term,
@@ -41,12 +41,12 @@ and the real part is the Hamilton–Jacobi equation with a second-gradient term,
 $$
 \partial_{t'}\Phi+\frac{\lvert\nabla\Phi\rvert^{2}}{2}+V_{\mathrm{ext}}+Q_{\mathrm{kor}}=0,
 \qquad
-Q_{\mathrm{kor}}=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\frac{\Delta\sqrt{\rho_{\mathrm{num}}}}{\sqrt{\rho_{\mathrm{num}}}} .
+Q_{\mathrm{kor}}=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\frac{\Delta_\Phi\sqrt{\rho_{\mathrm{num}}}}{\sqrt{\rho_{\mathrm{num}}}} .
 $$
 
-Taking the gradient of the second gives the acceleration law of a pressureless fluid, with $-\nabla Q_{\mathrm{kor}}$ as its only acceleration.
+Taking the gradient of the second gives the acceleration law of a pressureless fluid, with $-\vec\nabla_\Phi Q_{\mathrm{kor}}$ as its only acceleration.
 
-**The split is exact and the second-gradient term is not optional.** It is the term that the Laplacian contributes, and it carries two derivatives of the density's square root. It is checked by expanding $-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta\psi/\psi$ into its real and imaginary parts: the two parts are the two equations above, term by term, with no remainder.
+**The split is exact and the second-gradient term is not optional.** It is the term that the Laplacian contributes, and it carries two derivatives of the density's square root. It is checked by expanding $-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta_\Phi\psi/\psi$ into its real and imaginary parts: the two parts are the two equations above, term by term, with no remainder.
 
 **One example fixes what kind of object it is.** For the Gaussian density $\rho_{\mathrm{num}}=\exp(-x^{2}/\ell^{2})$ in one dimension,
 
@@ -60,7 +60,7 @@ which is checked by differentiating twice. Two density profiles that agree at a 
 
 ## The Reverse Map
 
-**The inverse is written on the same two variables, and its output is fixed by one derivative.** Given a barotropic irrotational inviscid flow, define $\psi=\sqrt{\rho_{\mathrm{num}}}\exp(i\Phi/\sigma_{\mathrm{dsp}})$ with $\vec v=\nabla\Phi$. The continuity equation is already the imaginary part. The Euler equation becomes the real part if and only if the pressure force is the gradient of a function of the density, and the function is fixed by
+**The inverse is written on the same two variables, and its output is fixed by one derivative.** Given a barotropic irrotational inviscid flow, define $\psi=\sqrt{\rho_{\mathrm{num}}}\exp(i\Phi/\sigma_{\mathrm{dsp}})$ with $\vec v=\vec\nabla_\Phi\Phi$. The continuity equation is already the imaginary part. The Euler equation becomes the real part if and only if the pressure force is the gradient of a function of the density, and the function is fixed by
 
 $$
 \frac{\mathrm{d}V}{\mathrm{d}\rho_{\mathrm{num}}}=\frac{1}{\rho_{\mathrm{mass}}}\frac{\mathrm{d}p_{\mathrm{th}}}{\mathrm{d}\rho_{\mathrm{num}}},
@@ -71,12 +71,12 @@ $$
 Then $\psi$ solves
 
 $$
-i\sigma_{\mathrm{dsp}}\,\partial_{t'}\psi=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta\psi+V(\rho_{\mathrm{num}})\,\psi ,
+i\sigma_{\mathrm{dsp}}\,\partial_{t'}\psi=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta_\Phi\psi+V(\rho_{\mathrm{num}})\,\psi ,
 \qquad
 \rho_{\mathrm{num}}=\lvert\psi\rvert^{2} .
 $$
 
-**The relation $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$ is the Gibbs–Duhem relation in the map's variables.** It states that $V$ is the specific enthalpy, $\mathrm{d}h=\mathrm{d}p_{\mathrm{th}}/\rho_{\mathrm{mass}}$, and the identification is $V=h$. The check is one differentiation: the pressure force per unit mass is $-\nabla p_{\mathrm{th}}/\rho_{\mathrm{mass}}=-\nabla V$, and that is the acceleration the real part of the wave equation produces. $V$ is fixed up to an additive constant, and a constant shifts the frequency of the phase and nothing else.
+**The relation $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$ is the Gibbs–Duhem relation in the map's variables.** It states that $V$ is the specific enthalpy, $\mathrm{d}h=\mathrm{d}p_{\mathrm{th}}/\rho_{\mathrm{mass}}$, and the identification is $V=h$. The check is one differentiation: the pressure force per unit mass is $-\vec\nabla_\Phi p_{\mathrm{th}}/\rho_{\mathrm{mass}}=-\vec\nabla_\Phi V$, and that is the acceleration the real part of the wave equation produces. $V$ is fixed up to an additive constant, and a constant shifts the frequency of the phase and nothing else.
 
 **So the pressure law and the nonlinear term are the same function, written twice.** That is the article's content in one sentence, and it is the reason the output of the map cannot be linear while the fluid has a pressure: a non-constant $V$ is a non-constant coefficient multiplying $\psi$, and a coefficient that depends on $\lvert\psi\rvert^{2}$ is a nonlinearity.
 
@@ -87,7 +87,7 @@ $$
 **The equivalence holds on the image of the forward map, and the image is characterised by the second-gradient term.** A fluid is in the image when its Euler equation reads
 
 $$
-\partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}-\nabla Q_{\mathrm{kor}}
+\partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}-\vec\nabla_\Phi Q_{\mathrm{kor}}
 $$
 
 for some constant $\sigma_{\mathrm{dsp}}$ and some $Q_{\mathrm{kor}}$ of the form above. The first two terms are the ordinary fluid's; the third is the second-gradient term, and it is the term that the map reads as the Laplacian.
@@ -95,7 +95,7 @@ for some constant $\sigma_{\mathrm{dsp}}$ and some $Q_{\mathrm{kor}}$ of the for
 **An ordinary fluid is not in the image, and the failure is exact.** Set the second-gradient term to zero, as every first-order fluid does, and take an irrotational barotropic flow. The $\psi$ built from it obeys
 
 $$
-i\sigma_{\mathrm{dsp}}\,\partial_{t'}\psi=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta\psi+V(\rho_{\mathrm{num}})\,\psi-Q_{\mathrm{kor}}\,\psi ,
+i\sigma_{\mathrm{dsp}}\,\partial_{t'}\psi=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta_\Phi\psi+V(\rho_{\mathrm{num}})\,\psi-Q_{\mathrm{kor}}\,\psi ,
 $$
 
 which is the wave equation with one term removed by hand. The removed term is nonlocal in $\psi$: it is a second derivative of $\lvert\psi\rvert$ divided by $\lvert\psi\rvert$, which no local operator on $\psi$ reproduces. So the equation is not a wave equation of the map's family, and no choice of its coefficients makes it one.
@@ -114,20 +114,20 @@ $$
 \rho_{\mathrm{num}}=\rho_0\ \text{constant} .
 $$
 
-**It passes the velocity test, the inviscid test and the force test.** Its curl vanishes by symmetry, so $\Phi=-Q_{\mathrm{src}}/(4\pi r)$ and $\vec v=\nabla\Phi$. It is inviscid. And because the density is uniform, $\rho_{\mathrm{mass}}$ is a constant and the pressure force is a gradient by inspection, $(1/\rho_{\mathrm{mass}})\nabla p_{\mathrm{th}}=\nabla(p_{\mathrm{th}}/\rho_{\mathrm{mass}})$. Euler's equation fixes the pressure field that drives the flow, $p_{\mathrm{th}}=p_\infty-\rho_{\mathrm{mass}}Q_{\mathrm{src}}^{2}/(32\pi^{2}r^{4})$, so the flow is a genuine solution and not a kinematic guess.
+**It passes the velocity test, the inviscid test and the force test.** Its curl vanishes by symmetry, so $\Phi=-Q_{\mathrm{src}}/(4\pi r)$ and $\vec v=\vec\nabla_\Phi\Phi$. It is inviscid. And because the density is uniform, $\rho_{\mathrm{mass}}$ is a constant and the pressure force is a gradient by inspection, $(1/\rho_{\mathrm{mass}})\vec\nabla_\Phi p_{\mathrm{th}}=\vec\nabla_\Phi(p_{\mathrm{th}}/\rho_{\mathrm{mass}})$. Euler's equation fixes the pressure field that drives the flow, $p_{\mathrm{th}}=p_\infty-\rho_{\mathrm{mass}}Q_{\mathrm{src}}^{2}/(32\pi^{2}r^{4})$, so the flow is a genuine solution and not a kinematic guess.
 
 **So the flow is irrotational, inviscid, and its pressure force is a gradient, and it is still not barotropic in the constitutive sense.** The density does not vary and the pressure does, so no law $p_{\mathrm{th}}(\rho_{\mathrm{num}})$ reproduces that field, and the map's $V(\rho_{\mathrm{num}})$ does not exist for it.
 
 **The inversion can nevertheless be performed, and its output is one residual.** With $\alpha_{\mathrm{src}}=Q_{\mathrm{src}}/(4\pi\sigma_{\mathrm{dsp}})$ the amplitude is $\psi=\sqrt{\rho_0}\,e^{-i\alpha_{\mathrm{src}}/r}$. Since $-\alpha_{\mathrm{src}}/r$ is harmonic and $\lvert\nabla(-\alpha_{\mathrm{src}}/r)\rvert^{2}=\alpha_{\mathrm{src}}^{2}/r^{4}$,
 
 $$
-\Delta\psi=-\frac{\alpha_{\mathrm{src}}^{2}}{r^{4}}\,\psi ,
+\Delta_\Phi\psi=-\frac{\alpha_{\mathrm{src}}^{2}}{r^{4}}\,\psi ,
 $$
 
 and therefore
 
 $$
-\Bigl(i\sigma_{\mathrm{dsp}}\,\partial_{t'}+\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta\Bigr)\psi
+\Bigl(i\sigma_{\mathrm{dsp}}\,\partial_{t'}+\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta_\Phi\Bigr)\psi
 =-\frac{\sigma_{\mathrm{dsp}}^{2}\alpha_{\mathrm{src}}^{2}}{2\,r^{4}}\,\psi .
 $$
 
@@ -144,7 +144,7 @@ V\ \text{constant}
 \iff
 p_{\mathrm{th}}\ \text{constant}
 \iff
-\nabla p_{\mathrm{th}}=0 ,
+\vec\nabla_\Phi p_{\mathrm{th}}=0 ,
 $$
 
 and the last is the statement that the fluid is a pressureless dust.
@@ -175,7 +175,7 @@ and for $\gamma=1$ the integral is logarithmic, $V=\kappa\ln\rho_{\mathrm{num}}$
 **The last row is the one with a physical name and the one the next article takes up.** With $\kappa=g/2$ the potential is $V=g\rho_{\mathrm{num}}=g\lvert\psi\rvert^{2}$, and the equation is
 
 $$
-i\sigma_{\mathrm{dsp}}\,\partial_{t'}\psi=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta\psi+g\lvert\psi\rvert^{2}\psi ,
+i\sigma_{\mathrm{dsp}}\,\partial_{t'}\psi=-\frac{\sigma_{\mathrm{dsp}}^{2}}{2}\Delta_\Phi\psi+g\lvert\psi\rvert^{2}\psi ,
 $$
 
 the nonlinear Schrödinger equation with a cubic nonlinearity. Its instances are the envelope of a weakly nonlinear dispersive wave train — deep-water waves, light in a nonlinear medium, Langmuir waves in a plasma — and the dilute condensate of [Superfluids and BECs: The Gross–Pitaevskii Equation as the Nonlinear Reverse Map](superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html), which is the same equation under another name.
@@ -209,7 +209,7 @@ and the fluid's nonlinearity does not distinguish the two rows. That is the reas
 
 ## The Second-Gradient Stress
 
-**The term the image carries is a stress and not a pressure, and the distinction is the reason it cannot be an equation of state.** A pressure is a function of the density's value; $Q_{\mathrm{kor}}$ is a function of the density's second derivative. The force $-\nabla Q_{\mathrm{kor}}$ is therefore the divergence of a stress that depends on gradients of the density, and such a stress is Korteweg's: he introduced it for capillarity, and it is the classical description of a diffuse interface, where the surface tension is the integral of a gradient energy across the interface.
+**The term the image carries is a stress and not a pressure, and the distinction is the reason it cannot be an equation of state.** A pressure is a function of the density's value; $Q_{\mathrm{kor}}$ is a function of the density's second derivative. The force $-\vec\nabla_\Phi Q_{\mathrm{kor}}$ is therefore the divergence of a stress that depends on gradients of the density, and such a stress is Korteweg's: he introduced it for capillarity, and it is the classical description of a diffuse interface, where the surface tension is the integral of a gradient energy across the interface.
 
 **That is why a first-order fluid is not in the image, stated in the language of material properties.** A first-order fluid's stress depends on the density and the strain rate; a second-gradient fluid's stress depends on the density's gradients as well. The map's image is the second class and not the first, and the second class is a genuine classical medium: it is the fluid of a van der Waals interface, of a capillary film, and of a dispersion-managed wave train.
 
@@ -230,7 +230,7 @@ and the fluid's nonlinearity does not distinguish the two rows. That is the reas
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That the flow $\vec v=Q_{\mathrm{src}}\vec e_r/(4\pi r^{2})$ is irrotational, inviscid and gradient-forced, and that its inversion gives $\Delta\psi=-\alpha_{\mathrm{src}}^{2}\psi/r^{4}$, by differentiation, so that the three conditions are insufficient. That the formula of the map is defined on every barotropic irrotational inviscid flow while the equivalence holds only on the image. That $V=h$ is the specific enthalpy and is fixed up to a constant. That the forward map splits the linear equation into the continuity equation and a Hamilton–Jacobi equation with the term $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta\sqrt{\rho_{\mathrm{num}}}/(2\sqrt{\rho_{\mathrm{num}}})$, by expansion. That the reverse map's nonlinear term is fixed by $\mathrm{d}V/\mathrm{d}\rho_{\mathrm{num}}=\mathrm{d}p_{\mathrm{th}}/(\rho_{\mathrm{mass}}\mathrm{d}\rho_{\mathrm{num}})$, and that the polytropic families follow by integration. That $V$ is constant exactly when $p_{\mathrm{th}}$ is, so the linear case is the pressureless one. That no combination of the fluid's data has the dimension of the dispersion constant.
+**Established.** That the flow $\vec v=Q_{\mathrm{src}}\vec e_r/(4\pi r^{2})$ is irrotational, inviscid and gradient-forced, and that its inversion gives $\Delta_\Phi\psi=-\alpha_{\mathrm{src}}^{2}\psi/r^{4}$, by differentiation, so that the three conditions are insufficient. That the formula of the map is defined on every barotropic irrotational inviscid flow while the equivalence holds only on the image. That $V=h$ is the specific enthalpy and is fixed up to a constant. That the forward map splits the linear equation into the continuity equation and a Hamilton–Jacobi equation with the term $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta_\Phi\sqrt{\rho_{\mathrm{num}}}/(2\sqrt{\rho_{\mathrm{num}}})$, by expansion. That the reverse map's nonlinear term is fixed by $\mathrm{d}V/\mathrm{d}\rho_{\mathrm{num}}=\mathrm{d}p_{\mathrm{th}}/(\rho_{\mathrm{mass}}\mathrm{d}\rho_{\mathrm{num}})$, and that the polytropic families follow by integration. That $V$ is constant exactly when $p_{\mathrm{th}}$ is, so the linear case is the pressureless one. That no combination of the fluid's data has the dimension of the dispersion constant.
 
 **Interpretation.** That the equivalence on the image rather than the formula on all fluids is the right reading of the one-way correspondence. That the second-gradient term is the term the wave equation contributes and the fluid does not is exact as an identity; that this identity *explains* the direction of the correspondence is the programme's step. That the free equation is the pressureless member is a theorem on the map's family, and calling its fluid "the pressureless second-gradient fluid" is a reading of that theorem.
 
@@ -246,7 +246,7 @@ The formula of the map is defined on every barotropic irrotational inviscid flow
 
 A flow can pass every one of the three tests and still fail. The incompressible point source is irrotational, inviscid and gradient-forced, and its inversion obeys the free equation plus the term $-\sigma_{\mathrm{dsp}}^{2}\alpha_{\mathrm{src}}^{2}\psi/(2r^{4})$: a wave equation with an external potential, which is not a law of state.
 
-The output is linear exactly when the pressure is constant. The free linear equation is the pressureless second-gradient fluid, whose only force is $-\nabla Q_{\mathrm{kor}}$.
+The output is linear exactly when the pressure is constant. The free linear equation is the pressureless second-gradient fluid, whose only force is $-\vec\nabla_\Phi Q_{\mathrm{kor}}$.
 
 One exponent indexes the nonlinear family: $\gamma=1$ logarithmic, $\gamma=4/3$ and $5/3$ for the polytropic stars, $\gamma=2$ for the cubic equation of the next article.
 
@@ -262,9 +262,9 @@ The term the image carries is a Korteweg stress and not a pressure, which is why
 | --- | --- |
 | $\psi=\sqrt{\rho_{\mathrm{num}}}e^{i\Phi/\sigma_{\mathrm{dsp}}}$ | Complex amplitude of the map |
 | $\rho_{\mathrm{num}}=\lvert\psi\rvert^{2}$ | Number density |
-| $\Phi$ | Velocity potential; $\vec v=\nabla\Phi$ |
+| $\Phi$ | Velocity potential; $\vec v=\vec\nabla_\Phi\Phi$ |
 | $\sigma_{\mathrm{dsp}}$ | Dispersion constant of the wave equation; a length squared over a time |
-| $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta\sqrt{\rho_{\mathrm{num}}}/(2\sqrt{\rho_{\mathrm{num}}})$ | Second-gradient term of the image |
+| $Q_{\mathrm{kor}}=-\sigma_{\mathrm{dsp}}^{2}\Delta_\Phi\sqrt{\rho_{\mathrm{num}}}/(2\sqrt{\rho_{\mathrm{num}}})$ | Second-gradient term of the image |
 | $V(\rho_{\mathrm{num}})$ | Nonlinear term of the reverse map |
 | $\mathrm{d}p_{\mathrm{th}}=\rho_{\mathrm{mass}}\mathrm{d}V$ | The map's Gibbs–Duhem relation |
 | $V=h$ | Specific enthalpy |

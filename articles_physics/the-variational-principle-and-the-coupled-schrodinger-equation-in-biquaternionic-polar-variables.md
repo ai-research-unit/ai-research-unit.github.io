@@ -32,7 +32,7 @@ and every other term of the Lagrangian is the free one, letter for letter. The f
 
 **What is not claimed.** No new prediction and no new solution. The polar Lagrangian is a substitution, not a new principle; the free article's closure argument — that the parameter equations are the equation's components and the Jacobian is invertible — is repeated with covariant letters and not replaced. The genuinely new statements are the four above: that the kinetic term is untouched, that the constraint structure is therefore untouched, that the potential shift is a two-number shift, and that the gauge direction of the chart is the phase.
 
-**Conventions.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar variational article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
+**Conventions.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar variational article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
 
 ## The Coupled Polar Lagrangian
 
@@ -130,7 +130,7 @@ which are the free flow's rates with the shifted numbers.
 
 $$
 S=\int dt'\,d^{3}x\Big[-\hbar\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}
--\frac{\hbar^{2}}{2m}\Big(|\nabla \varrho|^{2}+\varrho^{2}\Big|\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}\Big)
+-\frac{\hbar^{2}}{2m}\Big(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}\Big)
 -\varrho^{2}V_{\mathrm{op}}+ϙ\varphi\,\varrho^{2}\Big],
 $$
 
@@ -139,8 +139,8 @@ which is the free article's Madelung action with the two covariant replacements:
 **The three coupling pieces.** Expanding the middle term separates the coupling into three parts,
 
 $$
--\frac{\hbar^{2}}{2m}\varrho^{2}\Big|\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}
-=-\frac{\hbar^{2}}{2m}\varrho^{2}|\nabla\theta_{\mathrm{pha}}|^{2}
+-\frac{\hbar^{2}}{2m}\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}
+=-\frac{\hbar^{2}}{2m}\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}
 -\frac{\hbar ϙ}{m}\varrho^{2}\,\vec A\cdot\nabla\theta_{\mathrm{pha}}
 -\frac{ϙ^{2}}{2m}\varrho^{2}A^{2},
 $$
@@ -150,25 +150,25 @@ which are the free kinetic term, the paramagnetic term linear in $\vec A$, and t
 **The equations.** Varying $\theta_{\mathrm{pha}}$ gives the covariant continuity equation, varying $\varrho$ the covariant Hamilton–Jacobi equation with the quantum potential, and varying the sign gives nothing because the sign is a branch. The two are the polar companion's pair,
 
 $$
-\partial_{t'}\varrho^{2}+\nabla\cdot\Big(\varrho^{2}\,\frac{\nabla S-q\vec A}{m}\Big)=0,
+\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot\Big(\varrho^{2}\,\frac{\vec\nabla_\Phi S-q\vec A}{m}\Big)=0,
 \qquad
-\partial_{t'}S+\frac{|\nabla S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
+\partial_{t'}S+\frac{|\vec\nabla_\Phi S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
 $$
 
-with $S=\hbar\theta_{\mathrm{pha}}$ and $Q=-\hbar^{2}\Delta \varrho/2m\varrho$, and the article does not re-derive them: they are the Euler–Lagrange equations of the action above, and the derivation is the free article's with two substitutions.
+with $S=\hbar\theta_{\mathrm{pha}}$ and $Q=-\hbar^{2}\Delta_\Phi \varrho/2m\varrho$, and the article does not re-derive them: they are the Euler–Lagrange equations of the action above, and the derivation is the free article's with two substitutions.
 
 **The current as the action's derivative.** The vector potential's conjugate is the current:
 
 $$
 -\frac{\partial L}{\partial\vec A}
-=\frac{\hbar^{2}}{2m}\varrho^{2}\cdot 2\Big(\nabla\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big)\frac{ϙ}{\hbar}
+=\frac{\hbar^{2}}{2m}\varrho^{2}\cdot 2\Big(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big)\frac{ϙ}{\hbar}
 =ϙ\,\frac{\varrho^{2}\big(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\big)}{m}
 =ϙ\,\vec j,
 $$
 
 which is the element-form companion's identity in the chart and is one line here because the action's only $\vec A$-dependence is the modulus. The polar form of the identity is worth having because it displays the current's three pieces at once: a gradient piece, a term linear in $\vec A$ from the paramagnetic term, and a term quadratic in $\vec A$ from the diamagnetic one — and only the sum is gauge invariant.
 
-**The vorticity, unchanged in form.** The velocity is $\vec\pi/m$ and its curl is $ϙ\vec B/m$; the parameterization does not change that, because the curl of a gradient vanishes and the parameterization only names the gradient. So the free article's irrotationality statement becomes: the canonical flow is irrotational, the kinetic flow is rotational exactly where the field is, and the chart exhibits the difference as the difference between $\nabla S$ and $\vec\pi$.
+**The vorticity, unchanged in form.** The velocity is $\vec\pi/m$ and its curl is $ϙ\vec B/m$; the parameterization does not change that, because the curl of a gradient vanishes and the parameterization only names the gradient. So the free article's irrotationality statement becomes: the canonical flow is irrotational, the kinetic flow is rotational exactly where the field is, and the chart exhibits the difference as the difference between $\vec\nabla_\Phi S$ and $\vec\pi$.
 
 **What the operator setting does not have.** It has no vanishing momenta. The action is second order in the spatial derivatives and first order in time, so the momenta conjugate to $\varrho$ and to the phase are both nontrivial, and the constraint structure of the constant setting has no analogue here. The two settings' variational principles are different objects, and the article keeps them apart as the parents do.
 
@@ -237,7 +237,7 @@ The kinetic term is untouched, because the connection is central and carries no 
 In the operator setting, for the central field, the action is the Madelung action with the kinetic momentum and the potential energy,
 
 $$
-S=\int dt'\,d^{3}x\Big[-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Big(|\nabla \varrho|^{2}+\varrho^{2}\big|\nabla\theta_{\mathrm{pha}}+\tfrac{ϙ}{\hbar}\vec A\big|^{2}\Big)-\varrho^{2}V_{\mathrm{op}}+ϙ\varphi \varrho^{2}\Big],
+S=\int dt'\,d^{3}x\Big[-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Big(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}\big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\tfrac{ϙ}{\hbar}\vec A\big|^{2}\Big)-\varrho^{2}V_{\mathrm{op}}+ϙ\varphi \varrho^{2}\Big],
 $$
 
 its equations are the covariant Madelung pair, and its $\vec A$-derivative is the charge current, $-\partial L/\partial\vec A=ϙ\vec j$. The three coupling pieces are the free kinetic term, the paramagnetic term and the positive diamagnetic term.
@@ -263,7 +263,7 @@ The gauge group translates $\theta_{\mathrm{pha}}$ and nothing else, so the coup
 | $\varphi=c\,a'_t$, $\vec A$ | The electric and vector potentials |
 | $N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The charge; $p_{\theta_{\mathrm{pha}}}=-\hbar N$ |
 | $S=\hbar\theta_{\mathrm{pha}}$ | The action of the flow |
-| $Q=-\hbar^{2}\Delta \varrho/2m\varrho$ | The quantum potential |
+| $Q=-\hbar^{2}\Delta_\Phi \varrho/2m\varrho$ | The quantum potential |
 | $L$ | The Lagrangian; $K$ its kinetic term |
 | $\Gamma$, $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge function and factor |
 

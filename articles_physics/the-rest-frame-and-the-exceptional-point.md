@@ -183,7 +183,7 @@ $$
 **The discriminant of the characteristic polynomial vanishes on the stratum and nowhere else on the cone.**
 
 $$
-X^{2}-2Q_tX+N,\qquad \Delta=4Q_t^{2}-4N=-4B^{2}.
+X^{2}-2Q_tX+N,\qquad \Delta_\Phi=4Q_t^{2}-4N=-4B^{2}.
 $$
 
 **So the stratum is the locus of invertible elements with vanishing discriminant.** In the $2\times2$ matrix images of the algebra the same sentence reads: the determinant is non-zero and the discriminant is zero. The two invariants are not the same invariant, and the stratum is the proof: one of them is non-zero while the other vanishes.
@@ -191,7 +191,7 @@ $$
 **The transversality is generic on the Jordan part and undefined on the scalar line.**
 
 $$
-\nabla N=2(Q_t,\vec Q),\qquad \nabla B^{2}=2(0,\vec Q).
+\vec\nabla_\Phi N=2(Q_t,\vec Q),\qquad \vec\nabla_\Phi B^{2}=2(0,\vec Q).
 $$
 
 On the Jordan part both gradients are non-zero and they are proportional only if $Q_t=0$, which cannot happen here; so the two hypersurfaces cross transversally along $\Sigma_{10}^{\mathrm{J}}$. On the scalar line the gradient of $B^{2}$ vanishes, the cone is singular, and the question of transversality does not arise.
@@ -786,7 +786,7 @@ so the modulus exists and the word continues into a phase, a Hermitian factor an
 **The operational mark is the splitting law.**
 
 $$
-\Delta=\lambda_+-\lambda_-=2i\sqrt{B^{2}},\qquad
+\Delta_\Phi=\lambda_+-\lambda_-=2i\sqrt{B^{2}},\qquad
 B^{2}(\tilde Q+\varepsilon\tilde X)=2\varepsilon\,\tilde X\cdot\vec\Upsilon+\varepsilon^{2}B^{2}(\tilde X),
 $$
 
@@ -879,7 +879,7 @@ where $\tilde X\cdot\vec\Upsilon=\sum_kX_k\Upsilon_k$ is the bilinear form. So t
 ## Summary
 
 - $\Sigma_{10}=\{N\neq0,\ B^{2}=0\}$ is the spectral cone minus the null cone: connected, of complex dimension three and real dimension six, a cone with its apex removed, not simply connected.
-- Its elements are exactly the invertibles with a repeated eigenvalue $Q_t$, and on the cone $N=Q_t^{2}$, $\Delta=-4B^{2}$.
+- Its elements are exactly the invertibles with a repeated eigenvalue $Q_t$, and on the cone $N=Q_t^{2}$, $\Delta_\Phi=-4B^{2}$.
 - The stratum splits into the semisimple scalar line $\Sigma_{10}^{\mathrm{s}}$ and the defective Jordan part $\Sigma_{10}^{\mathrm{J}}$; the split is by the minimal polynomial and is invisible to the two predicates.
 - The scalar line is exactly the centre minus the origin: $L_{\tilde Q}=R_{\tilde Q}=Q_t\mathrm{id}$, the eigenspace is the whole algebra, and every two-term writing is non-unique.
 - On the Jordan part the centraliser is the dual numbers, its only idempotents are $0$ and $e_t$, and no non-trivial Peirce decomposition is attached to the element.
@@ -912,7 +912,7 @@ where $\tilde X\cdot\vec\Upsilon=\sum_kX_k\Upsilon_k$ is the bilinear form. So t
 | $\vec\Upsilon=\vec Q$ | the defect, a pure nilpotent |
 | $u=e_t+\vec\Upsilon$ | the unipotent element, $(u-e_t)^{2}=0$ |
 | $N=Q_t^{2}$ | the norm on the stratum |
-| $\Delta=-4B^{2}$ | the discriminant of the characteristic polynomial |
+| $\Delta_\Phi=-4B^{2}$ | the discriminant of the characteristic polynomial |
 | $e,f=e_t-e$ | a Peirce pair adapted to the defect |
 | $\mathsf M^{Q}=J_2(Q_t)$ | the Peirce block of the element |
 | $\mathbb{C}[\tilde Q]\cong\mathbb{C}[\varepsilon]/(\varepsilon^{2})$ | the dual-number centraliser |

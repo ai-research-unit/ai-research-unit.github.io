@@ -7,11 +7,11 @@ This article asks what action has the coupled Proca equation as its Euler–Lagr
 **The equation.** The coupled Proca equation is
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde F=k_m^2\tilde A,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F=k_m^2\tilde A,
 \qquad
-\tilde F=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr),
+\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr),
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 $$
 
 with $\tilde A\in\mathbb{B}$ the complex potential, $\tilde A_\Phi\in\mathbb{B}_\Phi$ the connection, and $k_m=mc/\hbar$. The element-form article derives it, states its covariance, and states the covariant Lorenz condition it implies.
@@ -90,7 +90,7 @@ with $\vec E,\vec B$ the real electric and magnetic fields. The imaginary part i
 **The Euler–Lagrange equation.** Vary $\tilde A$ and $\tilde A^{*}$ independently, which is legitimate over the complex carrier and is the standard device for a complex field, and integrate by parts once in the field term and not at all in the mass term. The result is
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde F-k_m^{2}\tilde A=0,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde F-k_m^{2}\tilde A=0,
 $$
 
 the coupled Proca equation. The two terms of the action produce the two terms of the equation and nothing else: the variation of the field term produces the derivative of the field strength, the variation of the mass term produces the mass term, and the antisymmetrization of the field strength is what makes the first survive while the second is untouched.
@@ -114,12 +114,12 @@ $$
 
 and the drift over random draws is of the same order as the term itself. So the free article's field term is not the charged field's field term. The mass term has no such difficulty, and the asymmetry between the two terms is exact and is the article's first finding in its sharpest form.
 
-**What the algebra offers instead.** Two covariant gradients give two halves, $\tilde F=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$ and its companion $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}\tilde A)$, and the pairing of one with the conjugate of the other *is* invariant:
+**What the algebra offers instead.** Two covariant gradients give two halves, $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ and its companion $\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)$, and the pairing of one with the conjugate of the other *is* invariant:
 
 $$
 \mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\,\overline{\tilde F'}\,\bigr),
 \qquad
-\tilde F'=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco}}\tilde A\bigr),
+\tilde F'=\mathrm{Vect}\bigl(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\bigr),
 $$
 
 to $10^{-15}$ over random draws, because both halves acquire the same $\lambda$ and the conjugate half acquires $\bar\lambda$. That is the object a charged field term must be built from.
@@ -135,7 +135,7 @@ to $10^{-15}$ over random draws, because both halves acquire the same $\lambda$ 
 **The charge current.** Under $\tilde A\mapsto e^{i\alpha}\tilde A$, $\tilde A^{*}\mapsto e^{-i\alpha}\tilde A^{*}$ with $\alpha$ a constant central angle, the Lagrangian is invariant: the mass term by the computation above, the field term because it is quadratic in the field and the two factors carry opposite phases *in the material sector*, where $\tilde F$ is a real slice object. The Noether charge is
 
 $$
-j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\mu}\tilde A\bigr)
+j_\mu=\mathrm{Sc}\bigl(\tilde A^{*}\,i\,\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A\bigr)
 $$
 
 with the covariant derivative in the charge, and its conservation,
@@ -150,7 +150,7 @@ follows from the equation and its conjugate. The current is the source of the in
 **The energy–momentum.** Under a translation $R_\mu\mapsto R_\mu+\epsilon_\mu$ with constant connection, the action is invariant and the stress tensor is
 
 $$
-T_{\mu\nu}=\mathrm{Re}\,\mathrm{Sc}\Bigl(\tilde F^{\natural}\,\tilde\nabla_{\mathrm{gco},\nu}\tilde A\Bigr)-\eta_{\mu\nu}\mathcal{L},
+T_{\mu\nu}=\mathrm{Re}\,\mathrm{Sc}\Bigl(\tilde F^{\natural}\,\tilde\nabla_{\mathrm{gco},\Phi,\nu}\tilde A\Bigr)-\eta_{\mu\nu}\mathcal{L},
 $$
 
 symmetric on solutions, conserved on solutions, and positive in energy for the free slice. The article does not re-derive the standard algebra of it; the free article does, and the coupling changes only the derivatives in it.
@@ -164,7 +164,7 @@ symmetric on solutions, conserved on solutions, and positive in energy for the f
 **The constraint is not imposed and it is not lost.** Varying the action gives the equation; the scalar part of the equation is the covariant Lorenz condition
 
 $$
-\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0 .
+\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0 .
 $$
 
 The element-form article proves that the curvature does not enter this trace, because the second-order operator is the sum of the squared covariant components plus a pure vector. In the variational reading, that fact has a name: the constraint is the variation with respect to the *longitudinal* part of the field, and the action's dependence on that part is through the mass term alone, because the field term depends on it only through a total derivative.
@@ -223,13 +223,13 @@ The constraint is the trace of the equation and the curvature does not enter it.
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; real on $\mathbb{B}_\Phi$ |
 | $\tilde A=i a'_t e_t+\vec A$ | Complex Proca potential, an element of $\mathbb{B}$ |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Connection, an element of $\mathbb{B}_\Phi$ |
-| $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
-| $\tilde F=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A)$ | Field strength; one half of the complex bivector |
-| $\tilde F'=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco}}\tilde A)$ | The companion half; the invariant pairing uses it |
+| $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
+| $\tilde F=\mathrm{Vect}((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A)$ | Field strength; one half of the complex bivector |
+| $\tilde F'=\mathrm{Vect}(\tilde\nabla_{\mathrm{gco},\Phi}\tilde A)$ | The companion half; the invariant pairing uses it |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $ϙ$ | Charge; a parameter |
 | $\mathcal{L}_{\mathrm{field}},\ \mathcal{L}_{\mathrm{mass}}$ | The two terms of the Lagrangian density |
-| $j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\mu}\tilde A)$ | Charge current |
+| $j_\mu=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A)$ | Charge current |
 | $T_{\mu\nu}$ | Stress tensor; trace $-k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ on the material slice |
 | $S$ | The action |
 

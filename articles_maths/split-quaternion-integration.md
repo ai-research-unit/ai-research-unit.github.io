@@ -132,7 +132,7 @@ $$
 
 the classical Green identity for the wave operator, with the normal derivative carrying the signs of the form.
 
-**Proof.** For scalar-valued $g$ each $\partial/\partial q_\mu\,g$ is scalar and commutes with the generators, so the two operators agree and the first display is the theorem. For the second, apply the first display to the pair $(Du, v)$ and to the pair $(Dv, u)$ with scalar $u, v$, and subtract: the mixed terms are $\operatorname{Sc}((Du)(Dv))$ and $\operatorname{Sc}((Dv)(Du))$, which are equal by the symmetry $\operatorname{Sc}(\tilde q_1 \tilde q_2) = \operatorname{Sc}(\tilde q_2\tilde q_1)$ of the scalar part and therefore cancel, while $\operatorname{Sc}((\Box u)v) = v\,\Box u$ because $v$ is scalar. The boundary terms are
+**Proof.** For scalar-valued $g$ each $\partial/\partial q_\mu\,g$ is scalar and commutes with the generators, so the two operators agree and the first display is the theorem. For the second, apply the first display to the pair $(Du, v)$ and to the pair $(Dv, u)$ with scalar $u, v$, and subtract: the mixed terms are $\operatorname{Sc}((Du)(Dv))$ and $\operatorname{Sc}((Dv)(Du))$, which are equal by the symmetry $\operatorname{Sc}(\tilde q_1 \tilde q_2) = \operatorname{Sc}(\tilde q_2\tilde q_1)$ of the scalar part and therefore cancel, while $\operatorname{Sc}((\Box_\Phi u)v) = v\,\Box_\Phi u$ because $v$ is scalar. The boundary terms are
 
 $$
 \int_{\partial\Omega}\operatorname{Sc}(Du\,v\,n) - \int_{\partial\Omega}\operatorname{Sc}(Dv\,u\,n) = \int_{\partial\Omega}\big(v\operatorname{Sc}(nDu) - u\operatorname{Sc}(nDv)\big),

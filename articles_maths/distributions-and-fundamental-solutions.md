@@ -263,7 +263,7 @@ $$
 E(x)=\begin{cases}\dfrac{1}{(n-2)\omega_n}|x|^{2-n}, & n\ge3,\\[4pt] -\dfrac{1}{2\pi}\log|x|, & n=2,\end{cases}
 $$
 
-and it satisfies $-\Delta E=\delta$. For $n\ge3$ one has $\Delta|x|^{2-n}=0$ away from the origin, and the distributional identity is determined by the flux across a small sphere: the radial derivative is $(2-n)r^{1-n}$ and its integral over the sphere of radius $r$ is $(2-n)\omega_n$, independent of $r$, so $-\Delta E=\delta$. For $n=2$ the radial derivative of $-\frac{1}{2\pi}\log r$ is $-\frac{1}{2\pi r}$ and its flux over a circle of radius $r$ is $-1$, giving $-\Delta E=\delta$. Hence the Poisson equation $-\Delta w=f$ is solved by $w=E*f$ whenever the convolution is defined.
+and it satisfies $-\Delta_\Phi E=\delta$. For $n\ge3$ one has $\Delta_\Phi|x|^{2-n}=0$ away from the origin, and the distributional identity is determined by the flux across a small sphere: the radial derivative is $(2-n)r^{1-n}$ and its integral over the sphere of radius $r$ is $(2-n)\omega_n$, independent of $r$, so $-\Delta_\Phi E=\delta$. For $n=2$ the radial derivative of $-\frac{1}{2\pi}\log r$ is $-\frac{1}{2\pi r}$ and its flux over a circle of radius $r$ is $-1$, giving $-\Delta_\Phi E=\delta$. Hence the Poisson equation $-\Delta_\Phi w=f$ is solved by $w=E*f$ whenever the convolution is defined.
 
 **Example (heat operator).** On $\mathbb{R}^n \times \mathbb{R}$ the **heat kernel**
 
@@ -271,9 +271,9 @@ $$
 E(x,t)=\begin{cases}(4\pi t)^{-n/2}\exp(-|x|^2/(4t)), & t>0,\\ 0, & t\le0,\end{cases}
 $$
 
-satisfies $(\partial/\partial t-\Delta)E=\delta$; it is smooth away from the orig, its integral over $x$ equals $1$ for every $t>0$ (verified by the Gaussian integral, whose value is $\pi^{n/2}$ in $n$ dimensions after the change of variable), and it tends to $\delta$ as $t \downarrow 0$, so that $E$ is the fundamental solution of the heat operator. The solution of the Cauchy problem $\partial/\partial t w-\Delta w=0$, $w(\cdot,0)=w_0$, is $w=E(t)*w_0$ where the convolution is in the space variables, and the equation is the model of the parabolic theory.
+satisfies $(\partial/\partial t-\Delta_\Phi)E=\delta$; it is smooth away from the orig, its integral over $x$ equals $1$ for every $t>0$ (verified by the Gaussian integral, whose value is $\pi^{n/2}$ in $n$ dimensions after the change of variable), and it tends to $\delta$ as $t \downarrow 0$, so that $E$ is the fundamental solution of the heat operator. The solution of the Cauchy problem $\partial/\partial t w-\Delta_\Phi w=0$, $w(\cdot,0)=w_0$, is $w=E(t)*w_0$ where the convolution is in the space variables, and the equation is the model of the parabolic theory.
 
-**Example (wave operator).** On $\mathbb{R}^{1+d}$ with coordinates $(t,x)$, the operator $\Box=\partial^2/\partial t^2-\Delta_x$ has a fundamental solution supported in the cone $\{(t,x):|x|\le t\}$, the characteristic cone of the quadratic form $\mathrm{diag}(1,-1,\dots,-1)$, given in each dimension by an explicit formula: $\frac12H(t-|x|)$ for $d=1$, $\frac{1}{2\pi}(t^2-|x|^2)^{-1/2}H(t-|x|)$ for $d=2$, and $\frac{1}{4\pi t}\delta(t-|x|)$ for $d=3$. The support property is finite propagation speed, and the formulas are those of the wave-equation article of the differential-equations extension; they are quoted here as the standard fundamental solutions.
+**Example (wave operator).** On $\mathbb{R}^{1+d}$ with coordinates $(t,x)$, the operator $\Box_\Phi=\partial^2/\partial t^2-\Delta_x$ has a fundamental solution supported in the cone $\{(t,x):|x|\le t\}$, the characteristic cone of the quadratic form $\mathrm{diag}(1,-1,\dots,-1)$, given in each dimension by an explicit formula: $\frac12H(t-|x|)$ for $d=1$, $\frac{1}{2\pi}(t^2-|x|^2)^{-1/2}H(t-|x|)$ for $d=2$, and $\frac{1}{4\pi t}\delta(t-|x|)$ for $d=3$. The support property is finite propagation speed, and the formulas are those of the wave-equation article of the differential-equations extension; they are quoted here as the standard fundamental solutions.
 
 ### Elliptic Operators and the Parametrix
 

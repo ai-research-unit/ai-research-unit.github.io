@@ -29,7 +29,7 @@ The division between what is established and what is interpretation is kept expl
 
 - **Established, and recomputed below.** The curvature identity $[D_\mu,D_\nu] = i\kappa F_{\mu\nu}$; the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$; the Yang–Mills equation $\sum_\mu D_\mu F_{\mu\nu} = J_\nu$ with the commutator term $i\kappa[\mathcal{A}_\mu,F_{\mu\nu}]$; the covariant conservation $\sum_\mu D_\mu J_\mu = 0$ and the failure of ordinary conservation; the reduction to Maxwell on a commuting generator set; and the adjoint transformation $J_{2,\nu} = \tilde U J_\nu \tilde U^{-1}$ of the source. Each was recomputed on a generic, non-constant $\mathrm{SU}(2)$-valued connection — all three generators, non-commuting — at four generic points, by exact polynomial arithmetic; no claim below rests on the abelian case.
 - **Interpretation.** Reading $\sum_\mu D_\mu F_{\mu\nu}$ as the conserved current of a non-abelian gauge field, and the field equation as the Euler–Lagrange equation of $-\tfrac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$, is the standard interpretation of the algebra, placed in the framework's notation. It is labelled as interpretation where it occurs.
-- **Gaps and defects, left visible.** The biquaternion packaging of the curvature that the parent articles use, $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does not inherit the adjoint transformation as a single algebra conjugation, and the naive product $\nabla\!\cdot\!(\sum_\nu F_{\mu\nu}e_\nu)$ is not the covariant divergence of the field equation; both are stated precisely and neither is smoothed over. The framework's inability to fix the gauge is inherited unchanged and bounds the whole construction; no gauge is chosen anywhere below.
+- **Gaps and defects, left visible.** The biquaternion packaging of the curvature that the parent articles use, $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$, does not inherit the adjoint transformation as a single algebra conjugation, and the naive product $\vec\nabla_\Phi\!\cdot\!(\sum_\nu F_{\mu\nu}e_\nu)$ is not the covariant divergence of the field equation; both are stated precisely and neither is smoothed over. The framework's inability to fix the gauge is inherited unchanged and bounds the whole construction; no gauge is chosen anywhere below.
 
 ## The Non-Abelian Curvature and the Adjoint Covariant Derivative
 
@@ -252,9 +252,9 @@ Its strength $L_{\mu\nu}=\tfrac12\left(\partial/\partial R_\mu\,N_\nu-\partial/\
 There is a second biquaternion equation in the literature whose matrix form has been called Yang–Mills-like, and it is worth separating from the construction above. In a four-part series on the differential algebra of biquaternions, L. A. Alexeyeva studies the wave equation
 
 $$
-\vec\nabla^{\pm}_\Phi B + F \circ B = G(\tau, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
+\vec\nabla_{\pm,\Phi} B + F \circ B = G(\tau, r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 \qquad
-\vec\nabla^{\pm}_\Phi = \partial/\partial \tau \pm i\,\vec\nabla_\Phi ,
+\vec\nabla_{\pm,\Phi} = \partial/\partial \tau \pm i\,\vec\nabla_\Phi ,
 $$
 
 where $\tau$ is time in units of length, $\circ$ the biquaternion product, $G$ a given biquaternionic source, and $F = f + \vec F$ a **constant** biquaternion — the *structural coefficient* — with scalar part $f$ and vector part $\vec F$ [Alexeyeva 2014]. The four papers are a sequence of specialisations of this one equation: the earlier ones treat the members equivalent to the biquaternionic Maxwell system ($F = 0$) and to the biquaternionic Dirac system ($F = f$, a complex scalar), with their generalisations, and the fourth takes the **vector-valued** coefficient $\vec F \neq 0$. The author's remark for that case is that the equation, written in matrix (tensor) form, belongs to the class of Yang–Mills equations. Recording the series here gives the corpus a single source for the Maxwell–Dirac–Yang–Mills web that the framework's own articles reach by separate routes.
@@ -264,10 +264,10 @@ where $\tau$ is time in units of length, $\circ$ the biquaternion product, $G$ a
 **Second-order form and solution.** Composing the two mutual operators for constant $\vec F$ gives the single second-order operator
 
 $$
-\left(\vec\nabla^{-}_\Phi - \vec F\right)\circ\left(\vec\nabla^{+}_\Phi + \vec F\right)
-= \Box_A + (\vec F,\vec F) + 2i(\vec F,\nabla),
+\left(\vec\nabla_{-,\Phi} - \vec F\right)\circ\left(\vec\nabla_{+,\Phi} + \vec F\right)
+= \Box_{A,\Phi} + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi),
 \qquad
-\Box_A = \partial^2/\partial \tau^2 - \Delta_\Phi ,
+\Box_{A,\Phi} = \partial^2/\partial \tau^2 - \Delta_\Phi ,
 $$
 
 so each component of $B$ solves a Klein–Gordon–Fock-type equation whose mass is the norm $(\vec F,\vec F)$ of the coefficient, plus one first-order directional term. *The Klein–Gordon Equation in Biquaternionic Form* treats that operator and the sense in which the vector coefficient makes it factor into first-order operators, which is the point of contrast with its scalar-coefficient case. The inhomogeneous equation is solved by convolution with the fundamental solution
@@ -277,9 +277,9 @@ $$
 \qquad a \in \mathbb{C},
 $$
 
-with $\tilde{Ξ}^0$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $\exp(i\theta_{\mathrm{spa}})$, the constant $a$ choosing the branch. The published form of the solution is $B = (\vec\nabla^{-}_\Phi - \vec F)(\tilde{Ξ} * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
+with $\tilde{Ξ}^0$ an arbitrary solution of the homogeneous scalar equation: a superposition of the retarded and advanced $\delta$-layers on the light cone carrying the exponential weight $\exp(i\theta_{\mathrm{spa}})$, the constant $a$ choosing the branch. The published form of the solution is $B = (\vec\nabla_{-,\Phi} - \vec F)(\tilde{Ξ} * G) + B^0$, the homogeneous part $B^0$ being built from the same kernel and arbitrary biquaternionic fields. The weight is not decoration: the Fourier denominator is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, which is *linear* in the wave vector, and that is why the kernel is a $\delta$-layer on the cone rather than the Bessel-type kernel of the ordinary massive case.
 
-**The characteristic surface, by case.** The homogeneous equation $\vec\nabla^{+}_\Phi B + \vec F\circ B = 0$ has plane-wave solutions supported on
+**The characteristic surface, by case.** The homogeneous equation $\vec\nabla_{+,\Phi} B + \vec F\circ B = 0$ has plane-wave solutions supported on
 
 $$
 S = \left\{(\omega,\vec\zeta) : (\vec\zeta + \vec F, \vec\zeta + \vec F) = \omega^2\right\},
@@ -293,7 +293,7 @@ with $(\cdot,\cdot)$ the complex-bilinear pairing. Writing $\vec F = -E - iH$ wi
 | imaginary, $\vec F = -iH$ | the plane $(\vec\zeta,H) = 0$ with the disc $\|\vec\zeta\| < \|H\|$ removed | real frequencies exist only off the disc; the weight is $\exp(-(H,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$, an exponential growth or decay along $H$ |
 | complex, $\vec F = -E - iH$ | the plane through $\vec\zeta^* = E$ perpendicular to $H$, with the disc $\|\vec\zeta - E\| < \|H\|$ removed | both effects at once, on a cone translated by $E$ |
 
-The separation of the two parts of the coefficient is the point of the exercise: its **real part** shifts the wave vector and appears as the phase of the fundamental solution, while its **imaginary part** makes the amplitude grow or decay off the surface, so a complex coefficient describes a driven or dissipative medium. When $\|\vec\zeta - E\| \leq \|H\|$ the potentials become standing waves with exponentially growing or decaying amplitude, and the elementary solutions of that regime are the ones catalogued in *Twistor Theory and Biquaternions*. Separating a harmonic time dependence, $B = B(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\theta_{\mathrm{mat}})$, replaces the mutual bigradients by $\vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \nabla$ and gives the stationary surface
+The separation of the two parts of the coefficient is the point of the exercise: its **real part** shifts the wave vector and appears as the phase of the fundamental solution, while its **imaginary part** makes the amplitude grow or decay off the surface, so a complex coefficient describes a driven or dissipative medium. When $\|\vec\zeta - E\| \leq \|H\|$ the potentials become standing waves with exponentially growing or decaying amplitude, and the elementary solutions of that regime are the ones catalogued in *Twistor Theory and Biquaternions*. Separating a harmonic time dependence, $B = B(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\exp(-i\theta_{\mathrm{mat}})$, replaces the mutual bigradients by $\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi$ and gives the stationary surface
 
 Throughout, $\theta_{\mathrm{mat}}:=\omega_n\tau$ is the Matsubara angle: $\omega_n=2\pi n/\mathcal{B}$ is real, so the thermal factor $\exp(-i\theta_{\mathrm{mat}})$ is a phase of modulus one even though it lives on the Euclidean circle. It carries the periodicity and no decay.
 
@@ -306,7 +306,7 @@ with the same complex-bilinear pairing: the circle of radius $\sqrt{\omega^2 + \
 **The stationary kernel and its Helmholtz provenance.** The stationary problem has a fundamental solution of its own, and its kernel is Helmholtz rather than d'Alembert, because a weight strips the directional term. For constant $\vec F$ the compensated operator satisfies the exact identity
 
 $$
-\left(\Delta_\Phi + 2(\vec F,\nabla) + \omega^2 + (\vec F,\vec F)\right)\left(\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\xi_{\mathrm{scl}}\right)
+\left(\Delta_\Phi + 2(\vec F,\vec\nabla_\Phi) + \omega^2 + (\vec F,\vec F)\right)\left(\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\xi_{\mathrm{scl}}\right)
 = \exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))\left(\Delta_\Phi + \omega^2\right)\xi_{\mathrm{scl}} ,
 $$
 
@@ -317,7 +317,7 @@ $$
 \qquad a \in \mathbb{C},
 $$
 
-the outgoing and incoming spherical waves dressed by the exponential weight, and the theorem's form is $B = (\vec\nabla^{\mp}_{\Phi,\omega} - \vec F)(\tilde{Ξ}_{\omega} * G) + T_\omega$ with $T_\omega$ a solution of the homogeneous stationary equation. Two caveats go with the kernel before it is copied. The source prints $\tilde{Ξ}_{\omega}$ with the sign its own Helmholtz formula $\xi = -\frac{1}{4\pi\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|}(a\exp(i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|) + (1-a)\exp(-i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|))$ does **not** carry, so the printed kernel is the negative of the one its own $(\Delta_\Phi + \omega^2)\xi = \delta$ gives; and the source fixes $\vec F = -E - iH$ in section 4.2 and $\vec F = E + iH$ in section 4.3, so the letters $E$ and $H$ swap roles between the two, one carrying the phase and the other the exponential. Both the kernel and the surfaces above are written in $\vec F$ itself for that reason, and the mirror between the printed exponent and the printed Fourier denominator is the same one *The Biquaternion D'Alembertian and Its Green's Functions* records for the series' later paper.
+the outgoing and incoming spherical waves dressed by the exponential weight, and the theorem's form is $B = (\vec\nabla_\Phi^{\mp}_{\Phi,\omega} - \vec F)(\tilde{Ξ}_{\omega} * G) + T_\omega$ with $T_\omega$ a solution of the homogeneous stationary equation. Two caveats go with the kernel before it is copied. The source prints $\tilde{Ξ}_{\omega}$ with the sign its own Helmholtz formula $\xi = -\frac{1}{4\pi\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|}(a\exp(i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|) + (1-a)\exp(-i\omega\|(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)\|))$ does **not** carry, so the printed kernel is the negative of the one its own $(\Delta_\Phi + \omega^2)\xi = \delta$ gives; and the source fixes $\vec F = -E - iH$ in section 4.2 and $\vec F = E + iH$ in section 4.3, so the letters $E$ and $H$ swap roles between the two, one carrying the phase and the other the exponential. Both the kernel and the surfaces above are written in $\vec F$ itself for that reason, and the mirror between the printed exponent and the printed Fourier denominator is the same one *The Biquaternion D'Alembertian and Its Green's Functions* records for the series' later paper.
 
 ## Open Questions
 
@@ -358,7 +358,7 @@ In the abelian limit — a commuting generator set, whether the centre $\mathbb{
 
 The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J_\nu e_\nu$ with $\sum_\nu \bigl(D_\mu F_{\mu\nu}\bigr) e_\nu = \mathcal{J}$ and $J_{2,\nu} = \tilde UJ_\nu \tilde U^{-1}$, and limited for the curvature: the representative $\mathcal{F} = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ inherits the componentwise adjoint law, not a single conjugation, and the naive one-line product picks up an index-mixing term of order unity. That limitation is stated, not papered over.
 
-A second, independent route to a biquaternion equation with a Yang–Mills-type matrix form is recorded from the literature: the biwave equation $\vec\nabla^{\pm}_\Phi B + F\circ B = G$ with a constant vector structural coefficient, whose homogeneous solutions are the algebraic twistors and whose second-order operator carries a mass $(\vec F,\vec F)$ and a directional term. It is linear, with a fixed coefficient, and therefore carries no connection and no covariant conservation law. The corpus keeps the two routes apart by name and records the matrix-form claim as a class statement, not an equivalence.
+A second, independent route to a biquaternion equation with a Yang–Mills-type matrix form is recorded from the literature: the biwave equation $\vec\nabla_{\pm,\Phi} B + F\circ B = G$ with a constant vector structural coefficient, whose homogeneous solutions are the algebraic twistors and whose second-order operator carries a mass $(\vec F,\vec F)$ and a directional term. It is linear, with a fixed coefficient, and therefore carries no connection and no covariant conservation law. The corpus keeps the two routes apart by name and records the matrix-form claim as a class statement, not an equivalence.
 
 ## Summary of Notation
 
@@ -370,8 +370,8 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; abelian gauge factor |
-| $\tilde{\nabla} = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t$ |
-| $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
+| $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient; $\partial/\partial R_t = -i\partial/\partial r'_t$ |
+| $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\mu\,\vec e_\mu\partial/\partial R_\mu$ | Quaternion-conjugate gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | d'Alembertian |
 | $[e_a,e_b] = 2\varepsilon_{abc}e_c$ | Commutator on the vector part of $\mathbb{B}_{\Phi}$ |
 | $\mathrm{SU}(2) = \mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
@@ -399,9 +399,9 @@ A second, independent route to a biquaternion equation with a Yang–Mills-type 
 | $\sqrt{\mu}\,\tilde{J}_{\Phi}$, with $\tilde J_{\Phi}=ic\rho\,e_t+\vec J$ | Parent's abelian source; plays the role of $-\mathcal{J}$ up to the parent's normalisation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\vec F = -E - iH$ | Constant complex-vector structural coefficient of the biwave equation (Alexeyeva); $E, H$ real vectors |
-| $\vec\nabla^{\pm}_\Phi = \partial/\partial \tau \pm i\nabla$, $\Box_A = \partial^2/\partial \tau^2 - \Delta_\Phi$ | Mutual bigradients and wave operator of the biwave equation; $\Box_A$ is minus this article's $\Box$ |
+| $\vec\nabla_{\pm,\Phi} = \partial/\partial \tau \pm i\nabla$, $\Box_{A,\Phi} = \partial^2/\partial \tau^2 - \Delta_\Phi$ | Mutual bigradients and wave operator of the biwave equation; $\Box_{A,\Phi}$ is minus this article's $\Box_\Phi$ |
 | $\tilde{Ξ}$, $P_{\mathrm{pw}}$ | Fundamental solution of the biwave equation; wave vector of its elementary stationary solution |
-| $\vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \nabla$ | Mutual bigradients of the time-harmonic reduction |
+| $\vec\nabla_\Phi^{\pm}_{\Phi,\omega} = \omega \pm \vec\nabla_\Phi$ | Mutual bigradients of the time-harmonic reduction |
 | $\tilde{Ξ}_{\omega}$, $\xi$ | Stationary fundamental solution (Helmholtz kernel times the weight $\exp(-(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$); the source's Helmholtz Green function |
 | $T_\omega$ | Solution of the homogeneous stationary equation |
 

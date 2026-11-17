@@ -46,7 +46,7 @@ and that the four brackets are of four types. **The limit is an ordering of thes
 **The second bracket is the four-momentum, exactly.** $\partial/\partial R_t=-i\partial/\partial r'_{t}$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so
 
 $$
-\tilde\nabla_\Phi\theta_{\mathrm{pha}}=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_{t}}e_{t}+\nabla\theta_{\mathrm{pha}}=i\frac{E}{\hbar c}e_{t}+\frac{\vec p}{\hbar}=\tilde K_\Phi ,
+\tilde\nabla_\Phi\theta_{\mathrm{pha}}=-i\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_{t}}e_{t}+\vec\nabla_\Phi\theta_{\mathrm{pha}}=i\frac{E}{\hbar c}e_{t}+\frac{\vec p}{\hbar}=\tilde K_\Phi ,
 $$
 
 with $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and $E=-\hbar c\,\partial\theta_{\mathrm{pha}}/\partial r'_{t}$. **No factor is inserted by hand**: the two temporal slots match because both are $i$ times a rate.

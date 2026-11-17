@@ -24,7 +24,7 @@ with $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ and $\tilde A_\Phi=i(\varphi
 
 **What is not claimed.** The action is not new: it is the standard action of a non-relativistic charged scalar field, written in the algebra's letters. The current it delivers is the element-form companion's current, not a second one. No new prediction and no new solution. The article's content is the closure of the variational statement — the action's reality, the variation's exactness, the invariance's exactness, and the current's identity with the equation's — and the honest record of the one thing it does not do, which is the local energy flux.
 
-**Conventions.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
+**Conventions.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
 
 ## The Coupled Action
 
@@ -90,7 +90,7 @@ which is the companion's equation, with $\vec\pi_\eta=-i\hbar D_\eta$ the mechan
 $$
 \tilde\Xi\longmapsto\lambda\tilde\Xi,
 \qquad
-\vec A\longmapsto\vec A-\nabla\Gamma,
+\vec A\longmapsto\vec A-\vec\nabla_\Phi\Gamma,
 \qquad
 \varphi\longmapsto\varphi+\partial_{t'}\Gamma .
 $$
@@ -166,7 +166,7 @@ $$
 
 which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and **it is conserved for a time-independent connection**: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.
 
-**What the article does not do.** It does not print the local energy flux. The local conservation law $\partial_{t'}e+\nabla\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.
+**What the article does not do.** It does not print the local energy flux. The local conservation law $\partial_{t'}e+\vec\nabla_\Phi\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.
 
 **The positivity.** The first term of $e$ is positive and the second is positive or negative according to the sign of $ϙ\varphi$; so the energy is bounded below whenever $ϙ\varphi$ is bounded above, which is the diamagnetic statement again and the reason the operator setting's flow is well posed for a confining potential.
 
@@ -180,7 +180,7 @@ $$
 \mathcal P_\eta=\hbar\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big)=m\,j_\eta,
 $$
 
-with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ and $\vec B=\nabla\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.
+with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.
 
 **The status of the statement.** It is the standard identity for the Schrödinger field, and the article states it and does not perform it: the computation requires the stress tensor's improvement term, and the free article's §*The Noether Currents* already points at the stress-energy article for that object. It is recorded here because it is the one place where the coupling's two entries in the equation — the covariant derivative and the potential — appear together in a single conservation law, and because §*Open Questions* lists it as the check that would close the article's variational ledger.
 
@@ -250,7 +250,7 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 | $\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$ | The coupled Hamiltonian of the constant setting |
 | $e$ | The energy density of the operator setting |
 | $\Gamma$, $\lambda=e^{iϙ\Gamma/\hbar}$ | The gauge function and factor |
-| $\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$ | The fields of the connection |
+| $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | The fields of the connection |
 
 ## Further Reading
 

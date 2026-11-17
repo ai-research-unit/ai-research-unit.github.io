@@ -4,7 +4,7 @@
 
 **The limit in one sentence.** The connection enters the parent's factorisation as one additive term inside the phase's gradient, so it changes the mass shell, the transport current and the criterion, and it changes no order: order zero becomes a mass shell in the mechanical four-momentum, and its gradient is the Lorentz force.
 
-**The parent proves the factorisation and prints the pair.** [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html) shows that for the central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\mu}(\varrho\,e^{i\theta_{\mathrm{pha}}}e_{t})=e^{i\theta_{\mathrm{pha}}}\left(\partial_\mu \varrho+i\varrho\kappa^{\mathrm{kin}}_\mu\right)e_{t}$ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$, and that the square of that parenthesis gives the two boxed equations. **The coupling is one term inside one square**, and that is the whole of its structure.
+**The parent proves the factorisation and prints the pair.** [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html) shows that for the central field the covariant derivative factors exactly, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}(\varrho\,e^{i\theta_{\mathrm{pha}}}e_{t})=e^{i\theta_{\mathrm{pha}}}\left(\partial_\mu \varrho+i\varrho\kappa^{\mathrm{kin}}_\mu\right)e_{t}$ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$, and that the square of that parenthesis gives the two boxed equations. **The coupling is one term inside one square**, and that is the whole of its structure.
 
 **The consequence for the limit is one substitution.** Every display of the free article survives with $S\to$ the mechanical action, that is with $\partial_\mu S$ replaced by $\partial_\mu S$ minus the potential's contribution. The orders are untouched because the substitution is inside a term and does not create one.
 
@@ -30,14 +30,14 @@ which is Newton's law with the magnetic force, with the relativistic relation be
 
 **The sign, stated once.** The parent writes the coupling as $ϙ$ with $ϙ=-q$; its mass shell carries $+ϙ c a'_{t}$ in the mechanical energy and its transport carries $-q\vec A$ in the current. Every display here uses $q$, the electric charge, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\mathcal E=E-q\varphi$ with $E=-c\,\partial_{r'_{t}}S$.
 
-**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
+**Conventions.** Those of the coupled polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
 
 ## The Factorisation and the Pair
 
 **The parent's exact identity.**
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\bigl(\varrho\,e^{i\theta_{\mathrm{pha}}}e_{t}\bigr)
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigl(\varrho\,e^{i\theta_{\mathrm{pha}}}e_{t}\bigr)
 =e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_\mu \varrho+i\,\varrho\,\kappa^{\mathrm{kin}}_\mu\Bigr)e_{t},
 \qquad
 \kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu,

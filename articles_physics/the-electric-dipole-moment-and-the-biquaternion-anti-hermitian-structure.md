@@ -40,14 +40,14 @@ so that $\varepsilon_0=+1$ and $\varepsilon_\eta=-1$. The weight $\varepsilon_\r
 **The two Dirac equations.** The mass is the linear Dirac pair
 
 $$
-\tilde{\nabla}_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
+\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
 $$
 
 $$
-(\tilde{\nabla}_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
+(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
 
-and the two displays are two equations, not one. Each is one-sided — the algebra acts by left multiplication on the field — and the pair is the chirality split of a single operator: the left-handed equation and the right-handed equation, coupled by the mass. The second member uses the conjugate gradient $\tilde{\nabla}^{\natural}$, a different element of the algebra; it is not the conjugate of the field, and the antilinear real structure $\flat=-{}^{*}$ is a third object, separate from both. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+and the two displays are two equations, not one. Each is one-sided — the algebra acts by left multiplication on the field — and the pair is the chirality split of a single operator: the left-handed equation and the right-handed equation, coupled by the mass. The second member uses the conjugate gradient $(\tilde\nabla_\Phi)^{\natural}$, a different element of the algebra; it is not the conjugate of the field, and the antilinear real structure $\flat=-{}^{*}$ is a third object, separate from both. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **Units.** The constants are carried, the EDM being a charge times a length, and the unit conversion is $1\ \mathrm{GeV}^{-1}=1.97327\times10^{-14}\ \mathrm{cm}$.
 

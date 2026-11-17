@@ -64,7 +64,7 @@ $$
 
 so $\flat$ acts as $-1$ on the $\mathbb{B}_{\Psi}$ part and $+1$ on the $\mathbb{B}_{\Phi}$ part. It **preserves** each sector and marks it with a sign: it is diagonal on the sector decomposition, not an exchange of the two sectors. This is a property of the algebra's real structure, not of the mass term.
 
-**It is not the mass, though it has the shape of one.** An algebra-level coupling built on $\flat$ — the single-field equation $\tilde\nabla_\PhiF = mF^\flat$ on $F\in\mathbb{B}$ — is Majorana-shaped: because $\flat$ is antilinear, such a term pairs the field with its own conjugate and is not invariant under the continuous central phase, which is exactly how a Majorana pairing differs from an ordinary Dirac mass. But it is the wrong equation for the electron, not merely a differently written one: its central-phase plane waves sit on the spacelike locus rather than on the mass shell. The electron's mass must therefore break the central phase rather than being built from $\flat$, and in this article it does — it is the off-diagonal chirality pair, and $\flat$ is used only for conjugation. The operation that exchanges the two sectors is multiplication by the central $i$, $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$.
+**It is not the mass, though it has the shape of one.** An algebra-level coupling built on $\flat$ — the single-field equation $\tilde\nabla_\Phi F = mF^\flat$ on $F\in\mathbb{B}$ — is Majorana-shaped: because $\flat$ is antilinear, such a term pairs the field with its own conjugate and is not invariant under the continuous central phase, which is exactly how a Majorana pairing differs from an ordinary Dirac mass. But it is the wrong equation for the electron, not merely a differently written one: its central-phase plane waves sit on the spacelike locus rather than on the mass shell. The electron's mass must therefore break the central phase rather than being built from $\flat$, and in this article it does — it is the off-diagonal chirality pair, and $\flat$ is used only for conjugation. The operation that exchanges the two sectors is multiplication by the central $i$, $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$.
 
 **It sets the rate at which the two sectors rotate into one another.** Factoring the rest energy out of a free plane wave gives
 
@@ -85,18 +85,18 @@ $$
 \tilde P_{\Phi} \to \tilde P_{\Phi} - ϙ\tilde A_{\Phi}, \qquad\text{equivalently}\qquad p_\mu \to p_\mu - ϙA_\mu,
 $$
 
-with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ by the gauge-covariant derivative $\tilde\nabla_{\mathrm{gco}}$ of *Operator and Calculus Conventions* and its conjugate $\tilde\nabla_{\mathrm{gco}}^{\natural}$, both carrying $+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, and derives the coupled equation
+with $ϙ$ the particle's charge; for the electron $ϙ = -e$. The precise biquaternion form of this coupling is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which replaces $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ by the gauge-covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}$ of *Operator and Calculus Conventions* and its conjugate $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$, both carrying $+\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}$, and derives the coupled equation
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde{Ξ}_{R} = k_{m_e}\tilde{Ξ}_{L}, \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde{Ξ}_{L} = k_{m_e}\tilde{Ξ}_{R},
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} = k_{m_e}\tilde{Ξ}_{L}, \qquad
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} = k_{m_e}\tilde{Ξ}_{R},
 $$
 
 and shows that it is exactly gauge covariant in the massive case as well as the massless one, the central phase passing through the linear mass pair; the charge is therefore *represented* in the framework, not derived by it.
 
 Four statements are worth separating.
 
-**The conservation law is derived.** Given the equation, a four-current is conserved. The current is the material-sector element $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j$, with $j_0\ge0$, and its conservation is the vanishing of the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$, that is $\partial j_0/\partial r'_t + \nabla\cdot\vec j = 0$. That the electron's conserved current is a material-sector object is a structural consequence of the equation, not an added assumption. What is not derived is the bilinear itself: it is not a product of the field with its own conjugate inside the algebra, because it carries an adjoint read through a form, and a pairing of two elements is not an element. It is displayed, once and in the older formulation, in the closing section of the companion article on minimal coupling, where it is also shown that no bilinear of the field alone takes its place. No step of this article uses it: the conservation law just stated is all that the sections below need.
+**The conservation law is derived.** Given the equation, a four-current is conserved. The current is the material-sector element $\tilde{J}_{\Phi} = ic\,j_0 e_t + \vec j$, with $j_0\ge0$, and its conservation is the vanishing of the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}$, that is $\partial j_0/\partial r'_t + \vec\nabla_\Phi\cdot\vec j = 0$. That the electron's conserved current is a material-sector object is a structural consequence of the equation, not an added assumption. What is not derived is the bilinear itself: it is not a product of the field with its own conjugate inside the algebra, because it carries an adjoint read through a form, and a pairing of two elements is not an element. It is displayed, once and in the older formulation, in the closing section of the companion article on minimal coupling, where it is also shown that no bilinear of the field alone takes its place. No step of this article uses it: the conservation law just stated is all that the sections below need.
 
 **The value and sign of the charge are inserted.** Nothing in the algebra fixes $e$, explains why charge is quantised, or explains why the electron and the proton have equal and opposite charge. The equation with $ϙ = -e$ and the equation with $ϙ = +e$ have the same form, related by $\tilde{A}_{\Phi}\to-\tilde{A}_{\Phi}$; the labelling of which branch is the electron is a convention. Charge conjugation makes this explicit: the equation admits a symmetry that exchanges the two frequency branches and reverses the sign of the current, and the operator that realises it is displayed in the closing section. The framework represents both signs of charge on the same footing.
 
@@ -151,19 +151,19 @@ This is the form in which the chirality is visible, and it is the form the secti
 The **two-sided equation** is the dictionary form of V. V. Kravchenko: a single equation on the algebra-valued field $F\in\mathbb{B}$,
 
 $$
-\mathcal{N}F = \Big(i\frac{\partial}{\partial r'_t}+\vec\nabla\Big)F - m\,i\,\overline{F}\,\vec e_z = 0,
+\mathcal{N}F = \Big(i\frac{\partial}{\partial r'_t}+\vec\nabla_\Phi\Big)F - m\,i\,\overline{F}\,\vec e_z = 0,
 \qquad\text{that is}\qquad
 -(\tilde\nabla_\Phi)^{\natural}F - k_m\,i\,\overline{F}\,\vec e_z = 0
 $$
 
-with $\vec\nabla = \sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
+with $\vec\nabla_\Phi = \sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ and the bar the coefficientwise complex conjugation. The time derivative and the spatial gradient act by left multiplication; the mass term acts by right multiplication through $\vec e_z$ and carries the antilinear conjugation. This is the form in which the quaternionic analysis acts — the shifted operator, the Cauchy kernel, and the integral representation of the harmonic field.
 
 | | One-sided equation | Two-sided equation |
 |---|---|---|
 | Equation | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_e}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_{m_e}\tilde{Ξ}_{R}$ | $\mathcal{N}F=0$, as displayed |
 | Field | the element $\tilde{Ξ}\in\mathbb{B}$ | the element $F\in\mathbb{B}$ |
 | Mass | the off-diagonal pairing of the two chirality values | $-k_{m_e}i\,\overline{F}\,\vec e_z$: a conjugation and a direction |
-| Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left by $i\partial/\partial r'_t$ and $\vec\nabla$; right by $\vec e_z$ in the mass |
+| Derivative | left, by $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ | left by $i\partial/\partial r'_t$ and $\vec\nabla_\Phi$; right by $\vec e_z$ in the mass |
 | Chirality | the subscript, the two values $L$ and $R$ | the same two values, carried by the right multiplication by $\vec e_z$ in the mass |
 | Use | the definition, the kinematics, and the mass term | the analytic theory and the integral representation |
 
@@ -331,7 +331,7 @@ The electron's data are not confined to either sector: state-like and field-stre
 | $\tilde K_{\Phi} = i(\omega/c)\,e_t + \vec k_\Phi$ | Four-wavevector |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign weights of the $\mathbb{B}_{\Phi}$ frame; metric in the closing section |
 | $m_e$, $e$, $\hbar$, $c$ | Electron mass, elementary charge, reduced Planck constant, speed of light |
-| $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla)F - k_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla=\sum_\eta\vec e_\eta\partial/\partial R_\eta$ | Two-sided Dirac equation of the dictionary form |
+| $\mathcal{N}F = (i\partial/\partial r'_t+\vec\nabla_\Phi)F - k_{m_e}i\,\overline{F}\,\vec e_z$, $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\partial/\partial R_\eta$ | Two-sided Dirac equation of the dictionary form |
 | $g$, $\mu_B = ec\dfrac{1}{2\,k_{m_e}}$ | Gyromagnetic factor; Bohr magneton |
 | $\chi=i\tilde{Ζ}_{\mathrm{ad}}$, $\Gamma = -iR_{\mathrm{axf},\vec e_z}$ | Central chirality grading and its representative; closing section |
 | $L_a$, $R_b$, $T_{a,b}=L_aR_b$ | Left and right multiplication and their basis operator; closing section |

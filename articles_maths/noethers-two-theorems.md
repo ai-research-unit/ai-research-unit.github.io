@@ -126,7 +126,7 @@ $$
 Its divergence computed off shell is
 
 $$
-\sum_\mu\partial/\partial x_\mu j_\mu = i\bigl(\phi\,\Box\phi^* - \bar{\phi}\Box\phi\bigr),
+\sum_\mu\partial/\partial x_\mu j_\mu = i\bigl(\phi\,\Box_\Phi\phi^* - \bar{\phi}\Box_\Phi\phi\bigr),
 $$
 
 which is precisely $-E_\phi\zeta_\phi - E_{\bar{\phi}}\zeta_{\bar\phi}$ and therefore vanishes on shell. The identity was checked on a superposition of two on-shell exponential solutions of null four-vector, where the divergence is $2.2\times10^{-13}$. This current is the ancestor of the conserved four-vector current of a complex field, and the corpus's *Noether's Theorem in Biquaternionic Form* carries its biquaternion image, the material-sector current $\tilde{J}$.
@@ -223,7 +223,7 @@ $$
 \sum_\nu\partial/\partial x_\nu j_\nu = \sum_\nu\partial/\partial x_\nu E_\nu \equiv 0 .
 $$
 
-The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to the conservation of the source. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ requires $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$, which expands to $\partial/\partial x_t\,\rho+\mathrm{div}\,\vec J=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
+The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to the conservation of the source. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde\nabla_\Phi\tilde{F}=-\sqrt{\mu}\,\tilde{J}$ requires $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J})=0$, which expands to $\partial/\partial x_t\,\rho+\mathrm{div}\,\vec J=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
 
 ## Worked Example: a Local Symmetry with a Rigid Subgroup
 
@@ -295,7 +295,7 @@ The names are frequently reversed in the literature and in informal use. The rev
 
 Noether's two theorems classify the symmetries of an action by the nature of their parameters and return two different objects. A symmetry whose parameters are constants — of the first kind, $k$ of them — gives $k$ conserved currents $j_{\mu a} = \sum_i \mathcal{L}_{\mu i}\zeta_{ia} - F_{\mu a}$, divergence-free on shell, and hence $k$ conserved charges. A symmetry whose parameters are arbitrary functions — of the second kind, $q$ of them — gives no charge: it gives $q$ differential identities among the Euler–Lagrange expressions, valid off shell, which say that the equations are not independent, that at most $N-q$ of them are independent, and that a gauge condition is needed to determine the evolution.
 
-Both theorems follow from one identity, $\delta \mathcal{L} = \sum_i E_i\delta u_i + \sum_\mu\partial/\partial x_\mu(\sum_i \mathcal{L}_{\mu i}\delta u_i)$, read with the two kinds of variation. The identity of the second theorem, $\sum_i b_iE_i - \sum_\mu\partial/\partial x_\mu(\sum_i a_{i\mu}E_i)\equiv0$ in the first-order case, is checked on the abelian gauge field, where it is $\sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu}\equiv0$ with residual exactly zero, and on a field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The identity forces the source to be conserved, $\sum_\nu\partial/\partial x_\nu j_\nu=0$, turning the conservation of the source into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\sqrt{\mu}\,\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{J})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b_i$ of its transformation does not vanish.
+Both theorems follow from one identity, $\delta \mathcal{L} = \sum_i E_i\delta u_i + \sum_\mu\partial/\partial x_\mu(\sum_i \mathcal{L}_{\mu i}\delta u_i)$, read with the two kinds of variation. The identity of the second theorem, $\sum_i b_iE_i - \sum_\mu\partial/\partial x_\mu(\sum_i a_{i\mu}E_i)\equiv0$ in the first-order case, is checked on the abelian gauge field, where it is $\sum_{\mu,\nu}\partial^2/\partial x_\nu\partial x_\mu F_{\mu\nu}\equiv0$ with residual exactly zero, and on a field with a rigid subgroup, where it is verified to $9\times10^{-14}$ against a scale of $3.7$. The identity forces the source to be conserved, $\sum_\nu\partial/\partial x_\nu j_\nu=0$, turning the conservation of the source into an integrability condition; the same conclusion is reached inside the biquaternion algebra from $\sqrt{\mu}\,\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J})=0$. A local symmetry contributes a conservation law only through a rigid subgroup, and it has one only when the algebraic part $b_i$ of its transformation does not vanish.
 
 ## Summary of Notation
 
@@ -319,7 +319,7 @@ Both theorems follow from one identity, $\delta \mathcal{L} = \sum_i E_i\delta u
 | First kind | Rigid symmetry, constant parameters |
 | Second kind | Local symmetry, arbitrary functions |
 | On shell / off shell | $E_i=0$ / not imposing $E_i=0$ |
-| $\Box = \sum_\mu\partial^2/\partial x_\mu^2$ | d'Alembertian |
+| $\Box_\Phi = \sum_\mu\partial^2/\partial x_\mu^2$ | d'Alembertian |
 
 ## Further Reading
 

@@ -147,7 +147,7 @@ $$
 
 Each sum is an operator written as an element times a scalar: the symbol $\tilde w\langle\tilde w,\cdot\rangle_{\mathrm D}$ is the action sending $\tilde{Ξ}$ to $\tilde w\,\langle\tilde w,\tilde{Ξ}\rangle_{\mathrm D}$, a product of an element with a number, and no matrix enters it. The two identities are the algebraic statement that the four solutions at fixed momentum span the amplitude space, and they are what a sum over spins uses.
 
-**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=2\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ and $j_\eta=2\,\mathrm{Sc}(\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
+**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=2\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ and $j_\eta=2\,\mathrm{Sc}(\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\vec\nabla_\Phi\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
 
 ## The bilinears
 
@@ -225,7 +225,7 @@ $$
 \mathcal{O}^2\tilde{Ξ}=-\vec\pi^2\,\tilde{Ξ}+iϙ\,\vec B\,\tilde{Ξ} ,
 $$
 
-with $\vec B=\nabla\times\vec A$. The first term is the symmetrized sum, $\tfrac12\sum_{j,\eta}\{\pi_j,\pi_\eta\}\vec e_j\vec e_\eta=-\vec\pi^2$, and the second is the commutator, $\sum_{j<\eta}[\pi_j,\pi_\eta]\vec e_j\vec e_\eta$, evaluated with $[\pi_j,\pi_\eta]=iϙ\epsilon_{j\eta l}B_l$ and $\sum_{j<\eta}\epsilon_{j\eta l}\vec e_j\vec e_\eta=\vec e_l$, which gives $iϙ\vec B$. The operator ordering is kept throughout, since $\vec p$ and $\vec A$ do not commute, and the magnetic term is exactly what survives it.
+with $\vec B=\vec\nabla_\Phi\times\vec A$. The first term is the symmetrized sum, $\tfrac12\sum_{j,\eta}\{\pi_j,\pi_\eta\}\vec e_j\vec e_\eta=-\vec\pi^2$, and the second is the commutator, $\sum_{j<\eta}[\pi_j,\pi_\eta]\vec e_j\vec e_\eta$, evaluated with $[\pi_j,\pi_\eta]=iϙ\epsilon_{j\eta l}B_l$ and $\sum_{j<\eta}\epsilon_{j\eta l}\vec e_j\vec e_\eta=\vec e_l$, which gives $iϙ\vec B$. The operator ordering is kept throughout, since $\vec p$ and $\vec A$ do not commute, and the magnetic term is exactly what survives it.
 
 With $E\to i\,\hbar\,c\partial/\partial r'_t$ and the rest energy factored out by $\tilde{Ξ}=e^{-ir'_t/(c/k_m)}\tilde{Ξ}'$, the equation becomes the **Pauli equation** for the large part:
 
@@ -367,7 +367,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $j_0,\ \vec j$, $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ | Vector current and its material-sector form |
 | $\vec S=\frac{\hbar}{2}i\vec e_\eta$, $\vec\mu=g\frac{ϙ}{2m}\vec S$ | Spin and magnetic moment |
 | $ϙ$ | Charge of the field under minimal coupling |
-| $\vec\pi=\vec p-q\vec A$, $\vec B=\nabla\times\vec A$ | Kinetic momentum and magnetic field |
+| $\vec\pi=\vec p-q\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Kinetic momentum and magnetic field |
 | $g=2$ | Gyromagnetic factor in the non-relativistic limit |
 
 ## Further Reading

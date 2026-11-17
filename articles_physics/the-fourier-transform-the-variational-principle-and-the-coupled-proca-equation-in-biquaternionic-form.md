@@ -12,7 +12,7 @@
 
 **The fourth finding is that the primary constraint survives the coupling as an absent power.** The coefficient of $A_0^{2}$ is $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$, with no $\pi_t^{2}$: measured at $1.065000000$ for $\pi_t=0.9,\,1.6,\,2.4$ while the first spatial coefficient moves from $0.060$ to $0.935$ to $2.535$. **A covariant derivative cannot put a time derivative on $A_0$**, because $F_{0\eta}$ has none.
 
-**The fifth finding is the asymmetry between the two conserved quantities.** The charge current carries no mass, because it is built from $i\tilde\nabla_{\mathrm{gco}}$ and the mass is not in the gradient; the energy carries $k_m^{2}$, because twice the scalar part is the mass term. **The charge is the phase's and the energy is the scale's**, and the article states the two as one sentence about which term of the action each one comes from.
+**The fifth finding is the asymmetry between the two conserved quantities.** The charge current carries no mass, because it is built from $i\tilde\nabla_{\mathrm{gco},\Phi}$ and the mass is not in the gradient; the energy carries $k_m^{2}$, because twice the scalar part is the mass term. **The charge is the phase's and the energy is the scale's**, and the article states the two as one sentence about which term of the action each one comes from.
 
 **The denial is stated plainly.** No sector is exchanged. The action is real, the form at a mode is a complex number, and the phase is a coordinate. **There is no new equation and no new current**; the action, the equation and both currents are the parent's.
 
@@ -21,7 +21,7 @@
 The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\longmapsto i\pi_\mu ,
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\longmapsto i\pi_\mu ,
 \qquad
 \pi_\mu=\hbar k_\mu-q A_\mu ,
 \qquad
@@ -35,7 +35,7 @@ The parent's action is quoted once and not re-derived:
 $$
 S=\int\mathrm{d}^4r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\,\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)\Bigr] ,
 \qquad
-\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco}})^{\natural}\tilde A\bigr) ,
+\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr) ,
 $$
 
 with the parent's own caveat that the field term is invariant under the phase only when the phase's square is one, and its record that the invariant pairing $\mathrm{Re}\,\mathrm{Sc}(\tilde F\overline{\tilde F'})$ does not reduce to the free field term with a constant ratio on the material slice.
@@ -145,7 +145,7 @@ so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficient
 
 **The two conserved quantities come from the two terms and they carry different constants.** The parent's charge current is a Noether current of the phase, and the phase is the mass term's symmetry; the parent's stress tensor is a Noether current of translations, and its trace is the mass term. **In frequency space the charge current's symbol carries $\pi_\mu$ and is linear in one power of the amplitude, so it carries no $k_m$; the trace carries $k_m^{2}$ and nothing else on the material slice.**
 
-**The charge's mass-independence is structural and not a cancellation.** $j_\mu=\mathrm{Sc}(\tilde A^{*}\,i\tilde\nabla_{\mathrm{gco},\mu}\tilde A)$ has the coupling in the gradient and the amplitude in both slots; the mass appears in neither. **So the charge's symbol is $-i\pi_\mu$ times the amplitude's bilinear, and the mass cannot enter because the mass is not in the operator.**
+**The charge's mass-independence is structural and not a cancellation.** $j_\mu=\mathrm{Sc}(\tilde A^{*}\,i\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A)$ has the coupling in the gradient and the amplitude in both slots; the mass appears in neither. **So the charge's symbol is $-i\pi_\mu$ times the amplitude's bilinear, and the mass cannot enter because the mass is not in the operator.**
 
 **The energy's mass-dependence is the trace's.** The parent's material-slice trace is $\sum_\mu T_{\mu\mu}\propto k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ exactly, and the form companion's symbol trace is $3\pi^{2}-4k_m^{2}$, which at $\pi^{2}=k_m^{2}$ is $-k_m^{2}$. **So the two traces agree at the shell**, and the agreement is the reason the article can state one sentence for both.
 

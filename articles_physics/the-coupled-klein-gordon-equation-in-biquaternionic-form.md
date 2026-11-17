@@ -7,14 +7,14 @@ This article couples the biquaternion Klein–Gordon field to an electromagnetic
 **The equation.**
 
 $$
-\left(\Box_{\mathrm{gco}}-k_m^{2}\right)\tilde\Xi=0,
+\left(\Box_{\mathrm{gco},\Phi}-k_m^{2}\right)\tilde\Xi=0,
 \qquad
-\Box_{\mathrm{gco}}=\sum_{\mu}\tilde\nabla_{\mathrm{gco},\mu}^{2},
+\Box_{\mathrm{gco},\Phi}=\sum_{\mu}\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2},
 \qquad
-\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu,
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu,
 $$
 
-with $\tilde\Xi\in\mathbb{B}$ the field, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ the connection of the Maxwell article restricted to its material sector, $ϙ$ the coupling, $k_m=mc/\hbar$, and the sum over the four gradient components in the corpus's convention of *Operator and Calculus Conventions*. The operator is the one the free equation uses with $\partial_\mu$ replaced by $\tilde\nabla_{\mathrm{gco},\mu}$, slot by slot; that is the whole prescription, and §*The Field Equation and the Carrier* shows what it produces.
+with $\tilde\Xi\in\mathbb{B}$ the field, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ the connection of the Maxwell article restricted to its material sector, $ϙ$ the coupling, $k_m=mc/\hbar$, and the sum over the four gradient components in the corpus's convention of *Operator and Calculus Conventions*. The operator is the one the free equation uses with $\partial_\mu$ replaced by $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$, slot by slot; that is the whole prescription, and §*The Field Equation and the Carrier* shows what it produces.
 
 **Four findings, and the second is the reason the article exists.**
 
@@ -23,12 +23,12 @@ with $\tilde\Xi\in\mathbb{B}$ the field, $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ th
 *Second, the free case hides an ambiguity that the connection exposes.* In the free theory the algebra's own second-order operator $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi$ and the scalar d'Alembertian $\sum_\mu\partial_\mu^{2}$ agree identically, so the free Klein–Gordon equation has two writings that cannot be told apart. With the connection they differ, and the difference is the field strength:
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}(\xi e_t)
-=\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\mu}^{2}\xi\Big)e_t
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
+=\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t
 +\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F .
 $$
 
-The second term is a pure vector, so a central field cannot satisfy the covariant second-order equation in a region of nonzero curvature; and the *component* equation $\Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$, which is the one the action produces and the one this article adopts, differs from it by exactly that term (§*The Covariant Square and What It Forbids*, §*The Two Coupled Equations*).
+The second term is a pure vector, so a central field cannot satisfy the covariant second-order equation in a region of nonzero curvature; and the *component* equation $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, which is the one the action produces and the one this article adopts, differs from it by exactly that term (§*The Covariant Square and What It Forbids*, §*The Two Coupled Equations*).
 
 *Third, the carrier survives the coupling, and the coupling's reach is two structural zeros.* The free equation is one complex equation on the centre because $\Box_\Phi$ is central, and the coupled equation is one complex equation for the same reason; a value that leaves the centre would give four charged scalars sharing one connection, and the connection cannot mix them either — what the curvature does instead is convert a scalar coefficient into vector ones, which is why the algebra's own covariant square is not an equation for the central field (§*The Field Equation and the Carrier*).
 
@@ -41,7 +41,7 @@ The second term is a pure vector, so a central field cannot satisfy the covarian
 **The operator.** Minimal coupling replaces the four-gradient by the covariant derivative,
 
 $$
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi
 =\sum_\mu e_\mu\Big(\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu\Big),
 $$
 
@@ -50,8 +50,8 @@ and the second equality is the reason nothing has to be chosen. The connection's
 **The conjugate.** The second-order operator uses the quaternion conjugate of the gradient, $(\tilde\nabla_\Phi)^{\natural}$, and the corresponding covariant operator is
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural}
-=e_t\tilde\nabla_{\mathrm{gco},t}-\sum_\eta\vec e_\eta\tilde\nabla_{\mathrm{gco},\eta},
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural}
+=e_t\tilde\nabla_{\mathrm{gco},\Phi,t}-\sum_\eta\vec e_\eta\tilde\nabla_{\mathrm{gco},\Phi,\eta},
 $$
 
 the conjugation applied to the units and not to the connection's coefficients, which are scalars and unaffected by $\natural$. The article writes $\natural$ on the operator and never on a coefficient.
@@ -66,7 +66,7 @@ $$
 
 a real central number in the temporal slot and imaginary central numbers in the spatial ones. The sign difference is not a convention of this article: it is the metric, and it is the same sign difference that appears in the Proca companion's four-momentum shift. The article records it once here and uses it in §*The Field Equation and the Carrier*.
 
-**What the prescription is not.** It is not the replacement of $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco}}$ inside $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi$ and nothing else. That replacement is the natural guess, it is what the Proca and Dirac companions do, and §*The Covariant Square and What It Forbids* shows that it produces a different equation from the one the action produces. The distinction is the article's second finding and its technical core.
+**What the prescription is not.** It is not the replacement of $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}$ inside $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi$ and nothing else. That replacement is the natural guess, it is what the Proca and Dirac companions do, and §*The Covariant Square and What It Forbids* shows that it produces a different equation from the one the action produces. The distinction is the article's second finding and its technical core.
 
 ## Gauge Covariance
 
@@ -99,7 +99,7 @@ D_\mu'D_\mu'\big(e^{i\,ϙ\Lambda/\hbar}\tilde\Xi\big)
 =e^{i\,ϙ\Lambda/\hbar}D_\mu D_\mu\tilde\Xi ,
 $$
 
-because the two derivatives act on the same central unit and the cancellation of the gauge gradients repeats slot by slot. So $\Box_{\mathrm{gco}}$ is covariant, the mass term is invariant (two factors, opposite phases, both central), and the coupled equation is gauge covariant. The commutator of two covariant derivatives is the curvature,
+because the two derivatives act on the same central unit and the cancellation of the gauge gradients repeats slot by slot. So $\Box_{\mathrm{gco},\Phi}$ is covariant, the mass term is invariant (two factors, opposite phases, both central), and the coupled equation is gauge covariant. The commutator of two covariant derivatives is the curvature,
 
 $$
 \big[D_\mu,D_\nu\big]=\frac{i\,ϙ}{\hbar}\Big(\partial_\mu A_\nu-\partial_\nu A_\mu\Big)=\frac{i\,ϙ}{\hbar}F_{\mu\nu},
@@ -115,8 +115,8 @@ a multiplication by a scalar multiple of the identity, which is the abelian stat
 
 $$
 \boxed{\;
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}(\xi e_t)
-=\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\mu}^{2}\xi\Big)e_t
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
+=\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t
 +\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F\;}
 $$
 
@@ -124,10 +124,10 @@ with $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big
 
 **Why the second term is where it is.** The composition $\sum_{\mu\nu}e_\mu^{\natural}e_\nu D_\mu D_\nu$ has a diagonal part, which is $\sum_\mu D_\mu^{2}$ because $e_\mu^{\natural}e_\mu=e_t$ for every $\mu$, and an off-diagonal part. In the free case the off-diagonal part cancels pairwise, because $\partial_\mu\partial_\nu$ is symmetric and $e_\mu^{\natural}e_\nu$ is antisymmetric in the pair. With the connection the derivatives no longer commute, the symmetric part still cancels and the antisymmetric part does not: what survives is the commutator, and the commutator is $F_{\mu\nu}$. The surviving sum is $\sum_{\mu<\nu}e_\mu^{\natural}e_\nu\,[D_\mu,D_\nu]$, and for a material connection it collapses to the one element $\frac{iϙ}{\hbar}\tilde F$.
 
-**The consequence, stated as a prohibition.** Multiply the identity by $\xi^{-1}$ and read the two sides. The kinetic and mass terms of the covariant equation $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ are central, so the vector part must vanish, and it does so only where $\tilde F\,\xi=0$. Since $\xi\ne0$ wherever the field is regular, the statement is
+**The consequence, stated as a prohibition.** Multiply the identity by $\xi^{-1}$ and read the two sides. The kinetic and mass terms of the covariant equation $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ are central, so the vector part must vanish, and it does so only where $\tilde F\,\xi=0$. Since $\xi\ne0$ wherever the field is regular, the statement is
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi
 \quad\text{with }\tilde\Xi\text{ central}
 \qquad\Longrightarrow\qquad
 \tilde F=0\ \text{wherever }\tilde\Xi\neq0 .
@@ -137,7 +137,7 @@ No central field is a solution of the covariant square's equation in a region of
 
 **The two readings of the identity.** There are two ways to read the prohibition and they lead to two different theories.
 
-*Read the scalar projection.* Drop the vector part and keep the scalar equation $\sum_\mu D_\mu^{2}\xi=k_m^{2}\xi$, which is the standard charged Klein–Gordon equation for one complex scalar. This is a consistent equation and it is the standard theory; what it is not is the equation $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$, which it does not satisfy.
+*Read the scalar projection.* Drop the vector part and keep the scalar equation $\sum_\mu D_\mu^{2}\xi=k_m^{2}\xi$, which is the standard charged Klein–Gordon equation for one complex scalar. This is a consistent equation and it is the standard theory; what it is not is the equation $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$, which it does not satisfy.
 
 *Let the field leave the centre.* Keep the full equation in $\mathbb{B}$ and let the field acquire vector components. Then the equation is consistent and gauge covariant, and its four coefficients are coupled by $\tilde F$: the curvature term is pure vector, so it converts a scalar coefficient into vector coefficients and the reverse. That theory is not the standard one, because the standard charged scalar has one component and no curvature coupling.
 
@@ -148,12 +148,12 @@ No central field is a solution of the covariant square's equation in a region of
 **The two objects.** Write
 
 $$
-\text{(E1)}\quad \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi,
+\text{(E1)}\quad (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi,
 \qquad
-\text{(E2)}\quad \Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi,
+\text{(E2)}\quad \Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi,
 $$
 
-with $\Box_{\mathrm{gco}}=\sum_\mu \tilde\nabla_{\mathrm{gco},\mu}^{2}$. In the free limit they coincide, because $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi=\sum_\mu\partial_\mu^{2}=\Box_\Phi$ as operators. With the connection they do not, and the difference is the curvature: for a central field, E1 minus E2 is $\frac{iϙ}{\hbar}\tilde\Xi\,\tilde F$, and for a general element it is the curvature term written in the field's own frame.
+with $\Box_{\mathrm{gco},\Phi}=\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$. In the free limit they coincide, because $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi=\sum_\mu\partial_\mu^{2}=\Box_\Phi$ as operators. With the connection they do not, and the difference is the curvature: for a central field, E1 minus E2 is $\frac{iϙ}{\hbar}\tilde\Xi\,\tilde F$, and for a general element it is the curvature term written in the field's own frame.
 
 **E2 is the minimal substitution.** The free equation is $(\Box_\Phi-k_m^{2})\tilde\Xi=0$, and the prescription "replace the derivative by the covariant derivative in the equation as written" acts on the scalar operator, not on the algebra's factorisation of it. The result is E2. This is the prescription the Proca and Dirac companions use and the one the phrase *minimal coupling* names.
 
@@ -166,31 +166,31 @@ $$
 which is the sum over the four slots of $\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}\partial_\mu\tilde\Xi\big]$ with the metric signs of the display. Covariantising the four slots gives
 
 $$
-S_{\mathrm{c}}[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\sum_\mu\Big[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\Big]-k_m^{2}\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\big],
+S_{\mathrm{c}}[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\sum_\mu\Big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\Big]-k_m^{2}\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\big],
 $$
 
-and its Euler–Lagrange equation is E2 for a connection whose coefficients are purely imaginary in every slot, which in the material convention is the magnetic case, and in the free limit; the electric slot's bookkeeping is the one addition and it is stated below. The variation is the free one with $\partial_\mu\to \tilde\nabla_{\mathrm{gco},\mu}$, the integration by parts is the same, and the boundary term is the same; the only new ingredient is that the connection's coefficient is central, so the two factors of a slot commute and the variation pairs them into one and the same operator; the bookkeeping of that pairing, slot by slot, is stated in full in the variational companion's §*The Variation in the Field*.
+and its Euler–Lagrange equation is E2 for a connection whose coefficients are purely imaginary in every slot, which in the material convention is the magnetic case, and in the free limit; the electric slot's bookkeeping is the one addition and it is stated below. The variation is the free one with $\partial_\mu\to \tilde\nabla_{\mathrm{gco},\Phi,\mu}$, the integration by parts is the same, and the boundary term is the same; the only new ingredient is that the connection's coefficient is central, so the two factors of a slot commute and the variation pairs them into one and the same operator; the bookkeeping of that pairing, slot by slot, is stated in full in the variational companion's §*The Variation in the Field*.
 
 The algebra's own invariant kinetic term is a different functional. Contracting the two units as well as the two slots gives
 
 $$
-S_{\mathrm{a}}=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\tilde\nabla_{\mathrm{gco}}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco}}\tilde\Xi\Big]-k_m^{2}\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\big],
+S_{\mathrm{a}}=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Big[(\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi\Big]-k_m^{2}\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\big],
 $$
 
-whose Euler–Lagrange equation is E1. The two functionals differ by the off-diagonal terms $\sum_{\mu\ne\nu}\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}e_\mu^{\natural}e_\nu\tilde\nabla_{\mathrm{gco},\nu}\tilde\Xi\big]$, and those terms are not a total derivative. The article keeps $S_{\mathrm{c}}$ for three reasons: it is the free companion's functional continued, it is the standard scalar action, and its equation separates into four copies of a known theory. E1 and $S_{\mathrm{a}}$ are recorded as the algebra's alternative and are not adopted.
+whose Euler–Lagrange equation is E1. The two functionals differ by the off-diagonal terms $\sum_{\mu\ne\nu}\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}e_\mu^{\natural}e_\nu\tilde\nabla_{\mathrm{gco},\Phi,\nu}\tilde\Xi\big]$, and those terms are not a total derivative. The article keeps $S_{\mathrm{c}}$ for three reasons: it is the free companion's functional continued, it is the standard scalar action, and its equation separates into four copies of a known theory. E1 and $S_{\mathrm{a}}$ are recorded as the algebra's alternative and are not adopted.
 
-**How large the difference is.** On a band-limited field with a periodic connection, $\sum_\mu\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\big]$ evaluates to $141.8$, the cross term to $-46.3$, and their sum to $95.5$, which is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco}}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco}}\tilde\Xi\big]$ to machine precision. So the two kinetic terms differ by a third of the value at this configuration — the difference is not a surface effect and not small. On a central field the cross term vanishes identically, and there the two actions agree; that is the free article's remark that the four copies are independent, read as a statement about the action.
+**How large the difference is.** On a band-limited field with a periodic connection, $\sum_\mu\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$ evaluates to $141.8$, the cross term to $-46.3$, and their sum to $95.5$, which is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi\big]$ to machine precision. So the two kinetic terms differ by a third of the value at this configuration — the difference is not a surface effect and not small. On a central field the cross term vanishes identically, and there the two actions agree; that is the free article's remark that the four copies are independent, read as a statement about the action.
 
 **What the two equations share.** Both are gauge covariant, both reduce to the free equation at $ϙ=0$, and both are second order. What separates them is that E2 is the standard theory and E1 is not, and the separating term is the field strength. The article states this as its second finding and does not present E1 as a rival with a claim to the same physics.
 
 ## The Field Equation and the Carrier
 
-**On the carrier the equation is one line.** The value is $\xi\,e_t$, the covariant derivative is central, and E2 is $(\Box_{\mathrm{gco}}-k_m^{2})\xi=0$ for one complex function $\xi$: the standard charged scalar equation, and the one the block reads. **On a value that leaves the centre it is four lines.** Because the covariant derivative is central, E2 acts on each coefficient separately:
+**On the carrier the equation is one line.** The value is $\xi\,e_t$, the covariant derivative is central, and E2 is $(\Box_{\mathrm{gco},\Phi}-k_m^{2})\xi=0$ for one complex function $\xi$: the standard charged scalar equation, and the one the block reads. **On a value that leaves the centre it is four lines.** Because the covariant derivative is central, E2 acts on each coefficient separately:
 
 $$
-\left(\Box_{\mathrm{gco}}-k_m^{2}\right)\tilde\Xi=0
+\left(\Box_{\mathrm{gco},\Phi}-k_m^{2}\right)\tilde\Xi=0
 \qquad\Longleftrightarrow\qquad
-\left(\Box_{\mathrm{gco}}-k_m^{2}\right)\Xi_\mu=0
+\left(\Box_{\mathrm{gco},\Phi}-k_m^{2}\right)\Xi_\mu=0
 \quad\text{for each }\mu\in\{t,x,y,z\}.
 $$
 
@@ -199,9 +199,9 @@ The four equations are independent, no coefficient appears in another's equation
 **The one-phase case.** Let $\tilde Q$ be a constant element and $g$ a complex scalar function, and set $\tilde\Xi=\tilde Q g$. Since $A_\mu$ is central it commutes with $\tilde Q$, so
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\big(\tilde Q g\big)=\tilde Q\,\tilde\nabla_{\mathrm{gco},\mu}g,
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\big(\tilde Q g\big)=\tilde Q\,\tilde\nabla_{\mathrm{gco},\Phi,\mu}g,
 \qquad
-\left(\Box_{\mathrm{gco}}-k_m^{2}\right)\big(\tilde Q g\big)=\tilde Q\left(\Box_{\mathrm{gco}}-k_m^{2}\right)g ,
+\left(\Box_{\mathrm{gco},\Phi}-k_m^{2}\right)\big(\tilde Q g\big)=\tilde Q\left(\Box_{\mathrm{gco},\Phi}-k_m^{2}\right)g ,
 $$
 
 and $\tilde Q h=0$ forces $h=0$ for $\tilde Q\ne0$. So the polarized field solves the coupled equation if and only if $g$ does, exactly as in the free article, and the polarization is a constant of the solution with four complex entries and no dynamics. This is the case the polar companion treats, and the coupling is what makes it the only case in which one phase describes the field: a varying polarization would need its own equations, and §*The Covariant Square and What It Forbids* shows that those equations are not the ones a two-function chart can carry.
@@ -209,8 +209,8 @@ and $\tilde Q h=0$ forces $h=0$ for $\tilde Q\ne0$. So the polarized field solve
 **The current adds up.** The free article's additivity carries over unchanged, because the covariant derivative is a central operator and the algebra of the bilinear is untouched:
 
 $$
-\mathrm{Sc}\Big(\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi-\big(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\big)^{*}\tilde\Xi\Big)
-=\sum_\nu\Big(\Xi_\nu^{*}\tilde\nabla_{\mathrm{gco},\mu}\Xi_\nu-\big(\tilde\nabla_{\mathrm{gco},\mu}\Xi_\nu\big)^{*}\Xi_\nu\Big),
+\mathrm{Sc}\Big(\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi-\big(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big)^{*}\tilde\Xi\Big)
+=\sum_\nu\Big(\Xi_\nu^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\Xi_\nu-\big(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\Xi_\nu\big)^{*}\Xi_\nu\Big),
 $$
 
 so the charge density is the sum of the four component densities with the same sign for all four, and each component contributes its own sign of the energy. The mechanism of the free article's negative density survives the coupling without change, and it is a property of the bilinear and not of the connection.
@@ -220,20 +220,20 @@ so the charge density is the sum of the four component densities with the same s
 **The definition.** With the covariant derivative in place of the ordinary one, the free article's current becomes
 
 $$
-J_\mu=\frac{i}{2k_m}\mathrm{Sc}\Big(\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi-\big(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\big)^{*}\tilde\Xi\Big),
+J_\mu=\frac{i}{2k_m}\mathrm{Sc}\Big(\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi-\big(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big)^{*}\tilde\Xi\Big),
 $$
 
 which is real: the second term is the complex conjugate of the first, so the difference is $2i$ times a real number and the factor $i$ makes the whole real. The check is exact and does not need a numerical test, but the lattice check returns the imaginary part as $0.00\times10^{0}$ over random fields.
 
-**Conservation, and what conserves it.** Differentiating and using $\partial_\mu\tilde\Xi^{*}=\big(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\big)^{*}+\frac{iϙ}{\hbar}A_\mu\tilde\Xi^{*}$ together with $\partial_\mu\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi=\tilde\nabla_{\mathrm{gco},\mu}^{2}\tilde\Xi-\frac{iϙ}{\hbar}A_\mu\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$, the connection's terms cancel in pairs and
+**Conservation, and what conserves it.** Differentiating and using $\partial_\mu\tilde\Xi^{*}=\big(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big)^{*}+\frac{iϙ}{\hbar}A_\mu\tilde\Xi^{*}$ together with $\partial_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi=\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\tilde\Xi-\frac{iϙ}{\hbar}A_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$, the connection's terms cancel in pairs and
 
 $$
-\partial_\mu J_\mu=-\frac{1}{k_m}\,\mathrm{Im}\,\mathrm{Sc}\Big[\tilde\Xi^{*}\big(\Box_{\mathrm{gco}}-k_m^{2}\big)\tilde\Xi\Big].
+\partial_\mu J_\mu=-\frac{1}{k_m}\,\mathrm{Im}\,\mathrm{Sc}\Big[\tilde\Xi^{*}\big(\Box_{\mathrm{gco},\Phi}-k_m^{2}\big)\tilde\Xi\Big].
 $$
 
 The right side is the equation's residual contracted with the field and projected on the imaginary part of the scalar part, so it vanishes on every solution of E2 and the current is conserved. The identity is exact off shell and was verified on the lattice to $6\times10^{-13}$ with a varying connection in both a temporal and a spatial slot.
 
-**The current picks the equation.** The right side contains $\Box_{\mathrm{gco}}$ and not $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}$, so the conservation is a conservation for E2 and not for E1. That is a third, independent reason to prefer E2: the current that the phase symmetry supplies belongs to it. For E1 the same computation leaves the curvature behind, and the residual is $\frac{iϙ}{\hbar}\tilde F\tilde\Xi$ rather than zero.
+**The current picks the equation.** The right side contains $\Box_{\mathrm{gco},\Phi}$ and not $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}$, so the conservation is a conservation for E2 and not for E1. That is a third, independent reason to prefer E2: the current that the phase symmetry supplies belongs to it. For E1 the same computation leaves the curvature behind, and the residual is $\frac{iϙ}{\hbar}\tilde F\tilde\Xi$ rather than zero.
 
 **What the coupling repairs and what it does not.** The free current $\tilde J_\Phi$ is not gauge invariant: shifting the phase of the field by a function changes $\rho$ and $\vec j$ by terms in the gradient of the shift. The coupled current is gauge invariant, because every derivative in it is covariant and the field's factor cancels between the two terms. What the coupling does not repair is the sign: on the negative-frequency branch the temporal component is negative, exactly as in the free article, and no choice of connection changes that. The two defects of the free article therefore separate under the coupling — one is repaired, the other is a property of the carrier and stays.
 
@@ -296,7 +296,7 @@ the same shift the Proca companion records, and for the same reason: the tempora
 
 ## Open Questions
 
-**Whether E1's theory is admissible.** The equation $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ is consistent, gauge covariant and second order, and its four coefficients are coupled by the field strength. Whether it is a known theory under another name — a scalar with a Pauli-like coupling to the field strength, or a scalar in a higher representation — is not settled here. The article records the equation, the action that produces it, and the fact that it is not the standard theory, and stops there.
+**Whether E1's theory is admissible.** The equation $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ is consistent, gauge covariant and second order, and its four coefficients are coupled by the field strength. Whether it is a known theory under another name — a scalar with a Pauli-like coupling to the field strength, or a scalar in a higher representation — is not settled here. The article records the equation, the action that produces it, and the fact that it is not the standard theory, and stops there.
 
 **The multiplicity of the coefficients.** The standard charged scalar has one complex component; the algebra's transcription has four, all with the same charge. Whether the framework intends the four as a physical multiplicity, as a polarization space that the equation does not constrain, or as an artefact of transcribing a scalar into an algebra built for spin is not answered by the equation and is not answered here.
 
@@ -307,9 +307,9 @@ the same shift the Proca companion records, and for the same reason: the tempora
 The coupled Klein–Gordon equation is
 
 $$
-\left(\Box_{\mathrm{gco}}-k_m^{2}\right)\tilde\Xi=0,
+\left(\Box_{\mathrm{gco},\Phi}-k_m^{2}\right)\tilde\Xi=0,
 \qquad
-\Box_{\mathrm{gco}}=\sum_\mu\Big(\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu\Big)^{2},
+\Box_{\mathrm{gco},\Phi}=\sum_\mu\Big(\partial_\mu+\frac{i\,ϙ}{\hbar}A_\mu\Big)^{2},
 $$
 
 and it is the free equation with the derivative replaced slot by slot. The connection's coefficients are central, so the coupling is one rule, the field stays in the centre and the equation stays one complex equation for one charged scalar; the covariant derivative is the only change. A value outside the centre would give four charged scalars with one charge and one connection, and the curvature term is what keeps the central field from satisfying the algebra's own covariant square, E1.
@@ -317,13 +317,13 @@ and it is the free equation with the derivative replaced slot by slot. The conne
 The free theory has two writings of its second-order operator, $\tilde\nabla_\Phi^{\natural}\tilde\nabla_\Phi$ and $\sum_\mu\partial_\mu^{2}$, which agree identically; with the connection they differ by the curvature,
 
 $$
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}(\xi e_t)
-=\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\mu}^{2}\xi\Big)e_t+\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F ,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}(\xi e_t)
+=\Big(\sum_\mu \tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}\xi\Big)e_t+\frac{i\,ϙ}{\hbar}\,\xi\,\tilde F ,
 $$
 
 and the difference is a pure vector, so a central field is forbidden wherever the field strength is nonzero. The article adopts the component equation, which is the action's, which decouples, and which the current belongs to; it records the algebra's alternative and does not adopt it.
 
-The current is $J_\mu=\frac{i}{2k_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi-(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\Xi\big)$, real, gauge invariant, and conserved by the identity $\partial_\mu J_\mu=-\frac{1}{k_m}\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_{\mathrm{gco}}-k_m^{2})\tilde\Xi]$. It is the source of the connection's equation, and its conservation is that equation's integrability condition. What the coupling repairs is the gauge dependence of the current; what it leaves is the sign of the density, which is the carrier's.
+The current is $J_\mu=\frac{i}{2k_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi-(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\Xi\big)$, real, gauge invariant, and conserved by the identity $\partial_\mu J_\mu=-\frac{1}{k_m}\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_{\mathrm{gco},\Phi}-k_m^{2})\tilde\Xi]$. It is the source of the connection's equation, and its conservation is that equation's integrability condition. What the coupling repairs is the gauge dependence of the current; what it leaves is the sign of the density, which is the carrier's.
 
 ## Summary of Notation
 
@@ -336,12 +336,12 @@ The current is $J_\mu=\frac{i}{2k_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\
 | $\tilde\Xi=\sum_\mu\Xi_\mu e_\mu$ | The field, a general element of $\mathbb{B}$ |
 | $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ | The connection; $A_t=i a'_t$ imaginary, $A_\eta$ real in the material case |
 | $ϙ$ | The coupling |
-| $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The central per-slot covariant derivative |
-| $\tilde\nabla_{\mathrm{gco}}$, $\tilde\nabla_{\mathrm{gco}}^{\natural}$ | The covariant gradient and its quaternion conjugate |
-| $\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$ | The covariant d'Alembertian |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The central per-slot covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi}$, $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}$ | The covariant gradient and its quaternion conjugate |
+| $\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$ | The covariant d'Alembertian |
 | $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ | The field strength; a pure vector, scalar-free |
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | Its components; $[D_\mu,D_\nu]=\frac{iϙ}{\hbar}F_{\mu\nu}$ |
-| (E1), (E2) | $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$; $\Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ |
+| (E1), (E2) | $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$; $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ |
 | $S_{\mathrm{c}}$, $S_{\mathrm{a}}$ | The slot-summed action (adopted); the algebra-invariant action (recorded) |
 | $J_\mu$ | The charge current |
 | $k_m=mc/\hbar$ | The mass wave number |

@@ -143,7 +143,7 @@ $$
 $$
 since $\partial/\partial R_t=-i\,\partial/\partial r'_t$. Its characteristics in the length coordinate are the same $45^\circ$ cone. Maxwell's equations in a linear medium reduce to the same operator,
 $$
-\Box_{em}=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2 ,
+\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2 ,
 \qquad
 c_{em}=\frac{1}{\sqrt{\epsilon\mu}},
 $$
@@ -200,7 +200,7 @@ The interpretation closes no empirical gap and claims no global structure. Its c
 | $ds^2=\sum_{\mu,\nu}\delta_{\mu\nu}dR_\mu dQ_\nu=-d{r'_{t}}^2+dr_x^2+dr_y^2+dr_z^2$ | Interval in the length coordinate; null cone $|d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t|=1$ |
 | $t'=r'_t/c$, $g_{tt}=-c^2$ | The temporal slot in seconds; the interval there is $-c^2dt'^2+d\vec r^2$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium speed (the local temporal conversion), vacuum speed |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ | d'Alembertian |
 | $x_0=i r'_t$ | Complex time coordinate |
 

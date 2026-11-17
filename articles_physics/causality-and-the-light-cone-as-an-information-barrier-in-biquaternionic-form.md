@@ -302,24 +302,24 @@ Every bound in this section composes **fixed** rapidities, that is, changes betw
 The barrier has an analytic form, and it is the form in which the algebra itself enforces it. The biquaternionic gradient and its conjugate are
 
 $$
-\tilde{\nabla} = e_t\,\partial/\partial R_{1t} + \nabla,
+\tilde\nabla_\Phi = e_t\,\partial/\partial R_{1t} + \vec\nabla_\Phi,
 \qquad
-\tilde{\nabla}^{\natural} = e_t\,\partial/\partial R_{1t} - \nabla,
+(\tilde\nabla_\Phi)^{\natural} = e_t\,\partial/\partial R_{1t} - \vec\nabla_\Phi,
 \qquad
-\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2 + \Delta_Q,
+\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2 + \Delta_\Phi,
 $$
 
 the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde P_{\Phi}\tilde{R}_\Phi^{\natural}) = -\omega r'_t/c + \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, the chain rule gives the corpus identity
 
 $$
-\Box f(s) = \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
+\Box_\Phi f(s) = \langle\tilde P_{\Phi}\rangle_{\natural}\,\frac{d^2f}{ds^2}(s),
 \qquad
 \langle\tilde P_{\Phi}\rangle_{\natural} = -\frac{\omega^2}{c^2} + |\vec k_\Phi|^2,
 $$
 
-because $s$ is linear and $\Box s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P_{\Phi}\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P_{\Phi}\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
+because $s$ is linear and $\Box_\Phi s = 0$. The exponential $\exp(s)$ is therefore an eigenfunction with eigenvalue $\langle\tilde P_{\Phi}\rangle_{\natural}$, and the oscillatory positive-frequency wave $\exp(is)$ has eigenvalue $-\langle\tilde P_{\Phi}\rangle_{\natural}$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
 
-The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde Q_{\mathrm{src}}$ is supported in a compact set $K$ at time $r'_t = 0$, then the solution of $\Box\tilde{Ξ} = \tilde Q_{\mathrm{src}}$ is supported at time $r'_t$ inside the set of points that lie within distance $r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.
+The standard theory of hyperbolic operators now supplies the propagation bound. A second-order linear hyperbolic equation with the characteristic cone $\mathcal{Z}$ has finite propagation speed: if a source $\tilde Q_{\mathrm{src}}$ is supported in a compact set $K$ at time $r'_t = 0$, then the solution of $\Box_\Phi\tilde{Ξ} = \tilde Q_{\mathrm{src}}$ is supported at time $r'_t$ inside the set of points that lie within distance $r'_{t}$ of $K$, that is, inside the union of the light cones erected on $K$. This is a theorem of the classical theory of partial differential equations, not a property of the biquaternion formulation, and it is cited as standard. Its content here is that the barrier is not imposed on the algebra from outside: the wave operator that the algebra naturally carries has the cone as its characteristic surface, so a field generated in a bounded region propagates only into that region's causal future. The algebraic zero-divisor cone, the geometric light cone and the analytic characteristic cone are the same set.
 
 ## Causal Automorphisms and the Time Orientation
 
@@ -427,7 +427,7 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=\beta$ | Rapidity |
 | $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2)/c^2$ |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its conjugate |
-| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2+\Delta_Q$ | d'Alembertian, series convention |
+| $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2+\Delta_\Phi$ | d'Alembertian, series convention |
 | $SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$ | Restricted Lorentz group |
 
 ## Further Reading

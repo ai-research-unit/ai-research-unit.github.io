@@ -146,25 +146,25 @@ The vector is complex, its real part is the electric field, and its imaginary pa
 In a region with no sources, Maxwell's equations are
 
 $$
-\nabla\cdot\vec E=0,\quad
-\nabla\cdot\vec B=0,\quad
-\nabla\times\vec E=-\partial_t\vec B,\quad
-\nabla\times\vec B=\frac{1}{c^{2}}\partial_t\vec E .
+\vec\nabla_\Phi\cdot\vec E=0,\quad
+\vec\nabla_\Phi\cdot\vec B=0,\quad
+\vec\nabla_\Phi\times\vec E=-\partial_t\vec B,\quad
+\vec\nabla_\Phi\times\vec B=\frac{1}{c^{2}}\partial_t\vec E .
 $$
 
 Substituting $\vec N$ collapses them pairwise:
 
 $$
-\nabla\cdot\vec N=0,
+\vec\nabla_\Phi\cdot\vec N=0,
 \qquad
-\nabla\times\vec N=\frac{i}{c}\,\partial_t\vec N .
+\vec\nabla_\Phi\times\vec N=\frac{i}{c}\,\partial_t\vec N .
 $$
 
 The first combines Gauss's law with the absence of magnetic charge; the second combines Faraday's law with Ampère's law. Each is one complex equation, so the four real equations become two.
 
 ### The Verification
 
-The collapse is checked on a plane wave. With $\vec k=\omega\hat z/c$, a right-handed triad $\vec B=\hat k\times\vec E/c$ and the combination $\vec N=\vec E+ic\vec B$, the divergence vanishes identically, and the curl equation holds for one circular polarisation with the eigenvalue $\vec k\times\vec N=-i\omega\vec N/c$, reproducing $\nabla\times\vec N=\frac ic\partial_t\vec N$ under $\partial_t\to-i\omega$ and $\nabla\to i\vec k$.
+The collapse is checked on a plane wave. With $\vec k=\omega\hat z/c$, a right-handed triad $\vec B=\hat k\times\vec E/c$ and the combination $\vec N=\vec E+ic\vec B$, the divergence vanishes identically, and the curl equation holds for one circular polarisation with the eigenvalue $\vec k\times\vec N=-i\omega\vec N/c$, reproducing $\vec\nabla_\Phi\times\vec N=\frac ic\partial_t\vec N$ under $\partial_t\to-i\omega$ and $\vec\nabla_\Phi\to i\vec k$.
 
 For the opposite circular polarisation the same convention gives $\vec N=0$: the mode is purely anti-self-dual in this naming, and the vanishing of $\vec N$ is the statement that the self-dual half of that mode is zero.
 
@@ -310,7 +310,7 @@ The physical interpretation is that the electric and magnetic fields are the rea
 
 ## Summary
 
-A field strength is a two-form, hence an element of the Lorentz Lie algebra, with six real components. The Hodge dual squares to $-1$, so it is a complex structure whose $\pm i$ eigenspaces split the complexified field into a self-dual and an anti-self-dual half of three complex components each, the two three-dimensional complex representations $(1,0)$ and $(0,1)$ — the two commuting complex triples. The self-dual half is the Riemann–Silberstein vector $\vec N=\vec E+ic\vec B$, in which the four vacuum Maxwell equations collapse into $\nabla\cdot\vec N=0$ and $\nabla\times\vec N=\frac ic\partial_t\vec N$, one complex equation for the two helicities. The field transforms by the adjoint and not by the congruence, so the halves are preserved by the Lorentz action and are conjugate for a real field; over $\mathbb{C}$ they are independent. The field is the curvature $F=dA$ of a potential one-form, whose carrier is $(\tfrac12,\tfrac12)$, and the gauge shift $A\mapsto A+d\chi$ leaves $F$ alone because $d^{2}=0$; so the potential's carrier is quotiented by the exact forms while the field strength's carrier $(1,0)\oplus(0,1)$ is untouched by the shift. The pair of Maxwell equations is the single complex equation $d\mathcal{F}=0$ for $\mathcal{F}=F+i\star F$, whose real part is the Bianchi identity and whose imaginary part is the field equation.
+A field strength is a two-form, hence an element of the Lorentz Lie algebra, with six real components. The Hodge dual squares to $-1$, so it is a complex structure whose $\pm i$ eigenspaces split the complexified field into a self-dual and an anti-self-dual half of three complex components each, the two three-dimensional complex representations $(1,0)$ and $(0,1)$ — the two commuting complex triples. The self-dual half is the Riemann–Silberstein vector $\vec N=\vec E+ic\vec B$, in which the four vacuum Maxwell equations collapse into $\vec\nabla_\Phi\cdot\vec N=0$ and $\vec\nabla_\Phi\times\vec N=\frac ic\partial_t\vec N$, one complex equation for the two helicities. The field transforms by the adjoint and not by the congruence, so the halves are preserved by the Lorentz action and are conjugate for a real field; over $\mathbb{C}$ they are independent. The field is the curvature $F=dA$ of a potential one-form, whose carrier is $(\tfrac12,\tfrac12)$, and the gauge shift $A\mapsto A+d\chi$ leaves $F$ alone because $d^{2}=0$; so the potential's carrier is quotiented by the exact forms while the field strength's carrier $(1,0)\oplus(0,1)$ is untouched by the shift. The pair of Maxwell equations is the single complex equation $d\mathcal{F}=0$ for $\mathcal{F}=F+i\star F$, whose real part is the Bianchi identity and whose imaginary part is the field equation.
 
 ## Summary of Notation
 

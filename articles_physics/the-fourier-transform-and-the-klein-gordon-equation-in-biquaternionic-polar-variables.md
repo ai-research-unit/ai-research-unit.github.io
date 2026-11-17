@@ -22,7 +22,7 @@ The algebra and its units are those of *Algebra and Element Conventions*, the gr
 
 $$
 \tilde\nabla_\Phi S_{\tilde\Xi}
-=-i\frac{\partial S_{\tilde\Xi}}{\partial r_t'}e_t+\nabla S_{\tilde\Xi}
+=-i\frac{\partial S_{\tilde\Xi}}{\partial r_t'}e_t+\vec\nabla_\Phi S_{\tilde\Xi}
 =i\frac{E}{c}e_t+\vec p
 =\tilde P_\Phi,
 \qquad
@@ -36,7 +36,7 @@ $$
 $$
 \left(\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\right)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
 \qquad
-\nabla\cdot(\rho_{\mathrm{num}}\nabla S_{\tilde\Xi})-\frac{\partial}{\partial r_t'}\Bigl(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\Bigr)=0,
+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\frac{\partial}{\partial r_t'}\Bigl(\rho_{\mathrm{num}}\frac{\partial S_{\tilde\Xi}}{\partial r_t'}\Bigr)=0,
 $$
 
 with $\rho_{\mathrm{num}}=\varrho^{2}$.
@@ -105,7 +105,7 @@ $$
 
 **Finding 4.** The transport equation is quadratic in the amplitude, and it has no symbol either, for a second reason.
 
-**The reason is the density.** The equation is $\nabla\cdot(\rho_{\mathrm{num}}\nabla S)-\partial_{r_t'}(\rho_{\mathrm{num}}\partial_{r_t'}S)=0$ with $\rho_{\mathrm{num}}=\varrho^{2}$. Under the transform the divergences become products with $i\tilde K_\Phi$, but the products $\rho_{\mathrm{num}}\nabla S$ are products of two fields, so their transforms are convolutions. **A symbol represents a product by a product; here the product is inside the operator**, and no multiplication at one wave number can stand for it.
+**The reason is the density.** The equation is $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S)-\partial_{r_t'}(\rho_{\mathrm{num}}\partial_{r_t'}S)=0$ with $\rho_{\mathrm{num}}=\varrho^{2}$. Under the transform the divergences become products with $i\tilde K_\Phi$, but the products $\rho_{\mathrm{num}}\vec\nabla_\Phi S$ are products of two fields, so their transforms are convolutions. **A symbol represents a product by a product; here the product is inside the operator**, and no multiplication at one wave number can stand for it.
 
 **The two equations fail differently and the difference is worth keeping.** The amplitude equation fails because its coefficient depends on the solution; the transport equation fails because it is nonlinear in the amplitude. The first failure is a coefficient problem and the second is a superposition problem, and the polar pair has one of each. **That is why the polar form has neither a symbol nor a linearization that would produce one.**
 

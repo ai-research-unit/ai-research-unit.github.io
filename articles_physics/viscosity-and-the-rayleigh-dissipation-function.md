@@ -18,10 +18,10 @@ $$
 S_{ij}=\tfrac12\bigl(\partial_iv_j+\partial_jv_i\bigr),
 $$
 
-and its trace is the divergence, $\delta_{ij}S_{ij}=\nabla\cdot\vec v$. The stress is
+and its trace is the divergence, $\delta_{ij}S_{ij}=\vec\nabla_\Phi\cdot\vec v$. The stress is
 
 $$
-\sigma_{ij}=-p_{\mathrm{th}}\,\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\,\delta_{ij}\,\nabla\cdot\vec v ,
+\sigma_{ij}=-p_{\mathrm{th}}\,\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\,\delta_{ij}\,\vec\nabla_\Phi\cdot\vec v ,
 $$
 
 with $\eta_{\mathrm{shr}}$ the shear viscosity and $\zeta_{\mathrm{blk}}$ the bulk viscosity. The first term is the pressure of the inviscid case; the second is the shear stress, which opposes the shearing of the flow; the third is the resistance to compression.
@@ -31,10 +31,10 @@ with $\eta_{\mathrm{shr}}$ the shear viscosity and $\zeta_{\mathrm{blk}}$ the bu
 **The equation of motion is the divergence of the stress.** Euler's equation gains one term,
 
 $$
-\partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\nabla p_{\mathrm{th}}+\frac{1}{\rho_{\mathrm{mass}}}\partial_j\sigma_{\mathrm{vsc},ij}+\vec f_{\mathrm{ext}},
+\partial_{t'}\vec v+\bigl(\vec v\cdot\nabla\bigr)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}+\frac{1}{\rho_{\mathrm{mass}}}\partial_j\sigma_{\mathrm{vsc},ij}+\vec f_{\mathrm{ext}},
 $$
 
-with $\sigma_{\mathrm{vsc},ij}=2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\nabla\cdot\vec v$ the viscous part. For constant $\eta_{\mathrm{shr}}$ and an incompressible flow this is $\nu_{\mathrm{kin}}\Delta\vec v$ with the kinematic viscosity
+with $\sigma_{\mathrm{vsc},ij}=2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$ the viscous part. For constant $\eta_{\mathrm{shr}}$ and an incompressible flow this is $\nu_{\mathrm{kin}}\Delta_\Phi\vec v$ with the kinematic viscosity
 
 $$
 \nu_{\mathrm{kin}}=\frac{\eta_{\mathrm{shr}}}{\rho_{\mathrm{mass}}},
@@ -47,7 +47,7 @@ and with that term the equation is the Navier–Stokes equation.
 **The rate at which the stress does work on the flow is twice the dissipation function.** Define
 
 $$
-F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}\,S_{ij}S_{ij}+\tfrac12\zeta_{\mathrm{blk}}\bigl(\nabla\cdot\vec v\bigr)^{2},
+F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}\,S_{ij}S_{ij}+\tfrac12\zeta_{\mathrm{blk}}\bigl(\vec\nabla_\Phi\cdot\vec v\bigr)^{2},
 $$
 
 the continuum form of Rayleigh's dissipation function. Then
@@ -56,7 +56,7 @@ $$
 \sigma_{\mathrm{vsc},ij}\,\partial_jv_i=2F_{\mathrm{rlh}},
 $$
 
-by expansion: the shear part contributes $2\eta_{\mathrm{shr}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\nabla\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in [Lagrangian and Hamiltonian Mechanics in Biquaternionic Form](lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html).
+by expansion: the shear part contributes $2\eta_{\mathrm{shr}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in [Lagrangian and Hamiltonian Mechanics in Biquaternionic Form](lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html).
 
 **The energy of an isolated viscous flow decreases.** With no external force and no flux through the boundary,
 
@@ -69,7 +69,7 @@ and the equality holds only at rest. The functional $F_{\mathrm{rlh}}$ is a sum 
 **The same quantity is the entropy production.** With no heat conduction, the internal energy balance is $\rho_{\mathrm{mass}}T\,\mathrm{d}s_{\mathrm{spc}}/\mathrm{d}t'=2F_{\mathrm{rlh}}$, so
 
 $$
-\partial_{t'}s_{\mathrm{ent}}+\nabla\cdot\bigl(s_{\mathrm{ent}}\vec v\bigr)=\frac{2F_{\mathrm{rlh}}}{T}\ge0 .
+\partial_{t'}s_{\mathrm{ent}}+\vec\nabla_\Phi\cdot\bigl(s_{\mathrm{ent}}\vec v\bigr)=\frac{2F_{\mathrm{rlh}}}{T}\ge0 .
 $$
 
 The sign is fixed and it is the sign of the second law. A term with a fixed sign cannot be the variation of a functional that is even in the velocities, and that is the obstruction in one sentence.
@@ -120,7 +120,7 @@ $$
 
 which solves Burgers' equation with no pressure: $\partial_{t'}u=-x/t'^{2}$, $u\partial_xu=x/t'^{2}$, and $\nu_{\mathrm{kin}}\partial_{xx}u=0$. The three terms cancel pairwise, and the solution is the inviscid rarefaction written in similarity variables.
 
-**In three dimensions the transformation survives only for potential flow.** With $\vec v=-2\nu_{\mathrm{kin}}\nabla\ln\psi$ and $\psi$ solving $\partial_{t'}\psi=\nu_{\mathrm{kin}}\Delta\psi$, the vector Burgers equation holds identically, because the two identities used in one dimension are the gradient of the scalar ones. A flow with a non-vanishing curl is not of this form, and for it no such transformation is known. So even the exceptional linearisation is a potential-flow statement, and the vorticity obstruction of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) is untouched.
+**In three dimensions the transformation survives only for potential flow.** With $\vec v=-2\nu_{\mathrm{kin}}\vec\nabla_\Phi\ln\psi$ and $\psi$ solving $\partial_{t'}\psi=\nu_{\mathrm{kin}}\Delta_\Phi\psi$, the vector Burgers equation holds identically, because the two identities used in one dimension are the gradient of the scalar ones. A flow with a non-vanishing curl is not of this form, and for it no such transformation is known. So even the exceptional linearisation is a potential-flow statement, and the vorticity obstruction of [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html) is untouched.
 
 ## Why the Heat Equation Is Not a Wave Equation
 
@@ -139,10 +139,10 @@ a purely imaginary frequency. A mode of a wave equation is $\omega=\pm ck$, real
 **The heat equation is the overdamped limit of a damped wave equation.** Take
 
 $$
-\partial_{t'}^{2}u+\frac{1}{\tau_{\mathrm{dmp}}}\partial_{t'}u=c^{2}\Delta u ,
+\partial_{t'}^{2}u+\frac{1}{\tau_{\mathrm{dmp}}}\partial_{t'}u=c^{2}\Delta_\Phi u ,
 $$
 
-a wave equation with a friction term of relaxation time $\tau_{\mathrm{dmp}}$. For disturbances slow on the scale $\tau_{\mathrm{dmp}}$ the second derivative is negligible against the first and the equation closes to $\partial_{t'}u=\tau_{\mathrm{dmp}}c^{2}\Delta u$, which is the heat equation with $\nu_{\mathrm{kin}}=\tau_{\mathrm{dmp}}c^{2}$.
+a wave equation with a friction term of relaxation time $\tau_{\mathrm{dmp}}$. For disturbances slow on the scale $\tau_{\mathrm{dmp}}$ the second derivative is negligible against the first and the equation closes to $\partial_{t'}u=\tau_{\mathrm{dmp}}c^{2}\Delta_\Phi u$, which is the heat equation with $\nu_{\mathrm{kin}}=\tau_{\mathrm{dmp}}c^{2}$.
 
 **The limit is a statement about spectra, and it is why the exception is real but narrow.** A damped wave equation has complex frequencies, $\omega=-i/(2\tau_{\mathrm{dmp}})\pm\sqrt{c^{2}k^{2}-1/(4\tau_{\mathrm{dmp}}^{2})}$, so it oscillates while it decays and its over-damped branch does not. At long wavelength the branch that survives is the diffusive one, and at short wavelength the two branches are the two waves. So the heat equation is the long-wavelength face of a wave equation, not a different equation reached from a different fluid.
 
@@ -158,9 +158,9 @@ a wave equation with a friction term of relaxation time $\tau_{\mathrm{dmp}}$. F
 
 ## Summary
 
-The Newtonian stress is $-p_{\mathrm{th}}\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\nabla\cdot\vec v$, and the Navier–Stokes equation is its divergence.
+The Newtonian stress is $-p_{\mathrm{th}}\delta_{ij}+2\eta_{\mathrm{shr}}S_{ij}+\zeta_{\mathrm{blk}}\delta_{ij}\vec\nabla_\Phi\cdot\vec v$, and the Navier–Stokes equation is its divergence.
 
-Its work rate is twice the Rayleigh dissipation function, $\sigma_{\mathrm{vsc},ij}\partial_jv_i=2F_{\mathrm{rlh}}$ with $F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}S_{ij}S_{ij}+\frac12\zeta_{\mathrm{blk}}(\nabla\cdot\vec v)^{2}$. The energy of an isolated flow falls at $2F_{\mathrm{rlh}}$, and the entropy rises at the same rate over the temperature.
+Its work rate is twice the Rayleigh dissipation function, $\sigma_{\mathrm{vsc},ij}\partial_jv_i=2F_{\mathrm{rlh}}$ with $F_{\mathrm{rlh}}=\eta_{\mathrm{shr}}S_{ij}S_{ij}+\frac12\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The energy of an isolated flow falls at $2F_{\mathrm{rlh}}$, and the entropy rises at the same rate over the temperature.
 
 The obstruction is the absence of an action. The viscous term is odd under reversal of time and has a fixed sign, so no functional of the flow alone varies to it. Rayleigh's device inserts the force on the right-hand side of Lagrange's equation, which is the statement that it is inserted and not derived. Doubling the variables restores a variational principle for a larger system, and the phase then belongs to the larger system.
 

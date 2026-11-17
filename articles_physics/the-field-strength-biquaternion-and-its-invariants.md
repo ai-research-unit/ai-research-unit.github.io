@@ -55,7 +55,7 @@ F_{0\eta} = \frac{iE_\eta}{c},
 F_{j\eta} = \epsilon_{j\eta l}B_l .
 $$
 
-It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\eta$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0\eta}$ sit on the planes that contain the time direction and the three $F_{j\eta}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $A_0=+i\,a'_t$ and $a'_t=\xi/c$, and with $\vec E=-\nabla\xi-c\,\partial\vec A/\partial r'_t$ because $r'_t$ is a length, give $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\frac{i}{c}\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_\eta = i\sqrt{\epsilon}E_\eta - \sqrt{\mu}H_\eta$ are then the same statement read component by component.
+It has six independent components — three electric and three magnetic — which is exactly the information carried by the three complex components $F_\eta$ of the pure-vector biquaternion. The six components are the six planes of the next section, each a product of two units: the three $F_{0\eta}$ sit on the planes that contain the time direction and the three $F_{j\eta}$ on the purely spatial planes. The identification is exact, with one constant: $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\sqrt{\mu}\,\tilde{F}$ identically. Indeed, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ with $A_0=+i\,a'_t$ and $a'_t=\xi/c$, and with $\vec E=-\vec\nabla_\Phi\xi-c\,\partial\vec A/\partial r'_t$ because $r'_t$ is a length, give $\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})=\frac{i}{c}\vec E-\vec B$, and $\sqrt{\mu}/c=\mu\sqrt{\epsilon}$. The component formulas above and the combination $F_\eta = i\sqrt{\epsilon}E_\eta - \sqrt{\mu}H_\eta$ are then the same statement read component by component.
 
 ## The Place of the Field Strength in the Algebra
 
@@ -319,15 +319,15 @@ $$
 
 where $(i\sqrt{\epsilon})^2=-\epsilon$ by $i^2=-1$, in agreement with the direct computation. The two invariants are the real and imaginary parts of the complex number $\vec N\cdot\vec N$, up to constant factors.
 
-The Riemann–Silberstein vector also linearizes the source-free field equations. In vacuum or in a homogeneous medium with no free sources, Maxwell's equations give $\nabla\times\vec E = -c\,\partial\vec B/\partial r'_t$ and $\nabla\times\vec B = c^{-1}\partial\vec E/\partial r'_t$, and combining these,
+The Riemann–Silberstein vector also linearizes the source-free field equations. In vacuum or in a homogeneous medium with no free sources, Maxwell's equations give $\vec\nabla_\Phi\times\vec E = -c\,\partial\vec B/\partial r'_t$ and $\vec\nabla_\Phi\times\vec B = c^{-1}\partial\vec E/\partial r'_t$, and combining these,
 
 $$
-i\,c\,\frac{\partial\vec N}{\partial r'_t} = c\,\nabla\times\vec N,
+i\,c\,\frac{\partial\vec N}{\partial r'_t} = c\,\vec\nabla_\Phi\times\vec N,
 \qquad
-\nabla\cdot\vec N = 0 .
+\vec\nabla_\Phi\cdot\vec N = 0 .
 $$
 
-The first equation has the form of a Schrödinger equation whose Hamiltonian is $\nabla\times$; the second is the transverse condition that $\nabla\cdot\vec D = 0$ and $\nabla\cdot\vec B = 0$ give. This is the form in which the radiative content of the field is most transparent, and the null condition $\vec N\cdot\vec N = 0$ is precisely the condition that the complex vector be a null vector of the complexified spatial metric. A field whose Riemann–Silberstein vector is null, i.e. for which $\langle\tilde{F}\rangle_{\natural} = 0$, is a radiation field.
+The first equation has the form of a Schrödinger equation whose Hamiltonian is $\vec\nabla_\Phi\times$; the second is the transverse condition that $\vec\nabla_\Phi\cdot\vec D = 0$ and $\vec\nabla_\Phi\cdot\vec B = 0$ give. This is the form in which the radiative content of the field is most transparent, and the null condition $\vec N\cdot\vec N = 0$ is precisely the condition that the complex vector be a null vector of the complexified spatial metric. A field whose Riemann–Silberstein vector is null, i.e. for which $\langle\tilde{F}\rangle_{\natural} = 0$, is a radiation field.
 
 Finally, the antisymmetric field tensor decomposes into its **self-dual and anti-self-dual parts**. Define the Hodge dual by its action on the fields:
 
@@ -377,7 +377,7 @@ $$
 
 is the classical **electric–magnetic duality** transformation.
 
-The transformation is a symmetry of the **source-free** Maxwell equations. Writing $\vec E_{\theta_{\mathrm{dua}}},\vec B_{\theta_{\mathrm{dua}}}$ for the rotated fields, the two equations are preserved, $\nabla\times\vec E_{\theta_{\mathrm{dua}}} = -c\,\partial\vec B_{\theta_{\mathrm{dua}}}/\partial r'_t$ and $\nabla\times\vec B_{\theta_{\mathrm{dua}}} = c^{-1}\partial\vec E_{\theta_{\mathrm{dua}}}/\partial r'_t$, the two terms of each matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
+The transformation is a symmetry of the **source-free** Maxwell equations. Writing $\vec E_{\theta_{\mathrm{dua}}},\vec B_{\theta_{\mathrm{dua}}}$ for the rotated fields, the two equations are preserved, $\vec\nabla_\Phi\times\vec E_{\theta_{\mathrm{dua}}} = -c\,\partial\vec B_{\theta_{\mathrm{dua}}}/\partial r'_t$ and $\vec\nabla_\Phi\times\vec B_{\theta_{\mathrm{dua}}} = c^{-1}\partial\vec E_{\theta_{\mathrm{dua}}}/\partial r'_t$, the two terms of each matching after use of $c^2 = 1/(\epsilon\mu)$. With free electric charges and currents present, the transformation is *not* a symmetry: it would map an electric charge into a magnetic charge. Duality relates solutions of the source-free equations, and it relates the electric and magnetic parts of a given solution.
 
 The effect of the duality rotation on the invariants is clean. Writing $\vec N\cdot\vec N = I_1 + 2icI_2$, the phase rotation gives
 
@@ -549,7 +549,7 @@ $$
 
 Its real and imaginary parts are the two invariants of the field; the biquaternion norm and its complex conjugate carry the same pair. Both are invariant under the proper orthochronous Lorentz group — exactly in vacuum, formally in a medium; see §*Lorentz Invariance of the Invariants* — and $I_1$ is unchanged by the spatial reflection while $I_2$ changes its value there. The biquaternion norm vanishes exactly when the field is null, in which case the field-strength biquaternion is a zero divisor.
 
-The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$, whose self-product $\vec N\cdot\vec N = I_1 + 2icI_2$ carries the two invariants, and which obeys the source-free equation $i\,c\,\partial\vec N/\partial r'_t = c\,\nabla\times\vec N$ with $\nabla\cdot\vec N = 0$.
+The same object is, up to the constant $i\sqrt{\epsilon}$, the Riemann–Silberstein vector $\vec N = \vec E + ic\vec B$, whose self-product $\vec N\cdot\vec N = I_1 + 2icI_2$ carries the two invariants, and which obeys the source-free equation $i\,c\,\partial\vec N/\partial r'_t = c\,\vec\nabla_\Phi\times\vec N$ with $\vec\nabla_\Phi\cdot\vec N = 0$.
 
 Duality is the rotation $\vec N\mapsto \exp(-i\theta_{\mathrm{dua}})\vec N$; at $\theta_{\mathrm{dua}} = \pi/2$ it is the classical electric–magnetic duality. It is a symmetry of the source-free Maxwell equations, and it rotates the pair $(I_1, 2cI_2)$ by the angle $-2\theta_{\mathrm{dua}}$, leaving $I_1^2 + 4c^2I_2^2$ invariant.
 
@@ -569,7 +569,7 @@ Finally, the invariants classify the field into null, electric, magnetic, and ge
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
 | $\mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate |
-| $\Box$ | The d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, that of *Operator and Calculus Conventions* |
+| $\Box_\Phi$ | The d'Alembertian, $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, that of *Operator and Calculus Conventions* |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\vec E, \vec H, \vec B = \mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon, \mu$ | Permittivity and permeability of the medium |

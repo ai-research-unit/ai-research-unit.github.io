@@ -78,7 +78,7 @@ On the sphere the two transverse families that carry the radiation are the **vec
 $$
 \vec Y_{l\,n_{\mathrm{mag}}} = \frac{1}{\sqrt{l(l+1)}}\,\vec L\,Y_{l\,n_{\mathrm{mag}}} ,
 \qquad
-\vec L = -i\,\vec r\times\vec\nabla ,
+\vec L = -i\,\vec r\times\vec\nabla_\Phi ,
 $$
 
 which are tangential, $\vec Y_{l\,n_{\mathrm{mag}}}\cdot\vec u_r = 0$, together with their rotated partners $\vec u_r\times\vec Y_{l\,n_{\mathrm{mag}}}$ and the radial family $\vec u_rY_{l\,n_{\mathrm{mag}}}$. Any vector field on the sphere decomposes into these three families; the radiation field is transverse, so its radial family is absent, and it is a sum of the two tangential families. One family is the **electric** $l$-pole and the other the **magnetic** $l$-pole. In the common convention the magnetic $l$-pole has its magnetic field along $\vec Y_{l\,n_{\mathrm{mag}}}$ and its electric field along $\vec u_r\times\vec Y_{l\,n_{\mathrm{mag}}}$, and the electric $l$-pole interchanges the two. The two families carry opposite parity: an electric $l$-pole has parity $(-1)^l$ and a magnetic $l$-pole parity $(-1)^{l+1}$. This is standard vector-harmonic analysis, and it is cited as standard.
@@ -394,7 +394,7 @@ The multipole series and the two decompositions act on different spaces. The dec
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C}, \mathbb{B}_{V}$ | Centre and complex vector part of $\mathbb{B}$ |
-| $\tilde{\nabla} = e_t\,\partial/\partial R_t+\vec\nabla$ | Biquaternionic gradient |
+| $\tilde\nabla_\Phi = e_t\,\partial/\partial R_t+\vec\nabla_\Phi$ | Biquaternionic gradient |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian (series convention) |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ | Field-strength biquaternion (pure vector) |
 | $\tilde{F}^{*}$ | Hermitian conjugate of $\tilde{F}$ |

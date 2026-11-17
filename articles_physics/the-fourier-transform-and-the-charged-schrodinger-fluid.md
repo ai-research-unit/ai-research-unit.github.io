@@ -15,14 +15,14 @@
 The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{i\varkappa}{\hbar}A_\mu$, and the gauge transformation $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are
 
 $$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\nabla S-q\vec A,
+\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
 \qquad
 \mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi,
 \qquad
 \vec v=\frac{\vec\pi}{m}.
 $$
 
-The transform's symbol rule is the free companion's. The curvature is $\vec B=\nabla\times\vec A$ and $\vec E=-\nabla\varphi-\partial_{t'}\vec A$.
+The transform's symbol rule is the free companion's. The curvature is $\vec B=\vec\nabla_\Phi\times\vec A$ and $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$.
 
 ## The Mode of a Flat Connection
 
@@ -33,12 +33,12 @@ $$
 \qquad
 \vec v=\frac{\hbar\vec k-q\vec A}{m},
 \qquad
-\nabla\times\vec v=0 ,
+\vec\nabla_\Phi\times\vec v=0 ,
 $$
 
 and the last equality is the article's first result. **The velocity is constant and its curl is exactly zero**, and the check on one hundred events gave $\max\lvert\nabla\times\vec v\rvert=2.5\times10^{-16}$ for a constant $\vec A$.
 
-**The constant connection is a pure gradient and the mode is free in disguise.** With $\vec A=\nabla\chi$ and $\varphi=-\partial_{t'}\chi$ the gauge transformation $\lambda=\exp(i\varkappa\chi/\hbar)$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\varkappa\vec A/\hbar$.
+**The constant connection is a pure gradient and the mode is free in disguise.** With $\vec A=\vec\nabla_\Phi\chi$ and $\varphi=-\partial_{t'}\chi$ the gauge transformation $\lambda=\exp(i\varkappa\chi/\hbar)$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\varkappa\vec A/\hbar$.
 
 **The two labels, and which one the fluid reads.**
 
@@ -53,14 +53,14 @@ so the canonical label is the free one and the kinetic label is the free one plu
 **The identity is one line and the check is exact.**
 
 $$
-\nabla\times\vec v=\frac{1}{m}\nabla\times\bigl(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
+\vec\nabla_\Phi\times\vec v=\frac{1}{m}\vec\nabla_\Phi\times\bigl(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\bigr)=\frac{\varkappa}{m}\vec B ,
 $$
 
 since the curl of a gradient vanishes wherever the phase is twice differentiable. On one hundred events with a uniform field $\vec B=0.6\vec e_z$ and a phase carrying a cross term, the residual was $5.0\times10^{-16}$.
 
 **Read as a statement about profiles, the identity says that the vorticity is the second derivative of the connection and nothing else.** A constant connection has zero curvature, a linear connection has constant curvature, and a connection of higher order has a varying one. **No mode of the field can supply a curvature, because a mode's connection is at most a constant**; so the vorticity of this fluid is invisible to the basis by construction and not by an unlucky cancellation.
 
-**The mode count makes the same point in the coupled Dirac article's numbers, and they transfer.** There, a constant connection left one occupied mode out of sixty-four with the median coefficient at $3.6\times10^{-16}$ of the peak; a linear connection left all sixty-four, with the envelope $\lvert G(k_0+\Delta)\rvert\cdot\lvert\Delta\rvert$ constant at $38.4$ to within $1.3\%$ over $\Delta=1,\dots,8$. **A linear profile is the profile whose transform is the derivative of a delta**, so the coupling falls as the inverse of the separation; that inverse law is the momentum-space face of a constant field strength, and of nothing else.
+**The mode count makes the same point in the coupled Dirac article's numbers, and they transfer.** There, a constant connection left one occupied mode out of sixty-four with the median coefficient at $3.6\times10^{-16}$ of the peak; a linear connection left all sixty-four, with the envelope $\lvert G(k_0+\Delta_\Phi)\rvert\cdot\lvert\Delta_\Phi\rvert$ constant at $38.4$ to within $1.3\%$ over $\Delta_\Phi=1,\dots,8$. **A linear profile is the profile whose transform is the derivative of a delta**, so the coupling falls as the inverse of the separation; that inverse law is the momentum-space face of a constant field strength, and of nothing else.
 
 **So the two cases are the two curvatures.**
 
@@ -142,7 +142,7 @@ The field has two supports, the free shell in the canonical variable and the tra
 | $\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A$ | The kinetic momentum |
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | The kinetic energy |
 | $\vec v=\vec\pi/m$ | The velocity |
-| $\vec B=\nabla\times\vec A$, $\vec E=-\nabla\varphi-\partial_{t'}\vec A$ | The field strength |
+| $\vec B=\vec\nabla_\Phi\times\vec A$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ | The field strength |
 | $\vec\omega=\varkappa\vec B/m$ | The vorticity; the curvature |
 | $\Phi_B$ | The flux through a loop's spanning surface |
 | $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\varkappa\tilde A_\Phi/\hbar$ | The canonical label less the potential |

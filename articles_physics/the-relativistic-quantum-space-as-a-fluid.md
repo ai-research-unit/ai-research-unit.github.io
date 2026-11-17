@@ -40,11 +40,11 @@ with the basis $e_t=1$ and $\vec e_\eta^{2}=-e_t$. Nothing stands behind the ele
 **The two equations of the block are the algebra's own operators acting on that element.** The scalar case is the biquaternionic Klein–Gordon equation
 
 $$
-\left(\Box-k_m^{2}\right)\tilde\Xi=0,
+\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0,
 \qquad k_m=\frac{mc}{\hbar},
 $$
 
-where $\Box$ is central with real coefficients, so the one biquaternion equation is four complex equations, one per coefficient. The spinor case is the biquaternionic Dirac equation, one element acting on another by left multiplication,
+where $\Box_\Phi$ is central with real coefficients, so the one biquaternion equation is four complex equations, one per coefficient. The spinor case is the biquaternionic Dirac equation, one element acting on another by left multiplication,
 
 $$
 \tilde\nabla_\Phi\tilde\Xi_{R}=k_m\,\tilde\Xi_{L},

@@ -57,7 +57,7 @@ D\vec E_{\mathrm n} + \vec E_{\mathrm n}\vec{\nu} = 0, \qquad D\vec H_{\mathrm n
 \vec{\nu} := \frac{\mathrm{grad}\sqrt{\epsilon}}{\sqrt{\epsilon}}, \quad \vec{\nu}_2 := \frac{\mathrm{grad}\sqrt{\mu}}{\sqrt{\mu}} ,
 $$
 
-which is the **carrier identity** of *Electromagnetism in Media — The Local Complex Structure at Work*, read in the static case, where no time coordinate is present and the operator is the Moisil–Theodorescu operator $D$ alone, in the corpus's normalization $D=i\vec\nabla$. The Dirac side has the same shape: the massive equation with an electric potential, and separately with a scalar potential, becomes after the dictionary a first-order equation whose only position dependence is a coefficient multiplying one basis direction, as recorded in *The Dirac Equation in Biquaternionic Form*, §*The Dirac Operator with Potentials in Quaternionic Form*. Matching the two shapes, the 2003 paper concludes that a solution of the Dirac equation with an electric or a scalar potential is a solution of the static Maxwell system of an isotropic inhomogeneous medium, the medium being the potential read as a parameter:
+which is the **carrier identity** of *Electromagnetism in Media — The Local Complex Structure at Work*, read in the static case, where no time coordinate is present and the operator is the Moisil–Theodorescu operator $D$ alone, in the corpus's normalization $D=i\vec\nabla_\Phi$. The Dirac side has the same shape: the massive equation with an electric potential, and separately with a scalar potential, becomes after the dictionary a first-order equation whose only position dependence is a coefficient multiplying one basis direction, as recorded in *The Dirac Equation in Biquaternionic Form*, §*The Dirac Operator with Potentials in Quaternionic Form*. Matching the two shapes, the 2003 paper concludes that a solution of the Dirac equation with an electric or a scalar potential is a solution of the static Maxwell system of an isotropic inhomogeneous medium, the medium being the potential read as a parameter:
 
 $$
 \epsilon = \exp(\,2G(r_x)), \qquad G(r_x) = \int g(r_x)\,dr_x ,
@@ -69,7 +69,7 @@ with $g$ the Dirac potential. The identification is a statement about **coeffici
 
 ## The Mass Shell as the Condition on the Dirac–Maxwell Correspondence
 
-The time-harmonic comparison is the paper's last section, and its conclusion is a condition rather than an identity. Let the massive quaternionic equation be read on a time-harmonic field, as in *The Dirac Equation in Biquaternionic Form*, §*The Harmonic Field: Two Projections, and the Helicity Reading*. There the frequency is the Dirac frequency; write it $\omega_D$, and write $E=\hbar\,\omega_{D}$ for the particle energy. The amplitude obeys the shifted equation $\vec\nabla f+f\alpha=0$ at the parameter
+The time-harmonic comparison is the paper's last section, and its conclusion is a condition rather than an identity. Let the massive quaternionic equation be read on a time-harmonic field, as in *The Dirac Equation in Biquaternionic Form*, §*The Harmonic Field: Two Projections, and the Helicity Reading*. There the frequency is the Dirac frequency; write it $\omega_D$, and write $E=\hbar\,\omega_{D}$ for the particle energy. The amplitude obeys the shifted equation $\vec\nabla_\Phi f+f\alpha=0$ at the parameter
 
 $$
 \alpha = -\left(\frac{i\,E}{\hbar\,c}\,\vec e_x + \vec e_y\,k_m\right),
@@ -78,7 +78,7 @@ $$
 and the massless case of the same equation is the vacuum Maxwell equation. The time-harmonic Maxwell field of a homogeneous isotropic medium is likewise a pair of Beltrami fields, with its own frequency $\omega$ and wave number $k_\Phi=\omega\sqrt{\epsilon\mu}=\omega/c$, and the projection identity that relates the two pairs,
 
 $$
-\vec\nabla f+f\alpha = \tfrac12\bigl(\vec\nabla f+fk_\Phi\bigr)\bigl(e_t+\alpha/k_\Phi\bigr) + \tfrac12\bigl(\vec\nabla f-fk_\Phi\bigr)\bigl(e_t-\alpha/k_\Phi\bigr),
+\vec\nabla_\Phi f+f\alpha = \tfrac12\bigl(\vec\nabla_\Phi f+fk_\Phi\bigr)\bigl(e_t+\alpha/k_\Phi\bigr) + \tfrac12\bigl(\vec\nabla_\Phi f-fk_\Phi\bigr)\bigl(e_t-\alpha/k_\Phi\bigr),
 $$
 
 holds in both directions, with the two terms genuine projections of the two Maxwell pairs, **if and only if** the Maxwell wave number and the Dirac parameter agree,
@@ -115,9 +115,9 @@ $$
 \tilde\nabla_\Phi\tilde{Q}_1 = \tilde{Q}_2\,k_m, \qquad \tilde\nabla_\Phi\tilde{Q}_2 = \tilde{Q}_1\,k_m,
 $$
 
-comparing it with the biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -4\pi\tilde{J}_{\Phi}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde{Q}_2$ acts back on the object that generates it, with the strength $k_m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde\nabla_\Phi$, a square root of $\Box$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
+comparing it with the biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F} = -4\pi\tilde{J}_{\Phi}$ of the companion article. The first equation is then Maxwell's equation, and the second is a **feedback**: the field $\tilde{Q}_2$ acts back on the object that generates it, with the strength $k_m$. The feedback is the mass; the massless case $m=0$ breaks the coupling and leaves two independent field equations, of which the Maxwell equation is one. This is the source's interpretation, and it answers the question at the end of this article: what the Dirac and Maxwell equations share is the **operator** — the single first-order operator $\tilde\nabla_\Phi$, a square root of $\Box_\Phi$ — and what separates them is the **closure**, the Dirac field obeying the operator in the closed, self-acting way and the Maxwell field in the sourced way.
 
-The corpus's chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R}$ is the same equation in the chiral variables — the second member carries $(\tilde\nabla_\Phi)^{\natural}$ because the field written $L$ is the conjugate of the Lanczos $\tilde{Q}_2$ — and it displays the field split into its two parts, but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by a superposition along an arbitrary axis (in the displays of this paragraph the letter $D$ is Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla$ of *An Explicit Dictionary with Conjugation in the Mass Term*)
+The corpus's chiral pair $\tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\,\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\,\tilde{Ξ}_{R}$ is the same equation in the chiral variables — the second member carries $(\tilde\nabla_\Phi)^{\natural}$ because the field written $L$ is the conjugate of the Lanczos $\tilde{Q}_2$ — and it displays the field split into its two parts, but not the direction that the Lanczos form makes explicit. Lanczos reached the Dirac equation from the pair by a superposition along an arbitrary axis (in the displays of this paragraph the letter $D$ is Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla_\Phi$ of *An Explicit Dictionary with Conjugation in the Mass Term*)
 
 $$
 D = \tilde{Q}_1\tilde{\Pi} + \tilde{Q}_2^{*}\bar{\tilde{\Pi}},
@@ -156,7 +156,7 @@ These questions are open.
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | The biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
-| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The gradient, its quaternion conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ |
+| $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi$ | The gradient, its quaternion conjugate and their product $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Box_\Phi$ |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two components of the Dirac field, named by the letters of the pair |
 | $k_m=\dfrac{mc}{\hbar}$ | The mass wave number, the coefficient of the mass term |
 | $\tilde F$ | The field-strength biquaternion, the vector part of $\mathbb{B}$ |
@@ -167,7 +167,7 @@ These questions are open.
 | $\alpha$ | The biquaternionic parameter of the shifted amplitude equation, an inverse length |
 | $E$, $p$ | Particle energy and momentum; $E=\hbar\,\omega_D$ and $E=pc$ for the Maxwell wave number |
 | $\tilde Q_1$, $\tilde Q_2$ | Lanczos's two biquaternion fields |
-| $D$ | In §*The Lanczos Route* only, Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla$ |
+| $D$ | In §*The Lanczos Route* only, Lanczos's name for the Dirac field, not the spatial operator $D=i\vec\nabla_\Phi$ |
 | $\tilde\Pi$, $\bar{\tilde\Pi}$ | The projection along the unit vector $\vec\nu$ of the Lanczos superposition and its conjugate |
 
 ## Further Reading

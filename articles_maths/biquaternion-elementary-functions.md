@@ -1222,7 +1222,7 @@ Several questions are left open by the theory of this article.
 
 3. **The complex norm.** What is the geometric or algebraic meaning of the complex norm $B$ when it is not real? The number $B$ is a square root of the quadratic form of the vector part, not of the biquaternion norm, and it is complex for a general biquaternion. It is the analogue of the "magnitude" of the vector part, but its complex-valuedness means it has both a modulus and a phase.
 
-4. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis article? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general biquaternion $\tilde{Q}$?
+4. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis article? For example, what is $\tilde\nabla_\Phi \exp(\tilde{Q})$ for a general biquaternion $\tilde{Q}$?
 
 5. **The logarithm at the boundary of the $\natural$-regular set.** The logarithm exists on $\mathbb{B}^\times$ but not on the $\natural$-degenerate set, the zero divisor set $\mathcal{Z}$ together with the origin $0$. What is the correct object that replaces the logarithm on the boundary? The answer is likely to involve a formal logarithm or a deformation of the algebra.
 

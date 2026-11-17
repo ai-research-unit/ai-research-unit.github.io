@@ -32,7 +32,7 @@ $$
 
 ## Reality of the Action Is Weaker Than Reality of the Symbol
 
-**The action is real for every connection, and that is an identity rather than a measurement.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. **No choice of connection can make the action complex**, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
+**The action is real for every connection, and that is an identity rather than a measurement.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. **No choice of connection can make the action complex**, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
 
 **The symbol is real only in the corpus's writing, and the difference is the whole content.** Applying the parity lemma of the main article, the squared symbol $\sum_\mu(\sigma_\mu+c_\mu)^{2}$ is real in the temporal slot when $c_t$ is real — that is, when $A_t$ is imaginary — and real in a spatial slot when $c_\eta$ is imaginary — that is, when $A_\eta$ is real. Both conditions together are $\tilde A_\Phi^{*}=-\tilde A_\Phi$. **A modulus squared is real for every $c$; a symbol is real for the anti-Hermitian $c$ and for no other.**
 
@@ -49,7 +49,7 @@ $$
 $$
 \boxed{\;
 \frac{\delta S_{\mathrm{c}}}{\delta\tilde\Xi^{*}}
-=-\Bigl(\Box_{\mathrm{gco}}-k_m^{2}\Bigr)\tilde\Xi
+=-\Bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\Bigr)\tilde\Xi
 \;}
 $$
 
@@ -126,7 +126,7 @@ Both readings are real in the corpus's writing, so the reality of the symbol can
 | Symbol | Meaning |
 | --- | --- |
 | $S_{\mathrm{c}}$ | The parent's slot-summed matter action |
-| $\delta S_{\mathrm{c}}/\delta\tilde\Xi^{*}$ | The Euler–Lagrange operator; $-\bigl(\Box_{\mathrm{gco}}-k_m^{2}\bigr)\tilde\Xi$ |
+| $\delta S_{\mathrm{c}}/\delta\tilde\Xi^{*}$ | The Euler–Lagrange operator; $-\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi$ |
 | $c_\mu=\frac{iϙ}{\hbar}A_\mu$ | The per-slot connection coefficient; $c_t=-ϙa_t'/\hbar$ real, $c_\eta$ imaginary |
 | $\sigma_\mu$ | The free slot symbol; $\sigma_t=-k_t'$ real, $\sigma_\eta=i\kappa_\eta$ imaginary |
 | $(\partial_{R_t}+c_t)^{2}$ | The squared reading; one charge twice |

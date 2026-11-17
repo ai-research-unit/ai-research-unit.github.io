@@ -18,7 +18,7 @@ the fluid reading of the same variables — density, action, acceleration and vo
 Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 
 $$
-Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert},
 \qquad
 \frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}} .
 $$
@@ -29,7 +29,7 @@ Four results are established below.
 
 - **The element exists and is Hermitian.** Four real numbers enter it — one energy density and three flux components — and they are the four that the algebra can carry. The remaining six components of the symmetric tensor are not lost; they are simply not in this object, which is why [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html) writes the full tensor as a bigeneral bilinear and calls the element its energy–flux part.
 - **The $\natural$ norm is the energy condition.** $\langle\tilde\Sigma_\Psi\rangle_{\natural}=w_{\mathrm{fl}}^{2}-\lvert\vec S_{\mathrm P}\rvert^{2}/c^{2}$, which is non-negative exactly when the flux does not exceed $c$ times the energy density. A single traveling wave saturates it and lies on the zero-divisor cone.
-- **The energy law is one scalar divergence.** $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_\Psi)=-i\left[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\nabla\cdot\vec S_{\mathrm P}\right]$, and the bracket vanishes on shell.
+- **The energy law is one scalar divergence.** $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_\Psi)=-i\left[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\vec\nabla_\Phi\cdot\vec S_{\mathrm P}\right]$, and the bracket vanishes on shell.
 - **The quantum part of the energy is a divergence plus a positive square.** Pointwise it is indefinite in sign; in the total of a static localised state it is positive and equals the squared logarithmic gradient of the density, up to the factor the logarithm carries.
 
 ## Why the Stress Is an Element
@@ -85,7 +85,7 @@ The two cross terms cancel, because the temporal unit commutes with the vector p
 
 **A single traveling wave has a stress element on the zero-divisor cone.** For a massless field of the form $f(r_x-r'_t)$ the energy density and the flux satisfy $w_{\mathrm{fl}}=\lvert\vec S_{\mathrm P}\rvert/c$ identically, so the norm vanishes at every event and the element is a zero divisor. That is not a pathology: it is the algebra's way of saying that a null field carries no rest frame. The corpus's algebraic account of the cone is in [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html), and the stress element is one more member of that locus, this one built from a physical density rather than from a field value.
 
-The statement is checkable in one line. Take $\xi=f(k r_x-\omega r'_t/c)$ with $\omega=ck$ so that the mode is massless. Then $\partial\xi/\partial r'_t=-k f'$ and $\nabla\xi=kf'\,\vec e_x$, so $w_{\mathrm{fl}}=\tfrac12 k^{2}f'^{2}+\tfrac12 k^{2}f'^{2}=k^{2}f'^{2}$ and $\vec S_{\mathrm P}=-c\,(\partial\xi/\partial r'_t)\nabla\xi=c k^{2}f'^{2}\vec e_x$. Hence $\lvert\vec S_{\mathrm P}\rvert=c\,w_{\mathrm{fl}}$ and $\langle\tilde\Sigma_\Psi\rangle_{\natural}=0$. For a massive mode the same computation gives $w_{\mathrm{fl}}=k^{2}f'^{2}+\tfrac12 k_m^{2}f^{2}$ against $\lvert\vec S_{\mathrm P}\rvert=c\,k\lvert f'\rvert^{2}\sqrt{k^{2}+k_m^{2}}$, and the norm is positive for every amplitude that is not identically zero. The cone is reached by the massless case and by no other.
+The statement is checkable in one line. Take $\xi=f(k r_x-\omega r'_t/c)$ with $\omega=ck$ so that the mode is massless. Then $\partial\xi/\partial r'_t=-k f'$ and $\vec\nabla_\Phi\xi=kf'\,\vec e_x$, so $w_{\mathrm{fl}}=\tfrac12 k^{2}f'^{2}+\tfrac12 k^{2}f'^{2}=k^{2}f'^{2}$ and $\vec S_{\mathrm P}=-c\,(\partial\xi/\partial r'_t)\vec\nabla_\Phi\xi=c k^{2}f'^{2}\vec e_x$. Hence $\lvert\vec S_{\mathrm P}\rvert=c\,w_{\mathrm{fl}}$ and $\langle\tilde\Sigma_\Psi\rangle_{\natural}=0$. For a massive mode the same computation gives $w_{\mathrm{fl}}=k^{2}f'^{2}+\tfrac12 k_m^{2}f^{2}$ against $\lvert\vec S_{\mathrm P}\rvert=c\,k\lvert f'\rvert^{2}\sqrt{k^{2}+k_m^{2}}$, and the norm is positive for every amplitude that is not identically zero. The cone is reached by the massless case and by no other.
 
 ## The Imported Tensor in Polar Variables
 
@@ -96,7 +96,7 @@ The canonical tensor of the real scalar component $\xi$ is derived in [Stress–
 $$
 w_{\mathrm{fl}}=\tfrac12\left(\frac{\partial\xi}{\partial r'_t}\right)^{2}+\tfrac12\lvert\nabla\xi\rvert^{2}+\tfrac12 k_m^{2}\xi^{2},
 \qquad
-\vec S_{\mathrm P}=-c\,\frac{\partial\xi}{\partial r'_t}\,\nabla\xi,
+\vec S_{\mathrm P}=-c\,\frac{\partial\xi}{\partial r'_t}\,\vec\nabla_\Phi\xi,
 $$
 
 $$
@@ -107,7 +107,7 @@ $$
 Three statements about this display. The energy density is a sum of three squares and is positive for every configuration. The flux carries the one $c$ of the sector, because a flux is an energy per area per time and $r'_t$ is a length. And the conservation law is
 
 $$
-\frac{\partial w_{\mathrm{fl}}}{\partial r'_t}+\frac{1}{c}\nabla\cdot\vec S_{\mathrm P}=0
+\frac{\partial w_{\mathrm{fl}}}{\partial r'_t}+\frac{1}{c}\vec\nabla_\Phi\cdot\vec S_{\mathrm P}=0
 \qquad\text{on shell},
 $$
 
@@ -126,15 +126,15 @@ $$
 The same substitution in the flux gives
 
 $$
-\vec S_{\mathrm P}=-\,c\left[\frac{\partial\lVert\tilde\Xi\rVert}{\partial r'_t}\nabla\lVert\tilde\Xi\rVert+\rho_{\mathrm{num}}\frac{\partial\theta_{\mathrm{phs}}}{\partial r'_t}\nabla\theta_{\mathrm{phs}}\right].
+\vec S_{\mathrm P}=-\,c\left[\frac{\partial\lVert\tilde\Xi\rVert}{\partial r'_t}\vec\nabla_\Phi\lVert\tilde\Xi\rVert+\rho_{\mathrm{num}}\frac{\partial\theta_{\mathrm{phs}}}{\partial r'_t}\vec\nabla_\Phi\theta_{\mathrm{phs}}\right].
 $$
 
-The verification is one multiplication. Writing $\xi_1=\lVert\tilde\Xi\rVert\cos\theta_{\mathrm{phs}}$ and $\xi_2=\lVert\tilde\Xi\rVert\sin\theta_{\mathrm{phs}}$, the sum $\dot\xi_1^{2}+\dot\xi_2^{2}$ is $\dot{\lVert\tilde\Xi\rVert}^{2}+\rho_{\mathrm{num}}\dot\theta_{\mathrm{phs}}^{2}$, and the sum $\nabla\xi_1\cdot\nabla\xi_1+\nabla\xi_2\cdot\nabla\xi_2$ is $\lvert\nabla\lVert\tilde\Xi\rVert\rvert^{2}+\rho_{\mathrm{num}}\lvert\nabla\theta_{\mathrm{phs}}\rvert^{2}$; the flux is minus $c$ times the same two sums with one derivative of each factor.
+The verification is one multiplication. Writing $\xi_1=\lVert\tilde\Xi\rVert\cos\theta_{\mathrm{phs}}$ and $\xi_2=\lVert\tilde\Xi\rVert\sin\theta_{\mathrm{phs}}$, the sum $\dot\xi_1^{2}+\dot\xi_2^{2}$ is $\dot{\lVert\tilde\Xi\rVert}^{2}+\rho_{\mathrm{num}}\dot\theta_{\mathrm{phs}}^{2}$, and the sum $\vec\nabla_\Phi\xi_1\cdot\nabla\xi_1+\vec\nabla_\Phi\xi_2\cdot\nabla\xi_2$ is $\lvert\nabla\lVert\tilde\Xi\rVert\rvert^{2}+\rho_{\mathrm{num}}\lvert\nabla\theta_{\mathrm{phs}}\rvert^{2}$; the flux is minus $c$ times the same two sums with one derivative of each factor.
 
-**The phase part is the flow.** Using $\nabla\theta_{\mathrm{phs}}=\vec p/\hbar$ and $\partial\theta_{\mathrm{phs}}/\partial r'_t=-E/(\hbar c)$,
+**The phase part is the flow.** Using $\vec\nabla_\Phi\theta_{\mathrm{phs}}=\vec p/\hbar$ and $\partial\theta_{\mathrm{phs}}/\partial r'_t=-E/(\hbar c)$,
 
 $$
-\vec S_{\mathrm P}=-\,c\,\frac{\partial\lVert\tilde\Xi\rVert}{\partial r'_t}\nabla\lVert\tilde\Xi\rVert+\frac{\rho_{\mathrm{num}}E}{\hbar^{2}}\,\vec p,
+\vec S_{\mathrm P}=-\,c\,\frac{\partial\lVert\tilde\Xi\rVert}{\partial r'_t}\vec\nabla_\Phi\lVert\tilde\Xi\rVert+\frac{\rho_{\mathrm{num}}E}{\hbar^{2}}\,\vec p,
 $$
 
 $$
@@ -162,14 +162,14 @@ The arithmetic is: $\rho_{\mathrm{num}}(E^{2}/c^{2}+\lvert\vec p\rvert^{2})/(2\h
 
 ### The energy law is one scalar divergence
 
-**The divergence of the element is the energy law, up to the factor $i$ that the temporal slot carries.** With $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and $\partial/\partial R_t=-i\partial/\partial r'_t$, $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,
+**The divergence of the element is the energy law, up to the factor $i$ that the temporal slot carries.** With $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and $\partial/\partial R_t=-i\partial/\partial r'_t$, $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the material sector,
 
 $$
 \tilde\nabla_\Phi\tilde\Sigma_\Psi
 =e_t\frac{\partial\tilde\Sigma_\Psi}{\partial R_t}+\sum_\eta\vec e_\eta\frac{\partial\tilde\Sigma_\Psi}{\partial r_\eta},
 \qquad
 \mathrm{Sc}\!\left(\tilde\nabla_\Phi\tilde\Sigma_\Psi\right)
-=-i\left[\frac{\partial w_{\mathrm{fl}}}{\partial r'_t}+\frac{1}{c}\nabla\cdot\vec S_{\mathrm P}\right].
+=-i\left[\frac{\partial w_{\mathrm{fl}}}{\partial r'_t}+\frac{1}{c}\vec\nabla_\Phi\cdot\vec S_{\mathrm P}\right].
 $$
 
 *Proof.* The temporal term contributes $-i\,e_t\partial_{r'_t}$ acting on $w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$. Its scalar part is $-i\partial w_{\mathrm{fl}}/\partial r'_t$, and the term in $\vec S_{\mathrm P}$ is a vector because $e_t\vec e_\eta=\vec e_\eta$. The three spatial terms have scalar parts $-(i/c)\partial_\eta S_{\mathrm P,\eta}\,\vec e_\eta\vec e_\eta$, and $\vec e_\eta\vec e_\eta=-e_t$, so each contributes $+(i/c)\partial_\eta S_{\mathrm P,\eta}$. The sum is the bracket times $-i$.
@@ -198,7 +198,7 @@ $$
 (\partial u)^{2}=\lvert\nabla u\rvert^{2}-\left(\frac{\partial u}{\partial r'_t}\right)^{2},
 $$
 
-and since $\sum_\mu\partial_\mu(\partial_\mu u)=\Box u$,
+and since $\sum_\mu\partial_\mu(\partial_\mu u)=\Box_\Phi u$,
 
 $$
 Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\left[\sum_\mu\frac{\partial}{\partial R_\mu}\left(\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial\lVert\tilde\Xi\rVert}{\partial R_\mu}\right)+(\partial u)^{2}\right].
@@ -230,9 +230,9 @@ $$
 \sigma_{j\eta}=\frac{\hbar^{2}}{2m}\rho_{\mathrm{num}}\frac{\partial^{2}u}{\partial r_j\partial r_\eta},
 $$
 
-and its divergence is $\tfrac{\hbar^{2}}{2m}[\rho_{\mathrm{num}}\partial_j\Delta u+2\rho_{\mathrm{num}}\sum_\eta\partial_\eta u\,\partial_j\partial_\eta u]$. The right-hand side is $-\rho_{\mathrm{num}}\partial_jQ_{\mathrm{qnt}}=\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}\partial_j[\Box u+(\partial u)^{2}]$, and the two agree term by term for a stationary amplitude after one use of $\partial_j(\partial u)^{2}=2\sum_\eta\partial_\eta u\,\partial_j\partial_\eta u$.
+and its divergence is $\tfrac{\hbar^{2}}{2m}[\rho_{\mathrm{num}}\partial_j\Delta_\Phi u+2\rho_{\mathrm{num}}\sum_\eta\partial_\eta u\,\partial_j\partial_\eta u]$. The right-hand side is $-\rho_{\mathrm{num}}\partial_jQ_{\mathrm{qnt}}=\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}\partial_j[\Box_\Phi u+(\partial u)^{2}]$, and the two agree term by term for a stationary amplitude after one use of $\partial_j(\partial u)^{2}=2\sum_\eta\partial_\eta u\,\partial_j\partial_\eta u$.
 
-**The identity is exact for an amplitude that does not vary in the material time, and the caveat is the operator's.** The block carries spatial derivatives only, while $Q_{\mathrm{qnt}}$ carries the d'Alembertian; with a varying amplitude the time part of $\Box$ contributes to the force and has no counterpart in a three-by-three block, so the object that carries it is the four-dimensional element and not $\sigma$. **The rung below has no such caveat**, its quantum potential carrying the Laplacian: [The Schrödinger Fluid](the-schrodinger-fluid.html) states the same block with $\Delta$ and the identity holds there for every solution.
+**The identity is exact for an amplitude that does not vary in the material time, and the caveat is the operator's.** The block carries spatial derivatives only, while $Q_{\mathrm{qnt}}$ carries the d'Alembertian; with a varying amplitude the time part of $\Box_\Phi$ contributes to the force and has no counterpart in a three-by-three block, so the object that carries it is the four-dimensional element and not $\sigma$. **The rung below has no such caveat**, its quantum potential carrying the Laplacian: [The Schrödinger Fluid](the-schrodinger-fluid.html) states the same block with $\Delta_\Phi$ and the identity holds there for every solution.
 
 **The check is exact for a Gaussian, and it is the one case where every number can be written down.** With $\rho_{\mathrm{num}}=A^{2}\exp(-r^{2}/\sigma^{2})$, the bracket collapses: $\partial_j\partial_\eta\rho_{\mathrm{num}}=(r_jr_\eta/\sigma^{4}-\delta_{j\eta}/\sigma^{2})\rho_{\mathrm{num}}$ and $\partial_j\rho_{\mathrm{num}}\partial_\eta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}=(r_jr_\eta/\sigma^{4})\rho_{\mathrm{num}}$, so
 
@@ -242,20 +242,20 @@ $$
 
 **isotropic, and negative in its diagonal.** The sign reads as a *pressure* and not as a tension, because the article's convention puts the force at $+\partial_\eta\sigma_{j\eta}$ while a fluid's force is $-\partial_jp$: a negative diagonal is $\sigma_{j\eta}=-p\,\delta_{j\eta}$ with $p>0$, which is the outward push a spreading packet requires. At the centre that pressure is $p=\hbar^{2}\rho_{\mathrm{num}}/(2m\sigma^{2})$, and it is one third of the quantum pressure $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=3\hbar^{2}\rho_{\mathrm{num}}/(2m\sigma^{2})$ that [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) defines. **The factor one third is the trace discrepancy recorded above, and it follows from the two normalisations**: $\sigma$ is the stress whose *divergence* is the force, so it is fixed up to the trace, and at the centre, where the squared logarithmic gradient vanishes, $\mathrm{tr}\,\sigma=-\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ distributes over three spatial directions as $-3p$. Off the centre the two differ by $(\hbar^{2}/2m)\rho_{\mathrm{num}}(\partial u)^{2}$, which is the same square. **The two objects part company away from the centre**: the diagonal never changes sign for a Gaussian, while $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ does, which is the difference recorded above between the divergence-carrying stress and the trace. With $\hbar=m=1$, $\sigma=0.8$ and $A=1.3$, at $(r_x,r_y,r_z)=(0.31,-0.22,0.17)$ the density is $\rho_{\mathrm{num}}=1.288\,902$ and the two sides of the divergence identity are $+0.975\,488$, $-0.692\,282$ and $+0.534\,945$ for $j=x,y,z$, and they agree to all six digits printed, the calculation being exact rather than a quadrature. $\sigma_{xx}$ at that point is $-1.006\,955$, the isotropic value, and it is $\hbar^{2}\rho_{\mathrm{num}}/(2m\sigma^{2})$ with the numbers above: $1.288\,902/(2\times0.64)=1.006\,955$. **The coefficient is $1/(2m\sigma^{2})$ and not $1/(4m\sigma^{2})$**, because $\sigma$ here is the width of the *amplitude*, $\rho_{\mathrm{num}}$ is its square, and the density therefore falls on the scale $\sigma$ — the amplitude on $\sqrt2\,\sigma$. **A reader comparing this paragraph with [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) must watch the convention**: that article writes $\rho_{\mathrm{num}}=\rho_{0}\exp(-r^{2}/(2\sigma^{2}))$, so its $\sigma$ is this one divided by $\sqrt2$, and its central quantum pressure $\tfrac{3\hbar^{2}\rho_{\mathrm{num}}}{4m\sigma^{2}}$ is the same number as the trace here. A reader who equates the two letters without the $\sqrt2$ finds a discrepancy of a factor two that is not there.
 
-**What the identity does not say.** $\sigma$ is the divergence-carrying stress, and its trace is not $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$: the trace is $\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}\Delta u$, while $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}[\Box u+(\partial u)^{2}]$, and the difference is the square of the logarithmic gradient — the same square that makes the total quantum energy positive above. **So the object whose divergence is the force and the object whose trace is the pressure are two different stresses, and the difference between them is precisely the term that has no thermal analogue.** [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) states the resulting caution: $\partial_\eta p_{\mathrm{qnt}}\neq\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}$, and a fluid equation written as if it were would be wrong.
+**What the identity does not say.** $\sigma$ is the divergence-carrying stress, and its trace is not $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$: the trace is $\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}\Delta_\Phi u$, while $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}=-\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}[\Box_\Phi u+(\partial u)^{2}]$, and the difference is the square of the logarithmic gradient — the same square that makes the total quantum energy positive above. **So the object whose divergence is the force and the object whose trace is the pressure are two different stresses, and the difference between them is precisely the term that has no thermal analogue.** [The Equation of State in Biquaternion Form](the-equation-of-state-in-biquaternion-form.html) states the resulting caution: $\partial_\eta p_{\mathrm{qnt}}\neq\rho_{\mathrm{num}}\partial_\eta Q_{\mathrm{qnt}}$, and a fluid equation written as if it were would be wrong.
 
 **The quantum energy density is the density times the quantum potential, and no normalising factor belongs in between.** A density is an energy density when it is multiplied by an energy, and $Q_{\mathrm{qnt}}$ is that energy: the mass shell's $2mQ_{\mathrm{qnt}}$ carries the same dimension as $m^{2}c^{2}$. So with $\rho_{\mathrm{num}}=\lVert\tilde\Xi\rVert^{2}$,
 
 $$
 w_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}
-=-\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}\,\Box u-\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}(\partial u)^{2}.
+=-\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}\,\Box_\Phi u-\tfrac{\hbar^{2}}{2m}\rho_{\mathrm{num}}(\partial u)^{2}.
 $$
 
-The sign of the first term is not fixed, because $\Box u$ changes sign where the density's curvature changes sign. The second term carries the sign of $(\partial u)^{2}$, which is not negative definite on the material sector either. So the quantum energy density is indefinite pointwise. The next subsection shows that its total is not.
+The sign of the first term is not fixed, because $\Box_\Phi u$ changes sign where the density's curvature changes sign. The second term carries the sign of $(\partial u)^{2}$, which is not negative definite on the material sector either. So the quantum energy density is indefinite pointwise. The next subsection shows that its total is not.
 
 ### The quantum energy is positive in the total
 
-**For a static localised state the total quantum energy is positive and equals a squared logarithmic gradient.** Take the amplitude stationary in the material time, so that $u$ does not depend on $r'_t$, and integrate $w_{\mathrm{qnt}}$ over a volume that contains the state. The divergence term integrates to a surface term and is dropped, the surface being outside the state where the density vanishes. Two integrations by parts give $\int\rho_{\mathrm{num}}\Box u\,d^{3}r=-2\int\rho_{\mathrm{num}}\lvert\nabla u\rvert^{2}d^{3}r$, because $\nabla u=\nabla\rho_{\mathrm{num}}/(2\rho_{\mathrm{num}})$ and $\int\rho_{\mathrm{num}}\lvert\nabla u\rvert^{2}=\tfrac14\int\lvert\nabla\rho_{\mathrm{num}}\rvert^{2}/\rho_{\mathrm{num}}$. With $u$ stationary, $(\partial u)^{2}=\lvert\nabla u\rvert^{2}$, so
+**For a static localised state the total quantum energy is positive and equals a squared logarithmic gradient.** Take the amplitude stationary in the material time, so that $u$ does not depend on $r'_t$, and integrate $w_{\mathrm{qnt}}$ over a volume that contains the state. The divergence term integrates to a surface term and is dropped, the surface being outside the state where the density vanishes. Two integrations by parts give $\int\rho_{\mathrm{num}}\Box_\Phi u\,d^{3}r=-2\int\rho_{\mathrm{num}}\lvert\nabla u\rvert^{2}d^{3}r$, because $\vec\nabla_\Phi u=\vec\nabla_\Phi\rho_{\mathrm{num}}/(2\rho_{\mathrm{num}})$ and $\int\rho_{\mathrm{num}}\lvert\nabla u\rvert^{2}=\tfrac14\int\lvert\nabla\rho_{\mathrm{num}}\rvert^{2}/\rho_{\mathrm{num}}$. With $u$ stationary, $(\partial u)^{2}=\lvert\nabla u\rvert^{2}$, so
 
 $$
 \int w_{\mathrm{qnt}}\,d^{3}r
@@ -295,7 +295,7 @@ The trace is what a fluid keeps, and the quantum potential is what that trace ca
 
 ### It does not close a local equation of state
 
-**A local equation of state relates the pressure to the density and the temperature at the same event.** The quantum part cannot be written that way, because it depends on second derivatives of the density at the event, that is, on the density in a neighbourhood. It is therefore a non-local object in the language of thermodynamics, and a local equation of state can carry it only as a gradient expansion, term by term. That is exactly what the following articles do: the pressure is $p_{\mathrm{th}}+p_{\mathrm{qnt}}$, the first a genuine thermodynamic function and the second a gradient correction whose leading term is proportional to $\Box\ln\rho_{\mathrm{num}}$.
+**A local equation of state relates the pressure to the density and the temperature at the same event.** The quantum part cannot be written that way, because it depends on second derivatives of the density at the event, that is, on the density in a neighbourhood. It is therefore a non-local object in the language of thermodynamics, and a local equation of state can carry it only as a gradient expansion, term by term. That is exactly what the following articles do: the pressure is $p_{\mathrm{th}}+p_{\mathrm{qnt}}$, the first a genuine thermodynamic function and the second a gradient correction whose leading term is proportional to $\Box_\Phi\ln\rho_{\mathrm{num}}$.
 
 The distinction is not pedantic. A local equation of state fixes the sound speed and the stability of the fluid. A gradient correction changes both, and it can change the sign of the stability criterion at short wavelengths. That is the standard situation of a Korteweg-type stress, and the quantum stress is of that type.
 
@@ -311,13 +311,13 @@ $$
 \vec k_1=(1.1,0,0),\quad \vec k_2=(0,0.9,0),
 $$
 
-with $k'_{it}=\sqrt{\lvert\vec k_i\rvert^{2}+k_m^{2}}$, so that both modes are on shell simultaneously and the superposition is a solution. **No factor of $c$ enters that dispersion, and the reason is the one the units carry**: the temporal coordinate is a length, so $k'_{it}$ is a wave number in inverse length like the spatial ones, and the rest mass enters through $k_m=mc/\hbar$, which already holds the $c$. Evaluating $\partial w_{\mathrm{fl}}/\partial r'_t$ and $\nabla\cdot\vec S_{\mathrm P}$ by centred differences at $r'_t=0.7$ and $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$, the sum of the two was $-3.7\times10^{-5}$ at step $2.5\times10^{-3}$, $-1.5\times10^{-4}$ at step $5\times10^{-3}$, and $-5.9\times10^{-4}$ at step $10^{-2}$. The residual falls by a factor four at each halving, which is the mark of the second-order truncation of the difference and not of a failed identity. The energy density at the same event was $w_{\mathrm{fl}}=3.374$ and the flux had modulus $\lvert\vec S_{\mathrm P}\rvert=4.458$, so the dominant-energy inequality $w_{\mathrm{fl}}\ge\lvert\vec S_{\mathrm P}\rvert/c$ held with the margin $3.374$ against $2.229$.
+with $k'_{it}=\sqrt{\lvert\vec k_i\rvert^{2}+k_m^{2}}$, so that both modes are on shell simultaneously and the superposition is a solution. **No factor of $c$ enters that dispersion, and the reason is the one the units carry**: the temporal coordinate is a length, so $k'_{it}$ is a wave number in inverse length like the spatial ones, and the rest mass enters through $k_m=mc/\hbar$, which already holds the $c$. Evaluating $\partial w_{\mathrm{fl}}/\partial r'_t$ and $\vec\nabla_\Phi\cdot\vec S_{\mathrm P}$ by centred differences at $r'_t=0.7$ and $(r_x,r_y,r_z)=(0.3,-0.5,0.2)$, the sum of the two was $-3.7\times10^{-5}$ at step $2.5\times10^{-3}$, $-1.5\times10^{-4}$ at step $5\times10^{-3}$, and $-5.9\times10^{-4}$ at step $10^{-2}$. The residual falls by a factor four at each halving, which is the mark of the second-order truncation of the difference and not of a failed identity. The energy density at the same event was $w_{\mathrm{fl}}=3.374$ and the flux had modulus $\lvert\vec S_{\mathrm P}\rvert=4.458$, so the dominant-energy inequality $w_{\mathrm{fl}}\ge\lvert\vec S_{\mathrm P}\rvert/c$ held with the margin $3.374$ against $2.229$.
 
 The cross terms between the two modes are the content of the check. Each mode alone satisfies the energy law identically, by the computation of §*The null case and the cone*; the superposition does not, except through the cancellation of the cross terms, and the cancellation is what the residual measures. A check on a single mode would have tested nothing.
 
 ### The quantum energy of a localised state
 
-**The total quantum energy was checked on a Gaussian amplitude in three dimensions.** Take $\rho_{\mathrm{num}}=A^{2}\exp(-r^{2}/\sigma^{2})$ with $A=1.3$ and $\sigma=0.8$, and evaluate $w_{\mathrm{qnt}}=-\tfrac12\rho_{\mathrm{num}}[\Box u+(\partial u)^{2}]$ with $u=\tfrac12\ln\rho_{\mathrm{num}}$ on a $400^{3}$ grid of extent $8\sigma$, the second derivatives by centred differences and the time derivatives zero. The result was
+**The total quantum energy was checked on a Gaussian amplitude in three dimensions.** Take $\rho_{\mathrm{num}}=A^{2}\exp(-r^{2}/\sigma^{2})$ with $A=1.3$ and $\sigma=0.8$, and evaluate $w_{\mathrm{qnt}}=-\tfrac12\rho_{\mathrm{num}}[\Box_\Phi u+(\partial u)^{2}]$ with $u=\tfrac12\ln\rho_{\mathrm{num}}$ on a $400^{3}$ grid of extent $8\sigma$, the second derivatives by centred differences and the time derivatives zero. The result was
 
 $$
 \int w_{\mathrm{qnt}}\,d^{3}r=5.646281,
@@ -343,9 +343,9 @@ The closed form is worth deriving because it gives the scale. For a Gaussian of 
 
 ## Summary
 
-The stress element of the biquaternion scalar field is $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$, Hermitian, with the energy density in its scalar part and the energy flux in its vector part. It carries four of the ten components of the symmetric tensor, which is all that thermodynamics needs; the full tensor is the bigeneral bilinear of the cited Noether article. Its quaternionic norm is $w_{\mathrm{fl}}^{2}-\lvert\vec S_{\mathrm P}\rvert^{2}/c^{2}$, so positivity of the norm is the dominant-energy condition, and a massless traveling wave saturates it and lies on the zero-divisor cone. Its scalar divergence is $-i[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\nabla\cdot\vec S_{\mathrm P}]$, and the bracket vanishes on shell: the energy law, the continuity equation and the imaginary part of the Klein–Gordon equation are one equation.
+The stress element of the biquaternion scalar field is $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$, Hermitian, with the energy density in its scalar part and the energy flux in its vector part. It carries four of the ten components of the symmetric tensor, which is all that thermodynamics needs; the full tensor is the bigeneral bilinear of the cited Noether article. Its quaternionic norm is $w_{\mathrm{fl}}^{2}-\lvert\vec S_{\mathrm P}\rvert^{2}/c^{2}$, so positivity of the norm is the dominant-energy condition, and a massless traveling wave saturates it and lies on the zero-divisor cone. Its scalar divergence is $-i[\partial w_{\mathrm{fl}}/\partial r'_t+(1/c)\vec\nabla_\Phi\cdot\vec S_{\mathrm P}]$, and the bracket vanishes on shell: the energy law, the continuity equation and the imaginary part of the Klein–Gordon equation are one equation.
 
-In amplitude and phase the two entries separate into an amplitude-gradient piece, an imported classical piece and a quantum piece, the last being $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ with $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The quantum potential is the trace of the amplitude's second-derivative tensor, $\mathcal{Q}_{\mu\nu}=-(\hbar^{2}/2m)\partial_\mu\partial_\nu\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The force it exerts is the divergence of a second stress, $\sigma_{j\eta}=(\hbar^{2}/4m)[\partial_j\partial_\eta\rho_{\mathrm{num}}-\partial_j\rho_{\mathrm{num}}\partial_\eta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}]$, with $\partial_\eta\sigma_{j\eta}=-\rho_{\mathrm{num}}\partial_jQ_{\mathrm{qnt}}$; for a Gaussian $\sigma_{j\eta}=-(\hbar^{2}/2m\sigma^{2})\rho_{\mathrm{num}}\delta_{j\eta}$, isotropic and negative, and the identity then holds exactly. The trace of $\mathcal{Q}$ is a total divergence of the amplitude's gradient plus the square of the logarithmic gradient. Integrated over a static localised state the divergence drops and the square remains, so the total quantum energy is $\tfrac{\hbar^{2}}{2m}\int\rho_{\mathrm{num}}\lvert\nabla u\rvert^{2}d^{3}r=\tfrac{\hbar^{2}}{8m}\int\rho_{\mathrm{num}}\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}d^{3}r$; the check on a Gaussian, in units with $\hbar^{2}/m=1$, gave $5.646281$ against a closed form of $5.646284$.
+In amplitude and phase the two entries separate into an amplitude-gradient piece, an imported classical piece and a quantum piece, the last being $\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ with $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\Box_\Phi\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The quantum potential is the trace of the amplitude's second-derivative tensor, $\mathcal{Q}_{\mu\nu}=-(\hbar^{2}/2m)\partial_\mu\partial_\nu\lVert\tilde\Xi\rVert/\lVert\tilde\Xi\rVert$. The force it exerts is the divergence of a second stress, $\sigma_{j\eta}=(\hbar^{2}/4m)[\partial_j\partial_\eta\rho_{\mathrm{num}}-\partial_j\rho_{\mathrm{num}}\partial_\eta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}]$, with $\partial_\eta\sigma_{j\eta}=-\rho_{\mathrm{num}}\partial_jQ_{\mathrm{qnt}}$; for a Gaussian $\sigma_{j\eta}=-(\hbar^{2}/2m\sigma^{2})\rho_{\mathrm{num}}\delta_{j\eta}$, isotropic and negative, and the identity then holds exactly. The trace of $\mathcal{Q}$ is a total divergence of the amplitude's gradient plus the square of the logarithmic gradient. Integrated over a static localised state the divergence drops and the square remains, so the total quantum energy is $\tfrac{\hbar^{2}}{2m}\int\rho_{\mathrm{num}}\lvert\nabla u\rvert^{2}d^{3}r=\tfrac{\hbar^{2}}{8m}\int\rho_{\mathrm{num}}\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}d^{3}r$; the check on a Gaussian, in units with $\hbar^{2}/m=1$, gave $5.646281$ against a closed form of $5.646284$.
 
 The quantum stress is not a thermal pressure. It does not depend on the temperature, it is not the derivative of a free energy with respect to a volume, its pointwise density has either sign, it is anisotropic, and it depends on second derivatives of the density at the event and so cannot close a local equation of state except as a gradient expansion. Those negatives are what the following articles must respect when they write $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$.
 
@@ -371,12 +371,12 @@ The quantum stress is not a thermal pressure. It does not depend on the temperat
 | $E,\ \vec p$ | Energy and momentum of the flow |
 | $m$ | Mass of the field quantum |
 | $k_m=mc/\hbar$ | Mass wave number |
-| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential, always written with the mass shell it shifts |
+| $Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\lVert\tilde\Xi\rVert}{\lVert\tilde\Xi\rVert}$ | Quantum potential, always written with the mass shell it shifts |
 | $u=\ln\lVert\tilde\Xi\rVert$ | Logarithm of the amplitude |
 | $(\partial u)^{2}$ | $\lvert\nabla u\rvert^{2}-(\partial u/\partial r'_t)^{2}$ |
 | $\tilde\Sigma_{\Psi}=w_{\mathrm{fl}}e_t+\frac{i}{c}\vec S_{\mathrm P}$ | Stress element, Hermitian |
 | $w_{\mathrm{fl}}$ | Energy density, the time–time component of the imported tensor |
-| $\vec S_{\mathrm P}=-c\,\frac{\partial\xi}{\partial r'_t}\nabla\xi$ | Energy flux |
+| $\vec S_{\mathrm P}=-c\,\frac{\partial\xi}{\partial r'_t}\vec\nabla_\Phi\xi$ | Energy flux |
 | $w_{\mathrm{qnt}}=\rho_{\mathrm{num}}Q_{\mathrm{qnt}}$ | Quantum part of the energy density |
 | $\mathcal{Q}_{\mu\nu}=-\frac{\hbar^{2}}{2m}\frac{1}{\lVert\tilde\Xi\rVert}\frac{\partial^{2}\lVert\tilde\Xi\rVert}{\partial R_\mu\partial R_\nu}$ | Amplitude stress, whose trace is $Q_{\mathrm{qnt}}$ |
 | $\sigma_{j\eta}=\frac{\hbar^{2}}{4m}\bigl[\partial_j\partial_\eta\rho_{\mathrm{num}}-\partial_j\rho_{\mathrm{num}}\partial_\eta\rho_{\mathrm{num}}/\rho_{\mathrm{num}}\bigr]$ | Divergence-carrying quantum stress, $\partial_\eta\sigma_{j\eta}=-\rho_{\mathrm{num}}\partial_jQ_{\mathrm{qnt}}$ |

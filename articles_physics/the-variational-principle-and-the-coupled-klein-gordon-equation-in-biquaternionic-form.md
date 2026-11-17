@@ -9,13 +9,13 @@ This article writes the action of the coupled Klein–Gordon theory and reads wh
 $$
 S\bigl[\tilde\Xi,\tilde\Xi^{*},\tilde A_\Phi\bigr]
 =\int\mathrm{d}^{4}x\;\Bigl\{
-\mathrm{Sc}\sum_\mu\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\Bigr]
+\mathrm{Sc}\sum_\mu\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\Bigr]
 -k_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]
 +\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde F\tilde F\bigr]
 \Bigr\},
 $$
 
-with $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$, and the sum over the four slots carrying the metric signs of the corpus's convention. The first two terms are the matter action; the third is the Maxwell article's field term. The coupling is not a separate term: it is inside the covariant derivative, and that placement is the article's first structural point.
+with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$, and the sum over the four slots carrying the metric signs of the corpus's convention. The first two terms are the matter action; the third is the Maxwell article's field term. The coupling is not a separate term: it is inside the covariant derivative, and that placement is the article's first structural point.
 
 **Four results.**
 
@@ -23,7 +23,7 @@ with $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, $\ti
 
 *Second, the consistency of the two equations is the current's conservation, and it is automatic.* The Maxwell equation's scalar part must vanish, because the left side is the divergence of a pure vector; that vanishing is the continuity equation, and the matter equation supplies it. So the two variations cannot contradict each other, and the reason is the same one that makes the coupling possible at all.
 
-*Third, the current lies entirely inside the algebra.* The free Klein–Gordon article's current is a bilinear of the field with its own Hermitian conjugate, and the coupling does not change its character: $\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$ is one element times one element, and the current is its scalar part made real. There is no adjoint row, no $\gamma$-matrix insertion, and no bilinear that has to be repaired. This is the sharpest structural difference between the scalar case and the spinor case, where the variational article had to keep the naive bilinear and the polar article had to read it with a frame.
+*Third, the current lies entirely inside the algebra.* The free Klein–Gordon article's current is a bilinear of the field with its own Hermitian conjugate, and the coupling does not change its character: $\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ is one element times one element, and the current is its scalar part made real. There is no adjoint row, no $\gamma$-matrix insertion, and no bilinear that has to be repaired. This is the sharpest structural difference between the scalar case and the spinor case, where the variational article had to keep the naive bilinear and the polar article had to read it with a frame.
 
 *Fourth, the field term is unproblematic, unlike the vector case.* The Maxwell term $\tfrac12\mathrm{Re\,Sc}(\tilde F\tilde F)$ is invariant under the central phase because the *connection* is real: the field strength is a pure vector with real coefficients on the material sector, and the phase never reaches it. The coupled Proca article records the opposite situation, where the potential is complex and the field strength is half of a complex bivector, and where the invariant pairing's normalisation is open. Here nothing is open about the field term, and the reason is that the scalar's charge is carried by the field and not by the connection.
 
@@ -34,12 +34,12 @@ with $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, $\ti
 **The matter term.** The free companion's action is the sum over the four slots of $\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}\partial_\mu\tilde\Xi\big]$ with the metric signs of the display, minus the mass term. Covariantising the four slots gives
 
 $$
-S_{\mathrm{m}}=\int\mathrm{d}^{4}x\;\Bigl\{\sum_\mu\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\Bigr]-k_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
+S_{\mathrm{m}}=\int\mathrm{d}^{4}x\;\Bigl\{\sum_\mu\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\Bigr]-k_m^{2}\,\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\},
 $$
 
 and the only difference from the free action is the substitution of the derivative. Nothing was added to the action and nothing was rearranged: the interaction is the difference between the covariant and the ordinary kinetic terms, and it is bilinear in the field and linear in the connection.
 
-**The kinetic term is real and non-negative, term by term.** For any element $Y=\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi$,
+**The kinetic term is real and non-negative, term by term.** For any element $Y=\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$,
 
 $$
 \mathrm{Sc}\bigl(Y^{*}Y\bigr)=\sum_{\lambda}\lvert Y_\lambda\rvert^{2}\ge0 ,
@@ -58,38 +58,38 @@ exactly, because $Y^{*}Y=\mathrm{nat}(\bar Y)Y$ has scalar part $\sum_\lambda\lv
 **The Euler–Lagrange equation.** Vary $\tilde\Xi$ and $\tilde\Xi^{*}$ independently, which is legitimate over the complex carrier and is the standard device for a complex field, and integrate by parts once per slot. The result is
 
 $$
-\Bigl(\Box_{\mathrm{gco}}-k_m^{2}\Bigr)\tilde\Xi=0,
+\Bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\Bigr)\tilde\Xi=0,
 \qquad
-\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2},
+\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2},
 $$
 
 which is the coupled equation of the element companion, with the overall sign fixed by the action's convention as in the free companion.
 
-**Why the variation produces the squared operator.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\big]$, and varying $\tilde\Xi$ acts on the second factor: $\delta\bigl(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr)=\tilde\nabla_{\mathrm{gco},\mu}\delta\tilde\Xi$, because the connection is held fixed and the variation commutes with a derivative whose coefficients are fixed functions. So
+**Why the variation produces the squared operator.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, and varying $\tilde\Xi$ acts on the second factor: $\delta\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)=\tilde\nabla_{\mathrm{gco},\Phi,\mu}\delta\tilde\Xi$, because the connection is held fixed and the variation commutes with a derivative whose coefficients are fixed functions. So
 
 $$
-\delta S_{\mathrm{m}}=2\,\mathrm{Re}\,\mathrm{Sc}\sum_\mu\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\mu}\delta\tilde\Xi\Bigr]+\text{(the conjugate variation)},
+\delta S_{\mathrm{m}}=2\,\mathrm{Re}\,\mathrm{Sc}\sum_\mu\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\delta\tilde\Xi\Bigr]+\text{(the conjugate variation)},
 $$
 
 and integrating by parts moves the derivative onto the first factor. The boundary term vanishes for a variation of compact support, and the operator that comes out squares one and the same covariant derivative, because the connection is central and the same in the two slots; the sign is the free companion's and no new sign has to be chosen.
 
-**The two factors of a slot, and one exact bookkeeping point.** Write $c_\mu=\frac{iϙ}{\hbar}A_\mu$. The kinetic term carries $c_\mu$ in both factors of a slot, and the variation pairs them as $(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)$. That product is the square $\tilde\nabla_{\mathrm{gco},\mu}^{2}$ exactly when $\bar c_\mu=-c_\mu$, that is, when the slot's coefficient is purely imaginary. In the corpus's material convention $A_\eta$ is real, so the three spatial coefficients are purely imaginary and the three spatial slots pair into squares; and $A_t=i a'_t$ is imaginary, so the temporal coefficient is real and its slot pairs into $\partial_{R_t}^{2}-(ϙ a'_t/\hbar)^{2}$ rather than into $(\partial_{R_t}-ϙ a'_t/\hbar)^{2}$. For a constant potential the two differ by $-\frac{2ϙ a'_t}{\hbar}\partial_{R_t}+\frac{2ϙ^{2}a_t'^{2}}{\hbar^{2}}$: the first piece is the cross term through which the electric potential shifts the energy, the second the potential's square.
+**The two factors of a slot, and one exact bookkeeping point.** Write $c_\mu=\frac{iϙ}{\hbar}A_\mu$. The kinetic term carries $c_\mu$ in both factors of a slot, and the variation pairs them as $(\partial_\mu-\bar c_\mu)(\partial_\mu+c_\mu)$. That product is the square $\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$ exactly when $\bar c_\mu=-c_\mu$, that is, when the slot's coefficient is purely imaginary. In the corpus's material convention $A_\eta$ is real, so the three spatial coefficients are purely imaginary and the three spatial slots pair into squares; and $A_t=i a'_t$ is imaginary, so the temporal coefficient is real and its slot pairs into $\partial_{R_t}^{2}-(ϙ a'_t/\hbar)^{2}$ rather than into $(\partial_{R_t}-ϙ a'_t/\hbar)^{2}$. For a constant potential the two differ by $-\frac{2ϙ a'_t}{\hbar}\partial_{R_t}+\frac{2ϙ^{2}a_t'^{2}}{\hbar^{2}}$: the first piece is the cross term through which the electric potential shifts the energy, the second the potential's square.
 
-The article states the equation as $\Box_{\mathrm{gco}}\tilde\Xi=k_m^{2}\tilde\Xi$ and not as the adjoint-paired form, for three reasons: that is the equation the element companion states, it is the minimal-substitution form whose polar chart is the polar companion's pair, and it is the form whose mass shell carries the mechanical energy $E+ϙ c\,a'_t$. The variation reproduces it exactly for a magnetic connection and in the free limit, and for an electric one it reproduces it up to the cross term named above. The discrepancy is the single place where the corpus's convention for the temporal slot and the standard action's pairing part company, and it is recorded rather than absorbed: §*Open Questions* carries it.
+The article states the equation as $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\tilde\Xi$ and not as the adjoint-paired form, for three reasons: that is the equation the element companion states, it is the minimal-substitution form whose polar chart is the polar companion's pair, and it is the form whose mass shell carries the mechanical energy $E+ϙ c\,a'_t$. The variation reproduces it exactly for a magnetic connection and in the free limit, and for an electric one it reproduces it up to the cross term named above. The discrepancy is the single place where the corpus's convention for the temporal slot and the standard action's pairing part company, and it is recorded rather than absorbed: §*Open Questions* carries it.
 
-**Why the variation does not produce the algebra's other equation.** The action's kinetic term is the sum over slots of the *squared moduli*, not the modulus of the algebra's gradient. The variation of $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco}}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco}}\tilde\Xi\big]$ would produce $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde\Xi$, and the two functionals differ by the cross terms the element companion displays and measures. So the action is the arbiter, and it selects the component equation. The element companion states the same conclusion from the side of the equations; here it is the variation that decides.
+**Why the variation does not produce the algebra's other equation.** The action's kinetic term is the sum over slots of the *squared moduli*, not the modulus of the algebra's gradient. The variation of $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi\big]$ would produce $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi$, and the two functionals differ by the cross terms the element companion displays and measures. So the action is the arbiter, and it selects the component equation. The element companion states the same conclusion from the side of the equations; here it is the variation that decides.
 
 **The count.** The equation is four complex equations for four complex coefficients, which is eight real equations for eight real functions. The action is real, so the variations with respect to $\tilde\Xi$ and with respect to $\tilde\Xi^{*}$ are not independent constraints: the pair gives the four complex equations and their four conjugates, and the conjugate set is the same set. The count is the free companion's, unchanged by the coupling.
 
 ## The Variation in the Connection
 
-**The source.** Varying $A_\mu$ acts only inside the covariant derivatives, through $\delta\bigl(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr)=\frac{iϙ}{\hbar}\,\delta A_\mu\,\tilde\Xi$, and the connection's coefficient is central, so the variation does not have to choose a side. Hence
+**The source.** Varying $A_\mu$ acts only inside the covariant derivatives, through $\delta\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)=\frac{iϙ}{\hbar}\,\delta A_\mu\,\tilde\Xi$, and the connection's coefficient is central, so the variation does not have to choose a side. Hence
 
 $$
 \frac{\delta S_{\mathrm{m}}}{\delta A_\mu}
 =-\frac{ϙ}{\hbar}\,J_\mu ,
 \qquad
-J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\Bigl[i\,\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\Bigr],
+J_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\Bigl[i\,\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\Bigr],
 $$
 
 with the sign from the two appearances of $A_\mu$ in the squared covariant derivative and the factor from $\partial/\partial A_\mu$ of a square. The object $J_\mu$ is real by construction, because it is twice the real part of a complex number, and it is the same current the element companion defines up to the constant $1/(2k_m)$: the companion's normalisation is chosen to match the free article's density and is a convention, the object is not.
@@ -113,7 +113,7 @@ $$
 which is the free article's covariant form of the continuity equation. The matter equation supplies it: the identity
 
 $$
-\partial_\mu J_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}\Bigl[\tilde\Xi^{*}\bigl(\Box_{\mathrm{gco}}-k_m^{2}\bigr)\tilde\Xi\Bigr]
+\partial_\mu J_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}\Bigl[\tilde\Xi^{*}\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi\Bigr]
 $$
 
 holds for the current as defined in this section, the companion's $J$ being this one divided by $2k_m$ and therefore carrying the same constant after the rescaling; the divergence vanishes on every solution, and the vanishing is the same statement as the scalar part of the connection's equation being zero. So the two variations of one action are mutually consistent, and the consistency is not a condition imposed on the system: it is the current's conservation, which is the matter equation read once more.
@@ -135,7 +135,7 @@ holds for the current as defined in this section, the companion's $J$ being this
 **The phase symmetry: the charge.** The transformation $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$, $\tilde\Xi^{*}\mapsto e^{-i\alpha}\tilde\Xi^{*}$ with $\alpha$ a constant real number leaves the Lagrangian invariant identically, because the central $i$ commutes with everything. The Noether current is
 
 $$
-J^{\mathrm{N}}_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\Bigl[i\,\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\Bigr],
+J^{\mathrm{N}}_\mu=2\,\mathrm{Re}\,\mathrm{Sc}\Bigl[i\,\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\Bigr],
 $$
 
 which is the object of the previous section, and its conservation is the identity displayed there. The article records the coincidence as its third structural point: the current that the phase symmetry supplies and the current that the connection's equation needs are the same current, and they are the same because both are the derivative of the action with respect to the same object.
@@ -145,8 +145,8 @@ which is the object of the previous section, and its conservation is the identit
 **The energy–momentum.** Under a translation $x_\mu\mapsto x_\mu+\epsilon_\mu$ with the connection held fixed, the matter action is invariant only when the connection is constant, because a varying connection is a set of functions and the Lagrangian depends on them. For a constant connection the Noether current is
 
 $$
-T_{\mu\nu}=\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\nu}\tilde\Xi
-+\bigl(\tilde\nabla_{\mathrm{gco},\nu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\Bigr]-\eta_{\mu\nu}\mathcal L ,
+T_{\mu\nu}=\mathrm{Sc}\Bigl[\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\nu}\tilde\Xi
++\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\nu}\tilde\Xi\bigr)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\Bigr]-\eta_{\mu\nu}\mathcal L ,
 $$
 
 which is real and symmetric in the index pair by construction: the two terms are each other's complex conjugates, and there is no antisymmetric piece to remove. This is a genuine difference from the free Proca case, where the symmetrisation had to be imposed.
@@ -195,17 +195,17 @@ up to the current's normalisation, with $F_{\nu\mu}=\partial_\nu A_\mu-\partial_
 The action of the coupled scalar theory is
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\sum_\mu\bigl[(\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]-k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]+\tfrac12\mathrm{Re\,Sc}\bigl[\tilde F\tilde F\bigr]\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\sum_\mu\bigl[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]-k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]+\tfrac12\mathrm{Re\,Sc}\bigl[\tilde F\tilde F\bigr]\Bigr\},
 $$
 
-with the coupling inside the derivative and not as a separate term. Varying the field gives $\bigl(\Box_{\mathrm{gco}}-k_m^{2}\bigr)\tilde\Xi=0$ — exactly for a magnetic connection and in the free limit, and up to the temporal slot's cross term for an electric one, the bookkeeping of §*The Variation in the Field* and one of the article's open questions — varying the connection gives $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\tilde J_\Phi^{\mathrm{(src)}}$ with the matter current as the source; and the two are consistent because the matter current is conserved,
+with the coupling inside the derivative and not as a separate term. Varying the field gives $\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi=0$ — exactly for a magnetic connection and in the free limit, and up to the temporal slot's cross term for an electric one, the bookkeeping of §*The Variation in the Field* and one of the article's open questions — varying the connection gives $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\tilde J_\Phi^{\mathrm{(src)}}$ with the matter current as the source; and the two are consistent because the matter current is conserved,
 
 $$
-\partial_\mu J_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}\Bigl[\tilde\Xi^{*}\bigl(\Box_{\mathrm{gco}}-k_m^{2}\bigr)\tilde\Xi\Bigr]=0
+\partial_\mu J_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}\Bigl[\tilde\Xi^{*}\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi\Bigr]=0
 \quad\text{on solutions},
 $$
 
-with $J_\mu=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]$. The same object is the phase symmetry's Noether charge, the connection's source and the current whose conservation makes the connection's equation integrable. The current is gauge invariant and lies entirely inside the algebra, with no adjoint row and no bilinear to repair; the density's sign is not repaired and is the carrier's. The energy–momentum tensor is real and symmetric with no improvement term, and its divergence for a varying connection is the Lorentz force density.
+with $J_\mu=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$. The same object is the phase symmetry's Noether charge, the connection's source and the current whose conservation makes the connection's equation integrable. The current is gauge invariant and lies entirely inside the algebra, with no adjoint row and no bilinear to repair; the density's sign is not repaired and is the carrier's. The energy–momentum tensor is real and symmetric with no improvement term, and its divergence for a varying connection is the Lorentz force density.
 
 ## Summary of Notation
 
@@ -217,11 +217,11 @@ with $J_\mu=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\
 | $\tilde\Xi$ | The field, a general element of $\mathbb{B}$ |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection, real on the material sector |
 | $ϙ$ | The coupling |
-| $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative, central per slot |
-| $\Box_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}$ | The covariant d'Alembertian |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative, central per slot |
+| $\Box_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\mathrm{gco},\Phi,\mu}^{2}$ | The covariant d'Alembertian |
 | $\tilde F=\mathrm{Vect}\big((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\big)$ | The field strength |
 | $S_{\mathrm{m}}$, $\mathcal L$ | The matter action; its density |
-| $J_\mu=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi\bigr]$ | The charge current; the Noether charge; the source |
+| $J_\mu=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]$ | The charge current; the Noether charge; the source |
 | $\tilde J_\Phi^{\mathrm{(src)}}$ | The source of the connection's equation |
 | $T_{\mu\nu}$ | The matter stress tensor; $\partial_\mu T_{\mu\nu}=F_{\nu\mu}J_\mu$ |
 | $k_m=mc/\hbar$ | The mass wave number |

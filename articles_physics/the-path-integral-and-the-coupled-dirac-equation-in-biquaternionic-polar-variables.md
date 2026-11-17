@@ -17,7 +17,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 **The findings are six, and each is one sentence.**
 
 - A path's weight gains the gauge term as a real number, so it gains an angle and nothing else: every history keeps scale one, no boost, and a rotor that is a sign.
-- In a field-free potential the kernel's word is the free word with its angle shifted by $-ϙ\tilde A_\Phi\cdot\Delta\tilde R_\Phi/\hbar$, and its scale, boost and rotor untouched.
+- In a field-free potential the kernel's word is the free word with its angle shifted by $-ϙ\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi/\hbar$, and its scale, boost and rotor untouched.
 - The shift wraps: an angle beyond a quarter turn returns into the word's range and leaves a sign in the rotor, so a large constant potential flips the sign of the kernel's rotor.
 - In momentum space the kernel is the free one at the covariant wavevector, so the boost in the word is named by $\tilde K_{\Phi,\mathrm{gco}}$ and not by $\tilde K_\Phi$.
 - The scale is the van Vleck determinant of the Lorentz path, and it has no first-order response to the field strength; the amplitude is blind to a weak field.
@@ -32,11 +32,11 @@ The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=
 **The coupled pair and its covariant wavevector.**
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
 \qquad
-\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R,
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 $$
 
 with $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ the covariant wavevector of *The Coupled Dirac Equation in Biquaternionic Polar Variables*. The potential is $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case, and every component is central. That centality is the single fact the article turns on, and it is the reason the connection multiplies the word instead of acting inside it.
@@ -85,14 +85,14 @@ $$
 \varrho\longmapsto \varrho,\qquad
 \tilde U_{\Psi,\mathrm b}\longmapsto\tilde U_{\Psi,\mathrm b},\qquad
 \tilde u_{\mathrm r}\longmapsto\pm\tilde u_{\mathrm r},\qquad
-\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\tilde A_\Phi\cdot\Delta\tilde R_\Phi .
+\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi .
 $$
 
 **The check is on a generic element, and it is not a check of the kernel alone.** Over one hundred random elements multiplied by a random central phase the scale is unchanged to $9\times10^{-16}$, the boost to $1.3\times10^{-15}$, and the rotor is unchanged or negated, to $3\times10^{-15}$; the angle moves by the phase, modulo $\pi$, to $9\times10^{-16}$. The statement is therefore an identity about the word and not a numerical accident of one kernel.
 
 **The sign in the rotor is the branch and not a physical effect.** The angle's range is $(-\pi/2,\pi/2]$, so a shift larger than a quarter turn returns into the range and the remainder becomes a sign:
 
-| $ϙ\tilde A_\Phi\cdot\Delta\tilde R_\Phi/\hbar$ | $\theta_{\mathrm{pha}}$ | rotor |
+| $ϙ\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi/\hbar$ | $\theta_{\mathrm{pha}}$ | rotor |
 | --- | --- | --- |
 | $+0.4$ | $+0.4000$ | $+e_t$ |
 | $+1.2$ | $+1.2000$ | $+e_t$ |
@@ -221,7 +221,7 @@ The division of labour is the polar form's contribution: the charge enters the a
 | $\Phi$ | Flux through the loop two histories enclose |
 | $\mathcal S^{A}$, $\mathcal S^{0}$ | Kernel in a constant potential, and free kernel |
 | $\mathcal{F}[x]$ | Spin factor, the path-ordered algebra-valued weight |
-| $e^{-iϙ\tilde A_\Phi\cdot\Delta\tilde R_\Phi/\hbar}$ | The central phase of a field-free potential; the whole of its effect |
+| $e^{-iϙ\tilde A_\Phi\cdot\Delta_\Phi\tilde R_\Phi/\hbar}$ | The central phase of a field-free potential; the whole of its effect |
 | $\theta_{\mathrm{act}}$ | Action over $\hbar$, reduced into the word's range |
 | $\arg(i^{-d/2})=-d\pi/4$ | Central Maslov constant; unchanged by the coupling |
 | $-e_t$ at $2\pi$ | Spin Maslov constant, the rotor's double cover; unchanged by the coupling |

@@ -10,7 +10,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
 $$
 
-which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. Each member is first order and each acts from the left. The gradient is a left multiplication, so it acts inside one part; the mass term is the only term that names the other part, and it is the only coupling between the two. The free equation keeps one member and one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$. The massive equation is the pair and not a one-field equation of first order, because $\tilde\nabla^2$ is not a scalar: the scalar second-order operator of the algebra is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and only that product is the wave operator.
+which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. Each member is first order and each acts from the left. The gradient is a left multiplication, so it acts inside one part; the mass term is the only term that names the other part, and it is the only coupling between the two. The free equation keeps one member and one field, $\tilde\nabla_\Phi\tilde{Ξ}=0$. The massive equation is the pair and not a one-field equation of first order, because $\tilde\nabla_\Phi^2$ is not a scalar: the scalar second-order operator of the algebra is $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$, and only that product is the wave operator.
 
 **The two parts.** The field carries the chirality subscript of *Special Element Conventions*, §*The Chirality Convention*, and its two parts are read by the right action $\tilde Q\mapsto-i\tilde Q\vec e_z$: the value $-1$ written $L$ and the value $+1$ written $R$. A left multiplication keeps the value, a product takes the value of its right factor, a scalar multiple keeps the value, and a right multiplication by $\vec e_x$ or by $\vec e_y$ exchanges the two values. The gradient multiplies on the left and the reading on the right, so no derivative moves the value; the mass is a central coefficient multiplying on the left, and it moves none either. What the mass does is relate the two parts, and the pair is the statement of that relation.
 
@@ -21,21 +21,21 @@ which is the dynamics of *Operator and Calculus Conventions*, §*The Gradient*. 
 **The gradient.** It is the element-valued operator of *Operator and Calculus Conventions*, §*The Gradient*, and it is written out here once, because the exercise uses no other derivative:
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
+\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
 =e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
 with its quaternion conjugate and the d'Alembertian,
 
 $$
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu}
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu}
 =e_t\frac{\partial}{\partial R_t}-\vec e_x\frac{\partial}{\partial R_x}-\vec e_y\frac{\partial}{\partial R_y}-\vec e_z\frac{\partial}{\partial R_z},
 \qquad \varepsilon=(1,-1,-1,-1),
 $$
 
 $$
-\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
-\qquad \Delta_Q=\frac{\partial^2}{\partial R_x^2}+\frac{\partial^2}{\partial R_y^2}+\frac{\partial^2}{\partial R_z^2}.
+\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural} \tilde\nabla_\Phi=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
+\qquad \Delta_\Phi=\frac{\partial^2}{\partial R_x^2}+\frac{\partial^2}{\partial R_y^2}+\frac{\partial^2}{\partial R_z^2}.
 $$
 
 On the material sector $Q_t=i q'_t$ the time derivative is $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and the d'Alembertian is $\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$. These lines are the whole operator content of the exercise, and no letter other than $\tilde\nabla_\Phi$ names the gradient.
@@ -43,10 +43,10 @@ On the material sector $Q_t=i q'_t$ the time derivative is $\partial/\partial R_
 **The square of the gradient is not scalar.** The product $\tilde\nabla_\Phi\tilde\nabla_\Phi$ is
 
 $$
-\tilde\nabla^2=\frac{\partial^2}{\partial R_t^2}-\Delta_Q+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
+\tilde\nabla_\Phi^2=\frac{\partial^2}{\partial R_t^2}-\Delta_\Phi+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$
 
-because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_\eta-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
+because $e_t$ commutes with the three spatial units while the spatial units anticommute among themselves. The mixed terms are the ones the conjugate removes: in $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ the coefficient of $\partial^2/\partial R_t\partial R_\eta$ is $e_te_\eta-\vec e_\eta e_t=0$, and the coefficient of $\partial^2/\partial R_\mu^2$ is $\varepsilon_\mu e_\mu^2=1$. So the equation is the pair: the square with the conjugate is the scalar $\Box_\Phi$ and the square with itself is not a scalar, so no single first-order equation on one field can carry a mass term.
 
 **The wave element.** A plane wave is $\tilde{Ξ}=\tilde{Ξ}_{0}\exp(i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\vec k_\Phi\cdot(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z)-\omega r'_t/c$, its polarisation $\tilde{Ξ}_{0}$ an element that does not depend on the coordinates. The phase is central, so it commutes with the polarisation, and the gradient differentiates it to left multiplication by
 
@@ -115,7 +115,7 @@ which is the mass shell of Problem 6 and the Klein–Gordon equation of the firs
 
 **Statement.** Solve the pair for the positive-frequency branch $\tilde w$ and for the negative-frequency branch $\tilde v$, explicitly at rest and at general momentum, in the two readings.
 
-**Solution.** Eliminating the second part gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$; on a plane wave $\Box$ is $-N$, so the pair is soluble exactly on the mass shell
+**Solution.** Eliminating the second part gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$; on a plane wave $\Box_\Phi$ is $-N$, so the pair is soluble exactly on the mass shell
 
 $$
 E^2=\vec p^{\,2}+m^2 .
@@ -237,7 +237,7 @@ $$
 (-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-k_{t}^{\prime}i\vec k_\Phi+i\vec kk_{t}^{\prime}-i^2\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}+\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=\frac{p^{2}}{\hbar^{2}},
 $$
 
-with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k_\Phi$ is pure, and with the plus in front of $\vec k_\Phi^{\,2}$ because the square of $i\vec k_\Phi$ is $i^2\vec k_\Phi^{\,2}=+\lvert\vec k_\Phi\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}=-\hbar^{2}k_m^{2}$, so $\Box=k_m^{2}$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
+with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k_\Phi$ is pure, and with the plus in front of $\vec k_\Phi^{\,2}$ because the square of $i\vec k_\Phi$ is $i^2\vec k_\Phi^{\,2}=+\lvert\vec k_\Phi\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}=-\hbar^{2}k_m^{2}$, so $\Box_\Phi=k_m^{2}$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
 
 **No trace enters.** Each of the two sums is a product of elements and a scalar, and each of the two members is a left multiplication by an element. Neither line needs a trace, a basis or an index: the identity is an identity of the algebra, and the rank-two reading of its left side is the statement that the two helicity solutions span the part of value $R$.
 
@@ -389,7 +389,7 @@ The seven problems test the parent's plane-wave solutions and confirm them in th
 
 1. **The solutions.** Eliminating the second part gives the mass shell $E^2=\vec p^{\,2}+m^2$; on it the second part is free and the first is $\frac1m\tilde\nabla_\Phi\tilde{Ξ}_{R}$, the two parts standing in the norm ratio $(E\mp\lvert\vec p\rvert):(E\pm\lvert\vec p\rvert)$ for helicity $\pm1$. At rest $\tilde w_L(0)=-\tilde w_R(0)$, with basis $e_t-i\vec e_z$ and $\vec e_x+i\vec e_y$ for the part of value $R$; in the other reading the same elements are read on $\vec e_x$.
 2. **Normalisation.** The covariant values $2m$, $-2m$ and $0$ follow from the single identity $(i\vec u_p)^2=e_t$ and from the geometric mean $\sqrt{E^2-\vec p^{\,2}}=m$; the Hermitian products are $2E$.
-3. **Spin sums.** For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}+m)\tilde{Ξ}$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}-m)\tilde{Ξ}$ read as products of elements; the closure $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ gives $\Box=k_m^{2}$ on the shell, and $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}$.
+3. **Spin sums.** For every element, $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}+m)\tilde{Ξ}$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\tilde{Ξ}\rangle_{\mathrm D}=(i\tilde P_{\Phi}-m)\tilde{Ξ}$ read as products of elements; the closure $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ gives $\Box_\Phi=k_m^{2}$ on the shell, and $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}$.
 4. **Massless limit.** The pair decouples, the field annihilated by $\tilde\nabla_\Phi$ keeps one helicity and the field annihilated by $(\tilde\nabla_\Phi)^{\natural}$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.
 5. **The two parts.** The value is read by $\tilde Q\mapsto-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$; a left multiplication keeps it and a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges it; the change of the reading is right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, which sends the reading from $\vec e_z$ to $\vec e_x$ and touches no derivative.
 6. **Mass shell.** The condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ is the quaternionic-norm statement $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.
@@ -406,7 +406,7 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\tilde\nabla_\Phi$ | The biquaternionic gradient, $\sum_\mu e_\mu\,\partial/\partial R_\mu$, four components |
 | $(\tilde\nabla_\Phi)^{\natural}$ | Its quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
-| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_Q$ |
+| $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | The d'Alembertian, $\partial^2/\partial R_t^2+\Delta_\Phi$ |
 | $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The action that reads the value; spectrum $+1,+1,-1,-1$ |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field and its two parts, values $-1$ and $+1$ |
 | $\tilde P_{\Phi}=i p_{t}^{\prime}e_t+\vec p$ | Momentum element of the plane wave, $p_{t}^{\prime}=E/c$ |

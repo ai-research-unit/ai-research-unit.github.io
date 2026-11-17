@@ -7,9 +7,9 @@
 **The equation.** The coupled Dirac equation in polar variables is the free one with covariant derivatives,
 
 $$
-\tilde\nabla_{\mathrm{gco}}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D},
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D},
 \qquad
-\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi,
 \qquad
 \tilde\Xi_{\mathrm D}=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r},
 $$
@@ -35,7 +35,7 @@ with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is
 **The logarithmic derivative of the coupled word has four brackets, and the connection's whole contribution is one central element per slot.** Dividing the covariant derivative of the word by the word,
 
 $$
-\tilde\Xi_{\mathrm D}^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi_{\mathrm D}
+\tilde\Xi_{\mathrm D}^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi_{\mathrm D}
 =\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\frac{iϙ}{\hbar}A_\mu
@@ -299,7 +299,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 
 ## Summary
 
-The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
+The coupled Dirac equation in polar variables is $\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\mathrm D}=\frac{i}{\hbar}k_m\tilde\Xi_{\mathrm D}$ with $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word is $\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$.
 
 The connection is central per component. Its temporal slot is a central imaginary number and joins the phase bracket; its spatial slots are Hermitian vectors and join the boost bracket. The scale is a real scalar and the rotor is a real vector part, so **the density and the spin are untouched**.
 

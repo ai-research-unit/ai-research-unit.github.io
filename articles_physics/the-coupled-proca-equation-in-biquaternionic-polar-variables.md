@@ -63,7 +63,7 @@ exactly, for every value of the other six parameters. The check is exact to mach
 **The identity.** Differentiate the word and divide by it, and add the connection:
 
 $$
-\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde A
+\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde A
 =\tilde A^{-1}\frac{\partial\tilde A}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
 =\frac{\partial\ln \varrho}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
@@ -131,9 +131,9 @@ and the whole effect of the potential is absorbed by a reparameterisation of one
 **The second-order operator.** The coupled equation is second order once the field strength is eliminated, and in the chart the elimination reads
 
 $$
-\tilde A^{-1}\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}\tilde A
+\tilde A^{-1}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}\tilde A
 =\sum_\mu\bigl(\tilde A^{-1}e_\mu^{\natural}\tilde A\bigr)\,
-\tilde\nabla_{\mathrm{gco},\mu}\Bigl(\tilde A^{-1}\tilde\nabla_{\mathrm{gco}}\tilde A\Bigr)
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\Bigl(\tilde A^{-1}\tilde\nabla_{\mathrm{gco},\Phi}\tilde A\Bigr)
 +\text{(the frame's derivative terms)} ,
 $$
 
@@ -159,7 +159,7 @@ for every rapidity and every boost axis, to $10^{-14}$ over random draws. The re
 **The constraint in the chart.** The trace of the equation is the covariant Lorenz condition, and in the chart it is one real equation among the eight:
 
 $$
-\mathrm{Sc}\bigl(\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde A\bigr)=0,
+\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0,
 $$
 
 which is the statement that the covariant divergence of the word vanishes. The element form computes it; the chart's contribution is the reading: the divergence is built from the scale and phase brackets and from the connection's temporal slot, so the constraint is a relation among the three central objects and the modulus, and the frame's brackets do not enter it. That is why the constraint is exactly the one the element form finds: the curvature is traceless, and the trace is blind to the frame.
@@ -213,7 +213,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\theta_{\mathrm{axr}}\in[0,2\pi),\ \hat u_{\mathrm r}\in S^{2}$ | Angle and axis of the rotor |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra, its material and informational sectors |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | The connection; $A_t=i a'_t$ imaginary, $A_\eta$ real in the material case |
-| $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The central per-component covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The central per-component covariant derivative |
 | $\Gamma_\mu=\tilde U^{-1}\partial_\mu\tilde U$, $\rho_\mu=\tilde u^{-1}\partial_\mu\tilde u$ | The frame's two logarithmic derivatives |
 | $\tilde A^{-1}\partial_\mu\tilde A$ | The four brackets: scale, phase, boost, rotor |
 | $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$ | Covariant wavevector; the one substitution |

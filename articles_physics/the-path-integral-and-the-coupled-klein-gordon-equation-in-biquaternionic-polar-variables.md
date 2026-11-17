@@ -24,7 +24,7 @@ The algebra, the pairing and the word are the free polar article's: $\mathbb{B}=
 **The covariant derivative and its coefficient.** With $c_\mu=\frac{iϙ}{\hbar}A_\mu$ the covariant derivative is $\partial_\mu+c_\mu$ on the coefficients, and for a central field
 
 $$
-\tilde\nabla_{\mathrm{gco},\mu}\bigl(\varrho e^{i\theta_{\mathrm{pha}}}e_t\bigr)
+\tilde\nabla_{\mathrm{gco},\Phi,\mu}\bigl(\varrho e^{i\theta_{\mathrm{pha}}}e_t\bigr)
 =e^{i\theta_{\mathrm{pha}}}\Bigl(\partial_\mu \varrho+i\,\varrho\,\kappa_{\mu}^{\mathrm{kin}}\Bigr)e_t,
 \qquad
 \kappa_{\mu}^{\mathrm{kin}}=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϛ}{\hbar}A_\mu ,
@@ -58,7 +58,7 @@ which is the free polar article's bracket with the two substitutions of the pola
 
 $$
 \varrho^{2}\Bigl[\bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\bigr)^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr]
--\frac{2ϛ \varrho^{2}}{\hbar}\Bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\,a'_t+\nabla\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
+-\frac{2ϛ \varrho^{2}}{\hbar}\Bigl(\partial_{r'_t}\theta_{\mathrm{pha}}\,a'_t+\vec\nabla_\Phi\theta_{\mathrm{pha}}\cdot\vec A\Bigr)
 +\frac{ϛ^{2}\varrho^{2}}{\hbar^{2}}\Bigl(\bigl(a'_t\bigr)^{2}-\lvert\vec A\rvert^{2}\Bigr),
 $$
 
@@ -113,11 +113,11 @@ which is the polar equation companion's amplitude equation with the mechanical b
 
 ## A Constant Background, in the Chart
 
-**The shift, and what it does to the bracket.** For a constant potential the two shifts are constants, so the bracket is the free bracket with $\partial\theta_{\mathrm{pha}}$ translated by a constant and $\nabla\theta_{\mathrm{pha}}$ translated by a constant vector. **A translation of a gradient is a change of the plane wave's wavevector and nothing else**, which is the chart's form of the element companion's statement that a constant potential shifts the wavevector.
+**The shift, and what it does to the bracket.** For a constant potential the two shifts are constants, so the bracket is the free bracket with $\partial\theta_{\mathrm{pha}}$ translated by a constant and $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ translated by a constant vector. **A translation of a gradient is a change of the plane wave's wavevector and nothing else**, which is the chart's form of the element companion's statement that a constant potential shifts the wavevector.
 
 **The scalar potential enters squared in the chart.** Because the temporal slot's shift sits inside a square with a relative sign, a constant $a'_t$ contributes $+\frac{ϛ^{2}}{\hbar^{2}}a_t'^{2}\varrho^{2}$ to the exponent and no term linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$. **The chart's dispersion for a constant scalar potential has the potential squared and no linear shift**, which is the element companion's paired shell. The linear shift belongs to the squared reading and has no chart expression, for the reason of the previous section.
 
-**The vector potential enters as a translation and the two are different objects.** A constant $\vec A$ translates $\nabla\theta_{\mathrm{pha}}$, so it moves the wavevector and changes the bracket by the translation's square; a constant $a'_t$ does the same in the temporal slot. **The chart shows the two as one operation, a translation, and the difference between them as the relative sign of the two squares.** This is the chart's version of the element companion's contrast between the exact scalar shift and the vector potential's Landau problem, and the chart states the contrast as a sign.
+**The vector potential enters as a translation and the two are different objects.** A constant $\vec A$ translates $\vec\nabla_\Phi\theta_{\mathrm{pha}}$, so it moves the wavevector and changes the bracket by the translation's square; a constant $a'_t$ does the same in the temporal slot. **The chart shows the two as one operation, a translation, and the difference between them as the relative sign of the two squares.** This is the chart's version of the element companion's contrast between the exact scalar shift and the vector potential's Landau problem, and the chart states the contrast as a sign.
 
 **What the chart does not show.** It does not show the spectrum. A constant vector potential's Landau levels require the transverse structure of the wavefunction, and the chart's exponent is a function of two scalars; the levels are the polar equation companion's and are not re-derived. **The chart locates the potential in one coordinate and leaves the spectrum to the equation.**
 
@@ -163,7 +163,7 @@ The chart carries the action's reading of the covariant square and cannot carry 
 | $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}e_t$ | The word on a central field |
 | $c_\mu=\frac{iϙ}{\hbar}A_\mu$ | The slot's coefficient; $c_t$ real, $c_\eta$ imaginary |
 | $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{ϛ}{\hbar}A_\mu$ | The mechanical phase rate; the connection's only address |
-| $\tilde\nabla_{\mathrm{gco},\mu}(\varrho e^{i\theta_{\mathrm{pha}}}e_t)=e^{i\theta_{\mathrm{pha}}}\bigl(\partial_\mu \varrho+i \varrho\kappa^{\mathrm{kin}}_\mu\bigr)e_t$ | The exact factorisation of the covariant derivative |
+| $\tilde\nabla_{\mathrm{gco},\Phi,\mu}(\varrho e^{i\theta_{\mathrm{pha}}}e_t)=e^{i\theta_{\mathrm{pha}}}\bigl(\partial_\mu \varrho+i \varrho\kappa^{\mathrm{kin}}_\mu\bigr)e_t$ | The exact factorisation of the covariant derivative |
 | $\prod_x \varrho\,\mathrm{d}\varrho\,\mathrm{d}\theta_{\mathrm{pha}}$ | The polar measure; unchanged by a gauge transformation |
 | $2c\varrho^{2}\partial\theta_{\mathrm{pha}}$ | The linear interaction term; the current's slot |
 | $c^{2}\varrho^{2}$ | The quadratic interaction term; no derivative |

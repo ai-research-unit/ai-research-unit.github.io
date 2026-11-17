@@ -28,17 +28,17 @@ The article states the theorem as the standard result it is, derives the special
 **The gradient.** The derivative of the article is the biquaternionic gradient of *Operator and Calculus Conventions*, §*The Gradient*,
 
 $$
-\tilde\nabla=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
+\tilde\nabla_\Phi=\sum_{\mu\in\{t,x,y,z\}}e_\mu\frac{\partial}{\partial R_\mu}
 =e_t\frac{\partial}{\partial R_t}+\vec e_x\frac{\partial}{\partial R_x}+\vec e_y\frac{\partial}{\partial R_y}+\vec e_z\frac{\partial}{\partial R_z},
 $$
 
 with its quaternion conjugate and the scalar d'Alembertian
 
 $$
-\tilde\nabla^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
+(\tilde\nabla_\Phi)^{\natural}=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},
 \qquad
 \Box_\Phi=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)
-=\frac{\partial^2}{\partial R_t^2}+\Delta_Q ,
+=\frac{\partial^2}{\partial R_t^2}+\Delta_\Phi ,
 \qquad
 \varepsilon=(1,-1,-1,-1).
 $$
@@ -77,7 +77,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R} ,
 $$
 
-and it is not a one-field first-order equation: $\tilde\nabla^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The first-order form of the d'Alembertian is the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, and each line composed with the conjugate of the other returns $\Box$; $\tilde\nabla^2$ is not $\Box$, and the article states the pair and never a one-field massive form. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+and it is not a one-field first-order equation: $\tilde\nabla_\Phi^2$ is not scalar, so no single first-order operator on one field has a scalar square to take a mass from. The first-order form of the d'Alembertian is the pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, and each line composed with the conjugate of the other returns $\Box_\Phi$; $\tilde\nabla_\Phi^2$ is not $\Box_\Phi$, and the article states the pair and never a one-field massive form. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The chirality.** Chirality is the subscript, and it takes two values. A field is written $\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$: $L$ is the minus value and $R$ the plus value, in the Dirac letters, and the split is unique, the two parts of the zero field being both zero (*Special Element Conventions*, §*The Chirality Convention* and §*The Spinor Convention*). The two values are the two eigenspaces of right multiplication by $-i\vec e_z$, the frame's chirality $\xi$; the body carries the subscript alone. A right multiplication commutes with every left multiplication, so the gradient commutes with $\xi$ and preserves each value: the frame's chirality is even on the operator, and it does not grade it.
 
@@ -87,7 +87,7 @@ $$
 n_+=\dim\ker\tilde D_R^{+},\qquad n_-=\dim\ker\tilde D_R^{-}.
 $$
 
-The two are adjoints of one another in the Hermitian form, because the conjugate of the gradient is the operator that form pairs with it, $\tilde\nabla^{*}=(\tilde\nabla_\Phi)^{\natural}$ (*Operator and Calculus Conventions*, §*The Gradient*, the conjugates of the gradient); the integration by parts carries a sign, and a sign moves no kernel. Nothing forces the two dimensions to agree, and that asymmetry is what the index measures.
+The two are adjoints of one another in the Hermitian form, because the conjugate of the gradient is the operator that form pairs with it, $\tilde\nabla_\Phi^{*}=(\tilde\nabla_\Phi)^{\natural}$ (*Operator and Calculus Conventions*, §*The Gradient*, the conjugates of the gradient); the integration by parts carries a sign, and a sign moves no kernel. Nothing forces the two dimensions to agree, and that asymmetry is what the index measures.
 
 **The two Dirac equations.** The framework's equation is the chiral pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, each member acting from the left and the mass coupling the two parts; no single glyph is written for them. The mass is the pairing of the two parts and a zeroth-order term, and it does not move the index: the index of an elliptic first-order operator is fixed by its symbol, which the mass leaves untouched. The index computed below is therefore the index of the twisted operator, and the gauge-covariant gradient $\tilde D_R$ of the section above is its derivative.
 
@@ -234,7 +234,7 @@ Two consequences follow and are used in the later articles. First, the adjoint z
 
 ## The Biquaternion Reading and the Rank-Two Limitation
 
-The framework's contribution to the index theorem is not the theorem but the identification of its ingredients. The operator is the gauge-covariant gradient $\tilde D_R$ above, whose composition with its conjugate has scalar part $\Box$; the carrier is the algebra $\mathbb{B}$ read as a module over itself, and the two chiral halves are its two parts $\mathbb{B}_L$ and $\mathbb{B}_R$, which is the reading of *The Dirac Equation in Biquaternionic Form* on the regular module. The adjoint representation is the three-dimensional real subspace $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ that the algebra carries as its own commutator algebra; and the group theory that produces the Dynkin indices is read directly from the quaternion commutators $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$. The zero-mode counts $k$ and $4k$ are therefore a statement about the algebra's modules: the defining module gives one mode per unit charge, and the adjoint, being the algebra acting on itself, gives four.
+The framework's contribution to the index theorem is not the theorem but the identification of its ingredients. The operator is the gauge-covariant gradient $\tilde D_R$ above, whose composition with its conjugate has scalar part $\Box_\Phi$; the carrier is the algebra $\mathbb{B}$ read as a module over itself, and the two chiral halves are its two parts $\mathbb{B}_L$ and $\mathbb{B}_R$, which is the reading of *The Dirac Equation in Biquaternionic Form* on the regular module. The adjoint representation is the three-dimensional real subspace $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$ that the algebra carries as its own commutator algebra; and the group theory that produces the Dynkin indices is read directly from the quaternion commutators $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$. The zero-mode counts $k$ and $4k$ are therefore a statement about the algebra's modules: the defining module gives one mode per unit charge, and the adjoint, being the algebra acting on itself, gives four.
 
 What the framework does not supply is the *invariant* expression of the non-abelian index density. The density $\mathrm{Tr}(F\wedge F)$ requires the matrix trace over the gauge factor and the wedge of two algebra-valued two-forms, and the framework's biquaternion norm cannot produce it. The biquaternion norm pairs a single algebra element with its conjugate through the quaternion product and returns one scalar; it has one algebra slot. The index density needs two. This is the same rank-two limitation that the companion article found for the topological density and that the energy–momentum-tensor article found for the stress tensor: the framework's quadratic invariant is rank-two and single-slot, while the non-abelian index density is traced over a second algebra factor. The consequence is precise: the framework can write the index density in components with the matrix trace, and it can identify its integral as the topological charge, but the density is not an object of the biquaternion-norm invariant calculus. The zero-mode count is expressible; the invariant whose integral computes it, in the non-abelian case, is not one of the framework's invariants.
 
@@ -257,8 +257,8 @@ The index density is a total derivative whose integral equals the instanton char
 | $\mathfrak{su}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}$ | Compact gauge algebra inside $\mathbb{B}_{\Phi}$ |
 | $T_a=\tfrac12 \vec e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$ | Normalised generators |
 | $\Box_\Phi=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | d'Alembertian of the $\mathbb{B}$ frame; the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ |
-| $\Delta=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ | Laplacian in the three vector coordinates |
-| $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient, acting from the left; $\tilde\nabla^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
+| $\Delta_\Phi=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ | Laplacian in the three vector coordinates |
+| $\tilde\nabla_\Phi=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | Biquaternionic gradient, acting from the left; $(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\,\partial/\partial R_\mu$ |
 | $\tilde D_R=\sum_\mu e_\mu D_\mu$ | Twisted Dirac operator in the representation $R$; the gauge-covariant gradient |
 | $D_\mu=\partial/\partial R_\mu+i\kappa\,\mathcal A_\mu$ | Covariant derivative; $[D_\mu,D_\nu]=i\kappa F_{\mu\nu}$ |
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two values of the chirality subscript; $R$ is the plus value |

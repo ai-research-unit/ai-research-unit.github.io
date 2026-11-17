@@ -114,14 +114,14 @@ where $\chi_\mu$ is the part the rotor contributes — zero for the scalar field
 **Its stress is not conserved alone, and this is the coupling.** The normal component exchanges momentum with the condensate, so
 
 $$
-\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=\tilde F_{\Phi,\mathrm{fr}},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=\tilde F_{\Phi,\mathrm{fr}},
 \qquad
-\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=-\tilde F_{\Phi,\mathrm{fr}},
+(\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=-\tilde F_{\Phi,\mathrm{fr}},
 \qquad
-\tilde\nabla^{\natural}\left(\tilde\Sigma_{\Psi,\mathrm{nrm}}+\tilde\Sigma_{\Psi,\mathrm{sup}}\right)=0,
+(\tilde\nabla_\Phi)^{\natural}\left(\tilde\Sigma_{\Psi,\mathrm{nrm}}+\tilde\Sigma_{\Psi,\mathrm{sup}}\right)=0,
 $$
 
-with $\tilde F_{\Phi,\mathrm{fr}}$ the friction element. **The displays are element equations, and the corpus's divergence spelling applies to them slot by slot**: the scalar part of the first is $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}})=\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}})$, which is the declared form of [The Local Entropy Current](the-local-entropy-current.html), and the three vector slots repeat the same law with their own components. **The three displays say one thing: the total stress is conserved and each component's is not.** A reader who writes conservation for both components separately has written the wrong equations, and the error is the commonest one in the two-fluid literature.
+with $\tilde F_{\Phi,\mathrm{fr}}$ the friction element. **The displays are element equations, and the corpus's divergence spelling applies to them slot by slot**: the scalar part of the first is $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}})=\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}})$, which is the declared form of [The Local Entropy Current](the-local-entropy-current.html), and the three vector slots repeat the same law with their own components. **The three displays say one thing: the total stress is conserved and each component's is not.** A reader who writes conservation for both components separately has written the wrong equations, and the error is the commonest one in the two-fluid literature.
 
 ## Mutual Friction
 
@@ -221,9 +221,9 @@ the second being the statement that the entropy density is a function of the nor
 **Second, the friction.** $\tilde F_{\Phi,\mathrm{fr}}\to0$ because it carries $\rho_{\mathrm{num,nrm}}$ as a factor, so the two stress equations become
 
 $$
-\mathrm{Sc}\bigl(\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}\bigr)=0,
+\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}\bigr)=0,
 \qquad\text{that is}\qquad
-\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0,
+(\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0,
 $$
 
 in the element spelling of §*The two stress equations*, which is the form the article carries throughout; the scalar and spatial slots of that one display are the two conservation laws. **The normal component's equation is not a second condition**: its element is the zero element at $T=0$, so the equation reads $0=0$ and constrains nothing.
@@ -271,13 +271,13 @@ in the element spelling of §*The two stress equations*, which is the form the a
 
 The two-fluid model writes two flow elements, $\tilde V_{\Phi,\mathrm{sup}}=\tilde P_{\Phi,\mathrm{sup}}/m$ and $\tilde V_{\Phi,\mathrm{nrm}}=\tilde P_{\Phi,\mathrm{nrm}}/m$, each with $\langle\tilde V\rangle_{\natural}=-c^{2}$, built from a split $\rho_{\mathrm{num}}=\rho_{\mathrm{num,sup}}+\rho_{\mathrm{num,nrm}}$ of the proper density. The relative element $\tilde W_\Phi=\tilde V_{\Phi,\mathrm{nrm}}-\tilde V_{\Phi,\mathrm{sup}}$ vanishes exactly when the two components move together, which is the equilibrium condition and the state in which no entropy is produced.
 
-The condensate carries no entropy, $s_{\mathrm{ent,sup}}=0$, because it is a pure state and the corpus's functional vanishes there; it carries the quantum stress instead, with $p_{\mathrm{qnt}}$ its pressure. The normal component carries all the entropy, $s_{\mathrm{ent,nrm}}=s_{\mathrm{ent}}$, and its equations are the single-fluid equations read on its own flow. Neither component's stress is conserved alone: $\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=\tilde F_{\Phi,\mathrm{fr}}=-\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}$, and only the sum is conserved.
+The condensate carries no entropy, $s_{\mathrm{ent,sup}}=0$, because it is a pure state and the corpus's functional vanishes there; it carries the quantum stress instead, with $p_{\mathrm{qnt}}$ its pressure. The normal component carries all the entropy, $s_{\mathrm{ent,nrm}}=s_{\mathrm{ent}}$, and its equations are the single-fluid equations read on its own flow. Neither component's stress is conserved alone: $(\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{nrm}}=\tilde F_{\Phi,\mathrm{fr}}=-(\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}$, and only the sum is conserved.
 
 Mutual friction is $\tilde F_{\Phi,\mathrm{fr}}=(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}\tilde W_\Phi$, with the exact production $\sigma_{\mathrm{ent}}=-T^{-1}\mathrm{Sc}(\tilde F_{\Phi,\mathrm{fr}}\tilde W_\Phi)=T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}(\lvert\vec w\rvert^{2}-w_t^{2})\ge0$, which reduces to $T^{-1}(\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}/\rho_{\mathrm{num}})B_{\mathrm{frc}}w^{2}$ to leading order in the relative speed. Evaluated once at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$, the force is $0.004\,200\,000\,000$ and the production is $0.000\,420\,000\,000$.
 
 The phase coupling is $e_{\mathrm{cpl}}=-E_{J}\cos(\delta S/\hbar)$, an exchange current $J_{\mathrm{c}}\sin(\delta S/\hbar)$ and an AC frequency $\omega_{\mathrm{Jsn}}=\delta\mu_{\mathrm{chm}}/\hbar$, which is $1.5193\times10^{12}\,\mathrm{s^{-1}}$ for $1\,\mathrm{meV}$. The coupling is conservative and produces no entropy; the friction does, and the two meet only through the chemical potential difference that the friction changes.
 
-The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\rho_{\mathrm{num,sup}}$, $s_{\mathrm{ent}}\to0$, $\tilde F_{\Phi,\mathrm{fr}}\to0$ so that $\tilde\nabla^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0$, and $\tilde J_{\Phi,\mathrm{ent}}\to0$ with the second law saturated. The normal flow does not tend to the condensate's flow; it ceases to exist. **The remaining flow is the polar-form article's, and the two-fluid model is its finite-temperature extension.**
+The $T\to0$ limit is exact and shown in four displays: $\rho_{\mathrm{num}}\to\rho_{\mathrm{num,sup}}$, $s_{\mathrm{ent}}\to0$, $\tilde F_{\Phi,\mathrm{fr}}\to0$ so that $(\tilde\nabla_\Phi)^{\natural}\tilde\Sigma_{\Psi,\mathrm{sup}}=0$, and $\tilde J_{\Phi,\mathrm{ent}}\to0$ with the second law saturated. The normal flow does not tend to the condensate's flow; it ceases to exist. **The remaining flow is the polar-form article's, and the two-fluid model is its finite-temperature extension.**
 
 ## Summary of Notation
 

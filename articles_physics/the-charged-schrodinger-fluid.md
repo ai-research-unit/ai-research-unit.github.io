@@ -9,13 +9,13 @@
 **What the article supplies, in four statements.**
 
 - The connection joins the phase bracket only, by its algebraic type, so the density, the quantum potential and the stress are untouched.
-- The vorticity is the magnetic field: $\nabla\times\vec v=\varkappa\vec B/m$, exactly, with no normalisation caveat; and the electric field never enters it.
-- The vorticity has no dynamics of its own: its rate is Faraday's law, $\partial_{t'}\vec\omega=-(\varkappa/m)\nabla\times\vec E$, with no velocity in the statement.
+- The vorticity is the magnetic field: $\vec\nabla_\Phi\times\vec v=\varkappa\vec B/m$, exactly, with no normalisation caveat; and the electric field never enters it.
+- The vorticity has no dynamics of its own: its rate is Faraday's law, $\partial_{t'}\vec\omega=-(\varkappa/m)\vec\nabla_\Phi\times\vec E$, with no velocity in the statement.
 - The Lorentz force appears in the acceleration law as $-\varkappa(\vec E+\vec v\times\vec B)$, and the quantum force stays charge-blind.
 
 **The article is a reading and not a derivation.** The covariant pair is [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), §*The Central Field in the Operator Setting*: the covariant continuity equation, the covariant Hamilton–Jacobi equation, and the statement that the quantum potential is unchanged. This article takes them and asks what the object is in fluid words.
 
-**Conventions.** The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-\varkappa\varphi$. Time is $t'$, the density is $\rho_{\mathrm{num}}=\varrho^{2}$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$. The gauge transformation is $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real.
+**Conventions.** The free companion's, and the coupled polar article's for the connection: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, so that $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-\varkappa\varphi$. Time is $t'$, the density is $\rho_{\mathrm{num}}=\varrho^{2}$, the action is $S=\hbar\theta_{\mathrm{pha}}$, and the quantum potential is $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. The gauge transformation is $\lambda=\exp(i\varkappa\Gamma/\hbar)$ with $\Gamma$ real.
 
 ## The Word Collapses, and the Connection Joins the Phase
 
@@ -34,12 +34,12 @@ $$
 **The two gauge-invariant combinations are the kinetic momentum and the kinetic energy.**
 
 $$
-\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\nabla S-q\vec A,
+\vec\pi=\hbar\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
 \qquad
 \mathcal E=-\hbar\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi .
 $$
 
-Both are invariant term by term: the phase's gradient shifts by $\varkappa\nabla\Gamma$ and $\vec A$ by $-\nabla\Gamma$; the phase's rate shifts by $-\varkappa\partial_{t'}\Gamma$ and $\varphi$ by $+\partial_{t'}\Gamma$. Neither the phase nor its rate is invariant alone, and the pairing is the statement that the fluid's data are the invariants and the chart's coordinates are not.
+Both are invariant term by term: the phase's gradient shifts by $\varkappa\nabla\Gamma$ and $\vec A$ by $-\vec\nabla_\Phi\Gamma$; the phase's rate shifts by $-\varkappa\partial_{t'}\Gamma$ and $\varphi$ by $+\partial_{t'}\Gamma$. Neither the phase nor its rate is invariant alone, and the pairing is the statement that the fluid's data are the invariants and the chart's coordinates are not.
 
 ## The Pair
 
@@ -47,7 +47,7 @@ Both are invariant term by term: the phase's gradient shifts by $\varkappa\nabla
 
 $$
 \boxed{\;\frac{\partial S}{\partial t'}+\frac{\lvert\nabla S-q\vec A\rvert^{2}}{2m}-\varkappa\varphi+Q=0,\qquad
-\frac{\partial\rho_{\mathrm{num}}}{\partial t'}+\nabla\cdot\Bigl(\rho_{\mathrm{num}}\frac{\nabla S-q\vec A}{m}\Bigr)=0,\;}
+\frac{\partial\rho_{\mathrm{num}}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(\rho_{\mathrm{num}}\frac{\vec\nabla_\Phi S-q\vec A}{m}\Bigr)=0,\;}
 $$
 
 with $Q$ exactly the free article's. The two changes in the Hamilton–Jacobi equation are the kinetic momentum in the kinetic term and the potential energy; the change in the continuity equation is the kinetic velocity in place of the canonical one. There is no third change, and the absence of a third is the type argument of the previous section read on the pair.
@@ -61,9 +61,9 @@ with $Q$ exactly the free article's. The two changes in the Hamilton–Jacobi eq
 **There are two momenta and one velocity.**
 
 $$
-\vec p_{\mathrm{can}}=\nabla S,
+\vec p_{\mathrm{can}}=\vec\nabla_\Phi S,
 \qquad
-\vec\pi=\nabla S-q\vec A,
+\vec\pi=\vec\nabla_\Phi S-q\vec A,
 \qquad
 \vec v=\frac{\vec\pi}{m},
 \qquad
@@ -80,7 +80,7 @@ The canonical momentum is a gradient and the kinetic momentum is a gradient plus
 
 ## The Euler Equation Is the Lorentz Force
 
-**The gradient of the Hamilton–Jacobi equation is the acceleration law, and the magnetic term turns it into the Lorentz force.** With $\vec v=\vec\pi/m$ and $\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$,
+**The gradient of the Hamilton–Jacobi equation is the acceleration law, and the magnetic term turns it into the Lorentz force.** With $\vec v=\vec\pi/m$ and $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$,
 
 $$
 \frac{\mathrm{D}\pi_{i}}{\mathrm{D}t}\equiv\frac{\partial\pi_{i}}{\partial t'}+v_{j}\partial_{j}\pi_{i}
@@ -89,9 +89,9 @@ $$
 
 *Proof.* Differentiating the Hamilton–Jacobi equation in space gives $\partial_{t'}\partial_{i}S=-(v_{j}\partial_{i}\pi_{j})+\varkappa\partial_{i}\varphi-\partial_{i}Q$; adding $\varkappa\partial_{t'}A_{i}$ and $v_{j}\partial_{j}\pi_{i}$, and using $\partial_{j}\pi_{i}-\partial_{i}\pi_{j}=-\varkappa\varepsilon_{ijk}B_{k}$ and $\partial_{i}\varphi+\partial_{t'}A_{i}=-E_{i}$, gives the display. The identity was also checked component by component with a symbolic algebra system, on an arbitrary $S$, $\vec A$ and $\varphi$.
 
-**With $\varkappa$ the negative of the electric charge, this is the standard force.** Writing $q=-\varkappa$, the right-hand side is $q(\vec E+\vec v\times\vec B)-\nabla Q$: the Lorentz force of a charge $q$ plus the quantum force. The two are separate objects and neither modifies the other. The Lorentz force is odd in the coupling and vanishes at $\varkappa=0$; the quantum force does not contain the coupling at all, and it is the whole of the free article's Euler equation.
+**With $\varkappa$ the negative of the electric charge, this is the standard force.** Writing $q=-\varkappa$, the right-hand side is $q(\vec E+\vec v\times\vec B)-\vec\nabla_\Phi Q$: the Lorentz force of a charge $q$ plus the quantum force. The two are separate objects and neither modifies the other. The Lorentz force is odd in the coupling and vanishes at $\varkappa=0$; the quantum force does not contain the coupling at all, and it is the whole of the free article's Euler equation.
 
-**The quantum force is charge-blind.** $\nabla Q$ carries $\varrho$ and its Laplacian and nothing else, so a charged and a neutral fluid with the same density have the same quantum force at the same event. The statement is the type argument's consequence and it is worth isolating: of the two forces on a fluid element, one is the field's and one is the density's, and the field cannot reach the density's.
+**The quantum force is charge-blind.** $\vec\nabla_\Phi Q$ carries $\varrho$ and its Laplacian and nothing else, so a charged and a neutral fluid with the same density have the same quantum force at the same event. The statement is the type argument's consequence and it is worth isolating: of the two forces on a fluid element, one is the field's and one is the density's, and the field cannot reach the density's.
 
 **The inertia is still $m$ and there is still no factor of $\gamma$.** The companion's law carries $\gamma^{-1}$ because its flow variable is normalised; this one does not, and the coupling does not introduce one. A relativistic charged fluid's acceleration law has two reasons for a $\gamma$ — the normalisation and the field's part in the four-velocity — and the first-order fluid has neither.
 
@@ -100,9 +100,9 @@ $$
 **The velocity is a gradient plus a potential, so its curl is the field.**
 
 $$
-\vec\omega=\nabla\times\vec v=\frac{\varkappa}{m}\,\vec B,
+\vec\omega=\vec\nabla_\Phi\times\vec v=\frac{\varkappa}{m}\,\vec B,
 \qquad
-\nabla\times\vec p_{\mathrm{can}}=0 .
+\vec\nabla_\Phi\times\vec p_{\mathrm{can}}=0 .
 $$
 
 The canonical flow is irrotational, exactly as in the free article; the kinetic flow is rotational exactly where the magnetic field is and nowhere else. With $\varkappa$ the negative of the electric charge this reads $\vec\omega=-(q/m)\vec B$, which is the cyclotron angular velocity of a charge $q$: the fluid's vorticity *is* the cyclotron frequency, and the Larmor rate needs no separate calculation at this rung.
@@ -113,12 +113,12 @@ The canonical flow is irrotational, exactly as in the free article; the kinetic 
 
 *The fluid cannot rotate where the field is zero.* In a region with $\vec B=0$ the flow is irrotational, so the fluid's rotation is not a degree of freedom but a response. This is the non-relativistic form of the statement that a charged quantum fluid's circulation is fixed by the flux, and it is why the loop statements of the next section are about the flux and not about the flow.
 
-*The vorticity cannot carry a monopole.* $\vec\omega$ is a curl by construction, so $\nabla\cdot\vec\omega=0$ identically; combined with $\vec\omega=\varkappa\vec B/m$ this says $\nabla\cdot\vec B=0$. The chart therefore cannot represent a magnetic monopole, and the statement is an identity of the chart and not an extra equation: a vorticity that is a curl has no divergence to carry.
+*The vorticity cannot carry a monopole.* $\vec\omega$ is a curl by construction, so $\vec\nabla_\Phi\cdot\vec\omega=0$ identically; combined with $\vec\omega=\varkappa\vec B/m$ this says $\vec\nabla_\Phi\cdot\vec B=0$. The chart therefore cannot represent a magnetic monopole, and the statement is an identity of the chart and not an extra equation: a vorticity that is a curl has no divergence to carry.
 
 *The vorticity has no dynamics of its own.* Since $\vec\omega$ is a function of $\vec B$ and of nothing else, its rate is
 
 $$
-\frac{\partial\vec\omega}{\partial t'}=\frac{\varkappa}{m}\frac{\partial\vec B}{\partial t'}=-\frac{\varkappa}{m}\nabla\times\vec E ,
+\frac{\partial\vec\omega}{\partial t'}=\frac{\varkappa}{m}\frac{\partial\vec B}{\partial t'}=-\frac{\varkappa}{m}\vec\nabla_\Phi\times\vec E ,
 $$
 
 which is Faraday's law and contains no velocity. The Helmholtz vorticity equation of a classical fluid — transport, stretching and tilting — has no independent content here: the vorticity is slaved to the field, and what a classical fluid would call its vortex dynamics is the field's own equation read on a derived quantity.
@@ -135,9 +135,9 @@ $$
 \Phi_{B}=\oint\vec A\cdot\mathrm{d}\vec l=\int_{\Sigma}\vec B\cdot\mathrm{d}\vec S,
 $$
 
-with $n$ the winding of the phase. The derivation is one line: $\vec v=(\nabla S-q\vec A)/m$, the phase is single valued on the field so its gradient integrates to $2\pi\hbar n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(2\pi\hbar n-q\Phi_{B})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
+with $n$ the winding of the phase. The derivation is one line: $\vec v=(\vec\nabla_\Phi S-q\vec A)/m$, the phase is single valued on the field so its gradient integrates to $2\pi\hbar n$, and the potential integrates to the flux. With $\varkappa$ the negative of the electric charge this is $(2\pi\hbar n-q\Phi_{B})/m$, the standard statement that a magnetic flux shifts every circulation quantum.
 
-**So the flux shifts the circulation and does not quantise it.** The kinetic circulation is a multiple of $2\pi\hbar/m$ exactly when $\varkappa\Phi_{B}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\nabla S$'s, is a multiple always.
+**So the flux shifts the circulation and does not quantise it.** The kinetic circulation is a multiple of $2\pi\hbar/m$ exactly when $\varkappa\Phi_{B}$ is one too — in particular where $\vec B$ vanishes on a spanning surface — and otherwise it takes the flux's value and is not a multiple of anything. The canonical circulation, being $\vec\nabla_\Phi S$'s, is a multiple always.
 
 **What the loop statement needs is only one phase, single valued on the loop.** It does not need the connection to be weak, the flow to be slow, or the region to be free of the field's effects; and it does not need a condensate. The single-particle fluid's circulation is quantised for the same reason a superfluid's is, and the reason is the single-valuedness of one phase, not the presence of a macroscopic occupation.
 
@@ -165,8 +165,8 @@ and the force it produces is the second term of the Euler equation and not the f
 
 | rung | velocity | vorticity | rank |
 | --- | --- | --- | --- |
-| Euler, $\hbar\to0$ | $\nabla\Phi$, a gradient | $0$ | $0$ |
-| Schrödinger | $\nabla S/m$, a gradient | $0$ | $0$ |
+| Euler, $\hbar\to0$ | $\vec\nabla_\Phi\Phi$, a gradient | $0$ | $0$ |
+| Schrödinger | $\vec\nabla_\Phi S/m$, a gradient | $0$ | $0$ |
 | charged Schrödinger | $\vec\pi/m$, a gradient plus a potential | $\varkappa\vec B/m$ | $2$ |
 | Klein–Gordon | $\tilde P_{\Phi}/m$, a gradient | $0$ | $0$ |
 | charged Klein–Gordon | $\tilde P^{\mathrm{mech}}/m$, a four-vector whose norm the shell fixes | $\mathrm{d}V=(\varkappa/m)F$ | $4$ iff $\vec E\cdot\vec B\ne0$ |
@@ -177,17 +177,17 @@ and the force it produces is the second term of the Euler equation and not the f
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That the connection is central imaginary in every slot and joins the phase bracket only, by its type. That the density, the quantum potential and the quantum stress are therefore invariant under the coupling. The covariant pair, with the kinetic momentum in the continuity equation and in the kinetic term, and $-\varkappa\varphi$ in the potential. The gauge invariance of $\vec\pi$ and $\mathcal E$, term by term. That the velocity is $\vec\pi/m$ and is not a gradient. That the Lorentz force appears as $-\varkappa(\vec E+\vec v\times\vec B)$ in the acceleration law, verified component by component, with the quantum force charge-blind and additive. The vorticity identity $\vec\omega=\varkappa\vec B/m$, exact and unconditional, with the canonical flow irrotational. That $\nabla\cdot\vec\omega=0$ combined with the identity gives $\nabla\cdot\vec B=0$. That the vorticity's rate is Faraday's law, with no velocity in it. That the kinetic circulation is $(2\pi\hbar n+\varkappa\Phi_{B})/m$ and the canonical one is $2\pi\hbar n/m$. That the stress identity and the absence of a state law survive the coupling unchanged. That the vorticity's rank is at most two, and that $\vec E\cdot\vec B$ therefore has no non-relativistic image.
+**Established.** That the connection is central imaginary in every slot and joins the phase bracket only, by its type. That the density, the quantum potential and the quantum stress are therefore invariant under the coupling. The covariant pair, with the kinetic momentum in the continuity equation and in the kinetic term, and $-\varkappa\varphi$ in the potential. The gauge invariance of $\vec\pi$ and $\mathcal E$, term by term. That the velocity is $\vec\pi/m$ and is not a gradient. That the Lorentz force appears as $-\varkappa(\vec E+\vec v\times\vec B)$ in the acceleration law, verified component by component, with the quantum force charge-blind and additive. The vorticity identity $\vec\omega=\varkappa\vec B/m$, exact and unconditional, with the canonical flow irrotational. That $\vec\nabla_\Phi\cdot\vec\omega=0$ combined with the identity gives $\vec\nabla_\Phi\cdot\vec B=0$. That the vorticity's rate is Faraday's law, with no velocity in it. That the kinetic circulation is $(2\pi\hbar n+\varkappa\Phi_{B})/m$ and the canonical one is $2\pi\hbar n/m$. That the stress identity and the absence of a state law survive the coupling unchanged. That the vorticity's rank is at most two, and that $\vec E\cdot\vec B$ therefore has no non-relativistic image.
 
 **Interpretation.** That the vorticity's being the field is best read as the statement that the fluid's rotation is a response and not a degree of freedom: the warrant is that $\vec\omega$ is a function of $\vec B$ alone, and the reading is the programme's step. That the rank table orders the block by the equation's order rather than by the field's spin is an observation about the table and not a theorem; the spin-one and spinor fluids of the block are not in it. That the identity's unconditional form at this rung is a *gain* is a judgement; the companion's qualified statement is not refuted by it.
 
-**Not claimed.** It is not claimed that the fluid is a superconductor or a condensate: the circulation is quantised for a single particle's fluid, and the condensate's version is [Superfluids and BECs](superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html). It is not claimed that $\nabla\cdot\vec B=0$ is derived from fluid mechanics; it is an identity of a chart in which the vorticity is a curl. It is not claimed that the flow is curl-free in a region where $\vec B\ne0$; there the vorticity is the field's. It is not claimed that the coupling modifies the quantum potential in any limit, because it does not modify it at all.
+**Not claimed.** It is not claimed that the fluid is a superconductor or a condensate: the circulation is quantised for a single particle's fluid, and the condensate's version is [Superfluids and BECs](superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html). It is not claimed that $\vec\nabla_\Phi\cdot\vec B=0$ is derived from fluid mechanics; it is an identity of a chart in which the vorticity is a curl. It is not claimed that the flow is curl-free in a region where $\vec B\ne0$; there the vorticity is the field's. It is not claimed that the coupling modifies the quantum potential in any limit, because it does not modify it at all.
 
 ## Summary
 
 The connection is a central imaginary number in every slot, so it joins the phase bracket and no other; the scale, the density, the quantum potential and the quantum stress are untouched.
 
-The pair is the free pair on two invariants: the kinetic momentum $\vec\pi=\nabla S-q\vec A$ in the continuity equation and in the kinetic term, and $-\varkappa\varphi$ in the potential, with $Q$ exactly the free quantum potential.
+The pair is the free pair on two invariants: the kinetic momentum $\vec\pi=\vec\nabla_\Phi S-q\vec A$ in the continuity equation and in the kinetic term, and $-\varkappa\varphi$ in the potential, with $Q$ exactly the free quantum potential.
 
 There are two momenta and one velocity. The canonical momentum is a gradient and the canonical flow is irrotational; the kinetic momentum is a gradient plus a potential, and the velocity is the second over the mass.
 
@@ -211,16 +211,16 @@ The stress identity, the absence of an equation of state and the non-dissipativi
 | $\varkappa$ | Coupling; minus the electric charge, $q=-\varkappa$ |
 | $\varphi$, $\vec A$ | Scalar and vector potentials |
 | $S=\hbar\theta_{\mathrm{pha}}$ | Action; gauge dependent |
-| $\vec p_{\mathrm{can}}=\nabla S$ | Canonical momentum; a gradient |
-| $\vec\pi=\nabla S-q\vec A$ | Kinetic momentum; gauge invariant |
+| $\vec p_{\mathrm{can}}=\vec\nabla_\Phi S$ | Canonical momentum; a gradient |
+| $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Kinetic momentum; gauge invariant |
 | $\vec v=\vec\pi/m$ | Velocity; gauge invariant |
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$ | Kinetic energy; gauge invariant |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | Density; gauge invariant |
 | $\vec j=\rho_{\mathrm{num}}\vec v$ | Current; the charge current is $\varkappa\vec j$ |
-| $Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$ | Quantum potential; unchanged by the coupling |
+| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; unchanged by the coupling |
 | $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ | Quantum stress; unchanged by the coupling |
-| $\vec\omega=\nabla\times\vec v$ | Vorticity; $\varkappa\vec B/m$ |
-| $\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$ | Field strengths |
+| $\vec\omega=\vec\nabla_\Phi\times\vec v$ | Vorticity; $\varkappa\vec B/m$ |
+| $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
 | $\Phi_{B}=\oint\vec A\cdot\mathrm{d}\vec l$ | Magnetic flux through a spanning surface |
 | $\lambda=\exp(i\varkappa\Gamma/\hbar)$ | Gauge transformation |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |

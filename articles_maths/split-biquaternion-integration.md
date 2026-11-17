@@ -9,7 +9,7 @@ The treatment is purely mathematical. The independent variables are four real va
 
 Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
-The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\tilde{\nabla}^{\natural}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
+The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-biquaternion gradient $\tilde\nabla_\Phi$, the quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$, the square $\tilde\nabla_\Phi^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
 
 The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -122,26 +122,26 @@ where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial 
 **Theorem (integration by parts for the gradient).** Let $F_{\mathrm{fn}}$ and $G_{\mathrm{fn}}$ be continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and write
 
 $$
-F_{\mathrm{fn}}\nabla^{R} = \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F_{\mathrm{fn}}) e_\mu
+F_{\mathrm{fn}}\tilde\nabla_\Phi^{R} = \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F_{\mathrm{fn}}) e_\mu
 $$
 
 for the **right gradient** of $F_{\mathrm{fn}}$. Then
 
 $$
-\int_\Omega F_{\mathrm{fn}} (\tilde{\nabla}G_{\mathrm{fn}}) \, dV = \int_{\partial \Omega} F_{\mathrm{fn}} \tilde u_{\mathrm n} G_{\mathrm{fn}} \, dS - \int_\Omega (F_{\mathrm{fn}}\nabla^{R}) G_{\mathrm{fn}} \, dV,
+\int_\Omega F_{\mathrm{fn}} (\tilde\nabla_\Phi G_{\mathrm{fn}}) \, dV = \int_{\partial \Omega} F_{\mathrm{fn}} \tilde u_{\mathrm n} G_{\mathrm{fn}} \, dS - \int_\Omega (F_{\mathrm{fn}}\tilde\nabla_\Phi^{R}) G_{\mathrm{fn}} \, dV,
 $$
 
 and equivalently
 
 $$
-\int_\Omega (\tilde{\nabla}F_{\mathrm{fn}}) G_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F_{\mathrm{fn}} G_{\mathrm{fn}} \, dS - \int_\Omega \sum_{\mu\in\{t,x,y,z\}} e_\mu F_{\mathrm{fn}} (\partial/\partial q_\mu G_{\mathrm{fn}}) \, dV,
+\int_\Omega (\tilde\nabla_\Phi F_{\mathrm{fn}}) G_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F_{\mathrm{fn}} G_{\mathrm{fn}} \, dS - \int_\Omega \sum_{\mu\in\{t,x,y,z\}} e_\mu F_{\mathrm{fn}} (\partial/\partial q_\mu G_{\mathrm{fn}}) \, dV,
 $$
 
 where $\tilde u_{\mathrm n} = \sum_\mu n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.
 
-**Proof.** The Leibniz rule for the gradient gives $\tilde{\nabla}(F_{\mathrm{fn}}G_{\mathrm{fn}}) = (\tilde{\nabla}F_{\mathrm{fn}})G_{\mathrm{fn}} + \sum_\mu e_\mu F_{\mathrm{fn}}\,\partial/\partial q_\mu G_{\mathrm{fn}}$, and the divergence theorem applied to the product $F_{\mathrm{fn}}G_{\mathrm{fn}}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $F_{\mathrm{fn}} e_\mu G_{\mathrm{fn}}$ and sum over $\mu$.
+**Proof.** The Leibniz rule for the gradient gives $\tilde\nabla_\Phi(F_{\mathrm{fn}}G_{\mathrm{fn}}) = (\tilde\nabla_\Phi F_{\mathrm{fn}})G_{\mathrm{fn}} + \sum_\mu e_\mu F_{\mathrm{fn}}\,\partial/\partial q_\mu G_{\mathrm{fn}}$, and the divergence theorem applied to the product $F_{\mathrm{fn}}G_{\mathrm{fn}}$ gives the second display. For the first display, apply the ordinary divergence theorem in $\mathbb{R}^4$ to the field with components $F_{\mathrm{fn}} e_\mu G_{\mathrm{fn}}$ and sum over $\mu$.
 
-**Remark (the non-commutative correction).** The transposition that moves the derivative off $G_{\mathrm{fn}}$ while leaving $F_{\mathrm{fn}}(\tilde{\nabla}G_{\mathrm{fn}})$ in the volume term is **false for a non-central** $F_{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F_{\mathrm{fn}}\,\partial/\partial q_\mu G_{\mathrm{fn}}$ equals $F_{\mathrm{fn}}(\tilde{\nabla}G_{\mathrm{fn}})$ only when $F_{\mathrm{fn}}$ commutes with every invertible $e_\mu$. The right gradient $\nabla^{R}$ is the transposition that removes the restriction.
+**Remark (the non-commutative correction).** The transposition that moves the derivative off $G_{\mathrm{fn}}$ while leaving $F_{\mathrm{fn}}(\tilde\nabla_\Phi G_{\mathrm{fn}})$ in the volume term is **false for a non-central** $F_{\mathrm{fn}}$: the Leibniz term $\sum_\mu e_\mu F_{\mathrm{fn}}\,\partial/\partial q_\mu G_{\mathrm{fn}}$ equals $F_{\mathrm{fn}}(\tilde\nabla_\Phi G_{\mathrm{fn}})$ only when $F_{\mathrm{fn}}$ commutes with every invertible $e_\mu$. The right gradient $\tilde\nabla_\Phi^{R}$ is the transposition that removes the restriction.
 
 ## The Divergence Theorem
 
@@ -149,16 +149,16 @@ where $\tilde u_{\mathrm n} = \sum_\mu n_\mu e_\mu$ is the split-biquaternion-va
 
 $$
 \boxed{\;
-\int_\Omega \tilde{\nabla} F_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F_{\mathrm{fn}} \, dS
+\int_\Omega \tilde\nabla_\Phi F_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n} F_{\mathrm{fn}} \, dS
 \;},
 $$
 
 where $\tilde u_{\mathrm n} = \sum_{\mu\in\{t,x,y,z\}} n_\mu e_\mu$ is the split-biquaternion-valued outward unit normal.
 
-**Proof.** The gradient $\tilde{\nabla}F_{\mathrm{fn}}$ is a split-biquaternion-valued function with components
+**Proof.** The gradient $\tilde\nabla_\Phi F_{\mathrm{fn}}$ is a split-biquaternion-valued function with components
 
 $$
-(\tilde{\nabla}F_{\mathrm{fn}})_\nu = \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F_\nu) e_\mu e_\nu.
+(\tilde\nabla_\Phi F_{\mathrm{fn}})_\nu = \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F_\nu) e_\mu e_\nu.
 $$
 
 Integrating each component over $\Omega$ and applying the ordinary divergence theorem in $\mathbb{R}^4$ gives
@@ -172,7 +172,7 @@ Multiplying by $e_\mu e_\nu$ and summing gives the result.
 **Theorem (divergence theorem for the quaternion conjugate).** Under the same hypotheses,
 
 $$
-\int_\Omega \tilde{\nabla}^{\natural} F_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n}^{\natural} F_{\mathrm{fn}} \, dS,
+\int_\Omega (\tilde\nabla_\Phi)^{\natural} F_{\mathrm{fn}} \, dV = \int_{\partial \Omega} \tilde u_{\mathrm n}^{\natural} F_{\mathrm{fn}} \, dS,
 $$
 
 where $\tilde u_{\mathrm n}^{\natural} = n_0 e_t - \sum_{k=1}^{3} n_k \vec e_k$ is the quaternion conjugate of the outward unit normal.
@@ -187,11 +187,11 @@ where $\tilde u_{\mathrm n}^{\natural} = n_0 e_t - \sum_{k=1}^{3} n_k \vec e_k$ 
 
 $$
 \boxed{\;
-\int_\Omega \left[ \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F_{\mathrm{fn}})\, ((\partial/\partial q_\mu G_{\mathrm{fn}}))^{\natural} + F_{\mathrm{fn}}\, (\Box G_{\mathrm{fn}})^{\natural} \right] dV = \int_{\partial \Omega} F_{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G_{\mathrm{fn}})^{\natural} \, dS
+\int_\Omega \left[ \sum_{\mu\in\{t,x,y,z\}} (\partial/\partial q_\mu F_{\mathrm{fn}})\, ((\partial/\partial q_\mu G_{\mathrm{fn}}))^{\natural} + F_{\mathrm{fn}}\, (\Box_\Phi G_{\mathrm{fn}})^{\natural} \right] dV = \int_{\partial \Omega} F_{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G_{\mathrm{fn}})^{\natural} \, dS
 \;}.
 $$
 
-**Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural}$: it gives $\int_\Omega \partial/\partial q_\mu\,(F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural})\,dV = \int_{\partial\Omega} n_\mu F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural}\,dS$. The product rule expands the volume integrand as $(\partial/\partial q_\mu F_{\mathrm{fn}})\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural} + F_{\mathrm{fn}}\,(\partial^2/\partial q_\mu^2 G_{\mathrm{fn}})^{\natural}$, the second term because $\partial/\partial q_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial^2/\partial q_\mu^2$ by $\Box$ and $\sum_\mu n_\mu \partial/\partial q_\mu$ by $\partial/\partial\tilde u_{\mathrm n}$.
+**Proof.** Apply the ordinary divergence theorem in $\mathbb{R}^4$ to the split-biquaternion-valued field with components $F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural}$: it gives $\int_\Omega \partial/\partial q_\mu\,(F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural})\,dV = \int_{\partial\Omega} n_\mu F_{\mathrm{fn}}\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural}\,dS$. The product rule expands the volume integrand as $(\partial/\partial q_\mu F_{\mathrm{fn}})\,(\partial/\partial q_\mu G_{\mathrm{fn}})^{\natural} + F_{\mathrm{fn}}\,(\partial^2/\partial q_\mu^2 G_{\mathrm{fn}})^{\natural}$, the second term because $\partial/\partial q_\mu$ is real and therefore commutes with the conjugation. Summing over $\mu$ replaces $\sum_\mu \partial^2/\partial q_\mu^2$ by $\Box_\Phi$ and $\sum_\mu n_\mu \partial/\partial q_\mu$ by $\partial/\partial\tilde u_{\mathrm n}$.
 
 ### Second Green's Formula
 
@@ -199,7 +199,7 @@ $$
 
 $$
 \boxed{\;
-\int_\Omega \left[ F_{\mathrm{fn}}\, (\Box G_{\mathrm{fn}})^{\natural} - (\Box F_{\mathrm{fn}})\, {G_{\mathrm{fn}}}^{\natural} \right] dV = \int_{\partial \Omega} \left[ F_{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G_{\mathrm{fn}})^{\natural} - (\partial/\partial\tilde u_{\mathrm n} F_{\mathrm{fn}})\, {G_{\mathrm{fn}}}^{\natural} \right] dS
+\int_\Omega \left[ F_{\mathrm{fn}}\, (\Box_\Phi G_{\mathrm{fn}})^{\natural} - (\Box_\Phi F_{\mathrm{fn}})\, {G_{\mathrm{fn}}}^{\natural} \right] dV = \int_{\partial \Omega} \left[ F_{\mathrm{fn}}\, (\partial/\partial\tilde u_{\mathrm n} G_{\mathrm{fn}})^{\natural} - (\partial/\partial\tilde u_{\mathrm n} F_{\mathrm{fn}})\, {G_{\mathrm{fn}}}^{\natural} \right] dS
 \;}.
 $$
 
@@ -213,13 +213,13 @@ the two mixed terms being the same product and cancelling. Summing over $\mu$ ma
 
 ### Green's Formula for the d'Alembertian
 
-**Theorem (Green's formula for $\Box$).** Let $F_{\mathrm{fn}}$ and $G_{\mathrm{fn}}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial/\partial\tilde u_{\mathrm n} = \sum_\mu n_\mu \partial/\partial q_\mu$. Then
+**Theorem (Green's formula for $\Box_\Phi$).** Let $F_{\mathrm{fn}}$ and $G_{\mathrm{fn}}$ be twice continuously differentiable split-biquaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\partial/\partial\tilde u_{\mathrm n} = \sum_\mu n_\mu \partial/\partial q_\mu$. Then
 
 $$
-\int_\Omega \left[ (\Box F_{\mathrm{fn}}) G_{\mathrm{fn}} - F_{\mathrm{fn}} (\Box G_{\mathrm{fn}}) \right] dV = \int_{\partial \Omega} \left[ (\partial/\partial\tilde u_{\mathrm n} F_{\mathrm{fn}}) G_{\mathrm{fn}} - F_{\mathrm{fn}} (\partial/\partial\tilde u_{\mathrm n} G_{\mathrm{fn}}) \right] dS,
+\int_\Omega \left[ (\Box_\Phi F_{\mathrm{fn}}) G_{\mathrm{fn}} - F_{\mathrm{fn}} (\Box_\Phi G_{\mathrm{fn}}) \right] dV = \int_{\partial \Omega} \left[ (\partial/\partial\tilde u_{\mathrm n} F_{\mathrm{fn}}) G_{\mathrm{fn}} - F_{\mathrm{fn}} (\partial/\partial\tilde u_{\mathrm n} G_{\mathrm{fn}}) \right] dS,
 $$
 
-where $\Box = \partial^2/\partial Q_t^2 + \Delta$ is the four-dimensional Laplacian.
+where $\Box_\Phi = \partial^2/\partial Q_t^2 + \Delta_\Phi$ is the four-dimensional Laplacian.
 
 **Proof.** For each $\mu$ the product rule gives
 
@@ -233,7 +233,7 @@ the two mixed terms cancelling. Summing over $\mu$ makes the left side a diverge
 
 ### Definition
 
-The **fundamental solution** of the gradient operator $\tilde{\nabla}$ is the split-biquaternion-valued function
+The **fundamental solution** of the gradient operator $\tilde\nabla_\Phi$ is the split-biquaternion-valued function
 
 $$
 G_{\mathrm{fn}}(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4},
@@ -250,7 +250,7 @@ The formula is identical to the biquaternion case. The reason is that the fundam
 **Theorem.** For $\tilde{Q} \neq 0$,
 
 $$
-\tilde{\nabla} G_{\mathrm{fn}}(\tilde{Q}) = 0.
+\tilde\nabla_\Phi G_{\mathrm{fn}}(\tilde{Q}) = 0.
 $$
 
 **Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ and $\|\tilde{Q}\|^2 = \sum_\mu Q_\mu^2$. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_t e_t - \sum_k Q_k \vec e_k$. So
@@ -262,37 +262,37 @@ $$
 A direct computation gives
 
 $$
-\tilde{\nabla} G_{\mathrm{fn}} = \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4} \right) = \frac{\tilde{\nabla} \tilde{Q}^{\natural}}{\|\tilde{Q}\|^4} + \tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|^4} \right).
+\tilde\nabla_\Phi G_{\mathrm{fn}} = \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{\tilde{Q}^{\natural}}{\|\tilde{Q}\|^4} \right) = \frac{\tilde\nabla_\Phi \tilde{Q}^{\natural}}{\|\tilde{Q}\|^4} + \tilde{Q}^{\natural} \tilde\nabla_\Phi \left( \frac{1}{\|\tilde{Q}\|^4} \right).
 $$
 
 The first term is $\sum_\mu e_\mu \partial/\partial q_\mu \tilde{Q}^{\natural} = \sum_\mu e_\mu e_\mu^{\natural} = e_t - \vec e_x^2 - \vec e_y^2 - \vec e_z^2 = e_t + e_t + e_t + e_t = 4 e_t$. The second term is
 
 $$
-\tilde{Q}^{\natural} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{1}{\|\tilde{Q}\|^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 Q_\mu}{\|\tilde{Q}\|^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|^6}.
+\tilde{Q}^{\natural} \tilde\nabla_\Phi \left( \frac{1}{\|\tilde{Q}\|^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \partial/\partial q_\mu \left( \frac{1}{\|\tilde{Q}\|^4} \right) = \tilde{Q}^{\natural} \sum_\mu e_\mu \left( -\frac{4 Q_\mu}{\|\tilde{Q}\|^6} \right) = -\frac{4 \tilde{Q}^{\natural} \tilde{Q}}{\|\tilde{Q}\|^6}.
 $$
 
-Since $\tilde{Q}^{\natural} \tilde{Q} = \|\tilde{Q}\|^2 e_t$, the second term is $-4 \|\tilde{Q}\|^2 / \|\tilde{Q}\|^6 \cdot e_t = -4 e_t / \|\tilde{Q}\|^4$. So the two terms cancel, and $\tilde{\nabla} G_{\mathrm{fn}} = 0$.
+Since $\tilde{Q}^{\natural} \tilde{Q} = \|\tilde{Q}\|^2 e_t$, the second term is $-4 \|\tilde{Q}\|^2 / \|\tilde{Q}\|^6 \cdot e_t = -4 e_t / \|\tilde{Q}\|^4$. So the two terms cancel, and $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$.
 
 ### The Distributional Gradient
 
 **Theorem.** In the sense of distributions,
 
 $$
-\tilde{\nabla} G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t,
+\tilde\nabla_\Phi G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t,
 $$
 
 where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.
 
-**Proof.** The function $G_{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde{\nabla} G_{\mathrm{fn}}, \phi \rangle$ is defined by integration by parts:
+**Proof.** The function $G_{\mathrm{fn}}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle$ is defined by integration by parts:
 
 $$
-\langle \tilde{\nabla} G_{\mathrm{fn}}, \phi \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV.
+\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle = -\int_{\mathbb{R}^4} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV.
 $$
 
-Applying the divergence theorem to the domain $\|\tilde{Q}\| > \varepsilon$ and using $\tilde{\nabla} G_{\mathrm{fn}} = 0$ away from the origin gives
+Applying the divergence theorem to the domain $\|\tilde{Q}\| > \varepsilon$ and using $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from the origin gives
 
 $$
-\int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS - \int_{\|\tilde{Q}\| > \varepsilon} (\tilde{\nabla} G_{\mathrm{fn}}) \phi \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS.
+\int_{\|\tilde{Q}\| > \varepsilon} G_{\mathrm{fn}} (\tilde\nabla_\Phi \phi) \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS - \int_{\|\tilde{Q}\| > \varepsilon} (\tilde\nabla_\Phi G_{\mathrm{fn}}) \phi \, dV = \int_{\|\tilde{Q}\| = \varepsilon} G_{\mathrm{fn}} \tilde u_{\mathrm n} \phi \, dS.
 $$
 
 On the sphere $\|\tilde{Q}\| = \varepsilon$, the outward unit normal of the region $\|\tilde{Q}\| > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde u_{\mathrm n} = -\tilde{Q}/\varepsilon$, and $G_{\mathrm{fn}} = \tilde{Q}^{\natural}/\varepsilon^4$. So
@@ -310,10 +310,10 @@ $$
 As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $-2\pi^2 \phi(0) e_t$. Therefore
 
 $$
-\langle \tilde{\nabla} G_{\mathrm{fn}}, \phi \rangle = 2\pi^2 \phi(0) e_t,
+\langle \tilde\nabla_\Phi G_{\mathrm{fn}}, \phi \rangle = 2\pi^2 \phi(0) e_t,
 $$
 
-which is the distributional identity $\tilde{\nabla} G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, in agreement with the statement of the theorem.
+which is the distributional identity $\tilde\nabla_\Phi G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, in agreement with the statement of the theorem.
 
 ## The Cauchy Integral Formula
 
@@ -322,14 +322,14 @@ which is the distributional identity $\tilde{\nabla} G_{\mathrm{fn}} = 2\pi^2 \d
 **Theorem (Cauchy integral formula).** Let $F_{\mathrm{fn}}$ be a continuously differentiable split-biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{Q}_0$ be an interior point of $\Omega$. Then
 
 $$
-F_{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}F_{\mathrm{fn}})(\tilde{Q}) \, dV(\tilde{Q}),
+F_{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) (\tilde\nabla_\Phi F_{\mathrm{fn}})(\tilde{Q}) \, dV(\tilde{Q}),
 $$
 
 where $G_{\mathrm{fn}}$ is the fundamental solution defined above, $\tilde u_{\mathrm n}$ is the split-biquaternion-valued outward unit normal, and $dS$ is the surface measure.
 
 ### The Regular Case
 
-**Theorem (Cauchy integral formula for regular functions).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on $\Omega$ (the split biquaternion analogue of the Cauchy–Riemann equations), then
+**Theorem (Cauchy integral formula for regular functions).** If $F_{\mathrm{fn}}$ satisfies $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ on $\Omega$ (the split biquaternion analogue of the Cauchy–Riemann equations), then
 
 $$
 F_{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}).
@@ -342,7 +342,7 @@ Apply the divergence theorem to the product $G_{\mathrm{fn}}(\tilde{Q} - \tilde{
 By the divergence theorem,
 
 $$
-\int_{\Omega_\varepsilon} \tilde{\nabla} \left( G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) F_{\mathrm{fn}}(\tilde{Q}) \right) dV = \int_{\partial \Omega} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS + \int_{\partial B(\tilde{Q}_0, \varepsilon)} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS.
+\int_{\Omega_\varepsilon} \tilde\nabla_\Phi \left( G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) F_{\mathrm{fn}}(\tilde{Q}) \right) dV = \int_{\partial \Omega} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS + \int_{\partial B(\tilde{Q}_0, \varepsilon)} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS.
 $$
 
 On the small sphere, the outward normal of $\Omega_\varepsilon$ points toward $\tilde{Q}_0$, so $\tilde u_{\mathrm n} = -(\tilde{Q} - \tilde{Q}_0)/\varepsilon$, and the computation of the boundary term gives
@@ -354,15 +354,15 @@ $$
 The volume integral on the left is
 
 $$
-\int_{\Omega_\varepsilon} \tilde{\nabla} \left( G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) F_{\mathrm{fn}}(\tilde{Q}) \right) dV = \int_{\Omega_\varepsilon} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}F_{\mathrm{fn}})(\tilde{Q}) \, dV,
+\int_{\Omega_\varepsilon} \tilde\nabla_\Phi \left( G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) F_{\mathrm{fn}}(\tilde{Q}) \right) dV = \int_{\Omega_\varepsilon} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) (\tilde\nabla_\Phi F_{\mathrm{fn}})(\tilde{Q}) \, dV,
 $$
 
-using the product rule and the fact that $\tilde{\nabla}G_{\mathrm{fn}} = 0$ away from $\tilde{Q}_0$.
+using the product rule and the fact that $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from $\tilde{Q}_0$.
 
 Combining and taking the limit $\varepsilon \to 0$, we obtain
 
 $$
-\int_\Omega G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}F_{\mathrm{fn}})(\tilde{Q}) \, dV = \int_{\partial \Omega} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS - 2\pi^2 F_{\mathrm{fn}}(\tilde{Q}_0).
+\int_\Omega G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) (\tilde\nabla_\Phi F_{\mathrm{fn}})(\tilde{Q}) \, dV = \int_{\partial \Omega} G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn}}(\tilde{Q}) \, dS - 2\pi^2 F_{\mathrm{fn}}(\tilde{Q}_0).
 $$
 
 Rearranging gives the stated formula.
@@ -372,7 +372,7 @@ Rearranging gives the stated formula.
 In the idempotent basis, the Cauchy integral formula decomposes into two copies of the quaternion Cauchy integral formula. Writing $F_{\mathrm{fn}} = F_{\mathrm{fn},+} \tilde\Pi_1 + F_{\mathrm{fn},-} \tilde\Pi_2$ and $G_{\mathrm{fn}} = G_{\mathrm{fn},+} \tilde\Pi_1 + G_{\mathrm{fn},-} \tilde\Pi_2$,
 
 $$
-F_{\mathrm{fn},\pm}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G_{\mathrm{fn},\pm}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn},\pm}(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega G_{\mathrm{fn},\pm}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}F_{\mathrm{fn},\pm})(\tilde{Q}) \, dV(\tilde{Q}),
+F_{\mathrm{fn},\pm}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} G_{\mathrm{fn},\pm}(\tilde{Q} - \tilde{Q}_0) \tilde u_{\mathrm n} F_{\mathrm{fn},\pm}(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega G_{\mathrm{fn},\pm}(\tilde{Q} - \tilde{Q}_0) (\tilde\nabla_\Phi F_{\mathrm{fn},\pm})(\tilde{Q}) \, dV(\tilde{Q}),
 $$
 
 where each formula is the quaternion Cauchy integral formula for the component. So the split biquaternion Cauchy integral formula is the pair of the quaternion Cauchy integral formulas, one for each component.
@@ -381,7 +381,7 @@ where each formula is the quaternion Cauchy integral formula for the component. 
 
 ### The Mean Value Property
 
-**Theorem (mean value property).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on a ball $B(\tilde{Q}_0, r)$, then
+**Theorem (mean value property).** If $F_{\mathrm{fn}}$ satisfies $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ on a ball $B(\tilde{Q}_0, r)$, then
 
 $$
 F_{\mathrm{fn}}(\tilde{Q}_0) = \frac{1}{2\pi^2 r^3} \int_{\partial B(\tilde{Q}_0, r)} F_{\mathrm{fn}}(\tilde{Q}) \, dS(\tilde{Q}),
@@ -393,25 +393,25 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 
 ### The Maximum Principle
 
-**Theorem (maximum principle).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on a domain $\Omega$ and $\|F_{\mathrm{fn}}\|$ attains its maximum at an interior point of $\Omega$, then $F_{\mathrm{fn}}$ is constant on $\Omega$.
+**Theorem (maximum principle).** If $F_{\mathrm{fn}}$ satisfies $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ on a domain $\Omega$ and $\|F_{\mathrm{fn}}\|$ attains its maximum at an interior point of $\Omega$, then $F_{\mathrm{fn}}$ is constant on $\Omega$.
 
 **Proof.** Use the mean value property: if $\|F_{\mathrm{fn}}\|$ attains its maximum at $\tilde{Q}_0$, then $F_{\mathrm{fn}}(\tilde{Q}_0)$ equals the average of $F_{\mathrm{fn}}$ over every small sphere around $\tilde{Q}_0$, so $\|F_{\mathrm{fn}}(\tilde{Q}_0)\| \leq$ the average of $\|F_{\mathrm{fn}}\| \leq \|F_{\mathrm{fn}}(\tilde{Q}_0)\|$; both inequalities are equalities, so $\|F_{\mathrm{fn}}\|$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial/\partial q_\mu F_{\mathrm{fn}}(\tilde{Q}_0) = 0$, so $F_{\mathrm{fn}}$ is constant in a neighbourhood of $\tilde{Q}_0$, and iterating over a connected chain of spheres, $F_{\mathrm{fn}}$ is constant on $\Omega$.
 
 ### Liouville's Theorem
 
-**Theorem (Liouville).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on all of $V$ and $\|F_{\mathrm{fn}}\|$ is bounded, then $F_{\mathrm{fn}}$ is constant.
+**Theorem (Liouville).** If $F_{\mathrm{fn}}$ satisfies $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ on all of $V$ and $\|F_{\mathrm{fn}}\|$ is bounded, then $F_{\mathrm{fn}}$ is constant.
 
 **Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centred at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $F_{\mathrm{fn}}$. The kernel $G_{\mathrm{fn}}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero (using the decay of the kernel and the boundedness of $F_{\mathrm{fn}}$), so $F_{\mathrm{fn}}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$.
 
 ### The Identity Theorem
 
-**Theorem (identity theorem).** If two functions $F_{\mathrm{fn}}$ and $G_{\mathrm{fn}}$ satisfying $\tilde{\nabla}F_{\mathrm{fn}} = \tilde{\nabla}G_{\mathrm{fn}} = 0$ on a connected domain $\Omega$ agree on an open subset of $\Omega$, then they agree on all of $\Omega$.
+**Theorem (identity theorem).** If two functions $F_{\mathrm{fn}}$ and $G_{\mathrm{fn}}$ satisfying $\tilde\nabla_\Phi F_{\mathrm{fn}} = \tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ on a connected domain $\Omega$ agree on an open subset of $\Omega$, then they agree on all of $\Omega$.
 
-**Proof.** The difference $H_{\mathrm{fn}} = F_{\mathrm{fn}} - G_{\mathrm{fn}}$ satisfies $\tilde{\nabla}H_{\mathrm{fn}} = 0$ and vanishes on an open subset. By the maximum principle applied to $H_{\mathrm{fn}}$ and to $-H_{\mathrm{fn}}$, the modulus of $H_{\mathrm{fn}}$ cannot attain a maximum at an interior point unless $H_{\mathrm{fn}}$ is constant, and since $H_{\mathrm{fn}}$ vanishes on an open subset, the constant is zero.
+**Proof.** The difference $H_{\mathrm{fn}} = F_{\mathrm{fn}} - G_{\mathrm{fn}}$ satisfies $\tilde\nabla_\Phi H_{\mathrm{fn}} = 0$ and vanishes on an open subset. By the maximum principle applied to $H_{\mathrm{fn}}$ and to $-H_{\mathrm{fn}}$, the modulus of $H_{\mathrm{fn}}$ cannot attain a maximum at an interior point unless $H_{\mathrm{fn}}$ is constant, and since $H_{\mathrm{fn}}$ vanishes on an open subset, the constant is zero.
 
 ### The Cauchy Estimates
 
-**Theorem (Cauchy estimates).** If $F_{\mathrm{fn}}$ satisfies $\tilde{\nabla}F_{\mathrm{fn}} = 0$ on a ball $B(\tilde{Q}_0, R)$ and $\|F_{\mathrm{fn}}\| \leq M$ on the boundary, then for every multi-index $\alpha$,
+**Theorem (Cauchy estimates).** If $F_{\mathrm{fn}}$ satisfies $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ on a ball $B(\tilde{Q}_0, R)$ and $\|F_{\mathrm{fn}}\| \leq M$ on the boundary, then for every multi-index $\alpha$,
 
 $$
 \|\partial^\alpha F_{\mathrm{fn}}(\tilde{Q}_0)\| \leq \frac{C_\alpha M}{R^{|\alpha|}},
@@ -463,7 +463,7 @@ where each of the two residues is the quaternion residue of the corresponding co
 
 The zero divisor set of $\mathbb{B}_{\mathrm{spl}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the integration theory, the zero divisors play the following roles.
 
-**In the fundamental solution.** The fundamental solution $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|^2 e_t$ fails (for $\tilde{Q} = 1 + j$ one has $\tilde{Q}^{\natural}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}G_{\mathrm{fn}} = 0$; the only singularity of $G_{\mathrm{fn}}$ is the origin.
+**In the fundamental solution.** The fundamental solution $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ is defined for every $\tilde{Q} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\tilde{Q}^{\natural}\tilde{Q} = \|\tilde{Q}\|^2 e_t$ fails (for $\tilde{Q} = 1 + j$ one has $\tilde{Q}^{\natural}\tilde{Q} = 2 + 2j \neq 2$), and with it the proof that $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$; the only singularity of $G_{\mathrm{fn}}$ is the origin.
 
 **In the Cauchy integral formula.** The formula requires the function $F_{\mathrm{fn}}$ to be continuously differentiable on the domain. If the domain intersects the zero divisor set, the formula requires care, because the proof that the kernel is annihilated by the gradient fails on the intersection.
 
@@ -513,9 +513,9 @@ The following questions are not answered in this article and are left for later 
 
 ## Summary
 
-The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{B}_{\mathrm{spl}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\nabla^{R}$ after the function it differentiates, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
+The integral of a split-biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{B}_{\mathrm{spl}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\tilde\nabla_\Phi^{R}$ after the function it differentiates, and the identities are stated in the forms that hold for general split-biquaternion-valued fields.
 
-The **fundamental solution** of the gradient operator is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$, which satisfies $\tilde{\nabla}G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, the distributional identity established above.
+The **fundamental solution** of the gradient operator is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$, which satisfies $\tilde\nabla_\Phi G_{\mathrm{fn}} = 2\pi^2 \delta_0 e_t$, the distributional identity established above.
 
 ## Summary of Notation
 
@@ -534,8 +534,8 @@ The **fundamental solution** of the gradient operator is $G_{\mathrm{fn}}(\tilde
 | $\Omega \subset V$ | Domain of integration |
 | $\partial \Omega$ | Boundary of $\Omega$ |
 | $\int_\Omega F_{\mathrm{fn}} \, dV$ | Integral of $F_{\mathrm{fn}}$ over $\Omega$ |
-| $\tilde{\nabla}, \tilde{\nabla}^{\natural}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, conjugate gradient, d'Alembertian, gradient square, convective derivative |
-| $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla$ |
+| $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}, \Box_\Phi, \tilde\nabla_\Phi^2, \tilde{D}$ | Gradient, conjugate gradient, d'Alembertian, gradient square, convective derivative |
+| $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Cauchy kernel, fundamental solution of $\tilde\nabla_\Phi$ |
 | $\mathrm{Res}(F_{\mathrm{fn}}, \tilde{Q}_0)$ | Residue at an isolated singularity |
 
 ## Further Reading

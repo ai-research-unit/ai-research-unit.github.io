@@ -99,10 +99,10 @@ the one-sided chiral pair, in which both gradients act from the left and the mas
 Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:
 
 $$
-\bigl(i\partial/\partial r'_t+\nabla\bigr)F-k_m\,i\,\overline{F}\,\vec e_z=0,
+\bigl(i\partial/\partial r'_t+\vec\nabla_\Phi\bigr)F-k_m\,i\,\overline{F}\,\vec e_z=0,
 $$
 
-with $\nabla$ the spatial gradient. In this equation the spatial gradient acts from the left and the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\bar{\cdot}$. It is related to the one-sided pair by the dictionary $A$ of *The Dirac Equation in Biquaternionic Form* but is a different operator; it is recorded here to keep the two apart and is not quantized in this article.
+with $\vec\nabla_\Phi$ the spatial gradient. In this equation the spatial gradient acts from the left and the mass from the right through $\vec e_z$, and the mass term carries the algebra's complex conjugation $\bar{\cdot}$. It is related to the one-sided pair by the dictionary $A$ of *The Dirac Equation in Biquaternionic Form* but is a different operator; it is recorded here to keep the two apart and is not quantized in this article.
 
 The operator ordering is immaterial in the field equation because the gradient differentiates only the $x$-dependent $c$-number amplitudes and the mode operators are $x$-independent. The equal-time anticommutator is likewise consistent with the equation: applying the gradient to the anticommutator of the field with its Dirac adjoint at two points, and using the mode algebra, reproduces the time derivative of the delta function required by the Hamiltonian, which is the field equation in bracket form. This is the standard consistency check of canonical quantization, recorded rather than rederived as in the parent.
 
@@ -280,7 +280,7 @@ $$
 \mathcal{D}_p:\ \tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_\eta p_\eta\,\vec e_\eta\tilde X\vec e_y ,
 $$
 
-the first the operator and the second its value on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the invertibles, and both squares are scalars, $\mathcal{D}^2=\Box$ and $\mathcal{D}_p^2=-N$, the cross terms cancelling between the time term and the three spatial ones.
+the first the operator and the second its value on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the invertibles, and both squares are scalars, $\mathcal{D}^2=\Box_\Phi$ and $\mathcal{D}_p^2=-N$, the cross terms cancelling between the time term and the three spatial ones.
 
 The covariant anticommutator of the free quantized field is the object that carries the canonical structure, and it has two properties that the biquaternion framework reads directly.
 
@@ -374,11 +374,11 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathbb{B}_{H}$, $\mathbb{B}_{C}$ | Real-quaternion subspace; centre |
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
-| $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian |
-| $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not a pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$ |
+| $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\vec\nabla_\Phi$, $\vec\nabla_\Phi=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $(\tilde\nabla_\Phi)^{\natural}=e_t\partial/\partial R_t-\vec\nabla_\Phi$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian |
+| $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not a pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box_\Phi$ |
 | $\mathcal{D}_p$ | Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=-N$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
-| $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-k_m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
+| $\bigl(i\partial/\partial r'_t+\vec\nabla_\Phi\bigr)F-k_m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
 | $\tilde{Ξ}_{\mathrm{fop}}$ | Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde{Ξ}_{\mathrm{fop},L}$, $\tilde{Ξ}_{\mathrm{fop},R}$ |
 | $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}$, $\tilde{Ξ}_{\mathrm{fop}}^{\dagger}i\vec e_x$ | Hermitian conjugate of the field; Dirac adjoint |
 | $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ | The two branches of the biquaternion plane wave (solutions article) |

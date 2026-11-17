@@ -8,11 +8,11 @@ Three things are established. First, the **transformation law**. The massless sc
 $$
 \tilde{Ξ}(\tilde{Q}) \longmapsto \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\tilde{Ξ}\bigl(\tilde{Q}_2\bigr) ,
 $$
-where $\Omega$ is the conformal factor and $\tilde{Q}_2$ is the image point; with this weight the massless equation $\Box\tilde{Ξ} = 0$ is carried into itself. The weight is not free: the identity
+where $\Omega$ is the conformal factor and $\tilde{Q}_2$ is the image point; with this weight the massless equation $\Box_\Phi\tilde{Ξ} = 0$ is carried into itself. The weight is not free: the identity
 $$
-\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\xi\bigl(\tilde{Q}_2\bigr)\Bigr] = \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}+2}\,\bigl(\Box_{\tilde{Q}_2}\xi\bigr)\bigl(\tilde{Q}_2\bigr)
+\Box_\Phi\Bigl[\Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\xi\bigl(\tilde{Q}_2\bigr)\Bigr] = \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}+2}\,\bigl(\Box_\Phi\xi\bigr)\bigl(\tilde{Q}_2\bigr)
 $$
-holds at $\mathcal{W}_{\mathrm{dim}} = 1$ and fails at every other weight, and it was verified on a superposition of two smooth test fields to a relative accuracy of $10^{-16}$ at the correct weight, with a residual of order unity at the wrong one. Second, the **massless limit**. The mass enters the equation as the single scale in $\Box - k_m^{2}$, and the limit $k_m\to0$ is the limit in which the conformal weight exists; algebraically it is the limit in which the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell momentum dropping from rank four to rank two. Third, the **breaking**. Improving the stress–energy tensor makes its trace proportional to the mass term, $\sum_\mu T_{\mu\mu} \propto k_m^{2}\tilde{Ξ}^{2}$ on shell, the coefficient depending only on the normalisation of the kinetic term — so the trace is the local measure of the conformal symmetry's failure, and it vanishes exactly in the massless limit. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+holds at $\mathcal{W}_{\mathrm{dim}} = 1$ and fails at every other weight, and it was verified on a superposition of two smooth test fields to a relative accuracy of $10^{-16}$ at the correct weight, with a residual of order unity at the wrong one. Second, the **massless limit**. The mass enters the equation as the single scale in $\Box_\Phi - k_m^{2}$, and the limit $k_m\to0$ is the limit in which the conformal weight exists; algebraically it is the limit in which the on-shell symbol becomes a **zero divisor** of the algebra, left multiplication by the on-shell momentum dropping from rank four to rank two. Third, the **breaking**. Improving the stress–energy tensor makes its trace proportional to the mass term, $\sum_\mu T_{\mu\mu} \propto k_m^{2}\tilde{Ξ}^{2}$ on shell, the coefficient depending only on the normalisation of the kinetic term — so the trace is the local measure of the conformal symmetry's failure, and it vanishes exactly in the massless limit. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 The scope is relativistic and quantum, and one boundary matters. The biquaternion algebra carries the conformal **structure** — the biquaternion norm's zero set is the null cone, the algebra inverse composed with parity is the conformal inversion, and the dilations and special conformal transformations are built from it by composition — but it does not carry the conformal **group** as a group of its own multiplications: six of the fifteen generators are algebra elements, the dilation is a non-invertible element, and the translations and special conformal transformations are not elements of $\mathbb{B}$ at all. The companion *The Conformal Group in Biquaternionic Form* establishes this boundary in detail, and this article uses its results rather than restating them. What is established here is the invariance of the *field equations and their solutions*, which is a statement about spacetime symmetry and does not require the group to sit inside the algebra. Twistor theory and the twistor realisation of the conformal group belong to the companion articles on twistors.
 
@@ -66,7 +66,7 @@ One convention note is needed before the weight is used, because two quadratic f
 $$
 x^2 = \sum_{\mu}x_\mu x_\mu = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2 = \langle\tilde{Q}\rangle_{\natural} ,
 $$
-with the sum taken over the $Q$ coordinate, $Q_t=i q'_t$, whose square carries the minus. The operator $\Box = \partial^2/\partial R_t^2 + \Delta$, by contrast, is the **Euclidean** four-dimensional Laplacian in the real coordinates $(i r'_t,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so the differential operator's own "norm" is $\rho^2 = (i r'_t)^2+r_x^2+r_y^2+r_z^2$, which equals the level-one form on the $i r'_t$ coordinates. The two agree as functions of the coordinates — both are $\langle\tilde{Q}\rangle_{\natural}$ — but they differ in what they are: one is the Minkowski interval whose zero set is the light cone, the other is the Euclidean distance-squared of the continued coordinates. The conformal transformations preserve the former's zero set; the conformal factor $\Omega$ is defined by the scaling of the former; and the box operator's covariance identity is a statement about the latter. Keeping the two interpretations apart is what prevents the sign confusions the conventions article warns about.
+with the sum taken over the $Q$ coordinate, $Q_t=i q'_t$, whose square carries the minus. The operator $\Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$, by contrast, is the **Euclidean** four-dimensional Laplacian in the real coordinates $(i r'_t,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so the differential operator's own "norm" is $\rho^2 = (i r'_t)^2+r_x^2+r_y^2+r_z^2$, which equals the level-one form on the $i r'_t$ coordinates. The two agree as functions of the coordinates — both are $\langle\tilde{Q}\rangle_{\natural}$ — but they differ in what they are: one is the Minkowski interval whose zero set is the light cone, the other is the Euclidean distance-squared of the continued coordinates. The conformal transformations preserve the former's zero set; the conformal factor $\Omega$ is defined by the scaling of the former; and the box operator's covariance identity is a statement about the latter. Keeping the two interpretations apart is what prevents the sign confusions the conventions article warns about.
 
 ### Conformal weight
 
@@ -78,7 +78,7 @@ so that the interval is scaled pointwise by the square of the conformal factor. 
 $$
 \xi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\xi\bigl(\tilde{Q}_2\bigr) ,
 $$
-and the transformation is a symmetry of the equation $(\Box - k_m^{2})\xi = 0$ if the equation is carried into itself. The weight is a property of the equation together with the dimension: in four dimensions the massless scalar has $\mathcal{W}_{\mathrm{dim}} = 1$, which is the value forced by the requirement that the box operator's transformation law be consistent. The massive equation has no consistent weight, because under a conformal transformation the kinetic term acquires the factor $\Omega^{\mathcal{W}_{\mathrm{dim}}+2}$ while the mass term acquires only $\Omega^{\mathcal{W}_{\mathrm{dim}}}$ — but the mass *coefficient* is a constant and does not transform, so the two terms scale differently and no choice of $\mathcal{W}_{\mathrm{dim}}$ preserves both. This is the algebraic statement of the symmetry breaking, and it is what the rest of the article quantifies.
+and the transformation is a symmetry of the equation $(\Box_\Phi - k_m^{2})\xi = 0$ if the equation is carried into itself. The weight is a property of the equation together with the dimension: in four dimensions the massless scalar has $\mathcal{W}_{\mathrm{dim}} = 1$, which is the value forced by the requirement that the box operator's transformation law be consistent. The massive equation has no consistent weight, because under a conformal transformation the kinetic term acquires the factor $\Omega^{\mathcal{W}_{\mathrm{dim}}+2}$ while the mass term acquires only $\Omega^{\mathcal{W}_{\mathrm{dim}}}$ — but the mass *coefficient* is a constant and does not transform, so the two terms scale differently and no choice of $\mathcal{W}_{\mathrm{dim}}$ preserves both. This is the algebraic statement of the symmetry breaking, and it is what the rest of the article quantifies.
 
 ## Conformal Covariance of the Massless Equation
 
@@ -90,24 +90,24 @@ $$
 $$
 the chain rule gives
 $$
-\Box\,\xi_\lambda = \lambda^{-(\mathcal{W}_{\mathrm{dim}}+2)}\,\bigl(\Box\xi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
+\Box_\Phi\,\xi_\lambda = \lambda^{-(\mathcal{W}_{\mathrm{dim}}+2)}\,\bigl(\Box_\Phi\xi\bigr)\bigl(\lambda^{-1}\tilde{Q}\bigr) ,
 $$
-so $\xi_\lambda$ solves $\Box\xi_\lambda = 0$ whenever $\xi$ does, for **every** weight $\mathcal{W}_{\mathrm{dim}}$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
+so $\xi_\lambda$ solves $\Box_\Phi\xi_\lambda = 0$ whenever $\xi$ does, for **every** weight $\mathcal{W}_{\mathrm{dim}}$. This is the trivial half of the conformal symmetry: the massless wave equation is homogeneous and the box operator has dimension two, so any rescaling of a solution is a solution, and only the mass term obstructs it. The nontrivial half is the inversion, where the conformal factor is a function of the point and the derivative of $\Omega$ enters.
 
 ### The inversion and the conformal Laplacian
 
 For the inversion $\tilde{Q}_2 = I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, the conformal factor is $\Omega(\tilde{Q}) = 1/\langle\tilde{Q}\rangle_{\natural}$, and the transformation law of the box operator is
 $$
 \boxed{\;
-\Box_{\tilde{Q}}\Bigl[\Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\xi\bigl(\tilde{Q}_2\bigr)\Bigr]
-= \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}+2}\,\bigl(\Box_{\tilde{Q}_2}\xi\bigr)\bigl(\tilde{Q}_2\bigr)
+\Box_\Phi\Bigl[\Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\,\xi\bigl(\tilde{Q}_2\bigr)\Bigr]
+= \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}+2}\,\bigl(\Box_\Phi\xi\bigr)\bigl(\tilde{Q}_2\bigr)
 \qquad\text{at } \mathcal{W}_{\mathrm{dim}} = 1\;},
 $$
-with a residual proportional to $(\mathcal{W}_{\mathrm{dim}}-1)$ at other weights. The identity is the sharp statement of the massless scalar's conformal invariance, and it was verified on a superposition of two Gaussians in the four $i r'_t$ coordinates: at $\mathcal{W}_{\mathrm{dim}} = 1$ the two sides agree to a relative accuracy of $10^{-16}$ on six random points away from the origin, while at $\mathcal{W}_{\mathrm{dim}} = 1/2$ the residual is of order unity. The two ends of the identity are the two ways of reading it: as an operator statement, it says $\Box$ is carried by the inversion into $\Omega^2\Box$; as a solution statement, it says the field $\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I$ solves the massless equation whenever $\xi$ does.
+with a residual proportional to $(\mathcal{W}_{\mathrm{dim}}-1)$ at other weights. The identity is the sharp statement of the massless scalar's conformal invariance, and it was verified on a superposition of two Gaussians in the four $i r'_t$ coordinates: at $\mathcal{W}_{\mathrm{dim}} = 1$ the two sides agree to a relative accuracy of $10^{-16}$ on six random points away from the origin, while at $\mathcal{W}_{\mathrm{dim}} = 1/2$ the residual is of order unity. The two ends of the identity are the two ways of reading it: as an operator statement, it says $\Box_\Phi$ is carried by the inversion into $\Omega^2\Box_\Phi$; as a solution statement, it says the field $\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I$ solves the massless equation whenever $\xi$ does.
 
 The elementary consequence is that the inversion image of the constant is a solution,
 $$
-\Box\Bigl[\frac{1}{\langle\tilde{Q}\rangle_{\natural}}\Bigr] = 0 \quad \text{off the origin},
+\Box_\Phi\Bigl[\frac{1}{\langle\tilde{Q}\rangle_{\natural}}\Bigr] = 0 \quad \text{off the origin},
 $$
 which was verified numerically at five random points with a maximum residual of $1.5\times10^{-7}$. The function $1/\langle\tilde{Q}\rangle_{\natural} = 1/\rho^2$ is the massless invariant Green's function of the operator article, and the computation says that it is *also* the inversion image of the constant field, which is the first sign that the kernel and the conformal structure are the same object.
 
@@ -155,15 +155,15 @@ which was verified on two hundred random off-cone pairs with a maximum relative 
 
 ### The mass as the unique scale
 
-The massive operator is $\Box - k_m^{2}$ with $k_m=mc/\hbar$, and $1/k_m$ is the only dimensional constant in it. Every conformal transformation other than the translations and the Lorentz transformations changes the length scale, so the presence of the scale breaks the dilation first and all five additional symmetries with it. The massless limit is therefore not a small-parameter limit in the usual sense; it is the limit in which a symmetry is restored, and the order parameter of the restoration is the mass. Two consequences that the framework makes visible are treated below: the on-shell symbol degenerates, and the trace of the stress tensor vanishes.
+The massive operator is $\Box_\Phi - k_m^{2}$ with $k_m=mc/\hbar$, and $1/k_m$ is the only dimensional constant in it. Every conformal transformation other than the translations and the Lorentz transformations changes the length scale, so the presence of the scale breaks the dilation first and all five additional symmetries with it. The massless limit is therefore not a small-parameter limit in the usual sense; it is the limit in which a symmetry is restored, and the order parameter of the restoration is the mass. Two consequences that the framework makes visible are treated below: the on-shell symbol degenerates, and the trace of the stress tensor vanishes.
 
 ### The effective mass under dilation
 
-The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box-k_m^{2})\xi=0$, then the dilated field $\xi_\lambda(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\xi(\lambda^{-1}\tilde{Q})$ solves the *dilated* massive equation,
+The breaking can be exhibited in one line. If $\xi$ solves the massive equation, $(\Box_\Phi-k_m^{2})\xi=0$, then the dilated field $\xi_\lambda(\tilde{Q}) = \lambda^{-\mathcal{W}_{\mathrm{dim}}}\xi(\lambda^{-1}\tilde{Q})$ solves the *dilated* massive equation,
 $$
-\bigl(\Box - \lambda^{-2}\,k_m^{2}\bigr)\xi_\lambda = 0 ,
+\bigl(\Box_\Phi - \lambda^{-2}\,k_m^{2}\bigr)\xi_\lambda = 0 ,
 $$
-because $\Box_{\tilde{Q}} = \lambda^{-2}\Box_{\lambda^{-1}\tilde{Q}}$ and the mass term is a constant. The computation was checked on a massive plane wave: with $k_m = 0.7$ and $\lambda = 2$ the rescaled field has $\Box\xi_\lambda/\xi_\lambda = 0.1225 = k_m^{2}/\lambda^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\lambda$ returns the original equation** unless $k_m = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $k_m^{2}$ into a point-dependent multiple of itself, and only at $k_m=0$ is the set of solutions preserved.
+because $\Box_\Phi = \lambda^{-2}\Box_\Phi$ and the mass term is a constant. The computation was checked on a massive plane wave: with $k_m = 0.7$ and $\lambda = 2$ the rescaled field has $\Box_\Phi\xi_\lambda/\xi_\lambda = 0.1225 = k_m^{2}/\lambda^2$ to six decimal places. The dilation therefore **rescales the mass and no value of $\lambda$ returns the original equation** unless $k_m = 0$; the massless equation is the unique fixed point of the dilation, and this is the precise sense in which the mass is the order parameter of the symmetry. The same computation for the other four generators shows the same thing: each carries $k_m^{2}$ into a point-dependent multiple of itself, and only at $k_m=0$ is the set of solutions preserved.
 
 ### The symbol on the light cone and the rank drop
 
@@ -204,7 +204,7 @@ is a constant of the motion; in the massive case the charge is not conserved and
 
 ## The Trace of the Stress Tensor and the Improvement
 
-The trace is computed in the article's own $i r'_t$ convention throughout: the operator is $\Box = \partial^2/\partial R_t^2 + \Delta$, the Laplacian of the level-one form in the four coordinates $(i r'_t,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so that no index is raised or lowered, and the Lagrangian is the action article's, $\mathcal{L} = -\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})] - k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$. The canonical tensor of that article, with row and column read in that order,
+The trace is computed in the article's own $i r'_t$ convention throughout: the operator is $\Box_\Phi = \partial^2/\partial R_t^2 + \Delta_\Phi$, the Laplacian of the level-one form in the four coordinates $(i r'_t,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, so that no index is raised or lowered, and the Lagrangian is the action article's, $\mathcal{L} = -\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})] - k_m^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$. The canonical tensor of that article, with row and column read in that order,
 $$
 \mathsf{T}_{\mu\nu} = -\bigl(\partial/\partial R_\mu\xi^*\bigr)\partial/\partial R_\nu\,\xi - \bigl(\partial/\partial R_\mu\xi\bigr)\partial/\partial R_\nu\,\xi^* - \delta_{\mu\nu}\,\mathcal{L} ,
 $$
@@ -214,18 +214,18 @@ $$
 $$
 The **improved** tensor removes the ambiguity,
 $$
-T_{\mu\nu} = \mathsf{T}_{\mu\nu} + \zeta\bigl(\delta_{\mu\nu}\Box - \partial^2/\partial R_\mu\partial R_\nu\bigr)\xi^2 ,
+T_{\mu\nu} = \mathsf{T}_{\mu\nu} + \zeta\bigl(\delta_{\mu\nu}\Box_\Phi - \partial^2/\partial R_\mu\partial R_\nu\bigr)\xi^2 ,
 $$
-with $\zeta$ fixed by the requirement that the massless trace vanish and hence by the normalisation of the kinetic term. The standard literature normalisation $\mathcal{L} = \tfrac12(\partial\xi)^2 - \tfrac12k_m^{2}\xi^2$ in the mostly-minus metric gives the textbook $\zeta = \tfrac{d-2}{4(d-1)} = \tfrac16$ at $d=4$; the framework's normalisation above, whose kinetic term carries the opposite sign and twice the magnitude, gives $\zeta = -\tfrac13$. Since $\Box\xi^2 = 2\xi\Box\xi + 2(\partial\xi)^2$, the trace is
+with $\zeta$ fixed by the requirement that the massless trace vanish and hence by the normalisation of the kinetic term. The standard literature normalisation $\mathcal{L} = \tfrac12(\partial\xi)^2 - \tfrac12k_m^{2}\xi^2$ in the mostly-minus metric gives the textbook $\zeta = \tfrac{d-2}{4(d-1)} = \tfrac16$ at $d=4$; the framework's normalisation above, whose kinetic term carries the opposite sign and twice the magnitude, gives $\zeta = -\tfrac13$. Since $\Box_\Phi\xi^2 = 2\xi\Box_\Phi\xi + 2(\partial\xi)^2$, the trace is
 $$
 \boxed{\;
-\sum_\mu T_{\mu\mu} = \bigl(2+6\zeta\bigr)\bigl(\partial\xi\bigr)^2 + 4k_m^{2}\xi^2 + 6\zeta\,\xi\bigl(\Box\xi\bigr)
-\ \longrightarrow\ 4k_m^{2}\xi^2 - 2\xi\bigl(\Box\xi\bigr)
+\sum_\mu T_{\mu\mu} = \bigl(2+6\zeta\bigr)\bigl(\partial\xi\bigr)^2 + 4k_m^{2}\xi^2 + 6\zeta\,\xi\bigl(\Box_\Phi\xi\bigr)
+\ \longrightarrow\ 4k_m^{2}\xi^2 - 2\xi\bigl(\Box_\Phi\xi\bigr)
 \ \longrightarrow\ 2k_m^{2}\xi^2 \quad\text{on shell at } \zeta = -\tfrac13\;},
 $$
-while massless the gradient-squared term vanishes with $2+6\zeta = 0$ and the trace is zero, which is the conformal invariance. In the standard normalisation the same computation reads $\sum_\mu T_{\mu\mu} = \xi\Box\xi + 2k_m^{2}\xi^2$, whose on-shell value there is $k_m^{2}\xi^2$; the reduction uses that normalisation's own equation of motion, $\Box\xi = -k_m^{2}\xi$, which carries the opposite sign to the framework's $\Box\xi = +k_m^{2}\xi$ because the two Lagrangians place the mass term with opposite signs relative to the kinetic term. Only the coefficient is a normalisation artefact — it tracks the normalisation of the Lagrangian, with the sign convention of $\Box$ accounted for — and the physical content is shared: the trace is **proportional to the mass term**, so that the massless limit is exactly the trace-free limit. The identity was verified on an explicit off-shell test field in the four $i r'_t$ coordinates, where $\sum_\mu T_{\mu\mu}$ matched $4k_m^{2}\xi^2 - 2\xi\Box\xi$ to machine precision, and on an on-shell field, where it returned $2k_m^{2}\xi^2$.
+while massless the gradient-squared term vanishes with $2+6\zeta = 0$ and the trace is zero, which is the conformal invariance. In the standard normalisation the same computation reads $\sum_\mu T_{\mu\mu} = \xi\Box_\Phi\xi + 2k_m^{2}\xi^2$, whose on-shell value there is $k_m^{2}\xi^2$; the reduction uses that normalisation's own equation of motion, $\Box_\Phi\xi = -k_m^{2}\xi$, which carries the opposite sign to the framework's $\Box_\Phi\xi = +k_m^{2}\xi$ because the two Lagrangians place the mass term with opposite signs relative to the kinetic term. Only the coefficient is a normalisation artefact — it tracks the normalisation of the Lagrangian, with the sign convention of $\Box_\Phi$ accounted for — and the physical content is shared: the trace is **proportional to the mass term**, so that the massless limit is exactly the trace-free limit. The identity was verified on an explicit off-shell test field in the four $i r'_t$ coordinates, where $\sum_\mu T_{\mu\mu}$ matched $4k_m^{2}\xi^2 - 2\xi\Box_\Phi\xi$ to machine precision, and on an on-shell field, where it returned $2k_m^{2}\xi^2$.
 
-Two consequences of the improvement are worth separating from its value. The improvement term is a total derivative, so it does not affect the equation of motion or the total charges, and it is what makes the trace local without changing the physics. And the trace scales with the Lagrangian exactly as $T_{\mu\nu}$ does, so the coefficient $2$ above and the coefficient $1$ of the standard normalisation are the same statement written twice; what no normalisation can change is the proportionality to the mass term and its vanishing when the mass is zero. The companion *Exercise: The Electromagnetic Energy–Momentum Tensor* records the corresponding improvement for the vector field, and notes the same $i r'_t$ caution the action article flags: the time index carries the metric's sign, and the trace must be read through the same convention as $\Box$.
+Two consequences of the improvement are worth separating from its value. The improvement term is a total derivative, so it does not affect the equation of motion or the total charges, and it is what makes the trace local without changing the physics. And the trace scales with the Lagrangian exactly as $T_{\mu\nu}$ does, so the coefficient $2$ above and the coefficient $1$ of the standard normalisation are the same statement written twice; what no normalisation can change is the proportionality to the mass term and its vanishing when the mass is zero. The companion *Exercise: The Electromagnetic Energy–Momentum Tensor* records the corresponding improvement for the vector field, and notes the same $i r'_t$ caution the action article flags: the time index carries the metric's sign, and the trace must be read through the same convention as $\Box_\Phi$.
 
 A quantum caveat belongs here. The trace of the *renormalised* stress tensor of a quantised field need not vanish even in the massless limit, because the regularisation introduces a scale; this is the trace anomaly, and it is an effect of quantisation rather than of the classical action. The quantum theory's statement is therefore that the classical trace vanishes with the mass and the anomalous part is a separate, quantum, contribution. The companion articles on canonical quantisation supply the quantised tensors; nothing in this article's classical trace computation depends on the anomaly.
 
@@ -274,7 +274,7 @@ The symmetry statement has a worked consequence in the article that follows this
 
 Collecting the algebraic content, the conformal statement of the framework has four parts, and each is a statement about the biquaternion norm.
 
-The **weight** is the exponent of the biquaternion norm in the transformation law: a field of weight $\mathcal{W}_{\mathrm{dim}}$ transforms by $\langle\tilde{Q}\rangle_{\natural}^{-\mathcal{W}_{\mathrm{dim}}}$ under the inversion, and the massless scalar's weight is $\mathcal{W}_{\mathrm{dim}} = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box$ under division.
+The **weight** is the exponent of the biquaternion norm in the transformation law: a field of weight $\mathcal{W}_{\mathrm{dim}}$ transforms by $\langle\tilde{Q}\rangle_{\natural}^{-\mathcal{W}_{\mathrm{dim}}}$ under the inversion, and the massless scalar's weight is $\mathcal{W}_{\mathrm{dim}} = 1$, forced by the operator identity verified above. The weight is not a new datum; it is read off the behaviour of $\Box_\Phi$ under division.
 
 The **inversion** is the biquaternion norm's division, $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$, with the parity correction that makes it the standard map. It is the one conformal operation that the algebra carries as an algebraic operation, and the dilation and the special conformal transformations are built from it by composition with the translation and the scaling.
 
@@ -296,7 +296,7 @@ The massless scalar field transforms with weight $\mathcal{W}_{\mathrm{dim}} = 1
 $$
 \xi_2(\tilde{Q}) = \Omega(\tilde{Q})^{\mathcal{W}_{\mathrm{dim}}}\xi\bigl(\tilde{Q}_2\bigr) ,
 \qquad
-\Box_{\tilde{Q}}\Bigl[\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I\Bigr] = \Omega^{\mathcal{W}_{\mathrm{dim}}+2}\bigl(\Box\xi\bigr)\circ I \ \text{ at } \mathcal{W}_{\mathrm{dim}} = 1 ,
+\Box_\Phi\Bigl[\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I\Bigr] = \Omega^{\mathcal{W}_{\mathrm{dim}}+2}\bigl(\Box_\Phi\xi\bigr)\circ I \ \text{ at } \mathcal{W}_{\mathrm{dim}} = 1 ,
 $$
 the identity verified on a superposition of two Gaussians to a relative accuracy of $10^{-16}$ at the correct weight and failing at the wrong one; the dilation covariance was verified to $2\times10^{-8}$ and the harmonicity of $1/\langle\tilde{Q}\rangle_{\natural}$ to $1.5\times10^{-7}$. The massless invariant kernel is the conformal two-point function of weight one, $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$, and it is the inversion image of the constant.
 
@@ -315,12 +315,12 @@ The improved stress tensor has trace $\sum_\mu T_{\mu\mu} = 2k_m^{2}\xi^2$ on sh
 | $\mathcal{W}_{\mathrm{dim}}$ | Conformal weight of the field; $\mathcal{W}_{\mathrm{dim}} = 1$ for the massless scalar in $d=4$ |
 | $\xi_2(\tilde{Q}) = \Omega^{\mathcal{W}_{\mathrm{dim}}}\xi(\tilde{Q}_2)$ | Conformal transformation law |
 | $I(\tilde{Q}) = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Conformal inversion; $\langle I(\tilde{Q})\rangle_{\natural} = 1/\langle\tilde{Q}\rangle_{\natural}$ |
-| $\Box[\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I] = \Omega^{\mathcal{W}_{\mathrm{dim}}+2}(\Box\xi)\circ I$ | Conformal covariance of the box operator at $\mathcal{W}_{\mathrm{dim}}=1$ |
-| $\Box[1/\langle\tilde{Q}\rangle_{\natural}] = 0$ | Harmonicity of the inversion image of the constant |
+| $\Box_\Phi[\Omega^{\mathcal{W}_{\mathrm{dim}}}\xi\circ I] = \Omega^{\mathcal{W}_{\mathrm{dim}}+2}(\Box_\Phi\xi)\circ I$ | Conformal covariance of the box operator at $\mathcal{W}_{\mathrm{dim}}=1$ |
+| $\Box_\Phi[1/\langle\tilde{Q}\rangle_{\natural}] = 0$ | Harmonicity of the inversion image of the constant |
 | $G_{\mathrm{inv}} = 1/(4\pi^2\langle\tilde{Q}\rangle_{\natural})$ | Massless kernel = conformal two-point function of weight one |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; the single scale, and its presence breaks the conformal symmetry |
 | $\langle\tilde P_{\Phi}\rangle_{\natural} = -k_m^{2}$ / $0$ | Massive / massless on-shell symbol; zero divisor in the massless case |
-| $T_{\mu\nu} = \mathsf{T}_{\mu\nu} + \zeta(\delta_{\mu\nu}\Box - \partial^2/\partial R_\mu\partial R_\nu)\xi^2$ | Improved stress tensor; $\zeta = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
+| $T_{\mu\nu} = \mathsf{T}_{\mu\nu} + \zeta(\delta_{\mu\nu}\Box_\Phi - \partial^2/\partial R_\mu\partial R_\nu)\xi^2$ | Improved stress tensor; $\zeta = -\frac13$ in the framework normalisation, $\frac16$ in the standard one |
 | $\sum_\mu T_{\mu\mu} = 2k_m^{2}\xi^2$ | Trace on shell (framework normalisation); proportional to the mass term |
 | $\sum_\mu T_{\mu\mu} = 0$ (Maxwell) | Trace-free conformally invariant vector field |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

@@ -159,7 +159,7 @@ $$
 \left(\Box_\Phi - (k_m)^{2}\right)\tilde{Ξ} = 0 ,
 \qquad \Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2\;},
 $$
-the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box\xi - (k_m)^{2}\xi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring. Here $\hbar/(mc)$ is the mass length.
+the biquaternionic Klein–Gordon equation. The variation was performed on the discrete Lagrangian in $1+1$ dimensions and compared with $\int(\Box_\Phi\xi - (k_m)^{2}\xi)\eta$ for a smooth test function $\eta$: the two agree to a few per cent, the residual being the discretisation of the boundary ring. Here $\hbar/(mc)$ is the mass length.
 
 ### The general biquaternion field
 
@@ -189,7 +189,7 @@ The components therefore decouple for exactly the fields that are **central**. F
 $$
 \mathrm{Sc}\!\left[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] = \sum_\mu\bigl|\partial/\partial R_\mu\xi\bigr|^2 ,
 $$
-the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$, and for it the variation separates and returns the single equation $\Box\tilde{Ξ} = (k_m)^{2}\tilde{Ξ}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
+the four-dimensional Dirichlet energy of the scalar field — positive, real, and free of cross terms. That is the case the series uses: the relativistic scalar field is the complex biquaternion $\tilde{Ξ} = \xi\,e_t \in \mathbb{B}_{C}$, and for it the variation separates and returns the single equation $\Box_\Phi\tilde{Ξ} = (k_m)^{2}\tilde{Ξ}$, which is why the operator article's kernels apply to it without modification. For a general element the kinetic form mixes the components, the variational equations are correspondingly coupled, and the four-component field is not four independent scalars.
 
 The centrality of the mass is the structural point to carry forward. The companion *The Dirac Equation in Biquaternionic Form* records that the first-order (Dirac) mass is instead the chirality-off-diagonal coupling, a non-central term; the two mass terms are different objects, and the second-order action above can only produce the central one. This is the variational statement of the same distinction the involution lattice draws between the two kinds of mass.
 
@@ -197,11 +197,11 @@ The centrality of the mass is the structural point to carry forward. The compani
 
 On a plane-wave field $\tilde{Ξ} = \tilde{Ξ}_0\exp(i\theta_{\mathrm{pwp}})$ the Lagrangian's variation returns the mass shell as the symbol condition of the operator article,
 $$
-\Box \to  \frac{\omega^2}{c^2} - \vec k_\Phi^2 = (k_m)^{2} ,
+\Box_\Phi \to  \frac{\omega^2}{c^2} - \vec k_\Phi^2 = (k_m)^{2} ,
 \qquad
 \omega^2 = c^2\vec k_\Phi^2 + (k_m)^{2}c^2 ,
 $$
-the standard relativistic dispersion relation. The check was made on the symbol directly: acting with $\Box$ on the plane wave and dividing by the wave function returns $\omega^2/c^2 - \vec k_\Phi^2$ to the accuracy of the difference scheme, and the mass shell is the level set $(k_m)^{2}$ of that symbol. In biquaternion-norm language the mass shell is the statement that the four-momentum's norm is $-m^2c^2$,
+the standard relativistic dispersion relation. The check was made on the symbol directly: acting with $\Box_\Phi$ on the plane wave and dividing by the wave function returns $\omega^2/c^2 - \vec k_\Phi^2$ to the accuracy of the difference scheme, and the mass shell is the level set $(k_m)^{2}$ of that symbol. In biquaternion-norm language the mass shell is the statement that the four-momentum's norm is $-m^2c^2$,
 $$
 \langle\tilde P_{\Phi}\rangle_{\natural}  = -(k_m)^{2} , \qquad \tilde P_{\Phi} = i\,\frac{\omega}{c}\,e_t + \vec k_\Phi ,
 $$
@@ -209,7 +209,7 @@ which is the field-theoretic counterpart of the particle's $\langle\tilde{P}_{\P
 
 Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
-Three features of the sign structure are worth extracting. The kinetic term enters with a minus sign, which is what makes the on-shell energy positive; the mass term enters with a minus sign and a plus in the equation, so that the mass shell is $\omega^2 = c^2\vec k_\Phi^2 + (k_m)^{2}c^2$; and the whole Lagrangian is real, because $\mathcal{L}$ is built from the Hermitian pairing and the biquaternion norm. Changing the relative sign of the two terms would change the equation to $(\Box + (k_m)^{2})\tilde{Ξ} = 0$, a different equation, whose mass shell would be $\omega^2 = c^2\vec k_\Phi^2 - (k_m)^{2}c^2$ rather than the physical one.
+Three features of the sign structure are worth extracting. The kinetic term enters with a minus sign, which is what makes the on-shell energy positive; the mass term enters with a minus sign and a plus in the equation, so that the mass shell is $\omega^2 = c^2\vec k_\Phi^2 + (k_m)^{2}c^2$; and the whole Lagrangian is real, because $\mathcal{L}$ is built from the Hermitian pairing and the biquaternion norm. Changing the relative sign of the two terms would change the equation to $(\Box_\Phi + (k_m)^{2})\tilde{Ξ} = 0$, a different equation, whose mass shell would be $\omega^2 = c^2\vec k_\Phi^2 - (k_m)^{2}c^2$ rather than the physical one.
 
 ### The Maxwell action
 
@@ -245,7 +245,7 @@ $$
 T_{\mu\nu} = -(\partial/\partial R_\mu\xi^*)\partial/\partial R_\nu\xi - (\partial/\partial R_\mu\xi)\partial/\partial R_\nu\xi^* - \delta_{\mu\nu}\,\mathcal{L} ,
 \qquad \sum_\mu\partial/\partial R_\mu T_{\mu\nu} = 0 \ \text{on shell},
 $$
-whose time–time component is the energy density. The companion article records the caution that in the $i r'_t$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
+whose time–time component is the energy density. The companion article records the caution that in the $i r'_t$ convention the time index carries the sign the metric would carry, so the biquaternion packaging of $T$ must be read through the same convention as $\Box_\Phi$; mixing the two produces the wrong sign on the time derivative. This is the same hazard as the d'Alembertian sign, in a different place.
 
 **Lorentz transformations.** The actions are invariant under the rotor action $\tilde R_\Phi\mapsto\tilde U\tilde R_\Phi\tilde U^{*}$ because each is built from the biquaternion norm, which the rotor preserves; the conserved quantities are the six angular momenta. The verification and the consequences are the subject of the next section.
 
@@ -285,7 +285,7 @@ Collecting the algebraic content, five statements distinguish the biquaternionic
 
 First, **the action is the biquaternion norm's polarisation and the Hermitian form's diagonal**. The free particle's integrand is $\sqrt{-\langle d\tilde R_\Phi\rangle_{\natural}}$, the free field's kinetic term is $\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})]$, and the mass term is $\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$. Every ingredient is one of the lattice's two pairings applied to the field or its gradient, so the action is fixed once the lattice is fixed.
 
-Second, **the equations of motion are the operator's equations**. Varying the particle action gives the straight worldline and the mass shell $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$; varying the field action gives $\Box\tilde{Ξ} - (k_m)^{2}\tilde{Ξ} = 0$, whose $\Box$ is the biquaternion norm of the gradient and whose adjoint is itself by the lattice. The variational route does not produce a different operator; it produces the same operator from a scalar, which is the strongest statement that the operator is the natural one.
+Second, **the equations of motion are the operator's equations**. Varying the particle action gives the straight worldline and the mass shell $\langle\tilde{P}_{\Phi}\rangle_{\natural} = -m^2c^2$; varying the field action gives $\Box_\Phi\tilde{Ξ} - (k_m)^{2}\tilde{Ξ} = 0$, whose $\Box_\Phi$ is the biquaternion norm of the gradient and whose adjoint is itself by the lattice. The variational route does not produce a different operator; it produces the same operator from a scalar, which is the strongest statement that the operator is the natural one.
 
 Third, **the mass is a norm**. Both the particle mass shell and the field mass term are the biquaternion norm on the relevant object — on the four-momentum, and on the field. The companion *The Dirac Equation in Biquaternionic Form* fixes the mass term as the linear chirality-off-diagonal coupling for the first-order field; for the second-order field it is the quadratic norm, and the two are the two faces of the same $\langle\cdot\rangle_{\natural}$.
 
@@ -311,7 +311,7 @@ $$
 S = \int\left\{-\,\mathrm{Sc}\!\left[\bigl((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*}\bigr)\bigl(\tilde\nabla_\Phi\tilde{Ξ}\bigr)\right] - (mc/\hbar)^{2}\,\mathrm{Sc}\!\left[\tilde{Ξ}^{*}\tilde{Ξ}\right]\right\}d^4r ,
 \qquad \hbar/(mc) ,
 $$
-whose Euler–Lagrange equation is $(\Box - (k_m)^{2})\tilde{Ξ} = 0$ with $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the variation was checked against $\int(\Box\xi - (k_m)^{2}\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
+whose Euler–Lagrange equation is $(\Box_\Phi - (k_m)^{2})\tilde{Ξ} = 0$ with $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$; the variation was checked against $\int(\Box_\Phi\xi - (k_m)^{2}\xi)\eta$ on a discrete grid. The Maxwell Lagrangian is the biquaternion norm of the field-strength biquaternion, $\mathcal{L}_{\mathrm{Maxwell}} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$, whose one complex invariant carries both classical invariants, and the first-order Dirac and Maxwell actions are functionals of $(\tilde\nabla_\Phi)^{\natural}$ whose Euler–Lagrange operators are the first-order kernels of the operator article.
 
 The symmetries of the action are the central phase, giving the material-sector conserved current, translation invariance, giving the stress–energy tensor, and the Lorentz rotor action, giving the angular momenta; all three hold because the action is assembled from the biquaternion norm and the Hermitian pairing, which are exactly the invariants the involution lattice and the Lorentz group preserve. The variational route thus reconstructs the operator of the first article, the sectors of the second, and the causal and mass-shell structure of both, from a single scalar.
 
@@ -330,7 +330,7 @@ The symmetries of the action are the central phase, giving the material-sector c
 | $m\,du_\mu/d\tau = ϙ\sum_\nu F_{\mu\nu}v_\nu$ | Lorentz force; component form, standard |
 | $\mathcal{L} = -\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}^{*})(\tilde\nabla_\Phi\tilde{Ξ})] - (k_m)^{2}\mathrm{Sc}[\tilde{Ξ}^{*}\tilde{Ξ}]$ | Scalar field Lagrangian |
 | $T_{\mu\rho\nu\sigma} = \sigma_\mu\sigma_\rho\,\mathrm{Sc}(e_\mu e_\rho e_\nu e_\sigma)$ | Kinetic tensor of a general element ($\sigma_0=+1$, $\sigma_\eta=-1$); $64$ of $256$ entries nonzero, not $\delta_{\mu\nu}\delta_{\rho\sigma}$ |
-| $(\Box - (k_m)^{2})\tilde{Ξ} = 0$, $\hbar/(mc)$ | Klein–Gordon equation from the variation |
+| $(\Box_\Phi - (k_m)^{2})\tilde{Ξ} = 0$, $\hbar/(mc)$ | Klein–Gordon equation from the variation |
 | $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
 | $\mathcal{L}_{\mathrm{Maxwell}} = -\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu} = -\frac12\mathrm{Re}\,\mathrm{Sc}(\langle\tilde{F}\rangle_{\natural})$ | Maxwell Lagrangian as a norm |
 | $\tilde{J}_{\Phi} = i[\tilde{Ξ}^{*}(\tilde\nabla_\Phi\tilde{Ξ}) - (\tilde\nabla_\Phi\tilde{Ξ}^{*})\tilde{Ξ}]$ | Conserved material-sector current |

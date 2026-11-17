@@ -346,7 +346,7 @@ $$
 
 A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
 
-**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $(\tilde\nabla_\Phi)^{\natural}$, the **one-sided** form is the chiral pair
+**The two Dirac equations.** The corpus carries two forms of one dynamics, and the difference between them is where the second chirality slot sits. With the biquaternionic gradient $\tilde\nabla_\Phi=e_t\partial/\partial R_t+\sum_\eta\vec e_\eta\partial/\partial R_\eta$ and its conjugate $(\tilde\nabla_\Phi)^{\natural}$, the **one-sided** form is the chiral pair
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\qquad

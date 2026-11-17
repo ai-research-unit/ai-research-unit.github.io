@@ -82,7 +82,7 @@ which is the amplitude equation of the polar equation article, §*The amplitude 
 **Stationarity in the angle.** Varying $\theta_{\mathrm{pha}}$ gives
 
 $$
-\nabla\cdot\bigl(\varrho^{2}\nabla\theta_{\mathrm{pha}}\bigr)-\frac{\partial}{\partial r'_t}\Bigl(\varrho^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}\Bigr)=0,
+\vec\nabla_\Phi\cdot\bigl(\varrho^{2}\vec\nabla_\Phi\theta_{\mathrm{pha}}\bigr)-\frac{\partial}{\partial r'_t}\Bigl(\varrho^{2}\frac{\partial\theta_{\mathrm{pha}}}{\partial r'_t}\Bigr)=0,
 $$
 
 which is the transport equation, §*The transport equation*. It is the divergence of the density times the phase gradient, and the density times the phase gradient is the current.

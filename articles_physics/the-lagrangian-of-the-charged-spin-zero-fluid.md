@@ -14,7 +14,7 @@
 
 **Position in the block.** This is the variational companion of [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and the fourth of the eight articles of this layer. It is the first in which the action's variables are gauge invariant by construction, and the first in which the fluid's vorticity is not a property of the flow.
 
-**Conventions.** Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ with $a'_t=\varphi$; the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, $\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\varphi$ carries the opposite sign on the phase and the potential moves with it. **The two rungs differ in the sign of one bracket and in nothing else**, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
+**Conventions.** Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ with $a'_t=\varphi$; the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\varphi$ carries the opposite sign on the phase and the potential moves with it. **The two rungs differ in the sign of one bracket and in nothing else**, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
 
 ## The Action in the Fluid Variables
 
@@ -63,7 +63,7 @@ $$
 the second term being the Lorentz force and the first the quantum force. In three-vector form the spatial slots read
 
 $$
-\frac{\mathrm{d}\vec p^{\mathrm{mech}}}{\mathrm{d}t}=-ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\frac{1}{\gamma}\nabla Q_{\mathrm{qnt}},
+\frac{\mathrm{d}\vec p^{\mathrm{mech}}}{\mathrm{d}t}=-ϙ\bigl(\vec E+\vec v\times\vec B\bigr)-\frac{1}{\gamma}\vec\nabla_\Phi Q_{\mathrm{qnt}},
 $$
 
 which is the block's boxed law. **The sign is fixed by the substitution's time slot**: the energy is $E^{\mathrm{mech}}=E+ϙ a'_t$, so $E=E^{\mathrm{mech}}-ϙ a'_t$ and, with $q=-ϙ$, the potential energy is $q\varphi$. The action fixes the sign in one place, and the block's article fixes it in three.
@@ -124,7 +124,7 @@ $$
 
 **The action.** $\mathcal L_{\mathrm{fl}}=-\frac{m\rho_{\mathrm{num}}}{2}[\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}+c^{2}]-\frac{\hbar^{2}}{2m}\sum_\mu(\partial_\mu \varrho)^{2}$, with $V_\mu=(\partial_\mu S-q A_\mu)/m$: the free action in a new variable.
 
-**The variations.** The phase gives $\partial_\mu(\rho_{\mathrm{num}}V_{\Phi,\mu})=0$; the amplitude gives the free shell verbatim; the gradient of the second is $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$.
+**The variations.** The phase gives $\partial_\mu(\rho_{\mathrm{num}}V_{\Phi,\mu})=0$; the amplitude gives the free shell verbatim; the gradient of the second is $\mathrm{d}\vec p^{\mathrm{mech}}/\mathrm{d}t=-ϙ(\vec E+\vec v\times\vec B)-\gamma^{-1}\vec\nabla_\Phi Q_{\mathrm{qnt}}$.
 
 **The vorticity.** $\omega=ϙ F/m$ is an identity about the variables, so the rotation is the field's and costs no field; the rank is the field strength's.
 
@@ -147,7 +147,7 @@ $$
 | $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential; coupling-blind |
 | $\mathcal E_{\mathrm{grad}}=-\frac{\hbar^{2}}{2m}\int\sum_\mu(\partial_\mu \varrho)^{2}$ | Gradient energy; coupling-blind |
 | $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ | Field strength; $m\omega=ϙ F$ |
-| $\vec E=-\nabla\varphi-\partial_{t'}\vec A$, $\vec B=\nabla\times\vec A$ | Field strengths |
+| $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$ | Field strengths |
 | $\gamma=E/(mc^{2})$ | Signed Lorentz factor |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\mathcal L_{\mathrm{fl}}$ | The Lagrangian density in the fluid variables |

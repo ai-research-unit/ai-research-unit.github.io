@@ -189,10 +189,10 @@ a left multiplication by the derivative, an antilinear coefficient conjugation $
 Applying $\tilde\nabla_\Phi$ from the left to the second member and substituting the first, with $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, gives the Klein–Gordon equation for each part,
 
 $$
-\Box\tilde{Ξ}_{L} = k_m^{2}\tilde{Ξ}_{L} ,
+\Box_\Phi\tilde{Ξ}_{L} = k_m^{2}\tilde{Ξ}_{L} ,
 $$
 
-and likewise for $\tilde{Ξ}_{R}$ from the first member, so the pair sits on the physical mass shell. The order matters, and it is exactly what *one-sided* means: both gradients act from the left, $\tilde\nabla_\Phi$ and then $(\tilde\nabla_\Phi)^{\natural}$, so that their product is the scalar $\Box$ and the two members combine. This is the form every article in the series uses, and it is the sense in which the mass is off-diagonal in the value: it is a coupling *between* the two parts, not a conjugation of either.
+and likewise for $\tilde{Ξ}_{R}$ from the first member, so the pair sits on the physical mass shell. The order matters, and it is exactly what *one-sided* means: both gradients act from the left, $\tilde\nabla_\Phi$ and then $(\tilde\nabla_\Phi)^{\natural}$, so that their product is the scalar $\Box_\Phi$ and the two members combine. This is the form every article in the series uses, and it is the sense in which the mass is off-diagonal in the value: it is a coupling *between* the two parts, not a conjugation of either.
 
 ### Why the Dirac Mass Is Not a Self-Pairing
 

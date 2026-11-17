@@ -55,7 +55,7 @@ $$
 becomes, with $Q_t=i q'_t$,
 
 $$
-\boxed{\;\Box = \sum_\mu\partial^2/\partial R_\mu^2\;},
+\boxed{\;\Box_\Phi = \sum_\mu\partial^2/\partial R_\mu^2\;},
 $$
 
 which is the ordinary Euclidean Laplacian in four dimensions. Maxwell's equations and the wave equation take their simplest possible form.

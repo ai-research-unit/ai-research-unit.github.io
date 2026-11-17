@@ -17,7 +17,7 @@
 **The action is one identity away from the chart's form.** Substituting $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element action and using $\mathrm{Sc}(i\hbar\tilde\Xi^{*}\dot{\tilde\Xi})=-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$ and $\mathrm{Sc}((\partial_\eta\tilde\Xi)^{*}\partial_\eta\tilde\Xi)=(\partial_\eta \varrho)^{2}+\varrho^{2}(\partial_\eta\theta_{\mathrm{pha}})^{2}$ gives
 
 $$
-\boxed{\;S=\int dt'\,d^{3}x\;\Bigl[-\hbar\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Bigl((\vec\nabla \varrho)^{2}+\varrho^{2}(\vec\nabla\theta_{\mathrm{pha}})^{2}\Bigr)-V\,\varrho^{2}\Bigr],\;}
+\boxed{\;S=\int dt'\,d^{3}x\;\Bigl[-\hbar\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}\Bigl((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}})^{2}\Bigr)-V\,\varrho^{2}\Bigr],\;}
 $$
 
 which is the polar variational companion's central-field action and is not a new object. Both halves of the identity were checked on analytic fields at four points: the temporal one to a relative $1.4\times10^{-16}$ and the spatial one to $2.1\times10^{-16}$. There is no approximation in either, because each is the real part of a product of two complex numbers.
@@ -42,24 +42,24 @@ so the chart's measure is $\prod_k\tfrac12\,dn_k\,d\theta_{\mathrm{pha},k}$: fla
 
 ## The Phase Is the Multiplier of Continuity
 
-**The exponent is linear in the angle's rate and quadratic in its gradient, so the angle's integral is a Gaussian with a source.** Integrating $-\hbar\int n\dot\theta$ by parts turns it into $+\hbar\int\theta\,\dot n$, and the angle then appears quadratically through $(\vec\nabla\theta)^{2}$ and linearly through $\dot n$. The integral over the angle is therefore a Gaussian whose source is the density's rate:
+**The exponent is linear in the angle's rate and quadratic in its gradient, so the angle's integral is a Gaussian with a source.** Integrating $-\hbar\int n\dot\theta$ by parts turns it into $+\hbar\int\theta\,\dot n$, and the angle then appears quadratically through $(\vec\nabla_\Phi\theta)^{2}$ and linearly through $\dot n$. The integral over the angle is therefore a Gaussian whose source is the density's rate:
 
 $$
-\int\mathcal{D}\theta\;\exp\Bigl(\frac{i}{\hbar}\int dt'\,d^{3}x\;\bigl[\hbar\,\theta\,\dot n-\frac{\hbar^{2}}{2m}\varrho^{2}(\vec\nabla\theta)^{2}\bigr]\Bigr)
-=\det\Bigl(-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla\Bigr)^{-1/2}\exp\Bigl(\frac{i}{\hbar}S_{\mathrm{eff}}[n]\Bigr),
+\int\mathcal{D}\theta\;\exp\Bigl(\frac{i}{\hbar}\int dt'\,d^{3}x\;\bigl[\hbar\,\theta\,\dot n-\frac{\hbar^{2}}{2m}\varrho^{2}(\vec\nabla_\Phi\theta)^{2}\bigr]\Bigr)
+=\det\Bigl(-\frac{\hbar^{2}}{m}\vec\nabla_\Phi\cdot n\vec\nabla_\Phi\Bigr)^{-1/2}\exp\Bigl(\frac{i}{\hbar}S_{\mathrm{eff}}[n]\Bigr),
 $$
 
 with the saddle of the Gaussian at
 
 $$
-\dot n+\vec\nabla\cdot\bigl(n\,\vec v\bigr)=0,
+\dot n+\vec\nabla_\Phi\cdot\bigl(n\,\vec v\bigr)=0,
 \qquad
-\vec v=\frac{\hbar}{m}\vec\nabla\theta_{\mathrm{pha}} .
+\vec v=\frac{\hbar}{m}\vec\nabla_\Phi\theta_{\mathrm{pha}} .
 $$
 
 **The saddle is the continuity equation, so the phase is the Lagrange multiplier of the density's conservation.** This is the chart's structural statement and it has no element-form counterpart: in the element form the continuity equation is one of the two real parts of the equation, and the phase is not singled out as a multiplier. In the chart the phase is the field that imposes it.
 
-**The Gaussian's determinant is not one, and the article says so.** The integration leaves a determinant of the operator $-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla$, which depends on the density and which is the chart's fluctuation factor. It is not evaluated here, and it is the object that the element form calls the first-order determinant, read in the chart.
+**The Gaussian's determinant is not one, and the article says so.** The integration leaves a determinant of the operator $-\frac{\hbar^{2}}{m}\vec\nabla_\Phi\cdot n\vec\nabla_\Phi$, which depends on the density and which is the chart's fluctuation factor. It is not evaluated here, and it is the object that the element form calls the first-order determinant, read in the chart.
 
 **The delta is exact in the constant setting.** When the Hamiltonian is a constant element and the field is uniform in space, the exponent is $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}-h_t \varrho^{2}$ with no gradient term at all, so the integral over the density is exactly a delta:
 
@@ -121,7 +121,7 @@ with the sign the branch of $(2\pi i\,r'_t)^{-3/2}$. For a constant element the 
 
 ## Open Questions
 
-**1. Can the effective action $S_{\mathrm{eff}}[n]$ be written in closed form?** The angle's Gaussian leaves a determinant of $-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla$ and a classical action. Whether the pair has a biquaternionic expression, and whether it is the chart's version of the quantum potential, is open.
+**1. Can the effective action $S_{\mathrm{eff}}[n]$ be written in closed form?** The angle's Gaussian leaves a determinant of $-\frac{\hbar^{2}}{m}\vec\nabla_\Phi\cdot n\vec\nabla_\Phi$ and a classical action. Whether the pair has a biquaternionic expression, and whether it is the chart's version of the quantum potential, is open.
 
 **2. Is the density's linearity a selection principle?** The constant setting's exact delta comes from the linearity of the exponent in $n$. Whether a theory with a second-order time derivative can be written so that some coordinate enters linearly — and whether that coordinate has a geometric meaning — is not known.
 
@@ -133,9 +133,9 @@ with the sign the branch of $(2\pi i\,r'_t)^{-3/2}$. For a constant element the 
 
 ## Summary
 
-The polar reading of the Schrödinger functional integral is the substitution $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element companion's integral, and its content is the separation of the two coordinates' roles. The exponent is $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}((\vec\nabla \varrho)^{2}+\varrho^{2}(\vec\nabla\theta_{\mathrm{pha}})^{2})-V\varrho^{2}$, verified as an identity to $10^{-16}$; there is no scale rate, which is the first-order structure in the chart's letters. The measure is flat in the density, because $\varrho\,d\varrho=\frac12dn$ cancels the Jacobian against the exponent's linearity, and the Klein–Gordon chart's weight has no counterpart here.
+The polar reading of the Schrödinger functional integral is the substitution $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}e_t$ into the element companion's integral, and its content is the separation of the two coordinates' roles. The exponent is $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}-\frac{\hbar^{2}}{2m}((\vec\nabla_\Phi \varrho)^{2}+\varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}})^{2})-V\varrho^{2}$, verified as an identity to $10^{-16}$; there is no scale rate, which is the first-order structure in the chart's letters. The measure is flat in the density, because $\varrho\,d\varrho=\frac12dn$ cancels the Jacobian against the exponent's linearity, and the Klein–Gordon chart's weight has no counterpart here.
 
-Integrating the angle gives a Gaussian whose saddle is the continuity equation with $\vec v=\hbar\vec\nabla\theta_{\mathrm{pha}}/m$, and a determinant of $-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla$; integrating the density gives, in the constant setting, an exact delta on the parent's phase rate $\dot\theta_{\mathrm{pha}}=-h_t/\hbar$, verified through the regulated form $\sqrt{\pi/\epsilon}\exp(-\Omega^{2}/4\epsilon)$ to $2.8\times10^{-5}$. The two Madelung equations are the two constraints of the chart's integral, each obtained by eliminating the other variable.
+Integrating the angle gives a Gaussian whose saddle is the continuity equation with $\vec v=\hbar\vec\nabla_\Phi\theta_{\mathrm{pha}}/m$, and a determinant of $-\frac{\hbar^{2}}{m}\vec\nabla_\Phi\cdot n\vec\nabla_\Phi$; integrating the density gives, in the constant setting, an exact delta on the parent's phase rate $\dot\theta_{\mathrm{pha}}=-h_t/\hbar$, verified through the regulated form $\sqrt{\pi/\epsilon}\exp(-\Omega^{2}/4\epsilon)$ to $2.8\times10^{-5}$. The two Madelung equations are the two constraints of the chart's integral, each obtained by eliminating the other variable.
 
 The kernel's word is scale = van Vleck, angle = classical action over $\hbar$ plus the central Maslov constant, boost $e_t$, rotor $\pm e_t$; for a constant element the rotor is the parent's $\tilde u_Q$. Two of the four factors are degenerate, and the degeneracy is the kernel's centrality. The angle composes, the scale does not, and the rotor composes only while the Hamiltonian is constant. Nothing here changes the value of the integral.
 
@@ -149,8 +149,8 @@ The kernel's word is scale = van Vleck, angle = classical action over $\hbar$ pl
 | $\rho_{\mathrm{num}}=2n$ | The parent's density, twice $n$ |
 | $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$ | The first-order kinetic term; no scale rate |
 | $\varrho\,d\varrho=\frac12dn$ | The Jacobian's cancellation |
-| $\vec v=\hbar\vec\nabla\theta_{\mathrm{pha}}/m$ | Flow velocity of the continuity saddle |
-| $\det(-\frac{\hbar^{2}}{m}\vec\nabla\cdot n\vec\nabla)^{-1/2}$ | The angle integral's fluctuation factor |
+| $\vec v=\hbar\vec\nabla_\Phi\theta_{\mathrm{pha}}/m$ | Flow velocity of the continuity saddle |
+| $\det(-\frac{\hbar^{2}}{m}\vec\nabla_\Phi\cdot n\vec\nabla_\Phi)^{-1/2}$ | The angle integral's fluctuation factor |
 | $2\pi\hbar\,\delta(\hbar\dot\theta_{\mathrm{pha}}+h_t)$ | The density integral, constant setting |
 | $r_K=|K|$ | Kernel's scale; the van Vleck amplitude |
 | $\theta_{\mathrm{pha},K}=S_{\mathrm{cl}}/\hbar-3\pi/4$ | Kernel's angle; Maslov constant from $(2\pi i)^{-3/2}$ |
