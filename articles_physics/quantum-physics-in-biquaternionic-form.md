@@ -467,18 +467,18 @@ which is the partial trace on the image, $\operatorname{Tr}_2(a\otimes b)=2a\,\m
 
 The cut is the cut of the star. $\mathbb{B}_{\Psi}$ is the part the star fixes and $\mathbb{B}_{\Phi}$ the part it reverses, so $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a direct sum, each half four real dimensional, the two meeting only at zero. Every element of the algebra is therefore one quantum part plus one relativistic part, and multiplication by the central $i$ carries one half onto the other. Because the two halves are complementary, the whole algebra is available to both readings at once, and neither reading has to be added from outside.
 
-The coefficient slots show the difference. The element splits as $\tilde Q=\tilde Q_\Psi+\tilde R_\Phi$ with
+The coefficient slots show the difference. The element splits as $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$ with
 
 $$
 \tilde Q_\Psi = q_t\,e_t + i\bigl(q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z\bigr)\in\mathbb{B}_{\Psi},
 \qquad
-\tilde R_\Phi = i\,r'_t\,e_t + r_x\vec e_x + r_y\vec e_y + r_z\vec e_z\in\mathbb{B}_{\Phi},
+\tilde Q_\Phi = i\,q'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z\in\mathbb{B}_{\Phi},
 $$
 
 all coefficients real: the quantum half has the real scalar slot, the relativistic half the imaginary one. That single sign is what makes the two norms different, the same quaternionic norm being positive definite on $\mathbb{B}_{\Psi}$ and indefinite on $\mathbb{B}_{\Phi}$,
 
 $$
-\tilde R_\Phi\tilde R_\Phi^{\natural} = -r_t'^2 + r_x^2 + r_y^2 + r_z^2,
+\tilde Q_\Phi\tilde Q_\Phi^{\natural} = -q_t'^2 + q_x^2 + q_y^2 + q_z^2,
 $$
 
 three directions positive and the temporal one negative, because the time coefficient carries the central imaginary and its square is negative. The zero set is the light cone, and the maps that preserve the interval are the Lorentz transformations. A state needs the positive definite form, and a four-vector needs the indefinite one; the two halves give one each.

@@ -214,16 +214,6 @@ $$
 \Delta_\Phi=\sum_{\eta\in\{x,y,z\}}\frac{\partial^2}{\partial r_\eta^2}.
 $$
 
-**The two products of the spatial gradient.** Read with the dot, the spatial gradient composed with itself returns the Laplacian, and read with the circle it returns minus the Laplacian, the sign carried by $e_t$, the identity of the algebra:
-
-$$
-\vec\nabla_\Phi\cdot\vec\nabla_\Phi=\Delta_\Phi,
-\qquad
-\vec\nabla_\Phi\circ\vec\nabla_\Phi=-e_t\,\Delta_\Phi .
-$$
-
-The dot reads the three spatial units as an orthonormal frame, where each unit pairs with itself to $1$; the circle reads them as elements of the algebra, where each squares to $-e_t$. The sign belongs to the reading and the operator is one. Where an article writes the second line as $-\Delta_\Phi$, the temporal unit is understood on both sides.
-
 **The d'Alembertian.** The second-order operator is the norm of the gradient. Write $T=-i\,e_t\partial/\partial r'_t$ and $S=\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial/\partial r_\eta$ for the two halves of the sum. They commute, $T^{2}=(-i)^2\partial^2/\partial {r'_t}^2=-\partial^2/\partial {r'_t}^2$ and $S^{2}=-\Delta_\Phi$, so
 
 $$
@@ -231,29 +221,6 @@ $$
 $$
 
 the square of the temporal half entering with the minus and the squares of the three spatial ones with the plus. That sign is the sign pattern read on the two halves instead of on the four second derivatives: $(-,+,+,+)$ on the material parameters, which is the signature the series works in throughout.
-
-**The operator at work.** Because it is scalar, the d'Alembertian passes through the units and differentiates the coefficients, and written on an element it is
-
-$$
-\Box_\Phi\tilde\Xi=\left(\Delta_\Phi-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}\right)\tilde\Xi
-=\sum_{\eta\in\{x,y,z\}}\frac{\partial^{2}\tilde\Xi}{\partial r_\eta^{2}}-\frac{\partial^{2}\tilde\Xi}{\partial {r'_{t}}^{2}}.
-$$
-
-The two equations the corpus writes with it are the harmonic one and the massive one,
-
-$$
-\Box_\Phi\tilde\Xi=0,
-\qquad
-\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0,
-$$
-
-the first on a regular field, which is the harmonic equation of the corpus (*The Derivative, the Field and the Transform*), the second with the mass as a central shift (§*The Two First-Order Equations and Their Symbol*). Two limiting readings of the same display follow, and both are used. A field that does not depend on $r'_t$ loses the temporal term and the d'Alembertian is the Laplacian,
-
-$$
-\Box_\Phi\tilde\Xi=\Delta_\Phi\tilde\Xi,
-$$
-
-the wave equation passing to the Laplace equation of a static field. A field that does not depend on the three space parameters loses the Laplacian instead and keeps one term, $-\partial^2\tilde\Xi/\partial {r'_{t}}^2$.
 
 **Why the subscript stands on every glyph.** The derivative is written on the material parameters and on no others, and $\Phi$ is their name: the glyph carries the name of the four parameters it differentiates. An article that writes the informational part writes an element, and no derivative of the corpus is taken against it.
 
@@ -364,7 +331,13 @@ $$
 =-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
 $$
 
-**This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, one operator and one only (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*). It carries the subscript $\Phi$ like every derivative of the corpus, and it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient, $\Box_\Phi\tilde Q_{\mathrm f}=\sum_{\mu\in\{t,x,y,z\}}(\Box_\Phi Q_{\mathrm{f}\mu})e_\mu$. The last equality is the material substitution and nothing more, **no article of the series defines a second d'Alembertian**, and no mass-term sign is left to a local convention.
+**This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, one operator and one only (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*). It carries the subscript $\Phi$ like every derivative of the corpus, and it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient,
+
+$$
+\Box_\Phi\tilde Q_{\mathrm f}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\Box_\Phi Q_{\mathrm{f}\mu}\bigr)e_\mu .
+$$
+
+The display is the material substitution and nothing more, **no article of the series defines a second d'Alembertian**, and no mass-term sign is left to a local convention.
 
 **There is no second reading.** The operator is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ everywhere in the corpus: the temporal coefficient of the gradient is $-i$, so the fourth second derivative enters with a minus and the three space ones with a plus. The sign is the algebra's, not a slice's, and no article chooses between two conventions of the operator. The reading is the one used by the Klein–Gordon article, the Dirac article and the dedicated article *The Biquaternion D'Alembertian and Its Green's Functions*.
 
@@ -538,7 +511,15 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m^{2}\tilde{Ξ}_{L},
 $$
 
-that is $(\Box_\Phi-k_m^{2})\tilde{Ξ}_{R}=0$ and $(\Box_\Phi-k_m^{2})\tilde{Ξ}_{L}=0$. Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.
+that is
+
+$$
+(\Box_\Phi-k_m^{2})\tilde{Ξ}_{R}=0,
+\qquad
+(\Box_\Phi-k_m^{2})\tilde{Ξ}_{L}=0 .
+$$
+
+Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.
 
 **The symbol.** On a plane wave the gradient acts as left multiplication by the wave element, $\tilde\nabla_\Phi\mapsto i\tilde K_{\Phi}$ with $\hbar\tilde K_{\Phi}=\tilde P_{\Phi}=i(E/c)e_t+\vec p$, so that $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=E^{2}/c^{2}-\lvert\vec p\rvert^{2}=-N$, the four-momentum being $p_0=E/c$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,
 
@@ -550,7 +531,13 @@ $$
 
 and the two lines share one condition. Composing them returns $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}w=k_m^{2}w$, that is $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$, so the symbol is singular exactly on $N=-m^{2}c^{2}$ and nowhere else.
 
-**The inverse is one scalar and two kernels.** With $G$ the Green's function of the d'Alembertian, $(\Box_\Phi-k_m^{2})G=\delta$, the solution of the two lines with a source is the pair of kernels
+**The inverse is one scalar and two kernels.** The Green's function of the d'Alembertian is fixed by
+
+$$
+(\Box_\Phi-k_m^{2})G=\delta,
+$$
+
+and the solution of the two lines with a source is the pair of kernels
 
 $$
 S_L=i\bigl(\tilde\nabla_\Phi+k_m\bigr)G,
