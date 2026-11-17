@@ -2,22 +2,26 @@
 
 ## Introduction
 
-The general polar decomposition writes every biquaternion as a Hermitian positive factor times a partial isometry, and it is the subject of *The Polar Decomposition of a Biquaternion*. On the $\natural$-regular elements, those with nonzero quaternionic norm, the pair sharpens: the Hermitian factor is positive definite and the isometry is $*$-unitary. This article takes the pair apart.
+The general polar decomposition writes every biquaternion as a Hermitian positive factor times a partial isometry, and it is the subject of *The Polar Decomposition of a Biquaternion*:
 
 $$
 \tilde Q=\tilde Q_H\,\tilde Q_0
 $$
 
-The pair has two factors, and each factor splits again into two. The element is written first as a modulus times a unit factor,
+On the $\natural$-regular elements, those with nonzero quaternionic norm, the pair sharpens: the Hermitian factor is positive definite and the isometry is $*$-unitary. The pair has two factors, and each factor splits again into two. This article takes the four apart.
+
+The first split is the modulus against the unit. A $\natural$-regular element is a modulus times a unit of norm one,
 
 $$
 \tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U,\qquad \varrho^{2}e^{2i\theta_{\mathrm{pha}}}=\langle\tilde Q\rangle_{\natural},\qquad \langle\tilde U\rangle_{\natural}=1,
 $$
 
-and then each of the two is split:
+where $\varrho>0$ and $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is the square root of the quaternionic norm taken on the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ fixed in §*The Two Factors*.
+
+The second split separates the modulus into a scale and a phase, and the unit into a boost and a rotor:
 
 $$
-\varrho\,e^{i\theta_{\mathrm{pha}}},\qquad \tilde U=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}.
+\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho\cdot e^{i\theta_{\mathrm{pha}}},\qquad \tilde U=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
 $$
 
 The four factors are the **scale** $\varrho>0$, the **central phase** $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the **boost** $\tilde U_{\mathrm b}$, Hermitian positive definite of norm one, and the **rotor** $\tilde u_{\mathrm r}$, a unit real quaternion. Read as a word,
