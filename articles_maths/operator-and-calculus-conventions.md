@@ -188,6 +188,22 @@ $$
 
 with the divergence $\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$ and the curl $\vec\nabla_\Phi\times\vec Q_{\mathrm f}$ of the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$ read as the ordinary divergence and curl of its vector part.
 
+**The d'Alembertian.** The second-order operator closes the list and is defined here with the others:
+
+$$
+\Box_\Phi:=\langle\tilde\nabla_\Phi\rangle_{\natural}=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2}.
+$$
+
+**The sign is the algebra's.** The gradient and its conjugate differ only in the sign of the three spatial terms, and the temporal unit commutes with the three spatial units, so the mixed derivatives cancel in pairs and each parameter contributes its own second derivative. The temporal term enters twice with $(-i)^2=-1$; each spatial term enters twice with $\vec e_k\vec e_k=-e_t$, and the conjugate factor supplies the opposite sign, so the space sum returns $+e_t\Delta_\Phi$. The product is $e_t$ times $\Delta_\Phi-\partial^2/\partial {r'_t}^2$, its scalar part is that bracket, and that is the $(-,+,+,+)$ signature on the material parameters, the signature the series works in throughout.
+
+**The operator is scalar.** It multiplies by $e_t$ and acts coefficient by coefficient,
+
+$$
+\Box_\Phi\tilde Q_{\mathrm f}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\Box_\Phi Q_{\mathrm{f}\mu}\bigr)e_\mu ,
+$$
+
+and **no article of the series defines a second d'Alembertian**; no mass-term sign is left to a local convention.
+
 **Why the subscript stands on every glyph.** The derivative is written on the material parameters and on no others, and $\Phi$ is their name: the glyph carries the name of the four parameters it differentiates. An article that writes the informational part writes an element, and no derivative of the corpus is taken against it.
 
 **The low slot spells the operator, or names its component, and nothing else.** A label in the low slot names a distinct operator by spelling what makes it that operator. The label is roman and is read as written, $\tilde\nabla_{\mathrm{gco},\Phi}$ with its companion $\Box_{\mathrm{gco},\Phi}$. A single component index may follow, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$, and nothing may follow that. Nothing else enters the slot, and the list of what may not is the list of everything that distinguishes one instance of an operator from another rather than one operator from another.
@@ -271,7 +287,7 @@ $$
 \langle\tilde\nabla_\Phi\rangle=\langle\tilde\nabla_\Phi,\tilde\nabla_\Phi\rangle=\mathrm{Sc}(\tilde\nabla_\Phi\tilde\nabla_\Phi)=-\frac{\partial^2}{\partial {r'_{t}}^2}-\Delta_\Phi ,
 $$
 
-the cross terms cancelling and every second derivative negative, the fourth slot through the coefficient $(-i)^2=-1$ and the three space slots through $\vec e_k\vec e_k=-e_t$. This is not the series' d'Alembertian, which is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ (§*The Quaternionic Bilinear Product, Its Form and Its Norm*), and it differs from the d'Alembertian by one overall sign.
+the cross terms cancelling and every second derivative negative, the fourth slot through the coefficient $(-i)^2=-1$ and the three space slots through $\vec e_k\vec e_k=-e_t$. This is not the series' d'Alembertian, which is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ (§*The Gradient*), and it differs from the d'Alembertian by one overall sign.
 
 ### The Quaternionic Bilinear Product, Its Form and Its Norm
 
@@ -301,21 +317,14 @@ $$
 
 a scalar, the **contraction** of the conjugate derivative with the field. It differs from the plain form by the three signs of $\varepsilon$, which are **computed from the product** $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not assumed: the divergence is back with a plus because the conjugate derivative has already applied $\varepsilon$.
 
-**The norm, and the definition of the d'Alembertian.** The norm is defined with the form, as that form at its two equal arguments, and the two orders of the product agree:
+**The norm, and the operator it gives.** The norm is defined with the form, as that form at its two equal arguments, and the two orders of the product agree:
 
 $$
-\Box_\Phi=\langle\tilde\nabla_\Phi\rangle_{\natural}=\langle\tilde\nabla_\Phi,\tilde\nabla_\Phi\rangle_{\natural}
-=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\mathrm{Sc}(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural})
-=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
+\langle\tilde\nabla_\Phi\rangle_{\natural}=\langle\tilde\nabla_\Phi,\tilde\nabla_\Phi\rangle_{\natural}
+=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\mathrm{Sc}(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural})=\Box_\Phi ,
 $$
 
-**This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, one operator and one only (*The Four Forms, the Four Algebraic Norms and the Change of Scalars*). The three space terms enter with a plus and the fourth with a minus, and the sign is the algebra's own: the temporal coefficient is imaginary and squares to $-1$, while each spatial unit squares to $-e_t$ and the conjugate factor returns $+1$. That is the $(-,+,+,+)$ signature on the material parameters, the signature the series works in throughout, and no article chooses between two conventions of the operator. It is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient,
-
-$$
-\Box_\Phi\tilde Q_{\mathrm f}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\Box_\Phi Q_{\mathrm{f}\mu}\bigr)e_\mu .
-$$
-
-The glyph carries the subscript $\Phi$ like every derivative of the corpus, and **no article of the series defines a second d'Alembertian**; no mass-term sign is left to a local convention.
+the quaternionic norm of the gradient, which is the d'Alembertian of §*The Gradient*, one operator and one only (*The Four Forms, the Four Algebraic Norms and the Change of Scalars*). The two orders agree, so the norm does not depend on which factor carries the conjugate.
 
 ### The Hermitian Product, Its Form and Its Norm
 
@@ -361,7 +370,6 @@ the kinetic density of the Klein–Gordon article (*Hamiltonian Field Theory in 
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments. By §*The Gradient*, $\tilde\nabla_\Phi^{*}=(\tilde\nabla_\Phi)^{\natural}$, and
 
-
 so the Hermitian norm of the gradient is the d'Alembertian, the same operator as its quaternionic bilinear norm. The **Hermitian form is the one positive-definite form of the four on the biquaternion layer**, $\langle\tilde Q\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}\lvert R_\mu\rvert^2$ on the elements, and its square root is the topological norm $\lVert\tilde Q\rVert$; positivity is a property of the elements, the norm of this subsection being the operator $\Box_\Phi$. **On the gradient** it is the same operator, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial (r'_t)^2$. Positivity is untouched by the sign pattern: the form is positive on the elements, and what changes is the operator's own sign and not the form's.
 
 ### The Krein Product, Its Form and Its Norm
@@ -375,7 +383,6 @@ $$
 The two lines are the companions of the quaternionic pair: the four products of the section are four readings of one derivative on one set of material coordinates, and no line needs a convention beyond the four factors of §*The Gradient*.
 
 **The symmetric and antisymmetric parts.** Under the conjugate transpose the half-sum is
-
 
 whose scalar part is the Krein form, and the half-difference is the curl of the conjugated field,
 
@@ -455,7 +462,7 @@ and substitution returns $i\delta$ in each line, because the cross terms cancel 
 
 **Marks.** There is no glyph for the two equations and no subscript for a sector or a chart. A subscript on a kernel names the part it carries, $S_L$ and $S_R$. The gradient has one spelling with one subscript, $\tilde\nabla_\Phi$, and $\natural$ for its conjugate; there is no unsubscripted form of it, and no derivative of the corpus carries $\Psi$.
 
-**The equations are material.** The two lines are written on the material parameters, in the letters $r'_t$ and $r_k$, and the corpus writes no informational twin of them. There is no second gradient to change and no $\Psi$ on an operator. The second-order operator is the d'Alembertian of §*The Quaternionic Bilinear Product, Its Form and Its Norm*, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$.
+**The equations are material.** The two lines are written on the material parameters, in the letters $r'_t$ and $r_k$, and the corpus writes no informational twin of them. There is no second gradient to change and no $\Psi$ on an operator. The second-order operator is the d'Alembertian of §*The Gradient*, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$.
 
 ## The Transposition of the Gradient
 
