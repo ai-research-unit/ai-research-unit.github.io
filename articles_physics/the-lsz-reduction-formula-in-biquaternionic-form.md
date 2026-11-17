@@ -351,7 +351,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $\mathbb{B}$ | The biquaternion algebra (*Algebra and Element Conventions*) |
 | $e_t$ | The unit of the algebra |
 | $i$ | The central scalar imaginary unit; it carries the sign of every $E^2$ and of every term of the momentum action |
-| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}^{\natural}=iEe_t-\vec p$ | Wave biquaternion and its quaternion conjugate |
+| $\tilde P_{\Phi}=i(E/c)e_t+\vec p$, $\tilde P_{\Phi}^{\natural}=i(E/c)e_t-\vec p$ | Wave biquaternion and its quaternion conjugate |
 | $\vec p^{\,2}$ | Euclidean square of the vector part |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=(-E^2/c^2+\vec p^{\,2})e_t=N e_t$ | Central biquaternion norm; $N=-p_0^2+\vec p^{\,2}$ |
 | $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=N+m^{2}\,c^{2}$ | Mass-shell operator, the inverse propagator; real central on real momenta |

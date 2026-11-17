@@ -354,7 +354,7 @@ The table collects the invariants. The first five rows hold for any element; the
 
 The last two rows are the two actors, and they say what separates the readings. Each congruence acts on both sectors, because a congruence preserves the sector for every invertible multiplier. What differs is the form each leaves alone. The Lorentz congruence leaves the interval and moves the Hermitian form; the $*$-unitary congruence leaves both, since with $VV^{*}=e_t$ the map is a similarity and a similarity fixes the determinant. The rotations are the overlap of the two groups: a rotor that is also $*$-unitary has $U^{\natural}=U^{-1}=U^{*}$, hence is real, hence is a rotation. A boost lies in the first group and not the second, and it is exactly the element that moves the Hermitian form while leaving the interval fixed. So each reading has its own actor, and the two actors are not the same group.
 
-**A worked element.** Take $E=2.3$, $\vec p=(0.4,0.5,0.6)$ and $\tilde P_\Phi=iE\,e_t+\vec p$, in the length unit and with $c=1$. The mirror is $i\tilde P_\Phi=-E\,e_t+i\vec p$, and the numbers run as follows.
+**A worked element.** Take $p_t=2.3$, $\vec p=(0.4,0.5,0.6)$ and $\tilde P_\Phi=i p_t\,e_t+\vec p$, the four coefficients in one common momentum unit so that the element is a number. The energy is $cp_t$. The mirror is $i\tilde P_\Phi=-p_t\,e_t+i\vec p$, and the numbers run as follows.
 
 | Number | $\tilde P_\Phi$ | $i\tilde P_\Phi$ |
 | --- | --- | --- |

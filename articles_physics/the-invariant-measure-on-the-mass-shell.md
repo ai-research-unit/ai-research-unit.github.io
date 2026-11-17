@@ -123,7 +123,7 @@ $$
 \frac{d^{3}p}{2E}=\tfrac12\,p\,dE\,d\Omega ,
 $$
 
-where $d\Omega$ is the solid angle. The derivation is one line: writing $p=\lvert\vec p\rvert$, $d^{3}p=p^{2}dp\,d\Omega$ and $p\,dp=E\,dE/c^{2}$, the second because $\lvert\vec p\rvert^{2}=E^{2}/c^{2}-m^{2}c^{2}$.
+where $d\Omega$ is the solid angle. The derivation is one line: writing $p=\lvert\vec p\rvert$, $d^{3}p=p^{2}dp\,d\Omega$ and $p\,dp=E\,dE$, the second because $\lvert\vec p\rvert^{2}=E^{2}-m^{2}c^{2}$.
 
 So the measure factorises into a *radial* part and an *angular* part, and the angular part is the round measure on the sky of *Aberration and the Sky: The Boost as a Möbius Flow*. That factorisation is why the sky's measure is the one an observer integrates over in the cosmic microwave background.
 
@@ -158,7 +158,7 @@ $$
 =\int\frac{d^{3}p}{2E_{\vec p}}\,f(E_{\vec p},\vec p),
 $$
 
-where the norm is $N=-p_0^{2}+\lvert\vec p\rvert^{2}$ on the material sector, the norm being the plain sum $\sum_\mu P_\mu^{2}$ under the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, whose one minus on the time slot is the square of the $i$ in $P_t=iE/c$. The argument of the delta is therefore $N+m^{2}c^{2}$, and the mass shell it selects is $N=-m^{2}c^{2}$. The root contributes the factor $\frac{1}{2E}$:
+where the norm is $N=-p_0^{2}+\lvert\vec p\rvert^{2}$ on the material sector, the norm being the plain sum $\sum_\mu P_\mu^{2}$ under the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, whose one minus on the time slot is the square of the $i$ in $P_t=iE$. The argument of the delta is therefore $N+m^{2}c^{2}$, and the mass shell it selects is $N=-m^{2}c^{2}$. The root contributes the factor $\frac{1}{2E}$:
 
 $$
 \delta\bigl(N+m^{2}c^{2}\bigr)=\frac{1}{2E}\Bigl[\delta\bigl(p_0-E\bigr)+\delta\bigl(p_0+E\bigr)\Bigr],

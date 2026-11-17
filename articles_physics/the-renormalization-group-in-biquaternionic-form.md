@@ -50,7 +50,7 @@ for the **beta functions**, where $\mu$ is the renormalization scale. A **fixed 
 
 ### The shell in the biquaternion norm: the standard route
 
-The propagation of a biquaternion field is organized by the wave biquaternion $\tilde{P}_{\Phi} = iE\,e_t + \vec p$ and its **biquaternion norm**
+The propagation of a biquaternion field is organized by the wave biquaternion $\tilde{P}_{\Phi} = i(E/c)\,e_t + \vec p$ and its **biquaternion norm**
 
 $$
 \langle\tilde{P}_{\Phi}\rangle_{\natural} = \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = (iE/c)^2 + \vec p^2 = -E^{2}/c^{2} + \vec p^{\,2} = N .
@@ -321,7 +321,7 @@ There is one further framework-specific remark worth recording as a question rat
 
 ## Summary
 
-The renormalization group describes how the effective action depends on scale. Integrating out a shell of modes, $\Lambda/b < \sqrt{\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}} < \Lambda$, produces a flow in the couplings, $\mu\,dg_i/d\mu = \beta_i(g)$, whose zeros are the fixed points. In the biquaternion framework the **wave biquaternion** $\tilde{P}_{\Phi} = iE\,e_t + \vec p$ has biquaternion norm $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$, which is central; its Hermitian form, $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} = k_{\mathrm{eu}}^2 \ge 0$ on the material element $\tilde{P}_{\Phi,E} = ik_{\mathrm{eu},0}\,e_t+\vec p$, is the Euclidean momentum squared and is positive without a rotation. The standard route to it is the Wick rotation, the alternative the Hermitian form, and the two agree by the identity $\langle ik_{\mathrm{eu},0}\,e_t+\vec p,\,ik_{\mathrm{eu},0}\,e_t+\vec p\rangle_{*} = \langle -k_{\mathrm{eu},0}\,e_t+\vec p\rangle_{\natural}$. The natural regulator is therefore the condition $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} \le \Lambda^2$ on the form, equivalently the central condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} \le \Lambda^2$ on the norm; and because the value is a real central scalar the regulator is diagonal in the two-sector decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$: it is **sector-blind**, respects the decomposition in the minimal sense of not mixing the sectors, but cannot assign them different scales.
+The renormalization group describes how the effective action depends on scale. Integrating out a shell of modes, $\Lambda/b < \sqrt{\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*}} < \Lambda$, produces a flow in the couplings, $\mu\,dg_i/d\mu = \beta_i(g)$, whose zeros are the fixed points. In the biquaternion framework the **wave biquaternion** $\tilde{P}_{\Phi} = i(E/c)\,e_t + \vec p$ has biquaternion norm $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$, which is central; its Hermitian form, $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} = k_{\mathrm{eu}}^2 \ge 0$ on the material element $\tilde{P}_{\Phi,E} = ik_{\mathrm{eu},0}\,e_t+\vec p$, is the Euclidean momentum squared and is positive without a rotation. The standard route to it is the Wick rotation, the alternative the Hermitian form, and the two agree by the identity $\langle ik_{\mathrm{eu},0}\,e_t+\vec p,\,ik_{\mathrm{eu},0}\,e_t+\vec p\rangle_{*} = \langle -k_{\mathrm{eu},0}\,e_t+\vec p\rangle_{\natural}$. The natural regulator is therefore the condition $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} \le \Lambda^2$ on the form, equivalently the central condition $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} \le \Lambda^2$ on the norm; and because the value is a real central scalar the regulator is diagonal in the two-sector decomposition $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$: it is **sector-blind**, respects the decomposition in the minimal sense of not mixing the sectors, but cannot assign them different scales.
 
 The beta functions are standard, and their signs are checked on independent cases. For the scalar quartic coupling, the explicit shell integration gives
 
@@ -355,7 +355,7 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{C} = \mathrm{span}_{\mathbb{R}}\{e_t, ie_t\}$ | Centre of the algebra; home of the scale, couplings, and beta functions |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace; image of the standard (Wick) route |
-| $\tilde{P}_{\Phi} = iE\,e_t + \vec p$ | Wave biquaternion; material for real $E$ |
+| $\tilde{P}_{\Phi} = i(E/c)\,e_t + \vec p$ | Wave biquaternion; material for real $E$ |
 | $\tilde{P}_{\Phi,E} = ik_{\mathrm{eu},0}\,e_t + \vec p \in \mathbb{B}_{\Phi}$ | Euclidean wave biquaternion of the form route |
 | $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = N$ | Biquaternion norm; central; cutoff invariant |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*} = \mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*}) = \sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$ | Hermitian form; real, positive definite; carries the positivity of the cutoff |
