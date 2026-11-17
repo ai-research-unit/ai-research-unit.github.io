@@ -547,7 +547,7 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 | symbol | meaning |
 |---|---|
 | $\tilde Q$ | an $\natural$-regular biquaternion |
-| $\langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm, complex and nonzero |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the quaternionic norm, complex and nonzero |
 | $\Rho$ | the modulus, the principal root of $\langle\tilde Q\rangle_{\natural}$ in $\mathcal H$ |
 | $r$ | the scale, $\lvert\Rho\rvert$ |
 | $\varkappa_{\mathrm{phs}}$ | the central phase, $\Rho/r$ |

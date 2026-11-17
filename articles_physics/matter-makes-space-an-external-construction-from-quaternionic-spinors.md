@@ -227,7 +227,7 @@ $$
 $$
 is curvature-free by construction, and the teleparallel gauge is the one in which the whole connection is contorsion. Both were verified independently for this corpus in *Torsion, Contorsion and the Spin Connection in Biquaternionic Form*, where the vanishing of the curvature and the non-vanishing of the torsion were checked exactly.
 
-One defect in that paragraph is checkable on the page and needs no computation. The display for the contorsion reads $N_{\mathrm{cont},\mu ab}=-\omega_{\mu ab}(e)=e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial r_x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial r_x^{[\mu}}$, and the line immediately below, which the same paragraph equates to it, reads $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ},\,C_{ab}\,\partial \tilde{Ξ}/\partial x_\mu\rangle=-e_{a\nu}\frac{\partial e_{b]}{}^{\nu}}{\partial r_x^{[\mu}}-e_{b\nu}\frac{\partial e_{a]}{}^{\nu}}{\partial r_x^{[\mu}}$. The second term changes sign between two consecutive displays of the same object, so at most one of them is right.
+One defect in that paragraph is checkable on the page and needs no computation. The display for the contorsion reads $N_{\mathrm{cont},\mu ab}=-\omega_{\mu ab}(e)=e_{a\nu}\frac{\partial e_{b]\nu}}{\partial r_{x[\mu}}-e_{b\nu}\frac{\partial e_{a]\nu}}{\partial r_{x[\mu}}$, and the line immediately below, which the same paragraph equates to it, reads $\kappa\,\mathrm{ReTr}\langle\tilde{Ξ},\,C_{ab}\,\partial \tilde{Ξ}/\partial x_\mu\rangle=-e_{a\nu}\frac{\partial e_{b]\nu}}{\partial r_{x[\mu}}-e_{b\nu}\frac{\partial e_{a]\nu}}{\partial r_{x[\mu}}$. The second term changes sign between two consecutive displays of the same object, so at most one of them is right.
 
 What is *not* correct is what the source puts into that identity. The teleparallel gauge condition, read as an equation for the contorsion — hence, through Eq. (6), for the bilinear
 $$
@@ -238,8 +238,8 @@ $$
 The display that states the constraint is also the clearest single measure of the dimensional failure, because it puts three different powers of mass in one equation. In the article's own letters it reads
 $$
 \mathrm{Riem}_{\mu\nu ab}\bigl(\omega(e)\bigr)
-=-2\kappa\,D_{[\mu}\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_{ab}\,\frac{\partial\tilde{Ξ}}{\partial r_x^{\nu]}}\bigr\rangle
--2\kappa^{2}\,\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_{ac}\,\frac{\partial\tilde{Ξ}}{\partial r_x^{[\mu}}\bigr\rangle\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_{c|b]}\,\frac{\partial\tilde{Ξ}}{\partial r_x^{\nu]}}\bigr\rangle ,
+=-2\kappa\,D_{[\mu}\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_{ab}\,\frac{\partial\tilde{Ξ}}{\partial r_{x\nu]}}\bigr\rangle
+-2\kappa^{2}\,\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_{ac}\,\frac{\partial\tilde{Ξ}}{\partial r_{x[\mu}}\bigr\rangle\mathrm{ReTr}\bigl\langle\tilde{Ξ},\,C_{c|b]}\,\frac{\partial\tilde{Ξ}}{\partial r_{x\nu]}}\bigr\rangle ,
 $$
 the bivector $C_{ab}$ of the composites, and with the counting used throughout the article — $[\tilde{Ξ}]=M^{3/2}$, $[\partial]=M$, $[\kappa]=M^{-2}$ — the three members scale as
 $$
@@ -347,13 +347,13 @@ A separate objection, which would stand even if the wave equation had been deriv
 
 The Appendix B chain is the source of the factor-2 relation used in Section 11, and it is where an exact error lives. The appendix needs the trace of the chirality action with two frame actions and a bivector, and prints it as
 $$
-\mathrm{Tr}\bigl[\mathsf{V}_{\mathrm{vol}}\,C_\rho\,C_\lambda\,C_{\mu\nu}\bigr]=4\,\epsilon_{\rho\lambda}{}^{\mu\nu} .
+\mathrm{Tr}\bigl[\mathsf{V}_{\mathrm{vol}}\,C_\rho\,C_\lambda\,C_{\mu\nu}\bigr]=4\,\epsilon_{\rho\lambda\mu\nu} .
 $$
 This $\mathrm{Tr}$ is the plain trace of the product of four actions and **not** its real part. The distinction is the whole content of the error. The trace is pure imaginary on every index quadruple, so $\mathrm{ReTr}$ of the same argument vanishes; the printed right-hand side is therefore a statement about the plain trace, and against the plain trace it is off by the unit $i$. The exact value is
 $$
 \boxed{\;\mathrm{Tr}\bigl[\mathsf{V}_{\mathrm{vol}}\,C_\rho\,C_\lambda\,C_{\mu\nu}\bigr]=-\,4i\,\epsilon_{\rho\lambda\mu\nu}\;}
 $$
-with the four indices all low and $\epsilon_{0123}=+1$, verified at residual exactly zero over all index quadruples: the trace takes the two values $\pm4i$ on the twenty-four quadruples with four distinct indices and vanishes on all others. Its $\epsilon_{\rho\lambda}{}^{\mu\nu}$ also carries two raised indices, each of which costs a sign on the standing conventions, and the chain built on the display inherits both defects.
+with the four indices all low and $\epsilon_{0123}=+1$, verified at residual exactly zero over all index quadruples: the trace takes the two values $\pm4i$ on the twenty-four quadruples with four distinct indices and vanishes on all others. Its $\epsilon_{\rho\lambda\mu\nu}$ also carries two raised indices, each of which costs a sign on the standing conventions, and the chain built on the display inherits both defects.
 
 The second error is structural. The appendix evaluates $B_{\lambda\mu\nu}=\langle\tilde{Ξ},C_\lambda C_{\mu\nu}\tilde{Ξ}\rangle$, finds that "the only nonzero contribution comes from the axial-vector channel", and concludes that $B_{\lambda\mu\nu}$ is $\epsilon_\rho{}_{\lambda\mu\nu}$ times the axial bilinear $A_\rho=\langle\tilde{Ξ},\mathsf{V}_{\mathrm{vol}} C_\rho\tilde{Ξ}\rangle$. On the twenty-four triples with three distinct indices that conclusion is exact, $B_{\lambda\mu\nu}=-i\epsilon_{\lambda\mu\nu\rho}\varepsilon_\rho A_\rho$. For the six of them whose first index is the time index the arithmetic is even transparent, because $C_tC_\lambda=C_0^2=+1$ collapses the product to the bare bivector and a bivector bilinear is by construction the epsilon-dual of the axial one,
 $$

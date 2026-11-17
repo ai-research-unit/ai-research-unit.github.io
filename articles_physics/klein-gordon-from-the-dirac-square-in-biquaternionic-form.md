@@ -142,12 +142,12 @@ $$
 \Box = \partial^2/\partial R_t^2 + \partial^2/\partial R_x^2 .
 $$
 
-The chiral pair retains its form and the reduction gives $(\Box-k_m^{2})\tilde{Ξ}_{L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P_{\Phi} = i\omega/c\,e_t + k\vec e_x$ and
+The chiral pair retains its form and the reduction gives $(\Box-k_m^{2})\tilde{Ξ}_{L,R} = 0$ exactly as before. Each half is a whole biquaternion in the reduced theory as in the full one, so the chirality still splits the pair in two and the mass couples the halves exactly as before. The plane-wave substitution gives $\tilde P_{\Phi} = i\omega/c\,e_t + k_{\Phi,x}\vec e_x$ and
 
 $$
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -\omega^2/c^2 + k^2 = -k_m^{2},
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural} = -\omega^2/c^2 + k_{\Phi,x}^{2} = -k_m^{2},
 \qquad\text{hence}\qquad
-\omega^2 = k^2c^2 + k_m^{2}c^2 ,
+\omega^2 = k_{\Phi,x}^{2}c^2 + k_m^{2}c^2 ,
 $$
 
 the 1+1-dimensional dispersion. Everything the three-dimensional case does, the reduced case does with a single wave number, and the second-order operator is again central.

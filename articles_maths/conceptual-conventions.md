@@ -10,6 +10,8 @@
 
 **The two lists.** The next two sections give the lists, the one the corpus avoids first and the one it writes by default second. The first list holds the concepts the corpus writes only under a declaration, with the defect named. The second holds the concepts it writes with no comment at all. The order is the order of the work: the reader meets the problem before the solution. The summary states the result in a few lines.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## Unpreferred Concepts
 
 Each concept below is used somewhere in the corpus, and each one brings something the algebra does not contain. The list names the defect. An unpreferred concept is admitted as a display when the article that prints it declares the missing piece once, at the head of the display.

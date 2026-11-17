@@ -50,7 +50,7 @@ $$
 
 No line is dropped and no order taken: one identity in the two real functions $A$ and $S_{\tilde\Xi}$.
 
-**Three lines, three orders.** The first is a difference of energies, of scale $\lvert\vec p\rvert^{2}$, with no $\hbar$ in it. The second, over the first, is $\frac{\hbar^{2}}{\lvert\vec p\rvert^{2}L^{2}}=\epsilon^{2}$; its bracket is the companion's quantum potential. The third, over the first, is $\frac{\hbar}{\lvert\vec p\rvert L}=\epsilon$. The identity reads $1:\epsilon^{2}:\epsilon$, and $\hbar$ is never set to zero.
+**Three lines, three orders.** The first is a difference of energies, of scale $p^{2}$, with no $\hbar$ in it. The second, over the first, is $\frac{\hbar^{2}}{p^{2}L^{2}}=\epsilon^{2}$; its bracket is the companion's quantum potential. The third, over the first, is $\frac{\hbar}{pL}=\epsilon$. The identity reads $1:\epsilon^{2}:\epsilon$, and $\hbar$ is never set to zero.
 
 **Order zero.** Dropping the $\epsilon^{2}$ line leaves the first line zero, which with $E=-\partial_{t}S_{\tilde\Xi}$ and $\vec p=\nabla S_{\tilde\Xi}$ reads
 

@@ -8,6 +8,8 @@ The order is the order of the definitions. The four general products come first,
 
 The article states conventions only. The properties, the proofs and the namesake theorems belong to *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the physical interpretations belong to the articles that own them. The last subsection separates what is forced from what is chosen, and a reader must not turn a choice into a theorem.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## The Twelve Products and Their Names
 
 The algebra carries **four general products** — one to each of the four choices of the two slots, the first factor read as it stands or through ${}^{\natural}$ and the second as it stands or through ${}^{*}$ — and each of the four splits into a **symmetric part** and an **antisymmetric part**, so that the complex space carries **twelve products** in all. The names are these, with the operator the band articles write them by:

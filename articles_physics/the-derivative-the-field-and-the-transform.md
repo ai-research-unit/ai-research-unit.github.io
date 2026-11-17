@@ -136,7 +136,7 @@ $$
 
 One operator, two signs, and the signs are the two sectors.
 
-**There is no root inside the algebra.** A first-order operator $D$ with $D^{2}=\Box I$ cannot be built from the four units alone. The algebra is four-dimensional over $\mathbb{C}$, and the attempt fails at the fourth generator: three of them exist inside $\mathbb{B}$, namely $i\vec e_x$, $i\vec e_y$, $i\vec e_z$, which square to $e_t$ and anticommute in pairs, and the fourth has no left multiplication to supply it. The obstruction is the dimension of the minimal module: the Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$ needs a carrier of complex dimension four, while a minimal left ideal of $\mathbb{B}$ has complex dimension two.
+**There is no root inside the algebra.** A first-order operator $D$ with $D^{2}=\Box I$ cannot be built from the four units alone. The algebra is four-dimensional over $\mathbb{C}$, and the attempt fails at the fourth generator: three of them exist inside $\mathbb{B}$, namely $i\vec e_x$, $i\vec e_y$, $i\vec e_z$, which square to $e_t$ and anticommute in pairs, and the fourth has no left multiplication to supply it. The obstruction is the dimension of the minimal module: the Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}I$ needs a carrier of complex dimension four, while a minimal left ideal of $\mathbb{B}$ has complex dimension two.
 
 **What does work.** The root exists in the operator algebra of the regular module, $\operatorname{End}(\mathbb{B})\cong M_4(\mathbb{C})$. The two minimal left ideals $S_{\pm}=\mathbb{B}\tilde\Pi_{\pm}$ are exchanged by an element $u$ with $u^{2}=e_t$, the grading $G=R_{\tilde\Pi_+}-R_{\tilde\Pi_-}$ anticommutes with $R_u$, and the two-sided generators
 

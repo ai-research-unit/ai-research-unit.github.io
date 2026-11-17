@@ -76,7 +76,7 @@ $$
 \vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p], \qquad \{L_{\mathrm{orb},i}, H\} = 0 ,
 $$
 
-with $H = \lvert\vec p\rvert^{2}/(2m) - \kappa/r$ the Hamiltonian. The conservation was derived in the preceding article as $d\vec L/dt' = \tfrac12[\vec r,\vec F] = 0$, and it holds for every central force.
+with $H = p^2/(2m) - \kappa/r$ the Hamiltonian. The conservation was derived in the preceding article as $d\vec L/dt' = \tfrac12[\vec r,\vec F] = 0$, and it holds for every central force.
 
 ### The Runge–Lenz Vector
 
@@ -328,7 +328,7 @@ The framework supplies the real three-space in which all six generators take the
 | $ϙ_1, ϙ_2$, $\epsilon_0$ | Charges; vacuum permittivity |
 | $\kappa = -ϙ_1ϙ_2/(4\pi\epsilon_0)$ | Coulomb coupling; $\kappa>0$ attractive |
 | $V(r) = -\kappa/r$ | Coulomb potential; central scalar |
-| $H = \lvert\vec p\rvert^{2}/(2m) - \kappa/r$ | Hamiltonian |
+| $H = p^2/(2m) - \kappa/r$ | Hamiltonian |
 | $\vec L = \vec r\times\vec p = \tfrac12[\vec r,\vec p]$ | Angular momentum; vector part of $\vec r\vec p$ |
 | $\vec A = \vec p\times\vec L - m\kappa\vec u_r$ | Runge–Lenz vector |
 | $|\vec A| = m|\kappa|e$; $\vec A\cdot\vec L = 0$ | Magnitude and orthogonality |

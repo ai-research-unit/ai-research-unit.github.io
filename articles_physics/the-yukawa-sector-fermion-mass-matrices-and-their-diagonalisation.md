@@ -37,7 +37,7 @@ $$
 | $m_u\bar Q_Lu_R$ | $Y=-1/6+2/3\neq0$ | $Y^{u}$ with $\tilde\varphi$ |
 | $m_d\bar Q_Ld_R$ | $Y=-1/6-1/3\neq0$ | $Y^{d}$ with $\varphi$ |
 | $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y^{e}$ with $\varphi$ |
-| $m_\nu\bar L_L\nu_R$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y^{\nu}$ with $\tilde\varphi$ |
+| $m_\nu\bar L_L\nu_R$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\nu}$ with $\tilde\varphi$ |
 
 **The last row differs in kind, and not in its quantum numbers.** All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_R$ carries $0$. What separates the last row is that $\nu_R$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
 
@@ -149,7 +149,7 @@ $$
 
 with the lepton sector rotated by $W_e$ and $V_e$. In the primed basis each mass matrix is diagonal, by construction: substituting into $-\bar u_LM_uu_R$ gives $-\bar u_L'\left(W_u^{\dagger}M_uV_u\right)u_R'=-\bar u_L'D_uu_R'$. The daggers matter and point this way. Inserting $u_L=W_u^{\dagger}u_L'$ instead would leave $W_uM_uV_u^{\dagger}=W_u^{2}D_u\left(V_u^{\dagger}\right)^{2}$, which is not diagonal, and would give the charged current $W_uW_d^{\dagger}$ in place of the $W_u^{\dagger}W_d$ derived two paragraphs below.
 
-**The neutral current is unchanged.** The $Z$ couples to $\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and its conjugate, so $W^{\dagger}W=\mathrm I$ and the coupling stays diagonal and flavour-blind. The same holds for the photon and the gluon. That is the tree-level form of the Glashow–Iliopoulos–Maiani mechanism, and it is why flavour-changing neutral currents are absent at this order.
+**The neutral current is unchanged.** The $Z$ couples to $-\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and its conjugate, so $W^{\dagger}W=\mathrm I$ and the coupling stays diagonal and flavour-blind. The same holds for the photon and the gluon. That is the tree-level form of the Glashow–Iliopoulos–Maiani mechanism, and it is why flavour-changing neutral currents are absent at this order.
 
 **The charged current is not.** The $W$ couples $u_L$ to $d_L$, and the two are rotated by *different* unitaries:
 
@@ -165,7 +165,7 @@ $$
 
 It is unitary, being a product of unitaries. It is the only place where the misalignment of the two bases appears, and it appears because the $W$ is the only gauge boson that changes flavour.
 
-**Where the right-handed rotations went, and why not for the reason one expects.** Each gauge coupling is flavour universal: it acts as $\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and on its conjugate, so the rotation cancels against its inverse, $V_f^{\dagger}V_f=\mathrm I$. That is the reason $V_u$ and $V_d$ do not appear — and it is a different reason from the fact that no gauge boson in the model couples a left-handed field to a right-handed one, which is true and would matter only if some gauge coupling were flavour-changing. They survive only in the Yukawa coupling to $h$, which is diagonal in the mass basis by construction. So the object that carries the misalignment is one $3\times3$ unitary and not a pair of rotations, which is why the next section counts its physical parameters rather than assuming nine.
+**Where the right-handed rotations went, and why not for the reason one expects.** Each gauge coupling is flavour universal: it acts as $-\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and on its conjugate, so the rotation cancels against its inverse, $V_f^{\dagger}V_f=\mathrm I$. That is the reason $V_u$ and $V_d$ do not appear — and it is a different reason from the fact that no gauge boson in the model couples a left-handed field to a right-handed one, which is true and would matter only if some gauge coupling were flavour-changing. They survive only in the Yukawa coupling to $h$, which is diagonal in the mass basis by construction. So the object that carries the misalignment is one $3\times3$ unitary and not a pair of rotations, which is why the next section counts its physical parameters rather than assuming nine.
 
 **The singular-value reading, stated plainly.** $W_u$ and $W_d$ are the left singular bases of the two mass matrices. The masses are the singular values. The mixing is the angle between the two left bases. Nothing else about the matrices is observable, and the two statements "the masses are the singular values" and "the mixing is the misalignment" are one statement: they are the two halves of the singular-value decomposition.
 
@@ -381,7 +381,7 @@ $$
 
 **The two questions.** A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\nu_L^{T}C\nu_L$ carries hypercharge $-1$ — each $\nu_L$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
 
-**The Dirac route.** Add $\nu_R$, a singlet of all three groups. Then $Y^{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
+**The Dirac route.** Add $\nu_R$, a singlet of all three groups. Then $Y_{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
 **The Majorana route.** A term $\overline{L_L^{c}}\,\tilde\varphi^{*}\,\lambda\,\tilde\varphi^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
 

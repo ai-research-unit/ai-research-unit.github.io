@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A relativistic particle is an irreducible unitary representation of the Poincaré group, and Wigner's classification reduces the problem to two steps: classify the orbits of momentum space, then classify the representations of the stabiliser of a point on each orbit. Momentum space has three orbits with physical meaning — timelike, null, spacelike, in the order of the sign of $N$, from negative to positive — and their stabilisers are $SU(2)$, $E(2)$ and $SU(1,1)$.
+A relativistic particle is an irreducible unitary representation of the Poincaré group, and Wigner's classification reduces the problem to two steps: classify the orbits of momentum space, then classify the representations of the stabiliser of a point on each orbit. Momentum space has three orbits with physical meaning — timelike, null, spacelike, in the order of the sign of $p^{2}$ — and their stabilisers are $SU(2)$, $E(2)$ and $SU(1,1)$.
 
 This article sets out the orbit picture, states how the two Casimirs enter, and derives the labels. It states carefully what the Casimirs do and do not classify, because the standard sentence "the two Casimirs label the orbit" is only half true.
 
@@ -12,7 +12,7 @@ The article assumes *$P$, $T$ and the Representation Labels* for the Casimirs' d
 
 ### Momentum Space
 
-Momentum space is the dual of the translation space: four real components $p_\mu$, with the invariant form $N=\sum_\mu P_\mu^{2}=-p_0^{2}+\lvert\vec p\rvert^{2}$, the one metric $\delta_{\mu\nu}$ and the minus on the time slot being the square of the $i$ in $P_t=ip_0$. The Poincaré group acts by
+Momentum space is the dual of the translation space: four real components $p_\mu$, with the invariant form $p^{2}=\sum_\mu\varepsilon_\mu p_\mu p_\mu$. The Poincaré group acts by
 
 $$
 p\longmapsto\Lambda p,
@@ -32,10 +32,10 @@ This is Mackey's orbit method, and Wigner's 1939 paper is its first and most imp
 
 ### The Invariant
 
-The Lorentz group preserves $N$ and nothing else continuous: the orbit of a point is the connected component of the level set of $N$, together with the sign of $p_0$ when $N\le0$. So the orbit is labelled by
+The Lorentz group preserves $p^{2}$ and nothing else continuous: the orbit of a point is the connected component of the level set of $p^{2}$, together with the sign of $p_0$ when $p^{2}\ge0$. So the orbit is labelled by
 
 $$
-(N,\ \operatorname{sign}p_0),
+(p^{2},\ \operatorname{sign}p_0),
 $$
 
 which is one continuous and one discrete label.
@@ -44,26 +44,26 @@ which is one continuous and one discrete label.
 
 ### Timelike
 
-$N=-m^{2}c^{2}<0$ with $p_0>0$: the future hyperboloid, a three-dimensional sheet. This is the momentum space of a massive particle, and the label is the mass.
+$p^{2}=m^{2}c^{2}>0$ with $p_0>0$: the future hyperboloid, a three-dimensional sheet. This is the momentum space of a massive particle, and the label is the mass.
 
 $$
-\mathcal{O}_{m}=\{p:N=-m^{2}c^{2},\ p_0>0\}\cong\mathbb{H}^{3}.
+\mathcal{O}_{m}=\{p:p^{2}=m^{2}c^{2},\ p_0>0\}\cong\mathbb{H}^{3}.
 $$
 
 ### Null
 
-$N=0$ with $p_0>0$: the future cone minus its vertex. It is three-dimensional, and its rays are the sky; a point of the orbit is a ray plus a positive scale, so the orbit is a principal $\mathbb{R}_{>0}$-bundle over $S^{2}$.
+$p^{2}=0$ with $p_0>0$: the future cone minus its vertex. It is three-dimensional, and its rays are the sky; a point of the orbit is a ray plus a positive scale, so the orbit is a principal $\mathbb{R}_{>0}$-bundle over $S^{2}$.
 
 $$
-\mathcal{O}_{0}=\{p:N=0,\ p_0>0\}\cong\mathbb{R}_{>0}\times S^{2}.
+\mathcal{O}_{0}=\{p:p^{2}=0,\ p_0>0\}\cong\mathbb{R}_{>0}\times S^{2}.
 $$
 
 ### Spacelike
 
-$N=\mu^{2}>0$: the one-sheeted hyperboloid, again three-dimensional: with $p_0=\mu\sinh s$ and $\lvert\vec p\rvert=\mu\cosh s$ it is $S^{2}\times\mathbb{R}$. It is not the momentum space of a physical particle, but it is a perfectly good orbit and its representations are used for tachyons, for spacelike separations in Euclidean field theory, and as a mathematical object.
+$p^{2}=-\mu^{2}<0$: the one-sheeted hyperboloid, again three-dimensional: with $p_0=\mu\sinh s$ and $\lvert\vec p\rvert=\mu\cosh s$ it is $S^{2}\times\mathbb{R}$. It is not the momentum space of a physical particle, but it is a perfectly good orbit and its representations are used for tachyons, for spacelike separations in Euclidean field theory, and as a mathematical object.
 
 $$
-\mathcal{O}_{\mu}=\{p:N=\mu^{2}\}\cong S^{2}\times\mathbb{R},
+\mathcal{O}_{\mu}=\{p:p^{2}=-\mu^{2}\}\cong S^{2}\times\mathbb{R},
 $$
 
 ### The Count
@@ -74,7 +74,7 @@ Three orbits per sign of the invariant, one for each sign possibility, plus the 
 
 ### The First Casimir Is Constant on an Orbit
 
-$C_1=-N$ takes the same value everywhere on an orbit, and it takes different values on different orbits. So $C_1$ classifies the orbit up to the discrete sign of $p_0$ and up to the vertex.
+$C_1=p^{2}$ takes the same value everywhere on an orbit, and it takes different values on different orbits. So $C_1$ classifies the orbit up to the discrete sign of $p_0$ and up to the vertex.
 
 ### The Second Casimir Is Not an Orbit Invariant
 
@@ -210,7 +210,7 @@ The timelike and null orbits each come in a future and a past sheet, related by 
 
 ## Summary
 
-Wigner's classification reduces a particle to an orbit of the Lorentz group in momentum space and an irreducible unitary representation of the orbit's stabiliser. There are three orbits, distinguished by the sign of $N$: the timelike hyperboloid with little group $SU(2)$ and labels $(m,j)$; the null cone with little group $E(2)$ and labels $(0,h)$; the spacelike hyperboloid with little group $SU(1,1)$ and no physical particle. The first Casimir labels the orbit and the second labels the fibre, so the pair labels the representation; on the null orbit the second vanishes identically and the helicity has to come from the little group. The induced representation assembles the two data, the Wigner rotation is its cocycle and is the Thomas–Wigner rotation, and the exceptions are the vertex, the non-closed boundary of the cone, and the unphysical continuous-spin family.
+Wigner's classification reduces a particle to an orbit of the Lorentz group in momentum space and an irreducible unitary representation of the orbit's stabiliser. There are three orbits, distinguished by the sign of $p^{2}$: the timelike hyperboloid with little group $SU(2)$ and labels $(m,j)$; the null cone with little group $E(2)$ and labels $(0,h)$; the spacelike hyperboloid with little group $SU(1,1)$ and no physical particle. The first Casimir labels the orbit and the second labels the fibre, so the pair labels the representation; on the null orbit the second vanishes identically and the helicity has to come from the little group. The induced representation assembles the two data, the Wigner rotation is its cocycle and is the Thomas–Wigner rotation, and the exceptions are the vertex, the non-closed boundary of the cone, and the unphysical continuous-spin family.
 
 ## Summary of Notation
 

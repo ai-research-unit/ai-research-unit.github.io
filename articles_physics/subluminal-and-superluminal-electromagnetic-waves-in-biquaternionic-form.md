@@ -83,10 +83,10 @@ $$
 so the equation is $-i\tilde K_{\Phi}f=0$. Applying $i\tilde K_{\Phi}^{\natural}$ on the left gives $i\tilde K_{\Phi}^{\natural}\cdot(-i\tilde K_{\Phi})f=-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}f=(k_{t}^{\prime\,2}-|\vec k_\Phi|^2)f=0$, and the propagation vector is **null**,
 
 $$
-k^2=0\quad\Longleftrightarrow\quad k_{t}^{\prime}=\pm|\vec k_\Phi| .
+N=0\quad\Longleftrightarrow\quad k_{t}^{\prime}=\pm|\vec k_\Phi| .
 $$
 
-The condition $-i\tilde K_{\Phi}f=0$ is four independent complex conditions on the six complex components of $f$. On a null $k$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $-i\tilde K_{\Phi}$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $k$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.
+The condition $-i\tilde K_{\Phi}f=0$ is four independent complex conditions on the six complex components of $f$. On a null $\tilde K_{\Phi}$ its kernel is two-dimensional, the two polarizations, and on the whole kernel $f^2=0$: the plane wave has **null invariants**. The step is not a cancellation, because a null $-i\tilde K_{\Phi}$ has no inverse; it is the rank of left multiplication by a null element. Checked on the six components for several null $\tilde K_{\Phi}$, the kernel is two-dimensional and $f^2=0$ on it. The invariant $\tilde F^2=f^2\exp(2i\theta_{\mathrm{pha}})$ vanishes with it.
 
 Both facts are the standard ones, and the source's point in restating them is the contrast with what follows — the plane waves of the free equation sit on the special null case, and the source then exhibits solutions that do not.
 
@@ -188,7 +188,7 @@ $$
 
 Used as the Hertz potential, this gives a **closed-form superluminal electromagnetic X-wave** (SEXW): a localised beam-like solution of the field equation in which $r_z\cos\theta_{\mathrm{axc}}-r'_t$ replaces the plane-wave phase, so that the pattern advances at speed $1/\cos\theta_{\mathrm{axc}}$ along the axis, faster than $c$. That is a pattern speed: the Bessel factor $J_n(k\rho\sin\theta_{\mathrm{axc}})$ is an azimuthal superposition of plane waves inclined at the axicon angle, and each of those still travels at $c$. The source treats these as valid solutions of the free Maxwell equation and points to Rodrigues and Lu for the physical devices that would generate them.
 
-The superluminality must be read with the corpus's usual care, and the source's own phrasing invites the mistake. The X-wave is a **localised pattern** whose amplitude profile advances superluminally; this is the **pattern (or phase) speed** of a finite wave packet and is not a speed of energy, information or signal. A free-field solution with a superluminal pattern is not in conflict with causality, and the corpus records the claim in that sense only. The same construction yields **subluminal and superluminal** solutions of the Weyl equation, and the source remarks that these obey $N=-\Omega^{2}<0$ and $N=\Omega^{2}>0$ respectively — a massless equation producing a massive-looking dispersion — which it offers as a possible reading of the neutrino puzzles. That part is speculative and is not carried.
+The superluminality must be read with the corpus's usual care, and the source's own phrasing invites the mistake. The X-wave is a **localised pattern** whose amplitude profile advances superluminally; this is the **pattern (or phase) speed** of a finite wave packet and is not a speed of energy, information or signal. A free-field solution with a superluminal pattern is not in conflict with causality, and the corpus records the claim in that sense only. The same construction yields **subluminal and superluminal** solutions of the Weyl equation, and the source remarks that these obey $p^2=\Omega^2>0$ and $p^2=-\Omega^2<0$ respectively — a massless equation producing a massive-looking dispersion — which it offers as a possible reading of the neutrino puzzles. That part is speculative and is not carried.
 
 ## The Field as a Spinor Bilinear
 
@@ -485,7 +485,7 @@ The programme of Rodrigues and Vaz works in a bundle of differential forms and p
 | $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | The quaternion conjugate, $\sum_\mu\varepsilon_\mu e_\mu\partial/\partial R_\mu$, and the d'Alembertian $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_{t}}^2$ |
 | $\tilde F$, $\tilde F_0$, $\tilde F_e$, $\tilde F_+$ | Field biquaternion; the stationary subluminal solution; the electron field; the field of the $+$ branch |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
-| $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |
+| $f$, $\tilde K_{\Phi}$, $x$ | Constant 2-form; propagation vector ($N=0$); position |
 | $\vec E_0,\vec B_0,\vec W$ | Fields of the stationary solution and their common vector, $\mathrm{curl}\,\vec W=+\Omega\vec W$ in the corpus's gradient |
 | $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\nabla^2\xi+\Omega^2\xi=0$); the letter is reused, as in the source, for the bivector $\Omega=\sum_\mu g_{\mu\mu}v_\mu\Omega_\mu$ of the spinorial section |
 | $\varpi,\ q,\ \zeta_<$ | Frequency and axial wavenumber of the moving subluminal solution, with $\varpi^2-q^2=\Omega^2$ and group velocity $v=d\varpi/dq$; $\zeta_<$ is its oblate radial coordinate |

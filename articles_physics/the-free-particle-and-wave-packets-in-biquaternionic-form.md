@@ -7,7 +7,7 @@ The free particle is the problem that fixes the representation. Every article in
 The biquaternion content of the free problem is a single structural fact and its consequences. The free Hamiltonian is a multiple of the identity,
 
 $$
-H =\frac{\lvert\vec p\rvert^{2}}{2\,m}\,e_t \in  \mathbb{R}e_t \subset  \mathbb{B}_{\Psi},
+H =\frac{p^{2}}{2\,m}\,e_t \in  \mathbb{R}e_t \subset  \mathbb{B}_{\Psi},
 $$
 
 so it is **central**. A central Hamiltonian commutes with every element of $\mathbb{B}$; its exponential is a central $*$-unitary element; and the free evolution therefore acts on the algebra's state module as a scalar. The free particle in this framework is consequently a **scalar** wave mechanics carried along a central phase, tensored with a module that the dynamics never touches. That is exactly the kinematics of a spin-0 particle, and it is why the free problem is the right place to fix the representation for the whole subcategory.
@@ -37,13 +37,13 @@ The quaternion square of the momentum is computed with $\vec e_j \vec e_\eta + \
 $$
 \tilde p^2 = \sum_{j,\eta} \vec e_j \vec e_\eta p_j p_\eta
 = -\sum_\eta p_\eta^{2}\, e_t
-= -\lvert\vec p\rvert^{2}\, e_t,
+= -p^{2}\, e_t,
 $$
 
 the cross terms cancelling by antisymmetry of $\epsilon_{j\eta l}$ against the symmetric product $p_j p_\eta$. The biquaternion norm of the momentum is therefore
 
 $$
-\tilde p\,\tilde p^{\natural} = -\tilde p^{\,2} = \lvert\vec p\rvert^{2}\, e_t,
+\tilde p\,\tilde p^{\natural} = -\tilde p^{\,2} = p^{2}\, e_t,
 \qquad
 \tilde p^{\natural} = -\tilde p,
 $$
@@ -51,7 +51,7 @@ $$
 so that the same quadratic object appears with either sign according to whether it is the square or the biquaternion norm. The kinetic energy is the biquaternion norm up to the sign that makes it positive:
 
 $$
-T = -\frac{\tilde{p}^{2}}{2\,m} =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} =\frac{\lvert\vec p\rvert^{2}}{2\,m}\,e_t .
+T = -\frac{\tilde{p}^{2}}{2\,m} =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} =\frac{p^{2}}{2\,m}\,e_t .
 $$
 
 This is the first instance of a pattern that recurs throughout the subcategory: **the kinetic term is the biquaternion norm of the momentum**, and its reality and positivity are statements about the biquaternion norm on the Hermitian subspace.
@@ -63,7 +63,7 @@ The free biquaternion Schrödinger equation is
 $$
 \boxed{\;i\,\hbar\partial/\partial r'_t \tilde{Ξ} = H \tilde{Ξ},
 \qquad
-H =\frac{\lvert\vec p\rvert^{2}}{2\,m}\,e_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi  e_t\;},
+H =\frac{p^{2}}{2\,m}\,e_t = -\frac{\hbar^{2}}{2\,m}\Delta_\Phi  e_t\;},
 $$
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -160,7 +160,7 @@ $$
 = k_\Phi^2\left(1 - \frac{k_\Phi^2}{4\,k_m^{2}}\right).
 $$
 
-For the non-relativistic dispersion the wave four-vector is **spacelike** for every $k_\Phi < 2k_m$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k_\Phi = 2k_m$, where $\hbar\,k_\Phi= 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{B}_{\Phi}$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = \lvert\vec p\rvert^{2} c/(2\,m\,c)$ rather than $E = pc$. Here $k_{\Phi}=\frac{\lvert\vec p\rvert}{\hbar}$ is the momentum wave number.
+For the non-relativistic dispersion the wave four-vector is **spacelike** for every $k_\Phi < 2k_m$, so the free non-relativistic particle never sits on the light cone: its wave four-vector is not a zero divisor. It touches the null cone only at $k_\Phi = 2k_m$, where $\hbar\,k_\Phi= 2mc$ and the non-relativistic dispersion is already outside its domain. The free non-relativistic solutions therefore live strictly inside the invertible (spacelike) region of $\mathbb{B}_{\Phi}$; the null cone, which the last article of this subcategory treats as a physical locus, is reached only by genuinely massless propagation. This is the material-sector counterpart of the fact that the free particle has $E = p^2 c/(2\,m\,c)$ rather than $E = pc$. Here $k_{\Phi}=\frac{p}{\hbar}$ is the momentum wave number.
 
 ### Normalisation
 
@@ -365,7 +365,7 @@ in which the kernel acts on the body of the field and multiplies the module fact
 The evolution operator is the exponential of the generator,
 
 $$
-\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}}) = \exp(-\frac{i\,\lvert\vec p\rvert^{2}\,r'_{t}}{2\,\hbar\,m})\,e_t \in  \mathbb{B}_{C},
+\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}}) = \exp(-\frac{i\,p^{2}\,r'_{t}}{2\,\hbar\,m})\,e_t \in  \mathbb{B}_{C},
 $$
 
 a central $*$-unitary element in the framework's sense,
@@ -427,7 +427,7 @@ Two further structural points belong to this section.
 The free biquaternion Schrödinger equation is $i\,\hbar\partial/\partial r'_t\,\tilde{Ξ} = H\tilde{Ξ}$ with
 
 $$
-H =\frac{\lvert\vec p\rvert^{2}}{2\,m}\,e_t =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} = -\frac{\tilde{p}^{2}}{2\,m} \in  \mathbb{R}e_t \subset  \mathbb{B}_{\Psi},
+H =\frac{p^{2}}{2\,m}\,e_t =\frac{\tilde{p}\,\tilde{p}^{\natural}}{2\,m} = -\frac{\tilde{p}^{2}}{2\,m} \in  \mathbb{R}e_t \subset  \mathbb{B}_{\Psi},
 \qquad
 \tilde p = -i\,\hbar\vec\nabla_\Phi,
 $$
@@ -457,8 +457,8 @@ is central, is a complex scalar times $e_t$, and satisfies the composition law, 
 | $\mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | State module, $\tilde\Pi = \tfrac12(e_t + i\vec u)$ |
 | $\tilde p = -i\,\hbar\vec\nabla_\Phi  = \sum_\eta  \vec e_\eta p_\eta$ | Momentum operator; Hermitian, $\tilde p \in \mathbb{B}_{\Psi}$ |
 | $p_\eta = -i\,\hbar\partial/\partial R_\eta$ | Momentum component |
-| $\tilde p^2 = -\lvert\vec p\rvert^{2} e_t$, $\tilde p\tilde p^{\natural} = \lvert\vec p\rvert^{2} e_t$ | Quaternion square and biquaternion norm of the momentum |
-| $H = \lvert\vec p\rvert^{2} e_t/2m$ | Free Hamiltonian; central |
+| $\tilde p^2 = -p^{2} e_t$, $\tilde p\tilde p^{\natural} = p^{2} e_t$ | Quaternion square and biquaternion norm of the momentum |
+| $H = p^{2} e_t/2m$ | Free Hamiltonian; central |
 | $T = -\tilde p^2 c/(2\,m\,c) = \tilde p\tilde p^{\natural}/2m$ | Kinetic energy as a biquaternion norm |
 | $\tilde{Ξ}_{\vec k_\Phi} = \xi \exp(i\theta_{\mathrm{pwp}})$ | Plane wave; $\xi \in \mathbb{B}\tilde\Pi$ constant |
 | $\omega(\vec k_\Phi) =\frac{\hbar\,k_\Phi^{2}}{2\,m}$ | Dispersion relation |

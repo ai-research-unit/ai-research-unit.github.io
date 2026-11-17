@@ -10,6 +10,8 @@ The form comes second. A form is the scalar part of a product, with a conjugatio
 
 The article assumes the base of *Algebra and Element Conventions*; the norm is read in the companion article, and the calculus that applies the forms to the gradient in *Operator and Calculus Conventions*.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## The Twelve Products and Their Names
 
 The algebra carries **four general products** — one to each of the four choices of the two slots, the first factor read as it stands or through ${}^{\natural}$ and the second as it stands or through ${}^{*}$ — and each of the four splits into a **symmetric part** and an **antisymmetric part**, so that the biquaternion space carries **twelve products** in all. The names are these, with the three-letter code the band articles write them by:

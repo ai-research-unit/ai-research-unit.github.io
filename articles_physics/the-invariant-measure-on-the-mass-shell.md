@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A mass shell is a homogeneous space, and a homogeneous space of a unimodular group carries an invariant measure. For the Lorentz group that measure is the density $\frac{d^{3}p}{2p_0}$ on the hyperboloid, or equivalently the four-dimensional integral $d^{4}p\,\delta(N+m^{2}c^{2})\,\mathrm{H}_{\mathrm{hvs}}(p_0)$, with $\mathrm{H}_{\mathrm{hvs}}$ the Heaviside step that keeps the energy positive. Every Lorentz-invariant integral over momenta is written with it, and every normalisation convention in field theory is a convention about it.
+A mass shell is a homogeneous space, and a homogeneous space of a unimodular group carries an invariant measure. For the Lorentz group that measure is the density $\frac{d^{3}p}{2p_0}$ on the hyperboloid, or equivalently the four-dimensional integral $d^{4}p\,\delta(p^{2}-m^{2}c^{2})\,\mathrm{H}_{\mathrm{hvs}}(p_0)$, with $\mathrm{H}_{\mathrm{hvs}}$ the Heaviside step that keeps the energy positive. Every Lorentz-invariant integral over momenta is written with it, and every normalisation convention in field theory is a convention about it.
 
 This article constructs the measure, verifies its invariance, writes it in three coordinate systems, states the invariant integral and its delta-function form, fixes the normalisation, and treats the cases in which the construction degenerates.
 
@@ -89,7 +89,7 @@ $$
 
 is invariant, the factor $\tfrac12$ being a convention that makes the normalisation of states come out without fractions. Everything else in this article is a consequence of this one identity.
 
-**The letter $E$ is the temporal component.** Throughout this article $E$ denotes $p_{t}$, the temporal coefficient of the momentum, so the four-momentum is $(E,\vec p)$ and the interval is $N=-E^{2}+\lvert\vec p\rvert^{2}=-m^{2}c^{2}$. The energy is $cE$. With that reading every formula below is dimensionally homogeneous, the boost law $p_z'=\gamma(p_z+\beta E)$ needs no factor of $c$, the velocity $\vec v=\vec p/E$ is measured in units of $c$, and the factor $\frac{1}{2E}$ is the delta function's Jacobian.
+**The letter $E$ is the temporal component.** Throughout this article $E$ denotes $p^{0}$, the temporal coefficient of the momentum, so the four-momentum is $(E,\vec p)$ and the interval is $p^{2}=E^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}$. The energy is $cE$. With that reading every formula below is dimensionally homogeneous, the boost law $p_z'=\gamma(p_z+\beta E)$ needs no factor of $c$, the velocity $\vec v=\vec p/E$ is measured in units of $c$, and the factor $\frac{1}{2E}$ is the delta function's Jacobian.
 
 ## The Density
 
@@ -123,7 +123,7 @@ $$
 \frac{d^{3}p}{2E}=\tfrac12\,p\,dE\,d\Omega ,
 $$
 
-where $d\Omega$ is the solid angle. The derivation is one line: $d^{3}p=\lvert\vec p\rvert^{2}\,d\lvert\vec p\rvert\,d\Omega$ and $\lvert\vec p\rvert\,d\lvert\vec p\rvert=E\,dE$, the second because $\lvert\vec p\rvert^{2}=E^{2}-m^{2}c^{2}$ on the shell.
+where $d\Omega$ is the solid angle. The derivation is one line: writing $p=\lvert\vec p\rvert$, $d^{3}p=p^{2}dp\,d\Omega$ and $p\,dp=E\,dE$, the second because $p^{2}=E^{2}-m^{2}c^{2}$.
 
 So the measure factorises into a *radial* part and an *angular* part, and the angular part is the round measure on the sky of *Aberration and the Sky: The Boost as a Möbius Flow*. That factorisation is why the sky's measure is the one an observer integrates over in the cosmic microwave background.
 
@@ -154,14 +154,14 @@ Every physical quantity integrated over momenta — a phase-space integral, a lu
 The same integral in four dimensions is
 
 $$
-\int d^{4}p\;\delta\bigl(N+m^{2}c^{2}\bigr)\,\mathrm{H}_{\mathrm{hvs}}(p_0)\,f(p)
+\int d^{4}p\;\delta\bigl(p^{2}-m^{2}c^{2}\bigr)\,\mathrm{H}_{\mathrm{hvs}}(p_0)\,f(p)
 =\int\frac{d^{3}p}{2E_{\vec p}}\,f(E_{\vec p},\vec p),
 $$
 
-where the norm is $N=-p_0^{2}+\lvert\vec p\rvert^{2}$ on the material sector, the norm being the plain sum $\sum_\mu P_\mu^{2}$ under the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, whose one minus on the time slot is the square of the $i$ in $P_t=iE/c$. The argument of the delta is therefore $N+m^{2}c^{2}$, and the mass shell it selects is $N=-m^{2}c^{2}$. The root contributes the factor $\frac{1}{2E}$:
+where $p^{2}=p_0^{2}-\lvert\vec p\rvert^{2}=-N$ on the material sector, the norm being the plain sum $\sum_\mu P_\mu^{2}$ under the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, whose one minus on the time slot is the square of the $i$ in $P_t=iE/c$. The argument of the delta is therefore $N+m^{2}c^{2}$, and the mass shell it selects is $N=-m^{2}c^{2}$. The root contributes the factor $\frac{1}{2E}$:
 
 $$
-\delta\bigl(N+m^{2}c^{2}\bigr)=\frac{1}{2E}\Bigl[\delta\bigl(p_0-E\bigr)+\delta\bigl(p_0+E\bigr)\Bigr],
+\delta\bigl(p^{2}-m^{2}c^{2}\bigr)=\frac{1}{2E}\Bigl[\delta\bigl(p_0-E\bigr)+\delta\bigl(p_0+E\bigr)\Bigr],
 $$
 
 and the step function keeps the positive-energy root. So the $\frac{1}{2E}$ is not a convention but the Jacobian of the delta function, and the convention is only the choice of writing it inside or outside.
@@ -217,7 +217,7 @@ That is the one place where the homogeneous-space description fails, and it fail
 On the null orbit $E=\lvert\vec p\rvert$, so the density $\frac{d^{3}p}{2E}$ has a singularity at the vertex and is not integrable there. The correct statement keeps the vertex out of the orbit and uses
 
 $$
-d^{4}p\;\delta\bigl(N\bigr)\,\mathrm{H}_{\mathrm{hvs}}(p_0),
+d^{4}p\;\delta\bigl(p^{2}\bigr)\,\mathrm{H}_{\mathrm{hvs}}(p_0),
 $$
 
 which on the cone becomes $\frac12E\,dE\,d\Omega$ with $E>0$: a genuine density, since $E$ is now the radial coordinate of the cone.
@@ -230,11 +230,11 @@ The massless orbit is the boundary of the massive ones in the orbit space, and t
 
 ### The Spacelike Orbit
 
-The spacelike measure is $\frac{d^{3}p}{2\lvert p_3\rvert}$ with $p_3$ the component chosen as the coordinate, because the one-sheeted hyperboloid meets each line of constant $(p_0,p_1,p_2)$ twice and the delta function $\delta(N-\mu^{2})$ has two roots, at $p_3=\pm\sqrt{\mu^{2}+p_0^{2}-p_1^{2}-p_2^{2}}$. The step function of the timelike case is replaced by a choice of branch, and the invariant density is $\frac{d^{3}p}{2\lvert p_3\rvert}$ on the branch. So the construction is the same and the physical interpretation is different.
+The spacelike measure is $\frac{d^{3}p}{2\lvert p_3\rvert}$ with $p_3$ the component chosen as the coordinate, because the one-sheeted hyperboloid meets each line of constant $(p_0,p_1,p_2)$ twice and the delta function $\delta(p^{2}+\mu^{2})$ has two roots, at $p_3=\pm\sqrt{\mu^{2}+p_0^{2}-p_1^{2}-p_2^{2}}$. The step function of the timelike case is replaced by a choice of branch, and the invariant density is $\frac{d^{3}p}{2\lvert p_3\rvert}$ on the branch. So the construction is the same and the physical interpretation is different.
 
 ## Summary
 
-A mass shell is a homogeneous space $G/G_{\tilde P}$, and because the group and its little groups are unimodular it carries an invariant measure. In momentum coordinates the measure is $d^{3}p/(2E)$, verified invariant by the Jacobian identity $\det(\partial\vec p'/\partial\vec p)=E'/E$; in velocity coordinates it is $\frac{m^{2}c^{2}}{2}\frac{d^{3}v}{(1-v^{2})^{2}}$; in energy and angle it is $\frac12E\,dE\,d\Omega$. The four-dimensional form $d^{4}p\,\delta(N+m^{2}c^{2})\mathrm{H}_{\mathrm{hvs}}(p_0)$ is the same measure, and its $\frac{1}{2E}$ is the delta function's Jacobian. The block normalises states covariantly so that the identity operator is $\int\frac{d^{3}p}{2E}|p\rangle\langle p|$. The vertex is a degenerate orbit, the null orbit needs the cone form, and the massive measure degenerates to zero as the mass goes to zero.
+A mass shell is a homogeneous space $G/G_{\tilde P}$, and because the group and its little groups are unimodular it carries an invariant measure. In momentum coordinates the measure is $d^{3}p/(2E)$, verified invariant by the Jacobian identity $\det(\partial\vec p'/\partial\vec p)=E'/E$; in velocity coordinates it is $\frac{m^{2}c^{2}}{2}\frac{d^{3}v}{(1-v^{2})^{2}}$; in energy and angle it is $\frac12E\,dE\,d\Omega$. The four-dimensional form $d^{4}p\,\delta(p^{2}-m^{2}c^{2})\mathrm{H}_{\mathrm{hvs}}(p_0)$ is the same measure, and its $\frac{1}{2E}$ is the delta function's Jacobian. The block normalises states covariantly so that the identity operator is $\int\frac{d^{3}p}{2E}|p\rangle\langle p|$. The vertex is a degenerate orbit, the null orbit needs the cone form, and the massive measure degenerates to zero as the mass goes to zero.
 
 ## Summary of Notation
 

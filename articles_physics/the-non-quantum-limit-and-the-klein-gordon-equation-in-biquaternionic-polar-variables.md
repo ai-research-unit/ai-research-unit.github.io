@@ -71,7 +71,7 @@ The current is the proper density times the four-velocity, and the charge densit
 
 **The second column is the reason a reader can be misled.** The discarded term is order $\epsilon^{2}$ against the kinetic energy and order $\delta^{2}$ against the rest energy, and it is the same term. **A claim that the limit is good at order $\epsilon^{2}$ and a claim that it is good at order $\delta^{2}$ are claims about two different denominators**, and only the first is a statement about the phase.
 
-**Which denominator is the right one.** The mass shell is a difference of two terms, each of size $m^{2}c^{2}$ for a slow particle, so the error of the relation is not the size of the shift against the largest term. Holding $E$ fixed and shifting the right side by $2mQ_{\mathrm{qnt}}$ moves the momentum by $\delta p/p=mQ/\lvert\vec p\rvert^{2}=Q/(2T_{\mathrm{kin}})\sim\epsilon^{2}/2$. **The momentum is what the limit's equations use, and against the momentum the error is $\epsilon^{2}$.**
+**Which denominator is the right one.** The mass shell is a difference of two terms, each of size $m^{2}c^{2}$ for a slow particle, so the error of the relation is not the size of the shift against the largest term. Holding $E$ fixed and shifting the right side by $2mQ_{\mathrm{qnt}}$ moves the momentum by $\delta p/p=mQ/p^{2}=Q/(2T_{\mathrm{kin}})\sim\epsilon^{2}/2$. **The momentum is what the limit's equations use, and against the momentum the error is $\epsilon^{2}$.**
 
 ## Order Zero: the Mass Shell as a Normalisation
 

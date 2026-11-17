@@ -62,21 +62,21 @@ The element is a single Jordan block. In the matrix model,
 $$
 \boxed{\;\mathsf M_2(\tilde Q)\sim
 \begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}
-=Q_tI_2+N,
+=Q_tI_2+\mathsf M_2(\tilde\nu),
 \qquad
-N=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+\mathsf M_2(\tilde\nu)=\begin{pmatrix}0&1\\0&0\end{pmatrix},
 \qquad
-N^2=0\;}.
+\mathsf M_2(\tilde\nu)^2=0\;}.
 $$
 
 The two normal forms are separated by the scalar part.
 
 | Case | Condition | Normal form | Unit? | Exponential |
 | --- | --- | --- | --- | --- |
-| Invertible Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+N$, $N^2=0$ | yes | $e^{Q_t}(e_t+N)$ |
-| Nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $N$, $N^2=0$ | no | $e_t+N$ |
+| Invertible Jordan | $B=0$, $\vec Q\neq0$, $Q_t\neq0$ | $Q_t e_t+\tilde\nu$, $\tilde\nu^2=0$ | yes | $e^{Q_t}(e_t+\tilde\nu)$ |
+| Nilpotent | $B=0$, $\vec Q\neq0$, $Q_t=0$ | $\tilde\nu$, $\tilde\nu^2=0$ | no | $e_t+\tilde\nu$ |
 
-The second row is the sharp one. The element $N$ is a nonzero zero divisor, yet $\exp(N)=e_t+N$ is invertible, with inverse $e_t-N$. The exponential of a nilpotent is unipotent, and the unipotent line $h_t\mapsto e_t+tN$ is a line of invertibles whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
+The second row is the sharp one. The element $\tilde\nu$ is a nonzero zero divisor, yet $\exp(\tilde\nu)=e_t+\tilde\nu$ is invertible, with inverse $e_t-\tilde\nu$. The exponential of a nilpotent is unipotent, and the unipotent line $h_t\mapsto e_t+t\tilde\nu$ is a line of invertibles whose tangent at the identity is a zero divisor. The zero divisor is the velocity of the line, not a point of it.
 
 The logarithm exists in the first row and fails in the second. In the invertible row,
 
@@ -157,8 +157,8 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 - The spectrum of $\tilde Q=Q_te_t+\vec Q$ degenerates exactly when $B^2=(\vec Q,\vec Q)=0$.
 - The scalar part separates a diabolic point ($\vec Q=0$, semisimple) from an exceptional point ($\vec Q\neq0$, a Jordan block).
 - At an exceptional point the two eigenvalues coalesce, the eigenprojections diverge, and the centraliser contains no nontrivial idempotent pair.
-- The invertible Jordan normal form is $Q_t e_t+N$ with $N^2=0$ and $Q_t\neq0$; the nilpotent normal form is $N$ with $N^2=0$ and $Q_t=0$.
-- The exponential is $\exp(Q_te_t+\vec Q)=e^{Q_t}(e_t+\vec Q)$; in particular $\exp(N)=e_t+N$ is invertible although $N$ is a zero divisor.
+- The invertible Jordan normal form is $Q_t e_t+\tilde\nu$ with $\tilde\nu^2=0$ and $Q_t\neq0$; the nilpotent normal form is $\tilde\nu$ with $\tilde\nu^2=0$ and $Q_t=0$.
+- The exponential is $\exp(Q_te_t+\vec Q)=e^{Q_t}(e_t+\vec Q)$; in particular $\exp(\tilde\nu)=e_t+\tilde\nu$ is invertible although $\tilde\nu$ is a zero divisor.
 - A linear perturbation splits the eigenvalues as $\sqrt{\epsilon}$ for a generic direction; the law belongs to the family, not to the point.
 - No exceptional point exists for a real vector part or for a Hermitian element; the phenomenon needs complex coefficients.
 - A diabolic point is a degeneracy with a diagonalisable block, an exceptional point a degeneracy with a Jordan block; only the second lies in the Jordan regime.
@@ -175,7 +175,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 | $\mathcal{D}_{\mathrm{disc}}=-4B^2$ | the discriminant of the characteristic polynomial |
 | $\vec{Ζ}=-i\vec Q/B$ | the pure root of $+1$ of the non-degenerate regime, defined for $B\neq0$ |
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$ | the eigenprojections, defined for $B\neq0$ |
-| $N$ | a nonzero nilpotent, $N^2=0$ |
+| $\tilde\nu$ | a nonzero nilpotent, $\tilde\nu^2=0$ |
 
 ## Further Reading
 

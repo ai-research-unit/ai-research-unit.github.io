@@ -10,6 +10,8 @@ The order follows the dependence. The family letters come first, because the nam
 
 **Boundaries.** The element, its subspaces and its marks are *Algebra and Element Conventions*; the twelve products and the four forms are *Product and Form Conventions*; the norms and the unitary convention are *Norm and Unitary Conventions*; the root, the idempotent and the nilpotent are *Special Element and Peirce Conventions*; the frames are *Frame and Metric Conventions*; the two matrix models and their regular representation are *Matrix Representations Conventions*; the operator that is its element, the dagger and the array rule are *Operator and Calculus Conventions*; and the superscripts and the typography are *Index and Notation Conventions*. Every citation in this article is to one of these eight, except those that name *Operator Chirality on the Biquaternion Algebra*, which proves the properties of the label fixed in §*The Slots*.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## The Four Families and Their Letters
 
 ### $L$, $R$, $LR$, $\Theta$

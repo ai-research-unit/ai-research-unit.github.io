@@ -47,7 +47,7 @@ $$
 
 *Proof.* The four products of invertibles are $e_te_\mu=e_\mu e_t=e_\mu$, $\vec e_x\vec e_x=\vec e_y\vec e_y=\vec e_z\vec e_z=-e_t$, and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ with the reversed products negated. Collecting the coefficients of each unit gives the display. Verified exactly on the sixteen pairs of the basis and on general elements with coefficients in $\mathbb{Q}(i)$.
 
-The rule is linear in the four coordinates of $\tilde Q_1$ and linear in the four coordinates of $\tilde Q_2$. The sixteen structure constants $c_{\mu\nu}{}^{\lambda}$, defined by $e_\mu e_\nu=\sum_\lambda c_{\mu\nu}{}^{\lambda}e_\lambda$, are integers, and they are the structure constants of the real quaternion algebra read on the complexification.
+The rule is linear in the four coordinates of $\tilde Q_1$ and linear in the four coordinates of $\tilde Q_2$. The sixteen structure constants $c_{\mu\nu\lambda}$, defined by $e_\mu e_\nu=\sum_\lambda c_{\mu\nu\lambda}e_\lambda$, are integers, and they are the structure constants of the real quaternion algebra read on the complexification.
 
 ## The Scalar–Vector Form
 

@@ -39,7 +39,7 @@ with the property the source announces as the Dirac property, $\sum_m D_{mj}D_{j
 
 Three facts follow, and each is worth stating because the source's wording invites a stronger interpretation than the algebra supports.
 
-- **The three spacelike matrices close on $\mathrm{Cl}_{3,0}$, not on $\mathrm{Cl}_{1,3}$.** Left multiplications by $ie_j$ and $i\vec e_\eta$, $j\neq k$, anticommute, $\{D_j,D_\eta\} = 0$, exactly, since $e_j\vec e_\eta = -\vec e_\eta e_j$. So the three of them are a Clifford set with all positive squares.
+- **The three spacelike matrices close on $\mathrm{Cl}_{3,0}$, not on $\mathrm{Cl}_{1,3}$.** Left multiplications by $ie_j$ and $i\vec e_\eta$, $j\neq\eta$, anticommute, $\{D_j,D_\eta\} = 0$, exactly, since $e_j\vec e_\eta = -\vec e_\eta e_j$. So the three of them are a Clifford set with all positive squares.
 - **The fourth is not part of that set.** $D^0 = I$ commutes with everything, so $\{D_0,D_j\} = 2D_j \neq 0$: the source's index identity is a statement about each matrix with itself, not an anticommutation over four indices. The corpus's own Dirac dictionary supplies a genuine Clifford set through the matrix image $Ξ$; the two objects are different and must not be conflated.
 - **The "matrix Dirac operator" is the regular representation of the gradient.** Since $D = \partial/\partial\tau I + \sum_j D_j\partial/\partial R_j$ is the matrix of $\partial/\partial\tau + i\nabla = \vec\nabla^{+}_\Phi$, the matrix form of the source's first-order equation is the matrix form of left multiplication by a biquaternion — no more and no less. The corpus's Dirac dictionary says the same thing from the other side: $\mathbb{B} = \mathrm{End}(S)$, and every complex-linear operator on the spinor module is some biquaternion.
 
@@ -99,14 +99,14 @@ For **real** $m$ the weight is a genuine exponential in $\tau$; for the corpus's
 
 ### The source's derivation, and what it gives
 
-The source solves the KGFSh equation by transforming in $\tau$. With $\omega$ the Fourier variable conjugate to $\tau$ and $k = i\omega - m$, the transform $\mathcal{F}_\tau[\tilde{Ξ}_{m}]$ obeys the **Helmholtz equation with a complex wave number**,
+The source solves the KGFSh equation by transforming in $\tau$. With $\omega$ the Fourier variable conjugate to $\tau$ and $k_{\mathrm{hel}} = i\omega - m$, the transform $\mathcal{F}_\tau[\tilde{Ξ}_{m}]$ obeys the **Helmholtz equation with a complex wave number**,
 
 $$
-\bigl\{\Delta_\Phi - k^2\bigr\}\mathcal{F}_\tau[\tilde{Ξ}_{m}] + \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = 0 ,
-\qquad k = i\omega - m ,
+\bigl\{\Delta_\Phi - k_{\mathrm{hel}}^{2}\bigr\}\mathcal{F}_\tau[\tilde{Ξ}_{m}] + \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = 0 ,
+\qquad k_{\mathrm{hel}} = i\omega - m ,
 $$
 
-whose fundamental solution is $\mathcal{F}_\tau[\tilde{Ξ}_{m}] = \frac{1}{4\pi R}\bigl(a\exp(-kR) + (1-a)\exp(kR)\bigr)$ with $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ and $a$ an arbitrary constant. That kernel was verified: the ball integral of $(\Delta_\Phi + k^2)$ applied to $-\frac{1}{4\pi R}\exp(\pm ikR)$ is $+1$ for the two signs and two values of $k$, which is the coefficient of $\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
+whose fundamental solution is $\mathcal{F}_\tau[\tilde{Ξ}_{m}] = \frac{1}{4\pi R}\bigl(a\exp(-k_{\mathrm{hel}}R) + (1-a)\exp(k_{\mathrm{hel}}R)\bigr)$ with $R = |r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|$ and $a$ an arbitrary constant. That kernel was verified: the ball integral of $(\Delta_\Phi + k_{\mathrm{hel}}^{2})$ applied to $-\frac{1}{4\pi R}\exp(\pm ik_{\mathrm{hel}}R)$ is $+1$ for the two signs and two values of $k_{\mathrm{hel}}$, which is the coefficient of $\delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$.
 
 The inverse transform then fixes the support, and this is the source's real result. Since the inverse transform of $\exp(\pm i\theta_{\mathrm{omr}})$, with the omega-radius angle $\theta_{\mathrm{omr}}=\omega R$ real because a frequency and a length are real, is $\delta(\tau \mp R)$, the two terms are supported on the two light cones and the assembled fundamental solution is
 
@@ -253,12 +253,12 @@ where $\tilde{\Pi}_{1,2}(\vec u)$ is the corpus's rank-one Hermitian idempotent,
 Throughout, $\theta_{\mathrm{mat}}:=\omega_n\tau$ is the Matsubara angle: $\omega_n=2\pi n/\mathcal{B}$ is real, so the thermal factor $\exp(-i\theta_{\mathrm{mat}})$ is a phase of modulus one even though it lives on the Euclidean circle. It carries the periodicity and no decay.
 
 $$
-\tilde{Ξ}_{\omega}^0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec u_e) = \frac{1}{k^2}\bigl(\omega + \rho - ik\,\vec u_e\bigr)\exp(-ik(\vec u_e\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)))
+\tilde{Ξ}_{\omega}^0(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,\vec u_e) = \frac{1}{k_{\mathrm{hel}}^{2}}\bigl(\omega + \rho - ik_{\mathrm{hel}}\,\vec u_e\bigr)\exp(-ik(\vec u_e\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)))
 = \frac{1}{k}\bigl(1 - i\vec u_e\bigr)\exp(-ik(\vec u_e\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))) ,
-\qquad k = \omega + \rho ,
+\qquad k_{\mathrm{hel}} = \omega + \rho ,
 $$
 
-whose amplitude $(1 - i\vec u_e)/k$ is again null, again a multiple of $\tilde{\Pi}_2(\vec u_e)$; the identity was verified for two frequencies, two shifts and two random polarisations. The static case $\omega = 0$ has $k = \rho$ and amplitude $(1 - i\vec u_e)/\rho$, which is the "static bispinor" of the source; the source prints $\tfrac12(\operatorname{sgn}\rho - i\vec u_e)$, which agrees with the derivation only at $\rho = 2$, so the printed constant is the one to distrust and the structure is the one to keep.
+whose amplitude $(1 - i\vec u_e)/k_{\mathrm{hel}}$ is again null, again a multiple of $\tilde{\Pi}_2(\vec u_e)$; the identity was verified for two frequencies, two shifts and two random polarisations. The static case $\omega = 0$ has $k_{\mathrm{hel}} = \rho$ and amplitude $(1 - i\vec u_e)/\rho$, which is the "static bispinor" of the source; the source prints $\tfrac12(\operatorname{sgn}\rho - i\vec u_e)$, which agrees with the derivation only at $\rho = 2$, so the printed constant is the one to distrust and the structure is the one to keep.
 
 ## The Stationary Route and the Helmholtz Kernel
 
@@ -270,9 +270,9 @@ B = \bigl(\vec\nabla^{\mp}_{\Phi,\omega} + \rho\bigr)\bigl(\xi * F\bigr) + S_\om
 \vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \nabla ,
 $$
 
-with $\xi$ the fundamental solution of the Helmholtz equation $\Delta_\Phi\xi + k^2\xi = \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, $k = \omega + \rho$. The source's displayed kernel is $\xi = -\frac{1}{4\pi R}(a\exp(kR) + (1-a)\exp(-kR))$, and **the exponent has lost its $i$**: with real $k$ those exponentials do not solve the Helmholtz equation, while with $k \to ik$ they do. The restoration was verified numerically — the ball integral of $(\Delta_\Phi + k^2)$ applied to $-\frac{1}{4\pi R}\exp(\pm ikR)$ is $+1$ at the floor — and it is consistent with the source's own plane-wave representation $\xi_0 = \int_{|\vec u_e|=1}p(\vec u_e)\exp(-ik(\vec u_e\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)))dS(\vec u_e)$, which uses a real wave number. This is a text-layer loss rather than an error of the mathematics, in the same family as the lost $i$'s the earlier record noted, and it is recorded as such.
+with $\xi$ the fundamental solution of the Helmholtz equation $\Delta_\Phi\xi + k_{\mathrm{hel}}^{2}\xi = \delta(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$, $k_{\mathrm{hel}} = \omega + \rho$. The source's displayed kernel is $\xi = -\frac{1}{4\pi R}(a\exp(k_{\mathrm{hel}}R) + (1-a)\exp(-k_{\mathrm{hel}}R))$, and **the exponent has lost its $i$**: with real $k_{\mathrm{hel}}$ those exponentials do not solve the Helmholtz equation, while with $k_{\mathrm{hel}} \to ik_{\mathrm{hel}}$ they do. The restoration was verified numerically — the ball integral of $(\Delta_\Phi + k_{\mathrm{hel}}^{2})$ applied to $-\frac{1}{4\pi R}\exp(\pm ik_{\mathrm{hel}}R)$ is $+1$ at the floor — and it is consistent with the source's own plane-wave representation $\xi_0 = \int_{|\vec u_e|=1}p(\vec u_e)\exp(-ik(\vec u_e\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)))dS(\vec u_e)$, which uses a real wave number. This is a text-layer loss rather than an error of the mathematics, in the same family as the lost $i$'s the earlier record noted, and it is recorded as such.
 
-Two further source statements in this section are worth keeping with their status attached. The composition of the two stationary operators is $\bigl(\vec\nabla^{\pm}_{\Phi,\omega} + \rho\bigr)\bigl(\vec\nabla^{\mp}_{\Phi,\omega} + \rho\bigr) = (\omega+\rho)^2 + \Delta_\Phi$, which is the monochromatic form of the shifted square and is verified with the rest. And the source's assertion that the Cauchy problem for the stationary operator has, for $\operatorname{Re}k \neq 0$, only the trivial homogeneous solution repeats the class question of the earlier section in the elliptic setting, where it is unproblematic: a Helmholtz equation with a complex wave number has no bounded homogeneous solutions on the whole space, and the source's standing assumption of a Fourier-transformable amplitude is the assumption actually being used.
+Two further source statements in this section are worth keeping with their status attached. The composition of the two stationary operators is $\bigl(\vec\nabla^{\pm}_{\Phi,\omega} + \rho\bigr)\bigl(\vec\nabla^{\mp}_{\Phi,\omega} + \rho\bigr) = (\omega+\rho)^2 + \Delta_\Phi$, which is the monochromatic form of the shifted square and is verified with the rest. And the source's assertion that the Cauchy problem for the stationary operator has, for $\operatorname{Re}k_{\mathrm{hel}} \neq 0$, only the trivial homogeneous solution repeats the class question of the earlier section in the elliptic setting, where it is unproblematic: a Helmholtz equation with a complex wave number has no bounded homogeneous solutions on the whole space, and the source's standing assumption of a Fourier-transformable amplitude is the assumption actually being used.
 
 ## What the Programme's Solution Theory Establishes and What It Does Not
 
@@ -317,7 +317,7 @@ The bispinors carry the algebra's own content. The amplitude of a plane-wave bis
 | $S^{\pm}_{\vec\zeta} = \tfrac12(i+\vec u_\zeta)\tilde{Ξ}_{\vec\zeta}^{\pm} = i\tilde{\Pi}_2(\vec u_\zeta)\tilde{Ξ}_{\vec\zeta}^{\pm}$ | Harmonic bispinor; null, in the minimal left ideal, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{\Pi}_{1,2}(\vec u) = \tfrac12(e_t \pm i\vec u)$ | The corpus's idempotents: pure states, Hermitian, null |
 | $D_j$, $j=0,\dots,3$ | The source's $4\times4$ matrices: $D_0=I$, $D_j$ the matrix of left multiplication by $ie_j$; $D_j^2=I$ |
-| $\vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \nabla$, $k = \omega+\rho$ | Stationary (monochromatic) operators and wave number |
+| $\vec\nabla^{\pm}_{\Phi,\omega} = \omega \pm \nabla$, $k_{\mathrm{hel}} = \omega+\rho$ | Stationary (monochromatic) operators and wave number |
 
 ## Further Reading
 

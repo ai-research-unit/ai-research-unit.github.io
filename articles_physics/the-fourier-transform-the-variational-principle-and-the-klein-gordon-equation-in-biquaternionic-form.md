@@ -23,7 +23,7 @@ The algebra and its units are those of *Algebra and Element Conventions*, the gr
 $$
 \langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2},
 \qquad
-\langle\tilde P_\Phi\rangle_\natural=N,
+\langle\tilde P_\Phi\rangle_\natural=-p^{2},
 \qquad
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi,
 \qquad

@@ -280,7 +280,7 @@ $$
 \mathcal{D}_p:\ \tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_\eta p_\eta\,\vec e_\eta\tilde X\vec e_y ,
 $$
 
-the first the operator and the second its value on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the invertibles, and both squares are scalars, $\mathcal{D}^2=\Box$ and $\mathcal{D}_p^2=-N$, the cross terms cancelling between the time term and the three spatial ones.
+the first the operator and the second its value on the plane wave $\exp(-i\theta_{\mathrm{pwp}})$. In the time term the left factor is $e_t$, the unit of the algebra, so the term is a single right multiplication by $\vec e_x$; each spatial term carries $\vec e_\eta$ on the left and $\vec e_y$ on the right. The two imaginary units of the frame are already multiplied to $-1$, so no $i$ remains on the invertibles, and both squares are scalars, $\mathcal{D}^2=\Box$ and $\mathcal{D}_p^2=p^2$, the cross terms cancelling between the time term and the three spatial ones.
 
 The covariant anticommutator of the free quantized field is the object that carries the canonical structure, and it has two properties that the biquaternion framework reads directly.
 
@@ -310,7 +310,7 @@ $$
 
 a modified Bessel function of the second kind, nonzero for every $\vec r_{12}\ne0$. The trailing $\vec e_x$ multiplies the whole bracket on the right, so every term is read with its sides in position: the mass term is a single right multiplication by $i\vec e_x$ once the outer $i$ is placed against it, with no factor on the left, and each spatial term, since $\vec e_y\vec e_x=-\vec e_z$, carries $\vec e_\eta$ on the left and $\vec e_z$ on the right — the same reduction the frame paragraph records. The mass term is the difference of the two spin sums of the solutions article, which is twice the mass, taken against the cosine. The gradient term is their sum, the spatial part of $\mathcal{D}$ read on the element with the derivative in place of the momentum; being odd in $\vec p$, it survives against the sine that the difference of the two phases leaves, and the integration is the companion's identity $\int\frac{d^3p}{(2\pi\hbar)^3}\frac{p_\eta\sin(\vec p\cdot\vec r_{12})}{E_{\vec p}}=-\partial F/\partial r_{12,\eta}$. The anticommutator pairs equal phases instead, keeps only the cosine, and is a contact term at equal times. The quantized biquaternion Dirac field, like any field of spin $\tfrac12$, therefore has a local anticommutator and a nonlocal commutator; both are $c$-numbers, and microcausality is the statement about the anticommutator.
 
-**The biquaternion form.** Writing the wave biquaternion (the $c$-number symbol) $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, with $p_0=E_{\vec p}/c$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, the momentum-space two-point function of the propagator companion is the map
+**The biquaternion form.** Writing the wave biquaternion (the $c$-number symbol) $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, with $p_0=E_{\vec p}/c$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is the map
 
 $$
 S_F(p):\ \tilde{X}\,\longmapsto\frac{i\bigl(i\tilde X\vec e_x p_{0}-\sum_\eta  i\vec e_\eta\tilde X\vec e_y p_{\eta}+m\,\tilde X\bigr)}{p^2-m^{2}\,c^{2}+i\epsilon}
@@ -377,7 +377,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian |
 | $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$ |
-| $\mathcal{D}_p$ | Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=-N$ |
+| $\mathcal{D}_p$ | Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=p^2$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-k_m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |
 | $\tilde{Ξ}_{\mathrm{fop}}$ | Operator-valued biquaternion field, $\mathcal{A}\otimes\mathbb{B}$; its parts $\tilde{Ξ}_{\mathrm{fop},L}$, $\tilde{Ξ}_{\mathrm{fop},R}$ |
@@ -399,7 +399,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $G_{\mathrm{S}}(x-y)$ | Symmetric kernel of the commutator's vacuum expectation |
 | $F(\vec r_{12})=\int\frac{d^3p}{(2\pi\hbar)^3}\frac{\cos(\vec p\cdot\vec r_{12})}{E_{\vec p}}=\frac{m}{2\pi^2\lvert\vec r_{12}\rvert}\mathrm{Ki}_{1}(m\lvert\vec r_{12}\rvert)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
 | $S_F(p):\tilde X\mapsto-\frac{i(i\tilde X\vec e_x p_0-\sum_\eta i\vec e_\eta\tilde X\vec e_y p_\eta+mc\tilde X)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Feynman propagator amplitude, as a map on elements |
-| $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ | $c$-number wave biquaternion and mass shell |
+| $\tilde P_{\Phi}=i(E_{\vec p}/c)\,e_t+\vec p$, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ | $c$-number wave biquaternion and mass shell |
 
 Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 

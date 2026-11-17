@@ -29,7 +29,7 @@ $$
 \qquad
 \langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2},
 \qquad
-\langle\tilde P_\Phi\rangle_\natural=N.
+\langle\tilde P_\Phi\rangle_\natural=-p^{2}.
 $$
 
 **The phase convention is fixed here and used throughout.** A positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ with $\theta_{\mathrm{pwp}}=\omega r_t'-\vec k_\Phi\cdot\vec r$, so $\partial/\partial r_t'\mapsto-i\omega$ and $\partial/\partial r_\eta\mapsto ik_\eta$. The sign of $\vec\zeta$ in every factorization display below is the sign this convention gives it; the opposite convention reverses it and changes no structural statement.

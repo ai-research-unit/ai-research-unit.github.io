@@ -96,13 +96,13 @@ A plane-wave solution is
 
 $$
 A_\mu(x) = \varepsilon_\mu(\vec p)\,\exp(-i\theta_{\mathrm{pwp}}),
-\qquad N \equiv -\omega_{\vec p}^{2}+\vec p^{2} = -\mu^{2},
+\qquad p^2 \equiv \omega_{\vec p}^2-\vec p^2 = \mu^2,
 \qquad \sum_\mu p_\mu\varepsilon_\mu = 0,
 $$
 
 Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
-with $\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and the invariant phase $\sum_\mu p_\mu x_\mu=\omega_{\vec p}r'_t/c-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ of the series convention, the material four-wavevector being $\tilde P_{\Phi}=i\omega_{\vec p}e_t+\vec p$, with $p_t^2=-\omega_{\vec p}^2$, and its biquaternion norm $\langle\tilde P_{\Phi}\rangle_{\natural}=(\vec p^2-\omega_{\vec p}^2)e_t$, so that $N=-\langle\tilde P_{\Phi}\rangle_{\natural}$ as in the scalar companion. The Lorenz condition is the transversality condition $\sum_\mu p_\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\vec p}\varepsilon_0+\vec p\cdot\vec\varepsilon$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\vec\varepsilon_T)$ and $\vec p\cdot\vec\varepsilon_T=0$, and the longitudinal one,
+with $\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and the invariant phase $\sum_\mu p_\mu x_\mu=\omega_{\vec p}r'_t/c-\vec p\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ of the series convention, the material four-wavevector being $\tilde P_{\Phi}=i\omega_{\vec p}e_t+\vec p$, with $p_t^2=-\omega_{\vec p}^2$, and its biquaternion norm $\langle\tilde P_{\Phi}\rangle_{\natural}=(\vec p^2-\omega_{\vec p}^2)e_t$, so that $p^2=-\langle\tilde P_{\Phi}\rangle_{\natural}$ as in the scalar companion. The Lorenz condition is the transversality condition $\sum_\mu p_\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\vec p}\varepsilon_0+\vec p\cdot\vec\varepsilon$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\vec\varepsilon_T)$ and $\vec p\cdot\vec\varepsilon_T=0$, and the longitudinal one,
 
 $$
 \varepsilon_{\mathrm{L}\mu} = \frac{1}{\mu}\left(-|\vec p|,\,0,\,0,\,\omega_{\vec p}\right)
@@ -239,21 +239,21 @@ three half-quanta per mode, one for each polarization. It is quartically diverge
 
 ## The Propagator and the Polarization Projector
 
-The two-point function is the inverse of the momentum-space kinetic operator. With the field equation written $\sum_\sigma\left[-(N+\mu^{2})\delta_{\nu\sigma}+p_\nu p_\sigma\right]\tilde{A}_{\Phi,\sigma}=0$ in the series momentum convention $N=-\omega^{2}+\vec p^{2}$, the inverse is
+The two-point function is the inverse of the momentum-space kinetic operator. With the field equation written $\sum_\sigma\left[(p^2-\mu^2)\delta_{\nu\sigma}+p_\nu p_\sigma\right]\tilde{A}_{\Phi,\sigma}=0$ in the series momentum convention $p^2=\omega^2-\vec p^2$, the inverse is
 
 $$
-D_{\nu\sigma}(p) = -\frac{\delta_{\nu\sigma} + p_\nu p_\sigma/\mu^2}{N+\mu^{2}},
+D_{\nu\sigma}(p) = \frac{\delta_{\nu\sigma} + p_\nu p_\sigma/\mu^2}{p^2-\mu^2},
 \qquad\text{equivalently}\qquad
-D_{\mu\nu}(p) = -\frac{\delta_{\mu\nu}+p_\mu p_\nu/\mu^2}{N+\mu^{2}},
+D_{\mu\nu}(p) = \frac{\delta_{\mu\nu}+p_\mu p_\nu/\mu^2}{p^2-\mu^2},
 $$
 
 which was checked by direct inversion off the mass shell: the residual of $\mathcal A_{\mathrm{op}} D - I$ was $2\times10^{-16}$ at two independent off-shell momenta. The Feynman propagator is this with the $i\epsilon$ prescription,
 
 $$
-D_{\mu\nu}(p) = \frac{i\left(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2\right)}{-(N+\mu^{2})+i\epsilon},
+D_{\mu\nu}(p) = \frac{i\left(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2\right)}{p^2-\mu^2+i\epsilon},
 $$
 
-and the numerator is exactly the polarization projector of the plane-wave section. This is the structural content of the Proca propagator: its residue at the pole is the sum over the three physical polarizations, evaluated with the on-shell condition $N=-\mu^{2}$. The pole structure and the contour conventions are those of the series' propagator companions; what the massive vector adds is the three-term residue, in place of the massless theory's two-term transverse residue together with the gauge-dependent pieces that must cancel in physical amplitudes.
+and the numerator is exactly the polarization projector of the plane-wave section. This is the structural content of the Proca propagator: its residue at the pole is the sum over the three physical polarizations, evaluated with the on-shell condition $p^2=\mu^2$. The pole structure and the contour conventions are those of the series' propagator companions; what the massive vector adds is the three-term residue, in place of the massless theory's two-term transverse residue together with the gauge-dependent pieces that must cancel in physical amplitudes.
 
 The massless limit of the numerator is singular, as it must be: $(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)$ diverges as $\mu\to0$ for generic momenta, and the Proca propagator does not have a smooth massless limit as an off-shell object. On shell the singular part is proportional to the longitudinal projector, whose contribution to gauge-invariant amplitudes is suppressed, and the limit of the physical amplitude is the Maxwell amplitude. The singularity of the off-shell propagator is the trace of the physical fact that the massless theory has one fewer degree of freedom: the fourth direction cannot be reached continuously, it is removed by the gauge structure.
 
@@ -303,7 +303,7 @@ The Lorenz condition is a **consequence** of the massive field equation and not 
 
 The Legendre transform leaves the momenta unchanged from Maxwell, $\pi_\mu=-F_{t\mu}$, so $\pi_0\approx0$ is primary. The secondary constraint is Gauss's law deformed to $\sum_i \partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$, and the two are **second class**, because $\{\pi_0,\xi_2\}=-\mu^2\delta^{(3)}\neq0$ and the constraint matrix $\mathcal{K}_{\mathrm{con}}$ has determinant $\mu^4\neq0$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom, against two for the massless field. The quantization is by the Dirac bracket, with no indefinite metric and no subsidiary condition.
 
-The three on-shell polarizations satisfy $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, an idempotent of trace three annihilating $p$, verified at several momenta. The same object is the numerator of the propagator $D_{\mu\nu}=-i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^{2})/(N+\mu^{2}-i\epsilon)$, whose inverse property was verified off shell, so the propagator's residue is the three-polarization projector. The mode expansion carries three positive-norm modes with the standard bosonic commutators, and the normal-ordered Hamiltonian is the sum of three oscillator quanta per mode, the un-normal-ordered constant being three half-quanta per mode, one for each polarization.
+The three on-shell polarizations satisfy $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$, an idempotent of trace three annihilating $p$, verified at several momenta. The same object is the numerator of the propagator $D_{\mu\nu}=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$, whose inverse property was verified off shell, so the propagator's residue is the three-polarization projector. The mode expansion carries three positive-norm modes with the standard bosonic commutators, and the normal-ordered Hamiltonian is the sum of three oscillator quanta per mode, the un-normal-ordered constant being three half-quanta per mode, one for each polarization.
 
 The massless limit is the limit in which the two constraints become first class, the gauge transformation $\tilde{A}_{\Phi}\mapsto\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ reappears, and the count drops from three to two. The massless theory has two polarizations because a gauge symmetry identifies field directions, not because of any bookkeeping; the Proca theory is the control case in which no gauge fixing is needed and the fourth polarization is physical. What the algebra supplies is the carrier, the field strength, the operator that makes the Lorenz condition a consequence, and the central biquaternion norm that the mass term uses; what it does not supply is the mass itself, the ladder algebra, or any empirical content.
 
@@ -331,7 +331,7 @@ The massless limit is the limit in which the two constraints become first class,
 | $\sum_r\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+p_\mu p_\nu/\mu^2$ | Polarization completeness; $P^2=P$, $\mathrm{tr}P=3$, $\sum_\nu P_{\mu\nu}p_\nu=0$ |
 | $a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},r}^{\dagger}(\vec p)$ | Mode operators with $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$ |
 | $:H:=\int d^3p/(2\pi\hbar)^3\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$ | Normal-ordered Hamiltonian |
-| $D_{\mu\nu}(p)=-i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^{2})/(N+\mu^{2}-i\epsilon)$ | Proca propagator; residue is the polarization projector |
+| $D_{\mu\nu}(p)=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$ | Proca propagator; residue is the polarization projector |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Pairing formula |
 
 ## Further Reading

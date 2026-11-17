@@ -42,9 +42,9 @@ The Poincaré algebra has rank two after the translations are included: the mome
 
 ### The Momentum Squared
 
-$C_1=N$ on the Hermitian slice and $C_1=-N$ on the material one: the invariant length of the four-momentum is the norm, read with the sign of the slice it is written on. On the Hermitian slice, where this article works, its sign separates the three orbits:
+$C_1=p^{2}$ is the invariant length of the four-momentum. Its sign separates the three orbits:
 
-| $N$ | orbit | physical name |
+| $p^{2}$ | orbit | physical name |
 |---|---|---|
 | $>0$ | the hyperboloid | massive |
 | $=0$ | the cone, minus the vertex | massless |
@@ -56,10 +56,10 @@ The block treats the first two; the third is the same algebra with the sign of t
 
 The corpus writes the norm of a four-momentum in two ways because it works on two real slices.
 
-- On the **Hermitian** slice, where the norm is the interval $q_t^{2}-\lvert\vec q\rvert^{2}$ of *The Null Cone: The Massless Boundary*, a timelike momentum has norm $+m^{2}c^{2}$. This is the convention this article uses for $C_1$ and $C_2$, and it is the one the other articles of the block use, so that the rest momentum is $\tilde P_{\mathrm{rest}}=mc\,e_t$ and $N=+m^{2}c^{2}$.
+- On the **Hermitian** slice, where the norm is the interval $q_t^{2}-\lvert\vec q\rvert^{2}$ of *The Null Cone: The Massless Boundary*, a timelike momentum has norm $+m^{2}c^{2}$. This is the convention this article uses for $C_1$ and $C_2$, and it is the one the other articles of the block use, so that the rest momentum is $\tilde P_{\mathrm{rest}}=mc\,e_t$ and $p^{2}=+m^{2}c^{2}$.
 - On the **material** slice the four-momentum has $\langle\tilde P\rangle_{\natural}=-m^{2}c^{2}$, the convention of *The Determination of the Possible Spins in Biquaternionic Form*; the two readings differ by the sign of the norm.
 
-Both are statements about $N$; the difference is the sign of the norm on the slice, and a formula transplanted from one slice to the other needs a sign. Nothing in the labelling depends on which is used, because the labels are the eigenvalues of Casimirs and not the norms themselves.
+Both are statements about $p^{2}$; the difference is the sign of the norm on the slice, and a formula transplanted from one slice to the other needs a sign. Nothing in the labelling depends on which is used, because the labels are the eigenvalues of Casimirs and not the norms themselves.
 
 ### The Shell
 
@@ -215,7 +215,7 @@ The two readings are used in different articles of the block for different purpo
 
 ## Summary
 
-The Poincaré algebra has two Casimirs, $C_1=N$ and $C_2=-\sum_\mu\varepsilon_\mu W_\mu W_\mu$ with $W_\mu$ the Pauli–Lubanski vector. Their eigenvalues label an irreducible module by $(m,j)$, with $C_1=m^{2}c^{2}$ and $C_2=\hbar^{2}m^{2}c^{2}j(j+1)$; in the rest frame $\vec W=\pm mc\vec S$, which is why $j$ is the spin. On the null cone $W_\mu=hP_\mu$, $C_2$ vanishes, and the labels become $(0,h)$ with $h$ the helicity, because the little group has grown from $SU(2)$ to $E(2)$. The two readings, by Casimirs and by little groups, agree on both orbits. $PT$ preserves the momentum and reverses the spin, so it fixes $(m,j)$ and flips $h$: the Casimir labels are untouchable and the helicity is not one.
+The Poincaré algebra has two Casimirs, $C_1=p^{2}$ and $C_2=-\sum_\mu\varepsilon_\mu W_\mu W_\mu$ with $W_\mu$ the Pauli–Lubanski vector. Their eigenvalues label an irreducible module by $(m,j)$, with $C_1=m^{2}c^{2}$ and $C_2=\hbar^{2}m^{2}c^{2}j(j+1)$; in the rest frame $\vec W=\pm mc\vec S$, which is why $j$ is the spin. On the null cone $W_\mu=hP_\mu$, $C_2$ vanishes, and the labels become $(0,h)$ with $h$ the helicity, because the little group has grown from $SU(2)$ to $E(2)$. The two readings, by Casimirs and by little groups, agree on both orbits. $PT$ preserves the momentum and reverses the spin, so it fixes $(m,j)$ and flips $h$: the Casimir labels are untouchable and the helicity is not one.
 
 ## Summary of Notation
 

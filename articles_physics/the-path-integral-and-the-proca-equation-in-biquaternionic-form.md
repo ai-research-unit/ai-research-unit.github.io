@@ -144,7 +144,7 @@ which is the standard Proca propagator. Both displayed forms were checked agains
 
 **What the ghost is not.** It is not the spacelike branch of the polar chart, and it is not a particle. It is the longitudinal eigenvalue of the covariant operator, and it is negative because the Proca operator is indefinite in the Lorentzian sign pattern — the kinetic term already is, in the time direction. **The ghost's negative sign is the metric's and the mass's, not the theory's error**, and the Euclidean section below makes the sign disappear.
 
-**The Euclidean operator has no ghost at all.** With $\delta_{\mu\nu}$ in place of $g_{\mu\nu}$ the eigenvalues become $m^{2}$ once and $N+m^{2}$ three times, and the determinant is $+m^{2}(N+m^{2})^{3}$, positive for every $p$ and every $m>0$. The check covered $p=(0.2,0.1,-0.3,0.5)$, $p=(1,0.4,0,0.2)$, $p=0$ and $p=(3,-2,1,0.5)$, and the computed determinant matched the closed form at every one. **The indefinite sign is the Wick rotation's, and the rotation is exact.**
+**The Euclidean operator has no ghost at all.** With $\delta_{\mu\nu}$ in place of $g_{\mu\nu}$ the eigenvalues become $m^{2}$ once and $p^{2}+m^{2}$ three times, and the determinant is $+m^{2}(p^{2}+m^{2})^{3}$, positive for every $p$ and every $m>0$. The check covered $p=(0.2,0.1,-0.3,0.5)$, $p=(1,0.4,0,0.2)$, $p=0$ and $p=(3,-2,1,0.5)$, and the computed determinant matched the closed form at every one. **The indefinite sign is the Wick rotation's, and the rotation is exact.**
 
 ## The Massless Limit
 
@@ -227,7 +227,7 @@ so the Lorenz condition holds exactly when the source is conserved. **The constr
 
 The Proca functional integral is an ordinary Gaussian over the anti-Hermitian configurations, with the flat measure and no insertion. Its operator is $P=\Box_\Phi-k_m^{2}-\tilde\nabla_\Phi D$, and the two canonical first-order operators of the algebra give the exact split $P=(\Box_\Phi-k_m^{2})P_T-k_m^{2}P_L$ with $P_L=\tilde\nabla_\Phi\Box_\Phi^{-1}D$ of rank one and $P_T$ of rank three. The determinant is $(\Box_\Phi-k_m^{2})^{3}(-k_m^{2})$, verified to $4.7\times10^{-15}$ in momentum space, and the inverse is $(g_{\mu\nu}-k_\mu k_\nu/k_m^{2})/(k^{2}-k_m^{2}+i\epsilon)$, its indices low like every other, which is the standard Proca propagator.
 
-The exponent three is the three polarizations, and the single factor is the ghost. The ghost's eigenvalue is $-k_m^{2}$ with no derivative in it, so the ghost's contribution is a constant times a phase and cancels in every normalised correlator; in the Euclidean section the eigenvalues are $m^{2}$ and $N+m^{2}$ and both are positive. The one-loop effective action is three times a scalar's. At $k_m=0$ the longitudinal eigenvalue vanishes, the integral becomes the gauge volume, and the Faddeev–Popov construction is what the Maxwell integral needs and the Proca one does not; the massless limit exists on conserved sources only, with the longitudinal term growing as $1/k_m^{2}$ for a non-conserved one.
+The exponent three is the three polarizations, and the single factor is the ghost. The ghost's eigenvalue is $-k_m^{2}$ with no derivative in it, so the ghost's contribution is a constant times a phase and cancels in every normalised correlator; in the Euclidean section the eigenvalues are $m^{2}$ and $p^{2}+m^{2}$ and both are positive. The one-loop effective action is three times a scalar's. At $k_m=0$ the longitudinal eigenvalue vanishes, the integral becomes the gauge volume, and the Faddeev–Popov construction is what the Maxwell integral needs and the Proca one does not; the massless limit exists on conserved sources only, with the longitudinal term growing as $1/k_m^{2}$ for a non-conserved one.
 
 The saddle is the classical field, whose transverse part propagates and whose longitudinal part does not, and whose divergence satisfies $-k_m^{2}D\tilde A_\Phi^{\mathrm{cl}}=D\tilde J_\Phi$. The integral adds the frame-free split, the exactness of the ghost, and the statement that the mass is what makes the integral exist. It adds no value.
 
@@ -245,7 +245,7 @@ The saddle is the classical field, whose transverse part propagates and whose lo
 | $\det P=(\Box_\Phi-k_m^{2})^{3}(-k_m^{2})$ | The determinant; the cube is the polarization count |
 | $\frac{g_{\mu\nu}-k_\mu k_\nu/k_m^{2}}{k^{2}-k_m^{2}+i\epsilon}$ | The propagator; the standard Proca form, indices low |
 | $-k_m^{2}$ | The longitudinal eigenvalue; the ghost |
-| $m^{2}$, $N+m^{2}$ | The Euclidean eigenvalues; both positive |
+| $m^{2}$, $p^{2}+m^{2}$ | The Euclidean eigenvalues; both positive |
 | $\tilde J_\Phi P^{-1}\tilde J_\Phi$ | The source's image; the longitudinal term is $1/k_m^{2}$ |
 
 ## Further Reading

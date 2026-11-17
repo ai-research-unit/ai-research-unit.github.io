@@ -160,7 +160,7 @@ which is one linear condition on the four amplitudes and it is the Lorenz plane.
 
 **The chart's letters and the amplitude's components are related by a change of basis and not by a transform.** The word's four parameters are a polar decomposition of the same four numbers, so the Lorenz condition is one equation in either set. **The transform does not enter this section at all**, and the section is included only to record that the chart's own constraint and the form companion's kernel are one object.
 
-**What the chart adds is the reading of the condition as a transport equation.** The parent identifies $S$ with $\partial_\mu(ru^\mu)$ on the timelike branch — the field's own current's conservation, in the flow's own density — and that is *The Spin-One Fluid*'s reading. **In frequency space the same conservation is the vanishing of $[kA]$, which is algebraic**, and the fluid's continuity equation becomes a single linear condition on a mode. The two readings are one equation, and the frequency-space one is the weaker statement: it holds for a mode and says nothing about a general field.
+**What the chart adds is the reading of the condition as a transport equation.** The parent identifies $S$ with $\sum_\mu\partial_\mu(ru_\mu)$ on the timelike branch — the field's own current's conservation, in the flow's own density — and that is *The Spin-One Fluid*'s reading. **In frequency space the same conservation is the vanishing of $[kA]$, which is algebraic**, and the fluid's continuity equation becomes a single linear condition on a mode. The two readings are one equation, and the frequency-space one is the weaker statement: it holds for a mode and says nothing about a general field.
 
 ## Limits
 

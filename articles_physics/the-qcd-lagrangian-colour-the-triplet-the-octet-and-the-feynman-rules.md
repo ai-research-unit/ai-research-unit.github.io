@@ -200,14 +200,14 @@ with the ghost $c^a$ in the adjoint representation: eight of them, one per gener
 | Line | Factor |
 |---|---|
 | Gluon $ab$, $\mu\nu$ | $\dfrac{-i\delta^{ab}}{k^2+i\epsilon}\left[\delta_{\mu\nu}-(1-\zeta)\dfrac{k_\mu k_\nu}{k^2}\right]$ |
-| Quark $ij$ | $\dfrac{i\left(\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu+m\right)_{ij}}{k^2-m^2+i\epsilon}$ |
+| Quark $ij$ | $\dfrac{i\left(m-\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu\right)_{ij}}{k^2-m^2+i\epsilon}$ |
 | Ghost $ab$ | $\dfrac{i\delta^{ab}}{k^2+i\epsilon}$ |
 
 **Vertices.**
 
 | Vertex | Colour factor | Lorentz structure |
 |---|---|---|
-| Quark–gluon | $T^a_{ij}$ | $ig_s\varepsilon_\mu\gamma_\mu$ |
+| Quark–gluon | $T^a_{ij}$ | $-ig_s\varepsilon_\mu\gamma_\mu$ |
 | Three-gluon | $g_sf^{abc}$ | $(p_1-p_2)_\rho\delta_{\mu\nu}+(p_2-p_3)_\mu\delta_{\nu\rho}+(p_3-p_1)_\nu\delta_{\rho\mu}$ |
 | Four-gluon | $-ig_s^2$ times the group combination of the display below | $\delta_{\mu\rho}\delta_{\nu\sigma}-\delta_{\mu\sigma}\delta_{\nu\rho}$ with the two permutations |
 | Ghost–gluon | $-g_sf^{abc}$ | $p_\mu$, with $p$ the momentum of the incoming antighost |
@@ -225,10 +225,10 @@ $$
 **The quark–gluon vertex, in one line.** The interaction term in the quark piece is
 
 $$
-+g_s\sum_{a,\mu}\varepsilon_\mu\bar\psi\gamma_\mu T^aG^a_\mu\psi ,
+-g_s\sum_{a,\mu}\varepsilon_\mu\bar\psi\gamma_\mu T^aG^a_\mu\psi ,
 $$
 
-with the sign from $\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu\right)\left(-ig_sT^aG^a_\mu\right)=+g_s\sum_\mu\varepsilon_\mu\gamma_\mu T^aG^a_\mu$. The vertex is $i$ times this coefficient with the fields removed, so it is $ig_s\varepsilon_\mu\gamma_\mu T^a_{ij}$.
+with the sign from $\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu\right)\left(-ig_sT^aG^a_\mu\right)=+g_s\sum_\mu\varepsilon_\mu\gamma_\mu T^aG^a_\mu$. The vertex is $i$ times this coefficient with the fields removed, so it is $-ig_s\varepsilon_\mu\gamma_\mu T^a_{ij}$.
 
 **The three-gluon vertex, in three lines.** Expanding $-\frac14\sum GG$ and keeping the terms with one field strength linear in the field and two powers of the field,
 
@@ -247,7 +247,7 @@ and the tensor is totally antisymmetric under the exchange of any two legs toget
 **The check that fixes the sign.** The rule above reproduces the tree-level Ward identity
 
 $$
-\sum_\alpha p_{1\alpha}\,\Gamma_{\alpha\beta\gamma}(p_1,p_2,p_3)=g_sf^{abc}\Big[\Pi_{\beta\gamma}(p_2)-\Pi_{\beta\gamma}(p_3)\Big] ,
+p_{1\alpha}\,\Gamma_{\alpha\beta\gamma}(p_1,p_2,p_3)=g_sf^{abc}\Big[\Pi_{\beta\gamma}(p_2)-\Pi_{\beta\gamma}(p_3)\Big] ,
 \qquad
 \Pi_{\mu\nu}(k)=k_\mu k_\nu-k^2\delta_{\mu\nu} ,
 $$
@@ -376,7 +376,7 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $R$ | $\sigma(e^+e^-\to\text{hadrons})/\sigma(e^+e^-\to\mu^+\mu^-)$ |
 | $\Pi_{\mu\nu}(k)$ | $k_\mu k_\nu-k^2\delta_{\mu\nu}$, the tree inverse propagator |
 | $p_1,p_2,p_3$ | Incoming momenta of the three gluon legs, $p_1+p_2+p_3=0$ |
-| $\gamma_\mu$ | Dirac matrices, written low; the quark propagator is $i(\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu+m_f)/(k^2-m_f^2+i\epsilon)$ |
+| $\gamma_\mu$ | Dirac matrices, written low; the quark propagator is $i(m_f-\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu)/(k^2-m_f^2+i\epsilon)$ |
 | $m_f$ | Mass of quark flavour $f$, a parameter imported from the Yukawa sector |
 | $Q_f$ | Electric charge of flavour $f$, in units of $e$ |
 | $b_0$ | One-loop coefficient of the beta function, $b_0=\frac{11}{3}C_A-\frac43T_RN_f$ |

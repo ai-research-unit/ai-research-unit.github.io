@@ -114,7 +114,7 @@ and the multiplier enters the direction's equation as $\lambda u_\mu$, which is 
 
 **The action.** $\mathcal L=\frac12[(\partial r)^{2}-(u\cdot\partial r)^{2}]-\frac{r^{2}}{4}\omega^{2}-\sum_{\mu,\nu}\varepsilon_\mu r\,\omega_{\mu\nu}\partial_\mu r\,u_\nu+\frac{k_m^{2}}{2}r^{2}$, with $A=ru$ and $u^{2}=-1$.
 
-**The mass term.** It removes the gauge freedom, supplies the Lorenz condition, and in the fluid's variables that condition is continuity $\partial_\mu(ru^\mu)=0$. One term, four statements.
+**The mass term.** It removes the gauge freedom, supplies the Lorenz condition, and in the fluid's variables that condition is continuity $\sum_\mu\partial_\mu(ru_\mu)=0$. One term, four statements.
 
 **The variations.** The density's is the field equation's longitudinal part, the direction's its transverse part, and the Lorenz condition is their consequence by $\partial\partial F=0$.
 

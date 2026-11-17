@@ -198,7 +198,7 @@ $$
 
 1. **The field is the current.** $A_\mu=r u_\mu$, so the density is the field's own norm and the velocity its own direction. No bilinear, no separate construction.
 2. **The density is positive wherever the chart exists.** $r=\sqrt{-A^{2}}>0$ by construction, and it cannot vanish: the chart fails first, on the lightlike set. The scalar fluid can be zero at a point; this one cannot.
-3. **The continuity equation is the Lorenz condition.** $\partial_\mu(ru^\mu)=0$ is not an analogue of continuity but the condition itself, and it removes one of the four parameters, leaving the three helicities.
+3. **The continuity equation is the Lorenz condition.** $\sum_\mu\partial_\mu(ru_\mu)=0$ is not an analogue of continuity but the condition itself, and it removes one of the four parameters, leaving the three helicities.
 4. **The acceleration is kinematic, not dynamical.** $a_\mu=-\nabla_\mu\ln r-E_\mu/r$ holds for every potential of the form $A=ru$, whether or not it solves anything. The dynamics is in the closure of §*The Correspondence, Compared with the Other Two*.
 5. **It carries a stiff pressure.** $p=\epsilon=\tfrac12m^{2}r^{2}$ and the sound speed is $c$, read off the density-gradient force and confirmed by projecting the mass term of the stress.
 6. **It carries a transverse force that no other field fluid has.** $E_\mu/r$ is the only non-gradient force in the three cases, and it is what makes the flow non-geodesic.
@@ -321,7 +321,7 @@ $$
 
 **The Proca word is a two-factor word, and read as fluid data it gives a scale, a direction and a sign.** The scale is the field's own norm, the direction is the field's own direction, and the sign is the branch. Four parameters for four components, exactly, and the lightlike set is outside the chart.
 
-**The potential is the current, which is true of no other field in the block.** $A_\mu=ru_\mu$, so the Lorenz condition is $\partial_\mu(ru^\mu)=0$ and is the continuity equation outright. There is no choice of which density is conserved, and no bilinear to compute.
+**The potential is the current, which is true of no other field in the block.** $A_\mu=ru_\mu$, so the Lorenz condition is $\sum_\mu\partial_\mu(ru_\mu)=0$ and is the continuity equation outright. There is no choice of which density is conserved, and no bilinear to compute.
 
 **The Euler equation carries two forces.** The gradient of the density's logarithm is the pressure force of a stiff fluid, $p=\epsilon=\tfrac12m^{2}r^{2}$, and the field strength along the flow is the only non-gradient force in any of the three field fluids. An irrotational flow is geodesic; a flow that accelerates does so because its field strength is not the density gradient.
 

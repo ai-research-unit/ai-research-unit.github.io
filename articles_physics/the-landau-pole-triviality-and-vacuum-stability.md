@@ -288,7 +288,7 @@ and the triviality ceiling is $144$ GeV. The allowed window for absolute stabili
 **What [the renormalisation-group article](the-renormalization-group-in-biquaternionic-form.html) supplies, and what it does not.** That article establishes three things this one uses:
 
 - **The flow equation is exact and the regulator is an input.** The Wetterich equation holds for any admissible $R_\eta$, and $R_\eta$ is not determined by the theory. So the trajectory $\Gamma_\eta$ depends on the scheme, while the physics does not.
-- **The algebra supplies a canonical home for the regulator.** The wave biquaternion's norm $\langle\tilde P_\Phi\rangle_\natural=-k^2$ is a *central* element, so the shell variable $k^2$ has an algebraic home, which is the one constructive thing the framework contributes to the renormalisation group.
+- **The algebra supplies a canonical home for the regulator.** The wave biquaternion's norm $\langle\tilde P_\Phi\rangle_\natural=N$ is a *central* element, so the shell variable $N$ has an algebraic home, which is the one constructive thing the framework contributes to the renormalisation group.
 - **The regulator cannot assign the sectors different scales.** It is a sharp cutoff on the central norm, and it is diagonal in the two sectors but common to both.
 
 **The consequence for this article, which is a defect rather than a feature.** The quantities computed here span an enormous range of scales in one sector and a different range in another:

@@ -155,7 +155,7 @@ The term is the axial current multiplying the axial slot action on the field. It
 $$\Bigl((\nabla_t\tilde{Ξ})\vec e_x+\sum_\eta\vec e_\eta(\nabla_\eta\tilde{Ξ})\vec e_y\Bigr)+\frac{3\kappa}{8}\sum_\eta\varepsilon_\eta A_\eta\,\vec e_\eta\tilde{Ξ}\vec e_z\vec e_y=k_m\tilde{Ξ},$$
 with $A_0=0$, and the two parts are read separately.
 
-**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_k^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_k^2=\Delta_\Phi$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
+**Why the square is the d'Alembertian.** The three spatial slots composed with one another give $+\partial_\eta^2$ on each diagonal and cancel in pairs off it, so the square of the two-sided action restricted to the plane's space is $+\sum_\eta\partial_\eta^2=\Delta_\Phi$, the spatial part of $\Box$. The eliminated equation therefore has a square that is a wave operator, and no sign in it is chosen by hand.
 
 ## The Local Channels and Their Sectors
 
@@ -280,7 +280,7 @@ $$
 
 A single product $L_{a}R_{b}$ is a pure tensor $a\otimes b$; the single products form a seven-dimensional cone, of rank at most one, and a general element of the algebra is a sum of at most four of them.
 
-The axial basis operators are the products of a generator and the chirality basis operator: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}\cdot L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z\vec e_x}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article **is** the $-\sum_\mu\varepsilon_\mu\left(\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\gamma_5\tilde{Ξ}\right)\gamma_\mu\gamma_5\tilde{Ξ}$ of the torsion literature.
+The axial basis operators are the products of a generator and the chirality basis operator: $c^{(5)}_\mu=\gamma_\mu\gamma_5$, since $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}\cdot L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z\vec e_x}=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_y}$ is exactly $c^{(5)}_0$, and the three spatial products agree the same way. That is the dictionary entry the sources need: the Hehl–Datta term of this article **is** the $\left(\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\gamma_\mu\gamma_5\tilde{Ξ}\right)\gamma_\mu\gamma_5\tilde{Ξ}$ of the torsion literature.
 
 $\gamma_5$ is the reference-frame basis operator of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
 

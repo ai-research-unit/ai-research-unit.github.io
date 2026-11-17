@@ -77,12 +77,12 @@ The chiral algebra is checked directly: $\{\gamma_5,\gamma_\mu\}=0$ for all four
 ### The Coupling
 
 $$
-m\,\Psi^{\dagger}\gamma^{0}\Psi
+m\,\Psi^{\dagger}\gamma_{0}\Psi
 =m\bigl(\xi^{\dagger}\eta+\eta^{\dagger}\xi\bigr)
 =2m\,\mathrm{Re}\bigl(\xi^{\dagger}\eta\bigr).
 $$
 
-The bilinear is off-diagonal in the two halves: it pairs $\xi$ with $\eta$ and $\eta$ with $\xi$, and it never pairs a half with itself. The verification: with $\xi=(1,0)$ and $\eta=(0.3+0.2i,0.5)$ the bilinear $\Psi^{\dagger}\gamma^{0}\Psi$ is $0.600000000$, and $2\mathrm{Re}(\xi^{\dagger}\eta)$ is $0.600000000$.
+The bilinear is off-diagonal in the two halves: it pairs $\xi$ with $\eta$ and $\eta$ with $\xi$, and it never pairs a half with itself. The verification: with $\xi=(1,0)$ and $\eta=(0.3+0.2i,0.5)$ the bilinear $\Psi^{\dagger}\gamma_{0}\Psi$ is $0.600000000$, and $2\mathrm{Re}(\xi^{\dagger}\eta)$ is $0.600000000$.
 
 So the mass is a **coupling** and not a self-energy: it has no diagonal part at all.
 
@@ -190,7 +190,7 @@ This article stops at the carrier and the coupling. The equation itself — the 
 
 ## Summary
 
-A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma^{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\eta)$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the rate at which one chirality converts into the other, with frequency $k_m=mc/\hbar$, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.
+A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two inequivalent spinor representations and is, in the algebra, the algebra itself as a four-dimensional complex space. The mass term is the off-diagonal bilinear $m\Psi^{\dagger}\gamma_{0}\Psi=2m\mathrm{Re}(\xi^{\dagger}\eta)$, verified to vanish on the diagonal and to pair the two halves, and it is parity-allowed because parity exchanges the halves. In the field equations the mass is the rate at which one chirality converts into the other, with frequency $k_m=mc/\hbar$, and the massless limit decouples the two. Chirality is the $\gamma^{5}$ eigenvalue and coincides with helicity only for a massless particle. The Majorana option is the antilinear self-pairing, available for a single Weyl spinor and physically realised, and it is a different pairing from the Dirac one, built on a different real structure.
 
 ## Summary of Notation
 

@@ -482,7 +482,7 @@ What it does not settle is everything the frame and the connection already faile
 
 The coupling written above is the standard one: the flat equation with the rigid material frame replaced by the frame and the partial derivative by the one-sided Lorentz-covariant derivative. An external source shows that this standard coupling carries an ambiguity the corpus has not recorded, and that the ambiguity sits exactly where the frame and the connection enter.
 
-**Frame caveat.** The two Dirac equations below are quoted in the source's generator basis and in the source's index positions, with the frame index of $\mathsf G^a$ and of $\omega_\mu{}^b{}_a$ raised where the source raises it; $\mathsf G^a$ is the source's own letter for its four generator basis operators, drawn in its own display, and it corresponds to the four frame basis operators this article writes out. Elsewhere this article writes every label low. The source's basis is not the material frame of Route Two. The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure*, is a dictionary, not an identity: it is the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $e_t\mapsto I$, $\vec e_x\mapsto\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$, $\vec e_y\mapsto\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $\vec e_z\mapsto\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, and $i\mapsto-iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
+**Frame caveat.** The two Dirac equations below are quoted in the source's generator basis and in the source's index positions, with the frame index of $\mathsf G_a$ and of $\omega_{\mu b a}$ raised where the source raises it; $\mathsf G_a$ is the source's own letter for its four generator basis operators, drawn in its own display, and it corresponds to the four frame basis operators this article writes out. Elsewhere this article writes every label low. The source's basis is not the material frame of Route Two. The comparison map of *Matrix Representations Conventions*, §*The Clifford Structure*, is a dictionary, not an identity: it is the $\mathbb{R}$-algebra isomorphism onto the **even** part, with $e_t\mapsto I$, $\vec e_x\mapsto\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$, $\vec e_y\mapsto\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}$, $\vec e_z\mapsto\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}$, and $i\mapsto-iR_{\mathrm{axf},\vec e_x}\,iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y}\,iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$. Its image contains no vector. Vectors are reached only by multiplying by the fixed odd generator,
 $$
 e_{\mathrm{inf},a}\longmapsto\,iR_{\mathrm{axf},\vec e_x}\times(\text{the basis operator of }e_{\mathrm{inf},a}),
 \qquad
@@ -495,29 +495,29 @@ i\,e_{\mu a}\,\mathsf G_a\,\partial/\partial x_\mu
 $$
 because the map carries the fixed factor $iR_{\mathrm{axf},\vec e_x}$ and $i\cdot i=-1$. The fixed $iR_{\mathrm{axf},\vec e_x}$ is a generator, not part of the derivative; the derivative is the biquaternion-valued $F_{\mathrm{inf},\mu}\partial/\partial x_\mu$. The article's own operator $\tilde F_\mu D_\mu$ is built from the material frame, while the basis operator transcription in this section is built from the informational frame. The fixed generator and $\partial/\partial r'_t=i\partial/\partial R_t$ relate the two, so they are not term-by-term identical, and the substitution of $\tilde F_\mu$ for the frame vector $F_{\mathrm{inf},\mu}=e_{\mu a}e_{\mathrm{inf},a}$ is not a rename. In the chiral-pair form the fixed generator drops out, and the kinetic structure is $F_{\mathrm{inf},\mu} D_\mu\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$.
 
-J. Fredsted, *Obtaining consistent Lorentz gauging for a gravitationally coupled fermion* (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial x_\mu \to D_\mu$ and the Euler–Lagrange variation **do not commute**. Write $S^{cd}=\tfrac14[\mathsf G^c,\mathsf G^d]$ for the raised spin generator. Varying the gauged action gives the covariant Dirac operator
+J. Fredsted, *Obtaining consistent Lorentz gauging for a gravitationally coupled fermion* (arXiv:1906.12200v3 [physics.gen-ph], 2019), proves that for a Dirac fermion coupled to gravity in the vierbein formulation the substitution $\partial/\partial x_\mu \to D_\mu$ and the Euler–Lagrange variation **do not commute**. Write $S_{cd}=\tfrac14[\mathsf G_c,\mathsf G_d]$ for the raised spin generator. Varying the gauged action gives the covariant Dirac operator
 $$
 E_{\mathrm{grav}} =
-\bigl(i\,e^\mu{}_a\,\mathsf G^a\,\partial/\partial x_\mu-m\bigr)\tilde{Ξ}
-+\tfrac{i}{2}\bigl(\nabla_\mu e^\mu{}_a\bigr)\mathsf G^a\tilde{Ξ}
-+\tfrac{i}{4}e^\mu{}_a\,\omega_{\mu cd}\{\mathsf G^a,S^{cd}\}\tilde{Ξ} ,
+\bigl(i\,e_{\mu a}\,\mathsf G_a\,\partial/\partial x_\mu-m\bigr)\tilde{Ξ}
++\tfrac{i}{2}\bigl(\nabla_\mu e_{\mu a}\bigr)\mathsf G_a\tilde{Ξ}
++\tfrac{i}{4}e_{\mu a}\,\omega_{\mu cd}\{\mathsf G_a,S_{cd}\}\tilde{Ξ} ,
 $$
 while substituting the same replacement into the flat equation of motion gives
 $$
 \tilde E_{\Phi,\mathrm{grav}} =
-\bigl(i\,e^\mu{}_a\,\mathsf G^a\,\partial/\partial x_\mu-m\bigr)\tilde{Ξ}
-+\tfrac{i}{2}e^\mu{}_a\,\omega_{\mu cd}\mathsf G^aS^{cd}\tilde{Ξ} ,
+\bigl(i\,e_{\mu a}\,\mathsf G_a\,\partial/\partial x_\mu-m\bigr)\tilde{Ξ}
++\tfrac{i}{2}e_{\mu a}\,\omega_{\mu cd}\mathsf G_aS_{cd}\tilde{Ξ} ,
 $$
-and the two do not differ by an anticommutator. Using $\{\mathsf G^a,S^{cd}\}=2\mathsf G^aS^{cd}-[\mathsf G^a,S^{cd}]$, the product form in the substituted equation is half the anticommutator plus half the commutator. The anticommutator coefficient therefore matches the variation's $\tfrac{i}{4}$, and the difference is the commutator term alone:
+and the two do not differ by an anticommutator. Using $\{\mathsf G_a,S_{cd}\}=2\mathsf G_aS_{cd}-[\mathsf G_a,S_{cd}]$, the product form in the substituted equation is half the anticommutator plus half the commutator. The anticommutator coefficient therefore matches the variation's $\tfrac{i}{4}$, and the difference is the commutator term alone:
 $$
 E_{\mathrm{grav}}-\tilde E_{\Phi,\mathrm{grav}}
-=\tfrac{i}{2}\bigl(\nabla_\mu e^\mu{}_a\bigr)\mathsf G^a\tilde{Ξ}
--\tfrac{i}{4}e^\mu{}_a\,\omega_{\mu cd}[\mathsf G^a,S^{cd}]\tilde{Ξ}
-=\tfrac{i}{2}\bigl(\nabla_\mu e^\mu{}_a\bigr)\mathsf G^a\tilde{Ξ}
--\tfrac{i}{2}e^\mu{}_b\,\omega_\mu{}^b{}_a\mathsf G^a\tilde{Ξ}
-=i\bigl(\nabla_\mu e^\mu{}_a\bigr)\mathsf G^a\tilde{Ξ} ,
+=\tfrac{i}{2}\bigl(\nabla_\mu e_{\mu a}\bigr)\mathsf G_a\tilde{Ξ}
+-\tfrac{i}{4}e_{\mu a}\,\omega_{\mu cd}[\mathsf G_a,S_{cd}]\tilde{Ξ}
+=\tfrac{i}{2}\bigl(\nabla_\mu e_{\mu a}\bigr)\mathsf G_a\tilde{Ξ}
+-\tfrac{i}{2}e_{\mu b}\,\omega_{\mu b a}\mathsf G_a\tilde{Ξ}
+=i\bigl(\nabla_\mu e_{\mu a}\bigr)\mathsf G_a\tilde{Ξ} ,
 $$
-where the middle equality uses $[\mathsf G^a,S^{cd}]=g^{ac}\mathsf G^d-g^{ad}\mathsf G^c$ and the antisymmetry of $\omega_{\mu cd}$, and the last uses the source's frame identity $\tfrac{i}{2}(\nabla_\mu e^\mu{}_a)\mathsf G^a=-\tfrac{i}{2}e^\mu{}_b\omega_\mu{}^b{}_a\mathsf G^a$. Both surviving terms are grade one: the trivector parts of the two equations agree, and the mismatch is a vector connection term — the derivative of the frame — not a trivector. The source reads the mismatch as a violation of the equivalence principle, since the action-derived equation $E_{\mathrm{grav}}$ must take precedence over the substituted one $\tilde E_{\Phi,\mathrm{grav}}$. For an internal gauge force the two procedures agree, because the internal generators commute with the generator basis operator; gravity is exceptional, and the reason is that $[\mathsf G^c,S^{ab}]$ is a linear combination of the four generator basis operators with coefficients $(V^{ab})_c{}^d$ rather than zero.
+where the middle equality uses $[\mathsf G_a,S_{cd}]=\delta_{ac}\mathsf G_d-\delta_{ad}\mathsf G_c$ and the antisymmetry of $\omega_{\mu cd}$, and the last uses the source's frame identity $\tfrac{i}{2}(\nabla_\mu e_{\mu a})\mathsf G_a=-\tfrac{i}{2}e_{\mu b}\omega_{\mu b a}\mathsf G_a$. Both surviving terms are grade one: the trivector parts of the two equations agree, and the mismatch is a vector connection term — the derivative of the frame — not a trivector. The source reads the mismatch as a violation of the equivalence principle, since the action-derived equation $E_{\mathrm{grav}}$ must take precedence over the substituted one $\tilde E_{\Phi,\mathrm{grav}}$. For an internal gauge force the two procedures agree, because the internal generators commute with the generator basis operator; gravity is exceptional, and the reason is that $[\mathsf G_c,S^{ab}]$ is a linear combination of the four generator basis operators with coefficients $(V^{ab})_c{}^d$ rather than zero.
 
 The corpus's curved equation is the substitution form. The section above writes $\tilde F_{\mu} D_{\mu}\tilde{Ξ} = 0$ and the chiral pair $\tilde F_{\mu} D_{\mu}\tilde{Ξ}_{R} =k_m\tilde{Ξ}_{L}$, $(\tilde F_{\mu} D_{\mu})^{\natural}\tilde{Ξ}_{L} =k_m\tilde{Ξ}_{R}$ by replacing the rigid material frame and the partial derivative, and the article supplies no action for the coupled system whose variation could be compared with them. So this article does not take a side in the ambiguity. What the external source establishes is that the side matters: the corpus has been writing one of two inequivalent forms without saying which.
 

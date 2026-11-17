@@ -68,7 +68,7 @@ $$
 E = \frac{1}{2}m\left(d\zeta/dt'\right)^{2} + \frac{1}{2}m\omega^2\zeta^2 ,
 $$
 
-and it is conserved, $dE/dt' = 0$, by the equation of motion. With $t'=r'_t/c$ the derivative is against the time; in the normalized variables $x = \zeta$ and $p = md\zeta/dt'$ it reads $E = \lvert\vec p\rvert^{2}/(2m) + \tfrac12 m\omega^2x^2$, and in the amplitude normalization below it will take the compact form $\tfrac12 m\omega^2|a|^2$. The energy is a real scalar; its placement in the algebra is the subject of the section "Energy and the Hermitian Form".
+and it is conserved, $dE/dt' = 0$, by the equation of motion. With $t'=r'_t/c$ the derivative is against the time; in the normalized variables $x = \zeta$ and $p = md\zeta/dt'$ it reads $E = p^2/(2m) + \tfrac12 m\omega^2x^2$, and in the amplitude normalization below it will take the compact form $\tfrac12 m\omega^2|a|^2$. The energy is a real scalar; its placement in the algebra is the subject of the section "Energy and the Hermitian Form".
 
 ## The Complex Amplitude and the Centre
 

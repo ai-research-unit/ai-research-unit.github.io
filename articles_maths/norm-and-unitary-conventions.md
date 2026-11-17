@@ -8,6 +8,8 @@ The norm is not one object across the layers. The complex, split-complex, dual, 
 
 The order is: the norm reading of the four letters, the qualified regular and degenerate, the six layer tables, the unitary convention, and the letters $U$ and $u$ outside the layers. The article assumes the products and the forms of *Product and Form Conventions*, and it is assumed in turn by the calculus of *Operator and Calculus Conventions*.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## The Norm Convention
 
 **One letter, two arities.** The four letters $P$, $N$, $H$ and $\mathrm{Kr}$ fixed in *Product and Form Conventions* name each form with two arguments and the corresponding algebraic norm with one: $P(\tilde Q)$ is the plain norm, $N(\tilde Q)$ the quaternionic, $H(\tilde Q)$ the Hermitian and $\mathrm{Kr}(\tilde Q)$ the Krein, and the bracket of the same subscript does the same. This article reads that second arity.

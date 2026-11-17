@@ -8,6 +8,8 @@ The order follows the reading. The four norms are named by one letter each, with
 
 The article states conventions only; the existence and uniqueness of the word are proved in *The Polar Decomposition of an N-Regular Biquaternion*, and the pairings in *The Polar Decomposition and Its Three Pairings*.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## The Four Algebraic Norms and the Unitary Convention
 
 **The definition of a norm.** The norm of a form is that form read at its two equal arguments,

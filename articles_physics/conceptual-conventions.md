@@ -14,6 +14,8 @@
 
 **How a concept is presented.** The prose argues one claim from the start. Sentences are short, active, and carry one idea each. Every claim carries a warrant: a proof, a check, or a stated reading of the conventions. The vocabulary is plain and consistent from article to article. There is no filler and no flourish.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## Unpreferred Concepts
 
 Each concept below is used somewhere in the corpus, and each one brings something the algebra does not contain. The list names the defect. An unpreferred concept is admitted as a display when the article that prints it declares the missing piece once, at the head of the display.

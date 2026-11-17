@@ -8,6 +8,8 @@ The special elements are read after the base because their case rule is the case
 
 The article assumes *Algebra and Element Conventions*, whose §*The Conjugations* fixes the star that the Hermitian idempotent uses, and it is assumed by *Matrix Representations Conventions*, whose §*The 4×4 Regular Representation* writes the canonical frame in the standard pair and its mixed units.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## The Special Elements: Root, Idempotent and Nilpotent
 
 **The special glyphs are notational.** A root $\tilde{Ζ}$, an idempotent $\tilde\Pi$ or a nilpotent $\tilde\nu$ is not a different kind of object from a generic $\tilde Q$: the glyph records what the element is known to be, at the point of use.

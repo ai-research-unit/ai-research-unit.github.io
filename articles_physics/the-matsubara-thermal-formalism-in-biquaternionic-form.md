@@ -94,7 +94,7 @@ and the corresponding thermal wave biquaternion is the material element $\tilde 
 
 The angle is $\theta_{\mathrm{mat}}=\omega_n\tau$: the Matsubara frequency $\omega_n=2\pi n/\mathcal B$ is real and the interval $\tau$ is real, so the angle is real.
 
-**The propagator in the material sector.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=N+m^{2}$ at the material wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p\in\mathbb{B}_{\Phi}$. On the thermal grid the frequency sits along the imaginary scalar direction, $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, and the denominator is the Hermitian form of that element,
+**The propagator in the material sector.** In the framework the Lorentzian propagator's denominator is the mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}=-p^2+m^2$ at the material wave biquaternion $\tilde P_{\Phi}=i(E/c)e_t+\vec p\in\mathbb{B}_{\Phi}$. On the thermal grid the frequency sits along the imaginary scalar direction, $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, and the denominator is the Hermitian form of that element,
 $$
 \boxed{\;\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\lvert i\omega_n\rvert^2+\lvert\vec p\rvert^2=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2 ,
 \qquad

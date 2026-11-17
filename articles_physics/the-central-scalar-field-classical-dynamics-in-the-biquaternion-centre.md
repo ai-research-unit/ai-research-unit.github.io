@@ -14,7 +14,7 @@ Four results are established.
 $$
 S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\,\xi\right]d^4r
 $$
-has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k^2+c^2(k_m)^{2}$ and range $\hbar/(mc)$. Here $\hbar/(mc)$ is the mass length.
+has the Euler–Lagrange equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, where $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is central and scalar, so the equation acts on the single scalar component. The free field obeys $(\Box-(k_m)^{2})\tilde{Ξ}=0$, with dispersion $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and range $\hbar/(mc)$. Here $\hbar/(mc)$ is the mass length.
 - **The static central solution.** A point source of strength $Ϙ$ gives the Yukawa field $\tilde{Ξ}=gQ\,\exp(-r/\hbar/(mc))/(4\pi r)\,e_t$, whose massless limit is the $1/r$ potential $gQ/(4\pi r)$.
 - **The field energy.** The static field's energy is positive and diverges at a point source, $E_{\text{field}}=2\pi A^2/a$ outside a sphere of radius $a$ in the massless case, with $A=gQ/(4\pi)$; the divergence is the classical self-energy of the point-source idealization.
 - **The reduction to the central-force problem.** A test source of coupling $g_{\mathrm t}$ has interaction energy $E(r)=-\kappa \exp(-r/\hbar/(mc))/r$ with $\kappa=g\,g_{\mathrm t}Ϙ/(4\pi)>0$, a central potential of the type solved in the sibling article; in the massless limit $E=-\kappa/r$ and the orbit is exactly the precessing conic of that article.
@@ -110,13 +110,13 @@ $$
 
 Here $\theta_{\mathrm{pwp}}:=\vec k_\Phi\cdot\vec r-\omega r'_t/c\in\mathbb{R}$ is the plane-wave angle: $\omega$ and $\vec k_\Phi$ are real, so the exponent is $i$ times a real number and the wave form is $\exp(i\theta_{\mathrm{pwp}})$ wherever it is quoted.
 
-with the central phase $\exp(i\theta_{\mathrm{pwp}})$ understood as multiplication by a central element. Because $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ acts on it as $\omega^2/c^2-k^2$, the free equation requires the **dispersion relation**
+with the central phase $\exp(i\theta_{\mathrm{pwp}})$ understood as multiplication by a central element. Because $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ acts on it as $\omega^2/c^2-k_\Phi^{2}$, the free equation requires the **dispersion relation**
 
 $$
-\omega^2=c^2k^2+c^2(k_m)^{2}=c^2k^2+c^2(k_m)^{2} .
+\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}=c^2k_\Phi^{2}+c^2(k_m)^{2} .
 $$
 
-The wave speed is frequency-dependent and exceeds $c$ for every finite $\hbar/(mc)$, $\omega/k=c\sqrt{1+(k_m)^{2}/k^2}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.
+The wave speed is frequency-dependent and exceeds $c$ for every finite $\hbar/(mc)$, $\omega/k_\Phi=c\sqrt{1+(k_m)^{2}/k_\Phi^{2}}>c$: the field is dispersive, and the phase velocity is not the signal velocity. The front velocity is $c$, since the second-order hyperbolic equation has the same characteristic cone as the wave equation; the cone is the framework's zero-divisor cone, the subject of the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*. The classical statement is that a disturbance cannot be signalled faster than $c$, whatever the phase velocity.
 
 ### The Range of the Field
 
@@ -339,7 +339,7 @@ S=\int\left[-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\
 \qquad \hbar/(mc),
 $$
 
-has the field equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box$ central and scalar. The free field is dispersive with $\omega^2=c^2k^2+c^2(k_m)^{2}$ and has range $\hbar/(mc)$.
+has the field equation $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho\,e_t$, with $\Box$ central and scalar. The free field is dispersive with $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ and has range $\hbar/(mc)$.
 
 A static point source of strength $Ϙ$ produces the Yukawa field
 
@@ -375,7 +375,7 @@ The complex field carries the algebra's central phase $\tilde{Ξ}\mapsto \exp(i\
 | $\hbar/(mc)$ | The mass length, $\hbar/(mc)$; its reciprocal $k_m$ is the inverse range, and classically only $\hbar/(mc)$ matters |
 | $\mathcal{L}=-\tfrac12\sum_\mu\partial/\partial R_\mu\,\xi\,\partial/\partial R_\mu\,\xi-\tfrac12(k_m)^{2}\xi^2+g\rho\xi$ | Real scalar Lagrangian |
 | $(\Box-(k_m)^{2})\tilde{Ξ}=-g\rho e_t$ | Field equation with source |
-| $\omega^2=c^2k^2+c^2(k_m)^{2}$ | Dispersion relation of the free field |
+| $\omega^2=c^2k_\Phi^{2}+c^2(k_m)^{2}$ | Dispersion relation of the free field |
 | $G_{\hbar/(mc)}=\exp(-r/\hbar/(mc))/(4\pi r)$ | Screened Green's function; $(\Delta_\Phi-(k_m)^{2})G_\mu=-\delta^{(3)}$ |
 | $Ϙ,\rho,g,g_{\mathrm t}$ | Source strength, source density, field coupling, test coupling |
 | $\tilde{Ξ}=gQ\exp(-r/\hbar/(mc))/(4\pi r)\,e_t$ | Yukawa field of a point source; $gQ/(4\pi r)\,e_t$ for $mc/\hbar=0$ |

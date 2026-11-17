@@ -94,10 +94,10 @@ On a plane wave the same action is the momentum form
 
 $$
 \tilde X\longmapsto i\frac{E_{\vec p}}{c}\,\tilde X\vec e_x-i\sum_\eta  p_\eta\,\vec e_\eta\tilde X\vec e_y,
-\qquad\text{whose square is } -N ,
+\qquad\text{whose square is } p^{2} ,
 $$
 
-with $p_0=E_{\vec p}/c$ and $p_\eta$ the physical momentum components, and $N=\langle\tilde P_\Phi\rangle_{\natural}=-p_0^{2}+\lvert\vec p\rvert^{2}$ the norm of the four-momentum, so that $N=-m^{2}\,c^{2}$ on the mass shell. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_\eta/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\eta\vec e_\eta\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box$ and to $-N$ respectively, the second equal to $-m^{2}c^{2}$ on the mass shell.
+with $p_0=E_{\vec p}/c$ and $p_\eta$ the physical momentum components, so that $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$. The lower index of $p_\mu$ is a label and not a metric contraction: the signs are carried by $\varepsilon$. That sign vector is what the plane wave produces. On $\exp(-i\theta_{\mathrm{pwp}})$ the time derivative gives $-iE_{\vec p}/(\hbar c)$ and the spatial derivatives $+ip_\eta/\hbar$, so the time term contributes $i\frac{E_{\vec p}}{c}\tilde X\vec e_x$ and the spatial terms $-ip_\eta\vec e_\eta\tilde X\vec e_y$. On the material sector the derivative action and the momentum action square to $\Box$ and to $p^2$ respectively, the second equal to $m^{2}c^{2}$ on the mass shell.
 
 Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
@@ -553,12 +553,12 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Sc}(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x)$ | Dirac pairing; equals $\bar{\tilde{Ξ}}\tilde{Ξ}$ |
 | $e_\mu$ | Basis unit: $e_t$ for $\mu=t$, $\vec e_\eta$ for $\mu=k$ |
 | $\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$ | Massless action of the pair read on one element; its square is $\Box$ |
-| $\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$ | The same action on a plane wave; its square is $-N$ |
+| $\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$ | The same action on a plane wave; its square is $p^2$ |
 | $\mathcal{L}$ | Dirac Lagrangian density of the two lines |
 | $\pi=\partial\mathcal{L}/\partial(\partial\tilde{Ξ}/\partial r'_t)=i\tilde{Ξ}^*$ | Conjugate momentum; $\pi-i\tilde{Ξ}^*\approx0$ is second class |
 | $\tilde{Ξ}_{\pm}^{(r)}(\vec p)$ | Parent article's positive- and negative-frequency element amplitudes |
 | $X,Y,\vec r_{12}=X-Y$ | Spatial points and their separation |
-| $p_\mu=(E_{\vec p},\vec p)$, $N=-p_0^{2}+\vec p^{2}=-m^{2}\,c^{2}$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
+| $p_\mu=(E_{\vec p},\vec p)$, $p^2=p_0^2-\vec p^2=m^{2}\,c^{2}$ | Four-momentum, mass shell; the index labels, $\varepsilon$ carries the signs |
 | $\varepsilon=(+1,-1,-1,-1)$ | Sign vector of the momentum label in the plane-wave action |
 | $\tilde P_{\Phi}$, $\tilde R_\Phi$ | Wave biquaternion and four-position biquaternion of the parent article |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Biquaternionic mass-shell condition |

@@ -37,7 +37,7 @@ linear in momentum and vanishing at $\vec p = 0$: the bands touch at the Dirac p
 $$
 H = v_F\,\boldsymbol{\sigma}\cdot\vec p + \mathcal{G}_{\mathrm{gap}}\,\sigma_z ,
 \qquad
-E = \pm\sqrt{v_F^{2}\lvert\vec p\rvert^{2} + \mathcal{G}_{\mathrm{gap}}^2},
+E = \pm\sqrt{v_F^2p^2 + \mathcal{G}_{\mathrm{gap}}^2},
 $$
 
 which is the Dirac equation with rest mass $m = \mathcal{G}_{\mathrm{gap}}/v_F^2$.

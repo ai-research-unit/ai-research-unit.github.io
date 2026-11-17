@@ -189,7 +189,7 @@ $$
 **Divide by $\hbar$ and the quantum has disappeared from the equation.** What is left is
 
 $$
-E=\frac{\lvert\vec p\rvert^{2}}{2m}+V ,
+E=\frac{p^{2}}{2m}+V ,
 $$
 
 the classical energy–momentum relation, with $E=\hbar\omega$ and $p=\hbar k_{\Phi}$. One point of bookkeeping, because the corpus counts energy from a different zero: $\omega$ here is the non-relativistic frequency, measured from the rest energy. Written against $k_{t}^{\prime}=E/(\hbar c)$, which includes the rest energy, the same symbol reads
@@ -197,7 +197,7 @@ the classical energy–momentum relation, with $E=\hbar\omega$ and $p=\hbar k_{\
 $$
 k_{t}^{\prime}-k_{m}-\frac{k_{\Phi}^{2}}{2k_{m}}=0
 \quad\longleftrightarrow\quad
-E-m\,c^{2}=\frac{\lvert\vec p\rvert^{2}}{2m}+V ,
+E-m\,c^{2}=\frac{p^{2}}{2m}+V ,
 $$
 
 the corpus's ladder obtaining it by dividing the rest clock out, $e^{i\theta_{\mathrm{pha}}}=e^{-i\theta_{\mathrm{rst}}}\chi$, with $\theta_{\mathrm{pha}}=\phi$ the phase of the polar form, real because it is an argument. The two displays say the same thing, and a reader who drops $k_{m}$ is off by the rest energy.
@@ -206,13 +206,13 @@ The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real
 
 **This is the one place in the corpus where the wave arm is not a level set of a norm.** The symbol above is affine: one term linear in $k_{t}^{\prime}$ beside a term quadratic in $k_{\Phi}$. Every quaternion norm is homogeneous of degree two in all four slots, so no element of $\mathbb{B}$ has that symbol as its norm, and the Schrödinger operator cannot be written as $\tilde K\tilde K^{\natural}$ for any single $\tilde K$. The exact root of the relativistic condition is $k_{t}^{\prime}=\sqrt{k_{\Phi}^{2}+k_{m}^{2}}$, and the parabola touches the hyperbola to second order with the quartic error $-k_{\Phi}^{4}/(8k_{m}^{3})$: at $k_{\Phi}/k_{m}=0.01$ the exact difference is $-1.2499\times10^{-9}k_{m}$ against $-1.2500\times10^{-9}k_{m}$ from the leading term, a relative agreement of $5\times10^{-5}$. The surface is therefore strictly timelike and touches the light cone nowhere. **The particle arm survives untouched; the wave arm becomes a level set of an affine symbol, and reading that level set as a mass shell is an approximation whose first correction is quartic.**
 
-**The statement is exact and it is also a warning.** The relation $E=\lvert\vec p\rvert^{2}/(2m)+V$ is true of a classical particle, of a plane wave, and of every mode of the quantum field. What distinguishes the quantum case is not the relation but what the relation constrains: a single point in one case, a field carrying a superposition in the other. The relation is the alphabet, not the sentence.
+**The statement is exact and it is also a warning.** The relation $E=p^{2}/(2m)+V$ is true of a classical particle, of a plane wave, and of every mode of the quantum field. What distinguishes the quantum case is not the relation but what the relation constrains: a single point in one case, a field carrying a superposition in the other. The relation is the alphabet, not the sentence.
 
 **Three checks, on periodic data with $N=64$ samples and the modes $k_{\Phi}=2$ and $k_{\Phi}=6$.** The equation $i\partial_{t}\psi+\tfrac{1}{2}\partial_{x}^{2}\psi=0$ holds to $4.1\times10^{-14}$ relative, which is the substitution $i\omega\mapsto-\tfrac{1}{2}k_{\Phi}^{2}$ verified as an operator identity on the modes. A Gaussian packet of width $2$ and mean wave number $k_{\Phi,0}=1$, propagated by the exact free kernel, tracks $\langle x\rangle-\langle x\rangle_{0}=k_{\Phi,0}t$ to $6.3\times10^{-12}$ after one width of travel and to $2.7\times10^{-11}$ after four, which is the group velocity $\partial\omega/\partial k_{\Phi}=k_{\Phi,0}/m$ read off the centroid. The residual of the equation itself is at the same level, $10^{-16}$.
 
 **One check with the mass kept, on a torus where the three numbers are commensurate.** Take $k_{m}=4$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=5$ is on shell, and the symbol of $\Box-k_{m}^{2}$ vanishes on it exactly: $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-16=-k_{m}^{2}$, so $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}=0$. The mode $k_{\Phi}=3$, $k_{t}^{\prime}=4$ is off shell and the same symbol is $-9$, which is exactly the eigenvalue of $\Box-k_{m}^{2}$ on it, while the mode's own norm is $-7$. The same holds at $k_{\Phi}=6$, $k_{t}^{\prime}=10$, $k_{m}=8$, where $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-64$ and $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}=0$. The level set is not an approximation: on commensurate modes the arithmetic is exact, and the integers are $3,4,5$.
 
-**The last check is the classical relation in motion.** The centroid moves at the group velocity because the dispersion relation is quadratic, and a quadratic dispersion relation is the statement $E=\lvert\vec p\rvert^{2}/(2m)$ differentiated. A reader who wants the classical equation back does not need to take a limit; the derivation is one differentiation of the algebraic relation the transform already produced.
+**The last check is the classical relation in motion.** The centroid moves at the group velocity because the dispersion relation is quadratic, and a quadratic dispersion relation is the statement $E=p^{2}/(2m)$ differentiated. A reader who wants the classical equation back does not need to take a limit; the derivation is one differentiation of the algebraic relation the transform already produced.
 
 **The relativistic case is the same move with a different symbol, and it is the cleanest instance of the gradient arm.** Take the Klein–Gordon equation $\left(\Box-k_{m}^{2}\right)\tilde\Xi=0$. The gradient's form is $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}$ and the fixed level is $-k_{m}^{2}$, so the transform gives one equation between numbers,
 
@@ -326,7 +326,7 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 
 **The transform is the switch between them.** It turns the divergence into the dot product $\omega\tilde\rho-\vec k_{\Phi}\cdot\tilde{\vec J}=0$, verified to $4.4\times10^{-17}$, and it turns the operator into the number $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}-k_{m}^{2}$, verified to $1.0\times10^{-13}$ on the massless cone and exactly on the commensurate modes $3,4,5$.
 
-**The Schrödinger case is the elementary instance, and the one exception.** One substitution gives $E=\lvert\vec p\rvert^{2}/(2m)+V$ from $i\hbar\partial_{t}\psi=H\psi$, with the operator identity closing at $4.1\times10^{-14}$ and the group velocity read off a packet centroid to $6.3\times10^{-12}$. Its symbol is affine rather than quadratic, so here the wave arm is a level set of an affine function and reading it as a mass shell costs a quartic correction.
+**The Schrödinger case is the elementary instance, and the one exception.** One substitution gives $E=p^{2}/(2m)+V$ from $i\hbar\partial_{t}\psi=H\psi$, with the operator identity closing at $4.1\times10^{-14}$ and the group velocity read off a packet centroid to $6.3\times10^{-12}$. Its symbol is affine rather than quadratic, so here the wave arm is a level set of an affine function and reading it as a mass shell costs a quartic correction.
 
 **The transcription is algebraic exactly when the coefficients are constant.** Constancy, not centrality, is the boundary: a constant non-central potential passes through and merely translates the shell, a varying coefficient gives a convolution and no multiplier, and a periodic one gives a finite matrix.
 

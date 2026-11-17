@@ -40,7 +40,7 @@ $$
 -\sum_\mu X_\mu Y_\mu = X\cdot Y ,
 $$
 
-where the right-hand side is contracted with the other text's metric $(+,-,-,-)$. $X_0$ is the physical temporal component, and $X_t=iX_0$.
+where the right-hand side is contracted with the metric $(+,-,-,-)$ of the interval, $X_0$ is the physical temporal component, and $X_t=iX_0$.
 
 **The proof.** The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_\eta X_kY_k$, so the sum $\sum_\mu X_\mu Y_\mu$ equals $-X_0Y_0+\sum_\eta X_kY_k$ and the leading minus makes the left-hand side $X_0Y_0-\sum_\eta X_kY_k$. On the right, the text's contraction carries the metric $(+,-,-,-)$, which puts a minus on each spatial term, so $X\cdot Y=X_0Y_0-\sum_\eta X_kY_k$. The two sides are the same expression.
 

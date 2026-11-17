@@ -6,6 +6,8 @@ These are the conventions of the central map and of the special elements. The ce
 
 The article assumes the base and the subspaces of *Algebra and Element Conventions* and the norms of *Norm and Pairing Conventions*, where a class is defined by a norm.
 
+**No contravariant index appears in this article, and none appears anywhere in the series.** The one metric is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$; a metric that is the identity raises nothing, so a raised index would name the same index twice. Every coefficient is written low, every contraction is written as a sum with the weight $\sum_\mu\varepsilon_\mu$, and no letter carries a raised spacetime index, in a display, in a table or in a definition.
+
 ## The Central Map and Its Restrictions
 
 The scalar imaginary $i$ is central, so multiplication by it is **one** $\mathbb{C}$-linear map of the algebra, and the movements the series reads in four places are its restrictions to the subspaces. The generator satisfies $(ie_t)^2=-e_t$, so its powers close on four values and the group $\exp(i\theta_{\mathrm{cen}})e_t$ of the centre interpolates between them. The remarkable subspaces carry the restrictions.

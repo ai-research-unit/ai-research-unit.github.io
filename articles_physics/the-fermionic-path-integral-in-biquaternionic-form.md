@@ -105,7 +105,7 @@ one gradient per part, and each line composed with the conjugate of the other is
 $$
 i\hbar\tilde K_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p ,
 \qquad
--\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\frac{E^2}{c^2}-|\vec p|^{2}=-N ,
+-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=\frac{E^2}{c^2}-|\vec p|^{2}=p^{2} ,
 $$
 
 with $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$ the wave biquaternion. The derivatives bring $-E$ from the time coordinate, through $\partial/\partial R_t=-i\partial/\partial r'_t$ followed by $\partial/\partial r'_t\to-iE$, and $+ip_\eta$ from each spatial one. The two lines on a plane wave are therefore
@@ -114,7 +114,7 @@ $$
 \big(w_L,w_R\big)\longmapsto\big(i\hbar\tilde K_{\Phi}\,w_R,\ -i\hbar\tilde K_{\Phi}^{\natural}w_L\big),
 $$
 
-and the composition of the two returns $-N$ times the identity: each component is left multiplication by an element whose product with its conjugate is the scalar $-N$, and the two orders of the pair agree. The square of the element is not the scalar, $-\tilde K_{\Phi}^{2}=E^2+|\vec p|^{2}-2E\,i\vec p$: its scalar part is $E^2+|\vec p|^{2}$ rather than $-N$, and its vector part does not cancel. Only the composition with the conjugate returns $-N$.
+and the composition of the two returns $p^2$ times the identity: each component is left multiplication by an element whose product with its conjugate is the scalar $p^2$, and the two orders of the pair agree. The square of the element is not the scalar, $-\tilde K_{\Phi}^{2}=E^2+|\vec p|^{2}-2E\,i\vec p$: its scalar part is $E^2+|\vec p|^{2}$ rather than $p^2$, and its vector part does not cancel. Only the composition with the conjugate returns $p^2$.
 
 The transcription is a candidate, not a derivation: the parent article is explicit that the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde\nabla_\Phi\tilde{Ξ}$, $\tilde{Ξ}$, their conjugates and the trace or norm pairing — is *not* fixed by the algebra alone, and that the transcription above is the working setting. The path integral inherits that status: everything below is exact for it, and the question of which $\mathbb{B}$-intrinsic action it corresponds to is open, exactly as it is in the parent.
 
@@ -221,24 +221,24 @@ to machine precision (ratio $1+0i$), and the four two-point amplitudes divided b
 
 ### The Biquaternion Form of the Kernel
 
-Write the wave biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$. The symbol of the pair on the plane wave $\exp\!\big(-i(E/(\hbar c))r'_t+i(\vec p/\hbar)\cdot\vec r\big)$ is the left multiplication by $i\tilde K_{\Phi}=i\tilde P_{\Phi}$ of §*The Two Lines on the Algebra*, with $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-N$, so the two lines composed give $-N$ times the identity, and the kernel of the pair at momentum $p$ is the companion lines divided by $-(N+m^{2}c^{2})$, which is the standard $(\text{line}+mc)/\bigl(-(N+m^{2}c^{2})\bigr)$. The Gaussian weight of the finite-mode section carries the mass-shifted pair with the minus sign $-i$, so the free two-point amplitude is the action
+Write the wave biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$. The symbol of the pair on the plane wave $\exp\!\big(-i(E/(\hbar c))r'_t+i(\vec p/\hbar)\cdot\vec r\big)$ is the left multiplication by $i\tilde K_{\Phi}=i\tilde P_{\Phi}$ of §*The Two Lines on the Algebra*, with $-\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=p^2$, so the two lines composed give $p^2$ times the identity, and the kernel of the pair at momentum $p$ is the companion lines divided by $p^2-m^{2}c^{2}$, which is the standard $(\text{line}+mc)/(p^2-m^{2}c^{2})$. The Gaussian weight of the finite-mode section carries the mass-shifted pair with the minus sign $-i$, so the free two-point amplitude is the action
 
 $$
-S_F(p)=-\frac{i\big(\tilde P_{\Phi}\,w_R+imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L+imc\,w_R\big)}{N+m^{2}\,c^{2}-i\epsilon}.
+S_F(p)=\frac{i\big(\tilde P_{\Phi}\,w_R+imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L+imc\,w_R\big)}{p^2-m^{2}\,c^{2}+i\epsilon}.
 $$
 
-The propagator companion writes its own amplitude as $\mathcal{A}_p+mc$ over the same denominator, with $\mathcal{A}_p$ an action whose energy term multiplies $\vec e_x$ on the right and whose momentum terms multiply $\vec e_\eta$ on the left and $\vec e_y$ on the right, and the symbol here is the left action of the gradient on each part of the pair. The two are not the same map, and they share the pole set because the square of each is multiplication by $-N$. Written with the invertibles, the numerator has its two imaginary units multiplied to $-1$ and becomes
+The propagator companion writes its own amplitude as $\mathcal{A}_p+mc$ over the same denominator, with $\mathcal{A}_p$ an action whose energy term multiplies $\vec e_x$ on the right and whose momentum terms multiply $\vec e_\eta$ on the left and $\vec e_y$ on the right, and the symbol here is the left action of the gradient on each part of the pair. The two are not the same map, and they share the pole set because the square of each is multiplication by $p^2$. Written with the invertibles, the numerator has its two imaginary units multiplied to $-1$ and becomes
 
 $$
 S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P_{\Phi}\,w_R-imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-imc\,w_R\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
 $$
 
-its denominator being $N+m^{2}c^{2}-i\epsilon$; multiplying numerator and denominator by $-1$ returns the preceding form.
+its denominator being $-p^2+m^{2}c^{2}-i\epsilon$; multiplying numerator and denominator by $-1$ returns the preceding form.
 
-The determinant is therefore that of the operator whose inverse is $S_F$ up to the overall $i$ that the Minkowski weight carries, with the deformed mass-shell denominator; the deformation lies along the $i r'_t$ axis of the material sector. Each line composed with the conjugate of the other is the d'Alembertian, so the two lines on a plane wave have eigenvalues $\pm\mu$ with $\mu^{2}=-N$, in four opposite pairs, and each pair contributes $(\mu-k_m)(-\mu-k_m)=k_m^{2}-\mu^2$. The determinant is thus the fourth power of the scalar mode factor,
+The determinant is therefore that of the operator whose inverse is $S_F$ up to the overall $i$ that the Minkowski weight carries, with the deformed mass-shell denominator; the deformation lies along the $i r'_t$ axis of the material sector. Each line composed with the conjugate of the other is the d'Alembertian, so the two lines on a plane wave have eigenvalues $\pm\mu$ with $\mu^2=p^2$, in four opposite pairs, and each pair contributes $(\mu-k_m)(-\mu-k_m)=k_m^{2}-\mu^2$. The determinant is thus the fourth power of the scalar mode factor,
 
 $$
-\det\big(\Box-k_m^{2}\big)=\big(N+m^{2}\,c^{2}\big)^4
+\det\big(\Box-k_m^{2}\big)=\big(p^2-m^{2}\,c^{2}\big)^4
 =\exp\Big[4\!\int\frac{d^4p}{(2\pi\hbar)^4}\,\ln\big(\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon\big)\Big],
 $$
 
@@ -356,7 +356,7 @@ $$
 S_F(p):\ (w_L,w_R)\,\longmapsto\frac{\big(\tilde P_{\Phi}\,w_R-imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-imc\,w_R\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
 $$
 
-with the two imaginary units of the numerator multiplied to $-1$. The determinant of the pair is $(N+m^{2}\,c^{2})^4$, which is $\det(\Box-k_m^{2})$ on the same carrier, because each line composed with its partner is $-N$, so the eigenvalues are $\pm\mu$ in four opposite pairs and each pair contributes $m^2-\mu^2$.
+with the two imaginary units of the numerator multiplied to $-1$. The determinant of the pair is $(p^2-m^{2}\,c^{2})^4$, which is $\det(\Box-k_m^{2})$ on the same carrier, because each line composed with its partner is $p^2$, so the eigenvalues are $\pm\mu$ in four opposite pairs and each pair contributes $m^2-\mu^2$.
 
 For an antisymmetric quadratic form the integral is a Pfaffian: $\int d\tilde{Ξ}\,\exp(-\frac12\tilde{Ξ} A\tilde{Ξ})=\mathrm{Pf}(A)$ and $\mathrm{Pf}^2=\det A$, both recomputed (the first to $10^{-16}$, the second to $5\times10^{-16}$). This is the algebra's real-structure pairing at work: $\flat$ makes available the field-to-its-own-conjugate pairing, the measure normalizes it, and the sign is a convention rather than an algebra invariant. The Wick rotation turns the oscillatory weight into a decaying one, and the thermal integral is a determinant with antiperiodic boundary conditions, $\tilde{Ξ}(\tau+\beta)=-\tilde{Ξ}(\tau)$; the identity $e^{i\theta_{\mathrm{pwt}}}=-1$ is exact for every integer $n$ and equivalent to $\omega_n=(2n+1)\pi/\beta$.
 
@@ -379,11 +379,11 @@ The algebra contributes the centrality of the phase, the sector location of the 
 | $\langle\tilde{Ξ}_{a}\tilde{Ξ}_{b}^{\dagger}\rangle=(M^{-1})_{ab}$ | Two-point function (inverse kernel, stated index order); the adjoint's right multiplication cancels from the ratio |
 | $Z[\eta,\bar\eta]=\det M\,\exp[-\bar\eta M^{-1}\eta]$ | Free generating functional in the Minkowski weight; the Euclidean one carries $+\bar\eta M^{-1}\eta$ |
 | $Z_0[\eta,\bar\eta]=\det(\Box-k_m^{2})\exp[-\int\bar\eta S_F\eta]$ | Field-level free functional |
-| $i\hbar\tilde K_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p$, $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-N$ | Symbol of the gradient on a plane wave |
-| $(w_L,w_R)\mapsto(i\hbar\tilde K_{\Phi}\,w_R,-i\hbar\tilde K_{\Phi}^{\natural}w_L)$ | The two lines on a plane wave; their composition is $-N$ times the identity, with $N=-\frac{E^{2}}{c^{2}}+|\vec p|^{2}$ |
+| $i\hbar\tilde K_{\Phi}=i\tilde P_{\Phi}=-\frac{E}{c}\,e_t+i\vec p$, $-\hbar^{2}\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=p^2$ | Symbol of the gradient on a plane wave |
+| $(w_L,w_R)\mapsto(i\hbar\tilde K_{\Phi}\,w_R,-i\hbar\tilde K_{\Phi}^{\natural}w_L)$ | The two lines on a plane wave; their composition is $p^2$ times the identity, with $p^2=\frac{E^2}{c^2}-|\vec p|^{2}$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, as two first-order lines on a pair of elements of $\mathbb{B}$, with the material gradient on each; each line composed with its partner is $\Box$, and the same pair read at $r'_t=-i\tau$ is the same two lines |
 | $S_F(p):\ (w_L,w_R)\mapsto\frac{(\tilde P_{\Phi}\,w_R-imc\,w_L,\ \tilde P_{\Phi}^{\natural}w_L-imc\,w_R)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}$ | Kernel; the two imaginary units of the numerator multiply to $-1$ |
-| $\det(\Box-k_m^{2})=(N+m^{2}\,c^{2})^4$ | Determinant; the four opposite eigenvalue pairs of the two lines give the fourth power of the scalar mode factor |
+| $\det(\Box-k_m^{2})=(p^2-m^{2}\,c^{2})^4$ | Determinant; the four opposite eigenvalue pairs of the two lines give the fourth power of the scalar mode factor |
 | $\int d\tilde{Ξ}_{2N}\cdots d\tilde{Ξ}_{1}\,\exp(-\frac12\tilde{Ξ} A\tilde{Ξ})=\mathrm{Pf}(A)$, $\mathrm{Pf}^2=\det A$ | Pfaffian for an antisymmetric form |
 | $\flat=-{}^{*}$ | Real structure; makes the field-to-conjugate pairing available |
 | $\exp(iS)\to \exp(-S_{\mathrm{E}})$ | Wick rotation ($i r'_t$ direction becomes real) |
