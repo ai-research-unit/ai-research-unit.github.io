@@ -32,16 +32,27 @@ $$
 
 **The name.** This four-factor word is the **complete polar decomposition** of the biquaternion. *Complete* names the refinement and not the domain: the word carries all four factors at once, one per slot, $1+1+3+3$ real parameters, and each of the three pairings is a regrouping of it rather than a rival reading of the element. The domain is the one of the pair it refines, the $\natural$-regular set, where the boost is positive definite and the central phase lies in its branch; the word does not extend to the null cone, where the general decomposition keeps two factors and the $*$-unitary factor becomes a partial isometry (*The Polar Decomposition of an N-Degenerate Biquaternion*). The corpus cites the word under this name.
 
-The word has a second face, in which the boost and the rotor are written as exponentials:
+The word has a second face, in which the boost and the rotor are written as exponentials. Each of the two unit factors is the exponential of one real parameter along one real unit axis, and the two factors differ in the nature of the axis.
+
+The boost $\tilde U_{\mathrm b}$ is the Hermitian positive definite factor of norm one. Its axis $\vec u_{\mathrm b}$ is a real unit vector and its parameter is the rapidity $\theta_{\mathrm{rpd}}\ge0$, and the imaginary unit in front of the axis makes it a Lorentz boost,
 
 $$
-\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
-\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
+\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr).
 $$
+
+The rotor $\tilde u_{\mathrm r}$ is a unit real quaternion, an element of $SU(2)$. Its axis $\vec u_{\mathrm r}$ is a real unit vector and its parameter is the rotor angle $\theta_{\mathrm{axr}}\in[0,2\pi]$, and the axis enters without an imaginary unit, so the exponential is an ordinary cosine and sine and the factor is a spatial rotation,
+
+$$
+\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr).
+$$
+
+The two exponentials are the two unit factors of the word, and the word reads
 
 $$
 \boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
+
+The boxed equality is the **complete polar decomposition** of the biquaternion in its exponential face. It holds on the $\natural$-regular elements, those with nonzero quaternionic norm $\langle\tilde Q\rangle_{\natural}\neq0$, equivalently on the invertible biquaternions. The scale and the phase are the logarithm and the argument of the modulus. The four factors regroup in three ways, one per pairing, and the table below gives the three usual decompositions.
 
 | reading | form | pairing | factors | real dimensions | available when |
 |---|---|---|---|---|---|
@@ -49,7 +60,7 @@ $$
 | modulus–unit | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=(\varrho e^{i\theta_{\mathrm{pha}}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | Hamilton root | $2$ | $2+6$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ |
 | quaternion | $\tilde Q=(\varrho\tilde u_{\mathrm r})(e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | quaternion | $2$ | $4+4$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real-coefficient part is nonzero |
 
-**Each factor is an exponential.** The boost and the rotor are exponentials of one real parameter along one real unit axis, with the rapidity $\theta_{\mathrm{rpd}}\ge0$ and the rotor angle $\theta_{\mathrm{axr}}\in[0,2\pi]$, while the scale and the phase are the logarithm and the argument of the modulus. The closed forms of §*The Four Factors* compute the same four factors; the exponents display their ranges, and §*The Result in Terms of the Coordinates* gives the seven data that determine them. The four exponents do not add. Their sum is a formal exponent whose exponential misses the element off the normal set, and §*The Logarithm* computes the defect.
+The closed forms of §*The Four Factors* compute the same four factors; the exponents display their ranges, and §*The Result in Terms of the Coordinates* gives the seven data that determine them. The four exponents do not add. Their sum is a formal exponent whose exponential misses the element off the normal set, and §*The Logarithm* computes the defect.
 
 **One theory, two strata.** The existence of the word is a property of the group of invertibles alone. The second invariant, the vector form $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, decides only its shape. Off the wall $B^{2}\neq0$ the element has two distinct eigenvalues and an eigenbasis, and the spectral reading is available. On the wall $B^{2}=0$ the two eigenvalues coalesce, the eigenbasis disappears, and the unit factor is $\pm$unipotent. The word survives the passage to the wall, because it is a decomposition of the group and not of the element. The spectrum does not survive. That contrast is the spine of the article, and it is the reason the two cases are one theory and not two.
 

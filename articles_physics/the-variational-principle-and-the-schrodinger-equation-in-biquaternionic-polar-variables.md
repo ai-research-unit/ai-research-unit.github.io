@@ -402,7 +402,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 | $\tilde\Xi$ | The field: one element of $\mathbb{B}$ |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian, a constant element |
 | $h_t,\ \vec h_\Psi$ | Its scalar and vector parts |
-| $\tilde H_\Phi=-i\tilde H_\Psi$ | $i$ times the observable; the generator, over $\hbar$ |
+| $-i\tilde H_\Psi$ | $i$ times the observable; the generator, over $\hbar$ |
 | $\varrho>0$ | The scale |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The central phase angle |
 | $\theta_{\mathrm{rpd}}\ge0$ | The rapidity of the boost |

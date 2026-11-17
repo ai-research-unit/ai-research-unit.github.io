@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The parent writes the equation and solves it. The transform is the lens that is missing.** *The Schrödinger Equation in Biquaternionic Form* writes $i\hbar\,c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ and gives the flow $\tilde Q(r'_t)=\exp(\tilde H_\Phi r'_t/(\hbar\,c))$. This article takes the transform of that equation and reads what the transform returns: one element of $\mathbb{B}$ in place of one differential operator.
+**The parent writes the equation and solves it. The transform is the lens that is missing.** *The Schrödinger Equation in Biquaternionic Form* writes $i\hbar\,c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ and gives the flow $\tilde Q(r'_t)=\exp(-i\tilde H_\Psi r'_t/(\hbar\,c))$. This article takes the transform of that equation and reads what the transform returns: one element of $\mathbb{B}$ in place of one differential operator.
 
 **The replacement is exact and it costs nothing.** Differentiation in $t'$ becomes multiplication by $-i\omega$, so the operator $i\hbar\,\partial_{t'}-\tilde H_\Psi$ becomes the element $\hbar\omega\,e_t-\tilde H_\Psi$. That element is the symbol. Every statement below is a statement about it, and none of them is a new prediction: the symbol is the parent's equation read at one frequency.
 

@@ -17,17 +17,16 @@ The coefficients $h_t$ and $\vec h_\Psi$ are numbers here: $\tilde H_\Psi$ is an
 Dividing by $i\hbar\,c$ gives the same equation in a second writing, where the generator is the observable multiplied by $-i$ over one real scale,
 
 $$
-\partial/\partial r'_t\,\tilde\Xi = \frac{1}{\hbar\,c}\,\tilde H_\Phi\,\tilde\Xi,
+\partial/\partial r'_t\,\tilde\Xi = \frac{1}{\hbar\,c}\,(-i\tilde H_\Psi)\,\tilde\Xi,
 \qquad
-\tilde H_\Phi = -i\,\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
+-i\,\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
 $$
 
-Dividing by $i\hbar\,c$ is always possible, because $i\hbar\,c$ is a central unit. The centrality of $i$ is what gives the result its content: it makes $i\tilde H_\Psi$ anti-Hermitian, and its negative $\tilde H_\Phi=-i\tilde H_\Psi$ anti-Hermitian too, so the generator of the second writing lies in the material sector $\mathbb{B}_{\Phi}$. The two factors of the generator do different jobs and are written separately: $-i$ moves the observable to the other sector and costs no scale; $1/(\hbar\,c)$ divides by a real number, which changes the unit from an energy to an inverse length and moves nothing between sectors. Collapsing them into $-\frac{i}{\hbar\,c}$ hides that the first factor is exact for every element of the algebra and the second depends on the unit chosen.
+Dividing by $i\hbar\,c$ is always possible, because $i\hbar\,c$ is a central unit. The centrality of $i$ is what gives the result its content: it makes $i\tilde H_\Psi$ anti-Hermitian, and its negative $-i\tilde H_\Psi$ anti-Hermitian too, so the generator of the second writing lies in the material sector $\mathbb{B}_{\Phi}$. The two factors of the generator do different jobs and are written separately: $-i$ moves the observable to the other sector and costs no scale; $1/(\hbar\,c)$ divides by a real number, which changes the unit from an energy to an inverse length and moves nothing between sectors. Collapsing them into $-\frac{i}{\hbar\,c}$ hides that the first factor is exact for every element of the algebra and the second depends on the unit chosen.
 
-The two writings are one equation, and they say different things about it. The first names the observable: it states the dynamics as left multiplication by the Hermitian $\tilde H_\Psi$, and it is the writing in which $\tilde H_\Psi$ is read as an energy. The second names the generator: it states the dynamics as left multiplication by an anti-Hermitian element, and it places that element in the same four-dimensional real space that carries the four-vectors. The generator is written $\tilde H_\Phi/\hbar\,c$: the same letter in the other sector, over one real scale, so the second writing keeps the name of the object it came from. The central $i$ is the canonical isomorphism between the two sectors. Among the roots of $-e_t$ no other supplies one, up to sign. A real multiple $\lambda\,i$ supplies the same isomorphism in another time unit, since $\lambda\,i\hbar\,c\,\partial/\partial r'_t$ is $i\hbar\,c\,\partial/\partial(\lambda^{-1}r'_t)$; and the division by $\hbar\,c$ is not part of the isomorphism at all, which is why it is written beside it and not inside the glyph.
+The two writings are one equation, and they say different things about it. The first names the observable: it states the dynamics as left multiplication by the Hermitian $\tilde H_\Psi$, and it is the writing in which $\tilde H_\Psi$ is read as an energy. The second names the generator: it states the dynamics as left multiplication by an anti-Hermitian element, and it places that element in the same four-dimensional real space that carries the four-vectors. The generator is written $-i\tilde H_\Psi/\hbar\,c$: the observable's own glyph, with the $i$ in front and one real scale beside it, so the second writing keeps the name of the object it came from. The central $i$ is the canonical isomorphism between the two sectors. Among the roots of $-e_t$ no other supplies one, up to sign. A real multiple $\lambda\,i$ supplies the same isomorphism in another time unit, since $\lambda\,i\hbar\,c\,\partial/\partial r'_t$ is $i\hbar\,c\,\partial/\partial(\lambda^{-1}r'_t)$; and the division by $\hbar\,c$ is not part of the isomorphism at all, which is why it is written beside it and not inside the glyph.
 
-The pair $\tilde H_\Psi$, $\tilde H_\Phi$ is one object and the same object multiplied by $i$, and the pair is taken from the single object this article
-carries. This article uses the pair and does not rebuild it; what it adds is the equation in which the two members stand.
+Both writings carry the one element $\tilde H_\Psi$, and the second is the first multiplied by $-i$. This article uses that multiplication and does not rebuild it; what it adds is the equation in which the two readings stand.
 
 Three things in and around $\mathbb{B}$ play the role of $i$, and only one of them is the $i$ of the two writings above. Confusing them produces equations that look like the Schrödinger equation and do not preserve the trace. The first section separates them by role and decides which one the writings use.
 
@@ -95,13 +94,13 @@ The relation $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ is the algebraic content
 $$
 (i\tilde H_\Psi)^{*} = \tilde H_\Psi^{*} i^{*} = \tilde H_\Psi\,(-i) = -i\tilde H_\Psi,
 \qquad\text{and}\qquad
-(\tilde H_\Phi)^{*}=(-i\tilde H_\Psi)^{*}=\tilde H_\Psi^{*}(-i)^{*}=\tilde H_\Psi\,i=i\tilde H_\Psi=-\tilde H_\Phi.
+(-i\tilde H_\Psi)^{*}=\tilde H_\Psi^{*}(-i)^{*}=\tilde H_\Psi\,i=i\tilde H_\Psi.
 $$
 
-So $\tilde H_\Phi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto \tilde H_\Phi=-i\tilde H_\Psi$ is a real-linear isomorphism $\mathbb{B}_{\Psi} \to \mathbb{B}_{\Phi}$ with inverse $\tilde{Q} \mapsto i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. The sign is the one the multiplication by $i$ fixes, $\tilde X_\Psi=i\tilde X_\Phi$, read backwards. For example, with $\tilde H_\Psi = i\,\vec e_x$ (Hermitian, since
-$(i\vec e_x)^{*} = i\vec e_x$), one has $\tilde H_\Phi=-i\,(i\vec e_x)=\vec e_x$, and $\vec e_x$ is anti-Hermitian because $(\vec e_x)^{*} = -\vec e_x$.
+So $-i\tilde H_\Psi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto -i\tilde H_\Psi$ is a real-linear isomorphism $\mathbb{B}_{\Psi} \to \mathbb{B}_{\Phi}$ with inverse $\tilde{Q} \mapsto i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. The sign is the one the multiplication by $i$ fixes, $i\tilde X_\Phi$, read backwards. For example, with $\tilde H_\Psi = i\,\vec e_x$ (Hermitian, since
+$(i\vec e_x)^{*} = i\vec e_x$), one has $-i\,(i\vec e_x)=\vec e_x$, and $\vec e_x$ is anti-Hermitian because $(\vec e_x)^{*} = -\vec e_x$.
 
-**This computation is the second writing.** The generator of the second writing is $\tilde H_\Phi/\hbar\,c$, and the computation above is the one that supplies $\tilde H_\Phi$: anti-Hermitian because $i$ is central and $i^{*}=-i$, and left anti-Hermitian by the division by the real $\hbar\,c$. An anti-Hermitian generator exponentiates to a $*$-unitary flow, because conjugation reverses the sign of the exponent, so the exponential of an anti-Hermitian element and its conjugate are mutual inverses. The two writings therefore carry one equation. The first multiplies by the Hermitian observable $\tilde H_\Psi$. The second multiplies by $\tilde H_\Phi=-i\tilde H_\Psi$, divided by the real unit $\hbar\,c$. The two differ by the central $i$ and by one real number.
+**This computation is the second writing.** The generator of the second writing is $-i\tilde H_\Psi/\hbar\,c$, and the computation above is the one that supplies the factor $-i\tilde H_\Psi$: anti-Hermitian because $i$ is central and $i^{*}=-i$, and left anti-Hermitian by the division by the real $\hbar\,c$. An anti-Hermitian generator exponentiates to a $*$-unitary flow, because conjugation reverses the sign of the exponent, so the exponential of an anti-Hermitian element and its conjugate are mutual inverses. The two writings therefore carry one equation. The first multiplies by the Hermitian observable $\tilde H_\Psi$. The second multiplies by $-i\tilde H_\Psi$, divided by the real unit $\hbar\,c$. The two differ by the central $i$ and by one real number.
 
 ## The Field Is One Element of the Algebra
 
@@ -179,10 +178,10 @@ $$
 
 where $i$ is the scalar imaginary and $\hbar$ is the reduced Planck constant. Because $i$ is central, $i\tilde H_\Psi=\tilde H_\Psi i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}$ is an algebra, $\tilde H_\Psi\tilde{Ξ}\in\mathbb{B}$ for constant $\tilde H_\Psi$: the equation is consistent in the carrier, and no ideal is needed for the consistency. A coefficient containing $\nabla$ differentiates the coefficients of $\tilde{Ξ}$ and multiplies no element on the left, so it changes nothing about the carrier.
 
-**Solution.** Since $\tilde H_\Phi=-i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi$ and the scalar and vector parts commute,
+**Solution.** Since $-i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi$ and the scalar and vector parts commute,
 
 $$
-\boxed{\;\tilde Q(r'_t) = \exp\!\left(\frac{\tilde H_\Phi\,r'_{t}}{\hbar\,c}\right)
+\boxed{\;\tilde Q(r'_t) = \exp\!\left(-\frac{i\tilde H_\Psi\,r'_{t}}{\hbar\,c}\right)
 = \exp\!\left(-i\frac{\tilde H_\Psi\,r'_{t}}{\hbar\,c}\right)
 = \exp(-i\theta_{\mathrm{evo}})\left(\cos\theta\,e_t + \sin\theta\,\vec u_\Psi\right),
 \qquad
@@ -197,17 +196,16 @@ $$
 = 2\,\mathrm{Sc}\!\left(\tilde{Ξ}(0)^{*}\tilde{Ξ}(0)\right).
 $$
 
-Differentiating the solution gives $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} =i\hbar\,c(\frac{\tilde H_\Phi}{\hbar\,c})\tilde{Ξ} = i\tilde H_\Phi\tilde{Ξ} = i(-i\tilde H_\Psi)\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$, so it is the required solution.
+Differentiating the solution gives $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} =i\hbar\,c\bigl(-\frac{i\tilde H_\Psi}{\hbar\,c}\bigr)\tilde{Ξ} = i(-i\tilde H_\Psi)\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$, so it is the required solution.
 
-**This is the second writing.** The exponent of the solution is $\frac{\tilde H_\Phi}{\hbar\,c}r'_t$, and its coefficient is the generator of the second writing; the equivalent form $-\frac{i}{\hbar\,c}\tilde H_\Psi r'_t$ is the same coefficient written with the switch undone. The $*$-unitarity of $\tilde Q$ is the statement that this coefficient is anti-Hermitian. The conservation of $2\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ is therefore not an extra postulate about $\tilde Q$; it is the anti-Hermiticity of the material-sector element, which is what the second writing displays.
+**This is the second writing.** The exponent of the solution is $-\frac{i\tilde H_\Psi}{\hbar\,c}r'_t$, and its coefficient is the generator of the second writing. The $*$-unitarity of $\tilde Q$ is the statement that this coefficient is anti-Hermitian. The conservation of $2\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ is therefore not an extra postulate about $\tilde Q$; it is the anti-Hermiticity of the material-sector element, which is what the second writing displays.
 
 **Case checked.** For $\tilde H_\Psi = i\,\vec e_x$ one has $h_t = 0$, $\vec h_\Psi = \vec e_x$, and $\tilde Q(r'_t) = \cos(\frac{r'_t}{\hbar\,c})e_t + \sin(\frac{r'_t}{\hbar\,c})\vec e_x$. Then $\tilde Q(r'_t)$ is $*$-unitary, and $\tilde H_\Psi\tilde Q = i \vec e_x(\cos(\frac{r'_t}{\hbar\,c})e_t + \sin(\frac{r'_t}{\hbar\,c})\vec e_x) = i\cos(\frac{r'_t}{\hbar\,c})\vec e_x - i\sin(\frac{r'_t}{\hbar\,c})e_t$ equals $i\hbar\,c\,\frac{d\tilde{Q}}{dr'_{t}}= i(-\sin(\frac{r'_t}{\hbar\,c})e_t + \cos(\frac{r'_t}{\hbar\,c})\vec e_x)$, term by term. This case was chosen independently of the general formula and confirms it.
 
-**Consistency with the density matrix.** The companion article's equation follows from the field equation. For $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}$, differentiating and using $\partial/\partial r'_t\tilde{Ξ} = \frac{\tilde H_\Phi}{\hbar\,c}\tilde\Xi$ and $\partial/\partial r'_t\tilde{Ξ}^{*} =\frac{i}{\hbar\,c}\tilde\Xi^{*}\tilde H_\Psi$ (valid because $\tilde H_\Psi^{*} = \tilde H_\Psi$) gives
+**Consistency with the density matrix.** The companion article's equation follows from the field equation. For $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}$, differentiating and using $\partial/\partial r'_t\tilde{Ξ} = -\frac{i\tilde H_\Psi}{\hbar\,c}\tilde\Xi$ and $\partial/\partial r'_t\tilde{Ξ}^{*} =\frac{i}{\hbar\,c}\tilde\Xi^{*}\tilde H_\Psi$ (valid because $\tilde H_\Psi^{*} = \tilde H_\Psi$) gives
 
 $$
-\boxed{\;\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = \frac{1}{\hbar\,c}\tilde H_\Phi\tilde{Ϛ}_{\Psi} -\frac{1}{\hbar\,c}\tilde{Ϛ}_{\Psi}\tilde H_\Phi
-= \frac{1}{\hbar\,c}[\tilde H_\Phi,\tilde{Ϛ}_{\Psi}]
+\boxed{\;\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = -\frac{i}{\hbar\,c}\tilde H_\Psi\tilde{Ϛ}_{\Psi} +\frac{i}{\hbar\,c}\tilde{Ϛ}_{\Psi}\tilde H_\Psi
 = -\frac{i}{\hbar\,c}[\tilde H_\Psi,\tilde{Ϛ}_{\Psi}],
 \qquad\text{i.e.}\qquad i\hbar\,c\,\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [\tilde H_\Psi,\tilde{Ϛ}_{\Psi}]\;},
 $$
@@ -225,14 +223,14 @@ which is real because the symbol is Hermitian, and which reduces in the matrix p
 The second writing puts the derivative alone on the left and the generator on the right,
 
 $$
-\partial/\partial r'_t\,\tilde{Ξ} = \frac{1}{\hbar\,c}\tilde H_\Phi\,\tilde{Ξ},
+\partial/\partial r'_t\,\tilde{Ξ} = \frac{1}{\hbar\,c}(-i\tilde H_\Psi)\,\tilde{Ξ},
 \qquad
-\tilde H_\Phi = -i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
+-i\tilde H_\Psi = -i h_t\,e_t + \vec h_\Psi \in \mathbb{B}_{\Phi}.
 $$
 
-The generator is anti-Hermitian, and that is the general reason the exponential is $*$-unitary. The letter is not a second letter: it is the
-observable's own letter with the subscript moved, and the single multiplication that produces it is by $i$, $\tilde H_\Phi=-i\tilde H_\Psi$.
-The division by $\hbar\,c$ stays outside the glyph, as a real scale written beside it, because it is a change of unit and not a change of sector.
+The generator is anti-Hermitian, and that is the general reason the exponential is $*$-unitary. The glyph is not a second glyph: it is the
+observable's own, and the single multiplication that produces the generator is by $-i$.
+The division by $\hbar\,c$ stays outside, as a real scale written beside it, because it is a change of unit and not a change of sector.
 
 **The material-sector interpretation.** The generator lies in $\mathbb{B}_{\Phi}$, the *material* sector, the same four-dimensional real space that carries the four-vectors of relativistic physics. The time-translation generator is an element of that sector, and multiplying it by $i\hbar\,c$ returns the Hermitian observable $\tilde H_\Psi$. The two writings are then one statement about one space and its image under the central $i$: the observable is what the generator reads as when the intertwiner is undone.
 
@@ -290,7 +288,7 @@ There is a second defect in the non-central choice: because $\vec e_z \vec e_x =
 
 ## What the Biquaternion Form Adds and What It Merely Relabels
 
-**The relabelling.** Write the field in the coefficient basis as a column of four complex numbers. Left multiplication by $\tilde H_\Psi$ is then the array $L_{\mathrm{axf}}(\tilde H_\Psi)$, the central $i$ is the standard imaginary unit, $\tilde Q(r'_t)=\exp(-iL_{\mathrm{axf}}(\tilde H_\Psi)r'_t/(\hbar\,c))$ is a unitary array, and the equation is literally the complex-linear Schrödinger equation with that Hermitian symbol. In that basis the two writings are two elementary statements about arrays: the array of $\tilde H_\Psi$ is Hermitian, and the array of $\frac{\tilde H_\Phi}{\hbar\,c}$ is anti-Hermitian. Nothing is added to the predictions: the equation says what the standard one says, coefficient by coefficient. The one coefficient of $e_t$ carries the ordinary one-component equation; the other three carry the same equation and, in addition, a rotor and a boost that the standard equation does not name.
+**The relabelling.** Write the field in the coefficient basis as a column of four complex numbers. Left multiplication by $\tilde H_\Psi$ is then the array $L_{\mathrm{axf}}(\tilde H_\Psi)$, the central $i$ is the standard imaginary unit, $\tilde Q(r'_t)=\exp(-iL_{\mathrm{axf}}(\tilde H_\Psi)r'_t/(\hbar\,c))$ is a unitary array, and the equation is literally the complex-linear Schrödinger equation with that Hermitian symbol. In that basis the two writings are two elementary statements about arrays: the array of $\tilde H_\Psi$ is Hermitian, and the array of $-\frac{i\tilde H_\Psi}{\hbar\,c}$ is anti-Hermitian. Nothing is added to the predictions: the equation says what the standard one says, coefficient by coefficient. The one coefficient of $e_t$ carries the ordinary one-component equation; the other three carry the same equation and, in addition, a rotor and a boost that the standard equation does not name.
 
 **What is structural.** Three features are genuinely rearranged rather than merely renamed.
 
@@ -312,17 +310,17 @@ There is a second defect in the non-central choice: because $\vec e_z \vec e_x =
 
 **3. Which of the four coefficients is physical.** The field has four complex coefficients and the equation treats them alike. Whether all four are physical, or whether three of them are a gauge artefact of the quaternionic structure, is not settled here. The polar companion article shows that three of them form the field's rotor: the rotor's angle runs at $|\vec h_\Psi|/\hbar$, and every direction it carries turns at $2|\vec h_\Psi|/\hbar$, so the rotor is not removable by a phase.
 
-**4. The non-relativistic limit, and the transformation law.** Two questions belong together here. Whether this Schrödinger equation is the precise non-relativistic limit of the biquaternion Dirac equation, or only an independent equation with the same symbol, is not checked here. And the material-sector reading of the generator lacks its transformation law: the article shows that $\tilde H_\Phi/\hbar\,c$ lies in $\mathbb{B}_{\Phi}$ and does not show that it transforms as a four-vector under $\tilde U_{\mathrm{lor}}$. A four-gradient in place of $\partial/\partial r'_t$ would settle both, and neither is attempted.
+**4. The non-relativistic limit, and the transformation law.** Two questions belong together here. Whether this Schrödinger equation is the precise non-relativistic limit of the biquaternion Dirac equation, or only an independent equation with the same symbol, is not checked here. And the material-sector reading of the generator lacks its transformation law: the article shows that $-i\tilde H_\Psi/\hbar\,c$ lies in $\mathbb{B}_{\Phi}$ and does not show that it transforms as a four-vector under $\tilde U_{\mathrm{lor}}$. A four-gradient in place of $\partial/\partial r'_t$ would settle both, and neither is attempted.
 
 **5. Second quantization and the path integral.** The framework is first-quantized and has no path-integral form in this article; both are open in the parent.
 
 ## Summary
 
-One equation carries two writings. The first is $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$, with $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ Hermitian and $\tilde{Ξ}$ one element of $\mathbb{B}$ with four complex coefficients. The second is $\partial/\partial r'_t\tilde{Ξ} = \frac{\tilde H_\Phi}{\hbar\,c}\tilde{Ξ}$, whose generator $\frac{\tilde H_\Phi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$. They are one equation: the scalar imaginary $i$ is central, so $i\tilde H_\Psi$ is anti-Hermitian, and the two writings differ by the central constant $i\hbar\,c$.
+One equation carries two writings. The first is $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$, with $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ Hermitian and $\tilde{Ξ}$ one element of $\mathbb{B}$ with four complex coefficients. The second is $\partial/\partial r'_t\tilde{Ξ} = -\frac{i\tilde H_\Psi}{\hbar\,c}\tilde{Ξ}$, whose generator $-\frac{i\tilde H_\Psi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ lies in the material sector $\mathbb{B}_{\Phi}$. They are one equation: the scalar imaginary $i$ is central, so $i\tilde H_\Psi$ is anti-Hermitian, and the two writings differ by the central constant $i\hbar\,c$.
 
-The $\mathbb{B}_{\Psi}$ writing is the physical one. It names the observable, and its solution $\tilde Q(r'_t)=\exp(\tilde H_\Phi r'_t/\hbar\,c)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$ is $*$-unitary. That $*$-unitarity is exactly the anti-Hermiticity of the generator, so the conservation of $2\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the second writing read back in the first.
+The $\mathbb{B}_{\Psi}$ writing is the physical one. It names the observable, and its solution $\tilde Q(r'_t)=\exp(-i\tilde H_\Psi r'_t/\hbar\,c)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$ is $*$-unitary. That $*$-unitarity is exactly the anti-Hermiticity of the generator, so the conservation of $2\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the second writing read back in the first.
 
-Two angles appear in the closed form, and they must not be conflated. The central phase is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar c)$, the scalar part of the generator times the interval; the rotor angle is $\theta=|\vec h_\Psi|\,r'_t/(\hbar c)$. The generator $\tilde H_\Phi/(\hbar c)$ is **anti-Hermitian**, not Hermitian: its scalar part $-i h_t/(\hbar c)$ is purely imaginary and its vector part $\vec h_\Psi/(\hbar c)$ is real, which is exactly membership in $\mathbb{B}_{\Phi}$. Anti-Hermiticity is what makes $\tilde Q$ $*$-unitary, and it is what makes the phase a real angle: a purely imaginary scalar generator exponentiates to a phase, and a real vector generator exponentiates to the unit rotor $\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$.
+Two angles appear in the closed form, and they must not be conflated. The central phase is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar c)$, the scalar part of the generator times the interval; the rotor angle is $\theta=|\vec h_\Psi|\,r'_t/(\hbar c)$. The generator $-i\tilde H_\Psi/(\hbar c)$ is **anti-Hermitian**, not Hermitian: its scalar part $-i h_t/(\hbar c)$ is purely imaginary and its vector part $\vec h_\Psi/(\hbar c)$ is real, which is exactly membership in $\mathbb{B}_{\Phi}$. Anti-Hermiticity is what makes $\tilde Q$ $*$-unitary, and it is what makes the phase a real angle: a purely imaginary scalar generator exponentiates to a phase, and a real vector generator exponentiates to the unit rotor $\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$.
 
 The $\mathbb{B}_{\Phi}$ writing locates the generator in the material sector, the four-dimensional real space that carries the four-vectors. Multiplying the generator by $i\hbar\,c$ returns the observable. What the article does not show is that the generator transforms as a four-vector; the label names the space and not yet the transformation law.
 
@@ -340,11 +338,11 @@ The uniqueness of $i$ up to sign is what makes both writings available simultane
 | $\hbar$ | Reduced Planck constant; the constant of the equation, $i\hbar\,c\,\partial/\partial r'_t\tilde\Xi=\tilde H_\Psi\tilde\Xi$ |
 | $\mathbb{B}_{C}$ | Complex subspace $\operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$; the centre |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (observables): $i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ} = \tilde H_\Psi\tilde{Ξ}$ has $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ |
-| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators, the material sector): the generator is $\tilde H_\Phi/\hbar\,c\in\mathbb{B}_{\Phi}$ |
+| $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators, the material sector): the generator is $-i\tilde H_\Psi/\hbar\,c\in\mathbb{B}_{\Phi}$ |
 | $\mathbb{B}_{H}$ | Real quaternion subspace; home of the unit pure quaternions $\vec u$ |
 | $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi$ | Hermitian element; the Hamiltonian, and the observable named by the first writing |
-| $\tilde H_\Phi = -i\tilde H_\Psi = -i h_t\,e_t+\vec h_\Psi$ | The anti-Hermitian generator: $i$ times the observable, in $\mathbb{B}_{\Phi}$, the same four numbers with the $i$ on the time slot |
-| $\frac{\tilde H_\Phi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ | The generator named by the second writing: $-i\tilde H_\Psi$ over one real scale, anti-Hermitian, in $\mathbb{B}_{\Phi}$ |
+| $-i\tilde H_\Psi = -i h_t\,e_t+\vec h_\Psi$ | The anti-Hermitian generator: $i$ times the observable, in $\mathbb{B}_{\Phi}$, the same four numbers with the $i$ on the time slot |
+| $-\frac{i\tilde H_\Psi}{\hbar\,c}=\frac{\vec h_\Psi-i h_t e_t}{\hbar\,c}$ | The generator named by the second writing: the observable with $i$ in front, over one real scale, anti-Hermitian, in $\mathbb{B}_{\Phi}$ |
 | $\tilde{Ξ}$ | The field: one element of $\mathbb{B}$; `sp` marks the spinor role |
 | $L_{\tilde H_\Psi}$, $L_{\mathrm{axf}}(\tilde H_\Psi)$ | Left multiplication by $\tilde H_\Psi$; its $4\times4$ axis-free array in the coefficient basis |
 | $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{*}/2\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ | Density matrix associated to the field |

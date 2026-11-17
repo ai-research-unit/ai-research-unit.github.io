@@ -140,20 +140,20 @@ and its conjugate is its negative, so it is anti-Hermitian and its scalar part i
 **The generator writing is the same functional.** Since $i$ is central and $i^{2}=-e_t$, the identity
 
 $$
--\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi=-\tilde\Xi^{*}(i\tilde H_\Phi)\tilde\Xi=-i\,\tilde\Xi^{*}\tilde H_\Phi\tilde\Xi,
+-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi=-i\,\tilde\Xi^{*}(-i\tilde H_\Psi)\tilde\Xi,
 \qquad
-\tilde H_\Phi=-i\tilde H_\Psi\in\mathbb{B}_{\Phi},
+-i\tilde H_\Psi\in\mathbb{B}_{\Phi},
 $$
 
 holds as an identity of the algebra, and the right-hand side is the same real term. Its variation gives
 
 $$
-i\hbar\,c\,\partial\tilde\Xi-i\tilde H_\Phi\tilde\Xi=0
+i\hbar\,c\,\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi=0
 \qquad\Longleftrightarrow\qquad
-\partial_{r'_t}\tilde\Xi=\frac{1}{\hbar\,c}\tilde H_\Phi\tilde\Xi,
+\partial_{r'_t}\tilde\Xi=\frac{1}{\hbar\,c}(-i\tilde H_\Psi)\tilde\Xi,
 $$
 
-which is the parent's second writing. Equivalently $\hbar\,c\,\partial\tilde\Xi=\tilde H_\Phi\tilde\Xi$. So the second writing is available from the same action, and the only thing that changed is which factor of the coupling carries the $i$.
+which is the parent's second writing. Equivalently $\hbar\,c\,\partial\tilde\Xi=-i\tilde H_\Psi\tilde\Xi$. So the second writing is available from the same action, and the only thing that changed is which factor of the coupling carries the $i$.
 
 **What would break it.** If $i$ were replaced by a non-central root $\tilde Z$ of $-e_t$, the generator $-\tilde Z\tilde H_\Psi/(\hbar\,c)$ need not be anti-Hermitian, and the second writing need not exist. The action inherits the parent's verdict, and the verdict has two steps rather than one. **Reality costs only anti-Hermiticity.** The kinetic bracket $K=\tilde\Xi^{*}\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde\Xi$ is anti-Hermitian, and $\mathrm{Sc}(\tilde ZK)$ is real for every anti-Hermitian $\tilde Z$, because $(\tilde ZK)^{*}=K\tilde Z$ and $\mathrm{Sc}(K\tilde Z)=\mathrm{Sc}(\tilde ZK)$. The roots used in this article — $\pm i$, the units $\pm\vec e_\mu$ and the real unit vectors $\vec u$ — are all anti-Hermitian, so the reality of the action does not by itself select the central one. **Centrality is what the rest costs.** The generator $-\tilde Z\tilde H_\Psi/(\hbar\,c)$ must be anti-Hermitian for *every* Hermitian $\tilde H_\Psi$, which holds exactly when $\tilde Z$ commutes with $\tilde H_\Psi$; and the phase rotation $\tilde\Xi\mapsto\exp(\tilde Z\alpha)\tilde\Xi$ leaves the potential term invariant under the same condition. Only a central $\tilde Z$ meets it for all $\tilde H_\Psi$. Unitarity, the second writing and the phase symmetry are what the central unit buys; the reality of the action is the weakest of the four requirements.
 
@@ -165,7 +165,7 @@ $$
 
 and $i\vec e_y$ is Hermitian, so the generator $-\tilde Z\tilde H_\Psi/(\hbar\,c)$ is Hermitian and not anti-Hermitian; the minus sign flips nothing, because $-1$ is real and conjugation is antilinear. The corresponding flow is not norm-preserving, and the parent's explicit computation gives the failure at $r'_t=\pi\hbar\,c/2$, where the accumulated factor is $\exp(-i\pi\vec e_y)=\cosh\pi\,e_t-i\sinh\pi\,\vec e_y$, which is not $e_t$. Here the root is anti-Hermitian and the action is still real; what fails is the flow.
 
-**Unitarity is the anti-Hermiticity read back.** The flow of the equation is $\tilde Q(r'_t)=\exp\bigl(\tilde H_\Phi r'_t/(\hbar\,c)\bigr)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$, and its $*$-unitarity is exactly $(\tilde H_\Phi/(\hbar\,c))^{*}=-\tilde H_\Phi/(\hbar\,c)$. That anti-Hermiticity is the centrality computation above, so the conservation of the norm is the variational principle's reality statement seen from the flow side. The two are one fact about $i$.
+**Unitarity is the anti-Hermiticity read back.** The flow of the equation is $\tilde Q(r'_t)=\exp\bigl(-i\tilde H_\Psi r'_t/(\hbar\,c)\bigr)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$, and its $*$-unitarity is exactly the anti-Hermiticity of $-i\tilde H_\Psi/(\hbar\,c)$. That anti-Hermiticity is the centrality computation above, so the conservation of the norm is the variational principle's reality statement seen from the flow side. The two are one fact about $i$.
 
 The angle is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar c)$, the scalar part of the generator times the interval over $\hbar$; the vector part of the generator contributes the separate rotor angle $\theta=|\vec h_\Psi|\,r'_t/(\hbar c)$. The generator is anti-Hermitian, not Hermitian, and the anti-Hermiticity is the whole content: a purely imaginary scalar part makes the phase a real angle, and a real vector part makes the rotor a unit rotor.
 
@@ -270,7 +270,7 @@ $$
 
 with $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ Hermitian and $\tilde\Xi\in\mathbb{B}$ one general element. The action is real because both densities are Hermitian and the scalar part of a Hermitian element is real. The pairing is the Hermitian form $\mathrm{Sc}(\cdot^{*}\cdot)$, which is the form for which left multiplication by $\tilde H_\Psi$ is Hermitian.
 
-The variation of $\tilde\Xi^{*}$ returns the equation, and the non-degeneracy of the Hermitian pairing makes the return exact. The two writings are one functional: the reality of the action puts the central $i$ on the derivative and forces a Hermitian coupling, and the generator writing is the same term written with $\tilde H_\Phi=-i\tilde H_\Psi$. The centrality of $i$ is what makes the two readings coincide, and the parent's counterexample with $\vec e_z$ shows that no non-central root does.
+The variation of $\tilde\Xi^{*}$ returns the equation, and the non-degeneracy of the Hermitian pairing makes the return exact. The two writings are one functional: the reality of the action puts the central $i$ on the derivative and forces a Hermitian coupling, and the generator writing is the same term written with $i$ in front, $-i\tilde H_\Psi$. The centrality of $i$ is what makes the two readings coincide, and the parent's counterexample with $\vec e_z$ shows that no non-central root does.
 
 Two symmetries give two currents. The phase rotation gives $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho/2$, the parent's density up to the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention. The time translation, in the constant setting, gives $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, the parent's energy. Each conservation is one line from the equation and its conjugate. There is no spin current, because the equation has no spin.
 
@@ -291,7 +291,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 | $r'_t=c\,t'$ | Material time; the variable of the element form |
 | $\tilde\Xi\in\mathbb{B}$ | The field: one general element, eight real components |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian; the observable |
-| $\tilde H_\Phi=-i\tilde H_\Psi$ | $i$ times the observable; the generator, up to the real scale $\hbar\,c$ |
+| $-i\tilde H_\Psi$ | $i$ times the observable; the generator, up to the real scale $\hbar\,c$; the same glyph, with no second subscript |
 | $S$ | The action; $L$ its Lagrangian density |
 | $\partial_{r'_t}$ | Derivative with respect to the material time |
 | $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Phase Noether charge; $\rho=2N$ |

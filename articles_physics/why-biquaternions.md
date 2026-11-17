@@ -140,9 +140,9 @@ The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times t
 Dividing by the central unit $i\hbar c$ gives a second writing of the same equation,
 
 $$
-\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{1}{\hbar c}\tilde H_{\Phi}\tilde\Xi,
+\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{1}{\hbar c}(-i\tilde H_{\Psi})\tilde\Xi,
 \qquad
-\tilde H_{\Phi}=-i\tilde H_{\Psi}\in\mathbb{B}_{\Phi}.
+-i\tilde H_{\Psi}\in\mathbb{B}_{\Phi}.
 $$
 
 The division is always possible because $i$ is central, and its effect is to move the generator from one sector to the other. The first writing names an observable, an energy in the informational sector. The second names a generator, an anti-Hermitian element of the material sector. They are one equation, and the two elements it exhibits are the two readings of one object.
