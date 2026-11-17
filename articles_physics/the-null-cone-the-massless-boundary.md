@@ -149,7 +149,7 @@ The massive module of spin $j$ does not converge to a single massless module as 
 
 ### The Cusp
 
-The mass shell's two Casimirs, $p^{2}=m^{2}c^{2}$ and the Pauli–Lubanski scalar, are independent for $m>0$ and become dependent on the cone: $p^{2}=0$ makes the Pauli–Lubanski vector proportional to the momentum, with the helicity as the constant. So the label space folds along the cone, and the fold is why the massless label set is not the $m\to0$ limit of the massive one.
+The mass shell's two Casimirs, $N=-m^{2}c^{2}$ and the Pauli–Lubanski scalar, are independent for $m>0$ and become dependent on the cone: $N=0$ makes the Pauli–Lubanski vector proportional to the momentum, with the helicity as the constant. So the label space folds along the cone, and the fold is why the massless label set is not the $m\to0$ limit of the massive one.
 
 ### The Two Halves Separate
 

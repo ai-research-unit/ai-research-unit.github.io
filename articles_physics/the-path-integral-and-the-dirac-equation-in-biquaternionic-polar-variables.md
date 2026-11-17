@@ -30,7 +30,7 @@ $$
 \mathcal S_R=\frac{\tilde K_{\Phi}^{\natural}-ik_m}{k_m^{2}+\langle\tilde K_{\Phi}\rangle_{\natural}},
 $$
 
-with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ the wave biquaternion and $\langle\tilde K_{\Phi}\rangle_{\natural}=-p^{2}/\hbar^{2}$. The components are elements of $\mathbb{B}$ and not scalars, and that is the subject of the next three sections. The material position is $\tilde R_\Phi=ir'_{t}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, whose norm is $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+|\vec r|^{2}$.
+with $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar$ the wave biquaternion and $\langle\tilde K_{\Phi}\rangle_{\natural}=N/\hbar^{2}$. The components are elements of $\mathbb{B}$ and not scalars, and that is the subject of the next three sections. The material position is $\tilde R_\Phi=ir'_{t}e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, whose norm is $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_{t}}^{2}+|\vec r|^{2}$.
 
 Every statement is an identity of the word, and the number beside it is a recomputation on one hundred samples. No claim rests on a numerical accident.
 
@@ -103,7 +103,7 @@ The second row is the sharpest difference from the Schrödinger kernel's word, a
 
 On the mass shell $\tilde K_{\Phi}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$, and the numerator factors exactly.
 
-*Proposition.* On the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ and $p^{2}=m^{2}c^{2}$,
+*Proposition.* On the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ and $N=-m^{2}c^{2}$,
 
 $$
 \tilde K_{\Phi}-ik_m
@@ -294,7 +294,7 @@ None of this is a new integral. It is the companion's integral read in the coord
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Gradient and its quaternion conjugate |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=ik'_{t}e_t+\vec k$ | Wave biquaternion |
-| $\langle\tilde K_{\Phi}\rangle_{\natural}=-p^{2}/\hbar^{2}$ | Mass-shell scalar |
+| $\langle\tilde K_{\Phi}\rangle_{\natural}=N/\hbar^{2}$ | Mass-shell scalar |
 | $\mathcal S_L$, $\mathcal S_R$ | The two components of the Dirac propagator |
 | $\theta_{\mathrm{act}}=S/\hbar$ | Angle of a path's weight |
 | $w=e^{i\theta_{\mathrm{act}}}e_t$ | Weight of one path |

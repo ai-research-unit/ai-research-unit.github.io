@@ -133,13 +133,13 @@ verified over one hundred draws to $1.4\times10^{-14}$. **The zeros are $\hbar\o
 
 **The numbers.** With $h_t=0.4$, $\lvert\vec h_\Psi\rvert=0.616441$ and $\hbar=1$ the zeros are at $\omega=-0.2164$ and $\omega=1.0164$. At $\omega=1.2$ the elementary determinant is $0.2600$ and at $\omega=-1.2$ it is $2.1800$; the symbol's determinant, being its square, is $0.0676$ at the first and $4.7524$ at the second, a ratio of $70.3$. **The two frequencies are not images of one another**, and the asymmetry is the mass term's.
 
-**The second-order equations are even.** The Klein–Gordon and Dirac determinants are functions of $p^{2}$, so their zero sets are invariant under $\omega\mapsto-\omega$. That invariance is what makes a negative-frequency mode a solution of the same equation with the same $|p|$, and it is the kinematic half of the antiparticle statement.
+**The second-order equations are even.** The Klein–Gordon and Dirac determinants are functions of $N$, so their zero sets are invariant under $\omega\mapsto-\omega$. That invariance is what makes a negative-frequency mode a solution of the same equation with the same $|p|$, and it is the kinematic half of the antiparticle statement.
 
 | Equation | Order in time | Symbol's $\omega$-dependence | Symmetry of the zero set | Partner of a mode at $\omega$ |
 | --- | --- | --- | --- | --- |
 | Schrödinger | first | affine | $\omega\mapsto 2h_t/\hbar-\omega$ | $2h_t/\hbar-\omega$ |
 | Klein–Gordon | second | quadratic | $\omega\mapsto-\omega$ | $-\omega$ |
-| Dirac | second | quadratic through $p^{2}$ | $\omega\mapsto-\omega$ | $-\omega$ |
+| Dirac | second | quadratic through $N$ | $\omega\mapsto-\omega$ | $-\omega$ |
 
 **What the table is not.** It is not a statement that the negative-frequency solutions of the second-order equations are particles. It is a statement about the zero sets, and the interpretation of a negative-frequency mode belongs to the field theory and not to the transform.
 

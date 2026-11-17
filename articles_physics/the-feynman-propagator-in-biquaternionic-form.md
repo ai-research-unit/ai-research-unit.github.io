@@ -102,7 +102,7 @@ $$
 The cross terms vanish because each action puts an invertible element on the right, and the two possible orders differ by $\vec e_y\vec e_x=-\vec e_x\vec e_y$ for the energy term against a spatial one; two distinct spatial terms cancel the same way, because distinct spatial units anticommute. Hence
 
 $$
-\mathcal{A}_p^2=p^2\,\mathrm{id},\qquad p^2=p_0^2-\vec p^2 .
+\mathcal{A}_p^2=-N\,\mathrm{id},\qquad N=-p_0^2+\vec p^2 .
 $$
 
 The body of this article is written in these actions; the closing section gives their standard names.
@@ -145,7 +145,7 @@ The two $\mathrm{H}_{\mathrm{hvs}}$ functions can be represented by a single fou
 
 $$
 \boxed{\;S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\;
-\exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+\exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{-\big(N+m^{2}\,c^{2}\big)+i\epsilon},
 \qquad \epsilon\to0^+\;}.
 $$
 
@@ -154,7 +154,7 @@ The action is written by what it does, so the display carries the test element a
 Write the $p_0$ integral at fixed $\vec p$, and put $\delta t=x_0-y_0$ and $\delta\vec r=\vec r-\vec y$. Since
 
 $$
-p^2-m^{2}\,c^{2}=p_0^2-\vec p^2-m^{2}\,c^{2}=p_0^2-\frac{E_{\vec p}^2}{c^{2}},
+-\big(N+m^{2}\,c^{2}\big)=p_0^2-\vec p^2-m^{2}\,c^{2}=p_0^2-\frac{E_{\vec p}^2}{c^{2}},
 $$
 
 the integrand has poles where
@@ -224,10 +224,10 @@ Three things are conflated in the phrase "the $i\epsilon$ does the time ordering
 2. The overall $i$ fixes the normalization of the amplitude relative to the two $\mathrm{H}_{\mathrm{hvs}}$ terms.
 3. The minus in front of $W_-$ is carried by the numerator, through the two numerators $\mathcal{A}_p+mc$ and $\mathcal{A}_p-mc$. It is the two-point form of the anticommutation, and it has no counterpart in the scalar case, where the two residues share one numerator and the time-ordered combination is $\mathrm{H}_{\mathrm{hvs}}W_++\mathrm{H}_{\mathrm{hvs}}W_-$.
 
-**A recomputation on a case chosen for it.** Take $m\,c^{2}=0.7$ and $\vec p=(0.3,-0.9,1.1)\,m\,c$, so that $|\vec p|=1.4525839046\,m\,c$ and $E_{\vec p}=1.6124515497\,m\,c^{2}$; every momentum below is quoted in units of $m\,c$ and every energy in units of $m\,c^{2}$. Applying the four coordinate actions twice on a hundred random elements, the identity $\mathcal{A}_p^2=p^2\,\mathrm{id}$ holds to better than $10^{-14}$ and $(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=(p^2-m^{2}\,c^{2})\,\mathrm{id}$ to the same, the anticommutator $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ holds exactly on the grid tested, and $\mathcal{A}_{-p}=-\mathcal{A}_p$ exactly. The identity
+**A recomputation on a case chosen for it.** Take $m\,c^{2}=0.7$ and $\vec p=(0.3,-0.9,1.1)\,m\,c$, so that $|\vec p|=1.4525839046\,m\,c$ and $E_{\vec p}=1.6124515497\,m\,c^{2}$; every momentum below is quoted in units of $m\,c$ and every energy in units of $m\,c^{2}$. Applying the four coordinate actions twice on a hundred random elements, the identity $\mathcal{A}_p^2=-N\,\mathrm{id}$ holds to better than $10^{-14}$ and $(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=-\big(N+m^{2}\,c^{2}\big)\,\mathrm{id}$ to the same, the anticommutator $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id}$ holds exactly on the grid tested, and $\mathcal{A}_{-p}=-\mathcal{A}_p$ exactly. The identity
 
 $$
-(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=\mathcal{A}_p^2-m^{2}c^{2}\,\mathrm{id}=(p^2-m^{2}\,c^{2})\,\mathrm{id}
+(\mathcal{A}_p-mc)(\mathcal{A}_p+mc)=\mathcal{A}_p^2-m^{2}c^{2}\,\mathrm{id}=-\big(N+m^{2}\,c^{2}\big)\,\mathrm{id}
 $$
 
 is not a coincidence: it is the square of the action derived above, and it holds for off-shell $p$ as well. For $\epsilon=10^{-3}$ the Feynman poles come out at
@@ -261,10 +261,10 @@ This is the physical content of the $i\epsilon$, and it is exactly the content t
 The Feynman denominator has a compact biquaternion form. With the four-momentum biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, where $E$ denotes the timelike component, the same $p_0$ the contour integral runs over, and its quaternion conjugate $\tilde P_{\Phi}^{\natural}=iE\,e_t-\vec p$, the quaternion product is
 
 $$
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=(iE/c)^2+\vec p^2=-E^2/c^2+\vec p^2=-p^2 .
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=(iE/c)^2+\vec p^2=-E^{2}/c^{2}+\vec p^{\,2}=N .
 $$
 
-Two signs enter, and they come from two different places. The scalar one is $i^2=-1$, which takes $(iE/c)^2$ to $-E^2/c^2$. The vector one is a **plus**: the vector part multiplies $-\vec p$, and $\vec p\,(-\vec p)=+\vec p^2$, because the quaternion square of a vector is $\vec p\,\vec p=-\vec p^2$ with $\vec p^2=p_x^2+p_y^2+p_z^2$ the Euclidean square. The last step is $p^2=E^2-\vec p^2$.
+Two signs enter, and they come from two different places. The scalar one is $i^2=-1$, which takes $(iE/c)^2$ to $-E^2/c^2$. The vector one is a **plus**: the vector part multiplies $-\vec p$, and $\vec p\,(-\vec p)=+\vec p^2$, because the quaternion square of a vector is $\vec p\,\vec p=-\vec p^2$ with $\vec p^2=p_x^2+p_y^2+p_z^2$ the Euclidean square. The last step is $N=-E^{2}/c^{2}+\vec p^{\,2}$.
 
 The mass shell is then the single algebraic condition
 
@@ -274,10 +274,10 @@ $$
 E^2-\vec p^2=m^{2}\,c^{2}\,\Longleftrightarrow\,E^{2}=\vec p^{\,2}c^2+m^{2}\,c^{4},
 $$
 
-whose two frequency branches $E=\pm E_{\vec p}$ are the two poles $p_\pm$ of section *The Pole Structure and the Contour*. Substituting $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ in the amplitude gives the biquaternion form,
+whose two frequency branches $E=\pm E_{\vec p}$ are the two poles $p_\pm$ of section *The Pole Structure and the Contour*. Substituting $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ in the amplitude gives the biquaternion form,
 
 $$
-\boxed{\;S_F(p):\ \tilde{Q}\,\longmapsto\frac{i\big(\mathcal{A}_p(\tilde Q)+mc\tilde Q\big)}{p^2-m^{2}\,c^{2}+i\epsilon}
+\boxed{\;S_F(p):\ \tilde{Q}\,\longmapsto-\frac{i\big(\mathcal{A}_p(\tilde Q)+mc\tilde Q\big)}{N+m^{2}\,c^{2}-i\epsilon}
 \;=\;-\,\frac{i\big(\mathcal{A}_p(\tilde Q)+mc\tilde Q\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon}\;},
 $$
 
@@ -288,7 +288,7 @@ The shift has a natural algebraic home. The deformation is $-i\epsilon\,e_t$: a 
 One caveat belongs here, because it is the kind of sign that hides in prose. The Feynman term is **added to the scalar** $\mathcal{M}(\tilde P_{\Phi})$, and as an element it is anti-Hermitian. Displacing the four-momentum biquaternion is a different operation. With $\tilde P_{\Phi}\to\tilde P_{\Phi}+\delta e_t$,
 
 $$
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\;\longmapsto\;-p^2+2iE\delta+\delta^2 ,
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}\;\longmapsto\;N+2iE\delta+\delta^2 ,
 $$
 
 so reproducing the term requires $\delta=-\epsilon/(2E)$, which is **real**: the equivalent displacement of the momentum runs along the Hermitian direction, not the material one. The two readings agree on the pole positions to first order in $\epsilon$ and disagree on which sector the deformation lives in. The article's claim is the first: $\tilde P_{\Phi}$ is not displaced, the central scalar is, and it is that added term which lies in $\mathbb{B}_{\Phi}$. Read as a displacement of the momentum, the $i\epsilon$ would sit in the informational sector, because $\tilde P_{\Phi}$ carries its energy through $i$.
@@ -319,7 +319,7 @@ But the selection is still analytic, not algebraic. The step "continue the uniqu
 
 ## The Propagator as a Distribution
 
-It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated amplitude $(\mathcal{A}_p+mc)/(p^2-m^{2}\,c^{2})$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\mathcal{A}_p-mc$ off the mass shell into a distributional inverse on all of momentum space.
+It matters that $S_F$ is a distribution, and not only because the statement is true. The integral defining it converges for no real $p$ on the mass shell; the mass shell is precisely the pole set, and the unregulated amplitude $(\mathcal{A}_p+mc)/\big(-(N+m^{2}\,c^{2})\big)$ is undefined there. The $i\epsilon$ is what turns the algebraic inverse of $\mathcal{A}_p-mc$ off the mass shell into a distributional inverse on all of momentum space.
 
 The two-point action of the chiral pair is the pair of two kernels, and it satisfies, in the distributional sense,
 
@@ -329,7 +329,7 @@ $$
 (\Box_\Phi-k_m^{2})\,G_F=i\,\delta^{(4)}(x-y),
 $$
 
-where the first kernel is the first line of the pair applied to $G_F$ and the second kernel is the second line. Each kernel is annihilated by its own line with the sign of the mass flipped, $\bigl(\tilde\nabla_\Phi-k_m\bigr)(\tilde\nabla_\Phi+k_m)G_F=i\,\delta^{(4)}$ on the first and $\bigl((\tilde\nabla_\Phi)^{\natural}-k_m\bigr)((\tilde\nabla_\Phi)^{\natural}+k_m)G_F=i\,\delta^{(4)}$ on the second. The two lines and the momentum action are two writings of one first-order symbol, the first one line per part and the second by the four basis operator actions read on a single element; the change of variable of the introduction relates them, they are not the same map, and they share the pole set because each line composed with its partner is multiplication by $p^2$. The overall factor is a normalization: the conventions article writes the Green matrix of the pair as the two entries $(\tilde\nabla_\Phi+k_m)G$ and $((\tilde\nabla_\Phi)^{\natural}+k_m)G$ with $(\Box-k_m^{2})G=\delta$, whereas the time-ordered product of this article carries $S_F=i\mathcal{S}$; the companion Klein–Gordon article fixes $(\Box-\mu^2)G=-\delta^{(4)}$ at $\mu=m$, so its $G$ is $i$ times the $G_F$ here. None of these normalizations affects a pole position or a support. The differential equation holds for the Feynman, retarded, and advanced choices alike, because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0>y_0$ and $x_0<y_0$.
+where the first kernel is the first line of the pair applied to $G_F$ and the second kernel is the second line. Each kernel is annihilated by its own line with the sign of the mass flipped, $\bigl(\tilde\nabla_\Phi-k_m\bigr)(\tilde\nabla_\Phi+k_m)G_F=i\,\delta^{(4)}$ on the first and $\bigl((\tilde\nabla_\Phi)^{\natural}-k_m\bigr)((\tilde\nabla_\Phi)^{\natural}+k_m)G_F=i\,\delta^{(4)}$ on the second. The two lines and the momentum action are two writings of one first-order symbol, the first one line per part and the second by the four basis operator actions read on a single element; the change of variable of the introduction relates them, they are not the same map, and they share the pole set because each line composed with its partner is multiplication by $-N$. The overall factor is a normalization: the conventions article writes the Green matrix of the pair as the two entries $(\tilde\nabla_\Phi+k_m)G$ and $((\tilde\nabla_\Phi)^{\natural}+k_m)G$ with $(\Box-k_m^{2})G=\delta$, whereas the time-ordered product of this article carries $S_F=i\mathcal{S}$; the companion Klein–Gordon article fixes $(\Box-\mu^2)G=-\delta^{(4)}$ at $\mu=m$, so its $G$ is $i$ times the $G_F$ here. None of these normalizations affects a pole position or a support. The differential equation holds for the Feynman, retarded, and advanced choices alike, because the difference between them is supported only on the mass shell and carries no additional source off it. The differential equation, therefore, does not determine the propagator. What determines it is the time-ordering prescription, which in momentum space is the contour and in configuration space is the split of support into $x_0>y_0$ and $x_0<y_0$.
 
 This is the sharpest way to see why the question "does the algebra supply the $i\epsilon$?" cannot be answered by finding an $i$ in the algebra. The equation of motion supplies a differential operator, and a differential operator has many distributional inverses; the algebra supplies the operator $\tilde\nabla_\Phi$ (or its second-order companion $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$) and hence the same many inverses. Distinguishing the Feynman one requires a condition that is not an equation of motion. The complex structure enters when that condition is *represented* — as a contour in $\mathbb{B}_{C}$, or as a point in the complexified time plane — and not when it is *chosen*.
 
@@ -403,14 +403,14 @@ $$
 Its content is the contour prescription, and the prescription is fixed by time ordering together with the fermionic anticommutation sign:
 
 $$
-S_F(x-y):\ \tilde Q\longmapsto i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{p^2-m^{2}\,c^{2}+i\epsilon},
+S_F(x-y):\ \tilde Q\longmapsto -i\int\!\frac{d^4p}{(2\pi\hbar)^4}\,\exp(-i\theta_{\mathrm{pwp}})\frac{\mathcal{A}_p(\tilde Q)+mc\tilde Q}{N+m^{2}\,c^{2}-i\epsilon},
 \qquad
 \mathcal{A}_p:\ \tilde Q\longmapsto i p_0\tilde Q\,\vec e_x-i\sum_{\eta=1}^{3} p_\eta\,\vec e_\eta\,\tilde Q\,\vec e_y .
 $$
 
 The $p_0$ integral has poles at $p_0=\pm\big(E_{\vec p}-i\epsilon/2E_{\vec p}\big)$: the positive pole below the real axis and the negative pole above it. Closing below for $x_0-y_0>0$ and above for $x_0-y_0<0$ gives the two branches with the same positive weight $1/(2E_{\vec p})$, the sign of the half-plane cancelling the sign inside the residue and the $2\pi$ cancelling the measure; the fermionic relative minus is carried by the numerator: after $\vec p\to-\vec p$ the negative-frequency numerator obeys $\mathcal{A}_{(-E_{\vec p},-\vec p)}(\tilde Q)+mc\tilde Q=-(\mathcal{A}_{(E_{\vec p},\vec p)}(\tilde Q)-mc\tilde Q)$, which is the two-point form of the anticommutation.
 
-Writing the four-momentum biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$, the propagator amplitude becomes
+Writing the four-momentum biquaternion $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$, so that $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$, the propagator amplitude becomes
 
 $$
 S_F(p):\ \tilde Q\longmapsto-\frac{i\big(\mathcal{A}_p(\tilde Q)+mc\tilde Q\big)}{\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}-i\epsilon},
@@ -430,7 +430,7 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\mathrm{id}$ | The identity, as an action on $\mathbb{B}$ |
 | $G_t$, $G_\eta$ | The four frame basis operators written as actions, $\tilde Q\mapsto i\tilde Q\vec e_x$ and $\tilde Q\mapsto i\vec e_\eta\tilde Q\vec e_y$; $G_t^2=\mathrm{id}$, $G_\eta^2=-\mathrm{id}$, $\{G_\mu,G_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\mathrm{id}$ |
 | $\varepsilon$ | The plain weight of the four directions, the square of the units (*Frame and Metric Conventions*) |
-| $\mathcal{A}_p$ | The momentum action, $p_0G_t-\sum_\eta p_kG_\eta$, written out as $\tilde Q\mapsto ip_0\tilde Q\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde Q\vec e_y$; $\mathcal{A}_p^2=p^2\mathrm{id}$ |
+| $\mathcal{A}_p$ | The momentum action, $p_0G_t-\sum_\eta p_kG_\eta$, written out as $\tilde Q\mapsto ip_0\tilde Q\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde Q\vec e_y$; $\mathcal{A}_p^2=-N\mathrm{id}$ |
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient (*Operator and Calculus Conventions*); $Q_t$ is the time coordinate, $i r'_t$ on $\mathbb{B}_{\Phi}$ |
 | $\Box$ | The d'Alembertian, the gradient squared through its conjugate (*Operator and Calculus Conventions*) |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, as two first-order lines; each line composed with its partner is $\Box$ |
@@ -440,11 +440,11 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $\tilde{Ξ}^*$, $\tilde{Ξ}^*i\vec e_x$ | The Hermitian conjugate of the field, and the adjoint it forms with the fixed timelike basis operator |
 | $\tilde W_{\Psi}^{(r)}(\vec p)$, $\tilde V_{\Phi}^{(r)}(\vec p)$ | The plane-wave elements of the two frequency branches |
 | $\mathcal{A}_p+mc$, $\mathcal{A}_p-mc$ | The two numerators, on shell: the map form of the two sums over the solutions |
-| $p=(E,\vec p)$, $p_\pm=(\pm E_{\vec p},\vec p)$, $p^2=E^2-\vec p^2$ | Four-momentum, the two pole momenta, and the Lorentz square |
+| $p=(E,\vec p)$, $p_\pm=(\pm E_{\vec p},\vec p)$, $N=-E^{2}/c^{2}+\vec p^{\,2}$ | Four-momentum, the two pole momenta, and the Lorentz square |
 | $\tilde{Ξ}_{\mathrm{fop}}$, $a_{\mathrm{fop},r}(\vec p)$, $b_{\mathrm{fop},r}(\vec p)$ | Quantized field; particle and antiparticle modes |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point actions |
 | $S_F(x-y)$ | Feynman propagator, an action on $\mathbb{B}$ |
-| $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$ | Four-momentum biquaternion, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2$ |
+| $\tilde P_{\Phi}=i(E/c)\,e_t+\vec p$ | Four-momentum biquaternion, $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Biquaternion mass-shell condition |
 | $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$ | Mass-shell operator; Feynman shift $\mathcal{M}(\tilde P_{\Phi})-i\epsilon\,e_t$ |
 | $\beta=1/(k_BT)$, $\omega_\beta$, $\alpha_{r'_{t}}$ | Inverse temperature, thermal state, Heisenberg evolution |

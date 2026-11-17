@@ -155,19 +155,19 @@ $$
 whose momentum-space form is
 
 $$
-\mathcal{G}_F(p)=\frac{i}{p^2-\mu^2+i\epsilon},
+\mathcal{G}_F(p)=\frac{-i}{N+\mu^{2}-i\epsilon},
 \qquad
-p^2=\omega^2-\vec p^2 ,
+N=-\omega^{2}+\vec p^{2} ,
 $$
 
 with the $i\epsilon$ prescription that selects the positive-frequency part for the forward propagation. Its scalar two-point function is the Green's function of the parent equation; the companion article *The Feynman Propagator in Biquaternionic Form* constructs the analogous object for the spin-$\tfrac12$ field, and the scalar case is the standard one.
 
-The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde P_{\Phi}=i\omega\,e_t+\vec p$, the biquaternion norm is $\langle\tilde P_{\Phi}\rangle_{\natural}=(-\omega^2+\vec p^2)e_t$, so that $p^2=-\langle\tilde P_{\Phi}\rangle_{\natural}$ and
+The biquaternion interpretation of the propagator is a rewriting of the denominator. With the material four-wavevector $\tilde P_{\Phi}=i\omega\,e_t+\vec p$, the biquaternion norm is $\langle\tilde P_{\Phi}\rangle_{\natural}=(-\omega^2+\vec p^2)e_t$, so that $N=-\langle\tilde P_{\Phi}\rangle_{\natural}$ and
 
 $$
-\boxed{\;p^2-\mu^2=-\left(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2\right),
+\boxed{\;-\bigl(N+\mu^{2}\bigr)=-\left(\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2\right),
 \qquad
-\mathcal{G}_F(\tilde P_{\Phi})=-\frac{i}{\langle\tilde P_{\Phi}\rangle_{\natural}+\mu^2-i\epsilon}\;}.
+\mathcal{G}_F(\tilde P_{\Phi})=\frac{-i}{N+\mu^{2}-i\epsilon}\;}.
 $$
 
 The denominator is the mass-shell function of the parent article: the pole of the propagator is the level set $\langle\tilde P_{\Phi}\rangle_{\natural}=-\mu^2$, and the $i\epsilon$ prescription displaces the pole off the real axis. The two-point function is thus the biquaternion norm's inverse, shifted by the mass; the companion article *The Scalar Field Path Integral in Biquaternionic Form* makes the same statement for the free Gaussian, whose width is the shifted biquaternion norm, and this identification of the pole with the mass-shell level set is the only place where the propagator's biquaternion form is more than a rewriting.

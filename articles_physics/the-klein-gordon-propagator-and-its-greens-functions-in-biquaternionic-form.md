@@ -92,12 +92,10 @@ so the amplitude is
 
 $$
 G(\omega,\vec p)=\frac{1}{\vec p^2/\hbar^{2}+k_m^{2}-\omega^2/c^{2}}
-=\frac{-1}{p^2-k_m^{2}},
-\qquad
-p^2\equiv\frac{\omega^2}{c^{2}}-\frac{\vec p^2}{\hbar^{2}} ,
+=\frac{1}{N+k_m^{2}} ,
 $$
 
-Here $p^2$ is the wave-number squared of the four-momentum, an inverse length squared, and the letter $p$ is also the one that indexes the momentum in the measure; the two readings of the letter are separated by the context, the measure always written with $d^3p$ and the scalar always written with a squared symbol.
+Here $N$ is the norm of the wave number, $N=-\omega^{2}/c^{2}+\lvert\vec p\rvert^{2}/\hbar^{2}$, an inverse length squared, and the propagator's pole sits at $N=-k_m^{2}$, which is the mass shell. The measure is still written $d^3p$, so the letter $p$ names the momentum it integrates.
 
 The angle is $\theta_{\mathrm{pwp}}=p\cdot x/\hbar=\omega r'_t-\vec k_\Phi\cdot\vec r$: a real four-momentum paired with a real position over $\hbar$, so the angle is real.
 
@@ -418,7 +416,7 @@ The derivation of the retarded kernel given above is a transcription of the stan
 
 ## Summary
 
-The Klein–Gordon operator $(\Box-k_m^{2})$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-k_m^{2})G=-\delta^{(4)}$, matching the electromagnetism exercise at $k_m=0$, the momentum-space amplitude is $G=-(p^2-k_m^{2})^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2/\hbar^{2}+k_m^{2}}$.
+The Klein–Gordon operator $(\Box-k_m^{2})$ is a central scalar element of $\mathbb{B}$, and every Green's function of it is a central scalar times $e_t$. With the defining convention $(\Box-k_m^{2})G=-\delta^{(4)}$, matching the electromagnetism exercise at $k_m=0$, the momentum-space amplitude is $G=(N+k_m^{2})^{-1}$ and the four standard prescriptions displace its two poles at $\omega=\pm\Omega_{\vec p}=\pm\sqrt{\vec p^2/\hbar^{2}+k_m^{2}}$.
 
 The retarded Green's function is derived from its Fourier representation. The frequency contour gives $\mathrm{H}_{\mathrm{hvs}}(r'_t)\sin(\Omega_{\vec p}r'_t)/\Omega_{\vec p}$; the angular integral reduces the kernel to a radial Bessel integral; the substitution $p=(m\,c)\sinh u$ and a hyperbolic rotation evaluate it as $\frac{\pi}{2}J_0(k_m\sqrt{{r'_{t}}^2-r^2})$; and differentiation gives the closed form
 
