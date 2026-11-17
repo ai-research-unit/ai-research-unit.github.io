@@ -352,7 +352,7 @@ $$
 
 The scalar field's word collapses to a scale, an angle and a branch, so the fluid carries three data at each event: the marker density $\rho_{\mathrm{num}}=r^{2}$, the action $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, and the sign $\varepsilon$.
 
-The one complex equation separates into two real equations without remainder. The amplitude equation is the mass shell with the amplitude's curvature added, $E^{2}/c^{2}-p^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ with $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$. The transport equation is the conservation of the current $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$.
+The one complex equation separates into two real equations without remainder. The amplitude equation is the mass shell with the amplitude's curvature added, $E^{2}/c^{2}-\lvert\vec p\rvert^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}}$ with $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$. The transport equation is the conservation of the current $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$.
 
 The conserved density is the charge density $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, not the marker density, and the continuity equation is $\partial_t\rho_{\mathrm{chg}}+\nabla\cdot(\rho_{\mathrm{chg}}\vec v)=0$.
 

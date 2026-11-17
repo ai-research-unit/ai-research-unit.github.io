@@ -269,9 +269,9 @@ Two signs enter, and they come from two different places. The scalar one is $i^2
 The mass shell is then the single algebraic condition
 
 $$
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}\,\Longleftrightarrow-E^2/c^2+\vec p^2=-m^2
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}\,\Longleftrightarrow\,-E^2/c^2+\vec p^{\,2}=-m^{2}\,c^{2}
 \;\Longleftrightarrow\;
-E^2-\vec p^2=m^{2}\,c^{2}\,\Longleftrightarrow\,E^{2}=\vec p^{\,2}c^2+m^{2}\,c^{4},
+E^{2}=\vec p^{\,2}c^2+m^{2}\,c^{4},
 $$
 
 whose two frequency branches $E=\pm E_{\vec p}$ are the two poles $p_\pm$ of section *The Pole Structure and the Contour*. Substituting $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N$ in the amplitude gives the biquaternion form,

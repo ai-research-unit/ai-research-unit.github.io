@@ -12,7 +12,7 @@ The article assumes *$P$, $T$ and the Representation Labels* for the Casimirs' d
 
 ### Momentum Space
 
-Momentum space is the dual of the translation space: four real components $p_\mu$, with the invariant form $p^{2}=\sum_\mu\varepsilon_\mu p_\mu p_\mu$. The Poincaré group acts by
+Momentum space is the dual of the translation space: four real components $p_\mu$, with the norm $N=-\sum_\mu\varepsilon_\mu p_\mu p_\mu$. The Poincaré group acts by
 
 $$
 p\longmapsto\Lambda p,
