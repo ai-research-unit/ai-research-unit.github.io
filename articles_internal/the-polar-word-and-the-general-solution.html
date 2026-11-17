@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>Two objects, and a reader who merges them.</strong> <em>The Schrödinger Equation in Biquaternionic Polar Variables</em> writes two displays that look like the same statement:</p>
 <p>$$
-\tilde\Xi=r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 \qquad\qquad
 \tilde\Xi(t')=\tilde Q(t')\,\tilde\Xi(0),
 \qquad
@@ -96,18 +96,18 @@ $$</p>
 <h3 id="11-a-chart-not-a-solution">1.1 A chart, not a solution</h3>
 <p><strong>The word is a map from eight numbers to one element.</strong> It is</p>
 <p>$$
-\Phi:(r,\alpha,\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm r},\vec u_{\mathrm r})\longmapsto r\,e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm r}}{2}\vec u_{\mathrm r}\Bigr).
+\Phi:(\varrho,\alpha,\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm r},\vec u_{\mathrm r})\longmapsto \varrho\,e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm r}}{2}\vec u_{\mathrm r}\Bigr).
 $$</p>
 <p>The eight numbers are one positive scale, one angle, one rapidity, one unit vector, a second angle and a second unit vector; the two vectors carry two parameters each. The element has four complex coefficients, that is eight real components. The map is a bijection on the units once the branches are fixed (§1.3), so it neither adds an object nor drops a datum.</p>
-<p><strong>A parametrization is not a solution, because the two objects have different domains.</strong> A parametrization is a map from a parameter space to the field space. A solution is a map from time to the field space. To compare them one must compose: a solution becomes a curve $t'\mapsto(r(t'),\alpha(t'),\dots)$ in the parameter space. The word alone supplies no such curve. Nothing in $r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ says how any of the eight numbers depends on $t'$; the equation says it.</p>
-<p><strong>The complex analogue is exact.</strong> Every nonzero complex number is $z=r\,e^{i\theta}$. That is a change of coordinates on $\mathbb{C}^{\times}$, not a solution of the Cauchy–Riemann equations, and not a statement about any particular holomorphic function. The word is the same construction with eight coordinates instead of two. It is defined on the units of $\mathbb{B}$, which is the biquaternionic analogue of $\mathbb{C}^{\times}$.</p>
-<p><strong>The test that settles it.</strong> Take a constant field, $\tilde\Xi(t')=\tilde X$ for all $t'$. Its word exists at every time, because $\tilde X$ is a unit for a generic choice. It does not solve the equation unless $\tilde H_\Psi\tilde X=0$. One example, with $\tilde X=(0.3+0.4i,\ 0.1-0.2i,\ 0.5,\ 0.2i)$ and $\tilde H_\Psi=0.4\,e_t+i(0.1,0.2,0.3)$, has the word $(r,\alpha,\theta_{\mathrm{rpd}},\theta_{\mathrm r})=(0.4778,\ 0.534,\ 1.603,\ 1.528)$ and fails the equation by $\lVert\tilde H_\Psi\tilde X\rVert=0.428$. The word is there; the solution is not. A parametrization is exactly the kind of object that exists where the solution does not.</p>
+<p><strong>A parametrization is not a solution, because the two objects have different domains.</strong> A parametrization is a map from a parameter space to the field space. A solution is a map from time to the field space. To compare them one must compose: a solution becomes a curve $t'\mapsto(\varrho(t'),\alpha(t'),\dots)$ in the parameter space. The word alone supplies no such curve. Nothing in $\varrho\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ says how any of the eight numbers depends on $t'$; the equation says it.</p>
+<p><strong>The complex analogue is exact.</strong> Every nonzero complex number is $z=\varrho\,e^{i\theta}$. That is a change of coordinates on $\mathbb{C}^{\times}$, not a solution of the Cauchy–Riemann equations, and not a statement about any particular holomorphic function. The word is the same construction with eight coordinates instead of two. It is defined on the units of $\mathbb{B}$, which is the biquaternionic analogue of $\mathbb{C}^{\times}$.</p>
+<p><strong>The test that settles it.</strong> Take a constant field, $\tilde\Xi(t')=\tilde X$ for all $t'$. Its word exists at every time, because $\tilde X$ is a unit for a generic choice. It does not solve the equation unless $\tilde H_\Psi\tilde X=0$. One example, with $\tilde X=(0.3+0.4i,\ 0.1-0.2i,\ 0.5,\ 0.2i)$ and $\tilde H_\Psi=0.4\,e_t+i(0.1,0.2,0.3)$, has the word $(\varrho,\alpha,\theta_{\mathrm{rpd}},\theta_{\mathrm r})=(0.4778,\ 0.534,\ 1.603,\ 1.528)$ and fails the equation by $\lVert\tilde H_\Psi\tilde X\rVert=0.428$. The word is there; the solution is not. A parametrization is exactly the kind of object that exists where the solution does not.</p>
 <h3 id="12-what-the-word-does-not-do">1.2 What the word does not do</h3>
 <p><strong>It does not restrict the field.</strong> An ansatz is a proper subset of the fields, and it is introduced to make an equation solvable. The word is the whole set of units. The Schrödinger field lies in that set at every time or at none (§1.4), so the word restricts nothing.</p>
 <p><strong>It does not determine the time dependence.</strong> Four of the eight coordinates are angles or axes, and the equation moves them at rates that depend on the Hamiltonian. Two fields with the same scale and the same rapidity and different rotors are different fields, and the flow moves them differently. The word is a label of the field, not a law for it.</p>
 <p><strong>It brings nothing in behind the element.</strong> No module, no ideal, no projector, no column stands behind the four factors. This is the discipline the parent article states in its introduction, and the parametrization does not weaken it: the product of the four factors is the element.</p>
 <h3 id="13-the-branches-and-where-the-word-is-two-to-one">1.3 The branches, and where the word is two-to-one</h3>
-<p><strong>The scale and the phase.</strong> $N=\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\alpha}$ fixes $r=\sqrt{|N|}>0$ and $2\alpha\equiv\operatorname{Arg}N\pmod{2\pi}$. With the principal argument in $(-\pi,\pi]$ and $\alpha$ taken in $(-\pi/2,\pi/2]$, the phase is unique.</p>
+<p><strong>The scale and the phase.</strong> $N=\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\alpha}$ fixes $\varrho=\sqrt{|N|}>0$ and $2\alpha\equiv\operatorname{Arg}N\pmod{2\pi}$. With the principal argument in $(-\pi,\pi]$ and $\alpha$ taken in $(-\pi/2,\pi/2]$, the phase is unique.</p>
 <p><strong>The rotor.</strong> $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm r}}{2}\vec u_{\mathrm r})$ is a point of the unit three-sphere, parametrized by $\theta_{\mathrm r}\in[0,2\pi)$ and $\vec u_{\mathrm r}\in S^{2}$. The axis is undefined at $\theta_{\mathrm r}=0$ and at $\theta_{\mathrm r}=2\pi$, where the rotor is $e_t$ and $-e_t$.</p>
 <p><strong>The one ambiguity that matters below.</strong> A shift</p>
 <p>$$
@@ -124,15 +124,15 @@ $$</p>
 \qquad
 \langle\tilde Q\tilde\Xi\rangle_{\natural}=e^{-2i\omega_t t'}\langle\tilde\Xi\rangle_{\natural},
 $$</p>
-<p>so $N$ itself turns with the central phase while $|N|=r^{2}$ is constant exactly. The two norms say different things about the propagator, and the difference is not an inconsistency: the Hermitian norm is trivial, $\tilde Q\tilde Q^{*}=e_t$, and the quaternionic norm is not. The statements were checked separately, the first to $4.4\times10^{-16}$ and the second to $1.4\times10^{-15}$. The determinant's phase running at $-2\omega_t$ is the same fact as $\alpha$ running at $-\omega_t$, since $N=r^{2}e^{2i\alpha}$; it is one invariant read twice, and it is the reason the scale is frozen while the phase is not.</p>
+<p>so $N$ itself turns with the central phase while $|N|=\varrho^{2}$ is constant exactly. The two norms say different things about the propagator, and the difference is not an inconsistency: the Hermitian norm is trivial, $\tilde Q\tilde Q^{*}=e_t$, and the quaternionic norm is not. The statements were checked separately, the first to $4.4\times10^{-16}$ and the second to $1.4\times10^{-15}$. The determinant's phase running at $-2\omega_t$ is the same fact as $\alpha$ running at $-\omega_t$, since $N=\varrho^{2}e^{2i\alpha}$; it is one invariant read twice, and it is the reason the scale is frozen while the phase is not.</p>
 <h3 id="15-why-the-confusion-is-easy">1.5 Why the confusion is easy</h3>
-<p><strong>The word has the shape of the substitution that solves the central case.</strong> For a central field the word collapses to $r\,e^{i\alpha}(\pm e_t)$, and the equation becomes the pair</p>
+<p><strong>The word has the shape of the substitution that solves the central case.</strong> For a central field the word collapses to $\varrho\,e^{i\alpha}(\pm e_t)$, and the equation becomes the pair</p>
 <p>$$
 \frac{\partial S}{\partial t'}+\frac{|\vec\nabla_\Phi S|^{2}}{2m}+V+Q=0,
 \qquad
 \frac{\partial A^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(A^{2}\frac{\vec\nabla_\Phi S}{m}\Bigr)=0,
 $$</p>
-<p>with $A=r$, $S=\hbar\alpha$. Those are Madelung's equations, and they are a rewriting of the equation for that class. A reader who meets the four-factor word after Madelung reads it as the same kind of object. It is not: Madelung's form is the word restricted to the central class, where the boost and the rotor have collapsed (§4.2).</p>
+<p>with $A=\varrho$, $S=\hbar\alpha$. Those are Madelung's equations, and they are a rewriting of the equation for that class. A reader who meets the four-factor word after Madelung reads it as the same kind of object. It is not: Madelung's form is the word restricted to the central class, where the boost and the rotor have collapsed (§4.2).</p>
 <p><strong>The word is a coordinate system, and coordinates are not dynamics.</strong> The rest of this note is the dynamics written in those coordinates.</p>
 <h2 id="2-the-general-solution">2. The General Solution</h2>
 <h3 id="21-the-statement">2.1 The statement</h3>
@@ -187,8 +187,8 @@ $$</p>
 <p><strong>The link between (1) and (2) is the product $\tilde Q\tilde\Xi$, read back in the chart.</strong> Write the initial field in its word and multiply on the left by the propagator:</p>
 <p>$$
 \tilde Q\,\tilde\Xi(0)
-=\Bigl(e^{i\alpha_Q}\tilde u_Q\Bigr)\Bigl(r\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}\Bigr)
-=r\,e^{i(\alpha+\alpha_Q)}\,\bigl(\tilde u_Q\,\tilde U_{\Psi,\mathrm b}\,\tilde u_Q^{\natural}\bigr)\bigl(\tilde u_Q\,\tilde u_{\mathrm r}\bigr).
+=\Bigl(e^{i\alpha_Q}\tilde u_Q\Bigr)\Bigl(\varrho\,e^{i\alpha}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}\Bigr)
+=\varrho\,e^{i(\alpha+\alpha_Q)}\,\bigl(\tilde u_Q\,\tilde U_{\Psi,\mathrm b}\,\tilde u_Q^{\natural}\bigr)\bigl(\tilde u_Q\,\tilde u_{\mathrm r}\bigr).
 $$</p>
 <p>The second equality is an identity: $\tilde u_Q\tilde u_Q^{\natural}=e_t$ was inserted, and the central phase and the real scale were moved to the front, which they may be because they are central.</p>
 <p><strong>The rotor does not pass through the boost.</strong> A real rotor and a Hermitian boost commute only when their axes are parallel or one of the two is trivial. In general $\tilde u_Q\tilde U_{\Psi,\mathrm b}\neq\tilde U_{\Psi,\mathrm b}\tilde u_Q$, so the word of $\tilde Q\tilde\Xi$ is not the word of $\tilde\Xi$ with $\tilde u_Q$ moved to the front. The rotor is applied on both sides of the boost, and what that does is rotate the boost's axis and leave everything else alone:</p>
@@ -198,7 +198,7 @@ $$</p>
 $$</p>
 <p><strong>Reading the parameters off the product.</strong></p>
 <p>$$
-\boxed{\;r'=r,
+\boxed{\;r'=\varrho,
 \qquad
 \theta_{\mathrm{rpd}}'=\theta_{\mathrm{rpd}},
 \qquad
@@ -222,8 +222,8 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>scale $r$</td>
-<td>$r(t')=r(0)$</td>
+<td>scale $\varrho$</td>
+<td>$\varrho(t')=\varrho(0)$</td>
 <td>arbitrary $>0$</td>
 <td>frozen</td>
 </tr>
@@ -268,11 +268,11 @@ $$</p>
 <p><strong>Two are frozen and six move.</strong> The scale and the rapidity are constants of the motion. The phase, the rotor, its angle and its axis, and the boost's axis all move. The count is the one the parent article gives, and it follows from the composition without any further input.</p>
 <p><strong>The two frozen parameters are the two invariants.</strong> The equation preserves the quaternionic norm in modulus and the Hermitian norm in value:</p>
 <p>$$
-|\langle\tilde\Xi(t')\rangle_{\natural}|=r^{2},
+|\langle\tilde\Xi(t')\rangle_{\natural}|=\varrho^{2},
 \qquad
 \rho(t')=2\,\mathrm{Sc}\bigl(\tilde\Xi(t')^{\dagger}\tilde\Xi(t')\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}}.
 $$</p>
-<p>The first gives $r$, the second gives $\theta_{\mathrm{rpd}}$ once $r$ is known. Both are unchanged in the flow, to $10^{-15}$ in the checks. The six that move are the ones no norm reads, which is the statement that the rotor and the axes are frame data.</p>
+<p>The first gives $\varrho$, the second gives $\theta_{\mathrm{rpd}}$ once $\varrho$ is known. Both are unchanged in the flow, to $10^{-15}$ in the checks. The six that move are the ones no norm reads, which is the statement that the rotor and the axes are frame data.</p>
 <h3 id="33-the-derivative-laws">3.3 The derivative laws</h3>
 <p><strong>At the level of the elements the laws are linear and exact.</strong> Differentiating the composition gives</p>
 <p>$$
@@ -330,7 +330,7 @@ $$</p>
 <h3 id="42-they-are-trivial-exactly-in-the-central-case">4.2 They are trivial exactly in the central case</h3>
 <p><strong>A field is central when $\tilde\Xi=\Xi_t\,e_t$ with $\Xi_t\in\mathbb{C}$.</strong> Its word collapses to</p>
 <p>$$
-r=|\Xi_t|,
+\varrho=|\Xi_t|,
 \qquad
 \tilde U_{\Psi,\mathrm b}=e_t,
 \qquad
@@ -338,7 +338,7 @@ r=|\Xi_t|,
 \qquad
 \alpha\equiv\arg\Xi_t\ (\mathrm{mod}\ \pi),
 $$</p>
-<p>checked on a hundred random central fields to $4.4\times10^{-16}$. Two of the four factors have collapsed: the boost is the identity and the rotor is a sign, so the word is a scale, a phase and a sign. This is Madelung's pair with $A=r$ and $S=\hbar\alpha$.</p>
+<p>checked on a hundred random central fields to $4.4\times10^{-16}$. Two of the four factors have collapsed: the boost is the identity and the rotor is a sign, so the word is a scale, a phase and a sign. This is Madelung's pair with $A=\varrho$ and $S=\hbar\alpha$.</p>
 <p><strong>The sign of the rotor is the branch of the angle.</strong> With $\alpha$ in $(-\pi/2,\pi/2]$, a central field whose argument lies outside the strip needs $\tilde u_{\mathrm r}=-e_t$. The sign is not a physical datum; it is the half-turn branch of the double cover, and it is the same ambiguity as $\alpha\mapsto\alpha+\pi$ in §1.3.</p>
 <p><strong>The central class is not invariant under a general Hamiltonian.</strong> If $\vec h_\Psi\neq0$ then $\tilde H_\Psi\tilde\Xi$ has a vector part, so a central field leaves the centre at once. The class is invariant exactly when $\tilde H_\Psi$ is central, that is when $\vec h_\Psi=0$. In the check, a central field evolved with $h_t=0.3$ and $\vec h_\Psi=(0.2,0,0)$ acquired a vector part of norm $0.304$ in time $0.9$, while the same field evolved with $\vec h_\Psi=0$ stayed central to machine precision.</p>
 <p><strong>So the answer to "are they one?" is: only for the fields whose word has collapsed, and those fields are not stable under the flow unless the Hamiltonian is central too.</strong></p>
@@ -377,7 +377,7 @@ $$</p>
 <thead>
 <tr>
 <th>$t'$</th>
-<th>$r$</th>
+<th>$\varrho$</th>
 <th>$\theta_{\mathrm{rpd}}$</th>
 <th>$\alpha$</th>
 <th>$\theta_{\mathrm r}$</th>
@@ -441,7 +441,7 @@ $$</p>
 <td>machine precision</td>
 </tr>
 <tr>
-<td>propagator's word: $r=1$, boost $=e_t$</td>
+<td>propagator's word: $\varrho=1$, boost $=e_t$</td>
 <td>$2.2\times10^{-16}$</td>
 </tr>
 <tr>
@@ -481,7 +481,7 @@ $$</p>
 <td>$2.7\times10^{-15}$</td>
 </tr>
 <tr>
-<td>central word, $r$, $e_t$, $\pm e_t$, $\alpha\equiv\arg\Xi_t$</td>
+<td>central word, $\varrho$, $e_t$, $\pm e_t$, $\alpha\equiv\arg\Xi_t$</td>
 <td>$4.4\times10^{-16}$</td>
 </tr>
 <tr>
@@ -521,11 +521,11 @@ $$</p>
 <p><strong>2. The rotor's angle is not linear, and the parent's sentence needs the qualifier.</strong> The parent states $d\theta_{\mathrm r}/dt'=2|\vec h_\Psi|/\hbar$ for the field's rotor angle. That is the propagator's rate. The field's angle runs at $2\omega_\Psi\cos\varphi$ at $t'=0$ and oscillates in general (§3.3). The exact law is $\tilde u_{\mathrm r}(t')=\tilde u_Q(t')\tilde u_{\mathrm r}(0)$; the additive law is the special case of a trivial rotor or a parallel axis. The sentence belongs to the propagator's word, not to the field's.</p>
 <p><strong>3. "The rotor's axis precesses at the gap" is loose.</strong> What precesses is the frame the rotor carries. The axis of the composite $\tilde u_Q\tilde u_{\mathrm r}$ is a combination of the transported old axis, the Hamiltonian axis and their cross product; it deviates from the transported axis by up to $1.41$ rad in the check. The boost's axis does precess, because it is conjugated and not multiplied.</p>
 <p><strong>4. The general solution is exact for constant coefficients.</strong> With $\nabla$ in $h_t$ or $\vec h_\Psi$ the display holds coefficient by coefficient and $\tilde Q$ is an operator; the note does not treat that case, and neither does the parent's solution section.</p>
-<p><strong>5. What is not settled.</strong> The physical reading of a rapidity that is constant while its axis turns is open: a constant rapidity on a moving axis is not yet a velocity, because nothing in the equation selects the axis. The non-Hermitian generator and the relativistic limit are the two other open points the parent records, and the word is the natural place to test them: an imaginary part in $h_t$ makes $r$ run, and a real part in $\vec h_\Psi$ makes the boost leave $e_t$.</p>
+<p><strong>5. What is not settled.</strong> The physical reading of a rapidity that is constant while its axis turns is open: a constant rapidity on a moving axis is not yet a velocity, because nothing in the equation selects the axis. The non-Hermitian generator and the relativistic limit are the two other open points the parent records, and the word is the natural place to test them: an imaginary part in $h_t$ makes $\varrho$ run, and a real part in $\vec h_\Psi$ makes the boost leave $e_t$.</p>
 <h2 id="summary">Summary</h2>
-<p>The polar word $\tilde\Xi=r\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a parametrization of the units of $\mathbb{B}$, not a solution of the Schrödinger equation. It is a bijection between eight real coordinates and eight real components once the branches are fixed, it exists exactly on the complement of the zero-divisor cone, and it holds for every field, solution or not. A constant field has a word and fails the equation; that is the difference in one example.</p>
+<p>The polar word $\tilde\Xi=\varrho\,e^{i\alpha}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ is a parametrization of the units of $\mathbb{B}$, not a solution of the Schrödinger equation. It is a bijection between eight real coordinates and eight real components once the branches are fixed, it exists exactly on the complement of the zero-divisor cone, and it holds for every field, solution or not. A constant field has a word and fails the equation; that is the difference in one example.</p>
 <p>The general solution is $\tilde\Xi(t')=\tilde Q(t')\tilde\Xi(0)$ with $\tilde Q=\exp(-i\tilde H_\Psi t'/\hbar)$, exact for a time-independent Hamiltonian and for every initial element. The propagator's word is a central phase times a rotor, with scale $1$ and boost $e_t$ frozen; its phase runs at $-\omega_t$ and its rotor's angle at $2\omega_\Psi$, the mean and the gap of the two eigenvalues $h_t\pm|\vec h_\Psi|$.</p>
-<p>The two are linked by the composition $\tilde Q\tilde\Xi$, re-read in the chart: $r$ and $\theta_{\mathrm{rpd}}$ are frozen, the phase runs, the rotor is multiplied on the left and the boost is conjugated. Six of the eight coordinates move and two are not coordinates but invariants: $r$ is the fourth root of the conserved $|N|$, and $\theta_{\mathrm{rpd}}$ is the conserved Hermitian norm over $2r^{2}$. The determinant itself is not conserved; it turns with the central phase, $\langle\tilde\Xi(t')\rangle_{\natural}=e^{-2i\omega_t t'}\langle\tilde\Xi(0)\rangle_{\natural}$, which is the same statement as the phase running at $-\omega_t$. The chart does not diagonalise the flow: the element laws are linear, the coordinate laws are not, and the rotor's angle is additive only when the axes are parallel.</p>
+<p>The two are linked by the composition $\tilde Q\tilde\Xi$, re-read in the chart: $\varrho$ and $\theta_{\mathrm{rpd}}$ are frozen, the phase runs, the rotor is multiplied on the left and the boost is conjugated. Six of the eight coordinates move and two are not coordinates but invariants: $\varrho$ is the fourth root of the conserved $|N|$, and $\theta_{\mathrm{rpd}}$ is the conserved Hermitian norm over $2r^{2}$. The determinant itself is not conserved; it turns with the central phase, $\langle\tilde\Xi(t')\rangle_{\natural}=e^{-2i\omega_t t'}\langle\tilde\Xi(0)\rangle_{\natural}$, which is the same statement as the phase running at $-\omega_t$. The chart does not diagonalise the flow: the element laws are linear, the coordinate laws are not, and the rotor's angle is additive only when the axes are parallel.</p>
 <p>$\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ are not the identity. They are the identity only for a central field, and a central field is invariant only under a central Hamiltonian. The propagator's boost is $e_t$ for a different reason: its generator has a real vector part, and the exponential of a real vector is a rotation. That is a property of the propagator; the field's boost is non-trivial in general, and the propagator conjugates it rather than removing it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -581,8 +581,8 @@ $$</p>
 <td>The determinant law; $\lvert N\rvert$ is the invariant</td>
 </tr>
 <tr>
-<td>$r>0$</td>
-<td>The scale, $r=\sqrt{\lvert N\rvert}$</td>
+<td>$\varrho>0$</td>
+<td>The scale, $\varrho=\sqrt{\lvert N\rvert}$</td>
 </tr>
 <tr>
 <td>$\alpha\in(-\pi/2,\pi/2]$</td>

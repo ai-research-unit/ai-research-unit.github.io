@@ -91,7 +91,7 @@ $$</p>
 <h3 id="multiplicative-structure">Multiplicative Structure</h3>
 <p>The multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ is also a locally compact abelian group, isomorphic to $\mathbb{R}_{>0} \times \mathbb{S}^1$ via the polar decomposition</p>
 <p>$$
-Q = r \exp(i\theta), \qquad r > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
+Q = \varrho \exp(i\theta), \qquad \varrho > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
 $$</p>
 <p>Its characters are</p>
 <p>$$
@@ -165,7 +165,7 @@ $$</p>
 $$</p>
 <p>The <strong>indicator function</strong> of $F$ is</p>
 <p>$$
-h_F(\theta) = \limsup_{r \to \infty} \frac{\log |F(r \exp(i\theta))|}{r}.
+h_F(\theta) = \limsup_{\varrho \to \infty} \frac{\log |F(\varrho \exp(i\theta))|}{\varrho}.
 $$</p>
 <h3 id="the-paleywiener-theorem_1">The Paley–Wiener Theorem</h3>
 <p><strong>Theorem (Paley–Wiener).</strong> The Fourier transform is a bijection between</p>
@@ -232,7 +232,7 @@ $$</p>
 <h3 id="the-hardy-spaces">The Hardy Spaces</h3>
 <p>The <strong>Hardy space</strong> $H^p(D)$ on the unit disk $D = \{Q : \sqrt{\langle Q\rangle_{*}} < 1\}$ is the set of holomorphic functions $f$ on $D$ with</p>
 <p>$$
-\|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r \exp(i\theta))|^p \, d\theta \right)^{1/p} < \infty
+\|f\|_{H^p} = \sup_{0 < \varrho < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(\varrho \exp(i\theta))|^p \, d\theta \right)^{1/p} < \infty
 $$</p>
 <p>for $1 \leq p < \infty$, and</p>
 <p>$$

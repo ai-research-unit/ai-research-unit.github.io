@@ -80,7 +80,7 @@ i\hbar\,c\,\partial/\partial r'_t\,\tilde\Xi = \tilde H_\Psi\,\tilde\Xi,
 \tilde\Xi \in \mathbb{B}.
 $$</p>
 <p>The coefficients $h_t$ and $\vec h_\Psi$ are numbers here: $\tilde H_\Psi$ is an element of the algebra and not a differential operator, so the equation is an ordinary differential equation in $r'_t$ and describes a finite-dimensional system. The differential case, in which those coefficients contain $\nabla$, is <em>The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case</em>, and every statement below holds there coefficient by coefficient.</p>
-<p>Dividing by $i\hbar\,c$ gives the same equation in a second writing, where the generator is the observable's mirror over one real scale,</p>
+<p>Dividing by $i\hbar\,c$ gives the same equation in a second writing, where the generator is the observable multiplied by $-i$ over one real scale,</p>
 <p>$$
 \partial/\partial r'_t\,\tilde\Xi = \frac{1}{\hbar\,c}\,\tilde H_\Phi\,\tilde\Xi,
 \qquad
@@ -163,8 +163,7 @@ $$</p>
 \qquad\text{and}\qquad
 (\tilde H_\Phi)^{*}=(-i\tilde H_\Psi)^{*}=\tilde H_\Psi^{*}(-i)^{*}=\tilde H_\Psi\,i=i\tilde H_\Psi=-\tilde H_\Phi.
 $$</p>
-<p>So $\tilde H_\Phi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto \tilde H_\Phi=-i\tilde H_\Psi$ is a real-linear isomorphism $\mathbb{B}_{\Psi} \to \mathbb{B}_{\Phi}$ with inverse $\tilde{Q} \mapsto i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. The sign is the one
-the mirror convention fixes, $\tilde X_\Psi=i\tilde X_\Phi$, read backwards. For example, with $\tilde H_\Psi = i\,\vec e_x$ (Hermitian, since
+<p>So $\tilde H_\Phi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto \tilde H_\Phi=-i\tilde H_\Psi$ is a real-linear isomorphism $\mathbb{B}_{\Psi} \to \mathbb{B}_{\Phi}$ with inverse $\tilde{Q} \mapsto i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. The sign is the one the multiplication by $i$ fixes, $\tilde X_\Psi=i\tilde X_\Phi$, read backwards. For example, with $\tilde H_\Psi = i\,\vec e_x$ (Hermitian, since
 $(i\vec e_x)^{*} = i\vec e_x$), one has $\tilde H_\Phi=-i\,(i\vec e_x)=\vec e_x$, and $\vec e_x$ is anti-Hermitian because $(\vec e_x)^{*} = -\vec e_x$.</p>
 <p><strong>This computation is the second writing.</strong> The generator of the second writing is $\tilde H_\Phi/\hbar\,c$, and the computation above is the one that supplies $\tilde H_\Phi$: anti-Hermitian because $i$ is central and $i^{*}=-i$, and left anti-Hermitian by the division by the real $\hbar\,c$. An anti-Hermitian generator exponentiates to a $*$-unitary flow, because conjugation reverses the sign of the exponent, so the exponential of an anti-Hermitian element and its conjugate are mutual inverses. The two writings therefore carry one equation. The first multiplies by the Hermitian observable $\tilde H_\Psi$. The second multiplies by $\tilde H_\Phi=-i\tilde H_\Psi$, divided by the real unit $\hbar\,c$. The two differ by the central $i$ and by one real number.</p>
 <h2 id="the-field-is-one-element-of-the-algebra">The Field Is One Element of the Algebra</h2>
@@ -205,7 +204,7 @@ $$</p>
 \tilde{Ϛ}_{\Psi}=\frac{\tilde\Xi\tilde\Xi^{*}}{\rho_{\mathrm{num}}}\in\mathbb{B}_{\Psi},
 $$</p>
 <p>which is Hermitian, positive and of unit trace, so $\tilde{Ϛ}_{\Psi}$ is a state in the sense of the companion article. The field and that state are not the same object; they are related by $\tilde\Xi\mapsto\tilde\Xi\tilde\Xi^{*}$, and the same central $i$ acts as the complex structure on the field while exchanging the sectors in which the operator is expressed. The expectation of the Hamiltonian in a field is $\mathrm{Sc}(\tilde H_\Psi\tilde{Ϛ}_{\Psi})$, which is real by the Hermiticity above.</p>
-<h2 id="the-equation-written-in-math200-and-its-solution">The Equation Written in $\mathbb{B}_{\Psi}$, and Its Solution</h2>
+<h2 id="the-equation-written-in-math202-and-its-solution">The Equation Written in $\mathbb{B}_{\Psi}$, and Its Solution</h2>
 <p>With the objects separated, the first writing reads</p>
 <p>$$
 \boxed{\;i\hbar\,c\,\partial/\partial r'_t\tilde{Ξ}(r'_t) = \tilde H_\Psi\,\tilde{Ξ}(r'_t),
@@ -244,7 +243,7 @@ $$</p>
 \langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \frac{\mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}\tilde{Ξ}^{*})}{\mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^{*})} = \mathrm{Sc}\bigl(\tilde H_\Psi\tilde{Ϛ}_{\Psi}\bigr)\in\mathbb{R},
 $$</p>
 <p>which is real because the symbol is Hermitian, and which reduces in the matrix picture to $\operatorname{Tr}(H\mathsf{M}_2(\tilde{Ϛ}_{\Psi}))$, with $H$ the energy reading of $\tilde H_\Psi$. Questions of the form "is the field on this axis" belong to the corpus's measurement articles and are not needed here; no projector enters this article.</p>
-<h2 id="the-equation-written-in-math248">The Equation Written in $\mathbb{B}_{\Phi}$</h2>
+<h2 id="the-equation-written-in-math250">The Equation Written in $\mathbb{B}_{\Phi}$</h2>
 <p>The second writing puts the derivative alone on the left and the generator on the right,</p>
 <p>$$
 \partial/\partial r'_t\,\tilde{Ξ} = \frac{1}{\hbar\,c}\tilde H_\Phi\,\tilde{Ξ},

@@ -91,8 +91,8 @@ $$</p>
 <p>each of multiplicity two, each with a two-dimensional eigenspace. The minimal polynomial is $(x-\lambda_{+})(x-\lambda_{-})$, square-free, so $L_{\tilde Q}$ is diagonalisable. Nothing is defective.</p>
 <p><strong>The polar representation.</strong> The four-factor word, and it is the only stratum where all four factors are independent:</p>
 <p>$$
-\boxed{\;\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
-=r\,e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}
+\boxed{\;\tilde Q=\varrho\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
+=\varrho\,e^{i\alpha}\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$</p>
 <p>with</p>
 <p>$$
@@ -100,7 +100,7 @@ $$</p>
 \qquad
 \tilde u_{\mathrm r}=\cos\frac{\theta}{2}\,e_{t}+\sin\frac{\theta}{2}\,\vec u_{\mathrm r}.
 $$</p>
-<p>The scale is the modulus, $r=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, the phase is half the argument of the norm, $\alpha=\tfrac12\operatorname{Arg}\langle\tilde Q\rangle_{\natural}$, the boost has a free rapidity and a free axis, the rotor has a free angle and a free axis. Everything is computed from $Q_{t},Q_{x},Q_{y},Q_{z}$ by closed formulas — <em>The Complete Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Result in Terms of the Coordinates</em>, where the two unit factors are boxed exactly as above.</p>
+<p>The scale is the modulus, $\varrho=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, the phase is half the argument of the norm, $\alpha=\tfrac12\operatorname{Arg}\langle\tilde Q\rangle_{\natural}$, the boost has a free rapidity and a free axis, the rotor has a free angle and a free axis. Everything is computed from $Q_{t},Q_{x},Q_{y},Q_{z}$ by closed formulas — <em>The Complete Polar Decomposition of an N-Regular Biquaternion</em>, §<em>The Result in Terms of the Coordinates</em>, where the two unit factors are boxed exactly as above.</p>
 <p><strong>What it costs.</strong> Nothing. The stratum is the only one where the polar word and the spectral decomposition are both available; <em>The N-Regular, Spectrally Regular Sector</em>, §<em>Consequences</em>: "in $\Sigma_{01}$ the polar word fails while the spectral decomposition survives, and in $\Sigma_{10}$ the spectral decomposition fails while the polar word survives."</p>
 <p><strong>Its dimension.</strong> Eight real, that is four complex: the stratum is an open set of $\mathbb{C}^{4}$.</p>
 <h3 id="12-n-regular-spectrally-degenerate">1.2 N-Regular, Spectrally Degenerate</h3>
@@ -116,9 +116,9 @@ $$</p>
 <p>Two Jordan blocks of size two, no eigenbasis, minimal polynomial $(x-Q_{t})^{2}$. <em>The One-Sided Operator Exponential on the N-Regular Sector</em>, §<em>The Exponential at the Wall</em>: "Their product has the single eigenvalue $Q_{t}$, with two Jordan blocks of size two, and its spectrum carries no angle at all." On the scalar line $L_{\tilde Q}=Q_{t}$ exactly, which is diagonalisable, and the second bit is the only thing that keeps it out of $\Sigma_{11}$.</p>
 <p><strong>The polar representation.</strong> The word survives with the same four factors, and it is rigid.</p>
 <p>$$
-\boxed{\;\tilde Q=Q_{t}\bigl(e_{t}+\vec\Upsilon\bigr)=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
+\boxed{\;\tilde Q=Q_{t}\bigl(e_{t}+\vec\Upsilon\bigr)=\varrho\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
 $$</p>
-<p>with $r=\lvert Q_{t}\rvert$, $\alpha=\arg\Rho$ where $\Rho=\varepsilon Q_{t}$ is the principal root of $Q_{t}^{2}$, and $\varepsilon=\pm1$ the sign of that root. <strong>The product of the two unit factors is $\pm$unipotent</strong>:</p>
+<p>with $\varrho=\lvert Q_{t}\rvert$, $\alpha=\arg\Rho$ where $\Rho=\varepsilon Q_{t}$ is the principal root of $Q_{t}^{2}$, and $\varepsilon=\pm1$ the sign of that root. <strong>The product of the two unit factors is $\pm$unipotent</strong>:</p>
 <p>$$
 \tilde U_{\mathrm b}\tilde u_{\mathrm r}=\varepsilon\bigl(e_{t}+\vec\Upsilon\bigr),
 $$</p>
@@ -146,7 +146,7 @@ $$</p>
 <p>$$
 \Rho=\sqrt{\langle\tilde Q\rangle_{\natural}}=0,
 $$</p>
-<p>so there is no $r>0$ and no unit factor of norm one — the product of the four factors would have norm zero and could not equal a nonzero element (<em>The Polar Decomposition of an N-Degenerate Biquaternion</em>, §<em>The Vanishing of the Modulus</em>). What replaces it is a <strong>two-object word</strong>: one complex number and one idempotent,</p>
+<p>so there is no $\varrho>0$ and no unit factor of norm one — the product of the four factors would have norm zero and could not equal a nonzero element (<em>The Polar Decomposition of an N-Degenerate Biquaternion</em>, §<em>The Vanishing of the Modulus</em>). What replaces it is a <strong>two-object word</strong>: one complex number and one idempotent,</p>
 <p>$$
 \tilde Q=c\,\tilde\Pi .
 $$</p>
@@ -187,18 +187,18 @@ $$</p>
 <tbody>
 <tr>
 <td>$\Sigma_{11}$</td>
-<td>$\tilde Q=r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$, $r=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, $\alpha=\tfrac12\operatorname{Arg}\langle\tilde Q\rangle_{\natural}$</td>
+<td>$\tilde Q=\varrho\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$, $\varrho=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, $\alpha=\tfrac12\operatorname{Arg}\langle\tilde Q\rangle_{\natural}$</td>
 <td>four independent factors; no constraint linking them</td>
 </tr>
 <tr>
 <td>$\Sigma_{10}$</td>
-<td>$\tilde Q=r\,e^{i\alpha}\bigl[\varepsilon\,(e_{t}+\vec\Upsilon)\bigr]=Q_{t}\bigl(e_{t}+\vec\Upsilon\bigr)$, $\vec\Upsilon^{2}=0$</td>
+<td>$\tilde Q=\varrho\,e^{i\alpha}\bigl[\varepsilon\,(e_{t}+\vec\Upsilon)\bigr]=Q_{t}\bigl(e_{t}+\vec\Upsilon\bigr)$, $\vec\Upsilon^{2}=0$</td>
 <td>four factors, but $\tilde U_{\mathrm b}\tilde u_{\mathrm r}=\varepsilon(e_{t}+\vec\Upsilon)$ is $\pm$unipotent</td>
 </tr>
 <tr>
 <td>$\Sigma_{01}$</td>
 <td>$\tilde Q=c\,\tilde\Pi$, $c=2Q_{t}$, $\tilde\Pi^{2}=\tilde\Pi$, $2\,\mathrm{Sc}\tilde\Pi=1$</td>
-<td>two objects: no $r$, no unit factor</td>
+<td>two objects: no $\varrho$, no unit factor</td>
 </tr>
 <tr>
 <td>$\Sigma_{00}$</td>
@@ -207,7 +207,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Why the modulus dies at $\Sigma_{01}$ and $\Sigma_{00}$.</strong> The scale is $r=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, and $\langle\tilde Q\rangle_{\natural}=0$ on both strata. So $r=0$, and no unit factor of norm one can multiply to give a nonzero element. The word fails at the scale, not at the angles.</p>
+<p><strong>Why the modulus dies at $\Sigma_{01}$ and $\Sigma_{00}$.</strong> The scale is $\varrho=\sqrt{\lvert\langle\tilde Q\rangle_{\natural}\rvert}$, and $\langle\tilde Q\rangle_{\natural}=0$ on both strata. So $\varrho=0$, and no unit factor of norm one can multiply to give a nonzero element. The word fails at the scale, not at the angles.</p>
 <p><strong>The constraint that locks the two angles at $\Sigma_{10}$.</strong> The unit part must be $\pm$unipotent, and that forces</p>
 <p>$$
 \cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta}{2}=\varepsilon,
@@ -242,7 +242,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\Sigma_{11}$</td>
-<td>$r$, $\alpha$, $\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$</td>
+<td>$\varrho$, $\alpha$, $\theta_{\mathrm{rpd}}$, $\theta$, $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$</td>
 <td>$1+1+1+1+2+2$</td>
 <td>$8$</td>
 <td>$2\times\tfrac12$ and $0\oplus1$</td>
@@ -542,7 +542,7 @@ $$</p>
 <p><strong>This is the stratum where the second gate is visible in physics</strong>: $B^{2}(\tilde\nabla)=\Delta$ vanishes on the solution because the momentum has no vector part. There is no locked angle to find, because there is no angle at all.</p>
 <h3 id="43-n-degenerate-spectrally-regular">4.3 N-Degenerate, Spectrally Regular</h3>
 <p><strong>Massless: the symbol is a zero divisor and the modulus is gone.</strong> $k_{m}=0$, so $\Box\tilde\Xi=0$ on the solutions and $\langle\tilde K\rangle_{\natural}=0$. <em>The Dirac Equation in Biquaternionic Form</em>, §<em>Massless Plane Waves</em>: nonzero solutions "exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null". The kernel has complex dimension two: one state per helicity value.</p>
-<p><strong>The word has no value on the cone.</strong> <em>The Massless Limit as a Boundary Value of the Polar Word</em>, §<em>The Word and the Mass Shell</em>: "The word is defined exactly on the complement of the cone, and the massless limit is the limit $r\to0$, which is not a point of the domain." What survives is the boundary value</p>
+<p><strong>The word has no value on the cone.</strong> <em>The Massless Limit as a Boundary Value of the Polar Word</em>, §<em>The Word and the Mass Shell</em>: "The word is defined exactly on the complement of the cone, and the massless limit is the limit $\varrho\to0$, which is not a point of the domain." What survives is the boundary value</p>
 <p>$$
 L=\frac{R\varkappa_{\mathrm{phs}}}{2}\left(e_{t}+i\vec u_{\mathrm b}\right)\tilde u_{\mathrm r},
 \qquad

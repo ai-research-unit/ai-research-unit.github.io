@@ -167,7 +167,7 @@ and the reduced norm is $\langle\breve Q\rangle_{\mathrm{ts}}=\lambda_1\lambda_2
 <p>The algebra is <strong>reduced</strong>: if $\breve X^{2}=0$, both eigenvalues of $\breve X$ are zero, hence $\breve X=0$. There is no nilpotent regime, in contrast with the biquaternions. The distinct regime splits into the invertibles and the zero divisors according to whether the norm vanishes, and the scalar regime is the only spectral degeneration. In the scalar regime the two-term spectral form is a non-unique refinement of the one-term decomposition; the functions below are unaffected, because their spectral form is continuous in $\lambda_1,\lambda_2$.</p>
 <h3 id="the-idempotent-principle">The Idempotent Principle</h3>
 <p>Every elementary function of this article is the spectral function of its complex counterpart. The rule is stated once.</p>
-<p><strong>Theorem (Idempotent Principle).</strong> Let $f(x)=\sum c_nx^n$ be a complex power series with radius of convergence $\rho$, and let $\lvert\lambda_1\rvert,\lvert\lambda_2\rvert<\rho$. Then</p>
+<p><strong>Theorem (Idempotent Principle).</strong> Let $f(x)=\sum c_nx^n$ be a complex power series with radius of convergence $R$, and let $\lvert\lambda_1\rvert,\lvert\lambda_2\rvert<R$. Then</p>
 <p>$$
 \boxed{\;
 f(\breve Q)=f(\lambda_1)\Pi_++f(\lambda_2)\Pi_-
@@ -345,7 +345,7 @@ $$</p>
 <th>Component</th>
 <th>Name</th>
 <th>Value from $\lambda_1,\lambda_2$</th>
-<th>Value in $(\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$</th>
+<th>Value in $(\varrho,\theta_{\mathrm{rpd}},\alpha,\beta)$</th>
 </tr>
 </thead>
 <tbody>
@@ -353,7 +353,7 @@ $$</p>
 <td>$q_{\log\blacktriangle}$</td>
 <td>logarithmic scale</td>
 <td>$\tfrac12\ln\lvert \lambda_1\lambda_2\rvert=\tfrac12\ln\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert$</td>
-<td>$\ln\rho$</td>
+<td>$\ln\varrho$</td>
 </tr>
 <tr>
 <td>$q'_{\log\blacktriangle}$</td>
@@ -375,16 +375,16 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Here $\rho=\sqrt{\lvert \lambda_1\lambda_2\rvert}=\sqrt{\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert}$ and $\operatorname{Arg}$ is the principal argument in $(-\pi,\pi]$. For another branch, the pair $(\alpha,\beta)$ is shifted by a lattice vector. The logarithm is the sum of the four basis terms,</p>
+<p>Here $\varrho=\sqrt{\lvert \lambda_1\lambda_2\rvert}=\sqrt{\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert}$ and $\operatorname{Arg}$ is the principal argument in $(-\pi,\pi]$. For another branch, the pair $(\alpha,\beta)$ is shifted by a lattice vector. The logarithm is the sum of the four basis terms,</p>
 <p>$$
 \breve Q_{\log}=q_{\log\blacktriangle}+jq_{\log\blacktriangledown}+iq'_{\log\blacktriangle}+ijq'_{\log\blacktriangledown}
-=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta,
+=\ln\varrho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta,
 $$</p>
 <p>and the exponential reassembles them:</p>
 <p>$$
-\breve Q=\exp\breve Q_{\log}=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
+\breve Q=\exp\breve Q_{\log}=\varrho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
 $$</p>
-<p>The component $q_{\log\blacktriangle}=\ln\rho$ sets the overall size, $q_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}$ the relative scale of the two eigenvalues, and the two primed components are the phases $\alpha$ and $\beta$.</p>
+<p>The component $q_{\log\blacktriangle}=\ln\varrho$ sets the overall size, $q_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}$ the relative scale of the two eigenvalues, and the two primed components are the phases $\alpha$ and $\beta$.</p>
 <p><strong>Example.</strong> For $\breve Q=3+4i+j(1-i)$ the coefficients are $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$, so $\lambda_1=4+3i$ and $\lambda_2=2+5i$. The principal complex logarithms are</p>
 <p>$$
 \operatorname{Log}(4+3i)=1.6094379+0.6435011\,i,\qquad
@@ -1180,11 +1180,11 @@ for the principal branch. The fibre is a coset of the kernel, so the logarithm i
 </tr>
 <tr>
 <td>$\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$</td>
-<td>a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}+i\beta$</td>
+<td>a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\varrho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}+i\beta$</td>
 </tr>
 <tr>
 <td>$q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}$</td>
-<td>the four real components of the logarithm: $\ln\rho,\alpha,\theta_{\mathrm{rpd}},\beta$</td>
+<td>the four real components of the logarithm: $\ln\varrho,\alpha,\theta_{\mathrm{rpd}},\beta$</td>
 </tr>
 <tr>
 <td>$\exp\breve Q=\exp(Q_{\blacktriangle})(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$</td>
