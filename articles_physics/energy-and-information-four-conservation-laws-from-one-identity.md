@@ -91,7 +91,7 @@ $$
 \langle\tilde Q\rangle_*=+q_t^2+\lvert\vec q'\rvert^2 .
 $$
 
-The quaternionic form is indefinite on both sectors and changes signature from $(3,1)$ on $\mathbb{B}_{\Phi}$ to $(1,3)$ on $\mathbb{B}_{\Psi}$. The Hermitian form is positive definite on both. The material sector's indefinite form is the physical interval. On the informational sector the same form is the impurity, and the positivity of a state is a condition on its spectrum, not the sign of the norm.
+The quaternionic form is indefinite on both sectors and has inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ and $(1,3)$ on $\mathbb{B}_{\Psi}$. The Hermitian form is positive definite on both. The material sector's indefinite form is the physical interval. On the informational sector the same form is the impurity, and the positivity of a state is a condition on its spectrum, not the sign of the norm.
 
 | form | $\mathbb{B}_{\Phi}$ | $\mathbb{B}_{\Psi}$ | role |
 | --- | --- | --- | --- |

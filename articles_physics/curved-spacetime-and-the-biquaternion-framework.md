@@ -112,11 +112,9 @@ with $i$ running over $x,y,z$ and with $c$ independent of $t'$; a time-dependent
 
 $$
 ds^2 = -c(r_x,r_y,r_z)^2\,d{t'}^2 +dr_x^2+dr_y^2+dr_z^2,
-\qquad
-g_{\mu\nu} = \mathrm{diag}\left(-c(r_x,r_y,r_z)^2,\ 1,\ 1,\ 1\right),
 $$
 
-and this metric is genuinely curved whenever $c$ is not affine in the spatial coordinates.
+and this interval is genuinely curved whenever $c$ is not affine in the spatial coordinates. Its coefficient tuple in the coordinates $(t',r_x,r_y,r_z)$ is $(-c^2,1,1,1)$, and that tuple is the weight of one interval read in those coordinates, not a second metric: the metric of the series is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ on the four $Q_\mu$, and the sign in front of $d{t'}^2$ is the square of the $i$ in $Q_t=i q'_t$, carried through the change of coordinate.
 
 The two interpretations differ exactly by the terms containing $dc$, and they are not equivalent: one is flat and the other is not. Neither *Introduction to the Biquaternion Universe* nor *Electromagnetism in Media — The Local Complex Structure at Work* chooses between them, because the statements about the local $c$ are made at the level of the operator while the statements about the four-position are made at the level of the point. A reader can reasonably take either. This is left open here rather than resolved, because resolving it is a decision about what the framework means and not a computation.
 
