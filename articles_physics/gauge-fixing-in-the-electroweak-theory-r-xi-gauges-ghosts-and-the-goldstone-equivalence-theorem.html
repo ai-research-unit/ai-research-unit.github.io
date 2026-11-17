@@ -124,7 +124,7 @@ $$</p>
 $$</p>
 <p>with $B^a$ the Nakanishi–Lautrup field. Eliminating $B^a$ by its own equation of motion reproduces the $-\frac{1}{2\zeta}(G^a)^2$ term, so the two formulations differ only in whether the auxiliary field is kept. The one addition to the companion article's fermion is the $-\zeta M_W\xi^a$ insertion, and it is the same addition as before.</p>
 <h2 id="two-jobs-in-one-functional">Two Jobs in One Functional</h2>
-<p><strong>The scalar kinetic term.</strong> Expanding $\left|D_\mu\varphi\right|^2$ around the vacuum in the parametrisation of §<em>Why the Quadratic Form Is Degenerate</em> gives three pieces: a mass term $\frac{M^2}{2}A_\mu A_\mu$, a derivative mixing $-M\,\xi\,\partial^\mu A_\mu$, and the Goldstone's own kinetic term $-\frac12(\partial\xi)^2$. There is no $\xi^2$ term without a mass, because the potential's curvature along the Goldstone direction vanishes at the minimum: that is the Goldstone theorem in its dynamical form.</p>
+<p><strong>The scalar kinetic term.</strong> Expanding $\left|D_\mu\varphi\right|^2$ around the vacuum in the parametrisation of §<em>Why the Quadratic Form Is Degenerate</em> gives three pieces: a mass term $\frac{M^2}{2}A_\mu A_\mu$, a derivative mixing $-M\,\xi\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$, and the Goldstone's own kinetic term $-\frac12(\partial\xi)^2$. There is no $\xi^2$ term without a mass, because the potential's curvature along the Goldstone direction vanishes at the minimum: that is the Goldstone theorem in its dynamical form.</p>
 <p><strong>What the functional contributes.</strong> Squaring $G$ gives three pieces with the same shapes:</p>
 <p>$$
 -\frac{1}{2\zeta}\left(\partial\cdot A-\zeta M\xi\right)^2=-\frac{1}{2\zeta}\left(\partial\cdot A\right)^2+M\,\xi\,\partial\cdot A-\frac{\zeta M^2}{2}\xi^2 .
@@ -147,7 +147,7 @@ $$</p>
 <td>the massive kernel</td>
 </tr>
 <tr>
-<td>$A_\mu\partial^\mu\xi$</td>
+<td>$\sum_\mu\varepsilon_\mu A_\mu\partial_\mu\xi$</td>
 <td>$-M\xi\,\partial\cdot A$</td>
 <td>$+M\xi\,\partial\cdot A$</td>
 <td>$0$</td>
@@ -418,11 +418,11 @@ $$</p>
 <p>and the same with $Z_L$ and $\xi^0$. An amplitude with a longitudinal vector in the initial or final state equals the amplitude with the corresponding Goldstone, up to corrections suppressed by the mass over the energy.</p>
 <p><strong>Where it comes from, in one line.</strong> The longitudinal polarisation vector of a vector of mass $M$ and momentum $p$ is</p>
 <p>$$
-\epsilon_L^\mu=\left(\frac{\lvert\vec p\rvert}{M},\ \frac{E}{M}\hat p\right),
+\epsilon_{L,\mu}=\left(\frac{\lvert\vec p\rvert}{M},\ \frac{E}{M}\hat p\right),
 $$</p>
-<p>and it satisfies $\sum_\mu p_\mu\epsilon_L^\mu=0$ and $\sum_\mu\epsilon_{L,\mu}\epsilon_L^\mu=-1$ exactly. Comparing it with $p^\mu/M$,</p>
+<p>and it satisfies $\sum_\mu\varepsilon_\mu p_\mu\epsilon_{L,\mu}=0$ and $\sum_\mu\varepsilon_\mu\epsilon_{L,\mu}\epsilon_{L,\mu}=-1$ exactly. Comparing it with $p_\mu/M$,</p>
 <p>$$
-\epsilon_L^\mu=\frac{p^\mu}{M}+\eta^\mu ,
+\epsilon_{L,\mu}=\frac{p_\mu}{M}+\eta_\mu ,
 \qquad
 \eta^0=-\frac{E-\lvert\vec p\rvert}{M} ,
 \qquad
@@ -473,7 +473,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Why $p^\mu/M$ is the Goldstone coupling.</strong> The piece $\frac{1}{M}p^\mu$ contracted with a vertex is, by the Ward identity, the divergence of the corresponding current, and the divergence of the current is what the Goldstone field couples to. That is the content of the $R_\xi$ construction: the Goldstone's coupling is fixed by the same Ward identity that the gauge-fixing functional was chosen to make valid. So the theorem is not an independent fact about polarisations; it is the Ward identity read at high energy.</p>
+<p><strong>Why $p_\mu/M$ is the Goldstone coupling.</strong> The piece $\frac{1}{M}p_\mu$ contracted with a vertex is, by the Ward identity, the divergence of the corresponding current, and the divergence of the current is what the Goldstone field couples to. That is the content of the $R_\xi$ construction: the Goldstone's coupling is fixed by the same Ward identity that the gauge-fixing functional was chosen to make valid. So the theorem is not an independent fact about polarisations; it is the Ward identity read at high energy.</p>
 <p><strong>The bound it gives.</strong> Without a scalar, the amplitude for $W_LW_L\to W_LW_L$ grows as $s/v^2$. The $J=0$ partial wave is $a_0=s/(16\pi v^2)$, and the unitarity bound $\lvert a_0\rvert\le\frac12$ is saturated at</p>
 <p>$$
 \sqrt{s}=\sqrt{8\pi}\,v=1.23\ \text{TeV} .
@@ -559,7 +559,7 @@ $$</p>
 <p>The ghosts come from the Faddeev–Popov determinant, have the mass of the Goldstone of their direction, and carry three weights: $\det M$ in the measure, $-1$ per closed loop, and ghost number $\pm1$. The neutral ghost mass matrix has determinant zero for every $\zeta$, and the zero eigenvalue is the photon's ghost, which exists because $\mathrm{U}(1)_{\mathrm{em}}$ is unbroken.</p>
 <p>One propagator formula covers the family, $D_{\mu\nu}=\frac{P_{\mu\nu}}{\Pi-M^2}+\frac{\zeta L_{\mu\nu}}{\Pi-\zeta M^2}$, verified against the kernel $K_{\mu\nu}=(\Pi-M^2)\delta_{\mu\nu}+(1-\frac{1}{\zeta})p_\mu p_\nu$ to $2.2\times10^{-16}$. It gives the Feynman–'t Hooft propagator at $\zeta=1$, the transverse-only propagator at $\zeta=0$, and the Proca propagator at $\zeta\to\infty$, the last to order $1/\zeta$ and algebraically exact in the limit.</p>
 <p>The parameter changes nothing observable: the residue at the physical pole is $P_{\mu\nu}$ and carries no $\zeta$, and a conserved current is blind to the parameter, drifting by $4.5\times10^{-16}$ across five gauges while a non-conserved current drifts by $0.78$. Every $R_\xi$ propagator falls as $1/\Pi$, so the superficial degree of divergence is bounded by four independently of the number of loops; the unitary gauge loses that property, which is why renormalisability is proved in the family and not at its endpoint.</p>
-<p>The equivalence theorem follows from $\epsilon_L^\mu=p^\mu/M+O(M^2/E^2)$, since $p^\mu/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.23$ TeV.</p>
+<p>The equivalence theorem follows from $\epsilon_{L,\mu}=p_\mu/M+O(M^2/E^2)$, since $p_\mu/M$ contracts to the divergence of the current and the Goldstone couples to that divergence by the Ward identity. Without the scalar the $W_LW_L$ amplitude grows as $s/v^2$ and the $J=0$ partial wave saturates unitarity at $\sqrt{8\pi}\,v=1.23$ TeV.</p>
 <p>The framework discharges the gauge-fixing row of the standard-model agenda at the level of the procedure — and not the electroweak agenda's stronger item, which asks for a section rather than a route — and transcribes the electroweak instantiation, which needs the group, the representation and the scalar that both agendas classify as unreached. The parameter $\zeta$ is a coordinate and is not derivable in principle.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -663,7 +663,7 @@ $$</p>
 <td>The nilpotent odd derivation, $s^2=0$</td>
 </tr>
 <tr>
-<td>$\epsilon_L^\mu$</td>
+<td>$\epsilon_{L,\mu}$</td>
 <td>The longitudinal polarisation vector</td>
 </tr>
 <tr>

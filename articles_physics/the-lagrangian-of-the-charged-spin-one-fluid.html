@@ -74,7 +74,7 @@
 <p><strong>The connection enters one of the two terms and it enters it as a derivative.</strong> The Proca action has a derivative term and an algebraic one; the coupling replaces $\partial_\mu$ by $D_\mu$ in the first and cannot touch the second, because the second is the magnitude's and a connection reaches derivatives. <strong>So the charged spin-one fluid keeps its pressure and loses its continuity</strong>, which is the reverse of what the other charged articles of this layer do.</p>
 <p><strong>Three results.</strong></p>
 <p><em>First, the free decomposition of the field strength survives with one word changed.</em> $F=r\,\omega+\mathrm{d}r\wedge u$ becomes $F=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu$: the vorticity becomes the covariant one, the density's gradient's term is untouched, and the rank stays two. <strong>The substitution is $\mathrm{d}\to D$ in one place and the structure is preserved.</strong></p>
-<p><em>Second, the Lorenz condition ceases to be continuity and this is the article's main statement.</em> At the free rung $\partial_\mu A^\mu=0$ is $\partial_\mu(ru^\mu)=0$, the conservation of a real density by a real flow. Charged, the condition is $D_\mu A^\mu=0$, and written with the ordinary divergence it carries a source that is phase-carrying and imaginary. <strong>The condition survives and its fluid reading does not</strong>: the density is no longer conserved by the flow alone, and the fluid is compressible by the field's action.</p>
+<p><em>Second, the Lorenz condition ceases to be continuity and this is the article's main statement.</em> At the free rung $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=0$ is $\sum_\mu\varepsilon_\mu\partial_\mu(ru_\mu)=0$, the conservation of a real density by a real flow. Charged, the condition is $\sum_\mu\varepsilon_\mu D_\mu A_\mu=0$, and written with the ordinary divergence it carries a source that is phase-carrying and imaginary. <strong>The condition survives and its fluid reading does not</strong>: the density is no longer conserved by the flow alone, and the fluid is compressible by the field's action.</p>
 <p><em>Third, the mass term is coupling-blind, so the four statements it carried at the free rung become three.</em> It still removes the field's own shift freedom, still supplies the condition, still fixes the pressure to a constant. What it can no longer do is make that condition a conservation law.</p>
 <p><strong>Position in the block.</strong> This is the variational companion of <a href="the-charged-spin-one-fluid.html">The Charged Spin-One Fluid</a> and the eighth and last of the articles of this layer. It is the only one in which the coupling degrades a statement rather than adding a force, and the only one in which the free rung's cleanest result is lost.</p>
 <p><strong>Conventions.</strong> $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; <a href="the-charged-spin-one-fluid.html">The Charged Spin-One Fluid</a> records the doubling and this article does not re-derive it.</p>
@@ -98,22 +98,22 @@ $$</p>
 <h2 id="the-lorenz-condition-ceases-to-be-continuity">The Lorenz Condition Ceases to Be Continuity</h2>
 <p><strong>The identity survives and the conclusion changes.</strong> Taking the covariant divergence of the field equation,</p>
 <p>$$
-D_\nu F^{\mathrm{gco}\,\nu\mu}=k_m^{2}A^\mu
+\sum_\nu\varepsilon_\nu D_\nu F_{\mathrm{gco},\nu\mu}=k_m^{2}A_\mu
 \qquad\Longrightarrow\qquad
-0=D_\mu D_\nu F^{\mathrm{gco}\,\nu\mu}=k_m^{2}\,D_\mu A^\mu,
+0=\sum_\nu\varepsilon_\nu D_\mu D_\nu F_{\mathrm{gco},\nu\mu}=k_m^{2}\,\sum_\mu\varepsilon_\mu D_\mu A_\mu,
 $$</p>
-<p>the first equality being the antisymmetry of $F$ and the second the field equation. So the condition is $D_\mu A^\mu=0$, exactly as at the free rung with $\partial\to D$.</p>
+<p>the first equality being the antisymmetry of $F$ and the second the field equation. So the condition is $\sum_\mu\varepsilon_\mu D_\mu A_\mu=0$, exactly as at the free rung with $\partial\to D$.</p>
 <p><strong>Written with the ordinary divergence, the condition has a source.</strong></p>
 <p>$$
-D_\mu A^\mu=0
+\sum_\mu\varepsilon_\mu D_\mu A_\mu=0
 \qquad\Longleftrightarrow\qquad
-\partial_\mu\bigl(A^\mu\bigr)=-\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu A^\mu,
+\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=-\frac{iϙ}{\hbar}\sum_\mu\varepsilon_\mu A_{\mathrm{ext},\mu}A_\mu,
 $$</p>
 <p>and the right-hand side is not zero, is imaginary, and carries the carrier's phase. <strong>That is the precise sense in which the condition ceases to be continuity</strong>: the left-hand side is the divergence of the field and would be the flow's density balance, and the right-hand side is a source the flow does not supply.</p>
 <p><strong>The block's display is this statement in the algebra.</strong> <a href="the-charged-spin-one-fluid.html">The Charged Spin-One Fluid</a> writes $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\vartheta_{\mathrm{pha}}}$: the divergence is imaginary, it is proportional to the coupling, and it carries twice the phase. <strong>Read as a continuity equation it says that the fluid's density is not conserved by the flow</strong>, and the $e^{2i\vartheta}$ says that what spoils the conservation is not a real rate but a phase-carrying quantity — a source that is not a scalar.</p>
 <p><strong>Three consequences, and the article states them as losses.</strong></p>
 <p><em>The free rung's cleanest result is gone.</em> There the Lorenz condition was continuity and the fluid's continuity was the mass's gift; here the condition is a constraint that the flow cannot satisfy alone.</p>
-<p><em>The compressibility's origin is now visible and it is not the mass's.</em> At the free rung $\partial_\mu(ru^\mu)=0$; charged, $\partial_\mu(A^\mu)$ is the source. The difference is the connection's, so <strong>the free fluid's incompressibility is the mass's gift and the charged fluid's compressibility is the charge's.</strong></p>
+<p><em>The compressibility's origin is now visible and it is not the mass's.</em> At the free rung $\sum_\mu\varepsilon_\mu\partial_\mu(ru_\mu)=0$; charged, $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$ is the source. The difference is the connection's, so <strong>the free fluid's incompressibility is the mass's gift and the charged fluid's compressibility is the charge's.</strong></p>
 <p><em>The count of equations changes in one place.</em> The free rung had four field components, four equations, and one of them a consequence of the others through an identity. The charged rung has the same four and the same identity, and the consequence is now a condition with a source rather than a conservation law. <strong>The count is the same and the content is not.</strong></p>
 <h2 id="what-the-mass-term-still-does">What the Mass Term Still Does</h2>
 <p><strong>Three statements, and each is unchanged.</strong></p>
@@ -136,7 +136,7 @@ $$</p>
 <p><strong>The extra four parameters.</strong> Whether the carrier's remaining freedom can be read as a second fluid, with its own density and phase, is not settled. The block's article records the doubling and leaves it.</p>
 </li>
 <li>
-<p><strong>The condition's source and the current.</strong> The source term in $\partial_\mu A^\mu$ is $-\frac{iϙ}{\hbar}A^{\mathrm{ext}}\cdot A$; whether it is the divergence of a current the fluid can name — as the scalar rung's $ϙ\vec j$ is — is not computed here.</p>
+<p><strong>The condition's source and the current.</strong> The source term in $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$ is $-\frac{iϙ}{\hbar}A^{\mathrm{ext}}\cdot A$; whether it is the divergence of a current the fluid can name — as the scalar rung's $ϙ\vec j$ is — is not computed here.</p>
 </li>
 <li>
 <p><strong>The massless limit.</strong> As at the free rung, the fluid reading does not survive $k_m=0$, and the charged case adds a second reason: the condition's source is present at $k_m=0$ as well, so the limit loses both the condition and the reading.</p>
@@ -145,7 +145,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p><strong>The action.</strong> $\mathcal L_{\mathrm{gco}}=-\frac14F^{\mathrm{gco}*}F^{\mathrm{gco}}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}$: the derivative term rebuilt with $D$, the algebraic term untouched.</p>
 <p><strong>The decomposition.</strong> $F^{\mathrm{gco}}=r\,\Omega+\mathrm{d}r\wedge u$ with $\Omega=Du$; the vorticity is covariant and rank two, its transversality being the projection's and not the curl's; the density's gradient's term is unchanged.</p>
-<p><strong>The condition.</strong> $D_\mu A^\mu=0$ still follows from the field equation, and written with the ordinary divergence it has a phase-carrying imaginary source. <strong>Continuity is lost</strong> and the fluid is compressible by the field's action.</p>
+<p><strong>The condition.</strong> $\sum_\mu\varepsilon_\mu D_\mu A_\mu=0$ still follows from the field equation, and written with the ordinary divergence it has a phase-carrying imaginary source. <strong>Continuity is lost</strong> and the fluid is compressible by the field's action.</p>
 <p><strong>The mass.</strong> Three of its four free statements survive: it breaks the field's own shift, supplies the condition, fixes the pressure. It no longer makes the condition a conservation law.</p>
 <p><strong>The carrier.</strong> Eight real parameters against the fluid's four; the action puts the coupling in the derivative term only, and the count's balance is the phase.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -171,7 +171,7 @@ $$</p>
 </tr>
 <tr>
 <td>$r$, $u_\mu$</td>
-<td>Magnitude and direction; $u_\mu u^\mu=-1$</td>
+<td>Magnitude and direction; $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$</td>
 </tr>
 <tr>
 <td>$\Omega_{\mu\nu}=D_\mu u_\nu-D_\nu u_\mu$</td>

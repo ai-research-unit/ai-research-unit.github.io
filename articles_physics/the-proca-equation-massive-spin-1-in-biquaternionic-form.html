@@ -152,7 +152,7 @@ $$</p>
 <p><strong>Theorem.</strong> The Proca system at $m=0$ is the Maxwell system, and each of the three statements below is an exact substitution rather than an approximation.</p>
 <ol>
 <li>The Proca Lagrangian density loses its mass term, and what remains is the Maxwell Lagrangian density, term for term.</li>
-<li>The Proca equation $\partial_\mu F^{\mu\nu}+k_m^{2}A^\nu=0$ becomes the source-free Maxwell equation $\partial_\mu F^{\mu\nu}=0$.</li>
+<li>The Proca equation $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}+k_m^{2}A_\nu=0$ becomes the source-free Maxwell equation $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}=0$.</li>
 <li>The biquaternion Proca equation $\tilde\nabla_\Phi\tilde{F}=k_m^{2}\tilde{A}_{\Phi}$ becomes the source-free biquaternion Maxwell equation $\tilde\nabla_\Phi\tilde{F}=0$.</li>
 </ol>
 <p>No approximation enters any of the three: setting a parameter to zero deletes a term and leaves the rest unchanged. What changes at $k_m=0$ is not the equation but the <strong>constraint structure</strong> and the <strong>solution space</strong>. The equation is continuous in $m$; the solution space is not, and the rest of this section separates the two.</p>
@@ -169,13 +169,13 @@ $$</p>
 <p>which is the Maxwell density, term for term. With an external current the densities gain the same coupling $-\sum_\mu J_\mu A_\mu$ on both sides, and the coupling is untouched by the mass, so the identity survives: $\mathcal{L}_{P,J}|_{k_m=0}=\mathcal{L}_{M,J}$.</p>
 <p>Two things are worth naming. The mass term is the only term in the density that is quadratic in the <strong>potential</strong> rather than in the field strength, and that is exactly why it is the only term the substitution touches. And the substitution is not a limit: no sequence is taken, no term is dropped as small, and the identity is an algebraic identity between two densities at $k_m=0$.</p>
 <h3 id="the-equation-of-motion">The equation of motion</h3>
-<p>Varying the density with respect to $A_\nu$ gives $\partial\mathcal{L}_P/\partial A_\nu=k_m^{2}A^\nu$ and $\partial\mathcal{L}_P/\partial(\partial_\mu A_\nu)=-F^{\mu\nu}$, so the Euler–Lagrange equation is</p>
+<p>Varying the density with respect to $A_\nu$ gives $\partial\mathcal{L}_P/\partial A_\nu=k_m^{2}A_\nu$ and $\partial\mathcal{L}_P/\partial(\partial_\mu A_\nu)=-F_{\mu\nu}$, so the Euler–Lagrange equation is</p>
 <p>$$
-\partial_\mu F^{\mu\nu}+k_m^{2}A^\nu=0 .
+\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}+k_m^{2}A_\nu=0 .
 $$</p>
-<p>At $k_m=0$ this is $\partial_\mu F^{\mu\nu}=0$, the source-free Maxwell equation; with the current it is $\partial_\mu F^{\mu\nu}=J^\nu$, the sourced one.</p>
-<p><strong>The mass sits in the zeroth-order term, and that is the whole content of the continuity.</strong> The principal symbol of the Proca operator — the part that decides the characteristics and therefore the propagation — is $\partial_\mu F^{\mu\nu}$ and does not contain $k_m$ at all. There is no singular perturbation: the differential operator is not deformed, a lower-order term is deleted. That is the precise sense in which the equation depends continuously on the mass, and it is what licenses the substitution at the level of the equation.</p>
-<p>The claim was checked on plane waves rather than asserted. With $k_m=1.3$ and $\vec k_\Phi=(0.4,-0.9,1.1)$, so that $\omega^{2}=\vec k_\Phi^{2}+k_m^{2}$, one hundred random real amplitudes projected on the Lorenz surface satisfy the Proca equation with a maximum residual of $2.7\times10^{-15}$ in units of the amplitude; at $k_m=0$ the same amplitudes, on the null shell $\omega=\lvert\vec k_\Phi\rvert$, satisfy $\partial_\mu F^{\mu\nu}=0$ with a maximum residual of $1.5\times10^{-15}$.</p>
+<p>At $k_m=0$ this is $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}=0$, the source-free Maxwell equation; with the current it is $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}=J_\nu$, the sourced one.</p>
+<p><strong>The mass sits in the zeroth-order term, and that is the whole content of the continuity.</strong> The principal symbol of the Proca operator — the part that decides the characteristics and therefore the propagation — is $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}$ and does not contain $k_m$ at all. There is no singular perturbation: the differential operator is not deformed, a lower-order term is deleted. That is the precise sense in which the equation depends continuously on the mass, and it is what licenses the substitution at the level of the equation.</p>
+<p>The claim was checked on plane waves rather than asserted. With $k_m=1.3$ and $\vec k_\Phi=(0.4,-0.9,1.1)$, so that $\omega^{2}=\vec k_\Phi^{2}+k_m^{2}$, one hundred random real amplitudes projected on the Lorenz surface satisfy the Proca equation with a maximum residual of $2.7\times10^{-15}$ in units of the amplitude; at $k_m=0$ the same amplitudes, on the null shell $\omega=\lvert\vec k_\Phi\rvert$, satisfy $\sum_\mu\varepsilon_\mu\partial_\mu F_{\mu\nu}=0$ with a maximum residual of $1.5\times10^{-15}$.</p>
 <h3 id="the-biquaternion-reduction">The biquaternion reduction</h3>
 <p>The Proca article writes the system as the single equation</p>
 <p>$$
@@ -203,14 +203,14 @@ $$</p>
 </ul>
 <p>The third of these is the one that matters for the framework, because it is the statement that the massless limit is not a change of kind. The Proca and Maxwell potentials live in the same sector; the difference between the two theories is a constraint and not a home.</p>
 <h3 id="what-is-discontinuous-first-the-constraint-changes-status">What is discontinuous, first: the constraint changes status</h3>
-<p>Contract the sourced equation with $\partial_\nu$. The first term vanishes identically, because $\partial_\nu\partial_\mu$ is symmetric in the pair while $F^{\mu\nu}$ is antisymmetric, so</p>
+<p>Contract the sourced equation with $\partial_\nu$. The first term vanishes identically, because $\partial_\nu\partial_\mu$ is symmetric in the pair while $F_{\mu\nu}$ is antisymmetric, so</p>
 <p>$$
-k_m^{2}\,\partial_\nu A^\nu=\partial_\nu J^\nu .
+k_m^{2}\,\sum_\nu\varepsilon_\nu\partial_\nu A_\nu=\sum_\nu\varepsilon_\nu\partial_\nu J_\nu .
 $$</p>
 <p>The antisymmetry was checked on one hundred random amplitudes and wavevectors to $2.9\times10^{-15}$. Two cases follow, and they are different statements.</p>
 <ul>
-<li><strong>For $k_m\neq0$ and $J=0$:</strong> the identity forces $\partial_\nu A^\nu=0$. The Lorenz condition is a <strong>consequence of the equation of motion</strong>, not a choice of gauge.</li>
-<li><strong>For $k_m=0$:</strong> the identity reads $\partial_\nu J^\nu=0$, which is the conservation of the source and the integrability condition of the Maxwell equation. The Lorenz condition is <strong>not</strong> forced; it becomes a <strong>choice of gauge</strong>.</li>
+<li><strong>For $k_m\neq0$ and $J=0$:</strong> the identity forces $\sum_\nu\varepsilon_\nu\partial_\nu A_\nu=0$. The Lorenz condition is a <strong>consequence of the equation of motion</strong>, not a choice of gauge.</li>
+<li><strong>For $k_m=0$:</strong> the identity reads $\sum_\nu\varepsilon_\nu\partial_\nu J_\nu=0$, which is the conservation of the source and the integrability condition of the Maxwell equation. The Lorenz condition is <strong>not</strong> forced; it becomes a <strong>choice of gauge</strong>.</li>
 </ul>
 <p>The biquaternion form of the same dichotomy is the boxed identity of the section above, $0=k_m^{2}S$. The mass is the coefficient that converts an identity into a constraint, and at $k_m=0$ the identity carries no information at all.</p>
 <h3 id="second-the-count-falls-from-three-to-two">Second: the count falls from three to two</h3>

@@ -75,7 +75,7 @@
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
 <p>The earlier exercises treated a single qubit (Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field and Successive Measurements of Spin), an entangled pair of qubits in the singlet state (Exercise: Two Spins in the Singlet State), and the reduced state of one subsystem (Exercise: The Reduced State of an Entangled Subsystem). This exercise treats <strong>all four Bell states</strong> — the four maximally entangled two-qubit states — and the <strong>spin correlation function</strong>, the quantity that encodes the full dependence of joint measurement outcomes on the two measurement directions.</p>
 <p>The correlation function is the object measured in Bell-inequality experiments. It is also the natural bilinear pairing on the tensor-product algebra, and it reveals a clean structural fact: the four Bell states correspond to the four sign patterns $\epsilon_j = \pm 1$ with $\epsilon_1\epsilon_2\epsilon_3 = +1$, and their correlation functions are $E(\vec u_x, \vec u_y) = -\sum_j \epsilon_j\,a_j b_j$.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. Twice the scalar part of an element of $\mathbb{B}_{\Psi}$ is the matrix trace of its image: $2\,\mathrm{Sc}(\tilde Q)=\operatorname{tr}\mathsf M_2(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$, with the trace $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. Twice the scalar part of an element of $\mathbb{B}_{\Psi}$ is the matrix trace of its image: $2\,\mathrm{Sc}(\tilde Q)=\operatorname{tr}\mathsf M_2(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$, with the trace $\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr) = \mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\cdot\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>Consider the four <strong>Bell states</strong> of two spin-$\tfrac{1}{2}$ particles:</p>
 <p>$$
@@ -264,30 +264,26 @@ $$</p>
 $$</p>
 <p>where $\vec u_x = \sum_j a_j \vec e_j$ and $\vec u_y = \sum_\eta b_\eta \vec e_\eta$ are pure real quaternions. The expectation is given by the tensor-product pairing formula:</p>
 <p>$$
-E(\vec u_x, \vec u_y) = \mathrm{Tr}\!\left(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}\right).
+E(\vec u_x, \vec u_y) = 4\,\mathrm{Sc}\!\left(\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab}\right).
 $$</p>
-<h3 id="step-3-computing-the-trace-for-each-bell-state">Step 3: Computing the trace for each Bell state</h3>
-<p>We compute the trace term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{H}_{\Psi,ab}$,</p>
+<h3 id="step-3-computing-the-pairing-for-each-bell-state">Step 3: Computing the pairing for each Bell state</h3>
+<p>We compute the pairing term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{H}_{\Psi,ab}$,</p>
 <p>$$
 \tilde\Pi_\epsilon\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
 $$</p>
 <p>with $\epsilon_t \equiv 1$.</p>
-<p><strong>Term $m = t$.</strong> The trace is $\mathrm{Tr}_\mathbb{B}(i\vec u_x)\cdot\mathrm{Tr}_\mathbb{B}(i\vec u_y) = 0$, because the scalar part of $i\vec u_x$ vanishes.</p>
+<p><strong>Term $m = t$.</strong> The pairing is $4\,\mathrm{Sc}(i\vec u_x)\,\mathrm{Sc}(i\vec u_y) = 0$, because the scalar part of $i\vec u_x$ vanishes.</p>
 <p><strong>Terms $m \in \{x,y,z\}$.</strong> We have</p>
 <p>$$
 e_m\cdot i\vec u_x = i\,e_m \vec u_x = i\left(-a_m e_t + \text{vector}\right),
 $$</p>
-<p>using $e_m \vec u_x = -a_m e_t + \sum_{\eta \neq m} a_\eta e_m \vec e_\eta$. The scalar part is $-i a_m$, so</p>
+<p>using $e_m \vec u_x = -a_m e_t + \sum_{\eta \neq m} a_\eta e_m \vec e_\eta$. The scalar part is $-i a_m$, and similarly $\mathrm{Sc}(e_m\cdot i\vec u_y) = -i b_m$. The product of the two scalar parts is</p>
 <p>$$
-\mathrm{Tr}_\mathbb{B}(e_m \cdot i\vec u_x) = -2 i a_m,
+(-i a_m)(-i b_m) = i^2\, a_m b_m = -a_m b_m.
 $$</p>
-<p>and similarly $\mathrm{Tr}_\mathbb{B}(e_m\cdot i\vec u_y) = -2 i b_m$. The product of the two traces is</p>
+<p><strong>Assembly.</strong> Substituting, the factor $\frac14$ carried by the product and the factor $4$ carried by the pairing cancel,</p>
 <p>$$
-(-2 i a_m)(-2 i b_m) = 4 i^2\, a_m b_m = -4\,a_m b_m.
-$$</p>
-<p><strong>Assembly.</strong> Substituting,</p>
-<p>$$
-E(\vec u_x, \vec u_y) = \frac{1}{4}\sum_{m\in\{x,y,z\}}\epsilon_m\,(-4\,a_m b_m) = -\sum_{m\in\{x,y,z\}}\epsilon_m\,a_m b_m.
+E(\vec u_x, \vec u_y) = \sum_{m\in\{x,y,z\}}\epsilon_m\,(-a_m b_m) = -\sum_{m\in\{x,y,z\}}\epsilon_m\,a_m b_m.
 $$</p>
 <p>So the correlation function is</p>
 <p>$$
@@ -510,7 +506,7 @@ $$</p>
 <td>Correlation matrix</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$</td>
+<td>$\mathrm{Tr}\bigl(\mathsf M_2(x)\otimes\mathsf M_2(y)\bigr) = \mathrm{Tr}_\mathbb{B}\mathsf M_2(x)\cdot\mathrm{Tr}_\mathbb{B}\mathsf M_2(y)$</td>
 <td>Trace on the tensor product</td>
 </tr>
 </tbody>

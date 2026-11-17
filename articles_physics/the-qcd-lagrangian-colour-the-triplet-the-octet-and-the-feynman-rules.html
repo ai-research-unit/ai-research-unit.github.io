@@ -74,7 +74,7 @@
 <p><strong>The standing of this article.</strong> Everything below is standard theory, written in the corpus's coordinates and notation. It is <strong>standard input</strong>, not a framework result. Colour is the sharpest boundary in this corpus: by <a href="the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">The Gauge Group Ceiling</a>, any compact gauge algebra inside $\mathbb{B}$ has real dimension at most four and every $\mathbb{B}$-module has even complex dimension, so neither $SU(3)$ nor a colour triplet is available in the algebra. The strong sector is therefore transcribed, and the article says so before it prints the Lagrangian. What it adds to a textbook display is three things: the Feynman rules derived from this particular Lagrangian rather than quoted, with the sign of every vertex fixed by the same $g_s$; the colour arithmetic computed and checked; and one table that separates what is imported from what, if anything, the algebra contributes.</p>
 <p><strong>The claim.</strong> Quantum chromodynamics is one Lagrangian with four pieces and four vertices.</p>
 <p>$$
-\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}+\sum_f\bar\psi_f\left(i\gamma^\mu D_\mu-m_f\right)\psi_f+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}} .
+\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}+\sum_f\bar\psi_f\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu D_\mu-m_f\right)\psi_f+\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}} .
 $$</p>
 <p>The quark $\psi_f$ is a colour triplet, one per flavour $f$; the gluon $G^a_\mu$ is a colour octet; the vertices are the quark–gluon, the three-gluon, the four-gluon and the ghost–gluon, and they exhaust the tree-level content. The $\theta$ term is a fifth piece, a total derivative in perturbation theory, and it is named here and left to its own article.</p>
 <p><strong>Why the number three is not in the Lagrangian.</strong> Nothing in the algebra or in the Lagrangian's structure fixes $N_c=3$. The number is measured, four independent ways, and the section <em>Why Three Colours</em> records them. That is the same status as the nineteen parameters of <a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">the content article</a>: a fact about the world, imported.</p>
@@ -236,9 +236,9 @@ $$</p>
 $$</p>
 <p>which is checked below to machine precision and which is the reason the symmetric tensor $d^{abc}$ is not decorative: it is the real part of a trace, so any process with three gluons attached to a quark loop sees it.</p>
 <h2 id="the-lagrangian">The Lagrangian</h2>
-<p><strong>The four pieces, in the corpus's coordinates.</strong> With $\partial/\partial R_\mu$ the derivative of <a href="the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html">the assembled Lagrangian</a> and the sign rule $\sum_\mu X_\mu Y_\mu=-X_\mu Y^\mu$ applying to every display,</p>
+<p><strong>The four pieces, in the corpus's coordinates.</strong> With $\partial/\partial R_\mu$ the derivative of <a href="the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html">the assembled Lagrangian</a> and the sign rule $\sum_\mu X_\mu Y_\mu=-X\cdot Y$ applying to every display,</p>
 <p>$$
-\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}+\sum_f\bar\psi_f\left(i\gamma^\mu D_\mu-m_f\right)\psi_f-\frac{1}{2\zeta}\sum_{a,\mu}\left(\frac{\partial G^a_\mu}{\partial R_\mu}\right)^2+\sum_{a}\bar c^a\left(-\frac{\partial^2}{\partial R_\mu\partial R_\mu}\right)c^a+\mathcal{L}_{cG} .
+\mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}+\sum_f\bar\psi_f\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu D_\mu-m_f\right)\psi_f-\frac{1}{2\zeta}\sum_{a,\mu}\left(\frac{\partial G^a_\mu}{\partial R_\mu}\right)^2+\sum_{a}\bar c^a\left(-\frac{\partial^2}{\partial R_\mu\partial R_\mu}\right)c^a+\mathcal{L}_{cG} .
 $$</p>
 <p><strong>The pieces, named.</strong> The first is the gauge kinetic term; the second the quark term, one per flavour, with the covariant derivative carrying the colour connection in the triplet; the third the gauge-fixing term with parameter $\zeta$; the fourth and fifth the ghost kinetic and ghost–gluon terms. The list is complete for perturbation theory. The $\theta$ term,</p>
 <p>$$
@@ -293,7 +293,7 @@ $$</p>
 </tr>
 <tr>
 <td>Quark $ij$</td>
-<td>$\dfrac{i\left(\gamma^\mu k_\mu+m\right)_{ij}}{k^2-m^2+i\epsilon}$</td>
+<td>$\dfrac{i\left(m-\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu\right)_{ij}}{k^2-m^2+i\epsilon}$</td>
 </tr>
 <tr>
 <td>Ghost $ab$</td>
@@ -314,7 +314,7 @@ $$</p>
 <tr>
 <td>Quark–gluon</td>
 <td>$T^a_{ij}$</td>
-<td>$ig_s\gamma^\mu$</td>
+<td>$-ig_s\varepsilon_\mu\gamma_\mu$</td>
 </tr>
 <tr>
 <td>Three-gluon</td>
@@ -329,7 +329,7 @@ $$</p>
 <tr>
 <td>Ghost–gluon</td>
 <td>$-g_sf^{abc}$</td>
-<td>$p^\mu$, with $p$ the momentum of the incoming antighost</td>
+<td>$p_\mu$, with $p$ the momentum of the incoming antighost</td>
 </tr>
 </tbody>
 </table></div>
@@ -341,9 +341,9 @@ $$</p>
 <h2 id="the-three-vertices-derived">The Three Vertices Derived</h2>
 <p><strong>The quark–gluon vertex, in one line.</strong> The interaction term in the quark piece is</p>
 <p>$$
-+g_s\sum_{a,\mu}\bar\psi\gamma^\mu T^aG^a_\mu\psi ,
+-g_s\sum_{a,\mu}\varepsilon_\mu\bar\psi\gamma_\mu T^aG^a_\mu\psi ,
 $$</p>
-<p>with the sign from $i\gamma^\mu\left(-ig_sT^aG^a_\mu\right)=+g_s\gamma^\mu T^aG^a_\mu$. The vertex is $i$ times this coefficient with the fields removed, so it is $ig_s\gamma^\mu T^a_{ij}$.</p>
+<p>with the sign from $\left(-i\sum_\mu\varepsilon_\mu\gamma_\mu\right)\left(-ig_sT^aG^a_\mu\right)=+g_s\sum_\mu\varepsilon_\mu\gamma_\mu T^aG^a_\mu$. The vertex is $i$ times this coefficient with the fields removed, so it is $-ig_s\varepsilon_\mu\gamma_\mu T^a_{ij}$.</p>
 <p><strong>The three-gluon vertex, in three lines.</strong> Expanding $-\frac14\sum GG$ and keeping the terms with one field strength linear in the field and two powers of the field,</p>
 <p>$$
 \mathcal{L}_3=-g_s\sum_{a,b,c}f^{abc}\left(\partial_\mu G^a_\nu\right)G^b_\mu G^c_\nu .
@@ -525,7 +525,7 @@ $$</p>
 <td><strong>Imported</strong> (it is the tree-level shadow of the Slavnov–Taylor identity), and verified</td>
 </tr>
 <tr>
-<td>The sign rule $\sum_\mu X_\mu Y_\mu=-X_\mu Y^\mu$</td>
+<td>The sign rule $\sum_\mu X_\mu Y_\mu=-X\cdot Y$</td>
 <td><strong>Derived in the algebra</strong>, in article 2</td>
 </tr>
 <tr>
@@ -620,8 +620,8 @@ $$</p>
 <td>Incoming momenta of the three gluon legs, $p_1+p_2+p_3=0$</td>
 </tr>
 <tr>
-<td>$\gamma^\mu$</td>
-<td>Dirac matrices; the quark propagator is $i(\gamma^\mu k_\mu+m_f)/(k^2-m_f^2+i\epsilon)$</td>
+<td>$\gamma_\mu$</td>
+<td>Dirac matrices, written low; the quark propagator is $i(m_f-\sum_\mu\varepsilon_\mu\gamma_\mu k_\mu)/(k^2-m_f^2+i\epsilon)$</td>
 </tr>
 <tr>
 <td>$m_f$</td>

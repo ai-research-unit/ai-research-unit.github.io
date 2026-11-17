@@ -83,7 +83,7 @@ $$</p>
 <p>and the chiral Lagrangian is the sum of the Hermitian norms of its four derivatives. The construction is therefore the framework's principal chiral model of the companion article, with the decay constant of two-flavour QCD.</p>
 <p>The findings are the following.</p>
 <ul>
-<li><strong>Established, and recomputed below.</strong> The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\vec\pi/f_\pi)$ is a unit real quaternion, $\langle\tilde U\rangle_\natural = e_t$. The normalisation is read from the plain weight of the units, $\mathrm{Sc}(\vec e_j\vec e_\eta) = -\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$; from them the generators $T_\eta = \tfrac{i}{2}\vec e_\eta$ satisfy $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, equivalently $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, and $[T_j,T_\eta] = i\sum_l\epsilon_{j\eta l}T_l$. Expanding the biquaternion chiral Lagrangian,
+<li><strong>Established, and recomputed below.</strong> The pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector, and the chiral field $\tilde U = \exp(\vec\pi/f_\pi)$ is a unit real quaternion, $\langle\tilde U\rangle_\natural = e_t$. The normalisation is read from the plain weight of the units, $\mathrm{Sc}(\vec e_j\vec e_\eta) = -\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$; from them the generators $T_\eta = \tfrac{i}{2}\vec e_\eta$ satisfy $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, equivalently $2\,\mathrm{Sc}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, and $[T_j,T_\eta] = i\sum_l\epsilon_{j\eta l}T_l$. Expanding the biquaternion chiral Lagrangian,
 $$
 \mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right),
 $$
@@ -161,7 +161,7 @@ $$</p>
 <p>$$
 \left[T_j,T_\eta\right] = i\sum_l\epsilon_{j\eta l}T_l .
 $$</p>
-<p>The last vanishing is the statement that the symmetric symbol of $SU(2)$ vanishes: the symmetrised product of two vector units is central, and the third unit has no scalar part to meet it. The algebra trace reads the same identities with the factor two of its own normalisation, $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$ and $\mathrm{Tr}(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$. The factor $i$ in $T_\eta$ makes the generators Hermitian, and the units are anti-Hermitian, $\vec e_\eta^{*} = -\vec e_\eta$.</p>
+<p>The last vanishing is the statement that the symmetric symbol of $SU(2)$ vanishes: the symmetrised product of two vector units is central, and the third unit has no scalar part to meet it. The algebra trace reads the same identities with the factor two of its own normalisation, $\mathrm{Tr}\mathsf M_2(T_jT_\eta) = \tfrac12\delta_{j\eta}$ and $\mathrm{Tr}\mathsf M_2(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$. The factor $i$ in $T_\eta$ makes the generators Hermitian, and the units are anti-Hermitian, $\vec e_\eta^{*} = -\vec e_\eta$.</p>
 <h2 id="the-chiral-lagrangian">The Chiral Lagrangian</h2>
 <p>The chiral Lagrangian is the most general Lagrangian for the field $\tilde U$ that is invariant under the global chiral group, organised by the number of derivatives. At two derivatives there is one term, and it is the Hermitian norm of the derivative.</p>
 <p><strong>The chiral field.</strong> Define</p>
@@ -348,7 +348,7 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. With one index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, so that $\sum_\mu\gamma^\mu\gamma_\mu=-4I_4$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\mu=2\gamma_\alpha$, $\sum_\mu\gamma^\mu\gamma_\alpha\gamma_\beta\gamma_\mu=-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\gamma^\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=-2\gamma_\gamma\gamma_\beta\gamma_\alpha$.</p>
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.</p>
 <h2 id="summary">Summary</h2>
 <p>The pion is the pseudo-Goldstone boson of the two-flavour chiral symmetry $SU(2)_L\times SU(2)_R$ spontaneously broken to isospin $SU(2)_V$, with three components transforming in the adjoint and a decay constant $f_\pi$. In the biquaternion framework the pion triplet is the adjoint of the compact $\mathrm{SU}(2)$ inside the material sector,</p>
 <p>$$
@@ -369,7 +369,7 @@ $$</p>
 \boxed{\;\mathcal{L}_\pi^{(2)} = -\frac{f_\pi^2}{2}\sum_\mu\mathrm{Sc}\!\left(\frac{\partial\tilde U}{\partial R_\mu}\frac{\partial\tilde U^{\natural}}{\partial R_\mu}\right)
 = \frac12\left[\sum_\eta\left(\frac{\partial\pi_\eta}{\partial r'_t}\right)^2-\sum_\eta\sum_j\left(\frac{\partial\pi_\eta}{\partial R_j}\right)^2\right] + O(\pi^4)\;},
 $$</p>
-<p>with the coefficient exactly one, fixed by $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$ for $T_\eta = \tfrac{i}{2}\vec e_\eta$, equivalently $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$ with $\mathrm{Tr}(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$. These identities were checked on generic elements of the algebra, and the kinetic coefficient was verified numerically on the expansion, coming out exactly $1$.</p>
+<p>with the coefficient exactly one, fixed by $\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$ for $T_\eta = \tfrac{i}{2}\vec e_\eta$, equivalently $\mathrm{Tr}\mathsf M_2(T_jT_\eta) = \tfrac12\delta_{j\eta}$ with $\mathrm{Tr}\mathsf M_2(\vec e_j\vec e_\eta) = -2\delta_{j\eta}$ and $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$. These identities were checked on generic elements of the algebra, and the kinetic coefficient was verified numerically on the expansion, coming out exactly $1$.</p>
 <p>The quark mass element adds the symmetry-breaking term $f_\pi^2B_0\,\mathrm{Sc}(M\tilde U + M^{*}\tilde U^{*})$ with $B_0 = -\langle\bar qq\rangle/f_\pi^2$, whose quadratic part gives the degenerate $m_{\pi^\pm}^2 = m_{\pi^0}^2 = B_0(m_u+m_d)$ and hence the Gell-Mann–Oakes–Renner relation $m_\pi^2 f_\pi^2 = -(m_u+m_d)\langle\bar qq\rangle$. For the inputs $m_\pi = 139.6$ MeV, $f_\pi = 92.1$ MeV, $m_u+m_d = 7.0$ MeV, the relation gives $B_0 = 2.784$ GeV and $|\langle\bar qq\rangle|^{1/3} = 286.9$ MeV, of the standard order.</p>
 <p>The framework supplies the pion's adjoint isovector assignment, the geometric chiral field as a rotor, the decay-constant normalisation through its plain form, and the soft limit as a property of the derivative expansion. It does not supply the axial current, the anomaly, the Wess–Zumino–Witten term or the flavour-singlet mass, because its centre is vector-like; those are imported from the fermion and general-gauge sectors, and the flavour-singlet and three-flavour extensions remain open.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -422,7 +422,7 @@ $$</p>
 <td>Hermitian generators of the triplet</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, $\mathrm{Tr}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$</td>
+<td>$\mathrm{Sc}(T_jT_\eta) = \tfrac14\delta_{j\eta}$, $2\,\mathrm{Sc}(T_jT_\eta) = \tfrac12\delta_{j\eta}$, $\mathrm{Sc}(\vec e_j^{\natural}\vec e_\eta) = \delta_{j\eta}$</td>
 <td>The identities fixing the normalisation</td>
 </tr>
 <tr>
@@ -495,7 +495,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathrm{Tr}$</td>
-<td>The trace of the algebra, used in $\mathrm{Tr}(T_jT_\eta)=\tfrac12\delta_{j\eta}$ (§<em>Norm and Pairing Conventions</em>)</td>
+<td>The trace of the algebra, used in $2\,\mathrm{Sc}(T_jT_\eta)=\tfrac12\delta_{j\eta}$ (§<em>Norm and Pairing Conventions</em>)</td>
 </tr>
 <tr>
 <td>$j,k,l$</td>

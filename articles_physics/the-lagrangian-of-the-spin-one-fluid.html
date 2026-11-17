@@ -104,19 +104,19 @@ $$</p>
 <p><strong>The same term removes the gauge freedom.</strong> With $k_m=0$ the action is invariant under $A_\mu\mapsto A_\mu+\partial_\mu\Gamma$; with $k_m\ne0$ it is not, because the mass term is not. <strong>One term supplies the condition and destroys the freedom the condition replaces</strong>, and the two statements are the same statement seen from two sides: a massless vector has a redundancy and no condition, a massive one has a condition and no redundancy, and the count of physical components is the same in both cases.</p>
 <p><strong>In the fluid's variables the condition is continuity.</strong> With $A_\mu=r\,u_\mu$,</p>
 <p>$$
-\partial_\mu A^\mu=0
+\sum_\mu\varepsilon_\mu\partial_\mu A_\mu=0
 \qquad\Longleftrightarrow\qquad
-\partial_\mu\bigl(r\,u^\mu\bigr)=0,
+\sum_\mu\varepsilon_\mu\partial_\mu\bigl(r\,u_\mu\bigr)=0,
 $$</p>
-<p>which is the continuity equation for a density $r$ and a velocity $u^\mu$. <strong>The spin-one fluid therefore has a continuity equation that is not an equation of motion</strong>: it is the integrability of the field equation, and it disappears with the mass.</p>
+<p>which is the continuity equation for a density $r$ and a velocity $u_\mu$. <strong>The spin-one fluid therefore has a continuity equation that is not an equation of motion</strong>: it is the integrability of the field equation, and it disappears with the mass.</p>
 <p><strong>The block's phrase is exact and the action explains it.</strong> <a href="the-spin-one-fluid.html">The Spin-One Fluid</a> finds that the fluid's free incompressibility is the mass's gift. The action's version: nothing in the derivative terms forces $\sum_\mu\partial_\mu(ru_\mu)$ to vanish, and the identity $\sum_{\mu,\nu}\partial_\mu\partial_\nu F_{\nu\mu}=0$ has no right-hand side to balance until the mass supplies one. <strong>The incompressibility is not a property of the flow; it is a property of the pair $(r,u)$ and of the mass.</strong></p>
-<p><strong>And the flow's own expansion is not zero.</strong> Differentiating $ru^\mu$ gives $\partial_\mu u^\mu=-u^\mu\partial_\mu\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.</p>
+<p><strong>And the flow's own expansion is not zero.</strong> Differentiating $ru_\mu$ gives $\sum_\mu\varepsilon_\mu\partial_\mu u_\mu=-\sum_\mu\varepsilon_\mu u_\mu\partial_\mu\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.</p>
 <h2 id="the-two-variations-and-the-multiplier">The Two Variations and the Multiplier</h2>
 <p><strong>The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part.</strong> That is the cleanest way to state the pair, and it follows from the split of $\delta A_\mu=u_\mu\,\delta r+r\,\delta u_\mu$ into a longitudinal and a transverse piece.</p>
 <p>The $r$ variation gives $\sum_\mu\varepsilon_\mu u_\mu(\sum_\nu\partial_\nu F_{\nu\mu}-k_m^{2}A_\mu)=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_\nu\Delta_{\mu\nu}(\sum_\lambda\partial_\lambda F_{\lambda\nu}-k_m^{2}A_\nu)=0$. <strong>The two together are the field equation and neither alone is.</strong></p>
 <p><strong>The unit condition is the one place in this layer where a multiplier is genuinely needed.</strong> The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_\mu$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,</p>
 <p>$$
-\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(u_\mu u^\mu+1\bigr),
+\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(\sum_\mu\varepsilon_\mu u_\mu u_\mu+1\bigr),
 $$</p>
 <p>and the multiplier enters the direction's equation as $\lambda u_\mu$, which is a force along the flow. <strong>It plays the part a pressure plays in an incompressible fluid</strong>, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.</p>
 <p><strong>The contrast with the spin article is worth recording.</strong> There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. <strong>The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint</strong>: the word's frame is a group element, and a direction is a coset.</p>
@@ -127,7 +127,7 @@ $$</p>
 <p><em>The equation of state is the mass term's, and the action shows it as the only term without a derivative.</em> The mass term $\frac{k_m^{2}}{2}r^{2}$ is the one term in the action that carries the density and no gradient, and it fixes the pressure in one line: the energy density it contributes is $\epsilon=\frac{k_m^{2}}{2}r^{2}$ and the force it exerts is $-\nabla\ln r$, so $\mathrm{d}p/(\epsilon+p)=\mathrm{d}\ln r$ and $p=\epsilon$. <strong>A spin-one fluid is stiff, and the stiffness is the mass's</strong>, which is the block's reading of the acceleration law; the action's addition is that no other law is available, because no other term of the action is free of derivatives.</p>
 <h2 id="what-the-fluid-variational-principle-adds-and-does-not-add">What the Fluid Variational Principle Adds and Does Not Add</h2>
 <p><strong>Adds.</strong> The mass term's double role, stated once: it removes the gauge freedom and supplies the condition that replaces it, and in the fluid's variables that condition is continuity. The pair of variations as the field equation's longitudinal and transverse parts, with the Lorenz condition as their consequence by an identity. The multiplier's necessity and its reading as a pressure. The decomposition of the field strength into vorticity and density gradient. And the reason this rung has no quantum force: the action has no second derivative of the magnitude.</p>
-<p><strong>Does not add.</strong> No new equation: the four components are the field's. No new current: the Proca current is $k_m^{2}A^\mu$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.</p>
+<p><strong>Does not add.</strong> No new equation: the four components are the field's. No new current: the Proca current is $k_m^{2}A_\mu$ up to the normalisation, and it is the field. No gauge invariance to discuss, because the mass removed it. No thermodynamics, and no quantum potential, since this rung has none. And no statement about the massless limit's fluid reading, which the block's article explicitly denies.</p>
 <p><strong>The one thing the action says that the equations cannot.</strong> The Lorenz condition, the loss of gauge freedom, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. <strong>That is the strongest case in the layer for writing the fluid's Lagrangian</strong>: not a new result, but the location of four results in one coefficient.</p>
 <h2 id="open-questions">Open Questions</h2>
 <ol>
@@ -165,7 +165,7 @@ $$</p>
 <td>Density; the field's magnitude</td>
 </tr>
 <tr>
-<td>$u_\mu$, $u_\mu u^\mu=-1$</td>
+<td>$u_\mu$, $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$</td>
 <td>Unit four-velocity; three functions and one constraint</td>
 </tr>
 <tr>
@@ -189,11 +189,11 @@ $$</p>
 <td>Multiplier of the unit condition; a pressure</td>
 </tr>
 <tr>
-<td>$E_\mu=F_{\mu\nu}u^\nu$</td>
+<td>$E_\mu=\sum_\nu\varepsilon_\nu F_{\mu\nu}u_\nu$</td>
 <td>The electric part along the flow</td>
 </tr>
 <tr>
-<td>$a_\mu=u^\nu\partial_\nu u_\mu$</td>
+<td>$a_\mu=\sum_\nu\varepsilon_\nu u_\nu\partial_\nu u_\mu$</td>
 <td>The flow's acceleration</td>
 </tr>
 <tr>

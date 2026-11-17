@@ -176,7 +176,7 @@ S(\tilde{Ϛ}_{\Psi})=-\tfrac12\log\frac{1-|\vec r|^2}{4}-|\vec r|\,\mathrm{artan
 $$
 At $\vec r=0$ this returns $\log2$, the entropy of the maximally mixed qubit state, and at $|\vec r|\to1$ it tends to $0$, the entropy of a pure state. For the cross term, the pairing formula gives
 $$
-\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,2}\big)
+2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,2}\big)
 =\tfrac12\log\frac{1-|\vec s|^2}{4}
 +|\vec r|\,\mathrm{artanh}|\vec s|\,\cos\gamma,
 \qquad
@@ -245,8 +245,8 @@ $$
 Araki's formula evaluated on $\Omega_\omega=\tilde{Ϛ}_{\Psi,\omega}^{1/2}$ then returns
 $$
 S(\omega\|\xi_{\mathrm{alt}})
-=\mathrm{Tr}\Big[\tilde{Ϛ}_{\Psi,\omega}^{1/2}\Big(\log\tilde{Ϛ}_{\Psi,\omega}\,\tilde{Ϛ}_{\Psi,\omega}^{1/2}-\tilde{Ϛ}_{\Psi,\omega}^{1/2}\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}\Big)\Big]
-=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi,\omega}\log\tilde{Ϛ}_{\Psi,\omega}\big)-\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi,\omega}\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}\big),
+=2\,\mathrm{Sc}\Big[\tilde{Ϛ}_{\Psi,\omega}^{1/2}\Big(\log\tilde{Ϛ}_{\Psi,\omega}\,\tilde{Ϛ}_{\Psi,\omega}^{1/2}-\tilde{Ϛ}_{\Psi,\omega}^{1/2}\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}\Big)\Big]
+=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi,\omega}\log\tilde{Ϛ}_{\Psi,\omega}\big)-2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi,\omega}\log\tilde{Ϛ}_{\Psi,\mathrm{alt},\xi}\big),
 $$
 which is the boxed expression; the two were checked against each other on the generic pair above. The operator is the algebra-level form of the closed expression, and it is the object that survives when the finite-dimensional state is replaced by a state of a local algebra.</p>
 <h2 id="relative-entropy-in-quantum-field-theory">Relative Entropy in Quantum Field Theory</h2>

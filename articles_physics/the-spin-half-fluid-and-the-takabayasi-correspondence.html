@@ -245,7 +245,7 @@ $$</p>
 <h3 id="the-two-densities">The two densities</h3>
 <p><strong>His density is the modulus of the current, and his scalar bilinear is a different number.</strong> His $\Omega$ and $\Omega_{\mathrm{ps}}$ are the scalar and the pseudoscalar bilinears, $\Omega=\bar\psi\psi$ and $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$, and his density is their quadrature:</p>
 <p>$$
-\rho^{2}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}=j_\mu j^{\mu},
+\rho^{2}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}=\sum_\mu\varepsilon_\mu j_\mu j_\mu,
 $$</p>
 <p>with $j$ the current. The identity is Fierz's; on twenty random spinors its largest deviation is $9\times10^{-14}$.</p>
 <p><strong>Three statements follow.</strong> The velocity $v_\mu=S_\mu/\rho$ is a unit vector because $\rho$ is the current's modulus, so the normalisation of the velocity is not a condition at all: nothing is imposed. His $\rho>0$ is a definition and not a restriction, the modulus being positive exactly where the current does not vanish. The third is this section's subject: his mass term carries the scalar bilinear and not the density, so the fluid's mass density is</p>
@@ -259,9 +259,9 @@ $$</p>
 <h3 id="the-velocity-and-the-heat-flow">The velocity and the heat flow</h3>
 <p><strong>His velocity is the current's direction, and the standard name for that choice is the Eckart frame.</strong> Relativistic hydrodynamics fixes the fluid's velocity in one of two ways. The Eckart frame takes the particle flux, and that is his, by definition: $S_\mu=\rho v_\mu$. The Landau frame takes the energy flux, the timelike eigenvector of the stress. The two coincide exactly when the energy flux vanishes in the Eckart frame, and that flux is the heat flow,</p>
 <p>$$
-q^{\mu}=T^{\mu\lambda}u_{\lambda}-\epsilon\,u^{\mu},
+q_\mu=\sum_\lambda\varepsilon_\lambda T_{\mu\lambda}u_\lambda-\epsilon\,u_\mu,
 \qquad
-\epsilon=T_{\lambda\rho}u^{\lambda}u^{\rho},
+\epsilon=\sum_{\lambda,\rho}\varepsilon_\lambda\varepsilon_\rho T_{\lambda\rho}u_\lambda u_\rho,
 $$</p>
 <p>with $u$ the Eckart velocity, a unit timelike vector, and $\epsilon$ the energy density it sees.</p>
 <p><strong>A plane wave has none, and a superposition has some.</strong> Computed on the Belinfante stress — the symmetrised canonical tensor, whose divergence vanishes to $2\times10^{-16}$ on every case checked — a single plane wave has $\lVert q\rVert/\lvert\epsilon\rvert\le6\times10^{-16}$. The two-mode superposition has it at $0.31$ and $0.34$ of the energy density at two events, and the particle–antiparticle superposition at $18$ and $15$. The angle and the flux move together: $\lvert\cos\theta\rvert=1$ with $q=0$, and $\lvert\cos\theta\rvert<1$ with $q\neq0$.</p>
@@ -270,7 +270,7 @@ $$</p>
 <h3 id="the-trace-and-the-pressure">The trace and the pressure</h3>
 <p><strong>The stress has a fixed trace, and that trace is his mass term.</strong> Computed on the symmetrised canonical tensor, the trace is the scalar bilinear,</p>
 <p>$$
-T^{\mu}{}_{\mu}=mc^{2}\Omega=mc^{2}\rho\cos\theta ,
+\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega=mc^{2}\rho\cos\theta ,
 $$</p>
 <p>the improvement that symmetrises the tensor being a divergence whose own trace vanishes. The identity is asserted of the corpus's own tensor: his $L_{\mu\nu}$ is a different arrangement of the same bilinears, and this article does not recompute it. The arithmetic is in <a href="the-spin-half-energy-momentum-tensor.html">The Spin-Half Energy-Momentum Tensor</a>: twenty-one events, largest deviation $2.7\times10^{-15}$. The identity joins the two objects that his formulation keeps apart — the mass term of the Lagrangian and the trace part of the stress — and says they are one number.</p>
 <p><strong>So the equation of state has one line, and it is not the pressure.</strong> In the flow's frame the trace is $\epsilon-3p$, hence</p>
@@ -345,7 +345,7 @@ $$</p>
 <p><strong>The reason the vorticity is not a dynamical variable.</strong> A classical fluid's vorticity is derived and then transported, with Helmholtz's theorems and a conserved helicity. The word's vorticity is a function of the boost's gradient and of nothing else, so the transport law has nothing to act on and the invariant of a loop is the frame's holonomy rather than a circulation. <a href="the-clebsch-potentials-and-the-rank-of-the-vorticity.html">The Clebsch Potentials and the Rank of the Vorticity</a> carries the classical side of that distinction.</p>
 <p><strong>The precise domain.</strong> His variables need $\rho\neq0$; the word needs the element to be an invertible element, and for the spinor field the second condition is strictly stronger. The one-sided waves are the fields that show the difference.</p>
 <p><strong>The mass term's frame dependence.</strong> The scalar coupling is a frame factor, and the factor is the same one the velocity carries.</p>
-<p><strong>The equation of state, and its one line.</strong> A general fluid needs a function of two variables; here the trace of the stress is the mass term, $T^{\mu}{}_{\mu}=mc^{2}\rho\cos\theta$, so the pressure is $\tfrac13(\epsilon-mc^{2}\rho\cos\theta)$ and the isotropic part follows from the state. What is not fixed is the shear, and the fixed-density table shows it running over a factor nine while the state stands still. The corpus's own statement of the identity is in <a href="the-spin-half-energy-momentum-tensor.html">The Spin-Half Energy-Momentum Tensor</a>, and it is proved there for the corpus's tensor and not for his.</p>
+<p><strong>The equation of state, and its one line.</strong> A general fluid needs a function of two variables; here the trace of the stress is the mass term, $\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\rho\cos\theta$, so the pressure is $\tfrac13(\epsilon-mc^{2}\rho\cos\theta)$ and the isotropic part follows from the state. What is not fixed is the shear, and the fixed-density table shows it running over a factor nine while the state stands still. The corpus's own statement of the identity is in <a href="the-spin-half-energy-momentum-tensor.html">The Spin-Half Energy-Momentum Tensor</a>, and it is proved there for the corpus's tensor and not for his.</p>
 <p><strong>The fluid's two densities, and the frame its velocity belongs to.</strong> His density is the current's modulus, so his subsidiary conditions are met by construction, and the mass term couples to the scalar rather than to that density: the fluid carries a particle density and a mass density, and their ratio is the angle. His velocity is the current's direction, which is the Eckart frame, and the energy flux that this choice leaves in the fluid's rest frame is what his reading of the stress remainder calls heat flow.</p>
 <h3 id="what-it-does-not-add">What it does not add</h3>
 <p><strong>No prediction.</strong> The two formulations make the same predictions, and there is no experiment that separates them.</p>
@@ -435,19 +435,19 @@ $$</p>
 <td>His scalar and pseudoscalar bilinears; $\Omega=\rho\cos\theta$ and $\Omega_{\mathrm{ps}}=\rho\sin\theta$</td>
 </tr>
 <tr>
-<td>$j^{\mu}$</td>
-<td>The current, with $\rho^{2}=j_\mu j^{\mu}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}$</td>
+<td>$j_\mu$</td>
+<td>The current, with $\rho^{2}=\sum_\mu\varepsilon_\mu j_\mu j_\mu=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}$</td>
 </tr>
 <tr>
 <td>$k_m=mc/\hbar$</td>
 <td>Mass wave number; the unit that makes his $k_\mu$ dimensionless</td>
 </tr>
 <tr>
-<td>$u^{\mu}$, $q^{\mu}$, $\epsilon$</td>
+<td>$u_\mu$, $q_\mu$, $\epsilon$</td>
 <td>Eckart four-velocity, heat flow, and the energy density it sees</td>
 </tr>
 <tr>
-<td>$T^{\mu}{}_{\mu}=mc^{2}\rho\cos\theta$</td>
+<td>$\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\rho\cos\theta$</td>
 <td>Trace of the stress; the mass term</td>
 </tr>
 <tr>
