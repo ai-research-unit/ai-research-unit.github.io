@@ -287,4 +287,4 @@ The spectrum of a rotor is two eigenvalues whose product is one, that is two rea
 - *The Two Eigenvalues Are the Two Weyl Weights* — the spectrum of the boost family computed.
 - *When the Axes Commute: The Normal Transformations* — the class of elements for which a diagonalising unitary exists.
 - *The Complete Polar Decomposition of an N-Regular Biquaternion* — the source of the worked element and of the normal-case reading compared here.
-- *Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular Biquaternion* — the general case and the one-parameter family, in the mathematics corpus.
+- *Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion* — the general case and the one-parameter family, in the mathematics corpus.

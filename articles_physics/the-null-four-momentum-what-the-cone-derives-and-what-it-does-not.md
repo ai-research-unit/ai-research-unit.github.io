@@ -63,6 +63,8 @@ $$
 
 Mass is the negative of the norm of the four-momentum, up to the constant $c^2$. The norm is the framework's only invariant attached to a four-momentum, so in this interpretation **mass is the value of the invariant** — the invariant is the shell, and the mass is which shell. A particle is characterized, so far as the algebra's quadratic form is concerned, by one real number: the value of $\langle\cdot\rangle_{\natural}$ on its four-momentum.
 
+**The definition holds on the material sector and nowhere else.** The right-hand side is real only on $\mathbb{B}_{\Phi}$, so the equality defines a mass only there. On the mirror four-momentum $\tilde P_{\Psi}=i\tilde P_{\Phi}$ the same number appears with the opposite sign, $\langle\tilde P_{\Psi}\rangle_{\natural}=+m^{2}c^{2}$, and the mass is unchanged; off both sectors the norm is complex, its level sets have codimension two, and no value of $m$ can be read. The mass is therefore not defined on $\mathbb{B}$, and no statement of this article extends past the two sectors.
+
 ## The Core Derivations
 
 ### The massless shell is the zero-divisor cone

@@ -26,7 +26,7 @@ $$
 
 **The second idea is that the norm is complex, so the modulus is a branch, and the branch is the only convention in the decomposition.** A complex number has two square roots. One of them is chosen by a rule fixed once and for all, and with the rule fixed, all four factors are functions of the element. On the material sector the choice is not free, because there the norm is real: the modulus is either real or purely imaginary, and which one it is is exactly the timelike–spacelike distinction. The convention that looks arbitrary on the algebra is a sign pattern on the sector.
 
-**The entry is in three parts, and the title names them.** The **mass** is the scale $r$, the modulus of the norm. The **angle** is the phase angle $\theta_{\mathrm{pha}}$ of the modulus, one number in a half-circle. The **cone** is the set where both disappear. The boost angle and the rotor angle belong to the word but are not named in the title, because they are motion and orientation and the next entry of the category reads them; here they are carried along so that the four factors are all present.
+**The entry is in three parts, and the title names them.** The **mass** is read off the scale $r$, the modulus of the norm: on the material sector $r=mc$, so $m=r/c$. The **angle** is the phase angle $\theta_{\mathrm{pha}}$ of the modulus, one number in a half-circle. The **cone** is the set where both disappear. The boost angle and the rotor angle belong to the word but are not named in the title, because they are motion and orientation and the next entry of the category reads them; here they are carried along so that the four factors are all present.
 
 **The strongest objection is that a complex norm cannot be a physical mass.** The objection is right about the algebra and wrong about the reading. On the whole algebra the norm is a complex quadratic form, its zero set is a complex cone, and no mass is defined there. On the material sector the norm is real and indefinite, a quadratic form of inertia $(3,1)$, and its level sets are the mass shells. The mass is a level set on a sector, not a value on the algebra, and this entry says so before it uses the word.
 
@@ -59,7 +59,7 @@ $$
 - The four factors are the scale, the central phase, the boost and the rotor, of real dimensions $1,1,3,3$, summing to eight.
 - The modulus is the principal square root of the norm, $\Rho^{2}=N$ with $\Rho$ in the half-plane $\{\operatorname{Re}\Rho>0\}\cup\{it:t>0\}$; the branch is the only convention of the decomposition.
 - The scale is the geometric mean of the two eigenvalues and the angle is the mean of their phases: $r=\lvert\lambda_+\lambda_-\rvert^{1/2}$ and $2\theta_{\mathrm{pha}}=\arg(\lambda_+\lambda_-)$.
-- On the material sector the norm is real, so the phase is $1$ on spacelike and $i$ on timelike four-vectors, and the scale is the mass in the second case and the proper length in the first.
+- On the material sector the norm is real, so the phase is $1$ on spacelike and $i$ on timelike four-vectors, and the scale is $mc$ in the second case and the proper length in the first.
 - The amplitude of the previous entry is recovered as $\tilde Q_H=r\tilde U_{\mathrm b}$ and the frame as $\tilde Q_0=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, so the two articles are two bracketings of one word.
 - On the cone the two-factor pair survives with a rank-one amplitude $\tilde Q_H=a e_t+i\vec W/(2a)$ and $\lvert\vec W\rvert=2a^{2}$; the rank is two off the cone, one on it, and zero at the origin.
 - The rapidity of the boost is bounded by nothing and the rotor angle is periodic; as an element approaches the cone the scale collapses as $e^{-\theta/2}$ and the rapidity diverges as $e^{\theta/2}$, while the Hermitian norm stays finite.
@@ -165,7 +165,7 @@ $$
 e^{i\theta_{\mathrm{pha}}}=\begin{cases}1,&N>0\quad\text{(spacelike)},\\[2pt] i,&N<0\quad\text{(timelike)},\\[2pt] \text{undefined},&N=0\quad\text{(lightlike)} .\end{cases}
 $$
 
-**The scale is the same expression in both cases and its reading is not.** On a spacelike four-vector $r$ is the proper length of the displacement. On a timelike four-vector $r$ is the mass, because $N=-m^{2}$ and $r=m$. One modulus, two names, and the name is decided by the sign of the norm.
+**The scale is the same expression in both cases and its reading is not.** On a spacelike four-vector $r$ is the proper length of the displacement. On a timelike four-vector $r$ is $mc$, because $N=-m^{2}c^{2}$ and $r=mc$; the mass is $m=r/c$. One modulus, two names, and the name is decided by the sign of the norm.
 
 **The consequence is that matter sits at the endpoint of the phase interval.** The phase of a timelike four-vector is exactly $i$, which is the boundary value $\psi/2=\pi/2$ of the half-circle. It is not an interior point of the range that matter happens to occupy. It is the endpoint, and the endpoint is reached because the norm is real and negative, which is the definition of timelike.
 
@@ -271,7 +271,7 @@ $$
 
 **The second line is the case the eigenbasis cannot see.** The norm is one, so the element is invertible and the word exists; but $B^{2}=0$, so the two eigenvalues coincide and the element is defective. The rapidity is $\operatorname{arccosh}3$, finite and positive: the boost is real and the word is perfectly well defined, while the spectral decomposition of the same element has collapsed. This is the sharpest single illustration in the entry of the difference between the two decompositions, and it is the subject of the next entry but two.
 
-**The third line is matter at rest in a boosted frame.** The norm is real and negative, the phase is $i$, and the scale is the mass: $r=\sqrt3$ with $N=-3$, so $m=\sqrt3$. The rapidity is $\operatorname{arccosh}(5/3)$, which is not zero, so the mass is not at rest in this frame. The scale is the mass no matter what the boost does, and that is the content of the next section.
+**The third line is matter at rest in a boosted frame.** The norm is real and negative, the phase is $i$, and the scale is $mc$: $r=\sqrt3$ with $N=-3$, so $mc=\sqrt3$ and $m=\sqrt3/c$ in the units of the row. The rapidity is $\operatorname{arccosh}(5/3)$, which is not zero, so the mass is not at rest in this frame. The scale is $mc$ no matter what the boost does, and that is the content of the next section.
 
 **The last two lines are on the cone.** The word does not exist, and the two lines differ in the second invariant: one is spectrally regular and one is not. They are the two sectors of the degenerate case, and they are read in the section after the walls.
 
@@ -444,13 +444,13 @@ $$
 
 ### I.9.a — The Norm Is the Mass Squared, and the Sector Supplies the Sign
 
-**Read:** on the material sector, in units with $c=1$, with the four-momentum written $\tilde P=ip_0e_t+\vec p$ and real $p_0,\vec p$,
+**Read:** on the material sector, with the four-momentum written $\tilde P=ip_0e_t+\vec p$, real $p_0,\vec p$ and $p_0=E/c$,
 
 $$
-N(\tilde P)=-p_0^{2}+\lvert\vec p\rvert^{2}=-m^{2},
+N(\tilde P)=-p_0^{2}+\lvert\vec p\rvert^{2}=-m^{2}c^{2},
 $$
 
-**so the mass shell is the level set $N=-m^{2}$ and the mass is $\lvert N\rvert^{1/2}$.**
+**so the mass shell is the level set $N=-m^{2}c^{2}$ and the mass is $\lvert N\rvert^{1/2}/c$.**
 
 **The sign is not a convention and it is not decoration.** It comes from one complex coordinate in the timelike slot, and it is the same sign that makes the material sector anti-Hermitian. A real four-vector has $N=p_0^{2}+\lvert\vec p\rvert^{2}$, a sum of squares, and no level set of it is a mass shell. The shell exists because one coordinate is imaginary, and that is the whole of the mechanism.
 
@@ -504,15 +504,15 @@ $$
 
 **The boundary.** The phase is a property of the element's norm and not of a state. The reading is available only on the material sector, and it needs the sector before it can be stated. Nothing is claimed about the phase of a general biquaternion, which is continuous and unconstrained.
 
-### I.9.f — The Scale Is the Mass and the Boost Is the Motion
+### I.9.f — The Scale Is $mc$ and the Boost Is the Motion
 
-**Read:** on a timelike four-momentum $\tilde Q_H=r\tilde U_{\mathrm b}$ with $r=m$, and $H=r^{2}\cosh\theta_{\mathrm{rpd}}$.
+**Read:** on a timelike four-momentum $\tilde Q_H=r\tilde U_{\mathrm b}$ with $r=mc$, and $H=r^{2}\cosh\theta_{\mathrm{rpd}}$.
 
-**The polar factor of the previous entry separates into a mass and a boost, and the two are multiplied.** The mass is the scale and the boost is the motion, and the Hermitian norm is the product of the two, with the factor $\cosh\theta_{\mathrm{rpd}}$ carrying how much the motion has inflated the amplitude.
+**The polar factor of the previous entry separates into a scale and a boost, and the two are multiplied.** The scale is $mc$ and the boost is the motion, and the Hermitian norm is the product of the two, with the factor $\cosh\theta_{\mathrm{rpd}}$ carrying how much the motion has inflated the amplitude.
 
 **The physical interpretation is that an amplitude is not a mass.** The amplitude of the previous entry is mass times boost, and it equals the mass only in the frame where the element is at rest. The previous entry said this with the Hermitian norm; this entry says it with the norm, and the two statements are one: $\lvert N\rvert=r^{2}$ and $H=r^{2}\cosh\theta_{\mathrm{rpd}}$, so the ratio of the amplitude to the mass is the Lorentz factor.
 
-**The boundary.** The identity $r=m$ uses $N=-m^{2}$, and it is a reading of the sector. That the scale is the mass in every frame is a property of the decomposition and not a dynamical theorem.
+**The boundary.** The identity $r=mc$ uses $N=-m^{2}c^{2}$, and it is a reading of the sector. That the scale is $mc$ in every frame is a property of the decomposition and not a dynamical theorem.
 
 ### I.9.g — The Massless Limit Is a Limit of the Inverse Parameters
 
@@ -558,7 +558,7 @@ $$
 
 **Read:** the modulus is the root in the half-plane $\mathcal H$; across the negative real axis of the norm the phase and the rotor both change sign, while the Cartan pair does not.
 
-**The cut is the set of timelike four-momenta.** On the material sector the norm is real, so the plane of the norm is the real line, and the negative half of it is exactly $N=-m^{2}<0$. The four-factor word is therefore discontinuous on the objects physics calls matter, and continuous on everything else.
+**The cut is the set of timelike four-momenta.** On the material sector the norm is real, so the plane of the norm is the real line, and the negative half of it is exactly $N=-m^{2}c^{2}<0$. The four-factor word is therefore discontinuous on the objects physics calls matter, and continuous on everything else.
 
 **The physical interpretation is that the flip is the double cover and not a discontinuity of the element.** The flip sends $e^{i\theta_{\mathrm{pha}}}\to-e^{i\theta_{\mathrm{pha}}}$ and $\tilde u_{\mathrm r}\to-\tilde u_{\mathrm r}$ with the product fixed. A rotor has this freedom by construction: its group is $SU(2)$ and the flip is the rotation by $2\pi$. So the cut is where a spinor changes sheet, and the two-factor pair, which is blind to it, is the description in which nothing happens.
 

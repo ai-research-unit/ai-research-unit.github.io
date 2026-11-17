@@ -538,7 +538,7 @@ $$
 (Q_t+iB)(Q_t-iB)=Q_t^{2}+B^{2}=N(\tilde Q).
 $$
 
-So the mass shell is a level set of a symmetric function of the two spectral values, and it is not a third object beside them. The mass is the value of that product on the sector.
+So the mass shell is a level set of a symmetric function of the two spectral values, and it is not a third object beside them. The product is the norm, so the shell is $N=-m^{2}c^{2}$ and the mass is $m=\sqrt{-N}/c$ on the material sector.
 
 **The reading also fixes what the other three cannot do.** The weight says nothing about the cone. The plain and the Krein norms vanish on invertible elements, so they say nothing about the boundary of the reversible region. Only the quaternionic norm carries both the cone and the value.
 

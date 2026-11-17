@@ -1,14 +1,14 @@
-# __Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular Biquaternion__
+# __Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion__
 
 ## Introduction
 
-An N-regular biquaternion $\tilde Q$ carries two decompositions. The **eigenvalue decomposition** splits the element into two idempotents with two eigenvalues. The **exponential polar decomposition** splits the unit factor into a boost and a rotor, and multiplies the result by the modulus. The word it writes is the complete polar decomposition. This article states the dictionary between the two, and states what the dictionary becomes on the wall $B^2=0$, where the second eigenvalue disappears.
+An N-regular biquaternion $\tilde Q$ carries two decompositions. The **eigenvalue decomposition** splits the element into two idempotents with two eigenvalues. The **complete polar decomposition** splits the unit factor into a boost and a rotor, and multiplies the result by the modulus. The word it writes is the complete polar decomposition. This article states the dictionary between the two, and states what the dictionary becomes on the wall $B^2=0$, where the second eigenvalue disappears.
 
 The two readings depend on the invariant $B^2=Q_x^2+Q_y^2+Q_z^2$ differently. Off the wall the eigenvalues $\lambda_\pm=Q_t\pm iB$ are distinct, the eigenprojections $\tilde\Pi_\pm=\frac12(e_t\pm\vec{Ζ})$ exist, and they depend on the element. There the eigenvalues fix the modulus and the phase, and the two eigenvalues of the unit factor; the eigenprojections carry the remaining polar data. On the wall the two eigenvalues coalesce at $Q_t$, the eigenprojections diverge, and no eigenbasis exists. The spectral reading does not vanish; it collapses to a Jordan chain, and the spectrum fixes only two numbers, the scalar part $Q_t$ and the sign $\varepsilon$ of the unit factor.
 
 The dictionary is therefore one dictionary with two shapes. Off the wall it is a two-step map: eigenvalues first, eigenprojections second. On the wall the first step collapses to $Q_t\mapsto(Q_t,\varepsilon)$ and the second step carries everything else. The constant part, across the wall, is the scalar factor $r e^{i\theta_{\mathrm{pha}}}$: it is read from the reduced product in both cases, because $\lambda_+\lambda_-=N$ off the wall and $N=Q_t^2$ on it.
 
-The algebra is that of *The Complete Polar Decomposition of an N-Regular Biquaternion* for the word and the Cartan decomposition, and that of *The Biquaternion Eigenvalue Decomposition* and *The Spectrum* for the spectral side. The Jordan chain on the wall is the one of *The Jordan Basis of a Spectrally Degenerate Biquaternion*. No proof is repeated from those articles; the Jordan chain is recalled only where the dictionary needs it. The numerical cases are in *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion* and in *Worked Examples of Exponential Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion*.
+The algebra is that of *The Complete Polar Decomposition of an N-Regular Biquaternion* for the word and the Cartan decomposition, and that of *The Biquaternion Eigenvalue Decomposition* and *The Spectrum* for the spectral side. The Jordan chain on the wall is the one of *The Jordan Basis of a Spectrally Degenerate Biquaternion*. No proof is repeated from those articles; the Jordan chain is recalled only where the dictionary needs it. The numerical cases are in *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion* and in *Worked Examples of the Complete Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion*.
 
 **The plan.** The two decompositions and their common domain are set out in §*The Two Decompositions*. §*The Dictionary* gives the translation in both directions, with the wall's table as its last subsection. §*The Regimes* lists the six spectral regimes with their polar status, and §*The Jordan Reading* replaces the eigenbasis by a Jordan chain on the wall. The exponential and the logarithm are treated in §*The Exponential and the Logarithm*, the two boundaries in §*The Boundary*, and the matrix form in §*The Matrix Picture*. §*A Worked Example at the Wall* computes one defective element in both readings. The summary collects the main results, the dictionary across the three algebras, and what the example shows.
 
@@ -44,7 +44,7 @@ with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They de
 | Eigenprojections | $\tilde\Pi_\pm=\tfrac12(e_t\pm\vec{Ζ})$, $\vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ |
 | Decomposition | $\tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ in the distinct case |
 
-### The Exponential Polar Decomposition
+### The Complete Polar Decomposition
 
 Every unit $\tilde Q\in\mathbb{B}^\times=\{Q_t^2+Q_x^2+Q_y^2+Q_z^2\neq0\}$ has a writing, unique up to the degeneracies of the axes,
 
@@ -795,7 +795,7 @@ Its eigenvalues are $\operatorname{Sc}\tilde U\pm i(\vec U\cdot\vec U)^{1/2}$, a
 
 The matrix picture makes the dimension count explicit: the diagonal form of the unit factor $\tilde U$ has one complex eigenvalue (two real) and one eigenprojection (four real), while the Cartan product has two real angles and two real axes (six real). The equality $2+4=6$ holds on both sides: the two eigenvalues of $\tilde U$ and the eigenprojection on one side, the two angles and the two axes on the other.
 
-The full case-by-case computation is in *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion*; the examples here isolate the dictionary.
+The full case-by-case computation is in *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*; the examples here isolate the dictionary.
 
 ### A Pure Boost and a Pure Rotor
 
@@ -810,7 +810,7 @@ In the first row the element is the boost $\exp(i\ln2\,\vec e_z)=\cosh\ln2+i\sin
 
 ### The Generic Jordan Element
 
-Take the element of *Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion*, §*Case 8*,
+Take the element of *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion*, §*Case 8*,
 
 $$
 \tilde Q=(1+i)e_t+\vec e_x+i\vec e_y.
@@ -963,7 +963,7 @@ which is the unipotent block. The example shows the two readings side by side: t
 
 ## Summary
 
-For a biquaternion unit $\tilde Q=Q_te_t+\vec Q$ with distinct eigenvalues, the eigenvalue decomposition and the exponential polar decomposition are related by
+For a biquaternion unit $\tilde Q=Q_te_t+\vec Q$ with distinct eigenvalues, the eigenvalue decomposition and the complete polar decomposition are related by
 
 $$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-
@@ -1078,8 +1078,8 @@ Read down a column for one algebra and across a row for one concept. The first t
 ## Further Reading
 
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the word, the Cartan decomposition, existence and uniqueness, the group law, and the exact logarithm on the wall.
-- [Worked Examples of Exponential Polar Decomposition of an N-Regular Biquaternion](worked-examples-of-exponential-polar-decomposition-of-an-n-regular-biquaternion.html), for the numerical cases of the word, off the wall and on it.
-- [Worked Examples of Exponential Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion](worked-examples-of-exponential-polar-decomposition-in-the-eigenbasis-of-an-n-regular-biquaternion.html), for the same cases read in the eigenbasis and in the Jordan chain.
+- [Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion](worked-examples-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the numerical cases of the word, off the wall and on it.
+- [Worked Examples of the Complete Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion](worked-examples-of-the-complete-polar-decomposition-in-the-eigenbasis-of-an-n-regular-biquaternion.html), for the same cases read in the eigenbasis and in the Jordan chain.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* and §*The Eigenprojectors*, for the spectrum and the eigenprojections.
 - [The Spectrum](the-spectrum.html), for the four sectors, the discriminants, and the degenerate cone.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the chain selected by the Hermitian form.

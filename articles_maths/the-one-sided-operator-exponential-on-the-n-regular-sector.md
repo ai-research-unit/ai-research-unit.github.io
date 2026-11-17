@@ -115,7 +115,7 @@ The following table collects the pure factors. The last column is the nontrivial
 
 The scale and the phase are central. Their rows are read as scalar multipliers of a word with $B\neq0$; for a purely central element $B=0$, every basis is an eigenbasis, and the single eigenvalue is $Q_t$.
 
-For a general word the two factors do not commute, and $\mu_\pm$ are not separately exponentials of half the boost and half the rotor angle. The spinor matrix is still $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$; the half-angle formulas are the statement for the pure factors, and for commuting axes. The general relation between the spectral data and the polar angles is *Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular Biquaternion*, §*The Spectral Data from the Polar Factors*.
+For a general word the two factors do not commute, and $\mu_\pm$ are not separately exponentials of half the boost and half the rotor angle. The spinor matrix is still $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$; the half-angle formulas are the statement for the pure factors, and for commuting axes. The general relation between the spectral data and the polar angles is *Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion*, §*The Spectral Data from the Polar Factors*.
 
 ## The Weight Relation and the Two Copies
 
@@ -281,4 +281,4 @@ The four factors give the table of exponents. The scale keeps $\ln r$, the phase
 - [One-Sided Operators on the N-Regular Sector](one-sided-operators-on-the-n-regular-sector.html), for the algebraic companion: the composition laws, the eigenbasis, the block form, the wall and the image.
 - [The Two-Sided Exponential on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the doubling rule and the cancellation of the phase on the other side.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the element exponential, its logarithm, its spectral reading and the log defect used at the wall (§*The Formal Exponent and the Defect at the Wall*).
-- [Relations between Exponential Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles.
+- [Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](relations-between-the-complete-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles.
