@@ -183,7 +183,7 @@ where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign 
 *Idempotency.* The square of $\tilde\Pi_\epsilon$ is
 
 $$
-\tilde\Pi_\epsilon^2 = \frac{1}{16}\sum_{m,m_2\in\{t,x,y,z\}}\epsilon_m\epsilon_{m_2}\,(e_m e_{m_2})\otimes(e_m e_{m_2}),
+\tilde\Pi_\epsilon^2 = \frac{1}{16}\sum_{\mu,\mu_2\in\{t,x,y,z\}}\epsilon_\mu\epsilon_{\mu_2}\,(e_\mu e_{\mu_2})\otimes(e_\mu e_{\mu_2}),
 $$
 
 with $\epsilon_t \equiv 1$. We group the sixteen pairs $(m,m_2)$ into three classes.
@@ -235,7 +235,7 @@ $$
 We compute the pairing term by term. Multiplying $\tilde\Pi_\epsilon$ by $\tilde{H}_{\Psi,ab}$,
 
 $$
-\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{m\in\{t,x,y,z\}}\epsilon_m\,(e_m \cdot i\vec u_x)\otimes(e_m \cdot i\vec u_y),
+\tilde\Pi_\epsilon\tilde{H}_{\Psi,ab} = \frac{1}{4}\sum_{\mu\in\{t,x,y,z\}}\epsilon_\mu\,(e_\mu \cdot i\vec u_x)\otimes(e_\mu \cdot i\vec u_y),
 $$
 
 with $\epsilon_t \equiv 1$.
@@ -245,19 +245,19 @@ with $\epsilon_t \equiv 1$.
 **Terms $m \in \{x,y,z\}$.** We have
 
 $$
-e_m\cdot i\vec u_x = i\,e_m \vec u_x = i\left(-a_m e_t + \text{vector}\right),
+e_\mu\cdot i\vec u_x = i\,e_\mu \vec u_x = i\left(-a_\mu e_t + \text{vector}\right),
 $$
 
-using $e_m \vec u_x = -a_m e_t + \sum_{\eta \neq m} a_\eta e_m \vec e_\eta$. The scalar part is $-i a_m$, and similarly $\mathrm{Sc}(e_m\cdot i\vec u_y) = -i b_m$. The product of the two scalar parts is
+using $e_\mu \vec u_x = -a_\mu e_t + \sum_{\eta \neq \mu} a_\eta e_\mu \vec e_\eta$. The scalar part is $-i a_\mu$, and similarly $\mathrm{Sc}(e_\mu\cdot i\vec u_y) = -i b_\mu$. The product of the two scalar parts is
 
 $$
-(-i a_m)(-i b_m) = i^2\, a_m b_m = -a_m b_m.
+(-i a_\mu)(-i b_\mu) = i^2\, a_\mu b_\mu = -a_\mu b_\mu.
 $$
 
 **Assembly.** Substituting, the factor $\frac14$ carried by the product and the factor $4$ carried by the pairing cancel,
 
 $$
-E(\vec u_x, \vec u_y) = \sum_{m\in\{x,y,z\}}\epsilon_m\,(-a_m b_m) = -\sum_{m\in\{x,y,z\}}\epsilon_m\,a_m b_m.
+E(\vec u_x, \vec u_y) = \sum_{\mu\in\{x,y,z\}}\epsilon_\mu\,(-a_\mu b_\mu) = -\sum_{\mu\in\{x,y,z\}}\epsilon_\mu\,a_\mu b_\mu.
 $$
 
 So the correlation function is

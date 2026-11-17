@@ -107,7 +107,7 @@ The statement is about *projective* measurements and should not be overstated. A
 There is a three-dimensional space in the framework that carries spin one: the scalar-free part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$, on which the adjoint action
 
 $$
-\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=[\tilde S_{\Psi,\eta},ie_l]=i\,\hbar\,\epsilon_{\eta lm}\,ie_{m}$$
+\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=[\tilde S_{\Psi,\eta},ie_l]=i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,ie_{m}$$
 
 is a spin-one angular momentum. Since a three-dimensional module of $\mathbb{B}$ does not exist, something must distinguish this action from a module action, and the difference is exactly the multiplicativity of the map $x\mapsto\mathrm{ad}_x$.
 

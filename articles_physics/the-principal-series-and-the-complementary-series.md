@@ -28,19 +28,19 @@ with $M$ compact, $A$ the boost and $N$ the null translations. The quotient $G/B
 A character of $B$ is fixed by two data:
 
 $$
-\chi_{\nu,m}\bigl(m(\theta_{\mathrm{axr}})a(\theta_{\mathrm{rpd}})n\bigr)=e^{im\theta_{\mathrm{axr}}}\,e^{\nu\theta_{\mathrm{rpd}}},
-\qquad m\in\tfrac12\mathbb{Z},\quad \nu\in\mathbb{C}.
+\chi_{\nu,n_{\mathrm{par}}}\bigl(m(\theta_{\mathrm{axr}})a(\theta_{\mathrm{rpd}})n\bigr)=e^{in_{\mathrm{par}}\theta_{\mathrm{axr}}}\,e^{\nu\theta_{\mathrm{rpd}}},
+\qquad n_{\mathrm{par}}\in\tfrac12\mathbb{Z},\quad \nu\in\mathbb{C}.
 $$
 
-The induced representation $I^{\nu,m}=\operatorname{Ind}_B^G\chi_{\nu,m}$ acts on sections of a line bundle over the sky, and the parameter $\nu$ is the **exponent**: it is the weight with which the boost subgroup rescales the fibre.
+The induced representation $I^{\nu,n_{\mathrm{par}}}=\operatorname{Ind}_B^G\chi_{\nu,n_{\mathrm{par}}}$ acts on sections of a line bundle over the sky, and the parameter $\nu$ is the **exponent**: it is the weight with which the boost subgroup rescales the fibre.
 
 ### Why This Is the Right Starting Point
 
-Every irreducible admissible representation of $SL_2(\mathbb{C})$ is a subquotient of some $I^{\nu,m}$ — the subquotient theorem. So the series is not an example; it is the catalogue, and the finite-dimensional representations are among its subquotients.
+Every irreducible admissible representation of $SL_2(\mathbb{C})$ is a subquotient of some $I^{\nu,n_{\mathrm{par}}}$ — the subquotient theorem. So the series is not an example; it is the catalogue, and the finite-dimensional representations are among its subquotients.
 
 ### The Parameter
 
-$\nu$ is complex and $m$ is discrete. Two identifications reduce the parameter space: $\nu$ and $-\nu$ give contragredient representations, and $m$ and $-m$ give conjugates. So the essential parameter is the pair $(\nu\bmod\pm,m\bmod\pm)$, and the physical labels of the block are read from it.
+$\nu$ is complex and $n_{\mathrm{par}}$ is discrete. Two identifications reduce the parameter space: $\nu$ and $-\nu$ give contragredient representations, and $n_{\mathrm{par}}$ and $-n_{\mathrm{par}}$ give conjugates. So the essential parameter is the pair $(\nu\bmod\pm,n_{\mathrm{par}}\bmod\pm)$, and the physical labels of the block are read from it.
 
 ## The Principal Series
 
@@ -52,7 +52,7 @@ $$
 \nu=i\rho,\qquad \rho\in\mathbb{R}.
 $$
 
-The character is then unitary: $\lvert e^{\nu\theta_{\mathrm{rpd}}}\rvert=1$ for real $\theta_{\mathrm{rpd}}$, so $\chi_{\nu,m}$ is a character into the unit circle.
+The character is then unitary: $\lvert e^{\nu\theta_{\mathrm{rpd}}}\rvert=1$ for real $\theta_{\mathrm{rpd}}$, so $\chi_{\nu,n_{\mathrm{par}}}$ is a character into the unit circle.
 
 ### Why It Is Unitary
 
@@ -62,23 +62,23 @@ $$
 \langle f_1,f_2\rangle=\int_{G/B}\overline{f_1(x)}\,f_2(x)\,d\mu(x)
 $$
 
-on $L^{2}$ sections is invariant, because the cocycle that appears when the group acts is $\chi_{\nu,m}$ evaluated on the $B$-component, and its modulus is one. So the invariance of the inner product is the statement $\lvert\chi\rvert=1$.
+on $L^{2}$ sections is invariant, because the cocycle that appears when the group acts is $\chi_{\nu,n_{\mathrm{par}}}$ evaluated on the $B$-component, and its modulus is one. So the invariance of the inner product is the statement $\lvert\chi\rvert=1$.
 
-That is the whole proof, and it is worth contrasting with the finite-dimensional case: there, the same computation produces the factor $e^{(m+n)\theta_{\mathrm{rpd}}}$, whose modulus is not one, and the representation fails.
+That is the whole proof, and it is worth contrasting with the finite-dimensional case: there, the same computation produces the factor $e^{(n_{\mathrm{par}}+n)\theta_{\mathrm{rpd}}}$, whose modulus is not one, and the representation fails.
 
 ### The Labels
 
 The principal series is labelled by
 
 $$
-(i\rho,m),\qquad \rho\in\mathbb{R},\quad 2m\in\mathbb{Z},
+(i\rho,n_{\mathrm{par}}),\qquad \rho\in\mathbb{R},\quad 2n_{\mathrm{par}}\in\mathbb{Z},
 $$
 
 so one continuous and one discrete label. The continuous label is the obstruction's replacement: the finite-dimensional defect $\tfrac12(j_1+j_2)$ becomes a continuous parameter, and the growth that it measured is absent because the parameter is imaginary.
 
 ### What It Physically Is
 
-The principal series is the home of the massless and the continuous-spin representations. The label $\rho$ is the continuous-spin parameter, and the discrete label $m$ is a helicity-like charge. The block's massless representations sit at the boundary values of $\rho$ where the module becomes reducible.
+The principal series is the home of the massless and the continuous-spin representations. The label $\rho$ is the continuous-spin parameter, and the discrete label $n_{\mathrm{par}}$ is a helicity-like charge. The block's massless representations sit at the boundary values of $\rho$ where the module becomes reducible.
 
 ## The Complementary Series
 
@@ -122,7 +122,7 @@ Because its parameter range complements the principal series' in the plane of $\
 
 The third series is not induced from the Borel subgroup at all. A unitary module belongs to the **discrete series** when its matrix coefficients are square-integrable on the group, so that the module occurs as a direct summand of the regular representation $L^{2}(G)$ rather than as a direct integral of induced modules.
 
-Its existence is a rank criterion, not an accident: a semisimple group has a nonempty discrete series exactly when its maximal compact subgroup has the same rank as the group itself, because only then does the group possess a compact Cartan subgroup. The Lorentz group passes the criterion, since its compact subgroup $\mathrm{SU}(2)$ has rank one and the group's rank is also one. The members are labelled by a discrete set, the same half-integer pair $(m,n)$ that labels the algebraic modules, subject to a non-degeneracy condition; the block does not need the condition, because no article here uses a discrete-series module.
+Its existence is a rank criterion, not an accident: a semisimple group has a nonempty discrete series exactly when its maximal compact subgroup has the same rank as the group itself, because only then does the group possess a compact Cartan subgroup. The Lorentz group passes the criterion, since its compact subgroup $\mathrm{SU}(2)$ has rank one and the group's rank is also one. The members are labelled by a discrete set, the same half-integer pair $(n_{\mathrm{par}},n)$ that labels the algebraic modules, subject to a non-degeneracy condition; the block does not need the condition, because no article here uses a discrete-series module.
 
 The structural point is what matters: the discrete series is the part of the unitary dual that comes from *below*, as summands of $L^{2}(G)$, while the principal and complementary series come from *above*, as induced modules. The finite-dimensional carriers of the algebra belong to neither.
 
@@ -146,19 +146,19 @@ This is the same phenomenon as a spin chain's "special" couplings: the parameter
 
 ### The Reducibility Points
 
-At special $\nu$ — integers, with parity fixed by $m$ — the induced representation has a finite-dimensional subquotient, and the quotient or submodule is one of the representations of *The Finite-Dimensional Representations and Their Unitarity Defect*. So the finite-dimensional representations are not a separate family: they are the points of the parameter plane at which the series has a kink.
+At special $\nu$ — integers, with parity fixed by $n_{\mathrm{par}}$ — the induced representation has a finite-dimensional subquotient, and the quotient or submodule is one of the representations of *The Finite-Dimensional Representations and Their Unitarity Defect*. So the finite-dimensional representations are not a separate family: they are the points of the parameter plane at which the series has a kink.
 
 ### $\nu=0$
 
 $\nu=0$ is the middle of the complementary interval and the limit of the principal series as $\rho\to0$. The representation there is reducible and has the trivial representation as a subquotient. So $\nu=0$ is simultaneously the interior of the complementary range and a reducibility point, which is why the spherical function's analysis needs the parameter kept away from zero.
 
-### The Degenerate $m$
+### The Degenerate $n_{\mathrm{par}}$
 
-$m=0$ is the spherical case: the representation has a vector fixed by the maximal compact subgroup. For $m\neq0$ the series is nonspherical and the analysis of the intertwining operator is the same with a matrix-valued kernel. The block uses the spherical case, and the statement of the parameter range is the same.
+$n_{\mathrm{par}}=0$ is the spherical case: the representation has a vector fixed by the maximal compact subgroup. For $n_{\mathrm{par}}\neq0$ the series is nonspherical and the analysis of the intertwining operator is the same with a matrix-valued kernel. The block uses the spherical case, and the statement of the parameter range is the same.
 
 ### The Two Signs
 
-The contragredient of $I^{\nu,m}$ is $I^{-\nu,-m}$. For imaginary $\nu$ this is the complex conjugate representation, $I^{\bar\nu,-m}$, so the principal series is closed under contragredience and its members are self-contragredient up to the exchange $m\to-m$. For real $\nu$ the contragredient is a genuinely different member with the exponent's sign reversed. That is a real difference between the two series and it is why the complementary series is paired. The sign of $\nu$ is invisible in the principal series' labels and visible in the complementary series'.
+The contragredient of $I^{\nu,n_{\mathrm{par}}}$ is $I^{-\nu,-n_{\mathrm{par}}}$. For imaginary $\nu$ this is the complex conjugate representation, $I^{\bar\nu,-n_{\mathrm{par}}}$, so the principal series is closed under contragredience and its members are self-contragredient up to the exchange $n_{\mathrm{par}}\to-n_{\mathrm{par}}$. For real $\nu$ the contragredient is a genuinely different member with the exponent's sign reversed. That is a real difference between the two series and it is why the complementary series is paired. The sign of $\nu$ is invisible in the principal series' labels and visible in the complementary series'.
 
 ## The Labels of the Representations
 
@@ -166,13 +166,13 @@ The contragredient of $I^{\nu,m}$ is $I^{-\nu,-m}$. For imaginary $\nu$ this is 
 
 | series | $\nu$ | continuous label | discrete label |
 |---|---|---|---|
-| principal | $i\rho$, $\rho\in\mathbb{R}$ | $\rho$ | $m\in\tfrac12\mathbb{Z}$ |
-| complementary | real, $0<\lvert\nu\rvert<1$ | $\nu$ | $m\in\tfrac12\mathbb{Z}$ |
+| principal | $i\rho$, $\rho\in\mathbb{R}$ | $\rho$ | $n_{\mathrm{par}}\in\tfrac12\mathbb{Z}$ |
+| complementary | real, $0<\lvert\nu\rvert<1$ | $\nu$ | $n_{\mathrm{par}}\in\tfrac12\mathbb{Z}$ |
 | finite-dimensional | integers (reducibility points) | none | $(j_1,j_2)$ |
 
 ### What the Labels Are Not
 
-They are not the mass and the spin. The mass and the spin are Poincaré labels, computed from the two Casimirs of *$P$, $T$ and the Representation Labels*; the labels $(\rho,m)$ are Lorentz labels, and a physical one-particle module is an induced representation of the Poincaré group whose fibre is a Lorentz module. The two label sets are related but not identical, and a reader who conflates them will expect the wrong counting.
+They are not the mass and the spin. The mass and the spin are Poincaré labels, computed from the two Casimirs of *$P$, $T$ and the Representation Labels*; the labels $(\rho,n_{\mathrm{par}})$ are Lorentz labels, and a physical one-particle module is an induced representation of the Poincaré group whose fibre is a Lorentz module. The two label sets are related but not identical, and a reader who conflates them will expect the wrong counting.
 
 ### The Casimir
 
@@ -200,18 +200,18 @@ The block does not construct the series as a Hilbert space, does not prove the p
 
 ## Summary
 
-The irreducible unitary representations of the Lorentz group are induced from the Borel subgroup with a character $e^{2im\alpha}e^{\nu\theta_{\mathrm{rpd}}}$. For $\nu$ purely imaginary the induced $L^{2}$ representation is unitary with the ordinary inner product, and that is the principal series, labelled $(i\rho,m)$. For real $\nu$ with $\lvert\nu\rvert<1$ a nonlocal intertwining operator supplies an invariant product and the representation is unitary, and that is the complementary series. At $\lvert\nu\rvert=1$ the operator degenerates, and at integer $\nu$ the representation has a finite-dimensional subquotient, which is how the finite-dimensional representations of the previous article appear as points of the same catalogue. The finite-dimensional defect has no counterpart here: the parameter is imaginary or small, and the boost's growth is a phase or is absorbed. The third series is the discrete one: it is not induced from the Borel subgroup but occurs as a direct summand of $L^{2}(G)$, and it exists because the group and its maximal compact subgroup have the same rank. Of the three, the principal and the discrete series are tempered and the complementary series is not, so the Plancherel density lives on the principal series.
+The irreducible unitary representations of the Lorentz group are induced from the Borel subgroup with a character $e^{2im\alpha}e^{\nu\theta_{\mathrm{rpd}}}$. For $\nu$ purely imaginary the induced $L^{2}$ representation is unitary with the ordinary inner product, and that is the principal series, labelled $(i\rho,n_{\mathrm{par}})$. For real $\nu$ with $\lvert\nu\rvert<1$ a nonlocal intertwining operator supplies an invariant product and the representation is unitary, and that is the complementary series. At $\lvert\nu\rvert=1$ the operator degenerates, and at integer $\nu$ the representation has a finite-dimensional subquotient, which is how the finite-dimensional representations of the previous article appear as points of the same catalogue. The finite-dimensional defect has no counterpart here: the parameter is imaginary or small, and the boost's growth is a phase or is absorbed. The third series is the discrete one: it is not induced from the Borel subgroup but occurs as a direct summand of $L^{2}(G)$, and it exists because the group and its maximal compact subgroup have the same rank. Of the three, the principal and the discrete series are tempered and the complementary series is not, so the Plancherel density lives on the principal series.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $B=MAN$ | the minimal parabolic subgroup |
-| $\chi_{\nu,m}$ | the character $e^{im\theta_{\mathrm{axr}}}e^{\nu\theta_{\mathrm{rpd}}}$ |
+| $\chi_{\nu,n_{\mathrm{par}}}$ | the character $e^{in_{\mathrm{par}}\theta_{\mathrm{axr}}}e^{\nu\theta_{\mathrm{rpd}}}$ |
 | $\theta_{\mathrm{rpd}}$ | the boost coordinate of the Borel element, i.e. the rapidity, written $\theta_{\mathrm{rpd}}$ elsewhere in the block |
 | $\nu$ | the exponent, the continuous parameter |
-| $m$ | the discrete charge, the $M$-weight |
-| $I^{\nu,m}$ | the induced representation |
+| $n_{\mathrm{par}}$ | the discrete charge, the $M$-weight |
+| $I^{\nu,n_{\mathrm{par}}}$ | the induced representation |
 | $J_\nu$ | the intertwining operator |
 | $\lvert\nu\rvert<1$ | the complementary range |
 

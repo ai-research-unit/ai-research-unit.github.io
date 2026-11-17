@@ -229,7 +229,7 @@ The physical point the corpus records is that the left-versus-right question of 
 
 3. **The four options of Parra.** Daviau's equation is one of four inequivalent forms of the real Dirac equation recorded by Parra. Which option is it, and how do the other three read in the corpus's conventions? This is the subject of the companion article *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*.
 
-4. **The conjugation and the corpus's real structures.** The star is the corpus's complex conjugation $\bar{\cdot}$. The corpus's other antilinear structure is $\flat=-{}^{*}$, the algebra's real structure, used for the retired antilinear mass. Are the two related by the identification of §*The Three Space Vectors and the Dictionary*, and does the mass term $m\overline{\tilde{Ξ}}$ have an interpretation as a pairing with a conjugate in the sense of *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*?
+4. **The conjugation and the corpus's real structures.** The star is the corpus's complex conjugation $\bar{\cdot}$. The corpus's other antilinear structure is $\flat=-{}^{*}$, the algebra's real structure, which cannot carry the antilinear mass. Are the two related by the identification of §*The Three Space Vectors and the Dictionary*, and does the mass term $m\overline{\tilde{Ξ}}$ have an interpretation as a pairing with a conjugate in the sense of *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*?
 
 5. **Empirical contact.** None is claimed. The formulation is an equivalent rewriting, and the question, as everywhere, is whether it makes a structural fact of the framework easier to see, not whether it predicts anything new.
 

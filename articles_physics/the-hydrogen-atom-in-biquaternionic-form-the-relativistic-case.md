@@ -564,7 +564,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\mathfrak{Z}$ | Nuclear charge number; $\kappa=\mathfrak{Z}\hbar\,c\,\alpha$ |
 | $ϙ$ | Electric charge (corpus convention, Greek koppa); $ϙ=-e$ for the electron |
 | $\alpha = e^2/(4\,\pi\,\hbar\,c\,\epsilon_{0})$ | Fine-structure constant |
-| $L_{\mathrm{orb},\eta} = -i\,\hbar\,\epsilon_{\eta lm}\,x_{l}\partial/\partial x_m$ | Orbital angular momentum |
+| $L_{\mathrm{orb},\eta} = -i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,x_{l}\partial/\partial x_m$ | Orbital angular momentum |
 | $L_{\mathrm{orb},\eta} e_t$ | Orbital operators, scalar slot, in $\mathbb{B}_{\Psi}$ |
 | $\tilde S_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$ | Spin operators, vector slots, in $\mathbb{B}_{\Psi}$ |
 | $\tilde S_{\Psi,\mathrm{tot},\eta} = L_{\mathrm{orb},\eta} e_t + \tilde S_{\Psi,\eta}$ | Total angular momentum; $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}] =i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}$ |

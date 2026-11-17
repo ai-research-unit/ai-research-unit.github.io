@@ -95,7 +95,7 @@ E_{11} = \tfrac{1}{2}(e_t - i\vec e_z), \quad
 E_{01} = \tfrac{1}{2}(i\vec e_x - \vec e_y), \quad
 E_{10} = \tfrac{1}{2}(i\vec e_x + \vec e_y).
 $$
-These are the elements the parent denotes $\tilde Q_{j\eta}$; they satisfy $2\,\mathrm{Sc}(E_{j\eta}E_{lm}) = \delta_{\eta l}\delta_{jm}$. The idempotents $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ and $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ are exactly $E_{00}$ and $E_{11}$; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and the two are its associated idempotents. Since dephasing fixes the populations and scales the coherences by $1-p$,
+These are the elements the parent denotes $\tilde Q_{j\eta}$; they satisfy $2\,\mathrm{Sc}(E_{j\eta}E_{l\,n_{\mathrm{idx}}}) = \delta_{\eta l}\delta_{j\,n_{\mathrm{idx}}}$. The idempotents $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ and $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ are exactly $E_{00}$ and $E_{11}$; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and the two are its associated idempotents. Since dephasing fixes the populations and scales the coherences by $1-p$,
 $$
 Ξ(E_{00}) = E_{00}, \qquad Ξ(E_{11}) = E_{11}, \qquad Ξ(E_{01}) = (1-p)\,E_{01}, \qquad Ξ(E_{10}) = (1-p)\,E_{10},
 $$
@@ -220,15 +220,15 @@ For the maximally mixed input ($\vec s_{\Psi} = 0$) the purity rises from $\tfra
 
 ## Problem 5: Composition of Channels and the Growth of Kraus Rank
 
-**Problem.** Let $Ξ_1$ have Kraus operators $\{A_m\}_{m=1}^{n_1}$ and $Ξ_2$ have Kraus operators $\{B_l\}_{l=1}^{n_2}$. Show that $Ξ_2\circΞ_1$ has Kraus operators $\{B_l A_m\}$ and deduce that $\mathrm{rank}(Ξ_2\circΞ_1) \leq \mathrm{rank}(Ξ_1)\,\mathrm{rank}(Ξ_2)$. Then compose two dephasing channels and determine the resulting Kraus rank.
+**Problem.** Let $Ξ_1$ have Kraus operators $\{A_{n_{\mathrm{idx}}}\}_{n_{\mathrm{idx}}=1}^{n_1}$ and $Ξ_2$ have Kraus operators $\{B_l\}_{l=1}^{n_2}$. Show that $Ξ_2\circΞ_1$ has Kraus operators $\{B_l A_{n_{\mathrm{idx}}}\}$ and deduce that $\mathrm{rank}(Ξ_2\circΞ_1) \leq \mathrm{rank}(Ξ_1)\,\mathrm{rank}(Ξ_2)$. Then compose two dephasing channels and determine the resulting Kraus rank.
 
 **Solution.** Composing,
 $$
 Ξ_2\!\left(Ξ_1(\tilde{Q})\right)
-= \sum_l B_l\left(\sum_m A_m\tilde{Q}A_m^{*}\right)B_l^{*}
-= \sum_{l,m}\left(B_l A_m\right)\tilde{Q}\left(B_l A_m\right)^\dagger ,
+= \sum_l B_l\left(\sum_{n_{\mathrm{idx}}} A_{n_{\mathrm{idx}}}\tilde{Q}A_{n_{\mathrm{idx}}}^{*}\right)B_l^{*}
+= \sum_{l,n_{\mathrm{idx}}}\left(B_l A_{n_{\mathrm{idx}}}\right)\tilde{Q}\left(B_l A_{n_{\mathrm{idx}}}\right)^\dagger ,
 $$
-so $\{B_l A_m\}$ is a Kraus set for the composite, and it is trace preserving whenever both factors are. The Kraus rank of the composite is the dimension of the span of the products $B_l A_m$, which cannot exceed the product of the dimensions of the individual spans; hence $\mathrm{rank}(Ξ_2\circΞ_1) \leq \mathrm{rank}(Ξ_1)\,\mathrm{rank}(Ξ_2)$. For a qubit the composite has rank at most $4$, since its Choi matrix is $4\times4$.
+so $\{B_l A_{n_{\mathrm{idx}}}\}$ is a Kraus set for the composite, and it is trace preserving whenever both factors are. The Kraus rank of the composite is the dimension of the span of the products $B_l A_m$, which cannot exceed the product of the dimensions of the individual spans; hence $\mathrm{rank}(Ξ_2\circΞ_1) \leq \mathrm{rank}(Ξ_1)\,\mathrm{rank}(Ξ_2)$. For a qubit the composite has rank at most $4$, since its Choi matrix is $4\times4$.
 
 **Composition of dephasings.** The Bloch map of $Ξ_{\mathrm{deph},p}$ along $\vec u_x$ is the linear map $D(\vec u_x,p) = (1-p)I + p\,\vec u_x\vec u_x^{\mathsf{T}}$ acting on $\mathbb{R}^3$. Composing two of them,
 $$

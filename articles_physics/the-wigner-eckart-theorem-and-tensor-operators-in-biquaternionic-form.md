@@ -177,13 +177,13 @@ A last check of the theorem's content is the vanishing of matrix elements that t
 The two-qubit check uses the tensor product. There is also an example entirely inside a single factor, and it uses the vector operator of the previous section. On the traceless part $W=\mathrm{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ the adjoint action is itself the angular momentum of the adjoint representation,
 
 $$
-\mathrm{ad}_{\tilde S_{\Psi,\eta}}(i\vec e_l)=[\tilde S_{\Psi,\eta},i\vec e_l]=i\,\hbar\,\epsilon_{\eta lm}\,ie_{m},
+\mathrm{ad}_{\tilde S_{\Psi,\eta}}(i\vec e_l)=[\tilde S_{\Psi,\eta},i\vec e_l]=i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,ie_{m},
 $$
 
 so that $\tilde S_{\Psi,\mathrm{adj},\eta}=\mathrm{ad}_{\tilde S_{\Psi,\eta}}$ on $W$ is a spin-$1$ angular momentum. The vector element $i\vec e_\eta$ acts on $W$ by its own adjoint action, and
 
 $$
-\mathrm{ad}_{i\vec e_\eta}a(i\vec e_l)=[i\vec e_\eta,i\vec e_l]=i^2[\vec e_\eta,\vec e_l]=-2\epsilon_{\eta lm}e_m=2i\,\epsilon_{\eta lm}(ie_m)
+\mathrm{ad}_{i\vec e_\eta}a(i\vec e_l)=[i\vec e_\eta,i\vec e_l]=i^2[\vec e_\eta,\vec e_l]=-2\epsilon_{\eta l\,n_{\mathrm{idx}}}e_m=2i\,\epsilon_{\eta l\,n_{\mathrm{idx}}}(ie_m)
 =\frac{2}{\hbar}\,\tilde S_{\Psi,\mathrm{adj},\eta}(i\vec e_l),
 $$
 
@@ -193,7 +193,7 @@ $$
 \langle  1\|\,\mathrm{ad}_{ie}\,\|1\rangle=\frac{2}{\hbar}\,\langle  1\|\tilde S_{\Psi,\mathrm{adj}}\|1\rangle=\frac{2}{\hbar}\cdot\sqrt2\,\hbar=2\sqrt2 .
 $$
 
-A direct evaluation in the basis of eigenvectors of $\mathrm{ad}_{\tilde S_{\Psi,3}}$, with the spherical components $(\tilde U_{\mathrm{gen}})^{(1)}_{\mu}$ of the previous section and the $1\otimes1$ Clebsch–Gordan coefficients, confirms that the ratio of every matrix element to its Clebsch–Gordan coefficient takes the constant value $2\sqrt2$ in the Condon–Shortley $m$-basis of the adjoint multiplet; a different phase convention for the $|m\rangle$ would flip signs while leaving the modulus fixed. This is the framework's own worked example of the theorem: the operator and the multiplet lie inside the algebra and its adjoint action, and only the Clebsch–Gordan coefficients are imported.
+A direct evaluation in the basis of eigenvectors of $\mathrm{ad}_{\tilde S_{\Psi,3}}$, with the spherical components $(\tilde U_{\mathrm{gen}})^{(1)}_{\mu}$ of the previous section and the $1\otimes1$ Clebsch–Gordan coefficients, confirms that the ratio of every matrix element to its Clebsch–Gordan coefficient takes the constant value $2\sqrt2$ in the Condon–Shortley $m$-basis of the adjoint multiplet; a different phase convention for the $|n_{\mathrm{mag}}\rangle$ would flip signs while leaving the modulus fixed. This is the framework's own worked example of the theorem: the operator and the multiplet lie inside the algebra and its adjoint action, and only the Clebsch–Gordan coefficients are imported.
 
 ## Examples
 

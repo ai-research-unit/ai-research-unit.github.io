@@ -115,7 +115,7 @@ The modulus is the eigenvalue data of *The Spectrum*, §*The Spectral Criterion*
 |---|---|
 | formula | $\varrho\exp(i\theta_{\mathrm{pha}})=\sqrt{\langle\tilde Q\rangle_{\natural}}$ |
 | kind | complex scalar, central |
-| modulus | $\varrho=\lvert\varrho\,e^{i\theta_{\mathrm{pha}}}\rvert$, the magnitude of the complex square root of $ |
+| modulus | $\varrho=\lvert\varrho\,e^{i\theta_{\mathrm{pha}}}\rvert$, the magnitude of the complex square root of $\langle\tilde Q\rangle_{\natural}$ |
 | eigenvalue reading | $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ |
 | conjugation | $\varrho^{\natural}=\varrho$, $\overline{\varrho}=\varrho^{*}$ |
 | role | the first factor, the only central first factor of the three |

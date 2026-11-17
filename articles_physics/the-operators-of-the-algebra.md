@@ -80,7 +80,7 @@ $$
 **The sixteen products are a basis.** For a basis $e_\mu$ of the algebra, the sixteen operators $T_{e_\mu,e_\nu}$ are linearly independent, hence a basis of the sixteen-dimensional operator space. The proof is cleanest in a basis of matrix units $E_{jk}$, where
 
 $$
-T_{E_{jk},E_{lm}}(E_{rs})=\delta_{kr}\delta_{ls}E_{jm},
+T_{E_{jk},E_{l\,n_{\mathrm{idx}}}}(E_{rs})=\delta_{kr}\delta_{ls}E_{j\,n_{\mathrm{idx}}},
 $$
 
 so each operator returns a single matrix unit and reads one index from each of the four positions.

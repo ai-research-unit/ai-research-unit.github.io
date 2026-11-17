@@ -132,9 +132,9 @@ Two independent evaluations were made.
 
 **From the Wigner function.** With $E=\exp(-2\cosh2r(|\alpha|^2+|\beta|^2)+4\sinh2r\,\mathrm{Re}(\alpha\beta))$, the one-mode marginals reproduce the thermal distribution $p_n=\mathrm{sech}^2r\,\tanh^{2n}r$ and the two-mode function is a normalised Gaussian whose covariance matrix has $\mathrm{Var}(x_1-x_2)=\mathrm{Var}(p_1+p_2)=\exp(-2r)$ and $\mathrm{Var}(x_1+x_2)=\mathrm{Var}(p_1-p_2)=\exp(2r)$, matching the EPR structure named in the previous section.
 
-**From an explicit Fock computation.** The displaced-parity operators $\mathsf{P}(\alpha)$, $\mathsf{P}(\beta)$ were built in a truncated Fock space from the matrix elements $\langle m|D(\alpha)|n\rangle$ of the displacement operator, and
+**From an explicit Fock computation.** The displaced-parity operators $\mathsf{P}(\alpha)$, $\mathsf{P}(\beta)$ were built in a truncated Fock space from the matrix elements $\langle n_{\mathrm{fock}}|D(\alpha)|n\rangle$ of the displacement operator, and
 $$
-E_{\mathrm{Fock}}=\sum_{m,n}(\mathrm{sech}\,r)(\tanh r)^m\,(\mathrm{sech}\,r)(\tanh r)^n\,\langle m|\mathsf{P}(\alpha)|n\rangle\langle m|\mathsf{P}(\beta)|n\rangle
+E_{\mathrm{Fock}}=\sum_{n_{\mathrm{fock}},n}(\mathrm{sech}\,r)(\tanh r)^{n_{\mathrm{fock}}}\,(\mathrm{sech}\,r)(\tanh r)^n\,\langle n_{\mathrm{fock}}|\mathsf{P}(\alpha)|n\rangle\langle n_{\mathrm{fock}}|\mathsf{P}(\beta)|n\rangle
 $$
 was evaluated for complex displacements at several $r$. The agreement with the closed form above is exact to machine precision (residuals at the level of $10^{-16}$ for moderate truncation, growing only to $10^{-6}$ where the truncation is stressed). The same computation with $\mathrm{Re}(\alpha\bar\beta)$ in place of $\mathrm{Re}(\alpha\beta)$ disagrees by amounts up to order unity at the same points — the discrepancy is not marginal, it is qualitative. The sign is therefore settled by an independent route, not by the argument that produced the formula.
 

@@ -337,20 +337,13 @@ $$
 
 **The direction of the multiplication is a convention.** Multiplication by $+i$ and by $-i$ give the same pair of readings with the labels exchanged, and the series uses $-i$ for the direction from an object to its observable, the sign that makes the scalar part of a four-momentum positive. The comparison with the Wick coefficient map is in *Interpretation of the Wick Rotation in the Biquaternion Universe*; the gradient and its slices are in *Operator and Calculus Conventions*.
 
-<!-- retired notation, kept for reference -->
-**The operator reading is retired.** Earlier versions of this series wrote the informational coordinate in the letters of an operator rather than of a coordinate: its four real parameters were named $h_t, h_x, h_y, h_z$ in place of $h_t, h'_x, h'_y, h'_z$, and the element was written
-
-$$
-H = h_te_t + ih_x\vec e_x + ih_y\vec e_y + ih_z\vec e_z, \qquad h_t, h_x, h_y, h_z \in \mathbb{R}.
-$$
-
-That second name is gone as a bare name for the coordinate. It was the licence to write one number two ways, and a pair of names for one number is a defect, not a notation. The glyph returns with a sector mark and one alphabet: $\tilde H_\Psi$ is the informational half, and the letters $h_t,h'_x,h'_y,h'_z$ name its coefficients, with no second set of letters for the same element. The element has one name on each side of the split: $\tilde H_\Psi$ for the informational half and $\tilde R_\Phi$ for the material half. The parameters are the position letters,
+**The glyph of the observable.** The informational half is $\tilde H_\Psi$, and its coefficients are the position letters,
 
 $$
 \tilde H_\Psi = h_t\,e_t + i\vec h_\Psi, \qquad \vec h_\Psi = h'_x\vec e_x + h'_y\vec e_y + h'_z\vec e_z ,
 $$
 
-with $r'_t$ and $h_t$ the material and informational temporal coordinates, both lengths. Under the unit images of *Matrix Representations Conventions*, §*The 2×2 Matrix Representation* ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), the matrix image is the general Hermitian $2\times2$ matrix $h_t I_2 + h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$ of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. The readable part of the old convention survives: the coefficient of $e_t$ is a length, $h_t$, and it is read as an energy only when $\hbar\,c$ is carried in the reading, in the exponent $\exp(-i\theta_{\mathrm{evo}})$ and not in the coefficient.
+with $r'_t$ and $h_t$ the material and informational temporal coordinates, both lengths. Under the unit images of *Matrix Representations Conventions*, §*The 2×2 Matrix Representation* ($\mathsf{M}_2(e_t) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), the matrix image is the general Hermitian $2\times2$ matrix $h_t I_2 + h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$ of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. The coefficient of $e_t$ is a length, $h_t$, and it is read as an energy only when $\hbar\,c$ is carried in the reading, in the exponent $\exp(-i\theta_{\mathrm{evo}})$ and not in the coefficient.
 
 The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
@@ -391,7 +384,7 @@ $$
 \tilde Q^{*} = \overline{\tilde Q^{\natural}} = \bar Q_te_t - \bar Q_x\vec e_x - \bar Q_y\vec e_y - \bar Q_z\vec e_z, \qquad \tilde Q^{\flat} = -\tilde Q^{*} .
 $$
 
-**The fourth mark is a sign, not a fourth conjugation.** $\flat=-{}^{*}$ is the negative of the star, it reverses products with a twist, $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and it is an involution of the underlying real space only, not of the ring. Its fixed space is the material sector $\mathbb{B}_{\Phi}$, and the sector split is its work in the series. It is retained for that split, for the bilinear pairings built on it, and for the real-form question of Dirac against Majorana fermions. It is not the mass — the retired form $\tilde\nabla_\Phi\tilde{Ξ}=k_m\tilde{Ξ}^{\flat}$ conflated the two — and it is not the charge conjugation of the module, the operation defined in *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
+**The fourth mark is a sign, not a fourth conjugation.** $\flat=-{}^{*}$ is the negative of the star, it reverses products with a twist, $(\tilde Q_1\tilde Q_2)^{\flat}=-\tilde Q_2^{\flat}\tilde Q_1^{\flat}$, and it is an involution of the underlying real space only, not of the ring. Its fixed space is the material sector $\mathbb{B}_{\Phi}$, and the sector split is its work in the series. It is retained for that split, for the bilinear pairings built on it, and for the real-form question of Dirac against Majorana fermions. It is not the mass, and it is not the charge conjugation of the module, the operation defined in *Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form*. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
 **The biquaternion norm.** The quaternion sign carries the algebra's **biquaternion norm**,
 

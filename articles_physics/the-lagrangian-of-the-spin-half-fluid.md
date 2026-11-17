@@ -60,7 +60,7 @@ $$
 
 **The four zeros are the scalar rung's statement, extended.** There the density and the velocity are not canonical and nothing else is; here the phase and the spin are canonical and the other two are not. **The count is the triple's**: three data, of which the density and the frame never carry momentum and the phase and the spin do. That is why the block's fluid can be described by a density and a direction and why the dynamics sits in the two angles.
 
-**The qualification is part of the table and not a footnote.** At $\theta_{\mathrm{rpd}}=0$ the spin's momentum vanishes with the density's and the velocity's, and the table has one non-zero row. The polar companion records that an earlier version of its own statement claimed the phase and the spin unconditionally, and that the claim was wrong at rest. The fluid chart's version of the correction is the weight $\beta$: **the spin's canonical weight is the flow's speed, so the rest frame is the degenerate case of the table and not an exception to it.**
+**The qualification is part of the table and not a footnote.** At $\theta_{\mathrm{rpd}}=0$ the spin's momentum vanishes with the density's and the velocity's, and the table has one non-zero row. The polar companion records that the phase and the spin are not unconditional: the unconditional form of the claim fails at rest. The fluid chart's version of the correction is the weight $\beta$: **the spin's canonical weight is the flow's speed, so the rest frame is the degenerate case of the table and not an exception to it.**
 
 ## The Constraints and Where the Non-Closure Lives
 

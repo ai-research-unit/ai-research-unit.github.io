@@ -119,7 +119,7 @@ $$
 The **vector part** of the quaternionic product has components
 
 $$
-L_{\mathrm{orb},\eta} = -i\,\hbar\,\epsilon_{\eta lm}\,x_{l}\partial/\partial x_m ,
+L_{\mathrm{orb},\eta} = -i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,x_{l}\partial/\partial x_m ,
 $$
 
 which are exactly the standard orbital angular momentum operators. This is the biquaternion expression of the vector formula $\vec L = \vec r\times\vec p$: the cross product is the vector part of a quaternion product, and only the replacement $\vec p\to  -i\,\hbar\vec\nabla_\Phi$ is needed. The scalar part, $i\,\hbar\,\vec r\vec\nabla_\Phi$, is the radial (divergence) term and carries no angular information.
@@ -371,7 +371,7 @@ It is useful to separate the two kinds of result that the article contains.
 **Standard quantum physics, rewritten.**
 
 - The abstract angular-momentum algebra $[S_{\mathrm{tot},i},S_{\mathrm{tot},j}]=i\,\hbar\,\epsilon_{ij\eta}\,S_{\mathrm{tot},\eta}$, its Casimir, its ladder operators, and its representation theory with $\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)$ and $\hbar\,s_{\mathrm{tot},z}$.
-- The orbital angular momentum operator $L_{\mathrm{orb},\eta}=-i\,\hbar\,\epsilon_{\eta lm}\,x_{l}\partial/\partial x_m$, its spherical-coordinate form, and the spectra $\hbar^{2}\,l\,(l+1)$ and $\hbar\,l_{z}$.
+- The orbital angular momentum operator $L_{\mathrm{orb},\eta}=-i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,x_{l}\partial/\partial x_m$, its spherical-coordinate form, and the spectra $\hbar^{2}\,l\,(l+1)$ and $\hbar\,l_{z}$.
 - The total operator $\vec S_{\mathrm{tot}}=\vec L+\vec S$, the spin–orbit eigenvalues $\frac{\hbar^{2}}{2}[s_{\mathrm{tot}}(s_{\mathrm{tot}}+1)-l(l+1)-\tfrac34]$, and the Clebsch–Gordan coefficients for $\tfrac12\otimes l$.
 - The equivalence of rotor conjugation with the standard rotation operators.
 
@@ -404,7 +404,7 @@ It is useful to separate the two kinds of result that the article contains.
 
 Angular momentum in the biquaternion framework is organised by the isomorphism $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, under which the spin operators $S_\eta=\frac{\hbar}{2}\sigma_\eta$ correspond to the Hermitian elements $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta\in\mathbb{B}_{\Psi}$. The rotation generators lie in the Lie algebra $\mathbb{B}_{\Phi}$ and, for spatial rotations, in the real quaternion subspace $\mathbb{B}_{H}$, where they are $-\tfrac12\vec e_\eta$; their exponentials are the unit real quaternions, which are the group $SU(2)$.
 
-The orbital angular momentum operator is the vector part of the quaternionic product $\vec r\tilde p$ of position and momentum, with components $L_{\mathrm{orb},\eta}=-i\,\hbar\,\epsilon_{\eta lm}\,x_{l}\partial/\partial x_m$ and central representatives $L_{\mathrm{orb},\eta} e_t$. The spin operators generate the same algebra internally, and the commutation relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$ follow directly from the quaternion multiplication rule, the square $\vec e_\eta^2=-e_t$, and $i^2=-1$. The pure-spin Casimir is the central element $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$; the total Casimir $\tilde S_{\Psi,\mathrm{tot}}^2$ takes the value $\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)$ on coupled states with $s_{\mathrm{tot}}=l\pm\tfrac12$.
+The orbital angular momentum operator is the vector part of the quaternionic product $\vec r\tilde p$ of position and momentum, with components $L_{\mathrm{orb},\eta}=-i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,x_{l}\partial/\partial x_m$ and central representatives $L_{\mathrm{orb},\eta} e_t$. The spin operators generate the same algebra internally, and the commutation relations $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}$ follow directly from the quaternion multiplication rule, the square $\vec e_\eta^2=-e_t$, and $i^2=-1$. The pure-spin Casimir is the central element $\tilde S_{\Psi}^2=\frac{3\,\hbar^{2}}{4}e_t$; the total Casimir $\tilde S_{\Psi,\mathrm{tot}}^2$ takes the value $\hbar^{2}\,s_{\mathrm{tot}}\,(s_{\mathrm{tot}}+1)$ on coupled states with $s_{\mathrm{tot}}=l\pm\tfrac12$.
 
 The spin ladder operators are nilpotent and null in the biquaternion norm, and hence zero divisors of the algebra. The addition of angular momenta follows the standard Clebsch–Gordan scheme, with the spin factor expressed through the elements $\tilde S_{\Psi,\eta}$; for a spin-1/2 coupled to orbital $l$ the coupled states carry $s_{\mathrm{tot}}=l\pm\tfrac12$, and the spin–orbit operator takes the eigenvalue $+\frac{\hbar^{2}\,l}{2}$ for $s_{\mathrm{tot}}=l+\tfrac12$ and $-\frac{\hbar^{2}\,(l+1)}{2}$ for $s_{\mathrm{tot}}=l-\tfrac12$. Rotations are realised by rotor conjugation with unit quaternions, and the rotor $\tilde u(\theta_{\mathrm{rat}},\vec u)$ is identical to the exponential of the spin angular momentum. The framework thus contains the complete angular-momentum algebra, with the orbital part standard and the spin part algebraic; the operators and their spectra are those that a position-space treatment of the hydrogen atom requires.
 
@@ -419,7 +419,7 @@ The spin ladder operators are nilpotent and null in the biquaternion norm, and h
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, observables and states |
 | $\mathbb{B}_{H}$ | Real quaternion subspace, home of the rotation rotors |
 | $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i\vec e_\eta)=\sigma_\eta$ | Isomorphism with $M_2(\mathbb{C})$ |
-| $L_{\mathrm{orb},\eta}=-i\,\hbar\,\epsilon_{\eta lm}\,x_{l}\partial/\partial x_m$ | Orbital angular momentum operator |
+| $L_{\mathrm{orb},\eta}=-i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,x_{l}\partial/\partial x_m$ | Orbital angular momentum operator |
 | $L_{\mathrm{orb},\eta} e_t$ | Biquaternion representative of $L_{\mathrm{orb},\eta}$ (Hermitian) |
 | $\tilde{S}_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ | Spin operators in $\mathbb{B}_{\Psi}$, $\mathsf{M}_2(\tilde S_{\Psi,\eta})=\frac{\hbar}{2}\sigma_\eta$ |
 | $\tilde S_{\Psi,\mathrm{tot},\eta}=L_{\mathrm{orb},\eta}+\tilde{S}_{\Psi,\eta}$ | Total angular momentum |

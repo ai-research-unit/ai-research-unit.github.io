@@ -38,7 +38,7 @@ For a uniform field $\vec B=B\vec u_z$ the vector potential can be chosen in man
 The components of the mechanical momentum do not commute. With the convention $\vec B=\vec\nabla_\Phi\times\vec A$, a direct computation gives
 
 $$
-\boxed{\;[\tilde\pi_\eta,\tilde\pi_l]=i\,\hbar\,ϙ\,\varepsilon_{\eta lm}B_m\,e_t\;},
+\boxed{\;[\tilde\pi_\eta,\tilde\pi_l]=i\,\hbar\,ϙ\,\varepsilon_{\eta l\,n_{\mathrm{idx}}}B_{n_{\mathrm{idx}}}\,e_t\;},
 $$
 
 so that, for $\vec B=B\vec u_z$,
@@ -166,7 +166,7 @@ $$
 is conserved, and it is central. The transverse problem has two independent oscillator structures: the **cyclotron** ladder, built from $\tilde\pi_x$ and $\tilde\pi_y$, which raises the energy by $\hbar\,\omega_{c}$, and the **guiding-centre** ladder, built from the centre-of-orbit coordinates
 
 $$
-R_\eta=x_\eta+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{\eta lm}\,\tilde\pi_l\,\vec u_{B,m} ,
+R_\eta=x_\eta+\frac{1}{m\omega_c^{\mathrm{s}}}\,\varepsilon_{\eta l\,n_{\mathrm{idx}}}\,\tilde\pi_l\,\vec u_{B,m} ,
 \qquad
 \omega_c^{\mathrm{s}}=\frac{ϙB}{m} ,
 $$
@@ -179,17 +179,17 @@ $$
 
 whose right-hand side is a central **area**: the flux count of the fifth section is the statement that this area is the phase-space basis operator of one state. The two algebras are the same central oscillator algebra; the first is the energy, the second is the degeneracy.
 
-In the biquaternion interpretation $L_{\mathrm{orb},z}$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_{\mathrm{orb},z}=\hbar\,m$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
+In the biquaternion interpretation $L_{\mathrm{orb},z}$ and the guiding-centre operators are central Hermitian, and both commute with the module. The algebra has thus two commuting $\mathrm{U}(1)$'s worth of central ladder structure — the energy ladder and the degeneracy ladder — and the state module is invariant under both. The symmetric-gauge eigenstates are the angular-momentum eigenstates $L_{\mathrm{orb},z}=\hbar\,n_{\mathrm{mag}}$ within a Landau level, with $m$ bounded below by $-n$; the two gauges are related by a gauge transformation and give the same spectrum and degeneracy.
 
 The lowest Landau level is especially transparent in this gauge. Writing $z=x+iy$, the states
 
 $$
-\tilde{Ξ}_{0,m}\ \propto\ z^{\,m}\,\exp(-|z|^2/4\ell_B^2)\,\xi ,
+\tilde{Ξ}_{0,n_{\mathrm{mag}}}\ \propto\ z^{\,n_{\mathrm{mag}}}\,\exp(-|z|^2/4\ell_B^2)\,\xi ,
 \qquad
-m=0,1,2,\dots,
+n_{\mathrm{mag}}=0,1,2,\dots,
 $$
 
-all have energy $\frac12\hbar\,\omega_{c}$ and angular momentum $L_{\mathrm{orb},z}=\hbar\,m$, so the degeneracy of the lowest level is exhibited as the infinite tower of angular momenta. That these states have the lowest energy was verified numerically: applying the symmetric-gauge Hamiltonian $\frac{1}{2\,m}(\tilde\pi_x^2+\tilde\pi_y^2)$ to $\tilde{Ξ}_{0,m}$ for $m=0,1,2$ by finite differences gave $\frac12\hbar\,\omega_{c}\,\tilde{Ξ}_{0,m}$ with relative residual below $2\times10^{-8}$ at the sampled points. The tower has infinitely many members in the plane, but in a finite sample of area $A$ the normalisability of the Gaussian factor cuts it off at the flux count of the fifth section. The higher Landau levels are obtained by applying $a^\dagger$ to these states, which raises the energy and mixes the angular momenta within the fixed degeneracy.
+all have energy $\frac12\hbar\,\omega_{c}$ and angular momentum $L_{\mathrm{orb},z}=\hbar\,n_{\mathrm{mag}}$, so the degeneracy of the lowest level is exhibited as the infinite tower of angular momenta. That these states have the lowest energy was verified numerically: applying the symmetric-gauge Hamiltonian $\frac{1}{2\,m}(\tilde\pi_x^2+\tilde\pi_y^2)$ to $\tilde{Ξ}_{0,n_{\mathrm{mag}}}$ for $m=0,1,2$ by finite differences gave $\frac12\hbar\,\omega_{c}\,\tilde{Ξ}_{0,n_{\mathrm{mag}}}$ with relative residual below $2\times10^{-8}$ at the sampled points. The tower has infinitely many members in the plane, but in a finite sample of area $A$ the normalisability of the Gaussian factor cuts it off at the flux count of the fifth section. The higher Landau levels are obtained by applying $a^\dagger$ to these states, which raises the energy and mixes the angular momenta within the fixed degeneracy.
 
 ### The classical orbit and the magnetic length
 
@@ -268,7 +268,7 @@ This is the sharpest illustration in the subcategory of what "spin 0" buys. The 
 The biquaternion Hamiltonian of a spin-0 charge in a uniform magnetic field is central, $H=\frac{1}{2\,m}\sum_\eta\tilde\pi_\eta^2$ with $\tilde\pi_\eta=(p_\eta-ϙA_\eta)e_t$, and the field strength is the central commutator
 
 $$
-[\tilde\pi_\eta,\tilde\pi_l]=i\,\hbar\,ϙ\varepsilon_{\eta lm}B_m\,e_t ,
+[\tilde\pi_\eta,\tilde\pi_l]=i\,\hbar\,ϙ\varepsilon_{\eta l\,n_{\mathrm{idx}}}B_{n_{\mathrm{idx}}}\,e_t ,
 \qquad
 [\tilde\pi_x,\tilde\pi_y]=i\,\hbar\,ϙ\,B\,e_t ,
 $$
@@ -295,7 +295,7 @@ Each level is degenerate with multiplicity $N_{\mathrm{scl},\xi}=AB/Ξ_0$, the n
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian sectors |
 | $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ | State module |
 | $\tilde\pi_\eta=(p_\eta-ϙA_\eta)e_t$ | Mechanical momentum; central Hermitian |
-| $[\tilde\pi_\eta,\tilde\pi_l]=i\,\hbar\,ϙ\varepsilon_{\eta lm}B_me_t$ | Central field-strength commutator |
+| $[\tilde\pi_\eta,\tilde\pi_l]=i\,\hbar\,ϙ\varepsilon_{\eta l\,n_{\mathrm{idx}}}B_me_t$ | Central field-strength commutator |
 | $\omega_c=\lvert ϙ\rvert B/m$ | Cyclotron frequency |
 | $\ell_B=\sqrt{\frac{\hbar}{\lvert\,ϙ\,\rvert\,B}}$ | Magnetic length |
 | $x_0=\ell_B^2 k\,\mathrm{sgn}(ϙ)$ | Oscillator centre; conserved $k$ |

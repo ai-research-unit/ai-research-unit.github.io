@@ -93,7 +93,7 @@ The two lines are the equation of the display above, split; nothing is added. Ea
 | $k_m\,\bar{\tilde{Ξ}}$, a bare coefficient conjugation | $0$ | $8$ |
 | $k_m\,\tilde{Ξ}^*$, the star | $0$ | $4$ |
 
-Only the first row has its solutions on the ordinary shell. The second is the equation the series retired, and its spacelike family is the sign pattern of a pairing built on the algebra's own conjugation rather than on a coupling of the two letters (*Antilinear Structure and the Two Kinds of Mass*, §*The Retired Equation: The Diagnosis Is the Dispersion*). The third row is no better on the timelike shell and has half the spacelike family.
+Only the first row has its solutions on the ordinary shell. The second is the algebra-level self-pairing, and its spacelike family is the sign pattern of a pairing built on the algebra's own conjugation rather than on a coupling of the two letters (*Antilinear Structure and the Two Kinds of Mass*, §*The Retired Equation: The Diagnosis Is the Dispersion*). The third row is no better on the timelike shell and has half the spacelike family.
 
 **What the table says and does not say.** It does not say that an antilinear term is unphysical: the mass term of the first row is antilinear and its solutions are timelike. It says that the antilinearity must come with the right multiplication, because the right multiplication is what makes the term a coupling between the two letters; a conjugation alone pairs the field with a field of the same letter, and that pairing has no timelike solution. The discriminator is the slot, and the table is the measurement of the slot.
 
@@ -274,7 +274,7 @@ A field equal to its conjugate carries no continuous phase, and a continuous pha
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the two-sided form, the plane-wave ansatz and the mass shell used here.
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html), for the charge conjugation on the state space and the condition that is propagated there.
-- [Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form](antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html), for the diagnosis of the retired equation and the dispersion table that separates the two pairings.
+- [Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form](antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html), for the diagnosis of the algebra-level self-pairing and the dispersion table that separates the two pairings.
 - E. Majorana, "Teoria simmetrica dell'elettrone e del positrone," *Nuovo Cimento* **14** (1937) 171–184, for the original equation and the real form of the Dirac theory.
 - C. Itzykson and J.-B. Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), Chapter 2 and Appendix A, for the charge-conjugation matrix, the Majorana condition and the conventions used here.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), Chapter 5, for the charge-conjugation operator and its two eigenstates.

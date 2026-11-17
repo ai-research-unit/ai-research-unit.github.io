@@ -159,7 +159,7 @@ $$
 \mathcal{V}=\frac{2}{\varrho^{2}}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_R\,i\vec v\bigr],
 $$
 
-with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direction, and with no dependence on $\varrho$ or on $\theta_{\mathrm{pha}}$. The direction sits on the same side in both halves of the bilinear: the star of $\tilde\Xi_Ri\vec v$ is $i\vec v\,\tilde\Xi_R^{*}$, because $i\vec v$ is Hermitian, so the second half is $i\vec v\,\tilde\Xi_R^{*}\tilde\Xi_L$ and the two halves are conjugates. Writing the direction on the right in both halves, as an earlier version did, cancels the real part and makes the mass term vanish; the direction belongs to the element, and the conjugation moves it.
+with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direction, and with no dependence on $\varrho$ or on $\theta_{\mathrm{pha}}$. The direction sits on the same side in both halves of the bilinear: the star of $\tilde\Xi_Ri\vec v$ is $i\vec v\,\tilde\Xi_R^{*}$, because $i\vec v$ is Hermitian, so the second half is $i\vec v\,\tilde\Xi_R^{*}\tilde\Xi_L$ and the two halves are conjugates. Writing the direction on the right in both halves cancels the real part and makes the mass term vanish; the direction belongs to the element, and the conjugation moves it.
 
 **The polar action, in full.**
 
@@ -213,7 +213,7 @@ $$
 \cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=k_m\,\mathcal V .
 $$
 
-An earlier version of this article carried a term $\partial(\hbar c\,\mathcal L_{\mathrm{rot}})/\partial \varrho$ here. That term is zero: the rotor's kinetic term depends on $\varrho$ only through the common factor $\varrho^{2}$, which is what makes the whole Lagrangian a one-form. What the scale's equation carries instead is the rotor term itself, at the same weight as in the kinetic display.
+The term $\partial(\hbar c\,\mathcal L_{\mathrm{rot}})/\partial \varrho$ is zero: the rotor's kinetic term depends on $\varrho$ only through the common factor $\varrho^{2}$, which is what makes the whole Lagrangian a one-form. What the scale's equation carries instead is the rotor term itself, at the same weight as in the kinetic display.
 
 **Vary the rapidity.** The rapidity appears through $\cosh\theta_{\mathrm{rpd}}$ and $\sinh\theta_{\mathrm{rpd}}$, so its equation is
 
@@ -293,7 +293,7 @@ The comparison is worth stating precisely, because the two formulations are usua
 
 **The structural statement, stated exactly.** Away from rest the canonical objects are the phase and the spin: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, both non-zero, both functions of the coordinates alone, and neither recoverable from the other. The scale and the velocity are never canonical: their momenta vanish identically in every frame.
 
-**The qualification is part of the statement.** The spin's momentum is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at rest it vanishes and the spin is not canonical either. An earlier version of this paragraph claimed the phase and the spin unconditionally. That claim was wrong at $\theta_{\mathrm{rpd}}=0$, and the closed form is what shows it: the spin enters the kinetic term only through its cross term with the boost, so a frame at rest has no spin momentum to speak of. What survives at rest is the phase alone.
+**The qualification is part of the statement.** The spin's momentum is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at rest it vanishes and the spin is not canonical either. The unconditional form of the claim fails at $\theta_{\mathrm{rpd}}=0$, and the closed form is what shows it: the spin enters the kinetic term only through its cross term with the boost, so a frame at rest has no spin momentum to speak of. What survives at rest is the phase alone.
 
 ## Open Questions
 

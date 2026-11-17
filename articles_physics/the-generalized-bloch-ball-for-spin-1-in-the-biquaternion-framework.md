@@ -49,7 +49,7 @@ For spin $1$ the first fails because there is no relevant four-dimensional cone,
 The spin-$1$ operators are constructed in the companion problem of the Wigner–Eckart theorem, by the adjoint action. On the scalar-free part $W=\operatorname{span}_\mathbb{C}\{i\vec e_x,i\vec e_y,i\vec e_z\}$ of $\mathbb{B}$,
 
 $$
-\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=[\tilde S_{\Psi,\eta},ie_l]=i\,\hbar\,\epsilon_{\eta lm}\,ie_{m},
+\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=[\tilde S_{\Psi,\eta},ie_l]=i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,ie_{m},
 $$
 
 so that $\tilde S_{\Psi,\mathrm{adj},\eta}=\mathrm{ad}_{\tilde S_{\Psi,\eta}}$ is an angular momentum in the three-dimensional representation. In the matrix realisation, with $\mathsf{M}_2(e_t)=I_2$ and $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, this is a triple of $3\times3$ matrices acting on $W$ and satisfying
@@ -274,7 +274,7 @@ The generalized Bloch ball for spin $1$ is the largest ball of states inside the
 
 The article established the following.
 
-- **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=i\,\hbar\,\epsilon_{\eta lm}\,ie_{m}$, and the symmetric combination $\tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=i\,\hbar\,\epsilon_{ij\eta}\,F_{\eta}$ and $\sum_\eta F_\eta^2=2\,\hbar^{2}\,I_{3}$.
+- **Spin-one operators.** The adjoint action on the traceless part of $\mathbb{B}$, $\mathrm{ad}_{\tilde S_{\Psi,\eta}}(ie_l)=i\,\hbar\,\epsilon_{\eta l\,n_{\mathrm{idx}}}\,ie_{m}$, and the symmetric combination $\tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}$ of two fundamental factors give the same spin-$1$ operators, with $[F_i,F_j]=i\,\hbar\,\epsilon_{ij\eta}\,F_{\eta}$ and $\sum_\eta F_\eta^2=2\,\hbar^{2}\,I_{3}$.
 - **The state space.** Spin-$1$ states are the positive unit-trace elements of the symmetric sector; in the two-qubit language they are the states whose support lies in the symmetric subspace, $\tilde\Pi_{\mathrm{asym}}\tilde{Ϛ}_{\Psi}\tilde\Pi_{\mathrm{asym}}=0$, that is, the face of the two-qubit state space orthogonal to the antisymmetric idempotent.
 - **Bloch coordinates.** $\rho=\tfrac13 I_3+\tfrac{1}{\sqrt3}b_a\lambda_a$ with a real eight-vector $\vec b$ normalised so that the pure states have $|\vec b|=1$; the spectrum is determined by $\mathrm{Tr}(\rho^2)=\tfrac13(1+2|\vec b|^2)$ and $\det\rho$ through the characteristic cubic.
 - **The positivity condition.** $\rho$ is a state if and only if $|\vec b|\le1$ and $\det\rho\ge0$; the unit ball is necessary, the cubic inequality is what cuts it down, and positivity is no longer a single quadratic condition.

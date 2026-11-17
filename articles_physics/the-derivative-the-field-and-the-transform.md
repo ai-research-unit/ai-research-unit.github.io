@@ -128,13 +128,7 @@ $$
 \Box_\Phi=\Delta_\Phi-\frac{\partial^{2}}{\partial {r'_t}^{2}},
 $$
 
-and on the informational part $\partial/\partial R_t=\partial/\partial h_t$ and $\partial/\partial R_\eta=-i\,\partial/\partial h'_\eta$, so
-
-$$
-\Box_\Psi=\frac{\partial^{2}}{\partial h_t^{2}}-\Delta_\Psi .
-$$
-
-One operator, two signs, and the signs are the two sectors.
+a minus on the time term and a plus on the three space terms.
 
 **There is no root inside the algebra.** A first-order operator $D$ with $D^{2}=\Box I$ cannot be built from the four units alone. The algebra is four-dimensional over $\mathbb{C}$, and the attempt fails at the fourth generator: three of them exist inside $\mathbb{B}$, namely $i\vec e_x$, $i\vec e_y$, $i\vec e_z$, which square to $e_t$ and anticommute in pairs, and the fourth has no left multiplication to supply it. The obstruction is the dimension of the minimal module: the Clifford relation $\{\gamma_\mu,\gamma_\nu\}=2\delta_{\mu\nu}I$ needs a carrier of complex dimension four, while a minimal left ideal of $\mathbb{B}$ has complex dimension two.
 

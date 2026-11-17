@@ -169,14 +169,14 @@ increases from $\hbar\,\omega_{0}$ toward $2|Ed|$. At $|Ed| =\frac{\hbar\,\omega
 
 ### The Resolvent and the Full Polarizability
 
-The polarizability formula of the two-level model is the truncation of the standard second-order expression. For a state $|0\rangle$ coupled by $V = -\vec d\cdot\vec E$ to a complete set of states $\{|m\rangle\}$, the second-order shift is
+The polarizability formula of the two-level model is the truncation of the standard second-order expression. For a state $|0\rangle$ coupled by $V = -\vec d\cdot\vec E$ to a complete set of states $\{|n_{\mathrm{mag}}\rangle\}$, the second-order shift is
 
 $$
-E_0^{(2)} = \sum_{m\neq 0}\frac{|\langle m|V|0\rangle|^2}{E_0-E_m}
-= -E_i E_j \sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0},
+E_0^{(2)} = \sum_{n_{\mathrm{mag}}\neq 0}\frac{|\langle n_{\mathrm{mag}}|V|0\rangle|^2}{E_0-E_{n_{\mathrm{mag}}}}
+= -E_i E_j \sum_{n_{\mathrm{mag}}\neq 0}\frac{\langle 0|d_i|n_{\mathrm{mag}}\rangle\langle n_{\mathrm{mag}}|d_j|0\rangle}{E_{n_{\mathrm{mag}}}-E_0},
 $$
 
-which defines the polarizability tensor $\alpha_{ij} = 2\sum_{m\neq 0}\frac{\langle 0|d_i|m\rangle\langle m|d_j|0\rangle}{E_m-E_0}$ through $\delta E_0 = -\tfrac12\alpha_{ij}E_iE_j$. The two-level formula $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$ is the single-term version with one intermediate state. In the algebra the sum is over the spectral resolutions of the intermediate states, and the structure of the expression is the standard one: the coupling enters twice, once in the matrix element and once in the energy denominator, and the overall sign is negative because the ground state is pushed down by the admixture of the excited states.
+which defines the polarizability tensor $\alpha_{ij} = 2\sum_{n_{\mathrm{mag}}\neq 0}\frac{\langle 0|d_i|n_{\mathrm{mag}}\rangle\langle n_{\mathrm{mag}}|d_j|0\rangle}{E_{n_{\mathrm{mag}}}-E_0}$ through $\delta E_0 = -\tfrac12\alpha_{ij}E_iE_j$. The two-level formula $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$ is the single-term version with one intermediate state. In the algebra the sum is over the spectral resolutions of the intermediate states, and the structure of the expression is the standard one: the coupling enters twice, once in the matrix element and once in the energy denominator, and the overall sign is negative because the ground state is pushed down by the admixture of the excited states.
 
 For the hydrogen ground state the sum gives the standard result $\alpha_{\mathrm H} = \tfrac92 a_0^3$ in atomic units, i.e. $\alpha_{\mathrm H} = 4\pi\epsilon_0\cdot\tfrac92 a_0^3$ in SI; the $2p$ states dominate the sum, which is why the two-level truncation with the $1s$–$2p$ matrix element and the $1s$–$2p$ splitting already gives the correct order of magnitude. The framework does not evaluate the sum: the dipole matrix elements and the level spacings are data of the atomic problem, treated in the companion article *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*.
 

@@ -217,7 +217,7 @@ $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = 0, \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = 0,
 $$
 
-the first of which is identical in form to the source-free biquaternion Maxwell equation. The mass term $k_m\tilde{Ξ}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = k_m\tilde{Ξ}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus; the series records it as retired. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+the first of which is identical in form to the source-free biquaternion Maxwell equation. The mass term $k_m\tilde{Ξ}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{Ξ}^{\flat} = -\tilde{Ξ}^*$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde\nabla_\Phi\tilde{Ξ} = k_m\tilde{Ξ}^{\flat}$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus, so it is not a mass term. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
 
 ## Summary of the Ten Formulas
 

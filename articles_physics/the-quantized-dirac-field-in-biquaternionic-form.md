@@ -94,7 +94,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}\;},
 $$
 
-the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is two lines and no third object: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathcal{D}-k_m)$, with $\mathcal{D}$ the two-sided contraction of the next paragraph and not the retired pair glyph, and the contraction adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
+the one-sided chiral pair, in which both gradients act from the left and the mass is the off-diagonal coupling of the two parts. The pair is two lines and no third object: read on the pair $\bigl(\tilde{Ξ}_{\mathrm{fop},L},\tilde{Ξ}_{\mathrm{fop},R}\bigr)$ it is $(\mathcal{D}-k_m)$, with $\mathcal{D}$ the two-sided contraction of the next paragraph and not a pair glyph, and the contraction adds nothing to the algebra form. It is named here because the two-point function below is stated with it.
 
 Two formulations carry Dirac's name and must not be read as one. The first is the one-sided pair above; the second is Kravchenko's two-sided equation for a biquaternion field $F$:
 
@@ -272,7 +272,7 @@ It is Hermitian and even, and it is the operator whose classical limit is the sp
 
 ## The Two-Point Function
 
-**The operator written on an element.** The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, is two lines on a pair of elements. Carried on one element, which is the carrier of the field, the same content is a single two-sided contraction, written $\mathcal{D}$ and never with the retired glyph, with the side in position,
+**The operator written on an element.** The pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, is two lines on a pair of elements. Carried on one element, which is the carrier of the field, the same content is a single two-sided contraction, written $\mathcal{D}$ and never gathered into one glyph, with the side in position,
 
 $$
 \mathcal{D}:\ \tilde X\longmapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\,\frac{\partial\tilde X}{\partial R_\eta}\vec e_y ,
@@ -375,7 +375,7 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\tilde Q^{\natural},\bar{\tilde Q},\tilde Q^{*},\tilde Q^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugates; $*=\bar{\cdot}\circ\natural$, $\flat=-*$; $\flat$ is the algebra's real structure, not the mass |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part; every bilinear of the article is the scalar part of an element product |
 | $\tilde{\nabla}=e_t\partial/\partial R_t+\nabla$, $\nabla=\sum_\eta\,\vec e_\eta\,\partial/\partial R_\eta$, $\tilde{\nabla}^{\natural}=e_t\partial/\partial R_t-\nabla$, $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient, its spatial part, its quaternion conjugate, and the d'Alembertian |
-| $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not the retired pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$ |
+| $\mathcal{D}$ | Two-sided contraction on one element, the pair carried on the carrier of the field and not a pair glyph; the pair itself is $\tilde\nabla_\Phi\tilde{Ξ}_{\mathrm{fop},R}=k_m\tilde{Ξ}_{\mathrm{fop},L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{\mathrm{fop},L}=k_m\tilde{Ξ}_{\mathrm{fop},R}$; read on one element, $\mathcal{D}:\tilde X\mapsto-\frac{\partial\tilde X}{\partial r'_t}\vec e_x-\sum_\eta\vec e_\eta\frac{\partial\tilde X}{\partial R_\eta}\vec e_y$, with $\mathcal{D}^2=\Box$ |
 | $\mathcal{D}_p$ | Momentum symbol at $p_0=E_{\vec p}/c$: $\mathcal{D}_p:\tilde X\mapsto i\frac{E_{\vec p}}{c}\tilde X\vec e_x-i\sum_\eta p_\eta\vec e_\eta\tilde X\vec e_y$, with $\mathcal{D}_p^2=-N$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | Massive biquaternion Dirac equation (linear chiral pair) |
 | $\bigl(i\partial/\partial r'_t+\nabla\bigr)F-k_m\,i\overline{F}\vec e_z=0$ | Kravchenko's two-sided equation, a different operator, not quantized here |

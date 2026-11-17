@@ -182,7 +182,7 @@ That is the honest boundary, and the corpus draws it explicitly: the framework d
 
 ### The Caution
 
-The corpus's article on the two kinds of mass records a retired equation that used the algebra's real structure as though it were a mass on the module, and it records that the equation failed on the dispersion relation. The lesson is that the two real structures live on different spaces: the algebra's and the module's. This article therefore states the Majorana condition as a condition on the module and does not import the algebra's involution into it.
+The corpus's article on the two kinds of mass records an algebra-level equation that uses the algebra's real structure as though it were a mass on the module, and it records that the equation fails on the dispersion relation. The lesson is that the two real structures live on different spaces: the algebra's and the module's. This article therefore states the Majorana condition as a condition on the module and does not import the algebra's involution into it.
 
 ## Where the Equation Goes
 

@@ -89,7 +89,7 @@ $$
 
 The two are adjoints of one another in the Hermitian form, because the conjugate of the gradient is the operator that form pairs with it, $\tilde\nabla^{*}=(\tilde\nabla_\Phi)^{\natural}$ (*Operator and Calculus Conventions*, §*The Gradient*, the conjugates of the gradient); the integration by parts carries a sign, and a sign moves no kernel. Nothing forces the two dimensions to agree, and that asymmetry is what the index measures.
 
-**The two Dirac equations.** The framework's equation is the chiral pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, each member acting from the left and the mass coupling the two parts; the pair operator that the same article once wrote for them is retired. The mass is the pairing of the two parts and a zeroth-order term, and it does not move the index: the index of an elliptic first-order operator is fixed by its symbol, which the mass leaves untouched. The index computed below is therefore the index of the twisted operator, and the gauge-covariant gradient $\tilde D_R$ of the section above is its derivative.
+**The two Dirac equations.** The framework's equation is the chiral pair of *Operator and Calculus Conventions*, §*The Two First-Order Equations and Their Symbol*, each member acting from the left and the mass coupling the two parts; no single glyph is written for them. The mass is the pairing of the two parts and a zeroth-order term, and it does not move the index: the index of an elliptic first-order operator is fixed by its symbol, which the mass leaves untouched. The index computed below is therefore the index of the twisted operator, and the gauge-covariant gradient $\tilde D_R$ of the section above is its derivative.
 
 **The index.** The index is the difference
 
@@ -205,7 +205,7 @@ The zero modes can be exhibited explicitly. In the $\mathrm{U}(1)$ patch with $a
 $$
 \tilde{Ξ}_{n}^{(m)}=f_n(\theta)\,\exp(im\theta_{\mathrm{azm}}),
 \qquad
-m=-j,\dots,j,
+n_{\mathrm{mag}}=-j,\dots,j,
 \qquad
 j=\frac{n-1}{2},
 $$

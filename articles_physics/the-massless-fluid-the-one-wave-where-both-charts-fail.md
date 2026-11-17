@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**This article separates two statements about mass that are easy to run together, and the earlier version of this article ran them together.** The first is about a fluid that exists. The second is about what is left when the fluid's own variables have gone to zero or to infinity. **They are not the same statement, and the difference is not a matter of emphasis: in the first the fluid equations hold everywhere, and in the second there is no fluid at all.**
+**This article separates two statements about mass that are easy to run together, and it keeps them apart throughout.** The first is about a fluid that exists. The second is about what is left when the fluid's own variables have gone to zero or to infinity. **They are not the same statement, and the difference is not a matter of emphasis: in the first the fluid equations hold everywhere, and in the second there is no fluid at all.**
 
 **At every positive mass the fluid is fully defined.** The four-factor word exists because every value has a nonzero norm; the density is the field's own scale, $\rho_{\mathrm{num}}=\varrho^{2}$; the four-velocity is invertible at a mode and departs from the unit by $2Q_{\mathrm{qnt}}/m$ otherwise; the quantum potential, the quantum stress and the acceleration are finite at that $m$; and the first-order symbol is invertible. **Nothing in that regime is a limit and nothing in it is singular**, and no section of this article changes any of it.
 
-**At zero mass, on the label cone, the fluid description stops.** The word has no value, the logarithm does not exist, the generator diverges, the inverse does not exist, and the density, the quantum potential and the stress are either zero or divergent there. **What remains is a direction, an intensity and the sign of the energy**: a null current, not a fluid. **Calling that object a fluid at zero density is a manner of speaking, and the earlier version of this article used it as though the cone were an inhabited state of the fluid.**
+**At zero mass, on the label cone, the fluid description stops.** The word has no value, the logarithm does not exist, the generator diverges, the inverse does not exist, and the density, the quantum potential and the stress are either zero or divergent there. **What remains is a direction, an intensity and the sign of the energy**: a null current, not a fluid. **Calling that object a fluid at zero density is a manner of speaking, and the cone is not an inhabited state of the fluid.**
 
 **Between the two regimes the passage is a limit, and the limit can be counted.** Two families are involved and they approach two different sets: a four-momentum, whose invariant mass $m^{2}c^{2}$ vanishes as its speed reaches $c$, and a field, whose density does not move while its quantum layer diverges as $1/m$. **Both counts are made of values of a fluid that exists at that mass**, which is what distinguishes this article's subject from a fluid on the cone.
 
@@ -81,7 +81,7 @@ $$
 
 ## The Two Families That Approach Two Different Sets
 
-**"Massless" names two different things in this block, and the earlier version of this article ran them together.** The first is a four-momentum whose invariant mass has gone to zero. The second is a field whose equation has lost its mass term. **They approach different sets, they carry different fluid data, and only the first has a density that vanishes.**
+**"Massless" names two different things in this block, and they are kept apart here.** The first is a four-momentum whose invariant mass has gone to zero. The second is a field whose equation has lost its mass term. **They approach different sets, they carry different fluid data, and only the first has a density that vanishes.**
 
 | the family | family one: the four-momentum | family two: the field |
 | --- | --- | --- |
@@ -172,7 +172,7 @@ $$
 
 **so the object at the corner is a null current, and the word "fluid" is a shorthand that stops being true at $m=0$.** A current has a direction and a flux and no state; a fluid has a state, a stress and a quantum potential, and none of those exists here.
 
-**The earlier version of this article printed a $\gamma$ and a $\lvert\vec v\rvert$ among the quantities of the corner.** Both are family one's, they are limits and not values, and the table has been corrected. **The correction is the whole difference between a fluid approaching a wall and the wall itself.**
+$\gamma$ and $\lvert\vec v\rvert$ do not belong among the quantities of the corner. Both are family one's, they are limits and not values, and the table carries neither. **That difference is the whole difference between a fluid approaching a wall and the wall itself.**
 
 **This is neither a failure of the reading nor a defect of the algebra.** $\rho_{\mathrm{num}}$, $Q_{\mathrm{qnt}}$ and $\sigma^{Q}_{ij}$ are functions of $\varrho$ and of $m$, and at the corner $\varrho=0$ and $m=0$: a quantity whose definition divides by either has no value there. **No change of chart produces a fluid where the fluid's own variables have gone**, which is why the corner is examined here as the end of a limit and not as a state.
 
@@ -273,7 +273,7 @@ $$
 | $\gamma$ | no value |
 | $\lvert\vec v\rvert$ | no value |
 
-**The first four rows are values and the last two are not, and the split is the whole table.** The pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is defined at the corner, which is why the corner is describable at all; every ratio that divides by $\varrho$ is not, which is why the corner is not a state of the fluid. **The two rows that are not values are family one's, and they were printed here in an earlier version as though they were.**
+**The first four rows are values and the last two are not, and the split is the whole table.** The pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is defined at the corner, which is why the corner is describable at all; every ratio that divides by $\varrho$ is not, which is why the corner is not a state of the fluid. **The two rows that are not values are family one's, and neither is a value.**
 
 **The wave does not move its own state, up to the overall phase.** The amplitude is a fixed projector, so every value of the field is that projector up to a phase and a scale: **the only thing that changes along the world line is the phase $e^{i\theta}$**, and a change of phase changes nothing that this article measures, since $N$ and $\langle\cdot\rangle_{*}$ are both invariant under it. That is the algebraic content of a mode with no rest frame.
 

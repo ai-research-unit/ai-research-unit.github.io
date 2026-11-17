@@ -54,7 +54,7 @@ the Coulomb energy at the de Broglie wavelength measured in units of the kinetic
 
 ### The radial equation
 
-Writing the envelope in spherical coordinates and separating the angular part with the spherical harmonic $Y_{lm}$, the radial function $R_l(r)$ obeys
+Writing the envelope in spherical coordinates and separating the angular part with the spherical harmonic $Y_{l\,n_{\mathrm{mag}}}$, the radial function $R_l(r)$ obeys
 
 $$
 -\frac{\hbar^{2}}{2\,m}\frac{1}{r^2}\frac{d}{dr}\left(r^2\frac{dR_l}{dr}\right)

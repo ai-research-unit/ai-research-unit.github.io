@@ -134,7 +134,7 @@ In this work, subscripts denote vector components, not partial derivatives as in
 
 **A subscript on an operator names its degree, its place, its argument or its sector.** The rule governs the derivative of a field, which names its variable after the $\partial$. It does not forbid a low mark on an operator that differentiates nothing: the chain boundary is $\partial_n:C_n\to C_{n-1}$, with the degree in the subscript, and a derivative taken along a vector is $\vec\nabla_X$, with the vector. These are operator labels, in the sense of *Index and Notation Conventions*, §*The Subscripts*, and they stand as written.
 
-**A variant of an operator is a label, and a chart is not a variant.** The gradient carries $\natural$ in the caret or a label low, $\tilde\nabla^{\natural}$ and $\tilde\nabla_{\mathrm{gco}}$, and it never takes a letter in the low slot for the coordinates it is read in. Where both marks stand on one glyph the sector goes low on the operator and $\natural$ goes outside, $(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla^{\natural})_\Phi$: the conjugate of the material part is the material part of the conjugate, because $\natural$ negates the vector part and leaves the scalar imaginary alone, so it carries each sector to itself. A sector is not a coordinate: $\tilde\nabla_{\Phi}$ and $\tilde\nabla_{\Psi}$ name the sector of the coefficients at the parameters the article has fixed, while the bar names the slice, so $\tilde\nabla_\Phi$ and $\tilde\nabla_\Psi$ are the gradient read at the parameters of each sector and both take the bar, as §*The Gradient* fixes. A chart is not a slice either: the bar records which of the two real coordinates of each slot the derivatives are taken in, while a chart names the coordinates themselves. The Wick rotation is written on the coordinate, $r'_t\mapsto-i\tau$, which sends $R_t=i r'_t$ to $R_t=c\tau$; the four terms of the sum are unchanged, only the sign of $\partial^2/\partial R_t^2$ moves, and the article that continues the coordinates says which chart it reads them in rather than marking the operator.
+**A variant of an operator is a label, and a chart is not a variant.** The gradient carries $\natural$ in the caret or a label low, $\tilde\nabla^{\natural}$ and $\tilde\nabla_{\mathrm{gco}}$, and it never takes a letter in the low slot for the coordinates it is read in. Where both marks stand on one glyph the sector goes low on the operator and $\natural$ goes outside, $(\tilde\nabla_\Phi)^{\natural}$: the conjugate of the material gradient is the material gradient of the conjugate, because $\natural$ negates the vector part and leaves the scalar imaginary alone. The sector so named is $\Phi$ and no other, and $\Psi$ never stands in the low slot of an operator. A sector is not a coordinate: $\tilde\nabla_{\Phi}$ names the material sector, while the bar names the coordinate the derivative is taken in, as §*The Gradient* fixes. A chart is not a slice either: the bar records which of the two real coordinates of each slot the derivatives are taken in, while a chart names the coordinates themselves. The Wick rotation is written on the coordinate, $r'_t\mapsto-i\tau$, which sends $R_t=i r'_t$ to $R_t=c\tau$; the four terms of the sum are unchanged, only the sign of $\partial^2/\partial R_t^2$ moves, and the article that continues the coordinates says which chart it reads them in rather than marking the operator.
 
 **The coordinate derivative is unhalved.** It is taken at the point, so it is written in the position letters, and it is defined by
 
@@ -150,15 +150,13 @@ $$
 
 with $\partial\bar R_\mu/\partial\bar R_\mu=2$.
 
-**One derivative, two halves, and each part keeps one half.** The two terms of the definition are the two halves of the coefficient, the unprimed term and the primed term, and the two parts of §*The Gradient* separate them: the material part carries the primed time term and the unprimed space terms, the informational part the unprimed time term and the primed space terms.
+**One derivative, two halves, and each part keeps one half.** The two terms of the definition are the two halves of the coefficient, the unprimed term and the primed term, and the two parts of §*The Gradient* separate them: the material part carries the primed time term and the unprimed space terms.
 
 $$
-\tilde\nabla_\Phi:\quad e_t\Bigl(-i\frac{\partial}{\partial r'_t}\Bigr)+\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
-\qquad
-\tilde\nabla_\Psi:\quad e_t\frac{\partial}{\partial h_t}+\sum_\eta\vec e_\eta\Bigl(-i\frac{\partial}{\partial h'_\eta}\Bigr).
+\tilde\nabla_\Phi:\quad e_t\Bigl(-i\frac{\partial}{\partial r'_t}\Bigr)+\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta}.
 $$
 
-**The two lines are the parent formula read twice, and the whole sector arithmetic is visible in them.** The same derivative symbol $\partial/\partial R_\mu$ is resolved on two disjoint sets of real coordinates, four each: the first line keeps $r'_t$ and $r_\eta$, the second $h_t$ and $h'_\eta$. The coefficient of the time slot is $-i$ in the material part and $1$ in the informational one, the coefficient of each space slot $1$ in the material part and $-i$ in the informational one, and no fourth case occurs.
+**The line is the parent formula read on the material coordinates.** The derivative symbol $\partial/\partial R_\mu$ is resolved there on $r'_t$ and $r_\eta$, four of the eight real coordinates: the coefficient of the time slot is $-i$ and the coefficient of each space slot $1$.
 
 **The general element keeps the letter $Q$, and the mark is the same mark.** A generic element of the algebra is $\tilde Q$, and a display that names the coordinate slot of that element writes $\partial/\partial Q_\mu$ where this article writes $\partial/\partial R_\mu$; the slot is the same slot and the derivative the same derivative, the letter being the general element's instead of the point's. The gradient is taken at the point, so this article writes $R$; no second derivative is defined by the difference, and no factor of $c$ or of $i$ hangs on the choice of letter.
 
@@ -198,7 +196,7 @@ $$
 
 It is this conjugate and no other that the series composes with (*Biquaternion Analysis*, §*The Biquaternionic Gradient*, §*The Quaternion Conjugate of the Gradient*). Write $\vec\nabla=\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ for the spatial gradient, with divergence $\vec\nabla\cdot\vec Q_{\mathrm f}$ and curl $\vec\nabla\times\vec Q_{\mathrm f}$, and $\Delta_Q=\partial^2/\partial R_x^2+\partial^2/\partial R_y^2+\partial^2/\partial R_z^2$ for the Laplacian in the three vector coordinates.
 
-**The variable, and its two parts.** Every derivative above is taken against the element
+**The variable, and its two parts.** Every derivative above is taken against the four complex coordinates of the element
 
 $$
 \tilde R=\sum_{\mu\in\{t,x,y,z\}}R_\mu e_\mu,\qquad R_\mu=r_\mu+i r'_\mu,
@@ -214,64 +212,30 @@ $$
 
 and they exhaust it, $\tilde R=\tilde R_\Phi+\tilde H_\Psi$. The subscript names the part and nothing else: $\Phi$ is the anti-Hermitian part, the material one, and $\Psi$ the Hermitian part, the informational one, with $\tilde R_\Phi^{*}=-\tilde R_\Phi$ and $\tilde H_\Psi^{*}=+\tilde H_\Psi$. Each part carries four of the eight real parameters, and the two fours are complementary: $\Phi$ keeps the imaginary time $r'_t$ and the three real space numbers $r_\eta$, $\Psi$ keeps the real time $h_t$ and the three imaginary space numbers $h'_\eta$. The two maps $X\mapsto\tfrac12(X-X^{*})$ and $X\mapsto\tfrac12(X+X^{*})$ are idempotent, annihilate one another and sum to the identity, so the split is a decomposition and not a choice.
 
-**The same split for the gradient.** The gradient splits unit by unit, and the two parts are the operators of the two parts of the variable:
+**The material gradient is the operator of the corpus.** The corpus differentiates the material coordinates and no others, and the operator is one:
 
 $$
 \tilde\nabla_\Phi:=\tfrac12\bigl(\tilde\nabla-\tilde\nabla^{*}\bigr)=-i\,e_t\frac{\partial}{\partial r'_t}+\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
 \qquad
-\tilde\nabla_\Psi:=\tfrac12\bigl(\tilde\nabla+\tilde\nabla^{*}\bigr)=e_t\frac{\partial}{\partial h_t}-i\sum_\eta\vec e_\eta\frac{\partial}{\partial h'_\eta},
+\tilde\nabla_\Phi^{*}=-\tilde\nabla_\Phi .
 $$
 
-$$
-\boxed{\;\tilde\nabla=\tilde\nabla_\Phi+\tilde\nabla_\Psi\;},
-\qquad
-\tilde\nabla_\Phi^{*}=-\tilde\nabla_\Phi,\qquad
-\tilde\nabla_\Psi^{*}=+\tilde\nabla_\Psi .
-$$
-
-The reason is the class of the two units: $e_t^{*}=+e_t$ leaves the temporal term whole in the Hermitian part, and $\vec e_\eta^{*}=-\vec e_\eta$ puts the three spatial terms whole in the anti-Hermitian one. The same holds for the quaternion conjugate, which carries the same three minus signs on the space slots,
+The reason is the class of the two units: $e_t^{*}=+e_t$ fixes the temporal term, and $\vec e_\eta^{*}=-\vec e_\eta$ reverses the three spatial ones. The quaternion conjugate carries the same three minus signs on the space slots,
 
 $$
 (\tilde\nabla_\Phi)^{\natural}=-i\,e_t\frac{\partial}{\partial r'_t}-\sum_\eta\vec e_\eta\frac{\partial}{\partial r_\eta},
-\qquad
-(\tilde\nabla_\Psi)^{\natural}=e_t\frac{\partial}{\partial h_t}+i\sum_\eta\vec e_\eta\frac{\partial}{\partial h'_\eta},
 $$
 
-and for the four operators alike the subscript is the only mark: $\Phi$ is the material part, $\Psi$ the informational one, and no operator carries two subscripts.
+and for the two operators alike the subscript is the only mark: $\Phi$ is the material sector, and no operator carries two subscripts. The bare glyph $\tilde\nabla$ names the same operator, written on the four complex coordinates as $\sum_\mu e_\mu\partial/\partial R_\mu$: that is the Cauchy--Riemann form of *Biquaternion Analysis*, read on the material coordinates by $R_t=i r'_t$ and $R_\eta=r_\eta$. It is not a second sector operator, and the corpus writes the glyph bare wherever the sector is not in doubt.
 
 | symbol | definition | class | the four coordinates it keeps |
 | --- | --- | --- | --- |
 | $\tilde R_\Phi$ | $i r'_t e_t+\sum_\eta\vec e_\eta r_\eta$ | anti-Hermitian, material | $r'_t,\ r_x,\ r_y,\ r_z$ |
 | $\tilde H_\Psi$ | $h_t e_t+i\sum_\eta\vec e_\eta h'_\eta$ | Hermitian, informational | $h_t,\ h'_x,\ h'_y,\ h'_z$ |
 | $\tilde\nabla_\Phi$ | $-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$ | anti-Hermitian, material | $r'_t,\ r_x,\ r_y,\ r_z$ |
-| $\tilde\nabla_\Psi$ | $e_t\partial_{h_t}-i\sum_\eta\vec e_\eta\partial_{h'_\eta}$ | Hermitian, informational | $h_t,\ h'_x,\ h'_y,\ h'_z$ |
 | $(\tilde\nabla_\Phi)^{\natural}$ | $-i\,e_t\partial_{r'_t}-\sum_\eta\vec e_\eta\partial_{r_\eta}$ | anti-Hermitian, material | $r'_t,\ r_x,\ r_y,\ r_z$ |
-| $(\tilde\nabla_\Psi)^{\natural}$ | $e_t\partial_{h_t}+i\sum_\eta\vec e_\eta\partial_{h'_\eta}$ | Hermitian, informational | $h_t,\ h'_x,\ h'_y,\ h'_z$ |
 
-**The same split in the eight real coordinates.** Each $\partial/\partial R_\mu$ is the difference $\partial/\partial r_\mu-i\,\partial/\partial r'_\mu$, so the four symbols of the definition are eight terms once they are written out, one per real parameter:
-
-$$
-\begin{aligned}
-\tilde\nabla={}&e_t\frac{\partial}{\partial h_t}-i\,e_t\frac{\partial}{\partial r'_t}
-+\vec e_x\frac{\partial}{\partial r_x}-i\,\vec e_x\frac{\partial}{\partial h'_x}\
-&+\vec e_y\frac{\partial}{\partial r_y}-i\,\vec e_y\frac{\partial}{\partial h'_y}
-+\vec e_z\frac{\partial}{\partial r_z}-i\,\vec e_z\frac{\partial}{\partial h'_z}.
-\end{aligned}
-$$
-
-Each term carries one coefficient on one unit and is read on its own: $1$ on $e_t$ and $-i$ on $\vec e_\eta$ are Hermitian, $-i$ on $e_t$ and $1$ on $\vec e_\eta$ anti-Hermitian. The eight parameters divide four and four, and the division is the one the subscripts name:
-
-$$
-\underbrace{e_t\frac{\partial}{\partial h_t}-i\sum_{\eta}\vec e_\eta\frac{\partial}{\partial h'_\eta}}_{\tilde\nabla_\Psi}
-\;+\;
-\underbrace{-i\,e_t\frac{\partial}{\partial r'_t}+\sum_{\eta}\vec e_\eta\frac{\partial}{\partial r_\eta}}_{\tilde\nabla_\Phi},
-\qquad
-\underbrace{h_t e_t+i\sum_\eta\vec e_\eta h'_\eta}_{\tilde H_\Psi}
-\;+\;
-\underbrace{i r'_t e_t+\sum_\eta\vec e_\eta r_\eta}_{\tilde R_\Phi}.
-$$
-
-**Neither part is zero, so the gradient is neither Hermitian nor anti-Hermitian.** That is $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ read as a sum: the star reverses the three spatial units and fixes the temporal one, exactly as the quaternion conjugation does, so the two marks agree term by term, and their common value is neither $+\tilde\nabla$ nor $-\tilde\nabla$. The gradient carries the coefficient $1$ on all four slots, so it is one term of the first class added to three of the second.
+**The complex-coordinate form is neither Hermitian nor anti-Hermitian.** Read on $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$, the star fixes $e_t$ and reverses the three spatial units, and the sum carries the coefficient $1$ on all four slots, so that form is neither $+\tilde\nabla$ nor $-\tilde\nabla$. Its material part is uniform: $\tilde\nabla_\Phi^{*}=-\tilde\nabla_\Phi$ term by term, because the temporal coefficient $-i$ is fixed and the three spatial coefficients $1$ are reversed. The material reading is the one the corpus takes, and there the class is one class.
 
 **The conjugates of the gradient.** The marks are read on the invertibles at fixed coordinate: the derivative symbols are held fixed and only the invertibles are conjugated. This fixes the scope of the star, and it is not a claim that $\partial/\partial R_\mu$ is real; the unhalved derivative of §*Conventions for Derivation* is complex, and on an element-valued field the star is coefficientwise, carried through the derivative by $\partial/\partial\bar R_\mu$ rather than by $\partial/\partial R_\mu$. Read on the invertibles, the quaternion conjugation reverses the three spatial units, and so does the Hermitian conjugation, so the two act on the gradient alike,
 
@@ -286,13 +250,13 @@ $$
 \tilde\nabla\tilde\nabla^{\natural}=(T+S)(T-S)=T^{2}-S^{2}=\frac{\partial^{2}}{\partial R_t^{2}}+\Delta_Q=\Box ,
 $$
 
-the square of the temporal half entering with the plus and the squares of the three spatial ones with the minus. That sign is the sign pattern read on the two halves instead of on the four second derivatives: $(-,+,+,+)$ on the material part and $(+,-,-,-)$ on the informational one, so $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ and $\Box_\Psi=\partial^2/\partial h_t^2-\Delta_\Psi$, with $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ and $\Delta_\Psi=\sum_\eta\partial^2/\partial {h'_\eta}^2$. A reader who has the split has the sign, and reads the d'Alembertian without reopening the four terms.
+the square of the temporal half entering with the plus and the squares of the three spatial ones with the minus. That sign is the sign pattern read on the two halves instead of on the four second derivatives: $(-,+,+,+)$ on the material part, so $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ with $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$. A reader who has the split has the sign, and reads the d'Alembertian without reopening the four terms.
 
 **The forms stay four, the norms are two.** The four forms of *Product and Form Conventions*, §*The Involutions and the Four Forms* remain four distinct conventions here, because each conjugates its own slot: the quaternionic form conjugates the first argument and the Hermitian form the second, so on a general second argument they are not the same statement. But read at the two equal arguments they give two operators, the Hermitian norm coinciding with the quaternionic bilinear norm, $\langle\tilde\nabla\rangle_{*}=\langle\tilde\nabla\rangle_{\natural}$, and the Krein norm with the plain bilinear norm, $\langle\tilde\nabla\rangle_{\natural*}=\langle\tilde\nabla\rangle$. The four subsections below carry the four forms, and their norms are the two operators $\Box$ and $\partial^2/\partial R_t^2-\Delta_Q$.
 
-**The material part is the reading in which the series works.** On the material part $\tilde\nabla_\Phi$ the time derivative is imaginary, $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the three space derivatives are the physical ones, $\partial/\partial R_\eta=\partial/\partial r_\eta$, the spatial gradient is the physical $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$, its divergence and its curl are the ordinary divergence $\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$ and curl $\vec\nabla_\Phi\times\vec Q_{\mathrm f}$ of the field, and the Laplacian in the vector coordinates collapses to the physical $\Delta_Q=\sum_\eta\partial^2/\partial r_\eta^2=\Delta_\Phi$. So a real field has a purely imaginary time derivative and real space derivatives, and that one fact is what turns the gradient into the Maxwell pair and the chiral pair below.
+**The material coordinates are the only reading the corpus takes.** On $\tilde\nabla_\Phi$ the time derivative is imaginary, $\partial/\partial R_t=-i\,\partial/\partial r'_t$, the three space derivatives are the physical ones, $\partial/\partial R_\eta=\partial/\partial r_\eta$, the spatial gradient is the physical $\vec\nabla_\Phi=\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$, its divergence and its curl are the ordinary divergence $\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$ and curl $\vec\nabla_\Phi\times\vec Q_{\mathrm f}$ of the field, and the Laplacian in the vector coordinates is the physical $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$. So a real field has a purely imaginary time derivative and real space derivatives, and that one fact is what turns the gradient into the Maxwell pair and the chiral pair below.
 
-**The informational part is the same operator with the $i$ moved.** On the informational part $\tilde\nabla_\Psi$ the time derivative is real, $\partial/\partial R_t=\partial/\partial h_t$, and the three space derivatives carry $\frac{1}{i}=-i$, so $\partial/\partial R_\eta=-i\,\partial/\partial h'_\eta$, and the roles are exchanged: the time slot is the real one and the three space slots are the imaginary ones. The spatial operations are then $\vec\nabla_\Psi=\sum_\eta\vec e_\eta\,\partial/\partial h'_\eta$ and $\Delta_\Psi=\sum_\eta\partial^2/\partial {h'_\eta}^2$, so $\Delta_Q=-\Delta_\Psi$, and that is what the subscript names. Reading the two parts term by term, the time slot loses its $-i$ and gains a $1$, the space slots lose their $1$ and gain a $-i$, and no other difference exists.
+**There is no informational gradient.** The informational sector is written with elements and never with a derivative. Its four-position $\tilde H_\Psi$ is an element, and no glyph of the corpus carries $\Psi$ as the subscript of a gradient, a d'Alembertian or a Laplacian. A statement about the informational sector is a statement about its elements, and any derivative in such a statement is the material one or none.
 
 **A continuation is a change of coordinate, not of operator.** The Wick rotation $r'_t\mapsto-i\tau$ sends $R_t=i r'_t$ to $R_t=c\tau$, and the four terms of $\tilde\nabla=\sum_\mu e_\mu\partial/\partial R_\mu$ are untouched, each being the derivative with respect to the same coordinate under the same name; the list of coordinates is now $(c\tau,r_x,r_y,r_z)$, all real. What the continuation changes is one sign, $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_{t}}^2$ on the material part against $+\partial^2/\partial x_4^2$ on the real-quaternion slice, and that sign is the whole of the difference between the hyperbolic $\Box$ and the elliptic operator. So the substitution is written on the *coordinate*, $r'_t\mapsto-i\tau$, and never on the operator.
 
@@ -310,13 +274,7 @@ $$
 \tilde\nabla_\Phi\tilde Q_{\mathrm f}=\Bigl(-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}-\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}\Bigr)e_t-i\frac{\partial\vec Q_{\mathrm f}}{\partial r'_t}+\vec\nabla_\Phi Q_{\mathrm{f}t}+\vec\nabla_\Phi\times\vec Q_{\mathrm f} .
 $$
 
-**On the informational part $\tilde\nabla_\Psi$** the same product is read with $\partial/\partial R_t=\partial/\partial h_t$ and with the three spatial derivatives carrying $-i$, so the whole spatial part is multiplied by $-i$ and the time part is real:
-
-$$
-\tilde\nabla_\Psi\tilde Q_{\mathrm f}=\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial h_t}+i\,\vec\nabla_\Psi\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial\vec Q_{\mathrm f}}{\partial h_t}-i\,\vec\nabla_\Psi Q_{\mathrm{f}t}-i\,\vec\nabla_\Psi\times\vec Q_{\mathrm f} .
-$$
-
-The two displays are one product read on the two parts, and they differ in the way the gradient differs: the divergence and the curl appear with their own sign on $\mathbb{B}_{\Phi}$ and with an $i$ and a change of sign on $\mathbb{B}_{\Psi}$, because $-i$ factors out of three spatial derivatives and multiplies each of them once. Nothing is redefined and no second product is introduced: a reader who substitutes the coefficients into the general display above obtains each line, and a reader who does not substitute keeps the general display, which is the operator's own form and the one the definition fixes.
+The display is the general product with the material coefficients substituted: the divergence and the curl appear with their own sign on $\mathbb{B}_{\Phi}$, because the three spatial derivatives there are the physical ones. Nothing is redefined and no second product is introduced: a reader who substitutes the coefficients into the general display above obtains the line, and a reader who does not substitute keeps the general display, which is the operator's own form and the one the definition fixes.
 
 **The symmetric and antisymmetric parts.** Read with two arguments, the product splits as in *Product and Form Conventions*, §*The Twelve Products and Their Names*. The half-sum keeps the form as its scalar part,
 
@@ -338,9 +296,9 @@ $$
 \langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle=\mathrm{Sc}(\tilde\nabla\tilde Q_{\mathrm f})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial R_\mu}Q_{\mathrm{f}\mu}=\frac{\partial}{\partial R_t}Q_{\mathrm{f}t}-\vec\nabla\cdot\vec Q_{\mathrm f} ,
 $$
 
-a scalar, the **contraction** of the derivative with the field in the sign vector $\varepsilon$. **On the material part $\tilde\nabla_\Phi$** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}-\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$, the time slot imaginary and the divergence real. **On the informational part $\tilde\nabla_\Psi$** it is $\frac{\partial Q_{\mathrm{f}t}}{\partial h_t}+i\,\vec\nabla_\Psi\cdot\vec Q_{\mathrm f}$, the time slot real and the divergence imaginary, the divergence entering with the sign opposite to the quaternionic form's below — the same exchange of signs as between the two products, read on the scalar part alone.
+a scalar, the **contraction** of the derivative with the field in the sign vector $\varepsilon$. **On the material part $\tilde\nabla_\Phi$** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}-\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$, the time slot imaginary and the divergence real. 
 
-The plain form is the **contraction** in the sense of §*A contraction is a form, never an index*: the derivative meets the field component of its own name, the time with the time and each space with its space, and the sign it carries is $\varepsilon_\mu$, which is why the time term enters with a plus and the three space terms with a minus. On the material part that sign vector is also the sign pattern, because there the three space coefficients are real and the time coefficient imaginary; on the informational part it is not, and the reader who wants the signs takes them from the operator and not from the form.
+The plain form is the **contraction** in the sense of §*A contraction is a form, never an index*: the derivative meets the field component of its own name, the time with the time and each space with its space, and the sign it carries is $\varepsilon_\mu$, which is why the time term enters with a plus and the three space terms with a minus. On the material part that sign vector is also the sign pattern, because there the three space coefficients are real and the time coefficient imaginary.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments:
 
@@ -348,7 +306,7 @@ $$
 \langle\tilde\nabla\rangle=\langle\tilde\nabla,\tilde\nabla\rangle=\mathrm{Sc}(\tilde\nabla\tilde\nabla)=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial R_\mu^2}=\frac{\partial^2}{\partial R_t^2}-\Delta_Q ,
 $$
 
-the cross terms cancelling. **On the material part $\tilde\nabla_\Phi$** it is $-\frac{\partial^2}{\partial {r'_{t}}^2}-\Delta_\Phi$, which is neither the wave operator $\partial^2/\partial {r'_{t}}^2-\Delta_\Phi$ nor the series' d'Alembertian; on the material part the d'Alembertian is $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ (§*The Quaternionic Bilinear Product, Its Form and Its Norm*). **On the informational part $\tilde\nabla_\Psi$** the same norm is $\frac{\partial^2}{\partial h_t^2}+\Delta_\Psi$, with the time term positive and the primed Laplacian positive as well, because $\partial^2/\partial R_t^2$ gains a plus and $-\Delta_Q$ gains $+\Delta_\Psi$; it is the negative of the material reading, as the sign pattern of §*The Gradient* requires, and it is neither the wave operator nor the d'Alembertian either.
+the cross terms cancelling. **On the material part $\tilde\nabla_\Phi$** it is $-\frac{\partial^2}{\partial {r'_{t}}^2}-\Delta_\Phi$, which is neither the wave operator $\partial^2/\partial {r'_{t}}^2-\Delta_\Phi$ nor the series' d'Alembertian; on the material part the d'Alembertian is $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ (§*The Quaternionic Bilinear Product, Its Form and Its Norm*). 
 
 ### The Quaternionic Bilinear Product, Its Form and Its Norm
 
@@ -363,14 +321,6 @@ $$
 $$
 (\tilde\nabla_\Phi)^{\natural}\tilde Q_{\mathrm f}=\Bigl(-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}\Bigr)e_t-i\frac{\partial\vec Q_{\mathrm f}}{\partial r'_t}-\vec\nabla_\Phi Q_{\mathrm{f}t}-\vec\nabla_\Phi\times\vec Q_{\mathrm f} .
 $$
-
-**On the informational part $(\tilde\nabla_\Psi)^{\natural}$** the substitution is $\partial/\partial R_t=\partial/\partial h_t$ with $-i$ on the three space derivatives, and the space signs turn over once more, because the conjugate already carries them and the coefficient carries an $i$:
-
-$$
-(\tilde\nabla_\Psi)^{\natural}\tilde Q_{\mathrm f}=\Bigl(\frac{\partial Q_{\mathrm{f}t}}{\partial h_t}-i\,\vec\nabla_\Psi\cdot\vec Q_{\mathrm f}\Bigr)e_t+\frac{\partial\vec Q_{\mathrm f}}{\partial h_t}+i\,\vec\nabla_\Psi Q_{\mathrm{f}t}+i\,\vec\nabla_\Psi\times\vec Q_{\mathrm f} .
-$$
-
-Compared with the plain product on the same part, the two lines differ exactly as the general displays do, in the sign of the divergence and in the sign of the gradient and the curl, which is the statement that the conjugate derivative is not a second operator but the same operator with $\varepsilon$ applied to its units.
 
 **The symmetric and antisymmetric parts.** The half-sum is central and is the quaternionic form itself,
 
@@ -390,7 +340,7 @@ $$
 \langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde Q_{\mathrm f})=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial}{\partial R_\mu}Q_{\mathrm{f}\mu}=\frac{\partial}{\partial R_t}Q_{\mathrm{f}t}+\vec\nabla\cdot\vec Q_{\mathrm f} ,
 $$
 
-a scalar, the **contraction** of the derivative with the field, all four signs plus because the conjugate derivative already carries $\varepsilon$; it differs from the plain form by the three signs of $\varepsilon$, which are **computed from the product** $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not assumed. **On the material part $(\tilde\nabla_\Phi)^{\natural}$** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$, the divergence entering with a plus where the plain form carries a minus. **On the informational part $(\tilde\nabla_\Psi)^{\natural}$** it is $\frac{\partial Q_{\mathrm{f}t}}{\partial h_t}-i\,\vec\nabla_\Psi\cdot\vec Q_{\mathrm f}$, and the two part readings differ from each other as the two forms differ from each other: the time slot changes its factor, the divergence changes its sign and its coefficient, and no term of the contraction is left unaccounted for.
+a scalar, the **contraction** of the derivative with the field, all four signs plus because the conjugate derivative already carries $\varepsilon$; it differs from the plain form by the three signs of $\varepsilon$, which are **computed from the product** $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not assumed. **On the material part $(\tilde\nabla_\Phi)^{\natural}$** it is $-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$, the divergence entering with a plus where the plain form carries a minus.
 
 **The norm, and the definition of the d'Alembertian.** The norm is defined with the form, as that form at its two equal arguments, and the two orders of the product agree:
 
@@ -408,19 +358,11 @@ $$
 \Box_\Phi=\Delta_\Phi-\frac{\partial^2}{\partial {r'_{t}}^2},
 $$
 
-a plus on the spatial part and a minus on the time part. On $\mathbb{B}_{\Phi}$, where the series does its work, this reading is the **series convention**, used by the Klein–Gordon article, the Dirac article, the dedicated article *The Biquaternion D'Alembertian and Its Green's Functions*, and the great majority of the series. **The $i r'_t$ substitution is a statement about the material sector, not about the operator**, which in every case is $\partial^2/\partial R_t^2+\Delta_Q$; its signs are not a property of the operator but of the **slice** it is read on, since on a named subspace some of the $Q_\mu$ are purely imaginary. The operator is one, and every article writes it the same way.
-
-**The special case of the informational sector.** On $\mathbb{B}_{\Psi}$ the coordinates are the informational ones, $R_t=h_t$ and $R_\eta=i h'_\eta$, and the substitution works the other way round: the time second derivative gains a plus, $\partial^2/\partial R_t^2=\partial^2/\partial h_t^2$, while each of the three space second derivatives gains a minus, $\partial^2/\partial Q_\eta^2=-\partial^2/\partial {h'_\eta}^2$, so the same operator reads
-
-$$
-\Box_\Psi=\frac{\partial^2}{\partial h_t^2}-\Delta_\Psi,
-$$
-
-a plus on the time part and a minus on the spatial part, the sign pattern $(+,-,-,-)$ and the negative of the material line above. The two sector lines are one operator and the two sign patterns are one sign pattern read twice: the material sector keeps the four parameters $r'_t$ and $r_\eta$, the informational sector keeps the four complementary ones $h_t$ and $h'_\eta$, and a slice that keeps a coordinate carrying an $i$ turns one sign while a slice that keeps the same coordinate without one does not. The informational reading is the one the state space $\mathbb{B}_{\Psi}$ is written in, and the operator it carries is $\Box$ with the time term positive; a reader who moves an equation from one sector to the other moves one overall sign and nothing else.
+a plus on the spatial part and a minus on the time part. On $\mathbb{B}_{\Phi}$, where the series does its work, this reading is the **series convention**, used by the Klein–Gordon article, the Dirac article, the dedicated article *The Biquaternion D'Alembertian and Its Green's Functions*, and the great majority of the series. **The $i r'_t$ substitution is a statement about the coordinates, not about the operator**: the operator is $\Box=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, and its signs are the signs of the material coordinates it differentiates. No second reading is written, and no article of the series defines a second d'Alembertian.
 
 ### The Laplacian Is the Only Delta
 
-**One letter, one operator.** $\Delta$ is the spatial Laplacian and nothing else: $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$ in the algebra, $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ on the material part, $\Delta_\Psi=\sum_\eta\partial^2/\partial {h'_\eta}^2$ on the informational one, $\Delta_E$ or $\Delta_{w\bar w}$ in a chart whose space coordinates are $\tau$ or $w$. The subscript names the chart and never the object. **No other object of the series wears the letter**, and no article of the series introduces one: a symbol that has two readings has no reading, because the eye cannot separate an operator from an increment and a subscript cannot rescue a letter whose meaning is already lost.
+**One letter, one operator.** $\Delta$ is the spatial Laplacian and nothing else: $\Delta_Q=\sum_\eta\partial^2/\partial R_\eta^2$ in the algebra, $\Delta_\Phi=\sum_\eta\partial^2/\partial r_\eta^2$ on the material part, $\Delta_E$ or $\Delta_{w\bar w}$ in a chart whose space coordinates are $\tau$ or $w$. The subscript names the chart and never the object. **No other object of the series wears the letter**, and no article of the series introduces one: a symbol that has two readings has no reading, because the eye cannot separate an operator from an increment and a subscript cannot rescue a letter whose meaning is already lost.
 
 **A difference is $\delta$.** An increment, an uncertainty, a spin fraction, a free-energy change, an action difference: $\delta u$, $\delta S$, $\delta E$, $\delta r'_t$, $\delta p$, $\delta\omega$. The capital is left for the operator, and the stroke is the whole of the difference between an operator and a difference of two values.
 
@@ -444,13 +386,7 @@ $$
 \tilde\nabla_\Phi\tilde Q_{\mathrm f}^{*}=\Bigl(-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}+\vec\nabla_\Phi\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t+i\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial r'_t}+\vec\nabla_\Phi\bar Q_{\mathrm{f}t}-\vec\nabla_\Phi\times\overline{\vec Q_{\mathrm f}} .
 $$
 
-Two signs have moved relative to the plain product, and both for one reason: the conjugation reversed the sign of the vector part of the field before any derivative met it, so the vector term of the scalar slot carries a plus, and the time derivative of the vector slot carries a plus as well. **On the informational part $\tilde\nabla_\Psi$** the same product is read with $\partial/\partial R_t=\partial/\partial h_t$ and $-i$ on the three space derivatives:
-
-$$
-\tilde\nabla_\Psi\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial\bar Q_{\mathrm{f}t}}{\partial h_t}-i\,\vec\nabla_\Psi\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial h_t}-i\,\vec\nabla_\Psi\bar Q_{\mathrm{f}t}+i\,\vec\nabla_\Psi\times\overline{\vec Q_{\mathrm f}} .
-$$
-
-The pair of sector lines is what makes the Hermitian product usable, because its scalar slot is the one that survives the conjugate transpose: the two readings are two ways of writing one density, the material one with an imaginary time derivative and a real divergence, the informational one with a real time derivative and an imaginary divergence.
+Two signs have moved relative to the plain product, and both for one reason: the conjugation reversed the sign of the vector part of the field before any derivative met it, so the vector term of the scalar slot carries a plus, and the time derivative of the vector slot carries a plus as well. The display is what makes the Hermitian product usable, because its scalar slot is the one that survives the conjugate transpose: the material reading carries an imaginary time derivative and a real divergence.
 
 **The symmetric and antisymmetric parts.** Under the conjugate transpose the half-sum is central and is the Hermitian form itself,
 
@@ -482,9 +418,7 @@ $$
 \mathcal L_{\mathrm{kin}}=-\mathrm{Sc}\bigl[(\tilde\nabla^{\natural}\tilde{Ξ}^{*})(\tilde\nabla\tilde{Ξ})\bigr]=\Bigl|\frac{\partial\xi_{\mathrm{scl}}}{\partial r'_t}\Bigr|^2-\lvert\vec\nabla_\Phi\xi_{\mathrm{scl}}\rvert^2 ,
 $$
 
-**On the informational part $\tilde\nabla_\Psi$** the sum runs over the same four terms with the other factors, and since the time factor is real and each of the three space factors is $-i$, the time slot contributes $+1$ and the three space slots $-1$; the scalar part is then $\lvert\partial\xi_{\mathrm{scl}}/\partial h_t\rvert^2-\lvert\vec\nabla_\Psi\xi_{\mathrm{scl}}\rvert^2$ and the kinetic term is its negative, $-\lvert\partial\xi_{\mathrm{scl}}/\partial h_t\rvert^2+\lvert\vec\nabla_\Psi\xi_{\mathrm{scl}}\rvert^2$. The overall sign belongs to the operator and not to the density, and an article that writes a Lagrangian on $\mathbb{B}_{\Psi}$ fixes the sign of its own action there, exactly as the Klein–Gordon article fixes it on $\mathbb{B}_{\Phi}$; what no article may do is take the density from one sector and the operator from the other.
-
-the kinetic density of the Klein–Gordon article (*Hamiltonian Field Theory in Biquaternionic Form*). **On the material part $\tilde\nabla_\Phi$** the form itself is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}+\vec\nabla_\Phi\cdot\overline{\vec Q_{\mathrm f}}$, a real divergence beside an imaginary time derivative. **On the informational part $\tilde\nabla_\Psi$** it is $\frac{\partial\bar Q_{\mathrm{f}t}}{\partial h_t}-i\,\vec\nabla_\Psi\cdot\overline{\vec Q_{\mathrm f}}$, an imaginary divergence beside a real time derivative. The Hermitian form and the plain form agree on $\mathbb{B}_{\Phi}$ up to the sign of the divergence, which is the sign that separates the two products; on $\mathbb{B}_{\Psi}$ they agree up to that same sign, and a reader who has the two sector lines of §*The Gradient* passes between them without a further convention.
+the kinetic density of the Klein–Gordon article (*Hamiltonian Field Theory in Biquaternionic Form*). **On the material part $\tilde\nabla_\Phi$** the form itself is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}+\vec\nabla_\Phi\cdot\overline{\vec Q_{\mathrm f}}$, a real divergence beside an imaginary time derivative. The Hermitian form and the plain form agree on $\mathbb{B}_{\Phi}$ up to the sign of the divergence, which is the sign that separates the two products.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments. By §*The Gradient*, $\tilde\nabla^{*}=\tilde\nabla^{\natural}$, and
 
@@ -492,7 +426,7 @@ $$
 \langle\tilde\nabla,\tilde\nabla\rangle_{*}=\langle\tilde\nabla\rangle_{*}=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{*})=\mathrm{Sc}(\tilde\nabla\tilde\nabla^{\natural})=\sum_{\mu\in\{t,x,y,z\}}\frac{\partial^2}{\partial R_\mu^2}=\frac{\partial^2}{\partial R_t^2}+\Delta_Q=\Box ,
 $$
 
-so the Hermitian norm of the gradient is the d'Alembertian, the same operator as its quaternionic bilinear norm. The **Hermitian form is the one positive-definite form of the four**, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^2$ on the elements, and its square root is the topological norm $\lVert\tilde Q\rVert$; positivity is a property of the elements, the norm of this subsection being the operator $\Box$. **On the material part $\tilde\nabla_\Phi$** it is the same operator, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, with the spatial Laplacian positive and the time term negative. **On the informational part $\tilde\nabla_\Psi$** it is the same operator again, $\Box_\Psi=\partial^2/\partial h_t^2-\Delta_\Psi$, with the time term positive and the primed Laplacian negative, and the two lines are negatives of each other because the two parts keep complementary halves of the eight parameters. Positivity is untouched by that sign: the form is positive on the elements in either reading, and what changes is the operator's own sign and not the form's.
+so the Hermitian norm of the gradient is the d'Alembertian, the same operator as its quaternionic bilinear norm. The **Hermitian form is the one positive-definite form of the four**, $\langle\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^2$ on the elements, and its square root is the topological norm $\lVert\tilde Q\rVert$; positivity is a property of the elements, the norm of this subsection being the operator $\Box$. **On the material part $\tilde\nabla_\Phi$** it is the same operator, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, with the spatial Laplacian positive and the time term negative. Positivity is untouched by the sign pattern: the form is positive on the elements, and what changes is the operator's own sign and not the form's.
 
 ### The Krein Product, Its Form and Its Norm
 
@@ -508,13 +442,7 @@ $$
 (\tilde\nabla_\Phi)^{\natural}\tilde Q_{\mathrm f}^{*}=\Bigl(-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}-\vec\nabla_\Phi\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t+i\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial r'_t}-\vec\nabla_\Phi\bar Q_{\mathrm{f}t}+\vec\nabla_\Phi\times\overline{\vec Q_{\mathrm f}} ,
 $$
 
-with the divergence and the gradient carrying a minus where the Hermitian product carries a plus. **On the informational part $(\tilde\nabla_\Psi)^{\natural}$** the same product is read with $\partial/\partial R_t=\partial/\partial h_t$ and $-i$ on the three space derivatives:
-
-$$
-(\tilde\nabla_\Psi)^{\natural}\tilde Q_{\mathrm f}^{*}=\Bigl(\frac{\partial\bar Q_{\mathrm{f}t}}{\partial h_t}+i\,\vec\nabla_\Psi\cdot\overline{\vec Q_{\mathrm f}}\Bigr)e_t-\frac{\partial\overline{\vec Q_{\mathrm f}}}{\partial h_t}+i\,\vec\nabla_\Psi\bar Q_{\mathrm{f}t}-i\,\vec\nabla_\Psi\times\overline{\vec Q_{\mathrm f}} ,
-$$
-
-the signs of the three space terms turning over once more, since the conjugate already carries $\varepsilon$ and the coefficient carries $-i$. The pair is the exact companion of the quaternionic pair of §*The Quaternionic Bilinear Product, Its Form and Its Norm*: the two bilinear products have companions with the conjugated field, the four lines are the four products on the two slices, and no line requires a convention beyond the four factors of §*The Gradient*.
+with the divergence and the gradient carrying a minus where the Hermitian product carries a plus, the signs of the three space terms turning over once more, since the conjugate already carries $\varepsilon$ and the coefficient carries $-i$. The pair is the exact companion of the quaternionic pair of §*The Quaternionic Bilinear Product, Its Form and Its Norm*: the two bilinear products have companions with the conjugated field, the four lines are the four products on the two slices, and no line requires a convention beyond the four factors of §*The Gradient*.
 
 **The symmetric and antisymmetric parts.** Under the conjugate transpose the half-sum is
 
@@ -536,7 +464,7 @@ $$
 \langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural*}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde Q_{\mathrm f}^{*})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial}{\partial R_\mu}\bar Q_{\mathrm{f}\mu}=\frac{\partial}{\partial R_t}\bar Q_{\mathrm{f}t}-\vec\nabla\cdot\overline{\vec Q_{\mathrm f}} ,
 $$
 
-a scalar, the **contraction** of the conjugate derivative with the conjugated field in the $i r'_t$ coordinate. **On the material part $(\tilde\nabla_\Phi)^{\natural}$** it is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}-\vec\nabla_\Phi\cdot\overline{\vec Q_{\mathrm f}}$, the divergence with a minus as in the plain form. **On the informational part $(\tilde\nabla_\Psi)^{\natural}$** it is $\frac{\partial\bar Q_{\mathrm{f}t}}{\partial h_t}+i\,\vec\nabla_\Psi\cdot\overline{\vec Q_{\mathrm f}}$, the divergence back with a plus, because the conjugate derivative has already applied $\varepsilon$ and the substitution has applied $-i$ three times; that double application is the whole difference between the Krein form and the Hermitian form on either slice, and it is why the two coincide on the elements only once the signs are taken into account.
+a scalar, the **contraction** of the conjugate derivative with the conjugated field in the $i r'_t$ coordinate. **On the material part $(\tilde\nabla_\Phi)^{\natural}$** it is $-i\frac{\partial\bar Q_{\mathrm{f}t}}{\partial r'_t}-\vec\nabla_\Phi\cdot\overline{\vec Q_{\mathrm f}}$, the divergence with a minus as in the plain form. That double application is the whole difference between the Krein form and the Hermitian form, and it is why the two coincide on the elements only once the signs are taken into account.
 
 **The norm.** The norm is defined with the form, as that form at its two equal arguments; on the gradient, since $\tilde\nabla^{*}=\tilde\nabla^{\natural}$ (§*The Gradient*),
 
@@ -544,7 +472,7 @@ $$
 \langle\tilde\nabla,\tilde\nabla\rangle_{\natural*}=\langle\tilde\nabla\rangle_{\natural*}=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla^{*})=\mathrm{Sc}(\tilde\nabla^{\natural}\tilde\nabla^{\natural})=\sum_{\mu\in\{t,x,y,z\}}\varepsilon_\mu\frac{\partial^2}{\partial R_\mu^2}=\frac{\partial^2}{\partial R_t^2}-\Delta_Q ,
 $$
 
-so the Krein norm of the gradient **coincides with the plain bilinear norm**. It is the indefinite partner of the Hermitian form, and on the elements it is the form of inertia $(1,3)$ whose diagonal is $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$: Hermitian, and negative on a nonzero element, so it carries no positivity. It is the form of the indefinite theory — the Krein space — and not of the contractions of these subsections. **On the material part $(\tilde\nabla_\Phi)^{\natural}$** it is $-\frac{\partial^2}{\partial {r'_{t}}^2}-\Delta_\Phi$, both terms negative. **On the informational part $(\tilde\nabla_\Psi)^{\natural}$** it is $\frac{\partial^2}{\partial h_t^2}+\Delta_\Psi$, both terms positive, and the Krein norm there is again the plain bilinear norm and not the d'Alembertian: the two norms agree with each other on both slices, and both differ from $\Box$ by one overall sign, which is the sign separating the indefinite pair from the definite one.
+so the Krein norm of the gradient **coincides with the plain bilinear norm**. It is the indefinite partner of the Hermitian form, and on the elements it is the form of inertia $(1,3)$ whose diagonal is $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$: Hermitian, and negative on a nonzero element, so it carries no positivity. It is the form of the indefinite theory — the Krein space — and not of the contractions of these subsections. **On the material part $(\tilde\nabla_\Phi)^{\natural}$** it is $-\frac{\partial^2}{\partial {r'_{t}}^2}-\Delta_\Phi$, both terms negative. The two norms agree with each other, and both differ from $\Box$ by one overall sign, which is the sign separating the indefinite pair from the definite one.
 
 **A contraction is a form, never an index.** The series has one metric, the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, and it is the identity, so no index is raised and none is lowered: a raised index would be the same index. What the product carries is the plain weight $\varepsilon$, and the weight is not a metric. Where a text with covariant indices contracts a derivative with a field through a raised and a lowered index, the series writes the quaternionic form $\langle\tilde\nabla,\tilde Q_{\mathrm f}\rangle_{\natural}$; where it contracts two derivatives, the series writes the quaternionic norm $\langle\tilde\nabla\rangle_{\natural}=\Box$; and where it moves an index through a metric, the series writes the element $\tilde Q_{\mathrm f}$ itself, the weight being the sign vector inside the product. The four-index alternating symbol is not an index carrier: it is the orientation density, written all-low, $\epsilon_{0123}=+1$, and its height carries no sign. Its rank distinguishes it from the sign vector of the same letter.
 
@@ -570,19 +498,15 @@ $$
 
 The label is written **before** the conjugation, in the order the operator is built: the family first, the involution second. The conjugate is not a second operator; it is the same sum with $\natural$ read on the invertibles, and its coefficients are the same scalars.
 
-**On the material part $\tilde\nabla_{\mathrm{gco},\Phi}$** the covariant coefficients are read with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, which is the slice the definition $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{i\,ϙ}{\hbar}A_\mu$ is written in, so no bar is needed on $A_\mu$:
+**The operator is written on the material coordinates.** The covariant coefficients are read with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, which is the substitution of $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{i\,ϙ}{\hbar}A_\mu$, so no bar is needed on $A_\mu$:
 
 $$
 \tilde\nabla_{\mathrm{gco},\Phi}=e_t\Bigl(-i\frac{\partial}{\partial r'_t}+\frac{i\,ϙ}{\hbar}A_t\Bigr)+\sum_\eta\vec e_\eta\Bigl(\frac{\partial}{\partial r_\eta}+\frac{i\,ϙ}{\hbar}A_\eta\Bigr),
 $$
 
-and the connection enters with a plus on every slot. **On the informational part $\tilde\nabla_{\mathrm{gco},\Psi}$** the same coefficients are read with $\partial/\partial R_t=\partial/\partial h_t$ and $\partial/\partial R_\eta=-i\,\partial/\partial h'_\eta$, so
+and the connection enters with a plus on every slot.
 
-$$
-\tilde\nabla_{\mathrm{gco},\Psi}=e_t\Bigl(\frac{\partial}{\partial h_t}+\frac{i\,ϙ}{\hbar}A_t\Bigr)+\sum_\eta\vec e_\eta\Bigl(-i\frac{\partial}{\partial h'_\eta}+\frac{i\,ϙ}{\hbar}A_\eta\Bigr).
-$$
-
-**The connection is a value and the derivative is the factor.** The substitution of §*The Gradient* replaces the derivative term of each coefficient and leaves $A_\mu$ exactly as it stands, because $A_\mu$ is a component of a field and carries no derivative; a slice is a statement about the coordinates, and the connection does not know which slice the derivative beside it is read on. That is why the two displays differ in their derivative terms and agree in their connection terms, and it is the check to apply to any covariant formula of the series: the substitution acts on the $\partial$ and never on the $A$.
+**The connection is a value and the derivative is the factor.** The substitution of §*The Gradient* replaces the derivative term of each coefficient and leaves $A_\mu$ exactly as it stands, because $A_\mu$ is a component of a field and carries no derivative; a slice is a statement about the coordinates, and the connection does not know which slice the derivative beside it is read on. That is the check to apply to any covariant formula of the series: the substitution acts on the $\partial$ and never on the $A$.
 
 **The side.** Both members act from the left. The position of the operator names the side, as it does for every field of the series, and no glyph names it: a right action on $\tilde{Ξ}$ is the left action of $\tilde\nabla_{\mathrm{gco}}^{\natural}$ on $\tilde{Ξ}^{\natural}$, by the exchange of §*The Two Sides and the Renaming Theorem*.
 
@@ -646,9 +570,9 @@ $$
 
 and substitution returns $i\delta$ in each line, because the cross terms cancel and $\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\Box$ with $k_m$ central. The inverse introduces no new object.
 
-**Marks.** There is no glyph for the two equations and no subscript for a sector or a chart. A subscript on a kernel names the part it carries, $S_L$ and $S_R$. The gradient keeps its own rule: $\tilde\nabla$ bare when it means the operator on all eight coordinates, and a part subscript, $\tilde\nabla_\Phi$ or $\tilde\nabla_\Psi$, wherever one part's coefficients are meant.
+**Marks.** There is no glyph for the two equations and no subscript for a sector or a chart. A subscript on a kernel names the part it carries, $S_L$ and $S_R$. The gradient keeps its own rule: $\tilde\nabla_\Phi$ where the sector is named, bare $\tilde\nabla$ where it is not, and $\natural$ for the conjugate. No derivative of the corpus carries $\Psi$.
 
-**The two equations are sector-free.** On $\mathbb{B}_{\Phi}$ and on $\mathbb{B}_{\Psi}$ the equations are the same and only the four derivatives change, $\partial/\partial R_t=-i\,\partial/\partial r'_t$ against $\partial/\partial R_t=\partial/\partial h_t$. The second-order operator follows the d'Alembertian of §*The Quaternionic Bilinear Product, Its Form and Its Norm*: $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$ on the material part and $\partial^2/\partial h_t^2-\Delta_\Psi$ on the informational one, and a reader who moves the two equations from one sector to the other changes one overall sign and no equation.
+**The equations are material.** The two lines are written with $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, and the corpus writes no informational twin of them: there is no second gradient, and no derivative on $h_t$ or on $h'_\eta$ anywhere in the series. The second-order operator is the d'Alembertian of §*The Quaternionic Bilinear Product, Its Form and Its Norm*, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$.
 
 ## The Transposition of the Gradient
 
@@ -728,9 +652,9 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 An operator whose letter is the letter of an element is that element: the tilde and the arrow are read on it as on the element, and no mark says operator. The named operators are left and right multiplication, the two-sided operator and the inner derivation. The side of an action is position, $D\tilde{Ξ}$ against $\tilde{Ξ} D$; the two are exchanged by the quaternion conjugation, $(\tilde{Ξ} D)^{\natural}=D^{\natural}\tilde{Ξ}^{\natural}$, so a right action on a field is a left action on the conjugate field, and no glyph marks a side. The superscript $R$ marks the right derivative, the one case the exchange does not reach, and on the gradient even that case is a conjugation: $\tilde Q_1\overleftarrow{\tilde\nabla}=\bigl(\tilde\nabla^{\natural}\tilde Q_1^{\natural}\bigr)^{\natural}$, so a right action is the left action of the conjugate gradient on the conjugate field, and the identity needs no equation. The dagger is the general adjoint of an operator and not a fifth conjugation, and it adds to the element's mark rather than replacing it. A Kraus operator is an element, not an array. The Fock operator is the one operator that is not an element, and its superscript is fixed with the other tokens.
 
-A subscript is a component or a label, never a derivative; every partial derivative is written with $\partial$ and its variable. A caret is a power and never a label: every label, coordinate, component, basis vector, frame basis operator and sign symbol is written low, and a contraction is a form with the sign vector. The coordinate derivative is unhalved, $\partial/\partial R_\mu=\bigl(\partial/\partial r_\mu-i\,\partial/\partial r'_\mu\bigr)$, and a part keeps one of its two halves. A gradient read on one part always carries that part's subscript and never stands bare: $\tilde\nabla_\Phi$ on the material part, $\tilde\nabla_\Psi$ on the informational one, and $(\tilde\nabla_\Phi)^{\natural}$, $(\tilde\nabla_\Psi)^{\natural}$ for the conjugate. A bare $\tilde\nabla$ means the operator on all eight coordinates, and it is the only symbol that may appear without a part subscript. The gradient is $\tilde\nabla$, not pure. It splits into two parts, the projections $\tfrac12(\tilde\nabla\mp\tilde\nabla^{*})$: by slot into a Hermitian temporal term and an anti-Hermitian spatial sum, and in the eight real coordinates into the four informational coordinates and the four material ones, so the split by part is the split by coordinate. The two parts are $\tilde\nabla_\Phi=-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$, anti-Hermitian, and $\tilde\nabla_\Psi=e_t\partial_{h_t}-i\sum_\eta\vec e_\eta\partial_{h'_\eta}$, Hermitian, with $\tilde\nabla=\tilde\nabla_\Phi+\tilde\nabla_\Psi$. The subscript is the only mark, and the same holds for the variable, $\tilde R=\tilde R_\Phi+\tilde H_\Psi$ with $\tilde R_\Phi=i r'_t e_t+\sum_\eta\vec e_\eta r_\eta$ and $\tilde H_\Psi=h_t e_t+i\sum_\eta\vec e_\eta h'_\eta$. The d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, read on the material part as $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, and every article uses this one operator with the mass equation $(\Box-k_m^{2})\tilde{Ξ}=0$, where $k_m^{2}$ is written $k_m^{2}$ with $k_m=mc/\hbar$. The gauge-covariant gradient is the same sum with the coefficient replaced, $\tilde\nabla_{\mathrm{gco}}=\sum_\mu  e_\mu\tilde\nabla_{\mathrm{gco},\mu}=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$, and it carries a label rather than a letter of its own.
+A subscript is a component or a label, never a derivative; every partial derivative is written with $\partial$ and its variable. A caret is a power and never a label: every label, coordinate, component, basis vector, frame basis operator and sign symbol is written low, and a contraction is a form with the sign vector. The coordinate derivative is unhalved, $\partial/\partial R_\mu=\bigl(\partial/\partial r_\mu-i\,\partial/\partial r'_\mu\bigr)$, and a part keeps one of its two halves. A gradient read on the material part always carries that part's subscript and never stands bare: $\tilde\nabla_\Phi$, and $(\tilde\nabla_\Phi)^{\natural}$ for the conjugate. A bare $\tilde\nabla$ means the operator on all eight coordinates, and it is the only symbol that may appear without a part subscript. The gradient is $\tilde\nabla$, not pure. It splits into two parts, the projections $\tfrac12(\tilde\nabla\mp\tilde\nabla^{*})$: by slot into a Hermitian temporal term and an anti-Hermitian spatial sum, and in the eight real coordinates into the four informational coordinates and the four material ones, so the split by part is the split by coordinate. The part that keeps the material coordinates is $\tilde\nabla_\Phi=-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$, anti-Hermitian; the informational half of the sum takes no glyph of its own and is read from the coefficients. The subscript is the only mark, and the same holds for the variable, $\tilde R=\tilde R_\Phi+\tilde H_\Psi$ with $\tilde R_\Phi=i r'_t e_t+\sum_\eta\vec e_\eta r_\eta$ and $\tilde H_\Psi=h_t e_t+i\sum_\eta\vec e_\eta h'_\eta$. The d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\tilde\nabla^{\natural}\tilde\nabla=\partial^2/\partial R_t^2+\Delta_Q$, read on the material part as $\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$, and every article uses this one operator with the mass equation $(\Box-k_m^{2})\tilde{Ξ}=0$, where $k_m^{2}$ is written $k_m^{2}$ with $k_m=mc/\hbar$. The gauge-covariant gradient is the same sum with the coefficient replaced, $\tilde\nabla_{\mathrm{gco}}=\sum_\mu  e_\mu\tilde\nabla_{\mathrm{gco},\mu}=\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$, and it carries a label rather than a letter of its own.
 
-The gradient and its conjugate act on two chiral parts, and the series writes the dynamics as two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, of §*The Two First-Order Equations and Their Symbol*. The pair operator $\mathbb{D}$ is not allowed: it hides the adjoint, the metric and the signs, and its square is $\Box$ on each part only after composing the two lines. A subscript names a part and not a slice: $\tilde\nabla_\Phi$ is the anti-Hermitian part, which keeps the imaginary time and the real space numbers, and $\tilde\nabla_\Psi$ the Hermitian part, which keeps the real time and the imaginary space numbers, with $\tilde\nabla=\tilde\nabla_\Phi+\tilde\nabla_\Psi$ (*The Gradient*).
+The gradient and its conjugate act on two chiral parts, and the series writes the dynamics as two equations, $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, of §*The Two First-Order Equations and Their Symbol*. The pair operator $\mathbb{D}$ is not allowed: it hides the adjoint, the metric and the signs, and its square is $\Box$ on each part only after composing the two lines. A subscript names a part and not a slice: $\tilde\nabla_\Phi$ is the anti-Hermitian part, which keeps the imaginary time and the real space numbers (*The Gradient*).
 
 One letter is reserved: $\Delta$ is the spatial Laplacian in every article, a subscript on it names the chart and never the object, a difference is $\delta$, and a named object takes a calligraphic letter with a subscript that spells it. The rule is stated in §*The Laplacian Is the Only Delta*, and it is counted in *The D'Alembertian and the Laplacian: A Census of Two Unmarked Glyphs*.
 
@@ -747,14 +671,13 @@ The four forms remain four distinct conventions and the norms two, because each 
 | $^{\dagger}$ | The general adjoint of an operator; $(L_a)^{\dagger}=L_{a^{*}}$ |
 | $\partial/\partial R_\mu$ | The unhalved coordinate derivative, $\bigl(\partial/\partial r_\mu-i\,\partial/\partial r'_\mu\bigr)$; a display writing $\partial/\partial Q_\mu$ names the same slot |
 | $\tilde\nabla$ | The biquaternionic gradient, four components, not pure |
-| $\tfrac12\bigl(\tilde\nabla\pm\tilde\nabla^{*}\bigr)$ | The two parts of the gradient, the projections $X\mapsto\tfrac12(X\pm X^{*})$ with the star read on the units at fixed coordinate. By slot: $e_t\partial/\partial R_t$ and $\sum_\eta\vec e_\eta\partial/\partial R_\eta$. In the eight real coordinates: the Hermitian part $e_t\partial_{h_t}-i\sum_\eta\vec e_\eta\partial_{h'_\eta}$ on $h_t,h'_x,h'_y,h'_z$, and the anti-Hermitian part $-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$ on $r'_t,r_x,r_y,r_z$; the two are the gradients of the informational and the material slice, so a slice keeps one part |
+| $\tfrac12\bigl(\tilde\nabla-\tilde\nabla^{*}\bigr)$ | The projection $X\mapsto\tfrac12(X-X^{*})$ with the star read on the units at fixed coordinate; on the gradient it gives the material part $-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$ on $r'_t,r_x,r_y,r_z$ |
 | $\tilde\nabla_{\mathrm{gco}}$ | The gauge-covariant gradient, $\tilde\nabla+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$; its component $\tilde\nabla_{\mathrm{gco},\mu}=\partial/\partial R_\mu+\frac{i\,ϙ}{\hbar}A_\mu$, its conjugate $\tilde\nabla_{\mathrm{gco}}^{\natural}$ |
 | $\Box$ | The d'Alembertian, $\tilde\nabla\tilde\nabla^{\natural}=\partial^2/\partial R_t^2+\Delta_Q$ |
 | $\Delta$ | The spatial Laplacian, $\sum_\eta\partial^2/\partial Q_\eta^2$, and nothing else; a difference is $\delta$, and a named object takes a calligraphic letter, as in §*The Laplacian Is the Only Delta* |
 | $\tilde R$ | The variable, $\sum_\mu R_\mu e_\mu$ with $R_\mu=r_\mu+i r'_\mu$; its two parts are $\tilde R_\Phi=i r'_t e_t+\sum_\eta\vec e_\eta r_\eta$ and $\tilde H_\Psi=h_t e_t+i\sum_\eta\vec e_\eta h'_\eta$, with $\tilde R=\tilde R_\Phi+\tilde H_\Psi$ and no bar in either |
 | $\tilde\nabla_{\Phi}$, $(\tilde\nabla_\Phi)^{\natural}$ | The gradient and its conjugate in the material part, $\tilde\nabla_{\Phi}=-i\,e_t\partial_{r'_t}+\sum_\eta\vec e_\eta\partial_{r_\eta}$ and $(\tilde\nabla_\Phi)^{\natural}=-i\,e_t\partial_{r'_t}-\sum_\eta\vec e_\eta\partial_{r_\eta}$, with the tuples $(-i,1,1,1)$ and $(-i,-1,-1,-1)$ on $r'_t$ and $r_\eta$; both anti-Hermitian |
-| $\tilde\nabla_{\Psi}$, $(\tilde\nabla_\Psi)^{\natural}$ | The gradient and its conjugate in the informational part, $\tilde\nabla_{\Psi}=e_t\partial_{h_t}-i\sum_\eta\vec e_\eta\partial_{h'_\eta}$ and $(\tilde\nabla_\Psi)^{\natural}=e_t\partial_{h_t}+i\sum_\eta\vec e_\eta\partial_{h'_\eta}$, Hermitian in their coefficients |
-| $\Delta_{\Phi}$, $\Delta_{\Psi}$, $\Box_\Phi$, $\Box_{\Psi}$ | The spatial gradients, the spatial Laplacians and the d'Alembertians of the two parts, $\vec\nabla_{\Phi}=\sum_\eta\vec e_\eta\partial_{r_\eta}$, $\vec\nabla_{\Psi}=\sum_\eta\vec e_\eta\partial_{h'_\eta}$, $\Box_\Phi=\Delta_{\Phi}-\partial^2/\partial {r'_t}^2$ and $\Box_{\Psi}=\partial^2/\partial h_t^2-\Delta_{\Psi}$ |
+| $\Delta_{\Phi}$, $\Box_\Phi$ | The spatial gradient, the spatial Laplacian and the d'Alembertian of the material part, $\vec\nabla_{\Phi}=\sum_\eta\vec e_\eta\partial_{r_\eta}$ and $\Box_\Phi=\Delta_{\Phi}-\partial^2/\partial {r'_t}^2$ |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; a quotient pairing $\hbar$ with a mass, in either order, is $1/k_m$ or its reciprocal $k_m$, so the mass equation reads $(\Box-k_m^{2})\tilde{Ξ}=0$ |
 | $^{\natural}$ | The quaternion conjugation, $a^{\natural}=(a_0,-a_1,-a_2,-a_3)$; an anti-automorphism, $(ab)^{\natural}=b^{\natural}a^{\natural}$ |
 | $(\tilde{Ξ} D)^{\natural}=D^{\natural}\tilde{Ξ}^{\natural}$ | The exchange of the two sides: a right action on $\tilde{Ξ}$ is a left action on $\tilde{Ξ}^{\natural}$ |

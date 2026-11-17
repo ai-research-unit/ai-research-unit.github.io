@@ -52,16 +52,16 @@ where $r_>$ is the larger and $r_<$ the smaller of $r$ and $r_2$, and $P_l$ is t
 Inserting the Legendre expansion and using the addition theorem for spherical harmonics gives the **spherical multipole expansion**
 
 $$
-\boxed{\;Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{m=-l}^{l} \mathcal{Q}_{lm}\,Y_{lm}(\theta,\theta_{\mathrm{azm}})\;},
+\boxed{\;Ξ(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{1}{4\pi\epsilon_0}\sum_{l=0}^{\infty}\frac{4\pi}{2l+1}\,\frac{1}{r^{l+1}}\sum_{n_{\mathrm{mag}}=-l}^{l} \mathcal{Q}_{l\,n_{\mathrm{mag}}}\,Y_{l\,n_{\mathrm{mag}}}(\theta,\theta_{\mathrm{azm}})\;},
 $$
 
 with the **spherical multipole moments**
 
 $$
-\mathcal{Q}_{lm} = \int \rho(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,r_2^{\,l}\,Y_{lm}^{*}(\theta_2,\theta_{\mathrm{azm},2})\,d^3r_2 .
+\mathcal{Q}_{l\,n_{\mathrm{mag}}} = \int \rho(r_{2x}\,\vec e_x+r_{2y}\,\vec e_y+r_{2z}\,\vec e_z)\,r_2^{\,l}\,Y_{l\,n_{\mathrm{mag}}}^{*}(\theta_2,\theta_{\mathrm{azm},2})\,d^3r_2 .
 $$
 
-The angular integration is over the source, and the moments $\mathcal{Q}_{lm}$ depend only on the source, not on the field point. Each order $l$ contributes $2l+1$ moments, transforming among themselves under a rotation of the coordinate frame as the representation $D^{(l)}$.
+The angular integration is over the source, and the moments $\mathcal{Q}_{l\,n_{\mathrm{mag}}}$ depend only on the source, not on the field point. Each order $l$ contributes $2l+1$ moments, transforming among themselves under a rotation of the coordinate frame as the representation $D^{(l)}$.
 
 ### The First Three Moments
 
@@ -125,7 +125,7 @@ $$
 L^2(S^2) = \bigoplus_{l=0}^{\infty} D^{(l)} ,
 $$
 
-in which each $D^{(l)}$ occurs exactly once; the spherical harmonic $Y_{lm}$ is its weight-$m$ basis vector, the eigenfunction of the rotation about the polar axis with eigenvalue $m$. The multipole expansion is therefore the decomposition of the field's angular dependence into irreducible rotation representations, and the order $l$ is the angular momentum carried by that angular dependence.
+in which each $D^{(l)}$ occurs exactly once; the spherical harmonic $Y_{l\,n_{\mathrm{mag}}}$ is its weight-$m$ basis vector, the eigenfunction of the rotation about the polar axis with eigenvalue $m$. The multipole expansion is therefore the decomposition of the field's angular dependence into irreducible rotation representations, and the order $l$ is the angular momentum carried by that angular dependence.
 
 Two comments fix the interpretation. First, the tower is infinite because the space of functions on the sphere is **infinite-dimensional**: a function on $S^2$ has arbitrarily fine angular structure, and each finer scale is one more $D^{(l)}$. Second, the tower is a property of the **field**, which is a function of position; it is not a property of the algebra of values the field takes. That distinction becomes the whole content of the closing article, and it is already visible here.
 
@@ -371,10 +371,10 @@ The multipole tower is infinite because the angular structure of a field on the 
 | $\mathrm{Sc}(\cdot)$ | Scalar (central) part |
 | $Ξ$, $Ξ_{ext}$ | Scalar potential of the source, and an external potential; $Ξ_{mon}, Ξ_{dip}, Ξ_{quad}$ its multipole parts |
 | $\rho$ | Charge density, the corpus convention for the bare $\rho$ |
-| $\mathcal{Q}_{lm}, ϙ, \vec p, \mathcal{Q}_{ij}$ | Spherical, monopole, dipole and quadrupole moments |
+| $\mathcal{Q}_{l\,n_{\mathrm{mag}}}, ϙ, \vec p, \mathcal{Q}_{ij}$ | Spherical, monopole, dipole and quadrupole moments |
 | $D^{(l)}$ | Irreducible rotation representation of dimension $2l+1$ (Wigner's $D$) |
 | $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$ | Symmetric traceless square of the vector part |
-| $Y_{lm}, P_l$ | Spherical harmonics and Legendre polynomials |
+| $Y_{l\,n_{\mathrm{mag}}}, P_l$ | Spherical harmonics and Legendre polynomials |
 
 ## Further Reading
 

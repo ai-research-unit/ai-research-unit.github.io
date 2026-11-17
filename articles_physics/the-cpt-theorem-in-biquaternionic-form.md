@@ -27,7 +27,7 @@ $$
 
 two first-order equations, one per member, with massless limit $\tilde\nabla_\Phi\tilde{Ξ}_{R}=0$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=0$. The two members are the two entries of the pair, each an element of $\mathbb{B}$, and the sum is the shorthand by which the two members are written on one symbol. They are **not** the two chiral projections of one element, and the reason is a one-line count: the gradient is a left multiplication with derivative coefficients, every left multiplication commutes with every right multiplication, so $\tilde\nabla_\Phi$ preserves every eigenspace of every right multiplication; an equation between two members lying in two different eigenspaces of the same right multiplication would read $0=m\times(\text{nonzero})$. The chiral-halves reading belongs to the basis operator formulation, where a two-sided basis operator could exchange the two lines, and it is exactly what the migration costs. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
 
-The two lines are the dynamics, and they are written as two lines. No letter gathers the two members into one object: the pair operator is retired, because its adjoint is a single sign and cannot hold an anti-Hermitian derivative next to a Hermitian mass, because its metric is chosen silently and never written, and because its square reports one scalar for two members.
+The two lines are the dynamics, and they are written as two lines. No letter gathers the two members into one object: a single glyph cannot hold an anti-Hermitian derivative next to a Hermitian mass, its adjoint would be a single sign, its metric would be chosen silently and never written, and its square would report one scalar for two members.
 
 The pair cannot be shortened to one equation on one member, because the square of the gradient is not scalar: $e_t$ commutes with the spatial units and the mixed derivatives add,
 $$
@@ -88,7 +88,7 @@ $$
 \qquad
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R},
 $$
-and nothing else is meant by a paired operator in this article. Each line is first order, and the second-order form is obtained by composing the two, since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ are both the same scalar. The glyph the corpus once wrote for the two lines is retired: it carried no matrix generator and no chart, its only content was which gradient acted on which member, and it hid the adjoint and the metric that the two lines show.
+and nothing else is meant by a paired operator in this article. Each line is first order, and the second-order form is obtained by composing the two, since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ are both the same scalar. No glyph gathers the two lines: it would carry no matrix generator and no chart, its only content would be which gradient acted on which member, and it would hide the adjoint and the metric that the two lines show.
 
 **The plane wave.** The wave numbers of the particle are $k_{t}^{\prime}=E_{\vec p}/(\hbar\,c)$, $\vec k_\Phi=\vec p/\hbar$ and $k_m=mc/\hbar$, so the phase is the pure number $k_{t}^{\prime}r'_t-\vec k_\Phi\cdot\vec r$. On $e^{-i\theta_{\mathrm{pwp}}}$ the gradient acts by left multiplication by its symbol
 $$
@@ -366,7 +366,7 @@ The classification supplies a second reading of the same eight operations: they 
 | $\tilde{Ξ}_{L}$, $\tilde{Ξ}_{R}$ | The two entries of the pair: two elements of $\mathbb{B}$, not the eigenspaces of the chirality, which no left action can separate |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field, one element of $\mathbb{B}$; dynamics $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ |
 | $\omega=-\vec e_z$, $\Gamma=i\omega=-i\vec e_z$ | $\omega^2=-e_t$; the chirality is the right action $\tilde{Ξ}\mapsto\tilde{Ξ}\Gamma=-i\tilde{Ξ}\vec e_z$, with $\Gamma^2=e_t$, equal to $-1$ on the eigenspace of $R_\omega$ with eigenvalue $i$ and $+1$ on the other |
-| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, written as two first-order equations; the pair operator is retired |
+| $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The pair, written as two first-order equations; no single glyph gathers it |
 | $i\tilde K_{\Phi}=-k_{t}^{\prime}e_t+i\vec k_\Phi$ | Symbol of $\tilde\nabla_\Phi$ on $e^{-i\theta_{\mathrm{pwp}}}$; $-\tilde K_{\Phi}^{\natural}\tilde K_{\Phi}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^{2}=k_m^{2}$ |
 | $J=\bar{\cdot}$, $\tilde{Ζ}^{J}$ | The conjugation of the field: the coefficient conjugation applied at each point, anti-linear and an automorphism |
 | $C[\tilde{Ξ}]=(-\tilde{Ξ}_{R}^J,\tilde{Ξ}_{L}^J)$ | Charge conjugation (anti-linear, exchanges the entries, internal factor $\Gamma$, $C^2=-e_t$) |

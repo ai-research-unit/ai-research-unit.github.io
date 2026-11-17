@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article records the $\mathrm{SU}(3)$ representation theory and the mass splitting that the spinor-structure programme uses to organise the hadron spectrum: the irreducible representations as traceless bisymmetric tensors of degree $N(n,m)$, the Okubo basis of $\mathfrak{su}(3)$ with its three $\mathfrak{su}(2)$ subalgebras, the condition that selects the "admissible" hadron supermultiplets, the reduction of the octet into isospin multiplets, and the Gell-Mann–Okubo mass formula with its Zeeman-effect interpretation.
+This article records the $\mathrm{SU}(3)$ representation theory and the mass splitting that the spinor-structure programme uses to organise the hadron spectrum: the irreducible representations as traceless bisymmetric tensors of degree $N(n,n_{\mathrm{dyn}})$, the Okubo basis of $\mathfrak{su}(3)$ with its three $\mathfrak{su}(2)$ subalgebras, the condition that selects the "admissible" hadron supermultiplets, the reduction of the octet into isospin multiplets, and the Gell-Mann–Okubo mass formula with its Zeeman-effect interpretation.
 
 It is recorded with an explicit standing, stated at the outset so that it is not misread as a framework result. The companion *The Gauge Group Ceiling* shows that the biquaternion algebra's compact structure reaches $\mathrm{SU}(2)$ and stops, and *The Gluon: An Octet Outside the Biquaternion Algebra* states the boundary. The $\mathrm{SU}(3)$ structure below is therefore **not an algebra of $\mathbb{B}$**. It is the external machinery by which the hadron spectrum is classified, and it appears in the corpus because the spinor-structure programme attaches it to the spinor structure through the spin–charge Hilbert space — the spin factor of that space is the framework's own, the charge factor is this external $\mathrm{SU}(3)$.
 
@@ -16,17 +16,17 @@ The article is organised as follows. A section gives the representations as trac
 
 ## Representations of SU(3)
 
-An irreducible representation of $\mathrm{SU}(3)$ is carried by a **traceless bisymmetric tensor** $L_{a_1\dots a_n}R_{\,b_1\dots b_m}$, with the first group fundamental and the second antifundamental, symmetric within each of its two groups of indices and traceless on any contraction. The pair $(n,m)$ of non-negative integers labels the representation, and its **degree** is
+An irreducible representation of $\mathrm{SU}(3)$ is carried by a **traceless bisymmetric tensor** $L_{a_1\dots a_n}R_{\,b_1\dots b_{n_{\mathrm{dyn}}}}$, with the first group fundamental and the second antifundamental, symmetric within each of its two groups of indices and traceless on any contraction. The pair $(n,n_{\mathrm{dyn}})$ of non-negative integers labels the representation, and its **degree** is
 
 $$
-N(n,m) = \tfrac12\,(n+1)(m+1)(n+m+2).
+N(n,n_{\mathrm{dyn}}) = \tfrac12\,(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2).
 $$
 
 ### The Degree Table
 
 The degree counts the particles in the supermultiplet the representation carries. The lower-left corner of the table is
 
-| $N(n,m)$ | $m=0$ | $m=1$ | $m=2$ | $m=3$ | $m=4$ | $m=5$ | $m=6$ |
+| $N(n,n_{\mathrm{dyn}})$ | $n_{\mathrm{dyn}}=0$ | $n_{\mathrm{dyn}}=1$ | $n_{\mathrm{dyn}}=2$ | $n_{\mathrm{dyn}}=3$ | $n_{\mathrm{dyn}}=4$ | $n_{\mathrm{dyn}}=5$ | $n_{\mathrm{dyn}}=6$ |
 |---|---|---|---|---|---|---|---|
 | $n=0$ | $1$ | $3$ | $6$ | $10$ | $15$ | $21$ | $28$ |
 | $n=1$ | $3$ | $8$ | $15$ | $24$ | $35$ | $48$ | $63$ |
@@ -51,7 +51,7 @@ $$
 the off-diagonal units $A_{i\eta}$ ($i\ne k$) carrying one unit entry, and $A_{11}+A_{22}+A_{33}=0$. The pair is mixed, the first slot fundamental and the second antifundamental: the position records the representation, not a frame slot, and every slot is written low. It is what carries the trace $\sum_\eta A_{\eta\eta}$, the matrix product $\sum_\eta A_{i\eta}A_{\eta l}$ and the invariant mixed delta $\delta_{i\eta}$, which is not a metric. The commutation relations are
 
 $$
-\bigl[A_{i\eta},A_{lm}\bigr] = \delta_{im}A_{l\eta}-\delta_{l\eta}A_{im}.
+\bigl[A_{i\eta},A_{l\,n_{\mathrm{mag}}}\bigr] = \delta_{im}A_{l\eta}-\delta_{l\eta}A_{im}.
 $$
 
 This basis makes the three $\mathfrak{su}(2)$ subalgebras transparent. Projecting with a fixed index gives
@@ -218,7 +218,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 **Established, and recomputed.**
 
-- The degree formula $N(n,m)=\frac12(n+1)(m+1)(n+m+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$.
+- The degree formula $N(n,n_{\mathrm{dyn}})=\frac12(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2)$ and the table: $N(0,0)=1$, $N(1,1)=8$, $N(3,0)=10$, $N(2,2)=27$, $N(0,6)=28$, $N(4,1)=35$, $N(1,7)=80$, $N(5,2)=81$, $N(3,3)=64$, $N(4,4)=125$, $N(3,6)=154$.
 - The admissibility condition $n-m\equiv0\pmod3$ and the resulting degree list $1,8,10,27,28,35,\dots$; consistent with the table.
 - The octet reduction $\mathrm{sym}_0^{(1,1)}=Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0$, dimensions $3+2+2+1=8$.
 - The Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$ against the PDG baryon masses: $2256.9$ versus $2270.1$ MeV, a $0.58\%$ discrepancy.
@@ -249,7 +249,7 @@ One further point is worth recording because the programme itself flags it. The 
 
 ## Summary
 
-An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(n,m)$ with degree $N(n,m)=\frac12(n+1)(m+1)(n+m+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $n-m\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the companion spin–mass formula's value.
+An irreducible representation of $\mathrm{SU}(3)$ is a traceless bisymmetric tensor labelled by $(n,n_{\mathrm{dyn}})$ with degree $N(n,n_{\mathrm{dyn}})=\frac12(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2)$; the singlet is $(0,0)$, the triplets $(1,0)$ and $(0,1)$, the octet $(1,1)$ of degree $8$, the decuplet $(3,0)$ of degree $10$. Hadron supermultiplets are the admissible representations with $n-m\equiv0\pmod3$, degrees $1,8,10,27,28,35,\dots$. The octet reduces on $\mathrm{SU}(2)$ as $Ξ_3\oplusΞ_2\oplusΞ^{*}_2\oplusΞ_0$, the triplet, the nucleon doublet, its conjugate and the $\Lambda$. Within a supermultiplet the mass splits as $m=m_0+\alpha+\beta Y+\gamma(I(I+1)-\frac14Y^2)$ in the hypercharge direction, giving the Gell-Mann–Okubo relation $m_Ζ+m_N=\frac12(3m_\Lambda+m_\Sigma)$, which the physical masses satisfy to $0.58\%$. The centre $m_0$ is $\mathrm{SU}(3)$-invariant and is the companion spin–mass formula's value.
 
 The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is not an algebra of the biquaternion algebra, the gauge-group ceiling stops at $\mathrm{SU}(2)$, and the Okubo matrices are three-by-three. The article records the structure accurately, checks its numerical content, and states that the splitting pattern — not the group — is what borders the framework's own sector structure.
 
@@ -257,9 +257,9 @@ The framework's relation to all this is negative and clean: $\mathrm{SU}(3)$ is 
 
 | Symbol | Meaning |
 |---|---|
-| $(n,m)$, $n,m\in\mathbb{Z}_{\ge0}$ | Labels of an irreducible representation of $\mathrm{SU}(3)$ |
-| $L_{a_1\dots a_n}R_{\,b_1\dots b_m}$ | Traceless bisymmetric tensor carrying the representation; the first group fundamental, the second antifundamental |
-| $N(n,m)=\tfrac12(n+1)(m+1)(n+m+2)$ | Degree of the representation |
+| $(n,n_{\mathrm{dyn}})$, $n,n_{\mathrm{dyn}}\in\mathbb{Z}_{\ge0}$ | Labels of an irreducible representation of $\mathrm{SU}(3)$ |
+| $L_{a_1\dots a_n}R_{\,b_1\dots b_{n_{\mathrm{dyn}}}}$ | Traceless bisymmetric tensor carrying the representation; the first group fundamental, the second antifundamental |
+| $N(n,n_{\mathrm{dyn}})=\tfrac12(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2)$ | Degree of the representation |
 | $A_{i\eta}$ | Okubo basis of $\mathfrak{su}(3)$, traceless and Hermitian |
 | $i,k,l$ | flavour representation slots of a 3×3 matrix: $i$ fundamental, $k$ antifundamental; not frame slots |
 | $I_3,U_3,V_3$ | I-spin, U-spin, V-spin of the three $\mathfrak{su}(2)$ subalgebras |

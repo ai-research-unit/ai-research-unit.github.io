@@ -61,7 +61,7 @@ The passage from spinor to star discards the overall phase: $\tilde{Ξ}\mapsto \
 
 ### The General Construction
 
-For spin $s$ the state $|\tilde{Ξ}\rangle = \sum_{s_z=-s}^{s}c_m|s,s_z\rangle$ is represented by the degree-$2s$ polynomial
+For spin $s$ the state $|\tilde{Ξ}\rangle = \sum_{s_z=-s}^{s}c_{s_z}|s,s_z\rangle$ is represented by the degree-$2s$ polynomial
 
 $$
 \boxed{\;P_{\mathrm{sp}}(z) = \sum_{s_z=-s}^{s}(-1)^{s-s_z}\binom{2s}{s+s_z}^{1/2} c_m\,z^{\,s+s_z}\;},
@@ -250,7 +250,7 @@ The Majorana representation is a representation of **pure** states; a mixed stat
 
 ## Summary
 
-The **Majorana representation** of a spin-$s$ state assigns $2s$ points on the unit sphere — the **stars** — to the state, as the roots of the degree-$2s$ polynomial $P_{\mathrm{sp}}(z) = \sum_m (-1)^{s-s_z}\binom{2s}{s+s_z}^{1/2}c_m z^{s+s_z}$. For a spin-1/2 the polynomial is linear and there is exactly one star, whose stereographic coordinate is
+The **Majorana representation** of a spin-$s$ state assigns $2s$ points on the unit sphere — the **stars** — to the state, as the roots of the degree-$2s$ polynomial $P_{\mathrm{sp}}(z) = \sum_{s_z} (-1)^{s-s_z}\binom{2s}{s+s_z}^{1/2}c_{s_z} z^{s+s_z}$. For a spin-1/2 the polynomial is linear and there is exactly one star, whose stereographic coordinate is
 
 $$
 \boxed{\;\varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{2}}{\tilde{Ξ}_{1}} = \tan\frac{\theta}{2}\exp(i\theta_{\mathrm{azm}}),

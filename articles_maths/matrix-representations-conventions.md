@@ -10,7 +10,7 @@ The order of the article is that order. The axis-free display comes first becaus
 
 **The order renames nothing.** The corpus calls the Peirce frame the canonical frame, and this article keeps the name: the word names the frame, not its position here. The axis-free frame is the coefficient basis read as a frame, and its label is $\mathrm{axf}$.
 
-**The algebra is $M_2(\mathbb{C})$, and it is never $M_4(\mathbb{C})$.** The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and the retired label $M_4(\mathbb{C})_L$ is read as $\mathbb{B}_L$.
+**The algebra is $M_2(\mathbb{C})$, and it is never $M_4(\mathbb{C})$.** The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra, it carries no biquaternion structure and takes no biquaternion name; the left and right copies are named $\mathbb{B}_L$ and $\mathbb{B}_R$, and a matrix of the left copy is a matrix of $\mathbb{B}_L$.
 
 The article assumes the base of *Algebra and Element Conventions* and the Peirce convention of *Special Element and Peirce Conventions*, whose standard pair fixes the Pauli frame.
 
@@ -78,7 +78,7 @@ The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy,
 
 **The letter $M$ belongs to matrices.** It names a matrix and nothing else: the images $\mathsf{M}_2(\tilde Q)$ and $\mathsf{M}_{4L}(\tilde Q)$, the matrix algebras $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$, and an entrywise matrix in a proof. No element of the algebra is written $M$, with or without a tilde.
 
-**The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}=\rho_L(\mathbb{B})$ and the right copy $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}=\rho_R(\mathbb{B})$, each a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$ and the commutant of the other. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra and carries no biquaternion name. The writing $M_4(\mathbb{C})_L$, read as the name of an algebra, is retired and is read as $M_4(\mathbb{C})_{\mathbb{B}_L}$; the same holds on the right.
+**The copy is named, the ambient is not.** The left copy is $\mathbb{B}_L=M_4(\mathbb{C})_{\mathbb{B}_L}=\rho_L(\mathbb{B})$ and the right copy $\mathbb{B}_R=M_4(\mathbb{C})_{\mathbb{B}_R}=\rho_R(\mathbb{B})$, each a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$ and the commutant of the other. The ambient $M_4(\mathbb{C})=\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ is the operator algebra and carries no biquaternion name. The subscript names the copy, so $M_4(\mathbb{C})_{\mathbb{B}_L}$ is $\mathbb{B}_L$ and $M_4(\mathbb{C})_{\mathbb{B}_R}$ is $\mathbb{B}_R$; a subscript $L$ or $R$ alone names no algebra.
 
 **The frame label names the display.** $\mathsf{M}_{4L}$ names the operator and carries no frame. The array of that operator carries the frame, $L_{\mathrm{axf}}(\tilde Q)$ in the coefficient basis and $L(\tilde Q)$ in the Peirce frame, or the frame is named in the sentence; an array of no named frame is not written. A bare $\mathsf{M}_4$ is written for neither the operator's family nor the frame.
 
@@ -927,7 +927,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 
 **The $2\times2$ isomorphism comes last.** It is $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ and $\mathsf{M}_2(i)=iI_2$, forced by $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, with $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ and $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$. It needs no frame, and it is the block of the Pauli display: the change of frame moves the block and never the image.
 
-**The label $M_4(\mathbb{C})_L$ is retired.** It named a matrix set rather than an algebra, and it changed meaning with the basis. An older article that writes it is read as $\mathbb{B}_L$, and an older $M_4(\mathbb{C})_R$ as $\mathbb{B}_R$. A bare $\mathsf{M}_4$ is not written for a regular matrix, which carries the family letter $L$ or $R$ in its subscript and the frame label $\mathrm{axf}$ or $\mathrm{pau}$ in its caret.
+**The subscript names the copy, and a bare $\mathsf{M}_4$ is not written.** A regular matrix carries the family letter $L$ or $R$ in its subscript and the frame label $\mathrm{axf}$ or $\mathrm{pau}$ in its caret.
 
 ## Summary of Notation
 
@@ -962,4 +962,4 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html) and [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the Peirce frame, the switch and the same objects in it.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the $2\times2$ isomorphism read in full.
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the sixteen basis operators, the frame and the proof of the basis operator table.
-- [Index and Notation Conventions](index-and-notation-conventions.html), for the superscripts, the labels and the retired names.
+- [Index and Notation Conventions](index-and-notation-conventions.html), for the superscripts and the labels.

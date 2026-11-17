@@ -78,7 +78,7 @@ So no loop links a nodal line, and the circulation of $\vec v$ around every loop
 $$
 \tilde\Xi=\sum_n a_n e^{i\theta_n},
 \qquad
-\rho_{\mathrm{num}}=\sum_n\lvert a_n\rvert^{2}+2\sum_{m<n}\lvert a_m\rvert\lvert a_n\rvert\cos(\theta_m-\theta_n),
+\rho_{\mathrm{num}}=\sum_n\lvert a_n\rvert^{2}+2\sum_{n_{\mathrm{mode}}<n}\lvert a_{n_{\mathrm{mode}}}\rvert\lvert a_n\rvert\cos(\theta_{n_{\mathrm{mode}}}-\theta_n),
 $$
 
 with $\theta_n=\vec k_n\cdot\vec r-\omega_n t'+\arg a_n$. The first sum is the incoherent part and the second is the interference part.

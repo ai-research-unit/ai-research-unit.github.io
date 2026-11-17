@@ -151,7 +151,7 @@ $$
 
 ## Open Questions
 
-1. **Where the corpus's spinors sit.** A general biquaternion element is class 1. Do the corpus's distinguished elements — its chiral pair and the elements of the retired antilinear-mass equation — fall into definite classes, and is the class invariant under the corpus's discrete symmetries?
+1. **Where the corpus's spinors sit.** A general biquaternion element is class 1. Do the corpus's distinguished elements — its chiral pair and the elements of the algebra-level antilinear mass equation — fall into definite classes, and is the class invariant under the corpus's discrete symmetries?
 
 2. **Idempotents and classes.** Does a primitive idempotent $\tilde\Pi$ of $\mathbb B$ determine a Lounesto class for the spinor $\mathbb B\tilde\Pi$, and if so which? The classification slices the spinor space one way and the ideals another; the map between the two slicings is not written down.
 
