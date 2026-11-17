@@ -230,10 +230,10 @@ a shift of the left side of the mass shell by a central scalar. The companion ar
 
 ### The oscillator's shift
 
-The Dirac oscillator's substitution is a shift of the other side. Its non-minimal term replaces $\vec p$ by $\vec p-im\omega\beta\vec r$, so it acts on the spatial part of the gradient and on nothing else, and the shifted gradients are
+The Dirac oscillator's substitution is a shift of the other side. Its non-minimal term replaces $\vec p$ by $\vec p-im\omega\beta\vec r$, so it acts on the spatial part of the gradient and on nothing else, and the shifted gradients are the plain gradient shifted by a vector,
 
 $$
-\vec\nabla_{\pm,\Phi}=\vec\nabla_\Phi\pm\frac{m\,\omega}{\hbar}\,\vec r .
+\vec\nabla_\Phi\pm\frac{m\,\omega}{\hbar}\,\vec r .
 $$
 
 Multiplying the two shifts, as the companion article on the oscillator does, the cross terms reduce to a central commutator and a spin–orbit term, and the confining term that survives in the identity is a positive addition, $+m^{2}\omega^{2}r^{2}$:
@@ -320,7 +320,7 @@ In a step the created pair leaves as a current and no level holds the imbalance.
 | $L_{\min}=\frac{\pi\hbar c}{\sqrt{V_0^{2}-2V_0\,mc^{2}}}$ | Least width at which one level dives at fixed depth; the $n_{\mathrm{w}}$-th dive is at $n_{\mathrm{w}}L_{\min}$ |
 | $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, $k_{t}^{\prime\,2}=k_{\Phi}^{2}+k_m^{2}$ | Mass shell, split into its two sides |
 | $k_{t}^{\prime}=\frac{E}{\hbar\,c}$, $k_{\Phi}=\frac{p}{\hbar}$ | Temporal coefficient and momentum wave number |
-| $\vec\nabla_{\pm,\Phi}=\vec\nabla_\Phi\pm\frac{m\,\omega}{\hbar}\vec r$ | The two non-minimal shifts of the oscillator |
+| $\vec\nabla_\Phi\pm\frac{m\,\omega}{\hbar}\vec r$ | The two non-minimal shifts of the oscillator, written out |
 | $\mathcal Q_{+}\mathcal Q_{-}\ge0$ | Oscillator identity: the gap is empty at every frequency |
 | $\omega$ | Oscillator frequency, a real scalar; the pseudoscalar $\omega=-\vec e_z$ of the algebra is not used here |
 | $\beta$ | The frame action of the oscillator, a right action equal to $\pm1$ on the two frame parts |

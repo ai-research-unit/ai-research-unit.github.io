@@ -10,7 +10,9 @@ $$
 \tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}\in S^{2}$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, and $\hat u_{\mathrm r}\in S^{2}$. The word is a bijection from the eight parameters onto the $N$-regular set, so the parameters are coordinates on the invertibles and the substitution loses nothing. The domain is unchanged by the coupling: the connection is a set of functions and the field's own regularity is what decides whether the word exists.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}\in S^{2}$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and $\hat u_{\mathrm r}\in S^{2}$. The word is a bijection from the eight parameters onto the $N$-regular set, so the parameters are coordinates on the invertibles and the substitution loses nothing. The domain is unchanged by the coupling: the connection is a set of functions and the field's own regularity is what decides whether the word exists.
+
+**The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
 
 **Three things are established.**
 
@@ -281,7 +283,7 @@ The quantum potential and the density are unchanged; the momentum is not, the cu
 | $\varrho>0$ | Scale; $\rho_{\mathrm{num}}=\varrho^{2}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action |
 | $\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}$ | Rapidity and axis of the boost |
-| $\theta_{\mathrm{axr}}\in[0,2\pi),\ \hat u_{\mathrm r}$ | Angle and axis of the rotor |
+| $\theta_{\mathrm{axr}}\in[0,2\pi],\ \hat u_{\mathrm r}$ | Angle and axis of the rotor |
 | $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The free bracket, four types |
 | $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant bracket |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection; $a'_t$ and $\vec A$ real |

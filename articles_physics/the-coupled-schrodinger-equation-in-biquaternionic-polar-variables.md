@@ -7,10 +7,12 @@
 $$
 \tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,b}\,u_r,
 \qquad
-\varrho>0,\quad \theta_{\mathrm{pha}}\in\Big(-\frac{\pi}{2},\frac{\pi}{2}\Big],\quad \theta_{\mathrm{rpd}}\ge 0,\quad \theta_{\mathrm{axr}}\in[0,2\pi),
+\varrho>0,\quad \theta_{\mathrm{pha}}\in\Big(-\frac{\pi}{2},\frac{\pi}{2}\Big],\quad \theta_{\mathrm{rpd}}\ge 0,\quad \theta_{\mathrm{axr}}\in[0,2\pi],
 $$
 
 with $\tilde U_{\Psi,b}=\exp(i\theta_{\mathrm{rpd}}\,\vec u_b)$ the Hermitian boost along the unit real vector $\vec u_b$ and $u_r$ the rotor about the unit real vector $\vec u_r$. The word is a bijection from the eight parameters onto the $N$-regular set, so the parameters are coordinates, and the free equation reads on them as a flow: the scale and the rapidity frozen, the phase advancing at minus the mean eigenvalue, every carried direction precessing at the gap.
+
+**The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
 
 This article couples the same field to the electromagnetic connection and asks what the word does with it. The equation is the element form's,
 
@@ -236,7 +238,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\hbar^{2}\Delta_\Phi
 | $\varrho>0$ | The scale |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The central phase; the coordinate the gauge group translates |
 | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_b$ | The rapidity and axis of the Hermitian boost |
-| $\theta_{\mathrm{axr}}\in[0,2\pi)$, $\vec u_r$ | The angle and axis of the rotor |
+| $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_r$ | The angle and axis of the rotor |
 | $\mathcal A_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The free logarithmic derivative |
 | $\mathcal A^{\mathrm{gco}}_\mu$ | The covariant one: $\mathcal A_t-\frac{iϙ}{\hbar}\varphi$ and $\mathcal A_\eta+\frac{iϙ}{\hbar}A_\eta$ |
 | $ϙ$ | The coupling; minus the electric charge of the older convention |

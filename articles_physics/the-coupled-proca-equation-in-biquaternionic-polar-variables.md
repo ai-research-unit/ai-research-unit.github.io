@@ -10,7 +10,9 @@ $$
 \tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\bigl(\theta_{\mathrm{rpd}},\hat u_{\mathrm b}\bigr)\,\tilde u_{\mathrm r}\bigl(\theta_{\mathrm{axr}},\hat u_{\mathrm r}\bigr),
 $$
 
-with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the invertibles and no constraint is lost or added.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost, $\hat u_{\mathrm b}\in S^2$ its axis, $\theta_{\mathrm{axr}}\in[0,2\pi]$ the angle of the rotor, and $\hat u_{\mathrm r}\in S^2$ its axis. The factors carry eight real parameters and the word is a bijection onto the N-regular set, which is the complement of the zero-divisor cone; the eight parameters are therefore coordinates on the invertibles and no constraint is lost or added.
+
+**The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
 
 **The word is not the free article's word, and the difference is the article's first point.** The free Proca field is real, its word has two factors and four parameters, and it splits into two branches according to the sign of the Minkowski square. The coupled field is complex, its square is not a sign, the branch split has nothing to split, and the word that replaces it has four factors and eight parameters. The two factors the free word had to drop — the central phase and the rotor — return with the charge, and §*The Word* proves that in the algebra rather than asserting it.
 
@@ -210,7 +212,7 @@ The connection is central per slot, so it merges with the scale and the phase br
 | $\varrho>0$ | Scale; $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge-dependent coordinate |
 | $\theta_{\mathrm{rpd}}\ge0,\ \hat u_{\mathrm b}\in S^{2}$ | Rapidity and axis of the boost |
-| $\theta_{\mathrm{axr}}\in[0,2\pi),\ \hat u_{\mathrm r}\in S^{2}$ | Angle and axis of the rotor |
+| $\theta_{\mathrm{axr}}\in[0,2\pi],\ \hat u_{\mathrm r}\in S^{2}$ | Angle and axis of the rotor |
 | $\mathbb{B}$, $\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$ | The algebra, its material and informational sectors |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | The connection; $A_t=i a'_t$ imaginary, $A_\eta$ real in the material case |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The central per-component covariant derivative |

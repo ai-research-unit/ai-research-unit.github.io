@@ -12,7 +12,9 @@ $$
 \tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
 $$
 
-with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi)$, and $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ real unit vectors. The word is a bijection from the eight parameters onto the $N$-regular set, so the parameters are coordinates on the invertibles and the substitution loses nothing.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, and $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$ real unit vectors. The word is a bijection from the eight parameters onto the $N$-regular set, so the parameters are coordinates on the invertibles and the substitution loses nothing.
+
+**The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
 
 Three results are established, and each is a computation.
 
@@ -353,7 +355,7 @@ For the general element the equivalence with the Klein–Gordon equation is exac
 | $\varrho>0$ | Scale and amplitude; $\rho_{\mathrm{num}}=\varrho^{2}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Phase angle; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ |
 | $\theta_{\mathrm{rpd}}\ge0$ | Rapidity of the boost $\tilde U_{\Psi,\mathrm b}$ |
-| $\theta_{\mathrm{axr}}\in[0,2\pi)$ | Angle of the rotor $\tilde u_{\mathrm r}$ |
+| $\theta_{\mathrm{axr}}\in[0,2\pi]$ | Angle of the rotor $\tilde u_{\mathrm r}$ |
 | $\vec u_{\mathrm b},\ \vec u_{\mathrm r}$ | Real unit axes of the boost and the rotor |
 | $\vec u_{\mathrm b}'=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ | Boost axis in the rotor's frame |
 | $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The bracket; four algebraic types |

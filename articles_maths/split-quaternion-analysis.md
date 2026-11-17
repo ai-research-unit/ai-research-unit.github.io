@@ -93,7 +93,7 @@ D^2 = -\frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \
 \;},
 $$
 
-the wave operator of the form of inertia $(2,1)$, which is hyperbolic. The first-order operator $D$ itself is not elliptic: its symbol is left multiplication by the frequency vector, invertible exactly when $N \neq 0$, so the set where the symbol degenerates is the null cone
+the wave operator of the form of inertia $(2,1)$, which is hyperbolic. The label spells the operator and names the algebra it belongs to, $\Box_{(2,1)}$ being the wave operator of the split-quaternion vector subspace; the inertia is stated in the display and is never carried in the subscript, and the glyph is not the corpus d'Alembertian $\Box_\Phi$ of the biquaternion material parameters. The first-order operator $D$ itself is not elliptic: its symbol is left multiplication by the frequency vector, invertible exactly when $N \neq 0$, so the set where the symbol degenerates is the null cone
 
 $$
 q_x^2 - q_y^2 - q_z^2 = 0 ,

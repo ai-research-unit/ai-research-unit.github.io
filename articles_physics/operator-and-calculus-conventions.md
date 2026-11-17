@@ -136,7 +136,19 @@ In this work, subscripts denote vector components, not partial derivatives as in
 
 **A variant of an operator is a label, and a chart is not a variant.** The gradient carries $\natural$ in the caret or a label low, $(\tilde\nabla_\Phi)^{\natural}$ and $\tilde\nabla_{\mathrm{gco},\Phi}$, and it never takes a letter in the low slot for the coordinates it is read in. Where both marks stand on one glyph the sector goes low on the operator and $\natural$ goes outside, $(\tilde\nabla_\Phi)^{\natural}$: the conjugate of the material gradient is the material gradient of the conjugate, because $\natural$ negates the vector part and leaves the scalar imaginary alone. The sector so named is $\Phi$ and no other, and $\Psi$ never stands in the low slot of an operator. A sector is not a coordinate: $\tilde\nabla_{\Phi}$ names the four material parameters the derivative is taken in, and no coordinate is ever written in its low slot. A chart is not a slice either: a chart re-reads the parameters themselves, and the operator is not marked for it. The Wick rotation is written on the parameter, $r'_t\mapsto-i\tau$; the four terms of the sum are unchanged, only the sign of $\partial^2/\partial {r'_t}^2$ moves, and the article that continues the coordinates says which chart it reads them in rather than marking the operator.
 
-**The low slot reads label first, sector last, and nothing else.** A variant is named before the sector it belongs to, $\tilde\nabla_{\mathrm{gco},\Phi}$ for the gauge-covariant gradient and $\tilde\nabla_{\kappa,\Phi}$ for the shifted one, so that $\Phi$ is the last name on the glyph and the sector reads at a glance. A component index may follow it, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$, and nothing may follow that. No coordinate, no chart, no subspace and no representation is ever written in the low slot: the d'Alembertian is $\Box_\Phi$ and not $\Box_{\Phi,x}$, the argument showing the variable it acts on, and the covariant gradient is $\tilde\nabla_{\mathrm{gco},\Phi}$ for every field, the representation being a property of the field and written on it, $\tilde\Xi_\psi$.
+**The low slot spells the operator, or names its component, and nothing else.** A label in the low slot names a distinct operator by spelling what makes it that operator. The label is roman and is read as written, $\tilde\nabla_{\mathrm{gco},\Phi}$ with its companion $\Box_{\mathrm{gco},\Phi}$. A single component index may follow, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$, and nothing may follow that. Nothing else enters the slot, and the list of what may not is the list of everything that distinguishes one instance of an operator from another rather than one operator from another.
+
+Never a number. A shift is written out, $\tilde\nabla_\Phi+\kappa$, and the glyph keeps its name while the number varies; a glyph such as $\tilde\nabla_{\kappa,\Phi}$ would make the operator a function of a parameter and would have to be read as a different operator at every value of it.
+
+Never a sign or a factor. The operators $-\Box_\Phi$ and $i\tilde\nabla_\Phi$ are written as they stand, and no glyph is reserved for a signed or scaled copy of another: the source's mutual bigradients are $\vec\nabla_{+} = i\tilde\nabla_\Phi$ and $\vec\nabla_{-} = i(\tilde\nabla_\Phi)^{\natural}$, and its wave operator is $-\Box_\Phi$.
+
+Never a subspace or a carrier. On a subspace the gradient is $\tilde\nabla_\Phi$ in the coordinates of that subspace, the coordinates being named in the display and not in the glyph; on $\mathbb{B}_{iH}$ it is $-i$ times the gradient of $\mathbb{B}_{H}$, which is a statement about a coefficient and not a new operator.
+
+Never a coordinate, a chart, a representation, or the variable the operator differentiates. The d'Alembertian is $\Box_\Phi$ and not $\Box_{\Phi,x}$, the covariant gradient is $\tilde\nabla_{\mathrm{gco},\Phi}$ for every field because the representation is a property of the field and is written on it, $\tilde\Xi_\psi$, and a Green's function says in words which of its arguments the operator acts on, $\Box_\Phi G(\tilde R_\Phi,\tilde R_{\Phi,2})$, rather than writing the argument in the slot, $\Box_{\tilde R_\Phi}$.
+
+**A pair of mutual operators is two glyphs, never one glyph with a plus-or-minus.** A pair is written out, one operator at a time, and a formula that holds for both members is written twice: the source's bigradients are $\vec\nabla_{+} = i\tilde\nabla_\Phi$ and $\vec\nabla_{-} = i(\tilde\nabla_\Phi)^{\natural}$, and her wave operator is $\Box_A = \partial^2/\partial\tau^2-\Delta_\Phi$, in her letters and never wearing a $\Phi$ of its own. The rule governs the parameter shifts in the same way: $\tilde\nabla_\Phi+\kappa$ and $\tilde\nabla_\Phi-\kappa$ are two operators and both are written, and $\kappa$ itself is never a subscript.
+
+The reason for the whole rule is one. A coefficient belongs to the element and an argument belongs to the field, so neither may enter the name of the operator, which is one operator for every value, every argument and every chart.
 
 **The Levi-Civita derivative is not this operator.** A curved background carries a metric connection, and the articles on curved spacetime write its covariant derivative as $\nabla_\mu$, with the index it differentiates. It is a differential-geometric object of the manifold, it acts on tensors and not on the algebra, and it is never the gradient of this series. The two never meet in one computation: where a curved background meets a field of this series, the article says which of the two it has written, and the biquaternionic gradient keeps its $\Phi$.
 
@@ -202,6 +214,16 @@ $$
 \Delta_\Phi=\sum_{\eta\in\{x,y,z\}}\frac{\partial^2}{\partial r_\eta^2}.
 $$
 
+**The two products of the spatial gradient.** Read with the dot, the spatial gradient composed with itself returns the Laplacian, and read with the circle it returns minus the Laplacian, the sign carried by $e_t$, the identity of the algebra:
+
+$$
+\vec\nabla_\Phi\cdot\vec\nabla_\Phi=\Delta_\Phi,
+\qquad
+\vec\nabla_\Phi\circ\vec\nabla_\Phi=-e_t\,\Delta_\Phi .
+$$
+
+The dot reads the three spatial units as an orthonormal frame, where each unit pairs with itself to $1$; the circle reads them as elements of the algebra, where each squares to $-e_t$. The sign belongs to the reading and the operator is one. Where an article writes the second line as $-\Delta_\Phi$, the temporal unit is understood on both sides.
+
 **The d'Alembertian.** The second-order operator is the norm of the gradient. Write $T=-i\,e_t\partial/\partial r'_t$ and $S=\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial/\partial r_\eta$ for the two halves of the sum. They commute, $T^{2}=(-i)^2\partial^2/\partial {r'_t}^2=-\partial^2/\partial {r'_t}^2$ and $S^{2}=-\Delta_\Phi$, so
 
 $$
@@ -209,6 +231,29 @@ $$
 $$
 
 the square of the temporal half entering with the minus and the squares of the three spatial ones with the plus. That sign is the sign pattern read on the two halves instead of on the four second derivatives: $(-,+,+,+)$ on the material parameters, which is the signature the series works in throughout.
+
+**The operator at work.** Because it is scalar, the d'Alembertian passes through the units and differentiates the coefficients, and written on an element it is
+
+$$
+\Box_\Phi\tilde\Xi=\left(\Delta_\Phi-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}\right)\tilde\Xi
+=\sum_{\eta\in\{x,y,z\}}\frac{\partial^{2}\tilde\Xi}{\partial r_\eta^{2}}-\frac{\partial^{2}\tilde\Xi}{\partial {r'_{t}}^{2}}.
+$$
+
+The two equations the corpus writes with it are the harmonic one and the massive one,
+
+$$
+\Box_\Phi\tilde\Xi=0,
+\qquad
+\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0,
+$$
+
+the first on a regular field, which is the harmonic equation of the corpus (*The Derivative, the Field and the Transform*), the second with the mass as a central shift (§*The Two First-Order Equations and Their Symbol*). Two limiting readings of the same display follow, and both are used. A field that does not depend on $r'_t$ loses the temporal term and the d'Alembertian is the Laplacian,
+
+$$
+\Box_\Phi\tilde\Xi=\Delta_\Phi\tilde\Xi,
+$$
+
+the wave equation passing to the Laplace equation of a static field. A field that does not depend on the three space parameters loses the Laplacian instead and keeps one term, $-\partial^2\tilde\Xi/\partial {r'_{t}}^2$.
 
 **Why the subscript stands on every glyph.** The derivative is written on the material parameters and on no others, and $\Phi$ is their name: the glyph carries the name of the four parameters it differentiates. An article that writes the informational part writes an element, and no derivative of the corpus is taken against it.
 
@@ -464,6 +509,8 @@ $$
 with $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi})$ the curvature. The scalar part of the square is the covariant d'Alembertian and the vector part is the curvature; both are read in *The Covariant Derivative and Gauge Connection in Biquaternionic Form*.
 
 **The coupling, and the letter $\kappa$.** A few articles write the same operator as $\tilde\nabla_\Phi+i\kappa\mathcal A$, with $\kappa$ the coupling and $\mathcal A$ the connection. That is one object under two spellings, $\kappa=\frac{ϙ}{\hbar}$ and $\mathcal A=\tilde A_{\Phi}$. The series writes $\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}$, so that $\kappa$ stays free for the retarded denominator $\kappa=1-\vec u_R\cdot\vec\beta$ of *Algebra and Element Conventions*, which is not a coupling.
+
+**The letter $\kappa$ carries two meanings, separated by article, and both are scalars.** In the kinematics articles it is the retarded denominator $1-\vec u_R\cdot\vec\beta$. In the articles on the generalized Maxwell–Dirac operator it is the complex shift added to the gradient, $\tilde\nabla_\Phi+\kappa$ with $\kappa\in\mathbb{C}$, and it is written in the expression and never in the subscript of a glyph. The two uses do not meet in one computation, and an article that uses $\kappa$ says which of the two it means.
 
 ## The Two First-Order Equations and Their Symbol
 

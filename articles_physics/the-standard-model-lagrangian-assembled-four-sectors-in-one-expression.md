@@ -292,7 +292,7 @@ Each $3\times3$ complex matrix carries nine complex entries, that is eighteen re
 | $-\tfrac14F\cdot F$ | $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$ | the same, by §*The Dictionary* |
 | $+\tfrac12\partial\xi\cdot\partial\xi$ | $-\tfrac12\sum_\mu\partial_\mu\xi\,\partial_\mu\xi$ | the same, by §*The Dictionary* |
 | $\lvert D_\mu\varphi\rvert^2$ | $-\sum_\mu(D_\mu\varphi)^\dagger(D_\mu\varphi)$ | the same |
-| the Dirac kinetic term, $\bar\psi\,iD_\mu\psi$ | $\bar{\tilde\Xi}\,i\tilde\nabla_{\kappa,\Phi}\tilde\Xi$ | the Dirac article's pair |
+| the Dirac kinetic term, $\bar\psi\,iD_\mu\psi$ | $\bar{\tilde\Xi}\,i\tilde\nabla_\Phi\tilde\Xi$ | the Dirac article's pair; a central shift, if wanted, is added as $\kappa$ and never carried in the glyph |
 | $\varphi^\dagger\varphi$ | $\tilde\Xi\tilde\Xi^{\natural}$ | the norm of an element |
 
 **The dictionary is a dictionary and not a theory.** Each row is an identity between two writings of one object, and none of them is a derivation. The corpus's contribution is that the objects have homes: the connection is a material-sector element, the curvature is its vector part under $\natural$, the scalar is an element and its modulus squared is the norm.

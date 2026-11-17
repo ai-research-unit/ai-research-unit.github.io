@@ -160,7 +160,7 @@ and the Stokes theorem holds for the three-form of the vector subspace with the 
 
 ## The Fundamental Solution
 
-**Theorem (Fundamental Solution of the Wave Operator).** The operator $\Box_{(2,1)} = -\partial^2/\partial q_x^2 + \partial^2/\partial q_y^2 + \partial^2/\partial q_z^2$ has a fundamental solution $E$ in the vector subspace, a distribution supported in the closed future cone
+**Theorem (Fundamental Solution of the Wave Operator).** The operator $\Box_{(2,1)} = -\partial^2/\partial q_x^2 + \partial^2/\partial q_y^2 + \partial^2/\partial q_z^2$ — the wave operator of the split-quaternion vector subspace, labelled by the algebra and not by its inertia, and never the biquaternion $\Box_\Phi$ — has a fundamental solution $E$ in the vector subspace, a distribution supported in the closed future cone
 
 $$
 C = \{(q_x,q_y,q_z) : q_x \geq 0, \ q_x^2 \geq q_y^2 + q_z^2\},

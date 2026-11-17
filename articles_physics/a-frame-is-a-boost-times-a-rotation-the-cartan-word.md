@@ -37,7 +37,7 @@ and $\vec u_{\mathrm b},\vec u_{\mathrm r}$ unit real vectors. The boost factor 
 | factor | lies in | condition | parameters |
 |---|---|---|---|
 | $\tilde U_\Psi$ | $\mathbb{B}_\Psi\cap G$ | Hermitian, positive, det $1$ | $\theta_{\mathrm{rpd}}\in[0,\infty)$, $\vec u_{\mathrm b}\in S^{2}$ |
-| $\tilde u_{\mathrm r}$ | $SU(2)\subset\mathbb{B}_H$ | $*$-unitary, real coefficients | $\theta_{\mathrm{axr}}\in[0,2\pi)$, $\vec u_{\mathrm r}\in S^{2}$ |
+| $\tilde u_{\mathrm r}$ | $SU(2)\subset\mathbb{B}_H$ | $*$-unitary, real coefficients | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}\in S^{2}$ |
 
 The two factors are not interchangeable and they are not symmetric in their roles: the boost factor is the unique positive Hermitian square root of something, and the rotation factor is a leftover.
 
@@ -191,6 +191,8 @@ $\tilde U_{\mathrm{lor}}=e_t$ has $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm
 ### The Central Elements
 
 $\pm e_t$ both have $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}\in\{0,2\pi\}$. The element $-e_t$ is the rotation by $2\pi$, whose axis is arbitrary. The word is still unique — the boost factor is $e_t$ in both cases — but the rotation factor's axis is not.
+
+**The angle's range is closed at $2\pi$ for this reason.** The endpoint is the element $-e_t$, and an element whose polar rotation is $-e_t$ has its word only there, so a half-open interval $[0,2\pi)$ would cut those elements out of the image of the word. Verified: on one hundred random unit elements the word reproduces the element with $\theta_{\mathrm{axr}}<2\pi$, while one hundred elements whose polar rotation is $-e_t$ all have $\theta_{\mathrm{axr}}=2\pi$, where the axis is not defined.
 
 ### The Wall Elements
 

@@ -358,8 +358,9 @@ It is the kernel that solves the Dirichlet problem for the d'Alembertian on the 
 The **Green's function** for the d'Alembertian on a domain $\Omega$ is the function $G(\tilde{Q}, \tilde{Q}_2)$ that satisfies
 
 $$
-\Box_{\tilde{Q}} G(\tilde{Q}, \tilde{Q}_2) = \delta(\tilde{Q} - \tilde{Q}_2) e_t, \qquad G(\tilde{Q}, \tilde{Q}_2) = 0 \text{ for } \tilde{Q} \in \partial \Omega.
+\Box_\Phi\, G(\tilde{Q}, \tilde{Q}_2) = \delta(\tilde{Q} - \tilde{Q}_2) e_t, \qquad G(\tilde{Q}, \tilde{Q}_2) = 0 \text{ for } \tilde{Q} \in \partial \Omega,
 $$
+with the operator differentiating in the first argument; the argument is written in the field and not in the subscript.
 
 Its construction is standard from the fundamental solution of the d'Alembertian, and it is the biquaternion analogue of the Green's function in the theory of elliptic partial differential equations.
 

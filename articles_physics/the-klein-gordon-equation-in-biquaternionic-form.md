@@ -137,37 +137,39 @@ The trap here is the sharper version of the trap in the parent article. There, t
 The obstruction above is for a **scalar** coefficient. A vector coefficient fares differently, and the exception is instructive. In the fourth paper of her series on the differential algebra of biquaternions, L. A. Alexeyeva studies the first-order system
 
 $$
-\left(\vec\nabla_{+,\Phi} + \vec F\right) B = G,
+\left(\vec\nabla_{+} + \vec F\right) B = G,
 \qquad
-\vec\nabla_{\pm,\Phi} = \partial/\partial \tau \pm i\,\vec\nabla_\Phi ,
+\vec\nabla_{+} = \partial/\partial \tau + i\,\vec\nabla_\Phi ,
+\qquad
+\vec\nabla_{-} = \partial/\partial \tau - i\,\vec\nabla_\Phi ,
 $$
 
 with $B$ and $G$ biquaternion-valued and $\vec F$ a **constant complex vector** — a structural coefficient carrying no scalar part [Alexeyeva 2014]. The two mutual operators compose into one second-order operator,
 
 $$
 \boxed{\;
-\left(\vec\nabla_{-,\Phi} - \vec F\right)\circ\left(\vec\nabla_{+,\Phi} + \vec F\right)
-= \Box_{A,\Phi} + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi),
+\left(\vec\nabla_{-} - \vec F\right)\circ\left(\vec\nabla_{+} + \vec F\right)
+= \Box_A + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi),
 \qquad
-\Box_{A,\Phi} = \partial^2_\tau - \Delta_\Phi\;},
+\Box_A = \partial^2_\tau - \Delta_\Phi\;},
 $$
 
-which is the Klein–Gordon–Fock operator $\Box_{A,\Phi} + m^2$ with $m^2 = (\vec F,\vec F)$ — the coefficient's own norm supplies the mass — **plus** the first-order directional term $2i(\vec F,\vec\nabla_\Phi)$. That term is of exactly the kind that made the scalar factorisation impossible above; here it is not an obstruction but the product structure itself, and the operator is a genuine composition of two first-order operators.
+which is the Klein–Gordon–Fock operator $\Box_A + m^2$ with $m^2 = (\vec F,\vec F)$ — the coefficient's own norm supplies the mass — **plus** the first-order directional term $2i(\vec F,\vec\nabla_\Phi)$. That term is of exactly the kind that made the scalar factorisation impossible above; here it is not an obstruction but the product structure itself, and the operator is a genuine composition of two first-order operators.
 
-**Fundamental solution.** The kernel of the operator is elementary. Alexeyeva's Theorem 4.1.2, in her variables $\tau$ and $\Box_{A,\Phi}$, gives
+**Fundamental solution.** The kernel of the operator is elementary. Alexeyeva's Theorem 4.1.2, in her variables $\tau$ and $\Box_A$, gives
 
 $$
 \tilde\Xi(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) = \frac{\exp(i\theta_{\mathrm{spa}})}{4\pi|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|}\left((1-a)\,\delta(\tau-|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|) + a\,\delta(\tau+|r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z|)\right) + \tilde\Xi^0(\tau,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z),
 \qquad a \in \mathbb{C},
 $$
 
-with $\tilde\Xi^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $\exp(i\theta_{\mathrm{spa}})$, with the spatial angle $\theta_{\mathrm{spa}}=(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ real because both vectors are real, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\vec\nabla_{-,\Phi} - \vec F)(\tilde\Xi * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.
+with $\tilde\Xi^0$ an arbitrary solution of the homogeneous equation: a $\delta$-layer on the forward light cone and a $\delta$-layer on the backward light cone, weighted by the exponential $\exp(i\theta_{\mathrm{spa}})$, with the spatial angle $\theta_{\mathrm{spa}}=(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ real because both vectors are real, with the constant $a$ choosing the mixture — $a = 0$ retarded, $a = 1$ advanced. The first-order system is then solved by $B = (\vec\nabla_{-} - \vec F)(\tilde\Xi * G)$, and the homogeneous fields are obtained from the same kernel by convolution with arbitrary biquaternionic data.
 
-**Why the kernel is simpler than the standard one, and what that does not mean.** The ordinary massive operator $\Box_{A,\Phi} + k_m^{2}$ has Fourier symbol $\omega^2 - |\vec\zeta|^2 - k_m^{2}$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, the symbol of a *product* of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_{A,\Phi} + k_m^{2}$ but $\Box_{A,\Phi} + k_m^{2}$ *together with* the directional term, and the two cannot be separated — setting $\vec F = 0$ removes the mass with the direction, and turning off only $2i(\vec F,\vec\nabla_\Phi)$ while keeping $(\vec F,\vec F)$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.
+**Why the kernel is simpler than the standard one, and what that does not mean.** The ordinary massive operator $\Box_A + k_m^{2}$ has Fourier symbol $\omega^2 - |\vec\zeta|^2 - k_m^{2}$, whose zero set is the two-sheeted mass hyperboloid; its fundamental solution is not a light-cone layer, and the standard references build it out of Bessel-type functions. Here the symbol is $(\vec\zeta + \vec F, \vec\zeta + \vec F) - \omega^2$, the symbol of a *product* of two first-order operators, and the kernel is correspondingly a light-cone layer with the weight $\exp(i(\vec F,r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z))$. Alexeyeva states the contrast with Vladimirov's Klein–Gordon–Fock fundamental solution explicitly. The caveat belongs with it: the operator that factors is not $\Box_A + k_m^{2}$ but $\Box_A + k_m^{2}$ *together with* the directional term, and the two cannot be separated — setting $\vec F = 0$ removes the mass with the direction, and turning off only $2i(\vec F,\vec\nabla_\Phi)$ while keeping $(\vec F,\vec F)$ is not a case of the construction. The simplification is a property of the compensated operator, and the scalar-equation obstruction of the previous section stands.
 
 **Reading the two parts of the coefficient.** With $\vec F = -E - iH$ for real vectors $E$ and $H$, the real part is a constant shift of the wave vector, hence a drift of the pattern and not a change of the dispersion relation, while the imaginary part is a growth or decay with distance. The mass is the norm $m^2 = (\vec F,\vec F) = \lvert E\rvert^{2} - \lvert H\rvert^{2} + 2i(E,H)$: positive for a real coefficient, negative for a purely imaginary one, complex in general. The plane-wave catalogue, including the standing waves that grow or decay when the coefficient is imaginary, is in *Twistor Theory and Biquaternions*.
 
-**Convention.** Alexeyeva's $\Box_{A,\Phi} = \partial^2_\tau - \Delta_\Phi$, with $\tau$ measured in units of length, is **minus** this article's $\Box_\Phi = \partial^2_{i r'_t} + \Delta_\Phi$, which was fixed at the top of the article; the factorisation identity and the kernel are quoted in her variables so that no sign is transplanted. The product structure, the mass $(\vec F,\vec F)$ and the light-cone support of the kernel are independent of that overall sign.
+**Convention.** Alexeyeva's operator is written $\Box_A$, in her letter and without the corpus sector mark, because it is hers and not a glyph of this calculus; $\Box_A = \partial^2_\tau - \Delta_\Phi$, with $\tau$ measured in units of length, is **minus** this article's $\Box_\Phi = \partial^2_{i r'_t} + \Delta_\Phi$, which was fixed at the top of the article; the factorisation identity and the kernel are quoted in her variables so that no sign is transplanted. The product structure, the mass $(\vec F,\vec F)$ and the light-cone support of the kernel are independent of that overall sign.
 
 ## Plane Waves and the Dispersion Relation
 
@@ -409,7 +411,7 @@ The honest bottom line is a negative result about the framework's central struct
 
 5. **Second quantization in the biquaternion framework.** The resolution of both defects is to quantize the field, with $\tilde\Xi$ and $\tilde\Xi^{*}$ becoming operators. Whether the biquaternion structure adds anything to that procedure, or is again a relabelling of the complex scalar field's second quantization, is open.
 
-6. **A factorable massive operator.** The vector-coefficient operator $\Box_{A,\Phi} + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi)$ factors into first-order operators and has a light-cone kernel, but its mass and its directional term cannot be separated. Is there a class of *massive* scalar operators with elementary kernels that is not obtained by this compensated construction — or, equivalently, is the price of factorisability always a compensating first-order term? The construction also raises whether the compensated operator has a **physical interpretation** of its own, rather than being a device for solving the first-order system.
+6. **A factorable massive operator.** The vector-coefficient operator $\Box_A + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi)$ factors into first-order operators and has a light-cone kernel, but its mass and its directional term cannot be separated. Is there a class of *massive* scalar operators with elementary kernels that is not obtained by this compensated construction — or, equivalently, is the price of factorisability always a compensating first-order term? The construction also raises whether the compensated operator has a **physical interpretation** of its own, rather than being a device for solving the first-order system.
 
 ## What Was Checked
 
@@ -435,7 +437,7 @@ Being second order in time, the equation has two frequency branches and requires
 
 The central structural question has a negative answer. The second-order structure does **not** fit the $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$ split naturally. Since $\Box_\Phi$ is central, the split decouples the equation into two sectors hosting two copies of the same real solution space, exchanged by multiplication by $i$; the $\mathbb{B}_{\Phi}$ part of a solution is the $i$-image of an $\mathbb{B}_{\Psi}$ solution, so the pairing is the real/imaginary-part split of a complex field, not a conjugate pair. The conjugate pair is complex conjugation, which preserves both sectors, and the doubling the equation actually needs is the spinor-module doubling of the first-order square root $\tilde\nabla_\Phi$, whose mass term is the linear coupling of the two chiralities. That doubling is representation-theoretic, not the real fixed-point decomposition. The non-relativistic limit is the general one of *The Three Wavenumbers of a Particle*, applied to this field, and it needs one preliminary step: the rest-mass phase $f = \exp(-i\theta_{\mathrm{rst}})$, which is itself the zero-momentum solution, is divided out, and the mass term then cancels exactly. The limit is then the leading term of an expansion of $k_t' = \sqrt{k_\Phi^{2}+k_m^{2}} = k_m+\Omega$, with $\Omega = k_\Phi^{2}/2k_m$, so that $\hbar c\,\Omega = p^{2}/2m$; the term dropped is $p^{4}/(8m^{3}c^{2})$, and the ratio of dropped to kept is $k_\Phi^{2}/(4k_m^{2}) = v^{2}/4c^{2}$. What remains is the parent article's free Schrödinger equation, $i\hbar\,\frac{\partial\chi}{\partial t'} = -\frac{\hbar^{2}}{2m}\Delta_\Phi\chi$, with the same central scalar imaginary $i$; the two articles use one complex structure and no competing unit, and no second-order remnant is left behind.
 
-One exception to the obstruction is imported from the literature and kept separate from the framework's own operator. For a *vector* structural coefficient $\vec F$ the second-order operator $\Box_{A,\Phi} + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi)$ does factor into two first-order operators, and its fundamental solution is a weighted $\delta$-layer on the light cone rather than a Bessel-type kernel. The factorisation is paid for by the directional term: the mass $(\vec F,\vec F)$ and $2i(\vec F,\vec\nabla_\Phi)$ arrive together and cannot be separated, so the result is not a square root of the framework's massive scalar operator. It is a structural fact about the compensated operator, recorded here because it is the sharpest known contrast with the scalar obstruction.
+One exception to the obstruction is imported from the literature and kept separate from the framework's own operator. For a *vector* structural coefficient $\vec F$ the second-order operator $\Box_A + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi)$ does factor into two first-order operators, and its fundamental solution is a weighted $\delta$-layer on the light cone rather than a Bessel-type kernel. The factorisation is paid for by the directional term: the mass $(\vec F,\vec F)$ and $2i(\vec F,\vec\nabla_\Phi)$ arrive together and cannot be separated, so the result is not a square root of the framework's massive scalar operator. It is a structural fact about the compensated operator, recorded here because it is the sharpest known contrast with the scalar obstruction.
 
 ## Summary of Notation
 
@@ -467,8 +469,8 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\Omega = k_{t}^{\prime}-k_m$ | Excess time wave number; $\Omega = \sqrt{k_\Phi^{2}+k_m^{2}}-k_m = k_\Phi^{2}/2k_m+\cdots$ |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
-| $\vec F$, $\vec\nabla_{\pm,\Phi} = \partial/\partial \tau \pm i\nabla$, $\Box_{A,\Phi} = \partial^2/\partial \tau^2 - \Delta_\Phi$ | Constant complex-vector structural coefficient of the biwave system (Alexeyeva) and its operators; $\Box_{A,\Phi}$ is minus this article's $\Box_\Phi$ |
-| $\Box_{A,\Phi} + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi) = (\vec\nabla_{-,\Phi} - \vec F)(\vec\nabla_{+,\Phi} + \vec F)$ | The factorable operator of the vector-coefficient case |
+| $\vec F$, $\vec\nabla_{+} = \partial/\partial \tau + i\vec\nabla_\Phi$, $\vec\nabla_{-} = \partial/\partial \tau - i\vec\nabla_\Phi$, $\Box_A = \partial^2/\partial \tau^2 - \Delta_\Phi$ | Constant complex-vector structural coefficient of the biwave system (Alexeyeva) and its operators; $\Box_A$ is minus this article's $\Box_\Phi$ |
+| $\Box_A + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi) = (\vec\nabla_{-} - \vec F)(\vec\nabla_{+} + \vec F)$ | The factorable operator of the vector-coefficient case |
 
 ## Further Reading
 

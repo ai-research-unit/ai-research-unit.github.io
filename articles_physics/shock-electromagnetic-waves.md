@@ -120,10 +120,10 @@ The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific st
 
 ### A Constant Zeroth-Order Term Does Not Change the Jump Condition
 
-The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \vec\nabla_{+,\Phi} + f + F$, $\vec\nabla_{+,\Phi} = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
+The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F B = G$ with $D^+_F = \vec\nabla_{+} + f + F$, $\vec\nabla_{+} = \partial/\partial\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $B = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
 
 $$
-\vec\nabla_{+,\Phi} B = \{\vec\nabla_{+,\Phi} B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
+\vec\nabla_{+} B = \{\vec\nabla_{+} B\} + \{n_0 + i\vec u\}\circ[B]_F\,\delta_F ,
 \qquad
 (f+F)\circ B = \{(f+F)\circ B\} ,
 $$

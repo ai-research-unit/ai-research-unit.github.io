@@ -10,7 +10,9 @@ $$
 \tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
-with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost $\tilde U_{\Psi,\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor $\tilde u_{\mathrm r}$. The word is a bijection onto the N-regular set, so the eight real parameters are coordinates on the invertibles and no constraint is lost or added. The parent states this and the article uses it.
+with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost $\tilde U_{\Psi,\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi]$ the angle of the rotor $\tilde u_{\mathrm r}$. The word is a bijection onto the N-regular set, so the eight real parameters are coordinates on the invertibles and no constraint is lost or added. The parent states this and the article uses it.
+
+**The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
 
 **The equation.** The coupled pair is
 
@@ -263,7 +265,7 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 | $\varrho>0$ | Scale; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is the density |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; **the gauge-dependent coordinate** |
 | $\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
-| $\theta_{\mathrm{axr}}\in[0,2\pi)$ | Angle of the rotor $\tilde u_{\mathrm r}$; $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ |
+| $\theta_{\mathrm{axr}}\in[0,2\pi]$ | Angle of the rotor $\tilde u_{\mathrm r}$; $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Potential biquaternion; material sector; coefficients central in the abelian case |
 | $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ | Covariant derivative, left action |
 | $\frac{iϙ}{\hbar}\tilde A_\Phi$ | The added element: central imaginary slot plus Hermitian vector slot |

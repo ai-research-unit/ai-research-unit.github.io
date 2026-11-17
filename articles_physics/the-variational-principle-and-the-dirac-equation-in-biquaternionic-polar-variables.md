@@ -26,7 +26,9 @@ The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 
-**The parameters and their ranges.** $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$; $\theta_{\mathrm{axr}}\in[0,2\pi)$ with $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ unit real vectors. The density is $\rho_{\mathrm{num}}=\varrho^{2}$ and the Lorentz factor is $\gamma=\cosh\theta_{\mathrm{rpd}}$, so $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
+**The parameters and their ranges.** $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$; $\theta_{\mathrm{axr}}\in[0,2\pi]$ with $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ unit real vectors. The density is $\rho_{\mathrm{num}}=\varrho^{2}$ and the Lorentz factor is $\gamma=\cosh\theta_{\mathrm{rpd}}$, so $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
+
+**The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
 
 ## The Substitution: The Word and the Two Parts
 
@@ -338,7 +340,7 @@ The four brackets remain the natural form of the equation, and the parameter equ
 | $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | Scale and density |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Phase; conjugate momentum $\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ |
 | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}$ | Rapidity and boost axis; momenta zero identically |
-| $\theta_{\mathrm{axr}}\in[0,2\pi)$, $\vec u_{\mathrm r}$ | Rotor angle and axis; three momenta, non-zero away from rest |
+| $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ | Rotor angle and axis; three momenta, non-zero away from rest |
 | $\gamma=\cosh\theta_{\mathrm{rpd}}$ | Lorentz factor of the frame |
 | $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ | Frame idempotents; the parts are $\tilde\Xi\Pi_\pm$ |
 | $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ | Rotor's body angular velocity |

@@ -10,7 +10,9 @@ $$
 \tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}
 $$
 
-is a bijection onto the N-regular set, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi)$. The action is a functional of the pair $(\tilde\Xi_L,\tilde\Xi_R)$; the word is one word for the whole element; and the substitution is therefore a change of variables on the functional and not a new functional. **That much is bookkeeping, and this article says so at the start.**
+is a bijection onto the N-regular set, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$. The action is a functional of the pair $(\tilde\Xi_L,\tilde\Xi_R)$; the word is one word for the whole element; and the substitution is therefore a change of variables on the functional and not a new functional. **That much is bookkeeping, and this article says so at the start.**
+
+**The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
 
 **What is not bookkeeping.** A change of variables can be invertible on the fields and still change what the variation *does*, because the action's derivatives are taken before the substitution. Substitute a word with eight parameters into a first-order functional and the functional becomes first order in eight parameters — and first order in eight parameters is a **constrained system**. Some of the eight velocities do not appear. Some of the eight conjugate momenta vanish identically. The Euler–Lagrange equations are then not eight evolution equations; they are two evolution equations and six constraints, and a variational principle of that shape requires a constraint analysis before its content can be read.
 
@@ -279,7 +281,7 @@ The polar variational principle's genuine gain is therefore structural and not d
 | $\varrho>0$ | Scale; the density is not $\varrho^{2}$ |
 | $\theta_{\mathrm{pha}}$ | Phase; the only parameter with a velocity in the action |
 | $\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost |
-| $\theta_{\mathrm{axr}}\in[0,2\pi)$ | Rotor angle |
+| $\theta_{\mathrm{axr}}\in[0,2\pi]$ | Rotor angle |
 | $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | Density; the temporal slot of the current |
 | $V$ | Potential's scalar part in the frame; independent of $\varrho$ and $\theta_{\mathrm{pha}}$ |
 | $S$ | The polar action; one velocity, six constraints |

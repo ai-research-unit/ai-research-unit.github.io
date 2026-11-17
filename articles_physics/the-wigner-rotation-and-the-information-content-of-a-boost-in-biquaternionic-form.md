@@ -333,6 +333,7 @@ Because the boost parameter space is curved, a closed path of boosts that return
 - L. H. Thomas, "The kinematics of an electron with an axis," *Philosophical Magazine* **3** (1927) 1–22, for the detailed kinematical derivation.
 - F. R. Halpern, *Special Relativity and Quantum Mechanics* (Prentice-Hall, 1968), for the Wigner rotation and its composition properties.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 3rd ed., 1998), for Thomas precession and the composition of non-collinear boosts.
+- M. V. Berry and M. Visser, "Lorentz boosts and Wigner rotations: self-adjoint complexified quaternions," *Physics* **3** (2021) 352–366, for the same boost rotor written as the quaternion square root of the relative four-velocity, the explicit formulas for the composition of four-velocities and for the Wigner angle, and the reading of the Wigner rotation as the failure of associativity of that composition. Their complexified quaternions are the corpus's biquaternions, and their self-adjoint element is the corpus's Hermitian boost rotor.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the little-group construction and the transformation of one-particle states.
 - Asher Peres and Daniel R. Terno, "Quantum information and relativity theory," *Reviews of Modern Physics* **76** (2004) 93–123, for the Wigner rotation as an operation in relativistic quantum information.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor description of boosts and the composition of rotations.
