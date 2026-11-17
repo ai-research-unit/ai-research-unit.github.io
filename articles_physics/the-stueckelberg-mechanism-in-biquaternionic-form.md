@@ -158,7 +158,7 @@ V=\beta\left(\xi^*\xi-\tfrac{v^2}{2}\right)^2 ,
 \qquad
 D_\mu=\partial/\partial R_\mu+i\kappa A_\mu ,
 $$
-whose minimum is at $\vert\xi\vert=v/\sqrt2$. Writing the scalar in polar form, $\xi=\rho\,\exp(i\theta_{\mathrm{fld}})$ with $\rho$ the radial mode and $\theta_{\mathrm{fld}}$ the phase, the phase enters the covariant derivative only through
+whose minimum is at $\vert\xi\vert=v/\sqrt2$. Writing the scalar in polar form, $\xi=\varrho\,\exp(i\theta_{\mathrm{fld}})$ with $\varrho$ the radial mode and $\theta_{\mathrm{fld}}$ the phase, the phase enters the covariant derivative only through
 $$
 \frac{1}{\kappa}\partial/\partial R_\mu\,\theta_{\mathrm{fld}}
 $$
@@ -168,13 +168,13 @@ $$
 \qquad
 \theta_{\mathrm{fld}}=-\frac{\mu}{v}\,\xi ,
 $$
-with $\xi$ normalized as above. Conversely, the abelian Higgs is the **ultraviolet completion** of the Stueckelberg model: the Stueckelberg mass is a parameter $\mu$, and the Higgs provides a dynamical origin for it, $\mu=\kappa\langle\rho\rangle$, together with a radial mode that the Stueckelberg model omits. The two are the same gauge structure — an abelian vector and a shifting central phase — with different dynamics for the magnitude.
+with $\xi$ normalized as above. Conversely, the abelian Higgs is the **ultraviolet completion** of the Stueckelberg model: the Stueckelberg mass is a parameter $\mu$, and the Higgs provides a dynamical origin for it, $\mu=\kappa\langle\varrho\rangle$, together with a radial mode that the Stueckelberg model omits. The two are the same gauge structure — an abelian vector and a shifting central phase — with different dynamics for the magnitude.
 
 ### The Explicit Limit
 
-The reduction can be exhibited rather than asserted. Write the Higgs scalar in polar form, $\xi=\frac{1}{\sqrt2}(\rho+v)\exp(i\theta_{\mathrm{fld}})$ with $\rho$ the radial fluctuation, and expand the kinetic term. The phase appears only in the covariant combination
+The reduction can be exhibited rather than asserted. Write the Higgs scalar in polar form, $\xi=\frac{1}{\sqrt2}(\varrho+v)\exp(i\theta_{\mathrm{fld}})$ with $\varrho$ the radial fluctuation, and expand the kinetic term. The phase appears only in the covariant combination
 $$
-D_\mu\xi=\frac{1}{\sqrt2}\exp(i\theta_{\mathrm{fld}})\Big[\partial/\partial R_\mu\,\rho+i(\rho+v)\big(\partial/\partial R_\mu\,\theta_{\mathrm{fld}}+\kappa A_\mu\big)\Big],
+D_\mu\xi=\frac{1}{\sqrt2}\exp(i\theta_{\mathrm{fld}})\Big[\partial/\partial R_\mu\,\varrho+i(\varrho+v)\big(\partial/\partial R_\mu\,\theta_{\mathrm{fld}}+\kappa A_\mu\big)\Big],
 $$
 so the Goldstone enters through $A_\mu+\tfrac{1}{\kappa}\partial/\partial R_\mu\,\theta_{\mathrm{fld}}$, and the gauge transformation $\xi\mapsto \exp(+i\kappa\Gamma)\xi$, $A_\mu\mapsto A_\mu-\partial/\partial R_\mu\,\Gamma$ shifts $\theta_{\mathrm{fld}}\mapsto\theta_{\mathrm{fld}}+\kappa\Gamma$, the same transformation law the Stueckelberg field carries. The **Stueckelberg field** is the rescaled phase, with the sign fixed by the requirement that it shift as $\xi\mapsto\xi-\Gamma$ and whose invariant combination is $A_\mu-\partial/\partial R_\mu\,\xi$:
 $$
@@ -182,7 +182,7 @@ $$
 \qquad
 \mu=\kappa v=\frac{ϙ\,v}{\hbar},
 $$
-in terms of which the combination $A_\mu-\partial/\partial R_\mu\,\xi$ is invariant and the mass term takes the invariant form, with the Goldstone kinetic term and the mixing arranged as in the Stueckelberg Lagrangian. The radial mode $\rho$ has the mass $m_h^2=2\beta v^2$ and couples to the vector only through $\rho^2$ terms; taking $m_h\to\infty$ at fixed $v$ removes it from the low-energy theory, and what remains is the Stueckelberg model with the parameter $\mu=\kappa v$. The limit is the precise sense in which the Stueckelberg mechanism is the abelian Higgs with the magnitude frozen.
+in terms of which the combination $A_\mu-\partial/\partial R_\mu\,\xi$ is invariant and the mass term takes the invariant form, with the Goldstone kinetic term and the mixing arranged as in the Stueckelberg Lagrangian. The radial mode $\varrho$ has the mass $m_h^2=2\beta v^2$ and couples to the vector only through $\varrho^2$ terms; taking $m_h\to\infty$ at fixed $v$ removes it from the low-energy theory, and what remains is the Stueckelberg model with the parameter $\mu=\kappa v$. The limit is the precise sense in which the Stueckelberg mechanism is the abelian Higgs with the magnitude frozen.
 
 ### What Each Mechanism Requires
 
@@ -207,11 +207,11 @@ The Stueckelberg mechanism has one parameter and no potential; the Higgs mechani
 
 In the framework's terms the Stueckelberg field is the phase $\tilde Q_5$ of the central scalar
 $$
-\tilde{Ξ}_{\mathrm{St}}=\rho\,\exp(i\tilde Q_5)\in\mathbb{B}_{C},
+\tilde{Ξ}_{\mathrm{St}}=\varrho\,\exp(i\tilde Q_5)\in\mathbb{B}_{C},
 \qquad
 \tilde Q_5=\xi e_t\in\mathbb{B}_{C},
 $$
-so both lie in the same two-dimensional centre that carries the abelian gauge group. The invariant combination $\tilde A_{\Phi,\mathrm u}$ is what the covariant derivative of a central scalar produces: the covariant derivative $\tilde D\tilde{Ξ}_{\mathrm{St}}=(\tilde\nabla_\Phi+i\kappa\tilde A_{\Phi})\tilde{Ξ}_{\mathrm{St}}$ on a central scalar of constant magnitude $\rho$ has phase $\kappa\tilde A_{\Phi}+\tilde\nabla_\Phi\theta_{\mathrm{fld}}$, and the gauge-invariant content is the combination $\tilde A_{\Phi}+\tfrac{1}{\kappa}\tilde\nabla_\Phi\theta_{\mathrm{fld}}$ — the same $\tilde A_{\Phi,\mathrm u}$ up to the normalization of the phase. The Stueckelberg mass term is therefore the **biquaternion norm of the gauge-invariant derivative**, $-\tfrac12\mu^2\langle\tilde A_{\Phi,\mathrm u}\rangle_{\natural}$, and the algebra contains it because the centre contains the scalar and the material sector contains the vector.
+so both lie in the same two-dimensional centre that carries the abelian gauge group. The invariant combination $\tilde A_{\Phi,\mathrm u}$ is what the covariant derivative of a central scalar produces: the covariant derivative $\tilde D\tilde{Ξ}_{\mathrm{St}}=(\tilde\nabla_\Phi+i\kappa\tilde A_{\Phi})\tilde{Ξ}_{\mathrm{St}}$ on a central scalar of constant magnitude $\varrho$ has phase $\kappa\tilde A_{\Phi}+\tilde\nabla_\Phi\theta_{\mathrm{fld}}$, and the gauge-invariant content is the combination $\tilde A_{\Phi}+\tfrac{1}{\kappa}\tilde\nabla_\Phi\theta_{\mathrm{fld}}$ — the same $\tilde A_{\Phi,\mathrm u}$ up to the normalization of the phase. The Stueckelberg mass term is therefore the **biquaternion norm of the gauge-invariant derivative**, $-\tfrac12\mu^2\langle\tilde A_{\Phi,\mathrm u}\rangle_{\natural}$, and the algebra contains it because the centre contains the scalar and the material sector contains the vector.
 
 ### Why the Mechanism Is the Natural One for the Framework
 
@@ -262,7 +262,7 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $\mathbb{B}_{C}=\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ | Centre; home of the Stueckelberg scalar |
 | $\tilde{A}_{\Phi}\in\mathbb{B}_{\Phi}$, $\tilde{A}_{\Phi,2}=\tilde{A}_{\Phi}-\tilde\nabla_\Phi\Gamma$ | Abelian connection and its gauge law |
 | $\tilde Q_5=\xi e_t\in\mathbb{B}_{C}$, $\xi_2=\xi-\Gamma$ | Stueckelberg field and its shift |
-| $\tilde{Ξ}_{\mathrm{St}}=\rho\,\exp(i\tilde Q_5)\in\mathbb{B}_{C}$ | Central scalar whose phase is the Stueckelberg field |
+| $\tilde{Ξ}_{\mathrm{St}}=\varrho\,\exp(i\tilde Q_5)\in\mathbb{B}_{C}$ | Central scalar whose phase is the Stueckelberg field |
 | $\tilde A_{\Phi,\mathrm u}=\tilde A_{\Phi}-\tilde\nabla_\Phi\xi$ | Gauge-invariant combination; the connection in the unitary gauge |
 | $\mathcal{L}_{\mathrm{S}}=-\tfrac12\mathrm{Re}\langle\tilde F\rangle_{\natural}-\tfrac12\mu^2\langle\tilde A_{\Phi,\mathrm u}\rangle_{\natural}$ | Stueckelberg Lagrangian |
 | $\mu$ | Stueckelberg mass (a parameter) |
@@ -276,7 +276,7 @@ The mechanism is the abelian Higgs with the radial mode removed: the Stueckelber
 | $V=\beta(\xi^*\xi-v^2/2)^2$, $\vert\xi\vert=v/\sqrt2$ | Abelian Higgs potential and vacuum value |
 | $\mu=\kappa v=\frac{ϙ\,v}{\hbar}$ | Higgs origin of the mass; $\kappa=\frac{ϙ}{\hbar}$ |
 | $m_h^2=2\beta v^2$ | Radial-mode mass |
-| $\xi=\rho \exp(i\theta_{\mathrm{fld}})$, $\theta_{\mathrm{fld}}=-(\mu/v)\,\xi$ | Polar form; $\xi$ the Stueckelberg field |
+| $\xi=\varrho \exp(i\theta_{\mathrm{fld}})$, $\theta_{\mathrm{fld}}=-(\mu/v)\,\xi$ | Polar form; $\xi$ the Stueckelberg field |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
 | $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 

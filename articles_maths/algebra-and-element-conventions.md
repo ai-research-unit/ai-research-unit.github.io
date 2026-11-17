@@ -285,7 +285,7 @@ The maps of the layer are the bar, the tessarine sign, the star that is their co
 **The four-factor refinement has one name and it is the complete polar decomposition.** On the regular elements $\langle\tilde Q\rangle_{\natural}\neq0$ the pair refines into
 
 $$
-\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
+\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
 $$
 
 with the scale $r>0$, the central phase $e^{i\theta_{\mathrm{pha}}}$ of modulus one on the branch $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, the Hermitian positive boost $\tilde U_{\mathrm b}$ of norm one and the unit real quaternion rotor $\tilde u_{\mathrm r}$. The plain name is kept for the pair: *the polar decomposition* is the two-factor word, and *complete* marks the refinement into four factors, one per slot, $1+1+3+3$ real parameters. The word is defined and proved in *The Complete Polar Decomposition of an N-Regular Biquaternion*.

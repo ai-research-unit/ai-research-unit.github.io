@@ -40,14 +40,13 @@ The two levels are collected in the table.
 | modulus–unit | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=(\varrho e^{i\theta_{\mathrm{pha}}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | $2$ | $2+6$ |
 | complete polar decomposition | $\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
 
-**Each factor is an exponential, and the word has a second face.** The boost and the rotor are exponentials of one real parameter along one real unit axis,
+The word has a second face, in which the boost and the rotor are written as exponentials:
 
 $$
-\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
-\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr),
+\boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
 $$
 
-with the rapidity $\theta_{\mathrm{rpd}}\ge0$ and the rotor angle $\theta_{\mathrm{axr}}\in[0,2\pi]$, while the scale and the phase are the logarithm and the argument of the modulus. The closed forms of §*The Four Factors* compute the same four factors; the exponents display their ranges, and §*The Result in Terms of the Coordinates* gives the seven data that determine them. The four exponents do not add. Their sum is a formal exponent whose exponential misses the element off the normal set, and §*The Logarithm* computes the defect.
+**Each factor is an exponential.** The boost and the rotor are exponentials of one real parameter along one real unit axis, with the rapidity $\theta_{\mathrm{rpd}}\ge0$ and the rotor angle $\theta_{\mathrm{axr}}\in[0,2\pi]$, while the scale and the phase are the logarithm and the argument of the modulus. The closed forms of §*The Four Factors* compute the same four factors; the exponents display their ranges, and §*The Result in Terms of the Coordinates* gives the seven data that determine them. The four exponents do not add. Their sum is a formal exponent whose exponential misses the element off the normal set, and §*The Logarithm* computes the defect.
 
 **One theory, two strata.** The existence of the word is a property of the group of invertibles alone. The second invariant, the vector form $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, decides only its shape. Off the wall $B^{2}\neq0$ the element has two distinct eigenvalues and an eigenbasis, and the spectral reading is available. On the wall $B^{2}=0$ the two eigenvalues coalesce, the eigenbasis disappears, and the unit factor is $\pm$unipotent. The word survives the passage to the wall, because it is a decomposition of the group and not of the element. The spectrum does not survive. That contrast is the spine of the article, and it is the reason the two cases are one theory and not two.
 

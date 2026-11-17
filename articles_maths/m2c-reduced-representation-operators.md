@@ -102,13 +102,13 @@ so the orthogonal group of the family is the **four-group** $\{\pm1,\pm j\}$, of
 
 **The polar word in the model.** Every element has the modulus–unit form
 $$
-\breve Q=\rho\,e^{\theta_{\mathrm{rpd}} j}e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}=\rho\,\breve r\,\breve u,
+\breve Q=\varrho\,e^{\theta_{\mathrm{rpd}} j}e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}=\varrho\,\breve r\,\breve u,
 $$
 with $\breve r=\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}$ and $\breve u=e^{i\theta_{\mathrm{pha}}}e^{ij\theta_{\mathrm{phb}}}$, and the model multiplies the three factors because it is multiplicative:
 $$
-\mathsf M(\breve Q)=\rho\,\mathsf M(\breve r)\,\mathsf M(\breve u).
+\mathsf M(\breve Q)=\varrho\,\mathsf M(\breve r)\,\mathsf M(\breve u).
 $$
-The three factors are read off in the frame. The modulus $\rho$ is the scalar. The boost factor is the **symmetric positive definite** matrix
+The three factors are read off in the frame. The modulus $\varrho$ is the scalar. The boost factor is the **symmetric positive definite** matrix
 $$
 \mathsf M(\breve r)=\begin{pmatrix}\cosh\theta_{\mathrm{rpd}}&\sinh\theta_{\mathrm{rpd}}\\ \sinh\theta_{\mathrm{rpd}}&\cosh\theta_{\mathrm{rpd}}\end{pmatrix},\qquad \text{eigenvalues } e^{\theta_{\mathrm{rpd}}},e^{-\theta_{\mathrm{rpd}}},
 $$
@@ -120,7 +120,7 @@ so the two circular components of the unit are the sum and the difference of the
 
 **The full boost and the absent half-angle.** The eigenvalues of $\mathsf M(\breve r)$ are $e^{\pm\theta_{\mathrm{rpd}}}$ and not $e^{\pm\theta_{\mathrm{rpd}}/2}$, so the model carries the boost with the **full** rapidity. That is not a convention: the map $\breve Q\mapsto\mathsf M(\breve Q)$ is faithful, so there is no sign ambiguity, no kernel $\{\pm\mathrm I_{2}\}$, and no double cover. The contrast is with the Lorentz spinor of the biquaternion category, where the element of $SL_{2}(\mathbb{C})$ carried the half-angle and the map to the proper orthochronous Lorentz group had the kernel $\{\pm\mathrm I_{2}\}$: here there is no spin, and the matrix models the transformation and not its two-fold cover. This is the operator form of the sentence that the category has an idempotent frame and a matrix model and no spin.
 
-**The cancelled phases.** The modulus $\rho$ absorbs the product of the two circular components, $|Q_{+}||Q_{-}|=\rho^{2}$, and the boost absorbs their ratio, $|Q_{+}|/|Q_{-}|=e^{2\theta_{\mathrm{rpd}}}$. So the two moduli carry one scale and one boost and no more, and the four real parameters of the element are the scale, the boost and the two phases. In the model the two phases are the arguments of $Q_{+}$ and $Q_{-}$, that is the two diagonal entries of the frame, and the boost and the scale are their moduli: the polar word is the polar decomposition of the diagonal matrix, read back in the basis $(1,j)$.
+**The cancelled phases.** The modulus $\varrho$ absorbs the product of the two circular components, $|Q_{+}||Q_{-}|=\varrho^{2}$, and the boost absorbs their ratio, $|Q_{+}|/|Q_{-}|=e^{2\theta_{\mathrm{rpd}}}$. So the two moduli carry one scale and one boost and no more, and the four real parameters of the element are the scale, the boost and the two phases. In the model the two phases are the arguments of $Q_{+}$ and $Q_{-}$, that is the two diagonal entries of the frame, and the boost and the scale are their moduli: the polar word is the polar decomposition of the diagonal matrix, read back in the basis $(1,j)$.
 
 ## The Two-Sided Operator and the Kernel of the Two-Sided Operator
 

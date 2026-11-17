@@ -56,7 +56,7 @@ The algebra is **reduced**: if $\breve X^{2}=0$, both eigenvalues of $\breve X$ 
 
 Every elementary function of this article is the spectral function of its complex counterpart. The rule is stated once.
 
-**Theorem (Idempotent Principle).** Let $f(x)=\sum c_nx^n$ be a complex power series with radius of convergence $\rho$, and let $\lvert\lambda_1\rvert,\lvert\lambda_2\rvert<\rho$. Then
+**Theorem (Idempotent Principle).** Let $f(x)=\sum c_nx^n$ be a complex power series with radius of convergence $R$, and let $\lvert\lambda_1\rvert,\lvert\lambda_2\rvert<R$. Then
 
 $$
 \boxed{\;
@@ -233,27 +233,27 @@ where $\operatorname{Log}$ on the right is the principal complex logarithm, with
 
 For the principal branch, taking the real and imaginary parts of the two coefficients gives the four real components of the logarithm.
 
-| Component | Name | Value from $\lambda_1,\lambda_2$ | Value in $(\rho,\theta_{\mathrm{rpd}},\alpha,\beta)$ |
+| Component | Name | Value from $\lambda_1,\lambda_2$ | Value in $(\varrho,\theta_{\mathrm{rpd}},\alpha,\beta)$ |
 |---|---|---|---|
-| $q_{\log\blacktriangle}$ | logarithmic scale | $\tfrac12\ln\lvert \lambda_1\lambda_2\rvert=\tfrac12\ln\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert$ | $\ln\rho$ |
+| $q_{\log\blacktriangle}$ | logarithmic scale | $\tfrac12\ln\lvert \lambda_1\lambda_2\rvert=\tfrac12\ln\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert$ | $\ln\varrho$ |
 | $q'_{\log\blacktriangle}$ | scalar phase | $\tfrac12\bigl(\operatorname{Arg}(\lambda_1)+\operatorname{Arg}(\lambda_2)\bigr)$ | $\alpha$ |
 | $q_{\log\blacktriangledown}$ | boost | $\tfrac12\ln\lvert \lambda_1/\lambda_2\rvert$ | $\theta_{\mathrm{rpd}}$ |
 | $q'_{\log\blacktriangledown}$ | split phase | $\tfrac12\bigl(\operatorname{Arg}(\lambda_1)-\operatorname{Arg}(\lambda_2)\bigr)$ | $\beta$ |
 
-Here $\rho=\sqrt{\lvert \lambda_1\lambda_2\rvert}=\sqrt{\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert}$ and $\operatorname{Arg}$ is the principal argument in $(-\pi,\pi]$. For another branch, the pair $(\alpha,\beta)$ is shifted by a lattice vector. The logarithm is the sum of the four basis terms,
+Here $\varrho=\sqrt{\lvert \lambda_1\lambda_2\rvert}=\sqrt{\lvert\langle\breve Q\rangle_{\mathrm{ts}}\rvert}$ and $\operatorname{Arg}$ is the principal argument in $(-\pi,\pi]$. For another branch, the pair $(\alpha,\beta)$ is shifted by a lattice vector. The logarithm is the sum of the four basis terms,
 
 $$
 \breve Q_{\log}=q_{\log\blacktriangle}+jq_{\log\blacktriangledown}+iq'_{\log\blacktriangle}+ijq'_{\log\blacktriangledown}
-=\ln\rho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta,
+=\ln\varrho+j\theta_{\mathrm{rpd}}+i\alpha+ij\beta,
 $$
 
 and the exponential reassembles them:
 
 $$
-\breve Q=\exp\breve Q_{\log}=\rho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
+\breve Q=\exp\breve Q_{\log}=\varrho\bigl(\cosh\theta_{\mathrm{rpd}}+j\sinh\theta_{\mathrm{rpd}}\bigr)\bigl(\cos\alpha+i\sin\alpha\bigr)\bigl(\cos\beta+ij\sin\beta\bigr).
 $$
 
-The component $q_{\log\blacktriangle}=\ln\rho$ sets the overall size, $q_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}$ the relative scale of the two eigenvalues, and the two primed components are the phases $\alpha$ and $\beta$.
+The component $q_{\log\blacktriangle}=\ln\varrho$ sets the overall size, $q_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}$ the relative scale of the two eigenvalues, and the two primed components are the phases $\alpha$ and $\beta$.
 
 **Example.** For $\breve Q=3+4i+j(1-i)$ the coefficients are $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$, so $\lambda_1=4+3i$ and $\lambda_2=2+5i$. The principal complex logarithms are
 
@@ -720,8 +720,8 @@ The table compares the elementary functions across the three algebras; in the bi
 | $\bar{\breve Q}=\bar Q_{\blacktriangle}+j\bar Q_{\blacktriangledown}$ | the bar |
 | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | the reduced norm |
 | $\langle\breve Q\rangle_{\mathrm{ts}*}=\lvert Q_{\blacktriangle}\rvert^{2}+\lvert Q_{\blacktriangledown}\rvert^{2}$ | the squared Euclidean norm |
-| $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ | a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\rho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}+i\beta$ |
-| $q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}$ | the four real components of the logarithm: $\ln\rho,\alpha,\theta_{\mathrm{rpd}},\beta$ |
+| $\breve Q_{\log}=Q_{\log\blacktriangle}+jQ_{\log\blacktriangledown}$ | a logarithm, with $Q_{\log\blacktriangle}=q_{\log\blacktriangle}+iq'_{\log\blacktriangle}=\ln\varrho+i\alpha$ and $Q_{\log\blacktriangledown}=q_{\log\blacktriangledown}+iq'_{\log\blacktriangledown}=\theta_{\mathrm{rpd}}+i\beta$ |
+| $q_{\log\blacktriangle},q'_{\log\blacktriangle},q_{\log\blacktriangledown},q'_{\log\blacktriangledown}$ | the four real components of the logarithm: $\ln\varrho,\alpha,\theta_{\mathrm{rpd}},\beta$ |
 | $\exp\breve Q=\exp(Q_{\blacktriangle})(\cosh Q_{\blacktriangledown}+j\sinh Q_{\blacktriangledown})$ | the exponential |
 | $\operatorname{Log}\breve Q$ | the principal logarithm |
 | $D$ | the principal diamond $\lvert\operatorname{Im}Q_{\log\blacktriangle}\rvert+\lvert\operatorname{Im}Q_{\log\blacktriangledown}\rvert\le\pi$ |

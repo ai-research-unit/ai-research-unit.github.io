@@ -271,7 +271,7 @@ The reason is that each half already spans the algebra over $\mathbb{C}$: $i\mat
 
 **The Hermitian pair is the case $\lambda=1$.** The theorem is a statement about the shape of the operator, not about the size of the parameter. The Hermitian pair is $\tilde B=\tilde A^{*}$, that is $\lambda=1$, the positive end of the ray. It preserves both halves with no hypothesis on $\tilde Q$ because $1$ is real. The hypothesis that does the work in §*The Condition Is Empty* is exactly this: the Hermitian pair sits at a real $\lambda$.
 
-**The direction of $\lambda$.** Write $\lambda=\rho e^{i\theta}$ with $\rho>0$. Then
+**The direction of $\lambda$.** Write $\lambda=\varrho e^{i\theta}$ with $\varrho>0$. Then
 
 $$
 L_{\tilde A}R_{\lambda\tilde A^{*}}=\lambda\,\mathrm{Hp}_{\tilde A},

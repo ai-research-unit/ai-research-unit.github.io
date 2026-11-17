@@ -36,7 +36,7 @@ So complex harmonic analysis is, at the level of the additive group, the same as
 The multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ is also a locally compact abelian group, isomorphic to $\mathbb{R}_{>0} \times \mathbb{S}^1$ via the polar decomposition
 
 $$
-Q = r \exp(i\theta), \qquad r > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
+Q = \varrho \exp(i\theta), \qquad \varrho > 0, \; \theta \in \mathbb{R}/2\pi\mathbb{Z}.
 $$
 
 Its characters are
@@ -160,7 +160,7 @@ $$
 The **indicator function** of $F$ is
 
 $$
-h_F(\theta) = \limsup_{r \to \infty} \frac{\log |F(r \exp(i\theta))|}{r}.
+h_F(\theta) = \limsup_{\varrho \to \infty} \frac{\log |F(\varrho \exp(i\theta))|}{\varrho}.
 $$
 
 ### The Paley–Wiener Theorem
@@ -264,7 +264,7 @@ in the sense of distributions. This is the starting point of the theory of the *
 The **Hardy space** $H^p(D)$ on the unit disk $D = \{Q : \sqrt{\langle Q\rangle_{*}} < 1\}$ is the set of holomorphic functions $f$ on $D$ with
 
 $$
-\|f\|_{H^p} = \sup_{0 < r < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(r \exp(i\theta))|^p \, d\theta \right)^{1/p} < \infty
+\|f\|_{H^p} = \sup_{0 < \varrho < 1} \left( \frac{1}{2\pi} \int_0^{2\pi} |f(\varrho \exp(i\theta))|^p \, d\theta \right)^{1/p} < \infty
 $$
 
 for $1 \leq p < \infty$, and

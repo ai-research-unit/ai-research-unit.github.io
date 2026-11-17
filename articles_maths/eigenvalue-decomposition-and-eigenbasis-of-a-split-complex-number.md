@@ -574,11 +574,11 @@ $$
 Then
 
 $$
-Q=r\bigl(\cosh t+j\sinh t\bigr),
+Q=\varrho\bigl(\cosh t+j\sinh t\bigr),
 \qquad
-\lambda_+=r\exp(t),
+\lambda_+=\varrho\exp(t),
 \qquad
-\lambda_-=r\exp(-t).
+\lambda_-=\varrho\exp(-t).
 $$
 
 In this form,
@@ -607,12 +607,12 @@ q=\frac{\lambda_++\lambda_-}{2},
 q'=\frac{\lambda_+-\lambda_-}{2}.
 $$
 
-The four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$ are cut out by the signs of $\lambda_+$ and $\lambda_-$, in the patterns $(+,+)$, $(-,-)$, $(+,-)$ and $(-,+)$. The identity component is the pattern $(+,+)$. On the opposite timelike component, where $\langle Q\rangle_{*}>0$ and $q<0$, the pattern is $(-,-)$, and with the same $r$ and $t=\operatorname{artanh}(q'/q)$ the writing $Q=-r(\cosh t+j\sinh t)$ gives $\lambda_\pm=-r\exp(\pm t)$. In the spacelike regime $\langle Q\rangle_{*}<0$, the two eigenvalues have opposite signs; with the same modulus $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and with $\varepsilon=\operatorname{sgn}q'\in\{\pm1\}$, one has $q=r\sinh s$, $q'=\varepsilon r\cosh s$, and
+The four components of ${\mathbb{C}_{\mathrm{spl}}}^\times$ are cut out by the signs of $\lambda_+$ and $\lambda_-$, in the patterns $(+,+)$, $(-,-)$, $(+,-)$ and $(-,+)$. The identity component is the pattern $(+,+)$. On the opposite timelike component, where $\langle Q\rangle_{*}>0$ and $q<0$, the pattern is $(-,-)$, and with the same $r$ and $t=\operatorname{artanh}(q'/q)$ the writing $Q=-\varrho(\cosh t+j\sinh t)$ gives $\lambda_\pm=-\varrho\exp(\pm t)$. In the spacelike regime $\langle Q\rangle_{*}<0$, the two eigenvalues have opposite signs; with the same modulus $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ and with $\varepsilon=\operatorname{sgn}q'\in\{\pm1\}$, one has $q=r\sinh s$, $q'=\varepsilon \varrho\cosh s$, and
 
 $$
-\lambda_+=\varepsilon r\exp(\varepsilon s),
+\lambda_+=\varepsilon \varrho\exp(\varepsilon s),
 \qquad
-\lambda_-=-\varepsilon r\exp(-\varepsilon s).
+\lambda_-=-\varepsilon \varrho\exp(-\varepsilon s).
 $$
 
 The full modulus–unit statement is *Modulus–Unit Polar Decomposition of Split-Complex Numbers*, §*The Two Factors*. On the identity component the polar form writes $Q$ as a positive scale times a unit factor, while the eigenvalue decomposition writes $Q$ as a linear combination of the two idempotents with the eigenvalues $\lambda_\pm=q\pm q'$ as coefficients. The two readings carry the same data: the scale is $r=\sqrt{\lambda_+\lambda_-}$ and the unit factor is $\exp(tj)$, whose eigenvalues are $\exp(\pm t)$.
@@ -746,7 +746,7 @@ The zero-divisor row is a subcase of the distinct row, separated because one eig
 | Jordan | absent: the algebra is reduced | — | — | — |
 | Nilpotent | absent; only $Q=0$ | — | — | — |
 
-The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{C}_{\mathrm{spl},\sigma\tau}=\Pi_\sigma\mathbb{C}_{\mathrm{spl}}\Pi_\tau$. Its off-diagonal corners vanish, and its diagonal part is the whole algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The element $Q$ has the diagonal coordinates $\lambda_+=q+q'$ and $\lambda_-=q-q'$ and zero mixed coordinates. The centraliser of $Q$ is all of $\mathbb{C}_{\mathrm{spl}}$; the subalgebra $\mathbb{R}[Q]$ is all of $\mathbb{C}_{\mathrm{spl}}$ exactly when $Q$ is not scalar. The polynomial calculus, the inverse and the group isomorphism ${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ all follow from the decomposition. The hyperbolic polar form gives the same data as $\lambda_\pm=r \exp(\pm t)$ on the identity component.
+The Peirce decomposition relative to $\Pi_+$ has corners $\mathbb{C}_{\mathrm{spl},\sigma\tau}=\Pi_\sigma\mathbb{C}_{\mathrm{spl}}\Pi_\tau$. Its off-diagonal corners vanish, and its diagonal part is the whole algebra $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}\Pi_+\oplus\mathbb{R}\Pi_-$. The element $Q$ has the diagonal coordinates $\lambda_+=q+q'$ and $\lambda_-=q-q'$ and zero mixed coordinates. The centraliser of $Q$ is all of $\mathbb{C}_{\mathrm{spl}}$; the subalgebra $\mathbb{R}[Q]$ is all of $\mathbb{C}_{\mathrm{spl}}$ exactly when $Q$ is not scalar. The polynomial calculus, the inverse and the group isomorphism ${\mathbb{C}_{\mathrm{spl}}}^\times\cong\mathbb{R}^\times\times\mathbb{R}^\times$ all follow from the decomposition. The hyperbolic polar form gives the same data as $\lambda_\pm=\varrho \exp(\pm t)$ on the identity component.
 
 ### Comparison with the Neighbouring Cases
 
@@ -799,7 +799,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $C(Q)=\mathbb{C}_{\mathrm{spl}}$ | Centraliser; the algebra is commutative |
 | ${\mathbb{C}_{\mathrm{spl}}}^\times=\{Q\in\mathbb{C}_{\mathrm{spl}}:\langle Q\rangle_{*}\neq0\}$ | Group of invertibles, characterised by $\lambda_+\lambda_-\neq0$ |
 | $L=\{(m/2,n/2):m,n\in\mathbb{Z},\ m\equiv n\pmod2\}$ | Lattice of basis-coordinate data for integral eigenvalue coordinates $\mu_\pm\in\mathbb{Z}$ |
-| $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $t=\operatorname{artanh}(q'/q)$ | Modulus and hyperbolic angle, with $\lambda_\pm=r \exp(\pm t)$ on the identity component |
+| $r=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$, $t=\operatorname{artanh}(q'/q)$ | Modulus and hyperbolic angle, with $\lambda_\pm=\varrho \exp(\pm t)$ on the identity component |
 | $Q_2=a_1\Pi_++a_2\Pi_-$ | General element in the spinor coordinates, with matrix $\operatorname{diag}(a_1,a_2)$ |
 | $Q_2=\mu_+\Pi_++\mu_-\Pi_-$ | General element in the eigenvalue coordinates |
 | $\mu$ | A test scalar in the definition of an eigenvalue |

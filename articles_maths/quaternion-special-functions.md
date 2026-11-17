@@ -200,27 +200,27 @@ $$
 
 On the positive real axis $\vec q=0$ and the identity is $\exp(\ln r)=r$.
 
-*Left inverse, up to whole turns.* For $\tilde q=q_t+v$ with $v$ pure and $\rho=\sqrt{\langle\vec v\rangle_{\natural}}$, the element $\tilde q$ is a logarithm of $\exp\tilde q$, but the principal logarithm may choose another representative. If $0\le\rho<\pi$ then
+*Left inverse, up to whole turns.* For $\tilde q=q_t+v$ with $v$ pure and $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$, the element $\tilde q$ is a logarithm of $\exp\tilde q$, but the principal logarithm may choose another representative. If $0\le\theta<\pi$ then
 
 $$
 \log(\exp\tilde q)=\tilde q .
 $$
 
-If $\pi<\rho<3\pi$ then
+If $\pi<\theta<3\pi$ then
 
 $$
 \log(\exp\tilde q)=\tilde q-2\pi\operatorname{sgn}\tilde q .
 $$
 
-At $\rho=\pi$ and at $\rho=3\pi$ the element $\exp\tilde q=-e^{q_t}$ is a negative real, outside the domain, and the principal logarithm is not defined. The general rule is
+At $\theta=\pi$ and at $\theta=3\pi$ the element $\exp\tilde q=-e^{q_t}$ is a negative real, outside the domain, and the principal logarithm is not defined. The general rule is
 
 $$
 \log(\exp\tilde q)=\tilde q-2\pi m\operatorname{sgn}\tilde q,
 $$
 
-where $m$ is the nearest integer to $\rho/2\pi$, whenever $\rho$ is not an odd multiple of $\pi$.
+where $m$ is the nearest integer to $\theta/2\pi$, whenever $\theta$ is not an odd multiple of $\pi$.
 
-**Proof.** By Euler's formula, $\exp\tilde q=e^{q_t}(\cos\rho+\hat v\sin\rho)$, with scalar part $e^{q_t}\cos\rho$ and vector part $e^{q_t}\sin\rho\,\hat v$. The principal argument is $\arccos(\cos\rho)\in[0,\pi)$, and the direction is $\operatorname{sgn}(\sin\rho)\hat v$. On $(0,\pi)$ the arccos is $\rho$ and the sign is $+1$; on $(\pi,2\pi)$ it is $2\pi-\rho$ and the sign is $-1$; on $(2\pi,3\pi)$ it is $\rho-2\pi$ and the sign is $+1$. The last two give $q_t+(\rho-2\pi)\hat v=\tilde q-2\pi\hat v$, and $\rho=2\pi$ joins them by continuity.
+**Proof.** By Euler's formula, $\exp\tilde q=e^{q_t}(\cos\theta+\hat v\sin\theta)$, with scalar part $e^{q_t}\cos\theta$ and vector part $e^{q_t}\sin\theta\,\hat v$. The principal argument is $\arccos(\cos\theta)\in[0,\pi)$, and the direction is $\operatorname{sgn}(\sin\theta)\hat v$. On $(0,\pi)$ the arccos is $\theta$ and the sign is $+1$; on $(\pi,2\pi)$ it is $2\pi-\theta$ and the sign is $-1$; on $(2\pi,3\pi)$ it is $\theta-2\pi$ and the sign is $+1$. The last two give $q_t+(\theta-2\pi)\hat v=\tilde q-2\pi\hat v$, and $\theta=2\pi$ joins them by continuity.
 
 The asymmetry is the content of the word multivalued: the exponential is many-to-one, and the principal logarithm inverts it on one representative of each fibre.
 

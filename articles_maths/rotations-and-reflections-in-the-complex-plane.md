@@ -150,7 +150,7 @@ $$
 \{Q \in \mathbb{C} : S_u(Q) = Q\} = \{t \exp(i\theta_{\mathrm{lna}}) : t \in \mathbb{R}\}.
 $$
 
-**Proof.** The equation $u\bar Q = Q$ is equivalent, after multiplying by $\bar u = u^{-1}$, to $\bar Q = \bar u Q$. Write $Q = r\exp(i\theta)$ with $r \ge 0$; then $\exp(-i\theta) = \exp(-2i\theta_{\mathrm{lna}}) \exp(i\theta)$, that is, $\exp(2i\theta) = \exp(2i\theta_{\mathrm{lna}})$, so $\theta \equiv \theta_{\mathrm{lna}} \pmod \pi$. Conversely every $Q = t\exp(i\theta_{\mathrm{lna}})$ with $t$ real satisfies $u\bar Q = \exp(2i\theta_{\mathrm{lna}})t \exp(-i\theta_{\mathrm{lna}}) = t \exp(i\theta_{\mathrm{lna}}) = Q$.
+**Proof.** The equation $u\bar Q = Q$ is equivalent, after multiplying by $\bar u = u^{-1}$, to $\bar Q = \bar u Q$. Write $Q = \varrho\exp(i\theta)$ with $\varrho \ge 0$; then $\exp(-i\theta) = \exp(-2i\theta_{\mathrm{lna}}) \exp(i\theta)$, that is, $\exp(2i\theta) = \exp(2i\theta_{\mathrm{lna}})$, so $\theta \equiv \theta_{\mathrm{lna}} \pmod \pi$. Conversely every $Q = t\exp(i\theta_{\mathrm{lna}})$ with $t$ real satisfies $u\bar Q = \exp(2i\theta_{\mathrm{lna}})t \exp(-i\theta_{\mathrm{lna}}) = t \exp(i\theta_{\mathrm{lna}}) = Q$.
 
 Every reflection is thus determined by its fixed line: $S_u$ is the reflection in the line through the origin at angle $\theta_{\mathrm{lna}}$, where $u = \exp(2i\theta_{\mathrm{lna}})$. On that line $S_u$ acts as $+1$; on the perpendicular line of direction $\exp(i(\theta_{\mathrm{lna}} + \pi/2))$ it acts as $-1$, since $S_u(\exp(i(\theta_{\mathrm{lna}}+\pi/2))) = \exp(2i\theta_{\mathrm{lna}}) \exp(-i(\theta_{\mathrm{lna}}+\pi/2)) = \exp(i(\theta_{\mathrm{lna}} - \pi/2)) = -\exp(i(\theta_{\mathrm{lna}}+\pi/2))$. The eigenvalues of $S_u$ are therefore $+1$ and $-1$.
 

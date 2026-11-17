@@ -95,7 +95,7 @@ The scalar $\langle\cdot\rangle_{*}$ is the norm of the split-complex algebra as
 - The **triangle inequality** fails. For $Q=1+j$ and $B=1-j$ one has $\langle Q\rangle_{*}=\langle B\rangle_{*}=0$ while $\langle Q+B\rangle_{*}=\langle2\rangle_{*}=4$, so $\langle Q+B\rangle_{*}\le\langle Q\rangle_{*}+\langle B\rangle_{*}$ is false.
 - The **scaling axiom** holds for real scalars in the quadratic form, $\langle\lambda Q\rangle_{*}=\lambda^{2}\langle Q\rangle_{*}$ for $\lambda\in\mathbb{R}$, and the square root $\sqrt{|\langle\cdot\rangle_{*}|}$ is absolutely homogeneous and multiplicative, but it is not subadditive.
 
-So $\langle\cdot\rangle_{*}$ is a real-valued multiplicative semi-norm: multiplicative, homogeneous of degree two over the real scalars, indefinite, and vanishing exactly on the zero divisors and the origin. The absolute value $\rho=\sqrt{|\langle Q\rangle_{*}|}$ is the **modulus** of the polar decomposition; it is multiplicative and absolutely homogeneous, positive exactly on the invertibles, and it is not a norm because it vanishes on the null cone.
+So $\langle\cdot\rangle_{*}$ is a real-valued multiplicative semi-norm: multiplicative, homogeneous of degree two over the real scalars, indefinite, and vanishing exactly on the zero divisors and the origin. The absolute value $\varrho=\sqrt{|\langle Q\rangle_{*}|}$ is the **modulus** of the polar decomposition; it is multiplicative and absolutely homogeneous, positive exactly on the invertibles, and it is not a norm because it vanishes on the null cone.
 
 ## The Unique Real Norm
 
@@ -346,7 +346,7 @@ an abelian group with four connected components and non-compact, in contrast wit
 | $Q_{\pm}=q\pm q'$ | Idempotent coordinates, $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |
 | $\mathcal{N}=\{\langle Q\rangle_{*}=0\}$ | Isotropic cone, the two null lines $\mathbb{R}\Pi_{\pm}$ |
-| $\rho=\sqrt{|\langle Q\rangle_{*}|}=\sqrt{|Q_{+}Q_{-}|}$ | Modulus, multiplicative and absolutely homogeneous |
+| $\varrho=\sqrt{|\langle Q\rangle_{*}|}=\sqrt{|Q_{+}Q_{-}|}$ | Modulus, multiplicative and absolutely homogeneous |
 | $\|Q\|=\sqrt{q^{2}+q'^{2}}$ | Euclidean norm, the positive definite real norm |
 | $\langle Q,B\rangle_{E}=qb+q'b'$ | Euclidean inner product |
 | $H(Q_1,Q_2)=Q_1\bar Q_2=(q_1q_2-q'_1q'_2)+j(q'_1q_2-q_1q'_2)$ | Hermitian form; real part $g$, indefinite |

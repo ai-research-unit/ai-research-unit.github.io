@@ -28,7 +28,7 @@ $$
 The **quaternion polar form** of a nonzero quaternion $\tilde q \in \mathbb{H}$ is
 
 $$
-\tilde q = r \exp(\mu \lVert\vec Q\rVert) = r(\cos\lVert\vec Q\rVert + \mu \sin\lVert\vec Q\rVert),
+\tilde q = \varrho \exp(\mu \lVert\vec Q\rVert) = \varrho(\cos\lVert\vec Q\rVert + \mu \sin\lVert\vec Q\rVert),
 $$
 
 where $r = |\tilde q| \geq 0$, $\mu$ is a unit pure real quaternion (the axis), and $\lVert\vec Q\rVert \in \mathbb{R}$ is the angle. The axis is defined when the vector part of $\tilde q$ is nonzero; when $\tilde q$ is a real scalar, the polar form reduces to $\tilde q = r$ (or $\tilde q = -r$, with $\lVert\vec Q\rVert = \pi$).
@@ -412,7 +412,7 @@ The elementary functions of several split biquaternion variables are largely ope
 | $\exp, \log$ | Split biquaternion exponential and logarithm |
 | $\sin, \cos, \sinh, \cosh$ | Trigonometric and hyperbolic functions |
 | $\tilde{Q}^\alpha$ | Split biquaternion power function |
-| $\tilde q = r \exp(\mu \lVert\vec Q\rVert)$ | Quaternion polar form, axis $\mu$, angle $\lVert\vec Q\rVert$ |
+| $\tilde q = \varrho \exp(\mu \lVert\vec Q\rVert)$ | Quaternion polar form, axis $\mu$, angle $\lVert\vec Q\rVert$ |
 | $\mu$ | A unit pure real quaternion (axis), $\mu^2 = -1$ |
 | $r = \lvert\tilde q\rvert$ | Quaternion modulus |
 | $\tilde\Pi_{1,2}$ | Idempotents producing the hyperbolic functions |
