@@ -14,7 +14,7 @@ $$
 
 and $\Box$ is central with real coefficients, so the one biquaternion equation is the four complex equations $\left(\Box-k_m^{2}\right)\Xi_\mu=0$, one per coefficient.
 
-This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the complete polar decomposition (*The Complete Polar Decomposition of an N-Regular Biquaternion*), in the exponential form it takes in *Exponential Polar Decomposition on the N-Regular Sector*:
+This article substitutes a parametrisation of that one element into that one equation and reads what comes out. The parametrisation is the complete polar decomposition (*The Complete Polar Decomposition of an N-Regular Biquaternion*), in the exponential form it takes in *The Complete Polar Decomposition on the N-Regular Sector*:
 
 $$
 \tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},

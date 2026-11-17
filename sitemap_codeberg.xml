@@ -262,7 +262,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-matrix-model-what-it-sees-and-what-it-hides.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html</loc>
@@ -318,7 +318,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spectrum-does-not-determine-the-frame.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/when-the-axes-commute-the-normal-transformations.html</loc>
@@ -8990,7 +8990,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/worked-examples-of-exponential-polar-decomposition-of-split-complex-numbers.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-of-a-split-complex-number.html</loc>
@@ -9406,11 +9406,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/exponential-polar-decomposition-of-reduced-biquaternions.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/worked-examples-of-exponential-polar-decomposition-of-reduced-biquaternions.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html</loc>
@@ -10253,6 +10253,34 @@
     <lastmod>2026-11-17</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-complete-polar-decomposition-on-the-n-regular-sector.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/worked-examples-of-exponential-polar-decomposition-in-the-eigenbasis-on-the-n-regular-sector.html</loc>
+    <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html</loc>
     <lastmod>2026-11-17</lastmod>
   </url>
@@ -10411,34 +10439,6 @@
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/two-sided-operators-on-the-n-degenerate-sector.html</loc>
     <lastmod>2026-11-17</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-17</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-17</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-17</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-17</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-17</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-17</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/worked-examples-of-exponential-polar-decomposition-in-the-eigenbasis-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/the-rotor-group-via-4x4-real-matrices.html</loc>
@@ -12234,7 +12234,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/the-exponential-polar-decomposition-of-m6c.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/the-geometry-of-the-idempotents-of-m6c.html</loc>
@@ -12306,7 +12306,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-17</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/maths.html</loc>

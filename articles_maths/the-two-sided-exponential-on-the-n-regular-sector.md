@@ -248,5 +248,5 @@ The spectral reading is the product formula. The one-slot pair of the rotor is $
 
 - [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the algebraic companion: the closed form, the factor actions, the two slots, the wall and the image.
 - [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the half-angle on a single slot.
-- [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the element word, the exact logarithm and the log defect behind the locked angles.
+- [The Complete Polar Decomposition on the N-Regular Sector](the-complete-polar-decomposition-on-the-n-regular-sector.html), for the element word, the exact logarithm and the log defect behind the locked angles.
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the general dictionary between the spectral data and the polar angles.

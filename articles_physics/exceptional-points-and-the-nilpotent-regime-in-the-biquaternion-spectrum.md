@@ -17,7 +17,7 @@ The article owns the question, not the theorem. The spectrum and the eigenprojec
 | The spectral-degenerate cone and the Jordan normal form | [The Spectrum](../articles_maths/the-spectrum.html) |
 | The exponential in the nilpotent regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The logarithm of a Jordan block | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
-| The two strata of the zero-divisor cone | *Exponential Polar Decomposition of Biquaternions* |
+| The two strata of the zero-divisor cone | *The Complete Polar Decomposition on the N-Regular Sector* |
 | The nilpotents and their square-zero property | [Nilpotents](../articles_maths/nilpotents.html) |
 
 ## The Discriminant and the Degeneracy
@@ -181,7 +181,7 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 
 - [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/the-spectrum.html) for the spectral-degenerate cone and the Jordan normal form.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the logarithm in the nilpotent regime.
-- *Exponential Polar Decomposition of Biquaternions*, for the boundary of the word and the two strata of the cone.
+- *The Complete Polar Decomposition on the N-Regular Sector*, for the boundary of the word and the two strata of the cone.
 - [Nilpotents](../articles_maths/nilpotents.html), for the nilpotents and their square-zero property.
 - [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the nilpotent stratum read physically and its distinction from the photon.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the probability calculus of a non-normal element.

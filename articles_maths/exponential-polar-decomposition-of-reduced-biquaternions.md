@@ -939,6 +939,6 @@ The table compares the three exponential polar decompositions; in the split-comp
 - [The Group of Invertibles of the Algebra of the Reduced Biquaternions](the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html), for the topology of the group of invertibles.
 - [Exponential Polar Decomposition of Complex Numbers](exponential-polar-decomposition-of-complex-numbers.html), for the one-coordinate exponential.
 - [Exponential Polar Decomposition of Split-Complex Numbers](exponential-polar-decomposition-of-split-complex-numbers.html), for the hyperbolic exponential.
-- *Exponential Polar Decomposition of Biquaternions*, for the noncommutative counterpart.
+- *The Complete Polar Decomposition on the N-Regular Sector*, for the noncommutative counterpart.
 - [Relations between Exponential Polar Decomposition and Eigenbasis a Reduced Biquaternion](relations-between-exponential-polar-decomposition-and-eigenbasis-a-reduced-biquaternion.html), for the relation with the eigenvalue decomposition.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

@@ -286,5 +286,5 @@ The spectrum of a rotor is two eigenvalues whose product is one, that is two rea
 - P. Lounesto, *Clifford Algebras and Spinors*, 2nd ed., Cambridge University Press, 2001 — spectral decompositions in Clifford algebras, with the idempotents written explicitly.
 - *The Two Eigenvalues Are the Two Weyl Weights* — the spectrum of the boost family computed.
 - *When the Axes Commute: The Normal Transformations* — the class of elements for which a diagonalising unitary exists.
-- *Exponential Polar Decomposition on the N-Regular Sector* — the source of the worked element and of the normal-case reading compared here.
+- *The Complete Polar Decomposition on the N-Regular Sector* — the source of the worked element and of the normal-case reading compared here.
 - *Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector* — the general case and the one-parameter family, in the mathematics corpus.

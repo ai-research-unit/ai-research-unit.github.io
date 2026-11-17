@@ -307,6 +307,6 @@ The entries are the exact forms of the decimals $1.82843,0.585786,1.41421,1$ and
 
 - [Worked Examples of Exponential Polar Decomposition on the N-Regular Sector](worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html), for the coordinates, the word and the checks of the sixteen cases.
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the general spectral reading and its collapse on the wall.
-- [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the theorem, the proofs and the spectral reading.
+- [The Complete Polar Decomposition on the N-Regular Sector](the-complete-polar-decomposition-on-the-n-regular-sector.html), for the theorem, the proofs and the spectral reading.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the eigenvalues and the eigenprojectors.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the chain selected by the Hermitian form.

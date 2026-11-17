@@ -303,9 +303,9 @@
 - [The Biquaternion Algebra and the Krein–von Neumann Property](../articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html)
 - [The Tomita Operator and the J-Modular Pair for the Biquaternion Algebra](../articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.html)
 
-#### Exponential Polar Decomposition on the N-Regular Sector
+#### The Complete Polar Decomposition on the N-Regular Sector
 
-- [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html)
+- [The Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-complete-polar-decomposition-on-the-n-regular-sector.html)
 - [Worked Examples of Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html)
 - [The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html)
 - [The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html)

@@ -1,8 +1,8 @@
-# __Exponential Polar Decomposition on the N-Regular Sector__
+# __The Complete Polar Decomposition on the N-Regular Sector__
 
 ## Introduction
 
-This article computes the exponential polar decomposition of a biquaternion of the **N-regular sector**, the set $N=\langle\tilde Q\rangle_{\natural}\neq0$. The word is the complete polar decomposition, the four-factor product
+This article computes the complete polar decomposition of a biquaternion of the **N-regular sector**, the set $N=\langle\tilde Q\rangle_{\natural}\neq0$, in coordinates on the whole sector. The word is the four-factor product
 
 $$
 \tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},
@@ -431,7 +431,7 @@ The sign $\varepsilon$ is fixed by the branch of the modulus. It is $+1$ when $\
 
 ### The Word
 
-**Definition.** An **exponential polar decomposition** of $\tilde Q$ is a writing
+**Definition.** A **complete polar decomposition** of $\tilde Q$ is a writing
 
 $$
 \boxed{\;
@@ -937,7 +937,7 @@ The Jordan part is unbounded: as $\theta_{\mathrm{axr}}\to\pi$, $\theta_{\mathrm
 
 ## Existence and Uniqueness
 
-**Theorem (the exponential polar decomposition).** Every $\tilde Q\in\Sigma_{11}$ has a unique writing
+**Theorem (the complete polar decomposition).** Every $\tilde Q\in\Sigma_{11}$ has a unique writing
 
 $$
 \tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},

@@ -38,7 +38,7 @@ The nine articles cover one sector, $N\neq0$, in both of its spectral halves: ea
 
 | the block: $N\neq0$ | what it owns |
 | --- | --- |
-| [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html) | the word, the seven data, existence and uniqueness, the logarithm, the group law, the matrix picture, the two walls; on the wall the normal form, the rigidity, the closed form and the truncated logarithm |
+| [The Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-complete-polar-decomposition-on-the-n-regular-sector.html) | the word, the seven data, existence and uniqueness, the logarithm, the group law, the matrix picture, the two walls; on the wall the normal form, the rigidity, the closed form and the truncated logarithm |
 | [Worked Examples of Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html) | the numerical cases of the word, eight off the wall and eight on it |
 | [The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html) | the scale-with-rotor bracketing, its construction, its domain, and the orthogonal modulus at the wall |
 | [The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html) | the scale-with-phase bracketing, the root of $-1$, the eigenbasis and the two spinor spaces; and the failure of the root at the wall, where the axis is defined and the angle is pinned |
@@ -596,7 +596,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 ## Further Reading
 
-- [Exponential Polar Decomposition on the N-Regular Sector](../articles_maths/exponential-polar-decomposition-on-the-n-regular-sector.html), the word, the seven data, existence and uniqueness, the normal form, the rigidity, the truncated logarithm and the two walls.
+- [The Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-complete-polar-decomposition-on-the-n-regular-sector.html), the word, the seven data, existence and uniqueness, the normal form, the rigidity, the truncated logarithm and the two walls.
 - [The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html), the scale-with-rotor bracketing.
 - [The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html), the scale-with-phase bracketing and the eigenbasis.
 - [The Cartan Hermitian Pairing of the Complete Polar Decomposition on the N-Regular Sector](../articles_maths/the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html), the scale-with-boost bracketing and its total domain.

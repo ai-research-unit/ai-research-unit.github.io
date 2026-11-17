@@ -1459,7 +1459,7 @@ The scalar line has zero defect, because the formal exponent is a logarithm ther
 
 ## Further Reading
 
-- [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the theorem, the proofs, the spectral reading and the rigidity of the word.
+- [The Complete Polar Decomposition on the N-Regular Sector](the-complete-polar-decomposition-on-the-n-regular-sector.html), for the theorem, the proofs, the spectral reading and the rigidity of the word.
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the dictionary between the word and the eigenvalue data, and its collapse on the Jordan part.
 - [Worked Examples of Exponential Polar Decomposition in the Eigenbasis on the N-Regular Sector](worked-examples-of-exponential-polar-decomposition-in-the-eigenbasis-on-the-n-regular-sector.html), for the same sixteen cases read in the eigenbasis and in the Jordan chain.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus–unit theorem.

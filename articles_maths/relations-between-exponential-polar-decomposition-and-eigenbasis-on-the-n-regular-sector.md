@@ -8,7 +8,7 @@ The two readings depend on the invariant $B^2=Q_x^2+Q_y^2+Q_z^2$ differently. Of
 
 The dictionary is therefore one dictionary with two shapes. Off the wall it is a two-step map: eigenvalues first, eigenprojections second. On the wall the first step collapses to $Q_t\mapsto(Q_t,\varepsilon)$ and the second step carries everything else. The constant part, across the wall, is the scalar factor $r e^{i\theta_{\mathrm{pha}}}$: it is read from the reduced product in both cases, because $\lambda_+\lambda_-=N$ off the wall and $N=Q_t^2$ on it.
 
-The algebra is that of *Exponential Polar Decomposition on the N-Regular Sector* for the word and the Cartan decomposition, and that of *The Biquaternion Eigenvalue Decomposition* and *The Spectrum* for the spectral side. The Jordan chain on the wall is the one of *The Jordan Basis of a Spectrally Degenerate Biquaternion*. No proof is repeated from those articles; the Jordan chain is recalled only where the dictionary needs it. The numerical cases are in *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector* and in *Worked Examples of Exponential Polar Decomposition in the Eigenbasis on the N-Regular Sector*.
+The algebra is that of *The Complete Polar Decomposition on the N-Regular Sector* for the word and the Cartan decomposition, and that of *The Biquaternion Eigenvalue Decomposition* and *The Spectrum* for the spectral side. The Jordan chain on the wall is the one of *The Jordan Basis of a Spectrally Degenerate Biquaternion*. No proof is repeated from those articles; the Jordan chain is recalled only where the dictionary needs it. The numerical cases are in *Worked Examples of Exponential Polar Decomposition on the N-Regular Sector* and in *Worked Examples of Exponential Polar Decomposition in the Eigenbasis on the N-Regular Sector*.
 
 **The plan.** The two decompositions and their common domain are set out in §*The Two Decompositions*. §*The Dictionary* gives the translation in both directions, with the wall's table as its last subsection. §*The Regimes* lists the six spectral regimes with their polar status, and §*The Jordan Reading* replaces the eigenbasis by a Jordan chain on the wall. The exponential and the logarithm are treated in §*The Exponential and the Logarithm*, the two boundaries in §*The Boundary*, and the matrix form in §*The Matrix Picture*. §*A Worked Example at the Wall* computes one defective element in both readings. The summary collects the main results, the dictionary across the three algebras, and what the example shows.
 
@@ -66,7 +66,7 @@ r>0,\quad
 \lvert\vec u_{\mathrm b}\rvert=\lvert\vec u_{\mathrm r}\rvert=1.
 $$
 
-The factors are the scale $r$, the central phase $e^{i\theta_{\mathrm{pha}}}$, the boost $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$, in this order. The boost and the rotor do not commute in general, and the order matters. These are the statements of *Exponential Polar Decomposition on the N-Regular Sector*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Cartan Logarithm*.
+The factors are the scale $r$, the central phase $e^{i\theta_{\mathrm{pha}}}$, the boost $\tilde U_{\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$, in this order. The boost and the rotor do not commute in general, and the order matters. These are the statements of *The Complete Polar Decomposition on the N-Regular Sector*, §*The Decomposition*, §*Existence and Uniqueness* and §*The Cartan Logarithm*.
 
 | Polar item | Value |
 |---|---|
@@ -443,7 +443,7 @@ Read down the table for the direction spectral to polar and up for the direction
 
 ### The Parallel-Axis Case
 
-When the axes are parallel or antiparallel, the boost and the rotor commute and the four factors amalgamate into one exponential (*Exponential Polar Decomposition on the N-Regular Sector*, §*One Exponential*). The eigenvalues then determine the rapidity and the angle; the common axis remains the spectral datum of the eigenprojection, and the dictionary closes once that axis is read.
+When the axes are parallel or antiparallel, the boost and the rotor commute and the four factors amalgamate into one exponential (*The Complete Polar Decomposition on the N-Regular Sector*, §*One Exponential*). The eigenvalues then determine the rapidity and the angle; the common axis remains the spectral datum of the eigenprojection, and the dictionary closes once that axis is read.
 
 For $\vec u_{\mathrm b}=\vec u_{\mathrm r}=\vec u$,
 
@@ -560,7 +560,7 @@ a nonzero complex multiple of a minimal idempotent. The spectral decomposition e
 
 ### The Scalar Regime
 
-For $\tilde Q=Q_te_t$ with $Q_t\neq0$, the two eigenvalues coincide at $Q_t$ and the element is central. The polar data are $r=\lvert Q_t\rvert$, $\theta_{\mathrm{rpd}}=0$, and $\theta_{\mathrm{axr}}=0$ or $2\pi$; the phase $\theta_{\mathrm{pha}}$ and the rotor are the two factors of the principal square root branch $r e^{i\theta_{\mathrm{pha}}}$, with the sign ambiguity absorbed by the rotor as in *Exponential Polar Decomposition on the N-Regular Sector*, §*Existence and Uniqueness*. The boost is the identity and the axes are undefined, as at every degenerate point of polar coordinates.
+For $\tilde Q=Q_te_t$ with $Q_t\neq0$, the two eigenvalues coincide at $Q_t$ and the element is central. The polar data are $r=\lvert Q_t\rvert$, $\theta_{\mathrm{rpd}}=0$, and $\theta_{\mathrm{axr}}=0$ or $2\pi$; the phase $\theta_{\mathrm{pha}}$ and the rotor are the two factors of the principal square root branch $r e^{i\theta_{\mathrm{pha}}}$, with the sign ambiguity absorbed by the rotor as in *The Complete Polar Decomposition on the N-Regular Sector*, §*Existence and Uniqueness*. The boost is the identity and the axes are undefined, as at every degenerate point of polar coordinates.
 
 ### The Jordan Regime
 
@@ -739,7 +739,7 @@ $$
 \frac{R\,e^{i\theta_{\mathrm{pha}}}}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 $$
 
-which is a nonzero complex multiple of a minimal idempotent when $\tilde u_{\mathrm r}$ does not anticommute with $\vec u_{\mathrm b}$, and a nilpotent when it does. This is the boundary form of the two strata: the eigenprojection survives in the first case and disappears in the second. The detailed boundary limits and the two strata are in *Exponential Polar Decomposition on the N-Regular Sector*, §*The Boundary of the Word*; the classification of the minimal idempotents is in *Idempotents*. The present article records only their spectral reading.
+which is a nonzero complex multiple of a minimal idempotent when $\tilde u_{\mathrm r}$ does not anticommute with $\vec u_{\mathrm b}$, and a nilpotent when it does. This is the boundary form of the two strata: the eigenprojection survives in the first case and disappears in the second. The detailed boundary limits and the two strata are in *The Complete Polar Decomposition on the N-Regular Sector*, §*The Boundary of the Word*; the classification of the minimal idempotents is in *Idempotents*. The present article records only their spectral reading.
 
 ### Across the Wall
 
@@ -749,7 +749,7 @@ $$
 \tilde\Pi_\pm=\frac12\bigl(e_t\mp i\vec Q/B\bigr)
 $$
 
-diverge as $B\to0$, because $\vec Q/B$ diverges. Their sum is $e_t$, which remains finite. The eigenbasis has no limit. The polar word has a limit, and the limit is the word of this article; this is the convergence of §*The Boundary* above, and it is proved in *Exponential Polar Decomposition on the N-Regular Sector*, §*The Two Walls*.
+diverge as $B\to0$, because $\vec Q/B$ diverges. Their sum is $e_t$, which remains finite. The eigenbasis has no limit. The polar word has a limit, and the limit is the word of this article; this is the convergence of §*The Boundary* above, and it is proved in *The Complete Polar Decomposition on the N-Regular Sector*, §*The Two Walls*.
 
 The Jordan chain is the limit of a rescaled eigenbasis. If $\zeta_\pm$ are normalized eigenvectors of $\tilde Q$ with eigenvalues $\lambda_\pm$, then $\zeta_+\to\zeta$ and $(\zeta_+-\zeta_-)/(\lambda_+-\lambda_-)\to\eta$ after a choice of normalization. The chain records the rate at which the two eigenlines merge. It is a spectral remnant of the regular basis, not a polar object.
 
@@ -842,7 +842,7 @@ $$
 \operatorname{Vect}\tilde U\cdot\operatorname{Vect}\tilde U=0.
 $$
 
-The polar data of *Exponential Polar Decomposition on the N-Regular Sector* are
+The polar data of *The Complete Polar Decomposition on the N-Regular Sector* are
 
 $$
 \theta_{\mathrm{rpd}}=\operatorname{arcosh}2=1.3169578969,
@@ -1077,7 +1077,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 
 ## Further Reading
 
-- [Exponential Polar Decomposition on the N-Regular Sector](exponential-polar-decomposition-on-the-n-regular-sector.html), for the word, the Cartan decomposition, existence and uniqueness, the group law, and the exact logarithm on the wall.
+- [The Complete Polar Decomposition on the N-Regular Sector](the-complete-polar-decomposition-on-the-n-regular-sector.html), for the word, the Cartan decomposition, existence and uniqueness, the group law, and the exact logarithm on the wall.
 - [Worked Examples of Exponential Polar Decomposition on the N-Regular Sector](worked-examples-of-exponential-polar-decomposition-on-the-n-regular-sector.html), for the numerical cases of the word, off the wall and on it.
 - [Worked Examples of Exponential Polar Decomposition in the Eigenbasis on the N-Regular Sector](worked-examples-of-exponential-polar-decomposition-in-the-eigenbasis-on-the-n-regular-sector.html), for the same cases read in the eigenbasis and in the Jordan chain.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* and §*The Eigenprojectors*, for the spectrum and the eigenprojections.
