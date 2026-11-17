@@ -81,9 +81,9 @@ $$
 \langle X,Y\rangle=\operatorname{tr}(XY)=ab'+ba',
 $$
 
-because $\operatorname{tr}(E_{12}E_{21})=1$ and $\operatorname{tr}(E_{12}E_{12})=\operatorname{tr}(E_{21}E_{21})=0$. The form is symmetric, nondegenerate, and its matrix in the basis $E_{12},E_{21}$ is $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$, of signature $(1,1)$. It is the perfect pairing between the two one-dimensional spaces $A_{12}$ and $A_{21}$.
+because $\operatorname{tr}(E_{12}E_{21})=1$ and $\operatorname{tr}(E_{12}E_{12})=\operatorname{tr}(E_{21}E_{21})=0$. The form is symmetric, nondegenerate, and its matrix in the basis $E_{12},E_{21}$ is $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$, of inertia $(1,1)$. It is the perfect pairing between the two one-dimensional spaces $A_{12}$ and $A_{21}$.
 
-**The pairing is invariant and indefinite.** The space $A_{12}\oplus A_{21}$ has the invariant form $\operatorname{tr}(XY)$, of signature $(1,1)$, and the positive definite form $\operatorname{tr}(X^{\mathsf T}Y)$ is not invariant. So a real spinor pair comes with a symmetric indefinite pairing.
+**The pairing is invariant and indefinite.** The space $A_{12}\oplus A_{21}$ has the invariant form $\operatorname{tr}(XY)$, of inertia $(1,1)$, and the positive definite form $\operatorname{tr}(X^{\mathsf T}Y)$ is not invariant. So a real spinor pair comes with a symmetric indefinite pairing.
 
 ## The Two Chiralities
 
@@ -137,7 +137,7 @@ $$
 
 **Over $\mathbb{C}$ the two chiralities are exchanged by the conjugate transpose.** For a Hermitian frame, with $P_{k}^{*}=P_{k}$, the conjugate transpose sends $A_{kl}$ to $A_{lk}$, and it is conjugate linear. The two spinor spaces are then complex conjugate spaces, and the pairing between them is Hermitian, not symmetric.
 
-**Over $\mathbb{R}$ the exchanging map is linear and the pairing is symmetric.** The transpose sends $A_{kl}$ to $A_{lk}$ and satisfies $\operatorname{tr}(XY)=\operatorname{tr}(YX)$ with no conjugation. The bilinear form on $A_{12}\oplus A_{21}$ at $n=2$ is $\operatorname{tr}(XY)=ab'+ba'$, with signature $(1,1)$, and its matrix is symmetric with integer entries.
+**Over $\mathbb{R}$ the exchanging map is linear and the pairing is symmetric.** The transpose sends $A_{kl}$ to $A_{lk}$ and satisfies $\operatorname{tr}(XY)=\operatorname{tr}(YX)$ with no conjugation. The bilinear form on $A_{12}\oplus A_{21}$ at $n=2$ is $\operatorname{tr}(XY)=ab'+ba'$, with inertia $(1,1)$, and its matrix is symmetric with integer entries.
 
 **The difference is the difference between a real and a Hermitian form.** A Hermitian form is conjugate linear in one argument and positive definite for the standard frame; the real form $\operatorname{tr}(XY)$ is bilinear and indefinite. So the real spinor of this article is a pair of real components with an indefinite pairing, and the complex spinor of *Spinors as Peirce Coordinates in $n$ Dimensions* is a pair of conjugate components with a Hermitian pairing.
 
@@ -159,7 +159,7 @@ so each corner component of $X$ is the rank-one map $(P_{l}^{\mathsf T}v)\mapsto
 
 ## Summary
 
-For a real frame with subspaces $V_{k}$ of ranks $r_{k}$, every matrix splits into Peirce coordinates $X=\sum_{k,l}X_{kl}$ with $X_{kl}:V_{l}\to V_{k}$ of dimension $r_{k}r_{l}$. The off-diagonal coordinates are the spinor data: at a complete frame they form two blocks of dimension $n(n-1)/2$ each, one raising the index and one lowering it, and at $n=2$ they are a single pair $(a,b)\in\mathbb{R}^{2}$ with $X=aE_{12}+bE_{21}$ and $X^{2}=ab\,\mathrm{I}$. The transpose exchanges the two blocks, so the symmetric and antisymmetric parts of the pair are its diagonal and antidiagonal; the trace form pairs the blocks perfectly, with $\operatorname{tr}(E_{12}E_{21})=1$ and matrix $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ of signature $(1,1)$ on the pair at $n=2$. The off-diagonal dimension is $2$ at $n=2$, $6$ at $n=3$ and $12$ at $n=4$, and the diagonal part of dimension $n$ completes the algebra. Over $\mathbb{C}$ with a Hermitian frame the two blocks are exchanged by a conjugate-linear map, while over $\mathbb{R}$ they are exchanged by the linear transpose and paired by a symmetric indefinite form. The pure spinors are the rank-one matrices, and a random rank-one real matrix has rank one.
+For a real frame with subspaces $V_{k}$ of ranks $r_{k}$, every matrix splits into Peirce coordinates $X=\sum_{k,l}X_{kl}$ with $X_{kl}:V_{l}\to V_{k}$ of dimension $r_{k}r_{l}$. The off-diagonal coordinates are the spinor data: at a complete frame they form two blocks of dimension $n(n-1)/2$ each, one raising the index and one lowering it, and at $n=2$ they are a single pair $(a,b)\in\mathbb{R}^{2}$ with $X=aE_{12}+bE_{21}$ and $X^{2}=ab\,\mathrm{I}$. The transpose exchanges the two blocks, so the symmetric and antisymmetric parts of the pair are its diagonal and antidiagonal; the trace form pairs the blocks perfectly, with $\operatorname{tr}(E_{12}E_{21})=1$ and matrix $\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ of inertia $(1,1)$ on the pair at $n=2$. The off-diagonal dimension is $2$ at $n=2$, $6$ at $n=3$ and $12$ at $n=4$, and the diagonal part of dimension $n$ completes the algebra. Over $\mathbb{C}$ with a Hermitian frame the two blocks are exchanged by a conjugate-linear map, while over $\mathbb{R}$ they are exchanged by the linear transpose and paired by a symmetric indefinite form. The pure spinors are the rank-one matrices, and a random rank-one real matrix has rank one.
 
 ## Summary of Notation
 
@@ -178,7 +178,7 @@ For a real frame with subspaces $V_{k}$ of ranks $r_{k}$, every matrix splits in
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for Peirce coordinates and the corner decomposition of an algebra as an array of maps.
 - Elie Cartan, *The Theory of Spinors* (Hermann, 1966), for the classical construction of spinors as coordinates relative to a maximal isotropic family.
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for rank-one matrices, the trace form and its signature.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for rank-one matrices, the trace form and its inertia.
 - [The Peirce Basis and the Corners over $\mathbb{R}$](the-peirce-basis-and-the-corners-over-r.html), for the corners and the frame that the coordinates use.
 - [Spinors as Peirce Coordinates in $n$ Dimensions](spinors-as-peirce-coordinates-in-n-dimensions.html), for the complex version of the same reading.
 - [The Peirce Decomposition and the Two Halves over $\mathbb{R}$](the-peirce-decomposition-and-the-two-halves-over-r.html), for the transpose, the two halves and the corner pair.

@@ -152,7 +152,7 @@ and its inverse is $T\mapsto\tfrac12(T+T^{\mathsf T})$.
 
 **The two splittings are the two linear models of the same quotient.** The quotient $M_n(\mathbb{R})/\operatorname{Skew}_n$ has dimension $n(n+1)/2$; both $\operatorname{Sym}_n$ and $UT_n$ map isomorphically onto it. The first map is the symmetrisation, the second is $\pi$, and the two isomorphisms differ by the linear automorphism $S\mapsto\pi(S)$ of $\operatorname{Sym}_n$.
 
-**The difference is visible in one number.** The trace form restricts to a nondegenerate form on $\operatorname{Sym}_n$ and to a form of rank $n$ on $UT_n$. So the first complement carries a signature and the second carries a radical, and the radical is the nilpotent part $n_+$ of the triangular algebra.
+**The difference is visible in one number.** The trace form restricts to a nondegenerate form on $\operatorname{Sym}_n$ and to a form of rank $n$ on $UT_n$. So the first complement carries an inertia and the second carries a radical, and the radical is the nilpotent part $n_+$ of the triangular algebra.
 
 ## Summary
 
@@ -175,6 +175,6 @@ $UT_n$ and $\operatorname{Skew}_n$ have dimensions $n(n+1)/2$ and $n(n-1)/2$, th
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for triangular matrices, projections and the trace.
 - James E. Humphreys, *Linear Algebraic Groups* (Springer, 1975), for the flag, its stabiliser and the triangular splitting.
 - [The Triangular Decomposition $h\oplus n_+\oplus n_-$](the-triangular-decomposition-h-n-plus-n-minus-of-mnr.html), for the three pieces and the nilpotent ideal.
-- [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the signature and the true orthogonal complement.
+- [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the inertia and the true orthogonal complement.
 - [$UT_n$ as a Linear Model of $\operatorname{Sym}_n$](utn-as-a-linear-model-of-sym-n-same-space-wrong-product.html), for the model in full.
 - [Symmetric Pairs and Cartan Pairs: the Reductivity Criterion over $\mathbb{R}$](symmetric-pairs-and-cartan-pairs-the-reductivity-criterion-over-r.html), for the orthogonal split inside a Lie algebra.

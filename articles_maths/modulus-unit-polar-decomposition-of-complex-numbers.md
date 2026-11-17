@@ -164,7 +164,7 @@ $$
 
 This is the polar decomposition $M_Q = PU$ of an invertible matrix, with orthogonal factor $U = M_u$ and positive definite factor $P = rI$. The positive factor is a scalar because the family $\{qI+q'J\}$ has no other symmetric positive definite member: symmetry forces $q' = 0$, and positive definiteness then forces $q > 0$.
 
-| factor | matrix | determinant | action |
+| factor | matrix | the determinant of the image | action |
 |---|---|---|---|
 | modulus | $rI$, $r > 0$ | $r^2$ | similarity of ratio $r$ |
 | unit factor | $M_u \in SO(2)$ | $1$ | rotation |

@@ -4,7 +4,7 @@
 
 **The positive semidefinite Hermitian matrices form a closed convex cone of real dimension four with no lines, self-dual for the trace form, whose trace hyperplane section is the Bloch ball and whose boundary is the cone over the two-sphere of pure states.**
 
-The article defines the cone, identifies it with the Lorentz cone, computes its section by the trace hyperplane, proves that the boundary consists exactly of the rank-one matrices, describes the extreme rays and the faces, and shows self-duality. It assumes *The Two Halves and Their Topology at $n=2$*, *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+The article defines the cone, identifies it with the Lorentz cone, computes its section by the trace hyperplane, proves that the boundary consists exactly of the rank-one matrices, describes the extreme rays and the faces, and shows self-duality. It assumes *The Two Halves and Their Topology at $n=2$*, *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents* and *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 It follows the biquaternion article *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* for the norm whose square is positive on the cone.
 
@@ -28,7 +28,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 ## The Lorentz Form
 
-**Proposition.** The determinant is a quadratic form of signature $(1,3)$ on the Hermitian half, and the cone is the set where the determinant is positive and the trace is positive.
+**Proposition.** The determinant is a quadratic form of inertia $(1,3)$ on the Hermitian half, and the cone is the set where the determinant is positive and the trace is positive.
 
 **Proof.** In the coordinates of the two real diagonal entries and the two real components of the off-diagonal entry the determinant is $ac-|b|^{2}$, whose Gram matrix has the eigenvalues $\tfrac12,-\tfrac12,-\tfrac12,-\tfrac12$; the positivity of the form plus a positive trace is exactly the positive semidefinite condition.
 
@@ -118,7 +118,7 @@ The boundary of the cone is the cone over the two-sphere of rank-one matrices, i
 | $vv^{*}$ | a rank-one positive semidefinite matrix |
 | $\tfrac12(I+\vec r\cdot\vec\sigma)$ | a trace-one Hermitian matrix |
 | $|\vec r|\le 1$ | the Bloch ball condition |
-| $(1,3)$ | the signature of the determinant on the half |
+| $(1,3)$ | the inertia of the determinant on the half |
 
 ## Further Reading
 
@@ -126,4 +126,4 @@ The boundary of the cone is the cone over the two-sphere of rank-one matrices, i
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge University Press, 2010), for the Bloch ball of density matrices.
 - [The Two Halves and Their Topology at $n=2$](the-two-halves-and-their-topology-at-n-2.html), for the cone in its topological setting.
 - [The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents](the-spectral-theorem-the-hermitian-case-and-the-sphere-of-idempotents.html), for the rank-one Hermitian matrices.
-- [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the pairing used in self-duality.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the pairing used in self-duality.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The fourth of the four general products conjugates both slots, the first by the quaternion involution and the second by the Hermitian one. It is written $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and it is the product of the batch that keeps the least: it is the only one with no unit on either side, the only one whose Jordan defect is the full dimension of the space, and the only one for which the orthogonality of the trace form fails in both of its readings. It is also the product whose scalar part is the Krein form of signature $(1,3)$, and that indefiniteness is the source of most of what follows.
+The fourth of the four general products conjugates both slots, the first by the quaternion involution and the second by the Hermitian one. It is written $\tilde Q_1^{\natural}\tilde Q_2^{*}$, and it is the product of the batch that keeps the least: it is the only one with no unit on either side, the only one whose Jordan defect is the full dimension of the space, and the only one for which the orthogonality of the trace form fails in both of its readings. It is also the product whose scalar part is the Krein form of inertia $(1,3)$, and that indefiniteness is the source of most of what follows.
 
 This article reads the product alone: the coordinate rule, the scalar–vector form, the laws, the absence of an identity, the image and the diagonal, the two halves, the four composites, the trace form against the halves, and the row of the product in the comparison of the four. The notation is that of [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html): $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$, $\tilde Q=Q_te_t+\vec Q$, the three conjugations, and the two pairings. The forms are [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html); the twelve products are [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html); the vector halves are [The Vector Parts of the Products over the Biquaternion Algebra](the-vector-parts-of-the-products-over-the-biquaternion-algebra.html).
 
@@ -41,11 +41,11 @@ $$
 $$
 \mathrm{Sc}\bigl(\tilde Q_1^{\natural}\tilde Q_2^{*}\bigr)=Q_{1t}\overline{Q_{2t}}-Q_{1x}\overline{Q_{2x}}-Q_{1y}\overline{Q_{2y}}-Q_{1z}\overline{Q_{2z}}=K(\tilde Q_1,\tilde Q_2),
 $$
-the Hermitian form of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$: indefinite, of signature $(1,3)$, nondegenerate, and isotropic on a cone of complex dimension three.
+the Hermitian form of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$: indefinite, of inertia $(1,3)$, nondegenerate, and isotropic on a cone of complex dimension three.
 
-*Proof.* The first display with the signs of the three vector coordinates negative and each second coordinate barred. The signature is that of the diagonal matrix, and the isotropic cone is the set $K(\tilde Q,\tilde Q)=0$, which is the union of the two isotropic quadrics $\lvert Q_t\rvert^2=\lvert\vec Q\rvert^2$.
+*Proof.* The first display with the signs of the three vector coordinates negative and each second coordinate barred. The inertia is that of the diagonal matrix, and the isotropic cone is the set $K(\tilde Q,\tilde Q)=0$, which is the union of the two isotropic quadrics $\lvert Q_t\rvert^2=\lvert\vec Q\rvert^2$.
 
-**Remark (the definite and the indefinite).** The two sesquilinear products of the batch carry the two Hermitian forms $H$ and $K$; the two bilinear products carry the two symmetric forms $P$ and $N$. The Krein form is the one that appears in the unitary group of signature $(1,3)$, and the product here is its derived operation. The indefiniteness is not a defect of the product: it is the reason the radical computed below is not zero while the form is nondegenerate.
+**Remark (the definite and the indefinite).** The two sesquilinear products of the batch carry the two Hermitian forms $H$ and $K$; the two bilinear products carry the two symmetric forms $P$ and $N$. The Krein form is the one that appears in the unitary group of inertia $(1,3)$, and the product here is its derived operation. The indefiniteness is not a defect of the product: it is the reason the radical computed below is not zero while the form is nondegenerate.
 
 ## The Laws It Keeps and the Laws It Loses
 
@@ -177,7 +177,7 @@ $$
 | decorations | first and second | none | first | second |
 | unit | none | both | left | right |
 | symmetric half | image $4$ | image $4$ | image $1$ | image $1$ |
-| trace form | $K$, signature $(1,3)$ | $P$, split | $N$, indefinite over $\mathbb{C}$ | $H$, positive definite |
+| trace form | $K$, inertia $(1,3)$ | $P$, split | $N$, indefinite over $\mathbb{C}$ | $H$, positive definite |
 | $\tau(s,a)=0$ for all arguments | no | no | yes | yes |
 | single-pair split | fails | holds | holds | holds |
 | Jacobi defect | $3$, invisible on $\mathbb{B}_{H}$ | $0$ | $3$ | $3$ |
@@ -189,7 +189,7 @@ $$
 
 The general quaternionic sesquilinear product is $\tilde Q_1^{\natural}\tilde Q_2^{*}=[Q_{1t}\overline{Q_{2t}}-(\vec Q_1,\overline{\vec Q_2})]-Q_{1t}\overline{\vec Q_2}-\overline{Q_{2t}}\vec Q_1+\vec Q_1\times\overline{\vec Q_2}$, the product with both decorations. It fails every law of the ladder, with a flexibility witness $i\vec e_z,\vec e_z$ that needs the imaginary unit. It has no unit on either side.
 
-Its scalar part is the Krein form $K$ of signature $(1,3)$, indefinite and nondegenerate. Its image is the whole space, its diagonal is the sum of a Hermitian part and an anti-Hermitian part which are orthogonal for $K$, and its diagonal image is the whole space. It has isotropic elements, $\tilde Q=e_t+\vec e_x$ among them.
+Its scalar part is the Krein form $K$ of inertia $(1,3)$, indefinite and nondegenerate. Its image is the whole space, its diagonal is the sum of a Hermitian part and an anti-Hermitian part which are orthogonal for $K$, and its diagonal image is the whole space. It has isotropic elements, $\tilde Q=e_t+\vec e_x$ among them.
 
 The symmetrisation is conjugate-commutative and not central, with image of dimension $4$; the antisymmetrisation is $\tilde Q_1\times\overline{\vec Q_2}$ with image the vector subspace, and it coincides with the antisymmetrisation of the plain product on real vector arguments. The four composites have images of dimensions $4,4,3,3$. The trace form $K$ is not orthogonal to the halves in either reading: the four-argument cross term survives with the witness $e_t,\vec e_x,\vec e_y,\vec e_z$ giving $1$, and the single-pair split fails by $8$ on the pair displayed. Both defects are the reflection of the one fact that the symmetric half of this family carries a vector part.
 

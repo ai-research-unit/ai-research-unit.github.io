@@ -80,7 +80,7 @@ with equality only at $\tilde Q=0$. The cone of squares is the ray $\mathbb{R}_{
 
 **Remark (no isotropic elements).** The algebra has no element with a square equal to zero, and therefore no absolute zero divisor. The statement is stronger than the vanishing of the isotropic cone of $H$: it says that the diagonal map is injective on the ray, and it is the algebraic form of the definiteness of the form. The nilpotents of the algebra, which exist, are all of index three or more; they are read in [The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](nilpotents.html).
 
-**Remark (the comparison of the four cones).** The four cones of squares are the Lorentz cone for the symmetric plain product, the ray for this product, and the whole line for the two remaining ones. The two proper cones are therefore of different kinds: one is full-dimensional in the Hermitian subspace and the other is a ray, and the difference is the difference between a form of signature $(3,1)$ and a definite form.
+**Remark (the comparison of the four cones).** The four cones of squares are the Lorentz cone for the symmetric plain product, the ray for this product, and the whole line for the two remaining ones. The two proper cones are therefore of different kinds: one is full-dimensional in the Hermitian subspace and the other is a ray, and the difference is the difference between a form of inertia $(3,1)$ and a definite form.
 
 ## The Peirce Theory
 

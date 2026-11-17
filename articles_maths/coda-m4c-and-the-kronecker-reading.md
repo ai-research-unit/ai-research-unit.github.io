@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The category established one algebra, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, one operator algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}(\mathbb{B})$, and one matrix model $M_4(\mathbb{C})$, and the thread through every block is the Kronecker reading $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$; at $n=3$ that reading fails, the biquaternion model has no analogue, $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ has no counterpart, the trace form has signature $(6,3)$, and the two angles exist for every $n\ge4$, so order four is the first order with two angles and not the only one.**
+**The category established one algebra, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$, one operator algebra $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}(\mathbb{B})$, and one matrix model $M_4(\mathbb{C})$, and the thread through every block is the Kronecker reading $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$; at $n=3$ that reading fails, the biquaternion model has no analogue, $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$ has no counterpart, the trace form has inertia $(6,3)$, and the two angles exist for every $n\ge4$, so order four is the first order with two angles and not the only one.**
 
 The article recalls what each block established, states the Kronecker reading and identifies its two factors with the two one-sided algebras, collects the thread, and then examines the passage to $M_3(\mathbb{C})$, where each of the special features of order four disappears except one: the number of rotation angles grows with the order and is two from order four onwards.
 
@@ -14,7 +14,7 @@ The article recalls what each block established, states the Kronecker reading an
 
 **The product on the halves.** The symmetric and antisymmetric parts of a product; the four multiplication tables and their ranks; the Jordan algebra $\operatorname{Sym}_4$ of degree four; the Lie algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$; the derivation $[A,X]$ and its two anti-self-adjointness statements; the radical of the Borel as its commutator; and $UT_4$ as a linear model of $\operatorname{Sym}_4$ with the wrong product.
 
-**The forms.** The trace form with signature $(10,6)$, the keystone of the category; the Killing form $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$ with radical $\mathbb{C}\mathrm I$; the Hilbert–Schmidt form with the two orthonormal bases; the four forms and their algebraic norms, with $P=Q_t^{2}-B^{2}$, $N=Q_t^{2}+B^{2}$ and $\det=\langle\tilde Q\rangle_\natural^{2}$.
+**The forms.** The trace form with inertia $(10,6)$, the keystone of the category; the Killing form $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$ with radical $\mathbb{C}\mathrm I$; the Hilbert–Schmidt form with the two orthonormal bases; the four forms and their algebraic norms, with $P=Q_t^{2}-B^{2}$, $N=Q_t^{2}+B^{2}$ and $\det=\langle\tilde Q\rangle_\natural^{2}$.
 
 **The idempotents and the spectrum.** The Peirce decompositions of the Jordan algebra and of the algebra, with the dimensions $k^{2}$, $(4-k)^{2}$ and $2k(4-k)$ and the corner recursion; the common spectral theorem for normal matrices; the Hermitian and the anti-Hermitian spectral theorems.
 
@@ -38,13 +38,13 @@ The article recalls what each block established, states the Kronecker reading an
 
 **Proof.** $L_aR_b=L_a\otimes R_b^{\mathrm{opp}}$, and the sixteen products are independent.
 
-**Corollary.** The sixteen two-sided products are the matrix units of the reading, and the trace pairing on them is the permutation form, which shows no signature in that basis.
+**Corollary.** The sixteen two-sided products are the matrix units of the reading, and the trace pairing on them is the permutation form, which shows no inertia in that basis.
 
 **Proof.** The trace of a product of two matrix units is a Kronecker delta.
 
 ## The Thread
 
-**Proposition.** Every special feature of order four is a feature of the factorisation $4=2\cdot2$: the trace-form signature $(10,6)$, the split $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, the two angles of a rotation, the two orthogonal complex structures, the even Clifford algebra $M_2\oplus M_2$, and the Segre cone $\mathbb{P}^{3}\times\mathbb{P}^{3}$.
+**Proposition.** Every special feature of order four is a feature of the factorisation $4=2\cdot2$: the trace-form inertia $(10,6)$, the split $\mathfrak{so}(4)=\mathfrak{sl}_2\oplus\mathfrak{sl}_2$, the two angles of a rotation, the two orthogonal complex structures, the even Clifford algebra $M_2\oplus M_2$, and the Segre cone $\mathbb{P}^{3}\times\mathbb{P}^{3}$.
 
 **Proof.** Each object is built from the pair of factors $M_2$ and $M_2$: the ten and the six are the symmetric and antisymmetric parts of the tensor product, the two $\mathfrak{sl}_2$ are the two factors of the antisymmetric part, and the two angles are the two parameters of the two factors.
 
@@ -74,11 +74,11 @@ The article recalls what each block established, states the Kronecker reading an
 
 **Proof.** $\mathfrak{so}(3)\cong\mathfrak{su}(2)$ is simple.
 
-**Corollary.** The trace form on $M_3(\mathbb{C})$ has signature $(6,3)$, since $\dim\operatorname{Sym}_3=6$ and $\dim\operatorname{Skew}_3=3$, and the fine count is $3+3+3=9$.
+**Corollary.** The trace form on $M_3(\mathbb{C})$ has inertia $(6,3)$, since $\dim\operatorname{Sym}_3=6$ and $\dim\operatorname{Skew}_3=3$, and the fine count is $3+3+3=9$.
 
 **Proof.** $\operatorname{tr}(S^{2})>0$ on real symmetric matrices of order three and $\operatorname{tr}(K^{2})<0$ on real antisymmetric matrices, with the same dimension count as at order four.
 
-**Corollary.** The signature is the pair of triangular numbers $\tfrac{3\cdot4}{2}=6$ and $\tfrac{3\cdot2}{2}=3$, the same pattern as the ten and the six at order four, so the pattern survives the loss of the factorisation.
+**Corollary.** The inertia is the pair of triangular numbers $\tfrac{3\cdot4}{2}=6$ and $\tfrac{3\cdot2}{2}=3$, the same pattern as the ten and the six at order four, so the pattern survives the loss of the factorisation.
 
 **Proof.** The two counts.
 
@@ -106,11 +106,11 @@ The article recalls what each block established, states the Kronecker reading an
 
 ## Summary
 
-The category established one algebra of dimension four, one operator algebra of dimension sixteen and one matrix model of dimension sixteen, and kept them apart throughout. The trace form on the model has signature $(10,6)$, the two halves are its positive and negative eigenspaces, and the symmetric decomposition and the form are one split read twice.
+The category established one algebra of dimension four, one operator algebra of dimension sixteen and one matrix model of dimension sixteen, and kept them apart throughout. The trace form on the model has inertia $(10,6)$, the two halves are its positive and negative eigenspaces, and the symmetric decomposition and the form are one split read twice.
 
 The thread is the Kronecker reading $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$, which is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}(\mathbb{B})$ once the two factors are named as the left and the right multiplications. Every special feature of order four comes from the factorisation $4=2\cdot2$.
 
-At order three the reading fails, the biquaternion model disappears, $\mathfrak{so}(3)$ is simple, and the trace form has signature $(6,3)$. The two angles of a rotation exist for every order at least four, so order four is the first with two angles but not the only one; what is unique to order four is the coincidence of the two angles with the two simple ideals.
+At order three the reading fails, the biquaternion model disappears, $\mathfrak{so}(3)$ is simple, and the trace form has inertia $(6,3)$. The two angles of a rotation exist for every order at least four, so order four is the first with two angles but not the only one; what is unique to order four is the coincidence of the two angles with the two simple ideals.
 
 ## Summary of Notation
 
@@ -118,14 +118,14 @@ At order three the reading fails, the biquaternion model disappears, $\mathfrak{
 |---|---|
 | $M_4\cong M_2\otimes M_2$ | the Kronecker reading |
 | $M_2\otimes\mathrm I$, $\mathrm I\otimes M_2$ | the two factors, subalgebras not ideals |
-| $(10,6)$ | the signature at order four |
-| $(6,3)$ | the signature at order three |
+| $(10,6)$ | the inertia at order four |
+| $(6,3)$ | the inertia at order three |
 | $\lfloor n/2\rfloor$ | the number of angles |
 | central product $Q_8\circ Q_8$ | the finite skeleton, order $32$ |
 
 ## Further Reading
 
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the keystone of the category.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the keystone of the category.
 - [The Two-Sided Operators and the Segre Cone at $n=4$](the-two-sided-operators-and-the-segre-cone-at-n-4.html), for the operator face of the factorisation.
 - [The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$](the-lie-algebra-skew-4-and-so-4.html), for the split into two simple ideals.
 - [Simple and Non-Simple Rotations: One Angle at $n\le3$, Two Angles at $n\ge4$](simple-and-non-simple-rotations-one-angle-at-n-le-3-two-angles-at-n-ge-4.html), for the count of angles.

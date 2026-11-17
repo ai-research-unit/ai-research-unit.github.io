@@ -393,7 +393,7 @@ and the same relation holds for $R_{\mathrm{axf}}(\tilde Q)$.
 $$
 \bigl((\lambda-Q_t)^2+B^2\bigr)^2,
 $$
-and the determinant is $\langle\tilde Q\rangle_{\natural}^2$. The same holds for $R_{\mathrm{axf}}(\tilde Q)$.
+and the determinant of the matrix is $\langle\tilde Q\rangle_{\natural}^2$. The same holds for $R_{\mathrm{axf}}(\tilde Q)$.
 
 ### The Rank of $L_{\mathrm{axf}}$ and $R_{\mathrm{axf}}$
 
@@ -405,7 +405,7 @@ has $\beta(X,X)=\langle X\rangle_{\natural}$ and Gram matrix $\mathrm I_4$ in th
 
 **The theorem.** The rank of $L_{\mathrm{axf}}(\tilde Q)$ is $4$ when $\langle\tilde Q\rangle_{\natural}\neq0$, it is $2$ when $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$, and it is $0$ when $\tilde Q=0$. The same values hold for $R_{\mathrm{axf}}(\tilde Q)$.
 
-*Proof.* If $\langle\tilde Q\rangle_{\natural}\neq0$, the determinant is $\langle\tilde Q\rangle_{\natural}^2\neq0$ and the rank is $4$. If $\tilde Q=0$, the matrix is zero. Suppose $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$.
+*Proof.* If $\langle\tilde Q\rangle_{\natural}\neq0$, the determinant of the matrix is $\langle\tilde Q\rangle_{\natural}^2\neq0$ and the rank is $4$. If $\tilde Q=0$, the matrix is zero. Suppose $\tilde Q\neq0$ and $\langle\tilde Q\rangle_{\natural}=0$.
 
 Let $X$ lie in the kernel of $L_{\mathrm{axf}}(\tilde Q)$, so that $\tilde QX=0$. If $X$ were an invertible element, then $\tilde Q=(\tilde QX)X^{-1}=0$, against the hypothesis; hence $X$ is not invertible and $\langle X\rangle_{\natural}=0$. The kernel is therefore a linear subspace of the null cone, hence totally isotropic for $\beta$, of dimension at most two. This gives $\operatorname{rank}L_{\mathrm{axf}}(\tilde Q)\ge2$.
 

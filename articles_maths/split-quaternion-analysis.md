@@ -93,7 +93,7 @@ D^2 = -\frac{\partial^2}{\partial q_x^2} + \frac{\partial^2}{\partial q_y^2} + \
 \;},
 $$
 
-the wave operator of the form of signature $(2,1)$, which is hyperbolic. The first-order operator $D$ itself is not elliptic: its symbol is left multiplication by the frequency vector, invertible exactly when $N \neq 0$, so the set where the symbol degenerates is the null cone
+the wave operator of the form of inertia $(2,1)$, which is hyperbolic. The first-order operator $D$ itself is not elliptic: its symbol is left multiplication by the frequency vector, invertible exactly when $N \neq 0$, so the set where the symbol degenerates is the null cone
 
 $$
 q_x^2 - q_y^2 - q_z^2 = 0 ,
@@ -107,7 +107,7 @@ which is the zero divisor set of the algebra in the vector subspace.
 
 **Proof.** The implication is $D^2 = \Box_{(2,1)}$, the counterexample is the displayed computation, and an operator with a cone of nonzero characteristic vectors is not elliptic, so the elliptic-theoretic properties fail along the characteristic directions; the identification of the characteristic variety with the zero divisors is the theorem. That the class is much smaller than the wave solutions, and in particular is not parametrised by arbitrary data on a hypersurface, is the kernel computation of *Split-Quaternion Integration*, §*The Kernel of the Vector Operator*, where the two transported families and the nonzero compactly supported solutions are exhibited. The elliptic case is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*.
 
-**Corollary (The Operators on the Algebra and on the Vector Subspace).** The operator $D$ acts on functions whose variable lies in the vector subspace, or on the vector part of a function of the full algebra. The operator associated with the full form of signature $(2,2)$ is the Clifford operator of the algebra $\mathrm{Cl}_{2,2}$, whose generators are not the generators $\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{H}_{\mathrm{spl}}$ alone; the two operators are different, and the analysis of the full algebra is not the analysis of its vector part.
+**Corollary (The Operators on the Algebra and on the Vector Subspace).** The operator $D$ acts on functions whose variable lies in the vector subspace, or on the vector part of a function of the full algebra. The operator associated with the full form of inertia $(2,2)$ is the Clifford operator of the algebra $\mathrm{Cl}_{2,2}$, whose generators are not the generators $\vec e_x,\vec e_y,\vec e_z$ of $\mathbb{H}_{\mathrm{spl}}$ alone; the two operators are different, and the analysis of the full algebra is not the analysis of its vector part.
 
 **Proof.** The generators of $\mathbb{H}_{\mathrm{spl}}$ have the sign pattern $(-,+,+)$ and span a three-dimensional subspace, so they generate the Clifford algebra of the restricted form, not of the form on the algebra; the operator of the (2,2) form requires four anticommuting generators.
 
@@ -207,7 +207,7 @@ The quaternion column is the content of *Quaternion Analysis*, and the split-com
 
 The algebra is a normed algebra up to the constant $\sqrt{2}$ in the Euclidean norm, with the product topology of $\mathbb{R}^4$, the units open and the zero divisors closed. Limits and continuity are the coordinatewise notions of the four real coordinates. The naive derivative fails already for $\tilde q \mapsto \tilde q^2$, because the difference quotient involves the conjugate $h\tilde q h^{-1}$, and it fails again near the null cone, where $h$ need not be invertible.
 
-The natural operators are the vector operator $D = \vec e_x\,\partial/\partial q_x + \vec e_y\,\partial/\partial q_y + \vec e_z\,\partial/\partial q_z$, whose square is the wave operator of the form of signature $(2,1)$ with characteristic variety the null cone, and the coordinate operators of the Peirce calculus. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated coordinatewise, but the identity theorem fails because of the nilpotents. The inverse is given by $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
+The natural operators are the vector operator $D = \vec e_x\,\partial/\partial q_x + \vec e_y\,\partial/\partial q_y + \vec e_z\,\partial/\partial q_z$, whose square is the wave operator of the form of inertia $(2,1)$ with characteristic variety the null cone, and the coordinate operators of the Peirce calculus. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated coordinatewise, but the identity theorem fails because of the nilpotents. The inverse is given by $\tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
 
 ## Summary of Notation
 
@@ -216,7 +216,7 @@ The natural operators are the vector operator $D = \vec e_x\,\partial/\partial q
 | $|\tilde q|^2 = q_t^2+q_x^2+q_y^2+q_z^2$ | the Euclidean norm | this article |
 | $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, indefinite, not a norm in the analytic sense | *Split-Quaternion Algebra* |
 | $D = \vec e_x\,\partial/\partial q_x + \vec e_y\,\partial/\partial q_y + \vec e_z\,\partial/\partial q_z$ | the vector operator | this article |
-| $D^2 = \Box_{(2,1)}$ | the wave operator of signature $(2,1)$ | this article |
+| $D^2 = \Box_{(2,1)}$ | the wave operator of inertia $(2,1)$ | this article |
 | $q_x^2-q_y^2-q_z^2=0$ | the characteristic variety, equal to the zero divisor set | *Split-Quaternion Zero Divisors* |
 | $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
 | power series $\sum q_n \tilde q^n$ | convergence on a ball, evaluation coordinatewise | this article |

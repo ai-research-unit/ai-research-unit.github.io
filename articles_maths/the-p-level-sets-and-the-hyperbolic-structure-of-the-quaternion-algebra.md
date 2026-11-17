@@ -8,19 +8,19 @@ $$
 $$
 are of three kinds: the two-sheeted hyperboloid for $c>0$, the one-sheeted hyperboloid for $c<0$, and the cone for $c=0$. Each is of real dimension three, each carries the form induced by $P$, and the induced forms are of constant curvature: the sheets of $c>0$ are hyperbolic spaces, the level $c<0$ is a de Sitter space, and the cone is the degenerate case in which the induced form drops to rank two.
 
-The article computes the three kinds of set, the signature of the induced form, the transitivity of the isometry group, the geodesics and the distance on the positive sheet, and the exact sense in which the exponential of the algebra transports the level sets. The answer on the last point is sharp: the algebraic exponential does not reach the boosts, and the geodesics of the sheet are parametrised by the hyperbolic exponential, which is the same formula with the hyperbolic functions in place of the trigonometric ones. The level sets of the quaternion norm are the round spheres, and the comparison of the two families is the comparison of the elliptic and the hyperbolic readings of the same algebra.
+The article computes the three kinds of set, the inertia of the induced form, the transitivity of the isometry group, the geodesics and the distance on the positive sheet, and the exact sense in which the exponential of the algebra transports the level sets. The answer on the last point is sharp: the algebraic exponential does not reach the boosts, and the geodesics of the sheet are parametrised by the hyperbolic exponential, which is the same formula with the hyperbolic functions in place of the trigonometric ones. The level sets of the quaternion norm are the round spheres, and the comparison of the two families is the comparison of the elliptic and the hyperbolic readings of the same algebra.
 
 ## The Three Kinds of Level Set
 
 **Theorem (the classification).** For $c>0$, $\Sigma_c$ has exactly two connected components, the sheets $q_t>\lvert\vec q\rvert$ and $q_t<-\lvert\vec q\rvert$, each closed, smooth, of dimension three and diffeomorphic to $\mathbb{R}^3$. For $c<0$, $\Sigma_c$ is connected, closed, smooth, of dimension three and diffeomorphic to $\mathbb{R}\times S^2$. For $c=0$, $\Sigma_0$ is the cone of [The P-Degenerate Sector of the Quaternion Algebra](the-p-degenerate-sector-of-the-quaternion-algebra.html), smooth off the apex.
 
-*Proof.* $P$ is a non-zero quadratic form of signature $(1,3)$, and the level sets of a non-degenerate form are classified by the sign of the level and the signature of the form: the level sets of positive value are the two-sheeted hyperboloids of the timelike vectors, those of negative value the one-sheeted hyperboloids of the spacelike vectors, and the zero level is the cone. The gradient $2(q_t,-\vec q)$ does not vanish off the origin, and on $\Sigma_c$ with $c\neq0$ the origin is absent, so the level sets are smooth. The diffeomorphism types are read on the graphs: $\Sigma_c$ for $c>0$ is the graph $q_t=\pm\sqrt{c+\lvert\vec q\rvert^2}$ over $\mathbb{R}^3$, and $\Sigma_c$ for $c<0$ is $\{(\vec m,s,q_t):\ s=\sqrt{q_t^2-c}\}$ over $\mathbb{R}\times S^2$. Verified on the parametrisations.
+*Proof.* $P$ is a non-zero quadratic form of inertia $(1,3)$, and the level sets of a non-degenerate form are classified by the sign of the level and the inertia of the form: the level sets of positive value are the two-sheeted hyperboloids of the timelike vectors, those of negative value the one-sheeted hyperboloids of the spacelike vectors, and the zero level is the cone. The gradient $2(q_t,-\vec q)$ does not vanish off the origin, and on $\Sigma_c$ with $c\neq0$ the origin is absent, so the level sets are smooth. The diffeomorphism types are read on the graphs: $\Sigma_c$ for $c>0$ is the graph $q_t=\pm\sqrt{c+\lvert\vec q\rvert^2}$ over $\mathbb{R}^3$, and $\Sigma_c$ for $c<0$ is $\{(\vec m,s,q_t):\ s=\sqrt{q_t^2-c}\}$ over $\mathbb{R}\times S^2$. Verified on the parametrisations.
 
 **Corollary (the dimensions and the topology).** Each non-empty level set has dimension three; $\Sigma_c$ for $c>0$ is a disjoint union of two contractible sheets, and $\Sigma_c$ for $c<0$ has the homotopy type of $S^2$.
 
 *Proof.* The diffeomorphism types of the theorem.
 
-**Remark (the sign of the level is the sign of the metric).** The normal to $\Sigma_c$ at a point is the gradient, which is proportional to $\tilde q$; the normal is timelike for $c>0$ and spacelike for $c<0$. So the induced form on the level set is positive definite for $c>0$ and of signature $(2,1)$ for $c<0$. **The sign of the level set decides whether the induced metric is Riemannian or Lorentzian, and the algebra carries the two kinds of three-dimensional geometry in the same family of level sets.**
+**Remark (the sign of the level is the sign of the metric).** The normal to $\Sigma_c$ at a point is the gradient, which is proportional to $\tilde q$; the normal is timelike for $c>0$ and spacelike for $c<0$. So the induced form on the level set is positive definite for $c>0$ and of inertia $(2,1)$ for $c<0$. **The sign of the level set decides whether the induced metric is Riemannian or Lorentzian, and the algebra carries the two kinds of three-dimensional geometry in the same family of level sets.**
 
 ## The Induced Form and the Metric
 
@@ -46,7 +46,7 @@ The article computes the three kinds of set, the signature of the induced form, 
 
 ## The Geodesics and the Distance
 
-**Theorem (the geodesics).** The geodesics of a level set are its intersections with the two-dimensional linear subspaces of $\mathbb{H}$ through the origin: on the positive sheet, the timelike planes, which are the planes $\Pi_{\vec n}$ and their left translates by the rotations; on the negative level, the planes of signature $(1,1)$ and the null planes.
+**Theorem (the geodesics).** The geodesics of a level set are its intersections with the two-dimensional linear subspaces of $\mathbb{H}$ through the origin: on the positive sheet, the timelike planes, which are the planes $\Pi_{\vec n}$ and their left translates by the rotations; on the negative level, the planes of inertia $(1,1)$ and the null planes.
 
 *Proof.* A plane through the origin is a totally geodesic submanifold of the flat ambient space, since its second fundamental form vanishes; its intersection with the level set is therefore totally geodesic in the level set. Conversely, a geodesic of the level set with its initial point and velocity spans a plane, and the exponential of the ambient flat connection keeps it in that plane. Verified on the hyperbola of the plane $\Pi_{\vec n}$.
 
@@ -56,7 +56,7 @@ $$
 $$
 and the right-hand side is at least $1$, with equality exactly when $\tilde p=\tilde q$.
 
-*Proof.* The reverse Cauchy–Schwarz inequality for two timelike vectors of the same time orientation in a space of signature $(1,3)$ gives $\langle\tilde p,\tilde q\rangle_P\geq\lvert\tilde p\rvert_P\lvert\tilde q\rvert_P=1$. The geodesic from $\tilde p$ to $\tilde q$ lies in the plane they span, and in that plane the hyperbolic distance is the displayed arccosh. Verified on pairs of points at known distances.
+*Proof.* The reverse Cauchy–Schwarz inequality for two timelike vectors of the same time orientation in a space of inertia $(1,3)$ gives $\langle\tilde p,\tilde q\rangle_P\geq\lvert\tilde p\rvert_P\lvert\tilde q\rvert_P=1$. The geodesic from $\tilde p$ to $\tilde q$ lies in the plane they span, and in that plane the hyperbolic distance is the displayed arccosh. Verified on pairs of points at known distances.
 
 **Remark (the distance and the algebra).** On the positive sheet the distance between two points is the hyperbolic angle between the two lines, and it is read on the polar form of the plain product, that is on $\mathrm{Sc}(\tilde p\tilde q)$. The versors act on the sheet by rotations and preserve the distance, and so do the boosts, which are the transvections along the geodesics of the sheet. **The hyperbolic distance is the one invariant of the sheet, and it is computed by the trace form of the plain product; this is the geometric content of the form that the algebra carries.**
 
@@ -99,7 +99,7 @@ that is by the same formula with the hyperbolic functions in place of the trigon
 
 ## The Comparison with the Krein Level Sets
 
-**Remark (the complex case).** In the biquaternion block the corresponding form is a Krein form, of indefinite signature on a complex space, and its level sets are the Krein hyperboloids; the isometry group is the Krein group, with its own Cartan decomposition, and the geodesics and the distance are read the same way. The difference is the presence of the isotropic directions: over $\mathbb{C}$ the level sets of a null value are not cones of invertibles but zero-divisor sets, and the positive sheet is not a model of a hyperbolic space but of an indefinite one. The comparison is the subject of [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), and the groups are compared in [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html).
+**Remark (the complex case).** In the biquaternion block the corresponding form is a Krein form, of indefinite inertia on a complex space, and its level sets are the Krein hyperboloids; the isometry group is the Krein group, with its own Cartan decomposition, and the geodesics and the distance are read the same way. The difference is the presence of the isotropic directions: over $\mathbb{C}$ the level sets of a null value are not cones of invertibles but zero-divisor sets, and the positive sheet is not a model of a hyperbolic space but of an indefinite one. The comparison is the subject of [The Krein Level Sets and the Hyperbolic Structure](the-krein-level-sets-and-the-hyperbolic-structure.html), and the groups are compared in [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html).
 
 ## A Worked Check
 
@@ -117,11 +117,11 @@ $$
 $$
 which is the hyperbolic law of cosines for a triangle with a right angle at $e_t$, since the two geodesics leave $e_t$ in orthogonal directions. Verified numerically with $a=1$, $b=2$, where $d\approx2.4443$.
 
-**Remark (the right angle and the algebra).** The orthogonality of the two geodesics at $e_t$ is the orthogonality of $\vec e_x$ and $\vec e_y$ in the vector subspace, read through the polar form $\langle\vec e_x,\vec e_y\rangle_P=-(\vec e_x,\vec e_y)=0$. **The Euclidean orthogonality of the vector subspace is the hyperbolic orthogonality at the point $e_t$ of the sheet, and the two geometries are read on the same form with the two different signatures.**
+**Remark (the right angle and the algebra).** The orthogonality of the two geodesics at $e_t$ is the orthogonality of $\vec e_x$ and $\vec e_y$ in the vector subspace, read through the polar form $\langle\vec e_x,\vec e_y\rangle_P=-(\vec e_x,\vec e_y)=0$. **The Euclidean orthogonality of the vector subspace is the hyperbolic orthogonality at the point $e_t$ of the sheet, and the two geometries are read on the same form with the two different inertias.**
 
 ## Summary
 
-The level sets of $P$ are the two-sheeted hyperboloids for $c>0$, the one-sheeted ones for $c<0$, and the cone for $c=0$; each is of dimension three, and the sign of the level is the sign of the scalar part of the normal, hence the signature of the induced form.
+The level sets of $P$ are the two-sheeted hyperboloids for $c>0$, the one-sheeted ones for $c<0$, and the cone for $c=0$; each is of dimension three, and the sign of the level is the sign of the scalar part of the normal, hence the inertia of the induced form.
 
 The induced form is Riemannian of constant curvature $-1/c$ on $\Sigma_c$ with $c>0$, and Lorentzian of constant curvature $1/\lvert c\rvert$ on $\Sigma_c$ with $c<0$; the positive sheet is $H^3$ and the level $P=-1$ is $dS_3$.
 

@@ -109,7 +109,7 @@ The hyperbolic rotation of $\mathbb{B}$ is the one occurrence of a hyperbolic ro
 
 In the indefinite series the unit factor is genuinely non-compact.
 
-- **Split complex.** The unit factor is a hyperbolic $\exp(\phi j)$ and there is no elliptic one, because the algebra has no root of $-1$ (*Modulus–Unit Polar Decomposition of Split-Complex Numbers*, §*Position and Signature*).
+- **Split complex.** The unit factor is a hyperbolic $\exp(\phi j)$ and there is no elliptic one, because the algebra has no root of $-1$ (*Modulus–Unit Polar Decomposition of Split-Complex Numbers*, §*Position and Inertia*).
 - **Dual numbers.** The unit factor is the parabolic $1+\mathrm{M}=\{1+s\varepsilon\}$, a shear with a globally defined angle (*Dual-Numbers Polar Decomposition*, §*The Factors and Their Meanings*).
 - **Split quaternions.** The unit factor is a hyperbolic rotation in $\operatorname{span}\{1,\vec e_y,\vec e_z\}$, together with a one-parameter rotor $\mathrm{U}(1)$ from the elliptic direction $\vec e_x$ and a discrete reflection component (*Split-Quaternion Polar Decomposition*, §*The Polar Decomposition*).
 - **Split biquaternions.** The unit factor is a rotor $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ of dimension six in place of a hyperbolic rotation, together with a central hyperbolic phase $\exp(j\tau)$, the scale and the phase being the two components of the split complex modulus (*Split-Biquaternion Polar Decomposition*, §*The Factors and Their Meanings*).

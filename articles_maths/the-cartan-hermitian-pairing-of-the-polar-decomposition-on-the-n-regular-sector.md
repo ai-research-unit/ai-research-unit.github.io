@@ -179,7 +179,7 @@ The second factor contains the **phase** and the **rotor**. The phase $\exp(i\th
 | formula | $\tilde Q_0=\exp(i\theta_{\mathrm{pha}})\tilde u_{\mathrm r}=\tilde Q_H^{-1}\tilde Q$ |
 | kind | $*$-unitary |
 | norm | $\langle\tilde Q_0\rangle_{\natural}=\exp(2i\theta_{\mathrm{pha}})$ |
-| determinant | $\lvert\det\mathsf{M}_2(\tilde Q_0)\rvert=1$ |
+| the determinant of the image | $\lvert\det\mathsf{M}_2(\tilde Q_0)\rvert=1$ |
 | constituents | the central phase and the unit real rotor |
 | role | the phase and the rotor, the compact factor |
 
@@ -392,7 +392,7 @@ $$
 \tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r},
 $$
 
-with $\tilde H$ positive Hermitian of determinant $r^2$ and $\tilde V$ $*$-unitary. The factorization is unique.
+with $\tilde H$ positive Hermitian of norm $r^2$ and $\tilde V$ $*$-unitary. The factorization is unique.
 
 *Proof.* The element is invertible, so $\tilde Q\tilde Q^{*}$ is positive and invertible, and its positive square root $\tilde H$ exists and is unique. The factor $\tilde V=\tilde H^{-1}\tilde Q$ satisfies $\tilde V\tilde V^{*}=\tilde H^{-1}\tilde Q\tilde Q^{*}\tilde H^{-1}=e_t$, so it is $*$-unitary. The identification with $r\tilde U_{\mathrm b}$ and $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ is the polar word of *Exponential Polar Decomposition on the N-Regular Sector*.
 
@@ -436,7 +436,7 @@ which is $Q_t$ times a unipotent element. This is the sector condition in the pa
 
 **Proposition (the factors are not unipotent).** On the Jordan part, neither $\tilde H$ nor $\tilde V$ is unipotent. The positive factor has eigenvalues $r e^{\pm\theta_{\mathrm{rpd}}/2}$, and the $*$-unitary factor has eigenvalues $e^{i(\theta_{\mathrm{pha}}\pm\theta_{\mathrm{axr}}/2)}$. Their product has the double eigenvalue $\varepsilon$.
 
-*Proof.* The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\theta_{\mathrm{rpd}}/2}$ because it is positive of determinant one; the eigenvalues of $\tilde u_{\mathrm r}$ are $e^{\pm i\theta_{\mathrm{axr}}/2}$ because it is a unit real quaternion; the phase shifts them by $e^{i\theta_{\mathrm{pha}}}$. The product is $\tilde U$, whose only eigenvalue is $\varepsilon$.
+*Proof.* The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\theta_{\mathrm{rpd}}/2}$ because it is positive of unit norm; the eigenvalues of $\tilde u_{\mathrm r}$ are $e^{\pm i\theta_{\mathrm{axr}}/2}$ because it is a unit real quaternion; the phase shifts them by $e^{i\theta_{\mathrm{pha}}}$. The product is $\tilde U$, whose only eigenvalue is $\varepsilon$.
 
 The factors are diagonalizable, and the product is not. They cannot commute: if they did, their product would be normal and hence diagonalizable, contradicting the non-scalar Jordan block. The non-commutativity of $\tilde H$ and $\tilde V$ is therefore exactly the defect of the element, read in the Cartan pairing.
 
@@ -580,8 +580,8 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 | Item | Value |
 |---|---|
 | factorization | $\tilde Q=\tilde H\tilde V$ |
-| positive factor | $\tilde H=r\tilde U_{\mathrm b}$, determinant $r^2$ |
-| $*$-unitary factor | $\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, determinant $e^{2i\theta_{\mathrm{pha}}}$ |
+| positive factor | $\tilde H=r\tilde U_{\mathrm b}$, norm $r^2$ |
+| $*$-unitary factor | $\tilde V=e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$, norm $e^{2i\theta_{\mathrm{pha}}}$ |
 | product | $\tilde H\tilde V=Q_t(e_t+\vec\Upsilon)$, unipotent up to $Q_t$ |
 | factor eigenvalues | $r e^{\pm\theta_{\mathrm{rpd}}/2}$ and $e^{i(\theta_{\mathrm{pha}}\pm\theta_{\mathrm{axr}}/2)}$ |
 | product eigenvalue | $\varepsilon$, double |

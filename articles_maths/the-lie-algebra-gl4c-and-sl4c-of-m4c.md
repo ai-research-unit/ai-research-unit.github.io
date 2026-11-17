@@ -16,7 +16,7 @@ $$
 
 is a direct sum of Lie algebras, and the trace is the only Lie homomorphism from $\mathfrak{gl}_4$ to $\mathbb{C}$.
 
-This article states the bracket, the centre and the derived algebra, the root space decomposition of $\mathfrak{sl}_4$, the Killing form, the five real forms with their maximal compact subalgebras and signatures, and the subalgebras that the frame and the antisymmetric sector provide. The exponential and the group are *The Exponential and the Lie Group of $M_4(\mathbb{C})$*; the derivations are *The Derivations and the Automorphisms of $M_4(\mathbb{C})$*; the antisymmetric sector is *The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$*.
+This article states the bracket, the centre and the derived algebra, the root space decomposition of $\mathfrak{sl}_4$, the Killing form, the five real forms with their maximal compact subalgebras and inertias, and the subalgebras that the frame and the antisymmetric sector provide. The exponential and the group are *The Exponential and the Lie Group of $M_4(\mathbb{C})$*; the derivations are *The Derivations and the Automorphisms of $M_4(\mathbb{C})$*; the antisymmetric sector is *The Antisymmetric Sector, the Pfaffian and the Klein Quadric of $M_4(\mathbb{C})$*.
 
 ## The Bracket and the Decomposition
 
@@ -156,7 +156,7 @@ which at $n=4$ is $8\operatorname{tr}(XZ)-2\operatorname{tr}X\operatorname{tr}Z$
 
 **Theorem.** The real forms of $\mathfrak{sl}_4(\mathbb{C})$ are, up to isomorphism,
 
-| Real form | Definition | $\dim$ | Maximal compact | $\dim\mathfrak{k}$ | Killing signature |
+| Real form | Definition | $\dim$ | Maximal compact | $\dim\mathfrak{k}$ | Killing inertia |
 |---|---|---|---|---|---|
 | $\mathfrak{su}(4)$ | $\{X:X^{*}=-X,\ \operatorname{tr}X=0\}$ | $15$ | $\mathfrak{su}(4)$ | $15$ | $(0,15)$ |
 | $\mathfrak{su}(1,3)$ | $\{X:X^{*}J+JX=0,\ \operatorname{tr}X=0\}$ | $15$ | $\mathfrak{u}(3)$ | $9$ | $(6,9)$ |
@@ -168,7 +168,7 @@ In the table $J$ is the form $\operatorname{diag}(1,-1,-1,-1)$ for $\mathfrak{su
 
 **The compact form.** $\mathfrak{su}(4)$ is the compact real form: $X^{*}=-X$ makes the Killing form negative definite. Its complexification is $\mathfrak{sl}_4$, and the conjugation is $X\mapsto -X^{*}$.
 
-**The signatures.** For a real form with Cartan involution $\theta$, the form $B_\theta(X,Y)=-B(X,\theta Y)$ is positive definite, $B$ is negative definite on the fixed algebra $\mathfrak{k}$ and positive definite on its complement $\mathfrak{p}$. The signature column is $(\dim\mathfrak{p},\dim\mathfrak{k})$, with $\dim\mathfrak{p}+\dim\mathfrak{k}=15$.
+**The inertias.** For a real form with Cartan involution $\theta$, the form $B_\theta(X,Y)=-B(X,\theta Y)$ is positive definite, $B$ is negative definite on the fixed algebra $\mathfrak{k}$ and positive definite on its complement $\mathfrak{p}$. The inertia column is $(\dim\mathfrak{p},\dim\mathfrak{k})$, with $\dim\mathfrak{p}+\dim\mathfrak{k}=15$.
 
 **The symmetric spaces.** The Cartan decompositions give
 
@@ -185,9 +185,9 @@ SL_4(\mathbb{R})/SO(4),\qquad
 SU^{*}(4)/Sp(2)=H^{5},
 $$
 
-of real dimensions $8$, $9$ and $5$. The first two are the compact and non-compact complex projective spaces; the third is the Grassmannian of two-planes of signature $(2,2)$; the fourth is the space of positive definite symmetric matrices of determinant one; the fifth is the real hyperbolic five-space.
+of real dimensions $8$, $9$ and $5$. The first two are the compact and non-compact complex projective spaces; the third is the Grassmannian of two-planes of inertia $(2,2)$; the fourth is the space of positive definite symmetric matrices of determinant one; the fifth is the real hyperbolic five-space.
 
-**The isomorphisms.** $\mathfrak{su}(2,2)\cong\mathfrak{so}(2,4)$, of dimension $15$: the conformal algebra of four-dimensional Minkowski space. $\mathfrak{su}^{*}(4)\cong\mathfrak{so}(5,1)$, the isometry algebra of hyperbolic five-space. $\mathfrak{su}(1,3)$ is the isometry algebra of the indefinite Hermitian form of signature $(1,3)$, and it is the algebra of the Krein isometries of *The Krein Isometry Group and Its Cartan Decomposition*.
+**The isomorphisms.** $\mathfrak{su}(2,2)\cong\mathfrak{so}(2,4)$, of dimension $15$: the conformal algebra of four-dimensional Minkowski space. $\mathfrak{su}^{*}(4)\cong\mathfrak{so}(5,1)$, the isometry algebra of hyperbolic five-space. $\mathfrak{su}(1,3)$ is the isometry algebra of the indefinite Hermitian form of inertia $(1,3)$, and it is the algebra of the Krein isometries of *The Krein Isometry Group and Its Cartan Decomposition*.
 
 ## The Subalgebras of the Category
 
@@ -213,7 +213,7 @@ is the compact algebra of the chiral decomposition of the carrier, of dimension 
 
 ## Summary
 
-$\mathfrak{gl}_4(\mathbb{C})$ is the sixteen-dimensional Lie algebra of $4\times4$ matrices under the commutator, with centre $\mathbb{C}I$ and derived algebra $\mathfrak{sl}_4$, so that $\mathfrak{gl}_4=\mathfrak{sl}_4\oplus\mathbb{C}I$. $\mathfrak{sl}_4$ is simple of type $A_3$, of dimension $15$, with a Cartan subalgebra of dimension $3$ and twelve roots $\pm(\epsilon_i-\epsilon_j)$ carried by the matrix units $E_{ij}$. Its Killing form is $8\operatorname{tr}(XY)$, and the form on $\mathfrak{gl}_4$ is $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$. The five real forms are $\mathfrak{su}(4)$, $\mathfrak{su}(1,3)$, $\mathfrak{su}(2,2)$, $\mathfrak{sl}_4(\mathbb{R})$ and $\mathfrak{su}^{*}(4)$, of maximal compact dimensions $15$, $9$, $7$, $6$ and $10$, with Killing signatures $(0,15)$, $(6,9)$, $(8,7)$, $(9,6)$ and $(5,10)$. The antisymmetric sector, the chiral pair and the principal $\mathfrak{sl}_2$ are subalgebras of dimensions $6$, $7$ and $3$.
+$\mathfrak{gl}_4(\mathbb{C})$ is the sixteen-dimensional Lie algebra of $4\times4$ matrices under the commutator, with centre $\mathbb{C}I$ and derived algebra $\mathfrak{sl}_4$, so that $\mathfrak{gl}_4=\mathfrak{sl}_4\oplus\mathbb{C}I$. $\mathfrak{sl}_4$ is simple of type $A_3$, of dimension $15$, with a Cartan subalgebra of dimension $3$ and twelve roots $\pm(\epsilon_i-\epsilon_j)$ carried by the matrix units $E_{ij}$. Its Killing form is $8\operatorname{tr}(XY)$, and the form on $\mathfrak{gl}_4$ is $8\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$. The five real forms are $\mathfrak{su}(4)$, $\mathfrak{su}(1,3)$, $\mathfrak{su}(2,2)$, $\mathfrak{sl}_4(\mathbb{R})$ and $\mathfrak{su}^{*}(4)$, of maximal compact dimensions $15$, $9$, $7$, $6$ and $10$, with Killing inertias $(0,15)$, $(6,9)$, $(8,7)$, $(9,6)$ and $(5,10)$. The antisymmetric sector, the chiral pair and the principal $\mathfrak{sl}_2$ are subalgebras of dimensions $6$, $7$ and $3$.
 
 | Quantity | Value |
 |---|---|

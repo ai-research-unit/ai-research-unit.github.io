@@ -182,7 +182,7 @@ because $\exp(-t\tilde X)$ commutes with $\tilde X$. Since $\psi(0)=e_t$, $\psi$
 
 ## The Killing Form
 
-**The Killing form of the group of invertibles is the real part of the trace form on the trace-free part; its radical is the centre, and its signature is $(3,3)$.**
+**The Killing form of the group of invertibles is the real part of the trace form on the trace-free part; its radical is the centre, and its inertia is $(3,3)$.**
 
 The Lie algebra of $\mathbb{B}^\times$ is $\mathbb{B}$ with the bracket $[\tilde X,\tilde Y]=\tilde X\tilde Y-\tilde Y\tilde X$ (§*The Correspondence with the Lie Algebra*). Its **Killing form** is
 
@@ -262,7 +262,7 @@ $$
 \kappa(\vec e_j,\vec e_k)=-16\,\delta_{jk},
 $$
 
-so $\mathrm{K}$ is negative definite; on $i\mathrm{K}$, $\kappa(i\vec e_j,i\vec e_k)=+16\,\delta_{jk}$, so $i\mathrm{K}$ is positive definite. The signature of $\kappa$ on $\mathrm{B}_0$ is therefore
+so $\mathrm{K}$ is negative definite; on $i\mathrm{K}$, $\kappa(i\vec e_j,i\vec e_k)=+16\,\delta_{jk}$, so $i\mathrm{K}$ is positive definite. The inertia of $\kappa$ on $\mathrm{B}_0$ is therefore
 
 $$
 (3,3),
@@ -278,7 +278,7 @@ $$
 
 so $\kappa(\tilde Q\tilde X\tilde Q^{-1},\tilde Q\tilde Y\tilde Q^{-1})=\kappa(\tilde X,\tilde Y)$ for every invertible $\tilde Q$. It is therefore a function of the conjugation class alone.
 
-**Relation to the plain form.** The plain bilinear form $P(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* has realification of signature $(4,4)$. The Killing form is its real part with the rank-one piece carried by the centre removed,
+**Relation to the plain form.** The plain bilinear form $P(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* has realification of inertia $(4,4)$. The Killing form is its real part with the rank-one piece carried by the centre removed,
 
 $$
 K=16\operatorname{Re}\bigl(P(\tilde X,\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y\bigr),
@@ -294,7 +294,7 @@ The subgroups are $\mathbb{B}^\times$, $\mathbb{B}^\times_1$, the unit quaternio
 
 Surjectivity is not uniform. The exponential is surjective onto $S^3$, a connected compact group, and not surjective onto $\mathbb{B}^\times_1$: the norm-one group is not exponential, the obstruction a non-semi-simple element with the repeated eigenvalue $-1$, and the same obstruction occurs in $SL(2,\mathbb{R})$. The image still contains a neighbourhood of the identity and generates the connected group, so failure of surjectivity is not failure of generation.
 
-The one-parameter subgroups are the exponential lines $t\mapsto\exp(t\tilde X)$; every one-parameter subgroup is of this form, with generator $\tilde X$ unique for a fixed parametrisation. The Killing form is $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y)$; its radical is the centre $\mathbb{C}e_t$, and on the trace-free part it has signature $(3,3)$, negative on the compact $\mathrm{K}$ and positive on $i\mathrm{K}$.
+The one-parameter subgroups are the exponential lines $t\mapsto\exp(t\tilde X)$; every one-parameter subgroup is of this form, with generator $\tilde X$ unique for a fixed parametrisation. The Killing form is $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}(\operatorname{Sc}(\tilde X\tilde Y)-\operatorname{Sc}\tilde X\operatorname{Sc}\tilde Y)$; its radical is the centre $\mathbb{C}e_t$, and on the trace-free part it has inertia $(3,3)$, negative on the compact $\mathrm{K}$ and positive on $i\mathrm{K}$.
 
 The larger $*$-unitary groups are reached by enlarging the carrier and not the algebra. The matrices over the algebra satisfy $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$, so $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{su}(3)$ with its eight generators, and the closed forms for $\mathrm{SU}(3)$ and $\mathrm{SU}(4)$ — a Lie-type form and Euler-angles forms, built from the antisymmetric, diagonal and diagonal-less symmetric linear functions of the enveloping-algebra article — are the explicit elements of those groups written with $3\times3$ matrices of biquaternions. They do not put an octet inside $\mathbb{B}$: each element fixes $e_t$ and acts on the vector part, so the matrix is $\operatorname{diag}(\tilde U_3,1)$ and the group is an $\mathrm{SU}(3)$ block on a three-dimensional complex space, while the algebra's own action on $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ with the scalar direction inert. The ceiling is thus untouched and the price of the embedding is the factor $2$ in each matrix direction.
 
@@ -311,7 +311,7 @@ The larger $*$-unitary groups are reached by enlarging the carrier and not the a
 | $\mathrm{K}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$ | Lie algebra of $S^3$; compact subalgebra |
 | $\mathbb{C}^\times e_t$ | Centre of $\mathbb{B}^\times$; Lie algebra $\mathbb{C}e_t$ |
 | $\varphi_{\tilde X}(t)=\exp(t\tilde X)$ | One-parameter subgroup with generator $\tilde X$ |
-| $\kappa(\tilde X,\tilde Y)=\operatorname{tr}(\operatorname{ad}_{\tilde X}\operatorname{ad}_{\tilde Y})$ | Killing form; radical $\mathbb{C}e_t$, signature $(3,3)$ on $\mathrm{B}_0$ |
+| $\kappa(\tilde X,\tilde Y)=\operatorname{tr}(\operatorname{ad}_{\tilde X}\operatorname{ad}_{\tilde Y})$ | Killing form; radical $\mathbb{C}e_t$, inertia $(3,3)$ on $\mathrm{B}_0$ |
 | $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$ | Matrices over the algebra; the enlarged carrier |
 | $a[\,]b$, $\odot$, $D\{\delta\}$ | Conway operator $\tilde{Q}\mapsto a\tilde{Q}b$, its composition, and the diagonal function |
 | $G^{-1}=G^{+\approx}=G^{\dagger}$ | The inverse of a group element; association with conjugation |

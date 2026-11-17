@@ -73,7 +73,7 @@ $$
 
 **Proof.** For real $X,U$ the trace $\operatorname{tr}(X\,iU)=i\operatorname{tr}(XU)$ is purely imaginary, since $\operatorname{tr}(XU)$ is real; its real part is zero. The two summands span the algebra, so the form is block diagonal in that decomposition.
 
-**The complex form is isotropic on the two parts.** The matrix $E_{12}+iE_{12}=(1+i)E_{12}$ is nonzero and its square is $(1+i)^{2}E_{12}^{2}=0$, so $\operatorname{tr}\bigl((1+i)^{2}E_{12}^{2}\bigr)=0$. The trace form is indefinite on the complex algebra, and its signature on the real matrices is computed in *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+**The complex form is isotropic on the two parts.** The matrix $E_{12}+iE_{12}=(1+i)E_{12}$ is nonzero and its square is $(1+i)^{2}E_{12}^{2}=0$, so $\operatorname{tr}\bigl((1+i)^{2}E_{12}^{2}\bigr)=0$. The trace form is indefinite on the complex algebra, and its inertia on the real matrices is computed in *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 ## The Two Real Forms
 
@@ -103,7 +103,7 @@ which is the regular representation of $\mathbb{H}$ on $\mathbb{C}^{2}$: the fou
 
 **Example.** The rotation $\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix}$ has trace $2\cos\theta$ and determinant $1$, and its eigenvalues are $e^{\pm i\theta}$, a conjugate pair on the unit circle. A real matrix of order two has a nonreal pair exactly when its discriminant $(\operatorname{tr}X)^{2}-4\det X$ is negative.
 
-**The determinant is a quadratic form of signature $(2,2)$ on the real algebra.** In the basis $(E_{11},E_{12},E_{21},E_{22})$ the determinant $ad-bc$ has the symmetric matrix of eigenvalues $\tfrac12,\tfrac12,-\tfrac12,-\tfrac12$. Its zero set is therefore a cone over a torus, and not the single point that a definite form would give.
+**The determinant is a quadratic form of inertia $(2,2)$ on the real algebra.** In the basis $(E_{11},E_{12},E_{21},E_{22})$ the determinant $ad-bc$ has the symmetric matrix of eigenvalues $\tfrac12,\tfrac12,-\tfrac12,-\tfrac12$. Its zero set is therefore a cone over a torus, and not the single point that a definite form would give.
 
 ## The Split Quaternions at Order Two
 
@@ -121,11 +121,11 @@ Then $e_1^{2}=e_2^{2}=I$, $e_3^{2}=-I$, $e_1e_2=e_3$, $e_2e_3=-e_1$, $e_3e_1=-e_
 
 **Proof.** Each generator is traceless, so $\operatorname{tr}X=2a$. On the entries, $X=\begin{pmatrix}a+x&y+z\\ y-z&a-x\end{pmatrix}$, and $(a+x)(a-x)-(y+z)(y-z)=a^{2}-x^{2}-y^{2}+z^{2}$.
 
-**The correspondence with the biquaternion algebra.** The split quaternion algebra is the real algebra $\mathbb{B}^{\mathrm{spl}}$ whose norm is of signature $(2,2)$; the biquaternion algebra $\mathbb{B}$ carries the algebraic norm $N$, the sum $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ of four squares, read over $\mathbb{R}^{8}$ through the real and imaginary parts of the four coordinates. The two algebras are related by the change of the scalar field and not by an isomorphism over $\mathbb{R}$, and their tables differ in signs. The split algebra and its null quadric are *Split Quaternion Null Quadric and Projective Geometry*.
+**The correspondence with the biquaternion algebra.** The split quaternion algebra is the real algebra $\mathbb{B}^{\mathrm{spl}}$ whose norm is of inertia $(2,2)$; the biquaternion algebra $\mathbb{B}$ carries the algebraic norm $N$, the sum $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ of four squares, read over $\mathbb{R}^{8}$ through the real and imaginary parts of the four coordinates. The two algebras are related by the change of the scalar field and not by an isomorphism over $\mathbb{R}$, and their tables differ in signs. The split algebra and its null quadric are *Split Quaternion Null Quadric and Projective Geometry*.
 
 ## Summary
 
-$M_2(\mathbb{R})$ is the fixed algebra of the entrywise conjugation of $M_2(\mathbb{C})$, of real dimension $4$ against the real dimension $8$ of the complex algebra, and $\mathbb{C}\otimes_{\mathbb{R}}M_2(\mathbb{R})\cong M_2(\mathbb{C})$. Every matrix is $X+iY$ with $X,Y$ real and unique, and the product reads $AC=(XU-YV)+i(XV+YU)$. The rank is a condition on minors and survives the change of field, while the dimension doubles; the determinant restricted to the real matrices is a quadratic form of signature $(2,2)$ with a cone as zero set.
+$M_2(\mathbb{R})$ is the fixed algebra of the entrywise conjugation of $M_2(\mathbb{C})$, of real dimension $4$ against the real dimension $8$ of the complex algebra, and $\mathbb{C}\otimes_{\mathbb{R}}M_2(\mathbb{R})\cong M_2(\mathbb{C})$. Every matrix is $X+iY$ with $X,Y$ real and unique, and the product reads $AC=(XU-YV)+i(XV+YU)$. The rank is a condition on minors and survives the change of field, while the dimension doubles; the determinant restricted to the real matrices is a quadratic form of inertia $(2,2)$ with a cone as zero set.
 
 The algebra has exactly two real forms, $M_2(\mathbb{R})$ and $\mathbb{H}$, distinguished by the sign $S\bar S=\pm I$ and by the presence of zero divisors. The real algebra is the split quaternion algebra, with generators of squares $I,I,-I$ and the norm $a^{2}-x^{2}-y^{2}+z^{2}$.
 

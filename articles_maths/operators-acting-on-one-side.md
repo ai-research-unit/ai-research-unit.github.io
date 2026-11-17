@@ -232,7 +232,7 @@ $$
 \mathsf M_2(S\tilde Q)=\mathsf M_2(\tilde Q)^{\mathsf T},
 $$
 
-so the element $S\tilde Q$ is the element whose matrix is the transpose of the matrix of $\tilde Q$. The norm is unchanged, $\langle S\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$, because a determinant does not see the transpose.
+so the element $S\tilde Q$ is the element whose matrix is the transpose of the matrix of $\tilde Q$. The norm is unchanged, $\langle S\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$, because a determinant of a matrix does not see the transpose.
 
 ### The Matrix Identity $\mathsf P\,L_{\mathrm{pau}}(\tilde Q)^{\mathsf T}\mathsf P^{-1}=R_{\mathrm{pau}}(\tilde Q)$
 

@@ -19,7 +19,7 @@ $$
 
 where $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ is the conjugation of (*Split-Quaternion Algebra*, §*The Conjugation*).
 
-The form is a real quadratic form of **signature $(2,2)$**, read directly from the diagonal expression as two positive and two negative squares. It is **multiplicative**:
+The form is a real quadratic form of **inertia $(2,2)$**, read directly from the diagonal expression as two positive and two negative squares. It is **multiplicative**:
 
 $$
 \boxed{\;
@@ -73,7 +73,7 @@ Two consequences follow. First, the multiplicative scale exists only on the inve
 
 | Structure | Split-quaternion norm $\langle\tilde q\rangle_{\natural}$ | Euclidean norm $\lvert\tilde q\rvert$ |
 |---|---|---|
-| Definiteness | indefinite, signature $(2,2)$ | positive definite |
+| Definiteness | indefinite, inertia $(2,2)$ | positive definite |
 | Compatibility with the product | multiplicative | submultiplicative up to $\sqrt2$ |
 | Vanishing set | the null cone | $\{0\}$ |
 | Unit-level set | $\mathrm{SL}_2(\mathbb{R})$, non-compact, $\pi_1=\mathbb{Z}$ | $S^3$, compact and simply connected |
@@ -115,7 +115,7 @@ a circle's worth of lines; in particular $\mathbb{R}(\vec e_x + \vec e_y)$, $\ma
 
 **Theorem (The Isotropic Lines Are Doubly Ruled).** The isotropic lines of $\mathbb{H}_{\mathrm{spl}}$ are the points of the projective null quadric $\{\langle\tilde q\rangle_{\natural} = 0\} \subset \mathbb{P}(\mathbb{H}_{\mathrm{spl}})$, and that quadric is doubly ruled: its lines fall into two families, such that two lines of one family are anti-Hermitian while a line of one family meets a line of the other in exactly one point unless the two are parallel. The two families are defined and computed in *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
-**Proof.** A nonzero element $\tilde q$ is isotropic exactly when $\langle\tilde q\rangle_{\natural} = 0$, so the isotropic lines are the points of the projective null quadric of the non-degenerate form $\langle\cdot\rangle_{\natural}$ of signature $(2,2)$. A non-degenerate quadric of signature $(2,2)$ in $\mathbb{P}^3$ is doubly ruled. The explicit ruling is proved in *Split-Quaternion Zero Divisors*, §*The Two Families*.
+**Proof.** A nonzero element $\tilde q$ is isotropic exactly when $\langle\tilde q\rangle_{\natural} = 0$, so the isotropic lines are the points of the projective null quadric of the non-degenerate form $\langle\cdot\rangle_{\natural}$ of inertia $(2,2)$. A non-degenerate quadric of inertia $(2,2)$ in $\mathbb{P}^3$ is doubly ruled. The explicit ruling is proved in *Split-Quaternion Zero Divisors*, §*The Two Families*.
 
 The isotropic lines are also visible in the vector subspace: the isotropic lines lying in $V$ are the lines of the three-dimensional null cone $q_x^2 = q_y^2 + q_z^2$. Isotropic lines not lying in $V$ have a nonzero scalar part; an example is $\mathbb{R}(1 + \vec e_y)$, since $\langle 1+\vec e_y\rangle_{\natural} = 1 - 1 = 0$, and another is $\mathbb{R}(1 + \vec e_z)$.
 
@@ -175,7 +175,7 @@ and the union of the two split-quaternion norm levels $\pm 1$ is the disjoint un
 
 **Proof.** The kernel of $\langle\cdot\rangle_{\natural}$ is $\{\langle\tilde q\rangle_{\natural} = 1\}$, which is the group of unit split-quaternions and is connected, as recalled in *Matrix Groups and Classical Groups*; the second norm level is its negative coset $-\mathrm{U}$. The group of invertibles is the disjoint union of the two open sign sets $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
-This is the exact point at which the indefinite norm changes the group theory. The quaternion unit sphere is the compact group $Sp(1) \cong SU(2)$, the kernel of a positive-definite norm on a division algebra. The split-quaternion norm-one set is the non-compact $\mathrm{SL}_2(\mathbb{R})$, and the passage from $Sp(1)$ to $\mathrm{SL}_2(\mathbb{R})$ is the passage from the double cover of the rotation group of three-space to the double cover of the Lorentz group of signature $(2,1)$. The rotations themselves are treated in *Split-Quaternion Rotations and the Lorentz Group*.
+This is the exact point at which the indefinite norm changes the group theory. The quaternion unit sphere is the compact group $Sp(1) \cong SU(2)$, the kernel of a positive-definite norm on a division algebra. The split-quaternion norm-one set is the non-compact $\mathrm{SL}_2(\mathbb{R})$, and the passage from $Sp(1)$ to $\mathrm{SL}_2(\mathbb{R})$ is the passage from the double cover of the rotation group of three-space to the double cover of the Lorentz group of inertia $(2,1)$. The rotations themselves are treated in *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## The Three-Way Classification
 
@@ -246,9 +246,9 @@ So each of the four two-dimensional subspaces $\mathbb{H}_{\mathrm{spl}} \tilde\
 | Subspace | Dimension | Split-Quaternion norm | Zero divisors |
 |---|---|---|---|
 | $S = \mathbb{R}\cdot 1$ | $1$ | $q_t^2 \geq 0$ | none except $0$ |
-| $V$ | $3$ | $q_x^2 - q_y^2 - q_z^2$, signature $(2,1)$ | the null cone $q_x^2 = q_y^2 + q_z^2$ |
-| $\mathbb{C}_{\mathrm{spl},2}$ | $2$ | $q_t^2 - q_y^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_y) \setminus \{0\}$ |
-| $\mathbb{C}_{\mathrm{spl},3}$ | $2$ | $q_t^2 - q_z^2$, signature $(1,1)$ | $\mathbb{R}(1 \pm \vec e_z) \setminus \{0\}$ |
+| $V$ | $3$ | $q_x^2 - q_y^2 - q_z^2$, inertia $(2,1)$ | the null cone $q_x^2 = q_y^2 + q_z^2$ |
+| $\mathbb{C}_{\mathrm{spl},2}$ | $2$ | $q_t^2 - q_y^2$, inertia $(1,1)$ | $\mathbb{R}(1 \pm \vec e_y) \setminus \{0\}$ |
+| $\mathbb{C}_{\mathrm{spl},3}$ | $2$ | $q_t^2 - q_z^2$, inertia $(1,1)$ | $\mathbb{R}(1 \pm \vec e_z) \setminus \{0\}$ |
 | $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$, $\tilde\pi_{1,2} \mathbb{H}_{\mathrm{spl}}$ | $2$ | identically $0$ | the whole subspace minus the origin |
 
 The invertible elements are the complement of the null cone $\{\langle\tilde q\rangle_{\natural} = 0\}$, an open dense set of full measure. They form two connected components, $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
@@ -257,7 +257,7 @@ The invertible elements are the complement of the null cone $\{\langle\tilde q\r
 
 ### The Quaternion Case
 
-For $\mathbb{H}$ the quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2$, positive definite by (*Quaternion Algebra*, §*Basic Properties*). It vanishes only at the origin, so every nonzero quaternion is invertible, the algebra is a division algebra, the invertible class is the whole of $\mathbb{H} \setminus \{0\}$, and the classification has the single nonzero class. The norm-one group is the compact $Sp(1) \cong SU(2)$, and the group of invertibles is $\mathbb{R}_{>0} \times Sp(1)$, which is connected. The change from $\mathbb{H}$ to $\mathbb{H}_{\mathrm{spl}}$ is the change of the norm from signature $(4,0)$ to signature $(2,2)$; it empties no class away, but it inserts the null cone and the two-component structure.
+For $\mathbb{H}$ the quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 + q_y^2 + q_z^2$, positive definite by (*Quaternion Algebra*, §*Basic Properties*). It vanishes only at the origin, so every nonzero quaternion is invertible, the algebra is a division algebra, the invertible class is the whole of $\mathbb{H} \setminus \{0\}$, and the classification has the single nonzero class. The norm-one group is the compact $Sp(1) \cong SU(2)$, and the group of invertibles is $\mathbb{R}_{>0} \times Sp(1)$, which is connected. The change from $\mathbb{H}$ to $\mathbb{H}_{\mathrm{spl}}$ is the change of the norm from inertia $(4,0)$ to inertia $(2,2)$; it empties no class away, but it inserts the null cone and the two-component structure.
 
 ### The Split-Biquaternion Case
 
@@ -265,7 +265,7 @@ The eight-dimensional algebra $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{s
 
 ## Summary
 
-The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of signature $(2,2)$ and multiplicative. The form is isotropic; its isotropic vectors satisfy $q_t^2 + q_x^2 = q_y^2 + q_z^2$, its isotropic lines are the points of a doubly ruled projective null quadric, and on the vector subspace the isotropic lines are the lines of the null cone $q_x^2 = q_y^2 + q_z^2$.
+The split-quaternion norm is $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$, of inertia $(2,2)$ and multiplicative. The form is isotropic; its isotropic vectors satisfy $q_t^2 + q_x^2 = q_y^2 + q_z^2$, its isotropic lines are the points of a doubly ruled projective null quadric, and on the vector subspace the isotropic lines are the lines of the null cone $q_x^2 = q_y^2 + q_z^2$.
 
 A nonzero element is invertible exactly when $\langle\tilde q\rangle_{\natural} \neq 0$, and then $\tilde q^{-1} = \tilde{q}^{\natural}/\langle\tilde q\rangle_{\natural}$; it is a zero divisor exactly when $\langle\tilde q\rangle_{\natural} = 0$. The group of invertibles is $\{\langle\tilde q\rangle_{\natural} \neq 0\}$, the norm-one subgroup is $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} \cong \mathrm{SL}_2(\mathbb{R})$, and $\{\langle\tilde q\rangle_{\natural} = \pm 1\} = \mathrm{U} \sqcup (-\mathrm{U})$ has two components. The invertibles form the two connected components $\{\langle\tilde q\rangle_{\natural} > 0\}$ and $\{\langle\tilde q\rangle_{\natural} < 0\}$.
 
@@ -276,7 +276,7 @@ No positive-definite form on $\mathbb{H}_{\mathrm{spl}}$ is multiplicative, sinc
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
-| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the split-quaternion norm, signature $(2,2)$ | this article |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ | the split-quaternion norm, inertia $(2,2)$ | this article |
 | $\langle\tilde q_1,\tilde q_2\rangle$ | the polarised bilinear form | this article |
 | $\lvert\tilde q\rvert$ | the Euclidean norm, submultiplicative up to $\sqrt2$ | *Split-Quaternion Analysis* |
 | isotropic vector, isotropic line | nonzero $\tilde q$ with $\langle\tilde q\rangle_{\natural}=0$, and its span | this article |

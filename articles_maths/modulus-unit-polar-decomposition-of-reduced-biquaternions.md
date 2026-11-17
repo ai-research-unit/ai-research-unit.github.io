@@ -368,7 +368,7 @@ For $\breve R^2=-1$ the equations are $R_{\blacktriangle}^2+R_{\blacktriangledow
 
 The unit factor uses the roots of $-1$: $\exp(i\theta_{\mathrm{pha}})$ and $\exp(ij\theta_{\mathrm{phb}})$ are the two circles. The modulus uses the roots of $+1$: the one-parameter subgroups $\exp(t)$ and $\exp(jt)$ give the two positive directions of the plane $\mathbb{R}\{1,j\}$, and their product is the cone $P$. This is the exact doubling of the complex case: the two roots $\pm i$ of $-1$ give one circle there and two circles here, and the two roots $\pm1$ of $+1$ give one ray there and a two-dimensional cone here.
 
-### Position and Signature
+### Position and Inertia
 
 The algebraic norm of the multiplication is
 
@@ -376,11 +376,11 @@ $$
 \langle\breve Q\rangle=Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2.
 $$
 
-On the scale plane $\mathbb{R}\{1,j\}$, for $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ with $q_{\blacktriangle},q_{\blacktriangledown}\in\mathbb{R}$, it is $q_{\blacktriangle}^2+q_{\blacktriangledown}^2$, positive definite. On the angle plane $\mathbb{R}\{i,ij\}$, for $\breve Q=iq_{\blacktriangle}+ijq_{\blacktriangledown}$, it is $-(q_{\blacktriangle}^2+q_{\blacktriangledown}^2)$, negative definite. The algebraic norm therefore has real signature $(2,2)$, with $\mathbb{R}\{1,j\}$ the positive plane and $\mathbb{R}\{i,ij\}$ the negative plane. This is the form that sees the split of the algebra.
+On the scale plane $\mathbb{R}\{1,j\}$, for $\breve Q=q_{\blacktriangle}+jq_{\blacktriangledown}$ with $q_{\blacktriangle},q_{\blacktriangledown}\in\mathbb{R}$, it is $q_{\blacktriangle}^2+q_{\blacktriangledown}^2$, positive definite. On the angle plane $\mathbb{R}\{i,ij\}$, for $\breve Q=iq_{\blacktriangle}+ijq_{\blacktriangledown}$, it is $-(q_{\blacktriangle}^2+q_{\blacktriangledown}^2)$, negative definite. The algebraic norm therefore has real inertia $(2,2)$, with $\mathbb{R}\{1,j\}$ the positive plane and $\mathbb{R}\{i,ij\}$ the negative plane. This is the form that sees the split of the algebra.
 
 The reduced norm behaves differently. On $\mathbb{R}\{1,j\}$ it is $q_{\blacktriangle}^2-q_{\blacktriangledown}^2$, and on $\mathbb{R}\{i,ij\}$ it is $q_{\blacktriangledown}^2-q_{\blacktriangle}^2$; it is indefinite on both planes, with null lines $q_{\blacktriangle}=\pm q_{\blacktriangledown}$ in $\mathbb{R}\{1,j\}$, that is $\mathbb{R}(1\pm j)$, and their $i$-rotates $\mathbb{R}i(1\pm j)$ in $\mathbb{R}\{i,ij\}$. These four real lines are the real forms of the two complex zero-divisor lines.
 
-**Remark (which form is used where).** The modulus–unit decomposition uses the bar and the positive square root of $\breve Q\bar{\breve Q}$, not the reduced norm and not the algebraic norm. The algebraic norm is recorded here because it is the form whose signature separates $\mathbb{R}\{1,j\}$ from $\mathbb{R}\{i,ij\}$; it does not decide invertibility, and it is not the norm of the polar decomposition.
+**Remark (which form is used where).** The modulus–unit decomposition uses the bar and the positive square root of $\breve Q\bar{\breve Q}$, not the reduced norm and not the algebraic norm. The algebraic norm is recorded here because it is the form whose inertia separates $\mathbb{R}\{1,j\}$ from $\mathbb{R}\{i,ij\}$; it does not decide invertibility, and it is not the norm of the polar decomposition.
 
 ## The Matrix Picture
 
@@ -603,7 +603,7 @@ $$
 
 connected of real dimension four, with fundamental group $\mathbb{Z}^2$. The torus is the maximal compact subgroup and a deformation retract. The compact factor has rank two, the scalar circle and the $ij$-circle, and the two circles meet at $\pm1$.
 
-The modulus is two-dimensional because the reduced norm is complex: it fixes only the product $\rho_+\rho_-=|\langle\breve Q\rangle_{\mathrm{ts}}|$, the Euclidean norm only the sum of squares $\rho_+^2+\rho_-^2$, and the sign of the boost is lost by both. The bar splits the algebra into the scale plane $\mathbb{R}\{1,j\}$ and the angle plane $\mathbb{R}\{i,ij\}$; the modulus lies in $\mathbb{R}\{1,j\}$, the logarithm of the unit factor in $\mathbb{R}\{i,ij\}$, and the algebraic norm has signature $(2,2)$ with $\mathbb{R}\{1,j\}$ positive and $\mathbb{R}\{i,ij\}$ negative.
+The modulus is two-dimensional because the reduced norm is complex: it fixes only the product $\rho_+\rho_-=|\langle\breve Q\rangle_{\mathrm{ts}}|$, the Euclidean norm only the sum of squares $\rho_+^2+\rho_-^2$, and the sign of the boost is lost by both. The bar splits the algebra into the scale plane $\mathbb{R}\{1,j\}$ and the angle plane $\mathbb{R}\{i,ij\}$; the modulus lies in $\mathbb{R}\{1,j\}$, the logarithm of the unit factor in $\mathbb{R}\{i,ij\}$, and the algebraic norm has inertia $(2,2)$ with $\mathbb{R}\{1,j\}$ positive and $\mathbb{R}\{i,ij\}$ negative.
 
 In the matrix picture the decomposition is the polar decomposition
 

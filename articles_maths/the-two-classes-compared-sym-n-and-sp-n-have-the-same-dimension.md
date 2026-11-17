@@ -4,7 +4,7 @@
 
 **The transpose and the symplectic map fix spaces of the same dimension, $n(n+1)/2$, and the two spaces are not the same kind of object: one is a Jordan algebra, the other a Lie algebra, and no linear isomorphism carries the product of one to the product of the other.**
 
-The article computes the two dimensions from the defining equations, proves the sign in the product rule of $\sigma_J$, counts how many commutators stay inside each fixed space, computes the signature of the trace form on each, and isolates the three invariants that separate the two classes. It assumes *The Involutions of the First Kind: Transpose and Symplectic* for the classification and *The Two Halves: Symmetric and Antisymmetric* for the Jordan structure. It supplies what the dimension count alone cannot.
+The article computes the two dimensions from the defining equations, proves the sign in the product rule of $\sigma_J$, counts how many commutators stay inside each fixed space, computes the inertia of the trace form on each, and isolates the three invariants that separate the two classes. It assumes *The Involutions of the First Kind: Transpose and Symplectic* for the classification and *The Two Halves: Symmetric and Antisymmetric* for the Jordan structure. It supplies what the dimension count alone cannot.
 
 Throughout $n$ is even and $J$ is the standard alternating matrix, the block-diagonal array of $n/2$ copies of $\begin{pmatrix}0&1\\ -1&0\end{pmatrix}$. Then
 
@@ -100,7 +100,7 @@ So the anticommutator of two elements of $\mathfrak{sp}_n$ lands in the $-1$ spa
 
 ## The Trace Form on the Two Spaces
 
-**The trace form is positive definite on $\operatorname{Sym}_n$.** $\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}$ for symmetric $S$, and the sum is nonzero for $S\ne0$. So the form has signature $(n(n+1)/2,0)$ there, and the restriction is an inner product.
+**The trace form is positive definite on $\operatorname{Sym}_n$.** $\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}$ for symmetric $S$, and the sum is nonzero for $S\ne0$. So the form has inertia $(n(n+1)/2,0)$ there, and the restriction is an inner product.
 
 **The trace form is indefinite on $\mathfrak{sp}_n$.** Write an element of $\mathfrak{sp}_n$ as $-JS$ with $S$ symmetric. Then
 
@@ -108,7 +108,7 @@ $$
 \operatorname{tr}((-JS)^{2})=\operatorname{tr}(JSJS),
 $$
 
-and the sign of the right-hand side depends on $S$, because $J$ is antisymmetric. Measured on the basis $\{-JE^{(ij)}\mid i\le j\}$, where $E^{(ij)}$ runs over the standard symmetric basis, the Gram matrix of $\operatorname{tr}(XY)$ on $\mathfrak{sp}_n$ has signature
+and the sign of the right-hand side depends on $S$, because $J$ is antisymmetric. Measured on the basis $\{-JE^{(ij)}\mid i\le j\}$, where $E^{(ij)}$ runs over the standard symmetric basis, the Gram matrix of $\operatorname{tr}(XY)$ on $\mathfrak{sp}_n$ has inertia
 
 $$
 (2,1)\ \text{at}\ n=2,\qquad (6,4)\ \text{at}\ n=4,\qquad (12,9)\ \text{at}\ n=6.
@@ -116,7 +116,7 @@ $$
 
 Both signs occur as soon as $n\ge2$, so the restriction is indefinite. Its negative index is $1$, $4$, $9$ at $n=2,4,6$, which is $(n/2)^{2}$, and its positive index is $n(n+1)/2-(n/2)^{2}$, namely $2$, $6$, $12$.
 
-**Definiteness is a real phenomenon.** Over $\mathbb{C}$ the two restrictions have complex values and no sign, so the statement that separates the two classes here has no content there. This is the third thing the real field adds, after the signature of a symmetric form and the two components of $\mathrm{GL}_n(\mathbb{R})$.
+**Definiteness is a real phenomenon.** Over $\mathbb{C}$ the two restrictions have complex values and no sign, so the statement that separates the two classes here has no content there. This is the third thing the real field adds, after the inertia of a symmetric form and the two components of $\mathrm{GL}_n(\mathbb{R})$.
 
 ## The Three Invariants
 
@@ -164,13 +164,13 @@ $$
 
 because $JS=\begin{pmatrix}b&c\\ -a&-b\end{pmatrix}$ for $S=\begin{pmatrix}a&b\\ b&c\end{pmatrix}$ has zero trace. Both spaces are $3$-dimensional, and $\mathfrak{sp}_2=\mathfrak{sl}_2(\mathbb{R})$ has trace zero while $\operatorname{Sym}_2$ contains $\mathrm{I}$.
 
-**The intersection is $2$-dimensional and the union is the algebra.** The trace-zero symmetric matrices form a plane inside both, so $\operatorname{Sym}_2\cap\mathfrak{sp}_2$ has dimension $2$ and $\operatorname{Sym}_2+\mathfrak{sp}_2$ has dimension $4$, the whole algebra. At this order the trace form is positive definite on $\operatorname{Sym}_2$ with signature $(3,0)$ and indefinite on $\mathfrak{sp}_2$ with signature $(2,1)$, which is the signature of the trace form on $\mathfrak{sl}_2(\mathbb{R})$.
+**The intersection is $2$-dimensional and the union is the algebra.** The trace-zero symmetric matrices form a plane inside both, so $\operatorname{Sym}_2\cap\mathfrak{sp}_2$ has dimension $2$ and $\operatorname{Sym}_2+\mathfrak{sp}_2$ has dimension $4$, the whole algebra. At this order the trace form is positive definite on $\operatorname{Sym}_2$ with inertia $(3,0)$ and indefinite on $\mathfrak{sp}_2$ with inertia $(2,1)$, which is the inertia of the trace form on $\mathfrak{sl}_2(\mathbb{R})$.
 
 **At $n=2$ the two classes are therefore easiest to tell apart.** The dimensions agree, the spaces overlap in a plane, and a single eigenvalue sign of the trace form decides which space is which. The general case keeps the same picture, with the intersection growing as $m(m+1)$.
 
 ## Summary
 
-The transpose and the symplectic map $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$ are the two involutions of the first kind of $M_n(\mathbb{R})$, and their fixed spaces $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ both have dimension $n(n+1)/2$, measured as $3$, $10$, $21$ at $n=2,4,6$. The symplectic map reverses products up to a sign, $\sigma_J(XY)=-\sigma_J(Y)\sigma_J(X)$, so its fixed space is closed under the commutator while $\operatorname{Sym}_n$ is not: $100$ of $100$ commutators stay in $\mathfrak{sp}_n$, and $0$ of $100$ commutators of symmetric matrices are symmetric. The trace form is positive definite on $\operatorname{Sym}_n$ and indefinite on $\mathfrak{sp}_n$ with signature $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$. The three invariants are the dimension of the space, which agrees, the dimension of the Lie hull, which is $n^{2}$ against $n(n+1)/2$, and definiteness, which is positive against indefinite. The alternating law of the bracket forbids a linear isomorphism between the two products.
+The transpose and the symplectic map $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$ are the two involutions of the first kind of $M_n(\mathbb{R})$, and their fixed spaces $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ both have dimension $n(n+1)/2$, measured as $3$, $10$, $21$ at $n=2,4,6$. The symplectic map reverses products up to a sign, $\sigma_J(XY)=-\sigma_J(Y)\sigma_J(X)$, so its fixed space is closed under the commutator while $\operatorname{Sym}_n$ is not: $100$ of $100$ commutators stay in $\mathfrak{sp}_n$, and $0$ of $100$ commutators of symmetric matrices are symmetric. The trace form is positive definite on $\operatorname{Sym}_n$ and indefinite on $\mathfrak{sp}_n$ with inertias $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$. The three invariants are the dimension of the space, which agrees, the dimension of the Lie hull, which is $n^{2}$ against $n(n+1)/2$, and definiteness, which is positive against indefinite. The alternating law of the bracket forbids a linear isomorphism between the two products.
 
 ## Summary of Notation
 
@@ -192,4 +192,4 @@ The transpose and the symplectic map $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$ are the
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the two types of involution and their fixed spaces.
 - [The Involutions of the First Kind: Transpose and Symplectic](the-involutions-of-the-first-kind-transpose-and-symplectic.html), for the classification of the two types.
 - [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the Jordan structure of $\operatorname{Sym}_n$.
-- [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the signature of the trace form on the whole algebra.
+- [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the inertia of the trace form on the whole algebra.

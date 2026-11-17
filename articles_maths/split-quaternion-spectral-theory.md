@@ -65,7 +65,7 @@ Moreover, $\tilde q$ is singular if and only if $\lambda = 0$ is a root, i.e. $q
 
 **Proof.** These are the three cases of the preceding formula, according to whether $-\langle \vec v\rangle_{\natural}$ is positive, negative or zero.
 
-The dichotomy is the signature in the spectrum of the indefiniteness of $\langle\cdot\rangle_{\natural}$: the timelike directions of the vector part ($\langle \vec v\rangle_{\natural}>0$) give oscillatory, conjugate-pair behaviour, while the spacelike directions ($\langle \vec v\rangle_{\natural}<0$) give real, exponential behaviour. The null directions sit at the transition, where the two eigenvalues coalesce.
+The dichotomy is the inertia in the spectrum of the indefiniteness of $\langle\cdot\rangle_{\natural}$: the timelike directions of the vector part ($\langle \vec v\rangle_{\natural}>0$) give oscillatory, conjugate-pair behaviour, while the spacelike directions ($\langle \vec v\rangle_{\natural}<0$) give real, exponential behaviour. The null directions sit at the transition, where the two eigenvalues coalesce.
 
 **Example.** For $\tilde q = \vec e_x$ ($q_t=0$, $\langle \vec v\rangle_{\natural}=1>0$) the spectrum is $\{i, -i\}$, a conjugate pair; for $\tilde q = \vec e_y$ ($q_t=0$, $\langle \vec v\rangle_{\natural}=-1<0$) the spectrum is $\{1,-1\}$, real; for $\tilde q = \vec e_x+\vec e_z$ ($\langle \vec v\rangle_{\natural}=0$) the spectrum is $\{0\}$ and $\tilde q$ is a zero divisor.
 
@@ -169,7 +169,7 @@ The definite spectral theorem has no direct analogue, and the reason is the inde
 
 ## Relation to the Biquaternion Case
 
-The biquaternion article *The Biquaternion Eigenvalue Decomposition* takes the spectrum of $\tilde Q = \sum_\mu Q_\mu e_\mu \in \mathbb{B} = M_2(\mathbb{C})$ over $\mathbb{C}$, with trace $2Q_t$ and determinant $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$, and eigenvalues
+The biquaternion article *The Biquaternion Eigenvalue Decomposition* takes the spectrum of $\tilde Q = \sum_\mu Q_\mu e_\mu \in \mathbb{B} = M_2(\mathbb{C})$ over $\mathbb{C}$, with trace $2Q_t$ and determinant $\langle\tilde Q\rangle_{\natural} = \sum_\mu Q_\mu^2$ of its $2\times2$ image, and eigenvalues
 
 $$
 \lambda_\pm = Q_t \pm iB, \qquad B = \sqrt{Q_x^2+Q_y^2+Q_z^2},
@@ -197,7 +197,7 @@ The spectrum of $\tilde q = q_t+\vec v$ is the zero set of the characteristic po
 | $E_\lambda$ | the eigenspace, a left ideal | this article |
 | $R(\lambda) = (\tilde{q}^{\natural}-\lambda)/(\lambda^2-2q_t\lambda+\langle\tilde q\rangle_{\natural})$ | the resolvent | this article |
 | $\rho(\tilde q)$ | the spectral radius, by cases on $\operatorname{sgn}\langle \vec v\rangle_{\natural}$ | this article |
-| $\langle \vec v\rangle_{\natural} = q_x^2-q_y^2-q_z^2$ | the restricted norm, signature $(2,1)$ | *Split-Quaternion Scalar and Vector Subspaces* |
+| $\langle \vec v\rangle_{\natural} = q_x^2-q_y^2-q_z^2$ | the restricted norm, inertia $(2,1)$ | *Split-Quaternion Scalar and Vector Subspaces* |
 | zero divisors $=\{N=0\}$ | the singular elements, spectrum containing $0$ | *Split-Quaternion Zero Divisors* |
 
 ## Further Reading

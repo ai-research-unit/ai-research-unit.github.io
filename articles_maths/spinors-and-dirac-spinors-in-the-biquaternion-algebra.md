@@ -53,7 +53,7 @@ $$
 (\lambda_1-\lambda_2)^{2}=4\operatorname{Sc}(\tilde Q)^{2}-4N(\tilde Q)=-4B^{2}(\tilde Q).
 $$
 
-*Proof.* The doubled scalar part is $2Q_t$ and the determinant is $N(\tilde Q)$; for a two-by-two element $4\operatorname{Sc}^{2}-4\det=(\lambda_1-\lambda_2)^{2}$,
+*Proof.* The doubled scalar part is $2Q_t$ and the determinant of the image is $N(\tilde Q)$; for a two-by-two element $4\operatorname{Sc}^{2}-4\det=(\lambda_1-\lambda_2)^{2}$,
 and substituting $N=Q_t^{2}+B^{2}$ gives $4Q_t^{2}-4Q_t^{2}-4B^{2}$.
 
 **Corollary (the spectral predicate is the coincidence of the eigenvalues).** $B^{2}(\tilde Q)=0$ exactly when the two eigenvalues coincide.

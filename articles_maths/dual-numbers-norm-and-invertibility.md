@@ -341,7 +341,7 @@ for the complex numbers, the split complex numbers $\mathbb{C}_{\mathrm{spl}} = 
 - In the split complex $\mathbb{C}_{\mathrm{spl}}$ the norm is indefinite, its null set is the pair of linear null directions on which the zero divisors live, and the norm-one group is a hyperbola, with two branches.
 - In $\mathbb{C}_{\mathrm{dln}}$ the norm is degenerate, its null set is the maximal ideal, a whole line, and the norm-one group is a pair of parallel lines.
 
-The three cases form the family of the two-dimensional real algebras: complex, split complex, dual. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the signature and the value ring of that form.
+The three cases form the family of the two-dimensional real algebras: complex, split complex, dual. In every case the criterion for invertibility is the non-vanishing of a single multiplicative form, and the differences among the members lie in the rank, the inertia and the value ring of that form.
 
 ## Summary
 

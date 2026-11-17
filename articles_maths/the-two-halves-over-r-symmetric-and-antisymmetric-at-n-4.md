@@ -6,7 +6,7 @@
 
 The article defines the two halves, proves the projections and the uniqueness of the split, shows that neither half is closed under the product while each is closed under the appropriate symmetrised product, and reads the split in the axis-free basis, where symmetry becomes an index pattern on the sixteen coordinates and the trace pairing has the sign of that pattern with no transpose taken.
 
-It assumes *The Involutions of $M_4(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$* for the transpose and its two eigenspaces, and *$M_4(\mathbb{C})$ Axis-Free Representation* for the basis. The case $n=2$ is *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*. The signature of the trace form on the two halves is *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$*.
+It assumes *The Involutions of $M_4(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$* for the transpose and its two eigenspaces, and *$M_4(\mathbb{C})$ Axis-Free Representation* for the basis. The case $n=2$ is *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*. The inertia of the trace form on the two halves is *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$*.
 
 ## The Two Halves and the Projections
 
@@ -79,7 +79,7 @@ $$
 
 **Proof.** A symmetric bilinear form with $\beta(X,X)>0$ for every $X\neq0$ is positive definite; the polarisation of $\operatorname{tr}(X^{2})$ is $\operatorname{tr}(XY)$.
 
-**Corollary.** The signature of $\beta$ on $M_4(\mathbb{R})$ is $(10,6)$.
+**Corollary.** The inertia of $\beta$ on $M_4(\mathbb{R})$ is $(10,6)$.
 
 **Proof.** The two halves are orthogonal for $\beta$ and carry $10$ positive and $6$ negative directions.
 
@@ -125,7 +125,7 @@ The transpose is an involution of $M_4(\mathbb{C})$, so the algebra is the direc
 
 Neither half is closed under the product. For two matrices of the same parity the anticommutator is symmetric and the commutator antisymmetric, for opposite parities the reverse, and every product splits accordingly; in particular a product of two antisymmetric matrices is not symmetric at order four. The trace vanishes on the antisymmetric half and on every mixed pairing.
 
-Over the reals the trace of a symmetric square is a sum of squares and the trace of an antisymmetric square is minus a sum of squares, so the two halves are the positive and negative parts of the form, of signature $(10,6)$. In the axis-free basis this is an index pattern with no transpose in sight: ten symmetric slots, six antisymmetric ones, and a sign of $4$ attached to each.
+Over the reals the trace of a symmetric square is a sum of squares and the trace of an antisymmetric square is minus a sum of squares, so the two halves are the positive and negative parts of the form, of inertia $(10,6)$. In the axis-free basis this is an index pattern with no transpose in sight: ten symmetric slots, six antisymmetric ones, and a sign of $4$ attached to each.
 
 ## Summary of Notation
 
@@ -144,5 +144,5 @@ Over the reals the trace of a symmetric square is a sum of squares and the trace
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for symmetric and antisymmetric matrices and their eigenvalue structure.
 - [The Involution and the Hermitian Structure of $M_4(\mathbb{C})$](the-involution-and-the-hermitian-structure-of-m4c.html), for the dagger and the Hermitian half.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the sixteen matrices and the coefficient basis.
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the signature computed in full.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the inertia computed in full.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the same split at order two.

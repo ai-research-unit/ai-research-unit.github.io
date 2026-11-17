@@ -206,7 +206,7 @@ its kernel is the torus $T^{2}$ of the two phases, and its image is the **quadra
 
 **The image of the modulus two-sided operator is a cone.** The set $\{\Phi_{\breve Q}\}$ is a **convex cone** in the space of self-adjoint operators of the frame, closed under sums and under multiplication by nonnegative scalars, and it is the positive quadrant of the two idempotent coordinates. So this category has one cone of operators, the modulus cone, and it is the cone of the two-sided operator and not of the two-sided product: the two-sided product gives the subspace, the modulus two-sided operator gives the quadrant, and the two are different objects in the same ambient.
 
-**The nilpotent scale is absent.** In the dual-number category the two-sided operator had a kernel of two parallel lines, $q=\pm1$, because the modulus was $q^{2}$ and the level set was $\pm1$; here the level set of a fixed operator is a torus $T^{2}$, of real dimension two, and the count $2+2=4$ is the dimension count of the parameter space. The change from two lines to a torus is the change from the dual numbers to the reduced biquaternions in a single line: a level set of a quadratic form of signature $(1,1)$ against a level set of a positive definite quartic.
+**The nilpotent scale is absent.** In the dual-number category the two-sided operator had a kernel of two parallel lines, $q=\pm1$, because the modulus was $q^{2}$ and the level set was $\pm1$; here the level set of a fixed operator is a torus $T^{2}$, of real dimension two, and the count $2+2=4$ is the dimension count of the parameter space. The change from two lines to a torus is the change from the dual numbers to the reduced biquaternions in a single line: a level set of a quadratic form of inertia $(1,1)$ against a level set of a positive definite quartic.
 
 ## The Kronecker Display and the Coefficient Matrix
 
@@ -343,7 +343,7 @@ so the bicommutant theorem holds for a reason that has nothing to do with finite
 | the model | $\mathbb{C}$, of dimension one | the algebra in $\mathrm{End}$ of a two-dimensional space | the whole of $M_{2}(\mathbb{C})$ |
 | the image | a line | a two-dimensional subspace | the ambient |
 | the two-sided family | a subspace | a subspace | a cone |
-| the determinant | a point of the plane | two planes in a four-space | a cone in a four-space |
+| the determinant of the image | a point of the plane | two planes in a four-space | a cone in a four-space |
 | idempotents | two | four | two, of the frame |
 | the length | $\{0,1\}$ inside the span | $\{0,1\}$ inside the span | $1,4,7,16$ |
 | the adjoint | inside | inside, for all three forms | inside, for the conjugation |

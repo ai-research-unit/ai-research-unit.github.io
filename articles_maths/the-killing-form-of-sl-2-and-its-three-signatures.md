@@ -1,10 +1,10 @@
-# __The Killing Form of $\mathfrak{sl}_2$ and Its Three Signatures__
+# __The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias__
 
 ## Introduction
 
-**The Killing form of $\mathfrak{sl}_2$ is four times the trace form, and its signature is $(2,1)$ on the split real form, $(0,3)$ on the compact form $\mathfrak{su}(2)$ and $(3,3)$ on the complex form read over the reals.**
+**The Killing form of $\mathfrak{sl}_2$ is four times the trace form, and its inertia is $(2,1)$ on the split real form, $(0,3)$ on the compact form $\mathfrak{su}(2)$ and $(3,3)$ on the complex form read over the reals.**
 
-The article defines the Killing form, proves the formula $K(X,Y)=4\operatorname{tr}(XY)$ on the traceless matrices, computes the Gram matrix in the basis $H,E,F$ with eigenvalues $-4,4,8$, computes the negative definite form of $\mathfrak{su}(2)$ in the basis $i\sigma_{k}/2$ with eigenvalues $-2,-2,-2$, computes the form of $\mathfrak{sl}_2(\mathbb{C})$ over $\mathbb{R}$ with the signature $(3,3)$, and explains what the three signs mean. It assumes *The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian*, *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+The article defines the Killing form, proves the formula $K(X,Y)=4\operatorname{tr}(XY)$ on the traceless matrices, computes the Gram matrix in the basis $H,E,F$ with eigenvalues $-4,4,8$, computes the negative definite form of $\mathfrak{su}(2)$ in the basis $i\sigma_{k}/2$ with eigenvalues $-2,-2,-2$, computes the form of $\mathfrak{sl}_2(\mathbb{C})$ over $\mathbb{R}$ with the inertia $(3,3)$, and explains what the three signs mean. It assumes *The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian*, *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* and *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 It defers the Hilbert–Schmidt form to *The Hilbert–Schmidt Form at $n=2$* and the four forms with their norms to *The Four Forms and Their Algebraic Norms at $n=2$*.
 
@@ -34,7 +34,7 @@ $$
 
 **Corollary.** The Killing form is four times the trace form, so it vanishes on the scalars, and on the traceless matrices it inherits the splitting of the trace form.
 
-**Proof.** The two forms agree up to the constant, and the trace form was computed in *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+**Proof.** The two forms agree up to the constant, and the trace form was computed in *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 **Corollary.** In the basis $H=\sigma_{3}$, $E=E_{12}$, $F=E_{21}$ the Gram matrix of the Killing form is
 
@@ -46,7 +46,7 @@ $$
 
 ## The Split Form
 
-**Theorem.** The eigenvalues of the Killing form of $\mathfrak{sl}_2(\mathbb{R})$ are $-4$, $4$ and $8$, so its signature is $(2,1)$.
+**Theorem.** The eigenvalues of the Killing form of $\mathfrak{sl}_2(\mathbb{R})$ are $-4$, $4$ and $8$, so its inertia is $(2,1)$.
 
 **Proof.** The characteristic polynomial of the displayed matrix is $(8-\lambda)(\lambda^{2}-16)$, whose roots are $8$, $4$ and $-4$; two are positive and one is negative.
 
@@ -60,7 +60,7 @@ $$
 
 ## The Compact Form
 
-**Theorem.** In the basis $X_{1}=i\sigma_{1}/2$, $X_{2}=i\sigma_{2}/2$, $X_{3}=i\sigma_{3}/2$ of $\mathfrak{su}(2)$ the Killing form is $-2$ times the identity, so its eigenvalues are $-2,-2,-2$ and its signature is $(0,3)$.
+**Theorem.** In the basis $X_{1}=i\sigma_{1}/2$, $X_{2}=i\sigma_{2}/2$, $X_{3}=i\sigma_{3}/2$ of $\mathfrak{su}(2)$ the Killing form is $-2$ times the identity, so its eigenvalues are $-2,-2,-2$ and its inertia is $(0,3)$.
 
 **Proof.** $4\operatorname{tr}(X_{j}X_{k})=4\cdot(-\tfrac14\cdot2\delta_{jk})=-2\delta_{jk}$, since $\operatorname{tr}(\sigma_{j}\sigma_{k})=2\delta_{jk}$ and the two factors of $i$ give $-1$.
 
@@ -78,17 +78,17 @@ $$
 
 ## The Complex Form over the Reals
 
-**Theorem.** Read over the reals, $\mathfrak{sl}_2(\mathbb{C})$ has dimension $6$ and its Killing form has the eigenvalues $-8,-4,-4,4,4,8$, with signature $(3,3)$.
+**Theorem.** Read over the reals, $\mathfrak{sl}_2(\mathbb{C})$ has dimension $6$ and its Killing form has the eigenvalues $-8,-4,-4,4,4,8$, with inertia $(3,3)$.
 
 **Proof.** A real basis is $H,E,F,iH,iE,iF$. The real part of the form sends a pair of real matrices $(A,B)$ to $4\bigl(\operatorname{tr}(A^{2})-\operatorname{tr}(B^{2})\bigr)$, and the Gram matrix of that quadratic form in the six-element basis has the characteristic polynomial with the roots $-8,-4,-4,4,4,8$.
 
-**Corollary.** The real part is the difference of two trace forms, positive of signature $(2,1)$ on the traceless real matrices and negative of signature $(1,2)$ on the imaginary ones.
+**Corollary.** The real part is the difference of two trace forms, positive of inertia $(2,1)$ on the traceless real matrices and negative of inertia $(1,2)$ on the imaginary ones.
 
-**Proof.** On the traceless matrices of $M_2(\mathbb{R})$ the trace form has signature $(2,1)$, as computed in the section on the split form, and the minus sign reverses the two counts.
+**Proof.** On the traceless matrices of $M_2(\mathbb{R})$ the trace form has inertia $(2,1)$, as computed in the section on the split form, and the minus sign reverses the two counts.
 
-**Corollary.** The three signatures $(2,1)$, $(0,3)$ and $(3,3)$ come from the two real forms and from the complex form read over the reals, and the complex form is not the complexification of either form read on the real algebra alone.
+**Corollary.** The three inertias $(2,1)$, $(0,3)$ and $(3,3)$ come from the two real forms and from the complex form read over the reals, and the complex form is not the complexification of either form read on the real algebra alone.
 
-**Proof.** The first two signatures are those of the two real forms; the third is that of the complex algebra with the real part of the complex bilinear form, which mixes the two real directions instead of adding their signatures.
+**Proof.** The first two inertias are those of the two real forms; the third is that of the complex algebra with the real part of the complex bilinear form, which mixes the two real directions instead of adding their inertias.
 
 ## What the Three Signs Mean
 
@@ -102,13 +102,13 @@ $$
 
 **Corollary.** The trace form of the algebra and the Killing form of the traceless part are proportional, so the sign difference between the two real forms is visible already in the elementary trace.
 
-**Proof.** $K=4\operatorname{tr}$ on the traceless part, and the trace form has signature $(3,1)$ on the real algebra with the traceless part of signature $(2,1)$ and the antisymmetric line negative.
+**Proof.** $K=4\operatorname{tr}$ on the traceless part, and the trace form has inertia $(3,1)$ on the real algebra with the traceless part of inertia $(2,1)$ and the antisymmetric line negative.
 
 ## Summary
 
-The Killing form of $\mathfrak{sl}_2$ is $K(X,Y)=4\operatorname{tr}(XY)$. In the basis $H,E,F$ of the split form its Gram matrix is $\begin{pmatrix}8&0&0\\ 0&0&4\\ 0&4&0\end{pmatrix}$ with eigenvalues $-4,4,8$ and signature $(2,1)$, positive on the traceless symmetric plane and negative on the antisymmetric line.
+The Killing form of $\mathfrak{sl}_2$ is $K(X,Y)=4\operatorname{tr}(XY)$. In the basis $H,E,F$ of the split form its Gram matrix is $\begin{pmatrix}8&0&0\\ 0&0&4\\ 0&4&0\end{pmatrix}$ with eigenvalues $-4,4,8$ and inertia $(2,1)$, positive on the traceless symmetric plane and negative on the antisymmetric line.
 
-On the compact form $\mathfrak{su}(2)$, in the basis $i\sigma_{k}/2$, the form is $-2$ times the identity with eigenvalues $-2,-2,-2$ and signature $(0,3)$, so the form is negative definite and the algebra is compact. On $\mathfrak{sl}_2(\mathbb{C})$ read over the reals the eigenvalues are $-8,-4,-4,4,4,8$ with signature $(3,3)$, the complexification of the two real forms.
+On the compact form $\mathfrak{su}(2)$, in the basis $i\sigma_{k}/2$, the form is $-2$ times the identity with eigenvalues $-2,-2,-2$ and inertia $(0,3)$, so the form is negative definite and the algebra is compact. On $\mathfrak{sl}_2(\mathbb{C})$ read over the reals the eigenvalues are $-8,-4,-4,4,4,8$ with inertia $(3,3)$, the complexification of the two real forms.
 
 ## Summary of Notation
 
@@ -122,8 +122,8 @@ On the compact form $\mathfrak{su}(2)$, in the basis $i\sigma_{k}/2$, the form i
 
 ## Further Reading
 
-- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Geometric Analysis* (AMS, 2001), for the Killing form, its signature and the compactness criterion.
+- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Geometric Analysis* (AMS, 2001), for the Killing form, its inertia and the compactness criterion.
 - Anthony W. Knapp, *Lie Groups Beyond an Introduction* (Birkhäuser, 2002), for the real forms of $\mathfrak{sl}_2$ and their Cartan decompositions.
-- [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the trace form that the Killing form multiplies by four.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the trace form that the Killing form multiplies by four.
 - [The Lie Algebra $\operatorname{Skew}_2$: One Dimension, Hence Abelian](the-lie-algebra-skew-2-one-dimension-hence-abelian.html), for the antisymmetric line on which the form is negative.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the adjoint operators whose traces define the form.

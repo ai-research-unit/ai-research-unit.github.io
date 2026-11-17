@@ -35,7 +35,7 @@ and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$, acting by the adjoint ac
 
 **Proof.** The induced metric and its curvature are (*Split-Quaternion Geometry*, §*The Unit Hyperboloids and Their Metrics*), where it is also shown that the induced form is definite on the sheet and that the geodesics are the central sections. The distance formula is the standard one for a hyperboloid model: for $v = w$ both sides are $1 = \cosh 0$, and for distinct points in the same sheet $\langle v,w\rangle \geq 1$ because the sheet lies in the closed half-space $q_x \geq 1$ and $\langle \vec e_x,w\rangle = w_x \geq 1$, with the general case following by transitivity. The group action is the double cover of *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*, and the identification of the quotient with the hyperbolic plane is *Hyperbolic Geometry*.
 
-The model is the hyperboloid model of the hyperbolic plane, and the vector space in which it sits is the vector subspace of the algebra, of signature $(2,1)$; the points of the model are precisely the solutions of $\tilde\zeta^2 = -1$ in the sheet, by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*.
+The model is the hyperboloid model of the hyperbolic plane, and the vector space in which it sits is the vector subspace of the algebra, of inertia $(2,1)$; the points of the model are precisely the solutions of $\tilde\zeta^2 = -1$ in the sheet, by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*.
 
 ## The Unit Condition and the Two-Sheeted Structure
 
@@ -205,4 +205,4 @@ The models are explicit. The eigenline map $\varkappa_{\mathrm{crd}} = (q_y-q_x)
 - John G. Ratcliffe, *Foundations of Hyperbolic Manifolds* (Springer, 2006), for the hyperboloid, half-plane, disc and Klein models and the classification of the isometries.
 - Alan F. Beardon, *The Geometry of Discrete Groups* (Springer, 1983), for the action of $\mathrm{SL}_2(\mathbb{R})$ by Möbius transformations and the trace classification.
 - Joseph Lehner, *A Short Course in Automorphic Functions* (Holt, Rinehart and Winston, 1966), for the Cayley transform, the disc model and the boundary of the hyperbolic plane.
-- Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the hyperboloid model of the hyperbolic plane inside a Clifford algebra of signature $(2,1)$.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the hyperboloid model of the hyperbolic plane inside a Clifford algebra of inertia $(2,1)$.

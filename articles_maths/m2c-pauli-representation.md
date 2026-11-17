@@ -716,7 +716,7 @@ $$
 \tfrac12\operatorname{Tr}(\operatorname{adj}(A)A^{\dagger})
 =\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2=K .
 $$
-It is positive on the centre and negative on the vector subspace, of signature $(2,6)$ on the real algebra.
+It is positive on the centre and negative on the vector subspace, of inertia $(2,6)$ on the real algebra.
 
 **Two pairings, not one.** The trace pairing of §*The Trace* is $\tfrac12\operatorname{Tr}(A_PA_Q)$, the plain word; the Hermitian product is $\tfrac12\operatorname{Tr}(A_P^{\dagger}A_Q)$. The first is complex bilinear and indefinite, the second is a Hilbert–Schmidt product and positive definite, and the four norms are the four ways of reading one element against the two.
 
@@ -755,7 +755,7 @@ $$
 A_{\mathbb{H}}(a,b)=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix},
 \qquad a=q_t-iq_z,\quad b=-iq_x-q_y,
 $$
-of real dimension $4$. The determinant is $\sum q_\mu^2$, positive definite, and vanishes only at $\tilde Q=0$; the subspace is a division algebra.
+of real dimension $4$. The determinant of the matrix is $\sum q_\mu^2$, positive definite, and vanishes only at $\tilde Q=0$; the subspace is a division algebra.
 
 ### The Anti-Quaternion Subspace
 

@@ -23,7 +23,7 @@ g=\operatorname{Re}h=dq_{\blacktriangle}^2+dq'^2_{\blacktriangle}+dq_{\blacktria
 $$
 The form $\Omega$ is the **Kähler form** of the flat metric.
 
-**Proposition (the three readings).** The form $g$ is a Riemannian metric of signature $(4,0)$; the form $\Omega$ is a symplectic form; and
+**Proposition (the three readings).** The form $g$ is a Riemannian metric of inertia $(4,0)$; the form $\Omega$ is a symplectic form; and
 $$
 \Omega=dq_{\blacktriangle}\wedge dq'_{\blacktriangle}+dq_{\blacktriangledown}\wedge dq'_{\blacktriangledown},
 \qquad
@@ -66,15 +66,15 @@ The form $B$ is complex bilinear and symmetric; the form $H$ is Hermitian; the f
 
 *Proof.* The real part of $H$ is $g$ by definition, and the imaginary part is $-\Omega$ by the computation of the previous section. The identity $B(Q_1,Q_2)=H(Q_1,\overline{Q_2})$ is the definition of $B$ and the fact that $\overline{\bar w_k}=w_k$.
 
-**Remark (the signatures).** The real part of $B$ is the symmetric form
+**Remark (the inertias).** The real part of $B$ is the symmetric form
 $$
 \operatorname{Re}B(Q_1,Q_2)=q_{\blacktriangle}u_{\blacktriangle}-q'_{\blacktriangle}v_{\blacktriangle}+q_{\blacktriangledown}u_{\blacktriangledown}-q'_{\blacktriangledown}v_{\blacktriangledown},
 $$
-of signature $(2,2)$; the imaginary part is the symmetric form
+of inertia $(2,2)$; the imaginary part is the symmetric form
 $$
 \operatorname{Im}B(Q_1,Q_2)=q_{\blacktriangle}v_{\blacktriangle}+q'_{\blacktriangle}u_{\blacktriangle}+q_{\blacktriangledown}v_{\blacktriangledown}+q'_{\blacktriangledown}u_{\blacktriangledown},
 $$
-also of signature $(2,2)$. **The form $B$ is the complexification of the split-complex norm**, and its isotropic cone is treated in *The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$*. The Kähler form $\Omega$ is nondegenerate on every complex line, and its sign is the orientation of the line.
+also of inertia $(2,2)$. **The form $B$ is the complexification of the split-complex norm**, and its isotropic cone is treated in *The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$*. The Kähler form $\Omega$ is nondegenerate on every complex line, and its sign is the orientation of the line.
 
 **Remark (the two almost-complex structures).** The complex structure $J$ is compatible with $g$ and with $\Omega$; the form $B$ is $\mathbb{C}$-bilinear and satisfies
 $$
@@ -171,7 +171,7 @@ The holomorphic isometries are the affine maps $Q\mapsto AQ+Q_0$ with $A\in\math
 
 - [Duo-Complex Numbers](duo-complex-numbers.html), for the space and the Hermitian form.
 - [The Realification of $\mathbb{C}^2$](the-realification-of-c2.html), for the identification with $\mathbb{R}^4$ and the complex structure $J$.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-c2.html), for $H$, $B$ and the holomorphic symplectic form $\omega$, and their signatures.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-c2.html), for $H$, $B$ and the holomorphic symplectic form $\omega$, and their inertias.
 - [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-c2.html), for the complex lines, the Lagrangian planes and the isotropic lines.
 - [The Ball and the Bicylinder in $\mathbb{C}^2$](the-ball-and-the-bicylinder-in-c2.html), for the negatively curved model and its Bergman metric.
 - [The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$](the-isotropic-cone-of-the-bilinear-form-on-c2.html), the next article, for the null cone of $B$.

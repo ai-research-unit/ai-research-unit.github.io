@@ -8,7 +8,7 @@ $$
 \langle \breve Q_{1},\breve Q_{2}\rangle_{*}=\mathrm{Sc}(\breve Q_{1}\breve Q_{2}^{*})=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}-Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown},
 $$
 
-whose quadratic form is $\langle \breve Q\rangle_{*}=|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2}$, indefinite of real signature $(2,2)$, and the tessarine sesquilinear form
+whose quadratic form is $\langle \breve Q\rangle_{*}=|Q_{\blacktriangle}|^{2}-|Q_{\blacktriangledown}|^{2}$, indefinite of real inertia $(2,2)$, and the tessarine sesquilinear form
 
 $$
 \langle \breve Q_{1},\breve Q_{2}\rangle_{\mathrm{ts}*}=\mathrm{Sc}(\breve Q_{\mathrm{ts},1}\breve Q_{2}^{*})=Q_{1\blacktriangle}\bar Q_{2\blacktriangle}+Q_{1\blacktriangledown}\bar Q_{2\blacktriangledown},
@@ -174,7 +174,7 @@ The reduced biquaternion algebra carries two Hermitian forms with respect to its
 
 - [Reduced Biquaternion Space](reduced-biquaternion-space.html), above this article in this category, for the idempotents and the two complex coordinates.
 - [The Two Involutions and the Group of Involutions](the-two-involutions-and-the-group-of-involutions.html), above this article, for the star and the tessarine sign.
-- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), above this article, for the two Hermitian forms and their signatures.
+- [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), above this article, for the two Hermitian forms and their inertias.
 - [The Group of Invertibles of the Algebra of the Reduced Biquaternions](the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the invertibles as the complement of the zero divisors.
 - [Reduced Biquaternion Lie Group and Exponential Structure](reduced-biquaternion-lie-group-and-exponential-structure.html), above this article, for the Lie algebra, the exponential and the norm-one group.
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for the companion in which the $*$-unitary group is the compact $\mathrm{U}(2)$.

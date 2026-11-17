@@ -70,7 +70,7 @@ $$
 \langle Q\rangle_{*} = q^2 + q'^2,
 $$
 
-a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of signature $(2,0)$. The two coordinates contribute with the same sign, and the norm is real throughout.
+a positive-definite quadratic form on the coordinate space $\mathbb{R}^2$ of inertia $(2,0)$. The two coordinates contribute with the same sign, and the norm is real throughout.
 
 ## The Hermitian Form
 

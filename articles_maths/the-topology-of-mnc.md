@@ -170,7 +170,7 @@ and the formula $2nr-r^{2}$ gives $3$ for $r=1$, so the rank one matrices form a
 
 ## Summary
 
-The matrix space is a real Euclidean space of dimension $2n^{2}$, hence contractible, complete and locally compact, and the Hilbert–Schmidt norm is the Euclidean norm of the coordinates, equivalent to the spectral norm by $\|A\|_2\le\|A\|_{\mathrm{HS}}\le\sqrt n\|A\|_2$. The determinant is a polynomial, so the invertible matrices form an open, dense, non-closed subset whose boundary is the singular set, and the singular set is a complex hypersurface of real codimension two, hence of measure zero and thin, which makes the group path connected. The rank strata are closed sets, the exact-rank stratum has real dimension $2nr-r^{2}$, and the Hermitian half is divided by the singular set into the regions of constant signature, with the positive and the negative definite cones at the two ends.
+The matrix space is a real Euclidean space of dimension $2n^{2}$, hence contractible, complete and locally compact, and the Hilbert–Schmidt norm is the Euclidean norm of the coordinates, equivalent to the spectral norm by $\|A\|_2\le\|A\|_{\mathrm{HS}}\le\sqrt n\|A\|_2$. The determinant is a polynomial, so the invertible matrices form an open, dense, non-closed subset whose boundary is the singular set, and the singular set is a complex hypersurface of real codimension two, hence of measure zero and thin, which makes the group path connected. The rank strata are closed sets, the exact-rank stratum has real dimension $2nr-r^{2}$, and the Hermitian half is divided by the singular set into the regions of constant inertia, with the positive and the negative definite cones at the two ends.
 
 ## Summary of Notation
 

@@ -113,7 +113,7 @@ which is real and **positive definite**, vanishing only at $\tilde{Q} = 0$.
 
 **Proof.** With $Q_\mu = q_\mu$ real, $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2 = \sum_\mu q_\mu^2$.
 
-Among the four distinguished subspaces, the quaternion subspace is the one on which the split-biquaternion norm is positive definite; on the split complex subspace it is split-complex-valued and degenerate, and on the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ it is positive definite, of signature $(4,0)$, the indefinite form on the sectors being the Hermitian form.
+Among the four distinguished subspaces, the quaternion subspace is the one on which the split-biquaternion norm is positive definite; on the split complex subspace it is split-complex-valued and degenerate, and on the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ it is positive definite, of inertia $(4,0)$, the indefinite form on the sectors being the Hermitian form.
 
 ### Invertibles and Idempotents
 
@@ -165,7 +165,7 @@ The quaternion subspace is a copy of the real quaternion algebra $\mathbb{H}$, a
 
 ## The Geometry of the Quaternion Subspace
 
-As the fixed space of split complex conjugation, the quaternion subspace is the real form of the algebra, the axis of that involution, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the quaternion algebra: the level set of unit norm is the round three-sphere $S^3$, of constant curvature one, the pure imaginary directions are the sphere $S^2$ of roots of $-1$ of *Quaternion Algebra*, and the motions it carries are the left and right multiplications $\tilde q\mapsto u \tilde q v$ with $u, v$ unit quaternions, giving the compact group $S^3\times S^3$ and the rotation group $SO(4)$ on the subspace. Both the Euclidean form and the Hermitian scalar form restrict to the same positive definite form of signature $(4,0)$, so the quaternion subspace is the definite core of the algebra.
+As the fixed space of split complex conjugation, the quaternion subspace is the real form of the algebra, the axis of that involution, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. Its own geometry is that of the quaternion algebra: the level set of unit norm is the round three-sphere $S^3$, of constant curvature one, the pure imaginary directions are the sphere $S^2$ of roots of $-1$ of *Quaternion Algebra*, and the motions it carries are the left and right multiplications $\tilde q\mapsto u \tilde q v$ with $u, v$ unit quaternions, giving the compact group $S^3\times S^3$ and the rotation group $SO(4)$ on the subspace. Both the Euclidean form and the Hermitian scalar form restrict to the same positive definite form of inertia $(4,0)$, so the quaternion subspace is the definite core of the algebra.
 
 ## Summary
 

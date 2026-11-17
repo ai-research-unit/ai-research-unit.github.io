@@ -146,7 +146,7 @@ so the operator is a **conformal** map of the quaternionic norm, with factor $N(
 $$
 \Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*},\qquad \tilde X^{*}=\tilde X,
 $$
-is again Hermitian, because $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X^{*}\tilde Q^{*}$, and positive definite when $\tilde Q$ is invertible, because each block is a positive quaternionic operator. So the group of invertibles acts on the open cone of positive Hermitian elements, and this action is the conformal action of the category on the Minkowski space of signature $(1,3)$ of the norms section of the general article.
+is again Hermitian, because $(\tilde Q\tilde X\tilde Q^{*})^{*}=\tilde Q\tilde X^{*}\tilde Q^{*}$, and positive definite when $\tilde Q$ is invertible, because each block is a positive quaternionic operator. So the group of invertibles acts on the open cone of positive Hermitian elements, and this action is the conformal action of the category on the Minkowski space of inertia $(1,3)$ of the norms section of the general article.
 
 **The kernel.** The units giving the identity operator are those that centralise every element and square to one,
 $$
@@ -322,12 +322,12 @@ because one index can serve both blocks, and this is why the bound is four and n
 | $L$ versus $R$ | equal | independent | independent |
 | the two-sided family | a subspace | a product of two cones | a cone |
 | the trace | central-ish, $2Q_{\blacktriangle}$ | a quaternion, non-central | a complex number |
-| the determinant | $Q_{+}Q_{-}$ | $N(\tilde Q_{+})N(\tilde Q_{-})$ | a complex number |
+| the determinant of the image | $Q_{+}Q_{-}$ | $N(\tilde Q_{+})N(\tilde Q_{-})$ | a complex number |
 | the adjugate | a conjugation | not a conjugation | a conjugation |
 | the length | $\{0,1\}$ | $\{0,1,2,3,4\}$ | $1,4,7,16$ |
 | the two-sided operator kernel | the torus $T^{2}$ | the four-group $\{\pm1,\pm j\}$ | a three-sphere |
 
-**What it buys.** A bimodule: the two copies of the algebra are independent, the quaternionic adjoint exchanges them, and the operator theory has both sides. A cone: the two-sided family is not a subspace, so the length is a genuine invariant and the reach is semialgebraic. A conformal two-sided operator: the quaternionic two-sided operator is a conformal map with the factor $N(\tilde Q)^{2}$, which the reduced biquaternion two-sided operator was not. And a positive cone: the Hermitian pair preserves the open positive cone of the Hermitian subspace and acts on it as the conformal group of the Minkowski space of signature $(1,3)$.
+**What it buys.** A bimodule: the two copies of the algebra are independent, the quaternionic adjoint exchanges them, and the operator theory has both sides. A cone: the two-sided family is not a subspace, so the length is a genuine invariant and the reach is semialgebraic. A conformal two-sided operator: the quaternionic two-sided operator is a conformal map with the factor $N(\tilde Q)^{2}$, which the reduced biquaternion two-sided operator was not. And a positive cone: the Hermitian pair preserves the open positive cone of the Hermitian subspace and acts on it as the conformal group of the Minkowski space of inertia $(1,3)$.
 
 **What it does not buy.** A simple algebra: the algebra is a product, the model is a subspace, and the off-diagonal corners are structurally empty. A central trace: the trace is a quaternion and only the reduced trace is invariant. An adjugate that is a conjugation: the determinant is a product of two norms and the cofactors cross. A length above four: the two blocks share the index. And a matrix model: the algebra is not isomorphic to any full matrix algebra, and the diagonal model is the best there is.
 
@@ -340,7 +340,7 @@ because one index can serve both blocks, and this is why the bound is four and n
 3. The three adjoints: the plain form exchanges the two copies, $L_{\tilde Q}^{*}=R_{\tilde Q}$; the quaternionic and the Hermitian forms keep the sides and conjugate the parameter, $L_{\tilde Q}^{*}=L_{\tilde Q^{\natural}}$ and $L_{\tilde Q}^{*}=L_{\tilde Q^{*}}$.
 4. The two-sided operators are blockwise, compose with the order reversed in the second slot, have a two-dimensional central stabiliser, and reach a fourteen-dimensional product of two quaternionic cones inside a thirty-two-dimensional span.
 5. The zero operator is attained by nonzero pairs, and the pairs that attain it are the four combinations of the two idempotents with the two idempotents.
-6. The two-sided operator is genuine here: the quaternionic two-sided operator is conformal with factor $N(\tilde Q)^{2}$, its kernel is the four-group $\{\pm1,\pm j\}$, and on the Hermitian subspace it acts on the positive cone as the conformal group of the Minkowski space of signature $(1,3)$.
+6. The two-sided operator is genuine here: the quaternionic two-sided operator is conformal with factor $N(\tilde Q)^{2}$, its kernel is the four-group $\{\pm1,\pm j\}$, and on the Hermitian subspace it acts on the positive cone as the conformal group of the Minkowski space of inertia $(1,3)$.
 7. The Kronecker display is the direct sum of two $16\times16$ real blocks, with rank in $\{0,16,32\}$, trace $16$ times the sum of the two block products of scalar parts, and determinant the fourth powers of the two products of norms.
 8. The coefficient array is block diagonal in the split index, each block is a $4\times4$ real array, and the criterion is the blockwise rank-one test.
 9. The length is at most four and the value is the maximum of the two block lengths, because one index serves both blocks; the identity of the ambient, the swap, is not in the span.
@@ -359,12 +359,12 @@ because one index can serve both blocks, and this is why the bound is four and n
 | $\Phi_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{\natural}$ | the quaternionic two-sided operator, conformal | this article |
 | $N(u)=uu^{\natural}$ | the quaternion norm | *$M_{2}(\mathbb{H})$ Diagonal Representation* |
 | $\{\pm1,\pm j\}$ | the kernel of the two-sided operator | this article |
-| $\mathbb{B}_{\Psi}$ | the Hermitian subspace, the Minkowski space of signature $(1,3)$ | *Split-Biquaternion Algebra* |
+| $\mathbb{B}_{\Psi}$ | the Hermitian subspace, the Minkowski space of inertia $(1,3)$ | *Split-Biquaternion Algebra* |
 
 ## Further Reading
 
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for the bimodule structure of a division algebra, the semigroup of pairs and the stabiliser of the identity.
 - F. Zhang, *Quaternions and Matrices of Quaternions* (Linear Algebra and its Applications 251, 1997), for the quaternionic cone of rank-one maps, the coefficient array and the two-sided rank.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the Kronecker product, the rank of a sum of tensor products and the block diagonal arithmetic of trace and determinant.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the conformal action of the quaternion group of invertibles on the Minkowski space of signature $(1,3)$.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the conformal action of the quaternion group of invertibles on the Minkowski space of inertia $(1,3)$.
 - Igor Frenkel and Matvei Libine, *Quaternionic Analysis, Representation Theory and Physics* (Advances in Mathematics 218, 2008), for the conformal group of the quaternions and the four-dimensional representation of $SL_{2}(\mathbb{C})$ on the Hermitian subspace.

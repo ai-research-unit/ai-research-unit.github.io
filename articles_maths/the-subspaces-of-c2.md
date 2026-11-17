@@ -125,7 +125,7 @@ and the two lines meet only at the origin.
 
 **Remark (the two circles are linked).** The circles $L_+\cap S^3$ and $L_-\cap S^3$ are two fibres of the Hopf fibration, over the two points $[i:1]$ and $[-i:1]$ of $\mathbb{CP}^1$. **Two distinct fibres of the Hopf fibration have linking number $1$**, so the two circles are linked despite being disjoint (*The Unit Sphere and the Hopf Fibration*).
 
-**Remark (the real and imaginary parts are two quadrics).** The equation $B(Q,Q)=0$ is one complex equation and therefore two real equations, $\operatorname{Re}B(Q,Q)=0$ and $\operatorname{Im}B(Q,Q)=0$. Each defines a real quadric of signature $(2,2)$, a cone over a torus in $S^3$. **Their intersection is the isotropic cone $B=0$, the union of the two complex lines $L_+\cup L_-$**, which meets $S^3$ in the two linked circles above. The complex cone is not the zero set of a single real quadratic form: it is the intersection of the two real cones, not their union.
+**Remark (the real and imaginary parts are two quadrics).** The equation $B(Q,Q)=0$ is one complex equation and therefore two real equations, $\operatorname{Re}B(Q,Q)=0$ and $\operatorname{Im}B(Q,Q)=0$. Each defines a real quadric of inertia $(2,2)$, a cone over a torus in $S^3$. **Their intersection is the isotropic cone $B=0$, the union of the two complex lines $L_+\cup L_-$**, which meets $S^3$ in the two linked circles above. The complex cone is not the zero set of a single real quadratic form: it is the intersection of the two real cones, not their union.
 
 **Remark (the image in $\mathbb{CP}^1$).** The projectivisation of the cone is the set of its complex lines, that is the two points
 $$

@@ -66,7 +66,7 @@ $$
 | quantity | size two | size four | rule |
 | --- | --- | --- | --- |
 | trace | $2Q_t$ | $4Q_t$ | double |
-| determinant | $N$ | $N^2$ | square |
+| the determinant of the image | $N$ | $N^2$ | square |
 | characteristic polynomial | degree $2$ | its square | square |
 | spectrum | $\lambda_\pm$ once each | each twice | repeat |
 | rank | $r$ | $2r$ | double |

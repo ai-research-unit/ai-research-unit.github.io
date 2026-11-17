@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The trace form gives the symmetric half a positive definite metric of signature three and the antisymmetric half a negative definite metric of signature one, the determinant gives the symmetric half a Lorentz metric of signature $(1,2)$, and the two-sided operators act on the matrix algebra as the group $\mathrm{GL}_2\times\mathrm{GL}_2$ whose orbits are the three rank strata.**
+**The trace form gives the symmetric half a positive definite metric of inertia $(3,0)$ and the antisymmetric half a negative definite metric of inertia $(0,1)$, the determinant gives the symmetric half a Lorentz metric of inertia $(1,2)$, and the two-sided operators act on the matrix algebra as the group $\mathrm{GL}_2\times\mathrm{GL}_2$ whose orbits are the three rank strata.**
 
-The article collects the geometric data of the halves, computes the isometry groups of the two metrics, describes the orbits of the two-sided action, relates the cone of the symmetric half to its Lorentz metric, describes the geodesics, and interprets the two-sided operators as geometric transformations preserving the rank. It assumes *The Two Halves and the Analysis: Smooth Structures at $n=2$*, *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$* and *The Two-Sided Operators and the Segre Cone at $n=2$*.
+The article collects the geometric data of the halves, computes the isometry groups of the two metrics, describes the orbits of the two-sided action, relates the cone of the symmetric half to its Lorentz metric, describes the geodesics, and interprets the two-sided operators as geometric transformations preserving the rank. It assumes *The Two Halves and the Analysis: Smooth Structures at $n=2$*, *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$* and *The Two-Sided Operators and the Segre Cone at $n=2$*.
 
 It follows the biquaternion article *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* for the same metric data in the biquaternion coordinates.
 
@@ -16,7 +16,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 **Proof.** The Gram matrix of the trace form on the symmetric half in the basis of the two diagonal units and the off-diagonal unit is diagonal with entries one, one and two; on the antisymmetric half the single basis element has squared trace minus two.
 
-**Corollary.** The matrix algebra carries a metric of signature $(4,4)$ split as three plus one in the real halves and as four plus four in the complex halves.
+**Corollary.** The matrix algebra carries a metric of inertia $(4,4)$ split as three plus one in the real halves and as four plus four in the complex halves.
 
 **Proof.** The trace form is positive definite on the Hermitian half and negative definite on the anti-Hermitian half, and the real halves split the same way by the symmetric and antisymmetric parts.
 
@@ -34,9 +34,9 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 **Proof.** An isometry that preserves the symmetric half also preserves its orthogonal complement, which is the antisymmetric half.
 
-**Corollary.** The cone of the symmetric half is preserved by the Lorentz group of signature $(1,2)$, which is larger than the orthogonal group.
+**Corollary.** The cone of the symmetric half is preserved by the Lorentz group of inertia $(1,2)$, which is larger than the orthogonal group.
 
-**Proof.** The determinant on the symmetric half is a form of signature $(1,2)$, and its automorphism group is the Lorentz group of that signature.
+**Proof.** The determinant on the symmetric half is a form of inertia $(1,2)$, and its automorphism group is the Lorentz group of that inertia.
 
 ## The Orbits of the Two-Sided Action
 
@@ -54,7 +54,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 ## The Cone and the Metric
 
-**Proposition.** The positive semidefinite cone of the symmetric half is a cone of the Lorentz metric of signature $(1,2)$, and its boundary is the set of null directions of the rank-one form.
+**Proposition.** The positive semidefinite cone of the symmetric half is a cone of the Lorentz metric of inertia $(1,2)$, and its boundary is the set of null directions of the rank-one form.
 
 **Proof.** The determinant vanishes exactly on the rank-one matrices, which are the null directions of the Lorentz form, and the cone is one of its two time cones.
 
@@ -100,7 +100,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 ## Summary
 
-The trace form gives the symmetric half a positive definite metric with the eigenvalues one, one and two and the antisymmetric half a negative definite metric; the matrix algebra carries a metric of signature $(4,4)$. The isometry group is the unitary group of the Hilbert–Schmidt form, acting by conjugation and by the two-sided action.
+The trace form gives the symmetric half a positive definite metric with the eigenvalues one, one and two and the antisymmetric half a negative definite metric; the matrix algebra carries a metric of inertia $(4,4)$. The isometry group is the unitary group of the Hilbert–Schmidt form, acting by conjugation and by the two-sided action.
 
 The group of two-sided operators has the origin, the rank-one cone and the invertible matrices as its orbits, so its geometry is the geometry of the rank strata. The positive cone of the symmetric half is a Lorentz cone whose null directions are the rank-one matrices, and the two-sided operators act by conformal similarities of the trace metric.
 
@@ -109,8 +109,8 @@ The group of two-sided operators has the origin, the rank-one cone and the inver
 | Symbol | Meaning |
 |---|---|
 | $\langle Z,W\rangle=\operatorname{tr}(Z^{*}W)$ | the trace metric on the algebra |
-| $(4,4)$ | its signature on the whole algebra |
-| $(1,2)$ | the signature of the determinant on the symmetric half |
+| $(4,4)$ | its inertia on the whole algebra |
+| $(1,2)$ | the inertia of the determinant on the symmetric half |
 | $\mathrm{GL}_2\times\mathrm{GL}_2$ | the group of two-sided operators |
 | $Z\mapsto XZY$ | the two-sided action |
 
@@ -119,5 +119,5 @@ The group of two-sided operators has the origin, the rank-one cone and the inver
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for symmetric spaces and their geodesics.
 - Barrett O'Neill, *Semi-Riemannian Geometry* (Academic Press, 1983), for Lorentz cones and their null directions.
 - [The Two Halves and the Analysis: Smooth Structures at $n=2$](the-two-halves-and-the-analysis-smooth-structures-at-n-2.html), for the smooth structures used here.
-- [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the metric of the halves.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the metric of the halves.
 - [The Two-Sided Operators and the Segre Cone at $n=2$](the-two-sided-operators-and-the-segre-cone-at-n-2.html), for the operators whose geometry is described here.

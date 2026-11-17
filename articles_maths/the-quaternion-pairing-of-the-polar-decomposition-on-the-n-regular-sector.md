@@ -349,7 +349,7 @@ $$
 
 The construction is partial. The factorisation exists on all of $\Sigma_{10}$; the construction needs $\tilde q_r\neq0$ as well. On the scalar line $\tilde Q=Q_te_t$ the real part is $\operatorname{Re}(Q_t)e_t$, so the construction fails exactly on the pure imaginary scalars, where the factorisation still exists with $\tilde q=|Q_t|e_t$ and $\tilde{Ξ}=\pm\pi/2$.
 
-### The Rigid Signature
+### The Rigid Inertia
 
 The word of the sector is rigid:
 
@@ -548,7 +548,7 @@ Under the three conjugations complex conjugation fixes the modulus and flips the
 | equation | $\tilde Q=\tilde q\exp(i\tilde{Ξ})$ |
 | modulus | $\tilde q=r\tilde u_{\mathrm r}$, a real quaternion of norm $r$ |
 | exponent | $\tilde{Ξ}=\theta_{\mathrm{pha}}+\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}'$, a real quaternion |
-| sector signature | $\vec u_{\mathrm b}'\perp\vec u_{\mathrm r}$, hence $\tilde q\perp\operatorname{Vect}\tilde{Ξ}$ |
+| sector inertia | $\vec u_{\mathrm b}'\perp\vec u_{\mathrm r}$, hence $\tilde q\perp\operatorname{Vect}\tilde{Ξ}$ |
 | rigidity | $\cosh\frac{\theta_{\mathrm{rpd}}}{2}\operatorname{Sc}\tilde u_{\mathrm r}=\varepsilon=\pm1$ on the Jordan part |
 | construction | $\tan\tilde{Ξ}=\tilde q_r^{-1}\tilde q_i$, $\tilde q=\tilde q_r(\cos\tilde{Ξ})^{-1}$ |
 | domain | factorisation on $\Sigma_{10}$; construction where $\tilde q_r\neq0$ |

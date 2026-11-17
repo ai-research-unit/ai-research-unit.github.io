@@ -95,7 +95,7 @@ $$
 \operatorname{tr}(A^{2})=\operatorname{tr}(S^{2})+\operatorname{tr}(K^{2})
 $$
 
-with the first term positive and the second negative, which is the signature statement of *The Trace Form and Its Signature on the Two Halves* read on a single element.
+with the first term positive and the second negative, which is the inertia statement of *The Trace Form and Its Inertia on the Two Halves* read on a single element.
 
 **The trace of a product is not the product of the traces, and the defect is the cross term.** For $A=S+K$ and $B=S'+K'$ the difference $\operatorname{tr}(A)\operatorname{tr}(B)-\operatorname{tr}(AB)$ equals $\operatorname{tr}(S)\operatorname{tr}(K')+\operatorname{tr}(K)\operatorname{tr}(S')+\operatorname{tr}(K)\operatorname{tr}(K')-\operatorname{tr}(KK')$, which vanishes only under conditions on the pieces. The comparison is the standard one between a form and a product and it is not used further in the category.
 
@@ -135,7 +135,7 @@ $$
 \operatorname{tr}(AB)=2(aa'+bb'+cc'-\theta\theta'),
 $$
 
-the signature $(3,1)$ of *The Two Halves as Orthogonal Complements* written on the four coordinates.
+the inertia $(3,1)$ of *The Two Halves as Orthogonal Complements* written on the four coordinates.
 
 **The biquaternion reading makes the split visible in one product.** The Peirce idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are symmetric, so a product of two of them has a symmetric part given by the Jordan product and an antisymmetric part given by the bracket, and the bracket of the two idempotents is $\tfrac12[\tilde{Ζ},\cdot]$ read on the frame. The companion nilpotents $\vec\Upsilon_{+-}$ and $\vec\Upsilon_{-+}$ are neither symmetric nor antisymmetric, so they contribute to both halves of every product they enter, which is the algebraic form of the statement that a mixed corner is not stable under the transpose.
 
@@ -160,5 +160,5 @@ For $A=S+K$ and $B=S'+K'$ the product expands into the four terms $SS'$, $SK'$, 
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras* (AMS, 1968), for the Jordan product and the identity $S\circ S'=\pi_{+}(SS')$.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the transpose of a product and the trace identities.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the closure rules used in the two formulas.
-- [The Two Halves as Orthogonal Complements](the-two-halves-as-orthogonal-complements.html), for the trace form and its signature on each half.
+- [The Two Halves as Orthogonal Complements](the-two-halves-as-orthogonal-complements.html), for the trace form and its inertia on each half.
 - [The Triangular Decomposition $h\oplus n_+\oplus n_-$](the-triangular-decomposition-h-n-plus-n-minus.html), for the trace pairing computed on the summands.

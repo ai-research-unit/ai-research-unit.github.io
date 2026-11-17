@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split-complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the realification of the bilinear form $\langle\cdot,\cdot\rangle$, and the **indefinite metric** from the realification of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal is the norm $\langle Q\rangle_{*}=q^{2}-q'^{2}$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $j$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the two real quadratic forms of a form pair, one definite and one indefinite, carried by one and the same space.
+The split-complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the realification of the bilinear form $\langle\cdot,\cdot\rangle$, and the **indefinite metric** from the realification of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal is the norm $\langle Q\rangle_{*}=q^{2}-q'^{2}$. This article defines both, computes their Gram matrices and inertias in the real basis $1$, $j$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the two real quadratic forms of a form pair, one definite and one indefinite, carried by one and the same space.
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the indefinite one is named a metric by the same convention, and the difference is stated where it occurs.
 
@@ -38,13 +38,13 @@ $$
 \boxed{\;[\operatorname{Re}B]=\mathrm{I}_{2}, \qquad [\operatorname{Re}H]=\operatorname{diag}(1,-1)\;},
 $$
 
-of signatures $(2,0)$ and $(1,1)$.
+of inertias $(2,0)$ and $(1,1)$.
 
-*Proof.* The four values on the basis are $\operatorname{Re}\langle 1,1\rangle=\operatorname{Re}\langle j,j\rangle=1$ and $\operatorname{Re}\langle 1,j\rangle=0$, the last because $j^{2}=+1$ contributes no scalar part to $1\cdot j$; and $\operatorname{Re}\langle 1,1\rangle_{*}=1$, $\operatorname{Re}\langle j,j\rangle_{*}=-1$, $\operatorname{Re}\langle 1,j\rangle_{*}=0$, because $\langle j,j\rangle_{*}=j\bar j=-1$ and $\langle 1,j\rangle_{*}=1\cdot\bar j=-j$ has scalar part zero. The two matrices are diagonal, and the signs of their diagonals give the signatures.
+*Proof.* The four values on the basis are $\operatorname{Re}\langle 1,1\rangle=\operatorname{Re}\langle j,j\rangle=1$ and $\operatorname{Re}\langle 1,j\rangle=0$, the last because $j^{2}=+1$ contributes no scalar part to $1\cdot j$; and $\operatorname{Re}\langle 1,1\rangle_{*}=1$, $\operatorname{Re}\langle j,j\rangle_{*}=-1$, $\operatorname{Re}\langle 1,j\rangle_{*}=0$, because $\langle j,j\rangle_{*}=j\bar j=-1$ and $\langle 1,j\rangle_{*}=1\cdot\bar j=-j$ has scalar part zero. The two matrices are diagonal, and the signs of their diagonals give the inertias.
 
 The realified $\langle\cdot,\cdot\rangle$ is positive definite: it is the ordinary inner product of the plane, $\operatorname{Re}\langle Q,C\rangle=qc+q'c'=\langle Q,C\rangle$ in the notation of *Norm and Invertibility in the General Split-Complex Algebra*. The realified $\langle\cdot\rangle_{*}$ is indefinite: it is the polarisation of the norm, $\operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'=g(Q,C)$, positive on the real direction $1$ and negative on the split imaginary direction $j$.
 
-**Remark (the sign of the square of the structure decides the swap).** The realification carries the sign of the square of the structure that doubles the coordinate. When that structure squares to $-\mathrm{id}$, the two real blocks of a symmetric bilinear form carry opposite signs and the realified form is indefinite; this is the complex case, where $J^{2}=-\mathrm{id}$ and $\langle\cdot,\cdot\rangle$ realifies to the signature $(1,1)$. Here $J^{2}=+\mathrm{id}$ and the two blocks carry the same sign, so $\langle\cdot,\cdot\rangle$ realifies to $(2,0)$, and the indefinite realification is instead that of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal $\langle\cdot,\cdot\rangle_{*}$ carries the split sign. **This is the passage on which the present article and its complex counterpart are mirror images: the same two forms realify to the same two signatures, $(1,1)$ and $(2,0)$, but attached to the other form.**
+**Remark (the sign of the square of the structure decides the swap).** The realification carries the sign of the square of the structure that doubles the coordinate. When that structure squares to $-\mathrm{id}$, the two real blocks of a symmetric bilinear form carry opposite signs and the realified form is indefinite; this is the complex case, where $J^{2}=-\mathrm{id}$ and $\langle\cdot,\cdot\rangle$ realifies to the inertia $(1,1)$. Here $J^{2}=+\mathrm{id}$ and the two blocks carry the same sign, so $\langle\cdot,\cdot\rangle$ realifies to $(2,0)$, and the indefinite realification is instead that of the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, whose diagonal $\langle\cdot,\cdot\rangle_{*}$ carries the split sign. **This is the passage on which the present article and its complex counterpart are mirror images: the same two forms realify to the same two inertias, $(1,1)$ and $(2,0)$, but attached to the other form.**
 
 ## The Euclidean Metric
 
@@ -56,7 +56,7 @@ $$
 
 It is the diagonal of the realified bilinear form read on the difference $Q-C$, and it is the square of the Euclidean norm of the difference, $\lVert Q-C\rVert^{2}$ (*Norm and Invertibility in the General Split-Complex Algebra*).
 
-**Proposition (positive definiteness).** The Euclidean metric is real, non-negative, and vanishes exactly when $Q=C$. Its Gram matrix is $\mathrm{I}_{2}$ and its signature is $(2,0)$; the only null difference is the zero difference.
+**Proposition (positive definiteness).** The Euclidean metric is real, non-negative, and vanishes exactly when $Q=C$. Its Gram matrix is $\mathrm{I}_{2}$ and its inertia is $(2,0)$; the only null difference is the zero difference.
 
 *Proof.* The expression $(q-c)^{2}+(q'-c')^{2}$ is a sum of two squares of reals, hence non-negative and zero only when both differences vanish, that is when $Q=C$. The Gram matrix was computed in the previous section.
 
@@ -76,7 +76,7 @@ $$
 
 It is the diagonal of the realified form read on the difference $Q-C$, and it is the norm $\langle\cdot\rangle_{*}$ of the difference (*Norm and Invertibility in the General Split-Complex Algebra*).
 
-**Proposition (indefiniteness).** The indefinite metric is real and takes both signs. Its Gram matrix is $\operatorname{diag}(1,-1)$ and its signature is $(1,1)$; it is positive on the real direction and negative on the split imaginary one. It is therefore not a distance.
+**Proposition (indefiniteness).** The indefinite metric is real and takes both signs. Its Gram matrix is $\operatorname{diag}(1,-1)$ and its inertia is $(1,1)$; it is positive on the real direction and negative on the split imaginary one. It is therefore not a distance.
 
 *Proof.* The value is the diagonal of the matrix $\operatorname{diag}(1,-1)$, a difference of two squares; on the difference $1$ it is $+1$ and on the difference $j$ it is $-1$. Since it changes sign, it is neither positive nor negative definite, and it cannot satisfy the axioms of a distance.
 
@@ -144,9 +144,9 @@ So multiplication by $j$ is a map preserving the Euclidean metric and reversing 
 
 So the definite group and the indefinite group of $\mathbb{C}_{\mathrm{spl}}$-linear maps share only the central pair: the Euclidean metric keeps the four elements $\{\pm1,\pm j\}$ and the indefinite metric keeps the hyperbola, and the two families meet only in $\{\pm1\}$. On $\mathbb{C}$ the two families are the circle and the pair $\{\pm1\}$; here they are the four-element group $\{\pm1,\pm j\}$ and the hyperbola, and the swap of their shapes is again the split sign.
 
-**Remark (why the count is two and not three).** Accounts of the plane that count a third distance take the plain form $\langle\cdot,\cdot\rangle$ to be the indefinite one, by analogy with the complex case, where the bilinear form is indeed indefinite; the analogy fails here. On $\mathbb{C}_{\mathrm{spl}}$ the plain form realifies to $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ of signature $(2,0)$, which is the Euclidean metric itself, so the supposed third distance and the Euclidean metric coincide and the plane carries two. The split sign that moves the indefinite slot from the bilinear form to the Hermitian one is the reason, and it is the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
+**Remark (why the count is two and not three).** Accounts of the plane that count a third distance take the plain form $\langle\cdot,\cdot\rangle$ to be the indefinite one, by analogy with the complex case, where the bilinear form is indeed indefinite; the analogy fails here. On $\mathbb{C}_{\mathrm{spl}}$ the plain form realifies to $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ of inertia $(2,0)$, which is the Euclidean metric itself, so the supposed third distance and the Euclidean metric coincide and the plane carries two. The split sign that moves the indefinite slot from the bilinear form to the Hermitian one is the reason, and it is the rule of *The Realification and the Effect of the Change of Scalars on the Split-Complexoid*.
 
-**Remark (the realified signatures).** **The split-complex space carries a definite and an indefinite real form at once, and the split sign decides which form supplies which**: the definite slot is occupied by the bilinear form.
+**Remark (the realified inertias).** **The split-complex space carries a definite and an indefinite real form at once, and the split sign decides which form supplies which**: the definite slot is occupied by the bilinear form.
 
 ## Worked Example
 
@@ -168,7 +168,7 @@ for every real $t$; the same holds on the line of direction $1-j$. On those diff
 
 ## Summary
 
-The one split-complex plane carries two real quadratic functions, one from each of the two forms, and the split sign decides which. The general plain bilinear form $\langle Q,C\rangle=QC$ realifies to the Euclidean metric $d_{B}^{2}(Q,C)=(q-c)^{2}+(q'-c')^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the Euclidean norm of the difference. The general plain Hermitian form $\langle Q,C\rangle_{*}=Q\bar C$ realifies to the indefinite metric $d_{H}^{2}(Q,C)=(q-c)^{2}-(q'-c')^{2}=\langle Q-C\rangle_{*}$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $q-c=\pm(q'-c')$, the zero-divisor directions of the ring, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps has the hyperbolic rotations as identity component and four components in all.
+The one split-complex plane carries two real quadratic functions, one from each of the two forms, and the split sign decides which. The general plain bilinear form $\langle Q,C\rangle=QC$ realifies to the Euclidean metric $d_{B}^{2}(Q,C)=(q-c)^{2}+(q'-c')^{2}$, of Gram matrix $\mathrm{I}_{2}$ and inertia $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the Euclidean norm of the difference. The general plain Hermitian form $\langle Q,C\rangle_{*}=Q\bar C$ realifies to the indefinite metric $d_{H}^{2}(Q,C)=(q-c)^{2}-(q'-c')^{2}=\langle Q-C\rangle_{*}$, of Gram matrix $\operatorname{diag}(1,-1)$ and inertia $(1,1)$, indefinite, whose null set is the pair of lines $q-c=\pm(q'-c')$, the zero-divisor directions of the ring, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps has the hyperbolic rotations as identity component and four components in all.
 
 The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{H}^{2}=2(q'-c')^{2}$ and $d_{B}^{2}+d_{H}^{2}=2(q-c)^{2}$; the forms are exchanged by conjugation of the second slot, $\operatorname{Re}\langle Q,\bar C\rangle=\operatorname{Re}\langle Q,C\rangle_{*}$, and multiplication by $j$ preserves the Euclidean metric and reverses the indefinite one. The definite slot is on the bilinear form rather than the Hermitian one, and this exchange of the slots is the split sign $J^{2}=+\mathrm{id}$.
 
@@ -180,10 +180,10 @@ The two metrics are the two readings of the two forms and satisfy $d_{B}^{2}-d_{
 | $\bar Q=q-jq'$ | the conjugation, the involution $j\mapsto-j$ |
 | $\langle Q,C\rangle=QC$ | general plain bilinear form; Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$; diagonal $\langle Q\rangle=Q^{2}$, anisotropic |
 | $\langle Q,C\rangle_{*}=Q\bar C$ | general plain Hermitian form; Gram matrix $[1]$ over $\mathbb{C}_{\mathrm{spl}}$; diagonal $\langle Q\rangle_{*}=q^{2}-q'^{2}$, indefinite |
-| $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ | the realified bilinear form, the Euclidean form $\langle Q,C\rangle$; Gram matrix $\mathrm{I}_{2}$; signature $(2,0)$ |
-| $\operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'$ | the realified Hermitian form, the polarisation $g$; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
+| $\operatorname{Re}\langle Q,C\rangle=qc+q'c'$ | the realified bilinear form, the Euclidean form $\langle Q,C\rangle$; Gram matrix $\mathrm{I}_{2}$; inertia $(2,0)$ |
+| $\operatorname{Re}\langle Q,C\rangle_{*}=qc-q'c'$ | the realified Hermitian form, the polarisation $g$; Gram matrix $\operatorname{diag}(1,-1)$; inertia $(1,1)$ |
 | $d_{B}^{2}(Q,C)=\lVert Q-C\rVert^{2}$ | Euclidean metric; positive definite; level sets the circles |
-| $d_{H}^{2}(Q,C)=\langle Q-C\rangle_{*}$ | indefinite metric; signature $(1,1)$; level sets the hyperbolas |
+| $d_{H}^{2}(Q,C)=\langle Q-C\rangle_{*}$ | indefinite metric; inertia $(1,1)$; level sets the hyperbolas |
 | $q-c=\pm(q'-c')$ | the null pair of lines of the indefinite metric |
 | $M^{\mathsf T}M=\mathrm{I}_{2}$ | the condition for preserving $\operatorname{Re}B$; the group $O(2)$ |
 | $M^{\mathsf T}\operatorname{diag}(1,-1)M=\operatorname{diag}(1,-1)$ | the condition for preserving $\operatorname{Re}H$ |

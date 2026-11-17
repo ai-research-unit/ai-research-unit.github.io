@@ -133,7 +133,7 @@ $$
 
 with the mirror images, and every product whose indices do not match is zero. In the notation of the spaces, $A_{11}A_{12}\subseteq A_{12}$, $A_{12}A_{21}\subseteq A_{11}$, $A_{21}A_{12}\subseteq A_{22}$ and $A_{11}A_{22}=A_{12}A_{12}=0$.
 
-**The two halves of the algebra appear here.** The sum $A_{11}\oplus A_{22}$ is the diagonal subalgebra, of dimension two, and $A_{12}\oplus A_{21}$ is the space of off-diagonal matrices. The trace form has signature $(3,1)$ on $M_2(\mathbb{R})$, and the negative direction lies in the mixed part.
+**The two halves of the algebra appear here.** The sum $A_{11}\oplus A_{22}$ is the diagonal subalgebra, of dimension two, and $A_{12}\oplus A_{21}$ is the space of off-diagonal matrices. The trace form has inertia $(3,1)$ on $M_2(\mathbb{R})$, and the negative direction lies in the mixed part.
 
 ## The Case $n=3$
 

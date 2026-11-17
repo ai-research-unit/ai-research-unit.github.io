@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The trace form $\operatorname{tr}(XY)$ is a nondegenerate symmetric bilinear form of signature $(n(n+1)/2,n(n-1)/2)$ on $M_n(\mathbb{R})$, and the symmetric and antisymmetric halves are its exact positive and negative orthogonal complements.**
+**The trace form $\operatorname{tr}(XY)$ is a nondegenerate symmetric bilinear form of inertia $(n(n+1)/2,n(n-1)/2)$ on $M_n(\mathbb{R})$, and the symmetric and antisymmetric halves are its exact positive and negative orthogonal complements.**
 
-The article proves nondegeneracy, proves the orthogonality of the two halves, computes the signature by exhibiting an orthogonal basis of matrix units, proves that the restrictions to the two halves are definite with opposite signs, and shows that the symmetrisation and antisymmetrisation are the orthogonal projections for the form. It then contrasts the trace form with the Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$, which is positive definite on the whole algebra and not invariant. It assumes *The Two Halves: Symmetric and Antisymmetric* for the two subspaces and *The Matrix Algebra $M_n(\mathbb{R})$* for the trace.
+The article proves nondegeneracy, proves the orthogonality of the two halves, computes the inertia by exhibiting an orthogonal basis of matrix units, proves that the restrictions to the two halves are definite with opposite signs, and shows that the symmetrisation and antisymmetrisation are the orthogonal projections for the form. It then contrasts the trace form with the Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$, which is positive definite on the whole algebra and not invariant. It assumes *The Two Halves: Symmetric and Antisymmetric* for the two subspaces and *The Matrix Algebra $M_n(\mathbb{R})$* for the trace.
 
 ## The Trace Form
 
@@ -60,9 +60,9 @@ $$
 
 **This is stronger than a direct sum.** A direct sum needs only $S\cap K=0$. An orthogonal complement needs the pairing to vanish between the two summands as well, and that is what the proposition supplies.
 
-## The Signature
+## The Inertia
 
-**Theorem.** The trace form has signature $(n(n+1)/2,\,n(n-1)/2)$.
+**Theorem.** The trace form has inertia $(n(n+1)/2,\,n(n-1)/2)$.
 
 *Proof.* Take the basis of $\operatorname{Sym}_n$ given by $E_{ii}$ and $E_{ij}+E_{ji}$ for $i<j$, together with the basis of $\operatorname{Skew}_n$ given by $E_{ij}-E_{ji}$ for $i<j$. The whole family is a basis of the algebra. Its elements pair diagonally, because the two halves are orthogonal and the units of each family are orthogonal among themselves:
 
@@ -70,9 +70,9 @@ $$
 \langle E_{ii},E_{jj}\rangle=\delta_{ij},\qquad \langle E_{ij}+E_{ji},E_{ij}+E_{ji}\rangle=2,\qquad \langle E_{ij}-E_{ji},E_{ij}-E_{ji}\rangle=-2.
 $$
 
-So the Gram matrix in this basis is diagonal with $n(n+1)/2$ entries $+1$ or $+2$ and $n(n-1)/2$ entries $-2$. By Sylvester's law the signature is the pair of counts.
+So the Gram matrix in this basis is diagonal with $n(n+1)/2$ entries $+1$ or $+2$ and $n(n-1)/2$ entries $-2$. By Sylvester's law the inertia is the pair of counts.
 
-**The measured values agree.** Diagonalising the Gram matrix of the matrix-unit basis gives signature $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$. The positive count is $n(n+1)/2$ and the negative count is $n(n-1)/2$ in each case.
+**The measured values agree.** Diagonalising the Gram matrix of the matrix-unit basis gives inertia $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$. The positive count is $n(n+1)/2$ and the negative count is $n(n-1)/2$ in each case.
 
 **The positive and negative indices are the dimensions of the two halves.** This is not a coincidence: the halves diagonalise the form, so the index of the form is the dimension of the largest subspace on which it is positive definite, and that subspace is $\operatorname{Sym}_n$.
 
@@ -98,7 +98,7 @@ with equality exactly when $K=0$.
 
 **Each half is therefore an eigenspace of the form up to sign.** $\operatorname{Sym}_n$ is a maximal positive definite subspace and $\operatorname{Skew}_n$ a maximal negative definite subspace. Their dimensions are the two indices, and they are the extremal subspaces in the sense of Sylvester's law.
 
-**The definiteness is what the real field provides.** Over $\mathbb{C}$ the numbers $S_{ij}^{2}$ are complex, no sign is defined, and the notion of a positive definite subspace disappears. The two sums above are the only place in the article where the base field $\mathbb{R}$ enters, and they carry the whole signature.
+**The definiteness is what the real field provides.** Over $\mathbb{C}$ the numbers $S_{ij}^{2}$ are complex, no sign is defined, and the notion of a positive definite subspace disappears. The two sums above are the only place in the article where the base field $\mathbb{R}$ enters, and they carry the whole inertia.
 
 ## The Orthogonal Projections
 
@@ -122,13 +122,13 @@ $$
 
 and $P_-Y$ lies in $\operatorname{Skew}_n$, which is orthogonal to $\operatorname{Sym}_n$. So $X-P_+X$ is orthogonal to $P_+Y$, and $P_+$ is the orthogonal projection onto $\operatorname{Sym}_n$ with kernel $\operatorname{Skew}_n$.
 
-**The projection is the same map for both forms, and its meaning differs.** The next two sections show that the Hilbert–Schmidt form gives the same pair of projections and a different signature.
+**The projection is the same map for both forms, and its meaning differs.** The next two sections show that the Hilbert–Schmidt form gives the same pair of projections and a different inertia.
 
 ## The Hilbert–Schmidt Form
 
 **Definition.** $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y)=\sum_{i,j}X_{ij}Y_{ij}$.
 
-**The Hilbert–Schmidt form is an inner product.** $\operatorname{tr}(X^{\mathsf T}X)=\sum_{i,j}X_{ij}^{2}$ is positive for $X\ne0$, so the form is positive definite, and its signature is $(n^{2},0)$. Measured on the matrix units it gives $(4,0)$ at $n=2$ and $(9,0)$ at $n=3$.
+**The Hilbert–Schmidt form is an inner product.** $\operatorname{tr}(X^{\mathsf T}X)=\sum_{i,j}X_{ij}^{2}$ is positive for $X\ne0$, so the form is positive definite, and its inertia is $(n^{2},0)$. Measured on the matrix units it gives $(4,0)$ at $n=2$ and $(9,0)$ at $n=3$.
 
 **It is not invariant.** Take $n=2$, $A=E_{12}$, $B=E_{21}$ and $C=\mathrm{I}$. Then
 
@@ -150,17 +150,17 @@ so moving the factor across the comma changes the value. So the Hilbert–Schmid
 
 **The orthogonal complement of a half is the other half, and not a larger space.** For the trace form, $\operatorname{Sym}_n^{\perp}=\operatorname{Skew}_n$. For a degenerate restriction the complement would be larger than the other half, and the article *$UT_n$ as the Complement of the Antisymmetric Part* exhibits exactly that: the upper triangular matrices have the same dimension as $\operatorname{Sym}_n$, they meet $\operatorname{Skew}_n$ only at zero, and they are not the orthogonal complement of $\operatorname{Skew}_n$.
 
-**The signature is the invariant that separates the two halves from the two classes of fixed spaces.** For the symplectic fixed space the trace form is indefinite, of signature $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$, while for $\operatorname{Sym}_n$ it is definite. So the pair of indices, and not the dimension, is the marker of the orthogonal class.
+**The inertia is the invariant that separates the two halves from the two classes of fixed spaces.** For the symplectic fixed space the trace form is indefinite, of inertia $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$, while for $\operatorname{Sym}_n$ it is definite. So the pair of indices, and not the dimension, is the marker of the orthogonal class.
 
 ## Summary
 
-The trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegenerate and invariant, and its signature is $(n(n+1)/2,n(n-1)/2)$, measured as $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$. The symmetric and antisymmetric halves are orthogonal for it, $\operatorname{tr}(SK)=0$, and since their dimensions add to $n^{2}$ each is the exact orthogonal complement of the other. The restriction is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two sums of squares that prove it are where the real base field enters. The maps $X\mapsto\tfrac12(X\pm X^{\mathsf T})$ are the trace-form orthogonal projections, self-adjoint for the form. The Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$ is positive definite with signature $(n^{2},0)$ and is not invariant, so it keeps the orthogonal split and loses the signature.
+The trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegenerate and invariant, and its inertia is $(n(n+1)/2,n(n-1)/2)$, measured as $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$. The symmetric and antisymmetric halves are orthogonal for it, $\operatorname{tr}(SK)=0$, and since their dimensions add to $n^{2}$ each is the exact orthogonal complement of the other. The restriction is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two sums of squares that prove it are where the real base field enters. The maps $X\mapsto\tfrac12(X\pm X^{\mathsf T})$ are the trace-form orthogonal projections, self-adjoint for the form. The Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$ is positive definite with inertia $(n^{2},0)$ and is not invariant, so it keeps the orthogonal split and loses the inertia.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\langle X,Y\rangle=\operatorname{tr}(XY)$ | the trace form, of signature $(n(n+1)/2,n(n-1)/2)$ |
+| $\langle X,Y\rangle=\operatorname{tr}(XY)$ | the trace form, of inertia $(n(n+1)/2,n(n-1)/2)$ |
 | $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y)$ | the Hilbert–Schmidt form, positive definite |
 | $\operatorname{Sym}_n$ | the positive definite half, of dimension $n(n+1)/2$ |
 | $\operatorname{Skew}_n$ | the negative definite half, of dimension $n(n-1)/2$ |
@@ -172,5 +172,5 @@ The trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$ is symmetric, nondegen
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the trace, the transpose and the symmetrisation of a matrix.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the trace form of an associative algebra and its invariance.
 - [The Two Halves: Symmetric and Antisymmetric](the-two-halves-symmetric-and-antisymmetric-over-r.html), for the two subspaces and their products.
-- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace form and its signature stated without proof.
+- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace form and its inertia stated without proof.
 - [$UT_n$ as the Complement of the Antisymmetric Part](utn-as-the-complement-of-the-antisymmetric-part-over-r.html), for a complement that is not orthogonal.

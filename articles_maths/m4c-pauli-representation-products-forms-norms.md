@@ -263,7 +263,7 @@ $$
 $$
 the $4\times4$ determinant being the square of the block determinant because the block is repeated twice. The characteristic polynomial of $L$ is $\bigl((\lambda-Q_t)^2+B^2\bigr)^2$, and that of $A$ is the same polynomial without the square, with the two roots $Q_t\pm iB$.
 
-**The determinant of a product.** For all $\tilde Q_1,\tilde Q_2$,
+**The determinant of a product of matrices.** For all $\tilde Q_1,\tilde Q_2$,
 $$
 \det(A_1A_2)=\det A_1\det A_2,\qquad\text{that is}\qquad N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2),
 $$
@@ -293,7 +293,7 @@ $$
 H=\tfrac14\operatorname{Tr}(L^{\dagger}L)=\tfrac12\operatorname{Tr}(A^{\dagger}A),\qquad
 \mathrm{Kr}=\tfrac14\operatorname{Tr}(L^{\mathsf T}L^{\dagger})=\tfrac12\operatorname{Tr}(A^{\natural}A^{\dagger}).
 $$
-The four letters, the four coordinate expressions and the four signatures are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+The four letters, the four coordinate expressions and the four inertias are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 **The quaternionic norm is an eigenvalue of the block.** The second word is not merely a trace:
 $$
@@ -308,13 +308,13 @@ $$
 \qquad
 \tfrac14\operatorname{Tr}(L^{\dagger}L)=\tfrac14\lVert L\rVert_{\mathrm{HS}}^2=H(\tilde Q),
 $$
-and the two agree because the Hilbert–Schmidt norm of $\mathrm I_2\otimes A$ is twice that of $A$. It is the only one of the four that is positive definite, of signature $(8,0)$ on the real algebra.
+and the two agree because the Hilbert–Schmidt norm of $\mathrm I_2\otimes A$ is twice that of $A$. It is the only one of the four that is positive definite, of inertia $(8,0)$ on the real algebra.
 
 **The Krein norm is the mixed word.** The fourth pairs the transpose with the dagger,
 $$
 \tfrac12\operatorname{Tr}(A^{\natural}A^{\dagger})=\mathrm{Kr}(\tilde Q),
 $$
-which is positive on the centre and negative on the vector subspace, of signature $(2,6)$.
+which is positive on the centre and negative on the vector subspace, of inertia $(2,6)$.
 
 **The multiplicativity table.**
 
@@ -355,7 +355,7 @@ $$
 | trace of an element | $4Q_t$ | $2Q_t$ | $\dim$ |
 | form | $\tfrac14\operatorname{Tr}(L_1L_2)$ | $\tfrac12\operatorname{Tr}(A_1A_2)$ | $1/\dim$ |
 | norm | $\tfrac14\operatorname{Tr}(L^{\mathsf T}L)$ | $\tfrac12\operatorname{Tr}(A^{\natural}A)$ | $1/\dim$ |
-| determinant | $N^2$ | $N$ | no factor |
+| the determinant of the image | $N^2$ | $N$ | no factor |
 | determinant of the identity | $1$ | $1$ | $\det\mathrm I=1$ |
 
 **Where each factor comes from.** The trace of the identity is the dimension of the space the matrix acts on. At the $4\times4$ size that space is the algebra, of complex dimension four, and the identity is one tensor factor of dimension two times a block of dimension two. The scalar part is one coordinate out of four at the first size and one row out of two at the second, so the same quarter and half appear in the same places. The determinant is normalised at the identity and carries no factor.

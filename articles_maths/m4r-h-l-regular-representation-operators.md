@@ -133,7 +133,7 @@ for every operator, and $\Phi$ is given in the two bases by the sixteen matrices
 |---|---|---|
 | operator rank | $4$ if both parameters non-zero, else $0$ | $4$ for all sixteen |
 | trace | $4q_tp_t$ | $4$ for $L_tR_t$, $0$ otherwise |
-| determinant | $N(\tilde q)^{2}N(\tilde p)^{2}$ | $1$ for all sixteen |
+| the determinant of the image | $N(\tilde q)^{2}N(\tilde p)^{2}$ | $1$ for all sixteen |
 | coefficient rank | $1$ | $1$ for all sixteen |
 | Frobenius norm$^{2}$ | $4\,N(\tilde q)N(\tilde p)$ | $4$ for all sixteen |
 

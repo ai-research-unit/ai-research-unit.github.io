@@ -46,7 +46,7 @@ $$
 
 ## The Radical of the Trace Form
 
-**Proposition.** The trace form on $UT_2$ has Gram matrix $\operatorname{diag}(1,0,1)$ in the basis $E_{11},E_{12},E_{22}$, of rank $2$ and signature $(2,0)$ with a one-dimensional radical.
+**Proposition.** The trace form on $UT_2$ has Gram matrix $\operatorname{diag}(1,0,1)$ in the basis $E_{11},E_{12},E_{22}$, of rank $2$ and inertia $(2,0)$ with a one-dimensional radical.
 
 **Proof.** $\operatorname{tr}(E_{11}^{2})=\operatorname{tr}(E_{22}^{2})=1$, $\operatorname{tr}(E_{12}^{2})=\operatorname{tr}(E_{11}E_{12})=\operatorname{tr}(E_{12}E_{22})=0$.
 

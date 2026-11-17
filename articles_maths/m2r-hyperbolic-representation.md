@@ -200,7 +200,7 @@ $$
 so the Gram matrix of the form $(Q,P)\mapsto\operatorname{tr}(\mathsf{M}_2(Q)\mathsf{M}_2(P))$ is
 
 $$
-G_{\operatorname{tr}}=2I_2,\qquad\text{signature }(2,0).
+G_{\operatorname{tr}}=2I_2,\qquad\text{inertia }(2,0).
 $$
 
 **The reading, and the reversal.** The trace form of the split-complex algebra is **positive definite**: it is the Euclidean form of the coefficient plane, twice the standard inner product. In the complex category the trace form was the Minkowski form $\operatorname{diag}(2,-2)$ and the determinant was the Euclidean one; here the two forms have exchanged roles. This is the sharpest single contrast of the block, and it is worth stating as a rule:
@@ -210,7 +210,7 @@ $$
 | $\mathbb{C}$ | Euclidean, $(2,0)$ | Minkowski, $(1,1)$ |
 | $\mathbb{C}_{\mathrm{spl}}$ | Minkowski, $(1,1)$ | Euclidean, $(2,0)$ |
 
-**Why the exchange happens.** The trace of the square is the sign of the algebra: $\operatorname{tr}\mathsf{M}_2(1)^{2}=+2$ and $\operatorname{tr}\mathsf{M}_2(j)^{2}=\operatorname{tr}(J^{2})=+2$ here, whereas for the complex model $\operatorname{tr}(J^{2})=\operatorname{tr}(-I_2)=-2$. The trace form reads the sign of $j^{2}$ **positively on both generators**, since both are $+I_2$; the determinant reads it **negatively on the second**, since $\det J=-1$. So the two forms of the plane are the two ways of signing the same data, and the algebra chooses the split signature for the multiplicative form and the definite one for the trace.
+**Why the exchange happens.** The trace of the square is the sign of the algebra: $\operatorname{tr}\mathsf{M}_2(1)^{2}=+2$ and $\operatorname{tr}\mathsf{M}_2(j)^{2}=\operatorname{tr}(J^{2})=+2$ here, whereas for the complex model $\operatorname{tr}(J^{2})=\operatorname{tr}(-I_2)=-2$. The trace form reads the sign of $j^{2}$ **positively on both generators**, since both are $+I_2$; the determinant reads it **negatively on the second**, since $\det J=-1$. So the two forms of the plane are the two ways of signing the same data, and the algebra chooses the split inertia for the multiplicative form and the definite one for the trace.
 
 **What the trace does not see.** The $j$-coordinate, exactly as in the complex case: the trace is a coordinate. It is blind to the sign of the norm and to the null cone.
 
@@ -228,7 +228,7 @@ $$
 
 **The four consequences.**
 
-- **Signature.** The determinant form on the algebra has Gram matrix $g=\operatorname{diag}(1,-1)$ and signature $(1,1)$: it is the Minkowski form of the plane, and the algebra is a Lorentzian plane with the two null lines for light rays.
+- **Inertia.** The determinant form on the algebra has Gram matrix $g=\operatorname{diag}(1,-1)$ and inertia $(1,1)$: it is the Minkowski form of the plane, and the algebra is a Lorentzian plane with the two null lines for light rays.
 - **Rank drop.** On the null lines the matrix has rank one, not zero: a null element $Q=\lambda_+\Pi_+$ gives $\mathsf{M}_2(Q)=\lambda_+\rho_+$, of image the line $\mathbb{R}\Pi_+$ and kernel the line $\mathbb{R}\Pi_-$. So the image of the model contains matrices of rank two, one and zero, and the rank is one exactly on the null cone.
 - **Unit criterion.** $Q$ is invertible $\iff\langle Q\rangle_{*}\neq0\iff\det\mathsf{M}_2(Q)\neq0\iff\mathsf{M}_2(Q)$ is invertible. As in the complex case all four statements coincide; what changes is that the first set is now the complement of two lines rather than of a point.
 - **Multiplicativity.** $\det(\mathsf{M}_2(Q)\mathsf{M}_2(P))=\langle Q\rangle_{*}\langle P\rangle_{*}=\langle QP\rangle_{*}$, without correction.
@@ -343,20 +343,20 @@ $$
 
 the one-parameter group of hyperbolic rotations, which is the **boost**. So $O(1,1)$ is to this category what $SO(2)$ was to the complex one, and the exponential of $j\theta_{\mathrm{rpd}}$ is the parametrisation of its identity component.
 
-**The non-compactness.** $SO^{+}(1,1)$ is homeomorphic to a line, not a circle: the boost is unbounded, and the level set $\langle Q\rangle_{*}=1$ has two branches, the future and the past hyperbola. The complex unit circle is compact and connected; here the definite level set is neither. The whole topology of the group of invertibles follows from the signature of the determinant.
+**The non-compactness.** $SO^{+}(1,1)$ is homeomorphic to a line, not a circle: the boost is unbounded, and the level set $\langle Q\rangle_{*}=1$ has two branches, the future and the past hyperbola. The complex unit circle is compact and connected; here the definite level set is neither. The whole topology of the group of invertibles follows from the inertia of the determinant.
 
 ## The Norms
 
 **The four forms.**
 
-| form | definition | Gram on $(1,j)$ | signature | multiplicative |
+| form | definition | Gram on $(1,j)$ | inertia | multiplicative |
 |---|---|---|---|---|
 | split norm | $\langle Q\rangle_{*}=\det\mathsf{M}_2(Q)$ | $\operatorname{diag}(1,-1)$ | $(1,1)$ | yes |
 | trace form | $\operatorname{tr}(\mathsf{M}_2(Q)\mathsf{M}_2(P))$ | $2I_2$ | $(2,0)$ | no |
 | Frobenius form | $\operatorname{tr}(\mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(P))$ | $2I_2$ | $(2,0)$ | no |
 | modulus | $\lvert Q\rvert=\sqrt{\lvert\langle Q\rangle_{*}\rvert}$ | — | — | yes |
 
-**The split norm is Minkowski.** Its Gram matrix is $g$, its signature $(1,1)$, its zero set two lines. It is the only multiplicative form, and it is indefinite.
+**The split norm is Minkowski.** Its Gram matrix is $g$, its inertia $(1,1)$, its zero set two lines. It is the only multiplicative form, and it is indefinite.
 
 **The trace and Frobenius forms coincide here.** Both have Gram $2I_2$, because every matrix of the image is symmetric, so $M^{\mathsf T}=M$ and the two forms agree on the image. In the complex model the two forms differed, because the image contained antisymmetric matrices. So the split category has one Euclidean form and not two, and the two coincide for the structural reason that the image is a space of symmetric matrices.
 
@@ -401,7 +401,7 @@ $$
 
 of dimensions $2+1+1$, and the three summands are the conformal part, the norm and the rotation. In the complex model the corresponding split was conformal plus anti-conformal; here there is a third piece, and it is the one that carries the sign of the determinant.
 
-**The invertibles.** The level set $\langle Q\rangle_{*}=\pm1$ is the hyperbola pair, of dimension one, and its image is $O(1,1)$; the level set $\langle Q\rangle_{*}=1$ has two components, the future and past branches, and its identity component is the boost group. The model realises $O(1,1)$ as an equality of matrix sets, exactly as the complex model realised $SO(2)$, and the difference of topology — one component against four — is the difference of signature.
+**The invertibles.** The level set $\langle Q\rangle_{*}=\pm1$ is the hyperbola pair, of dimension one, and its image is $O(1,1)$; the level set $\langle Q\rangle_{*}=1$ has two components, the future and past branches, and its identity component is the boost group. The model realises $O(1,1)$ as an equality of matrix sets, exactly as the complex model realised $SO(2)$, and the difference of topology — one component against four — is the difference of inertia.
 
 **The comparison with the ambient.** The image contains no nilpotent, no antisymmetric matrix, no traceless matrix and no off-diagonal matrix unit; the ambient contains all of them. The passage from the ambient to the algebra is the passage from an arbitrary linear map to a hyperbolic similarity, and it is the imposition of two linear conditions $CJ=JC$.
 

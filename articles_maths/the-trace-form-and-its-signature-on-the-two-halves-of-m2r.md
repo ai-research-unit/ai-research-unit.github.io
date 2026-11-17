@@ -1,12 +1,12 @@
-# __The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$__
+# __The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$__
 
 ## Introduction
 
-**The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_2(\mathbb{R})$ is symmetric, nondegenerate and of signature $(3,1)$, positive definite on the symmetric half and negative definite on the antisymmetric line, so the real matrix algebra carries the geometry of a four-dimensional Minkowski space.**
+**The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_2(\mathbb{R})$ is symmetric, nondegenerate and of inertia $(3,1)$, positive definite on the symmetric half and negative definite on the antisymmetric line, so the real matrix algebra carries the geometry of a four-dimensional Minkowski space.**
 
 The article polarises the quadratic form $\operatorname{tr}(X^{2})$, exhibits an orthogonal basis with the signs $+1,+1,+1,-1$, describes the isotropic cone and its cone of light, reads the form through Cayley–Hamilton as $(\operatorname{tr}X)^{2}-2\det X$, and identifies the Lie algebra of the isometry group with the image of the adjoint action. It assumes *The Two Halves as Orthogonal Complements at $n=2$*, *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* and *The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two*.
 
-It defers the Killing form to *The Killing Form of $\mathfrak{sl}_2$ and Its Three Signatures*, the Hilbert–Schmidt form to *The Hilbert–Schmidt Form at $n=2$*, and the four forms with their norms to *The Four Forms and Their Algebraic Norms at $n=2$*.
+It defers the Killing form to *The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias*, the Hilbert–Schmidt form to *The Hilbert–Schmidt Form at $n=2$*, and the four forms with their norms to *The Four Forms and Their Algebraic Norms at $n=2$*.
 
 ## The Form and Its Polarisation
 
@@ -30,7 +30,7 @@ It defers the Killing form to *The Killing Form of $\mathfrak{sl}_2$ and Its Thr
 
 **Proof.** $\operatorname{tr}(I^{2})=\operatorname{tr}(\sigma_{3}^{2})=\operatorname{tr}(\sigma_{1}^{2})=2$ and $\operatorname{tr}(J^{2})=-2$, while every mixed pairing vanishes by *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$*.
 
-**Corollary.** The signature is $(3,1)$: the form is positive definite of rank $3$ on the symmetric half and negative definite of rank $1$ on the antisymmetric line.
+**Corollary.** The inertia is $(3,1)$: the form is positive definite of rank $3$ on the symmetric half and negative definite of rank $1$ on the antisymmetric line.
 
 **Proof.** The Gram matrix in these coordinates is diagonal with three entries $+1$ and one entry $-1$, and the two halves are the spans of the first three and of the last basis vector.
 
@@ -78,7 +78,7 @@ $$
 
 **Theorem.** The isometry group of the trace form is $\mathrm{O}(3,1)$, of dimension $6$.
 
-**Proof.** The isometry group of a nondegenerate form of signature $(3,1)$ on a space of dimension four is the orthogonal group of that signature, and the dimension of the orthogonal group of a form in $n$ dimensions is $n(n-1)/2=6$ for $n=4$.
+**Proof.** The isometry group of a nondegenerate form of inertia $(3,1)$ on a space of dimension four is the orthogonal group of that inertia, and the dimension of the orthogonal group of a form in $n$ dimensions is $n(n-1)/2=6$ for $n=4$.
 
 **Corollary.** The Lie algebra of the isometry group is the space of endomorphisms $T$ with $\langle TX,Y\rangle+\langle X,TY\rangle=0$, of dimension $6$.
 
@@ -102,7 +102,7 @@ $$
 
 ## Summary
 
-The trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_2(\mathbb{R})$ is symmetric and nondegenerate, with Gram matrix $\operatorname{diag}(1,1,1,-1)$ in the normalised Pauli basis, hence of signature $(3,1)$: positive definite on the symmetric half and negative definite on the antisymmetric line.
+The trace form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_2(\mathbb{R})$ is symmetric and nondegenerate, with Gram matrix $\operatorname{diag}(1,1,1,-1)$ in the normalised Pauli basis, hence of inertia $(3,1)$: positive definite on the symmetric half and negative definite on the antisymmetric line.
 
 The form is the polar form of $\operatorname{tr}(X^{2})$, which Cayley–Hamilton writes as $(\operatorname{tr}X)^{2}-2\det X$; its isotropic cone is the double cone $c^{2}=\tfrac12\operatorname{tr}(S^{2})$ over the ellipsoid in the symmetric half, and the isometry group is $\mathrm{O}(3,1)$ of dimension $6$, whose Lie algebra receives the adjoint action of the algebra.
 
@@ -119,7 +119,7 @@ The form is the polar form of $\operatorname{tr}(X^{2})$, which Cayley–Hamilto
 
 ## Further Reading
 
-- Barrett O'Neill, *Semi-Riemannian Geometry* (Academic Press, 1983), for forms of signature $(3,1)$ and their isotropic cones.
+- Barrett O'Neill, *Semi-Riemannian Geometry* (Academic Press, 1983), for forms of inertia $(3,1)$ and their isotropic cones.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the trace form and the Cayley–Hamilton identity.
 - [The Two Halves as Orthogonal Complements at $n=2$](the-two-halves-as-orthogonal-complements-at-n-2.html), for the Gram matrices of the two halves.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the anti-self-adjoint endomorphisms of the form.

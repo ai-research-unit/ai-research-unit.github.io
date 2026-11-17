@@ -55,7 +55,7 @@ $$
 $$
 The difference is linear in the coordinates, hence additive. For the failure of multiplicativity of $\Delta$, take $\breve Q_1=\Pi_+$ and $\breve Q_2=\Pi_-$: their product is $0$, so $\Delta(\breve Q_1\breve Q_2)=0$, while $\Delta(\Pi_+)=1$ and $\Delta(\Pi_-)=1$, so $\Delta(\breve Q_1)\Delta(\breve Q_2)=1\neq0$. For the failure of additivity, $\Delta(\Pi_++\Pi_-)=\Delta(1)=0$, while $\Delta(\Pi_+)+\Delta(\Pi_-)=2$.
 
-**Remark (the two forms).** In the coordinates $(Q_\blacktriangle,Q_\blacktriangledown)$, the reduced norm is the non-degenerate hyperbolic form $Q_\blacktriangle^{2}-Q_\blacktriangledown^{2}$, of real signature $(2,2)$. The discriminant is the square $4Q_\blacktriangledown^{2}$ of a linear form, hence degenerate; its zero set is the single line $Q_\blacktriangledown=0$, while the zero set of $\nu$ is the union of the two lines $Q_+=0$ and $Q_-=0$.
+**Remark (the two forms).** In the coordinates $(Q_\blacktriangle,Q_\blacktriangledown)$, the reduced norm is the non-degenerate hyperbolic form $Q_\blacktriangle^{2}-Q_\blacktriangledown^{2}$, of real inertia $(2,2)$. The discriminant is the square $4Q_\blacktriangledown^{2}$ of a linear form, hence degenerate; its zero set is the single line $Q_\blacktriangledown=0$, while the zero set of $\nu$ is the union of the two lines $Q_+=0$ and $Q_-=0$.
 
 ## Independence of the Two Conditions
 

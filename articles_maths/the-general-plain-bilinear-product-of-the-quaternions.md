@@ -4,7 +4,7 @@
 
 Over $\mathbb{R}$ the space of the quaternions carries exactly two general bilinear products, and this article reads the first of them alone, the plain product $\tilde q_1\tilde q_2$. *General* is a term of the batch: a general product is a bilinear map whose two slots are read through the identity or through the conjugation; the two slots read the same involution over $\mathbb{R}$, so exactly two products arise, this one of the pairing $(\mathrm{id},\mathrm{id})$ and the quaternionic one of the pairing $({}^{\natural},\mathrm{id})$.
 
-The biquaternion counterpart is [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), and the two articles are one computation read over $\mathbb{R}$ and over $\mathbb{C}$. What changes is worth naming at once: over $\mathbb{C}$ the plain product has zero divisors and its trace form has signature $(2,2)$; over $\mathbb{R}$ the product is a division product, there are no zero divisors, and the trace form has signature $(1,3)$.
+The biquaternion counterpart is [The General Plain Bilinear Product](the-general-plain-bilinear-product.html), and the two articles are one computation read over $\mathbb{R}$ and over $\mathbb{C}$. What changes is worth naming at once: over $\mathbb{C}$ the plain product has zero divisors and its trace form has inertia $(2,2)$; over $\mathbb{R}$ the product is a division product, there are no zero divisors, and the trace form has inertia $(1,3)$.
 
 The article reads the product as a product of the batch and not as an introduction to the algebra. The algebra that the product makes of the space — its unit, its inverse, its centre, its automorphisms — is [Introduction to the Quaternion Algebra](introduction-to-the-quaternion-algebra.html) and [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html), cited and not restated. The two halves are [The Jordan Structure of the Symmetric Plain Product of the Quaternions](the-jordan-structure-of-the-symmetric-plain-product-of-the-quaternions.html) and [The Lie Structure of the Antisymmetric Plain Product of the Quaternions](the-lie-structure-of-the-antisymmetric-plain-product-of-the-quaternions.html).
 
@@ -138,9 +138,9 @@ $$
 \tau(\tilde q_1,\tilde q_2)=\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)=q_{1t}q_{2t}-(\vec q_1,\vec q_2).
 $$
 
-**Theorem (the form and its signature).** The form is symmetric, nondegenerate, of signature $(1,3)$, with Gram matrix $\mathrm{diag}(1,-1,-1,-1)$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; its quadratic form is $P$; its radical is zero; its isotropic cone is $\{q_t^2=\lvert\vec q\rvert^2\}$.
+**Theorem (the form and its inertia).** The form is symmetric, nondegenerate, of inertia $(1,3)$, with Gram matrix $\mathrm{diag}(1,-1,-1,-1)$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$; its quadratic form is $P$; its radical is zero; its isotropic cone is $\{q_t^2=\lvert\vec q\rvert^2\}$.
 
-*Proof.* The scalar part of the product is the displayed bilinear form, symmetric because the scalar part of a commutator vanishes. The Gram matrix is read on the basis. A vector orthogonal to everything is orthogonal to $e_t$ and to the three vector units, hence zero. The quadratic form is $\tau(\tilde q,\tilde q)=q_t^2-\lvert\vec q\rvert^2$. The form is the Minkowski form of [Quaternion Metrics](quaternion-metrics.html), and its signature is computed there.
+*Proof.* The scalar part of the product is the displayed bilinear form, symmetric because the scalar part of a commutator vanishes. The Gram matrix is read on the basis. A vector orthogonal to everything is orthogonal to $e_t$ and to the three vector units, hence zero. The quadratic form is $\tau(\tilde q,\tilde q)=q_t^2-\lvert\vec q\rvert^2$. The form is the Minkowski form of [Quaternion Metrics](quaternion-metrics.html), and its inertia is computed there.
 
 **Proposition (the two invariances).** For all $\tilde q_1,\tilde q_2,\tilde q_3$,
 $$
@@ -180,7 +180,7 @@ Its image is the whole algebra and every element is a square; its diagonal is $\
 
 It splits uniquely into the symmetric half $\tilde q_1\bullet\tilde q_2$ and the antisymmetric half $\tilde q_1\wedge\tilde q_2=\vec q_1\times\vec q_2$, and the four composites of the product with its two halves reconstruct each from the others.
 
-Its trace form is $\tau=\mathrm{Sc}(\tilde q_1\tilde q_2)$, of signature $(1,3)$, nondegenerate, associative and self-adjoint; its quadratic form is the indefinite norm $P$; the norm $N$ is the same form composed with the conjugation. Between the two general products, this is the one that is associative and carries the unit, and the other is the one that carries a definite form.
+Its trace form is $\tau=\mathrm{Sc}(\tilde q_1\tilde q_2)$, of inertia $(1,3)$, nondegenerate, associative and self-adjoint; its quadratic form is the indefinite norm $P$; the norm $N$ is the same form composed with the conjugation. Between the two general products, this is the one that is associative and carries the unit, and the other is the one that carries a definite form.
 
 ## Summary of Notation
 

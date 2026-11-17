@@ -439,4 +439,4 @@ The Cayley matrix $M(s)=(I-sK)(I+sK)^{-1}$ is symmetric, has determinant $1$, an
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for $SO(1,1)$, its components and its Cayley parametrisation.
 - John G. Ratcliffe, *Foundations of Hyperbolic Manifolds* (Springer, Graduate Texts in Mathematics 149, 2nd ed. 2006), for the hyperbolic line, its points at infinity and the rapidity coordinate.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for indefinite forms, isotropic lines and their projective geometry.
-- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the rational parametrisations of quadrics of arbitrary signature.
+- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for the rational parametrisations of quadrics of arbitrary inertia.

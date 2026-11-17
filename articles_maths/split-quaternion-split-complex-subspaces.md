@@ -93,7 +93,7 @@ $$
 \;},
 $$
 
-of signature $(1,1)$. Each restriction is the hyperbolic or **Minkowski** form of the plane, indefinite and non-degenerate, and each is the form of the split-complex algebra itself.
+of inertia $(1,1)$. Each restriction is the hyperbolic or **Minkowski** form of the plane, indefinite and non-degenerate, and each is the form of the split-complex algebra itself.
 
 ### Invertibles and Zero Divisors
 
@@ -107,7 +107,7 @@ on which $q_t = \pm q_y$; every nonzero element of these lines is a zero divisor
 
 **Proposition.** The zero divisors of $\mathbb{C}_{\mathrm{spl},2}$ are exactly the nonzero elements of the two isotropic lines $\mathbb{R}(1 \pm \vec e_y)$, and the zero divisors of $\mathbb{C}_{\mathrm{spl},3}$ are exactly the nonzero elements of $\mathbb{R}(1 \pm \vec e_z)$.
 
-**Proof.** The split-quaternion norm of the plane has signature $(1,1)$, so its null set is the union of the two lines indicated, and an element is invertible if and only if its split-quaternion norm is nonzero, by the split-quaternion norm criterion of *Split-Quaternion Norm and Invertibility*; hence the non-invertibles are exactly the nonzero null elements.
+**Proof.** The split-quaternion norm of the plane has inertia $(1,1)$, so its null set is the union of the two lines indicated, and an element is invertible if and only if its split-quaternion norm is nonzero, by the split-quaternion norm criterion of *Split-Quaternion Norm and Invertibility*; hence the non-invertibles are exactly the nonzero null elements.
 
 ## The Structure of the Planes
 
@@ -166,7 +166,7 @@ The biquaternion algebra $\mathbb{B}$ is a $\mathbb{C}$-algebra: its centre $\ma
 
 The split-quaternion algebra contains two commutative subalgebras $\mathbb{C}_{\mathrm{spl},2} = \operatorname{span}\{1,\vec e_y\}$ and $\mathbb{C}_{\mathrm{spl},3} = \operatorname{span}\{1,\vec e_z\}$, each isomorphic to the split-complex numbers $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \oplus \mathbb{R}$. They meet the scalar line in $\mathbb{R}\cdot 1$, meet the vector subspace in $\mathbb{R} \vec e_y$ and $\mathbb{R} \vec e_z$, and span together the three-dimensional space $\operatorname{span}\{1,\vec e_y,\vec e_z\}$.
 
-The idempotents of $\mathbb{C}_{\mathrm{spl},2}$ are the standard idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$, and those of $\mathbb{C}_{\mathrm{spl},3}$ are $v_\pm = \tfrac{1}{2}(1 \pm \vec e_z)$; in each plane they are central within the plane but not in the algebra. The split-quaternion norm restricts to $q_t^2 - q_y^2$ and $q_t^2 - q_z^2$, of signature $(1,1)$, and the zero divisors of each plane are the nonzero elements of its two isotropic lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$. The algebra is a free rank-$2$ module over each plane, with the **twisted** multiplication in which the anticommuting generator acts through the conjugation of the coefficient plane; because the planes are not central, the structure is a module and not an algebra structure. This is the non-central analogue of the centre of the biquaternion algebra, which is central and a field and therefore carries no nontrivial idempotents.
+The idempotents of $\mathbb{C}_{\mathrm{spl},2}$ are the standard idempotents $\tilde\pi_{1,2} = \tfrac{1}{2}(1 \pm \vec e_y)$, and those of $\mathbb{C}_{\mathrm{spl},3}$ are $v_\pm = \tfrac{1}{2}(1 \pm \vec e_z)$; in each plane they are central within the plane but not in the algebra. The split-quaternion norm restricts to $q_t^2 - q_y^2$ and $q_t^2 - q_z^2$, of inertia $(1,1)$, and the zero divisors of each plane are the nonzero elements of its two isotropic lines $\mathbb{R}(1\pm \vec e_y)$ and $\mathbb{R}(1\pm \vec e_z)$. The algebra is a free rank-$2$ module over each plane, with the **twisted** multiplication in which the anticommuting generator acts through the conjugation of the coefficient plane; because the planes are not central, the structure is a module and not an algebra structure. This is the non-central analogue of the centre of the biquaternion algebra, which is central and a field and therefore carries no nontrivial idempotents.
 
 ## Summary of Notation
 
@@ -180,7 +180,7 @@ The idempotents of $\mathbb{C}_{\mathrm{spl},2}$ are the standard idempotents $\
 | $v_\pm = \tfrac{1}{2}(1\pm \vec e_z)$ | the idempotents of $\mathbb{C}_{\mathrm{spl},3}$ | this article |
 | $\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | the idempotents of the abstract $\mathbb{C}_{\mathrm{spl}}$ | *Split-Complex Algebra* |
 | $S = \mathbb{R}\cdot 1$, $V$ | the scalar and vector subspaces | *Split-Quaternion Scalar and Vector Subspaces* |
-| $\langle q_t+q_y\vec e_y\rangle_{\natural} = q_t^2-q_y^2$ | the form restricted to a split-complex plane, signature $(1,1)$ | this article |
+| $\langle q_t+q_y\vec e_y\rangle_{\natural} = q_t^2-q_y^2$ | the form restricted to a split-complex plane, inertia $(1,1)$ | this article |
 | $\mathbb{R}(1\pm \vec e_y)$, $\mathbb{R}(1\pm \vec e_z)$ | the isotropic (zero-divisor) lines of the planes | *Split-Quaternion Zero Divisors* |
 | $\bar{w}$ | the conjugation of a split-complex plane | this article |
 

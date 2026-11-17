@@ -154,9 +154,9 @@ $$
 
 **Remark (the Euclidean sphere).** The Euclidean unit sphere $S^7_E$ is not contained in the sector. Its intersection with the cone is the link $L\cong S^2\times S^3$, a closed five-manifold, and the intersection with the sector is the complement of $L$ in $S^7_E$, open and dense in the sphere.
 
-**Remark (the real forms).** The six subspaces are the centre $\mathbb{B}_{C}=\mathbb{C}e_t$, the vector subspace $\mathbb{B}_{V}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$, the quaternion subspace $\mathbb{B}_{H}=\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the Hermitian subspace $\mathbb{B}_{\Psi}=\mathbb{R}e_t\oplus i\mathbb{R}\vec e_x\oplus i\mathbb{R}\vec e_y\oplus i\mathbb{R}\vec e_z$, and the anti-Hermitian subspace $\mathbb{B}_{\Phi}=i\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$. The distribution of the units over them is read from the realified signature of the norm:
+**Remark (the real forms).** The six subspaces are the centre $\mathbb{B}_{C}=\mathbb{C}e_t$, the vector subspace $\mathbb{B}_{V}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z$, the quaternion subspace $\mathbb{B}_{H}=\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, the anti-quaternion subspace $\mathbb{B}_{iH}$, the Hermitian subspace $\mathbb{B}_{\Psi}=\mathbb{R}e_t\oplus i\mathbb{R}\vec e_x\oplus i\mathbb{R}\vec e_y\oplus i\mathbb{R}\vec e_z$, and the anti-Hermitian subspace $\mathbb{B}_{\Phi}=i\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$. The distribution of the units over them is read from the realified inertia of the norm:
 
-| subspace | signature | units |
+| subspace | inertia | units |
 |---|---|---|
 | $\mathbb{B}_{C}$, the centre | $(1,1)$ | the non-zero scalars |
 | $\mathbb{B}_{V}$, the vector subspace | $(3,3)$ | the complement of the isotropic cone |
@@ -165,7 +165,7 @@ $$
 | $\mathbb{B}_{\Psi}$, the Hermitian subspace | $(1,3)$ | the complement of its null cone |
 | $\mathbb{B}_{\Phi}$, the anti-Hermitian subspace | $(3,1)$ | the complement of its null cone |
 
-The norm vanishes only at the origin on the centre, the quaternion subspace and the anti-quaternion subspace, so none of the three contains a zero divisor. On the vector, Hermitian and anti-Hermitian subspaces it is indefinite, and the sector meets each of them in the complement of its null cone (*Remarkable Subspaces under the General Quaternionic Algebra*, §*The Signatures and the Restriction Matrices*).
+The norm vanishes only at the origin on the centre, the quaternion subspace and the anti-quaternion subspace, so none of the three contains a zero divisor. On the vector, Hermitian and anti-Hermitian subspaces it is indefinite, and the sector meets each of them in the complement of its null cone (*Remarkable Subspaces under the General Quaternionic Algebra*, §*The Inertias and the Restriction Matrices*).
 
 ## The Topology
 

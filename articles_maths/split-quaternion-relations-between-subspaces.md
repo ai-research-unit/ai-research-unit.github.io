@@ -24,9 +24,9 @@ The three decompositions are the **scalar–vector** decomposition, and the two 
 | subspace | defining condition | real basis | $\dim_{\mathbb{R}}$ | subalgebra | norm |
 |---|---|---|---|---|---|
 | $S$ | $\tilde{q}^{\natural} = \tilde q$ | $1$ | $1$ | yes, $\cong \mathbb{R}$ | $q_t^2$, positive definite |
-| $V$ | $\tilde{q}^{\natural} = -\tilde q$ | $\vec e_x,\vec e_y,\vec e_z$ | $3$ | no (Lie) | $q_x^2-q_y^2-q_z^2$, signature $(2,1)$ |
-| $\mathbb{C}_{\mathrm{spl},2}$ | closed under products of $1, \vec e_y$ | $1,\vec e_y$ | $2$ | yes, $\cong \mathbb{C}_{\mathrm{spl}}$ | $q_t^2-q_y^2$, signature $(1,1)$ |
-| $\mathbb{C}_{\mathrm{spl},3}$ | $\alpha(\tilde q) = \tilde q$ | $1,\vec e_z$ | $2$ | yes, $\cong \mathbb{C}_{\mathrm{spl}}$ | $q_t^2-q_z^2$, signature $(1,1)$ |
+| $V$ | $\tilde{q}^{\natural} = -\tilde q$ | $\vec e_x,\vec e_y,\vec e_z$ | $3$ | no (Lie) | $q_x^2-q_y^2-q_z^2$, inertia $(2,1)$ |
+| $\mathbb{C}_{\mathrm{spl},2}$ | closed under products of $1, \vec e_y$ | $1,\vec e_y$ | $2$ | yes, $\cong \mathbb{C}_{\mathrm{spl}}$ | $q_t^2-q_y^2$, inertia $(1,1)$ |
+| $\mathbb{C}_{\mathrm{spl},3}$ | $\alpha(\tilde q) = \tilde q$ | $1,\vec e_z$ | $2$ | yes, $\cong \mathbb{C}_{\mathrm{spl}}$ | $q_t^2-q_z^2$, inertia $(1,1)$ |
 
 Only three of the four are closed under multiplication: the scalar line and the two split-complex planes. The vector subspace is not a subalgebra but is closed under the commutator, and it is the only one of the four that carries a nonzero bracket — the other three are commutative. The norms are the restrictions of $\langle\cdot\rangle_{\natural}$; all four are non-degenerate, the first definite and the other three indefinite.
 

@@ -50,7 +50,7 @@ $$
 \operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}\ge0,
 $$
 
-with equality only for $S=0$. So the trace form restricted to the symmetric half is positive definite, of signature $\big(\tfrac{n(n+1)}{2},0\big)$, and the same computation on the antisymmetric half gives $\operatorname{tr}(K^{2})=-\sum_{i<j}K_{ij}^{2}<0$.
+with equality only for $S=0$. So the trace form restricted to the symmetric half is positive definite, of inertia $\big(\tfrac{n(n+1)}{2},0\big)$, and the same computation on the antisymmetric half gives $\operatorname{tr}(K^{2})=-\sum_{i<j}K_{ij}^{2}<0$.
 
 ## The Antisymmetric Half
 
@@ -106,7 +106,7 @@ $$
 \operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}^{2}>0,\qquad \operatorname{tr}(K^{2})=-\sum_{i<j}2K_{ij}^{2}<0 ,
 $$
 
-so the restriction to $\operatorname{Sym}_n$ has signature $\big(\tfrac{n(n+1)}{2},0\big)$ and the restriction to $\operatorname{Skew}_n$ has signature $\big(0,\tfrac{n(n-1)}{2}\big)$. The form on the whole algebra is the sum of the two, of signature $(n(n+1)/2,\,n(n-1)/2)$ in the ordered pair, which is the split form of $\operatorname{tr}(A^{2})$ on $M_n(\mathbb{R})$.
+so the restriction to $\operatorname{Sym}_n$ has inertia $\big(\tfrac{n(n+1)}{2},0\big)$ and the restriction to $\operatorname{Skew}_n$ has inertia $\big(0,\tfrac{n(n-1)}{2}\big)$. The form on the whole algebra is the sum of the two, of inertia $(n(n+1)/2,\,n(n-1)/2)$ in the ordered pair, which is the split form of $\operatorname{tr}(A^{2})$ on $M_n(\mathbb{R})$.
 
 **The Killing form of $\mathfrak{so}(n)$ is $(n-2)\operatorname{tr}(XY)$.** A direct computation from the structure constants gives
 
@@ -116,7 +116,7 @@ $$
 
 and the identity was verified at $n=2,\dots,6$ by building the matrices of the adjoint action in the basis $E_{ij}-E_{ji}$ and comparing. The factor $n-2$ is the whole story: the form is negative definite for $n\ge3$ and vanishes identically at $n=2$, where $\mathfrak{so}(2)$ is one-dimensional and abelian. The consequences for the radical and for the triangular case are in *The Killing Form, Its Radical and the Triangular Case*.
 
-**The two forms are different objects.** The trace form is a form on the algebra, defined without a Lie structure; the Killing form is built from the adjoint action. On $\mathfrak{so}(n)$ they differ by the scalar $n-2$, and at $n=2$ the Killing form degenerates while the trace form does not. A statement about one is not a statement about the other, and the article *The Trace Form and Its Signature on the Two Halves* keeps them apart.
+**The two forms are different objects.** The trace form is a form on the algebra, defined without a Lie structure; the Killing form is built from the adjoint action. On $\mathfrak{so}(n)$ they differ by the scalar $n-2$, and at $n=2$ the Killing form degenerates while the trace form does not. A statement about one is not a statement about the other, and the article *The Trace Form and Its Inertia on the Two Halves* keeps them apart.
 
 ## The Exponential of Each Half
 

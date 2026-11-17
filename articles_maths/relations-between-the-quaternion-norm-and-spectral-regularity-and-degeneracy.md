@@ -103,7 +103,7 @@ The eight algebras are $\mathbb R$, $\mathbb C$, $\mathbb{C}_{\mathrm{spl}}$, $\
 
 **Theorem (the place of $\mathbb H$).** Among the eight, $\mathbb H$ is the only noncommutative division algebra, the only one whose norm is positive definite and whose spectral form has rank three. It is one of the four rows with $\Sigma_{01}=\varnothing$, the others being $\mathbb R$, $\mathbb C$ and $\mathbb{C}_{\mathrm{dln}}$. The three rows with $\Sigma_{01}\ne\varnothing$ are $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{H}_{\mathrm{spl}}$ and $\mathbb B$.
 
-*Proof.* The norms and signatures are those of [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html). The emptiness of $\Sigma_{01}$ in $\mathbb H$ is the implication of the previous section; in $\mathbb R$, $\mathbb C$ and $\mathbb{C}_{\mathrm{dln}}$ it follows from the table. The nonemptiness in $\mathbb{C}_{\mathrm{spl}}$ is witnessed by $1+j$, with norm $0$ and eigenvalues $2,0$; in $\mathbb{H}_{\mathrm{spl}}$ by $1+\vec e_y$, with norm $0$ and $\vec q^2=+1$; in $\mathbb B$ by $1+i\vec e_x$, with norm $0$ and $B^2=-1$.
+*Proof.* The norms and inertias are those of [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html). The emptiness of $\Sigma_{01}$ in $\mathbb H$ is the implication of the previous section; in $\mathbb R$, $\mathbb C$ and $\mathbb{C}_{\mathrm{dln}}$ it follows from the table. The nonemptiness in $\mathbb{C}_{\mathrm{spl}}$ is witnessed by $1+j$, with norm $0$ and eigenvalues $2,0$; in $\mathbb{H}_{\mathrm{spl}}$ by $1+\vec e_y$, with norm $0$ and $\vec q^2=+1$; in $\mathbb B$ by $1+i\vec e_x$, with norm $0$ and $B^2=-1$.
 
 ## The Chain of Invariants
 
@@ -148,7 +148,7 @@ has one strict implication, whose failure is $\mathbb R^\times$.
 - [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm, its multiplicativity and the group of invertibles.
 - [Spectral Regularity and Degeneracy in the Quaternion Algebra](spectral-regularity-and-degeneracy-in-the-quaternion-algebra.html), for the spectral criterion and the minimal polynomial.
 - [The Three Sectors of the Quaternion Algebra](the-three-sectors-of-the-quaternion-algebra.html), for the partition, dimensions and closures.
-- [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html), for the norms and signatures of the eight algebras.
+- [Comparison of Norms and Invertibility](comparison-of-norms-and-invertibility.html), for the norms and inertias of the eight algebras.
 - [Comparison of the Algebras](comparison-of-the-algebras.html), for the master table of the eight.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the biquaternion norm, its null cone and the four sectors.
 - [Split-Quaternion Norm and Invertibility](split-quaternion-norm-and-invertibility.html), for the indefinite norm and its null cone.

@@ -79,7 +79,7 @@ $$
 
 each parametrised by a projective line and each consisting of totally isotropic planes; the two families are disjoint, their union fills the null cone, and each maximal isotropic plane belongs to exactly one of them. In the projective space $\mathbb{P}^3$ the two families are the two rulings of the smooth quadric surface $\mathcal{Q} = \{\langle\tilde q\rangle_{\natural} = 0\}$, which is $\cong \mathbb{P}^1 \times \mathbb{P}^1$.
 
-**Proof.** The form has signature $(2,2)$, so a maximal isotropic subspace has dimension $2$ and the Witt index is $2$. A concrete maximal isotropic plane is
+**Proof.** The form has inertia $(2,2)$, so a maximal isotropic subspace has dimension $2$ and the Witt index is $2$. A concrete maximal isotropic plane is
 
 $$
 L = \operatorname{span}\Bigl\{ \tfrac12(1+\vec e_y),\; \vec e_x + \vec e_z \Bigr\},
@@ -118,7 +118,7 @@ The split-quaternion algebra is $\mathbb{R}^4$ and is contractible, so its only 
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{spl}} \cong \mathbb{R}^4$ | the split-quaternion algebra, contractible | *Split-Quaternion Algebra* |
-| $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, inertia $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 | ${\mathbb{H}_{\mathrm{spl}}}^\times = \{\langle\tilde q\rangle_{\natural} \neq 0\}$ | the group of invertibles, two components | this article |
 | $\mathrm{U} = \{\langle\tilde q\rangle_{\natural} = 1\} = \mathrm{SL}_2(\mathbb{R})$ | the norm-one group, $\simeq S^1$ | *Split-Quaternion Exponential and Lie Group Structure* |
 | $\mathcal{N} = \{\langle\tilde q\rangle_{\natural}=0\}$ | the null cone / zero-divisor set | *Split-Quaternion Zero Divisors* |

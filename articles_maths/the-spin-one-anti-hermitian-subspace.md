@@ -178,7 +178,7 @@ The spin-one carrier is the vector part $\mathfrak{k}$, of real dimension $3$. I
 
 ## Further Reading
 
-- [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the indefinite form of signature $(3,1)$ and its null cone
+- [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the indefinite form of inertia $(3,1)$ and its null cone
 - [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html), for the purely imaginary spectrum and the degenerate line of the closure
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table and the four closures
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the two Hermitian halves and the pure part

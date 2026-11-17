@@ -153,7 +153,7 @@ The characteristic polynomial is $\lambda^{2}-(\operatorname{tr}A)\lambda+\det A
 |---|---|
 | $a,b,c,d$ | the four complex coordinates of $A$ |
 | $\operatorname{tr}A=a+d$ | the trace |
-| $\det A=ad-bc$ | the determinant |
+| $\det A=ad-bc$ | the determinant of the image |
 | $\chi_A$ | the characteristic polynomial |
 | $\Delta$ | the discriminant $(\operatorname{tr}A)^{2}-4\det A$ |
 | $\lambda_{\pm}$ | the two roots of $\chi_A$ |

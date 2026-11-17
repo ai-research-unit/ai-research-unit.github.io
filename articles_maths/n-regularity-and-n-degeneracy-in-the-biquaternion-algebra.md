@@ -202,7 +202,7 @@ and it is stable under multiplication by non-zero complex scalars.
 
 *Proof.* $\langle\cdot\rangle_{\natural}=0$ is one complex equation in the four complex coefficients, homogeneous of degree two, with non-vanishing gradient off the origin. The real dimension is $2\cdot4-2=6$ and the complex dimension is $4-1=3$; removing the origin changes neither.
 
-**Correspondence (the remarkable subspaces).** By the signatures tabulated in §*The Two Cases on the Remarkable Subspaces*, the norm is anisotropic on the centre, the quaternion subspace and the anti-quaternion subspace: it vanishes only at the origin there, so none of the three contains a zero divisor; the zero-divisor set in the vector subspace is the pure stratum; and the Hermitian and anti-Hermitian subspaces each carry a null cone. A generic zero divisor has all four coefficients non-zero and lies in none of them.
+**Correspondence (the remarkable subspaces).** By the inertias tabulated in §*The Two Cases on the Remarkable Subspaces*, the norm is anisotropic on the centre, the quaternion subspace and the anti-quaternion subspace: it vanishes only at the origin there, so none of the three contains a zero divisor; the zero-divisor set in the vector subspace is the pure stratum; and the Hermitian and anti-Hermitian subspaces each carry a null cone. A generic zero divisor has all four coefficients non-zero and lies in none of them.
 
 **Remark (the spectral reading).** Inside $\mathcal{N}$ the pure stratum is cut out by $\vec Q^2=0$, which is the quadratic equation that also marks the spectral-degenerate elements. The strata here are defined by $Q_t$ alone; the comparison of the two cones belongs to *The Spectrum*.
 
@@ -210,9 +210,9 @@ The matrix reading of the split is in *The Forms, the Norms and the Singular Set
 
 ## The Two Cases on the Remarkable Subspaces
 
-The restriction of the norm to a remarkable subspace has a realified signature, and the complex equation $\langle\cdot\rangle_{\natural}=0$ decides whether the subspace carries non-zero elements of norm zero. The values are computed in *Remarkable Subspaces under the General Quaternionic Algebra*.
+The restriction of the norm to a remarkable subspace has a realified inertia, and the complex equation $\langle\cdot\rangle_{\natural}=0$ decides whether the subspace carries non-zero elements of norm zero. The values are computed in *Remarkable Subspaces under the General Quaternionic Algebra*.
 
-| remarkable subspace | realified signature of $\langle\cdot\rangle_{\natural}$ | elements of norm zero |
+| remarkable subspace | realified inertia of $\langle\cdot\rangle_{\natural}$ | elements of norm zero |
 |---|---|---|
 | $\mathbb{B}_{C}$, the centre | $(1,1)$ | $0$ alone |
 | $\mathbb{B}_{V}$, the vector subspace | $(3,3)$ | the isotropic cone of the vector subspace |
@@ -223,9 +223,9 @@ The restriction of the norm to a remarkable subspace has a realified signature, 
 
 **Corollary.** Every non-zero element of the centre, the quaternion subspace and the anti-quaternion subspace is invertible. The vector, Hermitian and anti-Hermitian subspaces contain zero divisors, and the origin is the only element of norm zero in those subspaces that is not one.
 
-*Proof.* The signatures give the values, and the criterion above converts the values into the two statements. On the centre the norm is $Q_t^2$, which vanishes only at the origin. On a pure element the norm is $(\vec Q,\vec Q)$ and on a Hermitian element it is $|a_0|^2-|\vec b|^2$, so a zero in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$ has non-zero scalar part and is non-pure.
+*Proof.* The inertias give the values, and the criterion above converts the values into the two statements. On the centre the norm is $Q_t^2$, which vanishes only at the origin. On a pure element the norm is $(\vec Q,\vec Q)$ and on a Hermitian element it is $|a_0|^2-|\vec b|^2$, so a zero in $\mathbb{B}_{\Psi}$ or $\mathbb{B}_{\Phi}$ has non-zero scalar part and is non-pure.
 
-**Remark.** The geometry also uses one mixed real subspace, the split form $W=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,i\vec e_y,i\vec e_z\}$ of real dimension four, on which $\langle\cdot\rangle_{\natural}|_W=a^2+b^2-c^2-d^2$, of signature $(2,2)$.
+**Remark.** The geometry also uses one mixed real subspace, the split form $W=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,i\vec e_y,i\vec e_z\}$ of real dimension four, on which $\langle\cdot\rangle_{\natural}|_W=a^2+b^2-c^2-d^2$, of inertia $(2,2)$.
 
 ## Summary
 

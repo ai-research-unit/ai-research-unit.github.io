@@ -383,7 +383,7 @@ The five gammas are not marked out. In this display they are $i$ times five of t
 | the sixteen basis operators | all real signed permutations, determinant one | eight real, eight carrying $i$ |
 | the transpose rule | $L(\tilde Q)^{\mathsf T}=L(\tilde Q^{\natural})$ | absent |
 | the trace | $4Q_t$ | $4Q_t$ |
-| the determinant | $\langle\tilde Q\rangle_\natural^2$ | $\langle\tilde Q\rangle_\natural^2$ |
+| the determinant of the image | $\langle\tilde Q\rangle_\natural^2$ | $\langle\tilde Q\rangle_\natural^2$ |
 | the block structure | none | two identical blocks |
 | the five gammas | five of the sixteen basis operators, not distinguished | three Pauli matrices, one of them diagonal |
 | the direction written into the page | none | one spatial unit |

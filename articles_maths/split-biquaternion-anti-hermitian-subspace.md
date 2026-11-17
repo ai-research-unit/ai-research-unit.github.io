@@ -106,7 +106,7 @@ a negative real scalar. The square of $je_t$ is $e_t$, so $je_t$ itself is an in
 
 ## The Split-Biquaternion Norm and the Hermitian Form
 
-### The Split-Biquaternion Norm and Its Signature
+### The Split-Biquaternion Norm and Its Inertia
 
 **Theorem.** On the anti-Hermitian subspace the split-biquaternion norm is the **positive definite** real quadratic form
 
@@ -116,7 +116,7 @@ $$
 \;},
 $$
 
-of signature $(4,0)$.
+of inertia $(4,0)$.
 
 **Proof.** Substituting $Q_t = j r_0$ and $Q_k = q_k$ in $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ gives $r_0^2 + \sum_k q_k^2$, because $(j r_0)^2 = j^2 r_0^2 = +r_0^2$.
 
@@ -130,13 +130,13 @@ $$
 \sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'^2_\mu) = -r_0^2 + q_x^2 + q_y^2 + q_z^2,
 $$
 
-of signature $(3,1)$. Its isotropic cone is the three-dimensional cone
+of inertia $(3,1)$. Its isotropic cone is the three-dimensional cone
 
 $$
 r_0^2 = q_x^2 + q_y^2 + q_z^2.
 $$
 
-The signatures of the Hermitian form on the two sectors are complementary, $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$; the map $j$ of the correspondence above exchanges the two.
+The inertias of the Hermitian form on the two sectors are complementary, $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$; the map $j$ of the correspondence above exchanges the two.
 
 ### Invertibles, Zero Divisors and Nilpotents
 
@@ -206,15 +206,15 @@ The subspace is complementary to $\mathbb{B}_{\Psi}$, giving the Hermitian decom
 
 ## The Analysis on the Anti-Hermitian Subspace
 
-The anti-Hermitian subspace is not a subalgebra, so, like the Hermitian subspace, it carries no intrinsic multiplicative function theory; the analysis on it is the restriction of the ambient analysis of *Split-Biquaternion Analysis* to a four-dimensional subspace. The symmetrized product of two elements of $\mathbb{B}_{\Phi}$ lies in $\mathbb{B}_{\Psi}$, so the functions on $\mathbb{B}_{\Phi}$ acquire a bracket, the commutator, rather than a pointwise product, and the intrinsic differential structure is the Lie-theoretic one of *Split-Biquaternion Anti-Hermitian Subspace*. The second-order operator obtained from the restriction of the ambient operators is the wave operator of the restricted Lorentzian form $-r_0^2 + \sum_k q_k^2$ of signature $(3,1)$.
+The anti-Hermitian subspace is not a subalgebra, so, like the Hermitian subspace, it carries no intrinsic multiplicative function theory; the analysis on it is the restriction of the ambient analysis of *Split-Biquaternion Analysis* to a four-dimensional subspace. The symmetrized product of two elements of $\mathbb{B}_{\Phi}$ lies in $\mathbb{B}_{\Psi}$, so the functions on $\mathbb{B}_{\Phi}$ acquire a bracket, the commutator, rather than a pointwise product, and the intrinsic differential structure is the Lie-theoretic one of *Split-Biquaternion Anti-Hermitian Subspace*. The second-order operator obtained from the restriction of the ambient operators is the wave operator of the restricted Lorentzian form $-r_0^2 + \sum_k q_k^2$ of inertia $(3,1)$.
 
 ## The Geometry of the Anti-Hermitian Subspace
 
-The anti-Hermitian subspace is the negative eigenspace of the involution ${}^{*}$ of the algebra, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. It is a Lorentzian subspace of the Hermitian scalar form: $g$ restricts to $-r_0^2 + \sum_k q_k^2$ of signature $(3,1)$, while the split-biquaternion norm restricts to the positive definite form $r_0^2 + \sum_k q_k^2$ of signature $(4,0)$ recorded in the notation table above. The null cone of $g$ is again cut out by $r_0^2 = \sum_k q_k^2$; the restricted form being indefinite of signature $(3,1)$, it has isotropic lines, and their projectivisation in $\mathbb{P}(\mathbb{B}_{\Phi})$ is a two-sphere. The motions it carries are the same Lorentz group $SO(1,3)$, realised on $\mathbb{B}_{\Phi}$ rather than on $\mathbb{B}_{\Psi}$; the two subspaces are interchanged by multiplication by $j$, since $(j\tilde Q)^{*} = -j\tilde{Q}^{*}$.
+The anti-Hermitian subspace is the negative eigenspace of the involution ${}^{*}$ of the algebra, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. It is a Lorentzian subspace of the Hermitian scalar form: $g$ restricts to $-r_0^2 + \sum_k q_k^2$ of inertia $(3,1)$, while the split-biquaternion norm restricts to the positive definite form $r_0^2 + \sum_k q_k^2$ of inertia $(4,0)$ recorded in the notation table above. The null cone of $g$ is again cut out by $r_0^2 = \sum_k q_k^2$; the restricted form being indefinite of inertia $(3,1)$, it has isotropic lines, and their projectivisation in $\mathbb{P}(\mathbb{B}_{\Phi})$ is a two-sphere. The motions it carries are the same Lorentz group $SO(1,3)$, realised on $\mathbb{B}_{\Phi}$ rather than on $\mathbb{B}_{\Psi}$; the two subspaces are interchanged by multiplication by $j$, since $(j\tilde Q)^{*} = -j\tilde{Q}^{*}$.
 
 ## Summary
 
-The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ is the fixed space of anti-Hermitian conjugation, the set of elements $\tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with purely split-imaginary scalar part and real vector part; it is a real vector space of dimension $4$ with basis $je_t, \vec e_x, \vec e_y, \vec e_z$. It is **not** a subalgebra — $(je_t)^2 = e_t$ leaves it — but the symmetrized product of two of its elements is Hermitian, the commutator is $2\,\vec q_1\times\vec q_2$, a pure real quaternion, and under that bracket $\mathbb{B}_{\Phi}$ is a **Lie subalgebra** with bracket image the three-dimensional $\mathrm{SO}(3)$. Multiplication by $j$ is a linear isomorphism $\mathbb{B}_{\Phi} \to \mathbb{B}_{\Psi}$, and the square of an anti-Hermitian element is Hermitian. The split-biquaternion norm restricts to the positive definite form $N = r_0^2 + q_x^2 + q_y^2 + q_z^2$ of signature $(4,0)$, so $\mathbb{B}_{\Phi}$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of signature $(3,1)$ and isotropic cone $r_0^2 = q_x^2 + q_y^2 + q_z^2$, whose nonzero points are all units. The roots of $-1$ in the subspace are the unit pure real quaternions, a two-sphere $S^2$, the same roots as in the quaternion subspace. The image under $\varphi$ is the set of anti-conjugate pairs $(h, -h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, anti-Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations negate the vector and scalar parts respectively, and Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{B}_{\Psi}$.
+The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ is the fixed space of anti-Hermitian conjugation, the set of elements $\tilde{Q} = j r_0 e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with purely split-imaginary scalar part and real vector part; it is a real vector space of dimension $4$ with basis $je_t, \vec e_x, \vec e_y, \vec e_z$. It is **not** a subalgebra — $(je_t)^2 = e_t$ leaves it — but the symmetrized product of two of its elements is Hermitian, the commutator is $2\,\vec q_1\times\vec q_2$, a pure real quaternion, and under that bracket $\mathbb{B}_{\Phi}$ is a **Lie subalgebra** with bracket image the three-dimensional $\mathrm{SO}(3)$. Multiplication by $j$ is a linear isomorphism $\mathbb{B}_{\Phi} \to \mathbb{B}_{\Psi}$, and the square of an anti-Hermitian element is Hermitian. The split-biquaternion norm restricts to the positive definite form $N = r_0^2 + q_x^2 + q_y^2 + q_z^2$ of inertia $(4,0)$, so $\mathbb{B}_{\Phi}$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of inertia $(3,1)$ and isotropic cone $r_0^2 = q_x^2 + q_y^2 + q_z^2$, whose nonzero points are all units. The roots of $-1$ in the subspace are the unit pure real quaternions, a two-sphere $S^2$, the same roots as in the quaternion subspace. The image under $\varphi$ is the set of anti-conjugate pairs $(h, -h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, anti-Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations negate the vector and scalar parts respectively, and Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{B}_{\Psi}$.
 
 ## Summary of Notation
 
@@ -225,8 +225,8 @@ The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ is the fixed space of anti-Hermi
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, fixed space of ${}^{\flat}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, fixed space of ${}^{*}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
-| $\langle\tilde{Q}\rangle_{\natural} = r_0^2 + \lvert\vec q\rvert^2$ | Norm on $\mathbb{B}_{\Phi}$, signature $(4,0)$ |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(3,1)$ on $\mathbb{B}_{\Phi}$ |
+| $\langle\tilde{Q}\rangle_{\natural} = r_0^2 + \lvert\vec q\rvert^2$ | Norm on $\mathbb{B}_{\Phi}$, inertia $(4,0)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(3,1)$ on $\mathbb{B}_{\Phi}$ |
 | $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ | Symmetrized product, landing in $\mathbb{B}_{\Psi}$ |
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q_1 \times \vec q_2$ | Commutator, a pure real quaternion |
 | $j : \mathbb{B}_{\Phi} \to \mathbb{B}_{\Psi}$ | Isomorphism by multiplication by $j$ |

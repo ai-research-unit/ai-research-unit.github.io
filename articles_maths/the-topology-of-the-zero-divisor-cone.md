@@ -124,7 +124,7 @@ $$
 \mathbb{B}_{\Phi}=\{Q_t\in i\mathbb{R},\ Q_x,Q_y,Q_z\in\mathbb{R}\},
 $$
 
-the Hermitian and anti-Hermitian subspaces of signatures $(1,3)$ and $(3,1)$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*, §*The Four Algebraic Norms*). Thus $P_-\subset\mathbb{B}_{\Psi}$ and $P_+\subset\mathbb{B}_{\Phi}$: each Lorentzian slice contains a definite plane, and the cone meets that plane only at the apex; the rest of the slice carries a genuine null cone.
+the Hermitian and anti-Hermitian subspaces of inertias $(1,3)$ and $(3,1)$ (*Remarkable Subspaces and the Four General Products, Forms and Norms*, §*The Four Algebraic Norms*). Thus $P_-\subset\mathbb{B}_{\Psi}$ and $P_+\subset\mathbb{B}_{\Phi}$: each Lorentzian slice contains a definite plane, and the cone meets that plane only at the apex; the rest of the slice carries a genuine null cone.
 
 **Proposition (the Lorentzian link).** On $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ the cone cuts the three-dimensional null cone of the slice, whose link in $S^{7}_{E}$ is $S^{2}\sqcup S^{2}$, one sphere per nappe.
 
@@ -165,7 +165,7 @@ One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone 
 | $\mathbb{P}(\mathcal{N})\cong S^{2}\times S^{2}$ | Projectivised cone |
 | $P=\{Q_t=0\}\cong\mathbb{C}^{3}$ | Pure subspace |
 | $P_+$, $P_-$ | The definite $3$-planes in $P$; unit spheres $S^{2}$ each |
-| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Lorentzian slices, signatures $(1,3)$ and $(3,1)$; links $S^{2}\sqcup S^{2}$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Lorentzian slices, inertias $(1,3)$ and $(3,1)$; links $S^{2}\sqcup S^{2}$ |
 | $\mathbb{B}^{\times}$ | Group of invertibles; complement of $\mathcal{N}$ |
 
 ## Further Reading
@@ -175,7 +175,7 @@ One rule governs the letters: $\mathcal{N}$ is the null cone, and no other cone 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the algebraic norm and its multiplicativity
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the criterion and the strata
 - [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the complement of the cone and its group structure
-- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the signatures of the Lorentzian slices
+- [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the inertias of the Lorentzian slices
 - [Quaternion Geometry](quaternion-geometry.html), for the Hopf fibration and the homogeneous sphere $S^{2}$
 - [Grassmannians and Stiefel Manifolds](grassmannians-and-stiefel-manifolds.html), for $V_{2}(\mathbb{R}^{4})$ and the unit tangent bundle of $S^{3}$
 - [Idempotents](idempotents.html), for the roots of $-1$ and $+1$

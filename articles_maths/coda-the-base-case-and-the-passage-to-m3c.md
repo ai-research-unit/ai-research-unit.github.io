@@ -58,7 +58,7 @@ It follows the biquaternion article *The Biquaternion Algebra* for the same base
 
 **Proposition.** The positive semidefinite cone is a Lorentz cone, so its section by the trace hyperplane is a ball and its extreme rays form a sphere.
 
-**Proof.** The determinant on the Hermitian half has signature $(1,3)$, so the cone is Lorentzian.
+**Proof.** The determinant on the Hermitian half has inertia $(1,3)$, so the cone is Lorentzian.
 
 **Corollary.** The symmetry of the base case is the product of two circles at the level of the maximal torus, and the Weyl group has two elements.
 

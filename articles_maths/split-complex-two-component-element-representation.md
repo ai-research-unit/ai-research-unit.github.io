@@ -175,7 +175,7 @@ $$
 g(Q, B) = q b - q' b', \qquad Q = (q,q'), \; B = (b,b'),
 $$
 
-with matrix $\operatorname{diag}(1, -1)$ and signature $(1,1)$. So the coefficient space is a **Lorentzian plane**: the form is indefinite, of the two signs, and its isotropic set is the pair of diagonal lines $q = \pm q'$.
+with matrix $\operatorname{diag}(1, -1)$ and inertia $(1,1)$. So the coefficient space is a **Lorentzian plane**: the form is indefinite, of the two signs, and its isotropic set is the pair of diagonal lines $q = \pm q'$.
 
 | region | coordinate condition | sign of $\langle Q\rangle_{*}$ |
 |---|---|---|
@@ -211,7 +211,7 @@ The complex field and the split-complex algebra are the two two-dimensional real
 | product rule | $(q b-q' b', \, q b'+q' b)$ | $(q b+q' b', \, q b'+q' b)$ |
 | conjugation in coordinates | $(q,-q')$ | $(q,-q')$ |
 | fixed / anti-fixed subspaces | $\mathbb{R}$ and $i\mathbb{R}$ | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ and $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}$ |
-| norm | $q^2+q'^2$, positive definite | $q^2-q'^2$, signature $(1,1)$ |
+| norm | $q^2+q'^2$, positive definite | $q^2-q'^2$, inertia $(1,1)$ |
 | isotropic set | $\{0\}$ | the two lines $q = \pm q'$ |
 | zero divisors | none | the two idempotent lines |
 | idempotents beyond $0,1$ | none | $\Pi_\pm$ |
@@ -223,7 +223,7 @@ The two realizations share their coefficient space, their column and row, their 
 
 A split-complex number $Q = q+j q'$ is realized as its two-component vector $(q, q')$ in $\mathbb{R}^2$, with column $\begin{pmatrix} q \\ q' \end{pmatrix}$ and dual row $(q, q')$; the map to $\mathbb{R}^2$ is an isomorphism of real vector spaces, and the component space is the algebra itself as a coordinate space. The product in components is $(QB)_0 = q b+q' b'$, $(QB)_1 = q b'+q' b$, differing from the complex product rule in the single sign of the $q' b'$ term; the left multiplication operator is the regular matrix $\begin{pmatrix} q & q' \\ q' & q \end{pmatrix}$ of *Split-Complex Regular Element Representation*.
 
-The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'^2$, indefinite of signature $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.
+The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace the real axis and anti-fixed subspace the split imaginary axis. The norm is $q^2-q'^2$, indefinite of inertia $(1,1)$ with isotropic set the two lines $q = \pm q'$; restricted to the real axis it is positive definite and to the split imaginary axis negative definite. In the idempotent coordinates the same form is $Q_+Q_-$ and the conjugation swaps the two coordinates. The complex field shares the coefficient space, the conjugation, the column and row picture and the second component of the product, and differs only in the sign of the $q' b'$ term of the first component; that sign is the whole difference between the definite two-component algebra and the indefinite one, between a field and a ring with zero divisors.
 
 ## Summary of Notation
 
@@ -240,7 +240,7 @@ The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace 
 | $C = \operatorname{diag}(1,-1)$ | Matrix of the conjugation |
 | $\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \{(q,0)\}$ | Fixed subspace, real axis |
 | $j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}} = \{(0,q')\}$ | Anti-fixed subspace, split imaginary axis |
-| $\langle Q\rangle_{*} = q^2-q'^2$ | Norm, signature $(1,1)$ |
+| $\langle Q\rangle_{*} = q^2-q'^2$ | Norm, inertia $(1,1)$ |
 | $g(Q,B) = q b-q' b'$ | Polarised form |
 | $(Q_+, Q_-) = (q+q', q-q')$ | Idempotent coordinates |
 
@@ -248,5 +248,5 @@ The conjugation is the reflection $(q,q') \mapsto (q,-q')$, with fixed subspace 
 
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the two-component and matrix readings of the split complex plane.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split complex numbers as $\mathrm{Cl}_{1,0}$ and their coordinate realization.
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for signatures, isotropic vectors and the Lorentzian plane.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for inertias, isotropic vectors and the Lorentzian plane.
 - Harvey Cohn, *A Classical Invitation to Algebraic Numbers and Class Fields* (Springer, Universitext, 1978), for the comparison of the two quadratic real algebras of dimension two.

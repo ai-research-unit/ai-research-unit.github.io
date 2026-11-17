@@ -54,7 +54,7 @@ $$
 \vec e_\eta\cdot\vec e_\zeta=\delta_{\eta\zeta},
 $$
 
-and the inner product is extended bilinearly. It is the unit metric of *Algebra and Element Conventions*, positive definite, of signature $(3,0)$ on $V$. This datum is invariant under every orthogonal map of $V$.
+and the inner product is extended bilinearly. It is the unit metric of *Algebra and Element Conventions*, positive definite, of inertia $(3,0)$ on $V$. This datum is invariant under every orthogonal map of $V$.
 
 **The second datum: an orientation.** The cyclic order $x\to y\to z\to x$ is declared, equivalently the volume element $\vec e_x\wedge\vec e_y\wedge\vec e_z$, and the cross product is the one it defines,
 

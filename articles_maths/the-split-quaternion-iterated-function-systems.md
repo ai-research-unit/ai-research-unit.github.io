@@ -8,7 +8,7 @@ The article defines the systems, proves the contraction and the invariance of th
 
 The similarities and the group work as in *The Quaternion Iterated Function Systems*; the algebra, the norm and the zero divisors are from *Split-Quaternion Algebra*, *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Ideals and Peirce Decomposition*; the hyperboloid, the hyperbolic plane and the boundary are from *Split-Quaternions and Hyperbolic Geometry*; the limit sets, the Schottky groups and the critical exponent are from *The Limit Sets of the Hyperbolic Lattices* and *Kleinian and Fuchsian Groups*; the iterated function systems, the attractor, the open set condition and the similarity dimension are *Fractal Geometry*'s; and the comparison with the definite system is *The Quaternion Iterated Function Systems* and *The Split-Complex Iterated Function Systems*. No physics is invoked.
 
-Throughout, $\langle\cdot\rangle_{\natural}$ is the indefinite norm of signature $(2,2)$ and $|\cdot|$ the Euclidean norm of $\mathbb{R}^4$; a similarity is $S(\tilde q)=\tilde q_1\tilde q\tilde q_2+\tilde q_3$ with ratio $\lambda=|\tilde q_1||\tilde q_2|$; the null cone is $\{N=0\}$; and $\mathbb{H}^{+}$ is the timelike sheet of the hyperboloid of *Split-Quaternions and Hyperbolic Geometry*.
+Throughout, $\langle\cdot\rangle_{\natural}$ is the indefinite norm of inertia $(2,2)$ and $|\cdot|$ the Euclidean norm of $\mathbb{R}^4$; a similarity is $S(\tilde q)=\tilde q_1\tilde q\tilde q_2+\tilde q_3$ with ratio $\lambda=|\tilde q_1||\tilde q_2|$; the null cone is $\{N=0\}$; and $\mathbb{H}^{+}$ is the timelike sheet of the hyperboloid of *Split-Quaternions and Hyperbolic Geometry*.
 
 ## Contractions in the Indefinite Metric
 

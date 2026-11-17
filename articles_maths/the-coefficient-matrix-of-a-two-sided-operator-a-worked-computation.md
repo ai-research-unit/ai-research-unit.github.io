@@ -291,7 +291,7 @@ $$
 | rank of $c(M)$ | $2$, minor on rows $\{t,z\}$ and columns $\{t,y\}$ equal to $-1$ |
 | length | $2$ |
 | ordinary rank | $4$ |
-| determinant | $1$ |
+| the determinant of the image | $1$ |
 | minimal decomposition | $M=L_{\mathrm{axf},e_t-\vec e_x}R_{\mathrm{axf},e_t}-L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}=L_{\mathrm{axf},e_t}R_{\mathrm{axf},e_t}-L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},e_t}-L_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}$ |
 
 **The punchline.** The ordinary rank is $4$, the maximal value, and the length is $2$. Ordinary rank gives no information about length; coefficient rank does.

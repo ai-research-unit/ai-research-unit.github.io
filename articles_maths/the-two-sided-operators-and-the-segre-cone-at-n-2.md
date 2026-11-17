@@ -4,7 +4,7 @@
 
 **A two-sided operator $Z\mapsto XZY$ has rank the product of the two ranks, and the elements of the matrix space that it can produce from the identity are the decomposable tensors, whose determinant vanishes: the Segre cone of the algebra is the quadric cone $\det=0$.**
 
-The article studies the operators built from one left and one right multiplication, computes their rank, identifies the decomposable elements as the rank-one matrices and their projectivisation as the Segre variety $\mathbb{P}^{1}\times\mathbb{P}^{1}$, proves that the determinant is the defining quadratic form of the cone with signature $(2,2)$ over the real field, and describes the operators that preserve the cone. It assumes *The One-Sided Operators at $n=2$*, *$\operatorname{End}(M_2(\mathbb{C}))$ as an Algebra: the Regular Representation* and *The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$*.
+The article studies the operators built from one left and one right multiplication, computes their rank, identifies the decomposable elements as the rank-one matrices and their projectivisation as the Segre variety $\mathbb{P}^{1}\times\mathbb{P}^{1}$, proves that the determinant is the defining quadratic form of the cone with inertia $(2,2)$ over the real field, and describes the operators that preserve the cone. It assumes *The One-Sided Operators at $n=2$*, *$\operatorname{End}(M_2(\mathbb{C}))$ as an Algebra: the Regular Representation* and *The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$*.
 
 It follows the biquaternion article *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* for the norm that plays the role of the determinant.
 
@@ -56,7 +56,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 ## The Determinant and the Cone
 
-**Theorem.** The determinant is a quadratic form on the matrix space, its zero set is the set of matrices of rank at most one, and over $\mathbb{R}$ its signature is $(2,2)$.
+**Theorem.** The determinant is a quadratic form on the matrix space, its zero set is the set of matrices of rank at most one, and over $\mathbb{R}$ its inertia is $(2,2)$.
 
 **Proof.** The determinant is a homogeneous polynomial of degree two in the four entries, and it vanishes exactly when the two columns are dependent, which is the rank condition. In the basis of matrix units the associated bilinear form has the Gram matrix with the two off-diagonal blocks $\tfrac12$ and $-\tfrac12$, whose eigenvalues are $\pm\tfrac12$, twice each.
 
@@ -66,13 +66,13 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 **Corollary.** The cone is not convex, and it contains the two halves $\det>0$ and $\det<0$ on opposite sides.
 
-**Proof.** A quadratic form of signature $(2,2)$ has a cone with two components in the positive set and one in the negative set, and the cone itself separates them.
+**Proof.** A quadratic form of inertia $(2,2)$ has a cone with two components in the positive set and one in the negative set, and the cone itself separates them.
 
 ## The Sign of the Determinant
 
 **Proposition.** On the real matrix space the two sets $\det>0$ and $\det<0$ are each connected, and the cone separates them.
 
-**Proof.** Because the determinant has signature $(2,2)$, there are linear coordinates in which it reads $u^{2}+v^{2}-w^{2}-z^{2}$. The set where this is positive is $\{u^{2}+v^{2}>w^{2}+z^{2}\}$, which retracts onto the circle $u^{2}+v^{2}=1$, $w=z=0$, so it is connected; the set where it is negative similarly retracts onto the circle in the other pair of coordinates.
+**Proof.** Because the determinant has inertia $(2,2)$, there are linear coordinates in which it reads $u^{2}+v^{2}-w^{2}-z^{2}$. The set where this is positive is $\{u^{2}+v^{2}>w^{2}+z^{2}\}$, which retracts onto the circle $u^{2}+v^{2}=1$, $w=z=0$, so it is connected; the set where it is negative similarly retracts onto the circle in the other pair of coordinates.
 
 **Corollary.** The rotations of the plane lie in the set $\det>0$ and the reflections lie in the set $\det<0$, and each of the two sets is connected.
 
@@ -104,7 +104,7 @@ It follows the biquaternion article *The Four Forms and the Four Algebraic Norms
 
 A two-sided operator $Z\mapsto XZY$ has rank the product of the ranks of the two parameters, and the sixteen operators of this form span the endomorphism algebra. The decomposable elements of the matrix space are the rank-one matrices $uv^{\mathsf T}$, whose projectivisation is the Segre variety $\mathbb{P}^{1}\times\mathbb{P}^{1}$.
 
-The determinant is the quadratic form whose zero set is the cone over that variety, and over $\mathbb{R}$ its signature is $(2,2)$. An invertible two-sided operator multiplies the determinant by the product of the two determinants, so it preserves the cone and acts on its components according to the sign of that product.
+The determinant is the quadratic form whose zero set is the cone over that variety, and over $\mathbb{R}$ its inertia is $(2,2)$. An invertible two-sided operator multiplies the determinant by the product of the two determinants, so it preserves the cone and acts on its components according to the sign of that product.
 
 ## Summary of Notation
 
@@ -114,7 +114,7 @@ The determinant is the quadratic form whose zero set is the cone over that varie
 | $uv^{\mathsf T}$ | a rank-one matrix, a decomposable tensor |
 | $\mathbb{P}^{1}\times\mathbb{P}^{1}$ | the Segre variety of decomposable elements |
 | $\det$ | the quadratic form defining the cone |
-| $(2,2)$ | the signature of the determinant over $\mathbb{R}$ |
+| $(2,2)$ | the inertia of the determinant over $\mathbb{R}$ |
 
 ## Further Reading
 

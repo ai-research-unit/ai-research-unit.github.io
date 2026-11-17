@@ -68,7 +68,7 @@ The two dimensions add to $r_{k}^{2}=\dim A_{kk}$, and the split is the one of *
 
 **The two parts of a diagonal corner close under different products.** The symmetric elements are closed under $X\circ Y=\tfrac12(XY+YX)$ and the antisymmetric ones under $[X,Y]=XY-YX$; no single product closes on the whole corner.
 
-**The trace form is positive definite on the symmetric part and negative definite on the antisymmetric part.** For a symmetric $S$ in the corner, $\operatorname{tr}(S^{2})=\sum S_{ij}^{2}>0$, and for an antisymmetric $K$, $\operatorname{tr}(K^{2})=-\sum K_{ij}^{2}<0$. The corner therefore contributes $r_{k}(r_{k}+1)/2$ positive and $r_{k}(r_{k}-1)/2$ negative directions to the signature.
+**The trace form is positive definite on the symmetric part and negative definite on the antisymmetric part.** For a symmetric $S$ in the corner, $\operatorname{tr}(S^{2})=\sum S_{ij}^{2}>0$, and for an antisymmetric $K$, $\operatorname{tr}(K^{2})=-\sum K_{ij}^{2}<0$. The corner therefore contributes $r_{k}(r_{k}+1)/2$ positive and $r_{k}(r_{k}-1)/2$ negative directions to the inertia.
 
 ## The Total Identity
 
@@ -132,7 +132,7 @@ $$
 
 and an antisymmetric one at $n=3$ is built from $Y_{12}=1$, $Y_{13}=i$, whose square has zero trace. So over $\mathbb{C}$ neither half is definite and the sign that separates them over $\mathbb{R}$ has no meaning.
 
-**The signature of the trace form is the real invariant.** Over $\mathbb{R}$ the form $\langle X,Y\rangle=\operatorname{tr}(XY)$ has signature $\big(n(n+1)/2,\,n(n-1)/2\big)$, positive on $\operatorname{Sym}_n$ and negative on $\operatorname{Skew}_n$. A complex bilinear form has no signature, so the definite split computed here is a real statement.
+**The inertia of the trace form is the real invariant.** Over $\mathbb{R}$ the form $\langle X,Y\rangle=\operatorname{tr}(XY)$ has inertia $\big(n(n+1)/2,\,n(n-1)/2\big)$, positive on $\operatorname{Sym}_n$ and negative on $\operatorname{Skew}_n$. A complex bilinear form has no inertia, so the definite split computed here is a real statement.
 
 **The grading is a real statement about the transpose.** The eigenvalues $\pm1$ are real numbers, so the pieces of the grading are real subspaces of real dimensions $r_{k}r_{l}$ and $r_{k}(r_{k}\pm1)/2$, and the two halves are the two real eigenspaces of one $\mathbb{R}$-linear involution. The Jordan algebra $\operatorname{Sym}_n$ is formally real, while $\operatorname{Sym}_n(\mathbb{C})$ contains the nilpotent $X$ above; that difference, not the existence of the splitting, is what the base field decides.
 
@@ -152,7 +152,7 @@ and $10=4\cdot5/2$ in all three cases. The antisymmetric totals are $1+1+4=6$, $
 
 ## Summary
 
-A symmetric frame $P_{k}=P_{k}^{\mathsf T}$ makes the transpose exchange the corners, $A_{kl}^{\mathsf T}=A_{lk}$, so each corner pair $A_{kl}+A_{lk}$ with $k\ne l$ splits into a symmetric part and an antisymmetric part, both of dimension $r_{k}r_{l}$, and each diagonal corner $A_{kk}$ splits into $\operatorname{Sym}(A_{kk})$ of dimension $r_{k}(r_{k}+1)/2$ and $\operatorname{Skew}(A_{kk})$ of dimension $r_{k}(r_{k}-1)/2$. The symmetric dimensions satisfy $\sum_{k}r_{k}(r_{k}+1)/2+\sum_{k<l}r_{k}r_{l}=n(n+1)/2$ and the antisymmetric ones $n(n-1)/2$, the two sums adding to $n^{2}$; at $n=4$ the rank vectors $(2,2)$, $(3,1)$ and $(2,1,1)$ all give $10$ and $6$. The two halves are therefore graded by the frame, with the pairs $\{k,l\}$ as index set. The grading is a real statement: the eigenvalues are $\pm1$, the pieces are real subspaces of real dimensions $r_{k}r_{l}$, the trace form has signature $(n(n+1)/2,n(n-1)/2)$, and over $\mathbb{C}$ the same two subspaces exist but the form is isotropic on both.
+A symmetric frame $P_{k}=P_{k}^{\mathsf T}$ makes the transpose exchange the corners, $A_{kl}^{\mathsf T}=A_{lk}$, so each corner pair $A_{kl}+A_{lk}$ with $k\ne l$ splits into a symmetric part and an antisymmetric part, both of dimension $r_{k}r_{l}$, and each diagonal corner $A_{kk}$ splits into $\operatorname{Sym}(A_{kk})$ of dimension $r_{k}(r_{k}+1)/2$ and $\operatorname{Skew}(A_{kk})$ of dimension $r_{k}(r_{k}-1)/2$. The symmetric dimensions satisfy $\sum_{k}r_{k}(r_{k}+1)/2+\sum_{k<l}r_{k}r_{l}=n(n+1)/2$ and the antisymmetric ones $n(n-1)/2$, the two sums adding to $n^{2}$; at $n=4$ the rank vectors $(2,2)$, $(3,1)$ and $(2,1,1)$ all give $10$ and $6$. The two halves are therefore graded by the frame, with the pairs $\{k,l\}$ as index set. The grading is a real statement: the eigenvalues are $\pm1$, the pieces are real subspaces of real dimensions $r_{k}r_{l}$, the trace form has inertia $(n(n+1)/2,n(n-1)/2)$, and over $\mathbb{C}$ the same two subspaces exist but the form is isotropic on both.
 
 ## Summary of Notation
 
@@ -174,4 +174,4 @@ A symmetric frame $P_{k}=P_{k}^{\mathsf T}$ makes the transpose exchange the cor
 - Sigurdur Helgason, *Differential Geometry, Lie Groups and Symmetric Spaces* (American Mathematical Society, 2001), for the graded structure of $\mathfrak{so}(n)$ and its root spaces.
 - [The Peirce Basis and the Corners over $\mathbb{R}$](the-peirce-basis-and-the-corners-over-r.html), for the corners and the frame that the grading uses.
 - [The Peirce Decomposition of $\operatorname{Sym}_n$ as a Jordan Algebra](the-peirce-decomposition-of-sym-n-r-as-a-jordan-algebra.html), for the symmetric half read as a Jordan algebra.
-- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace form, its signature and the two halves.
+- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace form, its inertia and the two halves.

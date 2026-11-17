@@ -10,7 +10,7 @@ $$
 
 with $r$ the **modulus** and $u$ the **unit factor**. It is the algebraic member of the polar decompositions of $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$. It uses only the norm, the conjugate and a square root, and chooses no coordinate on the unit factor. It is the split companion of *Modulus–Unit Polar Decomposition of Complex Numbers*.
 
-The norm of $\mathbb{C}_{\mathrm{spl}}$ is indefinite of signature $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of invertibles is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.
+The norm of $\mathbb{C}_{\mathrm{spl}}$ is indefinite of inertia $(1,1)$. Three consequences organise the article. The modulus is the square root of an absolute value, so it is a positive scale on the invertible set and it vanishes on the null cone. The unit factor has norm $+1$ in one regime and $-1$ in the other, so a single decomposition never straddles the two regimes. The unit set has four connected components, each a branch homeomorphic to a line, so the group of invertibles is non-compact and its maximal compact subgroup is the four-element group $\{\pm1,\pm j\}$, not a circle.
 
 The article defines the norm and the two regimes (§*The Two Factors*), proves existence and uniqueness (§*Existence and Uniqueness*), describes the group of invertibles and its maximal compact subgroup (§*The Group of Invertibles and the Unit Set*), records the two axes (§*The Two Axes*), gives the matrix picture (§*The Matrix Picture*), computes examples (§*Worked Examples*) and compares the family (§*The Other Algebras*).
 
@@ -26,7 +26,7 @@ $$
 \langle Q\rangle_{*} = Q\bar{Q} = (q+jq')(q-jq') = q^2 - q'^2 .
 $$
 
-It is a quadratic form of signature $(1,1)$, multiplicative under multiplication of the algebra,
+It is a quadratic form of inertia $(1,1)$, multiplicative under multiplication of the algebra,
 
 $$
 \langle QB\rangle_{*} = \langle Q\rangle_{*}\langle B\rangle_{*},
@@ -184,16 +184,16 @@ the imaginary part vanishes when $qq' = 0$. The solutions are listed in the foll
 
 The trigonometric row is empty: $\mathbb{C}_{\mathrm{spl}}$ has no square root of $-1$. The parabolic row is degenerate: the only square-zero element is $0$, and $\exp(0)=1$. The hyperbolic row has four roots. The roots $\pm1$ generate the positive real scale $\exp(t)$, and the roots $\pm j$ generate the future branch $\exp(tj)=\cosh t+j\sinh t$ of the unit hyperbola; the past branch is reached by multiplying by $-1$. This is the exact exchange of the complex case, where $-1$ has the two roots $\pm i$ and $+1$ has the two roots $\pm1$; the split algebra moves the circle to the hyperbola and the compact generator to a non-compact one.
 
-### Position and Signature
+### Position and Inertia
 
 The two independent dichotomies of the family, position with respect to conjugation and the sign of the square of the direction, place the split unit factor in a slot that no definite algebra occupies.
 
 | algebra | Hermitian direction | anti-Hermitian direction | unit factor |
 |---|---|---|---|
-| $\mathbb{C}$ | $\nu = \pm1$, $\nu^2 = +1$: the scale | $\nu = \pm i$, $\nu^2 = -1$ | anti-Hermitian, signature $-1$: the circle |
-| $\mathbb{C}_{\mathrm{spl}}$ | $\nu = \pm1$, $\nu^2 = +1$: the scale | $\nu = \pm j$, $\nu^2 = +1$ | anti-Hermitian, signature $+1$: the hyperbola |
+| $\mathbb{C}$ | $\nu = \pm1$, $\nu^2 = +1$: the scale | $\nu = \pm i$, $\nu^2 = -1$ | anti-Hermitian, sign $-1$: the circle |
+| $\mathbb{C}_{\mathrm{spl}}$ | $\nu = \pm1$, $\nu^2 = +1$: the scale | $\nu = \pm j$, $\nu^2 = +1$ | anti-Hermitian, sign $+1$: the hyperbola |
 
-In $\mathbb{C}_{\mathrm{spl}}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic signature. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every group of invertibles is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.
+In $\mathbb{C}_{\mathrm{spl}}$ the generator $j$ is anti-Hermitian and has square $+1$, so the unit factor is the exponential of an anti-Hermitian direction of hyperbolic inertia. In a definite algebra every anti-Hermitian direction has square $-1$, so every unit factor there is trigonometric and every group of invertibles is compact. The discrete sign $\epsilon$ is not an exponential, because the image of the exponential is connected; it is the component label of the unit factor.
 
 ## The Matrix Picture
 
@@ -346,7 +346,7 @@ Both axes are definite: the real axis has positive norm, the split-imaginary axi
 | $\mathbb{C}_{\mathrm{spl}}$ | the split-complex algebra, basis $1$, $j$, $j^2=+1$ |
 | $Q = q+jq'$ | a split-complex number, $q$ and $q'$ real |
 | $\bar Q = q-jq'$ | the split-complex conjugate |
-| $\langle Q\rangle_{*} = Q\bar Q = q^2-q'^2$ | the norm, indefinite of signature $(1,1)$ |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2-q'^2$ | the norm, indefinite of inertia $(1,1)$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | the idempotents, $Q = Q_+\Pi_++Q_-\Pi_-$ |
 | $Q_\pm = q\pm q'$ | the idempotent coordinates |
 | $r = \sqrt{\lvert \langle Q\rangle_{*}\rvert} = \sqrt{\lvert Q_+Q_-\rvert}$ | the modulus, a positive real |
@@ -367,6 +367,6 @@ Both axes are definite: the real axis has positive norm, the split-imaginary axi
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the polar form of split-complex numbers and the hyperbola as the unit locus.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the split-complex algebra, its idempotents and its zero divisors.
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for the orthogonal groups, the circle and the Lorentz group of the plane.
-- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for norms of arbitrary signature and the connected components of their isometry groups.
+- F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for norms of arbitrary inertia and the connected components of their isometry groups.
 - John G. Ratcliffe, *Foundations of Hyperbolic Manifolds* (Springer, Graduate Texts in Mathematics 149, 2nd ed. 2006), for hyperbolic geometry, its isometry groups and the parametrisation by rapidity.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for indefinite quadratic forms, their isotropic cones and their level sets.

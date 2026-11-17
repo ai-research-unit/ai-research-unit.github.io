@@ -14,7 +14,7 @@ The article proves the dimension and the smoothness, exhibits the ruling and the
 
 **Theorem (the cone).** $\mathcal N$ is a closed cone of real dimension three, with apex the origin, and it is a smooth three-dimensional submanifold away from the apex.
 
-*Proof.* It is the zero set of the continuous function $P$, closed, and stable under the real scalars since $P$ is homogeneous of degree two. Its dimension is three because $P$ is a non-zero quadratic form of signature $(1,3)$ whose zero set is the classical null cone. The gradient is $\nabla P=2(q_t,-\vec q)$, which vanishes only at the origin; by the implicit function theorem the cone is smooth wherever the gradient does not vanish, and the tangent space at a point is the hyperplane $P$-orthogonal to that point.
+*Proof.* It is the zero set of the continuous function $P$, closed, and stable under the real scalars since $P$ is homogeneous of degree two. Its dimension is three because $P$ is a non-zero quadratic form of inertia $(1,3)$ whose zero set is the classical null cone. The gradient is $\nabla P=2(q_t,-\vec q)$, which vanishes only at the origin; by the implicit function theorem the cone is smooth wherever the gradient does not vanish, and the tangent space at a point is the hyperplane $P$-orthogonal to that point.
 
 **Proposition (the apex is the only singularity).** The cone is not a manifold at the origin: every neighbourhood of $0$ in $\mathcal N$ has the homotopy type of a pair of two-spheres and not of a ball.
 

@@ -634,7 +634,7 @@ $$
 \lvert Q_+\rvert,\ \lvert Q_+\rvert,\ \lvert Q_-\rvert,\ \lvert Q_-\rvert,
 $$
 
-each repeated twice, as the regular representation of a complex scalar repeats its modulus twice. **The repetition is the signature of the block diagonal form, and it is not the repetition of the biquaternion element**, whose two weights are distinct in general. The duo-complex operator is a single $2\times2$ complex block and has no repetition.
+each repeated twice, as the regular representation of a complex scalar repeats its modulus twice. **The repetition is the inertia of the block diagonal form, and it is not the repetition of the biquaternion element**, whose two weights are distinct in general. The duo-complex operator is a single $2\times2$ complex block and has no repetition.
 
 ### The Polar Decomposition
 
@@ -660,7 +660,7 @@ This is the **polar decomposition** of $A$. The SVD is finer than the polar deco
 
 **The weights are not multiplicative.** The singular values of a product are not, in general, the products of the singular values. The largest weight is only submultiplicative, and the second weight has no product rule: the two weights of $AB$ are the square roots of the eigenvalues of $B^{\dagger}A^{\dagger}AB$, which mixes the two factors and is not the product of the two positive operators.
 
-**The determinant is multiplicative.** The product of the two weights is, because the determinant is:
+**The determinant of the matrix is multiplicative.** The product of the two weights is, because the determinant is:
 
 $$
 \sigma_1(AB)\sigma_2(AB)=\lvert\det(AB)\rvert=\lvert\det A\rvert\,\lvert\det B\rvert=\sigma_1(A)\sigma_2(A)\sigma_1(B)\sigma_2(B).

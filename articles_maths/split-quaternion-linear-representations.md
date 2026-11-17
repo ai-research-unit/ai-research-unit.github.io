@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article classifies the finite-dimensional real representations of the split-quaternion algebra, proves that the algebra is semisimple and has exactly one irreducible representation up to equivalence, computes its representation ring, relates the algebra's representations to the representations of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ and to the double cover of the Lorentz group of signature $(2,1)$, and compares the result with the quaternion case.
+This article classifies the finite-dimensional real representations of the split-quaternion algebra, proves that the algebra is semisimple and has exactly one irreducible representation up to equivalence, computes its representation ring, relates the algebra's representations to the representations of the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ and to the double cover of the Lorentz group of inertia $(2,1)$, and compares the result with the quaternion case.
 
 The split-quaternion algebra, its matrix model $\mathsf{M}_2$, its idempotents $\tilde\pi_{1,2}$, its vector subspace $V$ and its simplicity are assumed from *Split-Quaternion Algebra*. The defining module and the irreducibility of the defining representation are assumed from *Split-Quaternion Matrix Element Representations*, §*The Defining Module*. The matrix algebra $M_2(\mathbb{R})$, its matrix units and its modules are assumed from *Matrix Algebras*; the highest-weight classification of the finite-dimensional $\mathrm{SL}_2$-modules is assumed from *Representations of Lie Algebras*, and the tensor conventions of this category for the comparison come from *Quaternion Linear Representations*. The double cover is stated here and proved in *Split-Quaternion Rotations and the Lorentz Group*; the homogeneous spaces are treated in *Split-Quaternions and Hyperbolic Geometry*. Nothing physical is invoked.
 
@@ -165,7 +165,7 @@ sends a module $M$ to the same space with the action $\vec q \cdot v = [\vec q, 
 
 **Remark.** The relation between the two representation theories is the usual one for an enveloping algebra: $\mathbb{H}_{\mathrm{spl}}$ is the quotient of the universal enveloping algebra $\mathrm{U}(\mathrm{SL}_2(\mathbb{R}))$ by the annihilator of its two-dimensional irreducible module, so a $\mathrm{U}(\mathrm{SL}_2)$-module descends to $\mathbb{H}_{\mathrm{spl}}$ exactly when it is a sum of copies of that module. The enveloping algebra itself is infinite-dimensional, by *Universal Enveloping Algebras*, and its representation theory is strictly richer.
 
-## The Double Cover of the Lorentz Group of Signature $(2,1)$
+## The Double Cover of the Lorentz Group of Inertia $(2,1)$
 
 **Theorem (The Double Cover).** The group of norm-one split-quaternions is
 
@@ -179,7 +179,7 @@ $$
 \mathrm{SL}_2(\mathbb{R}) \longrightarrow \mathrm{SO}^{+}(2,1)
 $$
 
-onto the identity component of the Lorentz group of the signature-$(2,1)$ form, with kernel $\{\pm 1\}$; the map is therefore a double cover.
+onto the identity component of the Lorentz group of the inertia-$(2,1)$ form, with kernel $\{\pm 1\}$; the map is therefore a double cover.
 
 **Proof.** The identification of $U$ with $\mathrm{SL}_2(\mathbb{R})$ is (*Split-Quaternion Norm and Invertibility*, §*The Group of Invertibles*); the adjoint action preserves the form $\langle\cdot\rangle_{\natural}$ on $V$ by multiplicativity, and the remaining statements are proved in *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*.
 

@@ -34,7 +34,7 @@ It defers the exponential of the line to *The Exponential of $\operatorname{Skew
 
 **Proof.** $J^{2}=-I$ and $\operatorname{tr}I=2$.
 
-**Corollary.** The antisymmetric line is the negative definite direction of the trace form on $M_2(\mathbb{R})$, of signature $(3,1)$.
+**Corollary.** The antisymmetric line is the negative definite direction of the trace form on $M_2(\mathbb{R})$, of inertia $(3,1)$.
 
 **Proof.** The form is $-2c^{2}$ at $cJ$, and the symmetric half is positive definite by *The Two Halves as Orthogonal Complements at $n=2$*.
 
@@ -104,7 +104,7 @@ It defers the exponential of the line to *The Exponential of $\operatorname{Skew
 
 ## Summary
 
-$\operatorname{Skew}_2(\mathbb{R})$ is the line $\mathbb{R}J$ with $J^{2}=-I$, an abelian Lie algebra of dimension one, which is $\mathfrak{so}(2)$. Its Killing form vanishes because the bracket does, and its trace form is the single negative number $-2$, which makes it the timelike direction of the trace form of signature $(3,1)$.
+$\operatorname{Skew}_2(\mathbb{R})$ is the line $\mathbb{R}J$ with $J^{2}=-I$, an abelian Lie algebra of dimension one, which is $\mathfrak{so}(2)$. Its Killing form vanishes because the bracket does, and its trace form is the single negative number $-2$, which makes it the timelike direction of the trace form of inertia $(3,1)$.
 
 The universal enveloping algebra is $\mathbb{R}[J]/(J^{2}+1)=\mathbb{C}$, the centraliser of $J$ is the copy of $\mathbb{C}$ spanned by $I$ and $J$, and the line is not an ideal of $\mathfrak{gl}_2$ since $[\sigma_{3},J]=2\sigma_{1}$ is symmetric. The bracket of two traceless symmetric matrices is a multiple of $J$ given by a cross product, with the value $J$ on the orthonormal Pauli pair and the trace pairing $-2$.
 
@@ -125,4 +125,4 @@ The universal enveloping algebra is $\mathbb{R}[J]/(J^{2}+1)=\mathbb{C}$, the ce
 - John Stillwell, *Naive Lie Theory* (Springer, 2008), for $\mathfrak{so}(2)$ and the rotation group.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$](the-two-halves-over-r-symmetric-and-antisymmetric-at-n-2.html), for the two halves and their dimensions.
 - [The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$ at $n=2$](the-four-multiplication-tables-ss-sk-ks-kk-at-n-2.html), for the products involving $J$.
-- [The Two Halves as Orthogonal Complements at $n=2$](the-two-halves-as-orthogonal-complements-at-n-2.html), for the trace form and its signature.
+- [The Two Halves as Orthogonal Complements at $n=2$](the-two-halves-as-orthogonal-complements-at-n-2.html), for the trace form and its inertia.

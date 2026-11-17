@@ -14,7 +14,7 @@ The chain decides what each level can see. The **product** is the finest object:
 
 Two facts organise the article. First, the four products have the **same value set** on each subspace, because the two conjugations that distinguish them preserve every subspace of the list; the four differ in the structure they leave on the value, not in where they send a pair. Second, the symmetrisation and the bracket close on more subspaces than the product; the symmetrisation closes on the same subspaces for all four products, while the bracket closure depends on the product, and the Jordan and Jacobi identities decide which closures are algebras. The result is a small table of algebras, carried by six subspaces and four products, and it is stated in $\S$*The Four General Products* and justified subspace by subspace.
 
-The article assumes the algebra and the conjugations of *The Biquaternion Algebra* and the subspaces, their bases and dimensions, and the coordinate blocks of *Subspaces and Decompositions*. The products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*; the forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the two halves of a product are *Symmetric and Antisymmetric Decomposition of the Four General Products*. None of that is restated. What the article adds is the reading of the chain on the six subspaces, the common value set, the collapse patterns, the real and imaginary parts of the restrictions, the signatures, and the separation the subspaces impose on the four norms. The physical interpretation of the two sectors is deferred to *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and is recalled only in $\S$*The Material Interpretation*. The article replaces the three earlier articles that treated the four general products, the four forms and the four algebraic norms on the remarkable subspaces separately.
+The article assumes the algebra and the conjugations of *The Biquaternion Algebra* and the subspaces, their bases and dimensions, and the coordinate blocks of *Subspaces and Decompositions*. The products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*; the forms and the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the two halves of a product are *Symmetric and Antisymmetric Decomposition of the Four General Products*. None of that is restated. What the article adds is the reading of the chain on the six subspaces, the common value set, the collapse patterns, the real and imaginary parts of the restrictions, the inertias, and the separation the subspaces impose on the four norms. The physical interpretation of the two sectors is deferred to *The Informational Sector: States, Observables and Probability* and *The Material Sector: Four-Vectors, Interval and Lorentz Action*, and is recalled only in $\S$*The Material Interpretation*. The article replaces the three earlier articles that treated the four general products, the four forms and the four algebraic norms on the remarkable subspaces separately.
 
 ## Notational Conventions
 
@@ -85,7 +85,7 @@ The four forms are collected in one table.
 | $(\mathrm{id},{}^{*})$ | $f_{\mathrm{pl}*}$ | $\langle\cdot,\cdot\rangle_{*}$ | general plain sesquilinear, Hermitian | $\langle\cdot\rangle_{*}$ |
 | $({}^{\natural},{}^{*})$ | $f_{\natural*}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | general quaternionic sesquilinear, Krein | $\langle\cdot\rangle_{\natural*}$ |
 
-For a complex-valued form $\varphi$ on a real subspace $U$ the real and imaginary parts are $g=\operatorname{Re}\varphi$ and $\sigma=\operatorname{Im}\varphi$, so that $\varphi=g+i\sigma$; the letter $\omega$ is used for the imaginary part when it is alternating. The **signature** over $\mathbb{R}$ is written $(p,q)$, with $p$ positive and $q$ negative squares. The **Gram matrix** of a restriction is taken in the complex basis of the subspace, that is $(e_t)$ on the centre, $(\vec e_x,\vec e_y,\vec e_z)$ on the vector subspace and the real bases of the table on the four real-type subspaces. The **null set** of a form on $U$ is the set of $\tilde Q\in U$ with $\varphi(\tilde Q,\tilde Q)=0$. A form is **non-degenerate** on $U$ when $\varphi(\tilde Q_1,\tilde Q_2)=0$ for all $\tilde Q_2\in U$ forces $\tilde Q_1=0$.
+For a complex-valued form $\varphi$ on a real subspace $U$ the real and imaginary parts are $g=\operatorname{Re}\varphi$ and $\sigma=\operatorname{Im}\varphi$, so that $\varphi=g+i\sigma$; the letter $\omega$ is used for the imaginary part when it is alternating. The **inertia** over $\mathbb{R}$ is written $(p,q)$, with $p$ positive and $q$ negative squares. The **Gram matrix** of a restriction is taken in the complex basis of the subspace, that is $(e_t)$ on the centre, $(\vec e_x,\vec e_y,\vec e_z)$ on the vector subspace and the real bases of the table on the four real-type subspaces. The **null set** of a form on $U$ is the set of $\tilde Q\in U$ with $\varphi(\tilde Q,\tilde Q)=0$. A form is **non-degenerate** on $U$ when $\varphi(\tilde Q_1,\tilde Q_2)=0$ for all $\tilde Q_2\in U$ forces $\tilde Q_1=0$.
 
 ## The Four General Products
 
@@ -220,7 +220,7 @@ and $\omega_{\natural*}$ is the corresponding object of the quaternionic family.
 
 ## The Four Algebraic Norms
 
-**The diagonal.** The restriction of an algebraic norm to a subspace $U$ is the ambient norm read on the elements of $U$, and it is the diagonal of the restricted form, $\langle\tilde Q\rangle=\varphi(\tilde Q,\tilde Q)$. On the four real-type subspaces the form is real and the norm recovers it by polarisation; on the two complex subspaces the norm is complex and the polarisation recovers the bilinear forms but gives only the real part of the sesquilinear ones. The signatures below are the signatures over $\mathbb{R}$ of the real quadratic form obtained by realifying $U$; on the two complex subspaces they are the signatures of the real parts of the complex norms.
+**The diagonal.** The restriction of an algebraic norm to a subspace $U$ is the ambient norm read on the elements of $U$, and it is the diagonal of the restricted form, $\langle\tilde Q\rangle=\varphi(\tilde Q,\tilde Q)$. On the four real-type subspaces the form is real and the norm recovers it by polarisation; on the two complex subspaces the norm is complex and the polarisation recovers the bilinear forms but gives only the real part of the sesquilinear ones. The inertias below are the inertias over $\mathbb{R}$ of the real quadratic form obtained by realifying $U$; on the two complex subspaces they are the inertias of the real parts of the complex norms.
 
 The values are these, in the coordinates of each subspace.
 
@@ -233,7 +233,7 @@ The values are these, in the coordinates of each subspace.
 | $\mathbb{B}_{\Psi}$ | $a_te_t+i\vec p$ | $a_t^{2}+\lvert\vec p\rvert^{2}$ | $a_t^{2}+\lvert\vec p\rvert^{2}$ | $a_t^{2}-\lvert\vec p\rvert^{2}$ | $a_t^{2}-\lvert\vec p\rvert^{2}$ |
 | $\mathbb{B}_{\Phi}$ | $ib_te_t+\vec q$ | $-b_t^{2}-\lvert\vec q\rvert^{2}$ | $b_t^{2}+\lvert\vec q\rvert^{2}$ | $-b_t^{2}+\lvert\vec q\rvert^{2}$ | $b_t^{2}-\lvert\vec q\rvert^{2}$ |
 
-The signatures are these.
+The inertias are these.
 
 | subspace | plain | Hermitian | quaternionic | Krein |
 |---|---|---|---|---|
@@ -244,7 +244,7 @@ The signatures are these.
 | $\mathbb{B}_{\Psi}$ | $(4,0)$ | $(4,0)$ | $(1,3)$ | $(1,3)$ |
 | $\mathbb{B}_{\Phi}$ | $(0,4)$ | $(4,0)$ | $(3,1)$ | $(1,3)$ |
 
-**The collapses.** The four norms collapse on every subspace, to two functions or to two pairs of opposites, and the pattern of the collapse is the signature pattern. On the centre $\langle\cdot\rangle=\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural*}$; on the quaternion subspace $\langle\cdot\rangle=\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural}$; on the anti-quaternion subspace $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural}$; on the vector subspace $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural*}$; on $\mathbb{B}_{\Psi}$ $\langle\cdot\rangle=\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{\natural*}$; on $\mathbb{B}_{\Phi}$ $\langle\cdot\rangle=-\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{\natural*}$. The collapses are not an accident of the coordinates: they are the fixed- and anti-fixed-space conditions of the four conjugations read on the norms. The signatures are the record of the signs, and the definiteness of each norm is the record of the signatures.
+**The collapses.** The four norms collapse on every subspace, to two functions or to two pairs of opposites, and the pattern of the collapse is the inertia pattern. On the centre $\langle\cdot\rangle=\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural*}$; on the quaternion subspace $\langle\cdot\rangle=\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}=\langle\cdot\rangle_{\natural}$; on the anti-quaternion subspace $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural}$; on the vector subspace $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural*}$; on $\mathbb{B}_{\Psi}$ $\langle\cdot\rangle=\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}=\langle\cdot\rangle_{\natural*}$; on $\mathbb{B}_{\Phi}$ $\langle\cdot\rangle=-\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{\natural*}$. The collapses are not an accident of the coordinates: they are the fixed- and anti-fixed-space conditions of the four conjugations read on the norms. The inertias are the record of the signs, and the definiteness of each norm is the record of the inertias.
 
 ## The Centre Subspace
 
@@ -301,7 +301,7 @@ AC=(ac-bd)+i(ad+bc),\qquad
 A\overline{C}=(ac+bd)+i(bc-ad).
 $$
 
-The first has a real part of signature $(1,1)$ and an imaginary part $\sigma_{\mathrm{pl}}=\sigma_{\natural}=ad+bc$, symmetric and of rank $2$; the second has a positive definite real part of signature $(2,0)$ and an imaginary part $\omega_{*}=\omega_{\natural*}=bc-ad$, alternating, of rank $2$. In the complex basis $(e_t)$ the Gram matrix of each of the four is the single entry
+The first has a real part of inertia $(1,1)$ and an imaginary part $\sigma_{\mathrm{pl}}=\sigma_{\natural}=ad+bc$, symmetric and of rank $2$; the second has a positive definite real part of inertia $(2,0)$ and an imaginary part $\omega_{*}=\omega_{\natural*}=bc-ad$, alternating, of rank $2$. In the complex basis $(e_t)$ the Gram matrix of each of the four is the single entry
 
 $$
 \langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural}=\langle\cdot,\cdot\rangle_{*}=\langle\cdot,\cdot\rangle_{\natural*}=(1),
@@ -316,7 +316,7 @@ g_{*}=g_{\natural*}=\mathrm I_2,\qquad
 \omega_{*}=\omega_{\natural*}=\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}.
 $$
 
-The single entry $(1)$ and the pair $(g,\sigma)$ carry the same information, the second being the first with its real and imaginary parts separated; the two real parts have signatures $(1,1)$ and $(2,0)$, which the complex matrix cannot show. The alternating form $\omega$ is non-degenerate, of rank $2$, and on the pair of real basis vectors it takes the value $\omega(e_t,ie_t)=-1$.
+The single entry $(1)$ and the pair $(g,\sigma)$ carry the same information, the second being the first with its real and imaginary parts separated; the two real parts have inertias $(1,1)$ and $(2,0)$, which the complex matrix cannot show. The alternating form $\omega$ is non-degenerate, of rank $2$, and on the pair of real basis vectors it takes the value $\omega(e_t,ie_t)=-1$.
 
 **The null set of each of the four on the centre is the origin alone.** The two bilinear forms vanish when $A^{2}=0$, and the centre has no zero divisors, so $A=0$; the two sesquilinear forms vanish when $\lvert A\rvert^{2}=0$, which is again $A=0$. The ambient null sets, the complex cone of the plain form and the zero-divisor cone of the quaternionic form, meet the centre in the origin alone.
 
@@ -329,7 +329,7 @@ $$
 \langle\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{\natural*}=\lvert A\rvert^{2}.
 $$
 
-The two bilinear norms coincide and are the complex square; the two sesquilinear norms coincide and are the modulus square. Their signatures over $\mathbb{R}$ are $(1,1)$ and $(2,0)$ respectively, the same as the real parts of the forms. The norm $\langle\cdot\rangle_{*}$ is definite and $\langle\cdot\rangle$ is indefinite; the null set of the first is the origin, and the real null cone of the second is the pair of lines $\mathbb{R}(e_t\pm ie_t)$, which is not the complex null set, the origin.
+The two bilinear norms coincide and are the complex square; the two sesquilinear norms coincide and are the modulus square. Their inertias over $\mathbb{R}$ are $(1,1)$ and $(2,0)$ respectively, the same as the real parts of the forms. The norm $\langle\cdot\rangle_{*}$ is definite and $\langle\cdot\rangle$ is indefinite; the null set of the first is the origin, and the real null cone of the second is the pair of lines $\mathbb{R}(e_t\pm ie_t)$, which is not the complex null set, the origin.
 
 ## The Vector Subspace
 
@@ -410,7 +410,7 @@ $$
 
 so that $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural}$ and $\langle\cdot,\cdot\rangle_{\natural*}=-\langle\cdot,\cdot\rangle_{*}$: the pair of bilinear forms is one complex symmetric form and its negative, and the pair of sesquilinear forms one Hermitian form and its negative.
 
-Writing $P_{1,k}=p_k+iq_k$ and $P_{2,k}=r_k+is_k$ with real coordinates, the real part of the Hermitian form is the positive definite sum $g_{*}=\sum_k(p_kr_k+q_ks_k)$, of signature $(6,0)$, and its imaginary part is $\omega_{*}=\sum_k(q_kr_k-p_ks_k)$, alternating and of rank $6$. In the complex basis $(\vec e_x,\vec e_y,\vec e_z)$ the Gram matrices are
+Writing $P_{1,k}=p_k+iq_k$ and $P_{2,k}=r_k+is_k$ with real coordinates, the real part of the Hermitian form is the positive definite sum $g_{*}=\sum_k(p_kr_k+q_ks_k)$, of inertia $(6,0)$, and its imaginary part is $\omega_{*}=\sum_k(q_kr_k-p_ks_k)$, alternating and of rank $6$. In the complex basis $(\vec e_x,\vec e_y,\vec e_z)$ the Gram matrices are
 
 $$
 \langle\cdot,\cdot\rangle=\langle\cdot,\cdot\rangle_{\natural*}=-\mathrm I_3,\qquad \langle\cdot,\cdot\rangle_{\natural}=\langle\cdot,\cdot\rangle_{*}=\mathrm I_3,
@@ -423,7 +423,7 @@ g_{*}=\mathrm I_6,\qquad
 \omega_{*}=\begin{pmatrix}0&-1&0&0&0&0\\ 1&0&0&0&0&0\\ 0&0&0&-1&0&0\\ 0&0&1&0&0&0\\ 0&0&0&0&0&-1\\ 0&0&0&0&1&0\end{pmatrix},
 $$
 
-of ranks $6$ and $6$. The signatures of the real parts are $(3,3)$ for the two bilinear forms, $(6,0)$ for the Hermitian form and $(0,6)$ for the Krein form.
+of ranks $6$ and $6$. The inertias of the real parts are $(3,3)$ for the two bilinear forms, $(6,0)$ for the Hermitian form and $(0,6)$ for the Krein form.
 
 **The null sets on the vector subspace are two cones and two origins.** The two bilinear forms vanish on the complex cone $\sum_kP_k^{2}=0$, of real dimension four, the zero divisors of the vector subspace; the two sesquilinear forms vanish when $\sum_k\lvert P_k\rvert^{2}=0$, which is $P=0$. So the two bilinear forms have a genuine cone on the vector subspace while the two sesquilinear forms have none, exactly in reverse of the centre.
 
@@ -438,7 +438,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=-\sum_k\lvert P_k\rvert^{2},
 $$
 
-so that $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural*}$. The signatures are $(3,3)$, $(6,0)$, $(3,3)$ and $(0,6)$ for $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{\natural*}$ in that order. The two bilinear norms are complex-valued and indefinite; the Hermitian norm is positive definite and the Krein norm negative definite. The vector subspace is thus the subspace on which the two sesquilinear norms are definite and the two bilinear ones are not, the exact reverse of the centre.
+so that $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{*}=-\langle\cdot\rangle_{\natural*}$. The inertias are $(3,3)$, $(6,0)$, $(3,3)$ and $(0,6)$ for $\langle\cdot\rangle$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}$ and $\langle\cdot\rangle_{\natural*}$ in that order. The two bilinear norms are complex-valued and indefinite; the Hermitian norm is positive definite and the Krein norm negative definite. The vector subspace is thus the subspace on which the two sesquilinear norms are definite and the two bilinear ones are not, the exact reverse of the centre.
 
 ## The Quaternion Subspace
 
@@ -497,7 +497,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\sum_{\mu\in\{t,x,y,z\}}h_\mu k_\mu.
 $$
 
-They are the two classical real forms of the quaternion algebra: the **Minkowski form** $h_tk_t-(\vec h,\vec k)$ of signature $(1,3)$ and the **Euclidean form** $(\vec h,\vec k)_{\mathbb{R}^4}$ of signature $(4,0)$. All four are real-valued, so the imaginary part vanishes identically and the splitting of each form into real and imaginary parts is the form itself. The Gram matrices are the diagonal matrices $\operatorname{diag}(1,-1,-1,-1)$ for the plain and the Krein forms and $\mathrm I_4$ for the Hermitian and the quaternionic forms, both of full rank, so all four restrictions are non-degenerate.
+They are the two classical real forms of the quaternion algebra: the **Minkowski form** $h_tk_t-(\vec h,\vec k)$ of inertia $(1,3)$ and the **Euclidean form** $(\vec h,\vec k)_{\mathbb{R}^4}$ of inertia $(4,0)$. All four are real-valued, so the imaginary part vanishes identically and the splitting of each form into real and imaginary parts is the form itself. The Gram matrices are the diagonal matrices $\operatorname{diag}(1,-1,-1,-1)$ for the plain and the Krein forms and $\mathrm I_4$ for the Hermitian and the quaternionic forms, both of full rank, so all four restrictions are non-degenerate.
 
 **The null sets are one null cone and two origins.** The plain and the Krein forms vanish on the real null cone $h_t^{2}=\lvert\vec h\rvert^{2}$, of real dimension three; the Hermitian and the quaternionic forms vanish at the origin alone. This is the subspace on which the Minkowski form is the algebraic norm of the plain and the Krein forms, and the Euclidean form that of the Hermitian and the quaternionic forms.
 
@@ -510,7 +510,7 @@ $$
 \langle\tilde Q\rangle_{*}=\langle\tilde Q\rangle_{\natural}=\sum_{\mu\in\{t,x,y,z\}}h_\mu^{2}.
 $$
 
-The bilinear plain norm and the quaternionic sesquilinear norm coincide and are the Minkowski norm, of signature $(1,3)$; the plain sesquilinear and quaternionic bilinear norms coincide and are the Euclidean norm, of signature $(4,0)$. The first is indefinite and the second is positive definite; this is the one subspace on which the Euclidean algebraic norm is also the norm of a bilinear form, and the reason the quaternion subspace is the real quaternion algebra inside the biquaternion algebra.
+The bilinear plain norm and the quaternionic sesquilinear norm coincide and are the Minkowski norm, of inertia $(1,3)$; the plain sesquilinear and quaternionic bilinear norms coincide and are the Euclidean norm, of inertia $(4,0)$. The first is indefinite and the second is positive definite; this is the one subspace on which the Euclidean algebraic norm is also the norm of a bilinear form, and the reason the quaternion subspace is the real quaternion algebra inside the biquaternion algebra.
 
 ## The Anti-Quaternion Subspace
 
@@ -566,7 +566,7 @@ $$
 K(\tilde Q_1,\tilde Q_2)=h_tk_t-\sum_{j=1}^{3}h_jk_j,
 $$
 
-so that $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{*}$: each is the negative of the corresponding form on the quaternion subspace, the plain of the Krein and the quaternionic of the Hermitian, and the two sign changes are those of the translation by $i$. The signatures are $(3,1)$ for the plain form, $(4,0)$ for the Hermitian, $(0,4)$ for the quaternionic and $(1,3)$ for the Krein, and the Gram matrices are $\operatorname{diag}(-1,1,1,1)$, $\mathrm I_4$, $-\mathrm I_4$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank. All four are real-valued, so the imaginary part vanishes identically. The null sets are the real null cones of the plain and the Krein forms, of real dimension three, and the origins of the Hermitian and the quaternionic forms: the same pattern as the quaternion subspace, with the roles of the two signs exchanged.
+so that $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{*}$: each is the negative of the corresponding form on the quaternion subspace, the plain of the Krein and the quaternionic of the Hermitian, and the two sign changes are those of the translation by $i$. The inertias are $(3,1)$ for the plain form, $(4,0)$ for the Hermitian, $(0,4)$ for the quaternionic and $(1,3)$ for the Krein, and the Gram matrices are $\operatorname{diag}(-1,1,1,1)$, $\mathrm I_4$, $-\mathrm I_4$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank. All four are real-valued, so the imaginary part vanishes identically. The null sets are the real null cones of the plain and the Krein forms, of real dimension three, and the origins of the Hermitian and the quaternionic forms: the same pattern as the quaternion subspace, with the roles of the two signs exchanged.
 
 ### The Four Algebraic Norms
 
@@ -579,7 +579,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=h_t^{2}-\sum_{j=1}^{3}h_j^{2},
 $$
 
-with signatures $(3,1)$, $(4,0)$, $(0,4)$ and $(1,3)$ in that order. The bilinear norms are the negatives of those on the quaternion subspace, $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{*}$, while the sesquilinear ones are unchanged; the translation by $i$ changes the sign of the two bilinear norms and leaves the two sesquilinear ones. The Hermitian norm is positive definite, the quaternionic norm negative definite, and the other two indefinite.
+with inertias $(3,1)$, $(4,0)$, $(0,4)$ and $(1,3)$ in that order. The bilinear norms are the negatives of those on the quaternion subspace, $\langle\cdot\rangle=-\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{*}$, while the sesquilinear ones are unchanged; the translation by $i$ changes the sign of the two bilinear norms and leaves the two sesquilinear ones. The Hermitian norm is positive definite, the quaternionic norm negative definite, and the other two indefinite.
 
 ## The Hermitian Subspace
 
@@ -637,7 +637,7 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=a_tc_t-(\vec p,\vec q).
 $$
 
-They are the **Euclidean form** of signature $(4,0)$ and the **Minkowski form** of signature $(1,3)$. The collapse pairs each bilinear form with the sesquilinear form of the same family, the plain with the Hermitian and the quaternionic with the Krein; on the other subspaces the pairing is crossed or carries a sign. The reason is that on the Hermitian subspace the star of the second slot acts as the identity, since the coefficients are already real in the scalar slot and purely imaginary in the vector slots. All four are real-valued, so the imaginary part vanishes identically, and the Gram matrices are $\mathrm I_4$ for the plain and the Hermitian forms and $\operatorname{diag}(1,-1,-1,-1)$ for the quaternionic and the Krein forms, both of full rank. The null sets are the origin of the Euclidean pair, the plain and the Hermitian forms, and the null cone of the Minkowski pair, the quaternionic and the Krein forms, of real dimension three.
+They are the **Euclidean form** of inertia $(4,0)$ and the **Minkowski form** of inertia $(1,3)$. The collapse pairs each bilinear form with the sesquilinear form of the same family, the plain with the Hermitian and the quaternionic with the Krein; on the other subspaces the pairing is crossed or carries a sign. The reason is that on the Hermitian subspace the star of the second slot acts as the identity, since the coefficients are already real in the scalar slot and purely imaginary in the vector slots. All four are real-valued, so the imaginary part vanishes identically, and the Gram matrices are $\mathrm I_4$ for the plain and the Hermitian forms and $\operatorname{diag}(1,-1,-1,-1)$ for the quaternionic and the Krein forms, both of full rank. The null sets are the origin of the Euclidean pair, the plain and the Hermitian forms, and the null cone of the Minkowski pair, the quaternionic and the Krein forms, of real dimension three.
 
 ### The Four Algebraic Norms
 
@@ -648,7 +648,7 @@ $$
 \langle\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural*}=a_t^{2}-(\vec p,\vec p),
 $$
 
-of signatures $(4,0)$ and $(1,3)$ respectively. The Euclidean pair is positive definite and the Minkowski pair indefinite. These are the two classical forms of the Jordan algebra $H_{2}(\mathbb{C})$: the Euclidean norm and the Minkowski norm, and the two coincide with the corresponding forms on the subspace.
+of inertias $(4,0)$ and $(1,3)$ respectively. The Euclidean pair is positive definite and the Minkowski pair indefinite. These are the two classical forms of the Jordan algebra $H_{2}(\mathbb{C})$: the Euclidean norm and the Minkowski norm, and the two coincide with the corresponding forms on the subspace.
 
 ## The Anti-Hermitian Subspace
 
@@ -715,9 +715,9 @@ $$
 \langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=b_td_t-(\vec q,\vec r),
 $$
 
-with the two sign relations $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{*}$. The signatures are $(0,4)$ for the plain form, $(4,0)$ for the Hermitian, $(3,1)$ for the quaternionic and $(1,3)$ for the Krein, and the Gram matrices are $-\mathrm I_4$, $\mathrm I_4$, $\operatorname{diag}(-1,1,1,1)$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank. All four are real-valued, so the imaginary part vanishes identically. The null sets are the origins of the plain and the Hermitian forms and the null cones of the quaternionic and the Krein forms, of real dimension three.
+with the two sign relations $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{\natural*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{*}$. The inertias are $(0,4)$ for the plain form, $(4,0)$ for the Hermitian, $(3,1)$ for the quaternionic and $(1,3)$ for the Krein, and the Gram matrices are $-\mathrm I_4$, $\mathrm I_4$, $\operatorname{diag}(-1,1,1,1)$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank. All four are real-valued, so the imaginary part vanishes identically. The null sets are the origins of the plain and the Hermitian forms and the null cones of the quaternionic and the Krein forms, of real dimension three.
 
-**This is the material sector.** The four forms here are the two sesquilinear ones with their signs, $\langle\cdot,\cdot\rangle_{*}=b_t^{2}+(\vec q,\vec q)$ the **Euclidean square** of signature $(4,0)$ and $\langle\cdot,\cdot\rangle_{\natural*}=b_t^{2}-(\vec q,\vec q)$ of signature $(1,3)$, against the two bilinear ones $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{\natural*}$. The interval of the corpus is the general quaternionic bilinear norm $\langle\cdot\rangle_{\natural}=-b_t^{2}+(\vec q,\vec q)$, of signature $(3,1)$, and its negative is the Krein form; the pair of the material interpretation is the interval against the Euclidean square, and the null cone of the quaternionic norm against the definite Hermitian form. These are exactly the columns of the Hermitian and the quaternionic forms of the table above.
+**This is the material sector.** The four forms here are the two sesquilinear ones with their signs, $\langle\cdot,\cdot\rangle_{*}=b_t^{2}+(\vec q,\vec q)$ the **Euclidean square** of inertia $(4,0)$ and $\langle\cdot,\cdot\rangle_{\natural*}=b_t^{2}-(\vec q,\vec q)$ of inertia $(1,3)$, against the two bilinear ones $\langle\cdot,\cdot\rangle=-\langle\cdot,\cdot\rangle_{*}$ and $\langle\cdot,\cdot\rangle_{\natural}=-\langle\cdot,\cdot\rangle_{\natural*}$. The interval of the corpus is the general quaternionic bilinear norm $\langle\cdot\rangle_{\natural}=-b_t^{2}+(\vec q,\vec q)$, of inertia $(3,1)$, and its negative is the Krein form; the pair of the material interpretation is the interval against the Euclidean square, and the null cone of the quaternionic norm against the definite Hermitian form. These are exactly the columns of the Hermitian and the quaternionic forms of the table above.
 
 ### The Four Algebraic Norms
 
@@ -730,7 +730,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=b_t^{2}-(\vec q,\vec q),
 $$
 
-with signatures $(0,4)$, $(4,0)$, $(3,1)$ and $(1,3)$ in that order. The two bilinear norms are the negatives of those on the Hermitian subspace and the two sesquilinear ones agree with it: $\langle\cdot\rangle=-\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{\natural*}$, while $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ are unchanged. The Hermitian norm is positive definite, the plain norm negative definite, and the other two indefinite. The four values are the four norms of the material sector: the interval $\langle\cdot\rangle_{\natural}$, the Euclidean square $\langle\cdot\rangle_{*}$, and their negatives $\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle$.
+with inertias $(0,4)$, $(4,0)$, $(3,1)$ and $(1,3)$ in that order. The two bilinear norms are the negatives of those on the Hermitian subspace and the two sesquilinear ones agree with it: $\langle\cdot\rangle=-\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural}=-\langle\cdot\rangle_{\natural*}$, while $\langle\cdot\rangle_{*}$ and $\langle\cdot\rangle_{\natural*}$ are unchanged. The Hermitian norm is positive definite, the plain norm negative definite, and the other two indefinite. The four values are the four norms of the material sector: the interval $\langle\cdot\rangle_{\natural}$, the Euclidean square $\langle\cdot\rangle_{*}$, and their negatives $\langle\cdot\rangle_{\natural*}$ and $\langle\cdot\rangle$.
 
 ## The Null Sets
 
@@ -745,9 +745,9 @@ The null set of each form on each subspace is this.
 | $\mathbb{B}_{\Psi}$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ | the null cone, real dimension $3$ |
 | $\mathbb{B}_{\Phi}$ | $\{0\}$ | $\{0\}$ | the null cone, real dimension $3$ | the null cone, real dimension $3$ |
 
-The rule behind the table is one line: **off the centre a form has a complex null cone on a subspace exactly when the real part of its restriction is indefinite there**, and the signature table of $\S$*The Four Algebraic Norms* says which are. On the centre the complex zeros are trivial for all four forms even though the real part of the two bilinear forms is indefinite, and it is the real zeros of the real part that form the cone there; the two kinds of zero are separated in $\S$*The Realified Form on the Subspaces*. The count of forms with a complex null cone is none on the centre, two on the vector subspace, the bilinear pair of signature $(3,3)$, and two on each of the four real-type subspaces: the plain and the Krein forms on the quaternion subspace and on its imaginary translate, the quaternionic and the Krein forms on the two sectors.
+The rule behind the table is one line: **off the centre a form has a complex null cone on a subspace exactly when the real part of its restriction is indefinite there**, and the inertia table of $\S$*The Four Algebraic Norms* says which are. On the centre the complex zeros are trivial for all four forms even though the real part of the two bilinear forms is indefinite, and it is the real zeros of the real part that form the cone there; the two kinds of zero are separated in $\S$*The Realified Form on the Subspaces*. The count of forms with a complex null cone is none on the centre, two on the vector subspace, the bilinear pair of inertia $(3,3)$, and two on each of the four real-type subspaces: the plain and the Krein forms on the quaternion subspace and on its imaginary translate, the quaternionic and the Krein forms on the two sectors.
 
-Two columns of the table are constant and are the two theorems of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* read on the remarkable subspaces: **the Hermitian form is definite on all of them**, so its null set is the origin in each, and **it is the only form definite on all of them**, so each of the other three has a cone on some subspace. The collapses pair the columns, and the signatures in the table above are the record of which pairs are definite on which subspace.
+Two columns of the table are constant and are the two theorems of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* read on the remarkable subspaces: **the Hermitian form is definite on all of them**, so its null set is the origin in each, and **it is the only form definite on all of them**, so each of the other three has a cone on some subspace. The collapses pair the columns, and the inertias in the table above are the record of which pairs are definite on which subspace.
 
 **The ambient cones are cut by the subspaces.** The ambient null sets of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* are the complex cone of the plain form, the zero-divisor cone of the quaternionic form and the real cone of the Krein form, of real dimensions six, six and seven. The table above is what those cones become on the remarkable subspaces, and the two are different pictures: the ambient cones have real dimension six or seven, and the cones of the table have real dimension four on the vector subspace and real dimension three on the four real-type subspaces, because the equations $\sum_kP_k^{2}=0$ in three complex unknowns and $h_t^{2}=\lvert\vec h\rvert^{2}$ in four real unknowns have those dimensions. A subspace is not a small copy of the ambient space for a cone.
 
@@ -759,9 +759,9 @@ $$
 \mathrm{Isom}(U,g_{\mathrm{pl}})=\{S\in GL_{\mathbb{R}}(U):g_{\mathrm{pl}}(Su,Sv)=g_{\mathrm{pl}}(u,v)\ \text{for all }u,v\in U\}.
 $$
 
-It is the real orthogonal group of the signature of $g_{\mathrm{pl}}$ on $U$, and its real dimension is $n(n-1)/2$ for $n=\dim_{\mathbb{R}}U$. The signatures of the previous sections give the table.
+It is the real orthogonal group of the inertia of $g_{\mathrm{pl}}$ on $U$, and its real dimension is $n(n-1)/2$ for $n=\dim_{\mathbb{R}}U$. The inertias of the previous sections give the table.
 
-| subspace | signature of $g_{\mathrm{pl}}$ | isometry group | real dimension |
+| subspace | inertia of $g_{\mathrm{pl}}$ | isometry group | real dimension |
 |---|---|---|---|
 | $\mathbb{B}_{C}$ | $(1,1)$ | $O(1,1)$ | $1$ |
 | $\mathbb{B}_{V}$ | $(3,3)$ | $O(3,3)$ | $15$ |
@@ -770,15 +770,15 @@ It is the real orthogonal group of the signature of $g_{\mathrm{pl}}$ on $U$, an
 | $\mathbb{B}_{\Psi}$ | $(4,0)$ | $O(4)$ | $6$ |
 | $\mathbb{B}_{\Phi}$ | $(0,4)$ | $O(4)$ | $6$ |
 
-The same rows with the signatures of the Hermitian, the quaternionic and the Krein forms give the isometry groups of their real parts, since each of the four forms is non-degenerate on $U$ and its group depends on the signature alone.
+The same rows with the inertias of the Hermitian, the quaternionic and the Krein forms give the isometry groups of their real parts, since each of the four forms is non-degenerate on $U$ and its group depends on the inertia alone.
 
 **Remark (the real part against the complex form).** On the two complex subspaces the group preserving the complex plain form itself is the smaller complex orthogonal group, $O_1(\mathbb{C})$ on the centre and $O_3(\mathbb{C})$ on the vector subspace, of real dimensions $0$ and $6$; the real groups $O(1,1)$ and $O(3,3)$ of the table preserve only the real part and are larger. On the four real-type subspaces the plain form is real and the two groups coincide, and the rows $O(4)$ and $O(1,3)$ are real forms of the complex orthogonal group $O_4(\mathbb{C})$ of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*The Isometry Groups of the Four Forms*.
 
 ## The Realified Form on the Subspaces
 
-**The maximal definite subspaces.** The real part $g_{\mathrm{pl}}$ on the whole algebra has signature $(4,4)$, so its maximal positive definite and maximal negative definite dimensions are both $4$. The Hermitian subspace $\mathbb{B}_{\Psi}$, of real dimension $4$ and positive definite, is a **maximal positive definite subspace**, and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ a **maximal negative definite subspace**; neither can be enlarged while remaining definite, and the two are orthogonal complements. The centre is a hyperbolic plane, its signature $(1,1)$ being neither positive nor negative definite, and the quaternion and vector subspaces carry both signs.
+**The maximal definite subspaces.** The real part $g_{\mathrm{pl}}$ on the whole algebra has inertia $(4,4)$, so its maximal positive definite and maximal negative definite dimensions are both $4$. The Hermitian subspace $\mathbb{B}_{\Psi}$, of real dimension $4$ and positive definite, is a **maximal positive definite subspace**, and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ a **maximal negative definite subspace**; neither can be enlarged while remaining definite, and the two are orthogonal complements. The centre is a hyperbolic plane, its inertia $(1,1)$ being neither positive nor negative definite, and the quaternion and vector subspaces carry both signs.
 
-**The three orthogonal splittings.** The form is diagonal in the natural bases, so three pairs of complementary subspaces split the algebra orthogonally, the signatures adding to $(4,4)$ in each:
+**The three orthogonal splittings.** The form is diagonal in the natural bases, so three pairs of complementary subspaces split the algebra orthogonally, the inertias adding to $(4,4)$ in each:
 
 $$
 \boxed{\;\mathbb{B}=\mathbb{B}_{C}\perp\mathbb{B}_{V},\qquad
@@ -786,18 +786,18 @@ $$
 \mathbb{B}=\mathbb{B}_{\Psi}\perp\mathbb{B}_{\Phi}\;}
 $$
 
-of signatures $(1,1)\perp(3,3)$, $(1,3)\perp(3,1)$ and $(4,0)\perp(0,4)$. Only the third splits the realified form into a positive definite and a negative definite piece; in the first two both sides carry isotropic vectors. The two restricted forms of the third split are exchanged by the central scalar, $\langle i\tilde Q_1,i\tilde Q_2\rangle=-\langle\tilde Q_1,\tilde Q_2\rangle$.
+of inertias $(1,1)\perp(3,3)$, $(1,3)\perp(3,1)$ and $(4,0)\perp(0,4)$. Only the third splits the realified form into a positive definite and a negative definite piece; in the first two both sides carry isotropic vectors. The two restricted forms of the third split are exchanged by the central scalar, $\langle i\tilde Q_1,i\tilde Q_2\rangle=-\langle\tilde Q_1,\tilde Q_2\rangle$.
 
 **The real null cones of $g_{\mathrm{pl}}=\operatorname{Re}\langle\cdot,\cdot\rangle$.** On each of the four indefinite rows the real zeros of $g_{\mathrm{pl}}$ form a cone through the origin of real codimension one, and one null element on each row exhibits it.
 
-| subspace | signature | null element | real null cone, real dimension |
+| subspace | inertia | null element | real null cone, real dimension |
 |---|---|---|---|
 | $\mathbb{B}_{C}$ | $(1,1)$ | $e_t+ie_t$ | $1$, the two lines $\mathbb{R}(e_t\pm ie_t)$ |
 | $\mathbb{B}_{V}$ | $(3,3)$ | $\vec e_x+i\vec e_x$ | $5$ |
 | $\mathbb{B}_{H}$ | $(1,3)$ | $e_t+\vec e_x$ | $3$ |
 | $\mathbb{B}_{iH}$ | $(3,1)$ | $ie_t+i\vec e_x$ | $3$ |
 
-Each element is null because the real part of its value vanishes, $1-1$ on the centre and on the vector and quaternion subspaces, $-1+1$ on the anti-quaternion subspace. On the centre, of real dimension two, the cone is the pair of lines $\mathbb{R}(e_t\pm ie_t)$. The two definite rows, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, contribute no null element, so the isotropic rows are four and not six. These are the real zeros of $g_{\mathrm{pl}}$, and they are distinct from the complex null sets of the table above, which are the complex zeros of the plain form: on the four real-type subspaces the two agree, because there the plain form is real-valued, while on the centre and the vector subspace they do not — the complex null set of the plain form is the origin on the centre and the complex cone of real dimension $4$ on the vector subspace, against the two real lines and the cone of real dimension $5$ found here. On the vector subspace the cone $\sum_kp_k^2=\sum_kq_k^2$ contains the totally isotropic real plane $\mathrm{span}_{\mathbb{R}}\{\vec e_x+i\vec e_x,\vec e_y+i\vec e_y\}$, and the three elements $\vec e_k+i\vec e_k$ span a totally isotropic subspace of real dimension $3$, the maximum for signature $(3,3)$.
+Each element is null because the real part of its value vanishes, $1-1$ on the centre and on the vector and quaternion subspaces, $-1+1$ on the anti-quaternion subspace. On the centre, of real dimension two, the cone is the pair of lines $\mathbb{R}(e_t\pm ie_t)$. The two definite rows, $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, contribute no null element, so the isotropic rows are four and not six. These are the real zeros of $g_{\mathrm{pl}}$, and they are distinct from the complex null sets of the table above, which are the complex zeros of the plain form: on the four real-type subspaces the two agree, because there the plain form is real-valued, while on the centre and the vector subspace they do not — the complex null set of the plain form is the origin on the centre and the complex cone of real dimension $4$ on the vector subspace, against the two real lines and the cone of real dimension $5$ found here. On the vector subspace the cone $\sum_kp_k^2=\sum_kq_k^2$ contains the totally isotropic real plane $\mathrm{span}_{\mathbb{R}}\{\vec e_x+i\vec e_x,\vec e_y+i\vec e_y\}$, and the three elements $\vec e_k+i\vec e_k$ span a totally isotropic subspace of real dimension $3$, the maximum for inertia $(3,3)$.
 
 ## The Two Splits and the Two Interpretations
 
@@ -829,7 +829,7 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 
 **The forms.** All twenty-four restrictions are non-degenerate. Each form splits as $\varphi=g+i\sigma$, with $g$ real symmetric and $\sigma$ symmetric for the two bilinear forms, alternating for the two sesquilinear forms. The imaginary part vanishes on the four real-type subspaces and is non-degenerate on the two complex subspaces, of rank $2$ on the centre and rank $6$ on the vector subspace. The Kähler identity $\omega(\tilde Q_1,\tilde Q_2)=g(\tilde Q_1,i\tilde Q_2)$ holds for the two sesquilinear forms on the complex subspaces, and the companion identity $\sigma=-g(\cdot,i\cdot)$ for the two bilinear forms.
 
-**The norms.** The signatures over $\mathbb{R}$ are tabulated in $\S$*The Four Algebraic Norms*; the pattern is the one that separates the subspaces. Only the Hermitian norm is definite on every subspace; the plain norm is definite on the two sectors, the quaternionic on the quaternion subspace and its imaginary translate, and the Krein on the centre and the vector subspace. The four norms collapse to two on the centre, the quaternion subspace and the Hermitian subspace, and to two pairs of opposites on the vector subspace, the anti-quaternion subspace and the anti-Hermitian subspace; the collapse is the fixed- or anti-fixed-space condition of a conjugation read on the norm.
+**The norms.** The inertias over $\mathbb{R}$ are tabulated in $\S$*The Four Algebraic Norms*; the pattern is the one that separates the subspaces. Only the Hermitian norm is definite on every subspace; the plain norm is definite on the two sectors, the quaternionic on the quaternion subspace and its imaginary translate, and the Krein on the centre and the vector subspace. The four norms collapse to two on the centre, the quaternion subspace and the Hermitian subspace, and to two pairs of opposites on the vector subspace, the anti-quaternion subspace and the anti-Hermitian subspace; the collapse is the fixed- or anti-fixed-space condition of a conjugation read on the norm.
 
 **The separation.** The subspaces do not filter the four products into one scale. They expose, on six different subspaces, the four faces of one algebra: the field on the centre, the complex Lie algebra on the vector subspace, the real division algebra with both structures on the quaternion subspace, the module with no algebra on its imaginary translate, and the two sectors on which the symmetric and antisymmetric halves of the product find their richest expression.
 
@@ -845,7 +845,7 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 | $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{*}$, $\langle\cdot,\cdot\rangle_{\natural*}$ | the four forms: plain bilinear, quaternionic bilinear, plain sesquilinear or Hermitian, quaternionic sesquilinear or Krein |
 | $\langle\cdot\rangle$, $\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{*}$, $\langle\cdot\rangle_{\natural*}$ | the four algebraic norms, the four forms at two equal arguments |
 | $g$, $\sigma$, $\omega$ | the real part, the imaginary part, and the imaginary part when alternating |
-| $(p,q)$ | the signature over $\mathbb{R}$ of a real quadratic form |
+| $(p,q)$ | the inertia over $\mathbb{R}$ of a real quadratic form |
 
 ## Further Reading
 
@@ -856,6 +856,6 @@ So the corpus's four forms are, on the two complex subspaces, **four intervals a
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the coordinate blocks, the pairwise intersections, the sums and the three decompositions.
 - [The Sesquilinear Symmetrised Product](the-sesquilinear-symmetrised-product.html) and [The Sesquilinear Commutator](the-sesquilinear-commutator.html), for the plain reading's own halves.
 - [Conventions in the Biquaternion Universe](../articles_physics/algebra-and-element-conventions.html), for the convention of the four pairings, the four names and the pairs, and for the interpretations of the four on the algebra and on the material sector.
-- [The Four Products: Composition, Probability, Causality and Gauge](../articles_physics/the-four-products-composition-probability-causality-and-gauge.html), for the physical interpretations of the four forms and their signature table on the remarkable subspaces.
+- [The Four Products: Composition, Probability, Causality and Gauge](../articles_physics/the-four-products-composition-probability-causality-and-gauge.html), for the physical interpretations of the four forms and their inertia table on the remarkable subspaces.
 - [The Norm Defined by a Form](the-norm-defined-by-a-form.html) and [Hermitian Forms over Algebras and Norms](hermitian-forms-over-algebras-and-norms.html), for the passage from a form to its algebraic norm, and for the real part, the imaginary part and the alternating companion of a Hermitian form.
 

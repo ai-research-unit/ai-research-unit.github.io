@@ -144,7 +144,7 @@ because $(a \otimes b)(u \otimes v) = au \otimes bv$. The real representation is
 
 The two cases form the chain
 
-| algebra | dimension over $\mathbb{R}$ | regular matrix | determinant |
+| algebra | dimension over $\mathbb{R}$ | regular matrix | the determinant of the image |
 |---|---|---|---|
 | $\mathbb{R}$ | $1$ | $1 \times 1$ real, Cayley | $q$, the element itself |
 | $\mathbb{C}$ | $2$ | $2 \times 2$ real, Cayley | $\langle A\rangle_{*} = u^2+v^2$ |

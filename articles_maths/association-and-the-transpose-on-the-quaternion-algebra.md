@@ -4,13 +4,13 @@
 
 The quaternion product pairs with the scalar functional into one bilinear form, the **product form** $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$, and that form has a transpose calculus: every real-linear operator $T$ of $\mathbb{H}$ has a transpose $T^{\sim}$ defined by $\langle T\tilde q_1,\tilde q_2\rangle=\langle\tilde q_1,T^{\sim}\tilde q_2\rangle$, and the transposes of the one- and two-sided multiplications are computable in closed form. The form of the quaternion product is read in this article; the operators themselves are *Two-Sided Operators on the Quaternion Algebra*, below this article in this category, and *One-Sided Operators on the Quaternion Algebra*, below this article in this category; the enveloping algebra is *The Enveloping Operator Algebra of the Quaternion Algebra and the Bi-module Structure*, below this article in this category.
 
-The form is symmetric and indefinite of signature $(1,3)$. It is not the positive definite coordinate pairing, and the whole of the calculus below is the bookkeeping of that gap: the Gram matrix is the diagonal matrix of the signature, and the transpose of an operator is the operator's matrix conjugated by it.
+The form is symmetric and indefinite of inertia $(1,3)$. It is not the positive definite coordinate pairing, and the whole of the calculus below is the bookkeeping of that gap: the Gram matrix is the diagonal matrix of the inertia, and the transpose of an operator is the operator's matrix conjugated by it.
 
 ## The Plain Form
 
 **Definition.** The **product form** is $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$, the scalar part of the quaternion product, a bilinear form on $\mathbb{H}$.
 
-**Proposition.** $\mathrm B$ is symmetric, non-degenerate, and indefinite of signature $(1,3)$; in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its Gram matrix is
+**Proposition.** $\mathrm B$ is symmetric, non-degenerate, and indefinite of inertia $(1,3)$; in the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its Gram matrix is
 
 $$
 D=\operatorname{diag}(1,-1,-1,-1).
@@ -70,7 +70,7 @@ $$ \boxed{\; G^{\sim}=D\,G^{\mathsf T}D \;} .$$
 
 *Proof.* For all $\tilde q_1,\tilde q_2$, $\langle T\tilde q_1,\tilde q_2\rangle=(Gq_1)^{\mathsf T}Dq_2=q_1^{\mathsf T}G^{\mathsf T}Dq_2$ and $\langle\tilde q_1,T^{\sim}\tilde q_2\rangle=q_1^{\mathsf T}D(G^{\sim}q_2)=q_1^{\mathsf T}DG^{\sim}q_2$, where $q_1,q_2$ are the coordinate columns; equating the two for all $q_1,q_2$ gives $G^{\mathsf T}D=DG^{\sim}$, that is $G^{\sim}=D^{-1}G^{\mathsf T}D=D\,G^{\mathsf T}D$ because $D^{-1}=D= D^{\mathsf T}$.
 
-**Corollary.** The transpose matrix is the matrix transpose conjugated by the signature matrix; in particular the transposes of $L_{\tilde q_4}$ and $R_{\tilde q_4}$ are obtained by $L_{\tilde q_4}^{\sim}=D\,L_{\tilde q_4}^{\mathsf T}D=R_{\tilde q_4}$ and $R_{\tilde q_4}^{\sim}=D\,R_{\tilde q_4}^{\mathsf T}D=L_{\tilde q_4}$.
+**Corollary.** The transpose matrix is the matrix transpose conjugated by the inertia matrix; in particular the transposes of $L_{\tilde q_4}$ and $R_{\tilde q_4}$ are obtained by $L_{\tilde q_4}^{\sim}=D\,L_{\tilde q_4}^{\mathsf T}D=R_{\tilde q_4}$ and $R_{\tilde q_4}^{\sim}=D\,R_{\tilde q_4}^{\mathsf T}D=L_{\tilde q_4}$.
 
 *Proof.* The formula applied to the matrix of each operator, with the identifications of the theorem above.
 
@@ -97,7 +97,7 @@ $$ \boxed{\; \langle\tilde q_1^{\natural},\tilde q_2\rangle=\langle\tilde q_1,\t
 
 ## Summary
 
-The product form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ is symmetric, non-degenerate and indefinite of signature $(1,3)$, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ and polar quadratic form $\mathrm{Sc}(\tilde q^2)=q_t^2-q_x^2-q_y^2-q_z^2$. The association functional $\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)$ is cyclically invariant, and the association of the two multiplications does not change it. The transpose of a real-linear operator is $G^{\sim}=D\,G^{\mathsf T}D$ in matrix form, and on the elementary operators it is $L_{\tilde q_4}^{\sim}=R_{\tilde q_4}$, $R_{\tilde q_5}^{\sim}=L_{\tilde q_5}$, $(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$ and $\natural^{\sim}=\natural$.
+The product form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\tilde q_2)$ is symmetric, non-degenerate and indefinite of inertia $(1,3)$, with Gram matrix $D=\operatorname{diag}(1,-1,-1,-1)$ and polar quadratic form $\mathrm{Sc}(\tilde q^2)=q_t^2-q_x^2-q_y^2-q_z^2$. The association functional $\mathrm{Sc}(\tilde q_1\tilde q_2\tilde q_3)$ is cyclically invariant, and the association of the two multiplications does not change it. The transpose of a real-linear operator is $G^{\sim}=D\,G^{\mathsf T}D$ in matrix form, and on the elementary operators it is $L_{\tilde q_4}^{\sim}=R_{\tilde q_4}$, $R_{\tilde q_5}^{\sim}=L_{\tilde q_5}$, $(L_{\tilde q_4}R_{\tilde q_5})^{\sim}=L_{\tilde q_5}R_{\tilde q_4}$ and $\natural^{\sim}=\natural$.
 
 ## Summary of Notation
 
@@ -113,6 +113,6 @@ The product form $\langle\tilde q_1,\tilde q_2\rangle=\mathrm{Sc}(\tilde q_1\til
 ## Further Reading
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for bilinear forms on finite-dimensional algebras and the transpose calculus.
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for bilinear forms, their Gram matrices and their signature.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for bilinear forms, their Gram matrices and their inertia.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the scalar-part pairing and the conjugation of the quaternion algebra.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the cyclic invariance of the scalar triple product.

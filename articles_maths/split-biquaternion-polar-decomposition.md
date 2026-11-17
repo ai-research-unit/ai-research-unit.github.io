@@ -664,7 +664,7 @@ Each of the four algebras has an indefinite structure, and the polar decompositi
 
 In $\mathbb{H}$ there is none: the norm is positive definite, and both the scale and the rotor are as definite as their counterparts in the complex numbers.
 
-In $\mathbb{H}_{\mathrm{spl}}$ the split-biquaternion norm has signature $(2,2)$ and its square root requires an absolute value; the indefinite direction is exhibited as a **boost** in the non-central Hermitian subspace, and the sign of the split-biquaternion norm survives as the determinant of the rotor.
+In $\mathbb{H}_{\mathrm{spl}}$ the split-biquaternion norm has inertia $(2,2)$ and its square root requires an absolute value; the indefinite direction is exhibited as a **boost** in the non-central Hermitian subspace, and the sign of the split-biquaternion norm survives as the determinant of the rotor.
 
 In $\mathbb{B}$ the norm is complex and its square root requires a branch; the two-dimensional family of branches is exhibited as the central **phase**, and the indefinite direction of the algebra is spent on the three-dimensional **boost**.
 

@@ -6,7 +6,7 @@ The antisymmetrisation of the plain product is
 $$
 \tilde q_1\wedge\tilde q_2=\tfrac12\bigl(\tilde q_1\tilde q_2-\tilde q_2\tilde q_1\bigr)=\vec q_1\times\vec q_2 .
 $$
-It forgets everything but the vector parts and the cross product, and what remains is a Lie algebra: alternating, with the Jacobi identity, of dimension three on the derived part and one on the centre, isomorphic to $\mathfrak{so}(3)\oplus\mathbb{R}$. The Killing form is negative semidefinite of signature $(0,3)$, and its radical is the centre.
+It forgets everything but the vector parts and the cross product, and what remains is a Lie algebra: alternating, with the Jacobi identity, of dimension three on the derived part and one on the centre, isomorphic to $\mathfrak{so}(3)\oplus\mathbb{R}$. The Killing form is negative semidefinite of inertia $(0,3)$, and its radical is the centre.
 
 The article is the real mirror of [The Lie Structure of the Antisymmetric Plain Product](the-lie-structure-of-the-antisymmetric-plain-product.html). The biquaternion bracket of the same slot pairing is a Lie algebra over $\mathbb{C}$, of complex dimension three on the same cross product; the real bracket is the same object with the scalar line added as a centre, and the difference between the two is a difference of the ground field and of the scalar part, not of the bracket.
 
@@ -125,7 +125,7 @@ a direct sum, with $\mathbb{R}e_t$ central and $V$ simple.
 $$
 \kappa(\tilde q_1,\tilde q_2)=-2(\vec q_1,\vec q_2),
 $$
-so that the matrix of $\kappa$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is $\mathrm{diag}(0,-2,-2,-2)$, of signature $(0,3)$ and rank three.
+so that the matrix of $\kappa$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is $\mathrm{diag}(0,-2,-2,-2)$, of inertia $(0,3)$ and rank three.
 
 *Proof.* $\mathrm{ad}_{e_t}=0$, so the first row and column vanish. On the vector subspace, $\mathrm{ad}_{\vec e_x}$ has the matrix with the single entries $+1$ at the place $(\vec e_z,\vec e_y)$ and $-1$ at $(\vec e_y,\vec e_z)$, and $\mathrm{ad}_{\vec e_x}^2$ has the eigenvalues $0,0,-1,-1$; the trace is $-2$. For orthogonal vector units the product of the two adjoint matrices has trace zero, computed entry by entry. Verified in the coefficient basis.
 
@@ -163,7 +163,7 @@ is an automorphism of the Lie algebra, fixes $e_t$, and rotates $V$ by the angle
 
 ## The Place among the Two
 
-**Remark (the bracket that is a Lie algebra and the one that is not).** Of the two antisymmetrisations, this is the one that is a Lie algebra, with defect zero, centre the real line, radical one-dimensional, and a Killing form of signature $(0,3)$ that is negative definite on the derived algebra. The other is not a Lie algebra at all, and its failure is a three-dimensional defect carried by the scalar parts. The comparison is the subject of the table of [The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions](the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html).
+**Remark (the bracket that is a Lie algebra and the one that is not).** Of the two antisymmetrisations, this is the one that is a Lie algebra, with defect zero, centre the real line, radical one-dimensional, and a Killing form of inertia $(0,3)$ that is negative definite on the derived algebra. The other is not a Lie algebra at all, and its failure is a three-dimensional defect carried by the scalar parts. The comparison is the subject of the table of [The Lie Structure of the Antisymmetric Quaternionic Product of the Quaternions](the-lie-structure-of-the-antisymmetric-quaternionic-product-of-the-quaternions.html).
 
 **Remark (the verdict in one line).** **The plain bracket is the commutator of an associative algebra restricted to a subspace, and everything it has — the alternation, the Jacobi identity, the identification with $\mathfrak{so}(3)$, the negative definite Killing form — is inherited from that associativity.** The bracket of the quaternionic product has no such parent and inherits nothing.
 
@@ -179,7 +179,7 @@ The Jacobi identity holds with defect zero, proved from associativity by the can
 
 The centre and the radical are the real line, the ideals are $0$, the line and the algebra, and the bracket is semisimple exactly on the vector subspace.
 
-The Killing form is $-2$ times the vector inner product, of matrix $\mathrm{diag}(0,-2,-2,-2)$ and signature $(0,3)$, degenerate exactly on the centre. The trace form of the product vanishes, and the two forms must not be confused.
+The Killing form is $-2$ times the vector inner product, of matrix $\mathrm{diag}(0,-2,-2,-2)$ and inertia $(0,3)$, degenerate exactly on the centre. The trace form of the product vanishes, and the two forms must not be confused.
 
 The exponential of $t\vec u$ is the versor $\cos t+\vec u\sin t$, the adjoint action is the rotation, the conjugation by a versor is the automorphism, and the group is $S^3$ over $SO(3)$ with the two-to-one cover.
 

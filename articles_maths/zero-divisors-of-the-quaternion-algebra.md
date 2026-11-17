@@ -38,7 +38,7 @@ product is the one of this article. A product of the space is written $\star$ wh
 one about an arbitrary product and only the fact that it is a product is used, as in §*Definition*.
 
 The plain form is $\langle\tilde q_1,\tilde q_2\rangle = \mathrm{Sc}(\tilde q_1\tilde q_2) = q_{1t}q_{2t} - (\vec q_1,\vec q_2)$,
-indefinite of signature $(1,3)$; the quaternion form is
+indefinite of inertia $(1,3)$; the quaternion form is
 $\langle\tilde q_1,\tilde q_2\rangle_{\natural} = \mathrm{Sc}(\tilde q_1^{\natural}\tilde q_2) = q_{1t}q_{2t} + (\vec q_1,\vec q_2)$,
 positive definite. The **quaternion norm** is
 $\langle\tilde q\rangle_{\natural} = \tilde q\tilde q^{\natural} = \tilde q^{\natural}\tilde q = q_t^2 + |\vec q|^2$,
@@ -144,7 +144,7 @@ the criterion above.
 The quaternion algebra $\mathbb{H}$ contains no zero divisors, so it is a **division algebra**. This
 is the point at which the real block separates from the complexified one: the biquaternion algebra
 $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries a genuine hypersurface of zero
-divisors, while $\mathbb{H}$ carries none. The reason is exactly the signature of the two norms. The
+divisors, while $\mathbb{H}$ carries none. The reason is exactly the inertia of the two norms. The
 biquaternion norm is the same sum of squares $\sum_\mu Q_\mu^2$, but computed in the complex
 coefficients, so it vanishes on a complex cone of real dimension six; over $\mathbb{R}$ the same
 expression is a sum of squares of real numbers and is positive definite, so the cone shrinks to the

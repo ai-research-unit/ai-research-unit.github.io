@@ -1,12 +1,12 @@
-# __The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$__
+# __The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$__
 
 ## Introduction
 
-**The pairing $\beta(A,B)=\operatorname{tr}(AB)$ is symmetric, non-degenerate and indefinite, and on the real algebra it has signature $(10,6)$: positive definite on the ten-dimensional symmetric half, negative definite on the six-dimensional antisymmetric half, with the two halves orthogonal; the axis-free basis diagonalises it with entries $\pm4$, the ten plus signs on exactly the symmetric elements and the six minus signs on exactly the antisymmetric ones.**
+**The pairing $\beta(A,B)=\operatorname{tr}(AB)$ is symmetric, non-degenerate and indefinite, and on the real algebra it has inertia $(10,6)$: positive definite on the ten-dimensional symmetric half, negative definite on the six-dimensional antisymmetric half, with the two halves orthogonal; the axis-free basis diagonalises it with entries $\pm4$, the ten plus signs on exactly the symmetric elements and the six minus signs on exactly the antisymmetric ones.**
 
-The article proves the three properties, computes the signs on each half, exhibits the axis-free diagonalisation, contrasts it with the matrix-unit basis where the same signature is present but hidden inside six hyperbolic planes, and draws the consequence that the symmetric decomposition of the algebra and the signature of the form are one split read twice.
+The article proves the three properties, computes the signs on each half, exhibits the axis-free diagonalisation, contrasts it with the matrix-unit basis where the same inertia is present but hidden inside six hyperbolic planes, and draws the consequence that the symmetric decomposition of the algebra and the inertia of the form are one split read twice.
 
-It assumes *The Two Halves as Orthogonal Complements at $n=4$* for the orthogonality and *The Axis-Free Representation of $M_4(\mathbb{C})$* for the basis $T_{\mu\nu}$. The case $n=2$ is *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*; the positive definite companion is *The Hilbert–Schmidt Form at $n=4$*.
+It assumes *The Two Halves as Orthogonal Complements at $n=4$* for the orthogonality and *The Axis-Free Representation of $M_4(\mathbb{C})$* for the basis $T_{\mu\nu}$. The case $n=2$ is *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*; the positive definite companion is *The Hilbert–Schmidt Form at $n=4$*.
 
 ## The Form and Its Non-Degeneracy
 
@@ -46,7 +46,7 @@ It assumes *The Two Halves as Orthogonal Complements at $n=4$* for the orthogona
 
 **Proof.** The two displays, with the dimensions $10$ and $6$.
 
-**Corollary.** The two halves are orthogonal for $\beta$, so the restriction to each is the orthogonal direct sum, and the signature on the whole real algebra is $(10,6)$.
+**Corollary.** The two halves are orthogonal for $\beta$, so the restriction to each is the orthogonal direct sum, and the inertia on the whole real algebra is $(10,6)$.
 
 **Proof.** $\beta(S,K)=\operatorname{tr}(SK)=0$ by the transpose argument, and $16=10+6$.
 
@@ -54,7 +54,7 @@ It assumes *The Two Halves as Orthogonal Complements at $n=4$* for the orthogona
 
 **Proof.** A symmetric matrix has $\binom{4}{2}$ off-diagonal pairs plus $4$ diagonal entries, $6+4=10$; an antisymmetric one has $\binom{4}{2}$ pairs and no diagonal, $6$.
 
-**The complex reading.** On the complex algebra viewed as a real space of dimension $32$, the real part of $\beta$ has signature $(16,16)$, since every complex direction contributes a positive and a negative real direction in pairs.
+**The complex reading.** On the complex algebra viewed as a real space of dimension $32$, the real part of $\beta$ has inertia $(16,16)$, since every complex direction contributes a positive and a negative real direction in pairs.
 
 **Proof.** A complex line spanned by $A$ with $\beta(A,A)=c$ contributes the two real directions $A$ and $iA$ with values $c$ and $-c$.
 
@@ -76,7 +76,7 @@ and the minus set is $T_{tx},T_{ty},T_{tz},T_{xt},T_{yt},T_{zt}$. The plus set *
 
 **Proof.** An element $T_{\mu\nu}$ is symmetric exactly when it equals its transpose, and in the axis-free frame the transpose is the quaternion conjugation applied to both slots, which fixes the slot when the index is $t$ and negates it when the index is a vector index. So the element is symmetric exactly when the two indices are equal or both are vector indices, which is the plus set, and antisymmetric exactly when one index is $t$ and the other is a vector index, which is the minus set.
 
-**Corollary.** The basis diagonalises $\beta$: the Gram matrix is diagonal with entries $\pm4$, ten plus and six minus, so the signature is $(10,6)$ read at sight, and the two eigenspaces are the two halves.
+**Corollary.** The basis diagonalises $\beta$: the Gram matrix is diagonal with entries $\pm4$, ten plus and six minus, so the inertia is $(10,6)$ read at sight, and the two eigenspaces are the two halves.
 
 **Proof.** The theorem gives the diagonal form, and the identification of the two sets with the two halves gives the eigenspaces.
 
@@ -88,17 +88,17 @@ and the minus set is $T_{tx},T_{ty},T_{tz},T_{xt},T_{yt},T_{zt}$. The plus set *
 
 **Proof.** Expand $\operatorname{tr}(A^{2})$ in the diagonal basis.
 
-## The Matrix-Unit Basis and the Hidden Signature
+## The Matrix-Unit Basis and the Hidden Inertia
 
 **Proposition.** $\beta(E_{ij},E_{kl})=\delta_{jk}\delta_{il}$, so the Gram matrix in the matrix-unit basis is a permutation matrix with four fixed points and six transpositions.
 
 **Proof.** $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\operatorname{tr}(E_{il})=\delta_{jk}\delta_{il}$.
 
-**Corollary.** The signature is $(10,6)$ in this basis too, but it is not visible: the four fixed points contribute $+1$ each, and each of the six transpositions contributes a hyperbolic plane of signature $(1,-1)$.
+**Corollary.** The inertia is $(10,6)$ in this basis too, but it is not visible: the four fixed points contribute $+1$ each, and each of the six transpositions contributes a hyperbolic plane of inertia $(1,-1)$.
 
 **Proof.** A fixed point gives the $1\times1$ block $[1]$; a transposition of $E_{ij}$ and $E_{ji}$ gives the block $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, whose eigenvalues are $\pm1$.
 
-**What the two bases show.** In the axis-free basis the signature is a diagonal of signs; in the matrix-unit basis it is a permutation, and reading it requires diagonalising six hyperbolic planes. The two bases are related by an invertible change of coordinates, which preserves the signature and destroys or reveals its visibility.
+**What the two bases show.** In the axis-free basis the inertia is a diagonal of signs; in the matrix-unit basis it is a permutation, and reading it requires diagonalising six hyperbolic planes. The two bases are related by an invertible change of coordinates, which preserves the inertia and destroys or reveals its visibility.
 
 **Proof.** Sylvester's law of inertia, and the two computations above.
 
@@ -116,24 +116,24 @@ and the minus set is $T_{tx},T_{ty},T_{tz},T_{xt},T_{yt},T_{zt}$. The plus set *
 
 **Proof.** The two summands are the two halves, up to the scalar line in the symmetric part; the scalar $\mathrm I_4$ is positive and is orthogonal to the traceless part.
 
-**The restriction to the Borel.** On $\mathfrak{b}$ the form degenerates, with radical $\mathfrak{n}_+$ of dimension $6$ and rank $4$; the signature is not defined there and the degenerate radical replaces the negative eigenspace.
+**The restriction to the Borel.** On $\mathfrak{b}$ the form degenerates, with radical $\mathfrak{n}_+$ of dimension $6$ and rank $4$; the inertia is not defined there and the degenerate radical replaces the negative eigenspace.
 
 **Proof.** The computation of *The Antisymmetric Part inside $UT_4$*: every strictly upper unit pairs to zero with the Borel.
 
 ## Summary
 
-The trace pairing is symmetric, non-degenerate, indefinite, invariant under conjugation, and has the transpose as its adjoint. On the real algebra it is positive definite on the ten-dimensional symmetric half and negative definite on the six-dimensional antisymmetric half, the two halves are orthogonal, and the signature is $(10,6)$, with $10=\binom{4}{2}+4$ and $6=\binom{4}{2}$.
+The trace pairing is symmetric, non-degenerate, indefinite, invariant under conjugation, and has the transpose as its adjoint. On the real algebra it is positive definite on the ten-dimensional symmetric half and negative definite on the six-dimensional antisymmetric half, the two halves are orthogonal, and the inertia is $(10,6)$, with $10=\binom{4}{2}+4$ and $6=\binom{4}{2}$.
 
 In the axis-free basis the form is diagonal with entries $\pm4$: the ten plus signs on exactly the symmetric elements and the six minus signs on exactly the antisymmetric ones, a set equality verified element by element. The coordinates are $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{\dagger}A)$ and the trace is $4c_{tt}$.
 
-In the matrix-unit basis the Gram matrix is a permutation with four fixed points and six transpositions, and the signature is present but hidden in six hyperbolic planes. The form and the symmetric decomposition are one split read twice: the positive and negative eigenspaces of $\beta$ are the two halves, and the Cartan decomposition of the algebra is the same statement in Lie-algebraic form.
+In the matrix-unit basis the Gram matrix is a permutation with four fixed points and six transpositions, and the inertia is present but hidden in six hyperbolic planes. The form and the symmetric decomposition are one split read twice: the positive and negative eigenspaces of $\beta$ are the two halves, and the Cartan decomposition of the algebra is the same statement in Lie-algebraic form.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\beta(A,B)=\operatorname{tr}(AB)$ | the trace pairing |
-| $(10,6)$ | its signature on the real algebra |
+| $(10,6)$ | its inertia on the real algebra |
 | $T_{\mu\nu}$ | the axis-free basis, sixteen signed permutations |
 | $\operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=\pm4\delta$ | the diagonalisation |
 | $c_{\mu\nu}$ | the trace-read coordinates |
@@ -145,4 +145,4 @@ In the matrix-unit basis the Gram matrix is a permutation with four fixed points
 - [The Two Halves as Orthogonal Complements at $n=4$](the-two-halves-as-orthogonal-complements-at-n-4.html), for the orthogonality used here.
 - [The Axis-Free Representation of $M_4(\mathbb{C})$](m4c-axis-free-representation.html), for the basis and the transpose.
 - [The Hilbert–Schmidt Form at $n=4$](the-hilbert-schmidt-form-at-n-4.html), for the positive definite companion of this form.
-- [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the same computation at order two.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the same computation at order two.

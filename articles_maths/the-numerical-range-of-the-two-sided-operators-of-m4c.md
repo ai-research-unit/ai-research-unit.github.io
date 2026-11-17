@@ -312,7 +312,7 @@ The field of values contains the convex hull of the product set $W(a)W(b)$, and 
 | matrix | $a\otimes b^{\mathsf T}$ |
 | spectrum | $\lambda_i(a)\lambda_j(b)$ |
 | trace | $\operatorname{tr}a\,\operatorname{tr}b$ |
-| determinant | $(\det a\,\det b)^{4}$ |
+| the determinant of the image | $(\det a\,\det b)^{4}$ |
 | rank | $\operatorname{rank}a\,\operatorname{rank}b$ |
 | singular values | $s_i(a)s_j(b)$ |
 | Schatten norms | $\|a\|_p\|b\|_p$ |

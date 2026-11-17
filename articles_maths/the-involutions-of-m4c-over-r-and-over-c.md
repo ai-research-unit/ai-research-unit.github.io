@@ -6,7 +6,7 @@
 
 The article classifies the involutions of $M_4(\mathbb{C})$ into the two kinds, computes the fixed and anti-fixed spaces of the four basic maps, describes the inner twists $A\mapsto SA^{\mathsf T}S^{-1}$ and their two similarity classes, and shows that the quaternion conjugation $\natural$ is the transpose in the axis-free frame but not in the Peirce frame, where a correction matrix is needed.
 
-It assumes *The Matrix Algebra $M_4(\mathbb{C})$* and *$M_4(\mathbb{C})$ Pauli Representation* for the two frames. The general theory is *The Involutions of a Matrix Algebra*; the case $n=2$ is *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$*. The two halves and their signatures are *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$*.
+It assumes *The Matrix Algebra $M_4(\mathbb{C})$* and *$M_4(\mathbb{C})$ Pauli Representation* for the two frames. The general theory is *The Involutions of a Matrix Algebra*; the case $n=2$ is *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$*. The two halves and their inertias are *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$*.
 
 ## The Four Basic Maps
 

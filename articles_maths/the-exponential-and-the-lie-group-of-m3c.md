@@ -343,7 +343,7 @@ $$
 | Map | Formula |
 |---|---|
 | exponential | $e^{X}=\sum_{n\ge0}X^{n}/n!$ |
-| determinant | $\det e^{X}=e^{\operatorname{tr}X}$ |
+| the determinant of the image | $\det e^{X}=e^{\operatorname{tr}X}$ |
 | derivative | $de^{X}=(e^{\operatorname{ad}_X}-1)/\operatorname{ad}_X$ |
 | conjugation | $e^{SXS^{-1}}=Se^{X}S^{-1}$ |
 | unitary root | $H=e^{K}$, $K=\frac{2\pi i}{3}(P_2+2P_3)$ |

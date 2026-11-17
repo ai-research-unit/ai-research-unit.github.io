@@ -100,7 +100,7 @@ measured as $1,3,6,10$ at $n=3,4,5,6$. The dimension is strictly decreasing, so 
 
 ## The Two Splittings Compared
 
-**The trace form on $M_n$ is nondegenerate and the one on $UT_n$ is not.** On $M_n(\mathbb{R})$ the form $\operatorname{tr}(XY)$ is nondegenerate with signature $(n(n+1)/2,n(n-1)/2)$; on the subspace $UT_n$ the restriction has rank $n$ and radical $n_+$. So the degeneration appears exactly when the algebra is replaced by a triangular half of it, and its size is the dimension of the commutator.
+**The trace form on $M_n$ is nondegenerate and the one on $UT_n$ is not.** On $M_n(\mathbb{R})$ the form $\operatorname{tr}(XY)$ is nondegenerate with inertia $(n(n+1)/2,n(n-1)/2)$; on the subspace $UT_n$ the restriction has rank $n$ and radical $n_+$. So the degeneration appears exactly when the algebra is replaced by a triangular half of it, and its size is the dimension of the commutator.
 
 **The antisymmetric half is nondegenerate and the triangular half is not.** On $\operatorname{Skew}_n$ the form is negative definite, hence nondegenerate; on $UT_n$ it is degenerate with the maximal possible radical for a Borel. The two complementary subspaces of the splitting $M_n=UT_n\oplus\operatorname{Skew}_n$ therefore behave in opposite ways for the same form: one is definite, the other is maximally degenerate.
 

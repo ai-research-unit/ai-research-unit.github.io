@@ -13,7 +13,7 @@ The frame is that of *The Gamma Frame and the Complexified Dirac Algebra of $M_4
 
 ## Pin and Spin
 
-**The definitions.** Let $V$ be a real four-dimensional space with a quadratic form $q$ of signature $(1,3)$, and let $\mathrm{Cl}(V)$ be its Clifford algebra. A **versor** is a product $\zeta_1\cdots\zeta_k$ of non-isotropic vectors. The **Clifford group** is
+**The definitions.** Let $V$ be a real four-dimensional space with a quadratic form $q$ of inertia $(1,3)$, and let $\mathrm{Cl}(V)$ be its Clifford algebra. A **versor** is a product $\zeta_1\cdots\zeta_k$ of non-isotropic vectors. The **Clifford group** is
 $$
 \Gamma=\{u\in\mathrm{Cl}(V)^{\times}:\alpha(u)Vu^{-1}\subseteq V\},
 $$
@@ -172,7 +172,7 @@ $$
 \rho_{A_0}(\eta)=-A_0\eta A_0,\qquad
 \rho_{A_k}(\eta)=+A_k\eta A_k .
 $$
-This is the only place where the signature of the frame enters the reflection; the anticommutation relations themselves carry it in the squares $(A_0)^2=+I$, $(A_k)^2=-I$.
+This is the only place where the inertia of the frame enters the reflection; the anticommutation relations themselves carry it in the squares $(A_0)^2=+I$, $(A_k)^2=-I$.
 
 **The spinor determinant.** The spinor representation is a map
 $$

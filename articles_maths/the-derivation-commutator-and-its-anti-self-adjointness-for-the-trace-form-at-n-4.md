@@ -6,7 +6,7 @@
 
 The article proves the Leibniz rule and the representation property, records the inner-derivation theorem with its dimension count, computes the two anti-self-adjointness conditions and their adjoints, determines the spectrum of $\operatorname{ad}_A$, and explains why the trace form cannot distinguish the symmetric from the antisymmetric directions while the Hilbert–Schmidt form can.
 
-It assumes *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$* and *The Derivations and the Automorphisms of $M_4(\mathbb{C})$*, where the inner-derivation theorem is proved in full. The case $n=2$ is *The Derivation Commutator and Its Anti-Self-Adjointness for the Trace Form*; the operator form is *The Adjoints and the Polar Decomposition of an Operator at $n=4$*.
+It assumes *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$* and *The Derivations and the Automorphisms of $M_4(\mathbb{C})$*, where the inner-derivation theorem is proved in full. The case $n=2$ is *The Derivation Commutator and Its Anti-Self-Adjointness for the Trace Form*; the operator form is *The Adjoints and the Polar Decomposition of an Operator at $n=4$*.
 
 ## The Commutator Is a Derivation
 
@@ -133,6 +133,6 @@ The difference between the two statements is the involution and not the derivati
 
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for the theorem that every derivation of a central simple algebra is inner.
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for the full proof of the inner-derivation theorem.
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the form whose invariance produces the anti-self-adjointness.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the form whose invariance produces the anti-self-adjointness.
 - [The Hilbert–Schmidt Form at $n=4$](the-hilbert-schmidt-form-at-n-4.html), for the positive definite form of the second statement.
 - [The Derivation Commutator and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the same two statements at order two.

@@ -4,7 +4,7 @@
 
 **The discriminant of the characteristic polynomial is one real polynomial in the entries, and its zero set is exactly the set of matrices with a repeated eigenvalue.** It is therefore the wall that separates the spectral strata, and its sign is constant on each connected region of the complement.
 
-The article defines the discriminant as a symmetric function of the roots, proves that it is a polynomial in the coefficients of degree $2n-2$, that it vanishes exactly at a repeated root, and that it is a similarity invariant. It describes the stratification of $M_n(\mathbb{R})$ by root multiplicity, the constancy of the number of real roots on the complement, the case $n=2$ where the discriminant is a quadratic form of signature $(2,1)$, a count on $100$ random real $3\times3$ matrices, and the boundary between the elliptic and hyperbolic regions. It assumes *The Elementary Symmetric Functions and the Real Characteristic Polynomial*, which defers this construction here.
+The article defines the discriminant as a symmetric function of the roots, proves that it is a polynomial in the coefficients of degree $2n-2$, that it vanishes exactly at a repeated root, and that it is a similarity invariant. It describes the stratification of $M_n(\mathbb{R})$ by root multiplicity, the constancy of the number of real roots on the complement, the case $n=2$ where the discriminant is a quadratic form of inertia $(2,1)$, a count on $100$ random real $3\times3$ matrices, and the boundary between the elliptic and hyperbolic regions. It assumes *The Elementary Symmetric Functions and the Real Characteristic Polynomial*, which defers this construction here.
 
 ## The Discriminant of a Polynomial
 
@@ -85,7 +85,7 @@ which is $m$ equations in the $n+1$ unknowns given by the coefficients and $\lam
 
 **The stratification is real, not complex.** Over $\mathbb{C}$ the discriminant detects the collision of two eigenvalues but not their reality, because every root is real in the only sense available, namely that it lies in $\mathbb{C}$. Over $\mathbb{R}$ the same hypersurface carries the extra information of the number of real roots on each side.
 
-## The Case $n=2$: A Quadratic Cone of Signature $(2,1)$
+## The Case $n=2$: A Quadratic Cone of Inertia $(2,1)$
 
 **For a $2\times2$ matrix the discriminant is a quadratic form in the four entries.** Write
 
@@ -107,7 +107,7 @@ $$
 
 the discriminant is pulled back from the traceless part, and it is constant along the centre.
 
-**On the traceless part it has signature $(2,1)$.** Write a traceless matrix as
+**On the traceless part it has inertia $(2,1)$.** Write a traceless matrix as
 
 $$
 A=\begin{pmatrix}x&y\\ z&-x\end{pmatrix},
@@ -119,7 +119,7 @@ $$
 \begin{pmatrix}4&0&0\\ 0&0&2\\ 0&2&0\end{pmatrix},
 $$
 
-whose eigenvalues are $4$, $2$ and $-2$: the signature is $(2,1)$. Adding the degenerate trace direction gives a form on $\mathbb{R}^{3}\times\mathbb{R}$ of rank $3$ and signature $(2,1)$, with a one-dimensional radical.
+whose eigenvalues are $4$, $2$ and $-2$: the inertia is $(2,1)$. Adding the degenerate trace direction gives a form on $\mathbb{R}^{3}\times\mathbb{R}$ of rank $3$ and inertia $(2,1)$, with a one-dimensional radical.
 
 **The zero set is a cone.** The equation $x^{2}+yz=0$ is the cone over a circle in the traceless part, and it is the null cone of the Killing form of $\mathfrak{sl}_2(\mathbb{R})$, which is $4\operatorname{tr}(A^{2})=8(x^{2}+yz)$. So the discriminant cone and the null cone of the Killing form are the same cone, up to the factor.
 
@@ -141,7 +141,7 @@ whose eigenvalues are $4$, $2$ and $-2$: the signature is $(2,1)$. Adding the de
 
 ## Summary
 
-The discriminant of the characteristic polynomial is the product of the squared differences of the roots. It is a symmetric function of the roots, hence a polynomial in the coefficients of degree $2n-2$, and it is homogeneous of degree $n(n-1)$ in the roots. It vanishes exactly when two eigenvalues coincide, so its zero set is the hypersurface that separates the open dense stratum of matrices with distinct eigenvalues from the strata with a repeated root; a root of multiplicity $m$ costs $m-1$ conditions. The sign of the discriminant and the number of real roots are constant on each connected component of the complement, which is why the discriminant is the boundary between the elliptic and the hyperbolic regions. At $n=2$ it is $(\operatorname{tr}A)^{2}-4\det A$, a quadratic form of signature $(2,1)$ on the traceless part, degenerate along the centre. On $100$ random real $3\times3$ matrices, $36$ have three real eigenvalues and $64$ have one.
+The discriminant of the characteristic polynomial is the product of the squared differences of the roots. It is a symmetric function of the roots, hence a polynomial in the coefficients of degree $2n-2$, and it is homogeneous of degree $n(n-1)$ in the roots. It vanishes exactly when two eigenvalues coincide, so its zero set is the hypersurface that separates the open dense stratum of matrices with distinct eigenvalues from the strata with a repeated root; a root of multiplicity $m$ costs $m-1$ conditions. The sign of the discriminant and the number of real roots are constant on each connected component of the complement, which is why the discriminant is the boundary between the elliptic and the hyperbolic regions. At $n=2$ it is $(\operatorname{tr}A)^{2}-4\det A$, a quadratic form of inertia $(2,1)$ on the traceless part, degenerate along the centre. On $100$ random real $3\times3$ matrices, $36$ have three real eigenvalues and $64$ have one.
 
 ## Summary of Notation
 

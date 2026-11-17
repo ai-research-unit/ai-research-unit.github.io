@@ -4,7 +4,7 @@
 
 **The positive definite matrices form an open convex cone inside the Hermitian half, its closure is the cone of positive semidefinite matrices, self-dual for the trace form, and its boundary carries a face lattice indexed by the kernels, with the rank one matrices as the extremal rays.**
 
-The article proves the openness, the convexity and the pointedness of the cone, proves the self-duality for the trace pairing, identifies the boundary with the singular positive semidefinite matrices, describes the faces through the kernels and their dimensions, proves that the rank one matrices are exactly the extremal rays, proves that the group acts transitively on the cone with the scalars as the only automorphisms up to the centre, and proves the concavity of the logarithm of the determinant. It assumes *The Exponential of the Symmetric Part: Stretches and the Positive Cone* and *The Trace Form and Its Signature on the Two Halves*. It defers the global picture to *The Cone of Positive Semidefinite Matrices* and the symmetric space to *The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin*.
+The article proves the openness, the convexity and the pointedness of the cone, proves the self-duality for the trace pairing, identifies the boundary with the singular positive semidefinite matrices, describes the faces through the kernels and their dimensions, proves that the rank one matrices are exactly the extremal rays, proves that the group acts transitively on the cone with the scalars as the only automorphisms up to the centre, and proves the concavity of the logarithm of the determinant. It assumes *The Exponential of the Symmetric Part: Stretches and the Positive Cone* and *The Trace Form and Its Inertia on the Two Halves*. It defers the global picture to *The Cone of Positive Semidefinite Matrices* and the symmetric space to *The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin*.
 
 ## The Cone and Its Closure
 
@@ -225,5 +225,5 @@ The positive definite matrices form an open convex pointed cone in the Hermitian
 - Stephen Boyd and Lieven Vandenberghe, *Convex Optimization* (Cambridge, 2004), for the positive semidefinite cone and the barrier functions.
 - Rajendra Bhatia, *Positive Definite Matrices* (Princeton, 2007), for the geometry of the cone.
 - [The Exponential of the Symmetric Part: Stretches and the Positive Cone](the-exponential-of-the-symmetric-part-stretches-and-the-positive-cone.html), for the exponential onto the cone.
-- [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the pairing of the self-duality.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the pairing of the self-duality.
 - [The Two Halves as Orthogonal Complements](the-two-halves-as-orthogonal-complements.html), for the orthogonality of the Hermitian half and its partner.

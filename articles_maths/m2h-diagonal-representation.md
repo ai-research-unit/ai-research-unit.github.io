@@ -191,15 +191,15 @@ the purely split-imaginary part of the algebra. It is a subspace and not an idea
 $$
 \operatorname{Sc}\operatorname{tr}\bigl(\mathsf M(\tilde Q)\mathsf M(\tilde Q_2)\bigr)=\operatorname{Sc}\bigl(\tilde Q_{+}\tilde Q_{2+}\bigr)+\operatorname{Sc}\bigl(\tilde Q_{-}\tilde Q_{2-}\bigr),
 $$
-a real bilinear form of real signature $(4,4)$: four positive directions from the two real parts and four negative from the two imaginary parts. The form is **nondegenerate**, because the quaternion trace form is nondegenerate and the block sum of two copies is nondegenerate. So the trace form of the category is a form of signature $(4,4)$, and its radical is zero.
+a real bilinear form of real inertia $(4,4)$: four positive directions from the two real parts and four negative from the two imaginary parts. The form is **nondegenerate**, because the quaternion trace form is nondegenerate and the block sum of two copies is nondegenerate. So the trace form of the category is a form of inertia $(4,4)$, and its radical is zero.
 
-**The reading.** Four trace forms of the block: $\operatorname{diag}(2,-2)$ of signature $(1,1)$ for the complex numbers, $\operatorname{diag}(2,0)$ degenerate for the dual numbers, $2\,\mathrm I_{2}$ of signature $(2,2)$ for the reduced biquaternions, and the $(4,4)$ form here. The pattern is the real dimension: the form is the reduced trace of the product, and the signature is $(n/2,n/2)$ where $n$ is the real dimension of the algebra, for every semisimple algebra of the block.
+**The reading.** Four trace forms of the block: $\operatorname{diag}(2,-2)$ of inertia $(1,1)$ for the complex numbers, $\operatorname{diag}(2,0)$ degenerate for the dual numbers, $2\,\mathrm I_{2}$ of inertia $(2,2)$ for the reduced biquaternions, and the $(4,4)$ form here. The pattern is the real dimension: the form is the reduced trace of the product, and the inertia is $(n/2,n/2)$ where $n$ is the real dimension of the algebra, for every semisimple algebra of the block.
 
 ## The Determinant
 
 **The determinant is the product of the two reduced norms, a nonnegative real, and its zero set is the union of the two block hyperplanes.**
 
-**Theorem (the determinant).** For every $\tilde Q$,
+**Theorem (the determinant of the model).** For every $\tilde Q$,
 $$
 \det\mathsf M(\tilde Q)=N(\tilde Q_{+})\,N(\tilde Q_{-}),\qquad N(u)=uu^{\natural}=|u|^{2}\in[0,\infty),
 $$
@@ -325,7 +325,7 @@ a split-complex number whose two idempotent coordinates are the two quaternion n
 $$
 \det\mathsf M(\tilde Q)=N(\tilde Q_{+})N(\tilde Q_{-}),
 $$
-so the relation between the two norms is a **product**: the quaternionic norm gives the pair $(N(\tilde Q_{+}),N(\tilde Q_{-}))$ and the determinant gives their product. The pair vanishes only at zero; the product vanishes whenever one factor vanishes. That is the whole of the difference between the anisotropic norm and the singular determinant, and it is why the split biquaternion algebra is the category where the two words "norm" and "determinant" must be used with care.
+so the relation between the two norms is a **product**: the quaternionic norm gives the pair $(N(\tilde Q_{+}),N(\tilde Q_{-}))$ and the determinant of the model gives their product. The pair vanishes only at zero; the product vanishes whenever one factor vanishes. That is the whole of the difference between the anisotropic norm and the singular determinant, and it is why the split biquaternion algebra is the category where the two words "norm" and "determinant" must be used with care.
 
 **The four forms.** With $\mathrm{Sc}$ the scalar part taken in the quaternion and in the split-complex slot alike, the four forms of the layer are
 $$
@@ -337,16 +337,16 @@ with each $\sigma$ the identity, the quaternion conjugation ${}^{\natural}$ or t
 |---|---|---|---|
 | plain $\langle\tilde Q\rangle$ | $\mathrm{Sc}\bigl(\tilde Q^{2}\bigr)$ | $\tfrac12\mathrm{Trd}\bigl(\mathsf M(\tilde Q)^{2}\bigr)$ | indefinite |
 | quaternionic $\langle\tilde Q\rangle_{\natural}$ | $N(\tilde Q_{+})\tilde\Pi_{1}+N(\tilde Q_{-})\tilde\Pi_{2}$ | the two norms on the diagonal | anisotropic, split-complex valued |
-| Hermitian $\langle\tilde Q\rangle_{*}$ | $\mathrm{Sc}\bigl(\tilde Q^{*}\tilde Q\bigr)$ | $\tfrac12\mathrm{Trd}\bigl(\mathsf M^{\dagger}\mathsf M\bigr)$ | indefinite of signature $(4,4)$ |
+| Hermitian $\langle\tilde Q\rangle_{*}$ | $\mathrm{Sc}\bigl(\tilde Q^{*}\tilde Q\bigr)$ | $\tfrac12\mathrm{Trd}\bigl(\mathsf M^{\dagger}\mathsf M\bigr)$ | indefinite of inertia $(4,4)$ |
 | Krein $\langle\tilde Q\rangle_{\natural*}$ | $\mathrm{Sc}\bigl(\tilde Q^{\natural*}\tilde Q\bigr)$ | the same with the two slots exchanged | indefinite |
 
-The quaternionic norm is the only one of the four that is a *sum of squares* in each block, and it is the only one that is anisotropic; the other three carry negative directions, and their signatures are read from the real parts of the two blocks.
+The quaternionic norm is the only one of the four that is a *sum of squares* in each block, and it is the only one that is anisotropic; the other three carry negative directions, and their inertias are read from the real parts of the two blocks.
 
-**The four subspace norms.** On the four fixed subspaces the four forms restrict to forms of definite signature or of Minkowski type, and the two that matter are the following. On the **quaternion subspace**, $\tilde Q=q_{t}+\vec q$, the quaternionic norm is $q_{t}^{2}+|\vec q|^{2}$ and is positive definite, while the Hermitian form is the Minkowski form
+**The four subspace norms.** On the four fixed subspaces the four forms restrict to forms of definite inertia or of Minkowski type, and the two that matter are the following. On the **quaternion subspace**, $\tilde Q=q_{t}+\vec q$, the quaternionic norm is $q_{t}^{2}+|\vec q|^{2}$ and is positive definite, while the Hermitian form is the Minkowski form
 $$
-\mathrm{Sc}\bigl(\tilde Q^{2}\bigr)=q_{t}^{2}-|\vec q|^{2},\qquad \text{signature }(1,3),
+\mathrm{Sc}\bigl(\tilde Q^{2}\bigr)=q_{t}^{2}-|\vec q|^{2},\qquad \text{inertia }(1,3),
 $$
-whose null cone is the light cone. On the **Hermitian subspace** $\tilde Q=q_{t}+j\vec q$, the same two formulas hold with the roles exchanged: the Hermitian form is the Minkowski form of signature $(1,3)$ and the quaternionic norm is $q_{t}^{2}+|\vec q|^{2}$. So the two subspaces carry the same pair of forms with the two slots exchanged, and the light cone appears in both. On the **split-complex subspace** the forms are the split-complex forms of signature $(1,1)$; on the **anti-Hermitian subspace** the quaternionic norm is positive definite again.
+whose null cone is the light cone. On the **Hermitian subspace** $\tilde Q=q_{t}+j\vec q$, the same two formulas hold with the roles exchanged: the Hermitian form is the Minkowski form of inertia $(1,3)$ and the quaternionic norm is $q_{t}^{2}+|\vec q|^{2}$. So the two subspaces carry the same pair of forms with the two slots exchanged, and the light cone appears in both. On the **split-complex subspace** the forms are the split-complex forms of inertia $(1,1)$; on the **anti-Hermitian subspace** the quaternionic norm is positive definite again.
 
 **The reading.** The category has an anisotropic norm and a singular determinant, and the two are the pair and the product of the same two nonnegative numbers. That is the cleanest statement of the difference from the reduced biquaternion category, where the determinant was the product of two *complex* coordinates and the positive definite norm was their sum of squares: here the coordinates are two *real* nonnegative numbers, so their sum and their product are two different real functions and both are multiplicative-ish in their own way — the product is multiplicative, the sum is not.
 
@@ -382,11 +382,11 @@ the first into the quaternion subspace and its translate, the second into the tw
 2. The model is the diagonal subalgebra of $M_{2}(\mathbb{H})$, of real dimension eight inside sixteen; the membership test is the vanishing of the two off-diagonal blocks, a linear test of codimension eight.
 3. The matrix units of the algebra are degenerate, $\tilde E_{12}=\tilde E_{21}=0$, and the reason is that each block is a division ring, so no element connects the two blocks.
 4. The product is blockwise and the algebra separates as $\mathbb{H}\times\mathbb{H}$; the model is faithful and not surjective, and no sum or product of models fills the off-diagonal corners.
-5. The trace is the quaternion $\tilde Q_{+}+\tilde Q_{-}=2\,\mathrm{Re}_{\mathbb{C}_{\mathrm{spl}}}\tilde Q$, not central, with reduced trace $2q_{t}$, realified trace $8q_{t}$, and kernel the subspace $j\mathbb{H}$; the reduced trace form has signature $(4,4)$ and is nondegenerate.
-6. The determinant is $N(\tilde Q_{+})N(\tilde Q_{-})$, a nonnegative real, multiplicative, vanishing exactly on the union of the two ideals; the realified determinant is its square, and the rank ladder is $\{0,4,8\}$.
+5. The trace is the quaternion $\tilde Q_{+}+\tilde Q_{-}=2\,\mathrm{Re}_{\mathbb{C}_{\mathrm{spl}}}\tilde Q$, not central, with reduced trace $2q_{t}$, realified trace $8q_{t}$, and kernel the subspace $j\mathbb{H}$; the reduced trace form has inertia $(4,4)$ and is nondegenerate.
+6. The determinant of the model is $N(\tilde Q_{+})N(\tilde Q_{-})$, a nonnegative real, multiplicative, vanishing exactly on the union of the two ideals; the realified determinant is its square, and the rank ladder is $\{0,4,8\}$.
 7. The two central idempotents are the spectral projectors, the spectrum is two independent conjugate pairs, Lagrange's formula degenerates on the quaternion subspace of real dimension four, and the projectors exist there nonetheless.
 8. The inverse is blockwise and stays in the algebra; the adjugate is $\mathrm{diag}(N(\tilde Q_{-})\tilde Q_{+}^{\natural},N(\tilde Q_{+})\tilde Q_{-}^{\natural})$ and is **not** the model of a conjugation, because the determinant is a product of the two norms and the cofactors cross.
-9. The quaternionic norm is anisotropic with the two norms as coordinates, the determinant is their product, the four forms are the four reduced traces, and on the quaternion and Hermitian subspaces the Hermitian form is the Minkowski form of signature $(1,3)$.
+9. The quaternionic norm is anisotropic with the two norms as coordinates, the determinant is their product, the four forms are the four reduced traces, and on the quaternion and Hermitian subspaces the Hermitian form is the Minkowski form of inertia $(1,3)$.
 10. The four fixed subspaces are the block conditions of equal, conjugate and negated blocks; the split-complex conjugation is the swap, an outer conjugation of the ambient by the missing off-diagonal unit, and the quaternion conjugation is the conjugate transpose, entrywise and inner.
 
 ## Summary of Notation

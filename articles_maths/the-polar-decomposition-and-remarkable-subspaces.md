@@ -352,7 +352,7 @@ $$
 \langle\tilde Q_-\rangle_{\natural}=-a^{2}+\lvert\vec b\rvert^{2},
 $$
 
-of signature $(3,1)$, with polarisation $g_-=-aa'+\vec b\cdot\vec b'$ and matrix $G_-=\operatorname{diag}(-1,1,1,1)$.
+of inertia $(3,1)$, with polarisation $g_-=-aa'+\vec b\cdot\vec b'$ and matrix $G_-=\operatorname{diag}(-1,1,1,1)$.
 
 For a norm-one element $\tilde U$, the matrix image has determinant one, so it lies in $SL(2,\mathbb{C})$, and
 

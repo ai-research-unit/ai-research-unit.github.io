@@ -4,7 +4,7 @@
 
 **Over the complex field the conjugate transpose cuts the algebra into the Hermitian matrices and the anti-Hermitian ones, and the cut is even: two real subspaces of the same real dimension $n^{2}$, unlike the unequal halves of the transpose over $\mathbb{R}$.**
 
-The article proves the direct sum, computes the dimensions, identifies the anti-Hermitian half with the Lie algebra $\mathfrak{u}(n)$ and with $i$ times the Hermitian half, and settles the orthogonality question: the two halves are orthogonal for the real part of the trace form and not for the form itself. It computes the signature of the trace bilinear form on each half, which is $(n^{2},0)$ and $(0,n^{2})$, and it reads the exponentials, which are the unitary group and the positive definite Hermitian matrices. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* for the real case and *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the classification of the conjugate transpose among the involutions. It defers the spectral theorems to *The Spectral Theorem: the Hermitian Case* and *The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum*, and the polar decomposition to *The Polar Decomposition from the Two Halves*.
+The article proves the direct sum, computes the dimensions, identifies the anti-Hermitian half with the Lie algebra $\mathfrak{u}(n)$ and with $i$ times the Hermitian half, and settles the orthogonality question: the two halves are orthogonal for the real part of the trace form and not for the form itself. It computes the inertia of the trace bilinear form on each half, which is $(n^{2},0)$ and $(0,n^{2})$, and it reads the exponentials, which are the unitary group and the positive definite Hermitian matrices. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* for the real case and *The Involutions over $\mathbb{R}$ and over $\mathbb{C}$* for the classification of the conjugate transpose among the involutions. It defers the spectral theorems to *The Spectral Theorem: the Hermitian Case* and *The Spectral Theorem: the Anti-Hermitian Case and the Reality of the Spectrum*, and the polar decomposition to *The Polar Decomposition from the Two Halves*.
 
 ## The Split
 
@@ -70,13 +70,13 @@ $$
 
 so $\operatorname{tr}(HK)$ is purely imaginary. Its real part vanishes identically, which is all that orthogonality of two real subspaces needs for the Euclidean form, and its imaginary part generally does not, so the Hermitian form itself does not vanish on the pair. The computation at $n=2,3,4$ gives a real part of zero to machine precision and an imaginary part of order one.
 
-**The trace bilinear form has signature $(n^{2},n^{2})$, with opposite signs on the halves.** For Hermitian $H$ and anti-Hermitian $K$,
+**The trace bilinear form has inertia $(n^{2},n^{2})$, with opposite signs on the halves.** For Hermitian $H$ and anti-Hermitian $K$,
 
 $$
 \operatorname{tr}(H^{2})=\operatorname{tr}(H^{*}H)>0,\qquad \operatorname{tr}(K^{2})=-\operatorname{tr}(K^{*}K)<0 ,
 $$
 
-so the bilinear form $B(A,B)=\operatorname{tr}(AB)$ is positive definite on the Hermitian half of dimension $n^{2}$ and negative definite on the anti-Hermitian half of the same dimension. The total signature is $(n^{2},n^{2})$, a split form, against the Euclidean form $\operatorname{tr}(A^{*}B)$ which is positive definite on the whole algebra.
+so the bilinear form $B(A,B)=\operatorname{tr}(AB)$ is positive definite on the Hermitian half of dimension $n^{2}$ and negative definite on the anti-Hermitian half of the same dimension. The total inertia is $(n^{2},n^{2})$, a split form, against the Euclidean form $\operatorname{tr}(A^{*}B)$ which is positive definite on the whole algebra.
 
 **The two forms must not be confused.** The form $\operatorname{tr}(A^{*}B)$ is the Hilbert–Schmidt form, positive definite and used for the metric; the form $\operatorname{tr}(AB)$ is the trace bilinear form, indefinite and used for the adjoints and for the Killing form. On the Hermitian half the first restricts to the second, and on the anti-Hermitian half the two differ by a sign. The article *The Hilbert–Schmidt Form* keeps the two apart.
 
@@ -108,7 +108,7 @@ the second because the eigenvalues of $e^{H}$ are $e^{\lambda_k}>0$ with $\lambd
 
 ## Summary
 
-The conjugate transpose splits $M_n(\mathbb{C})$ into the Hermitian half and the anti-Hermitian half, two real subspaces of dimension $n^{2}$ each, exchanged by multiplication by $i$. The Hermitian half is a real Jordan algebra with real spectrum and unitary diagonalisation; the anti-Hermitian half is $\mathfrak{u}(n)$, of dimension $n^{2}$ with traceless part $\mathfrak{su}(n)$ of dimension $n^{2}-1$, and its elements have purely imaginary spectrum. The halves are orthogonal for the real part of the trace form and not for the form, and the trace bilinear form has signature $(n^{2},0)$ on the first and $(0,n^{2})$ on the second, totalling the split signature $(n^{2},n^{2})$. The exponential of the anti-Hermitian half is the unitary group and the exponential of the Hermitian half is the positive cone.
+The conjugate transpose splits $M_n(\mathbb{C})$ into the Hermitian half and the anti-Hermitian half, two real subspaces of dimension $n^{2}$ each, exchanged by multiplication by $i$. The Hermitian half is a real Jordan algebra with real spectrum and unitary diagonalisation; the anti-Hermitian half is $\mathfrak{u}(n)$, of dimension $n^{2}$ with traceless part $\mathfrak{su}(n)$ of dimension $n^{2}-1$, and its elements have purely imaginary spectrum. The halves are orthogonal for the real part of the trace form and not for the form, and the trace bilinear form has inertia $(n^{2},0)$ on the first and $(0,n^{2})$ on the second, totalling the split inertia $(n^{2},n^{2})$. The exponential of the anti-Hermitian half is the unitary group and the exponential of the Hermitian half is the positive cone.
 
 ## Summary of Notation
 
@@ -120,7 +120,7 @@ The conjugate transpose splits $M_n(\mathbb{C})$ into the Hermitian half and the
 | $\mathfrak{u}(n)$ | the anti-Hermitian half as a Lie algebra, of dimension $n^{2}$ |
 | $\mathfrak{su}(n)$ | its traceless part, of dimension $n^{2}-1$ |
 | $\operatorname{tr}(A^{*}B)$ | the Hilbert–Schmidt form, positive definite |
-| $\operatorname{tr}(AB)$ | the trace bilinear form, of signature $(n^{2},n^{2})$ |
+| $\operatorname{tr}(AB)$ | the trace bilinear form, of inertia $(n^{2},n^{2})$ |
 | $\mathrm{I},\sigma_1,\sigma_2,\sigma_3$ | the Pauli list, a real basis of $\operatorname{Herm}_2$ |
 
 ## Further Reading

@@ -226,4 +226,4 @@ the four conjugations act as $\tilde{Q}^{\natural} = (1 + j) - 2 \vec e_x - (1 -
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the quaternion multiplication table and the scalar-vector product formula.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic biquaternion calculus.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, 1997), for worked computations in the split biquaternion algebra.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the idempotent basis and the direct-sum structure of Clifford algebras of split signature.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the idempotent basis and the direct-sum structure of Clifford algebras of split inertia.

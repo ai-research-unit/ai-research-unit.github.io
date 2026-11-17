@@ -271,7 +271,7 @@ $$
 $$
 the square of the quaternionic norm, because the matrix is two equal copies of the $2\times2$ image and the $2\times2$ determinant is $N(\tilde Q)$. The characteristic polynomial is $\bigl((\lambda-Q_t)^2+B^2\bigr)^2$, with eigenvalues $Q_t\pm iB$ twice each.
 
-**The determinant of a product is the product of the determinants.** For all $\tilde Q_1,\tilde Q_2$,
+**The determinant of a product of matrices is the product of the determinants.** For all $\tilde Q_1,\tilde Q_2$,
 $$
 \det(L_1L_2)=\det L_1\det L_2,\qquad\text{that is}\qquad N(\tilde Q_1\tilde Q_2)^2=N(\tilde Q_1)^2N(\tilde Q_2)^2 .
 $$
@@ -302,7 +302,7 @@ $$
 P(\tilde Q)=\tfrac14\operatorname{Tr}(L^2),\qquad N(\tilde Q)=\tfrac14\operatorname{Tr}(L^{\mathsf T}L),\qquad
 H(\tilde Q)=\tfrac14\operatorname{Tr}(L^{\dagger}L),\qquad \mathrm{Kr}(\tilde Q)=\tfrac14\operatorname{Tr}(L^{\mathsf T}L^{\dagger}).
 $$
-The quarter is the dimension of the carrier, and §*The Factors* accounts for it. The four letters, the four coordinate expressions and the four signatures are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the words are new here.
+The quarter is the dimension of the carrier, and §*The Factors* accounts for it. The four letters, the four coordinate expressions and the four inertias are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the words are new here.
 
 **The quaternionic norm is an eigenvalue.** The second word is not merely a trace:
 $$
@@ -322,7 +322,7 @@ and the quarter is the price of the four-dimensional carrier, as in the companio
 $$
 \tfrac14\operatorname{Tr}(L^{\mathsf T}L^{\dagger})=\tfrac14\operatorname{Tr}\bigl(L(\tilde Q^{\natural})L(\tilde Q^{*})\bigr)=\mathrm{Kr}(\tilde Q),
 $$
-which is positive on the centre and negative on the vector subspace, of signature $(2,6)$ on the real algebra.
+which is positive on the centre and negative on the vector subspace, of inertia $(2,6)$ on the real algebra.
 
 **The multiplicativity table.**
 
@@ -364,7 +364,7 @@ with the difference given by the two terms above. The first term is minus twice 
 | trace of an element | $\operatorname{Tr}L$ | $4$ | four diagonal entries equal to $Q_t$ |
 | form | $P,N,H,\mathrm{Kr}$ | $\tfrac14$ | $\operatorname{Sc}$ of a product |
 | norm | $P,N,H,\mathrm{Kr}$ | $\tfrac14$ | the same, at two equal arguments |
-| determinant | $\det L$ | $1$ | $\det\mathrm I_4=1$ |
+| the determinant of the image | $\det L$ | $1$ | $\det\mathrm I_4=1$ |
 | determinant of a basis matrix | $\det L_{e_\mu}$ | $1$ | signed permutations of determinant $1$ |
 
 **The quarter is not a convention.** It is $1/\dim_{\mathbb{C}}\mathbb{B}$. The trace of the identity of the regular representation is the dimension of the carrier, so the scalar part, which is one coordinate out of four, is a quarter of the trace. At the element size of *$M_2(\mathbb{C})$ Pauli Representation* the same argument gives one half, and no other value occurs in any frame: the factor is insensitive to the frame because the trace is.

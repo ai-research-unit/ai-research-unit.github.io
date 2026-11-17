@@ -17,7 +17,7 @@
 | the spinor | the alternating form $\omega$ and the action of $\mathrm{SL}_2(\mathbb{C})$ | the Weyl spinor and its null vector | complex $2$ |
 | the qubit | the definite $H$ and the action of $\mathrm{SU}(2)$ | the state space, the Bloch ball and its sphere | real $3$ |
 
-**Boundaries.** The space, its two scalar structures, the complex structure $J$ and the norm are *Duo-Complex Numbers*; the three forms with their Gram matrices, their signatures and their isotropic sets are *The Three Canonical Forms on $\mathbb{C}^2$*; the realification and the real and imaginary parts are *The Realification of $\mathbb{C}^2$*; the lattice of subspaces, the dual and the incidence are *The Subspaces of $\mathbb{C}^2$*; the endomorphism algebra, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$ and the centraliser of $J$ are *The Endomorphisms of $\mathbb{C}^2$*; the Hopf fibration is *The Unit Sphere and the Hopf Fibration*, the Grassmannians are *Grassmannians and Stiefel Manifolds*, and the general theory of holomorphic functions of two variables is *Several Complex Variables*. The operators $L_{u}R_{\phi}$, their composition, their length and their adjoints are the companion article. Nothing of the algebra's own structure theory is repeated: the Peirce frame, the determinant of an element and the four norms are the biquaternion pair.
+**Boundaries.** The space, its two scalar structures, the complex structure $J$ and the norm are *Duo-Complex Numbers*; the three forms with their Gram matrices, their inertias and their isotropic sets are *The Three Canonical Forms on $\mathbb{C}^2$*; the realification and the real and imaginary parts are *The Realification of $\mathbb{C}^2$*; the lattice of subspaces, the dual and the incidence are *The Subspaces of $\mathbb{C}^2$*; the endomorphism algebra, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$ and the centraliser of $J$ are *The Endomorphisms of $\mathbb{C}^2$*; the Hopf fibration is *The Unit Sphere and the Hopf Fibration*, the Grassmannians are *Grassmannians and Stiefel Manifolds*, and the general theory of holomorphic functions of two variables is *Several Complex Variables*. The operators $L_{u}R_{\phi}$, their composition, their length and their adjoints are the companion article. Nothing of the algebra's own structure theory is repeated: the Peirce frame, the determinant of an element and the four norms are the biquaternion pair.
 
 **Conventions.** The space is $V=\mathbb{C}^2$ with the complex basis $e_1,e_2$ and the coordinates
 $$
@@ -73,7 +73,7 @@ $$
 
 **Definition.** The three canonical forms of the carrier are $H$, $B$ and $\omega$ above. Their properties are proved in *The Three Canonical Forms on $\mathbb{C}^2$*; the table collects them with the two entries this article needs, the isometry group and the isotropic set.
 
-| Form | Kind | Signature, realified | Isotropic set | Isometry group |
+| Form | Kind | Inertia, realified | Isotropic set | Isometry group |
 |---|---|---|---|---|
 | $H$ | Hermitian, definite | $(4,0)$ | $\{0\}$ | $\mathrm{U}(2)$ |
 | $B$ | symmetric bilinear | $(2,2)$ | two complex lines | $\mathrm{O}_2(\mathbb{C})$ |
@@ -99,8 +99,8 @@ so $\omega(Au,Av)=\det(A)\,\omega(u,v)$, and $A$ preserves $\omega$ exactly when
 |---|---|---|
 | $\operatorname{Re}H$ | symmetric, positive definite | the Euclidean metric of $\mathbb{R}^4$ |
 | $\operatorname{Im}H$ | alternating, of type $(1,1)$ | the Kähler form |
-| $\operatorname{Re}B$ | symmetric, signature $(2,2)$ | the split metric |
-| $\operatorname{Im}B$ | symmetric, signature $(2,2)$ | the second split metric |
+| $\operatorname{Re}B$ | symmetric, inertia $(2,2)$ | the split metric |
+| $\operatorname{Im}B$ | symmetric, inertia $(2,2)$ | the second split metric |
 | $\operatorname{Re}\omega$ | symplectic | the real symplectic form |
 | $\operatorname{Im}\omega$ | symplectic | the second real symplectic form |
 
@@ -199,13 +199,13 @@ $$
 \det M=w_{11}w_{22}-w_{12}w_{21}=0 .
 $$
 
-**Proposition (the determinant is a quadratic form of signature $(2,2)$).** The polar form of $\det$ is
+**Proposition (the determinant is a quadratic form of inertia $(2,2)$).** The polar form of $\det$ is
 $$
 \langle M,N\rangle=\tfrac12\bigl(w_{11}z_{22}+z_{11}w_{22}-w_{12}z_{21}-z_{12}w_{21}\bigr),
 $$
 whose Gram matrix has the eigenvalues $\pm\tfrac12$, each twice; the cone $\mathcal{C}$ is the isotropic cone of the form.
 
-*Proof.* The polar form is computed from $\det(M+N)-\det M-\det N$ and is symmetric and bilinear. In the basis $(E_{11},E_{12},E_{21},E_{22})$ its Gram matrix has $\tfrac12$ in the entries $(1,4)$ and $(4,1)$, $-\tfrac12$ in the entries $(2,3)$ and $(3,2)$, and zero elsewhere; with the ordering $(E_{11},E_{22},E_{12},E_{21})$ it is block diagonal, with the blocks $\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}$ and $-\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}$, so its eigenvalues are $\pm\tfrac12$ twice each and the signature is $(2,2)$. The isotropic set of the form is $\det M=0$.
+*Proof.* The polar form is computed from $\det(M+N)-\det M-\det N$ and is symmetric and bilinear. In the basis $(E_{11},E_{12},E_{21},E_{22})$ its Gram matrix has $\tfrac12$ in the entries $(1,4)$ and $(4,1)$, $-\tfrac12$ in the entries $(2,3)$ and $(3,2)$, and zero elsewhere; with the ordering $(E_{11},E_{22},E_{12},E_{21})$ it is block diagonal, with the blocks $\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}$ and $-\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}$, so its eigenvalues are $\pm\tfrac12$ twice each and the inertia is $(2,2)$. The isotropic set of the form is $\det M=0$.
 
 ### The Isotropic Lines
 
@@ -225,7 +225,7 @@ so $T^{\mathsf T}T=0$ exactly when the column $u$ lies on one of the two isotrop
 
 **The isotropic columns are the null directions of the operator.** A member of the cone with an isotropic column has $T^{\mathsf T}T=0$, hence is **isotropic** for the transpose form of the operator space, $\langle T,T\rangle=\operatorname{tr}(T^{\mathsf T}T)=0$. **This is isotropy and not nilpotence**: $T^{2}=\phi(u)T$ vanishes only when $\phi(u)=0$, which is a second condition on the row and not on the column, so a member with an isotropic column and $\phi(u)\neq0$ is a rank-one matrix that is null without being nilpotent. **The two isotropic lines of $B$ are therefore the two directions on which the operator becomes null for the transpose form**, and this is the only place where the isotropy of $B$ is visible as a property of an operator rather than as a property of a vector.
 
-**Remark (the same signature, and no natural identification).** The signature is the one of $\operatorname{Re}B$ on $V$, and the coincidence is not an accident of arithmetic: both are the split form in four real dimensions. **It is not an identification of the two spaces**, because $\det$ is a form on the operator space and $B$ is a form on the carrier, and no canonical map exchanges them beyond the rank-one correspondence itself.
+**Remark (the same inertia, and no natural identification).** The inertia is the one of $\operatorname{Re}B$ on $V$, and the coincidence is not an accident of arithmetic: both are the split form in four real dimensions. **It is not an identification of the two spaces**, because $\det$ is a form on the operator space and $B$ is a form on the carrier, and no canonical map exchanges them beyond the rank-one correspondence itself.
 
 ## The Hermitian Cone and the Light Cone
 
@@ -277,7 +277,7 @@ $$
 \det M=t^{2}-x^{2}-y^{2}-z^{2},\qquad \operatorname{tr}M=2t .
 $$
 
-*Proof.* The four matrices form a real basis of the four-dimensional real space of Hermitian matrices, being Hermitian, independent and four in number. The determinant identity is the computation of $\det(t\sigma_0+\vec x\cdot\vec\sigma)$ using $\sigma_j^{2}=I$, the pairwise anticommutation and $\operatorname{tr}\sigma_j=0$, which gives the quadratic form of signature $(1,3)$; the trace is $2t$ because the three Pauli matrices are traceless.
+*Proof.* The four matrices form a real basis of the four-dimensional real space of Hermitian matrices, being Hermitian, independent and four in number. The determinant identity is the computation of $\det(t\sigma_0+\vec x\cdot\vec\sigma)$ using $\sigma_j^{2}=I$, the pairwise anticommutation and $\operatorname{tr}\sigma_j=0$, which gives the quadratic form of inertia $(1,3)$; the trace is $2t$ because the three Pauli matrices are traceless.
 
 **Theorem (the Hermitian cone is the future light cone).** The map
 $$
@@ -448,9 +448,9 @@ is a fibre bundle with fibre $S^{1}$, and its fibres are the phase circles $u\ma
 
 ## Summary
 
-The carrier of this pair is the module $V=\mathbb{C}^{2}$, of complex dimension two and real dimension four, and the article reads it through the three canonical forms. The Hermitian form $H$ is definite, of realified signature $(4,0)$, with isometry group $\mathrm{U}(2)$; the symmetric form $B$ is indefinite of signature $(2,2)$, with isometry group $\mathrm{O}_2(\mathbb{C})$ and isotropic set two complex lines; the alternating form $\omega$ is nondegenerate, with isometry group $\mathrm{SL}_2(\mathbb{C})$ because $A^{\mathsf T}J_2A=\det(A)J_2$, and every complex line is isotropic for it. Each of the three gives its own identification $V\to V^{*}$, and the third is the one that differs in linearity: $B$ and $\omega$ are complex bilinear and $H$ is sesquilinear.
+The carrier of this pair is the module $V=\mathbb{C}^{2}$, of complex dimension two and real dimension four, and the article reads it through the three canonical forms. The Hermitian form $H$ is definite, of realified inertia $(4,0)$, with isometry group $\mathrm{U}(2)$; the symmetric form $B$ is indefinite of inertia $(2,2)$, with isometry group $\mathrm{O}_2(\mathbb{C})$ and isotropic set two complex lines; the alternating form $\omega$ is nondegenerate, with isometry group $\mathrm{SL}_2(\mathbb{C})$ because $A^{\mathsf T}J_2A=\det(A)J_2$, and every complex line is isotropic for it. Each of the three gives its own identification $V\to V^{*}$, and the third is the one that differs in linearity: $B$ and $\omega$ are complex bilinear and $H$ is sesquilinear.
 
-A line is a point of $\mathbb{P}^{1}$, a rank-one Hermitian projector $\pi_u=uu^{\dagger}/(u^{\dagger}u)$, and a pure state; the projective line is $S^{2}$; a flag is a line with a ray, that is invertible column, and the flags are $S^{3}$ with the Hopf fibration over the lines. The rank-one operators $u\phi^{\mathsf T}$ form a cone of complex dimension three whose projectivisation is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, with the determinant as its equation and as a quadratic form of signature $(2,2)$; the cone spans the operator space although the identity is not in it. The Hermitian rank-one matrices $uu^{\dagger}$ form a cone of real dimension three which is the fixed locus of the dagger inside the bilinear cone up to a real scale, with $\det=0$ and $\operatorname{tr}=\lVert u\rVert^{2}$, and which the Pauli coordinates identify with the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$. The two cones differ in dimension, in projectivisation and in their rulings, and the collapse of the two rulings to one is the phase quotient.
+A line is a point of $\mathbb{P}^{1}$, a rank-one Hermitian projector $\pi_u=uu^{\dagger}/(u^{\dagger}u)$, and a pure state; the projective line is $S^{2}$; a flag is a line with a ray, that is invertible column, and the flags are $S^{3}$ with the Hopf fibration over the lines. The rank-one operators $u\phi^{\mathsf T}$ form a cone of complex dimension three whose projectivisation is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, with the determinant as its equation and as a quadratic form of inertia $(2,2)$; the cone spans the operator space although the identity is not in it. The Hermitian rank-one matrices $uu^{\dagger}$ form a cone of real dimension three which is the fixed locus of the dagger inside the bilinear cone up to a real scale, with $\det=0$ and $\operatorname{tr}=\lVert u\rVert^{2}$, and which the Pauli coordinates identify with the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$. The two cones differ in dimension, in projectivisation and in their rulings, and the collapse of the two rulings to one is the phase quotient.
 
 The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor of type $(\tfrac12,0)$, and its conjugate is the second module of the pair; the duality through $\omega$ makes the dual module the module itself, and a spinor produces a null vector by $u\mapsto uu^{\dagger}$, with the double cover of the Lorentz group of kernel $\{\pm I_2\}$ and the two signs of the spinor giving the same vector. On the trace-one slice the positive cone is the Bloch ball, the Bloch vector is $\vec r=2\vec x$, the purity is $\operatorname{tr}\rho^{2}=\tfrac12(1+\lvert\vec r\rvert^{2})$, and the pure states are the unit sphere, which is the projective line. The operators of the carrier, one-sided and two-sided, their composition, their length and their adjoints, are the companion article *$M_2(\mathbb{C})$ Defining Representation : Operators*.
 
@@ -482,6 +482,6 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 
 ## Further Reading
 
-*Duo-Complex Numbers* fixes the space, its two scalar structures, the complex structure and the norm, and is the entry point of the category. *The Three Canonical Forms on $\mathbb{C}^2$* proves the properties of $H$, $B$ and $\omega$, their Gram matrices, their signatures and their isotropic sets. *The Realification of $\mathbb{C}^2$* gives the real picture, the six real forms and the decomposition of the real endomorphism algebra. *The Subspaces of $\mathbb{C}^2$* carries the lattice, the flag, the dual, the Grassmannians and the isotropic and Lagrangian subspaces. *The Endomorphisms of $\mathbb{C}^2$* carries the algebra $M_2(\mathbb{C})$, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$, the centraliser of $J$ and the biquaternion identification. *The Unit Sphere and the Hopf Fibration* carries the fibration, and *Grassmannians and Stiefel Manifolds* the general Grassmannian picture of which $\mathbb{P}^{1}$ is the first case.
+*Duo-Complex Numbers* fixes the space, its two scalar structures, the complex structure and the norm, and is the entry point of the category. *The Three Canonical Forms on $\mathbb{C}^2$* proves the properties of $H$, $B$ and $\omega$, their Gram matrices, their inertias and their isotropic sets. *The Realification of $\mathbb{C}^2$* gives the real picture, the six real forms and the decomposition of the real endomorphism algebra. *The Subspaces of $\mathbb{C}^2$* carries the lattice, the flag, the dual, the Grassmannians and the isotropic and Lagrangian subspaces. *The Endomorphisms of $\mathbb{C}^2$* carries the algebra $M_2(\mathbb{C})$, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$, the centraliser of $J$ and the biquaternion identification. *The Unit Sphere and the Hopf Fibration* carries the fibration, and *Grassmannians and Stiefel Manifolds* the general Grassmannian picture of which $\mathbb{P}^{1}$ is the first case.
 
 On the algebra side, *$M_2(\mathbb{C})$ Pauli Representation* and its operators companion read $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, with the frame, the Peirce decomposition, the trace, the determinant, the projectors, the adjugate and the norms. The companion of this article is *$M_2(\mathbb{C})$ Defining Representation : Operators*, which treats $L_{u}R_{\phi}$ as an operator, its composition, its length, its adjoints and the two cones as sets of operators. For the general size, *$M_4(\mathbb{C})$ Pauli Representation* gives the rank criterion and the determinantal variety, of which §*The Bilinear Cone and the Segre Quadric* is the two-dimensional case. For the analysis of the space, *Several Complex Variables* is the general theory and *Analysis on $\mathbb{C}^2$* its two-variable case.

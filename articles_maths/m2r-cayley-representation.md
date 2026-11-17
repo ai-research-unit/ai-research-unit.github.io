@@ -149,7 +149,7 @@ $$
 so the Gram matrix of the form $(Q,P)\mapsto\operatorname{tr}(\mathsf{M}_2(Q)\mathsf{M}_2(P))$ is
 
 $$
-G=\operatorname{diag}(2,-2),\qquad\text{signature }(1,1),
+G=\operatorname{diag}(2,-2),\qquad\text{inertia }(1,1),
 $$
 
 and in coordinates
@@ -158,7 +158,7 @@ $$
 \operatorname{tr}\bigl(\mathsf{M}_2(Q)\mathsf{M}_2(P)\bigr)=2(qp-q'p').
 $$
 
-**The reading.** The trace form on $\mathbb{C}$ is the **Minkowski form of the plane**: positive on the real axis, negative on the imaginary axis, invariant under the inner automorphisms (which are trivial here), and indefinite. It is the smallest instance of the family of trace forms of the series, whose signature is $(1,1)$ here and $(1,3)$ for the quaternions. The formula $2(qp-q'p')$ shows that it is not the Euclidean pairing of the coordinates but the Lorentzian one: the two axes count with opposite signs.
+**The reading.** The trace form on $\mathbb{C}$ is the **Minkowski form of the plane**: positive on the real axis, negative on the imaginary axis, invariant under the inner automorphisms (which are trivial here), and indefinite. It is the smallest instance of the family of trace forms of the series, whose inertia is $(1,1)$ here and $(1,3)$ for the quaternions. The formula $2(qp-q'p')$ shows that it is not the Euclidean pairing of the coordinates but the Lorentzian one: the two axes count with opposite signs.
 
 **What the trace does not see.** The imaginary coordinate. Two elements with the same real part have the same trace, so the trace is a coordinate and not a classification, and the whole spectral information of the algebra is invisible to it. The modulus, not the trace, separates the elements.
 
@@ -294,7 +294,7 @@ of determinant $-1$, trace $0$ and eigenvalues $\pm1$: these are the reflections
 
 **Three forms.**
 
-| form | definition | Gram matrix on $(1,i)$ | signature | multiplicative |
+| form | definition | Gram matrix on $(1,i)$ | inertia | multiplicative |
 |---|---|---|---|---|
 | determinant form | $\det\mathsf{M}_2(Q)=N$ | $I_2$ | $(2,0)$ | yes |
 | trace form | $\operatorname{tr}(\mathsf{M}_2(Q)\mathsf{M}_2(P))$ | $\operatorname{diag}(2,-2)$ | $(1,1)$ | no |
@@ -303,7 +303,7 @@ of determinant $-1$, trace $0$ and eigenvalues $\pm1$: these are the reflections
 
 **The determinant is the Euclidean form.** The first row is the distinguishing feature of the category: the determinant is a positive definite quadratic form on the algebra, and it is the Euclidean form of the plane. The Frobenius form is twice it, and the equality $\mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(Q)=N I_2$ is the reason.
 
-**The trace form is Lorentzian.** The second row is indefinite of signature $(1,1)$, with the real axis positive and the imaginary axis negative. It is the form under which the algebra is a Minkowski plane, and it is not equivalent to the determinant form: the two have different signatures and there is no linear change of coordinates taking one to the other. So $\mathbb{C}$ carries two inequivalent invariant forms, the Euclidean one of the norm and the Lorentzian one of the trace, and the model displays both as restrictions of forms of the ambient.
+**The trace form is Lorentzian.** The second row is indefinite of inertia $(1,1)$, with the real axis positive and the imaginary axis negative. It is the form under which the algebra is a Minkowski plane, and it is not equivalent to the determinant form: the two have different inertias and there is no linear change of coordinates taking one to the other. So $\mathbb{C}$ carries two inequivalent invariant forms, the Euclidean one of the norm and the Lorentzian one of the trace, and the model displays both as restrictions of forms of the ambient.
 
 **The Frobenius form is the metric of the ambient.** On the image it is $2N$, so it is a positive definite form proportional to the determinant form; on the whole ambient it is the standard inner product $\operatorname{tr}(A^{\mathsf T}B)$, with respect to which the transpose is the adjoint.
 
@@ -349,7 +349,7 @@ of dimension one, and it is the level set of the determinant. The model realises
 1. The Cayley matrix $\mathsf{M}_2(Q)=qI_2+q'J$ is the matrix of left multiplication by $Q$ in the basis $(1,i)$, and $\mathsf{M}_2(Q)\mathsf{M}_2(P)=\mathsf{M}_2(QP)$.
 2. The image is the two-dimensional subalgebra of conformal matrices, characterised by $MJ=JM$, by the shape $qI_2+q'J$, and by being the real matrices of the complex-linear maps of the plane.
 3. The left and right multiplications coincide, the centraliser of the image is the image, and the image is a maximal commutative subalgebra of $M_2(\mathbb{R})$.
-4. The trace is $2q$, the traceless part is the imaginary line, and the trace form is the Minkowski form of signature $(1,1)$ with Gram $\operatorname{diag}(2,-2)$.
+4. The trace is $2q$, the traceless part is the imaginary line, and the trace form is the Minkowski form of inertia $(1,1)$ with Gram $\operatorname{diag}(2,-2)$.
 5. The determinant is the norm $q^{2}+q'^{2}$, positive definite, with zero set the single point $0$; the unit criterion is the same as the invertibility criterion and the same as the non-vanishing of the determinant.
 6. There is no idempotent but $0$ and $I_2$, so there is no Peirce frame over $\mathbb{R}$; over $\mathbb{C}$ the frame exists, with the two idempotents $P_{\pm}=\tfrac12(I_2\mp iJ)$ and the two isotropic eigenlines.
 7. The eigenvalues are $\lambda=q+iq'$ and $\bar\lambda$, the diagonalising matrix is the unitary $U$ of the second-order Fourier transform, and it is a rotation by $-45^{\circ}$ on the real plane.

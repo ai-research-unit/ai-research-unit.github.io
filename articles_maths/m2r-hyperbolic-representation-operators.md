@@ -202,7 +202,7 @@ with the one-sided operator the faithful end, which is the inverted order of the
 | size | $2\times2$ | $4\times4$ |
 | rank | $2$ on the invertibles, $1$ on the null lines, $0$ at the origin | $4$, $2$, $1$ or $0$, the product of the two carrier ranks |
 | trace | $2\operatorname{Re}(QP)$ | $4qp$ |
-| determinant | $\langle QP\rangle_{*}$ | $\langle Q\rangle_{*}^{2}\langle P\rangle_{*}^{2}$ |
+| the determinant of the image | $\langle QP\rangle_{*}$ | $\langle Q\rangle_{*}^{2}\langle P\rangle_{*}^{2}$ |
 | eigenvalues | $\lambda_\pm(QP)$ | the four products $\lambda_i(Q)\lambda_j(P)$ |
 | conformal for $g\otimes g$? | yes | yes |
 

@@ -19,7 +19,7 @@ The count is three, not the two of the quaternion algebra and not the four of th
 
 The mathematical engine of the article is the matrix model. The split-quaternion algebra is isomorphic to the algebra of real two-by-two matrices, and under that isomorphism the polar decomposition above is the polar decomposition of a matrix into a positive definite symmetric factor and an orthogonal factor. Everything else in the article is that statement translated back into the algebra, with the translation made explicit so that the algebraic form can be used without passing through the matrices.
 
-Two differences from the quaternion case govern the whole article, and both come from the split-quaternion norm. The quaternion norm is positive definite, so its square root is a positive real with no choice; the split-quaternion norm has signature $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|\langle\tilde q\rangle_{\natural}|$ and the sign of $\langle\tilde q\rangle_{\natural}$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar decomposition; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the three-class classification of the corpus's *Split-Quaternion Norm and Invertibility* is carried along.
+Two differences from the quaternion case govern the whole article, and both come from the split-quaternion norm. The quaternion norm is positive definite, so its square root is a positive real with no choice; the split-quaternion norm has inertia $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|\langle\tilde q\rangle_{\natural}|$ and the sign of $\langle\tilde q\rangle_{\natural}$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar decomposition; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the three-class classification of the corpus's *Split-Quaternion Norm and Invertibility* is carried along.
 
 The conventions and the symbols are those of *Split-Quaternion Algebra* and of the corpus (*Algebra and Element Conventions*); the symbols this article uses are collected in §*Summary of Notation*.
 
@@ -53,7 +53,7 @@ The exponent follows the rule of the series: the character of the exponential is
 
 ### The Split-Quaternion Norm and the Three Classes
 
-The split-quaternion norm is the quadratic form $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ of signature $(2,2)$. It is not positive definite, and this single fact is the source of everything that distinguishes this article from the quaternion case.
+The split-quaternion norm is the quadratic form $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ of inertia $(2,2)$. It is not positive definite, and this single fact is the source of everything that distinguishes this article from the quaternion case.
 
 The form vanishes on a cone. The element $\tilde q = 1+\vec e_y$ is nonzero and satisfies
 
@@ -196,7 +196,7 @@ $$
 \langle\tilde u_{\mathrm r}\rangle_{\natural} = \frac{\langle\tilde q\rangle_{\natural}}{\det P} = \frac{\langle\tilde q\rangle_{\natural}}{|\langle\tilde q\rangle_{\natural}|} = \operatorname{sign} \langle\tilde q\rangle_{\natural} ,
 $$
 
-so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the other component of $O(2)$ when $\tilde q$ is spacelike. The discarded sign of the split-quaternion norm is exactly the determinant of $\tilde u_{\mathrm r}$.
+so the orthogonal factor lies in $SO(2)$ when $\tilde q$ is timelike and in the other component of $O(2)$ when $\tilde q$ is spacelike. The discarded sign of the split-quaternion norm is exactly the sign of $\langle\tilde u_{\mathrm r}\rangle_{\natural}$.
 
 ### Existence and Uniqueness
 
@@ -218,7 +218,7 @@ The decomposition behaves differently on the two invertible classes, and the dif
 | spacelike | $<0$ | $\sqrt{-\langle\tilde q\rangle_{\natural}}$ | unit boost | $\langle\tilde u_{\mathrm r}\rangle_{\natural} = -1$ | a reflection times a rotation, $\tilde u_{\mathrm r} = (\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,\vec e_x)\vec e_y$ |
 | lightlike | $=0$ | not defined | not defined | not defined | no decomposition |
 
-The lightlike class is the null cone, the zero divisors of *Split-Quaternion Zero Divisors*; on it $\Sigma = \tilde q\tilde q_{\tau}$ has rank one and determinant zero, so $P$ is only positive semidefinite and no positive modulus exists. The three classes are the exact statement of the domain of the theorem.
+The lightlike class is the null cone, the zero divisors of *Split-Quaternion Zero Divisors*; on it the matrix of $\Sigma = \tilde q\tilde q_{\tau}$ has rank one and determinant zero, so $P$ is only positive semidefinite and no positive modulus exists. The three classes are the exact statement of the domain of the theorem.
 
 ## The Exponential Form of the Boost
 
@@ -336,7 +336,7 @@ $$
 \tilde u_{\mathrm r} = \vec e_y ,
 $$
 
-which is the reflection with zero angle: the element is rational in the sense that its decomposition involves no transcendental factor beyond the boost. The determinant of $\tilde u_{\mathrm r}$ is $-1$, as the spacelike class requires, and the reconstruction was checked to $6.4\times10^{-13}$.
+which is the reflection with zero angle: the element is rational in the sense that its decomposition involves no transcendental factor beyond the boost. $\langle\tilde u_{\mathrm r}\rangle_{\natural}$ is $-1$, as the spacelike class requires, and the reconstruction was checked to $6.4\times10^{-13}$.
 
 ### A Lightlike Element
 
@@ -382,7 +382,7 @@ in which $b$ is the unique symmetric positive definite element with $b_{\tau} = 
 | $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | a split quaternion |
 | $\tilde{q}^{\natural} = q_t e_t - q_x \vec e_x - q_y \vec e_y - q_z \vec e_z$ | the conjugation that defines the split-quaternion norm |
 | $\tilde q_{\tau} = q_t e_t - q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ | the transpose involution, the image of the matrix transpose |
-| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, of signature $(2,2)$ |
+| $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2-q_y^2-q_z^2$ | the split-quaternion norm, of inertia $(2,2)$ |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{H}_{\mathrm{spl}} \to M_2(\mathbb{R})$ |
 | $\Sigma = \tilde q\tilde q_{\tau}$, $P = \sqrt{\Sigma}$ | the positive element and its symmetric positive definite square root |
 | $r = \sqrt{|\langle\tilde q\rangle_{\natural}|}$ | the modulus |

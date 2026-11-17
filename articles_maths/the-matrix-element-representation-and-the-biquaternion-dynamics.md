@@ -20,7 +20,7 @@ $$
 \mathsf{M}_2(\tilde Q_1)=\begin{pmatrix}Q_{1t}-iQ_{1z}&-iQ_{1x}-Q_{1y}\\-iQ_{1x}+Q_{1y}&Q_{1t}+iQ_{1z}\end{pmatrix},\qquad Q_{1,\mu}=q_\mu+iq'_\mu ,
 $$
 
-of determinant $\langle\tilde Q_1\rangle_{\natural}=Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q_{1z}^2$ and trace $2Q_{1t}$.
+of determinant $\langle\tilde Q_1\rangle_{\natural}=Q_{1t}^2+Q_{1x}^2+Q_{1y}^2+Q_{1z}^2$ and trace $2Q_{1t}$, read on the matrix.
 
 ## The Model as a Model of the Dynamics
 

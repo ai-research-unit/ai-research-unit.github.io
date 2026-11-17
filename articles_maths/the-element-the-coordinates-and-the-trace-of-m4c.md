@@ -199,7 +199,7 @@ $$
 
 The trace is one of those coordinates, $\operatorname{tr}A=4c_{tt}$, because $T_{tt}=\mathrm I_4$ is the only basis element with a nonzero trace.
 
-**The trace pairing is diagonal here, and its signs are the two halves.** In the matrix-unit basis the trace pairing is a permutation matrix: non-degenerate, but silent about signature. In the axis-free basis it is diagonal,
+**The trace pairing is diagonal here, and its signs are the two halves.** In the matrix-unit basis the trace pairing is a permutation matrix: non-degenerate, but silent about inertia. In the axis-free basis it is diagonal,
 
 $$
 \operatorname{tr}\bigl(T_{\mu\nu}T_{\rho\sigma}\bigr)=\pm4\,\delta_{\mu\rho}\delta_{\nu\sigma},
@@ -212,7 +212,7 @@ $$
 6=\frac{4\cdot3}{2}=\dim\operatorname{Skew}_4,
 $$
 
-and the signature of the trace pairing on $M_4(\mathbb{C})$ is $(10,6)$. The two halves of *The Matrix Algebra $M_4(\mathbb{C})$* are the positive and the negative eigenspaces of the pairing, and the axis-free basis exhibits them as a coordinate split, with no diagonalisation performed.
+and the inertia of the trace pairing on $M_4(\mathbb{C})$ is $(10,6)$. The two halves of *The Matrix Algebra $M_4(\mathbb{C})$* are the positive and the negative eigenspaces of the pairing, and the axis-free basis exhibits them as a coordinate split, with no diagonalisation performed.
 
 **What each basis is for.** The matrix units are the definition of the product and the basis in which the theorems are stated. The axis-free basis is the basis in which the operators of the corpus are short, and in which the trace pairing is read off. Every $E_{ij}$ is a sum of four of the sixteen, so a table written in matrix units overstates the number of products by a factor of four.
 

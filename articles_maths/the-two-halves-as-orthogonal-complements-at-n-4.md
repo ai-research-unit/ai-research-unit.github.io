@@ -6,7 +6,7 @@
 
 The article proves $\operatorname{tr}(SK)=0$, shows that the direct sum is orthogonal for the trace pairing and for the Hilbert–Schmidt form alike, explains why "orthogonal" and "definite" are different statements and that the trace pairing is indefinite on each half over $\mathbb{C}$ even while nondegenerate, and records that neither half is an ideal or a subalgebra.
 
-It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$* for the definitions and the projections, and *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$* for the signature. The case $n=2$ is *The Two Halves as Orthogonal Complements at $n=2$*. The forms themselves are *The Hilbert–Schmidt Form at $n=4$*.
+It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=4$* for the definitions and the projections, and *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$* for the inertia. The case $n=2$ is *The Two Halves as Orthogonal Complements at $n=2$*. The forms themselves are *The Hilbert–Schmidt Form at $n=4$*.
 
 ## The Orthogonality
 
@@ -34,7 +34,7 @@ It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=
 
 **Proof.** For symmetric $X$ one has $X_{ji}=X_{ij}$, so the diagonal of $X^{2}$ sums to $\sum_{i,j}X_{ij}^{2}$. For antisymmetric $K$ one has $K_{ji}=-K_{ij}$, so the same sum carries a minus sign and each unordered pair is counted twice.
 
-**Corollary.** Over $\mathbb{R}$ the form $\beta$ is positive definite on $\operatorname{Sym}_4(\mathbb{R})$ and negative definite on $\operatorname{Skew}_4(\mathbb{R})$, hence of signature $(10,6)$ on $M_4(\mathbb{R})$.
+**Corollary.** Over $\mathbb{R}$ the form $\beta$ is positive definite on $\operatorname{Sym}_4(\mathbb{R})$ and negative definite on $\operatorname{Skew}_4(\mathbb{R})$, hence of inertia $(10,6)$ on $M_4(\mathbb{R})$.
 
 **Proof.** The two displays are sums of squares with a sign, and the halves are orthogonal.
 
@@ -84,7 +84,7 @@ with $+4$ on the ten symmetric elements and $-4$ on the six antisymmetric ones. 
 
 For symmetric $S$ and antisymmetric $K$ the trace $\operatorname{tr}(SK)$ equals its own negative, so the two halves are orthogonal for the trace pairing and for the Hilbert–Schmidt form, and each is the other's orthogonal complement because the algebra is $10+6=16$ and the trace pairing is nondegenerate.
 
-On the symmetric half the trace form is the sum of the squares of the entries, on the antisymmetric half minus twice the sum over the upper triangle; over $\mathbb{R}$ that makes the form positive definite on one half and negative definite on the other, of signature $(10,6)$, and over $\mathbb{C}$ it makes the form nondegenerate but isotropic on each half. Orthogonality is field-independent; definiteness is not.
+On the symmetric half the trace form is the sum of the squares of the entries, on the antisymmetric half minus twice the sum over the upper triangle; over $\mathbb{R}$ that makes the form positive definite on one half and negative definite on the other, of inertia $(10,6)$, and over $\mathbb{C}$ it makes the form nondegenerate but isotropic on each half. Orthogonality is field-independent; definiteness is not.
 
 Neither half is an ideal and neither is closed under the product; the symmetric half is a Jordan algebra and the antisymmetric half a Lie algebra. In the axis-free basis the split is a split of coordinates with a sign of $4$ attached to each element, and the orthogonality is the vanishing of every cross pairing.
 
@@ -102,7 +102,7 @@ Neither half is an ideal and neither is closed under the product; the symmetric 
 ## Further Reading
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for orthogonal projections and the trace inner product.
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the signature computed in the axis-free basis.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the inertia computed in the axis-free basis.
 - [The Hilbert–Schmidt Form at $n=4$](the-hilbert-schmidt-form-at-n-4.html), for the definite form and its two orthonormal bases.
 - [The Jordan Algebra $\operatorname{Sym}_4$](the-jordan-algebra-sym-4.html), for the product that the symmetric half does support.
 - [The Two Halves as Orthogonal Complements at $n=2$](the-two-halves-as-orthogonal-complements-at-n-2.html), for the same argument at order two.

@@ -208,7 +208,7 @@ $$
 \operatorname{tr}\bigl(\mathsf{M}_2(Q)\mathsf{M}_2(P)\bigr)=2qp .
 $$
 
-**The reading.** The trace form is **degenerate**, of rank one, and its radical is exactly the maximal ideal: $\operatorname{tr}(\mathsf{M}_2(Q)\mathsf{M}_2(\varepsilon))=0$ for every $Q$, while $\operatorname{tr}(\mathsf{M}_2(Q)^{2})=2q^{2}$ does not vanish for $Q\notin\mathrm{M}$. The three categories of the block now separate cleanly by their trace forms: $\operatorname{diag}(2,-2)$ of signature $(1,1)$ for the complex numbers, $\operatorname{diag}(2,2)$ positive definite for the split-complex numbers, and $\operatorname{diag}(2,0)$ degenerate for the dual numbers. The form is not a metric in this category; it is a functional in disguise, and the direction it does not see is the direction in which the algebra is not reduced.
+**The reading.** The trace form is **degenerate**, of rank one, and its radical is exactly the maximal ideal: $\operatorname{tr}(\mathsf{M}_2(Q)\mathsf{M}_2(\varepsilon))=0$ for every $Q$, while $\operatorname{tr}(\mathsf{M}_2(Q)^{2})=2q^{2}$ does not vanish for $Q\notin\mathrm{M}$. The three categories of the block now separate cleanly by their trace forms: $\operatorname{diag}(2,-2)$ of inertia $(1,1)$ for the complex numbers, $\operatorname{diag}(2,2)$ positive definite for the split-complex numbers, and $\operatorname{diag}(2,0)$ degenerate for the dual numbers. The form is not a metric in this category; it is a functional in disguise, and the direction it does not see is the direction in which the algebra is not reduced.
 
 ## The Determinant
 

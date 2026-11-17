@@ -202,7 +202,7 @@ $$
 \operatorname{tr}\bigl(\mathsf{M}_2(\tilde e_\mu)\mathsf{M}_2(\tilde e_\nu)\bigr)=\operatorname{diag}(2,-2,-2,-2),
 $$
 
-of signature $(1,3)$. So the trace form is the Minkowski form on the four real coordinates, positive on the scalar part and negative on the pure part. This is the exact opposite of the split-quaternion case, where the determinant was the indefinite form and the trace form had signature $(3,1)$; here the determinant is definite and the trace form is the Lorentzian one.
+of inertia $(1,3)$. So the trace form is the Minkowski form on the four real coordinates, positive on the scalar part and negative on the pure part. This is the exact opposite of the split-quaternion case, where the determinant was the indefinite form and the trace form had inertia $(3,1)$; here the determinant is definite and the trace form is the Lorentzian one.
 
 ## The Determinant
 
@@ -327,7 +327,7 @@ the cone on the special unitary group. The polar decomposition of a quaternion i
 
 **Three forms.** The model carries three natural forms, and the determinant is one of them.
 
-| form | definition | Gram matrix on the four units | signature | invariant under |
+| form | definition | Gram matrix on the four units | inertia | invariant under |
 |---|---|---|---|---|
 | determinant form | $N=\det\mathsf{M}_2(\tilde q)$ | $I_4$ | $(4,0)$ | the product |
 | trace form | $\langle A,B\rangle_{\operatorname{tr}}=\operatorname{tr}(AB)$ | $\operatorname{diag}(2,-2,-2,-2)$ | $(1,3)$ | conjugation by invertibles |
@@ -335,7 +335,7 @@ the cone on the special unitary group. The polar decomposition of a quaternion i
 
 **The determinant form is Euclidean.** Its Gram matrix is the identity in the basis of the four units, so it is the ordinary Euclidean form of $\mathbb{R}^{4}$ under the coordinates $(q_t,q_x,q_y,q_z)$, and its group of isometries is $O(4)$. Multiplicativity then says that the model embeds the invertibles into $O(4)$ up to scale, which is the double cover $SU(2)\to SO(3)$ operating on the pure part.
 
-**The trace form is Minkowski.** Its Gram matrix is $\operatorname{diag}(2,-2,-2,-2)$, of signature $(1,3)$, and it is invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$. It is the form of the Minkowski space of signature $(1,3)$ that the quaternion algebra acts on by Lorentz transformations, and it is **not** the determinant form.
+**The trace form is Minkowski.** Its Gram matrix is $\operatorname{diag}(2,-2,-2,-2)$, of inertia $(1,3)$, and it is invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$. It is the form of the Minkowski space of inertia $(1,3)$ that the quaternion algebra acts on by Lorentz transformations, and it is **not** the determinant form.
 
 **The Frobenius form is a Hermitian metric.** $\operatorname{tr}(A^{\dagger}B)$ is a positive definite Hermitian form on $M_2(\mathbb{C})$, its restriction to the image is $2$ times the Euclidean form, and it is the inner product with respect to which the conjugate transpose is the adjoint. The three forms therefore play three different roles: the determinant is algebraic and multiplicative, the trace form is the invariant of the group action, and the Frobenius form is the metric of the matrix space.
 
@@ -358,7 +358,7 @@ $$
 $$
 The word is the square of the matrix closed by a trace, and it is the trace form of §*The Trace* read on one element.
 
-**The collapse to two.** Over $\mathbb{R}$ the coefficients are real, so $\lvert q_\mu\rvert^{2}=q_\mu^{2}$ and the four brackets are two: $H=N$ and $K=P$. The Hermitian bracket is the quaternionic one because the conjugation of the coefficients is trivial here, and the two that remain are the ones the article has already named: $N$ is the determinant, multiplicative and definite, and $P$ is the trace form on one element, indefinite of signature $(1,3)$. In the biquaternion algebra the coefficients are complex and the four are distinct; the widening of $\mathbb{R}$ to $\mathbb{C}$ is exactly what separates them, as §*The Real Slice of the Biquaternion Display* records.
+**The collapse to two.** Over $\mathbb{R}$ the coefficients are real, so $\lvert q_\mu\rvert^{2}=q_\mu^{2}$ and the four brackets are two: $H=N$ and $K=P$. The Hermitian bracket is the quaternionic one because the conjugation of the coefficients is trivial here, and the two that remain are the ones the article has already named: $N$ is the determinant, multiplicative and definite, and $P$ is the trace form on one element, indefinite of inertia $(1,3)$. In the biquaternion algebra the coefficients are complex and the four are distinct; the widening of $\mathbb{R}$ to $\mathbb{C}$ is exactly what separates them, as §*The Real Slice of the Biquaternion Display* records.
 
 ## The Subspaces
 
@@ -398,7 +398,7 @@ so the Hermitian part is the scalar part, of dimension one, and the anti-Hermiti
 6. The discriminant is $-4\lVert\vec v\rVert^{2}$, so the eigenvalues are the conjugate pair $q_t\pm i\lVert\vec v\rVert$ and every non-scalar element is diagonalisable.
 7. The spectral projectors are $\tfrac12(I_2\mp i\mathsf{M}_2(u))$, Hermitian, rank one, orthogonal, they are the images of the idempotents $\tfrac12(e_t\mp iu)$ of the complexified algebra, and $P_\pm$ belongs to $\lambda_\pm$.
 8. The adjugate is the conjugate transpose, every element of the image is conformal normal, and $\mathsf{M}_2(\mathbb{H})\setminus\{0\}=\mathbb{R}_{>0}\cdot SU(2)$.
-9. Three forms coexist: the determinant, a quadratic form of signature $(4,0)$, equal to the norm and multiplicative; the trace form, of signature $(1,3)$ and invariant under the inner automorphisms; the Frobenius form $\operatorname{tr}(A^{\dagger}B)$, positive definite and Hermitian, twice the restriction of the Euclidean form.
+9. Three forms coexist: the determinant, a quadratic form of inertia $(4,0)$, equal to the norm and multiplicative; the trace form, of inertia $(1,3)$ and invariant under the inner automorphisms; the Frobenius form $\operatorname{tr}(A^{\dagger}B)$, positive definite and Hermitian, twice the restriction of the Euclidean form.
 10. The Hermitian part of an element of the image is scalar, and the Hermitian/anti-Hermitian splitting is the splitting by trace.
 11. The four brackets collapse to two, $H=N$ and $K=P$, and the display is the real slice of the biquaternion $\mathsf{M}_2$ at $Q_\mu=q_\mu$.
 

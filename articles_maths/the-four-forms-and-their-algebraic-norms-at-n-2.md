@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The star can be read in each slot or in neither, and this gives exactly four forms on $M_2(\mathbb{C})$ — two complex bilinear of signature $(4,4)$ and two Hermitian of signature $(8,0)$ — whose values at two equal arguments are the four algebraic norms.**
+**The star can be read in each slot or in neither, and this gives exactly four forms on $M_2(\mathbb{C})$ — two complex bilinear of inertia $(4,4)$ and two Hermitian of inertia $(8,0)$ — whose values at two equal arguments are the four algebraic norms.**
 
-The article lists the four forms, proves which of them are symmetric and which conjugate-symmetric, computes their signatures over the reals, computes the four norms $\operatorname{tr}(X^{2})$, $\operatorname{tr}(X^{*}X)$, $\operatorname{tr}(XX^{*})$ and $\operatorname{tr}(X^{*}X^{*})$, proves that the determinant is the multiplicative norm and the Hilbert–Schmidt norm the definite one, and proves that no norm of the four is both. It assumes *The Hilbert–Schmidt Form at $n=2$* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*, and it takes the determinant from *The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$*.
+The article lists the four forms, proves which of them are symmetric and which conjugate-symmetric, computes their inertias over the reals, computes the four norms $\operatorname{tr}(X^{2})$, $\operatorname{tr}(X^{*}X)$, $\operatorname{tr}(XX^{*})$ and $\operatorname{tr}(X^{*}X^{*})$, proves that the determinant is the multiplicative norm and the Hilbert–Schmidt norm the definite one, and proves that no norm of the four is both. It assumes *The Hilbert–Schmidt Form at $n=2$* and *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*, and it takes the determinant from *The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$*.
 
 On the biquaternion side the same four objects are developed in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, and the dictionary between the two languages is *$M_2(\mathbb{C})$ Pauli Representation*.
 
@@ -28,15 +28,15 @@ $$
 
 **Proof.** The first is the conjugate symmetry of $H$ read in the other order, and the second is the identity $\operatorname{tr}(X^{*}Y^{*})=\overline{\operatorname{tr}(XY)}$ applied to the starred pair.
 
-## The Signatures
+## The Inertias
 
-**Theorem.** Over the reals the four quadratic forms have the signatures $(4,4)$, $(8,0)$, $(8,0)$ and $(4,4)$.
+**Theorem.** Over the reals the four quadratic forms have the inertias $(4,4)$, $(8,0)$, $(8,0)$ and $(4,4)$.
 
 **Proof.** On the Gram matrix of $P$ in the eight real matrices $E_{ij}$ and $iE_{ij}$ the eigenvalues are four positive and four negative; on that of $H$ they are eight positive; $H'$ has the same Gram matrix as $H$ after transposition of the pair; and $\mathrm{Kr}$ has the same as $P$ after conjugation.
 
 **Corollary.** The two bilinear forms are indefinite of the maximal split type, and the two sesquilinear forms are positive definite.
 
-**Proof.** A form of signature $(4,4)$ on a real space of dimension eight has the maximal possible number of negative directions, and $(8,0)$ is the definite case.
+**Proof.** A form of inertia $(4,4)$ on a real space of dimension eight has the maximal possible number of negative directions, and $(8,0)$ is the definite case.
 
 **Corollary.** On the real matrices the four forms collapse in pairs: $P=\mathrm{Kr}$ and $H=H'$, because the star is the transpose there.
 
@@ -82,15 +82,15 @@ $$
 
 ## The Two Real Forms
 
-**Proposition.** On the real matrices the form $P$ is the trace form of signature $(3,1)$, and the form $H$ is the entrywise product of signature $(4,0)$.
+**Proposition.** On the real matrices the form $P$ is the trace form of inertia $(3,1)$, and the form $H$ is the entrywise product of inertia $(4,0)$.
 
-**Proof.** For real matrices $X^{*}=X^{\mathsf T}$, so $P$ is $\operatorname{tr}(XY)$ and $H$ is $\operatorname{tr}(X^{\mathsf T}Y)$, and the signatures are those computed in *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$* and *The Hilbert–Schmidt Form at $n=2$*.
+**Proof.** For real matrices $X^{*}=X^{\mathsf T}$, so $P$ is $\operatorname{tr}(XY)$ and $H$ is $\operatorname{tr}(X^{\mathsf T}Y)$, and the inertias are those computed in *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$* and *The Hilbert–Schmidt Form at $n=2$*.
 
 **Proposition.** On the quaternionic real form, the matrices $X=\begin{pmatrix}a&b\\-\bar b&\bar a\end{pmatrix}$, the determinant is $\lvert a\rvert^{2}+\lvert b\rvert^{2}$, positive definite.
 
 **Proof.** $\det X=a\bar a+b\bar b$ by the direct expansion of the two-by-two determinant.
 
-**Corollary.** The two real forms separate by their norms: on $\mathbb{H}$ the determinant is definite, and on $M_2(\mathbb{R})$ it is indefinite of signature $(2,2)$.
+**Corollary.** The two real forms separate by their norms: on $\mathbb{H}$ the determinant is definite, and on $M_2(\mathbb{R})$ it is indefinite of inertia $(2,2)$.
 
 **Proof.** The determinant on $M_2(\mathbb{R})$ has the eigenvalues $1,1,-1,-1$ in the basis of matrix units, while on $\mathbb{H}$ it is a sum of two squares.
 
@@ -106,9 +106,9 @@ $$
 
 ## Summary
 
-The four forms are $P(X,Y)=\operatorname{tr}(XY)$, $H(X,Y)=\operatorname{tr}(X^{*}Y)$, $H'(X,Y)=\operatorname{tr}(XY^{*})$ and $\mathrm{Kr}(X,Y)=\operatorname{tr}(X^{*}Y^{*})$, the four placements of the star, with the signatures $(4,4)$, $(8,0)$, $(8,0)$ and $(4,4)$ over the reals; the first and the last are complex bilinear and the middle two are Hermitian.
+The four forms are $P(X,Y)=\operatorname{tr}(XY)$, $H(X,Y)=\operatorname{tr}(X^{*}Y)$, $H'(X,Y)=\operatorname{tr}(XY^{*})$ and $\mathrm{Kr}(X,Y)=\operatorname{tr}(X^{*}Y^{*})$, the four placements of the star, with the inertias $(4,4)$, $(8,0)$, $(8,0)$ and $(4,4)$ over the reals; the first and the last are complex bilinear and the middle two are Hermitian.
 
-Their norms are $\operatorname{tr}(X^{2})$, the sum of the squares of the moduli of the entries twice, and the conjugate of $\operatorname{tr}(X^{2})$. The determinant is multiplicative but not definite, the Hilbert–Schmidt norm definite but not multiplicative, and no norm of the four is both: a nonzero nilpotent forbids it. On $\mathbb{H}$ the determinant is definite, on $M_2(\mathbb{R})$ it has the signature $(2,2)$.
+Their norms are $\operatorname{tr}(X^{2})$, the sum of the squares of the moduli of the entries twice, and the conjugate of $\operatorname{tr}(X^{2})$. The determinant is multiplicative but not definite, the Hilbert–Schmidt norm definite but not multiplicative, and no norm of the four is both: a nonzero nilpotent forbids it. On $\mathbb{H}$ the determinant is definite, on $M_2(\mathbb{R})$ it has the inertia $(2,2)$.
 
 ## Summary of Notation
 
@@ -126,5 +126,5 @@ Their norms are $\operatorname{tr}(X^{2})$, the sum of the squares of the moduli
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the determinant, its multiplicativity and the nilpotent case.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Hilbert–Schmidt norm and its submultiplicativity.
 - [The Hilbert–Schmidt Form at $n=2$](the-hilbert-schmidt-form-at-n-2.html), for the definite form among the four.
-- [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the split form among the four.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the split form among the four.
 - [The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$](the-two-base-fields-m2r-inside-m2c.html), for the two real forms on which the norms separate.

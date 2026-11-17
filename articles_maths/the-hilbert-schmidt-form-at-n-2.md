@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a Hermitian inner product on $M_2(\mathbb{C})$, positive definite of signature $(8,0)$ over the reals, and its real part gives the matrix space the structure of a real Euclidean space of dimension eight.**
+**The Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a Hermitian inner product on $M_2(\mathbb{C})$, positive definite of inertia $(8,0)$ over the reals, and its real part gives the matrix space the structure of a real Euclidean space of dimension eight.**
 
-The article defines the form, proves that it is positive definite, identifies its norm with the sum of the squares of the entries, exhibits the eight vectors of an orthonormal real basis, shows that the four corners are mutually orthogonal, that the Hermitian and anti-Hermitian halves are orthogonal, and that on the real symmetric matrices the form agrees with the trace form while on all real matrices it is the entrywise product. It assumes *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+The article defines the form, proves that it is positive definite, identifies its norm with the sum of the squares of the entries, exhibits the eight vectors of an orthonormal real basis, shows that the four corners are mutually orthogonal, that the Hermitian and anti-Hermitian halves are orthogonal, and that on the real symmetric matrices the form agrees with the trace form while on all real matrices it is the entrywise product. It assumes *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* and *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 It defers the four forms with their norms to *The Four Forms and Their Algebraic Norms at $n=2$*, and the polar decomposition of an operator to *The Adjoints and the Polar Decomposition of an Operator at $n=2$*.
 
@@ -20,7 +20,7 @@ It defers the four forms with their norms to *The Four Forms and Their Algebraic
 
 **Proof.** $\operatorname{tr}(X^{*}X)=\sum_{i,j}\lvert x_{ij}\rvert^{2}$, a sum of squares of moduli, which is zero exactly when every entry vanishes.
 
-**Corollary.** The real part of the form is a real inner product on the eight-dimensional real space, of signature $(8,0)$.
+**Corollary.** The real part of the form is a real inner product on the eight-dimensional real space, of inertia $(8,0)$.
 
 **Proof.** The real part is real bilinear and its quadratic form is the sum of the squares of the eight real coordinates of the matrix.
 
@@ -80,9 +80,9 @@ $$
 
 **Proof.** $\operatorname{tr}(X^{\mathsf T}Y)=\sum_{ij}x_{ij}y_{ij}$, whereas $\operatorname{tr}(XY)=\sum_{ij}x_{ij}y_{ji}$; the two sums differ on a matrix that is not symmetric.
 
-**Corollary.** On the real matrices the Hilbert–Schmidt form is positive definite of signature $(4,0)$, while the trace form has signature $(3,1)$.
+**Corollary.** On the real matrices the Hilbert–Schmidt form is positive definite of inertia $(4,0)$, while the trace form has inertia $(3,1)$.
 
-**Proof.** The entrywise product is the Euclidean product of the four entries, and the trace form was computed with the signature $(3,1)$ in *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+**Proof.** The entrywise product is the Euclidean product of the four entries, and the trace form was computed with the inertia $(3,1)$ in *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 **The two forms answer different questions.** The Hilbert–Schmidt form measures the size of the entries, and the trace form measures the size in the sense of the algebra, with the antisymmetric direction counting negatively.
 
@@ -108,9 +108,9 @@ $$
 
 ## Summary
 
-The Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a Hermitian inner product on $M_2(\mathbb{C})$ whose real part is positive definite of signature $(8,0)$; its norm is the Euclidean norm of the four complex entries, and the eight matrices $E_{ij}$ and $iE_{ij}$ are an orthonormal real basis.
+The Hilbert–Schmidt form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a Hermitian inner product on $M_2(\mathbb{C})$ whose real part is positive definite of inertia $(8,0)$; its norm is the Euclidean norm of the four complex entries, and the eight matrices $E_{ij}$ and $iE_{ij}$ are an orthonormal real basis.
 
-The four corners are mutually orthogonal, the Hermitian and anti-Hermitian halves are orthogonal for the real part, and on the real matrices the form is the entrywise product, positive definite of signature $(4,0)$, which agrees with the trace form on the symmetric half and differs from it elsewhere. The adjoint of $\operatorname{ad}_{A}$ is $\operatorname{ad}_{A^{*}}$, and the norm is submultiplicative against the operator norm.
+The four corners are mutually orthogonal, the Hermitian and anti-Hermitian halves are orthogonal for the real part, and on the real matrices the form is the entrywise product, positive definite of inertia $(4,0)$, which agrees with the trace form on the symmetric half and differs from it elsewhere. The adjoint of $\operatorname{ad}_{A}$ is $\operatorname{ad}_{A^{*}}$, and the norm is submultiplicative against the operator norm.
 
 ## Summary of Notation
 
@@ -128,5 +128,5 @@ The four corners are mutually orthogonal, the Hermitian and anti-Hermitian halve
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Hilbert–Schmidt norm, its inequalities and its comparison with the operator norm.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the entrywise and the trace products on matrix spaces.
 - [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$](the-two-halves-over-c-hermitian-and-anti-hermitian-at-n-2.html), for the two orthogonal halves.
-- [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the indefinite form that the Hilbert–Schmidt form replaces.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the indefinite form that the Hilbert–Schmidt form replaces.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the adjoint action whose adjoint is computed here.

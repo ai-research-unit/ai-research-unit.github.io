@@ -64,7 +64,7 @@ $$
 
 for every $A$, and the whole derivation algebra is contained in the anti-self-adjoint endomorphisms of the trace form. Measured on $100$ random triples at $n=3,4$, the identity held in every case.
 
-**Consequence: the derivation algebra is inside a Lie algebra of anti-self-adjoint operators.** The anti-self-adjoint endomorphisms of $\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ form a Lie algebra isomorphic to $\mathfrak{so}(n^{2})$ in the metric of signature $(n(n+1)/2,n(n-1)/2)$, and the derivations are a subspace of dimension $n^{2}-1$ inside the one of dimension $n^{2}(n^{2}-1)/2$. So the derivations are a small Lie subalgebra of the full anti-Hermitian algebra, and the trace form does not distinguish $D_A$ by its anti-self-adjointness at all.
+**Consequence: the derivation algebra is inside a Lie algebra of anti-self-adjoint operators.** The anti-self-adjoint endomorphisms of $\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ form a Lie algebra isomorphic to $\mathfrak{so}(n^{2})$ in the metric of inertia $(n(n+1)/2,n(n-1)/2)$, and the derivations are a subspace of dimension $n^{2}-1$ inside the one of dimension $n^{2}(n^{2}-1)/2$. So the derivations are a small Lie subalgebra of the full anti-Hermitian algebra, and the trace form does not distinguish $D_A$ by its anti-self-adjointness at all.
 
 **The trace form is the invariant form and this is why.** A bilinear form $\langle X,Y\rangle=\operatorname{tr}(F(X)Y)$ is invariant under all derivations only when $F$ commutes with every conjugation, so $F$ is a scalar and the form is a multiple of the trace form. So the anti-self-adjointness of every derivation for $\operatorname{tr}(XY)$ is the statement that the trace form is the invariant form of the algebra, and it holds for no other nondegenerate form.
 
@@ -128,7 +128,7 @@ $$
 
 **At $n=2$ the derivations are three-dimensional.** $\operatorname{Der}M_2(\mathbb{R})\cong\mathfrak{sl}_2(\mathbb{R})$, of dimension $3$, and it is isomorphic to $\mathfrak{so}(2,1)$ as a real Lie algebra. The operator space $M_2(\mathbb{R})$ has dimension $4$, and the derivations are the traceless part.
 
-**The trace-form anti-self-adjointness is total and the Hilbert–Schmidt one is not.** Every $D_A$ on $M_2(\mathbb{R})$ is anti-self-adjoint for $\operatorname{tr}(XY)$, whose signature is $(3,1)$, so the derivations sit inside $\mathfrak{so}(3,1)$; for the Hilbert–Schmidt form only the antisymmetric $A$ give anti-Hermitian derivations, and those form the one-dimensional subspace of the rotations. So the definite form separates the rotation direction from the two stretch directions, and the invariant form does not.
+**The trace-form anti-self-adjointness is total and the Hilbert–Schmidt one is not.** Every $D_A$ on $M_2(\mathbb{R})$ is anti-self-adjoint for $\operatorname{tr}(XY)$, whose inertia is $(3,1)$, so the derivations sit inside $\mathfrak{so}(3,1)$; for the Hilbert–Schmidt form only the antisymmetric $A$ give anti-Hermitian derivations, and those form the one-dimensional subspace of the rotations. So the definite form separates the rotation direction from the two stretch directions, and the invariant form does not.
 
 **The anti-Hermitian derivation at $n=2$ is a complex structure on the symmetric half.** The element $A=J$ gives $D_J$, which maps $\operatorname{Sym}_2$ to $\operatorname{Skew}_2$; on the traceless part of $\operatorname{Sym}_2$ one has $D_J^{2}=-4$, and $D_J^{2}=0$ on the scalars, so $D_J/2$ is a complex structure on the two-dimensional traceless part. The conjugation $e^{tJ}$ is the circle of rotations, and its derivative is $D_J$.
 
@@ -151,6 +151,6 @@ The derivations of $M_n(\mathbb{R})$ are the maps $D_A(X)=[A,X]$, they satisfy t
 
 - Nathan Jacobson, *Lie Algebras* (Dover, 1979), for the theorem that the derivations of a central simple algebra are inner.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (AMS, 1998), for the derivation algebras of the classical algebras and their involutions.
-- [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the invariant form and its signs.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the invariant form and its signs.
 - [The Hilbert–Schmidt Form](the-hilbert-schmidt-form.html), for the definite form and its failure of invariance.
 - [The Lie Algebra $\operatorname{Skew}_n\cong\mathfrak{so}(n)$](the-lie-algebra-skew-n-and-so-n-over-r.html), for the bracket used in the Leibniz rule.

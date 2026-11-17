@@ -29,7 +29,7 @@ $$
 
 **The scaling by a half makes the basis orthonormal.** The matrices $I/\sqrt2$, $\sigma_{3}/\sqrt2$, $\sigma_{1}/\sqrt2$ are orthonormal for the trace form on the symmetric half and $J/\sqrt2$ has squared length $-1$.
 
-**Proof.** Divide the four squared lengths by $2$; three are $+1$ and one is $-1$, which is the signature $(3,1)$.
+**Proof.** Divide the four squared lengths by $2$; three are $+1$ and one is $-1$, which is the inertia $(3,1)$.
 
 ## The Table $SS$
 

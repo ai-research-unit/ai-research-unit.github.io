@@ -6,7 +6,7 @@
 
 **Why the split case is where the model is transparent.** A matrix model of an algebra carries two structures at once, the algebra structure and the action on a plane. When the model is surjective the two coincide in the simplest possible way, because the plane is the algebra and the action is the product. Every invariant of the element becomes an invariant of its matrix with no remainder: the norm becomes the determinant, twice the scalar part becomes the trace, the conjugations become the adjugate and the transpose, the idempotents become the rank-one projections, and the zero divisors become the singular matrices. The article follows that correspondence section by section, and each section names what the correspondence does **not** preserve, since the exceptions are where the algebra differs from a generic matrix algebra.
 
-**What the model costs.** Two properties of the algebra become less visible rather than more. The first is the trace: the matrix trace of an element is twice its scalar part, so the scalar part is half the trace and no matrix statement names the scalar part directly. The second is the signature: the determinant is a form of signature $(2,2)$, and a matrix algebra over $\mathbb{R}$ has no intrinsic reason to prefer it, so the model hides that the algebra is $\mathrm{Cl}_{1,1}$ and not $\mathrm{Cl}_{2,0}$. Both costs are paid once and are then harmless.
+**What the model costs.** Two properties of the algebra become less visible rather than more. The first is the trace: the matrix trace of an element is twice its scalar part, so the scalar part is half the trace and no matrix statement names the scalar part directly. The second is the inertia: the determinant is a form of inertia $(2,2)$, and a matrix algebra over $\mathbb{R}$ has no intrinsic reason to prefer it, so the model hides that the algebra is $\mathrm{Cl}_{1,1}$ and not $\mathrm{Cl}_{2,0}$. Both costs are paid once and are then harmless.
 
 **Boundaries.** The algebra, its multiplication table, its centre, its simplicity and its units are *Split-Quaternion Algebra* and *Split-Quaternion Norm and Invertibility*; the element, its coordinates and its involutions are *Split-Quaternion Subspaces and the Involutions*. The zero divisors are *Split-Quaternion Zero Divisors*, the spectrum and its degeneracies are *Spectral Regularity and Degeneracy in the Split-Quaternion Algebra*, the modules are *Split-Quaternion Linear Representations*, and the projective geometry of the null quadric is *Split-Quaternion Null Quadric and Projective Geometry*. The operators of the model, one-sided and two-sided, are the companion article *$M_2(\mathbb{R})$ Standard Representation : Operators*.
 
@@ -82,7 +82,7 @@ with $g$ and $\lambda g$ inducing the same automorphism because the centre is $\
 
 **The dictionary of the four elements.** The table collects the four basis elements, their images, their squares and their ranks.
 
-| element | matrix | square | trace | determinant | rank |
+| element | matrix | square | trace | the determinant of the image | rank |
 |---|---|---|---|---|---|
 | $e_t$ | $I$ | $I$ | $2$ | $1$ | $2$ |
 | $\vec e_x$ | $J$ | $-I$ | $0$ | $1$ | $2$ |
@@ -143,7 +143,7 @@ $$
 +\bigl(tz'+zt'+xy'-yx'\bigr)\vec e_z .
 $$
 
-The four lines carry the whole non-commutativity of the algebra. The scalar line is symmetric in the two factors and has the signature $(+,-,+,+)$ of the norm. The three vector lines are not symmetric: each contains two terms with a plus sign, coming from the scalar part of one factor, and two with a minus sign, coming from the vector parts crossing.
+The four lines carry the whole non-commutativity of the algebra. The scalar line is symmetric in the two factors and has the sign pattern $(+,-,+,+)$ of the norm. The three vector lines are not symmetric: each contains two terms with a plus sign, coming from the scalar part of one factor, and two with a minus sign, coming from the vector parts crossing.
 
 **The image.** The image of $\mathsf{M}_2$ is all of $M_2(\mathbb{R})$. This is the structural difference from the quaternion category, where the image is a proper subspace: for $\mathbb{H}$ inside $M_2(\mathbb{C})$ the image has real dimension four in eight, and the missing four dimensions are the ones a matrix model of the quaternions can never reach. Here nothing is missing, and consequently every matrix statement about a split quaternion is a statement about the algebra and conversely.
 
@@ -185,7 +185,7 @@ the three-dimensional space of traceless matrices, spanned by $J$, $K$ and $D$. 
 
 ## The Determinant
 
-**Theorem (the determinant).** For every split quaternion,
+**Theorem (the determinant of the model).** For every split quaternion,
 
 $$
 \det\mathsf{M}_2(\tilde q)=\langle\tilde q\rangle_{\natural}=q_t^2+q_x^2-q_y^2-q_z^2 .
@@ -197,7 +197,7 @@ $$
 (q_t-q_z)(q_t+q_z)-(q_y-q_x)(q_x+q_y)=q_t^2-q_z^2-q_y^2+q_x^2 .
 $$
 
-**The signature.** The form $\langle\cdot\rangle_{\natural}$ has signature $(2,2)$: positive on the plane $\operatorname{span}\{e_t,\vec e_x\}$ and negative on $\operatorname{span}\{\vec e_y,\vec e_z\}$. This is the invariant statement that the algebra is $\mathrm{Cl}_{1,1}$ and not $\mathrm{Cl}_{2,0}$, and it is the reason the model has real lightlike directions where a positive definite matrix algebra would have none.
+**The inertia.** The form $\langle\cdot\rangle_{\natural}$ has inertia $(2,2)$: positive on the plane $\operatorname{span}\{e_t,\vec e_x\}$ and negative on $\operatorname{span}\{\vec e_y,\vec e_z\}$. This is the invariant statement that the algebra is $\mathrm{Cl}_{1,1}$ and not $\mathrm{Cl}_{2,0}$, and it is the reason the model has real lightlike directions where a positive definite matrix algebra would have none.
 
 **The three strata.** The rank of the matrix stratifies the algebra,
 
@@ -227,7 +227,7 @@ $$
 \operatorname{tr}^2-4\det=4\bigl(q_y^2+q_z^2-q_x^2\bigr).
 $$
 
-The spectral type of the element is decided by the sign of the form $q_y^2+q_z^2-q_x^2$, which is of signature $(2,1)$ on the vector part: this is the form whose light cone is the cone of nilpotent directions.
+The spectral type of the element is decided by the sign of the form $q_y^2+q_z^2-q_x^2$, which is of inertia $(2,1)$ on the vector part: this is the form whose light cone is the cone of nilpotent directions.
 
 | sign of $q_y^2+q_z^2-q_x^2$ | eigenvalues | spectrum | centraliser |
 |---|---|---|---|
@@ -279,20 +279,20 @@ so the transpose corresponds to the linear involution that negates the coefficie
 
 **Four forms.** The model carries four natural forms, and only one of them is the determinant.
 
-| form | definition | signature | invariant | positive definite |
+| form | definition | inertia | invariant | positive definite |
 |---|---|---|---|---|
 | determinant form | $\langle\tilde q\rangle_{\natural}=\det\mathsf{M}_2(\tilde q)$ | $(2,2)$ | under the product | no |
 | trace form | $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$ | $(3,1)$ | under the product | no |
 | Frobenius form | $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ | $(4,0)$ | under the orthogonal group only | yes |
 | Killing form on $\mathfrak{sl}_2$ | $B(X,Y)=4\operatorname{tr}(XY)$ | $(2,1)$ | under the algebra automorphisms | no |
 
-**The trace form.** $\operatorname{tr}(XY)$ is invariant under left and right multiplication by invertibles, because $\operatorname{tr}(AXA^{-1}Y)=\operatorname{tr}(XY)$, and its Gram matrix on the basis $(I,J,K,D)$ is $\operatorname{diag}(2,-2,2,2)$, of signature $(3,1)$. It is not the determinant form: the two differ on the vector part, where the trace form is negative on $\vec e_x$ and positive on $\vec e_y,\vec e_z$, the opposite of the norm.
+**The trace form.** $\operatorname{tr}(XY)$ is invariant under left and right multiplication by invertibles, because $\operatorname{tr}(AXA^{-1}Y)=\operatorname{tr}(XY)$, and its Gram matrix on the basis $(I,J,K,D)$ is $\operatorname{diag}(2,-2,2,2)$, of inertia $(3,1)$. It is not the determinant form: the two differ on the vector part, where the trace form is negative on $\vec e_x$ and positive on $\vec e_y,\vec e_z$, the opposite of the norm.
 
-**The Killing form.** On the traceless part, which is $\mathfrak{sl}_2(\mathbb{R})$, the Killing form of the Lie algebra is $B(X,Y)=4\operatorname{tr}(XY)$, of signature $(2,1)$, negative on $J$ and positive on $K$ and $D$. Its light cone is the cone of nilpotent directions, which is the parabolic stratum of the spectral trichotomy read as a Lie-theoretic object.
+**The Killing form.** On the traceless part, which is $\mathfrak{sl}_2(\mathbb{R})$, the Killing form of the Lie algebra is $B(X,Y)=4\operatorname{tr}(XY)$, of inertia $(2,1)$, negative on $J$ and positive on $K$ and $D$. Its light cone is the cone of nilpotent directions, which is the parabolic stratum of the spectral trichotomy read as a Lie-theoretic object.
 
 **The Frobenius form.** $\operatorname{tr}(X^{\mathsf T}X)=\sum X_{ij}^2$ is positive definite and is the Euclidean structure of $\mathbb{R}^4$ under the vectorisation; it is invariant under conjugation by orthogonal matrices and under nothing else. It is the form a numerical computation uses, and it is not an invariant of the algebra.
 
-**The absence.** There is no form that is both positive definite and multiplicative, and there cannot be: a multiplicative form vanishing only at the origin would make the algebra a division algebra, and the algebra has zero divisors. The signature $(2,2)$ of the determinant is the exact measure of that failure.
+**The absence.** There is no form that is both positive definite and multiplicative, and there cannot be: a multiplicative form vanishing only at the origin would make the algebra a division algebra, and the algebra has zero divisors. The inertia $(2,2)$ of the determinant is the exact measure of that failure.
 
 ## The Subspaces
 
@@ -311,7 +311,7 @@ so the transpose corresponds to the linear involution that negates the coefficie
 
 **The two isotropic planes.** The complex plane $\operatorname{span}\{e_t,\vec e_x\}$ is a copy of $\mathbb{C}$ inside the algebra, spanned by $I$ and $J$, and it is the only two-dimensional subalgebra on which the norm is definite. The planes $\operatorname{span}\{e_t,\vec e_y\}$ and $\operatorname{span}\{e_t,\vec e_z\}$ are copies of the split-complex numbers, on which the norm is indefinite and the idempotents live. The model shows the difference at a glance: $J$ is a rotation, $K$ and $D$ are reflections.
 
-**The isotropic lines.** The null cone of the norm meets $V$ in the cone $v_x^2=v_y^2+v_z^2$, of signature $(1,2)$, and the rank-one matrices of the algebra are its projectivisation together with the scalar multiples of the idempotents. The isotropic lines of the algebra are therefore the two rulings of the Segre quadric, and no isotropic line is a subalgebra: the product of two isotropic elements is not isotropic in general.
+**The isotropic lines.** The null cone of the norm meets $V$ in the cone $v_x^2=v_y^2+v_z^2$, of inertia $(1,2)$, and the rank-one matrices of the algebra are its projectivisation together with the scalar multiples of the idempotents. The isotropic lines of the algebra are therefore the two rulings of the Segre quadric, and no isotropic line is a subalgebra: the product of two isotropic elements is not isotropic in general.
 
 **The idempotent hyperboloid.** The idempotents other than $0$ and $e_t$ are the halved pure roots of one, $\tfrac12(e_t+\vec v)$ with $\langle\vec v\rangle_{\natural}=-1$, which is the one-sheeted hyperboloid $v_y^2+v_z^2=v_x^2+1$; under the model they are the rank-one projections of trace one. The two standard idempotents, from $\vec v=\pm\vec e_y$, are the projections onto the lines $\operatorname{span}(1,\pm1)$.
 
@@ -351,10 +351,10 @@ the Möbius transformation of the projective line, and the point $t=-d/c$ is sen
 2. The left and right matrices are the two commuting copies $M_{\tilde q}\otimes I$ and $I\otimes M_{\tilde q}^{\mathsf T}$ inside $M_4(\mathbb{R})$, of rank $2\operatorname{rank}M_{\tilde q}$ each.
 3. The product is the matrix product, the image is the whole matrix algebra, and the Peirce corners are a full system of matrix units.
 4. The trace is twice the scalar part, and the traceless part is $\mathfrak{sl}_2(\mathbb{R})$.
-5. The determinant is the norm $\langle\tilde q\rangle_{\natural}$, of signature $(2,2)$; the invertibles are the nonsingular matrices and the zero divisors are the rank-one matrices, that is the Segre quadric.
+5. The determinant of the matrix is the norm $\langle\tilde q\rangle_{\natural}$, of inertia $(2,2)$; the invertibles are the nonsingular matrices and the zero divisors are the rank-one matrices, that is the Segre quadric.
 6. The spectral trichotomy is decided by the sign of $q_y^2+q_z^2-q_x^2$, and the centraliser is $\mathbb{R}\times\mathbb{R}$, the dual numbers or $\mathbb{C}$ accordingly.
 7. The conjugation is the adjugate, the transpose is the reversal, and the inverse is the conjugate divided by the norm.
-8. Four forms coexist: the determinant form of signature $(2,2)$, the trace form of signature $(3,1)$, the positive definite Frobenius form and the Killing form of signature $(2,1)$.
+8. Four forms coexist: the determinant form of inertia $(2,2)$, the trace form of inertia $(3,1)$, the positive definite Frobenius form and the Killing form of inertia $(2,1)$.
 9. The subspaces are matrix conditions, and the two isotropic planes are the copies of $\mathbb{C}$ and of the split-complex numbers.
 10. The minimal left ideals are the lines of $\mathbb{R}^2$, the invertibles act by Möbius transformations, and $\mathrm{PGL}_2(\mathbb{R})$ acts faithfully.
 
@@ -376,6 +376,6 @@ the Möbius transformation of the projective line, and the point $t=-d/c$ is sen
 ## Further Reading
 
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition, the matrix units and the classification of the idempotents.
-- Thomas Y. Lam, *The Algebraic Theory of Quadratic Forms* (Benjamin, 1973), for the norm of signature $(2,2)$ and the split-quaternion algebra as a Clifford algebra.
+- Thomas Y. Lam, *The Algebraic Theory of Quadratic Forms* (Benjamin, 1973), for the norm of inertia $(2,2)$ and the split-quaternion algebra as a Clifford algebra.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ and the Lorentz groups.
 - Joseph A. Wolf, *Spaces of Constant Curvature* (Publish or Perish, 1974), for the action of $\mathrm{PGL}_2(\mathbb{R})\cong SO^{+}(2,1)$ on the projective line.

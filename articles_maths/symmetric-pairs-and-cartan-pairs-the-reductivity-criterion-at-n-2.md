@@ -98,7 +98,7 @@ $$
 
 **Proof.** The decomposition is orthogonal for the positive definite form, and the global statement is the theorem that the fixed group of a Cartan involution is maximal compact.
 
-**The signature of the two pairs is the same and the packaging differs.** Both pairs have $\dim\mathfrak{h}=1$ and $\dim\mathfrak{p}=2$; in the Cartan pair the fixed line is the one on which the form is negative, and in the second pair the fixed line is the one on which the form is positive.
+**The inertia of the two pairs is the same and the packaging differs.** Both pairs have $\dim\mathfrak{h}=1$ and $\dim\mathfrak{p}=2$; in the Cartan pair the fixed line is the one on which the form is negative, and in the second pair the fixed line is the one on which the form is positive.
 
 ## Where the Criterion Fails at $n=2$
 

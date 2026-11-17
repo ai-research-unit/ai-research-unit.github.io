@@ -2,11 +2,11 @@
 
 ## Introduction
 
-**Each Peirce space of $M_4(\mathbb{C})$ at a Hermitian idempotent is invariant under the transpose, so each splits into a symmetric and an antisymmetric part; the six pieces of the split carry the trace pairing with the signatures $(3,1)$, $(3,1)$ and $(4,4)$ at rank two, and these add up to the signature $(10,6)$ of the whole algebra.**
+**Each Peirce space of $M_4(\mathbb{C})$ at a Hermitian idempotent is invariant under the transpose, so each splits into a symmetric and an antisymmetric part; the six pieces of the split carry the trace pairing with the inertias $(3,1)$, $(3,1)$ and $(4,4)$ at rank two, and these add up to the inertia $(10,6)$ of the whole algebra.**
 
-The article writes the associative Peirce decomposition at a Hermitian idempotent, proves that the transpose preserves each Peirce space, computes the two halves of each space for every rank, works the case of rank two explicitly, computes the trace pairing on each of the six pieces, checks that the signatures add to $(10,6)$, and concludes that the Peirce decomposition and the symmetric decomposition are transverse: neither refines the other.
+The article writes the associative Peirce decomposition at a Hermitian idempotent, proves that the transpose preserves each Peirce space, computes the two halves of each space for every rank, works the case of rank two explicitly, computes the trace pairing on each of the six pieces, checks that the inertias add to $(10,6)$, and concludes that the Peirce decomposition and the symmetric decomposition are transverse: neither refines the other.
 
-It assumes *The Two Halves as Orthogonal Complements at $n=4$* and *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$*. The Jordan version is *The Peirce Decomposition of $\operatorname{Sym}_4$ as a Jordan Algebra*; the corner recursion is *The Peirce Decomposition and the Corner Recursion of $M_4(\mathbb{C})$*.
+It assumes *The Two Halves as Orthogonal Complements at $n=4$* and *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$*. The Jordan version is *The Peirce Decomposition of $\operatorname{Sym}_4$ as a Jordan Algebra*; the corner recursion is *The Peirce Decomposition and the Corner Recursion of $M_4(\mathbb{C})$*.
 
 ## The Peirce Spaces of the Whole Algebra
 
@@ -112,15 +112,15 @@ and on $V_{11}$ and $V_{00}$ it is the trace pairing of the corner.
 
 **Proof.** The trace of a block matrix with only off-diagonal blocks in the product is zero unless the blocks match, which gives the vanishing; for an element $(B,C)$ and an element $(B',C')$ of the mixed space, the product is $\operatorname{diag}(BC',CB')$ and its trace is $2\operatorname{tr}(BC')$. On the corner the product of two elements of $V_{11}$ is again in $V_{11}$ and its trace is the corner trace.
 
-**Corollary.** At rank two the signatures on the corner, the complement and the mixed space are $(3,1)$, $(3,1)$ and $(4,4)$, and they add to $(10,6)$.
+**Corollary.** At rank two the inertias on the corner, the complement and the mixed space are $(3,1)$, $(3,1)$ and $(4,4)$, and they add to $(10,6)$.
 
-**Proof.** On the corner the form is the trace pairing of $M_2$, of signature $(3,1)$; on the mixed space it is $2\operatorname{tr}(BC')$, positive definite on $W^{+}$ and negative definite on $W^{-}$, hence neutral of type $(4,4)$.
+**Proof.** On the corner the form is the trace pairing of $M_2$, of inertia $(3,1)$; on the mixed space it is $2\operatorname{tr}(BC')$, positive definite on $W^{+}$ and negative definite on $W^{-}$, hence neutral of type $(4,4)$.
 
-**Corollary.** The Peirce decomposition diagonalises the trace pairing into three blocks whose signatures add to the signature of the whole algebra, and the mixed block is the hyperbolic one.
+**Corollary.** The Peirce decomposition diagonalises the trace pairing into three blocks whose inertias add to the inertia of the whole algebra, and the mixed block is the hyperbolic one.
 
-**Proof.** The signature of a direct sum is the sum of the signatures.
+**Proof.** The inertia of a direct sum is the sum of the inertias.
 
-**The general rank.** At rank $k$ the three signatures are
+**The general rank.** At rank $k$ the three inertias are
 $$
 \Bigl(\tfrac{k(k+1)}{2},\tfrac{k(k-1)}{2}\Bigr),\qquad \bigl(k(4-k),\,k(4-k)\bigr),\qquad \Bigl(\tfrac{(4-k)(5-k)}{2},\tfrac{(4-k)(3-k)}{2}\Bigr),
 $$
@@ -146,7 +146,7 @@ and the first components add to $10$ while the second add to $6$.
 
 **Proof.** $6=4+2$ is a coincidence of counts and not a refinement relation; the six pieces are the nonzero intersections.
 
-**The moral.** The Peirce decomposition is adapted to the idempotent and the symmetric decomposition is adapted to the involution; the two structures are independent, and the intersection pattern is the joint refinement, whose signatures add to the signature of the algebra in either grouping.
+**The moral.** The Peirce decomposition is adapted to the idempotent and the symmetric decomposition is adapted to the involution; the two structures are independent, and the intersection pattern is the joint refinement, whose inertias add to the inertia of the algebra in either grouping.
 
 **Proof.** The two decompositions are defined by different operators, $L_E$ and the transpose, which do not commute in general.
 
@@ -154,7 +154,7 @@ and the first components add to $10$ while the second add to $6$.
 
 Each associative Peirce space at a Hermitian idempotent is invariant under the transpose, and the two mixed spaces are swapped by it. So every Peirce space splits into a symmetric and an antisymmetric part, and at rank $k$ the six pieces have dimensions $\tfrac{k(k+1)}{2}$, $\tfrac{k(k-1)}{2}$, $k(4-k)$, $k(4-k)$, $\tfrac{(4-k)(5-k)}{2}$ and $\tfrac{(4-k)(3-k)}{2}$.
 
-At rank two the pieces are $3,1,4,4,3,1$. The trace pairing is diagonal with respect to the Peirce decomposition: it restricts to the corner form of signature $(3,1)$, to the complement form of signature $(3,1)$, and to the mixed form $2\operatorname{tr}(BC')$, positive on $W^{+}$ and negative on $W^{-}$, hence of type $(4,4)$. The three signatures add to $(10,6)$.
+At rank two the pieces are $3,1,4,4,3,1$. The trace pairing is diagonal with respect to the Peirce decomposition: it restricts to the corner form of inertia $(3,1)$, to the complement form of inertia $(3,1)$, and to the mixed form $2\operatorname{tr}(BC')$, positive on $W^{+}$ and negative on $W^{-}$, hence of type $(4,4)$. The three inertias add to $(10,6)$.
 
 The two decompositions are transverse. Neither refines the other, their joint refinement has six pieces, and the Peirce decomposition is adapted to the idempotent while the symmetric decomposition is adapted to the involution.
 
@@ -166,12 +166,12 @@ The two decompositions are transverse. Neither refines the other, their joint re
 | $V_{11}^{+},V_{11}^{-}$ | their symmetric and antisymmetric parts |
 | $W^{+},W^{-}$ | the symmetric and antisymmetric halves of the mixed space |
 | $\beta(X,Y)=\operatorname{tr}(XY)$ | the trace pairing |
-| $(3,1),(3,1),(4,4)$ | the signatures at rank two |
+| $(3,1),(3,1),(4,4)$ | the inertias at rank two |
 
 ## Further Reading
 
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the Peirce decomposition and its relation to the involution.
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the signature $(10,6)$ that the pieces add to.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the inertia $(10,6)$ that the pieces add to.
 - [The Peirce Decomposition of $\operatorname{Sym}_4$ as a Jordan Algebra](the-peirce-decomposition-of-sym-4-as-a-jordan-algebra.html), for the Jordan version of the split.
 - [The Two Halves as Orthogonal Complements at $n=4$](the-two-halves-as-orthogonal-complements-at-n-4.html), for the transpose and the orthogonality.
 - [The Peirce Decomposition and the Corner Recursion of $M_4(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-m4c.html), for the recursion that the corner starts.

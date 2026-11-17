@@ -437,7 +437,7 @@ the mixed trace sees the two scalar parts only.
 
 ## The Determinant
 
-**The determinant is the square of the central scalar.** For every $\tilde Q$,
+**The determinant of the matrix is the square of the central scalar.** For every $\tilde Q$,
 $$
 \det L_{\mathrm{axf}}(\tilde Q)=\det R_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2
 =(Q_t^2+B^2)^2.
@@ -452,7 +452,7 @@ $$
 $$
 The eigenvalues are $\lambda_\pm=Q_t\pm iB$, where $B$ is a square root of $B^2=Q_x^2+Q_y^2+Q_z^2$, each with algebraic multiplicity two. Their sum is $4Q_t$, their product is $\langle\tilde Q\rangle_{\natural}^2$, and the two facts are the trace and the determinant. The same polynomial is the characteristic polynomial of $R_{\mathrm{axf}}(\tilde Q)$, because the two matrices are conjugate by $D$ and transposition.
 
-**The determinant is multiplicative.** For all $\tilde Q_1,\tilde Q_2$,
+**The determinant of the matrix is multiplicative.** For all $\tilde Q_1,\tilde Q_2$,
 $$
 \det L_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=\det L_{\mathrm{axf}}(\tilde Q_1)\det L_{\mathrm{axf}}(\tilde Q_2),
 $$
@@ -471,7 +471,7 @@ The determinant of a sum is not the sum of the determinants; a sum of two invert
 | Quantity | Entry size | Regular size | Rule |
 |---|---|---|---|
 | trace | $2Q_t$ | $4Q_t$ | double |
-| determinant | $\langle\tilde Q\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}^2$ | square |
+| the determinant of the image | $\langle\tilde Q\rangle_{\natural}$ | $\langle\tilde Q\rangle_{\natural}^2$ | square |
 | characteristic polynomial | degree $2$ | its square | square |
 | spectrum | $\lambda_\pm$, once each | each twice | repeat |
 | rank | $r$ | $2r$ | double |
@@ -526,7 +526,7 @@ It is a quarter of the square of the Hilbert–Schmidt norm of the $4\times4$ ma
 $$
 \operatorname{Tr}(M^{\mathsf T}M^{\dagger})=\operatorname{Tr}\bigl(M(\tilde Q^{\natural})M(\tilde Q^{*})\bigr)=4K,
 $$
-because the product of the two conjugates has scalar part $K$. The norm is positive on the centre and negative on the vector subspace, of signature $(2,6)$ on the real algebra.
+because the product of the two conjugates has scalar part $K$. The norm is positive on the centre and negative on the vector subspace, of inertia $(2,6)$ on the real algebra.
 
 **The basis again.** The second and fourth rows use $M^{\mathsf T}=M^{\natural}$, which is a property of the axis-free basis and not of the algebra. In a frame where the transpose is another word, the two words must be written with the conjugation, and $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ is then none of the four norms: the entries of the transposed matrix are not the coefficients of the conjugate element, and the quarter-trace is a different quadratic form.
 
@@ -580,7 +580,7 @@ L_{\mathrm{axf}}(\tilde Q)=\overline{L_{\mathrm{axf}}(\tilde Q)},\qquad
 \operatorname{Tr}M=4q_t,\qquad
 \det\mathsf M_2(\tilde Q)=\sum_{\mu}q_\mu^2=q_t^2+q_x^2+q_y^2+q_z^2 .
 $$
-The image is the space of real matrices of this form, of real dimension $4$. The quadratic determinant is positive definite, and it vanishes only at $\tilde Q=0$. The image is closed under multiplication and is a division algebra.
+The image is the space of real matrices of this form, of real dimension $4$. The quadratic determinant of the matrix is positive definite, and it vanishes only at $\tilde Q=0$. The image is closed under multiplication and is a division algebra.
 
 ### The Anti-Quaternion Subspace
 
@@ -590,7 +590,7 @@ L_{\mathrm{axf}}(\tilde Q)=-\overline{L_{\mathrm{axf}}(\tilde Q)},\qquad
 \operatorname{Tr}M=4iq'_t,\qquad
 \det\mathsf M_2(\tilde Q)=-\sum_{\mu}(q'_\mu)^2 .
 $$
-The image is the space of purely imaginary matrices of this form, of real dimension $4$. The quadratic determinant is non-positive, and it vanishes only at $\tilde Q=0$. The image is not closed under multiplication: the product of two purely imaginary matrices is real.
+The image is the space of purely imaginary matrices of this form, of real dimension $4$. The quadratic determinant of the matrix is non-positive, and it vanishes only at $\tilde Q=0$. The image is not closed under multiplication: the product of two purely imaginary matrices is real.
 
 ### The Hermitian Subspace
 
@@ -600,7 +600,7 @@ L_{\mathrm{axf}}(\tilde Q)=L_{\mathrm{axf}}(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4q_t,\qquad
 \det\mathsf M_2(\tilde Q)=q_t^2-\lvert\vec q'\rvert^2 .
 $$
-The image is the space of Hermitian matrices of this form, of real dimension $4$. The condition is exact inside the image because $L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*})$ and $L_{\mathrm{axf}}$ is injective. The quadratic determinant is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.
+The image is the space of Hermitian matrices of this form, of real dimension $4$. The condition is exact inside the image because $L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}(\tilde Q^{*})$ and $L_{\mathrm{axf}}$ is injective. The quadratic determinant of the matrix is indefinite: it is positive when $q_t^2>\lvert\vec q'\rvert^2$ and negative when $q_t^2<\lvert\vec q'\rvert^2$. The image is not a subalgebra.
 
 ### The Anti-Hermitian Subspace
 
@@ -610,7 +610,7 @@ L_{\mathrm{axf}}(\tilde Q)=-L_{\mathrm{axf}}(\tilde Q)^{\dagger},\qquad
 \operatorname{Tr}M=4iq'_t,\qquad
 \det\mathsf M_2(\tilde Q)=-(q'_t)^2+\lvert\vec q\rvert^2 .
 $$
-The image is the space of anti-Hermitian matrices of this form, of real dimension $4$. The condition is $\tilde Q^{\flat}=\tilde Q$, that is $\tilde Q^{*}=-\tilde Q$. The quadratic determinant is indefinite, with the sign opposite to the Hermitian determinant. The image is a Lie algebra under the commutator, not a subalgebra under the product.
+The image is the space of anti-Hermitian matrices of this form, of real dimension $4$. The condition is $\tilde Q^{\flat}=\tilde Q$, that is $\tilde Q^{*}=-\tilde Q$. The quadratic determinant of the matrix is indefinite, with the sign opposite to the Hermitian determinant. The image is a Lie algebra under the commutator, not a subalgebra under the product.
 
 ### The Three Splits
 

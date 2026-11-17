@@ -6,7 +6,7 @@
 
 The article computes the formula and the constant $2n=8$, identifies the radical on the full algebra, proves non-degeneracy on the traceless algebra by Cartan's criterion, computes the Borel case where the form vanishes on the derived algebra, and shows the two $\mathfrak{sl}_2$ ideals of $\mathfrak{so}(4)$ orthogonal for $K$.
 
-It assumes *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$* for the trace pairing and *The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$* for the split. The general case at every order is *The Killing Form, Its Radical and the Triangular Case*; the trace form on the Borel is *The Antisymmetric Part inside $UT_4$: the Radical as the Commutator*.
+It assumes *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$* for the trace pairing and *The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$* for the split. The general case at every order is *The Killing Form, Its Radical and the Triangular Case*; the trace form on the Borel is *The Antisymmetric Part inside $UT_4$: the Radical as the Commutator*.
 
 ## The Formula on the Full Algebra
 
@@ -76,7 +76,7 @@ since each diagonal entry is counted once for every index it is subtracted from.
 
 **Proof.** For a simple algebra the invariant forms are proportional; inner-ness of derivations is the standard consequence of semisimplicity.
 
-**The signature.** On the real traceless algebra the form $8\operatorname{tr}(XY)$ is positive definite on the traceless symmetric part of dimension $9$ and negative definite on the antisymmetric part of dimension $6$.
+**The inertia.** On the real traceless algebra the form $8\operatorname{tr}(XY)$ is positive definite on the traceless symmetric part of dimension $9$ and negative definite on the antisymmetric part of dimension $6$.
 
 **Proof.** The signs are those of the trace pairing, computed in the article on the two halves, and $9+6=15$.
 
@@ -118,7 +118,7 @@ where only the diagonal parts enter. The radical is the set of $X$ with $4\opera
 
 **Proof.** On a simple algebra the invariant symmetric forms are proportional to $K$, and a direct sum gives one scale per summand.
 
-**The three signs.** The form is negative definite on $\mathfrak{so}(4)$, positive definite on the traceless symmetric part, and zero on the scalars; the three statements together are the signature of the trace pairing, read on $K$.
+**The three signs.** The form is negative definite on $\mathfrak{so}(4)$, positive definite on the traceless symmetric part, and zero on the scalars; the three statements together are the inertia of the trace pairing, read on $K$.
 
 **Proof.** $K$ has the sign of $8\operatorname{tr}(XY)$ on traceless elements, and it vanishes on the scalars.
 
@@ -147,4 +147,4 @@ On $\mathfrak{so}(4)$ the form is negative definite and the two $\mathfrak{sl}_2
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the radical, semisimplicity and solvability criteria.
 - [The Killing Form, Its Radical and the Triangular Case](the-killing-form-its-radical-and-the-triangular-case.html), for the same computation at general order.
 - [The Lie Algebra $\operatorname{Skew}_4\cong\mathfrak{so}(4)$](the-lie-algebra-skew-4-and-so-4.html), for the two ideals and their brackets.
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the form that differs from $K$ by the scalar line.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the form that differs from $K$ by the scalar line.

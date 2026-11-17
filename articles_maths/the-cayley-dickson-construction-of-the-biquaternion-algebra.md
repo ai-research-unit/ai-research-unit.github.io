@@ -249,7 +249,7 @@ The layer contains three copies of a two-dimensional real algebra, and they are 
 
 **The split line.** The third subalgebra has a unit of square $+e_t$ and is the split-complex algebra of *Split-Complex Algebra*. It is the one that carries the idempotents of §*What the Layer Loses*, since $\tfrac12(e_t\pm i\vec e_z)$ are its two idempotents, and it is not central either, since $i\vec e_z$ inherits the non-centrality of $\vec e_z$ from the central factor $i$.
 
-**The reading.** A biquaternion is read over three scalar systems at once, and the three lines say which: the complex line of the rung, the complex line of the scalars, and the split line of the idempotents. The sign $+e_t$ of the third is the signature of the loss of §*What the Layer Loses*; the sign $-e_t$ of the first two is the signature of the two rungs.
+**The reading.** A biquaternion is read over three scalar systems at once, and the three lines say which: the complex line of the rung, the complex line of the scalars, and the split line of the idempotents. The sign $+e_t$ of the third is the inertia of the loss of §*What the Layer Loses*; the sign $-e_t$ of the first two is the inertia of the two rungs.
 
 ## Conjugation, the Norm and the Inverse
 
@@ -282,7 +282,7 @@ $$
 N(e_t+i\vec e_x)=1+i^2=0 .
 $$
 
-Its real part is $\sum_k q_k^2-\sum_k(q'_k)^2$, a form of signature $(4,4)$ on the eight real coordinates, and its imaginary part is $2\sum_k q_kq'_k$. The norm of the layer is therefore not definite, and the identity $\tilde Q\tilde Q^{\natural}=Ne_t$ no longer forces $\tilde Q=0$.
+Its real part is $\sum_k q_k^2-\sum_k(q'_k)^2$, a form of inertia $(4,4)$ on the eight real coordinates, and its imaginary part is $2\sum_k q_kq'_k$. The norm of the layer is therefore not definite, and the identity $\tilde Q\tilde Q^{\natural}=Ne_t$ no longer forces $\tilde Q=0$.
 
 **Multiplicativity.** The norm is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$, by *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. In the coordinates of the construction it is the reduced norm of the layer, and its multiplicativity is the four-square identity of the quaternion rung read over $\mathbb{C}$.
 

@@ -53,7 +53,7 @@ Its modulus is the product of the singular values, and it vanishes exactly on th
 
 **A second basis, and what it is for.** The sixteen matrices $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$, with $\mu,\nu\in\{t,x,y,z\}$, are the matrices of the two-sided operators $X\mapsto e_\mu Xe_\nu$ in the coefficient basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of the biquaternion algebra $\mathbb{B}$, where $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$. Each is a signed permutation matrix of determinant one, and the sixteen are a basis of $M_4(\mathbb{C})$. The construction is *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$*, and the sixteen are displayed in *$M_4(\mathbb{C})$ Axis-Free Representation: Operators*.
 
-**The pairing is diagonal in this basis.** In the matrix-unit basis the pairing reads $\beta(E_{ij},E_{kl})=\delta_{il}\delta_{jk}$, a permutation matrix: non-degenerate, and silent about signature. In the axis-free basis it is diagonal,
+**The pairing is diagonal in this basis.** In the matrix-unit basis the pairing reads $\beta(E_{ij},E_{kl})=\delta_{il}\delta_{jk}$, a permutation matrix: non-degenerate, and silent about inertia. In the axis-free basis it is diagonal,
 
 $$
 \operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=\pm4\,\delta_{\mu\rho}\delta_{\nu\sigma},
@@ -75,7 +75,7 @@ $$
 
 No element of the basis is neither, and no symmetric element is negative. The two sets are the two halves of *The Matrix Algebra $M_4(\mathbb{C})$*, read as a coordinate split.
 
-**The signature.** Hence
+**The inertia.** Hence
 
 $$
 \operatorname{sign}\beta=(10,6),\qquad

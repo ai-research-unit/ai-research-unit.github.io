@@ -6,7 +6,7 @@
 
 The article proves the identification $e_1=\operatorname{tr}$, $e_2=\det$, derives Newton's identities and the power-sum recursion they obey at order two, shows that the invariant ring of $M_2(\mathbb{C})$ is the free polynomial ring $\mathbb{C}[\operatorname{tr},\det]$, computes the Jacobian of the pair and locates its rank drop exactly at the scalar matrices, and separates the additive function from the multiplicative one. It assumes *The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$* for the element and its invariants. It defers the four products built from the trace to *The Symmetric and Antisymmetric Parts of a Product at $n=2$*, and the four norms to *The Four Forms and Their Algebraic Norms at $n=2$*.
 
-The general statement of the invariant ring is in *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$* only for the form; the invariant theory at general order is *The Element, the Coordinates and the Trace of $M_n(\mathbb{C})$*. At order two the theory is the classical theory of symmetric functions in two variables, and that is the point of the article.
+The general statement of the invariant ring is in *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$* only for the form; the invariant theory at general order is *The Element, the Coordinates and the Trace of $M_n(\mathbb{C})$*. At order two the theory is the classical theory of symmetric functions in two variables, and that is the point of the article.
 
 ## The Symmetric Functions of Two Numbers
 
@@ -111,7 +111,7 @@ with $\operatorname{adj}A=(\operatorname{tr}A)I-A$.
 
 **The trace is a homomorphism on the additive group and the determinant on the multiplicative group.** The logarithm of the absolute value of the determinant is the additive character that the exponential converts into the trace: near the identity, $\log\det e^{H}=\operatorname{tr}H$. That identity is the reason the trace is the infinitesimal form of the determinant, and it is used in *The Exponential and the Lie Group Structure of $\mathrm{GL}_2(\mathbb{C})$*.
 
-**The two functions on the two halves.** Restricted to $\operatorname{Herm}_2$ the trace is real and the determinant is real but not of a fixed sign; restricted to $\operatorname{Skew}_2$ the trace vanishes identically, because the single antisymmetric matrix of order two is traceless. The restrictions are computed in *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+**The two functions on the two halves.** Restricted to $\operatorname{Herm}_2$ the trace is real and the determinant is real but not of a fixed sign; restricted to $\operatorname{Skew}_2$ the trace vanishes identically, because the single antisymmetric matrix of order two is traceless. The restrictions are computed in *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 ## Summary
 

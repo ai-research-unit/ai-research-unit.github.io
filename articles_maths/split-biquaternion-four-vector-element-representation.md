@@ -115,7 +115,7 @@ On the two real parts of the coefficient space the split-biquaternion norm is a 
 - on the **real part** $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, where $q'_\mu = 0$, it is $N = \sum_\mu q_\mu^2$;
 - on the **split-imaginary part** $j\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$, where $q_\mu = 0$, it is $N = \sum_\mu q'^2_\mu$.
 
-Both are positive definite; the indefinite form of the algebra is the Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ of signature $(4,4)$, as in *Split-Biquaternion Norm and Invertibility*.
+Both are positive definite; the indefinite form of the algebra is the Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ of inertia $(4,4)$, as in *Split-Biquaternion Norm and Invertibility*.
 
 ### The Invertibility Criterion in Coordinates
 
@@ -148,7 +148,7 @@ The four-vector representation reads a split biquaternion as a column $(Q_t,Q_x,
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations on the column |
 | $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}, \mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}, \mathbb{B}_{\Psi}, \mathbb{B}_{\Phi}$ | Distinguished subspaces as coefficient conditions |
 | $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm, anisotropic |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(4,4)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu(q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(4,4)$ |
 | $Z_\pm$ | The two four-dimensional zero divisor subspaces |
 
 ## Further Reading

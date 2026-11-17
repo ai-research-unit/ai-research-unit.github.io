@@ -10,7 +10,7 @@ $$
 Q_1\star Q_2=Q_1\bar Q_2,
 $$
 
-the square of every element is scalar, $Q\star Q=Q\bar Q=\langle Q\rangle_{*}1$, so the form is real-valued and its diagonal is the real scalar $\langle Q\rangle_{*}=q^{2}-q'^{2}$. That scalar is the **second algebraic norm** of the space, the algebraic norm of this product and not the algebraic norm of the plain product, which is the $\mathbb{C}_{\mathrm{spl}}$-valued $\langle Q\rangle=Q^{2}$ of *Norm and Invertibility in the Split-Complex Algebra*. The norm $\langle\cdot\rangle_{*}$ is real, of signature $(1,1)$, indefinite, and multiplicative for the product.
+the square of every element is scalar, $Q\star Q=Q\bar Q=\langle Q\rangle_{*}1$, so the form is real-valued and its diagonal is the real scalar $\langle Q\rangle_{*}=q^{2}-q'^{2}$. That scalar is the **second algebraic norm** of the space, the algebraic norm of this product and not the algebraic norm of the plain product, which is the $\mathbb{C}_{\mathrm{spl}}$-valued $\langle Q\rangle=Q^{2}$ of *Norm and Invertibility in the Split-Complex Algebra*. The norm $\langle\cdot\rangle_{*}$ is real, of inertia $(1,1)$, indefinite, and multiplicative for the product.
 
 The inverse is where the two products separate. The definition of an inverse presupposes a product with a **two-sided unit**, and the general plain sesquilinear product has a **right unit** alone. The consequence is stated and not filled: no element of $\mathbb{C}_{\mathrm{spl}}$ is invertible of $\star$, the product has no group of invertibles of its own, and the word has no reading for it. What survives is the pair of one-sided inverse equations relative to the right unit $1$, and the article computes them: the two have the same unique solution, $Q_1/\langle Q_1\rangle_{*}$, exactly when the norm is non-zero, and neither has a solution when the norm vanishes. The criterion is therefore the algebraic norm of this product, and it is not the algebraic norm of the plain product; the two products do not share their algebraic norms.
 
@@ -63,7 +63,7 @@ $$
 
 **Proof.** The first display is the expansion of $(q_1+q_2)^{2}-(q'_1+q'_2)^{2}$ minus the two diagonals. For the second, $Q_1\star Q_2+Q_2\star Q_1=Q_1\bar Q_2+Q_2\bar Q_1$, and the sum is real because the two terms are conjugate; its value is twice the real part of $Q_1\bar Q_2$, which is $q_1q_2-q'_1q'_2$.
 
-The polar form is the **split bilinear form** $g$ of signature $(1,1)$; its Gram matrix in the basis $1,j$ is $\operatorname{diag}(1,-1)$.
+The polar form is the **split bilinear form** $g$ of inertia $(1,1)$; its Gram matrix in the basis $1,j$ is $\operatorname{diag}(1,-1)$.
 
 ### Multiplicativity
 
@@ -155,7 +155,7 @@ $$
 H(Q_2,Q_1)=\overline{H(Q_1,Q_2)} .
 $$
 
-Its real part is the polar form $g(Q_1,Q_2)=q_1q_2-q'_1q'_2$ of the algebraic norm, of signature $(1,1)$; its imaginary part is the alternating form $q'_1q_2-q_1q'_2$. Its diagonal is $H(Q,Q)=Q\bar Q=\langle Q\rangle_{*}$, real and indefinite. The form is therefore not positive definite, and neither is its negative.
+Its real part is the polar form $g(Q_1,Q_2)=q_1q_2-q'_1q'_2$ of the algebraic norm, of inertia $(1,1)$; its imaginary part is the alternating form $q'_1q_2-q_1q'_2$. Its diagonal is $H(Q,Q)=Q\bar Q=\langle Q\rangle_{*}$, real and indefinite. The form is therefore not positive definite, and neither is its negative.
 
 There is **no positive definite Hermitian form** on $\mathbb{C}_{\mathrm{spl}}$ analogous to the one on $\mathbb{C}$, because the conjugation group is too small: the only non-trivial involution is the bar, and every sesquilinear form it defines has the indefinite real part $g$. The positive definite substitute is the Euclidean form $\langle\cdot,\cdot\rangle_{E}$ of the preceding section, which is symmetric and does not depend on the algebra structure. The Hermitian form $H$ and the Euclidean form are different objects: the diagonal of $H$ is the indefinite norm, and the diagonal of the Euclidean form is the positive definite square.
 
@@ -323,7 +323,7 @@ $$
 \langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2},
 $$
 
-real, of signature $(1,1)$, indefinite, and multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. Its polar form is $g(Q_1,Q_2)=q_1q_2-q'_1q'_2$, the split bilinear form; its vanishing set is the two null lines $\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$.
+real, of inertia $(1,1)$, indefinite, and multiplicative, $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}$. Its polar form is $g(Q_1,Q_2)=q_1q_2-q'_1q'_2$, the split bilinear form; its vanishing set is the two null lines $\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$.
 
 The product has the right unit $1$ and no left unit, hence no two-sided unit, so no element is invertible of $\star$ and the product has no group of invertibles. The two one-sided equations relative to $1$ have the common unique solution $Q/\langle Q\rangle_{*}$ exactly when $\langle Q\rangle_{*}\neq0$, and no solution when the norm vanishes. The criterion is therefore the algebraic norm: a nonzero element is a zero divisor exactly when its norm vanishes, and the elements of non-vanishing norm form the plain group of invertibles
 
@@ -341,7 +341,7 @@ an abelian group with four connected components and non-compact, in contrast wit
 | $Q=q+jq'$ | General split complex number |
 | $\bar Q=q-jq'$ | Split complex conjugate |
 | $Q_1\star Q_2=Q_1\bar Q_2$ | General plain sesquilinear product |
-| $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$ | Algebraic norm of $\star$, signature $(1,1)$ |
+| $\langle Q\rangle_{*}=Q\bar Q=q^{2}-q'^{2}$ | Algebraic norm of $\star$, inertia $(1,1)$ |
 | $g(Q_1,Q_2)=q_1q_2-q'_1q'_2$ | Polarisation of $\langle\cdot\rangle_{*}$, the split bilinear form |
 | $Q_{\pm}=q\pm q'$ | Idempotent coordinates, $Q=Q_{+}\Pi_{+}+Q_{-}\Pi_{-}$ |
 | $\Pi_{\pm}=\tfrac12(1\pm j)$ | Idempotents |
@@ -356,7 +356,7 @@ an abelian group with four connected components and non-compact, in contrast wit
 ## Further Reading
 
 - [Norm and Invertibility in the Split-Complex Algebra](norm-and-invertibility-in-the-split-complex-algebra.html), for the other algebraic norm, the $\mathbb{C}_{\mathrm{spl}}$-valued $Q^{2}$, and the absence of a criterion from it.
-- [The Two Forms and the Two Algebraic Norms of the Split-Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complex-space.html), for the two forms and the two algebraic norms, their Gram matrices and their realified signatures.
+- [The Two Forms and the Two Algebraic Norms of the Split-Complex Space](the-two-forms-and-the-two-algebraic-norms-of-the-split-complex-space.html), for the two forms and the two algebraic norms, their Gram matrices and their realified inertias.
 - [Zero Divisors of the Split-Complex Algebra](zero-divisors-of-the-split-complex-algebra.html), for the zero-divisor set and its two families.
 - [Annihilators of the Split-Complex Algebra](annihilators-of-the-split-complex-algebra.html), for the annihilation of a line by a zero divisor.
 - [The Two Products of the Split-Complex Space](the-two-products-of-the-split-complex-space.html), for the two products and the failure of associativity of the sesquilinear one.

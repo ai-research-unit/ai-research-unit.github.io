@@ -1,8 +1,8 @@
-# __The Trace Form and Its Indefinite Signature__
+# __The Trace Form and Its Indefinite Inertia__
 
 ## Introduction
 
-**The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symmetric, nondegenerate, and indefinite for every $n\ge2$, with signature $\bigl(n(n+1)/2,\,n(n-1)/2\bigr)$.**
+**The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symmetric, nondegenerate, and indefinite for every $n\ge2$, with inertia $\bigl(n(n+1)/2,\,n(n-1)/2\bigr)$.**
 
 The article computes the Gram matrix of the form in the matrix-unit basis and identifies it with the permutation matrix of the transposition. It counts the signs, describes the isotropic cone and gives an explicit null vector, proves the associativity of the form and its invariance under the derivations, and reads the transpose as the fundamental symmetry of a Krein space. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* for the algebra and its two halves, and it defers the definite competitor to *The Hilbert–Schmidt Form: Definite but Not Invariant*.
 
@@ -54,7 +54,7 @@ $$
 p=\frac{n(n-1)}{2}+n=\frac{n(n+1)}{2},\qquad q=\frac{n(n-1)}{2},\qquad p+q=n^{2}.
 $$
 
-**The count is confirmed at the first four dimensions.** The signatures read from the Gram matrix are these.
+**The count is confirmed at the first four dimensions.** The inertias read from the Gram matrix are these.
 
 | $n$ | $p$ | $q$ | $p+q=n^{2}$ |
 |---|---|---|---|
@@ -91,9 +91,9 @@ $$
 
 so $\operatorname{tr}(SK)=0$. The first step uses the invariance of the trace under transposition, and the last uses $\operatorname{tr}(KS)=\operatorname{tr}(SK)$.
 
-**The halves are the signature decomposition.** They are orthogonal, their dimensions add to $n^{2}$, and the form is positive on one and negative on the other. So $p=\dim\operatorname{Sym}_n$ and $q=\dim\operatorname{Skew}_n$ with no diagonalisation.
+**The halves are the inertia decomposition.** They are orthogonal, their dimensions add to $n^{2}$, and the form is positive on one and negative on the other. So $p=\dim\operatorname{Sym}_n$ and $q=\dim\operatorname{Skew}_n$ with no diagonalisation.
 
-**At $n=2$ the count reads $4=3+1$.** The symmetric part is spanned by $E_{11}$, $E_{22}$ and $E_{12}+E_{21}$, and it is positive definite. The antisymmetric part is spanned by $J=E_{12}-E_{21}$, and $\operatorname{tr}(J^{2})=-2$. This is the signature $(3,1)$ of the form on the split-quaternion algebra, as in *Split-Quaternion Algebra*.
+**At $n=2$ the count reads $4=3+1$.** The symmetric part is spanned by $E_{11}$, $E_{22}$ and $E_{12}+E_{21}$, and it is positive definite. The antisymmetric part is spanned by $J=E_{12}-E_{21}$, and $\operatorname{tr}(J^{2})=-2$. This is the inertia $(3,1)$ of the form on the split-quaternion algebra, as in *Split-Quaternion Algebra*.
 
 ## The Isotropic Cone
 
@@ -165,7 +165,7 @@ $$
 \langle X,Y\rangle=\operatorname{tr}(XY)=\langle X^{\mathsf T},Y\rangle_{\mathrm{HS}}.
 $$
 
-The operator $J$ is self-adjoint for the Hilbert–Schmidt form, its square is the identity, and its eigenspaces are $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ with eigenvalues $+1$ and $-1$. Those are the defining properties of a fundamental symmetry, and the definite form $\langle JX,Y\rangle_{\mathrm{HS}}$ has the signature of the trace form.
+The operator $J$ is self-adjoint for the Hilbert–Schmidt form, its square is the identity, and its eigenspaces are $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ with eigenvalues $+1$ and $-1$. Those are the defining properties of a fundamental symmetry, and the definite form $\langle JX,Y\rangle_{\mathrm{HS}}$ has the inertia of the trace form.
 
 **So $M_n(\mathbb{R})$ with this form is a Krein space of type $(p,q)$.** The form is indefinite and nondegenerate, the fundamental symmetry exists, and the type is $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. The imbalance is $p-q=n$, so the space is not neutral; it is split in the sense that both halves are nonzero for $n\ge2$.
 
@@ -187,7 +187,7 @@ That contradicts $B(E_{12},E_{12})>0$, because $E_{12}$ is nonzero.
 
 ## Summary
 
-The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symmetric and nondegenerate. Its Gram matrix in the matrix-unit basis is the permutation matrix of the transposition $(i,j)\mapsto(j,i)$, so its signature is $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, measured as $(3,1)$, $(6,3)$, $(10,6)$ and $(15,10)$ at $n=2,3,4,5$. The form is therefore indefinite for every $n\ge2$, with exactly $n(n-1)/2$ negative directions, and the negative directions are the antisymmetric ones. The form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two halves are orthogonal, which is the signature decomposition. The isotropic cone has dimension $n^{2}-1$, and an explicit null vector is $E_{11}-E_{22}+E_{12}-E_{21}$, the sum of a positive direction and a negative direction of equal norm. The form is associative, every inner derivation is anti-self-adjoint for it, and it is invariant under conjugation by any invertible matrix. The transpose is an isometric involution and the fundamental symmetry, so the space is a Krein space of type $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. No positive definite form is invariant under the inner derivations, and every symmetric associative form is a scalar multiple of this one.
+The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symmetric and nondegenerate. Its Gram matrix in the matrix-unit basis is the permutation matrix of the transposition $(i,j)\mapsto(j,i)$, so its inertia is $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, measured as $(3,1)$, $(6,3)$, $(10,6)$ and $(15,10)$ at $n=2,3,4,5$. The form is therefore indefinite for every $n\ge2$, with exactly $n(n-1)/2$ negative directions, and the negative directions are the antisymmetric ones. The form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two halves are orthogonal, which is the inertia decomposition. The isotropic cone has dimension $n^{2}-1$, and an explicit null vector is $E_{11}-E_{22}+E_{12}-E_{21}$, the sum of a positive direction and a negative direction of equal norm. The form is associative, every inner derivation is anti-self-adjoint for it, and it is invariant under conjugation by any invertible matrix. The transpose is an isometric involution and the fundamental symmetry, so the space is a Krein space of type $\bigl(n(n+1)/2,n(n-1)/2\bigr)$. No positive definite form is invariant under the inner derivations, and every symmetric associative form is a scalar multiple of this one.
 
 ## Summary of Notation
 
@@ -199,7 +199,7 @@ The form $\langle X,Y\rangle=\operatorname{tr}(XY)$ on $M_n(\mathbb{R})$ is symm
 | ${}^{\mathsf T}$ | the transpose |
 | $\Pi$ | the Gram matrix of the form in the matrix-unit basis, a permutation matrix |
 | $\tau(i,j)=(j,i)$ | the transposition whose permutation matrix is $\Pi$ |
-| $(p,q)$ | the signature, $p=n(n+1)/2$ and $q=n(n-1)/2$ |
+| $(p,q)$ | the inertia, $p=n(n+1)/2$ and $q=n(n-1)/2$ |
 | $\operatorname{Sym}_n$, $\operatorname{Skew}_n$ | the positive and negative halves, of dimensions $p$ and $q$ |
 | $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y)$ | the Hilbert–Schmidt form |
 | $J(X)=X^{\mathsf T}$ | the fundamental symmetry |

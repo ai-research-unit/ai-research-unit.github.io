@@ -6,7 +6,7 @@
 
 The article proves the definiteness and the Hermitian symmetry, exhibits the two orthonormal bases and the coefficient formula, proves the Cauchy–Schwarz inequality and the two norm comparisons at order four, identifies the form as the unique up-to-scale inner product invariant under $U(4)$, and reads it as the trace form composed with the conjugate transpose.
 
-It assumes *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$* for the indefinite companion and *The Axis-Free Representation of $M_4(\mathbb{C})$* for the basis $T_{\mu\nu}$. The case $n=2$ is *The Hilbert–Schmidt Form at $n=2$*; the operator use is *The Adjoints and the Polar Decomposition of an Operator at $n=4$*.
+It assumes *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$* for the indefinite companion and *The Axis-Free Representation of $M_4(\mathbb{C})$* for the basis $T_{\mu\nu}$. The case $n=2$ is *The Hilbert–Schmidt Form at $n=2$*; the operator use is *The Adjoints and the Polar Decomposition of an Operator at $n=4$*.
 
 ## The Form and Its Definiteness
 
@@ -110,9 +110,9 @@ It assumes *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C
 
 **Proof.** $\beta(S,B)=\langle S,B\rangle$ for symmetric $S$, and $\beta(K,B)=-\langle K,B\rangle$ for antisymmetric $K$.
 
-**Corollary.** The signature $(10,6)$ of the trace form and the positive definiteness of the Hilbert–Schmidt form are the same computation with the involution inserted.
+**Corollary.** The inertia $(10,6)$ of the trace form and the positive definiteness of the Hilbert–Schmidt form are the same computation with the involution inserted.
 
-**Proof.** The sign change on the six antisymmetric directions is exactly the difference between the two signatures.
+**Proof.** The sign change on the six antisymmetric directions is exactly the difference between the two inertias.
 
 ## Summary
 
@@ -120,7 +120,7 @@ The Hilbert–Schmidt form is a positive definite Hermitian form, whose real par
 
 The Cauchy–Schwarz inequality holds, and the operator and Frobenius norms satisfy $\lVert A\rVert_2\le\lVert A\rVert_F\le2\lVert A\rVert_2$ at order four, with both bounds attained and with the constant $2$ equal to the square root of the order.
 
-The form is invariant under conjugation by $U(4)$ and is the unique invariant inner product up to scale. It equals the trace form composed with the conjugate transpose, so the two forms differ by the involution and not by any independent choice: the positive definiteness of one and the signature $(10,6)$ of the other are one computation read twice.
+The form is invariant under conjugation by $U(4)$ and is the unique invariant inner product up to scale. It equals the trace form composed with the conjugate transpose, so the two forms differ by the involution and not by any independent choice: the positive definiteness of one and the inertia $(10,6)$ of the other are one computation read twice.
 
 ## Summary of Notation
 
@@ -136,7 +136,7 @@ The form is invariant under conjugation by $U(4)$ and is the unique invariant in
 ## Further Reading
 
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Frobenius and operator norms and their comparison.
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the indefinite companion.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the indefinite companion.
 - [The Axis-Free Representation of $M_4(\mathbb{C})$](m4c-axis-free-representation.html), for the orthonormal basis $T_{\mu\nu}/2$.
 - [The Adjoints and the Polar Decomposition of an Operator at $n=4$](the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-4.html), for the adjoint computed with this form.
 - [The Hilbert–Schmidt Form at $n=2$](the-hilbert-schmidt-form-at-n-2.html), for the same form at order two.

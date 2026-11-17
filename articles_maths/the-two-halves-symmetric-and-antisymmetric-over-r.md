@@ -140,7 +140,7 @@ $$
 \operatorname{tr}(K^{2})=-\sum_{i,j}K_{ij}^{2}<0.
 $$
 
-So the form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two halves are exact orthogonal complements for it. *The Two Halves as Orthogonal Complements for the Trace Form* proves that statement and computes the signature $(n(n+1)/2,n(n-1)/2)$.
+So the form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the two halves are exact orthogonal complements for it. *The Two Halves as Orthogonal Complements for the Trace Form* proves that statement and computes the inertia $(n(n+1)/2,n(n-1)/2)$.
 
 **The splitting is therefore both a direct sum and an orthogonal one.** A direct sum of subspaces needs only $S\cap K=0$. The trace form adds that every element of one half is orthogonal to every element of the other.
 
@@ -185,4 +185,4 @@ The transpose is an involution of $M_n(\mathbb{R})$, and its eigenspaces are the
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the trace form and its behaviour on the two halves.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the matrix units, the trace and the two halves.
 - [The Two Classes Compared: $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ Have the Same Dimension](the-two-classes-compared-sym-n-and-sp-n-have-the-same-dimension.html), for the second class of fixed spaces.
-- [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the signature of the trace form.
+- [The Two Halves as Orthogonal Complements for the Trace Form](the-two-halves-as-orthogonal-complements-for-the-trace-form.html), for the inertia of the trace form.

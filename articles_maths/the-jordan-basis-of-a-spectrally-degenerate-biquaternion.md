@@ -84,7 +84,7 @@ and the spectrum is the single point $\{Q_t\}$: the two roots have merged, so no
 
 **The determinant is not an independent condition on the sector: it is the square of the scalar part.**
 
-**Theorem (the determinant on the sector).** For $\tilde Q\in\mathcal S$,
+**Theorem (the determinant of the image on the sector).** For $\tilde Q\in\mathcal S$,
 
 $$
 \det\mathsf{M}_2(\tilde Q)=Q_t^2.
@@ -732,7 +732,7 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, complex dimension four, real dimension eight |
 | $\tilde Q=Q_te_t+\vec Q$ | an element and its scalar–vector split |
 | $B^2=Q_x^2+Q_y^2+Q_z^2$ | the square of the vector part |
-| $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$ | the determinant |
+| $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$ | the determinant of the image |
 | $\mathcal S=\{B^2=0\}$ | the spectrally degenerate sector |
 | $\mathbb{B}\setminus\mathcal S=\{B^2\neq0\}$ | the spectrally regular sector |
 | $\mathcal N=\{\det\mathsf{M}_2(\tilde Q)=0\}$ | the null cone, the zero-divisor set |

@@ -279,7 +279,7 @@ In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *$M_2(\mathbb{C})$ Pauli Repre
 
 **Theorem.** Under the isomorphism $\mathsf M_2$ with $\mathsf M_2(\tilde Q_1)=Q_{1t}\mathrm I_2-iQ_{1x}\sigma_1-iQ_{1y}\sigma_2-iQ_{1z}\sigma_3$, the following coincide: $\tilde Q_1$ is a nilpotent; $\mathsf M_2(\tilde Q_1)$ is a nonzero nilpotent matrix; and $\mathsf M_2(\tilde Q_1)$ is trace-free, $\operatorname{tr}\mathsf M_2(\tilde Q_1)=2Q_{1t}=0$, and singular, $\det\mathsf M_2(\tilde Q_1)=C(\tilde Q_1)=0$.
 
-**Proof.** The trace is $2Q_{1t}$ and the determinant is $C(\tilde Q_1)$; the criterion is $Q_{1t}=0$ and $C(\tilde Q_1)=0$, which is the stated pair. A nonzero two-by-two complex matrix that is singular and trace-free is nilpotent, and conversely a nilpotent matrix is singular and trace-free.
+**Proof.** The trace is $2Q_{1t}$ and the determinant of the $2\times2$ image is $C(\tilde Q_1)$; the criterion is $Q_{1t}=0$ and $C(\tilde Q_1)=0$, which is the stated pair. A nonzero two-by-two complex matrix that is singular and trace-free is nilpotent, and conversely a nilpotent matrix is singular and trace-free.
 
 ### The Nilpotents and the Remarkable Subspaces
 

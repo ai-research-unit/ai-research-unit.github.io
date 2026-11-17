@@ -449,7 +449,7 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\ome
 | $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\bar Q = q - jq'$ | Split complex conjugate |
-| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, signature $(1,1)$ |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, inertia $(1,1)$ |
 | $\{\langle Q\rangle_{*} = 0\}$ | Null cone, the zero-divisor set |
 | $\|Q\| = \sqrt{q^2 + q'^2}$ | Euclidean modulus |
 | $\Pi_+ = \tfrac12(1+j), \ \Pi_- = \tfrac12(1-j)$ | Idempotents, $\Pi_\pm^2 = \Pi_\pm$, $\Pi_+\Pi_- = 0$ |

@@ -6,7 +6,7 @@
 
 The article writes the four forms, explains the factor of four, determines which are multiplicative, which are positive and which are invariant under which group, sets the matrix formulas against their biquaternion counterparts row by row, and states the two warnings that go with them: the transpose is the quaternion conjugation only in the axis-free frame, and the determinant is not a norm on the full algebra.
 
-It assumes *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$* and *The Hilbert–Schmidt Form at $n=4$*. The biquaternion original is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the axis-free computation is §*The Four Norms* of *The Axis-Free Representation of $M_4(\mathbb{C})$*.
+It assumes *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$* and *The Hilbert–Schmidt Form at $n=4$*. The biquaternion original is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the axis-free computation is §*The Four Norms* of *The Axis-Free Representation of $M_4(\mathbb{C})$*.
 
 ## The Four Quarter-Traces
 
@@ -68,9 +68,9 @@ and the **Krein form** $K$ as the coordinate-weighted quadratic form $\sum_\mu\s
 
 ## What Is Positive and What Is Not
 
-**Theorem.** $H$ is positive definite on the complex algebra; $N$ and $P$ are indefinite over $\mathbb{C}$ and definite of opposite signs over $\mathbb{R}$ on the real and imaginary parts; $K$ has signature $(2,6)$ on the real algebra.
+**Theorem.** $H$ is positive definite on the complex algebra; $N$ and $P$ are indefinite over $\mathbb{C}$ and definite of opposite signs over $\mathbb{R}$ on the real and imaginary parts; $K$ has inertia $(2,6)$ on the real algebra.
 
-**Proof.** $H=\sum_\mu|Q_\mu|^{2}$ vanishes only at zero. $N=Q_t^{2}+B^{2}$ vanishes at $Q_t=i$, $Q_x=1$, all other coordinates zero, so it is indefinite over $\mathbb{C}$; over $\mathbb{R}$ it is positive definite. $P=Q_t^{2}-B^{2}$ is positive on the scalar line and negative on the vector space. $K$ is $+1$ on the two real directions of the scalar part and $-1$ on the six real directions of the vector part, so its signature is $(2,6)$.
+**Proof.** $H=\sum_\mu|Q_\mu|^{2}$ vanishes only at zero. $N=Q_t^{2}+B^{2}$ vanishes at $Q_t=i$, $Q_x=1$, all other coordinates zero, so it is indefinite over $\mathbb{C}$; over $\mathbb{R}$ it is positive definite. $P=Q_t^{2}-B^{2}$ is positive on the scalar line and negative on the vector space. $K$ is $+1$ on the two real directions of the scalar part and $-1$ on the six real directions of the vector part, so its inertia is $(2,6)$.
 
 **Corollary.** Exactly one of the four is an inner product on the complex algebra, and it is the Hilbert–Schmidt form divided by four.
 
@@ -106,7 +106,7 @@ and the **Krein form** $K$ as the coordinate-weighted quadratic form $\sum_\mu\s
 | quaternionic $N$ | $Q_t^{2}+B^{2}$ | $\tfrac14\operatorname{tr}(A^{\mathsf T}A)$ | no | yes | $O(4,\mathbb{C})$ |
 | Hermitian $H$ | $\sum_\mu|Q_\mu|^{2}$ | $\tfrac14\operatorname{tr}(A^{\ast}A)$ | yes | no | $U(4)$ |
 | Krein $K$ | $|Q_t|^{2}-\sum_k|Q_k|^{2}$ | weighted coordinates, no single word | no | no | $O(4)$ |
-| determinant | $N^{2}$ | $\det A$ | not a form | yes | all |
+| the determinant of the image | $N^{2}$ | $\det A$ | not a form | yes | all |
 
 **Proposition.** The correspondence is entry by entry: each row of the biquaternion table becomes a row here with the same value, read on the matrix.
 
@@ -128,7 +128,7 @@ and the **Krein form** $K$ as the coordinate-weighted quadratic form $\sum_\mu\s
 
 The element carries four quadratic invariants, each a quarter-trace: the plain $Q_t^{2}-B^{2}$, the quaternionic $Q_t^{2}+B^{2}$, the Hermitian $\sum|Q_\mu|^{2}$ and the Krein $|Q_t|^{2}-\sum_k|Q_k|^{2}$, with the trace $4Q_t$ linear and the determinant $N^{2}$ quartic. The quarter is the block factor, four being twice the repetition and twice the quadratic word.
 
-The quaternionic norm and the determinant are multiplicative; the plain, Hermitian and Krein forms are not. Only the Hermitian form is positive definite on the complex algebra; over the reals the plain form is positive on the scalar line and negative on the vector space, the quaternionic one is positive definite, and the Krein one has signature $(2,6)$.
+The quaternionic norm and the determinant are multiplicative; the plain, Hermitian and Krein forms are not. Only the Hermitian form is positive definite on the complex algebra; over the reals the plain form is positive on the scalar line and negative on the vector space, the quaternionic one is positive definite, and the Krein one has inertia $(2,6)$.
 
 The invariance groups are $\mathrm{GL}_4$ for the plain form, $O(4,\mathbb{C})$ for the quaternionic and Krein forms, and $U(4)$ for the Hermitian one. The transpose equals the quaternion conjugation only in the axis-free frame, and the determinant is the square of a norm and not a norm itself.
 
@@ -139,7 +139,7 @@ The invariance groups are $\mathrm{GL}_4$ for the plain form, $O(4,\mathbb{C})$ 
 | $P=\tfrac14\operatorname{tr}(A^{2})$ | the plain form, $Q_t^{2}-B^{2}$ |
 | $N=\tfrac14\operatorname{tr}(A^{\mathsf T}A)$ | the quaternionic norm, $Q_t^{2}+B^{2}$ |
 | $H=\tfrac14\operatorname{tr}(A^{\ast}A)$ | the Hermitian form, positive definite |
-| $K=|c_t|^{2}-\sum_k|c_k|^{2}$ | the Krein form, signature $(2,6)$ |
+| $K=|c_t|^{2}-\sum_k|c_k|^{2}$ | the Krein form, inertia $(2,6)$ |
 | $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the squared vector length |
 | $\det A=N^{2}$ | the determinant as the square of a norm |
 

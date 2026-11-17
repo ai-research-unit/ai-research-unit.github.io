@@ -91,7 +91,7 @@ annihilators of $\tilde q$ are
 | $0$ | $0$ | $0$ | $4$ |
 | $\tilde q\neq0$ | $\neq0$ | $4$ | $0$ |
 
-*Proof.* The determinant $\langle\tilde q\rangle_{\natural}^2$ is nonzero exactly when $\tilde q\neq0$, by the positive
+*Proof.* The determinant of $L_{\tilde q}$, which is $\langle\tilde q\rangle_{\natural}^2$, is nonzero exactly when $\tilde q\neq0$, by the positive
 definiteness of the norm; then both operators are invertible and both annihilators are $\{0\}$. The
 origin gives the zero operator, of kernel the whole space. All dimensions are real dimensions, the
 space being the real vector space $\mathbb{H}\cong\mathbb{R}^4$.

@@ -6,7 +6,7 @@
 
 The article establishes the Cartan decomposition, computes the dimensions over both fields, identifies the quotients with the cones of positive definite symmetric matrices, describes the geodesics and the curvature, identifies the compact dual, and reads the ten symmetric directions in the axis-free basis, where the trace form takes the value $+4$ on exactly ten elements.
 
-It assumes *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$*. The model at order two is *The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin*.
+It assumes *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$*, *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$*. The model at order two is *The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin*.
 
 ## The Pair and the Cartan Involution
 
@@ -110,7 +110,7 @@ It assumes *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$
 
 **Proof.** The verified computation $\operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=\pm4\delta$ with the set equality between the plus signs and the symmetric patterns.
 
-**Corollary.** The dimension ten of $\mathfrak{p}$ is read off as the number of plus signs, so the Cartan decomposition and the signature of the trace form are the same split read twice.
+**Corollary.** The dimension ten of $\mathfrak{p}$ is read off as the number of plus signs, so the Cartan decomposition and the inertia of the trace form are the same split read twice.
 
 **Proof.** The ten plus signs and the six minus signs.
 
@@ -146,7 +146,7 @@ The transpose gives a Cartan involution of $\mathfrak{gl}_4$ with fixed set $\ma
 
 The complex twin is the space of nondegenerate complex symmetric forms, of complex dimension ten, not contractible because the positivity is gone. The compact dual is $U(4)/O(4)$, of dimension ten, with nonnegative curvature and closed geodesics.
 
-In the axis-free basis the ten symmetric directions are exactly the ten elements on which the trace form is positive, so the Cartan decomposition is the signature of the trace form read twice.
+In the axis-free basis the ten symmetric directions are exactly the ten elements on which the trace form is positive, so the Cartan decomposition is the inertia of the trace form read twice.
 
 ## Summary of Notation
 
@@ -163,6 +163,6 @@ In the axis-free basis the ten symmetric directions are exactly the ten elements
 
 - Sigurdur Helgason, *Differential Geometry, Lie Groups and Symmetric Spaces* (AMS, 2001), for Cartan decompositions, duality and curvature.
 - [Symmetric Pairs and Cartan Pairs: the Reductivity Criterion at $n=4$](symmetric-pairs-and-cartan-pairs-the-reductivity-criterion-at-n-4.html), for the three bracket conditions.
-- [The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the $(10,6)$ signature.
+- [The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$](the-trace-form-and-its-signature-on-the-two-halves-of-m4c.html), for the $(10,6)$ inertia.
 - [The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin](the-symmetric-space-gl2-o2-and-its-complex-twin.html), for the case at order two.
 - [The Geometry of the Two Halves at $n=4$, and the Return of the Two-Sided Operators](the-geometry-of-the-two-halves-at-n-4-and-the-return-of-the-two-sided-operators.html), for the geometric picture as a whole.

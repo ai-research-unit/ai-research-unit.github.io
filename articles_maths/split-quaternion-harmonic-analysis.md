@@ -149,7 +149,7 @@ $$
 \mathcal F E_D(\zeta) = -\frac{1}{2\pi\mathrm{i}}\,\zeta^{-1} = \frac{1}{2\pi\mathrm{i}}\,\frac{\zeta}{\langle \zeta\rangle_{\natural}} ,
 $$
 
-a distribution whose singular support is exactly the null cone. The vanishing determinant $\langle \zeta\rangle_{\natural} = 0$ is therefore not a technical nuisance: it is the support of the transformed fundamental solution, and it is the reason the fundamental solution is singular on the cone rather than at a point.
+a distribution whose singular support is exactly the null cone. The vanishing norm $\langle \zeta\rangle_{\natural} = 0$ is therefore not a technical nuisance: it is the support of the transformed fundamental solution, and it is the reason the fundamental solution is singular on the cone rather than at a point.
 
 **Proof.** From $\widehat{DE_D} = -2\pi\mathrm{i}\zeta\mathcal F E_D = \hat\delta = 1$ and $\zeta^{-1} = -\zeta/\langle \zeta\rangle_{\natural}$ for $\zeta \in V$; the support statement is then the standard computation of the principal value of $1/N$ on an indefinite quadratic form, as in *Distributions and Fundamental Solutions*.
 

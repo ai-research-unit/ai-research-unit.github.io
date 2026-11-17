@@ -20,7 +20,7 @@ So the discrepancy between the two models is not an accident of two conventions.
 
 **What the regular model buys.** Three things the complex model cannot give. The model is a **real** algebra homomorphism, so its image is a genuine subalgebra of a real matrix algebra and no complex scalar is needed anywhere. The frame is the algebra's own basis, so the matrix entries are the structure constants of the multiplication table and the model is a dictionary rather than an embedding into a space of a different kind. And the two-sided structure becomes visible inside one ambient: the left and the right multiplication are two commuting four-dimensional families in the same $M_4(\mathbb{R})$, related by a signed transpose.
 
-**What it costs.** The determinant is no longer the norm but its square, so the model cannot read the norm off a determinant without a square root. The determinant is also positive on every nonzero element, so it cannot distinguish $\tilde q$ from $-\tilde q$: the two have the same determinant and opposite traces, and the sign of an element is read by the trace alone. There is also no complex scalar in the model, so the Hermitian theory of the companion article has no canonical counterpart here; what replaces it is the transpose, which is an involution of the image and not an anti-linear map.
+**What it costs.** The determinant is no longer the norm but its square, so the model cannot read the norm off a determinant without a square root. The determinant of the matrix is also positive on every nonzero element, so it cannot distinguish $\tilde q$ from $-\tilde q$: the two have the same determinant and opposite traces, and the sign of an element is read by the trace alone. There is also no complex scalar in the model, so the Hermitian theory of the companion article has no canonical counterpart here; what replaces it is the transpose, which is an involution of the image and not an anti-linear map.
 
 **Boundaries.** The algebra is *Quaternion Algebra*; the norm is *Norm and Invertibility in the Quaternion Algebra*; the spectrum is *Spectral Regularity and Degeneracy in the Quaternion Algebra*; the abstract operators are *The One-Sided Operators* and *Two-Sided Operators* on the quaternion algebra, which this article does not replace. The companion model is *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation*, and the operators of this model are *$M_4(\mathbb{R})_{\mathbb{H}_L}$ Axis-Free Representation : Operators*. The biquaternion counterpart is *$M_4(\mathbb{C})$ Axis-Free Representation*, whose two displays are the same arrays over $\mathbb{C}$: this model is their real slice, §*The Real Slice of the Biquaternion Display*.
 
@@ -130,7 +130,7 @@ $$
 
 **Proof.** Transposing the stitch gives $\mathsf{M}_4(\tilde q)^{\mathsf T}=D R_{\tilde q}D$, and the product $\tilde q_3\tilde q$ has scalar part $\langle\tilde q_3,\tilde q\rangle$ and vector part $q_t\vec v_3+q_{3,t}\vec v+\vec v_3\times\vec v$, whose cross term has the opposite sign to that of $\tilde q\tilde q_3$; so $D R_{\tilde q}D$ is left multiplication by $q_te_t-\vec v$.
 
-The two statements are the regular form of the complex relation $R_{\tilde q}=C L_{\tilde q^{*}}C$, with the conjugate transpose replaced by the signed transpose, and they say the same thing in two languages: an anti-linear involution on the one hand, a signature matrix on the other.
+The two statements are the regular form of the complex relation $R_{\tilde q}=C L_{\tilde q^{*}}C$, with the conjugate transpose replaced by the signed transpose, and they say the same thing in two languages: an anti-linear involution on the one hand, an inertia matrix on the other.
 
 **Three operations, one matrix.** The arrays obtained from $\mathsf{M}_4(\tilde q)$ by the transpose and by the two conjugations by $D$ are not equal, and it is worth naming which belongs where.
 
@@ -207,7 +207,7 @@ $$
 \operatorname{tr}\bigl(\mathsf{M}_4(\tilde e_\mu)\mathsf{M}_4(\tilde e_\nu)\bigr)=\operatorname{diag}(4,-4,-4,-4),
 $$
 
-of signature $(1,3)$; the computation is the same as in the complex model, with every entry doubled, because the real trace doubles. So the trace form is again the Minkowski form of signature $(1,3)$, positive on the scalar part and negative on the pure part, and the factor $4$ against $2$ is the only change.
+of inertia $(1,3)$; the computation is the same as in the complex model, with every entry doubled, because the real trace doubles. So the trace form is again the Minkowski form of inertia $(1,3)$, positive on the scalar part and negative on the pure part, and the factor $4$ against $2$ is the only change.
 
 **What the trace does not see.** The trace is blind to the three vector coordinates: it records $q_t$ and nothing else, so $e_t+2\vec e_x$ and $e_t-3\vec e_y$ have the same trace and different norms, and the trace separates an element from its conjugate not at all. It is also blind to the sign that the determinant loses, since $\pm\tilde q$ have traces $\pm4q_t$ and equal determinants, so the pair $(\operatorname{tr},\det)$ determines the element up to nothing at all: two elements with the same trace and the same norm differ only in the direction of the vector part.
 
@@ -227,7 +227,7 @@ $$
 
 *By the eigenvalues.* The characteristic polynomial, computed below, is $(\lambda^{2}-2q_t\lambda+N)^{2}$, whose constant term is $N^{2}$ and is the determinant in dimension four.
 
-**Why the square.** The determinant of a real matrix that happens to preserve a complex structure is the squared modulus of the complex determinant, because the complex structure pairs every eigenvalue with its conjugate. Here every eigenvalue of $\mathsf{M}_2$ is non-real unless the element is scalar, so every eigenvalue of $\mathsf{M}_4$ occurs twice, and the determinant is the square of the product of one representative of each pair. The square is therefore structural and not conventional: it is the arithmetic signature of the realification.
+**Why the square.** The determinant of a real matrix that happens to preserve a complex structure is the squared modulus of the complex determinant, because the complex structure pairs every eigenvalue with its conjugate. Here every eigenvalue of $\mathsf{M}_2$ is non-real unless the element is scalar, so every eigenvalue of $\mathsf{M}_4$ occurs twice, and the determinant is the square of the product of one representative of each pair. The square is therefore structural and not conventional: it is the arithmetic inertia of the realification.
 
 **The consequences.**
 
@@ -313,7 +313,7 @@ and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier 
 
 **Three forms, and one of them is the square of another.** The model carries the same three forms as the complex model, and the differences are the factor two on the trace and the square on the determinant.
 
-| form | definition | Gram matrix on the four units | signature | multiplicative |
+| form | definition | Gram matrix on the four units | inertia | multiplicative |
 |---|---|---|---|---|
 | determinant form | $\det\mathsf{M}_4(\tilde q)=N^{2}$ | — (quartic) | — | yes |
 | norm form | $\sqrt{\det}=N$ | $I_4$ | $(4,0)$ | yes |
@@ -322,7 +322,7 @@ and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier 
 
 **The determinant is not a quadratic form.** The single most important difference from the complex model: on the four real coordinates the determinant is a quartic, so the model does not carry the Euclidean form as a determinant. The Euclidean form is its square root, and the square root is the norm, which is not a polynomial in the matrix entries. This is why the regular model cannot be used to compute the norm by a determinant, and why the complex model is the one used for the spectral and polar theory.
 
-**The trace form is the Lorentzian one.** It is of signature $(1,3)$ and invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$; it is the form under which the group of invertibles acts by isometries, and it is the same form as in the complex model up to the factor $4$ against $2$.
+**The trace form is the Lorentzian one.** It is of inertia $(1,3)$ and invariant under the inner automorphisms, $\operatorname{tr}(gAg^{-1}gBg^{-1})=\operatorname{tr}(AB)$; it is the form under which the group of invertibles acts by isometries, and it is the same form as in the complex model up to the factor $4$ against $2$.
 
 **The Frobenius form is the metric.** It is positive definite, equal to $4$ times the Euclidean form on the coordinates, and it is the inner product with respect to which the transpose is the adjoint. Its restriction to the image is $4N$, so the image is a conformal copy of $\mathbb{R}^{4}$ inside the ambient.
 
@@ -341,7 +341,7 @@ and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier 
 
 **The plain bracket.** The square of the display has trace $4(q_t^{2}-\lVert\vec v\rVert^{2})$: each of the two rotation-scaling blocks contributes $2(q_t^{2}-\lVert\vec v\rVert^{2})$ to the trace, because the trace of the square of a $2\times2$ block $\begin{pmatrix}q_t&-b\\ b&q_t\end{pmatrix}$ is $2(q_t^{2}-b^{2})$. The word is the same as in the complex model, closed by one trace, and the factor $\tfrac14$ replaces the $\tfrac12$ because the real dimension is twice the complex one.
 
-**The collapse to two.** Over $\mathbb{R}$ the coefficients are real, so $\lvert q_\mu\rvert^{2}=q_\mu^{2}$ and the four brackets are two: $H=N$ and $K=P$, the matrix being real and $M^{\dagger}=M^{\mathsf T}$. What remains is the pair the article has already used, $N$ multiplicative and definite and $P$ indefinite of signature $(1,3)$. On this model the two survivors are the two traces already met, $\tfrac14\operatorname{tr}(M^{\mathsf T}M)=N$ and $\tfrac14\operatorname{tr}(M^{2})=P$, and the other two are the same two numbers under another name. The collapse is the same in the companion model; it is caused by the reality of the coefficients and not by the size of the matrix, and it is undone by passing to the biquaternion algebra, where the coefficients are complex and the four are distinct.
+**The collapse to two.** Over $\mathbb{R}$ the coefficients are real, so $\lvert q_\mu\rvert^{2}=q_\mu^{2}$ and the four brackets are two: $H=N$ and $K=P$, the matrix being real and $M^{\dagger}=M^{\mathsf T}$. What remains is the pair the article has already used, $N$ multiplicative and definite and $P$ indefinite of inertia $(1,3)$. On this model the two survivors are the two traces already met, $\tfrac14\operatorname{tr}(M^{\mathsf T}M)=N$ and $\tfrac14\operatorname{tr}(M^{2})=P$, and the other two are the same two numbers under another name. The collapse is the same in the companion model; it is caused by the reality of the coefficients and not by the size of the matrix, and it is undone by passing to the biquaternion algebra, where the coefficients are complex and the four are distinct.
 
 ## The Subspaces
 
@@ -381,8 +381,8 @@ and the compact part is a copy of $SU(2)$ inside $SO(4)$, acting on the carrier 
 |---|---|---|
 | size | $2$ over $\mathbb{C}$ | $4$ over $\mathbb{R}$ |
 | trace | $2q_t$ | $4q_t$ |
-| determinant | $N$ | $N^{2}$ |
-| Euclidean form | the determinant | the square root of the determinant |
+| the determinant of the image | $N$ | $N^{2}$ |
+| Euclidean form | the determinant of the image | the square root of the determinant |
 | the involution of the image | the conjugate transpose | the transpose |
 | the symmetric/Hermitian part | scalar, via the conjugate transpose | scalar, via the transpose |
 | the two-sided structure | two families exchanged by an anti-linear map | two families exchanged by the linear matrix $D$ |
@@ -397,7 +397,7 @@ Two models, one representation, and the table is the complete dictionary between
 1. The regular representation $\mathsf{M}_4$ is the matrix of left multiplication in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and the Cayley matrix is displayed entrywise.
 2. It is the minimal faithful real model, and it is the realification of the Pauli model; that single fact explains the factor two on the trace and the square on the determinant.
 3. Multiplicativity is associativity, and the image is a four-dimensional subalgebra of $M_4(\mathbb{R})$.
-4. The trace is $4q_t$, the pure part is the trace-zero subspace, and the trace form has signature $(1,3)$ with Gram $\operatorname{diag}(4,-4,-4,-4)$.
+4. The trace is $4q_t$, the pure part is the trace-zero subspace, and the trace form has inertia $(1,3)$ with Gram $\operatorname{diag}(4,-4,-4,-4)$.
 5. The determinant is $N^{2}$, the fourth power of the modulus, positive on all nonzero elements, with no null cone; the model detects invertibility exactly.
 6. The characteristic polynomial is $(\lambda^{2}-2q_t\lambda+N)^{2}$, the eigenvalues are $q_t\pm i\lVert\vec v\rVert$ each twice, and the matrix is similar to two identical rotation-scaling blocks.
 7. The adjugate is $N\mathsf{M}_4(\tilde q^{*})$, the inverse is $\mathsf{M}_4(\tilde q^{*})/N$, and every member of the image is conformal normal with singular values $\sqrt N$ four times.

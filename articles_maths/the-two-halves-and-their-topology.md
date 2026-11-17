@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**Each of the two halves is a real Euclidean space of dimension $n^{2}$, the splitting map is an isometry, and the interesting topology of the halves sits in the strata: the Hermitian half is cut by the signature into $n+1$ open regions, the positive cone is convex and contractible, and the unitary half is not contractible because its determinant covers the circle.**
+**Each of the two halves is a real Euclidean space of dimension $n^{2}$, the splitting map is an isometry, and the interesting topology of the halves sits in the strata: the Hermitian half is cut by the inertia into $n+1$ open regions, the positive cone is convex and contractible, and the unitary half is not contractible because its determinant covers the circle.**
 
-The article proves that the Hermitian and the anti-Hermitian matrices are real vector spaces of dimension $n^{2}$, closed in the matrix space and meeting only at zero, proves the Pythagorean identity for the splitting and the isometry of the splitting map, proves that the positive definite cone is convex hence contractible, proves that the sets of fixed signature are open and that the determinant of a unitary matrix has modulus one. It assumes *The Two Halves as Orthogonal Complements* and *The Topology of $M_n(\mathbb{C})$*. It defers the fundamental group to *The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves* and the metric geometry to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators*.
+The article proves that the Hermitian and the anti-Hermitian matrices are real vector spaces of dimension $n^{2}$, closed in the matrix space and meeting only at zero, proves the Pythagorean identity for the splitting and the isometry of the splitting map, proves that the positive definite cone is convex hence contractible, proves that the sets of fixed inertia are open and that the determinant of a unitary matrix has modulus one. It assumes *The Two Halves as Orthogonal Complements* and *The Topology of $M_n(\mathbb{C})$*. It defers the fundamental group to *The Homotopy of $\mathrm{GL}_n(\mathbb{C})$ and of the Two Halves* and the metric geometry to *The Geometry of the Two Halves, and the Return of the Two-Sided Operators*.
 
 ## The Two Halves as Euclidean Spaces
 
@@ -76,17 +76,17 @@ so it is an isometry of order two whose fixed set is the Hermitian half and whos
 
 ## The Strata of the Hermitian Half
 
-**The signature is constant on open sets.** The eigenvalues of a Hermitian matrix depend continuously on the entries, so the number of positive and of negative eigenvalues is constant on a neighbourhood of every matrix with no zero eigenvalue; hence
+**The inertia is constant on open sets.** The eigenvalues of a Hermitian matrix depend continuously on the entries, so the number of positive and of negative eigenvalues is constant on a neighbourhood of every matrix with no zero eigenvalue; hence
 
 $$
-\operatorname{Herm}_n^{(p,q)}=\{H:\text{signature }(p,q)\}
+\operatorname{Herm}_n^{(p,q)}=\{H:\text{inertia }(p,q)\}
 $$
 
-is open for $p+q=n$. The computation confirms the openness at $n=3$ by perturbing random Hermitian matrices and finding the signature unchanged, and it gives $n+1$ regions.
+is open for $p+q=n$. The computation confirms the openness at $n=3$ by perturbing random Hermitian matrices and finding the inertia unchanged, and it gives $n+1$ regions.
 
-**The regions of fixed signature are separated by the singular set.** A path between two matrices of different signature must cross the set of singular Hermitian matrices, since the signature can change only when an eigenvalue passes through zero. The computation confirms the separation at $n=3$ by following a path from a positive to a negative definite matrix and finding a zero eigenvalue, and it is why the singular set is the wall of the half.
+**The regions of fixed inertia are separated by the singular set.** A path between two matrices of different inertia must cross the set of singular Hermitian matrices, since the inertia can change only when an eigenvalue passes through zero. The computation confirms the separation at $n=3$ by following a path from a positive to a negative definite matrix and finding a zero eigenvalue, and it is why the singular set is the wall of the half.
 
-**Each region is connected.** Two Hermitian matrices of the same signature are joined by a path of the same signature, since the unitary group acts transitively on each region and is connected, and a matrix of signature $(p,q)$ is $U\operatorname{diag}(1,\dots,-1,\dots)U^{*}$ with $U$ unitary. The computation confirms the transitivity at $n=3$, and it shows that the $n+1$ regions are the connected components of the complement of the singular set.
+**Each region is connected.** Two Hermitian matrices of the same inertia are joined by a path of the same inertia, since the unitary group acts transitively on each region and is connected, and a matrix of inertia $(p,q)$ is $U\operatorname{diag}(1,\dots,-1,\dots)U^{*}$ with $U$ unitary. The computation confirms the transitivity at $n=3$, and it shows that the $n+1$ regions are the connected components of the complement of the singular set.
 
 **The rank strata inside the Hermitian half have real dimension $2nr-r^{2}$.** A Hermitian matrix of rank $r$ is $UV^{*}$ with $U$ of size $n\times r$ and the parameter count gives
 
@@ -114,7 +114,7 @@ $$
 
 stays inside the cone because the combination of two positive definite matrices is positive definite, and it joins every positive matrix to the identity. The computation confirms the path at $n=3$ by checking the positivity at every step, and it gives the contractibility of the cone.
 
-**The cone is open in the Hermitian half.** The eigenvalues are continuous and positive on the cone, so a small perturbation stays positive, and the cone is the region of signature $(n,0)$; hence it is open, convex and therefore homeomorphic to the whole half. The computation confirms the openness at $n=3$, and it is the reason the exponential is a homeomorphism onto the cone.
+**The cone is open in the Hermitian half.** The eigenvalues are continuous and positive on the cone, so a small perturbation stays positive, and the cone is the region of inertia $(n,0)$; hence it is open, convex and therefore homeomorphic to the whole half. The computation confirms the openness at $n=3$, and it is the reason the exponential is a homeomorphism onto the cone.
 
 **The exponential is a homeomorphism onto the cone.** The map $\exp:\operatorname{Herm}_n\to\mathrm{PD}_n$ is continuous, bijective with inverse the logarithm, and both maps are continuous, so
 
@@ -162,13 +162,13 @@ $$
 
 which were recomputed at $n=2$. So the two-by-two matrix space is the orthogonal sum of two four-dimensional Euclidean spaces, and the splitting map is an isometry of $\mathbb{R}^{8}$.
 
-**The Hermitian half of the biquaternion algebra has three regions.** The signatures are $(2,0)$, $(1,1)$ and $(0,2)$, so
+**The Hermitian half of the biquaternion algebra has three regions.** The inertias are $(2,0)$, $(1,1)$ and $(0,2)$, so
 
 $$
-\operatorname{Herm}_2=\mathrm{PD}_2\ \sqcup\ \{\text{signature }(1,1)\}\ \sqcup\ (-\mathrm{PD}_2),
+\operatorname{Herm}_2=\mathrm{PD}_2\ \sqcup\ \{\text{inertia }(1,1)\}\ \sqcup\ (-\mathrm{PD}_2),
 $$
 
-with the singular set as the common boundary. The computation confirms the three regions at $n=2$ by drawing random Hermitian matrices and reading the signature, and it shows that the Peirce idempotents $\tilde\Pi_\pm$ sit at the boundary between the regions of signature $(1,1)$ and the definite ones.
+with the singular set as the common boundary. The computation confirms the three regions at $n=2$ by drawing random Hermitian matrices and reading the inertia, and it shows that the Peirce idempotents $\tilde\Pi_\pm$ sit at the boundary between the regions of inertia $(1,1)$ and the definite ones.
 
 **The compact half of the two-by-two case fibres over the circle.** Since $\mathrm{SU}(2)\cong S^{3}$ and
 
@@ -180,7 +180,7 @@ the determinant exhibits the group as a bundle of three-spheres over the circle,
 
 ## Summary
 
-Each of the two halves is a real Euclidean space of dimension $n^{2}$, closed in the matrix space and meeting the other only at zero, and the splitting map is a linear homeomorphism which is an isometry by the Pythagorean identity $\|A\|_{\mathrm{HS}}^{2}=\|H\|_{\mathrm{HS}}^{2}+\|K\|_{\mathrm{HS}}^{2}$, the cross term vanishing by orthogonality. The Hermitian half is cut by the signature into $n+1$ open connected regions separated by the singular set, the rank strata have real dimension $2nr-r^{2}$, and the positive definite cone is convex, open and homeomorphic to the whole half through the exponential. The unitary group is compact of dimension $n^{2}$ and not contractible, since its determinant is a surjection onto the circle, so it is the only one of the three sets with a nontrivial homotopy type; at $n=2$ the halves are four-dimensional and the unitary group is a circle times a three-sphere.
+Each of the two halves is a real Euclidean space of dimension $n^{2}$, closed in the matrix space and meeting the other only at zero, and the splitting map is a linear homeomorphism which is an isometry by the Pythagorean identity $\|A\|_{\mathrm{HS}}^{2}=\|H\|_{\mathrm{HS}}^{2}+\|K\|_{\mathrm{HS}}^{2}$, the cross term vanishing by orthogonality. The Hermitian half is cut by the inertia into $n+1$ open connected regions separated by the singular set, the rank strata have real dimension $2nr-r^{2}$, and the positive definite cone is convex, open and homeomorphic to the whole half through the exponential. The unitary group is compact of dimension $n^{2}$ and not contractible, since its determinant is a surjection onto the circle, so it is the only one of the three sets with a nontrivial homotopy type; at $n=2$ the halves are four-dimensional and the unitary group is a circle times a three-sphere.
 
 ## Summary of Notation
 
@@ -190,7 +190,7 @@ Each of the two halves is a real Euclidean space of dimension $n^{2}$, closed in
 | $\mathfrak{u}(n)\cong\mathbb{R}^{n^{2}}$ | the anti-Hermitian half as a Euclidean space |
 | $\Phi(A)=(H,K)$ | the splitting map |
 | $\|A\|_{\mathrm{HS}}^{2}=\|H\|_{\mathrm{HS}}^{2}+\|K\|_{\mathrm{HS}}^{2}$ | the Pythagorean identity |
-| $\operatorname{Herm}_n^{(p,q)}$ | the region of signature $(p,q)$ |
+| $\operatorname{Herm}_n^{(p,q)}$ | the region of inertia $(p,q)$ |
 | $2nr-r^{2}$ | the dimension of the Hermitian rank $r$ stratum |
 | $\mathrm{PD}_n$ | the convex open cone of positive matrices |
 | $\det:\mathrm{U}(n)\to S^{1}$ | the surjection which obstructs contractibility |
@@ -198,7 +198,7 @@ Each of the two halves is a real Euclidean space of dimension $n^{2}$, closed in
 ## Further Reading
 
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the topology of the positive definite cone and the unitary group.
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the signature and the inertia theorems.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the inertia and the inertia theorems.
 - Allen Hatcher, *Algebraic Topology* (Cambridge, 2002), for the homotopy of the classical groups.
 - [The Two Halves as Orthogonal Complements](the-two-halves-as-orthogonal-complements.html), for the orthogonality used in the Pythagorean identity.
 - [The Topology of $M_n(\mathbb{C})$](the-topology-of-mnc.html), for the ambient space and its strata.

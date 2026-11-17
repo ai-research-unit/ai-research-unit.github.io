@@ -187,7 +187,7 @@ $$
 
 and the same computation with $\mathrm{I}-E$ gives $\langle Y_{1/2},Z_{0}\rangle=0$, while $\langle X_{1},Z_{0}\rangle=0$ because $EZ_{0}=0$.
 
-**The form is positive definite on each space.** On $\operatorname{Sym}(1)$ it is the trace form of $\operatorname{Sym}_r$, on $\operatorname{Sym}(1/2)$ it is $2\sum B_{ij}^{2}$, on $\operatorname{Sym}(0)$ it is the trace form of $\operatorname{Sym}_{n-r}$; each is positive definite, and the three signatures reproduce the three dimensions $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$.
+**The form is positive definite on each space.** On $\operatorname{Sym}(1)$ it is the trace form of $\operatorname{Sym}_r$, on $\operatorname{Sym}(1/2)$ it is $2\sum B_{ij}^{2}$, on $\operatorname{Sym}(0)$ it is the trace form of $\operatorname{Sym}_{n-r}$; each is positive definite, and the three inertias reproduce the three dimensions $r(r+1)/2$, $r(n-r)$ and $(n-r)(n-r+1)/2$.
 
 **The automorphisms are the orthogonal conjugations.** A map $X\mapsto QXQ^{\mathsf T}$ with $Q\in\mathrm{O}(n)$ preserves the product, and every automorphism is of this form, because it preserves the unit and the cone of squares. So $\operatorname{Aut}(\operatorname{Sym}_n)=\mathrm{O}(n)$ and the derivations form $\mathfrak{so}(n)$, of dimension $n(n-1)/2$. A conjugation carries the Peirce spaces of $E$ to those of $QEQ^{\mathsf T}$, which is why the dimension formula depends on $E$ through $r$ alone.
 

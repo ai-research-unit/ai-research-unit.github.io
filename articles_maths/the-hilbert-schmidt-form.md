@@ -4,7 +4,7 @@
 
 **The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is a positive definite Hermitian form on $M_n(\mathbb{C})$, its real part is the Euclidean form on the $2n^{2}$ real coordinates, its norm is the square root of the sum of the squares of the singular values, and it is invariant under unitary conjugation but not under the full linear group.**
 
-The article proves the Hermitian axioms, computes the norm through the singular values, shows unitary invariance and the failure of invariance under general conjugation, computes the adjoints of the one-sided and the two-sided operators and of the derivation, shows that the form is definite on both halves in contrast with the trace form, and compares the Hilbert–Schmidt norm with the operator norm. It assumes *The Trace Form and Its Signature on the Two Halves* for the indefinite form it replaces and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the complex split. It defers the operator theory to *The Symmetric and Antisymmetric Parts of the Operator Space* and the analysis to *The Analysis on $M_n(\mathbb{C})$*.
+The article proves the Hermitian axioms, computes the norm through the singular values, shows unitary invariance and the failure of invariance under general conjugation, computes the adjoints of the one-sided and the two-sided operators and of the derivation, shows that the form is definite on both halves in contrast with the trace form, and compares the Hilbert–Schmidt norm with the operator norm. It assumes *The Trace Form and Its Inertia on the Two Halves* for the indefinite form it replaces and *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian* for the complex split. It defers the operator theory to *The Symmetric and Antisymmetric Parts of the Operator Space* and the analysis to *The Analysis on $M_n(\mathbb{C})$*.
 
 ## The Form
 
@@ -36,7 +36,7 @@ $$
 
 which is the Euclidean pairing of the real and imaginary parts. So the Hilbert–Schmidt form is not a new form on a new space: it is the Euclidean form on $\mathbb{R}^{2n^{2}}$ written in complex notation, and the $2n^{2}$ count was verified by the Gram matrix of the real basis $E_{ij},iE_{ij}$.
 
-**The form is the complexification of the trace form.** Its real part restricts on the real matrices to $\operatorname{tr}(P^{\mathsf T}R)=\operatorname{tr}(PR)$, which is the trace form of *The Trace Form and Its Signature on the Two Halves*. The two forms therefore agree on $M_n(\mathbb{R})$ and differ elsewhere: the Hilbert–Schmidt form is positive definite on the whole complex space, while the trace form is indefinite already on the real subspace.
+**The form is the complexification of the trace form.** Its real part restricts on the real matrices to $\operatorname{tr}(P^{\mathsf T}R)=\operatorname{tr}(PR)$, which is the trace form of *The Trace Form and Its Inertia on the Two Halves*. The two forms therefore agree on $M_n(\mathbb{R})$ and differ elsewhere: the Hilbert–Schmidt form is positive definite on the whole complex space, while the trace form is indefinite already on the real subspace.
 
 **The form is nondegenerate and perfect.** It pairs $X$ with $X$ to a positive number and pairs distinct matrix units to zero,
 
@@ -138,7 +138,7 @@ The identity was verified at $n=4$, and the sign is absent because the conjugate
 
 **The form is positive definite on each half.** On the Hermitian matrices, $\operatorname{tr}(X^{*}X)=\operatorname{tr}(X^{2})=\sum X_{ij}^{2}>0$; on the anti-Hermitian matrices, $\operatorname{tr}(X^{*}X)=-\operatorname{tr}(X^{2})=\sum|X_{ij}|^{2}>0$. Both were verified on random elements at $n=4$.
 
-**So the split of the complex algebra is not a signature split.** The trace form has signature $(n^{2},n^{2})$ on $M_n(\mathbb{C})$ read over $\mathbb{R}$, with the Hermitian and anti-Hermitian parts on opposite sides; the Hilbert–Schmidt form has signature $(2n^{2},0)$, and both halves are positive. The involution $X\mapsto X^{*}$ is therefore an isometry of the Hilbert–Schmidt form and an anti-isometry of the trace form, and the two behaviours are the two readings of the same involution.
+**So the split of the complex algebra is not an inertia split.** The trace form has inertia $(n^{2},n^{2})$ on $M_n(\mathbb{C})$ read over $\mathbb{R}$, with the Hermitian and anti-Hermitian parts on opposite sides; the Hilbert–Schmidt form has inertia $(2n^{2},0)$, and both halves are positive. The involution $X\mapsto X^{*}$ is therefore an isometry of the Hilbert–Schmidt form and an anti-isometry of the trace form, and the two behaviours are the two readings of the same involution.
 
 **The two halves are orthogonal but not definite for the trace form, and orthogonal and definite for this one.** For $H$ Hermitian and $K$ anti-Hermitian,
 
@@ -158,7 +158,7 @@ $$
 
 So the four matrices are orthogonal, of equal norm $\sqrt2$, and the form is $2$ times the standard form in that basis, which the computation confirms.
 
-**The Hilbert–Schmidt form and the biquaternion norm are different forms on the same algebra.** The biquaternion norm $N$ is the determinant, indefinite of signature $(2,2)$, while the Hilbert–Schmidt form is definite; the two are related by the identity
+**The Hilbert–Schmidt form and the biquaternion norm are different forms on the same algebra.** The biquaternion norm $N$ is the determinant, indefinite of inertia $(2,2)$, while the Hilbert–Schmidt form is definite; the two are related by the identity
 
 $$
 N(X)=\det X,\qquad \|X\|^{2}=\operatorname{tr}(X^{*}X),
@@ -170,7 +170,7 @@ and for $2\times2$ matrices they satisfy $N(X)\le\tfrac12\|X\|^{2}$, with equali
 
 ## Summary
 
-The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive definite, with the matrix units as an orthonormal basis, and its real part is the Euclidean form on $\mathbb{R}^{2n^{2}}$. Its norm is the Euclidean norm of the singular values, it is bounded between the operator norm and $\sqrt n$ times it, and it equals $\sqrt r$ on a projection of rank $r$. The form is invariant under unitary conjugation and not under general conjugation, which is the exact trade-off against the indefinite invariant trace form. The adjoints are $L_A^{*}=L_{A^{*}}$, $R_B^{*}=R_{B^{*}}$, $(X\mapsto AXB)^{*}=(Y\mapsto A^{*}YB^{*})$ and $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$, so the derivation is anti-self-adjoint for the trace form and not for this one. The form is positive definite on both halves, so the split by the involution is orthogonal for it but not a signature split.
+The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive definite, with the matrix units as an orthonormal basis, and its real part is the Euclidean form on $\mathbb{R}^{2n^{2}}$. Its norm is the Euclidean norm of the singular values, it is bounded between the operator norm and $\sqrt n$ times it, and it equals $\sqrt r$ on a projection of rank $r$. The form is invariant under unitary conjugation and not under general conjugation, which is the exact trade-off against the indefinite invariant trace form. The adjoints are $L_A^{*}=L_{A^{*}}$, $R_B^{*}=R_{B^{*}}$, $(X\mapsto AXB)^{*}=(Y\mapsto A^{*}YB^{*})$ and $\operatorname{ad}_A^{*}=\operatorname{ad}_{A^{*}}$, so the derivation is anti-self-adjoint for the trace form and not for this one. The form is positive definite on both halves, so the split by the involution is orthogonal for it but not an inertia split.
 
 ## Summary of Notation
 
@@ -189,6 +189,6 @@ The form $\langle X,Y\rangle=\operatorname{tr}(X^{*}Y)$ is Hermitian, positive d
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Hilbert–Schmidt norm, the singular values and the comparison with the operator norm.
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Hilbert–Schmidt inner product and the adjoints of the standard operators.
 - Paul R. Halmos, *A Hilbert Space Problem Book* (Springer, 1982), for the two-sided operators and their adjoints.
-- [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the indefinite form that this one replaces.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the indefinite form that this one replaces.
 - [The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian](the-two-halves-over-c-hermitian-and-anti-hermitian.html), for the split that is orthogonal but not definite here.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the anti-self-adjointness that fails for this form.

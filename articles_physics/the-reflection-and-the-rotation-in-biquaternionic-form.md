@@ -145,7 +145,7 @@ $$
 $$
 acting as $C[\tilde{Ξ}]=\eta_C\tilde{Ξ}^*$, $P[\tilde{Ξ}]=\eta_P\tilde{Ξ}(-\vec r)$ and $T[\tilde{Ξ}]=\eta_T\tilde{Ξ}^*(-r'_t)$, with $\tilde{Ξ}^*$ the Hermitian conjugate. The internal factor does not decide the determinant by itself:
 
-| operation | internal factor | its generator factors | coordinates reversed | determinant | induced map |
+| operation | internal factor | its generator factors | coordinates reversed | the determinant of the image | induced map |
 |---|---|---|---|---|---|
 | $P$ | $\eta_P=iR_{\mathrm{axf},\vec e_x}$, the frame basis operator | odd | $\vec r$ | $-1$ | reflection |
 | $T$ | $\eta_T=-L_{\mathrm{axf},\vec e_y}$ | even | $r'_t$ | $-1$ | reflection |

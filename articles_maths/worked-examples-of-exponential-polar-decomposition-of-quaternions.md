@@ -187,7 +187,7 @@ N^{\dagger}=-N,
 =r\bigl(\cos\theta\,I+\sin\theta\,N\bigr).
 $$
 
-| factor | matrix | determinant | eigenvalues |
+| factor | matrix | the determinant of the image | eigenvalues |
 |---|---|---|---|
 | element | $\mathsf M(\tilde q)$ | $r^2$ | $q_t\pm i\lvert\vec q\rvert$ |
 | scale | $rI$ | $r^2$ | $r,r$ |

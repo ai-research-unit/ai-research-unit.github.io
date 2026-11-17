@@ -90,13 +90,13 @@ It follows the biquaternion article *The Regular Module* for the corresponding s
 
 **Proof.** A half is a real vector space, and a vector space retracts to a point.
 
-**Corollary.** The invertible elements inside the Hermitian half have the homotopy of the set of their signatures: two components, one of definite matrices and one of indefinite ones.
+**Corollary.** The invertible elements inside the Hermitian half have the homotopy of the set of their inertias: two components, one of definite matrices and one of indefinite ones.
 
-**Proof.** A Hermitian matrix is invertible exactly when its determinant is nonzero, and the determinant has signature $(1,3)$ on the half, so the definite set is one cone and the indefinite set one region.
+**Proof.** A Hermitian matrix is invertible exactly when its determinant is nonzero, and the determinant has inertia $(1,3)$ on the half, so the definite set is one cone and the indefinite set one region.
 
 **Corollary.** The invertible elements inside the symmetric half have three components, one positive definite, one negative definite and one indefinite.
 
-**Proof.** The determinant has signature $(1,2)$ on the symmetric half, so the definite set has two cones and the indefinite set one region.
+**Proof.** The determinant has inertia $(1,2)$ on the symmetric half, so the definite set has two cones and the indefinite set one region.
 
 ## Summary
 
@@ -120,4 +120,4 @@ Over the real field the group retracts onto $O(2)$, with two circle components. 
 - Mimura Mamoru and Toda Hiroshi, *Topology of Lie Groups* (American Mathematical Society, 1991), for the homotopy groups of $U(2)$.
 - [The Topology of $M_2(\mathbb{C})$](the-topology-of-m2c.html), for the ambient space and its contractibility.
 - [The Cartan Decomposition of $\mathrm{GL}_2(\mathbb{C})$](the-cartan-decomposition-of-gl2c.html), for the polar decomposition used here.
-- [The Two Halves and Their Topology at $n=2$](the-two-halves-and-their-topology-at-n-2.html), for the signatures that count the components.
+- [The Two Halves and Their Topology at $n=2$](the-two-halves-and-their-topology-at-n-2.html), for the inertias that count the components.

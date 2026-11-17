@@ -87,7 +87,7 @@ $$
 \;}.
 $$
 
-Both eigenspaces have dimension $2$. The fixed space is the split-complex plane $\mathbb{C}_{\mathrm{spl},3}$; the anti-fixed space is the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$, which carries the hyperbolic form $q_x^2 - q_y^2$ of signature $(1,1)$ and is spanned by the two basis elements that anticommute into $\pm \vec e_z$.
+Both eigenspaces have dimension $2$. The fixed space is the split-complex plane $\mathbb{C}_{\mathrm{spl},3}$; the anti-fixed space is the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$, which carries the hyperbolic form $q_x^2 - q_y^2$ of inertia $(1,1)$ and is spanned by the two basis elements that anticommute into $\pm \vec e_z$.
 
 ### The Reversal
 
@@ -158,11 +158,11 @@ Each involution splits the algebra into a **Hermitian part** (the $+1$ eigenspac
 
 **The conjugation.** The split is $S \oplus V$; the Hermitian part $S$ carries the single derivative $\partial/\partial q_t$, and the anti-Hermitian part $V$ carries the vector operator $D = \vec e_x \partial/\partial q_x + \vec e_y \partial/\partial q_y + \vec e_z \partial/\partial q_z$. The square $D^2$ is the wave operator of the restricted form.
 
-**The principal involution.** The split is $\mathbb{C}_{\mathrm{spl},3} \oplus \operatorname{span}\{\vec e_x,\vec e_y\}$. The Hermitian part is the split-complex plane $\mathbb{C}_{\mathrm{spl},3}$ with form $q_t^2 - q_z^2$ of signature $(1,1)$; the anti-Hermitian part is the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ with form $q_x^2 - q_y^2$, also of signature $(1,1)$. Each is a hyperbolic plane carrying a one-dimensional wave operator.
+**The principal involution.** The split is $\mathbb{C}_{\mathrm{spl},3} \oplus \operatorname{span}\{\vec e_x,\vec e_y\}$. The Hermitian part is the split-complex plane $\mathbb{C}_{\mathrm{spl},3}$ with form $q_t^2 - q_z^2$ of inertia $(1,1)$; the anti-Hermitian part is the plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ with form $q_x^2 - q_y^2$, also of inertia $(1,1)$. Each is a hyperbolic plane carrying a one-dimensional wave operator.
 
-**The reversal.** The split is $\operatorname{span}\{1,\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$. The Hermitian part has form $q_t^2 + q_x^2 - q_y^2$ of signature $(2,1)$ and carries a three-dimensional wave operator; the anti-Hermitian part is the line $\mathbb{R} \vec e_z$ with the negative-definite form $-q_z^2$ and carries the single derivative $\partial/\partial q_z$.
+**The reversal.** The split is $\operatorname{span}\{1,\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z$. The Hermitian part has form $q_t^2 + q_x^2 - q_y^2$ of inertia $(2,1)$ and carries a three-dimensional wave operator; the anti-Hermitian part is the line $\mathbb{R} \vec e_z$ with the negative-definite form $-q_z^2$ and carries the single derivative $\partial/\partial q_z$.
 
-The type of each operator — elliptic or hyperbolic — is determined by the signature of the form on the piece and by nothing else, and the characteristic variety of a hyperbolic operator is exactly the zero divisor set of the piece. The full development is in *Split-Quaternion Analysis*.
+The type of each operator — elliptic or hyperbolic — is determined by the inertia of the form on the piece and by nothing else, and the characteristic variety of a hyperbolic operator is exactly the zero divisor set of the piece. The full development is in *Split-Quaternion Analysis*.
 
 ## Examples
 
@@ -184,7 +184,7 @@ $$
 \mathbb{H}_{\mathrm{spl}} = \mathbb{R}\cdot 1 \oplus \operatorname{span}\{\vec e_x,\vec e_y\} \oplus \mathbb{R} \vec e_z,
 $$
 
-with triple sign patterns $({}^{\natural},\alpha,\rho)$ equal to $(+,+,+)$, $(-,-,+)$ and $(-,+,-)$. The plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ does not split, because all three involutions act on it by a single scalar; only the split-quaternion norm and the subalgebra structure distinguish $\vec e_x$ from $\vec e_y$. Each eigenspace carries the operator of *Split-Quaternion Analysis*, of type fixed by the signature of the inherited form.
+with triple sign patterns $({}^{\natural},\alpha,\rho)$ equal to $(+,+,+)$, $(-,-,+)$ and $(-,+,-)$. The plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ does not split, because all three involutions act on it by a single scalar; only the split-quaternion norm and the subalgebra structure distinguish $\vec e_x$ from $\vec e_y$. Each eigenspace carries the operator of *Split-Quaternion Analysis*, of type fixed by the inertia of the inherited form.
 
 ## Summary of Notation
 

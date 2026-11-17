@@ -6,7 +6,7 @@
 
 The article computes the restricted form, proves that an antisymmetric upper triangular matrix is zero, proves $[\mathfrak{b},\mathfrak{b}]=\mathfrak{n}_+$ and that the radical is $\mathfrak{n}_+$, and then states exactly what the coincidence means: $\mathfrak{n}_+$ is the totally isotropic part of the Borel, the place where the form is alternating, and it is a six-dimensional subspace that is not the antisymmetric half.
 
-It assumes *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$* and *$UT_4$ as the Complement of the Antisymmetric Part*. The case $n=2$ is *The Antisymmetric Part inside $UT_2$: the Radical as the Commutator*; the form itself is *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$*; the Killing form of the same algebra is *The Killing Form, Its Radical and the Triangular Case*.
+It assumes *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_4(\mathbb{C})$* and *$UT_4$ as the Complement of the Antisymmetric Part*. The case $n=2$ is *The Antisymmetric Part inside $UT_2$: the Radical as the Commutator*; the form itself is *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$*; the Killing form of the same algebra is *The Killing Form, Its Radical and the Triangular Case*.
 
 ## The Restricted Form
 

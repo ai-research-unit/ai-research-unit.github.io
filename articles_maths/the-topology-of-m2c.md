@@ -60,11 +60,11 @@ It defers the homotopy of the invertible group to *The Homotopy of $\mathrm{GL}_
 
 **Theorem.** The determinant is a continuous function whose zero set separates the matrix algebra over the real field, and over the complex field its zero set has real codimension two.
 
-**Proof.** Over the real field the determinant is a quadratic form of signature $(2,2)$ on the eight real coordinates, so its zero set is a cone that separates the space; over the complex field the determinant is a complex-valued polynomial, and its zero set is a complex hypersurface, of real codimension two.
+**Proof.** Over the real field the determinant is a quadratic form of inertia $(2,2)$ on the eight real coordinates, so its zero set is a cone that separates the space; over the complex field the determinant is a complex-valued polynomial, and its zero set is a complex hypersurface, of real codimension two.
 
 **Corollary.** The complement of the zero set has two connected components over the real field and one over the complex field.
 
-**Proof.** The signature computation of *The Two-Sided Operators and the Segre Cone at $n=2$* gives the two real components, and the connectedness of the nonzero complex numbers gives the single complex component.
+**Proof.** The inertia computation of *The Two-Sided Operators and the Segre Cone at $n=2$* gives the two real components, and the connectedness of the nonzero complex numbers gives the single complex component.
 
 **Corollary.** Over the complex field a path of matrices can avoid the singular set, because the codimension is two.
 

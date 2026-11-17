@@ -43,7 +43,7 @@ $$
 \|\tilde{Q}_1 + \tilde{Q}_2\| \leq \|\tilde{Q}_1\| + \|\tilde{Q}_2\|, \qquad \|\lambda \tilde{Q}_1\| = |\lambda| \|\tilde{Q}_1\|, \qquad \lambda \in \mathbb{R}.
 $$
 
-The Euclidean norm is **not** the square root of the split-biquaternion norm or of the Hermitian norm. The split-biquaternion norm is split complex-valued, so it is not a real norm; the Hermitian norm is real but indefinite of signature $(4, 4)$. The Euclidean norm is defined separately, and it is the Euclidean norm that gives $\mathbb{B}_{\mathrm{spl}}$ its structure as a metric space.
+The Euclidean norm is **not** the square root of the split-biquaternion norm or of the Hermitian norm. The split-biquaternion norm is split complex-valued, so it is not a real norm; the Hermitian norm is real but indefinite of inertia $(4, 4)$. The Euclidean norm is defined separately, and it is the Euclidean norm that gives $\mathbb{B}_{\mathrm{spl}}$ its structure as a metric space.
 
 ### The Distance
 
@@ -489,7 +489,7 @@ The **split-biquaternion gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\p
 The formulas for the operators are **identical** to the biquaternion case, because the operators act on functions of four real variables and the multiplication of the coefficients is the same up to the sign of the extra unit. What is different is the algebraic structure of the domains on which the operators are defined:
 
 - The zero divisor set is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$, in contrast to the complex cone of complex dimension 3 (real dimension 6) of the biquaternion case.
-- The Hermitian form is indefinite of signature $(4, 4)$, not positive-definite.
+- The Hermitian form is indefinite of inertia $(4, 4)$, not positive-definite.
 - The invertibility criterion is linear in the idempotent basis, not quadratic.
 - The idempotent decomposition reduces the analysis to two copies of the quaternion analysis.
 

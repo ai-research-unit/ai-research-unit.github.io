@@ -36,7 +36,7 @@ the three sets are open and non-empty, $\mathcal T^+$ and $\mathcal T^-$ are con
 
 *Proof of definiteness.* On $\mathcal T$, $-P=\lvert\vec q\rvert^2-q_t^2>0$; on $\mathcal S$, $P<0$ so $-P>0$; both are quadratic forms positive on their sets, and the radical of $P$ is zero, so the restrictions are Riemannian metrics.
 
-**Remark (the constant curvature).** The ambient form $P$ is flat, of signature $(1,3)$, and the level sets $P=c$ carry the metrics of constant curvature: the sheet $P=1$, $q_t>0$, is a model of the hyperbolic space $H^3$ of curvature $-1$; the sheet $P=-1$ is a model of the de Sitter space $dS_3$, of signature $(2,1)$. The two readings are two models of the same ambient form, one elliptic and one hyperbolic in the sense of the sign of the curvature. The details are in [The P Level Sets and the Hyperbolic Structure of the Quaternion Algebra](the-p-level-sets-and-the-hyperbolic-structure-of-the-quaternion-algebra.html).
+**Remark (the constant curvature).** The ambient form $P$ is flat, of inertia $(1,3)$, and the level sets $P=c$ carry the metrics of constant curvature: the sheet $P=1$, $q_t>0$, is a model of the hyperbolic space $H^3$ of curvature $-1$; the sheet $P=-1$ is a model of the de Sitter space $dS_3$, of inertia $(2,1)$. The two readings are two models of the same ambient form, one elliptic and one hyperbolic in the sense of the sign of the curvature. The details are in [The P Level Sets and the Hyperbolic Structure of the Quaternion Algebra](the-p-level-sets-and-the-hyperbolic-structure-of-the-quaternion-algebra.html).
 
 **Theorem (the level sets and the retraction).** The radial map
 $$
@@ -54,7 +54,7 @@ is a strong deformation retraction of $\mathcal T$ onto the two-sheeted hyperbol
 
 **Proposition (the group of the sector).** The isometry group of $P$ is $O(1,3)$; it preserves the sector and its components, acts transitively on each sheet of $P=1$ and on $P=-1$, and the stabiliser of a point of the positive sheet is a copy of $O(3)$.
 
-*Proof.* The isometries of a form of signature $(1,3)$ form $O(1,3)$; they preserve the level sets of the quadratic form, hence the sector and the sign of $P$ up to the sign of the isometry, and they preserve $q_t$ up to that sign. Transitivity on the positive sheet is the Witt extension theorem applied to the two timelike vectors $e_t$ and a given point of the sheet; the stabiliser of $e_t$ is the group of the vector subspace, that is $O(3)$. Verified on the linear parts of the four sign patterns.
+*Proof.* The isometries of a form of inertia $(1,3)$ form $O(1,3)$; they preserve the level sets of the quadratic form, hence the sector and the sign of $P$ up to the sign of the isometry, and they preserve $q_t$ up to that sign. Transitivity on the positive sheet is the Witt extension theorem applied to the two timelike vectors $e_t$ and a given point of the sheet; the stabiliser of $e_t$ is the group of the vector subspace, that is $O(3)$. Verified on the linear parts of the four sign patterns.
 
 **Corollary (the hyperbolic space as a quotient).** The positive sheet of $P=1$ is $O(1,3)^{+}/O(3)$ up to the two components, that is the hyperbolic space $H^3$ as a homogeneous space.
 

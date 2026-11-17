@@ -124,13 +124,13 @@ on the traceless plane $\mathfrak{p}$.
 
 ## The Symmetric Half and the Minkowski Form
 
-**Proposition.** The pairing $\langle S,T\rangle=\operatorname{tr}(ST)$ on $\operatorname{Sym}_2(\mathbb{R})$ has signature $(3,0)$: it is positive definite.
+**Proposition.** The pairing $\langle S,T\rangle=\operatorname{tr}(ST)$ on $\operatorname{Sym}_2(\mathbb{R})$ has inertia $(3,0)$: it is positive definite.
 
 **Proof.** $S$ symmetric has real eigenvalues $\lambda_{1},\lambda_{2}$, and $\operatorname{tr}(S^{2})=\lambda_{1}^{2}+\lambda_{2}^{2}\ge0$ with equality only for $S=0$; polarising gives positive definiteness.
 
-**Proposition.** On the whole space $M_2(\mathbb{R})$ the same pairing has signature $(3,1)$: it is positive on the symmetric half and negative on the antisymmetric line.
+**Proposition.** On the whole space $M_2(\mathbb{R})$ the same pairing has inertia $(3,1)$: it is positive on the symmetric half and negative on the antisymmetric line.
 
-**Proof.** $\operatorname{tr}(K^{2})=-2k^{2}$ on $K=kJ$, and the two halves are orthogonal because $\operatorname{tr}(HK)=0$ for $H$ symmetric and $K$ antisymmetric. The signature is $(3,1)$, the Minkowski signature.
+**Proof.** $\operatorname{tr}(K^{2})=-2k^{2}$ on $K=kJ$, and the two halves are orthogonal because $\operatorname{tr}(HK)=0$ for $H$ symmetric and $K$ antisymmetric. The inertia is $(3,1)$, the Minkowski inertia.
 
 **Corollary.** The antisymmetric line is the unique negative direction of the trace form, and it is a timelike line.
 
@@ -158,7 +158,7 @@ on the traceless plane $\mathfrak{p}$.
 
 The real matrices split into the symmetric half of dimension $3$ and the antisymmetric line $\mathbb{R}J$ of dimension $1$, the two eigenspaces of the transpose. The symmetric half is spanned by $I,\sigma_{3},\sigma_{1}$, obeys Cayley–Hamilton, and its traceless plane contains a copy of $\mathbb{C}$ through $u^{2}=-\det(u)I$.
 
-Two symmetric matrices bracket to a multiple of $J$, and the multiple is $2(s_{1}t_{2}-s_{2}t_{1})$, the cross product of the traceless coefficient vectors; the pair $\sigma_{3},\sigma_{1}$ returns $\pm2J$. The adjoint of $J$ preserves the symmetric half, kills $I$ and is a complex structure on the traceless plane, giving the symmetric pair $\mathfrak{k}=\mathbb{R}J$, $\mathfrak{p}=\mathfrak{p}$ of $\mathfrak{sl}_2(\mathbb{R})$. The trace form is positive on the symmetric half and negative on the line, of signature $(3,1)$; the cone of the symmetric half is $\{\operatorname{tr}\ge0,\det\ge0\}$.
+Two symmetric matrices bracket to a multiple of $J$, and the multiple is $2(s_{1}t_{2}-s_{2}t_{1})$, the cross product of the traceless coefficient vectors; the pair $\sigma_{3},\sigma_{1}$ returns $\pm2J$. The adjoint of $J$ preserves the symmetric half, kills $I$ and is a complex structure on the traceless plane, giving the symmetric pair $\mathfrak{k}=\mathbb{R}J$, $\mathfrak{p}=\mathfrak{p}$ of $\mathfrak{sl}_2(\mathbb{R})$. The trace form is positive on the symmetric half and negative on the line, of inertia $(3,1)$; the cone of the symmetric half is $\{\operatorname{tr}\ge0,\det\ge0\}$.
 
 ## Summary of Notation
 

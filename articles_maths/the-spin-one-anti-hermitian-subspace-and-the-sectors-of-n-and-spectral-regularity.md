@@ -389,7 +389,7 @@ carriers it is the only one that meets all four sectors.
 - [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the carrier, the closure and the action on
 it.
 - [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the norm alone,
-the signature $(3,1)$ and the null cone.
+the inertia $(3,1)$ and the null cone.
 - [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html), for the second
 predicate alone, the purely imaginary spectrum and the degenerate line.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html),

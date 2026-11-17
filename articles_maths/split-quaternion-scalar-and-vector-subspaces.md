@@ -11,7 +11,7 @@ $$
 
 which is the coarsest decomposition of the algebra and the source of nearly every other structure in the category.
 
-The article establishes the definitions and a basis for each subspace; shows that the two descriptions of $S$ and $V$ — as eigenspaces of the conjugation and as the scalar line and the span of the vector units — coincide; examines the algebra and module structure, in particular the failure of $V$ to be a subalgebra and its structure as a Lie algebra under the commutator; restricts the split-quaternion norm to each subspace and identifies the Minkowski form of signature $(2,1)$ on $V$; gives the matrix images of both; follows the three involutions through them; and records their relations with the remaining distinguished subspaces. It closes with worked examples.
+The article establishes the definitions and a basis for each subspace; shows that the two descriptions of $S$ and $V$ — as eigenspaces of the conjugation and as the scalar line and the span of the vector units — coincide; examines the algebra and module structure, in particular the failure of $V$ to be a subalgebra and its structure as a Lie algebra under the commutator; restricts the split-quaternion norm to each subspace and identifies the Minkowski form of inertia $(2,1)$ on $V$; gives the matrix images of both; follows the three involutions through them; and records their relations with the remaining distinguished subspaces. It closes with worked examples.
 
 ## Definition and Basis
 
@@ -97,7 +97,7 @@ $$
 \;},
 $$
 
-a form of **signature $(2,1)$** in the basis $\vec e_x, \vec e_y, \vec e_z$: one direction of square $+1$ and two of square $-1$. It is the three-dimensional **Minkowski form**, and it is indefinite and non-degenerate. Its null cone in $V$ is
+a form of **inertia $(2,1)$** in the basis $\vec e_x, \vec e_y, \vec e_z$: one direction of square $+1$ and two of square $-1$. It is the three-dimensional **Minkowski form**, and it is indefinite and non-degenerate. Its null cone in $V$ is
 
 $$
 q_x^2 = q_y^2 + q_z^2,
@@ -115,9 +115,9 @@ a cone over a circle of lines, and every nonzero element of it is a nonzero nilp
 
 The lightlike class is exactly the null cone, the spacelike class is its outside, and the timelike class is its inside; the three are the orbit-types of the indefinite form, and they are the reason the geometry on $V$ is Lorentzian rather than Euclidean.
 
-**The full form.** The subspaces $S$ and $V$ are $\langle\cdot,\cdot\rangle_{\natural}$-orthogonal, since $\langle q_t, \vec q\rangle_{\natural} = 0$ for $q_t \in S$ and $\vec q \in V$, and the form on $\mathbb{H}_{\mathrm{spl}}$ is the orthogonal direct sum of the two restrictions; in the basis $1, \vec e_x, \vec e_y, \vec e_z$ it has signs $(+,+,-,-)$, so the full form has signature $(2,2)$. The scalar direction contributes $+1$, and among the vector directions $\vec e_x$ contributes $+1$ while $\vec e_y$ and $\vec e_z$ contribute $-1$.
+**The full form.** The subspaces $S$ and $V$ are $\langle\cdot,\cdot\rangle_{\natural}$-orthogonal, since $\langle q_t, \vec q\rangle_{\natural} = 0$ for $q_t \in S$ and $\vec q \in V$, and the form on $\mathbb{H}_{\mathrm{spl}}$ is the orthogonal direct sum of the two restrictions; in the basis $1, \vec e_x, \vec e_y, \vec e_z$ it has signs $(+,+,-,-)$, so the full form has inertia $(2,2)$. The scalar direction contributes $+1$, and among the vector directions $\vec e_x$ contributes $+1$ while $\vec e_y$ and $\vec e_z$ contribute $-1$.
 
-The restriction to $V$, of signature $(2,1)$, and not a definite form, is the root of the geometry of the category: the group of invertibles of the algebra acts on $V$ as the Lorentz group of this form, and the hyperbolic geometry the system carries is the hyperbolic plane. This is developed in *Split-Quaternion Rotations and the Lorentz Group* and *Split-Quaternion Geometry*.
+The restriction to $V$, of inertia $(2,1)$, and not a definite form, is the root of the geometry of the category: the group of invertibles of the algebra acts on $V$ as the Lorentz group of this form, and the hyperbolic geometry the system carries is the hyperbolic plane. This is developed in *Split-Quaternion Rotations and the Lorentz Group* and *Split-Quaternion Geometry*.
 
 ## The Lie Algebra of the Vector Subspace
 
@@ -129,7 +129,7 @@ $$
 [\vec e_x, \vec e_y] = 2\vec e_z, \qquad [\vec e_y, \vec e_z] = -2\vec e_x, \qquad [\vec e_z, \vec e_x] = 2\vec e_y,
 $$
 
-so $V \cong \mathrm{SL}_2(\mathbb{R})$, and the split-quaternion norm $\langle\cdot\rangle_{\natural}$ on $V$, of signature $(2,1)$, is invariant under the adjoint action: $\operatorname{ad}_{\tilde q}$ is $\langle\cdot\rangle_{\natural}$-anti-self-adjoint for every $\tilde q \in V$.
+so $V \cong \mathrm{SL}_2(\mathbb{R})$, and the split-quaternion norm $\langle\cdot\rangle_{\natural}$ on $V$, of inertia $(2,1)$, is invariant under the adjoint action: $\operatorname{ad}_{\tilde q}$ is $\langle\cdot\rangle_{\natural}$-anti-self-adjoint for every $\tilde q \in V$.
 
 **Proof.** The bracket relations follow from the products $\vec e_x \vec e_y = \vec e_z$, $\vec e_y \vec e_z = -\vec e_x$, $\vec e_z \vec e_x = \vec e_y$ together with $\vec e_y \vec e_x = -\vec e_z$, $\vec e_z \vec e_y = \vec e_x$, $\vec e_x \vec e_z = -\vec e_y$. The Jacobi identity is $[[\tilde q_1,\tilde q_2],\tilde q_3] + [[\tilde q_2,\tilde q_3],\tilde q_1] + [[\tilde q_3,\tilde q_1],\tilde q_2] = 0$, an identity in every associative algebra, and the structure constants are those of $\mathrm{SL}_2(\mathbb{R})$. The invariance of $\langle\cdot\rangle_{\natural}$ is the identity $\langle[\tilde q_1,\tilde q_2],\tilde q_3\rangle + \langle\tilde q_2,[\tilde q_1,\tilde q_3]\rangle = 0$, which follows from the associativity of the algebra and the multiplicativity $\langle ab\rangle_{\natural} = \langle a\rangle_{\natural}\langle b\rangle_{\natural}$ of the split-quaternion norm.
 
@@ -188,7 +188,7 @@ The scalar–vector decomposition is the coarsest of the decompositions of the a
 
 The scalar subspace $S = \mathbb{R}\cdot 1$ and the vector subspace $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ are the $+1$ and $-1$ eigenspaces of the conjugation, of real dimensions $1$ and $3$, and they give the decomposition $\mathbb{H}_{\mathrm{spl}} = S \oplus V$. The scalar subspace is the centre, a subalgebra isomorphic to $\mathbb{R}$; the vector subspace is not a subalgebra, since squares of vectors leave it, but it is closed under the commutator bracket and is a three-dimensional Lie algebra isomorphic to $\mathrm{SL}_2(\mathbb{R})$.
 
-The split-quaternion norm restricts to $\langle q_t\rangle_{\natural} = q_t^2$ on $S$, positive definite, and to the Minkowski form $\langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$ of signature $(2,1)$ on $V$; the nonzero vectors of $V$ split into the timelike, lightlike and spacelike classes according to the sign. The scalar line is the centre and the vector subspace is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ under the commutator. The three involutions preserve both subspaces; the conjugation acts as a scalar on each, and the principal involution and reversal split $V$ into the common plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The group of invertibles acts on $V$ preserving the restricted form, which is the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*.
+The split-quaternion norm restricts to $\langle q_t\rangle_{\natural} = q_t^2$ on $S$, positive definite, and to the Minkowski form $\langle \vec q\rangle_{\natural} = q_x^2 - q_y^2 - q_z^2$ of inertia $(2,1)$ on $V$; the nonzero vectors of $V$ split into the timelike, lightlike and spacelike classes according to the sign. The scalar line is the centre and the vector subspace is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$ under the commutator. The three involutions preserve both subspaces; the conjugation acts as a scalar on each, and the principal involution and reversal split $V$ into the common plane $\operatorname{span}\{\vec e_x,\vec e_y\}$ and the line $\mathbb{R}\vec e_z$. The group of invertibles acts on $V$ preserving the restricted form, which is the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*.
 
 ## Summary of Notation
 
@@ -199,7 +199,7 @@ The split-quaternion norm restricts to $\langle q_t\rangle_{\natural} = q_t^2$ o
 | $V = \operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$ | the vector subspace, $\{\tilde q : \tilde{q}^{\natural}=-\tilde q\}$ | this article |
 | $\operatorname{Sc}(\tilde q) = q_t$, $\operatorname{Vec}(\tilde q) = \vec v$ | the scalar and vector parts | this article |
 | ${}^{\natural}$, $\alpha$, $\rho$ | conjugation, principal involution, reversal | *Split-Quaternion Algebra* |
-| $\langle \vec q\rangle_{\natural} = q_x^2-q_y^2-q_z^2$ on $V$ | the Minkowski form of signature $(2,1)$ | this article |
+| $\langle \vec q\rangle_{\natural} = q_x^2-q_y^2-q_z^2$ on $V$ | the Minkowski form of inertia $(2,1)$ | this article |
 | $B(\vec q,\vec q_1)$ | the polarised bilinear form | *Split-Quaternion Norm and Invertibility* |
 | $[\tilde q_1,\tilde q_2] = \tilde q_1 \tilde q_2-\tilde q_2\tilde q_1$ | the commutator bracket | this article |
 | $V \cong \mathrm{SL}_2(\mathbb{R})$ | the Lie algebra of traceless matrices | this article |

@@ -164,9 +164,9 @@ $$
 B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown},\qquad \omega(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle}.
 $$
 
-The three are collected below. The column *realified signature* records the signature of the real bilinear form obtained by taking the real or the imaginary part, as appropriate; the construction is *The Realification of $\mathbb{C}^2$*, and the signatures are proved in *The Three Canonical Forms on $\mathbb{C}^2$*.
+The three are collected below. The column *realified inertia* records the inertia of the real bilinear form obtained by taking the real or the imaginary part, as appropriate; the construction is *The Realification of $\mathbb{C}^2$*, and the inertias are proved in *The Three Canonical Forms on $\mathbb{C}^2$*.
 
-| Form | Definition | Linearity | Symmetry | Realified signature | Vanishing set |
+| Form | Definition | Linearity | Symmetry | Realified inertia | Vanishing set |
 |---|---|---|---|---|---|
 | $H$ | $Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}}$ | sesquilinear, antilinear in the second slot | $H(Q_2,Q_1)=\overline{H(Q_1,Q_2)}$ | $(4,0)$ | $\{0\}$ |
 | $B$ | $Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ | $\mathbb{C}$-bilinear | $B(Q_2,Q_1)=B(Q_1,Q_2)$ | $(2,2)$ for $\operatorname{Re}B$, $(2,2)$ for $\operatorname{Im}B$ | the two lines $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$ |

@@ -16,7 +16,7 @@ The article is the $\mathbb{C}_{\mathrm{spl}}$ instance of the quadratic family.
 
 ### The Algebra and the Idempotents
 
-**Definition.** The **split-complex algebra** is $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ with $j^2 = +1$. A general element is $z = a + ja'$ with $a, a' \in \mathbb{R}$; the **conjugation** is $\bar z = a - ja'$; the **norm** is $\langle z\rangle_{*} = z\bar z = a^2 - a'^2$, an indefinite form of signature $(1,1)$; and the **idempotents** are
+**Definition.** The **split-complex algebra** is $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$ with $j^2 = +1$. A general element is $z = a + ja'$ with $a, a' \in \mathbb{R}$; the **conjugation** is $\bar z = a - ja'$; the **norm** is $\langle z\rangle_{*} = z\bar z = a^2 - a'^2$, an indefinite form of inertia $(1,1)$; and the **idempotents** are
 
 $$
 \Pi_+ = \frac{1+j}{2}, \qquad \Pi_- = \frac{1-j}{2}, \qquad \Pi_\pm^2 = \Pi_\pm, \quad \Pi_+\Pi_- = 0, \quad \Pi_+ + \Pi_- = 1 .
@@ -145,7 +145,7 @@ The connectedness locus is the square $\varphi^{-1}([-2,\frac14]\times[-2,\frac1
 | $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2=+1$ | Split-complex algebra |
 | $z = a + ja'$ | General element, $a, a'\in\mathbb{R}$ |
 | $\bar z = a-ja'$ | Conjugation |
-| $\langle z\rangle_{*} = a^2-a'^2 = z_+z_-$ | Norm, signature $(1,1)$ |
+| $\langle z\rangle_{*} = a^2-a'^2 = z_+z_-$ | Norm, inertia $(1,1)$ |
 | $\Pi_\pm = \tfrac12(1\pm j)$ | Idempotents |
 | $z_\pm = a\pm a'$ | Idempotent coordinates |
 | $\varphi(z) = (z_+,z_-)$ | Isomorphism $\mathbb{C}_{\mathrm{spl}}\to\mathbb{R}^2$ |

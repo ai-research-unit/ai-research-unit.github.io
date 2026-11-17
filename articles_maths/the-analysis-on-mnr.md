@@ -110,7 +110,7 @@ so $\det e^{X}=e^{\operatorname{tr}X}$, which is the multiplicative form of the 
 
 **The map $X\mapsto X^{\mathsf T}X$ has derivative $H\mapsto H^{\mathsf T}X+X^{\mathsf T}H$, and it is a local diffeomorphism between symmetric matrices and positive definite ones.** This is the local form of the polar decomposition.
 
-**The map $X\mapsto\operatorname{tr}(X^{2})$ is a quadratic form of signature $(n(n+1)/2,n(n-1)/2)$, and its critical points are the isotropic cone.** The gradient at $X$ is $2X$ with respect to the Hilbert–Schmidt form, so the only critical point is $0$, which is degenerate.
+**The map $X\mapsto\operatorname{tr}(X^{2})$ is a quadratic form of inertia $(n(n+1)/2,n(n-1)/2)$, and its critical points are the isotropic cone.** The gradient at $X$ is $2X$ with respect to the Hilbert–Schmidt form, so the only critical point is $0$, which is degenerate.
 
 **A remark on rigour.** Every statement here is a definition, a computation with a norm, or an application of the inverse function theorem; none needs a completion or a spectral measure.
 

@@ -105,7 +105,7 @@ The table is the complete classification of the exponentials of $\mathbb{R}$. Th
 
 The sign factor $\sigma$ has norm one, so its modulus is one. It therefore satisfies $\sigma = \pm1$, and the two cases are reached as follows.
 
-- **The identity component.** The positive root $\nu = +1$ has signature $+1$, so the hyperbolic row gives $\exp(\theta) = \cosh\theta + \sinh\theta = \exp(\theta) > 0$ for $\theta \in \mathbb{R}$; this is the positive scale. In particular $\exp(0) = +1 = \sigma$ for the identity sign.
+- **The identity component.** The positive root $\nu = +1$ has sign $+1$, so the hyperbolic row gives $\exp(\theta) = \cosh\theta + \sinh\theta = \exp(\theta) > 0$ for $\theta \in \mathbb{R}$; this is the positive scale. In particular $\exp(0) = +1 = \sigma$ for the identity sign.
 - **The nontrivial component.** The negative root $\nu = -1$ gives $\exp(-\theta) = \exp(-\theta) > 0$, again a positive scale and not the element $-1$. The element $\sigma = -1$ is therefore **not** in the image of the exponential of the algebra: $\exp(\mathbb{R}) = \mathbb{R}_{>0}$ throughout.
 
 The exponential of the real algebra is thus the positive ray alone, and the sign factor is not produced by it. The correct statement of the exponential form is therefore
@@ -123,22 +123,22 @@ in contrast with the complex case, where the kernel is the discrete lattice $2\p
 
 ## What the Two Factors Are
 
-### Position and Signature
+### Position and Inertia
 
-Two independent dichotomies classify the directions of an algebra of the family. The first is **position**: with respect to the involution, a direction is *fixed* if $\operatorname{id}(\nu) = \nu$ and *anti-fixed* if $\operatorname{id}(\nu) = -\nu$. The second is **signature**: the sign of $\nu^2$. The two dichotomies are independent. In $\mathbb{R}$ every element is fixed, the anti-fixed direction being only $0$, and the two factors are the following.
+Two independent dichotomies classify the directions of an algebra of the family. The first is **position**: with respect to the involution, a direction is *fixed* if $\operatorname{id}(\nu) = \nu$ and *anti-fixed* if $\operatorname{id}(\nu) = -\nu$. The second is **inertia**: the sign of $\nu^2$. The two dichotomies are independent. In $\mathbb{R}$ every element is fixed, the anti-fixed direction being only $0$, and the two factors are the following.
 
-| factor | range | position | signature | parameters | what it is |
+| factor | range | position | inertia | parameters | what it is |
 |---|---|---|---|---|---|
 | $r$ | $(0,\infty)$ | fixed | $\nu^2 = +e_t$ | $1$ | the scale, central, non-compact |
 | $\sigma$ | $\{\pm1\}$ | fixed | $\nu^2 = +e_t$ | $0$ | the sign, central, compact and discrete |
 
-The verification is immediate in the basis: $1$ is fixed and $1^2 = +e_t$, so the scale direction has position fixed and signature $+1$; the sign direction is the same element $1$ up to the two signs, and it is fixed as well. Both rows of the table are therefore in the fixed subspace, and the anti-fixed subspace contributes nothing. Unlike the complex case, where the second factor is the anti-fixed imaginary direction, here both factors have the same position and the same signature; they differ in the sign and in whether they carry a continuous parameter.
+The verification is immediate in the basis: $1$ is fixed and $1^2 = +e_t$, so the scale direction has position fixed and sign $+1$; the sign direction is the same element $1$ up to the two signs, and it is fixed as well. Both rows of the table are therefore in the fixed subspace, and the anti-fixed subspace contributes nothing. Unlike the complex case, where the second factor is the anti-fixed imaginary direction, here both factors have the same position and the same inertia; they differ in the sign and in whether they carry a continuous parameter.
 
 ### The Two Slots and the Two Absent Ones
 
 The four slots of the family are the scale, the central phase, the boost and the rotor. In $\mathbb{R}$ the scale is the continuous fixed slot, and the second occupied slot is the compact slot, which in $\mathbb{R}$ is discrete and carries the sign. The remaining two slots are absent, for the following reasons.
 
-**No boost, and no continuous rotor or phase.** A boost would be a unit factor of hyperbolic signature, $\exp(\nu\phi)$ with $\nu^2 = +e_t$ **off** the fixed subspace, and a rotor or phase would be a unit factor of trigonometric signature, $\exp(\nu\theta)$ with $\nu^2 = -e_t$. In $\mathbb{R}$ the only elements with $\nu^2 = +e_t$ are $\nu = \pm1$, which are fixed: their exponentials are the positive real numbers $\exp(\pm\phi)$, already counted as the scale, so there is no non-fixed hyperbolic direction and no boost. The trigonometric row is empty outright, because no element of $\mathbb{R}$ squares to $-1$; so there is no trigonometric direction at all, hence no continuous rotor and no continuous central phase, and the compact slot is filled by the discrete sign group alone, the two roots of $+1$ being its elements. The group of invertibles contains exactly one continuous one-parameter subgroup, the scale.
+**No boost, and no continuous rotor or phase.** A boost would be a unit factor of hyperbolic sign, $\exp(\nu\phi)$ with $\nu^2 = +e_t$ **off** the fixed subspace, and a rotor or phase would be a unit factor of trigonometric sign, $\exp(\nu\theta)$ with $\nu^2 = -e_t$. In $\mathbb{R}$ the only elements with $\nu^2 = +e_t$ are $\nu = \pm1$, which are fixed: their exponentials are the positive real numbers $\exp(\pm\phi)$, already counted as the scale, so there is no non-fixed hyperbolic direction and no boost. The trigonometric row is empty outright, because no element of $\mathbb{R}$ squares to $-1$; so there is no trigonometric direction at all, hence no continuous rotor and no continuous central phase, and the compact slot is filled by the discrete sign group alone, the two roots of $+1$ being its elements. The group of invertibles contains exactly one continuous one-parameter subgroup, the scale.
 
 **The sign is the whole compact part.** In the complex algebra the second factor is the connected circle $\mathrm{U}(1)$, and the group of invertibles is connected. Here the second factor is the disconnected group $O(1) = \{\pm1\}$, and it is the component group of $\mathbb{R}^\times$. The two-dimensional definite case is the first in which the second factor is connected, and the passage from $O(1)$ to $\mathrm{U}(1)$ is the first place the family acquires a nontrivial continuous compact factor.
 
@@ -195,7 +195,7 @@ The sign factor $\sigma = -1$ acts by the matrix $[-1]$, which is the **reflecti
 
 ### The Interpretation of Each Factor
 
-| factor | matrix | determinant | isometry type |
+| factor | matrix | the determinant of the image | isometry type |
 |---|---|---|---|
 | $r$ | $[r]$, $r > 0$ | $r$ | similarity of ratio $r$ |
 | $\sigma = -1$ | $[-1]$ | $-1$ | reflection through the origin |
@@ -250,7 +250,7 @@ The progression is the progression of the rule. In $\mathbb{R}$ only the hyperbo
 
 ## Summary
 
-Every nonzero real number has exactly one polar decomposition $q = r\sigma$, with modulus $r = \sqrt{\langle q\rangle} = |q| > 0$ and sign $\sigma = q/|q| \in \{\pm1\}$. The modulus is fixed and of signature $+1$ and carries one parameter; the sign is fixed, discrete and carries none; the counts add to the real dimension one. The sign group is $O(1) \cong \mathbb{Z}/2$, the orthogonal group of the line, and its two elements are the two components of $\mathbb{R}^\times = \mathbb{R}_{>0}\times\{\pm1\}$, which is why the real group of invertibles is disconnected while the complex one is connected.
+Every nonzero real number has exactly one polar decomposition $q = r\sigma$, with modulus $r = \sqrt{\langle q\rangle} = |q| > 0$ and sign $\sigma = q/|q| \in \{\pm1\}$. The modulus is fixed and of sign $+1$ and carries one parameter; the sign is fixed, discrete and carries none; the counts add to the real dimension one. The sign group is $O(1) \cong \mathbb{Z}/2$, the orthogonal group of the line, and its two elements are the two components of $\mathbb{R}^\times = \mathbb{R}_{>0}\times\{\pm1\}$, which is why the real group of invertibles is disconnected while the complex one is connected.
 
 The exponential of the real algebra is governed by the rule $\nu^2 = -1, 0, +1$: the trigonometric row is empty, so there is no continuous rotor and no continuous phase; the parabolic row contains only $\nu = 0$, so it is degenerate; and the hyperbolic row contains $\nu = \pm1$, whose exponentials are the positive ray $\exp(\mathbb{R}) = \mathbb{R}_{>0}$. The nontrivial sign $\sigma = -1$ is therefore not an exponential, and the exponential form of the representation reads $q = \exp(t)\sigma$ with $t = \ln|q|$ and $\sigma \in O(1)$; the kernel of the exponential is trivial. Of the four slots of the family — scale, central phase, boost, rotor — exactly two are occupied, the scale and the compact slot, and the second is discrete. The norm is definite, so there are no zero divisors and the polar decomposition has no boundary: the origin is the only excluded element. In the matrix picture the statement is the splitting of the signed similarity $[q]$ into the scalar $[r]$ and the reflection $[\sigma]$.
 

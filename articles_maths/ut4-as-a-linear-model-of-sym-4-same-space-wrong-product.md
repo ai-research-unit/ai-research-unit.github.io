@@ -72,7 +72,7 @@ $$
 | idempotents | no |
 | cone of squares | no |
 | rank of an element | no |
-| determinant | no |
+| the determinant of the image | no |
 
 **Proposition.** The trace pairing is preserved on the diagonal and across it, and it is not preserved between two symmetric pairs: $\beta(E_{ii},E_{jj})=\beta(\varphi(E_{ii}),\varphi(E_{jj}))=\delta_{ij}$, and $\beta(E_{ii},E_{jk}+E_{kj})=\beta(E_{ii},E_{jk})=0$ for $j<k$, but $\beta(E_{12}+E_{21},E_{12}+E_{21})=2$ while $\beta(E_{12},E_{12})=0$.
 

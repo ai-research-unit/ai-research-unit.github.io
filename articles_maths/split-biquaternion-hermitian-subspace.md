@@ -102,7 +102,7 @@ $\mathbb{B}_{\Psi}$ is stable under multiplication by the centre $\mathbb{C}_{\m
 
 ## The Split-Biquaternion Norm and the Hermitian Form
 
-### The Split-Biquaternion Norm and Its Signature
+### The Split-Biquaternion Norm and Its Inertia
 
 **Theorem.** On the Hermitian subspace the split-biquaternion norm is the **positive definite** real quadratic form
 
@@ -112,11 +112,11 @@ $$
 \;},
 $$
 
-of signature $(4,0)$.
+of inertia $(4,0)$.
 
 **Proof.** Substituting $Q_t = q_t$ and $Q_k = j q'_k$ in $\langle\tilde{Q}\rangle_{\natural} = \sum_\mu Q_\mu^2$ gives $q_t^2 + \sum_k (q'_k)^2$, because $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$ — the sign is positive because the split complex unit satisfies $j^2 = +1$.
 
-This is the first structural difference from the biquaternion Hermitian subspace, where the split-biquaternion norm is the indefinite form $q_t^2 - \sum_k (q'_k)^2$ of signature $(1,3)$, because the central unit there satisfies $i^2 = -1$. In the split algebra the split-biquaternion norm is definite on the sector, and there is **no isotropic cone of the split-biquaternion norm**.
+This is the first structural difference from the biquaternion Hermitian subspace, where the split-biquaternion norm is the indefinite form $q_t^2 - \sum_k (q'_k)^2$ of inertia $(1,3)$, because the central unit there satisfies $i^2 = -1$. In the split algebra the split-biquaternion norm is definite on the sector, and there is **no isotropic cone of the split-biquaternion norm**.
 
 ### The Hermitian Norm and Its Isotropic Cone
 
@@ -126,7 +126,7 @@ $$
 \sum_{\mu\in\{t,x,y,z\}} (q_\mu^2 - q'^2_\mu) = q_t^2 - \left((q'_x)^2 + (q'_y)^2 + (q'_z)^2\right),
 $$
 
-of signature $(1,3)$. Its isotropic cone is the three-dimensional cone
+of inertia $(1,3)$. Its isotropic cone is the three-dimensional cone
 
 $$
 q_t^2 = (q'_x)^2 + (q'_y)^2 + (q'_z)^2,
@@ -200,15 +200,15 @@ Its decomposition along the coordinate blocks is $\mathbb{B}_{\Psi} = \mathbb{R}
 
 ## The Analysis on the Hermitian Subspace
 
-The Hermitian subspace is not a subalgebra, so it carries no intrinsic multiplicative function theory; the analysis on it is the restriction of the ambient analysis of *Split-Biquaternion Analysis* to a four-dimensional subspace, together with the differential operators built from the Hermitian form. The ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis* restricted to $\mathbb{B}_{\Psi}$ splits into the Hermitian and anti-Hermitian pieces, and the second-order operator obtained is the wave operator of the restricted Lorentzian form $q_t^2 - \sum_k q'^2_k$ of signature $(1,3)$ rather than a Laplacian. A general function on $\mathbb{B}_{\Psi}$ alone has no product rule, because a product of two elements of $\mathbb{B}_{\Psi}$ leaves the subspace; only the functions that extend to regular functions on the algebra have an intrinsic theory.
+The Hermitian subspace is not a subalgebra, so it carries no intrinsic multiplicative function theory; the analysis on it is the restriction of the ambient analysis of *Split-Biquaternion Analysis* to a four-dimensional subspace, together with the differential operators built from the Hermitian form. The ambient Cauchy–Riemann operator of *Split-Biquaternion Analysis* restricted to $\mathbb{B}_{\Psi}$ splits into the Hermitian and anti-Hermitian pieces, and the second-order operator obtained is the wave operator of the restricted Lorentzian form $q_t^2 - \sum_k q'^2_k$ of inertia $(1,3)$ rather than a Laplacian. A general function on $\mathbb{B}_{\Psi}$ alone has no product rule, because a product of two elements of $\mathbb{B}_{\Psi}$ leaves the subspace; only the functions that extend to regular functions on the algebra have an intrinsic theory.
 
 ## The Geometry of the Hermitian Subspace
 
-The Hermitian subspace is the fixed space of Hermitian conjugation, the positive eigenspace of the involution ${}^{*}$ of the algebra, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. It is a Lorentzian subspace for the Hermitian scalar form: $g$ restricts to the real form $q_t^2 - \sum_k q'^2_k$ of signature $(1,3)$ of *Split-Biquaternion Rotations and the Lorentz Group*, while the split-biquaternion norm restricts to the positive definite form $q_t^2 + \sum_k q'^2_k$ of signature $(4,0)$ recorded in the notation table above. The null cone of $g$ is the cone $q_t^2 = \sum_k q'^2_k$; the restricted form being indefinite of signature $(1,3)$, it has isotropic lines, and their projectivisation in $\mathbb{P}(\mathbb{B}_{\Psi})$ is a two-sphere. The motions it carries are the Lorentz group $SO(1,3)$ induced by the algebra units, the hyperbolic rotations of *Split-Biquaternions and Hyperbolic Geometry*.
+The Hermitian subspace is the fixed space of Hermitian conjugation, the positive eigenspace of the involution ${}^{*}$ of the algebra, and geometrically the invariant four-plane of the corresponding linear involution of $\mathbb{R}^8$. It is a Lorentzian subspace for the Hermitian scalar form: $g$ restricts to the real form $q_t^2 - \sum_k q'^2_k$ of inertia $(1,3)$ of *Split-Biquaternion Rotations and the Lorentz Group*, while the split-biquaternion norm restricts to the positive definite form $q_t^2 + \sum_k q'^2_k$ of inertia $(4,0)$ recorded in the notation table above. The null cone of $g$ is the cone $q_t^2 = \sum_k q'^2_k$; the restricted form being indefinite of inertia $(1,3)$, it has isotropic lines, and their projectivisation in $\mathbb{P}(\mathbb{B}_{\Psi})$ is a two-sphere. The motions it carries are the Lorentz group $SO(1,3)$ induced by the algebra units, the hyperbolic rotations of *Split-Biquaternions and Hyperbolic Geometry*.
 
 ## Summary
 
-The Hermitian subspace $\mathbb{B}_{\Psi}$ is the fixed space of Hermitian conjugation, the set of elements $\tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z$ with real scalar part and purely split-imaginary vector part; it is a real vector space of dimension $4$ with basis $e_t, j\vec e_x, j\vec e_y, j\vec e_z$. It is **not** a subalgebra, since $(j\vec e_x)(j\vec e_y) = \vec e_z$ leaves the subspace; but it is closed under the symmetrized product, which gives it the structure of a **Jordan algebra**, and the square of a Hermitian vector is a real scalar. The commutator of two Hermitian elements is $2\,\vec q_1\times\vec q_2$, an anti-Hermitian element, so the bracket lands in $\mathbb{B}_{\Phi}$. The split-biquaternion norm restricts to the positive definite form $N = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ of signature $(4,0)$, and consequently $\mathbb{B}_{\Psi}$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of signature $(1,3)$ and isotropic cone $q_t^2 = (q'_x)^2+(q'_y)^2+(q'_z)^2$, whose nonzero points are all units. The only idempotents in the subspace are $0$ and $e_t$; unlike the biquaternion case the nontrivial idempotents are not Hermitian. The image under $\varphi$ is the set of conjugate pairs $(h, h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations both negate its vector part, and anti-Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{B}_{\Phi}$.
+The Hermitian subspace $\mathbb{B}_{\Psi}$ is the fixed space of Hermitian conjugation, the set of elements $\tilde{Q} = q_t e_t + j q'_x \vec e_x + j q'_y \vec e_y + j q'_z \vec e_z$ with real scalar part and purely split-imaginary vector part; it is a real vector space of dimension $4$ with basis $e_t, j\vec e_x, j\vec e_y, j\vec e_z$. It is **not** a subalgebra, since $(j\vec e_x)(j\vec e_y) = \vec e_z$ leaves the subspace; but it is closed under the symmetrized product, which gives it the structure of a **Jordan algebra**, and the square of a Hermitian vector is a real scalar. The commutator of two Hermitian elements is $2\,\vec q_1\times\vec q_2$, an anti-Hermitian element, so the bracket lands in $\mathbb{B}_{\Phi}$. The split-biquaternion norm restricts to the positive definite form $N = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ of inertia $(4,0)$, and consequently $\mathbb{B}_{\Psi}$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of inertia $(1,3)$ and isotropic cone $q_t^2 = (q'_x)^2+(q'_y)^2+(q'_z)^2$, whose nonzero points are all units. The only idempotents in the subspace are $0$ and $e_t$; unlike the biquaternion case the nontrivial idempotents are not Hermitian. The image under $\varphi$ is the set of conjugate pairs $(h, h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations both negate its vector part, and anti-Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{B}_{\Phi}$.
 
 ## Summary of Notation
 
@@ -219,8 +219,8 @@ The Hermitian subspace $\mathbb{B}_{\Psi}$ is the fixed space of Hermitian conju
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, fixed space of ${}^{*}$ |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, fixed space of ${}^{\flat}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
-| $\langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ | Norm on $\mathbb{B}_{\Psi}$, signature $(4,0)$ |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(1,3)$ on $\mathbb{B}_{\Psi}$ |
+| $\langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2$ | Norm on $\mathbb{B}_{\Psi}$, inertia $(4,0)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(1,3)$ on $\mathbb{B}_{\Psi}$ |
 | $\tilde{Q}_1 \bullet \tilde{Q}_2 = \tfrac{1}{2}(\tilde{Q}_1\tilde{Q}_2 + \tilde{Q}_2\tilde{Q}_1)$ | Symmetrized (Jordan) product |
 | $[\tilde{Q}_1, \tilde{Q}_2] = 2\,\vec q_1\times\vec q_2$ | Commutator, an element of $\mathbb{B}_{\Phi}$ |
 | $\varphi(\tilde{Q}) = (\tilde{Q}_+, \tilde{Q}_-)$ | Image in $\mathbb{H} \oplus \mathbb{H}$; $(h,h^{\natural})$ on $\mathbb{B}_{\Psi}$ |
@@ -232,4 +232,4 @@ The Hermitian subspace $\mathbb{B}_{\Psi}$ is the fixed space of Hermitian conju
 - Pascual Jordan, "Über eine Klasse nichtassociativer hyperkomplexer Algebren" (1932), for the symmetrized product and the Jordan algebras it defines.
 - I. L. Kantor and A. S. Solodovnikov, *Hypercomplex Numbers: An Elementary Introduction to Algebras* (Springer, 1989), for the Hermitian and anti-Hermitian sectors of algebras with a conjugation.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, 1997), for the Hermitian decomposition of the split biquaternion algebra and the forms on its sectors.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Hermitian and anti-Hermitian elements of Clifford algebras of split signature and their Jordan structure.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Hermitian and anti-Hermitian elements of Clifford algebras of split inertia and their Jordan structure.

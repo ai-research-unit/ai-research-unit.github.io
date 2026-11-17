@@ -24,7 +24,7 @@ $$
 
 The set $\mathcal Z$ is the **zero-divisor cone**: by *Split-Quaternion Norm and Invertibility*, its non-zero elements are exactly the zero divisors. The set $\mathcal C$ is the **spectral cone**: by *Spectral Regularity and Degeneracy in the Split-Quaternion Algebra*, its elements are exactly those with a repeated eigenvalue.
 
-Both conditions are homogeneous quadratics on $\mathbb R^4$. The form $S$ depends only on the vector part and has signature $(2,1)$ on $\mathbb R^3$. The form $t^2-S$ depends on $t$ as well and has signature $(2,2)$ on $\mathbb R^4$.
+Both conditions are homogeneous quadratics on $\mathbb R^4$. The form $S$ depends only on the vector part and has inertia $(2,1)$ on $\mathbb R^3$. The form $t^2-S$ depends on $t$ as well and has inertia $(2,2)$ on $\mathbb R^4$.
 
 **Theorem (logical independence).** Neither condition implies the other.
 

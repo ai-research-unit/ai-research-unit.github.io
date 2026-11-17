@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The split-complex space carries two forms and two algebraic norms, one for each of its two products. This article writes the two forms on the coordinates, gives their Gram matrices, computes their realified signatures, and reads the two algebraic norms as the diagonals of the forms. It closes on the reversal: over the complex field the definite form is the sesquilinear one and its isotropic set is a point, and here the definite form is the plain one and the isotropic set is a pair of lines.
+The split-complex space carries two forms and two algebraic norms, one for each of its two products. This article writes the two forms on the coordinates, gives their Gram matrices, computes their realified inertias, and reads the two algebraic norms as the diagonals of the forms. It closes on the reversal: over the complex field the definite form is the sesquilinear one and its isotropic set is a point, and here the definite form is the plain one and the isotropic set is a pair of lines.
 
 The claim is a claim about which form is definite. **The plain form is definite and the Hermitian form is indefinite**, the opposite of the complex field. One sign, $j^2=+1$, does it: the reflection $J$ preserves the plain form and reverses the Hermitian one, so the realification rules exchange places.
 
-The two forms are built in *The Two Products of the Split-Complex Space*, which owns the products and their laws; the cone the Hermitian form defines is *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*; the criterion of invertibility the norm gives is *Norm and Invertibility in the General Split-Complex Algebra*; the realified signatures are read against *Hermitian Forms over Algebras and Norms*.
+The two forms are built in *The Two Products of the Split-Complex Space*, which owns the products and their laws; the cone the Hermitian form defines is *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*; the criterion of invertibility the norm gives is *Norm and Invertibility in the General Split-Complex Algebra*; the realified inertias are read against *Hermitian Forms over Algebras and Norms*.
 
 ## The Two Forms
 
@@ -34,11 +34,11 @@ $$
 
 since $\operatorname{Re}P(1,1)=1$, $\operatorname{Re}P(1,j)=0$ and $\operatorname{Re}P(j,j)=1$.
 
-### Definiteness and the Signature
+### Definiteness and the Inertia
 
-**Theorem.** $\operatorname{Re}P$ is positive definite of signature $(2,0)$: $\operatorname{Re}P(A,A)=a^2+b^2$, which vanishes only at $A=0$.
+**Theorem.** $\operatorname{Re}P$ is positive definite of inertia $(2,0)$: $\operatorname{Re}P(A,A)=a^2+b^2$, which vanishes only at $A=0$.
 
-**Proof.** $\operatorname{Re}P(A,A)$ is the real part of $A^2=(a^2+b^2)+2ab\,j$, that is $a^2+b^2$, a sum of two squares. The Gram matrix is the identity, so the signature is $(2,0)$.
+**Proof.** $\operatorname{Re}P(A,A)$ is the real part of $A^2=(a^2+b^2)+2ab\,j$, that is $a^2+b^2$, a sum of two squares. The Gram matrix is the identity, so the inertia is $(2,0)$.
 
 ### The Positive Set Is the Whole Plane
 
@@ -64,11 +64,11 @@ $$
 
 since $\operatorname{Re}H(1,1)=1$, $\operatorname{Re}H(1,j)=0$ and $\operatorname{Re}H(j,j)=-1$.
 
-### The Signature
+### The Inertia
 
-**Theorem.** $\operatorname{Re}H$ is indefinite of signature $(1,1)$: $\operatorname{Re}H(A,A)=a^2-b^2$, positive on the real line, negative on the split imaginary line and zero on the pair of null lines.
+**Theorem.** $\operatorname{Re}H$ is indefinite of inertia $(1,1)$: $\operatorname{Re}H(A,A)=a^2-b^2$, positive on the real line, negative on the split imaginary line and zero on the pair of null lines.
 
-**Proof.** $\operatorname{Re}H(A,A)$ is the real part of $A\bar A=a^2-b^2$, which is already real. The Gram matrix has the eigenvalues $1$ and $-1$, so the signature is $(1,1)$; the form changes sign, so it is indefinite.
+**Proof.** $\operatorname{Re}H(A,A)$ is the real part of $A\bar A=a^2-b^2$, which is already real. The Gram matrix has the eigenvalues $1$ and $-1$, so the inertia is $(1,1)$; the form changes sign, so it is indefinite.
 
 ### The Isotropic Set
 
@@ -118,13 +118,13 @@ $$
 P(A+C)-P(A)-P(C)=2P(A,C), \qquad H(A+C)-H(A)-H(C)=2\operatorname{Re}H(A,C) .
 $$
 
-The second is the split bilinear form $g(A,C)=ac-bd$ of signature $(1,1)$, the polar form of the indefinite norm. The first polarises into a $\mathbb{C}_{\mathrm{spl}}$-valued form, which is the plain form again.
+The second is the split bilinear form $g(A,C)=ac-bd$ of inertia $(1,1)$, the polar form of the indefinite norm. The first polarises into a $\mathbb{C}_{\mathrm{spl}}$-valued form, which is the plain form again.
 
 ## The Reversal of the Complex Case
 
 ### The Definite Form Is the Sesquilinear One There
 
-Over $\mathbb{C}$ the sesquilinear form $A\bar C$ is positive definite, its diagonal $A\bar A=\lvert A\rvert^2$ is the square of the modulus, and the plain form $AC$ realifies with signature $(1,1)$: the form $\operatorname{Re}(AC)$ is $ac-bd$ on the real and imaginary coordinates. So over $\mathbb{C}$ the definite form is the sesquilinear one, and here the definite form is the plain one. The two forms exchange their realified signatures.
+Over $\mathbb{C}$ the sesquilinear form $A\bar C$ is positive definite, its diagonal $A\bar A=\lvert A\rvert^2$ is the square of the modulus, and the plain form $AC$ realifies with inertia $(1,1)$: the form $\operatorname{Re}(AC)$ is $ac-bd$ on the real and imaginary coordinates. So over $\mathbb{C}$ the definite form is the sesquilinear one, and here the definite form is the plain one. The two forms exchange their realified inertias.
 
 **The reason.** The reflection $J$, the multiplication by the generator, preserves one form and reverses the other, and the sign of the square of the generator decides which is which:
 
@@ -132,7 +132,7 @@ $$
 P(JA,JC)=+P(A,C), \qquad H(JA,JC)=-H(A,C) \quad\text{here},
 $$
 
-and the two signs are exchanged over $\mathbb{C}$, where $i^2=-1$. The realification rules attach the signature $(n,n)$ to the preserved form and the doubling to the reversed one, so the exchange of the signs is the exchange of the signatures.
+and the two signs are exchanged over $\mathbb{C}$, where $i^2=-1$. The realification rules attach the inertia $(n,n)$ to the preserved form and the doubling to the reversed one, so the exchange of the signs is the exchange of the inertias.
 
 ### The Isotropic Set Is a Point There
 
@@ -153,26 +153,26 @@ Over $\mathbb{C}$ the norm $A\bar A$ is definite and gives the modulus, and the 
 
 The space carries two forms, the plain $P(A,C)=AC$ and the Hermitian $H(A,C)=A\bar C$, one for each product and no third. Both have the Gram matrix $[1]$ over the free module of rank one and are separated by symmetry, $P$ being symmetric and $H$ conjugate-symmetric.
 
-$P$ realifies with signature $(2,0)$ and is positive definite, so its positive set is the whole plane; the image of its diagonal is the forward cone, because the square map is not onto. $H$ realifies with signature $(1,1)$ and is indefinite, with isotropic set the pair of null lines $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, which is the set of zero divisors with the origin adjoined.
+$P$ realifies with inertia $(2,0)$ and is positive definite, so its positive set is the whole plane; the image of its diagonal is the forward cone, because the square map is not onto. $H$ realifies with inertia $(1,1)$ and is indefinite, with isotropic set the pair of null lines $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$, which is the set of zero divisors with the origin adjoined.
 
-The two algebraic norms are $P(A)=A^2$, $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, and $H(A)=A\bar A=a^2-b^2$, real and indefinite, and both are multiplicative. Over the complex field the two forms exchange their signatures and $H$ has the origin alone for its isotropic set; the reversal is caused by the sign of the square of the generator, which makes $J$ preserve $P$ and reverse $H$ here and the other way round over $\mathbb{C}$.
+The two algebraic norms are $P(A)=A^2$, $\mathbb{C}_{\mathrm{spl}}$-valued and anisotropic, and $H(A)=A\bar A=a^2-b^2$, real and indefinite, and both are multiplicative. Over the complex field the two forms exchange their inertias and $H$ has the origin alone for its isotropic set; the reversal is caused by the sign of the square of the generator, which makes $J$ preserve $P$ and reverse $H$ here and the other way round over $\mathbb{C}$.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $P(A,C)=AC$ | The plain form, symmetric, definite of signature $(2,0)$ |
-| $H(A,C)=A\bar C$ | The Hermitian form, conjugate-symmetric, indefinite of signature $(1,1)$ |
+| $P(A,C)=AC$ | The plain form, symmetric, definite of inertia $(2,0)$ |
+| $H(A,C)=A\bar C$ | The Hermitian form, conjugate-symmetric, indefinite of inertia $(1,1)$ |
 | $P(A)=A^2$ | The plain algebraic norm, $\mathbb{C}_{\mathrm{spl}}$-valued, anisotropic |
 | $H(A)=A\bar A=a^2-b^2$ | The Hermitian algebraic norm, real, indefinite |
 | $\operatorname{Re}P$, $\operatorname{Re}H$ | The realifications, with Gram matrices $\mathrm{diag}(1,1)$ and $\mathrm{diag}(1,-1)$ |
-| $g(A,C)=ac-bd$ | The polar form of $N$, of signature $(1,1)$ |
+| $g(A,C)=ac-bd$ | The polar form of $N$, of inertia $(1,1)$ |
 | $\mathbb{R}\Pi_+\cup\mathbb{R}\Pi_-$ | The isotropic set of $H$ |
 | $J$ | The multiplication by $j$, preserving $P$ and reversing $H$ |
 
 ## Further Reading
 
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for symmetric bilinear forms, signature and inertia in dimension two.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for symmetric bilinear forms, inertia and the classification of forms in dimension two.
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, Ergebnisse der Mathematik 78, 1974), for indefinite forms, isotropic subspaces and the Krein form.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, Colloquium Publications 44, 1998), for forms over an algebra with an involution and the realification rules.
 - Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for the trace and norm forms of an associative algebra and their polarization.

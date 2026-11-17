@@ -90,7 +90,7 @@ It assumes *The Positive Cone and Its Boundary at $n=4$*, *The Space of Idempote
 
 **Proof.** The verified computation of the pairing on the axis-free basis.
 
-**Corollary.** The ten and the six are the trace-form signature, and they coincide with the symmetric and antisymmetric directions, so the geometry of the halves is the signature of a single quadratic form on the operator basis.
+**Corollary.** The ten and the six are the trace-form inertia, and they coincide with the symmetric and antisymmetric directions, so the geometry of the halves is the inertia of a single quadratic form on the operator basis.
 
 **Proof.** The set equality between the $+4$ elements and the symmetric ones.
 
@@ -108,7 +108,7 @@ The Hermitian half is a real space of dimension sixteen carrying the open convex
 
 $\mathrm{GL}_4/U(4)$ is a symmetric space of noncompact type of dimension sixteen, contractible, with nonpositive curvature and the invariant trace metric; its compact dual replaces the cone by the compact section.
 
-The return is the point: with a frame chosen, each object becomes an operator statement. The two-sided products give the sixteen coordinates, the signed permutations give the finite skeleton of order $32$, the trace pairing gives the signature $(10,6)$, the Segre cone gives the rank-one part, and the length measures the coefficient matrix. The geometry of the halves is the geometry of the operator algebra read on the rank-one cone.
+The return is the point: with a frame chosen, each object becomes an operator statement. The two-sided products give the sixteen coordinates, the signed permutations give the finite skeleton of order $32$, the trace pairing gives the inertia $(10,6)$, the Segre cone gives the rank-one part, and the length measures the coefficient matrix. The geometry of the halves is the geometry of the operator algebra read on the rank-one cone.
 
 ## Summary of Notation
 
@@ -119,7 +119,7 @@ The return is the point: with a frame chosen, each object becomes an operator st
 | $\mathrm{Gr}_k=U(4)/(U(k)\times U(4-k))$ | the Hermitian idempotents |
 | $\mathrm{GL}_4/U(4)$ | the contractible symmetric space |
 | $T_{a,b}=L_aR_b$ | the two-sided operator |
-| $(10,6)$ | the signature of the trace form |
+| $(10,6)$ | the inertia of the trace form |
 
 ## Further Reading
 

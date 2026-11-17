@@ -335,7 +335,7 @@ $$
 \operatorname{Im}\operatorname{tr}(AB)=\operatorname{tr}(XV)+\operatorname{tr}(YU).
 $$
 
-The real part is a symmetric bilinear form of signature $(36,36)$; the imaginary part is a symmetric bilinear form of split type. The Hermitian form
+The real part is a symmetric bilinear form of inertia $(36,36)$; the imaginary part is a symmetric bilinear form of split type. The Hermitian form
 
 $$
 \operatorname{tr}(A^*B)=\operatorname{tr}(X^{\mathsf T}U)+\operatorname{tr}(Y^{\mathsf T}V)
@@ -344,7 +344,7 @@ $$
 
 has positive definite real part.
 
-**Proof.** Expand $\operatorname{tr}((X+\mathrm iY)(U+\mathrm iV))$ and take real and imaginary parts. On $M_6(\mathbb{R})$ the trace form $\operatorname{tr}(XU)$ has signature $(21,15)$ (positive on the symmetric matrices, negative on the alternating ones); the real part on the complexification is the difference of two copies, of signature $(21+15,15+21)=(36,36)$. The Hermitian form has real part $\sum_{ij}(x_{ij}u_{ij}+y_{ij}v_{ij})$, the Euclidean inner product of the $72$ real coordinates.
+**Proof.** Expand $\operatorname{tr}((X+\mathrm iY)(U+\mathrm iV))$ and take real and imaginary parts. On $M_6(\mathbb{R})$ the trace form $\operatorname{tr}(XU)$ has inertia $(21,15)$ (positive on the symmetric matrices, negative on the alternating ones); the real part on the complexification is the difference of two copies, of inertia $(21+15,15+21)=(36,36)$. The Hermitian form has real part $\sum_{ij}(x_{ij}u_{ij}+y_{ij}v_{ij})$, the Euclidean inner product of the $72$ real coordinates.
 
 **Remark (three forms).** The complex bilinear form $\operatorname{tr}(AB)$ is the trace pairing; its real part is indefinite; the Hermitian form $\operatorname{tr}(A^*B)$ is positive definite. The three are different objects, and the article uses the first for the algebra and the third for the Hilbert-space structure.
 

@@ -420,7 +420,7 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 5. **The relation to the analysis article.** The connection between the continuous Fourier transform and the differential operators is established at the level of symbols. What are the deeper consequences for the structure of the solutions of the operator equations?
 
-6. **The Clifford algebra framework.** How does the split biquaternion continuous Fourier transform fit into the general theory of Clifford algebra Fourier transforms with split signature?
+6. **The Clifford algebra framework.** How does the split biquaternion continuous Fourier transform fit into the general theory of Clifford algebra Fourier transforms with split inertia?
 
 7. **The relation to the biquaternion case.** The split biquaternion transform reduces to two quaternion transforms, while the biquaternion transform reduces to four complex transforms. What are the advantages and disadvantages of each in applications?
 
@@ -465,5 +465,5 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 - N. Le Bihan and J. Mars, "Singular value decomposition of quaternion matrices: a new tool for vector-sensor signal processing", *Signal Processing* **84** (2004) 1177–1199, for the quaternion signal processing background.
 - T. A. Ell and S. J. Sangwine, "Hypercomplex Fourier transforms of color images", *IEEE Transactions on Image Processing* **16** (2007) 22–35, for the quaternion Fourier transform and its applications.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the algebraic structure of the split biquaternions.
-- F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis with split signature.
+- F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis with split inertia.
 

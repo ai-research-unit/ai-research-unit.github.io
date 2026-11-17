@@ -936,7 +936,7 @@ The phase $e^{i\beta}$ is in $\tilde Q_0$; the singular value $2\lvert c_0\rvert
 | spectrum | $\{c,0\}$, algebraic multiplicities $2,2$, geometric multiplicities $2,2$ |
 | Jordan form | diagonal, $\operatorname{diag}(c,c,0,0)$ and $\operatorname{diag}(c,0,c,0)$ |
 | trace | $4Q_t=2c$ |
-| determinant | $0$ |
+| the determinant of the image | $0$ |
 | singular values | $2a$ (twice), $0$ (twice) |
 | image | $\tilde Q\mathbb{B}$ and $\mathbb{B}\tilde Q$, totally isotropic planes |
 | kernel | the annihilator planes, meeting in $\mathbb{C}\tilde\Pi'$ |
@@ -958,7 +958,7 @@ The phase $e^{i\beta}$ is in $\tilde Q_0$; the singular value $2\lvert c_0\rvert
 | spectrum | $\{0\}$, algebraic multiplicity $4$, geometric multiplicity $2$ |
 | Jordan form | $J_2(0)\oplus J_2(0)$ |
 | trace | $0$ |
-| determinant | $0$ |
+| the determinant of the image | $0$ |
 | singular values | $2a$ (twice), $0$ (twice) |
 | image | $\operatorname{im}L_{\tilde\nu}=\ker L_{\tilde\nu}=\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_+$ |
 | mirror | $\operatorname{im}R_{\tilde\nu}=\ker R_{\tilde\nu}=\mathbb{C}\tilde\nu\oplus\mathbb{C}\tilde\Pi_-$ |

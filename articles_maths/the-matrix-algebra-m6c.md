@@ -362,7 +362,7 @@ The real structure is $M_6=\mathfrak{u}(6)\oplus\mathrm i\mathfrak{u}(6)$, with 
 |---|---|
 | $E_{ij}$ | the matrix unit $e_ie_j^{\vee}$, with $E_{ij}E_{kl}=\delta_{jk}E_{il}$ |
 | $\operatorname{tr}$ | the trace, $\sum_iA_{ii}$ |
-| $\det$ | the determinant |
+| $\det$ | the determinant of the image |
 | $\chi_A(t)$ | the characteristic polynomial $\det(tI_6-A)$ |
 | $\mathfrak{sl}_6$ | the trace-zero matrices, $[M_6,M_6]$ |
 | $A^*$ | the conjugate transpose |

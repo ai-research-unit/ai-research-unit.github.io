@@ -22,7 +22,7 @@ This article treats the cone, its two lines, its real picture, its image in $\ma
 
 ## The Bilinear Form and the Cone
 
-**The form $B$ has signature $(2,2)$ over the reals, and its complex isotropic cone is the zero set of a reducible quadratic form.**
+**The form $B$ has inertia $(2,2)$ over the reals, and its complex isotropic cone is the zero set of a reducible quadratic form.**
 
 **Definition.** The **complex bilinear form** is
 $$
@@ -30,17 +30,17 @@ B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\bl
 $$
 and the **isotropic cone** is $\mathcal{N}=\{Q:B(Q,Q)=0\}$.
 
-**Proposition (the signature).** As a real bilinear form on $\mathbb{C}^2\cong\mathbb{R}^4$, the real part
+**Proposition (the inertia).** As a real bilinear form on $\mathbb{C}^2\cong\mathbb{R}^4$, the real part
 $$
 \operatorname{Re}B(Q_1,Q_2)=q_{\blacktriangle}u_{\blacktriangle}-q'_{\blacktriangle}v_{\blacktriangle}+q_{\blacktriangledown}u_{\blacktriangledown}-q'_{\blacktriangledown}v_{\blacktriangledown}
 $$
-has signature $(2,2)$, and the imaginary part
+has inertia $(2,2)$, and the imaginary part
 $$
 \operatorname{Im}B(Q_1,Q_2)=q_{\blacktriangle}v_{\blacktriangle}+q'_{\blacktriangle}u_{\blacktriangle}+q_{\blacktriangledown}v_{\blacktriangledown}+q'_{\blacktriangledown}u_{\blacktriangledown}
 $$
-also has signature $(2,2)$. The complex form $B$ is nondegenerate, symmetric and $\mathbb{C}$-bilinear.
+also has inertia $(2,2)$. The complex form $B$ is nondegenerate, symmetric and $\mathbb{C}$-bilinear.
 
-*Proof.* In the real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ the matrix of $\operatorname{Re}B$ is $\operatorname{diag}(1,-1,1,-1)$, of signature $(2,2)$; the matrix of $\operatorname{Im}B$ is the symmetric matrix with blocks $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, whose eigenvalues are $\pm1$. The complex form is nondegenerate because its matrix is the identity.
+*Proof.* In the real coordinates $(q_{\blacktriangle},q'_{\blacktriangle},q_{\blacktriangledown},q'_{\blacktriangledown})$ the matrix of $\operatorname{Re}B$ is $\operatorname{diag}(1,-1,1,-1)$, of inertia $(2,2)$; the matrix of $\operatorname{Im}B$ is the symmetric matrix with blocks $\begin{pmatrix}0&1\\1&0\end{pmatrix}$, whose eigenvalues are $\pm1$. The complex form is nondegenerate because its matrix is the identity.
 
 **Proposition (the factorization).** The cone is the union of the two complex lines
 $$
@@ -160,7 +160,7 @@ The split form is a real form of the complex form under the real structure $Q_{\
 
 ## Summary
 
-The complex bilinear form $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ has signature $(2,2)$ over the reals, and its isotropic cone $\mathcal{N}=\{Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2=0\}$ is the union of the two complex lines $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$. The lines are totally isotropic for $B$ and Lagrangian for the holomorphic symplectic form $\omega$; the Hermitian form $H$ is definite and has no isotropic vectors, so the three forms have three different isotropic geometries.
+The complex bilinear form $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ has inertia $(2,2)$ over the reals, and its isotropic cone $\mathcal{N}=\{Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2=0\}$ is the union of the two complex lines $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$. The lines are totally isotropic for $B$ and Lagrangian for the holomorphic symplectic form $\omega$; the Hermitian form $H$ is definite and has no isotropic vectors, so the three forms have three different isotropic geometries.
 
 The real locus of the cone is only the origin, but the cone as a real algebraic set is the union of two real two-planes in $\mathbb{R}^4$, and it is the intersection of the null cones of the real and imaginary parts of $B$. Its projective image is the two-point set $\{[i:1],[-i:1]\}\subset\mathbb{CP}^1$. Its intersection with $S^3$ is a pair of great circles, the Hopf fibres over the two points, and they form the Hopf link with linking number one. The cone is the complexification of the split-complex null quadric $x^2-y^2=0$; the dual numbers give the degenerate case of a double line.
 
@@ -181,7 +181,7 @@ The real locus of the cone is only the origin, but the cone as a real algebraic 
 ## Further Reading
 
 - [Duo-Complex Numbers](duo-complex-numbers.html), for the space and the Hermitian form.
-- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-c2.html), for $H$, $B$ and $\omega$ and their signatures.
+- [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-c2.html), for $H$, $B$ and $\omega$ and their inertias.
 - [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-c2.html), for the complex lines, the Lagrangian lines and the isotropic subspaces.
 - [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-c2.html), the previous article, for $g$, $\omega$ and the relation among the forms.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-c2.html), the next article, for $O(2,\mathbb{C})$ and the stabilizer of the cone.

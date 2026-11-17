@@ -4,7 +4,7 @@
 
 **One polynomial carries the whole spectrum of $A$: the generating polynomial $\det(\mathrm{I}+tA)$ has the elementary symmetric functions of $A$ as its coefficients, and those coefficients are the complete set of conjugation-invariant polynomial functions on the algebra.**
 
-The article defines $e_k(A)$ as the sum of the principal $k\times k$ minors, proves that $\det(\mathrm{I}+tA)=\sum_k e_k(A)t^{k}$, derives Newton's identities that recover the $e_k$ from the power sums $\operatorname{tr}(A^{m})$, and shows that the $e_k$ generate the ring of invariant polynomials with no relation among them. The last two sections read the derivative at the origin, which is the trace and which forces $\det e^{A}=e^{\operatorname{tr}A}$, and the case $n=2$. It assumes *The Element: Rank, Trace, Determinant, Characteristic Polynomial* for the four invariants and for the characteristic polynomial. It defers the structure of the invariant ring as a symmetric algebra to *The Trace Form and Its Signature on the Two Halves*, and the exponential itself to *The Exponential of a Matrix and Its Image*.
+The article defines $e_k(A)$ as the sum of the principal $k\times k$ minors, proves that $\det(\mathrm{I}+tA)=\sum_k e_k(A)t^{k}$, derives Newton's identities that recover the $e_k$ from the power sums $\operatorname{tr}(A^{m})$, and shows that the $e_k$ generate the ring of invariant polynomials with no relation among them. The last two sections read the derivative at the origin, which is the trace and which forces $\det e^{A}=e^{\operatorname{tr}A}$, and the case $n=2$. It assumes *The Element: Rank, Trace, Determinant, Characteristic Polynomial* for the four invariants and for the characteristic polynomial. It defers the structure of the invariant ring as a symmetric algebra to *The Trace Form and Its Inertia on the Two Halves*, and the exponential itself to *The Exponential of a Matrix and Its Image*.
 
 ## The Elementary Symmetric Functions
 
@@ -146,7 +146,7 @@ $$
 
 separating the two distinct eigenvalues from the double one. The orbits are the strata of *The Minimal Polynomial and the Jordan Form*: two distinct eigenvalues, one eigenvalue with a diagonalisable matrix, and one eigenvalue with a nontrivial Jordan block, the last being the single orbit of $A\ne\lambda\mathrm{I}$ with $\Delta=0$.
 
-**The biquaternion norm is not the determinant.** At $n=2$ the algebra is the biquaternion algebra $\mathbb{B}$, and the article *The Biquaternion Algebra* attaches to each element a real norm $N$. That norm is real-valued and indefinite, while $\det$ is complex-valued and multiplicative; the two agree in neither signature nor domain. The determinant of the matrix of $q$ is the complex number $\det q$, and the statement $N(q)=\det q$ is false for a biquaternion. What survives is the trace: $\operatorname{tr}$ is complex-linear on $\mathbb{B}$, and its real part is the real part of the biquaternion trace.
+**The biquaternion norm is not the determinant.** At $n=2$ the algebra is the biquaternion algebra $\mathbb{B}$, and the article *The Biquaternion Algebra* attaches to each element a real norm $N$. That norm is real-valued and indefinite, while $\det$ is complex-valued and multiplicative; the two agree in neither inertia nor domain. The determinant of the matrix of $q$ is the complex number $\det q$, and the statement $N(q)=\det q$ is false for a biquaternion. What survives is the trace: $\operatorname{tr}$ is complex-linear on $\mathbb{B}$, and its real part is the real part of the biquaternion trace.
 
 ## Summary
 

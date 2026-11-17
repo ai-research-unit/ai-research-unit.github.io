@@ -292,7 +292,7 @@ $$
 $$
 which is the statement that the quaternionic form on the diagonal is the determinant. The computation is one line, and it identifies the third of the four norms with the determinant of the block; the $4\times4$ article needs the square for the same identification, because there the block is repeated.
 
-**The determinant of a product.** For all $\tilde Q_1,\tilde Q_2$,
+**The determinant of a product of matrices.** For all $\tilde Q_1,\tilde Q_2$,
 $$
 \det(A_1A_2)=\det A_1\det A_2,\qquad\text{that is}\qquad N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2).
 $$
@@ -316,7 +316,7 @@ $$
 P=\tfrac12\operatorname{Tr}(A^2),\qquad N=\tfrac12\operatorname{Tr}(A^{\natural}A)=\det A,\qquad
 H=\tfrac12\operatorname{Tr}(A^{\dagger}A),\qquad \mathrm{Kr}=\tfrac12\operatorname{Tr}(A^{\natural}A^{\dagger}).
 $$
-The four letters, the four coordinate expressions and the four signatures are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. Each word is the half-trace of a product of the block with one of its three companions.
+The four letters, the four coordinate expressions and the four inertias are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. Each word is the half-trace of a product of the block with one of its three companions.
 
 **The plain norm.** From $A=Q_t\mathrm I_2-iW$ with $W^2=B^2\mathrm I_2$,
 $$
@@ -337,13 +337,13 @@ so the quaternionic norm is at once the determinant, the eigenvalue of $A^{\natu
 $$
 H(\tilde Q)=\tfrac12\operatorname{Tr}(A^{\dagger}A)=\tfrac12\lVert A\rVert^2_{\mathrm{HS}}=\sum_\mu|Q_\mu|^2,
 $$
-the last equality because the four matrices $\mathrm I_2$, $-i\sigma_1$, $-i\sigma_2$, $-i\sigma_3$ are orthogonal for the Hilbert–Schmidt product and of square norm $2$ each. It is positive definite, of signature $(8,0)$ on the real algebra, and it is not multiplicative.
+the last equality because the four matrices $\mathrm I_2$, $-i\sigma_1$, $-i\sigma_2$, $-i\sigma_3$ are orthogonal for the Hilbert–Schmidt product and of square norm $2$ each. It is positive definite, of inertia $(8,0)$ on the real algebra, and it is not multiplicative.
 
 **The Krein norm.** The fourth word pairs the adjugate with the adjoint,
 $$
 \mathrm{Kr}(\tilde Q)=\tfrac12\operatorname{Tr}(A^{\natural}A^{\dagger})=\sum_\mu\varepsilon_\mu|Q_\mu|^2,\qquad \varepsilon_t=1,\quad\varepsilon_x=\varepsilon_y=\varepsilon_z=-1,
 $$
-of signature $(2,6)$ on the real algebra. It is the Hermitian norm with the sign of the vector part reversed, and like the plain norm it is neither definite nor multiplicative.
+of inertia $(2,6)$ on the real algebra. It is the Hermitian norm with the sign of the vector part reversed, and like the plain norm it is neither definite nor multiplicative.
 
 **The multiplicativity table.**
 
@@ -386,7 +386,7 @@ $$
 | trace of an element | $2Q_t$ | $2$ |
 | form | $\tfrac12\operatorname{Tr}(A_1A_2)$ | $1/2$ |
 | norm | $\tfrac12\operatorname{Tr}(A^{\natural}A)$ | $1/2$ |
-| determinant | $\det A$ | no factor |
+| the determinant of the image | $\det A$ | no factor |
 | determinant of the identity | $\det\mathrm I_2=1$ | no factor |
 
 **Against the two other sizes.** At the $4\times4$ size the same identities carry $4$ and $\tfrac14$, and at this size $2$ and $\tfrac12$. The ratio is the trace of the identity of the carrier, which is the dimension of the space the matrices act on: four for the algebra and two for the plane. The determinant carries no factor at any size, because it is normalised at the identity of each size.
@@ -397,7 +397,7 @@ $$
 |---|---|---|
 | trace of an element | $4Q_t$ | $2Q_t$ |
 | form | $\tfrac14\operatorname{Tr}(L_1L_2)$ | $\tfrac12\operatorname{Tr}(A_1A_2)$ |
-| determinant | $N^2$ | $N$ |
+| the determinant of the image | $N^2$ | $N$ |
 | rank | $0,2,4$ | $0,1,2$ |
 
 and the pattern is the same in each row: the trace halves, the determinant takes the square root, and the rank halves.

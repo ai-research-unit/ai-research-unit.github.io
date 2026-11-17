@@ -18,7 +18,7 @@ Q_{+}=Q_{\blacktriangle}+Q_{\blacktriangledown},\qquad Q_{-}=Q_{\blacktriangle}-
 $$
 the two idempotent coordinates. The two frames are related by one fixed change of basis, the matrix $P$, of determinant $-2$, and the relation is *the same for every element*: this is the matrix form of semisimplicity, and it is what the dual-number category of the block cannot have.
 
-**What the model shows.** The symmetry is the commutativity. The simultaneous diagonalisation is the semisimplicity, and the two diagonal entries are the two eigenvalues, which are the two components under $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$. The determinant is the reduced norm $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$, the multiplicative algebraic norm of the algebra and its invertibility criterion. The zero divisors are exactly the matrices of the image that drop rank to one, that is the elements with one vanishing idempotent coordinate, and they are **not nilpotent**: the algebra is reduced. The trace is twice the first complex coordinate and not the sum of the two eigenvalues over $\mathbb{C}$, which is a distinction the realification makes visible.
+**What the model shows.** The symmetry is the commutativity. The simultaneous diagonalisation is the semisimplicity, and the two diagonal entries are the two eigenvalues, which are the two components under $\mathbb{B}_{\mathrm{red}}\cong\mathbb{C}\times\mathbb{C}$. The determinant of the model is the reduced norm $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}$, the multiplicative algebraic norm of the algebra and its invertibility criterion. The zero divisors are exactly the matrices of the image that drop rank to one, that is the elements with one vanishing idempotent coordinate, and they are **not nilpotent**: the algebra is reduced. The trace is twice the first complex coordinate and not the sum of the two eigenvalues over $\mathbb{C}$, which is a distinction the realification makes visible.
 
 **The one structural singularity of the category.** The reduced biquaternion algebra is the only algebra of the block that is **semisimple and neither a field nor a full matrix algebra over a division ring**. The complex numbers are a field, the split-complex numbers are a product of two copies of $\mathbb{R}$, the dual numbers are local and not reduced, the quaternion and biquaternion algebras are full matrix algebras, and the split-biquaternions are a product of two quaternion algebras, which is a full matrix algebra over $\mathbb{R}$ in disguise. Here the algebra is a product of two copies of $\mathbb{C}$ and its model is two-dimensional inside a four-dimensional algebra: the model is faithful and not surjective, and the deficit is exactly the two off-diagonal directions of $M_{2}(\mathbb{C})$.
 
@@ -190,19 +190,19 @@ so its Gram matrix in the complex basis $(1,j)$ is
 $$
 G_{\operatorname{tr}}=2\,\mathrm I_{2},\qquad \det G_{\operatorname{tr}}=4\neq0,
 $$
-and the form is **nondegenerate**, of complex rank two and real signature $(2,2)$ after the realification. In the idempotent basis the same form is
+and the form is **nondegenerate**, of complex rank two and real inertia $(2,2)$ after the realification. In the idempotent basis the same form is
 $$
 \operatorname{tr}\bigl(\mathsf M(\breve Q)\mathsf M(\breve P)\bigr)=Q_{+}P_{+}+Q_{-}P_{-},
 $$
 because the trace of a product of diagonal matrices is the sum of the products of the entries.
 
-**The reading.** Three categories, three trace forms: $\operatorname{diag}(2,-2)$ of signature $(1,1)$ for the complex numbers, $\operatorname{diag}(2,0)$ degenerate for the dual numbers, and $2\,\mathrm I_{2}$ nondegenerate for the reduced biquaternions. The form here *is* the form $\langle\cdot,\cdot\rangle$ of *The Four Products, Their Forms and Their Algebraic Norms of the Reduced Biquaternions*, read as a pairing of the model, because the trace of a product is the scalar part of the product; and its nondegeneracy is one more face of semisimplicity. The dual-number trace form was degenerate with the radical as its kernel; here the radical is zero.
+**The reading.** Three categories, three trace forms: $\operatorname{diag}(2,-2)$ of inertia $(1,1)$ for the complex numbers, $\operatorname{diag}(2,0)$ degenerate for the dual numbers, and $2\,\mathrm I_{2}$ nondegenerate for the reduced biquaternions. The form here *is* the form $\langle\cdot,\cdot\rangle$ of *The Four Products, Their Forms and Their Algebraic Norms of the Reduced Biquaternions*, read as a pairing of the model, because the trace of a product is the scalar part of the product; and its nondegeneracy is one more face of semisimplicity. The dual-number trace form was degenerate with the radical as its kernel; here the radical is zero.
 
 ## The Determinant
 
-**The determinant is the reduced norm, a product of two linear forms in the idempotent coordinates, and its zero set is a pair of planes.**
+**The determinant of the model is the reduced norm, a product of two linear forms in the idempotent coordinates, and its zero set is a pair of planes.**
 
-**Theorem (the determinant).** For every $\breve Q$,
+**Theorem (the determinant of the model).** For every $\breve Q$,
 $$
 \det\mathsf M(\breve Q)=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=Q_{+}Q_{-}=\langle\breve Q\rangle_{\mathrm{ts}},
 $$
@@ -328,7 +328,7 @@ So the three forms give three conformal loci — everything, two lines, and a hy
 
 **Four algebraic norms, four Gram matrices, and one positive definite form.**
 
-| form | definition | Gram matrix on $1,i,j,ij$ | real signature | multiplicative |
+| form | definition | Gram matrix on $1,i,j,ij$ | real inertia | multiplicative |
 |---|---|---|---|---|
 | plain bilinear | $\langle\breve Q\rangle=Q_{\blacktriangle}^{2}+Q_{\blacktriangledown}^{2}$ | $\operatorname{diag}(1,-1,1,-1)$ | $(2,2)$ | no |
 | tessarine bilinear | $\langle\breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}$ | $\operatorname{diag}(1,-1,-1,1)$ | $(2,2)$ | yes |
@@ -341,7 +341,7 @@ So the three forms give three conformal loci — everything, two lines, and a hy
 $$
 \langle\breve Q\rangle_{\mathrm{ts}*}=\tfrac12\operatorname{tr}\bigl(\mathsf M(\breve Q)^{\dagger}\mathsf M(\breve Q)\bigr),
 $$
-and the factor $\tfrac12$ is the dimension of the carrier, which is the general normalisation of the Frobenius form on a model of rank two. The other three are indefinite of real signature $(2,2)$, and their three Gram matrices are the three ways of placing two minus signs among the four coordinates: the plain form keeps the signs of the real and the $j$ coefficients, the tessarine form flips the two imaginary ones, and the sesquilinear form flips the two $j$-ones.
+and the factor $\tfrac12$ is the dimension of the carrier, which is the general normalisation of the Frobenius form on a model of rank two. The other three are indefinite of real inertia $(2,2)$, and their three Gram matrices are the three ways of placing two minus signs among the four coordinates: the plain form keeps the signs of the real and the $j$ coefficients, the tessarine form flips the two imaginary ones, and the sesquilinear form flips the two $j$-ones.
 
 **The four forms in the model.** The two bilinear forms are the traces of products and of $J$-conjugated products,
 $$
@@ -404,8 +404,8 @@ which is a scalar operator only when the two moduli agree, and which is the oper
 2. The membership test is the two linear equations $a=d$ and $b=c$ and not a determinantal condition; the image is a subspace and not a cone.
 3. The idempotent frame $(\Pi_{+},\Pi_{-})$ diagonalises every element at once, by the fixed matrix $P$ of determinant $-2$ and $P^{2}=2\,\mathrm I_{2}$, and the diagonal entries are the two idempotent coordinates $Q_{\pm}=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$.
 4. The regular module is completely reducible, the sum of the two simple modules $\mathbb{C}\Pi_{\pm}$, and the Peirce frame exists with two central idempotents and no off-diagonal matrix unit: the exact opposite of the non-split extension of the dual-number category.
-5. The trace is $2Q_{\blacktriangle}$ in the complex model and $4q_{0}$ in the realification, the second being the first plus its conjugate; the trace form is $2\,\mathrm I_{2}$, nondegenerate of real signature $(2,2)$.
-6. The determinant is the reduced norm $Q_{+}Q_{-}=\langle\breve Q\rangle_{\mathrm{ts}}$, multiplicative, whose zero set is the union of the two transverse planes $Q_{+}=0$ and $Q_{-}=0$; the rank ladder is $2,1,0$, doubled in the realification.
+5. The trace is $2Q_{\blacktriangle}$ in the complex model and $4q_{0}$ in the realification, the second being the first plus its conjugate; the trace form is $2\,\mathrm I_{2}$, nondegenerate of real inertia $(2,2)$.
+6. The determinant of the model is the reduced norm $Q_{+}Q_{-}=\langle\breve Q\rangle_{\mathrm{ts}}$, multiplicative, whose zero set is the union of the two transverse planes $Q_{+}=0$ and $Q_{-}=0$; the rank ladder is $2,1,0$, doubled in the realification.
 7. Every element is diagonalisable by the same frame, the eigendecomposition is the Peirce decomposition, and Lagrange's formula degenerates on the scalar line although the projectors themselves exist there: the failure is of the formula and not of the object.
 8. The adjugate is the model of the tessarine conjugate, the inverse is $\mathsf M(\breve Q_{\mathrm{ts}}/\langle\breve Q\rangle_{\mathrm{ts}})$, and the three operations separate because the transpose is the identity on the image while the bar and the star are conjugate-linear; the model is conformal for the indefinite form $J$ at every element, and for the adjoint exactly on the hypersurface $\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})=0$.
 9. The four algebraic norms are the four slots of two binary choices, the multiplicative one is the determinant, and the positive definite one is the Frobenius form $\tfrac12\operatorname{tr}(\mathsf M^{\dagger}\mathsf M)$, which defines the coordinatewise order and the positive quadrant of the frame.

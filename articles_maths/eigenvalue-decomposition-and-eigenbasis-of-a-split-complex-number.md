@@ -779,7 +779,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[x]/(x^2-1)$ | Split-complex algebra, dimension $2$ over $\mathbb{R}$ |
 | $Q=q+jq'$ | General split-complex number, $q,q'\in\mathbb{R}$ |
 | $\bar Q=q-jq'$ | Split-complex conjugate |
-| $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2=\lambda_+\lambda_-$ | Norm, signature $(1,1)$ |
+| $\langle Q\rangle_{*}=Q\bar Q=q^2-q'^2=\lambda_+\lambda_-$ | Norm, inertia $(1,1)$ |
 | $2q=\lambda_++\lambda_-$ | Doubled real part |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | Standard idempotents; the eigenprojections when $q'\neq0$ |
 | $Q_\pm=q\pm q'$ | Idempotent coordinates, equal to the eigenvalues: $Q_\pm=\lambda_\pm$ |

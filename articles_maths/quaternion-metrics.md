@@ -8,13 +8,13 @@ $$
 Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q) = \mathrm{Sc}\bigl((g\tilde q)^2\bigr).
 $$
 
-This article studies that form, which is called here a **quaternion metric**. It is an indefinite form on $\mathbb{H}$, non-degenerate, of signature $(1,3)$ for every nonzero $g$, and it is the interval form that the source of the construction proposes as a generalisation of the Lorentzian quadratic form that keeps Hamilton's multiplication rules intact, in place of the Riemannian strategy of varying them. It is not the quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and it is not a distance; the word *metric* is used in its differential-geometric sense of a quadratic form on a space of displacements, and the name records that the form is built from a quaternion.
+This article studies that form, which is called here a **quaternion metric**. It is an indefinite form on $\mathbb{H}$, non-degenerate, of inertia $(1,3)$ for every nonzero $g$, and it is the interval form that the source of the construction proposes as a generalisation of the Lorentzian quadratic form that keeps Hamilton's multiplication rules intact, in place of the Riemannian strategy of varying them. It is not the quaternion norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$ and it is not a distance; the word *metric* is used in its differential-geometric sense of a quadratic form on a space of displacements, and the name records that the form is built from a quaternion.
 
-The article turns on one identity: $Q_g = \omega\circ L_g$, where $\omega$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$. Everything follows from it. The form is non-degenerate of signature $(1,3)$ for every nonzero $g$; all the forms of the family are isometric to one another; the family is the image of the single form $\omega$ under precomposition with the left multiplications; and the isometry group of $Q_g$ is the conjugate of the Lorentz group by $L_g$. The Gram matrix of $Q_g$ is computed in closed form and its determinant is $-\langle g\rangle_{\natural}^4$, so the non-degeneracy is visible a second time, quantitatively.
+The article turns on one identity: $Q_g = \omega\circ L_g$, where $\omega$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$. Everything follows from it. The form is non-degenerate of inertia $(1,3)$ for every nonzero $g$; all the forms of the family are isometric to one another; the family is the image of the single form $\omega$ under precomposition with the left multiplications; and the isometry group of $Q_g$ is the conjugate of the Lorentz group by $L_g$. The Gram matrix of $Q_g$ is computed in closed form and its determinant is $-\langle g\rangle_{\natural}^4$, so the non-degeneracy is visible a second time, quantitatively.
 
 The treatment is mathematical throughout. No physical object is introduced, no state of a physical system is named, and no physical interpretation is invoked. The Lorentz group of the form $\omega$ is named and its corpus home is cited; nothing of it is re-derived here.
 
-The bilinear and quadratic-form vocabulary, the polarisation and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the algebra, the conjugate and the scalar–vector decomposition are from *Quaternion Algebra*; the norm, the inner product and the group of invertibles are from *Quaternion Norm and Invertibility*; the forms with values in an algebra that are the norms are from *Quadratic Forms over Algebras and Norms*; the determinant of the left regular representation is pointed to in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the split-quaternion form of signature $(2,2)$ used for contrast is from *Split-Quaternion Norm and Invertibility*.
+The bilinear and quadratic-form vocabulary, the polarisation and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the algebra, the conjugate and the scalar–vector decomposition are from *Quaternion Algebra*; the norm, the inner product and the group of invertibles are from *Quaternion Norm and Invertibility*; the forms with values in an algebra that are the norms are from *Quadratic Forms over Algebras and Norms*; the determinant of the left regular representation is pointed to in *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_{\mathbb{H}_L}$*; the split-quaternion form of inertia $(2,2)$ used for contrast is from *Split-Quaternion Norm and Invertibility*.
 
 Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ and $\vec e_k^2 = -e_t$. A quaternion is $\tilde q = q_te_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$, with **scalar part** $\mathrm{Sc}\,\tilde q = q_t$ and **vector part** $\vec q = \mathrm{Vect}\,\tilde q = q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$; the conjugate is $\tilde{q}^{\natural} = q_te_t - \vec q$, the quaternion norm is $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural} = q_t^2+q_x^2+q_y^2+q_z^2$, and the modulus is $|\tilde q| = \sqrt{\langle\tilde q\rangle_{\natural}}$. The four real numbers $q_t,q_x,q_y,q_z$ form the coordinate vector of $\tilde q$, also written $q = (q_t,q_x,q_y,q_z)$; the meaning is clear from the context. The multiplication is written without a dot, and the scalar part is written $\mathrm{Sc}$ and the vector part $\mathrm{Vect}$.
 
@@ -38,9 +38,9 @@ $$
 
 It is real-valued and symmetric by construction, and it is alternating on the vector subspace: for pure $\vec q_1,\vec q_2$ one has $\vec q_1\vec q_2+\vec q_2\vec q_1 = -2\langle\vec q_1,\vec q_2\rangle e_t$.
 
-### Signature and Isometry Group
+### Inertia and Isometry Group
 
-**Proposition.** The Minkowski form is non-degenerate of signature $(1,3)$. In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its Gram matrix is
+**Proposition.** The Minkowski form is non-degenerate of inertia $(1,3)$. In the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ its Gram matrix is
 
 $$
 \eta = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \\ 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & -1 \end{pmatrix},
@@ -48,7 +48,7 @@ $$
 
 and $\det\eta = -1$.
 
-*Proof.* The coefficients of $\omega$ in the coordinates are $1,-1,-1,-1$, so the Gram matrix of the polar form is the diagonal matrix displayed; it is invertible, with the determinant $-1$. One positive and three negative diagonal entries give the signature $(1,3)$.
+*Proof.* The coefficients of $\omega$ in the coordinates are $1,-1,-1,-1$, so the Gram matrix of the polar form is the diagonal matrix displayed; it is invertible, with the determinant $-1$. One positive and three negative diagonal entries give the inertia $(1,3)$.
 
 **Definition.** The **isometry group** of $\omega$ is
 
@@ -56,7 +56,7 @@ $$
 O(\omega) = \{T \in GL_4(\mathbb{R}) : \omega(T\tilde q) = \omega(\tilde q)\ \text{for every }\tilde q\} = O(1,3),
 $$
 
-the orthogonal group of a form of signature $(1,3)$.
+the orthogonal group of a form of inertia $(1,3)$.
 
 ### The Left and Right Multiplication Operators
 
@@ -149,7 +149,7 @@ with $I_3$ the $3\times3$ identity and $\vec g$ the column of the three vector c
 
 ### Examples
 
-| $g$ | $M(g)$ | signature | reading |
+| $g$ | $M(g)$ | inertia | reading |
 |---|---|---|---|
 | $e_t$ | $\mathrm{diag}(1,-1,-1,-1)$ | $(1,3)$ | the Minkowski form of the basis |
 | $\vec e_k$ | $\mathrm{diag}(-1,-1,\dots,+1,\dots,-1)$ with the $+1$ in the $k$-th place | $(1,3)$ | the coordinate $q_k$ plays the role of time |
@@ -158,17 +158,17 @@ with $I_3$ the $3\times3$ identity and $\vec g$ the column of the three vector c
 
 For $g = e_t$ the form is $\omega$ itself, $Q_{e_t}(\tilde q) = q_t^2-q_x^2-q_y^2-q_z^2$, and the Gram matrix is $\eta$. For $g = \vec e_k$ the form is $\omega$ with the scalar coordinate exchanged with $q_k$: for $g=\vec e_x$ one has $Q_{\vec e_x}(\tilde q) = -q_t^2+q_x^2-q_y^2-q_z^2$. For $g = e_t+\vec e_x$ the matrix has $s=0$, and the vectors $e_t$ and $\vec e_x$ are null for the form: $Q_{e_t+\vec e_x}(e_t) = Q_{e_t+\vec e_x}(\vec e_x) = 0$.
 
-## Non-Degeneracy, Signature and Determinant
+## Non-Degeneracy, Inertia and Determinant
 
 ### The Isometry Theorem
 
 **Theorem.** For every nonzero $g$ the map $L_g$ is a linear isometry from $(\mathbb{H},Q_g)$ onto $(\mathbb{H},\omega)$. Consequently:
 
-1. $Q_g$ is non-degenerate and of signature $(1,3)$ for every nonzero $g$;
+1. $Q_g$ is non-degenerate and of inertia $(1,3)$ for every nonzero $g$;
 2. any two forms of the family are isometric, one to the other, through $L_p^{-1}L_q$;
 3. the isometry group of $Q_g$ is $O(Q_g) = L_g^{-1}O(\omega)L_g$, a conjugate of the Lorentz group.
 
-*Proof.* By the identity of the construction, $Q_g(\tilde q) = \omega(L_g\tilde q)$ for every $\tilde q$, so $L_g$ pulls $Q_g$ back to $\omega$; it is bijective for $g\neq0$ by the invertibility of the left multiplication, so it is an isometry onto. An isometry of quadratic forms preserves non-degeneracy and signature, and the signature of $\omega$ is $(1,3)$; this is (1). For (2), let $p,q\neq0$ and put $T = L_q^{-1}L_p$, a linear bijection; then for every $\tilde q$ one has $Q_q(T\tilde q) = \omega(L_qT\tilde q) = \omega(L_p\tilde q) = Q_p(\tilde q)$, so $T$ is an isometry from $(\mathbb{H},Q_p)$ onto $(\mathbb{H},Q_q)$. For (3), an isometry of $Q_g$ corresponds under $L_g$ to an isometry of $\omega$, so $O(Q_g) = L_g^{-1}O(\omega)L_g$.
+*Proof.* By the identity of the construction, $Q_g(\tilde q) = \omega(L_g\tilde q)$ for every $\tilde q$, so $L_g$ pulls $Q_g$ back to $\omega$; it is bijective for $g\neq0$ by the invertibility of the left multiplication, so it is an isometry onto. An isometry of quadratic forms preserves non-degeneracy and inertia, and the inertia of $\omega$ is $(1,3)$; this is (1). For (2), let $p,q\neq0$ and put $T = L_q^{-1}L_p$, a linear bijection; then for every $\tilde q$ one has $Q_q(T\tilde q) = \omega(L_qT\tilde q) = \omega(L_p\tilde q) = Q_p(\tilde q)$, so $T$ is an isometry from $(\mathbb{H},Q_p)$ onto $(\mathbb{H},Q_q)$. For (3), an isometry of $Q_g$ corresponds under $L_g$ to an isometry of $\omega$, so $O(Q_g) = L_g^{-1}O(\omega)L_g$.
 
 ### The Determinant of the Gram Matrix
 
@@ -224,7 +224,7 @@ The cone of $\omega$ is the set on which the interval $t^2-\vec q\cdot\vec q$ va
 
 ### The Definite Norm Is Not in the Family
 
-The quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2$ of *Quaternion Norm and Invertibility* is positive definite, and every form of the present family is of signature $(1,3)$ by the isometry theorem; hence the norm is not a quaternion metric of this family, for any $g$. The two objects are of different kinds: the norm is the multiplicative form of the division algebra, while a quaternion metric is the pullback of the interval form by a left multiplication and is not multiplicative. The Gram matrix of the norm in the basis is the identity, and the family $Q_g$ contains only forms isometric to $\omega$.
+The quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2$ of *Quaternion Norm and Invertibility* is positive definite, and every form of the present family is of inertia $(1,3)$ by the isometry theorem; hence the norm is not a quaternion metric of this family, for any $g$. The two objects are of different kinds: the norm is the multiplicative form of the division algebra, while a quaternion metric is the pullback of the interval form by a left multiplication and is not multiplicative. The Gram matrix of the norm in the basis is the identity, and the family $Q_g$ contains only forms isometric to $\omega$.
 
 ### The Forms with Values in an Algebra
 
@@ -232,11 +232,11 @@ The quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2+q_x^2+q_y^2+q_z^2
 
 ### The Other Four-Dimensional Forms of the Corpus
 
-| algebra | form | values | signature | in the family $Q_g$? |
+| algebra | form | values | inertia | in the family $Q_g$? |
 |---|---|---|---|---|
 | $\mathbb{H}$ | quaternion norm $\langle\tilde q\rangle_{\natural}=\tilde q\tilde{q}^{\natural}$ | $\mathbb{R}$ | $(4,0)$ | no, definite |
 | $\mathbb{H}$ | quaternion metric $Q_g$, $g\neq0$ | $\mathbb{R}$ | $(1,3)$ | yes, the family itself |
-| $\mathbb{H}_{\mathrm{spl}}$ | determinant form | $\mathbb{R}$ | $(2,2)$ | no, wrong algebra and signature |
+| $\mathbb{H}_{\mathrm{spl}}$ | determinant form | $\mathbb{R}$ | $(2,2)$ | no, wrong algebra and inertia |
 
 The family of quaternion metrics is a four-parameter family inside the ten-dimensional space of symmetric real forms on $\mathbb{R}^4$, and it is a single isometry class inside it.
 
@@ -244,7 +244,7 @@ The family of quaternion metrics is a four-parameter family inside the ten-dimen
 
 A quaternion metric is the real quadratic form $Q_g(\tilde q) = \mathrm{Sc}(g\tilde qg\tilde q) = \mathrm{Sc}((g\tilde q)^2)$ determined by a nonzero quaternion $g$. The identity $Q_g = \omega\circ L_g$, where $\omega(\tilde q) = \mathrm{Sc}(\tilde q^2) = q_t^2-q_x^2-q_y^2-q_z^2$ is the Minkowski form of the algebra and $L_g$ is left multiplication by $g$, is the core of the construction: it exhibits $Q_g$ as the interval form read at the left translate $g\tilde q$, and it makes $L_g$ an isometry from $(\mathbb{H},Q_g)$ onto $(\mathbb{H},\omega)$.
 
-It follows that every quaternion metric is non-degenerate of signature $(1,3)$; that any two of them are isometric, so that the family is a single isometry class; and that the isometry group of $Q_g$ is the conjugate $L_g^{-1}O(1,3)L_g$ of the Lorentz group. The form depends on $g$ only through the line $\mathbb{R}g$ up to the sign of $g$ and only up to a positive scale, so that the family is a cone over the forms of the unit sphere modulo sign, that is over $\mathbb{R}P^3$.
+It follows that every quaternion metric is non-degenerate of inertia $(1,3)$; that any two of them are isometric, so that the family is a single isometry class; and that the isometry group of $Q_g$ is the conjugate $L_g^{-1}O(1,3)L_g$ of the Lorentz group. The form depends on $g$ only through the line $\mathbb{R}g$ up to the sign of $g$ and only up to a positive scale, so that the family is a cone over the forms of the unit sphere modulo sign, that is over $\mathbb{R}P^3$.
 
 The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g_0^2-|\vec g|^2$ and $-g_0^2-|\vec g|^2+2g_k^2$, its off-diagonal entries are $-2g_0g_k$ against the time direction and $2g_jg_k$ against two space directions, and its determinant is $-\langle g\rangle_{\natural}^4$, nowhere zero off the origin. The null cone of $Q_g$ is the inverse image of the standard cone under $L_g$; it is a non-degenerate quadratic cone through the origin and it is not the zero-divisor set of the algebra, which consists of the origin alone.
 
@@ -275,7 +275,7 @@ The Gram matrix of $Q_g$ is computed in closed form: its diagonal entries are $g
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the product, the conjugate and the interpretation of the scalar part of a square as $q_t^2-|\vec q|^2$.
 - Douglas B. Sweetser, *Doing Physics with Quaternions* (2005), section "A New Idea for Metrics", for the construction $Q_g(\tilde q)=\mathrm{Sc}(g\tilde qg\tilde q)$ and the proposal to generalise the interval by it rather than by a change of the multiplication rules.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd edition, 2001), for the Minkowski form, its orthogonal group and the Clifford reading of the Lorentz transformations.
-- Serge Lang, *Algebra* (Springer, revised third edition, 2002), for the theory of quadratic forms, polarisation, non-degeneracy and the Witt decomposition used implicitly in the comparison of the signatures.
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the classification of forms by their signature over the real numbers.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the identification of the Lorentz group of a form of signature $(1,3)$ with the unit quaternions.
+- Serge Lang, *Algebra* (Springer, revised third edition, 2002), for the theory of quadratic forms, polarisation, non-degeneracy and the Witt decomposition used implicitly in the comparison of the inertias.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the classification of forms by their inertia over the real numbers.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the identification of the Lorentz group of a form of inertia $(1,3)$ with the unit quaternions.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the four-dimensional algebras, their norms and the comparison of their forms.

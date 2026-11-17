@@ -6,7 +6,7 @@
 The algebra article defined $\mathbb{H}_{\mathrm{spl}}$, its three involutions, its split-quaternion norm and its distinguished real subspaces $S$, $V$, $\mathbb{C}_{\mathrm{spl},2}$ and $\mathbb{C}_{\mathrm{spl},3}$. This article describes the **algebraic realizations** of $\mathbb{H}_{\mathrm{spl}}$ that are not the subject of a dedicated article of their own:
 
 1. **Clifford algebra representation.** A split-quaternion as an element of the Clifford algebra $\mathrm{Cl}_{1,1}$, so that the three involutions of the algebra are the standard Clifford involutions.
-2. **Clifford module representation.** The algebra acting on the split-complex planes and on its two-component module, the split signature analogue of the spinor representation.
+2. **Clifford module representation.** The algebra acting on the split-complex planes and on its two-component module, the split inertia analogue of the spinor representation.
 3. **Relations among the split-complex and matrix models.** The identification of the Clifford, split-complex and matrix pictures of the same element.
 
 The remaining realizations are the subjects of their own articles:
@@ -34,7 +34,7 @@ with $q_t = \operatorname{Sc}(\tilde q)$ the scalar part and $q_x \vec e_x + q_y
 
 ## The Clifford Algebra Representation
 
-**Theorem.** The split-quaternion algebra is isomorphic to the Clifford algebra $\mathrm{Cl}_{1,1}$ of the form of signature $(1,1)$:
+**Theorem.** The split-quaternion algebra is isomorphic to the Clifford algebra $\mathrm{Cl}_{1,1}$ of the form of inertia $(1,1)$:
 
 $$
 \boxed{\;
@@ -62,7 +62,7 @@ The **even subalgebra** $\mathrm{Cl}_{1,1}^+$ has basis $1, f_1 f_2 = \vec e_y \
 
 ### The Split-Quaternion Norm and the Clifford Norm
 
-The **Clifford norm** $\tilde q \mapsto \tilde q\tilde{q}^{\natural}$ is the split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ of signature $(2,2)$; it agrees with the split-quaternion norm and is the standard norm on $\mathrm{Cl}_{1,1}$. The norm-one elements $U = \{\, \tilde u : \tilde u \tilde u^{\natural} = 1 \,\}$ are the group of **versors**, of dimension three, a proper subgroup of the group of invertibles; they act on $V$ by the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*. The Clifford condition that $\tilde u \tilde u^{\natural}$ be a scalar is automatic here, since $\tilde u \tilde u^{\natural} = \langle\tilde u\rangle_{\natural}$ for every $\tilde u$, so the whole group of invertibles acts on $V$ and the kernel of the action is the scalar line.
+The **Clifford norm** $\tilde q \mapsto \tilde q\tilde{q}^{\natural}$ is the split-quaternion norm $\langle\tilde q\rangle_{\natural} = q_t^2 + q_x^2 - q_y^2 - q_z^2$ of inertia $(2,2)$; it agrees with the split-quaternion norm and is the standard norm on $\mathrm{Cl}_{1,1}$. The norm-one elements $U = \{\, \tilde u : \tilde u \tilde u^{\natural} = 1 \,\}$ are the group of **versors**, of dimension three, a proper subgroup of the group of invertibles; they act on $V$ by the Lorentz action of *Split-Quaternion Rotations and the Lorentz Group*. The Clifford condition that $\tilde u \tilde u^{\natural}$ be a scalar is automatic here, since $\tilde u \tilde u^{\natural} = \langle\tilde u\rangle_{\natural}$ for every $\tilde u$, so the whole group of invertibles acts on $V$ and the kernel of the action is the scalar line.
 
 ## The Clifford Module Structure
 
@@ -102,40 +102,40 @@ The first two rows are the Clifford and matrix models of *Split-Quaternion Matri
 
 ## Relation to the Representations of $\mathbb{B}$
 
-For the biquaternion algebra, the Clifford realization $\mathbb{B}\cong\mathrm{Cl}_{1,3}^+$ is *Biquaternion Versors and the Orthogonal Group*, the conjugation action is *Biquaternion Automorphisms and Derivations*, and the spinor module of $\mathbb{B}$ is developed in *The Category of Modules* and *Spin Representations and Clifford Modules with Inner Conjugation*. The split-quaternion list is shorter and differs in kind. First, the Clifford model here is $\mathrm{Cl}_{1,1}$, of split signature, in place of the definite $\mathrm{Cl}_{1,3}^+$; the involutions of the algebra become the standard Clifford involutions without any complex structure. Second, the simple module is real two-dimensional, in place of the complex two-dimensional spinor module of $\mathbb{B}$, and the natural module structure is the direct sum of two minimal left ideals from the idempotents $\tilde\pi_{1,2}$, which are non-central here whereas in $\mathbb{B}$ the corresponding idempotents are central. Third, the conjugation-action realization of $\mathbb{B}$ is, for $\mathbb{H}_{\mathrm{spl}}$, the adjoint and multiplication-operator material of *Split-Quaternion Rotations and the Lorentz Group*, and is not repeated here. None of the biquaternion-specific structures — the central unit $i$, the Hermitian pairing, the chiral spinor halves — appears in the split-quaternion realization.
+For the biquaternion algebra, the Clifford realization $\mathbb{B}\cong\mathrm{Cl}_{1,3}^+$ is *Biquaternion Versors and the Orthogonal Group*, the conjugation action is *Biquaternion Automorphisms and Derivations*, and the spinor module of $\mathbb{B}$ is developed in *The Category of Modules* and *Spin Representations and Clifford Modules with Inner Conjugation*. The split-quaternion list is shorter and differs in kind. First, the Clifford model here is $\mathrm{Cl}_{1,1}$, of split inertia, in place of the definite $\mathrm{Cl}_{1,3}^+$; the involutions of the algebra become the standard Clifford involutions without any complex structure. Second, the simple module is real two-dimensional, in place of the complex two-dimensional spinor module of $\mathbb{B}$, and the natural module structure is the direct sum of two minimal left ideals from the idempotents $\tilde\pi_{1,2}$, which are non-central here whereas in $\mathbb{B}$ the corresponding idempotents are central. Third, the conjugation-action realization of $\mathbb{B}$ is, for $\mathbb{H}_{\mathrm{spl}}$, the adjoint and multiplication-operator material of *Split-Quaternion Rotations and the Lorentz Group*, and is not repeated here. None of the biquaternion-specific structures — the central unit $i$, the Hermitian pairing, the chiral spinor halves — appears in the split-quaternion realization.
 
 ## The Role of Choices
 
 The realizations above depend on choices, which must be recorded because they fix the correspondence between the abstract algebra and the concrete model.
 
-- **The signature.** The identification $\mathbb{H}_{\mathrm{spl}} \cong \mathrm{Cl}_{1,1}$ uses the generators with squares $+1$ and $-1$. Because $\mathrm{Cl}_{1,1} \cong \mathrm{Cl}_{2,0} \cong M_2(\mathbb{R})$ as algebras, the same algebra also arises as a Clifford algebra of definite signature; the *reflection* of the form used here is what makes $\vec e_y^2 = +1$ rather than $-1$, and it is the reflection that produces the zero divisors. Either convention describes the same algebra, but the split signature is the one in which the quadratic form is indefinite and the isotropic structure is visible.
+- **The inertia.** The identification $\mathbb{H}_{\mathrm{spl}} \cong \mathrm{Cl}_{1,1}$ uses the generators with squares $+1$ and $-1$. Because $\mathrm{Cl}_{1,1} \cong \mathrm{Cl}_{2,0} \cong M_2(\mathbb{R})$ as algebras, the same algebra also arises as a Clifford algebra of definite inertia; the *reflection* of the form used here is what makes $\vec e_y^2 = +1$ rather than $-1$, and it is the reflection that produces the zero divisors. Either convention describes the same algebra, but the split inertia is the one in which the quadratic form is indefinite and the isotropic structure is visible.
 - **The naming of the generators.** The assignment $f_1 = \vec e_y$, $f_2 = \vec e_x$ is forced by the requirement that $f_1^2 = +1$; the opposite assignment interchanges the two split-complex planes $\mathbb{C}_{\mathrm{spl},2}$ and $\mathbb{C}_{\mathrm{spl},3}$ and the roles of $\tilde\pi_1$ and $\tilde\pi_2$. The basis $1, \vec e_x, \vec e_y, \vec e_z$ of the algebra article is held fixed throughout the corpus.
 - **The matrix model.** The matrices displayed for $\vec e_x, \vec e_y, \vec e_z$ are one choice among several, related by conjugation; the invariants — the trace, the determinant, and the split-quaternion norm — are independent of the choice, while the images of the idempotents and of the planes depend on it.
 
 ## Summary
 
-The split-quaternion algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$ of split signature, isomorphic to $M_2(\mathbb{R})$; the isomorphism sends the Clifford generators $f_1, f_2$ to $\vec e_y, \vec e_x$. Under this identification the principal involution $\alpha$ is the grade involution, the reversal $\rho$ is the reversal anti-automorphism, and the conjugation ${}^{\natural}$ is the Clifford conjugation $\alpha\rho$. The even subalgebra $\mathrm{Cl}_{1,1}^+$ is spanned by $1$ and $-\vec e_z$ and is the split-complex algebra $\mathbb{C}_{\mathrm{spl},3}$; the split-quaternion norm is the Clifford norm of signature $(2,2)$.
+The split-quaternion algebra is the Clifford algebra $\mathrm{Cl}_{1,1}$ of split inertia, isomorphic to $M_2(\mathbb{R})$; the isomorphism sends the Clifford generators $f_1, f_2$ to $\vec e_y, \vec e_x$. Under this identification the principal involution $\alpha$ is the grade involution, the reversal $\rho$ is the reversal anti-automorphism, and the conjugation ${}^{\natural}$ is the Clifford conjugation $\alpha\rho$. The even subalgebra $\mathrm{Cl}_{1,1}^+$ is spanned by $1$ and $-\vec e_z$ and is the split-complex algebra $\mathbb{C}_{\mathrm{spl},3}$; the split-quaternion norm is the Clifford norm of inertia $(2,2)$.
 
-As a module over itself the algebra splits as the direct sum of the two minimal left ideals $\mathbb{H}_{\mathrm{spl}}\tilde\pi_{1,2}$ built from the idempotents $\tilde\pi_{1,2} = \tfrac12(1\pm \vec e_y)$, each the unique simple module of real dimension two; each split-complex plane makes the algebra a free module of rank two over $\mathbb{C}_{\mathrm{spl}}$. The Clifford, matrix and split-complex models of an element are tabulated above, and the realization differs from the biquaternion one in signature ($\mathrm{Cl}_{1,1}$ in place of $\mathrm{Cl}_{1,3}^+$), in the reality of the simple module, and in the non-centrality of the idempotents. The realizations depend on the signature convention, the naming of the generators and the matrix choice, all recorded above; the invariants are independent of the choices.
+As a module over itself the algebra splits as the direct sum of the two minimal left ideals $\mathbb{H}_{\mathrm{spl}}\tilde\pi_{1,2}$ built from the idempotents $\tilde\pi_{1,2} = \tfrac12(1\pm \vec e_y)$, each the unique simple module of real dimension two; each split-complex plane makes the algebra a free module of rank two over $\mathbb{C}_{\mathrm{spl}}$. The Clifford, matrix and split-complex models of an element are tabulated above, and the realization differs from the biquaternion one in inertia ($\mathrm{Cl}_{1,1}$ in place of $\mathrm{Cl}_{1,3}^+$), in the reality of the simple module, and in the non-centrality of the idempotents. The realizations depend on the inertia convention, the naming of the generators and the matrix choice, all recorded above; the invariants are independent of the choices.
 
 ## Summary of Notation
 
 | Symbol | Meaning | Article |
 |---|---|---|
 | $\mathbb{H}_{\mathrm{spl}}$ | the split-quaternion algebra | *Split-Quaternion Algebra* |
-| $\mathrm{Cl}_{1,1}$ | the Clifford algebra of signature $(1,1)$, $\cong M_2(\mathbb{R})$ | this article |
+| $\mathrm{Cl}_{1,1}$ | the Clifford algebra of inertia $(1,1)$, $\cong M_2(\mathbb{R})$ | this article |
 | $f_1, f_2$ | Clifford generators, $f_1^2 = +1$, $f_2^2 = -1$ | this article |
 | $\mathrm{Cl}_{1,1}^+$ | the even subalgebra, $\cong \mathbb{C}_{\mathrm{spl}}$ | this article |
 | $\alpha, \rho, {}^{\natural}$ | grade involution, reversal, Clifford conjugation | *Split-Quaternion Subspaces and the Involutions* |
 | $\tilde\pi_{1,2} = \tfrac12(1\pm \vec e_y)$ | the two idempotents and the minimal left ideals | *Split-Quaternion Idempotents and Projections* |
 | $\mathbb{H}_{\mathrm{spl}} \tilde\pi_{1,2}$ | the minimal left ideals | *Split-Quaternion Ideals and Peirce Decomposition* |
-| $\langle\tilde q\rangle_{\natural}$ | the split-quaternion norm / Clifford norm, signature $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
+| $\langle\tilde q\rangle_{\natural}$ | the split-quaternion norm / Clifford norm, inertia $(2,2)$ | *Split-Quaternion Norm and Invertibility* |
 | $\mathsf{M}_2$ | the $2\times2$ real matrix model | *Split-Quaternion Matrix Element Representations* |
 | $\mathbb{C}_{\mathrm{spl},2}, \mathbb{C}_{\mathrm{spl},3}$ | the split-complex planes | *Split-Quaternion Split-Complex Subspaces* |
 
 ## Further Reading
 
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the isomorphism $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, the Clifford involutions and the Clifford group of versors.
-- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the low-dimensional Clifford algebra identifications and their signature choices.
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the classification of the real Clifford algebras and the role of the signature.
+- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the low-dimensional Clifford algebra identifications and their inertia choices.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the classification of the real Clifford algebras and the role of the inertia.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the simple modules over $M_2(\mathbb{R})$ and the idempotent decomposition of the algebra over itself.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Over $\mathbb{R}$ the involutions of the first kind fall into two types, the transpose and the symplectic, and their fixed spaces have the same dimension, $n(n+1)/2$, while one is a Jordan algebra and the other a Lie algebra.** The two types are told apart by a sign in the product rule, and the real base field adds what the complex field loses: the signature of the form behind the involution, and with it the definiteness of the trace form on one fixed space and its indefiniteness on the other.
+**Over $\mathbb{R}$ the involutions of the first kind fall into two types, the transpose and the symplectic, and their fixed spaces have the same dimension, $n(n+1)/2$, while one is a Jordan algebra and the other a Lie algebra.** The two types are told apart by a sign in the product rule, and the real base field adds what the complex field loses: the inertia of the form behind the involution, and with it the definiteness of the trace form on one fixed space and its indefiniteness on the other.
 
 The article defines an involution of the first kind, proves that every such involution comes from a nondegenerate bilinear form, classifies the forms into the symmetric and the alternating case, computes the two fixed spaces, proves that one is a Jordan algebra and the other a Lie algebra, and states exactly what complexification does to the classification. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* and *The Split Real Form: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$*. It prepares *The Two Halves: Symmetric and Antisymmetric* and *The Two Classes Compared: $\operatorname{Sym}_n$ and $\mathfrak{sp}_n$ Have the Same Dimension*.
 
@@ -74,7 +74,7 @@ which is the image of $\operatorname{Sym}_n$ under the invertible map $S\mapsto 
 
 **The two $-1$ spaces also have equal dimension, $n(n-1)/2$.** The anti-fixed space of the transpose is $\operatorname{Skew}_n$; the anti-fixed space of $\sigma_J$ is $\{X:JX\in\operatorname{Skew}_n\}=J^{-1}\operatorname{Skew}_n$. So the dimension count does not separate the two classes at all: only the algebraic nature of the fixed space does.
 
-**The two involutions are distinguished by the trace form on their fixed spaces.** On $\operatorname{Sym}_n$ the form $\operatorname{tr}(XY)$ is positive definite and on $\operatorname{Skew}_n$ negative definite. On $\mathfrak{sp}_n$ the same form is indefinite: computed on a basis of $\mathfrak{sp}_n$ it has signature $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$. So the restriction of the trace form separates the two classes, while the dimension does not.
+**The two involutions are distinguished by the trace form on their fixed spaces.** On $\operatorname{Sym}_n$ the form $\operatorname{tr}(XY)$ is positive definite and on $\operatorname{Skew}_n$ negative definite. On $\mathfrak{sp}_n$ the same form is indefinite: computed on a basis of $\mathfrak{sp}_n$ it has inertia $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$. So the restriction of the trace form separates the two classes, while the dimension does not.
 
 ## One Jordan Algebra and One Lie Algebra
 
@@ -116,19 +116,19 @@ so the fixed space is closed under the commutator and the anti-fixed space under
 
 **Complexification keeps the two types.** The formulas $\sigma_B(X)=B^{-1}X^{\mathsf T}B$ and $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$ make sense over any field, and conjugation by an invertible matrix preserves the sign in the product rule. The transpose has the sign $+$ and $\sigma_J$ the sign $-$, so the two are not conjugate over $\mathbb{C}$ either: the sign is an invariant of the conjugacy class.
 
-**What complexification collapses is the signature.** Over $\mathbb{C}$ a nondegenerate symmetric form is determined up to congruence by its rank, so every orthogonal involution is conjugate to the transpose. Over $\mathbb{R}$ Sylvester's law gives the signature $(p,q)$ with $p+q=n$, and
+**What complexification collapses is the inertia.** Over $\mathbb{C}$ a nondegenerate symmetric form is determined up to congruence by its rank, so every orthogonal involution is conjugate to the transpose. Over $\mathbb{R}$ Sylvester's law gives the inertia $(p,q)$ with $p+q=n$, and
 
 $$
 \sigma_{\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_q)}(X)=\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_q)\,X^{\mathsf T}\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_q)
 $$
 
-is conjugate to the transpose only when $p=n$ or $q=n$. So the transpose type is a single class over $\mathbb{C}$ and a signature's worth of classes over $\mathbb{R}$, and this refinement is a real phenomenon that disappears on complexification.
+is conjugate to the transpose only when $p=n$ or $q=n$. So the transpose type is a single class over $\mathbb{C}$ and an inertia's worth of classes over $\mathbb{R}$, and this refinement is a real phenomenon that disappears on complexification.
 
 **Definiteness exists only over $\mathbb{R}$.** The form $\operatorname{tr}(XY)$ is positive definite on $\operatorname{Sym}_n$ over $\mathbb{R}$ because it is a sum of squares, and that statement has no meaning over $\mathbb{C}$, where no nonzero vector has a sign. So the definite fixed space of the transpose, and the indefinite fixed space of $\sigma_J$, are visible only in the real category.
 
 ## Summary
 
-An involution of the first kind is an $\mathbb{R}$-linear anti-automorphism of order two, and every such involution is $\sigma_B(X)=B^{-1}X^{\mathsf T}B$ for a nondegenerate form $B$ unique up to a scalar. Symmetric forms give the transpose type, alternating forms the symplectic type $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$, which needs even $n$. Both fixed spaces have dimension $n(n+1)/2$; $\operatorname{Sym}_n$ is a Jordan algebra and $\mathfrak{sp}_n$ is a Lie algebra, and both $-1$ spaces have dimension $n(n-1)/2$. The trace form is definite on $\operatorname{Sym}_n$ and indefinite on $\mathfrak{sp}_n$, with signature $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$. Over $\mathbb{C}$ the two types remain but each is a single class, because the signature of a symmetric form is no longer an invariant.
+An involution of the first kind is an $\mathbb{R}$-linear anti-automorphism of order two, and every such involution is $\sigma_B(X)=B^{-1}X^{\mathsf T}B$ for a nondegenerate form $B$ unique up to a scalar. Symmetric forms give the transpose type, alternating forms the symplectic type $\sigma_J(X)=-JX^{\mathsf T}J^{-1}$, which needs even $n$. Both fixed spaces have dimension $n(n+1)/2$; $\operatorname{Sym}_n$ is a Jordan algebra and $\mathfrak{sp}_n$ is a Lie algebra, and both $-1$ spaces have dimension $n(n-1)/2$. The trace form is definite on $\operatorname{Sym}_n$ and indefinite on $\mathfrak{sp}_n$, with inertias $(2,1)$, $(6,4)$, $(12,9)$ at $n=2,4,6$. Over $\mathbb{C}$ the two types remain but each is a single class, because the inertia of a symmetric form is no longer an invariant.
 
 ## Summary of Notation
 

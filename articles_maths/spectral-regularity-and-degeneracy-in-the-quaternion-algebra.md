@@ -101,7 +101,7 @@ a real line through the origin, closed in $\mathbb H$, of dimension one and meas
 | $\mathbb{H}_{\mathrm{spl}}$ | $-q_x^2+q_y^2+q_z^2$ | scalar line plus isotropic cone | yes | yes |
 | $\mathbb B$ | $Q_x^2+Q_y^2+Q_z^2$ | complex scalar line plus cone | yes | yes |
 
-**Theorem.** In $\mathbb H$ the vector form is positive definite, so $\vec q^2=0$ forces $\vec q=0$; the degenerate locus is the real axis and no point is defective. In $\mathbb{H}_{\mathrm{spl}}$ the form has signature $(2,1)$ and in $\mathbb B$ it is complex; in both, a nonzero isotropic vector gives $(\tilde q-q_t)^2=0$ with $\tilde q\ne q_t$, so the minimal polynomial is $(\lambda-q_t)^2$ and the element is defective.
+**Theorem.** In $\mathbb H$ the vector form is positive definite, so $\vec q^2=0$ forces $\vec q=0$; the degenerate locus is the real axis and no point is defective. In $\mathbb{H}_{\mathrm{spl}}$ the form has inertia $(2,1)$ and in $\mathbb B$ it is complex; in both, a nonzero isotropic vector gives $(\tilde q-q_t)^2=0$ with $\tilde q\ne q_t$, so the minimal polynomial is $(\lambda-q_t)^2$ and the element is defective.
 
 *Proof.* In each case $(\tilde q-q_t)^2=\vec q^2$. If $\vec q^2=0$ and $\vec q\ne0$, the minimal polynomial is $(\lambda-q_t)^2$, with a repeated root; if the form is definite, $\vec q^2=0$ forces $\vec q=0$ and the minimal polynomial is $\lambda-q_t$.
 

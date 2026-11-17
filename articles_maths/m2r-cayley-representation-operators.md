@@ -147,7 +147,7 @@ the array of the bilinear map $(x,y)\mapsto Qx\cdot Py$, which is the coefficien
 | size | $2\times2$ | $4\times4$ |
 | rank | $2$ if $QP\neq0$, else $0$ | $4$ if $QP\neq0$, else $0$ |
 | trace | $2\operatorname{Re}(QP)$ | $4\operatorname{Re}Q\operatorname{Re}P$ |
-| determinant | $N(QP)$ | $N(Q)^{2}N(P)^{2}$ |
+| the determinant of the image | $N(QP)$ | $N(Q)^{2}N(P)^{2}$ |
 | Frobenius norm$^{2}$ | $2N(QP)$ | $4N(Q)N(P)$ |
 | conformal? | yes | yes |
 

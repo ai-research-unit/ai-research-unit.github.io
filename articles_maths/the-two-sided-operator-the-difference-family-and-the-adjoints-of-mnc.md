@@ -6,7 +6,7 @@
 
 **The result in one line.** The transpose, the plain adjoint and the Hilbert–Schmidt adjoint act on the parameters and never exchange the two slots; the two-sided operator is a monoid under composition, positive only on its Hermitian part, of rank $(\operatorname{rank}A)^{2}$; and the difference family is a subspace of dimension $2n^{2}-1$ whose members are the intertwiners of the pair.
 
-**The contrast that matters.** For the quaternionic plain form at $n=2$ the plain adjoint **exchanges the two slots**, $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$, and the isometry group is the small $\{\pm\mathrm{Ad}_{\tilde Q}\}$ of complex dimension three. For the trace forms on $M_{n}(\mathbb{C})$ the adjoint **conjugates each slot separately** and the isometry group is the large $\mathrm{U}(n)\times\mathrm{U}(n)$ modulo the scalars. **The difference is the difference of the two bilinear forms, one indefinite of signature $(1,3)$ and one split or definite, and it is not a difference of dimension.**
+**The contrast that matters.** For the quaternionic plain form at $n=2$ the plain adjoint **exchanges the two slots**, $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$, and the isometry group is the small $\{\pm\mathrm{Ad}_{\tilde Q}\}$ of complex dimension three. For the trace forms on $M_{n}(\mathbb{C})$ the adjoint **conjugates each slot separately** and the isometry group is the large $\mathrm{U}(n)\times\mathrm{U}(n)$ modulo the scalars. **The difference is the difference of the two bilinear forms, one indefinite of inertia $(1,3)$ and one split or definite, and it is not a difference of dimension.**
 
 **Boundaries.** The products and the cone are *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*; the one-sided families are *The One-Sided Operators of $M_n(\mathbb{C})$*; the length is *The Length and the Two Ranks on $M_n(\mathbb{C})$*. At $n=2$ the plain adjoint and the types are *$M_4(\mathbb{C})$ Pauli Representation : Operators*, §*The Plain Adjoint and the Types*, and the Hermitian pair of the algebra is Part V. The Sylvester operator on $M_{4}(\mathbb{C})$ is *The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$*.
 
@@ -39,7 +39,7 @@ It is complex-bilinear, symmetric and non-degenerate, and it is not the Hilbert�
 $$
 \operatorname{Re}\operatorname{tr}(X^{\mathsf T}Y)=\operatorname{tr}(P^{\mathsf T}R)-\operatorname{tr}(Q^{\mathsf T}S),
 $$
-a form of signature $(n^{2},n^{2})$ on the $2n^{2}$ real dimensions; the isotropic vectors are the matrices with $X^{\mathsf T}X=0$, and they form a cone and not the single point $0$. **The definite form of the algebra is the Hilbert–Schmidt form and not this one.**
+a form of inertia $(n^{2},n^{2})$ on the $2n^{2}$ real dimensions; the isotropic vectors are the matrices with $X^{\mathsf T}X=0$, and they form a cone and not the single point $0$. **The definite form of the algebra is the Hilbert–Schmidt form and not this one.**
 
 ### The Plain Adjoint
 
@@ -130,7 +130,7 @@ of real dimension $2n^{2}-1$. At $n=2$ the real dimension is $7$, equal to the c
 
 ### The Contrast with the Biquaternion Form
 
-**The three forms.** At $n=2$ the algebra carries three forms that are easily confused: the quaternionic scalar-part form $\mathrm{Sc}(XY)$, of signature $(1,3)$; the trace bilinear form $\operatorname{tr}(X^{\mathsf T}Y)$; and the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$, definite. The operator articles of the biquaternion category use the first.
+**The three forms.** At $n=2$ the algebra carries three forms that are easily confused: the quaternionic scalar-part form $\mathrm{Sc}(XY)$, of inertia $(1,3)$; the trace bilinear form $\operatorname{tr}(X^{\mathsf T}Y)$; and the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$, definite. The operator articles of the biquaternion category use the first.
 
 **The three adjoints.** The first gives the slot exchange $(L_{\tilde Q}R_{\tilde Q_2})^{\approx}=L_{\tilde Q_2}R_{\tilde Q}$; the second gives the double conjugation of the transpose $L_{A^{\mathsf T}}R_{B^{\mathsf T}}$; the third gives $L_{A^{*}}R_{B^{*}}$. **The three formulas are three readings of the same cyclicity of the trace, applied to three different pairings, and none of them is the transpose of another.**
 
@@ -263,7 +263,7 @@ The difference family $L_{A}-R_{B}$ is the general Sylvester operator, with kern
 | Symbol | Meaning |
 |---|---|
 | $(L_{A}R_{B})^{\mathsf T}=L_{A^{\mathsf T}}R_{B^{\mathsf T}}$ | the transpose |
-| $\langle X,Y\rangle_{\mathrm{tr}}=\operatorname{tr}(X^{\mathsf T}Y)$ | the trace bilinear form, split of signature $(n^{2},n^{2})$ |
+| $\langle X,Y\rangle_{\mathrm{tr}}=\operatorname{tr}(X^{\mathsf T}Y)$ | the trace bilinear form, split of inertia $(n^{2},n^{2})$ |
 | ${}^{\approx}$ | the adjoint for the trace form, equal to the transpose |
 | $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{*}Y)$ | the Hilbert–Schmidt form, definite |
 | ${}^{\dagger}$ | the Hilbert–Schmidt adjoint, $L_{A^{*}}R_{B^{*}}$ |

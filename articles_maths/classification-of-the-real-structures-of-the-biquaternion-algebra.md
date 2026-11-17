@@ -18,7 +18,7 @@ $$
 
 The first four elements are the matrices $I$, $J$, $\sigma_1$ and $\sigma_3$ of the Pauli dictionary, and the second four are the quaternion base. Every computation below is performed on these two lists of four elements.
 
-**Scope.** This article develops the full structure of the two real forms of $\mathbb{B}$: their associative, Lie and Jordan subalgebras, their Killing forms and signatures, their involutions and intersections with the six subspaces, and the Lie groups attached to each Lie subalgebra. It recaps the classification from the companion article without reproving it; it cites [The Lie Correspondence and the Adjoint Representation](the-lie-correspondence-and-the-adjoint-representation.html) for the general theory of covers and central quotients; and it does not treat the complex form of $\mathbb{B}_{\mathbb{R}}$ or the operator level.
+**Scope.** This article develops the full structure of the two real forms of $\mathbb{B}$: their associative, Lie and Jordan subalgebras, their Killing forms and inertias, their involutions and intersections with the six subspaces, and the Lie groups attached to each Lie subalgebra. It recaps the classification from the companion article without reproving it; it cites [The Lie Correspondence and the Adjoint Representation](the-lie-correspondence-and-the-adjoint-representation.html) for the general theory of covers and central quotients; and it does not treat the complex form of $\mathbb{B}_{\mathbb{R}}$ or the operator level.
 
 The order is as follows. The next section recaps the two real structures and fixes the coordinates. The third, fourth and fifth sections treat the associative, Lie and Jordan layers of the split form; the sixth, seventh and eighth sections treat the same three layers of the compact form. The ninth section computes the involutions inside each form and the intersections with the six subspaces. The tenth section gives the Lie groups attached to each Lie subalgebra, in two tables, with the centre, the discrete central subgroups and the fundamental group of each quotient. The eleventh section compares the two forms; the twelfth states what the lattices and the groups do not determine; the thirteenth hands off.
 
@@ -70,7 +70,7 @@ $$
 e_y^2=-e_t,\qquad (i\vec e_x)^2=e_t,\qquad (i\vec e_z)^2=e_t,\qquad e_y(i\vec e_x)=-i\vec e_z,\qquad (i\vec e_x)(i\vec e_z)=e_y .
 $$
 
-Three elements of the traceless part have squares $-e_t$, $+e_t$, $+e_t$, and the signature $(2,1)$ of the trace form on the traceless part is visible in these three signs. This is why the Lie algebra of the split form has signature $(2,1)$ and the Lie algebra of the compact form has signature $(3,0)$; the computation is in the fourth and seventh sections.
+Three elements of the traceless part have squares $-e_t$, $+e_t$, $+e_t$, and the inertia $(2,1)$ of the trace form on the traceless part is visible in these three signs. This is why the Lie algebra of the split form has inertia $(2,1)$ and the Lie algebra of the compact form has inertia $(3,0)$; the computation is in the fourth and seventh sections.
 
 **The compact form in corpus coordinates.** The four elements $e_t,\vec e_x,\vec e_y,\vec e_z$ satisfy
 
@@ -203,9 +203,9 @@ $$
 K(X,Y)=4\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y),
 $$
 
-which is the restriction of the form of $\mathfrak{gl}(2,\mathbb{C})$ to a real form. Its values on the standard lists are collected in one table; the signatures are computed in the algebra itself, not in the ambient $\mathbb{B}_{\mathbb{R}}$.
+which is the restriction of the form of $\mathfrak{gl}(2,\mathbb{C})$ to a real form. Its values on the standard lists are collected in one table; the inertias are computed in the algebra itself, not in the ambient $\mathbb{B}_{\mathbb{R}}$.
 
-| algebra | dimension | $K$ | signature | radical |
+| algebra | dimension | $K$ | inertia | radical |
 |---|---|---|---|---|
 | $\mathfrak{sl}(2,\mathbb{R})$ | $3$ | $4\operatorname{tr}(XY)$ | $(2,1)$ | $0$ |
 | Borel $\mathfrak{b}=\mathbb{R}I\oplus\mathfrak{b}_0$ | $3$ | as restricted, rank $1$ | $(1,0)$ | $\operatorname{span}\{e_t,N\}$ |
@@ -213,11 +213,11 @@ which is the restriction of the form of $\mathfrak{gl}(2,\mathbb{C})$ to a real 
 | $\mathfrak{so}(2)$ | $1$ | $0$ | $(0)$ | the algebra |
 | $\mathfrak{gl}(2,\mathbb{R})$ | $4$ | $4\operatorname{tr}(XY)-2\operatorname{tr}X\operatorname{tr}Y$ | $(2,1)$ with a null line | $\mathbb{R}I$ |
 
-The three entries of the third row are worth a comment each. On $\mathfrak{sl}(2,\mathbb{R})$ the form is nondegenerate by simplicity, and its signature $(2,1)$ is computed on the basis $i\vec e_x,\vec e_y,i\vec e_z$, where the values are $8,-8,8$. On the Borel the form is degenerate: the algebra is solvable, so $K$ vanishes on the derived algebra, and the radical is the two-dimensional space spanned by $I$ and the nilpotent. On the abelian algebras the form is identically zero, which is the general fact that a solvable algebra has $K(\mathfrak{g},[\mathfrak{g},\mathfrak{g}])=0$ pushed to its extreme. The two nondegenerate rows are the semisimple content, and the degenerate rows carry no information beyond the dimension.
+The three entries of the third row are worth a comment each. On $\mathfrak{sl}(2,\mathbb{R})$ the form is nondegenerate by simplicity, and its inertia $(2,1)$ is computed on the basis $i\vec e_x,\vec e_y,i\vec e_z$, where the values are $8,-8,8$. On the Borel the form is degenerate: the algebra is solvable, so $K$ vanishes on the derived algebra, and the radical is the two-dimensional space spanned by $I$ and the nilpotent. On the abelian algebras the form is identically zero, which is the general fact that a solvable algebra has $K(\mathfrak{g},[\mathfrak{g},\mathfrak{g}])=0$ pushed to its extreme. The two nondegenerate rows are the semisimple content, and the degenerate rows carry no information beyond the dimension.
 
-**Remark (the biquaternion reading of the signature).** In the basis $i\vec e_x,\ \vec e_y,\ i\vec e_z$ of $\mathfrak{sl}(2,\mathbb{R})$ the signature is read off the star. Two of the three generators are Hermitian, $i\vec e_x$ and $i\vec e_z$, and one is anti-Hermitian, $\vec e_y$, because $(i\vec e_k)^{*}=+i\vec e_k$ and $\vec e_k^{*}=-\vec e_k$. The Killing form takes the value $+8$ on the two Hermitian ones and $-8$ on the anti-Hermitian one, so the signature $(2,1)$ is the count of Hermitian and anti-Hermitian directions. The split real form is exactly the real form of $\mathfrak{sl}(2,\mathbb{C})$ in which the star fixes two of the three generators; in the compact form it fixes none, and the signature is $(0,3)$. The difference between the two rows of the table is a difference between two counts, and not a difference of computation.
+**Remark (the biquaternion reading of the inertia).** In the basis $i\vec e_x,\ \vec e_y,\ i\vec e_z$ of $\mathfrak{sl}(2,\mathbb{R})$ the inertia is read off the star. Two of the three generators are Hermitian, $i\vec e_x$ and $i\vec e_z$, and one is anti-Hermitian, $\vec e_y$, because $(i\vec e_k)^{*}=+i\vec e_k$ and $\vec e_k^{*}=-\vec e_k$. The Killing form takes the value $+8$ on the two Hermitian ones and $-8$ on the anti-Hermitian one, so the inertia $(2,1)$ is the count of Hermitian and anti-Hermitian directions. The split real form is exactly the real form of $\mathfrak{sl}(2,\mathbb{C})$ in which the star fixes two of the three generators; in the compact form it fixes none, and the inertia is $(0,3)$. The difference between the two rows of the table is a difference between two counts, and not a difference of computation.
 
-**Remark (a difference of convention).** The numbers above are the intrinsic Killing forms, computed with the trace taken in the algebra itself. The companion article records the signature of the same form computed with the trace taken in the eight-dimensional ambient algebra $\mathbb{B}_{\mathbb{R}}$, and the two conventions agree on signatures for $\mathfrak{sl}(2,\mathbb{R})$, $\mathfrak{su}(2)$ and $\mathfrak{so}(3,1)$ and differ on the abelian algebras, where the intrinsic form vanishes and the ambient restriction does not. The convention of this article is the intrinsic one, because the groups of the tenth section are attached to the algebras and not to the ambient space.
+**Remark (a difference of convention).** The numbers above are the intrinsic Killing forms, computed with the trace taken in the algebra itself. The companion article records the inertia of the same form computed with the trace taken in the eight-dimensional ambient algebra $\mathbb{B}_{\mathbb{R}}$, and the two conventions agree on inertias for $\mathfrak{sl}(2,\mathbb{R})$, $\mathfrak{su}(2)$ and $\mathfrak{so}(3,1)$ and differ on the abelian algebras, where the intrinsic form vanishes and the ambient restriction does not. The convention of this article is the intrinsic one, because the groups of the tenth section are attached to the algebras and not to the ambient space.
 
 **The ideals.** The two-sided ideals of the Lie algebra $\mathfrak{gl}(2,\mathbb{R})$ are $0$, $\mathbb{R}I$, $\mathfrak{sl}(2,\mathbb{R})$ and the whole algebra. For $\mathfrak{sl}(2,\mathbb{R})$ is simple, so an ideal $\mathfrak{j}$ not contained in $\mathbb{R}I$ projects onto $\mathfrak{sl}(2,\mathbb{R})$, and then $\mathfrak{j}$ contains $[\mathfrak{gl},\mathfrak{j}]=[\mathfrak{sl},\mathfrak{sl}]=\mathfrak{sl}$ and is either $\mathfrak{sl}$ or $\mathfrak{gl}$; and an ideal contained in the centre is $0$ or $\mathbb{R}I$. The same list is the list of ideals of the associative algebra, with $\mathfrak{sl}(2,\mathbb{R})$ excluded, since the traceless part is not closed under multiplication; the two lists are different and must not be identified.
 
@@ -271,9 +271,9 @@ $$
 Q(U)=\tfrac12\operatorname{tr}(U^2),
 $$
 
-restricted to $V$; on $\mathfrak{sl}(2,\mathbb{R})$ this form has signature $(2,1)$, computed on $i\vec e_x,\vec e_y,i\vec e_z$ as $+1,-1,+1$. The product on $V$ is $U\circ W=\tfrac12\operatorname{tr}(UW)I$, so the algebra $\mathbb{R}I\oplus V$ is determined by the restriction $Q|_V$ alone: an isomorphism carries $I$ to $I$ and $V$ to $V$, and on $V$ it is an isometry of the restrictions up to the scale of the generator. The signature of $Q|_V$ is therefore an invariant, and the table lists the eight signature types, with one witness each. Inside a type of dimension $0$ or $2$ the restricted form is unique up to isometry; inside a type of dimension $1$ the scale of the generator is a further invariant, so the lines of a given sign form a continuous family.
+restricted to $V$; on $\mathfrak{sl}(2,\mathbb{R})$ this form has inertia $(2,1)$, computed on $i\vec e_x,\vec e_y,i\vec e_z$ as $+1,-1,+1$. The product on $V$ is $U\circ W=\tfrac12\operatorname{tr}(UW)I$, so the algebra $\mathbb{R}I\oplus V$ is determined by the restriction $Q|_V$ alone: an isomorphism carries $I$ to $I$ and $V$ to $V$, and on $V$ it is an isometry of the restrictions up to the scale of the generator. The inertia of $Q|_V$ is therefore an invariant, and the table lists the eight inertia types, with one witness each. Inside a type of dimension $0$ or $2$ the restricted form is unique up to isometry; inside a type of dimension $1$ the scale of the generator is a further invariant, so the lines of a given sign form a continuous family.
 
-| $\dim V$ | signature of $Q$ on $V$ | Jordan algebra | witness in corpus coordinates |
+| $\dim V$ | inertia of $Q$ on $V$ | Jordan algebra | witness in corpus coordinates |
 |---|---|---|---|
 | $0$ | — | $\mathbb{R}$ | $\mathbb{R}e_t$ |
 | $1$ | $(1,0)$ | $\mathbb{R}\oplus\mathbb{R}$ | $\operatorname{span}\{e_t,i\vec e_x\}$ |
@@ -405,9 +405,9 @@ $$
 K(X,Y)=4\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y).
 $$
 
-The values are collected in one table, the signature again being computed in the algebra itself.
+The values are collected in one table, the inertia again being computed in the algebra itself.
 
-| algebra | dimension | $K$ | signature | radical |
+| algebra | dimension | $K$ | inertia | radical |
 |---|---|---|---|---|
 | $\mathfrak{su}(2)$ | $3$ | $4\operatorname{tr}(XY)$ | $(0,3)$, negative definite | $0$ |
 | abelian plane | $2$ | $0$ | $(0)$ | the algebra |
@@ -416,13 +416,13 @@ The values are collected in one table, the signature again being computed in the
 
 The values on the three generators are $4\operatorname{tr}(\vec e_x^{\,2})=4(-2)=-8$ and cyclically, so $K=-8$ times the identity in the basis $\vec e_x,\vec e_y,\vec e_z$; in the rescaled basis $\vec e_k/2$ the form is $-2$ times the identity, which is the normalisation of [Classification of the Structures of the Biquaternion Algebra](classification-of-the-structures-of-the-biquaternion-algebra.html). The form of $\mathfrak u(2)$ is negative semidefinite because $\mathfrak u(2)$ is the algebra of a compact group, and its radical is exactly the centre, which is the general statement that the radical of the Killing form of a reductive algebra is its centre.
 
-**The two signatures side by side.** The same three-dimensional complex algebra $\mathfrak{sl}(2,\mathbb{C})$ has two real forms in this article, and their Killing forms differ in the sign of one eigenvalue:
+**The two inertias side by side.** The same three-dimensional complex algebra $\mathfrak{sl}(2,\mathbb{C})$ has two real forms in this article, and their Killing forms differ in the sign of one eigenvalue:
 
 $$
 \mathfrak{sl}(2,\mathbb{R}):\ (2,1),\qquad \mathfrak{su}(2):\ (0,3).
 $$
 
-The change of sign is the change of the real form, and it is the whole reason the two Lie groups differ in compactness. The three signatures of [The Killing Form of $\mathfrak{sl}_2$ and Its Three Signatures](the-killing-form-of-sl-2-and-its-three-signatures.html) are the three real forms of one complex algebra read in one place; the two rows above are two of those three, the third being $\mathfrak{so}(3,1)$.
+The change of sign is the change of the real form, and it is the whole reason the two Lie groups differ in compactness. The three inertias of [The Killing Form of $\mathfrak{sl}_2$ and Its Three Inertias](the-killing-form-of-sl-2-and-its-three-signatures.html) are the three real forms of one complex algebra read in one place; the two rows above are two of those three, the third being $\mathfrak{so}(3,1)$.
 
 **The ideals.** The ideals of $\mathfrak u(2)$ are $0$, the centre $\mathbb{R}(i e_t)$, $\mathfrak{su}(2)$ and $\mathfrak u(2)$. The argument is the same as for $\mathfrak{gl}(2,\mathbb{R})$, with the centre in place of $\mathbb{R}I$ and the compact simple algebra in place of the split one.
 
@@ -442,7 +442,7 @@ which lies in $\mathbb{R}e_t\oplus V$ whenever $p,q\in V$. Conversely $J=\mathbb
 
 **The isomorphism types.** The type is decided by the quadratic form $Q(U)=\tfrac12\operatorname{tr}(U^2)$ restricted to $V$, and on the pure part this form is negative definite, with value $-1$ on each of $\vec e_x,\vec e_y,\vec e_z$. So there are four types and no more.
 
-| $\dim V$ | signature of $Q$ on $V$ | Jordan algebra | witness in corpus coordinates |
+| $\dim V$ | inertia of $Q$ on $V$ | Jordan algebra | witness in corpus coordinates |
 |---|---|---|---|
 | $0$ | — | $\mathbb{R}$ | $\mathbb{R}e_t$ |
 | $1$ | $(0,1)$ | $\mathbb{C}^{+}$ | $\operatorname{span}\{e_t,\vec e_x\}$ |
@@ -451,7 +451,7 @@ which lies in $\mathbb{R}e_t\oplus V$ whenever $p,q\in V$. Conversely $J=\mathbb
 
 **Remark (no idempotents).** The Jordan algebra $\mathbb{H}^{+}$ has exactly two idempotents, $0$ and $e_t$. For if $P=ae_t+p$ satisfies $P\circ P=P$, then $2ap=p$ and $a^2-\langle p,p\rangle=a$; a nonzero $p$ would give $a=\tfrac12$ and $\langle p,p\rangle=a^2-a=-\tfrac14$, which is impossible for a negative definite form. So the negative definiteness of the form, which is what makes $\mathbb{H}$ a division algebra, is also what removes the idempotents from the Jordan layer. The split form has the idempotent $\tfrac12(e_t+i\vec e_x)$ in its Jordan layer as well, and that one element separates the two Jordan algebras.
 
-**Remark (the two lattices are the same lattice).** The subspaces of a three-dimensional real vector space form one lattice, and both Jordan layers are that lattice: the split form uses the traceless part of $M_2(\mathbb{R})$ with the form of signature $(2,1)$, and the compact form uses the pure part of $\mathbb{H}$ with the form of signature $(0,3)$. The lattices are isomorphic; the algebras are not. This is the example used in the twelfth section to show that a Jordan lattice does not determine a Jordan algebra.
+**Remark (the two lattices are the same lattice).** The subspaces of a three-dimensional real vector space form one lattice, and both Jordan layers are that lattice: the split form uses the traceless part of $M_2(\mathbb{R})$ with the form of inertia $(2,1)$, and the compact form uses the pure part of $\mathbb{H}$ with the form of inertia $(0,3)$. The lattices are isomorphic; the algebras are not. This is the example used in the twelfth section to show that a Jordan lattice does not determine a Jordan algebra.
 
 ## The Involutions Inside Each Real Form and the Six Subspaces
 
@@ -609,17 +609,17 @@ The first is the quotient by the centre $\{\pm I\}$ of the compact form, and it 
 | nilpotents | yes, $\mathbb{R}N$ | none |
 | Lie algebra | $\mathfrak{gl}(2,\mathbb{R})$, centre $\mathbb{R}I$ | $\mathfrak u(2)$, centre $\mathbb{R}(ie_t)$ |
 | the star inside the simple part | fixes $i\vec e_x$ and $i\vec e_z$, negates $\vec e_y$: two Hermitian generators | negates all three: no Hermitian generator |
-| simple part | $\mathfrak{sl}(2,\mathbb{R})$, signature $(2,1)$ | $\mathfrak{su}(2)$, signature $(0,3)$ |
+| simple part | $\mathfrak{sl}(2,\mathbb{R})$, inertia $(2,1)$ | $\mathfrak{su}(2)$, inertia $(0,3)$ |
 | Killing form of the full algebra | indefinite, degenerate | negative semidefinite, degenerate |
 | Jordan algebra | $M_2(\mathbb{R})^{+}$, with the idempotent $\tfrac12(e_t+i\vec e_x)$ | $\mathbb{H}^{+}$, no nontrivial idempotent |
-| Jordan types, by signature | eight, including $H_2(\mathbb{R})$ | four, no formally real type |
+| Jordan types, by inertia | eight, including $H_2(\mathbb{R})$ | four, no formally real type |
 | intersections with the six subspaces | $1,3,2,2,3,1$ | $1,3,4,0,1,3$ |
 | simply connected group of the simple part | $\widetilde{SL}(2,\mathbb{R})$, centre $\mathbb{Z}$ | $SU(2)$, centre $\mathbb{Z}/2$ |
 | fundamental group | $\pi_1(SL(2,\mathbb{R}))=\mathbb{Z}$ | $\pi_1(SO(3))=\mathbb{Z}/2$ |
 
-**The one-line summary.** The two forms differ in three places and agree everywhere else: they differ in the presence of zero divisors, which is the algebraic difference; in the sign of the Killing form, which is the Lie difference; and in the idempotents of the Jordan algebra, which is the Jordan difference. All three are one difference seen three times, and it is the sign of the square of an element, $+e_t$ in the split form and $-e_t$ in the compact form. In the ambient language the same difference is the sign under the star: the compact form is the anti-Hermitian subspace $\mathbb{B}_{\Phi}=\mathfrak u(2)$, whose simple part $\mathfrak{su}(2)$ has three anti-Hermitian generators and the signature $(0,3)$, while the split form is the real form in which the star fixes two of the three generators and the signature is $(2,1)$. The two signatures are two counts of Hermitian directions, and the sign of the square and the sign under the star are the same sign read in the two layers.
+**The one-line summary.** The two forms differ in three places and agree everywhere else: they differ in the presence of zero divisors, which is the algebraic difference; in the sign of the Killing form, which is the Lie difference; and in the idempotents of the Jordan algebra, which is the Jordan difference. All three are one difference seen three times, and it is the sign of the square of an element, $+e_t$ in the split form and $-e_t$ in the compact form. In the ambient language the same difference is the sign under the star: the compact form is the anti-Hermitian subspace $\mathbb{B}_{\Phi}=\mathfrak u(2)$, whose simple part $\mathfrak{su}(2)$ has three anti-Hermitian generators and the inertia $(0,3)$, while the split form is the real form in which the star fixes two of the three generators and the inertia is $(2,1)$. The two inertias are two counts of Hermitian directions, and the sign of the square and the sign under the star are the same sign read in the two layers.
 
-**The internal thread.** The three differences have a common witness, and the witness is an element $U$ with $U^2=+e_t$, that is $i\vec e_x$ or $i\vec e_z$; $U$ itself is not an idempotent, since $U\notin\mathbb{R}e_t$. From $U$ one builds the idempotent $P=\tfrac12(e_t+U)$, and the three layers read the pair $(U,P)$ differently. In the associative layer $P$ is a genuine idempotent, so $M_2(\mathbb{R})$ has zero divisors and $\mathbb{H}$ has none. In the Lie layer $U$ is a generator with positive Killing self-pairing, $K(U,U)>0$, which is the sign that makes the signature $(2,1)$ of the split form and $(0,3)$ of the compact form. In the Jordan layer $P$ is again an idempotent, so the split form has a formally real part and an idempotent count that the compact form cannot match. The two forms are the two answers to the single question of whether an element $U$ with $U^2=+e_t$ exists, and the rest of the classification follows from that answer.
+**The internal thread.** The three differences have a common witness, and the witness is an element $U$ with $U^2=+e_t$, that is $i\vec e_x$ or $i\vec e_z$; $U$ itself is not an idempotent, since $U\notin\mathbb{R}e_t$. From $U$ one builds the idempotent $P=\tfrac12(e_t+U)$, and the three layers read the pair $(U,P)$ differently. In the associative layer $P$ is a genuine idempotent, so $M_2(\mathbb{R})$ has zero divisors and $\mathbb{H}$ has none. In the Lie layer $U$ is a generator with positive Killing self-pairing, $K(U,U)>0$, which is the sign that makes the inertia $(2,1)$ of the split form and $(0,3)$ of the compact form. In the Jordan layer $P$ is again an idempotent, so the split form has a formally real part and an idempotent count that the compact form cannot match. The two forms are the two answers to the single question of whether an element $U$ with $U^2=+e_t$ exists, and the rest of the classification follows from that answer.
 
 ## What the Lattices and the Groups Do Not Determine
 
@@ -627,7 +627,7 @@ The first is the quotient by the centre $\{\pm I\}$ of the compact form, and it 
 
 **The associative lattice does not determine the algebra.** At the associative level the statement is standard and is quoted here without proof: the lattice of subalgebras records only the inclusions between subspaces closed under multiplication, and two non-isomorphic algebras can have isomorphic lattices. The Jordan example above is the version of the statement that this article verifies in full, since both lattices there are exhibited explicitly.
 
-**The Jordan lattice does not determine the Lie structure.** The same Grassmannian arises from the split form and from the compact form, and the two Lie algebras are $\mathfrak{gl}(2,\mathbb{R})$ and $\mathfrak u(2)$, with different real forms of the simple part and different signatures. A classification in the Jordan layer says nothing about the Lie layer, in either direction.
+**The Jordan lattice does not determine the Lie structure.** The same Grassmannian arises from the split form and from the compact form, and the two Lie algebras are $\mathfrak{gl}(2,\mathbb{R})$ and $\mathfrak u(2)$, with different real forms of the simple part and different inertias. A classification in the Jordan layer says nothing about the Lie layer, in either direction.
 
 **The Lie lattice does not determine the group.** The algebra $\mathfrak{su}(2)$ is the algebra of $SU(2)$ and of $SO(3)$, and $\mathfrak{sl}(2,\mathbb{R})$ is the algebra of $\widetilde{SL}(2,\mathbb{R})$, of $SL(2,\mathbb{R})$ and of $PSL(2,\mathbb{R})$. The passage from the algebra to a group requires the choice of a discrete central subgroup, and the fundamental group of the group is that choice. This is the tenth section read backwards.
 
@@ -637,7 +637,7 @@ The first is the quotient by the centre $\{\pm I\}$ of the compact form, and it 
 
 ## Hand-off
 
-**Recap.** The two real forms are the split form $M_2(\mathbb{R})=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_y,i\vec e_x,i\vec e_z\}$ and the compact form $\mathbb{H}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$. The split form has six associative types with three continuous families, the Lie algebra $\mathfrak{gl}(2,\mathbb{R})$ whose simple part has signature $(2,1)$, and the Jordan algebra $M_2(\mathbb{R})^{+}$ whose lattice is a Grassmannian with an indefinite form. The compact form has four associative types with a sphere of copies of $\mathbb{C}$, the Lie algebra $\mathfrak u(2)$ with a negative semidefinite form, and the Jordan algebra $\mathbb{H}^{+}$ whose lattice is the same Grassmannian with a definite form. The involutions inside the two forms are the transpose and the quaternion conjugation, and the intersections with the six subspaces are $1,3,2,2,3,1$ and $1,3,4,0,1,3$. The Lie groups are collected in two tables, with the centre, the discrete central subgroups and the fundamental groups, and they are the application of the general correspondence to these algebras.
+**Recap.** The two real forms are the split form $M_2(\mathbb{R})=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_y,i\vec e_x,i\vec e_z\}$ and the compact form $\mathbb{H}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$. The split form has six associative types with three continuous families, the Lie algebra $\mathfrak{gl}(2,\mathbb{R})$ whose simple part has inertia $(2,1)$, and the Jordan algebra $M_2(\mathbb{R})^{+}$ whose lattice is a Grassmannian with an indefinite form. The compact form has four associative types with a sphere of copies of $\mathbb{C}$, the Lie algebra $\mathfrak u(2)$ with a negative semidefinite form, and the Jordan algebra $\mathbb{H}^{+}$ whose lattice is the same Grassmannian with a definite form. The involutions inside the two forms are the transpose and the quaternion conjugation, and the intersections with the six subspaces are $1,3,2,2,3,1$ and $1,3,4,0,1,3$. The Lie groups are collected in two tables, with the centre, the discrete central subgroups and the fundamental groups, and they are the application of the general correspondence to these algebras.
 
 **Forward pointers.**
 
@@ -680,6 +680,6 @@ The first is the quotient by the centre $\{\pm I\}$ of the compact form, and it 
 - Joseph Henry Maclagan Wedderburn, *On hypercomplex numbers*, Proceedings of the London Mathematical Society 6 (1908), for the structure theorem for finite-dimensional algebras.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions*, American Mathematical Society Colloquium Publications 44 (1998), for the involutions of the first and second kind, the transpose and the quaternion conjugation as the two classical cases, and the real forms of a central simple algebra.
 - Arkadij L. Onishchik and Ernest B. Vinberg, *Lie Groups and Algebraic Groups* (Springer, 1990), for the subalgebras and closed subgroups of the classical groups, including the complete lists for $SL(2,\mathbb{R})$ and $SU(2)$.
-- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for the Cartan decomposition, the Killing form and its signature, and the twofold covers of the classical groups.
+- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (American Mathematical Society, 2001), for the Cartan decomposition, the Killing form and its inertia, and the twofold covers of the classical groups.
 - Tsit-Yuen Lam, *A First Course in Noncommutative Rings* (Springer, second edition, 2001), for the theorem of Frobenius and the arithmetic of the quaternions.
 - Nathan Jacobson, *Structure and Representations of Jordan Algebras*, American Mathematical Society Colloquium Publications 39 (1968), for the Jordan product, the identity $XY+YX=\operatorname{tr}(XY)I$ in degree two, and the formally real algebras.

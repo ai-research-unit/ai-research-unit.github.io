@@ -4,7 +4,7 @@
 
 **At $n=2$ the whole spine of the category is read in one algebra: the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is isomorphic to $M_2(\mathbb{C})$, its Peirce frame $\tilde\Pi_\pm$ is the frame of the two smallest idempotents, and every construction of the fifty-one preceding articles becomes a count in the eight real dimensions.**
 
-The article reads the spine at $n=2$: the element, the two halves of the involution, the product on the halves, the four forms with their signatures, the Peirce frame with its corners and companion nilpotents, the spectrum and the exponential, and the algebraic norm $N$ with its signature $(2,2)$. It assumes *The Trace Form and Its Signature on the Two Halves*, *The Killing Form, Its Radical and the Triangular Case* and *The Peirce Decomposition of the Biquaternion Algebra*. It defers the frame and the coordinates to *The Peirce Basis of the Biquaternion Algebra* and *The Companion Nilpotents of the Biquaternion Algebra*.
+The article reads the spine at $n=2$: the element, the two halves of the involution, the product on the halves, the four forms with their inertias, the Peirce frame with its corners and companion nilpotents, the spectrum and the exponential, and the algebraic norm $N$ with its inertia $(2,2)$. It assumes *The Trace Form and Its Inertia on the Two Halves*, *The Killing Form, Its Radical and the Triangular Case* and *The Peirce Decomposition of the Biquaternion Algebra*. It defers the frame and the coordinates to *The Peirce Basis of the Biquaternion Algebra* and *The Companion Nilpotents of the Biquaternion Algebra*.
 
 ## The Algebra and Its Element at Two
 
@@ -56,7 +56,7 @@ $$
 \langle\tilde Q\rangle_{*}=\lvert Q_t\rvert^{2}-\lvert\vec Q\rvert^{2},
 $$
 
-of signature $(1,3)$, and on the anti-Hermitian sector to the signature $(3,1)$. The computation confirms the two signatures on a real basis of each sector, and it is the reason the coda meets the Lorentz group, the spin group being the double cover of its orthogonal group.
+of inertia $(1,3)$, and on the anti-Hermitian sector to the inertia $(3,1)$. The computation confirms the two inertias on a real basis of each sector, and it is the reason the coda meets the Lorentz group, the spin group being the double cover of its orthogonal group.
 
 ## The Product on the Two Halves at Two
 
@@ -86,7 +86,7 @@ the Lie algebra of the unitary group of the two-by-two case. The computation con
 
 ## The Forms at Two
 
-**The trace form of the algebra has signature $(4,4)$.** The plain form $P(q_1,q_2)=\operatorname{Re}\mathrm{Sc}(q_1q_2)$ is a real symmetric form on the eight real dimensions, of the signature $(4,4)$, four positive and four negative directions. The computation confirms the signature by the eigenvalues $\pm1$ of the Gram matrix, and it is the trace form of the category at $n=2$.
+**The trace form of the algebra has inertia $(4,4)$.** The plain form $P(q_1,q_2)=\operatorname{Re}\mathrm{Sc}(q_1q_2)$ is a real symmetric form on the eight real dimensions, of the inertia $(4,4)$, four positive and four negative directions. The computation confirms the inertia by the eigenvalues $\pm1$ of the Gram matrix, and it is the trace form of the category at $n=2$.
 
 **On the Hermitian half the trace form is positive definite.** For $A\in\mathbb{B}_{H}$ nonzero,
 
@@ -96,7 +96,7 @@ $$
 
 and on the anti-Hermitian half it is negative definite, so the two halves carry the two signs. The computation confirms the definiteness on random elements of each sector, and it is the reason the Hermitian half is the positive half of the coda.
 
-**The Killing form has rank six and a radical of dimension two.** The Killing form $\kappa(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ has the eigenvalues $\pm8$ each of multiplicity three and the eigenvalue zero of multiplicity two, so the signature on the six-dimensional quotient is $(3,3)$ and the radical is the centre $\mathbb{C}e_t$. The computation confirms the eigenvalues, the rank six and the two-dimensional radical, and it is the two-by-two case of *The Killing Form, Its Radical and the Triangular Case*.
+**The Killing form has rank six and a radical of dimension two.** The Killing form $\kappa(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ has the eigenvalues $\pm8$ each of multiplicity three and the eigenvalue zero of multiplicity two, so the inertia on the six-dimensional quotient is $(3,3)$ and the radical is the centre $\mathbb{C}e_t$. The computation confirms the eigenvalues, the rank six and the two-dimensional radical, and it is the two-by-two case of *The Killing Form, Its Radical and the Triangular Case*.
 
 ## The Peirce Frame at Two
 
@@ -150,7 +150,7 @@ $$
 
 so the exponential of the anti-Hermitian half gives the rotations and the exponential of the Hermitian half the stretches, each rotation having the two rotor signs $\pm e^{X/2}$. The computation confirms the unitarity of the first exponential, the positivity of the second and the two roots of a random unitary, and it is the polar decomposition of *The Polar Decomposition from the Two Halves* at $n=2$.
 
-## The Norm and the Signature $(2,2)$
+## The Norm and the Inertia $(2,2)$
 
 **The norm is the product of the two corner coordinates.** On the diagonal subalgebra $\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-$ the quaternionic algebraic norm is
 
@@ -160,19 +160,19 @@ $$
 
 the product of the two Peirce coordinates, since $\tilde\Pi_\pm^{\natural}=\tilde\Pi_\mp$ and the two idempotents are orthogonal. The computation confirms the identity on random pairs of coefficients, and it is the reason the norm of the coda is written in the Peirce coordinates.
 
-**The norm is indefinite, of signature $(2,2)$ over $\mathbb{R}$.** Writing $\alpha_\pm=a_\pm+ib_\pm$,
+**The norm is indefinite, of inertia $(2,2)$ over $\mathbb{R}$.** Writing $\alpha_\pm=a_\pm+ib_\pm$,
 
 $$
 \operatorname{Re}N=a_+a_- - b_+b_-,
 $$
 
-whose Gram matrix is $\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}\oplus\tfrac12\begin{pmatrix}0&-1\\-1&0\end{pmatrix}$, of the eigenvalues $\pm\tfrac12$ each twice, so the signature is $(2,2)$. The computation confirms the Gram matrix and the eigenvalues, and it is the signature the coda has to report.
+whose Gram matrix is $\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}\oplus\tfrac12\begin{pmatrix}0&-1\\-1&0\end{pmatrix}$, of the eigenvalues $\pm\tfrac12$ each twice, so the inertia is $(2,2)$. The computation confirms the Gram matrix and the eigenvalues, and it is the inertia the coda has to report.
 
-**On the whole algebra the same norm has signature $(4,4)$.** The realification of $N$ on the eight dimensions gives $\operatorname{sign}N=(4,4)$, so the diagonal subalgebra carries half the positive and half the negative directions. The computation confirms the eigenvalues $\pm1$ each four times on the coefficient basis, and it is the reason the two readings are one form.
+**On the whole algebra the same norm has inertia $(4,4)$.** The realification of $N$ on the eight dimensions gives $\operatorname{sign}N=(4,4)$, so the diagonal subalgebra carries half the positive and half the negative directions. The computation confirms the eigenvalues $\pm1$ each four times on the coefficient basis, and it is the reason the two readings are one form.
 
 ## Summary
 
-At $n=2$ the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is $M_2(\mathbb{C})$, of real dimension eight, with the rank in $\{0,1,2\}$ and the characteristic polynomial of the left multiplication of degree four with the two eigenvalues doubled. The quaternion conjugation cuts it into the centre and the vector part of dimensions $2$ and $6$, the Hermitian conjugation into the Hermitian and the anti-Hermitian sectors of four real dimensions each, carrying the forms of signature $(1,3)$ and $(3,1)$; the commutator of the Hermitian half lands in the anti-Hermitian half and the adjoint action of the anti-Hermitian half lands in the Hermitian half, and the anti-Hermitian half is $\mathfrak{u}(2)$. The trace form has signature $(4,4)$ with the two halves definite, and the Killing form has rank six, signature $(3,3)$ and the two-dimensional radical $\mathbb{C}e_t$. A pure root $\vec{Ζ}$ gives the idempotent pair $\tilde\Pi_\pm$, the four corners $\mathbb{B}_{st}$ of two real dimensions each, and the companion nilpotents $\vec\Upsilon_{+-}$, $\vec\Upsilon_{-+}$ normalised by $uv=\tilde\Pi_+$, with the single reciprocal rescaling as the whole gauge. The spectrum has the two points doubled, the Hermitian sector has a real spectrum, the exponential gives the rotations and the stretches, and the algebraic norm $N$ equals $\alpha_+\alpha_-$ on the diagonal subalgebra, with the signature $(2,2)$ there and $(4,4)$ on the whole algebra.
+At $n=2$ the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is $M_2(\mathbb{C})$, of real dimension eight, with the rank in $\{0,1,2\}$ and the characteristic polynomial of the left multiplication of degree four with the two eigenvalues doubled. The quaternion conjugation cuts it into the centre and the vector part of dimensions $2$ and $6$, the Hermitian conjugation into the Hermitian and the anti-Hermitian sectors of four real dimensions each, carrying the forms of inertia $(1,3)$ and $(3,1)$; the commutator of the Hermitian half lands in the anti-Hermitian half and the adjoint action of the anti-Hermitian half lands in the Hermitian half, and the anti-Hermitian half is $\mathfrak{u}(2)$. The trace form has inertia $(4,4)$ with the two halves definite, and the Killing form has rank six, inertia $(3,3)$ and the two-dimensional radical $\mathbb{C}e_t$. A pure root $\vec{Ζ}$ gives the idempotent pair $\tilde\Pi_\pm$, the four corners $\mathbb{B}_{st}$ of two real dimensions each, and the companion nilpotents $\vec\Upsilon_{+-}$, $\vec\Upsilon_{-+}$ normalised by $uv=\tilde\Pi_+$, with the single reciprocal rescaling as the whole gauge. The spectrum has the two points doubled, the Hermitian sector has a real spectrum, the exponential gives the rotations and the stretches, and the algebraic norm $N$ equals $\alpha_+\alpha_-$ on the diagonal subalgebra, with the inertia $(2,2)$ there and $(4,4)$ on the whole algebra.
 
 ## Summary of Notation
 
@@ -184,7 +184,7 @@ At $n=2$ the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mat
 | $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ | the idempotent pair |
 | $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the four corners |
 | $\vec\Upsilon_{+-}$, $\vec\Upsilon_{-+}$ | the companion nilpotents, with $uv=\tilde\Pi_+$ |
-| $N$ | the quaternionic algebraic norm, signature $(2,2)$ on the diagonal subalgebra |
+| $N$ | the quaternionic algebraic norm, inertia $(2,2)$ on the diagonal subalgebra |
 | $\mathbb{B}_{H}$, $\mathbb{B}_{\Phi}$ | the Hermitian and the anti-Hermitian sectors |
 
 ## Further Reading

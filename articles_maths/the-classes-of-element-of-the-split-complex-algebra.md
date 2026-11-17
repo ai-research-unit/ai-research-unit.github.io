@@ -86,7 +86,7 @@ The two algebraic norms see different classes, and the difference is the source 
 | norm | value | vanishing set | class it decides |
 |---|---|---|---|
 | $\langle Q\rangle=Q^{2}$ | $\mathbb{C}_{\mathrm{spl}}$-valued | $\{0\}$ | none; it does not decide invertibility |
-| $\langle Q\rangle_{*}=Q\bar Q$ | real, signature $(1,1)$ | $\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$ | the invertibles (value $\neq0$) and the null cone (value $0$); the zero divisors are the punctured cone |
+| $\langle Q\rangle_{*}=Q\bar Q$ | real, inertia $(1,1)$ | $\mathcal{N}=\mathbb{R}\Pi_{+}\cup\mathbb{R}\Pi_{-}$ | the invertibles (value $\neq0$) and the null cone (value $0$); the zero divisors are the punctured cone |
 
 The first norm is anisotropic and sees only the origin; the second is indefinite and sees the null cone. The zero divisors are $\mathcal{N}\setminus\{0\}$, the invertibles are the complement of $\mathcal{N}$, and the origin is the only element that lies on neither side of the dichotomy.
 

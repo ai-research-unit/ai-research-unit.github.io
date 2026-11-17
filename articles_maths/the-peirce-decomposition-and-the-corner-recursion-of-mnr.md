@@ -114,7 +114,7 @@ real dimensions, which is $\dim M_{n}(\mathbb{R})$. So $M_{n}(\mathbb{R})$ is bu
 
 ## The Trace Form on the Corners
 
-**The trace form restricts to the trace forms of the two diagonal corners.** For $X,Y\in A$ the product $XY$ lies in $A$, and $\operatorname{tr}(XY)$ is the trace form of $A\cong M_{r}(\mathbb{R})$; the same holds in $D$. So the restriction of the form to $A$ has signature $\big(r(r+1)/2,\,r(r-1)/2\big)$ and its restriction to $D$ has signature $\big((n-r)(n-r+1)/2,\,(n-r)(n-r-1)/2\big)$.
+**The trace form restricts to the trace forms of the two diagonal corners.** For $X,Y\in A$ the product $XY$ lies in $A$, and $\operatorname{tr}(XY)$ is the trace form of $A\cong M_{r}(\mathbb{R})$; the same holds in $D$. So the restriction of the form to $A$ has inertia $\big(r(r+1)/2,\,r(r-1)/2\big)$ and its restriction to $D$ has inertia $\big((n-r)(n-r+1)/2,\,(n-r)(n-r-1)/2\big)$.
 
 **The off-diagonal corners carry a perfect pairing.**
 
@@ -132,13 +132,13 @@ $$
 
 and the trace form is the sum of its restrictions to $A$, to $D$, and to the pairing between $B$ and $C$. So the recursion for the trace form is $A\perp D$ and $B$ paired with $C$.
 
-**The signature of the whole form is the sum of the four contributions.** The two diagonal corners contribute their own signatures and the off-diagonal pair contributes $r(n-r)$ positive and $r(n-r)$ negative directions, since the pairing is symmetric of split type. The total is
+**The inertia of the whole form is the sum of the four contributions.** The two diagonal corners contribute their own inertias and the off-diagonal pair contributes $r(n-r)$ positive and $r(n-r)$ negative directions, since the pairing is symmetric of split type. The total is
 
 $$
 \frac{r(r+1)}{2}+r(n-r)+\frac{(n-r)(n-r+1)}{2}=\frac{n(n+1)}{2}
 $$
 
-positive and the same count with the minus signs, that is $n(n-1)/2$ negative, which is the signature of the trace form on $M_{n}(\mathbb{R})$.
+positive and the same count with the minus signs, that is $n(n-1)/2$ negative, which is the inertia of the trace form on $M_{n}(\mathbb{R})$.
 
 ## The Dimension Ledger
 
@@ -164,7 +164,7 @@ Both diagonal corners are $M_{2}(\mathbb{R})$ and both off-diagonal corners have
 
 ## Summary
 
-A real idempotent $P$ of rank $r$ with complement $Q=\mathrm{I}-P$ cuts $M_{n}(\mathbb{R})$ into the four corners $A=PMP$, $B=PMQ$, $C=QMP$ and $D=QMQ$, of dimensions $r^{2}$, $r(n-r)$, $(n-r)r$ and $(n-r)^{2}$, which sum to $n^{2}$ and are the joint eigenspaces of $L(X)=PX$ and $R(X)=XP$. The diagonal corners are the matrix algebras $M_{r}(\mathbb{R})$ and $M_{n-r}(\mathbb{R})$, the off-diagonal ones are the rectangular array spaces, and the block multiplication is the multiplication of the algebra, so the corners give an isomorphism $M_{n}(\mathbb{R})\cong M_{2}$ of block matrices. The recursion $M_{n}\cong M_{r}\oplus M_{n-r}\oplus B\oplus C$, iterated with $r=1$, builds the algebra from $M_{1}(\mathbb{R})=\mathbb{R}$ in $n$ steps, adding a line and its dual at each step. The trace form restricts to the trace forms of $A$ and $D$, vanishes across different corners, and pairs $B$ with $C$ perfectly through $(Y,Z)\mapsto\operatorname{tr}(YZ)$; its signature is $\big(n(n+1)/2,\,n(n-1)/2\big)$. The ledger is $1+2+2+4=9$ at $n=3$ with $r=1$ and $4+4+4+4=16$ at $n=4$ with $r=2$.
+A real idempotent $P$ of rank $r$ with complement $Q=\mathrm{I}-P$ cuts $M_{n}(\mathbb{R})$ into the four corners $A=PMP$, $B=PMQ$, $C=QMP$ and $D=QMQ$, of dimensions $r^{2}$, $r(n-r)$, $(n-r)r$ and $(n-r)^{2}$, which sum to $n^{2}$ and are the joint eigenspaces of $L(X)=PX$ and $R(X)=XP$. The diagonal corners are the matrix algebras $M_{r}(\mathbb{R})$ and $M_{n-r}(\mathbb{R})$, the off-diagonal ones are the rectangular array spaces, and the block multiplication is the multiplication of the algebra, so the corners give an isomorphism $M_{n}(\mathbb{R})\cong M_{2}$ of block matrices. The recursion $M_{n}\cong M_{r}\oplus M_{n-r}\oplus B\oplus C$, iterated with $r=1$, builds the algebra from $M_{1}(\mathbb{R})=\mathbb{R}$ in $n$ steps, adding a line and its dual at each step. The trace form restricts to the trace forms of $A$ and $D$, vanishes across different corners, and pairs $B$ with $C$ perfectly through $(Y,Z)\mapsto\operatorname{tr}(YZ)$; its inertia is $\big(n(n+1)/2,\,n(n-1)/2\big)$. The ledger is $1+2+2+4=9$ at $n=3$ with $r=1$ and $4+4+4+4=16$ at $n=4$ with $r=2$.
 
 ## Summary of Notation
 
@@ -186,4 +186,4 @@ A real idempotent $P$ of rank $r$ with complement $Q=\mathrm{I}-P$ cuts $M_{n}(\
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for block matrices, idempotents and the trace of a product.
 - [The Peirce Basis and the Corners over $\mathbb{R}$](the-peirce-basis-and-the-corners-over-r.html), for the frame, its corners and the system of matrix units.
 - [The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$](the-peirce-decomposition-and-the-corner-recursion-of-mnc.html), for the complex version of the same recursion.
-- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace form and its indefinite signature.
+- [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the trace form and its indefinite inertia.

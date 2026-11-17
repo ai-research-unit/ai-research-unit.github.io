@@ -73,7 +73,7 @@ where $\mathsf{M}_2$ is the isomorphism onto $M_2(\mathbb{C})$ and $\langle\cdot
 
 **Proof.** Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\mathsf{M}_2(e_t)=I_2$ both sides are $1$; on $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\det(-i\sigma_\mu)=1$ while $\langle \vec e_\mu\rangle_{\natural}=\vec e_\mu \vec e_\mu^{\natural}=-\vec e_\mu^2=e_t$, giving $1$; and both sides are multiplicative, $\det(\mathsf{M}_2(\tilde Q_3)\mathsf{M}_2(\tilde Q_1))=\det\mathsf{M}_2(\tilde Q_3)\det\mathsf{M}_2(\tilde Q_1)$ and $\langle\tilde Q_3\tilde Q_1\rangle_{\natural}=\tilde Q_3\tilde Q_1(\tilde Q_3\tilde Q_1)^{\natural}=\tilde Q_3\,\langle\tilde Q_1\rangle_{\natural}\,\tilde Q_3^{\natural}=\tilde Q_3\tilde Q_3^{\natural}\,\langle\tilde Q_1\rangle_{\natural}=\langle\tilde Q_3\rangle_{\natural}\langle\tilde Q_1\rangle_{\natural}$ using the centrality of $\langle\tilde Q_1\rangle_{\natural}$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra.
 
-The determinant of $\tilde Q$ is thus the **biquaternion norm**, the same object that supplies the Minkowski interval of *The Material Sector: Four-Vectors, Interval and Lorentz Action*.
+The determinant of its $2\times2$ image is thus the **biquaternion norm**, the same object that supplies the Minkowski interval of *The Material Sector: Four-Vectors, Interval and Lorentz Action*.
 
 **Proposition (regular representation).** Left multiplication $L_{\tilde Q}:\tilde Q_2\mapsto\tilde Q\tilde Q_2$ and right multiplication $R_{\tilde Q}:\tilde Q_2\mapsto \tilde Q_2\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
 $$

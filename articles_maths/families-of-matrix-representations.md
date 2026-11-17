@@ -74,7 +74,7 @@ So the two sides are orthogonal for the trace form exactly when one of the two s
 | invariant | left family | right family |
 |---|---|---|
 | trace | $4Q_t$ | $4Q_t$ |
-| determinant | $\langle\tilde Q\rangle_{\natural}^{2}$ | $\langle\tilde Q\rangle_{\natural}^{2}$ |
+| the determinant of the image | $\langle\tilde Q\rangle_{\natural}^{2}$ | $\langle\tilde Q\rangle_{\natural}^{2}$ |
 | characteristic polynomial | $((X-Q_t)^2+B^2)^2$ | the same |
 | spectrum | $Q_t\pm iB$, twice | $Q_t\pm iB$, twice |
 | rank | $2\operatorname{rank}A(\tilde Q)\in\{0,2,4\}$ | the same |

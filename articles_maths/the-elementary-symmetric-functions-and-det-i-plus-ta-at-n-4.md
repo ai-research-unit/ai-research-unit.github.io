@@ -82,7 +82,7 @@ $$
 
 **The two readings of the middle coefficient.** $e_2$ is the trace on $\Lambda^{2}\mathbb{C}^{4}$, and it is also the sum of the six principal $2\times2$ minors of $A$. The identity $\operatorname{tr}(\Lambda^{2}A)=\sum_{i<j}\det A_{[i,j]}$ is the Cauchy–Binet theorem applied to the six coordinate projections.
 
-**The four coefficients and the four forms.** $e_1$ and $e_4$ are the trace and the determinant of the algebra; $e_2$ and $e_3$ are the coefficients that distinguish the two middle exterior powers. At $n=4$ all four are needed: the characteristic polynomial has degree four and no two of its coefficients are functions of the others.
+**The four coefficients and the four forms.** $e_1$ and $e_4$ are the trace and the determinant of the regular representation; $e_2$ and $e_3$ are the coefficients that distinguish the two middle exterior powers. At $n=4$ all four are needed: the characteristic polynomial has degree four and no two of its coefficients are functions of the others.
 
 ## Invariance and the Strata
 
@@ -127,7 +127,7 @@ $$
 
 **The check at the identity and at the vector part.** At $Q_t=1$ and $B=0$ the display gives $e_2=6$, $e_3=4$, $e_4=1$, which is $\det(\mathrm I+t\mathrm I_4)=(1+t)^{4}$. At $Q_t=0$ the display gives $e_1=e_3=0$ and $e_2=2B^{2}$, $e_4=B^{4}$: the traceless left matrices have the spectrum $\pm iB$ twice.
 
-**What the axis-free reading adds.** The determinant is the square of a quadratic form, and the quadratic form is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$, which is the sum of four squares over $\mathbb{C}$ and a Euclidean norm on the real slice. The other three coefficients are the same norm together with the scalar coordinate. In the matrix-unit basis the four coefficients are the same numbers, written as sums over $4^{k}$ minors; the axis-free basis writes them as sums over four coordinates.
+**What the axis-free reading adds.** The determinant of the matrix is the square of a quadratic form, and the quadratic form is the quaternionic norm $\langle\tilde Q\rangle_{\natural}$, which is the sum of four squares over $\mathbb{C}$ and a Euclidean norm on the real slice. The other three coefficients are the same norm together with the scalar coordinate. In the matrix-unit basis the four coefficients are the same numbers, written as sums over $4^{k}$ minors; the axis-free basis writes them as sums over four coordinates.
 
 ## Summary
 

@@ -176,7 +176,7 @@ $$
 
 which was verified on random elements of the two halves and is the $n=2$ case of the two spectral theorems.
 
-**The biquaternion reading gives the spectrum two coordinates.** The four coordinates $e_t,\tilde{Ζ}$ and the two mixed directions give the trace and the determinant, so $\operatorname{Spec}$ of a biquaternion is the pair of roots of $t^{2}-(\text{scalar part})t+(\text{norm})$, and the norm $N$ is the determinant. So the indefinite norm of signature $(2,2)$ is the product of the two spectral values, and the spectrum of an idempotent is $\{1,0\}$ while that of a companion nilpotent is $\{0,0\}$.
+**The biquaternion reading gives the spectrum two coordinates.** The four coordinates $e_t,\tilde{Ζ}$ and the two mixed directions give the trace and the determinant, so $\operatorname{Spec}$ of a biquaternion is the pair of roots of $t^{2}-(\text{scalar part})t+(\text{norm})$, and the norm $N$ is the determinant. So the indefinite norm of inertia $(2,2)$ is the product of the two spectral values, and the spectrum of an idempotent is $\{1,0\}$ while that of a companion nilpotent is $\{0,0\}$.
 
 ## Summary
 

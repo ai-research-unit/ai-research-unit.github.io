@@ -150,7 +150,7 @@ In two-component form the norm has **both signs positive**.
 
 **Proof.** $(q+i q')(q-i q') = q^2 - (i q')^2 = q^2 + q'^2$.
 
-The norm is a positive-definite quadratic form on the coefficient space $\mathbb{R}^2$, of signature $(2,0)$. There is no indefinite form on the coefficient space here, and no restriction can produce one, because there is no central scalar imaginary separate from the algebra.
+The norm is a positive-definite quadratic form on the coefficient space $\mathbb{R}^2$, of inertia $(2,0)$. There is no indefinite form on the coefficient space here, and no restriction can produce one, because there is no central scalar imaginary separate from the algebra.
 
 ### The Two Signs
 
@@ -166,7 +166,7 @@ $$
 \langle Q\rangle_{*} = q'^2.
 $$
 
-Both restrictions are **positive definite**, of signature $(1,0)$, and the form is $(+,+)$ on the coordinate space. The two signs coincide and the two signatures agree: the opposite-sign pattern of an indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.
+Both restrictions are **positive definite**, of inertia $(1,0)$, and the form is $(+,+)$ on the coordinate space. The two signs coincide and the two inertias agree: the opposite-sign pattern of an indefinite algebra does not occur, and the definiteness of the form is why the complex algebra has no zero divisors and no null cone.
 
 ### The Invertibility Criterion in Coordinates
 
@@ -201,11 +201,11 @@ The norm is $\langle Q\rangle_{*} = (Q_0)^2 + (Q_1)^2$, with both signs positive
 | $R_\theta = \mathsf{M}_2(u)$ | the rotation matrix of an invertible element $u = \cos\theta + i\sin\theta$ |
 | $\bar Q \leftrightarrow (q,-q')$ | conjugation in coordinates |
 | $\mathbb{R}_{\mathbb{C}}, i\mathbb{R}_{\mathbb{C}}$ | real axis $Q_1=0$ and imaginary axis $Q_0=0$ |
-| $\langle Q\rangle_{*} = (Q_0)^2+(Q_1)^2 = q^2+q'^2$ | the norm, signature $(2,0)$ |
+| $\langle Q\rangle_{*} = (Q_0)^2+(Q_1)^2 = q^2+q'^2$ | the norm, inertia $(2,0)$ |
 | $Q^{-1} = (q,-q')/\langle Q\rangle_{*}$ | the inverse in coordinates |
 
 ## Further Reading
 
 - Carl Friedrich Gauss, *Theoria residuorum biquadraticorum, Commentatio secunda* (Göttingen, 1831), for the representation of a complex number by two real coordinates.
-- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the quadratic forms and signatures attached to a real algebra in coordinates.
+- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the quadratic forms and inertias attached to a real algebra in coordinates.
 - Tristan Needham, *Visual Complex Analysis* (Oxford University Press, 1997), for the rotation-and-scaling reading of the component product.

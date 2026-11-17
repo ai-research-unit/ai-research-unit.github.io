@@ -96,7 +96,7 @@ It follows the biquaternion article *The Polar Decomposition of a Biquaternion* 
 
 **Proposition.** In the biquaternion language the polar decomposition is the split of an element into its norm and its direction, and the algebraic norm $N$ is the determinant of the positive factor.
 
-**Proof.** The algebraic norm $N$ of signature $(2,2)$ restricts to the determinant on the matrix model, and the positive factor has the determinant equal to $N$ of the element.
+**Proof.** The algebraic norm $N$ of inertia $(2,2)$ restricts to the determinant on the matrix model, and the positive factor has the determinant equal to $N$ of the element.
 
 **Corollary.** The biquaternion polar decomposition of *The Polar Decomposition of a Biquaternion* is the same statement under the identification of the two algebras.
 

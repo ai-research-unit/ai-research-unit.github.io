@@ -510,7 +510,7 @@ with the quaternion conjugate on the right, and the leading minus is essential.
 
 On the Hermitian sector the congruence of a modulus-one unit is proper and orthochronous. The other three components are reached by composing it with two operations that are not of that form:
 
-| operation on $\mathbb{B}_{\Psi}$ | determinant | time orientation | component |
+| operation on $\mathbb{B}_{\Psi}$ | the determinant of the image | time orientation | component |
 | --- | --- | --- | --- |
 | $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, $\lvert N(\tilde U)\rvert=1$ | $+1$ | $+$ | the identity component $SO^{+}(1,3)$ |
 | $\tilde X\mapsto\tilde U\tilde X^{\natural}\tilde U^{*}$, the argument conjugated | $-1$ | $+$ | the improper orthochronous coset |

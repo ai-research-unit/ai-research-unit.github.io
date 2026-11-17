@@ -400,7 +400,7 @@ as it must be, since the determinant of the exponential is the exponential of th
 
 Every invertible complex $2\times2$ matrix has a polar decomposition $B=PU$ with $P$ Hermitian positive definite and $U$ $*$-unitary, and for $B=M_{\tilde q}$ the conformal identity $M_{\tilde q}M_{\tilde q}^{\dagger}=r^2I$ gives $P=rI$ and $U=M_{\tilde u_{\mathrm r}}\in SU(2)$. The positive factor is a scalar because the only positive definite Hermitian matrices in the family are the positive multiples of the identity. The general theorem is the same splitting without the conformal restriction; the positive factor then carries the two singular values instead of the single scale $r$.
 
-| factor | matrix | logarithm | determinant |
+| factor | matrix | logarithm | the determinant of the image |
 |---|---|---|---|
 | modulus | $rI$ | $\ln r\,I$ | $r^2$ |
 | unit factor | $M_{\tilde u_{\mathrm r}}\in SU(2)$ | $\theta N$ | $1$ |

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article is the rotation slot of the split biquaternion system. It determines which Lorentzian geometry the algebra $\mathbb{B}_{\mathrm{spl}}$ carries, identifies the isometry groups of the quadratic forms that the algebra presents, and describes how much of those isometry groups the algebra itself realises. The **Lorentz group** is used here in its mathematical sense throughout: it is the isometry group of a non-degenerate symmetric bilinear form of signature $(3,1)$ on a real vector space of dimension four. Nothing physical is attached to the word; it names a position in the classification of forms, and the companion statements about forms of signature $(2,2)$ are made in the same spirit. The two-dimensional model, where the corresponding group is the hyperbolic rotation group of the split complex numbers, is the article *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, and the general theory of forms of indefinite signature, of their isometry groups and of the geometry they define is the article *Pseudo-Riemannian and Lorentzian Geometry* in Part II, written in parallel; both are cited rather than reproduced.
+This article is the rotation slot of the split biquaternion system. It determines which Lorentzian geometry the algebra $\mathbb{B}_{\mathrm{spl}}$ carries, identifies the isometry groups of the quadratic forms that the algebra presents, and describes how much of those isometry groups the algebra itself realises. The **Lorentz group** is used here in its mathematical sense throughout: it is the isometry group of a non-degenerate symmetric bilinear form of inertia $(3,1)$ on a real vector space of dimension four. Nothing physical is attached to the word; it names a position in the classification of forms, and the companion statements about forms of inertia $(2,2)$ are made in the same spirit. The two-dimensional model, where the corresponding group is the hyperbolic rotation group of the split complex numbers, is the article *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, and the general theory of forms of indefinite inertia, of their isometry groups and of the geometry they define is the article *Pseudo-Riemannian and Lorentzian Geometry* in Part II, written in parallel; both are cited rather than reproduced.
 
 The article assumes the split biquaternion algebra from *Split-Biquaternion Algebra*: $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension eight, with the four conjugations ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and ${}^{\flat} = -{}^{*}$, with the idempotents $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the split-biquaternion norm $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$ and the theory of its invertibility from *Split-Biquaternion Norm and Invertibility*, the description of the zero divisors from *Split-Biquaternion Zero Divisors*, the classification of the roots of $-e_t$ from *Split-Biquaternion Roots of Minus One*. It uses the hyperbolic rotations of the split complex plane from *Hyperbolic Rotations*, and the quaternion rotation theory — the double cover $Sp(1)\to SO(3)$ and the two-sided action giving $SO(4)$ — from *Quaternion Rotations and Reflections*. It does not restate any of them; the rotation theory of the quaternions is used only as the compact model against which the split biquaternion case is compared. The Lie algebra $\mathrm{SO}(3,1)$ and its complexification are treated in *The Orthogonal Lie Algebra* in Part I, where the isomorphism $\mathrm{SO}(1,3)\cong\mathrm{SL}_2(\mathbb{C})$ is established.
 
@@ -13,13 +13,13 @@ The article follows the shared conventions. The quaternion basis is $e_t = 1, \v
 
 ### The Definition
 
-**Definition.** Let $V$ be a real vector space and let $g$ be a non-degenerate symmetric bilinear form on $V$. Write $(n,m)$ for its **signature**, where $n$ is the number of positive and $m$ the number of negative entries in a diagonalisation; the dimension of $V$ is $N = n+m$. The **orthogonal group** $O(n,m)$ is the group of linear isomorphisms $T$ of $V$ with
+**Definition.** Let $V$ be a real vector space and let $g$ be a non-degenerate symmetric bilinear form on $V$. Write $(n,m)$ for its **inertia**, where $n$ is the number of positive and $m$ the number of negative entries in a diagonalisation; the dimension of $V$ is $N = n+m$. The **orthogonal group** $O(n,m)$ is the group of linear isomorphisms $T$ of $V$ with
 
 $$
 g(T\mathbf{Q}, T\mathbf{P}) = g(\mathbf{Q},\mathbf{P}) \qquad\text{for all } \mathbf{Q}, \mathbf{P}\in V .
 $$
 
-When $(n,m) = (3,1)$ the group $O(3,1)$ is called the **Lorentz group**, and the form a **Lorentzian form**; when $(n,m) = (2,2)$ the group is written $O(2,2)$ and the form is called **neutral** or **of Kleinian signature**.
+When $(n,m) = (3,1)$ the group $O(3,1)$ is called the **Lorentz group**, and the form a **Lorentzian form**; when $(n,m) = (2,2)$ the group is written $O(2,2)$ and the form is called **neutral** or **of Kleinian inertia**.
 
 **Proposition.** For every non-degenerate symmetric form the group $O(n,m)$ is a closed subgroup of $GL_n(\mathbb{R})$, hence a Lie group; it contains the finite central subgroup $\{\pm 1\}$; its Lie algebra is
 
@@ -33,7 +33,7 @@ of dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$; and its identity compo
 
 ### The Groups $O(3,1)$, $SO(3,1)$ and $SO^{+}(3,1)$
 
-For a Lorentzian form of signature $(3,1)$ the determinant takes the two values $\pm1$ and $\det T = +1$ singles out $SO(3,1)$, of index two. The identity component $SO^{+}(3,1)$ is the subgroup of $SO(3,1)$ carrying a chosen timelike vector to a vector in the same half of the timelike cone; it has index two in $SO(3,1)$ and index four in $O(3,1)$. Both $SO(3,1)$ and $SO^{+}(3,1)$ have dimension six, and their Lie algebras agree:
+For a Lorentzian form of inertia $(3,1)$ the determinant takes the two values $\pm1$ and $\det T = +1$ singles out $SO(3,1)$, of index two. The identity component $SO^{+}(3,1)$ is the subgroup of $SO(3,1)$ carrying a chosen timelike vector to a vector in the same half of the timelike cone; it has index two in $SO(3,1)$ and index four in $O(3,1)$. Both $SO(3,1)$ and $SO^{+}(3,1)$ have dimension six, and their Lie algebras agree:
 
 $$
 \dim\mathrm{SO}(3,1) = 6, \qquad \mathrm{SO}(3,1)\cong\mathrm{SO}(1,3)\cong\mathrm{SL}_2(\mathbb{C}) \ \text{ as complex Lie algebras},
@@ -43,20 +43,20 @@ the last isomorphism being the one established in *The Orthogonal Lie Algebra*. 
 
 ### The Groups $O(2,2)$ and $SO(2,2)$
 
-For a neutral form of signature $(2,2)$ the determinant again takes the values $\pm1$, $\dim\mathrm{SO}(2,2) = 6$, and
+For a neutral form of inertia $(2,2)$ the determinant again takes the values $\pm1$, $\dim\mathrm{SO}(2,2) = 6$, and
 
 $$
 \mathrm{SO}(2,2)\cong\mathrm{SL}_2(\mathbb{R})\oplus\mathrm{SL}_2(\mathbb{R}), \qquad
 SO^{+}(2,2)\cong( SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm1\},
 $$
 
-the latter a standard isomorphism, obtained as follows: $SL_2(\mathbb{R})$ acts on the space of symmetric $2\times2$ matrices by $M\mapsto AMA^{t}$, preserving the determinant, which is a form of signature $(2,1)$, and the product acts on all $2\times2$ matrices by $(A,B)\cdot M = AMB^{-1}$, preserving the determinant, which is a form of signature $(2,2)$. The maximal compact subgroup of $SO^{+}(2,2)$ is the two-dimensional torus $SO(2)\times SO(2)$, larger than in the Lorentzian case relative to the dimension; the difference between the two signatures is exactly the difference between the ranks of the associated symmetric spaces.
+the latter a standard isomorphism, obtained as follows: $SL_2(\mathbb{R})$ acts on the space of symmetric $2\times2$ matrices by $M\mapsto AMA^{t}$, preserving the determinant, which is a form of inertia $(2,1)$, and the product acts on all $2\times2$ matrices by $(A,B)\cdot M = AMB^{-1}$, preserving the determinant, which is a form of inertia $(2,2)$. The maximal compact subgroup of $SO^{+}(2,2)$ is the two-dimensional torus $SO(2)\times SO(2)$, larger than in the Lorentzian case relative to the dimension; the difference between the two inertias is exactly the difference between the ranks of the associated symmetric spaces.
 
-The two signatures are not unrelated. Over $\mathbb{C}$ a non-degenerate symmetric form has no signature, and the complexifications $O(3,1)_{\mathbb{C}}$ and $O(2,2)_{\mathbb{C}}$ coincide with $O(4,\mathbb{C})$; the two real forms classified by $(3,1)$ and $(2,2)$ are the two real structures of the same complex group, one with real points the Lorentz group and one with real points the neutral group. The complex quadric $\{g = 0\}\subset\mathbb{P}^3$, which describes both, is doubly ruled: through each of its points pass two lines, and the two families are interchanged by the Galois action. This is the sense in which the definite case has one kind of rotation and the indefinite case has three, and it explains why the classification of one-parameter subgroups below has three entries rather than one.
+The two inertias are not unrelated. Over $\mathbb{C}$ a non-degenerate symmetric form has no inertia, and the complexifications $O(3,1)_{\mathbb{C}}$ and $O(2,2)_{\mathbb{C}}$ coincide with $O(4,\mathbb{C})$; the two real forms classified by $(3,1)$ and $(2,2)$ are the two real structures of the same complex group, one with real points the Lorentz group and one with real points the neutral group. The complex quadric $\{g = 0\}\subset\mathbb{P}^3$, which describes both, is doubly ruled: through each of its points pass two lines, and the two families are interchanged by the Galois action. This is the sense in which the definite case has one kind of rotation and the indefinite case has three, and it explains why the classification of one-parameter subgroups below has three entries rather than one.
 
 ## The Hermitian Form on the Split Biquaternions
 
-### The Hermitian Scalar Form and Its Signature
+### The Hermitian Scalar Form and Its Inertia
 
 The algebra carries a natural real bilinear form, built from the Hermitian conjugation alone.
 
@@ -68,9 +68,9 @@ $$
 
 where $\mathrm{Sc}$ is the scalar part, the coefficient of $e_t$ in the developed form.
 
-**Proposition.** The Hermitian scalar form is symmetric, real-valued and $\mathbb{R}$-bilinear, and its signature is $(4,4)$. In the real basis $(e_t, \vec e_x, \vec e_y, \vec e_z, je_t, j\vec e_x, j\vec e_y, j\vec e_z)$ it is diagonal with entries $(+1,+1,+1,+1,-1,-1,-1,-1)$.
+**Proposition.** The Hermitian scalar form is symmetric, real-valued and $\mathbb{R}$-bilinear, and its inertia is $(4,4)$. In the real basis $(e_t, \vec e_x, \vec e_y, \vec e_z, je_t, j\vec e_x, j\vec e_y, j\vec e_z)$ it is diagonal with entries $(+1,+1,+1,+1,-1,-1,-1,-1)$.
 
-*Proof.* Symmetry: $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) = \mathrm{Sc}((\tilde Q_2\tilde Q_1^{*})^{\natural}) = \mathrm{Sc}(\tilde Q_2\tilde Q_1^{*})$, because the scalar part is fixed by ${}^{\natural}$ and by $\bar{\cdot}$ separately, hence by ${}^{*}$. Bilinearity is clear. For the signature, write $\tilde Q_2 = c + jd$ with $c, d\in\mathbb{H}$; then $\tilde Q_2^{*} = c^{\natural} - jd^{\natural}$ and
+*Proof.* Symmetry: $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}) = \mathrm{Sc}((\tilde Q_2\tilde Q_1^{*})^{\natural}) = \mathrm{Sc}(\tilde Q_2\tilde Q_1^{*})$, because the scalar part is fixed by ${}^{\natural}$ and by $\bar{\cdot}$ separately, hence by ${}^{*}$. Bilinearity is clear. For the inertia, write $\tilde Q_2 = c + jd$ with $c, d\in\mathbb{H}$; then $\tilde Q_2^{*} = c^{\natural} - jd^{\natural}$ and
 
 $$
 \tilde Q_1\tilde Q_2^{*} = \left(ac^{\natural} - bd^{\natural}\right) + j\left(bc^{\natural} - ad^{\natural}\right)
@@ -78,7 +78,7 @@ $$
 
 for $\tilde Q_1 = a + jb$, so that $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(ac^{\natural} - bd^{\natural})$ with $\mathrm{Sc}$ now the quaternion scalar part. On the basis elements this gives $g(e_\mu,e_\nu) = \delta_{\mu\nu}$, $g(je_\mu,je_\nu) = -\delta_{\mu\nu}$ and $g(e_\mu,je_\nu) = 0$, since $\mathrm{Sc}(ac^{\natural})$ and $-\mathrm{Sc}(bd^{\natural})$ are the two contributions and the cross terms vanish.
 
-The form is non-degenerate, of signature $(4,4)$, so it is neutral on the algebra as a whole, with four positive and four negative directions. This is the ambient form of the split biquaternion rotations: every rotation considered below is required to preserve it.
+The form is non-degenerate, of inertia $(4,4)$, so it is neutral on the algebra as a whole, with four positive and four negative directions. This is the ambient form of the split biquaternion rotations: every rotation considered below is required to preserve it.
 
 ### The Hermitian and the Anti-Hermitian Subspaces
 
@@ -110,13 +110,13 @@ $$
 
 Consequently $\mathbb{B}_{\Phi}$ is a Lorentzian four-space with the form $g$, and $O(3,1)$ is the isometry group of $(\mathbb{B}_{\Phi},g)$; $\mathbb{B}_{\Psi}$ carries the opposite Lorentzian form, and $O(1,3)\cong O(3,1)$ is its isometry group.
 
-*Proof.* On $\mathbb{B}_{\Psi}$ the basis $(e_t, j\vec e_x, j\vec e_y, j\vec e_z)$ gives diagonal entries $g(e_t,e_t) = +1$ and $g(j\vec e_k,j\vec e_k) = -1$, hence signature $(1,3)$. On $\mathbb{B}_{\Phi}$ the basis $(je_t, \vec e_x, \vec e_y, \vec e_z)$ gives $g(je_t,je_t) = -1$ and $g(\vec e_k,\vec e_k) = +1$, hence signature $(3,1)$. The identification of the isometry group is the definition of $O(3,1)$.
+*Proof.* On $\mathbb{B}_{\Psi}$ the basis $(e_t, j\vec e_x, j\vec e_y, j\vec e_z)$ gives diagonal entries $g(e_t,e_t) = +1$ and $g(j\vec e_k,j\vec e_k) = -1$, hence inertia $(1,3)$. On $\mathbb{B}_{\Phi}$ the basis $(je_t, \vec e_x, \vec e_y, \vec e_z)$ gives $g(je_t,je_t) = -1$ and $g(\vec e_k,\vec e_k) = +1$, hence inertia $(3,1)$. The identification of the isometry group is the definition of $O(3,1)$.
 
 The element $je_t$ is therefore a **timelike** vector of the algebra, of $g$-norm $-1$; the elements $\vec e_x, \vec e_y, \vec e_z$ are **spacelike**, of $g$-norm $+1$; and $\mathbb{B}_{\Phi}$ is the Lorentzian four-space attached to the split biquaternion algebra. In the identity $u = u_+ + u_-$ with $u_{\pm}$ the projections onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$, the form is $g(u,u) = |u_+|^2_{+} + |u_-|^2_{-}$ where the two summands carry opposite signs.
 
 ### Neutral Planes and the $(2,2)$ Form
 
-**Definition.** A real subspace $W\subset\mathbb{B}_{\mathrm{spl}}$ is **neutral** if $\dim W = 4$ and $g\big|_W$ has signature $(2,2)$. Such a subspace is **totally isotropic** if $g\big|_W = 0$ and $\dim W = 4$; the maximal $g$-totally-isotropic subspaces of $\mathbb{B}_{\mathrm{spl}}$ are four-dimensional.
+**Definition.** A real subspace $W\subset\mathbb{B}_{\mathrm{spl}}$ is **neutral** if $\dim W = 4$ and $g\big|_W$ has inertia $(2,2)$. Such a subspace is **totally isotropic** if $g\big|_W = 0$ and $\dim W = 4$; the maximal $g$-totally-isotropic subspaces of $\mathbb{B}_{\mathrm{spl}}$ are four-dimensional.
 
 **Proposition.** Let $\mu\neq\nu$ be two distinct elements of $\{t,x,y,z\}$. The $\mathbb{C}_{\mathrm{spl}}$-span
 
@@ -126,9 +126,9 @@ $$
 
 is a neutral four-plane, with the orthonormal basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ and the diagonal form $(+1,-1,+1,-1)$; the isometry group of this plane is $O(2,2)$. Every neutral four-plane of $\mathbb{B}_{\mathrm{spl}}$ is carried to one of these by the symmetries of the algebra.
 
-*Proof.* The basis is orthogonal because distinct basis elements of the quaternion basis are $g$-orthogonal and because $g(e_\mu,je_\mu) = 0$ by the cross-term computation above; the diagonal values are $g(e_\mu,e_\mu) = +1$ and $g(je_\mu,je_\mu) = -1$, and likewise for $\nu$. The form is therefore of signature $(2,2)$, and its isometry group is $O(2,2)$ by definition. The last assertion is the standard fact that a non-degenerate subspace of a given signature is unique up to the isometry group of the ambient form, applied with the ambient form $g$; the transitivity needed is that of the group preserving the quaternion structure of the index set, which acts transitively on unordered pairs of distinct indices.
+*Proof.* The basis is orthogonal because distinct basis elements of the quaternion basis are $g$-orthogonal and because $g(e_\mu,je_\mu) = 0$ by the cross-term computation above; the diagonal values are $g(e_\mu,e_\mu) = +1$ and $g(je_\mu,je_\mu) = -1$, and likewise for $\nu$. The form is therefore of inertia $(2,2)$, and its isometry group is $O(2,2)$ by definition. The last assertion is the standard fact that a non-degenerate subspace of a given inertia is unique up to the isometry group of the ambient form, applied with the ambient form $g$; the transitivity needed is that of the group preserving the quaternion structure of the index set, which acts transitively on unordered pairs of distinct indices.
 
-So the split biquaternion algebra carries Lorentzian four-planes of both relevant signatures: the two eigenspaces of the Hermitian conjugation with $(3,1)$ and $(1,3)$, and the neutral four-planes spanned by two quaternion coordinates with $(2,2)$. The Lorentz group and the neutral group are both isometry groups of forms that the algebra presents, and this is the precise sense in which the split biquaternions are the algebra of the Lorentz groups $SO(3,1)$ and $SO(2,2)$.
+So the split biquaternion algebra carries Lorentzian four-planes of both relevant inertias: the two eigenspaces of the Hermitian conjugation with $(3,1)$ and $(1,3)$, and the neutral four-planes spanned by two quaternion coordinates with $(2,2)$. The Lorentz group and the neutral group are both isometry groups of forms that the algebra presents, and this is the precise sense in which the split biquaternions are the algebra of the Lorentz groups $SO(3,1)$ and $SO(2,2)$.
 
 ## The Unit Sphere of the Algebra
 
@@ -239,7 +239,7 @@ $$
 \Delta\,SO(1,1)\subset SO(1,1)\times SO(1,1)\subset SO^{+}(2,2).
 $$
 
-*Proof.* The basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ of the neutral plane is $g$-orthonormal of signature $(+1,-1,+1,-1)$. In each coordinate plane the map is the hyperbolic rotation with matrix $\begin{pmatrix}\cosh\theta & \sinh\theta\\ \sinh\theta & \cosh\theta\end{pmatrix}$ in the basis $(e_\rho, je_\rho)$, and this matrix preserves the form $\operatorname{diag}(+1,-1)$ because $\cosh^2\theta - \sinh^2\theta = 1$ and the cross term $\cosh\theta\sinh\theta - \sinh\theta\cosh\theta$ vanishes; two blocks therefore preserve the form of signature $(2,2)$. It does not preserve $\mathbb{B}_{\Phi}$: the image of $je_t$ is $\sinh\theta\,e_t + \cosh\theta\,je_t$, whose $e_t$-component is real and non-zero for $\theta\neq0$, whereas an element of $\mathbb{B}_{\Phi}$ has a purely imaginary $e_t$-component.
+*Proof.* The basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ of the neutral plane is $g$-orthonormal with signs $(+1,-1,+1,-1)$. In each coordinate plane the map is the hyperbolic rotation with matrix $\begin{pmatrix}\cosh\theta & \sinh\theta\\ \sinh\theta & \cosh\theta\end{pmatrix}$ in the basis $(e_\rho, je_\rho)$, and this matrix preserves the form $\operatorname{diag}(+1,-1)$ because $\cosh^2\theta - \sinh^2\theta = 1$ and the cross term $\cosh\theta\sinh\theta - \sinh\theta\cosh\theta$ vanishes; two blocks therefore preserve the form of inertia $(2,2)$. It does not preserve $\mathbb{B}_{\Phi}$: the image of $je_t$ is $\sinh\theta\,e_t + \cosh\theta\,je_t$, whose $e_t$-component is real and non-zero for $\theta\neq0$, whereas an element of $\mathbb{B}_{\Phi}$ has a purely imaginary $e_t$-component.
 
 Two geometrically distinct families of isometries are thus realised inside the algebra: the elliptic group $SO(3)$ of the $*$-unitary action, on the Lorentzian four-plane $\mathbb{B}_{\Phi}$, and the hyperbolic group, the diagonal $SO(1,1)$ inside $SO(1,1)\times SO(1,1)$, of the split complex units, on the neutral four-planes. The two families commute: the $*$-unitary action is conjugation by quaternion units and fixes the central split complex scalars, while left multiplication by $\exp(\theta j)$ is central and commutes with conjugation by any element.
 
@@ -372,9 +372,9 @@ The second warning is that the non-compactness appears only on the isometry-grou
 
 ## Summary
 
-The Lorentz group is the isometry group of a non-degenerate symmetric bilinear form of signature $(3,1)$; it is a Lie group of dimension six with Lie algebra $\mathrm{SO}(3,1)\cong\mathrm{SL}_2(\mathbb{C})$ as complex Lie algebras, its identity component $SO^{+}(3,1)$ has maximal compact subgroup $SO(3)$, and the neutral signature $(2,2)$ gives $SO^{+}(2,2)\cong(SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm1\}$. The two signatures are the two real forms of the same complex group.
+The Lorentz group is the isometry group of a non-degenerate symmetric bilinear form of inertia $(3,1)$; it is a Lie group of dimension six with Lie algebra $\mathrm{SO}(3,1)\cong\mathrm{SL}_2(\mathbb{C})$ as complex Lie algebras, its identity component $SO^{+}(3,1)$ has maximal compact subgroup $SO(3)$, and the neutral inertia $(2,2)$ gives $SO^{+}(2,2)\cong(SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm1\}$. The two inertias are the two real forms of the same complex group.
 
-The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ carries the Hermitian scalar form $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, of signature $(4,4)$, diagonal in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z,je_t,j\vec e_x,j\vec e_y,j\vec e_z)$. The Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ are four-dimensional, orthogonal, complementary, and carry the forms of signature $(1,3)$ and $(3,1)$; the $\mathbb{C}_{\mathrm{spl}}$-span of any two quaternion coordinates is a neutral four-plane of signature $(2,2)$. Hence $O(3,1)$ and $O(2,2)$ both occur as isometry groups of forms that the algebra presents.
+The split biquaternion algebra $\mathbb{B}_{\mathrm{spl}}$ carries the Hermitian scalar form $g(\tilde Q_1,\tilde Q_2) = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, of inertia $(4,4)$, diagonal in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z,je_t,j\vec e_x,j\vec e_y,j\vec e_z)$. The Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$ are four-dimensional, orthogonal, complementary, and carry the forms of inertia $(1,3)$ and $(3,1)$; the $\mathbb{C}_{\mathrm{spl}}$-span of any two quaternion coordinates is a neutral four-plane of inertia $(2,2)$. Hence $O(3,1)$ and $O(2,2)$ both occur as isometry groups of forms that the algebra presents.
 
 The unit sphere $\{\tilde S : \langle\tilde S\rangle_{\natural} = e_t\}\cong S^3\times S^3$ is compact and six-dimensional, the product of the two idempotent components. The $*$-unitary group $\{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ acts on $\mathbb{B}_{\Phi}$ by isometries, fixes the timelike vector $je_t$, and realises exactly the compact group $SO(3)$ of spacelike rotations; the split complex units $\exp(\theta j)$ preserve the neutral four-planes and realise there the diagonal $SO(1,1)$ inside $SO(1,1)\times SO(1,1)$, and the two families commute. The parabolic one-parameter subgroups are not realised in the algebra, because $\mathbb{B}_{\mathrm{spl}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
 
@@ -393,9 +393,9 @@ In $(\mathbb{B}_{\Phi},g)$ the level set $g = -1$ is a hyperboloid of two sheets
 | $\tilde\Pi_{1,2} = \tfrac{1}{2}(1\pm j)$ | Idempotents, $\tilde\Pi_1\tilde\Pi_2 = 0$ |
 | ${}^{\natural},\ \bar{\cdot},\ {}^{*} = {}^{\natural}\,\bar{\cdot},\ {}^{\flat} = -{}^{*}$ | The four conjugations |
 | $\langle\tilde Q\rangle_{\natural} = \tilde Q\tilde{Q}^{\natural}$ | Split-Biquaternion norm |
-| $g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian form, signature $(4,4)$ |
-| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, signatures $(1,3)$, $(3,1)$ |
-| $\mathbb{C}_{\mathrm{spl}}e_\mu\oplus\mathbb{C}_{\mathrm{spl}}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
+| $g(\tilde Q_1,\tilde Q_2) = \langle\tilde Q_1,\tilde Q_2\rangle_{*} = \mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Hermitian form, inertia $(4,4)$ |
+| $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, inertias $(1,3)$, $(3,1)$ |
+| $\mathbb{C}_{\mathrm{spl}}e_\mu\oplus\mathbb{C}_{\mathrm{spl}}e_\nu$ | Neutral four-plane, inertia $(2,2)$ |
 | $O(n,m)$, $SO(n,m)$, $SO^{+}(n,m)$ | Orthogonal group of a form, its determinant-one part, its identity component |
 | $\mathrm{SO}(n,m)$ | Lie algebra of $g$-anti-self-adjoint endomorphisms, dimension $\tfrac{1}{2}\langle N-1\rangle_{\natural}$ |
 | $\mathrm{U}(\mathbb{B}_{\mathrm{spl}}) = \{\tilde S : \tilde S\tilde{S}^{*} = e_t\}\cong Sp(1)\times\mathbb{R}$ | $*$-Unitary group |
@@ -417,7 +417,7 @@ In $(\mathbb{B}_{\Phi},g)$ the level set $g = -1$ is a hyperboloid of two sheets
 - Michael Eastwood and Paul Tod, "Edth-a differential operator on the sphere", *Mathematical Proceedings of the Cambridge Philosophical Society* **92** (1982), 317–330, for the doubly ruled complex quadric and the two real forms.
 - Dirk J. Struik, *Lectures on Classical Differential Geometry* (Dover, 1988), for the doubly ruled quadrics and their two families of lines.
 - Rafael López, "Differential geometry of curves and surfaces in Lorentz–Minkowski space" (arXiv:0810.3351), for the hyperboloids and the null cone of a Lorentzian four-space.
-- Walter Benz, *Classical Geometries in Modern Contexts* (Birkhäuser, 2005), for the neutral signature geometry and the Kleinian quadric.
+- Walter Benz, *Classical Geometries in Modern Contexts* (Birkhäuser, 2005), for the neutral inertia geometry and the Kleinian quadric.
 - I. L. Kantor and A. S. Solodovnikov, *Hypercomplex Numbers: An Elementary Introduction to Algebras* (Springer, 1989), for inner automorphisms and the $*$-unitary group of an algebra with conjugation.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, 1997), for the two-sided action of the quaternion sphere and the double cover $Sp(1)\to SO(3)$.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the two-sided action of versors on a Clifford algebra and the doubling of the angle.

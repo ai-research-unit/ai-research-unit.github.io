@@ -102,7 +102,7 @@ $$
 \langle z\rangle_{*} = a^2 - a'^2 = z_+ z_- ,
 $$
 
-indefinite of signature $(1,1)$; its zero set is the **null cone** $\mathcal{N} = \mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$, the two null lines $z_+ = 0$ and $z_- = 0$, whose nonzero elements are the zero divisors.
+indefinite of inertia $(1,1)$; its zero set is the **null cone** $\mathcal{N} = \mathbb{R}\Pi_+ \cup \mathbb{R}\Pi_-$, the two null lines $z_+ = 0$ and $z_- = 0$, whose nonzero elements are the zero divisors.
 
 **Definition.** The **level sets of the norm** are the sets $\langle z\rangle_{*} = t$: for $t > 0$ the two branches of a hyperbola crossing the real axis at $\pm\sqrt{t}$; for $t < 0$ the two branches crossing the imaginary axis at $\pm\sqrt{|t|}j$; for $t = 0$ the two null lines. In the idempotent coordinates each level set is the hyperbola $z_+z_- = t$.
 

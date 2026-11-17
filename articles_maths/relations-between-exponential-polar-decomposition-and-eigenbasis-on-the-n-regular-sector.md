@@ -173,7 +173,7 @@ $$
 {\pm2i\bigl(\vec U\cdot\vec U\bigr)^{1/2}},
 $$
 
-by the Lagrange–Sylvester formula of *The Lagrange–Sylvester Eigenprojector Formula*, applied to $\tilde U$. The formula is the one of the eigenvalue article with $\tilde U$ in place of $\tilde Q$; it is not a new identity. The eigenvalues of $\tilde U$ are reciprocal, as they must be for determinant one.
+by the Lagrange–Sylvester formula of *The Lagrange–Sylvester Eigenprojector Formula*, applied to $\tilde U$. The formula is the one of the eigenvalue article with $\tilde U$ in place of $\tilde Q$; it is not a new identity. The eigenvalues of $\tilde U$ are reciprocal, as they must be for unit norm.
 
 The table records the two levels.
 
@@ -294,7 +294,7 @@ $$
 =\cosh\theta_{\mathrm{rpd}}\,e_t+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b},
 $$
 
-so the formula returns the boost $\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is $*$-unitary of determinant one. This is the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ read algebraically.
+so the formula returns the boost $\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}=\tilde U_{\mathrm b}^{-1}\tilde U$ is $*$-unitary of unit norm. This is the Cartan decomposition $SL(2,\mathbb{C})=P\cdot K$ read algebraically.
 
 **Step 4: the two angles and the two axes.** From the closed forms
 

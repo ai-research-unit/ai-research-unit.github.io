@@ -153,7 +153,7 @@ $$
 
 In particular the three spatial coefficients anticommute pairwise and square to $e_t$. Multiply them by the central $i$: the three $c_k=ia_k$ anticommute pairwise and square to $-e_t$. They form a quaternionic triple, so they generate $\mathbb{B}$, and no element anticommutes with all three. Hence no $a_t$ anticommutes with all three $a_k$, and the relation $a_ta_k+a_ka_t=0$ is impossible for a nonzero $a_t$. The zero-order term $b$ enters only the first-order and constant parts, $\sum_\mu(a_\mu b+ba_\mu)\partial/\partial Q_\mu+b^2$, and cannot repair the second order. The contradiction is therefore independent of $b$ and $\lambda$.
 
-The same argument covers the material-sector signature. Multiplying every coefficient by $i$ flips the sign of every square and preserves every anticommutator, so a quadruple of one signature exists exactly when one of the opposite signature does.
+The same argument covers the material-sector inertia. Multiplying every coefficient by $i$ flips the sign of every square and preserves every anticommutator, so a quadruple of one inertia exists exactly when one of the opposite inertia does.
 
 ### The Carrier Is Four-Dimensional
 
@@ -238,7 +238,7 @@ $$
 =\bigl(q_0^2-\lvert\vec q\rvert^2-m^2\bigr)^4 ,
 $$
 
-the fourth power of the symbol of $\Box-m^2$. The fourth power is the signature of the doubled carrier: eliminating one block leaves the Schur complement $(q_0^2-\lvert\vec q\rvert^2-m^2)$ times the four-dimensional identity.
+the fourth power of the symbol of $\Box-m^2$. The fourth power is the inertia of the doubled carrier: eliminating one block leaves the Schur complement $(q_0^2-\lvert\vec q\rvert^2-m^2)$ times the four-dimensional identity.
 
 The determinant of the left action of $\tilde K$ on $\mathbb{B}$ is the square of its quaternionic norm,
 

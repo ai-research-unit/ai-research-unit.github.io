@@ -505,7 +505,7 @@ The following questions are not answered in this article and are left for later 
 
 4. **The relation to the polar decomposition.** How does the polar decomposition of the split biquaternion algebra interact with the integration theory?
 
-5. **The relation to the integral formulas of Clifford analysis.** How does the split biquaternion integration theory relate to the general Clifford analysis with split signature?
+5. **The relation to the integral formulas of Clifford analysis.** How does the split biquaternion integration theory relate to the general Clifford analysis with split inertia?
 
 6. **Applications.** What are the applications of the split biquaternion integration theory to the solution of partial differential equations?
 

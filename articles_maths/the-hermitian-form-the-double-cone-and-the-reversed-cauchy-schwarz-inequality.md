@@ -204,15 +204,15 @@ Over $\mathbb{C}$ the Hermitian square $A\bar A$ takes its values in the ray $\m
 
 ### The Compact Group There
 
-Over $\mathbb{C}$ the unitary group of the module of rank one is the circle $S^1$, compact, connected, with a period. Here it is $\mathbb{R}^\times$, disconnected, with two branches and no period. The difference is the signature: a definite form of signature $(2,0)$ gives a compact group, an indefinite one of signature $(1,1)$ gives a non-compact group with two components. The compact part of the isometry group of $g$ is $\{\pm\mathrm{id},\pm\bar\cdot\}$, of order four, which is the shadow of the circle that the definite case has in full.
+Over $\mathbb{C}$ the unitary group of the module of rank one is the circle $S^1$, compact, connected, with a period. Here it is $\mathbb{R}^\times$, disconnected, with two branches and no period. The difference is the inertia: a definite form of inertia $(2,0)$ gives a compact group, an indefinite one of inertia $(1,1)$ gives a non-compact group with two components. The compact part of the isometry group of $g$ is $\{\pm\mathrm{id},\pm\bar\cdot\}$, of order four, which is the shadow of the circle that the definite case has in full.
 
 ### The Isotropic Lines There
 
-Over $\mathbb{C}$ no non-zero vector is isotropic, and no line is totally isotropic. Here two lines are, and they are the boundary of the cone. This is the sharpest form of the difference: a definite form has no isotropic vector, an indefinite form of signature $(1,1)$ has two isotropic lines, and everything in this article, the cone, the reversed inequalities, the order and the two branches, is a consequence of those two lines.
+Over $\mathbb{C}$ no non-zero vector is isotropic, and no line is totally isotropic. Here two lines are, and they are the boundary of the cone. This is the sharpest form of the difference: a definite form has no isotropic vector, an indefinite form of inertia $(1,1)$ has two isotropic lines, and everything in this article, the cone, the reversed inequalities, the order and the two branches, is a consequence of those two lines.
 
 ## Summary
 
-The Hermitian form $H(A,C)=A\bar C$ is indefinite of signature $(1,1)$, and the set where it is non-negative is the double cone $a^2\ge b^2$, with two components, the interior of invertibles and the boundary of zero divisors. The form vanishes on both idempotent lines, which are therefore totally isotropic; the adjoint axiom holds and positivity fails, so the algebra is a $\ast$-algebra with a Hermitian form and not a Hilbert algebra.
+The Hermitian form $H(A,C)=A\bar C$ is indefinite of inertia $(1,1)$, and the set where it is non-negative is the double cone $a^2\ge b^2$, with two components, the interior of invertibles and the boundary of zero divisors. The form vanishes on both idempotent lines, which are therefore totally isotropic; the adjoint axiom holds and positivity fails, so the algebra is a $\ast$-algebra with a Hermitian form and not a Hilbert algebra.
 
 Indefiniteness reverses the two inequalities. On one component of the cone, $g(A,C)\ge\sqrt{N(A)N(C)}$ and $\sqrt{N(A+C)}\ge\sqrt{N(A)}+\sqrt{N(C)}$, with equality on the rays and failure across components. The forward cone defines a partial order, the product of the two orders of the idempotent coordinates, not total because the two idempotents are incomparable, and compatible with the multiplication on the positive cone.
 
@@ -222,7 +222,7 @@ The unitary group of rank one is the group of norm-one elements, isomorphic to $
 
 | Symbol | Meaning |
 |---|---|
-| $H(A,C)=A\bar C$ | The Hermitian form of signature $(1,1)$ |
+| $H(A,C)=A\bar C$ | The Hermitian form of inertia $(1,1)$ |
 | $\mathcal{C}=\{N\ge0\}$ | The double cone, the cone of $H$-positivity |
 | $\mathcal{C}_\pm$ | The forward and the backward cone, the two components |
 | $g(A,C)=ac-bd$ | The polar form, the real part of $H$ |

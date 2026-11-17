@@ -6,7 +6,7 @@
 
 This article fixes the algebra that the whole category reads: the matrix units and the rule $E_{ij}E_{kl}=\delta_{jk}E_{il}$, the trace, the determinant and the rank, the centre and the simplicity, the real dimension $8$, the group of invertibles and the projective group, and the identification with the biquaternion algebra $\mathbb{B}$. It assumes only the linear algebra of $\mathbb{C}^{2}$. It defers the element to *The Element: Rank, Trace, Determinant, Characteristic Polynomial at $n=2$*, the real matrices to *The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$*, and the ideal theory to *The Ideals, the Centre and the Simplicity of $M_2(\mathbb{C})$*.
 
-No quadratic form is used in the proofs. The trace pairing is recorded as symmetric and nondegenerate, nothing more; its signature is *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+No quadratic form is used in the proofs. The trace pairing is recorded as symmetric and nondegenerate, nothing more; its inertia is *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 ## The Algebra
 

@@ -42,7 +42,7 @@ $$
 A\bar C=(ac-bd)+(bc-ad)j ,
 $$
 
-because $(a+bj)(c-dj)=ac-ad\,j+bc\,j-bd\,j^2$ and $j^2=1$. The real part is the Minkowski pairing $ac-bd$ and the split imaginary part is the area $bc-ad$; the second product is the first read in the metric of signature $(1,1)$.
+because $(a+bj)(c-dj)=ac-ad\,j+bc\,j-bd\,j^2$ and $j^2=1$. The real part is the Minkowski pairing $ac-bd$ and the split imaginary part is the area $bc-ad$; the second product is the first read in the metric of inertia $(1,1)$.
 
 **The two scalar rules.** $A\bar C$ is $\mathbb{C}_{\mathrm{spl}}$-linear in the first slot and $\bar\cdot$-semilinear in the second: for $\lambda\in\mathbb{C}_{\mathrm{spl}}$,
 
@@ -132,7 +132,7 @@ $$
 P(A,C)=AC, \qquad H(A,C)=A\bar C .
 $$
 
-$P$ is symmetric and $H$ is conjugate-symmetric, by the two exchanges above. The two pairings are the object of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, where their realified signatures are computed, and of *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*, where the cone of $H$ is read.
+$P$ is symmetric and $H$ is conjugate-symmetric, by the two exchanges above. The two pairings are the object of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*, where their realified inertias are computed, and of *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*, where the cone of $H$ is read.
 
 ## The Point That Separates the Split Case from the Complex One
 

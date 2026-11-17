@@ -66,7 +66,7 @@ $$
 
 **Proof.** The transpose of $L_a$ is $L_{a^{\natural}}$, and $^{\natural}$ is the conjugation.
 
-**The consequence for the two halves.** A two-sided operator is symmetric as a matrix exactly when the index pattern is symmetric, and this is why the trace pairing has the signature $(10,6)$.
+**The consequence for the two halves.** A two-sided operator is symmetric as a matrix exactly when the index pattern is symmetric, and this is why the trace pairing has the inertia $(10,6)$.
 
 **Proof.** The sixteen $T_{\mu\nu}$ satisfy $T_{\mu\nu}^{\mathsf T}=\pm T_{\mu\nu}$ according to the symmetry of the pair, and the trace of the square is $+4$ or $-4$.
 

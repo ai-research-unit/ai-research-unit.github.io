@@ -76,7 +76,7 @@ $$
 \operatorname{tr}(T_{\mu\nu}T_{\rho\sigma})=\pm4\,\delta_{\mu\rho}\delta_{\nu\sigma},
 $$
 
-with $+4$ on the ten symmetric elements and $-4$ on the six antisymmetric ones. The signature $(10,6)$ is therefore a statement about the real algebra already, and the complex algebra inherits it in the same basis. The full account is *The Trace Form and Its Signature on the Two Halves of $M_4(\mathbb{C})$*.
+with $+4$ on the ten symmetric elements and $-4$ on the six antisymmetric ones. The inertia $(10,6)$ is therefore a statement about the real algebra already, and the complex algebra inherits it in the same basis. The full account is *The Trace Form and Its Inertia on the Two Halves of $M_4(\mathbb{C})$*.
 
 **One count is not the other.** The slice of the algebra itself is four-dimensional, the image of $\mathbb{H}$; the sixteen is the dimension of the operator basis, in which elements of the algebra appear as vectors.
 

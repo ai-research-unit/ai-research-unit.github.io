@@ -367,7 +367,7 @@ $$
 
 The positive factor is the scale times the boost, of determinant $r^{2}$; the $*$-unitary factor is the phase times the rotor, of determinant ${\varkappa_{\mathrm{phs}}}^{2}$. The matrix decomposition does not see the split of $P$ into scale and boost, nor that of $V$ into phase and rotor: those splits use the fact that $P$ is a positive real multiple of an element of the algebra of determinant one, and that $V$ is a unit complex multiple of a real quaternion.
 
-| factor | matrix | determinant | action |
+| factor | matrix | the determinant of the image | action |
 |---|---|---|---|
 | scale | $rI$, $r>0$ | $r^{2}$ | dilation of ratio $r$ |
 | central phase | $\varkappa_{\mathrm{phs}} I$, $\lvert\varkappa_{\mathrm{phs}}\rvert=1$ | ${\varkappa_{\mathrm{phs}}}^{2}$ | central multiplication |

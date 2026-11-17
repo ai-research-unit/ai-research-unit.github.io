@@ -30,7 +30,7 @@ the product is associative, and the algebra is non-commutative.
 
 **Proof.** The product is the elementary computation: the $(r,s)$ entry of $E_{ij}E_{kl}$ is $\delta_{ri}\delta_{jk}\delta_{ls}$, which is the $(r,s)$ entry of $\delta_{jk}E_{il}$. The sixteen units are linearly independent because $E_{ij}$ has a $1$ in a position where the other units have $0$. Associativity is associativity of the matrix product. For non-commutativity, $E_{12}E_{21}=E_{11}$ while $E_{21}E_{12}=E_{22}$, and these are different.
 
-**A second basis.** The matrix units define the product, and they are not the only basis the category uses: the sixteen $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* are a basis of $M_4(\mathbb{C})$ in which the trace pairing is diagonal, of signature $(10,6)$, as *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$* states in §*The Axis-Free Diagonalisation of the Trace Pairing*. The theorems below stay in matrix units, which remain the definition of the product.
+**A second basis.** The matrix units define the product, and they are not the only basis the category uses: the sixteen $T_{\mu\nu}=L_{\mathrm{axf},e_\mu}R_{\mathrm{axf},e_\nu}$ of *The Two-Sided Operators Method to Build $M_4(\mathbb{C})$* are a basis of $M_4(\mathbb{C})$ in which the trace pairing is diagonal, of inertia $(10,6)$, as *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$* states in §*The Axis-Free Diagonalisation of the Trace Pairing*. The theorems below stay in matrix units, which remain the definition of the product.
 
 **The dimension.** The algebra has complex dimension $16$, because the sixteen units are a basis, and real dimension
 

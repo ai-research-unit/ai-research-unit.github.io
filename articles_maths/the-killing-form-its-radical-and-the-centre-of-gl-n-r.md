@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The Killing form of $\mathfrak{gl}_n(\mathbb{R})$ is $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, its radical is the centre $\mathbb{R}\mathrm{I}$, and on the quotient $\mathfrak{sl}_n(\mathbb{R})$ it is $2n$ times the trace form, of signature $\bigl(n(n+1)/2-1,\,n(n-1)/2\bigr)$.**
+**The Killing form of $\mathfrak{gl}_n(\mathbb{R})$ is $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, its radical is the centre $\mathbb{R}\mathrm{I}$, and on the quotient $\mathfrak{sl}_n(\mathbb{R})$ it is $2n$ times the trace form, of inertia $\bigl(n(n+1)/2-1,\,n(n-1)/2\bigr)$.**
 
-The article builds the adjoint representation in the $n^{2}$-dimensional basis of matrix units, computes the form and checks it numerically at $n=2,3,4$, identifies the radical, and computes the signature on the quotient and on $\mathfrak{so}(n)$. It assumes *The Trace Form and Its Indefinite Signature* for the trace form and *The Hilbert–Schmidt Form: Definite but Not Invariant* for the definite one, and it defers the comparison of the four forms to *The Four Forms and Their Algebraic Norms over $\mathbb{R}$*.
+The article builds the adjoint representation in the $n^{2}$-dimensional basis of matrix units, computes the form and checks it numerically at $n=2,3,4$, identifies the radical, and computes the inertia on the quotient and on $\mathfrak{so}(n)$. It assumes *The Trace Form and Its Indefinite Inertia* for the trace form and *The Hilbert–Schmidt Form: Definite but Not Invariant* for the definite one, and it defers the comparison of the four forms to *The Four Forms and Their Algebraic Norms over $\mathbb{R}$*.
 
 ## The Adjoint Representation
 
@@ -64,15 +64,15 @@ a space of dimension one. The radical of the form is exactly the centre of the a
 
 **The numerical check agrees.** The matrix of the form in the matrix-unit basis has nullity one at $n=2,3,4$, and the null vector is proportional to the identity each time.
 
-**The signature counts the radical separately.** The matrix of $\operatorname{K}$ in the matrix-unit basis has signature $(2,1,1)$ at $n=2$, $(5,3,1)$ at $n=3$ and $(9,6,1)$ at $n=4$. The last number is the dimension of the radical.
+**The inertia counts the radical separately.** The matrix of $\operatorname{K}$ in the matrix-unit basis has inertia $(2,1,1)$ at $n=2$, $(5,3,1)$ at $n=3$ and $(9,6,1)$ at $n=4$. The last number is the dimension of the radical.
 
-## The Signature on the Quotient
+## The Inertia on the Quotient
 
-**On $\mathfrak{sl}_n(\mathbb{R})$ the form is twice $n$ times the trace form.** For $X,Y$ of trace zero, the second term of the formula vanishes, so $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)$. The factor $2n>0$ does not change signs, so the signature of $\operatorname{K}$ on $\mathfrak{sl}_n(\mathbb{R})$ is the signature of the trace form there.
+**On $\mathfrak{sl}_n(\mathbb{R})$ the form is twice $n$ times the trace form.** For $X,Y$ of trace zero, the second term of the formula vanishes, so $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)$. The factor $2n>0$ does not change signs, so the inertia of $\operatorname{K}$ on $\mathfrak{sl}_n(\mathbb{R})$ is the inertia of the trace form there.
 
 **The trace form on $\mathfrak{sl}_n(\mathbb{R})$ splits into a positive and a negative part.** The trace-zero subspace meets $\operatorname{Sym}_n$ in the symmetric matrices of trace zero, of dimension $n(n+1)/2-1$, and it meets $\operatorname{Skew}_n$ in the whole of $\operatorname{Skew}_n$, of dimension $n(n-1)/2$. The two parts are orthogonal, and they exhaust the subspace because the dimensions add to $n^{2}-1$. The form is positive on the first and negative on the second.
 
-**The signature is $\bigl(n(n+1)/2-1,\,n(n-1)/2\bigr)$.** The values are $(2,1)$ at $n=2$, $(5,3)$ at $n=3$ and $(9,6)$ at $n=4$, and they were measured on the matrix of the restricted form in an explicit basis of $\mathfrak{sl}_n(\mathbb{R})$: the off-diagonal units together with the differences $E_{ii}-E_{nn}$.
+**The inertia is $\bigl(n(n+1)/2-1,\,n(n-1)/2\bigr)$.** The values are $(2,1)$ at $n=2$, $(5,3)$ at $n=3$ and $(9,6)$ at $n=4$, and they were measured on the matrix of the restricted form in an explicit basis of $\mathfrak{sl}_n(\mathbb{R})$: the off-diagonal units together with the differences $E_{ii}-E_{nn}$.
 
 ## The Restriction to $\mathfrak{so}(n)$
 
@@ -90,7 +90,7 @@ a space of dimension one. The radical of the form is exactly the centre of the a
 
 **$\mathfrak{gl}_n(\mathbb{R})$ is reductive and not semisimple.** Its form has a radical of dimension one, the centre, so it is degenerate and the algebra is not semisimple. It is the direct sum $\mathbb{R}\mathrm{I}\oplus\mathfrak{sl}_n(\mathbb{R})$ of Lie algebras, because the identity is central, and each summand is either abelian or semisimple. That is the definition of reductive.
 
-**$\mathfrak{sl}_n(\mathbb{R})$ is semisimple.** The restricted form has signature $\bigl(n(n+1)/2-1,n(n-1)/2\bigr)$, with no zero direction, so it is nondegenerate. The centre of $\mathfrak{sl}_n(\mathbb{R})$ is zero for $n\ge2$, and the criterion applies.
+**$\mathfrak{sl}_n(\mathbb{R})$ is semisimple.** The restricted form has inertia $\bigl(n(n+1)/2-1,n(n-1)/2\bigr)$, with no zero direction, so it is nondegenerate. The centre of $\mathfrak{sl}_n(\mathbb{R})$ is zero for $n\ge2$, and the criterion applies.
 
 **$\mathfrak{so}(n)$ is semisimple for $n\ge3$.** The intrinsic Killing form is $(n-2)\operatorname{tr}(XY)$, which is definite, so it is nondegenerate for $n\ge3$, and the factor $n-2$ is nonzero. At $n=2$ the algebra is abelian and the criterion fails: $\mathfrak{so}(2)$ is not semisimple.
 
@@ -98,13 +98,13 @@ a space of dimension one. The radical of the form is exactly the centre of the a
 
 ## The Form and the Trace Form
 
-**The two forms agree up to a factor on the trace-zero part.** On $\mathfrak{sl}_n(\mathbb{R})$ the Killing form is $2n$ times the trace form. So the signature of the Killing form is the signature of the trace form minus one positive direction, the direction of the identity.
+**The two forms agree up to a factor on the trace-zero part.** On $\mathfrak{sl}_n(\mathbb{R})$ the Killing form is $2n$ times the trace form. So the inertia of the Killing form is the inertia of the trace form minus one positive direction, the direction of the identity.
 
-**The difference is the correction that kills the identity.** The term $-2\operatorname{tr}(X)\operatorname{tr}(Y)$ is what makes $\operatorname{K}(\mathrm{I},\mathrm{I})$ vanish. Without it the form would be $2n\operatorname{tr}(XY)$, which is the trace form rescaled, of signature $\bigl(n(n+1)/2,n(n-1)/2\bigr)$ and nondegenerate. The Killing form is that form made degenerate along the centre.
+**The difference is the correction that kills the identity.** The term $-2\operatorname{tr}(X)\operatorname{tr}(Y)$ is what makes $\operatorname{K}(\mathrm{I},\mathrm{I})$ vanish. Without it the form would be $2n\operatorname{tr}(XY)$, which is the trace form rescaled, of inertia $\bigl(n(n+1)/2,n(n-1)/2\bigr)$ and nondegenerate. The Killing form is that form made degenerate along the centre.
 
 ## Summary
 
-The Killing form of $\mathfrak{gl}_n(\mathbb{R})$ is $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, computed by writing $\operatorname{ad}_X=L_X-R_X$ and taking the traces of the four products of the left and right multiplications. The formula was verified on a hundred random pairs at $n=2,3,4$ with a maximal deviation of $1.4\times10^{-14}$. The radical is the centre $\mathbb{R}\mathrm{I}$, of dimension one, and it is exactly the set of elements orthogonal to the whole algebra. On $\mathfrak{sl}_n(\mathbb{R})$ the form is $2n$ times the trace form, of signature $\bigl(n(n+1)/2-1,n(n-1)/2\bigr)$, measured as $(2,1)$, $(5,3)$ and $(9,6)$ at $n=2,3,4$. On $\mathfrak{so}(n)$ the restriction is negative definite: in the basis $L_{ij}=E_{ij}-E_{ji}$ the trace form has the eigenvalue $-2$ with multiplicity $n(n-1)/2$, the restricted form has $-4n$, and the intrinsic Killing form of $\mathfrak{so}(n)$, which is $(n-2)\operatorname{tr}(XY)$, has $-2$ three times at $n=3$ and $-4$ six times at $n=4$. At $n=2$ the restriction vanishes, because $\mathfrak{so}(2)$ is abelian. By the Cartan criterion $\mathfrak{gl}_n(\mathbb{R})$ is reductive and not semisimple, while $\mathfrak{sl}_n(\mathbb{R})$ and $\mathfrak{so}(n)$ for $n\ge3$ are semisimple.
+The Killing form of $\mathfrak{gl}_n(\mathbb{R})$ is $\operatorname{K}(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, computed by writing $\operatorname{ad}_X=L_X-R_X$ and taking the traces of the four products of the left and right multiplications. The formula was verified on a hundred random pairs at $n=2,3,4$ with a maximal deviation of $1.4\times10^{-14}$. The radical is the centre $\mathbb{R}\mathrm{I}$, of dimension one, and it is exactly the set of elements orthogonal to the whole algebra. On $\mathfrak{sl}_n(\mathbb{R})$ the form is $2n$ times the trace form, of inertia $\bigl(n(n+1)/2-1,n(n-1)/2\bigr)$, measured as $(2,1)$, $(5,3)$ and $(9,6)$ at $n=2,3,4$. On $\mathfrak{so}(n)$ the restriction is negative definite: in the basis $L_{ij}=E_{ij}-E_{ji}$ the trace form has the eigenvalue $-2$ with multiplicity $n(n-1)/2$, the restricted form has $-4n$, and the intrinsic Killing form of $\mathfrak{so}(n)$, which is $(n-2)\operatorname{tr}(XY)$, has $-2$ three times at $n=3$ and $-4$ six times at $n=4$. At $n=2$ the restriction vanishes, because $\mathfrak{so}(2)$ is abelian. By the Cartan criterion $\mathfrak{gl}_n(\mathbb{R})$ is reductive and not semisimple, while $\mathfrak{sl}_n(\mathbb{R})$ and $\mathfrak{so}(n)$ for $n\ge3$ are semisimple.
 
 ## Summary of Notation
 
@@ -127,7 +127,7 @@ The Killing form of $\mathfrak{gl}_n(\mathbb{R})$ is $\operatorname{K}(X,Y)=2n\o
 - Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for the Killing form, its invariance and the Cartan criterion.
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for semisimple Lie algebras, radicals and the criterion.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the associative trace form and its relation to the Killing form of a central simple algebra.
-- [The Trace Form and Its Indefinite Signature](the-trace-form-and-its-indefinite-signature.html), for the trace form and its signature.
+- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-signature.html), for the trace form and its inertia.
 - [The Hilbert–Schmidt Form: Definite but Not Invariant](the-hilbert-schmidt-form-definite-but-not-invariant.html), for the definite form on the same space.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the algebra, its centre and its two halves.
 - [The Ideals, the Centre and the Simplicity of $M_n(\mathbb{R})$](the-ideals-the-centre-and-the-simplicity-of-mnr.html), for the centre as $\mathbb{R}\mathrm{I}$.

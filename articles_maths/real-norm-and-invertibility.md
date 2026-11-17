@@ -70,7 +70,7 @@ $$
 \langle q\rangle = q^2 ,
 $$
 
-a positive-definite quadratic form on the coordinate space $\mathbb{R}^1$ of signature $(1,0)$. The one coordinate contributes with a positive sign. In the complex algebra the corresponding expression is the sum of two squares $u^2+v^2$, also of signature $(2,0)$. The real algebra has no second coordinate and no sector on which the sign reverses; the norm is real and definite throughout.
+a positive-definite quadratic form on the coordinate space $\mathbb{R}^1$ of inertia $(1,0)$. The one coordinate contributes with a positive sign. In the complex algebra the corresponding expression is the sum of two squares $u^2+v^2$, also of inertia $(2,0)$. The real algebra has no second coordinate and no sector on which the sign reverses; the norm is real and definite throughout.
 
 ## The Hermitian Form
 
@@ -273,7 +273,7 @@ $$
 \langle q_1 q_2\rangle = \langle q_1\rangle\langle q_2\rangle.
 $$
 
-This is the degeneracy of the involution decomposition of the real field. In the complex algebra the involution splits $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into two definite pieces of the same signature. Here there is no second subspace, no central scalar imaginary and no sign reversal; the fixed-point decomposition collapses to its single summand, and the norm and the Hermitian form collapse with it.
+This is the degeneracy of the involution decomposition of the real field. In the complex algebra the involution splits $\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i\mathbb{R}_{\mathbb{C}}$ into two definite pieces of the same inertia. Here there is no second subspace, no central scalar imaginary and no sign reversal; the fixed-point decomposition collapses to its single summand, and the norm and the Hermitian form collapse with it.
 
 ## The Base Case of the Norm Series
 

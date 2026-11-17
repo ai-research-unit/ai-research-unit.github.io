@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**An involution of the algebra is a map of order two that either preserves or reverses the product, and the classification of those maps is short: two of the reversing kind over either field, and a signature's worth of the preserving kind.**
+**An involution of the algebra is a map of order two that either preserves or reverses the product, and the classification of those maps is short: two of the reversing kind over either field, and an inertia's worth of the preserving kind.**
 
 The article separates the two kinds, classifies the involutions of $M_n(\mathbb{C})$ and of $M_n(\mathbb{R})$ up to conjugacy, and records the split that every involution produces, the fixed part and the anti-fixed part. It counts the two parts: for the transpose the symmetric half has dimension $n(n+1)/2$ and the anti-Hermitian half $n(n-1)/2$, while for the symplectic involution the two dimensions are exchanged and the fixed half has dimension $n(n-1)/2$. It assumes *The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$* for the inner automorphisms and *The Two Base Fields: $M_n(\mathbb{R})$ inside $M_n(\mathbb{C})$* for the antilinear structures. It defers the two halves themselves to *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric* and to *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian*, and the multiplication tables to *The Four Multiplication Tables: $SS$, $SK$, $KS$, $KK$*.
 
@@ -47,7 +47,7 @@ and at odd $n$ only the transpose type exists.
 
 ## The Involutions of the Second Kind
 
-**An antilinear anti-automorphism of order two is a Hermitian structure, and its classes are the signatures.** Let $\sigma$ be conjugate-linear and an anti-automorphism with $\sigma^{2}=\mathrm{id}$. Then $\sigma(A)=SA^{*}S^{-1}$ with $S$ Hermitian, and the condition on $S$ is only that it be invertible and self-adjoint up to scale. A change of basis carries $S$ to a diagonal matrix with $p$ entries $+1$ and $q$ entries $-1$, so the classes are indexed by the **signature** $(p,q)$ with $p+q=n$, and there are $n+1$ of them. The case $p=n$ is the conjugate transpose $\sigma(A)=A^{*}$.
+**An antilinear anti-automorphism of order two is a Hermitian structure, and its classes are the inertias.** Let $\sigma$ be conjugate-linear and an anti-automorphism with $\sigma^{2}=\mathrm{id}$. Then $\sigma(A)=SA^{*}S^{-1}$ with $S$ Hermitian, and the condition on $S$ is only that it be invertible and self-adjoint up to scale. A change of basis carries $S$ to a diagonal matrix with $p$ entries $+1$ and $q$ entries $-1$, so the classes are indexed by the **inertia** $(p,q)$ with $p+q=n$, and there are $n+1$ of them. The case $p=n$ is the conjugate transpose $\sigma(A)=A^{*}$.
 
 **The count over $\mathbb{C}$ is therefore $2+(n+1)$ of the reversing kind and $n+1$ of the preserving kind.** Over $\mathbb{R}$ the antilinear cases disappear and the counts are: two reversing classes, transpose and symplectic, and $n+1$ preserving classes. The table summarises the four families.
 
@@ -55,7 +55,7 @@ and at odd $n$ only the transpose type exists.
 |---|---|---|---|
 | $\mathbb{C}$ | linear | reversed | $2$: transpose, symplectic |
 | $\mathbb{C}$ | linear | preserved | $n+1$: inner by $\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_{n-p})$ |
-| $\mathbb{C}$ | antilinear | reversed | $n+1$: signatures $(p,q)$ |
+| $\mathbb{C}$ | antilinear | reversed | $n+1$: inertias $(p,q)$ |
 | $\mathbb{C}$ | antilinear | preserved | $2$: $M_n(\mathbb{R})$ and $M_{n/2}(\mathbb{H})$ |
 
 ## The Split into Fixed and Anti-Fixed
@@ -99,7 +99,7 @@ and the values for $n=2,\dots,6$ are
 
 **The Hermitian and anti-Hermitian halves have equal real dimension $n^{2}$.** For $\sigma(A)=A^{*}$ the two halves are complex subspaces of real dimension $n^{2}$ each, since a Hermitian matrix is determined by $n$ real diagonal entries and $\binom{n}{2}$ complex off-diagonal ones, $n+2\binom{n}{2}=n^{2}$. So the transpose split halves $n^{2}$ into two unequal parts, while the conjugate-transpose split halves $2n^{2}$ into two equal parts.
 
-**Every Hermitian involution has a fixed space of real dimension $n^{2}$, whatever its signature.** For $\sigma(A)=SA^{*}S^{-1}$ with $S$ Hermitian of signature $(p,q)$, the fixed space is the set of $S$-Hermitian matrices, and the count of parameters is again $n$ real diagonal entries and $\binom{n}{2}$ complex off-diagonal ones. The signature does not change the dimension; it changes the signature of the trace form restricted to the half, which is computed in *The Trace Form and Its Signature on the Two Halves*.
+**Every Hermitian involution has a fixed space of real dimension $n^{2}$, whatever its inertia.** For $\sigma(A)=SA^{*}S^{-1}$ with $S$ Hermitian of inertia $(p,q)$, the fixed space is the set of $S$-Hermitian matrices, and the count of parameters is again $n$ real diagonal entries and $\binom{n}{2}$ complex off-diagonal ones. The inertia does not change the dimension; it changes the inertia of the trace form restricted to the half, which is computed in *The Trace Form and Its Inertia on the Two Halves*.
 
 ## What Transposition Does to $UT_n$
 
@@ -127,7 +127,7 @@ and the three Pauli matrices together with $\mathrm{I}$ are a basis of the algeb
 
 ## Summary
 
-An involution is an automorphism or an anti-automorphism of order two, of the first kind if complex-linear and of the second if conjugate-linear. The reversing complex-linear involutions of $M_n(\mathbb{C})$ are the transpose and, for even $n$, the symplectic transpose; the preserving ones are inner by $\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_{n-p})$, $n+1$ classes; the antilinear reversing ones are the Hermitian structures, $n+1$ classes indexed by signature; the antilinear preserving ones are the two real structures. Every involution splits the algebra into a fixed and an anti-fixed part by $\tfrac12(\mathrm{I}\pm\sigma)$. The transpose gives halves of dimensions $n(n+1)/2$ and $n(n-1)/2$, the symplectic involution exchanges them, and the conjugate transpose gives two halves of real dimension $n^{2}$ whatever the signature. Transposition exchanges $UT_n$ with $LT_n$ and fixes only the diagonal.
+An involution is an automorphism or an anti-automorphism of order two, of the first kind if complex-linear and of the second if conjugate-linear. The reversing complex-linear involutions of $M_n(\mathbb{C})$ are the transpose and, for even $n$, the symplectic transpose; the preserving ones are inner by $\operatorname{diag}(\mathrm{I}_p,-\mathrm{I}_{n-p})$, $n+1$ classes; the antilinear reversing ones are the Hermitian structures, $n+1$ classes indexed by inertia; the antilinear preserving ones are the two real structures. Every involution splits the algebra into a fixed and an anti-fixed part by $\tfrac12(\mathrm{I}\pm\sigma)$. The transpose gives halves of dimensions $n(n+1)/2$ and $n(n-1)/2$, the symplectic involution exchanges them, and the conjugate transpose gives two halves of real dimension $n^{2}$ whatever the inertia. Transposition exchanges $UT_n$ with $LT_n$ and fixes only the diagonal.
 
 ## Summary of Notation
 
@@ -139,7 +139,7 @@ An involution is an automorphism or an anti-automorphism of order two, of the fi
 | $J$ | the symplectic matrix, $\tfrac{n}{2}$ blocks of $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ |
 | $\operatorname{Fix}\sigma$, $\operatorname{Anti}\sigma$ | the $\pm1$ eigenspaces of $\sigma$ |
 | $\operatorname{Sym}_n$, $\operatorname{Skew}_n$ | the fixed and anti-fixed halves of the transpose, of dimensions $n(n\pm1)/2$ |
-| $(p,q)$ | the signature of a Hermitian structure, $p+q=n$ |
+| $(p,q)$ | the inertia of a Hermitian structure, $p+q=n$ |
 | $UT_n$, $LT_n$ | the upper and the lower triangular algebras |
 
 ## Further Reading

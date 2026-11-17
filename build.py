@@ -5,6 +5,7 @@ import subprocess
 import sys
 import markdown
 from datetime import datetime
+from html import escape, unescape
 from pathlib import Path
 from urllib.parse import quote
 
@@ -299,14 +300,50 @@ def write_sitemaps():
         print(f"Wrote {name} ({len(urls)} urls)")
 
 
+def plain_summary(html_text, limit=155, min_chars=60):
+    """First substantial paragraph of a rendered body, as plain text.
+
+    Inline math is dropped: a crawler shows the description verbatim, raw TeX
+    included, so the formulas are removed rather than escaped.
+    """
+    for chunk in re.findall(r"<p>(.*?)</p>", html_text, re.DOTALL):
+        text = re.sub(r"\$\$.*?\$\$|\$[^$\n]*?\$", " ", chunk, flags=re.DOTALL)
+        text = re.sub(r"<[^>]+>", "", text)
+        text = re.sub(r"\s+", " ", unescape(text)).strip()
+        text = re.sub(r"\s+([.,;:])", r"\1", text)
+        if len(text) < min_chars:
+            continue
+        if len(text) > limit:
+            text = text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:") + "…"
+        return text
+    return ""
+
+
+def menu_summary(body_html, title):
+    """Description for a menu page, which has links but no prose paragraph.
+
+    Only the two public collections are counted: the menu also links a few
+    internal drafts, and those are not part of what the page announces.
+    """
+    n = len(set(re.findall(r'href="articles_(?:maths|physics)/[^"]*\.html"', body_html)))
+    if n:
+        return f"{title} — index of {n} articles in the Biquaternion Universe corpus."
+    return title
+
+
 def build_root_page(md_path, out_name, articles, is_menu=False):
     if md_path.exists():
         raw = md_path.read_text()
         meta, body_md = parse_frontmatter(raw)
 
         body_html = md_to_html(body_md)
+        title = meta.get("title") or heading_title(body_md) or label_from_stem(md_path.stem)
+        description = (menu_summary(body_html, title) if is_menu
+                       else plain_summary(body_html) or menu_summary(body_html, title))
 
         html = (INDEX_TEMPLATE
+            .replace("{title}",       escape(f"{title} — Biquaternion Universe"))
+            .replace("{description}", escape(description))
             .replace("{nav}",         build_nav_index(articles))
             .replace("{body_attr}",   ' class="menu"' if is_menu else "")
             .replace("{index_items}", body_html)
@@ -335,7 +372,8 @@ def build_article(coll, f, articles):
     out.parent.mkdir(parents=True, exist_ok=True)
 
     html = (TEMPLATE
-        .replace("{title}",      title)
+        .replace("{title}",      escape(title))
+        .replace("{description}", escape(plain_summary(body_html)))
         .replace("{coordinate}", meta.get("coordinate", ""))
         .replace("{nav}",        build_nav_article(articles, current_stem=f.stem, depth=depth))
         .replace("{root}",       root)

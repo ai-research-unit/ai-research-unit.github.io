@@ -212,7 +212,7 @@ conjugate-linear in the middle slot.
 
 ## The Light Cone Is the Zero Set of the Determinant
 
-The determinant is $\langle\tilde Q\rangle_{\natural}$ on the whole algebra, and its zero set is the zero-divisor cone $\mathcal{Z}$ of *The Light Cone as the Biquaternion Zero-Divisor Cone*. The Jordan reading adds the relation to the cone of squares.
+The quaternionic norm is $\langle\tilde Q\rangle_{\natural}$ on the whole algebra, and its zero set is the zero-divisor cone $\mathcal{Z}$ of *The Light Cone as the Biquaternion Zero-Divisor Cone*. The Jordan reading adds the relation to the cone of squares.
 
 **Proposition.** On the material sector, $\tilde Q\in\mathbb{B}_{\Phi}$ is null, $\langle\tilde Q\rangle_{\natural}=0$, if and only if $-i\tilde Q$ lies on the boundary of $C$ or on the boundary of $-C$.
 

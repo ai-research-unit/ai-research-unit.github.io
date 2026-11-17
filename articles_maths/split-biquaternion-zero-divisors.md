@@ -150,7 +150,7 @@ The analogy is exact:
 | Intersection | $\{0\}$ | $\{0\}$ |
 | Shape | X (two lines) | Two transverse four-spaces |
 
-In the split complex case the zero divisor set is exactly the **null cone** of the norm $r^2 - s^2$, a union of two lines. In the split biquaternion case this is no longer so: the split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural}$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the **reduced norm** $\langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural}$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.
+In the split complex case the zero divisor set is exactly the **null cone** of the norm $r^2 - s^2$, a union of two lines. In the split biquaternion case this is no longer so: the split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural}$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the **reduced norm** $\langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural}$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split inertia.
 
 ## Comparison with the Biquaternion Case
 
@@ -344,7 +344,7 @@ The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreduci
 | $\tilde{Q} = \tilde{Q}_+ \tilde\Pi_1 + \tilde{Q}_- \tilde\Pi_2$ | Idempotent decomposition |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Split-Biquaternion norm |
 | $\langle\tilde{Q}_\pm\rangle_{\natural}$ | Ordinary quaternion norm of an idempotent component |
-| $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
+| $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm |
 | $Z_+ = \{\tilde{Q} : \tilde{Q}_+ = 0\}$ | Zero-divisor subspace with vanishing $+$ component |
 | $Z_- = \{\tilde{Q} : \tilde{Q}_- = 0\}$ | Zero-divisor subspace with vanishing $-$ component |
 | $\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}$ | Zero divisor set |

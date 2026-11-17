@@ -2,7 +2,7 @@
 
 ## Introduction and Scope
 
-The companion article [Classification of the Structures of the Operators of the Biquaternion Algebra](classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra.html) proved that the complex operator algebra $\mathcal{E}_{\mathbb{C}}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ has exactly two real forms, the split algebra $M_4(\mathbb{R})$ and the quaternionic algebra $M_2(\mathbb{H})$, that the two are separated by the trace-form signatures $(10,6)$ and $(6,10)$, and that the biquaternion base $L(\mathbb{B})$, $R(\mathbb{B})$ sits inside $\mathcal{E}_{\mathbb{C}}$ with a nine-dimensional complement $\mathfrak{m}$. It stopped at the classification of the forms. This article takes the two forms and develops each of them in the three layers that a real algebra carries at once: the associative product, the commutator bracket and the symmetrized product. It adds the fourth layer, the Lie groups attached to the Lie subalgebras.
+The companion article [Classification of the Structures of the Operators of the Biquaternion Algebra](classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra.html) proved that the complex operator algebra $\mathcal{E}_{\mathbb{C}}=\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ has exactly two real forms, the split algebra $M_4(\mathbb{R})$ and the quaternionic algebra $M_2(\mathbb{H})$, that the two are separated by the trace-form inertias $(10,6)$ and $(6,10)$, and that the biquaternion base $L(\mathbb{B})$, $R(\mathbb{B})$ sits inside $\mathcal{E}_{\mathbb{C}}$ with a nine-dimensional complement $\mathfrak{m}$. It stopped at the classification of the forms. This article takes the two forms and develops each of them in the three layers that a real algebra carries at once: the associative product, the commutator bracket and the symmetrized product. It adds the fourth layer, the Lie groups attached to the Lie subalgebras.
 
 The element-level sibling [Classification of the Real Structures of the Biquaternion Algebra, including Lie Algebras and Lie Groups](classification-of-the-real-structures-of-the-biquaternion-algebra.html) did the same for the two real forms $M_2(\mathbb{R})$ and $\mathbb{H}$ of $\mathbb{B}$. The present article is its operator-level analogue, and it differs from it in one structural respect that governs every section: the ambient algebra is four times larger, and its subalgebra lattice is not classified in exhaustive form. A complete classification of the unital subalgebras of $M_4(\mathbb{R})$ does not exist in any usable form, and an attempt in the style of the element-level article would produce a list of hundreds of entries, with continuous parameters and with no organising idea.
 
@@ -39,14 +39,14 @@ $$
 
 with $J_0$ the block skew matrix of size four, and the computation of the two fixed sets are in [Classification of the Structures of the Operators of the Biquaternion Algebra](classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra.html). They are used here and not repeated.
 
-| form | $\dim_{\mathbb{R}}$ | centre | trace-form signature | simple part | Lie algebra |
+| form | $\dim_{\mathbb{R}}$ | centre | trace-form inertia | simple part | Lie algebra |
 |---|---|---|---|---|---|
 | $M_4(\mathbb{R})$ | $16$ | $\mathbb{R}\mathrm{I}_4$ | $(10,6)$ | $\mathfrak{sl}(4,\mathbb{R})$ | $\mathfrak{gl}(4,\mathbb{R})$ |
 | $M_2(\mathbb{H})$ | $16$ | $\mathbb{R}\mathrm{I}_2$ | $(6,10)$ | $\mathfrak{sl}(2,\mathbb{H})=\mathfrak{su}^{*}(4)$ | $\mathfrak{gl}(2,\mathbb{H})$ |
 
 **The word quaternionic, and why not compact.** The element-level pair of forms is called compact and split, because the compact member $\mathbb{H}$ is a division algebra and the group $SU(2)$ attached to its scalar-free part is compact. At the operator level the pair of words does not transfer. The compact real form of the Lie algebra $\mathfrak{gl}(4,\mathbb{C})$ is $\mathfrak{u}(4)$, and $\mathfrak{u}(4)$ is the Lie algebra of no real form of the associative algebra $M_4(\mathbb{C})$: a real form of an algebra is closed under products, and the product of two skew-Hermitian matrices is skew-Hermitian only when the two commute. The two real forms of the algebra therefore carry the split and the *quaternionic* simple part, $\mathfrak{sl}(4,\mathbb{R})$ and $\mathfrak{sl}(2,\mathbb{H})$, and the second of these is non-compact: its maximal compact subalgebra has dimension ten out of fifteen. The article writes **split** and **quaternionic** throughout, and never writes compact for $M_2(\mathbb{H})$.
 
-The two forms are distinguished by an invariant of the algebra and not of a frame: a symmetric bilinear form built from the trace. On $M_4(\mathbb{R})$ it is $(X,Y)\mapsto\operatorname{tr}(XY)$, of signature $(10,6)$, from ten symmetric and six skew directions. On $M_2(\mathbb{H})$ the trace is quaternion-valued, so the real form is $(X,Y)\mapsto\operatorname{Re}\operatorname{tr}(XY)$, equivalently $(X,Y)\mapsto\operatorname{tr}(X^{*}Y)$; the two differ by a positive factor, so they have the same inertia, and it is $(6,10)$, from the six-dimensional Hermitian and the ten-dimensional skew-Hermitian parts under the quaternionic conjugation. The signature is basis-free because the trace is.
+The two forms are distinguished by an invariant of the algebra and not of a frame: a symmetric bilinear form built from the trace. On $M_4(\mathbb{R})$ it is $(X,Y)\mapsto\operatorname{tr}(XY)$, of inertia $(10,6)$, from ten symmetric and six skew directions. On $M_2(\mathbb{H})$ the trace is quaternion-valued, so the real form is $(X,Y)\mapsto\operatorname{Re}\operatorname{tr}(XY)$, equivalently $(X,Y)\mapsto\operatorname{tr}(X^{*}Y)$; the two differ by a positive factor, so they have the same inertia, and it is $(6,10)$, from the six-dimensional Hermitian and the ten-dimensional skew-Hermitian parts under the quaternionic conjugation. The inertia is basis-free because the trace is.
 
 **What is not repeated.** The theorem that these are all the real forms, the theorem that the two real structures are not conjugate, the double centralizer theorem, the identification of the two-sided span and the trace-form computation are in the umbrella article. This article cites them where it uses them, and adds nothing to their proofs.
 
@@ -226,7 +226,7 @@ of real dimensions $4\subset8\subset16$, and the chain is the entrywise one: rea
 
 **What does not occur, and why.** The criterion excludes four candidates that a naive count would admit.
 
-- $M_4(\mathbb{R})$ does not embed in $M_2(\mathbb{H})$, because $n=4$ and $4>2$. The dimension argument is the same one stated differently: both algebras have real dimension $16$, so an embedding would be an isomorphism, and the two are not isomorphic, as their trace-form signatures $(10,6)$ and $(6,10)$ show.
+- $M_4(\mathbb{R})$ does not embed in $M_2(\mathbb{H})$, because $n=4$ and $4>2$. The dimension argument is the same one stated differently: both algebras have real dimension $16$, so an embedding would be an isomorphism, and the two are not isomorphic, as their trace-form inertias $(10,6)$ and $(6,10)$ show.
 - $M_3(\mathbb{R})$ does not embed, because $n=3$. Its minimal faithful module is $\mathbb{R}^3$, and $M_3(\mathbb{R})\otimes\mathbb{H}\cong M_3(\mathbb{H})$ needs $\mathbb{H}^3$ of real dimension $12$.
 - $\mathbb{H}\oplus\mathbb{H}\oplus\mathbb{R}$ and the other three-factor products do not embed, because $\sum n_i=3$.
 - $\mathbb{C}\oplus\mathbb{C}\oplus\mathbb{C}$ does not embed, for the same reason.
@@ -265,9 +265,9 @@ $$
 K(X,Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y),
 $$
 
-which for $n=4$ reads $K(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$. It is degenerate, with radical the centre: $\operatorname{ad}_{\mathrm{I}_4}=0$, so $K(\mathrm{I}_4,X)=0$ for every $X$, and on the traceless part it is $8\operatorname{tr}(XY)$, which is nondegenerate by the simplicity of $\mathfrak{sl}(4,\mathbb{R})$. The signatures below are computed intrinsically, in the algebra itself, and not in the ambient $\mathbb{B}_{\mathbb{R}}$; the two conventions agree on the semisimple subalgebras and differ on the abelian ones, as the element-level article explains. The first entry counts positive eigenvalues and the second negative ones, so a compact semisimple algebra, whose Killing form is negative definite, has signature $(0,\dim)$: that is why $\mathfrak{so}(4)$ reads $(0,6)$ and not $(6,0)$.
+which for $n=4$ reads $K(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$. It is degenerate, with radical the centre: $\operatorname{ad}_{\mathrm{I}_4}=0$, so $K(\mathrm{I}_4,X)=0$ for every $X$, and on the traceless part it is $8\operatorname{tr}(XY)$, which is nondegenerate by the simplicity of $\mathfrak{sl}(4,\mathbb{R})$. The inertias below are computed intrinsically, in the algebra itself, and not in the ambient $\mathbb{B}_{\mathbb{R}}$; the two conventions agree on the semisimple subalgebras and differ on the abelian ones, as the element-level article explains. The first entry counts positive eigenvalues and the second negative ones, so a compact semisimple algebra, whose Killing form is negative definite, has inertia $(0,\dim)$: that is why $\mathfrak{so}(4)$ reads $(0,6)$ and not $(6,0)$.
 
-| subalgebra | $\dim_{\mathbb{R}}$ | type | $K$ signature | radical |
+| subalgebra | $\dim_{\mathbb{R}}$ | type | $K$ inertia | radical |
 |---|---|---|---|---|
 | $\mathfrak{gl}(4,\mathbb{R})$ | $16$ | reductive, $A_3\oplus T_1$ | $(9,6)$ plus one null | $\mathbb{R}\mathrm{I}_4$ |
 | $\mathfrak{sl}(4,\mathbb{R})$ | $15$ | $A_3$ split | $(9,6)$ | $0$ |
@@ -283,7 +283,7 @@ which for $n=4$ reads $K(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}(X)\opera
 | $\mathfrak{su}(2)$ | $3$ | $A_1$ compact | $(0,3)$ | $0$ |
 | $\mathbb{R}\mathrm{I}_4$ | $1$ | abelian | $0$ | the line |
 
-The signatures are the deciding invariant of the layer. Two real Lie algebras that are isomorphic have Killing forms related by the isomorphism, so the inertia of $K$ is an isomorphism invariant up to a positive scalar; and the table separates by inertia what the dimensions cannot separate. Three algebras of dimension six appear with signatures $(0,6)$, $(3,3)$ and $(4,2)$, and they are consequently pairwise non-isomorphic, although $\mathfrak{so}(4)$, $\mathfrak{so}(3,1)$ and $\mathfrak{so}(2,2)$ are all real forms of the one complex algebra $\mathfrak{so}(4,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$.
+The inertias are the deciding invariant of the layer. Two real Lie algebras that are isomorphic have Killing forms related by the isomorphism, so the inertia of $K$ is an isomorphism invariant up to a positive scalar; and the table separates by inertia what the dimensions cannot separate. Three algebras of dimension six appear with inertias $(0,6)$, $(3,3)$ and $(4,2)$, and they are consequently pairwise non-isomorphic, although $\mathfrak{so}(4)$, $\mathfrak{so}(3,1)$ and $\mathfrak{so}(2,2)$ are all real forms of the one complex algebra $\mathfrak{so}(4,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$.
 
 **The maximal subalgebras.** A subalgebra of $\mathfrak{sl}(4,\mathbb{R})$ is maximal if it is proper and contained in no proper subalgebra. Up to conjugacy they are the following.
 
@@ -301,17 +301,17 @@ The signatures are the deciding invariant of the layer. Two real Lie algebras th
 
 The two parabolics and the two Levis are read off from the flag structure of $\mathbb{R}^4$: the stabilizer of a line has dimension $15-3=12$, the stabilizer of a plane has dimension $15-4=11$, and the two Levis are their reductive parts, of dimensions $8+1=9$ and $3+3+1=7$. The last row is of a third kind. It is neither parabolic nor reductive-with-a-torus, and it acts irreducibly: through the adjoint action of $\mathfrak{sl}(2,\mathbb{R})$ one has $\mathbb{R}^4\cong\operatorname{Sym}^3(\mathbb{R}^2)$, and the image is the irreducible $A_1$ of dimension three. Dynkin's list separates exactly these three families, and $\mathfrak{sl}(2,\mathbb{R})$ in $\operatorname{Sym}^3$ is the only irreducible maximal subalgebra of $A_3$.
 
-Two further questions about maximality have short answers, and the article records them because they are the questions a reader asks first. The traceless part $\mathfrak{sl}(4,\mathbb{R})$ **is** maximal in $\mathfrak{gl}(4,\mathbb{R})$: it has codimension one, so a subalgebra containing it is either $\mathfrak{sl}(4,\mathbb{R})$ or the whole algebra. And $\mathfrak{gl}(4,\mathbb{R})$ contains **no** copy of $\mathfrak{gl}(2,\mathbb{H})$, because the two algebras have the same dimension and are not isomorphic, by the Killing signatures $(9,6)$ and $(5,10)$.
+Two further questions about maximality have short answers, and the article records them because they are the questions a reader asks first. The traceless part $\mathfrak{sl}(4,\mathbb{R})$ **is** maximal in $\mathfrak{gl}(4,\mathbb{R})$: it has codimension one, so a subalgebra containing it is either $\mathfrak{sl}(4,\mathbb{R})$ or the whole algebra. And $\mathfrak{gl}(4,\mathbb{R})$ contains **no** copy of $\mathfrak{gl}(2,\mathbb{H})$, because the two algebras have the same dimension and are not isomorphic, by the Killing inertias $(9,6)$ and $(5,10)$.
 
-**The three orthogonal forms are maximal, and the reason is the invariant form.** Each of $\mathfrak{so}(4)$, $\mathfrak{so}(3,1)$, $\mathfrak{so}(2,2)$ acts irreducibly on $\mathbb{R}^4$, so none of them is contained in a parabolic. None of them is contained in a Levi, which would preserve a decomposition into $2$-planes. None of them is contained in $\mathfrak{sp}(2,\mathbb{R})$: an algebra contained in the stabilizer of a symplectic form $\omega$ preserves $\omega$, and an irreducible algebra whose representation is self-dual preserves a unique bilinear form up to scale, by Schur's lemma applied to $\operatorname{End}_{\mathfrak{g}}(\mathbb{R}^4)$; that unique form for $\mathfrak{so}(p,q)$ is the symmetric form of signature $(p,q)$, and the symplectic form is skew, so no invariant symplectic form exists. The same argument in reverse shows that $\mathfrak{sp}(2,\mathbb{R})$ is maximal: its complement $\operatorname{Sym}^2_0(\mathbb{R}^4)$ of dimension $5$ is irreducible for $\mathfrak{sp}(2,\mathbb{R})$, so no intermediate algebra exists.
+**The three orthogonal forms are maximal, and the reason is the invariant form.** Each of $\mathfrak{so}(4)$, $\mathfrak{so}(3,1)$, $\mathfrak{so}(2,2)$ acts irreducibly on $\mathbb{R}^4$, so none of them is contained in a parabolic. None of them is contained in a Levi, which would preserve a decomposition into $2$-planes. None of them is contained in $\mathfrak{sp}(2,\mathbb{R})$: an algebra contained in the stabilizer of a symplectic form $\omega$ preserves $\omega$, and an irreducible algebra whose representation is self-dual preserves a unique bilinear form up to scale, by Schur's lemma applied to $\operatorname{End}_{\mathfrak{g}}(\mathbb{R}^4)$; that unique form for $\mathfrak{so}(p,q)$ is the symmetric form of inertia $(p,q)$, and the symplectic form is skew, so no invariant symplectic form exists. The same argument in reverse shows that $\mathfrak{sp}(2,\mathbb{R})$ is maximal: its complement $\operatorname{Sym}^2_0(\mathbb{R}^4)$ of dimension $5$ is irreducible for $\mathfrak{sp}(2,\mathbb{R})$, so no intermediate algebra exists.
 
 **Remark (the small-rank coincidence that is not one).** The complex algebra $\mathfrak{sl}(4,\mathbb{C})$ is isomorphic to $\mathfrak{so}(6,\mathbb{C})$, and the isomorphism identifies the split form $\mathfrak{sl}(4,\mathbb{R})$ with $\mathfrak{so}(3,3)$. Under it the subalgebra $\mathfrak{so}(4,\mathbb{C})$ of $\mathfrak{sl}(4,\mathbb{C})$ becomes a subalgebra of $\mathfrak{so}(6,\mathbb{C})$ of type $D_2$, and the three real forms $(0,6)$, $(3,3)$, $(4,2)$ become the three real forms $\mathfrak{so}(6)$, $\mathfrak{so}(3,3)$ and $\mathfrak{so}(4,2)$-type of that $D_2$. Nothing in the table depends on the identification; it is quoted because the same chain of isomorphisms appears in the group section, where $SL(4,\mathbb{R})\cong Spin(3,3)$ and $\mathfrak{sl}(2,\mathbb{H})\cong\mathfrak{so}(5,1)$.
 
 **The biquaternion base, and the three real forms of $\mathfrak{so}(3,\mathbb{C})$.** The base enters the Lie layer through the pure part, and the entry is worth stating carefully because it is easy to over-state.
 
 - $\mathbb{B}_V$ is a complex Lie algebra of complex dimension three, isomorphic to $\mathfrak{so}(3,\mathbb{C})$, with bracket the commutator of the bivectors. Its image $L(\mathbb{B}_V)$ is a complex Lie subalgebra of $\mathfrak{gl}(4,\mathbb{C})$.
-- Read as a *real* Lie algebra, $\mathbb{B}_V$ is $\mathfrak{so}(3,1)$. The realification of a complex Lie algebra doubles the dimension and doubles the Killing form into a real form of signature $(n,n)$ on a compact-type complex algebra, and the computation gives $(3,3)$ here, which is the signature of $\mathfrak{so}(3,1)$ in the table.
-- The real points of $\mathbb{B}_V$ in the two real forms are the other two real forms of the same complex algebra. In the split form, $\mathbb{B}_V\cap M_2(\mathbb{R})=\mathfrak{sl}(2,\mathbb{R})=\mathfrak{so}(2,1)$, of signature $(2,1)$; in the quaternionic form, $\mathbb{B}_V\cap\mathbb{H}=\mathbb{B}_V$ itself, the compact $\mathfrak{su}(2)=\mathfrak{so}(3)$, of signature $(0,3)$.
+- Read as a *real* Lie algebra, $\mathbb{B}_V$ is $\mathfrak{so}(3,1)$. The realification of a complex Lie algebra doubles the dimension and doubles the Killing form into a real form of inertia $(n,n)$ on a compact-type complex algebra, and the computation gives $(3,3)$ here, which is the inertia of $\mathfrak{so}(3,1)$ in the table.
+- The real points of $\mathbb{B}_V$ in the two real forms are the other two real forms of the same complex algebra. In the split form, $\mathbb{B}_V\cap M_2(\mathbb{R})=\mathfrak{sl}(2,\mathbb{R})=\mathfrak{so}(2,1)$, of inertia $(2,1)$; in the quaternionic form, $\mathbb{B}_V\cap\mathbb{H}=\mathbb{B}_V$ itself, the compact $\mathfrak{su}(2)=\mathfrak{so}(3)$, of inertia $(0,3)$.
 
 So the single complex space $\mathbb{B}_V$ produces all three real forms of $\mathfrak{so}(3,\mathbb{C})$: the compact one and the split one as the real points in the two real forms of $\mathbb{B}$, and the Lorentzian one as the realification of the complex object. That is the cleanest illustration in the corpus of the general fact that a complex algebra with several real forms produces several real Lie algebras from one complex subspace.
 
@@ -319,7 +319,7 @@ So the single complex space $\mathbb{B}_V$ produces all three real forms of $\ma
 
 **The remaining base objects.** The other two distinguished subalgebras from the base are the following.
 
-- $L(\mathbb{B}_H)\cong\mathbb{H}$ is a four-dimensional associative subalgebra of $M_4(\mathbb{R})$, and its commutator algebra is $\mathfrak{u}(2)$: the centre is $\mathbb{R}\mathrm{I}_4$ and the traceless part is the compact $\mathfrak{su}(2)$, so the Lie algebra of the quaternions is the compact reductive algebra $\mathfrak{u}(2)$, of dimension four and signature $(0,3)$ plus a null direction.
+- $L(\mathbb{B}_H)\cong\mathbb{H}$ is a four-dimensional associative subalgebra of $M_4(\mathbb{R})$, and its commutator algebra is $\mathfrak{u}(2)$: the centre is $\mathbb{R}\mathrm{I}_4$ and the traceless part is the compact $\mathfrak{su}(2)$, so the Lie algebra of the quaternions is the compact reductive algebra $\mathfrak{u}(2)$, of dimension four and inertia $(0,3)$ plus a null direction.
 - $L(\mathbb{B}_{\Phi})$ is a complex Lie subalgebra of real dimension four, and it is the same algebra $\mathfrak{u}(2)$, reached from the other side: $\mathbb{B}_{\Phi}$ *is* the compact Lie algebra $\mathfrak{u}(2)$ at the element level, and its image is a complex Lie algebra whose real points in the split form are the antisymmetric line.
 
 The two routes to $\mathfrak{u}(2)$ agree and they illuminate the two roles of the algebra: $\mathfrak{u}(2)$ is the Lie algebra of the group of invertibles of the quaternions and it is also the compact real form of $\mathfrak{gl}(2,\mathbb{C})$. At the operator level the first role is the traceless part of $L(\mathbb{B}_H)$ and the second is the realification of $L(\mathbb{B}_{\Phi})$.
@@ -338,9 +338,9 @@ $$
 
 of dimension fifteen. The notation $\mathfrak{su}^{*}(4)$ is the classical one: $SU^{*}(2n)$ is the group of quaternionic matrices of quaternionic determinant one, and its Lie algebra consists of the matrices whose quaternionic trace is purely imaginary. In this article the algebra is written $\mathfrak{sl}(2,\mathbb{H})$ and the symbol $\mathfrak{su}^{*}(4)$ is quoted once, for the reader who looks it up.
 
-**The Killing form and the signatures.** The Killing form of $\mathfrak{gl}(2,\mathbb{H})$ is degenerate with radical the centre, and on $\mathfrak{sl}(2,\mathbb{H})$ it is nondegenerate, by simplicity. The signatures are these.
+**The Killing form and the inertias.** The Killing form of $\mathfrak{gl}(2,\mathbb{H})$ is degenerate with radical the centre, and on $\mathfrak{sl}(2,\mathbb{H})$ it is nondegenerate, by simplicity. The inertias are these.
 
-| subalgebra | $\dim_{\mathbb{R}}$ | type | $K$ signature | radical |
+| subalgebra | $\dim_{\mathbb{R}}$ | type | $K$ inertia | radical |
 |---|---|---|---|---|
 | $\mathfrak{gl}(2,\mathbb{H})$ | $16$ | reductive | $(5,10)$ plus one null | $\mathbb{R}\mathrm{I}_2$ |
 | $\mathfrak{sl}(2,\mathbb{H})=\mathfrak{su}^{*}(4)$ | $15$ | $A_3$ quaternionic | $(5,10)$ | $0$ |
@@ -350,19 +350,19 @@ of dimension fifteen. The notation $\mathfrak{su}^{*}(4)$ is the classical one: 
 | $\mathfrak{sl}(1,\mathbb{H})\oplus\mathfrak{sl}(1,\mathbb{H})\oplus\mathbb{R}$ | $7$ | Levi | $(0,6)$ plus one null | $\mathbb{R}$ |
 | $\mathbb{R}\mathrm{I}_2$ | $1$ | abelian | $0$ | the line |
 
-**The comparison with the split form is the content of the section.** The two algebras $\mathfrak{gl}(4,\mathbb{R})$ and $\mathfrak{gl}(2,\mathbb{H})$ have the same dimension, both are reductive, both have a one-dimensional centre and a simple derived algebra of dimension fifteen. They are not isomorphic, and the invariant that decides it is the inertia of the Killing form: $(9,6)$ against $(5,10)$. This number is the operator-level analogue of the element-level statement that $\mathfrak{sl}(2,\mathbb{R})$ and $\mathfrak{su}(2)$ have signatures $(2,1)$ and $(0,3)$, and it is the only invariant of the layer that separates the two forms without a frame.
+**The comparison with the split form is the content of the section.** The two algebras $\mathfrak{gl}(4,\mathbb{R})$ and $\mathfrak{gl}(2,\mathbb{H})$ have the same dimension, both are reductive, both have a one-dimensional centre and a simple derived algebra of dimension fifteen. They are not isomorphic, and the invariant that decides it is the inertia of the Killing form: $(9,6)$ against $(5,10)$. This number is the operator-level analogue of the element-level statement that $\mathfrak{sl}(2,\mathbb{R})$ and $\mathfrak{su}(2)$ have inertias $(2,1)$ and $(0,3)$, and it is the only invariant of the layer that separates the two forms without a frame.
 
 | invariant | $M_4(\mathbb{R})$ | $M_2(\mathbb{H})$ |
 |---|---|---|
 | $\dim_{\mathbb{R}}$ of the algebra | $16$ | $16$ |
 | centre | $\mathbb{R}\mathrm{I}_4$ | $\mathbb{R}\mathrm{I}_2$ |
 | derived algebra | $\mathfrak{sl}(4,\mathbb{R})$ | $\mathfrak{sl}(2,\mathbb{H})$ |
-| $K$ signature of the derived algebra | $(9,6)$ | $(5,10)$ |
+| $K$ inertia of the derived algebra | $(9,6)$ | $(5,10)$ |
 | maximal compact of the derived algebra | $\mathfrak{so}(4)$, $\dim 6$ | $\mathfrak{sp}(2)$, $\dim 10$ |
 | real rank of the derived algebra | $3$ | $1$ |
 | restricted root system | $A_3$ | $BC_1$ |
 
-The last two rows are the structural explanation of the difference of signatures. The split form has real rank three and the full root system $A_3$; the quaternionic form has real rank one and restricted root system $BC_1$, with a two-dimensional root space of each sign. A rank-one algebra has a small non-compact part, hence a small positive-definite part of $K$, and $(5,10)$ is what a non-compact part of dimension five produces.
+The last two rows are the structural explanation of the difference of inertias. The split form has real rank three and the full root system $A_3$; the quaternionic form has real rank one and restricted root system $BC_1$, with a two-dimensional root space of each sign. A rank-one algebra has a small non-compact part, hence a small positive-definite part of $K$, and $(5,10)$ is what a non-compact part of dimension five produces.
 
 **The isomorphism with $\mathfrak{so}(5,1)$.** The quaternionic simple algebra of rank one is the Lorentz algebra of dimension six, and the identification is classical:
 
@@ -398,7 +398,7 @@ is commutative and satisfies $X^{2}\circ(X\circ Y)=X^{2}\circ Y$; a real vector 
 
 **The three Jordan real forms.** The Jordan algebra $M_4(\mathbb{C})^{+}$ has exactly three real forms, and they are not the two of the associative layer.
 
-| Jordan form | realisation | $\dim_{\mathbb{R}}$ | trace-form signature | formally real |
+| Jordan form | realisation | $\dim_{\mathbb{R}}$ | trace-form inertia | formally real |
 |---|---|---|---|---|
 | $M_4(\mathbb{R})^{+}$ | all of $M_4(\mathbb{R})$ | $16$ | $(10,6)$ | no |
 | $M_2(\mathbb{H})^{+}$ | all of $M_2(\mathbb{H})$ | $16$ | $(6,10)$ | no |
@@ -406,7 +406,7 @@ is commutative and satisfies $X^{2}\circ(X\circ Y)=X^{2}\circ Y$; a real vector 
 
 The third form is the one the associative layer does not have. $H_4(\mathbb{C})$ is the space of complex Hermitian $4\times4$ matrices, of real dimension $4+2\cdot6=16$, and it is closed under $\circ$ because the symmetrized product of two Hermitian matrices is Hermitian. It is not the Hermitian part of a real form of the associative algebra: its real points in $M_4(\mathbb{R})$ are the real symmetric matrices $H_4(\mathbb{R})$, of dimension $10$, and those are only ten-dimensional. $H_4(\mathbb{C})$ has no associative real form above it in $M_4(\mathbb{C})$, and that is the precise sense in which the Jordan layer is larger than the associative one.
 
-The signatures in the third column are computed on the trace form $(X,Y)\mapsto\operatorname{tr}(XY)$, which is a symmetric bilinear form on the Jordan algebra and not a Hermitian form. On $H_4(\mathbb{C})$ the form is positive definite, because $\operatorname{tr}(X^{2})=\sum_k\lambda_k^{2}$ for a Hermitian $X$ with eigenvalues $\lambda_k$. A Jordan algebra with a positive definite trace form is **formally real**: a sum of squares vanishes only when every term vanishes. That property is what the two associative forms lose, and it is the operator-level statement of the element-level fact that $\mathbb{B}_{\Psi}$ is the observable space.
+The inertias in the third column are computed on the trace form $(X,Y)\mapsto\operatorname{tr}(XY)$, which is a symmetric bilinear form on the Jordan algebra and not a Hermitian form. On $H_4(\mathbb{C})$ the form is positive definite, because $\operatorname{tr}(X^{2})=\sum_k\lambda_k^{2}$ for a Hermitian $X$ with eigenvalues $\lambda_k$. A Jordan algebra with a positive definite trace form is **formally real**: a sum of squares vanishes only when every term vanishes. That property is what the two associative forms lose, and it is the operator-level statement of the element-level fact that $\mathbb{B}_{\Psi}$ is the observable space.
 
 **The Hermitian layer of the base.** The base enters here through $\mathbb{B}_{\Psi}$, and the entry is the one place in the article where the operator level is *smaller* than the element level.
 
@@ -554,9 +554,9 @@ The first is the spin cover of the Lorentz group; the second is the double cover
 |---|---|---|
 | complex dimension | $4$ | $16$ |
 | real forms, associative | $2$: $M_2(\mathbb{R})$, $\mathbb{H}$ | $2$: $M_4(\mathbb{R})$, $M_2(\mathbb{H})$ |
-| separating invariant | trace signature $(2,2)$ against $(4,0)$ | trace signature $(10,6)$ against $(6,10)$ |
+| separating invariant | trace inertia $(2,2)$ against $(4,0)$ | trace inertia $(10,6)$ against $(6,10)$ |
 | simple part of the Lie algebra | $\mathfrak{sl}(2,\mathbb{R})$, $\mathfrak{su}(2)$ | $\mathfrak{sl}(4,\mathbb{R})$, $\mathfrak{sl}(2,\mathbb{H})$ |
-| Killing signature of the simple part | $(2,1)$ against $(0,3)$ | $(9,6)$ against $(5,10)$ |
+| Killing inertia of the simple part | $(2,1)$ against $(0,3)$ | $(9,6)$ against $(5,10)$ |
 | real rank of the simple part | $1$ | $3$ against $1$ |
 | Jordan real forms | $M_2(\mathbb{R})^{+}$, $\mathbb{H}^{+}$, $H_2(\mathbb{C})$ | $M_4(\mathbb{R})^{+}$, $M_2(\mathbb{H})^{+}$, $H_4(\mathbb{C})$ |
 | semisimple associative types | finite, small | $17$ against $12$ |
@@ -582,8 +582,8 @@ The first is the spin cover of the Lorentz group; the second is the double cover
 
 **Determined.** The following are determined by the operator real structure, that is by the choice of $\tau_{\mathbb{R}}$ or $\tau_{\mathbb{H}}$.
 
-- **The associative form, up to isomorphism.** By the trace-form signature, and independently by the presence or absence of the chain $M_2(\mathbb{R})\subset M_2(\mathbb{C})$.
-- **The Lie algebra, up to isomorphism.** By the Killing signature, $(9,6)$ against $(5,10)$.
+- **The associative form, up to isomorphism.** By the trace-form inertia, and independently by the presence or absence of the chain $M_2(\mathbb{R})\subset M_2(\mathbb{C})$.
+- **The Lie algebra, up to isomorphism.** By the Killing inertia, $(9,6)$ against $(5,10)$.
 - **The lattice of complex subalgebras that are stable under the real structure.** The base $L(\mathbb{B})$ is stable under both, and its real points in each form are the tables of the third section.
 - **The Jordan form, up to isomorphism.** The three Jordan forms are distinguished by whether the trace form is definite and by whether an associative form lies above.
 
@@ -606,7 +606,7 @@ and the first arrow is constant. The two real forms of the operator algebra are 
 
 ## Hand-off
 
-**What this article has established.** Four things. The two real forms of the operator algebra, $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$, carry three lattices each — associative, Lie, Jordan — and the lattices are classified at the semisimple level by two dimension criteria, $\sum m_in_id_i=4$ and $\sum n_i\le2$, with seventeen and twelve types. The two forms are separated by the trace form and, in the Lie layer, by the Killing signature, $(9,6)$ against $(5,10)$. The biquaternion base produces all three real forms of $\mathfrak{so}(3,\mathbb{C})$, two as real points and one as a realification, and it lives entirely in the split operator form. Every connected group with one of the distinguished algebras is a quotient of the simply connected cover by a discrete central subgroup, and the fundamental group is that subgroup.
+**What this article has established.** Four things. The two real forms of the operator algebra, $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$, carry three lattices each — associative, Lie, Jordan — and the lattices are classified at the semisimple level by two dimension criteria, $\sum m_in_id_i=4$ and $\sum n_i\le2$, with seventeen and twelve types. The two forms are separated by the trace form and, in the Lie layer, by the Killing inertia, $(9,6)$ against $(5,10)$. The biquaternion base produces all three real forms of $\mathfrak{so}(3,\mathbb{C})$, two as real points and one as a realification, and it lives entirely in the split operator form. Every connected group with one of the distinguished algebras is a quotient of the simply connected cover by a discrete central subgroup, and the fundamental group is that subgroup.
 
 **What comes next in the operator series.** Three directions, in order of dependence.
 
@@ -618,9 +618,9 @@ and the first arrow is constant. The two real forms of the operator algebra are 
 
 ## Summary
 
-The operator algebra of the biquaternion algebra is $\mathcal{E}_{\mathbb{C}}\cong M_4(\mathbb{C})$, and it has two real forms. The split form $M_4(\mathbb{R})$ has trace signature $(10,6)$; the quaternionic form $M_2(\mathbb{H})$ has $(6,10)$. The biquaternion base $L(\mathbb{B})$, $R(\mathbb{B})$ is a pair of commuting copies of $M_2(\mathbb{C})$ with a nine-dimensional non-associative, non-Lie complement, and its real points lie in the split form only.
+The operator algebra of the biquaternion algebra is $\mathcal{E}_{\mathbb{C}}\cong M_4(\mathbb{C})$, and it has two real forms. The split form $M_4(\mathbb{R})$ has trace inertia $(10,6)$; the quaternionic form $M_2(\mathbb{H})$ has $(6,10)$. The biquaternion base $L(\mathbb{B})$, $R(\mathbb{B})$ is a pair of commuting copies of $M_2(\mathbb{C})$ with a nine-dimensional non-associative, non-Lie complement, and its real points lie in the split form only.
 
-Each form carries three lattices. The associative lattices are classified at the semisimple level: a semisimple algebra embeds in $M_4(\mathbb{R})$ exactly when $\sum m_in_id_i=4$, giving seventeen types, and in $M_2(\mathbb{H})$ exactly when $\sum n_i\le2$, giving twelve. The Lie lattices are separated by the Killing form, of signature $(9,6)$ on $\mathfrak{sl}(4,\mathbb{R})$ and $(5,10)$ on $\mathfrak{sl}(2,\mathbb{H})\cong\mathfrak{so}(5,1)$; the maximal subalgebras are the parabolics and Levis with $\mathfrak{sp}(2,\mathbb{R})$ and the three real forms of $\mathfrak{so}(4,\mathbb{C})$ in the split case, and the two $C_2$'s with a parabolic in the quaternionic case. The Jordan lattices have three real forms each, including $H_4(\mathbb{C})$ with a positive definite trace form, and contain the associative lattices as a sublattice.
+Each form carries three lattices. The associative lattices are classified at the semisimple level: a semisimple algebra embeds in $M_4(\mathbb{R})$ exactly when $\sum m_in_id_i=4$, giving seventeen types, and in $M_2(\mathbb{H})$ exactly when $\sum n_i\le2$, giving twelve. The Lie lattices are separated by the Killing form, of inertia $(9,6)$ on $\mathfrak{sl}(4,\mathbb{R})$ and $(5,10)$ on $\mathfrak{sl}(2,\mathbb{H})\cong\mathfrak{so}(5,1)$; the maximal subalgebras are the parabolics and Levis with $\mathfrak{sp}(2,\mathbb{R})$ and the three real forms of $\mathfrak{so}(4,\mathbb{C})$ in the split case, and the two $C_2$'s with a parabolic in the quaternionic case. The Jordan lattices have three real forms each, including $H_4(\mathbb{C})$ with a positive definite trace form, and contain the associative lattices as a sublattice.
 
 The passage from the element level to the operator level is not injective: both element forms have the same two-sided span $M_4(\mathbb{R})$, and only the pair of images remembers which form was used. The quaternionic operator form is not a two-sided span at all; it is the endomorphism ring of $\mathbb{B}$ as a right $\mathbb{H}$-module.
 

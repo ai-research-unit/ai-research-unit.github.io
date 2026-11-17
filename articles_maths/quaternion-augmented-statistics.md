@@ -230,7 +230,7 @@ In particular $R_0(-\ell) = \overline{R_0(\ell)}$, and for $k\neq0$ the value at
 | $R_1,R_2,R_3$ | $R_k(0)$, with vanishing $\vec e_k$-component | $R_k = \operatorname{Ad}_k(R_k^{\mathsf H})$ |
 | $R_P$ | $P(0) = \mathbb{E}[\tilde q_n^2]$, not real in general | none |
 
-**Remark.** The metrical reading of the table is that $R_0$ is the Gram matrix of the quaternion inner product $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q^{\natural})$, hence Hermitian and positive semi-definite; each $R_k$ with $k\neq0$ is the Gram matrix of the same inner product in the involution frame, $(R_k)_{nm} = \langle\tilde q_n,\operatorname{Ad}_k\tilde q_m\rangle$; and the pseudo matrix is the Gram matrix of the quaternion-valued bilinear pairing $\tilde p\tilde q$, whose scalar part is the symmetric form $\mathrm{Sc}(\tilde p\tilde q)$ of signature $(1,3)$ and whose vector part is the cross product. The pairing is not an inner product, and that is why its matrix carries no symmetry.
+**Remark.** The metrical reading of the table is that $R_0$ is the Gram matrix of the quaternion inner product $\langle\tilde p,\tilde q\rangle = \mathrm{Sc}(\tilde p\tilde q^{\natural})$, hence Hermitian and positive semi-definite; each $R_k$ with $k\neq0$ is the Gram matrix of the same inner product in the involution frame, $(R_k)_{nm} = \langle\tilde q_n,\operatorname{Ad}_k\tilde q_m\rangle$; and the pseudo matrix is the Gram matrix of the quaternion-valued bilinear pairing $\tilde p\tilde q$, whose scalar part is the symmetric form $\mathrm{Sc}(\tilde p\tilde q)$ of inertia $(1,3)$ and whose vector part is the cross product. The pairing is not an inner product, and that is why its matrix carries no symmetry.
 
 ## Duality with the Real Second-Order Structure
 

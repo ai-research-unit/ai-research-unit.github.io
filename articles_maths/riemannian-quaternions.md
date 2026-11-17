@@ -82,9 +82,9 @@ $$
 \mathrm{Sc}(\mathrm dA^2) = (\mathrm da_0)^2f - \frac{1}{9f}\bigl((\mathrm da_1)^2+(\mathrm da_2)^2+(\mathrm da_3)^2\bigr),
 $$
 
-a form of signature $(1,3)$ wherever $f>0$, whose single free function is the square of the scalar frame element.
+a form of inertia $(1,3)$ wherever $f>0$, whose single free function is the square of the scalar frame element.
 
-*Proof.* Substitute $\hat\imath_0^2 = f$ and $\imath_k^2 = 1/f$ in the theorem. The signature is the diagonal one: the scalar coefficient $f$ is positive and the three vector coefficients $-1/(9f)$ are negative when $f>0$.
+*Proof.* Substitute $\hat\imath_0^2 = f$ and $\imath_k^2 = 1/f$ in the theorem. The inertia is the diagonal one: the scalar coefficient $f$ is positive and the three vector coefficients $-1/(9f)$ are negative when $f>0$.
 
 ### The Metric Is Dynamic
 
@@ -178,7 +178,7 @@ and the rope is $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\ima
 
 A Riemannian quaternion is a quaternion read in a frame, that is in a basis $\hat\imath_\mu = \imath_\mu e_\mu$ each of whose elements is a real multiple of a basis element of $\mathbb{H}$, with the source's parity weights $1,\tfrac13,\tfrac13,\tfrac13$ on the four components. The frame is a scaled basis rather than a rotated one, and the four squared frame elements are the data the construction reads.
 
-The interval of a displacement is the scalar part of its square, $\mathrm{Sc}(\mathrm dA^2)$, and it is diagonal in the four coefficient differentials with coefficients $\hat\imath_0^2$ for the scalar one and $\tfrac19\hat\imath_k^2$ for the three vector ones, that is with the squares of the frame elements as the coefficients of the metric. In the source's one-parameter family of frames, in which the four squares are $f$ and $-1/f$, the interval is $(\mathrm da_0)^2f$ minus $\tfrac19$ of the squared vector displacement divided by $f$, a form of signature $(1,3)$ wherever $f$ is positive, and the metric is dynamic exactly when $f$ is a function of the point.
+The interval of a displacement is the scalar part of its square, $\mathrm{Sc}(\mathrm dA^2)$, and it is diagonal in the four coefficient differentials with coefficients $\hat\imath_0^2$ for the scalar one and $\tfrac19\hat\imath_k^2$ for the three vector ones, that is with the squares of the frame elements as the coefficients of the metric. In the source's one-parameter family of frames, in which the four squares are $f$ and $-1/f$, the interval is $(\mathrm da_0)^2f$ minus $\tfrac19$ of the squared vector displacement divided by $f$, a form of inertia $(1,3)$ wherever $f$ is positive, and the metric is dynamic exactly when $f$ is a function of the point.
 
 The differential of a Riemannian quaternion splits, by the Leibniz rule, into a part from the coefficients and a part from the frame; the attribution of a change between the two parts is the choice of the frame and not the value of the quaternion, and the source calls this freedom the general equivalence principle. The vector part of the square of a displacement is the rope, $2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$ in the source's weights; it vanishes exactly when the displacement is purely scalar or purely vector, and together with the interval it is the whole square, $\mathrm dA^2 = \mathrm{Sc}(\mathrm dA^2)+\mathrm{Vect}(\mathrm dA^2)$. The frame $f = 1-\kappa/r$ is carried through as the example, where the source reads the redshift of a central mass; the reading is the source's and no physical interpretation is drawn in this article.
 

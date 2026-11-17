@@ -137,7 +137,7 @@ of complex dimension three, ruled in the two families of §*The Bilinear Cone an
 | trace | $\phi(u)$, any complex value | $\lVert u\rVert^{2}\ge0$ |
 | trace-free members | $\phi(u)=0$, a hyperplane section | $u=0$ only |
 
-**The two lines of the table that carry the reading.** The fibres: the bilinear cone quotients by a complex scaling and the Hermitian cone by a phase, so the second quotient is a circle and the first is a complex line with the origin removed. The trace: a member of the bilinear cone can have any complex trace, and a member of the Hermitian cone has a nonnegative one. **The positivity of the trace is the signature of the definite form, and it is the whole difference between a cone of operators and a cone of states.**
+**The two lines of the table that carry the reading.** The fibres: the bilinear cone quotients by a complex scaling and the Hermitian cone by a phase, so the second quotient is a circle and the first is a complex line with the origin removed. The trace: a member of the bilinear cone can have any complex trace, and a member of the Hermitian cone has a nonnegative one. **The positivity of the trace is the inertia of the definite form, and it is the whole difference between a cone of operators and a cone of states.**
 
 ### The Light Cone
 

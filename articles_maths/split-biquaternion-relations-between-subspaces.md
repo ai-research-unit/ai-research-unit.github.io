@@ -28,7 +28,7 @@ The fourth conjugation, the anti-Hermitian conjugation $\flat = -{}^{*}$, has th
 | $\mathbb{B}_{\Psi}$ | $\tilde{Q}^{*} = \tilde{Q}$ | $e_t,j\vec e_x,j\vec e_y,j\vec e_z$ | $4$ | no, Jordan | definite positive $(4,0)$; Hermitian form $(1,3)$ |
 | $\mathbb{B}_{\Phi}$ | $\tilde{Q}^{\flat} = \tilde{Q}$ | $je_t,\vec e_x,\vec e_y,\vec e_z$ | $4$ | no, Lie | definite positive $(4,0)$; Hermitian form $(3,1)$ |
 
-Only two of the four are closed under multiplication; of the remaining two, exactly one is closed under the commutator and exactly one under the symmetrized product, so one of the four is a Lie algebra and one is a Jordan algebra. A structural difference from the biquaternion family of remarkable subspaces is the behaviour of the split-biquaternion norm: there the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ carry an **indefinite** norm of signature $(1,3)$ and $(3,1)$, while here the central unit $j$ satisfies $j^2 = +1$ and the split-biquaternion norm is **definite positive** on both sectors. The indefinite form on the sectors here is the Hermitian form, of signature $(1,3)$ and $(3,1)$ respectively.
+Only two of the four are closed under multiplication; of the remaining two, exactly one is closed under the commutator and exactly one under the symmetrized product, so one of the four is a Lie algebra and one is a Jordan algebra. A structural difference from the biquaternion family of remarkable subspaces is the behaviour of the split-biquaternion norm: there the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ carry an **indefinite** norm of inertia $(1,3)$ and $(3,1)$, while here the central unit $j$ satisfies $j^2 = +1$ and the split-biquaternion norm is **definite positive** on both sectors. The indefinite form on the sectors here is the Hermitian form, of inertia $(1,3)$ and $(3,1)$ respectively.
 
 ## The Four Coordinate Blocks
 
@@ -163,15 +163,15 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is the only sub
 
 ### The Topology
 
-The Euclidean norm restricts to a positive definite form of signature $(4,0)$ on the quaternion subspace, on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}_{\Phi}$, and to $(2,0)$ on the centre, so its unit level set is compact on every subspace. The Hermitian scalar form $g$ agrees with the Euclidean form on the quaternion subspace, restricts to $q_t^2-q'^2_0$ of signature $(1,1)$ on the centre, and is indefinite on the two Hermitian sectors, of signature $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$, so its level sets there are non-compact. These restrictions are tabulated in *Split-Biquaternion Norm and Invertibility* and *Split-Biquaternion Rotations and the Lorentz Group*.
+The Euclidean norm restricts to a positive definite form of inertia $(4,0)$ on the quaternion subspace, on $\mathbb{B}_{\Psi}$ and on $\mathbb{B}_{\Phi}$, and to $(2,0)$ on the centre, so its unit level set is compact on every subspace. The Hermitian scalar form $g$ agrees with the Euclidean form on the quaternion subspace, restricts to $q_t^2-q'^2_0$ of inertia $(1,1)$ on the centre, and is indefinite on the two Hermitian sectors, of inertia $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$, so its level sets there are non-compact. These restrictions are tabulated in *Split-Biquaternion Norm and Invertibility* and *Split-Biquaternion Rotations and the Lorentz Group*.
 
 ### The Analysis
 
-The quaternion subspace carries the elliptic quaternion analysis of *Quaternion Analysis* and the centre the hyperbolic split complex analysis of *Split-Complex Analysis*; the two Hermitian sectors are not subalgebras and carry only the restricted ambient analysis, governed respectively by a wave operator of signature $(1,3)$ and $(3,1)$. The distinction follows the sign of the restricted Hermitian form: elliptic where that form is definite, hyperbolic where it is Lorentzian.
+The quaternion subspace carries the elliptic quaternion analysis of *Quaternion Analysis* and the centre the hyperbolic split complex analysis of *Split-Complex Analysis*; the two Hermitian sectors are not subalgebras and carry only the restricted ambient analysis, governed respectively by a wave operator of inertia $(1,3)$ and $(3,1)$. The distinction follows the sign of the restricted Hermitian form: elliptic where that form is definite, hyperbolic where it is Lorentzian.
 
 ### The Geometry
 
-Geometrically the four subspaces are the four invariant planes of the four conjugations: the centre is the axis of quaternion conjugation, the quaternion subspace the axis of split complex conjugation, and the two Hermitian sectors the positive and negative eigenspaces of Hermitian conjugation. The quaternion subspace carries the round sphere $S^3$, the centre the pair of null lines and a pair of hyperbolas, and the two Hermitian sectors the null cones of the two real Lorentzian forms of signature $(1,3)$ and $(3,1)$; the motions carried are the rotations $SO(4)$ on the first and the Lorentz group $SO(1,3)$ on the last two, as in *Split-Biquaternions and Hyperbolic Geometry*.
+Geometrically the four subspaces are the four invariant planes of the four conjugations: the centre is the axis of quaternion conjugation, the quaternion subspace the axis of split complex conjugation, and the two Hermitian sectors the positive and negative eigenspaces of Hermitian conjugation. The quaternion subspace carries the round sphere $S^3$, the centre the pair of null lines and a pair of hyperbolas, and the two Hermitian sectors the null cones of the two real Lorentzian forms of inertia $(1,3)$ and $(3,1)$; the motions carried are the rotations $SO(4)$ on the first and the Lorentz group $SO(1,3)$ on the last two, as in *Split-Biquaternions and Hyperbolic Geometry*.
 
 ## Summary
 
@@ -195,7 +195,7 @@ The four distinguished subspaces of $\mathbb{B}_{\mathrm{spl}}$ are the fixed sp
 
 ## Further Reading
 
-- I. L. Kantor and A. S. Solodovnikov, *Hypercomplex Numbers: An Elementary Introduction to Algebras* (Springer, 1989), for decompositions of an algebra of split signature along its involutions.
+- I. L. Kantor and A. S. Solodovnikov, *Hypercomplex Numbers: An Elementary Introduction to Algebras* (Springer, 1989), for decompositions of an algebra of split inertia along its involutions.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, 1997), for the two quaternion halves of the split biquaternion algebra and its sectors.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for coordinate-block decompositions of Clifford algebras and the fixed spaces of their grade involutions.
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Dover, 1995), for the general theory of the Jordan and Lie structures carried by the symmetric and antisymmetric parts of an algebra with an involution.

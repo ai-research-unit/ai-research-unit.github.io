@@ -118,7 +118,7 @@ $$
 \operatorname{tr}(L_{e_\mu} R_{e_\nu} L_{e_\rho}R_{e_\sigma})=4\,\eta_{\mu\nu,\rho\sigma},
 $$
 
-where $\eta_{\mu\nu,\rho\sigma}=\varepsilon_\mu\varepsilon_\nu\delta_{\mu\rho}\delta_{\nu\sigma}$ is diagonal with entries $\pm1$ determined by the signature, $\varepsilon_t=1$ and $\varepsilon_k=-1$. The sixteen basis operators are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
+where $\eta_{\mu\nu,\rho\sigma}=\varepsilon_\mu\varepsilon_\nu\delta_{\mu\rho}\delta_{\nu\sigma}$ is diagonal with entries $\pm1$ determined by the inertia, $\varepsilon_t=1$ and $\varepsilon_k=-1$. The sixteen basis operators are therefore linearly independent, and they form a basis of $M_4(\mathbb{C})$.
 
 **The expansion.** With the dual basis $\check L_{e_\mu} R_{e_\nu}=\varepsilon_\mu\varepsilon_\nu L_{e_\mu} R_{e_\nu}$ defined by $\operatorname{tr}(\check L_{e_\mu} R_{e_\nu} L_{e_\rho}R_{e_\sigma})=4\delta_{\mu\rho}\delta_{\nu\sigma}$, every matrix expands as
 
@@ -161,7 +161,7 @@ $$
 
 **The Clifford group.** The Clifford group acts on the frame by Lorentz transformations; the **spin group** $\mathrm{Spin}(1,3)$ is the norm-one part of the even Clifford group (the even part itself is the scalars times the spin group), and it double covers the identity component $SO^{+}(1,3)$. The Lie algebra of the spin group is the bivector span $\Lambda^{2}\mathbb{C}^{4}\cong\mathfrak{so}(1,3)_{\mathbb{C}}$, of dimension $6$, inside $M_4(\mathbb{C})$.
 
-**The frames are a bundle.** Over a fixed metric the frames form the homogeneous space $GL_4(\mathbb{C})/\mathbb{C}^{\times}$, because $S$ and $\lambda S$ induce the same conjugation. Over the space of metrics of signature $(1,3)$ they form a fibre bundle with that fibre; the space of metrics is an open convex cone and is contractible, so the bundle is trivial, and a frame still has to be chosen. The Clifford group is the subgroup that preserves the span of the generators, not the whole fibre; the physics chooses a frame, and the choice is not part of the algebra.
+**The frames are a bundle.** Over a fixed metric the frames form the homogeneous space $GL_4(\mathbb{C})/\mathbb{C}^{\times}$, because $S$ and $\lambda S$ induce the same conjugation. Over the space of metrics of inertia $(1,3)$ they form a fibre bundle with that fibre; the space of metrics is an open convex cone and is contractible, so the bundle is trivial, and a frame still has to be chosen. The Clifford group is the subgroup that preserves the span of the generators, not the whole fibre; the physics chooses a frame, and the choice is not part of the algebra.
 
 **What a frame does not determine.** The frame determines the metric through the anticommutator, but it does not determine a Hermitian structure, a real structure or a charge conjugation. Those are extra data: an antilinear involution for the real structure, a unitary structure for the Hermitian form, and a charge conjugation. The frame supplies the last as an operator, $C=L_{e_t}R_{\vec e_x}$ with $C^{2}=-1$ and $C\,(iR_{\vec e_x})^{\mathsf T}C^{-1}=-\,iR_{\vec e_x}$ and $C\,(iL_{\vec e_k}R_{\vec e_y})^{\mathsf T}C^{-1}=-\,iL_{\vec e_k}R_{\vec e_y}$; that one operator can serve is a fact of the frame; which operator serves is a choice. The frame is the Clifford layer; the other structures are layers above it.
 

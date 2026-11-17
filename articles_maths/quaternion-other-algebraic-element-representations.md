@@ -9,7 +9,7 @@ The article depends on *Quaternion Algebra* for the basis and the relations, on 
 
 The corpus's default base is a commutative ring with identity; the Clifford identifications are stated over $\mathbb{R}$, and the module statements hold over any base in which the relevant subalgebra is defined.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural}$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the group of invertibles is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real signature form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.
+Throughout, $\mathbb{H}$ is the quaternion algebra with basis $e_t = 1, \vec e_x, \vec e_y, \vec e_z$, $\vec e_k^2 = -e_t$; a quaternion is $\tilde q = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with conjugate $\tilde{q}^{\natural}$ and norm $\langle\tilde q\rangle_{\natural} = \tilde q\tilde{q}^{\natural}$; the group of invertibles is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$ and the unit sphere is $Sp(1)\cong S^3$. The Clifford algebra of a quadratic space $(V,\tilde q)$ is written $\mathrm{Cl}(V,\tilde q)$ and its real inertia form $\mathrm{Cl}_{p,\tilde q}$, and the even subalgebra is $\mathrm{Cl}^0$.
 
 ## The Spinor Representation
 
@@ -33,7 +33,7 @@ $$
 
 ## The Clifford Algebra Identification
 
-**Definition.** The **Clifford algebra** $\mathrm{Cl}(V,\tilde q)$ of a quadratic space is the quotient of the tensor algebra by the relations $v^2 = \tilde q(v)$; its real signature forms are written $\mathrm{Cl}_{p,\tilde q}$.
+**Definition.** The **Clifford algebra** $\mathrm{Cl}(V,\tilde q)$ of a quadratic space is the quotient of the tensor algebra by the relations $v^2 = \tilde q(v)$; its real inertia forms are written $\mathrm{Cl}_{p,\tilde q}$.
 
 **Theorem.** The quaternion algebra is the Clifford algebra of the negative definite real plane,
 
@@ -101,7 +101,7 @@ The regular module of $\mathbb{H}$ is simple, with endomorphism ring $\mathbb{H}
 | $\tilde q\cdot v = \operatorname{Mat}(\tilde q)v$, $v\in\mathbb{C}^2$ | Spinor representation |
 | $Sp(1)\cong SU(2)$ | Unit quaternions, the spin group |
 | $\mathrm{sym}^2,\Lambda^2$ | Symmetric and alternating squares of the spinor module |
-| $\mathrm{Cl}(V,\tilde q)$, $\mathrm{Cl}_{p,\tilde q}$, $\mathrm{Cl}^0$ | Clifford algebra, real signature form, even part |
+| $\mathrm{Cl}(V,\tilde q)$, $\mathrm{Cl}_{p,\tilde q}$, $\mathrm{Cl}^0$ | Clifford algebra, real inertia form, even part |
 | $\mathbb{H}\cong\mathrm{Cl}_{0,2}\cong\mathrm{Cl}^0_{0,3}$ | Clifford identifications |
 | $\mathrm{Cl}^0_{3,0}\cong M_2(\mathbb{R})$ | The other real form, not isomorphic to $\mathbb{H}$ |
 | ${}_{\mathbb{H}}\mathbb{H}$ | Regular module, simple, $\operatorname{End}\cong\mathbb{H}_{\mathrm{opp}}$ |

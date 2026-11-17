@@ -72,7 +72,7 @@ The spectrum of a single element of a commutative algebra is the element itself,
 ## Further Reading
 
 - F. R. Gantmacher, *The Theory of Matrices*, Vol. 1 (Chelsea, 1959), for the characteristic polynomial, the Cayley–Hamilton theorem and the spectral theorem over $\mathbb{C}$.
-- Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the spectral theory of forms of indefinite signature and the sign-dependent eigenvalue dichotomy.
+- Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the spectral theory of forms of indefinite inertia and the sign-dependent eigenvalue dichotomy.
 - Fuzhen Zhang, "Quaternions and Matrices of Quaternions", *Linear Algebra and its Applications* 251 (1997), 21-57, for the left and right eigenvalues of a quaternion matrix and the similarity classes.
 - Fabrizio Colombo, Irene Sabadini and Daniele C. Struppa, *Noncommutative Functional Calculus* (Birkhäuser, 2011), for the S-spectrum, the S-resolvent and the quaternionic spectral theorem.
 - John Voight, *Quaternion Algebras*, Graduate Texts in Mathematics 288 (Springer, 2021), for the reduced trace and reduced norm and the Cayley–Hamilton identity in a quaternion algebra.

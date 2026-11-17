@@ -205,7 +205,7 @@ commutative, unital with the unit $e_t$, non-associative, and a Jordan algebra: 
 
 Its idempotents are $0$ and $e_t$ alone, so the Peirce decomposition is trivial, $J_1(e_t)=\mathbb{H}$ and $J_0(0)=\mathbb{H}$ with both off-diagonal spaces zero; the algebra is a Jordan division algebra and has no Peirce calculus; the square is $\tilde q^2=(q_t^2-\lvert\vec q\rvert^2)+2q_t\vec q$, every element is a square, so the cone of squares is the whole space; the algebra is therefore not formally real, $\vec e_x\bullet\vec e_x+e_t=0$, and the spectral theorem, the proper cone and the order fail together.
 
-The operators are $L(\tilde q)$ and $U(\tilde q)\tilde y=\tilde q\tilde y\tilde q$, the triple product is $\tfrac12(\tilde q_2\tilde q_1\tilde q_3+\tilde q_3\tilde q_1\tilde q_2)$, and the derivations are the three-dimensional $\mathfrak{so}(3)$ of the vector subspace. The trace form is the form of the parent, of signature $(1,3)$, invariant and associative and not multiplicative: the invariance holds and does not give a Euclidean structure.
+The operators are $L(\tilde q)$ and $U(\tilde q)\tilde y=\tilde q\tilde y\tilde q$, the triple product is $\tfrac12(\tilde q_2\tilde q_1\tilde q_3+\tilde q_3\tilde q_1\tilde q_2)$, and the derivations are the three-dimensional $\mathfrak{so}(3)$ of the vector subspace. The trace form is the form of the parent, of inertia $(1,3)$, invariant and associative and not multiplicative: the invariance holds and does not give a Euclidean structure.
 
 ## Summary of Notation
 

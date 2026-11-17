@@ -4,7 +4,7 @@
 
 **The form $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X^{\mathsf T}Y)$ is an inner product on $M_n(\mathbb{R})$, and it is not invariant under the algebra: the ratio $\langle AX,AY\rangle_{\mathrm{HS}}/\langle X,Y\rangle_{\mathrm{HS}}$ is not constant in $X$ unless $A$ is orthogonal.**
 
-The article computes the adjoints of the multiplication operators, derives the exact adjoint of $\operatorname{ad}_A$, measures the defect of invariance on a hundred random pairs, proves that invariance holds for an element $A$ exactly when $A$ is orthogonal, and compares the two forms and their isometry groups. It assumes *The Trace Form and Its Indefinite Signature* for the competing form, and it defers the Killing form to *The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$*.
+The article computes the adjoints of the multiplication operators, derives the exact adjoint of $\operatorname{ad}_A$, measures the defect of invariance on a hundred random pairs, proves that invariance holds for an element $A$ exactly when $A$ is orthogonal, and compares the two forms and their isometry groups. It assumes *The Trace Form and Its Indefinite Inertia* for the competing form, and it defers the Killing form to *The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$*.
 
 ## The Form
 
@@ -130,7 +130,7 @@ $$
 
 The second identity uses $K^{\mathsf T}=-K$. So the two forms agree on $\operatorname{Sym}_n$ and differ by a sign on $\operatorname{Skew}_n$.
 
-**The definite form is the difference of two positive forms on the halves.** Since $\langle S,S\rangle_{\mathrm{HS}}=\operatorname{tr}(S^{2})$ for symmetric $S$ and $\langle K,K\rangle_{\mathrm{HS}}=-\operatorname{tr}(K^{2})$ for antisymmetric $K$, the Hilbert–Schmidt form is positive on both halves, while the trace form is positive on the first and negative on the second. The signature of the trace form and the definiteness of the Hilbert–Schmidt form are the same computation read with two sign conventions.
+**The definite form is the difference of two positive forms on the halves.** Since $\langle S,S\rangle_{\mathrm{HS}}=\operatorname{tr}(S^{2})$ for symmetric $S$ and $\langle K,K\rangle_{\mathrm{HS}}=-\operatorname{tr}(K^{2})$ for antisymmetric $K$, the Hilbert–Schmidt form is positive on both halves, while the trace form is positive on the first and negative on the second. The inertia of the trace form and the definiteness of the Hilbert–Schmidt form are the same computation read with two sign conventions.
 
 ## The Two Isometry Groups
 
@@ -167,7 +167,7 @@ The Hilbert–Schmidt form $\langle X,Y\rangle_{\mathrm{HS}}=\operatorname{tr}(X
 
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge, 2013), for the Frobenius norm, the singular values and the orthogonal group.
 - Rajendra Bhatia, *Matrix Analysis* (Springer, 1997), for the Rayleigh quotients and the comparison of norms on matrices.
-- [The Trace Form and Its Indefinite Signature](the-trace-form-and-its-indefinite-signature.html), for the invariant form and the signature $(n(n+1)/2,n(n-1)/2)$.
+- [The Trace Form and Its Indefinite Inertia](the-trace-form-and-its-indefinite-signature.html), for the invariant form and the inertia $(n(n+1)/2,n(n-1)/2)$.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the algebra and its matrix units.
 - [The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric](the-two-halves-over-r-symmetric-and-antisymmetric.html), for the two halves on which the two forms agree and disagree.
 - [The Killing Form, Its Radical and the Centre of $\mathfrak{gl}_n(\mathbb{R})$](the-killing-form-its-radical-and-the-centre-of-gl-n-r.html), for the third form on the same space.

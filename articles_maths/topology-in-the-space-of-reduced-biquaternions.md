@@ -20,7 +20,7 @@ is a norm on $\mathbb{B}_{\mathrm{red}}$: it is non-negative and vanishes only a
 
 **Corollary (only $\langle\cdot\rangle_{\mathrm{ts}*}$ gives a topological norm).** Of the four algebraic norms, only $\langle\cdot\rangle_{\mathrm{ts}*}$ is positive definite, so only $\langle\cdot\rangle_{\mathrm{ts}*}$ yields a topological norm; the complex-valued $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\mathrm{ts}}$ and the indefinite $\langle\cdot\rangle_{*}$ do not. Their moduli $\lvert B\rvert,\lvert N\rvert,\lvert H\rvert$ are real and non-negative but vanish on non-zero elements, so no square root of them is a norm; the metric question is taken up in *Topology and Metric for Each of the Operations*.
 
-*Proof.* $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\mathrm{ts}}$ take complex values and vanish on the isotropic sets of the two bilinear forms; $\langle\cdot,\cdot\rangle_{*}$ is indefinite of signature $(2,2)$ and vanishes on its null set; a norm must vanish only at the origin, which none of the three does.
+*Proof.* $\langle\cdot\rangle$ and $\langle\cdot\rangle_{\mathrm{ts}}$ take complex values and vanish on the isotropic sets of the two bilinear forms; $\langle\cdot,\cdot\rangle_{*}$ is indefinite of inertia $(2,2)$ and vanishes on its null set; a norm must vanish only at the origin, which none of the three does.
 
 ## The Topological Norm: Equivalence and Uniqueness
 

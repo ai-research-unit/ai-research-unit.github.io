@@ -4,7 +4,7 @@
 
 **Four forms live on the matrix space — the trace form, the Killing form, the Hilbert–Schmidt form and the determinant — and each carries a norm: $\operatorname{tr}(X^{2})$, $2n\operatorname{tr}(X^{2})-2(\operatorname{tr}X)^{2}$, $\operatorname{tr}(X^{*}X)$ and $\det X$, of which only the last is multiplicative.**
 
-The article puts the four forms side by side, computes the quadratic function attached to each, proves the three identities that relate them on the two halves and on the traceless part, proves the bound $|\det X|\le(\operatorname{tr}(X^{*}X)/n)^{n/2}$ from the arithmetic–geometric mean of the singular values, and explains which form is adapted to which structure. It assumes *The Trace Form and Its Signature on the Two Halves*, *The Killing Form, Its Radical and the Triangular Case* and *The Hilbert–Schmidt Form* for the three bilinear forms, and *The Element: Rank, Trace, Determinant, Characteristic Polynomial* for the determinant. It defers the cone to *The Positive Cone and Its Boundary* and the geometry of the group to *The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin*.
+The article puts the four forms side by side, computes the quadratic function attached to each, proves the three identities that relate them on the two halves and on the traceless part, proves the bound $|\det X|\le(\operatorname{tr}(X^{*}X)/n)^{n/2}$ from the arithmetic–geometric mean of the singular values, and explains which form is adapted to which structure. It assumes *The Trace Form and Its Inertia on the Two Halves*, *The Killing Form, Its Radical and the Triangular Case* and *The Hilbert–Schmidt Form* for the three bilinear forms, and *The Element: Rank, Trace, Determinant, Characteristic Polynomial* for the determinant. It defers the cone to *The Positive Cone and Its Boundary* and the geometry of the group to *The Symmetric Space $\mathrm{GL}_n/O(n)$ and Its Complex Twin*.
 
 ## The Four Forms
 
@@ -38,13 +38,13 @@ so the determinant is a homomorphism from the multiplicative monoid of matrices 
 
 ## The Norms Attached to the Three Bilinear Forms
 
-**The trace form gives the quadratic function $\operatorname{tr}(X^{2})$, indefinite with the signature of the form.** Put $q_1(X)=\langle X,X\rangle_{1}=\operatorname{tr}(X^{2})$. On the two halves,
+**The trace form gives the quadratic function $\operatorname{tr}(X^{2})$, indefinite with the inertia of the form.** Put $q_1(X)=\langle X,X\rangle_{1}=\operatorname{tr}(X^{2})$. On the two halves,
 
 $$
 q_1(S)=\sum_{i,j}S_{ij}^{2}>0\ (S\neq0),\qquad q_1(K)=-\sum_{i,j}K_{ij}^{2}<0\ (K\neq0),
 $$
 
-so $q_1$ is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, with signature $(n(n+1)/2,n(n-1)/2)$ on the whole algebra. So the "norm" of the trace form is not a norm: it is a quadratic form of indefinite type, and it is a norm only after restriction to the symmetric half.
+so $q_1$ is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, with inertia $(n(n+1)/2,n(n-1)/2)$ on the whole algebra. So the "norm" of the trace form is not a norm: it is a quadratic form of indefinite type, and it is a norm only after restriction to the symmetric half.
 
 **The Killing form gives $q_2(X)=2n\operatorname{tr}(X^{2})-2(\operatorname{tr}X)^{2}$, which agrees with $2n\,q_1$ on the traceless part.** Since $\operatorname{tr}(X)=0$ there,
 
@@ -130,11 +130,11 @@ $$
 
 so the two sides are equal, which the computation confirms on random unitary matrices.
 
-**The biquaternion reading gives the four forms their names.** The algebraic norm is $N$, indefinite of signature $(2,2)$ on the four real coordinates; the trace form is its trace shadow of signature $(3,1)$; the Hilbert–Schmidt form is the Euclidean form of signature $(4,0)$; and the Killing form is the traceless part of the trace form, vanishing on the identity. So the four forms are the four ways of reading the same four coordinates, and the signatures $(2,2)$, $(3,1)$, $(4,0)$ and $(3,0)$ on the traceless part are the arithmetic of the biquaternion algebra.
+**The biquaternion reading gives the four forms their names.** The algebraic norm is $N$, indefinite of inertia $(2,2)$ on the four real coordinates; the trace form is its trace shadow of inertia $(3,1)$; the Hilbert–Schmidt form is the Euclidean form of inertia $(4,0)$; and the Killing form is the traceless part of the trace form, vanishing on the identity. So the four forms are the four ways of reading the same four coordinates, and the inertias $(2,2)$, $(3,1)$, $(4,0)$ and $(3,0)$ on the traceless part are the arithmetic of the biquaternion algebra.
 
 ## Summary
 
-The matrix space carries four forms: the trace form $\operatorname{tr}(XY)$, indefinite with signature $(n(n+1)/2,n(n-1)/2)$; the Killing form $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, equal to $2n$ times the trace form on the traceless algebra and vanishing on the scalars; the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$, positive definite and agreeing with the trace form on the real symmetric matrices; and the determinant, homogeneous of degree $n$ and the only multiplicative one. The determinant is bounded by the Hilbert–Schmidt norm through the arithmetic–geometric mean of the singular values, with equality exactly on the scalar multiples of unitary matrices, and by the trace on the positive cone, with equality exactly on the scalars. Each form is adapted to one structure: Lie, structure theory, Hilbert space and multiplicative monoid.
+The matrix space carries four forms: the trace form $\operatorname{tr}(XY)$, indefinite with inertia $(n(n+1)/2,n(n-1)/2)$; the Killing form $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, equal to $2n$ times the trace form on the traceless algebra and vanishing on the scalars; the Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$, positive definite and agreeing with the trace form on the real symmetric matrices; and the determinant, homogeneous of degree $n$ and the only multiplicative one. The determinant is bounded by the Hilbert–Schmidt norm through the arithmetic–geometric mean of the singular values, with equality exactly on the scalar multiples of unitary matrices, and by the trace on the positive cone, with equality exactly on the scalars. Each form is adapted to one structure: Lie, structure theory, Hilbert space and multiplicative monoid.
 
 ## Summary of Notation
 
@@ -155,4 +155,4 @@ The matrix space carries four forms: the trace form $\operatorname{tr}(XY)$, ind
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the algebraic norm of a central simple algebra and its multiplicativity.
 - [The Hilbert–Schmidt Form](the-hilbert-schmidt-form.html), for the definite form and the norm used in the bound.
 - [The Killing Form, Its Radical and the Triangular Case](the-killing-form-its-radical-and-the-triangular-case.html), for the second of the four forms.
-- [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the first of the four and its signature.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the first of the four and its inertia.

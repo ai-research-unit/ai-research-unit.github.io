@@ -4,7 +4,7 @@
 
 **The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, its radical is the centre $\mathbb{C}\mathrm{I}$, and on the antisymmetric half it takes the two different values $(n-2)\operatorname{tr}(XY)$ and $2n\operatorname{tr}(XY)$ according to whether it is computed inside the half or in the whole algebra; on $UT_n$ it has rank $n-1$ and radical $n_+\oplus\mathbb{R}\mathrm{I}$.**
 
-The article computes the form from the derivation matrices, identifies the radical, gives the signature on the traceless algebra, resolves the two values on $\mathfrak{so}(n)$, and computes the triangular case as the contrast. It assumes *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* for the derivation trace form and *The Trace Form and Its Signature on the Two Halves* for the signatures. It defers the Cartan criterion to *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion* and the group theory to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$*.
+The article computes the form from the derivation matrices, identifies the radical, gives the inertia on the traceless algebra, resolves the two values on $\mathfrak{so}(n)$, and computes the triangular case as the contrast. It assumes *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* for the derivation trace form and *The Trace Form and Its Inertia on the Two Halves* for the inertias. It defers the Cartan criterion to *Symmetric Pairs and Cartan Pairs: the Reductivity Criterion* and the group theory to *The Cartan Decomposition of $\mathrm{GL}_n(\mathbb{C})$*.
 
 ## The Killing Form of $\mathfrak{gl}_n$
 
@@ -64,9 +64,9 @@ which is Cartan's criterion read in the simplest case: a Lie algebra is semisimp
 
 **The two halves are not orthogonal for the Killing form.** Since the correction term involves traces, a symmetric and an antisymmetric matrix still pair through $2n\operatorname{tr}(SK)$, so the Killing form is $2n$ times the trace form on the whole algebra and the orthogonality of the halves is inherited from the trace form. What changes is the sign pattern, not the blocks.
 
-## The Signature on $\mathfrak{sl}_n$
+## The Inertia on $\mathfrak{sl}_n$
 
-**On the real traceless algebra the signature is inherited from the trace form, scaled by $2n$.** Since $B=2n\operatorname{tr}$ there and $2n>0$, the signs are those of *The Trace Form and Its Signature on the Two Halves*:
+**On the real traceless algebra the inertia is inherited from the trace form, scaled by $2n$.** Since $B=2n\operatorname{tr}$ there and $2n>0$, the signs are those of *The Trace Form and Its Inertia on the Two Halves*:
 
 $$
 \operatorname{sig}\big(B|_{\mathfrak{sl}_n(\mathbb{R})}\big)=\Big(\frac{n(n+1)}{2}-1,\ \frac{n(n-1)}{2}\Big)=(2,1),\ (5,3),\ (9,6)\quad(n=2,3,4).
@@ -154,7 +154,7 @@ which the computation reproduces. So the radical is $n_+\oplus\mathbb{R}\mathrm{
 
 ## Summary
 
-The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, its radical is the centre $\mathbb{C}\mathrm{I}$, and on $\mathfrak{sl}_n$ it reduces to $2n\operatorname{tr}(XY)$ with signature $(n(n+1)/2-1,n(n-1)/2)$, negative definite on the compact form $\mathfrak{su}(n)$. On the antisymmetric half the intrinsic value is $(n-2)\operatorname{tr}(XY)$ and the ambient value is $2n\operatorname{tr}(XY)$, differing by the trace of the action on the symmetric square with constant $n+2$. On $UT_n$ the form vanishes on the commutator $n_+$, is $n\sum\lambda_i\mu_i-\sum\lambda\sum\mu$ on the diagonal with rank $n-1$, and has radical $n_+\oplus\mathbb{R}\mathrm{I}$.
+The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y)$, its radical is the centre $\mathbb{C}\mathrm{I}$, and on $\mathfrak{sl}_n$ it reduces to $2n\operatorname{tr}(XY)$ with inertia $(n(n+1)/2-1,n(n-1)/2)$, negative definite on the compact form $\mathfrak{su}(n)$. On the antisymmetric half the intrinsic value is $(n-2)\operatorname{tr}(XY)$ and the ambient value is $2n\operatorname{tr}(XY)$, differing by the trace of the action on the symmetric square with constant $n+2$. On $UT_n$ the form vanishes on the commutator $n_+$, is $n\sum\lambda_i\mu_i-\sum\lambda\sum\mu$ on the diagonal with rank $n-1$, and has radical $n_+\oplus\mathbb{R}\mathrm{I}$.
 
 ## Summary of Notation
 
@@ -173,7 +173,7 @@ The Killing form of $\mathfrak{gl}_n$ is $2n\operatorname{tr}(XY)-2\operatorname
 
 - James E. Humphreys, *Introduction to Lie Algebras and Representation Theory* (Springer, 1972), for the Killing form, Cartan's criterion and reductive algebras.
 - Karin Erdmann and Mark J. Wildon, *Introduction to Lie Algebras* (Springer, 2006), for the computation of the Killing form from the adjoint matrices.
-- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the signature of the Killing form and the compact forms.
+- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (AMS, 2001), for the inertia of the Killing form and the compact forms.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the derivation trace form that the Killing form is.
-- [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the signatures that the form inherits.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the inertias that the form inherits.
 - [The Antisymmetric Part inside $UT_n$: the Radical as the Commutator](the-antisymmetric-part-inside-utn-the-radical-as-the-commutator.html), for the solvability that makes the triangular form degenerate.

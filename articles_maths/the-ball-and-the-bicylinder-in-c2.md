@@ -73,7 +73,7 @@ $$
 $$
 The action is faithful, and the group has real dimension $8$.
 
-*Proof.* A matrix $A\in\mathrm{U}(2,1)$ preserves the Hermitian form $Z^{*}JZ$ of signature $(2,1)$, so it preserves the sign of the form on the class; the chart $Z_3\neq0$ with $Q_{\blacktriangle}=Z_1/Z_3$ and $Q_{\blacktriangledown}=Z_2/Z_3$ identifies the set with $\lVert Q\rVert<1$. The centre acts trivially on classes, and the quotient acts faithfully. The Lie algebra consists of the matrices $X$ with $X^{*}J+JX=0$, a real vector space of dimension $9$; the centre has dimension $1$, so the projective group has dimension $8$.
+*Proof.* A matrix $A\in\mathrm{U}(2,1)$ preserves the Hermitian form $Z^{*}JZ$ of inertia $(2,1)$, so it preserves the sign of the form on the class; the chart $Z_3\neq0$ with $Q_{\blacktriangle}=Z_1/Z_3$ and $Q_{\blacktriangledown}=Z_2/Z_3$ identifies the set with $\lVert Q\rVert<1$. The centre acts trivially on classes, and the quotient acts faithfully. The Lie algebra consists of the matrices $X$ with $X^{*}J+JX=0$, a real vector space of dimension $9$; the centre has dimension $1$, so the projective group has dimension $8$.
 
 **Theorem (the automorphisms are projective unitary).** Every biholomorphism of $\mathbb{B}^2$ is the restriction of an element of $\mathrm{PU}(2,1)$. Hence
 $$

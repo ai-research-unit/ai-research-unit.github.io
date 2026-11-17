@@ -163,21 +163,21 @@ $$
 (\lambda-t)^2-\vec v^2,
 $$
 
-the eigenvalues are $t\pm\sqrt{\vec v^2}$, and the spectral condition is $\vec v^2=0$. What changes is the signature of the form $\vec v^2$ on the vector subspace.
+the eigenvalues are $t\pm\sqrt{\vec v^2}$, and the spectral condition is $\vec v^2=0$. What changes is the inertia of the form $\vec v^2$ on the vector subspace.
 
 | algebra | $\vec v^2$ | spectral condition | eigenvalues | defective stratum | norm | norm cone |
 |---|---|---|---|---|---|---|
 | $\mathbb H$ | $-\lvert\vec v\rvert^2$, negative definite | $\vec v=0$ | $t\pm i\lvert\vec v\rvert$ | none | $t^2+\lvert\vec v\rvert^2$ | $\{0\}$ |
 | $\mathbb B$ | $-B^2$, complex nondegenerate | $B^2=0$ | $t\pm iB$ | $B^2=0,\ \vec v\neq0$ | $t^2+B^2$ | $t^2+B^2=0$ |
-| $\mathbb{H}_{\mathrm{spl}}$ | $S$, real of signature $(2,1)$ | $S=0$ | $t\pm\sqrt S$ | $S=0,\ \vec v\neq0$ | $t^2-S$ | $t^2=S$ |
+| $\mathbb{H}_{\mathrm{spl}}$ | $S$, real of inertia $(2,1)$ | $S=0$ | $t\pm\sqrt S$ | $S=0,\ \vec v\neq0$ | $t^2-S$ | $t^2=S$ |
 
-The quaternion form is negative definite, so its spectral cone is the centre, every element is semisimple and there is no defective stratum; its norm is positive definite. The biquaternion form is complex nondegenerate, so its spectral cone is a complex cone containing the centre, with a defective part off the centre; its norm is a second complex cone. The split form is real of signature $(2,1)$, so its spectral cone is a real cone containing the scalar line, with a defective part off it; its norm is a second real cone. The split case is the only one in which both cones are real hypersurfaces and neither is the centre.
+The quaternion form is negative definite, so its spectral cone is the centre, every element is semisimple and there is no defective stratum; its norm is positive definite. The biquaternion form is complex nondegenerate, so its spectral cone is a complex cone containing the centre, with a defective part off the centre; its norm is a second complex cone. The split form is real of inertia $(2,1)$, so its spectral cone is a real cone containing the scalar line, with a defective part off it; its norm is a second real cone. The split case is the only one in which both cones are real hypersurfaces and neither is the centre.
 
 ## Summary
 
 The split-quaternion algebra carries the condition $S=\vec v^2=-q_x^2+q_y^2+q_z^2$. Left multiplication by $q=t+\vec v$ has characteristic polynomial $((\lambda-t)^2-S)^2$ and, for non-scalar $q$, minimal polynomial $(\lambda-t)^2-S$; the eigenvalues are $t\pm\sqrt S$, real for $S>0$, conjugate for $S<0$, and coincident at $t$ for $S=0$. The spectral criterion is $S\neq0$: the eigenvalues are distinct, $L_q$ is semisimple and an eigenbasis exists. The degenerate case is the spectral cone $\{S=0\}=\mathbb R\times\{q_x^2=q_y^2+q_z^2\}$, of dimension $3$, smooth off the scalar line and singular along it. The scalar line is semisimple; off it the element is defective with minimal polynomial $(\lambda-t)^2$, eigenspace of dimension $2$ and Jordan type $(2,2)$.
 
-The matrix model $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb R)$ has determinant $t^2-S$ and trace $2t$; its singular (non-invertible) locus is the zero-divisor cone $t^2=S$, while its discriminant locus is the spectral cone $S=0$. The two loci differ: An invertible element can have a repeated eigenvalue and a zero divisor can have distinct eigenvalues. The comparison is *Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy*; the four combinations are *The Four Sectors of the Split-Quaternion Algebra*. The quaternion, biquaternion and split cases differ by the signature of $\vec v^2$: negative definite, complex nondegenerate, and real of signature $(2,1)$.
+The matrix model $\mathbb{H}_{\mathrm{spl}}\cong M_2(\mathbb R)$ has determinant $t^2-S$ and trace $2t$; its singular (non-invertible) locus is the zero-divisor cone $t^2=S$, while its discriminant locus is the spectral cone $S=0$. The two loci differ: An invertible element can have a repeated eigenvalue and a zero divisor can have distinct eigenvalues. The comparison is *Relations between the Split-Quaternion Norm and Spectral Regularity and Degeneracy*; the four combinations are *The Four Sectors of the Split-Quaternion Algebra*. The quaternion, biquaternion and split cases differ by the inertia of $\vec v^2$: negative definite, complex nondegenerate, and real of inertia $(2,1)$.
 
 ## Summary of Notation
 

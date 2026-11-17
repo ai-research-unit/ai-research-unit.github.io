@@ -127,15 +127,15 @@ and the extension does not split as a direct sum of Lie algebras: the real line 
 $$
 \kappa(\tilde q_1,\tilde q_2)=3q_{1t}q_{2t}-2(\vec q_1,\vec q_2),
 $$
-of matrix $\mathrm{diag}(3,-2,-2,-2)$ in the basis, of signature $(1,3)$ and rank four.
+of matrix $\mathrm{diag}(3,-2,-2,-2)$ in the basis, of inertia $(1,3)$ and rank four.
 
 *Proof.* $\mathrm{ad}_{e_t}$ is the projection onto $V$ and $\mathrm{ad}_{\vec u}$ is $\vec v\mapsto-\vec u\times\vec v$ plus a term in the real line; the products are computed in the coefficient basis, entry by entry. The trace of $\mathrm{ad}_{e_t}^2$ is the trace of the projection, which is $3$; the trace of $\mathrm{ad}_{\vec e_x}^2$ is $-2$, by the same computation as in the plain case. Verified in the basis and on random pairs.
 
-**Corollary (the form is non-degenerate).** The radical of the Killing form is $\{0\}$; the form is indefinite of signature $(1,3)$, positive on the real line and negative on the vector subspace.
+**Corollary (the form is non-degenerate).** The radical of the Killing form is $\{0\}$; the form is indefinite of inertia $(1,3)$, positive on the real line and negative on the vector subspace.
 
 *Proof.* The displayed matrix has no kernel and its eigenvalues are $3,-2,-2,-2$. This is the sharpest contrast with the plain bracket, whose Killing form is degenerate on exactly the line that carries the positive direction here.
 
-**Remark (the two forms of the same algebra).** The trace form of the bracket product vanishes, as it does for every alternating product, and the form that lives on the space is the Killing form. **The algebra therefore carries a non-degenerate invariant form of signature $(1,3)$ and is not a Lie algebra: a non-degenerate Killing form is not a certificate of the Jacobi identity, and here it is the form of a bracket that fails.** The form is the one of the four-dimensional Minkowski space, and it is the form that the article of the P norm studies under another name.
+**Remark (the two forms of the same algebra).** The trace form of the bracket product vanishes, as it does for every alternating product, and the form that lives on the space is the Killing form. **The algebra therefore carries a non-degenerate invariant form of inertia $(1,3)$ and is not a Lie algebra: a non-degenerate Killing form is not a certificate of the Jacobi identity, and here it is the form of a bracket that fails.** The form is the one of the four-dimensional Minkowski space, and it is the form that the article of the P norm studies under another name.
 
 ## The Absent Exponential
 
@@ -156,7 +156,7 @@ Over $\mathbb{R}$ there are two general products, hence two antisymmetrisations,
 | image | $V$ | $V$ | $V$ | $V$ |
 | kernel of $L_{e_t}$ | $\mathbb{H}$ | $\mathbb{H}$ | $\mathbb{R}e_t$ | $\mathbb{R}e_t$ |
 | defect span | $0$ | $0$ | $3$ | $3$ |
-| Killing signature | $(0,3)$ | $(0,3)$ | $(1,3)$ | $(1,3)$ |
+| Killing inertia | $(0,3)$ | $(0,3)$ | $(1,3)$ | $(1,3)$ |
 
 **Remark (the sign never repairs).** The table is the exact statement that the antisymmetrisation is a property of the slot pairing and not of the order of the two slots. The sign of the bracket changes nothing: the defect of $-\wedge_{\natural}$ is the negative of the defect of $\wedge_{\natural}$, its span is the same, and the Killing form, being quadratic in the adjoint, is unchanged. **Two of the four brackets are Lie brackets and two are not, and the pair that is not is exactly the pair built from the quaternionic product.**
 
@@ -172,7 +172,7 @@ On the vector subspace it is $-\vec u\times\vec v$, it satisfies the Jacobi iden
 
 The left multiplication by the unit is the projection onto the vector subspace, and the right multiplication is its negative. The ideals are $0$, $V$ and $\mathbb{H}$, and the radical is $V$, so the algebra is a non-split abelian extension of $\mathfrak{so}(3)$ by the real line.
 
-The Killing form is $3q_{1t}q_{2t}-2(\vec q_1,\vec q_2)$, of signature $(1,3)$ and non-degenerate, and it certifies nothing about the Jacobi identity. The exponential is absent: the squares vanish, the series truncates, and only the rotation on the pure part survives.
+The Killing form is $3q_{1t}q_{2t}-2(\vec q_1,\vec q_2)$, of inertia $(1,3)$ and non-degenerate, and it certifies nothing about the Jacobi identity. The exponential is absent: the squares vanish, the series truncates, and only the rotation on the pure part survives.
 
 ## Summary of Notation
 

@@ -343,7 +343,7 @@ Its construction is standard from the fundamental solution, and it decomposes in
 
 1. **Explicit forms.** What are the explicit forms of the Poisson kernel and the Green's function in the two regimes?
 
-2. **The relation to Clifford analysis.** How do these kernels relate to the corresponding kernels in Clifford analysis with split signature?
+2. **The relation to Clifford analysis.** How do these kernels relate to the corresponding kernels in Clifford analysis with split inertia?
 
 3. **The Hardy spaces.** What are the split biquaternion analogues of the Hardy spaces $H^p$ and the Bergman spaces?
 
@@ -371,7 +371,7 @@ The common thread is the **idempotent decomposition**: the split biquaternion al
 
 4. **The special functions from the analysis.** What are the explicit forms of the Poisson kernel, the Green's function, and the reproducing kernel for the spaces of functions satisfying $\tilde{\nabla}F = 0$ or $\Box F = 0$?
 
-5. **The relation to Clifford analysis.** How do the split biquaternion special functions relate to the corresponding functions in Clifford analysis with split signature?
+5. **The relation to Clifford analysis.** How do the split biquaternion special functions relate to the corresponding functions in Clifford analysis with split inertia?
 
 6. **The extension to several variables.** Can the special functions be extended to functions of several split biquaternion variables, and what replaces the idempotent decomposition?
 

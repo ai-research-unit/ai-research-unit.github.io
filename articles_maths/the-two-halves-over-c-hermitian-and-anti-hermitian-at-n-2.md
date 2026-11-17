@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Over $\mathbb{C}$ the two halves are the Hermitian matrices of real dimension $4$ and the anti-Hermitian ones of real dimension $4$, and the determinant of a Hermitian matrix of order two is a Minkowski form of signature $(1,3)$.**
+**Over $\mathbb{C}$ the two halves are the Hermitian matrices of real dimension $4$ and the anti-Hermitian ones of real dimension $4$, and the determinant of a Hermitian matrix of order two is a Minkowski form of inertia $(1,3)$.**
 
 The article proves the split $M_2(\mathbb{C})=\operatorname{Herm}_2\oplus\mathfrak{u}(2)$ as the eigenspaces of the conjugate transpose, identifies $\operatorname{Herm}_2$ with Minkowski space through the determinant and with the Pauli coordinates, identifies the anti-Hermitian half with the Lie algebra $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, computes the product rules $\{H,K\}$ Hermitian and $[H,K]$ anti-Hermitian, and reads the light cone and the rank-one elements. It assumes *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$* for the conjugate transpose, and *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$* for the real slice.
 
@@ -43,7 +43,7 @@ $$
 \det X=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2},
 $$
 
-so the determinant is a quadratic form of signature $(1,3)$ on $\operatorname{Herm}_2$.
+so the determinant is a quadratic form of inertia $(1,3)$ on $\operatorname{Herm}_2$.
 
 **Proof.** $\det$ of the displayed matrix is $(x_{0}+x_{1})(x_{0}-x_{1})-(x_{2}-ix_{3})(x_{2}+ix_{3})=x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}$. The Gram matrix of the form in the basis is $\operatorname{diag}(1,-1,-1,-1)$.
 
@@ -127,7 +127,7 @@ so $HK+KH$ is Hermitian and $HK-KH$ is anti-Hermitian.
 
 ## Summary
 
-The complex matrices split into the Hermitian half and the anti-Hermitian half, each of real dimension $4$, as the eigenspaces of the conjugate transpose. In the Pauli coordinates $X=x_{0}I+x_{1}\sigma_{1}+x_{2}\sigma_{3}+x_{3}\sigma_{2}$ the determinant of a Hermitian matrix is $x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}$, of signature $(1,3)$, and the light cone is the set of rank-one positive semidefinite matrices.
+The complex matrices split into the Hermitian half and the anti-Hermitian half, each of real dimension $4$, as the eigenspaces of the conjugate transpose. In the Pauli coordinates $X=x_{0}I+x_{1}\sigma_{1}+x_{2}\sigma_{3}+x_{3}\sigma_{2}$ the determinant of a Hermitian matrix is $x_{0}^{2}-x_{1}^{2}-x_{2}^{2}-x_{3}^{2}$, of inertia $(1,3)$, and the light cone is the set of rank-one positive semidefinite matrices.
 
 The anti-Hermitian half is $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$, with $[S_{a},S_{b}]=-2i\epsilon_{abc}S_{c}$. For Hermitian $H,K$ the sum $HK+KH$ is Hermitian and the difference is anti-Hermitian, the trace is real on the Hermitian half and purely imaginary on the other, and $\operatorname{tr}(HK)$ is real while $\operatorname{tr}(HK)$ with $K$ anti-Hermitian is purely imaginary. The Hermitian idempotents form the sphere $S^{2}$, and the symmetric ones form its equator $S^{1}$.
 
@@ -140,7 +140,7 @@ The anti-Hermitian half is $\mathfrak{u}(2)=\mathbb{R}iI\oplus\mathfrak{su}(2)$,
 | $\mathfrak{su}(2)$ | the traceless anti-Hermitian matrices, dimension $3$ |
 | $S_{a}$ | $i\sigma_{a}$, the traceless anti-Hermitian basis |
 | $x_{0},x_{1},x_{2},x_{3}$ | the Pauli coordinates of a Hermitian matrix |
-| $\det$ | on $\operatorname{Herm}_2$, the form of signature $(1,3)$ |
+| $\det$ | on $\operatorname{Herm}_2$, the form of inertia $(1,3)$ |
 | $P$ | a Hermitian idempotent, $\tfrac12(I+\vec n\cdot\vec\sigma)$ |
 | $\vec n$ | a unit vector of $\mathbb{R}^{3}$ |
 

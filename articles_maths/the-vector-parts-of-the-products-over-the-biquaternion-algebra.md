@@ -39,7 +39,7 @@ $$
 
 and the scalar part is one of the four forms, while $V_f$ is the new object. The map $V_f$ is $\mathbb{C}$-bilinear when $f$ is one of the six products of the two bilinear families, and sesquilinear over $(\mathbb{C},\bar{\cdot})$ when $f$ is one of the six products of the two sesquilinear families. Its values lie in $\mathbb{B}_{V}$.
 
-**The vector part is not a form.** A form of the corpus is scalar-valued: it is the scalar part of a product read in two arguments, bilinear in both slots for the two bilinear families and sesquilinear in the second slot for the two sesquilinear families. The vector part is vector-valued, so it has no scalar Gram matrix and no signature of its own. What replaces the scalar form is a family of three scalar forms, one for each vector of the subspace: for $w\in\mathbb{B}_{V}$ put
+**The vector part is not a form.** A form of the corpus is scalar-valued: it is the scalar part of a product read in two arguments, bilinear in both slots for the two bilinear families and sesquilinear in the second slot for the two sesquilinear families. The vector part is vector-valued, so it has no scalar Gram matrix and no inertia of its own. What replaces the scalar form is a family of three scalar forms, one for each vector of the subspace: for $w\in\mathbb{B}_{V}$ put
 
 $$
 \varphi_{f,w}(\tilde Q_1,\tilde Q_2)=\bigl(w,V_f(\tilde Q_1,\tilde Q_2)\bigr).

@@ -6,7 +6,7 @@ The plain algebraic norm is
 $$
 P(\tilde q)=\mathrm{Sc}\bigl(\tilde q^2\bigr)=q_t^2-\lvert\vec q\rvert^2 ,
 $$
-the quadratic form of signature $(1,3)$ that the trace form of the plain product induces. Its sign cuts the algebra into three classes,
+the quadratic form of inertia $(1,3)$ that the trace form of the plain product induces. Its sign cuts the algebra into three classes,
 $$
 \mathbb{H}=\{P>0\}\uplus\{P=0\}\uplus\{P<0\},
 $$
@@ -21,7 +21,7 @@ $$
 \langle\tilde q_1,\tilde q_2\rangle_P=\mathrm{Sc}\bigl(\tilde q_1\tilde q_2\bigr)=q_{1t}q_{2t}-(\vec q_1,\vec q_2).
 $$
 
-**Proposition (the form and its signature).** The form is symmetric, bilinear, of Gram matrix $\mathrm{diag}(1,-1,-1,-1)$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, of signature $(1,3)$ and rank four; its radical is $\{0\}$; and its quadratic form is $P$.
+**Proposition (the form and its inertia).** The form is symmetric, bilinear, of Gram matrix $\mathrm{diag}(1,-1,-1,-1)$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, of inertia $(1,3)$ and rank four; its radical is $\{0\}$; and its quadratic form is $P$.
 
 *Proof.* The scalar part of $\tilde q_1\tilde q_2$ is $q_{1t}q_{2t}-(\vec q_1,\vec q_2)$; the Gram matrix is read on the basis, where $\langle e_t,e_t\rangle_P=1$ and $\langle\vec e_k,\vec e_k\rangle_P=-1$ with all mixed entries zero. The polar form of $P$ is $\tfrac12(P(\tilde q_1+\tilde q_2)-P(\tilde q_1)-P(\tilde q_2))$, which is the display.
 
@@ -54,7 +54,7 @@ the **timelike**, the **null** and the **spacelike** class.
 
 **Proposition (the dimensions).** $\mathcal T$ and $\mathcal S$ are open of real dimension four; $\mathcal N$ is closed, of real dimension three, and its smooth part is a hypersurface.
 
-*Proof.* The first two are the preimages of an open set under a continuous function, non-empty, hence open of the full dimension. The null set is the zero set of a non-zero quadratic form of signature $(1,3)$, a cone of dimension three; off the origin the gradient $2(q_t,-\vec q)$ is non-zero, so the cone is smooth there and its tangent space has dimension three.
+*Proof.* The first two are the preimages of an open set under a continuous function, non-empty, hence open of the full dimension. The null set is the zero set of a non-zero quadratic form of inertia $(1,3)$, a cone of dimension three; off the origin the gradient $2(q_t,-\vec q)$ is non-zero, so the cone is smooth there and its tangent space has dimension three.
 
 **Remark (the partition of $N$).** The quaternion norm $N(\tilde q)=q_t^2+\lvert\vec q\rvert^2$ is positive definite, so its sign partitions the algebra as
 $$
@@ -75,7 +75,7 @@ $$
 
 *Proof.* $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$ and the three classes are contained in $\mathbb{H}$, with only $\mathcal N$ meeting the origin. Verified on the parametrisations.
 
-**Remark (the two partitions are not nested).** The N-partition is coarser than the P-partition in the sense that each of its classes is a union of P-classes, and the passage is the passage from a definite form to an indefinite one. The information is not lost: $N$ and $P$ are independent functions, since $N=q_t^2+\lvert\vec q\rvert^2$ and $P=q_t^2-\lvert\vec q\rvert^2$ determine $q_t^2$ and $\lvert\vec q\rvert^2$, hence determine each other's level sets jointly but neither separately. **Two quadratic forms of different signatures cut the same space in two different ways, and neither refines the other except through the pair.**
+**Remark (the two partitions are not nested).** The N-partition is coarser than the P-partition in the sense that each of its classes is a union of P-classes, and the passage is the passage from a definite form to an indefinite one. The information is not lost: $N$ and $P$ are independent functions, since $N=q_t^2+\lvert\vec q\rvert^2$ and $P=q_t^2-\lvert\vec q\rvert^2$ determine $q_t^2$ and $\lvert\vec q\rvert^2$, hence determine each other's level sets jointly but neither separately. **Two quadratic forms of different inertias cut the same space in two different ways, and neither refines the other except through the pair.**
 
 ## The Restriction to the Remarkable Subspaces
 
@@ -87,7 +87,7 @@ $$
 
 *Proof.* The formula. So the two remarkable subspaces sit in the two open classes, and the cone touches each of them only at the origin: **the null cone of the algebra is transverse to both remarkable subspaces, and it is the object that joins them.**
 
-**Proposition (the planes through the axis).** Fix a unit vector $\vec n$ and let $\Pi_{\vec n}=\mathbb{R}e_t\oplus\mathbb{R}\vec n$. On $\Pi_{\vec n}$, $P(\lambda e_t+\mu\vec n)=\lambda^2-\mu^2$, of signature $(1,1)$; the null class meets the plane in the two lines $\mathbb{R}(e_t\pm\vec n)$, and the two open quadrants are the two classes of the plane.
+**Proposition (the planes through the axis).** Fix a unit vector $\vec n$ and let $\Pi_{\vec n}=\mathbb{R}e_t\oplus\mathbb{R}\vec n$. On $\Pi_{\vec n}$, $P(\lambda e_t+\mu\vec n)=\lambda^2-\mu^2$, of inertia $(1,1)$; the null class meets the plane in the two lines $\mathbb{R}(e_t\pm\vec n)$, and the two open quadrants are the two classes of the plane.
 
 *Proof.* The formula, and the factorisation $\lambda^2-\mu^2=(\lambda-\mu)(\lambda+\mu)$. Verified on the plane. The planes $\Pi_{\vec n}$ are the maximal linear subspaces on which $P$ restricted is indefinite, and they are the planes in which the hyperbolic structure of the following articles is read.
 
@@ -119,13 +119,13 @@ $$
 
 ## Summary
 
-The plain algebraic norm is $P(\tilde q)=\mathrm{Sc}(\tilde q^2)=q_t^2-\lvert\vec q\rvert^2$, the quadratic form of the trace form of the plain product, of signature $(1,3)$ and rank four, and it is not multiplicative: $P(\vec e_x\vec e_y)=-1$ against $P(\vec e_x)P(\vec e_y)=1$.
+The plain algebraic norm is $P(\tilde q)=\mathrm{Sc}(\tilde q^2)=q_t^2-\lvert\vec q\rvert^2$, the quadratic form of the trace form of the plain product, of inertia $(1,3)$ and rank four, and it is not multiplicative: $P(\vec e_x\vec e_y)=-1$ against $P(\vec e_x)P(\vec e_y)=1$.
 
 Its sign partitions the algebra into the timelike class $\{P>0\}$, the null class $\{P=0\}$ and the spacelike class $\{P<0\}$, of real dimensions four, three and four; the first and the third are open, the second is a cone.
 
 The null class is not the non-invertible class: every null element is invertible and has $N=2q_t^2>0$. The quaternion norm partitions the algebra as the invertibles and the origin, and the two partitions are as different as a definite cut and an indefinite one.
 
-On the real line $P=\lambda^2\geq0$; on the vector subspace $P=-\lvert\vec q\rvert^2\leq0$; on a plane through the axis $P=\lambda^2-\mu^2$ of signature $(1,1)$ with the cone cut into the two lines $\mathbb{R}(e_t\pm\vec n)$; on the unit sphere $P=2q_t^2-1$, so the null class is a pair of circles.
+On the real line $P=\lambda^2\geq0$; on the vector subspace $P=-\lvert\vec q\rvert^2\leq0$; on a plane through the axis $P=\lambda^2-\mu^2$ of inertia $(1,1)$ with the cone cut into the two lines $\mathbb{R}(e_t\pm\vec n)$; on the unit sphere $P=2q_t^2-1$, so the null class is a pair of circles.
 
 The spectral strata of the three sectors are a third cut, by the discriminant and the spectrum, and the three cuts are independent: each spectral stratum meets each P-class in a non-empty set.
 

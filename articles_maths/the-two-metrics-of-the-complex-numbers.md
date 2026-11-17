@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Complex Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the definite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, and the **split metric** from the realified bilinear form $\langle\cdot,\cdot\rangle$. This article defines both, computes their Gram matrices and signatures in the real basis $1$, $i$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the definite and the indefinite quadratic forms carried by the one plane.
+The complex space carries two distinguished forms (*The Two Forms and the Two Algebraic Norms of the Complex Space*), and each of them induces a distance-like function on the one underlying plane. The **Euclidean metric** comes from the definite Hermitian form $\langle\cdot,\cdot\rangle_{*}$, and the **split metric** from the realified bilinear form $\langle\cdot,\cdot\rangle$. This article defines both, computes their Gram matrices and inertias in the real basis $1$, $i$, reads their level sets and the null cone of the indefinite one, and identifies the group of linear maps preserving each. The two functions are then compared: they are the definite and the indefinite quadratic forms carried by the one plane.
 
 The word **metric** is used in the sense of the menu, for the quadratic function a form induces on the difference of two elements. Only the Euclidean one is a metric in the strict sense; the split one is an indefinite quadratic function and is named a metric by the same convention, and the difference is stated where it occurs.
 
@@ -37,11 +37,11 @@ $$
 [\operatorname{Re}B]=\operatorname{diag}(1,-1), \qquad [\operatorname{Re}H]=\mathrm{I}_{2},
 $$
 
-of signatures $(1,1)$ and $(2,0)$.
+of inertias $(1,1)$ and $(2,0)$.
 
-*Proof.* The four values on the basis are $\operatorname{Re}B(1,1)=1$, $\operatorname{Re}B(1,i)=0$, $\operatorname{Re}B(i,i)=-1$ and $\operatorname{Re}H(1,1)=\operatorname{Re}H(i,i)=1$, $\operatorname{Re}H(1,i)=0$. The two matrices are diagonal, and the signs of their diagonals give the signatures.
+*Proof.* The four values on the basis are $\operatorname{Re}B(1,1)=1$, $\operatorname{Re}B(1,i)=0$, $\operatorname{Re}B(i,i)=-1$ and $\operatorname{Re}H(1,1)=\operatorname{Re}H(i,i)=1$, $\operatorname{Re}H(1,i)=0$. The two matrices are diagonal, and the signs of their diagonals give the inertias.
 
-The realified Hermitian form is the ordinary inner product of the plane, $\operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2$, and its diagonal is the real norm $\langle Q_1\rangle_{*}$. The realified $\langle\cdot,\cdot\rangle$ is indefinite: it is positive on the real direction $1$ and negative on the imaginary direction $i$. The two realifications are the scalar readings of the two complex forms, and the rules behind them — a symmetric bilinear form realifying to the split signature $(1,1)$ and a Hermitian form doubling its inertia to $(2,0)$ — are those of *The Realification and the Effect of the Change of Scalars*.
+The realified Hermitian form is the ordinary inner product of the plane, $\operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2$, and its diagonal is the real norm $\langle Q_1\rangle_{*}$. The realified $\langle\cdot,\cdot\rangle$ is indefinite: it is positive on the real direction $1$ and negative on the imaginary direction $i$. The two realifications are the scalar readings of the two complex forms, and the rules behind them — a symmetric bilinear form realifying to the split inertia $(1,1)$ and a Hermitian form doubling its inertia to $(2,0)$ — are those of *The Realification and the Effect of the Change of Scalars*.
 
 ## The Euclidean Metric
 
@@ -53,7 +53,7 @@ $$
 
 It is the diagonal of the definite form $\langle\cdot,\cdot\rangle_{*}$ read on the difference $Q_1-Q_2$; the modulus $\lvert\cdot\rvert$ and its multiplicativity are *Complex Norm and Invertibility*.
 
-**Proposition (positive definiteness).** The Euclidean metric is real, non-negative, and vanishes exactly when $Q_1=Q_2$. Its Gram matrix is $\mathrm{I}_{2}$ and its signature is $(2,0)$; the only null difference is the zero difference.
+**Proposition (positive definiteness).** The Euclidean metric is real, non-negative, and vanishes exactly when $Q_1=Q_2$. Its Gram matrix is $\mathrm{I}_{2}$ and its inertia is $(2,0)$; the only null difference is the zero difference.
 
 *Proof.* The expression $(q_1-q_2)^{2}+(q'_1-q'_2)^{2}$ is a sum of two squares of reals, hence non-negative and zero only when both differences vanish, that is when $Q_1=Q_2$. The Gram matrix was computed in the previous section.
 
@@ -79,7 +79,7 @@ $$
 
 It is the diagonal of the realified form read on the difference $Q_1-Q_2$.
 
-**Proposition (indefiniteness).** The split metric is real and takes both signs. Its Gram matrix is $\operatorname{diag}(1,-1)$ and its signature is $(1,1)$; it is positive on the real direction and negative on the imaginary one. It is therefore not a distance.
+**Proposition (indefiniteness).** The split metric is real and takes both signs. Its Gram matrix is $\operatorname{diag}(1,-1)$ and its inertia is $(1,1)$; it is positive on the real direction and negative on the imaginary one. It is therefore not a distance.
 
 *Proof.* The value is the diagonal of the matrix $\operatorname{diag}(1,-1)$, a difference of two squares; on $Q=1$ it is $+1$ and on $Q=i$ it is $-1$. Since it changes sign, it is neither positive nor negative definite, and it cannot satisfy the axioms of a distance.
 
@@ -144,7 +144,7 @@ So multiplication by $i$ preserves the Euclidean metric and reverses the split o
 
 So the complex-linear coincidences are only the central pair, while the two real groups $O(2)$ and $O(1,1)$ share a Klein four group; neither group contains the other, and each enlarges the common pair in its own direction.
 
-**Remark (the realified signatures).** The complex space carries a definite and an indefinite real form at once, and the pair $(1,1)$, $(2,0)$ is its realified signature pair.
+**Remark (the realified inertias).** The complex space carries a definite and an indefinite real form at once, and the pair $(1,1)$, $(2,0)$ is its realified inertia pair.
 
 ## Worked Example
 
@@ -166,7 +166,7 @@ for every real $t$; the same holds on the line of direction $1-i$. On those diff
 
 ## Summary
 
-The one complex plane carries two real quadratic functions, one from each of the two forms. The definite Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ gives the Euclidean metric $d_{H}^{2}(Q_1,Q_2)=(q_1-q_2)^{2}+(q'_1-q'_2)^{2}$, of Gram matrix $\mathrm{I}_{2}$ and signature $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the modulus of the difference. The realified plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ gives the split metric $d_{P}^{2}(Q_1,Q_2)=(q_1-q_2)^{2}-(q'_1-q'_2)^{2}$, of Gram matrix $\operatorname{diag}(1,-1)$ and signature $(1,1)$, indefinite, whose null set is the pair of lines $q_1-q_2=\pm(q'_1-q'_2)$, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps is $O(1,1)$, whose subgroup fixing the two null lines rescales them.
+The one complex plane carries two real quadratic functions, one from each of the two forms. The definite Hermitian form $\langle Q_1,Q_2\rangle_{*}=Q_1\bar Q_2$ gives the Euclidean metric $d_{H}^{2}(Q_1,Q_2)=(q_1-q_2)^{2}+(q'_1-q'_2)^{2}$, of Gram matrix $\mathrm{I}_{2}$ and inertia $(2,0)$, positive definite, whose level sets are the circles, whose group of form-preserving $\mathbb{R}$-linear maps is $O(2)$ and whose genuine distance is the modulus of the difference. The realified plain bilinear form $\langle Q_1,Q_2\rangle=Q_1Q_2$ gives the split metric $d_{P}^{2}(Q_1,Q_2)=(q_1-q_2)^{2}-(q'_1-q'_2)^{2}$, of Gram matrix $\operatorname{diag}(1,-1)$ and inertia $(1,1)$, indefinite, whose null set is the pair of lines $q_1-q_2=\pm(q'_1-q'_2)$, whose nonzero level sets are the two families of hyperbolas, and whose group of form-preserving $\mathbb{R}$-linear maps is $O(1,1)$, whose subgroup fixing the two null lines rescales them.
 
 The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{P}^{2}=2(q'_1-q'_2)^{2}$ and $d_{H}^{2}+d_{P}^{2}=2(q_1-q_2)^{2}$; the forms are exchanged by conjugation of the second slot, $\langle Q_1,Q_2\rangle_{*}=P(Q_1,\bar Q_2)$, and multiplication by $i$ preserves the Euclidean metric and reverses the split one.
 
@@ -178,8 +178,8 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 | $\bar Q_1=q_1-iq'_1$ | complex conjugation, the bar |
 | $P(Q_1,Q_2)=Q_1Q_2$ | the plain bilinear form, $\langle\cdot,\cdot\rangle$; Gram matrix $[1]$ over $\mathbb{C}$ |
 | $H(Q_1,Q_2)=Q_1\bar Q_2$ | the Hermitian form, $\langle\cdot,\cdot\rangle_{*}$; Gram matrix $[1]$ over $\mathbb{C}$ |
-| $\operatorname{Re}P(Q_1,Q_2)=q_1q_2-q'_1q'_2$ | the realified bilinear form; Gram matrix $\operatorname{diag}(1,-1)$; signature $(1,1)$ |
-| $\operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2$ | the realified Hermitian form; Gram matrix $\mathrm{I}_{2}$; signature $(2,0)$ |
+| $\operatorname{Re}P(Q_1,Q_2)=q_1q_2-q'_1q'_2$ | the realified bilinear form; Gram matrix $\operatorname{diag}(1,-1)$; inertia $(1,1)$ |
+| $\operatorname{Re}H(Q_1,Q_2)=q_1q_2+q'_1q'_2$ | the realified Hermitian form; Gram matrix $\mathrm{I}_{2}$; inertia $(2,0)$ |
 | $d_{H}^{2}(Q_1,Q_2)=\langle Q_1-Q_2\rangle_{*}$ | Euclidean metric; positive definite; level sets the circles |
 | $d_{P}^{2}(Q_1,Q_2)=\operatorname{Re}\bigl((Q_1-Q_2)^{2}\bigr)$ | split metric; indefinite; level sets the hyperbolas |
 | $q_1-q_2=\pm(q'_1-q'_2)$ | the null pair of lines of the split metric |

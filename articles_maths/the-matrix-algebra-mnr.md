@@ -88,9 +88,9 @@ $$
 \sigma_J(A)=-JA^{\mathsf T}J^{-1}.
 $$
 
-Then $\sigma_J^{2}=\mathrm{id}$, and $\sigma_J$ is $\mathbb{R}$-linear and of the first kind. Its fixed space is $\mathfrak{sp}_n$, of dimension $n(n+1)/2$, the same dimension as $\operatorname{Sym}_n$. Over $\mathbb{C}$ the same two types exist, but the signature that separates the orthogonal ones over $\mathbb{R}$ collapses, so each type is a single class. Over $\mathbb{R}$ the two are distinct, and one fixed space is a Jordan algebra while the other is a Lie algebra. The comparison is *The Two Classes Compared*; the definition and the classification are *The Involutions of the First Kind: Transpose and Symplectic*.
+Then $\sigma_J^{2}=\mathrm{id}$, and $\sigma_J$ is $\mathbb{R}$-linear and of the first kind. Its fixed space is $\mathfrak{sp}_n$, of dimension $n(n+1)/2$, the same dimension as $\operatorname{Sym}_n$. Over $\mathbb{C}$ the same two types exist, but the inertia that separates the orthogonal ones over $\mathbb{R}$ collapses, so each type is a single class. Over $\mathbb{R}$ the two are distinct, and one fixed space is a Jordan algebra while the other is a Lie algebra. The comparison is *The Two Classes Compared*; the definition and the classification are *The Involutions of the First Kind: Transpose and Symplectic*.
 
-## The Trace Form and Its Signature
+## The Trace Form and Its Inertia
 
 **The bilinear form $\langle A,B\rangle=\operatorname{tr}(AB)$ is symmetric, nondegenerate and indefinite.** Symmetry is the identity $\operatorname{tr}(AB)=\operatorname{tr}(BA)$, and nondegeneracy follows from $\langle E_{ij},E_{kl}\rangle=\delta_{il}\delta_{jk}$: a matrix unit pairs only with its transpose. The form is invariant,
 
@@ -100,18 +100,18 @@ $$
 
 so it is an associative form, the trace form of the algebra.
 
-**Its signature is $(n(n+1)/2,\,n(n-1)/2)$.** The symmetric matrices are positive definite for the form and the antisymmetric ones negative definite:
+**Its inertia is $(n(n+1)/2,\,n(n-1)/2)$.** The symmetric matrices are positive definite for the form and the antisymmetric ones negative definite:
 
 $$
 \langle S,S\rangle=\operatorname{tr}(S^{2})=\sum_{i,j}S_{ij}S_{ji}=\sum_{i,j}S_{ij}^{2}>0,\qquad
 \langle K,K\rangle=\operatorname{tr}(K^{2})=-\sum_{i,j}K_{ij}^{2}<0.
 $$
 
-The two halves are orthogonal, because $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$ forces $\operatorname{tr}(SK)=0$. So the form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the signature is the pair of their dimensions. Measured on the basis of matrix units it is $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$.
+The two halves are orthogonal, because $\operatorname{tr}(SK)=\operatorname{tr}((SK)^{\mathsf T})=\operatorname{tr}(K^{\mathsf T}S^{\mathsf T})=-\operatorname{tr}(KS)=-\operatorname{tr}(SK)$ forces $\operatorname{tr}(SK)=0$. So the form is positive definite on $\operatorname{Sym}_n$ and negative definite on $\operatorname{Skew}_n$, and the inertia is the pair of their dimensions. Measured on the basis of matrix units it is $(3,1)$, $(6,3)$, $(10,6)$, $(15,10)$ at $n=2,3,4,5$.
 
 **The form is indefinite for every $n\ge2$, and the null cone is nontrivial.** The antisymmetric half is nonempty as soon as $n\ge2$, so there are elements of negative square. Isotropic elements exist too: every nonzero nilpotent has $\operatorname{tr}(N^{2})=0$, and $E_{12}$ is one.
 
-**No form on $M_n(\mathbb{R})$ is both definite and invariant.** The trace form is invariant and indefinite. The Hilbert–Schmidt form $\operatorname{tr}(A^{\mathsf T}B)=\sum_{i,j}A_{ij}B_{ij}$ is positive definite and not invariant. This dichotomy is the third difference from $\mathbb{C}$, where $\operatorname{tr}(A^{*}B)$ is both. *The Trace Form and Its Indefinite Signature* and *The Hilbert–Schmidt Form: Definite but Not Invariant* prove the two halves of the statement.
+**No form on $M_n(\mathbb{R})$ is both definite and invariant.** The trace form is invariant and indefinite. The Hilbert–Schmidt form $\operatorname{tr}(A^{\mathsf T}B)=\sum_{i,j}A_{ij}B_{ij}$ is positive definite and not invariant. This dichotomy is the third difference from $\mathbb{C}$, where $\operatorname{tr}(A^{*}B)$ is both. *The Trace Form and Its Indefinite Inertia* and *The Hilbert–Schmidt Form: Definite but Not Invariant* prove the two halves of the statement.
 
 ## The Group of Invertibles and the Two Components
 
@@ -135,11 +135,11 @@ whose kernel is $\mathrm{SL}_n(\mathbb{R})$, of dimension $n^{2}-1$.
 
 **The whole algebra is the split quaternions.** The matrices $\mathrm{I}$, $J$, $H=\operatorname{diag}(1,-1)$ and $P=\begin{pmatrix}0&1\\ 1&0\end{pmatrix}$ are a basis of $M_2(\mathbb{R})$, with $J^{2}=-\mathrm{I}$, $H^{2}=P^{2}=\mathrm{I}$ and $HP=-JH$. The multiplication table is that of $\mathbb{H}_{\mathrm{spl}}$ in *Split-Quaternion Algebra*, so $M_2(\mathbb{R})\cong\mathbb{H}_{\mathrm{spl}}$. The division algebra $\mathbb{H}$ is not a real matrix algebra: $M_2(\mathbb{R})$ has zero divisors.
 
-**The trace form at $n=2$ has signature $(3,1)$.** The symmetric part is three-dimensional and positive definite; the antisymmetric part is one-dimensional, spanned by $J$, with $\operatorname{tr}(J^{2})=-2$. This is the form of signature $(3,1)$ of *Split-Quaternion Algebra*.
+**The trace form at $n=2$ has inertia $(3,1)$.** The symmetric part is three-dimensional and positive definite; the antisymmetric part is one-dimensional, spanned by $J$, with $\operatorname{tr}(J^{2})=-2$. This is the form of inertia $(3,1)$ of *Split-Quaternion Algebra*.
 
 ## Summary
 
-$M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$, with centre $\mathbb{R}\mathrm{I}$ and matrix units $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The trace is the only invariant linear functional, the determinant the multiplicative polynomial of degree $n$. The transpose is an involution of the first kind, with eigenspaces $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ of dimensions $n(n+1)/2$ and $n(n-1)/2$; for even $n$ a second class exists, with fixed space $\mathfrak{sp}_n$ of the same dimension. The trace form $\operatorname{tr}(AB)$ has signature $(n(n+1)/2,n(n-1)/2)$, so no form on the algebra is both definite and invariant. The group of invertibles has two components, cut by the sign of the determinant. At $n=2$ the algebra is the split quaternions and contains $\mathbb{C}$ as the centraliser of $J$.
+$M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$, with centre $\mathbb{R}\mathrm{I}$ and matrix units $E_{ij}E_{kl}=\delta_{jk}E_{il}$. The trace is the only invariant linear functional, the determinant the multiplicative polynomial of degree $n$. The transpose is an involution of the first kind, with eigenspaces $\operatorname{Sym}_n$ and $\operatorname{Skew}_n$ of dimensions $n(n+1)/2$ and $n(n-1)/2$; for even $n$ a second class exists, with fixed space $\mathfrak{sp}_n$ of the same dimension. The trace form $\operatorname{tr}(AB)$ has inertia $(n(n+1)/2,n(n-1)/2)$, so no form on the algebra is both definite and invariant. The group of invertibles has two components, cut by the sign of the determinant. At $n=2$ the algebra is the split quaternions and contains $\mathbb{C}$ as the centraliser of $J$.
 
 ## Summary of Notation
 
@@ -152,7 +152,7 @@ $M_n(\mathbb{R})$ is the split central simple real algebra of dimension $n^{2}$,
 | ${}^{\mathsf T}$ | the transpose |
 | $\operatorname{Sym}_n$, $\operatorname{Skew}_n$ | the symmetric and antisymmetric halves, of dimensions $n(n+1)/2$ and $n(n-1)/2$ |
 | $\sigma_J(A)=-JA^{\mathsf T}J^{-1}$ | the symplectic involution, for even $n$ |
-| $\langle A,B\rangle=\operatorname{tr}(AB)$ | the trace form, of signature $(n(n+1)/2,n(n-1)/2)$ |
+| $\langle A,B\rangle=\operatorname{tr}(AB)$ | the trace form, of inertia $(n(n+1)/2,n(n-1)/2)$ |
 | $\mathrm{GL}_n(\mathbb{R})$, $\mathrm{SL}_n(\mathbb{R})$ | the group of invertibles and its determinant-one subgroup |
 | $\Sigma=\{\det=0\}$ | the singular set, of codimension one |
 

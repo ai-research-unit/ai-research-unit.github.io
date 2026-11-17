@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The split norm $N(Q)=a^2-b^2$ is a quadratic form of signature $(1,1)$, and its level sets are the hyperbolas of the hyperbolic plane. This article describes them: the two branches of a positive level, the two of a negative one, the four components of a level of fixed magnitude, and the pair of lines at the value zero. It then reads the hyperbolic structure: the group of norm-one elements acts on the plane, transitively on each branch, so each branch is an orbit and the quotient of the plane by the group is the set of branches with the value of the norm as its coordinate. The null pair of lines is the common asymptotic boundary, and the comparison with the circles of the complex plane closes the article.
+The split norm $N(Q)=a^2-b^2$ is a quadratic form of inertia $(1,1)$, and its level sets are the hyperbolas of the hyperbolic plane. This article describes them: the two branches of a positive level, the two of a negative one, the four components of a level of fixed magnitude, and the pair of lines at the value zero. It then reads the hyperbolic structure: the group of norm-one elements acts on the plane, transitively on each branch, so each branch is an orbit and the quotient of the plane by the group is the set of branches with the value of the norm as its coordinate. The null pair of lines is the common asymptotic boundary, and the comparison with the circles of the complex plane closes the article.
 
 The claim is that the level sets are the orbits, and that the orbit structure is what the indefiniteness produces. Over $\mathbb{C}$ the level sets of the modulus are circles, compact and connected, and each is a single orbit of the circle group; here each level set is a pair of non-compact branches and each branch is a single orbit of a group isomorphic to $\mathbb{R}^\times$. The two pictures are the two faces of the definiteness of the form.
 
@@ -134,7 +134,7 @@ Over $\mathbb{C}$ the level sets of the modulus are circles: $\{A : A\bar A=r^2\
 
 ### Compactness and Periodicity
 
-The circle is compact and the hyperbola is not, and the difference is the signature of the form: a definite form of signature $(2,0)$ has compact level sets, an indefinite form of signature $(1,1)$ has non-compact ones. The group acting is the compact $S^1$ there and the non-compact $\mathbb{R}^\times$ here, and the parameter has a period there and none here. The four components of a level of fixed magnitude here have no complex counterpart: over $\mathbb{C}$ the magnitude fixes the level set and the level set is connected.
+The circle is compact and the hyperbola is not, and the difference is the inertia of the form: a definite form of inertia $(2,0)$ has compact level sets, an indefinite form of inertia $(1,1)$ has non-compact ones. The group acting is the compact $S^1$ there and the non-compact $\mathbb{R}^\times$ here, and the parameter has a period there and none here. The four components of a level of fixed magnitude here have no complex counterpart: over $\mathbb{C}$ the magnitude fixes the level set and the level set is connected.
 
 ### What the Two Pictures Have in Common
 
@@ -146,7 +146,7 @@ The level sets of the split norm are the hyperbolas $a^2-b^2=c$: two branches fo
 
 The hyperbolic rotations, the multiplications by elements of norm one, form a group isomorphic to $\mathbb{R}^\times$ whose identity component is parametrised by the hyperbolic angle with no period. The group acts transitively on each level set of non-zero value and its identity component on each branch, so the orbits are the non-zero level sets, the two punctured null lines and the origin, and the level set of norm one is the orbit of $1$. The quotient is the real line with three orbits over the value zero, and the norm is a complete invariant exactly on the invertibles.
 
-Over $\mathbb{C}$ the level sets are circles, compact, connected, one per value, and each a single orbit of the circle group. The split level sets are non-compact, in two branches, and their four components per magnitude have no complex counterpart; the difference is the signature of the form, and the whole of the hyperbolic structure is that difference.
+Over $\mathbb{C}$ the level sets are circles, compact, connected, one per value, and each a single orbit of the circle group. The split level sets are non-compact, in two branches, and their four components per magnitude have no complex counterpart; the difference is the inertia of the form, and the whole of the hyperbolic structure is that difference.
 
 ## Summary of Notation
 
@@ -164,7 +164,7 @@ Over $\mathbb{C}$ the level sets are circles, compact, connected, one per value,
 
 ## Further Reading
 
-- Barrett O'Neill, *Semi-Riemannian Geometry with Applications to Relativity* (Academic Press, 1983), for hyperboloids, causal structure and the level sets of a form of signature $(1,1)$.
+- Barrett O'Neill, *Semi-Riemannian Geometry with Applications to Relativity* (Academic Press, 1983), for hyperboloids, causal structure and the level sets of a form of inertia $(1,1)$.
 - John Stillwell, *Geometry of Surfaces* (Springer, Universitext, 1992), for the hyperbolic plane, its hyperbolas and the hyperbolic angle.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for isotropic vectors, hyperbolas and the classification of forms in dimension two.
 - Isaak Yaglom, *Complex Numbers in Geometry* (Academic Press, 1968), for the level sets of the split norm and their asymptotes.

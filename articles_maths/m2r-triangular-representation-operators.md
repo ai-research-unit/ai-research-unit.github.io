@@ -196,7 +196,7 @@ and the nilpotent part is carried by the off-diagonal blocks. Its index is worth
 | size | $2\times2$ | $4\times4$ |
 | rank | $2$, $1$ or $0$ by the stratum of $QP$ | product of the two ranks, in $\{0,1,2,4\}$ |
 | trace | $2qp$ | $4pq$ |
-| determinant | $(qp)^{2}$ | $p^{4}q^{4}$ |
+| the determinant of the image | $(qp)^{2}$ | $p^{4}q^{4}$ |
 | Frobenius norm squared | $2(qp)^{2}+(qp'+q'p)^{2}$ | $(2q^{2}+q'^{2})(2p^{2}+p'^{2})$ |
 | conformal? | no, except on the scalars | no, except on the scalars |
 

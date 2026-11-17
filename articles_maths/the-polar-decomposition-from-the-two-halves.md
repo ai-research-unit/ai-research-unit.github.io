@@ -140,7 +140,7 @@ $$
 
 and the rotation is a phase times the identity in each corner, so the polar decomposition of a biquaternion is the pair of its corner moduli and the pair of its corner phases. The computation confirms the decomposition at $n=2$, and it shows that the two singular values are the two corner moduli.
 
-**The indefinite signature changes the shape of the factors.** Since the biquaternion norm is indefinite of signature $(2,2)$, the positive factor of the polar decomposition is positive for the Hermitian form and not for the indefinite one, so the two decompositions differ. The computation confirms the difference at $n=2$ on random elements, and it shows that the polar decomposition is a statement about the definite Hermitian structure, which is the one the complex Hilbert space carries.
+**The indefinite inertia changes the shape of the factors.** Since the biquaternion norm is indefinite of inertia $(2,2)$, the positive factor of the polar decomposition is positive for the Hermitian form and not for the indefinite one, so the two decompositions differ. The computation confirms the difference at $n=2$ on random elements, and it shows that the polar decomposition is a statement about the definite Hermitian structure, which is the one the complex Hilbert space carries.
 
 **The double cover appears in the rotation factor.** The rotation factor $U$ of a planar matrix is a phase, and its two square roots are the two signs of the rotor of *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*, so the polar decomposition of the two-by-two case already contains the two signs. The computation confirms the two roots at $n=2$, and it shows that the stretch has no sign ambiguity while the rotation factor does.
 

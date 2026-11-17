@@ -54,7 +54,7 @@ $$
 
 The determinant is a square, and the trace sees only the scalar part. Both families are therefore inside $GL_4(\mathbb{R})$ once the element is non-zero, and the image of the algebra in each copy is a four-dimensional subspace of the sixteen-dimensional group.
 
-**The adjoints.** With respect to the Frobenius form $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ of the carrier, the adjoint of $L_{\tilde q}$ is $L_{\tilde q^{*}}$ and the adjoint of $R_{\tilde q}$ is $R_{\tilde q^{*}}$: the transpose of a left multiplication is the left multiplication by the conjugate, which is the real form of the statement that the model is conformal normal. With respect to the trace form $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$, whose restriction to the carrier has signature $(1,3)$, the two families are mutual adjoints:
+**The adjoints.** With respect to the Frobenius form $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$ of the carrier, the adjoint of $L_{\tilde q}$ is $L_{\tilde q^{*}}$ and the adjoint of $R_{\tilde q}$ is $R_{\tilde q^{*}}$: the transpose of a left multiplication is the left multiplication by the conjugate, which is the real form of the statement that the model is conformal normal. With respect to the trace form $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$, whose restriction to the carrier has inertia $(1,3)$, the two families are mutual adjoints:
 
 $$
 \langle L_{\tilde q}X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(\tilde qXY)=\operatorname{tr}(X\,Y\tilde q)=\langle X,R_{\tilde q}Y\rangle_{\operatorname{tr}} .
@@ -107,7 +107,7 @@ $$
 \mathbb{H}^{\times}/\mathbb{R}^{\times}\cong SO(3),
 $$
 
-of dimension three, acting on the pure part as the rotation group. In the split-quaternion category this group was $\mathrm{PGL}_2(\mathbb{R})\cong SO^{+}(2,1)$, of the same dimension but of a different signature: the Lorentz group of $2+1$ dimensions there, the rotation group of $3$ dimensions here. The change is exactly the change of sign of the determinant form.
+of dimension three, acting on the pure part as the rotation group. In the split-quaternion category this group was $\mathrm{PGL}_2(\mathbb{R})\cong SO^{+}(2,1)$, of the same dimension but of a different inertia: the Lorentz group of $2+1$ dimensions there, the rotation group of $3$ dimensions here. The change is exactly the change of sign of the determinant form.
 
 **The two-sided operator.** The case $\tilde p=\tilde q$ gives $\tilde x\mapsto\tilde q\tilde x\tilde q$, which is not a conjugation, and its determinant is $N(\tilde q)^{4}$, a fourth power. So the para-hermitian and the hermitian readings of the two-sided operator differ, and only the first is a group action.
 
@@ -158,7 +158,7 @@ $$
 |---|---|---|
 | operator rank | $4$ if both parameters are non-zero, $0$ otherwise | nothing else |
 | trace | $4q_tp_t$ | the two scalar parts |
-| determinant | $N(\tilde q)^{2}N(\tilde p)^{2}$ | the two norms |
+| the determinant of the image | $N(\tilde q)^{2}N(\tilde p)^{2}$ | the two norms |
 | coefficient rank | $1$ | nothing |
 
 The first and last rows are constant on the cone, and the two middle rows are the only numerical invariants. The asymmetry is the point: the operator rank of a product carries one bit of information, the length carries none, and the numerical invariants of the pair do not reach the length at all.
@@ -291,7 +291,7 @@ which kills both $e_t$ and $\vec e_x$, because $\vec e_x e_t\vec e_x=\vec e_x^{2
 | $L_{e_\mu}R_{e_\nu}$ | the sixteen basis operators of the ambient | this article |
 | $c(M)$ | the coefficient matrix of $M$ in that basis | this article |
 | $\ell(M)$ | the length, equal to $\operatorname{rank}c(M)$ | this article |
-| $\langle\cdot,\cdot\rangle_{\operatorname{tr}}$ | the trace form $\operatorname{tr}(XY)$, of signature $(1,3)$ | *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation* |
+| $\langle\cdot,\cdot\rangle_{\operatorname{tr}}$ | the trace form $\operatorname{tr}(XY)$, of inertia $(1,3)$ | *$M_2(\mathbb{C})_{\mathbb{H}}$ Pauli Representation* |
 | $\langle\cdot,\cdot\rangle_F$ | the Frobenius form, positive definite | this article |
 | $SO(3)$ | the group of the inner automorphisms, $\mathbb{H}^{\times}/\mathbb{R}^{\times}$ | *Quaternion Rotations and the Lorentz Group* |
 | $\mathbb{P}^{3}(\mathbb{R})$ | the projectivised algebra, the space of the rulings | this article |

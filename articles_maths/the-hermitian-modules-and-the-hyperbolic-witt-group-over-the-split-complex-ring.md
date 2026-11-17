@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A Hermitian module over the split-complex ring is a pair of real vector spaces with a pairing between them, and every non-degenerate such module is hyperbolic. That is the classification, and it is a short one: the isometry class is a single integer, the realified signature is always balanced, and the Witt group is trivial. This article proves the three statements and separates the true count from the count the product structure suggests.
+A Hermitian module over the split-complex ring is a pair of real vector spaces with a pairing between them, and every non-degenerate such module is hyperbolic. That is the classification, and it is a short one: the isometry class is a single integer, the realified inertia is always balanced, and the Witt group is trivial. This article proves the three statements and separates the true count from the count the product structure suggests.
 
 The claim is that the naive answer is wrong. Since $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}\times\mathbb{R}$, the guess is that a Hermitian module is a pair of real Hermitian modules and that the Witt group is $\mathbb{Z}\oplus\mathbb{Z}$, one copy for each idempotent. **The guess fails**, and the reason is one line: the conjugation exchanges the two components. A form's two components are therefore transposes of one another and cannot be chosen independently, so a form is one real matrix rather than two, and its isometry class is its rank.
 
@@ -40,7 +40,7 @@ The form is therefore not a pair of forms on the two components but a single pai
 
 ### The Two Components Are Transposes
 
-A consequence of the proposition is that a Hermitian form has no freedom at the second component once the first is fixed. The pair $(\Phi_+,\Phi_-)$ is $(\beta,\beta^{\mathsf T})$, and a signature of one is a signature of the other. The two components of an isometry act on the two sides of $\beta$, so the isometry class of the form is the equivalence class of $\beta$ under
+A consequence of the proposition is that a Hermitian form has no freedom at the second component once the first is fixed. The pair $(\Phi_+,\Phi_-)$ is $(\beta,\beta^{\mathsf T})$, and an inertia of one is an inertia of the other. The two components of an isometry act on the two sides of $\beta$, so the isometry class of the form is the equivalence class of $\beta$ under
 
 $$
 \beta\ \longmapsto\ P_+^{\mathsf T}\beta\,P_-, \qquad P_\pm\ \text{real and invertible},
@@ -58,26 +58,26 @@ The classification of the Hermitian modules over the split ring is therefore by 
 
 ### Why the Pair of Signs Collapses
 
-Over a field the classification is by the signature, an integer, and over a product of two fields with the identity involution it would be by a pair of integers. Here it is by one integer and not by a pair, because the two components are transposes and a transpose has the same rank. The pair of signs that the product structure suggests is a pair $(s,s)$ of equal entries at best, and even that is not an invariant, since a form of rank $n$ may be carried to any form of rank $n$.
+Over a field the classification is by the inertia, an integer, and over a product of two fields with the identity involution it would be by a pair of integers. Here it is by one integer and not by a pair, because the two components are transposes and a transpose has the same rank. The pair of signs that the product structure suggests is a pair $(s,s)$ of equal entries at best, and even that is not an invariant, since a form of rank $n$ may be carried to any form of rank $n$.
 
-## The Signature
+## The Inertia
 
-### The Realified Signature
+### The Realified Inertia
 
-**Theorem.** Regard $M$ as a real vector space of dimension $2n$ and $\operatorname{Re}\Phi$ as a real symmetric form. Its signature is $(n,n)$ for every non-degenerate form.
+**Theorem.** Regard $M$ as a real vector space of dimension $2n$ and $\operatorname{Re}\Phi$ as a real symmetric form. Its inertia is $(n,n)$ for every non-degenerate form.
 
-**Proof.** Each component is totally isotropic, since $V_+$ pairs with $V_-$ and not with itself, and both have dimension $n$. A non-degenerate real form on a space of dimension $2n$ with two complementary totally isotropic subspaces of dimension $n$ is hyperbolic, so its signature is $(n,n)$.
+**Proof.** Each component is totally isotropic, since $V_+$ pairs with $V_-$ and not with itself, and both have dimension $n$. A non-degenerate real form on a space of dimension $2n$ with two complementary totally isotropic subspaces of dimension $n$ is hyperbolic, so its inertia is $(n,n)$.
 
 **Corollary.** No non-degenerate Hermitian form over $\mathbb{C}_{\mathrm{spl}}$ is definite, and every one is hyperbolic in the sense of admitting a Lagrangian submodule of half the dimension.
 
-This is the module-level form of the statement of *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*: the form on the free module of rank one has signature $(1,1)$ and the two null lines are its two Lagrangians.
+This is the module-level form of the statement of *The Hermitian Form, the Double Cone and the Reversed Cauchy-Schwarz Inequality*: the form on the free module of rank one has inertia $(1,1)$ and the two null lines are its two Lagrangians.
 
 ### The Refutation of the Pair of Signs
 
 | | the naive count | the true count |
 |---|---|---|
-| the invariant | a pair $(s_+,s_-)$ of signatures | the rank $n$ |
-| the realified signature | $(p_+,q_+;p_-,q_-)$ independent | always $(n,n)$ |
+| the invariant | a pair $(s_+,s_-)$ of inertias | the rank $n$ |
+| the realified inertia | $(p_+,q_+;p_-,q_-)$ independent | always $(n,n)$ |
 | the Witt group | $\mathbb{Z}\oplus\mathbb{Z}$ | $0$ |
 
 The naive column is what a product of two fields with the identity involution gives. The true column is what the exchange involution gives, and the exchange is forced: the conjugation of the algebra is $j\mapsto-j$, and it swaps the idempotents. A form over $\mathbb{C}_{\mathrm{spl}}$ does not see two independent real forms; it sees one real matrix.
@@ -114,17 +114,17 @@ The triviality is the extreme case of the Witt cancellation: the metabolic forms
 
 ### What the Trivial Group Says
 
-Three statements are equivalent for non-degenerate Hermitian modules over the split ring: they are all hyperbolic, their classes in the Witt group all vanish, and the signature invariant is trivial. The three are the module-level shadow of the two isotropic lines of the form: the lines are the Lagrangian of every form, and a form with a Lagrangian carries no Witt class.
+Three statements are equivalent for non-degenerate Hermitian modules over the split ring: they are all hyperbolic, their classes in the Witt group all vanish, and the inertia invariant is trivial. The three are the module-level shadow of the two isotropic lines of the form: the lines are the Lagrangian of every form, and a form with a Lagrangian carries no Witt class.
 
 ## The Comparison with the Complex Case
 
 ### The Single $\mathbb{Z}$ There
 
-Over $\mathbb{C}$ with its conjugation the Hermitian forms are classified by the signature $(p,q)$ and the Witt group is $\mathbb{Z}$, by $p-q$. Every form has a diagonal form with $p$ ones and $q$ minus ones, the metabolic forms are the ones with $p=q$, and the anisotropic residue is the definite part.
+Over $\mathbb{C}$ with its conjugation the Hermitian forms are classified by the inertia $(p,q)$ and the Witt group is $\mathbb{Z}$, by $p-q$. Every form has a diagonal form with $p$ ones and $q$ minus ones, the metabolic forms are the ones with $p=q$, and the anisotropic residue is the definite part.
 
 ### The Two Collapses
 
-Over $\mathbb{C}_{\mathrm{spl}}$ the same computation gives no residue: the minus signs can be absorbed, because a form of rank $n$ is isometric to the standard one whatever its realified signature looked like in a particular basis. The complex field keeps a signature because its conjugation is not an exchange of two components; the split ring loses it because its conjugation is exactly that exchange.
+Over $\mathbb{C}_{\mathrm{spl}}$ the same computation gives no residue: the minus signs can be absorbed, because a form of rank $n$ is isometric to the standard one whatever its realified inertia looked like in a particular basis. The complex field keeps an inertia because its conjugation is not an exchange of two components; the split ring loses it because its conjugation is exactly that exchange.
 
 ### The Number of the Components
 
@@ -132,11 +132,11 @@ The comparison in one line: over $\mathbb{C}$ one integer survives, over $\mathb
 
 ## Summary
 
-A Hermitian module over the split ring is a pair of real spaces with a real pairing $\beta:V_+\times V_-\to\mathbb{R}$; the conjugation exchanges the components, so the form's two components are $\beta$ and its transpose and are one datum. The isometry class is the rank of $\beta$, and every non-degenerate form of rank $n$ has realified signature $(n,n)$ and is isometric to the sum of $n$ copies of the standard form $H(A,C)=A\bar C$.
+A Hermitian module over the split ring is a pair of real spaces with a real pairing $\beta:V_+\times V_-\to\mathbb{R}$; the conjugation exchanges the components, so the form's two components are $\beta$ and its transpose and are one datum. The isometry class is the rank of $\beta$, and every non-degenerate form of rank $n$ has realified inertia $(n,n)$ and is isometric to the sum of $n$ copies of the standard form $H(A,C)=A\bar C$.
 
 The standard form is metabolic, with the Lagrangian $S_+$; every form is metabolic; and the Witt group is trivial. The naive count $\mathbb{Z}\oplus\mathbb{Z}$, one copy to each idempotent, would be right for the identity involution on $\mathbb{R}\times\mathbb{R}$ and is wrong here, because the exchange ties the two components together.
 
-Over $\mathbb{C}$ the signature survives and the Witt group is $\mathbb{Z}$; over the split ring nothing survives and the group is trivial; over the product with the identity involution two copies of $\mathbb{Z}$ survive. The three answers are the three involutions.
+Over $\mathbb{C}$ the inertia survives and the Witt group is $\mathbb{Z}$; over the split ring nothing survives and the group is trivial; over the product with the identity involution two copies of $\mathbb{Z}$ survive. The three answers are the three involutions.
 
 ## Summary of Notation
 
@@ -147,7 +147,7 @@ Over $\mathbb{C}$ the signature survives and the Witt group is $\mathbb{Z}$; ove
 | $(\beta,\beta^{\mathsf T})$ | The two components of the form |
 | $\beta\mapsto P_+^{\mathsf T}\beta P_-$ | The isometry, two-sided equivalence |
 | $n=\mathrm{rank}\,\beta$ | The complete invariant |
-| $(n,n)$ | The realified signature of every non-degenerate form |
+| $(n,n)$ | The realified inertia of every non-degenerate form |
 | $S_+=\mathbb{R}\Pi_+$ | A Lagrangian, the isotropic submodule |
 | $\langle1\rangle$ | The standard form $H(A,C)=A\bar C$, metabolic |
 | $W(\mathbb{C}_{\mathrm{spl}},\bar\cdot)=0$ | The Witt group |
@@ -158,4 +158,4 @@ Over $\mathbb{C}$ the signature survives and the Witt group is $\mathbb{Z}$; ove
 - Winfried Scharlau, *Quadratic and Hermitian Forms* (Springer, Grundlehren der mathematischen Wissenschaften 270, 1985), for the Witt group, hyperbolic forms and the metabolic identification.
 - C. T. C. Wall, "On the axiomatic foundations of the theory of Hermitian forms", *Mathematical Proceedings of the Cambridge Philosophical Society* 67 (1970), 243-250, for the Witt group of a ring with involution.
 - Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for the exchange involution on a product of two algebras and its forms.
-- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the real case, the signature and the Witt group $\mathbb{Z}$ of the real field.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for the real case, the inertia and the Witt group $\mathbb{Z}$ of the real field.

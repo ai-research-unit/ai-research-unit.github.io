@@ -125,7 +125,7 @@ $$
 
 **Remark.** Unlike the biquaternion case, where the norm is the determinant of a $2\times 2$ complex matrix, here $\langle\cdot\rangle_{\natural}$ is not a determinant of a matrix over a field, because the algebra is a product of two division algebras; the polarisation $\langle\cdot,\cdot\rangle_{\natural}$ is the honest $\mathbb{C}_{\mathrm{spl}}$-valued bilinear form and not a trace form.
 
-### The Real Forms and Their Signatures
+### The Real Forms and Their Inertias
 
 Writing $Q_\mu = q_\mu + jq'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$,
 
@@ -133,11 +133,11 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = R(\tilde{Q}) + j\,I(\tilde{Q}), \qquad R(\tilde{Q}) = \sum_\mu (q_\mu^2 + q'^2_\mu), \quad I(\tilde{Q}) = 2\sum_\mu q_\mu q'_\mu.
 $$
 
-**Proposition.** For the quaternionic norm, the form $R$ is the Euclidean form, positive definite of signature $(8,0)$, and the form $I$ pairs each real coordinate with its split partner, non-degenerate of signature $(4,4)$. The real part of the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, written $g$ in the geometry articles, is non-degenerate of signature $(4,4)$; the real part of the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ has the same signature.
+**Proposition.** For the quaternionic norm, the form $R$ is the Euclidean form, positive definite of inertia $(8,0)$, and the form $I$ pairs each real coordinate with its split partner, non-degenerate of inertia $(4,4)$. The real part of the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, written $g$ in the geometry articles, is non-degenerate of inertia $(4,4)$; the real part of the Krein form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ has the same inertia.
 
-**Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of signature $(4,4)$. The real part of the Hermitian form is non-degenerate of signature $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*. The Krein norm reduces to the explicit real form $q_t^2-q'^2_t-\sum_k(q_k^2-q'^2_k)$, of the same signature.
+**Proof.** $R$ is a sum of squares of the eight real coordinates. $I$ has the matrix with two $4\times 4$ off-diagonal blocks $I_4$, of inertia $(4,4)$. The real part of the Hermitian form is non-degenerate of inertia $(4,4)$ as established in *Split-Biquaternion Rotations and the Lorentz Group*. The Krein norm reduces to the explicit real form $q_t^2-q'^2_t-\sum_k(q_k^2-q'^2_k)$, of the same inertia.
 
-For the two split-complex-valued norms the table gives the real part and its signature. The four norms restricted to the four distinguished subspaces are:
+For the two split-complex-valued norms the table gives the real part and its inertia. The four norms restricted to the four distinguished subspaces are:
 
 | Subspace | Condition | $\langle\cdot\rangle$ | $\langle\cdot\rangle_{\natural}$ | $\langle\cdot\rangle_{*}$ | $\langle\cdot\rangle_{\natural*}$ |
 |---|---|---|---|---|---|
@@ -146,7 +146,7 @@ For the two split-complex-valued norms the table gives the real part and its sig
 | $\mathbb{B}_{\Psi}$ | $q'_t = 0$, $q_k = 0$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ | $q_t^2 - \sum_k q'^2_k$ $(1,3)$ | $q_t^2 + \sum_k q'^2_k$ $(4,0)$ |
 | $\mathbb{B}_{\Phi}$ | $q_t = 0$, $q'_k = 0$ | $q'^2_t - \sum_k q_k^2$ $(1,3)$ | $q'^2_t + \sum_k q_k^2$ $(4,0)$ | $-q'^2_t + \sum_k q_k^2$ $(3,1)$ | $-q'^2_t - \sum_k q_k^2$ $(0,4)$ |
 
-On the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of signature $(4,0)$, the plain norm is Lorentzian of signature $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$, while the Krein form is $(4,0)$ on $\mathbb{B}_{\Psi}$ and $(0,4)$ on $\mathbb{B}_{\Phi}$.
+On the centre $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ every norm is a norm of the single split complex scalar $Q_t$: the plain and the quaternionic norms are both $Q_t^2$, and the Hermitian and the Krein norms are both $Q_t\bar Q_t$. On the quaternion subspace and on the two Hermitian sectors the quaternionic norm is positive definite of inertia $(4,0)$, the plain norm is Lorentzian of inertia $(1,3)$, and the Hermitian and the Krein forms exchange their roles: the Hermitian form is $(1,3)$ on $\mathbb{B}_{\Psi}$ and $(3,1)$ on $\mathbb{B}_{\Phi}$, while the Krein form is $(4,0)$ on $\mathbb{B}_{\Psi}$ and $(0,4)$ on $\mathbb{B}_{\Phi}$.
 
 ## The Hermitian and Krein Forms
 
@@ -163,13 +163,13 @@ where $\tilde Q^{*} = \overline{\tilde Q^{\natural}}$ is the Hermitian conjugate
 **Basic properties.**
 
 - The norm $\langle\tilde Q\rangle_{*}$ is real, the difference between the sum of the squares of the real parts and the sum of the squares of the split parts; the full product $\tilde{Q} \tilde{Q}^{*}$ need not be real.
-- The norm is **not positive-definite**: it can be positive, negative, or zero. Its signature is $(4, 4)$ on the eight-dimensional real space $\mathbb{B}_{\mathrm{spl}}$.
+- The norm is **not positive-definite**: it can be positive, negative, or zero. Its inertia is $(4, 4)$ on the eight-dimensional real space $\mathbb{B}_{\mathrm{spl}}$.
 - The product $\tilde{Q} \tilde{Q}^{*}$ vanishes exactly when one of the idempotent components vanishes, that is on the union of two four-dimensional subspaces; the norm vanishes on the quadric hypersurface $\sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu$, of dimension $7$.
 - It is **not multiplicative**: neither $\tilde{Q} \tilde{Q}^{*}$ nor $\langle\tilde Q\rangle_{*}$ satisfies a product formula.
 
-### The Signature
+### The Inertia
 
-The Hermitian norm $\langle\tilde Q\rangle_{*}$, the scalar part of $\tilde Q\tilde Q^*$, is a real quadratic form of signature $(4, 4)$:
+The Hermitian norm $\langle\tilde Q\rangle_{*}$, the scalar part of $\tilde Q\tilde Q^*$, is a real quadratic form of inertia $(4, 4)$:
 
 - The positive directions are the four real coefficients $q_t, q_x, q_y, q_z$.
 - The negative directions are the four split coefficients $q'_t, q'_x, q'_y, q'_z$.
@@ -184,7 +184,7 @@ $$
 \sum_{\mu\in\{t,x,y,z\}} q_\mu^2 = \sum_{\mu\in\{t,x,y,z\}} q'^2_\mu.
 $$
 
-This is a quadric hypersurface of dimension $7$ in $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$, the analogue of the null cone of a Lorentzian four-space, with signature $(4, 4)$ instead of $(1, 3)$.
+This is a quadric hypersurface of dimension $7$ in $\mathbb{B}_{\mathrm{spl}} \cong \mathbb{R}^8$, the analogue of the null cone of a Lorentzian four-space, with inertia $(4, 4)$ instead of $(1, 3)$.
 
 ### The Hermitian Pairing
 
@@ -200,7 +200,7 @@ $$
 \langle \tilde Q_1, \tilde Q_2 \rangle_{*} = \sum_{\mu\in\{t,x,y,z\}} (q_{1\mu} q_{2\mu} - q'_{1\mu} q'_{2\mu}) + j \sum_{\mu\in\{t,x,y,z\}} (q'_{1\mu} q_{2\mu} - q_{1\mu} q'_{2\mu}).
 $$
 
-Its real part is the real form of signature $(4, 4)$ above, and its split part is the cross-term. The pairing is linear in the first argument and split-antilinear in the second; the exchange of the two slots conjugates the value,
+Its real part is the real form of inertia $(4, 4)$ above, and its split part is the cross-term. The pairing is linear in the first argument and split-antilinear in the second; the exchange of the two slots conjugates the value,
 
 $$
 \langle \tilde Q_2, \tilde Q_1 \rangle_{*} = \overline{\langle \tilde Q_1, \tilde Q_2 \rangle_{*}} .
@@ -222,7 +222,7 @@ $$
 \langle\tilde Q\rangle_{\natural*}=Q_t\bar Q_t-\sum_k Q_k\bar Q_k=\sum_\mu\epsilon_\mu(q_\mu^2-q'^2_\mu),\qquad (\epsilon_t,\epsilon_x,\epsilon_y,\epsilon_z)=(+1,-1,-1,-1),
 $$
 
-which is real of signature $(4,4)$. It is the $\natural$-partner of the Hermitian form: on $\mathbb{B}_{\Psi}$ it is positive definite of signature $(4,0)$, where the Hermitian form is Lorentzian of signature $(1,3)$, and on $\mathbb{B}_{\Phi}$ it is negative definite of signature $(0,4)$, where the Hermitian form is $(3,1)$.
+which is real of inertia $(4,4)$. It is the $\natural$-partner of the Hermitian form: on $\mathbb{B}_{\Psi}$ it is positive definite of inertia $(4,0)$, where the Hermitian form is Lorentzian of inertia $(1,3)$, and on $\mathbb{B}_{\Phi}$ it is negative definite of inertia $(0,4)$, where the Hermitian form is $(3,1)$.
 
 ### The Four Forms and Their Norms
 
@@ -235,7 +235,7 @@ The four forms are one pattern, $\langle X_1,X_2\rangle_{\sigma_1\sigma_2}=\math
 | Hermitian | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | $\langle\tilde Q\rangle_{*}$ | $\sum_\mu Q_\mu\bar Q_\mu$ |
 | Krein | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ | $\langle\tilde Q\rangle_{\natural*}$ | $Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ |
 
-The plain and the quaternionic norms are split complex-valued; the Hermitian and the Krein norms are real of signature $(4,4)$. **Only the quaternionic norm is multiplicative**, and it is the split-biquaternion norm: it is anisotropic, vanishes only at the origin, and its value being an invertible element of $\mathbb{C}_{\mathrm{spl}}$ is the invertibility criterion. The plain norm is the scalar part of the plain product and is not multiplicative. The Hermitian and the Krein norms are neither multiplicative nor anisotropic. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form does not control the topological structure either; the Euclidean norm, defined separately, does.
+The plain and the quaternionic norms are split complex-valued; the Hermitian and the Krein norms are real of inertia $(4,4)$. **Only the quaternionic norm is multiplicative**, and it is the split-biquaternion norm: it is anisotropic, vanishes only at the origin, and its value being an invertible element of $\mathbb{C}_{\mathrm{spl}}$ is the invertibility criterion. The plain norm is the scalar part of the plain product and is not multiplicative. The Hermitian and the Krein norms are neither multiplicative nor anisotropic. The zero divisors are not a condition on the split-biquaternion norm; they are the vanishing of an idempotent component. The Hermitian form does not control the topological structure either; the Euclidean norm, defined separately, does.
 
 ## The Euclidean Norm
 
@@ -536,7 +536,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = q_t^2 + (q'_x)^2 + (q'_y)^2 + (q'_z)^2,
 $$
 
-which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{B}_{\Psi}$ contains no zero divisors and every nonzero element of $\mathbb{B}_{\Psi}$ is invertible.
+which is a **real**, positive-definite number, of inertia $(4, 0)$. It vanishes only at the origin, so $\mathbb{B}_{\Psi}$ contains no zero divisors and every nonzero element of $\mathbb{B}_{\Psi}$ is invertible.
 
 ### The Anti-Hermitian Subspace $\mathbb{B}_{\Phi}$
 
@@ -552,7 +552,7 @@ $$
 \langle\tilde{Q}\rangle_{\natural} = (j r_0)^2 + q_x^2 + q_y^2 + q_z^2 = r_0^2 + q_x^2 + q_y^2 + q_z^2,
 $$
 
-which is a **real**, positive-definite number, of signature $(4, 0)$. It vanishes only at the origin, so $\mathbb{B}_{\Phi}$ contains no zero divisors and every nonzero element of $\mathbb{B}_{\Phi}$ is invertible.
+which is a **real**, positive-definite number, of inertia $(4, 0)$. It vanishes only at the origin, so $\mathbb{B}_{\Phi}$ contains no zero divisors and every nonzero element of $\mathbb{B}_{\Phi}$ is invertible.
 
 ### Summary of the Distribution
 
@@ -560,14 +560,14 @@ Of the four fixed-point subspaces:
 
 - $\mathbb{C}_{\mathrm{spl},\mathbb{B}_{\mathrm{spl}}}$ contains zero divisors (inherited from $\mathbb{C}_{\mathrm{spl}}$), and the invertible elements are those whose scalar part is invertible in $\mathbb{C}_{\mathrm{spl}}$.
 - $\mathbb{H}_{\mathbb{B}_{\mathrm{spl}}}$ is a division algebra: every nonzero element is invertible.
-- $\mathbb{B}_{\Psi}$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
-- $\mathbb{B}_{\Phi}$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
+- $\mathbb{B}_{\Psi}$ is positive-definite of inertia $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
+- $\mathbb{B}_{\Phi}$ is positive-definite of inertia $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
 
 ## Summary
 
 The split-biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q} \tilde{Q}^{\natural}$ is the quaternionic norm of the layer, a split complex-valued multiplicative quadratic form on the split biquaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the split-biquaternion norm. Its polarisation is the symmetric split-complex-bilinear quaternionic form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural} = \sum_\mu Q_{1\mu} Q_{2\mu}$.
 
-The four forms are the plain, the quaternionic, the Hermitian and the Krein, and the four norms are their values at equal arguments. The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu Q_\mu\bar Q_\mu$ is real of signature $(4,4)$, and the Krein norm $\langle\tilde Q\rangle_{\natural*} = Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ is real of the same signature; the plain norm $Q_t^2-\sum_k Q_k^2$ is split complex-valued. Only the quaternionic norm is multiplicative. None of the four defines a Euclidean norm; the Euclidean norm is defined separately and is positive-definite but not multiplicative.
+The four forms are the plain, the quaternionic, the Hermitian and the Krein, and the four norms are their values at equal arguments. The Hermitian norm $\langle\tilde Q\rangle_{*} = \sum_\mu Q_\mu\bar Q_\mu$ is real of inertia $(4,4)$, and the Krein norm $\langle\tilde Q\rangle_{\natural*} = Q_t\bar Q_t-\sum_k Q_k\bar Q_k$ is real of the same inertia; the plain norm $Q_t^2-\sum_k Q_k^2$ is split complex-valued. Only the quaternionic norm is multiplicative. None of the four defines a Euclidean norm; the Euclidean norm is defined separately and is positive-definite but not multiplicative.
 
 The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $\langle\tilde{Q}\rangle_{\natural}$ is invertible in $\mathbb{C}_{\mathrm{spl}}$, equivalently if and only if the reduced norm $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural}$ is nonzero, equivalently if and only if both idempotent components are nonzero:
 
@@ -599,10 +599,10 @@ The zero divisors themselves are studied in the article on split biquaternion ze
 | $\langle\tilde Q_1,\tilde Q_2\rangle = \mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain form |
 | $\langle\tilde Q\rangle = Q_t^2 - \sum_k Q_k^2$ | Plain norm |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*} = \sum_\mu Q_{1\mu}\bar Q_{2\mu}$ | Hermitian form, written $g$ in the geometry articles |
-| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, signature $(4,4)$ |
+| $\langle\tilde Q\rangle_{*} = \sum_\mu (q_\mu^2 - q'^2_\mu)$ | Hermitian norm, inertia $(4,4)$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*} = Q_{1t}\bar Q_{2t} - \sum_k Q_{1k}\bar Q_{2k}$ | Krein form |
-| $\langle\tilde Q\rangle_{\natural*} = q_t^2 - q'^2_t - \sum_k(q_k^2 - q'^2_k)$ | Krein norm, signature $(4,4)$ |
-| $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm (determinant) |
+| $\langle\tilde Q\rangle_{\natural*} = q_t^2 - q'^2_t - \sum_k(q_k^2 - q'^2_k)$ | Krein norm, inertia $(4,4)$ |
+| $\Delta(\tilde{Q}) = \langle\tilde{Q}_+\rangle_{\natural} \langle\tilde{Q}_-\rangle_{\natural} = \langle\tilde{Q}\rangle_{\natural} \langle\tilde{Q}\rangle_{\natural}^*$ | Reduced norm |
 | $\|\tilde{Q}\| = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/\langle\tilde{Q}\rangle_{\natural}$ | Inverse |
 | ${\mathbb{B}_{\mathrm{spl}}}^\times$ | Group of invertibles |

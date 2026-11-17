@@ -7,7 +7,7 @@ This article describes the group of linear transformations of the split complex 
 
 The split complex algebra and its conjugation $\bar Q = q - jq'$ are taken from *Split-Complex Algebra*; the split norm $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$, its polarisation and the group of invertibles are the form and the distance of *Norm and Invertibility in the General Split-Complex Algebra*; and the idempotents $\Pi_\pm = \tfrac12(1\pm j)$ are taken from *Square Roots of One and the Idempotents of the Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $q, q'$ of $Q = q + jq'$ are always real, and $\mathbb{C}_{\mathrm{spl}}$ is written in the basis $\{1, j\}$.
 
-Two features distinguish the theory from its complex counterpart and organise everything below. The norm $\langle\cdot\rangle_{*}$ is indefinite, of signature $(1,1)$, so the set $\{\langle Q\rangle_{*} = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the group of invertibles $\{\langle Q\rangle_{*} = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{C}_{\mathrm{spl}}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
+Two features distinguish the theory from its complex counterpart and organise everything below. The norm $\langle\cdot\rangle_{*}$ is indefinite, of inertia $(1,1)$, so the set $\{\langle Q\rangle_{*} = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the group of invertibles $\{\langle Q\rangle_{*} = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{C}_{\mathrm{spl}}$, so the group theory developed here and the failure of the Cauchy theory recorded below have the same locus.
 
 ## The Form and Its Isometries
 
@@ -31,13 +31,13 @@ $$
 G = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
 $$
 
-it is non-degenerate of signature $(1,1)$, and its null set is the **null cone**
+it is non-degenerate of inertia $(1,1)$, and its null set is the **null cone**
 
 $$
 \{Q : \langle Q\rangle_{*} = 0\} = \{Q : Q_+ = 0 \text{ or } Q_- = 0\}.
 $$
 
-**Proof.** Bilinearity and symmetry follow from the definition through $\langle\cdot,\cdot\rangle_{*}$ and from the explicit formula $qb - q'b'$. The matrix is read off from $g(1,1) = 1$, $g(1,j) = 0$, $g(j,j) = -1$, and $\det G = -1 \neq 0$, so the form is non-degenerate with one positive and one negative square, that is, signature $(1,1)$. Since $\langle Q\rangle_{*} = Q_+Q_-$, the null set is the union of the two lines $Q_+ = 0$ and $Q_- = 0$.
+**Proof.** Bilinearity and symmetry follow from the definition through $\langle\cdot,\cdot\rangle_{*}$ and from the explicit formula $qb - q'b'$. The matrix is read off from $g(1,1) = 1$, $g(1,j) = 0$, $g(j,j) = -1$, and $\det G = -1 \neq 0$, so the form is non-degenerate with one positive and one negative square, that is, inertia $(1,1)$. Since $\langle Q\rangle_{*} = Q_+Q_-$, the null set is the union of the two lines $Q_+ = 0$ and $Q_- = 0$.
 
 The two null lines are the real spans of $\Pi_+$ and of $\Pi_-$ respectively. They are the lines on which the form vanishes, and equivalently the lines of zero divisors of the ring: a non-zero element is a zero divisor exactly when it lies on the cone.
 
@@ -450,7 +450,7 @@ The two theories are the positive-definite and indefinite cases of the same cons
 
 | Property | Complex | Split complex |
 |---|---|---|
-| Norm | $q^2 + q'^2$, signature $(2,0)$ | $q^2 - q'^2$, signature $(1,1)$ |
+| Norm | $q^2 + q'^2$, inertia $(2,0)$ | $q^2 - q'^2$, inertia $(1,1)$ |
 | Null cone | $\{0\}$, no null directions | two null lines, the zero divisors |
 | Norm-one group | circle $\mathrm{U}(1)$, compact, connected | hyperbola $\mathcal{H}$, non-compact, two branches |
 | Rotation group | $SO(2) \cong \mathrm{U}(1) \cong \mathbb{R}/2\pi\mathbb{Z}$ | $SO^+(1,1) \cong \mathbb{R}$, $SO(1,1) \cong \mathbb{R} \times \mathbb{Z}/2$ |
@@ -467,7 +467,7 @@ The complex rotation group is compact and the angle is periodic, so a rotation i
 
 ## Summary
 
-The split plane carries the indefinite **norm** $\langle q+jq'\rangle_{*} = q^2 - q'^2$ of signature $(1,1)$ and its **polar form** $g(Q,B) = qb - q'b'$. The **isometries** of $\langle\cdot,\cdot\rangle_{*}$ are exactly the maps $Q \mapsto uQ$ and $Q \mapsto u\bar Q$ with $\langle u\rangle_{*} = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **group of invertibles** ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the complement of the null cone, with four components and polar decomposition $Q = \rho u$, $\rho > 0$, $\langle u\rangle_{*} = \pm 1$.
+The split plane carries the indefinite **norm** $\langle q+jq'\rangle_{*} = q^2 - q'^2$ of inertia $(1,1)$ and its **polar form** $g(Q,B) = qb - q'b'$. The **isometries** of $\langle\cdot,\cdot\rangle_{*}$ are exactly the maps $Q \mapsto uQ$ and $Q \mapsto u\bar Q$ with $\langle u\rangle_{*} = 1$; the first family is the rotation subgroup with determinant $1$ and the second the reflection coset with determinant $-1$. The **group of invertibles** ${\mathbb{C}_{\mathrm{spl}}}^\times$ is the complement of the null cone, with four components and polar decomposition $Q = \rho u$, $\rho > 0$, $\langle u\rangle_{*} = \pm 1$.
 
 The **unit hyperbola** $\mathcal{H} = \{\langle Q\rangle_{*} = 1\}$ has two branches, parametrised by the **hyperbolic angle** through $u = \exp(\theta_{\mathrm{hpa}} j) = \cosh\theta_{\mathrm{hpa}} + j\sinh\theta_{\mathrm{hpa}}$, and $\mathcal{H}^+ \cong \mathbb{R}$ via the additive angle. The **hyperbolic rotation** $R_u(Q) = uQ$ is an isometry, realises $\mathcal{H}$ as $SO(1,1)$ through $u \mapsto R_u$, and in the idempotent coordinates is the diagonal map $(Q_+, Q_-) \mapsto (\exp(\theta_{\mathrm{hpa}})Q_+, \exp(-\theta_{\mathrm{hpa}})Q_-)$, a squeeze that preserves the product $Q_+Q_-$ and hence the form. The composition law is the addition of angles, $SO^+(1,1) \cong (\mathbb{R},+)$, and the group law transported to the interval $(-1,1)$ by $s = \tanh\theta_{\mathrm{hpa}}$ is $s \star t = (s+t)/(1+st)$. The Lie algebra is $\mathrm{SO}(1,1) = \mathbb{R}J$ with $J^2 = I$, and the exponential is a bijection onto the identity component.
 
@@ -480,7 +480,7 @@ The **reflection** $S_u(Q) = u\bar Q$ has determinant $-1$, is an involution, fi
 | $\mathbb{C}_{\mathrm{spl}} = \mathbb{R}[j]$, $j^2 = +1$ | Split complex numbers |
 | $Q = q + jq'$ | General split complex number, $q = \operatorname{Re} Q$, $q' = \operatorname{Im} Q$ |
 | $\bar Q = q - jq'$ | Split complex conjugate |
-| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, signature $(1,1)$ |
+| $\langle Q\rangle_{*} = Q\bar Q = q^2 - q'^2$ | Norm, inertia $(1,1)$ |
 | $g(Q,B) = \operatorname{Re}(\bar Q B) = qb - q'b'$ | Polar bilinear form of $\langle\cdot,\cdot\rangle_{*}$ |
 | $G = \operatorname{diag}(1,-1)$ | Matrix of $g$ in the basis $\{1,j\}$ |
 | $\{\langle Q\rangle_{*} = 0\}$ | Null cone, the zero-divisor set |

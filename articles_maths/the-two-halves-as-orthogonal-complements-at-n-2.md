@@ -6,7 +6,7 @@
 
 The article proves the orthogonality of the two halves over $\mathbb{R}$ and over $\mathbb{C}$, computes the Gram matrices of the trace form on each half with the eigenvalues $1,1,2$ and $-2$, states the general criterion by which the eigenspaces of an involution are orthogonal, and lists the orthogonal complements of the subspaces that recur in the series. It assumes *The Two Halves over $\mathbb{R}$: Symmetric and Antisymmetric at $n=2$*, *The Two Halves over $\mathbb{C}$: Hermitian and Anti-Hermitian at $n=2$* and *The Involutions of $M_2(\mathbb{C})$ over $\mathbb{R}$ and over $\mathbb{C}$*.
 
-It defers the definite form on the complex algebra to *The Hilbert–Schmidt Form at $n=2$*, the signature statements to *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*, and the subspaces of the triangular kind to *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$*.
+It defers the definite form on the complex algebra to *The Hilbert–Schmidt Form at $n=2$*, the inertia statements to *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*, and the subspaces of the triangular kind to *The Triangular Decomposition $h\oplus n_+\oplus n_-$ of $M_2(\mathbb{C})$*.
 
 ## The Two Forms on the Real Matrices
 
@@ -16,7 +16,7 @@ It defers the definite form on the complex algebra to *The Hilbert–Schmidt For
 
 **Proof.** On real matrices $\operatorname{tr}(X^{\mathsf T}Y)=\sum_{i,j}x_{ij}y_{ij}$ and $\operatorname{tr}(XY)=\sum_{i,j}x_{ij}y_{ji}$, and the second sum is the first after renaming the indices.
 
-**Both forms are nondegenerate.** The trace pairing of two matrix units is $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$, so the four units form a basis dual to themselves and the form is nondegenerate; its signature on the four real dimensions is $(3,1)$, as *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$* proves.
+**Both forms are nondegenerate.** The trace pairing of two matrix units is $\operatorname{tr}(E_{ij}E_{kl})=\delta_{jk}\delta_{il}$, so the four units form a basis dual to themselves and the form is nondegenerate; its inertia on the four real dimensions is $(3,1)$, as *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$* proves.
 
 ## Orthogonality of the Two Halves
 
@@ -46,7 +46,7 @@ with eigenvalues $1,1,2$, all positive.
 
 **Proof.** $J^{2}=-I$, so $\operatorname{tr}(J^{2})=-2$.
 
-**Corollary.** The trace form is positive definite on the symmetric half and negative definite on the antisymmetric line, so its signature on $M_2(\mathbb{R})$ is $(3,1)$.
+**Corollary.** The trace form is positive definite on the symmetric half and negative definite on the antisymmetric line, so its inertia on $M_2(\mathbb{R})$ is $(3,1)$.
 
 **Proof.** The two halves are orthogonal and carry definite forms of ranks $3$ and $1$.
 
@@ -100,7 +100,7 @@ $$
 
 ## Summary
 
-On the real matrices the trace form and the Hilbert–Schmidt form agree and are nondegenerate of signature $(3,1)$. The symmetric and the antisymmetric halves are orthogonal, because the transpose is self-adjoint for the trace form; the Gram matrix on the symmetric half is $\operatorname{diag}(1,1,2)$ and the form on the antisymmetric line is $-2$, so the symmetric half is positive definite and the antisymmetric line is negative definite and timelike.
+On the real matrices the trace form and the Hilbert–Schmidt form agree and are nondegenerate of inertia $(3,1)$. The symmetric and the antisymmetric halves are orthogonal, because the transpose is self-adjoint for the trace form; the Gram matrix on the symmetric half is $\operatorname{diag}(1,1,2)$ and the form on the antisymmetric line is $-2$, so the symmetric half is positive definite and the antisymmetric line is negative definite and timelike.
 
 The same argument with the conjugate transpose gives the orthogonality of $\operatorname{Herm}_2$ and $\mathfrak{u}(2)$ for the real part of the Hermitian form, while the complex bilinear form $\operatorname{tr}(XY)$ does not vanish on the pair $I,iI$ and therefore does not see the split. The complements of the recurring subspaces are $\mathfrak{sl}_2$ for the scalars, the off-diagonal span for the diagonal, and all units but the transpose for a corner.
 
@@ -112,7 +112,7 @@ The same argument with the conjugate transpose gives the orthogonality of $\oper
 | $\langle X,Y\rangle_{\mathrm{HS}}$ | the Hilbert–Schmidt form $\operatorname{tr}(X^{\mathsf T}Y)$ |
 | $\operatorname{tr}(X^{*}Y)$ | the Hermitian form on the complex algebra |
 | $W^{\perp}$ | the orthogonal complement for the form in use |
-| $(3,1)$ | the signature of the trace form on $M_2(\mathbb{R})$ |
+| $(3,1)$ | the inertia of the trace form on $M_2(\mathbb{R})$ |
 | $\operatorname{Herm}_2$, $\mathfrak{u}(2)$ | the two complex halves |
 
 ## Further Reading

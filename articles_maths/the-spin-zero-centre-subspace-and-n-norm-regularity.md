@@ -6,7 +6,7 @@ The spin-zero carrier is the real line $\mathbb{R}e_t$, and its closure is the c
 
 The answer is the extreme one, and it is the opposite of the answer for the spin-half carrier. On the centre the norm is the square of the complex coordinate, so it vanishes at the origin alone. Every nonzero element of the centre is norm-regular. The centre is a copy of the complex field inside the algebra, no nonzero element of it is a zero divisor, and the null cone meets it in one point.
 
-The article then separates two statements that the single formula hides. The complex norm is nondegenerate on the centre, in the sense that only the origin is null. Its real part is not: read as a real quadratic form on the real plane, the real part is indefinite, of signature $(1,1)$, and it has two isotropic lines. The lines are $\mathbb{R}(e_t+ie_t)$ and $\mathbb{R}(e_t-ie_t)$, and on each of them the complex norm is $\pm2i$ and not zero. A reader who reports from the real part alone that the centre is isotropic has reported a fact about one of the two real forms and not about the norm.
+The article then separates two statements that the single formula hides. The complex norm is nondegenerate on the centre, in the sense that only the origin is null. Its real part is not: read as a real quadratic form on the real plane, the real part is indefinite, of inertia $(1,1)$, and it has two isotropic lines. The lines are $\mathbb{R}(e_t+ie_t)$ and $\mathbb{R}(e_t-ie_t)$, and on each of them the complex norm is $\pm2i$ and not zero. A reader who reports from the real part alone that the centre is isotropic has reported a fact about one of the two real forms and not about the norm.
 
 The companion article is *The Spin-Zero Centre Subspace and Spectral Regularity*, where the second predicate is computed and the answer is the extreme one in the other direction. The subspace itself is *Introduction to the Spin-Zero Centre Subspace*. The norm and the predicate are defined in *Relations between the N Norm and Spectral Regularity and Degeneracy*.
 
@@ -60,7 +60,7 @@ $$
 
 The display is two real quadratic forms on the real plane of the centre, and they behave differently.
 
-**The real part is indefinite.** The form $a^{2}-b^{2}$ has signature $(1,1)$: it is positive on the line $b=0$, negative on the line $a=0$, and it has two isotropic lines, $a=b$ and $a=-b$. In the algebra the two lines are
+**The real part is indefinite.** The form $a^{2}-b^{2}$ has inertia $(1,1)$: it is positive on the line $b=0$, negative on the line $a=0$, and it has two isotropic lines, $a=b$ and $a=-b$. In the algebra the two lines are
 
 $$
 \mathcal I_{\pm}=\mathbb{R}\bigl(e_t\pm ie_t\bigr),
@@ -76,7 +76,7 @@ $$
 
 So the isotropic lines of the real part are not null for the norm. The two statements are about different objects: the first is about one real form, the second about the complex form.
 
-**The imaginary part.** The form $2ab$ vanishes on the two coordinate lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ and is indefinite on the same plane, of signature $(1,1)$. It too has two isotropic lines, the same pair, since $2ab$ and $a^{2}-b^{2}$ vanish together on $a=\pm b$ and nowhere else together.
+**The imaginary part.** The form $2ab$ vanishes on the two coordinate lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ and is indefinite on the same plane, of inertia $(1,1)$. It too has two isotropic lines, the same pair, since $2ab$ and $a^{2}-b^{2}$ vanish together on $a=\pm b$ and nowhere else together.
 
 **Remark (the two forms are one object).** The complex norm is the pair of the two real forms, and its null cone is the intersection of the two zero loci. That intersection is the origin, which is the statement of the corollary above. Neither real form alone carries it: each has a line of zeros, and the two lines coincide.
 
@@ -124,7 +124,7 @@ and the form is nondegenerate there: if $B(\lambda e_t,\mu e_t)=0$ for every $\m
 
 ## Summary
 
-The norm on the centre is $N(\lambda e_t)=\lambda^{2}$. Its null locus in the centre is the origin alone, so every nonzero element of the centre is norm-regular and invertible, and the centre is a copy of the complex field inside the algebra. The real part of the norm is an indefinite form of signature $(1,1)$ with the two isotropic lines $\mathbb{R}(e_t\pm ie_t)$, and on those lines the norm itself is $\pm2i$ and not zero. The polar form is $\lambda\mu$, complex-bilinear and nondegenerate. Against the other two carriers the centre is the case in which the norm separates, and the plane is the case in which it does not.
+The norm on the centre is $N(\lambda e_t)=\lambda^{2}$. Its null locus in the centre is the origin alone, so every nonzero element of the centre is norm-regular and invertible, and the centre is a copy of the complex field inside the algebra. The real part of the norm is an indefinite form of inertia $(1,1)$ with the two isotropic lines $\mathbb{R}(e_t\pm ie_t)$, and on those lines the norm itself is $\pm2i$ and not zero. The polar form is $\lambda\mu$, complex-bilinear and nondegenerate. Against the other two carriers the centre is the case in which the norm separates, and the plane is the case in which it does not.
 
 ## The Boxed Summary
 
@@ -135,7 +135,7 @@ The norm on the centre is $N(\lambda e_t)=\lambda^{2}$. Its null locus in the ce
 | what vanishes | Only the zero element. No other central element has a vanishing norm. |
 | the answer | Every central element except zero is norm-regular, and its inverse is central again. |
 | the consequence | The centre contains no zero divisor, and the null cone meets it in a single point. |
-| the trap | The real part of the norm is not the norm. Read on the real plane it is indefinite, of signature (1,1), with two isotropic lines. |
+| the trap | The real part of the norm is not the norm. Read on the real plane it is indefinite, of inertia (1,1), with two isotropic lines. |
 | why that is no contradiction | On the two lines the norm itself is not zero, so the centre is not isotropic. |
 | the polar form | It is the product of the two coordinates, and it is nondegenerate. |
 | against the other carriers | The norm separates points on the centre and on the vector part, and it separates nothing on the spin-half plane. |

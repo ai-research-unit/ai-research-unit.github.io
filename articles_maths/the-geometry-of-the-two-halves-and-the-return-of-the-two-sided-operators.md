@@ -38,7 +38,7 @@ $$
 g_{\mathrm{I}}(H,K)=\operatorname{tr}(HK),
 $$
 
-which is the trace form of *The Trace Form and Its Signature on the Two Halves* restricted to the Hermitian half, of signature $(n^{2},0)$. The computation confirms the identity at $n=2,3,4$, and it is the reason the cone and the trace form agree at one point.
+which is the trace form of *The Trace Form and Its Inertia on the Two Halves* restricted to the Hermitian half, of inertia $(n^{2},0)$. The computation confirms the identity at $n=2,3,4$, and it is the reason the cone and the trace form agree at one point.
 
 ## Geodesics and the Distance
 
@@ -234,4 +234,4 @@ The Hermitian half carries the trace metric $g_A(H,K)=\operatorname{tr}(A^{-1}HA
 - Jürgen Jost, *Riemannian Geometry and Geometric Analysis* (Springer, 2011), for the comparison theorems of nonpositive curvature.
 - [The Positive Cone and Its Boundary](the-positive-cone-and-its-boundary.html), for the cone whose metric is computed here.
 - [The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$](the-two-sided-operators-and-the-segre-cone-of-mnc.html), for the operators which return as isometries.
-- [The Trace Form and Its Signature on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the form at the identity.
+- [The Trace Form and Its Inertia on the Two Halves](the-trace-form-and-its-signature-on-the-two-halves.html), for the form at the identity.

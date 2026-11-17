@@ -871,7 +871,7 @@ The phase $e^{i\beta}$ cancels in the two-sided operator. The two-sided operator
 | spectrum | $\{\lvert c\rvert^{2},0\}$, multiplicities $1,3$ |
 | Jordan form | diagonal, $\operatorname{diag}(\lvert c\rvert^{2},0,0,0)$; the eigenbasis of $\tilde Q$ diagonalizes it only when $\tilde\Pi$ is Hermitian |
 | trace | $\lvert c\rvert^{2}=4a^{2}\cos^{2}\theta$ |
-| determinant | $0$ |
+| the determinant of the image | $0$ |
 | eigenvalue on the image | $\lvert c\rvert^{2}$ |
 | singular value | $4a^{2}$ |
 | image | the null line $\mathbb{C}P$, $P=\tilde Q\tilde Q^{*}/(4a^{2})$ |
@@ -894,7 +894,7 @@ The phase $e^{i\beta}$ cancels in the two-sided operator. The two-sided operator
 | spectrum | $\{0\}$, algebraic multiplicity $4$, geometric multiplicity $3$ |
 | Jordan form | $J_2(0)\oplus0\oplus0$ |
 | trace | $0$ |
-| determinant | $0$ |
+| the determinant of the image | $0$ |
 | eigenvalue | $0$ |
 | singular value | $4a^{2}$ |
 | image | the null line $\mathbb{C}\tilde\Pi_+$ |

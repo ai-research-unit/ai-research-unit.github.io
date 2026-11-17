@@ -16,7 +16,7 @@ of dimension sixteen. The general article gives two families of operators for fr
 
 **Boundaries.** The model, its dictionary, the trace, the determinant, the spectral trichotomy, the adjugate, the norms and the projective line are the companion article *$M_2(\mathbb{R})$ Standard Representation*. The algebra is *Split-Quaternion Algebra*; the norm and the invertibles are *Split-Quaternion Norm and Invertibility*; the zero divisors are *Split-Quaternion Zero Divisors*; the action of the invertibles on the null cone and the hyperbolic geometry are *Split-Quaternion Rotations and the Lorentz Group*. The abstract operators of the algebra, with no matrix in them, are *Left and Right Multiplication* and *The Left and Right Multiplication Operators on a Clifford Algebra*, which this article does not replace.
 
-**Conventions.** The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=e_t$, the model is $\mathsf{M}_2$ with images $I,J,K,D$, and $M_{\tilde q}$ is written for $\mathsf{M}_2(\tilde q)$. The trace form is $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$, of signature $(3,1)$; the Frobenius form is $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$, positive definite. The coefficient matrix $c(M)$ of an operator is its matrix in the basis $\{L_{e_\mu}R_{e_\nu}\}$.
+**Conventions.** The basis of the algebra is $(e_t,\vec e_x,\vec e_y,\vec e_z)$ with $\vec e_x^2=-e_t$ and $\vec e_y^2=\vec e_z^2=e_t$, the model is $\mathsf{M}_2$ with images $I,J,K,D$, and $M_{\tilde q}$ is written for $\mathsf{M}_2(\tilde q)$. The trace form is $\langle X,Y\rangle_{\operatorname{tr}}=\operatorname{tr}(XY)$, of inertia $(3,1)$; the Frobenius form is $\langle X,Y\rangle_F=\operatorname{tr}(X^{\mathsf T}Y)$, positive definite. The coefficient matrix $c(M)$ of an operator is its matrix in the basis $\{L_{e_\mu}R_{e_\nu}\}$.
 
 ## The One-Sided Operators
 
@@ -152,7 +152,7 @@ and the value three never occurs.
 |---|---|---|
 | operator rank | $\operatorname{rank}A\cdot\operatorname{rank}B$ | the ranks of the two |
 | trace | $\operatorname{tr}A\cdot\operatorname{tr}B$ | the traces of the two |
-| determinant | $\det(A)^{2}\det(B)^{2}$ | the norms of the two |
+| the determinant of the image | $\det(A)^{2}\det(B)^{2}$ | the norms of the two |
 | coefficient rank | $1$ | nothing |
 
 The last row is the point of the whole article: the coefficient rank of a single product is always one, whatever the two elements are, so it carries no information about them and it is the correct measure of the *length* rather than of the size.
@@ -274,7 +274,7 @@ so the generic operator has length four and four always suffice, the single prod
 | $L_{A}R_{B}$ | the same in matrices, $X\mapsto AXB$, of matrix $A\otimes B^{\mathsf T}$ | this article |
 | $c(M)$ | the coefficient matrix of $M$ in the basis $L_{e_\mu}R_{e_\nu}$ | this article |
 | $\ell(M)$ | the length, equal to $\operatorname{rank}c(M)$ | this article |
-| $\langle\cdot,\cdot\rangle_{\operatorname{tr}}$ | the trace form $\operatorname{tr}(XY)$, of signature $(3,1)$ | this article |
+| $\langle\cdot,\cdot\rangle_{\operatorname{tr}}$ | the trace form $\operatorname{tr}(XY)$, of inertia $(3,1)$ | this article |
 | $\langle\cdot,\cdot\rangle_F$ | the Frobenius form $\operatorname{tr}(X^{\mathsf T}Y)$, positive definite | this article |
 | $\mathrm{PGL}_2(\mathbb{R})$ | the group of the conjugations, $SO^{+}(2,1)$ | *Split-Quaternion Rotations and the Lorentz Group* |
 | $\mathbb{P}^3(\mathbb{R})$ | the projectivised algebra, the space of the rulings | this article |

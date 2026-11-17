@@ -4,7 +4,7 @@
 
 **The adjoint action $X\mapsto qXq^{-1}$ of a rotor preserves the trace and the determinant, it preserves the two halves exactly when the rotor is orthogonal, and on the antisymmetric line an orthogonal rotor acts by the sign of its determinant, so at order two the bivector line carries only a sign.**
 
-The article defines the adjoint action, lists its invariants, splits the algebra as the trace line plus the traceless part, proves that the traceless part carries the quadratic form $\operatorname{tr}(X^{2})$ with signature $(2,1)$ over $\mathbb{R}$ and negative definite over the imaginary form, computes the kernel as the two scalars, and treats the orthogonal rotor case where the two halves are preserved and the bivector line is fixed or reversed. It assumes *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*, *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* and *The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$*.
+The article defines the adjoint action, lists its invariants, splits the algebra as the trace line plus the traceless part, proves that the traceless part carries the quadratic form $\operatorname{tr}(X^{2})$ with inertia $(2,1)$ over $\mathbb{R}$ and negative definite over the imaginary form, computes the kernel as the two scalars, and treats the orthogonal rotor case where the two halves are preserved and the bivector line is fixed or reversed. It assumes *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*, *The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form* and *The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$*.
 
 It follows the biquaternion account of *The Endomorphisms of the Biquaternion Algebra* for the same action read on the eight real coordinates.
 
@@ -58,13 +58,13 @@ It follows the biquaternion account of *The Endomorphisms of the Biquaternion Al
 
 **Proof.** $\operatorname{tr}((qXq^{-1})^{2})=\operatorname{tr}(qX^{2}q^{-1})=\operatorname{tr}(X^{2})$ by the invariance of the trace.
 
-**Corollary.** Over $\mathbb{R}$ the form has signature $(2,1)$ in the basis $\operatorname{diag}(1,-1)$, $\sigma_{1}$, $J$, whose Gram matrix is $\operatorname{diag}(2,2,-2)$.
+**Corollary.** Over $\mathbb{R}$ the form has inertia $(2,1)$ in the basis $\operatorname{diag}(1,-1)$, $\sigma_{1}$, $J$, whose Gram matrix is $\operatorname{diag}(2,2,-2)$.
 
 **Proof.** The three matrices are traceless and pairwise orthogonal for the form, with the squares computed directly; the two symmetric directions have the value $2$ and the antisymmetric direction has $-2$.
 
 **Corollary.** Over the imaginary form the same computation gives the negative definite form on $\mathfrak{su}(2)$, so the real form of the group is $\mathrm{SO}(2,1)$ in one case and $\mathrm{SO}(3)$ in the other.
 
-**Proof.** The traceless anti-Hermitian matrices have $\operatorname{tr}(X^{2})=-\operatorname{tr}(Y^{2})$ for $X=iY$, which is negative definite; the real traceless matrices have the mixed signature.
+**Proof.** The traceless anti-Hermitian matrices have $\operatorname{tr}(X^{2})=-\operatorname{tr}(Y^{2})$ for $X=iY$, which is negative definite; the real traceless matrices have the mixed inertia.
 
 ## The Kernel and the Image
 
@@ -110,7 +110,7 @@ It follows the biquaternion account of *The Endomorphisms of the Biquaternion Al
 
 ## Summary
 
-The adjoint action $X\mapsto qXq^{-1}$ is an algebra automorphism preserving the trace, the determinant and the spectrum. It fixes the trace line and acts on the three-dimensional traceless part, preserving the quadratic form $\operatorname{tr}(X^{2})$, which has signature $(2,1)$ over the real form and is negative definite over the imaginary form; the kernel is the scalars, and on $\mathrm{SL}_2(\mathbb{C})$ it is the pair $\{\pm I\}$.
+The adjoint action $X\mapsto qXq^{-1}$ is an algebra automorphism preserving the trace, the determinant and the spectrum. It fixes the trace line and acts on the three-dimensional traceless part, preserving the quadratic form $\operatorname{tr}(X^{2})$, which has inertia $(2,1)$ over the real form and is negative definite over the imaginary form; the kernel is the scalars, and on $\mathrm{SL}_2(\mathbb{C})$ it is the pair $\{\pm I\}$.
 
 For an orthogonal rotor the two halves are preserved and the antisymmetric line is multiplied by $\det q$: rotations fix it and reflections reverse it. The symmetric plane then carries a rotation by twice the rotor angle, and the bivector line carries only a sign.
 
@@ -130,4 +130,4 @@ For an orthogonal rotor the two halves are preserved and the antisymmetric line 
 - Richard S. Hamilton, *Harmonic Maps of Manifolds with Boundary* (Springer, 1975), for the low-dimensional identifications of orthogonal groups.
 - [The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover](the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover.html), for the double cover used in the angle statement.
 - [The Derivation $X\mapsto[A,X]$ and Its Anti-Self-Adjointness for the Trace Form](the-derivation-commutator-and-its-anti-self-adjointness-for-the-trace-form.html), for the infinitesimal form of the action.
-- [The Trace Form and Its Signature on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the signature computation on the two halves.
+- [The Trace Form and Its Inertia on the Two Halves of $M_2(\mathbb{R})$](the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html), for the inertia computation on the two halves.
