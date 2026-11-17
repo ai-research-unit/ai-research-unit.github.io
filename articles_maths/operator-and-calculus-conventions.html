@@ -240,6 +240,16 @@ $$</p>
 \Delta_\Phi:=\sum_{k\in\{x,y,z\}}\frac{\partial^2}{\partial r_k^2},
 $$</p>
 <p>with the divergence $\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$ and the curl $\vec\nabla_\Phi\times\vec Q_{\mathrm f}$ of the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$ read as the ordinary divergence and curl of its vector part.</p>
+<p><strong>The d'Alembertian.</strong> The second-order operator closes the list and is defined here with the others:</p>
+<p>$$
+\Box_\Phi:=\langle\tilde\nabla_\Phi\rangle_{\natural}=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2}.
+$$</p>
+<p><strong>The sign is the algebra's.</strong> The gradient and its conjugate differ only in the sign of the three spatial terms, and the temporal unit commutes with the three spatial units, so the mixed derivatives cancel in pairs and each parameter contributes its own second derivative. The temporal term enters twice with $(-i)^2=-1$; each spatial term enters twice with $\vec e_k\vec e_k=-e_t$, and the conjugate factor supplies the opposite sign, so the space sum returns $+e_t\Delta_\Phi$. The product is $e_t$ times $\Delta_\Phi-\partial^2/\partial {r'_t}^2$, its scalar part is that bracket, and that is the $(-,+,+,+)$ signature on the material parameters, the signature the series works in throughout.</p>
+<p><strong>The operator is scalar.</strong> It multiplies by $e_t$ and acts coefficient by coefficient,</p>
+<p>$$
+\Box_\Phi\tilde Q_{\mathrm f}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\Box_\Phi Q_{\mathrm{f}\mu}\bigr)e_\mu ,
+$$</p>
+<p>and <strong>no article of the series defines a second d'Alembertian</strong>; no mass-term sign is left to a local convention.</p>
 <p><strong>Why the subscript stands on every glyph.</strong> The derivative is written on the material parameters and on no others, and $\Phi$ is their name: the glyph carries the name of the four parameters it differentiates. An article that writes the informational part writes an element, and no derivative of the corpus is taken against it.</p>
 <p><strong>The low slot spells the operator, or names its component, and nothing else.</strong> A label in the low slot names a distinct operator by spelling what makes it that operator. The label is roman and is read as written, $\tilde\nabla_{\mathrm{gco},\Phi}$ with its companion $\Box_{\mathrm{gco},\Phi}$. A single component index may follow, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$, and nothing may follow that. Nothing else enters the slot, and the list of what may not is the list of everything that distinguishes one instance of an operator from another rather than one operator from another.</p>
 <p>Never a number. A shift is written out, $\tilde\nabla_\Phi+\kappa$, and the glyph keeps its name while the number varies; a glyph such as $\tilde\nabla_{\kappa,\Phi}$ would make the operator a function of a parameter and would have to be read as a different operator at every value of it.</p>
@@ -324,7 +334,7 @@ $$</p>
 <p>$$
 \langle\tilde\nabla_\Phi\rangle=\langle\tilde\nabla_\Phi,\tilde\nabla_\Phi\rangle=\mathrm{Sc}(\tilde\nabla_\Phi\tilde\nabla_\Phi)=-\frac{\partial^2}{\partial {r'_{t}}^2}-\Delta_\Phi ,
 $$</p>
-<p>the cross terms cancelling and every second derivative negative, the fourth slot through the coefficient $(-i)^2=-1$ and the three space slots through $\vec e_k\vec e_k=-e_t$. This is not the series' d'Alembertian, which is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ (§<em>The Quaternionic Bilinear Product, Its Form and Its Norm</em>), and it differs from the d'Alembertian by one overall sign.</p>
+<p>the cross terms cancelling and every second derivative negative, the fourth slot through the coefficient $(-i)^2=-1$ and the three space slots through $\vec e_k\vec e_k=-e_t$. This is not the series' d'Alembertian, which is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ (§<em>The Gradient</em>), and it differs from the d'Alembertian by one overall sign.</p>
 <h3 id="the-quaternionic-bilinear-product-its-form-and-its-norm">The Quaternionic Bilinear Product, Its Form and Its Norm</h3>
 <p><strong>The product.</strong> The general quaternionic bilinear product is the second of the four general products of <em>Product and Form Conventions</em>, §<em>The Twelve Products and Their Names</em>; on the gradient it is $(\tilde\nabla_\Phi)^{\natural}\tilde Q_{\mathrm f}$, the conjugate derivative, read with the same rules, the three spatial units now carrying the field back onto the scalar unit with the opposite sign,</p>
 <p>$$
@@ -343,17 +353,12 @@ $$</p>
 \langle\tilde\nabla_\Phi,\tilde Q_{\mathrm f}\rangle_{\natural}=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde Q_{\mathrm f})=-i\frac{\partial Q_{\mathrm{f}t}}{\partial r'_t}+\vec\nabla_\Phi\cdot\vec Q_{\mathrm f} ,
 $$</p>
 <p>a scalar, the <strong>contraction</strong> of the conjugate derivative with the field. It differs from the plain form by the three signs of $\varepsilon$, which are <strong>computed from the product</strong> $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and not assumed: the divergence is back with a plus because the conjugate derivative has already applied $\varepsilon$.</p>
-<p><strong>The norm, and the definition of the d'Alembertian.</strong> The norm is defined with the form, as that form at its two equal arguments, and the two orders of the product agree:</p>
+<p><strong>The norm, and the operator it gives.</strong> The norm is defined with the form, as that form at its two equal arguments, and the two orders of the product agree:</p>
 <p>$$
-\Box_\Phi=\langle\tilde\nabla_\Phi\rangle_{\natural}=\langle\tilde\nabla_\Phi,\tilde\nabla_\Phi\rangle_{\natural}
-=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\mathrm{Sc}(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural})
-=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
+\langle\tilde\nabla_\Phi\rangle_{\natural}=\langle\tilde\nabla_\Phi,\tilde\nabla_\Phi\rangle_{\natural}
+=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi)=\mathrm{Sc}(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural})=\Box_\Phi ,
 $$</p>
-<p><strong>This is the definition of the d'Alembertian</strong>: the quaternionic norm of the gradient, one operator and one only (<em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em>). The three space terms enter with a plus and the fourth with a minus, and the sign is the algebra's own: the temporal coefficient is imaginary and squares to $-1$, while each spatial unit squares to $-e_t$ and the conjugate factor returns $+1$. That is the $(-,+,+,+)$ signature on the material parameters, the signature the series works in throughout, and no article chooses between two conventions of the operator. It is <strong>scalar</strong>: it multiplies by $e_t$ and acts coefficient by coefficient,</p>
-<p>$$
-\Box_\Phi\tilde Q_{\mathrm f}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\Box_\Phi Q_{\mathrm{f}\mu}\bigr)e_\mu .
-$$</p>
-<p>The glyph carries the subscript $\Phi$ like every derivative of the corpus, and <strong>no article of the series defines a second d'Alembertian</strong>; no mass-term sign is left to a local convention.</p>
+<p>the quaternionic norm of the gradient, which is the d'Alembertian of §<em>The Gradient</em>, one operator and one only (<em>The Four Forms, the Four Algebraic Norms and the Change of Scalars</em>). The two orders agree, so the norm does not depend on which factor carries the conjugate.</p>
 <h3 id="the-hermitian-product-its-form-and-its-norm">The Hermitian Product, Its Form and Its Norm</h3>
 <p><strong>The product.</strong> The general plain sesquilinear product is the third of the four general products of <em>Product and Form Conventions</em>, §<em>The Twelve Products and Their Names</em>; it is the plain product applied to the <strong>conjugated</strong> field $\tilde Q_{\mathrm f}^{*}=\bar Q_{\mathrm{f}t}e_t-\overline{\vec Q_{\mathrm f}}$, so that on the gradient it is $\tilde\nabla_\Phi\tilde Q_{\mathrm f}^{*}$, conjugate-linear in the field while the first slot stays $\mathbb{C}$-linear,</p>
 <p>$$
@@ -440,7 +445,7 @@ S_R=i\bigl((\tilde\nabla_\Phi)^{\natural}+m\bigr)G,
 $$</p>
 <p>and substitution returns $i\delta$ in each line, because the cross terms cancel and $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Box_\Phi$ with $m$ central. The inverse introduces no new object.</p>
 <p><strong>Marks.</strong> There is no glyph for the two equations and no subscript for a sector or a chart. A subscript on a kernel names the part it carries, $S_L$ and $S_R$. The gradient has one spelling with one subscript, $\tilde\nabla_\Phi$, and $\natural$ for its conjugate; there is no unsubscripted form of it, and no derivative of the corpus carries $\Psi$.</p>
-<p><strong>The equations are material.</strong> The two lines are written on the material parameters, in the letters $r'_t$ and $r_k$, and the corpus writes no informational twin of them. There is no second gradient to change and no $\Psi$ on an operator. The second-order operator is the d'Alembertian of §<em>The Quaternionic Bilinear Product, Its Form and Its Norm</em>, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$.</p>
+<p><strong>The equations are material.</strong> The two lines are written on the material parameters, in the letters $r'_t$ and $r_k$, and the corpus writes no informational twin of them. There is no second gradient to change and no $\Psi$ on an operator. The second-order operator is the d'Alembertian of §<em>The Gradient</em>, $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_{t}}^2$.</p>
 <h2 id="the-transposition-of-the-gradient">The Transposition of the Gradient</h2>
 <p><strong>The transposed reading.</strong> A gradient acts on the factor written to its right, $\tilde\nabla_\Phi\tilde Q_1$. The long arrow over the glyph marks the other reading: the operator acts on the factor written to its left, and the arrow points at that factor, $\tilde Q_1\overleftarrow{\tilde\nabla_\Phi}$. The mark belongs to the operator and not to the field, and it is not the short arrow of the pure part, which sits on an element and marks its vector part alone. Read this way, the gradient has its derivative to the right of the element it differentiates,</p>
 <p>$$
