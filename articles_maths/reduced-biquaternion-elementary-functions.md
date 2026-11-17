@@ -56,7 +56,7 @@ The algebra is **reduced**: if $\breve X^{2}=0$, both eigenvalues of $\breve X$ 
 
 Every elementary function of this article is the spectral function of its complex counterpart. The rule is stated once.
 
-**Theorem (Idempotent Principle).** Let $f(x)=\sum c_nx^n$ be a complex power series with radius of convergence $R$, and let $\lvert\lambda_1\rvert,\lvert\lambda_2\rvert<R$. Then
+**Theorem (Idempotent Principle).** Let $f(x)=\sum c_nx^n$ be a complex power series with radius of convergence $\rho$, and let $\lvert\lambda_1\rvert,\lvert\lambda_2\rvert<\rho$. Then
 
 $$
 \boxed{\;
