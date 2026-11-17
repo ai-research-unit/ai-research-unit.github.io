@@ -466,7 +466,7 @@ The four elements are collected in the table, with the status of the factorisati
 
 ### The Generic Element
 
-Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the worked example of the companion article. Its polar decomposition is
+Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the worked example of the companion article. Its complete polar decomposition is
 
 $$
 r = 2.320595787, \quad \theta_{\mathrm{pha}} = 0.190253189, \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y, \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
@@ -500,7 +500,7 @@ so that the quaternion modulus is $\tilde q = \tilde u_{\mathrm r} = 0.707106781
 
 ### The Element with a Vanishing Real Part
 
-Take $\tilde{Q} = i\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = -2$ and $\tilde q_r = 0$, so the construction of the quaternion pairing from the element's parts fails. The polar decomposition gives
+Take $\tilde{Q} = i\vec e_x+i\vec e_y$. Then $\langle\tilde Q\rangle_{\natural} = -2$ and $\tilde q_r = 0$, so the construction of the quaternion pairing from the element's parts fails. The complete polar decomposition gives
 
 $$
 r = \sqrt{2}, \qquad \theta_{\mathrm{pha}} = \frac{\pi}{2}, \qquad \tilde U_{\mathrm b} = e_t, \qquad \tilde u_{\mathrm r} = \frac{\vec e_x+\vec e_y}{\sqrt{2}} ,
@@ -516,7 +516,7 @@ The quaternion pairing, on the other hand, exists with modulus $r\tilde u_{\math
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, so the element is invertible and the polar decomposition is $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$: the scale is one and the boost and the rotor are trivial. Both partial constructions fail, since $\vec Q = 0$ and $\tilde q_r = 0$; the element is nevertheless in the domain of the polar decomposition, and the Cartan pairing, which needs only $\langle\tilde Q\rangle_{\natural}\neq0$, is available as $i = e_t\cdot i$. The example is the clearest single illustration of the difference between having a representation and being able to construct one from the element's parts.
+Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, so the element is invertible and the complete polar decomposition is $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$: the scale is one and the boost and the rotor are trivial. Both partial constructions fail, since $\vec Q = 0$ and $\tilde q_r = 0$; the element is nevertheless in the domain of the polar decomposition, and the Cartan pairing, which needs only $\langle\tilde Q\rangle_{\natural}\neq0$, is available as $i = e_t\cdot i$. The example is the clearest single illustration of the difference between having a representation and being able to construct one from the element's parts.
 
 ## Summary
 
@@ -557,7 +557,7 @@ Under the three conjugations complex conjugation fixes the modulus and flips the
 
 | symbol | meaning |
 |---|---|
-| $\tilde{Q} = r \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
+| $\tilde{Q} = r \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the complete polar decomposition, four factors |
 | $r$, $\exp(i\theta_{\mathrm{pha}})$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor, with $\tilde u_{\mathrm r}\in\mathrm{Sp}(1)$ |
 | $\Rho = r\exp(i\theta_{\mathrm{pha}}) = \sqrt{\langle\tilde Q\rangle_{\natural}}$ | the complex modulus of the four-factor decomposition, which is the Hamilton modulus |
 | $\vec Q = Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | the vector part of $\tilde{Q}$ |

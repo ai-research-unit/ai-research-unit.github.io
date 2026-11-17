@@ -1,8 +1,8 @@
-# __The Polar Decomposition and Remarkable Subspaces__
+# __The Complete Polar Decomposition and Remarkable Subspaces__
 
 ## Introduction
 
-**The subject.** This article reads the polar decomposition against the six remarkable subspaces of the algebra.
+**The subject.** This article reads the complete polar decomposition against the six remarkable subspaces of the algebra.
 
 The four-factor word is the **complete polar decomposition** of *The Complete Polar Decomposition of an N-Regular Biquaternion*, the refinement of the two-factor pair of *The Polar Decomposition of a Biquaternion*, and it reads
 

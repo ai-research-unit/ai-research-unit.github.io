@@ -38,7 +38,7 @@ $$
 | the two spectral values of a Hermitian element and the criterion of positivity | [The Spectrum](../articles_maths/the-spectrum.html) |
 | the four forms and the four algebraic norms, the Gram matrices and the definiteness of each | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the topological norm as the square root of the Hermitian norm and its uniqueness | [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html) |
-| the restriction of the polar factors to the six remarkable subspaces | [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html) |
+| the restriction of the polar factors to the six remarkable subspaces | [The Complete Polar Decomposition and Remarkable Subspaces](../articles_maths/the-complete-polar-decomposition-and-remarkable-subspaces.html) |
 | the positive definite refinement and its four factors, on the complement of the cone | [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | the closed forms on the two sectors of the cone, where the second factor is rank one | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |
 

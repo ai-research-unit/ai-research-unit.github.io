@@ -74,7 +74,7 @@ $$
 
 **The mass term is not part of it.** $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ depends on the boost and on nothing else, so the mass does not couple the rotor angle; what the mass does is make the chiral rotation a broken symmetry rather than an exact one, which is a statement about the equation and not about which factor carries the angle.
 
-**What the identification is not.** It is not a theorem. Nothing in the corpus computes $\theta$ from $\theta_{\mathrm{axr}}$ in a given solution, and the two are defined in different ways: his as the argument of a bilinear ratio, the corpus's as a parameter of the polar decomposition. What the count and the two further arguments establish is that the identification is the only consistent assignment. A reader may hold that and still want the explicit computation, and it is not in this corpus.
+**What the identification is not.** It is not a theorem. Nothing in the corpus computes $\theta$ from $\theta_{\mathrm{axr}}$ in a given solution, and the two are defined in different ways: his as the argument of a bilinear ratio, the corpus's as a parameter of the complete polar decomposition. What the count and the two further arguments establish is that the identification is the only consistent assignment. A reader may hold that and still want the explicit computation, and it is not in this corpus.
 
 ### The qualifier on the fourth row
 

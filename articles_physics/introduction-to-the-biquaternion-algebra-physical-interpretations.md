@@ -215,7 +215,7 @@
 #### Remarkable Subspaces and the Forms
 
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html)
-- [The Polar Decomposition and Remarkable Subspaces](../articles_maths/the-polar-decomposition-and-remarkable-subspaces.html)
+- [The Complete Polar Decomposition and Remarkable Subspaces](../articles_maths/the-complete-polar-decomposition-and-remarkable-subspaces.html)
 
 #### Operators of the Quaternion Algebra
 

@@ -12,7 +12,7 @@ the two-sided operator — the default two-sided operator of the corpus — whos
 
 **What the norm decides, and what the vector form decides.** The norm decides everything global, and the vector form $B^{2}$ decides only the Jordan type. On the whole N-regular sector the operator is invertible, of rank four, with the whole algebra as image and the central circle $U(1)$ as kernel. The wall $B^{2}=0$ changes the spectrum from the four products $\lambda_i\bar\lambda_j$ of two distinct eigenvalues to a single repeated eigenvalue, and on the Jordan part of the wall it changes the Jordan type from semisimple to one block of size three and one of size one. That is the whole difference, and it is the reason the wall is a part of this article.
 
-The polar decomposition writes an element of non-vanishing norm as four factors,
+The complete polar decomposition writes an element of non-vanishing norm as four factors,
 
 $$
 \tilde Q=\Rho\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}
@@ -673,7 +673,7 @@ On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $\math
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two chiral spinor spaces and the diagonal action of $\tilde Q$.
 - [Relations between Exponential Polar Decomposition and Eigenbasis on the N-Regular Sector](relations-between-exponential-polar-decomposition-and-eigenbasis-on-the-n-regular-sector.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
-- [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
+- [The Complete Polar Decomposition and Remarkable Subspaces](the-complete-polar-decomposition-and-remarkable-subspaces.html), §*The Action on the Two Halves*, for the detailed action on the two sectors, the boost matrices and the comparison of the two signs.
 - [The Cartan Hermitian Pairing of the Complete Polar Decomposition on the N-Regular Sector](the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html), for the Hermitian positive and $*$-unitary factors and the equation $\tilde Q\tilde Q^{*}=\tilde H^{2}$.
 - [The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector](the-quaternion-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html) and [The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector](the-hamilton-root-pairing-of-the-complete-polar-decomposition-on-the-n-regular-sector.html), for the two partial two-factor groupings.
 - [The Hermitian Pair of Operators Acting on Two Sides](the-hermitian-pair-of-operators-acting-on-two-sides.html), for the two-sided operator as a product of the two regular maps, its spectrum, determinant, trace and rank.

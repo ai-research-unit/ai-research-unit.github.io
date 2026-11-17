@@ -761,7 +761,7 @@ $$
 \mathsf M_2(\tilde Q)\sim\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}
 $$
 
-in the distinct case. The polar decomposition is the matrix product
+in the distinct case. The complete polar decomposition is the matrix product
 
 $$
 \mathsf M_2(\tilde Q)

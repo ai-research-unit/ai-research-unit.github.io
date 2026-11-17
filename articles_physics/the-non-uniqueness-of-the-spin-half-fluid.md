@@ -23,7 +23,7 @@ $$
 \tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}.
 $$
 
-**The count is $1+1+3+3=8$ against the eight real components of an element, so the map is a map between spaces of the same dimension.** Equality of dimension is necessary for a bijection and is not sufficient for one. What makes it a bijection here is the choice of ranges together with the polar decomposition's uniqueness theorem, and the two degenerate loci are where the ranges have to work.
+**The count is $1+1+3+3=8$ against the eight real components of an element, so the map is a map between spaces of the same dimension.** Equality of dimension is necessary for a bijection and is not sufficient for one. What makes it a bijection here is the choice of ranges together with the complete polar decomposition's uniqueness theorem, and the two degenerate loci are where the ranges have to work.
 
 ### The Fibres
 

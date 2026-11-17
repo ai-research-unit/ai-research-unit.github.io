@@ -323,7 +323,7 @@ $$
 \text{fluid}\;\longrightarrow\;\text{field}\quad(\text{total, but only solutions close}).
 $$
 
-**The forward arrow is exact in all three cases, and exact for the same reason.** Any non-vanishing spinor gives a density, a frame and a spin direction at once, and the polar decomposition is a bijection on the eight-parameter set of invertibles, so the fluid's data are the field's data.
+**The forward arrow is exact in all three cases, and exact for the same reason.** Any non-vanishing spinor gives a density, a frame and a spin direction at once, and the complete polar decomposition is a bijection on the eight-parameter set of invertibles, so the fluid's data are the field's data.
 
 **The reverse arrow is where the cases part.** Given a density, a frame and a spin direction, the spinor is written at once, but the three data are not yet a solution: what closes the system is the spin's transport, and the closure needs either the Frenkel condition or a free constitutive law. **That is why the spinor case alone has a genuinely non-unique fluid** — the three choices [The Non-Uniqueness of the Spin-Half Fluid](the-non-uniqueness-of-the-spin-half-fluid.html) records are choices the reverse map does not make for you — and why the orientation, and not the density or the velocity, is where the extra structure of the Dirac medium sits.
 

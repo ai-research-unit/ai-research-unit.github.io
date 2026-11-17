@@ -36,7 +36,7 @@ It takes the first and the third factors of the word, the scale and the boost $\
 
 The other two pairings are partial: *The Hamilton Root Pairing of the Complete Polar Decomposition on the N-Regular Sector* cannot form its single exponential where the vector part is null, and *The Quaternion Pairing of the Complete Polar Decomposition on the N-Regular Sector* cannot construct its modulus where the real quaternion part is singular. The present pairing is **not** partial: it loses nothing, it is available on the whole complement of the null cone, and both of its factors are functions of the element alone. The complement is the maximal domain of the positive definite $*$-unitary form. The extension to the cone, where the $*$-unitary factor becomes a partial isometry and the positive factor a scaled Hermitian idempotent, is *The Polar Decomposition of an N-Degenerate Biquaternion*. The unit-norm case, in which the scale and the phase are trivial, is the Cartan decomposition $\tilde{Q} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the group of invertibles, and the physical interpretation of the two factors is the Lorentz boost and the spatial rotation.
 
-The article assumes the algebra and the domain of the polar decomposition from the companion article, and takes the four factors as defined there and does not re-derive them. It is not the four-factor decomposition itself, and it is not the operator polar decomposition of *The Polar Decomposition of an Operator of the Form*, a different statement about a Tomita operator on a completion. No physics is invoked; the physical interpretation is recorded where it clarifies the algebra.
+The article assumes the algebra and the domain of the complete polar decomposition from the companion article, and takes the four factors as defined there and does not re-derive them. It is not the four-factor decomposition itself, and it is not the operator polar decomposition of *The Polar Decomposition of an Operator of the Form*, a different statement about a Tomita operator on a completion. No physics is invoked; the physical interpretation is recorded where it clarifies the algebra.
 
 ## The Results Used
 
@@ -58,7 +58,7 @@ The central computation of the article is the product $\tilde Q\tilde Q^{*}=\til
 
 ### The Definition
 
-The **Cartan pairing** of the polar decomposition is the regrouping in which the scale and the boost form the first factor and the phase and the rotor the second:
+The **Cartan pairing** of the complete polar decomposition is the regrouping in which the scale and the boost form the first factor and the phase and the rotor the second:
 
 $$
 \tilde{Q} = \tilde Q_H\,\tilde Q_0 , \qquad \tilde Q_H = r\,\tilde U_{\mathrm b} \in \mathbb{B}_{\Psi} , \qquad \tilde Q_0 = \exp(i\theta_{\mathrm{pha}})\,\tilde u_{\mathrm r} \in \mathrm{U}(\mathbb{B}) .
@@ -212,7 +212,7 @@ $$
 \{\tilde{Q} : \langle\tilde Q\rangle_{\natural}\neq0\} ,
 $$
 
-which is the domain of the polar decomposition itself. The reason is that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, so the element is invertible exactly when its norm does not vanish, and an invertible element has a unique matrix polar decomposition. The Cartan pairing is the only one of the three whose construction needs no part of the element; the Hamilton representation and the quaternion construction fail on additional sets: the Hamilton axis cannot be normalised when the vector part is null, and the quaternion modulus cannot be constructed from $\tilde q_r$ when $\tilde q_r$ is not invertible.
+which is the domain of the complete polar decomposition itself. The reason is that $\langle\tilde Q\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, so the element is invertible exactly when its norm does not vanish, and an invertible element has a unique matrix polar decomposition. The Cartan pairing is the only one of the three whose construction needs no part of the element; the Hamilton representation and the quaternion construction fail on additional sets: the Hamilton axis cannot be normalised when the vector part is null, and the quaternion modulus cannot be constructed from $\tilde q_r$ when $\tilde q_r$ is not invertible.
 
 ### The Matrix Proof
 
@@ -509,7 +509,7 @@ The examples are collected in the table, with the two factors and the norm of th
 
 ### The Generic Element
 
-Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the worked example of the companion article. Its polar decomposition, computed there, is
+Take $\tilde{Q} = (1+i)e_t+\vec e_x+2\vec e_y$, the worked example of the companion article. Its complete polar decomposition, computed there, is
 
 $$
 r = 2.320595787 , \quad \theta_{\mathrm{pha}} = 0.190253189 , \quad \tilde U_{\mathrm b} = 1.072349609\,e_t - 0.173166789\,i\,\vec e_x - 0.346333577\,i\,\vec e_y , \quad \tilde u_{\mathrm r} = 0.470592172\,e_t+0.394599292\,\vec e_x+0.789198585\,\vec e_y .
@@ -551,7 +551,7 @@ The first factor is the positive scalar $\sqrt{2}e_t$, Hermitian positive, and t
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, the element is invertible and the polar decomposition is $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$. The Cartan pairing reads $i = e_t\cdot i$, with $\tilde Q_H = e_t$ Hermitian positive and $\tilde Q_0 = i$ $*$-unitary: the central phase of the polar decomposition is absorbed into the $*$-unitary factor, which is the grouping that defines the Cartan pairing. The example is the clearest single illustration of the difference between having a pairing and being able to construct the modulus of a partial representation from the parts of the element.
+Take $\tilde{Q} = i$. Then $\langle\tilde Q\rangle_{\natural} = -1$, the element is invertible and the polar decomposition is $i = 1\cdot \exp(i\pi/2)\cdot e_t\cdot e_t$. The Cartan pairing reads $i = e_t\cdot i$, with $\tilde Q_H = e_t$ Hermitian positive and $\tilde Q_0 = i$ $*$-unitary: the central phase of the complete polar decomposition is absorbed into the $*$-unitary factor, which is the grouping that defines the Cartan pairing. The example is the clearest single illustration of the difference between having a pairing and being able to construct the modulus of a partial representation from the parts of the element.
 
 ## Summary
 
@@ -599,7 +599,7 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 
 | symbol | meaning |
 |---|---|
-| $\tilde{Q} = r \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the polar decomposition, four factors |
+| $\tilde{Q} = r \exp(i\theta_{\mathrm{pha}})\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | the complete polar decomposition, four factors |
 | $r$, $\exp(i\theta_{\mathrm{pha}})$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
 | $\tilde{Q} = \tilde Q_H \tilde Q_0$ | the Cartan pairing, two factors |
 | $\tilde Q_H = r\tilde U_{\mathrm b}$ | the Hermitian positive factor, or first factor |
@@ -632,6 +632,6 @@ The pairing is Hermitian because the exponents of its factors lie in the two inv
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the isomorphism $\mathbb{B}\cong\mathsf{M}_2(\mathbb{C})$ and the transport of the conjugation ${}^{*}$ to the matrix adjoint.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](../articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html), for the unit-norm case $\tilde Q_0 = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$, the boost and the rotation of the physical interpretation.
 - *The Polar Decomposition in Subspaces*, for the Cartan pairing restricted to the remarkable subspaces of the algebra.
-- [The Polar Decomposition and Remarkable Subspaces](the-polar-decomposition-and-remarkable-subspaces.html), for the same restriction in the algebra: the four exponents against the four coordinate blocks and the six subspaces, the incidence of the exponents with the subspaces, and the polar data each subspace carries.
+- [The Complete Polar Decomposition and Remarkable Subspaces](the-complete-polar-decomposition-and-remarkable-subspaces.html), for the same restriction in the algebra: the four exponents against the four coordinate blocks and the six subspaces, the incidence of the exponents with the subspaces, and the polar data each subspace carries.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the extension of this pairing to the cone, the partial isometry that replaces the $*$-unitary factor there and the scaled idempotent that replaces the positive factor.
 - S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for Theorem 1 and Corollary 1, the published form of the pairing.

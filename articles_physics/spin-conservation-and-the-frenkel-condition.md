@@ -34,7 +34,7 @@ $$
 
 ### The connection
 
-**The rotor's logarithmic derivative is a real vector part, and the polar decomposition's structure is what makes it so.** In the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, the rotor is real and unitary, so $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}$ is a pure vector and real — **the algebra's own statement that a rotation's generator is a spatial direction**, and the property that lets the rotor's derivative be read as an angular velocity.
+**The rotor's logarithmic derivative is a real vector part, and the complete polar decomposition's structure is what makes it so.** In the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, the rotor is real and unitary, so $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}$ is a pure vector and real — **the algebra's own statement that a rotation's generator is a spatial direction**, and the property that lets the rotor's derivative be read as an angular velocity.
 
 $$
 \tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta,
