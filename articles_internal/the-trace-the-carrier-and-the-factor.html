@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Trace: The Carrier and the Factor — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-trace-the-carrier-and-the-factor"><strong>The Trace: The Carrier and the Factor</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every use of the word trace in this corpus reduces to the trace of a matrix, and the matrix is never the one the reader assumes.</strong></p>
+<p>The trace is a notion of matrices. It is defined as the sum of the diagonal entries of an array, and it is basis independent because it is the coefficient of $\lambda^{n-1}$ in the characteristic polynomial, or equivalently because $\operatorname{tr}(XY)=\operatorname{tr}(YX)$. An element of an algebra is not an array. To speak of its trace one must first choose a carrier, that is, a linear map from the algebra into matrices, or a module on which the algebra acts. The corpus does this in several places, and each place has its own carrier, its own symbol and its own factor. The word is safe only when the carrier and the factor are named.</p>
+<p>The counts fix the size of the problem. At the last committed state, $619$ mathematics articles and $314$ physics articles carry a trace symbol. The occurrences are $5{,}106$ in the mathematics tree and $2{,}470$ in the physics tree, counted by the four spellings $\operatorname{tr}$, $\operatorname{Tr}$, $\mathrm{tr}$ and $\mathrm{Tr}$. The word <em>traceless</em> occurs $642$ times in $137$ physics articles, the <em>partial trace</em> $147$ times, and the <em>trace anomaly</em> $56$ times. These are counts of text, not of meaning, and the meanings are the subject of the article.</p>
+<p>The claim is that the corpus is consistent but not self-explanatory. At least six carriers are in use: the $2\times2$ isomorphism, the $4\times4$ left regular representation, the $4\times4$ real-linear Dirac embedding, a Hilbert space, a representation of a group, and a field extension. Each carries a factor, and the factor is the dimension of the carrier. The corpus states the factors, but it states them in several places, and no single article collects them. A reader who carries the matrix intuition from one carrier to the next makes one of four mistakes: a wrong factor, a false positivity, a false linearity, or a false reading of <em>traceless</em> as <em>zero</em>. Each mistake has a counterexample in the corpus.</p>
+<p>The article is an internal one. It proposes no notation. It reads the notation the corpus already uses, names the carrier behind each symbol, and states the rules that keep the readings apart.</p>
+<h2 id="the-matrix-trace-and-the-five-statements-that-define-it">The Matrix Trace and the Five Statements That Define It</h2>
+<p><strong>Definition.</strong> For $X\in M_n(k)$ the trace is</p>
+<p>$$
+\operatorname{tr}X=\sum_{i=1}^{n}X_{ii}.
+$$</p>
+<p>Five statements about it are used in the corpus, and each one is a different way of saying what the number is.</p>
+<p><strong>The trace is the sum of the eigenvalues.</strong> In a triangular basis the diagonal carries the eigenvalues, so $\operatorname{tr}X=\sum_k\lambda_k$, counted with multiplicity, and $\operatorname{tr}(X^m)=\sum_k\lambda_k^m$.</p>
+<p><strong>The trace is the first elementary symmetric function.</strong> It is the coefficient of $\lambda^{n-1}$ in the characteristic polynomial, with a sign, and together with the determinant it generates the conjugation-invariant polynomials at $n=2$. The article <em>The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</em> proves that the invariant ring is the free polynomial ring $\mathbb{C}[\operatorname{tr},\det]$.</p>
+<p><strong>The trace is the only invariant linear functional.</strong> A linear functional $f$ with $f(XY)=f(YX)$ for all $X,Y$ satisfies $f(X)=f(\mathrm{I})\operatorname{tr}(X)/n$. So the space of invariant linear functionals is one-dimensional, and the trace spans it. The proof is in <em>The Element: Rank, Trace, Determinant, Characteristic Polynomial</em>, by testing on matrix units.</p>
+<p><strong>The trace is the derivative of the logarithm of the determinant.</strong> At the identity,</p>
+<p>$$
+\frac{d}{dt}\Big|_{t=0}\log\det(\mathrm{I}+tH)=\operatorname{tr}H,
+$$</p>
+<p>and the identity is the infinitesimal form of $\det(\exp H)=\exp(\operatorname{tr}H)$. This is the statement that the trace is the additive character that the determinant becomes under the exponential.</p>
+<p><strong>The trace is the unique-up-to-scale associative symmetric form.</strong> Solving $B(XY,Z)=B(X,YZ)$ for a symmetric $B$ leaves a one-dimensional space, spanned by $\operatorname{tr}(XY)$. This is the trace form, and it is the subject of the next sections.</p>
+<p><strong>The five statements are one statement.</strong> Each identifies the same functional, and none of them needs a basis. The dependence on the basis is only apparent: the sum of the diagonal entries depends on the basis, the coefficient of the characteristic polynomial does not, and the cyclic identity is the proof.</p>
+<p><strong>What the trace forgets.</strong> The trace is one number out of $n^2$, and its kernel is the traceless part $\mathfrak{sl}_n$, of dimension $n^2-1$. The map $X\mapsto\tfrac1n(\operatorname{tr}X)\mathrm{I}$ is a projection onto the scalars, and $X-\tfrac1n(\operatorname{tr}X)\mathrm{I}$ is traceless. So <em>traceless</em> names a subspace of codimension one, not the origin.</p>
+<p><strong>The four counterexamples that the corpus turns on.</strong> They are worth stating here because each one is an error a reader can make by carrying the matrix intuition too far.</p>
+<ul>
+<li>The trace is not positive. At $n=2$ the matrix unit $E_{12}$ is nonzero and $\operatorname{tr}(E_{12}^2)=0$. The quadratic form $\operatorname{tr}(X^2)$ is indefinite, of signature $(3,1)$ at $n=2$ and $\bigl(n(n+1)/2,n(n-1)/2\bigr)$ in general.</li>
+<li>The trace is not multiplicative. For $X=\mathrm{I}_2$, $\operatorname{tr}(X^2)=2$ while $(\operatorname{tr}X)^2=4$.</li>
+<li>The trace does not separate points. The traceless matrices are a nonzero subspace, and the traceless part carries the Lie algebra of the group.</li>
+<li>The trace of a commutator is zero. So an element with nonzero trace is not a commutator, and this is the algebraic reason a finite-dimensional algebra cannot carry a canonical pair with $[a,b]=\mathrm{I}$.</li>
+</ul>
+<p>The first three are checked directly. The null vector $X=E_{11}-E_{22}+E_{12}-E_{21}$ satisfies $\operatorname{tr}(X^2)=0$ and $X\neq0$; for $X=\mathrm{I}_2$ the two numbers are $2$ and $4$; and the traceless part of $M_2(\mathbb{C})$ has complex dimension $3$. The fourth is the identity $\operatorname{tr}([A,B])=0$.</p>
+<h2 id="why-an-algebra-needs-a-carrier">Why an Algebra Needs a Carrier</h2>
+<p><strong>An abstract element has no diagonal.</strong> The definition of the trace uses entries, and an element of an algebra is not an entry. There are three standard repairs, and the corpus uses all three.</p>
+<p><strong>The first repair is a split representation.</strong> A central simple algebra $A$ of degree $n$ becomes $M_n(F')$ after a base change to a splitting field $F'$. The <strong>reduced trace</strong> is</p>
+<p>$$
+\operatorname{Trd}(a)=\operatorname{tr}(a\otimes1),
+$$</p>
+<p>and the value lies in the base field and does not depend on the splitting. This is the canonical trace of the algebra, and it is the one the corpus uses when it writes $\operatorname{Tr}$ on an element of $\mathbb{B}$.</p>
+<p><strong>The second repair is the regular representation.</strong> The algebra acts on itself by left multiplication, $L(a)(x)=ax$, and the <strong>regular trace</strong> is $\operatorname{Tr}_{\mathrm{reg}}(a)=\operatorname{tr}L(a)$. The carrier is the algebra as a vector space, and the factor is its dimension.</p>
+<p><strong>The third repair is a module.</strong> The algebra acts on a module $V$, and the <strong>trace in the representation</strong> is $\operatorname{tr}\rho(a)$. The carrier is $V$, and the factor is $\dim V$. The character of a group representation is the same construction, read on the group.</p>
+<p><strong>The three repairs differ by factors.</strong> For a central simple algebra of degree $n$ the regular trace is $n$ times the reduced trace. The representation trace is the reduced trace times the dimension of the representation, divided by the degree. So the same element has several traces, and the number in front of the scalar part is the size of the carrier. This is the whole content of the next sections.</p>
+<p><strong>The objection.</strong> A reader may say that the trace is defined on matrices and that the corpus should simply write matrices. The answer is that the corpus does write matrices, but not always the same one, and the interesting statements are those in which the choice of matrix is the point. The $2\times2$ image is the reduced trace; the $4\times4$ left matrix is the regular trace; the $4\times4$ Dirac matrix is neither, because its embedding is real-linear. An article that named only <em>the trace</em> would hide the distinction that its own result depends on.</p>
+<h2 id="the-three-carriers-of-the-biquaternion-algebra">The Three Carriers of the Biquaternion Algebra</h2>
+<p><strong>The algebra.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$, with $e_t=1$ and $\vec e_k^2=-e_t$, and a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. It is a complex algebra of complex dimension $4$ and real dimension $8$.</p>
+<h3 id="the-math86-image-and-the-reduced-trace">The $2\times2$ Image and the Reduced Trace</h3>
+<p><strong>The isomorphism.</strong> $\mathsf{M}_2\colon\mathbb{B}\to M_2(\mathbb{C})$ sends the units to $\mathrm{I}_2,-i\sigma_1,-i\sigma_2,-i\sigma_3$. It is complex-linear, and it is an isomorphism of algebras.</p>
+<p><strong>The trace.</strong> The corpus writes</p>
+<p>$$
+\operatorname{Tr}(\tilde Q):=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t.
+$$</p>
+<p>On the units, $\operatorname{Tr}(e_t)=2$ and $\operatorname{Tr}(\vec e_\eta)=0$. The factor $2$ is the size of the matrix and the degree of the algebra, and it cannot be divided out without changing the symbol. This is the <strong>reduced trace</strong> of $\mathbb{B}$, because $\mathbb{B}$ is split and the splitting field is $\mathbb{C}$ itself.</p>
+<p><strong>What it sees.</strong> The trace is $2Q_t$, a complex number. It retains the complex time coordinate and forgets the three vector coordinates: the kernel is $\{Q_t=0\}$, of complex dimension $3$ and real dimension $6$.</p>
+<p><strong>The determinant companion.</strong> $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the multiplicative norm. The pair $(\operatorname{Tr},\det)$ is the pair of elementary symmetric functions of the two eigenvalues $Q_t\pm iB$, with $B^2=Q_x^2+Q_y^2+Q_z^2$. This is the reading of <em>The Four Kinds of Frame Transformation</em>, where the classifier of a conjugacy class is $\tau=2Q_t$.</p>
+<h3 id="the-regular-representation-and-the-factor-four">The Regular Representation and the Factor Four</h3>
+<p><strong>The left and right matrices.</strong> $L(\tilde Q)$ and $R(\tilde Q)$ are the $4\times4$ matrices of left and right multiplication in the coordinate basis. They are complex-linear, and they are the two regular representations of <em>Families of Matrix Representations</em>.</p>
+<p><strong>The trace.</strong> For both families,</p>
+<p>$$
+\operatorname{tr}L(\tilde Q)=\operatorname{tr}R(\tilde Q)=4Q_t.
+$$</p>
+<p>The factor $4$ is the complex dimension of the carrier. It is twice the reduced trace, as the degree-count predicts.</p>
+<p><strong>The pairing and the determinant.</strong> Within one family,</p>
+<p>$$
+\operatorname{tr}\bigl(L(\tilde Q_2)L(\tilde Q)\bigr)=4\operatorname{Sc}(\tilde Q_2\tilde Q),\qquad
+\det L(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2.
+$$</p>
+<p>Across the two families,</p>
+<p>$$
+\operatorname{tr}\bigl(L(\tilde Q_2)R(\tilde Q)\bigr)=4Q_{2t}Q_t.
+$$</p>
+<p>So the two sides are orthogonal for the trace form exactly when one scalar part vanishes, and what couples them is the centre alone.</p>
+<h3 id="the-dirac-embedding-and-the-pair-of-traces">The Dirac Embedding and the Pair of Traces</h3>
+<p><strong>The embedding is real-linear.</strong> The map $\mathsf{M}_4\colon\mathbb{B}\to\mathrm{Cl}^+(1,3)\subset M_4(\mathbb{C})$ sends the four real units to the identity and the three bivectors, and it sends the central imaginary $i$ to the pseudoscalar basis operator, not to $i\mathrm{I}_4$. Hence</p>
+<p>$$
+\mathsf{M}_4(i\tilde Q)\neq i\,\mathsf{M}_4(\tilde Q)
+$$</p>
+<p>in general, and the matrix trace of the image is not the complex trace of the element.</p>
+<p><strong>The vector trace.</strong> It is</p>
+<p>$$
+\operatorname{Tr}_\Delta(b)=\operatorname{tr}\mathsf{M}_4(b)=4\operatorname{Re}b_0.
+$$</p>
+<p><strong>The axial trace.</strong> It is</p>
+<p>$$
+\operatorname{Tr}_{\Delta,5}(b)=\operatorname{tr}\bigl((-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z})\mathsf{M}_4(b)\bigr)=4i\operatorname{Im}b_0.
+$$</p>
+<p><strong>The identity.</strong> For every $b\in\mathbb{B}$,</p>
+<p>$$
+\operatorname{Tr}_{\mathrm{reg}}(b)=\operatorname{Tr}_\Delta(b)+\operatorname{Tr}_{\Delta,5}(b).
+$$</p>
+<p>The regular trace is complex-linear; each of the two Dirac traces is real-linear; their sum is the complex-linear trace. The odd sector is invisible to both, and the pair $(\operatorname{Tr}_\Delta,\operatorname{Tr}_{\Delta,5})$ is what the anomaly needs. The computation and the signs are <em>The Vector and the Axial Traces of $M_4(\mathbb{C})$</em>.</p>
+<h3 id="the-carriers-in-one-table">The Carriers in One Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>symbol</th>
+<th>value on $\tilde Q$</th>
+<th>linearity</th>
+<th>factor</th>
+<th>kernel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the $2\times2$ isomorphism</td>
+<td>$\operatorname{Tr}$</td>
+<td>$2Q_t$</td>
+<td>$\mathbb{C}$-linear</td>
+<td>$2$</td>
+<td>$Q_t=0$</td>
+</tr>
+<tr>
+<td>the $4\times4$ regular representation</td>
+<td>$\operatorname{tr}L$, $\operatorname{tr}R$</td>
+<td>$4Q_t$</td>
+<td>$\mathbb{C}$-linear</td>
+<td>$4$</td>
+<td>$Q_t=0$</td>
+</tr>
+<tr>
+<td>the $4\times4$ Dirac embedding</td>
+<td>$\operatorname{Tr}_\Delta$, $\operatorname{Tr}_{\Delta,5}$</td>
+<td>$4\operatorname{Re}b_0$, $4i\operatorname{Im}b_0$</td>
+<td>$\mathbb{R}$-linear</td>
+<td>$4$</td>
+<td>$b_0$ real, resp. imaginary</td>
+</tr>
+<tr>
+<td>a Hilbert space</td>
+<td>$\mathrm{Tr}$</td>
+<td>$\sum_k\langle e_k,T e_k\rangle$</td>
+<td>$\mathbb{C}$-linear</td>
+<td>$\dim\mathcal{H}$</td>
+<td>trace class only</td>
+</tr>
+<tr>
+<td>a representation $\rho$</td>
+<td>$\operatorname{Tr}\rho$</td>
+<td>character</td>
+<td>$\mathbb{C}$-linear</td>
+<td>$\dim V$</td>
+<td>depends on $\rho$</td>
+</tr>
+<tr>
+<td>a field extension $L/k$</td>
+<td>$\operatorname{Tr}_{L/k}$</td>
+<td>trace of $m_x$</td>
+<td>$k$-linear</td>
+<td>$[L:k]$</td>
+<td>depends on $x$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is the answer to the naming question.</strong> The three biquaternion carriers are not conventions for one number. They are three matrices, and the values are $2Q_t$, $4Q_t$ and the pair $4\operatorname{Re}b_0$, $4i\operatorname{Im}b_0$. The first two are proportional, and only because the regular carrier is the algebra itself.</p>
+<p><strong>The numerical check.</strong> On $100$ random complex elements, the identity $\operatorname{Tr}(\tilde Q)=2Q_t$ holds to $1.1\times10^{-16}$, the identities $\operatorname{tr}L(\tilde Q)=\operatorname{tr}R(\tilde Q)=4Q_t$ hold to $9.2\times10^{-16}$, the products hold to $1.4\times10^{-14}$, and $\operatorname{Tr}_\Delta+\operatorname{Tr}_{\Delta,5}=4b_0$ holds to $9.9\times10^{-16}$. The sharp counterexample to complex linearity is exact: $\operatorname{tr}\mathsf{M}_4(i\,e_t)=0$ while $i\operatorname{tr}\mathsf{M}_4(e_t)=4i$.</p>
+<h2 id="the-factor-is-the-dimension-of-the-carrier">The Factor Is the Dimension of the Carrier</h2>
+<p><strong>The rule.</strong> The number in front of the scalar part is the size of the matrix that carries the trace. For $M_n$ it is $n$. For the reduced trace of a degree-$n$ algebra it is $n$, because the splitting representation has size $n$. For the regular representation it is $n^2$, the dimension of the algebra. For a representation it is $\dim V$. For a field extension it is $[L:k]$. For a tensor product it is the product of the factors.</p>
+<p><strong>The tensor product.</strong> The corpus uses</p>
+<p>$$
+\operatorname{Tr}(x\otimes y)=\operatorname{Tr}(x)\operatorname{Tr}(y),\qquad
+\operatorname{Tr}(e_t)=2,\qquad \operatorname{Tr}(\vec e_\eta)=0.
+$$</p>
+<p>So $\operatorname{Tr}(e_t\otimes e_t)=4$, and a subscript names the factor, $\operatorname{Tr}_{\mathbb{B}}(e_t)=2$. This is the trace of the $4\times4$ image of $\mathbb{B}\otimes\mathbb{B}$, and it needs no second convention.</p>
+<p><strong>The factor cancels in a ratio and does not cancel in a normalisation.</strong> The Born weight is a ratio,</p>
+<p>$$
+p=\frac{\operatorname{Tr}(\tilde{Ϛ}_\Psi\tilde H_\Psi)}{\operatorname{Tr}\tilde{Ϛ}_\Psi},
+$$</p>
+<p>and the factor $2$ cancels. But the normalisation itself is $\operatorname{Tr}\tilde{Ϛ}_\Psi=1$, which is $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi)=1$, not $\mathrm{Sc}=1$. Dropping the factor from the trace, or inserting it in the ratio, are the two opposite mistakes that <em>Norm and Pairing Conventions</em> names.</p>
+<p><strong>The rule of thumb.</strong> A trace statement has three parts: the carrier, the symbol, and the factor. An article that writes the symbol and omits either of the other two has written an equation that is true only in the carrier its author had in mind.</p>
+<h2 id="the-trace-form-is-not-the-trace">The Trace Form Is Not the Trace</h2>
+<p><strong>Two arities, one symbol.</strong> The trace is a functional, $\operatorname{tr}\colon M_n\to k$. The <strong>trace form</strong> is a bilinear form, $(X,Y)\mapsto\operatorname{tr}(XY)$. The two are different objects, and the corpus writes both with the same word. The form is symmetric because $\operatorname{tr}(XY)=\operatorname{tr}(YX)$, and it is associative because $\operatorname{tr}(XYZ)$ can be read with either bracket.</p>
+<p><strong>The form is nondegenerate and indefinite.</strong> On $M_n(\mathbb{R})$, in the matrix-unit basis, the Gram matrix is the permutation matrix of the transposition $(i,j)\mapsto(j,i)$, whose eigenvalues are $+1$ on the diagonal units and $\pm1$ on each pair. So the signature is</p>
+<p>$$
+\Bigl(\frac{n(n+1)}{2},\frac{n(n-1)}{2}\Bigr).
+$$</p>
+<p>At $n=2$ it is $(3,1)$, and the null vector is $E_{11}-E_{22}+E_{12}-E_{21}$. The form is positive on the symmetric half and negative on the antisymmetric half, and the two halves are orthogonal.</p>
+<p><strong>The form is not an inner product.</strong> The Hilbert–Schmidt form $\operatorname{tr}(X^{*}Y)$ is the inner product. The trace form is the invariant one, and the price of invariance is indefiniteness: no positive definite form is invariant under the inner derivations. At $n=2$, taking $A=E_{11}$ and $X=Y=E_{12}$ in the invariance identity forces $2B(E_{12},E_{12})=0$.</p>
+<p><strong>The Killing form is the trace of a trace.</strong> The Killing form is</p>
+<p>$$
+\mathrm{K}(X,Y)=\operatorname{tr}(\mathrm{ad}_X\mathrm{ad}_Y)=2n\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y).
+$$</p>
+<p>It is the trace of the adjoint representation, that is, the trace form of a second carrier. Its radical is the centre, and on $\mathfrak{sl}_n$ it is $2n$ times the trace form.</p>
+<p><strong>The four forms of the biquaternion algebra are four half-traces.</strong> The four forms of <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em> are</p>
+<p>$$
+P(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2),\quad
+N(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2),\quad
+H(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*}),\quad
+\mathrm{Kr}(\tilde Q_1,\tilde Q_2)=\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*}).
+$$</p>
+<p>Each is one half of the trace of the corresponding product in the $2\times2$ carrier:</p>
+<p>$$
+P=\tfrac12\operatorname{Tr}(\tilde Q_1\tilde Q_2),\quad
+N=\tfrac12\operatorname{Tr}(\tilde Q_1^{\natural}\tilde Q_2),\quad
+H=\tfrac12\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*}),\quad
+\mathrm{Kr}=\tfrac12\operatorname{Tr}(\tilde Q_1^{\natural}\tilde Q_2^{*}).
+$$</p>
+<p>The four differ only in where the conjugation sits: in neither slot, in the first, in the second, in both. So the four forms are the four readings of one trace pairing, and the trace is the reason there are exactly four and not more.</p>
+<p><strong>The four algebraic norms are the diagonals.</strong> Read at equal arguments, the four forms give $\langle\tilde Q\rangle$, $\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q\rangle_{*}$ and $\langle\tilde Q\rangle_{\natural*}$, which are $P$, $N$, $H$ and $\mathrm{Kr}$. The quaternionic one is the determinant, $\langle\tilde Q\rangle_{\natural}=\det\mathsf{M}_2(\tilde Q)$; the Hermitian one is positive definite and its square root is the unique topological norm.</p>
+<p><strong>The trace gives none of the four norms by itself.</strong> $\operatorname{Tr}(\tilde Q)=2Q_t$ is complex and forgets the vector part. $P(\tilde Q)=\tfrac12\operatorname{Tr}(\tilde Q^2)$ is complex and vanishes on the plain-form null cone $Q_t^2=(\vec Q,\vec Q)$. $H(\tilde Q)=\tfrac12\operatorname{Tr}(\tilde Q\tilde Q^{*})$ is real and positive, and it is the square of the topological norm. So the trace is one functional, the form is one bilinear map, and the norm is one function of one argument. The three are related and none is the other.</p>
+<p><strong>The check.</strong> At $n=2$ the trace-form null vector has $\operatorname{tr}(X^2)=0$ exactly, and the trace form's Gram matrix has signature $(3,1)$. The biquaternion identities hold to $1.4\times10^{-14}$ on $100$ random pairs.</p>
+<h2 id="traceless-is-not-zero">Traceless Is Not Zero</h2>
+<p><strong>The kernel is a subspace.</strong> The traceless part of $M_n$ is $\mathfrak{sl}_n$, of dimension $n^2-1$. For $\mathbb{B}$ it is $\{Q_t=0\}$, of complex dimension $3$ and real dimension $6$. So <em>traceless</em> removes one complex number and leaves six real ones.</p>
+<p><strong>The physics uses the word in this sense.</strong> A <strong>traceless</strong> stress tensor has $T_\mu{}^\mu=0$, which is the classical statement of conformal invariance. A <strong>symmetric traceless</strong> quadrupole has $\mathcal{Q}_{ii}=0$, which removes the $l=0$ part and leaves the five components of $D^{(2)}$. A <strong>transverse traceless</strong> gravitational wave has both conditions, and those are the two polarisations. The <strong>traceless generators</strong> span $\mathfrak{sl}(2,\mathbb{C})$, the six-dimensional Lie algebra of the Lorentz group.</p>
+<p><strong>The traceless part can carry everything interesting.</strong> In linearized gravity the most obvious single-biquaternion packaging of $h_{\mu\nu}$ collapses to $h\,e_t$, the trace. It is blind to the traceless part, which is nine of the ten components and carries the two gravitational-wave polarisations. The computation is <em>Linearized Gravity in Biquaternionic Form</em>.</p>
+<p><strong>The commutator obstruction.</strong> A commutator is traceless, and $\operatorname{Tr}(e_t)=2$. So there is no pair $a,b\in\mathbb{B}$ with $[a,b]=e_t$. This is the algebraic reason the finite-dimensional algebra carries no bosonic mode, and it is the argument of <em>The Bell Inequality for Continuous Variables in Biquaternionic Form</em>. It is not a defect of the framework; it is the trace doing its job.</p>
+<p><strong>The rule.</strong> <em>Traceless</em> means <em>in the kernel of a named trace</em>. It never means zero, and it never means <em>has no scalar part</em> unless the scalar part is the trace of the carrier in use.</p>
+<h2 id="the-other-traces">The Other Traces</h2>
+<p>The corpus uses the word in seven further senses. Each is a matrix trace of a carrier, and each has a different domain.</p>
+<h3 id="the-operator-trace-on-a-hilbert-space">The Operator Trace on a Hilbert Space</h3>
+<p><strong>The trace is a sum over an orthonormal basis.</strong> For a positive operator $T$,</p>
+<p>$$
+\operatorname{Tr}T=\sum_k\langle e_k,Te_k\rangle,
+$$</p>
+<p>and the sum is independent of the basis when it converges. The operators for which it converges are the <strong>trace class</strong> $\mathcal{B}_1(\mathcal{H})$. The identity of $B(\mathcal{H})$ is not trace class, so the trace is not defined on the whole algebra. This is the infinite-dimensional caveat to the matrix statement.</p>
+<p><strong>The physics.</strong> A state is a positive trace-class operator with trace one. The thermal state is $\rho=\exp(-\beta H)/Z$ with $Z=\operatorname{Tr}\exp(-\beta H)$. A trace-one state is the normalisation that makes the Born weight a probability. The corpus uses this in <em>Quantum Thermodynamics in Biquaternionic Form</em>, <em>Curved Spacetime, KMS and Modular Flow</em> and <em>Quantum Physics Foundations and Structure</em>.</p>
+<p><strong>The defect.</strong> In infinite dimension the trace is not a linear functional on all operators, and it is not continuous in the operator norm. The correct statement is that the trace is a faithful normal semifinite trace on a von Neumann algebra, or a functional on the trace ideal. The article <em>Infinite-Dimensional Hermitian Operators and CAR</em> states this and replaces the trace by a state where the trace is not available.</p>
+<h3 id="the-partial-trace">The Partial Trace</h3>
+<p><strong>The partial trace reduces a tensor factor.</strong> For $T$ on $\mathcal{H}_1\otimes\mathcal{H}_2$,</p>
+<p>$$
+\operatorname{Tr}_2T=\sum_k(\mathrm{I}\otimes\langle f_k|)T(\mathrm{I}\otimes|f_k\rangle),
+$$</p>
+<p>with $\{f_k\}$ an orthonormal basis of $\mathcal{H}_2$. The result acts on $\mathcal{H}_1$. It is the unique map with $\operatorname{Tr}((\operatorname{Tr}_2T)A)=\operatorname{Tr}(T(A\otimes\mathrm{I}))$.</p>
+<p><strong>The physics.</strong> Entanglement, reduced states and the irreversible part of a quantum channel are read through $\operatorname{Tr}_2$. The corpus uses it in <em>Quantum Gates and Circuits in Biquaternionic Form</em>, <em>Quantum Channels and the Reversible–Irreversible Dichotomy</em> and <em>The Four Products: Composition, Probability, Causality and Gauge</em>.</p>
+<p><strong>The carrier.</strong> The carrier is the tensor square, and the factor of the partial trace is the dimension of the factor that is summed. It is not the dimension of the whole space.</p>
+<h3 id="the-character-of-a-representation">The Character of a Representation</h3>
+<p><strong>The character is the trace of the image.</strong> For a representation $\rho\colon G\to\mathrm{GL}(V)$,</p>
+<p>$$
+\chi_V(g)=\operatorname{Tr}\rho(g).
+$$</p>
+<p>It is a class function because the trace is conjugation invariant, it is additive on direct sums, and it is multiplicative on tensor products because $\operatorname{Tr}(A\otimes B)=\operatorname{Tr}A\operatorname{Tr}B$. The irreducible characters are orthonormal, and the regular representation has character $|G|\delta_{g,1}$.</p>
+<p><strong>The carrier.</strong> The carrier is $V$, and the factor is $\dim V$. The trace is what makes the representation theory a theory of numbers rather than of matrices, and <em>Representations of Groups</em> is where the corpus uses it.</p>
+<h3 id="the-reduced-trace">The Reduced Trace</h3>
+<p><strong>The reduced trace is the canonical one.</strong> For a central simple algebra of degree $n$, $\operatorname{Trd}(a)=\operatorname{tr}(a\otimes1)$ in a splitting field. It is independent of the splitting, it is additive, and it satisfies $\operatorname{Trd}(xy)=\operatorname{Trd}(yx)$. It is the trace the corpus means by $\operatorname{Tr}$ on an element of $\mathbb{B}$, and its value is $2Q_t$.</p>
+<p><strong>The semi-trace.</strong> In characteristic two the symmetric and antisymmetric parts coalesce, and the involution alone no longer classifies. The repair adds a linear functional $f$ on the symmetric part with $f(a+\sigma(a))=\operatorname{Trd}(a)$. This is the <strong>semi-trace</strong>, and the pair $(\sigma,f)$ is a quadratic pair. So the reduced trace is not only a reading of an element; it is a datum used to define another object. The construction is <em>Quadratic Pairs and Semi-Traces on an Algebra with Involution</em>.</p>
+<h3 id="the-field-trace">The Field Trace</h3>
+<p><strong>The field trace is the trace of multiplication.</strong> For a finite separable extension $L/k$ and $x\in L$, let $m_x\colon L\to L$ be multiplication by $x$. Then</p>
+<p>$$
+\operatorname{Tr}_{L/k}(x)=\operatorname{tr}(m_x),
+$$</p>
+<p>and the <strong>trace form</strong> of the extension is $\mathfrak{Q}(x,y)=\operatorname{Tr}_{L/k}(xy)$. The carrier is $L$ as a $k$-vector space, and the factor is $[L:k]$. The form is nondegenerate exactly when the extension is separable, and its multiplicative companion is the norm $N_{L/k}(x)=\det(m_x)$. This is <em>The Weil Restriction and the Trace Form</em>.</p>
+<p><strong>The two uses of the word <em>trace form</em>.</strong> The trace form of an algebra with an involution, $(x,y)\mapsto\operatorname{Trd}(xy)$, and the trace form of a field extension, $(x,y)\mapsto\operatorname{Tr}_{L/k}(xy)$, are different objects with the same name. The first is the trace of a product in a central simple algebra; the second is the trace of a product in a field extension. Both are $\operatorname{tr}(xy)$ in a carrier, and the carrier is what separates them.</p>
+<h3 id="the-tensor-contraction">The Tensor Contraction</h3>
+<p><strong>The trace of a tensor is a matrix trace after raising an index.</strong> For a rank-two tensor $T_{\mu\nu}$ the contraction is $T_\mu{}^\mu=g^{\mu\nu}T_{\mu\nu}$. Define the endomorphism $T^\mu{}_\nu=g^{\mu\rho}T_{\rho\nu}$; then</p>
+<p>$$
+T_\mu{}^\mu=\operatorname{tr}(T^\mu{}_\nu).
+$$</p>
+<p>So the <em>trace of a tensor</em> is the matrix trace of the associated endomorphism, and the carrier is the tangent space at a point. This is the reading behind $T_\mu{}^\mu=0$ for a conformal theory, behind the trace-reversed perturbation $\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12h\,g_{\mu\nu}$ of linearized gravity, and behind the traceless quadrupole.</p>
+<p><strong>The rule.</strong> A tensor trace needs a metric to raise the index. A matrix trace does not. The two agree only after the metric has been used, and the metric is a chosen datum.</p>
+<h3 id="the-gauge-trace">The Gauge Trace</h3>
+<p><strong>The trace on a gauge factor is representation-dependent.</strong> For a Lie algebra element $X=X^aT^a$ in a representation $R$,</p>
+<p>$$
+\operatorname{Tr}_R(T^aT^b)=T(R)\delta^{ab},
+$$</p>
+<p>with $T(R)$ the Dynkin index, equal to $\tfrac12$ for the fundamental of $\mathrm{SU}(2)$. The trace in the adjoint is the Killing form, up to normalization. So the value of $\operatorname{Tr}(F\wedge F)$ depends on the representation and on the normalization, and the topological charge is normalized by the index.</p>
+<p><strong>The corpus keeps this apart from the informational trace.</strong> <em>Instantons and Solitons in Biquaternionic Form</em> states explicitly that its $\operatorname{Tr}$ is the matrix trace on the $\mathrm{SU}(2)$ gauge factor, not the informational trace $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$. The two traces have different carriers and different factors, and the article says so.</p>
+<h2 id="three-places-where-the-distinction-decides-an-argument">Three Places Where the Distinction Decides an Argument</h2>
+<h3 id="the-trace-anomaly">The Trace Anomaly</h3>
+<p><strong>The anomaly is a statement about an operator trace.</strong> A classically Weyl-invariant theory has $T_\mu{}^\mu=0$. The regulated one-loop effective action produces a nonzero trace, and the coefficient is fixed by the heat-kernel coefficient $a_{d/2}$. The trace that computes it is the operator trace on the field space, not the informational trace on $\mathbb{B}$.</p>
+<p><strong>The corpus states the separation.</strong> <em>The Trace Anomaly in Biquaternionic Form</em> says that the algebra contributes the operator on which the determinant is taken and the trace that reads off the answer, and that the informational trace of the Hermitian sector is a different object. This is the clearest case in which using the wrong carrier would produce a wrong number, because the anomaly's coefficient counts the dimensions of the carrier and the informational trace counts something else.</p>
+<h3 id="the-classifier-of-a-frame">The Classifier of a Frame</h3>
+<p><strong>The trace classifies the conjugacy classes of $\mathrm{SL}(2,\mathbb{C})$.</strong> For $\tilde U$ of unit norm, $\tau=\operatorname{tr}\mathsf{M}_2(\tilde U)=2Q_t$ is a conjugacy invariant, and the four classes — elliptic, hyperbolic, parabolic and loxodromic — are the four positions of $\tau$ relative to the real line and the interval $[-2,2]$. The central elements $\pm e_t$ are the one patch the classifier needs. The determinant is fixed at one by the unit-norm condition, so the trace is the only continuous invariant.</p>
+<p><strong>Why it works.</strong> The trace is conjugation invariant, and the characteristic polynomial is $\lambda^2-\tau\lambda+1$. The classifier is a matrix trace in the $2\times2$ carrier, and its factor $2$ is what makes the interval $[-2,2]$ and not $[-1,1]$. The article <em>The Four Kinds of Frame Transformation</em> uses $\tau=2Q_t$ throughout.</p>
+<h3 id="the-vector-and-the-axial-traces">The Vector and the Axial Traces</h3>
+<p><strong>The real-linear embedding splits the trace.</strong> The algebra's complex trace is $4b_0$ in the regular carrier. The Dirac carrier is real-linear, and its matrix trace is $4\operatorname{Re}b_0$; the axial trace is $4i\operatorname{Im}b_0$; the sum is the regular trace. The odd sector has zero trace in both.</p>
+<p><strong>Why the pair is needed.</strong> The anomaly and the chiral statements need the vector and axial parts separately. Using the regular trace as if it were the axial trace adds $4\operatorname{Re}b_0$ to $4i\operatorname{Im}b_0$. The article <em>The Vector and the Axial Traces of $M_4(\mathbb{C})$</em> states the identity, the two coordinates that carry the pair, and the vanishing on the odd sector.</p>
+<p><strong>The sharpest illustration.</strong> For $b=i$, $\operatorname{Tr}_\Delta(i)=0$ and $\operatorname{Tr}_{\Delta,5}(i)=4i$, while $\operatorname{Tr}_{\mathrm{reg}}(i)=4i$. The vector trace does not see the central imaginary; the axial trace sees only it. A reader who assumes that the matrix trace is complex-linear in the Dirac carrier predicts $4i$ for the vector trace and gets the anomaly wrong.</p>
+<h2 id="the-rules">The Rules</h2>
+<p>The corpus is consistent when the following nine rules are kept. Each rule is a sentence that can be checked against an article.</p>
+<ol>
+<li><strong>Name the carrier.</strong> A trace is a trace of a matrix, an operator, a representation or a field extension. Write which one.</li>
+<li><strong>Write the factor.</strong> $1$ for a matrix, $2$ for the $2\times2$ image, $4$ for a $4\times4$ carrier, $\dim V$ for a representation, $[L:k]$ for a field extension, the product for a tensor product.</li>
+<li><strong>Do not use one symbol for two carriers in one article.</strong> If both are needed, subscript them, as $\operatorname{Tr}_\Delta$, $\operatorname{Tr}_{\Delta,5}$, $\operatorname{tr}L$, $\operatorname{Tr}_1$, $\operatorname{Tr}_2$ already do.</li>
+<li><strong>The trace is not a norm.</strong> $\operatorname{Tr}(\tilde Q)$ is complex; $\operatorname{tr}(X^2)$ is indefinite; only the Hermitian algebraic norm is positive, and only its square root is a topological norm.</li>
+<li><strong>The trace form is not the trace.</strong> $\operatorname{tr}(XY)$ is bilinear, $\operatorname{tr}X$ is linear. The first can be indefinite and can have null vectors.</li>
+<li><strong>Traceless is not zero.</strong> It is the kernel of a named trace, of codimension one.</li>
+<li><strong>A tensor trace needs a metric.</strong> $T_\mu{}^\mu$ is the matrix trace of $T^\mu{}_\nu$, and the index was raised with $g$.</li>
+<li><strong>In infinite dimension, the trace needs the trace class.</strong> The identity of $B(\mathcal{H})$ is not trace class, and the sum over a basis must converge.</li>
+<li><strong>The factor cancels in a ratio and stays in a normalisation.</strong> The Born weight is a ratio; the trace-one condition is not.</li>
+</ol>
+<p><strong>The strongest objection.</strong> A reader may say that these rules are obvious and that the corpus already follows them. The corpus does follow them, and the rules are not the contribution. The contribution is the inventory: the carriers, three linearity properties, the factors $1$, $2$, $4$ and $\dim V$, and four counterexamples that decide real arguments. An article that knows only <em>the trace</em> will still be right most of the time; it will be wrong at the anomaly, at the Dirac pair and at the frame classifier, and those are the places where the corpus's own results live.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace is a matrix notion, and every use of it in the corpus is the trace of a named carrier. The carriers are the $2\times2$ isomorphism, the $4\times4$ regular representation, the $4\times4$ real-linear Dirac embedding, a Hilbert space, a representation of a group, a central simple algebra, a field extension, a gauge factor and a tangent space. The factor in front of the scalar part is the dimension of the carrier: $2$ for the $2\times2$ image, $4$ for a $4\times4$ carrier, $\dim V$ for a representation, $[L:k]$ for a field extension, and the product for a tensor product.</p>
+<p>The trace is the sum of the eigenvalues, the first elementary symmetric function, the only invariant linear functional, the derivative of $\log\det$ at the identity, and the unique associative symmetric form up to scale. It forgets the traceless part, which is a subspace and not the origin. It is not positive, not multiplicative and not injective, and its kernel is where the Lie algebra lives.</p>
+<p>The trace form is a different object from the trace. It is bilinear, nondegenerate and indefinite, and up to a factor two it is the first of the four forms of the biquaternion algebra. The four forms are the four half-traces of the four products, and the four algebraic norms are their diagonals. The trace gives none of the norms by itself; the Hermitian norm is the only positive one, and its square root is the only topological norm.</p>
+<p>Three results turn on the carrier. The trace anomaly is an operator trace, not the informational trace. The classifier of a frame is $\tau=2Q_t$, a $2\times2$ trace. The Dirac module needs the vector and the axial traces separately, because its embedding is real-linear and its matrix trace is only the real part of the complex trace.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Carrier</th>
+<th>Value</th>
+<th>Factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}$</td>
+<td>an $n\times n$ matrix</td>
+<td>$\sum_iX_{ii}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}$</td>
+<td>the $2\times2$ image of $\mathbb{B}$</td>
+<td>$2Q_t$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}L$, $\operatorname{tr}R$</td>
+<td>the $4\times4$ regular representation</td>
+<td>$4Q_t$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}_\Delta$</td>
+<td>the $4\times4$ Dirac image</td>
+<td>$4\operatorname{Re}b_0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}_{\Delta,5}$</td>
+<td>the $4\times4$ Dirac image, axial</td>
+<td>$4i\operatorname{Im}b_0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}_{\mathrm{reg}}$</td>
+<td>the regular trace</td>
+<td>$4b_0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}_{L/k}$</td>
+<td>the field $L$ as a $k$-space</td>
+<td>$\operatorname{tr}(m_x)$</td>
+<td>$[L:k]$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}\rho$</td>
+<td>the representation $V$</td>
+<td>$\chi_V(g)$</td>
+<td>$\dim V$</td>
+</tr>
+<tr>
+<td>$\operatorname{Trd}$</td>
+<td>a splitting representation</td>
+<td>$\operatorname{tr}(a\otimes1)$</td>
+<td>$n$</td>
+</tr>
+<tr>
+<td>$\operatorname{Tr}_2$</td>
+<td>a tensor factor</td>
+<td>partial trace</td>
+<td>$\dim\mathcal{H}_2$</td>
+</tr>
+<tr>
+<td>$T_\mu{}^\mu$</td>
+<td>the endomorphism $T^\mu{}_\nu$</td>
+<td>$\operatorname{tr}(T^\mu{}_\nu)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(XY)$</td>
+<td>the trace form</td>
+<td>bilinear, indefinite</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Signature</a>. The Gram matrix, the signature $\bigl(n(n+1)/2,n(n-1)/2\bigr)$, the null vector and the Krein structure.</li>
+<li><a href="../articles_maths/the-two-halves-as-orthogonal-complements-for-the-trace-form.html">The Two Halves as Orthogonal Complements for the Trace Form</a>. The symmetric and antisymmetric halves as the positive and negative parts.</li>
+<li><a href="../articles_maths/the-element-rank-trace-determinant-characteristic-polynomial.html">The Element: Rank, Trace, Determinant, Characteristic Polynomial</a>. The trace as the only invariant linear functional, and its failure to determine the element.</li>
+<li><a href="../articles_maths/the-elementary-symmetric-functions-trace-and-determinant-in-dimension-two.html">The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two</a>. The invariant ring, Newton's identities and the Jacobian of the pair.</li>
+<li><a href="../articles_maths/the-four-forms-and-their-algebraic-norms-over-r.html">The Four Forms and Their Algebraic Norms over $\mathbb{R}$</a>. The trace form, the Hilbert–Schmidt form, the Killing form and the determinant side by side.</li>
+<li><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>. The letters $P$, $N$, $H$, $\mathrm{Kr}$ and the four norms.</li>
+<li><a href="../articles_maths/the-vector-and-the-axial-traces-of-m4c.html">The Vector and the Axial Traces of $M_4(\mathbb{C})$</a>. The real-linear embedding and the identity $\operatorname{Tr}_{\mathrm{reg}}=\operatorname{Tr}_\Delta+\operatorname{Tr}_{\Delta,5}$.</li>
+<li><a href="../articles_maths/families-of-matrix-representations.html">Families of Matrix Representations</a>. The regular trace $4Q_t$ and the trace pairing of the two families.</li>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a>. The $2\times2$ trace, the $4\times4$ trace and the factor between them.</li>
+<li><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>. The trace-one normalisation, the Born ratio and the domains of the three pairings.</li>
+<li><a href="../articles_maths/quadratic-pairs-and-semi-traces-on-an-algebra-with-involution.html">Quadratic Pairs and Semi-Traces on an Algebra with Involution</a>. The reduced trace as a datum, and the semi-trace in characteristic two.</li>
+<li><a href="../articles_maths/the-weil-restriction-and-the-trace-form.html">The Weil Restriction and the Trace Form</a>. The field trace, the trace form of an extension and the norm.</li>
+<li><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a>. The operator trace, the determinants and the separation from the informational trace.</li>
+<li><a href="../articles_physics/the-four-kinds-of-frame-transformation.html">The Four Kinds of Frame Transformation</a>. The classifier $\tau=2Q_t$ and the four conjugacy classes.</li>
+<li><a href="../articles_maths/infinite-dimensional-hermitian-operators-and-car-with-hermitian-adjoint.html">Infinite-Dimensional Hermitian Operators and CAR</a>. The trace class, the trace on $\mathcal{B}_1(\mathcal{H})$ and the replacement by a state.</li>
+<li><a href="../articles_maths/representations-of-groups.html">Representations of Groups</a>. The character as a trace and the orthogonality relations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -73,7 +73,7 @@
 <p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
 <p>The earlier exercises treated single measurements, time evolution, successive measurements, and entangled measurements of two spins. This exercise treats a complementary aspect of entanglement: the <strong>state of one subsystem</strong> when the joint system is in an entangled state. This introduces the <strong>reduced density matrix</strong>, and with it the concept of a <strong>mixed state</strong>.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$. Throughout, $\log$ denotes the natural logarithm.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. Single elements are read in the scalar part $\mathrm{Sc}$; the factor $2$ that the $2\times2$ image contributes appears explicitly in the partial trace below. The two-qubit state space is the tensor product $\mathbb{B}\otimes\mathbb{B}$, isomorphic to $M_4(\mathbb{C})$. Throughout, $\log$ denotes the natural logarithm.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>Two spin-$\tfrac{1}{2}$ particles are prepared in the <strong>singlet state</strong></p>
 <p>$$
@@ -130,7 +130,7 @@ $$</p>
 $$</p>
 <p>This is the <strong>maximally mixed state</strong> of a qubit. Its purity and von Neumann entropy are</p>
 <p>$$
-\mathrm{Tr}(\rho_1^2) = \frac{1}{2}, \qquad S(\rho_1) = -\mathrm{Tr}(\rho_1 \log \rho_1) = \log 2.
+2\,\mathrm{Sc}(\rho_1^2) = \frac{1}{2}, \qquad S(\rho_1) = -2\,\mathrm{Sc}(\rho_1 \log \rho_1) = \log 2.
 $$</p>
 <p>The reduced state is not pure: it is a mixed state, and it carries the maximum possible entropy for a qubit.</p>
 <h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
@@ -146,20 +146,20 @@ $$</p>
 $$</p>
 <p>The partial trace on $\mathbb{B}\otimes\mathbb{B}$ is defined on the elementary tensor products by</p>
 <p>$$
-\mathrm{Tr}_2(a\otimes b) = a \cdot \mathrm{Tr}_\mathbb{B}(b),
+\mathrm{Tr}_2(a\otimes b) = a \cdot 2\,\mathrm{Sc}(b),
 $$</p>
 <p>and extended by linearity.</p>
 <h3 id="step-3-the-computation_1">Step 3: The computation</h3>
 <p>We compute the partial trace term by term.</p>
 <p><strong>First term.</strong> $\frac{1}{4}e_t\otimes e_t$ contributes</p>
 <p>$$
-\mathrm{Tr}_2\!\left(\frac{1}{4}e_t\otimes e_t\right) = \frac{1}{4}e_t \cdot \mathrm{Tr}_\mathbb{B}(e_t) = \frac{1}{4}e_t \cdot 2 = \frac{1}{2}e_t.
+\mathrm{Tr}_2\!\left(\frac{1}{4}e_t\otimes e_t\right) = \frac{1}{4}e_t \cdot 2\,\mathrm{Sc}(e_t) = \frac{1}{4}e_t \cdot 2 = \frac{1}{2}e_t.
 $$</p>
 <p><strong>Remaining terms.</strong> For $k \in \{x,y,z\}$, the term $\frac{1}{4}\vec e_\eta\otimes \vec e_\eta$ contributes</p>
 <p>$$
-\mathrm{Tr}_2\!\left(\frac{1}{4}\vec e_\eta\otimes \vec e_\eta\right) = \frac{1}{4}\vec e_\eta \cdot \mathrm{Tr}_\mathbb{B}(\vec e_\eta) = \frac{1}{4}\vec e_\eta \cdot 0 = 0,
+\mathrm{Tr}_2\!\left(\frac{1}{4}\vec e_\eta\otimes \vec e_\eta\right) = \frac{1}{4}\vec e_\eta \cdot 2\,\mathrm{Sc}(\vec e_\eta) = \frac{1}{4}\vec e_\eta \cdot 0 = 0,
 $$</p>
-<p>since $\mathrm{Tr}_\mathbb{B}(\vec e_\eta) = 2\,\mathrm{Sc}(\vec e_\eta) = 0$ for the pure quaternion units.</p>
+<p>since $\mathrm{Sc}(\vec e_\eta) = 0$ for the pure quaternion units.</p>
 <p>Summing the contributions,</p>
 <p>$$
 \tilde{Ϛ}_{\Psi,1} = \frac{1}{2}e_t.
@@ -170,10 +170,10 @@ $$</p>
 $$</p>
 <p>This is the maximally mixed state of a qubit, expressed in biquaternion form. Its purity and von Neumann entropy are</p>
 <p>$$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}^2) = \mathrm{Tr}\!\left(\frac{1}{4}e_t\right) = \frac{1}{4}\cdot 2 = \frac{1}{2},
+2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2) = 2\,\mathrm{Sc}\!\left(\frac{1}{4}e_t\right) = 2\cdot\frac{1}{4} = \frac{1}{2},
 $$</p>
 <p>$$
-S(\tilde{Ϛ}_{\Psi,1}) = -\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1} \log \tilde{Ϛ}_{\Psi,1}) = -\mathrm{Tr}\!\left(\frac{1}{2}e_t \cdot \log\tfrac{1}{2}e_t\right) = -\log\tfrac{1}{2} \cdot \mathrm{Tr}\!\left(\frac{1}{2}e_t\right) = \log 2.
+S(\tilde{Ϛ}_{\Psi,1}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1} \log \tilde{Ϛ}_{\Psi,1}) = -2\,\mathrm{Sc}\!\left(\frac{1}{2}e_t \cdot \log\tfrac{1}{2}e_t\right) = -\log\tfrac{1}{2} \cdot 2\,\mathrm{Sc}\!\left(\frac{1}{2}e_t\right) = \log 2.
 $$</p>
 <p>The same values as in the standard formulation.</p>
 <h2 id="properties-of-the-reduced-state">Properties of the Reduced State</h2>
@@ -200,12 +200,12 @@ $$</p>
 $$</p>
 <p>with $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$. Computing the partial trace,</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{prod}}) = \tilde\Pi_1 \cdot \mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
+\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = \mathrm{Tr}_2(\tilde\Pi_{\mathrm{prod}}) = \tilde\Pi_1 \cdot 2\,\mathrm{Sc}(\tilde\Pi_1) = \tilde\Pi_1 \cdot 1 = \tilde\Pi_1,
 $$</p>
-<p>using $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = 1$ for an idempotent of trace one.</p>
+<p>using $2\,\mathrm{Sc}(\tilde\Pi_1) = 1$ for a normalised idempotent.</p>
 <p>So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_t + i\vec e_z)$, which is an idempotent with Bloch vector $\vec r = \vec e_z$ and purity $1$. The purity and entropy are</p>
 <p>$$
-\mathrm{Tr}((\tilde{Ϛ}_{\Psi,\mathrm{prod},1})^2) = 1, \qquad S(\tilde{Ϛ}_{\Psi,\mathrm{prod},1}) = 0.
+2\,\mathrm{Sc}((\tilde{Ϛ}_{\Psi,\mathrm{prod},1})^2) = 1, \qquad S(\tilde{Ϛ}_{\Psi,\mathrm{prod},1}) = 0.
 $$</p>
 <p>This is in sharp contrast with the singlet case.</p>
 <div class="table-scroll"><table>
@@ -234,11 +234,11 @@ $$</p>
 </table></div>
 <p>The contrast is the operational signature of entanglement: <strong>product states have pure reduced states; entangled states have mixed reduced states</strong>. The more entangled the joint state, the more mixed the reduced state.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
-<p><strong>1. The reduced state is obtained by a partial trace.</strong> The partial trace $\mathrm{Tr}_2$ is a linear map $\mathbb{B}\otimes\mathbb{B} \to \mathbb{B}$, defined on elementary tensors by $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$. This is the biquaternion form of the standard partial trace.</p>
-<p><strong>2. The reduced state of an entangled subsystem is mixed.</strong> The biquaternion framework represents pure states as idempotents of $\mathbb{B}_{\Psi}$ and mixed states as general positive trace-one elements. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.</p>
+<p><strong>1. The reduced state is obtained by a partial trace.</strong> The partial trace $\mathrm{Tr}_2$ is a linear map $\mathbb{B}\otimes\mathbb{B} \to \mathbb{B}$, defined on elementary tensors by $\mathrm{Tr}_2(a\otimes b) = a\cdot 2\,\mathrm{Sc}(b)$. This is the biquaternion form of the standard partial trace.</p>
+<p><strong>2. The reduced state of an entangled subsystem is mixed.</strong> The biquaternion framework represents pure states as idempotents of $\mathbb{B}_{\Psi}$ and mixed states as general positive elements of unit scalar part. The reduced state $\frac{1}{2} e_t$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.</p>
 <p><strong>3. The entanglement is encoded in the tensor-product structure.</strong> The singlet idempotent $\tilde\Pi_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $\vec e_\eta\otimes \vec e_\eta$ with $k \in \{x,y,z\}$, and none of the form $\vec e_\eta\otimes e_t$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_t\otimes e_t$ term survives, giving the maximally mixed reduced state. In a product state the terms $\vec e_\eta\otimes e_t$ are present, and they carry the pure reduced state.</p>
-<p><strong>4. The purity and entropy are natural functions on $\mathbb{B}_{\Psi}$.</strong> Both the purity $\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}^2)$ and the entropy $-\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,1})$ are expressed in terms of the trace on $\mathbb{B}$. The reduced state's mixedness is measured by these functions, and for the singlet the reduced state is maximally mixed.</p>
-<p><strong>5. The result agrees with the standard formulation.</strong> The two formulations give the same reduced state — $\rho_1 = \frac{1}{2} I$ in the standard formulation and $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2}e_t$ in the biquaternion formulation — the same purity $\frac{1}{2}$, and the same entropy $\log 2$. The biquaternion framework expresses these results through the algebra of $\mathbb{B}\otimes\mathbb{B}$ and the trace on $\mathbb{B}$.</p>
+<p><strong>4. The purity and entropy are natural functions on $\mathbb{B}_{\Psi}$.</strong> Both the purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2)$ and the entropy $-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,1})$ are expressed in terms of the scalar part on $\mathbb{B}$. The reduced state's mixedness is measured by these functions, and for the singlet the reduced state is maximally mixed.</p>
+<p><strong>5. The result agrees with the standard formulation.</strong> The two formulations give the same reduced state — $\rho_1 = \frac{1}{2} I$ in the standard formulation and $\tilde{Ϛ}_{\Psi,1} = \frac{1}{2}e_t$ in the biquaternion formulation — the same purity $\frac{1}{2}$, and the same entropy $\log 2$. The biquaternion framework expresses these results through the algebra of $\mathbb{B}\otimes\mathbb{B}$ and the scalar part on $\mathbb{B}$.</p>
 <h2 id="comparison-with-exercises-measuring-spin-along-an-arbitrary-direction-spin-precession-in-a-magnetic-field-successive-measurements-of-spin-and-two-spins-in-the-singlet-state">Comparison with Exercises: Measuring Spin Along an Arbitrary Direction, Spin Precession in a Magnetic Field, Successive Measurements of Spin and Two Spins in the Singlet State</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -339,7 +339,7 @@ $$</p>
 <td>Singlet idempotent</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$</td>
+<td>$\mathrm{Tr}_2(a\otimes b) = a\cdot 2\,\mathrm{Sc}(b)$</td>
 <td>Partial trace over the second factor</td>
 </tr>
 <tr>
@@ -351,11 +351,11 @@ $$</p>
 <td>Maximally mixed state of a qubit</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}^2)$</td>
+<td>$2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}^2)$</td>
 <td>Purity of the reduced state</td>
 </tr>
 <tr>
-<td>$S(\tilde{Ϛ}_{\Psi,1}) = -\mathrm{Tr}(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,1})$</td>
+<td>$S(\tilde{Ϛ}_{\Psi,1}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,1}\log\tilde{Ϛ}_{\Psi,1})$</td>
 <td>von Neumann entropy</td>
 </tr>
 <tr>

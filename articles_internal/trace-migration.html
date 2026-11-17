@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trace Migration: The Purge of the Informational Trace — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="trace-migration-the-purge-of-the-informational-trace"><strong>Trace Migration: The Purge of the Informational Trace</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The verdict.</strong> The physics corpus writes a trace symbol on a biquaternion $1\,498$ times, and the mathematics articles of Part VI that are not about matrices write it another $128$ times. Every one of those sites is the identity $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q$ wearing a symbol it does not need. The symbol goes. The scalar part with its factor stays.</p>
+<p><strong>The replacement is one line.</strong> For an element $\tilde Q$,
+$$
+\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q=2Q_t ,
+$$
+so the purge writes $2Q_t$ where it wrote $\operatorname{Tr}\tilde Q$, and $2\,\mathrm{Sc}(XY)$ where it wrote $\operatorname{Tr}(XY)$. The factor $2$ is not dropped; it is moved out of the symbol and into the formula, where the reader can see why it is there.</p>
+<p><strong>The rule.</strong> A trace symbol survives at a site only if the matrix it reads is written in the same formula, or if the carrier is not $\mathbb{B}$ at all. The test is local and mechanical, and §<em>The Criterion</em> states it in full.</p>
+<p><strong>The scale.</strong> The table gives the census at the state before the pass.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>files</th>
+<th>trace symbols</th>
+<th>of which on an element</th>
+<th>of which on a matrix or another carrier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>physics</td>
+<td>$609$</td>
+<td>$2\,465$ in $313$</td>
+<td>$1\,498$ in $252$</td>
+<td>$967$</td>
+</tr>
+<tr>
+<td>mathematics Part VI, system categories</td>
+<td>$595$</td>
+<td>$768$ in $96$</td>
+<td>$128$ in $42$</td>
+<td>$640$</td>
+</tr>
+<tr>
+<td>mathematics Part VI, matrix categories</td>
+<td>$352$</td>
+<td>$3\,148$ in $261$</td>
+<td>$0$</td>
+<td>$3\,148$</td>
+</tr>
+<tr>
+<td>mathematics outside Part VI</td>
+<td>$1\,515$</td>
+<td>$1\,190$ in $262$</td>
+<td>out of scope</td>
+<td>out of scope</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The exemptions are not a loophole.</strong> The seven matrix categories of Part VI hold $3\,148$ symbols and are about matrices by construction. The $22$ representation articles of the other categories — the files named <code>m2c-</code>, <code>m2r-</code>, <code>m4c-</code>, <code>m4r-</code> — hold $363$ more, and they are the heaviest files of the system categories. In both, the trace is the subject of the article and not a reading of a state.</p>
+<p><strong>This article is a decision and a plan.</strong> It edits nothing. Every count is the state of the corpus before the pass, and every rewrite is written out here so that the pass is a substitution with a short list of decisions rather than a reading of $2\,465$ sites.</p>
+<p><strong>What it does not claim.</strong> It does not claim that the trace is ill-defined. It does not claim that the reduced trace is not canonical. It does not claim that the articles are wrong about the mathematics; they are not. It claims that a symbol used on an element of $\mathbb{B}$ names a function that $\mathrm{Sc}$ already names, that the duplication costs the corpus $1\,626$ sites, and that the removal makes the five other traces visible for the first time.</p>
+<p><strong>The organisation.</strong> §<em>The Identity That Makes the Purge Possible</em> fixes the one identity and its three limits. §<em>The Three Numbers</em> states the factors. §<em>The Count</em> gives the census. §<em>The Criterion</em> states the local test. §<em>Why the Symbol Goes</em> gives the five reasons, with the corpus's own sentences as evidence. §<em>The Objection</em> names the four counter-arguments and answers them. §<em>The Senses</em> is the substitution table. §<em>The Survivors</em> lists the traces that stay. §<em>The Sites That Need Reading</em> names the eight places where a substitution produces a false sentence. §<em>The Strategy</em> gives the nine passes, from Pass $0$ to Pass $8$. §<em>The Cost</em> counts the work. §<em>The Check</em> gives the verification. §<em>Summary</em> closes.</p>
+<h2 id="the-identity-that-makes-the-purge-possible">The Identity That Makes the Purge Possible</h2>
+<p><strong>One identity covers every site in the two target groups.</strong> For all $X,Y\in\mathbb{B}$,
+$$
+\operatorname{tr}\bigl(\mathsf M_2(X)\mathsf M_2(Y)\bigr)=2\,\mathrm{Sc}(XY).
+$$
+Verified on $100$ random complex pairs: the residual is $0$ to machine precision on every pair.</p>
+<p><strong>It is a computation on the units.</strong> $\mathsf M_2$ is an algebra isomorphism onto $M_2(\mathbb{C})$, and $\operatorname{tr}$ is linear, so it is enough that $\operatorname{tr}\mathsf M_2(e_t)=2$ and $\operatorname{tr}\mathsf M_2(\vec e_\eta)=0$. The vector units are traceless; the unit is the identity matrix.</p>
+<p><strong>It reaches the states and the operators built from them.</strong> A state $\tilde{Ϛ}_\Psi$ is an element and $\log\tilde{Ϛ}_\Psi$ is an element, so
+$$
+\operatorname{Tr}\bigl(\tilde{Ϛ}_\Psi\log\tilde{Ϛ}_\Psi\bigr)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\log\tilde{Ϛ}_\Psi\bigr),
+$$
+and the same holds for $\tilde{Ϛ}^2$, for $\tilde\Pi\tilde H_\Psi^{*}$, for $\tilde\Xi^{*}\tilde\Xi$ and for every product the corpus writes. Residual $0$ on $100$ random pairs.</p>
+<p><strong>It reaches the algebra heat kernel.</strong> $\operatorname{Tr}\exp(-\beta\tilde H)=2\,\mathrm{Sc}\exp(-\beta\tilde H)$ in the $2\times2$ image, verified on $100$ Hermitian samples with residual $0$.</p>
+<p><strong>It does not reach a trace on a tensor factor.</strong> For $T$ on $\mathcal{H}_1\otimes\mathcal{H}_2$ the partial trace $\operatorname{Tr}_2T$ has no argument in $\mathbb{B}$; its argument is an operator on a tensor square. The identity says nothing about it, and the site stays.</p>
+<p><strong>It does not reach a trace on a gauge representation.</strong> $\operatorname{Tr}_R(T^aT^b)=T(R)\delta^{ab}$ counts the dimension of the representation. The factor is $T(R)$ and not $2$, and no scalar part of an element of $\mathbb{B}$ produces it.</p>
+<p><strong>It does not reach a trace on a field space.</strong> $\operatorname{Tr}\log S^{(2)}$ sums over the modes of a differential operator. The sum is infinite, it needs a regulator, and its value is the one-loop effective action. The identity says nothing.</p>
+<h2 id="the-three-numbers">The Three Numbers</h2>
+<p><strong>One, two and four.</strong> A matrix of size $n$ has $n$ entries on its diagonal, so its trace carries the factor $n$: $2$ in the $2\times2$ image and $4$ in the $4\times4$ regular representation. Both are dimensions of carriers and neither is a convention.</p>
+<p><strong>The factor two says what the algebra is.</strong> $\mathsf M_2(e_t)=\mathrm I_2$, so $\operatorname{Tr}e_t=2$. Written as $2Q_t$ the same fact appears in the coordinates the algebra already has, and no matrix is mentioned.</p>
+<p><strong>The factor four says which carrier is in use.</strong> $\operatorname{tr}L(\tilde Q)=4Q_t$, verified on $100$ random elements with residual $10^{-15}$. A sentence that writes $\operatorname{Tr}$ and reports $4Q_t$ has silently changed the carrier; a sentence that writes $2Q_t$ cannot.</p>
+<p><strong>The two carriers agree only through the factor.</strong> $2\cdot2=4$. That relation is the whole content of the phrase <em>the trace is representation-dependent</em>, and it is a relation between two numbers that the purge writes explicitly.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The physics families are disjoint.</strong> Each occurrence is placed in the first family it matches, in the order of the table, so the column sums to $2\,465$. The families marked <em>stay</em> are the survivors of §<em>The Survivors</em>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>sites</th>
+<th>files</th>
+<th>decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>state: $\operatorname{Tr}$ of $\tilde{Ϛ}$, $\tilde\Pi$, $\rho$, $\tilde\Xi$</td>
+<td>$816$</td>
+<td>$133$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>element: $\operatorname{Tr}$ of a product of $\tilde Q$</td>
+<td>$509$</td>
+<td>$172$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>residual: a plain symbol, read one by one</td>
+<td>$362$</td>
+<td>$143$</td>
+<td>read</td>
+</tr>
+<tr>
+<td>gauge or spinor: $T_a$, $\lambda_a$, $\gamma_\mu$, $F\wedge F$</td>
+<td>$245$</td>
+<td>$56$</td>
+<td>stay</td>
+</tr>
+<tr>
+<td>tensor factor: $\operatorname{Tr}_\mathbb{B}$</td>
+<td>$131$</td>
+<td>$15$</td>
+<td>stay</td>
+</tr>
+<tr>
+<td>unit: $\operatorname{Tr}(e_t)$, $\operatorname{Tr}(\vec e_\eta)$</td>
+<td>$112$</td>
+<td>$54$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>partial: $\operatorname{Tr}_1$, $\operatorname{Tr}_2$</td>
+<td>$106$</td>
+<td>$13$</td>
+<td>stay</td>
+</tr>
+<tr>
+<td>tensor law: $\operatorname{Tr}(x\otimes y)$</td>
+<td>$59$</td>
+<td>$19$</td>
+<td>stay</td>
+</tr>
+<tr>
+<td>bridge: $\operatorname{Tr}=2\,\mathrm{Sc}$</td>
+<td>$59$</td>
+<td>$40$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>field space: $S^{(2)}$, $U_\Box$</td>
+<td>$44$</td>
+<td>$8$</td>
+<td>stay</td>
+</tr>
+<tr>
+<td>gauge: $\operatorname{Tr}_R$</td>
+<td>$20$</td>
+<td>$5$</td>
+<td>stay</td>
+</tr>
+<tr>
+<td>definition: $\operatorname{Tr}:= $</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$2\,465$</td>
+<td>$313$</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three fifths of the physics sites are the informational trace.</strong> The four <em>replace</em> families of the state, the element, the unit and the bridge hold $1\,496$ sites, and the definition line adds $2$. The survivors hold $605$.</p>
+<p><strong>The Part VI families are the same shape and a different proportion.</strong> In the $573$ system articles that are not about matrices, the trace stands $405$ times in $74$ files.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>sites</th>
+<th>files</th>
+<th>decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>residual: a plain symbol, read one by one</td>
+<td>$273$</td>
+<td>$48$</td>
+<td>read</td>
+</tr>
+<tr>
+<td>element</td>
+<td>$100$</td>
+<td>$37$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>state</td>
+<td>$14$</td>
+<td>$5$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>$7$</td>
+<td>$5$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>bridge</td>
+<td>$7$</td>
+<td>$4$</td>
+<td>replace</td>
+</tr>
+<tr>
+<td>gauge or spinor</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>stay</td>
+</tr>
+<tr>
+<td>partial</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>stay</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$405$</td>
+<td>$74$</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two thirds of the Part VI sites are already written on a matrix.</strong> The residual holds $273$ of the $405$, and most of it is $\operatorname{tr}(M)$, $\operatorname{tr}(U_1U_2)$, $\operatorname{tr}(\mathrm{ad}_X\mathrm{ad}_Y)$ and $\operatorname{tr}\mathsf M_2(\tilde Q)$, which the criterion keeps. So the mathematics corpus is nearly clean already, and the purge is a physics problem.</p>
+<p><strong>The distribution is flat.</strong> The median physics file carries $4$ sites, and $101$ files carry one or two. The $31$ heaviest files carry $914$ sites, which is $37$ per cent of the physics total. No file needs a rewrite; the heaviest needs $48$ substitutions.</p>
+<p><strong>The heaviest physics files are the entanglement files.</strong> <em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em> carries $48$, <em>Exercise: Entanglement Entropy and the Partial Trace</em> $43$, <em>Exercise: The Reduced State of an Entangled Subsystem</em> $41$, <em>States, Observables and the Born Weight</em> $40$. The first three are also the files where the partial trace is used, so they carry both the sites that go and the sites that stay, and they are the files where the two must be kept apart.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p><strong>The test is local.</strong> Look at the argument of the symbol. If it is $\mathsf M_2(\cdot)$, $L$, $R$, $\mathrm{ad}$, $T_a$, $\lambda_a$, $\gamma_\mu$, $\Gamma_\mu$, $S^{(2)}$, $U_\Box$, or a matrix letter declared as one in the same article, the symbol stays. If it is an element of $\mathbb{B}$ — $\tilde Q$, $\tilde{Ϛ}_\Psi$, $\tilde\Pi$, $\tilde\Xi$, $\tilde X$ — the symbol goes and the argument becomes $2$ times its scalar part.</p>
+<p><strong>The second test is the article's working object.</strong> An article that works inside $\mathbb{B}^{\otimes n}\cong M_{2^n}$ has matrix arguments already: its states are $x\otimes y$, its trace is $\mathrm{Tr}(x\otimes y)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)$, and its Bell idempotents are orthonormal with respect to that pairing. The rewrite is available there too, and it is $\mathrm{Tr}(x\otimes y)=4\,\mathrm{Sc}(x)\mathrm{Sc}(y)$ or $2^n\,\mathrm{Sc}$, but no article wants to read $2^n\,\mathrm{Sc}$ in every line of a stabiliser computation. So the trace on a tensor power stays, and the test is not the argument alone but the argument together with the space the article computes in.</p>
+<p><strong>The family counts were computed by argument pattern, and the second test moves them.</strong> The states family was counted at $816$ sites by looking for $\tilde{Ϛ}$, $\tilde\Pi$ and $\rho$ in the argument. On the eleven files read here, $353$ sites were opened and $219$ were replaced: a little under two in three. The five tensor-power files supply most of the survivors, and they are the largest files in the family. The purge is therefore smaller than the family count and better targeted: what goes is the reading of a single algebra element, and what stays is the trace of a matrix that the article names.</p>
+<p><strong>Why the test is not the article title.</strong> A title is a coarse proxy. <em>The Bell Basis</em> is not about matrices, and it uses the partial trace, which stays. <em>The Element, the Coordinates and the Trace of $M_3(\mathbb{C})$</em> is about matrices, and every site in it stays. So the title decides the wholesale exemptions and the argument decides the individual sites.</p>
+<p><strong>What "about matrices" exempts in Part VI.</strong> The seven categories <em>The Matrix Algebras $M_n(\mathbb{R})$</em>, <em>The Matrix Algebras $M_n(\mathbb{C})$</em>, <em>$M_2(\mathbb{C})$</em>, <em>$M_3(\mathbb{C})$</em>, <em>$M_4(\mathbb{C})$</em>, <em>$M_5(\mathbb{C})$</em> and <em>$M_6(\mathbb{C})$</em> hold $352$ files and $3\,148$ symbols, and they are the only place where the trace is the subject. The $22$ representation articles of the system categories hold $363$ more, and their titles name the matrix: <em>The $M_2(\mathbb{C})$ Pauli Representation</em>, <em>The $M_4(\mathbb{R})$ Left and Right Regular Representation</em>, and their siblings.</p>
+<p><strong>What "about matrices" exempts in physics.</strong> Six files carry <em>matrix</em> in the title and $45$ symbols between them, of which <em>Matrix Representations Conventions</em> carries $34$. That article is the one place in physics where the bridge $\operatorname{Tr}=\mathrm{tr}\circ\mathsf M_2$ is stated and used, and it stays as it is.</p>
+<p><strong>The exempt groups are stated in one sentence each.</strong> The pass records them here so that a later reader does not reopen the question. A trace on a matrix is a matrix fact, and a matrix fact belongs in an article about matrices.</p>
+<h2 id="why-the-symbol-goes">Why the Symbol Goes</h2>
+<p><strong>First, the symbol names a function the sentence already has.</strong> $\operatorname{Tr}\tilde Q$ is $2Q_t$, and $Q_t$ is written in the same sentence in every one of the $509$ element sites. The symbol adds a factor and a word, and the word carries no information the coordinates do not.</p>
+<p><strong>Second, the symbol imports a representation into a statement that has none.</strong> The corpus says this itself, in <em>Quantum Thermodynamics in Biquaternionic Form</em>: "The trace is twice the scalar part in the $2\times2$ image. This is not a convenience of notation, but it is also not an intrinsic operation on the biquaternion algebra: $\mathrm{Sc}$ is defined on $\mathbb{B}$, while $\mathrm{Tr}=\mathrm{tr}\circ\mathsf{M}_2$ requires the representation."</p>
+<p>A sentence that opens with the trace and closes with $Q_t$ has crossed the representation twice, and the reader is left holding a matrix that was never needed.</p>
+<p><strong>Third, the symbol hides the factor, and the factor is the content.</strong> The normalisation is $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$, not $\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$. Written with the symbol, $\operatorname{Tr}\tilde{Ϛ}_\Psi=1$ looks like a statement about a state; written out, it is a statement about the coefficient $\tfrac12$. The two differ by the degree of the algebra, and that is exactly the number a reader of the Born rule needs.</p>
+<p><strong>Fourth, the symbol destroys the search.</strong> A word used for six objects cannot be counted. After the pass, <code>\operatorname{Tr}\tilde</code> returns zero in the physics articles and in the Part VI system articles, and every remaining occurrence has a matrix or another carrier in its argument. The purge is what makes the surviving $605$ sites findable.</p>
+<p><strong>Fifth, the corpus already asserts the conclusion in three sentences.</strong> <em>POVMs and the Positive Cone</em> writes <em>the trace is read last, at normalisation</em>. <em>Quantum Physics in Biquaternionic Form</em> writes <em>every formula above is complete without a trace</em>. <em>AI Physics Review</em> writes of the trace that it is <em>a representation-specific reading, not an operation intrinsic to $\mathbb{B}$</em>. Three articles state that the symbol is a reading and not an object. The pass makes the corpus act on the three sentences.</p>
+<h2 id="the-objection">The Objection</h2>
+<p><strong>First objection: the trace is canonical and the scalar part is a coordinate.</strong> This is the serious one. The reduced trace $\operatorname{Trd}(a)=\operatorname{tr}(a\otimes1)$ is independent of the splitting field and of every basis, while $Q_t$ is one coefficient in one basis.</p>
+<p><strong>The answer is that both are the same functional, and the theorem keeps its statement.</strong> The reduced trace of $\tilde Q$ is $2Q_t$: the canonical functional is computed by the coordinate, and the coordinate is what the canonical functional returns. So the theorem is not lost. It is stated once, in the algebra where the reduced trace is defined, as
+$$
+\operatorname{Trd}\tilde Q=2Q_t ,
+$$
+and everywhere else the number is written and the symbol is not. Canonicity is an argument for the number, not for the letter.</p>
+<p><strong>Second objection: the reader of quantum information expects $\operatorname{Tr}$.</strong> A reader who meets $\operatorname{Tr}$ expects a Hilbert space, a basis and a trace class. On $\mathbb{B}$ there is no Hilbert space to trace over: there is an element and its coefficients. The expectation is the defect, not the remedy. One definition sentence at the head of the sector, $\mathrm{Sc}\tilde Q=Q_t$, and every formula in the corpus becomes shorter than the one it replaced.</p>
+<p><strong>Third objection: $1\,626$ sites is a large risk.</strong> The risk is bounded by the fact that the substitution is per family and each family is one identity. The seven families of §<em>The Senses</em> are seven substitutions, and the eight traps of §<em>The Sites That Need Reading</em> are the complete list of places where the substitution changes the formula and not only the symbol. The verification is a grep and a build.</p>
+<p><strong>Fourth objection: the purge removes the only linear functional the algebra has.</strong> The algebra keeps its linear functional: it is $\mathrm{Sc}$, which is $\tfrac12\operatorname{Trd}$. What the purge removes is the second name for it. The trace form $\operatorname{tr}(XY)$ stays, because a form is not a functional and $2\,\mathrm{Sc}(XY)$ is a form only after one has decided which product is meant.</p>
+<h2 id="the-senses">The Senses</h2>
+<p><strong>Twelve substitutions cover the corpus.</strong> The table gives each family with a site from the corpus, the rewrite, and the factor that the rewrite must carry.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>site</th>
+<th>the corpus writes</th>
+<th>the pass writes</th>
+<th>factor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>definition</td>
+<td>$\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\tilde Q=2Q_t$</td>
+<td>$\mathrm{Sc}\tilde Q=Q_t$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>product</td>
+<td>$\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
+<td>$2\langle\tilde Q_1,\tilde Q_2\rangle_{*}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>$\operatorname{Tr}(e_t)=2$</td>
+<td>$\mathrm{Sc}(e_t)=1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>normalisation</td>
+<td>$\operatorname{Tr}(\tilde{Ϛ}_\Psi)=1$</td>
+<td>$\mathrm{Sc}(\tilde{Ϛ}_\Psi)=\tfrac12$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>Born ratio</td>
+<td>$p=\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})/\operatorname{Tr}(\tilde{Ϛ})$</td>
+<td>$p=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})/\mathrm{Sc}(\tilde{Ϛ})$</td>
+<td>cancels</td>
+</tr>
+<tr>
+<td>purity</td>
+<td>$P=\operatorname{Tr}(\tilde{Ϛ}^{2})$</td>
+<td>$P=2\,\mathrm{Sc}(\tilde{Ϛ}^{2})$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>entropy</td>
+<td>$S=-\operatorname{Tr}(\tilde{Ϛ}\log\tilde{Ϛ})$</td>
+<td>$S=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>variance</td>
+<td>$\operatorname{Tr}(\tilde{Ϛ}\tilde H^{2})-\bigl(\operatorname{Tr}(\tilde{Ϛ}\tilde H)\bigr)^{2}$</td>
+<td>$2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{2})-4\bigl(\mathrm{Sc}(\tilde{Ϛ}\tilde H)\bigr)^{2}$</td>
+<td>$2$ and $4$</td>
+</tr>
+<tr>
+<td>linear entropy</td>
+<td>$1-\operatorname{Tr}(\tilde{Ϛ}^{2})$</td>
+<td>$2\,\mathrm{Sc}(\tilde{Ϛ}-\tilde{Ϛ}^{2})$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>commutator</td>
+<td>$0=\operatorname{Tr}([a,b])=c\operatorname{Tr}(e_t)=2c$</td>
+<td>$0=\mathrm{Sc}([a,b])=c$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>eigenvalues</td>
+<td>$\lambda_++\lambda_-=\operatorname{Tr}\tilde Q$</td>
+<td>$\lambda_++\lambda_-=2Q_t$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>invariance</td>
+<td>$\operatorname{Tr}(\tilde U\tilde X\tilde U^{*})=\operatorname{Tr}\tilde X$</td>
+<td>$\mathrm{Sc}(\tilde U\tilde X\tilde U^{*})=\mathrm{Sc}\tilde X$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three rows lose the factor, eight keep it and one doubles it.</strong> The Born ratio loses it because both sides carry it. The commutator and the invariance lose it because the identity that proves them is the cyclicity of $\mathrm{Sc}$, which has no factor. The variance gains a $4$ because the squared term squares the factor.</p>
+<p><strong>No row grows except the variance.</strong> The commutator and the Born ratio each lose a symbol and gain nothing. The variance gains a $4$, and it is the one row that a substitution cannot produce: it is the first entry of §<em>The Sites That Need Reading</em>.</p>
+<h2 id="the-survivors">The Survivors</h2>
+<p><strong>Five families of traces stay, and each has a reason that no rewrite can supply.</strong></p>
+<h3 id="the-partial-trace-and-the-tensor-factor">The Partial Trace and the Tensor Factor</h3>
+<p><strong>The carrier is a tensor factor.</strong> $\operatorname{Tr}_2$ acts on $\mathcal{H}_1\otimes\mathcal{H}_2$ and returns an operator on $\mathcal{H}_1$. The corpus uses it $106$ times, all of them in the entanglement files, and it writes $\operatorname{Tr}_\mathbb{B}$ for the factor trace $131$ times more. With the tensor law $\operatorname{Tr}(x\otimes y)=\operatorname{Tr}(x)\operatorname{Tr}(y)$ at $59$ sites, the family is $296$ sites.</p>
+<p><strong>The factor is the dimension of the factor that is summed.</strong> It is not $2$ and it is not $4$; it is $\dim\mathcal{H}_2$ in the formula and $\dim V$ in a representation. A rewrite to a scalar part would have to guess which factor is summed, and there is no scalar part on a tensor product.</p>
+<p><strong>The label is required.</strong> Every surviving site names the factor in the same sentence: the second factor, the algebra factor, the first factor. A bare $\operatorname{Tr}$ in these files is the defect that the pass repairs.</p>
+<h3 id="the-gauge-trace">The Gauge Trace</h3>
+<p><strong>The carrier is the representation.</strong> $\operatorname{Tr}_R(T^aT^b)=T(R)\delta^{ab}$ and $\operatorname{Tr}(F\wedge F)$ count the dimension of a gauge factor, and the anomaly coefficients are linear in those dimensions. The family is $265$ sites in physics.</p>
+<p><strong>The factor is the Dynkin index.</strong> It is $\tfrac12$ for the fundamental of $\mathrm{SU}(2)$ and it is not $2$. <em>Anomalies and Anomaly Cancellation</em> says explicitly that its trace is the matrix trace on the gauge factor and not the informational trace, and the pass keeps that sentence and every site it governs.</p>
+<p><strong>The label is required.</strong> Every surviving site writes $\operatorname{Tr}_R$ or names the representation. A gauge trace without a representation is a number with no meaning.</p>
+<h3 id="the-field-space-trace">The Field-Space Trace</h3>
+<p><strong>The carrier is the field space.</strong> $\operatorname{Tr}\log S^{(2)}$ and the lattice traces $\operatorname{Tr}U_\Box$, $\operatorname{Tr}T^{N_t}$ sum over modes of a differential or transfer operator. The family is $44$ sites in $8$ files.</p>
+<p><strong>The factor is the number of modes, and it is infinite.</strong> The trace needs a regulator, and its value is the one-loop effective action. <em>The Effective Potential and the Coleman–Weinberg Mechanism</em> is where the corpus uses it, and <em>The Trace Anomaly in Biquaternionic Form</em> is where the corpus says that this trace is not the informational one.</p>
+<h3 id="the-metric-contraction">The Metric Contraction</h3>
+<p><strong>The carrier is the tangent space.</strong> $T_\mu{}^\mu=g^{\mu\nu}T_{\mu\nu}$ is the matrix trace of $T^\mu{}_\nu$, and <em>traceless</em>, <em>trace-reversed</em> and <em>trace anomaly</em> are the words for it. The word family stands $608$ times in the physics corpus.</p>
+<p><strong>The factor is the spacetime dimension.</strong> The trace reversal $\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12h\,g_{\mu\nu}$ carries $\tfrac12=1/n$ at $n=4$. That $\tfrac12$ is not the algebra's $\tfrac12$ and the pass must not read it as one.</p>
+<p><strong>The words stay and the contraction is written.</strong> The pass does not rewrite <em>traceless stress tensor</em> or <em>trace anomaly</em>, because those are the names of physical objects. It rewrites only the sentences that use the word for the algebra trace.</p>
+<h3 id="the-matrix-visible-trace">The Matrix-Visible Trace</h3>
+<p><strong>The argument is a matrix.</strong> $\operatorname{tr}\mathsf M_2(\tilde Q)$, $\operatorname{tr}L(\tilde Q)$, $\operatorname{tr}(\mathrm{ad}_X\mathrm{ad}_Y)$, $\operatorname{tr}(\gamma_\mu\gamma_\nu)=4\eta_{\mu\nu}$, $\operatorname{tr}(T_aT_b)$. The family is the residual of §<em>The Count</em> and the whole of the two exempt groups.</p>
+<p><strong>The factor is the size of that matrix.</strong> $2$ for $\mathsf M_2$, $4$ for $L$ and for the gamma matrices, $n$ for $\mathrm{ad}$ on $\mathfrak{gl}_n$. The reader sees the matrix and the factor together, and no rewrite is needed.</p>
+<p><strong>The rule for the survivors is one sentence.</strong> A surviving trace names its carrier in the same sentence, and the carrier is a noun with a size.</p>
+<h2 id="the-sites-that-need-reading">The Sites That Need Reading</h2>
+<p><strong>The substitution is mechanical except at eight places.</strong> Each place is a sentence where replacing the symbol by $2\,\mathrm{Sc}$ changes the formula and not only the letter.</p>
+<p><strong>1. The variance.</strong> $\operatorname{Var}=\operatorname{Tr}(\tilde{Ϛ}\tilde H^{2})-\bigl(\operatorname{Tr}(\tilde{Ϛ}\tilde H)\bigr)^{2}$ becomes $2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{2})-4\bigl(\mathrm{Sc}(\tilde{Ϛ}\tilde H)\bigr)^{2}$, and not $2\,\mathrm{Sc}(\dots)-2(\dots)^{2}$. Verified on $100$ random states and observables: residual $1.8\times10^{-15}$. The site is <em>Quantum Thermodynamics in Biquaternionic Form</em>, line $102$.</p>
+<p><strong>2. The entropy.</strong> $S=-\operatorname{Tr}(\tilde{Ϛ}\log\tilde{Ϛ})$ keeps its factor and becomes $S=-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$. Dropping the $2$ halves the entropy and breaks the agreement with $-\sum_i\lambda_i\log\lambda_i$. Verified on $100$ random states: residual $6.7\times10^{-16}$. The sites are <em>Von Neumann Entropy and the Biquaternion Norm</em>, line $168$, and <em>States, Observables and the Born Weight</em>.</p>
+<p><strong>3. The Born ratio.</strong> $p=\operatorname{Tr}(\tilde{Ϛ}\tilde H^{*})/\operatorname{Tr}(\tilde{Ϛ})$ becomes $p=\mathrm{Sc}(\tilde{Ϛ}\tilde H^{*})/\mathrm{Sc}(\tilde{Ϛ})$, and inserting the $2$ in one of the two is the error. The site is <em>States, Observables and the Born Weight</em>, line $24$, and <em>Norm and Pairing Conventions</em> names the pair of opposite mistakes.</p>
+<p><strong>4. The commutator.</strong> $0=\operatorname{Tr}([a,b])=c\operatorname{Tr}(e_t)=2c$ becomes $0=\mathrm{Sc}([a,b])=c$, and the conclusion $c=0$ is unchanged. The rewrite is shorter by one step, because the vanishing of the scalar part of a commutator is the primitive fact and the vanishing of the trace is its image. Verified on $100$ random pairs: $\mathrm{Sc}([a,b])=0$ with residual $10^{-15}$. The sites are <em>Canonical Quantization of the Biquaternion Klein–Gordon Field</em> and <em>Fock Space and Creation/Annihilation Operators</em>.</p>
+<p><strong>5. The linear entropy.</strong> $1-\operatorname{Tr}(\tilde{Ϛ}^{2})$ becomes $2\,\mathrm{Sc}(\tilde{Ϛ}-\tilde{Ϛ}^{2})$, and not $2-2\,\mathrm{Sc}(\tilde{Ϛ}^{2})$. The $1$ is $\operatorname{Tr}\tilde{Ϛ}$ and not $\operatorname{Tr}(e_t)$: the first is the normalisation of the state and the second is the dimension. The two agree numerically at a state, which is what makes the error easy. The site is <em>States, Observables and the Born Weight</em>, line $308$.</p>
+<p><strong>6. The trace reversal.</strong> $\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12h\,g_{\mu\nu}$ involves $\tfrac12=1/n$ at $n=4$, and $h$ is $T_\mu{}^\mu$ with the metric. Nothing in this formula is the algebra's $\operatorname{Tr}$. A pass that reads <em>trace</em> as one object will try to replace the $\tfrac12$ by a $2$, and it will be wrong by a factor of four. The site is <em>Linearized Gravity in Biquaternionic Form</em>.</p>
+<p><strong>7. Traceless is usually a tensor statement and sometimes an element statement.</strong> <em>Traceless</em> in most of the physics corpus means $T_\mu{}^\mu=0$ for a symmetric tensor, $Q_{ii}=0$ for a quadrupole, or $h=0$ for the transverse-traceless wave, and the word stays with its equation. In the fluid articles it means that the scalar part of an element vanishes: <em>The Charged Spin-One Fluid</em> wrote that the field-strength part is traceless, and the rewrite is <em>has no scalar part</em>. The two senses are told apart by the carrier, not by the word.</p>
+<p><strong>8. The definition line.</strong> $\operatorname{Tr}:=\operatorname{tr}\circ\mathsf M_2$ stands in <em>AI Physics Review</em>, line $138$, and $\operatorname{Tr}(\tilde Q):=\operatorname{Tr}\mathsf M_2(\tilde Q)$ in <em>Matrix Representations Conventions</em>, line $1006$. The review restates the first at line $233$. The three lines stay, because their right-hand side is a matrix trace and because they define the bridge, and every other bridge line is deleted. A pass that deletes them all removes the definition of a symbol it still uses in the survivors.</p>
+<p><strong>The eight are the complete list.</strong> Each was read in place, and each has a site and a line. The pass does not substitute before reading these eight.</p>
+<h2 id="the-word-is-the-other-half">The Word Is the Other Half</h2>
+<p><strong>The symbol is the smaller half of the migration.</strong> The $264$ physics files that carry $\operatorname{Tr}$ carry the word <em>trace</em> $3\,230$ times, against $2\,465$ symbols. The word outnumbers the symbol, and the bridge line is what defined it.</p>
+<p><strong>Deleting the bridge line deletes the definition of the word.</strong> Once $\mathrm{Tr}=2\,\mathrm{Sc}$ is gone from a conventions preamble, a later sentence that says <em>the trace of the equation</em> names a symbol the article no longer has. The word is therefore renamed in the same pass and in the same paragraph as its symbol, and the sentence is rewritten, not the number.</p>
+<p><strong>Two sentences from the corpus show the two halves.</strong> <em>The Charged Spin-One Fluid</em> wrote that the trace of the coupled equation forces the covariant Lorenz condition; the rewrite is the scalar part of the coupled equation. The same file wrote that the field-strength part is traceless; the rewrite is that it has no scalar part. Neither rewrite touches a number.</p>
+<p><strong>The rule is one sentence.</strong> A use of <em>trace</em> that means $\mathrm{Sc}$ becomes <em>scalar part</em>; a use that names a matrix, a tensor contraction, a partial trace, a trace anomaly or a trace reversal keeps the word and gains its carrier.</p>
+<p><strong>The survivor words are counted, in the $264$ files.</strong> <em>traceless</em> $336$, <em>traces</em> $122$, <em>trace-preserving</em> $62$, <em>trace-one</em> $48$, <em>traced</em> $25$, <em>tracelessness</em> $23$, <em>trace-reversal</em> $20$, <em>trace-reversed</em> $16$, <em>trace-free</em> $15$. Most of the $336$ are tensor statements and stay. The $48$ uses of <em>trace-one</em> are the normalisation of a state, and they are the largest single rename: <em>unit scalar part</em>.</p>
+<p><strong>The rename is the reason the passes are file by file.</strong> A symbol can be substituted by a pattern; a word cannot, because the same word carries the surviving senses in the same file. This is the cost of §<em>The Cost</em>, and it is larger than the symbol count suggests.</p>
+<h2 id="the-record">The Record</h2>
+<p><strong>Twelve files are migrated, and the two tests of §<em>The Criterion</em> decided every site.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>before</th>
+<th>after</th>
+<th>what stayed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</em></td>
+<td>$48$</td>
+<td>$46$</td>
+<td>the tensor trace and the factor traces</td>
+</tr>
+<tr>
+<td><em>Exercise: The Reduced State of an Entangled Subsystem</em></td>
+<td>$41$</td>
+<td>$20$</td>
+<td>the partial trace $\mathrm{Tr}_2$, and the matrix trace of the standard step</td>
+</tr>
+<tr>
+<td><em>States, Observables and the Born Weight</em></td>
+<td>$39$</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>Strong Subadditivity</em></td>
+<td>$38$</td>
+<td>$35$</td>
+<td>the tensor trace and the partial traces</td>
+</tr>
+<tr>
+<td><em>Quantum Physics in Biquaternionic Form</em></td>
+<td>$35$</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>The Hermitian GNS Construction</em></td>
+<td>$30$</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>Entanglement Entropy and the Replica Trick</em></td>
+<td>$28$</td>
+<td>$9$</td>
+<td>the partial trace and the replica moments</td>
+</tr>
+<tr>
+<td><em>Quantum Thermodynamics in Biquaternionic Form</em></td>
+<td>$26$</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>Quantum Teleportation</em></td>
+<td>$25$</td>
+<td>$23$</td>
+<td>the trace on $\mathbb{B}^{\otimes3}$</td>
+</tr>
+<tr>
+<td><em>The Modular Hamiltonian and the First Law</em></td>
+<td>$24$</td>
+<td>$1$</td>
+<td>one partial trace</td>
+</tr>
+<tr>
+<td><em>No-Cloning and the Algebraic Obstruction</em></td>
+<td>$19$</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td><em>The Charged Spin-One Fluid</em></td>
+<td>$1$</td>
+<td>$0$</td>
+<td>nothing</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Twelve files, $354$ sites, $220$ replaced and $134$ kept.</strong> Every file kept its line count, its heading count and its table-row count, and the build produced its tables.</p>
+<p><strong>Seven files are single-element articles, and the symbol left all of them.</strong> In these the state, the observable, the effect and the projector are elements of $\mathbb{B}_\Psi$, every product is read in $\mathrm{Sc}$, and the only trace left is the partial trace, which is a map and not a reading.</p>
+<p><strong>Five files are tensor-power articles, and the symbol stayed in them almost everywhere.</strong> <em>The Bell Basis</em> keeps $46$ of $48$: its states are elements of $\mathbb{B}\otimes\mathbb{B}$, and its story is the orthonormality of four idempotents with respect to $\mathrm{Tr}(XY)$. <em>Quantum Teleportation</em> keeps $23$ of $25$: its arena is $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$, and the three partial traces need the full trace to be defined. The rewrites that did land in these files are the single-element ones: the purity of a reduced state, and the notation rows that still carried the bridge.</p>
+<p><strong>The strongest finding of the session is that the family is not a family.</strong> The states family was counted site by site in the argument, and the argument is the same in both kinds of article. What differs is the space: $\mathrm{Sc}$ is the natural reading of one element, and $\mathrm{Tr}$ is the natural reading of a tensor power, where it factorises and $2^n\mathrm{Sc}$ does not.</p>
+<p><strong>The pilot still carries every rewrite of §<em>The Senses</em>.</strong> The Born ratio, the purity, the entropy, the linear entropy, the variance, the unit, the normalisation and the commutator all stand in it, and the identities were re-checked after the edit: the entropy in the form $-2\,\mathrm{Sc}(\tilde{Ϛ}\log\tilde{Ϛ})$ against $-\sum_i\lambda_i\log\lambda_i$ on $100$ random states, residual $6.7\times10^{-16}$, and the purity and the linear entropy exactly.</p>
+<p><strong>The variance is the trap that was checked hardest, in <em>Quantum Thermodynamics</em>.</strong> The rewrite is $\mathrm{Var}=\mathrm{Tr}(\tilde{Ϛ}\tilde H^2)-(\mathrm{Tr}(\tilde{Ϛ}\tilde H))^2\mapsto2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^2)-(2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H))^2$, and the square doubles the factor rather than cancelling it. On $100$ random states the rewritten variance equals the matrix variance exactly, residual $0$, and the partition function $2\,\mathrm{Sc}\exp(-\beta H)$ equals the sum over levels to $2.3\times10^{-13}$.</p>
+<h2 id="the-strategy">The Strategy</h2>
+<p><strong>Pass 0: freeze the dictionary.</strong> This article is the dictionary. No article is edited until §<em>The Senses</em> and §<em>The Sites That Need Reading</em> are fixed, because both are the reference the later passes are checked against.</p>
+<p><strong>Pass 1: the bridge lines.</strong> The $59$ bridge sites of the form $\operatorname{Tr}=2\,\mathrm{Sc}$, and nothing else. The symbol is deleted and the number kept, except in the two definition lines. This pass is first because it fixes what every later pass means by the word.</p>
+<p><strong>Pass 2: the unit family.</strong> $112$ sites of $\operatorname{Tr}(e_t)=2$ and $\operatorname{Tr}(\vec e_\eta)=0$. The rewrite is $\mathrm{Sc}(e_t)=1$ and $\mathrm{Sc}(\vec e_\eta)=0$. This pass is small and it settles the normalisation before the states are touched.</p>
+<p><strong>Pass 3: the state family.</strong> $816$ sites in $133$ files, and the family splits in two at the first read. In the single-element files every site goes, because the state is an element of $\mathbb{B}_\Psi$ and $\mathrm{Sc}$ is its reading. In the tensor-power files almost every site stays, because the state is an element of $\mathbb{B}^{\otimes n}\cong M_{2^n}$ and the trace on that space is what factorises. Each file is read for the partial trace at the same time, so that the sites that stay are marked before the sites that go are substituted.</p>
+<p><strong>Pass 4: the element family.</strong> $509$ sites in $172$ files. The rewrite is $\operatorname{Tr}(\tilde X\tilde Y)\mapsto2\,\mathrm{Sc}(\tilde X\tilde Y)$, and the four forms of the biquaternion algebra give the readings $2P$, $2N$, $2H$ and $2\mathrm{Kr}$.</p>
+<p><strong>Pass 5: Part VI.</strong> The $128$ sites in $42$ files, biquaternion category first, then quaternions, then the smaller systems. The $273$ residual sites are read in the same pass and most of them stay.</p>
+<p><strong>Pass 6: the residual.</strong> The $362$ physics sites that the families did not reach. Each is read and marked <em>stay</em> or <em>replace</em>, and the two lists are kept in the record of the pass.</p>
+<p><strong>Pass 7: the survivors get their labels.</strong> The $605$ surviving physics sites are checked for the carrier noun in the same sentence. A site without one is repaired in place; the number is not touched.</p>
+<p><strong>Pass 8: the verification.</strong> The grep, the counts, the line counts and the build, as §<em>The Check</em> states them.</p>
+<p><strong>The passes are ordered, and each one is executed file by file.</strong> The order fixes which family a site belongs to; it does not license a batch edit. A file enters a pass with every site read, and it leaves the pass with its symbols replaced, its words renamed, and its invariants checked.</p>
+<h3 id="the-per-file-procedure">The Per-File Procedure</h3>
+<p><strong>One file per edit, and the edit is written as an explicit list of pairs.</strong> The list holds the sentence as the file has it and the sentence as the purge leaves it. A pair that does not match the file aborts the edit before anything is written. This is what makes a silent half-substitution impossible.</p>
+<p><strong>The word and the symbol are renamed in the same edit.</strong> A file whose bridge line is deleted and whose prose still says <em>the trace of the equation</em> is inconsistent, and the inconsistency is invisible to a grep for the symbol. The two halves are one edit because they are one meaning.</p>
+<p><strong>No version-control operation is part of the protocol.</strong> A migration edit is undone by rewriting the pair list, not by restoring the file. The author owns the repository, and a restore also discards whatever the author had in the working tree.</p>
+<p><strong>The invariants are checked per file, before the next file is opened.</strong> Line count, heading count, table-row count and the table-block pipe count are compared with the values the file had when it was opened. A file that fails is corrected before the pass moves on, so a failure is never inherited by the next file.</p>
+<p><strong>The verification is capped at one hundred elements.</strong> Every identity that the edit rests on is recomputed on at most $100$ random draws, as the plan requires. A residual above $10^{-12}$ blocks the edit.</p>
+<p><strong>The pass ends with the grep.</strong> The three searches of §<em>The Check</em> are run over the whole corpus, and the record of the pass lists the files touched, the symbols removed and the word uses renamed.</p>
+<p><strong>A file that cannot be read in full is not edited.</strong> The read is the expensive step and it is not skipped to make the count move. A file that carries a surviving sense in a paragraph whose carrier is ambiguous waits for the next session rather than guessing.</p>
+<p><strong>What the pass does not touch.</strong> The mathematics corpus outside Part VI, the matrix categories of Part VI, the $22$ representation articles, the six physics files with <em>matrix</em> in the title, the words <em>traceless</em>, <em>trace form</em>, <em>trace anomaly</em>, <em>trace-reversed</em>, <em>partial trace</em> and <em>character</em> where they name their own objects, and every display that is already a statement about a matrix.</p>
+<h2 id="the-cost">The Cost</h2>
+<p><strong>One thousand six hundred and twenty-six sites in two hundred and ninety-four files.</strong> The physics part is $1\,498$ sites in $252$ files; the Part VI part is $128$ sites in $42$ files. The residual to read is $362$ and $273$.</p>
+<p><strong>The substitution is the cheap part.</strong> Seven families, seven substitutions, and each is a string replacement once the site is in the right family.</p>
+<p><strong>The reading is the cost.</strong> Six hundred and thirty-five sites need a decision, and the eight traps are where the decisions are hard. The entanglement files need the most care, because they carry the partial trace, the states and the element products in the same paragraph.</p>
+<p><strong>The exemptions save most of the work.</strong> Three thousand one hundred and forty-eight of the $3\,916$ Part VI symbols are in the matrix categories, and $363$ more are in the representation articles. The two exemptions take $374$ files out of the scope and leave $405$ symbols in $573$ files.</p>
+<h2 id="the-check">The Check</h2>
+<p><strong>The identity.</strong> On $100$ random complex pairs, with $X$ and $Y$ drawn from independent standard complex normal coefficients:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}\bigl(\mathsf M_2(X)\mathsf M_2(Y)\bigr)=2\,\mathrm{Sc}(XY)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\bigl(\mathsf M_2(X)\mathsf M_2(Y^{*})\bigr)=2\,\mathrm{Sc}(XY^{*})$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$</td>
+<td>$10^{-15}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}([X,Y])=0$</td>
+<td>$10^{-15}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\mathsf M_2(X)=2X_t$</td>
+<td>$5.0\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}L(X)=4X_t$</td>
+<td>$10^{-15}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The operator statements.</strong> On $100$ random states and observables:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-\operatorname{Tr}(\tilde{Ϛ}\log\tilde{Ϛ})=-\sum_i\lambda_i\log\lambda_i$</td>
+<td>$6.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\operatorname{Var}=2\,\mathrm{Sc}(\tilde{Ϛ}\tilde H^{2})-4\bigl(\mathrm{Sc}(\tilde{Ϛ}\tilde H)\bigr)^{2}$</td>
+<td>$1.8\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\exp(-\beta\tilde H)=2\,\mathrm{Sc}\exp(-\beta\tilde H)$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The grep after the pass.</strong> Three searches must return zero, and they are the acceptance test:</p>
+<ul>
+<li><code>\operatorname{Tr}\tilde</code> and <code>\mathrm{Tr}\tilde</code> in <code>articles_physics</code>, outside the six matrix-titled files.</li>
+<li>the same two in the Part VI system articles, outside the $22$ representation articles.</li>
+<li><code>\mathrm{Tr}=2\,\mathrm{Sc}</code> and <code>\operatorname{Tr}=2\,\mathrm{Sc}</code> outside the three definition lines.</li>
+</ul>
+<p><strong>The build.</strong> <code>python build.py</code> runs the full sweep once per pass, not once per file, and the incremental deploy script rebuilds the changed pages. The pass touches no title, no heading and no link, so the memo comments of the menu need no edit.</p>
+<p><strong>The invariants.</strong> Every edited file keeps its line count, its heading count and its table-row count. The only lines that change length are the ones the substitution rewrites. The four numbers are taken when the file is opened and checked again when the edit is written, so a breakage is localised to one file.</p>
+<p><strong>The render.</strong> Each edited file is parsed by <code>md_to_html</code> from <code>build.py</code> before the edit is accepted. The parser catches a broken table, an unbalanced <code>$$</code> and a stray escape that a textual diff would pass.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The trace on a biquaternion is $2Q_t$, and the corpus writes the symbol $1\,626$ times where the number would do.</strong> The purge replaces each by the scalar part with its factor, and keeps the symbol where the argument is a matrix or the carrier is not $\mathbb{B}$.</p>
+<p><strong>The identity that licenses the purge is one line.</strong> $\operatorname{tr}\bigl(\mathsf M_2(X)\mathsf M_2(Y)\bigr)=2\,\mathrm{Sc}(XY)$, verified with zero residual on $100$ random pairs. Every site of the state family, the element family, the unit family and the bridge is an instance of it.</p>
+<p><strong>The factors are the content.</strong> $2$ for the $2\times2$ image, $4$ for the regular carrier, $1$ for the entry trace of a matrix, the dimension of the factor for a partial trace, the index for a gauge trace, the number of modes for a field-space trace, and the spacetime dimension for the metric contraction. A trace statement without its factor is incomplete.</p>
+<p><strong>Five traces stay.</strong> The partial trace and the tensor factor, the gauge trace, the field-space trace, the metric contraction, and the trace of a matrix written in the formula. Each names its carrier and its size in the same sentence.</p>
+<p><strong>The corpus is nearly clean in mathematics and dirty in physics.</strong> Three thousand one hundred and forty-eight of the $3\,916$ Part VI symbols are in articles about matrices, and $363$ more are in representation articles. In physics, $1\,498$ of $2\,465$ are the informational trace.</p>
+<p><strong>Eight sites need reading, and the rest is substitution.</strong> The variance, the entropy, the Born ratio, the commutator, the linear entropy, the trace reversal, the word <em>traceless</em>, and the three definition lines.</p>
+<p><strong>The pass is nine steps, and each step is executed file by file.</strong> The dictionary, the bridge, the units, the states, the elements, Part VI, the residual, the labels, and the verification. A step closes when its files are read, edited and checked, not when its count is reached.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Tr}$</td>
+<td>in this article, the purge target: $\mathrm{tr}\circ\mathsf M_2$ on an element of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$2Q_t$</td>
+<td>the replacement for $\operatorname{Tr}\tilde Q$; equal to $2\,\mathrm{Sc}\,\tilde Q$</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}(XY)$</td>
+<td>the replacement for $\operatorname{Tr}(\tilde X\tilde Y)$; equal to $2\langle X,Y\rangle$ for the plain form</td>
+</tr>
+<tr>
+<td>the criterion</td>
+<td>the symbol stays iff its argument is a matrix written in the same formula</td>
+</tr>
+<tr>
+<td>exempt: categories</td>
+<td>the seven matrix categories of Part VI, $352$ files, $3\,148$ symbols</td>
+</tr>
+<tr>
+<td>exempt: representations</td>
+<td>the $22$ articles named <code>m2c-</code>, <code>m2r-</code>, <code>m4c-</code>, <code>m4r-</code>, $363$ symbols</td>
+</tr>
+<tr>
+<td>exempt: physics</td>
+<td>the six files with <em>matrix</em> in the title, $45$ symbols, of which <em>Matrix Representations Conventions</em> carries $34$</td>
+</tr>
+<tr>
+<td>the informational trace</td>
+<td>$\operatorname{Tr}\tilde Q=2Q_t$; the object of the purge</td>
+</tr>
+<tr>
+<td>the survivors</td>
+<td>partial trace, tensor factor, gauge trace, field-space trace, metric contraction, matrix-visible trace</td>
+</tr>
+<tr>
+<td>$\operatorname{Trd}$</td>
+<td>the reduced trace; keeps its symbol in the two articles that state $\operatorname{Trd}\tilde Q=2Q_t$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a>, for $\operatorname{Tr}=\mathrm{tr}\circ\mathsf M_2$, the values $\operatorname{Tr}(e_t)=2$ and $\operatorname{Tr}(\vec e_\eta)=0$, and the one place in physics where the bridge is defined.</li>
+<li><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>, for the trace-one normalisation, the Born ratio, and the two opposite mistakes the ratio and the normalisation invite.</li>
+<li><a href="../articles_physics/states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a>, for the Born ratio, the trace-one slice and the purity, at lines $24$, $271$, $295$ and $308$.</li>
+<li><a href="../articles_physics/quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a>, for the sentence that separates $\mathrm{Sc}$ from $\mathrm{Tr}$, the partition function and the variance.</li>
+<li><a href="../articles_physics/von-neumann-entropy-and-the-biquaternion-norm.html">Von Neumann Entropy and the Biquaternion Norm</a>, for the entropy, the spectral decomposition and the factor that the purge must keep.</li>
+<li><a href="../articles_physics/quantum-physics-in-biquaternionic-form.html">Quantum Physics in Biquaternionic Form</a>, for the sentence <em>every formula above is complete without a trace</em>.</li>
+<li><a href="../articles_physics/povms-and-the-positive-cone-in-biquaternionic-form.html">POVMs and the Positive Cone in Biquaternionic Form</a>, for the sentence <em>the trace is read last, at normalisation</em>.</li>
+<li><a href="../articles_physics/ai-physics-review.html">AI Physics Review</a>, for the definition $\operatorname{Tr}:=\mathrm{tr}\circ\mathsf M_2$ and the row that calls the trace a representation-specific reading.</li>
+<li><a href="../articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in Biquaternionic Form</a>, for the gauge trace that stays and the sentence that separates it from the informational trace.</li>
+<li><a href="../articles_physics/the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a>, for the operator trace that stays and the coefficient that counts the carrier.</li>
+<li><a href="../articles_physics/the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html">The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</a>, for the field-space trace $\operatorname{Tr}\log S^{(2)}$.</li>
+<li><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the four readings $2P$, $2N$, $2H$ and $2\mathrm{Kr}$ of one trace pairing.</li>
+<li><a href="../articles_maths/the-trace-form-and-its-indefinite-signature.html">The Trace Form and Its Indefinite Signature</a>, for the bilinear object that the purge keeps, and its difference from the functional.</li>
+<li><a href="../articles_maths/the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra in coordinates, the units and the scalar part $Q_t$ that every rewrite returns.</li>
+<li><a href="the-trace-the-carrier-and-the-factor.html">The Trace: The Carrier and the Factor</a>, internal, for the inventory of carriers that this article takes as given.</li>
+<li><a href="conjugation-migration.html">Conjugation Migration</a>, internal, for the form of a migration record: the census, the objection, the substitution table, the passes and the check.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
