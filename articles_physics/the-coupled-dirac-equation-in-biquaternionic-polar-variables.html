@@ -74,9 +74,9 @@
 <p>This article substitutes the complete polar decomposition into the coupled Dirac equation and reads what the substitution makes visible. It is the polar companion of <em>The Coupled Dirac Equation in Biquaternionic Form</em>, and it depends on three articles: the element form of the coupled equation for the equation, <em>The Dirac Equation in Biquaternionic Polar Variables</em> for the word and the four brackets, and <em>The Covariant Derivative and Gauge Connection in Biquaternionic Form</em> for the connection.</p>
 <p><strong>The substitution.</strong> Write</p>
 <p>$$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$</p>
-<p>with $r>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost $\tilde U_{\Psi,\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor $\tilde u_{\mathrm r}$. The word is a bijection onto the N-regular set, so the eight real parameters are coordinates on the invertibles and no constraint is lost or added. The parent states this and the article uses it.</p>
+<p>with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$ the rapidity of the boost $\tilde U_{\Psi,\mathrm b}$, and $\theta_{\mathrm{axr}}\in[0,2\pi)$ the angle of the rotor $\tilde u_{\mathrm r}$. The word is a bijection onto the N-regular set, so the eight real parameters are coordinates on the invertibles and no constraint is lost or added. The parent states this and the article uses it.</p>
 <p><strong>The equation.</strong> The coupled pair is</p>
 <p>$$
 \tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L,
@@ -123,7 +123,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tfrac12\partial_\mu\ln r^{2}$</td>
+<td>$\tfrac12\partial_\mu\ln \varrho^{2}$</td>
 <td>real central scalar</td>
 <td>none</td>
 </tr>
@@ -188,7 +188,7 @@ $$</p>
 \tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{ϙ}{\hbar}\tilde A_\Phi .
 $$</p>
 <p><strong>What that says in one sentence.</strong> The velocity is kinetic: it is built from the wavevector the background leaves, and the potential sits entirely in the canonical wavevector. This is the classical statement $\vec p_{\mathrm{kin}}=\vec p_{\mathrm{can}}-ϙ\vec A$, and the chart states it as a property of which wavevector names the boost.</p>
-<p><strong>Why the radius does not move.</strong> The added term is central per component and of first degree in the field. It cannot rescale $r$, and it cannot change the magnitude of the boost's rapidity by itself: it shifts the wavevector, and the rapidity is then read from the shifted wavevector by the same mass-shell identity. The invariant is</p>
+<p><strong>Why the radius does not move.</strong> The added term is central per component and of first degree in the field. It cannot rescale $\varrho$, and it cannot change the magnitude of the boost's rapidity by itself: it shifts the wavevector, and the rapidity is then read from the shifted wavevector by the same mass-shell identity. The invariant is</p>
 <p>$$
 \tilde K_{\Phi,\mathrm{gco}}\tilde K_{\Phi,\mathrm{gco}}^{\natural}=\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2},
 $$</p>
@@ -207,7 +207,7 @@ $$</p>
 \qquad
 \tilde A_\Phi\longmapsto\tilde A_\Phi-\tilde\nabla_\Phi\Lambda,
 \qquad
-r,\ \tilde U_{\Psi,\mathrm b},\ \tilde u_{\mathrm r}\ \text{fixed}.
+\varrho,\ \tilde U_{\Psi,\mathrm b},\ \tilde u_{\mathrm r}\ \text{fixed}.
 $$</p>
 <p>Only the angle moves. The scale, the boost and the rotor are gauge invariant by inspection, because a central scalar phase cannot change a modulus, cannot change a rapidity and cannot turn a rotor.</p>
 <p><strong>The covariant wavevector is invariant.</strong></p>
@@ -219,7 +219,7 @@ $$</p>
 \tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\nabla_{\mathrm{gco}}=\sum_\mu\tilde\nabla_{\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F,
 $$</p>
 <p>and $\tilde F$ is unchanged by the transformation, since a gradient can be absorbed and a field strength cannot. In the abelian case $\tilde F$ is the Maxwell biquaternion of <em>Maxwell's Equations in the Biquaternionic Formulation</em>.</p>
-<p><strong>What the chart's invariants are, in one list.</strong> The radius $r$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.</p>
+<p><strong>What the chart's invariants are, in one list.</strong> The radius $\varrho$; the rapidity $\theta_{\mathrm{rpd}}$ and the axis $\vec u_{\mathrm b}$; the rotor angle $\theta_{\mathrm{axr}}$ and its axis; the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}$; and the curvature $\tilde F$. The angle $\theta_{\mathrm{pha}}$ is a coordinate and not an invariant, and its gauge class is the physical statement.</p>
 <p><strong>The field's frame factor is gauge invariant and this is the chart's cleanest sentence.</strong> Since the gauge transformation multiplies the word by a central scalar, the frame factors $\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}$ are untouched. The three things the chart calls frame — the boost, the rotor, and their product — are therefore exactly the gauge-invariant part of the field's decomposition, and the phase is exactly the gauge-dependent part. That is a sharper statement than the element form can make, and it is the reason the polar chart is worth having.</p>
 <p><strong>One qualification.</strong> The word is a bijection onto the N-regular set and the transformation preserves the set, so the transformed field is again N-regular and again has a word. No chart breaks under the transformation. What can break is the <em>smoothness</em>: a transformation with a singularity in $\Lambda$ gives a word that leaves the chart's range at a point, and the parent records the range restrictions for that reason.</p>
 <h2 id="the-spin-transport">The Spin Transport</h2>
@@ -254,7 +254,7 @@ $$</p>
 <p><strong>The word's range under gauge transformations.</strong> A gauge transformation with a singular $\Lambda$ carries the word out of its chart's range at the singular set. Whether the range restrictions have a physical reading, or whether they are an artefact of the chart, is not settled here.</p>
 <p><strong>The relative phase and the chart's parameter count.</strong> The mass breaks the relative phase of the two parts (§<em>The Field and Its Phase Symmetry</em> of the element companion), and the word has no parameter for that phase. Whether the absence is a genuine statement — that the relative phase is not a degree of freedom of the N-regular set — or a limitation of the chosen bijection is open.</p>
 <h2 id="summary">Summary</h2>
-<p>The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.</p>
+<p>The coupled Dirac equation in polar variables is the pair $\tilde\nabla_{\mathrm{gco}}\tilde\Xi_R=k_m\tilde\Xi_L$ and $\tilde\nabla_{\mathrm{gco}}^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$ with $\tilde\nabla_{\mathrm{gco}}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$, and the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ substituted into it.</p>
 <p>The coupling enters the logarithmic derivative as one added element, $\frac{iϙ}{\hbar}\tilde A_\Phi$. Because that element is central per component, it lands in the phase bracket and in the boost bracket and in neither of the other two. The scale and the rotor are untouched by type, not by accident.</p>
 <p>The phase bracket carries the momentum, and the coupling shifts it: $\tilde K_{\Phi,\mathrm{gco}}=\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$, which is $E\mapsto E+ϙcA_t$ and $\vec p\mapsto\vec p-q\vec A$ in the slots. One element, one sign, no independent choice.</p>
 <p>The boost bracket carries the velocity, and the boost is named by the covariant wavevector, so the velocity is the kinetic one and the canonical wavevector is the covariant one less the potential. The mass shell is $\kappa_t^{2}-|\vec\kappa|^{2}=-k_m^{2}$, a translated hyperboloid of unchanged radius: no constant potential opens a gap.</p>
@@ -271,12 +271,12 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
 <td>The word: scale, central phase, boost, rotor</td>
 </tr>
 <tr>
-<td>$r>0$</td>
-<td>Scale; $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$ is the density</td>
+<td>$\varrho>0$</td>
+<td>Scale; $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is the density</td>
 </tr>
 <tr>
 <td>$\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$</td>

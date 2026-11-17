@@ -493,7 +493,7 @@ $$</p>
 <p><strong>The three properties that make the pairing a probability are algebraic.</strong> Reality, positivity and normalisation are not assumptions of the Born rule; they are properties of the pairing on the positive cone.</p>
 <ul>
 <li><strong>Reality.</strong> For two Hermitian elements the star is the identity twice, so the pairing is the symmetric bilinear form $h_{1t}h_{2t}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}\,$, which is real. The star is retained in the formula because it names the pairing that is positive definite on the whole algebra, and because it cannot be dropped when one factor is not Hermitian.</li>
-<li><strong>Positivity.</strong> If $\tilde E\ge0$ and $\tilde{Ϛ}_\Psi\ge0$ then $2\,\mathrm{Sc}(\tilde E\tilde{Ϛ}_\Psi)\ge0$. The product of two positive elements need not be Hermitian, but its scalar part is real and non-negative, and the reason is the spectral decomposition: writing both in the same idempotent family reduces the scalar part to a sum of products of non-negative numbers.</li>
+<li><strong>Positivity.</strong> If $\tilde{\mathcal E}\ge0$ and $\tilde{Ϛ}_\Psi\ge0$ then $2\,\mathrm{Sc}(\tilde{\mathcal E}\tilde{Ϛ}_\Psi)\ge0$. The product of two positive elements need not be Hermitian, but its scalar part is real and non-negative, and the reason is the spectral decomposition: writing both in the same idempotent family reduces the scalar part to a sum of products of non-negative numbers.</li>
 <li><strong>Normalisation.</strong> The unit is the sum of the two idempotents of any axis, so a two-outcome measurement sums to one, and the general case sums to one because a resolution of the unit sums to $e_t$ and the pairing is linear.</li>
 </ul>
 <p><strong>The observable has two readings, and the algebra names both.</strong> Every Hermitian element is $\tilde H_\Psi=iA$ for a unique anti-Hermitian $A\in\mathbb{B}_{\Phi}$, because multiplication by the central $i$ exchanges the sectors. The weight can therefore be written against a material element,</p>
@@ -516,28 +516,28 @@ $$</p>
 <h2 id="the-effects">The Effects</h2>
 <p><strong>An effect is an element between zero and the unit.</strong> The interval $[0,e_t]$ of the sector's order is the set of <strong>effects</strong>, and its elements are exactly the elements whose two eigenvalues lie in $[0,1]$. Writing an effect with its two numbers,</p>
 <p>$$
-\tilde E_\Psi=a\,e_t+i\vec w,
+\tilde{\mathcal E}_{\Psi}=a\,e_t+i\vec w,
 \qquad
-\tilde E_\Psi\in[0,e_t]
+\tilde{\mathcal E}_{\Psi}\in[0,e_t]
 \iff
 a\ge\lvert\vec w\rvert\ \ \text{and}\ \ 1-a\ge\lvert\vec w\rvert
 \iff
 0\le a\le1\ \ \text{and}\ \ \lvert\vec w\rvert\le\min\bigl(a,1-a\bigr).
 $$</p>
-<p>The two inequalities are the two conditions $\tilde E_\Psi\ge0$ and $e_t-\tilde E_\Psi\ge0$, each of them the cone condition of the observable section applied to one of the two elements. The interval is a double cone with apexes at zero and at the unit, and its widest cross-section is at $a=\tfrac12$.</p>
+<p>The two inequalities are the two conditions $\tilde{\mathcal E}_{\Psi}\ge0$ and $e_t-\tilde{\mathcal E}_{\Psi}\ge0$, each of them the cone condition of the observable section applied to one of the two elements. The interval is a double cone with apexes at zero and at the unit, and its widest cross-section is at $a=\tfrac12$.</p>
 <p><strong>The projections are the extreme points.</strong> At $a=\tfrac12$ and $\lvert\vec w\rvert=\tfrac12$ the effect is $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$, an idempotent, and no idempotent lies in the interior of the interval. The interval is therefore the convex hull of the projections plus the two endpoints, and the projections are the measurements with a definite outcome. The effect algebra of the sector is the interval of its own order, and the projection lattice is the two-sphere of axes together with zero and the unit.</p>
-<p><strong>A general resolution of the unit is a measurement.</strong> A finite family $\{\tilde E_{\Psi,k}\}$ with $\tilde E_{\Psi,k}\ge0$ and $\sum_k\tilde E_{\Psi,k}=e_t$ is a <strong>POVM</strong>, and the weight of the $k$-th outcome is</p>
+<p><strong>A general resolution of the unit is a measurement.</strong> A finite family $\{\tilde{\mathcal E}_{\Psi,k}\}$ with $\tilde{\mathcal E}_{\Psi,k}\ge0$ and $\sum_k\tilde{\mathcal E}_{\Psi,k}=e_t$ is a <strong>POVM</strong>, and the weight of the $k$-th outcome is</p>
 <p>$$
-p_k=\frac{\mathrm{Sc}\bigl(\tilde E_{\Psi,k}\tilde{Ϛ}_\Psi\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}=a_k+\vec w_k\cdot\vec s_{\Psi},
+p_k=\frac{\mathrm{Sc}\bigl(\tilde{\mathcal E}_{\Psi,k}\tilde{Ϛ}_\Psi\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\bigr)}=a_k+\vec w_k\cdot\vec s_{\Psi},
 \qquad
 \sum_k a_k=1,
 \qquad
 \sum_k\vec w_k=0 .
 $$</p>
-<p>The two sums are the single condition $\sum_k\tilde E_{\Psi,k}=e_t$ split into its two blocks. Normalisation of the weights follows, positivity follows from the interval, and the projective case is the one in which the effects are idempotents and pairwise orthogonal.</p>
+<p>The two sums are the single condition $\sum_k\tilde{\mathcal E}_{\Psi,k}=e_t$ split into its two blocks. Normalisation of the weights follows, positivity follows from the interval, and the projective case is the one in which the effects are idempotents and pairwise orthogonal.</p>
 <p><strong>An effect is a measurement with a finite resolution, and the resolution is a number.</strong> The one-parameter family</p>
 <p>$$
-\tilde E_{\Psi,\pm}=\tfrac12\bigl(e_t\pm\eta\,i\vec u\bigr),
+\tilde{\mathcal E}_{\Psi,\pm}=\tfrac12\bigl(e_t\pm\eta\,i\vec u\bigr),
 \qquad
 0\le\eta\le1,
 \qquad
@@ -545,12 +545,12 @@ p_\pm=\tfrac12\bigl(1\pm\eta\,\vec u\cdot\vec s_{\Psi}\bigr),
 $$</p>
 <p>is a POVM for every $\eta$ in the range, because $a=\tfrac12$ and $\lvert\vec w\rvert=\eta/2\le\tfrac12$. It is projective only at $\eta=1$, since</p>
 <p>$$
-\tilde E_{\Psi,+}^{2}-\tilde E_{\Psi,+}=\tfrac14\bigl(\eta^{2}-1\bigr)e_t ,
+\tilde{\mathcal E}_{\Psi,+}^{2}-\tilde{\mathcal E}_{\Psi,+}=\tfrac14\bigl(\eta^{2}-1\bigr)e_t ,
 $$</p>
 <p>which vanishes exactly at the endpoint. The number $\eta$ is the <strong>sharpness</strong> of the measurement: at $\eta=1$ the analyser passes one axis and blocks the other, and at $\eta=0$ the two effects are both $\tfrac12e_t$ and the outcome carries no information about the state at all. Every intermediate value is a measurement whose two outcomes overlap, and the overlap is what the interval's interior contains.</p>
 <p><strong>Three outcomes show that the projection lattice is not the whole story.</strong> With three unit vectors $\vec u_0,\vec u_1,\vec u_2$ at $120^\circ$ apart, so that $\vec u_0+\vec u_1+\vec u_2=0$, the three effects</p>
 <p>$$
-\tilde E_{\Psi,k}=\tfrac13\bigl(e_t+i\vec u_k\bigr)=\tfrac23\,\tilde\Pi_1(\vec u_k),
+\tilde{\mathcal E}_{\Psi,k}=\tfrac13\bigl(e_t+i\vec u_k\bigr)=\tfrac23\,\tilde\Pi_1(\vec u_k),
 \qquad
 k=0,1,2,
 $$</p>
@@ -800,7 +800,7 @@ $$</p>
 <p><strong>Boundary.</strong> The variance computed here is the algebraic second moment of one element in one state. It is not an experimental error budget, which would add the noise of the apparatus; and it is not the Robertson inequality, which requires two observables and the commutator, and which this entry does not derive.</p>
 <h3 id="i12t-an-effect-is-a-measurement-of-finite-resolution">I.12.t — An Effect Is a Measurement of Finite Resolution</h3>
 <p><strong>Read:</strong> the interval $[0,e_t]$, the conditions $\lvert\vec w\rvert\le\min(a,1-a)$, the sharpness $\eta$, and the trine POVM.</p>
-<p><strong>The interval is the set of measurements, and its interior is the set of imperfect ones.</strong> The two endpoints are the never and the always; the boundary circle at $a=\tfrac12,\lvert\vec w\rvert=\tfrac12$ is the set of perfect analysers; and everything between is an analyser with finite contrast. The parameter $\eta$ names the contrast, and the identity $\tilde E_+^{2}-\tilde E_+=\tfrac14(\eta^{2}-1)e_t$ says that the effect is a projection exactly at unit contrast.</p>
+<p><strong>The interval is the set of measurements, and its interior is the set of imperfect ones.</strong> The two endpoints are the never and the always; the boundary circle at $a=\tfrac12,\lvert\vec w\rvert=\tfrac12$ is the set of perfect analysers; and everything between is an analyser with finite contrast. The parameter $\eta$ names the contrast, and the identity $\tilde{\mathcal E}_{\Psi,+}^{2}-\tilde{\mathcal E}_{\Psi,+}=\tfrac14(\eta^{2}-1)e_t$ says that the effect is a projection exactly at unit contrast.</p>
 <p><strong>A finite-resolution measurement is not a defective perfect one.</strong> The two outcomes of an unsharp analyser overlap, and the overlap is a property of the apparatus and not of the state. The weight $p_\pm=\tfrac12(1\pm\eta\vec u\cdot\vec s_{\Psi})$ shows the two roles separately: $\eta$ belongs to the measurement and $\vec s_{\Psi}$ to the preparation, and the product is what the experiment reads. No improvement of the preparation can raise $\eta$.</p>
 <p><strong>The three-outcome measurement is the case that no basis supplies.</strong> Three effects at $120^\circ$ sum to the unit and none is a projection, so the measurement has three exclusive alternatives and no orthonormal family of three exists in a two-dimensional carrier. The interval supplies the alternatives without enlarging the carrier, and the dilation supplies the projective realisation on a larger one.</p>
 <p><strong>Boundary.</strong> The interval gives the statistic and not the update. The post-measurement state needs Kraus operators, which the interval does not determine, and two instruments with the same effects can update differently. The entry states the statistic and refers the update to the channel article.</p>
@@ -947,7 +947,7 @@ $$</p>
 </tr>
 <tr>
 <td>the effect</td>
-<td>$\tilde E_\Psi=a\,e_t+i\vec w$</td>
+<td>$\tilde{\mathcal E}_{\Psi}=a\,e_t+i\vec w$</td>
 <td>$0\le a\le1$, $\lvert\vec w\rvert\le\min(a,1-a)$</td>
 </tr>
 <tr>
@@ -957,7 +957,7 @@ $$</p>
 </tr>
 <tr>
 <td>the POVM</td>
-<td>$\{\tilde E_{\Psi,k}\}$</td>
+<td>$\{\tilde{\mathcal E}_{\Psi,k}\}$</td>
 <td>positive effects summing to $e_t$</td>
 </tr>
 <tr>

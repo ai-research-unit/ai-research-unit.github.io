@@ -176,7 +176,7 @@ $$</p>
 <h3 id="the-polar-word-and-the-madelung-pair">The polar word and the Madelung pair</h3>
 <p>Every element off the zero-divisor cone factors into four pieces,</p>
 <p>$$
-\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
 $$</p>
 <p>a scale, a central phase, a boost and a spatial rotor (<a href="../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html">The Complete Polar Decomposition of an N-Regular Biquaternion</a>). The derivative of the word separates into four brackets with no remainder, and in the scalar case the four collapse to two: a continuity equation for the density and a Hamilton–Jacobi equation with a quantum potential. That pair is Madelung's, and its relativistic form is the spin-zero case of Takabayasi's hydrodynamics (<a href="the-klein-gordon-equation-in-biquaternionic-polar-variables.html">The Klein–Gordon Equation in Biquaternionic Polar Variables</a>).</p>
 <p>The scalar pair closes because there is nothing else to close. A scalar field has no frame to vary: its word is a scale and an angle, so its derivative has two brackets and the equation relates them. The Dirac field has four factors, and the four brackets are the subject of the next section.</p>
@@ -196,7 +196,7 @@ $$</p>
 <p>With the field written in the complete polar decomposition, the derivative takes the form</p>
 <p>$$
 \frac{\partial\tilde\Xi}{\partial R_\mu}
-=\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho}{\partial R_\mu}
+=\tilde\Xi\left[\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\frac{\partial\tilde u_{\mathrm r}}{\partial R_\mu}\right],
@@ -212,7 +212,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tfrac12\partial_\mu\ln\rho$</td>
+<td>$\tfrac12\partial_\mu\ln\rho_{\mathrm{num}}$</td>
 <td>real central scalar</td>
 <td>the density is constant</td>
 </tr>
@@ -239,9 +239,9 @@ $$</p>
 <p>$$
 \tilde V_{\Phi}=ic\,\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
-\tilde J_{\Phi}=\rho\tilde V_{\Phi},
+\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi},
 \qquad
-\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\,\hat s,
+\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}.
 $$</p>
@@ -418,12 +418,12 @@ $$</p>
 <td>The four coordinates of the material frame; indices stay low</td>
 </tr>
 <tr>
-<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
 <td>The polar word: scale, phase, boost, rotor</td>
 </tr>
 <tr>
-<td>$\rho$</td>
-<td>Scale of the word, the modulus of the norm; $\langle\tilde\Xi\rangle_{\natural}=\rho e^{2i\theta_{\mathrm{pha}}}$. Not the Hermitian density $\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, which stays positive on the cone</td>
+<td>$\rho_{\mathrm{num}}$</td>
+<td>The number density, $\rho_{\mathrm{num}}=\varrho^{2}=\lvert\langle\tilde\Xi\rangle_{\natural}\rvert$; the scale is $\varrho$, and $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. Not the Hermitian density $\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, which stays positive on the cone</td>
 </tr>
 <tr>
 <td>$\tilde U_{\Psi,\mathrm b}$</td>
@@ -438,7 +438,7 @@ $$</p>
 <td>Four-velocity, $\tilde V_{\Phi}\tilde V_{\Phi}^{\natural}=-c^{2}$</td>
 </tr>
 <tr>
-<td>$\tilde J_{\Phi}=\rho\tilde V_{\Phi}$</td>
+<td>$\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$</td>
 <td>Current</td>
 </tr>
 <tr>
@@ -446,7 +446,7 @@ $$</p>
 <td>Spin direction</td>
 </tr>
 <tr>
-<td>$\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$</td>
+<td>$\tilde S_{\Psi}=\rho_{\mathrm{num}}\tfrac{\hbar}{2}i\hat s$</td>
 <td>Spin element</td>
 </tr>
 <tr>

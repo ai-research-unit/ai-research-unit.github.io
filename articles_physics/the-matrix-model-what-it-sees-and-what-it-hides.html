@@ -74,7 +74,7 @@
 <p>The $2\times2$ matrix model is the working instrument of this block. Every numerical claim in it is checked there, every determinant is read there, and the two walls of the algebra are easiest to see there. But the instrument has a fixed field of view, and the first task of this article is to draw its boundary before any physics is read through it.</p>
 <p>The boundary is drawn in one paragraph and it decides everything after it. The determinant of the image is the algebra's own complex quadratic form, $N=Q_t^{2}+B^{2}$, and it is <strong>not</strong> the Minkowski interval. The interval is what the same determinant becomes on a particular real slice of the algebra, where the image is Hermitian and the determinant reads $q_t^{2}-\lvert\vec q\rvert^{2}$.</p>
 <p>This article states that convention box first, proves it, and then asks two questions of the model. What does it see? It sees the trace, the determinant, the singular values and the spectrum, and those four read off the time, the modulus, the two scales and the two weights. What does it hide? It hides the separation of the scale from the central phase, because both are one modulus, and it hides the interior of each wall, because each wall collapses to one condition on the image.</p>
-<p>The article assumes <em>The Isomorphisms and Their Dimensions</em> for the map $\mathsf{M}_2$ and <em>Norm and Pairing Conventions</em> for the norm $N$ and the modulus $\Rho$. It leans on <em>The Lorentz Transformation as a Biquaternionic Rotation</em> for the physical meaning of the boost, and on <em>Paravectors and the Geometry of Spacetime</em> for the Hermitian slice.</p>
+<p>The article assumes <em>The Isomorphisms and Their Dimensions</em> for the map $\mathsf{M}_2$ and <em>Norm and Pairing Conventions</em> for the norm $N$ and the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$. It leans on <em>The Lorentz Transformation as a Biquaternionic Rotation</em> for the physical meaning of the boost, and on <em>Paravectors and the Geometry of Spacetime</em> for the Hermitian slice.</p>
 <h2 id="the-convention-box">The Convention Box</h2>
 <h3 id="the-map">The Map</h3>
 <p>The isomorphism is fixed in <em>The Isomorphisms and Their Dimensions</em>:</p>
@@ -138,9 +138,9 @@ $$</p>
 <p>On the Hermitian slice this is twice the time coordinate. The trace is therefore the one linear datum of the model, and its factor of two is not a normalisation: it comes with $\mathsf{M}_2(e_t)=I_2$ and cannot be divided out without changing the map. On the four-vector representation, which is the congruence action of <em>The Two Actions of One Group: Adjoint and Congruence</em>, the corresponding trace is twice the trace here, and a reader comparing the two must keep the factor.</p>
 <p>The trace carries the time and nothing else. It is blind to the vector part, and therefore blind to the direction of motion, to the axis of rotation, and to the modulus.</p>
 <h3 id="the-determinant-as-the-modulus-squared">The Determinant as the Modulus Squared</h3>
-<p>By <em>Norm and Pairing Conventions</em> the modulus $\Rho$ is a chosen square root of $N$, and the unit factor is $\tilde U=\tilde Q/\Rho$. So</p>
+<p>By <em>Norm and Pairing Conventions</em> the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is a chosen square root of $N$, and the unit factor is $\tilde U=\tilde Q/(\varrho\,e^{i\theta_{\mathrm{pha}}})$. So</p>
 <p>$$
-\det\mathsf{M}_2(\tilde Q)=\Rho^{2},
+\det\mathsf{M}_2(\tilde Q)=\varrho^{2}e^{2i\theta_{\mathrm{pha}}},
 $$</p>
 <p>and the determinant of the matrix is the square of the modulus. This is the reason the model computes every norm in the series: the determinant is multiplicative, so the modulus of a product is the product of the moduli, and the whole polar machinery of <em>The Complete Polar Decomposition of an N-Regular Biquaternion</em> runs on one determinant.</p>
 <h3 id="the-singular-values-as-the-two-scales">The Singular Values as the Two Scales</h3>
@@ -148,9 +148,9 @@ $$</p>
 <p>$$
 s_{\pm}=e^{\pm\theta_{\mathrm{rpd}}/2},
 $$</p>
-<p>and in general, with modulus $\Rho$,</p>
+<p>and in general, with modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$,</p>
 <p>$$
-s_{\pm}=\Rho\,e^{\pm\theta_{\mathrm{rpd}}/2}.
+s_{\pm}=\varrho\,e^{i\theta_{\mathrm{pha}}}\,e^{\pm\theta_{\mathrm{rpd}}/2}.
 $$</p>
 <p><strong>The check.</strong> For $\theta_{\mathrm{rpd}}=1.7$ and $\theta_{\mathrm{axr}}=0.9$, the two singular values of the image are $2.33964685$ and $0.42741493$, against $e^{0.85}=2.33964685$ and $e^{-0.85}=0.42741493$. Their product is $1$, the modulus is $1$, and the rotation contributes nothing: singular values are invariant under the unitary factor, so they see the boost and only the boost.</p>
 <p>That last sentence is the physical content. The singular values of a frame transformation are its two scales, and the two scales are fixed by the rapidity. A rotation changes the matrix and leaves the two singular values alone.</p>
@@ -242,7 +242,7 @@ $$</p>
 <td>the squared modulus of the vector part</td>
 </tr>
 <tr>
-<td>$\Rho$</td>
+<td>$\varrho\,e^{i\theta_{\mathrm{pha}}}$</td>
 <td>a chosen square root of $N$, the modulus</td>
 </tr>
 <tr>
@@ -272,7 +272,7 @@ $$</p>
 <li>R. A. Horn and C. R. Johnson, <em>Matrix Analysis</em>, 2nd ed., Cambridge University Press, 2012 — singular values, the determinant and trace as elementary symmetric functions, and the discriminant of the characteristic polynomial.</li>
 <li>P. Lounesto, <em>Clifford Algebras and Spinors</em>, 2nd ed., Cambridge University Press, 2001 — the $2\times2$ matrix representation of the biquaternions and its relation to the Minkowski form.</li>
 <li><em>Matrix Representations Conventions</em>, §<em>The $2\times2$ Pauli Representation</em> — the map printed here and the Hermitian slice in the corpus's own notation.</li>
-<li><em>Norm and Pairing Conventions</em> — the norm $N$, the modulus $\Rho$ and the vector part $B$.</li>
+<li><em>Norm and Pairing Conventions</em> — the norm $N$, the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the vector part $B$.</li>
 <li><em>Frame and Metric Conventions</em> — the assignment of a real four-vector to an element, which is what makes the Hermitian slice the physical one.</li>
 <li><em>The Isomorphisms and Their Dimensions</em>, <em>The Two Eigenvalues Are the Two Weyl Weights</em>, <em>The Spectrum Does Not Determine the Frame</em> — the articles that use this model and the ones that state its limits.</li>
 </ul>

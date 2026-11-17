@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-axis-pairing-of-the-polar-decomposition-of-a-quaternion"><strong>The Axis Pairing of the Polar Decomposition of a Quaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The polar word of a quaternion is $\tilde q=r\tilde u_{\mathrm r}$, a positive scale and a versor. The <strong>axis pairing</strong> reads the same word with the exponent transported onto a named axis: for a unit pure quaternion $\nu$, the element is written
+<p>The polar word of a quaternion is $\tilde q=\varrho\tilde u_{\mathrm r}$, a positive scale and a versor. The <strong>axis pairing</strong> reads the same word with the exponent transported onto a named axis: for a unit pure quaternion $\nu$, the element is written
 $$
 \tilde q=\tilde u_{\mathrm r}\,(a+b\nu),\qquad a,b\in\mathbb{R},
 $$
@@ -120,7 +120,7 @@ $$
 where $\theta_\nu$ is the transported angle, the angle of $\pi_\nu(\tilde q)$ in the plane measured from the real line.</p>
 <p><em>Proof.</em> The first is $a^2+b^2=N(\tilde q)$; the second is the ratio of the two formulas of the theorem. The angle of the projection is by definition $\arctan$ of the ratio of its two coordinates. Verified on the four coordinate axes.</p>
 <p><strong>Proposition (the transport of the angle).</strong> The angle of the exponential form of $\tilde q$ is $\arctan\bigl(\lvert\vec q\rvert/q_t\bigr)$, and the transported angle is the same formula with the modulus of the vector part replaced by its component along the axis. So the transport replaces $\lvert\vec q\rvert$ by $\langle\vec q,\nu\rangle$ and leaves everything else unchanged.</p>
-<p><em>Proof.</em> In the modulus-unit form $\tilde q=r(\cos\theta+\sin\theta\,\vec m)$ with $\vec m$ the unit direction of the vector part, so $\tan\theta=\lvert\vec q\rvert/q_t$; the transported formula is the ratio of the two slots. Verified numerically on general elements.</p>
+<p><em>Proof.</em> In the modulus-unit form $\tilde q=\varrho(\cos\theta+\sin\theta\,\vec m)$ with $\vec m$ the unit direction of the vector part, so $\tan\theta=\lvert\vec q\rvert/q_t$; the transported formula is the ratio of the two slots. Verified numerically on general elements.</p>
 <p><strong>Remark (what the two slots are).</strong> $a$ measures the scalar part of the element in the units of the projection, and $b$ measures the component of the vector part along the axis in the same units; the modulus of the pair is the modulus of the element, the argument is the angle in the plane, and the orthogonal complement is entirely absorbed by the versor. <strong>Two real numbers and one versor: the two numbers are the coordinates of the projection, and the versor is the whole of the rest.</strong></p>
 <h2 id="the-failure-on-the-real-axis">The Failure on the Real Axis</h2>
 <p><strong>Proposition (the degenerate hyperplane).</strong> The normalised word exists and is unique exactly on $\mathbb{H}\setminus\nu^{\perp}$, where $\nu^{\perp}=\{\tilde q:\ q_t=0,\ \langle\vec q,\nu\rangle=0\}$ is a hyperplane of dimension three containing the real axis; on $\nu^{\perp}$ the words form a free circle and the normalisation does not select one.</p>
@@ -157,16 +157,16 @@ so $a^2+b^2=5+\tfrac54=\tfrac{25}{4}$, the square of the scale. The pair is diff
 <tbody>
 <tr>
 <td>word</td>
-<td>$r\tilde u_{\mathrm r}$</td>
-<td>$r\,u(v)$</td>
-<td>$r\exp(\theta\vec m)$</td>
+<td>$\varrho\tilde u_{\mathrm r}$</td>
+<td>$\varrho\,u(v)$</td>
+<td>$\varrho\exp(\theta\vec m)$</td>
 <td>$\tilde u_{\mathrm r}(a+b\nu)$</td>
 </tr>
 <tr>
 <td>real slots</td>
-<td>$r>0$</td>
+<td>$\varrho>0$</td>
 <td>the three coordinates of $v$</td>
-<td>$r$ and $\theta$</td>
+<td>$\varrho$ and $\theta$</td>
 <td>$a,b$</td>
 </tr>
 <tr>

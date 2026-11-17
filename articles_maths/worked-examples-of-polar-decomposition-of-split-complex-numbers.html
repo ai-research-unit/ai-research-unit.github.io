@@ -74,7 +74,7 @@
 <p>This article computes the polar decomposition of eight split-complex numbers, one after another. It is the computational companion of <em>Polar Decomposition of Split-Complex Numbers</em>. The decomposition, its existence and uniqueness, the component sign and the exponential and logarithm are established in that article and in <em>Split-Complex Elementary Functions</em>; no definition or proof is repeated.</p>
 <p>Each case is read from the two coordinates $q$ and $q'$ of $Q=q+jq'$. The modulus, the angle and the component sign are computed from them by the formulas of §<em>The Method</em>, and the word is checked against the reconstruction</p>
 <p>$$
-Q=r\,\epsilon\,e^{\theta j}.
+Q=\varrho\,\epsilon\,e^{\theta j}.
 $$</p>
 <p>The eight cases cover the four open components, the pure discrete unit, the two scalar directions and the boundary.</p>
 <div class="table-scroll"><table>
@@ -133,7 +133,7 @@ $$</p>
 <h3 id="the-coordinates">The Coordinates</h3>
 <p>For $Q=q+jq'$ the two real coordinates are $q$ and $q'$. The modulus and the angle are</p>
 <p>$$
-r=\sqrt{\lvert q^2-q'^2\rvert}
+\varrho=\sqrt{\lvert q^2-q'^2\rvert}
 =\sqrt{\lvert(q+q')(q-q')\rvert},
 \qquad
 \theta=\tfrac12\ln\left\lvert\frac{q+q'}{q-q'}\right\rvert.
@@ -173,19 +173,19 @@ $$</p>
 <p>The four conditions are exclusive and cover every invertible element. In every row the product $\epsilon Q$ lies in $F$.</p>
 <p>The two combinations are recovered from the polar data by</p>
 <p>$$
-\boxed{\; r\,e^{\theta}=\lvert q+q'\rvert,
+\boxed{\; \varrho\,e^{\theta}=\lvert q+q'\rvert,
 \qquad
-r\,e^{-\theta}=\lvert q-q'\rvert \;}
+\varrho\,e^{-\theta}=\lvert q-q'\rvert \;}
 $$</p>
 <p>These two identities are the check used in every case.</p>
 <h3 id="the-reconstruction">The Reconstruction</h3>
 <p>The polar word is</p>
 <p>$$
-\boxed{\; Q=\epsilon\,r\,e^{\theta j}=r\,\epsilon\bigl(\cosh\theta+j\sinh\theta\bigr),
+\boxed{\; Q=\epsilon\,\varrho\,e^{\theta j}=\varrho\,\epsilon\bigl(\cosh\theta+j\sinh\theta\bigr),
 \qquad
-Q_{\log}=\ln r+j\theta \;}
+Q_{\log}=\ln \varrho+j\theta \;}
 $$</p>
-<p>The exponent of $\epsilon Q$ and the unit factor $\epsilon e^{\theta j}$ are read separately, and the reconstruction is the scale $r$ times the unit factor. The check is the multiplication.</p>
+<p>The exponent of $\epsilon Q$ and the unit factor $\epsilon e^{\theta j}$ are read separately, and the reconstruction is the scale $\varrho$ times the unit factor. The check is the multiplication.</p>
 <h3 id="the-matrix-picture">The Matrix Picture</h3>
 <p>The matrix of multiplication by $Q$ in the basis $(1,j)$ is</p>
 <p>$$
@@ -211,13 +211,13 @@ $$</p>
 <p>Since $q>\lvert q'\rvert$, the component sign is $\epsilon=1$.</p>
 <p><strong>Polar data.</strong> The modulus and the angle are</p>
 <p>$$
-r=\sqrt{16}=4,
+\varrho=\sqrt{16}=4,
 \qquad
 \theta=\tfrac12\ln\frac{8}{2}=\ln2,
 \qquad
 \epsilon=1.
 $$</p>
-<p>The two combinations check: $r e^{\theta}=4\cdot2=8=q+q'$ and $r e^{-\theta}=4\cdot\tfrac12=2=q-q'$.</p>
+<p>The two combinations check: $\varrho e^{\theta}=4\cdot2=8=q+q'$ and $\varrho e^{-\theta}=4\cdot\tfrac12=2=q-q'$.</p>
 <p><strong>The word.</strong> The exponent and the unit factor are</p>
 <p>$$
 Q_{\log}=\ln4+j\ln2,
@@ -253,13 +253,13 @@ $$</p>
 <p>Since $q'>\lvert q\rvert$, the component sign is $\epsilon=j$.</p>
 <p><strong>Polar data.</strong> The modulus and the angle are</p>
 <p>$$
-r=\sqrt{\lvert-16\rvert}=4,
+\varrho=\sqrt{\lvert-16\rvert}=4,
 \qquad
 \theta=\tfrac12\ln\left\lvert\frac{8}{-2}\right\rvert=\ln2,
 \qquad
 \epsilon=j.
 $$</p>
-<p>The two combinations check: $r e^{\theta}=8=\lvert q+q'\rvert$ and $r e^{-\theta}=2=\lvert q-q'\rvert$.</p>
+<p>The two combinations check: $\varrho e^{\theta}=8=\lvert q+q'\rvert$ and $\varrho e^{-\theta}=2=\lvert q-q'\rvert$.</p>
 <p><strong>The word.</strong> The exponent is the same string as in case 1,</p>
 <p>$$
 Q_{\log}=\ln4+j\ln2,
@@ -297,13 +297,13 @@ $$</p>
 <p>Since $q<-\lvert q'\rvert$, the component sign is $\epsilon=-1$.</p>
 <p><strong>Polar data.</strong> The modulus and the angle are again</p>
 <p>$$
-r=4,
+\varrho=4,
 \qquad
 \theta=\ln2,
 \qquad
 \epsilon=-1.
 $$</p>
-<p>The two combinations check: $r e^{\theta}=8=\lvert q+q'\rvert$ and $r e^{-\theta}=2=\lvert q-q'\rvert$.</p>
+<p>The two combinations check: $\varrho e^{\theta}=8=\lvert q+q'\rvert$ and $\varrho e^{-\theta}=2=\lvert q-q'\rvert$.</p>
 <p><strong>The word.</strong> The exponent is again $\ln4+j\ln2$, and the unit factor is</p>
 <p>$$
 \epsilon e^{\theta j}=-\left(\tfrac54+\tfrac34j\right).
@@ -333,13 +333,13 @@ $$</p>
 <p>Since $q'<-\lvert q\rvert$, the component sign is $\epsilon=-j$.</p>
 <p><strong>Polar data.</strong> The modulus is $\sqrt3$ and the angle is negative:</p>
 <p>$$
-r=\sqrt{\lvert-3\rvert}=\sqrt3,
+\varrho=\sqrt{\lvert-3\rvert}=\sqrt3,
 \qquad
 \theta=\tfrac12\ln\left\lvert\frac{-1}{3}\right\rvert=-\tfrac12\ln3,
 \qquad
 \epsilon=-j.
 $$</p>
-<p>The two combinations check: $r e^{\theta}=\sqrt3\cdot\tfrac{1}{\sqrt3}=1=\lvert q+q'\rvert$ and $r e^{-\theta}=\sqrt3\cdot\sqrt3=3=\lvert q-q'\rvert$.</p>
+<p>The two combinations check: $\varrho e^{\theta}=\sqrt3\cdot\tfrac{1}{\sqrt3}=1=\lvert q+q'\rvert$ and $\varrho e^{-\theta}=\sqrt3\cdot\sqrt3=3=\lvert q-q'\rvert$.</p>
 <p><strong>The word.</strong> The exponent is</p>
 <p>$$
 Q_{\log}=\ln\sqrt3-\tfrac12\ln3\,j=\tfrac12\ln3-\tfrac12\ln3\,j,
@@ -378,13 +378,13 @@ $$</p>
 <p>Since $q'>\lvert q\rvert$, the component sign is $\epsilon=j$.</p>
 <p><strong>Polar data.</strong> The modulus is one and the angle vanishes:</p>
 <p>$$
-r=1,
+\varrho=1,
 \qquad
 \theta=0,
 \qquad
 \epsilon=j.
 $$</p>
-<p>The two combinations check: $r e^{\theta}=1=\lvert q+q'\rvert$ and $r e^{-\theta}=1=\lvert q-q'\rvert$.</p>
+<p>The two combinations check: $\varrho e^{\theta}=1=\lvert q+q'\rvert$ and $\varrho e^{-\theta}=1=\lvert q-q'\rvert$.</p>
 <p><strong>The word.</strong> The exponent is $Q_{\log}=0$, and the unit factor is $\epsilon e^{\theta j}=j$. Therefore</p>
 <p>$$
 Q=1\cdot j=j.
@@ -410,13 +410,13 @@ $$</p>
 <p>Since $q>\lvert q'\rvert$, the component sign is $\epsilon=1$.</p>
 <p><strong>Polar data.</strong> The modulus is two and the angle vanishes:</p>
 <p>$$
-r=2,
+\varrho=2,
 \qquad
 \theta=0,
 \qquad
 \epsilon=1.
 $$</p>
-<p>The two combinations check: $r e^{\theta}=2=q+q'$ and $r e^{-\theta}=2=q-q'$.</p>
+<p>The two combinations check: $\varrho e^{\theta}=2=q+q'$ and $\varrho e^{-\theta}=2=q-q'$.</p>
 <p><strong>The word.</strong> The exponent is</p>
 <p>$$
 Q_{\log}=\ln2,
@@ -442,13 +442,13 @@ $$</p>
 <p>Since $q<-\lvert q'\rvert$, the component sign is $\epsilon=-1$.</p>
 <p><strong>Polar data.</strong> The modulus is two and the angle vanishes:</p>
 <p>$$
-r=2,
+\varrho=2,
 \qquad
 \theta=0,
 \qquad
 \epsilon=-1.
 $$</p>
-<p>The two combinations check: $r e^{\theta}=2=\lvert q+q'\rvert$ and $r e^{-\theta}=2=\lvert q-q'\rvert$.</p>
+<p>The two combinations check: $\varrho e^{\theta}=2=\lvert q+q'\rvert$ and $\varrho e^{-\theta}=2=\lvert q-q'\rvert$.</p>
 <p><strong>The word.</strong> The exponent is the same as in case 6,</p>
 <p>$$
 Q_{\log}=\ln2,
@@ -488,21 +488,21 @@ Q_\delta=(1+\delta)+j,
 $$</p>
 <p>Its coordinates give</p>
 <p>$$
-r=\sqrt{\delta(2+\delta)},
+\varrho=\sqrt{\delta(2+\delta)},
 \qquad
 \theta=\tfrac12\ln\frac{2+\delta}{\delta},
 \qquad
 \epsilon=1,
 $$</p>
-<p>and the two combinations are $r e^{\theta}=2+\delta$ and $r e^{-\theta}=\delta$. The table gives the approach.</p>
+<p>and the two combinations are $\varrho e^{\theta}=2+\delta$ and $\varrho e^{-\theta}=\delta$. The table gives the approach.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\delta$</th>
-<th>$r$</th>
+<th>$\varrho$</th>
 <th>$\theta$</th>
-<th>$r e^{\theta}$</th>
-<th>$r e^{-\theta}$</th>
+<th>$\varrho e^{\theta}$</th>
+<th>$\varrho e^{-\theta}$</th>
 </tr>
 </thead>
 <tbody>
@@ -541,7 +541,7 @@ $$</p>
 <th>$q'$</th>
 <th>$q^2-q'^2$</th>
 <th>$\epsilon$</th>
-<th>$r$</th>
+<th>$\varrho$</th>
 <th>$\theta$</th>
 <th>$Q_{\log}$</th>
 </tr>
@@ -644,7 +644,7 @@ $$</p>
 <th>Case</th>
 <th>$Q$</th>
 <th>Unit factor $\epsilon e^{\theta j}$</th>
-<th>$r$ times the unit factor</th>
+<th>$\varrho$ times the unit factor</th>
 <th>Error</th>
 </tr>
 </thead>
@@ -709,12 +709,12 @@ $$</p>
 </table></div>
 <h3 id="what-the-cases-show">What the Cases Show</h3>
 <ul>
-<li>Cases 1 to 3 share the modulus $r=4$ and the angle $\theta=\ln2$. The two combinations $(q+q',q-q')$ are $(8,2)$, $(8,-2)$ and $(-8,-2)$, and the exponent is the same string in all three; only $\epsilon$ changes. Case 4 completes the four quadrants, with a different modulus and a negative angle.</li>
+<li>Cases 1 to 3 share the modulus $\varrho=4$ and the angle $\theta=\ln2$. The two combinations $(q+q',q-q')$ are $(8,2)$, $(8,-2)$ and $(-8,-2)$, and the exponent is the same string in all three; only $\epsilon$ changes. Case 4 completes the four quadrants, with a different modulus and a negative angle.</li>
 <li>Cases 2 and 3 have $\exp(Q_{\log})=\epsilon Q$, not $Q$. The exponent is the logarithm of the element pushed into the future cone.</li>
 <li>Case 4 has $q>0$ but $q+q'<0$, so the component is the left wedge, not the future cone. The sign of $q$ does not determine the component.</li>
 <li>Cases 6 and 7 have the same exponent $\ln2$ and differ only by $\epsilon$. The discrete factor is not a period: the kernel of the exponential is $\{0\}$.</li>
-<li>Case 5 is the pure discrete factor, with $r=1$ and $\theta=0$.</li>
-<li>Case 8 is the boundary. The matrix has rank one, while the polar word does not exist. The family shows the rate $r\to0$, $\theta\to\infty$ with $r e^{\theta}\to2$.</li>
+<li>Case 5 is the pure discrete factor, with $\varrho=1$ and $\theta=0$.</li>
+<li>Case 8 is the boundary. The matrix has rank one, while the polar word does not exist. The family shows the rate $\varrho\to0$, $\theta\to\infty$ with $\varrho e^{\theta}\to2$.</li>
 </ul>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -746,7 +746,7 @@ $$</p>
 <td>the component sign</td>
 </tr>
 <tr>
-<td>$r=\sqrt{\lvert q^2-q'^2\rvert}$</td>
+<td>$\varrho=\sqrt{\lvert q^2-q'^2\rvert}$</td>
 <td>the modulus</td>
 </tr>
 <tr>
@@ -754,7 +754,7 @@ $$</p>
 <td>the hyperbolic angle</td>
 </tr>
 <tr>
-<td>$Q_{\log}=\ln r+j\theta$</td>
+<td>$Q_{\log}=\ln \varrho+j\theta$</td>
 <td>the exponent, a logarithm of $\epsilon Q$</td>
 </tr>
 <tr>

@@ -77,9 +77,9 @@
 <p><strong>Position in the block.</strong> This is the Fourier companion of <a href="the-schrodinger-fluid.html">The Schrödinger Fluid</a> and of <a href="the-lagrangian-of-the-schrodinger-fluid.html">The Lagrangian of the Schrödinger Fluid</a>. Its charged companion is <a href="the-fourier-transform-and-the-charged-schrodinger-fluid.html">The Fourier Transform and the Charged Schrödinger Fluid</a>. The four Fourier articles of the scalar rung are followed by the four of the spinor and vector rungs, and §<em>What the Transform Leaves, Rung by Rung</em> states what the four share.</p>
 <p><strong>What the article does not do.</strong> It adds no solution and no equation. The transform is the one of <a href="the-derivative-the-field-and-the-transform.html">The Derivative, the Field and the Transform</a>, the word and the pair are the polar parent's, and the only new object is the reading of $Q$ as a cross term.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The algebra and the word are the polar article's: $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=r^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\nabla S/m$, and the quantum potential is</p>
+<p>The algebra and the word are the polar article's: $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ on a central field, with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ and $\varepsilon=\pm1$. The density is $\rho_{\mathrm{num}}=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, the action is $S=\hbar\theta_{\mathrm{pha}}$, the velocity is $\vec v=\nabla S/m$, and the quantum potential is</p>
 <p>$$
-Q=-\frac{\hbar^{2}}{2m}\frac{\Delta r}{r}
+Q=-\frac{\hbar^{2}}{2m}\frac{\Delta \varrho}{\varrho}
 =-\frac{\hbar^{2}}{4m}\Bigl(\Delta\ln\rho_{\mathrm{num}}+\tfrac12\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}\Bigr).
 $$</p>
 <p>The transform is the transform of <a href="the-derivative-the-field-and-the-transform.html">The Derivative, the Field and the Transform</a>, with the symbol rule of <a href="the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables</a>:</p>
@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 \tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}\,e_t,
 \qquad
-r=\lvert a\rvert,
+\varrho=\lvert a\rvert,
 \qquad
 \theta_{\mathrm{pha}}=\vec k\cdot\vec r-\omega t'+\arg a .
 $$</p>
@@ -134,7 +134,7 @@ $$</p>
 <p><strong>The precise statement is that $Q$ is homogeneous of degree zero in the amplitude and non-additive in the density.</strong> A common rescaling of all amplitudes leaves $Q$ unchanged, because $Q$ depends on $\ln\rho_{\mathrm{num}}$ and a constant addend to the logarithm differentiates away. Setting one amplitude to zero does not continuously reduce $Q$ to the other's: it reduces $Q$ to zero or to the other's value, with a discontinuous dependence on the amplitudes at the boundary. <strong>So $Q$ is a property of the set of amplitudes and not of any one of them</strong>, which is what the word "interference" states in one word.</p>
 <p><strong>The size of what the interference adds is a number, and it is quadratic in the separation.</strong> Take two modes with $\rho_{\mathrm{num}}=1+\eta^{2}+2\eta\cos(\Delta k\,x)$, so that $\eta$ is the second amplitude relative to the first and $\Delta k$ their separation. Then, the mean being over a period,</p>
 <p>$$
-\Bigl\langle\frac{\nabla^{2}r}{r}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
+\Bigl\langle\frac{\nabla^{2}\varrho}{\varrho}\Bigr\rangle=\tfrac12\eta^{2}(\Delta k)^{2}+O(\eta^{4}).
 $$</p>
 <p><strong>The two powers are the content of the formula</strong>: the correction is second order in the amplitude that was added and second order in the label separation, which is what a correlation supported at a difference of labels has to be. Checked with a one-hundred-node quadrature: $\eta=0.1$ with $\Delta k=2$ gave $0.02020202$ against the predicted $0.02000000$, and $\eta=0.01$ with $\Delta k=1$ gave $0.00005000$ against $0.00005000$. <strong>The closed form is $\tfrac12(\Delta k)^{2}\eta^{2}/(1-\eta^{2})$</strong>, of which the displayed line is the first term; at $\eta=0.2$, $\Delta k=1$ it gives $0.020833333$ and the quadrature agrees to nine digits.</p>
 <p><strong>The stated objection, and the answer.</strong> The objection is that the decomposition into modes is a choice of basis, so a statement about "interference" is a statement about the basis and not about the fluid. The objection is correct about the basis and it does not touch the result: the basis is the basis of the plain waves, the plain waves are what a mode is, and the result is that in that basis the quantum layer has no diagonal part. <strong>The invariance of the statement is the invariance of the Fourier support</strong>: a single point of support cannot carry a functional of the density's curvature, because a single point has a constant density, and that is a fact about points and not about bases.</p>
@@ -247,7 +247,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$</td>
+<td>$\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$</td>
 <td>The central field, in its word</td>
 </tr>
 <tr>
@@ -259,7 +259,7 @@ $$</p>
 <td>The label of a mode</td>
 </tr>
 <tr>
-<td>$\rho_{\mathrm{num}}=r^{2}$</td>
+<td>$\rho_{\mathrm{num}}=\varrho^{2}$</td>
 <td>The density; constant at a mode</td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ $$</p>
 <td>The velocity; constant at a mode</td>
 </tr>
 <tr>
-<td>$Q=-\hbar^{2}\Delta r/(2mr)$</td>
+<td>$Q=-\hbar^{2}\Delta \varrho/(2m\varrho)$</td>
 <td>The quantum potential; zero at a mode</td>
 </tr>
 <tr>

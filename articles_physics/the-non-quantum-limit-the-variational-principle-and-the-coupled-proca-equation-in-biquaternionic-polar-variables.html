@@ -74,9 +74,9 @@
 <p><strong>The finding, in one sentence.</strong> The same deletion that fails in the free Proca action succeeds in the coupled one, because the complex carrier puts the oscillation in the phase and leaves the amplitude an envelope whose kinetic term is genuinely small.</p>
 <p><strong>The action.</strong> The covariant Proca action with the complex word substituted,</p>
 <p>$$
-S=\int\mathrm{d}^{4}r\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu r\bigr)^{2}
-+\tfrac12r^{2}\sum_\mu\varepsilon_\mu\bigl(\kappa^{\mathrm{kin}}_\mu\bigr)^{2}
--\tfrac12k_m^{2}r^{2}\,\mathcal{V}
+S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu \varrho\bigr)^{2}
++\tfrac12\varrho^{2}\sum_\mu\varepsilon_\mu\bigl(\kappa^{\mathrm{kin}}_\mu\bigr)^{2}
+-\tfrac12k_m^{2}\varrho^{2}\,\mathcal{V}
 +\text{(the frame's terms)}\Bigr\},
 $$</p>
 <p>with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar}A_\mu$ the mechanical phase gradient and $\mathcal V$ the invariant length's frame factor. <strong>Three blocks and the same four brackets as the Dirac chart.</strong></p>
@@ -85,8 +85,8 @@ $$</p>
 <p><strong>The exactness on a plane wave, which is the sharpest illustration.</strong> For $\tilde A=A_0e^{i(\vec k\cdot\vec r-\omega r'_{t})}\tilde U$ with constant $A_0$ and $\tilde U$, the amplitude's kinetic term vanishes identically. <strong>The truncated action therefore reproduces every constant-envelope plane wave exactly</strong>, and its corrections are what a varying envelope costs.</p>
 <p><strong>What the article establishes, in five sentences.</strong> The coupled Proca action's amplitude block is order two and the mass and phase blocks are order zero, so the deletion is controlled by $\epsilon$. The variation of the phase returns the covariant transport equation, which is the continuity equation and is exact in the pair; the variation of the amplitude returns the mechanical mass shell as a constraint; the variation of the frame returns the polarisation's transport. On a constant-envelope plane wave the deleted term vanishes identically, so the limit is exact there and its error is the envelope's curvature. The mass term's frame factor is not displayed in closed form in the six angles, so the frame's variation is exact as a system and not as a formula.</p>
 <p><strong>What is not new.</strong> The covariant Proca action, the minimal substitution, the transverse polarisation and the Madelung-like pair are standard. Added here: the comparison of the two Proca deletions in one ledger, the exactness statement on constant envelopes, and the reading of the free/coupled split as a split of carriers.</p>
-<p><strong>The restriction.</strong> The word is defined for $r>0$; the limit is a statement on the chart's domain; the cone is $r=0$.</p>
-<p><strong>Conventions.</strong> Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.</p>
+<p><strong>The restriction.</strong> The word is defined for $\varrho>0$; the limit is a statement on the chart's domain; the cone is $\varrho=0$.</p>
+<p><strong>Conventions.</strong> Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.</p>
 <h2 id="the-blocks">The Blocks</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -98,17 +98,17 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tfrac12\sum_\mu\varepsilon_\mu(\partial_\mu r)^{2}$</td>
+<td>$\tfrac12\sum_\mu\varepsilon_\mu(\partial_\mu \varrho)^{2}$</td>
 <td>two on the amplitude</td>
 <td>$2$</td>
 </tr>
 <tr>
-<td>$\tfrac12r^{2}\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}$</td>
+<td>$\tfrac12\varrho^{2}\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}$</td>
 <td>two on the phase</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$-\tfrac12k_m^{2}r^{2}\mathcal V$</td>
+<td>$-\tfrac12k_m^{2}\varrho^{2}\mathcal V$</td>
 <td>none, but depends on the frame</td>
 <td>$0$</td>
 </tr>
@@ -135,7 +135,7 @@ $$</p>
 \qquad\Longleftrightarrow\qquad
 \frac{\mathcal E^{2}}{c^{2}}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V ,
 $$</p>
-<p>the mass shell with the frame factor on the right. <strong>Keeping the block would add $\Box_\Phi r/r$ to the right</strong>, which is the quantum potential and is order two.</p>
+<p>the mass shell with the frame factor on the right. <strong>Keeping the block would add $\Box_\Phi \varrho/\varrho$ to the right</strong>, which is the quantum potential and is order two.</p>
 <p><strong>Varying the frame.</strong> The polarisation's transport, from the frame's own terms and from $\mathcal V$'s dependence on the angles. <strong>The parent does not display the general invariant length in closed form in the six angles</strong>, so the variation is exact as an Euler–Lagrange equation and not as a formula.</p>
 <p><strong>What the three variations give together.</strong> A constraint, a transport, and a transport — the same three-plus-one structure as the free chart, now with the phase's bracket available and therefore with a genuine guidance equation among them.</p>
 <h2 id="the-deletion-in-the-proca-pair">The Deletion in the Proca Pair</h2>
@@ -154,14 +154,14 @@ $$</p>
 <tr>
 <td>free Proca</td>
 <td>real</td>
-<td>$\tfrac12(\partial r)^{2}$</td>
+<td>$\tfrac12(\partial \varrho)^{2}$</td>
 <td>order one</td>
 <td>nothing</td>
 </tr>
 <tr>
 <td>coupled Proca</td>
 <td>complex</td>
-<td>$\tfrac12(\partial r)^{2}$</td>
+<td>$\tfrac12(\partial \varrho)^{2}$</td>
 <td>$\epsilon^{2}$</td>
 <td>constant envelopes</td>
 </tr>
@@ -179,10 +179,10 @@ $$</p>
 <p><em>No constraint algebra.</em> As in the Dirac variational article, the constraint structure's closure is not examined.</p>
 <p><em>No derivation of the force.</em> The Lorentz force is read from the shell's gradient and not from the action.</p>
 <h2 id="verification">Verification</h2>
-<p><strong>The orders were checked from the blocks.</strong> The amplitude's kinetic term carries two derivatives on $r$; the phase's bracket carries two on the phase and none on the scale; the mass term carries none. <strong>The counts are an inspection and they are exact.</strong></p>
-<p><strong>The amplitude block's vanishing was checked on a plane wave.</strong> For constant $A_0$ and constant $\tilde U$ the word's scale is $r=\lvert A_0\rvert$, so $\partial_\mu r=0$ and the block vanishes identically. <strong>The truncated action is then the full action</strong>, which is the exactness claim.</p>
+<p><strong>The orders were checked from the blocks.</strong> The amplitude's kinetic term carries two derivatives on $\varrho$; the phase's bracket carries two on the phase and none on the scale; the mass term carries none. <strong>The counts are an inspection and they are exact.</strong></p>
+<p><strong>The amplitude block's vanishing was checked on a plane wave.</strong> For constant $A_0$ and constant $\tilde U$ the word's scale is $\varrho=\lvert A_0\rvert$, so $\partial_\mu \varrho=0$ and the block vanishes identically. <strong>The truncated action is then the full action</strong>, which is the exactness claim.</p>
 <p><strong>The pair's transport was checked to be unchanged by the deletion.</strong> The deleted block contains no phase and no potential, so both functional derivatives with respect to $\theta_{\mathrm{pha}}$ are the same expression. <strong>No rearrangement is needed.</strong></p>
-<p><strong>The mass shell was checked to follow from the amplitude's variation.</strong> With the kinetic block deleted, the variation gives $\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}+k_m^{2}\mathcal V=0$, which is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V$; keeping the block adds $\Box_\Phi r/r$. <strong>The two differ by the deleted block and by nothing else.</strong></p>
+<p><strong>The mass shell was checked to follow from the amplitude's variation.</strong> With the kinetic block deleted, the variation gives $\sum_\mu\varepsilon_\mu(\kappa^{\mathrm{kin}}_\mu)^{2}+k_m^{2}\mathcal V=0$, which is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{2}c^{2}\mathcal V$; keeping the block adds $\Box_\Phi \varrho/\varrho$. <strong>The two differ by the deleted block and by nothing else.</strong></p>
 <p><strong>What was not checked.</strong> No closed form for $\mathcal V$ in the six angles was derived, and no solution of the order-one system was integrated. <strong>The first omission is the parent's and is recorded as such.</strong></p>
 <h2 id="summary">Summary</h2>
 <p>The coupled Proca action's blocks are ordered by derivative count: the amplitude's kinetic term is order two, the phase's bracket and the mass term are order zero, and the frame's terms are order two. The limit deletes the amplitude's kinetic block and keeps everything else.</p>
@@ -199,11 +199,11 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde A=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
+<td>$\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$</td>
 <td>The coupled word on the complex carrier</td>
 </tr>
 <tr>
-<td>$r>0$, $\rho=r^{2}$</td>
+<td>$\varrho>0$, $\rho=\varrho^{2}$</td>
 <td>The scale; the density</td>
 </tr>
 <tr>
