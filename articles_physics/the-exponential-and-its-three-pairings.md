@@ -408,7 +408,7 @@ Three cases exhaust the word. If $A^{*}=A$ the two slots carry the same exponent
 
 **The numbers are exact and elementary.** For a boost of rapidity $0.9$ the one-slot eigenvalues are $e^{\pm0.45}=1.568312$ and $0.637628$; the two-slot eigenvalues are $e^{\pm0.9}=2.459603$ and $0.406570$ together with $1$ twice. The scale and the phase are central, so their rows are read as scalar multipliers; for a purely central element the spectrum collapses and the table is a table of scalars.
 
-**The doubling is a statement about representation and not about algebra.** The two slots are the two tensor factors of the matrix model, $\mathbb{B}\cong S\otimes S^{*}$ with $S=\mathbb{C}^{2}$, and the two-sided operator is $\rho(\tilde Q)\otimes\bar\rho(\tilde Q)$. The tensor product of the defining representation and its conjugate is the vector, $2\otimes\bar2=4$, so the two-sided operator is the vector and the one-sided operator on a single slot is the spinor. The weights add, and adding two half-angles gives the full angle.
+**The doubling is a statement about representation and not about algebra.** The two slots are the two tensor factors of the matrix model, $\mathbb{B}\cong S\otimes S^{*}$ with $S=\mathbb{C}^{2}$, and the two-sided operator is $\Delta_{\mathrm{rep}}(\tilde Q)\otimes\bar\Delta_{\mathrm{rep}}(\tilde Q)$. The tensor product of the defining representation and its conjugate is the vector, $2\otimes\bar2=4$, so the two-sided operator is the vector and the one-sided operator on a single slot is the spinor. The weights add, and adding two half-angles gives the full angle.
 
 ### Spinor Linear and Vector Bilinear
 
@@ -514,7 +514,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 
 **The object.** The one-sided exponentials with eigenvalues $e^{t\lambda_\pm}$ and the two-sided operator with eigenvalues $\lambda_i\bar\lambda_j$.
 
-**The warrant.** The one-sided operator is a representation and its exponential is the exponential of the element; the two-sided operator is $\rho\otimes\bar\rho$; the weights of the tensor product are the sums of the weights.
+**The warrant.** The one-sided operator is a representation and its exponential is the exponential of the element; the two-sided operator is $\Delta_{\mathrm{rep}}\otimes\bar\Delta_{\mathrm{rep}}$; the weights of the tensor product are the sums of the weights.
 
 **The reading.** The half-angle is what a spinor sees and the full angle is what a vector sees, and the factor two is the statement $2\otimes\bar2=4$ read in the exponents. A rotation of $\theta$ on a vector is a rotation of $\theta/2$ on a spinor, and the algebraic origin is the tensor product and not a property of rotations. The corpus uses the half-angle wherever a spinor is the object: *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time* attaches a rotor to each event of a worldline and reads the half-angle as the spinor's proper-time phase, and *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* compares the rotor's conjugation with a canonical flow.
 

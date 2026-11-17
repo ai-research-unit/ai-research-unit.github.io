@@ -844,7 +844,7 @@ The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-
 $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 $$
-so $L_{\tilde Q}$ acts by $\Delta$ on both and never mixes them. The algebra is $S\otimes S^{*}$; $L$ acts on each copy of $S$ and is $2\rho$, two copies of the Weyl spinor. The spectral form of the half-spin and of the doubling is in the companion article.
+so $L_{\tilde Q}$ acts by $\Delta$ on both and never mixes them. The algebra is $S\otimes S^{*}$; $L$ acts on each copy of $S$ and is $2\Delta_{\mathrm{rep}}$, two copies of the Weyl spinor. The spectral form of the half-spin and of the doubling is in the companion article.
 
 The image of the one-sided action on the invertibles is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, of real dimension eight, with trivial kernel. The image of the two-sided action is $CO^{+}(1,3)$, of real dimension seven, with kernel $U(1)$. The missing dimension is the phase. On the null cone the one-sided operator has rank two and image the right ideal $\tilde Q\mathbb{B}$; the two-sided operator has rank one and image the line $\mathbb{C}\tilde Q\tilde Q^{*}$.
 
@@ -873,7 +873,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two spinor spaces (Peirce copy), the Peirce carriers (minimal left ideals here) |
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the common spinor matrix on $S_+$ and $S_-$ |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$ |
-| $\rho,\bar\rho$ | the defining representation on $S$ and its conjugate |
+| $\Delta_{\mathrm{rep}},\bar\Delta_{\mathrm{rep}}$ | the defining representation on $S$ and its conjugate |
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
 | $J=L_i=R_i$ | the pure central phase of $\pi/2$, the complex structure |
 | $g$ | the Minkowski form, $\langle\tilde Q\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ and $-\langle\tilde Q\rangle_{\natural}$ on $\mathbb{B}_{\Phi}$ |

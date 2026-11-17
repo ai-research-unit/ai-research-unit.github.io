@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions* and *Mirror Biquaternions and the Phy–Psy Switch*. The gradient and the d'Alembertian are those of *Operator and Calculus Conventions*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The gradient and the d'Alembertian are those of *Operator and Calculus Conventions*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
@@ -212,7 +212,6 @@ What the transform does with the piecewiseness is relocate it. A Fourier mode is
 - *The Fourier Transform and the Proca Equation in Biquaternionic Form*, for the symbol's determinant, rank and kernel.
 - *The Fourier Transform and the Dirac Equation in Biquaternionic Polar Variables*, for the chart that does carry a phase, and for the phase gradient as the Fourier variable.
 - *The Spin-One Fluid*, for the Lorenz condition as the field's own continuity equation.
-- *Mirror Biquaternions and the Phy–Psy Switch*, for the sector bookkeeping that the material sector's reality presupposes.
 - *Derivatives, Fields and Transforms*, for the symbol rule.
 - *Norm and Pairing Conventions*, for the norm's indefiniteness and the two forms.
 - H. Weyl, *The Theory of Groups and Quantum Mechanics* (Dover, 1950), for the polar decomposition of a real four-vector and its two branches.

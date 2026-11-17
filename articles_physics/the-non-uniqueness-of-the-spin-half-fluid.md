@@ -49,17 +49,17 @@ Checked numerically: the two parameter sets give elements differing by $3.55\tim
 
 ### The Density
 
-**Three names for densities are in use in the corpus, and they carry two distinct numbers.** The squared amplitude $\rho=\varrho^{2}$ and the time-dilated density $\gamma\rho$. The third name, the Hermitian norm $\langle\tilde\Xi\rangle_{*}$, is numerically the same as the second: the identity $\langle\tilde\Xi\rangle_{*}=\gamma\rho$ holds on every element of the word, so no computation distinguishes them.
+**Three names for densities are in use in the corpus, and they carry two distinct numbers.** The squared amplitude $\rho_{\mathrm{num}}=\varrho^{2}$ and the time-dilated density $\gamma\rho_{\mathrm{num}}$. The third name, the Hermitian norm $\langle\tilde\Xi\rangle_{*}$, is numerically the same as the second: the identity $\langle\tilde\Xi\rangle_{*}=\gamma\rho_{\mathrm{num}}$ holds on every element of the word, so no computation distinguishes them.
 
 | density | value | what it is |
 | --- | --- | --- |
-| marker density | $\rho=\varrho^{2}$ | the scale squared; nothing conserves it on its own |
-| charge density | $\gamma\rho$ | the temporal slot of the current, $J^{0}/c$; conserved by the transport equation |
-| Hermitian norm | $\gamma\rho$ | the form $\langle\tilde\Xi\rangle_{*}$; a scalar under the algebra's conjugations, and equal to the charge density |
+| marker density | $\rho_{\mathrm{num}}=\varrho^{2}$ | the scale squared; nothing conserves it on its own |
+| charge density | $\gamma\rho_{\mathrm{num}}$ | the temporal slot of the current, $J^{0}/c$; conserved by the transport equation |
+| Hermitian norm | $\gamma\rho_{\mathrm{num}}$ | the form $\langle\tilde\Xi\rangle_{*}$; a scalar under the algebra's conjugations, and equal to the charge density |
 
-**The distinction between the last two is nominal and the article says so.** The two coincide as numbers, so a reader may take either; what differs is the object's type, a component of a four-vector against a form on the algebra. The choice that moves a number is the first: $\rho$ against $\gamma\rho$, and the factor between them is the motion's time dilation.
+**The distinction between the last two is nominal and the article says so.** The two coincide as numbers, so a reader may take either; what differs is the object's type, a component of a four-vector against a form on the algebra. The choice that moves a number is the first: $\rho_{\mathrm{num}}$ against $\gamma\rho_{\mathrm{num}}$, and the factor between them is the motion's time dilation.
 
-**The choice is forced by what one wants conserved and not by taste.** For the scalar fluid, [The Spin-Zero Fluid](the-spin-zero-fluid.html) shows that the conserved density is $\gamma\rho$ and not $\rho$: the transport equation becomes a continuity equation for $\gamma\rho$ and for nothing else, and the marker density obeys a different equation that carries the time dilation. So a fluid whose density is the marker density has no continuity equation, and a fluid whose density is the charge density has one.
+**The choice is forced by what one wants conserved and not by taste.** For the scalar fluid, [The Spin-Zero Fluid](the-spin-zero-fluid.html) shows that the conserved density is $\gamma\rho_{\mathrm{num}}$ and not $\rho_{\mathrm{num}}$: the transport equation becomes a continuity equation for $\gamma\rho_{\mathrm{num}}$ and for nothing else, and the marker density obeys a different equation that carries the time dilation. So a fluid whose density is the marker density has no continuity equation, and a fluid whose density is the charge density has one.
 
 **The same field therefore supports two fluids that differ in what their density means.** The velocities are the same, the streamlines are the same, and the density that flows is different. That is the first of the three choices, and it is invisible in the word.
 
@@ -84,12 +84,12 @@ Checked numerically: the two parameter sets give elements differing by $3.55\tim
 **The current splits into a convection part and a spin part, and the split is defined up to a total divergence.** The identity is the Gordon decomposition, and its content is that a solution's current equals a convection term plus the divergence of the tensor bilinear:
 
 $$
-J_{\Phi,\mu}=\frac{\rho}{m}P_{\Phi,\mu}+\frac{1}{k_m}\partial_\nu\bigl(\bar{\tilde\Xi}\Sigma_{\mu\nu}\tilde\Xi\bigr).
+J_{\Phi,\mu}=\frac{\rho_{\mathrm{num}}}{m}P_{\Phi,\mu}+\frac{1}{k_m}\partial_\nu\bigl(\bar{\tilde\Xi}\Sigma_{\mu\nu}\tilde\Xi\bigr).
 $$
 
 **The freedom is the freedom to move a curl from one term to the other.** Adding $\sum_\nu\partial_\nu A_{\mu\nu}$ to the first term with $A$ antisymmetric and subtracting it from the second leaves the current unchanged, because the two additions cancel identically. Different choices of $A$ give different convection momenta and different spin currents, with the same $J_{\Phi}$.
 
-**The complete polar decomposition makes one choice and calls it the frame.** With $P_{\Phi}=m\tilde V_{\Phi}$ and the density $\rho$, the convection term is the word's current and the spin term is what remains. That is a definite split, and it is the one the corpus uses. It is not the only one, and the article says so because a reader comparing two formulations will otherwise take a difference of convention for a difference of physics.
+**The complete polar decomposition makes one choice and calls it the frame.** With $P_{\Phi}=m\tilde V_{\Phi}$ and the density $\rho_{\mathrm{num}}$, the convection term is the word's current and the spin term is what remains. That is a definite split, and it is the one the corpus uses. It is not the only one, and the article says so because a reader comparing two formulations will otherwise take a difference of convention for a difference of physics.
 
 **What the freedom cannot touch is the total angular momentum.** The improvement moves the spin's contribution between the orbital and the intrinsic parts and leaves the sum fixed. That is the Belinfante statement, and it is the reason the corpus can say that its own separation of the two parts by construction is a simplification rather than a loss.
 
@@ -101,7 +101,7 @@ $$
 
 **The other closures are conditions on the spin's transport.** A condition of Frenkel type fixes the spin's time component; a condition of Weyssenhoff type fixes the spin's relation to the velocity differently. Each gives a different evolution for the spin and the same evolution for the density and the current at the level of the conservation laws.
 
-**Two fluids with different subsidiary conditions are therefore two solutions of the same field in different variables.** They agree on $\rho$ and $J_{\Phi}$ and disagree on how the spin is transported. That is the third choice, and it is the one the corpus leaves most open: no article derives which condition the biquaternion Dirac equation prefers.
+**Two fluids with different subsidiary conditions are therefore two solutions of the same field in different variables.** They agree on $\rho_{\mathrm{num}}$ and $J_{\Phi}$ and disagree on how the spin is transported. That is the third choice, and it is the one the corpus leaves most open: no article derives which condition the biquaternion Dirac equation prefers.
 
 ## The Discrete Label
 
@@ -138,7 +138,7 @@ so it is complex off the orthogonal locus, it vanishes at a rotor angle of a hal
 
 **Established.** That the map from parameters to elements is injective on the stated ranges except at $\theta_{\mathrm{rpd}}=0$ and $\theta_{\mathrm{axr}}=0$, where a circle of parameter choices returns one element and the fluid variables are constant on the circle. That the ranges remove the identification $(\varrho,\theta_{\mathrm{pha}})\sim(-\varrho,\theta_{\mathrm{pha}}+\pi)$, checked to $3.55\times10^{-16}$. That the Gordon split is defined up to a total divergence. That the sign $\varepsilon$ is a function of four parameters.
 
-**Interpretation.** That the choice of density is a choice of fluid and not a renaming, since the two values $\rho$ and $\gamma\rho$ obey different equations. That the choice of subsidiary condition is a choice of spin fluid. That the sign's relocation into $\varepsilon$ is a consequence of the ranges rather than a convention. Each is argued here and none is proved.
+**Interpretation.** That the choice of density is a choice of fluid and not a renaming, since the two values $\rho_{\mathrm{num}}$ and $\gamma\rho_{\mathrm{num}}$ obey different equations. That the choice of subsidiary condition is a choice of spin fluid. That the sign's relocation into $\varepsilon$ is a consequence of the ranges rather than a convention. Each is argued here and none is proved.
 
 **Not claimed.** It is not claimed that any of the three choices is better; the corpus has not compared them on a solution. It is not claimed that the fibre structure exhausts the non-uniqueness of the word; only the two degenerate loci are exhibited. It is not claimed that Takabayasi's and Halbwachs–Hillion's readings are equivalent; the corpus has not compared them.
 
@@ -156,7 +156,7 @@ On top of the word a fluid needs three choices: which density is conserved, how 
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The element and its word |
 | $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$ | The ranges that make the map injective |
-| $\rho=\varrho^{2}$, $\gamma\rho$ | Marker density and charge density |
+| $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma\rho_{\mathrm{num}}$ | Marker density and charge density |
 | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
 | $\varepsilon=\Xi_t/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | Sign, a function of four parameters |
 | $\kappa=\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}$ | Cosine between the two axes |

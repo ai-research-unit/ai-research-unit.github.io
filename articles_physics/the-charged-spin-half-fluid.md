@@ -36,7 +36,7 @@ with $\tilde A_\Phi=i a'_t e_t+\vec A$ in the material sector. **The coupling is
 
 $$
 \tilde\Xi_{\mathrm D}^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi_{\mathrm D}
-=\frac{1}{2}\frac{\partial\ln\rho}{\partial R_\mu}
+=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\frac{iϙ}{\hbar}A_\mu
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
@@ -55,7 +55,7 @@ $$
 
 | bracket | type | the connection's share | what it moves in the fluid |
 | --- | --- | --- | --- |
-| $\tfrac12\partial_\mu\ln\rho$ | real central scalar | none | the density: nothing |
+| $\tfrac12\partial_\mu\ln\rho_{\mathrm{num}}$ | real central scalar | none | the density: nothing |
 | $i\partial_\mu\theta_{\mathrm{pha}}+\frac{iϙ}{\hbar}A_\mu$ | central imaginary | the whole temporal slot | the momentum |
 | $\tilde u_{\mathrm r}^{-1}(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b})\tilde u_{\mathrm r}$ | Hermitian | the whole spatial slot | the rapidity and the axis |
 | $\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r}$ | real vector part | none | the spin direction: nothing |
@@ -183,9 +183,9 @@ and the two factors commute because the second is central. **The object is an el
 **The chart's current is the convection part, and the magnetisation part is built from the rotor alone.** The parent's current is
 
 $$
-J^t=\rho\cosh\theta_{\mathrm{rpd}},
+J^t=\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}},
 \qquad
-J_\eta=\rho\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta},
+J_\eta=\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}\,u_{\mathrm b,\eta},
 $$
 
 which is the density times the velocity and nothing else. The Gordon decomposition of [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html) splits the current into that convection part and a magnetisation part which is the divergence of the antisymmetric spin density,
@@ -202,7 +202,7 @@ and the second is conserved by antisymmetry alone and carries no total charge.
 
 **Why that is worth stating as a result and not as a triviality.** One might expect the coupling to screen the magnetisation current, or to add to it a term proportional to the field, in the way that a polarisable medium's bound current responds to the applied field. **The chart says no: there is no such term, and the only way the field reaches the magnetisation is by moving the frame.** The corpus's own decomposition makes the same statement in the element form, where the spin bilinear contains no connection; the chart's version is sharper because it exhibits the rotor as the invariant the connection cannot reach.
 
-**What the split does to the charge conservation.** The conservation of the total current splits into the conservation of the convection part and the vanishing of the divergence of the magnetisation part, the second being an identity. So **the charge the fluid transports is the convection current's, and the spin's bound current adds nothing to it**: the charge density is $\rho\cosh\theta_{\mathrm{rpd}}$ and no bound contribution enters it, whatever the field.
+**What the split does to the charge conservation.** The conservation of the total current splits into the conservation of the convection part and the vanishing of the divergence of the magnetisation part, the second being an identity. So **the charge the fluid transports is the convection current's, and the spin's bound current adds nothing to it**: the charge density is $\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$ and no bound contribution enters it, whatever the field.
 
 ## The Force, and Not the Torque
 
@@ -254,7 +254,7 @@ so the field acts on the charge current and the spin term is the free one's. **T
 | | charged scalar | charged spin | charged vector |
 | --- | --- | --- | --- |
 | the carrier | a complex function: two parameters | a word of four factors: eight parameters | the same word: eight parameters |
-| the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho$, read from the word | the scale, which is not a norm |
+| the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho_{\mathrm{num}}$, read from the word | the scale, which is not a norm |
 | the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/\varrho$ |
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |

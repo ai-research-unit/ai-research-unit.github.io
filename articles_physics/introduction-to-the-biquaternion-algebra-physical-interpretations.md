@@ -30,7 +30,7 @@
 
 **The two exceptions, named.** *The Spectral Strata* takes five entries and *The Remarkable Subspaces* takes three. The first is four regimes that a physicist names and uses: mass in motion, the rest frame, the light ray, the vacuum. Folding them into one article would put four dispersion relations in one file and lose the naming the rest of the menu relies on. The second is a state space — the split of the algebra into two geometries, the four-vector, and the state–observable–probability triple — and that triple is a reading the mathematics does not contain at all, because it is a reading and not a theorem.
 
-**Four companions sit beside an entry, and a companion is not an exception.** A companion reads a construction or a general statement that belongs to an entry but is not a section of the mathematics, so it takes no subsection of its own and changes no count of sections. There are four: the mirror beside I.1, the Fubini–Study geometry beside I.12, the operator chirality beside I.13, and the wave–particle duality beside III.2.
+**Three companions sit beside an entry, and a companion is not an exception.** A companion reads a construction or a general statement that belongs to an entry but is not a section of the mathematics, so it takes no subsection of its own and changes no count of sections. There are three: the Fubini–Study geometry beside I.12, the operator chirality beside I.13, and the wave–particle duality beside III.2.
 
 **Every other section takes one entry, and the entry reads all of its mathematics.** A section of eight mathematics articles does not become eight entries. It becomes one entry that states the section's result in brief, links the articles, and gives the readings. The reader who wants a proof follows the link; the reader who wants the meaning reads the entry.
 
@@ -61,7 +61,7 @@
 
 **An interpretation does not derive the physics from the algebra.** It identifies which physical object the algebraic structure is. The dynamics belongs to the other physics categories of the corpus.
 
-**Six entries depart from the four-part form.** Three were taken whole from the archive — the mirror, the two sectors and the group of invertibles — so they carry no source table and no readings, and their prose is the archive's. Three more predate the template — *Biquaternion Physical Interpretation of Operator Chirality*, *Wave–Particle Duality and the Fourier Transform* and *The Fubini–Study Geometry and the Biquaternion Norm* — and they state their results and link their sources in prose, without a source table and without labelled readings. The remaining twenty-seven follow the form exactly.
+**Five entries depart from the four-part form.** Two were taken whole from the archive — the two sectors and the group of invertibles — so they carry no source table and no readings, and their prose is the archive's. Three more predate the template — *Biquaternion Physical Interpretation of Operator Chirality*, *Wave–Particle Duality and the Fourier Transform* and *The Fubini–Study Geometry and the Biquaternion Norm* — and they state their results and link their sources in prose, without a source table and without labelled readings. The remaining twenty-seven follow the form exactly.
 
 **Labels are used where an entry is long enough to need them.** The thirteen algebra entries and the three analysis entries label every reading, with a letter after the subsection number (I.10.a, III.2.c); the carriers entry labels its readings in bold (IV.2.a); the three spin entries number theirs from one. A reader citing a spin reading cites the number, and a reader citing a companion cites a section.
 
@@ -73,7 +73,7 @@
 
 | subsection | from | the entry |
 | --- | --- | --- |
-| I.1 | The Algebra of Biquaternions, $8$ | The Element, the Six Subspaces and the Two Ledgers; *Mirror Biquaternions and the Phy–Psy Switch*, a companion |
+| I.1 | The Algebra of Biquaternions, $8$ | The Element, the Six Subspaces and the Two Ledgers |
 | I.2 | Matrix Representations, $4$ | The AXF Matrices: Axis-Free, Integer Entries; *The Pauli and Gamma Matrices: the Direction in the Display*, a companion |
 | I.3 | The Idempotents, the Ideals and the Peirce Decomposition, $7$ | Idempotents, Ideals and Observables |
 | I.4 | The Modules, $5$ | The Modules: What the Algebra Acts On |
@@ -135,7 +135,6 @@
 - [Introduction to the Algebra of Biquaternions](../articles_maths/the-biquaternion-algebra.html)
 - [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](../articles_maths/the-element-the-coordinates-and-the-conjugations.html)
 - [The Group of Involutions of the Biquaternion Algebra](../articles_maths/the-group-of-involutions.html)
-- [Mirror Biquaternions of the Biquaternion Algebra](../articles_maths/mirror-biquaternions-of-the-biquaternion-algebra.html)
 - [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html)
 - [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element.html)
 - [Zero Divisors and Invertibles in the Biquaternion Algebra](../articles_maths/zero-divisors-and-invertibles.html)
@@ -369,7 +368,7 @@
 
 **The archive is not a second reading of the subject.** The derived entries above are the category. The archived articles are kept for two reasons: their readings are being carried over one at a time, and a reader who wants the older and longer treatment of one point can still find it. An archived article is retired once its readings have been carried into an entry and that entry has been checked against it.
 
-**Four articles are not archived, because they survive.** *The Two Sectors: Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Group of Invertibles, the Cone and the Orders* is taken unchanged as II.1. *Mirror Biquaternions and the Phy–Psy Switch* is taken whole as a companion of I.1, after that entry, because its subject is one construction — the switch, the class and the Wick comparison — and a construction is not a section that one entry can absorb. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
+**Three articles are not archived, because they survive.** *The Two Sectors: Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Group of Invertibles, the Cone and the Orders* is taken unchanged as II.1. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
 
 ## The Limits of the Category
 
@@ -402,10 +401,10 @@
 ## Summary
 
 - The category is derived from the Mathematical menu and inherits its order. One hundred and fifty mathematics articles in twenty sections become thirty-three physics entries in twenty-three subsections.
-- The rule is one entry to one section, with two named exceptions: the spectral strata and the remarkable subspaces, and with four companions that sit beside an entry rather than replacing one.
+- The rule is one entry to one section, with two named exceptions: the spectral strata and the remarkable subspaces, and with three companions that sit beside an entry rather than replacing one.
 - Every entry links its mathematics, states the result in brief, gives labelled interpretations, and states the limits of each.
 - The spin is the last part of the geometry, after the rotations and the groups, because a spin is a weight of a representation of the rotation.
-- The forty superseded articles are kept in the archive as sources, and are retired one at a time as their readings are carried. Four articles are kept whole instead: this introduction, the two sectors, the group of invertibles, and the mirror.
+- The forty superseded articles are kept in the archive as sources, and are retired one at a time as their readings are carried. Three articles are kept whole instead: this introduction, the two sectors and the group of invertibles.
 - All thirty-three derived entries are written; none of the menu's links is dead for want of an article.
 
 ## Further Reading

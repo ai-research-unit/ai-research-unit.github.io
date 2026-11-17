@@ -189,7 +189,7 @@ $$
 \tilde P^{\mathrm{mech}}_\Phi=i\,\frac{E+ϙ c\,a'_t}{c}\,e_t+\bigl(\vec p-q\vec A\bigr),
 $$
 
-and it is gauge invariant: the phase's shift and the potential's shift cancel inside each component, which is the chart's form of the element companion's statement that every derivative in the current is covariant. The free current was not gauge invariant, and the coupling repairs that. It does not repair the sign: on the negative-frequency branch the temporal component is negative, and the positive definiteness of $\rho$ is exactly as absent as it was.
+and it is gauge invariant: the phase's shift and the potential's shift cancel inside each component, which is the chart's form of the element companion's statement that every derivative in the current is covariant. The free current was not gauge invariant, and the coupling repairs that. It does not repair the sign: on the negative-frequency branch the temporal component is negative, and the positive definiteness of $\rho_{\mathrm{num}}$ is exactly as absent as it was.
 
 **The vorticity.** The free flow is the gradient of the action and is therefore irrotational. The coupled flow is not:
 

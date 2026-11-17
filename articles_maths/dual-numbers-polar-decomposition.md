@@ -220,11 +220,11 @@ For $Q = -1 + s\varepsilon$ the modulus is $\varrho = 1$ and the sign is $u = -1
 
 ## Relation to the Two Partial Forms
 
-The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\rho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\rho = \sqrt{|a^2 - a'^2|}$ and $\theta_{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
+The dual polar form is the common degeneration of the complex and split-complex forms. Writing the complex modulus and angle as $\varrho = \sqrt{a^2 + a'^2}$ and $\theta = \arctan(a'/a)$, and the split-complex modulus and rapidity as $\varrho = \sqrt{|a^2 - a'^2|}$ and $\theta_{\mathrm{rpd}} = \operatorname{artanh}(a'/a)$, the dual form is obtained by sending the second-coordinate contribution to zero:
 
 $$
 \boxed{\;
-\rho \longrightarrow |q|, \qquad \theta \text{ or } \theta_{\mathrm{rpd}} \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\theta_{\mathrm{rpd}} j) \longrightarrow 1 + s\varepsilon
+\varrho \longrightarrow |q|, \qquad \theta \text{ or } \theta_{\mathrm{rpd}} \longrightarrow s = \frac{q'}{q}, \qquad \exp(i\theta) \text{ or } \exp(\theta_{\mathrm{rpd}} j) \longrightarrow 1 + s\varepsilon
 \;}.
 $$
 

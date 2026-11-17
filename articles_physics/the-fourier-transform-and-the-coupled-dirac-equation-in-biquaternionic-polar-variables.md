@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions* and *Mirror Biquaternions and the Phy–Psy Switch*. The word and its four brackets are the polar parent's, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule quoted in derived form:
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The word and its four brackets are the polar parent's, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule quoted in derived form:
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,

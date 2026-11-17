@@ -6,7 +6,7 @@
 
 **The parent prints the pair, and this article orders it.** [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html) writes the field as the four-factor word $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ and prints, boxed, the two exact real equations that the central field obeys. Nothing below re-derives them. Each term of that pair is assigned a power of one parameter, and the limit is the statement of which powers survive.
 
-**What the polar chart settles before any parameter appears.** Three things, and none of them is available in a form-first account. The amplitude of the limit is the word's scale $\varrho$ and not a coefficient read off a column. The density of the limit is the parent's Hermitian norm $\rho=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, which equals $2\varrho^{2}$ exactly when the boost is the identity and to no order otherwise. And the frame's two brackets — the boost's connection and the rotor's — carry no derivative of a rapidly varying object, so the parameter does not order them: they are either present or absent, and the parent's own class statement says which case closes.
+**What the polar chart settles before any parameter appears.** Three things, and none of them is available in a form-first account. The amplitude of the limit is the word's scale $\varrho$ and not a coefficient read off a column. The density of the limit is the parent's Hermitian norm $\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, which equals $2\varrho^{2}$ exactly when the boost is the identity and to no order otherwise. And the frame's two brackets — the boost's connection and the rotor's — carry no derivative of a rapidly varying object, so the parameter does not order them: they are either present or absent, and the parent's own class statement says which case closes.
 
 **The consequence is a restriction, and it is the article's first result.** The pair is closed on the central class, $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$, and the parent proves that class is invariant exactly under a central Hamiltonian. The limit therefore takes place inside the central class. A general field's word has four brackets and its pair is not closed, so there is nothing to order; the limit is not defined on it, and no truncation of the four brackets is claimed here.
 
@@ -50,10 +50,10 @@ with $\varrho>0$ real, $\theta_{\mathrm{pha}}$ central and real, the third facto
 **The limit's amplitude is the scale, and the limit's density is the Hermitian norm.** The parent's two norms read different factors: the quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ and reads the scale and the phase, and the Hermitian norm is
 
 $$
-\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}
+\rho_{\mathrm{num}}=2\,\mathrm{Sc}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}
 $$
 
-and reads the scale and the boost. On the central class $\theta_{\mathrm{rpd}}=0$ and $\rho=2\varrho^{2}$, so the density of the limit is the Hermitian norm evaluated where the boost is the identity. **Away from that class the two do not agree at any order**, and that is why the limit is stated there and not here.
+and reads the scale and the boost. On the central class $\theta_{\mathrm{rpd}}=0$ and $\rho_{\mathrm{num}}=2\varrho^{2}$, so the density of the limit is the Hermitian norm evaluated where the boost is the identity. **Away from that class the two do not agree at any order**, and that is why the limit is stated there and not here.
 
 **The class, and why it is the limit's domain.** On a central field the third and fourth brackets of the parent's identity vanish and the first two remain; the equation then separates into the parent's boxed pair. The parent also proves the class is invariant exactly under a central Hamiltonian and not in general. The limit inherits both facts: the pair it orders exists on the central class, and the class stays inside itself only for the Hamiltonian that the parent names.
 
@@ -247,7 +247,7 @@ The cost is one restriction. The pair is closed on the central class, that class
 | $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | Angle and axis of the rotor |
 | $\varepsilon e_{t}$ | The rotor on the central class |
 | $\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm |
-| $\rho=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | Hermitian norm; the density |
+| $\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | Hermitian norm; the density |
 | $\vec\nabla_\Phi S$ | Phase gradient; real quaternion in $\mathbb{B}_{H}$ |
 | $\epsilon=1/(k_{\Phi}L)$ | The parameter of the limit |
 | $k_{\Phi}=\lvert\vec p\rvert/\hbar$ | The phase's wave number |

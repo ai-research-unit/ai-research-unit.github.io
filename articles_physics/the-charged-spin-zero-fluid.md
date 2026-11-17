@@ -202,7 +202,7 @@ was verified to hold in both slots with no residual term. Each of the three term
 **The free article's class was irrotational barotropic flows with a Korteweg stress, and the charged fluid has left that class.** Irrotationality was one of the four items of the criterion and the mechanical velocity is not a gradient. **What replaces the item is a pair of conditions**: the vorticity is closed, which is automatic for a field strength, and its periods are the fluxes, which is §*The Circulation*'s formula. The class the charged reverse map is defined on is therefore
 
 $$
-\Bigl\{(\rho,S_{\tilde\Xi},A)\;:\;\rho>0,\ \ \tilde V_\Phi=\tfrac{1}{m}\bigl(\tilde\nabla_\Phi S_{\tilde\Xi}+ϙ\tilde A_\Phi\bigr),\ \ \mathrm{d}\bigl(m\tilde V_\Phi\bigr)=ϙF\Bigr\},
+\Bigl\{(\rho_{\mathrm{num}},S_{\tilde\Xi},A)\;:\;\rho_{\mathrm{num}}>0,\ \ \tilde V_\Phi=\tfrac{1}{m}\bigl(\tilde\nabla_\Phi S_{\tilde\Xi}+ϙ\tilde A_\Phi\bigr),\ \ \mathrm{d}\bigl(m\tilde V_\Phi\bigr)=ϙF\Bigr\},
 $$
 
 and the third member is not a condition on the flow alone: **the flow and the connection are one datum, and neither determines the other.** That is what the coupling does to the correspondence, and it is a change of the domain and not of the strength of either arrow.
@@ -235,7 +235,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 | | charged scalar | charged spin | charged vector |
 | --- | --- | --- | --- |
 | the carrier | a complex function: two parameters | a word of four factors: eight parameters | the same word: eight parameters |
-| the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho$, read from the word | the scale, which is not a norm |
+| the density | $\rho_{\mathrm{num}}=\lvert\Xi\rvert^{2}$ | $\rho_{\mathrm{num}}$, read from the word | the scale, which is not a norm |
 | the velocity | $\tilde P^{\mathrm{mech}}/m$ | the frame, $ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the field's direction, $\tilde A/\varrho$ |
 | is it an invertible element? | only where the quantum potential vanishes | always, $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ | its boost is; the element is not a four-vector |
 | the vorticity | the field strength, $ϙF/m$ | the frame's gradient, and not $ϙF/m$ | not established; the free case's is $F$ minus a radial term |
@@ -258,7 +258,7 @@ and the third member is not a condition on the flow alone: **the flow and the co
 
 **The forward arrow is unchanged and exact.** Any nowhere-zero solution of the coupled equation gives a positive density, an action and a mechanical momentum, by the polar substitution, and the substitution is a bijection on the $N$-regular set. The connection is a datum of the equation and not of the solution, so it costs the arrow nothing.
 
-**The reverse arrow now takes three data and returns one field.** Given $(\rho,S_{\tilde\Xi},A)$ with $\rho>0$, the field is $\varrho e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, and it solves the coupled equation iff the pair of §*The Force* and §*The Vorticity* holds. **The extra structure is therefore no longer a constitutive law internal to the fluid; it is a connection external to it**, and the classical object it names is a charged fluid with a prescribed field.
+**The reverse arrow now takes three data and returns one field.** Given $(\rho_{\mathrm{num}},S_{\tilde\Xi},A)$ with $\rho_{\mathrm{num}}>0$, the field is $\varrho e^{iS_{\tilde\Xi}/\hbar}\varepsilon$, and it solves the coupled equation iff the pair of §*The Force* and §*The Vorticity* holds. **The extra structure is therefore no longer a constitutive law internal to the fluid; it is a connection external to it**, and the classical object it names is a charged fluid with a prescribed field.
 
 | | the word's data | what the reverse map needs beyond it | the medium it makes |
 | --- | --- | --- | --- |

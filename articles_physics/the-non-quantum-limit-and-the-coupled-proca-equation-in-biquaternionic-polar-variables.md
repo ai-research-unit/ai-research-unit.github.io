@@ -97,7 +97,7 @@ $$
 
 ## Order One: Three Transport Laws
 
-**The density's law.** $\partial_{r'_{t}}\rho+\vec\nabla_\Phi\cdot(\rho\vec v)=0$ with $\rho=\varrho^{2}$ and $\vec v$ the mechanical velocity of the frame's boost. **The amplitude's transport, and the phase does not appear**, which is the counterpart of the free chart's absence of a current: here there is one because there is a density and a velocity.
+**The density's law.** $\partial_{r'_{t}}\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec v)=0$ with $\rho_{\mathrm{num}}=\varrho^{2}$ and $\vec v$ the mechanical velocity of the frame's boost. **The amplitude's transport, and the phase does not appear**, which is the counterpart of the free chart's absence of a current: here there is one because there is a density and a velocity.
 
 **The velocity's law.** The boost's connection transported along the ray: with the coupling, the Lorentz force; without it, the straight ray. **The complex Proca field's rays are the same rays as the Klein–Gordon field's**, because both have the same mass shell.
 

@@ -14,7 +14,7 @@
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions* and *Mirror Biquaternions and the Phy–Psy Switch*. The transform is the one of *Derivatives, Fields and Transforms*, with kernel $\exp(-2\pi\rho\omega r_t'/c)$ and root $\rho=i$ in the corpus, and the symbol rule
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The transform is the one of *Derivatives, Fields and Transforms*, with kernel $\exp(-2\pi\rho\omega r_t'/c)$ and root $\rho=i$ in the corpus, and the symbol rule
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
@@ -148,7 +148,6 @@ The amplitude's own word has four factors, and they are constants of the mode, b
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and its symbol rule.
 - *Wave–Particle Duality and the Fourier Transform*, for the transform as a change of description and the interval as a symbol.
 - *Biquaternion Continuous Harmonic Analysis*, for the convolution theorem and Plancherel's condition.
-- *Mirror Biquaternions and the Phy–Psy Switch*, for the sector bookkeeping.
 - *Wave–Particle Duality and the Weight of a Level Set*, for the measure-theoretic reading of a support.
 - M. Plancherel, "Contribution à l'étude de la représentation d'une fonction arbitraire par des intégrales définies," *Rendiconti del Circolo Matematico di Palermo* **30** (1910) 289–335, for the isometry.
 - L. Mandel and E. Wolf, *Optical Coherence and Quantum Optics* (Cambridge, 1995), Part I, for the modulation and shift theorems in the form used here.

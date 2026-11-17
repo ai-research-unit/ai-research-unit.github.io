@@ -10,7 +10,7 @@
 
 **What the article does not do.** It does not produce a second integral, does not define the continuum measure, does not decide the second-quantisation question, and does not evaluate a kernel that the element companion has not already evaluated. The reading is exact where the algebra is exact, and the article says at each step which statements are identities and which are formal.
 
-**Conventions.** The chart is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho\ge0$ real, $\theta_{\mathrm{pha}}$ central real modulo $\pi$, $\tilde U_{\Psi,\mathrm b}$ a Hermitian unit of rapidity $\theta_{\mathrm{rpd}}$ about the axis $\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}$ a real rotor. For a central field $\theta_{\mathrm{rpd}}=0$, $\vec u_{\mathrm b}$ is empty, and $\tilde u_{\mathrm r}=\varepsilon e_t$ with $\varepsilon=\pm1$ the branch sign. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}$ for a central field, and the parent's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n=2\varrho^{2}$ is twice it; this article uses $n$ and $\varrho^{2}$ interchangeably, and states which. The algebra, the sectors, the pairing, the action and the $i\epsilon$ are the element companion's.
+**Conventions.** The chart is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\varrho\ge0$ real, $\theta_{\mathrm{pha}}$ central real modulo $\pi$, $\tilde U_{\Psi,\mathrm b}$ a Hermitian unit of rapidity $\theta_{\mathrm{rpd}}$ about the axis $\vec u_{\mathrm b}$, and $\tilde u_{\mathrm r}$ a real rotor. For a central field $\theta_{\mathrm{rpd}}=0$, $\vec u_{\mathrm b}$ is empty, and $\tilde u_{\mathrm r}=\varepsilon e_t$ with $\varepsilon=\pm1$ the branch sign. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}$ for a central field, and the parent's $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n=2\varrho^{2}$ is twice it; this article uses $n$ and $\varrho^{2}$ interchangeably, and states which. The algebra, the sectors, the pairing, the action and the $i\epsilon$ are the element companion's.
 
 ## The Exponent in the Chart
 
@@ -146,7 +146,7 @@ The kernel's word is scale = van Vleck, angle = classical action over $\hbar$ pl
 | $\varrho$, $\theta_{\mathrm{pha}}$ | Scale and central angle of the field |
 | $\varepsilon$ | Branch sign of the modulus; the trivial rotor |
 | $n=\varrho^{2}=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Density, and the chart's natural coordinate |
-| $\rho=2n$ | The parent's density, twice $n$ |
+| $\rho_{\mathrm{num}}=2n$ | The parent's density, twice $n$ |
 | $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$ | The first-order kinetic term; no scale rate |
 | $\varrho\,d\varrho=\frac12dn$ | The Jacobian's cancellation |
 | $\vec v=\hbar\vec\nabla\theta_{\mathrm{pha}}/m$ | Flow velocity of the continuity saddle |

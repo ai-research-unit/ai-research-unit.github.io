@@ -125,18 +125,18 @@ $$
 $$
 where $S=\mathbb{C}^{2}$ is the spinor space and $S^{*}$ its dual, and $S_+\cong S_-\cong S$ as left modules. Left multiplication acts on the first factor, right multiplication on the second:
 $$
-L_{\tilde Q}=\rho(\tilde Q)\otimes 1,
+L_{\tilde Q}=\Delta_{\mathrm{rep}}(\tilde Q)\otimes 1,
 \qquad
-R_{\tilde Q}=1\otimes\rho(\tilde Q)^{T},
+R_{\tilde Q}=1\otimes\Delta_{\mathrm{rep}}(\tilde Q)^{T},
 \qquad
-R_{\tilde Q^{*}}=1\otimes\bar\rho(\tilde Q),
+R_{\tilde Q^{*}}=1\otimes\bar\Delta_{\mathrm{rep}}(\tilde Q),
 $$
-where $\rho$ is the defining representation on $S$ and $\bar\rho$ its conjugate. The two factors commute, so the exponents add:
+where $\Delta_{\mathrm{rep}}$ is the defining representation on $S$ and $\bar\Delta_{\mathrm{rep}}$ its conjugate. The two factors commute, so the exponents add:
 $$
 \exp\bigl(tL_A\bigr)\exp\bigl(sR_B\bigr)=\exp\bigl(tL_A+sR_B\bigr).
 $$
 
-For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta_{\mathrm{axr}}/2}$ and $\bar\rho(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta_{\mathrm{axr}}/2}$. The tensor weights, in additive notation, are the four sums
+For the rotor, $\Delta_{\mathrm{rep}}(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta_{\mathrm{axr}}/2}$ and $\bar\Delta_{\mathrm{rep}}(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta_{\mathrm{axr}}/2}$. The tensor weights, in additive notation, are the four sums
 $$
 \tfrac{\theta_{\mathrm{axr}}}{2}-\tfrac{\theta_{\mathrm{axr}}}{2}=0,\qquad
 \tfrac{\theta_{\mathrm{axr}}}{2}+\tfrac{\theta_{\mathrm{axr}}}{2}=\theta_{\mathrm{axr}},\qquad
@@ -151,9 +151,9 @@ that is $(\theta_{\mathrm{axr}},0,0,-\theta_{\mathrm{axr}})$. For the boost, bot
 $$
 \operatorname{spec}L_{\tilde u_{\mathrm r}}=\{e^{i\theta_{\mathrm{axr}}/2},e^{i\theta_{\mathrm{axr}}/2},e^{-i\theta_{\mathrm{axr}}/2},e^{-i\theta_{\mathrm{axr}}/2}\},
 $$
-each weight twice. The one-sided operator is $2\rho$ as a left module: two copies of the Weyl module, not the Dirac module $\rho\oplus\bar\rho$. One Peirce column is one elementary spinor, a Weyl spinor in the language of physics; the whole of $L$ is a pair of them, which is a Dirac spinor (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*). The precise phrase is therefore: the one-sided operator, restricted to one Peirce component, is the half-spin.
+each weight twice. The one-sided operator is $2\Delta_{\mathrm{rep}}$ as a left module: two copies of the Weyl module, not the Dirac module $\Delta_{\mathrm{rep}}\oplus\bar\Delta_{\mathrm{rep}}$. One Peirce column is one elementary spinor, a Weyl spinor in the language of physics; the whole of $L$ is a pair of them, which is a Dirac spinor (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*). The precise phrase is therefore: the one-sided operator, restricted to one Peirce component, is the half-spin.
 
-**The two Peirce copies are not the two Lorentz chiralities.** Both $S_+$ and $S_-$ carry the same representation $\rho$; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the two tensor factors $S$ and $S^{*}$, that is the left and right slots.
+**The two Peirce copies are not the two Lorentz chiralities.** Both $S_+$ and $S_-$ carry the same representation $\Delta_{\mathrm{rep}}$; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the two tensor factors $S$ and $S^{*}$, that is the left and right slots.
 
 **Factor by factor.** For a general word the factors do not commute and $\lambda_\pm$ are not $e^{\pm i\theta_{\mathrm{axr}}/2}$ or $e^{\mp\theta_{\mathrm{rpd}}/2}$. There is no single half-angle of a general polar word; the additive relation is the statement for the pure factors and for commuting axes.
 
@@ -267,7 +267,7 @@ The four factors give the table of exponents. The scale keeps $\ln \varrho$, the
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the spinor matrix on either Peirce column |
 | $S_+=\mathbb{B}\tilde\Pi_+$, $S_-=\mathbb{B}\tilde\Pi_-$ | the two Peirce spinor spaces |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, $\mathbb{B}\cong S\otimes S^{*}$ |
-| $\rho,\bar\rho$ | the defining representation and its conjugate |
+| $\Delta_{\mathrm{rep}},\bar\Delta_{\mathrm{rep}}$ | the defining representation and its conjugate |
 | $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ | the boost |
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ | the rotor |
 | $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ | the rapidity and the rotation angle |

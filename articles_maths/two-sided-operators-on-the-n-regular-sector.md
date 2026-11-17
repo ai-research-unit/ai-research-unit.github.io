@@ -625,7 +625,7 @@ $$
 \operatorname{spec}\mathrm{Sd}_{\tilde Q}
 =\bigl\{\lambda_+\bar\lambda_+,\ \lambda_+\bar\lambda_-,\ \lambda_-\bar\lambda_+,\ \lambda_-\bar\lambda_-\bigr\}.
 $$
-The two-sided operator is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\rho\otimes\bar\rho$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in *The Two-Sided Exponential on the N-Regular Sector*.
+The two-sided operator is therefore the two-slot operator: its spectrum is the four products, not the two eigenvalues. In representation-theoretic terms it is $\Delta_{\mathrm{rep}}\otimes\bar\Delta_{\mathrm{rep}}$, the complexified vector representation: the vector weights are the sums of the two spinor weights. The exponent reading of this doubling is in *The Two-Sided Exponential on the N-Regular Sector*.
 
 The image of the two-sided operator on the group of invertibles is $CO^{+}(1,3)$, the kernel is $U(1)$, and the isometry slice is $\varrho=1$, where the image is $SO^{+}(1,3)$. On the norm-one slice the map is the double cover $SL(2,\mathbb{C})\to SO^{+}(1,3)$. On the null cone the two-sided operator survives as an operator of complex rank one, with image the line spanned by $\tilde Q\tilde Q^{*}$.
 
@@ -655,7 +655,7 @@ On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $\math
 | $\lambda_i\bar\lambda_j$ | the four eigenvalues of the two-sided operator in its common eigenbasis |
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the matrix of $\tilde Q$ in the eigenbasis matrix model |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$ |
-| $\rho,\bar\rho$ | the defining representation on $S$ and its conjugate |
+| $\Delta_{\mathrm{rep}},\bar\Delta_{\mathrm{rep}}$ | the defining representation on $S$ and its conjugate |
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
 | $\tilde\Pi_\pm$, $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the eigenprojections and the two left ideals of the one-sided reading (Peirce index) |
 | $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ | the rapidity and the rotation angle |

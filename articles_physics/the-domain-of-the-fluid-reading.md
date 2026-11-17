@@ -28,7 +28,7 @@
 
 | extraction | formula | fails because |
 | --- | --- | --- |
-| density | $\rho=\varrho^{2}$ | $\varrho=0$ on the cone |
+| density | $\rho_{\mathrm{num}}=\varrho^{2}$ | $\varrho=0$ on the cone |
 | phase | $\theta_{\mathrm{pha}}=\tfrac12\arg N$ | $\arg0$ is undefined |
 | velocity | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the boost is not extracted |
 | spin | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor is not extracted |
@@ -183,7 +183,7 @@ The domain is a condition at each event. The Klein–Gordon flow and the Dirac f
 |---|---|
 | $N(\tilde Q)=Q_t^{2}+\vec Q\cdot\vec Q$ | Quaternionic norm |
 | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | Modulus, $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}=N$ |
-| $\rho=\varrho^{2}$ | Density |
+| $\rho_{\mathrm{num}}=\varrho^{2}$ | Density |
 | $\tilde X\vec e_z=\pm i\tilde X$ | Element of definite value |
 | $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=0$ | Null wavevector |
 | $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ | Two-factor decomposition |

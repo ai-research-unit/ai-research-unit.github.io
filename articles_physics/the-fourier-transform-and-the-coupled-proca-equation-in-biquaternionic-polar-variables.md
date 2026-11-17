@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions* and *Mirror Biquaternions and the Phy–Psy Switch*. The covariant derivative is that of *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule for a gauge-covariant operator:
+The algebra, the products, the two forms, the invertibles and the sectors are those of *Algebra and Element Conventions*, *Product and Form Conventions*, *Norm and Pairing Conventions*, *Physics Units and Common Elements Conventions*. The covariant derivative is that of *Gauge Fields and the Covariant Derivative*, and the transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule for a gauge-covariant operator:
 
 $$
 \tilde\nabla_{\mathrm{gco},\mu}\longmapsto i\pi_\mu ,
@@ -183,7 +183,6 @@ The gauge transformation is the phase coordinate's motion, and on the symbol it 
 - *The Fourier Transform and the Coupled Proca Equation in Biquaternionic Form*, for the same symbol in components, and for the obstruction's failure to be a function of $\pi$.
 - *Gauge Fields and the Covariant Derivative*, for the commutator, the curvature and the square splitting.
 - *Degenerate Solutions of the Biquaternionic Proca Equation*, for the lightlike set whose complexified vanishing is the partner's $\varrho=0$.
-- *Mirror Biquaternions and the Phy–Psy Switch*, for the sector bookkeeping.
 - *Derivatives, Fields and Transforms*, for the symbol rule.
 - *Norm and Pairing Conventions*, for the norm's argument and the Hermitian pairing.
 - R. Utiyama, "Invariant Theoretical Interpretation of Interaction," *Physical Review* **101** (1956) 1597–1607, for the minimal substitution as a translation of the momentum.

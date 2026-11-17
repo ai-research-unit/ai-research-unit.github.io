@@ -26,7 +26,7 @@ Dividing by $i\hbar\,c$ is always possible, because $i\hbar\,c$ is a central uni
 
 The two writings are one equation, and they say different things about it. The first names the observable: it states the dynamics as left multiplication by the Hermitian $\tilde H_\Psi$, and it is the writing in which $\tilde H_\Psi$ is read as an energy. The second names the generator: it states the dynamics as left multiplication by an anti-Hermitian element, and it places that element in the same four-dimensional real space that carries the four-vectors. The generator is written $\tilde H_\Phi/\hbar\,c$: the same letter in the other sector, over one real scale, so the second writing keeps the name of the object it came from. The central $i$ is the canonical isomorphism between the two sectors. Among the roots of $-e_t$ no other supplies one, up to sign. A real multiple $\lambda\,i$ supplies the same isomorphism in another time unit, since $\lambda\,i\hbar\,c\,\partial/\partial r'_t$ is $i\hbar\,c\,\partial/\partial(\lambda^{-1}r'_t)$; and the division by $\hbar\,c$ is not part of the isomorphism at all, which is why it is written beside it and not inside the glyph.
 
-The pair $\tilde H_\Psi$, $\tilde H_\Phi$ is the switch of *Mirror Biquaternions and the Phy–Psy Switch*, applied to the one object this article
+The pair $\tilde H_\Psi$, $\tilde H_\Phi$ is the Phy–Psy switch applied to the one object this article
 carries. This article uses the pair and does not rebuild it; what it adds is the equation in which the two members stand.
 
 Three things in and around $\mathbb{B}$ play the role of $i$, and only one of them is the $i$ of the two writings above. Confusing them produces equations that look like the Schrödinger equation and do not preserve the trace. The first section separates them by role and decides which one the writings use.
@@ -159,9 +159,9 @@ which is the zero-divisor cone of the algebra. A generic element is off it — a
 **The density is the Hermitian norm.** Put
 
 $$
-\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)\ge0,
+\rho_{\mathrm{num}}=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)\ge0,
 \qquad
-\tilde{Ϛ}_{\Psi}=\frac{\tilde\Xi\tilde\Xi^{*}}{\rho}\in\mathbb{B}_{\Psi},
+\tilde{Ϛ}_{\Psi}=\frac{\tilde\Xi\tilde\Xi^{*}}{\rho_{\mathrm{num}}}\in\mathbb{B}_{\Psi},
 $$
 
 which is Hermitian, positive and of unit trace, so $\tilde{Ϛ}_{\Psi}$ is a state in the sense of the companion article. The field and that state are not the same object; they are related by $\tilde\Xi\mapsto\tilde\Xi\tilde\Xi^{*}$, and the same central $i$ acts as the complex structure on the field while exchanging the sectors in which the operator is expressed. The expectation of the Hamiltonian in a field is $\mathrm{Sc}(\tilde H_\Psi\tilde{Ϛ}_{\Psi})$, which is real by the Hermiticity above.
@@ -213,7 +213,7 @@ $$
 \qquad\text{i.e.}\qquad i\hbar\,c\,\partial/\partial r'_t\tilde{Ϛ}_{\Psi} = [\tilde H_\Psi,\tilde{Ϛ}_{\Psi}]\;},
 $$
 
-which is the von Neumann equation of the companion article. The normalisation by $\rho$ is a constant scalar and passes through the derivative, so the same equation holds for the unit-trace state. The mean of an observable in the field is read from the same object and needs nothing further: for Hermitian $\tilde H_\Psi$,
+which is the von Neumann equation of the companion article. The normalisation by $\rho_{\mathrm{num}}$ is a constant scalar and passes through the derivative, so the same equation holds for the unit-trace state. The mean of an observable in the field is read from the same object and needs nothing further: for Hermitian $\tilde H_\Psi$,
 
 $$
 \langle\tilde H_\Psi\rangle_{\tilde{Ξ}} = \frac{\mathrm{Sc}(\tilde H_\Psi\tilde{Ξ}\tilde{Ξ}^{*})}{\mathrm{Sc}(\tilde{Ξ}\tilde{Ξ}^{*})} = \mathrm{Sc}\bigl(\tilde H_\Psi\tilde{Ϛ}_{\Psi}\bigr)\in\mathbb{R},

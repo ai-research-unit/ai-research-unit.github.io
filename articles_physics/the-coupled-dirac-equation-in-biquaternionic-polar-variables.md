@@ -45,7 +45,7 @@ Differentiate the word and divide by it, as the parent does, and add the connect
 $$
 \tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
 =\tilde\Xi^{-1}\frac{\partial\tilde\Xi}{\partial R_\mu}+\frac{i\,ϙ}{\hbar}A_\mu
-=\frac{1}{2}\frac{\partial\ln\rho}{\partial R_\mu}
+=\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}
 +i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}
 +\frac{i\,ϙ}{\hbar}A_\mu
 +\tilde u_{\mathrm r}^{-1}\Bigl(\tilde U_{\Psi,\mathrm b}^{-1}\frac{\partial\tilde U_{\Psi,\mathrm b}}{\partial R_\mu}\Bigr)\tilde u_{\mathrm r}
@@ -223,7 +223,7 @@ The rotor is the spin and the coupling does not turn it.
 
 - No new solution. The field is the element form's and the word is a re-coordinatisation of it.
 - No new prediction. The equation is the coupled equation of the element form, written in eight real coordinates.
-- No derivation of the current beyond the element form's: the chart's current is $J_t=\rho\cosh\theta_{\mathrm{rpd}}$, $J_\eta=\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, which is the same object in the chart's letters.
+- No derivation of the current beyond the element form's: the chart's current is $J_t=\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$, $J_\eta=\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$, which is the same object in the chart's letters.
 - No spin dynamics in a background, as §*The Spin Transport* states.
 - No closure of the general case: the four brackets are coupled and the chart does not close them.
 
@@ -260,7 +260,7 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 | Symbol | Meaning |
 | --- | --- |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word: scale, central phase, boost, rotor |
-| $\varrho>0$ | Scale; $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is the density |
+| $\varrho>0$ | Scale; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is the density |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; **the gauge-dependent coordinate** |
 | $\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
 | $\theta_{\mathrm{axr}}\in[0,2\pi)$ | Angle of the rotor $\tilde u_{\mathrm r}$; $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ |

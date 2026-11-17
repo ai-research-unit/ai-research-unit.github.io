@@ -19,10 +19,10 @@ is a bijection onto the N-regular set, with $\varrho>0$, $\theta_{\mathrm{pha}}\
 *First, the action in the word.* The kinetic term becomes the phase's term and nothing else: the scale, the boost and the rotor contribute to it only through the density, and the density is a canonical function of the parameters. The potential term becomes the potential as a function of the six non-scale, non-phase parameters. The action is
 
 $$
-S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho\,V\Bigr]
+S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}}\,V\Bigr]
 $$
 
-with $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $V$ the potential's scalar part in the frame, and it carries no velocity for any parameter other than the phase.
+with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $V$ the potential's scalar part in the frame, and it carries no velocity for any parameter other than the phase.
 
 *Second, the constraint structure.* Six of the eight Euler–Lagrange equations contain no time derivative and are constraints on the parameters; the two that do are the evolution of $\varrho$ and of $\theta_{\mathrm{pha}}$. The constraints are not optional and they are not multipliers: the parameterisation is exact, so no Lagrange multiplier is needed for the unit conditions, and the constraints are *equations of motion* of the constrained system. Getting this distinction right is the article's main technical point.
 
@@ -39,7 +39,7 @@ Substituting the word into the coupled action is a computation in three parts: t
 $$
 \mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R\Bigr]
 =\tilde\Xi\text{-bilinear}\;\Longrightarrow\;
--\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}+\text{a total divergence},
+-\rho_{\mathrm{num}}\,\partial_{r'_t}\theta_{\mathrm{pha}}+\text{a total divergence},
 $$
 
 and its content is a statement about types. Differentiate the word, divide by it, and the four brackets appear: the scale bracket, the phase bracket, the boost bracket and the rotor bracket. The pairing takes the scalar part, and the scalar part of a product of brackets vanishes unless the types match. The scale bracket is a real scalar and contributes with the phase bracket's central imaginary part; the boost bracket is Hermitian and the rotor bracket is a real vector, and the two of them pair with each other. What survives the temporal slot is the phase's derivative times the density, and the rest is a divergence.
@@ -48,10 +48,10 @@ and its content is a statement about types. Differentiate the word, divide by it
 
 $$
 \frac{\hbar c}{2}\int\mathrm{d}^{4}\varrho\;\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R\Bigr]
-=-\hbar c\int\mathrm{d}^{4}\varrho\;\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}+\text{boundary},
+=-\hbar c\int\mathrm{d}^{4}\varrho\;\rho_{\mathrm{num}}\,\partial_{r'_t}\theta_{\mathrm{pha}}+\text{boundary},
 $$
 
-with $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. **The coefficient is $\cosh\theta_{\mathrm{rpd}}$ and not one**, and the reason is the one the element article's Noether current already gives: the density of this field is not $\varrho^{2}$ but $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, because the four-velocity's temporal slot is $\cosh\theta_{\mathrm{rpd}}$ and the density is the temporal slot of the current. The boost's rapidity is therefore in the kinetic term, and the article writes it out rather than absorbing it, because the absorption would hide the only place where the boost enters the action.
+with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. **The coefficient is $\cosh\theta_{\mathrm{rpd}}$ and not one**, and the reason is the one the element article's Noether current already gives: the density of this field is not $\varrho^{2}$ but $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, because the four-velocity's temporal slot is $\cosh\theta_{\mathrm{rpd}}$ and the density is the temporal slot of the current. The boost's rapidity is therefore in the kinetic term, and the article writes it out rather than absorbing it, because the absorption would hide the only place where the boost enters the action.
 
 **Why the rotor contributes nothing to the kinetic term.** The rotor's bracket is a real vector and its only partner in the scalar part is the boost bracket, which is Hermitian; the product of a Hermitian and a real vector is a material-sector element whose scalar part vanishes in the temporal slot. The rotor's dynamics therefore enters the action only through the potential term's dependence on $\theta_{\mathrm{axr}}$, and that is a fact about the pairing and not a choice.
 
@@ -66,7 +66,7 @@ $$
 So the potential adds one algebraic term and no derivative, and the action's potential term is
 
 $$
--\rho\,V,\qquad
+-\rho_{\mathrm{num}}\,V,\qquad
 V=\text{the scalar part of the frame's image of }\tfrac{ϙ}{\hbar}\tilde A_\Phi,
 $$
 
@@ -77,12 +77,12 @@ with $V$ a real function of $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\the
 **The action, written once.**
 
 $$
-\boxed{\;S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho\,V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})-m c^{2}\,\varrho^{2}\Bigr]\;}
+\boxed{\;S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}}\,V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})-m c^{2}\,\varrho^{2}\Bigr]\;}
 $$
 
-with $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. The third term is the mass's, written in the chart's letters; the second is the potential's; the first is the only term with a velocity.
+with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. The third term is the mass's, written in the chart's letters; the second is the potential's; the first is the only term with a velocity.
 
-**One caution about the first term's coefficient.** The coefficient $\hbar c\rho$ contains the rapidity, so the action is *not* linear in the velocities in the naive sense: $\rho$ depends on $\theta_{\mathrm{rpd}}$, and $\theta_{\mathrm{rpd}}$ is one of the parameters whose velocity does not appear. The action is linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$ with a coefficient that depends on a coordinate. That is the standard shape of a first-order constrained system and it is the reason the Dirac analysis is needed rather than a Legendre transform.
+**One caution about the first term's coefficient.** The coefficient $\hbar c\rho_{\mathrm{num}}$ contains the rapidity, so the action is *not* linear in the velocities in the naive sense: $\rho_{\mathrm{num}}$ depends on $\theta_{\mathrm{rpd}}$, and $\theta_{\mathrm{rpd}}$ is one of the parameters whose velocity does not appear. The action is linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$ with a coefficient that depends on a coordinate. That is the standard shape of a first-order constrained system and it is the reason the Dirac analysis is needed rather than a Legendre transform.
 
 ## The Constraint Structure
 
@@ -93,19 +93,19 @@ The action is first order in eight parameters, one of which has its velocity in 
 $$
 \pi_{\varrho}=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}\varrho)}=0,
 \qquad
-\pi_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho,
+\pi_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho_{\mathrm{num}},
 \qquad
 \pi_{\theta_{\mathrm{rpd}}}=\pi_{\theta_{\mathrm{axr}}}=\pi_{u_{\mathrm b}}=\pi_{u_{\mathrm r}}=0 .
 $$
 
-**Seven of the eight momenta either vanish or are fixed functions of the coordinates.** Only $\pi_{\theta_{\mathrm{pha}}}$ is a genuine momentum, and even it is not independent: it is $-\hbar c\rho$, a function of $\varrho$ and $\theta_{\mathrm{rpd}}$.
+**Seven of the eight momenta either vanish or are fixed functions of the coordinates.** Only $\pi_{\theta_{\mathrm{pha}}}$ is a genuine momentum, and even it is not independent: it is $-\hbar c\rho_{\mathrm{num}}$, a function of $\varrho$ and $\theta_{\mathrm{rpd}}$.
 
 **The count.** Eight parameters, eight Euler–Lagrange equations, of which two carry a time derivative — the equation of $\varrho$ and the equation of $\theta_{\mathrm{pha}}$ — and six do not. The six without a time derivative are **constraints**, and their number is the number of parameters whose velocity the action does not contain.
 
 **The constraint equations.** Varying the six parameters whose velocities are absent gives
 
 $$
-\frac{\partial}{\partial p}\bigl(\rho V\bigr)=0
+\frac{\partial}{\partial p}\bigl(\rho_{\mathrm{num}} V\bigr)=0
 \qquad\text{for}\qquad p\in\{\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r}\},
 $$
 
@@ -119,7 +119,7 @@ $$
 \partial_{r'_t}\bigl(\varrho^{2}\cosh\theta_{\mathrm{rpd}}\bigr)=0 .
 $$
 
-The second is the continuity equation with the density $\rho$; the first is the guidance equation with the potential and the mass added. In the chart's letters these are the Madelung pair with a boost factor, and the boost factor is the density's.
+The second is the continuity equation with the density $\rho_{\mathrm{num}}$; the first is the guidance equation with the potential and the mass added. In the chart's letters these are the Madelung pair with a boost factor, and the boost factor is the density's.
 
 **No Lagrange multipliers for the unit conditions.** This is the point on which the polar parameterisation earns its place. The boost $\tilde U_{\Psi,\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ are invertible *by construction*, because they are exponentials of a rapidity times an axis and of an angle times an axis; the axes are unit vectors and the parameterisation respects that. No condition $\tilde U\tilde U^{\natural}=e_t$ has to be imposed, so no multiplier is needed for it. **The tensor formulations of the spin-half fluid need three multipliers for exactly these conditions**, and the article's contribution is to record that the exact parameterisation removes them.
 
@@ -134,14 +134,14 @@ The word has a phase, and a phase has a current. The current the word produces i
 **The phase current.** Because the action depends on $\theta_{\mathrm{pha}}$ only through its derivative, the phase is a cyclic coordinate and the conjugate momentum is conserved:
 
 $$
-\pi_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho=\text{constant},
+\pi_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho_{\mathrm{num}}=\text{constant},
 \qquad
-\partial_{r'_t}\rho=0 .
+\partial_{r'_t}\rho_{\mathrm{num}}=0 .
 $$
 
 This is the Noether current of the word's phase symmetry, and it is the statement that the density is conserved along the flow.
 
-**What the element action produces.** The element action's local-phase Noether current is the display of the element companion: a sum over the parts in the temporal slot and a difference in the spatial slots, which is the Gordon pairing and which equals the chart's $\rho\cosh\theta_{\mathrm{rpd}}$ and $\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$.
+**What the element action produces.** The element action's local-phase Noether current is the display of the element companion: a sum over the parts in the temporal slot and a difference in the spatial slots, which is the Gordon pairing and which equals the chart's $\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$ and $\rho_{\mathrm{num}}\sinh\theta_{\mathrm{rpd}}u_{\mathrm b,\eta}$.
 
 **The two are not the same object, and the difference is a spatial slot.** The word's phase current is the temporal slot of the element current and nothing else. The element current's spatial slots come from the boost, not from the phase, and the word's parameterisation does not produce them from the phase's symmetry: it produces them from the boost's. A variational principle in the word therefore has *two* symmetries where the element action has one — the phase's and the boost's — and the element action's current is the combination of the two.
 
@@ -173,7 +173,7 @@ The four brackets are the decomposition of the logarithmic derivative, and the c
 
 $$
 \tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\mu}\tilde\Xi
-=\frac{1}{2}\partial_\mu\ln\rho
+=\frac{1}{2}\partial_\mu\ln\rho_{\mathrm{num}}
 +i\Bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu^{\,t}\Bigr)
 +\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
 +\frac{i\,ϙ}{\hbar}A_\mu^{\,\eta}\vec e_\eta
@@ -204,7 +204,7 @@ The chart's parameters become fields, and the action acquires gradient terms.
 **What changes.** In the operator setting the rapidity $\theta_{\mathrm{rpd}}$ and the rotor angle $\theta_{\mathrm{axr}}$ are functions of position, so the boost bracket and the rotor bracket contribute to the spatial slots of the kinetic term and not only to the temporal one. The action becomes
 
 $$
-S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho V-mc^{2}\varrho^{2}+\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
+S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}+\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
 $$
 
 and the gradient terms are the quantum potential's, in the spin-half-fluid form.
@@ -252,14 +252,14 @@ and the gradient terms are the quantum potential's, in the spin-half-fluid form.
 The polar coupled action is the coupled action with the word substituted, and in the chart it is
 
 $$
-S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho V-mc^{2}\varrho^{2}\Bigr],
+S=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}\Bigr],
 \qquad
-\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}},
+\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}},
 $$
 
 with one velocity, the phase's, and a coefficient that carries the boost's rapidity.
 
-The action is a constrained system. Seven of the eight conjugate momenta vanish or are fixed functions of the coordinates; two Euler–Lagrange equations carry time derivatives, the continuity equation for $\rho$ and the guidance equation, and six are constraints on the frame variables.
+The action is a constrained system. Seven of the eight conjugate momenta vanish or are fixed functions of the coordinates; two Euler–Lagrange equations carry time derivatives, the continuity equation for $\rho_{\mathrm{num}}$ and the guidance equation, and six are constraints on the frame variables.
 
 The parameterisation is exact, so the unit conditions need no Lagrange multiplier. The six constraints are nonetheless there and they are Euler–Lagrange equations. The absence of multipliers is not the absence of constraints, and the distinction is the article's main technical point.
 
@@ -280,12 +280,12 @@ The polar variational principle's genuine gain is therefore structural and not d
 | $\theta_{\mathrm{pha}}$ | Phase; the only parameter with a velocity in the action |
 | $\theta_{\mathrm{rpd}}\ge0,\ \vec u_{\mathrm b}$ | Rapidity and axis of the boost |
 | $\theta_{\mathrm{axr}}\in[0,2\pi)$ | Rotor angle |
-| $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | Density; the temporal slot of the current |
+| $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | Density; the temporal slot of the current |
 | $V$ | Potential's scalar part in the frame; independent of $\varrho$ and $\theta_{\mathrm{pha}}$ |
 | $S$ | The polar action; one velocity, six constraints |
-| $\pi_{\theta_{\mathrm{pha}}}=-\hbar c\rho$ | The only genuine momentum; conserved |
+| $\pi_{\theta_{\mathrm{pha}}}=-\hbar c\rho_{\mathrm{num}}$ | The only genuine momentum; conserved |
 | $\pi_{\varrho},\pi_{\theta_{\mathrm{rpd}}},\pi_{\theta_{\mathrm{axr}}},\pi_{u_{\mathrm b}},\pi_{u_{\mathrm r}}$ | Zero; the primary constraints' origin |
-| $\partial(\rho V)/\partial p=0$ | The six constraint equations |
+| $\partial(\rho_{\mathrm{num}} V)/\partial p=0$ | The six constraint equations |
 | $\partial_{r'_t}(\varrho^{2}\cosh\theta_{\mathrm{rpd}})=0$ | Continuity |
 | $-\hbar c\cosh\theta_{\mathrm{rpd}}\partial_{r'_t}\theta_{\mathrm{pha}}-V-mc^{2}=0$ | Guidance |
 | scale, phase, boost, rotor | The four brackets; real scalar, central imaginary, Hermitian, real vector |

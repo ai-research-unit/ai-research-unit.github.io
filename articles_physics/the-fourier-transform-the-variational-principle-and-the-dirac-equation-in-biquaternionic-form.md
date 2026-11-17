@@ -14,7 +14,7 @@
 
 ## Conventions
 
-The algebra and the invertibles are those of *Algebra and Element Conventions*, the gradient those of *Operator and Calculus Conventions*, the products those of *Product and Form Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*, and the sectors those of *Mirror Biquaternions and the Phy–Psy Switch*. The transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
+The algebra and the invertibles are those of *Algebra and Element Conventions*, the gradient those of *Operator and Calculus Conventions*, the products those of *Product and Form Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The transform is the one of *Derivatives, Fields and Transforms*, with the symbol rule
 
 $$
 \tilde\nabla_\Phi\longmapsto i\tilde K_\Phi ,
@@ -166,7 +166,6 @@ The variational output is the zero of that scalar and the free propagator is pro
 - *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form*, for the case in which the symbol is not constant.
 - *Derivatives, Fields and Transforms*, for the transform and its symbol rule.
 - *Norm and Pairing Conventions*, for the two forms, the norm's centrality and the Hermitian pairing.
-- *Mirror Biquaternions and the Phy–Psy Switch*, for the sector bookkeeping.
 - P. A. M. Dirac, "The Lagrangian in quantum mechanics," *Physikalische Zeitschrift der Sowjetunion* **3** (1933) 64–72, for the action's place in the integral and its relation to the classical extremum.
 - R. P. Feynman, "Space-time approach to non-relativistic quantum mechanics," *Reviews of Modern Physics* **20** (1948) 367–387, for the sum over configurations the relation is about.
 - J. H. Van Vleck, "The correspondence principle in the statistical interpretation of quantum mechanics," *Proceedings of the National Academy of Sciences* **14** (1928) 178–188, for the fluctuation determinant that a second variation produces in the position-space form.

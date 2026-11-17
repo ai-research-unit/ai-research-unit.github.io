@@ -47,7 +47,7 @@ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar
 **Varying the phase.** The covariant transport,
 
 $$
-\partial_{r'_{t}}\bigl(\rho\,\mathcal E/c\bigr)+\vec\nabla_\Phi\cdot\bigl(\rho\,\vec\pi\bigr)=0,
+\partial_{r'_{t}}\bigl(\rho_{\mathrm{num}}\,\mathcal E/c\bigr)+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\,\vec\pi\bigr)=0,
 \qquad
 \vec\pi=\hbar\vec\kappa ,
 $$
@@ -126,7 +126,7 @@ The three variations give the covariant transport, the mass shell with the frame
 | Symbol | Meaning |
 |---|---|
 | $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The coupled word on the complex carrier |
-| $\varrho>0$, $\rho=\varrho^{2}$ | The scale; the density |
+| $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the density |
 | $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+qA_\mu/\hbar$ | The mechanical phase gradient |
 | $\hbar\vec\kappa=\vec\pi$, $\hbar c\kappa_t=\mathcal E$ | Mechanical momentum and energy |
 | $\mathcal V$ | The invariant length's frame factor; not closed in the six angles |

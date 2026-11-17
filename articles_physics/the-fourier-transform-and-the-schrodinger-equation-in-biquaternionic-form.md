@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*, and the sector bookkeeping those of *Mirror Biquaternions and the Phy–Psy Switch*.
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*.
 
 **The bookkeeping is quoted once.** With $t'$ the time and $r'_t=c\,t'$ the material time, a positive-frequency plane wave is $\tilde\Xi=\tilde\Xi_0\exp(-i\omega t'+i\vec k_\Phi\cdot\vec r)$, so
 

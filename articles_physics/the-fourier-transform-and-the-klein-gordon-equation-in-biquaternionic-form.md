@@ -18,7 +18,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*, and the sector bookkeeping those of *Mirror Biquaternions and the Phy–Psy Switch*. The kernel and its $i\epsilon$ prescription are those of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*; they are cited and not re-derived.
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The kernel and its $i\epsilon$ prescription are those of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*; they are cited and not re-derived.
 
 **The bookkeeping is quoted once.** With $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, $k_t'=\omega/c$, $k_m=mc/\hbar$ and $r_t'=ct'$,
 

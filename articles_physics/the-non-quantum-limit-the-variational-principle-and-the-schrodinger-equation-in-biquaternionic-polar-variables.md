@@ -59,7 +59,7 @@ $$
 
 **Nothing else is deleted, and nothing is added.** The other three terms are kept with their coefficients unchanged, and no term is moved from one order to another by a redefinition. The deletion is a subtraction and it is exact in the sense that the parameter's power is a property of the term and not of the field.
 
-**The four terms have a reading, and it is worth one line each.** The first is the phase's rate times the density, and it is what makes the action first order. The second is the kinetic energy of the flow, $\rho\lvert\vec v\rvert^{2}/2$ with $\rho=\varrho^{2}$ and $\vec v=\hbar\vec\nabla_\Phi\theta_{\mathrm{pha}}/m$. The third, deleted, is the only term quadratic in the scale's gradient. The fourth is the potential energy times the density.
+**The four terms have a reading, and it is worth one line each.** The first is the phase's rate times the density, and it is what makes the action first order. The second is the kinetic energy of the flow, $\rho_{\mathrm{num}}\lvert\vec v\rvert^{2}/2$ with $\rho_{\mathrm{num}}=\varrho^{2}$ and $\vec v=\hbar\vec\nabla_\Phi\theta_{\mathrm{pha}}/m$. The third, deleted, is the only term quadratic in the scale's gradient. The fourth is the potential energy times the density.
 
 ## Varying the Scale: the Eikonal
 

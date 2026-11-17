@@ -171,7 +171,7 @@ $$
 **The matrix picture makes the same statement in one line.** In $M_2(\mathbb{C})$ the Hermitian norm is half the squared Hilbert–Schmidt norm,
 
 $$
-2H(\tilde Q)=\operatorname{Tr}\bigl(\rho(\tilde Q)\rho(\tilde Q)^{*}\bigr)=\bigl\lVert\rho(\tilde Q)\bigr\rVert_{\mathrm{HS}}^{2},
+2H(\tilde Q)=\operatorname{Tr}\bigl(\Delta_{\mathrm{rep}}(\tilde Q)\Delta_{\mathrm{rep}}(\tilde Q)^{*}\bigr)=\bigl\lVert\Delta_{\mathrm{rep}}(\tilde Q)\bigr\rVert_{\mathrm{HS}}^{2},
 $$
 
 and the Hilbert–Schmidt norm of a matrix is invariant under left and right unitary multiplication by construction. The factor $2$ is the reduction convention, $2\,\mathrm{Sc}=2\operatorname{Sc}$, and it returns in the composition bound of a later section.
@@ -361,7 +361,7 @@ $$
 H(\tilde Q_1\tilde Q_2)\le2H(\tilde Q_1)H(\tilde Q_2)\;}
 $$
 
-**The proof is the Hilbert–Schmidt inequality and the factor $2$ of the trace convention.** In the matrix picture $2H=\lVert\rho(\tilde Q)\rVert_{\mathrm{HS}}^{2}$, so submultiplicativity of the Hilbert–Schmidt norm gives $2H(\tilde Q_1\tilde Q_2)\le4H(\tilde Q_1)H(\tilde Q_2)$.
+**The proof is the Hilbert–Schmidt inequality and the factor $2$ of the trace convention.** In the matrix picture $2H=\lVert\Delta_{\mathrm{rep}}(\tilde Q)\rVert_{\mathrm{HS}}^{2}$, so submultiplicativity of the Hilbert–Schmidt norm gives $2H(\tilde Q_1\tilde Q_2)\le4H(\tilde Q_1)H(\tilde Q_2)$.
 
 **The constant is attained, and the witness is short.** Take
 
@@ -568,12 +568,12 @@ The three statements to carry away are these. The Hermitian norm is the only mea
 | $\varrho$, $\Xi$ | the scale and the rapidity of the polar word, $\varrho^{2}=\lvert N\rvert$ and $\sigma_{1,2}=\varrho e^{\pm\Xi/2}$ |
 | $\theta$, $\Theta$ | the central phase and the rotor angle of the polar word |
 | $\tilde u_{\mathrm r}$, $\vec u_{\mathrm b}$ | the rotor, a real unit quaternion, and the axis of the boost |
-| $H(\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ | the weight, the positive definite form, $\tfrac12\lVert\rho(\tilde Q)\rVert_{\mathrm{HS}}^{2}$ |
+| $H(\tilde Q)=\operatorname{Sc}(\tilde Q\tilde Q^{*})$ | the weight, the positive definite form, $\tfrac12\lVert\Delta_{\mathrm{rep}}(\tilde Q)\rVert_{\mathrm{HS}}^{2}$ |
 | $\lvert N(\tilde Q)\rvert$ | the modulus of the interval, the invariant mass |
 | $\tilde{Ϛ}_{\Psi,Q}$ | the state, $\tilde Q\tilde Q^{*}/(2H)$, of trace one |
 | $\lvert\vec s_{\Psi}\rvert=\tanh\Xi$ | the Bloch length of the state, the boost velocity |
 | $U(\mathbb{B})\cong U(2)$ | the $*$-unitary group, the group of H-isometries, real dimension four |
-| $2H=\lVert\rho\rVert_{\mathrm{HS}}^{2}$ | the matrix picture of the weight and the source of the constant two |
+| $2H=\lVert\Delta_{\mathrm{rep}}\rVert_{\mathrm{HS}}^{2}$ | the matrix picture of the weight and the source of the constant two |
 
 ## Further Reading
 

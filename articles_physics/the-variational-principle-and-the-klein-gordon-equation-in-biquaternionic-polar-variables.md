@@ -73,7 +73,7 @@ $$
 \qquad
 \mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}},
 \qquad
-\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}},
+\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}},
 $$
 
 the scalar part of the frame density being what multiplies the squares and the Hermitian part what multiplies the cross terms. The factor $\cosh\theta_{\mathrm{rpd}}$ is the density in units of $\varrho^{2}$, and that is the only place the rapidity's magnitude enters the kinematics.
@@ -359,7 +359,7 @@ For the general element the equivalence with the Klein–Gordon equation is exac
 | $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ | The bracket; four algebraic types |
 | $\tilde\Xi^{*}\tilde\Xi=\varrho^{2}(\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}')$ | Frame density |
 | $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density ratio that weights every square |
-| $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The parent's density |
+| $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The parent's density |
 | $g_{ab}(p)$ | Induced metric on the parameters |
 | $p^{a}$ | The eight parameters as coordinates |
 | $k_m=mc/\hbar$ | Mass wave number |

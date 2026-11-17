@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This entry reads the first section of the mathematical category: the algebra, the element, the four conjugations, the six subspaces, the square, the cone and the roots.** Eight mathematics articles establish those objects. This entry states what they establish, once, and then gives the physical readings.
+**This entry reads the first section of the mathematical category: the algebra, the element, the four conjugations, the six subspaces, the square, the cone and the roots.** Seven mathematics articles establish those objects. This entry states what they establish, once, and then gives the physical readings.
 
 **The section is the vocabulary of the whole category.** Every later entry names an element, a subspace or a conjugation, and every physical name the corpus uses — material, informational, interval, observable, massless, invertible — is fixed here or nowhere. That is why the entry is long and why it comes first.
 
@@ -16,7 +16,6 @@
 | the general element, the three coordinate writings, the scalar–vector split, the four conjugations, the real form, the central complex structure | [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](../articles_maths/the-element-the-coordinates-and-the-conjugations.html) |
 | the two conjugations, the Klein four-group, the three splittings, the orbits, the sign-twisted adjoint | [The Group of Involutions of the Biquaternion Algebra](../articles_maths/the-group-of-involutions.html) |
 | the six remarkable subspaces, the four coordinate blocks, the three decompositions, and why there are exactly three | [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
-| the mirror map, the mirror biquaternion, its class and its two projections | [Mirror Biquaternions of the Biquaternion Algebra](../articles_maths/mirror-biquaternions-of-the-biquaternion-algebra.html) |
 | the square, its two parts, the central square, the square-zero elements, the isotropic cone | [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element.html) |
 | the two annihilators, the zero divisors, the invertibles and the criterion that separates them | [Zero Divisors and Invertibles in the Biquaternion Algebra](../articles_maths/zero-divisors-and-invertibles.html) |
 | the reduction of the root problem, the classification of roots, the three central values | [The Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-an-element.html) |
@@ -101,22 +100,6 @@ Two scalar blocks of dimension one and two vector blocks of dimension three. Eve
 
 **There are exactly three, and no fourth.** A four-element set of blocks has exactly three pairings into two pairs.
 
-### The Mirror
-
-**The mirror map is multiplication by the central unit.** Two applications are minus the identity and four are the identity, since $i^{2}=-1$, so the map has order four and is not an involution. It carries $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{\Psi}$ at the first step, and the orbit of a sector element is
-
-$$
-\tilde Q_\Phi\ \xrightarrow{\ i\ }\ i\tilde Q_\Phi\ \xrightarrow{\ i\ }\ -\tilde Q_\Phi\ \xrightarrow{\ i\ }\ -i\tilde Q_\Phi\ \xrightarrow{\ i\ }\ \tilde Q_\Phi .
-$$
-
-**The mirror biquaternions are the elements that the two sectors see differently by a quarter turn.** They are the class
-
-$$
-\tilde Q^{*}=i\tilde Q ,
-$$
-
-equivalently $\tilde Q_{\Psi}=i\tilde Q_{\Phi}$, equivalently the image of the material sector under multiplication by $1+i$. The class is a real four-dimensional subspace, it is not a subalgebra, and its two projections onto the sectors differ by the factor $i$.
-
 ### The Square
 
 **The square is the one operation the entry reads twice.** With $\tilde Q=Q_te_t+\vec Q$,
@@ -165,7 +148,7 @@ $$
 
 ## The Interpretations
 
-**Thirteen readings, each labelled, each with its boundary.** They are grouped as the results are: the coordinates, the ledgers, the inertia, the subspaces and their intersections, the involutions, the mirror, the square, the cone and the roots.
+**Twelve readings, each labelled, each with its boundary.** They are grouped as the results are: the coordinates, the ledgers, the inertia, the subspaces and their intersections, the involutions, the square, the cone and the roots.
 
 ### I.1.a — The Eight Coordinates Are Two Clocks and Two Spaces
 
@@ -285,17 +268,7 @@ The two definite slices are the two coefficient halves; the two indefinite slice
 
 **The boundary.** $J$ is invertible, so it is not a measurement and not a collapse. It reverses the sign of the two quadratic norms, so it is not an isometry of the interval. The exchange of the sectors is a change of writing of one element and not a process that converts matter into information; the corpus gives it no dynamics and no coupling.
 
-### I.1.h — The Mirror Is the Second Ledger of One Element
-
-**Read:** the mirror class is the set of elements whose two ledgers differ by a quarter turn. The class is $\{\tilde Q:\tilde Q^{*}=i\tilde Q\}$, a real four-dimensional subspace, and on it the informational projection is $i$ times the material one.
-
-**The switch is one real-linear operation on one real subspace.** It is not a symmetry of the algebra, because the class is not a subalgebra. It is a coordinate change between the two readings, and the reason it exists at all is that $J$ is central: the factor $i$ that the switch inserts commutes with every coefficient.
-
-**The full treatment is a companion entry.** [Mirror Biquaternions and the Phy–Psy Switch](mirror-biquaternions-and-the-phy-psy-switch.html) is kept whole in this section and owns the construction: the mirror of a sector element, the mirror biquaternion $(1+i)\tilde X_\Phi$, the fixed factors of the two invariants, the list of what the class is not, the Wick comparison and the instances. The reading above is the short form of it, and the two agree.
-
-**The boundary.** The class carries no dynamics. It is a set of elements on which two readings coincide up to a known factor, and the factor is fixed by the algebra. An interpretation that reads the switch as a physical process converting one sector into the other is adding a dynamics that the algebra does not supply.
-
-### I.1.i — The Square Is the Clock and the Norm Is the Interval
+### I.1.h — The Square Is the Clock and the Norm Is the Interval
 
 **Read:** two different invariants are read from one element, and the two are read by two different operations.
 
@@ -311,7 +284,7 @@ $$
 
 **The boundary.** The identification holds for an element whose coefficients are a coordinate in the physical dictionary. For a general element $N$ is complex and neither reading applies. And the square is not the interval under any convention: no choice of branch turns $-(r'^2+\lvert\vec r\rvert^2)$ into $-r'^2+\lvert\vec r\rvert^2$.
 
-### I.1.j — The Square of a Sector Element Is an Observable
+### I.1.i — The Square of a Sector Element Is an Observable
 
 **Read:** the square of an element of either sector lies in the informational sector.
 
@@ -321,7 +294,7 @@ $$
 
 **The boundary.** "Observable" here means only Hermitian, which is what the informational sector is. The statement says nothing about which Hermitian element a measurement realises, and it supplies no expectation value; that belongs to the entry on the state space.
 
-### I.1.k — The Cone Is the Horizon of Reversibility
+### I.1.j — The Cone Is the Horizon of Reversibility
 
 **Read:** the zero-divisor set is the set of elements that cannot be undone, and the norm decides membership. An element is invertible exactly when $N\neq0$ and is a zero divisor exactly when $N=0$, so
 
@@ -335,7 +308,7 @@ $$
 
 **The boundary.** On the informational sector the same cone is not a causal horizon. Its unit-weight slice bounds the state space and that boundary is the set of pure states. One set, two readings, and the entry says which one it is using.
 
-### I.1.l — The Roots Are the Mass Shell and the Frame
+### I.1.k — The Roots Are the Mass Shell and the Frame
 
 **Read:** the root set of a value is the level set of the norm, and on the material sector that level set is the mass shell.
 
@@ -345,7 +318,7 @@ $$
 
 **The boundary.** The root of an element is not a mass. The mass reading is an extra identification, licensed on the four-momentum chart, and it makes the mass the modulus of the polar word rather than the root itself. The algebra is scale-free: it supplies the level set and no number.
 
-### I.1.m — The Intersections Are the Shared Objects
+### I.1.l — The Intersections Are the Shared Objects
 
 **Read:** every intersection of two distinct subspaces is one block or zero, and a block that two subspaces share is one object that the two descriptions have in common.
 
@@ -373,7 +346,7 @@ $$
 
 ## Summary
 
-- The section establishes eight objects: the algebra, the element, the four conjugations, the six subspaces, the mirror, the square, the cone and the roots.
+- The section establishes seven objects: the algebra, the element, the four conjugations, the six subspaces, the square, the cone and the roots.
 - One element carries two ledgers, the material four-coordinate and the informational label, and the two are its Hermitian projections. The norm does not split between them.
 - The Lorentzian sign pattern follows from the placement of the central $i$ in the time slot of one sector, not from an independent axiom.
 - The six subspaces are the fixed and anti-fixed spaces of four maps; three of those maps with the identity form a Klein four-group and carry $P$, $T$, $PT$; the fourth carries $C$ and is not a group element.
@@ -401,14 +374,13 @@ $$
 | $\mathbb{B}_{C},\mathbb{B}_{V},\mathbb{B}_{H},\mathbb{B}_{iH},\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | the six remarkable subspaces |
 | $\tilde R_\Phi=ir'_te_t+\vec r$ | the material coordinate |
 | $\tilde H_\Psi=h_te_t+i\vec h'$ | the informational element |
-| $\tilde Q^{*}=i\tilde Q$ | the mirror condition |
 
 ## Further Reading
 
-**In the mathematics corpus.** The eight articles of the source table, and [The Spectrum](../articles_maths/the-spectrum.html) for the eigenvalue pair $\lambda_\pm=Q_t\pm iB$, which this entry names and does not read.
+**In the mathematics corpus.** The seven articles of the source table, and [The Spectrum](../articles_maths/the-spectrum.html) for the eigenvalue pair $\lambda_\pm=Q_t\pm iB$, which this entry names and does not read.
 
 **In this category.** The entries that take up what this one states in brief are [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html) and [The Pauli and Gamma Matrices: the Direction in the Display](the-pauli-and-gamma-matrices-the-direction-in-the-display.html) for the two displays, [Idempotents, Ideals and Observables](idempotents-ideals-and-observables.html) for the idempotents and the Peirce corners, [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html) for the eigenvalue pair and the two predicates, [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html) for the norm, [Four-Vectors and the Interval](four-vectors-and-the-interval.html) for the real slice and its metric, and [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) for the Hermitian slice and the weight.
 
-**The sources of this entry.** The mirror and the switch are [Mirror Biquaternions and the Phy–Psy Switch](mirror-biquaternions-and-the-phy-psy-switch.html); the two predicates and the modes, [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html); the square-zero element and the cone, [The Vacuum and the Nilpotent Ladder](the-vacuum-and-the-nilpotent-ladder.html); the partition of the invertibility cut, [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html).
+**The sources of this entry.** The two predicates and the modes, [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html); the square-zero element and the cone, [The Vacuum and the Nilpotent Ladder](the-vacuum-and-the-nilpotent-ladder.html); the partition of the invertibility cut, [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html).
 
 **The conventions.** [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) records which of the physical names are forced by the algebra and which are chosen.

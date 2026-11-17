@@ -26,7 +26,7 @@ The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 
-**The parameters and their ranges.** $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$; $\theta_{\mathrm{axr}}\in[0,2\pi)$ with $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ unit real vectors. The density is $\rho=\varrho^{2}$ and the Lorentz factor is $\gamma=\cosh\theta_{\mathrm{rpd}}$, so $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
+**The parameters and their ranges.** $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$; $\theta_{\mathrm{axr}}\in[0,2\pi)$ with $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ unit real vectors. The density is $\rho_{\mathrm{num}}=\varrho^{2}$ and the Lorentz factor is $\gamma=\cosh\theta_{\mathrm{rpd}}$, so $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 ## The Substitution: The Word and the Two Parts
 
@@ -115,7 +115,7 @@ $$
 identically, for every configuration and every velocity. The other four are
 
 $$
-p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\hbar c\,\rho\gamma,
+p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\hbar c\,\rho_{\mathrm{num}}\gamma,
 \qquad
 \vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}},
 $$
@@ -170,7 +170,7 @@ $$
 
 The scale enters as $\varrho^{2}$ in both terms. The phase enters only through its velocity. The boost enters through $\cosh\theta_{\mathrm{rpd}}$, through $\sinh\theta_{\mathrm{rpd}}$ and through the axis $\hat n_{\mathrm{rot}}$, and not through its own rate. The rotor enters through its body angular velocity and through the axis it carries. Nothing else enters.
 
-**The overall factor.** The element action carries $\hbar c/2$; the box has $\hbar c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\hbar c\rho\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §*The Kinetic Term*.
+**The overall factor.** The element action carries $\hbar c/2$; the box has $\hbar c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §*The Kinetic Term*.
 
 ## The Euler–Lagrange Equations
 
@@ -287,11 +287,11 @@ The comparison is worth stating precisely, because the two formulations are usua
 
 ## What the Polar Variational Principle Adds
 
-**Adds.** The polar form of the element action in one closed display: the kinetic term is $\hbar c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$. The momentum table as an identity rather than a sample: $p_r=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$, $p_{\theta_{\mathrm{pha}}}=\hbar c\rho\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$. The reason for each entry, which is the reality of three contributions to the scalar part. The reason the mass term needs a fixed direction, which is the variational form of the parent's value-reading warning, together with the fact that the direction must be perpendicular to the frame's third direction. The bracket that makes the four primary constraints second class, computed and not assumed.
+**Adds.** The polar form of the element action in one closed display: the kinetic term is $\hbar c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$. The momentum table as an identity rather than a sample: $p_r=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$, $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$. The reason for each entry, which is the reality of three contributions to the scalar part. The reason the mass term needs a fixed direction, which is the variational form of the parent's value-reading warning, together with the fact that the direction must be perpendicular to the frame's third direction. The bracket that makes the four primary constraints second class, computed and not assumed.
 
 **Does not add.** No new prediction: the equation is the parent's. No new solution: the flow is the parent's. No closure of the constrained system. No simplification of the four brackets, which remain the natural form.
 
-**The structural statement, stated exactly.** Away from rest the canonical objects are the phase and the spin: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, both non-zero, both functions of the coordinates alone, and neither recoverable from the other. The scale and the velocity are never canonical: their momenta vanish identically in every frame.
+**The structural statement, stated exactly.** Away from rest the canonical objects are the phase and the spin: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, both non-zero, both functions of the coordinates alone, and neither recoverable from the other. The scale and the velocity are never canonical: their momenta vanish identically in every frame.
 
 **The qualification is part of the statement.** The spin's momentum is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at rest it vanishes and the spin is not canonical either. An earlier version of this paragraph claimed the phase and the spin unconditionally. That claim was wrong at $\theta_{\mathrm{rpd}}=0$, and the closed form is what shows it: the spin enters the kinetic term only through its cross term with the boost, so a frame at rest has no spin momentum to speak of. What survives at rest is the phase alone.
 
@@ -313,7 +313,7 @@ $$
 S=\int\mathrm{d}t'\;\hbar c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\}.
 $$
 
-Everything the article says about the momenta follows from that one display, by inspection rather than by sampling. The scale, the rapidity and the boost axis appear without their rates, so their three momenta vanish identically. The phase appears linearly, with coefficient $\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho\gamma$, so its momentum is the density times the Lorentz factor, the time component of the density current. The rotor appears through its cross term with the boost axis, so its momentum is $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$: a closed form, and one that vanishes at rest.
+Everything the article says about the momenta follows from that one display, by inspection rather than by sampling. The scale, the rapidity and the boost axis appear without their rates, so their three momenta vanish identically. The phase appears linearly, with coefficient $\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{num}}\gamma$, so its momentum is the density times the Lorentz factor, the time component of the density current. The rotor appears through its cross term with the boost axis, so its momentum is $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$: a closed form, and one that vanishes at rest.
 
 The mass term needs a fixed direction, perpendicular to the frame's third direction, and the direction sits on the same side of the bilinear in both halves; with the direction on the right in both, the real part cancels and the mass term vanishes.
 
@@ -335,7 +335,7 @@ The four brackets remain the natural form of the equation, and the parameter equ
 | $\tilde\nabla_\Phi,\ (\tilde\nabla_\Phi)^{\natural}$ | Gradient and its quaternion conjugate |
 | $r'_t=ct'$ | Material time; the article uses $t'$ |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The word |
-| $\varrho>0$, $\rho=\varrho^{2}$ | Scale and density |
+| $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | Scale and density |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Phase; conjugate momentum $\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ |
 | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}$ | Rapidity and boost axis; momenta zero identically |
 | $\theta_{\mathrm{axr}}\in[0,2\pi)$, $\vec u_{\mathrm r}$ | Rotor angle and axis; three momenta, non-zero away from rest |

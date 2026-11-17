@@ -5,10 +5,10 @@
 The modulus–unit polar decomposition of *Modulus–Unit Polar Decomposition of Reduced Biquaternions* writes every unit as
 
 $$
-\breve Q=\breve \varrho\,u,\qquad \breve \varrho\in P,\qquad u\bar u=1,
+\breve Q=\breve M_{\mathrm{mod}}\,u,\qquad \breve M_{\mathrm{mod}}\in P,\qquad u\bar u=1,
 $$
 
-with $\breve \varrho$ the modulus in the positive cone $P=\{x+jy:x>|y|\}$ and $u$ the unit factor on the torus $T^2=\{u:u\bar u=1\}$. That article proves the pair unique and treats $u$ as a point of the torus. It chooses no coordinate on the torus: the unit factor is named by the equation $u\bar u=1$, not by a pair of numbers.
+with $\breve M_{\mathrm{mod}}$ the modulus in the positive cone $P=\{x+jy:x>|y|\}$ and $u$ the unit factor on the torus $T^2=\{u:u\bar u=1\}$. That article proves the pair unique and treats $u$ as a point of the torus. It chooses no coordinate on the torus: the unit factor is named by the equation $u\bar u=1$, not by a pair of numbers.
 
 This article names it. For real numbers $s_1,s_2$ put
 
@@ -22,7 +22,7 @@ $$
 u(s_1,s_2)=\frac{c(s_1)+c(s_2)}{2}+j\,\frac{c(s_1)-c(s_2)}{2}.
 $$
 
-Nothing in the decomposition changes. The modulus is still $\breve \varrho$, the element $u=u(s_1,s_2)$ is still the same unit factor, and the pair $(\breve \varrho,u)$ is still unique. The only new object is the pair of real numbers $(s_1,s_2)$, which replaces the point of the torus by a point of the plane.
+Nothing in the decomposition changes. The modulus is still $\breve M_{\mathrm{mod}}$, the element $u=u(s_1,s_2)$ is still the same unit factor, and the pair $(\breve M_{\mathrm{mod}},u)$ is still unique. The only new object is the pair of real numbers $(s_1,s_2)$, which replaces the point of the torus by a point of the plane.
 
 The chart is rational: $c(s)$ and its inverse are ratios of polynomials, and no transcendental function occurs. The price is locality, and the locality is doubled. As $\lvert s\rvert$ grows the unit $c(s)$ approaches $-1$ without attaining it, so the chart on one circle misses the point $-1$. On the torus the chart misses the union of the two circles on which one circular component equals $-1$. The rational-chart decomposition therefore holds on the complement of two walls and fails on them. Four charts, obtained by multiplying the unit factor by $1,j,-1,-j$, cover the torus.
 
@@ -42,10 +42,10 @@ $$
 \breve Q\bar{\breve Q}=\bigl(|Q_{\blacktriangle}|^2+|Q_{\blacktriangledown}|^2\bigr)+2j\operatorname{Re}(Q_{\blacktriangle}\bar Q_{\blacktriangledown})
 $$
 
-lies in the cone $P$ exactly when $\breve Q$ is invertible. The modulus is the positive square root $\breve \varrho=\sqrt{\breve Q\bar{\breve Q}}$ in $P$, an element of $P$ fixed by the bar, and the unit factor is
+lies in the cone $P$ exactly when $\breve Q$ is invertible. The modulus is the positive square root $\breve M_{\mathrm{mod}}=\sqrt{\breve Q\bar{\breve Q}}$ in $P$, an element of $P$ fixed by the bar, and the unit factor is
 
 $$
-u=\breve \varrho^{-1}\breve Q,\qquad u\bar u=1.
+u=\breve M_{\mathrm{mod}}^{-1}\breve Q,\qquad u\bar u=1.
 $$
 
 The two scales of the modulus are
@@ -60,7 +60,7 @@ $$
 u_+=\frac{Q_{+}}{\rho_+},\qquad u_-=\frac{Q_{-}}{\rho_-}.
 $$
 
-Each is a unit complex number. The pair $(\breve \varrho,u)$ is unique: taking the bar forces $\breve \varrho^2=\breve Q\bar{\breve Q}$, the cone fixes the square root, and then $u=\breve \varrho^{-1}\breve Q$.
+Each is a unit complex number. The pair $(\breve M_{\mathrm{mod}},u)$ is unique: taking the bar forces $\breve M_{\mathrm{mod}}^2=\breve Q\bar{\breve Q}$, the cone fixes the square root, and then $u=\breve M_{\mathrm{mod}}^{-1}\breve Q$.
 
 This is where the modulus–unit article stops. The present article adds two real numbers, $s_1$ and $s_2$, one for each circular component, and changes nothing else.
 
@@ -177,17 +177,17 @@ $$
 has exactly one rational-chart polar decomposition
 
 $$
-\breve Q=\breve \varrho\,u(s_1,s_2),\qquad \breve \varrho\in P,\quad (s_1,s_2)\in\mathbb{R}^2.
+\breve Q=\breve M_{\mathrm{mod}}\,u(s_1,s_2),\qquad \breve M_{\mathrm{mod}}\in P,\quad (s_1,s_2)\in\mathbb{R}^2.
 $$
 
-**Existence.** Let $\breve Q$ satisfy the two conditions, and put $\breve \varrho=\sqrt{\breve Q\bar{\breve Q}}$ and $u=\breve \varrho^{-1}\breve Q$. Then $\breve \varrho\in P$ and $u\bar u=1$. Its circular components are $Q_{+}/\rho_+$ and $Q_{-}/\rho_-$. If the first were $-1$ then $Q_{+}=-\rho_+\le0$, contrary to the hypothesis; if the second were $-1$ then $Q_{-}=-\rho_-\le0$, also contrary. Hence neither component is $-1$, and the bijection gives real $s_1,s_2$ with $u=u(s_1,s_2)$. Therefore $\breve Q=\breve \varrho u(s_1,s_2)$.
+**Existence.** Let $\breve Q$ satisfy the two conditions, and put $\breve M_{\mathrm{mod}}=\sqrt{\breve Q\bar{\breve Q}}$ and $u=\breve M_{\mathrm{mod}}^{-1}\breve Q$. Then $\breve M_{\mathrm{mod}}\in P$ and $u\bar u=1$. Its circular components are $Q_{+}/\rho_+$ and $Q_{-}/\rho_-$. If the first were $-1$ then $Q_{+}=-\rho_+\le0$, contrary to the hypothesis; if the second were $-1$ then $Q_{-}=-\rho_-\le0$, also contrary. Hence neither component is $-1$, and the bijection gives real $s_1,s_2$ with $u=u(s_1,s_2)$. Therefore $\breve Q=\breve M_{\mathrm{mod}} u(s_1,s_2)$.
 
-**Uniqueness.** Taking the bar gives $\breve \varrho^2=\breve Q\bar{\breve Q}$, so $\breve \varrho$ is the modulus; then $u=\breve \varrho^{-1}\breve Q$; the chart is injective, so $(s_1,s_2)$ is determined by $u$.
+**Uniqueness.** Taking the bar gives $\breve M_{\mathrm{mod}}^2=\breve Q\bar{\breve Q}$, so $\breve M_{\mathrm{mod}}$ is the modulus; then $u=\breve M_{\mathrm{mod}}^{-1}\breve Q$; the chart is injective, so $(s_1,s_2)$ is determined by $u$.
 
 The coordinates are those of §*The Inverse*, and the reconstruction is exact:
 
 $$
-\breve Q=\breve \varrho\left(\frac{c(s_1)+c(s_2)}{2}+j\,\frac{c(s_1)-c(s_2)}{2}\right).
+\breve Q=\breve M_{\mathrm{mod}}\left(\frac{c(s_1)+c(s_2)}{2}+j\,\frac{c(s_1)-c(s_2)}{2}\right).
 $$
 
 ### The Domain
@@ -384,13 +384,13 @@ $$
 The modulus is the one computed in *Modulus–Unit Polar Decomposition of Reduced Biquaternions*,
 
 $$
-\breve \varrho=5.192582403567252-0.192582403567252\,j,
+\breve M_{\mathrm{mod}}=5.192582403567252-0.192582403567252\,j,
 $$
 
 and the reconstruction
 
 $$
-\breve \varrho\,u(s_1,s_2)
+\breve M_{\mathrm{mod}}\,u(s_1,s_2)
 $$
 
 returns $3+4i+j(1-i)$ with Euclidean error of order $10^{-16}$ in double precision.
@@ -450,12 +450,12 @@ The coordinates are read in the chart named. The row $1+i$ is the scalar case: t
 Every unit $\breve Q$ with $Q_{+}\notin(-\infty,0]$ and $Q_{-}\notin(-\infty,0]$ has exactly one rational-chart polar decomposition
 
 $$
-\breve Q=\breve \varrho\,u(s_1,s_2),\qquad
+\breve Q=\breve M_{\mathrm{mod}}\,u(s_1,s_2),\qquad
 u(s_1,s_2)=\frac{c(s_1)+c(s_2)}{2}+j\,\frac{c(s_1)-c(s_2)}{2},\qquad
 c(s)=\frac{1-is}{1+is},
 $$
 
-with $\breve \varrho=\sqrt{\breve Q\bar{\breve Q}}$ the modulus in $P$ and $(s_1,s_2)\in\mathbb{R}^2$. The coordinates are rational in the circular components,
+with $\breve M_{\mathrm{mod}}=\sqrt{\breve Q\bar{\breve Q}}$ the modulus in $P$ and $(s_1,s_2)\in\mathbb{R}^2$. The coordinates are rational in the circular components,
 
 $$
 s_1=i\,\frac{u_+-1}{u_++1},\qquad s_2=i\,\frac{u_--1}{u_-+1},
@@ -480,7 +480,7 @@ In the matrix picture the unit factor is orthogonally conjugate to the block dia
 | Symbol | Meaning |
 |---|---|
 | $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ | the element, $Q_{\blacktriangle}$ scalar part, $Q_{\blacktriangledown}$ split part |
-| $\breve \varrho\in P$ | the modulus |
+| $\breve M_{\mathrm{mod}}\in P$ | the modulus |
 | $u\in T^2$ | the unit factor |
 | $Q_{+}$, $Q_{-}$ | the two circular components |
 | $u_+= (Q_{+})/\rho_+$, $u_-=(Q_{-})/\rho_-$ | the circular components of the unit factor |

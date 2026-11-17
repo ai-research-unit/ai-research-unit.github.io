@@ -34,7 +34,7 @@ The angle is $\theta_{\mathrm{evo}}=h_t t'/\hbar$, the scalar part of the Hamilt
 
 The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, and the action principle is that of *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*; this article applies the principle to the Schrödinger equation in its polar form.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 **Two notational choices, made once.** First, the rotor's angular velocity is the real vector $\vec\Omega$ defined by
 
@@ -85,11 +85,11 @@ Now $\mathrm{Sc}(\tilde u^{-1}X\tilde u)=\mathrm{Sc}(X)$ for every $X$, because 
 3. $\varrho^{2}\,\mathrm{Sc}(\tilde U\partial_{t'}\tilde U)$. With $\tilde U=c+is\vec u_{\mathrm b}$, $c=\cosh(\theta_{\mathrm{rpd}}/2)$ and $s=\sinh(\theta_{\mathrm{rpd}}/2)$, the product $\tilde U\partial_{t'}\tilde U$ has scalar part $\dot\theta_{\mathrm{rpd}}\,cs=\tfrac12\dot\theta_{\mathrm{rpd}}\sinh\theta_{\mathrm{rpd}}$. The term is real.
 4. $\varrho^{2}\,\mathrm{Sc}(\tilde U^{2}\partial_{t'}\tilde u\,\tilde u^{-1})$. The last factor is a real pure quaternion, $\tfrac12\vec\Omega$. Of the two pieces of $\tilde U^{2}$, the central $\cosh\theta_{\mathrm{rpd}}$ has no scalar part against a real pure quaternion, and the Hermitian $i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ contributes $i\sinh\theta_{\mathrm{rpd}}\,\mathrm{Sc}(\vec u_{\mathrm b}\tfrac12\vec\Omega)=-\tfrac{i}{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$. The term is imaginary.
 
-Adding, and using $\dot\rho=4\bigl(\varrho\dot \varrho\cosh\theta_{\mathrm{rpd}}+\tfrac12 \varrho^{2}\dot\theta_{\mathrm{rpd}}\sinh\theta_{\mathrm{rpd}}\bigr)$ for the density $\rho=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$,
+Adding, and using $\dot\rho_{\mathrm{num}}=4\bigl(\varrho\dot \varrho\cosh\theta_{\mathrm{rpd}}+\tfrac12 \varrho^{2}\dot\theta_{\mathrm{rpd}}\sinh\theta_{\mathrm{rpd}}\bigr)$ for the density $\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$,
 
 $$
 \mathrm{Sc}\bigl(\tilde\Xi^{*}\partial_{t'}\tilde\Xi\bigr)
-=\tfrac14\dot\rho
+=\tfrac14\dot\rho_{\mathrm{num}}
 +i\,\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\tfrac12\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})\Bigr).
 $$
 
@@ -416,7 +416,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 | $V_{\mathrm{op}}(\vec x)$ | The scalar potential of the operator setting, as in $\hat H=-\hbar^{2}\Delta_\Phi/2m+V_{\mathrm{op}}$ |
 | $p_a$ | The momentum conjugate to the parameter $p_a$ |
 | $L$ | The polar Lagrangian |
-| $\rho=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density, $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ |
+| $\rho_{\mathrm{num}}=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density, $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ |
 | $R_a$ | The Euler–Lagrange residual of the parameter $p_a$ |
 | $E=i\hbar\partial_{t'}\tilde\Xi-\tilde H_\Psi\tilde\Xi$ | The equation's element; $E=0$ is the equation |
 | $J$ | The real Jacobian of the word, invertible on the invertibles |

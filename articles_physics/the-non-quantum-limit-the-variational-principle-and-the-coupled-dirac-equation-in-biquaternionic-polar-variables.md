@@ -7,13 +7,13 @@
 **The two displays, side by side, and their difference.**
 
 $$
-S_{\mathrm{op}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho V-mc^{2}\varrho^{2}+\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
+S_{\mathrm{op}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}+\text{terms in }\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}\Bigr],
 $$
 
 $$
-S_{\mathrm{box}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho V-mc^{2}\varrho^{2}\Bigr],
+S_{\mathrm{box}}=\int\mathrm{d}^{4}\varrho\;\Bigl[-\hbar c\,\rho_{\mathrm{num}}\,\partial_{r'_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}} V-mc^{2}\varrho^{2}\Bigr],
 \qquad
-\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}} .
+\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}} .
 $$
 
 **The parent states that the gradient terms are the quantum potential's**, in the spin-half-fluid form, and that is the whole of the article's premise. **The boxed action is the operator-setting action with those terms deleted, and the deletion is the non-quantum limit.**
@@ -39,7 +39,7 @@ $$
 
 **The signs.** The parent writes the coupling as $ϙ$ with $ϙ=-q$. The displays here keep the parent's letters and use $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\varphi$ when the mechanical variables are named.
 
-**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
 
 ## The Coupling's Reach
 
@@ -51,7 +51,7 @@ $$
 
 ## The Constraint Structure
 
-**Seven momenta and two evolution equations.** Of the eight conjugate momenta, seven vanish or are fixed functions of the coordinates; two Euler–Lagrange equations carry time derivatives, the continuity equation for $\rho$ and the guidance equation; and six equations are constraints on the frame's variables.
+**Seven momenta and two evolution equations.** Of the eight conjugate momenta, seven vanish or are fixed functions of the coordinates; two Euler–Lagrange equations carry time derivatives, the continuity equation for $\rho_{\mathrm{num}}$ and the guidance equation; and six equations are constraints on the frame's variables.
 
 **No multiplier is introduced, and the parent states the distinction.** The parameterisation is exact, so the unit conditions of the boost and the rotor hold identically and no Lagrange multiplier is needed for them. **The absence of multipliers is not the absence of constraints**: the six constraints are Euler–Lagrange equations of the chart, and the parent's sharpest technical point is that a parameterisation can remove the multipliers while leaving the constraints.
 
@@ -128,7 +128,7 @@ The surviving system is a constrained one: seven momenta zero or fixed, two evol
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
-| $\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density in the constant setting |
+| $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density in the constant setting |
 | $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ | The frame potential, including the mass function $\mathcal V$ |
 | $S_{\mathrm{op}}$, $S_{\mathrm{box}}$ | The operator-setting action; the boxed constant-setting action |
 | $\nabla \varrho,\ \nabla\theta_{\mathrm{rpd}},\ \nabla\theta_{\mathrm{axr}}$ | The three gradients the limit deletes |

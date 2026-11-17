@@ -145,7 +145,7 @@ $$
 \tilde H_{\Phi}=-i\tilde H_{\Psi}\in\mathbb{B}_{\Phi}.
 $$
 
-The division is always possible because $i$ is central, and its effect is to move the generator from one sector to the other. The first writing names an observable, an energy in the informational sector. The second names a generator, an anti-Hermitian element of the material sector. They are one equation, and the pair of elements they exhibit is the mirror pair of the framework ([Mirror Biquaternions and the Phy–Psy Switch](mirror-biquaternions-and-the-phy-psy-switch.html)).
+The division is always possible because $i$ is central, and its effect is to move the generator from one sector to the other. The first writing names an observable, an energy in the informational sector. The second names a generator, an anti-Hermitian element of the material sector. They are one equation, and the two elements it exhibits are the two readings of one object.
 
 That is what the sector split buys at this level. The two things a quantum equation must carry — a self-adjoint observable and an anti-Hermitian generator — are the two sectors of one element, and the centrality of $i$ is what converts one into the other exactly.
 
@@ -452,7 +452,7 @@ The corpus articles, in the order in which this article uses them:
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html). The transformation as a rotation of the complexified space.
 - [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html). The group forced by the norm.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html). The one equation and its four types.
-- [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html). The two writings and the mirror pair.
+- [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html). The two writings of the dynamics.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html). The wave operator as a product.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html). The chiral pair, the factorisation reading, and the constructions the equation does not need.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html). The word, the four brackets, the current, the spin, and the domain.

@@ -8,7 +8,7 @@ There is no element identity of the form $\exp(t\,\mathrm{Sd}_{\tilde Q})=\mathr
 
 The doubling rule is the subject of the middle of the article. The scale doubles $\ln \varrho$ to $2\ln \varrho$, the phase cancels to $0$, the boost doubles the half-rapidity to $\theta_{\mathrm{rpd}}$, and the rotor doubles the half-angle to $\theta_{\mathrm{axr}}$. The rule is the number of slots: the Hermitian factors carry the same exponent twice, the $*$-unitary non-central factor carries opposite exponents, and the central phase cancels.
 
-The plan is the following. §*The Operator Exponential* proves the spectral form. §*The Exponents of the Factors* and §*The Pure Factors and the Full Rotor* take the factors one at a time. §*The Vector Representation as the Double of the Half-Angle* identifies the operator with $\rho\otimes\bar\rho$. §*The Angle Bookkeeping* collects the table and the doubling rule. §*The Wall $B^{2}=0$* computes the null rotation and the exponents the factors keep. The article closes with the summary and the notation.
+The plan is the following. §*The Operator Exponential* proves the spectral form. §*The Exponents of the Factors* and §*The Pure Factors and the Full Rotor* take the factors one at a time. §*The Vector Representation as the Double of the Half-Angle* identifies the operator with $\Delta_{\mathrm{rep}}\otimes\bar\Delta_{\mathrm{rep}}$. §*The Angle Bookkeeping* collects the table and the doubling rule. §*The Wall $B^{2}=0$* computes the null rotation and the exponents the factors keep. The article closes with the summary and the notation.
 
 ## The Operator Exponential
 
@@ -98,19 +98,19 @@ For a general word the two factors do not commute, and the common eigenbasis is 
 
 The two slots are the two tensor factors of $\mathbb{B}\cong S\otimes S^{*}$, where $S=\mathbb{C}^{2}$ is the spinor space and $S^{*}$ its dual. The left factor acts on $S$, the right on $S^{*}$, and the two-sided operator is
 $$
-\mathrm{Sd}_{\tilde Q}=\rho(\tilde Q)\otimes\bar\rho(\tilde Q),
+\mathrm{Sd}_{\tilde Q}=\Delta_{\mathrm{rep}}(\tilde Q)\otimes\bar\Delta_{\mathrm{rep}}(\tilde Q),
 $$
-where $\rho$ is the defining representation on $S=\mathbb{C}^{2}$ and $\bar\rho$ its conjugate. The tensor product of the defining representation and its conjugate is the complexified vector representation,
+where $\Delta_{\mathrm{rep}}$ is the defining representation on $S=\mathbb{C}^{2}$ and $\bar\Delta_{\mathrm{rep}}$ its conjugate. The tensor product of the defining representation and its conjugate is the complexified vector representation,
 $$
 2\otimes\bar 2=4,
 $$
 so the two-sided operator is the vector and the one-sided operator, on one slot, is the spinor.
 
-The weights add. For the rotor, $\rho(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta_{\mathrm{axr}}/2}$ and $\bar\rho(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta_{\mathrm{axr}}/2}$; the four sums are $\theta_{\mathrm{axr}},0,0,-\theta_{\mathrm{axr}}$. For the boost, both slots carry $e^{\mp\theta_{\mathrm{rpd}}/2}$ because the boost is Hermitian; the four sums are $\theta_{\mathrm{rpd}},0,0,-\theta_{\mathrm{rpd}}$. In both cases the vector weights are the sums of the two spinor weights, and each extremal vector weight is twice a spinor weight.
+The weights add. For the rotor, $\Delta_{\mathrm{rep}}(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta_{\mathrm{axr}}/2}$ and $\bar\Delta_{\mathrm{rep}}(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta_{\mathrm{axr}}/2}$; the four sums are $\theta_{\mathrm{axr}},0,0,-\theta_{\mathrm{axr}}$. For the boost, both slots carry $e^{\mp\theta_{\mathrm{rpd}}/2}$ because the boost is Hermitian; the four sums are $\theta_{\mathrm{rpd}},0,0,-\theta_{\mathrm{rpd}}$. In both cases the vector weights are the sums of the two spinor weights, and each extremal vector weight is twice a spinor weight.
 
 **The two-sided operator has no half-angle of its own.** It is the vector representation, of dimension four; its weights are the sums. The half-angle $\theta_{\mathrm{axr}}/2$ and the half-rapidity $\theta_{\mathrm{rpd}}/2$ live on a single slot, in *The One-Sided Operator Exponential on the N-Regular Sector*, §*The Polar Word on a Spinor*. The two-sided operator is the double of the half-spin, not a half-spin itself.
 
-**The two Peirce copies are not the two Lorentz chiralities.** The two columns $S_+$ and $S_-$ carry the same Weyl representation $\rho$; the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$, that is the left and right slots.
+**The two Peirce copies are not the two Lorentz chiralities.** The two columns $S_+$ and $S_-$ carry the same Weyl representation $\Delta_{\mathrm{rep}}$; the two Lorentz chiralities are the two tensor slots $S$ and $S^{*}$, that is the left and right slots.
 
 **The addition is at the level of generators.** For a general word the two slot exponents do not combine into one rapidity and one angle unless the axes commute. The four products $\lambda_i\bar\lambda_j$ remain exact; the split into a boost and a rotation is the content of §*The Boost* and §*The Rotor* for commuting axes. For a pure non-central factor the eigenvalue $1$ occurs twice in the list; for the scale the value $\varrho^{2}$ occurs four times, and for the phase the value $1$ occurs four times.
 
@@ -223,7 +223,7 @@ The four factors give the table of exponents. The scale doubles $\ln \varrho$ to
 
 On the wall the operator is $\mathrm{Sd}_{\tilde Q}=\lvert Q_t\rvert^{2}e^{A+B}$ with $A=L_{\vec\Upsilon}$, $B=R_{\vec\Upsilon^{*}}$, $\mathsf N=A+B+AB$, $\mathsf N^{2}=2AB$ and $\mathsf N^{3}=0$. The group is the finite polynomial $\exp(t\,\mathrm{Sd}_{\tilde Q})=e^{t\lvert Q_t\rvert^{2}}\bigl(I+t\lvert Q_t\rvert^{2}\mathsf N+\tfrac{t^{2}\lvert Q_t\rvert^{4}}{2}\mathsf N^{2}\bigr)$. On $\mathbb{B}_{\Phi}$ it is a null rotation, with the single eigenvalue $1$ and the Jordan form $J_3(1)\oplus J_1(1)$; the boost and the rotor keep the eigenvalues $e^{\pm\theta_{\mathrm{rpd}}}$ and $e^{\pm i\theta_{\mathrm{axr}}}$ in the factors and contribute only the locked parameter $a$ to the product.
 
-The spectral reading is the product formula. The one-slot pair of the rotor is $(e^{i\theta_{\mathrm{axr}}/2},e^{-i\theta_{\mathrm{axr}}/2})$ and the two-slot products are $e^{\pm i\theta_{\mathrm{axr}}}$; the one-slot pair of the boost is $(e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2})$ and the products are $e^{\pm\theta_{\mathrm{rpd}}}$; the scale gives $\varrho^{2}$ and the phase gives $1$. In representation-theoretic terms the two-sided operator is $\rho\otimes\bar\rho$, the complexified vector representation, and the vector weights are the sums of the two spinor weights. The one-sided operator is the spinor action, and the two-sided operator is its double.
+The spectral reading is the product formula. The one-slot pair of the rotor is $(e^{i\theta_{\mathrm{axr}}/2},e^{-i\theta_{\mathrm{axr}}/2})$ and the two-slot products are $e^{\pm i\theta_{\mathrm{axr}}}$; the one-slot pair of the boost is $(e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2})$ and the products are $e^{\pm\theta_{\mathrm{rpd}}}$; the scale gives $\varrho^{2}$ and the phase gives $1$. In representation-theoretic terms the two-sided operator is $\Delta_{\mathrm{rep}}\otimes\bar\Delta_{\mathrm{rep}}$, the complexified vector representation, and the vector weights are the sums of the two spinor weights. The one-sided operator is the spinor action, and the two-sided operator is its double.
 
 ## Summary of Notation
 
@@ -237,7 +237,7 @@ The spectral reading is the product formula. The one-slot pair of the rotor is $
 | $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$ | the rotor |
 | $\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}}$ | the rapidity and the rotation angle |
 | $S,S^{*}$ | the spinor space and its dual, $\mathbb{B}\cong S\otimes S^{*}$ |
-| $\rho,\bar\rho$ | the defining representation and its conjugate |
+| $\Delta_{\mathrm{rep}},\bar\Delta_{\mathrm{rep}}$ | the defining representation and its conjugate |
 
 | $\vec\Upsilon=\vec A+i\vec B$ | the null vector on the wall, $\lvert\vec A\rvert=\lvert\vec B\rvert=a$, $\vec A\cdot\vec B=0$ |
 | $A=L_{\vec\Upsilon}$, $B=R_{\vec\Upsilon^{*}}$ | the two commuting square-zero operators |

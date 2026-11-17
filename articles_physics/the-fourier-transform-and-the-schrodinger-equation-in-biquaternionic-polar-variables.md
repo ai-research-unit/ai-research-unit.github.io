@@ -20,7 +20,7 @@ The algebra, the units, the caret table and the two conjugations are those of *A
 
 **The word.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$, with $\varrho>0$ the scale, $\theta_{\mathrm{pha}}$ the phase, $\tilde U_{\Psi,\mathrm b}$ the Hermitian boost of unit quaternionic norm, and $\tilde u_{\mathrm r}$ the real unit rotor. It is a bijection with the eight real components off the cone $\langle\tilde\Xi\rangle_\natural=0$.
 
-**The two norms.** $\langle\tilde\Xi\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ reads the scale and the phase; $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ reads the scale and the rapidity. Neither reads the rotor, and neither reads an axis.
+**The two norms.** $\langle\tilde\Xi\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ reads the scale and the phase; $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ reads the scale and the rapidity. Neither reads the rotor, and neither reads an axis.
 
 **The symbol.** $\sigma(\omega)=\hbar\omega\,e_t-\tilde H_\Psi$ with $h_t$ and $\vec h_\Psi$ real, and its two invariants $\operatorname{tr}\sigma=4(\hbar\omega-h_t)$ and $\det\sigma=\langle\sigma\rangle_\natural^{2}$.
 
@@ -151,7 +151,7 @@ $$
 K=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\;\partial_{t'}\theta_{\mathrm{pha}}+\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\big(\vec\Omega\cdot\vec u_{\mathrm b}\big),
 $$
 
-with $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho/2$. So the coefficient of the phase's rate is $-\hbar n$, and the conjugate momentum of the phase is
+with $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{num}}/2$. So the coefficient of the phase's rate is $-\hbar n$, and the conjugate momentum of the phase is
 
 $$
 p_\theta=\frac{\partial K}{\partial(\partial_{t'}\theta_{\mathrm{pha}})}=-\hbar\,n .
@@ -230,7 +230,7 @@ The phase is a character and the rotor is not: $0.6$ and $0.9$ about different a
 | $h_t\pm\lvert\vec h_\Psi\rvert$ | The two eigenvalues; the mean and the gap; the two rates |
 | $1+1+3+3=8$ | The four types of the bracket, and their dimensions |
 | $p_\theta=-\hbar n$ | The phase's conjugate momentum; the density |
-| $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho/2$ | The density; the dual coordinate |
+| $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\rho_{\mathrm{num}}/2$ | The density; the dual coordinate |
 | $\varrho\,\mathrm{d}\varrho=\tfrac12\mathrm{d}n$ | The flat dual; the Jacobian $2\varrho$ |
 | $\theta_{\mathrm{axr},Q}=2\lvert\vec h_\Psi\rvert t'/\hbar$ | The rotor's angle; the gap, read twice |
 

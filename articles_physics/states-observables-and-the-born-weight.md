@@ -628,7 +628,7 @@ The equation is not postulated with an anti-Hermitian generator; the generator i
 
 **The two theorems are the two halves of one statement about the sector's two forms.** The quaternionic norm is preserved by the larger group and the Hermitian norm by the smaller one. The state space is defined by the smaller one's functional and by the larger one's cone, so it inherits the smaller group: a preparation is Lorentz-covariant as a ray and not as a normalised state. That asymmetry is the theme of the next section, where it becomes the difference between a four-vector and a velocity.
 
-## The Mirror of the Material Sector
+## The Switch of the Material Sector
 
 **The two sectors are related by one multiplication, and the relation is a dictionary with a factor.** For a material element the **preparation dictionary** is
 
@@ -640,7 +640,7 @@ $$
 \tilde H_\Psi\in\mathbb{B}_{\Psi},
 $$
 
-and it is the mirror map of the series with the sign that makes the scalar part of a four-vector positive. The factor two is the normalisation $2\,\mathrm{Sc}(e_t)=2$ of the unit, and the sign is the direction from an object to its observable. The map is real-linear, bijective, and it carries the four real numbers of the material element to the four real numbers of the informational one.
+and it is the switch of the series with the sign that makes the scalar part of a four-vector positive. The factor two is the normalisation $2\,\mathrm{Sc}(e_t)=2$ of the unit, and the sign is the direction from an object to its observable. The map is real-linear, bijective, and it carries the four real numbers of the material element to the four real numbers of the informational one.
 
 **Applied to a four-momentum it produces a state.** For a particle of mass $m$ and velocity $\vec v$ the momentum element is $\tilde P_\Phi=i(E/c)e_t+\vec p$, with $E=\gamma mc^{2}$ and $\vec p=\gamma m\vec v$. The dictionary gives
 
@@ -708,7 +708,7 @@ The normalised state of a momentum is the four-velocity over $c$, up to the fact
 
 **What the correspondence is not.** It is not a derivation of quantum mechanics from relativity, and it is not a claim that a particle carries a thermal state. It is an exact algebraic correspondence between two slices of two cones of one algebra, and it says that the two structures have the same shape because they are the same cone. The reading that a moving particle's state is mixed is an interpretation of that correspondence, and its scope is the scope of the map: it is the state that the dictionary assigns to the momentum, and it is not a statement about the reduced density matrix of a laboratory preparation unless that preparation is the one the dictionary describes.
 
-**A second check, in the other direction.** The dictionary is the mirror with the sign of the series, and the mirror of a Hermitian element is anti-Hermitian. Applying it twice with the two signs returns the element, so the correspondence is a bijection of the two sectors and not an embedding of one into the other. The factor two is fixed by the scalar part of the unit, and the sign is fixed by the positivity of the scalar part on the future cone. Both are conventions of the dictionary, and the classification of states by the cone is not.
+**A second check, in the other direction.** The dictionary is the switch with the sign of the series, and the switch of a Hermitian element is anti-Hermitian. Applying it twice with the two signs returns the element, so the correspondence is a bijection of the two sectors and not an embedding of one into the other. The factor two is fixed by the scalar part of the unit, and the sign is fixed by the positivity of the scalar part on the future cone. Both are conventions of the dictionary, and the classification of states by the cone is not.
 
 **The correspondence explains the asymmetry of the two preserved groups.** The material sector's element is classified by the quaternionic norm, which is preserved by $U(1)\cdot SL(2,\mathbb{C})$, so a four-momentum's causal class is a Lorentz invariant. The informational element's state space is a unit-scalar slice, which is preserved only by $U(2)$, so the purity of a state is not a Lorentz invariant. In the correspondence the two statements are the same statement: the radius of the ball is the velocity, and a boost changes the velocity. A boost cannot change whether a vector is timelike, and it can change how mixed a state is, because those are the two readings of one cone, and the boost acts on the cone and not on the slice.
 

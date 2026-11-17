@@ -27,7 +27,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^2=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated: $\rho=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$. The word exists exactly on the $N$-regular elements.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^2=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated: $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$, and $\varrho\,e^{i\theta_{\mathrm{pha}}}=\varrho e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$. The word exists exactly on the $N$-regular elements.
 
 **The coupled pair and its covariant wavevector.**
 
@@ -192,7 +192,7 @@ reduced into the word's range, plus the Maslov constant. The gauge term's share 
 
 3. **The scale at second order.** The determinant's quadratic response is measured and not interpreted. In the word it is a correction to the scale, and whether that correction has a geometric reading — a curvature of the space of paths, say — is open. The free case has no such term and gives no guidance.
 
-4. **The constraints with a connection.** The variational companion leaves a system in which seven of the eight momenta vanish or are fixed, one is the density $\pi_{\theta_{\mathrm{pha}}}=-\hbar c\rho$, and six Euler–Lagrange equations are constraints. The coupling adds a potential that depends on the frame's variables and is independent of the scale and the angle, so by the type argument it should enter the same two brackets and leave the count alone. The worldline integral has no canonical structure to test that with, and no test is offered here.
+4. **The constraints with a connection.** The variational companion leaves a system in which seven of the eight momenta vanish or are fixed, one is the density $\pi_{\theta_{\mathrm{pha}}}=-\hbar c\rho_{\mathrm{num}}$, and six Euler–Lagrange equations are constraints. The coupling adds a potential that depends on the frame's variables and is independent of the scale and the angle, so by the type argument it should enter the same two brackets and leave the count alone. The worldline integral has no canonical structure to test that with, and no test is offered here.
 
 5. **The fermionic statistics.** Unchanged from the free pair: the word is a coordinate on a commuting algebra, the Grassmann spin is in the spin factor, and the two are related by the spin–statistics theorem at quantisation rather than by anything in this integral.
 

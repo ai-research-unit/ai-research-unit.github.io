@@ -20,7 +20,7 @@ What the article does not do it says at once. It does not build a second integra
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The conjugations are $*$ and $\natural$, and the pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$, as in both variational articles. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated here: $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$; $\theta_{\mathrm{axr}}\in[0,2\pi]$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ real unit vectors; $\rho=\varrho^{2}$; $\gamma=\cosh\theta_{\mathrm{rpd}}$; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$; $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$. The word exists exactly on the $N$-regular elements, that is on $N\neq0$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The conjugations are $*$ and $\natural$, and the pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$, as in both variational articles. The word and its ranges are those of *The Dirac Equation in Biquaternionic Polar Variables*, §*The Word*, and none of their theory is repeated here: $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$; $\theta_{\mathrm{axr}}\in[0,2\pi]$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ real unit vectors; $\rho_{\mathrm{num}}=\varrho^{2}$; $\gamma=\cosh\theta_{\mathrm{rpd}}$; $\varrho\,e^{i\theta_{\mathrm{pha}}}$ the principal root of the quaternionic norm $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$; $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$. The word exists exactly on the $N$-regular elements, that is on $N\neq0$.
 
 The kernel is the companion's. The dynamics is the pair $\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\tilde\Xi_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R}$ with $k_m=mc/\hbar$, and its Green kernel in momentum space has the two components
 
@@ -125,7 +125,7 @@ The kernel carries two bilinears, and each is blind to half of the word.
 
 | bilinear | value | what it reads | what it cannot see |
 | --- | --- | --- | --- |
-| $\langle\mathcal S_L\rangle_{\natural}=\mathcal S_L\mathcal S_L^{\natural}$ | central, $\rho\,e^{2i\theta_{\mathrm{pha}}}$ | the scale and twice the angle | the boost, the rotor |
+| $\langle\mathcal S_L\rangle_{\natural}=\mathcal S_L\mathcal S_L^{\natural}$ | central, $\rho_{\mathrm{num}}\,e^{2i\theta_{\mathrm{pha}}}$ | the scale and twice the angle | the boost, the rotor |
 | $2\,\mathrm{Sc}\bigl(\mathcal S_L^{*}\mathcal S_L\bigr)=2\,\mathrm{Sc}\bigl(\mathcal S_L^{*}\mathcal S_L\bigr)$ | real | the scale and the boost | the angle, the rotor |
 
 Both rows are exact, and both are checked. Right multiplication of an element by a rotor leaves the quaternionic norm unchanged, because the norm multiplies, and leaves the Hermitian norm unchanged, because the scalar part is invariant under conjugation by an invertible element. Over one hundred random elements the two deviations are $6\times10^{-15}$ and $5\times10^{-15}$, while the rotor moves in every case. **Neither norm reads the spin.** The density that the standard theory computes from $\mathcal S^{*}\mathcal S$ is insensitive to the spin direction, and the spin of the kernel lives in the rotor alone.
@@ -284,7 +284,7 @@ None of this is a new integral. It is the companion's integral read in the coord
 | --- | --- |
 | $\mathbb{B}$ | Biquaternion algebra; $e_t$ its unit; $i$ central |
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$ | The polar word |
-| $\varrho>0$, $\rho=\varrho^{2}$ | Scale and density |
+| $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | Scale and density |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | The word's angle |
 | $\theta_{\mathrm{rpd}}\ge0$, $\vec u_{\mathrm b}$ | Rapidity and axis of the boost $\tilde U_{\Psi,\mathrm b}$ |
 | $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\vec u_{\mathrm r}$ | Angle and axis of the rotor $\tilde u_{\mathrm r}$ |

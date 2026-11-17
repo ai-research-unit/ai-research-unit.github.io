@@ -228,7 +228,7 @@ Both components are real multiples of the same idempotent, both have vanishing n
 
 ### What Survives and What Does Not
 
-**The word fails and the state does not.** The polar word of the field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and its scale is read from the norm, $N=\rho e^{2i\theta_{\mathrm{pha}}}$ with $\rho=\varrho^{2}$. On the cone $N=0$, so $\varrho=0$ and the word has no value. What survives is the pair's own data: the idempotent $\tilde\Pi$ and the weight $\lambda$. The idempotent carries a direction and the weight carries a complex number, and neither is read by the word.
+**The word fails and the state does not.** The polar word of the field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, and its scale is read from the norm, $N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ with $\rho_{\mathrm{num}}=\varrho^{2}$. On the cone $N=0$, so $\varrho=0$ and the word has no value. What survives is the pair's own data: the idempotent $\tilde\Pi$ and the weight $\lambda$. The idempotent carries a direction and the weight carries a complex number, and neither is read by the word.
 
 Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.
 
@@ -240,7 +240,7 @@ $$
 \arg\lambda=\arg Q_t .
 $$
 
-The polar companion's density is $\rho=\varrho^{2}$, a quadratic object, and its angle is half the argument of the norm. Here the norm is gone and the reading drops to the trace, which is linear. The factor of two that the companion carries in $N=\rho e^{2i\theta_{\mathrm{pha}}}$ has no counterpart, which is the algebraic reason the polar word does not extend to this sector.
+The polar companion's density is $\rho_{\mathrm{num}}=\varrho^{2}$, a quadratic object, and its angle is half the argument of the norm. Here the norm is gone and the reading drops to the trace, which is linear. The factor of two that the companion carries in $N=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ has no counterpart, which is the algebraic reason the polar word does not extend to this sector.
 
 ### The Physical Interpretation
 

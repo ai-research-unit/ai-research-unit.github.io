@@ -40,7 +40,7 @@ $$
 
 **The bracket is a one-form and it is the phase's momentum plus the spin's.** Its first term is the phase rate weighted by $\cosh\theta_{\mathrm{rpd}}=\gamma$; its second is the rotor's body angular velocity weighted by $\sinh\theta_{\mathrm{rpd}}=\gamma\beta$. **The two weights are the boost's two hyperbolic functions**, so the one-form is the four-velocity contracted with the two rates.
 
-**The overall factor is a convention.** The element action carries $\hbar c/2$ and the display carries $\hbar c$; the factor cancels from every Euler–Lagrange equation and is chosen so that the phase momentum comes out $\hbar c\rho\gamma$, the temporal component of the current.
+**The overall factor is a convention.** The element action carries $\hbar c/2$ and the display carries $\hbar c$; the factor cancels from every Euler–Lagrange equation and is chosen so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the temporal component of the current.
 
 **The momenta.** $p_x=A_x(q)$, so
 
@@ -133,7 +133,7 @@ The price is exact: with no discarded term there is no accuracy estimate, and wi
 | Symbol | Meaning |
 |---|---|
 | $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word; defined where $N(\tilde\Xi)\neq0$ |
-| $\varrho>0$, $\rho=\varrho^{2}$ | The scale; the density |
+| $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the density |
 | $\theta_{\mathrm{rpd}}$, $\tilde u_{\mathrm b}$ | The boost's rapidity and axis |
 | $\vec\omega_{\mathrm r}$, $\hat n_{\mathrm{rot}}$ | The rotor's body angular velocity and axis |
 | $A_x(q)$ | The one-form whose components are the eight momenta |

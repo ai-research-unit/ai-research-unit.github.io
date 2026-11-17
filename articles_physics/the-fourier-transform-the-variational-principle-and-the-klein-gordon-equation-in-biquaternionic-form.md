@@ -16,7 +16,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*, and the sector bookkeeping those of *Mirror Biquaternions and the Phy–Psy Switch*. The kernel and its $i\epsilon$ prescription are those of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*.
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient, the d'Alembertian and the symbol rule those of *Operator and Calculus Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The kernel and its $i\epsilon$ prescription are those of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*.
 
 **The bookkeeping is stated once.** With $\tilde K_\Phi=ik_t'e_t+\vec k_\Phi$, $k_t'=\omega/c$, $k_m=mc/\hbar$ and $r_t'=ct'$,
 
@@ -171,5 +171,4 @@ The lower branch is negative when $\lvert\vec v\rvert>a$, which happened in $276
 - *The Klein–Gordon Equation in Biquaternionic Form*, for the plane waves, the dispersion relation and the verdict on the sector split.
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and the symbol rule.
 - *Norm and Pairing Conventions*, for the Hermitian form and the centrality of the quaternionic norm.
-- *Mirror Biquaternions and the Phy–Psy Switch*, for the sector bookkeeping.
 - *The First-Order Root of the Biquaternion Klein–Gordon Operator*, for the spinor square root that the scalar operator does not have.

@@ -14,7 +14,7 @@
 
 ## Conventions
 
-The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the four products those of *Product and Form Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*, and the sector bookkeeping those of *Mirror Biquaternions and the Phy–Psy Switch*. The transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule is quoted once and not re-derived:
+The algebra and its units are those of *Algebra and Element Conventions*, the gradient and the d'Alembertian those of *Operator and Calculus Conventions*, the four products those of *Product and Form Conventions*, the two forms those of *Norm and Pairing Conventions*, the invertibles and the material time those of *Physics Units and Common Elements Conventions*. The transform is the one of *Derivatives, Fields and Transforms*, whose symbol rule is quoted once and not re-derived:
 
 $$
 \frac{\partial}{\partial R_\mu}\longmapsto 2\pi\rho\,\omega_\mu ,
@@ -221,7 +221,6 @@ The transform preserves the Hermitian form, by Plancherel, and breaks the quater
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and its symbol rule.
 - *Wave–Particle Duality and the Fourier Transform*, for the two forms on one element and the interval as a symbol.
 - *Biquaternion Continuous Harmonic Analysis*, for Plancherel's condition on the root and the support on the cone.
-- *Mirror Biquaternions and the Phy–Psy Switch*, for the sector bookkeeping used in every line above.
 - *Canonical Quantization of the Biquaternion Dirac Field*, for the plane-wave amplitudes the transform produces.
 - M. Plancherel, "Contribution à l'étude de la représentation d'une fonction arbitraire par des intégrales définies," *Rendiconti del Circolo Matematico di Palermo* **30** (1910) 289–335, for the isometry of the transform.
 - R. Penrose and W. Rindler, *Spinors and Space-Time I* (Cambridge, 1984), for the two ideals of a null momentum and the flag it carries.

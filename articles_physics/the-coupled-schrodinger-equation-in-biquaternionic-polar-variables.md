@@ -34,7 +34,7 @@ with $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ the material connection, and the who
 
 **What is not claimed.** No new prediction and no new solution: the equation is the element form's and the flow is its consequence. The polar chart does not decouple the four brackets from the parameters, does not simplify the equation, and does not supply a second constant of motion. What it supplies is the reading: which bracket the connection joins, which coordinate the gauge group translates, and which invariants the coupling leaves alone.
 
-**Conventions.** The algebra, the pairing, the sectors, the two settings and the parameter ranges are the free polar article's and are not restated. Time is $t'$, so that $i\hbar\partial_{t'}=i\hbar c\,\partial_{r'_t}$ and the element form's $r'_t=c\,t'$ is the parent's material length; the polar article uses $t'$ throughout, and so does this one. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$ and $\vec A$ real, and the coupling is $ϙ$, which is minus the electric charge of the older convention: the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-ϙ\varphi$. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho/2$, and the word gives $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
+**Conventions.** The algebra, the pairing, the sectors, the two settings and the parameter ranges are the free polar article's and are not restated. Time is $t'$, so that $i\hbar\partial_{t'}=i\hbar c\,\partial_{r'_t}$ and the element form's $r'_t=c\,t'$ is the parent's material length; the polar article uses $t'$ throughout, and so does this one. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$ and $\vec A$ real, and the coupling is $ϙ$, which is minus the electric charge of the older convention: the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy enters as $-ϙ\varphi$. The density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho_{\mathrm{num}}/2$, and the word gives $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 ## The Covariant Logarithmic Derivative
 
@@ -245,7 +245,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\hbar^{2}\Delta \var
 | $\mathcal E=-\hbar\partial_{t'}\theta_{\mathrm{pha}}+ϙ\varphi$ | The kinetic energy |
 | $S=\hbar\theta_{\mathrm{pha}}$ | The action of the flow |
 | $Q=-\hbar^{2}\Delta \varrho/2m\varrho$ | The quantum potential |
-| $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density; $\rho=2n$ |
+| $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density; $\rho_{\mathrm{num}}=2n$ |
 | $h_t$, $\vec h_\Psi$ | The canonical energy and momentum of the constant setting |
 | $h_t-ϙ\varphi$, $\vec h_\Psi-q\vec A$ | The kinetic energy and momentum |
 | $\Phi_B$ | The magnetic flux through a loop |
