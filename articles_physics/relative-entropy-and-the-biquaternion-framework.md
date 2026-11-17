@@ -148,7 +148,7 @@ S\big(\tilde\Pi(\vec u_r)\big\|\tilde{Ϛ}_{\Psi,2}\big)
 -\mathrm{artanh}\big(|\vec s|\big)\cos\gamma_{rs},
 \qquad \cos\gamma_{rs}=\vec u_r\cdot\vec u_s,
 $$
-which is the direct computation $-\mathrm{Tr}(\tilde\Pi(\vec u_r)\log\tilde{Ϛ}_{\Psi,2})$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
+which is the direct computation $-2\,\mathrm{Sc}(\tilde\Pi(\vec u_r)\log\tilde{Ϛ}_{\Psi,2})$ in the pure case: the entropy of a pure state vanishes, and the whole value is the cross term.
 
 ### Verification on Generic Superpositions
 

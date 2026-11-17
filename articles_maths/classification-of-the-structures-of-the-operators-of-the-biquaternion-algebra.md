@@ -331,7 +331,7 @@ with $T_{\tilde Q,\tilde P}(\tilde X)=\tilde Q\tilde X\tilde P$, is an isomorphi
 **Definition (the off-diagonal part).** Let $\mathfrak{sl}_2\subset\mathbb{B}$ be the traceless part, of complex dimension three, and put
 
 $$
-\mathfrak{m}:=\{T_{\tilde Q,\tilde P}:\operatorname{tr}\tilde Q=\operatorname{tr}\tilde P=0\}=\mathfrak{sl}_2\otimes_{\mathbb{C}}\mathfrak{sl}_2 .
+\mathfrak{m}:=\{T_{\tilde Q,\tilde P}:2\,\mathrm{Sc}\,\tilde Q=2\,\mathrm{Sc}\,\tilde P=0\}=\mathfrak{sl}_2\otimes_{\mathbb{C}}\mathfrak{sl}_2 .
 $$
 
 **Proposition (the decomposition).** The space $\mathfrak{m}$ has complex dimension nine, and
@@ -350,7 +350,7 @@ $$
 
 with $Q_1,P_1$ traceless; the first term is a scalar, the second lies in $R(\mathbb{B})$, the third in $L(\mathbb{B})$ and the fourth in $\mathfrak{m}$. Hence $\mathcal{E}_{\mathbb{C}}=L(\mathbb{B})+R(\mathbb{B})+\mathfrak{m}$, and the dimensions give $7+9=16$, so the sum is direct. ∎
 
-**Warning (the sum $L+R$ is not direct, and $\mathfrak{m}$ is not a subalgebra).** The sum $L(\mathbb{B})+R(\mathbb{B})$ is a sum of two four-dimensional spaces meeting in the line $\mathbb{C}\cdot\mathrm{I}_4$; it is not direct, and it is not closed under products, since $L_{\tilde Q}R_{\tilde P}=T_{\tilde Q,\tilde P}$ leaves it whenever both factors are non-scalar. It is a Lie subalgebra, because $[L,L]\subset L$, $[R,R]\subset R$ and $[L,R]=0$. The complement $\mathfrak{m}$ is neither an associative nor a Lie subalgebra. For traceless parameters the product is $T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$, and $\tilde Q\tilde R$ is traceless only when $\operatorname{tr}(\tilde Q\tilde R)=0$, so the product leaves $\mathfrak{m}$; the witness is $(T_{\vec e_x,\vec e_x})^{2}=T_{\vec e_x^2,\vec e_x^2}=\mathrm{I}_4$, using $\vec e_x^2=-e_t$. The bracket is no better: $[T_{\vec e_x,\vec e_y},T_{\vec e_x,\vec e_z}]$ lies in $L(\mathbb{B})+R(\mathbb{B})$ and not in $\mathfrak{m}$. What does hold is stability under the traceless parts of the two regular families: $L_{\tilde Q}\mathfrak{m}R_{\tilde P}\subset\mathfrak{m}$ and $[L_{\tilde Q},\mathfrak{m}]\subset\mathfrak{m}$, $[R_{\tilde P},\mathfrak{m}]\subset\mathfrak{m}$ for $\tilde Q,\tilde P\in\mathfrak{sl}_2$, with $L_{\tilde Q}T_{\tilde R,\tilde S}R_{\tilde P}=T_{\tilde Q\tilde R,\tilde S\tilde P}$. The complement is a module over $L(\mathfrak{sl}_2)\oplus R(\mathfrak{sl}_2)$ and not over $L(\mathbb{B})\oplus R(\mathbb{B})$: $L_{\vec e_x}T_{\vec e_x,\vec e_y}R_{\vec e_y}=\mathrm{I}_4$ leaves $\mathfrak{m}$.
+**Warning (the sum $L+R$ is not direct, and $\mathfrak{m}$ is not a subalgebra).** The sum $L(\mathbb{B})+R(\mathbb{B})$ is a sum of two four-dimensional spaces meeting in the line $\mathbb{C}\cdot\mathrm{I}_4$; it is not direct, and it is not closed under products, since $L_{\tilde Q}R_{\tilde P}=T_{\tilde Q,\tilde P}$ leaves it whenever both factors are non-scalar. It is a Lie subalgebra, because $[L,L]\subset L$, $[R,R]\subset R$ and $[L,R]=0$. The complement $\mathfrak{m}$ is neither an associative nor a Lie subalgebra. For traceless parameters the product is $T_{\tilde Q,\tilde P}T_{\tilde R,\tilde S}=T_{\tilde Q\tilde R,\tilde S\tilde P}$, and $\tilde Q\tilde R$ is traceless only when $2\,\mathrm{Sc}(\tilde Q\tilde R)=0$, so the product leaves $\mathfrak{m}$; the witness is $(T_{\vec e_x,\vec e_x})^{2}=T_{\vec e_x^2,\vec e_x^2}=\mathrm{I}_4$, using $\vec e_x^2=-e_t$. The bracket is no better: $[T_{\vec e_x,\vec e_y},T_{\vec e_x,\vec e_z}]$ lies in $L(\mathbb{B})+R(\mathbb{B})$ and not in $\mathfrak{m}$. What does hold is stability under the traceless parts of the two regular families: $L_{\tilde Q}\mathfrak{m}R_{\tilde P}\subset\mathfrak{m}$ and $[L_{\tilde Q},\mathfrak{m}]\subset\mathfrak{m}$, $[R_{\tilde P},\mathfrak{m}]\subset\mathfrak{m}$ for $\tilde Q,\tilde P\in\mathfrak{sl}_2$, with $L_{\tilde Q}T_{\tilde R,\tilde S}R_{\tilde P}=T_{\tilde Q\tilde R,\tilde S\tilde P}$. The complement is a module over $L(\mathfrak{sl}_2)\oplus R(\mathfrak{sl}_2)$ and not over $L(\mathbb{B})\oplus R(\mathbb{B})$: $L_{\vec e_x}T_{\vec e_x,\vec e_y}R_{\vec e_y}=\mathrm{I}_4$ leaves $\mathfrak{m}$.
 
 **Remark (why nine).** The number nine is the dimension of the space of traceless $2\times2$ matrices squared, $\mathfrak{m}=\mathfrak{sl}_2\otimes_{\mathbb{C}}\mathfrak{sl}_2$, and it is also $16-7$. Two readings of the same count: the operators that are neither a left multiplication, nor a right one, nor a scalar multiple of either, form a nine-dimensional space, and they are exactly the two-sided operators with both parameters traceless. The two factors explain the module structure: $[L_{\tilde Q},T_{\tilde R,\tilde S}]=T_{[\tilde Q,\tilde R],\tilde S}$ stays in $\mathfrak{m}$ for traceless $\tilde Q,\tilde R$, so $L(\mathfrak{sl}_2)$ acts on the first tensor factor and $R(\mathfrak{sl}_2)$ on the second, while $L(\mathbb{B})$ and $R(\mathbb{B})$ do not act at all.
 
@@ -437,7 +437,7 @@ $$
 \operatorname{tr}\bigl((L_{\tilde Q}\tilde X)^{*}\tilde Y\bigr)=\operatorname{tr}\bigl(\tilde X^{*}L_{\tilde Q}\tilde Y\bigr)
 $$
 
-holds for $\tilde Q$ Hermitian, both sides reducing to $\operatorname{tr}(\tilde X^{*}\tilde Q\tilde Y)$, and the identity extends by linearity to the whole four-dimensional space. Hence
+holds for $\tilde Q$ Hermitian, both sides reducing to $2\,\mathrm{Sc}(\tilde X^{*}\tilde Q\tilde Y)$, and the identity extends by linearity to the whole four-dimensional space. Hence
 
 $$
 L(\mathbb{B}_{\Psi})\subset H_4(\mathbb{C}),
@@ -589,7 +589,7 @@ The element level enters through two embeddings of dimension four, and a real fo
 | $L_{\tilde Q}(\tilde X)=\tilde Q\tilde X$, $R_{\tilde Q}(\tilde X)=\tilde X\tilde Q$ | The left and right multiplications |
 | $L(\mathbb{B})$, $R(\mathbb{B})$ | The regular families, mutually centralizing copies of $M_2(\mathbb{C})$ |
 | $T_{\tilde Q,\tilde P}(\tilde X)=\tilde Q\tilde X\tilde P$ | The two-sided operator |
-| $\mathfrak{m}=\{T_{\tilde Q,\tilde P}:\operatorname{tr}\tilde Q=\operatorname{tr}\tilde P=0\}$ | The complement of $L+R$ in $\mathcal{E}_{\mathbb{C}}$, complex dimension $9$ |
+| $\mathfrak{m}=\{T_{\tilde Q,\tilde P}:2\,\mathrm{Sc}\,\tilde Q=2\,\mathrm{Sc}\,\tilde P=0\}$ | The complement of $L+R$ in $\mathcal{E}_{\mathbb{C}}$, complex dimension $9$ |
 | $X\circ Y=\tfrac12(XY+YX)$ | The symmetrized product; the Jordan layer |
 | $\mathcal{E}(A_0)=\operatorname{span}_{\mathbb{R}}\{T_{\tilde Q,\tilde P}:\tilde Q,\tilde P\in A_0\}$ | The two-sided span of a real form $A_0$ of $\mathbb{B}$ |
 | $\mathcal{E}^{\mathbb{H}}$ | The right $\mathbb{H}$-linear maps; $\cong M_2(\mathbb{H})$ |

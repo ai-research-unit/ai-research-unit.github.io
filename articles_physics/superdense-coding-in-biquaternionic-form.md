@@ -41,7 +41,7 @@ The state $\tilde\Pi_{Ξ^+}$ has the following properties, all used in the proto
 
 - it is **pure**, $\tilde\Pi_{Ξ^+}^2 = \tilde\Pi_{Ξ^+}$, and positive, with trace one;
 - it is **maximally entangled**: its partial traces are both maximally mixed, $\mathrm{Tr}_B \tilde\Pi_{Ξ^+} = \mathrm{Tr}_A \tilde\Pi_{Ξ^+} = \tfrac12 e_t$;
-- it is a **maximal-uncertainty** state with respect to every local basis: the reduced state of either qubit alone carries no information, $\mathrm{Tr}(\tilde\Pi(\vec u)\,\mathrm{Tr}_B \tilde\Pi_{Ξ^+}) = \tfrac12$ for every direction $\vec u$.
+- it is a **maximal-uncertainty** state with respect to every local basis: the reduced state of either qubit alone carries no information, $2\,\mathrm{Sc}\bigl(\tilde\Pi(\vec u)\,\mathrm{Tr}_B \tilde\Pi_{Ξ^+}\bigr) = \tfrac12$ for every direction $\vec u$.
 
 The last property is what makes the protocol worth performing: **Alice's half, on its own, contains no information about anything**, so all the transmitted information must be created by her local operation and revealed only by Bob's joint measurement. This is the operational meaning of maximal entanglement in the algebra.
 

@@ -139,7 +139,7 @@ and all other pairings vanish, so the Gram matrix is $2$ times the Lorentz form 
 
 **The signature $(3,1)$ and the biquaternion norm are two readings of one form.** The biquaternion norm $N$ is indefinite of signature $(2,2)$ over $\mathbb{R}$ on the four real coordinates of $\mathbb{B}$, and the trace form on the same four coordinates has signature $(3,1)$; the two differ by the choice of real structure, since the norm is the determinant and the trace form is the trace of the product. On the symmetric half the trace form is positive definite of signature $(3,0)$, and the negative direction is the whole of the antisymmetric half.
 
-**The two halves at $n=2$ are a time direction and a space direction.** The symmetric half is the three-dimensional positive space and the antisymmetric half the line of negative type, so the split is the split of Minkowski space into space and time. The idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are positive vectors of norm $1$, since $\operatorname{tr}(\tilde\Pi_\pm^{2})=\operatorname{tr}(\tilde\Pi_\pm)=1$, and the rotation direction $J$ is the negative vector, which is the Lorentz picture of *Coda: $n=2$ and the Biquaternion Algebra*.
+**The two halves at $n=2$ are a time direction and a space direction.** The symmetric half is the three-dimensional positive space and the antisymmetric half the line of negative type, so the split is the split of Minkowski space into space and time. The idempotents $\tilde\Pi_\pm=\tfrac12(e_t\pm\tilde{Ζ})$ are positive vectors of norm $1$, since $2\,\mathrm{Sc}(\tilde\Pi_\pm^{2})=2\,\mathrm{Sc}(\tilde\Pi_\pm)=1$, and the rotation direction $J$ is the negative vector, which is the Lorentz picture of *Coda: $n=2$ and the Biquaternion Algebra*.
 
 ## Summary
 

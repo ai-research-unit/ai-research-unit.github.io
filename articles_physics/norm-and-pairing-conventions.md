@@ -227,7 +227,7 @@ The word's parameter here is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$, a
 The trace is the trace of the $2\times2$ image and nothing else,
 
 $$
-\operatorname{Tr}\tilde Q=\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\,\tilde Q=2Q_t.
+\operatorname{Tr}\mathsf M_2(\tilde Q)=2\,\mathrm{Sc}\,\tilde Q=2Q_t.
 $$
 
 The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. It cancels in every ratio, and the Born weight is a ratio:

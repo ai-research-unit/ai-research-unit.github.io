@@ -48,7 +48,7 @@ $$
 $$
 is the biquaternion carrier, with $\bar e_\mu$ the quaternion conjugate of the unit ($\bar e_t=e_t$, $\bar e_\eta=-\vec e_\eta$). For the abelian factor the carrier is $(\tilde\nabla_\Phi)^{\natural}\tilde A_{\Phi}$ itself; for the non-abelian factor it is a definition read off from the components, since the commutator term is not a derivative of $\mathcal{A}$.
 
-**The invariants.** With the field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the two real invariants of *The Field-Strength Biquaternion and Its Invariants* are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The informational trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; it is the pairing of the Hermitian sector, and the section *The Traces Involved, and the One That Is Not* keeps it apart from the two traces that compute an anomaly. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value, and the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
+**The invariants.** With the field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the two real invariants of *The Field-Strength Biquaternion and Its Invariants* are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the normalization of the instanton article. The reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is inherited unchanged; it is the pairing of the Hermitian sector, and the section *The Traces Involved, and the One That Is Not* keeps it apart from the two traces that compute an anomaly. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value, and the symbols $SU(3)$, $SU(2)_L$, $\mathrm{U}(1)_Y$, $Y$, $T_3$ are **standard-model notation, not framework objects**, used only where a standard structure is named.
 
 The framework results used here are those of the companion articles:
 
@@ -168,7 +168,7 @@ which is why it is not renormalised and why it is fixed by topology. Third, the 
 
 ## The Triangle Coefficient and the Group Factors
 
-**Two traces, two names.** Throughout, $\mathrm{tr}$ is the trace of an operator of the algebra, in its four complex dimensions, and $\mathrm{Tr}_R$ the matrix trace over the gauge representation; the anomaly is their product. The subscript-free $\mathrm{Tr}$ appears only in the inherited informational formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, whose argument is a product of algebra elements rather than of matrices.
+**Two traces, two names.** Throughout, $\mathrm{tr}$ is the trace of an operator of the algebra, in its four complex dimensions, and $\mathrm{Tr}_R$ the matrix trace over the gauge representation; the anomaly is their product. The subscript-free $\mathrm{Tr}$ appears only in the inherited informational formula, whose argument is a product of algebra elements rather than of matrices.
 
 **The general anomaly coefficient.** For a gauge theory with generators $T_a$ acting on a left-handed Weyl fermion in a representation $R$, the coefficient of the triangle anomaly is the **symmetrised trace**
 
@@ -337,7 +337,7 @@ $$
 
 the identity that keeps the chirality-weighted trace free of an identity term, so that the anomaly is a total derivative rather than a shift of the vacuum energy.
 
-**The trace that is not involved.** The framework's informational trace formula, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is the state-and-observable pairing of the Hermitian sector $\mathbb{B}_{\Psi}$: it counts the scalar part of a product with the factor $\mathrm{Tr}(e_t)=2$. It is **not** the trace that computes an anomaly. The anomaly trace is the trace of an operator of the algebra together with the ordinary matrix trace over the gauge representation; neither is the scalar-part pairing, and substituting one for the other would be a category error. The formula of $\mathbb{B}_{\Psi}$ is used in the companion articles for expectation values of observables; the anomaly uses the traces of the algebra. The distinction is stated here because both are called "the trace" in the series.
+**The trace that is not involved.** The framework's informational reduction, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is the state-and-observable pairing of the Hermitian sector $\mathbb{B}_{\Psi}$: it counts the scalar part of a product with the factor $\mathrm{Tr}(e_t)=2$. It is **not** the trace that computes an anomaly. The anomaly trace is the trace of an operator of the algebra together with the ordinary matrix trace over the gauge representation; neither is the scalar-part pairing, and substituting one for the other would be a category error. The formula of $\mathbb{B}_{\Psi}$ is used in the companion articles for expectation values of observables; the anomaly uses the traces of the algebra. The distinction is stated here because both are called "the trace" in the series.
 
 ## What the Framework Supplies, Transcribes, and Does Not Supply
 

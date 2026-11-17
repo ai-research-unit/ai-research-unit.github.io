@@ -49,7 +49,7 @@ $$
 =\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X,
 $$
 
-with $\Rho^{2}=-\det\tilde X$. The two series are the cosine and the cardinal sine of $\Rho$, and the identity $\Rho^{2}=-\det\tilde X=\tfrac12\operatorname{tr}(\tilde X^{2})$ follows from the same characteristic polynomial.
+with $\Rho^{2}=-\det\tilde X$. The two series are the cosine and the cardinal sine of $\Rho$, and the identity $\Rho^{2}=-\det\tilde X=\mathrm{Sc}(\tilde X^{2})$ follows from the same characteristic polynomial.
 
 ### The Verification
 
@@ -130,7 +130,7 @@ $$
 \tilde A=-e_t+\tilde N,\qquad \tilde N\neq0,\qquad \tilde N^{2}=0,
 $$
 
-the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\det\tilde A=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\operatorname{tr}\tilde X=0$.
+the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\det\tilde A=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.
 
 - If $\tilde X$ has distinct eigenvalues, $\exp(\tilde X)$ has distinct eigenvalues. But $\tilde A$'s eigenvalues are equal, both $-1$. Contradiction.
 - So $\tilde X$ has equal eigenvalues; being traceless, both are zero; so $\tilde X^{2}=0$ and $\exp(\tilde X)=e_t+\tilde X$. But $\tilde A=-e_t+\tilde N$ has trace $-2$, while $e_t+\tilde X$ has trace $2$. Contradiction.
@@ -258,14 +258,14 @@ Cartan coordinates are not exponential coordinates: the product of two exponenti
 
 ## Summary
 
-The exponential of a traceless biquaternion has the closed form $\exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X$ with $\Rho^{2}=\tfrac12\operatorname{tr}(\tilde X^{2})$, which is a rotation when $\Rho$ is real and a boost when $\Rho$ is imaginary; the two forms in the menu are its two ranges. Its determinant is $e^{\operatorname{tr}\tilde X}$, so it lands in the unit-norm group. It is **not** onto that group: it misses exactly the conjugacy class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and the proof is the eigenvalue-and-trace argument above. Every element is nevertheless a product of two exponentials, and the exponential of the full eight-dimensional algebra *is* onto the group of invertibles, because every nonsingular complex matrix has a logarithm and the extra scalar direction supplies the trace. The chart's singular locus is the union of spheres $\Rho=i\pi k$, where it collapses to $\pm e_t$. The block uses exponential coordinates for paths and Cartan coordinates for global statements.
+The exponential of a traceless biquaternion has the closed form $\exp(\tilde X)=\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X$ with $\Rho^{2}=\mathrm{Sc}(\tilde X^{2})$, which is a rotation when $\Rho$ is real and a boost when $\Rho$ is imaginary; the two forms in the menu are its two ranges. Its determinant is $e^{2\,\mathrm{Sc}\tilde X}$, so it lands in the unit-norm group. It is **not** onto that group: it misses exactly the conjugacy class of $-e_t+\tilde N$ with $\tilde N$ a nonzero nilpotent, and the proof is the eigenvalue-and-trace argument above. Every element is nevertheless a product of two exponentials, and the exponential of the full eight-dimensional algebra *is* onto the group of invertibles, because every nonsingular complex matrix has a logarithm and the extra scalar direction supplies the trace. The chart's singular locus is the union of spheres $\Rho=i\pi k$, where it collapses to $\pm e_t$. The block uses exponential coordinates for paths and Cartan coordinates for global statements.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\tilde X$ | a traceless element of the algebra |
-| $\Rho^{2}=\tfrac12\operatorname{tr}(\tilde X^{2})=-\det\tilde X$ | the complex modulus of the generator |
+| $\Rho^{2}=\mathrm{Sc}(\tilde X^{2})=-\det\tilde X$ | the complex modulus of the generator |
 | $\hat{\tilde X}$ | an invertible element generator, $\hat X^{2}=\pm e_t$ |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{axr}}$ | rapidity and rotation angle, twice the arguments |
 | $\mathfrak{k}$, $\mathfrak{p}$ | rotations and boosts |
