@@ -441,15 +441,7 @@ $$
 \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\Psi_L=m^{2}\Psi_L,
 $$
 
-that is
-
-$$
-(\Box_\Phi-m^{2})\Psi_R=0,
-\qquad
-(\Box_\Phi-m^{2})\Psi_L=0 .
-$$
-
-Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.
+that is $(\Box_\Phi-m^{2})\Psi_R=0$ and $(\Box_\Phi-m^{2})\Psi_L=0$. Each part obeys the Klein–Gordon equation on its own, with the same second-order operator.
 
 **The symbol.** On a plane wave the gradient acts as left multiplication by the momentum element, $\tilde K=i\tilde Q_2=-p_t\,e_t+i\vec p$ with $\tilde K\tilde K^{\natural}=p_t^{2}-\lvert\vec p\rvert^{2}$. The symbol of the two equations is the two lines with each gradient read at its plane-wave value,
 
@@ -461,13 +453,7 @@ $$
 
 and the two lines share one condition. Composing them returns $\tilde K^{\natural}\tilde K\,w=\bigl(p_t^{2}-\lvert\vec p\rvert^{2}\bigr)w$, so the symbol is singular exactly on $p_t^{2}-\lvert\vec p\rvert^{2}=m^{2}$ and nowhere else.
 
-**The inverse is one scalar and two kernels.** The Green's function of the d'Alembertian is fixed by
-
-$$
-(\Box_\Phi-m^{2})G=\delta,
-$$
-
-and the solution of the two lines with a source is the pair of kernels
+**The inverse is one scalar and two kernels.** With $G$ the Green's function of the d'Alembertian, $(\Box_\Phi-m^{2})G=\delta$, the solution of the two lines with a source is the pair of kernels
 
 $$
 S_L=i\bigl(\tilde\nabla_\Phi+m\bigr)G,
