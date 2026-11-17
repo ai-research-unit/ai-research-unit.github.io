@@ -36,7 +36,7 @@ The two levels are collected in the table.
 |---|---|---|---|
 | Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0=(r\tilde U_{\mathrm b})(e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r})$ | $2$ | $4+4$ |
 | modulus–unit | $\tilde Q=\Rho\tilde U=(re^{i\theta_{\mathrm{pha}}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | $2$ | $2+6$ |
-| word | $\tilde Q=re^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
+| complete polar decomposition | $\tilde Q=re^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
 
 The same four factors are regrouped in three ways, and the article follows the splits and the regroupings. It proves the sharpening and computes the modulus and the unit factor (§*The Two Factors*), splits them into the four factors (§*The Four Factors*), reads the group of invertibles (§*The Group of Invertibles*), separates the two halves of the algebra (§*The Two Halves*), gives the three pairings (§*The Three Pairings*), records the matrix picture (§*The Matrix Picture*), reads the word on the spinor module (§*The Operator Reading: the Twist*), proves existence and uniqueness (§*Existence and Uniqueness*), and closes with the algorithm and a worked example.
 
