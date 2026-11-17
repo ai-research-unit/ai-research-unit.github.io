@@ -174,7 +174,7 @@ $$
 2H(\tilde Q)=\operatorname{Tr}\bigl(\rho(\tilde Q)\rho(\tilde Q)^{*}\bigr)=\bigl\lVert\rho(\tilde Q)\bigr\rVert_{\mathrm{HS}}^{2},
 $$
 
-and the Hilbert–Schmidt norm of a matrix is invariant under left and right unitary multiplication by construction. The factor $2$ is the trace convention, $\operatorname{Tr}=2\operatorname{Sc}$, and it returns in the composition bound of a later section.
+and the Hilbert–Schmidt norm of a matrix is invariant under left and right unitary multiplication by construction. The factor $2$ is the reduction convention, $2\,\mathrm{Sc}=2\operatorname{Sc}$, and it returns in the composition bound of a later section.
 
 **The invariance is what makes the decomposition canonical, and the two facts are the same fact.** A pair $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H$ in the cone and $\tilde Q_0$ unitary is a decomposition of the double coset $U(\mathbb{B})\backslash\mathbb{B}/U(\mathbb{B})$ into a positive representative and a group element. The amplitude is the positive representative and the frame is the group element. Changing the frame on the right moves the group element; changing the frame on the left conjugates the representative.
 
@@ -229,7 +229,7 @@ $$
 \boxed{\;\tilde{Ϛ}_{\Psi,Q}=\frac{\tilde Q\tilde Q^{*}}{2H(\tilde Q)}=\frac{\tilde Q_H^{2}}{2H(\tilde Q)}\;}
 $$
 
-**The image is Hermitian, positive semidefinite and of trace one.** $\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}=\operatorname{Tr}(\tilde Q\tilde Q^{*})/(2H)=2H/(2H)=1$, and the positivity is the positivity of the Hermitian square. So the image is a state of the informational sector, of the form $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.
+**The image is Hermitian, positive semidefinite and of normalised.** $2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi,Q}=2\,\mathrm{Sc}(\tilde Q\tilde Q^{*})/(2H)=2H/(2H)=1$, and the positivity is the positivity of the Hermitian square. So the image is a state of the informational sector, of the form $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.
 
 **The map forgets the frame and the scale, in that order.** A right multiplication by a $*$-unitary leaves the image alone, because $\tilde V\tilde V^{*}=e_t$. A multiplication by a nonzero complex scalar leaves it alone, because the numerator and the denominator carry the same factor. A left multiplication by a $*$-unitary conjugates the image, because it conjugates the amplitude.
 
@@ -253,7 +253,7 @@ with $\Xi$ the rapidity of the boost factor and $\vec u_{\mathrm b}$ its axis. T
 **The purity is a function of the rapidity alone.**
 
 $$
-\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}^{2}=1-\frac{\lvert N(\tilde Q)\rvert^{2}}{2H(\tilde Q)^{2}}
+2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi,Q}^{2}=1-\frac{\lvert N(\tilde Q)\rvert^{2}}{2H(\tilde Q)^{2}}
 =\frac{1+\tanh^{2}\Xi}{2},\qquad
 \lvert\vec r\rvert=\tanh\Xi .
 $$
@@ -282,7 +282,6 @@ $$
 H(\tilde Q)-\bigl\lvert N(\tilde Q)\bigr\rvert=\frac{(\sigma_1-\sigma_2)^{2}}{2}\;}
 $$
 
-**The first is the trace of the Hermitian square read through the convention $\operatorname{Tr}=2\operatorname{Sc}$.** The second is the product of its spectral values, which is its quaternionic norm, and the third is the arithmetic–geometric gap written in the algebra's units. A numerical check on a hundred random elements confirmed all three to ten digits.
 
 **The third identity is the reason the entry can be written at all.** It says that the difference between the amplitude and the mass is not a matter of taste but the square of the spread of the two singular values. An element whose two singular values are equal has $H=\lvert N\rvert$ and no other difference exists. An element whose singular values are far apart has a large amplitude relative to its mass, and the excess is quadratic in the spread.
 
@@ -424,7 +423,7 @@ while the interval and the pairing carry the cross terms, because both are built
 
 **The physical interpretation is that the amplitude is the unique scalar of the compact group.** Every function of the element invariant under both-sided unitary multiplication is a function of $H$. This is why the amplitude can be normalised once and for all, and why the frame can be discarded without loss of the magnitude.
 
-**The boundary.** Uniqueness is up to a positive scale. The scale is fixed by the trace convention $\operatorname{Tr}(e_t)=2$, and that convention is a normalisation of the algebra and not a law of physics.
+**The boundary.** Uniqueness is up to a positive scale. The scale is fixed by the reduction convention $2\,\mathrm{Sc}(e_t)=2$, and that convention is a normalisation of the algebra and not a law of physics.
 
 ### I.8.c — What It Is and How It Is Oriented
 

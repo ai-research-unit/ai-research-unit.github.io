@@ -108,7 +108,7 @@ where $p_{\Phi,t}=iE/c$ and the two $i$'s have been multiplied out; the factor $
 **The partition function is the trace of the thermal operator, and its value is the rest-frame value.** With the thermal element of the moving state,
 
 $$
-Z=\mathrm{Tr}\left(\exp\left(-\frac{1}{\hbar}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
+Z=2\,\mathrm{Sc}\left(\exp\left(-\frac{1}{\hbar}\beta_{\Phi,\nu}p_{\Phi,\nu}\right)\right),
 $$
 
 and since the exponent in the trace is $\beta k_m$ independently of the boost, as the previous section showed, the trace is the same number in every frame:

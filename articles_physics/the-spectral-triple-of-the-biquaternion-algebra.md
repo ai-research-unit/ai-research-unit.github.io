@@ -329,7 +329,7 @@ with $a_i,b_i\in\mathcal{A}$ and the sum self-adjoint, and the fluctuation is wh
 
 **The spectral action.** The bosonic action is the spectral action
 $$
-S_{\mathrm{spec}}=\mathrm{Tr}\,f\!\left(\frac{D_A}{\Lambda}\right),
+S_{\mathrm{spec}}=2\,\mathrm{Sc}\,f\!\left(\frac{D_A}{\Lambda}\right),
 $$
 which expands in the heat-kernel coefficients as the sum of the volume term, the Einstein–Hilbert term, the Yang–Mills terms, and the scalar potential, with the coefficients read from the $a_n$ of the previous section; the expansion is the standard result of the Chamseddine–Connes program. The framework's connection to it is exactly the heat-kernel connection: the same coefficients that the functional-determinant and trace-anomaly articles evaluate expand the spectral action. This is a genuine structural link, and it is the reason the spectral triple is included in this subcategory at all.
 
@@ -445,7 +445,7 @@ The sign that the algebra's involution does not carry is the quaternionic one. T
 
 Three conditions fail, and they fail for one reason: the coefficients of the gradient are elements of the algebra. The bounded-commutator condition holds for the functions and fails for the non-central elements under the left action, while the right action passes it but is not a representation on the field. The first-order condition holds for the vector-like candidate, whose mass is a multiple of the identity, but that candidate has no odd part; for the chiral candidate it holds exactly on the pairs in which one of the two multipliers is fixed by the conjugation, that is, on the real sector $\mathbb{B}_{H}$. The grading itself is the finite chirality $\xi$, the right action by $-i\vec e_z$, which commutes with the gradient and anticommutes with the mass, so the finite triple is graded and odd while the whole operator on $\mathbb{B}$ is graded by nothing, and a graded triple would need $G_M\otimes\xi$. Two more stand with them: the framework's finite operator is antilinear, and a spectral triple asks for a self-adjoint linear $D$; the algebra's linear odd actions have negative squares, $-|m|^2e_t$, so they are not the mass. And $\mathcal{D}$ is self-adjoint only for the indefinite Dirac form.
 
-The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-r'_t D^2)\sim {r'_{t}}^{-d/2}$ and coincides with the Seeley–DeWitt data of the determinant and anomaly articles, giving $d=4$ for the almost-commutative triple and $d=0$ for the bare finite algebra. The distance formula's metric-as-output is the spectral triple's counterpart of the framework's signature-as-output, similar in shape and different in content. Inner fluctuations, the gauge group, and the spectral action $\mathrm{Tr}\,f(D_A/\Lambda)$ are the standard neighbouring construction, cited and not developed here.
+The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-r'_t D^2)\sim {r'_{t}}^{-d/2}$ and coincides with the Seeley–DeWitt data of the determinant and anomaly articles, giving $d=4$ for the almost-commutative triple and $d=0$ for the bare finite algebra. The distance formula's metric-as-output is the spectral triple's counterpart of the framework's signature-as-output, similar in shape and different in content. Inner fluctuations, the gauge group, and the spectral action $2\,\mathrm{Sc}\,f(D_A/\Lambda)$ are the standard neighbouring construction, cited and not developed here.
 
 ## Summary of Notation
 
@@ -469,7 +469,7 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-r
 | $d(\xi_{\mathrm{alt}},\omega)=\sup_{a\in\mathcal{A}}\{\lvert\xi_{\mathrm{alt}}(a)-\omega(a)\rvert:\lVert[D,a]\rVert\le1\}$ | Distance formula between two states |
 | $\mathrm{Tr}\,\exp(-r'_t D^2)\sim {r'_{t}}^{-d/2}$ | Heat-kernel growth; the spectral dimension |
 | $D_A=D+\sum a_i[D,b_i]$ | Inner fluctuation; the gauge field |
-| $\mathrm{Tr}\,f(D_A/\Lambda)$ | Spectral action |
+| $2\,\mathrm{Sc}\,f(D_A/\Lambda)$ | Spectral action |
 | $\mathcal{A}_F,\mathcal{H}_F,D_F$ | Finite algebra $\mathbb{B}_{\mathbb{R}}$, finite Hilbert space $\mathbb{B}$, finite Dirac operator (the mass) |
 | $D=D_M\otimes I_F+G_M\otimes D_F$ | Product geometry of an almost-commutative triple; $G_M$ the manifold chirality |
 | $\Gamma=G_M\otimes\xi$ | Grading of a full triple; $D$ odd in it, while $\mathcal{D}$ alone is odd in neither factor |

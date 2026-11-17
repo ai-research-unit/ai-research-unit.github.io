@@ -78,7 +78,6 @@ i.e. $\mathbb{B}$ acts on the module factor and **trivially** on the multiplicit
 | $\dim_{\mathbb{C}}\mathbb{B}_{C}$ | $1$ | none |
 | $\dim_{\mathbb{C}}S$ | $2$ | none |
 | $\dim_{\mathbb{C}}\mathcal{S}_{\mathrm{rep}}$ | $4$ | none |
-| Trace formula | $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | none |
 | Real structure $\flat=-{}^{*}$, fixed spaces | $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ | none |
 | Anomaly conditions (per generation) | all zero | none |
 
@@ -109,7 +108,7 @@ A single copy of the centre therefore survives: the algebra's central phase acts
 
 $$
 \mathrm{Tr}\big((\tilde{Q}_1\otimes M)(\tilde{Q}_2\otimes N)\big)
-= \mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2)\,\mathrm{tr}(MN)
+= 2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)\,\mathrm{tr}(MN)
 = 2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)\,\mathrm{tr}(MN) ,
 $$
 
@@ -279,7 +278,7 @@ The constraints that do touch the number are inherited from the Standard Model: 
 | $\frac{N_g(N_g-1)}{2}$, $\frac{(N_g-1)(N_g-2)}{2}$ | Mixing angles; CP-violating phases |
 | $(N_g-1)^2$ | Total mixing parameters |
 | $N_\nu=2.984\pm0.008$ | Light neutrino species from the $Z$ width |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form, $N_g$-independent |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form, $N_g$-independent |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

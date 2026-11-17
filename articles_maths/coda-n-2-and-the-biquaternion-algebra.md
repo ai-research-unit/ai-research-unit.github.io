@@ -19,10 +19,10 @@ the second equality following from the first and the last from the simplicity of
 **The element has a trace and a determinant read from the left multiplication.** For $q\in\mathbb{B}$ the left multiplication $L_q$ is a complex four-by-four matrix, and
 
 $$
-\operatorname{tr}q=\operatorname{tr}L_q,\qquad \det q=\det L_q,\qquad \chi_q(t)=\det(t\mathrm{I}-L_q),
+\operatorname{tr}L_q=4\,\mathrm{Sc}\,q,\qquad \det q=\det L_q,\qquad \chi_q(t)=\det(t\mathrm{I}-L_q),
 $$
 
-so the characteristic polynomial has degree four with the two eigenvalues of the matrix doubled. The computation confirms the identity $\operatorname{tr}L_q=2\operatorname{tr}q$ at a random element, and it is the reason the element of the coda is the element of the category.
+so the characteristic polynomial has degree four with the two eigenvalues of the matrix doubled. The computation confirms the identity $\operatorname{tr}L_q=4\,\mathrm{Sc}\,q$ at a random element, and it is the reason the element of the coda is the element of the category.
 
 **The rank takes the three values of the two-by-two case.** Since $\mathbb{B}\cong M_2(\mathbb{C})$,
 

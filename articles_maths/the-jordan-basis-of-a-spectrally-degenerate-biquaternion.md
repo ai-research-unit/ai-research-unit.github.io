@@ -262,7 +262,7 @@ $$
 \vec\Upsilon_+\vec Q=\tilde\Pi_-.
 $$
 
-*Proof.* In the fixed model $Q=\mathsf M_2(\vec Q)$ is a rank-one nilpotent with singular value $s=\sqrt{2\langle\vec Q\rangle_*}$, so $Q=suv^\dagger$ with $u,v$ orthonormal. The Frobenius norm gives $s^2=\operatorname{Tr}(Q^\dagger Q)=2\langle\vec Q\rangle_*$. The four elements are the images of $uu^\dagger$, $suv^\dagger$, $s^{-1}vu^\dagger$ and $vv^\dagger$, and the identities are the matrix-unit identities. ∎
+*Proof.* In the fixed model $Q=\mathsf M_2(\vec Q)$ is a rank-one nilpotent with singular value $s=\sqrt{2\langle\vec Q\rangle_*}$, so $Q=suv^\dagger$ with $u,v$ orthonormal. The Frobenius norm gives $s^2=2\operatorname{Sc}(Q^\dagger Q)=2\langle\vec Q\rangle_*$. The four elements are the images of $uu^\dagger$, $suv^\dagger$, $s^{-1}vu^\dagger$ and $vv^\dagger$, and the identities are the matrix-unit identities. ∎
 
 **Corollary (uniqueness).** The canonical pair is the value $b=0$ of the affine family. Every adapted pair is $\tilde\Pi_+(b)=\tilde\Pi_+ + b\vec Q$ with $\tilde\Pi_-(b)=\tilde\Pi_- - b\vec Q$, and the pair is Hermitian exactly when $b=0$.
 
@@ -464,7 +464,7 @@ and the map $\tilde X\mapsto\mathsf M_2^{\tilde Q}(\tilde X)$ is an algebra isom
 
 *Proof.* A direct computation gives $c=0$ and $d=a$ for a matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ commuting with $J_2(Q_t)$. The coordinate matrix of $ae_t+b\vec Q$ is $aI+bE_{12}$. ∎
 
-**Corollary (the trace).** $\operatorname{Tr}\tilde X=X_{11}+X_{22}$.
+**Corollary (the trace).** $\operatorname{tr}\mathsf M_2(\tilde X)=X_{11}+X_{22}$.
 
 *Proof.* The trace is twice the scalar part, and the scalar part of the expansion is $(X_{11}+X_{22})/2$. ∎
 

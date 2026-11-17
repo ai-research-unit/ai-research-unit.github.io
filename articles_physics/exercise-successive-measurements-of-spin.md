@@ -8,7 +8,6 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 The first exercise treated the Born rule for a single measurement. The second exercise treated the time evolution of a spin state. This third exercise treats **successive measurements**: what happens when a spin state is measured twice in a row, along different directions.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
 
 ## The Exercise
 
@@ -120,7 +119,7 @@ $$
 \frac{\langle\tilde\Pi_{\vec u_x},\tilde\Pi_z\rangle_{*}}{\langle\tilde\Pi_z,e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_x} \circ \tilde\Pi_z\right) = \cos^2(\theta_1/2),
 $$
 
-whose trace reading is $\operatorname{Tr}(\tilde\Pi_{\vec u_x}\circ\tilde\Pi_z)=2\,\mathrm{Sc}(\tilde\Pi_{\vec u_x}\circ\tilde\Pi_z)$.
+whose scalar-part reading is $2\,\mathrm{Sc}(\tilde\Pi_{\vec u_x}\circ\tilde\Pi_z)$.
 
 **Second factor.** Computing the product $\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}$,
 
@@ -139,7 +138,7 @@ The scalar part (coefficient of $e_t$) is $\tfrac{1}{4}(1 + \vec u_y \cdot \vec 
 $$
 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \vec u_y \cdot \vec u_x\right) = \tfrac{1}{2}\left(1 + \vec u_y \cdot \vec u_x\right).
 $$
-whose trace reading is $\operatorname{Tr}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})=2\,\mathrm{Sc}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})$.
+whose scalar-part reading is $2\,\mathrm{Sc}(\tilde\Pi_{\vec u_y}\circ\tilde\Pi_{\vec u_x})$.
 
 Since both $\vec u_x$ and $\vec u_y$ lie in the $xz$-plane, the scalar product is $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, and the second factor is
 
@@ -205,11 +204,10 @@ The first factor is the Born rule for the initial measurement; the second factor
 
 **2. Measurement is a projection onto an idempotent.** After the first measurement, the state is not the original $\tilde\Pi_z$ but the new idempotent $\tilde\Pi_{\vec u_x}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a **change of the idempotent**: from $\tilde\Pi_z$ to $\tilde\Pi_{\vec u_x}$.
 
-**3. The overlap of two idempotents is their scalar product.** The trace $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \vec u_y \cdot \vec u_x)$, which depends only on the angle between the directions $\vec u_x$ and $\vec u_y$. This is the biquaternion expression of the transition probability between two spin states.
 
 **4. The geometry enters through the algebra.** The angle between the measurement directions enters through the scalar product $\vec u_y \cdot \vec u_x = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\vec u_y \vec u_x$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.
 
-**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the trace formula corresponds exactly to $\mathrm{Tr}(P_{\vec u_y}P_{\vec u_x})$ for rank-one projectors. But seeing the same result emerge from the algebra is a useful sanity check on the framework.
+**5. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the reduction formula corresponds exactly to $2\,\mathrm{Sc}(P_{\vec u_y}P_{\vec u_x})$ for rank-one projectors. But seeing the same result emerge from the algebra is a useful sanity check on the framework.
 
 ## Comparison with Exercises: Measuring Spin Along an Arbitrary Direction and Spin Precession in a Magnetic Field
 
@@ -228,7 +226,6 @@ We have solved a third exercise in quantum physics — the joint probability of 
 
 In the **standard formulation**, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.
 
-In the **biquaternion formulation**, the solution proceeds through the idempotents $\tilde\Pi_z, \tilde\Pi_{\vec u_x}, \tilde\Pi_{\vec u_y}$ and the product of the two trace formulas $\mathrm{Tr}(\tilde\Pi_{\vec u_x}\circ \tilde\Pi_z)\mathrm{Tr}(\tilde\Pi_{\vec u_y}\circ \tilde\Pi_{\vec u_x})$, giving the same result.
 
 The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their normalised Hermitian form, read through the trace, and the joint probability is the product of the trace formulas.
 
@@ -244,7 +241,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\tilde\Pi_z = \tfrac{1}{2}(e_t + i\vec e_z)$ | Spin-up state along $z$ |
 | $\tilde\Pi_{n_k} = \tfrac{1}{2}(e_t + i\vec u_\eta)$ | Idempotent along direction $\vec u_\eta$ |
 | $\vec u_\eta = \sin\theta_\eta\,\vec e_x + \cos\theta_\eta\,\vec e_z$ | Unit vector for the $k$-th direction |
-| $\mathrm{Tr}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ | Transition probability between idempotents |
+| $2\,\mathrm{Sc}(\tilde\Pi_{\vec u_y} \circ \tilde\Pi_{\vec u_x})$ | Transition probability between idempotents |
 
 ## Further Reading
 

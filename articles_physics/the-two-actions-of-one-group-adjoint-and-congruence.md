@@ -64,7 +64,7 @@ Because it is an automorphism of the product, the adjoint preserves everything t
 - the commutator, and therefore the structure constants of the Lie algebra;
 - the norm, $\langle \tilde U\tilde Q\tilde U^{-1}\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$;
 - the spectrum, since similar matrices have equal eigenvalues;
-- the trace, since $\operatorname{Tr}(\tilde U\tilde Q\tilde U^{-1})=\operatorname{Tr}\tilde Q$.
+- the trace, since $2\,\mathrm{Sc}(\tilde U\tilde Q\tilde U^{-1})=2\,\mathrm{Sc}\tilde Q$.
 
 This is the action under which the algebra has its own symmetry, and it is the action the *automorphism* language of *The Rotations, the Boosts and the Groups* refers to.
 

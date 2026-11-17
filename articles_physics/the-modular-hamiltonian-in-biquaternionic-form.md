@@ -77,9 +77,9 @@ The opposite choice, $\mathcal{M}_{\mathrm{mod}}=\exp(+\tilde H_{\Psi,\mathrm{mo
 
 ### The State Is Thermal with Respect to $\tilde H_{\Psi,\mathrm{modular}}$
 
-The KMS property gives $\tilde H_{\Psi,\mathrm{modular}}$ its **physical interpretation**. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-r'_t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ that is positive definite and of trace one,
+The KMS property gives $\tilde H_{\Psi,\mathrm{modular}}$ its **physical interpretation**. Normalized to $\beta=1$, a faithful normal state $\omega$ satisfies the KMS boundary relation with respect to the flow $\sigma_{-r'_t}$ of its modular group. In the finite-dimensional model, where the state is realized by a density $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ that is positive definite and normalised by $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$,
 $$
-\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}),
+\omega(\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}),
 \qquad
 \tilde{Ϛ}_{\Psi}=\exp(-\tilde H_{\Psi,\mathrm{modular}}),
 \qquad
@@ -89,7 +89,7 @@ so the state is the Gibbs state of $\tilde H_{\Psi,\mathrm{modular}}$ at unit te
 $$
 \tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t,
 \qquad
-Z=\mathrm{Tr}\big(\exp(-\beta H)\big),
+Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big),
 $$
 so $\tilde H_{\Psi,\mathrm{modular}}$ differs from $\beta\tilde H_\Psi$ by the additive scalar $\log Z$ that normalizes the state. The modular Hamiltonian is thus not the physical Hamiltonian; it is the operator whose unit-temperature Gibbs state is the given state, and the normalization $\log Z$ — hence the free energy $F=-\beta^{-1}\log Z$ — is carried by its scalar part.
 
@@ -100,11 +100,11 @@ so $\tilde H_{\Psi,\mathrm{modular}}$ differs from $\beta\tilde H_\Psi$ by the a
 The parents realize the construction in the algebra itself. Take
 $$
 M=\mathbb{B}\cong M_2(\mathbb{C}),\qquad \Omega=e_t,\qquad
-\omega(\tilde Q_3)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}),
+\omega(\tilde Q_3)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}),
 $$
-with $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ positive definite and of trace one, and the GNS inner product
+with $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ positive definite and normalised, and the GNS inner product
 $$
-\langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big).
+\langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big).
 $$
 The vector $\Omega=e_t$ is cyclic and separating exactly because $\tilde{Ϛ}_{\Psi}>0$; the state is faithful for the same reason. The modular-theory parent computes the polar decomposition of $S_0(\tilde Q_3)=\tilde Q_3^{*}$ in closed form:
 $$
@@ -230,7 +230,7 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 | $a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$ | agreement to $10^{-15}$ |
 | $\sigma_{r'_{t}}(\tilde Q_3)=\tilde{Ϛ}_{\Psi}^{ir'_t}\tilde Q_3\tilde{Ϛ}_{\Psi}^{-ir'_t}$ equals $\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3 \exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$, 12 random $(\tilde Q_3,r'_t)$ | max error $0$ |
 | $\frac{d}{dr'_t}\sigma_{r'_{t}}(\tilde Q_3)|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
-| $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$ | $1.0$ to $10^{-39}$ |
+| $2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ | $1.0$ to $10^{-39}$ |
 
 The second state is the single-mode thermal state of the partition-function article, $\tilde H_\Psi=\omega\tilde\Pi_-$ with $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$, $\omega=0.9$, $\beta=1.2$. Its modular Hamiltonian is
 $$
@@ -246,35 +246,34 @@ Z=2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|)=1.547753
 $$
 and $\tilde H_{\Psi,\mathrm{modular}}-(\beta\tilde H_\Psi+(\log Z)e_t)$ vanishes to $4\times10^{-39}$.
 
-**The failure when positivity is dropped.** If $\tilde{Ϛ}_{\Psi}$ is not positive definite — say $\tilde{Ϛ}_{\Psi}=\mathrm{diag}(1,0)$ — then $\Omega=e_t$ is not separating: there is a nonzero $\tilde Q_3$ with $\langle\tilde Q_3,\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_3^{*}\tilde Q_3)=0$, hence $\tilde Q_3\Omega=0$, and the Tomita rule $\tilde Q_3\Omega\mapsto\tilde Q_3^{*}\Omega$ is not single-valued. Equivalently, $\mathcal{M}_{\mathrm{mod}}=S^*S$ has a kernel and is not invertible, so $-\log\mathcal{M}_{\mathrm{mod}}$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\mathcal{M}_{\mathrm{mod}}(\tilde Q_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_3\,e^{\tilde H_{\Psi,\mathrm{modular}}}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=\vec e_x$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde H_{\Psi,\mathrm{modular}}$ is exactly the hypothesis carried by $\mathcal{M}_{\mathrm{mod}}$.
+**The failure when positivity is dropped.** If $\tilde{Ϛ}_{\Psi}$ is not positive definite — say $\tilde{Ϛ}_{\Psi}=\mathrm{diag}(1,0)$ — then $\Omega=e_t$ is not separating: there is a nonzero $\tilde Q_3$ with $\langle\tilde Q_3,\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_3^{*}\tilde Q_3)=0$, hence $\tilde Q_3\Omega=0$, and the Tomita rule $\tilde Q_3\Omega\mapsto\tilde Q_3^{*}\Omega$ is not single-valued. Equivalently, $\mathcal{M}_{\mathrm{mod}}=S^*S$ has a kernel and is not invertible, so $-\log\mathcal{M}_{\mathrm{mod}}$ diverges along that direction and **no modular Hamiltonian exists**; the GNS inner product is degenerate and the closed form $\mathcal{M}_{\mathrm{mod}}(\tilde Q_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_3\,e^{\tilde H_{\Psi,\mathrm{modular}}}$ is not even available. This is the same failure the modular-theory parent exhibits for the non-separating vector $\Omega=\vec e_x$, seen from the positivity side: the state assigns zero expectation to the nonzero positive element $E_{22}$, and the logarithm has nothing to say about it. The hypothesis carried by $\tilde H_{\Psi,\mathrm{modular}}$ is exactly the hypothesis carried by $\mathcal{M}_{\mathrm{mod}}$.
 
 The verification was run on the state that was chosen for its genericity and on a second, thermal state; no displayed identity was checked only on the case that suggested it.
 
-## The Trace Formula and the Gibbs Form
+## The Reduction Formula and the Gibbs Form
 
-The plain form, read as the trace formula, inherited from the read list,
+The plain form, read as the reduction formula, inherited from the read list,
 $$
-\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}),
+2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}^{}\big|_{\text{plain form}}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}),
 \qquad
-\mathrm{Tr}(e_t)=2,
+2\,\mathrm{Sc}(e_t)=2,
 $$
 is what makes the statement "the state is thermal with respect to $\tilde H_{\Psi,\mathrm{modular}}$" computable, for two reasons.
 
-First, since $\tilde H_{\Psi,\mathrm{modular}}\in\mathbb{B}_{\Psi}$, the exponential $\exp(-\tilde H_{\Psi,\mathrm{modular}})=\tilde{Ϛ}_{\Psi}$ also lies in $\mathbb{B}_{\Psi}$, and its trace is a doubled scalar part:
+First, since $\tilde H_{\Psi,\mathrm{modular}}\in\mathbb{B}_{\Psi}$, the exponential $\exp(-\tilde H_{\Psi,\mathrm{modular}})=\tilde{Ϛ}_{\Psi}$ also lies in $\mathbb{B}_{\Psi}$, and its doubled scalar part is:
 $$
-\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1 .
+2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1 .
 $$
 The state is therefore the Gibbs state of $\tilde H_{\Psi,\mathrm{modular}}$ at unit temperature with **unit** partition function, and every expectation is a scalar extraction:
 $$
-\omega(\tilde Q_3)=\frac{\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3)}{\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))}
-=\frac{2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3)}{2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))}
+\omega(\tilde Q_3)=\frac{2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3)}{2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))}
 =2\,\mathrm{Sc}\big(\exp(-\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3\big).
 $$
 No matrix diagonalization is needed to evaluate the state; the doubled scalar part of a biquaternion product is the whole computation.
 
 Second, the physical Gibbs form follows by the shift $\tilde H_{\Psi,\mathrm{modular}}=\beta\tilde H_\Psi+(\log Z)e_t$. With $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$,
 $$
-Z=\mathrm{Tr}\big(\exp(-\beta H)\big)=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)
+Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)
 =2\exp(-\beta h_t)\cosh(\beta|\vec h_\Psi|),
 $$
 and the scalar and vector parts of $\tilde H_{\Psi,\mathrm{modular}}$ have direct thermodynamic interpretations:
@@ -283,9 +282,9 @@ $$
 \qquad
 \vec a=\beta\vec h_\Psi,
 $$
-the scalar part carrying the normalization $\log Z$, hence the free energy through $\log Z=-\beta F$, and the imaginary vector part being the thermal polarization of the state, $\vec a=\beta\vec h_\Psi$. The trace formula is the bridge: it converts the abstract Gibbs weight $\exp(-\tilde H_{\Psi,\mathrm{modular}})$ into a scalar Boltzmann factor times a boost-type biquaternion in $\mathbb{B}_{\Psi}$, which is the partition-function article's thermal operator. The nonlinearity of the biquaternion exponential is tamed because the imaginary vector part squares to a positive scalar, $(i\vec h_\Psi)^2=|\vec h_\Psi|^2e_t$, so $\vec h_\Psi$ and $e_t$ commute and the exponential splits.
+the scalar part carrying the normalization $\log Z$, hence the free energy through $\log Z=-\beta F$, and the imaginary vector part being the thermal polarization of the state, $\vec a=\beta\vec h_\Psi$. The reduction formula is the bridge: it converts the abstract Gibbs weight $\exp(-\tilde H_{\Psi,\mathrm{modular}})$ into a scalar Boltzmann factor times a boost-type biquaternion in $\mathbb{B}_{\Psi}$, which is the partition-function article's thermal operator. The nonlinearity of the biquaternion exponential is tamed because the imaginary vector part squares to a positive scalar, $(i\vec h_\Psi)^2=|\vec h_\Psi|^2e_t$, so $\vec h_\Psi$ and $e_t$ commute and the exponential splits.
 
-One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $\exp(-\beta H)$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde H_{\Psi,\mathrm{modular}}$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec h_\Psi$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $a_{\mathrm{fop}}$ while leaving the state $\tilde{Ϛ}_{\Psi}$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
+One feature of the reduction is worth separating from the modular Hamiltonian itself. The doubled scalar part keeps only the scalar part of $\exp(-\beta H)$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde H_{\Psi,\mathrm{modular}}$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec h_\Psi$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $a_{\mathrm{fop}}$ while leaving the state $\tilde{Ϛ}_{\Psi}$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
 
 ## Is the Modular Hamiltonian Local?
 
@@ -376,7 +375,7 @@ There is a structural reason the wedge case looks different from the finite-dime
 - $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ is defined by $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$; with this convention $\mathcal{M}_{\mathrm{mod}}^{ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ and $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$, and the opposite sign convention reverses which flow is KMS.
 - In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$, with the spectral form $a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi}$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\vec u_r$; $\mathcal{M}_{\mathrm{mod}}>0$ for every faithful state, and $\tilde H_{\Psi,\mathrm{modular}}$ does not exist for a non-faithful one.
 - $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$: verified symbolically and numerically on a generic rotated state and a thermal state.
-- $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
+- $2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and the reduction formula makes the Gibbs state a scalar extraction, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
 - $\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_{\mathrm n}$ for the bracket-normalised amplitude $\tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}$, with a central additive constant for an unnormalised amplitude; checked on a generic rotated state.
 - In the wedge, $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$; the rotor action is the boost, its generator is the anticommutator $\tfrac12\{G_1,\cdot\,\}$, and the commutator is a rotation in the orthogonal plane.
 
@@ -414,7 +413,7 @@ a_0=-\tfrac12\log\det\tilde{Ϛ}_{\Psi},
 \qquad
 \vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\vec u_r,
 $$
-so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$, that $\mathrm{Tr}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the trace formula $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
+so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde H_{\Psi,\mathrm{modular}}$ generates the same flow as $\mathcal{M}_{\mathrm{mod}}^{ir'_t}$, that $2\,\mathrm{Sc}(\exp(-\tilde H_{\Psi,\mathrm{modular}}))=1$, and that the reduction formula $2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde H_{\Psi,\mathrm{modular}})=\beta h_t+\log Z$ and $\vec a=\beta\vec h_\Psi$.
 
 The one structural question the finite-dimensional model cannot settle is locality. For a general spacetime region the modular Hamiltonian of the vacuum is nonlocal, and the modular flow is not geometric; it is local exactly in the exceptional cases where the flow is a symmetry flow — the Bisognano–Wichmann wedge, where $\tilde H_{\Psi,\mathrm{modular},W}=2\pi G_1$ with $G_1=i\vec e_x\in\mathbb{B}_{\Psi}$ and the flow is the boost by rapidity $2\pi s$, and the conformal ball, which the framework cannot fully express because the special conformal generators are not elements of $\mathbb{B}$. In the wedge the flow is outer and the action is the two-sided rotor conjugation, not the commutator $[\tilde H_{\Psi,\mathrm{modular},W},\cdot\,]$; in the finite-dimensional model the flow is inner and the commutator is correct. Both cases have $\tilde H_{\Psi,\mathrm{modular}}\in\mathbb{B}_{\Psi}$, by different mechanisms, and the gap between them is the type gap of the modular-theory parent.
 
@@ -427,13 +426,13 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | ${}^{*}$ | Hermitian conjugation; the Tomita involution $A^*$ |
-| $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $S=J\mathcal{M}_{\mathrm{mod}}^{1/2}$ | Tomita operator and its polar decomposition |
 | $\mathcal{M}_{\mathrm{mod}}=S^*S\ge0$ | Modular operator; $\mathcal{M}_{\mathrm{mod}}>0$ iff the state is faithful |
 | $\tilde H_{\Psi,\mathrm{modular}}=-\log\mathcal{M}_{\mathrm{mod}}$ | Modular Hamiltonian; $\mathcal{M}_{\mathrm{mod}}=\exp(-\tilde H_{\Psi,\mathrm{modular}})$ |
 | $\sigma_{r'_{t}}(\tilde Q_3)=\mathcal{M}_{\mathrm{mod}}^{ir'_t}\tilde Q_3\mathcal{M}_{\mathrm{mod}}^{-ir'_t}=\exp(-i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})\tilde Q_3 \exp(i\theta_{\mathrm{evo}}\tilde H_{\Psi,\mathrm{modular}})$ | Modular flow |
 | $d\sigma_{r'_{t}}/dr'_t|_{r'_t=0}=-i[\tilde H_{\Psi,\mathrm{modular}},\tilde Q_3]$ | Generator identity (sign convention fixed here) |
-| $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Faithful state, positive definite, trace one |
+| $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Faithful state, positive definite, normalised |
 | $\tilde Q_{\mathrm n}=\tilde{Ϛ}_{\Psi}^{1/2}$ | Bracket-normalised Cartan amplitude of the state, $\langle\tilde Q_{\mathrm n},\tilde Q_{\mathrm n}\rangle_*=\tfrac12$ |
 | $\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_{\mathrm n}$ | Modular Hamiltonian from the amplitude; $\tilde H_{\Psi,\mathrm{modular}}=-2\log\tilde Q_H+\log(2\langle\tilde Q_H,\tilde Q_H\rangle_*)e_t$ for an unnormalised $\tilde Q_H$ |
 | $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ | Modular Hamiltonian in the finite-dimensional model |

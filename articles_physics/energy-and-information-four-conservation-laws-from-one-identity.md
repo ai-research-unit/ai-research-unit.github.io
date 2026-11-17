@@ -4,17 +4,17 @@
 
 The corpus splits the biquaternion algebra into two real four-dimensional subspaces. The anti-Hermitian subspace $\mathbb{B}_{\Phi}$ carries the four-vectors, the interval and the Lorentz action; the Hermitian subspace $\mathbb{B}_{\Psi}$ carries the states, the observables and the Born pairing. Multiplication by the central $i$ exchanges the two, and the framework's claim is that the first is the material sector and the second the informational one. Those names record a conjugation, not a dynamical role. The third section fixes the vocabulary: the anti-Hermitian sector is the sector of generators, and its flow is $*$-unitary.
 
-The algebra attaches two numbers to an element, the trace and the quaternionic norm, and the two sectors read them in opposite roles. On $\mathbb{B}_{\Phi}$ the trace is energy and the norm is mass; on $\mathbb{B}_{\Psi}$ the trace is normalisation and the norm is information. Conjugation by a $*$-unitary element fixes both numbers of whatever it acts on, and that one algebraic fact is the warrant of every conservation law below: energy and mass on the material side, normalisation and information on the informational side. The split is a duality of two readings of two operations, not a sum of two contributions to one number.
+The algebra attaches two numbers to an element, the scalar part and the quaternionic norm, and the two sectors read them in opposite roles. On $\mathbb{B}_{\Phi}$ the scalar part carries the energy and the norm is the mass; on $\mathbb{B}_{\Psi}$ the scalar part carries the normalisation and the norm is the information. Conjugation by a $*$-unitary element fixes both numbers of whatever it acts on, and that one algebraic fact is the warrant of every conservation law below: energy and mass on the material side, normalisation and information on the informational side. The split is a duality of two readings of two operations, not a sum of two contributions to one number.
 
 It is not an exchange, because nothing passes from one sector to the other. It is not a decomposition either, because energy is not the sum of a mass term and an information term. Nor is it a dynamics: the article fixes what the two sectors conserve, and the one place where a probability falls is a reduced description, treated in its own section and attributed to no element of either sector.
 
-The article takes the trace and the two norms from [Norm and Pairing Conventions](norm-and-pairing-conventions.html), the factorisation of the four-momentum from [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), and the entropy from [Von Neumann Entropy and the Biquaternion Norm](von-neumann-entropy-and-the-biquaternion-norm.html). It follows [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), whose two results it uses throughout. First, the trace is twice the temporal coefficient, so the conserved scalar of each sector is the coefficient of the scalar direction. Second, a boost is a unit element and not a $*$-unitary one, so a boost moves the trace and fixes the norm. The identities are algebra or corpus results, and they are checked below on a hundred random elements. The identification of the two sectors with a material and an informational sector of the world is the corpus's **hypothesis**, and the candidate constant $h_0$ is a **proposal** that the article examines and does not adopt.
+The article takes the scalar part and the two norms from [Norm and Pairing Conventions](norm-and-pairing-conventions.html), the factorisation of the four-momentum from [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), and the entropy from [Von Neumann Entropy and the Biquaternion Norm](von-neumann-entropy-and-the-biquaternion-norm.html). It follows [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), whose two results it uses throughout. First, the doubled scalar part is twice the temporal coefficient, so the conserved number of each sector is the coefficient of the scalar direction. Second, a boost is a unit element and not a $*$-unitary one, so a boost moves that number and fixes the norm. The identities are algebra or corpus results, and they are checked below on a hundred random elements. The identification of the two sectors with a material and an informational sector of the world is the corpus's **hypothesis**, and the candidate constant $h_0$ is a **proposal** that the article examines and does not adopt.
 
 The article runs in eight steps: the two operations, the identity and its four conservations, the dynamical vocabulary, the two sectors read in turn, the duality, the question of $h_0$, and the ledger of what is established. That last section also lists the five objections the thesis has to answer.
 
 ## The Two Operations on One Element
 
-### The Element, the Trace and the Norm
+### The Element, the Scalar Part and the Norm
 
 Write a general element as a complex scalar times the identity plus a complex three-vector along the quaternion units,
 
@@ -22,14 +22,14 @@ $$
 \tilde Q=Q_t\,e_t+Q_x\,\vec e_x+Q_y\,\vec e_y+Q_z\,\vec e_z,\qquad Q_\mu\in\mathbb{C},
 $$
 
-with $e_t=1$ and $\vec e_\eta^2=-e_t$. The algebra attaches two numbers to it. The **trace** is twice the scalar part, and the **quaternionic norm** is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:
+with $e_t=1$ and $\vec e_\eta^2=-e_t$. The algebra attaches two numbers to it. The **scalar part** is $Q_t$, and twice it is the sum of the two eigenvalues. The **quaternionic norm** is the product with the quaternion conjugate $\tilde Q^\natural=Q_t e_t-\vec Q$:
 
 $$
-\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q=2Q_t,\qquad
+2\,\mathrm{Sc}\,\tilde Q=2Q_t,\qquad
 \langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural=Q_t^2+Q_x^2+Q_y^2+Q_z^2 .
 $$
 
-In the $2\times2$ image, under $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$, the trace is the matrix trace and the quaternionic norm is the determinant:
+In the $2\times2$ image, under $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$, twice the scalar part is the matrix trace of the image and the quaternionic norm is its determinant:
 
 $$
 \operatorname{Tr}\mathsf M_2(\tilde Q)=2Q_t,\qquad \det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_\natural .
@@ -44,12 +44,12 @@ $$
 and the two numbers are their sum and their product:
 
 $$
-\lambda_++\lambda_-=\operatorname{Tr}\tilde Q,\qquad \lambda_+\lambda_-=\langle\tilde Q\rangle_\natural .
+\lambda_++\lambda_-=2\,\mathrm{Sc}\tilde Q,\qquad \lambda_+\lambda_-=\langle\tilde Q\rangle_\natural .
 $$
 
-The trace is therefore the **sum** of the spectrum and the norm is the **product**. That is all the algebra the split needs, and both identities hold on a hundred random elements to machine precision.
+Twice the scalar part is therefore the **sum** of the spectrum and the norm is the **product**. That is all the algebra the split needs, and both identities hold on a hundred random elements to machine precision.
 
-| property | trace | quaternionic norm |
+| property | $2\,\mathrm{Sc}$ | quaternionic norm |
 | --- | --- | --- |
 | operation on the spectrum | sum $\lambda_++\lambda_-$ | product $\lambda_+\lambda_-$ |
 | linearity | $\mathbb{C}$-linear | quadratic |
@@ -115,17 +115,17 @@ On the informational side the central scalar is the **normalisation**. A state i
 
 $$
 \langle\tilde{Ϛ}_{\Psi},e_t\rangle_*=\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=\tfrac12,\qquad
-\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1,
+2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1,
 $$
 
-so the scalar part is $\tfrac12$ on the real central line, and the trace is one. The trace is the central projection of the state, and the Born rule is the ratio of two such projections.
+so the scalar part is $\tfrac12$ on the real central line, and twice it is one. That doubled scalar part is the central projection of the state, and the Born rule is a ratio of two of them.
 
 | sector | central line | central scalar | value on the standard object |
 | --- | --- | --- | --- |
 | $\mathbb{B}_{\Phi}$ | $i\mathbb{R}e_t$ | mass $\Rho=imc$ | $\sqrt{\langle\tilde P_{\Phi}\rangle_\natural}$ |
-| $\mathbb{B}_{\Psi}$ | $\mathbb{R}e_t$ | normalisation $\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}$ | $\tfrac12$, trace one |
+| $\mathbb{B}_{\Psi}$ | $\mathbb{R}e_t$ | normalisation $\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}$ | $\tfrac12$, doubled to one |
 
-The placement depends on the regime, and the dependence is a single $i$. In the non-relativistic central-scalar limit the mass and the energy are real central scalars in $\mathbb{B}_{\Psi}$, and the material time is the parameter multiplying $ie_t$. Relativistically the four-momentum is in $\mathbb{B}_{\Phi}$ and its trace is imaginary. The two statements are the two ends of the same substitution $Q_t=ict'$: the non-relativistic limit drops the $i$, and with it the distinction between the real and the imaginary central lines. The limit is a contraction of the relativistic structure, not a second convention.
+The placement depends on the regime, and the dependence is a single $i$. In the non-relativistic central-scalar limit the mass and the energy are real central scalars in $\mathbb{B}_{\Psi}$, and the material time is the parameter multiplying $ie_t$. Relativistically the four-momentum is in $\mathbb{B}_{\Phi}$ and its doubled scalar part is imaginary. The two statements are the two ends of the same substitution $Q_t=ict'$: the non-relativistic limit drops the $i$, and with it the distinction between the real and the imaginary central lines. The limit is a contraction of the relativistic structure, not a second convention.
 
 ## One Identity, Four Conservations
 
@@ -134,12 +134,12 @@ The placement depends on the regime, and the dependence is a single $i$. In the 
 Let $\tilde U$ be $*$-unitary, $\tilde U\tilde U^{*}=e_t$, and let $\tilde X$ be any element. Then
 
 $$
-\operatorname{Tr}\bigl(\tilde U\tilde X\tilde U^{*}\bigr)=\operatorname{Tr}\tilde X,
+2\,\mathrm{Sc}\bigl(\tilde U\tilde X\tilde U^{*}\bigr)=2\,\mathrm{Sc}\tilde X,
 \qquad
 \det\bigl(\tilde U\tilde X\tilde U^{*}\bigr)=\det\tilde X .
 $$
 
-The first identity is cyclicity of the trace, $\operatorname{Tr}(AB)=\operatorname{Tr}(BA)$ with $A=\tilde U$ and $B=\tilde X\tilde U^{*}$. The second is multiplicativity of the determinant, $\det(AB)=\det A\,\det B$, together with $\lvert\det\tilde U\rvert^{2}=1$, which follows from $\tilde U\tilde U^{*}=e_t$. Both were checked on a hundred random pairs to $2.7\times10^{-15}$ and $7.1\times10^{-15}$.
+The first identity is cyclicity of the scalar part, $2\,\mathrm{Sc}(AB)=2\,\mathrm{Sc}(BA)$ with $A=\tilde U$ and $B=\tilde X\tilde U^{*}$. The second is multiplicativity of the determinant, $\det(AB)=\det A\,\det B$, together with $\lvert\det\tilde U\rvert^{2}=1$, which follows from $\tilde U\tilde U^{*}=e_t$. Both were checked on a hundred random pairs to $2.7\times10^{-15}$ and $7.1\times10^{-15}$.
 
 The statement is about a conjugation, so it applies to every element of the algebra and needs no sector, no physical object and no dynamics. Everything the article says about conservation is an instance of it.
 
@@ -148,7 +148,7 @@ The statement is about a conjugation, so it applies to every element of the alge
 The two numbers the algebra attaches to an element are the two symmetric functions of its spectrum. Writing $\tilde Q=Q_t e_t+\vec Q$ and $B^{2}=\vec Q\cdot\vec Q$, the eigenvalues are $\lambda_\pm=Q_t\pm iB$, and
 
 $$
-\operatorname{Tr}\tilde Q=\lambda_++\lambda_-=2Q_t,
+2\,\mathrm{Sc}\tilde Q=\lambda_++\lambda_-=2Q_t,
 \qquad
 \langle\tilde Q\rangle_\natural=\lambda_+\lambda_-=\det\mathsf M_2(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2},
 $$
@@ -163,18 +163,18 @@ The identity becomes four statements when the two numbers are named on the two s
 
 | sector | operation | value on the standard object | fixed by | conserved quantity |
 | --- | --- | --- | --- | --- |
-| $\mathbb{B}_{\Phi}$ | trace | $2iE/c$ | the $*$-unitary flow of the dynamics | energy |
+| $\mathbb{B}_{\Phi}$ | $2\,\mathrm{Sc}$ | $2iE/c$ | the $*$-unitary flow of the dynamics | energy |
 | $\mathbb{B}_{\Phi}$ | quaternionic norm | $-m^{2}c^{2}$ | the flow, and every unit-norm congruence | mass |
-| $\mathbb{B}_{\Psi}$ | trace | $1$ | the flow, and every trace-preserving map | normalisation |
+| $\mathbb{B}_{\Psi}$ | $2\,\mathrm{Sc}$ | $1$ | the flow, and every map that preserves it | normalisation |
 | $\mathbb{B}_{\Psi}$ | quaternionic norm | $\tfrac14(1-\lvert\vec r\rvert^{2})$ | the reversible flow | information |
 
-The four rows are the whole thesis. The material pair and the informational pair are the same two lines of algebra, with the sectors supplying the names: the trace is $2iE/c$ on one side and $1$ on the other, and the norm is $-m^{2}c^{2}$ on one side and the impurity on the other. One preservation, read twice, gives energy and mass conservation on the material side and normalisation and information conservation on the informational side.
+The four rows are the whole thesis. The material pair and the informational pair are the same two lines of algebra, with the sectors supplying the names: twice the scalar part is $2iE/c$ on one side and $1$ on the other, and the norm is $-m^{2}c^{2}$ on one side and the impurity on the other. One preservation, read twice, gives energy and mass conservation on the material side and normalisation and information conservation on the informational side.
 
 ### Conservation Is Not Invariance
 
 The fourth column differs from row to row, and the difference separates conservation from invariance. **Conservation** means fixed by the dynamics, which is a $*$-unitary conjugation. **Invariance** means fixed by the change of frame, which is a unit-norm congruence. The two groups differ: *Norm and Pairing Conventions* keeps them apart, a boost being a unit element and not a $*$-unitary one.
 
-A boost therefore fixes the determinant and moves the trace. Applied to a four-momentum at rest, it gives the numbers below.
+A boost therefore fixes the determinant and moves the doubled scalar part. Applied to a four-momentum at rest, it gives the numbers below.
 
 | $\theta_{\mathrm{rpd}}$ | $E/(mc^{2})$ | $\det/(-m^{2}c^{2})$ | $\lvert BB^{*}-e_t\rvert$ |
 | --- | --- | --- | --- |
@@ -183,25 +183,25 @@ A boost therefore fixes the determinant and moves the trace. Applied to a four-m
 | $1.0$ | $1.543081$ | $1.000000$ | $1.718$ |
 | $2.0$ | $3.762196$ | $1.000000$ | $6.389$ |
 
-The determinant residual is $0$ at every rapidity. Energy is conserved and frame-dependent; mass is conserved and frame-independent. The two words are not synonyms, and one identity gives one of each. The determinant is fixed by the larger group, so mass is invariant. The trace is fixed only by the smaller group, so energy is conserved without being invariant.
+The determinant residual is $0$ at every rapidity. Energy is conserved and frame-dependent; mass is conserved and frame-independent. The two words are not synonyms, and one identity gives one of each. The determinant is fixed by the larger group, so mass is invariant. The doubled scalar part is fixed only by the smaller group, so energy is conserved without being invariant.
 
-The same distinction settles the informational side. A coarse-graining is trace preserving and not reversible, so normalisation survives it and the norm does not. Information is conserved in the reversible regime and in no other, and the article states the conservation with that qualification rather than without it.
+The same distinction settles the informational side. A coarse-graining preserves the doubled scalar part and is not reversible, so normalisation survives it and the norm does not. Information is conserved in the reversible regime and in no other, and the article states the conservation with that qualification rather than without it.
 
 ### The Temporal Reading
 
-The identity is also the reason the conserved scalar of each sector is a temporal coefficient. The trace is twice the scalar part, and the scalar part is the coefficient of $e_t$, the temporal unit. Since $e_t$ is the identity, it is the only unit of the base that reaches the trace; the three vector units are traceless. That is the temporal article's result read from the other side.
+The identity is also the reason the conserved number of each sector is a temporal coefficient. The scalar part is the coefficient of $e_t$, the temporal unit, and the doubling only carries it to the sum of the spectrum. Since $e_t$ is the identity, it is the only unit of the base with a scalar part at all; the three vector units have none. That is the temporal article's result read from the other side.
 
-So on $\mathbb{B}_{\Phi}$ the conserved trace is $2iE/c$, the temporal coefficient of the four-momentum, and on $\mathbb{B}_{\Psi}$ it is $1$, the normalisation, which is twice the scalar part $\tfrac12$ of the state. **Energy is the temporal coefficient of the four-momentum and normalisation is the temporal coefficient of the state; both are conserved because the temporal direction is the scalar direction, the one the flow leaves alone.**
+So on $\mathbb{B}_{\Phi}$ the conserved number is $2iE/c$, twice the temporal coefficient of the four-momentum, and on $\mathbb{B}_{\Psi}$ it is $1$, twice the scalar part $\tfrac12$ of the state. **Energy is the temporal coefficient of the four-momentum and normalisation is the temporal coefficient of the state; both are conserved because the temporal direction is the scalar direction, the one the flow leaves alone.**
 
 The factor of $i$ then does the rest. It places the energy on the imaginary central line and the normalisation on the real one, so the same preservation reads as a phase on one side and as a probability on the other. That is the sense in which the split of the algebra is a split of what each sector conserves, and it is the sense in which the two sectors are two readings and not two substances.
 
 ### What the Identity Does Not Give
 
-**It does not give an additive decomposition.** Energy is not the sum of a mass term and an information term. The trace is one number on each sector, and the two are of different kinds, one imaginary and one real.
+**It does not give an additive decomposition.** Energy is not the sum of a mass term and an information term. The doubled scalar part is one number on each sector, and the two are of different kinds, one imaginary and one real.
 
 **It does not give a sector charge.** The superselection article shows that the split is a grading of the operations and not a central decomposition of the state space, and that the algebra carries no additive label counting material against informational content. Nothing in the identity supplies one, and the article claims none.
 
-**It does not give additivity of the conserved quantities.** The trace is additive for a sum and the norm is multiplicative for a product, so the norm of a sum carries a cross term. Mass is conserved as the norm of the total, not as a sum of masses; information is conserved as the norm of the whole, not as a share held by each part.
+**It does not give additivity of the conserved quantities.** The doubled scalar part is additive for a sum and the norm is multiplicative for a product, so the norm of a sum carries a cross term. Mass is conserved as the norm of the total, not as a sum of masses; information is conserved as the norm of the whole, not as a share held by each part.
 
 **It does not give a dynamics.** It says what a $*$-unitary flow leaves fixed, not what the flow is. The Hamiltonian is an input, and the identity is a constraint on any dynamics that has one.
 
@@ -234,7 +234,7 @@ $$
 =\exp(-r'_t\tilde Q)\exp(r'_t\tilde Q)=e_t,
 $$
 
-so the exponential is $*$-unitary, $\tilde U\tilde U^{*}=e_t$, and conjugation by a $*$-unitary element preserves the trace and both norms. It is a $*$-unitary element and not a unit element: *Norm and Pairing Conventions* keeps the two apart, and the exponential of an anti-Hermitian element has $\lvert\det\tilde U\rvert=1$ with $\det\tilde U$ a general phase. The anti-Hermitian elements are the Lie algebra $\mathfrak{u}(2)$ of the unitary group; they generate the $*$-unitary transformations, and that is all they do. A sentence that calls them lossy has mistaken a rotation for a shrinkage.
+so the exponential is $*$-unitary, $\tilde U\tilde U^{*}=e_t$, and conjugation by a $*$-unitary element preserves the doubled scalar part and both norms. It is a $*$-unitary element and not a unit element: *Norm and Pairing Conventions* keeps the two apart, and the exponential of an anti-Hermitian element has $\lvert\det\tilde U\rvert=1$ with $\det\tilde U$ a general phase. The anti-Hermitian elements are the Lie algebra $\mathfrak{u}(2)$ of the unitary group; they generate the $*$-unitary transformations, and that is all they do. A sentence that calls them lossy has mistaken a rotation for a shrinkage.
 
 *Relations between the Biquaternion Exponential and the Fourier Kernel* gives the general law, and it is the sharpest statement available. For $\tilde Q=Q_te_t+\vec Q$, $B^2=(\vec Q,\vec Q)$ and $\rho=\vec Q/B$,
 
@@ -259,7 +259,7 @@ $$
 
 checked to $8.7\times10^{-16}$. The forward branch grows or decays at rate $2(R_t+\lvert\vec r\rvert)$, and it decays when $R_t<-\lvert\vec r\rvert$; the backward branch grows at rate $2(\lvert\vec r\rvert-R_t)$, which is positive for every Hermitian element. So such a flow falls in one direction of $\theta_{\mathrm{evo}}$ and diverges in the other: it has an arrow of time built into a single element, which is precisely why it cannot serve as a reversible law. No dynamics in the corpus uses it — the state-vector equation always carries the $-i$. A shrinking element and a falling probability are different events.
 
-One level up, the question is about maps rather than elements. *The Exponential, the Logarithm and the Generator* records that an irreversible completely positive trace-preserving map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator. When such a map has a generator, the generator is a superoperator on states, not an element of $\mathbb{B}$. A falling probability has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ lossy?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.
+One level up, the question is about maps rather than elements. *The Exponential, the Logarithm and the Generator* records that an irreversible completely positive map is a sum of at least two conjugations, so it is not a single element and has no algebraic generator. When such a map has a generator, the generator is a superoperator on states, not an element of $\mathbb{B}$. A falling probability has no address in the algebra at all. The question "is $\mathbb{B}_{\Phi}$ lossy?" accordingly has no yes-or-no answer, because the predicate does not apply to elements.
 
 The spectral vocabulary has a boundary of its own, drawn the same way: by asking what a statement is about. *Biorthogonal Quantum Mechanics and the Biquaternion Spectrum* treats a non-normal element by changing the pairing: left and right eigenvectors, and the Petermann factor $\kappa=\frac12(1+\lVert\rho\rVert^{2})$, which is the norm deficit again, $\kappa-1=\frac12(\lVert\rho\rVert^{2}-1)$, checked spectrally to $3.6\times10^{-15}$. *Exceptional Points and the Nilpotent Regime* treats the degeneracy on the isotropic cone. Both are statements about the spectrum of one element, and neither says that a probability falls. The cone itself is out of reach of both sectors. A real vector part gives $B^2=\sum_\eta Q_\eta^2\ge0$, vanishing only at $\vec Q=0$, and a Hermitian element gives $B^2=-\sum_\eta q_\eta^2\le0$, vanishing only at $\vec q=0$. The degeneracy available to either sector is therefore diabolic, and an exceptional point needs a vector part that is neither real nor purely imaginary. That is a third kind of element, and the corpus keeps it where it belongs, in the spectral articles.
 
@@ -313,7 +313,7 @@ $$
 -\tfrac12\{\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k},\tilde{Ϛ}_{\Psi}\}\right).
 $$
 
-The trace is preserved, $\frac{d}{dr'_t}\operatorname{Tr}\tilde{Ϛ}_{\Psi}=0$ by cyclicity, checked to $1.8\times10^{-15}$; the purity is not, and that fall is the whole effect. Nothing leaves the ensemble. The effective Hamiltonian with the anti-Hermitian part describes the branch on which no jump has occurred, whose unnormalised state obeys
+The doubled scalar part is preserved, $\frac{d}{dr'_t}2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=0$ by cyclicity, checked to $1.8\times10^{-15}$; the purity is not, and that fall is the whole effect. Nothing leaves the ensemble. The effective Hamiltonian with the anti-Hermitian part describes the branch on which no jump has occurred, whose unnormalised state obeys
 
 $$
 i\,\partial_{r'_t}\tilde{Ξ}_{\mathrm{nj}}
@@ -325,7 +325,7 @@ $$
 
 The lost norm is exactly the probability that a jump has occurred, checked to $1.0\times10^{-11}$ on a hundred random triples of jump operators. That is the precise content of the anti-Hermitian part of an effective Hamiltonian: it describes the branch where nothing has happened yet, and the rate it carries is the jump rate.
 
-**The same warning on the state space.** With the Hilbert–Schmidt form $\langle\tilde Q_1,\tilde Q_2\rangle_{\mathrm{HS}}=\operatorname{Tr}(\tilde Q_1^{*}\tilde Q_2)$, the commutator $-i[\tilde H_\Psi,\cdot]$ is anti-Hermitian and preserves the Hilbert–Schmidt norm: it rotates the state and shrinks nothing, the adjoint being its negative with residual $0$. The jump part is generally neither Hermitian nor anti-Hermitian; over a hundred random single-jump terms the smallest distance to either form was $1.24$. So anti-Hermiticity marks the reversible generator here as elsewhere, and the fall of $P$ sits outside the Hermitian/anti-Hermitian alternative altogether.
+**The same warning on the state space.** With the Hilbert–Schmidt form $\langle\tilde Q_1,\tilde Q_2\rangle_{\mathrm{HS}}=2\,\mathrm{Sc}(\tilde Q_1^{*}\tilde Q_2)$, the commutator $-i[\tilde H_\Psi,\cdot]$ is anti-Hermitian and preserves the Hilbert–Schmidt norm: it rotates the state and shrinks nothing, the adjoint being its negative with residual $0$. The jump part is generally neither Hermitian nor anti-Hermitian; over a hundred random single-jump terms the smallest distance to either form was $1.24$. So anti-Hermiticity marks the reversible generator here as elsewhere, and the fall of $P$ sits outside the Hermitian/anti-Hermitian alternative altogether.
 
 The derivative form swaps the two labels. With $G=-i\tilde H_{\Psi,\mathrm{eff}}$,
 
@@ -346,13 +346,13 @@ The norm used in this section is the Hermitian norm $\langle\cdot\rangle_*$, the
 | generator $G=-\frac12\tilde\Gamma-i\tilde H_\Psi$ | effective | Hermitian part $-\frac12\tilde\Gamma$ | Hermitian part shrinks, anti-Hermitian part oscillates |
 | commutator $-i[\tilde H_\Psi,\cdot]$ | $\mathbb{B}_{\Phi}$ | anti-Hermitian in the Hilbert–Schmidt form | rotates the state, shrinks nothing |
 
-The strongest objection is that the section splits one word into two and then picks a side. It does pick, and the choice follows the corpus. An anti-Hermitian element generates a reversible flow, and no element of either sector carries a rate, because a falling probability is not a property of an element. A decay is the survival probability of one slot falling while the whole is conserved; that is the content of the elimination in *The Unstable State and the Complex Energy Pole*, and it is the content of the trace-preservation in the channel article. "Hermitian is reversible" is exact for the Hamiltonian, "anti-Hermitian is lossy" is false as stated and true only of the coefficient of an eliminated channel in the reduced equation, and "the anti-Hermitian sector is lossy" is false, because the sector is a set of elements and no element falls.
+The strongest objection is that the section splits one word into two and then picks a side. It does pick, and the choice follows the corpus. An anti-Hermitian element generates a reversible flow, and no element of either sector carries a rate, because a falling probability is not a property of an element. A decay is the survival probability of one slot falling while the whole is conserved; that is the content of the elimination in *The Unstable State and the Complex Energy Pole*, and it is the content of the preserved scalar part in the channel article. "Hermitian is reversible" is exact for the Hamiltonian, "anti-Hermitian is lossy" is false as stated and true only of the coefficient of an eliminated channel in the reduced equation, and "the anti-Hermitian sector is lossy" is false, because the sector is a set of elements and no element falls.
 
-The ledger is unaffected, and its vocabulary is now fixed. Energy is the trace of the four-momentum in $\mathbb{B}_{\Phi}$, conserved because the generator is anti-Hermitian. Mass is the norm, invariant for the same reason. Information is the norm of the state in $\mathbb{B}_{\Psi}$, conserved under the $*$-unitary flow and lost under coarse-graining. A falling probability names an event in a reduced description, and it names nothing in the algebra.
+The ledger is unaffected, and its vocabulary is now fixed. Energy is twice the scalar part of the four-momentum in $\mathbb{B}_{\Phi}$, conserved because the generator is anti-Hermitian. Mass is the norm, invariant for the same reason. Information is the norm of the state in $\mathbb{B}_{\Psi}$, conserved under the $*$-unitary flow and lost under coarse-graining. A falling probability names an event in a reduced description, and it names nothing in the algebra.
 
-## The Material Side: Energy Is the Trace, Mass Is the Norm
+## The Material Side: Energy Is the Scalar Part, Mass Is the Norm
 
-### Energy Is the Trace
+### Energy Is the Scalar Part
 
 The four-momentum of a particle of mass $m$ is the material element
 
@@ -360,15 +360,15 @@ $$
 \tilde P_{\Phi}=i\frac{E}{c}\,e_t+\vec p,\qquad \vec p=p_x\vec e_x+p_y\vec e_y+p_z\vec e_z .
 $$
 
-Its trace is
+Twice its scalar part is
 
 $$
-\operatorname{Tr}\tilde P_{\Phi}=2i\frac{E}{c},
+2\,\mathrm{Sc}\,\tilde P_{\Phi}=2i\frac{E}{c},
 \qquad\text{hence}\qquad
-E=\frac{c}{2i}\operatorname{Tr}\tilde P_{\Phi} .
+E=-ic\,\mathrm{Sc}\,\tilde P_{\Phi} .
 $$
 
-Energy is the trace of the four-momentum, up to the factor $c/(2i)$. The factor is bookkeeping: the trace is twice the scalar coefficient, and the scalar coefficient of a material element is imaginary. The statement is exact and was checked on a hundred random four-momenta. It is the algebraic content of "energy is the time component of the four-momentum": the time component is the scalar slot, and the trace is the scalar slot read twice.
+Energy is the scalar part of the four-momentum, up to the factor $-ic$. The factor is bookkeeping: the scalar part is the coefficient of $e_t$, and that coefficient is imaginary for a material element. The statement is exact and was checked on a hundred random four-momenta. It is the algebraic content of "energy is the time component of the four-momentum": the time component is the scalar slot, and the doubled scalar part is that slot read twice.
 
 The eigenvalues make the same statement without the factor. They are
 
@@ -477,18 +477,18 @@ $$
 \langle\tilde U\rangle_\natural=1,
 $$
 
-because a unit-norm element has determinant one and its star has determinant one. The trace is not preserved by the same action: a boost changes $E$ and leaves $m$ fixed. The duality section below turns that remark into the two ledgers.
+because a unit-norm element has determinant one and its star has determinant one. The doubled scalar part is not preserved by the same action: a boost changes $E$ and leaves $m$ fixed. The duality section below turns that remark into the two ledgers.
 
 | statement | object | operation | result |
 | --- | --- | --- | --- |
 | energy conservation | $\tilde P_{\Phi,\mathrm{tot}}$ | addition of four-momenta | energy of the total is constant |
 | mass conservation | $\tilde P_{\Phi,\mathrm{tot}}$ | norm of the total | invariant mass of the total is constant |
 | mass invariance | one $\tilde P_{\Phi}$ | unit-norm congruence | norm unchanged |
-| energy frame dependence | one $\tilde P_{\Phi}$ | unit-norm congruence | trace changes |
+| energy frame dependence | one $\tilde P_{\Phi}$ | unit-norm congruence | $2\,\mathrm{Sc}$ changes |
 
-## The Informational Side: Normalisation Is the Trace, Information Is the Norm
+## The Informational Side: Normalisation Is Twice the Scalar Part, Information Is the Norm
 
-### The Trace Is the Normalisation
+### Twice the Scalar Part Is the Normalisation
 
 A state of the informational sector is the Hermitian element
 
@@ -498,21 +498,21 @@ $$
 \lvert\vec r\rvert\le1 .
 $$
 
-Its trace is one,
+Twice its scalar part is one,
 
 $$
-\operatorname{Tr}\tilde{Ϛ}_{\Psi}=2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1,
+2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1,
 $$
 
-and its scalar part is $\tfrac12$. The trace is the total probability, and the Born weight is the ratio of two traces,
+and its scalar part is $\tfrac12$. The doubled value is the total probability, and the Born weight is a ratio of two of them,
 
 $$
-p=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)}{\operatorname{Tr}\tilde{Ϛ}_{\Psi}},
+p=\frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)}{2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}},
 \qquad
-\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1 .
+2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1 .
 $$
 
-The trace is fixed by the normalisation and says nothing about which state the system is in. Every state shares it, and the dynamics preserves it.
+The doubled scalar part is fixed by the normalisation and says nothing about which state the system is in. Every state shares it, and the dynamics preserves it.
 
 ### The Norm Is the Information
 
@@ -559,23 +559,23 @@ There is a direction to the identification, and it is easy to get backwards. The
 The reversible evolution of a state is a conjugation by a $*$-unitary element, $\tilde{Ϛ}_{\Psi}\mapsto\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*$ with $\tilde U\tilde U^*=e_t$. Two identities hold:
 
 $$
-\operatorname{Tr}\bigl(\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\bigr)=\operatorname{Tr}\tilde{Ϛ}_{\Psi},
+2\,\mathrm{Sc}\bigl(\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\bigr)=2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi},
 \qquad
 \langle\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\rangle_\natural=\langle\tilde{Ϛ}_{\Psi}\rangle_\natural .
 $$
 
-The first follows from cyclicity of the trace and from $\tilde U^*\tilde U=e_t$. The second follows from multiplicativity of the determinant and from $\lvert\det\tilde U\rvert^{2}=1$. Both were checked on a hundred random $*$-unitary elements. Since the entropy is a function of the quaternionic norm, it is invariant:
+The first follows from cyclicity of the scalar part and from $\tilde U^*\tilde U=e_t$. The second follows from multiplicativity of the determinant and from $\lvert\det\tilde U\rvert^{2}=1$. Both were checked on a hundred random $*$-unitary elements. Since the entropy is a function of the quaternionic norm, it is invariant:
 
 $$
 S\bigl(\tilde U\tilde{Ϛ}_{\Psi}\tilde U^*\bigr)=S(\tilde{Ϛ}_{\Psi}).
 $$
 
-This is the precise sense in which information is conserved. Conservation here is the invariance of the spectrum under a similarity, and the trace and the norm are the two symmetric functions of the spectrum that the algebra reads.
+This is the precise sense in which information is conserved. Conservation here is the invariance of the spectrum under a similarity, and the doubled scalar part and the norm are the two symmetric functions of the spectrum that the algebra reads.
 
-The conservation fails as soon as the dynamics is not reversible. A coarse-graining is a unital completely positive map that contracts the Bloch ball, $\lvert\vec r_Ξ\rvert\le\lvert\vec r\rvert$. The trace survives, because the map preserves it, and the quaternionic norm increases, because the radius falls:
+The conservation fails as soon as the dynamics is not reversible. A coarse-graining is a unital completely positive map that contracts the Bloch ball, $\lvert\vec r_Ξ\rvert\le\lvert\vec r\rvert$. The doubled scalar part survives, because the map preserves it, and the quaternionic norm increases, because the radius falls:
 
 $$
-\operatorname{Tr}Ξ(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}\tilde{Ϛ}_{\Psi},
+2\,\mathrm{Sc}\,Ξ(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi},
 \qquad
 \langleΞ(\tilde{Ϛ}_{\Psi})\rangle_\natural\ge\langle\tilde{Ϛ}_{\Psi}\rangle_\natural,
 \qquad
@@ -584,7 +584,7 @@ $$
 
 Coarse-graining never creates information. It can only fail to retain it. The fine-grained entropy is the conserved reference, and the increase appears when a reversible flow and a contraction are composed. The second law of the sector is a statement about the pair, not about the flow alone.
 
-The frame action is a third case, and it separates the two kinds of invariance. At sharp momentum the physical Lorentz action on the state is the $*$-unitary Wigner rotation, and the entropy is invariant. At uncertain momentum the boost acts by a mixed $*$-unitary channel, and the entropy increases by an amount bounded by one bit per qubit and governed by the Wigner angle. The entropy is therefore invariant under the compact rotations and under the physical action at sharp momentum, and it is not invariant under a general congruence. The congruence moves a state off the trace-one slice; the physical channel does not. The distinction is operational, and it is the one the corpus draws between the two actions.
+The frame action is a third case, and it separates the two kinds of invariance. At sharp momentum the physical Lorentz action on the state is the $*$-unitary Wigner rotation, and the entropy is invariant. At uncertain momentum the boost acts by a mixed $*$-unitary channel, and the entropy increases by an amount bounded by one bit per qubit and governed by the Wigner angle. The entropy is therefore invariant under the compact rotations and under the physical action at sharp momentum, and it is not invariant under a general congruence. The congruence moves a state off the unit slice; the physical channel does not. The distinction is operational, and it is the one the corpus draws between the two actions.
 
 There is no conserved charge that counts the two sectors. The split is a grading of the operations, not a central decomposition of the state space, and the superselection article is explicit that the algebra has no additive label for material against informational content. "Information conservation" cannot therefore mean the conservation of a sector charge. It can only mean the invariance of the entropy under reversible dynamics, which is what the three identities above state.
 
@@ -597,49 +597,49 @@ The two sectors use the same two operations in opposite roles. The table is the 
 | | material side, $\mathbb{B}_{\Phi}$ | informational side, $\mathbb{B}_{\Psi}$ |
 | --- | --- | --- |
 | standard object | four-momentum $\tilde P_{\Phi}$ | state $\tilde{Ϛ}_{\Psi}$ |
-| trace | energy, $2iE/c$ | normalisation, one |
+| $2\,\mathrm{Sc}$ | energy, $2iE/c$ | normalisation, one |
 | quaternionic norm | mass squared, $-m^2c^2$ | impurity, $\tfrac14(1-r^2)$ |
 | scalar product | $\langle\cdot,\cdot\rangle_\natural$, indefinite | $\langle\cdot,\cdot\rangle_*$, positive definite |
 | central scalar | mass $\Rho=imc$ | scalar part $\tfrac12$ |
-| fixed by the physics | the norm (the particle's mass) | the trace (normalisation) |
-| left free by the physics | the trace (the frame) | the norm (the state) |
+| fixed by the physics | the norm (the particle's mass) | $2\,\mathrm{Sc}$ (normalisation) |
+| left free by the physics | $2\,\mathrm{Sc}$ (the frame) | the norm (the state) |
 | invariant under | unit-norm congruence | $*$-unitary conjugation |
-| additive | trace | trace |
+| additive | $2\,\mathrm{Sc}$ | $2\,\mathrm{Sc}$ |
 | multiplicative | norm | norm |
 
-The swap is the content. On the material side the **norm** is fixed and the **trace** varies; the particle has a definite mass and a frame-dependent energy. On the informational side the **trace** is fixed and the **norm** varies; every state has unit total probability and the information varies from state to state. The same pair of operations, read with the roles exchanged, gives the two ledgers.
+The swap is the content. On the material side the **norm** is fixed and the **doubled scalar part** varies; the particle has a definite mass and a frame-dependent energy. On the informational side that number is fixed and the **norm** varies; every state has unit total probability and the information varies from state to state. The same pair of operations, read with the roles exchanged, gives the two ledgers.
 
 The rest of this section sets the two ledgers side by side. It gives each one a set of examples, then says what the word "fixed" means on each side, and then puts the numbers together. The examples are chosen so that one number is held while the other runs.
 
-### The Material Ledger: The Trace Is a Frame Label
+### The Material Ledger: The Doubled Scalar Part Is a Frame Label
 
-**One particle, two frames.** A muon has $mc^2=105.66$ MeV. At rest its energy is $105.66$ MeV and its rapidity is zero. At $E=10$ GeV its rapidity is $\theta_{\mathrm{rpd}}=5.24$, because $\cosh\theta_{\mathrm{rpd}}=94.6$, and its momentum is $10.0\ \mathrm{GeV}/c$. The trace grows by the factor $94.6$. The norm is the same number in both frames.
+**One particle, two frames.** A muon has $mc^2=105.66$ MeV. At rest its energy is $105.66$ MeV and its rapidity is zero. At $E=10$ GeV its rapidity is $\theta_{\mathrm{rpd}}=5.24$, because $\cosh\theta_{\mathrm{rpd}}=94.6$, and its momentum is $10.0\ \mathrm{GeV}/c$. The doubled scalar part grows by the factor $94.6$. The norm is the same number in both frames.
 
-The eigenvalues show the mechanism. They are $imc\,e^{+\theta_{\mathrm{rpd}}}$ and $imc\,e^{-\theta_{\mathrm{rpd}}}$, and they move apart by the same factor in opposite directions. Their product is fixed by construction, and their sum is not. The trace is the sum and the norm is the product, so one number moves and the other cannot. This is the whole ledger in one line of algebra.
+The eigenvalues show the mechanism. They are $imc\,e^{+\theta_{\mathrm{rpd}}}$ and $imc\,e^{-\theta_{\mathrm{rpd}}}$, and they move apart by the same factor in opposite directions. Their product is fixed by construction, and their sum is not. The doubled scalar part is the sum and the norm is the product, so one number moves and the other cannot. This is the whole ledger in one line of algebra.
 
-**Two particles, one energy.** An electron and a proton at $E=1$ GeV have the same trace, $2i(1\ \mathrm{GeV})/c$. Their norms are $-0.261\ \mathrm{MeV}^2$ and $-8.80\times10^{5}\ \mathrm{MeV}^2$, a ratio of $3.4\times10^{6}$. The trace does not tell the two particles apart. The norm does.
+**Two particles, one energy.** An electron and a proton at $E=1$ GeV have the same doubled scalar part, $2i(1\ \mathrm{GeV})/c$. Their norms are $-0.261\ \mathrm{MeV}^2$ and $-8.80\times10^{5}\ \mathrm{MeV}^2$, a ratio of $3.4\times10^{6}$. That number does not tell the two particles apart. The norm does.
 
-So the trace is not the material identity of the object. It records how much energy the frame assigns, and it is blind to which particle carries it. The mass is the number that survives the change of frame, and it is the number that names the particle.
+So the doubled scalar part is not the material identity of the object. It records how much energy the frame assigns, and it is blind to which particle carries it. The mass is the number that survives the change of frame, and it is the number that names the particle.
 
-**One particle, every energy.** A photon has zero norm at every energy. At $1$ eV and at $1$ TeV its traces differ by $10^{12}$, and its norm is zero in both cases. The invariant can sit on the boundary of the cone, where it separates nothing at all.
+**One particle, every energy.** A photon has zero norm at every energy. At $1$ eV and at $1$ TeV its doubled scalar parts differ by $10^{12}$, and its norm is zero in both cases. The invariant can sit on the boundary of the cone, where it separates nothing at all.
 
-On the null cone the separation is total. The trace carries the whole description of the photon and the norm carries none of it. This is why a mass measurement cannot determine a momentum, and why the material ledger needs both numbers even though only one of them is invariant.
+On the null cone the separation is total. The doubled scalar part carries the whole description of the photon and the norm carries none of it. This is why a mass measurement cannot determine a momentum, and why the material ledger needs both numbers even though only one of them is invariant.
 
-The fixed number is the one that two observers agree on. The free number is the one they exchange when they compare notes. A boost is exactly that exchange, and it acts on the trace alone.
+The fixed number is the one that two observers agree on. The free number is the one they exchange when they compare notes. A boost is exactly that exchange, and it acts on the doubled scalar part alone.
 
 ### The Informational Ledger: The Norm Is a State Label
 
-**One trace, four states.** Every state has trace one. Take the family $\tilde{Ϛ}_{\Psi}=\frac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, $0.8$, $0.5$ and $0$. The norms are $0$, $0.09$, $0.1875$ and $0.25$. The entropies are $0$, $0.47$, $0.81$ and $1$ bit.
+**One number, four states.** Every state has doubled scalar part one. Take the family $\tilde{Ϛ}_{\Psi}=\frac12(e_t+i\vec r)$ at $\lvert\vec r\rvert=1$, $0.8$, $0.5$ and $0$. The norms are $0$, $0.09$, $0.1875$ and $0.25$. The entropies are $0$, $0.47$, $0.81$ and $1$ bit.
 
-The trace is the same four times. The norm separates the four states without error, and the entropy is a monotone function of it. So on this side the trace identifies nothing and the norm identifies everything.
+That number is the same four times. The norm separates the four states without error, and the entropy is a monotone function of it. So on this side the number identifies nothing and the norm identifies everything.
 
-**A part and a whole.** Take a Bell pair. The joint state is pure: trace one, norm zero, entropy zero. Either factor alone is maximally mixed: trace one, norm $0.25$, entropy one bit. The trace is one for the part and one for the whole, so it does not distinguish them.
+**A part and a whole.** Take a Bell pair. The joint state is pure: $2\,\mathrm{Sc}=1$, norm zero, entropy zero. Either factor alone is maximally mixed: $2\,\mathrm{Sc}=1$, norm $0.25$, entropy one bit. The number is one for the part and one for the whole, so it does not distinguish them.
 
 The norm does distinguish them, and in the direction opposite to the material one. The whole is pure and the parts are not. The information of the pair sits in the correlation, which neither factor holds, and the norm of a factor is not a function of the norm of the whole.
 
 This is the informational counterpart of the cross term in the mass of a pair. On the material side the mass of a sum is not the sum of the masses. On the informational side the information of a part is not a share of the information of the whole. In both cases the quantity that fails to add is the norm, and that is one more reason to read it as the invariant of the element rather than as a sum over parts.
 
-**One state, one coarse-graining.** Send a pure state through a depolarising map that halves the radius, $\vec r\mapsto\frac12\vec r$. The trace stays one. The norm goes from $0$ to $0.1875$, and the entropy from $0$ to $0.811$ bit. No frame changed and no energy was exchanged. The norm moved because a distinction was lost.
+**One state, one coarse-graining.** Send a pure state through a depolarising map that halves the radius, $\vec r\mapsto\frac12\vec r$. The doubled scalar part stays one. The norm goes from $0$ to $0.1875$, and the entropy from $0$ to $0.811$ bit. No frame changed and no energy was exchanged. The norm moved because a distinction was lost.
 
 So the free number on this side is a state label. It moves when the state is chosen, and it moves when the dynamics is not reversible. It never moves under a change of frame, because the frame is not part of the informational action at sharp momentum.
 
@@ -647,15 +647,15 @@ So the free number on this side is a state label. It moves when the state is cho
 
 The two ledgers share a shape and differ in the reason for it.
 
-On $\mathbb{B}_{\Phi}$ the group action moves one number and fixes the other. The unit-norm congruence is the Lorentz action. Its orbit through a timelike element is the mass hyperboloid, the norm names the orbit, and the trace names the point on it. The mass is the orbit label and the energy is the orbit coordinate. The algebra supplies both the invariant and the group that moves the other number.
+On $\mathbb{B}_{\Phi}$ the group action moves one number and fixes the other. The unit-norm congruence is the Lorentz action. Its orbit through a timelike element is the mass hyperboloid, the norm names the orbit, and the doubled scalar part names the point on it. The mass is the orbit label and the energy is the orbit coordinate. The algebra supplies both the invariant and the group that moves the other number.
 
-On $\mathbb{B}_{\Psi}$ the group action fixes both numbers. The $*$-unitary conjugation preserves the trace and the norm, and its orbit through a state is the sphere of fixed $\lvert\vec r\rvert$ in the Bloch ball. Both numbers label the orbit, and neither is a coordinate on it: the coordinates are the direction of $\vec r$. So nothing in the reversible group moves the norm. Only a map that is not invertible moves it.
+On $\mathbb{B}_{\Psi}$ the group action fixes both numbers. The $*$-unitary conjugation preserves the doubled scalar part and the norm, and its orbit through a state is the sphere of fixed $\lvert\vec r\rvert$ in the Bloch ball. Both numbers label the orbit, and neither is a coordinate on it: the coordinates are the direction of $\vec r$. So nothing in the reversible group moves the norm. Only a map that is not invertible moves it.
 
-The asymmetry corrects a symmetric reading of the duality. "The trace varies" on $\mathbb{B}_{\Phi}$ means that the frame varies. "The norm varies" on $\mathbb{B}_{\Psi}$ means that the state varies, or that information was lost. The same word covers two different freedoms.
+The asymmetry corrects a symmetric reading of the duality. "The doubled scalar part varies" on $\mathbb{B}_{\Phi}$ means that the frame varies. "The norm varies" on $\mathbb{B}_{\Psi}$ means that the state varies, or that information was lost. The same word covers two different freedoms.
 
-There is a second asymmetry, and it is a warning. A congruence is the material action, but it is not a state transformation. A congruence by an element of norm other than one can rescale the trace, and it therefore moves a state off the trace-one slice. The spin-entropy article states the consequence: a physical transformation of a state cannot rescale its trace, and the congruence can. The same algebraic operation has two physical interpretations, and only the $*$-unitary case is a symmetry of both numbers.
+There is a second asymmetry, and it is a warning. A congruence is the material action, but it is not a state transformation. A congruence by an element of norm other than one can rescale the doubled scalar part, and it therefore moves a state off the unit slice. The spin-entropy article states the consequence: a physical transformation of a state cannot rescale that number, and the congruence can. The same algebraic operation has two physical interpretations, and only the $*$-unitary case is a symmetry of both numbers.
 
-| action | on the trace | on the norm | reading |
+| action | on $2\,\mathrm{Sc}$ | on the norm | reading |
 | --- | --- | --- | --- |
 | unit-norm congruence on $\mathbb{B}_{\Phi}$ | changes | fixed | change of frame |
 | general congruence on $\mathbb{B}_{\Psi}$ | changes | multiplies | not a state change |
@@ -667,7 +667,7 @@ The last row has no partner in the informational sector, because states do not a
 
 ### The Ledgers in Numbers
 
-| object | $\operatorname{Tr}$ | $\langle\cdot\rangle_\natural$ | $S$ |
+| object | $2\,\mathrm{Sc}$ | $\langle\cdot\rangle_\natural$ | $S$ |
 | --- | --- | --- | --- |
 | muon at rest | $2i(105.66\ \mathrm{MeV})/c$ | $-1.116\times10^{4}\ \mathrm{MeV}^2$ | — |
 | the same muon at $10$ GeV | $2i(10\ \mathrm{GeV})/c$, $94.6$ times larger | unchanged | — |
@@ -679,7 +679,7 @@ The last row has no partner in the informational sector, because states do not a
 | qubit at $\lvert\vec r\rvert=\tfrac12$ | $1$ | $0.1875$ | $0.811$ |
 | maximally mixed qubit | $1$ | $0.25$ | $1$ |
 
-Rows one and two hold the norm and vary the trace. Rows five and six hold the trace and vary the norm; rows seven to nine do the same over the whole range of the state. A number that can be held while another runs is the invariant of the pair, and each side names a different one.
+Rows one and two hold the norm and vary the doubled scalar part. Rows five and six hold that number and vary the norm; rows seven to nine do the same over the whole range of the state. A number that can be held while another runs is the invariant of the pair, and each side names a different one.
 
 ### What "Energy Equals Mass plus Information" Can Mean
 
@@ -689,7 +689,7 @@ The **additive reading** is $E=mc^2+h_0 I$. It is exact only if $I$ is defined a
 
 The **ledger reading** is that the material and informational accounts describe the same energy in two ways. Within one isolated system the identity $E=mc^2$ is exact, and the entropy is a function of the state. Across a partition the accounts exchange: the erasure of one bit in a memory lowers the memory's entropy by $\log2$ and delivers at least $k_BT\log2$ of heat to the environment. The exchange rate is the temperature, and it is a property of the partition, not a constant of nature.
 
-The **duality reading** is the one the algebra supports without a new postulate: the trace is energy on the material side and normalisation on the informational side; the norm is mass on the material side and information on the informational side. This is a statement about two readings of two operations, not about a decomposition of one number. It is exact, and it needs no $h_0$.
+The **duality reading** is the one the algebra supports without a new postulate: the doubled scalar part is energy on the material side and normalisation on the informational side; the norm is mass on the material side and information on the informational side. This is a statement about two readings of two operations, not about a decomposition of one number. It is exact, and it needs no $h_0$.
 
 The strongest objection to the phrase is that the additive reading double counts. A hot body's rest mass already contains its thermal energy, so adding a separate $T\,dS$ term to $c^2\,dm$ counts the same energy twice. The ledger reading avoids the double count by treating the two accounts as descriptions of one system or as a transfer between two systems; the duality reading avoids it by not adding at all. The phrase "energy equals mass plus information" is therefore a slogan for the duality, not a first law.
 
@@ -698,22 +698,22 @@ The strongest objection to the phrase is that the additive reading double counts
 The two sides are separated by the sign of one algebraic number. The characteristic polynomial of a general element is
 
 $$
-\lambda^2-(\operatorname{Tr}\tilde Q)\,\lambda+\langle\tilde Q\rangle_\natural=0,
+\lambda^2-(2\,\mathrm{Sc}\tilde Q)\,\lambda+\langle\tilde Q\rangle_\natural=0,
 $$
 
 and its discriminant is
 
 $$
-\mathcal{D}_{\mathrm{disc}}=(\operatorname{Tr}\tilde Q)^2-4\langle\tilde Q\rangle_\natural .
+\mathcal{D}_{\mathrm{disc}}=(2\,\mathrm{Sc}\tilde Q)^2-4\langle\tilde Q\rangle_\natural .
 $$
 
-On a four-momentum, with $\operatorname{Tr}\tilde P_{\Phi}=2iE/c$ and $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$,
+On a four-momentum, with $2\,\mathrm{Sc}\tilde P_{\Phi}=2iE/c$ and $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$,
 
 $$
 \mathcal{D}_{\mathrm{disc}}=-4\frac{E^2}{c^2}+4m^2c^2=-4\lvert\vec p\rvert^2\le0 .
 $$
 
-The eigenvalues are imaginary, and the mass shell is the statement $E\ge mc^2$ with equality at rest. On a state, with $\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1$ and $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$,
+The eigenvalues are imaginary, and the mass shell is the statement $E\ge mc^2$ with equality at rest. On a state, with $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$ and $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$,
 
 $$
 \mathcal{D}_{\mathrm{disc}}=1-(1-r^2)=r^2\ge0 .
@@ -761,12 +761,12 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 
 | statement | status | warrant |
 | --- | --- | --- |
-| the trace is the sum of the eigenvalues and the norm their product | established | the characteristic polynomial; checked on 100 elements |
-| energy is the trace of the four-momentum | established | $\operatorname{Tr}\tilde P_{\Phi}=2iE/c$; checked |
+| the doubled scalar part is the sum of the eigenvalues and the norm their product | established | the characteristic polynomial; checked on 100 elements |
+| energy is twice the scalar part of the four-momentum | established | $2\,\mathrm{Sc}\tilde P_{\Phi}=2iE/c$; checked |
 | mass is the modulus, $\Rho=imc$ | established | $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; checked |
 | $E=mc^2\cosh\theta_{\mathrm{rpd}}$ | established | the Hamilton pairing; checked |
 | the norm is preserved by unit-norm congruence | established | determinant multiplicativity; checked |
-| the trace is preserved by $*$-unitary conjugation | established | cyclicity and $\tilde U^*\tilde U=e_t$; checked |
+| the doubled scalar part is preserved by $*$-unitary conjugation | established | cyclicity and $\tilde U^*\tilde U=e_t$; checked |
 | the norm is preserved by $*$-unitary conjugation | established | $\lvert\det\tilde U\rvert^2=1$; checked |
 | an anti-Hermitian element generates a $*$-unitary flow | established | $\exp(-r'_t\tilde Q)\exp(r'_t\tilde Q)=e_t$; checked |
 | no element of either sector has a decay rate in the corpus convention, which carries the $-i$ | established | $\operatorname{Re}Q_t=0$ on $\mathbb{B}_{\Phi}$; the $-i$ moves $Q_t$ to the frequency slot on $\mathbb{B}_{\Psi}$; both norms identically $1$, checked to $10^{-14}$ |
@@ -779,7 +779,7 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | in the effective description the damping is the Hermitian part of $G$ | established | $G=-i\tilde H_{\Psi,\mathrm{eff}}=-\frac12\tilde\Gamma-i\tilde H_\Psi$; checked |
 | the effective anti-Hermitian part decays the norm at rate $\tilde\Gamma$ | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}\rangle_*=-\langle\tilde{Ξ},\tilde\Gamma\tilde{Ξ}\rangle_*$; checked on 100 elements |
 | the decay rate of a mode is the imaginary part of its pole | established | $\lVert e^{-i\theta_{\mathrm{pwt}}}v\rVert^2=e^{2\operatorname{Im}(w)r'_t/(\hbar c)}$; checked to $7.8\times10^{-16}$ |
-| the Lindblad flow preserves the trace | established | cyclicity; checked to $1.8\times10^{-15}$ |
+| the Lindblad flow preserves the doubled scalar part | established | cyclicity; checked to $1.8\times10^{-15}$ |
 | the norm lost on the no-jump branch is the total jump probability | established | $\frac{d}{dr'_t}\langle\tilde{Ξ}_{\mathrm{nj}}\rangle_*=-\sum_\eta\langle\tilde{Ξ}_{\mathrm{nj}},\tilde M_{\mathrm{kraus},k}^{*}\tilde M_{\mathrm{kraus},k}\tilde{Ξ}_{\mathrm{nj}}\rangle_*$; checked |
 | the commutator $-i[\tilde H_\Psi,\cdot]$ is anti-Hermitian in the Hilbert–Schmidt form | established | the adjoint is its negative; residual $0$ |
 | the entropy is a function of the quaternionic norm | corpus result | *Von Neumann Entropy and the Biquaternion Norm* |
@@ -787,32 +787,32 @@ What would fix $h_0$ is a derivation of $\hbar$ from the algebra. The corpus doe
 | the informational reading of the norm | hypothesis | the sector hypothesis of the corpus |
 | $h_0$ | proposal | not in the corpus |
 
-**The first objection is that the sectors are not conserved charges.** The superselection article shows that the split is a grading of the operations and not a central decomposition of the state space, and that there is no additive label counting material against informational content. The objection is correct and the article accepts it. The duality does not need such a charge: it is a statement about two readings of the trace and the norm, and both readings are available on every element. What the split does not give is a conserved quantum number, and the article does not claim one.
+**The first objection is that the sectors are not conserved charges.** The superselection article shows that the split is a grading of the operations and not a central decomposition of the state space, and that there is no additive label counting material against informational content. The objection is correct and the article accepts it. The duality does not need such a charge: it is a statement about two readings of the doubled scalar part and the norm, and both readings are available on every element. What the split does not give is a conserved quantum number, and the article does not claim one.
 
 The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\omega r'_t/c$ for a length and $\omega r'_t$ for a time, so the angle is real.
 
 **The second objection is that mass is not additive.** The objection is correct, and it is the reason the article states mass conservation as norm conservation of the total. The norm is multiplicative under composition and the four-momenta add; the mass of a sum carries the cross term. A conservation law that adds masses is not the algebra's law.
 
-**The third objection is that information is not conserved.** The objection is correct for the coarse-grained description, and the article states the conservation only for the reversible, fine-grained one. The trace is conserved by every trace-preserving map; the quaternionic norm is not, and the entropy increases. The word "conservation" applies to the first and not to the second.
+**The third objection is that information is not conserved.** The objection is correct for the coarse-grained description, and the article states the conservation only for the reversible, fine-grained one. The doubled scalar part is conserved by every map that preserves it; the quaternionic norm is not, and the entropy increases. The word "conservation" applies to the first and not to the second.
 
-**The fourth objection is that energy is not the sum of mass and information.** The objection is correct, and it is the main correction the article makes to the slogan. The exact additive split is rest energy plus kinetic energy, $E=mc^2+T$; the informational quantity is the norm of the state, not the kinetic energy. The exact statement is the duality of the trace and the norm, not a sum.
+**The fourth objection is that energy is not the sum of mass and information.** The objection is correct, and it is the main correction the article makes to the slogan. The exact additive split is rest energy plus kinetic energy, $E=mc^2+T$; the informational quantity is the norm of the state, not the kinetic energy. The exact statement is the duality of the doubled scalar part and the norm, not a sum.
 
 **The fifth objection is that the material sector is anti-Hermitian and therefore lossy.** The objection fails, but not for the reason one expects. No element of either sector carries a rate: an anti-Hermitian element generates a $*$-unitary flow, and an irreversible process has no algebraic generator at all, so the predicate does not apply to elements. A falling survival probability belongs to a description in which a channel has been dropped. The width is the imaginary part of the central self-energy $\Sigma_{\mathrm{nc}}=\mathcal{E}_{\mathrm{shift}}-\frac{i}{2}\Gamma$, the pole it produces sits on the second sheet of the resolvent of a Hermitian Hamiltonian, and the probability it removes from the watched slot is the probability that sits in the eliminated one. So $\mathbb{B}_{\Phi}$ carries the energy and the generators, and the fall of a probability names neither a sector nor an element. The vocabulary is fixed in the section on the factor of $i$, and the ledger uses it.
 
 ## Summary
 
-- Conjugation by a $*$-unitary element fixes the trace and the determinant of every element it acts on. That is one identity, and it is the whole warrant of the four conservation laws: read on $\mathbb{B}_{\Phi}$ it says that energy is conserved and that mass is conserved, and read on $\mathbb{B}_{\Psi}$ it says that normalisation is conserved and that information is conserved. Each number lands in the sector where it is defined.
-- The algebra attaches two numbers to an element: the trace, which is the sum of the two eigenvalues, and the quaternionic norm, which is their product and the determinant of the $2\times2$ image. A similarity fixes both because a similarity fixes the spectrum.
-- On $\mathbb{B}_{\Phi}$ the trace is energy, $E=\frac{c}{2i}\operatorname{Tr}\tilde P_{\Phi}$, and the norm is mass, $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; the mass is the central modulus $\Rho=imc$.
+- Conjugation by a $*$-unitary element fixes the doubled scalar part and the determinant of every element it acts on. That is one identity, and it is the whole warrant of the four conservation laws: read on $\mathbb{B}_{\Phi}$ it says that energy is conserved and that mass is conserved, and read on $\mathbb{B}_{\Psi}$ it says that normalisation is conserved and that information is conserved. Each number lands in the sector where it is defined.
+- The algebra attaches two numbers to an element: the doubled scalar part, which is the sum of the two eigenvalues, and the quaternionic norm, which is their product and the determinant of the $2\times2$ image. A similarity fixes both because a similarity fixes the spectrum.
+- On $\mathbb{B}_{\Phi}$ twice the scalar part is energy, $E=-ic\,\mathrm{Sc}\,\tilde P_{\Phi}$, and the norm is mass, $\langle\tilde P_{\Phi}\rangle_\natural=-m^2c^2$; the mass is the central modulus $\Rho=imc$.
 - The anti-Hermitian sector carries the generators, and no element of either sector carries a rate. For $\tilde Q=-\tilde Q^{*}$, $\exp(r'_t\tilde Q)$ is $*$-unitary, and the energy generator $-i\tilde H_\Psi$ is anti-Hermitian. A survival probability can fall: the width is the imaginary part of the central self-energy, the pole is a second-sheet zero of a Hermitian resolvent, and the probability removed from one slot is the probability in the eliminated one. The exponential is a fit over an intermediate window; the exact curve starts quadratically and ends as a power law.
 - The material split is a factorisation, not a sum: $\tilde P_{\Phi}=\Rho e^{\vec U\Theta}$ with $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, hence $E=mc^2\cosh\theta_{\mathrm{rpd}}$.
 - Mass conservation is the norm conservation of the total four-momentum. Mass is not additive; the mass of a sum carries the cross term $2\langle\tilde P_{\Phi,1},\tilde P_{\Phi,2}\rangle_\natural$.
-- On $\mathbb{B}_{\Psi}$ the trace is the normalisation, $\operatorname{Tr}\tilde{Ϛ}_{\Psi}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$; the entropy is a function of that norm alone.
-- Information is conserved only in the reversible sense: $*$-unitary conjugation preserves the trace and the norm, and hence the entropy. Coarse-graining preserves the trace, increases the norm and increases the entropy.
-- Conservation is not invariance. The trace is fixed by the $*$-unitary flow and moved by a boost, so energy is conserved and frame-dependent; the determinant is fixed by both, so mass is conserved and frame-independent.
-- The duality is the thesis: the norm is fixed and the trace free on the material side, the trace fixed and the norm free on the informational side.
+- On $\mathbb{B}_{\Psi}$ twice the scalar part is the normalisation, $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$, and the quaternionic norm is the information, $\langle\tilde{Ϛ}_{\Psi}\rangle_\natural=\tfrac14(1-r^2)$; the entropy is a function of that norm alone.
+- Information is conserved only in the reversible sense: $*$-unitary conjugation preserves the doubled scalar part and the norm, and hence the entropy. Coarse-graining preserves that number, increases the norm and increases the entropy.
+- Conservation is not invariance. The doubled scalar part is fixed by the $*$-unitary flow and moved by a boost, so energy is conserved and frame-dependent; the determinant is fixed by both, so mass is conserved and frame-independent.
+- The duality is the thesis: the norm is fixed and the doubled scalar part free on the material side, that number fixed and the norm free on the informational side.
 - The two freedoms are of different kinds. On $\mathbb{B}_{\Phi}$ the free number is a frame label, and the Lorentz group moves it. On $\mathbb{B}_{\Psi}$ the reversible group fixes both numbers, and the norm moves only under a loss of information.
-- The trace identifies nothing on either side. An electron and a proton at $1$ GeV share it, and so do a pure and a maximally mixed state. The norm is the identifying number of both ledgers.
+- The doubled scalar part identifies nothing on either side. An electron and a proton at $1$ GeV share it, and so do a pure and a maximally mixed state. The norm is the identifying number of both ledgers.
 - The two sectors are separated by the sign of the discriminant: non-positive for the four-momentum, non-negative for the state.
 - There is no $h_0$ in the corpus. The algebra supplies $c$ and the bit, and imports $\hbar$ and $k_B$. The two exchange rates the corpus does have are $c^2$ (mechanics) and $k_BT$ (thermodynamics).
 - The slogan "energy equals mass plus information" is exact as a duality of readings, and false as an additive decomposition. The exact additive split is rest energy plus kinetic energy, $E=mc^2+T$.
@@ -823,7 +823,7 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 | --- | --- |
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | anti-Hermitian material sector, Hermitian informational sector |
 | $\tilde{Ξ}$ | the biquaternion-valued field, the evolving element of the state-vector equation |
-| $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\tilde Q=2Q_t$ | the trace, twice the scalar part |
+| $2\,\mathrm{Sc}\tilde Q=2Q_t$ | twice the scalar part, the sum of the spectrum |
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^\natural$ | the quaternionic norm, the determinant, the interval |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_\natural=\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$ | the quaternionic form |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_*=\mathrm{Sc}(\tilde Q_1\tilde Q_2^*)$ | the Hermitian form |
@@ -842,13 +842,13 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 ## Further Reading
 
 - [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), for the factorisation, the modulus and the section *Mass, Not Energy*.
-- [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), for $e_t=1$, the trace as twice the temporal coefficient, and the boost as a unit element that is not $*$-unitary.
+- [The Temporal Dimension: Why the Temporal Unit Is the Identity](the-temporal-dimension-why-the-temporal-unit-is-the-identity.html), for $e_t=1$, the scalar part as the temporal coefficient, and the boost as a unit element that is not $*$-unitary.
 - [Mass in Motion: The Region of Both Invariants](the-region-of-mass-in-motion.html), for mass as the product, energy as the sum, momentum as the difference and rapidity as the ratio.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the interval and the Lorentz congruence.
-- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the trace, the Born pairing and the Bloch ball.
+- [States, Observables and the Born Weight](states-observables-and-the-born-weight.html), for the scalar part, the Born pairing and the Bloch ball.
 - [The Unstable State and the Complex Energy Pole in Biquaternionic Form](the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html), for the generator $G_\star=-iz_\star$ and the split into Hermitian damping and anti-Hermitian energy.
 - [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the Hermitian norm and the anti-Hermitian generator of the state-vector equation.
-- [Quantum Channels and the Reversible–Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), for the Lindblad form, the trace-preserving flow and the split between the reversible derivation and the jump part.
+- [Quantum Channels and the Reversible–Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), for the Lindblad form, the flow that preserves the doubled scalar part, and the split between the reversible derivation and the jump part.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](../articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the Hermitian norm of the flow, the three quantities that fix it, and the norm deficit $\lVert\rho\rVert^2\ge1$.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the left and right eigenbases and the Petermann factor as the norm deficit.
 - [Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum](exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html), for the isotropic cone and why the degeneracy available to either sector is diabolic.
@@ -859,5 +859,5 @@ The angle is $\theta_{\mathrm{pwt}}$, a real frequency times a real interval, $\
 - [The Material–Informational Split as a Superselection Structure in Biquaternionic Form](the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html), for the absence of a conserved sector charge.
 - [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html) and [Exercise: Four-Momentum Conservation in a Collision](exercise-four-momentum-conservation-in-a-collision.html), for the conservation of the total four-momentum and the invariant mass.
 - [Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form](landauers-principle-and-the-material-informational-exchange-in-biquaternionic-form.html), for the exchange rate $k_BT\log2$.
-- [Norm and Pairing Conventions](norm-and-pairing-conventions.html) and [Product and Form Conventions](product-and-form-conventions.html), for the trace, the two forms and the two norms.
+- [Norm and Pairing Conventions](norm-and-pairing-conventions.html) and [Product and Form Conventions](product-and-form-conventions.html), for the scalar part, the two forms and the two norms.
 - [The Central Scalar Limit of Classical Mechanics in Biquaternionic Form](the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form.html), for the non-relativistic placement of mass and energy in the centre of $\mathbb{B}_{\Psi}$.

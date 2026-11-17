@@ -26,7 +26,7 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, and the action principle is that of *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*; this article applies the principle to the Schrödinger equation in its element form.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$, and $\mathrm{Tr}=2\,\mathrm{Sc}$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i\hbar\,c\,\partial/\partial r'_t=i\hbar\,\partial/\partial t'$ is exact and is not repeated.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i\hbar\,c\,\partial/\partial r'_t=i\hbar\,\partial/\partial t'$ is exact and is not repeated.
 
 ## The Action in Element Form
 
@@ -123,7 +123,7 @@ $$
 
 a form the companion article uses, because there the parameters are real and the variation cannot be complexified.
 
-**Why the kinetic term is antisymmetrized.** The symmetric combination $\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)$ is complex. Its real part is a total derivative, $\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)=\tfrac14\partial\rho$ with $\rho=\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)=2\,\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, and its imaginary part is the whole of the kinetic Lagrangian. The antisymmetrization keeps the imaginary part and discards the total derivative, which is the same device as in the standard action $\int\bigl[(i\hbar/2)(\psi^{*}\dot\psi-\dot\psi^{*}\psi)-\psi^{*}\hat H\psi\bigr]$. The companion uses the same identity once, in its kinetic term, and the identity is not repeated there.
+**Why the kinetic term is antisymmetrized.** The symmetric combination $\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)$ is complex. Its real part is a total derivative, $\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)=\tfrac14\partial\rho$ with $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\,\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, and its imaginary part is the whole of the kinetic Lagrangian. The antisymmetrization keeps the imaginary part and discards the total derivative, which is the same device as in the standard action $\int\bigl[(i\hbar/2)(\psi^{*}\dot\psi-\dot\psi^{*}\psi)-\psi^{*}\hat H\psi\bigr]$. The companion uses the same identity once, in its kinetic term, and the identity is not repeated there.
 
 ## The Two Writings from the Action
 
@@ -200,10 +200,10 @@ $$
 **The factor of two.** $N$ is the parent's density up to a factor of two,
 
 $$
-\rho=\mathrm{Tr}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\sum_\mu\lvert\Xi_\mu\rvert^{2}=2N\;\ge\;0,
+\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=2\sum_\mu\lvert\Xi_\mu\rvert^{2}=2N\;\ge\;0,
 $$
 
-and the factor is the $\mathrm{Sc}$ against $\mathrm{Tr}$ convention, $\mathrm{Tr}=2\,\mathrm{Sc}$, not a physical normalisation. So $N=\rho/2$, and the factor is stated once. In the word of the companion article, $N=r^{2}\cosh\theta_{\mathrm{rpd}}$, so the charge reads the scale and the rapidity, and the phase rotation leaves both alone, as it must.
+and the factor is the scalar-part convention, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$, not a physical normalisation. So $N=\rho/2$, and the factor is stated once. In the word of the companion article, $N=r^{2}\cosh\theta_{\mathrm{rpd}}$, so the charge reads the scale and the rapidity, and the phase rotation leaves both alone, as it must.
 
 ### Time translation
 
@@ -272,7 +272,7 @@ with $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ Hermitian and $\tilde\Xi\in\mathbb{B}$ 
 
 The variation of $\tilde\Xi^{*}$ returns the equation, and the non-degeneracy of the trace pairing makes the return exact. The two writings are one functional: the reality of the action puts the central $i$ on the derivative and forces a Hermitian coupling, and the generator writing is the same term written with $\tilde H_\Phi=-i\tilde H_\Psi$. The centrality of $i$ is what makes the two readings coincide, and the parent's counterexample with $\vec e_z$ shows that no non-central root does.
 
-Two symmetries give two currents. The phase rotation gives $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho/2$, the parent's density up to the $\mathrm{Tr}=2\,\mathrm{Sc}$ convention. The time translation, in the constant setting, gives $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, the parent's energy. Each conservation is one line from the equation and its conjugate. There is no spin current, because the equation has no spin.
+Two symmetries give two currents. The phase rotation gives $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\rho/2$, the parent's density up to the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention. The time translation, in the constant setting, gives $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, the parent's energy. Each conservation is one line from the equation and its conjugate. There is no spin current, because the equation has no spin.
 
 The article adds a compact statement, one derivation of the two currents, and a variational reading of the two writings. It adds no prediction and no solution. The polar variational principle is the companion article, and it is genuinely different.
 
@@ -287,7 +287,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace, the observables |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace, the generators |
 | $*,\ \natural$ | Hermitian conjugation, quaternion conjugation |
-| $\mathrm{Sc},\ \mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part, trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $r'_t=c\,t'$ | Material time; the variable of the element form |
 | $\tilde\Xi\in\mathbb{B}$ | The field: one general element, eight real components |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian; the observable |
@@ -295,7 +295,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 | $S$ | The action; $L$ its Lagrangian density |
 | $\partial_{r'_t}$ | Derivative with respect to the material time |
 | $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ | Phase Noether charge; $\rho=2N$ |
-| $\rho=\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)=2\sum_\mu\lvert\Xi_\mu\rvert^{2}\ge0$ | The parent's density |
+| $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\sum_\mu\lvert\Xi_\mu\rvert^{2}\ge0$ | The parent's density |
 | $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$ | Energy; the time-translation charge |
 | $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$ | Propagator of the constant setting; $\theta_{\mathrm{evo}}=h_t r'_t/(\hbar c)$, $\theta=\lvert\vec h_\Psi\rvert r'_t/(\hbar c)$ |
 | $h_t,\ \vec h_\Psi$ | Scalar and vector parts of $\tilde H_\Psi$, numbers in the constant setting |

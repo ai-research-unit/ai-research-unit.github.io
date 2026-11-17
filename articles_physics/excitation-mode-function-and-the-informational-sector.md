@@ -28,7 +28,7 @@ $$
 \mathbb{B}_{\Psi}=\{\tilde Q:\tilde Q^{*}=\tilde Q\}=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\},
 $$
 
-with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the trace is normalized by $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, so that $\mathrm{Tr}(e_t)=2$. The **spinor module** is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with
+with $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ and $i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$, hence $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$, and the reduction is normalised by $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, so that $2\,\mathrm{Sc}(e_t)=2$. The **spinor module** is the Peirce carrier $\mathbb{B}\tilde\Pi_+$, which is the minimal left ideal here, with
 
 $$
 \tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad \tilde\Pi_-=\tfrac12(e_t-i\vec e_z),\qquad
@@ -123,7 +123,7 @@ The assertions to be checked are now explicit.
 **A3. The density matrix of the mode is in $\mathbb{B}_{\Psi}$.** For $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^3$, the scalar part is real and the vector part is purely imaginary, so $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ by the definition of the sector. Direct computation gives
 $$
 \boxed{\;\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14\big(|\vec r|^2-1\big)e_t,\qquad
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1,\qquad
+2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1,\qquad
 \tilde{Ϛ}_{\Psi}^{*}=\tilde{Ϛ}_{\Psi}\;},
 $$
 and the eigenvalues are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, so positivity is exactly $|\vec r|\leq1$. The set of such $\tilde{Ϛ}_{\Psi}$ is the Bloch ball, a three-dimensional subset of the four-dimensional real space $\mathbb{B}_{\Psi}$.
@@ -135,7 +135,7 @@ $$
 $$
 with the first term of each in $\mathbb{B}_{\Psi}$ and the second in $\mathbb{B}_{\Phi}$. So the excitation operator is a sum of one element of each sector and is an element of neither. This is not a defect; it is the statement that raising and lowering are not observables.
 
-**A5. The canonical relation holds once, and in the fermionic form.** The matrix-unit relations give $\{\vec\Upsilon_x,\vec\Upsilon_y\}=\vec\Upsilon_x\vec\Upsilon_y+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_++\tilde\Pi_-=e_t$, $\vec\Upsilon_x^2=0$, $(\vec\Upsilon_y)^2=0$, and $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$. The bosonic relation $[\vec\Upsilon_x,\vec\Upsilon_y]=e_t$ cannot hold for any pair in $\mathbb{B}$, because the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.
+**A5. The canonical relation holds once, and in the fermionic form.** The matrix-unit relations give $\{\vec\Upsilon_x,\vec\Upsilon_y\}=\vec\Upsilon_x\vec\Upsilon_y+\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_++\tilde\Pi_-=e_t$, $\vec\Upsilon_x^2=0$, $(\vec\Upsilon_y)^2=0$, and $\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x$. The bosonic relation $[\vec\Upsilon_x,\vec\Upsilon_y]=e_t$ cannot hold for any pair in $\mathbb{B}$, because the scalar part of a commutator vanishes while $2\,\mathrm{Sc}(e_t)=2$; this is the obstruction recorded in the Fock-space and photon articles and is not reopened here.
 
 Two points about the reach of A1–A3 belong immediately after them. First, the assertions are about **one mode**. Both $\vec\Upsilon_x,\vec\Upsilon_y$ and the Peirce idempotents are attached to a single pair of orthogonal idempotents and to a single mode; there is no second pair commuting with the first in the four-dimensional algebra, hence no second fermionic mode. Second, the assertions are about the **density matrix** and the **number operator**, not about the state vector. The state vector is in the module, and the module is not $\mathbb{B}_{\Psi}$: the two are different subspaces of $\mathbb{B}$ that meet in a ray. The next section makes that intersection precise.
 
@@ -145,7 +145,7 @@ The phrase "the state space is $\mathbb{B}_{\Psi}$" invites the interpretation t
 
 - **$\mathbb{B}_{\Psi}$ is not a complex vector space.** Multiplication by $i$ exchanges the sectors, $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, so $\mathbb{B}_{\Psi}$ has no complex structure inherited from $\mathbb{B}$. It is a real vector space of dimension four.
 - **$\mathbb{B}_{\Psi}$ is not closed under multiplication.** $(i\vec e_x)(i\vec e_y)=-\vec e_z\in\mathbb{B}_{\Phi}$ is the standard counterexample. The product of two Hermitian elements is Hermitian only if they commute; the symmetrized product $\tfrac12(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}+\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1})$ does remain in $\mathbb{B}_{\Psi}$, which is the sense in which $\mathbb{B}_{\Psi}$ is a Jordan (not associative) algebra.
-- **$\mathbb{B}_{\Psi}$ is a real Hilbert space under the trace pairing.** On the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ one has $\mathrm{Tr}(i\vec e_\mu\,i\vec e_\nu)=2\delta_{\mu\nu}$ and $\mathrm{Tr}(e_t\,i\vec e_\mu)=0$, so the pairing $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle=\tfrac12\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})$ is the standard Euclidean inner product in the four real coordinates $(h_t,h'_x,h'_y,h'_z)$, hence positive definite. In this sense $\mathbb{B}_{\Psi}$ is a four-dimensional real Hilbert space, and $\mathsf{M}_2$ identifies it with the Hermitian $2\times2$ matrices with the Hilbert–Schmidt product.
+- **$\mathbb{B}_{\Psi}$ is a real Hilbert space under the bilinear pairing.** On the basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ one has $2\,\mathrm{Sc}(i\vec e_\mu\,i\vec e_\nu)=2\delta_{\mu\nu}$ and $2\,\mathrm{Sc}(e_t\,i\vec e_\mu)=0$, so the pairing $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})$ is the standard Euclidean inner product in the four real coordinates $(h_t,h'_x,h'_y,h'_z)$, hence positive definite. In this sense $\mathbb{B}_{\Psi}$ is a four-dimensional real Hilbert space, and $\mathsf{M}_2$ identifies it with the Hermitian $2\times2$ matrices with the Hilbert–Schmidt product.
 - **$\mathbb{B}_{\Psi}$ is not a Hilbert space under the biquaternion norm.** The biquaternion norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ restricts to $\langle h_t\,e_t+i\vec h_\Psi\rangle_{\natural}=h_t^2-|\vec h_\Psi|^2$, of signature $(1,3)$; it is indefinite, and it vanishes on the cone $h_t^2=|\vec h_\Psi|^2$. The positivity condition on states is the biquaternion-norm (light-cone) condition, not the trace-pairing one, so the two forms on $\mathbb{B}_{\Psi}$ do different work.
 
 The correct statement is therefore: $\mathbb{B}_{\Psi}$ is a four-dimensional **real** Hilbert space under the Hilbert–Schmidt (trace) pairing, whose elements are the Hermitian operators on the two-dimensional module; the density matrices of one fermionic mode form a three-dimensional subset of it; and it is not the module itself, which is a complex two-dimensional space of state vectors. The qualification "in the sense of the trace pairing" is not optional, because under the other form the space is not even positive definite.
@@ -221,7 +221,7 @@ $\mathbb{B}_{\Psi}$ is a four-dimensional real Hilbert space under the trace pai
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian (material) sector, $\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ |
 | $\mathbb{B}_{\Psi}$ | Hermitian (informational) sector, $\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ |
 | $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $\tilde\Pi_+=\tfrac12(e_t+i\vec e_z)$, $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ | Orthogonal idempotents, Peirce idempotents; $i\vec e_z$ is a root of $+1$ |
 | $\vec\Upsilon_x=\tfrac12(i\vec e_x-\vec e_y)$, $\vec\Upsilon_y=\tfrac12(i\vec e_x+\vec e_y)$ | Matrix units, $\vec\Upsilon_x\vec\Upsilon_y=\tilde\Pi_+$, $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-$, $\vec\Upsilon_x^2=\vec\Upsilon_y^2=0$ |
 | $\mathbb{B}\tilde\Pi_+=\{ \tilde{Ξ}_{1}\tilde\Pi_++\tilde{Ξ}_{2}\vec\Upsilon_y\}$ | Spinor module (one-particle solutions), $\mathbb{B}\tilde\Pi_+\cap\mathbb{B}_{\Psi}=\mathbb{R}\tilde\Pi_+$ |

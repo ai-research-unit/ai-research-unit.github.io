@@ -8,7 +8,7 @@ The framework's answer is a split one, and the split is the subject of the artic
 
 This article is interpretive, and it keeps the boundary between what the algebra establishes and what is interpretation explicit in every section. The interpretive statements are labelled as interpretations, and where an interpretation is not forced by the algebra, that is said rather than smoothed over.
 
-The material is inherited, unchanged, from the read list. From *Quantum Physics in Biquaternionic Form*: the states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$, the mixed states are the interior of the Bloch ball $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$, and the Born rule is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, read as $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ in the $2\times2$ image. From *The Bloch Ball as the Normalised Slice of the Future Light Cone*: the state space is the intersection of the normalisation hyperplane $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (the trace-one hyperplane in the image) with the future light cone of the biquaternion norm $\langle\tilde H_\Psi\rangle_{\natural}=\tilde H_\Psi\tilde H_\Psi^{\natural}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive normalised element (trace one in the image), with $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14(|\vec r|^2-1)e_t$. From *The Material Sector: Four-Vectors, Interval and Lorentz Action*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{B}_{\Psi}$.
+The material is inherited, unchanged, from the read list. From *Quantum Physics in Biquaternionic Form*: the states are the positive elements of $\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, the pure states are the idempotents $\tilde\Pi_{1,2}(\vec u)=\tfrac12(e_t\pm i\vec u)$, the mixed states are the interior of the Bloch ball $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $|\vec r|<1$, and the Born rule is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, read as $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ in the $2\times2$ image. From *The Bloch Ball as the Normalised Slice of the Future Light Cone*: the state space is the intersection of the normalisation hyperplane $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (the normalised hyperplane in the image) with the future light cone of the biquaternion norm $\langle\tilde H_\Psi\rangle_{\natural}=\tilde H_\Psi\tilde H_\Psi^{\natural}$, and the pure states are the zero divisors at normalised. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive normalised element (normalised in the image), with $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14(|\vec r|^2-1)e_t$. From *The Material Sector: Four-Vectors, Interval and Lorentz Action*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{B}_{\Psi}$.
 
 The article proceeds as follows. The next four sections collect the established structure of the state as an element: its definition and geometry; its cohabitation with the observables in one space; its convex structure; and its purity as idempotence and as zero-divisorhood. Two further sections state what the element does not carry and what it is not. The last three sections separate the ontological interpretations the algebra permits, state the sector hypothesis under which they acquire physical content, and list the questions the algebra leaves open.
 
@@ -20,7 +20,7 @@ $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\left(e_t+i\,\vec r\right),\qquad \vec r=r_1 \vec e_x+r_2 \vec e_y+r_3 \vec e_z\in\mathbb{R}^3,
 $$
 
-with the positivity condition $|\vec r|\leq1$. Its scalar part is real and its vector part purely imaginary, so $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ by the definition of that subspace. Its normalisation is $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, which the trace reads as $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$; it is a Hermitian element that is positive and normalized.
+with the positivity condition $|\vec r|\leq1$. Its scalar part is real and its vector part purely imaginary, so $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ by the definition of that subspace. Its normalisation is $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12\langle e_t\rangle_{*}$, which reads $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$; it is a Hermitian element that is positive and normalized.
 
 Three identities carry the whole of the state's structure. Expanding the square in the algebra,
 
@@ -91,7 +91,7 @@ $$
 \boxed{\;\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=h_t+\vec r\cdot\vec h_\Psi\;},
 $$
 
-and the trace reads it as $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi$, with $\mathrm{Tr}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map
+and the doubled scalar part is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi$, with $2\,\mathrm{Sc}(e_t)=2$. Second — and this is the point for the ontology — because the form is positive definite, the map
 
 $$
 \tilde{Ϛ}_{\Psi}\ \longmapsto\ \left(\tilde H_\Psi\mapsto \frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}\right)
@@ -102,7 +102,7 @@ is injective: an element of $\mathbb{B}_{\Psi}$ is determined by its pairings wi
 That the state is a *positive* functional is part of the same structure. If $\tilde H_\Psi\geq0$, meaning $h_t\geq|\vec h_\Psi|$, then
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi\ \geq\ |\vec h_\Psi|-|\vec r|\,|\vec h_\Psi|=\left(1-|\vec r|\right)|\vec h_\Psi|\ \geq\ 0 .
+2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi\ \geq\ |\vec h_\Psi|-|\vec r|\,|\vec h_\Psi|=\left(1-|\vec r|\right)|\vec h_\Psi|\ \geq\ 0 .
 $$
 
 Positivity of the functional is thus not an extra postulate; it is the positivity condition $|\vec r|\leq1$ of the state seen from the dual side.
@@ -152,7 +152,7 @@ is an ensemble decomposition with two pure states of the same type, distinct fro
 **No outcome index.** The state determines the Born probabilities
 
 $$
-p_\pm=\frac{\langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}=\frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}=\frac{\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}=\tfrac12\left(1\pm\vec u_\Psi\cdot\vec r\right)
+p_\pm=\frac{\langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}=\frac{\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}=\frac{2\,\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}=\tfrac12\left(1\pm\vec u_\Psi\cdot\vec r\right)
 $$
 
 of a measurement along $\vec u_\Psi$, and nothing about which outcome occurs. No element of $\mathbb{B}_{\Psi}$ and no operation of the algebra carries the index $\pm$; that is the selection problem in algebraic form, established in the measurement-problem article and not resolved here. In the geometric language of that article the statistics determine the segment — the pointer diameter — and the outcomes are its endpoints; the element is the segment.
@@ -218,7 +218,7 @@ $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\left(e_t+i\vec r\right),\qquad |\vec r|\leq1 ,
 $$
 
-equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=h_t+\vec r\cdot\vec h_\Psi$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the trace $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
+equivalently a point of the Bloch ball, equivalently a normalised element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at that normalisation; its mixedness is the single scalar $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi}=\tfrac14(|\vec r|^2-1)e_t$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and normalisation; the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=h_t+\vec r\cdot\vec h_\Psi$ makes the state a positive normalized functional on that space, its positive definiteness makes the space its own dual, and the doubled scalar part $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\vec r\cdot\vec h_\Psi$ is the $2\times2$ reading of the same functional. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
 
 Two negative facts bound the ontology. The element is **provenance-blind** — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries **no outcome index**, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out. It is the Hermitian square of a positive amplitude, $\tilde{Ϛ}_{\Psi,Q}=\tilde Q_{\mathrm n}^{2}$, and the passage from the operator to the state forgets the $*$-unitary fibre.
 
@@ -240,8 +240,8 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\langle\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{B}_{\Psi}$ |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-\lvert\vec r\rvert^2)e_t$ | Biquaternion norm of a state; positivity $\Leftrightarrow\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0$ |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac14(\lvert\vec r\rvert^2-1)e_t$ | Deviation from idempotency (mixedness) |
-| $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace |
-| $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = h_t + \vec r\cdot\vec h_\Psi$, with trace reading $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)$ | Born rule; form first, trace at normalisation last |
+| $2\,\mathrm{Sc}(\tilde Q)$ | Doubled scalar part |
+| $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = h_t + \vec r\cdot\vec h_\Psi$, with $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ at normalisation | Born rule; form first, doubled scalar part last |
 | $\lambda_\pm = \tfrac12(1\pm\lvert\vec r\rvert)$ | Eigenvalues of $\tilde{Ϛ}_{\Psi}$ |
 | $\vec u, \vec u, \vec u_\Psi, \vec u_r$ | Unit pure real quaternions (directions) |
 | ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |

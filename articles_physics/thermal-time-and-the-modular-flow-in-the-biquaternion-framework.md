@@ -169,7 +169,7 @@ The statement "the state defines the time" is not a reinterpretation of a pre-ex
 
 The state is a KMS state with respect to the inverse of its own modular flow, at the modular inverse temperature. Concretely, with the orientation convention of the KMS and Tomita–Takesaki companion articles, in which the flow carrying the boundary relation is $\sigma_{-r'_t}$,
 $$
-F_{\tilde Q_2\tilde Q_1}(r'_t)=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_2\,\alpha_{r'_{t}}(\tilde Q_1)\big),
+F_{\tilde Q_2\tilde Q_1}(r'_t)=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_2\,\alpha_{r'_{t}}(\tilde Q_1)\big),
 \qquad
 \alpha_{r'_{t}}\big(\tilde Q_1\big)=\tilde{Ϛ}_{\Psi}^{-ir'_t}\tilde Q_1\,\tilde{Ϛ}_{\Psi}^{\,ir'_t},
 \qquad
@@ -211,7 +211,7 @@ The biquaternion framework reaches this case through the one-particle module and
 
 **3. The thermal-time covariance.** The hypothesis is often stated as the statement that the flow is covariant under the algebra's symmetries. Which symmetries of $\mathbb{B}$ — the inner automorphisms, the sector exchange $i$, the conjugations — act on the set of thermal times, and what is the orbit structure?
 
-**4. The generator's observable status.** The modular Hamiltonian is an algebra element in the framework and a formal object in the field. Is there a framework measurement whose statistic is the modular energy $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_{\Psi,\mathrm{modular}}{}^{*})$ beyond the relative entropy computed in the companion article?
+**4. The generator's observable status.** The modular Hamiltonian is an algebra element in the framework and a formal object in the field. Is there a framework measurement whose statistic is the modular energy $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_{\Psi,\mathrm{modular}}{}^{*})$ beyond the relative entropy computed in the companion article?
 
 **5. Empirical contact.** As everywhere in the subcategory, no prediction distinguishing the interpretation from standard quantum theory is derived.
 
@@ -238,7 +238,7 @@ The framework thus realizes thermal time in its inner, trivial case exactly, wit
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ | State; Bloch vector $\vec r$ |
 | $r=|\vec r|$, $\vec u_r=\vec r/r$, $\gamma=\vec u_r\cdot\mathbf e$ | State axis and its algebra direction |
 | $b=\mathrm{artanh}(r)$ | Flow rate (rapidity) |

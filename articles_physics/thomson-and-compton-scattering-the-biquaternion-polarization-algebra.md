@@ -332,7 +332,7 @@ $$
 $$
 The left side is a sum of two pairings, each multiplied by the solution it pairs, and the two sides agree for every $\tilde{Ξ}$; the equality is therefore a statement about one action on the algebra, and it can be checked term by term.
 
-Here $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ is the covariant normalisation, and $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x)$ is the Dirac pairing of the companion Solutions article. This is the **momentum-space** completeness relation: it sends every state into the two-dimensional space of the positive-frequency solutions of the one-sided pair, on which $D(p)\tilde{Ξ} = 2m\,c\tilde{Ξ}$, and applying it twice returns $2m\,c$ times itself,
+Here $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ is the covariant normalisation, and $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x)$ is the Dirac pairing of the companion Solutions article. This is the **momentum-space** completeness relation: it sends every state into the two-dimensional space of the positive-frequency solutions of the one-sided pair, on which $D(p)\tilde{Ξ} = 2m\,c\tilde{Ξ}$, and applying it twice returns $2m\,c$ times itself,
 $$
 D(p)\bigl(D(p)\tilde{Ξ}\bigr)=2m\,c\,D(p)\tilde{Ξ} \qquad\text{on shell}.
 $$
@@ -584,7 +584,7 @@ which sum back to $D(p)$, each being a projection of rank one; the asymmetry is 
 | $B_s$ | The bracket of the split, $\tilde{Ξ}\mapsto\tilde{Ξ}+s_0\tilde{Ξ}\vec e_y+\sum_\eta s_\eta\vec e_\eta\tilde{Ξ}\vec e_x$; half of it is a projection, and $B_s+B_{-s}$ is twice the identity action |
 | $D_s(p)$ | The resolved shell, $\tilde{Ξ}\mapsto\tfrac12 D(p)(B_s\tilde{Ξ})$; $\frac{1}{2\,m}D_s$ is a projection of rank one, and $D_s+D_{-s}=D(p)$ |
 | $s$, $s\cdot p=0$, $s^2=-1$ | Spin four-vector of the target; rest frame $(0,\vec s)$, with $\vec s$ the Bloch vector of the state |
-| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing; $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ |
+| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing; $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m\,c$ |
 
 ## Further Reading
 

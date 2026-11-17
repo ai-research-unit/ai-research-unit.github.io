@@ -186,7 +186,7 @@ where $\mathbb{B}_{\Psi}$ is the Hermitian sector, the elements with $\tilde Q^{
 $$
 \mathsf{M}_2(e_t)=I_{2},\qquad \mathsf{M}_2(\vec e_\eta)=-i\sigma_{\eta},\qquad \mathsf{M}_2(i\tilde Q_1)=i\,\mathsf{M}_2(\tilde Q_1),
 $$
-so that $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras onto the $2\times2$ complex matrices. The trace convention of the series is $\mathrm{Tr}=2\,\mathrm{Sc}$, where $\mathrm{Sc}(\tilde Q_1)$ is the coefficient of $e_t$.
+so that $\mathsf{M}_2$ is an isomorphism of $\mathbb{C}$-algebras onto the $2\times2$ complex matrices. The reduction convention of the series is $2\,\mathrm{Sc}(\tilde Q)=2Q_t$, where $\mathrm{Sc}(\tilde Q_1)$ is the coefficient of $e_t$.
 
 **The four forms.** The scalar parts of the four general products give the four series forms,
 $$
@@ -316,7 +316,7 @@ with the biquaternion norm $\langle\cdot\rangle_{\natural}$ as the interval, the
 
 ### Associativity, Centrality, and the Explicit Formalism
 
-The quaternionic theory was built on an associative algebra, and the biquaternion theory keeps associativity and adds centrality. Because $\mathbb{B}$ is central simple over $\mathbb{C}$, it is a full matrix algebra, and every result of finite-dimensional complex linear algebra and representation theory is available without qualification. The four forms $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, the trace convention $\mathrm{Tr}=2\,\mathrm{Sc}$, the matrix model $\mathsf{M}_2$, and the two sector dictionaries together give an explicit finite-dimensional formalism with **no unbounded operators and no domain questions at the level of the algebra**. That explicitness is a genuine inheritance from the quaternionic programme, which also worked with finite-dimensional operators rather than with the analytic machinery of the complex theory. The conventions and the four forms are owned by *Algebra and Element Conventions*.
+The quaternionic theory was built on an associative algebra, and the biquaternion theory keeps associativity and adds centrality. Because $\mathbb{B}$ is central simple over $\mathbb{C}$, it is a full matrix algebra, and every result of finite-dimensional complex linear algebra and representation theory is available without qualification. The four forms $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, the reduction convention $2\,\mathrm{Sc}(\tilde Q)=2Q_t$, the matrix model $\mathsf{M}_2$, and the two sector dictionaries together give an explicit finite-dimensional formalism with **no unbounded operators and no domain questions at the level of the algebra**. That explicitness is a genuine inheritance from the quaternionic programme, which also worked with finite-dimensional operators rather than with the analytic machinery of the complex theory. The conventions and the four forms are owned by *Algebra and Element Conventions*.
 
 ### The Quaternions Survive Inside the Algebra
 
@@ -361,7 +361,7 @@ The first table is the correspondence of Part II: each limit of Part I, what the
 |---|---|---|
 | The invertibles are $SU(2)$ and the rotation generators | The elements $\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta$ are the spin operators, with $[\tilde S_{\Psi,i},\tilde S_{\Psi,j}]=i\,\hbar\sum_{\eta}\epsilon_{ij\eta}\tilde S_{\Psi,\eta}$ | *Angular Momentum and Spin in Biquaternionic Form* |
 | The Lorentz group and Minkowski space | $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$, the interval is the biquaternion norm, and the unit-norm elements are the Lorentz transformations | *The Anti-Hermitian Subspace $\mathbb{B}_{\Phi}$ as the Material Sector* |
-| An associative algebra with an explicit finite-dimensional formalism | $\mathbb{B}\cong M_{2}(\mathbb{C})$, the four forms $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, the trace convention $\mathrm{Tr}=2\,\mathrm{Sc}$, and no unbounded operators at the algebra level | *Algebra and Element Conventions* |
+| An associative algebra with an explicit finite-dimensional formalism | $\mathbb{B}\cong M_{2}(\mathbb{C})$, the four forms $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$, the reduction convention $2\,\mathrm{Sc}(\tilde Q)=2Q_t$, and no unbounded operators at the algebra level | *Algebra and Element Conventions* |
 | The quaternion algebra itself | $\mathbb{H}$ is the compact real form of $\mathbb{B}$ and the real subalgebra $\mathbb{B}_{H}\subset\mathbb{B}$; the split quaternions are the other real form | the corpus's split-biquaternion articles |
 | A single system with $SU(2)$ symmetry as the natural home | $\mathbb{B}_{\Psi}$ is the observable algebra of one two-state system, with the Bloch ball and the Born rule as the $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$-pairing | *The Native Qubit and the Defining Module of the Biquaternion Algebra* |
 | The scalar field is an input to a quantum theory | The corpus proves which input a uniform norm-preserving dynamics selects, namely the centre | *Unitarity from Centrality* |
@@ -395,7 +395,7 @@ Quaternionic quantum theory is the theory obtained by making the quaternion alge
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | The Hermitian and anti-Hermitian sectors, the fixed spaces of ${}^{*}$ |
 | $\mathbb{B}_{\Phi}\cong\mathbb{R}^{3,1}$ | The material sector as Minkowski space |
 | $\mathsf{M}_2(e_t)=I_{2}$, $\mathsf{M}_2(\vec e_\eta)=-i\sigma_{\eta}$ | The matrix model of $\mathbb{B}$ onto the $2\times2$ complex matrices |
-| $\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$ | The scalar part, the coefficient of $e_t$, and the trace convention |
+| $\mathrm{Sc}$ | The scalar part, the coefficient of $e_t$, and the reduction convention |
 | $\langle\tilde Q_1,\tilde Q_2\rangle,\langle\tilde Q_1,\tilde Q_2\rangle_{\natural},\langle\tilde Q_1,\tilde Q_2\rangle_{*},\langle\tilde Q_1,\tilde Q_2\rangle_{\natural*}$ | The four forms: $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$, $\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, $\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\sum_{\mu}Q_{1\mu}\overline{Q_{2\mu}}$ | The Hermitian form; positive definite, linear in the first slot and conjugate-linear in the second |
 | $\langle\cdot\rangle_{\natural}$ | The biquaternion norm; the Minkowski interval on $\mathbb{B}_{\Phi}$ |

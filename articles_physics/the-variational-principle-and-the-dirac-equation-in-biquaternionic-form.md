@@ -22,7 +22,7 @@ The answer is one action, the pair as its variation, the electric current and th
 
 The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, and the action principle is that of *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*; this article applies the principle to the Dirac equation in its element form.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central. $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The conjugations are $*$ (Hermitian, $\tilde X^{*}=\bar{\tilde X}^{\natural}$) and $\natural$ (quaternion). The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ with $R_t=ir'_t$, so that $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and $(\tilde\nabla_\Phi)^{\natural}$ is the same operator with the spatial part reversed. The four-position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. The material time is $r'_t=ct'$, a length, and the action below is integrated with $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$ so that the constant multiplying the derivative is $\hbar c$ and not $\hbar$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central. $\mathrm{Sc}$ is the coefficient of $e_t$. The conjugations are $*$ (Hermitian, $\tilde X^{*}=\bar{\tilde X}^{\natural}$) and $\natural$ (quaternion). The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ with $R_t=ir'_t$, so that $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and $(\tilde\nabla_\Phi)^{\natural}$ is the same operator with the spatial part reversed. The four-position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. The material time is $r'_t=ct'$, a length, and the action below is integrated with $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$ so that the constant multiplying the derivative is $\hbar c$ and not $\hbar$.
 
 Every symbol is defined where it first appears, and §*Summary of Notation* collects them.
 
@@ -249,7 +249,7 @@ The two-sided display is the same equation in a different right frame — a cons
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
 | $*$ | Hermitian conjugation, $\tilde X^{*}=\bar{\tilde X}^{\natural}$ |
 | $\natural$ | Quaternion conjugation; $\tilde U^{\natural}=\tilde U^{-1}$ for an invertible element |
-| $\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part; trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $\tilde\nabla_\Phi=e_t\partial_{R_t}+\vec e_\eta\partial_\eta$ | Biquaternionic gradient, $R_t=ir'_t$ |
 | $(\tilde\nabla_\Phi)^{\natural}$ | The same gradient with the spatial part reversed |
 | $\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ | D'Alembertian |

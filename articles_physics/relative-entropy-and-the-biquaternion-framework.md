@@ -12,7 +12,7 @@ The answer has three parts, and they should be separated at the outset.
 
 1. **The quantity is standard.** The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the Hermitian GNS companion article, the elements $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.
 
-2. **The quantity is exactly computable.** Because $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, both the state and its logarithm are elements of the algebra, and the trace is the scalar pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.
+2. **The quantity is exactly computable.** Because $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, both the state and its logarithm are elements of the algebra, and the doubled scalar part is the scalar pairing $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.
 
 3. **The quantity has a framework-specific boundary.** The logarithm of a state is an element of $\mathbb{B}$ exactly when the state is faithful, that is, in the interior of the Bloch ball; on the pure boundary the state is a zero divisor and $\log\tilde{Ϛ}_{\Psi}$ does not exist as an algebra element. The relative entropy nevertheless extends continuously to the boundary, and it diverges there only in the one standard way, when the support of the first state is not contained in the support of the second. The zero-divisor cone is the locus on which the algebra's own logarithm fails and the imported logarithm is required.
 
@@ -59,7 +59,7 @@ The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\
 
 ### Density Matrices in $\mathbb{B}_{\Psi}$
 
-By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_2)$ with $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ positive and of trace one. Writing
+By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_2)$ with $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ positive and of normalised. Writing
 $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
 \vec r\in\mathbb{R}^3,\qquad \mathbf e=(\vec e_x,\vec e_y,\vec e_z),
@@ -134,7 +134,6 @@ $$
 +|\vec r|\Big(\mathrm{artanh}|\vec r|
 -\mathrm{artanh}|\vec s|\,\cos\gamma\Big)}
 $$
-for $|\vec r|,|\vec s|<1$. The derivation is the whole content of the section: the two appearances of $\log$ are biquaternion logarithms, each computed by the closed form of the previous section, and their traces are the real pairing $2\,\mathrm{Sc}$. The factors of $\tfrac12\log\tfrac14$ cancel between the two terms, which is why the boxed expression contains only the ratio of determinants, $\frac{1-|\vec r|^2}{1-|\vec s|^2}$, and the relative angle.
 
 Two features are worth naming. First, the relative entropy of two biquaternion states is **not** a function of the Bloch distance $|\vec r-\vec s|$ alone; it depends on the two radii and the angle, and is therefore sensitive to the direction of the Bloch vectors and not only to their separation. Second, it is manifestly **asymmetric** in the exchange $\vec r\leftrightarrow\vec s$, because the coefficient in front of the bracket is $|\vec r|$ and the bracket is not symmetric.
 
@@ -261,7 +260,7 @@ The framework-specific feature is the boundary. The logarithm is an element of $
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r\cdot\mathbf e)$ | State of $\mathbb{B}$; Bloch vector $\vec r$ |
 | $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of the state |

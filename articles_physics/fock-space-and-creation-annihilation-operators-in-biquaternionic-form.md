@@ -12,7 +12,7 @@ Its question is exact: what does "Fock space and creation/annihilation operators
 
 3. **The gap.** There is **no Fock space in $\mathbb{B}$.** The Fock space of a single mode is the two-dimensional fundamental module of $\mathbb{B}$, not a subalgebra of it; the Fock space of two modes already has dimension four while the operator algebra of two modes has dimension sixteen; and the Fock space of a field is infinite-dimensional. The phrase "biquaternion Fock space" therefore cannot mean a Fock space inside the algebra. It has to mean a Fock space built from a $\mathbb{B}$-module, and that is what the parents construct. The title of this article promises a Fock space in biquaternionic form; what the framework contains is one mode of one, inside $\mathbb{B}$, with everything beyond it built the standard way on the outside.
 
-The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. No such pair exists in $\mathbb{B}$: the trace of a commutator vanishes while $\mathrm{Tr}(e_t)=2$, so the only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.
+The remaining obstruction is the bosonic one, and it is parallel to the fermionic result. One bosonic mode requires $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. No such pair exists in $\mathbb{B}$: the scalar part of a commutator vanishes while $2\,\mathrm{Sc}(e_t)=2$, so the only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold in $\mathbb{B}$ has $c=0$. The finite-dimensional algebra carries the fermionic canonical relation exactly and the bosonic canonical relation not at all. The Maxwell Fock space is consequently a standard construction on an imported module, and the framework adds nothing to it beyond the notation.
 
 ## Fock Space and Its Operator Algebra
 
@@ -110,7 +110,7 @@ None of the operators in this section is new. They are displayed together for on
 For a single mode the number operator meets the framework's Born rule, and this is the one place where the Fock construction and the informational sector touch directly. An element of $\mathbb{B}_{\Psi}$ is Hermitian; $N=a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}$ is Hermitian; and for a positive state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the normalised Hermitian form, read as the trace formula, gives
 
 $$
-\langle N\rangle_{\tilde{Ϛ}_{\Psi}}=\frac{\langle\tilde{Ϛ}_{\Psi},N\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,N^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,N)}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})},\qquad\text{with trace reading } \frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\,N^{*})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\,N)}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})},
+\langle N\rangle_{\tilde{Ϛ}_{\Psi}}=\frac{\langle\tilde{Ϛ}_{\Psi},N\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,N^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}=\frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,N)}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})},\qquad\text{with scalar-part reading } \frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,N^{*})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}=\frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,N)}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})},
 $$
 
 the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative because $N\ge0$. For one fermionic mode, whose explicit realization is given in the next section, $N$ is an **idempotent** rather than a counting operator: its spectrum is $\{0,1\}$, and $N^2=N$ is the algebraic statement that a mode is either empty or occupied. The trace formula then returns the occupation probability of the mode, which is the Born rule for the two-valued observable "is the mode occupied". For a field, $N$ acts on an infinite-dimensional Fock space and is not an element of $\mathbb{B}$; the trace formula applies to its finite-dimensional truncations only. The distinction is the same one the whole article turns on, and it is visible here in the simplest possible object.
@@ -238,13 +238,13 @@ It does not say that the framework **derives** fermionic statistics, or statisti
 
 ## The Bosonic Case
 
-A bosonic mode is a pair satisfying $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. In a finite-dimensional algebra this is impossible for a reason that does not depend on $\mathbb{B}$. A canonical commutator would have to be a central scalar, $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$; but the trace of a commutator vanishes, so
+A bosonic mode is a pair satisfying $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. In a finite-dimensional algebra this is impossible for a reason that does not depend on $\mathbb{B}$. A canonical commutator would have to be a central scalar, $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$; but the scalar part of a commutator vanishes, so
 
 $$
-\boxed{\;0=\mathrm{Tr}\big([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]\big)=c\,\mathrm{Tr}(e_t)=2c\;}
+\boxed{\;0=2\,\mathrm{Sc}\big([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]\big)=c\,2\,\mathrm{Sc}(e_t)=2c\;}
 $$
 
-and hence $c=0$. The trace formula $\mathrm{Tr}(e_t)=2\,\mathrm{Sc}(e_t)=2$ is what makes the right-hand side nonzero, and it is the only central scalar available: the centre of $\mathbb{B}=M_2(\mathbb{C})$ is exactly the complex span of $e_t$, so there is no other candidate for a canonical commutator. The oscillator article reaches the same conclusion through the scalar part of the bracket of two Hermitian elements; the trace argument is the stronger statement, because it rules out any finite-dimensional realization of the Heisenberg pair at all.
+and hence $c=0$. The reduction $2\,\mathrm{Sc}(e_t)=2$ is what makes the right-hand side nonzero, and it is the only central scalar available: the centre of $\mathbb{B}=M_2(\mathbb{C})$ is exactly the complex span of $e_t$, so there is no other candidate for a canonical commutator. The oscillator article reaches the same conclusion through the scalar part of the bracket of two Hermitian elements; the trace argument is the stronger statement, because it rules out any finite-dimensional realization of the Heisenberg pair at all.
 
 The consequence for the framework is worth stating plainly. The Maxwell quantization's Fock space is the symmetric algebra of a module, and its creation and annihilation operators are **not** elements of $\mathbb{B}$: they are elements of the Weyl algebra of the polarization space, which is infinite-dimensional, or of a specific finite truncation of it. The framework contributes to that construction the module on which it is built and the notation in which the polarization sum is written; it contributes no ladder algebra of its own, because it has none to contribute. The indefinite metric, the subsidiary condition and the physical-subspace quotient are imported, exactly as the Maxwell article records. The bosonic case is therefore not the fermionic case with a sign changed; it is a case in which the finite-dimensional algebra has no native structure at all.
 
@@ -300,7 +300,7 @@ The capacity is one mode and no more: $m$ fermionic modes generate $M_{2^m}(\mat
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) subspaces |
 | $\mathbb{B}_{H}$ | Real-quaternion subspace |
-| $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\mathcal{H}_1$, $\mathcal{F}$ | One-particle space; Fock space |
 | $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ | Annihilation and creation operators (general) |

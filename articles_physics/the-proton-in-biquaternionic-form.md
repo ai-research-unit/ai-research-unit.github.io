@@ -226,7 +226,7 @@ The table sorts the proton's properties by the status they have in the framework
 | Property of the proton | Status in the framework | Where it comes from |
 |---|---|---|
 | Spin-$\tfrac12$ content | Represented (forced once modelled) | the algebra's single simple carrier; the left multiplications act on each value with weights $\pm\tfrac12$ |
-| Spin states, observables, Born rule | Derived | the states of $\mathbb{B}_{\Psi}$; $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
+| Spin states, observables, Born rule | Derived | the states of $\mathbb{B}_{\Psi}$; $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ |
 | Mass term is off-diagonal in the two values; real structure acts $+1/-1$ on $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ | Derived | the linear pair of the two values; $\tilde{Ξ}^{\flat}=-\tilde{Ξ}_{+}+\tilde{Ξ}_{-}$ |
 | Vector-like charge element $Ϙ=ϙ\,e_t$ for a massive field | Derived | mass selection rule $ϙ_L=ϙ_R$, from the covariance of the mass term |
 | Conserved current, an element of $\mathbb{B}_{\Phi}$ | Quoted (framework) | the sesquilinear commutator of *Product and Form Conventions*, §*The Twelve Products and Their Names*: $\tilde J_{\Phi}=i[\tilde{Ξ}^*(\tilde\nabla_\Phi\tilde{Ξ})-(\tilde\nabla_\Phi\tilde{Ξ}^*)\tilde{Ξ}]$ |
@@ -360,7 +360,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\tilde J_{\Phi}=i[\tilde{Ξ}^*(\tilde\nabla_\Phi\tilde{Ξ})-(\tilde\nabla_\Phi\tilde{Ξ}^*)\tilde{Ξ}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
 | $iT_a=\tfrac12 i e_a\in\mathbb{B}_{\Psi}$ | $(iT_a)^2=+\tfrac14e_t$, values $\pm\tfrac12$; neither is the electric charge |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Inherited informational trace reading |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Inherited informational trace reading |
 | $G_N=\sigma\exp(i\theta_{\mathrm{cen}})+\bar\sigma\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 

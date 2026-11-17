@@ -314,7 +314,7 @@ $$
 
 The cancellation is identical, not asymptotic, and no solution is lost: $f$ has unit modulus, so the substitution $\tilde\Xi\mapsto\chi = f^{-1}\tilde\Xi$ is invertible. What it costs is order, not accuracy — the second derivative in $r'_t$ is still there, and $k_m$ has moved from a constant term to a coefficient on the first derivative.
 
-Two properties of $f$ matter later. It is a central scalar, so it commutes with the quaternion units, acts on the four coefficients alike, and preserves each sector: $f\chi_{\Psi}\in\mathbb{B}_{\Psi}$ and $f\chi_{\Phi}\in\mathbb{B}_{\Phi}$. And $f^{*} = f^{-1}$, so the Hermitian norm $\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)$ is unchanged. It is therefore not multiplication by $i$, which exchanges the sectors, and not complex conjugation, which reverses the frequency.
+Two properties of $f$ matter later. It is a central scalar, so it commutes with the quaternion units, acts on the four coefficients alike, and preserves each sector: $f\chi_{\Psi}\in\mathbb{B}_{\Psi}$ and $f\chi_{\Phi}\in\mathbb{B}_{\Phi}$. And $f^{*} = f^{-1}$, so the Hermitian norm $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is unchanged. It is therefore not multiplication by $i$, which exchanges the sectors, and not complex conjugation, which reverses the frequency.
 
 The one quantity that does change is the conserved density, because the density is quadratic and carries a derivative. With $\tilde\Xi = f\chi$, $\frac{\partial}{\partial r'_t}(f\chi) = f\left(\frac{\partial\chi}{\partial r'_t} - ik_m\chi\right)$. Substituting in the definition of $\rho$, the terms carrying $\partial\chi$ reproduce $\rho[\chi]$, and the terms carrying $k_m$ combine to $-2ik_m\lvert\chi\rvert^{2}$, which the prefactor $i/(2k_m)$ turns into $+\lvert\chi\rvert^{2}$; hence
 
@@ -459,7 +459,7 @@ One exception to the obstruction is imported from the literature and kept separa
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Mass-shell condition |
 | $\tilde{J}_{\Phi} = ic\rho\,e_t + \vec j$ | Conserved four-current |
 | $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\Phi}) = 0$ | Conservation law |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the scalar pairing |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the scalar pairing |
 | $1/k_m$ | The mass length, $\hbar/(mc)$; the coefficient $k_m=mc/\hbar$ is its reciprocal |
 | $f = \exp(-i\theta_{\mathrm{rst}})$, $r'_t = c\,t'$ | Rest-mass phase; the zero-momentum solution, $\Box f = k_m^{2}f$, $\lvert f\rvert=1$, $f^{*}=f^{-1}$ |
 | $\omega_m = mc^{2}/\hbar = c\,k_m$ | Rest-energy frequency of the field |

@@ -15,7 +15,7 @@ The findings are stated in advance.
 5. **The holonomy is a rotor.** The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{u} = \exp(-\frac{1}{2}\theta_{\mathrm{blc}}\,\vec u_x)$, where $\theta_{\mathrm{blc}}$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.
 6. **The adiabatic Berry phase is the slow limit of the same holonomy.** Using the rotating-frame effective field of a circularly polarised drive, the AA phase reduces to the solid-angle formula when the drive is slow, with the sign set by the sense of the loop, and it departs from it as the drive speeds up.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
 
 The companion articles supply the pieces:
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the adiabatic connection, the curvature and the two-route check.
@@ -49,11 +49,11 @@ $$
 \gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{1}{\hbar\,c}\int_0^T\langle\tilde{Ξ}(r'_t)|\tilde H_\Psi(r'_t)|\tilde{Ξ}(r'_t)\rangle\,dr'_t .
 $$
 
-This is the **Aharonov–Anandan phase**. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the Hermitian form, read through the trace:
+This is the **Aharonov–Anandan phase**. It is well defined for any cyclic evolution, adiabatic or not; it is invariant under a rephasing of the initial state; and it depends on the curve traced by the state in projective space, not on the speed at which the curve is traversed. In the biquaternion language the two terms are both real numbers built from the Hermitian form, read through the scalar part:
 
 $$
-\langle\tilde H_\Psi\rangle = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}, \qquad
-\theta_{\mathrm{pha},\mathrm{tot}} = \arg\,\mathrm{Tr}(\tilde{Ξ}(0)^\dagger\tilde{Ξ}(T)) .
+\langle\tilde H_\Psi\rangle = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}, \qquad
+\theta_{\mathrm{pha},\mathrm{tot}} = \arg\,2\,\mathrm{Sc}(\tilde{Ξ}(0)^\dagger\tilde{Ξ}(T)) .
 $$
 
 The star in the first trace is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real; it is non-negative only when $\tilde H_\Psi\ge0$. The subtraction is the statement that the AA phase is the part of the total phase not accounted for by the energy integral.
@@ -156,10 +156,10 @@ The physical consequences are standard: the spinor must be rotated by $4\pi$ to 
 The geometric phase is invisible in the density matrix. Write a pure state as $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{1,2}(\vec u_x) = \tfrac12(e_t\pm i\vec u_x)$; the idempotent is quadratic in the spinor,
 
 $$
-\tilde\Pi = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
+\tilde\Pi = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 $$
 
-and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $\mathrm{Tr}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
+and a spinor phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$ cancels between $\tilde{Ξ}$ and $\tilde{Ξ}^{\dagger}$. So the state that the Bloch ball records is exactly the object in which the geometric phase is absent. This is the same observation the Berry article makes about the Berry connection — $2\,\mathrm{Sc}(\tilde\Pi\partial/\partial R_\mu\tilde\Pi) = 0$ identically — and it applies verbatim to the AA phase: the phase lives in the spinor, which is the lift of the Bloch vector to the double cover.
 
 ### The Rotor and Its Two Faces
 
@@ -180,10 +180,10 @@ The AA phase is the statement that the spinor phase and the geometry of the loop
 
 ### Gauge Freedom and the Pancharatnam Connection
 
-The AA phase is defined for a cyclic evolution, but the geometric phase can be extended to non-cyclic paths by the **Pancharatnam connection**: for two non-orthogonal states $|\tilde{Ξ}_{1}\rangle$, $|\tilde{Ξ}_{2}\rangle$, the relative phase is $\arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle$, and the geometric phase of a sequence is the total Pancharatnam phase minus the dynamical phases. In the algebra the Pancharatnam connection is again the Hermitian form, read through the trace,
+The AA phase is defined for a cyclic evolution, but the geometric phase can be extended to non-cyclic paths by the **Pancharatnam connection**: for two non-orthogonal states $|\tilde{Ξ}_{1}\rangle$, $|\tilde{Ξ}_{2}\rangle$, the relative phase is $\arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle$, and the geometric phase of a sequence is the total Pancharatnam phase minus the dynamical phases. In the algebra the Pancharatnam connection is again the Hermitian form, read through the scalar part,
 
 $$
-\arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle = \arg\,\mathrm{Tr}\!\left(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}\right),
+\arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle = \arg\,2\,\mathrm{Sc}\!\left(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}\right),
 $$
 
 and it is gauge-covariant: a rephasing $\tilde{Ξ}_{a}\mapsto \exp(i\theta_{\mathrm{cen}}_a)\tilde{Ξ}_{a}$ shifts the connection by a total derivative, exactly as in the Berry article. The gauge freedom of the geometric phase is the freedom to rephase the spinor at each point of the path, and the curvature is the gauge-invariant content.
@@ -231,7 +231,7 @@ The rotating field exhibits the interpolation between the adiabatic Berry phase 
 **What the algebra organises.**
 
 - **The double cover is explicit.** The rotor group is $\mathbb{B}_{H}$, the unit real quaternions, and the kernel of the spinor representation is $\{\pm e_t\}$; the $4\pi$ periodicity is the statement that $-e_t$ acts trivially on the idempotents and non-trivially on the spinor. The algebra makes the covering map manifest.
-- **The phase lives in the spinor.** The idempotent contains no phase, as the Berry article records; the Hermitian form on the spinor, read through the trace, carries the Pancharatnam connection. The geometric phase is thus a property of the lift of the Bloch vector, not of the Bloch vector.
+- **The phase lives in the spinor.** The idempotent contains no phase, as the Berry article records; the Hermitian form on the spinor, read through the scalar part, carries the Pancharatnam connection. The geometric phase is thus a property of the lift of the Bloch vector, not of the Bloch vector.
 - **The holonomy is a rotor with two faces.** The same unit quaternion produces the spatial rotation (observable in the orientation) and the spinor phase (observable in interference). The factor $\tfrac12$ relating them is the lift $\mathbb{B}_{H}\to SO(3)$.
 - **A common rotating-frame structure.** The rotating-field problem has the same effective Hamiltonian form as the Rabi problem, with the detuning replaced by $\omega_L\cos\theta_0-\omega$ and the transverse coupling by $\omega_L\sin\theta_0$. The framework makes the identity of the two problems visible.
 
@@ -259,7 +259,7 @@ $$
 
 one half the oriented solid angle of the curve, negative for the orientation given by the right-hand rule. For a latitude circle at polar angle $\theta_0$ the unsigned solid angle is $\theta_{\mathrm{sol}} = 2\pi(1-\cos\theta_0)$.
 
-The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{1}{\hbar\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t$, with all quantities expressed through the Hermitian form, read through the trace. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
+The **Aharonov–Anandan phase** is the exact, non-adiabatic version: for a cyclic evolution, $\gamma_{AA} = \theta_{\mathrm{pha},\mathrm{tot}} +\frac{1}{\hbar\,c}\int_0^T\langle\tilde H_\Psi\rangle\,dr'_t$, with all quantities expressed through the Hermitian form, read through the scalar part. For a spin prepared along $\vec u_y$ at angle $\theta_0$ from a fixed field along $\vec u_z$, the exact result is
 
 $$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\theta_{\mathrm{sol}}}{2},
@@ -295,7 +295,7 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\tilde u_{\mathrm r}(r'_t) = \exp(-\tfrac{\omega r'_t}{2\,c}\vec e_z)$ | Rotating-frame rotor for the driven field |
 | $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ | Effective spin field in the rotating frame |
 | $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$ | Generalized (Floquet) frequency |
-| $\arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle = \arg\mathrm{Tr}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2})$ | Pancharatnam connection |
+| $\arg\langle\tilde{Ξ}_{1}|\tilde{Ξ}_{2}\rangle = \arg2\,\mathrm{Sc}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2})$ | Pancharatnam connection |
 
 ## Further Reading
 

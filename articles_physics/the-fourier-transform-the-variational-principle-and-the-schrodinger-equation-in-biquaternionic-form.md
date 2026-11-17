@@ -134,7 +134,7 @@ and it holds for every anti-Hermitian root, for the same reason the action is re
 
 ## Parseval Is the Noether Charge's Transform
 
-**The charge.** The parent's phase symmetry gives the current whose temporal component is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the conserved charge is $Q_N=\int\mathrm{d}t'\,n$. The factor of two against $\rho=\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)$ is the $\mathrm{Tr}=2\,\mathrm{Sc}$ convention and is not a normalisation.
+**The charge.** The parent's phase symmetry gives the current whose temporal component is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the conserved charge is $Q_N=\int\mathrm{d}t'\,n$. The factor of two against $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention and is not a normalisation.
 
 **Its transform.** Write the field as a sum of modes, $\tilde\Xi=\sum_jc_j e^{-i\omega_jt'}\tilde X_j$ with orthonormal $\tilde X_j$ of unit Hermitian norm. Then the charge is
 

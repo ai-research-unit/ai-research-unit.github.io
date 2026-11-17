@@ -167,7 +167,7 @@ $$
 \qquad
 \tilde Q_{\mathrm{par},\vartheta}\,(i\vec e_z)\,\tilde Q_{\vartheta_{\mathrm{par}}}^{-1} = i\vec e_z .
 $$
-The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the trace pairing the effect cancels: $\mathrm{Tr}(\tilde Q_{\mathrm{par},\vartheta}\tilde{Q}\tilde Q_{\vartheta_{\mathrm{par}}}^{-1})=\mathrm{Tr}(\tilde{Q})$ by cyclicity, so no gauge-invariant observable sees the phase.
+The phase changes the ladder operators but leaves the occupation and both one-mode states invariant; it is the $\mathrm{U}(1)$ **gauge** symmetry of the mode, and its generator is the number operator. It is inner and non-central, so it is not the trivial automorphism — it acts nontrivially on the operators and trivially on the states, which is what a symmetry is. In the bilinear pairing the effect cancels: $2\,\mathrm{Sc}(\tilde Q_{\mathrm{par},\vartheta}\tilde{Q}\tilde Q_{\vartheta_{\mathrm{par}}}^{-1})=2\,\mathrm{Sc}(\tilde{Q})$ by cyclicity, so no gauge-invariant observable sees the phase.
 
 **The group of invertibles acts on the Bloch sphere.** The genuinely non-central, non-gauge unitaries of $\mathbb{B}$ form the complement of the stabilizer in $\mathrm{U}(2)$, and their conjugation action on the Hermitian sector,
 $$

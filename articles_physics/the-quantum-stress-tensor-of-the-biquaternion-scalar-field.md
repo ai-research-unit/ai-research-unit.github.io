@@ -64,7 +64,7 @@ and the letter $\Psi$ marks the sector, not a second field. The factor $i$ is th
 
 ### The scalar part is the energy density
 
-**The scalar extraction returns the energy density and nothing else.** For an element of the shape above, $\mathrm{Sc}(\tilde\Sigma_\Psi)=w_{\mathrm{fl}}$, because the three vector coefficients are not in the centre. This is the reading the trace gives: $\mathrm{Tr}(\tilde\Sigma_\Psi)=2w_{\mathrm{fl}}$, the factor two being the one that [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes and that cancels in every ratio. The energy density is therefore the first coefficient in the basis, and the flux is the rest.
+**The scalar extraction returns the energy density and nothing else.** For an element of the shape above, $\mathrm{Sc}(\tilde\Sigma_\Psi)=w_{\mathrm{fl}}$, because the three vector coefficients are not in the centre. This is the reading the trace gives: $2\,\mathrm{Sc}(\tilde\Sigma_\Psi)=2w_{\mathrm{fl}}$, the factor two being the one that [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes and that cancels in every ratio. The energy density is therefore the first coefficient in the basis, and the flux is the rest.
 
 The reading is basis-fixed. A change of basis inside $\mathbb{B}$ mixes the four coefficients, so a reader who wants the energy density must stay in the basis in which $e_t$ is the temporal unit. That is the same requirement that the frame conventions impose on every display, and the element does not escape it.
 
@@ -383,7 +383,7 @@ The quantum stress is not a thermal pressure. It does not depend on the temperat
 | $p_{\mathrm{th}}$, $p_{\mathrm{qnt}}$, $p_{\mathrm{eff}}=p_{\mathrm{th}}+p_{\mathrm{qnt}}$ | The thermal and quantum parts of the pressure and their sum, named here and defined in the equation-of-state article |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
-| $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$ | Trace reading |
+| $2\,\mathrm{Sc}(\tilde Q)$ | Trace reading |
 | $\xi$ | A real scalar component of the central field |
 | $\xi_1,\xi_2$ | Its components, $\lVert\tilde\Xi\rVert\cos\theta_{\mathrm{phs}}$ and $\lVert\tilde\Xi\rVert\sin\theta_{\mathrm{phs}}$ |
 | $T_{j\eta}$ | Spatial block of the imported tensor |

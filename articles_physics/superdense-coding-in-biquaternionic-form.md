@@ -83,7 +83,7 @@ so that the four operations produce the four distinct Bell states, one for each.
 The crucial property for decoding is that the four codewords are mutually orthogonal:
 
 $$
-\boxed{\;\mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{sp}^+}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{sp}^-}\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{Ξ^-}\bigr) = 0\;},
+\boxed{\;2\,\mathrm{Sc}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{sp}^+}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{\mathrm{sp}^-}\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_{Ξ^+}\tilde\Pi_{Ξ^-}\bigr) = 0\;},
 $$
 
 and likewise among all pairs, with the diagonal equal to one. Orthogonal states are perfectly distinguishable, so a single measurement on Bob's two qubits can identify the codeword with certainty. This is why the protocol transmits two bits and not merely one: the four codewords live in a four-dimensional space and are orthogonal there, while any four states confined to a single qubit could not be.
@@ -93,7 +93,7 @@ and likewise among all pairs, with the diagonal equal to one. Orthogonal states 
 $$
 \bigl(U\tilde\Pi U^{*}\bigr)^2 = U\tilde\Pi U^{*} U\tilde\Pi U^{*} = U\tilde\Pi^2U^\dagger = U\tilde\Pi U^{*},
 \qquad
-\mathrm{Tr}\bigl(U\tilde\Pi U^{*}\bigr) = \mathrm{Tr}(\tilde\Pi) = 1 .
+2\,\mathrm{Sc}\bigl(U\tilde\Pi U^{*}\bigr) = 2\,\mathrm{Sc}(\tilde\Pi) = 1 .
 $$
 
 Hence the image of $\tilde\Pi_{Ξ^+}$ is again a rank-one idempotent, i.e. again a pure state, and since the local $*$-unitary preserves the algebra it maps the Bell basis into itself. The four images $\vec e_\eta\otimes e_t$ acting on the resource exhaust the Bell idempotents because the conjugation action of the group $Q_8/\{\pm e_t\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$ on the four-element Bell basis is transitive: the stabilizer of any Bell idempotent in this action is trivial, so the orbit has four elements, one for each coset. This is the algebraic reason no fifth codeword is available and no third bit can be sent: the orbit of the resource under the local group has exactly four elements.
@@ -105,7 +105,7 @@ Hence the image of $\tilde\Pi_{Ξ^+}$ is again a rank-one idempotent, i.e. again
 Bob, holding both qubits, measures the commuting stabilizers $S_1$ and $S_3$. Since $\{S_1,S_3\}$ is a complete set of commuting observables with the four Bell idempotents as its joint eigenbasis, the measurement has four outcomes $\epsilon$ with probabilities
 
 $$
-p_\epsilon = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_\epsilon\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})},
+p_\epsilon = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_\epsilon\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})},
 $$
 
 where $\tilde{Ϛ}_{\Psi}$ is the received state. If Alice applied $\vec e_\eta$, then $\tilde{Ϛ}_{\Psi} = \tilde\Pi_{\epsilon(k)}$ for the corresponding sign pattern $\epsilon(k)$, and
@@ -223,7 +223,7 @@ $$
 \boxed{\;e_t \to \tilde\Pi_{Ξ^+}, \quad \vec e_x \to \tilde\Pi_{\mathrm{sp}^+}, \quad \vec e_y \to \tilde\Pi_{\mathrm{sp}^-}, \quad \vec e_z \to \tilde\Pi_{Ξ^-} ;\;}
 $$
 
-and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, whose joint eigenbasis is the Bell basis. The four codewords are mutually orthogonal, $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$, so the measurement identifies the message with certainty, and the encoding set has four elements, giving $\log_2 4 = 2$ bits. Without the shared entanglement a qubit carries at most $\log_2 2 = 1$ bit (the Holevo bound); the pair doubles the capacity, the entanglement-assisted capacity of the noiseless qubit channel being $2$ bits, and the resource is consumed in the process. The protocol is the algebraic statement that the encoding group acts regularly on the Bell idempotent basis; it is the dual of quantum teleportation.
+and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\vec e_x\otimes \vec e_x$ and $S_3 = -\vec e_z\otimes \vec e_z$, whose joint eigenbasis is the Bell basis. The four codewords are mutually orthogonal, $2\,\mathrm{Sc}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$, so the measurement identifies the message with certainty, and the encoding set has four elements, giving $\log_2 4 = 2$ bits. Without the shared entanglement a qubit carries at most $\log_2 2 = 1$ bit (the Holevo bound); the pair doubles the capacity, the entanglement-assisted capacity of the noiseless qubit channel being $2$ bits, and the resource is consumed in the process. The protocol is the algebraic statement that the encoding group acts regularly on the Bell idempotent basis; it is the dual of quantum teleportation.
 
 ## Summary of Notation
 
@@ -238,8 +238,8 @@ and the decoding is the joint measurement of the commuting stabilizers $S_1 = -\
 | $S_1 = -\vec e_x\otimes \vec e_x$, $S_3 = -\vec e_z\otimes \vec e_z$ | Stabilizer observables (decoding) |
 | $S_1\tilde\Pi_\epsilon = -\epsilon_1\tilde\Pi_\epsilon$, $S_3\tilde\Pi_\epsilon=-\epsilon_3\tilde\Pi_\epsilon$ | Joint eigenvalues |
 | $(\vec e_\eta\otimes e_t)\tilde{Ϛ}_{\Psi}(\vec e_\eta\otimes e_t)^{*}$ | Local encoding operation |
-| $\mathrm{Tr}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$ | Orthogonality of codewords |
-| $p_\epsilon = \langle\tilde{Ϛ}_{\Psi},\tilde\Pi_\epsilon\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = \operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)$ | Decoding probabilities (Born rule; trace at normalisation) |
+| $2\,\mathrm{Sc}(\tilde\Pi_\epsilon \tilde\Pi_{\epsilon_{\mathrm{alt}}}) = \delta_{\epsilon,\epsilon_{\mathrm{alt}}}$ | Orthogonality of codewords |
+| $p_\epsilon = \langle\tilde{Ϛ}_{\Psi},\tilde\Pi_\epsilon\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_\epsilon)$ | Decoding probabilities (Born rule; trace at normalisation) |
 | $1$ bit | Holevo bound for one qubit without entanglement |
 | $2$ bits | Entanglement-assisted capacity (superdense coding) |
 

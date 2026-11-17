@@ -251,7 +251,7 @@ The general lesson is the one the counting predicts: the product of two rank-$1$
 The matrix elements of a tensor operator can be extracted from traces, which is the form in which the framework's Born rule is stated. For a state idempotent $\tilde\Pi$ and an observable $\tilde H_\Psi$,
 
 $$
-\mathrm{Tr}\left(\tilde\Pi\tilde H_\Psi\right)=2\,\mathrm{Sc}\left(\tilde\Pi\tilde H_\Psi\right),
+2\,\mathrm{Sc}\left(\tilde\Pi\tilde H_\Psi\right),
 $$
 
 the trace formula of the companion articles. A matrix element $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ is the trace of $T^{(k)}_\mu$ against the matrix unit $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|$, and the reduced matrix element is therefore a trace once a normalisation is chosen. The orthogonality and completeness of the Clebsch–Gordan coefficients used in the theorem are the trace-orthogonality of the coupled idempotents of the two-spin problem, written in components.
@@ -260,7 +260,6 @@ The trace form has one practical consequence worth stating. Because the reduced 
 
 ## What Is Algebraic and What Is Imported
 
-**Algebraic.** The adjoint action as a derivation; the invariance of the scalar part and the rotation of the vector part; the identification of $i\vec e_\eta$ as a rank-$1$ tensor operator with spherical components proportional to $\tilde S_{\Psi,\pm}$; the decomposition $\mathbb{B}=\mathbb{C}e_t\oplus W$ with $W\cong V_1$; the ceiling that a single factor carries only ranks $0$ and $1$; and the trace form $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*})=2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
 
 **Imported.** The definition of an irreducible tensor operator and its equivalence to the rotation law; the Wigner–Eckart theorem and its proof; the selection rules; the reduced-matrix-element technology; the vector-model corollary; and the Clebsch–Gordan coefficients used to build rank-$2$ operators. These are standard results of the representation theory of the rotation group and are cited as such.
 
@@ -280,7 +279,6 @@ The article established the following.
 - **The theorem.** $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle_{*}=\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$, with selection rules $s_{\mathrm{fin},z}=s_{\mathrm{tot},z}+\mu$ and $|s_{\mathrm{tot}}-k|\le s_{\mathrm{fin}}\le s_{\mathrm{tot}}+k$; for $k=0$ it reduces to Schur's lemma for the trivial representation.
 - **Verification.** For the one-particle spin as a vector operator under the total spin, the ratios of matrix elements to Clebsch–Gordan coefficients are $+1/\sqrt2$, $-\sqrt3/2$ and $+1/2$ for $(s_{\mathrm{fin}},s_{\mathrm{tot}})=(1,1),(0,1),(1,0)$ in units of $\hbar$, independent of $(s_{\mathrm{tot},z},\mu,s_{\mathrm{fin},z})$ in each case; for the total spin on the triplet the reduced matrix element is $\sqrt2\,\hbar$. For the algebra's own vector operator $i\vec e_\eta$ acting on the adjoint multiplet $W$, $\mathrm{ad}_{i\vec e_\eta}a=\frac{2}{\hbar}\tilde S_{\Psi,\mathrm{adj},\eta}$ and the reduced matrix element is $2\sqrt2$ in units of $\hbar$.
 - **Examples.** Within a multiplet a vector operator is proportional to $\tilde S_{\Psi,\mathrm{tot}}$, with the constant fixed by the ratio of reduced matrix elements; coupling two vector operators by the $1\otimes1\to2$ coefficients produces a rank-$2$ tensor operator, whose $\mu=0$ member for the spin is the quadrupole $\tfrac{1}{\sqrt6}(3\tilde S_{\Psi,3}^2-\tilde S_{\Psi}^2)$, with coherent-state expectation $\tfrac{1}{\sqrt6}P_2(\cos\theta)$.
-- **Trace form.** The Born rule $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*})=2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ extracts the reduced matrix elements as traces once a normalisation is chosen, but leaves the Clebsch–Gordan coefficients on the imported side.
 
 ## Summary of Notation
 
@@ -298,7 +296,7 @@ The article established the following.
 | $\langle s_{\mathrm{fin}},s_{\mathrm{fin},z}|T^{(k)}_\mu|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ | Matrix element |
 | $\langle s_{\mathrm{fin}}\|T^{(k)}\|s_{\mathrm{tot}}\rangle$ | Reduced matrix element |
 | $\langle s_{\mathrm{tot}},s_{\mathrm{tot},z};k,\mu|s_{\mathrm{fin}},s_{\mathrm{fin},z}\rangle$ | Clebsch–Gordan coefficient (Condon–Shortley) |
-| $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Trace reading at normalisation (Born rule) |
+| $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi)=2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Scalar-part reading at normalisation (Born rule) |
 
 ## Further Reading
 

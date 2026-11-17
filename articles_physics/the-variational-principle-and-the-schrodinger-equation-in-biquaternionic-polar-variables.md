@@ -34,7 +34,7 @@ The angle is $\theta_{\mathrm{evo}}=h_t t'/\hbar$, the scalar part of the Hamilt
 
 The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, and the action principle is that of *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*; this article applies the principle to the Schrödinger equation in its polar form.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho=\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)=2r^{2}\cosh\theta_{\mathrm{rpd}}$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2r^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 **Two notational choices, made once.** First, the rotor's angular velocity is the real vector $\vec\Omega$ defined by
 
@@ -397,7 +397,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $*,\ \natural$ | Hermitian conjugation, quaternion conjugation |
-| $\mathrm{Sc},\ \mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part, trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $t'$ | The variable of the polar form |
 | $\tilde\Xi$ | The field: one element of $\mathbb{B}$ |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian, a constant element |
@@ -416,7 +416,7 @@ The parameterisation absorbs the unit conditions, so no multiplier is needed for
 | $V_{\mathrm{op}}(\vec x)$ | The scalar potential of the operator setting, as in $\hat H=-\hbar^{2}\Delta_\Phi/2m+V_{\mathrm{op}}$ |
 | $p_a$ | The momentum conjugate to the parameter $p_a$ |
 | $L$ | The polar Lagrangian |
-| $\rho=2r^{2}\cosh\theta_{\mathrm{rpd}}$ | The density, $\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)$ |
+| $\rho=2r^{2}\cosh\theta_{\mathrm{rpd}}$ | The density, $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ |
 | $R_a$ | The Euler–Lagrange residual of the parameter $p_a$ |
 | $E=i\hbar\partial_{t'}\tilde\Xi-\tilde H_\Psi\tilde\Xi$ | The equation's element; $E=0$ is the equation |
 | $J$ | The real Jacobian of the word, invertible on the invertibles |

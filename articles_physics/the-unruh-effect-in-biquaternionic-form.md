@@ -450,7 +450,7 @@ The framework supplies the algebraic home: the horizon as the zero-divisor cone,
 | $\beta=2\pi/a$ | KMS strip width in imaginary proper time |
 | $T=\frac{\hbar\,a}{2\,\pi\,c\,k_{B}}$ | Unruh temperature |
 | $W^{\wedge}(\omega)$ | Rindler-frequency transform of $W$; $W^{\wedge}(-\omega)=\exp(-2\pi\omega)W^{\wedge}(\omega)$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form (inherited) |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form (inherited) |
 
 ## Further Reading
 

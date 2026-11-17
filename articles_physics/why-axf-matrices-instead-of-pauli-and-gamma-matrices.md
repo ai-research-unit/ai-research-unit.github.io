@@ -352,7 +352,7 @@ The four unit arrays and their negatives form a group of order eight isomorphic 
 The invariants are read directly, from the array's own entries:
 
 $$
-\operatorname{Tr}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
+2\,\mathrm{Sc}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
 \det L_{\mathrm{axf}}(\tilde Q)=\bigl\langle\tilde Q\bigr\rangle_{\natural}^{2},
 $$
 
@@ -429,7 +429,7 @@ $$
 The trace and the determinant are read from the multipliers:
 
 $$
-\operatorname{Tr}L_aR_b=4\,a_tb_t,\qquad
+2\,\mathrm{Sc}L_aR_b=4\,a_tb_t,\qquad
 \det L_aR_b=\bigl\langle a\bigr\rangle_\natural^{2}\bigl\langle b\bigr\rangle_\natural^{2}.
 $$
 

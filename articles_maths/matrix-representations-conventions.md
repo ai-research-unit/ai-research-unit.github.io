@@ -950,7 +950,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 | $iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}$, $iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y}$, $iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}$, $-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ | The five basis operators of the frame, timelike, three spatial, chirality; the gammas |
 | $\iota_{\mathrm{Cl}}$ | The $\mathbb{R}$-linear comparison with the even subalgebra; $\iota_{\mathrm{Cl}}(e_\mu)=L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_t}$, $\iota_{\mathrm{Cl}}(i)=L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | The isomorphism of the element; $\mathsf{M}_2(e_t)=I_2$, $\mathsf{M}_2(\vec e_k)=-i\sigma_k$ |
-| $\operatorname{Tr}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | The trace, twice the scalar part |
+| $2\operatorname{Sc}\tilde Q=\operatorname{tr}\mathsf{M}_2(\tilde Q)$ | Twice the scalar part equals the matrix trace of the image |
 | $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | The determinant, the biquaternion norm |
 
 ## Further Reading

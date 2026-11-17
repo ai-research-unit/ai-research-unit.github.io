@@ -387,7 +387,7 @@ The article commits throughout to the agenda's central discipline: no section as
 | $-iR_{\mathrm{axf},\vec e_z}$ | The fifth basis operator of the frame: a pure right multiplication, and the source of the two parts named by the subscript |
 | $B=\mathrm{Sc}(\tilde{Ξ}^*i\,\tilde{Ξ}\,\vec e_x)$, $b=\tfrac{ϙ_L+ϙ_R}{2}e_t-\tfrac{i}{2}(ϙ_R-ϙ_L)\vec e_z$ | Chirality-odd mass bilinear; chiral charge as one right multiplication, $\tilde{Ξ}\mapsto\tilde{Ξ} b$; selection rule $ϙ_L=ϙ_R$ |
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},\ (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$; $\tilde{Ξ}^{\flat}=-\tilde{Ξ}^*$ | Linear chiral mass pair; algebra real structure $\flat$ (Majorana/Dirac reading of its pairing open) |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | **Standard-model notation, not framework objects** | |
 | $SU(3)_c$, $SU(2)_L$, $\mathrm{U}(1)_Y$ | Colour, weak-isospin and hypercharge groups — no route yet |

@@ -197,7 +197,7 @@ $$
 
 **The orbits are the projective twistors, and this is the point.** Since $\alpha$ is a function of $T$ and not of $x$, the ratio of any two twistor components is invariant, and two twistors related by a rescaling differ by nothing the geometry can see: the quotient by the group is the projective twistor space $\mathbb{PT}$. The corpus's twistor article writes the projective space as $\mathbb{PT}=\mathbb{CP}^3$, the complex lines of $\mathbb{C}^4$ — the orbit set of the full $\mathbb{C}^{\times}$ action on the four components. Here the projective structure is **derived** instead: it is the orbit set of the symmetry group that the congruence actually has, and the group is a proper subgroup of the naive one. A rescaling with a parameter that is not a twistor function is not a symmetry, and the source states this explicitly.
 
-**The potential shifts, and the field does not.** The trace of the matrix one-form $Ξ\,dZ$, which is the potential one-form $\mathcal{A}:=\operatorname{Tr}(Ξ\,dZ)$ (the source's $A$), transforms as
+**The potential shifts, and the field does not.** The trace of the matrix one-form $Ξ\,dZ$, which is the potential one-form $\mathcal{A}:=2\,\mathrm{Sc}(Ξ\,dZ)$ (the source's $A$), transforms as
 
 $$
 \mathcal{A}\mapsto\mathcal{A}+d\ln\alpha ,
@@ -368,7 +368,7 @@ The singular locus is the tangency locus: a point is singular for the field exac
 | $\Sigma$ | Generic symbol for the eikonal function: $\Sigma=G$ is the congruence's own solution, and every twistor function is one |
 | $\mathcal{D}=\partial/\partial w-G\,\partial/\partial\upsilon$ | The ray derivative; it annihilates $G$ by the pair, and with it every function of $G$ |
 | $\alpha(T)$ | Rescaling parameter; a symmetry exactly when it is a twistor function, and the group law needs it read projectively |
-| $\mathcal{A}\mapsto\mathcal{A}+d\ln\alpha$ | Shift of the potential one-form $\mathcal{A}=\operatorname{Tr}(Ξ\,dZ)$; $F=d\mathcal{A}$ invariant |
+| $\mathcal{A}\mapsto\mathcal{A}+d\ln\alpha$ | Shift of the potential one-form $\mathcal{A}=2\,\mathrm{Sc}(Ξ\,dZ)$; $F=d\mathcal{A}$ invariant |
 | $\ln G$ | Field-generating function; the source writes it $\Lambda$, the programme article writes it in full |
 | $F_{00},F_{01},F_{11}$ | Independent components of the antiself-dual field, as second derivatives of $\ln G$; the source's (64) |
 | $Ξ_{B'A}$ | The potential array of the source's (13), one primed and one unprimed index; a complex four-vector |

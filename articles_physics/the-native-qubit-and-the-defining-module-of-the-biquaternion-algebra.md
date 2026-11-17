@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The companion articles develop a formulation of quantum physics in which states and observables are elements of the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the normalised Hermitian form $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}/\langle\tilde{H}_{\Psi,1},e_t\rangle_{*}$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
+The companion articles develop a formulation of quantum physics in which states and observables are elements of the Hermitian subspace $\mathbb{B}_{\Psi}$ of the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, and in which the Born rule is the normalised Hermitian form $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}/\langle\tilde{H}_{\Psi,1},e_t\rangle_{*}$, whose doubled value is $2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$. That development presupposes a carrier for the state: a two-dimensional complex vector space on which the elements of $\mathbb{B}$ act. The purpose of this article is to say precisely what that carrier is, and why, in this framework, it is not an additional postulate.
 
 The claim to be established is that the informational unit of the framework — the **qubit** — is the **defining module** of the algebra $\mathbb{B}\cong M_2(\mathbb{C})$: the unique simple left module $S$ on which $\mathbb{B}$ acts faithfully. A complex two-dimensional space is not chosen and then equipped with operators; it is the object the algebra is a matrix algebra *of*. The state vectors are elements of $S$; the rank-one projectors on $S$ correspond exactly to the idempotents of $\mathbb{B}_{\Psi}$ that are normalised by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ (trace one in the image); and the inner product that quantum physics requires is the algebra's own Hermitian form, whose matrix reading is the trace pairing, restricted to the module.
 
@@ -32,7 +32,6 @@ $$
 \tilde{Q} = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z, \qquad Q_\mu \in \mathbb{C},
 $$
 
-and the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$. The trace is not intrinsic to the biquaternion: it is the $2\times2$ matrix reading, $\mathrm{Tr}=\mathrm{tr}\circ\mathsf{M}_2$, whereas $\mathrm{Sc}(\tilde Q)$ is defined for every biquaternion. The four conjugations of the algebra — quaternion conjugation, complex conjugation, their composition, and the identity — are fixed in *Algebra and Element Conventions*. For the present purpose only two are needed: the quaternion conjugate $\tilde{Q}^{\natural} = Q_te_t - Q_x\vec e_x-Q_y\vec e_y-Q_z\vec e_z$, and the Hermitian conjugate
 
 $$
 \tilde{Q}^{*} = \bigl(\tilde{Q}^{\natural}\bigr)^{*} = Q_t^{*}e_t - Q_x^{*}\vec e_x - Q_y^{*}\vec e_y - Q_z^{*}\vec e_z ,
@@ -130,7 +129,7 @@ It is worth separating the two uses of the word "state" that this structure prod
 For $|u\rangle_{*}\in S$ with $\langle u|u\rangle = 1$, the rank-one idempotent $|u\rangle\langle u|$ is an element of $\mathbb{B}_{\Psi}$ and satisfies
 
 $$
-\bigl(|u\rangle\langle u|\bigr)^2 = |u\rangle\langle u|, \qquad 2\bigl\langle |u\rangle\langle u|,e_t\bigr\rangle_{*} = 1, \qquad \mathrm{Tr}\bigl(|u\rangle\langle u|\bigr) = 1 .
+\bigl(|u\rangle\langle u|\bigr)^2 = |u\rangle\langle u|, \qquad 2\bigl\langle |u\rangle\langle u|,e_t\bigr\rangle_{*} = 1, \qquad \operatorname{tr}\bigl(|u\rangle\langle u|\bigr) = 1 .
 $$
 
 Conversely, every positive normalised idempotent of $\mathbb{B}$ (trace one in the image) has rank one and is the projector onto a ray of $S$. Since two unit vectors define the same projector exactly when they differ by a phase, the map
@@ -169,7 +168,7 @@ $$
 \boxed{\;\frac{\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = \langle u|H|u\rangle\;},
 $$
 
-where $H$ is the matrix image of $\tilde H_\Psi$. On $\mathbb{B}_{\Psi}$ the star is inert, so the same number is $\mathrm{Sc}(\tilde\Pi\tilde H_\Psi)/\mathrm{Sc}(\tilde\Pi)$, the plain scalar. The normalisation is $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$; the trace appears only as its $2\times2$ reading, $\operatorname{Tr}(\tilde\Pi)=1$, and then $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*}) = \langle u|H|u\rangle$. This identity is the bridge between the two descriptions: the Born rule of the algebra is the normalised Hermitian form, read on the module as the ordinary expectation value. Its derivation from the Hermitian form was given in *The Born Rule from the Hermitian Form — Derivation and Comparison*, and it requires nothing beyond the fact that the form is the scalar part of the product.
+where $H$ is the matrix image of $\tilde H_\Psi$. On $\mathbb{B}_{\Psi}$ the star is inert, so the same number is $\mathrm{Sc}(\tilde\Pi\tilde H_\Psi)/\mathrm{Sc}(\tilde\Pi)$, the plain scalar. The normalisation is $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$, that is $2\,\mathrm{Sc}(\tilde\Pi)=1$, and then $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = \langle u|H|u\rangle$. This identity is the bridge between the two descriptions: the Born rule of the algebra is the normalised Hermitian form, read on the module as the ordinary expectation value. Its derivation from the Hermitian form was given in *The Born Rule from the Hermitian Form — Derivation and Comparison*, and it requires nothing beyond the fact that the form is the scalar part of the product.
 
 ### Mixed states and the density-operator correspondence
 
@@ -220,16 +219,15 @@ $$
 p_\eta^{\pm} = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_{1,2}(\vec u_\eta)\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_\eta)^{*}\bigr) = \tfrac12\bigl(1 \pm r_\eta\bigr),
 $$
 
-the three pairs of outcome probabilities determine $\vec r$ and hence the state; the trace form $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_\eta)^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_\eta))$ is the $2\times2$ reading, with $\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=1$; the star is inert and the unstarred trace is real and non-negative. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.
+the three pairs of outcome probabilities determine $\vec r$ and hence the state; the scalar part $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde\Pi_{1,2}(\vec u_\eta))$ is real and non-negative, the star being inert on $\mathbb{B}_{\Psi}$, and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.
 
 ## What the Module Supplies and What It Does Not
 
 **What it supplies.**
 
 - **The carrier is forced, not chosen.** The algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple left module $S=\mathbb{C}^2$, so the elementary informational unit is two-dimensional over $\mathbb{C}$ and is read off the algebra.
-- **The inner product is native.** The Hilbert-space inner product on $S$ is the Hermitian form of the algebra, whose $2\times2$ reading is the trace, $\langle u|v\rangle = 2\,\mathrm{Sc}(|v\rangle\langle u|)=\mathrm{Tr}(|v\rangle\langle u|)$; it is not an independent axiom.
 - **The pure states are the module's rays.** The rank-one idempotents of $\mathbb{B}_{\Psi}$ correspond bijectively to the rays of $S$, and their matrix images are the rank-one Hermitian projectors.
-- **The Born rule is a module pairing.** The normalised Hermitian form and the module expectation value are the same operation; in the $2\times2$ image it reads $\mathrm{Tr}(\tilde\Pi\tilde H_\Psi^{*}) = \langle u|H|u\rangle$, with the trace used only to normalise the state.
+- **The Born rule is a module pairing.** The normalised Hermitian form and the module expectation value are the same operation; it is the number $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = \langle u|H|u\rangle$, with the normalisation $2\,\mathrm{Sc}(\tilde\Pi)=1$.
 - **The state geometry is the biquaternion norm's cone slice.** The Bloch ball is the normalised positive slice of $\mathbb{B}_{\Psi}$ (trace one in the image), its boundary is the zero-divisor cone of the biquaternion norm, and the rays are its extreme points.
 
 **What it does not supply.**
@@ -315,7 +313,7 @@ The module question is settled by the algebra; the composition question is not. 
 
 The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.
 
-On the module, the elements of $\mathbb{B}_{\Psi}$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the normalised Hermitian form $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})=2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$; its $2\times2$ reading is the trace formula. A general state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$ is a positive element normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the image) with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{B}_{\Psi}$ and the Bloch ball is the state slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
+On the module, the elements of $\mathbb{B}_{\Psi}$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ correspond bijectively to the rays of $S$, and are exactly the pure states; the normalised Hermitian form $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})=2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ is the Born rule and coincides with the module expectation value $\langle u|H|u\rangle$; its $2\times2$ reading is the reduction formula. A general state $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$ is a positive element normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (normalised in the image) with spectral decomposition into two rays, and the biquaternion norm $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{B}_{\Psi}$ and the Bloch ball is the state slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
 What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive. The composition can be tested, and the test is negative in a precise sense. The array of amplitudes of a two-qubit state is a $2\times2$ matrix whose hyperdeterminant $\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10}$ vanishes exactly on the product states and whose modulus, normalised, is the concurrence; the product states are the Segre quadric $\mathbb{P}^1\times\mathbb{P}^1\subset\mathbb{P}^3$, and the maximally entangled states are a copy of $\mathbb{RP}^3$. The hyperdeterminant is not the biquaternion norm of anything, the two quadratic forms on the four coefficients are not related by an automorphism of the algebra, and the rank and the determinant of $\mathsf M_2$ do not track separability at all: the matrix image of $|00\rangle$ is the identity. The carrier is native, the composition is not, and the difference is a named invariant rather than a vague reservation.
 
@@ -330,13 +328,12 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace (generators of reversible evolution) |
 | $S = \mathbb{C}^2$ | Defining (spinor) module of $\mathbb{B}$ |
 | $\rho_S$ | The defining representation of $\mathbb{B}$ on $S$ |
-| $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, the $2\times2$ reading |
 | $\tilde{Q}^{*}$ | Hermitian conjugate (anti-linear involution) |
 | $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$ | Rank-one idempotents (pure states) |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
-| $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = \langle u|H|u\rangle_{*}$ | Trace reading of the Hermitian form; the $2\times2$ reading of the Born rule |
-| $r_\eta = 2\langle\tilde{Ϛ}_{\Psi},i\vec e_\eta\rangle_{*} = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,(i\vec e_\eta)^{*})$ | Bloch components (tomography) |
+| $2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = \langle u|H|u\rangle_{*}$ | Born weight; the module expectation value |
+| $r_\eta = 2\langle\tilde{Ϛ}_{\Psi},i\vec e_\eta\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,(i\vec e_\eta)^{*})$ | Bloch components (tomography) |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 | $\mathbf c=(c_{A_1A_2})$ | Amplitude array of a two-qubit state, the $2\times2$ matrix of the four amplitudes |
 | $\mathrm{Det}(\mathbf c)=c_{00}c_{11}-c_{01}c_{10}$ | Hyperdeterminant of format $2\times2$; it vanishes exactly on the product states |

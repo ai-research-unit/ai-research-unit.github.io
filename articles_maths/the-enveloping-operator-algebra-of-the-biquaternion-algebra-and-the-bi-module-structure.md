@@ -303,7 +303,7 @@ The enveloping algebra is a **luxury of the associative unital case**. The const
 
 2. **The two-sided operators as rank-one elements.** The corpus's two-sided operators $\mathrm{Sd}_{\tilde Q_1}$ are the elementary tensors $\tilde Q_1\otimes(\tilde{Q}_1^{*})_{\mathrm{opp}}$. Does the corpus's classification of the two-sided operators (self-adjoint, $*$-unitary, and the rest) become the classification of elementary tensors by their factors, and does the enveloping algebra give the general operator a decomposition into such elementary pieces?
 
-3. **The enveloping algebra and the trace.** The trace form $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is the algebra's $\mathbb C$-bilinear pairing. Does it extend to a trace on $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$, and is the resulting trace the one the corpus's spectral article uses on the operators?
+3. **The enveloping algebra and the bilinear form.** The pairing $2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is the algebra's $\mathbb C$-bilinear form. Does it extend to a trace on $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$, and is the resulting trace the one the corpus's spectral article uses on the operators?
 
 4. **The higher enveloping algebras.** The construction iterates: $(\mathbb B^{\mathrm e})^{\mathrm e}$ is the algebra acting on the operators on $\mathbb B$. Does the iteration terminate at the scalar matrices, and is there a chain of "enveloping" algebras with a limit that the corpus's operator theory would recognise?
 

@@ -324,7 +324,7 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 | $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Abelian field-strength biquaternion, $\vec F=\sum_\eta F_\eta\vec e_\eta$ |
 | $\mathrm{div}(\vec F),\ \mathrm{curl}\,\vec F$ | Three-dimensional operators on the coefficient triple |
 | $-\tfrac12\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu\,\mathrm{Tr}(F_{\mu\nu}F_{\mu\nu})$ | Gauge-invariant Yang–Mills density (matrix trace) |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Inherited plain trace reading (distinct from the matrix trace) |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 
 ## Further Reading

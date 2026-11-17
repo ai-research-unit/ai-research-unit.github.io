@@ -90,9 +90,9 @@ $$
 which is Hermitian because $\mathcal{M}_{\mathrm{mod}}$ is positive, so it lies in $\mathbb{B}_{\Psi}$ and not in the material sector, as [Hawking Radiation in Biquaternionic Form](hawking-radiation-in-biquaternionic-form.html) records. The thermal state is the exponential of it,
 
 $$
-\omega_\beta\bigl(\,\cdot\,\bigr)=\frac{\mathrm{Tr}\bigl(e^{-\beta_H H_{\mathrm{modular}}}\,\cdot\,\bigr)}{Z},
+\omega_\beta\bigl(\,\cdot\,\bigr)=\frac{2\,\mathrm{Sc}\bigl(e^{-\beta_H H_{\mathrm{modular}}}\,\cdot\,\bigr)}{Z},
 \qquad
-Z=\mathrm{Tr}e^{-\beta_H H_{\mathrm{modular}}},
+Z=2\,\mathrm{Sc}e^{-\beta_H H_{\mathrm{modular}}},
 $$
 
 and this is the statement that the KMS condition and the Gibbs form are the same condition under the identification $\beta\mapsto\beta_H$. The corpus's [The Partition Function in Biquaternionic Form](the-partition-function-in-biquaternionic-form.html) carries the flat-space version of the same display, and [Equilibrium Partition Function in a Moving Frame](equilibrium-partition-function-in-a-moving-frame.html) adds the boost.
@@ -246,7 +246,7 @@ The modular flow supplies the parameter. From the Bisognano–Wichmann statement
 | $\sigma_s(A)=\mathcal{M}_{\mathrm{mod}}^{is}A\mathcal{M}_{\mathrm{mod}}^{-is}$ | Modular flow |
 | $s=r'_t/\beta_H$ | Modular parameter |
 | $2\pi s=\kappa_\omega r'_t$ | Rapidity carried by the modular flow |
-| $Z=\mathrm{Tr}e^{-\beta_H H_{\mathrm{modular}}}$ | Partition function of the horizon state |
+| $Z=2\,\mathrm{Sc}e^{-\beta_H H_{\mathrm{modular}}}$ | Partition function of the horizon state |
 | $a$ | Proper acceleration of a uniformly accelerated observer |
 | $r_s=2GM/c^2$ | Schwarzschild radius |
 | $G,\ M$ | Gravitational constant and mass |

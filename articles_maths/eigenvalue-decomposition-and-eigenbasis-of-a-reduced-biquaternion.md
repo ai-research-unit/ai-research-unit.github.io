@@ -65,11 +65,11 @@ The definition is the algebraic one; it agrees with the spectrum of left multipl
 
 **Characteristic polynomial.** By *Reduced Biquaternion Spectral Theory*, §*The Spectrum of an Element*, the characteristic polynomial of the left multiplication is
 $$
-p_{\breve Q}(X)=X^{2}-\operatorname{tr}(\breve Q)X+\det(\breve Q)=(X-\lambda_+)(X-\lambda_-),
+p_{\breve Q}(X)=X^{2}-\operatorname{tr}L_{\breve Q}X+\det(\breve Q)=(X-\lambda_+)(X-\lambda_-),
 $$
 with
 $$
-\operatorname{tr}(\breve Q)=\lambda_++\lambda_-=2Q_{\blacktriangle},\qquad
+\operatorname{tr}L_{\breve Q}=\lambda_++\lambda_-=2Q_{\blacktriangle},\qquad
 \det(\breve Q)=\lambda_+\lambda_-=\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}.
 $$
 The discriminant is
@@ -668,7 +668,7 @@ Read down a column for one algebra and across a row for one concept. The rows do
 | $Q_{\blacktriangle}=q_{\blacktriangle}+iq'_{\blacktriangle}$, $Q_{\blacktriangledown}=q_{\blacktriangledown}+iq'_{\blacktriangledown}$ | Complex basis coordinates |
 | $\breve Q_{\mathrm{ts}}=Q_{\blacktriangle}-jQ_{\blacktriangledown}=Q_-\Pi_++Q_+\Pi_-$ | Tessarine conjugate |
 | $\langle \breve Q\rangle_{\mathrm{ts}}=Q_{\blacktriangle}^{2}-Q_{\blacktriangledown}^{2}=\lambda_+\lambda_-$ | Reduced norm and determinant |
-| $\operatorname{tr}(\breve Q)=2Q_{\blacktriangle}=\lambda_++\lambda_-$ | Reduced trace |
+| $\operatorname{tr}L_{\breve Q}=2Q_{\blacktriangle}=\lambda_++\lambda_-$ | Reduced trace |
 | $\Pi_\pm=\tfrac12(1\pm j)$ | The two nontrivial central idempotents, the eigenprojections |
 | $Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | Idempotent coordinates; equal to $\lambda_\pm$ |
 | $\lambda_\pm=Q_\pm=Q_{\blacktriangle}\pm Q_{\blacktriangledown}$ | The values of the eigenvalues |

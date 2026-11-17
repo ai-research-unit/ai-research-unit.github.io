@@ -427,7 +427,7 @@ T=U_1U_2=e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2,\qquad \
 $$
 
 $$
-p_T(\lambda)=\lambda^{2}-(2+t)\lambda+1,\qquad t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)=-2s,\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2 .
+p_T(\lambda)=\lambda^{2}-(2+t)\lambda+1,\qquad t=2\,\mathrm{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-2s,\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2 .
 $$
 
 **So the product is described by one complex number, and the criterion is one equation.**

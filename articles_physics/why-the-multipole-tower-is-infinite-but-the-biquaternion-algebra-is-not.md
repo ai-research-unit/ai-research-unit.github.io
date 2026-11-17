@@ -252,7 +252,7 @@ A clarification of vocabulary is worth making here. The intrinsic spin content o
 
 The obstruction met here is not isolated; it is one instance of a general feature of finite-dimensional algebras, and the companion articles record others.
 
-Inside $\mathbb{B}$ the canonical commutation relation of quantum physics, $[\tilde{Q}, \tilde{P}_{\Phi}] =i\,\hbar\,e_{t}$, cannot be realized: taking the trace of both sides gives $0 = \mathrm{Tr}(i\,\hbar\,e_{t}) =2\,i\,\hbar\neq  0$, a contradiction, because the trace of a commutator vanishes. This is the trace obstruction, and it is the statement that the Heisenberg algebra has no finite-dimensional representation. The multipole obstruction is the same phenomenon in a different disguise:
+Inside $\mathbb{B}$ the canonical commutation relation of quantum physics, $[\tilde{Q}, \tilde{P}_{\Phi}] =i\,\hbar\,e_{t}$, cannot be realized: taking the trace of both sides gives $0 = 2\,\mathrm{Sc}(i\,\hbar\,e_{t}) =2\,i\,\hbar\neq  0$, a contradiction, because the scalar part of a commutator vanishes. This is the trace obstruction, and it is the statement that the Heisenberg algebra has no finite-dimensional representation. The multipole obstruction is the same phenomenon in a different disguise:
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the trace obstruction and the canonical bracket.
 
 Likewise the rotation generators themselves close inside the algebra — the spin operators are algebra elements — but the *eigenstates* of those operators, the tower of angular momentum states $|l,m\rangle$, do not fit inside the algebra; they live in the modules $D^{(l)}$, of dimensions $2l+1$ growing without bound:
@@ -280,7 +280,6 @@ The finite algebra is finite because it is the local value space; the tower is i
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$, $\vec e_\mu \vec e_\nu = -\delta_{\mu\nu}e_t+\epsilon_{\mu\nu\lambda}\vec e_\lambda$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\mathbb{B}_{C} = \{Q_te_t\}$ | Centre of $\mathbb{B}$ (the scalars) |
-| $\mathrm{Tr}(\cdot)$ | Matrix trace, $\mathrm{Tr}(e_t) = 2$ (the conventions article) |
 | $\mathbb{B}_{\Phi}, \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde{U}\in\mathbb{B}_{H}$, $\tilde{U}\tilde{U}^{\natural} = e_t$ | Rotation rotor, acting by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ |
 | $D^{(l)}$ | Irreducible rotation representation, $\dim_{\mathbb{C}} D^{(l)} = 2l+1$ (Wigner's $D$) |

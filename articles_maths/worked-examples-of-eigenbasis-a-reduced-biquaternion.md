@@ -800,7 +800,7 @@ and in particular $\breve Q^2=2\breve Q=2+2j$. There is no inverse. The two spin
 
 ### Powers, Inverses and Matrices
 
-| Case | $\breve Q^2$ | $\breve Q^{-1}$ | $\mathsf M(\breve Q)$ | $\mathrm{tr}$ | $\det$ |
+| Case | $\breve Q^2$ | $\breve Q^{-1}$ | $\mathsf M(\breve Q)$ | $\mathrm{tr}\,\mathsf M(\breve Q)$ | $\det$ |
 |---|---|---|---|---|---|
 | $1$ | $-7+22i+j(14+2i)$ | $\dfrac{83-106i+j(33+19i)}{725}$ | $\begin{pmatrix}3+4i&1-i\\1-i&3+4i\end{pmatrix}$ | $6+8i$ | $-7+26i$ |
 | $2$ | $2i$ | $\dfrac{1-i}{2}$ | $(1+i)I_2$ | $2+2i$ | $2i$ |

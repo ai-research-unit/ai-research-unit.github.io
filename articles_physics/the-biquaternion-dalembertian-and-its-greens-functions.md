@@ -105,13 +105,13 @@ whose symbol reproduces $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The companio
 
 The adjoint of the gradient is computed with the Hermitian pairing on fields,
 $$
-\langle \tilde{F}, \tilde Q\rangle = \int \mathrm{Tr}\!\left(\tilde{F}^{*} \tilde Q\right) d^4r ,
+\langle \tilde{F}, \tilde Q\rangle = \int 2\,\mathrm{Sc}\!\left(\tilde{F}^{*} \tilde Q\right) d^4r ,
 $$
 the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial R_\mu\,\tilde{F}\bigr)^\dagger = \partial/\partial R_\mu\,\tilde{F}^{*}$ for the real differential operators,
 $$
 \langle \tilde{F}, \tilde\nabla_\Phi\tilde Q\rangle
-= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial R_\mu\,\tilde Q\right) d^4r
-= -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial R_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4r .
+= \int 2\,\mathrm{Sc}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial R_\mu\,\tilde Q\right) d^4r
+= -\int 2\,\mathrm{Sc}\!\left(\bigl(\partial/\partial R_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4r .
 $$
 The algebraic identity
 $$
@@ -440,7 +440,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial/\partial R_\mu$ | Biquaternionic gradient, $\partial/\partial R_t = \partial/\partial R_t = -i\partial/\partial r'_t$ |
 | $\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial R_\mu$ | Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k_\Phi^2$ |
-| $\tilde{\nabla}^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$ |
+| $\tilde{\nabla}^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int2\,\mathrm{Sc}(\tilde{F}^{*}\tilde Q)$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_{\Phi,\tilde{\nabla}}^\flat = \tilde{G}_{\Phi,\tilde{\nabla}}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde{\nabla}} \in \mathbb{B}_{\Psi}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\rho^2 = \langle\tilde R_\Phi\rangle_{\natural} = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2$ | Biquaternion norm of the separation; Euclidean four-distance squared |

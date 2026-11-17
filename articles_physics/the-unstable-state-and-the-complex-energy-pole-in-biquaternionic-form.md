@@ -15,7 +15,7 @@ $$
 \tilde H_\Psi = h_t\,e_t + i\,\vec h_\Psi, \qquad h_t\in\mathbb{R},\quad \vec h_\Psi\in\mathbb{R}^3,
 $$
 
-and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $\mathrm{Tr}(\tilde\Pi)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$ with the state evolving by conjugation, $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\,\omega$.
+and the centre is $\mathbb{B}_{C}=\mathbb{C}e_t$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\mu$ and $\mathsf{M}_2(i\vec e_\mu)=\sigma_\mu$; a pure state is the idempotent $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\vec u$ a unit vector along the $\vec e_\mu$, and $2\,\mathrm{Sc}(\tilde\Pi)=1$. The reduction is $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The dynamics is $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$ with the state evolving by conjugation, $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$; the evolution is $*$-unitary, $\tilde Q\tilde Q^{*}=e_t$, and the scalar part $h_t$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\,\omega$.
 
 The angle is $\theta_{\mathrm{evo}}$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$: the generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.
 
@@ -28,14 +28,14 @@ The convention for the resolvent follows *The Resolvent Operator*, which writes 
 Let $\tilde\Pi_0\in\mathbb{B}_{\Psi}$ be the idempotent of the state prepared at $r'_t=0$, and let $\tilde{Ϛ}_{\Psi}(r'_t)=\tilde Q(r'_t)\tilde\Pi_0\tilde Q(r'_t)^{*}$ be its evolution. The probability that the system is found in the initial state at time $r'_t$ is the pairing of the evolved state with the initial idempotent,
 
 $$
-P(r'_t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde{Ϛ}_{\Psi}(r'_t)\bigr)
-= \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\,\tilde\Pi_0\,\tilde Q(r'_t)^{*}\bigr).
+P(r'_t) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_0\,\tilde{Ϛ}_{\Psi}(r'_t)\bigr)
+= 2\,\mathrm{Sc}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\,\tilde\Pi_0\,\tilde Q(r'_t)^{*}\bigr).
 $$
 
 Because $\tilde\Pi_0$ has rank one, $\tilde\Pi_0\tilde Q\tilde\Pi_0 = A(r'_t)\,\tilde\Pi_0$ with
 
 $$
-A(r'_t) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,\exp(-i\theta_{\mathrm{evo}})\bigr),
+A(r'_t) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_0\,\tilde Q(r'_t)\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_0\,\exp(-i\theta_{\mathrm{evo}})\bigr),
 $$
 
 and the survival probability is the squared modulus of the **survival amplitude**,
@@ -57,7 +57,7 @@ which is the norm-preservation theorem of *Unitarity from Centrality: The Biquat
 The expansion of the exponential to second order gives the exact start of the survival probability. Writing the variance of the Hamiltonian in the initial state,
 
 $$
-(\delta\tilde H_\Psi)^{2} = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde H_\Psi^{2}\bigr) - \Bigl(\mathrm{Tr}\bigl(\tilde\Pi_0\tilde H_\Psi^{*}\bigr)\Bigr)^{2} \ge 0,
+(\delta\tilde H_\Psi)^{2} = 2\,\mathrm{Sc}\bigl(\tilde\Pi_0\tilde H_\Psi^{2}\bigr) - \Bigl(2\,\mathrm{Sc}\bigl(\tilde\Pi_0\tilde H_\Psi^{*}\bigr)\Bigr)^{2} \ge 0,
 $$
 
 one has
@@ -97,7 +97,7 @@ which is the matrix form of the reflective symmetry of the resolvent in the real
 Split the Hamiltonian into a solvable part and a coupling, $\tilde H_\Psi=\tilde{H}_{\Psi,0}+\tilde V_{\Phi}$, and let $\tilde\Pi_0$ project on the state of interest with $\tilde{H}_{\Psi,0}\tilde\Pi_0=E_0\tilde\Pi_0$. Write $\tilde\Pi_\perp=e_t-\tilde\Pi_0$ for the complementary projection and $\tilde\Pi_\perp\tilde H_\Psi\tilde\Pi_\perp$ for the Hamiltonian restricted to it. The scalar Green's function of the distinguished state is the **reduced resolvent**
 
 $$
-G_{00}(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\bigr) = \mathrm{Tr}\bigl(\tilde\Pi_0\,G(z)\,\tilde\Pi_0\bigr),
+G_{00}(z) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_0\,G(z)\bigr) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_0\,G(z)\,\tilde\Pi_0\bigr),
 $$
 
 and the block identity of *The Resolvent Operator* gives it the closed form
@@ -105,8 +105,8 @@ and the block identity of *The Resolvent Operator* gives it the closed form
 $$
 G_{00}(z) = \frac{1}{z-E_0-\Sigma(z)},
 \qquad
-\Sigma(z) = \mathrm{Tr}\bigl(\tilde\Pi_0\tilde V_{\Phi}\tilde\Pi_0\bigr)
-+ \mathrm{Tr}\Bigl(\tilde\Pi_0\tilde V_{\Phi}\,\tilde\Pi_\perp\frac{1}{z-\tilde\Pi_\perp\tilde H_\Psi\tilde\Pi_\perp}\tilde\Pi_\perp\,\tilde V_{\Phi}\tilde\Pi_0\Bigr).
+\Sigma(z) = 2\,\mathrm{Sc}\bigl(\tilde\Pi_0\tilde V_{\Phi}\tilde\Pi_0\bigr)
++ 2\,\mathrm{Sc}\Bigl(\tilde\Pi_0\tilde V_{\Phi}\,\tilde\Pi_\perp\frac{1}{z-\tilde\Pi_\perp\tilde H_\Psi\tilde\Pi_\perp}\tilde\Pi_\perp\,\tilde V_{\Phi}\tilde\Pi_0\Bigr).
 $$
 
 The quantity $\Sigma(z)$ is the **self-energy**. It is a scalar function of the central variable $z$ — a complex number of the centre — and it collects the entire effect of the coupling on the distinguished state. To second order in $\tilde V_{\Phi}$, with $\lvert 0\rangle$ the state and $\lvert n\rangle$ a complete set spanning the complement, it is
@@ -337,7 +337,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 ## Summary
 
-The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$, and its survival probability is $P(r'_t)=\lvert A(r'_t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(r'_t)=1-(\delta\tilde H_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
+The unstable state is the state that is not an eigenstate of the Hamiltonian. Its survival amplitude is the scalar reduction of the evolution, $A(r'_t)=2\,\mathrm{Sc}(\tilde\Pi_0\tilde Q(r'_t))$, and its survival probability is $P(r'_t)=\lvert A(r'_t)\rvert^{2}$, unitarity bounding it by one. The exact short-time law is $P(r'_t)=1-(\delta\tilde H_\Psi)^{2}{r'_{t}}^{2}/\hbar^{2}+O({r'_{t}}^{4})$, with the variance of the Hamiltonian in the initial state as coefficient, and no pure exponential satisfies it.
 
 The coupling of the state to a continuum displaces the pole of the reduced resolvent, $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$, where the self-energy is $\Sigma(z)=\langle 0\rvert\tilde V_{\Phi}\lvert 0\rangle+\sum_{n\neq0}\lvert V_{0n}\rvert^{2}/(z-E_n)+\cdots$ to second order. Its boundary value from above is $\mathcal{E}_{\mathrm{shift}}(E)-\tfrac{i}{2}\Gamma(E)$, with the level shift $\mathcal{E}_{\mathrm{shift}}$ real and the width non-negative, $\Gamma(E)=2\pi\lvert V_0(E)\rvert^{2}\rho(E)$ at the Golden Rule. The pole is at $z_\star=E_0+\mathcal{E}_{\mathrm{shift}}-\tfrac{i}{2}\Gamma$, and it lies on the second sheet, reached by continuing across the cut that the continuum opens, with the jump $\Sigma(E+i0^{+})-\Sigma(E-i0^{+})=-i\Gamma$; the first sheet carries no complex zero, only the real eigenvalues and the cut.
 
@@ -356,9 +356,9 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; centre $\mathbb{B}_{C}=\mathbb{C}e_t$ |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hamiltonian, Hermitian, $h_t\in\mathbb{R}$, $\vec h_\Psi\in\mathbb{R}^3$ |
-| $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
+| $\tilde\Pi_0$ | Idempotent of the initial state, rank one, $2\,\mathrm{Sc}=1$ |
 | $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$ | $*$-Unitary evolution, $\tilde Q\tilde Q^{*}=e_t$ |
-| $A(r'_t)=\mathrm{Tr}(\tilde\Pi_0\tilde Q(r'_t))$ | Survival amplitude; $P(r'_t)=\lvert A(r'_t)\rvert^{2}$ |
+| $A(r'_t)=2\,\mathrm{Sc}(\tilde\Pi_0\tilde Q(r'_t))$ | Survival amplitude; $P(r'_t)=\lvert A(r'_t)\rvert^{2}$ |
 | $(\delta\tilde H_\Psi)^{2}$ | Variance of $\tilde H_\Psi$ in the initial state |
 | $G(z)=(z-\tilde H_\Psi)^{-1}$ | Green's function; $G(z)^{\dagger}=G(\bar z)$ |
 | $G_{00}(z)=[z-E_0-\Sigma(z)]^{-1}$ | Reduced resolvent of the distinguished state |
@@ -374,7 +374,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 | $H_{\mathrm{c}},H_{\mathrm{nc}},V$ | Entries of the slot block matrix; $V$ couples the two slots |
 | $\rho(E)$ | Density of continuum states |
 | $B$ | Half-width of the band |
-| $\mathrm{Tr}=2\,\mathrm{Sc}$ | Trace convention |
+| $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ | Doubled scalar part |
 
 ## Further Reading
 

@@ -140,7 +140,7 @@ $$
 \tilde{Q} = -e_t + \frac{i}{2}\vec e_x - \frac{1}{2}\vec e_y, \qquad \langle\tilde{Q}\rangle_{\natural} = 1 + \left(\frac{i}{2}\right)^2 + \left(-\frac{1}{2}\right)^2 = 1.
 $$
 
-Its scalar part is $Q_t = -1$ and its vector part has $B = 0$, so the element is non-semi-simple with the repeated eigenvalue $-1$. If $\tilde{Q} = \exp(\tilde Q_2)$ with $\tilde Q_2 \in \mathrm{B}_0$, then $R_0 = 0$, and $\tilde Q_2 = \mu e_t + \tilde\Upsilon$ with $\tilde\Upsilon$ nilpotent (§*The Nilpotent Convention* of *Special Element and Peirce Conventions*) and $e^\mu = -1$, hence $\mu \in i\pi(2\mathbb{Z}+1)$ and $\mathrm{Tr}(\tilde Q_2) = 2\mu \neq 0$, a contradiction. The same obstruction makes $\exp$ non-surjective on the real group $SL(2,\mathbb{R})$.
+Its scalar part is $Q_t = -1$ and its vector part has $B = 0$, so the element is non-semi-simple with the repeated eigenvalue $-1$. If $\tilde{Q} = \exp(\tilde Q_2)$ with $\tilde Q_2 \in \mathrm{B}_0$, then $R_0 = 0$, and $\tilde Q_2 = \mu e_t + \tilde\Upsilon$ with $\tilde\Upsilon$ nilpotent (§*The Nilpotent Convention* of *Special Element and Peirce Conventions*) and $e^\mu = -1$, hence $\mu \in i\pi(2\mathbb{Z}+1)$ and $2\operatorname{Sc}(\tilde Q_2) = 2\mu \neq 0$, a contradiction. The same obstruction makes $\exp$ non-surjective on the real group $SL(2,\mathbb{R})$.
 
 **Generation versus surjectivity.** Failure of surjectivity does not mean the exponentials fail to generate: since $\mathbb{B}^\times_1$ is connected and $\exp$ is a local diffeomorphism at $0$, the image $\exp(\mathrm{B}_0)$ contains a neighbourhood of the identity and generates the group, while remaining a proper subset. Nor does simple connectivity force surjectivity: $\mathbb{B}^\times_1$ is simply connected, yet $\exp$ is not onto. The classical criteria (connected compact, connected nilpotent, or $GL(n,\mathbb{C})$) are sufficient, not necessary.
 
@@ -240,7 +240,7 @@ $$
 \kappa_{\mathbb{C}}(X,Y)=4\operatorname{tr}(XY)-2\operatorname{tr}X\,\operatorname{tr}Y
 $$
 
-for all $X,Y$. Taking twice the real part gives the matrix formula, and the translation $\operatorname{tr}=2\operatorname{Sc}$ gives the algebra formula.
+for all $X,Y$. Taking twice the real part gives the matrix formula, and the substitution of $2\operatorname{Sc}$ for the matrix trace gives the algebra formula.
 
 **The radical is the centre.** For $\tilde X=e_t$ the right-hand side vanishes, so $\kappa(e_t,\tilde Y)=0$ for every $\tilde Y$. Conversely write $\tilde X=a e_t+\tilde U$ with $\operatorname{Sc}\tilde U=0$; then $\kappa(\tilde X,\tilde Y)=16\operatorname{Re}\operatorname{Sc}(\tilde U\tilde Y)$, and the plain form pairs the trace-free part nondegenerately with the whole algebra, so the vanishing for all $\tilde Y$ forces $\tilde U=0$. Hence
 

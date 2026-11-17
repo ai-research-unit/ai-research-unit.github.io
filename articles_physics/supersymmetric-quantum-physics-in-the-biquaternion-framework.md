@@ -72,7 +72,7 @@ Three consequences are standard and are used repeatedly below.
 **Zero modes.** A zero-energy state of $H_+$ satisfies $A\tilde{Ξ} = 0$; a zero-energy state of $H_-$ satisfies $A^\dagger\xi_{\mathrm{scl}} = 0$. If $A$ has a normalisable zero mode, the supersymmetry is **unbroken** and $\dim\ker A \neq 0$; if neither $A$ nor $A^\dagger$ has one, the supersymmetry is **broken** and the index vanishes. The Witten index
 
 $$
-\mathrm{Ind} = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_- = \dim\ker A - \dim\ker A^\dagger
+\mathrm{Ind} = 2\,\mathrm{Sc}\,(-1)^F = \dim\ker H_+ - \dim\ker H_- = \dim\ker A - \dim\ker A^\dagger
 $$
 
 is an integer when both kernels are finite, and it is invariant under continuous deformations of the parameters, which is why it is a topological (index) quantity. The kernels need not be finite — the Dirac oscillator below has infinitely many zero modes on one value read by the test and none on the other — and the difference is then still the invariant count, though no longer a finite integer, so the invariance argument is applied to a family with finite kernels and the infinite case is read as a limit. A vanishing index does not by itself mean that the supersymmetry is broken: it means that the two kernels balance, which is compatible with both.
@@ -328,7 +328,7 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | — | The pair carries no letter: it is $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$ and $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$, each line composed with its partner being $\Box$ |
 | $a^{*}$, $a^{\natural}$, $\bar a$ | Conjugate for the adjoint ($i^{*}=-i$, $\vec e_\eta^{*}=-\vec e_\eta$), order-reversing conjugate, coefficient conjugate |
 | $(-1)^F$ | Grading operator |
-| $\mathrm{Ind} = \mathrm{Tr}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |
+| $\mathrm{Ind} = 2\,\mathrm{Sc}\,(-1)^F = \dim\ker H_+ - \dim\ker H_-$ | Witten index |
 | $\tilde{Q} = \vec e_y\partial/\partial R_x + iW\vec e_x$ | Reduced supercharge (1+1 dimensions) |
 | $\tilde{Q}^2 = (-\partial^2/\partial R_x^2+W^2)e_t - \frac{dW}{dx}(i\vec e_z)$ | Its square (central part plus $\mathbb{B}_{\Psi}$ remainder) |
 | $A_\omega$, $A_\omega^\dagger$ | Oscillator pair (written $\mathcal{Q}_\pm$ in the companion article) |

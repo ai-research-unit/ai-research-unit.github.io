@@ -28,7 +28,6 @@ The angles $\theta_{\mathrm{wyl},Q}$ and $\theta_{\mathrm{wyl},P}$ are the Weyl 
 
 **Why a continuum is required.** The translation identity $\exp(iaP)Q\exp(-iaP)=Q+a\,I$ holds for every real $a$, so the spectrum of $Q$ is invariant under every real translation and is therefore all of $\mathbb{R}$. Position eigenstates $|x\rangle$ satisfy $Q|x\rangle=x|x\rangle$ and $\langle x|x_2\rangle=\delta(x-x_2)$, and no such $|x\rangle$ is a vector of the Hilbert space: the integral $\int|x\rangle\langle x|\,dx=I$ is an integral over an uncountable set.
 
-**Why the carrier must be infinite-dimensional.** The trace of a commutator of finite-dimensional matrices vanishes by cyclicity, while $\mathrm{Tr}(i\,\hbar\,I)=i\,\hbar\dim\mathcal{H}\neq0$. So no finite-dimensional matrices satisfy the relation, at any dimension. The Stone–von Neumann theorem adds the classification: the irreducible representation with a fixed central character is unique up to $*$-unitary equivalence, and it is the Schrödinger representation on $L^2(\mathbb{R})$.
 
 The two facts are one fact. A relation that requires an uncountable set of mutually orthogonal position states requires an infinite-dimensional carrier; and a relation whose scalar right-hand side has a non-vanishing trace cannot live in a finite-dimensional one. **The trace obstruction and the continuum requirement are the same statement**, written once as linear algebra and once as analysis.
 
@@ -55,7 +54,7 @@ In the framework the obstruction is immediate and is worth stating in its own no
 $$
 \boxed{\;\mathrm{Sc}\bigl([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]\bigr)=0\;}.
 $$
-The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Phi}$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
+The commutator is anti-Hermitian and lies in the vector part of $\mathbb{B}_{\Phi}$, whereas $\lambda\,i\,e_t$ is purely scalar imaginary with $2\,\mathrm{Sc}(\lambda\,i\,e_t)=2\lambda i\neq0$. The two cannot be equal.
 
 **The general statement.** The Hermitian hypothesis is unnecessary. For **any** $\tilde Q_1,\tilde{Q}_2\in\mathbb{B}$ one has $\mathrm{Sc}(\tilde Q_1\tilde{Q}_2)=\mathrm{Sc}(\tilde{Q}_2\tilde Q_1)$ by the cyclicity of the trace, a matrix identity that holds without any restriction on the arguments. What the Hermitian hypothesis supplies is the *reading*: the commutator of two observables is anti-Hermitian, hence a generator of a one-parameter $*$-unitary group rather than an observable. What forbids the relation is not the anti-Hermitian character — $\lambda\,i\,e_t$ is anti-Hermitian too — but the **absence of a scalar part**, equivalently the vanishing of the trace.
 
@@ -186,7 +185,7 @@ The claim must not be overread, and the following are not asserted.
 
 | Item | Status |
 |---|---|
-| $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$ with $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}])=0$ while $\mathrm{Tr}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
+| $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$ with $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$, $\lambda\neq0$ central | Impossible; $\mathrm{Sc}([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}])=0$ while $2\,\mathrm{Sc}(\lambda\,i\,e_t)=2\lambda i\neq0$ |
 | Trace of a commutator, arbitrary arguments | Vanishes; $\mathrm{Sc}(\tilde Q_2\tilde{Q}_1)=\mathrm{Sc}(\tilde{Q}_1\tilde Q_2)$ |
 | The same in any finite-dimensional module | Vanishes; the trace there is cyclic too |
 | A bounded pair satisfying the relation, at any dimension | Impossible; $[Q,P^n]=i\,\hbar\,nP^{n-1}$ forces $2\lVert Q\rVert\lVert P\rVert\ge \hbar\,n$ for every $n$ |
@@ -224,7 +223,6 @@ The claim must not be overread, and the following are not asserted.
 
 ## Summary
 
-The biquaternion framework and the canonical commutation relation are **independent**, in the precise sense that the framework's internal algebra is unchanged whether the relation holds or not, while the framework decides an exact fact about the relation itself. The relation is the algebraic fingerprint of a continuum of configurations: the translation identity forces the spectrum of position to be all of $\mathbb{R}$, and the trace argument forbids any finite-dimensional carrier, since $\mathrm{Tr}([\tilde{Q}_1,\tilde{Q}_2])=0$ while $\mathrm{Tr}(i\,\hbar\,e_{t})=2\,i\,\hbar\neq0$. In the framework the obstruction is immediate: for $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}_{\Psi}$ the scalar parts of the two products coincide, so the commutator has no scalar part, while $i\,\hbar\,e_{t}$ is purely scalar imaginary. The Hermitian hypothesis is unnecessary for the trace identity, and the same argument applies in every finite-dimensional module. A second and independent argument forbids the pair in any dimension: $[Q,P^n]=i\,\hbar\,nP^{n-1}$ forces $2\lVert Q\rVert\lVert P\rVert\ge \hbar\,n$ for every $n$, so one of the two operators is unbounded. The trace obstruction is about dimension, the norm obstruction is about boundedness, and neither implies the other. The observable algebra $\mathbb{B}_{\Psi}$ is the Hermitian part of $M_2(\mathbb{C})$, the observable space of one two-state system, and it carries **no position operator**; the framework is therefore in the position of the spin algebra, which carries the rotation bracket $[\tilde{S}_{\Psi,i},\tilde{S}_{\Psi,j}]=i\,\hbar\sum_\eta\epsilon_{ij\eta}\tilde{S}_{\Psi,\eta}$ and not the canonical one, and no one describes spin as failing the former. That bracket is not idle: it implies the Robertson–Schrödinger inequality, which on an eigenstate of $\tilde S_{\Psi,3}$ reduces to $s\ge\lvert m\rvert$ and is an equality at $s=\tfrac12$. The relation itself is not uniform on a field carrier: the position–momentum bracket is blind to every shift of the momentum by a function of position, the momentum–momentum bracket is the field strength, and the framework can name the second as a central element of $\mathbb{B}$ while generating neither. Position and momentum, where the framework uses them, enter as the **argument of the field** and as the **dual variable of the transform**, not as operators of the algebra; the transform presents the carrier as an assembly of copies of the finite algebra — invertibly for every root and isometrically for the degenerate ones — so the carrier can be infinite-dimensional while the algebra is not. A finite carrier does carry a clock-and-shift pair with a root-of-unity phase in place of $i\,\hbar$ — the $\mathbb{Z}/N$ Weyl relation — but that is a different relation and the framework is no more dependent on it than on the canonical one. Historically, the canonical relation has never been the ground of a rejection: finite internal algebras were always accepted, and the quaternionic programme's decisive objection was **composition**, the tensor-product obstruction, which is a different entry. The framework's independence from the relation is therefore neither a failure nor a silence: it is a boundary of scope, drawn by the algebra, and the empirical question of whether the continuum is fundamental lies outside it, because the framework supplies no scale with which to ask.
 
 ## Summary of Notation
 
@@ -237,7 +235,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ |
-| $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde{Q})$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
 | $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ | General element of $\mathbb{B}_{\Psi}$; $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ |
 | $[Q,P]=i\,\hbar\,I$ | Canonical commutation relation |
 | $\pi_\eta=p_\eta-ϙA_\eta$ | Mechanical momentum |

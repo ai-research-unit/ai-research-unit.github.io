@@ -8,7 +8,6 @@ Each exercise in the series is solved twice: first in the standard way, then in 
 
 The first exercise treated the Born rule and the measurement of spin along an arbitrary direction. This second exercise treats **dynamics**: the time evolution of a spin state under a time-independent Hamiltonian.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.
 
 ## The Exercise
 
@@ -144,7 +143,6 @@ $$
 = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$
 
-whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, with $\tilde{S}_{\Psi,x} =\frac{\hbar}{2}\,i \vec e_x$. Computing the product
 
 $$
 \tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x} =\frac{\hbar}{4}\left(i \vec e_x + \cos(\omega_L r'_t/c)\,e_t - \sin(\omega_L r'_t/c)\,\vec e_z\right),
@@ -191,7 +189,7 @@ $$
 \langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \frac{\langle\tilde{Ϛ}_{\Psi}(r'_t),\tilde{S}_{\Psi,x}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi}(r'_t),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$
 
-whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.
+whose scalar-part reading is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.
 
 **6. The result agrees with the standard formulation.** This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: **the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$, with the evolution given by rotor conjugation by a unit-norm biquaternion.**
 
@@ -236,7 +234,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $\theta_{\mathrm{spp}}:=\theta_{\mathrm{pwt}}/2$ | The spinor half-angle |
 | $\theta_{\mathrm{evo}}:=-\theta_{\mathrm{pwt}}$ | The evolution angle, negative of the precession angle |
 | $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde{U}(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde{U}(r'_t)^{*}$ | Evolved state |
-| $\langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$ | Expectation value |
+| $\langle\tilde{S}_{\Psi,x}\rangle(r'_t) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$ | Expectation value |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |

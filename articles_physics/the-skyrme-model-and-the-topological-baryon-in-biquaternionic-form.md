@@ -75,7 +75,7 @@ $$
 (again with the overall sign convention that makes the kinetic energy positive), and the four-derivative **Skyrme term** is the unique term at this order that is at most quadratic in time derivatives and stabilises a soliton,
 
 $$
-\mathcal{L}_4 = \frac{1}{32e^2}\,\mathrm{Tr}\!\left(\left[j_\mu, j_\nu\right]\left[j_\mu, j_\nu\right]\right)
+\mathcal{L}_4 = \frac{1}{32e^2}\,2\,\mathrm{Sc}\!\left(\left[j_\mu, j_\nu\right]\left[j_\mu, j_\nu\right]\right)
 = \frac{1}{16e^2}\,\mathrm{Sc}\!\left(\left[j_\mu, j_\nu\right]\left[j_\mu, j_\nu\right]\right),
 $$
 
@@ -285,7 +285,7 @@ The framework supplies the target manifold, the flat current, the commutator str
 | $F(0) = \pi$, $F(\infty) = 0$ | Boundary conditions of the unit-charge skyrmion |
 | Wess–Zumino–Witten term | Topological term fixing the soliton's statistics (imported) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
+| $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ | Reduction convention |
 
 ## Further Reading
 

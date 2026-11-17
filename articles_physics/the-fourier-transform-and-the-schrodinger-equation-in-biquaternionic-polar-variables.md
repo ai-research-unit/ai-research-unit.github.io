@@ -20,7 +20,7 @@ The algebra, the units, the caret table and the two conjugations are those of *A
 
 **The word.** $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r}$, with $r>0$ the scale, $\theta_{\mathrm{pha}}$ the phase, $\tilde U_{\Psi,\mathrm b}$ the Hermitian boost of unit quaternionic norm, and $\tilde u_{\mathrm r}$ the real unit rotor. It is a bijection with the eight real components off the cone $\langle\tilde\Xi\rangle_\natural=0$.
 
-**The two norms.** $\langle\tilde\Xi\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ reads the scale and the phase; $\rho=\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)=2r^{2}\cosh\theta_{\mathrm{rpd}}$ reads the scale and the rapidity. Neither reads the rotor, and neither reads an axis.
+**The two norms.** $\langle\tilde\Xi\rangle_\natural=r^{2}e^{2i\theta_{\mathrm{pha}}}$ reads the scale and the phase; $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2r^{2}\cosh\theta_{\mathrm{rpd}}$ reads the scale and the rapidity. Neither reads the rotor, and neither reads an axis.
 
 **The symbol.** $\sigma(\omega)=\hbar\omega\,e_t-\tilde H_\Psi$ with $h_t$ and $\vec h_\Psi$ real, and its two invariants $\operatorname{tr}\sigma=4(\hbar\omega-h_t)$ and $\det\sigma=\langle\sigma\rangle_\natural^{2}$.
 

@@ -124,7 +124,7 @@ A numerical check over the products confirms closure: every product of the basis
 
 **The vacuum in the subalgebra.** The vacuum idempotent is $\tilde\Pi_+=e_t-\tilde\Pi_-$, which lies in $\mathcal{A}_{\mathrm{tr}}$ because $\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$. So the one-mode GNS vacuum of the previous articles is an element of the same four-dimensional real algebra, and the vacuum expectation value is an $\mathbb{R}$-linear functional on it:
 $$
-\langle \tilde{Q}\rangle_t = \mathrm{Tr}\big(\tilde\Pi_+\tilde{Q}\big) = 2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde{Q}\big),
+\langle \tilde{Q}\rangle_t = 2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde{Q}\big) = 2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde{Q}\big),
 \qquad \tilde{Q}\in\mathcal{A}_{\mathrm{tr}} .
 $$
 
@@ -150,7 +150,7 @@ Because the generators are nilpotent, the one-mode theorem can be stated and pro
 $$
 \vec\Upsilon_x\vec\Upsilon_y = e_t - \vec\Upsilon_y\vec\Upsilon_x = e_t - \tilde\Pi_- = \tilde\Pi_+,
 $$
-whose vacuum expectation is $\mathrm{Tr}(\tilde\Pi_+^2)=\mathrm{Tr}(\tilde\Pi_+)=1$. Normal ordering moves the creation operator to the left and produces $:\vec\Upsilon_x\vec\Upsilon_y:\,=-\vec\Upsilon_y\vec\Upsilon_x=-\tilde\Pi_-$. Adding back the contraction gives $-\tilde\Pi_-+e_t=e_t-\tilde\Pi_-$, which is the left-hand side.
+whose vacuum expectation is $2\,\mathrm{Sc}(\tilde\Pi_+^2)=2\,\mathrm{Sc}(\tilde\Pi_+)=1$. Normal ordering moves the creation operator to the left and produces $:\vec\Upsilon_x\vec\Upsilon_y:\,=-\vec\Upsilon_y\vec\Upsilon_x=-\tilde\Pi_-$. Adding back the contraction gives $-\tilde\Pi_-+e_t=e_t-\tilde\Pi_-$, which is the left-hand side.
 
 **Why the higher identities are exact.** No induction is needed. The identities $\vec\Upsilon_x^2=0$ and $(\vec\Upsilon_y)^2=0$ say that any word in the mode operators that contains two adjacent equal letters vanishes; and any word in which the letters alternate can be reduced by the anticommutator to a word with a repeated adjacent pair plus a contraction times a shorter word:
 $$
@@ -168,7 +168,7 @@ $$
 \qquad
 \langle \vec\Upsilon_x\vec\Upsilon_x\rangle_t = \langle \vec\Upsilon_y\vec\Upsilon_y\rangle_t = 0\;}.
 $$
-The complete table of the four-point function is the following, in which each entry was computed twice: directly as $\mathrm{Tr}(\tilde\Pi_+\tilde{Q}_1\tilde{Q}_2\tilde{Q}_3\tilde{Q}_4)$ using explicit $2\times2$ complex matrices, and by the pairing sum. All entries agree to machine precision.
+The complete table of the four-point function is the following, in which each entry was computed twice: directly as $2\,\mathrm{Sc}(\tilde\Pi_+\tilde{Q}_1\tilde{Q}_2\tilde{Q}_3\tilde{Q}_4)$ using explicit $2\times2$ complex matrices, and by the pairing sum. All entries agree to machine precision.
 
 | $\langle\,\cdot\,\rangle_t$ | direct | pairing sum |
 |---|---|---|

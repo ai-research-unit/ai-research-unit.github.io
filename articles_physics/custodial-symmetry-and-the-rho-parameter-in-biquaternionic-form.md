@@ -59,7 +59,7 @@ $$
 The point of the arrangement is that the left action is the full $SU(2)_L$ and the right action is an $SU(2)_R$ whose $T_3^R$ is the hypercharge. With this normalisation the kinetic term is the framework's biquaternion norm of the derivative,
 
 $$
--\,\frac12\,\mathrm{Tr}\!\left(\partial/\partial R_\mu H^\dagger\,\partial/\partial R_\mu H\right)
+-\,\mathrm{Sc}\!\left(\partial/\partial R_\mu H^\dagger\,\partial/\partial R_\mu H\right)
 = -\,\partial/\partial R_\mu\xi^{0*}\partial/\partial R_\mu{\xi_{\mathrm{scl}}}^0 - \partial/\partial R_\mu\xi^{+*}\partial/\partial R_\mu\xi^{+*} ,
 $$
 
@@ -70,7 +70,7 @@ canonical for the two complex components, and if the hypercharge coupling is ign
 $$
 \langle H\rangle = \frac{v}{\sqrt2}\,I_2 ,
 \qquad
-\frac12\,\mathrm{Tr}\!\left(\langle H\rangle^\dagger\langle H\rangle\right) = \frac{v^2}{2} .
+\mathrm{Sc}\!\left(\langle H\rangle^\dagger\langle H\rangle\right) = \frac{v^2}{2} .
 $$
 
 This is the crucial fact: a matrix proportional to the identity is invariant under the **diagonal** action $H\mapsto g\,H\,g^{*}$ for every $g\in SU(2)$, so the diagonal subgroup
@@ -294,7 +294,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $SU(2)_V = \{g_L = g_R\}$ | Custodial (diagonal) subgroup |
 | $\langle\tilde Q\rangle = \frac{v}{\sqrt2}e_t$ | Central vacuum; custodial invariant |
 | $\tilde{Ξ} = \xi_{\mathrm{scl}}\,e_t\in\mathbb{B}_{C}$ | Framework's actual scalar; a singlet |
-| $-\frac12\mathrm{Tr}(\partial/\partial R_\mu H^\dagger\partial/\partial R_\mu H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative) |
+| $-\mathrm{Sc}(\partial/\partial R_\mu H^\dagger\partial/\partial R_\mu H)$ | Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative) |
 | $M_W^2 = g^2v^2/4$ | Charged weak-boson mass (standard) |
 | $M_Z^2 = (g^2+g_{\mathrm Y}^2)v^2/4$ | Neutral weak-boson mass (standard) |
 | $\cos^2\theta_W = g^2/(g^2+g_{\mathrm Y}^2)$ | Weak mixing angle (standard) |
@@ -304,7 +304,7 @@ with the diagonal $g_L = g_R$ the unbroken $SU(2)_V$ and the central vacuum $\la
 | $T, T_3, Y$ | Isospin, third component, hypercharge (standard; not framework objects) |
 | $a$ | weak-isospin index, written low; the sum over it is explicit |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
+| $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ | Reduction convention |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

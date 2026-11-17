@@ -174,7 +174,7 @@ and the rest solutions are the same elements with the reading moved. The two par
 **Solution.** The Dirac pairing is the Hermitian one twisted by the timelike unit,
 
 $$
-\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr),
+\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr),
 $$
 
 the pairing of the parent, with the trace of *Norm and Unitary Conventions*. The twist is the time direction of the frame, and it is what makes the pairing a Lorentz scalar; the twist exchanges the two values, so the pairing couples the two parts crossed, $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_R$ and $\tilde{Ξ}_{R}$ with $\tilde{Ξ}_L$, and the two diagonal terms vanish in the trace, so only the crossed terms remain. The single algebraic input of the section is the unit-vector identity
@@ -208,11 +208,11 @@ and opposite helicities are orthogonal for the same reason, $\langle\tilde w_+,\
 **The Hermitian products.** The untwisted product is the positive one and does not cancel:
 
 $$
-\mathrm{Tr}\bigl(\tilde w_\pm^{*}\tilde w_\pm\bigr)=(E\mp\lvert\vec p\rvert)+(E\pm\lvert\vec p\rvert)=2E,\qquad
-\mathrm{Tr}\bigl(\tilde v_\pm^{*}\tilde v_\pm\bigr)=2E .
+2\,\mathrm{Sc}\bigl(\tilde w_\pm^{*}\tilde w_\pm\bigr)=(E\mp\lvert\vec p\rvert)+(E\pm\lvert\vec p\rvert)=2E,\qquad
+2\,\mathrm{Sc}\bigl(\tilde v_\pm^{*}\tilde v_\pm\bigr)=2E .
 $$
 
-The bilinear is a Lorentz scalar and its value $2m$ is the covariant normalisation; it is not the probability density, which is the positive quantity $\mathrm{Tr}(\tilde w^{*}\tilde w)=2E$. As a numerical check, for $m=1$ and $\lvert\vec p\rvert=0.6$, hence $E=1.166190$, direct evaluation gives $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2.0000$, $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2.0000$, $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and $\mathrm{Tr}(\tilde w^{*}\tilde w)=\mathrm{Tr}(\tilde v^{*}\tilde v)=2.3324=2E$.
+The bilinear is a Lorentz scalar and its value $2m$ is the covariant normalisation; it is not the probability density, which is the positive quantity $2\,\mathrm{Sc}(\tilde w^{*}\tilde w)=2E$. As a numerical check, for $m=1$ and $\lvert\vec p\rvert=0.6$, hence $E=1.166190$, direct evaluation gives $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2.0000$, $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2.0000$, $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and $2\,\mathrm{Sc}(\tilde w^{*}\tilde w)=2\,\mathrm{Sc}(\tilde v^{*}\tilde v)=2.3324=2E$.
 
 ## Problem 3: The spin sums
 
@@ -412,7 +412,7 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $\tilde P_{\Phi}=i p_{t}^{\prime}e_t+\vec p$ | Momentum element of the plane wave, $p_{t}^{\prime}=E/c$ |
 | $-i\hbar\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=-i\tilde P_{\Phi}$ | The same wave read by the gradient; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=\frac{p^{2}}{\hbar^{2}}$ |
 | $i\tilde P_{\Phi}\,\tilde{Ξ}_{R}=m\tilde{Ξ}_{L}$ and $i\tilde P_{\Phi}^{\natural}\tilde{Ξ}_{L}=m\tilde{Ξ}_{R}$ | The pair: the gradient and the mass, momentum space |
-| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the timelike unit |
+| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the timelike unit |
 | $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ | Change of the reading, $\vec e_z$ to $\vec e_x$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Mass-shell condition |
 | $p^2=E^2/c^2-\vec p^{\,2}$ | Interval of the four-momentum |

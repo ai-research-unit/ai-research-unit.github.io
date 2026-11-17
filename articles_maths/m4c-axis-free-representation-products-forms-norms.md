@@ -1,0 +1,428 @@
+# __$M_4(\mathbb{C})$ Axis-Free Representation : Products, Forms and Norms__
+
+## Introduction
+
+**The subject.** The matrix expression, in the axis-free frame, of every quantity of the algebra that involves two elements: the product, the symmetric and the antisymmetric part of a product, the four forms, the four norms, the trace and the determinant.
+
+**Why two elements.** The three companion articles read one element at a time. *$M_4(\mathbb{C})$ Axis-Free Representation* builds the left and the right matrices of $\tilde Q$, and reads the trace, the determinant, the four norms and the six subspaces of the single matrix $L_{\mathrm{axf}}(\tilde Q)$. *$M_4(\mathbb{C})$ Pauli Representation* and *$M_2(\mathbb{C})$ Pauli Representation* do the same in the Peirce frame and at the element size. None of them writes a word in two matrices. This article writes such words, and that is its whole content: what an operation on two elements becomes as an operation on their two matrices.
+
+**The order of the article.** The two elements and their three companion matrices come first, since every word below is written in them (§*The Two Elements and Their Three Companion Matrices*). The product follows (§*The Product*), then the split of a product into a symmetric and an antisymmetric part, which is the place where the bilinear and the sesquilinear families part company (§*The Symmetric and the Antisymmetric Part*). The twelve products are collected in one table with their matrix words and their traces (§*The Twelve Products*). The four forms, the trace and the determinant follow (§*The Four Forms*, §*The Trace*, §*The Determinant*), then the four norms and the defect of the plain one (§*The Four Norms*). The bookkeeping of the constants closes the mathematical part (§*The Factors*), and what this frame alone gives is stated last (§*What the Axis-Free Frame Gives*).
+
+**The notation.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$; the central scalar imaginary is $i$. Two elements are written
+$$
+\tilde Q_a=Q_{at}e_t+\vec Q_a,\qquad \vec Q_a=Q_{ax}\vec e_x+Q_{ay}\vec e_y+Q_{az}\vec e_z,
+$$
+with $a=1,2$ and complex coefficients, and
+$$
+B_a^2=Q_{ax}^2+Q_{ay}^2+Q_{az}^2,\qquad \langle\tilde Q_a\rangle_{\natural}=Q_{at}^2+B_a^2 .
+$$
+The scalar part is $\mathrm{Sc}$, the complex bilinear products of the vector parts are $(\vec Q_1,\vec Q_2)$ and $\vec Q_1\times\vec Q_2$, and the three conjugations are ${}^{\natural}$ (quaternion conjugation), the overbar (coefficient conjugation) and ${}^{*}$ (Hermitian conjugation), as in *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*.
+
+**The result in one line.** In this frame the four forms are the four quarter-traces $\tfrac14\operatorname{Tr}(L_1L_2)$, $\tfrac14\operatorname{Tr}(L_1^{\mathsf T}L_2)$, $\tfrac14\operatorname{Tr}(L_1L_2^{\dagger})$ and $\tfrac14\operatorname{Tr}(L_1^{\mathsf T}L_2^{\dagger})$; the symmetric part of the plain product is the anticommutator and the antisymmetric part is the commutator, which is traceless; and the symmetric part of the quaternionic product is the quaternionic form times the identity, so that $L_1^{\mathsf T}L_2+L_2^{\mathsf T}L_1$ is a scalar matrix.
+
+**Boundaries.** The frame, the two families and the switch are *$M_4(\mathbb{C})$ Axis-Free Representation*; this article takes the matrices from there and never rebuilds them. The general theory of the change of frame is *Families of Matrix Representations*. The four general products and the twelve products are *The Four General Products and Their Relations over the Biquaternion Algebra* and *Symmetric and Antisymmetric Decomposition of the Four General Products*. The four forms and the four norms, on the algebra and without matrices, are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*. The same content in the Peirce frame is *$M_4(\mathbb{C})$ Pauli Representation : Products, Forms and Norms*, and at the element size it is *$M_2(\mathbb{C})$ Pauli Representation : Products, Forms and Norms*.
+
+## The Two Elements and Their Three Companion Matrices
+
+**The two matrices.** In the axis-free frame $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ the left and the right matrices of an element are
+$$
+L_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[\tilde Qe_\nu\bigr]_\mu,\qquad
+R_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=\bigl[e_\nu\tilde Q\bigr]_\mu,
+$$
+as in §*The Left Family* and §*The Right Family* of *$M_4(\mathbb{C})$ Axis-Free Representation*. Write
+$$
+L_1:=L_{\mathrm{axf}}(\tilde Q_1),\qquad L_2:=L_{\mathrm{axf}}(\tilde Q_2),\qquad R_1:=R_{\mathrm{axf}}(\tilde Q_1),\qquad R_2:=R_{\mathrm{axf}}(\tilde Q_2).
+$$
+
+**The three conjugations act on the matrices.** Three words below need the matrix of a conjugated element. They are not new matrices, and in this frame each is a word in $L_1$:
+$$
+L_{\mathrm{axf}}(\tilde Q_1^{\natural})=L_1^{\mathsf T},\qquad
+L_{\mathrm{axf}}(\bar{\tilde Q}_1)=\overline{L_1},\qquad
+L_{\mathrm{axf}}(\tilde Q_1^{*})=L_1^{\dagger}.
+$$
+The transpose identity is the theorem of §*The Left Family* of *$M_4(\mathbb{C})$ Axis-Free Representation*, where it is proved entry by entry from the multiplication table: the entry $[L_1]_{\mu\nu}$ is the coefficient of $e_\mu$ in $\tilde Q_1e_\nu$, and the identity says that the coefficient of $e_\nu$ in $\tilde Q_1e_\mu$ equals the coefficient of $e_\mu$ in $\tilde Q_1^{\natural}e_\nu$, which is the symmetry $\mathrm{Sc}(e_\mu^{\natural}\tilde Q_1e_\nu)=\mathrm{Sc}(e_\nu^{\natural}\tilde Q_1^{\natural}e_\mu)$ of the coefficient functional. The conjugation identity holds because every entry of $L_1$ is $0$, $+1$ or $-1$ times one coefficient $Q_{1\mu}$, so conjugating the four coefficients conjugates the sixteen entries. The dagger identity is the two others: $L_1^{\dagger}=\overline{L_1^{\mathsf T}}=L_{\mathrm{axf}}(\bar{\tilde Q}_1^{\natural})=L_{\mathrm{axf}}(\tilde Q_1^{*})$.
+
+**The notation for the companions.** Write, for $a=1,2$,
+$$
+L_a^{c}:=L_{\mathrm{axf}}(\bar{\tilde Q}_a),\qquad
+L_a^{\natural}:=L_{\mathrm{axf}}(\tilde Q_a^{\natural})=L_a^{\mathsf T},\qquad
+L_a^{*}:=L_{\mathrm{axf}}(\tilde Q_a^{*})=L_a^{\dagger}.
+$$
+The superscript $c$ is a name, not an exponent, and it records that the entrywise conjugate of a matrix is the matrix of the coefficient-conjugate element. This is a property of the frame and not of the algebra. In a frame whose change matrix is not real the first two identities fail: the Peirce frame of *$M_4(\mathbb{C})$ Pauli Representation* keeps the third, because it is orthogonal for the Hermitian form, and pays for the other two with the congruence $\mathrm I_2\otimes\sigma_2$.
+
+**What the three identities buy.** Every operation of the corpus is a polynomial in the two elements and in their conjugates. Under $L_{\mathrm{axf}}$ it becomes the same polynomial in $L_1$, $L_2$ and the three companion words. The twelve products of §*The Twelve Products*, the four forms and the four norms are all read this way, and no matrix outside the algebra generated by $L_1$, $L_2$, $L_1^{\mathsf T}$, $L_2^{\mathsf T}$ and their conjugates ever appears.
+
+**The right family is not needed for the words.** A word in the products of $\tilde Q_1$ and $\tilde Q_2$ involves the left factor only, since $L$ is multiplicative. The right family enters at one place, the mixed trace of §*The Trace*, and there it gives a different number. The switch between the families is $R_a=DL_a^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, so every statement about $R$ can be read from the statements about $L$.
+
+## The Product
+
+**The word of a product is the product of the words.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+L_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=L_1L_2,\qquad
+R_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)=R_2R_1 .
+$$
+The first identity is the multiplicativity of the left family, which is the associativity of the algebra read on one side: both sides have $\nu$-th column $[(\tilde Q_1\tilde Q_2)e_\nu]=[\tilde Q_1(\tilde Q_2e_\nu)]$. The second is the same computation on the other side, with the order of the factors reversed because $\tilde Q_2\tilde Q_1$ acts first.
+
+**The words of the powers and of the inverse.** For every integer $n$,
+$$
+L_{\mathrm{axf}}(\tilde Q^n)=L^n,\qquad R_{\mathrm{axf}}(\tilde Q^n)=R^n,
+$$
+and for invertible $\tilde Q$,
+$$
+L_{\mathrm{axf}}(\tilde Q^{-1})=L^{-1},\qquad R_{\mathrm{axf}}(\tilde Q^{-1})=R^{-1}.
+$$
+The powers are not reversed, since they involve one element only. The inverse exists exactly when $\langle\tilde Q\rangle_{\natural}\neq0$, by §*The Determinant* of the companion article, and then $L^{-1}=L^{\mathsf T}/\langle\tilde Q\rangle_{\natural}$.
+
+**The bilinearity.** The map $(\tilde Q_1,\tilde Q_2)\mapsto L_{\mathrm{axf}}(\tilde Q_1\tilde Q_2)$ is $\mathbb{C}$-bilinear in the two matrices, because $L$ is $\mathbb{C}$-linear and the product of matrices is bilinear. Every bilinear word in $L_1$ and $L_2$ that lies in $\mathbb{B}_L$ is therefore the matrix of a bilinear operation of the algebra, and the two monomials $L_1L_2$ and $L_2L_1$ are the two extreme cases: the first is the plain product, and the second is the product with the factors exchanged.
+
+**The two sides commute.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+L_1R_2=R_2L_1 .
+$$
+The identity is the associativity of the algebra read on the two sides, and it is the statement that $\mathbb{B}_L$ and $\mathbb{B}_R$ are mutual commutants. It is a statement about four matrices and not about two, and it has no counterpart at the element size.
+
+## The Symmetric and the Antisymmetric Part
+
+**The exchange is the whole difficulty.** A product is split by an exchange of its two arguments, and the exchange that keeps the class of the product differs in the two families. The split is not a new operation; it is the diagonalisation of one involution, the exchange, on the space spanned by a product and its exchanged copy. The two definitions are stated first, then the four words, then what the words make visible.
+
+### The Two Exchanges
+
+**The bilinear exchange.** The general plain bilinear product $\tilde Q_1\tilde Q_2$ and the general quaternionic bilinear product $\tilde Q_1^{\natural}\tilde Q_2$ have two $\mathbb{C}$-linear slots, and the exchange is the interchange of the two arguments,
+$$
+f^{\mathrm{s}}(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_1,\tilde Q_2)+f(\tilde Q_2,\tilde Q_1)\bigr),\qquad
+f^{\mathrm{a}}(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_1,\tilde Q_2)-f(\tilde Q_2,\tilde Q_1)\bigr).
+$$
+
+**The sesquilinear exchange.** The general plain sesquilinear product $\tilde Q_1\tilde Q_2^{*}$ and the general quaternionic sesquilinear product $\tilde Q_1^{\natural}\tilde Q_2^{*}$ have one linear and one conjugate-linear slot. The interchange alone returns $\tilde Q_2\tilde Q_1^{*}$, which is a product of the opposite class, so the exchange is the interchange followed by the coefficientwise conjugation of the value,
+$$
+f^{\mathrm{s}}(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_1,\tilde Q_2)+\overline{f(\tilde Q_2,\tilde Q_1)}\bigr),\qquad
+f^{\mathrm{a}}(\tilde Q_1,\tilde Q_2)=\tfrac12\bigl(f(\tilde Q_1,\tilde Q_2)-\overline{f(\tilde Q_2,\tilde Q_1)}\bigr).
+$$
+
+**The conjugated value, written as a product.** The coefficient conjugation is an automorphism of the real algebra, so
+$$
+\overline{\tilde Q_2\tilde Q_1^{*}}=\bar{\tilde Q}_2\,\tilde Q_1^{\natural},\qquad
+\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}}=\bar{\tilde Q}_2^{\natural}\,\tilde Q_1^{\natural},
+$$
+the first because $\overline{\tilde Q_1^{*}}=\tilde Q_1^{\natural}$ and the second by the same step applied to $\tilde Q_2^{\natural}$. The two identities are what turn the sesquilinear exchange into a product, and they are the reason the sesquilinear words below carry the companion matrices $L^{c}$ and $L^{\natural}$ of §*The Two Elements and Their Three Companion Matrices*.
+
+### The Four Splits
+
+**The plain bilinear split.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+L_{\mathrm{axf}}(\tilde Q_1\bullet\tilde Q_2)=\tfrac12\bigl(L_1L_2+L_2L_1\bigr),\qquad
+L_{\mathrm{axf}}(\tilde Q_1\wedge\tilde Q_2)=\tfrac12\bigl(L_1L_2-L_2L_1\bigr).
+$$
+The symmetric part is the anticommutator, the antisymmetric part is the commutator, and the two add up to $L_1L_2$. Both are read from the multiplicativity of $L$ alone, since $L$ is linear.
+
+**The plain antisymmetric part is a cross product.** By expansion in the scalar and the vector parts, with $s_a=Q_{at}$,
+$$
+\tilde Q_1\tilde Q_2=(s_1s_2-(\vec Q_1,\vec Q_2))+(s_1\vec Q_2+s_2\vec Q_1+\vec Q_1\times\vec Q_2),
+$$
+and the exchanged product differs from it by the sign of the cross product alone, so
+$$
+\tilde Q_1\bullet\tilde Q_2=(s_1s_2-(\vec Q_1,\vec Q_2))+(s_1\vec Q_2+s_2\vec Q_1),\qquad
+\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2 .
+$$
+The antisymmetric part is a pure vector, never a scalar. Its matrix is therefore traceless, since the image of the vector subspace is the traceless part, and its square has a sign: $(\vec Q_1\times\vec Q_2)^2=-(\vec Q_1\times\vec Q_2,\vec Q_1\times\vec Q_2)e_t$.
+
+**The quaternionic bilinear split.** The same two steps with the first slot read through ${}^{\natural}$, that is with $\vec Q_1$ replaced by $-\vec Q_1$:
+$$
+L_{\mathrm{axf}}(\tilde Q_1\bullet_{\natural}\tilde Q_2)=\tfrac12\bigl(L_1^{\mathsf T}L_2+L_2^{\mathsf T}L_1\bigr),\qquad
+L_{\mathrm{axf}}(\tilde Q_1\wedge_{\natural}\tilde Q_2)=\tfrac12\bigl(L_1^{\mathsf T}L_2-L_2^{\mathsf T}L_1\bigr).
+$$
+The symmetric part collapses to a scalar matrix,
+$$
+\tfrac12\bigl(L_1^{\mathsf T}L_2+L_2^{\mathsf T}L_1\bigr)=N(\tilde Q_1,\tilde Q_2)\,\mathrm I_4,
+\qquad N(\tilde Q_1,\tilde Q_2)=Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2).
+$$
+The identity is the quaternionic norm form on the algebra read in the frame: in components, $(\tilde Q_1^{\natural}\tilde Q_2+\tilde Q_2^{\natural}\tilde Q_1)/2=N(\tilde Q_1,\tilde Q_2)e_t$, because the two vector parts enter with opposite signs and cancel, while the two scalar parts add. On the matrix side, $\tfrac12(L_1^{\mathsf T}L_2+L_2^{\mathsf T}L_1)$ is the matrix of $N(\tilde Q_1,\tilde Q_2)e_t$, which is $N(\tilde Q_1,\tilde Q_2)\mathrm I_4$. The antisymmetric part is traceless like every commutator.
+
+**The plain sesquilinear split.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+L_{\mathrm{axf}}(\tilde Q_1\bullet_*\tilde Q_2)=\tfrac12\bigl(L_1L_2^{\dagger}+L_2^{c}L_1^{\mathsf T}\bigr),\qquad
+L_{\mathrm{axf}}(\tilde Q_1\wedge_*\tilde Q_2)=\tfrac12\bigl(L_1L_2^{\dagger}-L_2^{c}L_1^{\mathsf T}\bigr).
+$$
+The two words are the two terms of the exchange of §*The Two Exchanges*: the first is $L_1L_2^{\dagger}=L_{\mathrm{axf}}(\tilde Q_1\tilde Q_2^{*})$, and the second is $L_2^{c}L_1^{\mathsf T}=L_{\mathrm{axf}}(\bar{\tilde Q}_2\tilde Q_1^{\natural})=L_{\mathrm{axf}}(\overline{\tilde Q_2\tilde Q_1^{*}})$. The transpose is the conjugation and the barrier is the coefficient conjugate, so the second term is a word in $L_2$ conjugated entry by entry.
+
+**The quaternionic sesquilinear split.** The same two steps with both slots of the first product read through their conjugations:
+$$
+L_{\mathrm{axf}}(\tilde Q_1\bullet_{\natural*}\tilde Q_2)=\tfrac12\bigl(L_1^{\mathsf T}L_2^{\dagger}+(L_2^{c})^{\mathsf T}L_1^{\mathsf T}\bigr),\qquad
+L_{\mathrm{axf}}(\tilde Q_1\wedge_{\natural*}\tilde Q_2)=\tfrac12\bigl(L_1^{\mathsf T}L_2^{\dagger}-(L_2^{c})^{\mathsf T}L_1^{\mathsf T}\bigr).
+$$
+The two terms are $L_{\mathrm{axf}}(\tilde Q_1^{\natural}\tilde Q_2^{*})$ and $L_{\mathrm{axf}}(\overline{\tilde Q_2^{\natural}\tilde Q_1^{*}})$, and the second needs the transpose of the conjugate word because $\overline{\tilde Q_2^{\natural}}=\bar{\tilde Q}_2^{\natural}$.
+
+**The equal-argument case of the two families.** At $\tilde Q_1=\tilde Q_2=\tilde Q$ the bilinear antisymmetric part vanishes, since $f^{\mathrm{a}}(\tilde Q,\tilde Q)=-f^{\mathrm{a}}(\tilde Q,\tilde Q)$, and the square is the symmetric part alone. For the plain product this is the identity $\tfrac12[L,L]=0$, trivially true of any matrix and of no content. At the same arguments the sesquilinear antisymmetric part does not vanish, and its value is
+$$
+f^{\mathrm{a}}(\tilde Q,\tilde Q)=\tfrac12\bigl(\tilde Q\tilde Q^{*}-\overline{\tilde Q\tilde Q^{*}}\bigr),
+$$
+which is the coefficientwise imaginary part of the square and is nonzero as soon as the square of $\tilde Q$ is not fixed by the coefficient conjugation. Its scalar part is zero, because $\mathrm{Sc}$ is invariant under the interchange of the two factors; its matrix is therefore traceless too, and the whole of its content sits in the vector part.
+
+**The trace splits cleanly and the words do not.** For all twelve products of §*The Twelve Products*, the antisymmetric part is traceless and the symmetric part carries the whole trace:
+$$
+\operatorname{Tr}L_{\mathrm{axf}}(f^{\mathrm{a}}(\tilde Q_1,\tilde Q_2))=0,\qquad
+\operatorname{Tr}L_{\mathrm{axf}}(f^{\mathrm{s}}(\tilde Q_1,\tilde Q_2))=\operatorname{Tr}L_{\mathrm{axf}}(f(\tilde Q_1,\tilde Q_2)).
+$$
+The reason is one of two lines of linear algebra, one to each family. In the bilinear family the antisymmetric word is a commutator, and the trace of a commutator is zero. In the sesquilinear family the two terms of the half-difference have equal trace for the conjugate symmetry of the Hermitian form: $\operatorname{Tr}(L_2^{c}L_1^{\mathsf T})=4\operatorname{Sc}(\bar{\tilde Q}_2\tilde Q_1^{\natural})=4\overline{H(\tilde Q_2,\tilde Q_1)}=4H(\tilde Q_1,\tilde Q_2)=\operatorname{Tr}(L_1L_2^{\dagger})$, using $\overline{H(\tilde Q_2,\tilde Q_1)}=H(\tilde Q_1,\tilde Q_2)$. The identities are therefore properties of the trace and of the conjugate symmetry, and not of the frame. They are the reason the trace of a product is read on the symmetric part alone in §*The Trace*.
+
+## The Twelve Products
+
+**The construction of the table.** The four general products give four symmetric parts and four antisymmetric parts, twelve products in all. Each row of the table is one product, its matrix word in the frame, and the trace of that word. The trace column uses $\operatorname{Tr}\mathrm I_4=4$ and the four forms of §*The Four Forms*; the entries are the content of §*The Symmetric and the Antisymmetric Part* collected once.
+
+| Product | Matrix word | Trace |
+|---|---|---|
+| $\tilde Q_1\tilde Q_2$ | $L_1L_2$ | $4P(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1^{\natural}\tilde Q_2$ | $L_1^{\mathsf T}L_2$ | $4N(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1\tilde Q_2^{*}$ | $L_1L_2^{\dagger}$ | $4H(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $L_1^{\mathsf T}L_2^{\dagger}$ | $4\mathrm{Kr}(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1\bullet\tilde Q_2$ | $\tfrac12(L_1L_2+L_2L_1)$ | $4P(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | $\tfrac12(L_1^{\mathsf T}L_2+L_2^{\mathsf T}L_1)=N\mathrm I_4$ | $4N(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1\bullet_*\tilde Q_2$ | $\tfrac12(L_1L_2^{\dagger}+L_2^{c}L_1^{\mathsf T})$ | $4H(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | $\tfrac12(L_1^{\mathsf T}L_2^{\dagger}+(L_2^{c})^{\mathsf T}L_1^{\mathsf T})$ | $4\mathrm{Kr}(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1\wedge\tilde Q_2$ | $\tfrac12(L_1L_2-L_2L_1)$ | $0$ |
+| $\tilde Q_1\wedge_{\natural}\tilde Q_2$ | $\tfrac12(L_1^{\mathsf T}L_2-L_2^{\mathsf T}L_1)$ | $0$ |
+| $\tilde Q_1\wedge_*\tilde Q_2$ | $\tfrac12(L_1L_2^{\dagger}-L_2^{c}L_1^{\mathsf T})$ | $0$ |
+| $\tilde Q_1\wedge_{\natural*}\tilde Q_2$ | $\tfrac12(L_1^{\mathsf T}L_2^{\dagger}-(L_2^{c})^{\mathsf T}L_1^{\mathsf T})$ | $0$ |
+
+**What the table says.** The four upper rows are the four forms, up to the factor $4$; the four symmetric rows repeat them, and the four antisymmetric rows are trace-free. The trace is therefore blind to half the twelve products. The words themselves are not blind, and the antisymmetric rows are where the frame earns its place: each of the four words is a commutator-like difference, and in this frame each of the four is written without a matrix other than $L_1$, $L_2$ and their three companion words.
+
+**The middle column repeats one trick.** Every antisymmetric word is the half-difference of the word of the product and the word of the exchanged product, and the exchanged product is a product of the same class in the bilinear family and a conjugated product in the sesquilinear one. The frame's contribution is that the conjugation of a matrix is its entrywise conjugate, so the four half-differences are four half-differences of literal matrix words.
+
+**The one entry that is not a difference.** The second row of the symmetric block is the only word of the twelve that is a scalar matrix. Its trace, $4N$, is then the trace of $N\mathrm I_4$, and the identity $L_1^{\mathsf T}L_2+L_2^{\mathsf T}L_1=2N\mathrm I_4$ is stronger than the trace identity $\operatorname{Tr}(L_1^{\mathsf T}L_2)=4N$: it says that the *whole* matrix, not only its trace, is the form. No other row has this property, and §*The Four Norms* shows what the collapse buys for a single element.
+
+## The Four Forms
+
+**Each form is one trace word.** The four forms are the scalar parts of the four general products, and the scalar part of an element is a quarter of the trace of its matrix:
+$$
+\operatorname{Sc}\tilde X=\tfrac14\operatorname{Tr}L_{\mathrm{axf}}(\tilde X).
+$$
+Applying the identity to the four products, and using §*The Product* and the three companion identities, gives the four words at once:
+$$
+P(\tilde Q_1,\tilde Q_2)=\tfrac14\operatorname{Tr}(L_1L_2),\qquad
+N(\tilde Q_1,\tilde Q_2)=\tfrac14\operatorname{Tr}(L_1^{\mathsf T}L_2),
+$$
+$$
+H(\tilde Q_1,\tilde Q_2)=\tfrac14\operatorname{Tr}(L_1L_2^{\dagger}),\qquad
+\mathrm{Kr}(\tilde Q_1,\tilde Q_2)=\tfrac14\operatorname{Tr}(L_1^{\mathsf T}L_2^{\dagger}).
+$$
+The four letters and the four names are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*: the plain form $P$, the quaternionic form $N$, the Hermitian form $H$ and the Krein form $\mathrm{Kr}$.
+
+**The two bilinear rows are polynomial and the two sesquilinear rows are not.** The first two words use $L$ and its transpose only. The last two use the dagger, which is the conjugate transpose, so they are $\mathbb{R}$-linear in each entry rather than $\mathbb{C}$-linear. This is the matrix form of the difference between the two families: a bilinear form is a polynomial in the coordinates, and a sesquilinear form needs a conjugation. The split is visible in the words and nowhere else, and it is the reason the four rows of the table of §*The Twelve Products* fall into two pairs.
+
+**The Gram matrix of each word.** The Gram matrix of a form in a frame is the array of its values on the frame vectors, and in the axis-free frame it is the array of the four words evaluated on the four matrices of the units:
+$$
+[P]_{\mu\nu}=\tfrac14\operatorname{Tr}(L_{e_\mu}L_{e_\nu})=\varepsilon_\mu\delta_{\mu\nu},\qquad
+[N]_{\mu\nu}=\tfrac14\operatorname{Tr}(L_{e_\mu}^{\mathsf T}L_{e_\nu})=\delta_{\mu\nu},
+$$
+$$
+[H]_{\mu\nu}=\tfrac14\operatorname{Tr}(L_{e_\mu}L_{e_\nu}^{\dagger})=\delta_{\mu\nu},\qquad
+[\mathrm{Kr}]_{\mu\nu}=\tfrac14\operatorname{Tr}(L_{e_\mu}^{\mathsf T}L_{e_\nu}^{\dagger})=\varepsilon_\mu\delta_{\mu\nu},
+$$
+with $\varepsilon_t=1$ and $\varepsilon_x=\varepsilon_y=\varepsilon_z=-1$. The two diagonal arrays are the sign matrix $\mathrm E$ and the identity, which are the Gram matrices of the companion article; the computation here is a check on the words, not a new statement, and it holds because the matrices of the units are signed permutations with integer entries.
+
+**The polarisation, in the words.** The form is the polarisation of its norm, and on the matrix side the polarisation of the quadratic word is the bilinear word:
+$$
+\tfrac14\operatorname{Tr}(L_1L_2)=\tfrac12\Bigl(\tfrac14\operatorname{Tr}\bigl(L_{\mathrm{axf}}(\tilde Q_1+\tilde Q_2)^2\bigr)-\tfrac14\operatorname{Tr}(L_1^2)-\tfrac14\operatorname{Tr}(L_2^2)\Bigr),
+$$
+and the same with $L_1^{\mathsf T}$, $L_2^{\dagger}$ and their two companions in the other three rows. The identity is the bilinearity of the trace and of $L$; it is the matrix form of the polarisation formula of the companion article, and it says that the four forms and the four norms of §*The Four Norms* are the same four words.
+
+**The form sees the symmetric part.** For each of the four products,
+$$
+\operatorname{Sc}f(\tilde Q_1,\tilde Q_2)=\operatorname{Sc}f^{\mathrm{s}}(\tilde Q_1,\tilde Q_2),\qquad
+\operatorname{Sc}f^{\mathrm{a}}(\tilde Q_1,\tilde Q_2)=0,
+$$
+which is the trace statement of §*The Symmetric and the Antisymmetric Part* divided by four. The four forms are therefore forms on the symmetrised products, and the antisymmetric half of the twelve products carries no form at all. This is the reading of §*Why the Other Eight Operations Add No New Form* of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, done in the frame.
+
+## The Trace
+
+**The trace of one matrix.** For every $\tilde Q$,
+$$
+\operatorname{Tr}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad \operatorname{Tr}R_{\mathrm{axf}}(\tilde Q)=4Q_t,
+$$
+the sum of four diagonal entries each equal to $Q_t$. The trace is additive, $\mathbb{C}$-linear, and not multiplicative.
+
+**The trace of a word of two.** The four traces of the four products are the four forms:
+$$
+\operatorname{Tr}(L_1L_2)=4P,\qquad \operatorname{Tr}(L_1^{\mathsf T}L_2)=4N,\qquad
+\operatorname{Tr}(L_1L_2^{\dagger})=4H,\qquad \operatorname{Tr}(L_1^{\mathsf T}L_2^{\dagger})=4\mathrm{Kr}.
+$$
+Each is the trace of the matrix of a product, read through $\operatorname{Sc}\tilde X=\tfrac14\operatorname{Tr}L(\tilde X)$; the four identities are the four forms of §*The Four Forms* multiplied by four.
+
+**The trace of a product is not the product of the traces.** The two quantities
+$$
+\operatorname{Tr}(L_1L_2)=4\bigl(Q_{1t}Q_{2t}-(\vec Q_1,\vec Q_2)\bigr),\qquad
+\operatorname{Tr}(L_1)\operatorname{Tr}(L_2)=16Q_{1t}Q_{2t}
+$$
+differ by $4\bigl(3Q_{1t}Q_{2t}+(\vec Q_1,\vec Q_2)\bigr)$, which vanishes only on the pair of elements satisfying $(\vec Q_1,\vec Q_2)=-3Q_{1t}Q_{2t}$. The identity is the one substitution $P=\operatorname{Sc}$ in the first formula and $\operatorname{Tr}L=4Q_t$ in the second. Trace and product therefore do not commute, and no choice of frame repairs this: the trace of the identity is $4$ and not $1$.
+
+**The mixed trace sees the scalar parts alone.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+\operatorname{Tr}(L_1R_2)=4Q_{1t}Q_{2t}.
+$$
+The identity follows from the switch $R_2=DL_2^{\mathsf T}D$ of §*The Two Elements and Their Three Companion Matrices*, which turns the trace into $\sum_{\mu\nu}d_\mu d_\nu[L_1]_{\mu\nu}[L_2]_{\mu\nu}$ with $d=(1,-1,-1,-1)$: the four scalar entries add up to $4Q_{1t}Q_{2t}$, the six products of two vector entries add $2(\vec Q_1,\vec Q_2)$, and the twelve mixed entries subtract the same $2(\vec Q_1,\vec Q_2)$. It is the only statement of this article that needs both families, and it is the one that fails to compress at the element size: at the $2\times2$ size the product $A_1A_2^{\mathsf T}$ has trace $2\mathrm{Sc}(\tilde Q_1\varrho(\tilde Q_2))$ for the reflection $\varrho$ of §*The Product* of *$M_2(\mathbb{C})$ Pauli Representation*, which is not $2Q_{1t}Q_{2t}$.
+
+**What the trace cannot see.** The trace of a matrix sees neither the antisymmetric part of a product nor the traceless part of an element. The first blindness is the vanishing of the four antisymmetric rows of the table of §*The Twelve Products*; the second is the statement $\operatorname{Tr}L=4Q_t$ of §*The Trace* of the companion article, which reads the scalar part only. A statement about an antisymmetric part is therefore never a statement about a trace, and the four forms of §*The Four Forms* carry no trace of them.
+
+## The Determinant
+
+**The determinant of one matrix.** For every $\tilde Q$,
+$$
+\det L_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^2=N(\tilde Q)^2,
+$$
+the square of the quaternionic norm, because the matrix is two equal copies of the $2\times2$ image and the $2\times2$ determinant is $N(\tilde Q)$. The characteristic polynomial is $\bigl((\lambda-Q_t)^2+B^2\bigr)^2$, with eigenvalues $Q_t\pm iB$ twice each.
+
+**The determinant of a product is the product of the determinants.** For all $\tilde Q_1,\tilde Q_2$,
+$$
+\det(L_1L_2)=\det L_1\det L_2,\qquad\text{that is}\qquad N(\tilde Q_1\tilde Q_2)^2=N(\tilde Q_1)^2N(\tilde Q_2)^2 .
+$$
+The identity is the multiplicativity of the determinant of matrices, and the reading on the right is the multiplicativity of the quaternionic norm, which is the one multiplicative algebraic norm of the four. Since the $4\times4$ determinant is a square, the identity at this size reads $N^2=(N_1N_2)^2$ and determines the product of the norms only up to sign. The multiplicative law itself is proved on the algebra, and the $2\times2$ article reads it as a determinant with no square.
+
+**The other three rows of the table.** The same rule applied to the three other products gives
+$$
+\det(L_1^{\mathsf T}L_2)=\det L_1\det L_2=N(\tilde Q_1)^2N(\tilde Q_2)^2,\qquad
+\det(L_1L_2^{\dagger})=N(\tilde Q_1)^2\overline{N(\tilde Q_2)^2},
+$$
+$$
+\det(L_1^{\mathsf T}L_2^{\dagger})=N(\tilde Q_1)^2\overline{N(\tilde Q_2)^2},
+$$
+using $\det M^{\mathsf T}=\det M$ and $\det M^{\dagger}=\overline{\det M}$. The first is the determinant of the quaternionic product read again, and the last two pair the determinant with its conjugate, so the sesquilinear rows are conjugate-multiplicative and not multiplicative. This is the determinant's version of the split between the bilinear and the sesquilinear words of §*The Four Forms*.
+
+**The determinant is the only quadratic word that factors.** Of the four quadratic words of the four norms,
+$$
+\tfrac14\operatorname{Tr}(L^2),\qquad \tfrac14\operatorname{Tr}(L^{\mathsf T}L),\qquad \tfrac14\operatorname{Tr}(L^{\dagger}L),\qquad \tfrac14\operatorname{Tr}(L^{\mathsf T}L^{\dagger}),
+$$
+only the second is the square root of a determinant, $\tfrac14\operatorname{Tr}(L^{\mathsf T}L)=N$ with $\det L=N^2$, and only $\det L$ itself factors across a product. The plain word is not multiplicative, and §*The Four Norms* gives its defect in closed form. The contrast is the whole content of the table of §*The Four Norms*: the determinant is a word of degree four in the entries which factorises, and the quarter-trace of the square is a word of degree two which does not.
+
+**The rank.** When one of the two factors is invertible, the rank of $L_1L_2$ is the rank of the other; it drops exactly when the product is a zero divisor, that is when $N(\tilde Q_1\tilde Q_2)=0$. The possible values are $0$, $2$ and $4$, never $1$ or $3$, because every regular matrix is two equal copies of a $2\times2$ block. The commutator and the four antisymmetric words are traceless and their ranks are unconstrained; nothing in this article uses them.
+
+## The Four Norms
+
+**The four quarter-traces.** The four norms are the four forms at two equal arguments, and their matrix words are the four words of §*The Four Forms* at the same matrix:
+$$
+P(\tilde Q)=\tfrac14\operatorname{Tr}(L^2),\qquad N(\tilde Q)=\tfrac14\operatorname{Tr}(L^{\mathsf T}L),\qquad
+H(\tilde Q)=\tfrac14\operatorname{Tr}(L^{\dagger}L),\qquad \mathrm{Kr}(\tilde Q)=\tfrac14\operatorname{Tr}(L^{\mathsf T}L^{\dagger}).
+$$
+The quarter is the dimension of the carrier, and §*The Factors* accounts for it. The four letters, the four coordinate expressions and the four signatures are those of *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the words are new here.
+
+**The quaternionic norm is an eigenvalue.** The second word is not merely a trace:
+$$
+L^{\mathsf T}L=N(\tilde Q)\,\mathrm I_4 .
+$$
+The identity follows from the transpose rule $L^{\mathsf T}=L(\tilde Q^{\natural})$ and the multiplicativity: $L^{\mathsf T}L=L(\tilde Q^{\natural}\tilde Q)=L(N(\tilde Q)e_t)=N(\tilde Q)\mathrm I_4$. The matrix $L^{\mathsf T}L$ is the matrix of a scalar, so the trace is four times the scalar. The statement is stronger than the identity $\operatorname{Tr}(L^{\mathsf T}L)=4N$ and it is the matrix form of $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_t$, which is the reason the quaternionic norm is the invertibility criterion.
+
+**The other three are traces and not eigenvalues.** The corresponding identities fail for the other three norms. The products $L^2$, $L^{\dagger}L$ and $L^{\mathsf T}L^{\dagger}$ are not scalar matrices, and their traces are the three norms. The asymmetry is not an accident of the frame: $\natural$ is the only one of the three conjugations whose product with the element is a scalar, which is the statement that $\mathbb{H}$ is a composition algebra for this conjugation, and ${}^{*}$ is not, because $\tilde Q^{*}\tilde Q$ has a vector part as soon as $\tilde Q$ is complex. The frame's only contribution is that in it the three traceless parts are written without a congruence.
+
+**The Hermitian norm is the Hilbert–Schmidt square.** Since $\operatorname{Tr}(L^{\dagger}L)=\sum_{\mu\nu}\lvert L_{\mu\nu}\rvert^2$,
+$$
+\tfrac14\operatorname{Tr}(L^{\dagger}L)=\tfrac14\lVert L\rVert_{\mathrm{HS}}^2=H(\tilde Q),
+$$
+and the quarter is the price of the four-dimensional carrier, as in the companion article. It is the only one of the four that is positive definite, and it is the only one that reads the four complex coefficients as eight real ones without a sign.
+
+**The Krein norm is the mixed word.** The fourth word pairs the transpose with the dagger, so it is the one norm whose matrix is neither a square nor a conjugate square:
+$$
+\tfrac14\operatorname{Tr}(L^{\mathsf T}L^{\dagger})=\tfrac14\operatorname{Tr}\bigl(L(\tilde Q^{\natural})L(\tilde Q^{*})\bigr)=\mathrm{Kr}(\tilde Q),
+$$
+which is positive on the centre and negative on the vector subspace, of signature $(2,6)$ on the real algebra.
+
+**The multiplicativity table.**
+
+| Norm | Word | Multiplicative | Definite | Value ring |
+|---|---|---|---|---|
+| $P$ | $\tfrac14\operatorname{Tr}(L^2)$ | no | no | $\mathbb{C}$ |
+| $N$ | $\tfrac14\operatorname{Tr}(L^{\mathsf T}L)$ | yes | no | $\mathbb{C}$ |
+| $H$ | $\tfrac14\operatorname{Tr}(L^{\dagger}L)$ | no | yes | $\mathbb{R}$ |
+| $\mathrm{Kr}$ | $\tfrac14\operatorname{Tr}(L^{\mathsf T}L^{\dagger})$ | no | no | $\mathbb{R}$ |
+
+The multiplicativity column is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*, §*What the Four Algebraic Norms Separate*; the four words are the new column, and each of them is a trace of a word of degree two in one matrix.
+
+**The defect of the plain norm, in closed form.** Write $\tilde Q_a=s_a+\vec Q_a$ with $s_a=Q_{at}$. Then
+$$
+P(\tilde Q_1\tilde Q_2)-P(\tilde Q_1)P(\tilde Q_2)
+=-2\bigl((\vec Q_1,\vec Q_1)(\vec Q_2,\vec Q_2)-(\vec Q_1,\vec Q_2)^2\bigr)-4s_1s_2(\vec Q_1,\vec Q_2).
+$$
+The bracket is the Gram determinant of the two vector parts, equal to $(\vec Q_1\times\vec Q_2,\vec Q_1\times\vec Q_2)$ by the Cauchy identity for the cross product, so the defect is
+$$
+-2\,(\vec Q_1\times\vec Q_2,\vec Q_1\times\vec Q_2)-4s_1s_2(\vec Q_1,\vec Q_2).
+$$
+The computation expands $P(\tilde Q_1\tilde Q_2)=\bigl(s_1s_2-(\vec Q_1,\vec Q_2)\bigr)^2-\lVert s_1\vec Q_2+s_2\vec Q_1+\vec Q_1\times\vec Q_2\rVert^2$ and subtracts $P(\tilde Q_1)P(\tilde Q_2)$: the two terms in $s_1s_2(\vec Q_1,\vec Q_2)$ come out with the same sign and add, and the two squares combine through the Lagrange identity $(\vec Q_1,\vec Q_1)(\vec Q_2,\vec Q_2)-(\vec Q_1,\vec Q_2)^2=(\vec Q_1\times\vec Q_2,\vec Q_1\times\vec Q_2)$. In matrix terms, and using $\tfrac14\operatorname{Tr}(L^2)=P$, the identity reads
+$$
+\tfrac14\operatorname{Tr}\bigl((L_1L_2)^2\bigr)\neq\Bigl(\tfrac14\operatorname{Tr}(L_1^2)\Bigr)\Bigl(\tfrac14\operatorname{Tr}(L_2^2)\Bigr),
+$$
+with the difference given by the two terms above. The first term is minus twice the norm of the antisymmetric part, since $\tilde Q_1\wedge\tilde Q_2=\vec Q_1\times\vec Q_2$; the second mixes the two scalar parts with the dot product of the vector parts. The plain norm is therefore multiplicative on the pairs whose antisymmetric product is isotropic and whose scalar or vector parts are mutually orthogonal, and the defect is a genuine obstruction otherwise.
+
+**The two other defects, by witness.** The Hermitian norm is not multiplicative. The witness is $\tilde Q=\vec e_x+i\vec e_y$, which has $H(\tilde Q)=1+1=2$ and square $\vec e_x^2-\vec e_y^2+\vec e_x(i\vec e_y)+(i\vec e_y)\vec e_x=0$, so $H(\tilde Q^2)=0$ and $H(\tilde Q^2)\neq H(\tilde Q)^2$. The Krein norm is not multiplicative. The witness is $\tilde Q=e_t+\vec e_x$, which has $\mathrm{Kr}(\tilde Q)=1-1=0$ and square $2\vec e_x$, so $\mathrm{Kr}(\tilde Q^2)=-4$ and $\mathrm{Kr}(\tilde Q^2)\neq\mathrm{Kr}(\tilde Q)^2$. The two computations are the witnesses of the companion article, written in the coordinates of the frame.
+
+**The two signs that separate $P$ from $N$.** The plain and the quaternionic norms differ by the sign of the vector part alone, $P=Q_t^2-B^2$ and $N=Q_t^2+B^2$, and the same difference separates their matrix words: $L^2$ is not scalar while $L^{\mathsf T}L$ is, because the transpose of the first factor reverses the sign of the vector part and the multiplication then cancels the two vector parts exactly. Nothing else separates them; the four words of the four norms are the four ways of pairing the two conjugations $\natural$ and ${}^{*}$ with the identity, and the plain word, which pairs neither, is the one that fails to be scalar.
+
+## The Factors
+
+**One table.** Every identity of this article carries a rational factor, and the factor is always the trace of an identity matrix or its reciprocal.
+
+| Quantity | Word | Factor | Why |
+|---|---|---|---|
+| scalar part | $\operatorname{Sc}\tilde X$ | $\tfrac14$ | $\operatorname{Tr}\mathrm I_4=4$ |
+| trace of an element | $\operatorname{Tr}L$ | $4$ | four diagonal entries equal to $Q_t$ |
+| form | $P,N,H,\mathrm{Kr}$ | $\tfrac14$ | $\operatorname{Sc}$ of a product |
+| norm | $P,N,H,\mathrm{Kr}$ | $\tfrac14$ | the same, at two equal arguments |
+| determinant | $\det L$ | $1$ | $\det\mathrm I_4=1$ |
+| determinant of a basis matrix | $\det L_{e_\mu}$ | $1$ | signed permutations of determinant $1$ |
+
+**The quarter is not a convention.** It is $1/\dim_{\mathbb{C}}\mathbb{B}$. The trace of the identity of the regular representation is the dimension of the carrier, so the scalar part, which is one coordinate out of four, is a quarter of the trace. At the element size of *$M_2(\mathbb{C})$ Pauli Representation* the same argument gives one half, and no other value occurs in any frame: the factor is insensitive to the frame because the trace is.
+
+**The determinant has no factor.** It is normalised by $\det\mathrm I=1$, and that normalisation is what makes it multiplicative. A trace word cannot be multiplicative at the same time, because the trace of the identity is not one. The choice between the two is the choice between the additive and the multiplicative invariant of the companion article, written as a statement about constants.
+
+**The square at the top of the table.** The determinant of the $4\times4$ matrix is the square of the $2\times2$ determinant, and every constant of this article is stable under that doubling: the trace doubles, the quadratic words quadruple, and the determinant squares. The three rows of §*The Determinant* of the companion article are the same three rows, and the words here are their two-element version.
+
+## What the Axis-Free Frame Gives
+
+**The three identities are the gift.** The transpose is the quaternion conjugation, the entrywise conjugate is the coefficient conjugation, and the dagger is the Hermitian conjugation. With them, every one of the twelve words of §*The Twelve Products* is a literal word in $L_1$, $L_2$, $L_1^{\mathsf T}$, $L_2^{\mathsf T}$, $\overline{L_1}$, $\overline{L_2}$ and the two daggers. No congruence, no $\sigma_2$, no change of frame appears anywhere.
+
+**What that buys.** Three of the twelve words are read without any conjugation at all: the plain product, its anticommutator and its commutator. Three are read with the transpose alone: $L_1^{\mathsf T}L_2$ and its two halves. Six are read with the dagger or with the entrywise conjugate, and those six are the sesquilinear rows. In a frame where the transpose is not the conjugation, the transpose rows must be rewritten as congruences, and the words are then no longer polynomials in the two matrices. §*The Transpose Is Not the Conjugation* of *$M_4(\mathbb{C})$ Pauli Representation* is the computation of that price in the Peirce frame: there the word is $C_LL^{\mathsf T}C_L$, and the constant $C_L=\mathrm I_2\otimes\sigma_2$ is a matrix the frame cannot avoid.
+
+**What it costs.** The frame is dense and its idempotents are not adapted to it, so the words $L_1L_2$ and $\tfrac12(L_1L_2+L_2L_1)$ have no visible block structure. The Peirce frame has the block structure and pays with the congruence. Neither frame is simpler than the other; they are simpler for different words, and the table of §*The Twelve Products* is readable in both.
+
+**The integer entries.** Every entry of every matrix above is $0$, $\pm1$ times a coefficient or a conjugate of one, so the words have integer coefficients and the factors $\tfrac12$ and $\tfrac14$ of the table of §*The Factors* are the only denominators. This is the sharp statement of the companion article's *the entries are the structure constants*, read on words of two matrices rather than on words of one.
+
+**The three frames in one sentence each.** In this frame the four forms are four trace words in $L_1$, $L_2$ and their transposes; in the Peirce frame they are the same four words with the two tensor factors separated, so every factor $4$ becomes $2\times2$ and every transpose costs a congruence; at the element size they are the same four words with the factors $\tfrac12$ and $2$, and the mixed trace of §*The Trace* has no word at all.
+
+## Summary
+
+Every statement of this article is one statement: the four forms, the twelve products, the trace and the determinant are words in the two matrices. The plain product is $L_1L_2$; its symmetric part is the anticommutator and its antisymmetric part the commutator, and the commutator is traceless, so the trace of a product is the trace of its symmetric part, and the four forms see the four products and their symmetrisations and nothing of the four antisymmetrisations. The four forms are the four quarter-traces of $L_1L_2$, $L_1^{\mathsf T}L_2$, $L_1L_2^{\dagger}$ and $L_1^{\mathsf T}L_2^{\dagger}$, the first two $\mathbb{C}$-bilinear words and the last two sesquilinear ones; the four norms are the same four words at two equal arguments; the trace of an element is $4Q_t$ and the determinant is $N^2$.
+
+One of the twelve words is special. The symmetric part of the quaternionic product is the form times the identity, $\tfrac12(L_1^{\mathsf T}L_2+L_2^{\mathsf T}L_1)=N(\tilde Q_1,\tilde Q_2)\mathrm I_4$, and the corresponding single-element statement is the eigenvalue statement $L^{\mathsf T}L=N(\tilde Q)\mathrm I_4$. The other eleven are not scalar and are not supposed to be.
+
+The constants are the trace of the identity and its reciprocal. The quarter in $\operatorname{Sc}$ and in the four words is $1/\dim\mathbb{B}$; the determinant carries no constant because it is normalised at the identity; and the doubling from the $2\times2$ size to the $4\times4$ size doubles the trace, quadruples the quadratic words and squares the determinant. The defect of the plain norm is written in closed form, as minus twice the Gram determinant of the two vector parts, minus four times the two scalar parts times the dot product of the vector parts; the two other defects are given by witness.
+
+The frame's contribution is one line: the transpose is the quaternion conjugation, the entrywise conjugate is the coefficient conjugation, and the dagger is the Hermitian conjugation. With those three, the twelve words need no other matrix. In the Peirce frame the block structure appears and the congruence replaces the transpose; at the element size the factors halve and the mixed trace disappears.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathrm{axf}$ | the label of the axis-free frame |
+| $L_a$, $R_a$ | the left and right matrices of $\tilde Q_a$, $a=1,2$ |
+| $L_a^{c}$, $L_a^{\natural}$, $L_a^{*}$ | $L_{\mathrm{axf}}(\bar{\tilde Q}_a)=\overline{L_a}$, $L_{\mathrm{axf}}(\tilde Q_a^{\natural})=L_a^{\mathsf T}$, $L_{\mathrm{axf}}(\tilde Q_a^{*})=L_a^{\dagger}$ |
+| $\tilde Q_1\bullet\tilde Q_2$ | symmetric plain bilinear product, $\tfrac12(\tilde Q_1\tilde Q_2+\tilde Q_2\tilde Q_1)$ |
+| $\tilde Q_1\wedge\tilde Q_2$ | antisymmetric plain bilinear product, the cross product of the two vector parts |
+| $\tilde Q_1\bullet_{\natural}\tilde Q_2$ | symmetric quaternionic bilinear product, a scalar equal to $N(\tilde Q_1,\tilde Q_2)$ |
+| $\tilde Q_1\bullet_*\tilde Q_2$ | symmetric plain sesquilinear product, exchange with the coefficient conjugation |
+| $\tilde Q_1\bullet_{\natural*}\tilde Q_2$ | symmetric quaternionic sesquilinear product |
+| $P$, $N$, $H$, $\mathrm{Kr}$ | the plain, quaternionic, Hermitian and Krein forms, and the four norms of the same letters |
+| $(\vec Q_1,\vec Q_2)$ | complex bilinear dot product of the two vector parts |
+| $\vec Q_1\times\vec Q_2$ | complex bilinear cross product, equal to $\tilde Q_1\wedge\tilde Q_2$ |
+| $B_a^2$, $\langle\tilde Q_a\rangle_{\natural}$ | $Q_{ax}^2+Q_{ay}^2+Q_{az}^2$ and $Q_{at}^2+B_a^2$ |
+| $\varepsilon_\mu$ | $1$ for $\mu=t$ and $-1$ for $\mu=x,y,z$, the diagonal of $\mathrm E$ |
+| $D$ | $\operatorname{diag}(1,-1,-1,-1)$, the switch between the two families |
+
+## Further Reading
+
+- [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the frame, the two families and the switch.
+- [$M_4(\mathbb{C})$ Pauli Representation : Products, Forms and Norms](m4c-pauli-representation-products-forms-norms.html), for the same content in the Peirce frame, with the two tensor factors separated.
+- [$M_2(\mathbb{C})$ Pauli Representation : Products, Forms and Norms](m2c-pauli-representation-products-forms-norms.html), for the same content at the element size.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms and the four norms without matrices.
+- [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the two exchanges and the twelve products.
+- [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four products.
+- [Families of Matrix Representations](families-of-matrix-representations.html), for the change of frame and the general theory of the two families.
+- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the four conjugations.
+- [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and the traceless part.
+- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.

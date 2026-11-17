@@ -31,7 +31,7 @@ with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{
 
 ## Conventions
 
-The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $k_m=mc/\hbar$. The worldline parameter is $\tau$ and the proper time $T$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$. The pairing is the Hermitian $\mathrm{Sc}(\cdot^{*}\cdot)$. The material position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$, with $\langle\tilde R_\Phi\rangle_{\natural}=-{r'_t}^{2}+|\vec r|^{2}$. The mass parameter is $k_m=mc/\hbar$. The worldline parameter is $\tau$ and the proper time $T$.
 
 **The one-form of the connection.** The potential is written $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ with real coefficients in the abelian case. Its pairing with the worldline tangent is the **real** pairing
 

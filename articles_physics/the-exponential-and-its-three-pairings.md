@@ -131,7 +131,7 @@ the modulus falls as $e^{-\theta_{\mathrm{rpd}}/2}$ and the boost grows as $e^{+
 **Which stratum the limit lands on is decided by the rotor and not by the rate.** Write $\tilde u_{\mathrm r}=a\,e_t+b\,\vec u_{\mathrm b}+\tilde u_\perp$ with $a,b\in\mathbb{R}$ and $\tilde u_\perp$ orthogonal to $\vec u_{\mathrm b}$, and put $L$ for the limit. Then
 
 $$
-\operatorname{Tr}L=R\omega(a-ib),
+2\,\mathrm{Sc}L=R\omega(a-ib),
 \qquad
 L^{2}=R\omega(a-ib)\,L ,
 $$

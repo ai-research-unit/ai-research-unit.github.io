@@ -11,9 +11,9 @@ $$
 \quad\Longleftrightarrow\quad a_t\geq|\vec a|\;},
 $$
 
-so the cone of the algebra is the future light cone of the biquaternion norm. An **effect** is an element of the operator interval $0\leq\tilde{E}_{\Psi}\leq e_t$, which in coefficients reads $|\vec a|\leq\min(a_t,1-a_t)$; a **POVM** is a resolution of the identity by effects, $\sum_y\tilde{E}_{\Psi}_y = e_t$; and the Born weight for the measurement is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde{E}_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, read as $p_y = \mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$; the trace reading is given once, at normalisation. The projective measurements are the special case in which the effects are idempotents, and they are the extreme elements of the set of effects; the general measurement is a convex decomposition of the identity into non-extreme effects, and it is strictly more powerful.
+so the cone of the algebra is the future light cone of the biquaternion norm. An **effect** is an element of the operator interval $0\leq\tilde{E}_{\Psi}\leq e_t$, which in coefficients reads $|\vec a|\leq\min(a_t,1-a_t)$; a **POVM** is a resolution of the identity by effects, $\sum_y\tilde{E}_{\Psi}_y = e_t$; and the Born weight for the measurement is the normalised Hermitian form $\langle\tilde{Ϛ}_{\Psi},\tilde{E}_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, read as $p_y = \mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$; the value is read once, at normalisation. The projective measurements are the special case in which the effects are idempotents, and they are the extreme elements of the set of effects; the general measurement is a convex decomposition of the identity into non-extreme effects, and it is strictly more powerful.
 
-The cone is self-dual with respect to the Hermitian form (the trace pairing in the $2\times2$ image), which is the algebraic reason the pairing serves both as the Born rule and as the duality that makes the measurement formalism work. The article derives this, characterizes the effects, exhibits the general POVM, and works two examples: the **trine** POVM, which distinguishes three equatorial states better than any projective measurement, and unambiguous discrimination, which two non-orthogonal states admit with a POVM and not with a projective measurement. The general measurement's realization as a projective measurement on a larger system — Naimark's dilation — is stated in the framework's language, and its status as an extension of the algebra is noted.
+The cone is self-dual with respect to the Hermitian form (the matrix trace of the $2\times2$ image, halved), which is the algebraic reason the pairing serves both as the Born rule and as the duality that makes the measurement formalism work. The article derives this, characterizes the effects, exhibits the general POVM, and works two examples: the **trine** POVM, which distinguishes three equatorial states better than any projective measurement, and unambiguous discrimination, which two non-orthogonal states admit with a POVM and not with a projective measurement. The general measurement's realization as a projective measurement on a larger system — Naimark's dilation — is stated in the framework's language, and its status as an extension of the algebra is noted.
 
 ## The Positive Cone
 
@@ -47,7 +47,7 @@ $$
 \langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*} = \mathrm{Sc}(\tilde H_\Psi\tilde{E}_{\Psi}^{*}) = h_t\,a_t + \vec h_\Psi\cdot\vec a,
 $$
 
-where $\tilde{E}_{\Psi} = a_te_t + i\vec a$; its $2\times2$ reading is the trace pairing $\mathrm{Tr}(\tilde H_\Psi\tilde{E}_{\Psi}^{*}) = 2\langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*}$. Direct computation of the Hermitian form on the Hermitian basis gives
+where $\tilde{E}_{\Psi} = a_te_t + i\vec a$, and the doubled pairing $2\langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*}$ is the matrix trace of the $2\times2$ image. Direct computation of the Hermitian form on the Hermitian basis gives
 
 $$
 \langle e_t,e_t\rangle = 1, \qquad \langle e_t,i\vec e_\eta\rangle = 0, \qquad \langle i\vec e_j,i\vec e_\eta\rangle = \delta_{j\eta},
@@ -65,7 +65,7 @@ The self-duality is what makes the Hermitian form the natural pairing of measure
 
 ### Extremal rays and the pure states
 
-The extreme rays of $C_+$ are the rays through the rank-one Hermitian idempotents $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the trace-one slice — the intersection of $C_+$ with the affine hyperplane $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the trace-one slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
+The extreme rays of $C_+$ are the rays through the rank-one Hermitian idempotents $\tilde\Pi_1(\vec u) = \tfrac12(e_t+i\vec u)$ and their positive multiples; every positive element is a non-negative combination of these. On the normalised slice — the intersection of $C_+$ with the affine hyperplane $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ — the extreme points are exactly the pure states. This is the cone-theoretic statement of the fact, developed in the companion articles, that the Bloch ball is the normalised slice of the cone and its boundary is the set of idempotents. The normalized states are a section of the cone, and the pure states are its extreme rays.
 
 ## Effects
 
@@ -113,13 +113,13 @@ $$
 
 because $\tilde{Ϛ}_{\Psi}\geq0$, $\tilde{E}_{\Psi}\geq0$ make the pairing non-negative, and $\tilde{E}_{\Psi}\leq e_t$ gives $p\leq1$. This is the Born rule in its general form; the projective case is $\tilde{E}_{\Psi} = \tilde\Pi$, and then the same ratio is the usual probability of an eigenspace.
 
-The trace is read last, at normalisation. In the $2\times2$ image $\operatorname{Tr}(e_t)=2$ and $\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$, so
+The value is read at normalisation. Since $2\,\mathrm{Sc}(e_t)=2$ and $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$, the ratio is
 
 $$
-p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi})=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}^{*})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}.
+p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}),
 $$
 
-On $\mathbb{B}_{\Psi}$ both factors are Hermitian, so the star in the numerator is inert and $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi})$. The unstarred trace is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ gives $\overline{\mathrm{tr}(AB)}=\mathrm{tr}(AB)$; it is non-negative for $0\le\tilde E_{\Psi}\le e_t$, because $\mathrm{tr}(AB)=\mathrm{tr}(A^{1/2}BA^{1/2})\ge0$. Hence $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi})/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})\in[0,1]$, the usual $\mathrm{Tr}(\rho E)$. No additional postulate is required for the general measurement: functions of effects are obtained by the same Hermitian form.
+On $\mathbb{B}_{\Psi}$ both factors are Hermitian, so the star is inert and $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}^{*})=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi})$. The scalar part of the product is real, because $(AB)^{\dagger}=BA$ for Hermitian $A,B$ makes it equal to its own conjugate; it is non-negative for $0\le\tilde E_{\Psi}\le e_t$, because $\mathrm{Sc}(AB)=\mathrm{Sc}(A^{1/2}BA^{1/2})\ge0$ when both factors are positive. Hence $p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi})\in[0,1]$, which is the usual matrix expression with the trace replaced by twice the scalar part. No additional postulate is required for the general measurement: functions of effects are obtained by the same Hermitian form.
 
 ## POVMs
 
@@ -131,12 +131,12 @@ $$
 \tilde{E}_{\Psi}_y \geq 0, \qquad \sum_y \tilde{E}_{\Psi}_y = e_t .
 $$
 
-Given a state $\tilde{Ϛ}_{\Psi}$, the outcome probabilities are $p_y=\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$; on $\mathbb{B}_{\Psi}$ this is the plain scalar $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_y)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, and the trace is the final reading at normalisation, $p_y=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y)$. They are non-negative and sum to one:
+Given a state $\tilde{Ϛ}_{\Psi}$, the outcome probabilities are $p_y=\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$; on $\mathbb{B}_{\Psi}$ this is the plain scalar $\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_y)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, that is $p_y=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y)$ at normalisation. They are non-negative and sum to one:
 
 $$
 \sum_y p_y = \mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\sum_y\tilde{E}_{\Psi}_y\right)\Big/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = 1 ,
 $$
-since $\sum_y\tilde{E}_{\Psi}_y=e_t$ and $\mathrm{Sc}(e_t)=1$, whose $2\times2$ reading is $\mathrm{Tr}(e_t)=2$.
+since $\sum_y\tilde{E}_{\Psi}_y=e_t$ and $\mathrm{Sc}(e_t)=1$.
 
 A **projection-valued measure** is the special case in which every $\tilde{E}_{\Psi}_y$ is idempotent; then the effects are orthogonal, $\tilde{E}_{\Psi}_y\tilde{E}_{\Psi,y_2} = \delta_{yy_2}\tilde{E}_{\Psi}_y$, and the POVM is a projective measurement. Every PVM is a POVM; the converse fails.
 
@@ -154,7 +154,7 @@ $$
 \tilde{Ϛ}_{\Psi,y} = \frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{2\,\mathrm{Sc}(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*})},
 $$
 
-The outcome probability is $p_y=\mathrm{Sc}(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y)$, whose $2\times2$ reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y)$, and the resolution of the identity is $\sum_y\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y} = e_t$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $Ξ(\tilde{Ϛ}_{\Psi}) = \sum_y\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}$.
+The outcome probability is $p_y=\mathrm{Sc}(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y)$, which at normalisation is the outcome probability $p_y$, and the resolution of the identity is $\sum_y\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y} = e_t$. The measurement is therefore an **instrument**: a family of completely positive maps indexed by the outcome, one of which occurs. This is the measurement side of the channel formalism of the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy*; a measurement followed by discarding the outcome is the channel $Ξ(\tilde{Ϛ}_{\Psi}) = \sum_y\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}$.
 
 ### The Polar Form of an Effect
 
@@ -187,7 +187,7 @@ $$
 \boxed{\;\tilde{E}_{\Psi}_y = V^\dagger \tilde{F}_y V\;}.
 $$
 
-This is **Naimark's dilation theorem**, the measurement analogue of Stinespring's dilation for channels. In the framework's language, the dilation adjoins an ancillary factor and replaces the general effects by orthogonal idempotents; the price is that the ancillary system must be traced out, which is precisely the information loss that a non-projective measurement represents. The dilation is standard; it is cited, not derived, and it belongs to the same circle of ideas as the Kraus representation of channels. It also shows why the framework's general measurement theory does not require abandoning the idempotent picture of a projective measurement: it embeds it in a larger algebra.
+This is **Naimark's dilation theorem**, the measurement analogue of Stinespring's dilation for channels. In the framework's language, the dilation adjoins an ancillary factor and replaces the general effects by orthogonal idempotents; the price is that the ancillary factor must be reduced over, which is precisely the information loss that a non-projective measurement represents. The dilation is standard; it is cited, not derived, and it belongs to the same circle of ideas as the Kraus representation of channels. It also shows why the framework's general measurement theory does not require abandoning the idempotent picture of a projective measurement: it embeds it in a larger algebra.
 
 ## Two Worked Examples
 
@@ -238,10 +238,10 @@ which is the standard Ivanovic–Dieks–Peres value. Unambiguous discrimination
 
 Collecting the structure, a measurement in the framework is a resolution of the identity into positive elements of $\mathbb{B}_{\Psi}$:
 
-- **States** are the elements of the cone $C_+$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image); the cone is the future light cone of the biquaternion norm.
+- **States** are the elements of the cone $C_+$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (scalar part one half); the cone is the future light cone of the biquaternion norm.
 - **Effects** are the elements of the operator interval $[0,e_t]$, i.e. the cone intersected with its reflection through $\tfrac12 e_t$; in coefficients, $|\vec a|\leq\min(a_t,1-a_t)$.
 - **POVMs** are resolutions of the identity by effects; **PVMs** are the resolutions by idempotents, i.e. by extreme effects.
-- **Probabilities** are the normalised Hermitian form $p_y=\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}$, whose final reading at normalisation is the trace $p_y = \operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})$; the pairing is the one under which the cone is self-dual.
+- **Probabilities** are the normalised Hermitian form $p_y=2\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_y\rangle_{*}$, read at normalisation; the pairing is the one under which the cone is self-dual.
 - **Post-measurement states** are the Kraus images $\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}$, normalized.
 
 The general measurement is a convex decomposition of the identity into effects that are not extreme. The idempotents remain the extreme effects, and the projective measurement remains the extreme case; what the general measurement adds is the ability to have more outcomes than the dimension of the module, which is exactly what is needed for tasks such as state discrimination with more than two candidate states.
@@ -282,7 +282,7 @@ $$
 \tilde{E}_{\Psi} = a_te_t+i\vec a\geq0 \quad\Longleftrightarrow\quad a_t\geq|\vec a| \quad\Longleftrightarrow\quad \langle\tilde{E}_{\Psi}\rangle_{\natural} = a_t^2-|\vec a|^2\geq0,\ a_t\geq0,
 $$
 
-and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_\Psi,\tilde E_{\Psi}\rangle_{*} = 2(h_t\,a_t+\vec h_\Psi\cdot\vec a)$, whose trace reading is $\operatorname{Tr}(\tilde H_\Psi\tilde{E}_{\Psi}^{*})$. An effect is an element of the operator interval $0\leq\tilde{E}_{\Psi}\leq e_t$, characterized by $|\vec a|\leq\min(a_t,1-a_t)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_{\Psi}_y\}$ with $\tilde{E}_{\Psi}_y\geq0$ and $\sum_y\tilde{E}_{\Psi}_y = e_t$; the outcome probabilities are the normalised Hermitian form, $p_y=\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, whose trace reading at normalisation is $p_y = \operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the normalised Hermitian form on the effect body, whose trace reading is the final step at normalisation.
+and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_\Psi,\tilde E_{\Psi}\rangle_{*} = 2(h_t\,a_t+\vec h_\Psi\cdot\vec a)$. An effect is an element of the operator interval $0\leq\tilde{E}_{\Psi}\leq e_t$, characterized by $|\vec a|\leq\min(a_t,1-a_t)$; its extreme points are the idempotents, so the projective measurements are the extreme resolutions. A POVM is a family $\{\tilde{E}_{\Psi}_y\}$ with $\tilde{E}_{\Psi}_y\geq0$ and $\sum_y\tilde{E}_{\Psi}_y = e_t$; the outcome probabilities are the normalised Hermitian form, $p_y=\langle\tilde{Ϛ}_{\Psi},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde E_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, read at normalisation as $p_y = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y)$, and the post-measurement states are the Kraus images. Every POVM is the compression of a projective measurement on a larger space (Naimark), and every measurement is an instrument, a family of completely positive maps indexed by the outcome. The cone, the effects, and the Born rule are thus all read off the algebra: positivity is the biquaternion norm's non-negativity, and measurement is the normalised Hermitian form on the effect body, read once at the end.
 
 ## Summary of Notation
 
@@ -295,12 +295,12 @@ and the cone is self-dual with respect to the Hermitian form, $2\langle\tilde H_
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $C_+ = \{h_t\,e_t+i\vec h_\Psi: h_t\ge\lvert\vec h_\Psi\rvert\}$ | Positive cone (future light cone of $\langle\cdot\rangle_{\natural}$) |
 | $C_+^{*} = C_+$ | Self-duality under the Hermitian form |
-| $\mathrm{Tr}(\tilde H_\Psi\tilde{E}_{\Psi}) = 2(h_t\,a_t+\vec h_\Psi\cdot\vec a)$ | Trace reading of the Hermitian form |
+| $2\langle\tilde H_\Psi,\tilde{E}_{\Psi}\rangle_{*} = 2(h_t\,a_t+\vec h_\Psi\cdot\vec a)$ | Doubled Hermitian form |
 | $0\le\tilde{E}_{\Psi}\le e_t$ | Effect (operator interval) |
 | $\lvert\vec a\rvert\le\min(a_t,1-a_t)$ | Effect condition in coefficients |
 | $\mathrm{ext}[0,e_t] = \{\text{idempotents}\}$ | Extreme effects |
 | $\{\tilde{E}_{\Psi}_y\}$, $\tilde{E}_{\Psi}_y\ge0$, $\sum_y\tilde{E}_{\Psi}_y = e_t$ | POVM |
-| $p_y = 2\langle\tilde{Ϛ}_{\Psi},\tilde{E}_{\Psi}_y\rangle_{*}$ | Born rule for a POVM; $2\times2$ reading $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde{E}_{\Psi}_y^{*})$ |
+| $p_y = 2\langle\tilde{Ϛ}_{\Psi},\tilde{E}_{\Psi}_y\rangle_{*}$ | Born rule for a POVM |
 | $\tilde{E}_{\Psi}_y = \tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y}$ | Kraus form of an effect |
 | $\tilde M_{\mathrm{kraus},y}=\tilde H_\Psi_{\mathrm{pos},y}\tilde Q_{\mathrm{p},y}$, $\tilde H_\Psi_{\mathrm{pos},y}=\sqrt{\tilde M_{\mathrm{kraus},y}\tilde M_{\mathrm{kraus},y}^{*}}$ | Polar form of the Kraus operator; $\tilde H_\Psi_{\mathrm{pos},y}\ge0$, $\tilde Q_{\mathrm{p},y}$ a partial isometry |
 | $\tilde E_{\Psi}_y=\tilde Q_{\mathrm{p},y}^{*}\tilde H_\Psi_{\mathrm{pos},y}^{2}\tilde Q_{\mathrm{p},y}$ | Effect as the backaction-conjugated squared strength |

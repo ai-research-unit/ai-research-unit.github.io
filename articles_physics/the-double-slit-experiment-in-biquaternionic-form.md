@@ -10,7 +10,7 @@ Throughout this article $\theta_{\mathrm{act}}:=\mathrm{Re}\,S/\hbar$ is the ang
 
 The division between what is established and what is interpretation is stated here and kept explicit.
 
-- **Established, and recomputed below.** Two route amplitudes add, $K = K_1 + K_2$, and the intensity is $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ with $\delta$ the relative phase; a common phase shift of both routes is unobservable. The which-path degree of freedom is a qubit whose state is an element $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ of $\mathbb{B}_{\Psi}$. The fringe **visibility** is the length of the equatorial part of its Bloch vector, the **path predictability** is its polar part, and $V^2 + P^2 = |\vec r|^2 \le 1$, with equality if and only if $\tilde{Ϛ}_{\Psi}$ is pure — that is, if and only if $\tilde{Ϛ}_{\Psi}$ lies on the zero-divisor cone of $\mathbb{B}_{\Psi}$. A which-path measurement, or full dephasing along the path axis, annihilates the equatorial part and with it the fringes. For spinor-valued routes, $I = I_1 + I_2 + 2\,\mathrm{Re}\,\mathrm{Tr}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2})$, and a spin overlap reduces the visibility.
+- **Established, and recomputed below.** Two route amplitudes add, $K = K_1 + K_2$, and the intensity is $I = a_1^2 + a_2^2 + 2a_1a_2\cos\delta$ with $\delta$ the relative phase; a common phase shift of both routes is unobservable. The which-path degree of freedom is a qubit whose state is an element $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ of $\mathbb{B}_{\Psi}$. The fringe **visibility** is the length of the equatorial part of its Bloch vector, the **path predictability** is its polar part, and $V^2 + P^2 = |\vec r|^2 \le 1$, with equality if and only if $\tilde{Ϛ}_{\Psi}$ is pure — that is, if and only if $\tilde{Ϛ}_{\Psi}$ lies on the zero-divisor cone of $\mathbb{B}_{\Psi}$. A which-path measurement, or full dephasing along the path axis, annihilates the equatorial part and with it the fringes. For spinor-valued routes, $I = I_1 + I_2 + 4\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2})$, and a spin overlap reduces the visibility.
 - **Interpretation.** Interpreting the fringe pattern as the projection of a rotating equatorial Bloch vector, and reading the two-slit arrangement as the place where a material-sector action is converted through the central phase into an informational-sector state, are geometric and structural interpretations of the algebra. The algebra is consistent with them; it does not force them.
 - **Gap, left visible.** The framework supplies the phase and the state geometry but not the **action**, the **measure**, or the space of paths; and it does not select which slit, or which screen point, a given detection realises. The first gap is inherited from the path-integral article, the second from the measurement-problem article; both are restated where they arise and collected in the open questions.
 
@@ -91,7 +91,7 @@ with **polar** part $r_\parallel = \vec{u}\cdot\vec r$ and **equatorial** part $
 The connection with the two route amplitudes is explicit. For a spin-independent beam, write the two amplitudes at the screen point $X$ as $K_j = A_j e_t$ and form the spinor $\tilde{Ξ} = \bigl(A_1, A_2\bigr)$ in the framework's state module $\cong \mathbb{C}^2$. The Schrödinger article's construction gives
 
 $$
-\tilde{Ϛ}_{\Psi} = \frac{\tilde{Ξ}\,\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
+\tilde{Ϛ}_{\Psi} = \frac{\tilde{Ξ}\,\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 $$
 
 and the entries are, with $\rho_{j\eta}$ the matrix elements in the path basis,
@@ -114,7 +114,7 @@ $$
 \frac{I(x)}{|A_1|^2 + |A_2|^2} = 1 + r_1(x),
 $$
 
-which was checked on random amplitudes independently of the derivation: the normalised intensity and $1 + r_1$ agreed to machine precision, and the reconstruction $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ from the Bloch components agreed with $\tilde{Ξ}\tilde{Ξ}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ to machine precision.
+which was checked on random amplitudes independently of the derivation: the normalised intensity and $1 + r_1$ agreed to machine precision, and the reconstruction $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ from the Bloch components agreed with $\tilde{Ξ}\tilde{Ξ}^{\dagger}/2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$ to machine precision.
 
 **Interpretation.** Interpreting the fringe pattern as the projection of a rotating equatorial Bloch vector is a geometric interpretation. The algebra is consistent with it and makes it precise, but the algebra does not require the interpretation; the standard statement in terms of the two amplitudes is complete without it.
 
@@ -199,10 +199,10 @@ $$
 
 verified directly in the matrix representation. It is a **relative** phase between the two spin components — a spin rotation — not a global phase shared by both.
 
-Now compute the two-path intensity with this root, for a beam whose two routes carry the same spinor $s$ (normalised, $\mathrm{Tr}(s^\dagger s) = 1$). The total amplitude is $\tilde Q_{\mathrm{amp}}s$ with $\tilde Q_{\mathrm{amp}} = a_1 \exp(\vec{u}\theta_{\mathrm{pha},1}) + a_2 \exp(\vec{u}\theta_{\mathrm{pha},2})$, an element of the plane $\mathrm{span}\{e_t, \vec{u}\}$. Its Hermitian norm is
+Now compute the two-path intensity with this root, for a beam whose two routes carry the same spinor $s$ (normalised, $2\,\mathrm{Sc}(s^\dagger s) = 1$). The total amplitude is $\tilde Q_{\mathrm{amp}}s$ with $\tilde Q_{\mathrm{amp}} = a_1 \exp(\vec{u}\theta_{\mathrm{pha},1}) + a_2 \exp(\vec{u}\theta_{\mathrm{pha},2})$, an element of the plane $\mathrm{span}\{e_t, \vec{u}\}$. Its Hermitian norm is
 
 $$
-\mathrm{Tr}\!\bigl((\tilde Q_{\mathrm{amp}}s)^\dagger(\tilde Q_{\mathrm{amp}}s)\bigr) = \mathrm{Tr}\bigl(s^\dagger \tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}}s\bigr) = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}\,\mathrm{Tr}(s^\dagger s) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
+2\,\mathrm{Sc}\!\bigl((\tilde Q_{\mathrm{amp}}s)^\dagger(\tilde Q_{\mathrm{amp}}s)\bigr) = 2\,\mathrm{Sc}\bigl(s^\dagger \tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}}s\bigr) = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}\,2\,\mathrm{Sc}(s^\dagger s) = \bigl(a_1^2 + a_2^2 + 2a_1a_2\cos\delta\bigr),
 $$
 
 because $\tilde Q_{\mathrm{amp}}^{\natural}\tilde Q_{\mathrm{amp}} = \langle\tilde Q_{\mathrm{amp}}\rangle_{\natural}e_t$ is central and $\langle\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \langle\tilde Q_{\mathrm{amp}},\tilde Q_{\mathrm{amp}}\rangle_{\natural} = \bigl(\sum_k a_k\cos\theta_{\mathrm{pha},k}\bigr)^2 + \bigl(\sum_k a_k\sin\theta_{\mathrm{pha},k}\bigr)^2 = |a_1 \exp(i\theta_{\mathrm{pha},1}) + a_2 \exp(i\theta_{\mathrm{pha},2})|^2$. This is *exactly* the central-phase intensity. The identity was checked numerically on random amplitudes and random spinors: the central and non-central intensities agreed to about $4\times10^{-14}$, the level of floating-point round-off.
@@ -221,16 +221,16 @@ The framework's grounds for the central root therefore lie where the Schrödinge
 When the two routes can be distinguished by an internal state, the amplitudes are spinors $\tilde{Ξ}_{1}, \tilde{Ξ}_{2} \in \mathbb{B}\tilde\Pi$ and the total amplitude is their sum, $\tilde{Ξ} = \tilde{Ξ}_{1} + \tilde{Ξ}_{2}$. The Schrödinger article's Hermitian norm gives
 
 $$
-I = \mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = \mathrm{Tr}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{1}) + \mathrm{Tr}(\tilde{Ξ}_{2}^{\dagger}\tilde{Ξ}_{2}) + 2\,\mathrm{Re}\,\mathrm{Tr}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}),
+I = 2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = 2\,\mathrm{Sc}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{1}) + 2\,\mathrm{Sc}(\tilde{Ξ}_{2}^{\dagger}\tilde{Ξ}_{2}) + 4\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}),
 $$
 
-which was checked on random spinor pairs to machine precision. Write $\tilde{Ξ}_{j} = a_j \exp(i\theta_{\mathrm{pha},j})s_j$ with $s_j$ normalised spinors. Then $\mathrm{Tr}(\tilde{Ξ}_{j}^{\dagger}\tilde{Ξ}_{j}) = a_j^2$ and the cross term is
+which was checked on random spinor pairs to machine precision. Write $\tilde{Ξ}_{j} = a_j \exp(i\theta_{\mathrm{pha},j})s_j$ with $s_j$ normalised spinors. Then $2\,\mathrm{Sc}(\tilde{Ξ}_{j}^{\dagger}\tilde{Ξ}_{j}) = a_j^2$ and the cross term is
 
 $$
-2\,\mathrm{Re}\,\mathrm{Tr}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}) = 2a_1a_2\,\bigl|\langle s_1, s_2\rangle_{*}\bigr|\,\cos\!\bigl(\delta - \arg\langle s_1,s_2\rangle\bigr),
+4\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}_{1}^{\dagger}\tilde{Ξ}_{2}) = 2a_1a_2\,\bigl|\langle s_1, s_2\rangle_{*}\bigr|\,\cos\!\bigl(\delta - \arg\langle s_1,s_2\rangle\bigr),
 $$
 
-where $\langle s_1,s_2\rangle := \mathrm{Tr}(s_1^\dagger s_2)$ is the module inner product, of modulus at most one. The visibility is therefore
+where $\langle s_1,s_2\rangle := 2\,\mathrm{Sc}(s_1^\dagger s_2)$ is the module inner product, of modulus at most one on normalised spinors. The visibility is therefore
 
 $$
 \boxed{\;V = \frac{2a_1a_2\,|\langle s_1,s_2\rangle|}{a_1^2 + a_2^2}\;},
@@ -253,7 +253,7 @@ maximal when the two route spinors are parallel (the scalar case) and vanishing 
 - A **home for the amplitude.** Each route amplitude is a central element of $\mathbb{B}_{C}$, and the exponent $\frac{iS_{j}}{\hbar}$ lies in the material sector $\mathbb{B}_{\Phi}$ along $i r'_t$, as the path-integral article establishes.
 - A **state geometry for the which-path degree of freedom.** The which-path state is an element $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ of $\mathbb{B}_{\Psi}$; visibility and predictability are its equatorial and polar components; and the duality bound $V^2 + P^2 \le 1$ is exactly the trace-one-slice-of-the-cone condition of the Bloch-ball article, with equality on the zero-divisor cone.
 - **Measurement and dephasing as algebraic operations.** The projective two-sided operator and the dephasing channel are the same operations the framework uses elsewhere; the double slit is an application, not a new mechanism.
-- **The sector chain, restated.** A material-sector quantity (the action along a route in $\mathbb{B}_{\Phi}$) is converted, through the central complex structure, into a central phase, and the state it produces, $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{\dagger}/\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$, lies in the informational sector $\mathbb{B}_{\Psi}$.
+- **The sector chain, restated.** A material-sector quantity (the action along a route in $\mathbb{B}_{\Phi}$) is converted, through the central complex structure, into a central phase, and the state it produces, $\tilde{Ϛ}_{\Psi} = \tilde{Ξ}\tilde{Ξ}^{\dagger}/2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})$, lies in the informational sector $\mathbb{B}_{\Psi}$.
 
 **What is interpretation.**
 
@@ -328,10 +328,10 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ |
 | $V^2 + P^2 = |\vec r|^2 \le 1$ | Visibility–predictability (duality) bound = cone condition |
 | $\tilde{Ξ} = \tilde{Ξ}_{1} + \tilde{Ξ}_{2} \in \mathbb{B}\tilde\Pi \cong \mathbb{C}^2$ | Spinor-valued two-route amplitude |
-| $s$, $\mathrm{Tr}(s^\dagger s)=1$ | Normalised spinor; the phase of the amplitude |
-| $\langle s_1,s_2\rangle_{*} = \mathrm{Tr}(s_1^\dagger s_2)$ | Module inner product; spin overlap |
+| $s$, $2\,\mathrm{Sc}(s^\dagger s)=1$ | Normalised spinor; the phase of the amplitude |
+| $\langle s_1,s_2\rangle_{*} = 2\,\mathrm{Sc}(s_1^\dagger s_2)$ | Module inner product; spin overlap |
 | $\exp(\frac{\vec u\,S}{\hbar})$ | Non-central phase; a spin rotation |
-| $\operatorname{Tr}(\tilde\Pi\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde\Pi\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$ | Trace reading at normalisation (Born rule) |
+| $2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ | Born weight at normalisation |
 | $i\,\mathbb{B}_{\Psi} = \mathbb{B}_{\Phi}$ | The scalar imaginary exchanges the sectors |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

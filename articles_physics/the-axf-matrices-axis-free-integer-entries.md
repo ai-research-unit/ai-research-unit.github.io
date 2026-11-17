@@ -75,7 +75,7 @@ $$
 | (g) | the eight matrices $\pm L_{\mathrm{axf},e_\mu}$ are the quaternion group $Q_8$ |
 | (h) | a cyclic relabelling of the three directions conjugates every matrix by a permutation matrix |
 | (i) | the real slice is preserved: $\mathbb{H}\subset\mathbb{B}$ lands in $M_4(\mathbb{R})$ |
-| (j) | $\det L_{\mathrm{axf},e_\mu}=1$ and $\operatorname{Tr}L_{\mathrm{axf},e_\mu}=4\delta_{\mu t}$ |
+| (j) | $\det L_{\mathrm{axf},e_\mu}=1$ and $2\,\mathrm{Sc}L_{\mathrm{axf},e_\mu}=4\delta_{\mu t}$ |
 
 **Ten readings of one fact.** Properties (b) and (d) are the root: the basis is multiplicative, so each column of a matrix is a signed basis vector. The rest follow, and each of them is a property of this frame and not of the algebra.
 
@@ -104,7 +104,7 @@ In a general frame the transpose of a left matrix is a conjugate of a right matr
 ### The Invariants
 
 $$
-\operatorname{Tr}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
+2\,\mathrm{Sc}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad
 \det L_{\mathrm{axf}}(\tilde Q)=\langle\tilde Q\rangle_{\natural}^{2}=N^{2},
 $$
 
@@ -121,9 +121,9 @@ $$
 
 | norm | algebra value | matrix formula | value ring | definite |
 | --- | --- | --- | --- | --- |
-| plain $P$ | $Q_t^2-B^2$ | $\tfrac14\operatorname{Tr}(M^2)$ | $\mathbb{C}$ | no |
+| plain $P$ | $Q_t^2-B^2$ | $\tfrac142\,\mathrm{Sc}(M^2)$ | $\mathbb{C}$ | no |
 | quaternionic $N$ | $Q_t^2+B^2$ | $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ | $\mathbb{C}$ | no |
-| Hermitian $H$ | $\sum_\mu\lvert Q_\mu\rvert^2$ | $\tfrac14\operatorname{Tr}(M^{\dagger}M)$ | $\mathbb{R}$ | yes |
+| Hermitian $H$ | $\sum_\mu\lvert Q_\mu\rvert^2$ | $\tfrac142\,\mathrm{Sc}(M^{\dagger}M)$ | $\mathbb{R}$ | yes |
 | Krein $K$ | $\lvert Q_t\rvert^2-\sum_k\lvert Q_k\rvert^2$ | $\tfrac14\operatorname{Tr}(M^{\mathsf T}M^{\dagger})$ | $\mathbb{R}$ | no |
 
 **The second and the fourth rows use the transpose identity,** $M^{\mathsf T}=M^{\natural}$, and that identity is a property of this basis. In another frame the words have to be written with the conjugation, and $\tfrac14\operatorname{Tr}(M^{\mathsf T}M)$ is then none of the four norms.
@@ -214,7 +214,7 @@ So the matrices of one element over all frames are one conjugacy class and not o
 **Read:** the trace sees the scalar part only, and the traceless part of the image is the vector part.
 
 $$
-\operatorname{Tr}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad \operatorname{Tr}M=0\iff\tilde Q\in\mathbb{B}_{V} .
+2\,\mathrm{Sc}L_{\mathrm{axf}}(\tilde Q)=4Q_t,\qquad 2\,\mathrm{Sc}M=0\iff\tilde Q\in\mathbb{B}_{V} .
 $$
 
 **The split is exact and it is the scalar–vector split in the image.** The trace is additive, bilinear and blind to everything except $Q_t$; the traceless remainder carries the three directions. In this basis the traceless image is also the antisymmetric one, $M^{\mathsf T}=-M$, so inside the image the trace condition and the antisymmetry are one condition.

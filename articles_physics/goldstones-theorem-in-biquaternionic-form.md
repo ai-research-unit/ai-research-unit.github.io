@@ -290,7 +290,7 @@ The Goldstone field's current is $\tilde J_{\Phi}=-f\tilde\nabla_\Phi\vartheta_{
 | $U_{\mathrm{fop},\theta_{\mathrm{cen}}}=\exp(i\theta_{\mathrm{cen}} Ϙ_{\mathrm{fop}})$, $\xi_{\mathrm{fop}}\to \exp(-i\theta_{\mathrm{cen}})\xi_{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
 | $n_{\mathrm{NG}}=\dim G-\dim H$ | Goldstone counting rule |
 | $\mathrm{U}(1)\to\{1\}$; $O(N)\to O(N-1)$ | One Goldstone; $N-1$ Goldstones |
-| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $2\,\mathrm{Sc}(e_t)=2$, $2\,\mathrm{Sc}[\tilde Q_2,\tilde Q_1]=0$ | Scalar-part identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading
 

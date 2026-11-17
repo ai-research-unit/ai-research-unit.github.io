@@ -56,7 +56,7 @@ The two shifts are the canonical-to-kinetic dictionary of the older literature, 
 
 **One setting is not the other.** The free article distinguishes a constant-element setting, in which the equation is an ordinary differential equation with the closed-form propagator, from an operator setting, in which it is the ordinary Schrödinger equation. The coupling has a different face in each: a shift of two numbers in the first, a covariant Laplacian in the second. The two are kept apart below, and no result is transferred between them.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and the free article's $\rho=\mathrm{Tr}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. Time is $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and $i\hbar c\,\partial_{r'_t}=i\hbar\,\partial_{t'}$; the article uses $t'$ and never mixes the two. The charge $ϙ$ is the gauge principle's coupling constant, a parameter the algebra does not fix; its value and its sign are inserted, as *The Electron in Biquaternionic Form* records.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$; the density is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ and the free article's $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2n$ is twice it. Time is $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and $i\hbar c\,\partial_{r'_t}=i\hbar\,\partial_{t'}$; the article uses $t'$ and never mixes the two. The charge $ϙ$ is the gauge principle's coupling constant, a parameter the algebra does not fix; its value and its sign are inserted, as *The Electron in Biquaternionic Form* records.
 
 ## Conventions and the Sign Bookkeeping
 
@@ -104,7 +104,7 @@ $$
 N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=n=\frac{\rho}{2},
 $$
 
-and its conservation is one line from the equation and its conjugate. The factor of two is the $\mathrm{Tr}=2\,\mathrm{Sc}$ convention and not a normalisation; it is stated once here and not again.
+and its conservation is one line from the equation and its conjugate. The factor of two is the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention and not a normalisation; it is stated once here and not again.
 
 **The local version, and what it costs.** The gauge principle localises the centre's $\mathrm{U}(1)$: the angle becomes a real function $\Gamma$, the field acquires the factor $\lambda=\exp(iϙ\Gamma/\hbar)$, and the connection transforms as
 
@@ -294,7 +294,7 @@ In the constant setting the coupling is a shift of two numbers, $\tilde H^{\rm g
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $*,\ \natural$ | Hermitian conjugation, quaternion conjugation |
-| $\mathrm{Sc},\ \mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part, trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $t'$, $r'_t=c\,t'$ | The variable of the article and the parent's material time |
 | $\tilde\Xi\in\mathbb{B}$ | The field: one general element, eight real components |
 | $ϙ$ | The coupling constant; minus the electric charge of the older convention |

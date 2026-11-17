@@ -22,9 +22,9 @@ Two functionals appear below and must be kept apart, because the whole subject t
 
 The treatment is **classical**. The entropy here is the Shannon entropy of a coarse description, and the functional is the classical one throughout. The functional $\mathcal{S}$ coincides numerically, on the matrix representative of $\tilde{Ϛ}_{\Psi}$, with the von Neumann entropy of that $2\times 2$ density matrix, and the reader should not be misled by the coincidence: the von Neumann entropy as such, and the entropies attached to POVMs and to entanglement, belong to the informational subcategory of the sibling quantum category, where the companion article *Von Neumann Entropy and the Biquaternion Norm* develops them, and they are not developed here. Where the quantum interpretation is used, it is used as a bound, and it is identified as such.
 
-The probabilities the functional is built from are themselves readings of the Hermitian form, with the trace as their final reading at normalisation. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm=\langle\tilde\Pi_{1,2}(\vec u_r),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, whose trace reading is $\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ}_{\Psi}^{*})=\operatorname{Tr}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ}_{\Psi})$, the star being inert and the unstarred trace real and non-negative, and the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
+The probabilities the functional is built from are themselves readings of the Hermitian form, normalised by the scalar part of the state. The weights $\lambda_\pm$ of the spectral decomposition are $\lambda_\pm=\langle\tilde\Pi_{1,2}(\vec u_r),\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}(\vec u_r)\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the scalar part of that product real and non-negative, and the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* derives the form of that pairing and fixes the objects it relates; this article takes the form as given and uses it only to read the state's own two-outcome distribution.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{B}_{\Phi}$ and the Hermitian informational sector $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$; the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, normalised by $\mathrm{Tr}(e_t) = 2$; and the Hermitian form for a state and an observable is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, whose trace reading at normalisation is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; the scalar imaginary is $i$, central in $\mathbb{B}$; the two four-dimensional real subspaces are the anti-Hermitian material sector $\mathbb{B}_{\Phi}$ and the Hermitian informational sector $\mathbb{B}_{\Psi}$, with $\mathbb{B} = \mathbb{B}_{\Psi} \oplus \mathbb{B}_{\Phi}$; the reduced value of an element is its doubled scalar part $2\,\mathrm{Sc}(\tilde{Q})$, with $2\,\mathrm{Sc}(e_t) = 2$; and the Hermitian form for a state and an observable is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, whose doubled value is $2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$.
 
 ## The State Space of the Informational Sector
 
@@ -34,10 +34,10 @@ $$
 \tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\left(e_t + i\,\vec r\right), \qquad \vec r = r_1 \vec e_x + r_2 \vec e_y + r_3 \vec e_z, \quad \vec r \in \mathbb{R}^3,
 $$
 
-of the Hermitian subspace $\mathbb{B}_{\Psi}$. The scalar part of $\tilde{Ϛ}_{\Psi}$ is real, its vector part is purely imaginary, and its trace is
+of the Hermitian subspace $\mathbb{B}_{\Psi}$. The scalar part of $\tilde{Ϛ}_{\Psi}$ is real, its vector part is purely imaginary, and its doubled scalar part is
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1 .
+2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1 .
 $$
 
 The state is positive precisely when the Bloch vector lies in the closed unit ball,
@@ -79,7 +79,7 @@ $$
 Equivalently, the purity is
 
 $$
-\mathrm{Tr}\!\left(\tilde{Ϛ}_{\Psi}^2\right) = \tfrac{1}{2}\left(1 + |\vec r|^2\right),
+2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}^2\right) = \tfrac{1}{2}\left(1 + |\vec r|^2\right),
 $$
 
 so that purity and idempotency are the same condition, and the biquaternion norm, the deviation from idempotency, and the purity are three interpretations of the single number $|\vec r|^2$.
@@ -214,10 +214,10 @@ subject to four conditions, each of which has an operational interpretation.
 
 - **Linearity.** $Ξ(a\tilde{Ϛ}_{\Psi,1} + b\tilde{Ϛ}_{\Psi,2}) = aΞ(\tilde{Ϛ}_{\Psi,1}) + bΞ(\tilde{Ϛ}_{\Psi,2})$ for real $a,b$. A coarse-graining of a mixture is the mixture of the coarse-grainings, because the description acts on the preparation rather than on the individual outcome.
 - **Positivity, in the strong form of complete positivity.** The map must remain positive when the sector is described jointly with any reference system, which is the condition that distinguishes a physical operation from a merely positive map, as the companion article *Quantum Channels and the Reversible/Irreversible Dichotomy* develops.
-- **Trace preservation.** $\mathrm{Tr}(Ξ(\tilde{Ϛ}_{\Psi})) = \mathrm{Tr}(\tilde{Ϛ}_{\Psi})$, so that a state is sent to a state. Equivalently the dual map fixes the identity, $Ξ^{*}(e_t) = e_t$.
+- **Preservation of the scalar part.** $2\,\mathrm{Sc}(Ξ(\tilde{Ϛ}_{\Psi})) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, so that a state is sent to a state. Equivalently the dual map fixes the identity, $Ξ^{*}(e_t) = e_t$.
 - **Idempotency and unitality.** $Ξ \circ Ξ = Ξ$ and $Ξ(e_t) = e_t$. The first says that coarse-graining twice is coarse-graining once: once a distinction has been discarded, it cannot be discarded again. The second says that the maximally mixed state is already as coarse as the description can be, so it is fixed.
 
-A linear, completely positive, trace-preserving, idempotent, unital map is a **conditional expectation**: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_{1,2}(\vec u)$ is the fully dephasing map
+A linear, completely positive, idempotent, unital map that preserves the scalar part is a **conditional expectation**: it projects the state space onto the states of a commutative subalgebra, the subalgebra of the quantities the description retains. For a single qubit the commutative subalgebras of $\mathbb{B}$ are two-dimensional, generated by a pair of orthogonal idempotents, and the conditional expectation onto the subalgebra generated by $\tilde\Pi_{1,2}(\vec u)$ is the fully dephasing map
 
 $$
 Ξ_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1(\vec u)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_1(\vec u) + \tilde\Pi_2(\vec u)\,\tilde{Ϛ}_{\Psi}\,\tilde\Pi_2(\vec u) .
@@ -263,19 +263,19 @@ This is the article's second main formula. It is the entropy of the classical re
 
 Coarse-graining cannot decrease the entropy. The proof has two steps, and both are standard.
 
-The first step is that a unital, completely positive, trace-preserving map is a **contraction of the Bloch ball**. This is the Kadison–Schwarz inequality: for a unital completely positive map $Ξ$ one has $Ξ(\tilde{Q})^2 \leq Ξ(\tilde{Q}^2)$ in the matrix order. Taking the trace, and using trace preservation in the form $\mathrm{Tr}(Ξ(\tilde{Q}^2)) = \mathrm{Tr}(\tilde{Q}^2)$,
+The first step is that a unital, completely positive map that preserves the scalar part is a **contraction of the Bloch ball**. This is the Kadison–Schwarz inequality: for a unital completely positive map $Ξ$ one has $Ξ(\tilde{Q})^2 \leq Ξ(\tilde{Q}^2)$ in the matrix order. Taking twice the scalar part of both sides, and using preservation in the form $2\,\mathrm{Sc}(Ξ(\tilde{Q}^2)) = 2\,\mathrm{Sc}(\tilde{Q}^2)$,
 
 $$
-\mathrm{Tr}\!\left(Ξ(\tilde{Q})^2\right) \le \mathrm{Tr}\!\left(Ξ(\tilde{Q}^2)\right) = \mathrm{Tr}\!\left(\tilde{Q}^2\right),
+2\,\mathrm{Sc}\!\left(Ξ(\tilde{Q})^2\right) \le 2\,\mathrm{Sc}\!\left(Ξ(\tilde{Q}^2)\right) = 2\,\mathrm{Sc}\!\left(\tilde{Q}^2\right),
 $$
 
-and with $\tilde{Q} = \tilde{Ϛ}_{\Psi}$ this is the purity inequality $\mathrm{Tr}(Ξ(\tilde{Ϛ}_{\Psi})^2) \le \mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2)$. By the purity formula $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ this is exactly
+and with $\tilde{Q} = \tilde{Ϛ}_{\Psi}$ this is the purity inequality $2\,\mathrm{Sc}(Ξ(\tilde{Ϛ}_{\Psi})^2) \le 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2)$. By the purity formula $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ this is exactly
 
 $$
 |\vec r_{Ξ}| \le |\vec r| ,
 $$
 
-the statement that the map does not push a state outward. Equivalently, and in the form used for classical mechanics, every completely positive trace-preserving map is a contraction in the trace distance, and for a qubit the trace distance between two states is half the Euclidean distance between their Bloch vectors; the contraction of the metric and the contraction of the radius are the same statement.
+the statement that the map does not push a state outward. Equivalently, and in the form used for classical mechanics, every completely positive map that preserves the scalar part is a contraction in the trace distance, a metric built from the matrix trace of the absolute value, and for a qubit the trace distance between two states is half the Euclidean distance between their Bloch vectors; the contraction of the metric and the contraction of the radius are the same statement.
 
 The second step is the monotonicity of the entropy as a function of the radius, established above: $h$ is decreasing on $[0,1]$. Composing the two,
 
@@ -291,7 +291,7 @@ $$
 
 for every coarse-graining $Ξ$. **Coarse-graining never creates information; it can only fail to retain it.** The inequality is strict unless the state already lies in the image of $Ξ$, so a genuine coarse-graining strictly increases the entropy of every state outside its image.
 
-The restriction to unital maps matters and is worth naming. A trace-preserving completely positive map that is *not* unital can lower the entropy of the state — that is refrigeration, which exports entropy to an environment — and such a map is not a coarse-graining in the sense used here. A coarse-graining discards distinctions *within* the description and keeps no ledger of what it exported; the environment, and with it the full accounting of the second law, is the subject of the companion articles *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* and *Maxwell's Demon and the Informational Sector in Biquaternionic Form*.
+The restriction to unital maps matters and is worth naming. A completely positive map that preserves the scalar part and is *not* unital can lower the entropy of the state — that is refrigeration, which exports entropy to an environment — and such a map is not a coarse-graining in the sense used here. A coarse-graining discards distinctions *within* the description and keeps no ledger of what it exported; the environment, and with it the full accounting of the second law, is the subject of the companion articles *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* and *Maxwell's Demon and the Informational Sector in Biquaternionic Form*.
 
 ### The Dephasing Family and Its Rate
 
@@ -393,7 +393,7 @@ The framework's own coarse-grainings sit in this picture as the conditional expe
 
 ## Summary
 
-A coarse-graining of the informational sector is a conditional expectation $Ξ$ on $\mathbb{B}_{\Psi}$: linear, completely positive, trace-preserving, idempotent and unital. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\vec u$, whose action on the Bloch vector is $\vec r\mapsto(\vec u\cdot\vec r)\vec u$.
+A coarse-graining of the informational sector is a conditional expectation $Ξ$ on $\mathbb{B}_{\Psi}$: linear, completely positive, idempotent, unital, and preserving the scalar part. For a single qubit it is the projection onto the states of a commutative subalgebra, and its canonical form is the fully dephasing map along an axis $\vec u$, whose action on the Bloch vector is $\vec r\mapsto(\vec u\cdot\vec r)\vec u$.
 
 The **biquaternion entropy functional** is
 
@@ -428,11 +428,11 @@ The fine-grained value is also the minimum over all preparations of the state, $
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ | State of the informational sector, Bloch vector $\vec r$ |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state, rank one) |
 | $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$ | Eigenvalues (pointer probabilities) of the state |
-| $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_t)=2$ | Trace |
+| $2\,\mathrm{Sc}(\tilde{Q})$, $2\,\mathrm{Sc}(e_t)=2$ | Doubled scalar part |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = \tfrac{1}{4}(|\vec r|^2-1)e_t$ | Deviation from idempotency (mixedness) |
-| $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |
+| $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+|\vec r|^2)$ | Purity |
 | $\log\tilde{Ϛ}_{\Psi} = (\log\lambda_+)\tilde\Pi_1(\vec u_r) + (\log\lambda_-)\tilde\Pi_2(\vec u_r)$ | Logarithm of a state, $|\vec r|<1$ |
 | $\mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = h(|\vec r|)$ | Biquaternion entropy functional |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy function |

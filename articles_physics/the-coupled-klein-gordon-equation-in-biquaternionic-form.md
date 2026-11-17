@@ -332,7 +332,7 @@ The current is $J_\mu=\frac{i}{2k_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The algebra; $e_t=1$, $\vec e_\eta^{2}=-e_t$; $i$ central |
 | $\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$ | Hermitian and anti-Hermitian sectors |
 | $^{*}$, $^{\natural}$ | Hermitian and quaternion conjugation |
-| $\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part; trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $\tilde\Xi=\sum_\mu\Xi_\mu e_\mu$ | The field, a general element of $\mathbb{B}$ |
 | $\tilde A_\Phi=\sum_\mu A_\mu e_\mu$ | The connection; $A_t=i a'_t$ imaginary, $A_\eta$ real in the material case |
 | $ϙ$ | The coupling |

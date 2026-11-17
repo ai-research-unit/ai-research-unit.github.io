@@ -61,7 +61,7 @@ $$
 
 and the charge contraction is $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}=ϙ\,\mathrm{F}(\tilde{V}_{\Phi})$, the biquaternion form of the Lorentz force of Companion article *The Lorentz Force in Biquaternion Form*, for the four-force as an anti-Hermitian projection.
 
-Here $\tau$ is proper time, $r'_t=c\,t'$ the temporal coefficient of the four-position, a length in metres, so the laboratory clock is $t'=r'_t/c$ and $d/d\tau\to d/dt'=c\,d/dr'_t$ in the limit taken below, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{B}_{\Psi}$, read through the trace, is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
+Here $\tau$ is proper time, $r'_t=c\,t'$ the temporal coefficient of the four-position, a length in metres, so the laboratory clock is $t'=r'_t/c$ and $d/d\tau\to d/dt'=c\,d/dr'_t$ in the limit taken below, $\vec v$ the velocity, $\gamma$ the Lorentz factor, $\vec E$ and $\vec B$ the electric field and magnetic induction, and $ϙ,m,g$ the charge, mass, and gyromagnetic factor. The projection is $P_{\mathbb{B}_{\Phi}}(\tilde{Q})=\tfrac12(\tilde{Q}-\tilde{Q}^{*})$, and the Hermitian form on $\mathbb{B}_{\Psi}$, read through the scalar part, is $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 ## The Spin Four-Vector
 
@@ -447,7 +447,6 @@ is the subject of the companion article of this subcategory. The equation's two-
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{\natural})=-Q_{1,0}Q_{2,0}+\vec Q_1\cdot\vec Q_2$ | Invariant pairing on $\mathbb{B}_{\Phi}$ |
 | $B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu=\langle\tilde{S}_{\Psi},\mathrm{F}(\tilde{V}_{\Phi})\rangle$ | Spin–field–velocity invariant |
 | $\vec\omega_T=\frac{\gamma^2}{c^2(\gamma+1)}\vec a\times\vec v$ | Thomas precession angular velocity |
-| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 
 ## Further Reading
 

@@ -244,7 +244,7 @@ $$
 and their traces are $3$ and $1$, the dimensions of the triplet and the singlet:
 
 $$
-\mathrm{Tr}(\tilde\Pi_{\mathrm{sym}})=3,\qquad \mathrm{Tr}(\tilde\Pi_{\mathrm{asym}})=1 .
+2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{sym}})=3,\qquad 2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{asym}})=1 .
 $$
 
 The antisymmetric idempotent is the singlet idempotent of the companion article *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, written there as $\tilde\Pi_{\mathrm{singlet}}=\tfrac14(e_t\otimes e_t+\sum_\eta \vec e_\eta\otimes \vec e_\eta)$; the symmetric idempotent is its complement, of rank three. The two are the spectral projectors of the **exchange operator**

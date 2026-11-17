@@ -49,7 +49,7 @@ $$
 $$
 verified on one hundred elements, with
 $$
-\operatorname{tr}\tilde Q=2t,\qquad \det\mathsf{M}(\tilde Q)=t^{2}-\lvert\vec s\rvert^{2} ,
+2\mathrm{Sc}\tilde Q=2t,\qquad \det\mathsf{M}(\tilde Q)=t^{2}-\lvert\vec s\rvert^{2} ,
 $$
 both verified on one hundred elements, so that the characteristic polynomial is $\lambda^{2}-2t\lambda+\bigl(t^{2}-\lvert\vec s\rvert^{2}\bigr)$.
 
@@ -95,7 +95,7 @@ $$
 
 ## The Cone Is Symmetric
 
-**Proposition (self-duality).** With the trace form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\tfrac12\operatorname{tr}(\tilde Q_1\tilde Q_2)$, the dual cone of $C$ is $C$.
+**Proposition (self-duality).** With the Hermitian form $\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, the dual cone of $C$ is $C$.
 
 *Proof.* On $\mathbb{B}_{\Psi}$ the form is $tu+\vec s\cdot\vec v$, positive definite, so it identifies the space with its dual; the polar of the Lorentz cone under this pairing is the Lorentz cone, which is the elementary Cauchy–Schwarz computation for $t\geq\lvert\vec s\rvert$. The two cones were compared on one hundred elements with no disagreement.
 
@@ -109,15 +109,15 @@ $$
 
 **Definition.** A **state** of $\mathbb{B}_{\Psi}$ is a linear functional $f$ with $f(C)\subseteq\mathbb{R}_{\geq0}$ and $f(e_t)=1$.
 
-**Proposition (the states are the density matrices).** The states are exactly the functionals $f_{\tilde\rho}(\tilde Q)=\operatorname{tr}(\tilde\rho\,\tilde Q)$ with $\tilde\rho\in C$ and $\operatorname{tr}\tilde\rho=1$.
+**Proposition (the states are the density matrices).** The states are exactly the functionals $f_{\tilde\rho}(\tilde Q)=2\mathrm{Sc}(\tilde\rho\,\tilde Q)$ with $\tilde\rho\in C$ and $2\mathrm{Sc}\tilde\rho=1$.
 
-*Proof.* Positivity of $f$ on $C$ is positivity of the representing element in the dual cone, which is $C$ by self-duality; the normalisation $f(e_t)=1$ is $\operatorname{tr}\tilde\rho=1$, since $f_{\tilde\rho}(e_t)=\operatorname{tr}\tilde\rho$ and $\operatorname{tr}e_t=2$ makes the two conditions consistent. The pairing $\operatorname{tr}(\tilde\rho\,\tilde Q)$ was checked non-negative on one hundred pairs of a normalised element of $C$ and an element of $C$, with no failure.
+*Proof.* Positivity of $f$ on $C$ is positivity of the representing element in the dual cone, which is $C$ by self-duality; the normalisation $f(e_t)=1$ is $2\mathrm{Sc}\tilde\rho=1$, since $f_{\tilde\rho}(e_t)=2\mathrm{Sc}\tilde\rho$ and $2\mathrm{Sc}e_t=2$ makes the two conditions consistent. The pairing $2\mathrm{Sc}(\tilde\rho\,\tilde Q)$ was checked non-negative on one hundred pairs of a normalised element of $C$ and an element of $C$, with no failure.
 
-**The state space is the base of the cone**, $\{\tilde\rho\in C : \operatorname{tr}\tilde\rho=1\}$, which is the set of elements $\tfrac12 e_t+i\vec w$ with $\lvert\vec w\rvert\leq\tfrac12$. This is the set the physics corpus calls the state space, and the biquaternion norm of a state is a function of $\lvert\vec w\rvert$ alone, as *Von Neumann Entropy and the Biquaternion Norm* computes.
+**The state space is the base of the cone**, $\{\tilde\rho\in C : 2\mathrm{Sc}\tilde\rho=1\}$, which is the set of elements $\tfrac12 e_t+i\vec w$ with $\lvert\vec w\rvert\leq\tfrac12$. This is the set the physics corpus calls the state space, and the biquaternion norm of a state is a function of $\lvert\vec w\rvert$ alone, as *Von Neumann Entropy and the Biquaternion Norm* computes.
 
 **Theorem (the pure states are the idempotents).** The extreme points of the state space are the rank-one idempotents, $\tfrac12\bigl(e_t+i\vec u\bigr)$ with $\lvert\vec u\rvert=1$.
 
-*Proof.* The state space is the base of the cone, cut by the hyperplane $\operatorname{tr}=1$. A point of a base is extreme exactly when the ray through it is an extreme ray of the cone, which is the elementary part of the Choquet theory of *Cones, Extremal Rays and the Choquet Theory*. The extreme rays of the cone of squares of $H_2(\mathbb{C})$ are the rays of the rank-one positive semidefinite matrices, because a positive semidefinite matrix of rank at least two is a sum of two non-proportional positive semidefinite matrices. The rank-one elements of trace one are therefore the extreme points, and those are $\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert=1$: the idempotents of $H_2(\mathbb{C})$ are $0$, $e_t$ and the rank-one elements, and a rank-one idempotent of trace one has that form. Verified on one hundred unit vectors, the idempotency residual being $1.1\times10^{-16}$ and the trace one.
+*Proof.* The state space is the base of the cone, cut by the hyperplane $2\mathrm{Sc}=1$. A point of a base is extreme exactly when the ray through it is an extreme ray of the cone, which is the elementary part of the Choquet theory of *Cones, Extremal Rays and the Choquet Theory*. The extreme rays of the cone of squares of $H_2(\mathbb{C})$ are the rays of the rank-one positive semidefinite matrices, because a positive semidefinite matrix of rank at least two is a sum of two non-proportional positive semidefinite matrices. The rank-one elements of trace one are therefore the extreme points, and those are $\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert=1$: the idempotents of $H_2(\mathbb{C})$ are $0$, $e_t$ and the rank-one elements, and a rank-one idempotent of trace one has that form. Verified on one hundred unit vectors, the idempotency residual being $1.1\times10^{-16}$ and the trace one.
 
 **The defect of an idempotent candidate is a scalar.** For $\tilde\Pi=\tfrac12(e_t+i\vec u)$ with $\lvert\vec u\rvert$ not one,
 $$
@@ -125,7 +125,7 @@ $$
 $$
 verified on one hundred vectors to $6.7\times10^{-16}$, so the failure of idempotency is a central scalar and the sphere $\lvert\vec u\rvert=1$ is exactly the idempotent locus.
 
-**The Born weight is a positive functional.** For a pure state $\tilde\Pi$ and a state $\tilde\rho$ the number $\operatorname{tr}(\tilde\Pi\tilde\rho)$ is the pairing at a pair of elements of the cone, hence non-negative and at most one by the normalisations. The reading of that number as a probability is the programme's step and not a theorem of the algebra; the algebra supplies the positive functional and the extreme point, which is what the reading needs.
+**The Born weight is a positive functional.** For a pure state $\tilde\Pi$ and a state $\tilde\rho$ the number $2\mathrm{Sc}(\tilde\Pi\tilde\rho)$ is the pairing at a pair of elements of the cone, hence non-negative and at most one by the normalisations. The reading of that number as a probability is the programme's step and not a theorem of the algebra; the algebra supplies the positive functional and the extreme point, which is what the reading needs.
 
 ## The Functional Calculus
 

@@ -49,7 +49,7 @@ $$
 The partial trace over the second factor is defined on the tensor product by
 
 $$
-\mathrm{Tr}_2(A\otimes B) = A \cdot \mathrm{Tr}(B),
+\mathrm{Tr}_2(A\otimes B) = A \cdot 2\,\mathrm{Sc}(B),
 $$
 
 and extended by linearity.
@@ -61,7 +61,7 @@ We compute the partial trace term by term.
 **First diagonal term.** $\frac{1}{2}|\uparrow\downarrow\rangle\langle\uparrow\downarrow| = \frac{1}{2}|\uparrow\rangle\langle\uparrow| \otimes |\downarrow\rangle\langle\downarrow|$, so
 
 $$
-\mathrm{Tr}_2\!\left(\frac{1}{2}|\uparrow\rangle\langle\uparrow| \otimes |\downarrow\rangle\langle\downarrow|\right) = \frac{1}{2}|\uparrow\rangle\langle\uparrow| \cdot \mathrm{Tr}(|\downarrow\rangle\langle\downarrow|) = \frac{1}{2}|\uparrow\rangle\langle\uparrow|.
+\mathrm{Tr}_2\!\left(\frac{1}{2}|\uparrow\rangle\langle\uparrow| \otimes |\downarrow\rangle\langle\downarrow|\right) = \frac{1}{2}|\uparrow\rangle\langle\uparrow| \cdot 2\,\mathrm{Sc}(|\downarrow\rangle\langle\downarrow|) = \frac{1}{2}|\uparrow\rangle\langle\uparrow|.
 $$
 
 **Second diagonal term.** $\frac{1}{2}|\downarrow\uparrow\rangle\langle\downarrow\uparrow| = \frac{1}{2}|\downarrow\rangle\langle\downarrow| \otimes |\uparrow\rangle\langle\uparrow|$, so
@@ -73,7 +73,7 @@ $$
 **First cross term.** $\frac{1}{2}|\uparrow\downarrow\rangle\langle\downarrow\uparrow| = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \otimes |\downarrow\rangle\langle\uparrow|$, so
 
 $$
-\mathrm{Tr}_2\!\left(\frac{1}{2}|\uparrow\rangle\langle\downarrow| \otimes |\downarrow\rangle\langle\uparrow|\right) = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \cdot \mathrm{Tr}(|\downarrow\rangle\langle\uparrow|) = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \cdot \langle\uparrow|\downarrow\rangle = 0,
+\mathrm{Tr}_2\!\left(\frac{1}{2}|\uparrow\rangle\langle\downarrow| \otimes |\downarrow\rangle\langle\uparrow|\right) = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \cdot 2\,\mathrm{Sc}(|\downarrow\rangle\langle\uparrow|) = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \cdot \langle\uparrow|\downarrow\rangle = 0,
 $$
 
 since $|\uparrow\rangle$ and $|\downarrow\rangle$ are orthogonal.
@@ -199,7 +199,7 @@ $$
 which is a product state (not entangled). The reduced state of particle 1 is
 
 $$
-\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = \mathrm{Tr}_2\!\left(|\uparrow\rangle\langle\uparrow| \otimes |\uparrow\rangle\langle\uparrow|\right) = |\uparrow\rangle\langle\uparrow| \cdot \mathrm{Tr}(|\uparrow\rangle\langle\uparrow|) = |\uparrow\rangle\langle\uparrow|.
+\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = \mathrm{Tr}_2\!\left(|\uparrow\rangle\langle\uparrow| \otimes |\uparrow\rangle\langle\uparrow|\right) = |\uparrow\rangle\langle\uparrow| \cdot 2\,\mathrm{Sc}(|\uparrow\rangle\langle\uparrow|) = |\uparrow\rangle\langle\uparrow|.
 $$
 
 In biquaternion form, the joint state is

@@ -344,7 +344,7 @@ The framework's contribution to the construction is the target manifold, the inv
 | $\pi\sim\pi+2\pi f$ | Compact phase of the abelian target |
 | $a,b$ | Internal isospin indices, written low; every contraction over them is an explicit sum |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
+| $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ | Reduction convention |
 
 ## Further Reading
 

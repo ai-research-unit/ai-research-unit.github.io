@@ -40,7 +40,7 @@ and it fails on every $N$-degenerate element. The three conditions are one condi
 
 **The condition is the whole of the qualification, and it is weak.** The cone is a set of measure zero and it is not the carrier: a generic element of $\mathbb{B}$ is invertible, and the flow preserves the cone, so a field is invertible at every event or at none (§*The Domain*). Nothing has to be excluded in advance and no carrier has to be declared. The polar word of this equation is therefore a parametrisation of the field itself, with no ideal, no projector and no axis behind it.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Tr}=2\,\mathrm{Sc}$. Time is written $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and the parent's $i\hbar c\,\partial/\partial r'_t$ is $i\hbar\,\partial/\partial t'$; the two forms are used interchangeably and $\hbar$ is written explicitly in both.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian fixed subspaces; $\natural$ is quaternion conjugation and $*$ the Hermitian one; $\mathrm{Sc}$ is the coefficient of $e_t$. Time is written $t'$ and the parent's material length is $r'_t=c\,t'$, so $\partial/\partial r'_t=c^{-1}\partial/\partial t'$ and the parent's $i\hbar c\,\partial/\partial r'_t$ is $i\hbar\,\partial/\partial t'$; the two forms are used interchangeably and $\hbar$ is written explicitly in both.
 
 **No wave number is used in this article, and that is deliberate.** A letter $k$ earns its place only where a mass, a momentum or an energy is absorbed by it, as $k_m=mc/\hbar$ absorbs the mass in the Dirac and Klein–Gordon equations. Here nothing is absorbed: the constant that multiplies the time derivative is $\hbar$, and the mass enters only through the operator $\tilde H_\Psi$ and, in the central case, through the kinetic term $|\vec\nabla_\Phi S|^{2}/2m$. Writing $k_m$ would require the composite $mc^{2}/k_m$, in which $m$ cancels and only $\hbar c$ survives, so the letter would hide the constant instead of naming a physical wave number. Every $\hbar$ below is therefore the reduced Planck constant and nothing else.
 
@@ -73,7 +73,7 @@ $$
 
 so the symbol is Hermitian for the sesquilinear form $\langle\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X\tilde Y^{*})$, and the flow preserves $\mathrm{Sc}(\tilde X\tilde X^{*})$.
 
-**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex Hermitian array with $\mathrm{Tr}\,L_{\mathrm{axf}}(\tilde H_\Psi)=4h_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, and it names no spatial direction. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: the equation is written with elements and read with an axis-free array, and no matrix algebra stands between the two.
+**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex Hermitian array with $2\,\mathrm{Sc}\,L_{\mathrm{axf}}(\tilde H_\Psi)=4h_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, and it names no spatial direction. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: the equation is written with elements and read with an axis-free array, and no matrix algebra stands between the two.
 
 ### The word
 
@@ -88,7 +88,7 @@ $$
 a central element that reads the scale and the phase and nothing else; and the Hermitian norm is
 
 $$
-\rho=\mathrm{Tr}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}},
+\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}},
 $$
 
 a positive real number that reads the scale and the boost and nothing else. Neither norm sees the rotor, and the reason is structural: the rotor is real and unitary, so it cancels in both.
@@ -281,7 +281,7 @@ $$
 $$
 and the circulation around any closed loop that does not enclose a node is zero. That is the irrotationality of Madelung's fluid, and it is a property of the phase and not of the algebra. The exception is a nodal line: the action is multivalued there and the circulation need not vanish, which is the quantised circulation of *The Nodal Set and Quantized Circulation*. In the general field the current reads the scale and the boost, and the rotor contributes nothing, exactly as the two norms say.
 
-**The density is a probability density and the current is its flux.** $\rho$ is positive by construction, because it is $\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ and $\tilde\Xi^{\dagger}\tilde\Xi$ is positive in the Hermitian form; the equation preserves it, because it is the norm of a $*$-unitary flow. The definiteness is a consequence of the order of the equation: here the density is a norm and not the temporal slot of a current, so it has no sign to lose, while a second-order equation's density is the temporal slot of its current and its sign is the sign of the energy.
+**The density is a probability density and the current is its flux.** $\rho$ is positive by construction, because it is $2\,\mathrm{Sc}(\tilde\Xi^{\dagger}\tilde\Xi)$ and $\tilde\Xi^{\dagger}\tilde\Xi$ is positive in the Hermitian form; the equation preserves it, because it is the norm of a $*$-unitary flow. The definiteness is a consequence of the order of the equation: here the density is a norm and not the temporal slot of a current, so it has no sign to lose, while a second-order equation's density is the temporal slot of its current and its sign is the sign of the energy.
 
 ### Why there is no mass shell
 
@@ -339,7 +339,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $N(\tilde\Xi)$ | Determinant; the word exists iff $N\neq0$ |
 | $\langle\tilde X\rangle_{\natural}=\tilde X\tilde X^{\natural}$ | Quaternionic norm |
 | $\natural,\ *$ | Quaternion conjugation, Hermitian conjugation |
-| $\mathrm{Sc},\ \mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part, trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $\tilde\Xi=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The polar word of the field |
 | $r>0$ | The scale |
 | $\theta_{\mathrm{pha}}$ | The central angle |
@@ -351,7 +351,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 | $\tilde Q(t')=\exp(-i\theta_{\mathrm{evo}})=e^{i\theta_{\mathrm{pha},Q}}\tilde u_Q$ | The propagator and its word |
 | $\theta=\lvert\vec h_\Psi\rvert t'/\hbar$ | The parent's angle; the rotor's half-angle |
 | $\tilde u_Q=\cos\theta\,e_t+\sin\theta\,\vec u_\Psi$ | The propagator's rotor |
-| $\rho=\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)$ | Density (Hermitian norm) |
+| $\rho=2\,\mathrm{Sc}(\tilde\Xi^{\dagger}\tilde\Xi)$ | Density (Hermitian norm) |
 | $Q=-\hbar^{2}\Delta_\Phi r/(2mr)$ | Quantum potential |
 | $L_{\mathrm{axf}}(\tilde H_\Psi)$ | Axis-free $4\times4$ array of the symbol |
 

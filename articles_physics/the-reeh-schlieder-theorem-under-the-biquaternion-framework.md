@@ -57,9 +57,9 @@ The Hermitian GNS construction of the companion article associates to every stat
 $$
 \mathcal H_{\tilde{Ϛ}_{\Psi}}=\mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}_{\Psi}},
 \qquad
-\mathcal{N}_{\tilde{Ϛ}_{\Psi}}=\big\{\tilde Q_3:\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3)=0\big\},
+\mathcal{N}_{\tilde{Ϛ}_{\Psi}}=\big\{\tilde Q_3:2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3)=0\big\},
 \qquad
-\langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
+\langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
 $$
 with representation $\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)[\tilde Q_1]=[\tilde Q_3\tilde Q_1]$ and cyclic vector $\Omega_{\tilde{Ϛ}_{\Psi}}=[e_t]$. The vector is cyclic by construction: the classes $[\tilde Q_3]=\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)\Omega_{\tilde{Ϛ}_{\Psi}}$ run over every element of the quotient, so $\pi_{\tilde{Ϛ}_{\Psi}}(\mathbb{B})\Omega_{\tilde{Ϛ}_{\Psi}}=\mathcal H_{\tilde{Ϛ}_{\Psi}}$ exactly, not merely densely.
 
@@ -105,8 +105,8 @@ the classes $\Omega=[e_t]$ and $\vec\Upsilon_y\Omega=[\vec\Upsilon_y]$ are ortho
 The GNS radical of the vacuum is not trivial, and an explicit element of it is the annihilation operator. Using $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ and $\tilde\Pi_+\tilde\Pi_-=0$,
 $$
 \boxed{\;\big\langle\Omega_{\tilde{Ϛ}_{\Psi}}\big|\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)^\dagger\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)\big|\Omega_{\tilde{Ϛ}_{\Psi}}\big\rangle
-=\mathrm{Tr}\big(\tilde\Pi_+\,\vec\Upsilon_y\vec\Upsilon_x\big)
-=\mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big)=0\;}.
+=2\,\mathrm{Sc}\big(\tilde\Pi_+\,\vec\Upsilon_y\vec\Upsilon_x\big)
+=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde\Pi_-\big)=0\;}.
 $$
 So $\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)\Omega_{\tilde{Ϛ}_{\Psi}}=0$ with $\vec\Upsilon_x\ne0$: the vacuum fails to be separating, and the witness is the annihilation operator. Equivalently, the vacuum idempotent is a **zero divisor** — $\langle\tilde\Pi_+\rangle_{\natural}=0$ — and the zero-divisor direction is the state's failure of faithfulness. The two facts are the same fact.
 
@@ -156,7 +156,7 @@ The generator is the commutator with the modular Hamiltonian, which is the finit
 
 A cyclic and separating vector of a modular algebra is a KMS state, at inverse temperature one in the modular parameter, for the inverse of the modular flow — the orientation convention of the KMS and Tomita–Takesaki companion articles, in which it is $\sigma_{-r'_t}$ that carries the boundary relation. In the finite model this is a computation rather than an assertion. Let $\tilde Q_3,\tilde Q_1\in\mathbb{B}$ and let
 $$
-F_{\tilde Q_3\tilde Q_1}(r'_t)=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3\,\alpha_{r'_{t}}(\tilde Q_1)\big),
+F_{\tilde Q_3\tilde Q_1}(r'_t)=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3\,\alpha_{r'_{t}}(\tilde Q_1)\big),
 \qquad
 \alpha_{r'_{t}}\big(\tilde Q_1\big)=\tilde{Ϛ}_{\Psi}^{-ir'_t}\tilde Q_1\,\tilde{Ϛ}_{\Psi}^{\,ir'_t},
 $$
@@ -247,7 +247,7 @@ The separating property is recovered where the theorem actually lives: on the in
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $\mathcal A(O)$ | Local algebra of the region $O$ |
 | $\Omega$ | Vacuum vector; cyclic and separating |
 | $\mathcal H_{\tilde{Ϛ}_{\Psi}},\pi_{\tilde{Ϛ}_{\Psi}},\Omega_{\tilde{Ϛ}_{\Psi}}$ | GNS Hilbert space, representation, cyclic vector |

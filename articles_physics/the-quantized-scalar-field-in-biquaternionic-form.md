@@ -271,7 +271,7 @@ The biquaternion content of the field operator is therefore confined to its valu
 | $\tilde P_{\Phi}=i\omega\,e_t+\vec p$, $\langle\tilde P_{\Phi}\rangle_{\natural}=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ | Material four-wavevector and biquaternion norm |
 | $U_{\mathrm{fop},\theta_{\mathrm{cen}}}=\exp(i\theta_{\mathrm{cen}} Ϙ_{\mathrm{fop}})$, $\xi_{\mathrm{fop}}\to \exp(-i\theta_{\mathrm{cen}})\xi_{\mathrm{fop}}$ | Central $\mathrm{U}(1)$ phase |
 | $\tilde U\in\mathbb{B}_{\Psi}$, $\tilde U e_t\tilde U^{*}=e_t$ | Lorentz rotor; trivial action on the centre |
-| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $2\,\mathrm{Sc}(e_t)=2$, $2\,\mathrm{Sc}[\tilde Q_2,\tilde Q_1]=0$ | Scalar-part identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading
 

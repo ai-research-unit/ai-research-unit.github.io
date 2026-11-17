@@ -67,7 +67,7 @@ $$
 with a complex $2\times2$ coefficient matrix $M=(M_{ij})$. Normalisation is
 
 $$
-\langle\tilde{Ξ}|\tilde{Ξ}\rangle=\sum_{i,j}|M_{ij}|^2=\mathrm{Tr}(MM^\dagger)=1 .
+\langle\tilde{Ξ}|\tilde{Ξ}\rangle=\sum_{i,j}|M_{ij}|^2=2\,\mathrm{Sc}(MM^\dagger)=1 .
 $$
 
 The partial traces are computed directly from this form. The matrix elements of $\rho_1$ are

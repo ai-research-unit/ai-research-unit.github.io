@@ -50,7 +50,7 @@ with $r>0$ real, $\theta_{\mathrm{pha}}$ central and real, the third factor a He
 **The limit's amplitude is the scale, and the limit's density is the Hermitian norm.** The parent's two norms read different factors: the quaternionic norm is $\langle\tilde\Xi\rangle_{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ and reads the scale and the phase, and the Hermitian norm is
 
 $$
-\rho=\mathrm{Tr}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}}
+\rho=2\,\mathrm{Sc}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\,\mathrm{Sc}\bigl(\tilde\Xi\tilde\Xi^{*}\bigr)=2r^{2}\cosh\theta_{\mathrm{rpd}}
 $$
 
 and reads the scale and the boost. On the central class $\theta_{\mathrm{rpd}}=0$ and $\rho=2r^{2}$, so the density of the limit is the Hermitian norm evaluated where the boost is the identity. **Away from that class the two do not agree at any order**, and that is why the limit is stated there and not here.

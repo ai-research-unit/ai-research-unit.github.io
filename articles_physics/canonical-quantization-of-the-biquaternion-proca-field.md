@@ -332,7 +332,7 @@ The massless limit is the limit in which the two constraints become first class,
 | $a_{\mathrm{fop},r}(\vec p),a_{\mathrm{fop},r}^{\dagger}(\vec p)$ | Mode operators with $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$ |
 | $:H:=\int d^3p/(2\pi\hbar)^3\,\omega_{\vec p}\sum_ra_{\mathrm{fop},r}^{\dagger}a_{\mathrm{fop},r}$ | Normal-ordered Hamiltonian |
 | $D_{\mu\nu}(p)=i(\delta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$ | Proca propagator; residue is the polarization projector |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace formula |
 
 ## Further Reading
 

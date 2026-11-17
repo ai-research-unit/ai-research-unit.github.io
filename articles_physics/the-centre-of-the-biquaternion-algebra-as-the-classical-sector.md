@@ -61,9 +61,9 @@ The identification $Z(M_2(\mathbb{C}))=\mathbb{C}I_2$ is the standard statement 
 
 **The two forms on the centre.** The Hermitian form restricts to
 $$
-\langle\lambda e_t,\mu e_t\rangle_{*}=\mathrm{Tr}\bigl((\lambda e_t)^{*}(\mu e_t)\bigr)=2\,\lambda^{*}\mu ,
+\langle\lambda e_t,\mu e_t\rangle_{*}=2\,\mathrm{Sc}\bigl((\lambda e_t)^{*}(\mu e_t)\bigr)=2\,\lambda^{*}\mu ,
 $$
-positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the trace normalization $\mathrm{Tr}(e_t)=2$. The biquaternion norm restricts to the **complex square**,
+positive definite on $\mathbb{C}$; it is the standard Hermitian form of the scalars, up to the normalization $2\,\mathrm{Sc}(e_t)=2$. The biquaternion norm restricts to the **complex square**,
 $$
 \langle \lambda e_t\rangle_{\natural}=\lambda^2e_t ,
 $$
@@ -97,14 +97,14 @@ and since the derivations are the infinitesimal symmetries, this is the infinite
 $$
 \tilde{Q}\in Z(\mathbb{B})
 \iff
-\mathrm{Tr}\bigl(\tilde{Q}\tilde{Q}_1\bigr)=\tfrac12\,\mathrm{Tr}(\tilde{Q})\,\mathrm{Tr}(\tilde{Q}_1)
+2\,\mathrm{Sc}\bigl(\tilde{Q}\tilde{Q}_1\bigr)=2\,\mathrm{Sc}(\tilde{Q})\,\mathrm{Sc}(\tilde{Q}_1)
 \quad\text{for all }\tilde{Q}_1\in\mathbb{B}.
 $$
-The proof is one line: the condition says $\mathrm{Tr}\bigl((\tilde{Q}-\tfrac12\mathrm{Tr}(\tilde{Q})e_t)\tilde{Q}_1\bigr)=0$ for all $\tilde{Q}_1$, and the trace pairing is non-degenerate, so the bracket vanishes. The **physical interpretation** is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
+The proof is one line: the condition says $2\,\mathrm{Sc}\bigl((\tilde{Q}-\mathrm{Sc}(\tilde{Q})e_t)\tilde{Q}_1\bigr)=0$ for all $\tilde{Q}_1$, and the bilinear pairing is non-degenerate, so the bracket vanishes. The **physical interpretation** is the familiar one: a classical observable has no correlations with anything — the expectation of its product with any other observable factors into the product of expectations. Centrality is the algebraic form of statistical independence from the rest of the algebra, which is the defining property of a classical parameter.
 
 **5. The matrix-model characterization.** Under the representation, $Z(\mathbb{B})$ corresponds to the scalar matrices $\mathbb{C}I_2$; equivalently, these are the elements on which the left regular representation and the right regular representation coincide. This is the form in which the statement is standard: a full matrix algebra over a field has the field itself as its centre.
 
-The five characterizations — commuting, symmetry-fixed, derivation-free, correlation-free, representation-theoretic — agree because each is a facet of the same subalgebra. That agreement is what justifies calling the centre *the* classical sector rather than *a* classical sector: it is picked out by the algebra's own operations, by its automorphism group, by its trace form, and by its representation, with no further input.
+The five characterizations — commuting, symmetry-fixed, derivation-free, correlation-free, representation-theoretic — agree because each is a facet of the same subalgebra. That agreement is what justifies calling the centre *the* classical sector rather than *a* classical sector: it is picked out by the algebra's own operations, by its automorphism group, by its bilinear form, and by its representation, with no further input.
 
 ## Central Simple Structure and the Absence of Superselection
 
@@ -138,14 +138,14 @@ The absence of central projections is therefore a genuine algebraic limitation, 
 
 The limitations of the preceding section are structural, and they do not diminish the sense in which the centre **is** the classical sector. That sense is made precise by four properties of central elements, each of which is a classical marker.
 
-**1. Central observables have no dispersion and no state dependence.** Let $\tilde Q_3=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}_{\Psi}$ be any state. The trace formula gives
+**1. Central observables have no dispersion and no state dependence.** Let $\tilde Q_3=\lambda e_t$ with $\lambda\in\mathbb{R}$ be a Hermitian central element and let $\tilde{Ϛ}_{\Psi}$ be any state. The reduction formula gives
 $$
-\langle\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi}\lambda e_t\bigr)=\lambda\,\mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi}\bigr)=\lambda ,
+\langle\tilde Q_3\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\lambda e_t\bigr)=\lambda\,2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}\bigr)=\lambda ,
 $$
 independently of the state. The variance vanishes in every state,
 $$
 \bigl\langle(\tilde Q_3-\lambda e_t)^2\bigr\rangle_{\tilde{Ϛ}_{\Psi}}
-=\mathrm{Tr}\Bigl(\tilde{Ϛ}_{\Psi}\,(\tilde Q_3-\lambda e_t)^2\Bigr)=0 .
+=2\,\mathrm{Sc}\Bigl(\tilde{Ϛ}_{\Psi}\,(\tilde Q_3-\lambda e_t)^2\Bigr)=0 .
 $$
 A quantity whose expectation value is the same in every state and whose uncertainty is zero is not a quantum observable in any operational sense; it is a **parameter**. The centre is exactly the set of such quantities, and this is the sharpest algebraic expression of the statement that its elements are classical.
 
@@ -176,7 +176,7 @@ $$
 $$
 with $\tilde\Pi(\vec u)$ and $e_t-\tilde\Pi(\vec u)$ the two orthogonal projections along the axis $\vec u$. The projections are idempotent and mutually orthogonal, and their algebra is exactly the algebra of a classical two-valued observable — a classical **bit**. Two different axes give different MASAs, conjugate under $\mathrm{U}(2)$ but distinct as subalgebras.
 
-The two projections are the density matrices of the two possible outcomes along the axis, with $\mathrm{Tr}(\tilde\Pi(\vec u))=\mathrm{Tr}(e_t-\tilde\Pi(\vec u))=1$ and $\tilde\Pi(\vec u)\,(e_t-\tilde\Pi(\vec u))=0$; their sum is the unit, $\tilde\Pi(\vec u)+(e_t-\tilde\Pi(\vec u))=e_t$, whose trace is $\mathrm{Tr}(e_t)=2$. The family of MASAs is parametrized by the axis modulo its sign, because
+The two projections are the density matrices of the two possible outcomes along the axis, with $2\,\mathrm{Sc}(\tilde\Pi(\vec u))=2\,\mathrm{Sc}(e_t-\tilde\Pi(\vec u))=1$ and $\tilde\Pi(\vec u)\,(e_t-\tilde\Pi(\vec u))=0$; their sum is the unit, $\tilde\Pi(\vec u)+(e_t-\tilde\Pi(\vec u))=e_t$, whose doubled scalar part is $2\,\mathrm{Sc}(e_t)=2$. The family of MASAs is parametrized by the axis modulo its sign, because
 $$
 \mathbb{A}_{-\vec u}=\mathrm{span}_\mathbb{C}\bigl\{\tilde\Pi(-\vec u),e_t-\tilde\Pi(-\vec u)\bigr\}
 =\mathrm{span}_\mathbb{C}\bigl\{e_t-\tilde\Pi(\vec u),\tilde\Pi(\vec u)\bigr\}=\mathbb{A}_{\vec u} .
@@ -225,9 +225,9 @@ because every element commutes with the scalars. The two statements together ide
 $$
 \Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=(\lambda e_t)\,\tilde{Ϛ}_{\Psi}\,(\lambda e_t)^{*}=|\lambda|^2\tilde{Ϛ}_{\Psi},
 $$
-It is a positive multiple of $\tilde{Ϛ}_{\Psi}$, hence the same state after normalization, and it is the identity on trace-one states exactly for the $*$-unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
+It is a positive multiple of $\tilde{Ϛ}_{\Psi}$, hence the same state after normalization, and it is the identity on normalised states exactly for the $*$-unitary central scalars, $|\lambda|=1$. The centre is the part of the algebra that the state space cannot see.
 
-**3. The central normalizations.** The two normalizations that the framework imposes on its states are central conditions. The trace-one condition is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.
+**3. The central normalizations.** The two normalizations that the framework imposes on its states are central conditions. The normalisation is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=1$ — the left side is a central scalar, so the condition is a statement about the centre — and the normalization of a spinor is $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})=1$, again a central value. Scale, phase, and the unit of measurement are classical data, and the centre is where they are stored. This is the operational counterpart of the parameter statement of the previous section: the framework does not merely contain $c$-numbers, it normalizes its states by them.
 
 **4. The centre through the passage $\mathbb{R}\to\mathbb{C}\to\mathbb{H}$.** The three division algebras have centres $\mathbb{R}$, $\mathbb{R}$, and $\mathbb{C}$ respectively:
 $$
@@ -301,7 +301,7 @@ The centre's limitations are as exact as its properties. Because $\mathbb{B}$ is
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $Z(\mathbb{B})=\mathbb{B}_{C}=\mathbb{C}e_t$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{B}_{C}$ |
 | $Z(\mathbb{B})\cap\mathbb{B}_{\Psi}=\mathbb{R}e_t$ | Hermitian central elements |
-| $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde{Q})=2Q_t$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm, $\langle \lambda e_t\rangle_{\natural}=\lambda^2e_t$ |
 | $\mathrm{Ad}_{\tilde Q}(\tilde{Q})=\tilde Q\tilde{Q}\tilde Q^{*}$ | Adjoint (inner) action |
 | $\mathrm{ad}_{\tilde{Q}}(\tilde{Q}_1)=[\tilde{Q},\tilde{Q}_1]$ | Inner derivation |

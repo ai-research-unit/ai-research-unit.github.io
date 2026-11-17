@@ -137,7 +137,6 @@ where $\mathsf{M}_2$ is the isomorphism of *The Element and Operator Representat
 Three properties of this image are used constantly, and each is exact:
 
 1. **It is a homomorphism for the entrywise product.** If the array product is taken entrywise, with each entry multiplied in $\mathbb{B}$, then the image of the product is the product of the images.
-2. **Its trace is the biquaternion trace.** The ordinary trace of the $2n\times2n$ image equals $2\,\mathrm{tr}(Q_t)$, twice the trace of the scalar component matrix, which is exactly the corpus's trace $2\,\mathrm{Sc}$ summed over the diagonal.
 3. **Its dagger is the array dagger.** Transposing the array and applying the Hermitian conjugation in the algebra to every entry carries the image to the conjugate transpose.
 
 The inner $2\times2$ blocks of the image carry the slice structure. For a real-quaternion array, whose coefficients are complex matrices with real entries only, the image takes the **time-reversal symmetric** block form
@@ -186,7 +185,7 @@ The two splits of the algebra do not align, and the arithmetic makes the misalig
 
 The eight real parameters split into the real-quaternion and antiquaternion halves, $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{B}_{iH}$, on the criterion of complex conjugation, and that is the split the multiplication algorithm respects: when both factors lie in one half the product costs eight real multiplications instead of twenty-four, because the coefficients are then real or purely imaginary and the complex step of the scheme disappears. The corpus's sector split $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$ cuts across it, as *Algebra and Element Conventions* records: an element of $\mathbb{B}_{\Phi}$ has an imaginary scalar part and a real vector part, so it uses one parameter of the antiquaternion half and three of the real-quaternion half. A sector-restricted problem is therefore **not** automatically the cheap one; only the complex-conjugation halves are, and a product whose factors mix the halves costs what the full algebra costs.
 
-The trace is where the arithmetic and the physics meet most directly. The corpus's trace, $\mathrm{Tr}(\tilde Q_1\tilde Q_2^{*})=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, is the trace formula on which the Born rule is written; the machine's trace, taken on the complex image of a matrix-valued biquaternion, is the same number. The probability read off the arithmetic is the probability the algebra defines, with no normalisation imported from the implementation.
+The doubled scalar part is where the arithmetic and the physics meet most directly. The corpus's trace, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$, is the reduction formula on which the Born rule is written; the machine's trace, taken on the complex image of a matrix-valued biquaternion, is the same number. The probability read off the arithmetic is the probability the algebra defines, with no normalisation imported from the implementation.
 
 Beyond the trace and the block structure, the framework enters the cost accounting only through the problem's symmetry. The source's whole construction rests on the fact, developed in the corpus's articles on Kramers degeneracy, that in a time-reversal symmetric problem the Hamiltonian is real-quaternion and in a time-reversal antisymmetric problem it is purely imaginary-quaternion; and it is precisely those two restricted classes that the eight-multiplication regime serves. A problem with both, such as a magnetic perturbation or an open-shell non-collinear system, is the twenty-four-multiplication case. The cost therefore organises itself along the corpus's symmetry classes rather than along its sectors.
 
@@ -235,7 +234,6 @@ Multiplying two general biquaternions naively costs sixteen complex multiplicati
 
 The same scheme applies unchanged to matrix-valued biquaternions, because it is bilinear with scalar coefficients and never uses commutativity: a fully populated matrix-valued product costs twenty-four real matrix-matrix multiplications instead of sixty-four, and a real-quaternion one eight instead of sixteen. The memory of the array form equals that of its $2n\times2n$ complex image, and the array form reaches roughly twice the dimension before a 32-bit workspace limit binds.
 
-The image is the object the machine consumes, and its structure is the corpus's structure: a real-quaternion array is a complex matrix with the time-reversal symmetric block form, an antiquaternion array one with the time-reversal antisymmetric form, the image of the entrywise product is the product of the images, the trace of the image is the biquaternion trace $2\,\mathrm{Sc}$, and the image of the dagger is the conjugate transpose. A Hermitian biquaternion eigenvalue problem is mapped to the complex image and reduced, when the blocks are diagonal or anti-diagonal, to two problems of half the dimension by a Hadamard-type $*$-unitary rotation.
 
 The split the arithmetic respects is $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{B}_{iH}$, not the sector split $\mathbb{B} = \mathbb{B}_{\Phi}\oplus\mathbb{B}_{\Psi}$; the two cuts cross, so a sector-restricted problem need not be the cheap one. The source's measurements on modern CPU and GPU systems show the count turning into speed, by factors from about $1.2$ to about $7.3$ on multiplication and by about $12$ and $61$ on diagonalisation, at dimensions in the tens of thousands. All of it is arithmetic about an algebra: it neither supports nor threatens the claim that the algebra is the world's.
 
@@ -260,7 +258,6 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{B}_{H}\oplus \mathbb{
 | $M=I_n\otimes\mathsf{M}_2(Q_t)+\sum_\eta\mathsf{M}_2(\vec e_\eta)\otimes Q_\eta$ | The complex image, size $2n\times2m$ |
 | $M^+=\begin{pmatrix}A&B\\-B^{*}&A^{*}\end{pmatrix}$ | Image block of a real-quaternion array |
 | $M^-=\begin{pmatrix}G&H\\H^{*}&-G^{*}\end{pmatrix}$ | Image block of an antiquaternion array |
-| $\mathrm{tr}(M)=2\,\mathrm{tr}(Q_t)$ | The image trace is the biquaternion trace $2\,\mathrm{Sc}$ on the diagonal |
 | $U_\alpha=\frac{1}{\sqrt2}\begin{pmatrix}I&I\alpha I&-\alpha I\end{pmatrix}$ | Hadamard-type $*$-unitary, $|\alpha|=1$, $M$ block anti-diagonal |
 | $\alpha^{*}B=\alpha A$ | The condition for $U_\alpha^{\dagger}MU_\alpha$ to be block diagonal |
 | $G=VU^{\dagger}$ | The completing matrix from the SVD $A=U\Sigma V^{\dagger}$ |

@@ -39,7 +39,7 @@ so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are it
 $$
 \tilde\Pi_{1,2}(\vec u) = \tfrac12\bigl(e_t \pm i\vec u\bigr), \qquad |\vec u| = 1,
 $$
-and for a Hermitian observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ the Born pairing is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = h_t + \vec r\cdot\vec h_\Psi$, whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\operatorname{Tr}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real, and non-negative when $\tilde H_\Psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
+and for a Hermitian observable $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ the Born pairing is $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = h_t + \vec r\cdot\vec h_\Psi$, whose trace reading at normalisation is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})/2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real, and non-negative when $\tilde H_\Psi\ge0$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
 
 ### Why the carrier is forced
 
@@ -193,7 +193,7 @@ This has the right formal properties — it preserves Hermiticity and the inerti
 $$
 \tilde U_{\Psi,\mathrm b}\,\tfrac12 e_t\,\tilde U_{\Psi,\mathrm b}^{*} = \tfrac12\tilde U_{\Psi,\mathrm b}^2 ,
 \qquad
-\mathrm{Tr}\bigl(\tilde U_{\Psi,\mathrm b}\tfrac12 e_t\tilde U_{\Psi,\mathrm b}^{*}\bigr) = \cosh\theta_{\mathrm{rpd}} \neq 1 ,
+2\,\mathrm{Sc}\bigl(\tilde U_{\Psi,\mathrm b}\tfrac12 e_t\tilde U_{\Psi,\mathrm b}^{*}\bigr) = \cosh\theta_{\mathrm{rpd}} \neq 1 ,
 $$
 and after normalizing, the centre of the Bloch ball is carried to the point
 $$
@@ -267,7 +267,7 @@ The frame dependence of everything that follows enters through the momentum argu
 $$
 \tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}\,i \vec e_\eta , \qquad [\tilde{S}_{\Psi,j},\tilde{S}_{\Psi,\eta}] =i\,\hbar\,\epsilon_{j\eta l}\,\tilde{S}_{\Psi,l},
 $$
-and the Born pairing $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$. The four-momentum is the material element $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}\in\mathbb{B}_{\Phi}$, with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$; it is not an observable but the frame datum that labels which little-group qubit is in question.
+and the Born pairing $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$. The four-momentum is the material element $\tilde{P}_{\Phi} = m\tilde{V}_{\Phi}\in\mathbb{B}_{\Phi}$, with $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} = -m^{2}\,c^{2}$; it is not an observable but the frame datum that labels which little-group qubit is in question.
 
 **Generators.** The generators of the two transformation groups lie in the two sectors. The rotation generators are the traceless anti-Hermitian elements, the pure vectors
 $$

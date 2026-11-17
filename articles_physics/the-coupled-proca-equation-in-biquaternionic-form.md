@@ -314,7 +314,7 @@ The equation is standard. The algebra's contribution is the closure argument, th
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^{2}=-e_t$ |
 | $i$ | Central scalar imaginary, $i^{2}=-e_t$ |
-| $\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part and trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $\mathbb{B}_\Phi,\ \mathbb{B}_\Psi,\ \mathbb{B}_V$ | Material, informational, and pure-vector sectors |
 | $\tilde A=i\,a'_t\,e_t+\vec A$ | The coupled Proca potential, an element of $\mathbb{B}$; $a'_t$ and $\vec A$ complex |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | The connection, an element of $\mathbb{B}_\Phi$; $A_\mu$ central in the abelian case |

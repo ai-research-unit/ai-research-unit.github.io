@@ -480,13 +480,13 @@ the object.
 
 | invariant | on the member $\tilde Q_\Phi$ | on the member $\tilde Q_{\mathrm{mir}}$ | factor |
 | --- | --- | --- | --- |
-| trace $\operatorname{Tr}=2\operatorname{Sc}$ | $2ia$ | $(1+i)\,2ia=2ia-2a$ | $1+i$ |
+| doubled scalar part $2\operatorname{Sc}$ | $2ia$ | $(1+i)\,2ia=2ia-2a$ | $1+i$ |
 | quaternionic norm, $=\det\mathsf{M}_2$ | $\lvert\vec u\rvert^{2}-a^{2}$ | $2i\bigl(\lvert\vec u\rvert^{2}-a^{2}\bigr)$ | $2i$ |
 | spectrum | $ia\pm i\lvert\vec u\rvert$ | $(1+i)\bigl(ia\pm i\lvert\vec u\rvert\bigr)$ | $1+i$ |
 | Hermitian form $\langle\cdot\rangle_{*}$ | $a^{2}+\lvert\vec u\rvert^{2}$ | $2\bigl(a^{2}+\lvert\vec u\rvert^{2}\bigr)$ | $2$ |
 
-**The trace.** The trace is linear and a central scalar passes through it, so $\operatorname{Tr}\tilde Q_{\mathrm{mir}}=(1+i)\operatorname{Tr}\tilde Q_\Phi$. On the
-member the trace is $2ia$, purely imaginary; on the mirror biquaternion it is $2ia-2a$, which keeps the imaginary part and adds a real one.
+**The doubled scalar part.** The scalar part is linear and a central scalar passes through it, so $2\operatorname{Sc}\tilde Q_{\mathrm{mir}}=(1+i)\,2\operatorname{Sc}\tilde Q_\Phi$. On the
+member it is $2ia$, purely imaginary; on the mirror biquaternion it is $2ia-2a$, which keeps the imaginary part and adds a real one.
 
 **The quadratic invariant.** The quaternionic norm is multiplicative, so
 $\langle\tilde Q_{\mathrm{mir}}\rangle_{\natural}=(1+i)^{2}\langle\tilde Q_\Phi\rangle_{\natural}=2i\langle\tilde Q_\Phi\rangle_{\natural}$. On the member the norm
@@ -642,7 +642,7 @@ numbers on one element and its mirror biquaternion, and they check against the t
 | $\mathbb{B}_{\mathrm{mir}}$ | the class of the mirror biquaternions, $(1+i)\mathbb{B}_{\Phi}=(1-i)\mathbb{B}_{\Psi}$, a real subspace of dimension $4$ |
 | $\mathbb{B}_{\mathrm{mir}}^{\mathrm{c}}$ | the partner class, $\{\tilde Q:\tilde Q^{*}=-i\tilde Q\}=i\mathbb{B}_{\mathrm{mir}}=\mathbb{B}_{\mathrm{mir}}^{*}$ |
 | $J$ | the complex structure $\tilde Q\mapsto i\tilde Q$, $J^{2}=-\mathrm{id}$ |
-| $\operatorname{Tr}\tilde Q$ | the trace, $2\operatorname{Sc}\tilde Q$ |
+| $2\operatorname{Sc}\tilde Q$ | the doubled scalar part |
 | $\langle\tilde Q\rangle_{\natural}$ | the quaternionic norm $\tilde Q\tilde Q^{\natural}$, the determinant of the $2\times2$ image |
 | $\langle\tilde Q\rangle_{*}$ | the Hermitian form $\operatorname{Sc}(\tilde Q\tilde Q^{*})$ |
 | $\mathbb{B}_{C},\mathbb{B}_{V},\mathbb{B}_{H},\mathbb{B}_{iH}$ | the centre, the vector subspace, the quaternion and the anti-quaternion subspace |

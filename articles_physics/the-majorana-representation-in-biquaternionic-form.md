@@ -12,7 +12,7 @@ This article treats the Majorana representation in the biquaternion algebra $\ma
 
 The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2s=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
 
 The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Physics in Biquaternionic Form*, for the two-state system and the Bloch sphere.
@@ -31,7 +31,7 @@ $$
 = \begin{pmatrix}\cos\tfrac{\theta}{2}\\[2pt] \sin\tfrac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}})\end{pmatrix},
 $$
 
-normalized to $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = 1$, up to an overall phase. The **stereographic coordinate** of the state is the ratio
+normalized to $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = 1$, up to an overall phase. The **stereographic coordinate** of the state is the ratio
 
 $$
 \varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{2}}{\tilde{Ξ}_{1}} = \tan\frac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}}),
@@ -44,7 +44,7 @@ a complex number (or $\infty$ at the south pole). It is invariant under the over
 The idempotent of the state is
 
 $$
-\boxed{\;\tilde\Pi_1(\vec u_x) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
+\boxed{\;\tilde\Pi_1(\vec u_x) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 \qquad
 \vec u_x = \frac{1}{1+|\varkappa_{\mathrm{stg}}|^2}\left(2\,\mathrm{Re}\,\varkappa_{\mathrm{stg}},\;2\,\mathrm{Im}\,\varkappa_{\mathrm{stg}},\;1-|\varkappa_{\mathrm{stg}}|^2\right)\;},
 $$
@@ -167,7 +167,7 @@ Because the star is the idempotent's axis, it cannot see the phase; the connecti
 The spinor is not an element of $\mathbb{B}$ itself: as the companion article *Spin-1/2 Quantum Physics in Biquaternionic Form* records, the state lives in the fundamental module $\mathbb{C}^2$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts, and it is one of the two summands in the decomposition of $\mathbb{B}$ as a left module over itself. The idempotent, by contrast, is a genuine element of $\mathbb{B}_{\Psi}$:
 
 $$
-\tilde\Pi(\tilde{Ξ}) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})} = \frac{1}{2}\left(e_t + i\,\vec u_x(\varkappa_{\mathrm{stg}})\right),
+\tilde\Pi(\tilde{Ξ}) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})} = \frac{1}{2}\left(e_t + i\,\vec u_x(\varkappa_{\mathrm{stg}})\right),
 $$
 
 with $\vec u_x(\varkappa_{\mathrm{stg}})$ the inverse stereographic image of $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$. The Majorana star is thus the vector part of the idempotent, and the map
@@ -208,7 +208,7 @@ The same overlap is the measurement probability. If a spin is prepared with star
 
 $$
 P(+|\vec u_x,\vec u_y) = \bigl|\langle\tilde{Ξ}_{\vec u_y}|\tilde{Ξ}_{\vec u_x}\rangle\bigr|^2 = \cos^2\frac{\Theta}{2}
-= \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u_y)\,\tilde\Pi_1(\vec u_x)\right),
+= 2\,\mathrm{Sc}\!\left(\tilde\Pi_1(\vec u_y)\,\tilde\Pi_1(\vec u_x)\right),
 $$
 
 with $\Theta$ the angle between the two stars. The Stern–Gerlach statistics are therefore a statement about the geometry of the sphere of stars: the probability depends only on the angle between the preparation star and the measurement star, and the Hermitian form, read through the trace, recovers it. The companion exercises *Exercise: Measuring Spin Along an Arbitrary Direction* and *Exercise: Successive Measurements of Spin* work the same formula; the Majorana picture shows that the standard textbook expression is a geometric overlap, and that the entire one-off computation is a dot product on the star sphere.

@@ -17,7 +17,7 @@ $$
 \varepsilon=(1,-1,-1,-1)
 $$
 
-on these coordinates, the same convention in which the Maxwell density is $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ with $\mathrm{Tr}\tilde{Ϛ}_{\Psi} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$.
+on these coordinates, the same convention in which the Maxwell density is $-\tfrac14\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The states of the informational sector are $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ with $2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi} = 1$, parametrized by the Bloch vector, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$; the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$.
 
 ## The Symmetric Phase and the Information in Its Vacuum
 
@@ -293,7 +293,7 @@ This distinguishes the mechanism from the two neighbours. Unlike confinement, wh
 | $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$ | Relative entropy; invariant under the re-encoding |
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $k_BT\ln2$ | Landauer cost of erasing a physical bit (not incurred here) |
-| $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}$ | Trace reading of the Hermitian form; $\mathrm{Tr}(e_t) = 2$ |
+| $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}$ | Trace reading of the Hermitian form; $2\,\mathrm{Sc}(e_t) = 2$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

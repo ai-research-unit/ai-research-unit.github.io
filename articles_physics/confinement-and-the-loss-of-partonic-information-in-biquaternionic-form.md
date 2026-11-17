@@ -18,7 +18,7 @@ The article proceeds as follows. The order parameter is reviewed and the two law
 $$
 U(C) = \mathcal{P}\exp\!\left(i\oint_C \sum_\mu\varepsilon_\mu A_\mu\,dx_\mu\right),
 \qquad
-W(C) = \mathrm{Tr}\,U(C),
+W(C) = 2\,\mathrm{Sc}\,U(C),
 $$
 
 with $\varepsilon$ the corpus's plain weight, $\mathcal{P}$ the path ordering and the trace over the informational realization. This exponent carries the factor $\frac{ϙ}{\hbar}$ explicitly, the product of the charge and the inverse action, so that it is a pure number with no unit and no charge set to one. The state of the informational sector is the corpus's $\tilde{Ϛ}_{\Psi}$, of trace one and parametrized by the Bloch vector $\vec r$, and the relative entropy of two states is $S(\tilde{Ϛ}_{\Psi,1}\|\tilde{Ϛ}_{\Psi,2})$; the trace, twice the scalar part, is the one of *Norm and Pairing Conventions*. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $i$ is the central scalar imaginary, so $i^2=-1$; wherever two imaginary factors meet, the display below simplifies them explicitly.
@@ -475,7 +475,7 @@ What the framework supplies here is the function theory, the reduction and the F
 | $\tilde{A}_{\Phi} = \sum_\mu A_\mu e_\mu\in\mathbb{B}_{\Phi}$ | Gauge connection (material sector) |
 | $T_a = i\vec e_a\in\mathbb{B}_{\Psi}$ | Generators realized in the informational sector |
 | $U(C) = \mathcal{P}\exp(i\theta_{\mathrm{gau}})$ | Holonomy |
-| $W(C) = \mathrm{Tr}\,U(C)$ | Wilson loop; order parameter |
+| $W(C) = 2\,\mathrm{Sc}\,U(C)$ | Wilson loop; order parameter |
 | $\langle W(C)\rangle \sim \exp(-\mu_{\mathrm{prm}}\,\mathrm{perim})$ | Perimeter law (screening) |
 | $\langle W(C)\rangle \sim \exp(-\sigma\,\mathrm{area})$ | Area law (confinement) |
 | $\mu_{\mathrm{prm}}$ | Perimeter coefficient |

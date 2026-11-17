@@ -282,7 +282,7 @@ The process is standard scalar quantum field theory in an external background, t
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=1/\vert\alpha_{\vec k_\Phi}\vert^2$ | Vacuum persistence amplitude |
 | $\vert\beta\vert^2=(\omega_2-\omega_1)^2/(4\omega_1\omega_2)$ | Sudden-quench result |
 | $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi\hbar)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Conserved $\mathrm{U}(1)$ charge; pairs have $Ϙ=0$ |
-| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde{Q}_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $2\,\mathrm{Sc}(e_t)=2$, $2\,\mathrm{Sc}[\tilde Q_2,\tilde{Q}_1]=0$ | Scalar-part identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading
 

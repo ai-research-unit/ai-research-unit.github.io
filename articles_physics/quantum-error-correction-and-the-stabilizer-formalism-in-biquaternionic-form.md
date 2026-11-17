@@ -22,10 +22,10 @@ A **stabilizer group** is an abelian subgroup $S$ of these elements not containi
 $$
 \tilde\Pi = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U \ \in\ \mathbb{B}_{\Psi}^{\otimes n},
 \qquad
-\tilde\Pi^2 = \tilde\Pi, \qquad \mathrm{Tr}(\tilde\Pi) = \frac{2^n}{|S|} ,
+\tilde\Pi^2 = \tilde\Pi, \qquad 2^n\,\mathrm{Sc}(\tilde\Pi) = \frac{2^n}{|S|} ,
 $$
 
-which is an idempotent of the tensor-product algebra. The whole theory of stabilizer codes is thus a theory of **commutative subalgebras and their idempotents**, expressed in the algebra that this series uses throughout: the code space is a Peirce component of a commutative subalgebra, and the syndrome measurement projects onto its idempotents.
+which is an idempotent of the tensor-product algebra, and where the factor $2^n$ is the size of the $2^n\times2^n$ image of the tensor algebra. The whole theory of stabilizer codes is thus a theory of **commutative subalgebras and their idempotents**, expressed in the algebra that this series uses throughout: the code space is a Peirce component of a commutative subalgebra, and the syndrome measurement projects onto its idempotents.
 
 The central result is the **Knill–Laflamme error-correction condition**. An error set $\{\tilde{E}_{\Psi}_a\}$ is correctable by the code with idempotent $\tilde\Pi$ exactly when
 
@@ -71,7 +71,7 @@ Three facts, all consequences of the group structure, make it an idempotent:
 
 - **Idempotent.** Since $S$ is a group, $\left(\sum_{\tilde U\in S}\tilde U\right)^2 = \sum_{\tilde U\in S}|S|\,\tilde U = |S|\sum_{\tilde U}\tilde U$, so $\tilde\Pi^2 = \tilde\Pi$.
 - **Hermitian and positive.** Each $\tilde U$ is Hermitian, so $\tilde\Pi^{*} = \tilde\Pi$; and $\tilde\Pi$ is a sum of commuting involutions, hence it is a positive element of $\mathbb{B}_{\Psi}^{\otimes n}$ with eigenvalues $0$ and $1$.
-- **Trace.** $\mathrm{Tr}(\tilde\Pi) = |S|^{-1}\mathrm{Tr}(e_t^{\otimes n}) = 2^n/|S| = 2^k$, the dimension of the code space.
+- **Reduced value.** $2^n\,\mathrm{Sc}(\tilde\Pi) = |S|^{-1}\,2^n\,\mathrm{Sc}(e_t^{\otimes n}) = 2^n/|S| = 2^k$, the dimension of the code space.
 
 Thus the code space is the image of an idempotent of the algebra, and its dimension is $2^k$: the code encodes $k$ logical qubits into $n$ physical qubits. The idempotent is a **Peirce component** of the commutative subalgebra spanned by $S$; it is the maximal idempotent whose stabilizer is all of $S$.
 
@@ -129,7 +129,7 @@ the sum of the idempotents of $|000\rangle$ and $|111\rangle$. The code space is
 
 The following were verified by explicit computation with the $8\times8$ matrices:
 
-- **Idempotency and trace.** $\tilde\Pi^2 = \tilde\Pi$ and $\mathrm{Tr}(\tilde\Pi) = 2$, so the code space has dimension $2^1 = 2$, as required for one logical qubit.
+- **Idempotency and reduced value.** $\tilde\Pi^2 = \tilde\Pi$ and $2^n\,\mathrm{Sc}(\tilde\Pi) = 2$, so the code space has dimension $2^1 = 2$, as required for one logical qubit.
 - **Correction of bit flips.** For the error set $\{e_t^{\otimes3}, X_1, X_2, X_3\}$, the Knill–Laflamme condition holds with $c_{ab} = \delta_{ab}$:
 
 $$
@@ -174,7 +174,7 @@ $$
 The following were verified by explicit computation with the $32\times32$ matrices.
 
 - **Commutativity and independence.** All four generators commute pairwise, so $S$ is abelian; the group has order $16$ and the idempotent has trace $2$.
-- **Idempotency.** $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $\mathrm{Tr}(\tilde\Pi) = 2$, so the code space is two-dimensional.
+- **Idempotency.** $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $2^n\,\mathrm{Sc}(\tilde\Pi) = 2$, so the code space is two-dimensional.
 - **Knill–Laflamme for every single-qubit error.** The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the two-sided operator $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects **an arbitrary single-qubit error**.
 - **Perfection.** The fifteen errors $X_i,Y_i,Z_i$ ($i=1,\dots,5$) have fifteen distinct nonzero syndromes in $\{0,1\}^4\setminus\{0\}$, so the syndrome measurement identifies the error uniquely. This is the sense in which the code is **perfect**: the $32$-dimensional space decomposes exactly into the code space and the fifteen orthogonal error subspaces, with no room to spare. The counting is $1 + 15 = 16 = 2^{5-1}$, the size of the syndrome space.
 
@@ -198,7 +198,7 @@ $$
 \boxed{\;\tilde\Pi = \tilde\Pi_{\mathrm{triv}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U\;},
 $$
 
-and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\xi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\xi \mathrm{Tr}(\tilde\Pi_\xi)$, with each $\mathrm{Tr}(\tilde\Pi_\xi) = 2^k$.
+and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\xi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\xi 2^n\,\mathrm{Sc}(\tilde\Pi_\xi)$, with each $2^n\,\mathrm{Sc}(\tilde\Pi_\xi) = 2^k$.
 
 ## What the Framework Adds and What It Does Not
 
@@ -207,7 +207,7 @@ and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as
 - It identifies the code space with the image of an idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde U\in S}\tilde U$ of the tensor-product algebra $\mathbb{B}_{\Psi}^{\otimes n}$, where $S$ is a finite commutative group of involutions; the code idempotent is a Peirce component of a commutative subalgebra.
 - It states the Knill–Laflamme condition as a condition on the two-sided operator $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.
 - It identifies the syndrome measurement with the projection onto the joint eigen-idempotents of the generators, a Peirce decomposition of the commutative subalgebra.
-- It verifies idempotency, trace, Knill–Laflamme, and syndrome distinctness for the three-qubit bit-flip code and the five-qubit perfect code by explicit computation.
+- It verifies idempotency, the code dimension, Knill–Laflamme, and syndrome distinctness for the three-qubit bit-flip code and the five-qubit perfect code by explicit computation.
 
 **What it does not.**
 
@@ -234,7 +234,7 @@ Quantum error correction in the biquaternion framework is the theory of commutat
 
 $$
 \tilde\Pi = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U,
-\qquad \tilde\Pi^2 = \tilde\Pi, \qquad \mathrm{Tr}(\tilde\Pi) = 2^k .
+\qquad \tilde\Pi^2 = \tilde\Pi, \qquad 2^n\,\mathrm{Sc}(\tilde\Pi) = 2^k .
 $$
 
 An error set $\{\tilde{E}_{\Psi}_a\}$ is correctable if and only if the **Knill–Laflamme condition**
@@ -245,7 +245,7 @@ $$
 
 holds for all $a,b$: the error operators, restricted to the code, have a scalar Gram matrix and cannot resolve the encoded state. The syndrome measurement is the joint measurement of the commuting generators, i.e. the projection onto the joint eigen-idempotents of a commutative subalgebra.
 
-Two codes were constructed and verified. The three-qubit bit-flip code has $S$ generated by $Z_1Z_2$, $Z_2Z_3$, code idempotent $\tilde\Pi = \tfrac14(e_t^{\otimes3}+Z_1Z_2+Z_2Z_3+Z_1Z_3)$ with $\mathrm{Tr}(\tilde\Pi) = 2$, and satisfies $\tilde\Pi X_iX_j\tilde\Pi = \delta_{ij}\tilde\Pi$, correcting any single bit flip and failing for phase flips. The five-qubit perfect code has the four cyclic generators $XZZXe_t$, $e_tXZZX$, $Xe_tXZZ$, $ZXe_tXZ$, code idempotent with $\mathrm{Tr}(\tilde\Pi) = 2$, and satisfies the Knill–Laflamme condition for all sixteen single-qubit Pauli errors; its fifteen nontrivial single-qubit errors have fifteen distinct nonzero syndromes, so it corrects an arbitrary single-qubit error and tiles the $32$-dimensional space exactly.
+Two codes were constructed and verified. The three-qubit bit-flip code has $S$ generated by $Z_1Z_2$, $Z_2Z_3$, code idempotent $\tilde\Pi = \tfrac14(e_t^{\otimes3}+Z_1Z_2+Z_2Z_3+Z_1Z_3)$ with $2^3\,\mathrm{Sc}(\tilde\Pi) = 2$, and satisfies $\tilde\Pi X_iX_j\tilde\Pi = \delta_{ij}\tilde\Pi$, correcting any single bit flip and failing for phase flips. The five-qubit perfect code has the four cyclic generators $XZZXe_t$, $e_tXZZX$, $Xe_tXZZ$, $ZXe_tXZ$, code idempotent with $2^3\,\mathrm{Sc}(\tilde\Pi) = 2$, and satisfies the Knill–Laflamme condition for all sixteen single-qubit Pauli errors; its fifteen nontrivial single-qubit errors have fifteen distinct nonzero syndromes, so it corrects an arbitrary single-qubit error and tiles the $32$-dimensional space exactly.
 
 ## Summary of Notation
 
@@ -257,7 +257,7 @@ Two codes were constructed and verified. The three-qubit bit-flip code has $S$ g
 | $\tilde U = \tilde U_1\otimes\cdots\otimes\tilde U_n$, $\tilde U^2 = e_t^{\otimes n}$ | Pauli-group involution |
 | $S$, $[S,S]=0$, $-e_t^{\otimes n}\notin S$ | Stabilizer group, $\lvert S\rvert = 2^{n-k}$ |
 | $\tilde\Pi = \lvert S\rvert^{-1}\sum_{\tilde U\in S}\tilde U$ | Code idempotent |
-| $\tilde\Pi^2=\tilde\Pi$, $\mathrm{Tr}(\tilde\Pi) = 2^k$ | Code properties ($k$ logical qubits) |
+| $\tilde\Pi^2=\tilde\Pi$, $2^n\,\mathrm{Sc}(\tilde\Pi) = 2^k$ | Code properties ($k$ logical qubits) |
 | $\tilde{E}_{\Psi}_a$ | Error operator (Pauli group element) |
 | $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi = c_{ab}\tilde\Pi$ | Knill–Laflamme condition |
 | $\tilde U_i$ | Stabilizer generators (measured for syndromes) |

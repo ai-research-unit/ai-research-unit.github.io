@@ -4,7 +4,7 @@
 
 The **renormalization group** (RG) is the statement that the parameters of a quantum field theory are not constants but functions of the scale at which the theory is probed. Integrating out a shell of field modes between two momentum scales changes the effective action; the change is a flow in the space of couplings; and the zeros of that flow — the fixed points — organize the theory's behaviour at long and short distances. This article asks what, if anything, the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ adds to that structure.
 
-The question is a fair one to ask of this framework, because the three read-list articles on which the RG rests have each already been written, and each has already located the algebra's contribution narrowly. *The Path Integral in Biquaternionic Form* found that the measure and the space of paths lie outside $\mathbb{B}$, while the central scalar imaginary supplies the phase and the Wick rotation supplies the Euclidean weight. *The Feynman Propagator in Biquaternionic Form* found that the algebra names the axis of the $i\epsilon$ deformation — the $i r'_t$ direction of the material sector $\mathbb{B}_{\Phi}$ — but does not choose its orientation. *The Partition Function in Biquaternionic Form* found that the trace is a scalar extraction, $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and that the imaginary-time circle lies along the $\mathbb{B}_{\Phi}$ time axis. The RG asks for the next thing: the dependence of all of this on a scale.
+The question is a fair one to ask of this framework, because the three read-list articles on which the RG rests have each already been written, and each has already located the algebra's contribution narrowly. *The Path Integral in Biquaternionic Form* found that the measure and the space of paths lie outside $\mathbb{B}$, while the central scalar imaginary supplies the phase and the Wick rotation supplies the Euclidean weight. *The Feynman Propagator in Biquaternionic Form* found that the algebra names the axis of the $i\epsilon$ deformation — the $i r'_t$ direction of the material sector $\mathbb{B}_{\Phi}$ — but does not choose its orientation. *The Partition Function in Biquaternionic Form* found that the reduction is a scalar extraction, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=2Q_{1,t}Q_{2,t}$, and that the imaginary-time circle lies along the $\mathbb{B}_{\Phi}$ time axis. The RG asks for the next thing: the dependence of all of this on a scale.
 
 The finding is stated at the outset, and it has the same shape as the parents'.
 
@@ -21,13 +21,13 @@ The **effective action** $\Gamma[\xi]$ is the generating functional of one-parti
 The exact statement of that dependence is the **Wetterich equation**,
 
 $$
-\boxed{\;\partial/\partial r'_t \Gamma_\eta[\xi] = \frac{1}{2}\,\mathrm{Tr}\!\left[\Big(\Gamma_\eta^{(2)}[\xi] + R_\eta\Big)^{-1}\,\partial/\partial r'_t R_\eta\right],
+\boxed{\;\partial/\partial r'_t \Gamma_\eta[\xi] = \mathrm{Sc}\!\left[\Big(\Gamma_\eta^{(2)}[\xi] + R_\eta\Big)^{-1}\,\partial/\partial r'_t R_\eta\right],
 \qquad r'_t = \log\frac{k}{\Lambda}\;},
 $$
 
 where $\Gamma_\eta^{(2)}$ is the second functional derivative of $\Gamma_\eta$ with respect to $\xi$, $R_\eta$ is a **regulator** that suppresses modes with $|p| < k$, and $\Lambda$ is the microscopic scale at which the flow is initialized. Two features of this equation are the whole subject of the article.
 
-1. **The trace is a functional trace.** The symbol $\mathrm{Tr}$ here is the trace over the infinite-dimensional field space: it stands for $\int \frac{d^4p}{(2\pi\hbar)^4}\sum_{\text{internal indices}}$ with the argument evaluated on the field configuration. It is **not** the biquaternion trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the read list. The biquaternion trace is taken over the two-dimensional fiber of $\mathbb{B}$; the functional trace is taken over the space of modes. They must not be conflated, and when the flow equation is read in the biquaternion framework the two appear side by side: the *fiber* trace is the algebra's, and the *mode* trace is analytic.
+1. **The doubled scalar part is a functional trace.** The symbol $\mathrm{Tr}$ here is the trace over the infinite-dimensional field space: it stands for $\int \frac{d^4p}{(2\pi\hbar)^4}\sum_{\text{internal indices}}$ with the argument evaluated on the field configuration. It is **not** the biquaternion reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ of the read list. The biquaternion trace is taken over the two-dimensional fiber of $\mathbb{B}$; the functional trace is taken over the space of modes. They must not be conflated, and when the flow equation is read in the biquaternion framework the two appear side by side: the *fiber* trace is the algebra's, and the *mode* trace is analytic.
 2. **The regulator is an input.** The equation is exact for any admissible $R_\eta$, but $R_\eta$ is not determined by the theory. Different choices give different *trajectories* $\Gamma_\eta$ and the same *physics* at the fixed point, up to scheme-dependent redefinitions of the couplings. The regulator is the analytic datum the algebra does not supply.
 
 If $\Gamma_\eta$ is expanded in a basis of local operators with couplings $g_i(k)$,
@@ -293,7 +293,6 @@ There is one further framework-specific remark worth recording as a question rat
 - **A central invariant for the cutoff.** The biquaternion norm $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}$ is central, and the sharp cutoff $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural} \le \Lambda^2$ is a condition on a central scalar; equivalently it is the condition $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} \le \Lambda^2$ on the Hermitian form, a real scalar by construction. Because the value is a real central scalar it is diagonal in the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ decomposition. This is the one place where the framework gives the regulator a canonical algebraic home.
 - **The Euclidean direction, and the form that carries it.** The standard route to the Euclidean cutoff is the Wick rotation $\mathbb{B}_{\Phi} \to \mathbb{B}_{H}$ of the parents; the alternative route is the Hermitian form of the same material element, $\langle\tilde{P}_{\Phi,E},\tilde{P}_{\Phi,E}\rangle_{*} = k_{\mathrm{eu}}^2 \ge 0$, which needs no rotation and keeps the element in $\mathbb{B}_{\Phi}$. The two agree by the identity of the regulator section. Either way the regulator inherits the same complex structure the parents located, and the form route makes the positivity a statement about $\mathbb{B}_{\Phi}$ alone.
 - **A clean statement of where the flow acts.** The scale, the couplings, and the beta functions are central scalars; the flow rescales central coefficients and does not rotate the sectors. The two-sector question therefore has the sharp form given in the previous section.
-- **A distinction that prevents an error.** The functional trace of the flow equation is not the biquaternion trace $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$; the two appear side by side and must be kept apart. Writing the functional trace as $2\,\mathrm{Sc}$ would be a category error, and the notation of the corpus makes the error visible.
 
 **What it does not provide.**
 
@@ -365,8 +364,7 @@ Three gaps are left visible. First, the framework supplies no action, so the bet
 | $\mu$ | Renormalization scale |
 | $\Gamma_\eta[\xi]$, $\Gamma_\eta^{(2)}$ | Wilsonian effective action and its second functional derivative |
 | $R_\eta$ | Regulator function |
-| $\partial/\partial r'_t\,\Gamma_\eta = \tfrac12\mathrm{Tr}[(\Gamma_\eta^{(2)}+R_\eta)^{-1}\partial/\partial r'_t R_\eta]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Biquaternion trace (fiber trace), distinct from the functional trace |
+| $\partial/\partial r'_t\,\Gamma_\eta = \mathrm{Sc}[(\Gamma_\eta^{(2)}+R_\eta)^{-1}\partial/\partial r'_t R_\eta]$ | Wetterich exact flow equation; $\mathrm{Tr}$ is the functional trace |
 | $\beta_i = \mu\,dg_i/d\mu$ | Beta function |
 | $g^*$ | Fixed point, $\beta(g^*) = 0$ |
 | $\lambda$ | Scalar quartic coupling, $(\lambda/4!)\xi^4$ |

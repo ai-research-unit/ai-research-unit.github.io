@@ -74,10 +74,10 @@ $$
 S_+^2=0 ,
 $$
 
-so that two applications annihilate every state: the ladder has one rung. In the algebra this is not an accident of the matrix realisation but follows from the Cayley–Hamilton identity. For any $2\times2$ matrix $n$ with $\mathrm{Tr}(n)=0$ and $\det(n)=0$,
+so that two applications annihilate every state: the ladder has one rung. In the algebra this is not an accident of the matrix realisation but follows from the Cayley–Hamilton identity. For any $2\times2$ matrix $n$ with $2\,\mathrm{Sc}(n)=0$ and $\det(n)=0$,
 
 $$
-\boxed{\;n^2-\mathrm{Tr}(n)\,n+\det(n)\,I=0\quad\Longrightarrow\quad n^2=0\;},
+\boxed{\;n^2-2\,\mathrm{Sc}(n)\,n+\det(n)\,I=0\quad\Longrightarrow\quad n^2=0\;},
 $$
 
 so every nilpotent element of $\mathbb{B}$ has square zero. In the algebra itself the same identity reads $(i\vec e_x-\vec e_y)^2=0$ for the raising element of the fundamental module, and $(\tilde S_{\Psi,+})^2=0$ for the spin operator.

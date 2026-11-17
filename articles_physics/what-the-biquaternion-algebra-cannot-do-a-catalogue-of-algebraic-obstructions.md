@@ -112,9 +112,9 @@ for every $\vec u$ while $\tilde\Pi(\vec u)\neq0$; indeed the defining property 
 
 **Statement.** There is no quadratic form on $\mathbb{B}$ that is simultaneously positive definite and fixed by the algebra without a chosen scale. The Hermitian form is positive definite but fixed only up to its scale; the biquaternion norm is canonical but indefinite.
 
-**Proof.** The defining relations are scale-free (O20), so they single out no scalar multiple of any form built from them: if $\langle\cdot,\cdot\rangle_{*}$ is positive definite then so is $c\,\langle\cdot,\cdot\rangle_{*}$ for every $c>0$, and the two give the same lines and the same probabilities. The corpus fixes the scale by $\langle e_t\rangle_{*}=1$, which is the same statement as the normalisation $\operatorname{Tr}(e_t)=2$ of the trace that reads the form, and that normalisation is a posit of the presentation. The biquaternion norm is determined by the algebra's product alone, $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone.
+**Proof.** The defining relations are scale-free (O20), so they single out no scalar multiple of any form built from them: if $\langle\cdot,\cdot\rangle_{*}$ is positive definite then so is $c\,\langle\cdot,\cdot\rangle_{*}$ for every $c>0$, and the two give the same lines and the same probabilities. The corpus fixes the scale by $\langle e_t\rangle_{*}=1$, which is the same statement as the normalisation $2\,\mathrm{Sc}(e_t)=2$ of the reduction that reads the form, and that normalisation is a posit of the presentation. The biquaternion norm is determined by the algebra's product alone, $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, and is therefore canonical, but it is indefinite by O5. A form that were both would have to be intrinsic and positive simultaneously, and no such form exists on an algebra with a null cone.
 
-**Consequence.** All probabilities, distances and normalizations in the framework are scale-relative, and the scale is the one the presentation declares. The numerical factors of the Fubini–Study metric are statements in the normalisation $\langle e_t\rangle_{*}=1$, equivalently $\operatorname{Tr}(e_t)=2$.
+**Consequence.** All probabilities, distances and normalizations in the framework are scale-relative, and the scale is the one the presentation declares. The numerical factors of the Fubini–Study metric are statements in the normalisation $\langle e_t\rangle_{*}=1$, equivalently $2\,\mathrm{Sc}(e_t)=2$.
 
 **Remedy.** State the normalization with every numerical claim, as the corpus does; the invariant content of any such claim is the statement that survives a rescaling of the form.
 
@@ -168,11 +168,11 @@ for every invertible $\vec u$, with both factors non-zero. An element is inverti
 
 **Statement.** There are no elements $\tilde{Q}_1,\tilde{Q}_2\in\mathbb{B}$ and no non-zero central scalar $\lambda$ with $[\tilde{Q}_1,\tilde{Q}_2]=\lambda e_t$, and no finite-dimensional space on which the algebra acts carries such a pair either.
 
-**Proof.** The trace of any commutator vanishes,
+**Proof.** The doubled scalar part of any commutator vanishes,
 $$
-\mathrm{Tr}\bigl([\tilde{Q}_1,\tilde{Q}_2]\bigr)=\mathrm{Tr}\bigl(\tilde{Q}_1\tilde{Q}_2\bigr)-\mathrm{Tr}\bigl(\tilde{Q}_2\tilde{Q}_1\bigr)=0,
+2\,\mathrm{Sc}\bigl([\tilde{Q}_1,\tilde{Q}_2]\bigr)=2\,\mathrm{Sc}\bigl(\tilde{Q}_1\tilde{Q}_2\bigr)-2\,\mathrm{Sc}\bigl(\tilde{Q}_2\tilde{Q}_1\bigr)=0,
 $$
-by cyclicity, whereas $\mathrm{Tr}(\lambda e_t)=2\lambda\neq0$. The same argument applies in any finite-dimensional carrier, since the trace there is also cyclic.
+by cyclicity, whereas $2\,\mathrm{Sc}(\lambda e_t)=2\lambda\neq0$. The same argument applies in any finite-dimensional carrier, since the trace there is also cyclic.
 
 **Consequence.** The Heisenberg algebra, and with it position, momentum, and the creation and annihilation operators, cannot be internalised in $\mathbb{B}$. They require an infinite-dimensional extension, and the extension cannot be bounded: the norm argument of *The Biquaternion Framework and the Canonical Commutation Relation* excludes a bounded pair in any dimension, so unboundedness is part of the obstruction and not a technicality of the standard realisation.
 
@@ -418,7 +418,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ | Hermitian and anti-Hermitian subspaces |
 | $Z(\mathbb{B})=\mathbb{B}_{C}=\mathbb{C}e_t$ | Centre of $\mathbb{B}$; the series symbol is $\mathbb{B}_{C}$ |
-| $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde{Q})=2Q_t$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm; $\mathbb{B}^{\times}=\{\tilde{Q}:\langle\tilde{Q}\rangle_{\natural}\neq0\}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$ | Hermitian form, positive definite with $\langle e_t\rangle_{*}=1$ |
 | $\tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u)$ | Pure state of the declared direction $\vec u$, null under $\langle\cdot\rangle_{\natural}$ |

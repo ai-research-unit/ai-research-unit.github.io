@@ -236,7 +236,7 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 | $e_t,\ \vec e_\mu$ | Quaternion basis, $\vec e_\mu^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
 | $*$, $\natural$ | Hermitian conjugation, quaternion conjugation |
-| $\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part, trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $t'$, $r'_t=c\,t'$ | Time variable, parental material length |
 | $\tilde\Xi\in\mathbb{B}$ | The field |
 | $ϙ$ | The coupling; minus the electric charge of the older convention |

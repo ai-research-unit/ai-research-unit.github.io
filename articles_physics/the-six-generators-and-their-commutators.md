@@ -138,7 +138,7 @@ $$
 \langle K_i,K_j\rangle_{\mathrm{tr}}=+\tfrac12\delta_{ij}.
 $$
 
-So the form is diagonal in this basis with three negative and three positive entries: signature $(3,3)$. It is invariant because the trace of a product is invariant under the adjoint action, $\operatorname{Tr}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=\operatorname{Tr}(\tilde X\tilde Y)$, which is the invariance computed in *The Two Actions of One Group: Adjoint and Congruence*.
+So the form is diagonal in this basis with three negative and three positive entries: signature $(3,3)$. It is invariant because the trace of a product is invariant under the adjoint action, $2\,\mathrm{Sc}(\tilde U\tilde X\tilde U^{-1}\tilde Y)=2\,\mathrm{Sc}(\tilde X\tilde Y)$, which is the invariance computed in *The Two Actions of One Group: Adjoint and Congruence*.
 
 ### The Killing Form
 

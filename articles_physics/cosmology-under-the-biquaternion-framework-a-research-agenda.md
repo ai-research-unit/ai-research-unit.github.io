@@ -97,7 +97,6 @@ The conclusion is a negative but an exact one: **the framework's own locality de
 
 ### The two-sector decomposition survives pointwise
 
-The decomposition $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a pointwise decomposition and survives on any background; the informational sector's elements become fields of Hermitian operators without difficulty. What does not survive is the trace: the trace in $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a $2\times2$ fibre trace, with no volume element and no measure. This is the structural reason the informational sector has no curved-space field theory, and it is where the cosmological thermodynamics fails; it is stated in *Curved Spacetime and the Biquaternion Framework* and inherited here unchanged.
 
 ### The framework's thermodynamics is rank-two
 
@@ -106,7 +105,7 @@ The decomposition $\mathbb{B} = \mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a p
 For a Hermitian Hamiltonian $\tilde H_\Psi = h_t\,e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$, the thermal operator is a scalar Boltzmann weight times a boost biquaternion, and the Hermitian form gives, with the trace reading at normalisation last,
 
 $$
-Z = 2\,\mathrm{Sc}\left(\exp(-\beta H)\right) = 2\exp(-\beta h_t)\cosh\left(\beta|\vec h_\Psi|\right),\qquad\text{with trace reading } \operatorname{Tr}\left(\exp(-\beta H)\right)=Z,
+Z = 2\,\mathrm{Sc}\left(\exp(-\beta H)\right) = 2\exp(-\beta h_t)\cosh\left(\beta|\vec h_\Psi|\right),\qquad\text{with scalar-part reading } 2\,\mathrm{Sc}\left(\exp(-\beta H)\right)=Z,
 $$
 
 the ordinary partition function of a **two-level system** with energies $h_t \pm |\vec h_\Psi|$. That maximum is the entropy of a two-state system. It is not the entropy of a field, and it cannot become one: the number of states is the rank of the $2\times2$ fibre, which is two.
@@ -240,7 +239,6 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 | $\varepsilon_\mu$ | material basis $\varepsilon_0 = ie_t$, $\varepsilon_\eta = \vec e_\eta$ | inherited |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$, $\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural} = -\varepsilon_\mu\delta_{\mu\nu}$, the material tuple $(-1,+1,+1,+1)$ | inherited |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$, $\Box$ | biquaternionic gradient, its conjugate, and $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ | inherited |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | trace reading, a **fibre** trace over $\mathbb{C}^2$ | inherited |
 | $\tilde{E}_{\Phi}_\mu \in \mathbb{B}_{\Phi}$, $g_{\mu\nu} = \langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural}$ | frame field and the metric it carries | inherited |
 | $a(r'_t)$, $k$ | scale factor and spatial-curvature parameter — **standard cosmology, carried not derived** | standard notation |
 | $H = \left(da/dt'\right)/a = c\left(da/dr'_t\right)/a$, $\rho$, $p$, $w$, $\Lambda$ | Hubble rate, density, pressure, equation-of-state parameter, cosmological constant — **standard cosmology, no framework interpretation** | standard notation |

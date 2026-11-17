@@ -277,7 +277,7 @@ The framework's contribution is the exact global phase symmetry of the centre, t
 | $m_\pi, f_\pi$ | Pion mass and decay constant (chiral matching) |
 | $\Omega_ah^2\sim0.1(f_a/10^{12}\ \mathrm{GeV})^{7/6}$ | Misalignment dark-matter abundance |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
+| $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ | Reduction convention |
 
 ## Further Reading
 

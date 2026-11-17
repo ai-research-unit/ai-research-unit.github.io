@@ -312,7 +312,7 @@ $$
 2\,\mathrm{Sc}_2\!\left(\tilde\Pi_{1,1}\right)=2\,\mathrm{Sc}_2\!\left(\tilde\Pi_+\otimes \tilde\Pi_+\right)=\tilde\Pi_+\,2\,\mathrm{Sc}(\tilde\Pi_+)=\tilde\Pi_+ ,
 $$
 
-since $2\,\mathrm{Sc}(\tilde\Pi_\pm)=\tfrac{1}{2}\,2\,\mathrm{Sc}(e_t)=\tfrac12\cdot2=1$. So the reduced state of $\tilde\Pi_{1,1}$ is the pure state $\tilde\Pi_+$; the same holds for $\tilde\Pi_{1,-1}$ with $\tilde\Pi_-$.
+since $2\,\mathrm{Sc}(\tilde\Pi_\pm)=\mathrm{Sc}(e_t)=\tfrac12\cdot2=1$. So the reduced state of $\tilde\Pi_{1,1}$ is the pure state $\tilde\Pi_+$; the same holds for $\tilde\Pi_{1,-1}$ with $\tilde\Pi_-$.
 
 For the two diagonal-form idempotents the computation is a single line. Because $\tilde\Pi_{1,0}$ and $\tilde\Pi_{0,0}$ are sums of diagonal tensor terms,
 

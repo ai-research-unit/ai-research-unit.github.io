@@ -10,7 +10,7 @@ The next section fixes the two values of the field and the action that carries o
 
 ## The field, the two values and the action
 
-**The algebra.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ over $\mathbb{C}$, with $e_t$ the identity, $\vec e_\eta^2=-e_t$, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ for distinct indices, and $i$ central with $i^2=-1$. A squared three-vector is the Euclidean square, $\vec p^2=p_1^2+p_2^2+p_3^2$. An element is written $\tilde Q=a_te_t+a_1\vec e_x+a_2\vec e_y+a_3\vec e_z$, with $\mathrm{Sc}\,\tilde Q=a_t$ and $\mathrm{Tr}\,\tilde Q=2a_t$, and the coefficient bar conjugates the four coefficients and leaves the invertibles alone (*Algebra and Element Conventions*, §*The Conjugations*).
+**The algebra.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_t,\vec e_x,\vec e_y,\vec e_z$ over $\mathbb{C}$, with $e_t$ the identity, $\vec e_\eta^2=-e_t$, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ for distinct indices, and $i$ central with $i^2=-1$. A squared three-vector is the Euclidean square, $\vec p^2=p_1^2+p_2^2+p_3^2$. An element is written $\tilde Q=a_te_t+a_1\vec e_x+a_2\vec e_y+a_3\vec e_z$, with $\mathrm{Sc}\,\tilde Q=a_t$ and $2\,\mathrm{Sc}\,\tilde Q=2a_t$, and the coefficient bar conjugates the four coefficients and leaves the invertibles alone (*Algebra and Element Conventions*, §*The Conjugations*).
 
 **The two values of the field.** The field carries a letter, and the letter names one of two components. An element of value minus one is written $\tilde Q_L$, an element of value plus one is written $\tilde Q_R$; each value is of two complex dimensions, every element is one part of each value, and only the zero element carries both. Three facts about the letters are used below, and no fourth. A product takes the letter of its right factor. A left multiplication keeps the letter. A right multiplication by $\vec e_t$ or by $\vec e_z$ keeps the letter, and a right multiplication by $\vec e_x$ or by $\vec e_y$ exchanges the two values. The last is a property of the four units and not of an element, and it is what lets an action built of right multiplications carry an element of one value into the other. No symbol is introduced for the letter, and no formula is written for it: the article writes $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ and uses the three facts.
 
@@ -49,10 +49,10 @@ Each line is one equation inside one value: the left side of the first is the $L
 **The pairing.** The Dirac pairing of two elements is
 
 $$
-\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\!\left(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\right),
+\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}\!\left(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\right),
 $$
 
-the trace of a product twisted on the right by the timelike unit. It is conjugate-linear in the first argument, linear in the second, and $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\overline{\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}}$. The twist is what makes it pair the two values: $\langle\tilde{Ξ}_{L},\tilde{Ξ}_{L}\rangle_{\mathrm D}=0$ and $\langle\tilde{Ξ}_{R},\tilde{Ξ}_{R}\rangle_{\mathrm D}=0$, while $\langle\tilde{Ξ}_{L},\tilde{Ξ}_{R}\rangle_{\mathrm D}$ need not vanish. Consequently the scalar of a field, $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}$, is twice the real part of $\langle\tilde{Ξ}_{L},\tilde{Ξ}_{R}\rangle_{\mathrm D}$: a bilinear pairs one part of each value and never a part with itself. This is the algebraic reason a single value cannot carry a Dirac mass.
+twice the scalar part of a product twisted on the right by the timelike unit. It is conjugate-linear in the first argument, linear in the second, and $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\overline{\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}}$. The twist is what makes it pair the two values: $\langle\tilde{Ξ}_{L},\tilde{Ξ}_{L}\rangle_{\mathrm D}=0$ and $\langle\tilde{Ξ}_{R},\tilde{Ξ}_{R}\rangle_{\mathrm D}=0$, while $\langle\tilde{Ξ}_{L},\tilde{Ξ}_{R}\rangle_{\mathrm D}$ need not vanish. Consequently the scalar of a field, $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}$, is twice the real part of $\langle\tilde{Ξ}_{L},\tilde{Ξ}_{R}\rangle_{\mathrm D}$: a bilinear pairs one part of each value and never a part with itself. This is the algebraic reason a single value cannot carry a Dirac mass.
 
 ## Plane-wave solutions
 
@@ -67,7 +67,7 @@ $$
 a left multiplication by a fixed element. It commutes with $\mathcal{D}$, since left multiplications commute with one another and with right multiplications, so it carries solutions into solutions. It squares to the identity and its two values are $\pm1$. Let $\tilde\zeta_{R+}$ and $\tilde\zeta_{R-}$ be the two elements of the $R$ value with
 
 $$
-\mathcal{H}\tilde\zeta_{R\pm}=\pm\tilde\zeta_{R\pm},\qquad \mathrm{Tr}\!\left(\tilde\zeta_{R\pm}^{*}\tilde\zeta_{R\pm}\right)=1 ,
+\mathcal{H}\tilde\zeta_{R\pm}=\pm\tilde\zeta_{R\pm},\qquad 2\,\mathrm{Sc}\!\left(\tilde\zeta_{R\pm}^{*}\tilde\zeta_{R\pm}\right)=1 ,
 $$
 
 and let the corresponding elements of the $L$ value be the images
@@ -76,7 +76,7 @@ $$
 \tilde\zeta_{L\pm}=\frac{1}{E\mp|\vec p|\,c}\,\mathcal{D}\tilde\zeta_{R\pm} .
 $$
 
-Four statements follow, one line each, and each is a computation of products only. First, $\mathcal{D}\tilde\zeta_{R\pm}=(E\mp|\vec p|\,c)\tilde\zeta_{L\pm}$, which is the definition. Second, $\mathcal{D}\tilde\zeta_{L\pm}=(E\pm|\vec p|\,c)\tilde\zeta_{R\pm}$, because $\mathcal{D}^2=m^{2}c^{4}=(E-|\vec p|\,c)(E+|\vec p|\,c)$. Third, $\mathcal{H}\tilde\zeta_{L\pm}=\pm\tilde\zeta_{L\pm}$, because $\mathcal{H}$ commutes with $\mathcal{D}$. Fourth, $\mathrm{Tr}(\tilde\zeta_{L\pm}^{*}\tilde\zeta_{L\pm})=1$ and $\mathrm{Re}\langle\tilde\zeta_{R\pm},\tilde\zeta_{L\pm}\rangle_{\mathrm D}=1$: the image carries the same Hermitian norm as its seed, the Hermitian product of a seed with its image vanishes, and the number the two parts share is the pairing. These four numbers are what the normalization below fixes.
+Four statements follow, one line each, and each is a computation of products only. First, $\mathcal{D}\tilde\zeta_{R\pm}=(E\mp|\vec p|\,c)\tilde\zeta_{L\pm}$, which is the definition. Second, $\mathcal{D}\tilde\zeta_{L\pm}=(E\pm|\vec p|\,c)\tilde\zeta_{R\pm}$, because $\mathcal{D}^2=m^{2}c^{4}=(E-|\vec p|\,c)(E+|\vec p|\,c)$. Third, $\mathcal{H}\tilde\zeta_{L\pm}=\pm\tilde\zeta_{L\pm}$, because $\mathcal{H}$ commutes with $\mathcal{D}$. Fourth, $2\,\mathrm{Sc}(\tilde\zeta_{L\pm}^{*}\tilde\zeta_{L\pm})=1$ and $\mathrm{Re}\langle\tilde\zeta_{R\pm},\tilde\zeta_{L\pm}\rangle_{\mathrm D}=1$: the image carries the same Hermitian norm as its seed, the Hermitian product of a seed with its image vanishes, and the number the two parts share is the pairing. These four numbers are what the normalization below fixes.
 
 **Positive-frequency branch.** Put
 
@@ -121,7 +121,7 @@ for a normalized positive-frequency solution, since the two amplitudes are $\sqr
 
 ## Orthogonality and normalization
 
-The pairing of the field section evaluates on the solutions in closed form. With the normalization fixed above, $\mathrm{Tr}(\tilde\zeta^{*}\tilde\zeta)=1$ and $\mathrm{Re}\langle\tilde\zeta_{R\pm},\tilde\zeta_{L\pm}\rangle_{\mathrm D}=1$ for the four elements, and the same-value pairings vanish, so each solution contributes only its cross term, $2\sqrt{(E+|\vec p|\,c)(E-|\vec p|\,c)}=2m$:
+The pairing of the field section evaluates on the solutions in closed form. With the normalization fixed above, $2\,\mathrm{Sc}(\tilde\zeta^{*}\tilde\zeta)=1$ and $\mathrm{Re}\langle\tilde\zeta_{R\pm},\tilde\zeta_{L\pm}\rangle_{\mathrm D}=1$ for the four elements, and the same-value pairings vanish, so each solution contributes only its cross term, $2\sqrt{(E+|\vec p|\,c)(E-|\vec p|\,c)}=2m$:
 
 $$
 \langle\tilde w_\pm,\tilde w_{\pm'}\rangle_{\mathrm D}=2m\,\delta_{\pm\pm'},\qquad
@@ -132,11 +132,11 @@ $$
 The minus sign of the negative branch is the standard signature, and the vanishing of the cross terms at equal momentum is the statement that the two branches are orthogonal under the twisted pairing. The Hermitian products are a separate family, and their diagonal values are
 
 $$
-\mathrm{Tr}\!\left(\tilde w_\pm^{*}\tilde w_{\pm'}\right)=2E\,\delta_{\pm\pm'},\qquad
-\mathrm{Tr}\!\left(\tilde v_\pm^{*}\tilde v_{\pm'}\right)=2E\,\delta_{\pm\pm'} .
+2\,\mathrm{Sc}\!\left(\tilde w_\pm^{*}\tilde w_{\pm'}\right)=2E\,\delta_{\pm\pm'},\qquad
+2\,\mathrm{Sc}\!\left(\tilde v_\pm^{*}\tilde v_{\pm'}\right)=2E\,\delta_{\pm\pm'} .
 $$
 
-Three normalization conventions are in common use — $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$, $\langle\tilde w,\tilde w\rangle_{\mathrm D}=1$ and $\mathrm{Tr}(\tilde w^{*}\tilde w)=1$ — and they differ by momentum-dependent factors. The covariant one, $2m$, is used here because it makes the spin sums below covariant and because $2m$ is the value the mass shell gives to the scalar bilinear of a normalized solution.
+Three normalization conventions are in common use — $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$, $\langle\tilde w,\tilde w\rangle_{\mathrm D}=1$ and $2\,\mathrm{Sc}(\tilde w^{*}\tilde w)=1$ — and they differ by momentum-dependent factors. The covariant one, $2m$, is used here because it makes the spin sums below covariant and because $2m$ is the value the mass shell gives to the scalar bilinear of a normalized solution.
 
 **The spin sums.** The two solutions of each branch close over the spin label:
 
@@ -147,16 +147,16 @@ $$
 
 Each sum is an operator written as an element times a scalar: the symbol $\tilde w\langle\tilde w,\cdot\rangle_{\mathrm D}$ is the action sending $\tilde{Ξ}$ to $\tilde w\,\langle\tilde w,\tilde{Ξ}\rangle_{\mathrm D}$, a product of an element with a number, and no matrix enters it. The two identities are the algebraic statement that the four solutions at fixed momentum span the amplitude space, and they are what a sum over spins uses.
 
-**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=\mathrm{Tr}(\tilde{Ξ}^*\tilde{Ξ})$ and $j_\eta=\mathrm{Tr}(\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
+**The conserved current.** The vector bilinear of the next section is the conserved current, $j_0=2\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ and $j_\eta=2\,\mathrm{Sc}(\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\vec e_z)$, and the continuity equation of the companion article reads $\partial j_0/\partial r'_t+\nabla\cdot\vec j=0$ on the material sector. The current is the four-vector $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$, with imaginary scalar part and real vector part: the Dirac current is a material-sector object, as a four-vector must be.
 
 ## The bilinears
 
 **The scalar and the pseudoscalar.** The scalar is the pairing of the field with itself, and the pseudoscalar is the same product with $\vec e_y$ on the right:
 
 $$
-S=\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}\!\left(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\right),
+S=\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}\!\left(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\right),
 \qquad
-P=\mathrm{Tr}\!\left(\tilde{Ξ}^*\tilde{Ξ}\,\vec e_y\right).
+P=2\,\mathrm{Sc}\!\left(\tilde{Ξ}^*\tilde{Ξ}\,\vec e_y\right).
 $$
 
 $S$ is real and $P$ is purely imaginary, so the pseudoscalar is $iP$ and carries the explicit factor of $i$. Both are blind to a single value: $S$ pairs the two values, so a field of one value has no scalar and no Dirac mass, and $P$ vanishes for a helicity eigenstate because the two parts then stand in a real ratio. In the value split $S=2\,\mathrm{Re}\langle\tilde{Ξ}_{L},\tilde{Ξ}_{R}\rangle_{\mathrm D}$: the scalar and the pseudoscalar are the real and the imaginary part of the one pairing that mixes the two values.
@@ -164,11 +164,11 @@ $S$ is real and $P$ is purely imaginary, so the pseudoscalar is $iP$ and carries
 **The vector current.** The four components are
 
 $$
-j_0=\mathrm{Tr}\!\left(\tilde{Ξ}^*\tilde{Ξ}\right)=2E,\qquad
-j_k=\mathrm{Tr}\!\left(\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\,\vec e_z\right)=2p_\eta
+j_0=2\,\mathrm{Sc}\!\left(\tilde{Ξ}^*\tilde{Ξ}\right)=2E,\qquad
+j_k=2\,\mathrm{Sc}\!\left(\tilde{Ξ}^*\vec e_\eta\tilde{Ξ}\,\vec e_z\right)=2p_\eta
 $$
 
-on a normalized positive-frequency solution: the first is positive, since $\mathrm{Tr}(\tilde{Ξ}^*\tilde{Ξ})$ is a sum of squared moduli of the four coefficients, and the three spatial components are real and equal to twice the momentum. The second equality is the reason the current is the four-velocity of the field, and on the material sector the four components assemble into $\tilde J_{\Phi}=ic\,j_0e_t+\vec j\in\mathbb{B}_{\Phi}$.
+on a normalized positive-frequency solution: the first is positive, since $2\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ is a sum of squared moduli of the four coefficients, and the three spatial components are real and equal to twice the momentum. The second equality is the reason the current is the four-velocity of the field, and on the material sector the four components assemble into $\tilde J_{\Phi}=ic\,j_0e_t+\vec j\in\mathbb{B}_{\Phi}$.
 
 **The spin bilinear and the informational sector.** There is a second bilinear, of a different kind: the spin state of one part. With $\vec u$ a unit vector, the element
 
@@ -176,7 +176,7 @@ $$
 \tilde\rho=\tfrac12\left(e_t+i\vec u\right)
 $$
 
-is Hermitian, satisfies $\tilde\rho^2=\tilde\rho$ and $\mathrm{Tr}\,\tilde\rho=1$, and its components read back as $\mathrm{Tr}(\tilde\rho\,i\vec e_\eta)=u_\eta$. It is the pure state of the informational sector $\mathbb{B}_{\Psi}$ with Bloch vector $\vec u$, and it is what a spin state is in this framework: not a column paired with its adjoint, but one element of $\mathbb{B}_{\Psi}$. The spin of a solution is described by it, and the spin–magnetic coupling of the non-relativistic section is a Hermitian element of the same sector.
+is Hermitian, satisfies $\tilde\rho^2=\tilde\rho$ and $2\,\mathrm{Sc}\,\tilde\rho=1$, and its components read back as $2\,\mathrm{Sc}(\tilde\rho\,i\vec e_\eta)=u_\eta$. It is the pure state of the informational sector $\mathbb{B}_{\Psi}$ with Bloch vector $\vec u$, and it is what a spin state is in this framework: not a column paired with its adjoint, but one element of $\mathbb{B}_{\Psi}$. The spin of a solution is described by it, and the spin–magnetic coupling of the non-relativistic section is a Hermitian element of the same sector.
 
 **The axial and tensor bilinears.** The remaining two families are built the same way, one product deeper, and they are recorded in *Chiral Fermions in the Biquaternion Framework* together with the axial anomaly. Their components are not used below.
 
@@ -332,7 +332,7 @@ $$
 
 with $E=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$. Each branch is two-dimensional over $\mathbb{C}$, the four dimensions the companion article counts. The normalization is covariant, $\langle\tilde w,\tilde w\rangle_{\mathrm D}=2m$ and $\langle\tilde v,\tilde v\rangle_{\mathrm D}=-2m$, with $\langle\tilde w,\tilde v\rangle_{\mathrm D}=0$, and the spin sums $\sum_\pm\tilde w_\pm\langle\tilde w_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}+m$ and $\sum_\pm\tilde v_\pm\langle\tilde v_\pm,\cdot\rangle_{\mathrm D}=\mathcal{D}-m$ close the set.
 
-The bilinears are traces of products. The scalar and the pseudoscalar are the real and the imaginary part of the one pairing that mixes the two values, so a field of one value has no Dirac mass; the vector current is $j_0=2E$ and $\vec j=2\vec p$ on a normalized solution, and it assembles into the material-sector four-vector $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$; the spin is the pure state $\frac12(e_t+i\vec u)$ of the informational sector $\mathbb{B}_{\Psi}$, with $\mathrm{Tr}(\tilde\rho\,i\vec e_\eta)=u_\eta$.
+The bilinears are traces of products. The scalar and the pseudoscalar are the real and the imaginary part of the one pairing that mixes the two values, so a field of one value has no Dirac mass; the vector current is $j_0=2E$ and $\vec j=2\vec p$ on a normalized solution, and it assembles into the material-sector four-vector $\tilde J_{\Phi}=ic\,j_0e_t+\vec j$ of $\mathbb{B}_{\Phi}$; the spin is the pure state $\frac12(e_t+i\vec u)$ of the informational sector $\mathbb{B}_{\Psi}$, with $2\,\mathrm{Sc}(\tilde\rho\,i\vec e_\eta)=u_\eta$.
 
 In the non-relativistic limit the split by the timelike unit separates the large and the small part, the elimination of the small part is exact to the order kept, and the square of the odd part of the action produces the Pauli equation
 
@@ -348,7 +348,7 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_t=1,\ \vec e_x,\ \vec e_y,\ \vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$, $\vec e_j\vec e_\eta=\epsilon_{j\eta l}\vec e_l$ |
 | $i$ | Scalar imaginary, central, $i^2=-1$ |
-| $\tilde Q=a_te_t+\vec a$ | General element; $\mathrm{Sc}\,\tilde Q=a_t$, $\mathrm{Tr}\,\tilde Q=2a_t$ |
+| $\tilde Q=a_te_t+\vec a$ | General element; $\mathrm{Sc}\,\tilde Q=a_t$, $2\,\mathrm{Sc}\,\tilde Q=2a_t$ |
 | coefficient bar | Conjugates the four coefficients, leaves the invertibles |
 | $\tilde Q^{*}$ | $\overline{\tilde Q^{\natural}}$, the Hermitian conjugate |
 | $\mathbb{B}_{\Phi},\ \mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
@@ -357,9 +357,9 @@ on one element. The coefficient $1/2m$ of the spin term is the one that $\vec\mu
 | $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-(E^2-\vec p^2)$ | Wave-element square; mass shell $\tilde{\mathcal P}\tilde{\mathcal P}^{\natural}=-m^2$ |
 | $\mathcal{D}(\tilde{\mathcal P})\tilde Q=iE\tilde Q\vec e_x-\sum_\eta ip_\eta\vec e_\eta\tilde Q\vec e_y$ | The Dirac action on one element |
 | $\mathcal{O}(\tilde Q)=-i\sum_\eta p_\eta\vec e_\eta\tilde Q\vec e_y$ | Odd part of the action under right multiplication by $i\vec e_x$ |
-| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=\mathrm{Tr}(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing |
+| $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x)$ | Dirac pairing |
 | $\mathcal{H}(\tilde Q)=i\vec u_p\tilde Q$, $\vec u_p=\vec p/\lvert\vec p\rvert$ | Helicity; values $\pm1$ |
-| $\tilde\zeta_{R\pm},\ \tilde\zeta_{L\pm}$ | Helicity elements of the two values, $\mathrm{Tr}(\tilde\zeta^{*}\tilde\zeta)=1$ |
+| $\tilde\zeta_{R\pm},\ \tilde\zeta_{L\pm}$ | Helicity elements of the two values, $2\,\mathrm{Sc}(\tilde\zeta^{*}\tilde\zeta)=1$ |
 | $\tilde w_\pm(\vec p),\ \tilde v_\pm(\vec p)$ | Positive- and negative-frequency solutions |
 | $\tilde{Ξ},\ \tilde{Ξ}$ | Large and small part, the values plus one and minus one under right multiplication by $i\vec e_x$ |
 | $\tilde\rho=\tfrac12(e_t+i\vec u)$ | Pure state of $\mathbb{B}_{\Psi}$; $\vec u$ the Bloch vector |

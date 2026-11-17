@@ -13,7 +13,7 @@ The article is therefore a sequence of independent problems, each in its own sec
 5. Composition of channels, and the growth of the Kraus rank.
 6. The Bloch-ball contraction and the increase of the von Neumann entropy under dephasing.
 
-The conventions are those of the companion articles. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{B}_{\Psi}$ consists of the elements $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ with real $h_t$ and $\vec h_\Psi \in \mathbb{R}^3$. A state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, and $\vec r$ is its Bloch vector. The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = h_t + \vec r\cdot\vec h_\Psi$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Q}\tilde M_{\mathrm{kraus},l}^{*}$ and normalization $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$, and the Choi matrix is $J(Ξ) = \sum_{j\eta}\tilde{E}_{\Psi,j\eta}\otimesΞ(\tilde{E}_{\Psi,j\eta})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_x$ is
+The conventions are those of the companion articles. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{B}_{\Psi}$ consists of the elements $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ with real $h_t$ and $\vec h_\Psi \in \mathbb{R}^3$. A state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ with $|\vec r| \leq 1$, and $\vec r$ is its Bloch vector. The doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = h_t + \vec r\cdot\vec h_\Psi$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Q}\tilde M_{\mathrm{kraus},l}^{*}$ and normalization $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$, and the Choi matrix is $J(Ξ) = \sum_{j\eta}\tilde{E}_{\Psi,j\eta}\otimesΞ(\tilde{E}_{\Psi,j\eta})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_x$ is
 $$
 Ξ_{\mathrm{deph},p}(\tilde{Ϛ}_{\Psi})
 := (1-p)\,\tilde{Ϛ}_{\Psi}
@@ -95,7 +95,7 @@ E_{11} = \tfrac{1}{2}(e_t - i\vec e_z), \quad
 E_{01} = \tfrac{1}{2}(i\vec e_x - \vec e_y), \quad
 E_{10} = \tfrac{1}{2}(i\vec e_x + \vec e_y).
 $$
-These are the elements the parent denotes $\tilde{E}_{\Psi,j\eta}$; they satisfy $\mathrm{Tr}(E_{j\eta}E_{lm}) = \delta_{\eta l}\delta_{jm}$. The idempotents $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ and $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ are exactly $E_{00}$ and $E_{11}$; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and the two are its associated idempotents. Since dephasing fixes the populations and scales the coherences by $1-p$,
+These are the elements the parent denotes $\tilde{E}_{\Psi,j\eta}$; they satisfy $2\,\mathrm{Sc}(E_{j\eta}E_{lm}) = \delta_{\eta l}\delta_{jm}$. The idempotents $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ and $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ are exactly $E_{00}$ and $E_{11}$; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and the two are its associated idempotents. Since dephasing fixes the populations and scales the coherences by $1-p$,
 $$
 Ξ(E_{00}) = E_{00}, \qquad Ξ(E_{11}) = E_{11}, \qquad Ξ(E_{01}) = (1-p)\,E_{01}, \qquad Ξ(E_{10}) = (1-p)\,E_{10},
 $$
@@ -214,7 +214,7 @@ At $\gamma = \tfrac{1}{2}$ the excited state is driven to the **maximally mixed 
 
 **Purity.** For a general input,
 $$
-\mathrm{Tr}\!\left(\tilde{Ϛ}_{\Psi,\mathrm{out}}^2\right) = \tfrac{1}{2}\left(1 + (1-\gamma)\left(r_1^2 + r_2^2\right) + \left(\gamma + (1-\gamma)r_3\right)^2\right).
+2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi,\mathrm{out}}^2\right) = \tfrac{1}{2}\left(1 + (1-\gamma)\left(r_1^2 + r_2^2\right) + \left(\gamma + (1-\gamma)r_3\right)^2\right).
 $$
 For the maximally mixed input ($\vec r = 0$) the purity rises from $\tfrac{1}{2}$ to $\tfrac{1}{2}(1+\gamma^2) \geq \tfrac{1}{2}$: amplitude damping *purifies* the maximally mixed state by driving it toward the pure ground state. This is possible precisely because the channel is non-unital, and it is the opposite of the behaviour of dephasing. For the excited input $\vec r = (0,0,-1)$ the output purity is $\tfrac{1}{2}(1 + (2\gamma-1)^2)$, which is $\tfrac{1}{2}$ at $\gamma = \tfrac{1}{2}$ — the maximally mixed value — and rises to $1$ at $\gamma = 1$. Finally, the Choi rank of the channel is two for $\gamma>0$ (one at $\gamma=0$), so it is irreversible for every $\gamma>0$.
 
@@ -268,7 +268,7 @@ $$
 $$
 with equality if and only if $p=0$, or $r_\perp = 0$ (the state already lies on the dephasing axis). The **purity**,
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}\left(1 + |\vec r|^2\right),
+2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}\left(1 + |\vec r|^2\right),
 $$
 therefore does not increase, and strictly decreases for any off-axis state when $p>0$.
 
@@ -318,7 +318,6 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\eta^2 = -e_t$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$ | State; $\vec r$ the Bloch vector |
-| $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde\Pi_{1,2}(\vec u_x) = \tfrac{1}{2}(e_t \pm i\vec u_x)$ | Idempotents along $\vec u_x$ |
 | $Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Q}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation |
 | $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$ | Trace-preservation condition |
@@ -328,7 +327,7 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $\vec r \mapsto (1-p)\vec r + p(\vec u_x\cdot\vec r)\vec u_x$ | Dephasing Bloch map |
 | $E_{j\eta} = \lvert j\rangle\langle k\rvert$ | Matrix units of the computational basis |
 | $\gamma$ | Amplitude-damping parameter |
-| $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+\lvert\vec r\rvert^2)$ | Purity |
+| $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1+\lvert\vec r\rvert^2)$ | Purity |
 | $S = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-$ | von Neumann entropy |
 
 ## Further Reading

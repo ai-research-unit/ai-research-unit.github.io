@@ -319,7 +319,7 @@ The framework's contribution is the centrality of the configuration space, the b
 | $\pi_{\mathrm{fop}}=-\frac{i\,\hbar}{\xi_{\mathrm{scl}}}$ | Momentum representation; yields $[\xi_{\mathrm{fop}},\pi_{\mathrm{fop}}]=i\,\hbar\,\delta^{(3)}$ |
 | $S_E[\tilde{Ξ}]=\int\mathrm{Sc}(\tilde{Ξ}^{*}(-\Delta_E+\mu^2)\tilde{Ξ})$ | Euclidean action (Wick rotation) |
 | $\vert\langle0_{\mathrm{out}}\vert0_{\mathrm{in}}\rangle\vert^2=\vert Z[\tilde Q_5]\vert^2/\vert Z[0]\vert^2$ | Vacuum persistence amplitude |
-| $\mathrm{Tr}(e_t)=2$, $\mathrm{Tr}[\tilde Q_2,\tilde Q_1]=0$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $2\,\mathrm{Sc}(e_t)=2$, $2\,\mathrm{Sc}[\tilde Q_2,\tilde Q_1]=0$ | Scalar-part identity; no bosonic mode in $\mathbb{B}$ |
 
 ## Further Reading
 

@@ -384,7 +384,7 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 | $\theta_W$ | Thomas–Wigner angle |
 | $\vec u_4$ | Axis of the boost part $\tilde H_\Psi$ |
 | $\vec u_{\mathrm r} = \vec u_{\vec v_{b_2}\times\vec v_{b_3}}$ | Axis of the Wigner rotation |
-| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, trace; $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
+| $\mathrm{Sc}$, $\mathrm{Tr}$ | Scalar part, twice the scalar part; $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ |
 
 ## Further Reading
 

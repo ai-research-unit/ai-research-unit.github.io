@@ -10,7 +10,7 @@ The distinction between one Kraus operator, an instrument, and a channel is the 
 
 This article is the pilot of the polar programme in the physics corpus: the object is the Kraus operator of a measurement outcome, the examples are two-dimensional, and every numerical claim is checked in the matrix model. It does not derive the measurement postulate or classify channels; it tests the grammar of the generalized Cartan pairing on the object where that grammar has the most work to do.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{B}_{\Psi}$, the anti-Hermitian subspace is $\mathbb{B}_{\Phi}$. A state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde M_{\mathrm{kraus},H}$ and the partial isometry $\tilde M_{\mathrm{kraus},0}$; they are the $\tilde M_{\mathrm{kraus},H}$ and $\tilde M_{\mathrm{kraus},0}$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde{H}_{\Psi,R}$ and the $*$-unitary element $\tilde M_{\mathrm{kraus},0}$ of a channel. The trace is $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^{2}=-e_t$, and central scalar imaginary $i$. The Hermitian conjugation is ${}^{*}$, the Hermitian subspace is $\mathbb{B}_{\Psi}$, the anti-Hermitian subspace is $\mathbb{B}_{\Phi}$. A state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $|\vec r|\leq1$. The positive factor of the polar decomposition is written $\tilde M_{\mathrm{kraus},H}$ and the partial isometry $\tilde M_{\mathrm{kraus},0}$; they are the $\tilde M_{\mathrm{kraus},H}$ and $\tilde M_{\mathrm{kraus},0}$ of the generalized Cartan pairing, and the subscripts keep them apart from the Hamiltonian $\tilde{H}_{\Psi,R}$ and the $*$-unitary element $\tilde M_{\mathrm{kraus},0}$ of a channel. The doubled scalar part is $2\,\mathrm{Sc}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$, read at normalisation.
 
 ## The Results It Uses
 
@@ -30,7 +30,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 An **instrument** is a family of completely positive maps indexed by an outcome. In the algebra it is a family of Kraus operators $\tilde M_{\mathrm{kraus},y}$ with
 
 $$
-\tilde E_{\Psi}_y=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y},\qquad \sum_y\tilde E_{\Psi}_y=e_t,\qquad p_y=\operatorname{Tr}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde E_{\Psi}_y\right),\qquad \tilde{Ϛ}_{\Psi,y}=\frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{p_y}.
+\tilde E_{\Psi}_y=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y},\qquad \sum_y\tilde E_{\Psi}_y=e_t,\qquad p_y=2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde E_{\Psi}_y\right),\qquad \tilde{Ϛ}_{\Psi,y}=\frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{p_y}.
 $$
 
 Dropping the outcome label gives the **channel**
@@ -276,7 +276,7 @@ $$
 \tilde M_{\mathrm{kraus}}=\tilde\Pi=\tfrac12\left(e_t+i\vec u\right),\qquad \vec u^{2}=-e_t.
 $$
 
-It satisfies $\tilde\Pi^{2}=\tilde\Pi=\tilde\Pi^{*}$ and $\langle\tilde\Pi\rangle_{\natural}=0$, so it is a zero divisor. Its polar factors are $\tilde M_{\mathrm{kraus},H}=\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, because $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ and $\tilde\Pi^{+}=\tilde\Pi$. The effect is $\tilde E_{\Psi}=\tilde\Pi$, and the two projections of the partial isometry are both $\tilde\Pi$. The outcome probability for a state $\tilde{Ϛ}_{\Psi}$ is $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde\Pi)$, and the post-measurement state is $\tilde\Pi$.
+It satisfies $\tilde\Pi^{2}=\tilde\Pi=\tilde\Pi^{*}$ and $\langle\tilde\Pi\rangle_{\natural}=0$, so it is a zero divisor. Its polar factors are $\tilde M_{\mathrm{kraus},H}=\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, because $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ and $\tilde\Pi^{+}=\tilde\Pi$. The effect is $\tilde E_{\Psi}=\tilde\Pi$, and the two projections of the partial isometry are both $\tilde\Pi$. The outcome probability for a state $\tilde{Ϛ}_{\Psi}$ is $p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi)$, and the post-measurement state is $\tilde\Pi$.
 
 The sharp outcome therefore sits exactly on the null cone, and its amplitude is a partial isometry, not a $*$-unitary. The "collapse" is the rank drop: the amplitude has rank one, the effect has rank one, and the post-measurement state is a pure state. The mathematical pairing that covers it is the generalized Cartan pairing; the Cartan pairing on $\langle\tilde M_{\mathrm{kraus}}\rangle_{\natural}\neq0$ does not.
 
@@ -411,7 +411,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | $\sigma_i$ | singular values of $\tilde M_{\mathrm{kraus}}$, eigenvalues of $\tilde M_{\mathrm{kraus},H}$ |
 | $Ξ(\tilde{Ϛ}_{\Psi})=\sum_l\tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}$ | channel |
 | $Z=i\vec e_z$ | the $*$-unitary Pauli-$z$ element, $Z^{2}=e_t$ |
-| $\operatorname{Tr}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | trace convention |
+| $2\,\mathrm{Sc}\tilde Q=2\operatorname{Sc}\tilde Q=2Q_t$ | reduction convention |
 | $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$ | biquaternion norm (determinant) |
 
 ## Further Reading

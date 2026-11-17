@@ -8,7 +8,6 @@ Three claims organize the discussion. First, the spinor representation is the de
 
 The third claim is the one with content, and it is checked rather than assumed. The two parents already classify the finite-dimensional representations by the pair $(s,s_2)$ and develop the module and its bilinear pairings; neither asks which of those representations the algebra can actually carry. That is the subject of the last two sections.
 
-Notation is that of the read-list companions. The quaternion basis is $e_t=1,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_\eta^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$; the scalar imaginary is $i$, commuting with the quaternion units; $\mathbb{B}_{\Phi}$ is the anti-Hermitian subspace (the material sector, home of the four-vectors), $\mathbb{B}_{\Psi}$ the Hermitian subspace (the informational sector), $\mathbb{B}_{H}$ the real-quaternion subspace, and $\mathbb{B}_{C}$ the scalar subspace. The algebra isomorphism is $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ with $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$ and $\mathsf{M}_2(i)=iI_2$, so that $\mathsf{M}_2(i\vec e_\eta)=\sigma_\eta$, and the biquaternion norm is the determinant, $\langle\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\det\mathsf{M}_2(\tilde{Q})$. The trace on the Hermitian sector is $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 ## The Spinor Representation and Its Carrier
 
@@ -233,7 +232,7 @@ The higher representations are $(s,s_2)=V_s\boxtimes V_{s_2}$, $\dim=(2s+1)(2s_2
 | $(s,s_2)=V_s\boxtimes V_{s_2}$ | Irreducible representation, $\dim=(2s+1)(2s_2+1)$ |
 | $\operatorname{sym}^{2s}(S)\otimes\operatorname{sym}^{2s_2}(\bar{S})$ | Carrier of $(s,s_2)$ from symmetric powers of the spinor |
 | $\tilde{Q}\mapsto\tilde U_{\mathrm{lor}}\tilde{Q}\tilde U_{\mathrm{lor}}{}^{*}$ | Conjugation action carrying $(\tfrac12,\tfrac12)$ on $\mathbb{B}$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form on the Hermitian sector |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form on the Hermitian sector |
 
 ## Further Reading
 

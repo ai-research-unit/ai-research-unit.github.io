@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, the biquaternion norm, the trace form, the roots of $-1$, the idempotents, the polar decompositions. The companion articles use them all. This article asks a different question about them: **which of these objects must be posited, and which follow from the others?**
+The framework presents a large collection of objects: the algebra $\mathbb{B}$, the scalar imaginary $i$, the quaternion units, the four conjugations, the four fixed-point subspaces, the two-sector split $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$, the biquaternion norm, the reduction functional, the roots of $-1$, the idempotents, the polar decompositions. The companion articles use them all. This article asks a different question about them: **which of these objects must be posited, and which follow from the others?**
 
 The question is not decorative. Every derivation in the framework inherits the status of its inputs. If an object is silently promoted from derived to fundamental — or quietly derived in one place and posited in another — then the framework's account of *why* it has the structure it has is wrong, even when every formula is right. The purpose of this article is to fix a sorting criterion, state the base to which it applies, and apply the criterion to the framework's objects one at a time.
 
@@ -48,7 +48,7 @@ $$
 
 The algebra $\mathbb{B}$ is eight-dimensional over $\mathbb{R}$ and four-dimensional over $\mathbb{C}$, with the multiplication extended $\mathbb{C}$-bilinearly from that of $\mathbb{H}$. Its centre is $\mathbb{B}_{C}=\mathbb{C}e_t$.
 
-Nothing else is posited. In particular, no conjugation other than the two that the base supplies (${}^{\natural}$ from $\mathbb{H}$ and the real structure below) is assumed; no pairing, trace, norm, subspace, root of $-1$, or polar form is assumed.
+Nothing else is posited. In particular, no conjugation other than the two that the base supplies (${}^{\natural}$ from $\mathbb{H}$ and the real structure below) is assumed; no pairing, reduction, norm, subspace, root of $-1$, or polar form is assumed.
 
 **The isomorphism type is a theorem, the algebra is a posit.** The type of the algebra is not free: over $\mathbb{C}$ a finite-dimensional unital associative algebra that is simple with centre $\mathbb{C}$ is a full matrix algebra, and dimension $4=2^2$ forces $\mathbb{B}\cong M_2(\mathbb{C})$. So *that* the algebra is $M_2(\mathbb{C})$ is derived from (B1) and (B2); *which* algebra is posited is the content of the posits. This distinction is used throughout: derivedness of a *type* does not make the object derived.
 
@@ -188,57 +188,57 @@ But the split is forced only *relative to the base*, and the real form the base 
 
 **The naming is not derived.** Which of the two sectors is called "material" and which "informational" is not decided by the algebra. Since $i$ exchanges the sectors and $i\mapsto-i$ is a presentation, the assignment of the temporal coordinate $i r'_t$ to $\mathbb{B}_{\Phi}$ rather than to $\mathbb{B}_{\Psi}$ is a convention, pinned by the choice of sign of $i$. The physical identification of the four-vectors with $\mathbb{B}_{\Phi}$ and of the qubit operators with $\mathbb{B}_{\Psi}$ is an *interpretation* in the sense of the criterion: it is a separate posit, recorded in the companion articles, and not a derivation of this algebra.
 
-## Derived: The Trace Form
+## Derived: The Reduction Functional
 
-The trace is not posited either. It is the algebra's own reduced trace, and its values follow from the multiplication table.
+The reduction is not posited either. It is the algebra's own scalar-part functional, and its values follow from the multiplication table.
 
-**Construction of the trace.** On any algebra $\mathbb{B}$, a linear functional vanishing on commutators is determined by its values on a basis of the commutator quotient. In $\mathbb{B}$, the unit $e_t$ has no commutator representation, while each vector unit is a commutator:
+**Construction of the functional.** On any algebra $\mathbb{B}$, a linear functional vanishing on commutators is determined by its values on a basis of the commutator quotient. In $\mathbb{B}$, the unit $e_t$ has no commutator representation, while each vector unit is a commutator:
 
 $$
 \vec e_x=\tfrac12[\vec e_y,\vec e_z], \qquad \vec e_y=\tfrac12[\vec e_z,\vec e_x], \qquad \vec e_z=\tfrac12[\vec e_x,\vec e_y],
 $$
 
-as one checks from $[\vec e_y,\vec e_z]=2\vec e_x$ and its cyclic analogues. Therefore a trace functional, normalized by $\mathrm{Tr}(e_t)=2$ — the degree of the central simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$ — is
+as one checks from $[\vec e_y,\vec e_z]=2\vec e_x$ and its cyclic analogues. Therefore a linear functional $f$ that vanishes on commutators, normalised by $f(e_t)=2$ — the degree of the central simple algebra $\mathbb{B}\cong M_2(\mathbb{C})$, which is the factor the functional inherits from the matrix trace — is
 
 $$
-\boxed{\;\mathrm{Tr}(\tilde Q_1)=2Q_{1t}=2\,\mathrm{Sc}(\tilde Q_1)\;}.
+\boxed{\;f(\tilde Q_1)=2Q_{1t}=2\,\mathrm{Sc}(\tilde Q_1)\;}.
 $$
 
-The normalization is rigidly derived rather than a presentation: the reduced trace of the degree-two matrix model fixes it, and every automorphism of the base fixes $e_t$ and hence the value $\mathrm{Tr}(e_t)$; the vanishing on the vector units is forced. Consequently, for any two biquaternions $\tilde Q_1,\tilde Q_2$,
+The normalization is rigidly derived rather than a presentation: the reduced trace of the degree-two matrix model fixes it, and every automorphism of the base fixes $e_t$ and hence the value $f(e_t)$; the vanishing on the vector units is forced. Consequently, for any two biquaternions $\tilde Q_1,\tilde Q_2$,
 
 $$
-\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2).
+f(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2).
 $$
 
-This is the trace formula of the framework, and it is derived, not assumed.
+This is the reduction formula of the framework, and it is derived, not assumed.
 
-**The trace form on the sectors.** Substituting the coordinate forms derived above gives the values of the bilinear trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ in $\mathbb{B}_{\Psi}$,
+**The bilinear form on the sectors.** Substituting the coordinate forms derived above gives the values of $f(\tilde Q_1\tilde Q_2)$ on each sector. For $\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_{\Psi,2}$ in $\mathbb{B}_{\Psi}$,
 
 $$
-\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\bigl(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr),
+f(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\bigl(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\bigr),
 $$
 
 which is real and positive definite; for $\tilde{R}_{\Phi,1}=i r_{1t}e_t+\vec r_1$ and $\tilde{R}_{\Phi,2}=i r_{2t}e_t+\vec r_2$ in $\mathbb{B}_{\Phi}$,
 
 $$
-\mathrm{Tr}(\tilde{R}_{\Phi,1}\tilde{R}_{\Phi,2})=-2\bigl(r_{1t}r_{2t}+\vec r_1\cdot\vec r_2\bigr),
+f(\tilde{R}_{\Phi,1}\tilde{R}_{\Phi,2})=-2\bigl(r_{1t}r_{2t}+\vec r_1\cdot\vec r_2\bigr),
 $$
 
-which is real and negative definite; and for one argument in each sector the value is purely imaginary. Hence the real part of the trace form is positive definite on $\mathbb{B}_{\Psi}$, negative definite on $\mathbb{B}_{\Phi}$, and the two sectors are orthogonal for it:
+which is real and negative definite; and for one argument in each sector the value is purely imaginary. Hence the real part of the form is positive definite on $\mathbb{B}_{\Psi}$, negative definite on $\mathbb{B}_{\Phi}$, and the two sectors are orthogonal for it:
 
 $$
 \mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}
 $$
 
-is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,\mathrm{Tr}$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
+is an orthogonal decomposition of signature $(4,4)$ for $\mathrm{Re}\,f$. This is a derived structural asymmetry between the two sectors: the operator sector carries a positive-definite form, the material sector a negative-definite one, and the sign is not put in by hand.
 
-**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, the trace formula gives
+**The expectation-value form.** For a state $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+\mu i)$ with $\mu$ a real unit pure quaternion and an observable $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$, the reduction formula gives
 
 $$
-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\mu\cdot\vec h_\Psi,
+2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t+\mu\cdot\vec h_\Psi,
 $$
 
-the Born-rule expectation value. This is an application of the derived trace, not a new posit.
+the Born-rule expectation value. This is an application of the derived functional, not a new posit.
 
 ## The Scalar Imaginary
 
@@ -317,8 +317,8 @@ The results are collected in one place. The statuses are those of the criterion,
 | The sectors $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Derived | Eigenspaces of the derived involution ${}^{*}$. |
 | The split $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ | Forced relative to the base | Eigen-decomposition of ${}^{*}$; the real form it uses is an input. |
 | The biquaternion norm $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}$ | Derived | Multiplication plus ${}^{\natural}$. |
-| The trace $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Derived (rigid) | Vanishes on the vector units because they are commutators; the normalization is the reduced trace of the degree-two matrix model, fixed by every automorphism of the base. |
-| The trace form $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Derived | Consequence of the trace. |
+| The functional $f(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Derived (rigid) | Vanishes on the vector units because they are commutators; the normalisation is the reduced trace of the degree-two matrix model, fixed by every automorphism of the base. |
+| The bilinear form $f(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Derived | Consequence of $f(e_t)=2$ and linearity. |
 | Exponential, roots of $-1$, idempotents, $SL(2,\mathbb{C})$ | Derived | Solving equations with coefficients in the base. |
 | Polar decompositions | Derived | Constructions from the exponential and the roots of $-1$. |
 | "Material"/"informational" naming and the four-vector identification | Interpretation | A separate physical posit; not a theorem of the algebra. |
@@ -351,8 +351,8 @@ The one gap is left visible rather than closed. The complexification — equival
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace: real scalar, imaginary vector |
 | $\mathbb{B}_{\Phi}$ | Anti-Hermitian subspace: imaginary scalar, real vector |
 | $\langle\tilde Q_1\rangle_{\natural}=\tilde Q_1\tilde Q_1^{\natural}=\sum_\mu Q_{1,\mu}^2$ | Biquaternion norm; derived |
-| $\mathrm{Tr}(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Trace; rigidly derived |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace form; derived |
+| $f(\tilde Q_1)=2\,\mathrm{Sc}(\tilde Q_1)$ | Scalar-part functional; rigidly derived |
+| $f(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Bilinear form; derived |
 | $\mathcal{S}$ | The base: (B1) $\mathbb{H}$, (B2) the complexification |
 
 ## Further Reading

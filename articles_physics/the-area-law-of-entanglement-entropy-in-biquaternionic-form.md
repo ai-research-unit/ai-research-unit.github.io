@@ -216,7 +216,7 @@ What the framework cannot supply is the geometry: the metric, the dimension, the
 | $e_t=1,\vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^2=-e_t$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
 | $\mathbb{B}_{\Psi},\mathbb{B}_{\Phi}$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$ |
 | $\mathbb{B}^{\otimes N}\cong M_{2^N}(\mathbb{C})$ | Chain of $N$ modes |
 | $A,\bar A,\partial A$ | Region, complement, and boundary bonds |
 | $\rho_A=\mathrm{Tr}_{\bar A}\,\rho$ | Reduced state of the region |

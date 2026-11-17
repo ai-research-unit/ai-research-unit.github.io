@@ -4,11 +4,11 @@
 
 The functional integral of the companion article *The Functional Integral in Biquaternionic Form* is a formal object: the measure $\mathcal{D}\mathcal{A}$ is a product over uncountably many field components, the action is a four-dimensional integral, and the Gaussian evaluations that make the integral computable are the evaluations of a finite-dimensional approximation. The companion article *The Gauge Field Path Integral in Biquaternionic Form* removes the gauge redundancy but keeps the continuum; the result is an integral over gauge orbits, still formal. This article supplies the regulator. A lattice discretization replaces the continuum by a finite set of variables whose number is proportional to the volume in lattice units, replaces the formal measure by a finite product of compact-group integrals, and replaces the ill-defined continuum limit by a limit in which the lattice spacing is taken to zero together with a renormalization of the coupling. The result is the only construction in the subcategory in which the path integral is a genuine finite-dimensional integral, and it is the setting in which the confining behaviour of the non-abelian theory is established rather than inferred.
 
-The framework's contribution is specific. A lattice link variable is the parallel transporter along a link, and for the algebra's compact factor it is an element of the group, which in the biquaternion realization is a **unit quaternion** — the compact subset $\{Q\in\mathbb{B}:Q\bar Q=e_t\}$ of the algebra. The group is compact, so the Haar measure on it is finite and normalized, and the lattice path integral is a finite product of compact integrals. The trace that the action uses is the real part of the quaternion,
+The framework's contribution is specific. A lattice link variable is the parallel transporter along a link, and for the algebra's compact factor it is an element of the group, which in the biquaternion realization is a **unit quaternion** — the compact subset $\{Q\in\mathbb{B}:Q\bar Q=e_t\}$ of the algebra. The group is compact, so the Haar measure on it is finite and normalized, and the lattice path integral is a finite product of compact integrals. The trace that the action uses is the matrix trace of the link in its two-dimensional image, and it is twice the real scalar part,
 $$
-\mathrm{Tr}\,\tilde U=\mathrm{Tr}\,Ξ(\tilde U)=2\,\mathrm{Re}(\tilde U_0)\in[-2,2],
+\mathrm{Tr}\,\mathsf M_2(\tilde U)=2\,\mathrm{Re}(\tilde U_0)\in[-2,2],
 $$
-for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec e_z$; the action is bounded below and the measure is bounded above, and the path integral converges without a formal gauge-fixing determinant. This is the structural reason the lattice is the natural non-perturbative regulator for the framework: the nonlinearity that obstructs the continuum measure — the group-valued link — is exactly the compactness that makes the lattice measure finite.
+for $\tilde U=\tilde U_te_t+\tilde U_x\vec e_x+\tilde U_y\vec e_y+\tilde U_z\vec e_z$. Throughout this article $\mathrm{Tr}$ applied to a group element, a link or a link product is the trace of its $2\times2$ image, $\mathrm{Tr}\,\tilde X:=\operatorname{tr}\mathsf M_2(\tilde X)$; applied to a field strength it is the trace on the $\mathrm{SU}(2)$ colour factor. The action is bounded below and the measure is bounded above, and the path integral converges without a formal gauge-fixing determinant. This is the structural reason the lattice is the natural non-perturbative regulator for the framework: the nonlinearity that obstructs the continuum measure — the group-valued link — is exactly the compactness that makes the lattice measure finite.
 
 The article is organized as follows. The next section states why a regulator is needed and what the lattice supplies. A section constructs the lattice carrier: sites, links, the group-valued variable and its gauge law. A section derives the plaquette and the Wilson action and shows that its naive continuum limit is the Yang–Mills density of the companion articles, with the coupling normalization fixed. A section defines the lattice path integral and its measure, and records the transfer-matrix and reflection-positivity properties on which the **physical interpretation** rests. A section carries out the strong-coupling expansion, obtains the area law and the string tension, and identifies confinement. A section takes the continuum limit and fixes the place of the lattice in the renormalization group. A closing section separates what the algebra supplies from what is imported.
 
@@ -159,8 +159,8 @@ In the framework's terms, the lattice accomplishes the following.
 
 At small $\beta$ the weight can be expanded in powers of $\beta$,
 $$
-\exp(-\frac{1}{\hbar}S_W)=\prod_{p}\exp(-\beta\left(1-\frac1N\mathrm{ReTr}\tilde U_p\right))
-=\exp(-\beta N_p)\prod_p\left[1+\frac{\beta}{N}\mathrm{ReTr}\tilde U_p+O(\beta^2)\right],
+\exp(-\frac{1}{\hbar}S_W)=\prod_{p}\exp\left(-\beta\left(1-\frac1N\mathrm{Re}\,\mathrm{Tr}\,\mathsf M_2(\tilde U_p)\right)\right)
+=\exp(-\beta N_p)\prod_p\left[1+\frac{\beta}{N}\mathrm{Re}\,\mathrm{Tr}\,\mathsf M_2(\tilde U_p)+O(\beta^2)\right],
 $$
 where $N_p$ is the number of plaquettes and $\tilde U_p$ denotes the plaquette variable. The integral of a product of links around a set of plaquettes is evaluated with the group integral identities
 $$
@@ -246,9 +246,9 @@ $$
 \tilde U_{\mu\nu}(n)=\tilde U_\mu(n)\tilde U_\nu(n+\vec u_\mu)\tilde U_\mu(n+\vec u_\nu)^{-1}\tilde U_\nu(n)^{-1}
 =\exp\!\big(ia^2\kappa F_{\mu\nu}(n)+O(a^3)\big).
 $$
-The Wilson action $S_W=\beta\sum(1-\frac1N\mathrm{ReTr}\tilde U_{\mu\nu})$ has the small-$a$ expansion
+The Wilson action $S_W=\beta\sum(1-\frac1N\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu})$ has the small-$a$ expansion
 $$
-1-\frac1N\mathrm{ReTr}\tilde U_{\mu\nu}=\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6),
+1-\frac1N\mathrm{Re}\,\mathrm{Tr}\,\tilde U_{\mu\nu}=\frac{a^4\kappa^2}{2N}\mathrm{Tr}\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right)+O(a^6),
 $$
 so that with $\beta=2N/\kappa^2=4/\kappa^2$ it reduces to the Euclidean Yang–Mills density $\frac12\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$; both the plaquette identity and the normalization were checked numerically on a constant non-abelian field. The path integral is the finite product of normalized Haar measures on the unit quaternions,
 $$
@@ -282,17 +282,16 @@ with the $N=2$ one-plaquette average beginning at $\beta/4$; this is confinement
 | $\tilde U_{\mu\nu}(n)$ | Plaquette; product of four links around an elementary square |
 | $\tilde U_{\mu\nu}=\exp(ia^2\kappa F_{\mu\nu}+O(a^3))$ | Plaquette expansion |
 | $\mathrm{Tr}\,\tilde U=2\,\mathrm{Re}(\tilde U_0)$ | Trace of a group element |
-| $S_W=\beta\sum(1-\tfrac1N\mathrm{ReTr}\tilde U_{\mu\nu})$, $N=2$ | Wilson action |
+| $S_W=\beta\sum(1-\tfrac1N\mathrm{Re}\,\mathrm{Tr}\,\mathsf M_2(\tilde U_{\mu\nu}))$, $N=2$ | Wilson action |
 | $\beta=2N/\kappa^2=4/\kappa^2$ | Lattice coupling |
 | $Z=\int\prod_{n,\mu}dU_\mu(n)\exp(-\frac{1}{\hbar}S_W)$ | Lattice path integral |
 | $dU=\tfrac{1}{2\pi^2}\sin^2\theta\,d\theta\,d\Omega$ | Normalized Haar measure on the unit quaternions |
 | $W(C)=\tfrac1N\mathrm{Tr}\prod_{l\in C}\tilde U_l$ | Lattice Wilson loop |
 | $\langle W(C)\rangle\sim \exp(-\sigma A)$ | Area law; $\sigma$ the string tension |
 | $\sigma a^2=-\ln(\beta/2N^2)+O(1)$ | Leading strong-coupling string tension |
-| $\tfrac12\langle\mathrm{Tr}\tilde U_\Box\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
+| $\tfrac12\langle\mathrm{Tr}\,\mathsf M_2(\tilde U_\Box)\rangle=I_2(\beta)/I_1(\beta)=\beta/4+O(\beta^3)$ | $SU(2)$ one-plaquette average |
 | $b_0=\tfrac{11}{3}C_2(G)=\tfrac{22}{3}$ | One-loop coefficient for pure $SU(2)$ |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Plain trace reading, distinct from the matrix trace |
 | $a,b$ | Colour indices, written low; the lattice spacing is also written $a$ and is a length, not an index |
 
 ## Further Reading

@@ -28,7 +28,7 @@ The findings are stated in advance.
 5. **Momentum uncertainty makes the entropy frame-dependent.** The boost's channel is unital, so the maximally mixed state is fixed, but a non-maximally-mixed state is dephased by the Wigner angle and its entropy rises; for a transverse spin the entropy is $h((1+\cos\alpha)/2)$ with $\alpha$ the Wigner angle.
 6. **The entropy labels the little-group orbit.** The quotient of the Bloch ball by $SU(2)$ is the interval of radii, and the entropy is a bijection from that interval onto $[0,1]$ bit; the Lorentz group acts on the orbit label only through the momentum, so the entropy of a sharp-momentum state is a genuine little-group invariant.
 
-The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, central scalar $i$, trace $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{B}_{\Psi}$, anti-Hermitian sector $\mathbb{B}_{\Phi}$, and the matrix model $\mathsf{M}_2$. The state is $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$; the spin operators are $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$; the Wigner rotation is $\tilde{W}_{\Psi}(\tilde U_{\mathrm{lor}},\tilde V_{\Phi}) = \tilde U_{\mathrm{lor},\tilde V_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde V}_{\Phi}{}^{-1}\in SU(2)$, with $\tilde U_{\mathrm{lor}}$ the Lorentz rotor, the unit-norm biquaternion whose congruence is the Lorentz transformation, $\tilde U_{\mathrm{lor},\tilde V}_{\Phi}$ the standard boost carrying $\tilde V_{\Phi}$ to rest, and $\tilde V_{\Phi,2}=\tilde U_{\mathrm{lor}}\tilde V_{\Phi}\tilde U_{\mathrm{lor}}{}^{*}$.
+The notation is that of the foundational articles: $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, quaternion units $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, central scalar $i$, reduction $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, biquaternion norm $\langle\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, Hermitian sector $\mathbb{B}_{\Psi}$, anti-Hermitian sector $\mathbb{B}_{\Phi}$, and the matrix model $\mathsf{M}_2$. The state is $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$; the spin operators are $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$; the Wigner rotation is $\tilde{W}_{\Psi}(\tilde U_{\mathrm{lor}},\tilde V_{\Phi}) = \tilde U_{\mathrm{lor},\tilde V_{\Phi,2}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde V}_{\Phi}{}^{-1}\in SU(2)$, with $\tilde U_{\mathrm{lor}}$ the Lorentz rotor, the unit-norm biquaternion whose congruence is the Lorentz transformation, $\tilde U_{\mathrm{lor},\tilde V}_{\Phi}$ the standard boost carrying $\tilde V_{\Phi}$ to rest, and $\tilde V_{\Phi,2}=\tilde U_{\mathrm{lor}}\tilde V_{\Phi}\tilde U_{\mathrm{lor}}{}^{*}$.
 
 The companion articles supply the pieces:
 - Companion article *The Relativistic Qubit in Biquaternionic Form*, for the state space, the Bloch ball, and the little group.
@@ -79,7 +79,7 @@ $$
 $$
 the Born weights of the state are the normalised Hermitian form, read through the traces
 $$
-w_\pm = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_{1,2}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{1,2}^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{1,2})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{1,2}^{*})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})} = \frac{1\pm|\vec r|}{2},
+w_\pm = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde\Pi_{1,2}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{1,2}^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{1,2})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde\Pi_{1,2}^{*})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})} = \frac{1\pm|\vec r|}{2},
 \qquad w_+ + w_- = 1 ,
 $$
 the star in the last trace being inert and the unstarred trace real and non-negative, and the von Neumann entropy is the Shannon entropy of these two weights,
@@ -131,10 +131,10 @@ preserves the **unnormalized** biquaternion norm, again by multiplicativity and 
 $$
 \langle\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}\rangle_{\natural} = \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} ,
 $$
-but it does not preserve the trace: $\mathrm{Tr}(\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}) = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}) \neq 1$. The physical state is the normalized element, and its biquaternion norm acquires a factor,
+but it does not preserve the trace: $2\,\mathrm{Sc}(\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}) \neq 1$. The physical state is the normalized element, and its biquaternion norm acquires a factor,
 $$
-N\!\left(\frac{\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}}{\mathrm{Tr}(\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*})}\right)
-= \frac{\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}{\mathrm{Tr}(\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*})^2} .
+N\!\left(\frac{\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*}}{2\,\mathrm{Sc}(\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*})}\right)
+= \frac{\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}{2\,\mathrm{Sc}(\tilde U_{\mathrm{lor}}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{lor}}{}^{*})^2} .
 $$
 For the maximally mixed state the trace is $\cosh\theta_{\mathrm{rpd}}$, and the normalized element has
 $$

@@ -233,8 +233,8 @@ $$
 The factor $2$ is forced by $\mathsf M_2(e_t)=I_2$ and cannot be divided out. It cancels in every ratio, and the Born weight is a ratio:
 
 $$
-p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)}{\operatorname{Tr}\tilde{Ϛ}_{\Psi}},
-\qquad \operatorname{Tr}\tilde{Ϛ}_{\Psi}=1\iff\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12 .
+p=\frac{\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}=\frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)}{2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}},
+\qquad 2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}=1\iff\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12 .
 $$
 
 A normalised state therefore has trace one; the factor $2$ belongs in the definition of the trace and cancels in the probability. Dropping it from the trace or inserting it in the ratio are the two opposite mistakes.
@@ -260,7 +260,7 @@ Each form has a norm, and each norm takes one letter, $P$, $N$, $H$ or $\mathrm{
 
 The polar word is $\tilde Q=r\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ on the complement of the zero-divisor cone. It is a section of the word map, not of the exponential. The modulus is the square root of the quaternionic norm, not of the Hermitian one; the Hermitian norm is the topological norm and never enters the existence condition. Four objects carry the word *boost*, and the factor of two between the frame rotor and the four-vector factor is the most common error in the corpus; for a four-momentum $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$ and the word parameter is $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$.
 
-The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$, and the factor two is forced and cancels in the Born ratio; a normalised state has trace one. The three pairings are three bracketings of one word, and their domains are not nested: the quaternion construction can fail where the word exists, the Hamilton pairing can fail where both exist, and the Cartan pairing is the widest off the cone.
+The trace of the $2\times2$ image is $2\,\mathrm{Sc}\tilde Q=2Q_t$, and the factor two is forced and cancels in the Born ratio; a normalised state has normalised. The three pairings are three bracketings of one word, and their domains are not nested: the quaternion construction can fail where the word exists, the Hamilton pairing can fail where both exist, and the Cartan pairing is the widest off the cone.
 
 ## Summary of Notation
 
@@ -274,8 +274,7 @@ The trace is the trace of the $2\times2$ image, $\operatorname{Tr}\tilde Q=2Q_t$
 | $\Rho,\Theta,\vec U,B$ | The Hamilton data of the polar word; $\Rho=imc$, $\Theta=-i\theta_{\mathrm{rpd}}$, $\vec U=\vec u_p$, $B=\lvert\vec p\rvert$ for a four-momentum |
 | $\theta_{\mathrm{rpd}}$, $\theta_{\mathrm{rpd},w}$ | The kinematic rapidity and the word parameter, $\theta_{\mathrm{rpd},w}=2\theta_{\mathrm{rpd}}$ for a four-vector |
 | $\tilde U_{\Psi,\mathrm b}$, $\mathcal B_{\Psi}$ | The frame rotor and the four-vector factor $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$ |
-| $\operatorname{Tr}\tilde Q=2Q_t$ | The trace of the $2\times2$ image; a normalised state has trace one |
-| $p=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/\operatorname{Tr}\tilde{Ϛ}_{\Psi}$ | The Born weight, a ratio in which the factor two cancels |
+| $p=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)/2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi}$ | The Born weight, a ratio in which the factor two cancels |
 
 ## Further Reading
 

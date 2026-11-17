@@ -181,11 +181,11 @@ so the expectation of the number is a sum of squared norms and the spectrum is n
 
 The obstruction has two forms, a trace identity and a dimension count, and they are the same statement seen twice.
 
-**The trace identity.** If $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ were elements of $\mathbb{B}$ satisfying the canonical relation $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$, then taking the trace would give
+**The trace identity.** If $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$ were elements of $\mathbb{B}$ satisfying the canonical relation $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$, then taking the doubled scalar part would give
 
 $$
-\boxed{\;0=\mathrm{Tr}\big([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]\big)
-=c\,\mathrm{Tr}(e_t)=2c ,
+\boxed{\;0=2\,\mathrm{Sc}\big([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]\big)
+=c\,2\,\mathrm{Sc}(e_t)=2c ,
 \qquad\text{hence}\qquad c=0\;}.
 $$
 
@@ -212,7 +212,7 @@ The consequence for the title of the article is plain. The scalar Fock space is 
 The framework's Born rule is the normalised Hermitian form over the informational sector, read as the trace: for a positive state $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ (trace one in the image), the expectation of a Hermitian observable $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ is
 
 $$
-\boxed{\;\langle\tilde H_\Psi\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde H_\Psi)\;}.
+\boxed{\;\langle\tilde H_\Psi\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde H_\Psi)\;}.
 $$
 
 For a single **fermionic** mode this formula applies directly to the Fock number operator, which is the idempotent $\tfrac12(e_t-i\vec e_z)$; its expectation is the occupation probability, and the vacuum and occupied idempotents are the two pure states. For the **scalar** field the formula applies only to finite-dimensional truncations, because the full number operator acts on an infinite-dimensional space and is not an element of $\mathbb{B}$. On the $n$-level truncation of one mode, the number operator is the diagonal matrix $\mathrm{diag}(0,1,\dots,n)$ represented in the Fock basis, and the trace formula returns the mean occupation of the truncated state. Explicitly, a truncated state is a density matrix $\rho=\sum_{k,l}\rho_{kl}|k\rangle\langle l|$ with $\rho\ge0$ and $\mathrm{tr}\,\rho=1$, and
@@ -253,7 +253,6 @@ and the **displacement** $D(\theta_{\mathrm{cen}})=\exp(\theta_{\mathrm{cen}} a_
 
 The scalar Fock space is the symmetric algebra of the one-particle space, $\mathcal{F}=\bigoplus_{n\ge0}\mathrm{sym}^n\mathcal{H}_1$, with $\mathcal{H}_1=L^2(\mathbb{R}^3,d^3p/(2\pi\hbar)^3 \frac{\hbar c}{2E_{\vec p}})$; its occupation basis, creation and annihilation operators, vacuum and number operator are the standard bosonic ones. The one-particle space is a module for the centre: no non-central element acts on a spin-$0$ state without mixing it into another spin sector, so the whole algebra cannot act on it, in contrast with the spinor module that carries the fermionic sectors. The state space is a module for the CCR algebra, not for $\mathbb{B}$.
 
-The scalar Fock space is not an object of $\mathbb{B}$. The obstruction is the trace of a commutator: a canonical relation $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ inside the algebra would force $2c=\mathrm{Tr}([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}])=0$, hence $c=0$, so no bosonic mode exists in the four-dimensional algebra; the companion Fock-space article's fermionic one-mode result is the contrasting case, in which the vacuum is the idempotent $\tfrac12(e_t+i\vec e_z)$. The dimension count says the same thing: the $d$-mode truncation to total occupation $n_{\max}$ has dimension $\binom{d+n_{\max}}{n_{\max}}$, which for a single mode reaches $4$ at $n_{\max}=3$ and exceeds it from $n_{\max}=4$ onward, and the symmetric algebra is infinite-dimensional.
 
 The state space carries two gradings, an $\mathbb{N}$-grading by total number and, for the complex field, a $\mathbb{Z}$-grading by charge whose sectors are the superselection sectors of the $\mathrm{U}(1)$; there is no $\mathbb{Z}/2$ parity grading, because the bosonic modes commute and no graded-commutativity is imposed. The informational sector's trace formula applies to finite truncations only; the scalar vacuum is not a density operator in $\mathbb{B}_{\Psi}$, and the coherent states are the imported bosonic construction on the module the algebra supplies.
 
@@ -273,9 +272,9 @@ The state space carries two gradings, an $\mathbb{N}$-grading by total number an
 | $N=\int\frac{d^3p}{(2\pi\hbar)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}+b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Number operator ($\mathbb{N}$-grading) |
 | $Ϙ_{\mathrm{fop}}=\int\frac{d^3p}{(2\pi\hbar)^3}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}-b_{\mathrm{fop}}^{\dagger}b_{\mathrm{fop}})$ | Charge operator ($\mathbb{Z}$-grading) |
 | $\mathrm{sym}^n$, $\binom{d+n_{\max}}{n_{\max}}$ | Symmetric powers and their dimensions |
-| $\mathrm{Tr}([\tilde Q_2,\tilde Q_1])=0$, $\mathrm{Tr}(e_t)=2$ | Trace identity; no bosonic mode in $\mathbb{B}$ |
+| $2\,\mathrm{Sc}([\tilde Q_2,\tilde Q_1])=0$, $2\,\mathrm{Sc}(e_t)=2$ | Scalar-part identity; no bosonic mode in $\mathbb{B}$ |
 | $\tfrac12(e_t+i\vec e_z)$, $\tfrac12(e_t-i\vec e_z)$ | Fermionic vacuum and occupied idempotents (contrast case) |
-| $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ | Trace reading at normalisation (Born rule), for finite truncations |
+| $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$ | Scalar-part reading at normalisation (Born rule), for finite truncations |
 | $D(\theta_{\mathrm{cen}})=\exp(\theta_{\mathrm{cen}} a_{\mathrm{fop}}^{\dagger}-\theta_{\mathrm{cen}}^*a_{\mathrm{fop}})$, $\vert\theta_{\mathrm{cen}}\rangle$ | Displacement operator and coherent state |
 | $U_{\mathrm{fop},\theta_{\mathrm{cen}}}=\exp(i\theta_{\mathrm{cen}} Ϙ_{\mathrm{fop}})$, $\vert\theta_{\mathrm{cen}}\rangle\mapsto\vert \exp(+i\theta_{\mathrm{cen}})\theta_{\mathrm{cen}}\rangle$ | Central $\mathrm{U}(1)$ phase |
 

@@ -34,7 +34,7 @@ $$
 B^2=Q_x^2+Q_y^2+Q_z^2.
 $$
 
-The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$, quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$ and Hermitian conjugation $\tilde Q^*=\overline{Q}_t-\overline{\vec Q}$. The trace is $\operatorname{Tr}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.
+The number $B$ is a fixed complex square root of $B^2$; the other root exchanges the two labels. A general element is written $\tilde Q_2=Q_{2,t}e_t+\vec Q_2$; the subscript distinguishes it from the fixed element $\tilde Q$ whose eigenbasis is constructed. The plain product is the associative product of $\mathbb{B}$, with unit $e_t$, quaternion conjugation $\tilde Q^{\natural}=Q_t-\vec Q$ and Hermitian conjugation $\tilde Q^*=\overline{Q}_t-\overline{\vec Q}$. Twice the scalar part is $2\operatorname{Sc}(\tilde Q_2)=2Q_{2,t}$, and $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ is the scalar of $\tilde Q_2^{\natural}\tilde Q_2$. The Peirce corners of a pair of idempotents are $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$. The letters $L_{\tilde Q_2}$ and $R_{\tilde Q_2}$ denote left and right multiplication by $\tilde Q_2$.
 
 ## The Spectral Condition and the Root
 
@@ -455,18 +455,18 @@ $$
 
 The two columns are the two spinor spaces, and the two rows are the two spectral eigenspaces. The entries are indexed by the corner: $Q_{2,ij}$ is the coefficient of the basis vector in $\mathbb{B}_{ij}$.
 
-**Proposition (trace and determinant).** For every $\tilde Q_2\in\mathbb{B}$,
+**Proposition (doubled scalar part and determinant).** For every $\tilde Q_2\in\mathbb{B}$,
 
 $$
 \operatorname{Tr}\mathsf M_2^{Q}(\tilde Q_2)=Q_{2,11}+Q_{2,22}=2Q_{2,t},\qquad
 \det\mathsf M_2^{Q}(\tilde Q_2)=Q_{2,11}Q_{2,22}-Q_{2,12}Q_{2,21}=\langle\tilde Q_2\rangle_{\natural}.
 $$
 
-*Proof.* The trace is $2Q_{2,t}$ because the trace is a similarity invariant and $\operatorname{Tr}\tilde Q_2=2Q_{2,t}$. The determinant is the central scalar, because the matrix model is an algebra isomorphism and $\det\mathsf M_2(\tilde Q_2)=\langle\tilde Q_2\rangle_{\natural}$.
+*Proof.* The trace is $2Q_{2,t}$ because the trace is a similarity invariant and $2\operatorname{Sc}\tilde Q_2=2Q_{2,t}$. The determinant is the central scalar, because the matrix model is an algebra isomorphism and $\det\mathsf M_2(\tilde Q_2)=\langle\tilde Q_2\rangle_{\natural}$.
 
-### The Trace Pairing
+### The Plain Pairing
 
-The trace pairing $\langle\tilde Q_2,\tilde Q_2\rangle=\operatorname{Tr}(\tilde Q_2\tilde Q_2)$ is non-degenerate on $\mathbb{B}$. In the eigenbasis its Gram matrix is
+The plain pairing $\langle\tilde Q_2,\tilde Q_2\rangle=2\operatorname{Sc}(\tilde Q_2\tilde Q_2)$ is non-degenerate on $\mathbb{B}$. In the eigenbasis its Gram matrix is
 
 $$
 G=
@@ -478,13 +478,13 @@ G=
 \end{pmatrix},
 $$
 
-because $\operatorname{Tr}(\tilde\Pi_\pm)=1$, $\operatorname{Tr}(\vec\Upsilon_\pm)=0$ and $\operatorname{Tr}(\vec\Upsilon_+\vec\Upsilon_-)=\operatorname{Tr}(\tilde\Pi_-)=1$. The trace matrix of the basis is not the identity: the two idempotents have trace $1$, the two nilpotents have trace $0$, and the two mixed products have trace $1$. The matrix is its own inverse, so the dual basis of $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$: the two nilpotents are exchanged and the two idempotents are self-dual. Consequently
+because $2\operatorname{Sc}(\tilde\Pi_\pm)=1$, $2\operatorname{Sc}(\vec\Upsilon_\pm)=0$ and $2\operatorname{Sc}(\vec\Upsilon_+\vec\Upsilon_-)=2\operatorname{Sc}(\tilde\Pi_-)=1$. The pairing matrix of the basis is not the identity: the two idempotents have trace $1$, the two nilpotents have trace $0$, and the two mixed products have trace $1$. The matrix is its own inverse, so the dual basis of $(\tilde\Pi_+,\vec\Upsilon_-,\vec\Upsilon_+,\tilde\Pi_-)$ is $(\tilde\Pi_+,\vec\Upsilon_+,\vec\Upsilon_-,\tilde\Pi_-)$: the two nilpotents are exchanged and the two idempotents are self-dual. Consequently
 
 $$
-Q_{2,11}=\operatorname{Tr}(\tilde\Pi_+\tilde Q_2),\qquad
-Q_{2,12}=\operatorname{Tr}(\vec\Upsilon_+\tilde Q_2),\qquad
-Q_{2,21}=\operatorname{Tr}(\vec\Upsilon_-\tilde Q_2),\qquad
-Q_{2,22}=\operatorname{Tr}(\tilde\Pi_-\tilde Q_2).
+Q_{2,11}=2\operatorname{Sc}(\tilde\Pi_+\tilde Q_2),\qquad
+Q_{2,12}=2\operatorname{Sc}(\vec\Upsilon_+\tilde Q_2),\qquad
+Q_{2,21}=2\operatorname{Sc}(\vec\Upsilon_-\tilde Q_2),\qquad
+Q_{2,22}=2\operatorname{Sc}(\tilde\Pi_-\tilde Q_2).
 $$
 
 ## Expansion of Every Biquaternion
@@ -889,7 +889,7 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 | $S_\pm=\mathbb{B}\tilde\Pi_\pm$ | the spinor spaces, the two Peirce copies |
 | $L_{\tilde Q_2}$, $R_{\tilde Q_2}$ | left and right multiplication by the general element |
 | $\mathsf M_2^{Q}$ | the matrix model attached to the eigenbasis |
-| $\operatorname{Tr}\tilde Q_2=2Q_{2,t}$ | the trace |
+| $2\operatorname{Sc}\tilde Q_2=2Q_{2,t}$ | twice the scalar part |
 | $\langle\tilde Q_2\rangle_{\natural}=\operatorname{Sc}(\tilde Q_2^{\natural}\tilde Q_2)$ | the scalar of $\tilde Q_2^{\natural}\tilde Q_2$ |
 
 ## Further Reading
@@ -910,6 +910,6 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Relations between the Biquaternion Exponential and the Fourier Kernel](relations-between-the-biquaternion-exponential-and-the-fourier-kernel.html), for the eigenbasis read in a root-adapted Fourier basis and the transverse cuts of the two decompositions.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the spectral decomposition in the wider theory.
-- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the spectral projectors, the trace pairing and the matrix models.
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (2nd edition, Cambridge University Press, 2013), for the spectral projectors, the plain pairing and the matrix models.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternion algebra with $M_2(\mathbb{C})$ and the spinor modules.
 - Élie Cartan, *The Theory of Spinors* (Dover, 1981), for the classical theory of the two Peirce copies.

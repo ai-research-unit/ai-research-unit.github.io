@@ -26,7 +26,7 @@ $$
 
 the entropy is a function of the single scalar by which the state fails to be idempotent. Pure states are the zero divisors of the biquaternion norm, maximally mixed is its maximum on the state space, and entropy measures the position of the state between them.
 
-This is the informational interpretation of a geometric fact. The article does not claim that entropy is *derived* from the biquaternion norm in the sense of being forced by it — the function $h$ is the standard one, and its form is a theorem of information theory, not of the algebra — but it makes precise which algebraic invariant the entropy sees. The biquaternion norm supplies the number; information theory supplies the function. Two invariants of the algebra are in play throughout the framework and must not be conflated: the **Hermitian form**, $\langle\tilde{P}_{\Phi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{P}_{\Phi}\tilde H_\Psi^{*})$, whose $2\times2$ reading is the trace pairing $\mathrm{Tr}(\tilde{P}_{\Phi}\tilde H_\Psi)$ and which gives the Born rule, and the **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, which is indefinite of signature $(1,3)$ and gives the cone. Entropy belongs to the second.
+This is the informational interpretation of a geometric fact. The article does not claim that entropy is *derived* from the biquaternion norm in the sense of being forced by it — the function $h$ is the standard one, and its form is a theorem of information theory, not of the algebra — but it makes precise which algebraic invariant the entropy sees. The biquaternion norm supplies the number; information theory supplies the function. Two invariants of the algebra are in play throughout the framework and must not be conflated: the **Hermitian form**, $\langle\tilde{P}_{\Phi},\tilde H_\Psi\rangle_{*}=\mathrm{Sc}(\tilde{P}_{\Phi}\tilde H_\Psi^{*})$, and it gives the Born rule, and the **biquaternion norm** $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural}$, which is indefinite of signature $(1,3)$ and gives the cone. Entropy belongs to the second.
 
 The article proceeds as follows. The state, its purity, and the biquaternion norm are recalled and the identities connecting them are derived. Then the spectral decomposition is used to compute the entropy and to write it as a function of the biquaternion norm, and the logarithm is exhibited as an element of the algebra. Then the consequences are collected: monotonicity, bounds, concavity, $*$-unitary invariance, and the behaviour at the two ends of the cone slice. Then the relation to the standard matrix formula is stated, and a section separates what the biquaternion-norm description adds from what it merely restates. Open questions and the usual closing sections follow.
 
@@ -40,7 +40,7 @@ $$
 \tilde{Ϛ}_{\Psi} = \tfrac{1}{2}\bigl(e_t + i\,\vec r\bigr), \qquad \vec r = r_1\vec e_x + r_2\vec e_y + r_3\vec e_z, \quad r_\eta\in\mathbb{R},
 $$
 
-normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$. Its matrix image is
+normalised by $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12$. Its matrix image is
 
 $$
 M(\tilde{Ϛ}_{\Psi}) = \tfrac{1}{2}\bigl(I_2 + \vec r\cdot\boldsymbol{\sigma}\bigr),
@@ -64,8 +64,6 @@ P(\tilde{Ϛ}_{\Psi}) = 2\,\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*}
 = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}^2\bigr)
 = \tfrac{1}{2}\bigl(1 + |\vec r|^2\bigr),
 $$
-
-whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2)$.
 
 and the **deviation from idempotency** is a pure scalar multiple of the identity,
 
@@ -101,7 +99,7 @@ a scalar element of the centre. Three interpretations of this single identity or
 
 - $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}\geq0$ is positivity, with equality exactly on the pure states; the biquaternion norm's zero set is the boundary of the Bloch ball, the zero-divisor cone of $\mathbb{B}_{\Psi}$.
 - Comparing with the deviation from idempotency, $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$: **the deviation from idempotency is minus the biquaternion norm**. There is no other mixedness parameter.
-- The purity is an affine function of the biquaternion norm, $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1 - 2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = 1 - 2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$.
+- The purity is an affine function of the biquaternion norm, $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1 - 2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$.
 
 The biquaternion norm therefore measures the failure of a state to be a zero divisor of the algebra, and it does so with one number. On the normalised hyperplane it takes its minimum $0$ on the pure states and its maximum $\tfrac14$ at the maximally mixed state.
 
@@ -119,7 +117,7 @@ $$
 \lambda_\pm = \tfrac{1}{2}\bigl(1 \pm |\vec r|\bigr).
 $$
 
-The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their normalisation is $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$, and the Hermitian form gives $2\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}=\lambda_\pm$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*}) = \lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
+The two idempotents are Hermitian, orthogonal, and sum to the identity: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$, $\tilde\Pi_1\tilde\Pi_2 = 0$, $\tilde\Pi_1 + \tilde\Pi_2 = e_t$. Their normalisation is $\langle\tilde\Pi_{1,2},e_t\rangle_{*}=\tfrac12$, and the Hermitian form gives $2\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}=\lambda_\pm$. This is the module-level spectral decomposition recalled in the article on the native qubit; the eigenvalues are read from the Bloch radius by $\lambda_+ - \lambda_- = |\vec r|$ and $\lambda_+ + \lambda_- = 1$.
 
 ### Entropy as a function of the biquaternion norm
 
@@ -162,13 +160,7 @@ $$
 = S(\tilde{Ϛ}_{\Psi}) ,
 $$
 
-because the idempotents are orthogonal and each has scalar part $\tfrac12$. Equivalently, in the $2\times2$ reading,
-
-$$
-S(\tilde{Ϛ}_{\Psi}) = -\mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\bigr),
-$$
-
-which is the ordinary matrix formula. The derivation uses only the normalisation $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$, the spectral decomposition, and the reading $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$; no property of the module beyond the spectral theorem is required.
+because the idempotents are orthogonal and each has scalar part $\tfrac12$. This is the ordinary matrix formula with the trace replaced by twice the scalar part. The derivation uses only the normalisation $\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\tfrac12$ and the spectral decomposition; no property of the module beyond the spectral theorem is required.
 
 Two caveats belong here. First, the expression requires the logarithm, whose value on the rank-one idempotents is unbounded below; the convention $0\log 0 = 0$ removes the boundary points and assigns the pure states entropy zero as a limit. In the interior the formula is exact; at the boundary it is a limiting statement. Second, the base of the logarithm is conventional; with the natural logarithm the maximal entropy is $\log 2$, and with base two it is one bit. The article uses the natural logarithm and states when a base-two value is quoted.
 
@@ -215,11 +207,11 @@ Rotor conjugation by a matrix-unitary biquaternion, $\tilde{Ϛ}_{\Psi}\mapsto\ti
 
 ## Relation to the Standard Formula
 
-The standard von Neumann entropy of a density operator is $S = -\mathrm{Tr}(\rho\log\rho)$ with eigenvalues $\lambda_i$. For a qubit with Bloch vector $\vec r$, the eigenvalues are $\tfrac12(1\pm|\vec r|)$ and the entropy is $h\!\left(\tfrac{1+|\vec r|}{2}\right)$. This is exactly the formula derived above, so the framework's entropy is the standard entropy. Nothing here changes a numerical prediction.
+The standard von Neumann entropy of a density operator is $S = -\operatorname{tr}(\rho\log\rho)$, where $\rho$ is a matrix and the symbol is its matrix trace, with eigenvalues $\lambda_i$. For a qubit with Bloch vector $\vec r$, the eigenvalues are $\tfrac12(1\pm|\vec r|)$ and the entropy is $h\!\left(\tfrac{1+|\vec r|}{2}\right)$. This is exactly the formula derived above, so the framework's entropy is the standard entropy. Nothing here changes a numerical prediction.
 
 What the biquaternion-norm interpretation adds is the *location* of the entropy's argument. In the matrix formulation the entropy is a function of the spectrum, and the spectrum is obtained by diagonalizing a matrix. In the biquaternion formulation the state carries a biquaternion norm, and on the normalised hyperplane the biquaternion norm is the deviation from idempotency; the entropy is a function of that scalar. The operative content is that:
 
-- purity is an affine function of the biquaternion norm, $2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$;
+- purity is an affine function of the biquaternion norm, $2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$;
 - the mixedness scalar is exactly the biquaternion norm up to sign, $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$;
 - the entropy is a monotone function of the position of the state in the cone of the biquaternion norm.
 
@@ -238,7 +230,7 @@ None of this is available in the same form for a general $d$-level system, where
 
 - It does not derive the Shannon function $h$; the functional form of the entropy is a theorem of information theory, imported as standard.
 - It does not extend the "entropy is a function of the biquaternion norm" statement beyond the qubit. For larger systems the biquaternion norm is not a single real number, and the argument fails.
-- It does not by itself give the entropy of a *reduced* state of a composite system except through the partial trace, which is an additional structure on $\mathbb{B}\otimes\mathbb{B}$ and is treated in the companion articles on entanglement.
+- It does not by itself give the entropy of a *reduced* state of a composite system except through the reduction over one factor, which is an additional structure on $\mathbb{B}\otimes\mathbb{B}$ and is treated in the companion articles on entanglement.
 - It does not supply data-processing inequalities, monotonicity under channels, or strong subadditivity; those are properties of the entropy under maps and are developed with the channel formalism.
 
 ## Open Questions
@@ -247,7 +239,7 @@ None of this is available in the same form for a general $d$-level system, where
 
 **2. The many-qubit case.** For $n$ qubits the state space is the positive cone slice of $\mathbb{B}_{\Psi}^{\otimes n}$, and the biquaternion norm is replaced by a family of invariants. Which algebraic data determine the entropy there, and does the biquaternion norm of the tensor product play the role the single norm plays here?
 
-**3. Entropy and the trace pairing.** Entropy is a function of the biquaternion norm; the Born rule is a function of the Hermitian form, whose trace reading is taken last, at normalisation. Is there an algebraic relation between the two pairings that makes this division of labour inevitable, or is it an accident of the qubit?
+**3. Entropy and the Hermitian form.** Entropy is a function of the biquaternion norm; the Born rule is a function of the Hermitian form, whose value is read at normalisation. Is there an algebraic relation between the two pairings that makes this division of labour inevitable, or is it an accident of the qubit?
 
 **4. Relative entropy.** The quantum relative entropy $S(\rho\|\sigma)$ measures distinguishability and underlies the Holevo bound. Its biquaternion form, and whether it admits a biquaternion-norm expression in the qubit case, is the natural continuation of this article.
 
@@ -262,17 +254,16 @@ $$
 \langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac{1}{4}\bigl(1-|\vec r|^2\bigr)e_t .
 $$
 
-The biquaternion norm of a state is a single real number taking values in $[0,\tfrac14]$ on the state space. The deviation of the state from idempotency is minus that number, $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$, and the purity is affine in it, $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$, whose $2\times2$ reading is $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2)$. The spectrum is $\lambda_\pm = \tfrac12(1\pm\sqrt{1-4N})$, so the von Neumann entropy is a function of the biquaternion norm and nothing else,
+The biquaternion norm of a state is a single real number taking values in $[0,\tfrac14]$ on the state space. The deviation of the state from idempotency is minus that number, $\tilde{Ϛ}_{\Psi}^2-\tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$, and the purity is affine in it, $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$. The spectrum is $\lambda_\pm = \tfrac12(1\pm\sqrt{1-4N})$, so the von Neumann entropy is a function of the biquaternion norm and nothing else,
 
 $$
 S(\tilde{Ϛ}_{\Psi}) = h\!\left(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}}}{2}\right)
-= -2\,\langle\tilde{Ϛ}_{\Psi},\log\tilde{Ϛ}_{\Psi}\rangle_{*}
-= -\mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}\bigr),
+= -2\,\langle\tilde{Ϛ}_{\Psi},\log\tilde{Ϛ}_{\Psi}\rangle_{*} ,
 $$
 
 with $S=0$ exactly on the pure states (the zero divisors of the biquaternion norm) and $S=\log2$ exactly at the maximally mixed state (the maximum of the biquaternion norm on the slice). Entropy is monotone in the biquaternion norm, concave, and invariant under the $*$-unitary inner automorphisms that preserve the biquaternion norm.
 
-The description is the standard qubit entropy, and it predicts nothing new. What it makes precise is which invariant the entropy measures: not the Hermitian form of the Born rule, whose $2\times2$ reading is the trace pairing, but the biquaternion norm whose cone is the state space, and, on that cone slice, the departure of the state from the zero-divisor boundary.
+The description is the standard qubit entropy, and it predicts nothing new. What it makes precise is which invariant the entropy measures: not the Hermitian form of the Born rule but the biquaternion norm whose cone is the state space, and, on that cone slice, the departure of the state from the zero-divisor boundary.
 
 ## Summary of Notation
 
@@ -285,14 +276,14 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 | $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\tilde\Pi_{1,2}(\vec u_r) = \tfrac12(e_t\pm i\vec u_r)$ | Spectral idempotents of the state |
 | $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ | Eigenvalues |
-| $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, the $2\times2$ reading |
+| $2\,\mathrm{Sc}(\tilde{Q})$ | Twice the scalar part |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = h_t^2 - |\vec h_\Psi|^2 = \det M(\tilde H_\Psi)$ | Biquaternion norm of a Hermitian element |
 | $\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural} = \tfrac14(1-|\vec r|^2)e_t$ | Biquaternion norm of a state |
 | $\tilde{Ϛ}_{\Psi}^2 - \tilde{Ϛ}_{\Psi} = -\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}e_t$ | Deviation from idempotency |
-| $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$ | Purity; $2\times2$ reading $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2)$ |
+| $P(\tilde{Ϛ}_{\Psi}) = 2\langle\tilde{Ϛ}_{\Psi},\tilde{Ϛ}_{\Psi}\rangle_{*} = 1-2\langle\tilde{Ϛ}_{\Psi}\rangle_{\natural}$ | Purity |
 | $h(p) = -p\log p-(1-p)\log(1-p)$ | Binary entropy |
-| $S(\tilde{Ϛ}_{\Psi}) = -2\langle\tilde{Ϛ}_{\Psi},\log\tilde{Ϛ}_{\Psi}\rangle_{*}$ | Von Neumann entropy; $2\times2$ reading $-\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ |
+| $S(\tilde{Ϛ}_{\Psi}) = -2\langle\tilde{Ϛ}_{\Psi},\log\tilde{Ϛ}_{\Psi}\rangle_{*}$ | Von Neumann entropy |
 | $S = H(N) = h\!\left(\tfrac{1+\sqrt{1-4N}}{2}\right)$ | Entropy as a function of the biquaternion norm |
 | $0 \le S \le \log 2$ | Entropy bounds |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

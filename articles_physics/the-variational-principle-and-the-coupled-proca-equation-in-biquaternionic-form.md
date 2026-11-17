@@ -219,7 +219,7 @@ The constraint is the trace of the equation and the curvature does not enter it.
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_t=1,\ \vec e_x,\vec e_y,\vec e_z$ | Quaternion basis, $\vec e_\eta^{2}=-e_t$ |
 | $i$ | Central scalar imaginary |
-| $\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part and trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ | Quaternionic norm; real on $\mathbb{B}_\Phi$ |
 | $\tilde A=i a'_t e_t+\vec A$ | Complex Proca potential, an element of $\mathbb{B}$ |
 | $\tilde A_\Phi=A_te_t+\sum_\eta A_\eta\vec e_\eta$ | Connection, an element of $\mathbb{B}_\Phi$ |

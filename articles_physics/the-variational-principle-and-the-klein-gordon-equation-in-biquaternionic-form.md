@@ -28,7 +28,7 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 The formalism is that of *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, and the action principle is that of *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*; this article applies the principle to the Klein–Gordon equation in its element form.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$, and $\mathrm{Tr}=2\,\mathrm{Sc}$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
 
 ## The Equation and Its Operator
 
@@ -215,7 +215,7 @@ which is the Hamiltonian of the previous section and is non-negative term by ter
 
 **The contrast with the charge.** The energy is positive on both branches and the charge is not, and the difference is not a matter of normalization. The energy density is a sum of four moduli squared per coefficient; the charge density is a difference of two products of the field and its rate. A plane wave checks both: with $\tilde\Xi=A e^{-i\omega r'_t/c}$ at $\vec k_\Phi=0$ the energy density is $\big(\omega^{2}/c^{2}+k_m^{2}\big)\lvert A\rvert^{2}$, the same for $+\omega$ and $-\omega$, while the charge density flips sign. So the two defects of the parent are one defect: what fails is the charge, and the energy is what shows that the failure is not a failure of positivity of the theory.
 
-**The factor of two, and the trace.** With the convention $\mathrm{Tr}=2\,\mathrm{Sc}$ the energy density is $\tfrac12\mathrm{Tr}\big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi+\dots\big]$, which is the form the stress tensor article uses. The two expressions differ by the convention and by nothing else.
+**The factor of two, and the trace.** With the convention $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ the energy density is $\mathrm{Sc}\big[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi+\dots\big]$, which is the form the stress tensor article uses. The two expressions differ by the convention and by nothing else.
 
 ### Space translations and rotations: the stress
 
@@ -310,7 +310,7 @@ The second-order structure appears in the variational principle as the conjugate
 | $\mathbb{B}_{\Psi},\ \mathbb{B}_{\Phi}$ | Hermitian (observable) and anti-Hermitian (generator) subspaces |
 | $^{*}$ | Hermitian conjugation |
 | $^{\natural}$ | Quaternion conjugation |
-| $\mathrm{Sc}$ | Coefficient of $e_t$; $\mathrm{Tr}=2\,\mathrm{Sc}$ |
+| $\mathrm{Sc}$ | Coefficient of $e_t$ |
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient, $\partial/\partial R_t$ and $\partial/\partial r_\eta$ |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ | d'Alembertian on the material sector |
 | $r'_t=c\,t'$ | Material time, a length |

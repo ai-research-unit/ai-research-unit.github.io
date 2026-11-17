@@ -26,7 +26,7 @@ Second, the word "rotor conjugation" is used for the gate action, and it must be
 
 The article is organised as follows. The gate group and its structure are described first. Then the standard single-qubit gate set is exhibited in biquaternion form. Then composition is treated as the algebra product, including the Clifford group. Then multi-qubit gates are built in the tensor-product arena, with the controlled gate, CNOT, CZ, and SWAP. Then a simple circuit — the preparation of a Bell state — is worked through algebraically. Then the reversible gates are contrasted with the irreversible channels of the read list. The article closes with what the reformulation does and does not claim, and with open questions.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian). The trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the trace formula $\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ is the Born rule; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real, and non-negative when $\tilde Q_{\mathrm{Had}}\ge0$. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$ and $\vec e_\mu \vec e_\nu=\epsilon_{\mu\nu\lambda}\vec e_\lambda$ for distinct $\mu,\nu$, with $\lambda$ the remaining index; the scalar imaginary is $i$, central and with $i^2 = -1$; the fixed-point subspaces are $\mathbb{B}_{C}$ (the complex subspace, the centre), $\mathbb{B}_{H}$ (the real-quaternion subspace), $\mathbb{B}_{\Psi}$ (Hermitian), and $\mathbb{B}_{\Phi}$ (anti-Hermitian). The doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, and the reduction formula $2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ is the Born rule; the star is inert on $\mathbb{B}_{\Psi}$ and the unstarred trace is real, and non-negative when $\tilde Q_{\mathrm{Had}}\ge0$. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is the one fixed by the companion article on quantum physics,
 
 $$
 e_t \mapsto I_2, \qquad \vec e_x \mapsto -i\sigma_1, \qquad \vec e_y \mapsto -i\sigma_2, \qquad \vec e_z \mapsto -i\sigma_3, \qquad i \mapsto i I_2 ,
@@ -55,12 +55,12 @@ The image is again Hermitian, positive, and of trace one: since $\tilde{Ϛ}_{\Ps
 $$
 Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi})^{*} = \tilde Q\tilde{Ϛ}_{\Psi}\tilde Q^{*} = Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi}),
 \qquad
-\mathrm{Tr}\!\left(Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi})\right) = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}) = 1 .
+2\,\mathrm{Sc}\!\left(Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi})\right) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1 .
 $$
 
 So a gate maps states to states.
 
-**The gate is a channel of Kraus rank one.** In the language of the companion article on quantum channels, $Ξ_{\tilde Q}$ has the single Kraus operator $\tilde M_{\mathrm{kraus}} = \tilde Q$ with $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are **invertible within the channels**, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}}$ (whose Kraus operator is $\tilde Q^{*}$); it is also exactly the class that **preserves purity**, $\mathrm{Tr}(Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi})^2) = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.
+**The gate is a channel of Kraus rank one.** In the language of the companion article on quantum channels, $Ξ_{\tilde Q}$ has the single Kraus operator $\tilde M_{\mathrm{kraus}} = \tilde Q$ with $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}} = e_t$. It is therefore completely positive and trace preserving, and it is exactly the class of channels that are **invertible within the channels**, with inverse $Ξ^{-1}_{\tilde Q} = Ξ_{\tilde Q^{*}}$ (whose Kraus operator is $\tilde Q^{*}$); it is also exactly the class that **preserves purity**, $2\,\mathrm{Sc}(Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi})^2) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2)$. A gate is a reversible process, and conversely every reversible process of the informational sector is a gate.
 
 ### Why Matrix-Unitarity and Not Unit Norm
 
@@ -75,7 +75,7 @@ $$
 is Hermitian, $\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}$, and has unit norm, $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{\natural} = e_t$. Here $\theta_{\mathrm{rpd}}$ is the rapidity, $\tanh\theta_{\mathrm{rpd}}=v/c$, real at every speed below $c$. Hence $\tilde U_{\Psi,\mathrm b}\tilde U_{\Psi,\mathrm b}^{*} = \tilde U_{\Psi,\mathrm b}^2 \neq e_t$, and conjugation by $\tilde U_{\Psi,\mathrm b}$ does not preserve the trace:
 
 $$
-\mathrm{Tr}\!\left(\tilde U_{\Psi,\mathrm b}\tilde{Ϛ}_{\Psi}\tilde U_{\Psi,\mathrm b}^{*}\right) \neq \mathrm{Tr}(\tilde{Ϛ}_{\Psi}) \quad \text{in general}.
+2\,\mathrm{Sc}\!\left(\tilde U_{\Psi,\mathrm b}\tilde{Ϛ}_{\Psi}\tilde U_{\Psi,\mathrm b}^{*}\right) \neq 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) \quad \text{in general}.
 $$
 
 A boost is a rotor on the material sector $\mathbb{B}_{\Phi}$ and **not** a gate on the informational sector $\mathbb{B}_{\Psi}$. The distinction is not a technicality: it is the algebraic expression of the fact that the Lorentz group and the gate group are different groups inside one algebra, related to the two complementary subspaces.
@@ -123,7 +123,7 @@ $$
 \vec r \;\longmapsto\; R(\tilde Q)\,\vec r, \qquad R(\tilde Q) \in SO(3),
 $$
 
-a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec r|$ is preserved, and with it the purity $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the spectrum $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$. A gate rotates the Bloch ball rigidly; it never contracts it.
+a proper rotation of $\mathbb{R}^3$. The scalar part of the state is fixed, the norm $|\vec r|$ is preserved, and with it the purity $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^2) = \tfrac{1}{2}(1 + |\vec r|^2)$ and the spectrum $\lambda_\pm = \tfrac{1}{2}(1\pm|\vec r|)$. A gate rotates the Bloch ball rigidly; it never contracts it.
 
 **Rotation gates.** The unit real quaternion with axis $\vec u_{\mathrm r}$ and angle $\theta_{\mathrm{axr}}$,
 
@@ -514,7 +514,7 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 | $\tilde Q\tilde Q^{*}=e_t$ | Gate (matrix-unitary element); $\mathrm{U}(2)$ |
 | $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural}=e_t$ | Lorentz rotor (unit norm); $SL(2,\mathbb{C})$, not a gate |
 | $Ξ_{\tilde Q}(\tilde{Ϛ}_{\Psi})=\tilde Q\tilde{Ϛ}_{\Psi}\tilde Q^{*}$ | Rotor conjugation (gate action) |
-| $\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=\operatorname{Tr}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ | Trace reading at normalisation (Born rule) |
+| $2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}})=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_{\mathrm{Had}}^{*}) = 2\langle\tilde\Pi,\tilde Q_{\mathrm{Had}}\rangle_{*}$ | Scalar-part reading at normalisation (Born rule) |
 | $\tilde Q_x=i\vec e_x,\ \tilde Q_y=i\vec e_y,\ \tilde Q_z=i\vec e_z$ | Pauli gates |
 | $\tilde Q_{\mathrm{Had}}=\tfrac{i}{\sqrt2}(\vec e_x+\vec e_z)$ | Hadamard gate |
 | $\tilde Q_{\mathrm{ph}}=\tfrac{1}{\sqrt2}(e_t+\vec e_z),\ \tilde Q_{T}=\cos\tfrac{\pi}{8}e_t+\sin\tfrac{\pi}{8}\vec e_z$ | Phase and $T$ gates |

@@ -813,7 +813,7 @@ Two traces must not be confused. The trace of the corpus formula is the $2\times
 $$
 2\,\mathrm{Re}\operatorname{Tr}(\tilde Q)=4\,\mathrm{Re}\,\mathrm{Sc}(\tilde Q).
 $$
-The identity uses $\operatorname{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the trace formula of §*The Isomorphism*. Both were checked on a general element with complex coefficients.
+The identity uses $\operatorname{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$, which is the reduction formula of §*The Isomorphism*. Both were checked on a general element with complex coefficients.
 
 **A matrix frame is a coordinate, not an object.** The Dirac, Weyl and Majorana matrices are three bases of the same algebra, related by $\mathsf X\,(iL_{e_\mu}R_{\vec e_{\nu(\mu)}})\,\mathsf X^{-1}$ with $\mathsf X$ invertible. A change of frame is a change of basis, and the normal forms are those of §*The Operator $L_{\tilde Q}R_{\tilde P}_{\Phi}$* in *Operators Acting on Two Sides*. No statement of the corpus depends on the basis written.
 
@@ -1003,11 +1003,9 @@ which is the $a,b,c,d$ of §*The Two Tensor Factors*, and the reason the Pauli d
 $$
 \operatorname{Tr}(\tilde Q):=\operatorname{Tr}\mathsf{M}_2(\tilde Q).
 $$
-On the units $\operatorname{Tr}(e_t)=2$ and $\operatorname{Tr}(\vec e_\eta)=0$, so on a general element $2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}(\tilde Q)$. That factor $2$ is not a normalisation but a consequence of $\mathsf{M}_2(e_t)=I_2$: it comes with the four images above and cannot be divided out. The probability pairing is written in the Hermitian form and read in the trace where the $2\times2$ image is used, the Born rule among them,
 $$
 2\langle\tilde Q_1,\tilde Q_2\rangle_{*}=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})=\operatorname{Tr}(\tilde Q_1\tilde Q_2^{*}),\qquad 2\,\mathrm{Sc}(\tilde Q)=\operatorname{Tr}(\tilde Q),
 $$
-and this is the only place in the article where the trace appears. An unsubscripted trace means this one; a regular matrix has its own, written with its subscript, $\operatorname{tr}L(\tilde Q)$. The identity $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\operatorname{Tr}(\tilde Q_1\tilde Q_2)$ is the same reading applied to the plain form, not a probability statement. The same element in the regular $4\times4$ representation has trace $4\,\mathrm{Sc}(\tilde Q)$, twice the trace of the $2\times2$ image: the factor belongs to the presentation, not to the element.
 
 **The determinant is the norm.** The determinant of the image is the biquaternion norm, $\det\mathsf{M}_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, and it is multiplicative, which is what makes the matrix model compute every norm in the series. The invertibility criterion, the group of invertibles and the unit-norm group are read from it; the derivations are *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})_{\mathbb{H}}$ of Quaternions*.
 

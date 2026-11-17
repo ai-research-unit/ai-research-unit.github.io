@@ -212,7 +212,7 @@ with $J_\mu=2\mathrm{Re\,Sc}\bigl[i\tilde\Xi^{*}\tilde\nabla_{\mathrm{gco},\mu}\
 | Symbol | Meaning |
 | --- | --- |
 | $\mathbb{B}$, $\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$ | The algebra and its two sectors |
-| $\mathrm{Sc}$, $\mathrm{Tr}=2\,\mathrm{Sc}$ | Scalar part; trace |
+| $\mathrm{Sc}$ | Scalar part |
 | $^{*}$, $^{\natural}$ | Hermitian and quaternion conjugation |
 | $\tilde\Xi$ | The field, a general element of $\mathbb{B}$ |
 | $\tilde A_\Phi=i a'_t e_t+\vec A$ | The connection, real on the material sector |

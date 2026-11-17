@@ -65,13 +65,13 @@ $$
 **The element form here is the Hermitian form, and it must be.** For a field $\tilde\Xi$ in the state module the density is
 
 $$
-\rho=\mathrm{Tr}\!\left(\tilde\Xi^{\dagger}\tilde\Xi\right),
+\rho=2\,\mathrm{Sc}\!\left(\tilde\Xi^{\dagger}\tilde\Xi\right),
 $$
 
 and the current is the antisymmetric bilinear carrying one gradient,
 
 $$
-\vec J=\frac{\hbar}{2\,i\,m}\,\mathrm{Tr}\!\left(\tilde\Xi^{\dagger}\vec\nabla\tilde\Xi-\left(\vec\nabla\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
+\vec J=\frac{\hbar}{2\,i\,m}\,2\,\mathrm{Sc}\!\left(\tilde\Xi^{\dagger}\vec\nabla\tilde\Xi-\left(\vec\nabla\tilde\Xi\right)^{\dagger}\tilde\Xi\right).
 $$
 
 The pair satisfies
@@ -82,7 +82,7 @@ $$
 
 with $r'_t=c\,t$ a length, as the corpus's phase $\exp\!\bigl(i(\vec k_{\Phi}\cdot\vec r-\omega r'_t/c)\bigr)$ requires. The factor $c$ in front of the time derivative is not decoration: $r'_t$ is a length, so $c\,\partial_{r'_t}$ is a time derivative, and with $\vec J$ carrying a velocity beside $\rho$ both terms come out as $\lvert\tilde\Xi\rvert^{2}$ per unit time. Articles that absorb the $c$ into $\vec J$ write the law without it in front of the derivative; the identity in the next section is the same either way, because it is the statement that the current is orthogonal to the four-wave-number and does not depend on how the current is normalised.
 
-**It cannot be the quaternion norm, because the quaternion norm vanishes on the state module.** The state module lies on the zero-divisor cone, so $\langle\tilde\Xi\rangle_{\natural}=0$ for every state while $\mathrm{Tr}(\tilde\Xi^{\dagger}\tilde\Xi)>0$. Checked on the idempotent $\tilde\Pi_1$ and on $\tilde\Pi_1(1+a\tilde e_x)$: the determinant, which is the quaternion norm, is $0$ in both cases, while the trace is $1.000000$, $1.090000$ and $3.890000$ at $a=0,\ 0.3,\ 1.7$. **A count built on the quaternion norm would count nothing**, and that is the precise sense in which the two arms of the duality rest on two different forms.
+**It cannot be the quaternion norm, because the quaternion norm vanishes on the state module.** The state module lies on the zero-divisor cone, so $\langle\tilde\Xi\rangle_{\natural}=0$ for every state while $2\,\mathrm{Sc}(\tilde\Xi^{\dagger}\tilde\Xi)>0$. Checked on the idempotent $\tilde\Pi_1$ and on $\tilde\Pi_1(1+a\tilde e_x)$: the determinant, which is the quaternion norm, is $0$ in both cases, while the doubled scalar part is $1.000000$, $1.090000$ and $3.890000$ at $a=0,\ 0.3,\ 1.7$. **A count built on the quaternion norm would count nothing**, and that is the precise sense in which the two arms of the duality rest on two different forms.
 
 **The number of derivatives in the density is the order of the equation in time, minus one.** The Schrödinger and Dirac densities carry none and their currents carry one. The Klein–Gordon density carries one,
 
@@ -92,7 +92,6 @@ $$
 
 and it is not positive definite: the positive- and negative-frequency branches carry $\pm\frac{\hbar\,\omega}{m\,c^{2}}\lvert N\rvert^{2}$.
 
-**Why the density uses $\dagger$ and this one uses $*$, and why the indefiniteness is not the conjugation's fault.** The state module is a minimal left ideal, $\mathbb{B}\tilde\Pi$ for an idempotent $\tilde\Pi$, and a left ideal is a subspace of a matrix algebra on which the pairing that is always available is the trace of the adjoint, $\mathrm{Tr}(\tilde Q_1^{\dagger}\tilde Q_2)$. That pairing is positive definite on $\mathbb{B}\tilde\Pi$ and this needs no argument beyond the idempotent: writing $\tilde Q=\tilde M\tilde\Pi$, one has $\mathrm{Tr}(\tilde\Pi\tilde M^{\dagger}\tilde M\tilde\Pi)=\lVert\tilde M\tilde\Pi\rVert^{2}\ge0$, with equality only at $\tilde Q=0$. So the density is $\tilde\Xi^{\dagger}\tilde\Xi$ because the carrier is that ideal, not because a choice was made among forms. In the full algebra the pairing is the algebra's own conjugation, and there $\tilde\Xi^{*}\tilde\Xi=a^{2}+\lvert\vec v\rvert^{2}$ is a central scalar that is real only on the real slice, so it is no longer a modulus. But that is not what makes the Klein–Gordon density indefinite: the **derivative** is. The bracket $\tilde\Xi^{*}\partial\tilde\Xi-\tilde\Xi\,\partial\tilde\Xi^{*}$ is a Wronskian, antisymmetric in the two solutions, so it changes sign when the frequency does. A second-order equation needs two initial data, and a Wronskian is the only bilinear available; no single-element form can be its conserved count. The corpus's Klein–Gordon article states the negative-probability problem as a property of the current and not of the notation, and this is why.
 
 **That equation is the particle statement.** It says that a number is conserved: whatever leaves one region enters the next, and none is created. The number is the count of the thing the field describes, and the count is what a detector registers. Nothing in the equation refers to a wavelength, a phase or an interference pattern. The density is Hermitian and lies in $\mathbb{B}_{\Psi}$; the current is a real spatial vector and lies in $\mathbb{B}_{\Phi}$.
 

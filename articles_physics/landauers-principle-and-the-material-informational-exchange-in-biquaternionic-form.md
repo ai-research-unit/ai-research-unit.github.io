@@ -22,7 +22,7 @@ The biquaternion content of the article is structural. The two ledgers of the ex
 
 The treatment is classical. The memory is a classical bit: a state diagonal in a pointer basis, with no coherences, and its entropy is the Shannon entropy of its pointer distribution. The erasure map is the classical reset. Nothing quantum is used, and the standard results of quantum thermodynamics — the entropy of a thermal state, the free-energy balance of a quantum channel — are not developed; where they are cited, they are cited as the standard context.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; $i$ is the central scalar imaginary; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian states) and $\mathbb{B}_{\Phi}$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; $i$ is the central scalar imaginary; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian states) and $\mathbb{B}_{\Phi}$ (anti-Hermitian energy-momentum); the reduction is $2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$, with $2\,\mathrm{Sc}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.
 
 ## Landauer's Principle
 
@@ -124,10 +124,10 @@ This is a structural statement and it should not be over-read. The factor $i$ ex
 **Erasure** is the reset of the memory to one standard pointer state, independent of its prior state. In the sector it is the map
 
 $$
-\mathcal{E}_{\vec u} : \tilde{Ϛ}_{\Psi} \longmapsto \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ}_{\Psi}),
+\mathcal{E}_{\vec u} : \tilde{Ϛ}_{\Psi} \longmapsto \tilde\Pi_1(\vec u)\,2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}),
 $$
 
-which discards the state entirely and returns the fixed idempotent, scaled by the trace; on the states of the sector, $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}) = 1$ and the image is $\tilde\Pi_1(\vec u)$ itself. Written with the trace factor the map is linear; on the Bloch ball it acts by
+which discards the state entirely and returns the fixed idempotent, scaled by the doubled scalar part; on the states of the sector, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ and the image is $\tilde\Pi_1(\vec u)$ itself. Written with the trace factor the map is linear; on the Bloch ball it acts by
 
 $$
 \vec r \longmapsto \vec u,
@@ -145,7 +145,7 @@ $$
 M_{\mathrm{kraus},1} = |0\rangle_{*}\langle 0|, \qquad M_{\mathrm{kraus},2} = |0\rangle\langle 1| ,
 $$
 
-where $M_{\mathrm{kraus},1}$ is $\tilde\Pi_1(\vec u)$ itself and $M_{\mathrm{kraus},2}$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}_{\Psi}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}_{\Psi}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}_{\Psi}$. The minimal Kraus rank of the reset channel is two.
+where $M_{\mathrm{kraus},1}$ is $\tilde\Pi_1(\vec u)$ itself and $M_{\mathrm{kraus},2}$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}_{\Psi}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}_{\Psi}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}_{\Psi}$. The minimal Kraus rank of the reset channel is two.
 
 ### The Entropy Change
 
@@ -284,12 +284,12 @@ Reversible operations — rotor conjugations — preserve the biquaternion norm,
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec r)$ | State of the informational sector |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t\pm i\vec u)$ | Pointer idempotents (logical states) |
 | $\tilde{Ϛ}_{\Psi} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ | Classical bit (diagonal state) |
-| $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
+| $2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$ | Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$ | Sector exchange of the quadratic form |
 | $\mathcal{S}(\tilde{Ϛ}_{\Psi}) = -2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi}) = h(|\vec r|)$ | Entropy functional (nats) |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2}$ | Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$ |
-| $\mathcal{E}_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$ | Erasure map (non-unital reset) |
+| $\mathcal{E}_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1(\vec u)\,2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$ | Erasure map (non-unital reset) |
 | $M_{\mathrm{kraus},1}, M_{\mathrm{kraus},2}$ | Kraus operators of erasure, $\sum_a K_a^\dagger K_a = e_t$ |
 | $\delta\mathcal{S} = -\mathcal{S}(\tilde{Ϛ}_{\Psi})$ | Entropy debit of erasure |
 | $\tilde{P}_{\Phi} = i(E/c)e_t + \vec p$ | Material four-momentum (energy-momentum) |

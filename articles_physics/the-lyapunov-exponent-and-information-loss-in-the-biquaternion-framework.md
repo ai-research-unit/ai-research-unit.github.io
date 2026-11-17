@@ -24,7 +24,7 @@ The article also states what the framework does **not** produce: positive Lyapun
 
 The treatment is classical and non-relativistic. The exponents are those of a classical flow on a state space, measured with the algebra's biquaternion norm. The tools imported are the standard ones of smooth dynamical systems: the multiplicative ergodic theorem, the contraction of completely positive trace-preserving maps, Pesin's formula, and the integrability of two-dimensional Hamiltonian flows. The connexion to the notion of information used elsewhere in the subcategory is direct: the entropy functional of the companion article *Coarse-Graining and the Biquaternion Entropy Functional* is a function of the biquaternion norm, and the Lyapunov exponent is the rate of decay of the logarithm of the biquaternion norm of a tangent vector; the two are the same quantity read at a point and along a flow.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$ is central; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian, informational) and $\mathbb{B}_{\Phi}$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$; the scalar imaginary $i$ is central; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian, informational) and $\mathbb{B}_{\Phi}$ (anti-Hermitian, material); the doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $2\,\mathrm{Sc}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and a state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec r)$.
 
 ## Lyapunov Exponents: The Standard Setting
 
@@ -96,7 +96,7 @@ $$
 = \langle\tilde{Q}\rangle_{\natural} .
 $$
 
-The same computation applies to the trace pairing, $\mathrm{Tr}((\tilde u\tilde{Q}\tilde u^{*})^2) = \mathrm{Tr}(\tilde{Q}^2)$, since the conjugation is an algebra automorphism. Therefore
+The same computation applies to the bilinear pairing, $2\,\mathrm{Sc}((\tilde u\tilde{Q}\tilde u^{*})^2) = 2\,\mathrm{Sc}(\tilde{Q}^2)$, since the conjugation is an algebra automorphism. Therefore
 
 $$
 \left|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}\right| = \left|\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}\right|
@@ -270,7 +270,6 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ | Quaternion basis, $\vec e_\mu^2 = -e_t$ |
 | $i$ | Central scalar imaginary |
 | $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t+i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\le1$ |
-| $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_t)=2$ |
 | $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\delta\vec r$ | Tangent vector (traceless element of $\mathbb{B}_{\Psi}$) |
 | $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec r|^2 e_t$ | Biquaternion norm of a tangent vector (negative definite) |

@@ -13,10 +13,10 @@ $$
 $$
 
 Here $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2=e_t$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
-It is an element of the informational sector $\mathbb{B}_{\Psi}$, it is **minimal** in the sense of the algebra, its trace is $\mathrm{Tr}(\tilde\Pi_+) = 1$, and it is the projector onto a **minimal left ideal** of $\mathbb{B}$, the two-complex-dimensional one-particle module. The complementary idempotent $\tilde\Pi_- = \tfrac12(e_t - i\vec e_z)$ is the occupied-state idempotent, and the two form a resolution of the identity, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_- = 0$. The one-mode vacuum is thus, literally, a minimal idempotent.
+It is an element of the informational sector $\mathbb{B}_{\Psi}$, it is **minimal** in the sense of the algebra, its doubled scalar part is $2\,\mathrm{Sc}(\tilde\Pi_+) = 1$, and it is the projector onto a **minimal left ideal** of $\mathbb{B}$, the two-complex-dimensional one-particle module. The complementary idempotent $\tilde\Pi_- = \tfrac12(e_t - i\vec e_z)$ is the occupied-state idempotent, and the two form a resolution of the identity, $\tilde\Pi_+ + \tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_- = 0$. The one-mode vacuum is thus, literally, a minimal idempotent.
 - **Established, and worth separating from the above.** The vacuum idempotent is a **zero divisor**: its biquaternion norm vanishes, $\langle\tilde\Pi_+\rangle_{\natural} = \tilde\Pi_+\tilde\Pi_+^{\natural} = 0$, and its matrix representative has vanishing determinant, $\det\mathsf{M}_2(\tilde\Pi_+) = 0$. The vacuum state lies on the zero-divisor cone — the framework's light cone. This is not a defect of the state; it is the algebra's statement that a rank-one idempotent is not invertible, and it ties the choice of vacuum to the choice of a null direction.
 - **The vacuum manifold.** The construction depends on a unit vector $\vec u\in S^2$ through $\tilde\Pi(\vec u) = \tfrac12(e_t + i\vec u)$. Every such idempotent is a legitimate one-mode vacuum, and the family is the two-sphere — the Bloch sphere of the state space. The framework does not single one out; a global $SU(2)$ rotation moves one into another, and the orbit is the vacuum manifold.
-- **Gap, left visible.** For a **field** the vacuum is not an element of $\mathbb{B}$. The Fock space of a field is a module over the algebra, not a subalgebra of it, and the algebra contains no bosonic ladder at all: no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ can satisfy $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$ because a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$. So "the biquaternion vacuum" is not, in general, a biquaternion. It is an idempotent for one fermionic mode and a state in a module for a field.
+- **Gap, left visible.** For a **field** the vacuum is not an element of $\mathbb{B}$. The Fock space of a field is a module over the algebra, not a subalgebra of it, and the algebra contains no bosonic ladder at all: no pair $a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}\in\mathbb{B}$ can satisfy $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$ because a commutator has vanishing scalar part while $2\,\mathrm{Sc}(e_t)=2$. So "the biquaternion vacuum" is not, in general, a biquaternion. It is an idempotent for one fermionic mode and a state in a module for a field.
 
 The article proceeds as follows. The next section recalls the standard vacuum and the sense in which it is a state. The following section fixes the idempotents of $\mathbb{B}$ and the notion of minimality. The next two sections construct the one-mode vacuum and prove that it is a minimal idempotent, and then that it is a zero divisor. The following sections describe the minimal left ideal it defines, the vacuum manifold, and the field case. A section separates what is established from what is interpretation, and the article closes with open questions.
 
@@ -70,11 +70,11 @@ $$
 $$
 The corner $\tilde\Pi\mathbb{B}\tilde\Pi$ is one-complex-dimensional exactly when $\tilde\Pi$ is minimal; for a general idempotent it has dimension $(\mathrm{rank})^2$.
 
-The reason minimality matters physically is the third face of the definition in the language of states: a Hermitian idempotent $\tilde\Pi\in\mathbb{B}_{\Psi}$ with $\mathrm{Tr}(\tilde\Pi)=1$ and rank one defines the **pure state**
+The reason minimality matters physically is the third face of the definition in the language of states: a Hermitian idempotent $\tilde\Pi\in\mathbb{B}_{\Psi}$ with $2\,\mathrm{Sc}(\tilde\Pi)=1$ and rank one defines the **pure state**
 $$
-\omega_{\tilde\Pi}(\tilde Q_3) \;=\; \mathrm{Tr}\big(\tilde\Pi\tilde Q_3\big),
+\omega_{\tilde\Pi}(\tilde Q_3) \;=\; 2\,\mathrm{Sc}\big(\tilde\Pi\tilde Q_3\big),
 $$
-which on an **observable** $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ takes the real value $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$. A pure state is exactly what a vacuum is. A rank-two state with $\mathrm{Tr}=1$ would be the maximally mixed state $\tfrac12 e_t$, and a general element of the Bloch ball is neither.
+which on an **observable** $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ takes the real value $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}$. A pure state is exactly what a vacuum is. A rank-two state with $2\,\mathrm{Sc}=1$ would be the maximally mixed state $\tfrac12 e_t$, and a general element of the Bloch ball is neither.
 
 ## The One-Mode Vacuum
 
@@ -105,19 +105,19 @@ $$
 $$
 denotes the pair of Hermitian idempotents associated with the unit vector $\vec u$.
 
-**The vacuum idempotent is minimal, Hermitian, and of unit trace.** It is convenient to verify the four defining properties at once, using $\vec e_z^2=-e_t$:
+**The vacuum idempotent is minimal, Hermitian, and of unit doubled scalar part.** It is convenient to verify the four defining properties at once, using $\vec e_z^2=-e_t$:
 $$
 \tilde\Pi_+^2 = \tfrac14\big(e_t + i\vec e_z\big)^2 = \tfrac14\big(e_t + 2i\vec e_z + (i\vec e_z)^2\big) = \tfrac14\big(e_t + 2i\vec e_z - e_t\big) = \tfrac12\big(e_t+i\vec e_z\big) = \tilde\Pi_+,
 $$
 so it is idempotent; $\bar{\tilde\Pi_+} = \tfrac12(e_t - i\vec e_z)$ and $\tilde\Pi_+^{*} = \tfrac12(e_t + i\vec e_z)^{*} = \tfrac12(e_t + i\vec e_z) = \tilde\Pi_+$, since $\vec e_z^{*} = -\vec e_z$ and $i^{*} = -i$, so it is Hermitian and lies in $\mathbb{B}_{\Psi}$;
 $$
-\mathrm{Tr}\big(\tilde\Pi_+\big) = 2\,\mathrm{Sc}\big(\tilde\Pi_+\big) = 2\cdot\tfrac12 = 1,
+2\,\mathrm{Sc}\big(\tilde\Pi_+\big) = 2\cdot\tfrac12 = 1,
 $$
-so its trace is one; and
+so its doubled scalar part is one; and
 $$
 \mathsf{M}_2\big(\tilde\Pi_+\big) = \tfrac12\big(I_2 + i\mathsf{M}_2(\vec e_z)\big) = \tfrac12\big(I_2 + \sigma_3\big) = \begin{pmatrix}1&0\\0&0\end{pmatrix},
 $$
-which has rank one. Hence $\tilde\Pi_+$ is a **minimal idempotent** with unit trace: the one-mode vacuum.
+which has rank one. Hence $\tilde\Pi_+$ is a **minimal idempotent** with doubled scalar part one: the one-mode vacuum.
 
 The complementary idempotent and the resolution of the identity are immediate:
 $$
@@ -138,11 +138,11 @@ $$
 (-1)^F \vec\Upsilon_y (-1)^F = -\vec\Upsilon_y .
 $$
 
-**A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\mathsf{M}_2$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_+^2-\tilde\Pi_+=0$; $\tilde\Pi_+^{*}-\tilde\Pi_+=0$; $\det\mathsf{M}_2(\tilde\Pi_+)=0$ with $\mathrm{Tr}\,\mathsf{M}_2(\tilde\Pi_+)=1$; $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=I_2$; $\mathsf{M}_2((-1)^F)=\sigma_3$; and $\mathsf{M}_2((-1)^F\vec\Upsilon_x(-1)^F) = -\mathsf{M}_2(\vec\Upsilon_x)$, all to machine precision ($<10^{-16}$). The vacuum expectation values, $\langle\cdot\rangle_t=\mathrm{Tr}(\tilde\Pi_+\,\cdot\,)$, reproduce the mode algebra,
+**A numerical check on the whole set.** Representing $\mathbb{B}$ by $2\times2$ complex matrices through $\mathsf{M}_2$ and using explicit complex arithmetic on the coefficients, one finds: $\tilde\Pi_+^2-\tilde\Pi_+=0$; $\tilde\Pi_+^{*}-\tilde\Pi_+=0$; $\det\mathsf{M}_2(\tilde\Pi_+)=0$ with $\mathrm{Tr}\,\mathsf{M}_2(\tilde\Pi_+)=1$; $\tilde\Pi_+\tilde\Pi_-=0$ and $\tilde\Pi_++\tilde\Pi_-=I_2$; $\mathsf{M}_2((-1)^F)=\sigma_3$; and $\mathsf{M}_2((-1)^F\vec\Upsilon_x(-1)^F) = -\mathsf{M}_2(\vec\Upsilon_x)$, all to machine precision ($<10^{-16}$). The vacuum expectation values, $\langle\cdot\rangle_t=2\,\mathrm{Sc}(\tilde\Pi_+\,\cdot\,)$, reproduce the mode algebra,
 $$
-\langle \vec\Upsilon_y \vec\Upsilon_x\rangle_t = \mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big) = 0,
+\langle \vec\Upsilon_y \vec\Upsilon_x\rangle_t = 2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde\Pi_-\big) = 0,
 \qquad
-\langle \vec\Upsilon_x \vec\Upsilon_y\rangle_t = \mathrm{Tr}\big(\tilde\Pi_+(e_t-\tilde\Pi_-)\big) = 1,
+\langle \vec\Upsilon_x \vec\Upsilon_y\rangle_t = 2\,\mathrm{Sc}\big(\tilde\Pi_+(e_t-\tilde\Pi_-)\big) = 1,
 $$
 which are the statements that the vacuum is empty and the mode anticommutator is normalized.
 
@@ -184,7 +184,7 @@ a two-complex-dimensional space, because the map $\tilde Q\mapsto\tilde Q \tilde
 
 This is the mechanism by which the vacuum situates the field in the framework: the algebra alone has no distinguished module, and the choice of vacuum idempotent selects one. Conversely the module fixes the idempotent only up to the equivalence $\tilde\Pi\mapsto \tilde Q\tilde\Pi\tilde Q^{*}$ by $*$-unitary units of the algebra, which is the statement that the module is unique while the vacuum is not.
 
-The same construction, run in the reverse direction, is the Hermitian GNS reconstruction. The state $\omega_{\tilde\Pi}(\tilde Q_3) = \mathrm{Tr}(\tilde\Pi\tilde Q_3)$ has a GNS Hilbert space obtained from $\mathbb{B}$ by quotienting out the elements of zero $\omega_{\tilde\Pi}$-norm; for a **pure** state that quotient is exactly the minimal left ideal, of complex dimension two, and the GNS representation is irreducible. For a mixed state the quotient is larger and the representation is reducible. The vacuum's minimality is thus the algebraic reason its GNS representation is irreducible, and the GNS construction itself is the subject of the companion article *The Hermitian GNS Construction in the Biquaternion Framework*.
+The same construction, run in the reverse direction, is the Hermitian GNS reconstruction. The state $\omega_{\tilde\Pi}(\tilde Q_3) = 2\,\mathrm{Sc}(\tilde\Pi\tilde Q_3)$ has a GNS Hilbert space obtained from $\mathbb{B}$ by quotienting out the elements of zero $\omega_{\tilde\Pi}$-norm; for a **pure** state that quotient is exactly the minimal left ideal, of complex dimension two, and the GNS representation is irreducible. For a mixed state the quotient is larger and the representation is reducible. The vacuum's minimality is thus the algebraic reason its GNS representation is irreducible, and the GNS construction itself is the subject of the companion article *The Hermitian GNS Construction in the Biquaternion Framework*.
 
 ## The Vacuum Manifold
 
@@ -201,7 +201,7 @@ $$
 is the **vacuum manifold**. Its three properties, all immediate from the definitions, are worth naming.
 
 1. **It is a two-sphere.** The idempotents are labelled by unit vectors, and the correspondence is one-to-one: $\tilde\Pi(\vec u) = \tilde\Pi(\vec u_2)$ if and only if $\vec u = \vec u_2$, since the vector part of the idempotent is $\tfrac{i}{2}\vec u$.
-2. **It is the Bloch sphere of the state space.** Writing a general element of $\mathbb{B}_{\Psi}$ of unit trace as $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ with $\vec r\in\mathbb{R}^3$, the idempotent condition $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}$ forces $|\vec r|=1$. The minimal idempotents of unit trace are exactly the Bloch sphere, and a general state (a unit-*trace*, not rank-one, density matrix) fills the Bloch ball $|\vec r|\le 1$.
+2. **It is the Bloch sphere of the state space.** Writing a general element of $\mathbb{B}_{\Psi}$ with $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$ as $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t + i\vec r)$ with $\vec r\in\mathbb{R}^3$, the idempotent condition $\tilde{Ϛ}_{\Psi}^2=\tilde{Ϛ}_{\Psi}$ forces $|\vec r|=1$. The minimal idempotents of unit doubled scalar part are exactly the Bloch sphere, and a general state (normalised, not rank-one, density matrix) fills the Bloch ball $|\vec r|\le 1$.
 3. **It is a single rotation orbit.** The conjugation $\tilde\Pi\mapsto \tilde u\tilde\Pi\tilde u^{*}$ by a unit real quaternion $\tilde u\in\mathbb{B}_{H}$, $\langle\tilde u\rangle_{\natural}=e_t$, acts on the vector part as a rotation of $\vec u$, and every unit vector is reached from every other. The rotation group of the framework acts transitively on the vacuum manifold, so the framework by itself does not distinguish a vacuum; the vacuum is a **spontaneously chosen** element, and the manifold is the order-parameter space of that choice.
 
 That last point is the physical content of the manifold. A vacuum that is a minimal idempotent is a *pure state with a definite orientation*, and the orientation is not fixed by the algebra. Whether the framework provides a dynamics that selects one — a Hamiltonian whose ground projector is a particular $\tilde\Pi(\vec u)$ — is a question about the dynamics, not about the state, and is not settled by the algebra alone.
@@ -212,9 +212,9 @@ Everything above is about one mode. For a field the situation changes, and the c
 
 The Fock space of a field is a **module** over the algebra rather than a subalgebra of it. That is the finding of the Fock article, and it is inherited here unchanged: the one-particle space is a module, the many-particle space is its tensor algebra, and beyond one mode not even the operator algebra is inside $\mathbb{B}$. In particular there is **no bosonic ladder in $\mathbb{B}$**, because a bosonic mode requires $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$, whereas for any two elements of $\mathbb{B}$
 $$
-\mathrm{Tr}\big([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]\big) = \mathrm{Tr}(a_{\mathrm{fop}}a_{\mathrm{fop}}^{\dagger}) - \mathrm{Tr}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}) = 0
+2\,\mathrm{Sc}\big([a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]\big) = 2\,\mathrm{Sc}(a_{\mathrm{fop}}a_{\mathrm{fop}}^{\dagger}) - 2\,\mathrm{Sc}(a_{\mathrm{fop}}^{\dagger}a_{\mathrm{fop}}) = 0
 $$
-by the cyclicity of the trace, while $\mathrm{Tr}(e_t)=2$. Hence no pair of algebra elements satisfies the canonical commutation relation, and the photon's Fock vacuum — the vacuum of the electromagnetic field — is not an algebra element. It is the standard Fock vacuum of a module built from the transverse polarization plane, as *The Vacuum State and the Casimir Effect in Biquaternionic Form* records.
+by the vanishing of the scalar part of a commutator, while $2\,\mathrm{Sc}(e_t)=2$. Hence no pair of algebra elements satisfies the canonical commutation relation, and the photon's Fock vacuum — the vacuum of the electromagnetic field — is not an algebra element. It is the standard Fock vacuum of a module built from the transverse polarization plane, as *The Vacuum State and the Casimir Effect in Biquaternionic Form* records.
 
 For a fermionic field the one-particle space is also a module, but here the algebra reaches one step further: the one-mode truncation is an algebra inside $\mathbb{B}$, and for that truncation the vacuum is the idempotent constructed above. The honest summary is therefore a sharp one:
 
@@ -226,7 +226,7 @@ The minimal-idempotent interpretation is not a diminution of the field vacuum. I
 
 **Established (algebra).**
 - The idempotents of $\mathbb{B}$ are classified by rank; the rank-one (minimal) Hermitian idempotents of $\mathbb{B}_{\Psi}$ are exactly $\tilde\Pi(\vec u) = \tfrac12(e_t+i\vec u)$ with $|\vec u|=1$.
-- $\tilde\Pi(\vec u)$ is Hermitian, idempotent, of unit trace, and minimal; $\tilde\Pi_- = e_t-\tilde\Pi_+$ is its orthogonal complement, and the two resolve the identity.
+- $\tilde\Pi(\vec u)$ is Hermitian, idempotent, with $2\,\mathrm{Sc}\,\tilde\Pi(\vec u)=1$, and minimal; $\tilde\Pi_- = e_t-\tilde\Pi_+$ is its orthogonal complement, and the two resolve the identity.
 - $\langle\tilde\Pi(\pm\vec u)\rangle_{\natural} = 0$ and $\det\mathsf{M}_2(\tilde\Pi(\pm\vec u))=0$: the vacuum is a zero divisor on the light cone.
 - $\mathbb{B}\tilde\Pi(\vec u)$ is a Peirce carrier, a minimal left ideal here, isomorphic to $\mathbb{C}^2$, the fundamental (spinor) module.
 - The vacuum manifold is $S^2$, on which the unit real quaternions act transitively.
@@ -247,7 +247,7 @@ the hydrodynamics block.
 
 ## Summary
 
-For a single fermionic mode the vacuum of the biquaternion framework is a concrete algebra element: the Hermitian, idempotent, unit-trace, **minimal** idempotent
+For a single fermionic mode the vacuum of the biquaternion framework is a concrete algebra element: the Hermitian, idempotent, normalised, **minimal** idempotent
 $$
 \boxed{\;|0\rangle_{*}\langle 0| = \tilde\Pi_+ = \tfrac12\big(e_t+i\vec e_z\big) = \mathsf{M}_2^{-1}\begin{pmatrix}1&0\\0&0\end{pmatrix},
 \qquad
@@ -257,7 +257,7 @@ with $\tilde\Pi_++\tilde\Pi_- = e_t$, $\tilde\Pi_+\tilde\Pi_-=0$, and $(-1)^F = 
 
 The vacuum idempotent is a **zero divisor**: $\langle\tilde\Pi_+\rangle_{\natural}=0$ and $\det\mathsf{M}_2(\tilde\Pi_+)=0$. It lies on the zero-divisor cone, and the identity is the sum of two null idempotents. The family of vacua is the two-sphere $\tilde\Pi(\vec u)$, $\vec u\in S^2$ — the Bloch sphere of pure states — on which the unit real quaternions act transitively, so the framework fixes the manifold of vacua but not one vacuum.
 
-For a field the vacuum is a state in a module and not an element of the algebra: the Fock space is a module over $\mathbb{B}$, and no bosonic ladder exists inside $\mathbb{B}$ because a commutator has vanishing trace while $\mathrm{Tr}(e_t)=2$. The minimal-idempotent interpretation is exact for the one-mode truncation, which is the largest truncation the algebra supports, and it is the starting point for the operator-algebraic constructions that follow.
+For a field the vacuum is a state in a module and not an element of the algebra: the Fock space is a module over $\mathbb{B}$, and no bosonic ladder exists inside $\mathbb{B}$ because a commutator has vanishing scalar part while $2\,\mathrm{Sc}(e_t)=2$. The minimal-idempotent interpretation is exact for the one-mode truncation, which is the largest truncation the algebra supports, and it is the starting point for the operator-algebraic constructions that follow.
 
 ## Summary of Notation
 
@@ -269,7 +269,7 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $\mathbb{B}_{\Phi},\mathbb{B}_{\Psi}$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathbb{B}_{H},\mathbb{B}_{C}$ | Real-quaternion subspace; centre $\mathrm{span}_\mathbb{R}\{e_t,ie_t\}$ |
 | $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=\det\mathsf{M}_2(\tilde Q)$ | Biquaternion norm |
-| $\mathrm{Tr}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = 2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, $\mathrm{Tr}(e_t)=2$ | Trace reading of the Hermitian form |
+| $2\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})$, $2\,\mathrm{Sc}(e_t)=2$ | Scalar-part reading of the Hermitian form |
 | $\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$ | Matrix isomorphism |
 | $\tilde\Pi(\pm\vec u)=\tfrac12(e_t\pm i\vec u)$, $\vec u\in S^2$ | Minimal idempotents; vacuum idempotents |
 | $|0\rangle\langle 0|=\tilde\Pi_+$ | One-mode vacuum idempotent |
@@ -278,7 +278,7 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 | $(-1)^F=i\vec e_z=\tilde\Pi_+-\tilde\Pi_-$ | Fermion-parity grading |
 | $\mathbb{B}\tilde\Pi(\vec u)\cong\mathbb{C}^2$ | Minimal left ideal; one-particle (spinor) module |
 | $\mathcal{M}_{\text{vac}}\cong S^2$ | Vacuum manifold |
-| $\omega_{\tilde\Pi}(\tilde Q_3)=\mathrm{Tr}(\tilde\Pi\tilde Q_3^{*})$ | Pure state defined by a minimal idempotent |
+| $\omega_{\tilde\Pi}(\tilde Q_3)=2\,\mathrm{Sc}(\tilde\Pi\tilde Q_3^{*})$ | Pure state defined by a minimal idempotent |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
 

@@ -113,9 +113,8 @@ The partial trace is the map that discards a factor. In the matrix representatio
 $$
 \big(\mathrm{Tr}_B M\big)_{i,i_2}=\sum_j M_{ij,i_2j},
 $$
-and it is completely positive and trace preserving. Its image is a state of the remaining factor: if $M\ge0$ and $\mathrm{Tr}M=1$ then $\mathrm{Tr}_B M\ge0$ with trace one. Applied twice it gives the single-subsystem marginals. The biquaternion content of the operation is only the count of levels that enters it: on a factor, for elements $\tilde Q_1$ and $\tilde Q_2$ of the two factors, $2\,\mathrm{Sc}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\cdot 2\,\mathrm{Sc}(\tilde Q_2)$, so the two levels of the discarded factor are exactly the normalization that makes it contribute its expectation.
+and it is completely positive and trace preserving. Its image is a state of the remaining factor: if $M\ge0$ and $\mathrm{Tr}M=1$ then $\mathrm{Tr}_B M\ge0$ with normalised. Applied twice it gives the single-subsystem marginals. The biquaternion content of the operation is only the count of levels that enters it: on a factor, for elements $\tilde Q_1$ and $\tilde Q_2$ of the two factors, $2\,\mathrm{Sc}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\cdot 2\,\mathrm{Sc}(\tilde Q_2)$, so the two levels of the discarded factor are exactly the normalization that makes it contribute its expectation.
 
-Two structural facts are worth recording at this point, both consequences of the Hermitian GNS companion article's state functional. First, on a product the reduction is the identity on the rest, $2\,\mathrm{Sc}_B(\tilde Q_1\otimes\tilde Q_2)=\tilde Q_1\,2\,\mathrm{Sc}(\tilde Q_2)=\tilde Q_1$ for every normalized $\tilde Q_2$, so discarding a factor that is in a state of its own produces no entanglement across the cut. Second, the discarded factor's entropy is nevertheless part of the entropy of the whole, $S(\tilde Q_1\otimes\tilde Q_2)=S(\tilde Q_1)+S(\tilde Q_2)$, and its two extreme values are $0$ on the **pure** boundary and $\log2$ at the **trace state** $\tfrac12 e_t$. The pure boundary and the trace state are therefore the two ends of the Bloch ball that agree in what they contribute to the reduced state of the rest and differ in what they contribute to the entropy of the whole, and they are the two ends that appear in the examples below.
 
 ## Strong Subadditivity from Monotonicity of Relative Entropy
 
@@ -278,7 +277,7 @@ The framework's contribution to this is exactly its contribution to the finite-d
 
 ## Open Questions
 
-**1. A biquaternion witness for the deficit.** The deficit is the conditional mutual information. Is there a biquaternion observable whose expectation is this quantity, in the way that the modular Hamiltonian's expectation is the relative entropy? The trace formula gives the expectation of any Hermitian element, so the question is whether $I(A:C|B)$ can be written as $2\,\mathrm{Sc}$ of a single algebra element of $\mathbb{B}^{\otimes3}$.
+**1. A biquaternion witness for the deficit.** The deficit is the conditional mutual information. Is there a biquaternion observable whose expectation is this quantity, in the way that the modular Hamiltonian's expectation is the relative entropy? The reduction formula gives the expectation of any Hermitian element, so the question is whether $I(A:C|B)$ can be written as $2\,\mathrm{Sc}$ of a single algebra element of $\mathbb{B}^{\otimes3}$.
 
 **2. The Markov decomposition in the algebra.** The equality condition is an algebraic decomposition of $\mathcal H_B$. Does the decomposition have an interpretation in terms of the idempotent structure of $\mathbb{B}^{\otimes3}$, the minimal idempotents of the Hermitian GNS companion article, and the partial traces between them?
 

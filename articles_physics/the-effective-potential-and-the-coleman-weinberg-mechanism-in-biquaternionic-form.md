@@ -325,7 +325,7 @@ The loop integral, its regularization and its renormalization are standard and a
 | $\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\langle \rho\rangle) = 2B$, $m_h^2 = 4B\langle \rho\rangle$ | Curvature and radial mass at the radiative minimum |
 | $\beta_\lambda, \beta_ϙ, \gamma_\rho$ | Beta functions and anomalous dimension of the invariant $\rho$ (companion) |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$ |
-| $\mathrm{Tr} = 2\,\mathrm{Sc}$ | Trace convention |
+| $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ | Reduction convention |
 
 ## Further Reading
 

@@ -489,7 +489,7 @@ the two columns are $(1,0)$ and $(0,1)$. Both columns are eigenvectors with eige
 $$
 \mathsf M_2(\tilde Q)=I_2,
 \qquad
-\mathrm{tr}=2,
+\mathrm{tr}\,\mathsf M_2(\tilde Q)=2,
 \qquad
 \det=1.
 $$
@@ -634,7 +634,7 @@ $$
 -i&0
 \end{pmatrix},
 \qquad
-\mathrm{tr}=0,
+\mathrm{tr}\,\mathsf M_2(\tilde Q)=0,
 \qquad
 \det=1.
 $$
@@ -766,7 +766,7 @@ $$
 -i&1
 \end{pmatrix},
 \qquad
-\mathrm{tr}=\sqrt2,
+\mathrm{tr}\,\mathsf M_2(\tilde Q)=\sqrt2,
 \qquad
 \det=1.
 $$
@@ -902,7 +902,7 @@ $$
 1&\sqrt2
 \end{pmatrix},
 \qquad
-\mathrm{tr}=2\sqrt2,
+\mathrm{tr}\,\mathsf M_2(\tilde Q)=2\sqrt2,
 \qquad
 \det=1.
 $$
@@ -1039,7 +1039,7 @@ $$
 \frac{1}{\sqrt2}-i&1-\frac{i}{\sqrt2}
 \end{pmatrix},
 \qquad
-\mathrm{tr}=2-i\sqrt2,
+\mathrm{tr}\,\mathsf M_2(\tilde Q)=2-i\sqrt2,
 \qquad
 \det=1.
 $$
@@ -1331,7 +1331,7 @@ $$
 \frac{2-i}{\sqrt2}&\frac12-\frac{i}{2}
 \end{pmatrix},
 \qquad
-\mathrm{tr}=2-i,
+\mathrm{tr}\,\mathsf M_2(\tilde Q)=2-i,
 \qquad
 \det=1.
 $$
@@ -1493,7 +1493,7 @@ For cases 1, 6 and 8 there is no eigenbasis attached to the element: case 1 is s
 
 ### The Matrices
 
-| Case | $\mathsf M_2(\tilde Q)$ | $\mathrm{tr}$ | $\det$ |
+| Case | $\mathsf M_2(\tilde Q)$ | $\mathrm{tr}\,\mathsf M_2(\tilde Q)$ | $\det$ |
 |---|---|---|---|
 | $1$ | $I_2$ | $2$ | $1$ |
 | $2$ | $\begin{pmatrix}0&-i\\-i&0\end{pmatrix}$ | $0$ | $1$ |

@@ -318,7 +318,7 @@ The negative-frequency branch of the Dirac equation is the branch the second-ord
 
 Imaginary time is a coordinate here, not a trick. The material time is $ir'_t$, so the analytic continuation $r'_t\to r'_t+i\beta$ of the KMS condition is a translation along the algebra's own temporal direction, and the strip of the condition is a strip of the coordinate ([The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html)).
 
-The informational sector supplies the states and the entropy. The states are the positive elements of trace one, and the functional $\mathcal{S}(\tilde\varsigma_{\Psi})=-2\,\mathrm{Sc}(\tilde\varsigma_{\Psi}\log\tilde\varsigma_{\Psi})$ vanishes exactly on the null cone, is maximal at the maximally mixed state, and measures the depth of the state inside the future cone ([Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html)). Entropy is then a function of one element, defined by the algebra's own operations.
+The informational sector supplies the states and the entropy. The states are the positive elements of normalised, and the functional $\mathcal{S}(\tilde\varsigma_{\Psi})=-2\,\mathrm{Sc}(\tilde\varsigma_{\Psi}\log\tilde\varsigma_{\Psi})$ vanishes exactly on the null cone, is maximal at the maximally mixed state, and measures the depth of the state inside the future cone ([Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html)). Entropy is then a function of one element, defined by the algebra's own operations.
 
 ### Gravity
 

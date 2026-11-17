@@ -13,7 +13,7 @@ The article establishes:
 3. **Spin squeezing.** The Wineland parameter $\zeta_R^2 = N(\mathcal{V}_{\mathrm{var}} \tilde S_{\Psi,\mathrm{tot},\perp})^2/|\langle\vec S_{\mathrm{tot}}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$ drives $\zeta_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\zeta^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
 4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{B}_{\Psi}$, the mean spin and the covariance are readings of the Hermitian form, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{B}_{\Psi}$ coupling between the spin and the mode.
 
-The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
+The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the collective spin, the ladder operators and the Dicke states.
@@ -202,7 +202,7 @@ Each $\tilde S_{\Psi,\mathrm{tot},\alpha}$ is a sum of the Hermitian elements $\
 $$
 \boxed{\;\langle \tilde S_{\Psi,\mathrm{tot},\alpha}\rangle = \frac{\langle\tilde{Ϛ}_{\Psi},\tilde S_{\Psi,\mathrm{tot},\alpha}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}}
 = \frac{\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde S_{\Psi,\mathrm{tot},\alpha}^{*})}{\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}
-= \frac{\operatorname{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde S_{\Psi,\mathrm{tot},\alpha})}{\operatorname{Tr}(\tilde{Ϛ}_{\Psi})}\;},
+= \frac{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde S_{\Psi,\mathrm{tot},\alpha})}{2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})}\;},
 \qquad
 \tilde{Ϛ}_{\Psi} = \text{the collective state},
 $$
@@ -268,7 +268,7 @@ $$
 
 equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{H}_{\Psi,OAT} =\frac{\xi}{\hbar}\tilde S_{\Psi,\mathrm{tot},3}^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\zeta_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\zeta_R^2 = 1$ at $\xi r'_t = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\zeta^2\propto N^{-1}$.
 
-In the algebra the mean spin is a linear reading of the plain form $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde S_{\Psi,\mathrm{tot},\alpha}^{*})=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde S_{\Psi,\mathrm{tot},\alpha})$, the star being inert and the unstarred trace real, and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{B}_{H}$, while the twisting generator $\tilde S_{\Psi,\mathrm{tot},3}^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+})$ is an $\mathbb{B}_{\Psi}$ coupling whose single-excitation gap is the collective Rabi splitting.
+In the algebra the mean spin is a linear reading of the plain form $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde S_{\Psi,\mathrm{tot},\alpha}^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde S_{\Psi,\mathrm{tot},\alpha})$, the star being inert and the unstarred trace real, and the covariance a quadratic one; squeezing is the anisotropy of the quadratic pairing. Rigid rotations of the collective state are rotors in $\mathbb{B}_{H}$, while the twisting generator $\tilde S_{\Psi,\mathrm{tot},3}^2$ is a shear; the Tavis–Cummings coupling $g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+})$ is an $\mathbb{B}_{\Psi}$ coupling whose single-excitation gap is the collective Rabi splitting.
 
 ## Summary of Notation
 

@@ -212,7 +212,7 @@ The question posed for this article is whether the biquaternion framework's boos
 
 *State selection.* The theorem identifies $\mathcal{M}_{\mathrm{mod}}$ with the boost for the **vacuum**. The framework's modular theory requires a faithful state and does not select one: the distinguished tracial state $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$ gives the trivial flow. For the boost-thermal state $\tilde{Ϛ}_{\Psi}\propto \exp(-\beta G_1)$ the modular Hamiltonian is
 $$
-H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta G_1+(\log Z)e_t,\qquad Z=\mathrm{Tr}(\exp(-\beta G_1)),
+H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta G_1+(\log Z)e_t,\qquad Z=2\,\mathrm{Sc}(\exp(-\beta G_1)),
 $$
 which is proportional to the boost generator $G_1$ modulo the central term $(\log Z)e_t$ (verified numerically to machine precision), so the generator identification holds exactly for that state. But for a generic faithful state $H_{\mathrm{modular}}$ is **not** proportional to $G_1$: for the state with Bloch vector $\vec r_1$ above, the Bloch vector of $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ is along $\vec r_1$ and is not along $\vec e_x$. The identification therefore requires the thermal state for the boost, which is what the theorem's vacuum supplies and what the algebra alone does not.
 
@@ -282,7 +282,7 @@ The framework does **not** make the geometric boost an inner automorphism of the
 | $\sigma_s(A)=\mathcal{M}_{\mathrm{mod}}^{is}A\mathcal{M}_{\mathrm{mod}}^{-is}$ | Modular flow = boost of rapidity $2\pi s$ |
 | $H_{\mathrm{modular}}=-\log\rho$ | Modular Hamiltonian, in $\mathbb{B}_{\Psi}$ (finite dimension) |
 | $J M(W_R) J=M(W_L)=M(W_R)_{\mathrm c}$ | Wedge duality |
-| $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Trace reading of the plain form (inherited) |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ | Scalar-part reading of the plain form (inherited) |
 
 ## Further Reading
 
