@@ -538,7 +538,7 @@ with $\tilde\Xi^{\dagger}iR_{\mathrm{axf},\vec e_x}$ the Dirac adjoint, written 
 
 Here $\theta_{\mathrm{cen}}$ is the central phase: it is the argument of a unit complex number, so it is real.
 
-The on-shell content of the interpretation is verified and simple: for a plane wave of momentum $p_\mu$ satisfying the mass shell $p^2 = m^2$, the vector
+The on-shell content of the interpretation is verified and simple: for a plane wave of momentum $p_\mu$ satisfying the mass shell $N = -m^{2}$, the vector
 
 $$
 U_{\mathrm{vec},\mu} = \frac{p_\mu}{m}

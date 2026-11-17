@@ -61,9 +61,9 @@ so the four complex dimensions of the algebra are the four of the Dirac spinor. 
 In the chiral basis the matrices are built from the two off-diagonal blocks,
 
 $$
-\gamma^{0}=\begin{pmatrix}0&1\\1&0\end{pmatrix},
+\gamma_{0}=\begin{pmatrix}0&1\\1&0\end{pmatrix},
 \qquad
-\gamma^{\eta}=\begin{pmatrix}0&\sigma_\eta\\-\sigma_\eta&0\end{pmatrix},
+\gamma_{\eta}=\begin{pmatrix}0&\sigma_\eta\\-\sigma_\eta&0\end{pmatrix},
 $$
 
 with the $2\times2$ blocks acting on the two spinors. The chiral basis is the one in which the grading is diagonal, and it is the basis adapted to the pair.

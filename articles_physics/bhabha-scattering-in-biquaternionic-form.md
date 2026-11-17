@@ -22,7 +22,7 @@ t = (k-k_2)^2 = (p-p_2)^2,
 u = (k-p_2)^2 = (p-k_2)^2,
 $$
 
-In the massless limit $k^2=p^2=k_2^2=p_2^2=0$ they reduce to
+In the massless limit, where $N=0$ for each of the four momenta, they reduce to
 
 $$
 s \approx 2k\cdot p \approx 2k_2\cdot p_2,

@@ -69,7 +69,7 @@ $$
 
 Both ratios are exact at every speed; their series give the truncation order. The temporal slot undershoots by $\frac{3}{4}\beta^{2}$ and the vector slot by $\frac{1}{2}\beta^{2}$, so **the rule is exact to order $\beta^{2}$ and its leading error is of order $\beta^{4}$ in the element.**
 
-**The strongest objection: why not keep the norm exact?** The two slots are one degree of freedom short of the constraint, so one can instead fix $\vec v$ and solve $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for the temporal coefficient, which gives $c\sqrt{1+\beta^{2}}=c\left(1+\frac{\beta^{2}}{2}-\frac{\beta^{4}}{8}+\cdots\right)$. That element satisfies the norm exactly at every speed. It is not the one to keep, because the norm is not the observable: the energy is, and the coefficient $\frac{1}{2}\beta^{2}$ is what makes $\mathcal{E}$ equal both $\frac{1}{2}mv^{2}$ and $\frac{p^{2}}{2m}$ in the same scheme. The two choices agree at the order kept and part at order $\beta^{4}$; the truncated element of the rule has $\langle\tilde V_{\Phi,1}\rangle_{\natural}=-c^{2}\left(1+\frac{\beta^{4}}{4}\right)$, a relative error of $2.5\times10^{-9}$ at $\beta=0.01$.
+**The strongest objection: why not keep the norm exact?** The two slots are one degree of freedom short of the constraint, so one can instead fix $\vec v$ and solve $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for the temporal coefficient, which gives $c\sqrt{1+\beta^{2}}=c\left(1+\frac{\beta^{2}}{2}-\frac{\beta^{4}}{8}+\cdots\right)$. That element satisfies the norm exactly at every speed. It is not the one to keep, because the norm is not the observable: the energy is, and the coefficient $\frac{1}{2}\beta^{2}$ is what makes $\mathcal{E}$ equal both $\frac{1}{2}mv^{2}$ and $\frac{\lvert\vec p\rvert^{2}}{2m}$ in the same scheme. The two choices agree at the order kept and part at order $\beta^{4}$; the truncated element of the rule has $\langle\tilde V_{\Phi,1}\rangle_{\natural}=-c^{2}\left(1+\frac{\beta^{4}}{4}\right)$, a relative error of $2.5\times10^{-9}$ at $\beta=0.01$.
 
 **The same statement in the rapidity.** With $\gamma=\cosh\theta_{\mathrm{rpd}}$ and $\gamma\beta=\sinh\theta_{\mathrm{rpd}}$, the constraint reads $\cosh^{2}\theta_{\mathrm{rpd}}-\sinh^{2}\theta_{\mathrm{rpd}}=1$, and the series is $\gamma-1=\frac{\theta_{\mathrm{rpd}}^{2}}{2}+\frac{\theta_{\mathrm{rpd}}^{4}}{24}+\cdots$. **The limit is the statement that the rapidity is small**, and the excess is the squared rapidity, halved at leading order.
 
@@ -114,15 +114,15 @@ $$
 and the three are one statement. The kinetic energy is the leading correction of the temporal slot, the momentum is the vector slot with the scale attached, and the two agree because
 
 $$
-\frac{p^{2}}{2m}=\frac{1}{2}m\vec v^{\,2}=\mathcal{E}
+\frac{\lvert\vec p\rvert^{2}}{2m}=\frac{1}{2}m\vec v^{\,2}=\mathcal{E}
 $$
 
-holds exactly in the truncated scheme. **That consistency is the warrant for truncating the two slots differently:** any other split of the corrections breaks the equality between the kinetic energy and $p^{2}/2m$.
+holds exactly in the truncated scheme. **That consistency is the warrant for truncating the two slots differently:** any other split of the corrections breaks the equality between the kinetic energy and $\lvert\vec p\rvert^{2}/2m$.
 
-**The alternative momentum rule, and its price.** Keeping $\vec p$ exact and setting $E=mc^{2}+p^{2}/2m$ is the other common truncation. It is closer, with
+**The alternative momentum rule, and its price.** Keeping $\vec p$ exact and setting $E=mc^{2}+\lvert\vec p\rvert^{2}/2m$ is the other common truncation. It is closer, with
 
 $$
-\frac{p^{2}/2m}{\mathcal{E}}=\frac{\gamma+1}{2}=1+\frac{\beta^{2}}{2}+O\left(\beta^{4}\right),
+\frac{\lvert\vec p\rvert^{2}/2m}{\mathcal{E}}=\frac{\gamma+1}{2}=1+\frac{\beta^{2}}{2}+O\left(\beta^{4}\right),
 $$
 
 against $1-\frac{3}{4}\beta^{2}$ for the rule above. The price is that the vector slot then carries $\gamma$, so the truncated element is not a polynomial in $\beta$ and the family of the table is lost. **The rule above is the one truncation of the family that is polynomial at the order kept.**
@@ -133,7 +133,7 @@ against $1-\frac{3}{4}\beta^{2}$ for the rule above. The price is that the vecto
 
 ## What the Limit Does Not Do
 
-**No branch is selected.** The temporal part is $\gamma c$ with $\gamma>0$ by construction, so the velocity form has no second branch to exclude. A second root appears only when the constraint is squared into $E^{2}=p^{2}c^{2}+m^{2}c^{4}$, and that root is not a second kind of four-velocity. No solution has been thrown away.
+**No branch is selected.** The temporal part is $\gamma c$ with $\gamma>0$ by construction, so the velocity form has no second branch to exclude. A second root appears only when the constraint is squared into $E^{2}=\lvert\vec p\rvert^{2}c^{2}+m^{2}c^{4}$, and that root is not a second kind of four-velocity. No solution has been thrown away.
 
 **The constant is not a knob.** The limit is taken on the state, not on $c$. Setting $c\to\infty$ would contradict the Maxwell equations the constant comes from. Only $\gamma-1$ goes to zero.
 
@@ -175,7 +175,7 @@ The kinematic content of relativistic mechanics is one element and one constrain
 
 The limit is one rule: keep the excess of $\gamma$ to order $\beta^{2}$ in the temporal slot and drop it in the vector slot. It gives $\tilde V_{\Phi,1}=ic\left(1+\frac{\beta^{2}}{2}\right)e_{t}+\vec v$, with the exact ratios $\frac{\gamma+1}{2\gamma^{2}}=1-\frac{3}{4}\beta^{2}+\cdots$ in the temporal slot and $\frac{1}{\gamma}=1-\frac{1}{2}\beta^{2}+\cdots$ in the vector slot.
 
-The scale attaches once. Every element of the family $\tilde X_{\Phi}=\lambda\tilde V_{\Phi}$ is truncated by one multiplication, which gives $E=mc^{2}+\frac{1}{2}mv^{2}$, $\vec p=m\vec v$, $\mathcal{E}=p^{2}/2m$, and the same three statements in wave numbers, in charge density and in the potential of one charge. Only an element carrying $\hbar$ goes further, to a wave equation, and that is the scale's doing and not the limit's.
+The scale attaches once. Every element of the family $\tilde X_{\Phi}=\lambda\tilde V_{\Phi}$ is truncated by one multiplication, which gives $E=mc^{2}+\frac{1}{2}mv^{2}$, $\vec p=m\vec v$, $\mathcal{E}=\lvert\vec p\rvert^{2}/2m$, and the same three statements in wave numbers, in charge density and in the potential of one charge. Only an element carrying $\hbar$ goes further, to a wave equation, and that is the scale's doing and not the limit's.
 
 ## Summary of Notation
 

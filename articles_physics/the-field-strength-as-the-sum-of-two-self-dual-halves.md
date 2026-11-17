@@ -13,7 +13,7 @@ The algebra and the sign conventions are those of the corpus's field-strength ar
 ### The Two-Form
 
 $$
-F=\tfrac12F_{\mu\nu}\,dR^{\mu}\wedge dR^{\nu},
+F=\tfrac12\sum_{\mu,\nu}F_{\mu\nu}\,dR_{\mu}\wedge dR_{\nu},
 \qquad
 F_{\mu\nu}=\frac{\partial A_\nu}{\partial R_\mu}-\frac{\partial A_\mu}{\partial R_\nu},
 $$

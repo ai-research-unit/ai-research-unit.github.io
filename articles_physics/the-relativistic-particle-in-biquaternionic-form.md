@@ -263,7 +263,7 @@ E = mc^2 + \frac{\vec p^2}{2m} + O(p^4/m^3c^2),
 \vec p = m\vec v + O(v^3/c^2).
 $$
 
-The rest energy $mc^2$ is the constant imaginary scalar part; it is a constant of the motion in the non-relativistic limit and is dropped, leaving the kinetic energy $p^2/2m$. The biquaternion norm of the four-momentum is exactly $-m^2c^2$ in the relativistic theory, and the non-relativistic expansion preserves it through a cancellation between the two terms. Expanding each separately,
+The rest energy $mc^2$ is the constant imaginary scalar part; it is a constant of the motion in the non-relativistic limit and is dropped, leaving the kinetic energy $\lvert\vec p\rvert^{2}/2m$. The biquaternion norm of the four-momentum is exactly $-m^2c^2$ in the relativistic theory, and the non-relativistic expansion preserves it through a cancellation between the two terms. Expanding each separately,
 
 $$
 -\frac{E^2}{c^2} = -m^2c^2 - m^2\vec v^2 + O(v^4/c^2),

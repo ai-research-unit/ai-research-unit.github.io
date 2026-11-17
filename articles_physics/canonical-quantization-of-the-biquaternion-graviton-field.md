@@ -191,7 +191,7 @@ $$
 -\frac{1}{D-2}\delta_{\mu\nu}\delta_{\rho\sigma} ,
 $$
 
-in $D$ dimensions, with the coefficient of the trace term determined by the gauge-fixing procedure; the propagator is $\mathcal{P}_{\mu\nu,\rho\sigma}/p^2$ with the $i\epsilon$ prescription, together with the gauge-dependent terms that the de Donder condition fixes. The detailed form, with the gauge-fixing parameter and the dimensional dependence, is standard and is cited below. What the framework contributes is the observation that the trace term of the numerator is the trace that the bilinear form removes from the symmetric square: the numerator is the symmetric metric pairing minus a term proportional to $\delta_{\mu\nu}\delta_{\rho\sigma}$, and the trace removal of $V\odot V$ is the algebraic form of that subtraction of the trace direction.
+in $D$ dimensions, with the coefficient of the trace term determined by the gauge-fixing procedure; the propagator is $\mathcal{P}_{\mu\nu,\rho\sigma}/(-N)$ with the $i\epsilon$ prescription, together with the gauge-dependent terms that the de Donder condition fixes. The detailed form, with the gauge-fixing parameter and the dimensional dependence, is standard and is cited below. What the framework contributes is the observation that the trace term of the numerator is the trace that the bilinear form removes from the symmetric square: the numerator is the symmetric metric pairing minus a term proportional to $\delta_{\mu\nu}\delta_{\rho\sigma}$, and the trace removal of $V\odot V$ is the algebraic form of that subtraction of the trace direction.
 
 ### The Massive Case and the Discontinuity
 

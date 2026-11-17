@@ -61,11 +61,11 @@ $$
 with $k_{t}^{\prime}=\omega/c$ the temporal wave number and $\vec k_\Phi=\vec p/\hbar$ the vector wave number. The wave element is that of the material sector, imaginary scalar part and real vector part, and its two scalar squares are
 
 $$
-(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=\frac{p^{2}}{\hbar^{2}},\qquad
-\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=-p^2,\qquad p^2=p_{t}^{\prime\,2}-\lvert\vec p\rvert^2 .
+(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=-\frac{N}{\hbar^{2}},\qquad
+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=N,\qquad N=-p_{t}^{\prime\,2}+\lvert\vec p\rvert^2 .
 $$
 
-Each line is one use of $i^2=-1$ and one use of $\vec k_\Phi^{\,2}=-\lvert\vec k_\Phi\rvert^2$, and the two lines agree because $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}$. The symbol of the free equation is the left multiplication by $+i\hbar\tilde K_{\Phi}$, that is by $i\tilde P_{\Phi}$: the gradient and the wave element are the same object read twice. The two squares vanish together exactly when $p^2=0$, and that is the null wave element of Problem 4, where the symbol loses rank and the solutions of the free equation become the kernel.
+Each line is one use of $i^2=-1$ and one use of $\vec k_\Phi^{\,2}=-\lvert\vec k_\Phi\rvert^2$, and the two lines agree because $\tilde K_{\Phi}=\frac{\tilde P_{\Phi}}{\hbar}$. The symbol of the free equation is the left multiplication by $+i\hbar\tilde K_{\Phi}$, that is by $i\tilde P_{\Phi}$: the gradient and the wave element are the same object read twice. The two squares vanish together exactly when $N=0$, and that is the null wave element of Problem 4, where the symbol loses rank and the solutions of the free equation become the kernel.
 
 **The two parts.** The value of an element is read by the right action $\tilde Q\mapsto-i\tilde Q\vec e_z$. The action applied twice returns the element, so its spectrum is $+1,+1,-1,-1$: two values, of two complex dimensions each. A basis of the part of value $+1$ is
 
@@ -115,7 +115,7 @@ which is the mass shell of Problem 6 and the Klein–Gordon equation of the firs
 
 **Statement.** Solve the pair for the positive-frequency branch $\tilde w$ and for the negative-frequency branch $\tilde v$, explicitly at rest and at general momentum, in the two readings.
 
-**Solution.** Eliminating the second part gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$; on a plane wave $\Box$ is $p^2$, so the pair is soluble exactly on the mass shell
+**Solution.** Eliminating the second part gives $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde{Ξ}_{R}=\Box_\Phi\tilde{Ξ}_{R}=k_m^{2}\tilde{Ξ}_{R}$; on a plane wave $\Box$ is $-N$, so the pair is soluble exactly on the mass shell
 
 $$
 E^2=\vec p^{\,2}+m^2 .
@@ -234,7 +234,7 @@ $$
 The scalar square is the interval, and the collapse is two lines:
 
 $$
-(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-k_{t}^{\prime}i\vec k_\Phi+i\vec kk_{t}^{\prime}-i^2\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}+\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=\frac{p^{2}}{\hbar^{2}},
+(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=k_{t}^{\prime\,2}-k_{t}^{\prime}i\vec k_\Phi+i\vec kk_{t}^{\prime}-i^2\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}+\vec k_\Phi^{\,2}=k_{t}^{\prime\,2}-\lvert\vec k_\Phi\rvert^2=-\frac{N}{\hbar^{2}},
 $$
 
 with the cross terms vanishing because $k_{t}^{\prime}$ is central and $\vec k_\Phi$ is pure, and with the plus in front of $\vec k_\Phi^{\,2}$ because the square of $i\vec k_\Phi$ is $i^2\vec k_\Phi^{\,2}=+\lvert\vec k_\Phi\rvert^2$. On the mass shell $\tilde P_{\Phi}^{\natural}\tilde P_{\Phi}=-m^{2}c^{2}=-\hbar^{2}k_m^{2}$, so $\Box=k_m^{2}$ on the wave and the pair closes; the two branches then close the solution space, and no third condition is needed.
@@ -343,7 +343,7 @@ The two roots $\omega=\pm\sqrt{c^2\vec k_\Phi^2+c^2k_m^{2}}$ are the two frequen
 
 **Solution.** The free symbol is the element $i\tilde P_{\Phi}$, and the massive equation is the pair of §*The Field and the Equation*.
 
-**The scalar square.** The square of the wave element is not scalar, its product with its conjugate is: $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=\frac{p^{2}}{\hbar^{2}}$, by the collapse of Problem 3. The scalar datum of the wave is that product and not the square.
+**The scalar square.** The square of the wave element is not scalar, its product with its conjugate is: $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\frac{N}{\hbar^{2}}$, by the collapse of Problem 3. The scalar datum of the wave is that product and not the square.
 
 **The helicity grading.** For $\vec p\neq0$ put
 
@@ -356,32 +356,32 @@ so that left multiplication by $\tilde{Ζ}$ has eigenvalues $\pm1$, each twice, 
 **The piece determinant.** On a piece the pair, written on the two parts, has the two diagonal entries $-m$ and the two off-diagonal entries $i\tilde P_{\Phi}$ and $i\tilde P_{\Phi}^{\natural}$. The four are left multiplications by elements, and the elements commute, so the determinant of the pair is the determinant of the entries taken as numbers of that commutative algebra:
 
 $$
-\det=-mc\cdot(-mc)-(i\tilde P_{\Phi})(i\tilde P_{\Phi}^{\natural})=m^{2}c^{2}+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=m^{2}c^{2}-p^2 .
+\det=-mc\cdot(-mc)-(i\tilde P_{\Phi})(i\tilde P_{\Phi}^{\natural})=m^{2}c^{2}+\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}=m^{2}c^{2}+N .
 $$
 
-The same number comes from the spectrum. The off-diagonal block squares to $(i\tilde P_{\Phi})(i\tilde P_{\Phi}^{\natural})=p^2$ times the identity, so for $p^2>0$ the two eigenvalues of the block on the piece are
+The same number comes from the spectrum. The off-diagonal block squares to $(i\tilde P_{\Phi})(i\tilde P_{\Phi}^{\natural})=-N$ times the identity, so for $N<0$ the two eigenvalues of the block on the piece are
 
 $$
--m+\sqrt{p^2},\qquad -m-\sqrt{p^2},
+-m+\sqrt{-N},\qquad -m-\sqrt{-N},
 $$
 
-and their product is $m^{2}\,c^{2}-p^2$. The mass term is a multiple of the identity, so it shifts the two eigenvalues equally and enters the piece determinant once, and the determinant of the whole symbol is the product over the two pieces,
+and their product is $m^{2}\,c^{2}+N$. The mass term is a multiple of the identity, so it shifts the two eigenvalues equally and enters the piece determinant once, and the determinant of the whole symbol is the product over the two pieces,
 
 $$
-\boxed{\;\det_{\mathrm{pair}}=\bigl(m^{2}\,c^{2}-p^2\bigr)^2\;}
+\boxed{\;\det_{\mathrm{pair}}=\bigl(m^{2}\,c^{2}+N\bigr)^2\;}
 $$
 
 the square of the Klein–Gordon symbol. The two pieces carry the same pair of eigenvalues: they are isospectral, and the common value of their determinants is the datum a single piece carries.
 
-**The mass shell is the vanishing of a piece determinant.** Each determinant is $m^{2}\,c^{2}-p^2$, so the pair is singular exactly when $p^2=m^{2}\,c^{2}$. At that momentum each piece has a one-dimensional kernel: two zero modes, one per helicity, and these are the two helicity states of the particle. Off the shell each piece is invertible and the propagator is the inverse of the pair.
+**The mass shell is the vanishing of a piece determinant.** Each determinant is $m^{2}\,c^{2}+N$, so the pair is singular exactly when $N=-m^{2}\,c^{2}$. At that momentum each piece has a one-dimensional kernel: two zero modes, one per helicity, and these are the two helicity states of the particle. Off the shell each piece is invertible and the propagator is the inverse of the pair.
 
-**Worked case, $\vec p\parallel\vec e_z$.** With $B=\lvert\vec p\rvert$ and the mass $m$, the pieces are the two helicity eigenspaces. For $m=1.3$, $E=2$, $B=0.9$: $p^2=3.19$ and $\sqrt{p^2}=1.786057$, so each piece determinant is $m^{2}\,c^{2}-p^2=-1.5$, each piece spectrum is $\{-3.086057,\,0.486057\}$, and the determinant of the pair is $2.25=(m^{2}\,c^{2}-p^2)^2$.
+**Worked case, $\vec p\parallel\vec e_z$.** With $B=\lvert\vec p\rvert$ and the mass $m$, the pieces are the two helicity eigenspaces. For $m=1.3$, $E=2$, $B=0.9$: $N=-3.19$ and $\sqrt{-N}=1.786057$, so each piece determinant is $m^{2}\,c^{2}+N=-1.5$, each piece spectrum is $\{-3.086057,\,0.486057\}$, and the determinant of the pair is $2.25=(m^{2}\,c^{2}+N)^2$.
 
 **Worked case, on the shell.** For $m=1.3$ and $\vec p=(0.4,-0.7,0.9)$ the energy is $E=\sqrt{m^2+\vec p^{\,2}}=1.774824$. Each piece determinant is zero, each piece spectrum is $\{-2m,\,0\}=\{-2.6,\,0\}$, and the pair has rank two, with a one-dimensional kernel per helicity.
 
-**Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde{Ζ}$ was at most $5.4\times10^{-16}$; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ and $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ departed from $\pm p^2$ by nothing to machine precision; $\tilde{Ζ}^2$ from $e_t$, $2.2\times10^{-16}$; the eigenvalues of the block from $-m\pm\sqrt{p^2}$, $8.0\times10^{-15}$; the product of the eight eigenvalues from $(m^{2}\,c^{2}-p^2)^4$, $1.4\times10^{-57}$; and the amplitude ratio of Problem 1 from $(E\mp\lvert\vec p\rvert)/(E\pm\lvert\vec p\rvert)$ to $1.6\times10^{-14}$ relative. The two kernels of Problem 4 were recomputed on six null momenta: each of two complex dimensions, disjoint, and the helicity residual at most $6.5\times10^{-15}$.
+**Numerical check.** The identities were recomputed on 100 random real four-momenta. The departure of the symbol from commuting with left multiplication by $\tilde{Ζ}$ was at most $5.4\times10^{-16}$; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})$ and $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}$ departed from $\pm N$ by nothing to machine precision; $\tilde{Ζ}^2$ from $e_t$, $2.2\times10^{-16}$; the eigenvalues of the block from $-m\pm\sqrt{-N}$, $8.0\times10^{-15}$; the product of the eight eigenvalues from $(m^{2}\,c^{2}+N)^4$, $1.4\times10^{-57}$; and the amplitude ratio of Problem 1 from $(E\mp\lvert\vec p\rvert)/(E\pm\lvert\vec p\rvert)$ to $1.6\times10^{-14}$ relative. The two kernels of Problem 4 were recomputed on six null momenta: each of two complex dimensions, disjoint, and the helicity residual at most $6.5\times10^{-15}$.
 
-**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde{Ζ}$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $p^2<0$ the two eigenvalues are complex and the piece determinant $m^2+\lvert p^2\rvert$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $p^2=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.
+**What the splitting is, and what it is not.** It says that the mass does not see the helicity, and therefore that a massive state is a pair of helicity pieces with equal spectra and unequal contents. The numbers inside a piece depend on the choice of basis within an eigenspace and are not physical; the determinant and the spectrum are. Three boundaries belong with the statement. At $\vec p=0$ the element $\tilde{Ζ}$ is undefined: the wave element is $im\,e_t$ and the pair is $-\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, so the split is the split into the two values, the rest-frame split of Problem 1, and the label is a rest-frame value and not the helicity. For a spacelike momentum $N>0$ the two eigenvalues are complex and the piece determinant $m^{2}c^{2}+N$ does not vanish: that is the off-shell region, not a second shell. For a null momentum $N=0$ the identity still holds, the piece determinant vanishes, and the kernel is two-dimensional and entirely of one helicity: this is the massless case of Problem 4.
 
 ## Summary
 
@@ -393,7 +393,7 @@ The seven problems test the parent's plane-wave solutions and confirm them in th
 4. **Massless limit.** The pair decouples, the field annihilated by $\tilde\nabla_\Phi$ keeps one helicity and the field annihilated by $(\tilde\nabla_\Phi)^{\natural}$ the other, and the two labels are locked: positive helicity with the first member and negative helicity with the second.
 5. **The two parts.** The value is read by $\tilde Q\mapsto-i\tilde Q\vec e_z$, of spectrum $+1,+1,-1,-1$; a left multiplication keeps it and a right multiplication by $\vec e_x$ or $\vec e_y$ exchanges it; the change of the reading is right multiplication by $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$, which sends the reading from $\vec e_z$ to $\vec e_x$ and touches no derivative.
 6. **Mass shell.** The condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ is the quaternionic-norm statement $\langle\tilde K_{\Phi}\rangle_{\natural}=-k_m^{2}$, and reproduces $E^2=\vec p^{\,2}c^2+m^4c^4$.
-7. **Helicity pieces.** The scalar square of the wave is $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=\frac{p^{2}}{\hbar^{2}}$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^{2}\,c^{2}-p^2$; the pieces are isospectral, the determinant of the pair is $(m^{2}\,c^{2}-p^2)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
+7. **Helicity pieces.** The scalar square of the wave is $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\frac{N}{\hbar^{2}}$; the symbol commutes with left multiplication by $\tilde{Ζ}=i\vec u_p$, so the carrier splits into two two-dimensional eigenspaces of piece determinant $m^{2}\,c^{2}+N$; the pieces are isospectral, the determinant of the pair is $(m^{2}\,c^{2}+N)^2$, and the mass shell is the vanishing of either piece determinant, with a one-dimensional kernel per helicity.
 
 Two objects are needed by the exercise and are not given in the parent: the negative-frequency solutions $\tilde v$ (Problem 1) and the change-of-reading element $\tilde Q_{\mathrm{disp}}$ (Problem 5). The constructions above reproduce the parent's stated results.
 
@@ -410,13 +410,13 @@ Two objects are needed by the exercise and are not given in the parent: the nega
 | $\tilde Q\mapsto-i\tilde Q\vec e_z$ | The action that reads the value; spectrum $+1,+1,-1,-1$ |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The Dirac field and its two parts, values $-1$ and $+1$ |
 | $\tilde P_{\Phi}=i p_{t}^{\prime}e_t+\vec p$ | Momentum element of the plane wave, $p_{t}^{\prime}=E/c$ |
-| $-i\hbar\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=-i\tilde P_{\Phi}$ | The same wave read by the gradient; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=\frac{p^{2}}{\hbar^{2}}$ |
+| $-i\hbar\tilde K_{\Phi}=k_{t}^{\prime}-i\vec k_\Phi=-i\tilde P_{\Phi}$ | The same wave read by the gradient; $(-i\tilde K_{\Phi})^{\natural}(-i\tilde K_{\Phi})=-\frac{N}{\hbar^{2}}$ |
 | $i\tilde P_{\Phi}\,\tilde{Ξ}_{R}=m\tilde{Ξ}_{L}$ and $i\tilde P_{\Phi}^{\natural}\tilde{Ξ}_{L}=m\tilde{Ξ}_{R}$ | The pair: the gradient and the mass, momentum space |
 | $\langle\tilde{Ξ},\tilde{Ξ}\rangle_{\mathrm D}=2\,\mathrm{Sc}\bigl(\tilde{Ξ}^*\tilde{Ξ}\,i\vec e_x\bigr)$ | Dirac pairing, twisted by the timelike unit |
 | $\tilde Q_{\mathrm{disp}}=(e_t+\vec e_y)/\sqrt2$ | Change of the reading, $\vec e_z$ to $\vec e_x$ |
 | $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ | Mass-shell condition |
-| $p^2=E^2/c^2-\vec p^{\,2}$ | Interval of the four-momentum |
-| $m^{2}\,c^{2}-p^2$ | Piece determinant, repeated on the two pieces |
+| $N=-E^2/c^2+\vec p^{\,2}$ | Interval of the four-momentum |
+| $N+m^{2}\,c^{2}$ | Piece determinant, repeated on the two pieces |
 | $\tilde{Ζ}=i\vec u_p$, $\vec u_p=\vec p/\lvert\vec p\rvert$ | Helicity element, $\tilde{Ζ}^2=e_t$; its two values grade the carrier |
 | $-m\pm\sqrt{p^2}$ | Spectrum of the pair on a helicity piece |
 

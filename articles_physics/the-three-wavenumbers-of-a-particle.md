@@ -806,7 +806,7 @@ $$
 \hbar c\,\Omega=\frac{\left(\hbar k_{\Phi}\right)^{2}}{2m}=\frac{1}{2}m\lvert\vec v\rvert^{2}.
 $$
 
-The last equality is the kinetic energy written in the three wave numbers, and it holds without remainder: the truncated element satisfies $E_{\mathrm{kin}}=p^{2}/2m$ and not merely $p^{2}/2m$ to leading order. That is what makes the truncation of the two slots at different orders the consistent one — any other split leaves a remainder in this equality.
+The last equality is the kinetic energy written in the three wave numbers, and it holds without remainder: the truncated element satisfies $E_{\mathrm{kin}}=\lvert\vec p\rvert^{2}/2m$ and not merely $\lvert\vec p\rvert^{2}/2m$ to leading order. That is what makes the truncation of the two slots at different orders the consistent one — any other split leaves a remainder in this equality.
 
 **The error, and its only parameter.** The exact solution of the quadratic is $\Omega=-k_m+\sqrt{k_{\Phi}^{2}+k_m^{2}}$, which expands as
 
@@ -912,7 +912,7 @@ For the electron $k_m=2.5896\times10^{12}\ \mathrm{m^{-1}}$, and it is the same 
 
 None of the three is the size of the particle: the proton's charge radius times its mass wave number is four, and the electron is pointlike far below its own inverse. At $m=0$ the triangle degenerates, $k_{t}^{\prime}=k_{\Phi}$ and the mass wave number is no longer a wave number of the problem. The massless equations of the series are exact for that reason, not approximate.
 
-The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $k_{t}^{\prime}=k_m+\Omega$, note that the triangle then reads $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta_{\mathrm{nr}}=\Omega/(2k_m)$, is the small parameter, and the error of the truncation is $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ in closed form. The leading term is $\hbar c\,\Omega=p^{2}/2m$, and the first-order relation it carries, with $k_{\Phi}^{2}\to-\Delta$, is the free Schrödinger equation.
+The non-relativistic limit is one operation on the triangle. Split off the mass side exactly, $k_{t}^{\prime}=k_m+\Omega$, note that the triangle then reads $k_{\Phi}^{2}=2k_m\Omega+\Omega^{2}$, expand once, and keep the term linear in the excess. The quotient of the two terms, $\eta_{\mathrm{nr}}=\Omega/(2k_m)$, is the small parameter, and the error of the truncation is $-\eta_{\mathrm{nr}}/(1+\eta_{\mathrm{nr}})$ in closed form. The leading term is $\hbar c\,\Omega=\lvert\vec p\rvert^{2}/2m$, and the first-order relation it carries, with $k_{\Phi}^{2}\to-\Delta$, is the free Schrödinger equation.
 
 ## Summary of Notation
 

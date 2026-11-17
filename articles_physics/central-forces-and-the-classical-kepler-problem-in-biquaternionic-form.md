@@ -179,7 +179,7 @@ $$
 |\vec A|^2 = m^2\kappa^2 + 2mEL^2 ,
 $$
 
-obtained by squaring $\vec p\times\vec L = \vec A + m\kappa\vec u_r$ and using $p^2 = 2m(E + \kappa/r)$. Comparing with the energy–eccentricity relation gives
+obtained by squaring $\vec p\times\vec L = \vec A + m\kappa\vec u_r$ and using $\lvert\vec p\rvert^{2} = 2m(E + \kappa/r)$. Comparing with the energy–eccentricity relation gives
 
 $$
 |\vec A| = m\kappa\,e ,

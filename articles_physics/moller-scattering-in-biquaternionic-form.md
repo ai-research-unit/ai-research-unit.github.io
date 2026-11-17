@@ -56,14 +56,14 @@ p_1 = (E,0,0,p),\quad p_2 = (E,0,0,-p),\quad
 p_3 = (E,p\sin\theta,0,p\cos\theta),\quad p_4 = (E,-p\sin\theta,0,-p\cos\theta),
 $$
 
-with $E^2 = m^2+p^2$ and $E_{\mathrm{CM}} = 2E$, so that
+with $E^{2} = m^{2}+\lvert\vec p\rvert^{2}$ and $E_{\mathrm{CM}} = 2E$, so that
 
 $$
 s = 4E^2 = E_{\mathrm{CM}}^2,
 \qquad
-t = 2p^2(\cos\theta-1) = -4p^2\sin^2\tfrac{\theta}{2},
+t = 2\lvert\vec p\rvert^{2}(\cos\theta-1) = -4\lvert\vec p\rvert^{2}\sin^2\tfrac{\theta}{2},
 \qquad
-u = -2p^2(\cos\theta+1) = -4p^2\cos^2\tfrac{\theta}{2}.
+u = -2\lvert\vec p\rvert^{2}(\cos\theta+1) = -4\lvert\vec p\rvert^{2}\cos^2\tfrac{\theta}{2}.
 $$
 
 Both $-t$ and $-u$ are positive and vanish at one end of the angular range, $-t$ at $\theta=0$ and $-u$ at $\theta=\pi$; this is what makes $1/t$ and $1/u$ the two photon propagators and $y:=-t/s$ the inelasticity, equal to $\sin^2(\theta/2)$ up to $m^2/E^2$.
@@ -193,7 +193,7 @@ $$
 \end{aligned}
 $$
 
-Each of the three terms has the same anatomy: the two trace factors are the two electron **currents** contracted with each other through the photon propagator's $1/t$ or $1/u$, and the cross term is the interference. The interference carries the exchange sign squared, so its sign is not fixed by the amplitude but by the kinematics: since $tu>0$, the cross term has the sign of $s^2-8m^2s+12m^4$, whose roots are $s=2m^2$ and $s=6m^2$, so on the physical range it is negative for $4m^2\le s<6m^2$ and positive above, that is, negative while $p^2<m^2/2$ and positive for $p^2>m^2/2$. The interference is therefore **destructive** in the non-relativistic region and **constructive** in the ultrarelativistic one, and the change of sign is one reason the two limits below have such different angular shapes. In Bhabha scattering the cross term, in the same normalisation $\overline{|\mathcal M|^2}=2e^4\{\ldots\}$, is $+\,2u^2/(st)$ with $u$ the crossed invariant of the companion article; once the overall $2e^4$ is distributed it reads $4u^2/(st)$, and since $st<0$ it is negative at every energy, so there the annihilation interference is destructive throughout.
+Each of the three terms has the same anatomy: the two trace factors are the two electron **currents** contracted with each other through the photon propagator's $1/t$ or $1/u$, and the cross term is the interference. The interference carries the exchange sign squared, so its sign is not fixed by the amplitude but by the kinematics: since $tu>0$, the cross term has the sign of $s^2-8m^2s+12m^4$, whose roots are $s=2m^2$ and $s=6m^2$, so on the physical range it is negative for $4m^2\le s<6m^2$ and positive above, that is, negative while $\lvert\vec p\rvert^{2}<m^{2}/2$ and positive for $\lvert\vec p\rvert^{2}>m^{2}/2$. The interference is therefore **destructive** in the non-relativistic region and **constructive** in the ultrarelativistic one, and the change of sign is one reason the two limits below have such different angular shapes. In Bhabha scattering the cross term, in the same normalisation $\overline{|\mathcal M|^2}=2e^4\{\ldots\}$, is $+\,2u^2/(st)$ with $u$ the crossed invariant of the companion article; once the overall $2e^4$ is distributed it reads $4u^2/(st)$, and since $st<0$ it is negative at every energy, so there the annihilation interference is destructive throughout.
 
 ## The Cross Section and Its Limits
 
@@ -207,7 +207,7 @@ $$
 
 inserting the centre-of-momentum Mandelstam variables. In the two limits it takes instructive forms.
 
-**Non-relativistic limit** ($m\gg p$, to leading order in $p^2/m^2$, with $E_{\mathrm{CM}}\simeq2m$):
+**Non-relativistic limit** ($m\gg p$, to leading order in $\lvert\vec p\rvert^{2}/m^{2}$, with $E_{\mathrm{CM}}\simeq2m$):
 
 $$
 \boxed{\;
@@ -224,13 +224,13 @@ $$
 
 which is the $(1+3\cos^2\theta)$ of the box. A spinless electron would instead give the antisymmetric combination alone, and its cross section would vanish at $\theta=\pi/2$. It is the quantum-mechanical electron–electron repulsion behind the helium atom, with the exchange factor.
 
-**Ultrarelativistic limit** ($m\ll p$, to leading order in $m^2/p^2$):
+**Ultrarelativistic limit** ($m\ll p$, to leading order in $m^{2}/\lvert\vec p\rvert^{2}$):
 
 $$
 \frac{d\sigma}{d\Omega} = \frac{\alpha^2}{E_{\mathrm{CM}}^2\,\sin^4\theta}\,(3+\cos^2\theta)^2 .
 $$
 
-Both ends of the angular range carry a $1/\sin^4\theta$ factor under the exchange factor $(3+\cos^2\theta)^2$, and both ends are genuine Coulomb singularities: $t=0$ at $\theta=0$ is the direct photon, $u=0$ at $\theta=\pi$ is the exchanged one, since backward scattering of one electron is forward scattering of the other. The electron mass regulates neither — $u=-4p^2\cos^2(\theta/2)$ vanishes at $\theta=\pi$ for every $p$ — so only a detector's angular acceptance makes the cross section finite, and with a fixed cut the total cross section falls as $\alpha^2/s$ up to logarithms from the interference.
+Both ends of the angular range carry a $1/\sin^4\theta$ factor under the exchange factor $(3+\cos^2\theta)^2$, and both ends are genuine Coulomb singularities: $t=0$ at $\theta=0$ is the direct photon, $u=0$ at $\theta=\pi$ is the exchanged one, since backward scattering of one electron is forward scattering of the other. The electron mass regulates neither — $u=-4\lvert\vec p\rvert^{2}\cos^2(\theta/2)$ vanishes at $\theta=\pi$ for every $\lvert\vec p\rvert$ — so only a detector's angular acceptance makes the cross section finite, and with a fixed cut the total cross section falls as $\alpha^2/s$ up to logarithms from the interference.
 
 ## The Weak Correction and Parity Violation
 
@@ -379,7 +379,7 @@ Without the weight only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma
 
 ## Summary
 
-Møller scattering, $e^-e^-\to e^-e^-$, is the tree-level exchange of a photon between two electrons, contributing through $t$-channel and $u$-channel diagrams that combine with the relative minus sign of identical-fermion exchange. The Mandelstam variables satisfy $s+t+u=4m^2$; the spin-summed matrix element is three terms, two of them products of traces over the photon propagators and one the interference, whose sign flips from destructive to constructive at $p^2=m^{2}c^{2}/2$; the unpolarized cross section reduces to the Rutherford-like $(1+3\cos^2\theta)/\sin^4\theta$ law at low energy and to $(3+\cos^2\theta)^2/\sin^4\theta$ at high energy. The electroweak $Z$-exchange adds a parity-violating asymmetry of order one hundred parts per billion, measured at SLAC and used to extract the weak mixing angle.
+Møller scattering, $e^-e^-\to e^-e^-$, is the tree-level exchange of a photon between two electrons, contributing through $t$-channel and $u$-channel diagrams that combine with the relative minus sign of identical-fermion exchange. The Mandelstam variables satisfy $s+t+u=4m^2$; the spin-summed matrix element is three terms, two of them products of traces over the photon propagators and one the interference, whose sign flips from destructive to constructive at $\lvert\vec p\rvert^{2}=m^{2}c^{2}/2$; the unpolarized cross section reduces to the Rutherford-like $(1+3\cos^2\theta)/\sin^4\theta$ law at low energy and to $(3+\cos^2\theta)^2/\sin^4\theta$ at high energy. The electroweak $Z$-exchange adds a parity-violating asymmetry of order one hundred parts per billion, measured at SLAC and used to extract the weak mixing angle.
 
 In the biquaternion framework the amplitude is the contraction of two material-sector currents — the same current the minimal-coupling article identifies — by the framework's quantized photon propagator. Every vertex is one action written out, $Q\mapsto aQb$; the five actions are the four insertions and the chirality action, and the chirality takes the two values $L$ and $R$, which the external elements carry as subscripts. The mass is a scalar multiple of the unit in the momentum-space equation, and a right multiplication by $-i\vec e_z$ on the conjugate when the same physics is read on the whole algebra. The two structures the framework genuinely owns are the exchange sign, which is the antisymmetry of the mode algebra established by the canonical-quantization article as $(a_{\mathrm{fop}}^{\dagger})^2=0$ and the $\mathbb Z/2$ grading, and crossing symmetry, which is the charge-conjugation real structure $\mathcal C$ on the doubled module. The body uses no array: the traces are traces of composites of the actions, computed from the two multiplier strings, and the older display appears once, at the end, with the dictionary and no derivation. The framework does not evaluate loops, does not supply $Z$ exchange, and makes no framework-specific prediction; the parity-violating asymmetry is quoted as the experimental target that the framework's left-handed coupling must ultimately meet.
 
