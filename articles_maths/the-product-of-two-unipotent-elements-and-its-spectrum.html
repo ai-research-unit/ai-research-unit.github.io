@@ -89,7 +89,7 @@ $$</p>
 \mathsf{M}_2(\vec e_y)=-i\sigma_2,\qquad
 \mathsf{M}_2(\vec e_z)=-i\sigma_3.
 $$</p>
-<p>The reading of an element is twice its scalar part, $2\operatorname{Sc}\tilde Q=2Q_t=\operatorname{Tr}\mathsf{M}_2(\tilde Q)$, and the text writes $2\operatorname{Sc}\tilde Q$; the matrix trace is named only beside the matrix $\mathsf{M}_2$. The determinant is $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and we write $\det\tilde Q$ for it. The <strong>norm-one group</strong> is</p>
+<p>The reading of an element is twice its scalar part, $2\operatorname{Sc}\tilde Q=2Q_t=\operatorname{Tr}\mathsf{M}_2(\tilde Q)$, and the text writes $2\operatorname{Sc}\tilde Q$; the matrix trace is named only beside the matrix $\mathsf{M}_2$. The determinant is $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and the corpus writes $N(\tilde Q)$ for it. The <strong>norm-one group</strong> is</p>
 <p>$$
 \mathbb{B}^{\times}_1=\{\tilde Q:N(\tilde Q)=1\}\cong SL_2(\mathbb{C}).
 $$</p>
@@ -150,7 +150,7 @@ $$</p>
 <h2 id="the-product-and-its-characteristic-polynomial">The Product and Its Characteristic Polynomial</h2>
 <p><strong>Theorem (the product).</strong> Let $\vec\Upsilon_1,\vec\Upsilon_2$ be non-zero pure nilpotents, $U_i=e_t+\vec\Upsilon_i$, $T=U_1U_2$, and $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)$. Then</p>
 <p>(i) $T=e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2$;</p>
-<p>(ii) $2\operatorname{Sc}T=2+t$ and $\det T=1$;</p>
+<p>(ii) $2\operatorname{Sc}T=2+t$ and $\det\mathsf{M}_2(T)=1$;</p>
 <p>(iii) the characteristic polynomial is</p>
 <p>$$
 p_T(\lambda)=\lambda^2-(2+t)\lambda+1,
@@ -164,11 +164,11 @@ $$</p>
 <p>$$
 B^2(T)=s(2-s).
 $$</p>
-<p><em>Proof.</em> The expansion is the product. Since $\vec\Upsilon_i$ is a pure vector, $2\operatorname{Sc}\vec\Upsilon_i=0$, and since $\vec\Upsilon_i^2=0$, $\det U_i=N(U_i)=1$. Hence</p>
+<p><em>Proof.</em> The expansion is the product. Since $\vec\Upsilon_i$ is a pure vector, $2\operatorname{Sc}\vec\Upsilon_i=0$, and since $\vec\Upsilon_i^2=0$, $\det\mathsf{M}_2(U_i)=N(U_i)=1$. Hence</p>
 <p>$$
 2\operatorname{Sc}T=2\operatorname{Sc}(e_t)+2\operatorname{Sc}(\vec\Upsilon_1)+2\operatorname{Sc}(\vec\Upsilon_2)+2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=2+t,
 \qquad
-\det T=\det U_1\det U_2=1.
+\det\mathsf{M}_2(T)=\det\mathsf{M}_2(U_1)\det\mathsf{M}_2(U_2)=1.
 $$</p>
 <p>The characteristic polynomial of the $2\times2$ image is $\lambda^2-2\operatorname{Sc}T\,\lambda+\det T$, which gives (iii), and its discriminant is $(2+t)^2-4=t(t+4)$. The scalar part is $Q_t=1+t/2$. The product is a unit of norm one, because the norm is multiplicative and $N(U_i)=1$; hence $B^2(T)=N(T)-Q_t^2=1-Q_t^2=-t(t+4)/4$. Finally, $\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-\vec\Upsilon_1\cdot\vec\Upsilon_2$ gives $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-2s$, and substitution gives $B^2(T)=s(2-s)$.</p>
 <p><strong>Remark (the product law on the sector).</strong> For $\tilde Q_i=Q_{ti}(e_t+\vec\Upsilon_i)$, <em>Exponential Polar Decomposition on the N-Regular Sector</em>, §<em>The Group Law</em>, proves</p>

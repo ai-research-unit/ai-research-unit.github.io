@@ -87,21 +87,21 @@ $$</p>
 <h3 id="the-determinant-of-the-exponential">The Determinant of the Exponential</h3>
 <p>In the $2\times2$ image the Jacobi identity is the trace of the image,</p>
 <p>$$
-\det\exp(\tilde X)=e^{2\,\mathrm{Sc}\tilde X}.
+\det\mathsf M_2(\exp\tilde X)=e^{2\,\mathrm{Sc}\tilde X}.
 $$</p>
-<p>For a scalar-free $\tilde X$ this reads $\det\exp(\tilde X)=1$, so the exponential of the Lie algebra lands in the unit-norm group. That one line replaces every series computation of the norm, and it is the cleanest proof that $\exp\mathfrak{sl}\subset SL_2(\mathbb{C})$.</p>
+<p>For a scalar-free $\tilde X$ this reads $\langle\exp\tilde X\rangle_{\natural}=1$, so the exponential of the Lie algebra lands in the unit-norm group. That one line replaces every series computation of the norm, and it is the cleanest proof that $\exp\mathfrak{sl}\subset SL_2(\mathbb{C})$.</p>
 <h3 id="cayleyhamilton-in-two-dimensions">Cayley–Hamilton in Two Dimensions</h3>
 <p>Every $2\times2$ matrix satisfies its characteristic polynomial. For scalar-free $\tilde X$,</p>
 <p>$$
-\tilde X^{2}=-\det(\tilde X)\,e_t,
+\tilde X^{2}=-\langle\tilde X\rangle_{\natural}\,e_t,
 $$</p>
 <p>so every power of $\tilde X$ is a multiple of $e_t$ or of $\tilde X$. Summing the series term by term,</p>
 <p>$$
-\exp(\tilde X)=\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\det^{k}\tilde X}{(2k)!}\Bigr)e_t
-+\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\det^{k}\tilde X}{(2k+1)!}\Bigr)\tilde X
+\exp(\tilde X)=\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\langle\tilde X\rangle_{\natural}^{k}}{(2k)!}\Bigr)e_t
++\Bigl(\sum_{k\ge0}\frac{(-1)^{k}\langle\tilde X\rangle_{\natural}^{k}}{(2k+1)!}\Bigr)\tilde X
 =\cos\Rho+\frac{\sin\Rho}{\Rho}\tilde X,
 $$</p>
-<p>with $\Rho^{2}=-\det\tilde X$. The two series are the cosine and the cardinal sine of $\Rho$, and the identity $\Rho^{2}=-\det\tilde X=\mathrm{Sc}(\tilde X^{2})$ follows from the same characteristic polynomial.</p>
+<p>with $\Rho^{2}=-\langle\tilde X\rangle_{\natural}$. The two series are the cosine and the cardinal sine of $\Rho$, and the identity $\Rho^{2}=-\langle\tilde X\rangle_{\natural}=\mathrm{Sc}(\tilde X^{2})$ follows from the same characteristic polynomial.</p>
 <h3 id="the-verification">The Verification</h3>
 <p>The closed form is checked against the series on random traceless complex matrices to machine precision, and it is checked to reduce to the rotation and the boost formulas below. The check is exact in the special cases $\Rho=i\pi k$, where the coefficient $\frac{\sin\Rho}{\Rho}$ vanishes and the exponential is the scalar $(-1)^{k}e_t$; this is the exceptional case of §<em>What Is True and What Is Not</em>.</p>
 <h2 id="the-two-closed-forms">The Two Closed Forms</h2>
@@ -152,7 +152,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The third row is the degenerate case: a nonzero scalar-free nilpotent is exactly the sort of element whose $\Rho$ vanishes, because $\det\tilde X=0$.</p>
+<p>The third row is the degenerate case: a nonzero scalar-free nilpotent is exactly the sort of element whose $\Rho$ vanishes, because $\langle\tilde X\rangle_{\natural}=0$.</p>
 <h3 id="the-half-angle-convention">The Half-Angle Convention</h3>
 <p>The factor $\tfrac12$ in the generators of <em>The Six Generators and Their Commutators</em> is what makes the argument of the cosine one half of the physical angle. The block keeps it, because it makes the rotor a single exponential without a factor of two, and it reports the physical angle as $2\Rho$ wherever a laboratory number is needed.</p>
 <h2 id="what-the-closed-form-parametrises">What the Closed Form Parametrises</h2>
@@ -176,7 +176,7 @@ $\Rho$ (two real parameters, since it is complex) and the direction of $\hat X$ 
 <p>$$
 \tilde A=-e_t+\tilde N,\qquad \tilde N\neq0,\qquad \tilde N^{2}=0,
 $$</p>
-<p>the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\det\tilde A=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.</p>
+<p>the image of $\begin{pmatrix}-1&1\\0&-1\end{pmatrix}$. Then $\tilde A$ has unit norm, since $\langle\tilde A\rangle_{\natural}=1$, so $\tilde A\in G$. Suppose $\exp(\tilde X)=\tilde A$ with $\mathrm{Sc}\tilde X=0$.</p>
 <ul>
 <li>If $\tilde X$ has distinct eigenvalues, $\exp(\tilde X)$ has distinct eigenvalues. But $\tilde A$'s eigenvalues are equal, both $-1$. Contradiction.</li>
 <li>So $\tilde X$ has equal eigenvalues; being scalar-free, both are zero; so $\tilde X^{2}=0$ and $\exp(\tilde X)=e_t+\tilde X$. But $\tilde A=-e_t+\tilde N$ has trace $-2$, while $e_t+\tilde X$ has trace $2$. Contradiction.</li>
@@ -250,7 +250,7 @@ $$</p>
 <h3 id="the-trace-and-the-branch">The Trace and the Branch</h3>
 <p>The trace of the logarithm is fixed only modulo $2\pi i$:</p>
 <p>$$
-\operatorname{tr}\log\tilde Q=\log\det\tilde Q+2\pi i k .
+\operatorname{tr}\log\mathsf M_2(\tilde Q)=\log\langle\tilde Q\rangle_{\natural}+2\pi i k .
 $$</p>
 <p>That freedom is precisely what allows the full algebra's exponential to be onto while the scalar-free one is not: a logarithm with any trace can be shifted to trace zero only if the shift does not change the exponential, and the shift by $2\pi i\,\mathrm{diag}(1,0)$ changes it. The obstruction is at once a trace statement and a conjugation statement, and they are the same statement.</p>
 <h3 id="the-reconstruction-check">The Reconstruction Check</h3>
@@ -329,7 +329,7 @@ $$</p>
 <td>a scalar-free element of the algebra</td>
 </tr>
 <tr>
-<td>$\Rho^{2}=\mathrm{Sc}(\tilde X^{2})=-\det\tilde X$</td>
+<td>$\Rho^{2}=\mathrm{Sc}(\tilde X^{2})=-\langle\tilde X\rangle_{\natural}$</td>
 <td>the complex modulus of the generator</td>
 </tr>
 <tr>

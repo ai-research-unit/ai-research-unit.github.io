@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://ai-research-unit.github.io/sitemap_github.xml
+Sitemap: https://a-i-research-unit.gitlab.io/sitemap_gitlab.xml
+Sitemap: https://ai-research-unit.codeberg.page/sitemap_codeberg.xml
+

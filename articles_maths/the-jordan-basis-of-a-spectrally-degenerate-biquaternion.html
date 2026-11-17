@@ -70,7 +70,7 @@
       <div class="article-body">
         <h1 id="the-jordan-basis-of-a-spectrally-degenerate-biquaternion"><strong>The Jordan Basis of a Spectrally Degenerate Biquaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The biquaternion algebra carries many quadratic conditions. Two of them organise this article. The first is the determinant $\det\tilde Q=Q_t^2+B^2$, whose zero set is the null cone. The second is the square of the vector part,</p>
+<p>The biquaternion algebra carries many quadratic conditions. Two of them organise this article. The first is the determinant $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$, whose zero set is the null cone. The second is the square of the vector part,</p>
 <p>$$
 B^2=Q_x^2+Q_y^2+Q_z^2,
 $$</p>
@@ -90,8 +90,8 @@ $$</p>
 \mathcal S=\Sigma_{10}\sqcup\Sigma_{00},
 $$</p>
 <p>and each sector has its own article: <em>The N-Regular, Spectrally Degenerate Sector</em> for $\Sigma_{10}$ and <em>The N-Degenerate, Spectrally Degenerate Sector</em> for $\Sigma_{00}$. The sector articles compute the Peirce data, the generators and the comparison with the other sectors. This article treats what the two sectors have in common: the equation, the strata, the geometry, the matrix form, the construction of the Jordan basis, the multiplicative behaviour, and the way the sector sits inside the spectral partition.</p>
-<p><strong>The word degenerate refers to the spectrum only.</strong> It says that the two eigenvalues coincide, not that the element is a zero divisor and not that the element fails to be diagonalisable. Two warnings fix the reading. The scalar line $\mathbb C e_t$ lies in the sector, and its points are central, hence semisimple; the origin is diagonalisable as well. The defective elements form the <strong>Jordan part</strong> $\mathcal S^{\mathrm n}\cup\mathcal S^{\mathrm u}$ of the sector, a proper subset. Conversely, an element outside the sector can be a zero divisor: the Hermitian idempotent $\tfrac12(e_t+i\vec u)$ with $\vec u\cdot\vec u=1$ has $B^2=-\tfrac14$ and $\det\tilde Q=0$. Spectral degeneracy and degeneracy of the product are independent conditions.</p>
-<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The quaternion conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$; the product is the plain product, with unit $e_t$. The <strong>determinant</strong> is $\det\tilde Q=Q_t^2+B^2$. A <strong>sector</strong> is one of the two halves selected by one condition; a <strong>sector</strong> is one of the four intersections $\Sigma_{ij}$, with $i=1$ for $\det\tilde Q\neq0$ and $i=0$ for $\det\tilde Q=0$, and $j=1$ for $B^2\neq0$ and $j=0$ for $B^2=0$.</p>
+<p><strong>The word degenerate refers to the spectrum only.</strong> It says that the two eigenvalues coincide, not that the element is a zero divisor and not that the element fails to be diagonalisable. Two warnings fix the reading. The scalar line $\mathbb C e_t$ lies in the sector, and its points are central, hence semisimple; the origin is diagonalisable as well. The defective elements form the <strong>Jordan part</strong> $\mathcal S^{\mathrm n}\cup\mathcal S^{\mathrm u}$ of the sector, a proper subset. Conversely, an element outside the sector can be a zero divisor: the Hermitian idempotent $\tfrac12(e_t+i\vec u)$ with $\vec u\cdot\vec u=1$ has $B^2=-\tfrac14$ and $\det\mathsf{M}_2(\tilde Q)=0$. Spectral degeneracy and degeneracy of the product are independent conditions.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on the basis $e_t,\vec e_x,\vec e_y,\vec e_z$, of complex dimension four and real dimension eight, with $\vec e_x\vec e_y=\vec e_z$, $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$, and central scalar imaginary $i$. An element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$. The quaternion conjugation is $\tilde Q^{\natural}=Q_t-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_t}-\overline{\vec Q}$; the product is the plain product, with unit $e_t$. The <strong>determinant</strong> is $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$. A <strong>sector</strong> is one of the two halves selected by one condition; a <strong>sector</strong> is one of the four intersections $\Sigma_{ij}$, with $i=1$ for $\det\mathsf{M}_2(\tilde Q)\neq0$ and $i=0$ for $\det\mathsf{M}_2(\tilde Q)=0$, and $j=1$ for $B^2\neq0$ and $j=0$ for $B^2=0$.</p>
 <h2 id="definition-and-characterisation">Definition and Characterisation</h2>
 <p><strong>Definition.</strong> The <strong>spectrally degenerate sector</strong> is</p>
 <p>$$
@@ -120,16 +120,16 @@ $$</p>
 <p><strong>The determinant is not an independent condition on the sector: it is the square of the scalar part.</strong></p>
 <p><strong>Theorem (the determinant on the sector).</strong> For $\tilde Q\in\mathcal S$,</p>
 <p>$$
-\det\tilde Q=Q_t^2.
+\det\mathsf{M}_2(\tilde Q)=Q_t^2.
 $$</p>
-<p><em>Proof.</em> The determinant is $Q_t^2+B^2$, and $B^2=0$ on the sector. ∎</p>
+<p><em>Proof.</em> The determinant of the image is $Q_t^2+B^2$, and $B^2=0$ on the sector. ∎</p>
 <p><strong>Corollary (the sector splits by the scalar part).</strong> The scalar part cuts $\mathcal S$ into exactly two halves,</p>
 <p>$$
 \Sigma_{10}=\mathcal S\setminus\mathcal N=\{Q_t\neq0\},\qquad
 \Sigma_{00}=\mathcal S\cap\mathcal N=\{Q_t=0\},
 $$</p>
-<p>and on the sector the three conditions "$\det\tilde Q\neq0$", "$Q_t\neq0$" and "$\tilde Q$ is invertible with repeated eigenvalue" are equivalent.</p>
-<p><em>Proof.</em> By the theorem, $\det\tilde Q=Q_t^2$. A complex square vanishes exactly when its argument does. The last equivalence is the criterion of <em>Zero Divisors and Invertibles</em>, which identifies $\det\tilde Q\neq0$ with invertibility. ∎</p>
+<p>and on the sector the three conditions "$\det\mathsf{M}_2(\tilde Q)\neq0$", "$Q_t\neq0$" and "$\tilde Q$ is invertible with repeated eigenvalue" are equivalent.</p>
+<p><em>Proof.</em> By the theorem, $\det\mathsf{M}_2(\tilde Q)=Q_t^2$. A complex square vanishes exactly when its argument does. The last equivalence is the criterion of <em>Zero Divisors and Invertibles</em>, which identifies $\det\mathsf{M}_2(\tilde Q)\neq0$ with invertibility. ∎</p>
 <p><strong>Corollary (both kinds of element).</strong> The sector contains units and zero divisors. Its unit half is $\Sigma_{10}$; its zero-divisor half is $\Sigma_{00}\setminus\{0\}$, the nilpotent stratum. Hence spectral degeneracy is not a form of non-invertibility: every element of $\Sigma_{10}$ is invertible, with inverse</p>
 <p>$$
 \tilde Q^{-1}=Q_t^{-1}\left(e_t-\frac{\vec Q}{Q_t}\right).
@@ -155,7 +155,7 @@ $$</p>
 <th>$m_{\tilde Q}$</th>
 <th>$\operatorname{rank}L_{\tilde Q}$</th>
 <th>centraliser</th>
-<th>$\det$</th>
+<th>$\det\mathsf{M}_2$</th>
 </tr>
 </thead>
 <tbody>
@@ -633,7 +633,7 @@ $$</p>
 <p>$$
 u_1u_2=e_t+\bigl(2\vec e_x+i\vec e_y+i\vec e_z\bigr)+\bigl(-e_t-\vec e_x-i\vec e_y-i\vec e_z\bigr)=\vec e_x,
 $$</p>
-<p>which has $B^2=1$ and $\det\tilde Q=1$: it lies in the doubly regular sector $\Sigma_{11}$, outside the sector. ∎</p>
+<p>which has $B^2=1$ and $\det\mathsf{M}_2(\tilde Q)=1$: it lies in the doubly regular sector $\Sigma_{11}$, outside the sector. ∎</p>
 <p><strong>Remark (the unit half is not a group).</strong> The product of two unipotents need not be unipotent, as the proposition shows. The unit half $\Sigma_{10}$ is therefore a union of similarity orbits closed under inversion, not a subgroup of $\mathbb{B}^\times$. The scalar line minus the origin is a subgroup, and the unipotent stratum is a single orbit for each scalar part, but the two do not compose within the sector.</p>
 <p><strong>Proposition (the truncated exponential).</strong> Let $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$. Then, for every complex $\theta$,</p>
 <p>$$
@@ -646,8 +646,8 @@ $$</p>
 <h2 id="relation-to-the-spectrally-regular-sector">Relation to the Spectrally Regular Sector</h2>
 <p>The spectrally regular sector is the complement $\mathbb{B}\setminus\mathcal S=\{B^2\neq0\}$. It is open and dense, and it splits into the two sectors</p>
 <p>$$
-\Sigma_{11}=\{\det\tilde Q\neq0,\ B^2\neq0\},\qquad
-\Sigma_{01}=\{\det\tilde Q=0,\ B^2\neq0\}.
+\Sigma_{11}=\{\det\mathsf{M}_2(\tilde Q)\neq0,\ B^2\neq0\},\qquad
+\Sigma_{01}=\{\det\mathsf{M}_2(\tilde Q)=0,\ B^2\neq0\}.
 $$</p>
 <p>On it the eigenvalues are distinct, the discriminant is non-zero, the root $\vec{Ζ}=-i\vec Q/B$ exists, and the eigenbasis of <em>The Eigenbasis of a Spectrally Regular Biquaternion</em> is constructed. The root and the eigenbasis do not cross the boundary; the defective part of the sector has the Jordan basis instead, selected by an adapted frame. The two constructions are separated by the single equation $B^2=0$, and the passage from one to the other is the collapse of the two eigenvalues.</p>
 <p>The regular article reads its basis in a root-adapted Fourier form. There is no such reading here: the Fourier form needs the pure root $\rho=i\vec{Ζ}$ with $\rho^2=-1$, and the degenerate vector part is nilpotent. The counterpart is the truncated exponential, $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec Q)$, of §<em>Multiplication, Inversion, and the Exponential</em>.</p>
@@ -656,7 +656,7 @@ $$</p>
 <thead>
 <tr>
 <th>sector</th>
-<th>$\det$</th>
+<th>$\det\mathsf{M}_2$</th>
 <th>$B^2$</th>
 <th>complex dimension</th>
 <th>description</th>
@@ -701,7 +701,7 @@ $$</p>
 <li><strong>A flag survives, and a complement is chosen.</strong> The canonical objects are the line $\mathbb{C}\vec Q$, the plane $\vec Q^{\perp}$, the kernel–image space $\ker L_{\vec Q}=\operatorname{im}L_{\vec Q}$, and the two flags they form. A complement of the line inside the kernel is not canonical; an adapted frame supplies one.</li>
 <li><strong>A Jordan basis replaces the eigenbasis.</strong> An adapted frame supplies two idempotents and two generators, and the quadruple $\mathcal{J}(\tilde Q)$ is determined by the frame. In it the left and the right actions are each two Jordan blocks $J_2(Q_t)$, with different pairings, and every biquaternion has a unique expansion.</li>
 <li><strong>The truncated exponential survives.</strong> On the sector the exponential is polynomial, $e^{\theta\tilde Q}=e^{\theta Q_t}(e_t+\theta\vec Q)$, and it maps the whole sector into its unit half $\Sigma_{10}$.</li>
-<li><strong>The determinant is the square of the eigenvalue.</strong> On the sector $\det\tilde Q=Q_t^2$, so the determinant restricted to the sector is the partition by the scalar part, and the sector is split into an invertible element half and a zero-divisor half by one complex number.</li>
+<li><strong>The determinant is the square of the eigenvalue.</strong> On the sector $\det\mathsf{M}_2(\tilde Q)=Q_t^2$, so the determinant restricted to the sector is the partition by the scalar part, and the sector is split into an invertible element half and a zero-divisor half by one complex number.</li>
 <li><strong>Spectral degeneracy is not non-invertibility.</strong> $\Sigma_{10}$ consists of invertibles; the scalar line is semisimple; only the Jordan part is defective. The sector is the discriminant locus, not the zero-divisor set and not the set of non-diagonalisable elements.</li>
 <li><strong>The sector is not a subalgebra.</strong> It is a cone closed under scalars and, on its unit half, under inversion; it is closed under neither addition nor multiplication, and the exponential of a nilpotent is a unipotent outside the zero-divisor half.</li>
 </ul>
@@ -774,7 +774,7 @@ $$</p>
 <p><strong>The scalar line.</strong> For $\vec Q=0$ the element is $\tilde Q=Q_te_t$ and central. Every pair commutes with it, $\mathsf M_{\tilde\Pi}(\tilde Q)=Q_tI$, and every couple is a pair of eigenvectors. No pair is distinguished and no basis is canonical: every basis of $\mathbb{B}$ is an eigenbasis.</p>
 <h2 id="summary">Summary</h2>
 <p>The spectrally degenerate sector is the set $\mathcal S=\{B^2=0\}$ on which the two eigenvalues of a biquaternion coincide. It is a complex cone of complex dimension three and real dimension six, the product of the scalar line and the isotropic cone of the vector subspace, singular exactly along the scalar line and smooth off it. It is connected, closed, of empty interior, and it is the boundary of the sector on which the eigenbasis exists; it is also the domain of the Jordan basis.</p>
-<p>The determinant restricted to the sector is the square of the scalar part, $\det\tilde Q=Q_t^2$. This one identity splits the sector into the unit half $\Sigma_{10}=\{Q_t\neq0\}$ and the zero-divisor half $\Sigma_{00}=\{Q_t=0\}$, and it shows that spectral degeneracy and degeneracy of the product are independent: the unipotent stratum consists of invertibles with a repeated eigenvalue, while the idempotent $\tfrac12(e_t+i\vec u)$ is a zero divisor with distinct eigenvalues.</p>
+<p>The determinant restricted to the sector is the square of the scalar part, $\det\mathsf{M}_2(\tilde Q)=Q_t^2$. This one identity splits the sector into the unit half $\Sigma_{10}=\{Q_t\neq0\}$ and the zero-divisor half $\Sigma_{00}=\{Q_t=0\}$, and it shows that spectral degeneracy and degeneracy of the product are independent: the unipotent stratum consists of invertibles with a repeated eigenvalue, while the idempotent $\tfrac12(e_t+i\vec u)$ is a zero divisor with distinct eigenvalues.</p>
 <p>The sector has three strata. The scalar line is central and semisimple; the nilpotent stratum is the single similarity class of $J_2(0)$; the unipotent stratum is, for each scalar part, the single similarity class of $J_2(Q_t)$. On the two defective strata the minimal polynomial is $(X-Q_t)^2$, the eigenspace has dimension two, and there is no spectral decomposition and no eigenbasis. An adapted frame supplies a pair of idempotents and a pair of generators, and the quadruple $\mathcal{J}(\tilde Q)$ is a Jordan basis: the left and the right actions are each two blocks $J_2(Q_t)$, with different pairings, the four vectors are the matrix units of the coordinate model, and every biquaternion has a unique expansion. The exponential truncates, and the sector is closed under neither addition nor multiplication.</p>
 <p>The two constructions are compared in the table.</p>
 <div class="table-scroll"><table>
@@ -851,7 +851,7 @@ $$</p>
 <td>the square of the vector part</td>
 </tr>
 <tr>
-<td>$\det\tilde Q=Q_t^2+B^2$</td>
+<td>$\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$</td>
 <td>the determinant</td>
 </tr>
 <tr>
@@ -863,12 +863,12 @@ $$</p>
 <td>the spectrally regular sector</td>
 </tr>
 <tr>
-<td>$\mathcal N=\{\det\tilde Q=0\}$</td>
+<td>$\mathcal N=\{\det\mathsf{M}_2(\tilde Q)=0\}$</td>
 <td>the null cone, the zero-divisor set</td>
 </tr>
 <tr>
 <td>$\Sigma_{ij}$</td>
-<td>the sector with $\det\tilde Q\neq0$ for $i=1$ and $B^2\neq0$ for $j=1$</td>
+<td>the sector with $\det\mathsf{M}_2(\tilde Q)\neq0$ for $i=1$ and $B^2\neq0$ for $j=1$</td>
 </tr>
 <tr>
 <td>$\Sigma_{10}=\{Q_t\neq0\}$</td>
@@ -896,7 +896,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\mathsf{M}_2(\tilde Q)$</td>
-<td>the $2\times2$ matrix model, with $\det\tilde Q=Q_t^2+B^2$</td>
+<td>the $2\times2$ matrix model, with $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$</td>
 </tr>
 <tr>
 <td>$J_2(Q_t)$</td>
