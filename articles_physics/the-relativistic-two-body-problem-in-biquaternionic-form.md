@@ -67,7 +67,7 @@ $$
 \langle \tilde Q_2, \tilde Q_2\rangle = \langle\tilde Q_2\rangle_{\natural}.
 $$
 
-Its signature is $(3,1)$ in the basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$: the temporal direction contributes $-1$ and the three spatial directions contribute $+1$. This is the same signature as the biquaternion norm of $\mathbb{B}_{\Phi}$.
+Its inertia is $(3,1)$ in the basis $\{ie_t, \vec e_x, \vec e_y, \vec e_z\}$: the temporal direction contributes $-1$ and the three spatial directions contribute $+1$. This is the same sign pattern as the biquaternion norm of $\mathbb{B}_{\Phi}$.
 
 For the four-momenta the pairing reads
 

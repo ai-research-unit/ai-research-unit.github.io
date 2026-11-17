@@ -100,7 +100,7 @@ $$
 | $2.0$ | $0.175493633$ | $0.175493438$ | $1.1\times10^{-6}$ |
 | $3.0$ | $0.429869578$ | $0.429869376$ | $4.7\times10^{-7}$ |
 
-**The error falls as the shell moves away from the threshold**, which is the signature of a Gaussian standing in for a delta: near the threshold the dispersion is flat in the shell's own direction and the stand-in is worst. The exact form is not fitted. It is the value the box gives when the gradient and the area are inserted.
+**The error falls as the shell moves away from the threshold**, which is the mark of a Gaussian standing in for a delta: near the threshold the dispersion is flat in the shell's own direction and the stand-in is worst. The exact form is not fitted. It is the value the box gives when the gradient and the area are inserted.
 
 ## Three Shapes of Symbol, Three Weights
 

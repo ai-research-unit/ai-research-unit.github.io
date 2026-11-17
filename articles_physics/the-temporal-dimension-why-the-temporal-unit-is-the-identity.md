@@ -76,15 +76,15 @@ $$
 
 so the invariant the action carries is the norm $\sum_\mu Q_\mu^2$ and not the temporal coefficient. A boost changes the temporal coefficient $Q_t$ by mixing it with the spatial ones, which is what a Lorentz transformation of a four-vector does. The temporal coordinate is a coordinate, and it transforms; the interval built from the four coefficients is what stays.
 
-**4. The signature is carried by the coefficients and not by the invertibles.** The biquaternion norm is
+**4. The signs are carried by the coefficients and not by the invertibles.** The biquaternion norm is
 
 $$
 \langle\tilde Q\rangle_{\natural} = \tilde Q\tilde Q^{\natural} = Q_t^2 + Q_x^2 + Q_y^2 + Q_z^2 ,
 $$
 
-a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signature of the norm is not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_\eta^2$, and the difference between them — the Lorentzian sign pattern — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_\eta$ contribute $Q_\eta^2$.
+a sum of four squares of the complex coefficients, with no modulus taken and no sign inserted. Every term enters with the same sign, and the signs of the norm are not put in by hand: it comes from the values of the four complex coefficients. The temporal term enters as $Q_t^2$ and the spatial ones as $Q_\eta^2$, and the difference between them — the Lorentzian sign pattern — is carried entirely by the **coefficients**. The unit $e_t = 1$ contributes the square $Q_t^2$; the units $\vec e_\eta$ contribute $Q_\eta^2$.
 
-The four statements are one statement: **time is the scalar dimension.** It is the direction of the identity, the direction whose coefficient is the scalar part of the element, the direction the rotations fix and the boosts mix with space; and what the action carries is the norm of the four coefficients, while what carries the signature is the value placed on the temporal coefficient.
+The four statements are one statement: **time is the scalar dimension.** It is the direction of the identity, the direction whose coefficient is the scalar part of the element, the direction the rotations fix and the boosts mix with space; and what the action carries is the norm of the four coefficients, while what carries the signs is the value placed on the temporal coefficient.
 
 ## The Material Reading: Time Is Imaginary
 
@@ -98,13 +98,13 @@ with $r'_t, r_x, r_y, r_z$ real. This is the $i r'_t$ dictionary of *Algebra and
 
 Two features of the placement carry the physical reading.
 
-**The imaginary unit on the time coordinate produces the signature.** The norm of the material element is
+**The imaginary unit on the time coordinate produces the signs.** The norm of the material element is
 
 $$
 \boxed{\;\langle\tilde Q_-\rangle_{\natural} = (i r'_t)^2 + r_x^2+r_y^2+r_z^2 = -{r'_{t}}^2 + r_x^2+r_y^2+r_z^2\;},
 $$
 
-the Minkowski interval. The minus sign is not inserted into a metric: it is $i^2$, the square of the coefficient the time direction carries. In the framework the signature is algebraic, and it is the imaginary character of the temporal coefficient that carries it. This is the content of the $i r'_t$ convention that *Why Complexify Spacetime?* records: the geometry says *what* the interval is, and the placement of the $i$ says *why*.
+the Minkowski interval. The minus sign is not inserted into a metric: it is $i^2$, the square of the coefficient the time direction carries. In the framework the signs are algebraic, and it is the imaginary character of the temporal coefficient that carries it. This is the content of the $i r'_t$ convention that *Why Complexify Spacetime?* records: the geometry says *what* the interval is, and the placement of the $i$ says *why*.
 
 **The real part of the element is the spatial part.** The material element is imaginary in its scalar coefficient and real in its three vector coefficients. The real coordinates are the three spatial ones; the one imaginary coordinate is time.
 
@@ -198,11 +198,11 @@ The three readings are independent of one another and rest on one algebraic fact
 
 The base of the biquaternion algebra carries one unit unlike the others. The temporal unit is the identity, $e_t = 1$; it commutes with the whole algebra, it is fixed by the quaternion, complex and Hermitian conjugations, and it is fixed by every rotation, while the boosts carry it into the informational sector and the three vector units anticommute among themselves and each square to $-e_t$. The temporal direction is therefore the **scalar** direction — the centre of the algebra's action on itself, the direction along which an element is a number rather than a vector, the axis of the framework's rotations. This is the algebraic content of the writing $e_t = 1$, and the article's first claim is that it is a statement about the temporal dimension and not a bookkeeping choice.
 
-On the material sector the temporal coefficient is imaginary. The four-position is $i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the signature of the interval is the square of the imaginary coefficient, and the reading already recorded in *The Material Sector: Four-Vectors, Interval and Lorentz Action* is that the imaginary coefficient is the mark of a coordinate that is measured but not touched: the three real coefficients are the directions a material body extends along, and the one imaginary coefficient is the direction it is merely at.
+On the material sector the temporal coefficient is imaginary. The four-position is $i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$, the sign of the interval is the square of the imaginary coefficient, and the reading already recorded in *The Material Sector: Four-Vectors, Interval and Lorentz Action* is that the imaginary coefficient is the mark of a coordinate that is measured but not touched: the three real coefficients are the directions a material body extends along, and the one imaginary coefficient is the direction it is merely at.
 
 The framework carries a second temporal coefficient, the real $h_t$ of the informational sector, whose element is $h_t\,e_t + i(h'_{x}\,\vec e_x+h'_{y}\,\vec e_y+h'_{z}\,\vec e_z)$ — the mirror of the material one, with the $i$ on the spatial directions instead of the temporal one. The informational time $h_t$ is the single positive direction of the sector's biquaternion norm and a positive direction of its probability form, and the reading this article offers is that it is the sector's **storage direction**: the record can be touched and recovered because $h_t$ is real, and the time cannot because $i r'_t$ is imaginary. The reading is an interpretation, it inherits the informational-sector hypothesis, it adds no dynamics, and it claims no arrow.
 
-All of the mathematics the article uses is verified: $e_t$ is the identity and central, the rotations fix it while the boosts carry it into $\mathbb{B}_{\Psi}$ and the Lorentz action preserves the norm, the material element is anti-Hermitian with imaginary scalar coefficient, the informational element is Hermitian with real scalar coefficient, the biquaternion norm has the signatures claimed on the two sectors, and the Hermitian form is positive definite with the informational time positive. What remains an interpretation is what the placements are worth physically, and that is what the article's three readings state.
+All of the mathematics the article uses is verified: $e_t$ is the identity and central, the rotations fix it while the boosts carry it into $\mathbb{B}_{\Psi}$ and the Lorentz action preserves the norm, the material element is anti-Hermitian with imaginary scalar coefficient, the informational element is Hermitian with real scalar coefficient, the biquaternion norm has the signs claimed on the two sectors, and the Hermitian form is positive definite with the informational time positive. What remains an interpretation is what the placements are worth physically, and that is what the article's three readings state.
 
 ## Summary of Notation
 

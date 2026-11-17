@@ -88,7 +88,7 @@ So the pole is not reached. Whatever replaces the Standard Model does so at or b
 | $10^{16}$ GeV | $0.446$ | $25\%$ |
 | $M_{\mathrm{Pl}}$ | $0.476$ | $33\%$, still perturbative |
 
-**The physical statement.** $g_{\mathrm Y}$ grows by a third over thirty-eight e-folds. That is not a crisis; it is the signature of an abelian factor with matter that carries hypercharge. The growth is slow because $b_1$ is small and because logarithms are logarithms.
+**The physical statement.** $g_{\mathrm Y}$ grows by a third over thirty-eight e-folds. That is not a crisis; it is the mark of an abelian factor with matter that carries hypercharge. The growth is slow because $b_1$ is small and because logarithms are logarithms.
 
 **Why the pole is nevertheless worth printing.** Because it is the only place in the model where a coupling's growth is *unbounded*, and because the reason is structural rather than accidental. A non-abelian coupling has a negative $b$ because the gauge bosons themselves carry charge and screen the other way; an abelian coupling has no such self-interaction, so its $\beta$ function is the sum of matter contributions alone and is necessarily positive for the matter the model contains. Section *Why Abelian Is Different* makes that exact.
 

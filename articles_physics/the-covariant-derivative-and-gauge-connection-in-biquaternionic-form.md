@@ -58,7 +58,7 @@ Two points about the nature of $\tilde\nabla_{\mathrm{gco}}$ are worth stating b
 
 **$\tilde\nabla_{\mathrm{gco}}$ is an operator, not an algebra element.** The covariant derivative maps fields to fields; it carries the dimension of a derivative and does not belong to $\mathbb{B}$. Only its components $\tilde\nabla_{\mathrm{gco},\mu}$ are scalar operators, and even they are not elements of the algebra. The connection $\tilde{A}_{\Phi}$, by contrast, is an element of $\mathbb{B}$ — indeed of $\mathbb{B}_{\Phi}$ — and it is the *coefficient* of the new term, not the derivative itself.
 
-**The coefficients are central, so there is no ordering ambiguity.** In the abelian case each $A_\mu$ is a complex scalar and therefore commutes with every biquaternion and with the basis elements. Left and right multiplication by each coefficient $\frac{i\,ϙ}{\hbar}A_\mu$ agree, and the derivation below never has to choose an order. This is the algebraic signature of the abelian gauge group: the phase lies in the centre, and the connection has central coefficients.
+**The coefficients are central, so there is no ordering ambiguity.** In the abelian case each $A_\mu$ is a complex scalar and therefore commutes with every biquaternion and with the basis elements. Left and right multiplication by each coefficient $\frac{i\,ϙ}{\hbar}A_\mu$ agree, and the derivation below never has to choose an order. This is the algebraic mark of the abelian gauge group: the phase lies in the centre, and the connection has central coefficients.
 
 The following table collects the components and their meanings.
 

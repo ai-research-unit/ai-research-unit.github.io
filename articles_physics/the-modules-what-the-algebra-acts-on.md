@@ -309,7 +309,7 @@ The two forms therefore close the carrier in two different ways. The module comp
 
 **This is the honest reason the corpus has two sectors.** The informational sector carries the star and therefore the probabilities; the material sector carries the indefinite norm and therefore the causal signs. A single carrier read with one form would have to choose, and the algebra does not choose.
 
-**The boundary.** The Hermitian form is positive definite on the algebra, which is a strong and special property. It is not the Lorentzian form of spacetime, and the entry does not identify them: the signature of $\beta$ on the four real units is $(1,3)$, and that is a different object on the same set.
+**The boundary.** The Hermitian form is positive definite on the algebra, which is a strong and special property. It is not the Lorentzian form of spacetime, and the entry does not identify them: the inertia of $\beta$ on the four real units is $(1,3)$, and that is a different object on the same set.
 
 ### I.4.g — The Operator Acts on One Side, and the Other Side Is the Frame
 

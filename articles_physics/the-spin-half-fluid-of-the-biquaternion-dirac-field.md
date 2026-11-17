@@ -394,7 +394,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\theta_{\mathrm{phs}}$ | $S_{\tilde\Xi}/\hbar$, the spinor phase that the exponential carries |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\Sigma_{\mu\nu}$ | Spin generator of the Gordon decomposition |
-| $\varepsilon_\mu$ | Signature weight, $+1$ temporal and $-1$ spatial |
+| $\varepsilon_\mu$ | Sign weight, $+1$ temporal and $-1$ spatial |
 | $\langle\tilde Q\rangle_{\natural}$ | Quaternionic norm |
 | $\mathrm{Sc}(\tilde Q)$ | Scalar part |
 | $c$ | Speed of light in the medium |

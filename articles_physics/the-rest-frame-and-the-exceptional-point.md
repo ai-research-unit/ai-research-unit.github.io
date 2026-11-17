@@ -783,7 +783,7 @@ so the modulus exists and the word continues into a phase, a Hermitian factor an
 
 **Four symptoms, one condition.** The minimal polynomial is a square; the centraliser is the dual numbers; the two eigenspaces of the one-sided actions have dimension two each and intersect in one line; the Peirce matrix is a single block.
 
-**The operational signature is the splitting law.**
+**The operational mark is the splitting law.**
 
 $$
 \Delta=\lambda_+-\lambda_-=2i\sqrt{B^{2}},\qquad
@@ -929,4 +929,4 @@ where $\tilde X\cdot\vec\Upsilon=\sum_kX_k\Upsilon_k$ is the bilinear form. So t
 
 **Mathematics.** [The N-Regular, Spectrally Degenerate Sector](../articles_maths/the-n-regular-spectrally-degenerate-sector.html) is the source; [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html) owns the flag and the Jordan basis, and [The Spectrum](../articles_maths/the-spectrum.html) owns the discriminant and the repeated eigenvalue.
 
-**The sources of this entry.** [Four-Vectors and the Interval](four-vectors-and-the-interval.html) owns the four-momentum chart and the frequency pair. [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html) owns the reach of the three carriers, which §*The Reach of the Three Carriers* summarises. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) owns the polar word that survives here, together with the exponential and its degenerate boundary. [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html) owns the boost rotor used in §*The Rest Frame Is the Vertex of the Mass Shell*. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.
+**The sources of this entry.** [Four-Vectors and the Interval](four-vectors-and-the-interval.html) owns the four-momentum chart and the frequency pair. [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html) owns the reach of the three carriers, which §*The Reach of the Three Carriers* summarises. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) owns the polar word that survives here, together with the exponential and its degenerate boundary. [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html) owns the boost rotor used in §*The Rest Frame Is the Vertex of the Mass Shell*. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the inertias.

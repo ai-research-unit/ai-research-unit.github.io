@@ -109,7 +109,7 @@ $$
 \boxed{\;\delta E =2\,\hbar\,g\sqrt{N}\;}
 $$
 
-the **collective Rabi splitting**. The square-root enhancement is the signature of the collective coupling: it is the same $\sqrt{N}$ that appears in superradiance and in the collective Lamb shift. The result was verified numerically: for $N = 1,4,16,100$ the eigenvalue splitting of the $2\times2$ block equals $2\,\hbar\,g\sqrt{N}$ exactly.
+the **collective Rabi splitting**. The square-root enhancement is the mark of the collective coupling: it is the same $\sqrt{N}$ that appears in superradiance and in the collective Lamb shift. The result was verified numerically: for $N = 1,4,16,100$ the eigenvalue splitting of the $2\times2$ block equals $2\,\hbar\,g\sqrt{N}$ exactly.
 
 The eigenstates of the block are the **polaritons**, the symmetric and antisymmetric combinations of "photon" and "excited spin", which are the collective analogues of the dressed states of the single-spin Rabi problem.
 

@@ -44,7 +44,7 @@ which is the Dirac equation with rest mass $m = \mathcal{G}_{\mathrm{gap}}/v_F^2
 
 ### The Dirac cone
 
-The two bands meeting linearly at a Dirac point form the upper and lower halves of a **cone**; the six zone corners give six cones, of which two, labelled $K_+$ and $K_-$, are inequivalent and the rest are related by symmetry. The linear dispersion is the experimental signature of Dirac matter: it produces the half-integer quantum Hall sequence
+The two bands meeting linearly at a Dirac point form the upper and lower halves of a **cone**; the six zone corners give six cones, of which two, labelled $K_+$ and $K_-$, are inequivalent and the rest are related by symmetry. The linear dispersion is the experimental mark of Dirac matter: it produces the half-integer quantum Hall sequence
 
 $$
 \sigma_{xy} = \pm 4\left(N + \tfrac12\right)\frac{e^2}{h},
@@ -142,7 +142,7 @@ It does not supply the honeycomb lattice, the hopping $\gamma_0$, the Fermi velo
 
 2. **The spin–valley coupling.** In real materials spin–orbit coupling and intervalley scattering entangle the isospins. Whether the framework's dictionary can accommodate a term coupling the minimal ideals to a lattice label is open.
 
-3. **The Haldane and Kane–Mele masses.** These are gap terms that are not the naive staggered potential. Do they have distinguishable framework-level signatures — different members of the mass family, or genuinely different terms?
+3. **The Haldane and Kane–Mele masses.** These are gap terms that are not the naive staggered potential. Do they have distinguishable framework-level marks — different members of the mass family, or genuinely different terms?
 
 4. **The Fermi velocity.** The framework's $c$ is structural. Is $v_F\approx c/300$ a quantity the framework can only accept, or does any of its structure constrain the ratio?
 

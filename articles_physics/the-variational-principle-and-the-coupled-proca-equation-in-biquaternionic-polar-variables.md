@@ -111,7 +111,7 @@ the temporal slot of the element form's current, by the chain rule and because t
 
 **The spatial slots.** The current's spatial components are the momenta conjugate to the phase's *gradients* in the same sense, and the conservation law is the statement that the four of them form a divergence-free object. The chart adds no new content here; it relocates the object to the phase's canonical pair.
 
-**The energy–momentum in the chart.** The stress tensor's temporal slot is the Hamiltonian density, and in the chart it is the sum of the metric's quadratic form in the velocities and the mass potential. Its positivity is the positivity of the metric plus the positivity of the mass term on the material slice, and the article does not claim positivity for a general complex configuration: the metric's signature on the eight-dimensional parameter space is not established here, and it is the chart's version of the element form's open question about the trace.
+**The energy–momentum in the chart.** The stress tensor's temporal slot is the Hamiltonian density, and in the chart it is the sum of the metric's quadratic form in the velocities and the mass potential. Its positivity is the positivity of the metric plus the positivity of the mass term on the material slice, and the article does not claim positivity for a general complex configuration: the metric's signs on the eight-dimensional parameter space are not established here, and it is the chart's version of the element form's open question about the trace.
 
 **What is absent.** No spin current, for the reason the element-form companion gives: the frame's rotor is an internal rotation and not a spin density, and the free polar article exhibits the absence of a rotor bracket in the material sector. The rotor's return with the charge is the return of a frame, not of a spin.
 
@@ -138,7 +138,7 @@ the temporal slot of the element form's current, by the chain rule and because t
 
 **The Hessian.** Whether the metric $G$ on the eight-dimensional parameter space is non-degenerate everywhere on the N-regular set — and if not, where it degenerates — is not established. The article states the count and the formal second-order structure and stops there.
 
-**The metric's signature.** Positivity of the energy in the chart requires the metric's signature and the mass term's sign to cooperate. The mass term's sign is fixed on the material slice and its chart value is $r^{2}$ there; whether the general complex case has positive energy is open, and it is the chart's form of the element form's trace question.
+**The metric's signs.** Positivity of the energy in the chart requires the metric's signs and the mass term's sign to cooperate. The mass term's sign is fixed on the material slice and its chart value is $r^{2}$ there; whether the general complex case has positive energy is open, and it is the chart's form of the element form's trace question.
 
 **The field term's chart form.** The quadratic form's coefficients are not displayed. A future computation would give $G$ explicitly and would state which bracket each coefficient comes from; the article records the structure and not the table.
 

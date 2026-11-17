@@ -164,7 +164,7 @@ This is not an accident of the vacuum state; it is the algebra's statement about
 
 Two interpretations of the same fact are worth recording.
 
-**The vacuum and its complement are the two null directions.** Because $\tilde\Pi_+ + \tilde\Pi_- = e_t$ with both null, the identity is written as the sum of two elements each of vanishing biquaternion norm. In signature language, $e_t$ is a positive-norm element decomposed along two null directions whose sum is timelike — the algebraic shape of a light-cone frame. The pair $\{\tilde\Pi_+, \tilde\Pi_-\}$ plays for the state space the role that the pair of null vectors plays for a Lorentz frame.
+**The vacuum and its complement are the two null directions.** Because $\tilde\Pi_+ + \tilde\Pi_- = e_t$ with both null, the identity is written as the sum of two elements each of vanishing biquaternion norm. In sign language, $e_t$ is a positive-norm element decomposed along two null directions whose sum is timelike — the algebraic shape of a light-cone frame. The pair $\{\tilde\Pi_+, \tilde\Pi_-\}$ plays for the state space the role that the pair of null vectors plays for a Lorentz frame.
 
 **The vacuum carries a definite phase direction.** The idempotent $\tilde\Pi(\vec u)$ is determined by the *unit* vector $\vec u$, and the null-cone condition $\langle\tilde\Pi(\vec u)\rangle_{\natural}=0$ is satisfied for every $\vec u$; the cone is the union of the one-dimensional rays that the idempotents single out. Choosing a vacuum is choosing a null direction, and different vacua are related by the rotations that move one null direction into another. This is made precise in the next two sections.
 

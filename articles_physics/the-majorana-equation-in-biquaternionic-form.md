@@ -93,7 +93,7 @@ The two lines are the equation of the display above, split; nothing is added. Ea
 | $k_m\,\bar{\tilde{Ξ}}$, a bare coefficient conjugation | $0$ | $8$ |
 | $k_m\,\tilde{Ξ}^*$, the star | $0$ | $4$ |
 
-Only the first row has its solutions on the ordinary shell. The second is the equation the series retired, and its spacelike family is the signature of a pairing built on the algebra's own conjugation rather than on a coupling of the two letters (*Antilinear Structure and the Two Kinds of Mass*, §*The Retired Equation: The Diagnosis Is the Dispersion*). The third row is no better on the timelike shell and has half the spacelike family.
+Only the first row has its solutions on the ordinary shell. The second is the equation the series retired, and its spacelike family is the sign pattern of a pairing built on the algebra's own conjugation rather than on a coupling of the two letters (*Antilinear Structure and the Two Kinds of Mass*, §*The Retired Equation: The Diagnosis Is the Dispersion*). The third row is no better on the timelike shell and has half the spacelike family.
 
 **What the table says and does not say.** It does not say that an antilinear term is unphysical: the mass term of the first row is antilinear and its solutions are timelike. It says that the antilinearity must come with the right multiplication, because the right multiplication is what makes the term a coupling between the two letters; a conjugation alone pairs the field with a field of the same letter, and that pairing has no timelike solution. The discriminator is the slot, and the table is the measurement of the slot.
 
@@ -283,4 +283,4 @@ A field equal to its conjugate carries no continuous phase, and a continuous pha
 - E. Marsch, "On the Majorana equation: relations between its complex two-component and real four-component eigenfunctions," *ISRN Mathematical Physics* **2012** (2012) 760239, for the two-component and four-component eigenfunctions and their relation.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the Lounesto classification and the class-5 (ELKO-type) field with the charge-conjugation eigenvalue $-1$.
 - D. V. Ahluwalia and D. Grumiller, "Spin-half fermions with mass dimension one: theory, phenomenology, and dark matter," *Journal of Cosmology and Astroparticle Physics* **0507** (2005) 012, for the ELKO field and its properties.
-- H. B. Lawson and M.-L. Michelsohn, *Spin Geometry* (Princeton, 1989), and P. Budinich and A. Trautman, *The Spinorial Chessboard* (Springer, 1988), for the real, complex and quaternionic types of Clifford modules and the reality of the generators by signature.
+- H. B. Lawson and M.-L. Michelsohn, *Spin Geometry* (Princeton, 1989), and P. Budinich and A. Trautman, *The Spinorial Chessboard* (Springer, 1988), for the real, complex and quaternionic types of Clifford modules and the reality of the generators by their signs.

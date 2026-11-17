@@ -71,7 +71,7 @@ $$
 R(2\pi)=\exp(\pi\,n\cdot e)=\cos\pi+(n\cdot e)\sin\pi=-e_t ,
 $$
 
-the covering element that the spin–statistics companion identifies as the half-integer signature, and the same $-e_t$ that appears as the nontrivial element of the double cover. The equality
+the covering element that the spin–statistics companion identifies as the half-integer mark, and the same $-e_t$ that appears as the nontrivial element of the double cover. The equality
 
 $$
 \mathcal T^2=R(2\pi)
@@ -194,7 +194,7 @@ H_{\text{field}}=-\vec\mu\cdot\vec B ,
 \vec\mu=\gamma\vec S ,
 $$
 
-and it breaks the symmetry because the angular momentum is $\mathcal T$-odd while the field is $\mathcal T$-invariant. In the module language the perturbation is a term along a chosen axis, and the axis is one of the three imaginary directions of the algebra: the field singles out an invertible element $n$ and hence a particular $e_n$, and the pair $\{v,\mathcal Tv\}$ is split by an amount proportional to the field. This is the empirical signature of the classification: a Kramers pair's splitting in a field is the statement that no $\mathcal T$-invariant perturbation can lift it.
+and it breaks the symmetry because the angular momentum is $\mathcal T$-odd while the field is $\mathcal T$-invariant. In the module language the perturbation is a term along a chosen axis, and the axis is one of the three imaginary directions of the algebra: the field singles out an invertible element $n$ and hence a particular $e_n$, and the pair $\{v,\mathcal Tv\}$ is split by an amount proportional to the field. This is the empirical mark of the classification: a Kramers pair's splitting in a field is the statement that no $\mathcal T$-invariant perturbation can lift it.
 
 **The linear splitting, and why it is linear.** The two facts — an invariant perturbation cannot split a pair, an odd one splits it linearly — follow from the transformation of the perturbation. Under $\mathcal T$ the spin operators are odd,
 

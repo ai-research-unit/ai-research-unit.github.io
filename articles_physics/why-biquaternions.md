@@ -6,7 +6,7 @@ An element of the biquaternion algebra holds eight real numbers. The claim of th
 
 The claim is about pertinence, not about novelty. The framework predicts no number that the standard formalism does not predict, and [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html) records the parity domain by domain. What the algebra offers instead is economy of one specific kind. One element is the point, one element is the field, one element is the derivative, and the multiplication is the algebra's own. No matrix, no column, no minimal ideal, no projector and no basis enters the equations, and an array appears only as a display of an element.
 
-The economy appears first in relativity, where the signature of spacetime is a fact about $i^{2}$ and the metric is read off the multiplication table. It appears next in wave mechanics, where the Schrödinger and Klein–Gordon equations are one equation read at two speeds. It pays best in the Dirac field, where the spin-half fluid that Takabayasi, Bohm and Hestenes each built by hand comes out as a factorisation of one element.
+The economy appears first in relativity, where the signs of spacetime are a fact about $i^{2}$ and the metric is read off the multiplication table. It appears next in wave mechanics, where the Schrödinger and Klein–Gordon equations are one equation read at two speeds. It pays best in the Dirac field, where the spin-half fluid that Takabayasi, Bohm and Hestenes each built by hand comes out as a factorisation of one element.
 
 The article follows that order. It sets out the algebra, then relativity, then wave mechanics, then the Dirac field. It then compares the Dirac result with what the other traditions found, states what the algebra reaches and where it stops, and names the price. The strongest objection — that this is a reformulation and nothing more — is answered last, because it can only be answered after the account of what the reformulation does.
 
@@ -466,7 +466,7 @@ The corpus articles, in the order in which this article uses them:
 - [Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html). States, entropy, and the null cone.
 - [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html). The anticommutator and the antiparticles.
 - [What the Biquaternion Algebra Cannot Do](what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html). O17 on the declared direction and O22 on the chirality-blindness of multiplication.
-- [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html). The parity list, and what a signature would have to be.
+- [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html). The parity list, and what a test would have to be.
 - [Conceptual Conventions](conceptual-conventions.html). The status of the $2+2$ split and of the algebra's own structures.
 - [The Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-regular-biquaternion.html). The word, its domain and its four factors.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html). The two-factor decomposition that survives on the cone.

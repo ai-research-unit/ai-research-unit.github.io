@@ -23,7 +23,7 @@ Four things follow, and they organise the article.
 
 ## Kinematics: What Is Measured
 
-**The metric, stated once.** $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one this signature gives. No vertex is computed in this article, so the incoming-momentum convention of [the QCD article](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html) does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.
+**The metric, stated once.** $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one these signs give. No vertex is computed in this article, so the incoming-momentum convention of [the QCD article](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html) does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.
 
 **The process and the variables.** An electron of momentum $k_\Phi$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries
 
@@ -98,7 +98,7 @@ $$
 
 with no residual $Q^2$ dependence at all. This is Bjorken scaling, and its content is that the probe resolves *pointlike, non-interacting* constituents: if the constituents were extended objects with a form factor, $F_2$ would fall with $Q^2$ the way the elastic form factor does, and if they interacted during the collision the impulse approximation would fail and the $Q^2$ dependence would be strong.
 
-**The measured statement, stated carefully.** Scaling holds to within about ten per cent over the range $2\lesssim Q^2\lesssim 20$ GeV$^2$, and beyond that the deviation is resolved rather than absent — it grows, but it grows logarithmically. The word *logarithmically* is the whole of the next-to-last section: the violations are not power-law, they are slow, and a slow violation is the signature of a dimensionless coupling that runs rather than of a length scale that is being resolved.
+**The measured statement, stated carefully.** Scaling holds to within about ten per cent over the range $2\lesssim Q^2\lesssim 20$ GeV$^2$, and beyond that the deviation is resolved rather than absent — it grows, but it grows logarithmically. The word *logarithmically* is the whole of the next-to-last section: the violations are not power-law, they are slow, and a slow violation is the mark of a dimensionless coupling that runs rather than of a length scale that is being resolved.
 
 **Why scaling is a statement about dimension counting and not about dynamics.** If the constituents are pointlike and free, the only scale in the problem is $Q$, so a dimensionless cross section can depend on $Q^2$ only through the ratio $Q^2/\mu^2$ with $\mu$ any other scale; with no other scale, there is nothing to form a ratio with, and the cross section must be $Q^2$-independent. The argument is dimensional analysis, and it is why scaling's failure *is* the discovery of a scale: the violations measure $\Lambda_{\mathrm{QCD}}$ in the same way that a form factor measures a radius.
 

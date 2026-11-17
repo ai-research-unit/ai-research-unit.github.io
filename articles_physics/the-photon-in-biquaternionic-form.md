@@ -17,7 +17,7 @@ The negative parts are equally specific.
 4. **No ladder.** There is no bosonic creation or annihilation operator in $\mathbb{B}$ (the scalar part of a commutator vanishes, while $2\,\mathrm{Sc}(e_t)=2$), so the photon number operator $N_\gamma$ is not an element of the algebra. The ladder algebra is imported, as *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* records.
 5. **No gauge-fixing principle.** The algebra offers no reason to prefer one gauge to another, so although the transverse plane is native, the *reduction* from four polarizations to two is imposed from outside.
 6. **Masslessness is inserted.** Nothing in the algebra fixes $m=0$. Masslessness is what makes helicity Lorentz invariant and what makes the third helicity unphysical; the framework represents the massive (Proca) alternative as readily as the massless one.
-7. **Interactions, and any empirical signature that would distinguish the framework from standard electrodynamics, lie outside** the free field treated here.
+7. **Interactions, and any empirical test that would distinguish the framework from standard electrodynamics, lie outside** the free field treated here.
 
 A second, less comfortable point belongs in the introduction. Almost every statement the framework makes about "the photon" is a statement about a general massless spin-one field. The algebra does not single the photon out; it describes a massless gluon in the abelian idealization, a massive Proca field if a mass is added, and any other spin-one field by the same objects.
 

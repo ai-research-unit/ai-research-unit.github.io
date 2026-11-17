@@ -14,7 +14,7 @@
 
 **Position in the block.** This is the variational companion of [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) and the eighth and last of the articles of this layer. It is the only one in which the coupling degrades a statement rather than adding a force, and the only one in which the free rung's cleanest result is lost.
 
-**Conventions.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signature, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
+**Conventions.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
 
 ## The Action in the Fluid Variables
 

@@ -435,7 +435,7 @@ so the preferred frame is not put in by hand in the final form, it is the algebr
 
 4. **The interaction with a preferred frame.** If $u_\mu$ is physical, the construction singles out a preferred direction in the vacuum. Does the resulting theory violate Lorentz invariance observably, or is $k$ a gauge artifact of the description? The source does not say.
 
-5. **Extension beyond four dimensions.** The construction uses the Lorentzian four-dimensional signature essentially — the source notes that a biquaternion description would not work if the dimension and signature were different. What happens at the next triality dimension, eight, where the algebra is the octonions and the vector and the two part spaces coincide, is the Cartan case the corpus records in *Triality and Spin(8) with Inner Conjugation*.
+5. **Extension beyond four dimensions.** The construction uses the Lorentzian four-dimensional signs essentially — the source notes that a biquaternion description would not work if the dimension and the signs were different. What happens at the next triality dimension, eight, where the algebra is the octonions and the vector and the two part spaces coincide, is the Cartan case the corpus records in *Triality and Spin(8) with Inner Conjugation*.
 
 These questions are open.
 

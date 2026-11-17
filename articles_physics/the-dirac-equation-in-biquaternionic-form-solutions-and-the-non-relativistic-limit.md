@@ -129,7 +129,7 @@ $$
 \langle\tilde w_\pm,\tilde v_{\pm'}\rangle_{\mathrm D}=0 .
 $$
 
-The minus sign of the negative branch is the standard signature, and the vanishing of the cross terms at equal momentum is the statement that the two branches are orthogonal under the twisted pairing. The Hermitian products are a separate family, and their diagonal values are
+The minus sign of the negative branch is the standard sign, and the vanishing of the cross terms at equal momentum is the statement that the two branches are orthogonal under the twisted pairing. The Hermitian products are a separate family, and their diagonal values are
 
 $$
 2\,\mathrm{Sc}\!\left(\tilde w_\pm^{*}\tilde w_{\pm'}\right)=2E\,\delta_{\pm\pm'},\qquad

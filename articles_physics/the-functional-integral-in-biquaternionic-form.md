@@ -14,7 +14,7 @@ The contributions divide cleanly, and the division is the content of the article
 $$
 \langle \tilde{Q},\tilde{Q}_1\rangle = 2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
-which is the positive-definite Hilbert–Schmidt form on the algebra; the signature split belongs to the biquaternion norm $\langle\cdot\rangle_{\natural}$, not to this pairing. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ the quadratic action is
+which is the positive-definite Hilbert–Schmidt form on the algebra; the sign split belongs to the biquaternion norm $\langle\cdot\rangle_{\natural}$, not to this pairing. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ the quadratic action is
 $$
 S[\tilde{Ξ}] = \int d^4r\; \Big\langle \tilde{Ξ}, W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle,
 \qquad

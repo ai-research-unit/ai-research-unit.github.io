@@ -162,7 +162,7 @@ which is manifestly non-negative for $B_{\mathrm{frc}}\ge0$. **The article uses 
 
 ### Numbers
 
-**The friction was evaluated once, at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $\rho_{\mathrm{num}}=1$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$.** The friction force is $0.7\times0.3\times0.1\times0.2=0.004\,200\,000\,000$ and the production is $0.004\,200\,000\,000\times0.2/2=0.000\,420\,000\,000$. **Both are positive, and the production scales as $w^{2}$** — doubling the relative speed quadruples it, which is the signature of a friction that is linear in the force and quadratic in the rate.
+**The friction was evaluated once, at $\rho_{\mathrm{num,sup}}=0.7$, $\rho_{\mathrm{num,nrm}}=0.3$, $\rho_{\mathrm{num}}=1$, $B_{\mathrm{frc}}=0.1$, $w=0.2$ and $T=2$.** The friction force is $0.7\times0.3\times0.1\times0.2=0.004\,200\,000\,000$ and the production is $0.004\,200\,000\,000\times0.2/2=0.000\,420\,000\,000$. **Both are positive, and the production scales as $w^{2}$** — doubling the relative speed quadruples it, which is the mark of a friction that is linear in the force and quadratic in the rate.
 
 **The check that a reader can do on the same numbers.** With $w=0$ both vanish; with $x_{\mathrm{nrm}}=0$ both vanish; with $T\to\infty$ the production vanishes while the force does not. **The four limits are the four ways the display can degenerate, and each has a physical reading**: no relative motion, no normal component, no thermal coupling, no temperature.
 
@@ -192,7 +192,7 @@ $$
 \omega_{\mathrm{Jsn}}=\frac{\mu_{\mathrm{chm,nrm}}-\mu_{\mathrm{chm,sup}}}{\hbar},
 $$
 
-the AC case. **The frequency is fixed by the chemical potential difference and by nothing else**, and it is the cleanest experimental signature that the two components are two states of one field rather than two fluids.
+the AC case. **The frequency is fixed by the chemical potential difference and by nothing else**, and it is the cleanest experimental mark that the two components are two states of one field rather than two fluids.
 
 **A number, for scale.** With a chemical potential difference of $1\,\mathrm{meV}$, $\omega_{\mathrm{Jsn}}=1.5193\times10^{12}\,\mathrm{s^{-1}}$, using $\hbar=6.582\,119\,569\times10^{-16}\,\mathrm{eV\,s}$. At $1\,\mu\mathrm{eV}$ the frequency is $1.5193\times10^{9}\,\mathrm{s^{-1}}$ and at $1\,\mathrm{neV}$ it is $1.5193\times10^{6}\,\mathrm{s^{-1}}$; **the three span the range from microwave to radio**, which is why the effect is measured electrically.
 

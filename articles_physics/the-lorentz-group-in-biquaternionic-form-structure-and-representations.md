@@ -213,7 +213,7 @@ B(\vec e_j,\vec e_\eta)=-16\,\delta_{j\eta},\qquad
 B(B_{\mathrm{boost},j},B_{\mathrm{boost},\eta})=+16\,\delta_{j\eta},\qquad
 B(\vec e_j,B_{\mathrm{boost},\eta})=0,
 $$
-(computed from $B(M,N)=\operatorname{tr}(\operatorname{ad}M\,\operatorname{ad}N)$ in this algebra). Its signature is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.
+(computed from $B(M,N)=\operatorname{tr}(\operatorname{ad}M\,\operatorname{ad}N)$ in this algebra). Its inertia is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.
 
 ## The Two $\mathrm{SU}(2)$ Halves
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Lorentz algebra has six generators and fifteen independent brackets. This article writes them, checks the table, extracts the structure constants, computes the invariant bilinear form and its signature, and defines the quadratic Casimir. It closes with the question a reader will ask on seeing the table for the third time: why does the same table appear in every display?
+The Lorentz algebra has six generators and fifteen independent brackets. This article writes them, checks the table, extracts the structure constants, computes the invariant bilinear form and its inertia, and defines the quadratic Casimir. It closes with the question a reader will ask on seeing the table for the third time: why does the same table appear in every display?
 
 The answer is that the table is a statement about the algebra and not about a representation. Every faithful representation reproduces it, and the differences between the displays are differences of basis, of dimension and of real form, never of bracket.
 
@@ -48,7 +48,7 @@ with the rapidity $\theta_{\mathrm{rpd}}$ and $\tanh\theta_{\mathrm{rpd}}=v/c$.
 | exponential is | a rotation, compact, periodic | a boost, non-compact, monotone |
 | twice the scalar part of the square | $-\tfrac12$ | $+\tfrac12$ |
 
-The last row is the infinitesimal form of the difference between a closed and an open direction, and it is the row that produces the signature of the invariant form.
+The last row is the infinitesimal form of the difference between a closed and an open direction, and it is the row that produces the inertia of the invariant form.
 
 ### Why These and Not Others
 
@@ -116,9 +116,9 @@ The second and third blocks say that the boosts are a three-dimensional vector s
 
 Had the third block read $[K_i,K_j]=+J_k$, the table would be the table of $\mathfrak{so}(4)$, the Euclidean rotation algebra of four dimensions. Both tables are tables of *real forms of the same complex algebra*, and the sign is what decides which real form. A reader who "fixes" the sign to remove the minus gets a compact group and a positive-definite metric, and no light cone.
 
-### The Signature Check, Done Independently
+### The Inertia Check, Done Independently
 
-The identification is confirmed by the invariant form rather than by the table's shape. The form's signature is $(3,3)$ for this table and $(6,0)$ for the version with the plus sign, and the two are distinguishable by a computation that does not use the identification at all.
+The identification is confirmed by the invariant form rather than by the table's shape. The form's inertia is $(3,3)$ for this table and $(6,0)$ for the version with the plus sign, and the two are distinguishable by a computation that does not use the identification at all.
 
 ## The Invariant Bilinear Form
 
@@ -160,11 +160,11 @@ $$
 (-4)^{3}(+4)^{3}=-4096,
 $$
 
-and its eigenvalues are $\pm4$, three of each. The form is non-degenerate and its signature is $(3,3)$.
+and its eigenvalues are $\pm4$, three of each. The form is non-degenerate and its inertia is $(3,3)$.
 
-### What the Signature Means
+### What the Inertia Means
 
-A non-degenerate form of inertia $(3,3)$ on a six-dimensional real Lie algebra is the signature of $\mathfrak{so}(1,3)$ and of no other form in this family. The three negative directions are the rotations and the three positive ones the boosts, and the split is not a choice: it is the Cartan decomposition, computed from the form.
+A non-degenerate form of inertia $(3,3)$ on a six-dimensional real Lie algebra is the inertia of $\mathfrak{so}(1,3)$ and of no other form in this family. The three negative directions are the rotations and the three positive ones the boosts, and the split is not a choice: it is the Cartan decomposition, computed from the form.
 
 The physical statement is that the group's invariant form has a Lorentzian sign pattern because the algebra is the Lorentz algebra. The three compact directions are the ones that close, and the three non-compact ones are the ones that do not.
 
@@ -252,7 +252,7 @@ The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact,
 
 ## Further Reading
 
-- S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978 — the Killing form, its signature, and the Cartan decomposition read from it.
+- S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978 — the Killing form, its inertia, and the Cartan decomposition read from it.
 - B. C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd ed., Springer, 2015 — structure constants, the Jacobi identity and the Casimir element of the universal enveloping algebra.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1, Cambridge University Press, 1995, §2.4 — the Lorentz generators, the commutators in the physicist's Hermitian convention, and the dictionary of signs.
 - W. Greiner and B. Müller, *Quantum Mechanics: Symmetries*, 2nd ed., Springer, 1994 — the same table derived in the rotation-plus-boost form with every sign displayed.

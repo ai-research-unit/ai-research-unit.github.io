@@ -538,7 +538,7 @@ $$
 | centraliser | all of $\mathbb{B}$ | $\mathbb{C}[\tilde Q]$, the dual numbers |
 | response to a linear perturbation | linear | square root |
 
-**The square-root law is the observable signature.**
+**The square-root law is the observable mark.**
 
 $$
 B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec Q_1)}\,\bigl(1+O(\epsilon)\bigr),\qquad \lambda_\pm(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon),

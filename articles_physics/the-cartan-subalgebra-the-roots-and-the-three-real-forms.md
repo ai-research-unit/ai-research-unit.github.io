@@ -224,11 +224,11 @@ the real form in which both summands are split. Its Cartan is entirely non-compa
 | $\mathfrak{so}(1,3)$ | $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}$ | three, the $J$ | $(3,3)$ | one compact, one not | no |
 | $\mathfrak{so}(2,2)$ | $\mathfrak{sl}(2,\mathbb{R})\oplus\mathfrak{sl}(2,\mathbb{R})$ | two, the two rotations | $(4,2)$ | split | no |
 
-This table is the answer to a question that the root system cannot answer. The root system of all three is $A_1\times A_1$; the table's rows differ in the real slice, and the differences are visible in the signature of the Killing form and in which Cartan directions are compact.
+This table is the answer to a question that the root system cannot answer. The root system of all three is $A_1\times A_1$; the table's rows differ in the real slice, and the differences are visible in the inertia of the Killing form and in which Cartan directions are compact.
 
 ### The Fourth Real Form, for Completeness
 
-The list of real forms of $A_1\times A_1$ contains one more algebra, $\mathfrak{su}(2)\oplus\mathfrak{sl}(2,\mathbb{R})$, whose Killing signature is $(2,4)$. It is not of the form $\mathfrak{so}(p,q)$ with $p+q=4$, so it is not the isometry algebra of any metric on a four-dimensional real vector space, and the block does not use it. The menu's "three real forms" are the three $\mathfrak{so}(p,q)$'s, and they are the three metrics on $\mathbb{R}^{4}$ up to overall sign.
+The list of real forms of $A_1\times A_1$ contains one more algebra, $\mathfrak{su}(2)\oplus\mathfrak{sl}(2,\mathbb{R})$, whose Killing inertia is $(2,4)$. It is not of the form $\mathfrak{so}(p,q)$ with $p+q=4$, so it is not the isometry algebra of any metric on a four-dimensional real vector space, and the block does not use it. The menu's "three real forms" are the three $\mathfrak{so}(p,q)$'s, and they are the three metrics on $\mathbb{R}^{4}$ up to overall sign.
 
 ## The Compact and the Split Picture
 
@@ -295,8 +295,8 @@ The complexified Lorentz algebra has a two-dimensional Cartan subalgebra, four r
 ## Further Reading
 
 - J. E. Humphreys, *Introduction to Lie Algebras and Representation Theory*, Springer, 1972 — Cartan subalgebras, root systems, Weyl groups and real forms, with $A_1\times A_1$ worked out.
-- S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978 — real forms of a complex semisimple algebra, the classification of $\mathfrak{so}(p,q)$, and the Killing form's signature.
+- S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978 — real forms of a complex semisimple algebra, the classification of $\mathfrak{so}(p,q)$, and the Killing form's inertia.
 - A. Knapp, *Lie Groups Beyond an Introduction*, 2nd ed., Birkhäuser, 2002 — real forms, conjugations, and the relation between compact and non-compact pictures.
 - R. Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications*, Wiley, 1974 — the $\mathfrak{so}(4)$, $\mathfrak{so}(1,3)$, $\mathfrak{so}(2,2)$ triad in the physicist's notation.
-- *The Six Generators and Their Commutators* — the table and the Killing form whose signature separates the forms.
+- *The Six Generators and Their Commutators* — the table and the Killing form whose inertia separates the forms.
 - *The Exponential Map from Algebra to Group* — the group-level consequences of compactness and its absence.

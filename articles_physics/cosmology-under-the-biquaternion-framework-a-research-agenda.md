@@ -52,7 +52,7 @@ $$
 g_{\mu\nu} = \langle\tilde{E}_{\Phi}_\mu,\tilde{E}_{\Phi}_\nu\rangle_{\natural},
 $$
 
-and any Lorentzian metric is representable locally, because a $g$-orthonormal frame can be mapped into $\mathbb{B}_{\Phi}$ by a pointwise linear isometry of quadratic spaces of the same signature. An FLRW metric is a Lorentzian metric, so it is representable. The representation is explicit for the flat-slice case. With a lapse $N(r'_t)$ and scale $a(r'_t)$,
+and any Lorentzian metric is representable locally, because a $g$-orthonormal frame can be mapped into $\mathbb{B}_{\Phi}$ by a pointwise linear isometry of quadratic spaces of the same inertia. An FLRW metric is a Lorentzian metric, so it is representable. The representation is explicit for the flat-slice case. With a lapse $N(r'_t)$ and scale $a(r'_t)$,
 
 $$
 \tilde{E}_{\Phi}_0 = i\,N(r'_t)\,e_t, \qquad \tilde{E}_{\Phi}_i = a(r'_t)\,\sigma_i(r_x),

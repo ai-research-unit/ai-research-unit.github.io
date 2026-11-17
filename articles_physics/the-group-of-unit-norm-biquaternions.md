@@ -196,7 +196,7 @@ The chart is a local diffeomorphism away from its cut and it covers the group ex
 
 ### Why the Fibre Matters Physically
 
-An exponential coordinate is a set of six numbers that a laboratory could in principle dial: three rapidities and three rotation angles. The fibre is the statement that the dials do not determine the element uniquely, and it is the same statement as the two-to-one cover seen at the level of coordinates. A rotation by $2\pi$ returns $-e_t$ and not $e_t$; a rotation by $4\pi$ returns $e_t$. The physical interferometric signature of that sign is the subject of *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*.
+An exponential coordinate is a set of six numbers that a laboratory could in principle dial: three rapidities and three rotation angles. The fibre is the statement that the dials do not determine the element uniquely, and it is the same statement as the two-to-one cover seen at the level of coordinates. A rotation by $2\pi$ returns $-e_t$ and not $e_t$; a rotation by $4\pi$ returns $e_t$. The physical interferometric mark of that sign is the subject of *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*.
 
 The practical rule for this block: an exponential coordinate is used where a *path* is what is meant — a continuous motion of a frame — and never where an element alone is meant.
 

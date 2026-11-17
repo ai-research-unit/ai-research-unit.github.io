@@ -45,7 +45,7 @@ The two-point function is the **Feynman propagator**, and the product over pairs
 $$
 T\big\{\tilde{Ξ}_{\mathrm{fop},i}\tilde{Ξ}_{\mathrm{fop},j}\big\} = \Theta(r'_{t,i}-r'_{t,j})\,\tilde{Ξ}_{\mathrm{fop},i}\tilde{Ξ}_{\mathrm{fop},j} - \Theta(r'_{t,j}-r'_{t,i})\,\tilde{Ξ}_{\mathrm{fop},j}\tilde{Ξ}_{\mathrm{fop},i} ,
 $$
-with the minus sign present for fermions and absent for bosons. The relative sign between the possible complete pairings of a $2m$-point function is the **parity of the permutation** that realizes the pairing, which is why the fermionic Wick theorem is the bosonic one multiplied by the signature of the pairing:
+with the minus sign present for fermions and absent for bosons. The relative sign between the possible complete pairings of a $2m$-point function is the **parity of the permutation** that realizes the pairing, which is why the fermionic Wick theorem is the bosonic one multiplied by the sign of the pairing:
 $$
 \big\langle T\,\xi_{\mathrm{fop},1}\cdots\xi_{\mathrm{fop},2m}\big\rangle_t
 = \sum_{\text{pairings } \pi} \mathrm{sgn}(\pi)\prod_{(i,j)\in\pi}\big\langle T\,\xi_{\mathrm{fop},i}\xi_{\mathrm{fop},j}\big\rangle_t ,

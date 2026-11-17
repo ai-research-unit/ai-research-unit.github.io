@@ -188,7 +188,7 @@ $$
 
 The scalar $i$ and the element $i\vec e_\eta$ are different objects: $i$ is central and anti-Hermitian, $i\vec e_\eta$ is not central and is Hermitian, and the product $i\,(i\vec e_\eta)=-\vec e_\eta$ is what carries one sector into the other.
 
-**The $i$ and the Hermiticity of the Lagrangian.** Because the EDM insertion is anti-Hermitian, the bilinear $\tilde{Ξ}^*i(-\vec e_\eta\tilde{Ξ})\vec e_x$ is anti-Hermitian as a classical bilinear, and the Lagrangian density is Hermitian for real $d$ precisely because the explicit $i$ makes $i\times(\text{anti-Hermitian})$ Hermitian. The magnetic-moment Lagrangian has no such $i$, because its insertion is already Hermitian. **The factor of $i$ is the biquaternion signature of the EDM**: the operator is the CP-odd member of a dual pair, its material-sector placement is the anti-Hermiticity, and the Hermiticity of the action is restored by the central imaginary.
+**The $i$ and the Hermiticity of the Lagrangian.** Because the EDM insertion is anti-Hermitian, the bilinear $\tilde{Ξ}^*i(-\vec e_\eta\tilde{Ξ})\vec e_x$ is anti-Hermitian as a classical bilinear, and the Lagrangian density is Hermitian for real $d$ precisely because the explicit $i$ makes $i\times(\text{anti-Hermitian})$ Hermitian. The magnetic-moment Lagrangian has no such $i$, because its insertion is already Hermitian. **The factor of $i$ is the biquaternion mark of the EDM**: the operator is the CP-odd member of a dual pair, its material-sector placement is the anti-Hermiticity, and the Hermiticity of the action is restored by the central imaginary.
 
 ## The Nonrelativistic Reduction
 

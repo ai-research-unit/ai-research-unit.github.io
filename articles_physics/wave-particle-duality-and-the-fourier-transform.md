@@ -312,7 +312,7 @@ verified to $5.6\times10^{-17}$, with the same hyperboloid translated to centre 
 
 **The word particle means a conserved count, not a trajectory.** A trajectory needs the ray limit and the ray limit needs $\epsilon$ small, which is a condition on the state and not on the algebra. The word is used in the counting sense throughout, and *When the Wave Dies* is where the two senses meet.
 
-**The indefinite signature is posited, not derived.** The form $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ has the Minkowski sign because the material sector is defined that way. The duality does not depend on the sign; the identification of the zero level with the light cone does.
+**The indefiniteness is posited, not derived.** The form $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_{t}^{\prime\,2}+k_{\Phi}^{2}$ has the Minkowski sign because the material sector is defined that way. The duality does not depend on the sign; the identification of the zero level with the light cone does.
 
 **No claim of novelty in physics.** The Fourier pair, the bandwidth theorem, the diagonalisation of the derivative and the mass shell are standard. The organisation into two forms and the interpretation of the two as the two arms of one duality are the corpus's, and they are an interpretation of identities, not a new identity.
 

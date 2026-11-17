@@ -174,7 +174,7 @@ verified over one hundred draws to $1.4\times10^{-14}$. **The zeros are $\hbar\o
 
 **Constant coefficients are the boundary.** Every display above is a statement about a constant Hamiltonian. §*The Denial That Survives* states the reason, and the coupled companions show how far the boundary moves when a constant connection is added: not at all.
 
-**The carrier is four-dimensional and the square is its signature.** The determinant's perfect square is not an accident of the example. It is the statement that the array is a tensor product, and it would be a different power on a carrier of another dimension.
+**The carrier is four-dimensional and the square is its mark.** The determinant's perfect square is not an accident of the example. It is the statement that the array is a tensor product, and it would be a different power on a carrier of another dimension.
 
 **The reality theorem is a theorem about Hermitian elements.** It says nothing about a non-Hermitian coefficient. A complex $h_t$ or a complex $\vec h_\Psi$ makes the symbol non-self-adjoint, and the zeros move off the real axis for the same reason the non-central roots do.
 

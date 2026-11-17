@@ -85,7 +85,7 @@ and the density is $\sigma_{\mathrm{gco}}(\omega,\vec k)$ times $\mathrm{Sc}(\ti
 
 **The mixed derivative vanishes.** $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$, so the frequency and the wave vector are separated in the symbol. **The separation is the statement that the symbol is a sum of a frequency term and a wave-vector term**, and it is the constant-coefficient structure read on the second derivative.
 
-**Why the mixed derivative matters.** A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. **The article's class has none**, and the flatness of the second derivative is the class's signature.
+**Why the mixed derivative matters.** A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. **The article's class has none**, and the flatness of the second derivative is the class's mark.
 
 ## The Energy Is the Symbol at Zero Frequency
 
@@ -172,7 +172,7 @@ The symbol is gauge invariant in the invariant coordinates: the four shifts canc
 | $\omega\mapsto\omega-\frac{ϙ}{\hbar}\partial_{t'}\Gamma$, $\vec k\mapsto\vec k+\frac{ϙ}{\hbar}\nabla\Gamma$ | The mode's gauge shifts; they cancel in the symbol |
 | $E=-\sigma_{\mathrm{gco}}(0,\vec k)$ | The energy as minus the symbol at zero frequency |
 | $\partial\sigma_{\mathrm{gco}}/\partial\omega=\hbar$ | The Legendre slope; unchanged by the coupling |
-| $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$ | The vanishing mixed derivative; the class's signature |
+| $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$ | The vanishing mixed derivative; the class's mark |
 | $\sum_\mu\lvert(D_\eta\tilde\Xi)_\mu\rvert^{2}$ | The gradient term; real and non-negative |
 
 ## Further Reading

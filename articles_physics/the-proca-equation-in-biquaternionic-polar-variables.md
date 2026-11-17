@@ -53,7 +53,7 @@ $$
 \langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2 ,
 $$
 
-the Minkowski square in the corpus's signature. The derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the time slot and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the three space slots, so that $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ as in the element form. The mass is the wave number $k_m=mc/\hbar$.
+the Minkowski square in the corpus's signs. The derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ on the time slot and $\partial/\partial R_\eta=\partial/\partial r_\eta$ on the three space slots, so that $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$ as in the element form. The mass is the wave number $k_m=mc/\hbar$.
 
 ## Why the Four-Factor Word Does Not Apply
 

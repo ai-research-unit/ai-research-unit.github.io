@@ -80,7 +80,7 @@ $$
 \Bigl(q_t\, iR_{\mathrm{axf},\vec e_x} + \sum_\eta q_\eta\, iL_{\mathrm{axf},\vec e_\eta}R_{\mathrm{axf},\vec e_y}\Bigr)^2
 = \bigl(q_t^2 - q_x^2 - q_y^2 - q_z^2\bigr)\,I_4 ,
 $$
-with no relative sign between the square of the basis operator and the biquaternion norm. The absence of that sign is the signature showing through.
+with no relative sign between the square of the basis operator and the biquaternion norm. The absence of that sign is the sign pattern showing through.
 
 ## Conjugation by the Frame Operator Is the Bar
 The frame basis operator is not a bookkeeping element. It has a definite action on the algebra, and that action is what defines the split $\mathbb{B}=\mathbb{B}_{H}\oplus \mathbb{B}_{iH}$.

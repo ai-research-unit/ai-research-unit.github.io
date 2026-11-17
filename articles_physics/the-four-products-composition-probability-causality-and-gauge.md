@@ -25,7 +25,7 @@ $$
 | the four products, their coordinate formulas, their scalar–vector forms, the two slots, the property table, the identities and the left multiplications, the hyperbolic basis of the plain product | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |
 | the symmetric and antisymmetric decomposition, the twelve products one by one, the table of the twelve, the distinction over $\mathbb{C}$ and the coincidence over $\mathbb{R}$, the counts of the failures | [Symmetric and Antisymmetric Decomposition of the Four General Products](../articles_maths/symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html) |
 | the vector part of each product, the table of the twelve vector parts, the nine distinct classes, the diagonals, the component forms | [The Vector Parts of the Products over the Biquaternion Algebra](../articles_maths/the-vector-parts-of-the-products-over-the-biquaternion-algebra.html) |
-| the four forms, their Gram matrices, their signatures, their null sets, the four algebraic norms, multiplicativity and definiteness | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
+| the four forms, their Gram matrices, their inertias, their null sets, the four algebraic norms, multiplicativity and definiteness | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the restrictions of the products and the forms to the six remarkable subspaces, the null sets, the isometry groups, the material interpretation | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 
 **The rows are the entry's order.** The four products and their properties; then the split into twelve; then the vector parts, which are what a metric can see; then the forms, which are the scalar parts and the reason the four names exist.
@@ -167,16 +167,16 @@ and these three coincidences are the only ones on the complex space.
 
 ### The Forms of the Four
 
-**The scalar part of a product is a form on the pair, and the four forms have four different signatures on the two sectors.**
+**The scalar part of a product is a form on the pair, and the four forms have four different inertias on the two sectors.**
 
-| product | form | signature on $\mathbb{B}_{\Phi}$ | signature on $\mathbb{B}_{\Psi}$ |
+| product | form | inertia on $\mathbb{B}_{\Phi}$ | inertia on $\\mathbb{B}_{\\Psi}$ |
 | --- | --- | --- | --- |
 | $\tilde Q_1\tilde Q_2$ | $\langle\cdot,\cdot\rangle$ | $(0,4)$ | $(4,0)$ |
 | $\tilde Q_1^{\natural}\tilde Q_2$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $(3,1)$ | $(1,3)$ |
 | $\tilde Q_1\tilde Q_2^{*}$ | $\langle\cdot,\cdot\rangle_{*}$ | $(4,0)$ | $(4,0)$ |
 | $\tilde Q_1^{\natural}\tilde Q_2^{*}$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $(1,3)$ | $(1,3)$ |
 
-**Two are definite on each sector and two are indefinite on each,** and that is the first dial read at the level of signatures. **One is definite on every subspace and one has inertia $(8,0)$ on the whole space,** and that is the plain sesquilinear form, whose square root is the topological norm.
+**Two are definite on each sector and two are indefinite on each,** and that is the first dial read at the level of inertias. **One is definite on every subspace and one has inertia $(8,0)$ on the whole space,** and that is the plain sesquilinear form, whose square root is the topological norm.
 
 ### The Degeneracy of the Twelve on the Real Part
 
@@ -312,7 +312,7 @@ $$
 
 **The axis of the pair is not part of the amplitude.** It is the vector part of the commutator of the two state idempotents, hence the normal to the great circle joining the two directions on the Bloch sphere; the amplitude is a scalar and has no vector part.
 
-**On a closed circuit the phases telescope and the product of the overlaps is invariant.** That product is the Pancharatnam phase, and for a circuit bounding a solid angle $\Omega$ it is half the solid angle, with the half being the signature of the double cover.
+**On a closed circuit the phases telescope and the product of the overlaps is invariant.** That product is the Pancharatnam phase, and for a circuit bounding a solid angle $\Omega$ it is half the solid angle, with the half being the mark of the double cover.
 
 **The physical reading is that the algebra owns the pairing and the modulus, and the phase belongs to a loop.** The pair's phase is gauge dependent; only the loop is an invariant. The connection, the curvature and the half-solid-angle rule are not derived here.
 
@@ -327,7 +327,7 @@ $$
 \langle\tilde R_{\Phi}\rangle_{\natural}=-{r'_t}^{2}+x^{2}+y^{2}+z^{2}.
 $$
 
-**On the material sector the signature is $(3,1)$ and the zero set is the light cone.** The level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$ is the mass shell; the value is multiplicative,
+**On the material sector the inertia is $(3,1)$ and the zero set is the light cone.** The level set $\{\langle\tilde Q\rangle_{\natural}=-m^{2}c^{2}\}$ is the mass shell; the value is multiplicative,
 
 $$
 \langle\tilde Q_1^{\natural}\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},
@@ -476,7 +476,7 @@ so $\tilde\Pi_d$ has inverse $\tilde\Pi_d^{\natural}$ and is not a zero divisor.
 - The Jacobi failures count $252$, $144$ and $72$ triples; the Jordan failures count $7$, $6$ and $4$ elements; the sparsest Jacobi failure needs a complex witness.
 - An idempotent belongs to a band: the gauge band's idempotents are $- \tfrac12e_t+\tfrac{\sqrt3}{2}\vec u$, they are invertible in the algebra, and their complement is not one of them, so the pair reading does not reach that band.
 - The grid is a grid of products on $\mathbb{B}$, so entanglement is not a fifth row: a shared state is an element of $\mathbb{B}\otimes\mathbb{B}$ and the partial trace is a map on the tensor square.
-- The four forms have signatures $(0,4)$ or $(4,0)$, $(3,1)$ or $(1,3)$, $(4,0)$, $(1,3)$ on the two sectors, which is the algebraic content of the four names.
+- The four forms have inertias $(0,4)$ or $(4,0)$, $(3,1)$ or $(1,3)$, $(4,0)$, $(1,3)$ on the two sectors, which is the algebraic content of the four names.
 - Probability is the only definite form, and its product has no clock: the central element squares to $+e_t$, there is no nilpotent of index two, and the cone appears at the third power.
 - Causality is the only multiplicative norm, and the causal type composes while the causal operation does not associate.
 - Gauge is the only indefinite Hermitian form, and its fundamental symmetry is the quaternion conjugation.

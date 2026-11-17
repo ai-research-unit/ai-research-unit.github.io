@@ -22,7 +22,7 @@ Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ w
 
 Two ingredients of the local complex structure are used below, and it is worth separating them because the thermal structure will have an analogue of one and not of the other.
 
-**The phase.** The imaginary unit is the algebra's own $i$, central, with $i^2=-1$. It is the same at every point, and it is what supplies the minus sign of the Minkowski interval: the $i^2$ of $(i\,dr'_t)^2$ is the signature. Nothing physical follows from the phase alone.
+**The phase.** The imaginary unit is the algebra's own $i$, central, with $i^2=-1$. It is the same at every point, and it is what supplies the minus sign of the Minkowski interval: the $i^2$ of $(i\\,dr'_t)^2$ is the sign. Nothing physical follows from the phase alone.
 
 **The scale.** The one free number is $c$. It is what makes the statement "the temporal direction is imaginary" dimensionally meaningful, because $i r'_t$ is a length and $r'_t$ is a time. It is local, $c=c(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ in an inhomogeneous medium, and the structure is global only in the limit in which $c$ is constant. The metric it induces is $g=\mathrm{diag}(-c^2,1,1,1)$.
 

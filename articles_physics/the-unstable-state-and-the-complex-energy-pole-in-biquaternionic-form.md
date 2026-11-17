@@ -258,7 +258,7 @@ The self-energy $\Sigma_{\mathrm{nc}}$ is the same object as before, with the el
 - **A discrete eliminated slot** gives a real, energy-dependent shift: the coupling displaces the level of the first slot, and the displacement is the level shift.
 - **An eliminated slot with a continuum** gives a complex self-energy, and the effective central potential acquires an imaginary part. The eliminated slot then acts as an absorber for the first: the coupling that would have moved probability into it appears in the first slot's equation as a width.
 
-This is the framework's form of the standard statement that a degree of freedom coupled to a continuum and then integrated out produces an absorptive effective potential — the **optical potential** of scattering theory and of the quaternionic formulation of the same problem. It also explains why an effective potential must be allowed to be complex: complexity is the signature of a channel that has been removed and whose on-shell states are now a loss. The reduction is a different decomposition from the sector maps catalogued in *Cross-Sector Coupling in the Biquaternion Framework: A Catalogue of the Maps Between the Sectors*, because it splits the module rather than the algebra's Hermitian and anti-Hermitian parts, and it is not one of that catalogue's entries.
+This is the framework's form of the standard statement that a degree of freedom coupled to a continuum and then integrated out produces an absorptive effective potential — the **optical potential** of scattering theory and of the quaternionic formulation of the same problem. It also explains why an effective potential must be allowed to be complex: complexity is the mark of a channel that has been removed and whose on-shell states are now a loss. The reduction is a different decomposition from the sector maps catalogued in *Cross-Sector Coupling in the Biquaternion Framework: A Catalogue of the Maps Between the Sectors*, because it splits the module rather than the algebra's Hermitian and anti-Hermitian parts, and it is not one of that catalogue's entries.
 
 ## The Exactly Soluble Case
 
@@ -333,7 +333,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 **3. Does the second sheet have a module meaning?** The second sheet was reached here by the continuation of a scalar integral. Whether the sheet structure can be read from the module's own analytic geometry, as the corpus's function theory reads the polar and spinor representations, is open.
 
-**4. Empirical content.** The framework's exponential agrees with the standard one wherever the standard one applies, and it supplies no discriminator. Whether any of the non-exponential departures could carry a signature is open and unexplored.
+**4. Empirical content.** The framework's exponential agrees with the standard one wherever the standard one applies, and it supplies no discriminator. Whether any of the non-exponential departures could carry a sign is open and unexplored.
 
 ## Summary
 

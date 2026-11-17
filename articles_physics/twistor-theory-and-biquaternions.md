@@ -76,7 +76,7 @@ $$
 
 The second factor is the conjugate defining representation in disguise: with $\epsilon$ the invariant form of the spinor-module article, $(A^\dagger)^{-1} = \epsilon\,\bar{A}\,\epsilon^{-1}$. Under $SU(2,2)$ this block-diagonal action is completed by the off-diagonal generators — translations and special conformal transformations — that mix $\omega$ and $\pi$ and thereby move the point $x$; the Lorentz group is the part that preserves the metric.
 
-A related caution concerns the symbol $i$. In the framework, $i$ is the **scalar imaginary** of $\mathbb{B}$, and its appearance in the time coordinate $i r'_t$ is what makes the signature Lorentzian. In the incidence relation $\omega = ix\pi$, $i$ is the complex unit of twistor space, and its role is to make the line $L_x$ a real line when $x$ is Hermitian. The two complex structures are not the same structure, and the projective coincidence $\mathbb{P}(\mathbb{B})\cong\mathbb{PT}$ does not equate them.
+A related caution concerns the symbol $i$. In the framework, $i$ is the **scalar imaginary** of $\mathbb{B}$, and its appearance in the time coordinate $i r'_t$ is what makes the signs Lorentzian. In the incidence relation $\omega = ix\pi$, $i$ is the complex unit of twistor space, and its role is to make the line $L_x$ a real line when $x$ is Hermitian. The two complex structures are not the same structure, and the projective coincidence $\mathbb{P}(\mathbb{B})\cong\mathbb{PT}$ does not equate them.
 
 ## Why Two Spaces
 

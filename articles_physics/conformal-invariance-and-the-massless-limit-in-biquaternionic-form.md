@@ -60,7 +60,7 @@ I(\tilde{Q}) = \frac{\tilde{Q}^{\natural}}{\langle\tilde{Q}\rangle_{\natural}} ,
 $$
 The companion establishes the count precisely: six generators inside, one expressible, eight outside. The invariance derived below is therefore a statement about the field equations under conformal transformations of spacetime, not a statement that the conformal group is a subgroup of the algebra's own multiplication group, and the two must not be conflated. The reason the framework is nevertheless the natural setting is that the **invariant object** of the conformal group is native to the algebra: it is the zero set of the biquaternion norm, and the inversion is built from the biquaternion norm by division.
 
-### Coordinates, signature, and the two norms
+### Coordinates, signs, and the two norms
 
 One convention note is needed before the weight is used, because two quadratic forms are in play. The conformal group is the conformal group of Minkowski space, and its invariant interval is
 $$

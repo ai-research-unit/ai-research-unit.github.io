@@ -20,7 +20,7 @@ $$
 
 We measure particle 1 alone, along any direction. What is the **state of particle 1**, ignoring particle 2?
 
-The answer, as we shall see, is that the state of particle 1 is the **maximally mixed state** — a mixed state, not a pure state. This is the quantum-mechanical signature of entanglement: the information about particle 1 is not contained in any pure state, but is distributed between the two particles.
+The answer, as we shall see, is that the state of particle 1 is the **maximally mixed state** — a mixed state, not a pure state. This is the quantum-mechanical mark of entanglement: the information about particle 1 is not contained in any pure state, but is distributed between the two particles.
 
 ## Solution in the Standard Formulation
 
@@ -229,7 +229,7 @@ This is in sharp contrast with the singlet case.
 | Singlet $|\tilde{Ξ}^-\rangle$ | $\frac{1}{2}e_t$ (mixed) | $\frac{1}{2}$ | $\log 2$ |
 | Product $|\uparrow\uparrow\rangle$ | $\frac{1}{2}(e_t + i\vec e_z)$ (pure) | $1$ | $0$ |
 
-The contrast is the operational signature of entanglement: **product states have pure reduced states; entangled states have mixed reduced states**. The more entangled the joint state, the more mixed the reduced state.
+The contrast is the operational mark of entanglement: **product states have pure reduced states; entangled states have mixed reduced states**. The more entangled the joint state, the more mixed the reduced state.
 
 ## What the Biquaternion Solution Illustrates
 

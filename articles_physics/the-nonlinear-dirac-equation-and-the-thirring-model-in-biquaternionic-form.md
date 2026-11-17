@@ -12,7 +12,7 @@ Here $S_{\mathrm d}$ and $V_\mu$ are the two scalar parts
 $$S_{\mathrm d}=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\tilde{Ξ}\vec e_x\bigr),
 \qquad
 V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,(ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)})\vec e_x\bigr),$$
-with $\nu(t)=x$ and $\nu(\eta)=y$, and $\varepsilon_\mu=-g_{\mu\mu}$ the signature sign, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{B}_{\Phi}$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
+with $\nu(t)=x$ and $\nu(\eta)=y$, and $\varepsilon_\mu=-g_{\mu\mu}$ the sign of the index, $+1$ on the time index and $-1$ on the three spatial ones in the $\mathbb{B}_{\Phi}$ frame of the conventions article. The contraction is written as a sum because no index is summed silently in this corpus, and the sign on the time component is what makes $\sum_\mu\varepsilon_\mu V_\mu V_\mu$ a Lorentz scalar rather than a sum of squares.
 
 This article states these equations, gives the Einstein–Cartan route that produces one of them from geometry, organises the possible interactions by the bilinears they use, and gives the biquaternion interpretation. Its contribution is a **placement of the channels**. The scalar density $S_{\mathrm d}$ is the mass channel, the object whose expectation is the dynamical mass of the companion article on the chiral condensate. The vector current $V_\mu$ is the material-sector current, the object of the companion articles on minimal coupling and on the Gordon decomposition. The axial current $A_\mu$ is the channel the linear mass breaks, so an axial-axial self-interaction is a coupling conjugate to the mass. A quartic interaction is also **bosonic**: it is even in the field and carries zero fermion number, so it passes through the framework's central phase untouched, which is why a self-interaction is compatible with the exact vector symmetry.
 
@@ -230,13 +230,13 @@ that is not the four-dimensional axial bilinear of the earlier section, and the 
 $$A_0=V_1,\qquad A_1=V_0,
 \qquad\text{that is}\qquad
 A_\mu=\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu V_\nu,$$
-with $\epsilon^{01}=+1$, hence $\epsilon_{01}=-1$. The signature sign on the summed index is part of the statement, because $\epsilon_{\mu\nu}\varepsilon_\nu$ is what the dual of a covector carries. The warrant is the composite above: it converts the time slot action into the space one, and the units supply the relative sign. The largest deviation over 100 generic elements is zero.
+with $\epsilon^{01}=+1$, hence $\epsilon_{01}=-1$. The sign on the summed index is part of the statement, because $\epsilon_{\mu\nu}\varepsilon_\nu$ is what the dual of a covector carries. The warrant is the composite above: it converts the time slot action into the space one, and the units supply the relative sign. The largest deviation over 100 generic elements is zero.
 
 ### The Single Coupling
 
 Consequently
 $$\sum_\mu\varepsilon_\mu A_\mu A_\mu=\varepsilon_0A_0^2+\varepsilon_1A_1^2=V_1^2-V_0^2=-\left(V_0^2-V_1^2\right)=-\sum_\mu\varepsilon_\mu V_\mu V_\mu,$$
-so the vector–vector and axial–axial quartic terms differ only by sign and a single coupling covers the current–current interactions. The plain sums of squares are equal instead, $A_0^2+A_1^2=V_0^2+V_1^2$, which is exactly why the signature signs cannot be dropped: without them the two invariants would coincide rather than being opposite. No cross term mixes the two currents either: because $\epsilon_{\mu\nu}\varepsilon_\mu\varepsilon_\nu V_\nu V_\mu$ is antisymmetric in $\mu$ and $\nu$ while the product of two components is symmetric, the contraction $\sum_\mu\varepsilon_\mu A_\mu V_\mu$ vanishes. All three identities are exact on the same 100 elements.
+so the vector–vector and axial–axial quartic terms differ only by sign and a single coupling covers the current–current interactions. The plain sums of squares are equal instead, $A_0^2+A_1^2=V_0^2+V_1^2$, which is exactly why the signs cannot be dropped: without them the two invariants would coincide rather than being opposite. No cross term mixes the two currents either: because $\epsilon_{\mu\nu}\varepsilon_\mu\varepsilon_\nu V_\nu V_\mu$ is antisymmetric in $\mu$ and $\nu$ while the product of two components is symmetric, the contraction $\sum_\mu\varepsilon_\mu A_\mu V_\mu$ vanishes. All three identities are exact on the same 100 elements.
 
 The duality is the exact reason the two-dimensional model has one coupling. It is a property of the dimension and of the metric, and not of the framework.
 
@@ -319,7 +319,7 @@ $S_{cd}=\tfrac14[\gamma_c,\gamma_d]$ is the Lorentz generator in the $\gamma$ ba
 
 ### The Four Contraction Sums
 
-A basis operator's square is a frame statement, and every contraction of the frame inherits that. Written with the signature sign $\varepsilon_\mu$ on the summed index, the way every other contraction in this article is written, the four sums hold in either frame:
+A basis operator's square is a frame statement, and every contraction of the frame inherits that. Written with the sign $\\varepsilon_\\mu$ on the summed index, the way every other contraction in this article is written, the four sums hold in either frame:
 
 $$
 \sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad
@@ -328,7 +328,7 @@ $$
 \sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\gamma\gamma_\mu=+2\gamma_\alpha\gamma_\beta\gamma_\gamma ,
 $$
 
-In each of the four the contracted generator is the same one on both sides, so it is never moved past another generator and no reordering sign enters. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, the weights become signs and the sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, and the second is $4\gamma_\alpha$ on the time index and $0$ on each spatial one, so the unweighted form is a signature statement and not an identity of four dimensions alone.
+In each of the four the contracted generator is the same one on both sides, so it is never moved past another generator and no reordering sign enters. With the summed index raised, $\gamma^\mu=-\varepsilon_\mu\gamma_\mu$, the weights become signs and the sums read $-4I_4$, $+2\gamma_\alpha$, $-4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $-2\gamma_\gamma\gamma_\beta\gamma_\alpha$. With every index low only the first keeps a closed form, $\sum_\mu\gamma_\mu\gamma_\mu=-2I_4$, and the second is $4\gamma_\alpha$ on the time index and $0$ on each spatial one, so the unweighted form is a statement about the signs and not an identity of four dimensions alone.
 
 **The display.** Every array printed in this section is given twice: in the Peirce display first, labelled $\mathrm{pau}$, whose arrays are the ones the literature prints, and in the axis-free display after it, labelled $\mathrm{axf}$, which is the display of the corpus. The two are carried into one another by $L_{\mathrm{axf},e_\mu}=C_{\Pi}L_{\mathrm{pau},e_\mu}C_{\Pi}^{-1}$, and a conjugation by $C_{\Pi}$ changes no product, no anticommutator, no trace and no determinant, so every identity of the section holds in both. An array is a statement about one display; a basis operator named in the running text keeps the Peirce label, and its axis-free array is the conjugate. The label names the array and not the operator.
 
@@ -353,7 +353,7 @@ Each bilinear, however, is a pairing and not a product: it is the scalar part of
 | $V_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)}\vec e_x\bigr)$ | Vector current (material sector in the framework); $V_0=\mathrm{Sc}(\tilde{Ξ}^*\tilde{Ξ})$ |
 | $A_\mu=\mathrm{Sc}\bigl(\tilde{Ξ}^*i\,e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}\vec e_x\bigr)$ | Axial current (channel broken by the mass); in two dimensions built with the plane's insertions and the factor $i$ kept |
 | $T_{\mu\nu}$ | Tensor bilinear; $T_{0\eta}=\mathrm{Sc}(\tilde{Ξ}^*i\,i\vec e_\eta\tilde{Ξ}\vec e_z\vec e_x)$, $T_{j\eta}=\mathrm{Sc}(\tilde{Ξ}^*i\,i\vec e_j\vec e_\eta\tilde{Ξ}\vec e_x)$ for $j\ne k$, $T_{\mu\mu}=0$ |
-| $\varepsilon_\mu = -g_{\mu\mu}$ | Signature sign of the index $\mu$ |
+| $\varepsilon_\mu = -g_{\mu\mu}$ | Sign of the index $\mu$ |
 | $g$ | Self-coupling of the Thirring and Soler models |
 | $\kappa = 8\pi G/c^4$ | Einstein gravitational constant |
 | $\frac{3\kappa}{8}\sum_\mu\varepsilon_\mu A_\mu\,e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)}$ | Hehl–Datta term in the equation ($\frac{3\kappa}{16}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ as a Lagrangian term) |

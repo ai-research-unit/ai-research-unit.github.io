@@ -41,7 +41,7 @@ $$
 \boxed{\;ds^2 = d\tilde R_\Phi\,d\tilde R_\Phi^{\natural} = (i\,dr'_t)^2 + dr_x^2+dr_y^2+dr_z^2 = -d{r'_{t}}^2 +dr_x^2+dr_y^2+dr_z^2\;}
 $$
 
-Here $d\tilde R_\Phi^{\natural} = i\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
+Here $d\tilde R_\Phi^{\natural} = i\,dr'_t\,e_t - d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric.
 
 The displacement $d\tilde R_\Phi$ is a **material element**, and the interval is its norm; a spacelike distance is read from that norm.
 

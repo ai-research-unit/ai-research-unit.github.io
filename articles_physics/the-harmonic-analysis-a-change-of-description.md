@@ -197,7 +197,7 @@ The multiplier is a negative scalar and it vanishes only at $\omega=0$: this ope
 
 **The operator with a cone for a zero set is the hyperbolic one.** For $\partial_t^{2}-\Delta$ the symbol is $-4\pi^{2}(\omega_0^{2}-\omega_1^{2}-\omega_2^{2}-\omega_3^{2})$, whose zero set is the null cone $\omega_0^{2}=\lvert\vec\omega\rvert^{2}$. A solution has its transform supported there. The two operators differ by the sign of the Laplacian, and that sign is the sign that $\tilde{Z}^{2}=e_t$ supplies through the square of the imaginary scalar.
 
-**The check is a single substitution.** At a frequency with $\omega_0=\lvert\vec\omega\rvert$ the hyperbolic symbol is $-4.4\times10^{-15}$ and the elliptic one is $-39.478$; off the cone, at $\omega=(1,0.3,-0.4,0.5)$, the hyperbolic symbol is $-19.739$. One of them has a cone for a zero set and the other has a point, and the difference is the signature.
+**The check is a single substitution.** At a frequency with $\omega_0=\lvert\vec\omega\rvert$ the hyperbolic symbol is $-4.4\times10^{-15}$ and the elliptic one is $-39.478$; off the cone, at $\omega=(1,0.3,-0.4,0.5)$, the hyperbolic symbol is $-19.739$. One of them has a cone for a zero set and the other has a point, and the difference is the inertia.
 
 ### The Cone and the Degenerate Set
 

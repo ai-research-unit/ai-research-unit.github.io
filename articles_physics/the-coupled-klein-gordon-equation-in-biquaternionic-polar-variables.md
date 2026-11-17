@@ -21,7 +21,7 @@ $$
 =\tilde\Xi^{-1}\partial_\mu\tilde\Xi+\frac{i\,ϙ}{\hbar}A_\mu ,
 $$
 
-with the connection's term added after the word has been differentiated and with no factor of $\tilde\Xi$ or $\tilde\Xi^{-1}$ attached to it. The separability is not an approximation: it is the algebraic signature of the abelian gauge group, whose parameter lies in the centre.
+with the connection's term added after the word has been differentiated and with no factor of $\tilde\Xi$ or $\tilde\Xi^{-1}$ attached to it. The separability is not an approximation: it is the algebraic mark of the abelian gauge group, whose parameter lies in the centre.
 
 *Second, the connection therefore touches only the central slots, and the two-object pair survives.* A central scalar is either real or central imaginary in a given slot, and the four brackets of the word's logarithmic derivative contain exactly one bracket of each type: the scale is real and the phase is central imaginary. So the connection merges with those two and cannot reach the boost or the rotor, and for a central field the whole coupling is the substitution
 

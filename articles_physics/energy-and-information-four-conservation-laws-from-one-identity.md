@@ -77,7 +77,7 @@ $$
 
 which is sesquilinear and positive definite. The star is the Hermitian conjugation, $\tilde Q^*=\bar{\tilde Q}^{\natural}$.
 
-The two forms read differently on the two sectors, and the difference is the signature. On $\mathbb{B}_{\Phi}$ the coefficients are $Q_t=iq'_t$ and $\vec Q=\vec q$ real, so
+The two forms read differently on the two sectors, and the difference is the sign pattern. On $\mathbb{B}_{\Phi}$ the coefficients are $Q_t=iq'_t$ and $\vec Q=\vec q$ real, so
 
 $$
 \langle\tilde Q\rangle_\natural=-{q'_t}^2+\lvert\vec q\rvert^2,\qquad

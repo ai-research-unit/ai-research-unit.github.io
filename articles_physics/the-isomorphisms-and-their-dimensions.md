@@ -131,7 +131,7 @@ Two independent warrants.
 
 **The dimension and the bracket.** Six generators with the bracket above are $\mathfrak{so}(1,3)$: the three $J$ close as a rotation algebra, and the three $K$ transform as a vector under it, which is exactly the action of rotations on the boost generators of the Lorentz group.
 
-**The invariant form.** The Killing form of the six-dimensional real algebra has eigenvalues $\pm4$ in the basis above and determinant $-4096$. It is therefore non-degenerate with inertia $(3,3)$, which is the signature of $\mathfrak{so}(1,3)$ and of nothing else in this neighbourhood: $\mathfrak{so}(4)$ has inertia $(6,0)$ and $\mathfrak{so}(2,2)$ has $(4,2)$. The computation runs on the structure constants, and it is the check that rules out the misreading in which the traceless part is called $\mathfrak{so}(4)$.
+**The invariant form.** The Killing form of the six-dimensional real algebra has eigenvalues $\pm4$ in the basis above and determinant $-4096$. It is therefore non-degenerate with inertia $(3,3)$, which is the inertia of $\\mathfrak{so}(1,3)$ and of nothing else in this neighbourhood: $\mathfrak{so}(4)$ has inertia $(6,0)$ and $\mathfrak{so}(2,2)$ has $(4,2)$. The computation runs on the structure constants, and it is the check that rules out the misreading in which the traceless part is called $\mathfrak{so}(4)$.
 
 **The misreading to avoid.** The table has $[K_i,K_j]=-\epsilon_{ijk}J_k$ and not $+\epsilon_{ijk}J_k$. A plus sign gives $\mathfrak{so}(4)$, the Euclidean algebra, which is the algebra of a different real form of the same complex algebra. *The Cartan Subalgebra, the Roots and the Three Real Forms* puts the three real forms side by side and states which slice of the complex algebra each one is.
 

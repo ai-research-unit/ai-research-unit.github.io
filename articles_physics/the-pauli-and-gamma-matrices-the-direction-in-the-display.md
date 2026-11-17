@@ -179,7 +179,7 @@ does not return itself: under the exchange of $\vec e_z$ with $\vec e_x$ the dia
 
 **The defect is that the direction is unmarked.** A sentence $\sigma_3[\vec u]$, with $\vec u$ the axis, would be complete and could be rotated. The sentence $\sigma_3$, with no axis, is incomplete and cannot be rotated, and the notation supplies no place to put the missing name. A formula of general physics is then printed with a datum it does not contain, and the reader has no way to subtract the datum.
 
-**The signature is the model of the other case.** Time is distinguished from space by the squares, $e_t^2=+e_t$ and $\vec e_\eta^2=-e_t$, and that asymmetry is carried by an object of the algebra, where it cannot be lost and needs no declaration. An asymmetry that the physics has belongs in an object; a direction that the physics does not have belongs nowhere.
+**The signs are the model of the other case.** Time is distinguished from space by the squares, $e_t^2=+e_t$ and $\vec e_\eta^2=-e_t$, and that asymmetry is carried by an object of the algebra, where it cannot be lost and needs no declaration. An asymmetry that the physics has belongs in an object; a direction that the physics does not have belongs nowhere.
 
 ### What Is Not Claimed
 

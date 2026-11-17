@@ -76,7 +76,7 @@ $$
 
 Two scalar blocks of dimension one and two vector blocks of dimension three. Every remarkable subspace is the sum of two blocks.
 
-| subspace | defining condition | blocks | $\dim_{\mathbb{R}}$ | signature of $N$ |
+| subspace | defining condition | blocks | $\dim_{\mathbb{R}}$ | inertia of $N$ |
 | --- | --- | --- | --- | --- |
 | $\mathbb{B}_{C}$ | $\tilde Q^{\natural}=\tilde Q$ | $A_1\oplus A_2$ | $2$ | complex-valued |
 | $\mathbb{B}_{V}$ | $\tilde Q^{\natural}=-\tilde Q$ | $B_1\oplus B_2$ | $6$ | complex-valued |
@@ -165,7 +165,7 @@ $$
 
 ## The Interpretations
 
-**Thirteen readings, each labelled, each with its boundary.** They are grouped as the results are: the coordinates, the ledgers, the signature, the subspaces and their intersections, the involutions, the mirror, the square, the cone and the roots.
+**Thirteen readings, each labelled, each with its boundary.** They are grouped as the results are: the coordinates, the ledgers, the inertia, the subspaces and their intersections, the involutions, the mirror, the square, the cone and the roots.
 
 ### I.1.a — The Eight Coordinates Are Two Clocks and Two Spaces
 
@@ -201,19 +201,19 @@ $$
 
 and the cross term is generally non-zero. The interval of an element is not the sum of the intervals of its two parts, and an argument that treats the two ledgers as independent contributions to one invariant is wrong.
 
-### I.1.c — The Imaginary Time Is the Signature
+### I.1.c — The Imaginary Time Is the Sign Pattern
 
 **Read:** the factor $i$ in $i r'_t$ is what makes the temporal displacement count with the opposite sign to the spatial ones, because $i^2=-1$. The Lorentzian sign pattern of the material sector is therefore not an independent axiom. It is what the norm becomes on the slice that carries the central $i$ in its time slot.
 
-**The four signatures are one form on four slices.**
+**The four inertias are one form on four slices.**
 
 $$
 \mathbb{B}_{H}:(4,0),\qquad \mathbb{B}_{iH}:(0,4),\qquad \mathbb{B}_{\Psi}:(1,3),\qquad \mathbb{B}_{\Phi}:(3,1) .
 $$
 
-The two definite slices are the two coefficient halves; the two indefinite slices are the two sectors. A causal cone exists on a slice exactly when the slice's signature is indefinite, and the cone's opening is the sign of the time direction.
+The two definite slices are the two coefficient halves; the two indefinite slices are the two sectors. A causal cone exists on a slice exactly when the slice's inertia is indefinite, and the cone's opening is the sign of the time direction.
 
-**The boundary.** The signature does not by itself select matter rather than information. It selects a real slice. The identification of one indefinite slice with matter and the other with information is the corpus's convention, and a reader who swaps them obtains the mirrored convention and not a different algebra.
+**The boundary.** The inertia does not by itself select matter rather than information. It selects a real slice. The identification of one indefinite slice with matter and the other with information is the corpus's convention, and a reader who swaps them obtains the mirrored convention and not a different algebra.
 
 ### I.1.d — The Six Subspaces Are Six Physical Objects
 

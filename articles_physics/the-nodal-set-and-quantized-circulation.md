@@ -297,7 +297,7 @@ What remains open is dynamical: existence, stability and interaction of nodal so
 | $w_{\mathrm{qnt}}$ | Quantum energy density |
 | $\Box$ | D'Alembertian of the material sector |
 | $\delta_{\mu\nu}$ | The one metric, all coefficients $+1$; indices stay low |
-| $\varepsilon_\mu$ | Signature weight, $+1$ temporal and $-1$ spatial |
+| $\varepsilon_\mu$ | Sign weight, $+1$ temporal and $-1$ spatial |
 | $\hbar,\ m,\ c$ | Action quantum, mass, speed of light |
 
 ## Further Reading

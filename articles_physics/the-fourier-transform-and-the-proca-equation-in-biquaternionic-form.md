@@ -179,7 +179,7 @@ The wave number is fixed at $k_t'=1.5$ with $\vec k_\Phi=(0.3,0.2,0.1)$, so no e
 
 **The limit is therefore not a limit of symbols.** Every $k_m>0$ gives an invertible symbol off the shell and a propagator with one pole on it. At $k_m=0$ there is no invertible point, the propagator is not defined as an inverse, and the gauge orbit appears. **That is the frequency-space form of the parent's statement that no sequence of Proca fields converges to a Maxwell field with a smooth third state**, and it is why the Stueckelberg device has to add a field rather than perturb one.
 
-**The ratio $s_{\min}/s_{\max}$ is the quantitative version of the same statement.** It falls by fifteen orders of magnitude across the table while the rank stays four, which is the numerical signature of a matrix approaching singularity along a fixed direction: the direction is the longitudinal one, its eigenvalue is $-k_m^{2}$, and the approach is linear in $k_m^{2}$.
+**The ratio $s_{\min}/s_{\max}$ is the quantitative version of the same statement.** It falls by fifteen orders of magnitude across the table while the rank stays four, which is the numerical mark of a matrix approaching singularity along a fixed direction: the direction is the longitudinal one, its eigenvalue is $-k_m^{2}$, and the approach is linear in $k_m^{2}$.
 
 ## The Symbol Is Even
 

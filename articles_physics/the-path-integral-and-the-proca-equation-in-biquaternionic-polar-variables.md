@@ -212,6 +212,6 @@ The divergence's square is a displayed term of the exponent and its saddle is th
 - *The Path Integral and the Dirac Equation in Biquaternionic Polar Variables*, for a chart whose kernel is readable because its carrier closes.
 - K. Schwarzschild, "Über das Gravitationsfeld eines Massenpunktes," *Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften* (1916) 189, for the hyperbolic polar coordinates of a four-dimensional space.
 - R. P. Feynman and A. R. Hibbs, *Quantum Mechanics and Path Integrals* (McGraw-Hill, 1965), for the radial Jacobian and the Fresnel factor.
-- H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the change of variables in a Minkowski-signature Gaussian.
+- H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the change of variables in a Gaussian of the Lorentzian signs.
 - V. P. Maslov and M. V. Fedoriuk, *Semi-Classical Approximation in Quantum Mechanics* (Reidel, 1981), for the phase constant that this chart has no slot for.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the polar decomposition of a four-vector and its hyperbolic coordinates.

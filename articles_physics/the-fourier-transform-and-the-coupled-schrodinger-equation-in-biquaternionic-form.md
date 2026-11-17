@@ -176,7 +176,7 @@ independent of $\vec A$ and of $\varphi$. A central difference at $k_x=0.4$ with
 
 **The third is the varying connection.** The gauge-invariant statement is about the two invariants; whether a local symbol built from them is faithful where the connection varies is the polar companion's open question, and it is open here.
 
-**The fourth is the field strength's second-order effect.** The curvature in the wave vector is invariant, and the mixed derivative $\partial^{2}\sigma/\partial\omega\partial k_\eta$ vanishes. Whether a nonzero mixed derivative is the signature of a coupling outside the present class is not settled.
+**The fourth is the field strength's second-order effect.** The curvature in the wave vector is invariant, and the mixed derivative $\partial^{2}\sigma/\partial\omega\partial k_\eta$ vanishes. Whether a nonzero mixed derivative is the mark of a coupling outside the present class is not settled.
 
 ## Summary
 

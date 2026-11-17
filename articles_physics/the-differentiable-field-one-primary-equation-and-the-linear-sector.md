@@ -145,7 +145,7 @@ This is not a difference of taste: it is the point at which the two cannot both 
 
 ## The Fork: Product First or Conjugation First
 
-The corpus's structure is built on the **quaternion conjugation** $\natural$, the $\mathbb{C}$-linear involution: it cuts the algebra into the material and the informational sectors, it gives the interval its signature, and it makes the two slots of one product physically different. That conjugation is not an algebra automorphism, and the corpus already knows what that means: *Frames, Rotations and the Lorentz Group* states that a boost preserves the interval and the sectors but not the product, and concludes that a boost is a motion and not a symmetry of the algebraic structure.
+The corpus's structure is built on the **quaternion conjugation** $\natural$, the $\mathbb{C}$-linear involution: it cuts the algebra into the material and the informational sectors, it gives the interval its signs, and it makes the two slots of one product physically different. That conjugation is not an algebra automorphism, and the corpus already knows what that means: *Frames, Rotations and the Lorentz Group* states that a boost preserves the interval and the sectors but not the product, and concludes that a boost is a motion and not a symmetry of the algebraic structure.
 
 The derivation route is built on the **product** instead. Its derivative is defined by multiplication alone, its invariants are the automorphism invariants, and a structure that the product does not preserve is not a structure of the theory. The Hermitian form fails that test, so the real slice fails it, and the two sectors are, on this reading, an artefact of a coordinate choice.
 

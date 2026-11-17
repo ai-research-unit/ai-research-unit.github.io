@@ -195,7 +195,7 @@ So the matrices of one element over all frames are one conjugacy class and not o
 
 **The symmetry of the display is the cyclic one.** The relabelling $x\mapsto y\mapsto z\mapsto x$ is an algebra automorphism, and its permutation matrix conjugates every array into itself. A transposition reverses the orientation and flips the sign of the table, because $\vec e_x\vec e_y=\vec e_z$ becomes $\vec e_y\vec e_x=-\vec e_z$. That sign belongs to the quaternion product and not to a preference of the basis.
 
-**Time is different, and the difference is in the object.** The signature is carried by the squares, $e_t^2=+e_t$ and $\vec e_\eta^2=-e_t$, and the display inherits it without a sentence: the scalar unit occupies the first slot and the trace is $4\delta_{\mu t}$. Physical space is isotropic and spacetime is not, and the array shows the first as a symmetry of the entries and the second as a sign.
+**Time is different, and the difference is in the object.** The signs are carried by the squares, $e_t^2=+e_t$ and $\vec e_\eta^2=-e_t$, and the display inherits it without a sentence: the scalar unit occupies the first slot and the trace is $4\delta_{\mu t}$. Physical space is isotropic and spacetime is not, and the array shows the first as a symmetry of the entries and the second as a sign.
 
 **The boundary.** This is a statement about a frame and not about a canonical basis. The axis-free family is one representative of a conjugacy class, and nothing in the physics selects it; what it does is decline to add a direction the algebra does not contain.
 
@@ -303,7 +303,7 @@ $$
 - The six subspaces are four entrywise conditions, and the vector subspace is traceless and antisymmetric by one condition.
 - No other basis keeps the sparsity: the signed-permutation frames are the $96$ relabellings and sign changes of this one.
 - The operator is unique and the array is a conjugacy class; this frame is the representative that adds nothing, and the frame of a printed matrix can be read off its entries.
-- The display chooses no spatial direction, and it carries the signature as a sign rather than as a sentence.
+- The display chooses no spatial direction, and it carries the sign pattern as a sign rather than as a sentence.
 
 ## Summary of Notation
 

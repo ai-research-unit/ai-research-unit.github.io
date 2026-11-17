@@ -116,7 +116,7 @@ $$
 u=u_0\,\mathrm{sech}^{2}\!\left(\sqrt{\frac{u_0}{2}}\,\bigl(x-2u_0t'\bigr)\right),
 $$
 
-and it is checked by differentiating: the three terms cancel identically for every $u_0>0$. The speed is twice the amplitude, so the taller pulse travels faster. That is the opposite of a linear dispersive wave, whose speed is fixed by the medium, and it is the signature that the balance is nonlinear.
+and it is checked by differentiating: the three terms cancel identically for every $u_0>0$. The speed is twice the amplitude, so the taller pulse travels faster. That is the opposite of a linear dispersive wave, whose speed is fixed by the medium, and it is the mark that the balance is nonlinear.
 
 **The equation is integrable and its integrability is not linearity.** The Korteweg–de Vries equation has a Lax pair,
 

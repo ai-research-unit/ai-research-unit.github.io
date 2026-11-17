@@ -50,7 +50,7 @@ So there is $5.36$ times as much mass in the dark component as in all the proton
 | Property | Evidence | Consequence for a candidate |
 |---|---|---|
 | Cold, or at most warm | Structure formation; the power spectrum's shape | Must be non-relativistic at $T\sim1$ eV |
-| Electrically neutral, and neutral under colour | No electromagnetic or strong signature; the CMB's acoustic peaks | Must be a singlet, or a neutral member of a multiplet |
+| Electrically neutral, and neutral under colour | No electromagnetic or strong mark; the CMB's acoustic peaks | Must be a singlet, or a neutral member of a multiplet |
 | Stable, or long-lived | Present today | Must be protected by a symmetry or by kinematics |
 
 **The sharpest single measurement.** The Bullet Cluster: two galaxy clusters that have passed through each other, with the X-ray gas (baryons) shocked and slowed in the middle while the gravitational mass, reconstructed from lensing, has passed through. The mass-to-light ratio tracks the galaxies and not the gas. That is a direct statement that the dark component is collisionless and the baryonic component is not, and it cannot be reproduced by any modification of gravity that couples to baryons alone.
@@ -254,7 +254,7 @@ where the dimensionless function of the quartic is $B=1.90$ at the measured coup
 ## Instanton Against Sphaleron
 
 **The distinction, which is the article's framework section and its only technical contribution.**
-Two objects describe the same topological transition, in two different signatures, and the framework hosts one of them.
+Two objects describe the same topological transition, in two different sign patterns, and the framework hosts one of them.
 
 | | Instanton | Sphaleron |
 |---|---|---|

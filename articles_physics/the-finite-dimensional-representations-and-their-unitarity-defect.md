@@ -176,7 +176,7 @@ $(0,0)$ has $d=0$, its invariant form is positive definite, and it is the only u
 
 ### The Self-Conjugate Nontrivial Cases
 
-$(m,m)$ with $m>0$ has an invariant Hermitian form and it is indefinite. These are the representations whose form has a signature, and the four-vector is the physically important one. The pattern is that the form's inertia is fixed by the representation and cannot be adjusted by a choice of basis.
+$(m,m)$ with $m>0$ has an invariant Hermitian form and it is indefinite. These are the representations whose form has an inertia, and the four-vector is the physically important one. The pattern is that the form's inertia is fixed by the representation and cannot be adjusted by a choice of basis.
 
 ### The Conjugate Pairs
 

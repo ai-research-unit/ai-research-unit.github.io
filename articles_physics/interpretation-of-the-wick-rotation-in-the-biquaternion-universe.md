@@ -56,7 +56,7 @@ $$
 \langle\tilde H_\Psi\rangle_{\natural} = h_t^2 - (h'_x)^2 - (h'_y)^2 - (h'_z)^2
 $$
 
-has inertia $(1, 3)$, the mirror image of the signature on $\mathbb{B}_{\Phi}$.
+has inertia $(1, 3)$, the mirror image of the signs on $\mathbb{B}_{\Phi}$.
 
 The three subspaces are distinct, and each has its own algebraic and analytic character. The specific form of the differential operators on each subspace — the gradient, the d'Alembertian, and the square of the gradient — has been developed in the companion articles on the biquaternion analysis.
 
@@ -96,7 +96,7 @@ $$
 W=\mathrm{diag}(-i,\,1,\,1,\,1),\qquad W(i r'_t,\ r_x,\ r_y,\ r_z)=(r'_t,\ r_x,\ r_y,\ r_z)=(c\tau,\ r_x,\ r_y,\ r_z),
 $$
 
-with $\tau=r'_t$ the parameter of the image. The map multiplies the time coefficient by $-i$ and fixes the three spatial ones. It is $\mathbb{C}$-linear and bijective, and it is not a ring map. It carries $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ coefficient by coefficient, and it is not an isometry: the quadratic form changes sign in the time–time component, and the signature changes from $(3, 1)$ to $(4, 0)$.
+with $\tau=r'_t$ the parameter of the image. The map multiplies the time coefficient by $-i$ and fixes the three spatial ones. It is $\mathbb{C}$-linear and bijective, and it is not a ring map. It carries $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ coefficient by coefficient, and it is not an isometry: the quadratic form changes sign in the time–time component, and the inertia changes from $(3, 1)$ to $(4, 0)$.
 
 **Two operations carry the name, and the algebra tells them apart.** The substitution $r'_t\mapsto-i\tau$ is a rotation of the contour. It takes the material coordinate off the real axis, and at $\tau$ real the source point has $r'_t=-i\tau$ with time coefficient $c\tau$, which is real, so the source is not a point of $\mathbb{B}_{\Phi}$ at all. The relabelling $i r'_t\mapsto c\tau$ is a different operation: it multiplies the time coefficient by $-i$, produces the real coefficient $r'_t$, and has $\tau=r'_t$. That operation is the map $W$. It is a bijection of $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{H}$ and it is the one this article reads. The first is the device of the calculation; the second is the change of reality condition.
 
@@ -154,7 +154,7 @@ The reason the change is useful is that $\mathbb{B}_{H}$ is the compact real sli
 
 | Property | $\mathbb{B}_{H}$ | $\mathbb{B}_{\Phi}$ |
 |---|---|---|
-| Signature of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
+| Inertia of the quadratic form | $(4, 0)$ positive-definite | $(3, 1)$ indefinite |
 | d'Alembertian | $\partial^2/\partial \tau^2/c^2 + \Delta$ (elliptic) | $-\partial^2/\partial {r'_{t}}^2 + \Delta_\Phi$ (hyperbolic) |
 | Zero divisors | None | Light cone |
 | Division algebra | Yes | No |
@@ -215,7 +215,7 @@ The split is observed in practice. The successful uses (lattice computations of 
 The interpretation of the Wick rotation as a change of real slice is an **interpretation**, not an established result. What is established is the following.
 
 - The biquaternion algebra contains four natural four-dimensional real subspaces: $\mathbb{B}_{H}$, $\mathbb{B}_{iH}$, $\mathbb{B}_{\Psi}$, and $\mathbb{B}_{\Phi}$. Three of them — $\mathbb{B}_{H}$, $\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$ — are involved in the Wick rotation.
-- The three subspaces have distinct signatures: $(4, 0)$, $(1, 3)$, $(3, 1)$.
+- The three subspaces have distinct inertias: $(4, 0)$, $(1, 3)$, $(3, 1)$.
 - $\mathbb{B}_{H}$ and $\mathbb{B}_{\Phi}$ are the fixed spaces of the conjugate-linear involutions $\bar{\cdot}$ and $\flat$, and $\flat=\bar{\cdot}\circ T$ with $W^{2}=T$.
 - The standard Wick rotation acts on a point of $\mathbb{B}_{\Phi}$ by the coefficient map $W=\mathrm{diag}(-i,1,1,1)$, which sends the imaginary coefficient $i r'_t$ to the real $c\tau$ and leaves the spatial coefficients unchanged.
 - The resulting point lies in $\mathbb{B}_{H}$.

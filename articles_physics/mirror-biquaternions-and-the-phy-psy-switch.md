@@ -738,7 +738,7 @@ which is an identity and not a hypothesis. The quaternionic norm of the same ele
 
 Three different maps of the algebra are built from the central $i$, and only one of them is the coefficient map the series calls the Wick rotation. The table separates them.
 
-| Map | Domain and image | What it multiplies | Signature of the image | Multiplicative | Order |
+| Map | Domain and image | What it multiplies | Inertia of the image | Multiplicative | Order |
 | --- | --- | --- | --- | --- | --- |
 | Phy–Psy switch, $i\,\cdot$ | $\mathbb{B}_{\Phi}\leftrightarrow\mathbb{B}_{\Psi}$ | all four coefficients | $(1,3)$ | yes | $4$ |
 | restriction of the switch to the quaternion subspace, $i\,\cdot$ | $\mathbb{B}_{H}\to\mathbb{B}_{iH}$ | all four coefficients | $(0,4)$ | yes | $4$ |
@@ -760,7 +760,7 @@ $$
 r'_t\,e_t+\vec r .
 $$
 
-The first image carries one factor of $i$, now on the space slots, and its quadratic form is $h_t^{2}-\lvert\vec r\rvert^{2}$: Lorentzian, of the opposite signature to the source, still indefinite. The second image carries no $i$ at all, and its quadratic form is ${r'_{t}}^{2}+\lvert\vec r\rvert^{2}$: definite, of inertia $(4,0)$, Euclidean. One map relocates the $i$ and the other deletes it, and a relocated $i$ is a physics while a deleted $i$ is a computation.
+The first image carries one factor of $i$, now on the space slots, and its quadratic form is $h_t^{2}-\lvert\vec r\rvert^{2}$: Lorentzian, of the opposite signs to the source, still indefinite. The second image carries no $i$ at all, and its quadratic form is ${r'_{t}}^{2}+\lvert\vec r\rvert^{2}$: definite, of inertia $(4,0)$, Euclidean. One map relocates the $i$ and the other deletes it, and a relocated $i$ is a physics while a deleted $i$ is a computation.
 
 ### Why the One-Slot Map Cannot Be Multiplicative
 
@@ -787,7 +787,7 @@ Each map is good at one thing and useless at the other. The Wick rotation makes 
 
 The article is one construction and its consequences. The split of the algebra is fixed: every element is the sum of a material part and an informational part, the two are independent, and a relation between them is a constraint. On a **sector element** the switch is available and gives its **mirror**, $\tilde X_\Psi=i\tilde X_\Phi$, a sector element of the other sector with the same four real numbers. One multiplication of a sector element by $1+i$ gives the **mirror biquaternion**, $\tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi=(i-1)x'_t\,e_t+(1+i)\vec x_\Phi$, one element whose two projections are exactly the pair, and it is built before the projections are taken; the set $\mathbb{M}$ of such elements is a real four-dimensional subspace, tested by $\tilde H_\Psi=i\tilde R_\Phi$, or by one line without projections, $\tilde Q^{*}=i\tilde Q$.
 
-The switch is multiplication by the central $i$ on the whole element. Since $i^{*}=-i$ and $i$ is central, $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and the two sectors exchange; on a mixed element the two parts exchange as well, $\bigl(i\tilde Q\bigr)_\Phi=i\tilde H_\Psi$ and $\bigl(i\tilde Q\bigr)_\Psi=i\tilde R_\Phi$. Since $i$ is central, the switch passes through products, $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, so an equation may be carried across it. Since $(i\tilde Q)(i\tilde Q)^{*}=\tilde Q\tilde Q^{*}$, the Hermitian form is preserved; and since the image carries a factor $i$ in every coefficient, the trace is multiplied by $i$, the quaternionic norm and the determinant change sign, the spectrum turns a quarter turn, and the signature is reversed. The two members of the pair are two different elements, and that is why the switch is a construction and not a relabel.
+The switch is multiplication by the central $i$ on the whole element. Since $i^{*}=-i$ and $i$ is central, $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and the two sectors exchange; on a mixed element the two parts exchange as well, $\bigl(i\tilde Q\bigr)_\Phi=i\tilde H_\Psi$ and $\bigl(i\tilde Q\bigr)_\Psi=i\tilde R_\Phi$. Since $i$ is central, the switch passes through products, $i(\tilde X\tilde Y)=(i\tilde X)\tilde Y=\tilde X(i\tilde Y)$, so an equation may be carried across it. Since $(i\tilde Q)(i\tilde Q)^{*}=\tilde Q\tilde Q^{*}$, the Hermitian form is preserved; and since the image carries a factor $i$ in every coefficient, the trace is multiplied by $i$, the quaternionic norm and the determinant change sign, the spectrum turns a quarter turn, and the signs are reversed. The two members of the pair are two different elements, and that is why the switch is a construction and not a relabel.
 
 On the mirror biquaternion the two invariants take fixed factors, $\langle\tilde X_{\mathrm{mir}}\rangle_{\natural}=2i\langle\tilde X_\Phi\rangle_{\natural}$ and $\langle\tilde X_{\mathrm{mir}}\rangle_{*}=2\langle\tilde X_\Phi\rangle_{*}$, so the interval of a mirror biquaternion is imaginary and its Hermitian form is real and positive exactly when the material member is causal. The class is a subspace and not an algebra, its product being $2i\tilde X_\Phi\tilde Y_\Phi$, which lies in the class only when
 $\tilde X_\Phi\tilde Y_\Phi=i\tilde Y_\Phi\tilde X_\Phi$ and in that case vanishes; it is not a real form, the conjugation carrying it to the partner class

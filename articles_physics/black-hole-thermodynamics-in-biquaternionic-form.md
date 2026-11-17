@@ -476,7 +476,7 @@ Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, 
 
 6. **Backreaction and the information question.** Without microstates the framework cannot follow the emitted radiation's entanglement or the Page curve. Can the framework be extended so as to have a state-counting mechanism at all, or is the geometric entropy its final word on the subject?
 
-7. **Empirical contact.** The thermodynamics here is standard and supplies no discriminating prediction. Is there any regime — strong curvature, the extremal limit, a modified dispersion or a second light cone from the series' signature list — in which the horizon's thermodynamics would differ from the standard account, or is the framework's contribution structural only?
+7. **Empirical contact.** The thermodynamics here is standard and supplies no discriminating prediction. Is there any regime — strong curvature, the extremal limit, a modified dispersion or a second light cone from the series' list of sign patterns — in which the horizon's thermodynamics would differ from the standard account, or is the framework's contribution structural only?
 
 ## Summary
 

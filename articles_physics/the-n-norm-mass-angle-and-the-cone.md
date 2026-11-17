@@ -24,7 +24,7 @@ $$
 
 **The single idea is that the norm decides invertibility, and invertibility is the only sharp division the algebra has.** Every other partition of the corpus is finer and sits inside one of these two cases. The regular case is the group of invertibles: open, dense, connected. The degenerate case is the null cone: closed, of real codimension two, the wall of the group. Mass, the massless boundary, the reversible process and the zero divisor are four readings of this one cut.
 
-**The second idea is that the norm is complex, so the modulus is a branch, and the branch is the only convention in the decomposition.** A complex number has two square roots. One of them is chosen by a rule fixed once and for all, and with the rule fixed, all four factors are functions of the element. On the material sector the choice is not free, because there the norm is real: the modulus is either real or purely imaginary, and which one it is is exactly the timelike–spacelike distinction. The convention that looks arbitrary on the algebra is a signature on the sector.
+**The second idea is that the norm is complex, so the modulus is a branch, and the branch is the only convention in the decomposition.** A complex number has two square roots. One of them is chosen by a rule fixed once and for all, and with the rule fixed, all four factors are functions of the element. On the material sector the choice is not free, because there the norm is real: the modulus is either real or purely imaginary, and which one it is is exactly the timelike–spacelike distinction. The convention that looks arbitrary on the algebra is a sign pattern on the sector.
 
 **The entry is in three parts, and the title names them.** The **mass** is the scale $r$, the modulus of the norm. The **angle** is the phase $\varkappa$ of the modulus, one number in a half-circle. The **cone** is the set where both disappear. The boost angle and the rotor angle belong to the word but are not named in the title, because they are motion and orientation and the next entry of the category reads them; here they are carried along so that the four factors are all present.
 
@@ -75,7 +75,7 @@ $$
 N(\tilde Q)=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=Q_t^{2}+B^{2}.
 $$
 
-**It is a quadratic form of the eight real coordinates with complex coefficients, and it is not a length.** The Hermitian norm of the previous entry is a sum of squared moduli and is positive definite. The quaternionic norm is a sum of squares and is not: on the real quaternion subspace it is the Euclidean form of inertia $(4,0)$, on the pure imaginary line it is negative definite, and on the material sector it is the Minkowski form of inertia $(3,1)$. One formula, four signatures.
+**It is a quadratic form of the eight real coordinates with complex coefficients, and it is not a length.** The Hermitian norm of the previous entry is a sum of squared moduli and is positive definite. The quaternionic norm is a sum of squares and is not: on the real quaternion subspace it is the Euclidean form of inertia $(4,0)$, on the pure imaginary line it is negative definite, and on the material sector it is the Minkowski form of inertia $(3,1)$. One formula, four sign patterns.
 
 **The identity of the norm is the reason it decides invertibility.**
 
@@ -106,7 +106,7 @@ $$
 N(X+Y)=N(X)+N(Y)+2\langle X,Y\rangle .
 $$
 
-**The cross term is the interference of the two summands, and it can cancel the sum.** Two elements of norm one can add to an element of norm zero, and two of norm zero can add to an element of norm two. That is what a quadratic form of indefinite signature does, and it is why the interval and not the weight is the measure of a composition.
+**The cross term is the interference of the two summands, and it can cancel the sum.** Two elements of norm one can add to an element of norm zero, and two of norm zero can add to an element of norm two. That is what an indefinite quadratic form does, and it is why the interval and not the weight is the measure of a composition.
 
 **The criterion of invertibility has five equivalent forms, and the equivalence is the content of the first case.** For $\tilde Q\neq0$:
 
@@ -161,7 +161,7 @@ $$
 N(\tilde R)=-r_t^{2}+\lvert\vec r\rvert^{2}\in\mathbb R .
 $$
 
-**A real norm has only two directions, and they are the two signatures.** If $N>0$ the modulus is real and positive and the phase is $1$; if $N<0$ the modulus is purely imaginary and the phase is $i$; if $N=0$ the element is on the cone and there is no phase. So on the material sector
+**A real norm has only two directions, and they are the two sign patterns.** If $N>0$ the modulus is real and positive and the phase is $1$; if $N<0$ the modulus is purely imaginary and the phase is $i$; if $N=0$ the element is on the cone and there is no phase. So on the material sector
 
 $$
 \varkappa=\begin{cases}1,&N>0\quad\text{(spacelike)},\\[2pt] i,&N<0\quad\text{(timelike)},\\[2pt] \text{undefined},&N=0\quad\text{(lightlike)} .\end{cases}
@@ -171,7 +171,7 @@ $$
 
 **The consequence is that matter sits at the endpoint of the phase interval.** The phase of a timelike four-vector is exactly $i$, which is the boundary value $\psi/2=\pi/2$ of the half-circle. It is not an interior point of the range that matter happens to occupy. It is the endpoint, and the endpoint is reached because the norm is real and negative, which is the definition of timelike.
 
-**The angle is therefore a signature label on the sector and a free parameter off it.** This is the sharpest difference between the two readings of one complex number. On the algebra the phase is one continuous parameter of the group of invertibles. On the material sector it takes two values, and the two values are the two halves of the light cone, and the third case is the cone itself.
+**The angle is therefore a sign label on the sector and a free parameter off it.** This is the sharpest difference between the two readings of one complex number. On the algebra the phase is one continuous parameter of the group of invertibles. On the material sector it takes two values, and the two values are the two halves of the light cone, and the third case is the cone itself.
 
 ## The Two Cases
 
@@ -496,7 +496,7 @@ $$
 
 **The boundary.** The mean of two phases is defined modulo $\pi$, and the branch is what turns the class into a number. Statements about the sign of $\arg\varkappa$ therefore depend on the branch, and the branch is a convention.
 
-### I.9.e — On Matter the Angle Is Not Free: It Is the Signature
+### I.9.e — On Matter the Angle Is Not Free: It Is the Sign
 
 **Read:** on the material sector $N\in\mathbb R$, so $\varkappa=1$ for $N>0$, $\varkappa=i$ for $N<0$, and there is no phase for $N=0$.
 
@@ -656,4 +656,4 @@ The three statements to carry away are these. The quaternionic norm is the only 
 
 **In this category.** *The Four Forms and the Four Norms* supplies the four measures, their Gram matrices and the proof that only the quaternionic one is multiplicative. *The Four Products: Composition, Probability, Causality and Gauge* supplies the products whose scalar parts the measures are. *The Spectrum and the Two Modes* supplies the two eigenvalues, the characteristic polynomial and the identity $N=\lambda_+\lambda_-$. *The Two Sectors: Split and the Four Bridges* supplies the coordinate split on which the material sector and the sign of the norm depend. *The Element: the Six Subspaces and the Two Ledgers* supplies the six subspaces and the two ledgers. *The H Norm: Amplitude and Frame* is the previous entry and supplies the Cartan pair that this entry brackets the other way. The next entries are *The Partition: Two Invariants and Four Regimes*, which reads the four sectors as a partition, and *Mass in Motion: The Region of Both Invariants*, which reads the boost on the sector where both invariants are nonzero.
 
-**The sources of this entry.** [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) states the two cases as the reversible and the irreversible. [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) places the massless content on the cone. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) compares the three bracketings and their domains. [The Massless Regime](the-massless-regime.html) is the family of §*The Two Walls*, read as a limit of the polar data. [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html) identifies the two cones. [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html) is the earlier reading of the same wall. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the signatures.
+**The sources of this entry.** [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html) states the two cases as the reversible and the irreversible. [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html) places the massless content on the cone. [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html) compares the three bracketings and their domains. [The Massless Regime](the-massless-regime.html) is the family of §*The Two Walls*, read as a limit of the polar data. [The Light Cone as the Biquaternion Zero-Divisor Cone](the-light-cone-as-the-biquaternion-zero-divisor-cone.html) identifies the two cones. [Zero Divisors as a Physical Locus in Biquaternionic Form](zero-divisors-as-a-physical-locus-in-biquaternionic-form.html) is the earlier reading of the same wall. [Norm and Pairing Conventions](norm-and-pairing-conventions.html) fixes the letters and the inertias.

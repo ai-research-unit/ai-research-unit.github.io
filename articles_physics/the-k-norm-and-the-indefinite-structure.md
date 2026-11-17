@@ -18,7 +18,7 @@ $$
 
 **The fourth claim is that no spectral refinement of this partition exists.** The obvious temptation is a plane with the K value on one axis and the square of the vector part on the other, in imitation of the plane that organises the spectral strata of the tenth section. That plane is declined, and the reason is that its two axes are invariants of different groups. The isometry group of the form carries a null element of one spectral type to a null element of the other type, and a similarity of the algebra moves the value of the norm while leaving the spectrum alone. The refinement that does exist pairs the K value with the algebraic norm.
 
-**The fifth claim is the reading, and it is stated here so that it can be judged against the mathematics.** The K norm is the weight that a state space carries when it keeps a time direction. An inner product that tells a time direction from the spatial ones is necessarily indefinite, and the K norm is the algebra's own indefinite form. The price is stated in the same place: the positive region of an indefinite form is not convex, not pointed and not traced, so it cannot be a probability cone. A Lorentzian state space must carry two forms, one for its signature and one for its probability, and the algebra supplies both.
+**The fifth claim is the reading, and it is stated here so that it can be judged against the mathematics.** The K norm is the weight that a state space carries when it keeps a time direction. An inner product that tells a time direction from the spatial ones is necessarily indefinite, and the K norm is the algebra's own indefinite form. The price is stated in the same place: the positive region of an indefinite form is not convex, not pointed and not traced, so it cannot be a probability cone. A Lorentzian state space must carry two forms, one for its inertia and one for its probability, and the algebra supplies both.
 
 **The strongest objection is that a norm which can be negative is not a norm at all.** The word is used here in the sense of a quadratic form: a real homogeneous function of degree two whose polar form is non-degenerate. The K norm qualifies, and what it lacks is positivity. The objection is right about the word and blind to the content, because the lack of positivity is the whole of what the norm says. A positive norm cannot distinguish a time direction from a spatial one; an indefinite norm can do nothing else.
 
@@ -55,7 +55,7 @@ $$
 - It is the real companion of the plain norm $P=Q_t^{2}-B^{2}$, in the sense that the two have the same inertia and the K norm is the plain one read on moduli.
 - It is not multiplicative in either direction: two null elements can have the regular product $2e_t$, and the regular element $e_t+\tfrac12\vec e_x$ has a square of value $-7/16$.
 - Both conjugations preserve it, quaternionic and Hermitian alike; no algebra multiplication preserves it except a scalar of modulus one.
-- Its realified inertia is $(2,6)$, and its signature as a form on $\mathbb{C}^{4}$ is $(1,3)$: positive on the centre, negative on the vector subspace.
+- Its realified inertia is $(2,6)$, and its inertia as a form on $\mathbb{C}^{4}$ is $(1,3)$: positive on the centre, negative on the vector subspace.
 
 ### The Two Sectors
 
@@ -105,7 +105,7 @@ $$
 \mathrm{Kr}(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural*}=|Q_t|^{2}-\lVert\vec Q\rVert^{2}.
 $$
 
-**Four properties follow from the formula and from nothing else.** The value is real, because the diagonal of a Hermitian form is real. It is homogeneous of degree two under complex scalars, $\mathrm{Kr}(\lambda\tilde Q)=|\lambda|^{2}\mathrm{Kr}(\tilde Q)$, so its zero set is a cone and its non-zero level sets are homogeneous. Its polar form is non-degenerate, with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis. Its signature is $(1,3)$ as a form on $\mathbb{C}^{4}$ and $(2,6)$ on the eight real parameters.
+**Four properties follow from the formula and from nothing else.** The value is real, because the diagonal of a Hermitian form is real. It is homogeneous of degree two under complex scalars, $\mathrm{Kr}(\lambda\tilde Q)=|\lambda|^{2}\mathrm{Kr}(\tilde Q)$, so its zero set is a cone and its non-zero level sets are homogeneous. Its polar form is non-degenerate, with Gram matrix $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis. Its inertia is $(1,3)$ as a form on $\mathbb{C}^{4}$ and $(2,6)$ on the eight real parameters.
 
 **The norm is the plain norm read on moduli.** The plain norm is $P(\tilde Q)=Q_t^{2}-B^{2}$ with $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$, and the quaternionic norm is $N(\tilde Q)=Q_t^{2}+B^{2}$. Replacing each square by the square of the modulus in the first gives the K norm, and doing the same in the second gives the Hermitian norm. So the two real norms are the two complex norms read on moduli, and each real norm keeps the inertia of its complex partner while losing its complex value.
 
@@ -388,9 +388,9 @@ $$
 
 ## The Six Restrictions
 
-**The restriction of the K norm to each of the six remarkable subspaces has a definite signature, and the signatures decide the algebraic status of the null elements.**
+**The restriction of the K norm to each of the six remarkable subspaces has a definite inertia, and the inertias decide the algebraic status of the null elements.**
 
-| subspace | real dimension | signature of $\mathrm{Kr}$ | non-zero null elements | algebraic status |
+| subspace | real dimension | inertia of $\\mathrm{Kr}$ | non-zero null elements | algebraic status |
 | --- | --- | --- | --- | --- |
 | the centre $\mathbb{B}_{C}$ | $2$ | $(2,0)$ | none | — |
 | the vector subspace $\mathbb{B}_{V}$ | $6$ | $(0,6)$ | none | — |
@@ -462,7 +462,7 @@ $$
 
 ## The Interpretations
 
-### I.11.a — The Fourth Norm Is a Signature, Not a Magnitude
+### I.11.a — The Fourth Norm Is an Inertia, Not a Magnitude
 
 **Read:** the four norms of §*The Fourth Norm*, the reality of the K value, and the sign that no other norm of the algebra can carry.
 
@@ -472,7 +472,7 @@ $$
 
 **The comparison with the plain norm fixes what is specific to the K norm.** The plain norm $P=Q_t^{2}-B^{2}$ has the same inertia and a complex value; it is the bilinear object. The K norm replaces every square by the square of a modulus, and the replacement does two things at once: it makes the value real and it makes the value invariant under both conjugations. A metric position must be real and must not care which conjugation is applied, and those two requirements produce the K norm and nothing else.
 
-**The boundary.** A signature is a sign pattern and not a physical quantity. That the algebra's signature is $(1,3)$ is a statement about the coefficient basis; that the physical metric has one time and three space directions is a reading of that statement, and the two are not the same proposition.
+**The boundary.** An inertia is a sign pattern and not a physical quantity. That the algebra's inertia is $(1,3)$ is a statement about the coefficient basis; that the physical metric has one time and three space directions is a reading of that statement, and the two are not the same proposition.
 
 ### I.11.b — The Weight of a State Space That Keeps a Time Direction
 
@@ -480,7 +480,7 @@ $$
 
 **A state space that keeps a time direction must carry an indefinite inner product.** If the inner product is positive definite, no direction is distinguished and the space has no clock. If one direction counts with a plus and the others with a minus, the space has a clock and nothing else has changed. The K norm is exactly such a form: plus on the centre, minus on the vector subspace, and the fundamental symmetry $J={}^{\natural}$ is the operator that turns the indefinite form into the definite one.
 
-**The reading is that the K norm is the weight of such a space and the Hermitian norm is its probability.** The two are related by the fundamental symmetry and by nothing else: the indefinite form is the definite form with the parity inserted. So the pair $(H,\mathrm{Kr})$ is the pair that a Lorentzian state space needs, one form for the norm of a state and one for the signature of the space it lives in.
+**The reading is that the K norm is the weight of such a space and the Hermitian norm is its probability.** The two are related by the fundamental symmetry and by nothing else: the indefinite form is the definite form with the parity inserted. So the pair $(H,\mathrm{Kr})$ is the pair that a Lorentzian state space needs, one form for the norm of a state and one for the inertia of the space it lives in.
 
 **The corpus already has the definite half, and it has it in one place.** The state slice of the informational sector is the Bloch ball, with the pure states on the boundary and the mixed states inside. That state space is non-relativistic, and the entry of that sector says so: a boost carries a state off the slice. The K norm is the form that a relativistic state space would carry, and the algebra supplies it while it does not supply the state space.
 
@@ -494,7 +494,7 @@ $$
 
 **The reading is that the interior of the light cone is safe.** A four-momentum inside the cone has a positive squared interval and is invertible in the algebra; a four-momentum on the cone is a zero divisor on the material chart; a four-momentum outside the cone is spacelike and has no mass shell. The passage from *unit* to *zero divisor* happens at the wall, and the wall is where the mass vanishes.
 
-**The implication is one way, and the failure of the converse is the interesting part.** an invertible element can be negative, and it can be null. So invertibility is strictly weaker than positivity, and the algebra contains units of every signature. The reading is that reversibility is not the same property as being inside the cone: a spacelike element is perfectly invertible and a lightlike element can be invertible too.
+**The implication is one way, and the failure of the converse is the interesting part.** an invertible element can be negative, and it can be null. So invertibility is strictly weaker than positivity, and the algebra contains units of every sign pattern. The reading is that reversibility is not the same property as being inside the cone: a spacelike element is perfectly invertible and a lightlike element can be invertible too.
 
 **The boundary.** The theorem is about the plain product and the K norm, and its physical reading uses the material chart. On that chart the implication is nearly trivial, because the value is minus the algebraic norm and positivity is the timelike condition. In the full algebra the implication is not trivial, because the two conditions are independent there, and that is where the theorem earns its place.
 
@@ -608,7 +608,7 @@ $$
 
 **The reading is that this is the price of a Lorentzian state space, and it is paid in one coin.** A definite form gives a convex cone, a norm and a normalisable state; it also gives no time direction. An indefinite form gives the time direction and loses the convexity. A theory that wants both must carry two forms and use each for what it can do.
 
-**The algebra is explicit about which form does which.** The Hermitian norm supplies the amplitude, the topological size and the unit-weight slice; the polar decomposition, the Born weight and the Bloch ball all follow it. The K norm supplies the signature, the side of the cone and the isometry group; the indefinite geometry and the $J$-adjoint follow it. Neither can do the other's work, and the entry's two partitions are the statement of that division.
+**The algebra is explicit about which form does which.** The Hermitian norm supplies the amplitude, the topological size and the unit-weight slice; the polar decomposition, the Born weight and the Bloch ball all follow it. The K norm supplies the inertia, the side of the cone and the isometry group; the indefinite geometry and the $J$-adjoint follow it. Neither can do the other's work, and the entry's two partitions are the statement of that division.
 
 **The boundary.** Nothing here says that a physical state space is indefinite. It says that if one is, its positivity cone is not convex, and that the algebra contains exactly one form for each of the two roles. The choice of which form is the probability is a reading, and the entry makes it in favour of the Hermitian one.
 
@@ -666,7 +666,7 @@ $$
 | the adjoint | the K adjoint $T^{\dagger}=JT^{*}J$ exists everywhere; the polar decomposition exists exactly on the invertibles |
 | the level sets | $\{\mathrm{Kr}=c\}$ is $\mathrm{U}(1,3)/\mathrm{U}(3)$ for $c>0$ and $\mathrm{U}(1,3)/\mathrm{U}(1,2)$ for $c<0$, both of dimension $7$ |
 | the geometry | the positive family is the complex hyperbolic ball, its boundary the wall, the level sets the Bergman spheres |
-| the readings | weight, signature, light cone, mass, mixedness, gauge frame, and the price of an indefinite state space |
+| the readings | weight, inertia, light cone, mass, mixedness, gauge frame, and the price of an indefinite state space |
 
 ## Summary of Notation
 

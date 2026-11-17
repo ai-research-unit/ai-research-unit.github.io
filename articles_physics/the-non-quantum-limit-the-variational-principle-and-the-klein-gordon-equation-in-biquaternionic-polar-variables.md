@@ -38,7 +38,7 @@ Three blocks, and the middle one carries the phase twice.
 
 **The first block is one object and not two.** $\partial_{r'_{t}}$ and $\vec\nabla_\Phi$ carry the same power, because the scale varies on a length $L$ in space and on the length $L$ in the material time $r'_{t}=ct'$. **The block is $(\partial r)^{2}$ and the metric structure of the material sector is what makes its two halves one term**, so the order $2$ is assigned to the block and not to a spatial piece of it.
 
-**The second block is the mass shell before it is a shell.** Its bracket is $\lvert\partial\theta_{\mathrm{pha}}\rvert^{2}$ with the material signature, so the truncated action is the statement that this bracket equals $k_{m}^{2}$ — and that is the mass shell with $S=\hbar\theta_{\mathrm{pha}}$.
+**The second block is the mass shell before it is a shell.** Its bracket is $\lvert\partial\theta_{\mathrm{pha}}\rvert^{2}$ with the material signs, so the truncated action is the statement that this bracket equals $k_{m}^{2}$ — and that is the mass shell with $S=\hbar\theta_{\mathrm{pha}}$.
 
 **Why the middle block cannot be the scale's partner.** In the general element the action is the sigma-model form $g_{ab}(p)\,\partial p^{a}\partial p^{b}$ with a metric on the eight parameters, and the central field is its restriction to two coordinates. **The scale's block and the angle's block are two diagonal blocks of one metric**, and the order is a property of the coordinate: derivatives of the scale are order $\epsilon$ and derivatives of the angle are order zero.
 
@@ -57,7 +57,7 @@ $$
 
 **The contrast with the first-order family is one sentence.** There the deleted term is $\lvert\vec\nabla_\Phi r\rvert^{2}$, which a boost does not preserve, so the limit there is a statement in a chosen frame; here the limit is a statement on the manifold, and a reader who wants the covariant form of the non-quantum limit must take it from this equation.
 
-**What is not deleted, and it matters.** The phase's block keeps both signs of the material signature, so the truncated action is not a Euclidean or a static object: it carries $(\partial_{r'_{t}}\theta)^{2}$ and $-\lvert\vec\nabla_\Phi\theta\rvert^{2}$ and its Euler–Lagrange equations are the relativistic ones. **The limit is not the non-relativistic reduction**; the second truncation, in $\beta=v/c$, is a different operation performed on the truncated theory.
+**What is not deleted, and it matters.** The phase's block keeps both signs of the material signs, so the truncated action is not a Euclidean or a static object: it carries $(\partial_{r'_{t}}\theta)^{2}$ and $-\lvert\vec\nabla_\Phi\theta\rvert^{2}$ and its Euler–Lagrange equations are the relativistic ones. **The limit is not the non-relativistic reduction**; the second truncation, in $\beta=v/c$, is a different operation performed on the truncated theory.
 
 ## Varying the Scale: the Mass Shell
 
@@ -142,7 +142,7 @@ which is $\partial_{r'_{t}}(\rho_{\mathrm{num}}\partial_{r'_{t}}S)-\vec\nabla_\P
 
 The parent's central action has three blocks: the scale's kinetic term, the phase's kinetic term, and the mass term. One power of $\epsilon=1/(k_{\Phi}L)$ goes to each derivative of the scale, so the first block is order two and the other two are order zero.
 
-The limit is the deletion of the first block, which is $(\partial r)^{2}$ in the material signature and is a Lorentz scalar. **The deletion commutes with boosts, and the truncated action is covariant** — the property the first-order family does not have, because there the deleted term is a spatial gradient alone.
+The limit is the deletion of the first block, which is $(\partial r)^{2}$ in the material signs and is a Lorentz scalar. **The deletion commutes with boosts, and the truncated action is covariant** — the property the first-order family does not have, because there the deleted term is a spatial gradient alone.
 
 Varying the scale of the truncated action gives the mass shell as an algebraic constraint, and varying the phase gives the transport equation, unchanged term for term. The truncated action is $r^{2}\left[(\partial\theta)^{2}-k_{m}^{2}\right]$, degenerate in the scale, and its content is relativistic irrotational dust with the mass shell as its Hamiltonian.
 

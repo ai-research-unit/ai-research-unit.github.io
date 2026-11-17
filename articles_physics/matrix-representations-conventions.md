@@ -26,7 +26,7 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 
 **The test.** Open the article at a body section and read the symbols. A sigma or a gamma in a body section is a violation. The display is replaced by its basis operators before the article is published, and the array moves to the legacy section if it is worth keeping.
 
-**Why this is a rule and not a taste.** An array carries a frame, a dimension and a signature inside a symbol, and the sentence that prints it does not say so. A basis operator carries none of the three. That is the defect stated in full in *Why AXF Matrices instead of Pauli and Gamma Matrices*, and it is the reason the two formulations are kept as a record and not used as a language.
+**Why this is a rule and not a taste.** An array carries a frame, a dimension and a sign pattern inside a symbol, and the sentence that prints it does not say so. A basis operator carries none of the three. That is the defect stated in full in *Why AXF Matrices instead of Pauli and Gamma Matrices*, and it is the reason the two formulations are kept as a record and not used as a language.
 
 ## The Matrix Models
 

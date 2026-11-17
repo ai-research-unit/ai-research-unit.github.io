@@ -37,7 +37,7 @@
 | the simple module, the isomorphism $\mathbb{B}\cong\operatorname{End}_\mathbb{C}(S)$ and $\mathbb{B}\cong S\oplus S$, the classification of the modules | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
 | the two idempotents of an axis, the Peirce basis, the four corners, the minimal left ideals and the nilpotents | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | the roots of one, the idempotents, their conjugacy and the families indexed by the axis | [Idempotents](../articles_maths/idempotents.html) |
-| the four forms of the twelve products, the Gram matrices and the signatures | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
+| the four forms of the twelve products, the Gram matrices and the inertias | [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html) |
 | the compact group, complete reducibility, the averaging argument and the highest-weight string | [Representations of Groups](../articles_maths/representations-of-groups.html) |
 
 **The fourth row owns the section, and the three above it give the spins that the section then places.** The other six supply the tools the section uses and does not prove: the module category, which makes the count of types a theorem; the Peirce basis, which produces the ideal from the axis; the idempotents, which make the family of ideals a family and not a choice; the polar form of the norm, which carries the completeness proof and does the work a trace form does in a treatment by matrices; and the compactness of the group, which makes the reducibility argument work without a finiteness hypothesis.
@@ -415,7 +415,7 @@ The three closures are not a decomposition. The carriers are one algebra read th
 - [The Category of Modules](../articles_maths/the-category-of-modules.html), for the simple module, the isomorphism $\mathbb{B}\cong\operatorname{End}_\mathbb{C}(S)$ and the classification of the modules.
 - [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html), for the two idempotents, the four corners and the minimal left ideals.
 - [Idempotents](../articles_maths/idempotents.html), for the roots of one and the families indexed by the axis.
-- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the polar form of the norm and the signatures.
+- [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the polar form of the norm and the inertias.
 - [Representations of Groups](../articles_maths/representations-of-groups.html), for complete reducibility and the highest-weight string.
 - [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html), for the actions whose carriers these are.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the central operator and the restriction to the centre.
