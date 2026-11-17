@@ -339,7 +339,7 @@ $$
 and the Hilbert–Schmidt distance between two states is half the Euclidean distance between their radius vectors,
 
 $$
-2\,\mathrm{Sc}\bigl((\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2})^{2}\bigr)=\tfrac12\lvert\vec r_1-\vec r_2\rvert^{2}.
+2\,\mathrm{Sc}\bigl((\tilde{Ϛ}_{\Psi,1}-\tilde{Ϛ}_{\Psi,2})^{2}\bigr)=\tfrac12\lvert\vec s_{\Psi,1}-\vec s_{\Psi,2}\rvert^{2}.
 $$
 
 The two distances are the two natural metrics of the ball, and both are functions of the radius vectors alone. The geometry is Euclidean in the coordinates and statistical in the radius, and the two readings agree on what the centre is.

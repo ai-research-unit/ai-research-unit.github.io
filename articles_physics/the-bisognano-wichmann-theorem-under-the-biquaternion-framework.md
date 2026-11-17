@@ -183,8 +183,8 @@ $$
 $$
 were recomputed in rational arithmetic for two faithful states whose Bloch vectors were chosen after the formulas, not before them:
 $$
-\vec r_1=\Big(\tfrac{12}{25},\tfrac{16}{25},\tfrac{12}{25}\Big),\qquad
-\vec r_2=\Big(\tfrac23,\tfrac29,\tfrac49\Big),
+\vec s_{\Psi,1}=\Big(\tfrac{12}{25},\tfrac{16}{25},\tfrac{12}{25}\Big),\qquad
+\vec s_{\Psi,2}=\Big(\tfrac23,\tfrac29,\tfrac49\Big),
 $$
 both with $|\vec s_{\Psi}|<1$ and neither along a basis axis. All four identities hold exactly for both.
 
@@ -214,7 +214,7 @@ The question posed for this article is whether the biquaternion framework's boos
 $$
 H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta G_1+(\log Z)e_t,\qquad Z=2\,\mathrm{Sc}(\exp(-\beta G_1)),
 $$
-which is proportional to the boost generator $G_1$ modulo the central term $(\log Z)e_t$ (verified numerically to machine precision), so the generator identification holds exactly for that state. But for a generic faithful state $H_{\mathrm{modular}}$ is **not** proportional to $G_1$: for the state with Bloch vector $\vec r_1$ above, the Bloch vector of $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ is along $\vec r_1$ and is not along $\vec e_x$. The identification therefore requires the thermal state for the boost, which is what the theorem's vacuum supplies and what the algebra alone does not.
+which is proportional to the boost generator $G_1$ modulo the central term $(\log Z)e_t$ (verified numerically to machine precision), so the generator identification holds exactly for that state. But for a generic faithful state $H_{\mathrm{modular}}$ is **not** proportional to $G_1$: for the state with Bloch vector $\vec s_{\Psi,1}$ above, the Bloch vector of $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$ is along $\vec s_{\Psi,1}$ and is not along $\vec e_x$. The identification therefore requires the thermal state for the boost, which is what the theorem's vacuum supplies and what the algebra alone does not.
 
 **Summary of the comparison.** The biquaternion boost rotor gives the same generator as the Bisognano–Wichmann modular operator, with the correct rapidity $2\pi s$; that is checked. It does not give the same one-parameter $*$-unitary flow inside the finite-dimensional algebra, because the flow is $*$-unitary while the finite-dimensional boost rotor is Hermitian and its action on $\mathbb{B}_{\Phi}$ is two-sided. This is a gap, and it is the same gap the parent modular-theory article recorded — the finite-dimensional algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$ and its modular flow is inner — restated at the wedge. It is left visible rather than closed.
 

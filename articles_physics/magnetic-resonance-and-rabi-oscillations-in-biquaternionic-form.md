@@ -194,7 +194,7 @@ The first is a $\pi$-pulse: it inverts the spin, carrying $\tilde\Pi_1(\vec u_z)
 
 ## The Bloch Picture
 
-The state at any time can be written $\tilde{Ϛ}_{\Psi}(r'_t) = \tfrac12(e_t + i\vec s_{\Psi}(r'_t))$, with $\vec s_{\Psi}(r'_t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
+The state at any time can be written $\tilde{Ϛ}_{\Psi}(r'_t) = \tfrac12(e_t + i\vec s_{\Psi}(r'_t))$, with $\vec s_{\Psi}(r'_t)$ the Bloch vector. Substituting into the Schrödinger equation and using the commutator identity $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2(\vec h_{\Psi,1}\times\vec h_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*, the Bloch vector obeys
 
 $$
 \boxed{\;d\vec s_{\Psi}/dr'_t = \frac{1}{c}\,\vec\omega_{\mathrm{eff}}\times\vec s_{\Psi}\;},

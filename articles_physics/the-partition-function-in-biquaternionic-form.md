@@ -62,22 +62,22 @@ It is a complex number for a general biquaternion and a **real** number when $\t
 On $\mathbb{B}_{\Psi}$ this extraction is the plain form used throughout the corpus, read as the plain pairing. Writing
 
 $$
-\tilde{H}_{\Psi,1}=c r_{t,1}\,e_t+i\vec r_1,\qquad \tilde{H}_{\Psi,2}=c r_{t,2}\,e_t+i\vec r_2,\qquad c r_{t,1},c r_{t,2}\in\mathbb{R},\ \ \vec r_{\Psi,1},\vec r_{\Psi,2}\in\mathbb{R}^3,
+\tilde{H}_{\Psi,1}=h_{t,1}\,e_t+i\vec h_{\Psi,1},\qquad \tilde{H}_{\Psi,2}=h_{t,2}\,e_t+i\vec h_{\Psi,2},\qquad h_{t,1},h_{t,2}\in\mathbb{R},\ \ \vec h_{\Psi,1},\vec h_{\Psi,2}\in\mathbb{R}^3,
 $$
 
 for two elements of $\mathbb{B}_{\Psi}$, the product has scalar part
 
 $$
-\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2},
+\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2},
 $$
 
 and hence
 
 $$
-2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2}).
+2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2\,(h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}).
 $$
 
-The derivation of this formula and its role in the Born rule are the subject of the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison*; here we only use it. Two features matter for the partition function. The formula is **bilinear and symmetric**, and it is **real** when both factors lie in $\mathbb{B}_{\Psi}$. Note also that the product $\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}$ need not itself lie in $\mathbb{B}_{\Psi}$ — it acquires a real vector part $-\vec r_{\Psi,1}\times\vec r_{\Psi,2}$ in the quaternion product — and yet its scalar part, and therefore the doubled value, is still given by the formula above. The scalar-part formula does not require the product to remain in $\mathbb{B}_{\Psi}$; it requires only the factors to.
+The derivation of this formula and its role in the Born rule are the subject of the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison*; here we only use it. Two features matter for the partition function. The formula is **bilinear and symmetric**, and it is **real** when both factors lie in $\mathbb{B}_{\Psi}$. Note also that the product $\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}$ need not itself lie in $\mathbb{B}_{\Psi}$ — it acquires a real vector part $-\vec h_{\Psi,1}\times\vec h_{\Psi,2}$ in the quaternion product — and yet its scalar part, and therefore the doubled value, is still given by the formula above. The scalar-part formula does not require the product to remain in $\mathbb{B}_{\Psi}$; it requires only the factors to.
 
 A remark on the alternative. Twice the scalar part is not the only natural scalar that can be extracted from an element of $\mathbb{B}_{\Psi}$; the **biquaternion norm** $\langle\tilde Q\rangle_{\natural} = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ is another. On $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ it gives $\langle\tilde H_\Psi\rangle_{\natural}=h_t^2-|\vec h_\Psi|^2$, of inertia $(1,3)$, and it is the form whose future cone defines the state space. A later section shows that the biquaternion norm of the thermal operator is blind to the level splitting and so cannot serve as a partition function. The scalar part doubled, not the norm, is the scalar that thermodynamics uses; the companion article *The Born Rule from the Hermitian Form — Derivation and Comparison* makes the general case for why.
 
@@ -255,7 +255,7 @@ The algebra does not force a modification. A genuine modification appears only i
 | $\mathbb{B}_{H}$ | Real-quaternion subspace (fixed points of complex conjugation) |
 | $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ | Hermitian Hamiltonian (observable) |
 | $2\,\mathrm{Sc}(\tilde Q)=\operatorname{tr}\mathsf M_2(\tilde Q)$ | Twice the scalar part, the matrix trace of the image |
-| $2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2(r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2})$ | Doubled scalar-part formula on $\mathbb{B}_{\Psi}$ |
+| $2\,\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*})=2(h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2})$ | Doubled scalar-part formula on $\mathbb{B}_{\Psi}$ |
 | $Z=2\,\mathrm{Sc}(\exp(-\beta H))$ | Partition function |
 | $\tilde{Ϛ}_{\Psi}=\exp(-\beta H)/Z$ | Thermal state |
 | $\exp(-\beta H)=\exp(-\beta h_t)\big(\cosh(\beta|\vec h_\Psi|)e_t-i\sinh(\beta|\vec h_\Psi|)\vec u_\Psi\big)$ | Thermal operator |

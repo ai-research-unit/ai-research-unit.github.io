@@ -212,7 +212,7 @@ The rotation angle grows with the rapidity and saturates at a finite value; the 
 
 **How well can a boost be read from a spin?** The transverse spin states produced by two different boosts are the dephased states with Bloch vectors of length $\cos\theta_{\mathrm{wgn},1}$ and $\cos\theta_{\mathrm{wgn},2}$ along the Wigner axis, and for qubits the trace distance between two such states is one half the Euclidean distance of their Bloch vectors,
 $$
-D(\tilde{Ϛ}_{\Psi,1},\tilde{Ϛ}_{\Psi,2}) = \tfrac12|\vec r_1-\vec r_2| = \tfrac12|\cos\theta_{\mathrm{wgn},1} - \cos\theta_{\mathrm{wgn},2}| .
+D(\tilde{Ϛ}_{\Psi,1},\tilde{Ϛ}_{\Psi,2}) = \tfrac12|\vec s_{\Psi,1}-\vec s_{\Psi,2}| = \tfrac12|\cos\theta_{\mathrm{wgn},1} - \cos\theta_{\mathrm{wgn},2}| .
 $$
 For a particle of speed $0.5c$ at transverse momentum, boosts of rapidity $1$ and $1.5$ give angles $14.11732^\circ$ and $19.31699^\circ$, hence $D = \tfrac12(0.969798-0.943703) = 0.013048$: a single spin measurement distinguishes them with a bias of about one and a third per cent. Even the widely separated rapidities $0.5$ and $2$ give $D = \tfrac12(0.991423-0.920042) = 0.035691$, a bias of under four per cent. The rapidity is thus carried by the spin only weakly at moderate speed, and a boost is much more efficiently read out from the momentum of a particle than from its spin; the information content of the boost is concentrated in the transverse spin component, where the Wigner rotation acts.
 

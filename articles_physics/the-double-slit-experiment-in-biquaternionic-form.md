@@ -160,7 +160,7 @@ Half-filled fringes and a mixed which-path state are the same fact, and it is a 
 
 The framework describes the destruction of the fringes by the same algebraic operations it uses for any measurement.
 
-**Selective detection.** A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde\Pi_{1,2}(\vec{u})$ — has the Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12(1 \pm s_\parallel)$, with the trace reading at normalisation and post-measurement states $\tilde{Ϛ}_{\Psi,2} = \tilde\Pi_{1,2}(\vec{u})$. The equatorial component is annihilated: $\vec r_2 = \pm\vec{u}$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.
+**Selective detection.** A projective measurement of the path observable — the Hermitian element whose idempotents are $\tilde\Pi_{1,2}(\vec{u})$ — has the Born probabilities $p_\pm = \langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12(1 \pm s_\parallel)$, with the trace reading at normalisation and post-measurement states $\tilde{Ϛ}_{\Psi,2} = \tilde\Pi_{1,2}(\vec{u})$. The equatorial component is annihilated: $\vec s_{\Psi,2} = \pm\vec u_s$, so $V = 0$. Whether the particle was recorded at slit one or slit two, the interference is gone.
 
 **Non-selective detection.** If the which-path record is not read, the operation is the dephasing channel along $\vec{u}$ of *Decoherence as Idempotent Projection*. At full strength ($p = 1$),
 

@@ -102,7 +102,7 @@ C=\frac{\partial E}{\partial T}=k_B\,\beta^2\,\mathrm{Var}(\tilde H_\Psi),
 \mathrm{Var}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(\tilde{H}_\Psi^2)^{*})-\big(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})\big)^2 .
 $$
 
-Since $\tilde{H}_\Psi^2=(h_t^2+|\vec h_\Psi|^2)e_t+2ic h_t\vec h_\Psi$ lies in $\mathbb{B}_{\Psi}$, the variance is computed by the same Hermitian form:
+Since $\tilde{H}_\Psi^2=(h_t^2+|\vec h_\Psi|^2)e_t+2i h_t\vec h_\Psi$ lies in $\mathbb{B}_{\Psi}$, the variance is computed by the same Hermitian form:
 
 $$
 \mathrm{Var}(\tilde H_\Psi)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde{H}_\Psi^2)-\big(2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})\big)^2=|\vec h_\Psi|^2\,\mathrm{sech}^2x .
@@ -116,7 +116,7 @@ $$
 Z=2\,\mathrm{Sc}\big(\exp(-\beta H)\big)=2\exp(-0.32)\cosh(0.6449806)=1.7649944,
 $$
 
-while the direct sum over levels gives $\exp(-0.8(1.2062258))+\exp(-0.8(-0.4062258))=1.7649944$. The functionals are $E=-0.0581630$, $S=0.5216171$, $F=-0.7101844$, and $C=0.2816555$; they satisfy $F=E-S/\beta$ to machine precision. A four-level **product** Hamiltonian — two independent qubits with $(c r_{t,1},\vec r_{\Psi,1})=(0.3,(0.2,0,-0.4))$ and $(c r_{t,2},\vec r_{\Psi,2})=(-0.7,(0.1,0.5,0.2))$ at $\beta=1.1$ — gives $Z=8.2828313$, equal both to the product of the two single-qubit partition functions and to the direct sum of the four level weights; its functionals satisfy the same Legendre relations.
+while the direct sum over levels gives $\exp(-0.8(1.2062258))+\exp(-0.8(-0.4062258))=1.7649944$. The functionals are $E=-0.0581630$, $S=0.5216171$, $F=-0.7101844$, and $C=0.2816555$; they satisfy $F=E-S/\beta$ to machine precision. A four-level **product** Hamiltonian — two independent qubits with $(h_{t,1},\vec h_{\Psi,1})=(0.3,(0.2,0,-0.4))$ and $(h_{t,2},\vec h_{\Psi,2})=(-0.7,(0.1,0.5,0.2))$ at $\beta=1.1$ — gives $Z=8.2828313$, equal both to the product of the two single-qubit partition functions and to the direct sum of the four level weights; its functionals satisfy the same Legendre relations.
 
 ## The Variational Characterisation
 

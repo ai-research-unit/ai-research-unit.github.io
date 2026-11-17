@@ -80,7 +80,7 @@ It is positive definite on the whole algebra, $\langle\tilde Q,\tilde Q\rangle_{
 **The restriction to $\mathbb{B}_{\Psi}$.** An element of the sector is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t,\vec h_\Psi$ real, so $\tilde H_\Psi^{*}=\tilde H_\Psi$. The Hermitian form therefore equals the plain form there,
 
 $$
-\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=r_{t,1}r_{t,2}+\vec r_{\Psi,1}\cdot\vec r_{\Psi,2} ,
+\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*}=\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2} ,
 $$
 
 the three minus signs of the bilinear expansion being cancelled by $i^2=-1$ from the imaginary coefficients. The plain form is the restriction, not a second pairing.

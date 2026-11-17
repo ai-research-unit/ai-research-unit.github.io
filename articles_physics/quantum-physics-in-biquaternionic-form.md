@@ -47,13 +47,13 @@ This is the form whose vanishing defines the light cone in $\mathbb{B}_{\Psi}$; 
 
 The algebra carries four forms, the scalar parts of the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*; on $\mathbb{B}_{\Psi}$ they pair off and coincide, so two remain. They are the **Hermitian form**, which here equals the **general plain bilinear form**, and the **bilinear form** $\langle\cdot,\cdot\rangle_{\natural}$ (the general quaternionic bilinear form), which here equals the **general quaternionic sesquilinear form** $\langle\cdot,\cdot\rangle_{\natural*}$ because on a Hermitian element complex conjugation and $\natural$ coincide. The biquaternion norm is not a separate bilinear form but the *quadratic* form of $\langle\cdot,\cdot\rangle_{\natural}$.
 
-**The plain form.** For two Hermitian elements $\tilde{H}_{\Psi,1} = c r_{t,1}\,e_t + i\vec r_1$ and $\tilde{H}_{\Psi,2} = c r_{t,2}\,e_t + i\vec r_2$, the plain form is
+**The plain form.** For two Hermitian elements $\tilde{H}_{\Psi,1} = h_{t,1}\,e_t + i\vec h_{\Psi,1}$ and $\tilde{H}_{\Psi,2} = h_{t,2}\,e_t + i\vec h_{\Psi,2}$, the plain form is
 
 $$
-\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}.
+\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}) = h_{t,1} h_{t,2} + \vec h_{\Psi,1}\cdot\vec h_{\Psi,2}.
 $$
 
-It is symmetric and positive definite, of inertia $(4,0)$: the **Euclidean** pairing on $\mathbb{R}^4$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it coincides on $\mathbb{B}_{\Psi}$ with the canonical **Hermitian form** of the algebra, $\langle\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$, because $\tilde{H}_{\Psi,2}^{*}=\tilde{H}_{\Psi,2}$ there. In the $2\times2$ image the same value appears multiplied by two.
+It is symmetric and positive definite, of inertia $(4,0)$: the **Euclidean** pairing on $\mathbb{R}^4$. It is the analogue of the Hilbert–Schmidt inner product on the space of operators, and it coincides on $\mathbb{B}_{\Psi}$ with the canonical **Hermitian form** of the algebra, $\langle\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}) = h_{t,1} h_{t,2} + \vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$, because $\tilde{H}_{\Psi,2}^{*}=\tilde{H}_{\Psi,2}$ there. In the $2\times2$ image the same value appears multiplied by two.
 
 **The biquaternion norm.** The biquaternion norm is the quadratic form
 
@@ -69,28 +69,28 @@ $$
 \langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural}\,e_t = \tfrac{1}{2}\left(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural} + \tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural}\right).
 $$
 
-Computing directly, using $\tilde{H}_{\Psi,1}^{\natural} = c r_{t,1} e_t - i\vec r_{\Psi,1}$ and the quaternion product of pure vector parts,
+Computing directly, using $\tilde{H}_{\Psi,1}^{\natural} = h_{t,1} e_t - i\vec h_{\Psi,1}$ and the quaternion product of pure vector parts,
 
 $$
-\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural} = (c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2})\,e_t + i(c r_{t,2}\vec r_{\Psi,1} - c r_{t,1}\vec r_{\Psi,2}) + \vec r_{\Psi,1}\times\vec r_{\Psi,2},
+\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural} = (h_{t,1} h_{t,2} - \vec h_{\Psi,1}\cdot\vec h_{\Psi,2})\,e_t + i(h_{t,2}\vec h_{\Psi,1} - h_{t,1}\vec h_{\Psi,2}) + \vec h_{\Psi,1}\times\vec h_{\Psi,2},
 $$
 
 $$
-\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural} = (c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2})\,e_t - i(c r_{t,2}\vec r_{\Psi,1} - c r_{t,1}\vec r_{\Psi,2}) - \vec r_{\Psi,1}\times\vec r_{\Psi,2}.
+\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural} = (h_{t,1} h_{t,2} - \vec h_{\Psi,1}\cdot\vec h_{\Psi,2})\,e_t - i(h_{t,2}\vec h_{\Psi,1} - h_{t,1}\vec h_{\Psi,2}) - \vec h_{\Psi,1}\times\vec h_{\Psi,2}.
 $$
 
 The sum is scalar:
 
 $$
-\boxed{\;\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}\;}.
+\boxed{\;\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = h_{t,1} h_{t,2} - \vec h_{\Psi,1}\cdot\vec h_{\Psi,2}\;}.
 $$
 
-This is the **Lorentzian** bilinear form, of inertia $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,1}\rangle_{\natural} = \langle\tilde{H}_{\Psi,1}\rangle_{\natural}$. On $\mathbb{B}_{\Psi}$ it is also the **Krein form** $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}^{\natural}\tilde{H}_{\Psi,2}^{*})$ of the companion article: for Hermitian elements $\tilde{H}_{\Psi,1}^{\natural} = \bar{\tilde H_\Psi}_1$ and $\tilde{H}_{\Psi,2}^{*} = \tilde{H}_{\Psi,2}$, so the form reads $\mathrm{Sc}(\bar{\tilde H_\Psi}_1\tilde{H}_{\Psi,2}) = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ even though the two differ on the full algebra. That is why $\mathbb{B}_{\Psi}$ carries two forms and not three.
+This is the **Lorentzian** bilinear form, of inertia $(1,3)$, and the biquaternion norm is its diagonal, $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,1}\rangle_{\natural} = \langle\tilde{H}_{\Psi,1}\rangle_{\natural}$. On $\mathbb{B}_{\Psi}$ it is also the **Krein form** $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}^{\natural}\tilde{H}_{\Psi,2}^{*})$ of the companion article: for Hermitian elements $\tilde{H}_{\Psi,1}^{\natural} = \bar{\tilde H_\Psi}_1$ and $\tilde{H}_{\Psi,2}^{*} = \tilde{H}_{\Psi,2}$, so the form reads $\mathrm{Sc}(\bar{\tilde H_\Psi}_1\tilde{H}_{\Psi,2}) = h_{t,1} h_{t,2} - \vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ and agrees with $\langle\cdot,\cdot\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ even though the two differ on the full algebra. That is why $\mathbb{B}_{\Psi}$ carries two forms and not three.
 
 The antisymmetric combination contains the vector part:
 
 $$
-\tfrac{1}{2}\left(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural} - \tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural}\right) = i(c r_{t,2}\vec r_{\Psi,1} - c r_{t,1}\vec r_{\Psi,2}) + \vec r_{\Psi,1}\times\vec r_{\Psi,2}.
+\tfrac{1}{2}\left(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{\natural} - \tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1}^{\natural}\right) = i(h_{t,2}\vec h_{\Psi,1} - h_{t,1}\vec h_{\Psi,2}) + \vec h_{\Psi,1}\times\vec h_{\Psi,2}.
 $$
 
 This is not a symmetric bilinear form; it is the antisymmetric part of the product $\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^\natural$, and it plays a role in the commutator structure of the algebra.
@@ -99,8 +99,8 @@ This is not a symmetric bilinear form; it is the antisymmetric part of the produ
 
 | Form | Expression | Inertia |
 |---|---|---|
-| Hermitian form (the plain form on $\mathbb{B}_{\Psi}$) | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}) = c r_{t,1} c r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ | $(4,0)$, Euclidean |
-| Bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ (equal to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ on $\mathbb{B}_{\Psi}$) | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ | $(1,3)$, Lorentzian |
+| Hermitian form (the plain form on $\mathbb{B}_{\Psi}$) | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{*} = \mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2}^{*}) = h_{t,1} h_{t,2} + \vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ | $(4,0)$, Euclidean |
+| Bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ (equal to the Krein form $\langle\cdot,\cdot\rangle_{\natural*}$ on $\mathbb{B}_{\Psi}$) | $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = h_{t,1} h_{t,2} - \vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ | $(1,3)$, Lorentzian |
 
 The Hermitian form is the natural inner product on the space of operators, and on $\mathbb{B}_{\Psi}$ its restriction is the plain form; the Born rule and the $*$-unitary evolution use the Hermitian form there. The bilinear form $\langle\cdot,\cdot\rangle_{\natural}$ is the one whose quadratic form is the biquaternion norm, $\langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi\rangle_{\natural}$, and whose future light cone defines the state space. The antisymmetric combination displayed above is not a third form.
 
@@ -204,30 +204,30 @@ The eigenvalues are $\lambda_\pm$, and the eigenvectors are the idempotents $\ti
 
 ### Compatibility
 
-Two observables $\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2} \in \mathbb{B}_{\Psi}$ are **compatible** (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec r_{\Psi,1}$ and $\vec r_{\Psi,2}$ are parallel or one of them vanishes.
+Two observables $\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2} \in \mathbb{B}_{\Psi}$ are **compatible** (simultaneously measurable) if and only if their corresponding matrices commute. In terms of the vector parts, this holds if and only if $\vec h_{\Psi,1}$ and $\vec h_{\Psi,2}$ are parallel or one of them vanishes.
 
-In the general case (non-parallel, nonzero $\vec r_{\Psi,1}$ and $\vec r_{\Psi,2}$), the observables are incompatible, and their commutator is
+In the general case (non-parallel, nonzero $\vec h_{\Psi,1}$ and $\vec h_{\Psi,2}$), the observables are incompatible, and their commutator is
 
 $$
-[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] = -2\left(\vec r_{\Psi,1} \times \vec r_{\Psi,2}\right),
+[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] = -2\left(\vec h_{\Psi,1} \times \vec h_{\Psi,2}\right),
 $$
 
-where $\vec r_{\Psi,1}\times\vec r_{\Psi,2}$ is the ordinary cross product.
+where $\vec h_{\Psi,1}\times\vec h_{\Psi,2}$ is the ordinary cross product.
 
 **Derivation.** We compute
 
 $$
-\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2} = (r_{t,1}r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2})e_t + i(c r_{t,1}\vec r_{\Psi,2} + c r_{t,2}\vec r_{\Psi,1}) - \vec r_{\Psi,1}\times\vec r_{\Psi,2},
+\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2} = (h_{t,1}h_{t,2} + \vec h_{\Psi,1}\cdot\vec h_{\Psi,2})e_t + i(h_{t,1}\vec h_{\Psi,2} + h_{t,2}\vec h_{\Psi,1}) - \vec h_{\Psi,1}\times\vec h_{\Psi,2},
 $$
 
 $$
-\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1} = (r_{t,1}r_{t,2} + \vec r_{\Psi,1}\cdot\vec r_{\Psi,2})e_t + i(c r_{t,1}\vec r_{\Psi,2} + c r_{t,2}\vec r_{\Psi,1}) + \vec r_{\Psi,1}\times\vec r_{\Psi,2},
+\tilde{H}_{\Psi,2}\tilde{H}_{\Psi,1} = (h_{t,1}h_{t,2} + \vec h_{\Psi,1}\cdot\vec h_{\Psi,2})e_t + i(h_{t,1}\vec h_{\Psi,2} + h_{t,2}\vec h_{\Psi,1}) + \vec h_{\Psi,1}\times\vec h_{\Psi,2},
 $$
 
 so
 
 $$
-[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2}).
+[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] = -2(\vec h_{\Psi,1}\times\vec h_{\Psi,2}).
 $$
 
 The result is a pure real quaternion (vector part only, with real coefficients): it lies in $\mathbb{B}_{\Phi} \cap \mathbb{B}_{H}$, where $\mathbb{B}_{H} = \operatorname{span}_{\mathbb{R}}\{e_t, \vec e_x, \vec e_y, \vec e_z\}$ is the real quaternion subspace, and this intersection is the real span of $\vec e_x, \vec e_y, \vec e_z$. This is the biquaternion form of the $\mathfrak{su}(2)$ angular-momentum commutation relations of the qubit.
@@ -672,8 +672,8 @@ The extension to many qubits, the second-quantized version, the connection to qu
 | $\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*} = h_t + \vec s_{\Psi}\cdot\vec h_\Psi$ | Born rule, the normalised Hermitian form |
 | $\mathrm{Sc}(\tilde H_\Psi) = h_t$, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = h_t + \vec s_{\Psi}\cdot\vec h_\Psi$ | Scalar part, the value of the Hermitian form |
 | $\langle\tilde H_\Psi\rangle_{\natural} = \langle\tilde H_\Psi,\tilde H_\Psi\rangle_{\natural} = \tilde H_\Psi\tilde H_\Psi^{\natural} = h_t^2 - |\vec h_\Psi|^2$ | Biquaternion norm, inertia $(1,3)$ |
-| $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = c r_{t,1} c r_{t,2} - \vec r_{\Psi,1}\cdot\vec r_{\Psi,2}$ | Polarization of the biquaternion norm |
-| $[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ | Commutator |
+| $\langle\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\rangle_{\natural} = h_{t,1} h_{t,2} - \vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ | Polarization of the biquaternion norm |
+| $[\tilde{H}_{\Psi,1}, \tilde{H}_{\Psi,2}] = -2(\vec h_{\Psi,1}\times\vec h_{\Psi,2})$ | Commutator |
 | $\tilde{Ϛ}_{\Psi}\mapsto\tilde\Pi\tilde{Ϛ}_{\Psi}\tilde\Pi$ | Projective measurement |
 | $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\vec u_\Psi)$ | $*$-Unitary evolution |
 | $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}\tilde Q(r'_t)^{*}$ | Von Neumann evolution |

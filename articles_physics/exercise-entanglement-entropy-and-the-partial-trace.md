@@ -234,16 +234,16 @@ $$
 \tilde{Ϛ}_{\Psi,2}=2\,\mathrm{Sc}_1(\tilde\Pi)=\tfrac12\left(e_t+i\vec s_{\Psi,2}\right)
 $$
 
-be its reduced states. Then $\tilde{Ϛ}_{\Psi,1}$ and $\tilde{Ϛ}_{\Psi,2}$ are states of $\mathbb{B}_{\Psi}$, and their spectra are $(1\pm|\vec r_1|)/2$ and $(1\pm|\vec r_2|)/2$. The Schmidt theorem says the spectra coincide, hence
+be its reduced states. Then $\tilde{Ϛ}_{\Psi,1}$ and $\tilde{Ϛ}_{\Psi,2}$ are states of $\mathbb{B}_{\Psi}$, and their spectra are $(1\pm|\vec s_{\Psi,1}|)/2$ and $(1\pm|\vec s_{\Psi,2}|)/2$. The Schmidt theorem says the spectra coincide, hence
 
 $$
-\boxed{\;|\vec r_1|=|\vec r_2|,
+\boxed{\;|\vec s_{\Psi,1}|=|\vec s_{\Psi,2}|,
 \qquad
 S(\tilde{Ϛ}_{\Psi,1})=S(\tilde{Ϛ}_{\Psi,2})
-=h\!\left(\frac{1+|\vec r_1|}{2}\right)\;}.
+=h\!\left(\frac{1+|\vec s_{\Psi,1}|}{2}\right)\;}.
 $$
 
-So the entanglement entropy of a pure two-qubit state is a function of a single invariant, the **length of either reduced Bloch vector**. Maximal entanglement is $|\vec r_1|=0$; a product state is $|\vec r_1|=1$. The reduced Bloch vectors may point in different directions — they do, in general, since they live on different factors — but their lengths agree.
+So the entanglement entropy of a pure two-qubit state is a function of a single invariant, the **length of either reduced Bloch vector**. Maximal entanglement is $|\vec s_{\Psi,1}|=0$; a product state is $|\vec s_{\Psi,1}|=1$. The reduced Bloch vectors may point in different directions — they do, in general, since they live on different factors — but their lengths agree.
 
 ## The Entropy Functional on $\mathbb{B}_{\Psi}$
 
@@ -312,7 +312,7 @@ $$
 Its reduction is $\tfrac12 e_t$ on each factor, since every Bell idempotent has $2\,\mathrm{Sc}_1(\tilde\Pi_\epsilon)=2\,\mathrm{Sc}_2(\tilde\Pi_\epsilon)=\tfrac12 e_t$ and the reduction is linear. Hence
 
 $$
-\tilde{Ϛ}_{\Psi,1}=\tfrac12 e_t,\qquad |\vec r_1|=0,\qquad S(\tilde{Ϛ}_{\Psi,1})=\log2 .
+\tilde{Ϛ}_{\Psi,1}=\tfrac12 e_t,\qquad |\vec s_{\Psi,1}|=0,\qquad S(\tilde{Ϛ}_{\Psi,1})=\log2 .
 $$
 
 So the partial-trace entropy is maximal. But the joint state is **separable**. Using $\tilde\Pi_{Ξ^\pm}=\tfrac14(e_t\otimes e_t\mp \vec e_x\otimes \vec e_x\pm \vec e_y\otimes \vec e_y-\vec e_z\otimes \vec e_z)$, the mixture is
@@ -335,7 +335,7 @@ The following problems extend the exercise. They are left to the reader; the fir
 
 **P2 (general pure state).** For arbitrary $|\tilde{Ξ}\rangle=\sum_{ij}M_{ij}|i\rangle|j\rangle$, express $S$ in terms of $\det M$. Show $S=h\!\left(\tfrac{1+\sqrt{1-4|\det M|^2}}{2}\right)$ and hence that $S$ is determined by $|\det M|$ alone. (For two qubits $s_1^2s_2^2=|\det M|^2$.)
 
-**P3 (local invariance).** Show that under a local rotor conjugation $\tilde\Pi\mapsto(\tilde{U}_1\otimes\tilde{U}_2)\,\tilde\Pi\,(\tilde{U}_1^{*}\otimes\tilde{U}_2^{*})$ with $\tilde{U}_j\tilde{U}_j^{*}=e_t$, the reduced state transforms as $\tilde{Ϛ}_{\Psi,1}\mapsto\tilde{U}_1\tilde{Ϛ}_{\Psi,1}\tilde{U}_1^{*}$, and hence $S$ is invariant. In the biquaternion language, identify the induced action on the Bloch vectors $\vec r_1,\vec r_2$ and check that their lengths are unchanged.
+**P3 (local invariance).** Show that under a local rotor conjugation $\tilde\Pi\mapsto(\tilde{U}_1\otimes\tilde{U}_2)\,\tilde\Pi\,(\tilde{U}_1^{*}\otimes\tilde{U}_2^{*})$ with $\tilde{U}_j\tilde{U}_j^{*}=e_t$, the reduced state transforms as $\tilde{Ϛ}_{\Psi,1}\mapsto\tilde{U}_1\tilde{Ϛ}_{\Psi,1}\tilde{U}_1^{*}$, and hence $S$ is invariant. In the biquaternion language, identify the induced action on the Bloch vectors $\vec s_{\Psi,1},\vec s_{\Psi,2}$ and check that their lengths are unchanged.
 
 **P4 (the shape of the curve).** Show that $S=h(\cos^2\theta)$ is concave in $p=\cos^2\theta$, that
 
@@ -400,7 +400,7 @@ The entanglement entropy of a pure two-qubit state is the von Neumann entropy of
 | $|\tilde{Ξ}_{\theta}\rangle=\cos\theta|\uparrow\uparrow\rangle+\sin\theta|\downarrow\downarrow\rangle$ | Worked family |
 | $\tilde\Pi_\theta$ | Its idempotent in $\mathbb{B}\otimes\mathbb{B}$ |
 | $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ | General state of $\mathbb{B}_{\Psi}$, $|\vec s_{\Psi}|\le1$ |
-| $\tilde{Ϛ}_{\Psi,1}=2\,\mathrm{Sc}_2\tilde\Pi$ | Reduced state (Bloch vector $\vec r_1$) |
+| $\tilde{Ϛ}_{\Psi,1}=2\,\mathrm{Sc}_2\tilde\Pi$ | Reduced state (Bloch vector $\vec s_{\Psi,1}$) |
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |
 | $h(p)=-p\log p-(1-p)\log(1-p)$ | Binary entropy |
 | $S(\tilde{Ϛ}_{\Psi})=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$ | von Neumann entropy |

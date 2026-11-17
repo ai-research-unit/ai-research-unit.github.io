@@ -86,7 +86,7 @@ Because the two Zeeman levels are non-degenerate for $B>0$ and their splitting i
 
 ### The Selection Rule as a Commutator
 
-A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*,
+A drive transverse to the static field is a Hermitian element built from $i\vec e_x$ and $i\vec e_y$. The commutator of a transverse coupling with the longitudinal Zeeman term is, using the identity $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2(\vec h_{\Psi,1}\times\vec h_{\Psi,2})$ of the companion article *Quantum Physics in Biquaternionic Form*,
 
 $$
 \left[\tilde{H}_{\Psi,Z},\,dE\,i\vec e_x\right] = -2\left(-\frac{\hbar\,\omega_{L}}{2}\vec u\right)\times(dE\,\vec u_x)
@@ -212,7 +212,7 @@ The difference between the two effects is the placement of the coupling in the e
 | Non-degenerate case | — | quadratic Stark, $-\tfrac12\alpha E^2$ |
 | Mixes the eigenstates? | no | yes |
 
-The reason the magnetic coupling is diagonal is that the two spin states carry definite, opposite magnetic moments; the reason the electric coupling is off-diagonal is that they carry no definite electric dipole moment. In the algebra the first is the statement that $\tilde{H}_{\Psi,Z}$ is a function of the same element $i\vec e_z$ that defines the eigenbasis, and the second is the statement that $\tilde{H}_{\Psi,S}$ is built from $i\vec e_x$, which anticommutes with $i\vec e_z$: $i\vec e_x\,i\vec e_z = -i\vec e_z\,i\vec e_x = \vec e_y$. The commutator $[\tilde{H}_{\Psi,Z},\tilde{H}_{\Psi,S}] = -2(\vec r_{\Psi,Z}\times\vec r_{\Psi,S})$ is non-zero, so the two couplings are incompatible observables when the fields are not parallel; this is the algebraic statement of the fact that a magnetic field and a transverse electric field cannot be simultaneously diagonalised.
+The reason the magnetic coupling is diagonal is that the two spin states carry definite, opposite magnetic moments; the reason the electric coupling is off-diagonal is that they carry no definite electric dipole moment. In the algebra the first is the statement that $\tilde{H}_{\Psi,Z}$ is a function of the same element $i\vec e_z$ that defines the eigenbasis, and the second is the statement that $\tilde{H}_{\Psi,S}$ is built from $i\vec e_x$, which anticommutes with $i\vec e_z$: $i\vec e_x\,i\vec e_z = -i\vec e_z\,i\vec e_x = \vec e_y$. The commutator $[\tilde{H}_{\Psi,Z},\tilde{H}_{\Psi,S}] = -2(\vec h_{\Psi,Z}\times\vec h_{\Psi,S})$ is non-zero, so the two couplings are incompatible observables when the fields are not parallel; this is the algebraic statement of the fact that a magnetic field and a transverse electric field cannot be simultaneously diagonalised.
 
 ### Conventions of Sign
 
@@ -264,7 +264,7 @@ $$
 
 and whose level repulsion is the avoided crossing with gap $2|Ed|$.
 
-The two effects differ because a spin-1/2 carries a permanent magnetic dipole and no permanent electric dipole: the magnetic coupling is diagonal and gives a first-order shift, and the electric coupling is off-diagonal and gives a second-order shift unless a degeneracy supplies a permanent moment in the field direction. The algebra expresses this as the difference between a coupling proportional to the same $i\vec e_z$ that defines the energy basis and a coupling proportional to a transverse $i\vec e_x$. Both couplings are incompatible observables when the fields are not parallel, with commutator $[\tilde{H}_{\Psi,Z},\tilde{H}_{\Psi,S}] = -2(\vec r_{\Psi,Z}\times\vec r_{\Psi,S})$.
+The two effects differ because a spin-1/2 carries a permanent magnetic dipole and no permanent electric dipole: the magnetic coupling is diagonal and gives a first-order shift, and the electric coupling is off-diagonal and gives a second-order shift unless a degeneracy supplies a permanent moment in the field direction. The algebra expresses this as the difference between a coupling proportional to the same $i\vec e_z$ that defines the energy basis and a coupling proportional to a transverse $i\vec e_x$. Both couplings are incompatible observables when the fields are not parallel, with commutator $[\tilde{H}_{\Psi,Z},\tilde{H}_{\Psi,S}] = -2(\vec h_{\Psi,Z}\times\vec h_{\Psi,S})$.
 
 ## Summary of Notation
 
@@ -284,7 +284,7 @@ The two effects differ because a spin-1/2 carries a permanent magnetic dipole an
 | $E_\pm = \pm\sqrt{(\frac{\hbar\,\omega_{0}}{2})^2+(Ed)^2}$ | Exact two-level Stark levels |
 | $\alpha =\frac{2\,d^{2}}{\hbar\,\omega_{0}}$ | Static polarizability of the two-level system |
 | $\delta E_0 = -\tfrac12\alpha E^2$ | Quadratic Stark shift |
-| $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2(\vec r_{\Psi,1}\times\vec r_{\Psi,2})$ | Commutator of two Hermitian elements |
+| $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}] = -2(\vec h_{\Psi,1}\times\vec h_{\Psi,2})$ | Commutator of two Hermitian elements |
 
 ## Further Reading
 
