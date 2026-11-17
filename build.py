@@ -259,17 +259,38 @@ def copy_static(since=None):
             print(f"Copied {name}")
 
 
+def menu_order(menu_md, folder):
+    """Slugs in the order their links appear in a menu file.
+
+    The menus carry the editorial reading order — sections, then the articles
+    that belong to each — which is the order a reader follows. It is not the
+    alphabetical order `collect_articles()` uses for building.
+    """
+    path = SRC / menu_md
+    if not path.exists():
+        return {}
+    order = {}
+    for slug in re.findall(rf'href="{folder}/([^"]+)\.html"', path.read_text()):
+        order.setdefault(slug, len(order))
+    return order
+
+
 def sitemap_urls():
     """Every public page of the site, as (deploy path, source file) pairs.
 
     The internal collection stays out: no menu links it, and it holds drafts.
-    Physics comes before maths, as in ordered_collections().
+    Physics comes before maths, and inside each collection the order is the
+    menu's. An article that no menu links goes last, by name, so it is still
+    listed.
     """
     urls = [(out_name, SRC / md_name) for md_name, out_name, _ in ROOT_PAGES]
     for coll in ordered_collections():
         if coll["name"] == "internal":
             continue
-        for f in coll["articles"]:
+        order = menu_order(f"{coll['name']}.md", coll["src"].name)
+        last = len(order)
+        files = sorted(coll["articles"], key=lambda f: (order.get(f.stem, last), f.stem))
+        for f in files:
             rel = f.relative_to(coll["src"]).with_suffix(".html").as_posix()
             urls.append((f"{coll['src'].name}/{rel}", f))
     return urls
