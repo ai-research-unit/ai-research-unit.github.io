@@ -137,14 +137,86 @@ $$</p>
 <p>$$
 \lambda_+\lambda_-=\tfrac14-\lvert\vec s_\Psi\rvert^{2}=N(\tilde{Ϛ}_\Psi).
 $$</p>
+<h3 id="what-the-eigenvalues-are-and-how-they-are-found">What the Eigenvalues Are, and How They Are Found</h3>
+<p><strong>An eigenvalue is a root of one quadratic, and the quadratic is the element's own.</strong> The spectral problem in this algebra is $\tilde{Ϛ}_\Psi\tilde\Xi=\lambda\tilde\Xi$ with $\tilde\Xi$ a nonzero element of the carrier $S\cong\mathbb{C}^{2}$. In the $2\times2$ image it is the ordinary eigenvalue problem of $\mathsf{M}_2(\tilde{Ϛ}_\Psi)$, whose characteristic polynomial is the one <em>Energy and Information</em> states for a general element:</p>
+<p>$$
+\lambda^{2}-\bigl(2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi\bigr)\lambda+N(\tilde{Ϛ}_\Psi)=0 .
+$$</p>
+<p><strong>The two coefficients are the normalisation and the norm, and that is Vieta.</strong> The roots sum to $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi$ and multiply to $N(\tilde{Ϛ}_\Psi)$. So the convention $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$ says the eigenvalues sum to one, and $N$ is the product of the eigenvalues because it is the determinant of left multiplication. Neither statement is an extra fact about states: they are the trace and the determinant of a $2\times2$ matrix read in the algebra's own letters.</p>
+<p><strong>On the slice the discriminant is a perfect square, so no root survives.</strong> With $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$ and $N=\tfrac14-\lvert\vec s_\Psi\rvert^{2}$,</p>
+<p>$$
+1-4N=1-\bigl(1-4\lvert\vec s_\Psi\rvert^{2}\bigr)=4\lvert\vec s_\Psi\rvert^{2},
+$$</p>
+<p>and the quadratic formula collapses:</p>
+<p>$$
+\lambda_\pm=\frac{1\pm\sqrt{1-4N}}{2}=\tfrac12\pm\lvert\vec s_\Psi\rvert .
+$$</p>
+<p><strong>The roots are weights of idempotents, not numbers read off a matrix.</strong> The algebraic accident $(i\vec u)^{2}=e_t$ for a unit $\vec u$ — the proof of the spectral theorem in <em>States, Observables and the Born Weight</em> — gives two Hermitian idempotents per axis:</p>
+<p>$$
+\tilde\Pi_{1,2}(\vec u)=\tfrac12\bigl(e_t\pm i\vec u\bigr),\qquad
+\tilde\Pi_{1,2}^{2}=\tilde\Pi_{1,2},\qquad
+\tilde\Pi_1\tilde\Pi_2=0,\qquad
+\tilde\Pi_1+\tilde\Pi_2=e_t .
+$$</p>
+<p><strong>The state is one axis and two weights, and the weights are the eigenvalues.</strong> Take the axis of the state's own vector part:</p>
+<p>$$
+\vec u_{\vec s}=\frac{\vec s_\Psi}{\lvert\vec s_\Psi\rvert},\qquad
+\tilde{Ϛ}_\Psi=\bigl(\tfrac12+\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_1(\vec u_{\vec s})
++\bigl(\tfrac12-\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_2(\vec u_{\vec s}),
+$$</p>
+<p>so the coefficient of $\tilde\Pi_1$ is $\lambda_+$ and the coefficient of $\tilde\Pi_2$ is $\lambda_-$. The formula is the state's own spectral decomposition, and it is the whole of the state: one direction and two numbers.</p>
+<p><strong>Each weight is one scalar part, so the eigenvalues are Born pairings with the state's own idempotents.</strong> Because $\tilde\Pi_{1,2}^{2}=\tilde\Pi_{1,2}$,</p>
+<p>$$
+2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u_{\vec s})\bigr)=\tfrac12+\lvert\vec s_\Psi\rvert=\lambda_+,\qquad
+2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_2(\vec u_{\vec s})\bigr)=\tfrac12-\lvert\vec s_\Psi\rvert=\lambda_- .
+$$</p>
+<p><strong>The reading is that the larger eigenvalue is the probability the state gives to its own axis.</strong> The Born weight of the outcome along $\vec u$ is $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u))$, so the spectrum of a state is the pair of weights it assigns to the two outcomes of the measurement along its own axis. The larger member exceeds one half by exactly the length of the vector part, which is why the radius and the spectrum carry the same information.</p>
+<p><strong>One consequence is that the state determines its idempotents, and the converse fails.</strong> For $\lvert\vec s_\Psi\rvert\neq0$ the axis is the direction of the vector part and the pair $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ is fixed, because $\tilde\Pi_2(\vec u)=\tilde\Pi_1(-\vec u)$ names the same pair. So a mixed state sits on exactly one pair of idempotents, with both weights strictly between zero and one. The pure state is the case where one weight is one and the other is zero, and then the state is the idempotent itself.</p>
+<p><strong>The general observable is the same construction with the normalisation released.</strong> For $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ the identical argument gives $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$ and $\tilde H_\Psi=\lambda_+\tilde\Pi_1(\vec u_{\vec h})+\lambda_-\tilde\Pi_2(\vec u_{\vec h})$. A state is that formula at $h_t=\tfrac12$ and $\lvert\vec h_\Psi\rvert=\lvert\vec s_\Psi\rvert$, so the state's spectrum is an observable's spectrum with the sum of the roots pinned to one.</p>
+<h3 id="the-peirce-reading">The Peirce Reading</h3>
+<p><strong>The pair of idempotents cuts the algebra into four corners.</strong> For $s,t\in\{1,2\}$ the <strong>Peirce line</strong> is $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$, and <em>Peirce Decompositions of the Biquaternion Algebra</em> proves the direct sum</p>
+<p>$$
+\mathbb{B}=\mathbb{B}_{11}\oplus\mathbb{B}_{12}\oplus\mathbb{B}_{21}\oplus\mathbb{B}_{22},
+$$</p>
+<p>four complex lines: the diagonal lines spanned by the idempotents, and the two mixed lines nilpotent, every element of $\mathbb{B}_{12}$ or of $\mathbb{B}_{21}$ squaring to zero.</p>
+<p><strong>The corners are joint eigenspaces of the two multiplications, and that is a different spectrum.</strong> Left multiplication by $\tilde\Pi_1$ is $+1$ on $\mathbb{B}_{11}\oplus\mathbb{B}_{12}$ and $0$ on the other two; right multiplication is $+1$ on $\mathbb{B}_{11}\oplus\mathbb{B}_{21}$ and $0$ on the other two. Those spectra are $\{1,0\}$ for every idempotent and every element. The state's two eigenvalues are not those: they are the weights the state puts on the two diagonal corners.</p>
+<p><strong>The state lies wholly in its two diagonal corners.</strong> On its own axis the mixed components vanish, because $\tilde{Ϛ}_\Psi$ and the two idempotents are all Hermitian:</p>
+<p>$$
+\tilde\Pi_1\tilde{Ϛ}_\Psi\tilde\Pi_2=0,\qquad \tilde\Pi_2\tilde{Ϛ}_\Psi\tilde\Pi_1=0 .
+$$</p>
+<p>The state's Peirce decomposition is therefore $\tilde{Ϛ}_\Psi=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with the two mixed terms absent, and the two eigenvalues are exactly the two diagonal Peirce coordinates.</p>
+<p><strong>In any other axis the mixed terms are present, and they are nilpotents.</strong> For a second axis $\vec u'$ with its pair $\tilde\Pi'_{1,2}$, put</p>
+<p>$$
+\tilde n=\tilde\Pi'_1\tilde{Ϛ}_\Psi\tilde\Pi'_2,\qquad
+\tilde n^{\natural}=\tilde\Pi'_2\tilde{Ϛ}_\Psi\tilde\Pi'_1,
+$$</p>
+<p>so that $\tilde n^{2}=0$ and</p>
+<p>$$
+\tilde{Ϛ}_\Psi=\tilde\Pi'_1\tilde{Ϛ}_\Psi\tilde\Pi'_1+\tilde\Pi'_2\tilde{Ϛ}_\Psi\tilde\Pi'_2+\tilde n+\tilde n^{\natural}.
+$$</p>
+<p>The two diagonal terms are the classical part of the state in that axis and the two mixed terms are the coherences. <strong>The full dephasing channel of <em>Decoherence as Idempotent Projection</em> is exactly the deletion of $\tilde n+\tilde n^{\natural}$</strong>, which is why that channel moves a state toward an axis rather than toward the centre, keeps the normalisation, and is a projection only at full strength.</p>
+<p><strong>The purity sees the diagonal part and nothing else.</strong> Cross terms vanish because $\tilde\Pi_1\tilde\Pi_2=0$, so</p>
+<p>$$
+2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi^{2}=\lambda_+^{2}+\lambda_-^{2}=\tfrac12\bigl(1+\lvert\vec r\rvert^{2}\bigr).
+$$</p>
+<p>A nilpotent contributes nothing to the scalar part of a square, which is the algebraic reason a coherence leaves the purity untouched and shows up only in interference with a third element.</p>
+<p><strong>The two limits are the two degenerate readings of one cut.</strong> At $\lvert\vec s_\Psi\rvert=\tfrac12$ one weight vanishes and $\tilde{Ϛ}_\Psi=\tilde\Pi_1(\vec u_{\vec s})$: the state is the idempotent, one corner carries all the weight, and the state is a zero divisor of the algebra. At $\lvert\vec s_\Psi\rvert=0$ the two weights meet at $\tfrac12$ and $\tilde{Ϛ}_\Psi=\tfrac12 e_t$ is central: the axis is not determined, hence neither are the two idempotents.</p>
+<p><strong>A degenerate state is a diabolic point and never an exceptional one.</strong> <em>Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</em> proves that an exceptional point needs a complex, non-Hermitian vector part, and that no Hermitian element has one. So the degenerate state has no Jordan block: its centraliser is the whole algebra, every axis serves equally, and the two idempotents are free rather than missing.</p>
+<p><strong>The failure of idempotency is central, and it is the product of the eigenvalues.</strong> Subtracting the square from the element, with $a=\lambda_+$, $b=\lambda_-$, $1-a=b$ and $1-b=a$,</p>
+<p>$$
+\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2}=a(1-a)\tilde\Pi_1+b(1-b)\tilde\Pi_2=ab\,e_t=N\,e_t .
+$$</p>
+<p>So the element's distance from being an idempotent is a multiple of the unit, the multiple is the product of its eigenvalues. <strong>The defect from idempotency is central, and its size is the product of the roots.</strong></p>
 <p><strong>The product of the eigenvalues is the reason for everything that follows.</strong> $N$ is large exactly when the two eigenvalues are both far from zero, that is, when the state is far from pure. $N$ is zero exactly when one eigenvalue vanishes, that is, when the state is a rank-one idempotent.</p>
-<p><strong>The product also explains why the norm carries no factor while the normalisation carries two.</strong> A sum of diagonal entries is twice the scalar part, because the image is two-dimensional; a product of eigenvalues is the norm itself, because no dimension count enters a product. The asymmetry is the point of the convention, and it is why the entropy formula below has no factor to dispose of.</p>
+<p><strong>The same Vieta pair explains why the norm carries no factor while the normalisation carries two.</strong> A sum of diagonal entries is twice the scalar part, because the image is two-dimensional; a product of eigenvalues is the norm itself, because no dimension count enters a product. The asymmetry is the point of the convention, and it is why the entropy formula below has no factor to dispose of.</p>
 <h3 id="the-table">The Table</h3>
 <p><strong>Four magnitudes, recomputed.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>$\lvert\vec s_\Psi\rvert$</th>
+<th>$\lambda_+$</th>
+<th>$\lambda_-$</th>
 <th>$N$</th>
 <th>$\mathcal H$</th>
 <th>$2\,\mathrm{Sc}$</th>
@@ -156,6 +228,8 @@ $$</p>
 <tbody>
 <tr>
 <td>$\tfrac12$ (pure)</td>
+<td>$1$</td>
+<td>$0$</td>
 <td>$0$</td>
 <td>$0.50$</td>
 <td>$1$</td>
@@ -165,6 +239,8 @@ $$</p>
 </tr>
 <tr>
 <td>$0.4$</td>
+<td>$0.9$</td>
+<td>$0.1$</td>
 <td>$0.09$</td>
 <td>$0.41$</td>
 <td>$1$</td>
@@ -173,6 +249,8 @@ $$</p>
 <td>$0.469$</td>
 </tr>
 <tr>
+<td>$0.25$</td>
+<td>$0.75$</td>
 <td>$0.25$</td>
 <td>$0.1875$</td>
 <td>$0.3125$</td>
@@ -183,6 +261,8 @@ $$</p>
 </tr>
 <tr>
 <td>$0$ (maximally mixed)</td>
+<td>$0.5$</td>
+<td>$0.5$</td>
 <td>$0.25$</td>
 <td>$0.25$</td>
 <td>$1$</td>
@@ -192,7 +272,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Every entry is a closed form and every one checks.</strong> The fifth column is $2N$; the sixth is $2\sqrt N$; the last is the binary entropy at $\lambda_+=\tfrac12+\lvert\vec s_\Psi\rvert$. The table is generated by one magnitude, and the columns are four readings of it.</p>
+<p><strong>Every entry is a closed form and every one checks.</strong> The two spectra columns add to one and multiply to $N$; the $2N$ column is the linear entropy, the $2\sqrt N$ column the concurrence, and the last is the binary entropy at $\lambda_+$. The table is generated by one magnitude, and every column is a reading of it.</p>
 <h3 id="the-four-readings">The Four Readings</h3>
 <p><strong>The first reading is mixedness.</strong> The linear entropy is a multiple of $N$:</p>
 <p>$$
@@ -221,7 +301,7 @@ $$</p>
 <p><strong>A fifth reading, in the corpus, is decoherence.</strong> A state entangled with an environment and then traced over moves inward: the purity falls, $2N$ rises, $S(N)$ rises with it. The boundary is where the environment has learned nothing and the interior is where it has. The word <em>trace</em> here belongs to the partial trace of the environment's module, which is the carrier the convention asks for.</p>
 <h3 id="the-direction">The Direction</h3>
 <p><strong>High $N$ means low information.</strong> The corpus is explicit: the quaternionic norm is <em>the impurity that the informational side reads as information</em>, and the entropy is <em>the information the state fails to hold</em>. $N$ is a deficit. Every sentence in this article must be read with that sign, and the table above is the arithmetic of it.</p>
-<h2 id="why-math166-is-the-ledger-entry">Why $N$ Is the Ledger Entry</h2>
+<h2 id="why-math246-is-the-ledger-entry">Why $N$ Is the Ledger Entry</h2>
 <p><strong>The structural fact is multiplicativity.</strong> For two elements,</p>
 <p>$$
 \langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},
@@ -490,6 +570,18 @@ $$</p>
 <tr>
 <td>$N=\tfrac14-\lvert\vec s_\Psi\rvert^{2}=\lambda_+\lambda_-$</td>
 <td>the impurity on the slice</td>
+</tr>
+<tr>
+<td>$\lambda_\pm=\tfrac12\pm\lvert\vec s_\Psi\rvert$</td>
+<td>the spectrum; also the two weights $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_{1,2})$ along the state's own axis</td>
+</tr>
+<tr>
+<td>$\tilde{Ϛ}_\Psi=\lambda_+\tilde\Pi_1(\vec u_{\vec s})+\lambda_-\tilde\Pi_2(\vec u_{\vec s})$</td>
+<td>the state as one axis and two weights</td>
+</tr>
+<tr>
+<td>$\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2}=N e_t$</td>
+<td>the defect from idempotency; central, and the product of the eigenvalues</td>
 </tr>
 <tr>
 <td>$\mathcal H=\tfrac14+\lvert\vec s_\Psi\rvert^{2}$</td>
