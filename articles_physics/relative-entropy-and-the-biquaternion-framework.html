@@ -81,7 +81,7 @@ and every information-theoretic inequality of consequence — monotonicity, the 
 <p><strong>The quantity is standard.</strong> The states of the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ are, by the Hermitian GNS companion article, the elements $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ that are Hermitian, positive and of trace one, parametrized by the Bloch ball. Relative entropy on these states is Umegaki's. The framework does not modify it, and no new inequality is claimed for it.</p>
 </li>
 <li>
-<p><strong>The quantity is exactly computable.</strong> Because $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, both the state and its logarithm are elements of the algebra, and the trace is the scalar pairing $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.</p>
+<p><strong>The quantity is exactly computable.</strong> Because $\mathbb{B}$ is four-dimensional over $\mathbb{C}$, both the state and its logarithm are elements of the algebra, and the doubled scalar part is the scalar pairing $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The relative entropy of two biquaternion states therefore collapses to a closed expression in their Bloch vectors, which is derived and verified below.</p>
 </li>
 <li>
 <p><strong>The quantity has a framework-specific boundary.</strong> The logarithm of a state is an element of $\mathbb{B}$ exactly when the state is faithful, that is, in the interior of the Bloch ball; on the pure boundary the state is a zero divisor and $\log\tilde{Ϛ}_{\Psi}$ does not exist as an algebra element. The relative entropy nevertheless extends continuously to the boundary, and it diverges there only in the one standard way, when the support of the first state is not contained in the support of the second. The zero-divisor cone is the locus on which the algebra's own logarithm fails and the imported logarithm is required.</p>
@@ -120,7 +120,7 @@ with conditional relative entropies defined recursively.</li>
 <p>The von Neumann entropy $S(\rho)=-\mathrm{Tr}(\rho\log\rho)=\log\dim-S(\rho\|I/\dim)$ is the special case in which the second argument is the maximally mixed state; it is not monotone and is defined only for states with $\mathrm{supp}\,\rho$ of finite-dimensional type. Relative entropy is the more basic object, and in quantum field theory it is the only one of the two that is well defined for the local algebras: the local algebras are type III factors, which carry no trace and no density matrix, while the relative entropy of two states on a von Neumann algebra is defined by the Araki formula recalled below. This is the reason the informational interpretation of quantum field theory is written in the language of relative entropy, and it is the reason this article opens the subcategory.</p>
 <h2 id="the-states-of-the-biquaternion-algebra">The States of the Biquaternion Algebra</h2>
 <h3 id="density-matrices-in-math33">Density Matrices in $\mathbb{B}_{\Psi}$</h3>
-<p>By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\tilde Q_2)$ with $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ positive and of trace one. Writing
+<p>By the Hermitian GNS companion article, every state on $\mathbb{B}$ is of the form $\omega(\tilde Q_2)=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde Q_2)$ with $\tilde{Ϛ}_{\Psi}\in\mathbb{B}_{\Psi}$ positive and of normalised. Writing
 $$
 \tilde{Ϛ}_{\Psi}=\tfrac12\big(e_t+i\vec r\cdot\mathbf e\big),\qquad
 \vec r\in\mathbb{R}^3,\qquad \mathbf e=(\vec e_x,\vec e_y,\vec e_z),
@@ -187,8 +187,7 @@ $$
 =\tfrac12\log\frac{1-|\vec r|^2}{1-|\vec s|^2}
 +|\vec r|\Big(\mathrm{artanh}|\vec r|
 -\mathrm{artanh}|\vec s|\,\cos\gamma\Big)}
-$$
-for $|\vec r|,|\vec s|<1$. The derivation is the whole content of the section: the two appearances of $\log$ are biquaternion logarithms, each computed by the closed form of the previous section, and their traces are the real pairing $2\,\mathrm{Sc}$. The factors of $\tfrac12\log\tfrac14$ cancel between the two terms, which is why the boxed expression contains only the ratio of determinants, $\frac{1-|\vec r|^2}{1-|\vec s|^2}$, and the relative angle.</p>
+$$</p>
 <p>Two features are worth naming. First, the relative entropy of two biquaternion states is <strong>not</strong> a function of the Bloch distance $|\vec r-\vec s|$ alone; it depends on the two radii and the angle, and is therefore sensitive to the direction of the Bloch vectors and not only to their separation. Second, it is manifestly <strong>asymmetric</strong> in the exchange $\vec r\leftrightarrow\vec s$, because the coefficient in front of the bracket is $|\vec r|$ and the bracket is not symmetric.</p>
 <p>The limits are the expected ones. If $\tilde{Ϛ}_{\Psi,1}=\tilde{Ϛ}_{\Psi,2}$ the two radii and the angle give $\tfrac12\log1+|\vec r|(\mathrm{artanh}|\vec r|-\mathrm{artanh}|\vec r|)=0$. If $|\vec r|\to0$, then
 $$
@@ -302,8 +301,8 @@ verified against the explicit matrix computation on generic superpositions and n
 <td>Informational (Hermitian) and material (anti-Hermitian) subspaces</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
-<td>Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$</td>
+<td>$2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
+<td>Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$</td>
 </tr>
 <tr>
 <td>$\mathsf{M}_2(\vec e_\eta)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$</td>

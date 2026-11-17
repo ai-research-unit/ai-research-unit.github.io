@@ -98,14 +98,14 @@ $$</p>
 $$</p>
 <p>The partial trace over the second factor is defined on the tensor product by</p>
 <p>$$
-\mathrm{Tr}_2(A\otimes B) = A \cdot \mathrm{Tr}(B),
+\mathrm{Tr}_2(A\otimes B) = A \cdot 2\,\mathrm{Sc}(B),
 $$</p>
 <p>and extended by linearity.</p>
 <h3 id="step-3-the-computation">Step 3: The computation</h3>
 <p>We compute the partial trace term by term.</p>
 <p><strong>First diagonal term.</strong> $\frac{1}{2}|\uparrow\downarrow\rangle\langle\uparrow\downarrow| = \frac{1}{2}|\uparrow\rangle\langle\uparrow| \otimes |\downarrow\rangle\langle\downarrow|$, so</p>
 <p>$$
-\mathrm{Tr}_2\!\left(\frac{1}{2}|\uparrow\rangle\langle\uparrow| \otimes |\downarrow\rangle\langle\downarrow|\right) = \frac{1}{2}|\uparrow\rangle\langle\uparrow| \cdot \mathrm{Tr}(|\downarrow\rangle\langle\downarrow|) = \frac{1}{2}|\uparrow\rangle\langle\uparrow|.
+\mathrm{Tr}_2\!\left(\frac{1}{2}|\uparrow\rangle\langle\uparrow| \otimes |\downarrow\rangle\langle\downarrow|\right) = \frac{1}{2}|\uparrow\rangle\langle\uparrow| \cdot 2\,\mathrm{Sc}(|\downarrow\rangle\langle\downarrow|) = \frac{1}{2}|\uparrow\rangle\langle\uparrow|.
 $$</p>
 <p><strong>Second diagonal term.</strong> $\frac{1}{2}|\downarrow\uparrow\rangle\langle\downarrow\uparrow| = \frac{1}{2}|\downarrow\rangle\langle\downarrow| \otimes |\uparrow\rangle\langle\uparrow|$, so</p>
 <p>$$
@@ -113,7 +113,7 @@ $$</p>
 $$</p>
 <p><strong>First cross term.</strong> $\frac{1}{2}|\uparrow\downarrow\rangle\langle\downarrow\uparrow| = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \otimes |\downarrow\rangle\langle\uparrow|$, so</p>
 <p>$$
-\mathrm{Tr}_2\!\left(\frac{1}{2}|\uparrow\rangle\langle\downarrow| \otimes |\downarrow\rangle\langle\uparrow|\right) = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \cdot \mathrm{Tr}(|\downarrow\rangle\langle\uparrow|) = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \cdot \langle\uparrow|\downarrow\rangle = 0,
+\mathrm{Tr}_2\!\left(\frac{1}{2}|\uparrow\rangle\langle\downarrow| \otimes |\downarrow\rangle\langle\uparrow|\right) = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \cdot 2\,\mathrm{Sc}(|\downarrow\rangle\langle\uparrow|) = \frac{1}{2}|\uparrow\rangle\langle\downarrow| \cdot \langle\uparrow|\downarrow\rangle = 0,
 $$</p>
 <p>since $|\uparrow\rangle$ and $|\downarrow\rangle$ are orthogonal.</p>
 <p><strong>Second cross term.</strong> Similarly,</p>
@@ -192,7 +192,7 @@ $$</p>
 $$</p>
 <p>which is a product state (not entangled). The reduced state of particle 1 is</p>
 <p>$$
-\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = \mathrm{Tr}_2\!\left(|\uparrow\rangle\langle\uparrow| \otimes |\uparrow\rangle\langle\uparrow|\right) = |\uparrow\rangle\langle\uparrow| \cdot \mathrm{Tr}(|\uparrow\rangle\langle\uparrow|) = |\uparrow\rangle\langle\uparrow|.
+\tilde{Ϛ}_{\Psi,\mathrm{prod},1} = \mathrm{Tr}_2\!\left(|\uparrow\rangle\langle\uparrow| \otimes |\uparrow\rangle\langle\uparrow|\right) = |\uparrow\rangle\langle\uparrow| \cdot 2\,\mathrm{Sc}(|\uparrow\rangle\langle\uparrow|) = |\uparrow\rangle\langle\uparrow|.
 $$</p>
 <p>In biquaternion form, the joint state is</p>
 <p>$$

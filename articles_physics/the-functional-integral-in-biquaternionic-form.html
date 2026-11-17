@@ -79,7 +79,7 @@ and its derivatives generate the correlation functions of the theory. The two in
 <ul>
 <li><strong>Established, and recomputed below.</strong> The <strong>action</strong> of a biquaternion field is a <em>real central scalar</em>, extracted from the Hermitian form, read through the trace. The framework's real bilinear form is
 $$
-\langle \tilde{Q},\tilde{Q}_1\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
+\langle \tilde{Q},\tilde{Q}_1\rangle = 2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Q}^{*}\tilde{Q}_1\big),
 $$
 which is the positive-definite Hilbert–Schmidt form on the algebra; the signature split belongs to the biquaternion norm $\langle\cdot\rangle_{\natural}$, not to this pairing. For a field $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and a central kinetic operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ the quadratic action is
 $$
@@ -130,9 +130,9 @@ $$
 where $\flat=-{}^{*}$ is the anti-Hermitian conjugation; this is the field-level use of the sector split that <em>The Material Sector: Four-Vectors, Interval and Lorentz Action</em> and <em>The Informational Sector: States, Observables and Probability</em> establish.</p>
 <p><strong>The action must be a scalar, and the algebra supplies the extraction.</strong> A biquaternion is not a number, so a Lagrangian built from $\tilde{Ξ}$ is not automatically an action. The framework's scalar extraction is the trace, whose $e_t$ coefficient,
 $$
-\mathrm{Sc}(\tilde{Q}) = \tfrac12 \mathrm{Tr}(\tilde Q) ,
+\mathrm{Sc}(\tilde{Q}) = Q_t ,
 $$
-is the <em>scalar part</em> of $\tilde{Q}$; it is a complex number in general, and the physical action is its real part, equivalently the real bilinear form $\langle\tilde{Q},\tilde{Q}_1\rangle_{*}=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$. For a quadratic theory the natural action is
+is the <em>scalar part</em> of $\tilde{Q}$; it is a complex number in general, and the physical action is its real part, equivalently the real bilinear form $\langle\tilde{Q},\tilde{Q}_1\rangle_{*}=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$. For a quadratic theory the natural action is
 $$
 S[\tilde{Ξ}] = \int d^4r\;\Big\langle \tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle
 + S_{\mathrm{int}}[\tilde{Ξ}],
@@ -163,7 +163,7 @@ $$
 \boxed{\;\int \mathcal{D}\tilde{Ξ}\; \exp(-\frac12\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\rangle + \langle\tilde J_{\Phi},\tilde{Ξ}\rangle)
 = \big(\det W_{\mathrm{kinetic}}\big)^{-1/2}\, \exp(\frac12\langle\tilde J_{\Phi},W_{\mathrm{kinetic}}{}^{-1}\tilde J_{\Phi}\rangle)\;},
 $$
-where $\langle\tilde{Ξ},\tilde{Ξ}\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box+k_m^{2}$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$; the Lorentzian action's operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $W_{\mathrm{kinetic}}{}^{-1}$. The determinant is the object that <em>The Functional Determinant in Biquaternionic Form</em> computes; this article records only that the Gaussian integral reduces to it.</p>
+where $\langle\tilde{Ξ},\tilde{Ξ}\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Ξ}^{*}\tilde{Ξ})$ is the real bilinear form of the action, the determinant is taken on the module, and each mode contributes its two complex dimensions. In the Euclidean reading used for the Gaussian the operator $K$ is the kinetic operator $-\Box+k_m^{2}$, whose momentum symbol is the mass-shell operator $\mathcal{M}(\tilde P_{\Phi})=\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}+m^{2}\,c^{2}$; the Lorentzian action's operator $W_{\mathrm{kinetic}}=\Box-k_m^{2}$ is its negative, a sign that leaves the determinant unchanged on the two-complex-dimensional module but fixes the sign of the kernel $W_{\mathrm{kinetic}}{}^{-1}$. The determinant is the object that <em>The Functional Determinant in Biquaternionic Form</em> computes; this article records only that the Gaussian integral reduces to it.</p>
 <p><strong>Finite-dimensional verification.</strong> The <strong>real</strong> form of the identity was checked as follows, on a real symmetric — hence Hermitian — matrix $K$, with complex arithmetic carried through the elimination. For
 $$
 A_{\mathrm{gau}} = \begin{pmatrix} 2 & 0.5 & 0 \ 0.5 & 1.5 & 0.3 \ 0 & 0.3 & 1.2 \end{pmatrix},
@@ -175,14 +175,14 @@ the zero-source integral is $Z_0=(2\pi)^{3/2}(\det A_{\mathrm{gau}})^{-1/2}=8.91
 <p><strong>The cross term vanishes.</strong> Write $\tilde{Ξ}=\tilde{Ξ}_-+\tilde{Ξ}_+$ and expand the real form:
 $$
 \Big\langle\tilde{Ξ},W_{\mathrm{kinetic}}\tilde{Ξ}\Big\rangle
-= \mathrm{Re}\,\mathrm{Tr}\Big(\tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_- + \tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_+ + \tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_+ + \tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_-\Big),
+= 2\,\mathrm{Re}\,\mathrm{Sc}\Big(\tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_- + \tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_+ + \tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_+ + \tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_-\Big),
 $$
 using the centrality of $W_{\mathrm{kinetic}}$. The first two terms are the sector norms; the last two are cross terms. For the cross terms one has the identity
 $$
-\mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_+\big) = 0 = \mathrm{Re}\,\mathrm{Tr}\big(\tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_-\big)
+2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Ξ}^{*}_-W_{\mathrm{kinetic}}\tilde{Ξ}_+\big) = 0 = 2\,\mathrm{Re}\,\mathrm{Sc}\big(\tilde{Ξ}^{*}_+W_{\mathrm{kinetic}}\tilde{Ξ}_-\big)
 \qquad\text{for all } \tilde{Ξ}_\pm\in\mathbb{B}_{\Psi}\cup\mathbb{B}_{\Phi} .
 $$</p>
-<p><strong>Proof.</strong> It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i q'_t$ and $Q_\eta=q_\eta$, in the informational sector $Q_t=q_t$ and $Q_\eta=i q'_\eta$, and each elementary term is $\mathrm{Re}\,\mathrm{Tr}(e_\mu^{*}W_{\mathrm{kinetic}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot h_t$ on the time slot and $x_\eta\cdot i h'_{x_\eta}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
+<p><strong>Proof.</strong> It suffices to check the statement on the four units, since the real form is bilinear. In the material sector the coordinates are $Q_t=i q'_t$ and $Q_\eta=q_\eta$, in the informational sector $Q_t=q_t$ and $Q_\eta=i q'_\eta$, and each elementary term is $2\,\mathrm{Re}\,\mathrm{Sc}(e_\mu^{*}W_{\mathrm{kinetic}}e_\nu)$ times the product of one material coordinate and one informational one. The trace factor vanishes off the diagonal, and on it the coordinate product is purely imaginary, $i r'_t\cdot h_t$ on the time slot and $x_\eta\cdot i h'_{x_\eta}$ on each space slot. A direct evaluation over the $4\times4=16$ elementary products gives zero in every case. The cross terms of the real form therefore vanish, and the quadratic form is block diagonal.</p>
 <p><strong>Consequence: factorisation.</strong> With the source split as $\tilde J_{\Phi}=\tilde J_{\Phi,-}+\tilde J_{\Phi,+}$, the free functional integral is
 $$
 \boxed{\;Z_0[\tilde J_{\Phi}] = \int\mathcal{D}\tilde{Ξ}_-\,\exp(-\frac12\langle\tilde{Ξ}_-,W_{\mathrm{kinetic}}\tilde{Ξ}_-\rangle+\langle\tilde J_{\Phi,-},\tilde{Ξ}_-\rangle)
@@ -321,11 +321,11 @@ The Gaussian formula was verified in finite dimension ($\det A_{\mathrm{gau}}=3.
 <td>Biquaternion field and its sector parts</td>
 </tr>
 <tr>
-<td>$\mathrm{Sc}(\tilde{Q})=\tfrac12\mathrm{Tr}(\tilde{Q})$ (complex scalar part)</td>
-<td>Scalar extraction; the trace converts a biquaternion into a number</td>
+<td>$\mathrm{Sc}(\tilde{Q})=Q_t$ (complex scalar part)</td>
+<td>Scalar extraction; the scalar part converts a biquaternion into a number</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q},\tilde{Q}_1\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde{Q}_1)$</td>
+<td>$\langle\tilde{Q},\tilde{Q}_1\rangle=2\,\mathrm{Re}\,\mathrm{Sc}(\tilde{Q}^{*}\tilde{Q}_1)$</td>
 <td>Real bilinear form of the action; sector-orthogonal</td>
 </tr>
 <tr>

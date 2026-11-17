@@ -327,7 +327,7 @@ $$</p>
 </tr>
 <tr>
 <td>Norm</td>
-<td>$\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)=\exp(\operatorname{Tr}\tilde Q)$</td>
+<td>$\langle\exp\tilde Q\rangle_{\natural}=\exp(2Q_t)=\exp(2\operatorname{Sc}\tilde Q)$</td>
 </tr>
 <tr>
 <td>Hermitian norm</td>
@@ -366,7 +366,7 @@ $$</p>
 \partial/\partial Q_k \exp(\tilde{Q}) = \int_0^1 \exp(s \tilde{Q}) \vec e_k \exp((1-s)\tilde{Q}) \, ds.
 $$</p>
 <p>This reduces to $\exp(\tilde{Q}) \vec e_k$ only when $\vec e_k$ commutes with $\tilde{Q}$.</p>
-<p><strong>Biquaternion norm.</strong> The verification is direct: in the oscillatory regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_t)(\cos^2 B + \sin^2 B) = \exp(2 Q_t)$; in the nilpotent regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_t)(1 + 0) = \exp(2 Q_t)$. Here $\operatorname{Tr}(\tilde{Q}) = 2\operatorname{Sc}\tilde{Q} = 2Q_t$.</p>
+<p><strong>Biquaternion norm.</strong> The verification is direct: in the oscillatory regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_t)(\cos^2 B + \sin^2 B) = \exp(2 Q_t)$; in the nilpotent regime, $\langle\exp(\tilde{Q})\rangle_{\natural} = \exp(2 Q_t)(1 + 0) = \exp(2 Q_t)$. Here $2\operatorname{Sc}\tilde{Q} = 2Q_t$.</p>
 <h3 id="the-hermitian-norm-and-the-math268-unitary-flow">The Hermitian Norm and the $*$-Unitary Flow</h3>
 <p>The quaternionic norm is fixed by the scalar part alone. The Hermitian norm $\langle X\rangle_*=\operatorname{Sc}(XX^*)$ of <em>Norm and Unitary Conventions</em>, §<em>The Norm Convention</em>, is not: it reads the vector part as well, and it separates the three data of the element.</p>
 <p><strong>Proposition (the Hermitian norm of the flow).</strong> Let $B\neq0$, let $\vec U=\vec Q/B$, and let $\theta\in\mathbb{R}$. Then</p>
@@ -708,9 +708,9 @@ $$</p>
 $$</p>
 <p>lies in $D$ and exponentiates to $\tilde Q$. If $B=0$, the element $\operatorname{Log}Q_t\,e_t+\vec Q/Q_t$ lies in $D$ and exponentiates to $\tilde Q$.</p>
 <p>For injectivity, let $\tilde Q_1,\tilde Q_2\in D$ with $\exp\tilde Q_1=\exp\tilde Q_2=\tilde Q$. Both commute with $\tilde Q$. If $\tilde Q$ is not scalar, they lie in the commutative centraliser, so $\tilde Q_1-\tilde Q_2$ is a kernel element; its eigenvalues are differences of eigenvalues in $(-2\pi,2\pi)$, hence are $0$. A kernel element with all eigenvalues $0$ is $0$ (in the nilpotent centraliser the kernel is scalar), so $\tilde Q_1=\tilde Q_2$. If $\tilde Q$ is scalar, the only eigenvalue in the strip that exponentiates to $Q_t$ is $\operatorname{Log}Q_t$, so both $\tilde Q_i$ have both eigenvalues equal to $\operatorname{Log}Q_t$; a non-diagonalisable element with that repeated eigenvalue would exponentiate to a non-scalar element, so both are scalar and equal. Thus $\exp$ is injective. The analyticity statement is the inverse function theorem on $D^\circ$, where the eigenvalues differ by less than $2\pi$ and the differential of the exponential is invertible.</p>
-<p><strong>No global continuous branch.</strong> The principal logarithm is defined pointwise on all units, but it is not continuous on all of them. No continuous single-valued logarithm exists on $\mathbb B^\times$. If $L$ were one, then for $\lambda\in\mathbb C^\times$ the trace $\operatorname{Tr}L(\lambda e_t)$ would be a continuous logarithm of $\lambda^2$, since</p>
+<p><strong>No global continuous branch.</strong> The principal logarithm is defined pointwise on all units, but it is not continuous on all of them. No continuous single-valued logarithm exists on $\mathbb B^\times$. If $L$ were one, then for $\lambda\in\mathbb C^\times$ the doubled scalar part $2\operatorname{Sc}L(\lambda e_t)$ would be a continuous logarithm of $\lambda^2$, since</p>
 <p>$$
-\exp\bigl(\operatorname{Tr}L(\lambda e_t)\bigr)
+\exp\bigl(2\operatorname{Sc}L(\lambda e_t)\bigr)
 =\det\exp L(\lambda e_t)
 =\langle\lambda e_t\rangle_{\natural}
 =\lambda^2.

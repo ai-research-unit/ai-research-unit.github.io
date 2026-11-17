@@ -116,9 +116,9 @@ Its Fourier transform is supported in the closed forward light cone, by the posi
 $$
 \mathcal H_{\tilde{Ϛ}_{\Psi}}=\mathbb{B}\big/\mathcal{N}_{\tilde{Ϛ}_{\Psi}},
 \qquad
-\mathcal{N}_{\tilde{Ϛ}_{\Psi}}=\big\{\tilde Q_3:\mathrm{Tr}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3)=0\big\},
+\mathcal{N}_{\tilde{Ϛ}_{\Psi}}=\big\{\tilde Q_3:2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_3)=0\big\},
 \qquad
-\langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
+\langle\tilde Q_3,\tilde Q_1\rangle_{\tilde{Ϛ}_{\Psi}}=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3^{*}\tilde Q_1\big),
 $$
 with representation $\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)[\tilde Q_1]=[\tilde Q_3\tilde Q_1]$ and cyclic vector $\Omega_{\tilde{Ϛ}_{\Psi}}=[e_t]$. The vector is cyclic by construction: the classes $[\tilde Q_3]=\pi_{\tilde{Ϛ}_{\Psi}}(\tilde Q_3)\Omega_{\tilde{Ϛ}_{\Psi}}$ run over every element of the quotient, so $\pi_{\tilde{Ϛ}_{\Psi}}(\mathbb{B})\Omega_{\tilde{Ϛ}_{\Psi}}=\mathcal H_{\tilde{Ϛ}_{\Psi}}$ exactly, not merely densely.</p>
 <p>This is the finite-dimensional form of the cyclic half of the theorem, and in the finite-dimensional setting it is stronger than the field statement: the span is the whole space, not a dense subspace. The reason is that $\mathbb{B}$ is finite-dimensional and the quotient is a closed subspace; there is no room for a topological closure to differ from the algebraic span.</p>
@@ -155,8 +155,8 @@ the classes $\Omega=[e_t]$ and $\vec\Upsilon_y\Omega=[\vec\Upsilon_y]$ are ortho
 <p>The GNS radical of the vacuum is not trivial, and an explicit element of it is the annihilation operator. Using $\vec\Upsilon_y\vec\Upsilon_x=\tilde\Pi_-=\tfrac12(e_t-i\vec e_z)$ and $\tilde\Pi_+\tilde\Pi_-=0$,
 $$
 \boxed{\;\big\langle\Omega_{\tilde{Ϛ}_{\Psi}}\big|\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)^\dagger\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)\big|\Omega_{\tilde{Ϛ}_{\Psi}}\big\rangle
-=\mathrm{Tr}\big(\tilde\Pi_+\,\vec\Upsilon_y\vec\Upsilon_x\big)
-=\mathrm{Tr}\big(\tilde\Pi_+\tilde\Pi_-\big)=0\;}.
+=2\,\mathrm{Sc}\big(\tilde\Pi_+\,\vec\Upsilon_y\vec\Upsilon_x\big)
+=2\,\mathrm{Sc}\big(\tilde\Pi_+\tilde\Pi_-\big)=0\;}.
 $$
 So $\pi_{\tilde{Ϛ}_{\Psi}}(\vec\Upsilon_x)\Omega_{\tilde{Ϛ}_{\Psi}}=0$ with $\vec\Upsilon_x\ne0$: the vacuum fails to be separating, and the witness is the annihilation operator. Equivalently, the vacuum idempotent is a <strong>zero divisor</strong> — $\langle\tilde\Pi_+\rangle_{\natural}=0$ — and the zero-divisor direction is the state's failure of faithfulness. The two facts are the same fact.</p>
 <p>This is the framework's honest statement of the difficulty: the pure vacuum of a single mode cannot be separating for the finite algebra, because a nonzero element of the algebra annihilates it. In the field theory the vacuum is separating because the local algebra is infinite-dimensional, and the annihilation operators that would be the witnesses are not elements of $\mathcal A(O)$ in the required sense — the local algebra is type III, its operators are not bounded functions of finitely many modes, and the spectral condition forbids the witness.</p>
@@ -197,7 +197,7 @@ The generator is the commutator with the modular Hamiltonian, which is the finit
 <h3 id="the-kms-property-of-the-cyclic-vector">The KMS Property of the Cyclic Vector</h3>
 <p>A cyclic and separating vector of a modular algebra is a KMS state, at inverse temperature one in the modular parameter, for the inverse of the modular flow — the orientation convention of the KMS and Tomita–Takesaki companion articles, in which it is $\sigma_{-r'_t}$ that carries the boundary relation. In the finite model this is a computation rather than an assertion. Let $\tilde Q_3,\tilde Q_1\in\mathbb{B}$ and let
 $$
-F_{\tilde Q_3\tilde Q_1}(r'_t)=\mathrm{Tr}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3\,\alpha_{r'_{t}}(\tilde Q_1)\big),
+F_{\tilde Q_3\tilde Q_1}(r'_t)=2\,\mathrm{Sc}\big(\tilde{Ϛ}_{\Psi}\,\tilde Q_3\,\alpha_{r'_{t}}(\tilde Q_1)\big),
 \qquad
 \alpha_{r'_{t}}\big(\tilde Q_1\big)=\tilde{Ϛ}_{\Psi}^{-ir'_t}\tilde Q_1\,\tilde{Ϛ}_{\Psi}^{\,ir'_t},
 $$
@@ -281,8 +281,8 @@ This is the CAR algebra over the one-particle module. Its finite truncations are
 <td>Informational (Hermitian) and material (anti-Hermitian) subspaces</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$</td>
-<td>Trace reading of the plain form; $\mathrm{Tr}(e_t)=2$</td>
+<td>$2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2) = 2\langle\tilde Q_1,\tilde Q_2\rangle$</td>
+<td>Scalar-part reading of the plain form; $2\,\mathrm{Sc}(e_t)=2$</td>
 </tr>
 <tr>
 <td>$\mathcal A(O)$</td>

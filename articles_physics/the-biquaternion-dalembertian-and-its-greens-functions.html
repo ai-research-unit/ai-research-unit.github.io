@@ -156,13 +156,13 @@ whose symbol reproduces $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The companio
 <h3 id="self-adjointness">Self-adjointness</h3>
 <p>The adjoint of the gradient is computed with the Hermitian pairing on fields,
 $$
-\langle \tilde{F}, \tilde Q\rangle = \int \mathrm{Tr}\!\left(\tilde{F}^{*} \tilde Q\right) d^4r ,
+\langle \tilde{F}, \tilde Q\rangle = \int 2\,\mathrm{Sc}\!\left(\tilde{F}^{*} \tilde Q\right) d^4r ,
 $$
 the integration running over real time and space. Integrating by parts and using $\bigl(\partial/\partial R_\mu\,\tilde{F}\bigr)^\dagger = \partial/\partial R_\mu\,\tilde{F}^{*}$ for the real differential operators,
 $$
 \langle \tilde{F}, \tilde\nabla_\Phi\tilde Q\rangle
-= \int \mathrm{Tr}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial R_\mu\,\tilde Q\right) d^4r
-= -\int \mathrm{Tr}\!\left(\bigl(\partial/\partial R_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4r .
+= \int 2\,\mathrm{Sc}\!\left(\tilde{F}^{*}\, \sum_\mu\,e_\mu\,\partial/\partial R_\mu\,\tilde Q\right) d^4r
+= -\int 2\,\mathrm{Sc}\!\left(\bigl(\partial/\partial R_\mu \tilde{F}^{*}\bigr) e_\mu \tilde Q\right) d^4r .
 $$
 The algebraic identity
 $$
@@ -459,7 +459,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 </tr>
 <tr>
 <td>$\tilde{\nabla}^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box^{*} = \Box$</td>
-<td>Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde Q)$</td>
+<td>Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int2\,\mathrm{Sc}(\tilde{F}^{*}\tilde Q)$</td>
 </tr>
 <tr>
 <td>$\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_{\Phi,\tilde{\nabla}}^\flat = \tilde{G}_{\Phi,\tilde{\nabla}}$</td>

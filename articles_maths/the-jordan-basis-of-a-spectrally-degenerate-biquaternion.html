@@ -331,7 +331,7 @@ $$</p>
 \vec Q\vec\Upsilon_+=\tilde\Pi_+,\qquad
 \vec\Upsilon_+\vec Q=\tilde\Pi_-.
 $$</p>
-<p><em>Proof.</em> In the fixed model $Q=\mathsf M_2(\vec Q)$ is a rank-one nilpotent with singular value $s=\sqrt{2\langle\vec Q\rangle_*}$, so $Q=suv^\dagger$ with $u,v$ orthonormal. The Frobenius norm gives $s^2=\operatorname{Tr}(Q^\dagger Q)=2\langle\vec Q\rangle_*$. The four elements are the images of $uu^\dagger$, $suv^\dagger$, $s^{-1}vu^\dagger$ and $vv^\dagger$, and the identities are the matrix-unit identities. ∎</p>
+<p><em>Proof.</em> In the fixed model $Q=\mathsf M_2(\vec Q)$ is a rank-one nilpotent with singular value $s=\sqrt{2\langle\vec Q\rangle_*}$, so $Q=suv^\dagger$ with $u,v$ orthonormal. The Frobenius norm gives $s^2=2\operatorname{Sc}(Q^\dagger Q)=2\langle\vec Q\rangle_*$. The four elements are the images of $uu^\dagger$, $suv^\dagger$, $s^{-1}vu^\dagger$ and $vv^\dagger$, and the identities are the matrix-unit identities. ∎</p>
 <p><strong>Corollary (uniqueness).</strong> The canonical pair is the value $b=0$ of the affine family. Every adapted pair is $\tilde\Pi_+(b)=\tilde\Pi_+ + b\vec Q$ with $\tilde\Pi_-(b)=\tilde\Pi_- - b\vec Q$, and the pair is Hermitian exactly when $b=0$.</p>
 <p><em>Proof.</em> If $\tilde\Pi_+(b)$ is Hermitian, then $\bar b\vec Q^*=b\vec Q$. If $b\neq0$, then $\vec Q^*=\mu\vec Q$ with $\lvert\mu\rvert=1$, hence $\vec Q^*\vec Q=\mu\vec Q^2=0$, contrary to $\vec Q^*\vec Q$ being a nonzero projection. Hence $b=0$. ∎</p>
 <p><strong>Remark (the matrix form).</strong> The pair is the SVD frame of the nilpotent. The Jordanising matrix, its determinant and its freedom are in <em>The Jordan Basis of a Spectrally Degenerate Biquaternion</em>.</p>
@@ -500,7 +500,7 @@ $$</p>
 <p><em>Proof.</em> The four vectors are a basis, and the products are the table of $\mathsf M_2^{\tilde Q}$. ∎</p>
 <p><strong>Corollary (the centraliser).</strong> The matrices commuting with $J_2(Q_t)$ are the upper triangular Toeplitz matrices $\begin{pmatrix}a&b\\0&a\end{pmatrix}$. Hence the centraliser of $\tilde Q$ is $\mathbb{C}[\tilde Q]=\{ae_t+b\vec Q\}$, the dual numbers, of complex dimension two, with maximal ideal $\mathbb{C}\vec Q$ and only the idempotents $0$ and $e_t$.</p>
 <p><em>Proof.</em> A direct computation gives $c=0$ and $d=a$ for a matrix $\begin{pmatrix}a&b\\c&d\end{pmatrix}$ commuting with $J_2(Q_t)$. The coordinate matrix of $ae_t+b\vec Q$ is $aI+bE_{12}$. ∎</p>
-<p><strong>Corollary (the trace).</strong> $\operatorname{Tr}\tilde X=X_{11}+X_{22}$.</p>
+<p><strong>Corollary (the trace).</strong> $\operatorname{tr}\mathsf M_2(\tilde X)=X_{11}+X_{22}$.</p>
 <p><em>Proof.</em> The trace is twice the scalar part, and the scalar part of the expansion is $(X_{11}+X_{22})/2$. ∎</p>
 <h3 id="a-worked-example">A Worked Example</h3>
 <p>Take</p>

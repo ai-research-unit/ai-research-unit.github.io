@@ -73,7 +73,7 @@
 <p>A quantum source produces a state drawn from an ensemble. The receiver may perform any measurement the algebra admits, and from the outcome tries to recover the index of the state that was sent. How much of the source's classical information can be extracted in this way is the <strong>accessible information</strong> of the ensemble, and its universal upper bound is the <strong>Holevo bound</strong>. This article develops both in the biquaternion language of the informational sector.</p>
 <p>The two objects at issue are the ensemble and the measurement. In the framework both are elements of the Hermitian subspace: the ensemble is a family of positive elements $\tilde{Ϛ}_{\Psi,x}$ normalised by $\langle\tilde{Ϛ}_{\Psi,x},e_t\rangle_{*}=\tfrac12$ (trace one in the $2\times2$ image) with weights $p_x$, and the measurement is a family of positive elements $\tilde{E}_{\Psi}_y$ summing to the identity, the <strong>POVM</strong> developed in the companion article on the positive cone. The outcome probabilities are the normalised Hermitian form, read through the trace,</p>
 <p>$$
-p(y|x) = \mathrm{Tr}\bigl(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y\bigr),
+p(y|x) = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y\bigr) = 2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y\bigr),
 $$</p>
 <p>which is the Born rule. The accessible information is the classical mutual information of this channel, maximized over measurements; the Holevo quantity is the entropy difference</p>
 <p>$$
@@ -108,8 +108,6 @@ $$</p>
 <p>$$
 \tilde{E}_{\Psi}_y \geq 0, \qquad \sum_y \tilde{E}_{\Psi}_y = e_t ,
 $$</p>
-<p>each of which is an <strong>effect</strong>, $0\leq\tilde{E}_{\Psi}_y\leq e_t$. The probability of outcome $y$ given the state $\tilde{Ϛ}_{\Psi,x}$ is the normalised Hermitian form, $p(r_y|r_x)=\langle\tilde{Ϛ}_{\Psi,x},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi,x},e_t\rangle_{*}=\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde E_{\Psi}_y^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x})$; on $\mathbb{B}_{\Psi}$ this is the plain scalar $\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde E_{\Psi}_y)/\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x})$, and in the $2\times2$ image, with $\operatorname{Tr}(\tilde{Ϛ}_{\Psi,x})=1$, it is $p(y|x)=\operatorname{Tr}(\tilde{Ϛ}_{\Psi,x}\tilde E_{\Psi}_y)$, the star being inert on $\mathbb{B}_{\Psi}$ and the unstarred trace real and non-negative. Positivity of the effect ensures $p(y|x)\geq0$ and $\sum_y \tilde{E}_{\Psi}_y = e_t$ ensures $\sum_y p(y|x) = \operatorname{Tr}(\tilde{Ϛ}_{\Psi,x}) = 1$. A projective measurement is the special case in which the effects are orthogonal idempotents, $\tilde{E}_{\Psi}_y = \tilde\Pi_y$ with $\tilde\Pi_y^2 = \tilde\Pi_y$ and $\tilde\Pi_y\tilde\Pi_{y_2} = \delta_{yy_2}\tilde\Pi_y$. The cone of effects and its geometry are the subject of the companion article on POVMs and the positive cone; only these facts are used here.</p>
-<p>For every measurement, the outcome distribution is $p_y = \sum_x p_x p(r_y|r_x) = \langle\tilde{Ϛ}_{\Psi}^{\natural},\tilde E_{\Psi}_y\rangle_{*}/\langle\tilde{Ϛ}_{\Psi}^{\natural},e_t\rangle_{*}=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}^{\natural}\tilde{E}_{\Psi}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi}^{\natural}\tilde{E}_{\Psi}_y)$, the trace being the final reading at normalisation, so the average state determines the marginal statistics. This is the reason the average state, and not the individual members, controls the first-order behaviour of the ensemble.</p>
 <h3 id="the-accessible-information">The accessible information</h3>
 <p>Treat the ensemble index $X$ and the outcome $Y$ as classical random variables, with joint distribution $p(x,y) = p_x\,p(y|x)$. The <strong>accessible information</strong> is the mutual information maximized over all measurements,</p>
 <p>$$
@@ -172,7 +170,7 @@ $$</p>
 <p>The standard proof has two steps, both of which are theorems about entropy under maps.</p>
 <p><strong>Step 1: the measurement is a quantum channel.</strong> A measurement with POVM $\{\tilde{E}_{\Psi}_y\}$ followed by the recording of the outcome is a completely positive trace-preserving map carrying the quantum state to a classical state. In the Kraus language, choosing any square roots $\tilde M_{\mathrm{kraus},y} = \tilde{E}_{\Psi}_y^{1/2}$ gives $\tilde{E}_{\Psi}_y = \tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y}$ and</p>
 <p>$$
-Ξ(\tilde{Ϛ}_{\Psi}) = \sum_y \mathrm{Tr}\bigl(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}\bigr)\,|y\rangle\langle y| ,
+Ξ(\tilde{Ϛ}_{\Psi}) = \sum_y 2\,\mathrm{Sc}\bigl(\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}\bigr)\,|y\rangle\langle y| ,
 $$</p>
 <p>a channel from $\mathbb{B}_{\Psi}$ to the diagonal (commutative) subalgebra of the register, with Kraus rank at most the number of outcomes. The measured classical state is $Ξ(\tilde{Ϛ}_{\Psi}^{\natural})$.</p>
 <p><strong>Step 2: the data-processing inequality.</strong> For any channel $Ξ$ and any state $\rho_{XQ}$ with a classical register,</p>
@@ -280,7 +278,7 @@ $$</p>
 <p><strong>4. Continuity and the infinite ensemble.</strong> The bounds and the saturation arguments assume a finite ensemble. The extension to continuous ensembles, and the algebraic meaning of the measure on $\mathbb{B}_{\Psi}$, is open.</p>
 <p><strong>5. Empirical content.</strong> The Holevo form in the framework is the standard bound transcribed; it predicts nothing new.</p>
 <h2 id="summary">Summary</h2>
-<p>An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_{\Psi,x}\}$ in $\mathbb{B}_{\Psi}$ with an average state $\tilde{Ϛ}_{\Psi}^{\natural} = \sum_x p_x\tilde{Ϛ}_{\Psi,x}$. A measurement is a POVM $\{\tilde{E}_{\Psi}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the normalised Hermitian form, read through the trace $p(y|x) = \operatorname{Tr}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is</p>
+<p>An ensemble in the informational sector is a family of states $\{p_x,\tilde{Ϛ}_{\Psi,x}\}$ in $\mathbb{B}_{\Psi}$ with an average state $\tilde{Ϛ}_{\Psi}^{\natural} = \sum_x p_x\tilde{Ϛ}_{\Psi,x}$. A measurement is a POVM $\{\tilde{E}_{\Psi}_y\}$ of effects summing to $e_t$, and the outcome probabilities are the normalised Hermitian form, read through the scalar part $p(y|x) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y)$. The accessible information is the maximum classical mutual information $I(X:Y)$ over measurements, and the Holevo quantity is</p>
 <p>$$
 \xi(\mathcal{E}) = S(\tilde{Ϛ}_{\Psi}^{\natural}) - \sum_x p_x S(\tilde{Ϛ}_{\Psi,x}),
 $$</p>
@@ -323,7 +321,7 @@ $$</p>
 <td>POVM (effects)</td>
 </tr>
 <tr>
-<td>$p(y|x) = \operatorname{Tr}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y^{*})=\operatorname{Tr}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y^{*})$</td>
+<td>$p(y|x) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y^{*})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi,x}\tilde{E}_{\Psi}_y^{*})$</td>
 <td>Outcome probability (Born rule)</td>
 </tr>
 <tr>

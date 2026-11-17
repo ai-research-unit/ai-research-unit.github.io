@@ -84,9 +84,9 @@ $$</p>
 <p>$$
 \tilde\Pi = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U \ \in\ \mathbb{B}_{\Psi}^{\otimes n},
 \qquad
-\tilde\Pi^2 = \tilde\Pi, \qquad \mathrm{Tr}(\tilde\Pi) = \frac{2^n}{|S|} ,
+\tilde\Pi^2 = \tilde\Pi, \qquad 2^n\,\mathrm{Sc}(\tilde\Pi) = \frac{2^n}{|S|} ,
 $$</p>
-<p>which is an idempotent of the tensor-product algebra. The whole theory of stabilizer codes is thus a theory of <strong>commutative subalgebras and their idempotents</strong>, expressed in the algebra that this series uses throughout: the code space is a Peirce component of a commutative subalgebra, and the syndrome measurement projects onto its idempotents.</p>
+<p>which is an idempotent of the tensor-product algebra, and where the factor $2^n$ is the size of the $2^n\times2^n$ image of the tensor algebra. The whole theory of stabilizer codes is thus a theory of <strong>commutative subalgebras and their idempotents</strong>, expressed in the algebra that this series uses throughout: the code space is a Peirce component of a commutative subalgebra, and the syndrome measurement projects onto its idempotents.</p>
 <p>The central result is the <strong>Knill–Laflamme error-correction condition</strong>. An error set $\{\tilde{E}_{\Psi}_a\}$ is correctable by the code with idempotent $\tilde\Pi$ exactly when</p>
 <p>$$
 \tilde\Pi\,\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\,\tilde\Pi = c_{ab}\,\tilde\Pi
@@ -116,7 +116,7 @@ $$</p>
 <ul>
 <li><strong>Idempotent.</strong> Since $S$ is a group, $\left(\sum_{\tilde U\in S}\tilde U\right)^2 = \sum_{\tilde U\in S}|S|\,\tilde U = |S|\sum_{\tilde U}\tilde U$, so $\tilde\Pi^2 = \tilde\Pi$.</li>
 <li><strong>Hermitian and positive.</strong> Each $\tilde U$ is Hermitian, so $\tilde\Pi^{*} = \tilde\Pi$; and $\tilde\Pi$ is a sum of commuting involutions, hence it is a positive element of $\mathbb{B}_{\Psi}^{\otimes n}$ with eigenvalues $0$ and $1$.</li>
-<li><strong>Trace.</strong> $\mathrm{Tr}(\tilde\Pi) = |S|^{-1}\mathrm{Tr}(e_t^{\otimes n}) = 2^n/|S| = 2^k$, the dimension of the code space.</li>
+<li><strong>Reduced value.</strong> $2^n\,\mathrm{Sc}(\tilde\Pi) = |S|^{-1}\,2^n\,\mathrm{Sc}(e_t^{\otimes n}) = 2^n/|S| = 2^k$, the dimension of the code space.</li>
 </ul>
 <p>Thus the code space is the image of an idempotent of the algebra, and its dimension is $2^k$: the code encodes $k$ logical qubits into $n$ physical qubits. The idempotent is a <strong>Peirce component</strong> of the commutative subalgebra spanned by $S$; it is the maximal idempotent whose stabilizer is all of $S$.</p>
 <h3 id="errors">Errors</h3>
@@ -152,7 +152,7 @@ $$</p>
 <h3 id="verification">Verification</h3>
 <p>The following were verified by explicit computation with the $8\times8$ matrices:</p>
 <ul>
-<li><strong>Idempotency and trace.</strong> $\tilde\Pi^2 = \tilde\Pi$ and $\mathrm{Tr}(\tilde\Pi) = 2$, so the code space has dimension $2^1 = 2$, as required for one logical qubit.</li>
+<li><strong>Idempotency and reduced value.</strong> $\tilde\Pi^2 = \tilde\Pi$ and $2^n\,\mathrm{Sc}(\tilde\Pi) = 2$, so the code space has dimension $2^1 = 2$, as required for one logical qubit.</li>
 <li><strong>Correction of bit flips.</strong> For the error set $\{e_t^{\otimes3}, X_1, X_2, X_3\}$, the Knill–Laflamme condition holds with $c_{ab} = \delta_{ab}$:</li>
 </ul>
 <p>$$
@@ -201,7 +201,7 @@ $$</p>
 <p>The following were verified by explicit computation with the $32\times32$ matrices.</p>
 <ul>
 <li><strong>Commutativity and independence.</strong> All four generators commute pairwise, so $S$ is abelian; the group has order $16$ and the idempotent has trace $2$.</li>
-<li><strong>Idempotency.</strong> $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $\mathrm{Tr}(\tilde\Pi) = 2$, so the code space is two-dimensional.</li>
+<li><strong>Idempotency.</strong> $\tilde\Pi^2 = \tilde\Pi$, with spectrum in $\{0,1\}$ and $2^n\,\mathrm{Sc}(\tilde\Pi) = 2$, so the code space is two-dimensional.</li>
 <li><strong>Knill–Laflamme for every single-qubit error.</strong> The error set $\{e_t^{\otimes5}\}\cup\{X_i,Y_i,Z_i\}_{i=1}^{5}$ has sixteen elements. For every pair $a,b$ of these sixteen, the two-sided operator $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$ was found to be a multiple of $\tilde\Pi$, to machine precision. The five-qubit code therefore corrects <strong>an arbitrary single-qubit error</strong>.</li>
 <li><strong>Perfection.</strong> The fifteen errors $X_i,Y_i,Z_i$ ($i=1,\dots,5$) have fifteen distinct nonzero syndromes in $\{0,1\}^4\setminus\{0\}$, so the syndrome measurement identifies the error uniquely. This is the sense in which the code is <strong>perfect</strong>: the $32$-dimensional space decomposes exactly into the code space and the fifteen orthogonal error subspaces, with no room to spare. The counting is $1 + 15 = 16 = 2^{5-1}$, the size of the syndrome space.</li>
 </ul>
@@ -218,14 +218,14 @@ $$</p>
 <p>$$
 \boxed{\;\tilde\Pi = \tilde\Pi_{\mathrm{triv}} = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U\;},
 $$</p>
-<p>and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\xi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\xi \mathrm{Tr}(\tilde\Pi_\xi)$, with each $\mathrm{Tr}(\tilde\Pi_\xi) = 2^k$.</p>
+<p>and the other $|S|-1$ idempotents $\tilde\Pi_\xi$ have the syndrome subspaces as their images. The syndrome measurement is thus the measurement of the character $\xi$, i.e. the simultaneous measurement of the generators; each outcome corresponds to one of the group-algebra idempotents. This is why the code space and the error subspaces together tile the whole module: they are the images of a complete family of central idempotents of a finite abelian group algebra, acting on the tensored module. The counting $2^n = |S|\times 2^k$ is the statement $\dim = \sum_\xi 2^n\,\mathrm{Sc}(\tilde\Pi_\xi)$, with each $2^n\,\mathrm{Sc}(\tilde\Pi_\xi) = 2^k$.</p>
 <h2 id="what-the-framework-adds-and-what-it-does-not">What the Framework Adds and What It Does Not</h2>
 <p><strong>What it does.</strong></p>
 <ul>
 <li>It identifies the code space with the image of an idempotent $\tilde\Pi = |S|^{-1}\sum_{\tilde U\in S}\tilde U$ of the tensor-product algebra $\mathbb{B}_{\Psi}^{\otimes n}$, where $S$ is a finite commutative group of involutions; the code idempotent is a Peirce component of a commutative subalgebra.</li>
 <li>It states the Knill–Laflamme condition as a condition on the two-sided operator $\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi$, i.e. on the Gram matrix of the errors restricted to the code.</li>
 <li>It identifies the syndrome measurement with the projection onto the joint eigen-idempotents of the generators, a Peirce decomposition of the commutative subalgebra.</li>
-<li>It verifies idempotency, trace, Knill–Laflamme, and syndrome distinctness for the three-qubit bit-flip code and the five-qubit perfect code by explicit computation.</li>
+<li>It verifies idempotency, the code dimension, Knill–Laflamme, and syndrome distinctness for the three-qubit bit-flip code and the five-qubit perfect code by explicit computation.</li>
 </ul>
 <p><strong>What it does not.</strong></p>
 <ul>
@@ -244,14 +244,14 @@ $$</p>
 <p>Quantum error correction in the biquaternion framework is the theory of commutative subgroups of the Pauli involutions and their idempotents. A stabilizer group is an abelian subgroup $S$ of the Hermitian involutions of $\mathbb{B}_{\Psi}^{\otimes n}$ with $-e_t^{\otimes n}\notin S$, generated by $n-k$ independent elements, and the code space is the image of the idempotent</p>
 <p>$$
 \tilde\Pi = \frac{1}{|S|}\sum_{\tilde U\in S}\tilde U,
-\qquad \tilde\Pi^2 = \tilde\Pi, \qquad \mathrm{Tr}(\tilde\Pi) = 2^k .
+\qquad \tilde\Pi^2 = \tilde\Pi, \qquad 2^n\,\mathrm{Sc}(\tilde\Pi) = 2^k .
 $$</p>
 <p>An error set $\{\tilde{E}_{\Psi}_a\}$ is correctable if and only if the <strong>Knill–Laflamme condition</strong></p>
 <p>$$
 \boxed{\;\tilde\Pi\tilde{E}_{\Psi}_a^{*}\tilde{E}_{\Psi}_b\tilde\Pi = c_{ab}\tilde\Pi\;}
 $$</p>
 <p>holds for all $a,b$: the error operators, restricted to the code, have a scalar Gram matrix and cannot resolve the encoded state. The syndrome measurement is the joint measurement of the commuting generators, i.e. the projection onto the joint eigen-idempotents of a commutative subalgebra.</p>
-<p>Two codes were constructed and verified. The three-qubit bit-flip code has $S$ generated by $Z_1Z_2$, $Z_2Z_3$, code idempotent $\tilde\Pi = \tfrac14(e_t^{\otimes3}+Z_1Z_2+Z_2Z_3+Z_1Z_3)$ with $\mathrm{Tr}(\tilde\Pi) = 2$, and satisfies $\tilde\Pi X_iX_j\tilde\Pi = \delta_{ij}\tilde\Pi$, correcting any single bit flip and failing for phase flips. The five-qubit perfect code has the four cyclic generators $XZZXe_t$, $e_tXZZX$, $Xe_tXZZ$, $ZXe_tXZ$, code idempotent with $\mathrm{Tr}(\tilde\Pi) = 2$, and satisfies the Knill–Laflamme condition for all sixteen single-qubit Pauli errors; its fifteen nontrivial single-qubit errors have fifteen distinct nonzero syndromes, so it corrects an arbitrary single-qubit error and tiles the $32$-dimensional space exactly.</p>
+<p>Two codes were constructed and verified. The three-qubit bit-flip code has $S$ generated by $Z_1Z_2$, $Z_2Z_3$, code idempotent $\tilde\Pi = \tfrac14(e_t^{\otimes3}+Z_1Z_2+Z_2Z_3+Z_1Z_3)$ with $2^3\,\mathrm{Sc}(\tilde\Pi) = 2$, and satisfies $\tilde\Pi X_iX_j\tilde\Pi = \delta_{ij}\tilde\Pi$, correcting any single bit flip and failing for phase flips. The five-qubit perfect code has the four cyclic generators $XZZXe_t$, $e_tXZZX$, $Xe_tXZZ$, $ZXe_tXZ$, code idempotent with $2^3\,\mathrm{Sc}(\tilde\Pi) = 2$, and satisfies the Knill–Laflamme condition for all sixteen single-qubit Pauli errors; its fifteen nontrivial single-qubit errors have fifteen distinct nonzero syndromes, so it corrects an arbitrary single-qubit error and tiles the $32$-dimensional space exactly.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -286,7 +286,7 @@ $$</p>
 <td>Code idempotent</td>
 </tr>
 <tr>
-<td>$\tilde\Pi^2=\tilde\Pi$, $\mathrm{Tr}(\tilde\Pi) = 2^k$</td>
+<td>$\tilde\Pi^2=\tilde\Pi$, $2^n\,\mathrm{Sc}(\tilde\Pi) = 2^k$</td>
 <td>Code properties ($k$ logical qubits)</td>
 </tr>
 <tr>

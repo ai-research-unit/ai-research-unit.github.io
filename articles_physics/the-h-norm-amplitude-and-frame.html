@@ -293,7 +293,7 @@ $$</p>
 <p>$$
 2H(\tilde Q)=\operatorname{Tr}\bigl(\rho(\tilde Q)\rho(\tilde Q)^{*}\bigr)=\bigl\lVert\rho(\tilde Q)\bigr\rVert_{\mathrm{HS}}^{2},
 $$</p>
-<p>and the Hilbert–Schmidt norm of a matrix is invariant under left and right unitary multiplication by construction. The factor $2$ is the trace convention, $\operatorname{Tr}=2\operatorname{Sc}$, and it returns in the composition bound of a later section.</p>
+<p>and the Hilbert–Schmidt norm of a matrix is invariant under left and right unitary multiplication by construction. The factor $2$ is the reduction convention, $2\,\mathrm{Sc}=2\operatorname{Sc}$, and it returns in the composition bound of a later section.</p>
 <p><strong>The invariance is what makes the decomposition canonical, and the two facts are the same fact.</strong> A pair $\tilde Q=\tilde Q_H\tilde Q_0$ with $\tilde Q_H$ in the cone and $\tilde Q_0$ unitary is a decomposition of the double coset $U(\mathbb{B})\backslash\mathbb{B}/U(\mathbb{B})$ into a positive representative and a group element. The amplitude is the positive representative and the frame is the group element. Changing the frame on the right moves the group element; changing the frame on the left conjugates the representative.</p>
 <p><strong>The two transformations are worth writing side by side.</strong></p>
 <p>$$
@@ -328,7 +328,7 @@ $$</p>
 <p>$$
 \boxed{\;\tilde{Ϛ}_{\Psi,Q}=\frac{\tilde Q\tilde Q^{*}}{2H(\tilde Q)}=\frac{\tilde Q_H^{2}}{2H(\tilde Q)}\;}
 $$</p>
-<p><strong>The image is Hermitian, positive semidefinite and of trace one.</strong> $\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}=\operatorname{Tr}(\tilde Q\tilde Q^{*})/(2H)=2H/(2H)=1$, and the positivity is the positivity of the Hermitian square. So the image is a state of the informational sector, of the form $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.</p>
+<p><strong>The image is Hermitian, positive semidefinite and of normalised.</strong> $2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi,Q}=2\,\mathrm{Sc}(\tilde Q\tilde Q^{*})/(2H)=2H/(2H)=1$, and the positivity is the positivity of the Hermitian square. So the image is a state of the informational sector, of the form $\tfrac12(e_t+i\vec r)$ with $\lvert\vec r\rvert\le1$.</p>
 <p><strong>The map forgets the frame and the scale, in that order.</strong> A right multiplication by a $*$-unitary leaves the image alone, because $\tilde V\tilde V^{*}=e_t$. A multiplication by a nonzero complex scalar leaves it alone, because the numerator and the denominator carry the same factor. A left multiplication by a $*$-unitary conjugates the image, because it conjugates the amplitude.</p>
 <p><strong>The image depends on the amplitude through its singular values only.</strong></p>
 <p>$$
@@ -343,7 +343,7 @@ $$</p>
 <p>with $\Xi$ the rapidity of the boost factor and $\vec u_{\mathrm b}$ its axis. The phase, the rotor angle and the rotor axis do not appear, and neither does the scale. Three of the four factors of the polar word leave no trace in the state; the fourth is the state.</p>
 <p><strong>The purity is a function of the rapidity alone.</strong></p>
 <p>$$
-\operatorname{Tr}\tilde{Ϛ}_{\Psi,Q}^{2}=1-\frac{\lvert N(\tilde Q)\rvert^{2}}{2H(\tilde Q)^{2}}
+2\,\mathrm{Sc}\tilde{Ϛ}_{\Psi,Q}^{2}=1-\frac{\lvert N(\tilde Q)\rvert^{2}}{2H(\tilde Q)^{2}}
 =\frac{1+\tanh^{2}\Xi}{2},\qquad
 \lvert\vec r\rvert=\tanh\Xi .
 $$</p>
@@ -363,7 +363,6 @@ $$</p>
 \bigl\lvert N(\tilde Q)\bigr\rvert=\sigma_1\sigma_2,\qquad
 H(\tilde Q)-\bigl\lvert N(\tilde Q)\bigr\rvert=\frac{(\sigma_1-\sigma_2)^{2}}{2}\;}
 $$</p>
-<p><strong>The first is the trace of the Hermitian square read through the convention $\operatorname{Tr}=2\operatorname{Sc}$.</strong> The second is the product of its spectral values, which is its quaternionic norm, and the third is the arithmetic–geometric gap written in the algebra's units. A numerical check on a hundred random elements confirmed all three to ten digits.</p>
 <p><strong>The third identity is the reason the entry can be written at all.</strong> It says that the difference between the amplitude and the mass is not a matter of taste but the square of the spread of the two singular values. An element whose two singular values are equal has $H=\lvert N\rvert$ and no other difference exists. An element whose singular values are far apart has a large amplitude relative to its mass, and the excess is quadratic in the spread.</p>
 <p><strong>The two singular values are the parameters of the double coset.</strong></p>
 <p>$$
@@ -541,7 +540,7 @@ $$</p>
 <p><strong>Read:</strong> the elements that preserve $H$ on one side for every element are exactly the $*$-unitary ones, and among positive definite forms invariant under both sides $H$ is unique up to scale.</p>
 <p><strong>A conservation law is a group, and the group is a small one.</strong> The invariance of $H$ is the group $U(2)$, of real dimension four. If a larger group preserved it, the measure would be constant on larger orbits and would carry less; if a smaller one did, it would not be a scalar under a unitary rotation.</p>
 <p><strong>The physical interpretation is that the amplitude is the unique scalar of the compact group.</strong> Every function of the element invariant under both-sided unitary multiplication is a function of $H$. This is why the amplitude can be normalised once and for all, and why the frame can be discarded without loss of the magnitude.</p>
-<p><strong>The boundary.</strong> Uniqueness is up to a positive scale. The scale is fixed by the trace convention $\operatorname{Tr}(e_t)=2$, and that convention is a normalisation of the algebra and not a law of physics.</p>
+<p><strong>The boundary.</strong> Uniqueness is up to a positive scale. The scale is fixed by the reduction convention $2\,\mathrm{Sc}(e_t)=2$, and that convention is a normalisation of the algebra and not a law of physics.</p>
 <h3 id="i8c-what-it-is-and-how-it-is-oriented">I.8.c — What It Is and How It Is Oriented</h3>
 <p><strong>Read:</strong> the amplitude is the scale times the boost, and the frame is the central phase times the rotor.</p>
 <p><strong>The four-factor word splits two and two.</strong> The scale and the rapidity are the amplitude's; the central phase and the rotor angle are the frame's; and the two axes go one to each. The decomposition is a partition of the word and not a partition of the element into large and small pieces.</p>

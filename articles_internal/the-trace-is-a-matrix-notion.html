@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Trace Is a Matrix Notion — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-trace-is-a-matrix-notion"><strong>The Trace Is a Matrix Notion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>A trace is the sum of the diagonal entries of a matrix.</strong> That is the whole definition. An element of the biquaternion algebra has no diagonal, because it is not an array. Every sentence of the corpus that traces an element therefore rests on a chosen matrix, and the matrix is usually not written in the same line.</p>
+<p><strong>Before the migration the corpus wrote a trace symbol $1{,}760$ times in $609$ physics articles, and $7{,}441$ times across the $3{,}123$ articles of the repository</strong>, counting the four spellings $\operatorname{tr}$, $\operatorname{Tr}$, $\mathrm{tr}$ and $\mathrm{Tr}$. Of the $1{,}454$ uppercase sites in the physics tree, $566$ stood in front of an element of $\mathbb{B}$ and $888$ in front of a matrix or another named carrier. The first group was what the migration removed; the second is what stays. <strong>After the migration the physics tree carries $855$ sites in $166$ articles, of which $557$ are uppercase</strong>, and every one of them has a matrix, an operator, a representation or a field extension in the argument. The mathematics tree carries $5{,}295$ sites in $622$ of its $2{,}465$ articles, almost all of them in the matrix-algebra series, where the argument is an array by construction. A reader who cannot tell the two groups apart gets numbers wrong by a factor of two, and the factor of two is the difference between a normalised state and a state of scalar part one.</p>
+<p><strong>This article is the short reading of that fact.</strong> It says what a matrix trace is, why an element needs a carrier, which carrier this corpus uses, why the factor $2$ is not decoration, and how the four forms and the four norms of the algebra sit on top of the same trace. The long inventory is <em>The Trace: The Carrier and the Factor</em>, and the file-by-file record is <em>Trace Migration: The Purge of the Informational Trace</em>.</p>
+<h2 id="what-a-matrix-trace-is">What a Matrix Trace Is</h2>
+<p><strong>The definition is a sum.</strong> For $X\in M_n(\mathbb{C})$,</p>
+<p>$$
+\operatorname{tr}X=\sum_{i=1}^{n}X_{ii}.
+$$</p>
+<p><strong>The sum is basis independent, and the reason is the cyclic identity.</strong> For any two matrices, $\operatorname{tr}(XY)=\operatorname{tr}(YX)$, because both sums run over the same set of products $X_{ij}Y_{ji}$. A change of basis replaces $X$ by $SXS^{-1}$, and the cyclic identity moves $S^{-1}S$ to the identity. So the number does not depend on the basis, even though the diagonal does.</p>
+<p><strong>The trace and the determinant are the two coefficients of the characteristic polynomial.</strong> At size $n$ the trace is the sum of the eigenvalues and the determinant is their product. That is why the pair appears together in every spectral statement of the corpus: the trace reads the sum, the norm reads the product, and a similarity fixes both.</p>
+<p><strong>The trace is one number out of $n^2$, and what it forgets is a subspace.</strong> The matrices of trace zero form $\mathfrak{sl}_n$, of dimension $n^2-1$. At $n=2$ that is complex dimension three. So <em>traceless</em> names a subspace of codimension one. It never means zero, and it never means <em>has no scalar part</em> unless the scalar part is the trace in the carrier in use.</p>
+<h2 id="why-an-element-needs-a-carrier">Why an Element Needs a Carrier</h2>
+<p><strong>An abstract element has no entries.</strong> The trace is defined on an array of numbers. An element of $\mathbb{B}$ is a linear combination of four units with complex coefficients, and there is no diagonal to sum until a matrix is produced.</p>
+<p><strong>Three classical repairs exist, and each one chooses a different matrix.</strong> The <strong>reduced trace</strong> reads the element in a splitting representation, $\operatorname{Trd}(a)=\operatorname{tr}(a\otimes 1)$, and for $\mathbb{B}$ the splitting field is $\mathbb{C}$ itself. The <strong>regular trace</strong> reads left multiplication, $\operatorname{tr}L(a)$, where the carrier is the algebra as a vector space. The <strong>representation trace</strong> reads a module, $\operatorname{tr}\rho(a)$. Each gives a number, and the three numbers differ by factors, because the three matrices have different sizes.</p>
+<p><strong>The factor is the size of the matrix.</strong> For a central simple algebra of degree $n$ the reduced trace has factor $n$ and the regular trace has factor $n^2$. For a representation the factor is $\dim V$. So the phrase <em>the trace of an element</em> is incomplete until the carrier is named and the factor written.</p>
+<h2 id="the-carrier-this-corpus-uses">The Carrier This Corpus Uses</h2>
+<p><strong>One isomorphism is fixed once and for all.</strong> $\mathsf{M}_2$ sends $e_t\mapsto I_2$ and $\vec e_\eta\mapsto -i\sigma_\eta$. It is complex-linear and it is an isomorphism of algebras, so it carries products to products, the star to the adjoint, and the quaternionic norm to the determinant.</p>
+<p><strong>The trace of the image is twice the scalar part,</strong></p>
+<p>$$
+\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t=2\,\mathrm{Sc}\,\tilde Q .
+$$</p>
+<p><strong>The factor $2$ is the degree of the algebra and the size of the matrix.</strong> It is not a convention and it cannot be divided out without changing the symbol. That is why the corpus writes $2\,\mathrm{Sc}$ and not $\operatorname{Tr}$ after the migration: the number stays, and the matrix disappears from the line where no matrix is present.</p>
+<p><strong>The scalar part exists without a matrix, and the trace does not.</strong> $\mathrm{Sc}$ is the coefficient of $e_t$, an operation defined on the algebra alone. A trace needs an array. This asymmetry is the whole argument of the internal articles, and it is the reason the physics corpus was rewritten and the matrix articles were not.</p>
+<p><strong>The mathematics corpus splits along the same line.</strong> The Part VI pass reads $125$ sites in twenty files: $67$ symbols are deleted, $30$ keep the symbol and gain a carrier noun, and $28$ are matrix traces that stay untouched. The $5\,228$ symbols that remain in the mathematics corpus sit in the matrix and operator articles, where the argument is a matrix of $M_n$, an adjoint operator or a curvature form.</p>
+<h2 id="the-factor-is-not-decoration">The Factor Is Not Decoration</h2>
+<p><strong>Deleting a trace without its factor halves every probability statement.</strong> The normalisation of a state is $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$, not $\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}=1$. The scalar part of the state is $\tfrac12$. A purity is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}^{2})$, an entropy is $-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, and a variance doubles its factor rather than cancelling it, because the square of a trace is not the trace of a square.</p>
+<p><strong>The factor cancels in a ratio and stays in a normalisation.</strong> A Born weight is a ratio of two traces, so the factor of $2$ cancels and the number is a probability. The trace-one condition is not a ratio, so the factor stays and the condition becomes $2\,\mathrm{Sc}=1$. These are the two opposite mistakes that the substitution map is built to prevent.</p>
+<p><strong>The two readings are a sum and a product.</strong> Twice the scalar part is the sum of the two eigenvalues, $2Q_t=\lambda_++\lambda_-$, and the quaternionic norm is their product, $\langle\tilde Q\rangle_\natural=\lambda_+\lambda_-$. A similarity, $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{-1}$, fixes both numbers because it fixes the spectrum. A Lorentz transformation is a congruence, $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, with $\langle\tilde U\rangle_\natural=1$: it fixes the quaternionic norm, which is the mass squared, and it moves the scalar part, which is the energy.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>value on $\tilde Q$</th>
+<th>under the adjoint $\tilde U\tilde Q\tilde U^{-1}$</th>
+<th>under the congruence $\tilde U\tilde Q\tilde U^{*}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2\,\mathrm{Sc}$</td>
+<td>$2Q_t$, the sum of the spectrum</td>
+<td>fixed</td>
+<td>changes: it is the energy</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_\natural$</td>
+<td>$Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the product</td>
+<td>fixed</td>
+<td>fixed: it is the mass squared</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{*}$</td>
+<td>$\lvert Q_t\rvert^2+\lvert\vec Q\rvert^2$</td>
+<td>fixed only when $\tilde U$ is unitary</td>
+<td>fixed under a rotation, changes under a boost</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-four-forms-are-half-traces">The Four Forms Are Half-Traces</h2>
+<p><strong>A form of the algebra is a product read on its scalar part, with one conjugation per slot.</strong> There are four ways to place the conjugations, so there are four forms. Each is one half of the trace of the same product in the $2\times2$ carrier,</p>
+<p>$$
+P=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde Q_1\tilde Q_2)\bigr),\quad
+N=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde Q_1^{\natural}\tilde Q_2)\bigr),\quad
+H=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde Q_1\tilde Q_2^{*})\bigr),\quad
+\mathrm{Kr}=\tfrac12\operatorname{tr}\bigl(\mathsf{M}_2(\tilde Q_1^{\natural}\tilde Q_2^{*})\bigr).
+$$</p>
+<p><strong>The four forms differ only in where the conjugation sits.</strong> The plain form conjugates neither slot, the quaternionic form conjugates the first, the Hermitian form the second, and the Krein form both. The four identities hold because the trace of the image is twice the scalar part in every case; on random pairs the residual is $10^{-16}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>letter</th>
+<th>expression</th>
+<th>conjugation</th>
+<th>what it measures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plain</td>
+<td>$P$</td>
+<td>$\mathrm{Sc}(\tilde Q_1\tilde Q_2)$</td>
+<td>none</td>
+<td>the pairing of the algebra, complex bilinear</td>
+</tr>
+<tr>
+<td>quaternionic</td>
+<td>$N$</td>
+<td>$\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2)$</td>
+<td>first slot</td>
+<td>the interval, and its zero set is the light cone</td>
+</tr>
+<tr>
+<td>Hermitian</td>
+<td>$H$</td>
+<td>$\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$</td>
+<td>second slot</td>
+<td>the weight, positive definite on the algebra</td>
+</tr>
+<tr>
+<td>Krein</td>
+<td>$\mathrm{Kr}$</td>
+<td>$\mathrm{Sc}(\tilde Q_1^{\natural}\tilde Q_2^{*})$</td>
+<td>both slots</td>
+<td>the indefinite volume form</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read at two equal arguments, the four forms give the four norms.</strong> They are $\langle\tilde Q\rangle$, $\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q\rangle_{*}$ and $\langle\tilde Q\rangle_{\natural*}$. The quaternionic one is the determinant of the image and it multiplies. The Hermitian one is positive definite and it does not multiply. The plain one is complex in general and vanishes on a cone. The Krein one is indefinite.</p>
+<p><strong>The count of four comes from the conjugations, not from the trace.</strong> A trace is one functional. The four forms are four bilinear maps, and the trace is only the carrier in which each of them becomes a matrix expression with the factor $\tfrac12$. This is the point that a reader who knows only matrices tends to miss: the richness is in the placement of the conjugations, and the trace adds nothing to it.</p>
+<p><strong>The trace gives none of the four norms by itself.</strong> $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$ is a complex number that forgets the vector part. The Hermitian norm is the only positive one of the four, and only its square root is a topological norm. A trace cannot supply positivity, because a trace is signed and, on the real matrices, indefinite.</p>
+<h2 id="what-the-trace-cannot-do">What the Trace Cannot Do</h2>
+<p><strong>It is not positive.</strong> At $n=2$ the matrix unit $E_{12}$ is nonzero and $\operatorname{tr}(E_{12}^{2})=0$. The form $\operatorname{tr}(X^2)$ has signature $(3,1)$ on the real $2\times2$ matrices, so it is a metric form and not a probability.</p>
+<p><strong>It is not multiplicative.</strong> For $X=I_2$, the trace of the square is $2$ and the square of the trace is $4$. Multiplicativity belongs to the determinant, and that is exactly the split the corpus turns on: a form that multiplies gives a group of isometries, and a form that does not gives a probability.</p>
+<p><strong>It does not separate points.</strong> The traceless part is a nonzero subspace, so two different elements share a trace. An electron and a proton at the same energy share $2iE/c$ and differ in the norm. That is why the norm, and not the trace, names the particle.</p>
+<p><strong>The trace of a commutator vanishes.</strong> Since $\operatorname{tr}([A,B])=0$ and $\operatorname{tr}\mathsf{M}_2(e_t)=2$, no pair of elements satisfies $[a,b]=e_t$. This is the algebraic reason the finite-dimensional algebra carries no canonical pair, and it is a statement about the trace doing its job, not a defect of the framework.</p>
+<h2 id="where-the-symbol-stays">Where the Symbol Stays</h2>
+<p><strong>A trace stays wherever the matrix is written next to it.</strong> Five groups of sites survive the migration, and each has a matrix in the argument.</p>
+<p><strong>The image of an element.</strong> $\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_t$ is the declaration of the carrier. It is the one place where the factor $2$ is proved rather than used, and it belongs in the article that fixes the representation.</p>
+<p><strong>A tensor product.</strong> On $\mathbb{B}\otimes\mathbb{B}$ the carrier is the $4\times4$ image, so the factor is $4$ and a factor trace is $2\,\mathrm{Sc}_B$. The identity $\operatorname{tr}(x\otimes y)=\operatorname{tr}(x)\operatorname{tr}(y)$ is what makes the factors multiply, and it is a matrix identity.</p>
+<p><strong>A gauge factor.</strong> $\operatorname{Tr}_R(T^aT^b)=T(R)\delta^{ab}$ is a trace in a representation, its value is the Dynkin index, and it sets the normalisation of $\operatorname{Tr}(F\wedge F)$. Lattice gauge theory is written entirely in this trace, and the lattice article keeps all of its $30$ sites for that reason, each one now written on the explicit $2\times2$ image $\mathsf{M}_2(\cdot)$.</p>
+<p><strong>A regular representation.</strong> In the reduced biquaternion articles the trace of an element is the trace of its left multiplication operator, $\operatorname{tr}L_{\breve Q}=Q_{+}+Q_{-}=2Q_{\blacktriangle}$. The symbol is correct there and the carrier was missing, so the pass kept the trace and named $L$.</p>
+<p><strong>An operator or a transfer matrix.</strong> $Z=\operatorname{Tr}\exp(-\beta H)$ on a Hilbert space whose $H$ is an operator, and $Z=\operatorname{Tr}T^{N_t}$ on a lattice transfer matrix, are matrix statements of the usual kind; they carry their matrix in the argument. The biquaternion case is not of this kind, because there $H$ is an element and the reading is $2\,\mathrm{Sc}\exp(-\beta H)$.</p>
+<h2 id="how-to-read-a-migrated-article">How to Read a Migrated Article</h2>
+<p><strong>A migrated article writes the factor where the older text wrote the symbol.</strong> The substitution is fixed.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>argument of the old symbol</th>
+<th>what the text now says</th>
+<th>factor</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one element $\tilde X$</td>
+<td>$2\,\mathrm{Sc}(\tilde X)$</td>
+<td>$2$</td>
+<td>the $2\times2$ image</td>
+</tr>
+<tr>
+<td>two elements $XY$</td>
+<td>$2\,\mathrm{Sc}(XY)$</td>
+<td>$2$</td>
+<td>the same image</td>
+</tr>
+<tr>
+<td>$x\otimes y$</td>
+<td>$4\,\mathrm{Sc}(x\otimes y)$, or $4\,\mathrm{Sc}(x)\,\mathrm{Sc}(y)$</td>
+<td>$4$</td>
+<td>one factor of $2$ per factor</td>
+</tr>
+<tr>
+<td>a reduction in one factor</td>
+<td>$2\,\mathrm{Sc}_B(\cdots)$</td>
+<td>$2$</td>
+<td>the dimension of the discarded factor</td>
+</tr>
+<tr>
+<td>a matrix, a density operator, a generator, a field strength</td>
+<td>unchanged</td>
+<td>$1$</td>
+<td>the argument is already an array</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A line without a factor is a defect.</strong> If a migrated line states that a state has scalar part one, the factor was dropped and the statement is wrong by a factor of two. The mechanical check is the string <code>\operatorname{Tr}\tilde</code>, which must not occur in a migrated file: a trace symbol followed directly by an element is a site that was missed.</p>
+<h2 id="the-five-rules">The Five Rules</h2>
+<p><strong>Name the carrier.</strong> A trace is the trace of a matrix, an operator, a representation or a field extension. Write which one.</p>
+<p><strong>Write the factor.</strong> $1$ for a matrix, $2$ for the $2\times2$ image, $4$ for a $4\times4$ carrier, $2^n$ for $\mathbb{B}^{\otimes n}$, $\dim V$ for a representation, $[L:k]$ for a field extension.</p>
+<p><strong>One symbol, one carrier, per article.</strong> If two carriers are needed, subscript them, as $\operatorname{tr}\mathsf{M}_2$ and $\operatorname{Tr}_R$ already do.</p>
+<p><strong>The trace is not a norm.</strong> It is complex in general, it is indefinite on the real matrices, and it forgets the traceless part. Only the Hermitian algebraic norm is positive.</p>
+<p><strong>Traceless is not zero.</strong> It is the kernel of a named trace, and it has codimension one.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace is a sum of diagonal entries, and it is defined on matrices alone. An element of $\mathbb{B}$ is not a matrix, so a trace of an element always names a carrier, and this corpus names the $2\times2$ image. In that carrier the trace is twice the scalar part, and the factor $2$ is the degree of the algebra, not a convention. The migrated articles write $2\,\mathrm{Sc}$ and keep the factor visible. The four forms are the four half-traces of the four products, the four norms are their diagonals, and the count of four comes from the placement of the conjugations and not from the trace. The trace itself is neither positive, nor multiplicative, nor separating, and the places where the symbol remains are the places where a matrix stands in the argument.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-trace-the-carrier-and-the-factor.html">The Trace: The Carrier and the Factor</a>. The six carriers, the factors $1$, $2$, $4$, $\dim V$ and $[L:k]$, the Dirac pair of traces and the four counterexamples.</li>
+<li><a href="trace-migration.html">Trace Migration: The Purge of the Informational Trace</a>. The criterion, the substitution map, the per-file record and the corpus census.</li>
+<li><a href="../articles_physics/the-four-forms-and-the-four-norms.html">The Four Forms and the Four Norms</a>. The four brackets, the four letters $P$, $N$, $H$ and $\mathrm{Kr}$, and the four algebraic norms.</li>
+<li><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>. The signatures, the null sets and the multiplicativity proofs.</li>
+<li><a href="../articles_physics/matrix-representations-conventions.html">Matrix Representations Conventions</a>. The $2\times2$ and $4\times4$ images, and the factor between them.</li>
+<li><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>. The three pairings, the normalisation and the Born ratio.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

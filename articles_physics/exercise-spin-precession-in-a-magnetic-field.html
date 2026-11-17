@@ -73,7 +73,6 @@
 <p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
 <p>The first exercise treated the Born rule and the measurement of spin along an arbitrary direction. This second exercise treats <strong>dynamics</strong>: the time evolution of a spin state under a time-independent Hamiltonian.</p>
-<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{B}_{\Psi}$ and the anti-Hermitian subspace $\mathbb{B}_{\Phi}$. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{B}_{\Psi}$ is twice its scalar part: $\mathrm{Tr}(\tilde Q)=2\,\mathrm{Sc}(\tilde Q)$.</p>
 <h2 id="the-exercise">The Exercise</h2>
 <p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $x$-axis</strong>, and is then placed in a uniform magnetic field</p>
 <p>$$
@@ -159,7 +158,6 @@ $$</p>
 = \frac{\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}^{*}\bigr)}{\mathrm{Sc}\bigl(\tilde{Ϛ}_{\Psi}(r'_t)\bigr)}
 = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$</p>
-<p>whose trace reading at normalisation is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, with $\tilde{S}_{\Psi,x} =\frac{\hbar}{2}\,i \vec e_x$. Computing the product</p>
 <p>$$
 \tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x} =\frac{\hbar}{4}\left(i \vec e_x + \cos(\omega_L r'_t/c)\,e_t - \sin(\omega_L r'_t/c)\,\vec e_z\right),
 $$</p>
@@ -190,7 +188,7 @@ $$</p>
 <p>$$
 \langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \frac{\langle\tilde{Ϛ}_{\Psi}(r'_t),\tilde{S}_{\Psi,x}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi}(r'_t),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$</p>
-<p>whose trace reading is $\operatorname{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.</p>
+<p>whose scalar-part reading is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$, the same Hermitian form that gives the Born probabilities. Both the Born rule and the expectation values of observables are instances of the same Hermitian form on $\mathbb{B}_{\Psi}$.</p>
 <p><strong>6. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the biquaternion evolution $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ corresponds exactly to the standard matrix evolution $T(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ under the isomorphism. But seeing the same result emerge from the algebra is a useful sanity check on the framework, and it illustrates the structural claim of the companion articles: <strong>the dynamics of a qubit is contained in the Hermitian subspace $\mathbb{B}_{\Psi}$, with the evolution given by rotor conjugation by a unit-norm biquaternion.</strong></p>
 <h2 id="comparison-with-exercise-measuring-spin-along-an-arbitrary-direction">Comparison with Exercise: Measuring Spin Along an Arbitrary Direction</h2>
 <div class="table-scroll"><table>
@@ -304,7 +302,7 @@ $$</p>
 <td>Evolved state</td>
 </tr>
 <tr>
-<td>$\langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \mathrm{Tr}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$</td>
+<td>$\langle\tilde{S}_{\Psi,x}\rangle(r'_t) = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}(r'_t)\tilde{S}_{\Psi,x})$</td>
 <td>Expectation value</td>
 </tr>
 <tr>

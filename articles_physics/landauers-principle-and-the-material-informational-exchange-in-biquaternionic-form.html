@@ -82,7 +82,7 @@ $$</p>
 <p>which is a function of the sector's biquaternion norm. Erasure is the reset of a state to a fixed pointer value; it is a completely positive trace-preserving map of <strong>rank two</strong> in the algebra, and it lowers $\mathcal{S}$ by exactly $\log 2$ for a full bit. The second law, applied to the memory together with its environment, then forces the environment's entropy upward by the same amount, and the heat that carries that entropy is the material cost. The exchange rate is the temperature $T$, and the price is $k_B T \log 2$ per bit.</p>
 <p>The biquaternion content of the article is structural. The two ledgers of the exchange are the biquaternion norms of the two sectors, and the two biquaternion norms are exchanged by the central factor $i$: for every element, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$, so multiplication by $i$ maps the material sector to the informational sector and reverses the sign of the quadratic form. The material ledger and the informational ledger are thus mirror images under the algebra's imaginary unit, and the temperature is the thermodynamic rate at which one is converted into the other. What the framework does <strong>not</strong> supply is the numerical rate itself: $k_B T \log 2$ is a theorem of thermodynamics and statistical mechanics, transcribed here as standard, and the framework's role is to exhibit the two sectors, their entropies, and the exchange of their quadratic forms.</p>
 <p>The treatment is classical. The memory is a classical bit: a state diagonal in a pointer basis, with no coherences, and its entropy is the Shannon entropy of its pointer distribution. The erasure map is the classical reset. Nothing quantum is used, and the standard results of quantum thermodynamics — the entropy of a thermal state, the free-energy balance of a quantum channel — are not developed; where they are cited, they are cited as the standard context.</p>
-<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; $i$ is the central scalar imaginary; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian states) and $\mathbb{B}_{\Phi}$ (anti-Hermitian energy-momentum); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.</p>
+<p>The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; $i$ is the central scalar imaginary; the sectors are $\mathbb{B}_{\Psi}$ (Hermitian states) and $\mathbb{B}_{\Phi}$ (anti-Hermitian energy-momentum); the reduction is $2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$, with $2\,\mathrm{Sc}(e_t) = 2$; the biquaternion norm is $\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; and the entropy is measured in nats, the thermodynamic entropy being $k_B$ times it.</p>
 <h2 id="landauers-principle">Landauer's Principle</h2>
 <h3 id="the-statement">The Statement</h3>
 <p>Let a memory have two distinguishable logical states, and let it be in thermal contact with an environment at temperature $T$. If the memory is <strong>erased</strong> — reset to a single standard logical state, whatever its prior logical state — then the heat delivered to the environment satisfies</p>
@@ -145,9 +145,9 @@ $$</p>
 <h3 id="the-erasure-map">The Erasure Map</h3>
 <p><strong>Erasure</strong> is the reset of the memory to one standard pointer state, independent of its prior state. In the sector it is the map</p>
 <p>$$
-\mathcal{E}_{\vec u} : \tilde{Ϛ}_{\Psi} \longmapsto \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ}_{\Psi}),
+\mathcal{E}_{\vec u} : \tilde{Ϛ}_{\Psi} \longmapsto \tilde\Pi_1(\vec u)\,2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}),
 $$</p>
-<p>which discards the state entirely and returns the fixed idempotent, scaled by the trace; on the states of the sector, $\mathrm{Tr}(\tilde{Ϛ}_{\Psi}) = 1$ and the image is $\tilde\Pi_1(\vec u)$ itself. Written with the trace factor the map is linear; on the Bloch ball it acts by</p>
+<p>which discards the state entirely and returns the fixed idempotent, scaled by the doubled scalar part; on the states of the sector, $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}) = 1$ and the image is $\tilde\Pi_1(\vec u)$ itself. Written with the trace factor the map is linear; on the Bloch ball it acts by</p>
 <p>$$
 \vec r \longmapsto \vec u,
 $$</p>
@@ -158,7 +158,7 @@ $$</p>
 <p>$$
 M_{\mathrm{kraus},1} = |0\rangle_{*}\langle 0|, \qquad M_{\mathrm{kraus},2} = |0\rangle\langle 1| ,
 $$</p>
-<p>where $M_{\mathrm{kraus},1}$ is $\tilde\Pi_1(\vec u)$ itself and $M_{\mathrm{kraus},2}$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}_{\Psi}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}_{\Psi}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}_{\Psi}$. The minimal Kraus rank of the reset channel is two.</p>
+<p>where $M_{\mathrm{kraus},1}$ is $\tilde\Pi_1(\vec u)$ itself and $M_{\mathrm{kraus},2}$ is its raising companion, the off-diagonal element that carries the second logical state into the first. They satisfy $\sum_a K_a^\dagger K_a = e_t$ and $\sum_a K_a\,\tilde{Ϛ}_{\Psi}\,K_a^\dagger = \tilde\Pi_1(\vec u)\,2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$, which is $\tilde\Pi_1(\vec u)$ on every state. The completeness and the reset property are elementary matrix identities; they were checked explicitly in the $2\times2$ representation, where $\sum_a K_a^\dagger K_a = I$ and the image of an arbitrary state $\tilde{Ϛ}_{\Psi}$ is $\tilde\Pi_1$ independent of $\tilde{Ϛ}_{\Psi}$. The minimal Kraus rank of the reset channel is two.</p>
 <h3 id="the-entropy-change">The Entropy Change</h3>
 <p>The entropy change of the memory is the difference between the entropies of the image and the state:</p>
 <p>$$
@@ -298,8 +298,8 @@ $$</p>
 <td>Classical bit (diagonal state)</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$</td>
-<td>Trace, $\mathrm{Tr}(e_t)=2$</td>
+<td>$2\,\mathrm{Sc}(\tilde{Q}) = 2Q_t$</td>
+<td>Doubled scalar part, $2\,\mathrm{Sc}(e_t)=2$</td>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}\rangle_{\natural} = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
@@ -318,7 +318,7 @@ $$</p>
 <td>Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$</td>
 </tr>
 <tr>
-<td>$\mathcal{E}_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1(\vec u)\,\mathrm{Tr}(\tilde{Ϛ}_{\Psi})$</td>
+<td>$\mathcal{E}_{\vec u}(\tilde{Ϛ}_{\Psi}) = \tilde\Pi_1(\vec u)\,2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi})$</td>
 <td>Erasure map (non-unital reset)</td>
 </tr>
 <tr>

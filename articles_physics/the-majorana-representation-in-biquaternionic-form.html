@@ -78,7 +78,7 @@
 <li><strong>The rotor.</strong> The constellation rotates under a rotation of the physical system by the Möbius action of $SU(2)$ on $\varkappa_{\mathrm{stg}}$, which is the spinor lift of the $SO(3)$ rotation of the sphere. In the algebra the two are the two faces of a single element of $\mathbb{B}_{H}$.</li>
 </ol>
 <p>The article develops the spin-1/2 case fully, states the general construction because it is the standard setting in which the $2s=1$ case is understood, and treats the symmetric states of $N$ spin-1/2 particles as the natural multi-spin extension. The total angular momentum of those symmetric states is $\ge 1$ for $N\ge2$, and the representation theory of spin $1$ and above belongs to the neighbouring subcategory; here the constituent spins are spin-1/2 throughout.</p>
-<p>The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde Q_1\tilde Q_2)=2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.</p>
+<p>The notation is that of the read-list articles: $\tilde{S}_{\Psi,\eta} =\frac{\hbar}{2}i\vec e_\eta$, $\tilde\Pi_{1,2}(\vec u) = \tfrac12(e_t\pm i\vec u)$, $\tilde{Ϛ}_{\Psi} = \tfrac12(e_t+i\vec r)$, the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, and the isomorphism $\mathsf{M}_2$ with $i\vec e_\eta\mapsto\sigma_\eta$.</p>
 <p>The companion articles supply the pieces:
 - Companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em>, for the two-state system and the Bloch sphere.
 - Companion article <em>Quantum Physics in Biquaternionic Form</em>, for the state space and the plain form.
@@ -91,7 +91,7 @@
 \tilde{Ξ} = \begin{pmatrix}\tilde{Ξ}_{1}\ \tilde{Ξ}_{2}\end{pmatrix}
 = \begin{pmatrix}\cos\tfrac{\theta}{2}\\[2pt] \sin\tfrac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}})\end{pmatrix},
 $$</p>
-<p>normalized to $\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = 1$, up to an overall phase. The <strong>stereographic coordinate</strong> of the state is the ratio</p>
+<p>normalized to $2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ}) = 1$, up to an overall phase. The <strong>stereographic coordinate</strong> of the state is the ratio</p>
 <p>$$
 \varkappa_{\mathrm{stg}} = \frac{\tilde{Ξ}_{2}}{\tilde{Ξ}_{1}} = \tan\frac{\theta}{2}\,\exp(i\theta_{\mathrm{azm}}),
 $$</p>
@@ -99,7 +99,7 @@ $$</p>
 <h3 id="idempotents-and-the-bloch-vector">Idempotents and the Bloch Vector</h3>
 <p>The idempotent of the state is</p>
 <p>$$
-\boxed{\;\tilde\Pi_1(\vec u_x) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
+\boxed{\;\tilde\Pi_1(\vec u_x) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})},
 \qquad
 \vec u_x = \frac{1}{1+|\varkappa_{\mathrm{stg}}|^2}\left(2\,\mathrm{Re}\,\varkappa_{\mathrm{stg}},\;2\,\mathrm{Im}\,\varkappa_{\mathrm{stg}},\;1-|\varkappa_{\mathrm{stg}}|^2\right)\;},
 $$</p>
@@ -175,7 +175,7 @@ $$</p>
 <h3 id="the-state-module-and-the-idempotent">The State Module and the Idempotent</h3>
 <p>The spinor is not an element of $\mathbb{B}$ itself: as the companion article <em>Spin-1/2 Quantum Physics in Biquaternionic Form</em> records, the state lives in the fundamental module $\mathbb{C}^2$ on which $\mathbb{B}\cong M_2(\mathbb{C})$ acts, and it is one of the two summands in the decomposition of $\mathbb{B}$ as a left module over itself. The idempotent, by contrast, is a genuine element of $\mathbb{B}_{\Psi}$:</p>
 <p>$$
-\tilde\Pi(\tilde{Ξ}) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{\mathrm{Tr}(\tilde{Ξ}^{\dagger}\tilde{Ξ})} = \frac{1}{2}\left(e_t + i\,\vec u_x(\varkappa_{\mathrm{stg}})\right),
+\tilde\Pi(\tilde{Ξ}) = \frac{\tilde{Ξ}\tilde{Ξ}^{\dagger}}{2\,\mathrm{Sc}(\tilde{Ξ}^{\dagger}\tilde{Ξ})} = \frac{1}{2}\left(e_t + i\,\vec u_x(\varkappa_{\mathrm{stg}})\right),
 $$</p>
 <p>with $\vec u_x(\varkappa_{\mathrm{stg}})$ the inverse stereographic image of $\varkappa_{\mathrm{stg}} = \tilde{Ξ}_{2}/\tilde{Ξ}_{1}$. The Majorana star is thus the vector part of the idempotent, and the map</p>
 <p>$$
@@ -201,7 +201,7 @@ $$</p>
 <p>The same overlap is the measurement probability. If a spin is prepared with star $\vec u_x$ and then measured along the direction $\vec u_y$, the probability of the outcome $+$ is</p>
 <p>$$
 P(+|\vec u_x,\vec u_y) = \bigl|\langle\tilde{Ξ}_{\vec u_y}|\tilde{Ξ}_{\vec u_x}\rangle\bigr|^2 = \cos^2\frac{\Theta}{2}
-= \mathrm{Tr}\!\left(\tilde\Pi_1(\vec u_y)\,\tilde\Pi_1(\vec u_x)\right),
+= 2\,\mathrm{Sc}\!\left(\tilde\Pi_1(\vec u_y)\,\tilde\Pi_1(\vec u_x)\right),
 $$</p>
 <p>with $\Theta$ the angle between the two stars. The Stern–Gerlach statistics are therefore a statement about the geometry of the sphere of stars: the probability depends only on the angle between the preparation star and the measurement star, and the Hermitian form, read through the trace, recovers it. The companion exercises <em>Exercise: Measuring Spin Along an Arbitrary Direction</em> and <em>Exercise: Successive Measurements of Spin</em> work the same formula; the Majorana picture shows that the standard textbook expression is a geometric overlap, and that the entire one-off computation is a dot product on the star sphere.</p>
 <p>The angle $\Theta$ between the stars also fixes the relative geometric phase of the two outcomes: the two probabilities $\cos^2(\Theta/2)$ and $\sin^2(\Theta/2)$ sum to unity, and the phase between the corresponding amplitudes is the azimuthal angle of $\vec u_y$ about $\vec u_x$. The star pair $(\vec u_x,\vec u_y)$ thus carries the complete measurement geometry of the spin-1/2.</p>

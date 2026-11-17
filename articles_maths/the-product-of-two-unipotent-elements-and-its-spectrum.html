@@ -71,7 +71,7 @@
         <h1 id="the-product-of-two-unipotent-elements-and-its-spectrum"><strong>The Product of Two Unipotent Elements and Its Spectrum</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The unipotent elements of the biquaternion algebra are the elements $U=e_t+\vec\Upsilon$ with $\vec\Upsilon$ a pure nilpotent, $\vec\Upsilon^2=0$; the element is non-trivial when $\vec\Upsilon\neq0$. They are units of norm one, their spectrum is the double eigenvalue $1$, and the non-trivial ones have minimal polynomial $(X-1)^2$. The product of two non-trivial unipotents is again a unit of norm one, but it is not usually unipotent. This article computes its spectrum and shows that one complex number decides it.</p>
-<p>Let $U_i=e_t+\vec\Upsilon_i$ and $T=U_1U_2$. Put $t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$, the trace of the product of the two nilpotent parts. Then</p>
+<p>Let $U_i=e_t+\vec\Upsilon_i$ and $T=U_1U_2$. Put $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)$, twice the scalar part of the product of the two nilpotent parts. Then</p>
 <p>$$
 p_T(\lambda)=\lambda^2-(2+t)\lambda+1,
 $$</p>
@@ -89,7 +89,7 @@ $$</p>
 \mathsf{M}_2(\vec e_y)=-i\sigma_2,\qquad
 \mathsf{M}_2(\vec e_z)=-i\sigma_3.
 $$</p>
-<p>The trace is $\operatorname{Tr}$, with $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_t=2\operatorname{Sc}\tilde Q$; for $\tilde Q\in\mathbb{B}$ we write $\operatorname{Tr}\tilde Q$ for $\operatorname{Tr}\mathsf{M}_2(\tilde Q)$. The determinant is $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and we write $\det\tilde Q$ for it. The <strong>norm-one group</strong> is</p>
+<p>The reading of an element is twice its scalar part, $2\operatorname{Sc}\tilde Q=2Q_t=\operatorname{Tr}\mathsf{M}_2(\tilde Q)$, and the text writes $2\operatorname{Sc}\tilde Q$; the matrix trace is named only beside the matrix $\mathsf{M}_2$. The determinant is $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and we write $\det\tilde Q$ for it. The <strong>norm-one group</strong> is</p>
 <p>$$
 \mathbb{B}^{\times}_1=\{\tilde Q:N(\tilde Q)=1\}\cong SL_2(\mathbb{C}).
 $$</p>
@@ -148,9 +148,9 @@ $$</p>
 </table></div>
 <p>The two signs are exchanged by the central element $-e_t$, which multiplies the spectrum by $-1$ and leaves the defectivity unchanged; the classification of a single element is therefore the same on the two parts. The products computed below are products of two elements of the $Q_t=1$ part; the image theorem covers the rest of the group. The product of two non-trivial unipotents is again in the norm-one group, and the rest of the article computes its spectrum.</p>
 <h2 id="the-product-and-its-characteristic-polynomial">The Product and Its Characteristic Polynomial</h2>
-<p><strong>Theorem (the product).</strong> Let $\vec\Upsilon_1,\vec\Upsilon_2$ be non-zero pure nilpotents, $U_i=e_t+\vec\Upsilon_i$, $T=U_1U_2$, and $t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$. Then</p>
+<p><strong>Theorem (the product).</strong> Let $\vec\Upsilon_1,\vec\Upsilon_2$ be non-zero pure nilpotents, $U_i=e_t+\vec\Upsilon_i$, $T=U_1U_2$, and $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)$. Then</p>
 <p>(i) $T=e_t+\vec\Upsilon_1+\vec\Upsilon_2+\vec\Upsilon_1\vec\Upsilon_2$;</p>
-<p>(ii) $\operatorname{Tr}T=2+t$ and $\det T=1$;</p>
+<p>(ii) $2\operatorname{Sc}T=2+t$ and $\det T=1$;</p>
 <p>(iii) the characteristic polynomial is</p>
 <p>$$
 p_T(\lambda)=\lambda^2-(2+t)\lambda+1,
@@ -164,20 +164,20 @@ $$</p>
 <p>$$
 B^2(T)=s(2-s).
 $$</p>
-<p><em>Proof.</em> The expansion is the product. Since $\vec\Upsilon_i$ is a pure vector, $\operatorname{Tr}\vec\Upsilon_i=2\operatorname{Sc}\vec\Upsilon_i=0$, and since $\vec\Upsilon_i^2=0$, $\det U_i=N(U_i)=1$. Hence</p>
+<p><em>Proof.</em> The expansion is the product. Since $\vec\Upsilon_i$ is a pure vector, $2\operatorname{Sc}\vec\Upsilon_i=0$, and since $\vec\Upsilon_i^2=0$, $\det U_i=N(U_i)=1$. Hence</p>
 <p>$$
-\operatorname{Tr}T=\operatorname{Tr}(e_t)+\operatorname{Tr}(\vec\Upsilon_1)+\operatorname{Tr}(\vec\Upsilon_2)+\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)=2+t,
+2\operatorname{Sc}T=2\operatorname{Sc}(e_t)+2\operatorname{Sc}(\vec\Upsilon_1)+2\operatorname{Sc}(\vec\Upsilon_2)+2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=2+t,
 \qquad
 \det T=\det U_1\det U_2=1.
 $$</p>
-<p>The characteristic polynomial of a $2\times2$ matrix is $\lambda^2-\operatorname{Tr}T\,\lambda+\det T$, which gives (iii), and its discriminant is $(2+t)^2-4=t(t+4)$. The scalar part is half the trace, $Q_t=1+t/2$. The product is a unit of norm one, because the norm is multiplicative and $N(U_i)=1$; hence $B^2(T)=N(T)-Q_t^2=1-Q_t^2=-t(t+4)/4$. Finally, $\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-\vec\Upsilon_1\cdot\vec\Upsilon_2$ gives $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-2s$, and substitution gives $B^2(T)=s(2-s)$.</p>
+<p>The characteristic polynomial of the $2\times2$ image is $\lambda^2-2\operatorname{Sc}T\,\lambda+\det T$, which gives (iii), and its discriminant is $(2+t)^2-4=t(t+4)$. The scalar part is $Q_t=1+t/2$. The product is a unit of norm one, because the norm is multiplicative and $N(U_i)=1$; hence $B^2(T)=N(T)-Q_t^2=1-Q_t^2=-t(t+4)/4$. Finally, $\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-\vec\Upsilon_1\cdot\vec\Upsilon_2$ gives $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)=-2s$, and substitution gives $B^2(T)=s(2-s)$.</p>
 <p><strong>Remark (the product law on the sector).</strong> For $\tilde Q_i=Q_{ti}(e_t+\vec\Upsilon_i)$, <em>Exponential Polar Decomposition on the N-Regular Sector</em>, §<em>The Group Law</em>, proves</p>
 <p>$$
 B^2(\tilde Q_1\tilde Q_2)=Q_{t1}^2Q_{t2}^2\,s(2-s),\qquad s=\vec\Upsilon_1\cdot\vec\Upsilon_2.
 $$</p>
 <p>On the norm-one slice $Q_{t1}=Q_{t2}=1$, and $t=-2s$; the two formulas agree. The sector's criterion that the product stays on the spectral-degenerate cone exactly when $s=0$ or $s=2$ is the present criterion $t=0$ or $t=-4$.</p>
 <h2 id="the-criterion">The Criterion</h2>
-<p><strong>Theorem (defective or regular).</strong> With $T=U_1U_2$ and $t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$:</p>
+<p><strong>Theorem (defective or regular).</strong> With $T=U_1U_2$ and $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)$:</p>
 <p>(i) if $t\notin\{0,-4\}$, then $T$ is regular, with two distinct eigenvalues;</p>
 <p>(ii) if $t=0$, then $T$ has the single eigenvalue $1$; it is $e_t$ exactly when $\vec\Upsilon_2=-\vec\Upsilon_1$, and otherwise it is a non-trivial unipotent, hence defective;</p>
 <p>(iii) if $t=-4$, then $T$ has the single eigenvalue $-1$; it is $-e_t$ times a non-trivial unipotent, hence defective, and $T=-e_t$ is impossible.</p>
@@ -271,7 +271,7 @@ $$</p>
 </table></div>
 <p><strong>Remark (the special line $t=-2+ib$).</strong> On this line, $Q_t=ib/2$ is purely imaginary and $B^2=1+b^2/4>0$ is real positive, but the eigenvalues are $i(b/2\pm\sqrt{1+b^2/4})$, purely imaginary and reciprocal. They are not on the unit circle unless $b=0$. Thus $B^2>0$ alone does not imply the unit-circle type; the reality of $Q_t$ is also needed. For the product, $Q_t$ is real exactly when $t$ is real.</p>
 <h2 id="the-sign-of-the-pairing">The Sign of the Pairing</h2>
-<p>The invariant $t$ is the trace of the product of the two nilpotent parts; the invariant $s=\vec\Upsilon_1\cdot\vec\Upsilon_2=-t/2$ is their pairing, the one used in the product law on the sector. In terms of $s$, the criterion reads as follows.</p>
+<p>The invariant $t$ is twice the scalar part of the product of the two nilpotent parts; the invariant $s=\vec\Upsilon_1\cdot\vec\Upsilon_2=-t/2$ is their pairing, the one used in the product law on the sector. In terms of $s$, the criterion reads as follows.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -424,14 +424,14 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="the-two-roots">The Two Roots</h2>
-<h3 id="the-identity-at-math331">The Identity at $t=0$</h3>
+<h3 id="the-identity-at-math329">The Identity at $t=0$</h3>
 <p>At $t=0$ the product is $e_t$ or a non-trivial unipotent. Both occur, and the difference is the inverse:</p>
 <ul>
 <li>with $U_2=U_1^{-1}=e_t-\vec\Upsilon_1$, the product is $T=e_t$;</li>
 <li>with $U_2=U_1$, the product is $T=e_t+2\vec\Upsilon_1$, a non-trivial unipotent.</li>
 </ul>
 <p>Both have $s=0$, characteristic polynomial $(\lambda-1)^2$, norm one and scalar part one; they differ in the minimal polynomial, $X-1$ against $(X-1)^2$. The root $t=0$ is therefore not a defective locus without exception: it is the coalescence of the scalar $e_t$ and the unipotent Jordan block.</p>
-<h3 id="the-second-root-at-math344">The Second Root at $t=-4$</h3>
+<h3 id="the-second-root-at-math342">The Second Root at $t=-4$</h3>
 <p>A witness is</p>
 <p>$$
 \vec\Upsilon_1=\frac i2\vec e_x-\frac12\vec e_y,\qquad
@@ -475,7 +475,7 @@ p(\lambda)=\lambda^2-c_1c_2(2+t)\lambda+(c_1c_2)^2,
 $$</p>
 <p>the discriminant is $(c_1c_2)^2t(t+4)$, and the norm is $(c_1c_2)^2$. The discriminant vanishes exactly when $t(t+4)=0$, so the product is scalar or defective exactly at the two roots; the scalar exception at $t=0$ is scaled to $c_1c_2e_t$. The spectrum is scaled by the central factor $c_1c_2$: the modulus is multiplied by $\lvert c_1c_2\rvert$ and the argument is shifted by $\arg(c_1c_2)$. The unit-circle type is preserved only when $\lvert c_1c_2\rvert=1$, and the real/non-real dichotomy is preserved by a real scale but not in general by a non-real one. The three types are properties of the norm-one slice, and that is why the classification is stated there.</p>
 <h2 id="summary">Summary</h2>
-<p>The product of two non-trivial unipotent elements is a norm-one element whose spectrum is governed by the single number $t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$. The characteristic polynomial is $\lambda^2-(2+t)\lambda+1$, the discriminant is $t(t+4)$, the scalar part is $1+t/2$, and the vector square is $-t(t+4)/4=s(2-s)$ with $s=\vec\Upsilon_1\cdot\vec\Upsilon_2=-t/2$.</p>
+<p>The product of two non-trivial unipotent elements is a norm-one element whose spectrum is governed by the single number $t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)$. The characteristic polynomial is $\lambda^2-(2+t)\lambda+1$, the discriminant is $t(t+4)$, the scalar part is $1+t/2$, and the vector square is $-t(t+4)/4=s(2-s)$ with $s=\vec\Upsilon_1\cdot\vec\Upsilon_2=-t/2$.</p>
 <p>The product is defective exactly at the two roots $t=0$ and $t=-4$, with the scalar exception $T=e_t$ at $t=0$; at $t=-4$ the product is always $-e_t$ times a non-trivial unipotent, and $-e_t$ itself never occurs. Off the roots the product is regular. The regular spectrum is on the unit circle exactly for real $t$ in $(-4,0)$, real and reciprocal for real $t$ in $(0,\infty)\cup(-\infty,-4)$, and non-real and reciprocal for non-real $t$.</p>
 <p>The type is not fixed by the sign of $t$, nor by the sign of $s$. It is fixed by whether $t$ lies in $(-4,0)$ or outside it, equivalently by the sign of $t(t+4)$ for real $t$, equivalently by whether $s$ lies in $(0,2)$ or outside it. The sign of $t$ then separates the positive real branch from the negative one. The two examples $t=-1$ and $t=1$ illustrate two of the regular types.</p>
 <p>Every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents. The general defective case reduces to the norm-one slice by the central scaling $\tilde Q_2_i=c_iU_i$, which scales the spectrum and leaves the defectivity unchanged.</p>
@@ -521,8 +521,8 @@ $$</p>
 <td>the product</td>
 </tr>
 <tr>
-<td>$t=\operatorname{Tr}(\vec\Upsilon_1\vec\Upsilon_2)$</td>
-<td>the trace of the product of the nilpotent parts</td>
+<td>$t=2\operatorname{Sc}(\vec\Upsilon_1\vec\Upsilon_2)$</td>
+<td>twice the scalar part of the product of the nilpotent parts</td>
 </tr>
 <tr>
 <td>$s=\vec\Upsilon_1\cdot\vec\Upsilon_2=-t/2$</td>
@@ -545,8 +545,8 @@ $$</p>
 <td>the vector square of $T$</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}$</td>
-<td>the matrix trace, $\operatorname{Tr}\tilde Q=2Q_t$</td>
+<td>$2\operatorname{Sc}$</td>
+<td>the doubled scalar part, $2\operatorname{Sc}\tilde Q=2Q_t$</td>
 </tr>
 </tbody>
 </table></div>

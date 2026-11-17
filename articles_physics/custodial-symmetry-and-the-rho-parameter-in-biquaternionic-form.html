@@ -117,7 +117,7 @@ T_{La} = \frac{\tau_a}{2},\quad T_3^R = \frac{\tau_3}{2} .
 $$</p>
 <p>The point of the arrangement is that the left action is the full $SU(2)_L$ and the right action is an $SU(2)_R$ whose $T_3^R$ is the hypercharge. With this normalisation the kinetic term is the framework's biquaternion norm of the derivative,</p>
 <p>$$
--\,\frac12\,\mathrm{Tr}\!\left(\partial/\partial R_\mu H^\dagger\,\partial/\partial R_\mu H\right)
+-\,\mathrm{Sc}\!\left(\partial/\partial R_\mu H^\dagger\,\partial/\partial R_\mu H\right)
 = -\,\partial/\partial R_\mu\xi^{0*}\partial/\partial R_\mu{\xi_{\mathrm{scl}}}^0 - \partial/\partial R_\mu\xi^{+*}\partial/\partial R_\mu\xi^{+*} ,
 $$</p>
 <p>canonical for the two complex components, and if the hypercharge coupling is ignored it is invariant under the full $SU(2)_L\times SU(2)_R$, acting as $H\mapsto g_LHg_R^{*}$. This is the <strong>custodial group</strong>. The hypercharge interaction gauges the $T_3^R$ direction and therefore breaks $SU(2)_R$ explicitly, but only as a subgroup: $\mathrm{U}(1)_Y\subset SU(2)_R$, and the breaking is proportional to the hypercharge coupling $g_{\mathrm Y}$.</p>
@@ -125,7 +125,7 @@ $$</p>
 <p>$$
 \langle H\rangle = \frac{v}{\sqrt2}\,I_2 ,
 \qquad
-\frac12\,\mathrm{Tr}\!\left(\langle H\rangle^\dagger\langle H\rangle\right) = \frac{v^2}{2} .
+\mathrm{Sc}\!\left(\langle H\rangle^\dagger\langle H\rangle\right) = \frac{v^2}{2} .
 $$</p>
 <p>This is the crucial fact: a matrix proportional to the identity is invariant under the <strong>diagonal</strong> action $H\mapsto g\,H\,g^{*}$ for every $g\in SU(2)$, so the diagonal subgroup</p>
 <p>$$
@@ -338,7 +338,7 @@ $$</p>
 <td>Framework's actual scalar; a singlet</td>
 </tr>
 <tr>
-<td>$-\frac12\mathrm{Tr}(\partial/\partial R_\mu H^\dagger\partial/\partial R_\mu H)$</td>
+<td>$-\mathrm{Sc}(\partial/\partial R_\mu H^\dagger\partial/\partial R_\mu H)$</td>
 <td>Custodial-invariant kinetic term of the doublet matrix $H$ (biquaternion norm of the derivative)</td>
 </tr>
 <tr>
@@ -378,8 +378,8 @@ $$</p>
 <td>The metric, the identity matrix; with $Q_t=i q'_t$ the material interval is $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$</td>
 </tr>
 <tr>
-<td>$\mathrm{Tr} = 2\,\mathrm{Sc}$</td>
-<td>Trace convention</td>
+<td>$2\,\mathrm{Sc}(\tilde Q)=2Q_t$</td>
+<td>Reduction convention</td>
 </tr>
 <tr>
 <td>$\langle\tilde{Q}_1,\tilde{Q}_2\rangle$</td>

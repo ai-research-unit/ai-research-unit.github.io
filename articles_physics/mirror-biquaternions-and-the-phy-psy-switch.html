@@ -132,7 +132,7 @@ $$</p>
 <p>$$
 -i\tilde X_\Psi=-i\bigl(-x'_t\bigr)e_t-i\bigl(i x_x\bigr)\vec e_x-i\bigl(i x_y\bigr)\vec e_y-i\bigl(i x_z\bigr)\vec e_z=i x'_t\,e_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z=\tilde X_\Phi .
 $$</p>
-<p>The three space lines are their own converses; the time line is the one that reverses, and that reversal is what makes the mirror a different element rather than the same one relabelled. The trace says it at sight: $2i x'_t$ on the source and $2x_t=-2x'_t$ on the image. The mirror biquaternion carries eight real components, four in each part and only four independent, since it is determined by the four numbers of its
+<p>The three space lines are their own converses; the time line is the one that reverses, and that reversal is what makes the mirror a different element rather than the same one relabelled. The scalar part says it at sight: $2i x'_t$ on the source and $2x_t=-2x'_t$ on the image. The mirror biquaternion carries eight real components, four in each part and only four independent, since it is determined by the four numbers of its
 material part, from which its informational part follows by the rule above,</p>
 <p>$$
 \tilde X_{\mathrm{mir}}=(1+i)\tilde X_\Phi=\bigl(i x'_t-x'_t\bigr)e_t+(1+i)\bigl(x_x\vec e_x+x_y\vec e_y+x_z\vec e_z\bigr),
@@ -186,7 +186,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>Status.</strong> The algebra below is established, and each identity is proved at the point where it is used from three facts: that $i$ is central, that
-$i^{*}=-i$, and that the trace is linear while the determinant is multiplicative. The proofs are one or two lines each — the exchange of the two parts
+$i^{*}=-i$, and that the scalar part is linear while the determinant is multiplicative. The proofs are one or two lines each — the exchange of the two parts
 under the switch, the projections of a mirror biquaternion onto its two members, the test $\tilde Q^{*}=i\tilde Q$, the square of the factor,
 $(1+i)^{2}=2i$, the sign of the norm, the invariance of the Hermitian form, the multiplication of the trace, the sign of the determinant, and the quarter
 turn of the spectrum. The identities are also evaluated numerically, and those evaluations confirm the proofs; they are not the argument. The identification of $\mathbb{B}_{\Phi}$ with a material sector and of $\mathbb{B}_{\Psi}$ with an informational one is the corpus's <strong>hypothesis</strong>, and the article inherits it and does not argue for it. What the article adds is the construction of the mirror pair and of the mirror biquaternion, the exact statement of what the switch preserves and what it changes, and the comparison with the Wick rotation.</p>
@@ -200,7 +200,7 @@ $$</p>
 <p>that is ${}^{*}={}^{\natural}\circ\overline{\cdot}$: the quaternion conjugate first, then the complex conjugate of every coefficient. Two consequences are
 used constantly. The identity is Hermitian and a pure unit quaternion is anti-Hermitian, $e_t^{*}=e_t$ and $\vec e_\eta^{*}=-\vec e_\eta$, so
 $\vec e_\eta\in\mathbb{B}_{\Phi}$ while $e_t\notin\mathbb{B}_{\Phi}$; and $i\tilde Q$ is Hermitian exactly when $\tilde Q$ is anti-Hermitian, which is the
-sector exchange. The trace is $\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\,\tilde Q$.</p>
+sector exchange. The reduced value of an element is twice its scalar part, $2\,\mathrm{Sc}\,\tilde Q$, which is the matrix trace $\operatorname{tr}\mathsf M_2(\tilde Q)$ of its $2\times2$ image.</p>
 <p>The quaternion subspace is $\mathbb{B}_{H}=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\}$, the corpus's quaternion layer, the set
 fixed by the coefficient conjugation $\overline{\cdot}$ and the real form of $\mathbb{B}$. The two forms are the quaternionic norm $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ and the Hermitian form $\langle\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$. The interval is written in the length unit $c=1$: with $c$ restored the temporal coordinate is $cr'_{t}$ and the four-momentum is $i(E/c)e_t+\vec p$, as in the corpus's own writing.</p>
 <p><strong>Where this article sits in the category.</strong> The category is now derived from the Mathematical menu, and this article is kept whole as one of its entries because its subject is one construction and not a survey of a section. The mirror is read twice. <a href="the-element-the-six-subspaces-and-the-two-ledgers.html">The Element, the Six Subspaces and the Two Ledgers</a>, §<em>I.1.h</em>, states the result and one reading: the class is the set of elements whose two ledgers differ by a quarter turn, it is a real four-dimensional subspace, and the informational projection is $i$ times the material one; §<em>I.1.g</em> states the switch as one of the four names of the central $i$. This article is the full treatment of the same object — the construction, the invariants with their fixed factors, the class and what it is not, the Wick comparison and the instances — and it is the reference for anything that needs more than the two readings. The readings agree and the notation is shared: $\mathbb{B}_{\Phi}$ is anti-Hermitian and material, $\mathbb{B}_{\Psi}$ is Hermitian and informational, the class is $\tilde Q^{*}=i\tilde Q$, and the mirror biquaternion is $(1+i)\tilde X_\Phi$.</p>
@@ -321,7 +321,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>trace</td>
+<td>$2\,\mathrm{Sc}$</td>
 <td>$-4.6+4.6i$</td>
 <td>$4.6\,i$</td>
 <td>$-4.6$</td>
@@ -431,7 +431,7 @@ $$</p>
 <h3 id="the-image-is-a-second-element">The Image Is a Second Element</h3>
 <p>The mirror is a second element, and the numbers attached to it say so. For any element and its switch image,</p>
 <p>$$
-\boxed{\;\operatorname{Tr}(i\tilde Q)=i\,\operatorname{Tr}\tilde Q,
+\boxed{\;\mathrm{Sc}(i\tilde Q)=i\,\mathrm{Sc}\tilde Q,
 \qquad
 \langle i\tilde Q\rangle_{\natural}=-\langle\tilde Q\rangle_{\natural},
 \qquad
@@ -443,7 +443,7 @@ $$</p>
 $$</p>
 <p>Each eigenvalue is multiplied by $i$, so a real pair becomes an imaginary pair and an imaginary pair becomes a real one, and the two travel as a pair. All four lines are one statement: the switch multiplies the element by a central scalar, the trace scales with the scalar, the determinant with its
 square, and every eigenvalue with the scalar itself.</p>
-<p>The four numbers are not small print. On a material four-momentum the trace is $2iE/c$ and the norm is $-m^{2}c^{2}$; on the mirror the trace is $-2iE/c$ and the norm is $+m^{2}c^{2}$. A change of notation does not move the trace from the imaginary central line to the real one, does not change the sign of the determinant and does not make an imaginary spectrum real. The pair is a pair of two elements.</p>
+<p>The four numbers are not small print. On a material four-momentum twice the scalar part is $2iE/c$ and the norm is $-m^{2}c^{2}$; on the mirror twice the scalar part is $-2iE/c$ and the norm is $+m^{2}c^{2}$. A change of notation does not move that number from the imaginary central line to the real one, does not change the sign of the determinant and does not make an imaginary spectrum real. The pair is a pair of two elements.</p>
 <p><strong>The pair is canonical up to an overall sign.</strong> The switch has order four, $i^{4}=+\mathrm{id}$, and its square is minus the identity, $i^{2}=-\mathrm{id}$. So the orbit of a sector element is the quadruple $\{\tilde X_\Phi,i\tilde X_\Phi,-\tilde X_\Phi,-i\tilde X_\Phi\}$, and the mirror pair is that orbit up to the overall sign: $\{\tilde X_\Phi,i\tilde X_\Phi\}$ and its negative are the same pair of sectors with the same two elements negated. The subsection on order and the orbit fixes what the corpus does with the sign.</p>
 <h3 id="what-the-switch-preserves">What the Switch Preserves</h3>
 <p>Because $i$ is central, the switch passes through a product:</p>
@@ -476,7 +476,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>trace $\operatorname{Tr}=2\,\mathrm{Sc}$</td>
+<td>doubled scalar part $2\,\mathrm{Sc}$</td>
 <td>$2Q_t$</td>
 <td>$2iQ_t$</td>
 <td>multiplied by $i$</td>
@@ -531,7 +531,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>trace</td>
+<td>$2\,\mathrm{Sc}$</td>
 <td>$4.6\,i$</td>
 <td>$-4.6$</td>
 </tr>
@@ -552,7 +552,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The checksum is the spectral one: the sum of the spectrum is the trace and the product is the determinant, on both sides. On the left $4.6i$ is the sum and $-4.52$ the product, on the right $-4.6$ and $+4.52$. Nothing has been relabelled; two different elements have been computed.</p>
+<p>The checksum is the spectral one: the sum of the spectrum is twice the scalar part and the product is the determinant, on both sides. On the left $4.6i$ is the sum and $-4.52$ the product, on the right $-4.6$ and $+4.52$. Nothing has been relabelled; two different elements have been computed.</p>
 <h3 id="order-four-and-the-orbit">Order Four and the Orbit</h3>
 <p>The switch is a real-linear bijection of order four, and its powers are worth naming once. The square is minus the identity, so it keeps each sector and reverses it; the fourth power is the identity; and the odd powers exchange the sectors. Applied to a material element,</p>
 <p>$$
@@ -598,9 +598,9 @@ $$</p>
 \bigl\langle\tilde X_\Psi\bigr\rangle_{\natural}=-\bigl\langle\tilde X_\Phi\bigr\rangle_{\natural},
 $$</p>
 <p>so what is timelike on the material side is spacelike on the informational one, and the number that stays fixed is the one the Born rule uses.</p>
-<p><strong>The trace and the spectrum.</strong> The trace is multiplied by the same $(1+i)$ as the element, so</p>
+<p><strong>The scalar part and the spectrum.</strong> The scalar part is multiplied by the same $(1+i)$ as the element, so</p>
 <p>$$
-\operatorname{Tr}\tilde X_{\mathrm{mir}}=(1+i)\operatorname{Tr}\tilde X_\Phi,
+\mathrm{Sc}\,\tilde X_{\mathrm{mir}}=(1+i)\,\mathrm{Sc}\,\tilde X_\Phi,
 \qquad
 \sigma\bigl(\tilde X_{\mathrm{mir}}\bigr)=(1+i)\,\sigma\bigl(\tilde X_\Phi\bigr),
 $$</p>
@@ -697,13 +697,13 @@ $$</p>
 <p>$$
 \tilde X_\Phi=i x'_t\,e_t+x_x\vec e_x+x_y\vec e_y+x_z\vec e_z,
 $$</p>
-<p>with the imaginary time coefficient and the three real space coefficients. Its norm is the interval, $\langle\tilde X_\Phi\rangle_{\natural}=-{x'_{t}}^{2}+x_x^{2}+x_y^{2}+x_z^{2}$, of signature $(3,1)$; its zero set is the light cone; its group of invertibles acts by rotor conjugation and gives the Lorentz group, boosts included. The trace is twice the temporal coefficient, and on the four-momentum it reads $\operatorname{Tr}\tilde P_\Phi=2iE/c$, an imaginary central number; the norm reads $-m^{2}c^{2}$. The spectrum is imaginary, $\lambda_{\pm}=i(E/c\pm\lvert\vec p\rvert)$: the two light-cone combinations, each of which rescales by the Doppler factor under a boost, and not a pair of energies. The element is what an observer meets: a position, a velocity, a momentum, a wavevector, a potential, a current, a force. This reading names what is there.</p>
+<p>with the imaginary time coefficient and the three real space coefficients. Its norm is the interval, $\langle\tilde X_\Phi\rangle_{\natural}=-{x'_{t}}^{2}+x_x^{2}+x_y^{2}+x_z^{2}$, of signature $(3,1)$; its zero set is the light cone; its group of invertibles acts by rotor conjugation and gives the Lorentz group, boosts included. Twice the scalar part is twice the temporal coefficient, and on the four-momentum it reads $2\,\mathrm{Sc}\,\tilde P_\Phi=2iE/c$, an imaginary central number; the norm reads $-m^{2}c^{2}$. The spectrum is imaginary, $\lambda_{\pm}=i(E/c\pm\lvert\vec p\rvert)$: the two light-cone combinations, each of which rescales by the Doppler factor under a boost, and not a pair of energies. The element is what an observer meets: a position, a velocity, a momentum, a wavevector, a potential, a current, a force. This reading names what is there.</p>
 <h2 id="the-informational-reading">The Informational Reading</h2>
 <p>The informational reading is the reading of an element of $\mathbb{B}_{\Psi}$,</p>
 <p>$$
 \tilde H_\Psi=h_t\,e_t+i\bigl(h'_x\vec e_x+h'_y\vec e_y+h'_z\vec e_z\bigr),
 $$</p>
-<p>with the real time coefficient and the three imaginary space coefficients. Its norm is of signature $(1,3)$, and it is not the interval: it is the discriminant, non-negative on a state and non-positive on a four-momentum, and on a state it is information. Its trace is the temporal coefficient, and on a state normalised to one it reads $\operatorname{Tr}\tilde{Ϛ}_\Psi=1$. Its spectrum is real, which is what an observable needs; its positive cone is the state space; the $*$-unitary group acts on it by conjugation and gives the rotations; and the Born weight is the trace pairing $\operatorname{Tr}(\tilde{Ϛ}_\Psi\tilde H_\Psi^{*})=2\langle\tilde{Ϛ}_\Psi,\tilde H_\Psi\rangle_{*}$. The element here is what is recorded and what is compared: a state, an observable, an effect. This reading names what is recorded.</p>
+<p>with the real time coefficient and the three imaginary space coefficients. Its norm is of signature $(1,3)$, and it is not the interval: it is the discriminant, non-negative on a state and non-positive on a four-momentum, and on a state it is information. Twice its scalar part is twice the temporal coefficient, and on a state normalised to one it reads $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$. Its spectrum is real, which is what an observable needs; its positive cone is the state space; the $*$-unitary group acts on it by conjugation and gives the rotations; and the Born weight is the Hermitian pairing $2\langle\tilde{Ϛ}_\Psi,\tilde H_\Psi\rangle_{*}=2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde H_\Psi^{*})$. The element here is what is recorded and what is compared: a state, an observable, an effect. This reading names what is recorded.</p>
 <h2 id="the-switch-at-work">The Switch at Work</h2>
 <p>Each of the cases below states a claim in one reading, takes the mirror, and reads the result in the other. They are ordered by increasing distance from the element: an element, a glyph, a dictionary, an equation, a bracket, an interaction, a weight.</p>
 <h3 id="the-element-and-its-mirror">The Element and Its Mirror</h3>
@@ -712,7 +712,7 @@ $$</p>
 <p>$$
 \boxed{\;i\tilde P_\Phi=-\frac{E}{c}e_t+i\vec p=\tilde P_\Psi\;},
 $$</p>
-<p>whose trace is $-2E/c$, real, and whose vector part is imaginary. The energy has become the real scalar coefficient and the momentum the imaginary vector part, and the sign of the whole element is the sign of the material one: $\operatorname{Tr}\tilde P_\Psi=-2E/c$, so $E=-\frac{c}{2}\operatorname{Tr}\tilde P_\Psi$. The reading is now the informational one: the element has a real spectrum. The pair $(\tilde P_\Phi,\tilde P_\Psi)$ is a mirror pair, and $\tilde P_{\mathrm{mir}}=\tilde P_\Phi+\tilde P_\Psi$ is one element whose parts are the two members.</p>
+<p>whose doubled scalar part is $-2E/c$, real, and whose vector part is imaginary. The energy has become the real scalar coefficient and the momentum the imaginary vector part, and the sign of the whole element is the sign of the material one: $2\,\mathrm{Sc}\,\tilde P_\Psi=-2E/c$, so $E=-c\,\mathrm{Sc}\,\tilde P_\Psi$. The reading is now the informational one: the element has a real spectrum. The pair $(\tilde P_\Phi,\tilde P_\Psi)$ is a mirror pair, and $\tilde P_{\mathrm{mir}}=\tilde P_\Phi+\tilde P_\Psi$ is one element whose parts are the two members.</p>
 <p>The same pattern holds for the other four-vectors. The four-current $\tilde J_\Phi=ic\rho\,e_t+\vec J$ carries the charge density on the imaginary time slot and the current on the real space slots; its mirror is $i\tilde J_\Phi=-c\rho\,e_t+i\vec J$, with the density real and the current imaginary. The four-potential, the four-velocity and the wavevector follow the same rule, and the rule is one line: the temporal coefficient changes from imaginary to real and the three space coefficients from real to imaginary. What separates the four-vectors from one another is therefore not the switch, which does the same thing to all of them, but what the informational reading makes of the result.</p>
 <p><strong>The central scalar.</strong> The mass is the useful case because it is central and carries no index. Material, it is $\Rho=imc$, an imaginary central number, and the norm of the four-momentum is its square, $-m^{2}c^{2}$. Its mirror is $i\Rho=-mc$, a real central number, and the norm of the mirrored four-momentum is $+m^{2}c^{2}$. The same length is imaginary in one reading and real in the other, and neither is a mistake: the two are the two central scalars of the algebra, and the switch is what carries one to the other.</p>
 <p>What the reading buys is a real spectrum. What it trades is the interval for the discriminant: the norm is still there, with its sign turned round, so what was timelike in the material reading is spacelike in the informational one. The two readings are not two views of one object; they are the two faces a physics needs, and no single sector holds both. The mirror biquaternion holds both, in its two parts.</p>
@@ -742,7 +742,7 @@ i\,(-\tilde X_\Phi)=r'_t\,e_t-i\,\vec r\in\mathbb{B}_{\Psi},
 $$</p>
 <p>The multiplier is $i$, as everywhere in the article; the only choice is which material element enters, the four-vector or its reverse, and the reverse is the one whose image has the positive scalar part. That is the whole of the preparation: a switch and a choice of sign in the argument.</p>
 <p>The causal condition of the material side is $r'_t\ge\lvert\vec r\rvert$, that is, $\langle\tilde X_\Phi\rangle_{\natural}\le0$; the switch turns the norm round, so the image has norm $r'^{2}_t-\lvert\vec r\rvert^{2}\ge0$. One inequality, one cone: the future light cone of $\mathbb{B}_{\Phi}$ lands in the positive cone of $\mathbb{B}_{\Psi}$, and the null cone lands on the elements of zero norm, which are the null ones.</p>
-<p>A real rescaling applied after the switch sets the trace of the state to one; that rescaling is the trace convention and it belongs to <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, which owns the normalised form of the dictionary.</p>
+<p>A real rescaling applied after the switch sets the doubled scalar part of the state to one; that rescaling is the normalisation convention and it belongs to <em>The Bloch Ball as the Normalised Slice of the Future Light Cone</em>, which owns the normalised form of the dictionary.</p>
 <h3 id="the-schrodinger-equation">The Schrödinger Equation</h3>
 <p>The equation has two writings, and the members of a mirror pair stand in them. In biquaternionic form, with $\tilde\Xi$ the spinor-valued field and $\tilde H_\Psi\in\mathbb{B}_{\Psi}$ the observable,</p>
 <p>$$
@@ -778,9 +778,9 @@ $\vec h_\Psi$ with the primed components; here the prime is carried by the symbo
 <p>$$
 \lambda\!\left(\frac{\tilde H_\Phi}{\hbar c}\right)=\frac{1}{\hbar c}\,\lambda(\tilde H_\Phi)=-\frac{i}{\hbar c}\,\lambda(\tilde H_\Psi),
 $$</p>
-<p>so a frequency $\omega_n$ is read as the rate $-i\omega_n$ in the second writing. The trace is multiplied by $-i/\hbar c$ and the norm changes sign,</p>
+<p>so a frequency $\omega_n$ is read as the rate $-i\omega_n$ in the second writing. The scalar part is multiplied by $-i/\hbar c$ and the norm changes sign,</p>
 <p>$$
-\operatorname{Tr}\frac{\tilde H_\Phi}{\hbar c}=-\frac{i}{\hbar c}\operatorname{Tr}\tilde H_\Psi,
+\mathrm{Sc}\frac{\tilde H_\Phi}{\hbar c}=-\frac{i}{\hbar c}\,\mathrm{Sc}\,\tilde H_\Psi,
 \qquad\qquad
 \left\langle\frac{\tilde H_\Phi}{\hbar c}\right\rangle_{\natural}=\frac{1}{(\hbar c)^{2}}\langle\tilde H_\Phi\rangle_{\natural}=-\frac{1}{(\hbar c)^{2}}\langle\tilde H_\Psi\rangle_{\natural},
 $$</p>
@@ -940,8 +940,8 @@ $\tilde Q^{*}=-i\tilde Q$; and the switch does not preserve it either, since it 
 <td>the informational element, real time and imaginary space; the general Hermitian observable, which is the sector's glyph and not a switch image</td>
 </tr>
 <tr>
-<td>$\operatorname{Tr}\tilde Q=2\,\mathrm{Sc}\tilde Q$</td>
-<td>the trace, twice the scalar part</td>
+<td>$2\,\mathrm{Sc}\,\tilde Q$</td>
+<td>twice the scalar part, the reduced value of an element</td>
 </tr>
 <tr>
 <td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
@@ -993,7 +993,7 @@ $\tilde Q^{*}=-i\tilde Q$; and the switch does not preserve it either, since it 
 </tr>
 <tr>
 <td>$\tilde{Ϛ}_\Psi$</td>
-<td>a state, informational reading, the corpus's trace-one normalisation</td>
+<td>a state, informational reading, normalised so that $2\,\mathrm{Sc}=1$</td>
 </tr>
 <tr>
 <td>$W=\mathrm{diag}(-i,1,1,1)$</td>
@@ -1007,7 +1007,7 @@ $\tilde Q^{*}=-i\tilde Q$; and the switch does not preserve it either, since it 
 <li><a href="the-element-the-six-subspaces-and-the-two-ledgers.html">The Element, the Six Subspaces and the Two Ledgers</a>, §<em>I.1.b</em> for the two parts of one element, §<em>I.1.g</em> for the switch as one of the four names of the central $i$, and §<em>I.1.h</em> for the class read as the second ledger.</li>
 <li><a href="the-two-sectors-split-and-the-four-bridges.html">The Two Sectors: Split and the Four Bridges</a>, for the split, the four conjugations, the central $i$ as a bijection and a relational clock, and the boundary that no congruence crosses.</li>
 <li><a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a>, for the material four-vector, the interval and the Lorentz action that this article reads through the switch.</li>
-<li><a href="states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a>, for the positive cone, the real spectrum and the preparation dictionary $\tilde H_{\Psi}=-\tfrac{i}{2}\tilde R_\Phi$, which is this mirror of the reversed four-vector with the $\tfrac12$ that normalises the trace.</li>
+<li><a href="states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a>, for the positive cone, the real spectrum and the preparation dictionary $\tilde H_{\Psi}=-\tfrac{i}{2}\tilde R_\Phi$, which is this mirror of the reversed four-vector with the $\tfrac12$ that normalises the scalar part.</li>
 <li><a href="the-four-forms-and-the-four-norms.html">The Four Forms and the Four Norms</a>, for the four scalars whose factors under the switch are the invariant table of this article.</li>
 <li><a href="the-k-norm-and-the-indefinite-structure.html">The K Norm and the Indefinite Structure</a>, for the indefinite geometry at large, of which the sign change of the Krein form under the switch is one instance.</li>
 </ul>
