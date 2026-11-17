@@ -30,15 +30,17 @@ $$
 \boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
 $$
 
+The three usual decompositions are regroupings of the word, and the table carries each with its pairing, its dimensions and its domain.
+
+| reading | form | pairing | factors | real dimensions | available when |
+|---|---|---|---|---|---|
+| Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0=(\varrho\tilde U_{\mathrm b})(e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r})$ | Cartan Hermitian | $2$ | $4+4$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
+| modulus–unit | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=(\varrho e^{i\theta_{\mathrm{pha}}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | Hamilton root | $2$ | $2+6$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ |
+| quaternion | $\tilde Q=(\varrho\tilde u_{\mathrm r})(e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | quaternion | $2$ | $4+4$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real-coefficient part is nonzero |
+
+The box above adds the fourth reading, the word itself, with four factors and $1+1+3+3$ real dimensions; it is the complete polar decomposition, and the three lines are its regroupings.
+
 **The name.** This four-factor word is the **complete polar decomposition** of the biquaternion. *Complete* names the refinement and not the domain: the word carries all four factors at once, one per slot, $1+1+3+3$ real parameters, and each of the three pairings is a regrouping of it rather than a rival reading of the element. The domain is the one of the pair it refines, the $\natural$-regular set, where the boost is positive definite and the central phase lies in its branch; the word does not extend to the null cone, where the general decomposition keeps two factors and the $*$-unitary factor becomes a partial isometry (*The Polar Decomposition of an N-Degenerate Biquaternion*). The corpus cites the word under this name.
-
-The two levels are collected in the table.
-
-| reading | form | factors | real dimensions |
-|---|---|---|---|
-| Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0=(\varrho\tilde U_{\mathrm b})(e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r})$ | $2$ | $4+4$ |
-| modulus–unit | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=(\varrho e^{i\theta_{\mathrm{pha}}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | $2$ | $2+6$ |
-| complete polar decomposition | $\tilde Q=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $4$ | $1+1+3+3$ |
 
 The word has a second face, in which the boost and the rotor are written as exponentials:
 
@@ -1337,15 +1339,7 @@ $$
 
 The first factor is Hermitian positive definite, the second $*$-unitary. The pairing solves $\tilde Q\tilde Q^{*}=\tilde H^{2}$, so both factors are functions of the element alone, and it is total on the $\natural$-regular set. It is the algebra form of the matrix polar decomposition.
 
-The three pairings are collected in the table.
-
-| pairing | first factor | second factor | available when |
-|---|---|---|---|
-| quaternion | $\varrho\tilde u_{\mathrm r}$ | $e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real-coefficient part is nonzero |
-| Hamilton root | $\varrho\,e^{i\theta_{\mathrm{pha}}}$ | $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ |
-| Cartan Hermitian | $\varrho\tilde U_{\mathrm b}$ | $e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
-
-The two partial domains are not nested, and the Cartan domain contains both. The elements of the $\natural$-regular set outside both partial domains are the nonzero purely imaginary complex scalars.
+The three pairings, with the form and the domain of each, are the three lines of the table of the Introduction. The two partial domains are not nested, and the Cartan domain contains both. The elements of the $\natural$-regular set outside both partial domains are the nonzero purely imaginary complex scalars.
 
 ## The Logarithm
 

@@ -14,7 +14,7 @@ $$
 
 The coefficients $h_t$ and $\vec h_\Psi$ are numbers here: $\tilde H_\Psi$ is an element of the algebra and not a differential operator, so the equation is an ordinary differential equation in $r'_t$ and describes a finite-dimensional system. The differential case, in which those coefficients contain $\nabla$, is *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*, and every statement below holds there coefficient by coefficient.
 
-Dividing by $i\hbar\,c$ gives the same equation in a second writing, where the generator is the observable's mirror over one real scale,
+Dividing by $i\hbar\,c$ gives the same equation in a second writing, where the generator is the observable multiplied by $-i$ over one real scale,
 
 $$
 \partial/\partial r'_t\,\tilde\Xi = \frac{1}{\hbar\,c}\,\tilde H_\Phi\,\tilde\Xi,
@@ -98,8 +98,7 @@ $$
 (\tilde H_\Phi)^{*}=(-i\tilde H_\Psi)^{*}=\tilde H_\Psi^{*}(-i)^{*}=\tilde H_\Psi\,i=i\tilde H_\Psi=-\tilde H_\Phi.
 $$
 
-So $\tilde H_\Phi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto \tilde H_\Phi=-i\tilde H_\Psi$ is a real-linear isomorphism $\mathbb{B}_{\Psi} \to \mathbb{B}_{\Phi}$ with inverse $\tilde{Q} \mapsto i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. The sign is the one
-the mirror convention fixes, $\tilde X_\Psi=i\tilde X_\Phi$, read backwards. For example, with $\tilde H_\Psi = i\,\vec e_x$ (Hermitian, since
+So $\tilde H_\Phi \in \mathbb{B}_{\Phi}$: the map $\tilde H_\Psi \mapsto \tilde H_\Phi=-i\tilde H_\Psi$ is a real-linear isomorphism $\mathbb{B}_{\Psi} \to \mathbb{B}_{\Phi}$ with inverse $\tilde{Q} \mapsto i\tilde{Q}$, turning a Hermitian observable into an anti-Hermitian object. The sign is the one the multiplication by $i$ fixes, $\tilde X_\Psi=i\tilde X_\Phi$, read backwards. For example, with $\tilde H_\Psi = i\,\vec e_x$ (Hermitian, since
 $(i\vec e_x)^{*} = i\vec e_x$), one has $\tilde H_\Phi=-i\,(i\vec e_x)=\vec e_x$, and $\vec e_x$ is anti-Hermitian because $(\vec e_x)^{*} = -\vec e_x$.
 
 **This computation is the second writing.** The generator of the second writing is $\tilde H_\Phi/\hbar\,c$, and the computation above is the one that supplies $\tilde H_\Phi$: anti-Hermitian because $i$ is central and $i^{*}=-i$, and left anti-Hermitian by the division by the real $\hbar\,c$. An anti-Hermitian generator exponentiates to a $*$-unitary flow, because conjugation reverses the sign of the exponent, so the exponential of an anti-Hermitian element and its conjugate are mutual inverses. The two writings therefore carry one equation. The first multiplies by the Hermitian observable $\tilde H_\Psi$. The second multiplies by $\tilde H_\Phi=-i\tilde H_\Psi$, divided by the real unit $\hbar\,c$. The two differ by the central $i$ and by one real number.
