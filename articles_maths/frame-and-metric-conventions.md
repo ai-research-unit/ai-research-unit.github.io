@@ -128,7 +128,6 @@ Nine rules follow.
 6. **$Q_t=iq'_t$ is material.** The substitution is made on $\mathbb{B}_{\Phi}$ and is not carried to $\mathbb{B}_{\Psi}$ without saying so.
 7. **A change of frame is a written substitution.** It has a law, $Q_t=ix_0$ in the coordinates, and the article gives it. The frame is named on the coordinate and no metric is written, because the substitution carries the interval at once. A display is read only in the frame that produced it. The substitution does not touch the matrices.
 8. **The interval is a norm, not a metric.** The interval of an element is squared by multiplying it by its conjugate, $\langle\tilde X\rangle_\natural=\tilde X\tilde X^\natural$. In the $\mathbb{B}$ frame this is the plain sum $\sum_\mu Q_\mu^2$, with every coefficient $+1$. In the $\mathbb{B}_{\Phi}$ frame the interval is $-(q'_t)^2+q_x^2+q_y^2+q_z^2$: one minus, the square of the one $i$ of $Q_t=iq'_t$, which is $i^2=-1$ on the time slot. The minus is the $i$ squared, and no metric is written in either frame. The weight is not the negative of a metric: it records the square of each unit, and it is the same in both frames. The letter $\eta$ is never the metric.
-
 9. **The word *signature* is not used, and the metric has no signature to carry.** There is one metric, $\delta_{\mu\nu}=(1,1,1,1)$, its four coefficients are $+1$, and an object with four equal coefficients has nothing to sign. The signs a reader meets belong to the coordinate, $i^2=-1$ in $Q_t=iq'_t$, and to the plain weight $\varepsilon$ of the product; neither is carried by the metric. What is counted is named directly. The **inertia** of a form is the triple $(n,m,r)$ of its positive, negative and null directions, and the integer $\sigma=n-m$ is the **excess** of the positive over the negative directions. A metric, an interval and a norm therefore take no such word at all, and a sentence that needs one is a sentence that has attached a count to the wrong object.
 
 **The plain weight is not a metric.** $\varepsilon=(1,-1,-1,-1)$ follows from the multiplication of the units, $\mathrm{Sc}(e_t^2)=+1$ and $\mathrm{Sc}(\vec e_k^2)=-1$. It belongs to the product, it is the same in both frames, and no frame changes it or raises it.
@@ -145,6 +144,8 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 
 **The Clifford map carries the directions, not a basis.** It sends the four directions of a frame into $M_4(\mathbb{C})$; its image is four-dimensional and not closed, and its products leave it. It is a dictionary for the physics literature, not a map of $\mathbb{B}$: the framework studies physics by the change of frame, $\mathbb{B}$ in the general case and the real frame of $\mathbb{B}_{\Phi}$ in the material case. The base change is the substitution $Q_t=ix_0$, written once, and the interval is read in the new coordinate after it.
 
+**The word is not used, and there is nothing for it to name.** The one metric has four coefficients $+1$; a count of directions is the **inertia** $(n,m,r)$ of a form, and the single integer is the **excess** $\sigma=n-m$.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -154,6 +155,8 @@ The metric is one, and it is the tuple of the interval in the $Q$'s: $\delta_{\m
 | $\varepsilon=(1,-1,-1,-1)$ | The plain weight, $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$; the same in both frames |
 | $\langle\tilde Q\rangle_\natural=\sum_\mu Q_\mu^2$ | The quaternionic interval; coefficients $\delta_{\mu\nu}=(1,1,1,1)$ in the $Q$ coordinate (complex in general), and $-(q'_t)^2+q_x^2+q_y^2+q_z^2$ read on $\mathbb{B}_{\Phi}$ |
 | $\delta_{\mu\nu}$ | The unit metric, $(1,1,1,1)$ on the four $Q_\mu$, the same on the general frame and on the two real sectors |
+| $(n,m,r)$ | The **inertia** of a form: its counts of positive, negative and null directions, positive counted first |
+| $\sigma=n-m$ | The **excess** of a form: the positive count less the negative one |
 | $\gamma_\mu$ | The four values of the Clifford map, one set for both frames, the index always low; the arrays are displayed in §*The Clifford Map* |
 | $\mathsf{K}$ | The Clifford map, a dictionary from the four directions of a frame into $M_4(\mathbb{C})$, the same in both frames, not a structure of $\mathbb{B}$; its values are displayed in §*The Clifford Map* |
 
