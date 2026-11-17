@@ -51,13 +51,13 @@ $$
 The two scales of the modulus are
 
 $$
-\rho_+=|Q_{+}|>0,\qquad \rho_-=|Q_{-}|>0,
+\varrho_+=|Q_{+}|>0,\qquad \varrho_-=|Q_{-}|>0,
 $$
 
 and the two circular components of the unit factor are
 
 $$
-u_+=\frac{Q_{+}}{\rho_+},\qquad u_-=\frac{Q_{-}}{\rho_-}.
+u_+=\frac{Q_{+}}{\varrho_+},\qquad u_-=\frac{Q_{-}}{\varrho_-}.
 $$
 
 Each is a unit complex number. The pair $(\breve M_{\mathrm{mod}},u)$ is unique: taking the bar forces $\breve M_{\mathrm{mod}}^2=\breve Q\bar{\breve Q}$, the cone fixes the square root, and then $u=\breve M_{\mathrm{mod}}^{-1}\breve Q$.
@@ -137,14 +137,14 @@ $$
 
 so $c(s)=(1-is)/(1+is)=w$. Applying this to $w=u_+$ and $w=u_-$ gives the two coordinates, and an element of the torus is determined by its circular components.
 
-For an invertible element $\breve Q$ the circular components of the unit factor are $Q_{+}/\rho_+$ and $Q_{-}/\rho_-$, so the coordinates are
+For an invertible element $\breve Q$ the circular components of the unit factor are $Q_{+}/\varrho_+$ and $Q_{-}/\varrho_-$, so the coordinates are
 
 $$
-s_1=i\,\frac{Q_{+}-\rho_+}{Q_{+}+\rho_+},\qquad
-s_2=i\,\frac{Q_{-}-\rho_-}{Q_{-}+\rho_-}.
+s_1=i\,\frac{Q_{+}-\varrho_+}{Q_{+}+\varrho_+},\qquad
+s_2=i\,\frac{Q_{-}-\varrho_-}{Q_{-}+\varrho_-}.
 $$
 
-The second form names the coordinates by $\breve Q$ alone. The denominators vanish exactly at $Q_{+}=-\rho_+$ and $Q_{-}=-\rho_-$, that is at the two walls of §*The Domain*, where the chart has no point.
+The second form names the coordinates by $\breve Q$ alone. The denominators vanish exactly at $Q_{+}=-\varrho_+$ and $Q_{-}=-\varrho_-$, that is at the two walls of §*The Domain*, where the chart has no point.
 
 ### The Bijection
 
@@ -180,7 +180,7 @@ $$
 \breve Q=\breve M_{\mathrm{mod}}\,u(s_1,s_2),\qquad \breve M_{\mathrm{mod}}\in P,\quad (s_1,s_2)\in\mathbb{R}^2.
 $$
 
-**Existence.** Let $\breve Q$ satisfy the two conditions, and put $\breve M_{\mathrm{mod}}=\sqrt{\breve Q\bar{\breve Q}}$ and $u=\breve M_{\mathrm{mod}}^{-1}\breve Q$. Then $\breve M_{\mathrm{mod}}\in P$ and $u\bar u=1$. Its circular components are $Q_{+}/\rho_+$ and $Q_{-}/\rho_-$. If the first were $-1$ then $Q_{+}=-\rho_+\le0$, contrary to the hypothesis; if the second were $-1$ then $Q_{-}=-\rho_-\le0$, also contrary. Hence neither component is $-1$, and the bijection gives real $s_1,s_2$ with $u=u(s_1,s_2)$. Therefore $\breve Q=\breve M_{\mathrm{mod}} u(s_1,s_2)$.
+**Existence.** Let $\breve Q$ satisfy the two conditions, and put $\breve M_{\mathrm{mod}}=\sqrt{\breve Q\bar{\breve Q}}$ and $u=\breve M_{\mathrm{mod}}^{-1}\breve Q$. Then $\breve M_{\mathrm{mod}}\in P$ and $u\bar u=1$. Its circular components are $Q_{+}/\varrho_+$ and $Q_{-}/\varrho_-$. If the first were $-1$ then $Q_{+}=-\varrho_+\le0$, contrary to the hypothesis; if the second were $-1$ then $Q_{-}=-\varrho_-\le0$, also contrary. Hence neither component is $-1$, and the bijection gives real $s_1,s_2$ with $u=u(s_1,s_2)$. Therefore $\breve Q=\breve M_{\mathrm{mod}} u(s_1,s_2)$.
 
 **Uniqueness.** Taking the bar gives $\breve M_{\mathrm{mod}}^2=\breve Q\bar{\breve Q}$, so $\breve M_{\mathrm{mod}}$ is the modulus; then $u=\breve M_{\mathrm{mod}}^{-1}\breve Q$; the chart is injective, so $(s_1,s_2)$ is determined by $u$.
 
@@ -206,7 +206,7 @@ $$
 
 The zero divisors are excluded twice over: they are the lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$, and $Q_{\blacktriangle}=Q_{\blacktriangledown}$ lies in $W_-$ while $Q_{\blacktriangle}=-Q_{\blacktriangledown}$ lies in $W_+$. The walls are larger than the zero divisors. An invertible element can have $Q_{+}$ real and negative, for instance $Q_{\blacktriangle}=-3/2$, $Q_{\blacktriangledown}=1/2$, where $Q_{+}=-1$ and $Q_{-}=-2$; such an invertible element lies on both walls and has no chart coordinate, although it has a perfectly good modulus–unit decomposition with unit factor $(-1,-1)$.
 
-In the formula $s_k=i(u_k-1)/(u_k+1)$ the two exclusions are visible at once: the denominator of the first vanishes at $u_+=-1$, that is $Q_{+}=-\rho_+$, and the denominator of the second at $u_-=-1$. The numerator and denominator of the second form both vanish at a zero divisor, where one of $\rho_+,\rho_-$ is zero and no decomposition of any kind exists.
+In the formula $s_k=i(u_k-1)/(u_k+1)$ the two exclusions are visible at once: the denominator of the first vanishes at $u_+=-1$, that is $Q_{+}=-\varrho_+$, and the denominator of the second at $u_-=-1$. The numerator and denominator of the second form both vanish at a zero divisor, where one of $\varrho_+,\varrho_-$ is zero and no decomposition of any kind exists.
 
 ## The Group Law
 
@@ -304,7 +304,7 @@ Every point of the torus avoids at least one of these sets, because a unit compl
 
 The domain of one chart is the complement of the two walls $W_+$ and $W_-$. The wall $W_+$ is the set on which the first circular component is a non-positive real, and $W_-$ the set on which the second is. Each is a real three-dimensional half-space, and their union is the cut.
 
-The cut is not the zero-divisor set, which is the union of the two lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$: the zero divisors are the part of the walls where $\rho_+\rho_-=0$. The cut is the price of the chart, not a singularity of the decomposition.
+The cut is not the zero-divisor set, which is the union of the two lines $Q_{\blacktriangle}=Q_{\blacktriangledown}$ and $Q_{\blacktriangle}=-Q_{\blacktriangledown}$: the zero divisors are the part of the walls where $\varrho_+\varrho_-=0$. The cut is the price of the chart, not a singularity of the decomposition.
 
 The chart has three properties, and they are the terms of an exchange.
 
@@ -351,7 +351,7 @@ The matrix lies in $SO(4)$. Its determinant is $\lvert c(s_1)\rvert^2\lvert c(s_
 Take $\breve Q=3+4i+j(1-i)$, so $Q_{\blacktriangle}=3+4i$ and $Q_{\blacktriangledown}=1-i$. The circular components and scales are
 
 $$
-Q_{+}=4+3i,\quad \rho_+=5,\qquad Q_{-}=2+5i,\quad \rho_-=\sqrt{29}=5.385164807134504.
+Q_{+}=4+3i,\quad \varrho_+=5,\qquad Q_{-}=2+5i,\quad \varrho_-=\sqrt{29}=5.385164807134504.
 $$
 
 The unit factor has circular components
@@ -471,7 +471,7 @@ $$
 
 with the identity $(0,0)$ and the inverse $(-s_1,-s_2)$. At a pole the product has a component equal to $-1$, and its coordinate does not exist. The four charts $u$, $ju$, $-u$, $-ju$ cover the torus, and they are the product of the two charts of each circle.
 
-The domain is the complement of the two walls $W_+=\{Q_{+}\in(-\infty,0]\}$ and $W_-=\{Q_{-}\in(-\infty,0]\}$, each of real dimension three. The walls are strictly larger than the zero divisors, which are the part of the walls where $\rho_+\rho_-=0$. The chart is rational, local and unbounded; the modulus–unit form is global and algebraic, and the exponential form is global and transcendental.
+The domain is the complement of the two walls $W_+=\{Q_{+}\in(-\infty,0]\}$ and $W_-=\{Q_{-}\in(-\infty,0]\}$, each of real dimension three. The walls are strictly larger than the zero divisors, which are the part of the walls where $\varrho_+\varrho_-=0$. The chart is rational, local and unbounded; the modulus–unit form is global and algebraic, and the exponential form is global and transcendental.
 
 In the matrix picture the unit factor is orthogonally conjugate to the block diagonal matrix of the two rotations $R(\theta_1)\oplus R(\theta_2)$, with $\theta_k=-2\arctan s_k$, and it lies in $SO(4)$. It is conformal exactly when $s_1=\pm s_2$.
 
@@ -483,7 +483,7 @@ In the matrix picture the unit factor is orthogonally conjugate to the block dia
 | $\breve M_{\mathrm{mod}}\in P$ | the modulus |
 | $u\in T^2$ | the unit factor |
 | $Q_{+}$, $Q_{-}$ | the two circular components |
-| $u_+= (Q_{+})/\rho_+$, $u_-=(Q_{-})/\rho_-$ | the circular components of the unit factor |
+| $u_+= (Q_{+})/\varrho_+$, $u_-=(Q_{-})/\varrho_-$ | the circular components of the unit factor |
 | $c(s)=\dfrac{1-is}{1+is}$ | the circle chart |
 | $u(s_1,s_2)$ | the torus chart with components $c(s_1),c(s_2)$ |
 | $M=\{\text{a circular component}=-1\}$ | the two circles missed by the chart |

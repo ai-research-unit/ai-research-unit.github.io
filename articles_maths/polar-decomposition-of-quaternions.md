@@ -534,38 +534,38 @@ The coordinates $(q_{\log},\vec v)$ give three families of curves and surfaces.
 
 - **The scale lines.** At fixed $\vec v$, the curve $q_{\log}\mapsto\exp(q_{\log}+\vec v)$ is the ray of positive multiples of $\exp(\vec v)$. It runs from the origin, which is not attained, through $\exp(\vec v)$ and to infinity.
 - **The angle lines.** At fixed unit $\vec n$, the curve $\theta\mapsto\exp(q_{\log}+\theta\vec n)$ is the arc of the great circle in the plane spanned by $e_t$ and $\vec n$. On the principal domain $\theta\in[0,\pi)$ it runs from $\exp(q_{\log})e_t$ to the point $\exp(q_{\log})(-e_t)$, which is excluded.
-- **The latitude spheres.** At fixed $q_{\log}$ and fixed $\rho=\sqrt{\langle\vec v\rangle_{\natural}}$, the set of $\exp(q_{\log}+\rho\vec n)$ over unit $\vec n$ is the two-sphere
+- **The latitude spheres.** At fixed $q_{\log}$ and fixed $\theta=\sqrt{\langle\vec v\rangle_{\natural}}$, the set of $\exp(q_{\log}+\theta\vec n)$ over unit $\vec n$ is the two-sphere
 
 $$
 \bigl\{\tilde q:\langle\tilde q\rangle_{\natural}=\exp(2q_{\log}),\
-\operatorname{Sc}\tilde q=\exp(q_{\log})\cos\rho\bigr\},
+\operatorname{Sc}\tilde q=\exp(q_{\log})\cos\theta\bigr\},
 $$
 
 a latitude sphere in the three-sphere of radius $\exp(q_{\log})$. The exponential reads these families as the scale, the angle and the axis.
 
 ### The Conformal Factor
 
-The differential rotates the plane spanned by $e_t$ and $\vec n$ by $\rho$ and scales it by $\exp(q_{\log})$, and it scales the orthogonal pure plane by $\exp(q_{\log})\lvert\sin\rho\rvert/\rho$, so the pullback of the Euclidean metric is
+The differential rotates the plane spanned by $e_t$ and $\vec n$ by $\theta$ and scales it by $\exp(q_{\log})$, and it scales the orthogonal pure plane by $\exp(q_{\log})\lvert\sin\theta\rvert/\theta$, so the pullback of the Euclidean metric is
 
 $$
-(\exp^*g)_{(q_{\log},\rho,\vec n)}
-=\exp(2q_{\log})\bigl(dq_{\log}^2+d\rho^2+\sin^2\rho\,d\Omega^2\bigr),
+(\exp^*g)_{(q_{\log},\theta,\vec n)}
+=\exp(2q_{\log})\bigl(dq_{\log}^2+d\theta^2+\sin^2\theta\,d\Omega^2\bigr),
 $$
 
-where $d\Omega^2$ is the round metric of $S^2$. The bracket is the round metric of $\mathbb{R}\times S^3$ in the coordinates $(q_{\log},\rho,\vec n)$, not the Euclidean metric of the cylinder. The exponential is therefore conformal from the cylinder $\mathbb{R}\times S^3$ with the product metric, and not conformal from the Euclidean metric on the same cylinder. In Cartesian coordinates the Jacobian determinant is
+where $d\Omega^2$ is the round metric of $S^2$. The bracket is the round metric of $\mathbb{R}\times S^3$ in the coordinates $(q_{\log},\theta,\vec n)$, not the Euclidean metric of the cylinder. The exponential is therefore conformal from the cylinder $\mathbb{R}\times S^3$ with the product metric, and not conformal from the Euclidean metric on the same cylinder. In Cartesian coordinates the Jacobian determinant is
 
 $$
-\exp(4q_{\log})\left(\frac{\sin\rho}{\rho}\right)^2,
+\exp(4q_{\log})\left(\frac{\sin\theta}{\theta}\right)^2,
 $$
 
 and the volume element is
 
 $$
-\mathrm dV=\exp(4q_{\log})\left(\frac{\sin\rho}{\rho}\right)^2\mathrm dq_{\log}\,\mathrm d\vec v
-=\exp(4q_{\log})\sin^2\rho\,\mathrm dq_{\log}\,\mathrm d\rho\,\mathrm d\Omega .
+\mathrm dV=\exp(4q_{\log})\left(\frac{\sin\theta}{\theta}\right)^2\mathrm dq_{\log}\,\mathrm d\vec v
+=\exp(4q_{\log})\sin^2\theta\,\mathrm dq_{\log}\,\mathrm d\theta\,\mathrm d\Omega .
 $$
 
-The factor $(\sin\rho/\rho)^2$ equals one at $\rho=0$ and vanishes on the boundary spheres $\rho=\pi k$, $k\ge1$.
+The factor $(\sin\theta/\theta)^2$ equals one at $\theta=0$ and vanishes on the boundary spheres $\theta=\pi k$, $k\ge1$.
 
 ### The Harmonic Reading
 
@@ -575,7 +575,7 @@ $$
 \Delta\ln \varrho=\frac{2}{\varrho^2}\neq0,
 $$
 
-because the Laplacian is four-dimensional. The function $\varrho^{-2}=1/\langle\tilde q\rangle_{\natural}$ is harmonic off the origin, and it is the radial harmonic function of the layer. The components of the exponential are not harmonic: the scalar component $\exp(q_{\log})\cos\rho$ has Laplacian $-2\exp(q_{\log})\sin\rho/\rho$, which is nonzero on the open principal cylinder and vanishes on the boundary spheres $\rho=\pi k$, $k\ge1$. There are therefore no harmonic conjugates of the logarithmic scale, and the exponential is not a harmonic morphism. The coordinate $q_{\log}=\ln \varrho$ is a smooth coordinate and the map $E$ is a diffeomorphism, but the analytic structure it carries is that of the product $\mathbb{R}\times S^3$, not that of a holomorphic plane.
+because the Laplacian is four-dimensional. The function $\varrho^{-2}=1/\langle\tilde q\rangle_{\natural}$ is harmonic off the origin, and it is the radial harmonic function of the layer. The components of the exponential are not harmonic: the scalar component $\exp(q_{\log})\cos\theta$ has Laplacian $-2\exp(q_{\log})\sin\theta/\theta$, which is nonzero on the open principal cylinder and vanishes on the boundary spheres $\theta=\pi k$, $k\ge1$. There are therefore no harmonic conjugates of the logarithmic scale, and the exponential is not a harmonic morphism. The coordinate $q_{\log}=\ln \varrho$ is a smooth coordinate and the map $E$ is a diffeomorphism, but the analytic structure it carries is that of the product $\mathbb{R}\times S^3$, not that of a holomorphic plane.
 
 ## Summary
 

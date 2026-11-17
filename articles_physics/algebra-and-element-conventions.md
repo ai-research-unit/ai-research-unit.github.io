@@ -311,7 +311,7 @@ $$
 
 and a reader who does not know the letters computes either half from that line.
 
-**Multiplication by the central $i$ exchanges the sectors.** Multiplication by $i$ is a real-linear bijection that exchanges the sectors, because $i$ is central and $i^{*}=-i$:
+**Multiplication by the central $i$ exchanges the sectors.** It is a real-linear bijection, because $i$ is central and $i^{*}=-i$:
 
 $$
 (i\tilde Q)^{*}=-i\,\tilde Q^{*},
