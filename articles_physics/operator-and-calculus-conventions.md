@@ -214,14 +214,6 @@ $$
 \Delta_\Phi=\sum_{\eta\in\{x,y,z\}}\frac{\partial^2}{\partial r_\eta^2}.
 $$
 
-**The d'Alembertian.** The second-order operator is the norm of the gradient. Write $T=-i\,e_t\partial/\partial r'_t$ and $S=\sum_{\eta\in\{x,y,z\}}\vec e_\eta\partial/\partial r_\eta$ for the two halves of the sum. They commute, $T^{2}=(-i)^2\partial^2/\partial {r'_t}^2=-\partial^2/\partial {r'_t}^2$ and $S^{2}=-\Delta_\Phi$, so
-
-$$
-\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(T+S)(T-S)=T^{2}-S^{2}=-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi=\Box_\Phi=\Delta_\Phi-\frac{\partial^{2}}{\partial {r'_{t}}^2},
-$$
-
-the square of the temporal half entering with the minus and the squares of the three spatial ones with the plus. That sign is the sign pattern read on the two halves instead of on the four second derivatives: $(-,+,+,+)$ on the material parameters, which is the signature the series works in throughout.
-
 **Why the subscript stands on every glyph.** The derivative is written on the material parameters and on no others, and $\Phi$ is their name: the glyph carries the name of the four parameters it differentiates. An article that writes the informational part writes an element, and no derivative of the corpus is taken against it.
 
 **The conjugates of the gradient.** The marks are read on the invertibles at fixed parameter: the derivative symbols are held fixed and only the units are conjugated. This fixes the scope of the star, and it is not a claim that $\partial/\partial r'_t$ is real. Read on the units, the quaternion conjugation reverses the three spatial units and fixes the temporal one, and the Hermitian conjugation does the same, so the two marks agree on the gradient term by term:
@@ -331,15 +323,13 @@ $$
 =-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
 $$
 
-**This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, one operator and one only (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*). It carries the subscript $\Phi$ like every derivative of the corpus, and it is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient,
+**This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, one operator and one only (*The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*). It carries the subscript $\Phi$ like every derivative of the corpus. The three space terms enter with a plus and the fourth with a minus, and the sign is the algebra's own: the temporal coefficient is imaginary and squares to $-1$, while each spatial unit squares to $-e_t$ and the conjugate factor returns $+1$. That is the $(-,+,+,+)$ signature on the material parameters, the signature the series works in throughout, and no article chooses between two conventions of the operator. It is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient,
 
 $$
 \Box_\Phi\tilde Q_{\mathrm f}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\Box_\Phi Q_{\mathrm{f}\mu}\bigr)e_\mu .
 $$
 
-The display is the material substitution and nothing more, **no article of the series defines a second d'Alembertian**, and no mass-term sign is left to a local convention.
-
-**There is no second reading.** The operator is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ everywhere in the corpus: the temporal coefficient of the gradient is $-i$, so the fourth second derivative enters with a minus and the three space ones with a plus. The sign is the algebra's, not a slice's, and no article chooses between two conventions of the operator. The reading is the one used by the Klein–Gordon article, the Dirac article and the dedicated article *The Biquaternion D'Alembertian and Its Green's Functions*.
+The operator differentiates the coefficients and touches no unit, and no article of the series defines a second d'Alembertian**, and no mass-term sign is left to a local convention.
 
 ### The Laplacian Is the Only Delta
 

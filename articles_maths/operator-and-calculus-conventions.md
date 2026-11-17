@@ -188,14 +188,6 @@ $$
 
 with the divergence $\vec\nabla_\Phi\cdot\vec Q_{\mathrm f}$ and the curl $\vec\nabla_\Phi\times\vec Q_{\mathrm f}$ of the element-valued field $\tilde Q_{\mathrm f}=Q_{\mathrm{f}t}e_t+\vec Q_{\mathrm f}$ read as the ordinary divergence and curl of its vector part.
 
-**The d'Alembertian.** The second-order operator is the quaternionic norm of the gradient, that is the quaternionic form at its two equal arguments:
-
-$$
-\Box_\Phi:=\langle\tilde\nabla_\Phi\rangle_{\natural}=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)=\sum_{k\in\{x,y,z\}}\frac{\partial^2}{\partial r_k^2}-\frac{\partial^2}{\partial {r'_t}^2}=\Delta_\Phi-\frac{\partial^2}{\partial {r'_t}^2}.
-$$
-
-The three space terms enter with a plus and the fourth with a minus, and the sign is the algebra's own: the temporal coefficient is imaginary and squares to $-1$, while each spatial unit squares to $-e_t$ and the second factor returns $+1$. That is the $(-,+,+,+)$ signature read on the two halves of the sum. The operator is scalar, it acts coefficient by coefficient, and no article of the series defines a second d'Alembertian or writes it without its subscript.
-
 **Why the subscript stands on every glyph.** The derivative is written on the material parameters and on no others, and $\Phi$ is their name: the glyph carries the name of the four parameters it differentiates. An article that writes the informational part writes an element, and no derivative of the corpus is taken against it.
 
 **The low slot spells the operator, or names its component, and nothing else.** A label in the low slot names a distinct operator by spelling what makes it that operator. The label is roman and is read as written, $\tilde\nabla_{\mathrm{gco},\Phi}$ with its companion $\Box_{\mathrm{gco},\Phi}$. A single component index may follow, $\tilde\nabla_{\mathrm{gco},\Phi,\mu}$, and nothing may follow that. Nothing else enters the slot, and the list of what may not is the list of everything that distinguishes one instance of an operator from another rather than one operator from another.
@@ -317,15 +309,13 @@ $$
 =-\frac{\partial^{2}}{\partial {r'_{t}}^{2}}+\Delta_\Phi .
 $$
 
-**This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, one operator and one only (*The Four Forms, the Four Algebraic Norms and the Change of Scalars*). It is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient,
+**This is the definition of the d'Alembertian**: the quaternionic norm of the gradient, one operator and one only (*The Four Forms, the Four Algebraic Norms and the Change of Scalars*). The three space terms enter with a plus and the fourth with a minus, and the sign is the algebra's own: the temporal coefficient is imaginary and squares to $-1$, while each spatial unit squares to $-e_t$ and the conjugate factor returns $+1$. That is the $(-,+,+,+)$ signature on the material parameters, the signature the series works in throughout, and no article chooses between two conventions of the operator. It is **scalar**: it multiplies by $e_t$ and acts coefficient by coefficient,
 
 $$
 \Box_\Phi\tilde Q_{\mathrm f}=\sum_{\mu\in\{t,x,y,z\}}\bigl(\Box_\Phi Q_{\mathrm{f}\mu}\bigr)e_\mu .
 $$
 
 The glyph carries the subscript $\Phi$ like every derivative of the corpus, and **no article of the series defines a second d'Alembertian**; no mass-term sign is left to a local convention.
-
-**There is no second reading.** The operator is $\Box_\Phi=\Delta_\Phi-\partial^2/\partial {r'_t}^2$ everywhere in the corpus: the temporal coefficient of the gradient is $-i$, so the fourth second derivative enters with a minus and the three space ones with a plus. The sign is the algebra's, not a slice's, and no article chooses between two conventions of the operator.
 
 ### The Hermitian Product, Its Form and Its Norm
 
