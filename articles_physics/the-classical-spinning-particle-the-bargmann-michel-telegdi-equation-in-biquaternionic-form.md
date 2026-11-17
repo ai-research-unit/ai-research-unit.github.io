@@ -215,7 +215,7 @@ the anti-Hermitian projection of the product of the material element $\tilde{V}_
 
 $$
 \mathrm{F}(\tilde{V}_{\Phi})=-\sqrt{\mu}\,P_{\mathbb{B}_{\Phi}}\!\left(\tilde{V}_{\Phi}\tilde{F}\right)
-\;=\;\tilde{W}_{\Psi},
+\;=\;\tilde\Sigma_{\Psi},
 \qquad
 W_\mu=\sum_\nu F_{\mu\nu}V_\nu .
 $$

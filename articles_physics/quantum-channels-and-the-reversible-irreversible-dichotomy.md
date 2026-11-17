@@ -70,7 +70,7 @@ $$
 \boxed{\;Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\,\tilde{Q}\,\tilde M_{\mathrm{kraus},l}^{*}\;} ,
 $$
 
-and it is trace preserving if and only if $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $Ξ^{*}(\tilde H_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde H_\Psi\tilde M_{\mathrm{kraus},l}$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{j\eta} \tilde{E}_{\Psi,j\eta}\otimesΞ(\tilde{E}_{\Psi,j\eta})$, written on a basis $\{\tilde E_{\Psi,jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
+and it is trace preserving if and only if $\sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde M_{\mathrm{kraus},l} = e_t$. A completely positive, trace-preserving map is a **quantum channel**; its dual is $Ξ^{*}(\tilde H_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*} \tilde H_\Psi\tilde M_{\mathrm{kraus},l}$, and the normalization is exactly $Ξ^{*}(e_t) = e_t$. The representation is not unique: two Kraus sets define the same channel precisely when they differ by a partial isometry. The **Kraus rank** is the minimal number of Kraus operators, equal to the rank of the Choi matrix $J(Ξ) = \sum_{j\eta} \tilde Q_{j\eta}\otimesΞ(\tilde Q_{j\eta})$, written on a basis $\{\tilde Q_{jk}\}$ of $\mathbb{B}$, and complete positivity is the condition $J(Ξ) \geq 0$. For a qubit channel the Choi matrix is $4\times4$, so the Kraus rank is at most four.
 
 The companion article already introduced this form for generalized measurements. The point here is that it describes *every* physical process, not only measurement.
 
@@ -335,7 +335,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $-\frac{i\,H}{\hbar\,\in\,\mathbb{B}}_{\Phi}$ | Generator of reversible evolution |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel along $\vec u$ |
 | $\vec s_{\Psi} \mapsto (1-p)\vec s_{\Psi} + p(\vec u\cdot\vec s_{\Psi})\vec u$ | Dephasing action on the Bloch vector |
-| $J(Ξ) = \sum_{j\eta}\tilde{E}_{\Psi,j\eta}\otimesΞ(\tilde{E}_{\Psi,j\eta})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(Ξ)$ |
+| $J(Ξ) = \sum_{j\eta}\tilde Q_{j\eta}\otimesΞ(\tilde Q_{j\eta})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J(Ξ)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |

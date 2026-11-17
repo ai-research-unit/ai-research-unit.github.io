@@ -212,10 +212,10 @@ with four complex coefficients on the four units and eight real parameters. Its 
 $$
 \tilde R_\Phi:=\tfrac12\bigl(\tilde R-\tilde R^{*}\bigr)=i r'_t e_t+\sum_k\vec e_k r_k,
 \qquad
-\tilde R_\Psi:=\tfrac12\bigl(\tilde R+\tilde R^{*}\bigr)=r_t e_t+i\sum_k\vec e_k r'_k,
+\tilde H_\Psi:=\tfrac12\bigl(\tilde R+\tilde R^{*}\bigr)=r_t e_t+i\sum_k\vec e_k r'_k,
 $$
 
-and they exhaust it, $\tilde R=\tilde R_\Phi+\tilde R_\Psi$, with $\tilde R_\Phi^{*}=-\tilde R_\Phi$ and $\tilde R_\Psi^{*}=+\tilde R_\Psi$. The subscript names the part and nothing else: $\Phi$ is the anti-Hermitian part, the material one, and $\Psi$ the Hermitian part, the informational one. Each carries four of the eight real parameters, and the two fours are complementary: $\Phi$ keeps the imaginary time $r'_t$ and the three real space numbers $r_k$, $\Psi$ keeps the real time $r_t$ and the three imaginary space numbers $r'_k$. The two projections are idempotent, annihilate one another and sum to the identity, so the split is a decomposition and not a choice.
+and they exhaust it, $\tilde R=\tilde R_\Phi+\tilde H_\Psi$, with $\tilde R_\Phi^{*}=-\tilde R_\Phi$ and $\tilde H_\Psi^{*}=+\tilde H_\Psi$. The subscript names the part and nothing else: $\Phi$ is the anti-Hermitian part, the material one, and $\Psi$ the Hermitian part, the informational one. The informational part is the corpus's $\tilde H_\Psi$, the four-position of the physics catalogue, written here with the coefficients of $\tilde R$: its parameters are $h_t=r_t$ and $h'_k=r'_k$. Each carries four of the eight real parameters, and the two fours are complementary: $\Phi$ keeps the imaginary time $r'_t$ and the three real space numbers $r_k$, $\Psi$ keeps the real time $r_t$ and the three imaginary space numbers $r'_k$. The two projections are idempotent, annihilate one another and sum to the identity, so the split is a decomposition and not a choice.
 
 **The same split for the gradient.** The gradient splits unit by unit, and each part is the operator of one part of the variable,
 
@@ -246,7 +246,7 @@ The subscript is the only mark: $\Phi$ is the material part, $\Psi$ the informat
 | symbol | definition | class | the four coordinates it keeps |
 | --- | --- | --- | --- |
 | $\tilde R_\Phi$ | $i r'_t e_t+\sum_k\vec e_k r_k$ | anti-Hermitian, material | $r'_t,\ r_x,\ r_y,\ r_z$ |
-| $\tilde R_\Psi$ | $r_t e_t+i\sum_k\vec e_k r'_k$ | Hermitian, informational | $r_t,\ r'_x,\ r'_y,\ r'_z$ |
+| $\tilde H_\Psi$ | $r_t e_t+i\sum_k\vec e_k r'_k$ | Hermitian, informational | $r_t,\ r'_x,\ r'_y,\ r'_z$ |
 | $\tilde\nabla_\Phi$ | $-i\,e_t\partial_{r'_t}+\sum_k\vec e_k\partial_{r_k}$ | anti-Hermitian, material | $r'_t,\ r_x,\ r_y,\ r_z$ |
 | $\tilde\nabla_\Psi$ | $e_t\partial_{r_t}-i\sum_k\vec e_k\partial_{r'_k}$ | Hermitian, informational | $r_t,\ r'_x,\ r'_y,\ r'_z$ |
 | $(\tilde\nabla^{\natural})_\Phi$ | $-i\,e_t\partial_{r'_t}-\sum_k\vec e_k\partial_{r_k}$ | anti-Hermitian, material | $r'_t,\ r_x,\ r_y,\ r_z$ |
@@ -615,7 +615,7 @@ The four products are read on the gradient: the plain bilinear product holds the
 | $\tilde\nabla=\sum_\mu e_\mu\,\partial/\partial R_\mu$ | The biquaternionic gradient |
 | $\vec\nabla=\sum_k\,\vec e_k\,\partial/\partial R_k$ | The pure spatial gradient |
 | $\Box=\langle\tilde\nabla\rangle_{\natural}$ | The d'Alembertian, the quaternionic norm of the gradient |
-| $\tilde R=\sum_\mu R_\mu e_\mu$ | The variable, $R_\mu=r_\mu+i r'_\mu$; its parts are $\tilde R_\Phi=i r'_t e_t+\sum_k\vec e_k r_k$, anti-Hermitian, and $\tilde R_\Psi=r_t e_t+i\sum_k\vec e_k r'_k$, Hermitian, with $\tilde R=\tilde R_\Phi+\tilde R_\Psi$ |
+| $\tilde R=\sum_\mu R_\mu e_\mu$ | The variable, $R_\mu=r_\mu+i r'_\mu$; its parts are $\tilde R_\Phi=i r'_t e_t+\sum_k\vec e_k r_k$, anti-Hermitian, and $\tilde H_\Psi=r_t e_t+i\sum_k\vec e_k r'_k$, Hermitian, with $\tilde R=\tilde R_\Phi+\tilde H_\Psi$ |
 | $\tilde\nabla_{\Phi}$, $(\tilde\nabla^{\natural})_{\Phi}$ | The gradient and its conjugate in the material part, $\tilde\nabla_{\Phi}=-i\,e_t\partial_{r'_t}+\sum_k\vec e_k\partial_{r_k}$ and $(\tilde\nabla^{\natural})_{\Phi}=-i\,e_t\partial_{r'_t}-\sum_k\vec e_k\partial_{r_k}$, with the tuples $(-i,1,1,1)$ and $(-i,-1,-1,-1)$ on $r'_t$ and $r_k$; both anti-Hermitian |
 | $\tilde\nabla_{\Psi}$, $(\tilde\nabla^{\natural})_{\Psi}$ | The gradient and its conjugate in the informational part, $\tilde\nabla_{\Psi}=e_t\partial_{r_t}-i\sum_k\vec e_k\partial_{r'_k}$ and $(\tilde\nabla^{\natural})_{\Psi}=e_t\partial_{r_t}+i\sum_k\vec e_k\partial_{r'_k}$, Hermitian in their coefficients |
 | $\vec\nabla_{\Phi}$, $\vec\nabla_{\Psi}$, $\Delta_{\Phi}$, $\Delta_{\Psi}$, $\Box_{\Phi}$, $\Box_{\Psi}$ | The spatial gradients, the spatial Laplacians and the d'Alembertians of the two parts, $\vec\nabla_{\Phi}=\sum_k\vec e_k\partial_{r_k}$, $\vec\nabla_{\Psi}=\sum_k\vec e_k\partial_{r'_k}$, $\Box_{\Phi}=\Delta_{\Phi}-\partial^2/\partial {r'_t}^2$ and $\Box_{\Psi}=\partial^2/\partial r_t^2-\Delta_{\Psi}$ |

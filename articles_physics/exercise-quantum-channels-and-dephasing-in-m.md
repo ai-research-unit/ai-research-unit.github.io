@@ -13,7 +13,7 @@ The article is therefore a sequence of independent problems, each in its own sec
 5. Composition of channels, and the growth of the Kraus rank.
 6. The Bloch-ball contraction and the increase of the von Neumann entropy under dephasing.
 
-The conventions are those of the companion articles. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{B}_{\Psi}$ consists of the elements $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ with real $h_t$ and $\vec h_\Psi \in \mathbb{R}^3$. A state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}| \leq 1$, and $\vec s_{\Psi}$ is its Bloch vector. The doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = h_t + \vec s_{\Psi}\cdot\vec h_\Psi$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Q}\tilde M_{\mathrm{kraus},l}^{*}$ and normalization $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$, and the Choi matrix is $J(Ξ) = \sum_{j\eta}\tilde{E}_{\Psi,j\eta}\otimesΞ(\tilde{E}_{\Psi,j\eta})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_x$ is
+The conventions are those of the companion articles. The quaternion units are $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\eta^2 = -e_t$; $i$ is the central scalar imaginary. The Hermitian subspace $\mathbb{B}_{\Psi}$ consists of the elements $\tilde H_\Psi = h_t e_t + i\vec h_\Psi$ with real $h_t$ and $\vec h_\Psi \in \mathbb{R}^3$. A state is $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ with $|\vec s_{\Psi}| \leq 1$, and $\vec s_{\Psi}$ is its Bloch vector. The doubled scalar part is $2\,\mathrm{Sc}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$, so the Born rule is $2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*}) = h_t + \vec s_{\Psi}\cdot\vec h_\Psi$. A **channel** is a completely positive, trace-preserving map with a Kraus representation $Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Q}\tilde M_{\mathrm{kraus},l}^{*}$ and normalization $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$, and the Choi matrix is $J(Ξ) = \sum_{j\eta}\tilde Q_{j\eta}\otimesΞ(\tilde Q_{j\eta})$ as in the parent. The dephasing channel along the unit pure real quaternion $\vec u_x$ is
 $$
 Ξ_{\mathrm{deph},p}(\tilde{Ϛ}_{\Psi})
 := (1-p)\,\tilde{Ϛ}_{\Psi}
@@ -95,7 +95,7 @@ E_{11} = \tfrac{1}{2}(e_t - i\vec e_z), \quad
 E_{01} = \tfrac{1}{2}(i\vec e_x - \vec e_y), \quad
 E_{10} = \tfrac{1}{2}(i\vec e_x + \vec e_y).
 $$
-These are the elements the parent denotes $\tilde{E}_{\Psi,j\eta}$; they satisfy $2\,\mathrm{Sc}(E_{j\eta}E_{lm}) = \delta_{\eta l}\delta_{jm}$. The idempotents $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ and $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ are exactly $E_{00}$ and $E_{11}$; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and the two are its associated idempotents. Since dephasing fixes the populations and scales the coherences by $1-p$,
+These are the elements the parent denotes $\tilde Q_{j\eta}$; they satisfy $2\,\mathrm{Sc}(E_{j\eta}E_{lm}) = \delta_{\eta l}\delta_{jm}$. The idempotents $\tilde\Pi_+ = \tfrac{1}{2}(e_t + i\vec e_z)$ and $\tilde\Pi_- = \tfrac{1}{2}(e_t - i\vec e_z)$ are exactly $E_{00}$ and $E_{11}$; the element $i\vec e_z$ is a root of $+1$, $(i\vec e_z)^2 = e_t$, and the two are its associated idempotents. Since dephasing fixes the populations and scales the coherences by $1-p$,
 $$
 Ξ(E_{00}) = E_{00}, \qquad Ξ(E_{11}) = E_{11}, \qquad Ξ(E_{01}) = (1-p)\,E_{01}, \qquad Ξ(E_{10}) = (1-p)\,E_{10},
 $$
@@ -322,7 +322,7 @@ The two canonical channels illustrate the two faces of irreversibility. Dephasin
 | $Ξ(\tilde{Q}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Q}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation |
 | $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$ | Trace-preservation condition |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2^{*})$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{*}=\sum_\mu\lvert Q_{2\mu}\rvert^{2}$ |
-| $J(Ξ) = \sum_{j\eta}\tilde{E}_{\Psi,j\eta}\otimesΞ(\tilde{E}_{\Psi,j\eta})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J$ |
+| $J(Ξ) = \sum_{j\eta}\tilde Q_{j\eta}\otimesΞ(\tilde Q_{j\eta})$ | Choi matrix; Kraus rank $=\mathrm{rank}\,J$ |
 | $Ξ_{\mathrm{deph},p}$ | Dephasing channel along $\vec u_x$ |
 | $\vec s_{\Psi} \mapsto (1-p)\vec s_{\Psi} + p(\vec u_x\cdot\vec s_{\Psi})\vec u_x$ | Dephasing Bloch map |
 | $E_{j\eta} = \lvert j\rangle\langle k\rvert$ | Matrix units of the computational basis |

@@ -208,13 +208,13 @@ $$
 
 because $\mathrm{Sc}(\tilde{p}\vec u) = -\vec p\cdot\vec u$ for pure real vectors.
 
-**The dipole interaction.** The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde E_{\Psi}$ one has $\tilde{p}\tilde E_{\Psi} = -\vec p\cdot\vec E + \vec p\times\vec E$, so
+**The dipole interaction.** The energy of a dipole in an external electric field is $-\vec p\cdot\vec E$, and this is an algebraic pairing of two vector elements. For pure real vectors $\tilde{p}, \tilde E_{\Phi}$ — the electric field is real, so anti-Hermitian and material, its informational reading being $i\tilde E_{\Phi}$ — one has $\tilde{p}\tilde E_{\Phi} = -\vec p\cdot\vec E + \vec p\times\vec E$, so
 
 $$
--\vec p\cdot\vec E\,e_t = \mathrm{Sc}\!\left(\tilde{p}\tilde E_{\Psi}\right)e_t = \tfrac12\left(\tilde{p}\tilde E_{\Psi} + \tilde E_{\Psi}\tilde{p}\right).
+-\vec p\cdot\vec E\,e_t = \mathrm{Sc}\!\left(\tilde{p}\tilde E_{\Phi}\right)e_t = \tfrac12\left(\tilde{p}\tilde E_{\Phi} + \tilde E_{\Phi}\tilde{p}\right).
 $$
 
-The pairing is the **symmetrized product** of the two vectors, and its value is a central scalar. The dipole interaction is therefore fully internal to the algebra: both the moment and the field are elements, and their interaction is the scalar part of their product. The sign has been checked: $-\mathrm{Sc}(\tilde{p}\tilde E_{\Psi}) = \vec p\cdot\vec E$ for real vectors, so $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Psi})$.
+The pairing is the **symmetrized product** of the two vectors, and its value is a central scalar. The dipole interaction is therefore fully internal to the algebra: both the moment and the field are elements, and their interaction is the scalar part of their product. The sign has been checked: $-\mathrm{Sc}(\tilde{p}\tilde E_{\Phi}) = \vec p\cdot\vec E$ for real vectors, so $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Phi})$.
 
 The dipole is thus the first non-trivial multipole for which the moment is an algebra element and the moment–field coupling is an algebra product — the monopole is the trivial case, a scalar whose coupling $ϙΞ(0) = (qe_t)(Ξ e_t)$ is an algebra product too. The dipole is the model for what the algebra can do; the quadrupole is where that stops.
 
@@ -345,7 +345,7 @@ The algebra is a **value algebra** of finite dimension, and it carries exactly t
 
 The static field of a bounded source is expanded in multipole moments, one order for each irreducible representation $D^{(l)}$ of the rotation group, with $2l+1$ moments per order. In the biquaternion framework the fields are elements of the algebra: the four-potential is $\tilde{A}_{\Phi} = i\,a'_t\,e_t + \vec A\in\mathbb{B}_{\Phi}$ with an imaginary scalar coefficient, the scalar potential is obtained from its scalar part, the spatial gradient is the vector operator $\vec\nabla$, and the electrostatic field is a real vector.
 
-The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Psi})$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
+The moments fall into two classes. The monopole is a central scalar and the dipole is a vector, so both are **elements of the algebra**, and the dipole interaction $-\vec p\cdot\vec E = \mathrm{Sc}(\tilde{p}\tilde E_{\Phi})$ is an algebra product. The quadrupole is a symmetric traceless rank-two tensor, the representation $D^{(2)}$, and it is **not** an algebra element: the quaternion product of two vectors, $\vec q\vec v = -\vec q\cdot\vec v + \vec q\times\vec v$, projects $D^{(1)}\otimes D^{(1)} = D^{(0)}\oplus D^{(1)}\oplus D^{(2)}$ onto $D^{(0)}\oplus D^{(1)}$ and discards the symmetric traceless part. The algebra, as a rotation representation, is $\mathbb{B} = D^{(0)}\oplus D^{(1)}$ and contains no weight-$\pm2$ state. The quadrupole's home is the symmetric traceless square $\operatorname{sym}^2_0(D^{(1)})\cong D^{(2)}$, a subspace of $\mathbb{B}\otimes\mathbb{B}$.
 
 The quadrupole **interaction** is a scalar and therefore lies in the centre: with the external field source-free at the source, $W_{quad} = -\frac16 \mathcal{Q}_{ij}T_{ij} = \frac16 \mathcal{Q}_{ij}\partial^2/\partial R_i\partial R_j\,Ξ(0)$, the contraction of two $D^{(2)}$ objects. The interaction energy is an element of the algebra even though the moment is not.
 

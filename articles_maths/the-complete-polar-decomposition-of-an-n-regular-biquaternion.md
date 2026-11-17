@@ -30,23 +30,24 @@ $$
 \boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\;}
 $$
 
-The three usual decompositions are regroupings of the word, and the table carries each with its pairing, its dimensions and its domain.
+**The name.** This four-factor word is the **complete polar decomposition** of the biquaternion. *Complete* names the refinement and not the domain: the word carries all four factors at once, one per slot, $1+1+3+3$ real parameters, and each of the three pairings is a regrouping of it rather than a rival reading of the element. The domain is the one of the pair it refines, the $\natural$-regular set, where the boost is positive definite and the central phase lies in its branch; the word does not extend to the null cone, where the general decomposition keeps two factors and the $*$-unitary factor becomes a partial isometry (*The Polar Decomposition of an N-Degenerate Biquaternion*). The corpus cites the word under this name.
+
+The word has a second face, in which the boost and the rotor are written as exponentials:
+
+$$
+\tilde U_{\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
+\tilde u_{\mathrm r}=\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
+$$
+
+$$
+\boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
+$$
 
 | reading | form | pairing | factors | real dimensions | available when |
 |---|---|---|---|---|---|
 | Cartan pair | $\tilde Q=\tilde Q_H\tilde Q_0=(\varrho\tilde U_{\mathrm b})(e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r})$ | Cartan Hermitian | $2$ | $4+4$ | $\langle\tilde Q\rangle_{\natural}\neq0$ |
 | modulus–unit | $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U=(\varrho e^{i\theta_{\mathrm{pha}}})(\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | Hamilton root | $2$ | $2+6$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and $B^{2}\neq0$ |
 | quaternion | $\tilde Q=(\varrho\tilde u_{\mathrm r})(e^{i\theta_{\mathrm{pha}}}\,\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r})$ | quaternion | $2$ | $4+4$ | $\langle\tilde Q\rangle_{\natural}\neq0$ and the real-coefficient part is nonzero |
-
-The box above adds the fourth reading, the word itself, with four factors and $1+1+3+3$ real dimensions; it is the complete polar decomposition, and the three lines are its regroupings.
-
-**The name.** This four-factor word is the **complete polar decomposition** of the biquaternion. *Complete* names the refinement and not the domain: the word carries all four factors at once, one per slot, $1+1+3+3$ real parameters, and each of the three pairings is a regrouping of it rather than a rival reading of the element. The domain is the one of the pair it refines, the $\natural$-regular set, where the boost is positive definite and the central phase lies in its branch; the word does not extend to the null cone, where the general decomposition keeps two factors and the $*$-unitary factor becomes a partial isometry (*The Polar Decomposition of an N-Degenerate Biquaternion*). The corpus cites the word under this name.
-
-The word has a second face, in which the boost and the rotor are written as exponentials:
-
-$$
-\boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)\exp\Bigl(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)\;}
-$$
 
 **Each factor is an exponential.** The boost and the rotor are exponentials of one real parameter along one real unit axis, with the rapidity $\theta_{\mathrm{rpd}}\ge0$ and the rotor angle $\theta_{\mathrm{axr}}\in[0,2\pi]$, while the scale and the phase are the logarithm and the argument of the modulus. The closed forms of §*The Four Factors* compute the same four factors; the exponents display their ranges, and §*The Result in Terms of the Coordinates* gives the seven data that determine them. The four exponents do not add. Their sum is a formal exponent whose exponential misses the element off the normal set, and §*The Logarithm* computes the defect.
 

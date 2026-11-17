@@ -50,7 +50,7 @@ The dictionary that places the photon's data in the algebra is the following.
 | Physical polarizations | the plane in $\mathrm{Vect}(\mathbb{B}_{\Phi})$ orthogonal to $\vec u_\Phi$ |
 | Helicity states | the $\pm1$ eigenvectors $\varepsilon_{\mathrm{fop},\pm}$ of the $\mathbb{B}_{\Psi}$ element $i\vec u_\Phi$ |
 | Helicity observable | $\lambda=\tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$, represented by the $\mathbb{B}_{\Psi}$ element $i\vec u_\Phi$ |
-| Conserved energy–momentum | $\tilde{W}_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\vec S$ the **Poynting vector** |
+| Conserved energy–momentum | $\tilde\Sigma_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}=W+\tfrac{i}{c}\vec S\in\mathbb{B}_{\Psi}$, with $\vec S$ the **Poynting vector** |
 | Photon number | $N_\gamma$ (transverse sum) — **not** in $\mathbb{B}$ |
 
 Two structural observations follow from the table. The field-strength-like datum $\tilde{F}$ is in neither sector: it has vanishing scalar part and a vector part that is part electric (imaginary) and part magnetic (real), which is why it is not an element of $\mathbb{B}_{\Phi}$ even though it is built from the potentials. The polarization *directions*, by contrast, are real spatial vectors and do sit in the material sector; this is the observation that the quantization article invited, and the next section makes it precise.
@@ -262,7 +262,7 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\varepsilon_{\mathrm{fop},1},\varepsilon_{\mathrm{fop},2}$; $\varepsilon_{\mathrm{fop},\pm}$ | Linear and circular polarization vectors |
 | $\sigma_{\mathrm{met},0}=-1$, $\sigma_{\mathrm{met},\eta}=+1$ | Indefinite form of Gupta–Bleuler; the biquaternion norm of $\mathbb{B}_{\Phi}$, its one minus the square of the $i$ in $Q_t=i q'_t$ |
 | $\lambda=\vec u_\Phi\cdot\vec S=\tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$ | Helicity operator; representative $i\vec u_\Phi\in\mathbb{B}_{\Psi}$ |
-| $\vec S$ (in $\tilde W_{\Psi}=W+\tfrac{i}{c}\vec S$) | Poynting vector (Maxwell article) |
+| $\vec S$ (in $\tilde\Sigma_{\Psi}=W+\tfrac{i}{c}\vec S$) | Poynting vector (Maxwell article) |
 | $\vec S$ (in $\lambda=\vec u_\Phi\cdot\vec S$) | Spin vector (angular-momentum article) |
 | $g_\eta=-\tfrac12 \vec e_\eta$ | Rotation generators in the angular-momentum article; this article writes the same generators as $\vec e_\eta$ |
 | $\epsilon^{(r)}_\mu$, $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Polarization vectors and mode operators (imported) |

@@ -596,7 +596,7 @@ The three-vector form in *Maxwell's Equations in a Material Medium* above is the
 The energy and momentum of the electromagnetic field are encoded in a **biquaternionic energy–momentum**, the halved Hermitian form of the field strength:
 
 $$
-\boxed{\;\tilde{W}_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W + \frac{i}{c}\vec{S}\;},
+\boxed{\;\tilde\Sigma_{\Psi} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W + \frac{i}{c}\vec{S}\;},
 $$
 
 where $W$ is the energy density and $\vec S$ is the energy flow density (the Poynting vector), and the star is the **Hermitian conjugate** of the algebra, the map of *Algebra and Element Conventions*, §*The Conjugations*, which conjugates each coefficient and negates the vector part. The star is not optional here: the complex conjugate alone would give $-\bigl(W+\tfrac{i}{c}\vec S\bigr)$, since the electric and the magnetic halves of $\tilde F$ carry opposite phases. For the electromagnetic field in a medium, these are
@@ -605,20 +605,20 @@ $$
 W = \frac{1}{2}\left(\epsilon\,\vec E\cdot\vec E + \mu\,\vec H\cdot\vec H\right), \qquad \vec S = \vec E\times\vec H.
 $$
 
-The scalar part of $\tilde{W}_{\Psi}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{B}_{\Psi}$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $i r'_t$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}_{\Phi}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T_{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}_{\Psi}$ carries its energy density and its energy flux.
+The scalar part of $\tilde\Sigma_{\Psi}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{B}_{\Psi}$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $i r'_t$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\sqrt{\mu}\,\tilde{J}_{\Phi}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T_{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde\Sigma_{\Psi}$ carries its energy density and its energy flux.
 
 The energy law is the scalar part of the biquaternionic equation
 
 $$
-\tilde\nabla_\Phi \tilde{W}_{\Psi} = -\tilde{\mathcal F},
+\tilde\nabla_\Phi \tilde\Sigma_{\Psi} = -\tilde{\mathcal F},
 $$
 
 where $\tilde{\mathcal F}$ is the biquaternionic power–force density, whose scalar part is fixed by the work done on the charges. Only the scalar part of this equation is used below. Writing out the two parts of the left-hand side, with $\partial/\partial R_t=-i\,\partial/\partial r'_t$,
 
 $$
-\mathrm{Sc}\bigl(\tilde\nabla_\Phi\tilde W_{\Psi}\bigr)=\frac{\partial W}{\partial R_t}-\frac{i}{c}\,\mathrm{div}\,\vec S,
+\mathrm{Sc}\bigl(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}\bigr)=\frac{\partial W}{\partial R_t}-\frac{i}{c}\,\mathrm{div}\,\vec S,
 \qquad
-\mathrm{Vect}\bigl(\tilde\nabla_\Phi\tilde W_{\Psi}\bigr)=\frac{1}{c}\frac{\partial\vec S}{\partial r'_t}+\nabla W+\frac{i}{c}\,\mathrm{rot}\,\vec S .
+\mathrm{Vect}\bigl(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}\bigr)=\frac{1}{c}\frac{\partial\vec S}{\partial r'_t}+\nabla W+\frac{i}{c}\,\mathrm{rot}\,\vec S .
 $$
 
 The scalar part is the Poynting theorem: with $\mathrm{Sc}(\tilde{\mathcal F})=-\frac{i}{c}\vec J\cdot\vec E$ the equation reads
@@ -631,10 +631,10 @@ The vector part is not the momentum balance. That balance pairs $\partial/\parti
 
 ## Energy Conservation and the Cauchy Problem
 
-The biquaternionic energy–momentum $\tilde{W}_{\Psi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$ satisfies the energy law $\mathrm{Sc}(\tilde\nabla_\Phi\tilde W_{\Psi}) = -\mathrm{Sc}(\tilde{\mathcal F})$, where $\tilde{\mathcal F}$ is the biquaternionic power–force density. Integrating the scalar part over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
+The biquaternionic energy–momentum $\tilde\Sigma_{\Psi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$ satisfies the energy law $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}) = -\mathrm{Sc}(\tilde{\mathcal F})$, where $\tilde{\mathcal F}$ is the biquaternionic power–force density. Integrating the scalar part over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
 
 $$
-\int_{\partial D} \mathrm{Sc}\bigl(\tilde U_{\mathrm n} \tilde{W}_{\Psi}\bigr)\,dS = -\int_D \mathrm{Sc}\bigl(\tilde{\mathcal F}\bigr)\,dV,
+\int_{\partial D} \mathrm{Sc}\bigl(\tilde U_{\mathrm n} \tilde\Sigma_{\Psi}\bigr)\,dS = -\int_D \mathrm{Sc}\bigl(\tilde{\mathcal F}\bigr)\,dV,
 $$
 
 where $\tilde U_{\mathrm n} = i n_t e_t + \vec n$, $n_t^2 + \lvert\vec n\rvert^2 = 1$, is the outward unit normal on $\partial D$. This is the biquaternionic form of the **Poynting theorem**: the flux of energy through the boundary equals the work done by the sources inside.
@@ -681,7 +681,7 @@ $$
 \vec A_2 = \vec A + \frac{\gamma - 1}{v_b^2}(\vec v_b\cdot\vec A)\vec v_b - \gamma\frac{\xi_{\mathrm{scp}}}{c^2}\vec v_b.
 $$
 
-These are the standard Lorentz transformation formulas for the four-potential, obtained from the rotor conjugation $\tilde{A}_{\Phi,2} = \tilde U\tilde{A}_{\Phi}\tilde U^{*}$. The same transformation law applies to the four-current $\tilde J_{\Phi}$ and to the biquaternionic energy–momentum $\tilde{W}_{\Psi}$. This confirms that the biquaternionic formulation is Lorentz-covariant, and it shows how the transformation laws look in biquaternionic form.
+These are the standard Lorentz transformation formulas for the four-potential, obtained from the rotor conjugation $\tilde{A}_{\Phi,2} = \tilde U\tilde{A}_{\Phi}\tilde U^{*}$. The same transformation law applies to the four-current $\tilde J_{\Phi}$ and to the biquaternionic energy–momentum $\tilde\Sigma_{\Psi}$. This confirms that the biquaternionic formulation is Lorentz-covariant, and it shows how the transformation laws look in biquaternionic form.
 
 **A one-sided alternative, and why it fails.** One sometimes meets the one-sided formula $\tilde{A}_{\Phi,2} = (\gamma/c)\tilde{U}\tilde{A}_{\Phi}$ with $\tilde{U} = c + i\vec v_b$, in which the rotor multiplies on the left only. It does not reproduce the standard component formulas for a general boost, and it does not match the rotor-conjugation formulation established in the companion articles. The two-sided conjugation given above is the correct transformation.
 
@@ -886,7 +886,7 @@ Maxwell's equations in a linear, isotropic, non-dispersive medium collapse into 
 
 The retarded Green's function supplies the causal solution, the field at a point depending only on the sources in its past light cone; it is the fundamental solution of the hyperbolic wave operator and is related by the Wick rotation to the elliptic Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ used in biquaternion analysis. In the stationary limit the equation becomes purely spatial and the solution is the gradient of the Newton kernel, whose first term is Coulomb's law for a point charge and whose second is the Biot–Savart law. The potential $\tilde{A}_{\Phi}$ is subject to the gauge transformation $\tilde{A}_{\Phi,\mathrm g} = \tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma$, under which $\tilde{F}$ is invariant while the scalar $S = \mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde{A}_{\Phi})$ shifts by $S_2 = S - \Box\Gamma$; the Lorenz gauge $S = 0$ reduces the first-order equation to the wave equation $\Box\tilde{A}_{\Phi} = -\mu\tilde J_{\Phi}$.
 
-The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W}_{\Psi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{B}_{\Psi}$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. Its scalar part obeys the energy law $\mathrm{Sc}(\tilde\nabla_\Phi\tilde W_{\Psi}) = -\mathrm{Sc}(\tilde{\mathcal F})$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy; its vector part is not the momentum balance, which requires the rank-two Maxwell stress. The four-potential transforms by rotor conjugation, $\tilde{A}_{\Phi,2} = \tilde U\tilde{A}_{\Phi}\tilde U^{*}$, which reproduces the standard boost formulas for $\xi_{\mathrm{scp}}$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
+The energy and momentum of the field are carried by the halved Hermitian form $\tilde\Sigma_{\Psi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{B}_{\Psi}$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. Its scalar part obeys the energy law $\mathrm{Sc}(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}) = -\mathrm{Sc}(\tilde{\mathcal F})$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy; its vector part is not the momentum balance, which requires the rank-two Maxwell stress. The four-potential transforms by rotor conjugation, $\tilde{A}_{\Phi,2} = \tilde U\tilde{A}_{\Phi}\tilde U^{*}$, which reproduces the standard boost formulas for $\xi_{\mathrm{scp}}$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
 
 ## Summary of Notation
 
@@ -907,7 +907,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\rho_f$ | Mass density of the fluid (not the charge density $\rho$) |
 | $\tilde J_{\Phi} = ic\rho\,e_t+\vec J$ | Four-current; the source enters as $\sqrt{\mu}\,\tilde J_{\Phi}$ |
 | $\tilde Q^{*}$ | Hermitian conjugate: complex conjugation followed by the quaternion conjugate |
-| $\tilde{W}_{\Psi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*}$ | Energy–momentum biquaternion, in $\mathbb{B}_{\Psi}$ |
+| $\tilde\Sigma_{\Psi} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*}$ | Energy–momentum biquaternion, in $\mathbb{B}_{\Psi}$ |
 | $\tilde U$ | Boost biquaternion (unit-norm biquaternion) |
 | $\tilde{q}_0$ | Constant unit quaternion; the internal (right-multiplication) freedom of the vacuum equation, in $\mathrm{SU}(2)$ |
 | $\tilde\nabla_\Phi$ | Biquaternionic gradient |

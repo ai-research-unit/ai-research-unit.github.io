@@ -268,7 +268,7 @@ The identity was verified off shell: for random arbitrary fields the divergence 
 
 **The reading is decisive.** It is the **plain** derivative, and the projection is the plain $e_\mu$, not the conjugated $e_\mu^{\natural}$. Scalar parts are blind to the conjugation, but the spatial basis elements are not, since $\vec e_\eta^{\natural}=-\vec e_\eta$; the conjugated contraction is a different combination, it does not reproduce $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$, and on the same on-shell fields it stays at the scale of the tensor itself instead of vanishing. The conjugation is the right operation for the framework's four-vector currents, where $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi})$ is the divergence; for the rank-two tensor the plain derivative is what carries it.
 
-**Where the algebra enters.** The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $\mathsf{T}_{\mu\nu}$ and not a doubly covariant one, and why one vector direction at a time is what the bilinear carries — the four-component object $\tilde{W}_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows, whereas fixing $\nu$ selects the four entries $\mathsf{T}_{\mu\nu}$. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field. The divergence of the row is then the plain derivative $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$, and it is that divergence which vanishes.
+**Where the algebra enters.** The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $\mathsf{T}_{\mu\nu}$ and not a doubly covariant one, and why one vector direction at a time is what the bilinear carries — the four-component object $\tilde\Sigma_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows, whereas fixing $\nu$ selects the four entries $\mathsf{T}_{\mu\nu}$. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field. The divergence of the row is then the plain derivative $\sum_\mu\partial/\partial R_\mu T_{\mu\nu}$, and it is that divergence which vanishes.
 
 ## The Conservation Law for Field and Matter
 
@@ -303,10 +303,10 @@ $$
 the $\nu=k$ components are the momentum-balance equations that underlie radiation pressure, and the biquaternionic form of the whole statement is the single equation
 
 $$
-\mathrm{Sc}\!\left(\tilde\nabla_\Phi\tilde{W}_{\Psi}\right) = \frac{i}{c}\,\vec J\cdot\vec E
+\mathrm{Sc}\!\left(\tilde\nabla_\Phi\tilde\Sigma_{\Psi}\right) = \frac{i}{c}\,\vec J\cdot\vec E
 $$
 
-for the Hermitian form $\tilde{W}_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}$, which the companion article *Maxwell's Equations in the Biquaternionic Formulation* derives and the exercise re-derives by contrast with the failed real form. The pattern is general: the divergence of the field's stress–energy equals minus the four-force density, the divergence of the matter's tensor equals plus it, and the sum is conserved. The field action is what fixes both the field tensor and, through the coupling term, the force that appears on the matter side.
+for the Hermitian form $\tilde\Sigma_{\Psi}=\tfrac12\tilde{F}\tilde{F}^{*}$, which the companion article *Maxwell's Equations in the Biquaternionic Formulation* derives and the exercise re-derives by contrast with the failed real form. The pattern is general: the divergence of the field's stress–energy equals minus the four-force density, the divergence of the matter's tensor equals plus it, and the sum is conserved. The field action is what fixes both the field tensor and, through the coupling term, the force that appears on the matter side.
 
 ## What the Algebra Supplies and What Is Transcribed
 

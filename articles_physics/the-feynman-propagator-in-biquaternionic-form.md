@@ -56,13 +56,13 @@ The companion article quantizes the field on its module; here the same modes are
 
 $$
 \tilde{Ξ}_{\mathrm{fop}}(x)=\int\!\frac{d^3p}{(2\pi\hbar)^3}\sqrt{\frac{\hbar c}{2E_{\vec p}}}
-\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde W_{\Psi}^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
-+b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde V_{\Phi}^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big],
+\sum_{r=1}^{2}\Big[a_{\mathrm{fop},r}(\vec p)\,\tilde w^{(r)}(\vec p)\,\exp(-i\theta_{\mathrm{pwp}})
++b_{\mathrm{fop},r}^{\dagger}(\vec p)\,\tilde v^{(r)}(\vec p)\,\exp(+i\theta_{\mathrm{pwp}})\Big],
 $$
 
 Here $\theta_{\mathrm{pwp}}:=p\cdot x/\hbar=\omega_{\vec p}r'_t-\vec p\cdot\vec r$ is the plane-wave angle in momentum notation: $p$ and $x$ are real, so the exponent is $i$ times a real number and the mode factor is a phase of modulus one.
 
-with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, and with $\tilde W_{\Psi}^{(r)}$ and $\tilde V_{\Phi}^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+mc$ derived below, and no basis operator survives in the amplitude.
+with $E_{\vec p}=+\sqrt{\vec p^{\,2}c^2+m^{2}\,c^{4}}$, and with $\tilde w^{(r)}$ and $\tilde v^{(r)}$ the plane-wave elements of that momentum: the two solutions of the chiral pair and their two negative-frequency partners, each an element of $\mathbb{B}$. Its adjoint is the Hermitian conjugate $\tilde{Ξ}_{\mathrm{fop}}^*(x)$, carried with the same fixed pair $i\,\vec e_x$. That pair sits inside the time-ordered product, between the adjoint field and the test element, and the contraction over the two solutions consumes it: what acts on the test element is the kernel $\mathcal{A}_p+mc$ derived below, and no basis operator survives in the amplitude.
 
 **The momentum action.** The four frame basis operators of *Frame and Metric Conventions*, written out as actions instead of as basis operators, are
 
@@ -438,7 +438,7 @@ and the prescription is a deformation of the mass-shell scalar. The added term $
 | $D_3$ | Its spatial part, defined in that article |
 | $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ | The biquaternion Dirac field, an element of $\mathbb{B}$, split into the two parts named by the subscript |
 | $\tilde{Ξ}^*$, $\tilde{Ξ}^*i\vec e_x$ | The Hermitian conjugate of the field, and the adjoint it forms with the fixed timelike basis operator |
-| $\tilde W_{\Psi}^{(r)}(\vec p)$, $\tilde V_{\Phi}^{(r)}(\vec p)$ | The plane-wave elements of the two frequency branches |
+| $\tilde w^{(r)}(\vec p)$, $\tilde v^{(r)}(\vec p)$ | The plane-wave elements of the two frequency branches |
 | $\mathcal{A}_p+mc$, $\mathcal{A}_p-mc$ | The two numerators, on shell: the map form of the two sums over the solutions |
 | $p=(E,\vec p)$, $p_\pm=(\pm E_{\vec p},\vec p)$, $N=-E^{2}/c^{2}+\vec p^{\,2}$ | Four-momentum, the two pole momenta, and the Lorentz square |
 | $\tilde{Ξ}_{\mathrm{fop}}$, $a_{\mathrm{fop},r}(\vec p)$, $b_{\mathrm{fop},r}(\vec p)$ | Quantized field; particle and antiparticle modes |

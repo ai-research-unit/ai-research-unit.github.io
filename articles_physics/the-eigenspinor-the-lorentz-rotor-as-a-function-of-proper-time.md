@@ -172,10 +172,10 @@ with the velocity on the **left** and $\tilde{F}$ itself rather than $\tilde{F}^
 The eigenspinor carries the rest frame of the particle, so its images of the rest-frame axes are the particle's own frame in the laboratory. With $\mathcal{E}_0 = ie_t$ and $\mathcal{E}_k = \vec e_\eta$ the basis of $\mathbb{B}_{\Phi}$,
 
 $$
-\tilde{E}_{\Psi,(\mu)}(\tau) = \tilde U(\tau)\,\mathcal{E}_\mu\,\tilde U(\tau)^{*} \in \mathbb{B}_{\Phi} ,
+\tilde{E}_{\Phi,(\mu)}(\tau) = \tilde U(\tau)\,\mathcal{E}_\mu\,\tilde U(\tau)^{*} \in \mathbb{B}_{\Phi} ,
 $$
 
-and the four-vector $\tilde{E}_{\Psi,(0)} = i\tilde U\tilde U^{*}$ is the four-velocity direction, $c\,\tilde{E}_{\Psi,(0)} = \tilde{V}_{\Phi}$. The three spatial images $\tilde{E}_{\Psi,(\eta)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\vec\Omega_{\mathrm{LT}}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
+and the four-vector $\tilde{E}_{\Phi,(0)} = i\tilde U\tilde U^{*}$ is the four-velocity direction, $c\,\tilde{E}_{\Phi,(0)} = \tilde{V}_{\Phi}$. The three spatial images $\tilde{E}_{\Phi,(\eta)}$ are the boosted axes, orthonormal in the sense of the Minkowski form, and they rotate along the worldline with the same rate $\vec\Omega_{\mathrm{LT}}$. The eigenspinor is therefore a **tetrad** in which the time axis is the four-velocity: it is a frame field along the worldline, and the four-momentum is its time leg rescaled by $mc$.
 
 This is the interpretation that separates the eigenspinor from the ordinary Lorentz rotor. A fixed rotor gives one tetrad; the eigenspinor gives a tetrad at every event, tied to the orientation of the particle's rest frame, and the equation of motion is the statement that the tetrad turns at the rate $\vec\Omega_{\mathrm{LT}}$.
 
@@ -252,7 +252,7 @@ The eigenspinor does not remove the obstruction recorded in *The Lorentz Force i
 | $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ | Field-strength biquaternion |
 | $\tilde{F}^{*}$ | Its conjugate, $i\sqrt{\epsilon}\vec E + \sqrt{\mu}\vec H$ |
 | $P_{\mathbb{B}_{\Phi}}(\tilde{Q}) = \tfrac12(\tilde{Q}-\tilde{Q}^{*})$ | Projection onto the material sector |
-| $\tilde{E}_{\Psi,(\mu)} = \tilde U\mathcal{E}_\mu\tilde U^{*}$ | Eigenframe (tetrad) along the worldline |
+| $\tilde{E}_{\Phi,(\mu)} = \tilde U\mathcal{E}_\mu\tilde U^{*}$ | Eigenframe (tetrad) along the worldline |
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t + \vec v)$ | Four-velocity |
 | $\tilde{\mathcal F}_{\Phi,\mathrm{frc}}$ | Lorentz four-force, $d\tilde{P}_{\Phi}/d\tau$ |
 | $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{Q}_1^{\natural}\tilde{Q}_2)$; on the diagonal $\langle\tilde{Q}_2,\tilde{Q}_2\rangle_{\natural}=\langle\tilde{Q}_2\rangle_{\natural}$ |

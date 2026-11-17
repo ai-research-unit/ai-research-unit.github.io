@@ -171,7 +171,7 @@ $$
 [W]_{F_t} = c^{-1}\,(\vec u,[\vec P]_{F_t}),
 $$
 
-which is the electric-energy component of the electromagnetic Rankine–Hugoniot condition; it is what makes the energy conservation law hold distributionally across the front, and the energy section below states the full biquaternionic relation $[\tilde U_{\mathrm n}\tilde{W}_{\Psi}]_S = -[\tilde{\mathcal F}]_S$.
+which is the electric-energy component of the electromagnetic Rankine–Hugoniot condition; it is what makes the energy conservation law hold distributionally across the front, and the energy section below states the full biquaternionic relation $[\tilde U_{\mathrm n}\tilde\Sigma_{\Psi}]_S = -[\tilde{\mathcal F}]_S$.
 
 ### The Shock Waves of the Charge–Current Field
 
@@ -348,10 +348,10 @@ For a shock front in a nonlinear medium, the **energy** of the electromagnetic f
 
 ### The Jump Relation
 
-Let $\tilde{W}_{\Psi}$ be the biquaternionic energy–momentum. Across the shock front $S$ with normal $\tilde U_{\mathrm n}$, the jump satisfies
+Let $\tilde\Sigma_{\Psi}$ be the biquaternionic energy–momentum. Across the shock front $S$ with normal $\tilde U_{\mathrm n}$, the jump satisfies
 
 $$
-\boxed{\;[\tilde U_{\mathrm n}\tilde{W}_{\Psi}]_S = -[\tilde{\mathcal F}]_S\;},
+\boxed{\;[\tilde U_{\mathrm n}\tilde\Sigma_{\Psi}]_S = -[\tilde{\mathcal F}]_S\;},
 $$
 
 where $\tilde{\mathcal F}$ is the biquaternionic power–force density. This is the biquaternionic form of the **Rankine–Hugoniot condition** for electromagnetic shocks, and it is the counterpart of the standard conservation-law relation for fluid shocks.
