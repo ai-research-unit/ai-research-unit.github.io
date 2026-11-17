@@ -92,7 +92,7 @@ with $r>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\theta_
 | bilinear | value | reads | does not read |
 | --- | --- | --- | --- |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | $ic\gamma\rho_{\mathrm{num}}e_t+\rho_{\mathrm{num}}\gamma\vec v$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ (spinor case; see below) | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ | a Hermitian element along $\vec s$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ | a Hermitian element along $\vec s$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
 | $\langle\tilde\Xi\rangle_{\natural}$ | $\rho_{\mathrm{num}}e^{2i\theta_{\mathrm{pha}}}$ | $\rho_{\mathrm{num}}$, $2\theta_{\mathrm{pha}}$ | the two frames |
 
 **The three rows are the fluid's whole observable content, and the last row is where the angle lives.** The angle enters no current and no spin. That is the precise sense in which the field carries an angle that no bilinear of the algebra sees, and it is the reason the phase can be moved between the factors of the word without consequence.
@@ -220,7 +220,7 @@ word leaves open, the sign $\varepsilon$, the locking on the degenerate sector a
 | $\vec v=c\tanh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$ | Three-velocity |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
-| $\tilde S_{\Psi,\mathrm{sp}}$ | The spin element, Hermitian |
+| $\tilde S_{\Psi}$ | The spin element, Hermitian |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\varepsilon=\Xi_t/\Rho$ | Sign of the scalar part against the modulus; $\pm1$ on $\Sigma_{10}$, where the scalar case sits; $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ |
 | $c$ | The limiting speed of the frame structure |

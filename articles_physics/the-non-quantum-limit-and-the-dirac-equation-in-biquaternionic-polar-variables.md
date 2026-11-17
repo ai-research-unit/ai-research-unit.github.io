@@ -22,7 +22,7 @@ and that the four brackets are of four types. **The limit is an ordering of thes
 
 **The frame's ordering is a hypothesis and it is stated here as one.** The scale's derivative is order $\epsilon$ by the criterion; the boost's must be too, because the velocity field of a slowly varying fluid varies on the fluid's own length. The rotor's is order one for a different reason: **the spin changes only as the momentum changes**, since a boost and a rotor that are functions of $\tilde K_\Phi$ change at the rate $\tilde K_\Phi$ changes, and that rate is order one. **No article in the corpus states either assignment**, and this one states both.
 
-**What the article establishes, in five sentences.** The logarithmic derivative is exact and its four brackets are the parent's. The limit assigns order zero to the phase bracket and order one to the other three, and order zero of the equation is the algebraic frame system plus the mass shell. Order one carries three transport laws — the continuity equation, the velocity's transport, and the spin's transport — and the last two are the Lorentz force and the precession. The current and the spin are exact in the parent and the limit does not touch them: $\tilde J_\Phi=\rho\tilde V_\Phi$ and $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\hat s$. The equation is first order, so the family has no amplitude-curvature term, and its order-two content is the product of two order-one brackets, of which the scalar part reproduces the Klein–Gordon quantum potential on iteration and the spin-dependent part is not derived anywhere in the corpus.
+**What the article establishes, in five sentences.** The logarithmic derivative is exact and its four brackets are the parent's. The limit assigns order zero to the phase bracket and order one to the other three, and order zero of the equation is the algebraic frame system plus the mass shell. Order one carries three transport laws — the continuity equation, the velocity's transport, and the spin's transport — and the last two are the Lorentz force and the precession. The current and the spin are exact in the parent and the limit does not touch them: $\tilde J_\Phi=\rho\tilde V_\Phi$ and $\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\hat s$. The equation is first order, so the family has no amplitude-curvature term, and its order-two content is the product of two order-one brackets, of which the scalar part reproduces the Klein–Gordon quantum potential on iteration and the spin-dependent part is not derived anywhere in the corpus.
 
 **What is not new.** The semiclassical Dirac equation's WKB structure, the polarisation condition, the BMT equation and the Thomas precession are standard. Added here: the ordering of the parent's four brackets against one parameter, the statement that the rotor's ordering follows from the spin's dependence on the momentum, and the exactness of the current and the spin as limits of nothing.
 
@@ -56,7 +56,7 @@ with $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ and $E=-\hbar c\,\partial\theta_{
 **The fourth bracket is the spin's frame.** The parent's display is
 
 $$
-\tilde S_{\Psi,\mathrm{sp}}=\rho\,\frac{\hbar}{2}\,i\,\hat s,
+\tilde S_{\Psi}=\rho\,\frac{\hbar}{2}\,i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\,\vec e_z\,\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -142,7 +142,7 @@ with $\vec\Omega_{\mathrm{sp}}$ the precession's angular velocity, whose two con
 
 **Why the two laws are separate and why that is the family's structure.** The boost and the rotor are two independent factors of the word, so their connections are two independent brackets, so their transport laws are two. **A reader who expects one equation at order one has counted the factors wrong**: four factors, four brackets, three laws at order one because the phase's is order zero.
 
-**The current and the spin are exact and the limit does not produce them.** $\tilde J_\Phi=\rho\tilde V_\Phi=ic\gamma\rho\,e_{t}+\rho\gamma\vec v$ and $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\hat s$ are the parent's displays, valid for every field of the class. **They are not orders of an expansion**: the first is the density times a unit four-vector and the second is the density times a unit direction, and neither carries a derivative. The limit's role is to leave them standing while it orders everything that does carry one.
+**The current and the spin are exact and the limit does not produce them.** $\tilde J_\Phi=\rho\tilde V_\Phi=ic\gamma\rho\,e_{t}+\rho\gamma\vec v$ and $\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\hat s$ are the parent's displays, valid for every field of the class. **They are not orders of an expansion**: the first is the density times a unit four-vector and the second is the density times a unit direction, and neither carries a derivative. The limit's role is to leave them standing while it orders everything that does carry one.
 
 ## Order Two: What a First-Order Equation Does Not Have
 
@@ -202,7 +202,7 @@ Order two is not a term of this equation at all: it is first order, so the quadr
 | $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | The four-velocity |
 | $\mathcal B_\Psi=\tilde U_{\Psi,\mathrm b}^{-2}$ | The boost's inverse square; the chiral link |
 | $\tilde J_\Phi=\rho\tilde V_\Phi$ | The current, exact |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\hat s$, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin, exact |
+| $\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\hat s$, $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | The spin, exact |
 | $\epsilon=1/(k_{\Phi}L)$ | The parameter; one power per derivative of a slow quantity |
 | $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi r/(2mr)$ | The scalar quantum potential |
 

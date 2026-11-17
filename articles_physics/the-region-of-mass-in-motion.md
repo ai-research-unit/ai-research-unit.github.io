@@ -608,7 +608,7 @@ which is the material sector minus its two walls: the rest point $\vec p=0$ and 
 
 **The chart was checked on a hundred random real pairs $(E,\vec p)$.** The membership rule agreed with the two predicates on all hundred, and the two walls were the only failures.
 
-**The region is not a causal class.** It contains the timelike momenta $\lvert\vec p\rvert<\lvert E\rvert/c$ and the spacelike momenta $\lvert\vec p\rvert>\lvert E\rvert/c$, and they differ only in the sign of $N$. The name *mass in motion* describes the first; the second is in the same region, with an imaginary modulus.
+**The region is not a causal class.** It contains the timelike momenta $\lvert\vec p\rvert<\lvert E\rvert/c$ and the spacelike momenta $\lvert\vec p\rvert>\lvert E\rvert/c$, and they differ only in the sign of $N$. The name *mass in motion* describes the first; the second is in the same region, with an imaginary mass, $mc=\sqrt{-N}$, and a real polar scale $r=\lvert N\rvert^{1/2}$, which on that branch is a proper length and not a mass.
 
 ### The Doppler Pair
 
@@ -638,11 +638,13 @@ $$
 
 **The sign of $N$ separates the two branches of the region on the material sector.**
 
-| branch | condition | eigenvalues | modulus | reading |
+| branch | condition | eigenvalues | mass $mc=\sqrt{-N}$ | reading |
 | --- | --- | --- | --- | --- |
-| timelike | $\lvert\vec p\rvert<\lvert E\rvert/c$ | both on the same imaginary half | real $m>0$ | a massive particle in motion |
-| light | $\lvert\vec p\rvert=\lvert E\rvert/c$ | one eigenvalue zero | $m=0$ | the wall, not the region |
-| spacelike | $\lvert\vec p\rvert>\lvert E\rvert/c$ | on opposite imaginary halves | imaginary | a spacelike momentum |
+| timelike | $\lvert\vec p\rvert<\lvert E\rvert/c$ | both on the same imaginary half | real $mc>0$ | a massive particle in motion |
+| light | $\lvert\vec p\rvert=\lvert E\rvert/c$ | one eigenvalue zero | $mc=0$ | the wall, not the region |
+| spacelike | $\lvert\vec p\rvert>\lvert E\rvert/c$ | on opposite imaginary halves | imaginary $mc$ | a spacelike momentum |
+
+**The polar modulus is a different letter.** $\Rho=\sqrt N$ is real and positive on the spacelike branch, where $r=\lvert N\rvert^{1/2}$ is a proper length; on the timelike branch $\Rho=imc$ is purely imaginary and $r=mc$. The mass column above is $mc=\sqrt{-N}$, which is the reading the causal sign gives and not the modulus of the polar word.
 
 **The two branches are the same spectral type.** Both have $N\neq0$ and $B^{2}\neq0$, both have two distinct eigenvalues, and both admit the two-term writing. The difference is the position of the eigenvalues on the imaginary axis and the sign of $N$.
 
@@ -925,7 +927,7 @@ which is non-zero in general. So the mass of a spinor field is in the sum and in
 
 **The two eigenvalues are not two energies.** Their sum is twice the energy and their product is minus the mass squared; each of them separately is a frame-dependent null frequency with no independent meaning.
 
-**The region contains the spacelike branch.** The name describes the timelike branch; a spacelike momentum is in the same region and has an imaginary modulus. The region is a spectral type, and the causal class is a second invariant read from the same element.
+**The region contains the spacelike branch.** The name describes the timelike branch; a spacelike momentum is in the same region and has an imaginary mass, $mc=\sqrt{-N}$. The region is a spectral type, and the causal class is a second invariant read from the same element.
 
 **The spinor reading is algebraic.** The two minimal ideals are two embeddings of one module and are not the two chiralities. The reading gives the form of a two-component spinor and stops there.
 

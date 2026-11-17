@@ -678,13 +678,19 @@ $$
 
 checked to $3\times10^{-15}$ on null momenta of three energies. Here $\zeta$ is a two-component column, not the root of $+1$ written $\vec\zeta$ above. The cone sees $\zeta$ only through the projector $\zeta\zeta^{\dagger}$: the rotation $\zeta\mapsto e^{i\phi}\zeta$ leaves $\tilde P_\Phi$ unchanged, so the cone holds the ray of the spinor and not its phase.
 
-**The second eigenvalue is the mass.** Off the cone the matrix has the eigenvalues $Q_t\pm iB$, whose moduli are $\frac{E}{c}\pm\lvert\vec p\rvert$ on the material slice, and their ratio is
+**The two moduli carry the energy and the mass.** Off the cone the matrix has the eigenvalues $Q_t\pm iB$, whose moduli are $\frac{E}{c}\pm\lvert\vec p\rvert$ on the material slice. Their sum is twice the energy over $c$, their product is the mass squared,
+
+$$
+\left(\frac{E}{c}+\lvert\vec p\rvert\right)\left(\frac{E}{c}-\lvert\vec p\rvert\right)=\frac{E^{2}}{c^{2}}-\lvert\vec p\rvert^{2}=m^{2}c^{2},
+$$
+
+and their ratio is
 
 $$
 \frac{E/c-\lvert\vec p\rvert}{E/c+\lvert\vec p\rvert}=e^{-2\theta_{\mathrm{rpd}}}.
 $$
 
-So the surviving eigenvalue is the energy and the vanishing one is the mass: at $\vec p=0$ the ratio is one and the two eigenvalues coincide, at $\lvert\vec p\rvert=E/c$ it is zero and one of them is gone. The rank drop is the limit of a ratio that the boost sets, not a separate condition.
+At $\vec p=0$ the ratio is one and the two moduli coincide at $mc$; at $\lvert\vec p\rvert=E/c$ it is zero and the smaller one is gone. The rank drop is the limit of a ratio that the boost sets, not a separate condition.
 
 **This is why the cone derives no spin.** A helicity is the weight of a phase under the little group, and the phase is exactly what $\tilde P_\Phi$ does not see. So the cone supplies the ray and cannot supply the weight, which is the division of labour of I.10.an read as a computation rather than as a claim.
 

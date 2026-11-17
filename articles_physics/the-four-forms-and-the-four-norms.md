@@ -108,12 +108,12 @@ $$
 
 ### The Four Norms
 
-| algebraic norm | letter | value | multiplicative | definite | vanishing set | job |
-| --- | --- | --- | --- | --- | --- | --- |
-| $\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | $P$ | $\mathbb{C}$ | no | — | the complex cone, dim $6$ | the pairing, read on the diagonal |
-| $\sum_\mu Q_\mu^{2}$ | $N$ | $\mathbb{C}$ | **yes** | — | $\mathcal N$, dim $6$ | invertibility, the reduced norm, the interval |
-| $\sum_\mu\lvert Q_\mu\rvert^{2}$ | $H$ | $\mathbb{R}$ | no | **yes** | $\{0\}$ | the topological norm, the weight |
-| $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | $\mathrm{Kr}$ | $\mathbb{R}$ | no | no | $\mathcal K$, dim $7$ | the indefinite geometry, the constraint |
+| norm | coordinates | letter | value ring | multiplicative | definite | vanishing set | job |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| the plain norm | $\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | $P$ | $\mathbb{C}$ | no | — | the complex cone, dim $6$ | the pairing, read on the diagonal |
+| the quaternionic norm | $\sum_\mu Q_\mu^{2}$ | $N$ | $\mathbb{C}$ | **yes** | — | $\mathcal N$, dim $6$ | invertibility, the reduced norm, the interval |
+| the Hermitian norm | $\sum_\mu\lvert Q_\mu\rvert^{2}$ | $H$ | $\mathbb{R}$ | no | **yes** | $\{0\}$ | the topological norm, the weight |
+| the Krein norm | $\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | $\mathrm{Kr}$ | $\mathbb{R}$ | no | no | $\mathcal K$, dim $7$ | the indefinite geometry, the constraint |
 
 **Two of the four have a property the others lack, and the two properties are different.** The quaternionic norm is the determinant of the $2\times2$ image, hence multiplicative; the Hermitian norm is a sum of four non-negative terms, hence definite. Each fails the property of the other, and one substitution each settles it:
 

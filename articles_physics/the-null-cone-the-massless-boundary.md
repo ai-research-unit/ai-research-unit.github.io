@@ -30,17 +30,23 @@ is a **complex cone of complex dimension three**: a quadric, smooth away from it
 
 ### The Real Slice
 
-The slice of the block in which the norm is the Minkowski interval is the **Hermitian** slice, $Q_t=q_t$ real and $Q_j=i q_j$ real, where
+The slice of the block in which the norm is a Minkowski interval is the **Hermitian** slice, $Q_t=q_t$ real and $Q_j=i q_j$ real, where
 
 $$
 N=\det\mathsf{M}_2(\tilde Q)=q_t^{2}-(q_x^{2}+q_y^{2}+q_z^{2}),
 $$
 
-the interval of signature $(1,3)$. Its zero set is the real light cone: three-dimensional, and with the vertex removed it has two components, the future and the past cones.
+the interval of signature $(1,3)$. This is the **informational** representative of a four-vector. The **material** representative is $\tilde P_\Phi=i\tilde P_\Psi$, and the multiplication by $i$ flips the sign of the norm:
+
+$$
+N(\tilde P_\Phi)=-N(\tilde P_\Psi)=-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2},
+$$
+
+the same sum of four squares with the time coefficient imaginary, which is the corpus's four-momentum. The two representatives have the same zero set, so the real light cone below is common to both: three-dimensional, and with the vertex removed it has two components, the future and the past cones.
 
 ### Why the Two Descriptions Differ
 
-The complex cone is one connected quadric. The real cone splits into two halves because the real form has signature $(1,3)$, and it is the *sign of the time component* that separates the halves. That sign is what "future" and "past" mean, and it is lost in the complexification.
+The complex cone is one connected quadric. The real cone splits into two halves because the real form is indefinite — the one minus is $i^{2}=-1$ on the time slot — and it is the *sign of the time component* that separates the halves. That sign is what "future" and "past" mean, and it is lost in the complexification.
 
 ## Null Directions
 
@@ -105,7 +111,7 @@ So the real sky sits inside the Klein quadric as the set of **conjugate pairs**:
 
 ### The Boundary of the Mass Shell
 
-The mass shell of a particle of mass $m$ is the hyperboloid $N=m^{2}c^{2}$ in momentum space. Its boundary in the projectivised momentum space is the null cone: as $m\to0$ the hyperboloid approaches the cone, and the projectivised hyperboloid approaches the sky.
+The mass shell of a particle of mass $m$ is the hyperboloid $N=m^{2}c^{2}$ in the Hermitian representative used in this section, and $N=-m^{2}c^{2}$ in the material representative; the sign is the representative's and the cone is common to both. Its boundary in the projectivised momentum space is the null cone: as $m\to0$ the hyperboloid approaches the cone, and the projectivised hyperboloid approaches the sky.
 
 So the sky is the boundary of every mass shell, and the statement "the massless representations are limits of the massive ones" is the statement that the boundary is where the limits live.
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The fluid of the Dirac field carries three data at each event — a density, a frame element, and a spin direction — and the frame element is what makes it a spin fluid rather than a dust.** The density is $\rho_{\mathrm{num}}$. The frame element is the boost of the polar form, whose square is the four-velocity. The spin direction is the rotor's image of the declared axis. **Two labels, one class and one member.** The class is the *spin fluid*, a medium whose velocity is not a gradient because it carries an orientation; the member this block treats is the *spin-half* one, the fluid of the Dirac field, whose spin element is $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\vec s$ and whose weight is therefore $\tfrac12$. The other sections' fluids carry no orientation, and the vector fluid's is a four-vector rather than a rotor; the phrase *spin fluid* is kept for the class wherever the general statement needs it. The current is the density times the frame element, the spin is the density times the rotor, and the angle of the word is read by neither.
+**The fluid of the Dirac field carries three data at each event — a density, a frame element, and a spin direction — and the frame element is what makes it a spin fluid rather than a dust.** The density is $\rho_{\mathrm{num}}$. The frame element is the boost of the polar form, whose square is the four-velocity. The spin direction is the rotor's image of the declared axis. **Two labels, one class and one member.** The class is the *spin fluid*, a medium whose velocity is not a gradient because it carries an orientation; the member this block treats is the *spin-half* one, the fluid of the Dirac field, whose spin element is $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\vec s$ and whose weight is therefore $\tfrac12$. The other sections' fluids carry no orientation, and the vector fluid's is a four-vector rather than a rotor; the phrase *spin fluid* is kept for the class wherever the general statement needs it. The current is the density times the frame element, the spin is the density times the rotor, and the angle of the word is read by neither.
 
 The article assembles two results that already exist and derives neither. The polar form of the Dirac equation, with its four factors, its velocity and its spin, is [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html). The split of the current into a convection part and a spin part is [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html). Both are cited at the point of use, and the displays below that repeat their formulas are quotations, marked as such.
 
@@ -60,7 +60,7 @@ The norm being $-c^{2}$ is stronger than the corresponding statement for the sca
 **The spin element is the density times $\hbar/2$ times the rotor's image of the declared axis.** The polar article proves
 
 $$
-\tilde S_{\Psi,\mathrm{sp}}=\rho\,\frac{\hbar}{2}\,i\,\vec s,
+\tilde S_{\Psi}=\rho\,\frac{\hbar}{2}\,i\,\vec s,
 \qquad
 \vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -279,7 +279,7 @@ The accounting explains why the spin-half fluid needs one more equation than the
 1. **It carries three data at each event: a density, a frame element and a spin direction.** That is the definition of a spin fluid, and the frame element is what makes it one rather than a dust.
 2. **The velocity is the frame's inverse square**, $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, and it is invertible wherever the field is non-zero — stronger than the scalar case, where the velocity is invertible only where $Q_{\mathrm{qnt}}$ vanishes.
 3. **The current reads four of the eight parameters** — the scale, the rapidity and the two angles of the direction — and reads neither the central angle nor the rotor.
-4. **The spin is the rotor's image of a declared axis**, $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.
+4. **The spin is the rotor's image of a declared axis**, $\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$. The declared axis does not survive; only its image is a property of the field.
 5. **The current splits by Gordon into convection and bound magnetisation.** The second term is conserved by antisymmetry alone, carries no total charge, and cannot be removed from the magnetic moment.
 6. **The flow is not a gradient.** The velocity has three functions of the four coordinates where a gradient supplies one, and the gap of two is exactly what the phrase *spin fluid* names.
 7. **The word carries the spin, and this is the only one of the three that does.** The scalar and Proca words have no orientation slot; the rotor is the Dirac word's fourth factor.
@@ -385,7 +385,7 @@ The scalar case is the frozen-frame sector: with no frame element there is nothi
 | $\tilde U_{\Psi,\mathrm b}$ | The boost factor of the frame |
 | $\tilde u_{\mathrm r}$ | The spatial rotor |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction, with $\vec s^{2}=-e_t$ |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}^{1/2}\frac{\hbar}{2}i\vec s$ | Spin element, Hermitian |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}^{1/2}\frac{\hbar}{2}i\vec s$ | Spin element, Hermitian |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | Number current |
 | $v_{\Phi,\mu}$ | Components of $\tilde V_\Phi$, index low |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |

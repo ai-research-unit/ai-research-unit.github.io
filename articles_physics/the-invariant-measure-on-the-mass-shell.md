@@ -158,7 +158,7 @@ $$
 =\int\frac{d^{3}p}{2E_{\vec p}}\,f(E_{\vec p},\vec p),
 $$
 
-where $p^{2}$ is the interval in the article's signature. The delta function's root contributes the factor $\frac{1}{2E}$:
+where $p^{2}=p_0^{2}-\lvert\vec p\rvert^{2}=-N$ on the material sector, the norm being the plain sum $\sum_\mu P_\mu^{2}$ under the unit metric $\delta_{\mu\nu}=(1,1,1,1)$, whose one minus on the time slot is the square of the $i$ in $P_t=iE/c$. The argument of the delta is therefore $N+m^{2}c^{2}$, and the mass shell it selects is $N=-m^{2}c^{2}$. The root contributes the factor $\frac{1}{2E}$:
 
 $$
 \delta\bigl(p^{2}-m^{2}c^{2}\bigr)=\frac{1}{2E}\Bigl[\delta\bigl(p_0-E\bigr)+\delta\bigl(p_0+E\bigr)\Bigr],

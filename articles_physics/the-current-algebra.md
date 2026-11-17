@@ -23,7 +23,7 @@ $$
 \qquad
 \tilde V_{\Phi}=ic\,\tilde U_{\Psi,\mathrm b}^{-2},
 \qquad
-\tilde S_{\Psi,\mathrm{sp}}=\rho\,\frac{\hbar}{2}\,i\,\hat s,
+\tilde S_{\Psi}=\rho\,\frac{\hbar}{2}\,i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\,\vec e_z\,\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -177,7 +177,7 @@ The derivative of the word separates into four brackets of four types, and the b
 | $\langle\tilde Q\rangle_{\natural}$, $\tilde Q^{*}$ | Quaternionic norm and star conjugation |
 | $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ | Current |
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\hat s$ | Spin element |
+| $\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\hat s$ | Spin element |
 | $\Rho=r\,e^{i\theta_{\mathrm{pha}}}$ | Modulus of the norm |
 | $\tilde\nabla_\Phi$ | Algebra's derivative, $-ie_t\partial_{r'_{t}}+\nabla$ |
 

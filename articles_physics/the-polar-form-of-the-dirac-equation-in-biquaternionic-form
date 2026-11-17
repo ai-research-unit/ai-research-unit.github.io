@@ -288,7 +288,7 @@ Nothing here denies that the standard theory has a conserved current. It says wh
 The spin is carried by the rotor, in the same way that the current is carried by the boost:
 
 $$
-\tilde S_{\Psi,\mathrm{sp}}=\rho\,\frac{\hbar}{2}\,i\,\hat s,
+\tilde S_{\Psi}=\rho\,\frac{\hbar}{2}\,i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\,\vec e_z\,\tilde u_{\mathrm r}^{\natural},
 \qquad
@@ -310,7 +310,7 @@ So the frame separates the eight parameters into two triples with a shared scale
 | observable | reads | does not read |
 | --- | --- | --- |
 | $\tilde J_{\Phi}$ | $\rho$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ | $\alpha$, $\theta_{\mathrm{phs}}$, $\vec u_{\mathrm r}$ |
-| $\tilde S_{\Psi,\mathrm{sp}}$ | $\rho$, $\theta_{\mathrm{phs}}$, $\vec u_{\mathrm r}$ | $\alpha$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
+| $\tilde S_{\Psi}$ | $\rho$, $\theta_{\mathrm{phs}}$, $\vec u_{\mathrm r}$ | $\alpha$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
 | $\langle\tilde\Xi\rangle_{\natural}$ | $\rho$, $2\alpha$ | the two frames |
 
 The angle therefore lives in exactly one place, the argument of the quaternionic norm. Nothing in the current and nothing in the spin reads it, which is why the angle can be moved between the factors of the word without consequence. That is the precise sense in which the field carries an angle no bilinear of the algebra sees.
@@ -437,7 +437,7 @@ The derivative of the word separates into four brackets: a scale term, a phase t
 
 The mass term is a frame factor, and its scale is the scalar $k_m$. In polar variables the pair reads $\tilde\Xi_{0}^{L}=-\mathcal B_{\Psi}\tilde\Xi_{0}^{R}$ with $\mathcal B_{\Psi}=\tilde U_{\Psi,\mathrm b}^{-2}$, because $k_m$ cancels against the momentum it multiplies; at rest the factor is the identity and the relation is the plain sign. The factor has unit norm, so the scalar reappears in the mass shell, $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$, which is the frame's unitarity and not a fourth equation. Both sentences are readings of the chart, and the invariant is $k_m$.
 
-The current is $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ and the spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, where $\vec e_z$ is the frame's third direction, already declared by the value test and not a new choice. The current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the angle.
+The current is $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ and the spin is $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ with $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, where $\vec e_z$ is the frame's third direction, already declared by the value test and not a new choice. The current reads the scale and the boost, the spin reads the scale and the rotor, and neither reads the angle.
 
 The word fails on the zero divisors and nowhere else, that is on the $N$-degenerate elements and on no others. Two families lie there: the parts of definite value, and the one-sided plane waves, each by the one line that a nonzero element annihilated by, or annihilating, a nonzero element is a zero divisor. This is not the nodal set: a one-sided plane wave is nowhere zero and has $N=0$ everywhere. Masslessness does not put the field on the cone, because the sum of two one-sided parts is generally a unit and the cross term carries the norm. What survives on the cone is the two-factor decomposition, not the four-factor word.
 
@@ -467,7 +467,7 @@ The word fails on the zero divisors and nowhere else, that is on the $N$-degener
 | $\tilde P_{\Phi}=imc\,\mathcal B_{\Psi}$, $\tilde K_{\Phi}=\tilde P_{\Phi}/\hbar=\tilde\nabla_\Phi\alpha$ | Four-momentum and four-wavevector; $\tilde K_{\Phi}\tilde K_{\Phi}^{\natural}=-k_m^{2}$ |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, $\hat s^{2}=-e_t$ | Spin direction |
 | $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ | Current |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element |
+| $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element |
 | $i\tilde\Xi\tilde\Xi^{*}=\rho(i\cosh\theta_{\mathrm{rpd}}e_t-\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b})$ | The bilinear that is the mirror of the current |
 | $N(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ | Norm; zero exactly on the zero divisors |
 

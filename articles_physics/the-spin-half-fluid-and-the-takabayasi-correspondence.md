@@ -58,7 +58,7 @@ $$
 
 **Two of the rows carry a unit as well as a comparison, and the momentum row is one of them.** Takabayasi defines $k_\mu=p_\mu/(mc)$, a momentum divided by a mass, so his $k_\mu$ is dimensionless. The word's momentum is the phase gradient, an inverse length. The ratio between them is the mass wave number $k_m=mc/\hbar$, so the row reads $k_\mu=\tilde K_\mu/k_m$ and a table that equates the two loses the $\hbar$. His units also set $c=1$, which is why his $v_\mu$ is $\tilde V_{\Phi}/c$ and his $\rho$ is the corpus's $\rho_{\mathrm{num}}$; with $c$ carried, the velocity's norm is $c^{2}$ in the word and $1$ in his display.
 
-**The first three rows are identities and they are the corpus's own statements.** The density of the word is $\rho_{\mathrm{num}}=r^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi,\mathrm{sp}}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
+**The first three rows are identities and they are the corpus's own statements.** The density of the word is $\rho_{\mathrm{num}}=r^{2}$, read from the scale. The four-velocity is $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}=\gamma(ic\,e_t+\vec v)$, read from the boost, with $\langle\tilde V_{\Phi}\rangle_{\natural}=-c^{2}$ for every field. The spin is $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ with $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, read from the rotor. These are not correspondences of formulas; they are the same three objects named twice.
 
 ### Why the count forces the fifth row
 
@@ -172,7 +172,7 @@ while its particle density is $\rho$, and the two differ by the factor $\cos\the
 
 **A plane wave is the case where they agree in magnitude.** $\Omega_{\mathrm{ps}}$ vanishes for a free plane wave, and the reason is exact rather than numerical: the two chiral halves of a plane-wave spinor differ by the Hermitian factor $\vec\sigma\cdot\vec p$, so the two terms of the pseudoscalar cancel. Checked on eight plane waves, four momenta and both spins, to $10^{-16}$. So $\theta$ is $0$ for a particle and a half turn for an antiparticle, and $\lvert\cos\theta\rvert=1$ either way. A free plane wave is a fluid element whose mass density and particle density are one number, up to the sign that carries its charge content.
 
-**Away from it they differ, and the difference is a mass defect.** A two-mode superposition gives $\cos\theta=0.9986$, $0.9739$ and $0.8777$ at three events of one field, and a particle–antiparticle superposition gives $0.045$ and $0.037$ at two events of another. Each particle then contributes $mc^{2}\cos\theta$ to the mass term instead of $mc^{2}$, so the fluid carries a defect $mc^{2}(1-\cos\theta)$ per particle: between $0.0014$ and $0.12$ in the first field and about $0.95$ in the second. **Whether the defect is to be called an internal energy is a reading**; what is computed is $\cos\theta$. The reading is that the fluid has one thermodynamic function per particle, $mc^{2}(\cos\theta-1)$, which is the function the block's table records as "none". The table's *none* is right about the pressure: [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) says in the same place that the fluid's data do not determine its stress. It is silent about the mass.
+**Away from it they differ, and the difference is a mass defect.** A two-mode superposition gives $\cos\theta=0.9986$, $0.9739$ and $0.8777$ at three events of one field, and a particle–antiparticle superposition gives $0.045$ and $0.037$ at two events of another. Each particle then contributes $mc^{2}\cos\theta$ to the mass term instead of $mc^{2}$, so the fluid carries a defect $mc^{2}(1-\cos\theta)$ per particle: between $0.0014$ and $0.12$ in the first field and about $0.95$ in the second. **Whether the defect is to be called an internal energy is a reading**; what is computed is $\cos\theta$. The reading is that the fluid has one thermodynamic function per particle, $mc^{2}(\cos\theta-1)$, which is the function the block's table records as "none". The table's *none* is right about the shape of the stress: [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) says in the same place that the fluid's data do not determine its stress. It is silent about the mass, and it is silent about the trace, which the last subsection of this section computes.
 
 **The sign of the mass density is the particle content, and charge conjugation flips it while leaving the density alone.** An antiparticle-dominated field has $\Omega<0$ with $\rho>0$; two antiparticle modes give $\cos\theta=-0.9987$. Charge conjugation sends $\Omega\to-\Omega$ and leaves $\Omega_{\mathrm{ps}}$, so $\cos\theta\to-\cos\theta$ and $\sin\theta\to+\sin\theta$. That is $\theta\to\pi-\theta$ and not $\theta\to\theta+\pi$. Checked on both superpositions: the cosines are equal and opposite to the last digit, the sines agree to $10^{-17}$, and the alternative $\theta+\pi$ misses by $2.0$ and $0.09$. The energy reading of the paragraph above is therefore confined to the particle sector; on the antiparticle side the sign of $\Omega$ is a charge label and not an energy.
 
@@ -194,7 +194,41 @@ with $u$ the Eckart velocity, a unit timelike vector, and $\epsilon$ the energy 
 
 **This is where his reading of $\theta$ becomes a fluid statement.** He says that the angle measures the disparity between the velocity and the momentum, and his own stress says the same in the other vocabulary: the particle part of $L_{\mu\nu}$ is $mc^{2}\rho k_\mu v_\nu$, whose momentum density lies along $k$ and whose particle flux lies along $v$, so the two are parallel exactly when $k$ is. When they are parallel the transport term is a transport along the flow and there is nothing left to carry; when they are not, the momentum density and the particle flux point along different directions, and the difference has to appear as a flux in the fluid's own rest frame. **The identification of the disparity with $\theta$ is his and is quoted; what is computed here is that the two families separate the same way.**
 
-**What is established and what is read.** Established: that $\rho$ is the current's modulus and that $\Omega=\rho\cos\theta$; that $\lvert\cos\theta\rvert=1$ for a free plane wave and falls below it for superpositions, with the values quoted; that charge conjugation sends $\theta\to\pi-\theta$; that the Eckart energy flux vanishes for a plane wave and for two waves of one momentum, and does not for the superpositions. Read: that the defect is an internal energy; that the disparity of momentum and velocity is the angle itself.
+### The trace and the pressure
+
+**The stress has a fixed trace, and that trace is his mass term.** Computed on the symmetrised canonical tensor, the trace is the scalar bilinear,
+
+$$
+T^{\mu}{}_{\mu}=mc^{2}\Omega=mc^{2}\rho\cos\theta ,
+$$
+
+the improvement that symmetrises the tensor being a divergence whose own trace vanishes. The identity is asserted of the corpus's own tensor: his $L_{\mu\nu}$ is a different arrangement of the same bilinears, and this article does not recompute it. The arithmetic is in [The Spin-Half Energy-Momentum Tensor](the-spin-half-energy-momentum-tensor.html): twenty-one events, largest deviation $2.7\times10^{-15}$. The identity joins the two objects that his formulation keeps apart — the mass term of the Lagrangian and the trace part of the stress — and says they are one number.
+
+**So the equation of state has one line, and it is not the pressure.** In the flow's frame the trace is $\epsilon-3p$, hence
+
+$$
+p=\tfrac13\bigl(\epsilon-mc^{2}\rho\cos\theta\bigr).
+$$
+
+The isotropic part is a function of the state, since $\epsilon$ and $\cos\theta$ are. The deviatoric part is not, and the next computation shows by how much it is not.
+
+**At fixed density and fixed angle the rest of the stress is not fixed.** Two positive-energy modes, the first at momentum $(0.7,0.3,0)$ and the second at $(-\lambda,0.4,0.2)$, both of amplitude one, at one event, with $m=1$ and $\pi^{j}{}_{k}$ the traceless part of the spatial block:
+
+| $\lambda$ | $\rho$ | $\cos\theta$ | $\epsilon/\rho$ | $p/\rho$ | $\lVert\pi\rVert/\rho$ |
+| --- | --- | --- | --- | --- | --- |
+| 0.2 | 4.1355 | 0.99823 | 1.20121 | 0.06766 | 0.16573 |
+| 0.6 | 4.1292 | 0.99880 | 1.42017 | 0.14046 | 0.34405 |
+| 1.0 | 4.1204 | 0.99948 | 1.70057 | 0.23370 | 0.57244 |
+| 1.6 | 4.1087 | 0.99999 | 2.18642 | 0.39548 | 0.96872 |
+| 2.4 | 4.0998 | 0.99948 | 2.89036 | 0.63029 | 1.54390 |
+
+**The columns separate cleanly.** The density moves by under one percent and the cosine by two tenths of a percent, so the state is the same state in every row. The energy density per particle more than doubles, the pressure grows by a factor nine, and the shear by a factor nine. The trace is not a separate column: $\epsilon/\rho-3p/\rho$ equals $\cos\theta$ in every row, to the five digits shown.
+
+**The missing datum is a derivative, not a value.** What separates the rows is the spread of the momentum about its mean, and the spread is the dispersion of the phase gradient, not the gradient. The word holds eight numbers at an event and the phase gradient contributes one four-vector among them; the dispersion contributes nothing. So no function of the fluid's variables can supply the pressure, and a transport equation is needed for the spread. That is the information-count form of the non-closure this article records in *The Four Brackets and the Non-Closure*: the algebra gives the mean of the connection and not its dispersion, which is why Takabayasi must impose (II) and why the choice of a closure is not unique.
+
+**This is the answer to the block's *none*.** The block's table records the equation of state as *none*, and the reading is right about the tensor and wrong about its trace. The trace is one line; the deviation from isotropy is undetermined. A fluid with a known trace and an unknown shear is a fluid with a bulk equation of state and no shear prediction.
+
+**What is established and what is read.** Established: that $\rho$ is the current's modulus and that $\Omega=\rho\cos\theta$; that $\lvert\cos\theta\rvert=1$ for a free plane wave and falls below it for superpositions, with the values quoted; that charge conjugation sends $\theta\to\pi-\theta$; that the Eckart energy flux vanishes for a plane wave and for two waves of one momentum, and does not for the superpositions; that the trace of the stress is $mc^{2}\rho\cos\theta$, so that $p=\tfrac13(\epsilon-mc^{2}\rho\cos\theta)$; that at fixed density and fixed angle the energy density runs over a factor $2.4$ and the shear over a factor $9$. Read: that the defect is an internal energy; that the disparity of momentum and velocity is the angle itself; that the missing datum for the pressure is the dispersion of the phase gradient.
 
 ## What the Correspondence Adds and What It Does Not
 
@@ -211,6 +245,8 @@ with $u$ the Eckart velocity, a unit timelike vector, and $\epsilon$ the energy 
 **The precise domain.** His variables need $\rho\neq0$; the word needs the element to be an invertible element, and for the spinor field the second condition is strictly stronger. The one-sided waves are the fields that show the difference.
 
 **The mass term's frame dependence.** The scalar coupling is a frame factor, and the factor is the same one the velocity carries.
+
+**The equation of state, and its one line.** A general fluid needs a function of two variables; here the trace of the stress is the mass term, $T^{\mu}{}_{\mu}=mc^{2}\rho\cos\theta$, so the pressure is $\tfrac13(\epsilon-mc^{2}\rho\cos\theta)$ and the isotropic part follows from the state. What is not fixed is the shear, and the fixed-density table shows it running over a factor nine while the state stands still. The corpus's own statement of the identity is in [The Spin-Half Energy-Momentum Tensor](the-spin-half-energy-momentum-tensor.html), and it is proved there for the corpus's tensor and not for his.
 
 **The fluid's two densities, and the frame its velocity belongs to.** His density is the current's modulus, so his subsidiary conditions are met by construction, and the mass term couples to the scalar rather than to that density: the fluid carries a particle density and a mass density, and their ratio is the angle. His velocity is the current's direction, which is the Eckart frame, and the energy flux that this choice leaves in the fluid's rest frame is what his reading of the stress remainder calls heat flow.
 
@@ -246,7 +282,7 @@ The current reads the density and the boost; the spin reads the density and the 
 
 The domain is where the word is smaller. His variables need a non-zero density; the word needs the element to be an invertible element. The one-sided plane waves are nowhere zero, have a positive density, and have no word. That is the difference the comparison finds, and it is a finding about the word.
 
-The two densities are the by-product. His $\rho$ is the current's modulus, so the normalisation of his velocity is satisfied by construction, and the density that the mass term couples to is the scalar $\Omega=\rho\cos\theta$ and not $\rho$. A free plane wave has the two equal in magnitude; a superposition does not, and the defect $mc^{2}(1-\cos\theta)$ per particle is the one function of the particle's internal state that the fluid carries — an internal energy per particle, if it is read as one. Charge conjugation flips the sign of the mass density and leaves the particle density, which makes the sign a charge label. His velocity is the current's direction, which is the Eckart frame, and the energy flux it leaves in its own rest frame — the heat flow — vanishes on a plane wave and on two waves of one momentum, and not on a superposition. That flux and the angle vanish together.
+The trace is the mass term, so the equation of state has one line: the pressure is a third of the energy density less the mass density, and the shear is left open, as the fixed-density table shows. The two densities are the by-product. His $\rho$ is the current's modulus, so the normalisation of his velocity is satisfied by construction, and the density that the mass term couples to is the scalar $\Omega=\rho\cos\theta$ and not $\rho$. A free plane wave has the two equal in magnitude; a superposition does not, and the defect $mc^{2}(1-\cos\theta)$ per particle is the one function of the particle's internal state that the fluid carries — an internal energy per particle, if it is read as one. Charge conjugation flips the sign of the mass density and leaves the particle density, which makes the sign a charge label. His velocity is the current's direction, which is the Eckart frame, and the energy flux it leaves in its own rest frame — the heat flow — vanishes on a plane wave and on two waves of one momentum, and not on a superposition. That flux and the angle vanish together.
 
 No experiment separates the two formulations. What separates them is the origin of the structure: Takabayasi constructs the spin-half fluid and the word reads it. The equation, no; the coordinates, yes.
 
@@ -266,11 +302,14 @@ No experiment separates the two formulations. What separates them is the origin 
 | $\tilde K_{\Phi}=\tilde\nabla_\Phi\theta_{\mathrm{pha}}$ | The phase gradient; the momentum in wave-number units |
 | $\tilde J_{\Phi}=\rho_{\mathrm{num}}\tilde V_{\Phi}$ | The current |
 | $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
+| $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ | The spin element |
 | $\rho$, $v_\mu$, $w_\mu$, $k_\mu$, $\theta$ | Takabayasi's density, velocity, spin, momentum and internal angle |
 | $\Omega=\bar\psi\psi$, $\Omega_{\mathrm{ps}}=i\bar\psi\gamma_5\psi$ | His scalar and pseudoscalar bilinears; $\Omega=\rho\cos\theta$ and $\Omega_{\mathrm{ps}}=\rho\sin\theta$ |
 | $j^{\mu}$ | The current, with $\rho^{2}=j_\mu j^{\mu}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}$ |
 | $k_m=mc/\hbar$ | Mass wave number; the unit that makes his $k_\mu$ dimensionless |
 | $u^{\mu}$, $q^{\mu}$, $\epsilon$ | Eckart four-velocity, heat flow, and the energy density it sees |
+| $T^{\mu}{}_{\mu}=mc^{2}\rho\cos\theta$ | Trace of the stress; the mass term |
+| $p$, $\pi^{j}{}_{k}$ | Pressure and the traceless part of the spatial block |
 | $N(\tilde\Xi)=\langle\tilde\Xi\rangle_{\natural}$ | Quaternionic norm, the determinant |
 | $c$ | Speed of light in the medium |
 

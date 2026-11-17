@@ -44,7 +44,7 @@ which says that the pressure is the excess of the density-derivative of the ener
 
 **A cold degenerate gas and a radiation gas are the two ends of the thermal range, and the form above reproduces both.**
 
-**Cold degenerate gas, non-relativistic.** With $w_{\mathrm{fl}}=K\,\rho_{\mathrm{num}}^{5/3}$ and $n_{\mathrm{num}}=\rho_{\mathrm{num}}/m$,
+**Cold degenerate gas, non-relativistic.** With $w_{\mathrm{fl}}=K\,\rho_{\mathrm{num}}^{5/3}$ and $n_{\mathrm{num}}=\rho_{\mathrm{num}}$ (at rest, where the proper density is the number density),
 
 $$
 p_{\mathrm{th}}=\rho_{\mathrm{num}}\frac{5}{3}K\rho_{\mathrm{num}}^{2/3}-K\rho_{\mathrm{num}}^{5/3}

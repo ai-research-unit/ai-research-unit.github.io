@@ -227,7 +227,7 @@ $$
 \qquad
 \tilde J_{\Phi}=\rho\tilde V_{\Phi},
 \qquad
-\tilde S_{\Psi,\mathrm{sp}}=\rho\frac{\hbar}{2}i\,\hat s,
+\tilde S_{\Psi}=\rho\frac{\hbar}{2}i\,\hat s,
 \qquad
 \hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}.
 $$
@@ -434,7 +434,7 @@ The strongest objection is that this is a reformulation. It is, and the corpus a
 | $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | Four-velocity, $\tilde V_{\Phi}\tilde V_{\Phi}^{\natural}=-c^{2}$ |
 | $\tilde J_{\Phi}=\rho\tilde V_{\Phi}$ | Current |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element |
+| $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin element |
 | $\tilde K_{\Phi}=\tilde\nabla_{\Phi}\theta_{\mathrm{pha}}$ | Momentum element: four-momentum divided by $\hbar$ |
 | $\tilde F=i\sqrt{\epsilon}(\vec E+ic\vec B)$ | Field strength element |
 | $\tilde\varsigma_{\Psi}$ | State of the informational sector, positive and of trace one |

@@ -29,6 +29,8 @@
 
 **The spatial block is recovered and not stored.** The pressure is the trace of the spatial block and it enters through the equation of state; the shear enters through the transport coefficients of a dissipative theory. Neither is a slot. That is the arrangement [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html) states for the scalar case and [Spin Conservation and the Frenkel Condition](spin-conservation-and-the-frenkel-condition.html) states as a limitation of the category.
 
+**The trace part of that block is not free, and it is the mass term.** The section *The Trace and the Pressure* computes it: $T^{\mu}{}_{\mu}=mc^{2}\Omega$, with $\Omega$ the scalar bilinear. So the equation of state has exactly one line, $p=\tfrac13(\epsilon-mc^{2}\Omega)$, and it fixes the pressure once the energy density is known; the deviatoric part stays free.
+
 ### Why the Count Is Not a Defeat
 
 **An antisymmetric part that is a total divergence carries no charge.** That is the content of the Belinfante relation: the antisymmetric part of the canonical stress equals minus one half the divergence of the spin tensor,
@@ -62,6 +64,46 @@ with $S_{\lambda\mu\nu}$ antisymmetric in its last two indices and every index l
 **The tensor's antisymmetry is the spin's, and the algebra states it without a new field.** The spin density is an antisymmetric pair of labels because it is an angular momentum density; the element that carries it is Hermitian with a vanishing scalar slot, and its three vector slots are exactly the three independent components of an antisymmetric pair constrained by the flow.
 
 **The spin's antisymmetry is why the torque is a commutator.** The connection's symmetric part cannot couple to an antisymmetric object, so the source of the spin law is built from the antisymmetric part of the connection alone. That is an algebraic statement about the index structure and it is the reason the source has the form it has.
+
+## The Trace and the Pressure
+
+### The Trace Is the Mass Density
+
+**The trace of the symmetric part is fixed by the field, and it equals the mass term.** The canonical trace is the scalar bilinear. With $(i\gamma^\mu\partial_\mu-k_m)\tilde\Xi=0$ the two terms inside the bracket of $\tfrac i2\bigl[\bar{\tilde\Xi}\gamma^\mu\partial_\mu\tilde\Xi-(\partial_\mu\bar{\tilde\Xi})\gamma^\mu\tilde\Xi\bigr]$ each gives $-ik_m\Omega$, so the bracket times $\tfrac i2$ is $k_m\Omega$. The Belinfante improvement leaves that alone, because the improvement is a divergence antisymmetric in its last two indices and its own trace vanishes. With $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ and $\hbar c\,k_m=mc^{2}$,
+
+$$
+T^{\mu}{}_{\mu}=mc^{2}\Omega .
+$$
+
+**The pressure follows from the energy density and the mass density together.** In the frame the flow defines, and in the interval signature $(+,-,-,-)$ of the corpus, $T^{0}{}_{0}=\epsilon$ and $\sum_jT^{j}{}_{j}=3p$, so the trace is $\epsilon-3p$ and
+
+$$
+p=\tfrac13\bigl(\epsilon-mc^{2}\Omega\bigr).
+$$
+
+**This is the whole equation of state the framework supplies, and it is partial.** It fixes the isotropic part of the spatial block. It says nothing about the shear, so a dissipative theory still needs its transport coefficients, and it says nothing about the pressure unless the energy density is known separately. What it adds is a constraint that a general fluid does not have: the pressure is not independent of the energy density once the mass density is given.
+
+**Three consequences follow at once.** At $m=0$ the scalar bilinear vanishes identically and the trace is zero, so $\epsilon=3p$: the field is conformal at zero mass, and at $m\neq0$ the trace vanishes only where the interference cancels the scalar bilinear. The sign of the trace is the particle content, because $\Omega$ changes sign under charge conjugation while $\rho$ does not. And the magnitude is bounded by $mc^{2}\rho$, since $\lvert\Omega\rvert=\rho\lvert\cos\theta\rvert\le\rho$.
+
+*Check.* On the symmetrised canonical tensor, seven fields at three events each — three plane waves, one per spin and one at rest, two waves of one momentum with opposite spins, two positive-energy modes, a particle–antiparticle pair, and two negative-energy modes, twenty-one events in all — with $m=1$ and each spinor normalised to $\bar u\,u=2m$, the largest $\lvert T^{\mu}{}_{\mu}-\Omega\rvert$ is $2.7\times10^{-15}$ and the largest $\lvert\epsilon-3p-T^{\mu}{}_{\mu}\rvert$ is $4.7\times10^{-15}$. The two negative-energy modes have $\Omega<0$ and a trace of the same sign and the same value, so the sign statement is checked and not only asserted.
+
+### One Mode Is a Dust
+
+**The symmetric part of a single plane wave is a pressureless dust.** For one mode the tensor is $\tfrac12(j^{\mu}P^{\nu}+j^{\nu}P^{\mu})$ with $j$ the current and $P$ the momentum. For $m\neq0$ the current lies along the momentum, $j^{\mu}=(\Omega/m)P^{\mu}$, so
+
+$$
+T^{\mu\nu}=mc^{2}\Omega\,u^{\mu}u^{\nu},\qquad u^{\mu}=\frac{P^{\mu}}{mc},
+$$
+
+with $u$ the unit flow. Its rest frame is the mode's own frame, and there $\epsilon=mc^{2}\Omega$, $p=0$, and every $T^{j}{}_{k}$ vanishes.
+
+*Check.* Boosted to the rest frame of its own current, the spatial block has largest entry $8\times10^{-16}$, for either spin, for the rest frame and for two waves of one momentum, at three events of each field. Two waves of one momentum and opposite spins give $\epsilon=4$ at $m=1$ with $\bar u\,u=2m$ per wave, $p=0$ and shear $0$: the energies add and no stress appears. So the spin does not enter the symmetric part at fixed momentum, and the dust character belongs to the momentum alone.
+
+**A massless mode is a null dust.** At $m=0$ the trace identity forces $\Omega=0$ and the single-mode tensor is $\epsilon k^{\mu}k^{\nu}$ with $k$ null. In the frame of the mode the spatial block is $\epsilon n_jn_k$: one eigenvalue $\epsilon$ along the direction of motion and two zero across it. The isotropised pressure is $\epsilon/3$, so the radiation equation of state is what tracelessness gives; the stress is nevertheless uniaxial, and the equation of state does not make it isotropic.
+
+*Check.* At $m=10^{-8}$ with the momentum $(0.9,-0.4,0.3)$: $P^{\mu}P_{\mu}=2\times10^{-16}$, $T^{j}{}_{j}/\epsilon=1.000000$, the three eigenvalues of $T^{j}{}_{k}$ are $(0,0,1)\epsilon$, and the trace is $3\times10^{-16}\epsilon$, for either spin.
+
+**What the two results say together is that the pressure of a massive field is interference.** A massive single mode carries none, and a massless one carries a third of its energy density by tracelessness. So on the massive side every pressure is a property of the superposition and not of the particles, and none of it comes from the spin. That is the precise sense of the count's remark that the pressure enters through the equation of state: the equation is the trace identity, the identity is the mass term, and the mass term is the scalar bilinear.
 
 ## The Spin Tensor as One Element
 
@@ -107,7 +149,7 @@ which is $\partial_t w_{\mathrm{fl}}+\nabla\cdot\vec S_{\mathrm P}=0$ in the fla
 **The divergence of the spin current is a torque, and the torque is the rotor connection contracted with the spin.** With the rotor's logarithmic derivative $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$, a real vector part,
 
 $$
-\sum_\eta\partial_\eta S_{\Psi,\mathrm{sp},\eta\lambda\nu}=\tau_{\lambda\nu},
+\sum_\eta\partial_\eta S_{\Psi,\eta,\lambda\nu}=\tau_{\lambda\nu},
 \qquad
 \tau_{\lambda\nu}=\tfrac12\Bigl(\sum_\rho\varepsilon_\rho\,\Omega_{\lambda\rho}S_{\rho\nu}-\sum_\rho\varepsilon_\rho\,\Omega_{\nu\rho}S_{\rho\lambda}\Bigr).
 $$
@@ -140,9 +182,9 @@ with the second term a total divergence by construction and $\Sigma_{\mu\nu}$ th
 
 ## The Frenkel Condition as the Scalar Part's Vanishing
 
-**The Frenkel condition says the spin has no component along the flow, and in the element it says the scalar slot is zero.** With the spin element $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ and $\hat s$ a real vector, the scalar part is $\rho\tfrac{\hbar}{2}i\,\hat s_t$, which vanishes exactly when $\hat s$ has no temporal component.
+**The Frenkel condition says the spin has no component along the flow, and in the element it says the scalar slot is zero.** With the spin element $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ and $\hat s$ a real vector, the scalar part is $\rho\tfrac{\hbar}{2}i\,\hat s_t$, which vanishes exactly when $\hat s$ has no temporal component.
 
-*Proposition.* $\mathrm{Sc}\,\tilde S_{\Psi,\mathrm{sp}}=0$ if and only if $\sum_\nu S_{\mu\nu}v_{\Phi,\nu}=0$ in the flow's rest frame.
+*Proposition.* $\mathrm{Sc}\,\tilde S_{\Psi}=0$ if and only if $\sum_\nu S_{\mu\nu}v_{\Phi,\nu}=0$ in the flow's rest frame.
 
 *Proof.* In the rest frame $v_{\Phi}=e_t$, and the spin tensor of a spin vector $\hat s$ is $S_{\mu\nu}=\sum_{\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}v_{\Phi,\rho}\hat s_{\sigma}$, which has $S_{0i}=0$ exactly when $\hat s$ is spatial. The element's scalar part is the temporal component of $\hat s$, so the two conditions are the same condition.
 
@@ -152,11 +194,11 @@ with the second term a total divergence by construction and $\Sigma_{\mu\nu}$ th
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That a general stress has sixteen components, the symmetric part ten and the antisymmetric six, against the element's eight and its four usable slots. That the antisymmetric part of the canonical stress is the divergence of the spin tensor and therefore carries no total charge. That the spin tensor's twenty-four components are cut to twelve by the Frenkel condition and to three at an event. That the spin law is the rotor's equation in components, with a torque that vanishes when the connection is along the spin, checked in three configurations. That the spin element's scalar slot vanishes exactly when the Frenkel condition holds. That the Gordon spin term is a bound current, non-zero where the spin density varies.
+**Established.** That a general stress has sixteen components, the symmetric part ten and the antisymmetric six, against the element's eight and its four usable slots. That the antisymmetric part of the canonical stress is the divergence of the spin tensor and therefore carries no total charge. That the spin tensor's twenty-four components are cut to twelve by the Frenkel condition and to three at an event. That the spin law is the rotor's equation in components, with a torque that vanishes when the connection is along the spin, checked in three configurations. That the spin element's scalar slot vanishes exactly when the Frenkel condition holds. That the Gordon spin term is a bound current, non-zero where the spin density varies. That the trace of the symmetric part is $mc^{2}\Omega$, so that the pressure is $\tfrac13(\epsilon-mc^{2}\Omega)$, checked on twenty-one events to $5\times10^{-15}$. That a single massive mode's symmetric part is a dust whose rest-frame spatial block vanishes, and that a massless mode's is a null dust with eigenvalues $(0,0,1)\epsilon$.
 
-**Interpretation.** That the symmetric part is the fluid's energy–momentum and the antisymmetric part its spin. That the spin term of the Gordon split is a magnetisation rather than a transport. That the vorticity and the spin's variation are two faces of the same connection. Each is argued where it is used and none is proved here.
+**Interpretation.** That the symmetric part is the fluid's energy–momentum and the antisymmetric part its spin. That the spin term of the Gordon split is a magnetisation rather than a transport. That the vorticity and the spin's variation are two faces of the same connection. That the pressure of the fluid is interference rather than a property of the particles, since a massive single mode carries none. Each is argued where it is used and none is proved here.
 
-**Not claimed.** It is not claimed that the sixteen-component tensor can be written as a small collection of elements; the corpus records the question as open and this article does not close it. It is not claimed that the Belinfante relation is framework content; it is imported with its convention. It is not claimed that the spin's magnitude is dynamical; it is a normalisation.
+**Not claimed.** It is not claimed that the sixteen-component tensor can be written as a small collection of elements; the corpus records the question as open and this article does not close it. It is not claimed that the Belinfante relation is framework content; it is imported with its convention. It is not claimed that the spin's magnitude is dynamical; it is a normalisation. It is not claimed that the trace identity is framework content: it is the standard Dirac identity, its warrant is the field equation, and what is added here is the reading of it as an equation of state and the arithmetic that supports the reading. It is not claimed that the trace identity fixes the whole stress: the deviatoric part is a function of the spread of the momentum and not of the fluid's variables, as [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) tabulates.
 
 ## Summary
 
@@ -168,6 +210,8 @@ The spin tensor's twenty-four components are cut to twelve by the Frenkel condit
 
 The pair of laws is the rotor's equation read twice: the energy–momentum law constrains the symmetric part's divergence, and the spin law equates the spin current's divergence to a torque built from the rotor connection and the spin. The torque vanishes exactly when the connection turns about the spin's own axis, which is the free rotor's conservation law.
 
+The trace of the symmetric part is the mass term, $T^{\mu}{}_{\mu}=mc^{2}\Omega$, so the pressure is $\tfrac13(\epsilon-mc^{2}\Omega)$: the equation of state is one line, it fixes the isotropic part, and it leaves the shear to the transport coefficients. A single massive mode is a pressureless dust and a massless one a null dust, so the part of the pressure that varies from event to event is interference and not spin.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -175,14 +219,18 @@ The pair of laws is the rotor's equation read twice: the energy–momentum law c
 | $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$ | Energy–momentum element: energy density and flux |
 | $T_{\mu\nu}$, $T_{[\mu\nu]}$ | Stress and its antisymmetric part |
 | $S_{\lambda\mu\nu}$ | Spin current, antisymmetric in the last two indices |
-| $S_{\Psi,\mathrm{sp},\eta,\lambda\nu}$ | Its components in the corpus's letters |
-| $\tilde S_{\Psi,\mathrm{sp}}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin density element |
+| $S_{\Psi,\eta,\lambda\nu}$ | Its components in the corpus's letters |
+| $\tilde S_{\Psi}=\rho\tfrac{\hbar}{2}i\hat s$ | Spin density element |
 | $\hat s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | Spin direction |
 | $\tilde u_{\mathrm r}^{-1}\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta$ | Rotor connection |
 | $\tau_{\lambda\nu}$ | Torque, the spin law's source |
 | $\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu}$ | Vorticity 2-form |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\rho=r^{2}$ | Density |
+| $\Omega=\bar{\tilde\Xi}\tilde\Xi=\rho\cos\theta$ | Scalar bilinear, the mass density's number |
+| $\theta$ | Internal angle between mass density and particle density |
+| $\epsilon$, $p$ | Energy density ($w_{\mathrm{fl}}$ in the flow's frame) and pressure |
+| $P^{\mu}$, $u^{\mu}=P^{\mu}/(mc)$ | Momentum of a single mode and its unit flow |
 
 ## Further Reading
 

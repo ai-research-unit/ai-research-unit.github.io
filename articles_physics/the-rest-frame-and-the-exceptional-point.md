@@ -348,7 +348,7 @@ $$
 \lambda_+=\lambda_-=i\,mc .
 $$
 
-**What survives is a scale and a phase, and neither carries an orientation.** The modulus is the mass; the phase is the causal label, fixed to $i$ on the positive-energy timelike slice. The element acts as one number on every module, so a state module is multiplied by that number uniformly: the rest frame carries the rest frequency and no direction.
+**What survives is a scale and a phase, and neither carries an orientation.** The scale is the mass; the phase is the causal label, fixed to $i$ on the positive-energy timelike slice. The element acts as one number on every module, so a state module is multiplied by that number uniformly: the rest frame carries the rest frequency and no direction.
 
 **The frame is therefore not a function of the momentum.** A momentum at rest does not select a frame; every frame is equally available, and the two-term writing is a choice made from outside. This is stronger than the statement that the writing is not unique: the operator has no preferred basis at all, because it has all of them.
 
