@@ -73,11 +73,11 @@
 <h2 id="introduction">Introduction</h2>
 <p><strong>The claim.</strong> One form, $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2$, measures the interval on the material sector and the impurity of a state on the informational one. It is the same algebraic expression on both, it is real on both once a sector is fixed, and it is indefinite on both. What changes between the sectors is not the expression. It is the real four-plane it is read on, and that plane is fixed by which coefficient carries the one $i$.</p>
 <p><strong>The symbol.</strong> The corpus writes the quaternionic norm $\langle\cdot\rangle_{\natural}$; this article writes $N$ for it, as the physics articles do, and the two names are one object. $N$ is the norm before any representation is chosen, and it is read in $\langle\cdot\rangle_{\natural}$ and not in a word that belongs to an array.</p>
-<p><strong>What it measures on a state.</strong> $N=\tfrac14-\lvert\vec s_\Psi\rvert^{2}$ on the normalised slice. It is zero exactly on the pure states, it is largest at the maximally mixed state, and the entropy of the state is a function of it and of nothing else. High $N$ means low information: the quantity is a deficit and not a content.</p>
-<p><strong>Why it is not a probability.</strong> $N$ vanishes on nonzero elements and changes sign on them. A probability needs positivity, and $N$ has none. The positive-definite form of the sector is the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, with $\mathcal H=\sum_\mu\lvert Q_\mu\rvert^{2}$ on the real coefficients, and it is the one that carries probabilities. On the slice the two are affinely related, so no number is lost by using either, but the names must not be exchanged.</p>
-<p><strong>Why it is the ledger entry.</strong> $N$ multiplies under composition, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and it is unchanged by congruence with an element of norm one. The sum of squares does neither. Multiplicativity is the property that separates the norm from the doubled scalar part, and it is the whole reason the conservation law is written with $N$.</p>
-<p><strong>What this article is.</strong> An internal consolidation of the informational side of $N$: the form and the two sectors, the state slice, the four readings the corpus gives of it, the multiplicativity that makes it a ledger entry, the duality with mass, two traps, and a statement of what is forced by the algebra and what is a dictionary. It is an audit, and the corpus is unchanged by it.</p>
-<p><strong>What was recomputed for it, and what passed.</strong> The multiplicativity $N(AB)=N(A)N(B)$ on two hundred random biquaternions, zero failures, worst error $7.1\times10^{-14}$. The invariance $N(U\tilde QU^{*})=N(\tilde Q)$ under $UU^{*}=e_t$ on one hundred draws, zero failures, worst error $7.7\times10^{-13}$. The identity $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ on two hundred draws, zero failures, worst error $2.0\times10^{-15}$. The state-slice table at four radii, against the closed forms for the linear entropy, the spectral entropy and the concurrence, exact. The multiplicativity failure of $\mathcal H$, two hundred of two hundred, worst error $186$.</p>
+<p><strong>What it measures on a state.</strong> $N=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)$ on the normalised slice. It is zero exactly on the pure states, it is largest at the maximally mixed state, and the entropy of the state is a function of it and of nothing else. High $N$ means low information: the quantity is a deficit and not a content.</p>
+<p><strong>Why it is not a probability.</strong> $N$ vanishes on nonzero elements and changes sign on them. A probability needs positivity, and $N$ has none. The positive-definite form of the sector is the Hermitian form $\langle\cdot,\cdot\rangle_{*}$, with $\mathcal H=\sum_\mu\lvert Q_\mu\rvert^{2}$ the sum of the squared moduli of the four coefficients, and it is the one that carries probabilities. On the slice the two are affinely related, so no number is lost by using either, but the names must not be exchanged.</p>
+<p><strong>Why it is the ledger entry.</strong> $N$ multiplies under composition, $\langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural}$, and it is unchanged by congruence with an element of norm one. The Hermitian form $\mathcal H$ does neither. Multiplicativity is the property that separates the norm from the doubled scalar part, and it is the whole reason the conservation law is written with $N$.</p>
+<p><strong>What this article is.</strong> An internal consolidation of the informational side of $N$: the form and the two sectors, the state slice, the picture of that slice inside the cone, the boundary both sectors share, the thermal path across it, four remarks on what that reading cannot supply, the four readings the corpus gives of it, the multiplicativity that makes it a ledger entry, the duality with mass, two traps, a statement of what is forced by the algebra and what is a dictionary, and an inventory of the articles the subject still owes. It is an audit, and the corpus is unchanged by it.</p>
+<p><strong>What was recomputed for it, and what passed.</strong> The multiplicativity $N(AB)=N(A)N(B)$ on two hundred random biquaternions, zero failures, worst error $7.1\times10^{-14}$. The invariance $N(U\tilde QU^{*})=N(\tilde Q)$ under $U^{*}U=e_t$ on one hundred draws, zero failures, worst error $7.7\times10^{-13}$. The identity $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$ on two hundred draws, zero failures, worst error $2.0\times10^{-15}$. The state-slice table at four radii, against the closed forms for the linear entropy, the spectral entropy and the concurrence, exact. The multiplicativity failure of $\mathcal H$, two hundred of two hundred, worst error $186$.</p>
 <h2 id="the-form-and-the-mirror">The Form, and the Mirror</h2>
 <h3 id="the-informational-sector">The Informational Sector</h3>
 <p><strong>An element of $\mathbb{B}_{\Psi}$ is Hermitian: its scalar part is real and its vector part is purely imaginary.</strong> Write</p>
@@ -105,7 +105,7 @@ $$</p>
 <p>The inertia there is $(3,1)$.</p>
 <p><strong>The minus belongs to the coordinate and not to a metric.</strong> There is one metric in the series, $\delta_{\mu\nu}=(1,1,1,1)$ with four coefficients $+1$, and the expression $\sum_\mu Q_\mu^{2}$ is the same on both sectors. What differs is which coefficient carries the $i$: the scalar one on the material side, the vector ones on the informational side. The corpus states the rule in <em>Frame and Metric Conventions</em>: the minus <em>is the square of the one $i$ of $Q_t=i q'_t$, which is $i^2=-1$ on the time slot</em>.</p>
 <p><strong>The word that used to name a count of signs is retired.</strong> <em>Frame and Metric Conventions</em> gives it a rule of its own, the ninth: an object with four equal coefficients has nothing to sign, the count of directions is the <strong>inertia</strong> $(n,m,r)$ of a form, and the single integer is the <strong>excess</strong> $\sigma=n-m$. A sentence that gives the metric a count has attached the count to the wrong object. This article therefore writes inertia and excess, and no other word for a count of directions.</p>
-<h3 id="the-switch-is-multiplication-by-math54">The Switch Is Multiplication by $i$</h3>
+<h3 id="the-switch-is-multiplication-by-math55">The Switch Is Multiplication by $i$</h3>
 <p><strong>The two sectors are exchanged by the central imaginary.</strong> For any element,</p>
 <p>$$
 N(i\tilde Q)=i^{2}N(\tilde Q)=-N(\tilde Q),
@@ -123,19 +123,19 @@ $$</p>
 <p><strong>The positive form is the Hermitian one.</strong> $\mathcal H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ is positive definite on the whole algebra, of inertia $(4,0)$, and it is the form that carries the Born weight. The corpus states the division of labour plainly: <em>The plain and the quaternionic forms are not positive, so neither can be carried by a positive factor at all.</em></p>
 <p><strong>On the slice the two forms differ by a constant and a sign.</strong></p>
 <p>$$
-\mathcal H=\tfrac14+\lvert\vec s_\Psi\rvert^{2},\qquad N=\tfrac14-\lvert\vec s_\Psi\rvert^{2},\qquad \mathcal H+N=\tfrac12 .
+\mathcal H=\tfrac14\bigl(1+\lvert\vec s_\Psi\rvert^{2}\bigr),\qquad N=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr),\qquad \mathcal H+N=\tfrac12 .
 $$</p>
 <p><strong>That sum is the whole content of the "two names" warning.</strong> The two forms are affinely related on the slice, so a computation may use either and be right about the number. But $\mathcal H$ rises where information rises and $N$ rises where information falls, and a sentence that swaps the names inverts the physics while keeping the arithmetic.</p>
 <h2 id="the-state-slice">The State Slice</h2>
 <p><strong>A state is a positive element whose doubled scalar part is one.</strong></p>
 <p>$$
-\tilde{Ϛ}_\Psi=\tfrac12 e_t+i\vec s_\Psi,\qquad \lvert\vec s_\Psi\rvert\le\tfrac12,\qquad 2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1 .
+\tilde{Ϛ}_\Psi=\tfrac12\bigl(e_t+i\vec s_\Psi\bigr),\qquad \lvert\vec s_\Psi\rvert\le1,\qquad 2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1 .
 $$</p>
-<p><strong>The letter is $\vec s_\Psi$ and not $\vec r$.</strong> The corpus writes the state as $\tilde{Ϛ}_\Psi=s_te_t+i\vec s_\Psi$, and that vector part is the object this section reads. The letter $r$ is already spent on the material coordinate, $\tilde R_\Phi=i r'_t e_t+\vec r_\Phi$, whose vector part is $\vec r_\Phi$ and whose bare $\vec r$ is the position in a plane wave. Two objects on one glyph is what <em>Index and Notation Conventions</em> forbids — <em>a letter that names two objects is renamed, not relabelled</em> — so the state's vector part keeps its own letter. Its magnitude runs to one half, because the state carries the factor $\tfrac12$ outside.</p>
+<p><strong>The letter is $\vec s_\Psi$, the Bloch vector, and not $\vec r$.</strong> The corpus writes the state as $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_\Psi)$ with $\lvert\vec s_\Psi\rvert\le1$, and this section reads the corpus's vector with the corpus's range: the factor $\tfrac12$ outside the bracket carries the normalisation, not the radius. The letter $r$ is already spent on the material coordinate, $\tilde R_\Phi=i r'_t e_t+\vec r_\Phi$, whose vector part is $\vec r_\Phi$ and whose bare $\vec r$ is the position in a plane wave. Two objects on one glyph is what <em>Index and Notation Conventions</em> forbids — <em>a letter that names two objects is renamed, not relabelled</em> — so the state's vector keeps its own letter, and every magnitude below is the Bloch one.</p>
 <p>The number $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi$ is the normalisation. An element is read in $\mathrm{Sc}$; the factor two is the dimension of the $2\times2$ image, where the same number is the matrix trace. The word <em>trace</em> in this series belongs to that image, and a sentence that applies it to an element has moved the factor onto the wrong object.</p>
-<p>Its two eigenvalues are $\lambda_\pm=\tfrac12\pm\lvert\vec s_\Psi\rvert$, and their product is the norm:</p>
+<p>Its two eigenvalues are $\lambda_\pm=\tfrac12\bigl(1\pm\lvert\vec s_\Psi\rvert\bigr)$, and their product is the norm:</p>
 <p>$$
-\lambda_+\lambda_-=\tfrac14-\lvert\vec s_\Psi\rvert^{2}=N(\tilde{Ϛ}_\Psi).
+\lambda_+\lambda_-=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)=N(\tilde{Ϛ}_\Psi).
 $$</p>
 <h3 id="what-the-eigenvalues-are-and-how-they-are-found">What the Eigenvalues Are, and How They Are Found</h3>
 <p><strong>An eigenvalue is a root of one quadratic, and the quadratic is the element's own.</strong> The spectral problem in this algebra is $\tilde{Ϛ}_\Psi\tilde\Xi=\lambda\tilde\Xi$ with $\tilde\Xi$ a nonzero element of the carrier $S\cong\mathbb{C}^{2}$. In the $2\times2$ image it is the ordinary eigenvalue problem of $\mathsf{M}_2(\tilde{Ϛ}_\Psi)$, whose characteristic polynomial is the one <em>Energy and Information</em> states for a general element:</p>
@@ -143,13 +143,13 @@ $$</p>
 \lambda^{2}-\bigl(2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi\bigr)\lambda+N(\tilde{Ϛ}_\Psi)=0 .
 $$</p>
 <p><strong>The two coefficients are the normalisation and the norm, and that is Vieta.</strong> The roots sum to $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi$ and multiply to $N(\tilde{Ϛ}_\Psi)$. So the convention $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$ says the eigenvalues sum to one, and $N$ is the product of the eigenvalues because it is the determinant of left multiplication. Neither statement is an extra fact about states: they are the trace and the determinant of a $2\times2$ matrix read in the algebra's own letters.</p>
-<p><strong>On the slice the discriminant is a perfect square, so no root survives.</strong> With $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$ and $N=\tfrac14-\lvert\vec s_\Psi\rvert^{2}$,</p>
+<p><strong>On the slice the discriminant is a perfect square, so no root survives.</strong> With $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$ and $N=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)$,</p>
 <p>$$
-1-4N=1-\bigl(1-4\lvert\vec s_\Psi\rvert^{2}\bigr)=4\lvert\vec s_\Psi\rvert^{2},
+1-4N=1-\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)=\lvert\vec s_\Psi\rvert^{2},
 $$</p>
 <p>and the quadratic formula collapses:</p>
 <p>$$
-\lambda_\pm=\frac{1\pm\sqrt{1-4N}}{2}=\tfrac12\pm\lvert\vec s_\Psi\rvert .
+\lambda_\pm=\frac{1\pm\sqrt{1-4N}}{2}=\tfrac12\bigl(1\pm\lvert\vec s_\Psi\rvert\bigr) .
 $$</p>
 <p><strong>The roots are weights of idempotents, not numbers read off a matrix.</strong> The algebraic accident $(i\vec u)^{2}=e_t$ for a unit $\vec u$ — the proof of the spectral theorem in <em>States, Observables and the Born Weight</em> — gives two Hermitian idempotents per axis:</p>
 <p>$$
@@ -161,18 +161,18 @@ $$</p>
 <p><strong>The state is one axis and two weights, and the weights are the eigenvalues.</strong> Take the axis of the state's own vector part:</p>
 <p>$$
 \vec u_{\vec s}=\frac{\vec s_\Psi}{\lvert\vec s_\Psi\rvert},\qquad
-\tilde{Ϛ}_\Psi=\bigl(\tfrac12+\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_1(\vec u_{\vec s})
-+\bigl(\tfrac12-\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_2(\vec u_{\vec s}),
+\tilde{Ϛ}_\Psi=\tfrac12\bigl(1+\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_1(\vec u_{\vec s})
++\tfrac12\bigl(1-\lvert\vec s_\Psi\rvert\bigr)\tilde\Pi_2(\vec u_{\vec s}),
 $$</p>
 <p>so the coefficient of $\tilde\Pi_1$ is $\lambda_+$ and the coefficient of $\tilde\Pi_2$ is $\lambda_-$. The formula is the state's own spectral decomposition, and it is the whole of the state: one direction and two numbers.</p>
 <p><strong>Each weight is one scalar part, so the eigenvalues are Born pairings with the state's own idempotents.</strong> Because $\tilde\Pi_{1,2}^{2}=\tilde\Pi_{1,2}$,</p>
 <p>$$
-2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u_{\vec s})\bigr)=\tfrac12+\lvert\vec s_\Psi\rvert=\lambda_+,\qquad
-2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_2(\vec u_{\vec s})\bigr)=\tfrac12-\lvert\vec s_\Psi\rvert=\lambda_- .
+2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u_{\vec s})\bigr)=\tfrac12\bigl(1+\lvert\vec s_\Psi\rvert\bigr)=\lambda_+,\qquad
+2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_2(\vec u_{\vec s})\bigr)=\tfrac12\bigl(1-\lvert\vec s_\Psi\rvert\bigr)=\lambda_- .
 $$</p>
-<p><strong>The reading is that the larger eigenvalue is the probability the state gives to its own axis.</strong> The Born weight of the outcome along $\vec u$ is $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u))$, so the spectrum of a state is the pair of weights it assigns to the two outcomes of the measurement along its own axis. The larger member exceeds one half by exactly the length of the vector part, which is why the radius and the spectrum carry the same information.</p>
+<p><strong>The reading is that the larger eigenvalue is the probability the state gives to its own axis.</strong> The Born weight of the outcome along $\vec u$ is $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u))$, so the spectrum of a state is the pair of weights it assigns to the two outcomes of the measurement along its own axis. The larger member exceeds one half by exactly half the radius, which is why the radius and the spectrum carry the same information.</p>
 <p><strong>One consequence is that the state determines its idempotents, and the converse fails.</strong> For $\lvert\vec s_\Psi\rvert\neq0$ the axis is the direction of the vector part and the pair $\{\tilde\Pi_1(\vec u),\tilde\Pi_2(\vec u)\}$ is fixed, because $\tilde\Pi_2(\vec u)=\tilde\Pi_1(-\vec u)$ names the same pair. So a mixed state sits on exactly one pair of idempotents, with both weights strictly between zero and one. The pure state is the case where one weight is one and the other is zero, and then the state is the idempotent itself.</p>
-<p><strong>The general observable is the same construction with the normalisation released.</strong> For $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ the identical argument gives $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$ and $\tilde H_\Psi=\lambda_+\tilde\Pi_1(\vec u_{\vec h})+\lambda_-\tilde\Pi_2(\vec u_{\vec h})$. A state is that formula at $h_t=\tfrac12$ and $\lvert\vec h_\Psi\rvert=\lvert\vec s_\Psi\rvert$, so the state's spectrum is an observable's spectrum with the sum of the roots pinned to one.</p>
+<p><strong>The general observable is the same construction with the normalisation released.</strong> For $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ the identical argument gives $\lambda_\pm=h_t\pm\lvert\vec h_\Psi\rvert$ and $\tilde H_\Psi=\lambda_+\tilde\Pi_1(\vec u_{\vec h})+\lambda_-\tilde\Pi_2(\vec u_{\vec h})$. A state is that formula at $h_t=\tfrac12$ and $\lvert\vec h_\Psi\rvert=\tfrac12\lvert\vec s_\Psi\rvert$, so the state's spectrum is an observable's spectrum with the sum of the roots pinned to one.</p>
 <h3 id="the-peirce-reading">The Peirce Reading</h3>
 <p><strong>The pair of idempotents cuts the algebra into four corners.</strong> For $s,t\in\{1,2\}$ the <strong>Peirce line</strong> is $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$, and <em>Peirce Decompositions of the Biquaternion Algebra</em> proves the direct sum</p>
 <p>$$
@@ -197,10 +197,10 @@ $$</p>
 <p>The two diagonal terms are the classical part of the state in that axis and the two mixed terms are the coherences. <strong>The full dephasing channel of <em>Decoherence as Idempotent Projection</em> is exactly the deletion of $\tilde n+\tilde n^{\natural}$</strong>, which is why that channel moves a state toward an axis rather than toward the centre, keeps the normalisation, and is a projection only at full strength.</p>
 <p><strong>The purity sees the diagonal part and nothing else.</strong> Cross terms vanish because $\tilde\Pi_1\tilde\Pi_2=0$, so</p>
 <p>$$
-2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi^{2}=\lambda_+^{2}+\lambda_-^{2}=\tfrac12\bigl(1+\lvert\vec r\rvert^{2}\bigr).
+2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi^{2}=\lambda_+^{2}+\lambda_-^{2}=\tfrac12\bigl(1+\lvert\vec s_\Psi\rvert^{2}\bigr).
 $$</p>
 <p>A nilpotent contributes nothing to the scalar part of a square, which is the algebraic reason a coherence leaves the purity untouched and shows up only in interference with a third element.</p>
-<p><strong>The two limits are the two degenerate readings of one cut.</strong> At $\lvert\vec s_\Psi\rvert=\tfrac12$ one weight vanishes and $\tilde{Ϛ}_\Psi=\tilde\Pi_1(\vec u_{\vec s})$: the state is the idempotent, one corner carries all the weight, and the state is a zero divisor of the algebra. At $\lvert\vec s_\Psi\rvert=0$ the two weights meet at $\tfrac12$ and $\tilde{Ϛ}_\Psi=\tfrac12 e_t$ is central: the axis is not determined, hence neither are the two idempotents.</p>
+<p><strong>The two limits are the two degenerate readings of one cut.</strong> At $\lvert\vec s_\Psi\rvert=1$ one weight vanishes and $\tilde{Ϛ}_\Psi=\tilde\Pi_1(\vec u_{\vec s})$: the state is the idempotent, one corner carries all the weight, and the state is a zero divisor of the algebra. At $\lvert\vec s_\Psi\rvert=0$ the two weights meet at $\tfrac12$ and $\tilde{Ϛ}_\Psi=\tfrac12 e_t$ is central: the axis is not determined, hence neither are the two idempotents.</p>
 <p><strong>A degenerate state is a diabolic point and never an exceptional one.</strong> <em>Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</em> proves that an exceptional point needs a complex, non-Hermitian vector part, and that no Hermitian element has one. So the degenerate state has no Jordan block: its centraliser is the whole algebra, every axis serves equally, and the two idempotents are free rather than missing.</p>
 <p><strong>The failure of idempotency is central, and it is the product of the eigenvalues.</strong> Subtracting the square from the element, with $a=\lambda_+$, $b=\lambda_-$, $1-a=b$ and $1-b=a$,</p>
 <p>$$
@@ -210,7 +210,7 @@ $$</p>
 <p><strong>The product of the eigenvalues is the reason for everything that follows.</strong> $N$ is large exactly when the two eigenvalues are both far from zero, that is, when the state is far from pure. $N$ is zero exactly when one eigenvalue vanishes, that is, when the state is a rank-one idempotent.</p>
 <p><strong>The same Vieta pair explains why the norm carries no factor while the normalisation carries two.</strong> A sum of diagonal entries is twice the scalar part, because the image is two-dimensional; a product of eigenvalues is the norm itself, because no dimension count enters a product. The asymmetry is the point of the convention, and it is why the entropy formula below has no factor to dispose of.</p>
 <h3 id="the-table">The Table</h3>
-<p><strong>Four magnitudes, recomputed.</strong></p>
+<p><strong>The slice at four radii, recomputed.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -227,7 +227,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tfrac12$ (pure)</td>
+<td>$1$ (pure)</td>
 <td>$1$</td>
 <td>$0$</td>
 <td>$0$</td>
@@ -238,7 +238,7 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$0.4$</td>
+<td>$0.8$</td>
 <td>$0.9$</td>
 <td>$0.1$</td>
 <td>$0.09$</td>
@@ -249,7 +249,7 @@ $$</p>
 <td>$0.469$</td>
 </tr>
 <tr>
-<td>$0.25$</td>
+<td>$0.5$</td>
 <td>$0.75$</td>
 <td>$0.25$</td>
 <td>$0.1875$</td>
@@ -276,7 +276,7 @@ $$</p>
 <h3 id="the-four-readings">The Four Readings</h3>
 <p><strong>The first reading is mixedness.</strong> The linear entropy is a multiple of $N$:</p>
 <p>$$
-S_{\mathrm{lin}}=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2}\bigr)=\tfrac12-2\lvert\vec s_\Psi\rvert^{2}=2N .
+S_{\mathrm{lin}}=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2}\bigr)=\tfrac12\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)=2N .
 $$</p>
 <p>The spectral entropy is a function of $N$ alone on the slice. With $\lambda_+=\tfrac12\bigl(1+\sqrt{1-4N}\bigr)$,</p>
 <p>$$
@@ -291,17 +291,306 @@ $$</p>
 <p><strong>The third reading is the boundary.</strong> $N=0$ is exactly the pure states, which are the idempotents, which are the zero divisors, which are the null elements of the sector. The condition is written as a norm condition, $\{\langle\tilde Q\rangle_{\natural}=0\}$, and that set is the zero-divisor cone. The pure states form a two-sphere. <strong>The same surface is the light cone on the material side and the set of pure states on the informational one</strong>, and no third object is needed to explain either.</p>
 <p><strong>The fourth reading is thermal.</strong> The Gibbs state of a Hamiltonian $\tilde H_\Psi=h_t e_t+i\vec h_\Psi$ is the state whose vector part is</p>
 <p>$$
-\vec s_\Psi=-\tfrac12\tanh\bigl(\beta\lvert\vec h_\Psi\rvert\bigr)\vec u_\Psi,\qquad \beta=\frac{1}{k_BT},
+\vec s_\Psi=-\tanh\bigl(\beta\lvert\vec h_\Psi\rvert\bigr)\vec u_\Psi,\qquad \beta=\frac{1}{k_BT},
 $$</p>
 <p>so</p>
 <p>$$
 N=\tfrac14\bigl(1-\tanh^{2}(\beta\lvert\vec h\rvert)\bigr)=\frac{1}{4\cosh^{2}(\beta\lvert\vec h\rvert)} .
 $$</p>
-<p>$N$ is then monotone in the temperature, decreasing from $\tfrac14$ at $T=\infty$ to $0$ at $T=0$. The vector is the magnetisation, in units of one half; the low-temperature saturation is the approach to the boundary, which no finite temperature reaches; and the high-temperature expansion $\lvert\vec s_\Psi\rvert\approx\lvert\vec h_\Psi\rvert/(2k_BT)$ is Curie's law. <strong>The three thermal statements — monotonicity in $T$, saturation, and Curie — are one formula read at three temperatures.</strong></p>
-<p><strong>A fifth reading, in the corpus, is decoherence.</strong> A state entangled with an environment and then traced over moves inward: the purity falls, $2N$ rises, $S(N)$ rises with it. The boundary is where the environment has learned nothing and the interior is where it has. The word <em>trace</em> here belongs to the partial trace of the environment's module, which is the carrier the convention asks for.</p>
+<p>$N$ is then monotone in the temperature, decreasing from $\tfrac14$ at $T=\infty$ to $0$ at $T=0$. §<em>The Thermodynamic Reading</em> takes this path up in full: the two ends of it, Curie's law, and the third law. The vector is the magnetisation, of maximal length one; the low-temperature saturation is the approach to the boundary, which no finite temperature reaches; and the high-temperature expansion $\lvert\vec s_\Psi\rvert\approx\lvert\vec h_\Psi\rvert/(k_BT)$ is Curie's law. <strong>The three thermal statements — monotonicity in $T$, saturation, and Curie — are one formula read at three temperatures.</strong></p>
+<p><strong>A fifth reading, in the corpus, is decoherence.</strong> A state entangled with an environment and then traced over moves inward: the purity falls, $2N$ rises, $S(N)$ rises with it. The boundary is where the environment has learned nothing and the interior is where it has. The word <em>trace</em> here belongs to the partial trace of the environment's module, which is the carrier the convention asks for. The channel is unital, and §<em>The Ideal Boundary</em> states why that is the property the inward motion rests on: a non-unital channel can move a state the other way.</p>
 <h3 id="the-direction">The Direction</h3>
 <p><strong>High $N$ means low information.</strong> The corpus is explicit: the quaternionic norm is <em>the impurity that the informational side reads as information</em>, and the entropy is <em>the information the state fails to hold</em>. $N$ is a deficit. Every sentence in this article must be read with that sign, and the table above is the arithmetic of it.</p>
-<h2 id="why-math246-is-the-ledger-entry">Why $N$ Is the Ledger Entry</h2>
+<h2 id="the-picture">The Picture</h2>
+<p><strong>The object to draw is a cone, and the ball of states is a slice of it.</strong> The null set of the sector is $\{\langle\tilde Q\rangle_{\natural}=0\}$, which on $\mathbb{B}_{\Psi}$ is $h_t=\lvert\vec h_\Psi\rvert$. The positivity of a state is the same condition written with $\ge$, so the states are the interior of that cone and the pure states are its surface. The plane $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$ cuts the cone, and the cut is the ball $\lvert\vec s_\Psi\rvert\le1$. So the sphere a reader draws is the sector's null cone read in section, and the interior of the ball is the interior of the cone.</p>
+<p><strong>On that reading $N$ is a distance from the surface.</strong> On the slice</p>
+<p>$$
+4N=1-\lvert\vec s_\Psi\rvert^{2},
+$$</p>
+<p>so $N$ depends on the radius alone, it is largest at the centre, and it vanishes on the surface. The interior of the ball is the region $N>0$, and the impurity grows as the point leaves the boundary.</p>
+<h3 id="the-radius-is-a-speed">The Radius Is a Speed</h3>
+<p><strong>The coordinate that fills the ball is a speed, and the corpus fixes that reading.</strong> The radius is a hyperbolic tangent, $r=\lvert\vec s_\Psi\rvert=\tanh\rho$, the centre is the rest frame, the boundary is $c$, and a boost is a hyperbolic translation. Then</p>
+<p>$$
+\gamma=\cosh\rho=\frac{1}{\sqrt{1-\lvert\vec s_\Psi\rvert^{2}}},\qquad
+N=\frac{1}{4\gamma^{2}},\qquad
+S_{\mathrm{lin}}=\frac{1}{2\gamma^{2}} .
+$$</p>
+<p><strong>Read: the impurity is the inverse square of the time-dilation factor.</strong> A pure state is the lightlike limit, $\gamma\to\infty$ and $N\to0$. The maximally mixed state is the rest frame, $\gamma=1$ and $N=\tfrac14$. A mixed state is a boosted state, and its linear entropy $\tfrac12\gamma^{-2}$ is half the inverse square of its $\gamma$.</p>
+<p><strong>The thermal formula of §<em>The State Slice</em> is this formula.</strong> The Gibbs vector $\vec s_\Psi=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$ is the same line at $\rho=\beta\lvert\vec h_\Psi\rvert$. The temperature and the speed are two physical inputs to one number on the ball.</p>
+<h3 id="what-one-measurement-returns">What One Measurement Returns</h3>
+<p><strong>A single measurement returns a coin, and the coin is a projection of the point.</strong> For a unit axis $\vec u$,</p>
+<p>$$
+p(\vec u)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u)\bigr)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr).
+$$</p>
+<p>The first equality is the Born weight of <em>States, Observables and the Born Weight</em>. The second is its value on the slice, at $h_t=\tfrac12$ and $\vec h_\Psi=\tfrac12\vec u$.</p>
+<p><strong>The probabilities are not an obstacle to the picture. They are the only image of it.</strong> One run gives one bit. Three orthogonal axes with counted frequencies give the vector,</p>
+<p>$$
+\vec s_\Psi=\sum_{i=1}^{3}\bigl(2p(\vec u_i)-1\bigr)\vec u_i ,
+$$</p>
+<p>and no measurement and no set of measurements returns anything else.</p>
+<p><strong>The radius is the best bias the state allows, and that is the operational content of the word impurity.</strong> Because $\vec s_\Psi\cdot\vec u\le\lvert\vec s_\Psi\rvert$, with equality on the state's own axis,</p>
+<p>$$
+\lvert\vec s_\Psi\rvert=\max_{\vec u}\bigl(2p(\vec u)-1\bigr)=b_{\max},\qquad
+S_{\mathrm{lin}}=\tfrac12\bigl(1-b_{\max}^{2}\bigr).
+$$</p>
+<p>A pure state predicts its own axis with certainty, $b_{\max}=1$. The maximally mixed state predicts nothing better than a fair coin, $b_{\max}=0$. The entropy is a monotone function of the best prediction available, and no axis beats the own axis.</p>
+<p><strong>The point itself is never observed.</strong> The vector is a summary of three biases, and the statement that the summary is a point of the ball is the statement that the three biases are consistent with one length. The ball is the set of bias triples a state can produce, and nothing in it is hidden.</p>
+<h3 id="the-two-drawings">The Two Drawings</h3>
+<p><strong>The flat ball is the Klein model, and it is honest about the boundary and dishonest about the angles.</strong> With $r=\tanh\rho$ the Euclidean radius is the hyperbolic tangent of the rapidity, chords are geodesics, and the sphere $\lvert\vec s_\Psi\rvert=1$ is the set of points at infinity. Distances read off the flat drawing are therefore wrong away from the centre, and that is one reason the picture is hard to hold.</p>
+<p><strong>The faithful drawing is a hemisphere of radius $\tfrac12$.</strong> Its pole is the maximally mixed state, its equator is the pure sphere, its latitude is the purity, and the distance from the pole to the equator is the finite number $\pi/4$. The factor $\tfrac14$ of the whole subject is the squared radius of that hemisphere, as <em>The Fubini–Study Geometry and the Biquaternion Norm</em> records. Nothing diverges at the boundary in that picture. What diverges is the Bloch coordinate, through the Jacobian of $r=\sin\theta$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the drawing</th>
+<th>what it shows</th>
+<th>what it distorts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the flat ball, $\lvert\vec s_\Psi\rvert\le1$</td>
+<td>the boundary, the incidence of points, the axis and the radius</td>
+<td>the angles and the distances: chords are geodesics, and the boundary lies at infinity</td>
+</tr>
+<tr>
+<td>the hemisphere of radius $\tfrac12$</td>
+<td>the purity as latitude, the finite distance $\pi/4$, the round metric</td>
+<td>the cone, which no single slice shows</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Neither drawing shows the cone.</strong> Both are pictures of one slice. The cone needs the scalar coordinate as well, and in that four-space the sign of $N$ alone says on which side of the surface an element lies.</p>
+<h3 id="the-frame-moves-the-picture">The Frame Moves the Picture</h3>
+<p><strong>The radius is frame-dependent and the norm of the element is not.</strong> A boost is a congruence by an element of norm one. It fixes $N(\tilde{Ϛ}_\Psi)$ and it moves $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi$, so after renormalisation the radius moves by velocity addition:</p>
+<p>$$
+r'=\frac{r+\tanh\theta}{1+r\tanh\theta}.
+$$</p>
+<p>The picture belongs to the frame: <em>how mixed</em> is a verdict on the slice, exactly as <em>how fast</em> is.</p>
+<p><strong>The material column of §<em>The Duality</em> says the same thing with the names exchanged.</strong> A particle has a definite mass and a frame-dependent energy; a state has a definite norm and a frame-dependent purity. The invariant sits on the element, and the running number sits on the slice.</p>
+<p><strong>The strongest objection is that the picture adds a dimension nobody measures.</strong> It does not. The extra coordinate is the scalar part, the normalisation fixes it, and the measured numbers remain the three biases of §<em>What One Measurement Returns</em>. The cone and the hemisphere are two readings of one set of data, one algebraic and one metric, and neither adds an observable.</p>
+<p><strong>What the picture owes to the algebra, and what to the dictionary.</strong> The cone, the slice, the sphere as the null boundary, the linear law $p(\vec u)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr)$, the reconstruction from three axes and the maximal-bias identity are forced. The words <em>speed</em>, <em>magnetisation</em>, <em>Klein model</em> and <em>hemisphere</em> are readings, and §<em>What Is Forced and What Is Dictionary</em> lists them as such.</p>
+<p><strong>Checked, on one hundred draws each.</strong> The Born weight $\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr)$ against the pairing, worst error $1.1\times10^{-16}$; no axis beating the own-axis bias, excess $0$; the reconstruction from three orthogonal axes, worst error $6.1\times10^{-16}$; $N=1/(4\gamma^{2})$ and $S_{\mathrm{lin}}=1/(2\gamma^{2})$, worst errors $1.1\times10^{-16}$ and $3.0\times10^{-16}$; the radius law under a boost, worst error $3.3\times10^{-16}$, with $N$ of the element fixed to $7.8\times10^{-15}$; and the pole-to-equator distance $\pi/4$, exact.</p>
+<h3 id="the-group-is-shared-the-space-is-not">The Group Is Shared, the Space Is Not</h3>
+<p><strong>The congruence is literally a Lorentz transformation, of the four-vector $(2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi,\ \vec s_\Psi)$.</strong> With $c=\cosh\theta$ and $s=\sinh\theta$, a boost along the unit axis $\vec u$ acts by</p>
+<p>$$
+2\,\mathrm{Sc}\mapsto c\,(2\,\mathrm{Sc})+s\,(\vec s_\Psi\cdot\vec u),\qquad
+\vec s_\Psi\cdot\vec u\mapsto s\,(2\,\mathrm{Sc})+c\,(\vec s_\Psi\cdot\vec u),\qquad
+\vec s_{\Psi\perp}\mapsto\vec s_{\Psi\perp} ,
+$$</p>
+<p>which is the boost of the material sector with the momentum replaced by the state's own four-vector. Verified to $8.9\times10^{-16}$ on a hundred draws. So the reversible group of the informational sector is the Lorentz group, and it is one group on both sides — which is not surprising, since there is one norm.</p>
+<p><strong>What differs is the space it acts on, and that is the whole of the qualification.</strong> On $\mathbb{B}_{\Phi}$ it acts on Minkowski space by linear maps. On $\mathbb{B}_{\Psi}$ it acts on the ball by projective maps, and there it is the isometry group of hyperbolic three-space in the Klein model: hyperbolic distances are preserved to $1.4\times10^{-15}$. The ball is not spacetime, and a congruence is not a motion of a state through spacetime.</p>
+<p><strong>Two readings that follow from the misreading must be refused.</strong></p>
+<p><strong>The first is that the hemisphere carries the rapidity.</strong> It does not. A boost is not an isometry of the Bures angle — changed by up to $0.46$ rad in a sample — because the Bures metric is invariant under the unitary subgroup and a boost is Hermitian and not unitary. Latitude on the hemisphere is the purity, as §<em>The Two Drawings</em> says; it is not the rapidity. The rapidity is a coordinate of the flat ball.</p>
+<p><strong>The second is that a boost purifies.</strong> It does not, and it cannot. The congruence fixes $N(\tilde{Ϛ}_\Psi)$ while it moves the doubled scalar part, so what changes is the normalisation and not the invariant. The entropy read on the slice does move — the centre reads $0.693$ nats before a boost of rapidity one and $0.365$ after — and that movement is a change of frame, exactly as the corresponding energy is. An invariant entropy would have to be a function of $N$ alone, and a function of $N$ alone needs the slice; the algebra has no scale (obstruction O20) and supplies no second invariant.</p>
+<p><strong>The orbit is a hypercycle and not a chord.</strong> A boost translates along its axis, so a state on the axis moves along a geodesic of the ball, while a state off the axis moves along a curve at constant hyperbolic distance from it. In the case drawn the off-axis orbit departs from the chord by $0.115$. The flat ball draws the geodesics straight and the motions curved, which is the reverse of what the eye expects.</p>
+<p><strong>The group is not closed under composition on either side, and the failure is the Wigner rotation.</strong> The Hermitian elements of norm one are the boosts, and they are not closed under multiplication. Two boosts along axes $\vec u_1,\vec u_2$ with rapidities $\theta_1,\theta_2$ and angle $\varphi$ between the axes compose to</p>
+<p>$$
+U=L\,R,\qquad R \text{ a rotation about } \pm\,\vec u_1\times\vec u_2,\qquad
+\tan\tfrac{\Omega}{2}=\frac{\sinh\tfrac{\theta_1}{2}\sinh\tfrac{\theta_2}{2}\sin\varphi}
+{\cosh\tfrac{\theta_1}{2}\cosh\tfrac{\theta_2}{2}+\sinh\tfrac{\theta_1}{2}\sinh\tfrac{\theta_2}{2}\cos\varphi},
+$$</p>
+<p>with $L$ Hermitian of norm one. Verified: the axis is $\pm\vec u_1\times\vec u_2$ to $6.5\times10^{-15}$, and the closed form to $1.0\times10^{-15}$ over two hundred draws. For $\theta_1=\theta_2=1$ and $\varphi=\pi/2$ the angle is $0.4208$ rad. The corpus has this on the material side in <em>The Wigner Rotation and the Information Content of a Boost</em>.</p>
+<p><strong>The angle depends on the frame change and not on the state, and that is what makes it a statement about the frame.</strong> The same closed form applies in the ball because it is a fact about $\mathbb{B}$ and not about what $\mathbb{B}$ acts on. It is therefore one theorem with two readings, and no new content arises from the informational side beyond the reading.</p>
+<p><strong>Of the two factors, only $R$ is an isometry of the Bures angle.</strong> $R$ is unitary, so it leaves every Bures distance fixed, to $5.8\times10^{-16}$; $L$ is Hermitian, and it changes them by up to $0.734$ rad in a sample. The Wigner rotation is thus exactly the part of a frame change that the Bures geometry cannot see, while the Klein geometry sees both factors. A geometry that carries a latitude cannot also carry the orientation.</p>
+<p><strong>Its content is relational, and for a single state it is not observable.</strong> A rotation can be absorbed into the choice of measurement axes, so nothing about one state distinguishes a frame change that includes $R$ from one that does not. What the rotation moves is the orientation of the state relative to the frame that the boost axes define — and, between two states, the relative orientation, which a boost distorts by up to $2.83$ rad in a sample while $R$ preserves it. The Wigner rotation is a fact about a <em>comparison</em>, in the ball as in the laboratory.</p>
+<p><strong>One caution on the name.</strong> The Wigner rotation is the kinematic effect of composing two boosts; Thomas precession is its rate along an accelerated path. They are the same holonomy read once and read differentially, and the second is a reading of the first, not a separate result. In the literature of Einstein velocity addition the same structure is a gyrogroup and the angle is its gyration, which is where the material-sector statement already lives.</p>
+<p><strong>The four points that settle the reading, and what each settles.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the point</th>
+<th>the statement</th>
+<th>what it settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the closed form</td>
+<td>$\tan\tfrac{\Omega}{2}$ in the two rapidities and the angle between the axes, to $1.0\times10^{-15}$</td>
+<td>the angle is computable, and the same number serves both sectors</td>
+</tr>
+<tr>
+<td>the polar split</td>
+<td>$R$ unitary and Bures-isometric; $L$ Hermitian and Bures-distorting</td>
+<td>the hemisphere cannot carry orientation, and latitude and orientation cannot share one drawing</td>
+</tr>
+<tr>
+<td>relational observability</td>
+<td>a single state cannot register $R$; only a comparison can</td>
+<td>the Wigner angle is a fact about frames, not about states</td>
+</tr>
+<tr>
+<td>the naming</td>
+<td>Wigner rotation is the finite holonomy, Thomas precession its differential</td>
+<td>one result, two readings, and no double counting</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The summary is one sentence.</strong> The Lorentz group is pertinent to both sectors because the norm is one object; it acts on Minkowski space in one and on hyperbolic space in the other; and no identification of information with velocity follows from the sharing.</p>
+<h2 id="the-ideal-boundary">The Ideal Boundary</h2>
+<p><strong>In both sectors the cone is the ideal case.</strong> <em>Ideal</em> here means the limiting class, and the word has a second, algebraic meaning that must be refused: the null set is not an ideal of the ring, and the difference is one line. This section states the limiting sense, refuses the algebraic one, and gives the one algebra that makes the boundary unreachable from the inside.</p>
+<p><strong>The null set absorbs multiplication on both sides.</strong> Because $N(AB)=N(A)N(B)$, an element with $N(A)=0$ stays null under multiplication by anything:</p>
+<p>$$
+N(AB)=N(A)N(B)=0,\qquad N(BA)=N(B)N(A)=0 .
+$$</p>
+<p>That is absorption, and it is exact.</p>
+<p><strong>It is not closed under addition, and the article's own pair of idempotents shows it.</strong> For every unit $\vec u$,</p>
+<p>$$
+\tilde\Pi_1(\vec u)+\tilde\Pi_2(\vec u)=e_t,\qquad N\bigl(\tilde\Pi_{1,2}(\vec u)\bigr)=0,\qquad N(e_t)=1 .
+$$</p>
+<p>The sum of two null elements is the unit. A set closed under multiplication by any element and not closed under addition is an absorbing multiplicative semigroup, and not an ideal. A sentence that calls the cone an ideal in the ring sense is false. A sentence that calls it an ideal in the limiting sense is the subject of this section.</p>
+<h3 id="the-sign-does-not-cross">The Sign Does Not Cross</h3>
+<p><strong>No invertible congruence carries an element across the cone.</strong> For $U$ with $N(U)\neq0$,</p>
+<p>$$
+N\bigl(U\tilde QU^{*}\bigr)=N(U)N(\tilde Q)N(U^{*})=\lvert N(U)\rvert^{2}N(\tilde Q),
+$$</p>
+<p>because $N(\tilde Q^{*})=\overline{N(\tilde Q)}$. The multiplier is a non-negative real, so the sign of $N$ is a congruence invariant and each cone maps onto itself. With $N(U)=1$ the multiplier is one, and that is the invariance of §<em>Why $N$ Is the Ledger Entry</em>.</p>
+<p><strong>This is the sharp content of the word <em>unreachable</em>.</strong> The boundary is not a limit of the interior under the reversible motions of the sector. It is a separate class, entered only by an element whose invariant is zero.</p>
+<h3 id="the-material-side-math358-is-the-entry-fee">The Material Side: $m=0$ Is the Entry Fee</h3>
+<p><strong>A massive element has a fixed negative norm, and no boost moves it.</strong> On shell $\tilde P_\Phi\tilde P_\Phi^{\natural}=-m^{2}c^{2}$. With $E=\gamma mc^{2}$ and $\vec p=\gamma m\vec v$ the two terms cancel identically,</p>
+<p>$$
+-\frac{E^{2}}{c^{2}}+\lvert\vec p\rvert^{2}
+=-\gamma^{2}m^{2}c^{2}\Bigl(1-\frac{v^{2}}{c^{2}}\Bigr)
+=-m^{2}c^{2},
+$$</p>
+<p>for every $\gamma$. The class is fixed by $m$ and by nothing the frame does.</p>
+<p><strong>The boundary is not approached. It is entered.</strong> $E=\gamma mc^{2}$ diverges as $v\to c$, so a massive element would need unbounded energy to arrive, and it never does. The element on the cone is the one with $m=0$, and there $\gamma$ is undefined: the photon is on the boundary for every momentum, and no massive particle is near it at any energy.</p>
+<h3 id="the-informational-side-one-cone-one-fee">The Informational Side: One Cone, One Fee</h3>
+<p><strong>The pure states are the boundary, and they are populated too.</strong> They are the idempotents, they are exact elements of the algebra, and they form a two-sphere. So on this side the boundary is a class and not a limit, exactly as on the material side.</p>
+<p><strong>The interior cannot reach it by a boost.</strong> With $r=\lvert\vec s_\Psi\rvert$ and $t=\tanh\theta$,</p>
+<p>$$
+r'=\frac{r+t}{1+rt},\qquad 1-r'=\frac{(1-r)(1-t)}{1+rt}>0 .
+$$</p>
+<p>Every finite boost leaves the state strictly inside, and the identity that makes velocity addition also makes the boundary unreachable. The cost of reaching purity is infinite rapidity.</p>
+<p><strong>The thermal route costs the same infinity.</strong> $N=1/\bigl(4\cosh^{2}\beta\lvert\vec h_\Psi\rvert\bigr)$ is positive at every finite $\beta$ and vanishes only as $\beta\to\infty$, which is $T=0$. On this sector the third law and the unreachability of the cone are one formula.</p>
+<h3 id="what-the-reading-adds-and-what-it-costs">What the Reading Adds, and What It Costs</h3>
+<p><strong>The physical version is a statement about resources, and it is not algebra.</strong> <em>No preparation reaches exact purity</em> is a claim about isolation. The algebra does not make it, and cannot: the idempotents are in the algebra, and a prepared state is a state. What the algebra makes is the weaker and sufficient statement — the interior has no reversible path to the boundary.</p>
+<p><strong>The strongest objection is that decoherence is not a one-way pump, and it is right.</strong> Spontaneous emission is non-unital: it drives a state toward its ground state, which is pure, so it can raise the purity. <em>Decoherence pushes every state inward</em> is therefore false as stated. What is true is narrower. A unital channel cannot raise the purity, and the depolarising model shows the direction,</p>
+<p>$$
+\tilde{Ϛ}_\Psi\longmapsto(1-p)\tilde{Ϛ}_\Psi+p\,\tfrac12 e_t,\qquad r\longmapsto(1-p)r ,
+$$</p>
+<p>which moves the state inward at every $p>0$ and freezes it at $p=0$. So the inward motion is a property of the unital coupling — the dephasing channel of §<em>The State Slice</em>, the partial trace over an environment joined by a unitary on the whole — and not of the word <em>decoherence</em>.</p>
+<p><strong>The honest form is therefore three sentences and not one.</strong> The boundary exists and is exact. No reversible motion of the sector crosses it. Every unital coupling moves a state away from it. The laboratory claim needs one premise more, that every real coupling is unital, and the algebra does not supply that premise.</p>
+<h3 id="a-skeleton-for-a-later-article">A Skeleton for a Later Article</h3>
+<p><strong>The parallel deserves an article of its own, and this section leaves only its skeleton.</strong> One cone, one sign, and two populations of the boundary: massless elements and pure states. Three questions such an article would have to settle.</p>
+<p><strong>The first is which couplings are unital</strong>, and whether an environment's coupling is one of them. The corpus gives the dephasing channel and the partial trace; it does not classify the channels.</p>
+<p><strong>The second is whether the material side has a primitive that plays the role of a channel</strong>, driving an element off the cone as a channel drives a state off the boundary. Nothing in this article answers it.</p>
+<p><strong>The third is whether the two entry fees are one quantity read twice.</strong> Mass on the material side and rapidity on the informational side both measure the distance from the boundary, and both cost an infinity to remove. Whether they are the same number in different letters is a question of the programme, not of this audit.</p>
+<p><strong>Checked, on one hundred draws each.</strong> Multiplicative absorption, worst error $3.2\times10^{-15}$; the congruence identity with multiplier $\lvert N(U)\rvert^{2}$, worst error $5.5\times10^{-15}$ and no sign crossing; $N(\tilde\Pi_1+\tilde\Pi_2)=1$ against $N(\tilde\Pi_{1,2})=0$; the on-shell invariant at every rapidity, worst error $9.1\times10^{-13}$; and the identity $1-r'=(1-r)(1-t)/(1+rt)$ to $2.0\times10^{-16}$. The depolarising radius law $r\mapsto(1-p)r$, worst error $1.1\times10^{-16}$; the dephasing channel never increasing the radius, worst increase $0$; and amplitude damping raising it by up to $1.13$, which is the objection of §<em>What the Reading Adds</em> in numbers. Above rapidity about nineteen, floating point rounds $\tanh\theta$ to one and a numerical test reports the boundary as reached; the identity is the warrant, not the sample.</p>
+<h2 id="the-thermodynamic-reading">The Thermodynamic Reading</h2>
+<p><strong>Temperature is a coordinate on the ball, so the reading is available from the start and is not an extra layer.</strong> The Gibbs state is a temperature-parametrised curve from the centre to the boundary, and the corpus develops it in <em>Quantum Thermodynamics in Biquaternionic Form</em>. This section records what the curve says about $N$ itself, since that is the object of this article: the two ends of the path are the two values of the norm, and the third law of thermodynamics is the unreachability of §<em>The Ideal Boundary</em> in thermal vocabulary.</p>
+<h3 id="the-path">The Path</h3>
+<p><strong>The closed form is forced once the Gibbs dictionary is granted.</strong> Take $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ and write $x=\beta\lvert\vec h_\Psi\rvert$. The matrix image has eigenvalues $h_t\pm\lvert\vec h_\Psi\rvert$, so</p>
+<p>$$
+\tilde{Ϛ}_{\Psi,\beta}=\frac{e^{-\beta\tilde H_\Psi}}{\mathrm{tr}\,e^{-\beta\tilde H_\Psi}}
+=\tfrac12\bigl(e_t-i\tanh x\,\vec u_\Psi\bigr),\qquad
+\mathrm{tr}\,e^{-\beta\tilde H_\Psi}=2e^{-\beta h_t}\cosh x .
+$$</p>
+<p><strong>The scalar part of the Hamiltonian drops out of the state.</strong> $h_t$ enters the trace and cancels in $\tilde{Ϛ}_{\Psi,\beta}$: an offset in energy is invisible to the state, and therefore to the impurity. Two Hamiltonians that differ by a central term have the same Gibbs path.</p>
+<p><strong>The path is a boost orbit, renormalised, and that is the exact form of the claim that temperature is a rapidity.</strong> Apply a boost of rapidity $\theta$ to the centre and renormalise. The image has $2\,\mathrm{Sc}=\cosh\theta$ and radius $\tanh\theta$, so after division by its own doubled scalar part,</p>
+<p>$$
+r=\tanh\theta,\qquad N=\frac{1}{4\cosh^{2}\theta},
+$$</p>
+<p>which is the Gibbs formula under the identification $\theta=\beta\lvert\vec h_\Psi\rvert$. Verified to $2.2\times10^{-16}$ over fifty draws. So the whole thermal family with a fixed Hamiltonian is one orbit of the congruence group, read after renormalisation.</p>
+<p><strong>Rapidities add and radii compose, which is the velocity-addition law already in the article.</strong> Two successions of heating at fixed axis give $r_{12}=(r_1+r_2)/(1+r_1r_2)=\tanh(\theta_1+\theta_2)$, to $2.2\times10^{-16}$. The composition is therefore associative in $\theta$ and not in $r$, and the bound $r<1$ is preserved for the same reason it is preserved for velocities.</p>
+<p><strong>This does not contradict §<em>Remarks</em> on the path not being an orbit.</strong> The orbit is of the centre, and the map that carries it onto the slice is a division by $2\,\mathrm{Sc}$ — not a congruence. The unrenormalised orbit keeps $N=\tfrac14$; the renormalised one loses it. The distinction is exactly the one §<em>Fixed and Running</em> draws, and it is the reason the thermodynamic family is a family of frames rather than a family of states.</p>
+<p><strong>On the slice the norm reads the same formula as one number:</strong></p>
+<p>$$
+N=\frac{1}{4\cosh^{2}x},\qquad S_{\mathrm{lin}}=\frac{1}{2\cosh^{2}x},\qquad
+\lambda_\pm=\tfrac12\bigl(1\pm\tanh x\bigr).
+$$</p>
+<h3 id="the-two-ends">The Two Ends</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$T\to\infty$, $x\to0$</th>
+<th>$T\to0$, $x\to\infty$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>radius $\lvert\vec s_\Psi\rvert=\tanh x$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>$\tfrac14$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\lambda_\pm$</td>
+<td>$\tfrac12,\tfrac12$</td>
+<td>$1,0$</td>
+</tr>
+<tr>
+<td>$S_{\mathrm{lin}}=2N$</td>
+<td>$\tfrac12$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$S_{\mathrm{vN}}$</td>
+<td>$1$ bit</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>position</td>
+<td>the centre</td>
+<td>the boundary</td>
+</tr>
+<tr>
+<td>reading</td>
+<td>maximum disorder, no information</td>
+<td>pure ground state, full information</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The left column is the centre and the right column is the cone.</strong> The two values of the norm are the two ends of one path, and the thermodynamic words name them without adding a parameter.</p>
+<h3 id="curies-law">Curie's Law</h3>
+<p><strong>The high-temperature end is Curie's law, and the expansion is the whole of it.</strong> For $x\ll1$, $\tanh x=x-x^{3}/3+\dots$, so</p>
+<p>$$
+\lvert\vec s_\Psi\rvert\approx\beta\lvert\vec h_\Psi\rvert=\frac{\lvert\vec h_\Psi\rvert}{k_BT},
+$$</p>
+<p>with relative error $x^{2}/3$. The magnetisation falls as the inverse temperature, and the coefficient is the magnitude of the Hamiltonian's vector part. No further input enters, so the law is the linear term of a hyperbolic tangent.</p>
+<h3 id="the-third-law">The Third Law</h3>
+<p><strong>The right-hand end is approached exponentially and never reached.</strong> With $S_{\mathrm{vN}}$ in nats,</p>
+<p>$$
+S_{\mathrm{vN}}=\log 2+\log\cosh x-x\tanh x\;\sim\;2x\,e^{-2x},
+$$</p>
+<p>so the entropy and every derivative of it vanish at $T=0$: the state arrives at the boundary flat to all orders. The specific heat $C=k_Bx^{2}\mathrm{sech}^{2}x$ vanishes at both ends, with the Schottky maximum $0.439\,k_B$ at $x=1.1997$ — the corpus article's numbers, quoted and not recomputed here.</p>
+<p><strong>Read with §<em>The Ideal Boundary</em>, cooling is a motion toward the boundary that stops strictly short of it.</strong> Purity and absolute zero are one limit, and the reason no preparation reaches the one is the reason no boost reaches $c$.</p>
+<h3 id="what-the-reading-costs">What the Reading Costs</h3>
+<p><strong>The third law is reproduced, not explained.</strong> In a finite-dimensional model with a nondegenerate ground state, $S\to0$ is a theorem of the Gibbs formula. The physical third law says more than that, and this reading does not supply the more.</p>
+<p><strong>The strongest objection is a degenerate Hamiltonian, and it is a real obstruction.</strong> If $\lvert\vec h_\Psi\rvert=0$ the Hamiltonian is central, the Gibbs state is $\tfrac12e_t$ at every temperature, and $N=\tfrac14$ for all $\beta$: the path is a single point at the centre, and cooling purifies nothing. The reading therefore needs a gap, $\lvert\vec h_\Psi\rvert\neq0$, exactly as the material reading needs $m\neq0$ for the interval to be a coordinate. A degenerate ground space gives residual entropy in place of a pure state.</p>
+<p><strong>A second limit of the reading is the sign of $\beta$.</strong> The corpus restricts the physical domain to $\mathrm{Re}\,\beta>0$. A formal $\beta<0$ reflects the vector through the centre, $\vec s_\Psi\mapsto-\vec s_\Psi$, with $N$ unchanged, so the ball is traversed on the positive-temperature side only and the reflection is not admitted. Population inversion lies outside the reading.</p>
+<p><strong>A third is that the path is one-parameter and static.</strong> It says where the state sits at equilibrium; it does not say how the state arrives, and that question belongs to the channels of §<em>The Ideal Boundary</em>.</p>
+<h3 id="toward-the-articles">Toward the Articles</h3>
+<p><strong>The corpus owns the thermodynamic reading; this section is its $N$-side digest, and a dedicated article would take up three questions.</strong> §<em>Remarks: What the Reading Cannot Supply</em> lists the four limitations of the reading itself; the questions below are about the boundary, and are separate. The first is whether the two populations of the boundary — $m=0$ and the idempotents — are one object or two, given that they are the same cone. The second is whether $\beta$ has a meaning in the material sector beyond the imaginary-time displacement the corpus records. The third is whether the degeneracy obstruction of this section is the same statement as the vanishing of a mass gap.</p>
+<p><strong>Checked, on one hundred draws each.</strong> The Gibbs state built from the matrix exponential against the closed form, worst error $5.3\times10^{-16}$; $2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi,\beta}=1$ to $2.2\times10^{-16}$; $N=1/(4\cosh^{2}x)$ to $1.4\times10^{-16}$; the trace $2e^{-\beta h_t}\cosh x$ to $5.5\times10^{-12}$; $E=h_t-\lvert\vec h_\Psi\rvert\tanh x$ to $8.9\times10^{-16}$; $S_{\mathrm{vN}}$ against the binary entropy to $7.6\times10^{-16}$, with the asymptotic form $2xe^{-2x}$ holding to five per cent at $x=10$; the Schottky maximum at $x=1.19968$ with $C_{\max}=0.439229$, the root of $x\tanh x=1$; the Curie relative error against $x^{2}/3$ at four values of $x$; and a central Hamiltonian giving $N=\tfrac14$ at every $\beta$ to $5.6\times10^{-17}$.</p>
+<h2 id="remarks-what-the-reading-cannot-supply">Remarks: What the Reading Cannot Supply</h2>
+<p><strong>Four limitations are commonly pressed against the thermodynamic reading, and three of them are already certified elsewhere in the corpus.</strong> This section places each in its article, narrows it to what the corpus does not say, and records one statement the algebra does supply: the thermal path cannot be an orbit of the reversible group. None of the four bears on the forced list of §<em>What Is Forced and What Is Dictionary</em>, because all four concern dynamics and couplings, which this article never claimed.</p>
+<h3 id="the-first-no-generator-for-the-path">The First: No Generator for the Path</h3>
+<p><strong>The algebra gives the form of reversible evolution and not its generator, and the corpus states this as an obstruction.</strong> Every derivation of $\mathbb{B}$ is inner, so no element is a distinguished time translation: obstruction O18 of <em>What the Biquaternion Algebra Cannot Do</em>. A reversible motion is a congruence $\tilde{Ϛ}_\Psi\mapsto U\tilde{Ϛ}_\Psi U^{*}$ with $\lvert N(U)\rvert=1$, and the algebraic contribution is that the motion preserves $N$.</p>
+<p><strong>That is exactly why the Gibbs path is not an orbit.</strong> Along the path $N=1/(4\cosh^{2}x)$ runs from $\tfrac14$ to $0$ — the values $0.250$, $0.197$, $0.105$, $0.018$ at $x=0.01,\,0.5,\,1,\,2$ — while every reversible motion holds $N$ fixed, to $2.2\times10^{-16}$ over a hundred draws. The path crosses level sets of the norm, so no congruence generates it, and thermalisation is necessarily non-invertible.</p>
+<p><strong>The gap the objection names is real, and its shape is sharper than <em>no equation of motion</em>.</strong> The equation of motion exists and is excluded: no reversible equation of motion can carry a state along the thermal path. A generator for that path has to be a semigroup of the Lindblad type, which the corpus builds in <em>Quantum Channels and the Reversible–Irreversible Dichotomy</em> and does not derive.</p>
+<h3 id="the-second-no-principle-choosing-the-channel">The Second: No Principle Choosing the Channel</h3>
+<p><strong>The corpus supplies the form of the channel and not the selection of it.</strong> The dichotomy, the Kraus decomposition and the GKSL generator are in the channels article; what no article supplies is a principle that picks one channel for a given environment. The unitality premise of §<em>The Ideal Boundary</em> is the whole of the gap, and it is a premise about the world.</p>
+<p><strong>Unitality has an exact algebraic reading, and it locates the premise precisely.</strong> A channel is unital exactly when it fixes the centre $\tfrac12e_t$, the unique state of maximal $N$. Depolarising fixes the centre to $0$; amplitude damping moves it, from $N=\tfrac14$ to $0.1875$ at damping $g=\tfrac12$. So the premise says the coupling privileges no state, and real environments do privilege one — a ground state.</p>
+<p><strong>One bound survives every channel.</strong> None takes a state above $N=\tfrac14$, since $\tfrac14$ is attained only at the centre; the maximum over two hundred damped states was $0.2489$. The centre is stationary under the unital channels and a ceiling under all of them, so the impurity is bounded on the whole state space and not only on the slice.</p>
+<h3 id="the-third-the-third-law-is-reproduced">The Third: The Third Law Is Reproduced</h3>
+<p><strong>The corpus reproduces the endpoint statement and does not derive it</strong>, as §<em>The Third Law</em> concedes. For a finite-dimensional model with a nondegenerate ground state, $S\to0$ is a theorem of the Gibbs formula, and the corpus's entropy articles — <em>Von Neumann Entropy and the Biquaternion Norm</em>, <em>Coarse-Graining and the Biquaternion Entropy Functional</em> — take that formula as given.</p>
+<p><strong>Two of the three standard formulations are untouched.</strong> The Nernst statement, that entropy differences vanish at $T=0$, is not addressed anywhere in the corpus. The unattainability statement, that finitely many finite operations cannot reach $T=0$, has the same shape as $1-r'=(1-r)(1-t)/(1+rt)$, and the coincidence is a reading.</p>
+<p><strong>The one place the algebra adds rather than reproduces is that coincidence.</strong> If unattainability is the unreachability of the boundary under reversible motion, the identity of §<em>The Ideal Boundary</em> is a proof of it. The identification is the programme's, and it is recorded here as such.</p>
+<h3 id="the-fourth-the-level-ceiling">The Fourth: The Level Ceiling</h3>
+<p><strong>The two-level restriction is not an open gap but a proved ceiling, and the corpus proves it.</strong> Every finite-dimensional module of $\mathbb{B}$ is a direct sum of copies of the two-dimensional one, so a three-dimensional unital module does not exist: <em>The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra</em>, with the level count, the nilpotency ceiling and the idempotent ceiling as the three obstructions.</p>
+<p><strong>What is available follows from that theorem.</strong> Every even level count is a direct sum of copies; odd counts arise only through the decompositions of tensor powers, the qutrit being the symmetric square of two fundamentals, $4=3\oplus1$; and infinite dimension is not excluded, since a countable direct sum of copies is a module, which is how the Fock-space articles are built. The ceiling is the algebra, four-dimensional over $\mathbb{C}$, not the module.</p>
+<p><strong>So the objection is misdirected in its stated form, and the true version of it is open.</strong> The unfinished question is not whether the algebra can carry many levels, because it can, but whether the composite route is the physically right one: a qutrit assembled as a symmetric square carries the superselection rule of that decomposition, which a fundamental three-level system would not.</p>
+<h3 id="what-the-remarks-do-not-touch">What the Remarks Do Not Touch</h3>
+<p><strong>Nothing in them bears on the forced list.</strong> Multiplicativity, the eigenvalue product, the entropy as a function of $N$, the sign reversal, the Born law, the maximal-bias identity, absorption, the failure of additivity and the non-orbit character of the thermal path are properties of the algebra and of one slice; they hold whether or not a generator, a channel or a gap is ever supplied.</p>
+<p><strong>The residue of the section is one statement, and it is forced.</strong> The thermal path is not an orbit of the congruence group, because a congruence preserves $N$ and the path does not. That is why the thermodynamics here is a thermodynamics of states and not of motions, and it is the sharpest thing the algebra says about the objection.</p>
+<p><strong>Checked.</strong> $N$ along the Gibbs path at four values of $x$; the congruence invariance of $N$ over a hundred draws with $\lvert N(U)\rvert=1$, worst error $2.2\times10^{-16}$; the centre fixed by depolarising to $0$ and moved by amplitude damping to $N=0.1875$; the ceiling $N\le\tfrac14$ over two hundred damped states, largest $0.2489$; and the degenerate Hamiltonian at four temperatures to $10^{-12}$.</p>
+<h2 id="why-math521-is-the-ledger-entry">Why $N$ Is the Ledger Entry</h2>
 <p><strong>The structural fact is multiplicativity.</strong> For two elements,</p>
 <p>$$
 \langle\tilde Q_1\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1\rangle_{\natural}\langle\tilde Q_2\rangle_{\natural},
@@ -312,7 +601,7 @@ $$</p>
 \mathsf M_2(\tilde Q)=Q_tI_2-i\bigl(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3\bigr),
 $$</p>
 <p>and the determinant of that array is the norm with no factor, $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$. The identity is stated once, in <em>Matrix Representations Conventions</em>, and used afterwards as a bridge; outside it the word <em>determinant</em> is not applied to an element. Here it is the reason multiplicativity is forced, because the determinant of a product of arrays is the product of the determinants. Two hundred random draws: zero failures, worst error $2.0\times10^{-15}$.</p>
-<p><strong>Invariance under every reversible motion follows from the same property.</strong> For $U$ with $UU^{*}=e_t$, so that $N(U)=1$,</p>
+<p><strong>Invariance under every reversible motion follows from the same property.</strong> For $U$ with $U^{*}U=e_t$, so that $N(U)N(U^{*})=1$,</p>
 <p>$$
 N\bigl(U\tilde QU^{*}\bigr)=N(U)N(\tilde Q)N(U^{*})=N(\tilde Q).
 $$</p>
@@ -347,7 +636,7 @@ $$</p>
 <tr>
 <td>the norm $N$</td>
 <td>$-m^{2}c^{2}$, fixed</td>
-<td>$\tfrac14-\lvert\vec s_\Psi\rvert^{2}$, free</td>
+<td>$\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)$, free</td>
 </tr>
 <tr>
 <td>what moves it</td>
@@ -378,14 +667,61 @@ $$</p>
 </table></div>
 <p><strong>The two columns are the same two lines of algebra with the names swapped.</strong> On the material side the norm is pinned and the doubled scalar part runs: a particle has a definite mass and a frame-dependent energy. On the informational side that number is pinned and the norm runs: every state has unit total probability and the information varies from state to state.</p>
 <p><strong>The slogan the corpus uses for the swap is exact.</strong> Mass is what the frame cannot move; information is what the frame leaves free.</p>
+<h3 id="fixed-and-running">Fixed and Running</h3>
+<p><strong>The slogan is exact, and it is easy to state one step too strongly.</strong> <em>Mass is what the frame cannot move; information is what the frame leaves free</em> is correct, but it is correct about the sector's <em>pinned</em> coordinate and not about the algebra, and the difference decides whether a sentence is a theorem or an error.</p>
+<p><strong>A congruence does the same thing in both sectors: it preserves $N$ and it moves $2\,\mathrm{Sc}$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>material, $\mathbb{B}_{\Phi}$</th>
+<th>informational, $\mathbb{B}_{\Psi}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pinned by the definition of the object</td>
+<td>$N=-m^{2}c^{2}$, the mass shell</td>
+<td>$2\,\mathrm{Sc}=1$, the normalisation</td>
+</tr>
+<tr>
+<td>$N$ of the element under a congruence</td>
+<td>fixed</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}$ of the element under a congruence</td>
+<td>runs, $2iE/c$</td>
+<td>runs</td>
+</tr>
+<tr>
+<td>does the group preserve the pinned coordinate?</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>what the sector's own reading does</td>
+<td>stays put: $m$ does not run</td>
+<td>must re-pin, and then runs</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The row that carries the whole distinction is the fourth.</strong> On $\mathbb{B}_{\Phi}$ the definition pins $N$ and the group preserves $N$, so a boost carries an on-shell element to another on-shell element of the same mass, and the sector's pinned reading is boost-invariant. On $\mathbb{B}_{\Psi}$ the definition pins $2\,\mathrm{Sc}$ and the group does not preserve it, so a boost carries a state <em>off its slice</em>: the image is a positive element of $\mathbb{B}_{\Psi}$ whose doubled scalar part is $\cosh\theta+\sinh\theta\,(\vec s_\Psi\cdot\vec u)$, not one.</p>
+<p><strong>That is the mechanics of the running impurity, and it is why the re-pinning is not optional.</strong> Divide the image by its own doubled scalar part and the radius moves by velocity addition, $r'=(r+\tanh\theta)/(1+r\tanh\theta)$, to $3.3\times10^{-16}$; the entropy read there moves with it. Neither the norm of the element nor the mass of a particle ever does.</p>
+<p><strong>The inversion is a common error and it is worth naming.</strong> A table that puts the running quantity on $N$ in the informational column, and the invariant on $2\,\mathrm{Sc}$, has the group backwards: a congruence preserves $N$ and moves $2\,\mathrm{Sc}$, in both sectors and without exception.</p>
+<p><strong>So there are two statements, and only one of them is the slogan.</strong></p>
+<p><strong>The first, and the correct one.</strong> The frame cannot move $N$. It moves the slice, and the impurity read on the re-fixed slice therefore runs.</p>
+<p><strong>The second, and the wrong one.</strong> <em>A boost purifies a state</em>, or <em>a boost lowers its entropy</em> without qualification. A boost cannot purify anything: it leaves $N$ of the element fixed, and the only way to a lower re-pinned impurity is a different frame, not a different state.</p>
+<p><strong>The mirror is therefore near and not perfect, and the imperfection is the subject's sharpest asymmetry.</strong> In the material sector the coordinate the definition pins is also the coordinate the group preserves; in the informational sector it is not. Mass is pinned twice, by the definition and by the group. Normalisation is pinned once, by the definition alone, and the group spends it.</p>
+<p><strong>Verified.</strong> On shell, $N=-m^{2}c^{2}$ at nine rapidities from $-2$ to $2$ to $1.8\times10^{-14}$ while $E/c$ runs from $1.60$ to $8.74$; a congruence with $\lvert N(U)\rvert=1$ preserves $N(\tilde{Ϛ}_\Psi)$ to $2.2\times10^{-16}$ while $2\,\mathrm{Sc}$ moves; and the re-pinned radius follows velocity addition to $3.3\times10^{-16}$.</p>
 <h2 id="two-traps">Two Traps</h2>
 <p><strong>The first trap is reading $N=0$ on $\mathbb{B}_{\Psi}$ as massless.</strong> It is not. $N=0$ on the informational sector means pure. <em>Massless</em> names the null cone of the material sector, and the two cones are different subsets of different sectors even though they are written with the same equation. The corpus warns at the site: <em>Nullness here is nullness for the quaternionic norm of this algebra. It is not a statement that a pure state has zero energy, zero probability or zero norm for the Hermitian form, whose value on an idempotent is $\tfrac12$.</em> Confusing the two produces the false statement that a pure state is trivial.</p>
 <p><strong>The second trap is reading $N$ off the normalised slice.</strong> Off the slice $N$ is a form with a scale: doubling the state multiplies $N$ by four and does not touch the purity. The impurity reading needs the slice $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$, or the scale-free ratio</p>
 <p>$$
 \frac{N}{\bigl(\mathrm{Sc}\,\tilde{Ϛ}_\Psi\bigr)^{2}} ,
 $$</p>
-<p>which is $1-4\lvert\vec s_\Psi\rvert^{2}$ on the slice and is unchanged on every positive multiple of the state, so it is a property of the state and not of the representative.</p>
-<p><strong>This also settles an apparent conflict between two uses of one symbol.</strong> $N=-m^{2}c^{2}$ is a mass squared in the material reading and $N=\tfrac14-\lvert\vec s_\Psi\rvert^{2}$ is an impurity at most $\tfrac14$ in the informational one. They are not two definitions. They are one form, read on two planes, in two sectors, with two different objects held fixed.</p>
+<p>which is $1-\lvert\vec s_\Psi\rvert^{2}$ on the slice and is unchanged on every positive multiple of the state, so it is a property of the state and not of the representative.</p>
+<p><strong>This also settles an apparent conflict between two uses of one symbol.</strong> $N=-m^{2}c^{2}$ is a mass squared in the material reading and $N=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)$ is an impurity at most $\tfrac14$ in the informational one. They are not two definitions. They are one form, read on two planes, in two sectors, with two different objects held fixed.</p>
 <h2 id="the-sign-as-classifier">The Sign as Classifier</h2>
 <p><strong>On the state cone the three signs are three verdicts.</strong> Positivity of the state is $h_t\ge\lvert\vec h_\Psi\rvert$, which is $N\ge0$.</p>
 <div class="table-scroll"><table>
@@ -412,13 +748,18 @@ $$</p>
 </table></div>
 <p><strong>This is the mirror of the material reading.</strong> A physical particle has $N<0$ there, because the mass shell is $N=-m^{2}c^{2}$. The same cone, read from the other side: the interior of the material cone is the region of negative $N$ and the interior of the state cone is the region of positive $N$.</p>
 <h2 id="what-is-forced-and-what-is-dictionary">What Is Forced and What Is Dictionary</h2>
-<p><strong>Four statements are forced by the algebra, and no physical reading enters.</strong></p>
+<p><strong>Nine statements are forced by the algebra, and no physical reading enters.</strong></p>
 <p><strong>The first.</strong> $N$ is multiplicative, and therefore invariant under congruence by an element of norm one. This is algebra, and the numerical checks confirm it rather than establish it.</p>
-<p><strong>The second.</strong> On the normalised slice, $N=\tfrac14-\lvert\vec s_\Psi\rvert^{2}=\lambda_+\lambda_-$, zero exactly at the idempotents and maximal at the centre. This follows from the eigenvalues of a $2\times2$ Hermitian matrix.</p>
+<p><strong>The second.</strong> On the normalised slice, $N=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)=\lambda_+\lambda_-$, zero exactly at the idempotents and maximal at the centre. This follows from the eigenvalues of a $2\times2$ Hermitian matrix.</p>
 <p><strong>The third.</strong> The spectral entropy is a function of $N$ on the slice, by the monotone change of variable $\lambda_+=\tfrac12(1+\sqrt{1-4N})$.</p>
 <p><strong>The fourth.</strong> Multiplication by $i$ reverses the sign of $N$ and exchanges the two inertias. This is $i^{2}=-1$ and the centrality of $i$.</p>
-<p><strong>Four further statements are readings, and the corpus says so at the sites.</strong> The identification of $N$ with <em>impurity</em> is a name for the eigenvalue product. The thermal reading requires the identification $\beta=1/(k_BT)$ and the Gibbs construction. The concurrence formula imports the standard two-qubit expression for a pure pair; the framework computes the reduced state's norm and does not by itself define an entanglement measure. And the identification of $\mathbb{B}_{\Psi}$ with the state space of a physical theory is the programme's step, not the algebra's.</p>
-<p><strong>A reader who wants the algebra and not the programme can keep the first four and drop the last four.</strong> Everything in §<em>The State Slice</em> survives the drop except the words <em>entropy in the thermodynamic sense</em>, <em>temperature</em> and <em>entanglement</em>.</p>
+<p><strong>The fifth.</strong> On the slice the Born weight along a unit axis is linear in the state's vector, $p(\vec u)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr)$. This is $\tilde\Pi_1(\vec u)=\tfrac12(e_t+i\vec u)$ and one scalar part.</p>
+<p><strong>The sixth.</strong> The largest bias over the axes is the radius, $b_{\max}=\lvert\vec s_\Psi\rvert$. This is the Cauchy–Schwarz inequality for the real three-vector, and it is what makes the entropy a function of a measured number.</p>
+<p><strong>The seventh.</strong> The null set is closed under multiplication by any element on both sides, so it absorbs. This is multiplicativity read at zero.</p>
+<p><strong>The eighth.</strong> It is not closed under addition: $\tilde\Pi_1(\vec u)+\tilde\Pi_2(\vec u)=e_t$ is a sum of two null elements with norm one. So the cone is a multiplicative semigroup and not an ideal, and the word <em>ideal</em> applies to it only as a limit.</p>
+<p><strong>The ninth.</strong> No reversible motion follows the thermal path. A congruence with $\lvert N(U)\rvert=1$ preserves $N$, and $N=1/(4\cosh^{2}x)$ varies along the Gibbs path, so the path is not an orbit and thermalisation is necessarily non-invertible.</p>
+<p><strong>Seven further statements are readings, and the corpus says so at the sites.</strong> The identification of $N$ with <em>impurity</em> is a name for the eigenvalue product. The thermal reading requires the identification $\beta=1/(k_BT)$ and the Gibbs construction. The concurrence formula imports the standard two-qubit expression for a pure pair; the framework computes the reduced state's norm and does not by itself define an entanglement measure. The identification of $\mathbb{B}_{\Psi}$ with the state space of a physical theory is the programme's step, not the algebra's. The reading of the radius as a speed, $r=\tanh\rho$, is the Klein model of velocity space: the algebra supplies the ball and the boost, not the word <em>velocity</em>. And the hemisphere of radius $\tfrac12$ is the Bures picture, imported by monotonicity; the corpus fixes its boundary value, not its interior. Last, the claim that no preparation reaches exact purity needs a premise about couplings that the algebra does not supply, as §<em>The Ideal Boundary</em> states. §<em>The Thermodynamic Reading</em> is downstream of the thermal reading: its path, its two ends, Curie's law and the Schottky form are consequences of the Gibbs formula, and they are conditional on it.</p>
+<p><strong>A reader who wants the algebra and not the programme can keep the forced list and drop the readings.</strong> Everything in §<em>The State Slice</em>, §<em>The Picture</em> and §<em>The Ideal Boundary</em> survives the drop except the words <em>entropy in the thermodynamic sense</em>, <em>temperature</em>, <em>entanglement</em>, <em>speed</em>, <em>Bures</em> and <em>unreachable in practice</em>.</p>
 <h2 id="the-audit">The Audit</h2>
 <p><strong>No contradiction was found between this article and the corpus after the restructuring.</strong> The passages that state the same object were read at the sites, and they agree:</p>
 <div class="table-scroll"><table>
@@ -435,7 +776,7 @@ $$</p>
 </tr>
 <tr>
 <td><em>States, Observables and the Born Weight</em></td>
-<td>$S_{\mathrm{lin}}=2\,\mathrm{Sc}(\tilde{Ϛ}-\tilde{Ϛ}^{2})=2N$; the spectral entropy; the eigenvalue product $\tfrac14-\lvert\vec s_\Psi\rvert^{2}$; the four readings; the nullness warning</td>
+<td>$S_{\mathrm{lin}}=2\,\mathrm{Sc}(\tilde{Ϛ}-\tilde{Ϛ}^{2})=2N$; the spectral entropy; the eigenvalue product $\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)$; the four readings; the nullness warning</td>
 </tr>
 <tr>
 <td><em>What the Biquaternion Algebra Cannot Do</em></td>
@@ -510,14 +851,19 @@ $$</p>
 <p><strong>The second caution.</strong> The entropy formula $S=h\bigl((1+\sqrt{1-4N})/2\bigr)$ is a function of $N$ alone <em>on the normalised slice</em>. Off the slice $N$ carries a scale and the formula needs the ratio of §<em>Two Traps</em>.</p>
 <p><strong>The third caution.</strong> The doubled scalar part and the norm are affinely related on the slice and must not be exchanged in words, because one rises with information and the other falls.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>One form, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, is the interval on the material sector and the impurity on the informational one.</strong> On the state slice $N=\tfrac14-\lvert\vec s_\Psi\rvert^{2}=\lambda_+\lambda_-$, zero exactly on the pure states and maximal at the centre.</p>
+<p><strong>One form, $\langle\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2}$, is the interval on the material sector and the impurity on the informational one.</strong> On the state slice $N=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)=\lambda_+\lambda_-$, zero exactly on the pure states and maximal at the centre.</p>
 <p><strong>It cannot be a probability.</strong> It is indefinite and vanishes on a three-dimensional cone of nonzero elements. The positive form of the sector is the Hermitian form, of inertia $(4,0)$, and the two are affinely related on the slice.</p>
 <p><strong>The entropy is a function of $N$ alone on the slice</strong>, through $\lambda_+=\tfrac12(1+\sqrt{1-4N})$. The linear entropy is $2N$, the concurrence is $2\sqrt N$, and the thermal state gives $N=1/(4\cosh^{2}\beta\lvert\vec h_\Psi\rvert)$.</p>
 <p><strong>$N$ is multiplicative and invariant under congruence of norm one.</strong> The doubled scalar part is neither. That is why $N$ is the ledger entry, and the factor two belongs to the normalisation alone.</p>
 <p><strong>The direction is a deficit.</strong> High $N$ is low information. The purity, the positivity of a state and the saturation of the magnetisation are the same statement about the same number.</p>
 <p><strong>The duality is one pair of operations with the roles exchanged.</strong> Material: norm fixed, doubled scalar part free. Informational: doubled scalar part fixed, norm free.</p>
+<p><strong>The picture is a cone and one of its slices.</strong> The states are the inside of the null cone, the pure states are its surface, and the ball is the cut at $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$. On the slice $4N=1-\lvert\vec s_\Psi\rvert^{2}=1-b_{\max}^{2}$, where $b_{\max}$ is the largest bias $2p(\vec u)-1$ any axis gives. The radius is a speed, $r=\tanh\rho$ and $N=1/(4\gamma^{2})$, and the faithful drawing of the slice is a hemisphere of radius $\tfrac12$ whose latitude is the purity.</p>
+<p><strong>The boundary is one cone with two populations.</strong> Massless elements and pure states lie on it exactly. No invertible congruence crosses it, since the multiplier of $N$ under congruence is $\lvert N(U)\rvert^{2}$, and no finite boost reaches it, since $1-r'=(1-r)(1-t)/(1+rt)$. The null set absorbs multiplication on both sides and is not closed under addition, so it is an ideal only as a limit.</p>
+<p><strong>Temperature is a rapidity.</strong> The identification $\theta=\beta\lvert\vec h_\Psi\rvert$ makes the thermal family one renormalised congruence orbit of the centre: $r=\tanh\theta$ and $N=1/(4\cosh^{2}\theta)$, with rapidities adding and radii composing by the velocity-addition law. The orbit itself keeps $N=\tfrac14$; only the division by $2\,\mathrm{Sc}$ produces the running impurity, which is why the family is a family of frames.</p>
+<p><strong>Temperature traverses the ball, and the third law is the far end of the traverse.</strong> The Gibbs state is $\vec s_\Psi=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$, with $N=1/(4\cosh^{2}x)$ and $x=\beta\lvert\vec h_\Psi\rvert$. $T=\infty$ is the centre, $N=\tfrac14$; $T=0$ is the boundary, $N=0$, reached only as a limit. Curie's law is the linear term, $\lvert\vec s_\Psi\rvert\approx\lvert\vec h_\Psi\rvert/(k_BT)$; the entropy vanishes exponentially, $S_{\mathrm{vN}}\sim2xe^{-2x}$; and a central Hamiltonian makes the path a point, so the reading needs a gap.</p>
+<p><strong>Four objections, and three are answered by existing articles.</strong> No generator for the path (obstruction O18, and the path is excluded from the reversible group since it crosses level sets of $N$); no principle selecting the channel (unitality is exactly the fixing of the centre); the third law reproduced and not derived (the Nernst form is untouched); the level ceiling proved, not open (every module is a sum of two-dimensional copies, and infinite dimension is allowed). Only the selection of the channel is a genuine gap.</p>
 <p><strong>Two traps, both named in the corpus.</strong> $N=0$ on $\mathbb{B}_{\Psi}$ is pure and not massless; and $N$ reads as an impurity only on the normalised slice, or as the scale-free ratio.</p>
-<p><strong>Four statements are forced and four are readings.</strong> Multiplicativity, the eigenvalue product, the fact that the entropy is a function of $N$ on the slice, and the sign reversal under $i$ are algebra. Impurity, temperature, entanglement and the identification of the sector with a physical state space are the programme's.</p>
+<p><strong>Nine statements are forced and seven are readings.</strong> Multiplicativity, the eigenvalue product, the entropy as a function of $N$ on the slice, the sign reversal under $i$, the linear Born law, the maximal-bias identity, the absorption of the null set, its failure of additivity and the non-orbit character of the thermal path are algebra. Impurity, temperature, entanglement, the identification of the sector with a physical state space, the radius as a speed, the hemisphere and the practical unreachability of purity are the programme's.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -564,15 +910,15 @@ $$</p>
 <td>the switch between the sectors</td>
 </tr>
 <tr>
-<td>$\tilde{Ϛ}_\Psi=\tfrac12 e_t+i\vec s_\Psi$</td>
-<td>a state; $\lvert\vec s_\Psi\rvert\le\tfrac12$; $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$</td>
+<td>$\tilde{Ϛ}_\Psi=\tfrac12\bigl(e_t+i\vec s_\Psi\bigr)$</td>
+<td>a state; the Bloch vector $\vec s_\Psi$, $\lvert\vec s_\Psi\rvert\le1$; $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi=1$</td>
 </tr>
 <tr>
-<td>$N=\tfrac14-\lvert\vec s_\Psi\rvert^{2}=\lambda_+\lambda_-$</td>
+<td>$N=\tfrac14\bigl(1-\lvert\vec s_\Psi\rvert^{2}\bigr)=\lambda_+\lambda_-$</td>
 <td>the impurity on the slice</td>
 </tr>
 <tr>
-<td>$\lambda_\pm=\tfrac12\pm\lvert\vec s_\Psi\rvert$</td>
+<td>$\lambda_\pm=\tfrac12\bigl(1\pm\lvert\vec s_\Psi\rvert\bigr)$</td>
 <td>the spectrum; also the two weights $2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde\Pi_{1,2})$ along the state's own axis</td>
 </tr>
 <tr>
@@ -584,8 +930,8 @@ $$</p>
 <td>the defect from idempotency; central, and the product of the eigenvalues</td>
 </tr>
 <tr>
-<td>$\mathcal H=\tfrac14+\lvert\vec s_\Psi\rvert^{2}$</td>
-<td>the purity on the slice</td>
+<td>$\mathcal H=\tfrac14\bigl(1+\lvert\vec s_\Psi\rvert^{2}\bigr)$</td>
+<td>the Hermitian form on the slice; twice it is the purity $2\,\mathrm{Sc}\,\tilde{Ϛ}_\Psi^{2}$</td>
 </tr>
 <tr>
 <td>$S_{\mathrm{lin}}=2\,\mathrm{Sc}(\tilde{Ϛ}_\Psi-\tilde{Ϛ}_\Psi^{2})=2N$</td>
@@ -600,7 +946,7 @@ $$</p>
 <td>the concurrence of a reduced state of a pure pair</td>
 </tr>
 <tr>
-<td>$\vec s_\Psi=-\tfrac12\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$</td>
+<td>$\vec s_\Psi=-\tanh(\beta\lvert\vec h_\Psi\rvert)\vec u_\Psi$</td>
 <td>the Gibbs state; $N=1/(4\cosh^{2}\beta\lvert\vec h_\Psi\rvert)$</td>
 </tr>
 <tr>
@@ -608,11 +954,179 @@ $$</p>
 <td>the scale-free impurity, valid off the slice</td>
 </tr>
 <tr>
+<td>$p(\vec u)=2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\tilde\Pi_1(\vec u)\bigr)=\tfrac12\bigl(1+\vec s_\Psi\cdot\vec u\bigr)$</td>
+<td>the Born weight of the outcome along the unit axis $\vec u$; one projection of the state's vector</td>
+</tr>
+<tr>
+<td>$b_{\max}=\max_{\vec u}\bigl(2p(\vec u)-1\bigr)=\lvert\vec s_\Psi\rvert$</td>
+<td>the largest bias any axis gives; $S_{\mathrm{lin}}=\tfrac12\bigl(1-b_{\max}^{2}\bigr)$</td>
+</tr>
+<tr>
+<td>$\vec s_\Psi=\sum_i\bigl(2p(\vec u_i)-1\bigr)\vec u_i$</td>
+<td>the reconstruction of the state from three orthogonal axes</td>
+</tr>
+<tr>
+<td>$r=\lvert\vec s_\Psi\rvert=\tanh\rho$, $\gamma=\cosh\rho$</td>
+<td>the radius as a speed; $N=1/(4\gamma^{2})$, $S_{\mathrm{lin}}=1/(2\gamma^{2})$</td>
+</tr>
+<tr>
+<td>$4N=1-\lvert\vec s_\Psi\rvert^{2}$</td>
+<td>the slice as the interior of the null cone, seen in section</td>
+</tr>
+<tr>
+<td>$x=\beta\lvert\vec h_\Psi\rvert$</td>
+<td>the thermal parameter; $\vec s_\Psi=-\tanh x\,\vec u_\Psi$, $N=1/(4\cosh^{2}x)$, $S_{\mathrm{vN}}=\log2+\log\cosh x-x\tanh x$</td>
+</tr>
+<tr>
+<td>$N\bigl(U\tilde QU^{*}\bigr)=\lvert N(U)\rvert^{2}N(\tilde Q)$</td>
+<td>the sign of $N$ as a congruence invariant; unity when $N(U)=1$</td>
+</tr>
+<tr>
+<td>$N(AB)=0$ for $N(A)=0$</td>
+<td>absorption: the null set is closed under multiplication on both sides</td>
+</tr>
+<tr>
+<td>$\lvert N(U)\rvert=1\Rightarrow N\bigl(U\tilde{Ϛ}_\Psi U^{*}\bigr)=N(\tilde{Ϛ}_\Psi)$</td>
+<td>reversible motion preserves $N$; the Gibbs path changes it, so no congruence follows that path</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_1(\vec u)+\tilde\Pi_2(\vec u)=e_t$</td>
+<td>the null set is not closed under addition; the cone is not an ideal</td>
+</tr>
+<tr>
 <td>$\mathsf M_2(\tilde Q)=Q_tI_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$</td>
 <td>the $2\times2$ image; $\det\mathsf M_2(\tilde Q)=\langle\tilde Q\rangle_{\natural}$, stated once in <em>Matrix Representations Conventions</em></td>
 </tr>
 </tbody>
 </table></div>
+<h2 id="proposed-articles">Proposed Articles</h2>
+<p><strong>The inventory of what this article's subject still owes, the article that would discharge each debt, and the place in the corpus where it belongs.</strong> The placement column names the section of <code>physics.md</code> and the neighbour the new entry would follow, because the menus carry the editorial reading order and an article that no menu links sorts last.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the article</th>
+<th>what it would establish</th>
+<th>where it goes</th>
+<th>state</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Group Is Shared, the Space Is Not</em></td>
+<td>the four-vector $(2\,\mathrm{Sc},\vec s_\Psi)$; the Lorentz action as the isometry group of the Klein ball; the failure on the Bures hemisphere; the non-invariance of the sliced entropy; the Wigner angle on the informational side</td>
+<td><em>Relativity</em> › <em>The Velocity, the Sky and the Measure</em>, after <em>Velocity Space as Hyperbolic Geometry</em></td>
+<td><strong>written:</strong> <code>articles_physics/the-group-is-shared-the-space-is-not.md</code></td>
+</tr>
+<tr>
+<td><em>What the Bures Metric Cannot See</em></td>
+<td>the polar split $U=LR$: $R$ unitary and Bures-isometric, $L$ Hermitian and Bures-distorting; trace preservation as the dividing line, so the three-way equivalence of Bures isometry, slice preservation and unitarity; the pole moving, the purity order reversing, the third law invisible and the conformal class surviving</td>
+<td><em>Relativistic Quantum Theory</em> › <em>Focus on informational aspects</em>, after <em>Spin Entropy and the Lorentz Group</em></td>
+<td><strong>written:</strong> <code>articles_physics/what-the-bures-metric-cannot-see.md</code></td>
+</tr>
+<tr>
+<td><em>One Angle, Two Sectors: The Wigner Rotation Read Twice</em></td>
+<td>the closed form for $\Omega$; the axis $\pm\vec u_1\times\vec u_2$; that the number is shared because it is a property of $\mathbb{B}$; the gyrogroup reading</td>
+<td><em>Relativity</em> › <em>The Velocity, the Sky and the Measure</em>, after <em>The Wigner Rotation and the Information Content of a Boost</em></td>
+<td><strong>written:</strong> <code>articles_physics/one-angle-two-sectors-the-wigner-rotation-read-twice.md</code></td>
+</tr>
+<tr>
+<td><em>The Thermal Path Is Not an Orbit</em></td>
+<td>thermalisation excluded from the reversible group; the channel as the only possible generator; a thermodynamics of states rather than of motions</td>
+<td><em>Relativistic Quantum Thermodynamics</em> › <em>Temperature and the State</em>, after <em>Quantum Thermodynamics</em></td>
+<td><strong>written:</strong> <code>articles_physics/the-thermal-path-is-not-an-orbit.md</code></td>
+</tr>
+<tr>
+<td><em>Temperature Is a Rapidity</em></td>
+<td>$\theta=\beta\lvert\vec h_\Psi\rvert$ as the rapidity of the thermal family; the family as one renormalised congruence orbit of the centre; rapidities add and radii compose; the unreachability of $T=0$ and of $c$ as one bound</td>
+<td><em>Relativistic Quantum Thermodynamics</em> › <em>Temperature and the State</em>, after <em>Equilibrium Partition Function in a Moving Frame</em></td>
+<td><strong>written:</strong> <code>articles_physics/temperature-is-a-rapidity.md</code></td>
+</tr>
+<tr>
+<td><em>The Renormalised Impurity: What a Boosted Observer Measures</em></td>
+<td>that a congruence takes a state off its slice, and that the re-pinned impurity runs by velocity addition while $N$ of the element does not</td>
+<td><em>Relativistic Quantum Thermodynamics</em> › <em>Temperature and the State</em>, adjacent to the two above</td>
+<td><strong>written:</strong> <code>articles_physics/the-renormalised-impurity-what-a-boosted-observer-measures.md</code></td>
+</tr>
+<tr>
+<td><em>Orientation Is Relational</em></td>
+<td>that no single state registers $R$; that only a comparison does; and what follows for frame-dependent entanglement</td>
+<td><em>Relativistic Quantum Theory</em> › <em>Focus on informational aspects</em>, after <em>Frame-Dependent Entanglement</em></td>
+<td><strong>written:</strong> <code>articles_physics/orientation-is-relational.md</code></td>
+</tr>
+<tr>
+<td>a section in <em>Quantum Thermodynamics in Biquaternionic Form</em></td>
+<td>the third law as the unattainability of the pure boundary: the three formulations, which one is proved and which imported, and the degenerate Hamiltonian with its residual entropy</td>
+<td><em>Relativistic Quantum Thermodynamics</em> › <em>The Ledger</em>, after <em>The Thermodynamics of a Quantum Fluid</em></td>
+<td><strong>written:</strong> §<em>The Third Law in Three Formulations</em> in <code>articles_physics/quantum-thermodynamics-in-biquaternionic-form.md</code> — the Nernst form proved and shown to be $S=-N\log N+N+O(N^{2}\log N)$, unattainability imported and identified with the Gibbs path lying on no orbit, the absolute-entropy form refuted by $\vec h_\Psi=0$ giving $N=\tfrac14$ and $S=\log2$ at every $\beta$</td>
+</tr>
+<tr>
+<td><em>Curie's Law and the Saturation of the Bloch Radius</em></td>
+<td>the expansion and its error; saturation at the boundary; the degenerate case where no Curie law holds; the classical limit</td>
+<td><em>Non Relativistic Approximation of Quantum Theory</em> › <em>Focus on informational aspects</em></td>
+<td><strong>written:</strong> <code>articles_physics/curies-law-and-the-saturation-of-the-bloch-radius.md</code></td>
+</tr>
+<tr>
+<td><em>Mass Is Pinned Twice, Normalisation Once</em></td>
+<td>the asymmetry of §<em>Fixed and Running</em>: the definition and the group agree in one sector and disagree in the other, and that disagreement is the source of every running quantity on the informational side</td>
+<td><em>Biquaternion Universe</em>, after <em>Energy and Information</em></td>
+<td><strong>written:</strong> <code>articles_physics/mass-is-pinned-twice-normalisation-once.md</code></td>
+</tr>
+<tr>
+<td><em>Channels, Unitality and the Centre</em></td>
+<td>which channels occur, given the algebra; the centre as the ceiling of every channel; unitality as the fixing of the centre</td>
+<td><em>Biquaternion Non Relativistic Approximation of Quantum Theory</em>, after <em>Quantum Channels and the Reversible/Irreversible Dichotomy</em></td>
+<td><strong>written:</strong> <code>articles_physics/channels-unitality-and-the-centre.md</code> — admission refused as a goal; simplicity makes multiplicativity equivalent to Choi rank one; covariance selects the mixture family with its three boundaries at $c=-\tfrac13$, $\lvert c\rvert=1$ and $\lambda\in[0,1]$; unitality gives the arrow $N'\ge N$; the rank staircase $1/2/4$ with $\mathbb{B}\otimes\mathbb{B}$ at $32$ real dimensions and $M_8$ at $128$</td>
+</tr>
+<tr>
+<td>a section in <em>Zero Divisors as a Physical Locus</em></td>
+<td>the congruence invariance of the sign of $N$: a material element never crosses the cone, a state never crosses the boundary</td>
+<td><em>Non Relativistic Approximation of Quantum Theory</em> › <em>Particles of spin 0</em>, the article already there</td>
+<td><strong>written:</strong> §<em>What the flow preserves is the sign, not only the membership</em> in <code>articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.md</code></td>
+</tr>
+<tr>
+<td>a section in <em>What the Biquaternion Algebra Cannot Do</em></td>
+<td>O18 with the sharper consequence: the Gibbs path lies on no orbit of any reversible motion</td>
+<td><em>Biquaternion Universe</em>, the article already there</td>
+<td><strong>written:</strong> <em>The sharper consequence: no reversible motion is a thermal motion</em> under O18 in <code>articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.md</code></td>
+</tr>
+<tr>
+<td>a section in <em>Thomas Precession as a Biquaternion Rotor Effect</em></td>
+<td>that Thomas precession is the differential of the Wigner angle along a path, not a second effect</td>
+<td><em>Relativity</em> › <em>Three Exercises</em>, the article already there</td>
+<td><strong>written:</strong> §<em>One Angle at Two Separations</em> in <code>articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.md</code></td>
+</tr>
+<tr>
+<td><em>Three Drawings of One Slice</em></td>
+<td>the flat ball, the Klein ball and the Bures hemisphere in one place</td>
+<td><em>Algebra Physical Interpretations</em> › <em>Geometry</em></td>
+<td>deferred; would restate three articles</td>
+</tr>
+<tr>
+<td><em>Mass and Rapidity: One Entry Fee or Two</em></td>
+<td>whether $m$ on one sector and $\rho$ on the other are one quantity read twice</td>
+<td>—</td>
+<td>refused; blocked by O20, the algebra has no scale</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One rule decides every entry.</strong> An article is worth writing when it carries a theorem or a computation that no existing article carries. The fourteen entries now written each do; the deferred and the refused ones would not, and the corpus is already large enough that a restatement costs more than it buys.</p>
+<p><strong>The fourteen written entries go to four places.</strong> Six belong to <em>Relativistic Quantum Thermodynamics</em>, three to the informational subsections of the quantum theory menus, three to <em>Relativity</em> and two to <em>Biquaternion Universe</em>, because those are the places where the state slice is already read. The <em>Relativity</em> entries are the ones about the frame and not about the state: the shared group, the Wigner angle and the precession that differentiates it.</p>
+<p><strong>One entry was blocked on an opening that turned out not to be needed.</strong> <em>Channels, Unitality and the Centre</em> asked which channels occur, and the answer is that the algebra admits all of them, so the question had no content. It is written now, on the question that does have content: which channels are forced. The first entry, <em>The Group Is Shared, the Space Is Not</em>, still asks what a congruence means when it is read on the ball rather than on spacetime, and that one does need a principle that selects structure rather than deriving it, as <em>What the Biquaternion Algebra Cannot Do</em> says under the heading of obstructions of dynamics and interpretation.</p>
+<p><strong>The list, in the order they were written.</strong></p>
+<ol>
+<li><em>The Group Is Shared, the Space Is Not.</em> It settles the largest number of sentences now standing as readings, and it is where the word <em>speed</em> either earns its place or does not.</li>
+<li><em>What the Bures Metric Cannot See.</em> A theorem with a short proof and a large consequence, and it closes the question of what the hemisphere is for.</li>
+<li><em>One Angle, Two Sectors.</em> The closed form, the axis and the shared number.</li>
+<li><em>The Thermal Path Is Not an Orbit.</em> The non-orbit theorem and the necessity of a channel.</li>
+<li><em>Temperature Is a Rapidity.</em> The renormalised orbit, the addition law and the one bound shared by $T=0$ and $c$.</li>
+<li><em>The Renormalised Impurity.</em> What a boosted observer measures, and why the number runs while $N$ does not.</li>
+<li><em>Orientation Is Relational.</em> Short, and it prevents the error of reading $R$ off a single state.</li>
+<li><em>The Third Law in Three Formulations.</em> Now a section in <em>Quantum Thermodynamics in Biquaternionic Form</em>: the rate laws an article would have proved are in 5 and 9.</li>
+<li><em>Curie's Law and the Saturation of the Bloch Radius.</em></li>
+<li><em>Mass Is Pinned Twice, Normalisation Once.</em></li>
+<li><em>Channels, Unitality and the Centre.</em> Now written: the question was reframed from admission to selection, and the answer is that covariance selects the mixture family, unitality supplies the arrow, and the Choi rank prices the loss of the product.</li>
+</ol>
+<p><strong>The count is sixteen entries: ten articles, four sections, one deferred and one refused.</strong> All ten articles are written and all four sections are written. One entry is deferred because it would restate three articles, and one is refused because O20 denies it a scale.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="../articles_physics/energy-and-information-four-conservation-laws-from-one-identity.html">Energy and Information: Four Conservation Laws from One Identity</a>, for the duality table and the reading of the two ledgers.</li>
@@ -623,6 +1137,11 @@ $$</p>
 <li><a href="../articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>, for the reading of an element in $\mathrm{Sc}$ and in $\langle\cdot\rangle_{\natural}$.</li>
 <li><a href="../articles_physics/norm-and-pairing-conventions.html">Norm and Pairing Conventions</a>, for the normalised state and the factor two.</li>
 <li><a href="../articles_physics/the-n-norm-mass-angle-and-the-cone.html">The N Norm: Mass, Angle and the Cone</a>, for the mass as a level set of the norm.</li>
+<li><a href="../articles_physics/the-fubini-study-geometry-and-the-biquaternion-norm.html">The Fubini–Study Geometry and the Biquaternion Norm</a>, for the hemisphere, the latitude as purity and the distances on it.</li>
+<li><a href="../articles_physics/quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a>, for the Gibbs state as a path in the ball, the potentials, the Schottky heat capacity and the KMS reading.</li>
+<li><a href="../articles_physics/quantum-channels-and-the-reversible-irreversible-dichotomy.html">Quantum Channels and the Reversible–Irreversible Dichotomy</a>, for the Kraus decomposition and the GKSL generator that a thermal path would need.</li>
+<li><a href="../articles_physics/the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.html">The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra</a>, for the level count, the module classification and the ceiling of §<em>The Fourth Remark</em>.</li>
+<li><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a>, for O18 and the other obstructions cited above.</li>
 </ul>
       </div>
     </main>
