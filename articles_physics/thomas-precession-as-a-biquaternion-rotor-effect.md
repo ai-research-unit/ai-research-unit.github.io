@@ -177,6 +177,44 @@ Only the **transverse** acceleration precesses the frame. Since $\vec a\times\ve
 
 The interval rotor $\tilde U_{\mathrm{int}}=\tilde U_{\vec v+d\vec v}\tilde U_{\vec v}^{\natural}$ is formed directly as a $2\times2$ complex matrix in the representation $\mathsf{M}_2(\vec e_\mu)=-i\sigma_\eta$, $\mathsf{M}_2(i)=iI_2$, and its polar decomposition $\tilde U_{\mathrm{int}}=\tilde U_{\Psi,\mathrm b}\tilde{u}$, $\tilde U_{\Psi,\mathrm b}=\sqrt{\tilde U_{\mathrm{int}}\tilde U_{\mathrm{int}}^{*}}$, $\tilde{u}=\tilde U_{\Psi,\mathrm b}^{-1}\tilde U_{\mathrm{int}}$, is carried out at $dr'_t=10^{-5}\,c$ for random non-collinear pairs $(\vec v,\vec a)$ with $|\vec v|<c$. The rotation vector of $\tilde{u}$ agrees with $\vec\omega_T\,dr'_t/c$ in both magnitude and direction to better than $10^{-10}$ in the units of the check; the collinear case gives zero on both sides. The sign is testable only off the collinear line, and it is the axis $\vec a\times\vec v$ that the exact product selects.
 
+## One Angle at Two Separations
+
+**The Wigner angle and the Thomas precession are one function evaluated at two separations.** The finite angle is a function of a *pair* of boosts, $\theta_W(\vec u_1,\vec u_2)$; a worldline supplies a curve of velocities and hence a curve of nearby pairs, and the precession rate is that same function divided by the separation in the limit
+
+$$
+\vec\omega_T=\frac{c}{dr'_t}\,\theta_W\bigl(\vec u_{\vec v},\vec u_{\vec v+d\vec v}\bigr)\Big|_{d\vec v\to0}.
+$$
+
+**Nothing is added between the two.** The finite angle is the compact factor of the quaternion product $\tilde U_{\vec u_2}\tilde U_{\vec u_1}^{\natural}$; the rate is that factor's leading term when the two boosts differ by $d\vec v$; and the only input to both is the multiplication law. What the previous section computed by expansion is therefore not a new object but the coefficient of the same object at zero separation.
+
+**The derivative reproduces the rate.** Over five triples $(\vec v,\vec a,dr'_t)$ the rotation angle of the interval rotor equals $(\gamma-1)\lvert\vec a_\perp\rvert\,dr'_t/v$ with ratio $1.000000$ in each case. Refining the step at fixed $(\lvert\vec v\rvert,\lvert\vec a\rvert)=(0.7,1.3)$:
+
+| $dr'_t$ | $\theta_W/dr'_t$ | $\omega_T$ | error |
+| --- | --- | --- | --- |
+| $10^{-2}$ | $0.743435468664$ | $0.743377298909$ | $5.8\times10^{-5}$ |
+| $10^{-3}$ | $0.743377882691$ | $0.743377298909$ | $5.8\times10^{-7}$ |
+| $10^{-4}$ | $0.743377339606$ | $0.743377298909$ | $4.1\times10^{-8}$ |
+
+The error falls by two orders per decade, so the finite angle is the rate times the step plus a term of second order: the two differ by $O(dr'^{2}_t)$ and agree in the limit.
+
+**The integral relation follows from the composition, and it is the stronger half of the statement.** Successive interval rotors multiply, so the rotation accumulated along a path is the product of their rotation factors; where the axis is constant the angles add, and the sum is the integral of the rate. Around a circle of radius $2$ at $\lvert\vec v\rvert=0.8$:
+
+| steps | $\sum\theta_W$ | $2\pi(\gamma-1)$ | error |
+| --- | --- | --- | --- |
+| $200$ | $4.187259509$ | $4.188790205$ | $1.5\times10^{-3}$ |
+| $2000$ | $4.188774893$ | $4.188790205$ | $1.5\times10^{-5}$ |
+| $20000$ | $4.188790016$ | $4.188790205$ | $1.9\times10^{-7}$ |
+
+**The accumulated angle is the integral of the rate, and the limits of the two are the same number.** The error falls by two orders per decade here as well, so the discrepancy is the discretisation and not a second effect.
+
+**The axis is one object too.** At three separations spanning three decades — $dr'_t=0.5$, $0.1$ and $10^{-3}$ — the interval rotor's axis is the normal to the plane of $\vec v$ and $\vec a$, and its overlap with $\pm(\vec a\times\vec v)/\lvert\vec a\times\vec v\rvert$ is $1.000000000000$ in every case. The retrograde sign recorded in §*The Continuous Limit* is therefore not a convention attached to the rate: it is the sign of the same angle at every separation, and it is already present in the finite product.
+
+**What this settles.** Thomas precession is not a second relativistic effect. It needs no second derivation, no additional postulate and no new physical input: it is the derivative of the Wigner angle along the worldline, and the Wigner angle is the compact factor of a quaternion product. A presentation that derives the finite angle in one place and the precession rate in another, without the relation, has derived one result twice; the corpus's *One Angle, Two Sectors* states the same thing from the holonomy side, where the finite angle is a curvature and the rate is a curvature per unit of path.
+
+**And the Thomas half is the derivative at small velocity.** The coefficient $\tfrac12$ is the $\lvert\vec v\rvert\to0$ limit of $\gamma^{2}/(\gamma+1)$, which is the $\lvert\vec v\rvert\to0$ limit of the rate; it is not an independent constant and carries no information beyond the small-velocity expansion of the same angle.
+
+**The limit of the statement.** It is kinematic throughout. It relates two functions of one pair of boost vectors and says nothing about the coupling of spin to the rotation, which is a separate import and is treated in §*The Thomas Half and the Spin–Orbit Coupling*. Nothing here bears on whether the precession is observable, only on the fact that the two names denote one function.
+
 ## The Thomas Rotor
 
 The precession can be written as a rotor conjugation in the same half-angle form used throughout the series. Let $\vec u_\omega=\vec u_{\vec a\times\vec v}$ be the unit axis and $\theta_T(r'_t)$ the accumulated angle, $d\theta_T=\omega_T\,dr'_t/c$. A spatial triad that is carried rigidly by the instantaneous rest frame rotates relative to the laboratory according to
@@ -328,7 +366,7 @@ $$
 \vec\omega_T\approx\frac{1}{2c^{2}}\,\vec a\times\vec v\quad(v\ll c),
 $$
 
-along $\vec a\times\vec v$, with only the transverse acceleration contributing. The precession is realised by the half-angle rotor $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ acting by conjugation on the rest-frame triad, with the same double-cover half-angle that acts one-sidedly on the spinor. For uniform circular motion the frame is retrograde, $\vec\omega_T=-(\gamma-1)\vec\Omega$, turning through $-2\pi(\gamma-1)$ per orbit; in the non-relativistic limit this is half of the orbital rate times $v^{2}/c^{2}$, opposite in sense. The kinematic precession is the origin of the factor $\tfrac12$ in the spin–orbit coupling, and it is the free-field piece of the general spin equation of motion treated in the companion article on the Bargmann–Michel–Telegdi equation.
+along $\vec a\times\vec v$, with only the transverse acceleration contributing. The two are one function at two separations: the rate is the derivative of the Wigner angle with respect to the separation of the pair of boosts, the accumulated angle around a closed orbit is the integral of the rate — summed interval by interval, $4.188790016$ against $2\pi(\gamma-1)=4.188790205$ at twenty thousand steps — and the axis is the normal to the plane of $\vec v$ and $\vec a$ at every separation, from $0.5$ down to $10^{-3}$. The precession is realised by the half-angle rotor $\tilde{u}_T=\exp(\tfrac{1}{2}\theta_T\vec u_{\omega,\mu}\vec e_\mu)$ acting by conjugation on the rest-frame triad, with the same double-cover half-angle that acts one-sidedly on the spinor. For uniform circular motion the frame is retrograde, $\vec\omega_T=-(\gamma-1)\vec\Omega$, turning through $-2\pi(\gamma-1)$ per orbit; in the non-relativistic limit this is half of the orbital rate times $v^{2}/c^{2}$, opposite in sense. The kinematic precession is the origin of the factor $\tfrac12$ in the spin–orbit coupling, and it is the free-field piece of the general spin equation of motion treated in the companion article on the Bargmann–Michel–Telegdi equation.
 
 ## Summary of Notation
 

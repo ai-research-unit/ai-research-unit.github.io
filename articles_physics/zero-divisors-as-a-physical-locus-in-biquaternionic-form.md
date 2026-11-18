@@ -177,6 +177,45 @@ Both identities were verified numerically to machine precision — the first wit
 
 This is the sharpest statement the article can make. The zero divisor cone is not a place the non-relativistic dynamics drives a system toward; it is the boundary that the algebra's division property, the semiclassical expansions and the non-relativistic description each has in its own way.
 
+### What the flow preserves is the sign, not only the membership
+
+**The congruence does more than preserve membership in the locus: it preserves the value up to a positive factor.** Write $N$ for the real part of $\langle\tilde Q\rangle_{\natural}$, the quantity the article's table already calls $N$. The quaternionic norm is multiplicative, so
+
+$$
+\langle\tilde U\tilde Q\tilde U^{*}\rangle_{\natural}
+=\langle\tilde U\rangle_{\natural}\,\langle\tilde Q\rangle_{\natural}\,\langle\tilde U^{*}\rangle_{\natural}
+=\bigl\lvert\langle\tilde U\rangle_{\natural}\bigr\rvert^{2}\,\langle\tilde Q\rangle_{\natural},
+$$
+
+because $\langle\tilde U^{*}\rangle_{\natural}=\overline{\langle\tilde U\rangle_{\natural}}$. Verified on three hundred random pairs, with the complex structure mixed at random: the worst relative deviation of the identity is $3.1\times10^{-14}$.
+
+**Three consequences, in increasing sharpness.**
+
+1. **A unit rotor preserves the value.** That is the identity of the preceding subsection, and it is what makes the locus kinematically inert.
+2. **Any invertible element preserves the sign.** The factor $\lvert\langle\tilde U\rangle_{\natural}\rvert^{2}$ is positive whenever $\tilde U$ is invertible, so the image has the same sign as the original even when it has a different magnitude. Verified on two hundred scaled rotors: with $\lvert\langle\tilde U\rangle_{\natural}\rvert^{2}$ taking values $192.7$, $120.5$ and $36.76$, the image norm is the original times that factor to $4.2\times10^{-15}$.
+3. **The algebra is therefore cut into three regions that no congruence can cross** — $N<0$, $N=0$, $N>0$ — and the cutting is by the sign of one real number.
+
+**The third is the statement the article's table has been asserting, and it is stronger than "the flow cannot reach the locus".** A flow that merely cannot *reach* the locus might still carry an element across it in a single step; a flow that preserves the sign cannot, because there is no step available to take. Verified per class over three thousand random rotations each: the timelike representative at $N=-2.4$ is restored to $1.3\times10^{-12}$ absolute and $5.5\times10^{-13}$ relative, the null element stays within $9.2\times10^{-13}$ of zero, and the spacelike representative at $N=+2.4$ to $9.4\times10^{-13}$.
+
+**Read in the two sectors, the partition says two things.**
+
+| | $N<0$ | $N=0$ | $N>0$ |
+| --- | --- | --- | --- |
+| material | timelike | null, the light cone | spacelike |
+| informational | outside the ball | the pure states | inside the ball, the mixed states |
+
+**A material element never crosses the light cone and a state never crosses the boundary of the ball**, and neither statement is a dynamical prohibition: both follow from the invariance of one sign. The mixed state at $N=0.215$ stays mixed, the pure state at $N=0$ stays pure, and an element at $N=-0.24$ — outside the ball, and not a state at all — never enters it. All three were verified over three thousand rotations with the same bound as the material classes.
+
+**A numerical caveat that is not a violation.** The *representative* grows under a boost even though the form does not. A boost rotor is Hermitian, so $\tilde U\tilde U^{*}$ is not the identity but a Hermitian element whose scalar part is $\cosh\theta_{\mathrm{rpd}}$; the coefficients of the image therefore grow with the rapidity while $N$ is fixed. A reader who iterates a boost and watches the coefficients explode has found the Hermitian norm growing, not the quaternionic one failing.
+
+**Crossing the level sets requires an operation that is not a congruence.** Since every congruence preserves the sign, any map that changes it lies outside the group. The mixture with the identity is the corpus's example: from the state at $r=0.6$, mixing with the centre at weight $\mu$ gives $r=0.6(1-\mu)$ and
+
+| $\mu$ | $0$ | $\tfrac14$ | $\tfrac12$ | $\tfrac34$ | $1$ |
+| --- | --- | --- | --- | --- | --- |
+| $N$ | $0.160000$ | $0.199375$ | $0.227500$ | $0.244375$ | $0.250000$ |
+
+**That is why the locus is inert in the precise sense and not in a vague one.** The algebra does not forbid approaching the boundary; it forbids reaching it by any reversible motion, because the only approach is a non-invertible map and no inner derivation generates one. The companion *The Thermal Path Is Not an Orbit* draws the thermodynamic consequence; the statement here is algebraic, and it is a statement about the sign of $N$.
+
 ### Why the cone is not a causal boundary here
 
 The material cone is the light cone of $i r'_t$-Minkowski space, and in the relativistic categories it bounds propagation. In the non-relativistic spin-0 subcategory it does not. The Schrödinger equation is parabolic: its characteristics are the trajectories of $d(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)/dr'_t=\vec p/m$ at fixed time, and the domain of dependence of a point is a single time slice, not the interior of a cone. The non-relativistic Green function is nonzero for arbitrarily small time differences at arbitrarily large separations, which is the statement that the non-relativistic signal cone is degenerate — the whole time slice, not a light cone. The zero divisor cone therefore appears here as a locus of **states and momenta**, and as the boundary of approximations, but not as a horizon. The causal interpretation of the same cone belongs to the relativistic categories, where the Klein–Gordon and Dirac equations are hyperbolic and the cone is the propagation boundary.
@@ -235,7 +274,7 @@ The state module and the null solutions are then two faces of one fact. The modu
 | Momentum space | The non-relativistic dispersion: spacelike for $p<2mc$, null at $p=2mc$, timelike beyond |
 | Configuration space | The semiclassical expansion: turning surfaces and caustics, where $p(x)=0$ and $A\propto1/\sqrt{|p|}$ diverges |
 | State space | Purity: the pure states are the boundary of the unit-weight slice; the interior is the invertible (mixed) states |
-| Dynamical | Nothing: the $*$-unitary flow preserves membership in the locus |
+| Dynamical | Nothing: the $*$-unitary flow preserves membership, and every congruence preserves the sign of the norm |
 
 The table is the article's content in one view. The locus is the meeting point of the algebra's division boundary, the momentum-space boundary of the non-relativistic dispersion, the configuration-space boundary of the semiclassical approximation, and the boundary of the pure-state manifold — and it is not a dynamical boundary, because the flow preserves it.
 
@@ -255,7 +294,7 @@ The zero divisor set of $\mathbb{B}$ is $\mathcal{Z}=\{\tilde Q\ne0:\langle\tild
 
 Physically the locus has three images. In **momentum space** it is the massless shell, and the non-relativistic free dispersion has $\langle\tilde P_{\Phi}\rangle_{\natural}=p^2(1-p^2/4m^2c^2)$, spacelike for $p<2mc$, null at $p=2mc$ and timelike beyond, verified at $p=0.5,1,1.5,1.999,2,2.001,3$ in the same units $m\,c=1$. Tunnelling momenta are timelike, not null; genuine complex null momenta exist but are not evanescent waves. In **configuration space** it is the turning surface $E=V(x)$ and the caustic of the semiclassical propagator, where the WKB amplitude diverges. In **state space** it is the boundary of the unit-weight slice of the future light cone, the pure states with $|\vec s_{\Psi}|=1$ (verified to $10^{-16}$) at the boundary and the invertible mixed states inside.
 
-The locus is kinematically inert: $\langle\tilde U_{\mathrm{lor}}\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ for a unit rotor and $\langle\exp(i\theta_{\mathrm{pha}})\tilde Q\rangle_{\natural}=\exp(2i\theta_{\mathrm{pha}})\langle\tilde Q\rangle_{\natural}$ for a central phase, both verified to machine precision, so the $*$-unitary flow can neither create nor destroy a zero divisor. The idempotent that generates the state module is itself on the locus, $\langle\tilde\Pi\rangle_{\natural} = \langle\tilde\Pi,\tilde\Pi\rangle_{\natural}=0$ with $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi\tilde\Pi^{\natural}=\tilde\Pi^{\natural}\tilde\Pi=0$ verified exactly, and the free solution space contains null multiples $\tilde{Ξ}=q\tilde Q$ of every solution, with $\langle \tilde{Ξ}\rangle_{\natural}=0$ identically, verified with a spreading Gaussian packet whose free-equation residual was $2\times10^{-9}$. The algebraic null cone is **not** the zero-probability locus: probabilities use the positive-definite Hermitian form $\sum_\mu|Q_\mu|^2$, which equals $2|q|^2$ for the null solution and does not vanish, so the complex cone of the algebra and the real cone of the state space and the momentum shell are different real forms of one locus and must not be identified. The locus is not a causal boundary in this subcategory, because the Schrödinger equation is parabolic and its signal cone is degenerate. The algebra's division boundary, the boundary of the non-relativistic dispersion, the boundary of the semiclassical expansion, and the boundary of the pure-state manifold are one algebraic locus read under its different real forms.
+The locus is kinematically inert: $\langle\tilde U_{\mathrm{lor}}\tilde Q\rangle_{\natural}=\langle\tilde Q\rangle_{\natural}$ for a unit rotor and $\langle\exp(i\theta_{\mathrm{pha}})\tilde Q\rangle_{\natural}=\exp(2i\theta_{\mathrm{pha}})\langle\tilde Q\rangle_{\natural}$ for a central phase, both verified to machine precision, so the $*$-unitary flow can neither create nor destroy a zero divisor. The invariance is stronger than membership: $\langle\tilde U\tilde Q\tilde U^{*}\rangle_{\natural}=\lvert\langle\tilde U\rangle_{\natural}\rvert^{2}\langle\tilde Q\rangle_{\natural}$, verified to $3.1\times10^{-14}$, so any invertible element preserves the *sign* of the norm and no congruence carries an element from one of $N<0$, $N=0$, $N>0$ into another — a timelike element never crosses the light cone and a state never crosses the boundary of the ball. Only a non-invertible map changes the sign, which is why the locus is inert and why approaching it is a thermodynamic operation rather than a reversible one. The idempotent that generates the state module is itself on the locus, $\langle\tilde\Pi\rangle_{\natural} = \langle\tilde\Pi,\tilde\Pi\rangle_{\natural}=0$ with $\tilde\Pi^2=\tilde\Pi$ and $\tilde\Pi\tilde\Pi^{\natural}=\tilde\Pi^{\natural}\tilde\Pi=0$ verified exactly, and the free solution space contains null multiples $\tilde{Ξ}=q\tilde Q$ of every solution, with $\langle \tilde{Ξ}\rangle_{\natural}=0$ identically, verified with a spreading Gaussian packet whose free-equation residual was $2\times10^{-9}$. The algebraic null cone is **not** the zero-probability locus: probabilities use the positive-definite Hermitian form $\sum_\mu|Q_\mu|^2$, which equals $2|q|^2$ for the null solution and does not vanish, so the complex cone of the algebra and the real cone of the state space and the momentum shell are different real forms of one locus and must not be identified. The locus is not a causal boundary in this subcategory, because the Schrödinger equation is parabolic and its signal cone is degenerate. The algebra's division boundary, the boundary of the non-relativistic dispersion, the boundary of the semiclassical expansion, and the boundary of the pure-state manifold are one algebraic locus read under its different real forms.
 
 ## Summary of Notation
 

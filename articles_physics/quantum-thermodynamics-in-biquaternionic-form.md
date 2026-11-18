@@ -14,7 +14,7 @@ The scalar part is defined on the algebra itself, and no step below needs the $2
 
 Two structural facts follow and are developed below. First, the Gibbs state of a qubit is an element of the Hermitian subspace $\mathbb{B}_{\Psi}$ — a point in the Bloch ball — and its thermodynamic functionals are scalars extracted from $\mathbb{B}_{\Psi}$-valued objects. Second, the free energy is the additive real scalar carried by the **modular Hamiltonian** $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}$, which also lies in $\mathbb{B}_{\Psi}$; and the temperature $\beta$ that parametrises the state measures a displacement along the imaginary-time direction of the material sector $\mathbb{B}_{\Phi}$, as the companion articles on the KMS condition and on the partition function record.
 
-The article proceeds as follows. The Gibbs state is defined and its existence condition — the convergence of $Z$ — is treated as part of the content rather than as a technicality. The thermodynamic quantities are then written as functionals of the state and computed through the Hermitian form, with the scalar part as the final reading. The Gibbs state is characterised variationally, as the minimiser of the free-energy functional, and the Legendre structure relating $\log Z$, the entropy, and the free energy is set out with its signs checked against the thermodynamic identities. The low- and high-temperature limits are computed, the KMS condition is identified as the operator-algebraic characterisation of the same state, and the closing section separates what the framework adds from what it does not.
+The article proceeds as follows. The Gibbs state is defined and its existence condition — the convergence of $Z$ — is treated as part of the content rather than as a technicality. The thermodynamic quantities are then written as functionals of the state and computed through the Hermitian form, with the scalar part as the final reading. The Gibbs state is characterised variationally, as the minimiser of the free-energy functional, and the Legendre structure relating $\log Z$, the entropy, and the free energy is set out with its signs checked against the thermodynamic identities. The low- and high-temperature limits are computed, the third law is examined in its three formulations and the one the algebra decides is identified, the KMS condition is identified as the operator-algebraic characterisation of the same state, and the closing section separates what the framework adds from what it does not.
 
 ## The Gibbs State and the Convergence of $Z$
 
@@ -239,6 +239,52 @@ $$
 
 lies in $\mathbb{B}_{\Psi}$ — it is Hermitian by construction. The last equality uses $\log Z=-\beta F$ and displays the role of the free energy: it is the real scalar by which the Hamiltonian must be shifted so that $H_{\mathrm{modular}}$ generates the modular flow of the Gibbs state. Equivalently, $\mathrm{Sc}(H_{\mathrm{modular}}-\beta\tilde H_\Psi)=\log Z$, so $\log Z$ — and with it the whole Legendre chain — is a scalar part of an $\mathbb{B}_{\Psi}$ element. Nothing here is additional to the KMS article's statement; it is recorded because the same state is the subject of both, and because the modular Hamiltonian is where the free energy sits in the framework.
 
+## The Third Law in Three Formulations
+
+Three statements travel under the name. The **Nernst heat theorem** says $S\to S_0$ with $S_0$ finite as $T\to0$. The **unattainability** formulation says $T=0$ cannot be reached in a finite sequence of operations. The **absolute-entropy** formulation says $S_0=0$, which holds exactly when the ground state is nondegenerate. The first is a theorem of the Gibbs formula, the second is not a theorem of any formula, and the third is false as stated. The framework's contribution is to say which is which, and to exhibit the counterexample to the third inside the algebra.
+
+**The Nernst form is a substitution, and it is best written in $N$.** Write $N$ for the quaternionic norm of the state, $N=\tfrac14(1-|\vec s_\Psi|^{2})=\tfrac14\operatorname{sech}^{2}x$ with $x=\beta|\vec h_\Psi|$; it is the quantity that vanishes at the pure states and reaches $\tfrac14$ at the centre. Inverting gives $\cosh x=1/(2\sqrt N)$ and $\tanh x=\sqrt{1-4N}$, so the entropy of the preceding sections becomes a function of one variable,
+
+$$
+S=\log 2+\log\cosh x-x\tanh x
+=\log 2-\tfrac12\log(4N)-\sqrt{1-4N}\;\operatorname{artanh}\sqrt{1-4N}.
+$$
+
+**The two infinities cancel, and the cancellation is the theorem.** As $N\to0$ the term $-\tfrac12\log(4N)$ diverges to $+\infty$ and $\operatorname{artanh}\sqrt{1-4N}$ diverges with it; their difference tends to $-\log2$, which cancels the $\log2$ and leaves zero. Verified from $N=\tfrac14$ down to $N=4.5\times10^{-5}$: the two expressions for $S$ agree to $1.3\times10^{-13}$.
+
+**The approach is logarithmic in $N$, and that is the quantitative content of the law here.** Expanding the same expression at small $N$,
+
+$$
+S=-N\log N+N+O\bigl(N^{2}\log N\bigr),\qquad \frac{dS}{dN}=\log\frac1N+O(1),
+$$
+
+with the remainder confirmed to the stated order across seven decades of $N$. So the derivative diverges: **the entropy is infinitely sensitive to the last of the distance to the boundary, while the distance itself is exponentially small in $x$.** Since $N\propto e^{-2x}$, every halving of $N$ costs the same increment of $x$, tending to $\tfrac12\log 2=0.346573590$ — measured as $0.347814$ at $x=3$ and $0.346574$ at $x=8$. Reaching $N=0$ takes infinitely many halvings of a quantity that never reaches zero, which is Nernst's unattainability restated as a statement about one function.
+
+**Unattainability itself is imported, and honestly so.** "In a finite number of operations" quantifies over operations, and no algebraic identity constrains how many are allowed or what they cost. What the algebra supplies is the geometric half. The boundary $N=0$ is a level set of $N$, every reversible motion preserves $N$, so no reversible process moves along the thermal curve at all — the result of *What the Biquaternion Algebra Cannot Do*, where the Gibbs path is shown to lie on no orbit of the reversible group. In this setting the unattainability formulation is therefore **equivalent to "the thermal path is not an orbit"**, and the resource bound that turns it into a law about engines is added from outside.
+
+**The absolute-entropy form fails, and the algebra makes the failure exact.** Both statements above presumed $|\vec h_\Psi|>0$. Take instead a Hamiltonian with no vector part, $\tilde H_\Psi=h_t e_t$, a pure central element. Its levels coincide, the spectrum is doubly degenerate, and
+
+$$
+Z=2e^{-\beta h_t},\qquad
+\tilde{Ϛ}_{\Psi,\beta}=\tfrac12 e_t,\qquad
+\vec s_{\Psi}=0,\qquad r=0,\qquad N=\tfrac14,\qquad S=\log 2
+$$
+
+at **every** $\beta$: the curve has collapsed to a point, the centre of the ball. Verified for $h_t$ of both signs and $\beta$ from $0$ to $10^{6}$: $S=0.693147180560$, $N=0.250000000000$, unchanged, with $C=0$ throughout and $E=h_t$ independent of temperature.
+
+**Residual entropy is therefore the centre of the ball, and the third law is the statement that the centre is not where the curve ends.** A residual entropy $\log g$ is $N=\tfrac14$ in this case; zero residual entropy is $N=0$. The two ideals the law conflates — no entropy at zero temperature, and a pure state at zero temperature — coincide in this language, and the degenerate Hamiltonian separates both of them from the Gibbs formula, which holds in every case.
+
+**A near-degeneracy shows the scale, and it shows that the law is about the gap, not about the temperature.** With $|\vec h_\Psi|=10^{-3}$ the curve does reach the boundary, but only for $x\gtrsim1$, that is $\beta\gtrsim10^{3}$:
+
+| $\beta$ | $10$ | $10^{2}$ | $10^{3}$ | $10^{4}$ |
+| --- | --- | --- | --- | --- |
+| $N$ | $0.2499750$ | $0.2475166$ | $0.1049936$ | $2.06\times10^{-9}$ |
+| $S$ | $0.6930972$ | $0.6881721$ | $0.3653339$ | $4.33\times10^{-8}$ |
+
+Cooling a system whose splitting is a milli-unit into the regime where $S$ has visibly fallen requires a thousand-fold inverse temperature. The law is exact at every $|\vec h_\Psi|>0$, its crossover is set by the gap, and the degenerate case is not the limit of this table but the separate exact case in which no value of $\beta$ moves the state at all.
+
+**What the section establishes, and what it does not.** The Nernst form is reproduced, and reproduced as a statement about one variable: on the thermal curve both the entropy and the heat capacity depend on $N$ alone, $C=4N\operatorname{artanh}^{2}\sqrt{1-4N}$, verified to $10^{-12}$. Unattainability is not derived; its geometric half is, and its resource half is imported. The absolute-entropy form is refuted by an element of the algebra, exactly rather than approximately. None of this is new thermodynamics, and the closing section's claim stands unchanged; what the framework decides is the split between proved, imported and false.
+
 ## What the Framework Adds, and What It Does Not
 
 The framework adds an **interpretation** with three components.
@@ -249,7 +295,7 @@ Second, the state is geometric: the Gibbs state is the point $\vec s_{\Psi}=-\ta
 
 Third, the temperature is a direction: $\beta$ measures a displacement along the imaginary-time axis of the material sector $\mathbb{B}_{\Phi}$, while the modular Hamiltonian $H_{\mathrm{modular}}=\beta(\tilde H_\Psi-Fe_t)$, which carries the free energy, lies in $\mathbb{B}_{\Psi}$. The thermal structure is therefore a coupling of the two sectors of the kind the KMS article describes.
 
-The framework does **not** produce a new thermodynamic law. The Gibbs state, the Legendre relations, the variational principle, the KMS characterisation, the Schottky heat capacity, and both temperature limits are standard, and the framework reproduces them. What it changes is where they live: the potentials become scalar extractions from the informational sector, and the temperature becomes an imaginary-time displacement in the material sector. Whether that interpretation has consequences beyond the standard account is open, and no such consequence is claimed here.
+The framework does **not** produce a new thermodynamic law. The Gibbs state, the Legendre relations, the variational principle, the KMS characterisation, the Schottky heat capacity, both temperature limits, and the Nernst form of the third law are standard, and the framework reproduces them. What it changes is where they live: the potentials become scalar extractions from the informational sector, and the temperature becomes an imaginary-time displacement in the material sector. Whether that interpretation has consequences beyond the standard account is open, and no such consequence is claimed here.
 
 ## Summary
 
@@ -259,7 +305,7 @@ The Gibbs state exists only when $Z$ converges: always for a finite-level system
 
 The thermodynamic functionals of the state are the internal energy $E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})$, the entropy $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})$, the free energy $F=E-S/\beta$, and the heat capacity $C=\partial E/\partial T$. For a qubit they are $E=h_t-|\vec h_\Psi|\tanh r_x$, $S=\log2+\log\cosh x-x\tanh x$, $F=h_t-(\log2+\log\cosh x)/\beta$, and $C=x^2\mathrm{sech}^2x$ with $r_x=\beta|\vec h_\Psi|$, the Schottky form with maximum $0.439229$ at $x=1.199679$.
 
-The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}_{\Psi}]=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})-\beta^{-1}S[\tilde{Ϛ}_{\Psi}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_t-|\vec h_\Psi|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$, $E=h_t$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta(\tilde H_\Psi-Fe_t)$ lies in $\mathbb{B}_{\Psi}$.
+The Gibbs state is the minimiser of $\mathcal F[\tilde{Ϛ}_{\Psi}]=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})-\beta^{-1}S[\tilde{Ϛ}_{\Psi}]$, equivalently the maximiser of the entropy at fixed energy. The potentials are Legendre transforms: $S=\log Z+\beta E$ with $\partial S/\partial E=\beta$, and $F=E-TS$ with $\partial F/\partial T=-S$. The low-temperature limits are the pure ground state, $E=F=h_t-|\vec h_\Psi|$, $S=C=0$; the high-temperature limits are $\tilde{Ϛ}_{\Psi}=\tfrac12e_t$, $E=h_t$, $S=\log2$, $C=0$. The KMS condition $F_{\tilde Q_2\tilde Q_1}(r'_t+i\beta)=F_{\tilde Q_1\tilde Q_2}(-r'_t)$ is the operator-algebraic characterisation of the same state, and its modular Hamiltonian $H_{\mathrm{modular}}=-\log\tilde{Ϛ}_{\Psi}=\beta(\tilde H_\Psi-Fe_t)$ lies in $\mathbb{B}_{\Psi}$. The third law is read in its three formulations: the Nernst form is a substitution, $S=\log2-\tfrac12\log(4N)-\sqrt{1-4N}\operatorname{artanh}\sqrt{1-4N}\to0$ as $N\to0$ with $S=-N\log N+N+O(N^{2}\log N)$; the unattainability form is not a theorem of the algebra but is equivalent in this setting to the Gibbs path being on no orbit of the reversible group; and the absolute-entropy form is false, since a Hamiltonian with $\vec h_\Psi=0$ gives $\tilde{Ϛ}_{\Psi,\beta}=\tfrac12e_t$, $N=\tfrac14$ and $S=\log2$ at every $\beta$.
 
 The framework reproduces standard thermodynamics and claims no new law. Its addition is the interpretation: the potentials are scalar parts of $\mathbb{B}_{\Psi}$ elements, the state is a path in the Bloch ball, and the temperature is a displacement along the imaginary-time axis of $\mathbb{B}_{\Phi}$.
 
@@ -280,6 +326,7 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 | $\tilde{Ϛ}_{\Psi,\beta}=\exp(-\beta H)/Z=\tfrac12(e_t+i\vec s_{\Psi})$ | Gibbs state |
 | $\vec s_{\Psi}=-\tanh(\beta|\vec h_\Psi|)\vec u_\Psi$ | Bloch vector of the Gibbs state |
 | $r_x=\beta|\vec h_\Psi|$ | Thermal parameter |
+| $N=\tfrac14(1-|\vec s_{\Psi}|^{2})=\tfrac14\operatorname{sech}^{2}x$ | Quaternionic norm of the state; $N=0$ at the pure states, $N=\tfrac14$ at the centre |
 | $E=2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi^{*})=h_t-|\vec h_\Psi|\tanh r_x$ | Internal energy |
 | $S=-2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\log\tilde{Ϛ}_{\Psi})=\log2+\log\cosh x-x\tanh x$ | Entropy (units of $k_B$) |
 | $F=E-S/\beta=h_t-(\log2+\log\cosh x)/\beta$ | Free energy |
