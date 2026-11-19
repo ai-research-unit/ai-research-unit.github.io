@@ -894,7 +894,7 @@ The third case is realized by the non-commutative vacuum of *Maxwell's Theory on
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 Every two-sided action in this article has been written out as a product, $a\,\tilde{Ξ}\,b$, with the side carried by position. The fermion articles of the corpus write the same operators as products of Dirac gammas. The two descriptions are related by a fixed dictionary and not by a change of algebra, and this section states the dictionary once so that a reader can move between them. Afterwards it is dropped: outside this section the article contains no gamma.
 
@@ -1057,7 +1057,7 @@ The equation that the reduction produces has a solution theory of its own, and i
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - J. D. Jackson, *Classical Electrodynamics* (Wiley, 1999), for Maxwell's equations in media, dispersion, and the standard boundary conditions.
 - L. D. Landau and E. M. Lifshitz, *Electrodynamics of Continuous Media* (Pergamon, 1984), for the constitutive relations, the Brillouin energy density in dispersive media, and the boundary conditions at an interface.
 - M. Born and E. Wolf, *Principles of Optics* (Cambridge, 1999), for dispersion, phase and group velocity, and the Fresnel coefficients.

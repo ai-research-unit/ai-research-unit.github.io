@@ -423,7 +423,7 @@ which is $3$ for $N_f=2$ (the pions) and $8$ for $N_f=3$ (the octet). The Goldst
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -540,7 +540,7 @@ The framework supplies the carrier, the symmetry pattern and the sector placemen
 ## Further Reading
 
 - [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the side of an operator, the fifth basis operator of the frame and the two parts named by the subscript.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Y. Nambu and G. Jona-Lasinio, "Dynamical model of elementary particles based on an analogy with superconductivity. I," *Physical Review* **122** (1961) 345–358, and II, *Physical Review* **124** (1961) 246–254, for the four-fermion mechanism of dynamical mass generation.
 - J. Goldstone, "Field theories with superconductor solutions," *Nuovo Cimento* **19** (1961) 154–164, for the Goldstone theorem and the counting of broken generators.
 - S. Coleman and E. Weinberg, "Radiative corrections as the origin of spontaneous symmetry breaking," *Physical Review D* **7** (1973) 1888–1910, for dynamical symmetry breaking in the effective-potential language.

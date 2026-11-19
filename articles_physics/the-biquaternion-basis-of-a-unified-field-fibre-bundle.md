@@ -256,7 +256,7 @@ Two caveats belong with the record. The first is the word *QFT*: in the source's
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. This is the only section of the article in which they appear; every operator statement above is written in the algebra or in the basis operators it names.
 
@@ -327,7 +327,7 @@ One claim does not reproduce, and the paper's own equations are what defeat it: 
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - D. J. Cirilo-Lombardo, "Algebraic structures, physics and geometry from a Unified Field Theoretical framework", arXiv:1411.5493v3 [hep-th] (2015), for the source recorded here: the principal fibre bundle $P(G,M)$ and its structural group, the biquaternionic basis of the bundle, the Majorana and Dirac representations and their relation to the signs, the non-Hermitian CP operators, the split triple and the $(2{+}2)$ inertia, and the concluding geometry claims.
 - J. Fredsted, "Spinor fields without Lorentz frames in curved spacetime using complexified quaternions," arXiv:0811.1357v4 [math-ph] (2009), for the constructed biquaternionic basis recorded in *A Constructed Biquaternionic Basis, from an Independent Source*: the material-sector basis $s_\mu \in \mathbb{B}_{\Phi}$ with the metric as the quaternionic form, the conjugation by a unit-norm element as the local Lorentz freedom, and the single algebra-valued connection whose imaginary-scalar and vector parts are a local $\mathrm{U}(1)$ and the Lorentz connection. Cited as an independent construction in the sector opposite to the source recorded here; the corpus does not adopt it, and it builds no principal bundle and no dynamics.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra, the conjugations, the matrix representation $\mathsf{M}_2$ and the norm $\langle\cdot\rangle_{\natural}$ used throughout.

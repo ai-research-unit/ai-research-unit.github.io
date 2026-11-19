@@ -191,7 +191,7 @@ Finally, the standing **empirical-contact** gap applies with full force. Nothing
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the frame basis operators of the body written as letters, and this section is the only place in the article where they appear: every section above is written in basis operators.
 
@@ -287,7 +287,7 @@ The neutron's composite character is not reached. The framework has no colour gr
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Electron in Biquaternionic Form](the-electron-in-biquaternionic-form.html) — the sibling accounting for a fundamental spin-$\tfrac12$ fermion, and the source of the tree-level $g=2$ relation used here to show that a neutral structureless Dirac field has zero magnetic moment.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the biquaternion Dirac equation, its mass term, plane-wave solutions, and the mass-shell relation used throughout.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the two chiral parts, the charge on each part, the mass selection rule, and the real structure whose interpretation is left open here.

@@ -182,7 +182,7 @@ The congruence of $\tilde U_{\mathrm b}$ is the boost matrix written above and t
 ## Further Reading
 
 - S. Weinberg, *The Quantum Theory of Fields*, vol. 1, chapter 2, for the group and its algebra.
-- [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html), for the five groups that contain the two families and what each leaves invariant.
+- [The Rotations, the Boosts and the Groups](../articles_internal/the-rotations-the-boosts-and-the-groups.html), for the five groups that contain the two families and what each leaves invariant.
 - [The Group of Unit-Norm Biquaternions](the-group-of-unit-norm-biquaternions.html), for the group as a set inside the algebra.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the two-sided action in detail.
 - [The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation](the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.html), for the proof of the decomposition and its degenerate cases.

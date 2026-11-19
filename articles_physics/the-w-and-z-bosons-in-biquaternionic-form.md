@@ -284,7 +284,7 @@ with the repeated $\mu,\nu$ summed, which are the three- and four-gauge-boson ve
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -410,7 +410,7 @@ The charged current is chiral, $J^{+}_\mu$ of §*The Currents and the Self-Coupl
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - S. L. Glashow, "Partial-symmetries of weak interactions," *Nuclear Physics* **22** (1961) 579–588, for the $SU(2)\times \mathrm{U}(1)$ gauge structure and the neutral current.
 - S. Weinberg, "A model of leptons," *Physical Review Letters* **19** (1967) 1264–1266, for the electroweak Lagrangian, the mixing and the mass relations.
 - A. Salam, "Weak and electromagnetic interactions," in *Elementary Particle Theory*, ed. N. Svartholm (Almqvist and Wiksell, 1968), for the unified electroweak construction.

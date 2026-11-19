@@ -884,7 +884,7 @@ In one line: every two-sided operator is a single product of one left and one ri
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for the frame, the left and right matrices and the six subspaces.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the compression of the two one-sided actions.
 - [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-pauli-representation-operators.html), for the same operators compressed to one matrix per side and a pair for the product.

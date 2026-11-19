@@ -508,7 +508,7 @@ Along a curve on the surface the frame is the Darboux frame, whose three compone
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Patrick R. Girard, Patrick Clarysse, Romaric Pujol, Liang Wang and Philippe Delachartre, *Differential Geometry Revisited by Biquaternion Clifford Algebra*, in *Curves and Surfaces* (Lecture Notes in Computer Science 9213, Springer, 2015), 216–242, the source of the construction recorded here: the biquaternion calculus with its exterior product, the affine connection bivector, the Frenet and Darboux frames, the curvature lines, the asymptotic lines, the geodesics and the two worked examples.
 - Patrick R. Girard, *Quaternions, Clifford Algebras and Relativistic Physics* (Birkhäuser, Basel, 2007), for the hyperquaternion algebras and the extension of the calculus to the four-dimensional pseudo-Euclidean case.
 - Gaston Casanova, *L'algèbre vectorielle* (Presses Universitaires de France, Paris, 1976), for the interior and exterior products of multivectors and the classical vector-calculus identities they reproduce, in the form the source follows.

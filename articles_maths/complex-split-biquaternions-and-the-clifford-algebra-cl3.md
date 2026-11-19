@@ -240,7 +240,7 @@ into two copies of the biquaternion algebra, each of complex dimension $4$, so t
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - V. Vaibhav and T. P. Singh, "Left-Right Symmetric Fermions and Sterile Neutrinos from Complex Split Biquaternions and Bioctonions," arXiv:2108.01858, for the construction of this article's algebra as a two-chirality fermion algebra and its physics reading.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification $\mathrm{Cl}_3(\mathbb{C})\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, the volume element of an odd complex Clifford algebra, and the centrality that produces the splitting.
 - H. B. Lawson and M.-L. Michelsohn, *Spin Geometry* (Princeton, 1989), for the volume element, the chirality grading and the two pinor representations of an odd Clifford algebra.

@@ -405,7 +405,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -551,7 +551,7 @@ With the weight on the summed index they are $4I_4$, $-2\gamma_\alpha$, $4\varep
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Foundational articles: [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html); [Four-Vectors and the Interval](four-vectors-and-the-interval.html); [States, Observables and the Born Weight](states-observables-and-the-born-weight.html); [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html) (the mass-term convention, the real structure $\flat$, and the dispersion failure this article expands).
 - The Dirac mass in biquaternionic form: [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) (the linear chiral pair and the massless limit $\tilde\nabla_\Phi\tilde{Ξ} = 0$); [The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit](the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html).
 - The Majorana side: [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) (charge conjugation on the module, the Majorana condition, and the obstruction by which $\mathbb{B}_{\Phi}$ fails to be a reality condition); [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) (why a chiral fermion cannot carry a bare Dirac mass).

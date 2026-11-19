@@ -561,7 +561,7 @@ $$
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the construction and the product question.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the left regular model and its trace and determinant.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the Peirce basis, the chiral blocks and the matrix units $L_{\mathrm{pau},P_i}R_{\mathrm{pau},P_j}$.

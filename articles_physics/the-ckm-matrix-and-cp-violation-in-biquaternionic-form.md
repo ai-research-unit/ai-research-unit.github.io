@@ -251,7 +251,7 @@ the same expression with the leptonic angles and phase. The framework's structur
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The body of the article is written in elements: a generator is the action $X\mapsto ie_\mu X\vec e_{\nu(\mu)}$, the field carries the label $L$ or $R$, and the mixing is the number $V_{ab}$. The older literature writes the same five generators as arrays, and they are collected here — with the basis operators that display them — so that a reader who comes from the matrix literature can translate; they enter nowhere else in the article. The letter $\gamma$ of the unitarity triangle, in the section on the Wolfenstein parametrisation, is the triangle's angle and has nothing to do with $\gamma_\mu$.
 
@@ -379,7 +379,7 @@ The framework's definite structural contribution is the location of the phase. T
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - N. Cabibbo, "Unitary symmetry and leptonic decays," *Physical Review Letters* **10** (1963) 531–533, for the original mixing angle.
 - M. Kobayashi and T. Maskawa, "CP violation in the renormalizable theory of weak interaction," *Progress of Theoretical Physics* **49** (1973) 652–657, for the three-generation mixing matrix and its CP-violating phase.
 - S. L. Glashow, J. Iliopoulos, and L. Maiani, "Weak interactions with lepton–hadron symmetry," *Physical Review D* **2** (1970) 1285–1292, for flavour universality and the GIM mechanism.

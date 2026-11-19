@@ -306,7 +306,7 @@ Degenerate values of the potential therefore arise from superpositions, which cr
 - *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the equation, the implied Lorenz condition, the reduction to the Klein–Gordon equation, and the three polarizations.
 - *Degenerate Solutions of the Biquaternionic Dirac Equation*, for the general classification of the cone, the two sectors $\Sigma_{01}$ and $\Sigma_{00}$, and the failure of the polar word at $N=0$. That article's case is the full algebra; this article's case is the material sector, and the differences are the reason it is written.
 - *The Meaning of N Regularity and Degeneracy*, for the norm, the cone, its strata and the spectral predicates that the sector names abbreviate.
-- *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, for the vector part as the carrier of the field strength, and for the null bivectors of the split.
+- *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane*, for the vector part as the carrier of the field strength, and for the null bivectors of the split.
 - *The Third Polarization and the Self-Dual Split of the Massive Field Strength*, for the longitudinal mode, and for the reason the mass keeps the field strength off its cone.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, second edition 2001), for the zero divisors of a Clifford algebra, the nilpotents, and the rank-one idempotents.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966; second edition Birkhäuser, 2015), for the null fields of the algebra and the geometric reading of a lightlike vector as a direction.

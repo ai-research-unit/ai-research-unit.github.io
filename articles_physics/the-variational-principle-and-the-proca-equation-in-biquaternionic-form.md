@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the Proca field as the extremum of an action in the algebra, and reads what the action's symmetries give. It is the element-form companion of *The Variational Principle and the Proca Equation in Biquaternionic Polar Variables*, and it depends on two articles: *The Proca Equation: Massive Spin 1 in Biquaternionic Form* for the equation, the implied Lorenz condition and the polarizations, and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* for the field strength and its complex structure.
+This article writes the Proca field as the extremum of an action in the algebra, and reads what the action's symmetries give. It is the element-form companion of *The Variational Principle and the Proca Equation in Biquaternionic Polar Variables*, and it depends on two articles: *The Proca Equation: Massive Spin 1 in Biquaternionic Form* for the equation, the implied Lorenz condition and the polarizations, and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* for the field strength and its complex structure.
 
 **The equation.** The parent's equation is
 
@@ -230,7 +230,7 @@ The divergence of the equation forces the Lorenz condition, and the variational 
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the equation, the Lorenz condition and the polarizations.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the chart in which the action's variables are the word's parameters.
 - [The Variational Principle and the Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-proca-equation-in-biquaternionic-polar-variables.html), for the same action in the chart.
-- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the carrier and the reality obstruction.
+- [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the carrier and the reality obstruction.
 - [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-form.html), for the spinor action and its pairing.
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html), for the Legendre transform, the constraints and the propagator.
 - [The Third Polarization and the Self-Dual Split of the Massive Field Strength](the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html), for the three states and the trace of the tensor.

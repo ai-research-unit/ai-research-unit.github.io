@@ -576,7 +576,7 @@ with the unit after the bracket. It does not pass to the left of $\tilde Q_2$: t
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate, $Q_\mu$ or $x_\mu$. There is one metric, $\delta_{\mu\nu}=(1,1,1,1)$, and a display never names it.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate, $Q_\mu$ or $x_\mu$. There is one metric, $\delta_{\mu\nu}=(1,1,1,1)$, and a display never names it.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -639,7 +639,7 @@ The four forms remain four distinct conventions and the norms two, because each 
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra and the element glyphs.
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the four products read on the gradient.
 - [Conventions of the Norms and the Pairings](norm-and-pairing-conventions.html), for the norms of those products.

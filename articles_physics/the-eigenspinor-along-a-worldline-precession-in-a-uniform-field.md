@@ -1,4 +1,4 @@
-# __The Eigenspinor: The Lorentz Rotor as a Function of Proper Time__
+# __The Eigenspinor Along a Worldline: Precession in a Uniform Field__
 
 ## Introduction
 
@@ -24,7 +24,7 @@ Three things are worth separating at the outset, and the article keeps them apar
 - **What the algebra supplies.** The linearity of the evolution equation, the closure of the rotor under the flow, the one-sided spinor law, and the fact that the force is the anti-Hermitian projection of the rate times the momentum are algebraic identities, and they are checked below.
 - **Where the earlier articles stop.** *The Lorentz Force in Biquaternion Form* records that the force is **not** a clean product of $\tilde{F}$ with $\tilde{V}_{\Phi}$, and names the obstruction. The eigenspinor does not remove that obstruction; it offers a different, *differential* route to the same force. The two routes agree, and the agreement is checked.
 
-The article is organised as follows. The next section defines the eigenspinor and recovers the four-momentum and the four-velocity from it. The section after that derives the evolution equation and the conservation of the norm. The following section identifies the rotation rate with the field and recovers the Lorentz four-force. The next two sections record the eigenframe and the closed form in a uniform field. A short section separates what the framework supplies from what it only transcribes, and the article closes with open questions.
+The article is organised as follows. The next section defines the eigenspinor and recovers the four-momentum and the four-velocity from it. The section after that derives the evolution equation and the conservation of the norm. The following section identifies the rotation rate with the field and recovers the Lorentz four-force. The next three sections record the eigenframe, the closed form in a uniform field, and the precession that the closed form contains. A short section separates what the framework supplies from what it only transcribes, and the article closes with open questions.
 
 ## The Eigenspinor of a Worldline
 
@@ -190,6 +190,22 @@ $$
 $$
 
 Both factors are rotors: $\vec\Omega_{\mathrm{LT}}$ is a pure vector, so $\exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)$ is a unit rotor, and the flow stays on the norm shell. In a purely electric or purely magnetic field the exponential is a boost or a rotation; in a general uniform field it is a boost composed with a rotation, and the worldline is the corresponding screw. The companion articles on the purely electric and purely magnetic cases of *The Relativistic Particle in an External Field* are the two degenerate limits of this one closed form.
+
+## The Precession
+
+**What precesses is the frame the eigenspinor carries, and the rate is the rate of the rotor.** The tetrad $	ilde E_{\Phi,(\mu)}=	ilde U\mathcal{E}_\mu	ilde U^{*}$ turns with $	ilde U$, so the angular velocity of the particle's own axes in the laboratory is read off $ec\Omega_{\mathrm{LT}}$: the vector part of the rate is the instantaneous rotation, and its modulus is the rate at which the frame turns per unit proper time.
+
+**In a purely magnetic field that rate has a name.** With $ec E=0$ the rate is $ec\Omega_{\mathrm{LT}}=-(ϙ/m)ec B$, real and pure, so the exponential $\exp(	frac12ec\Omega_{\mathrm{LT}}	au)$ is a real unit quaternion: a spatial rotation of angle $\lvertec\Omega_{\mathrm{LT}}vert	au$ about $ec B$. The frame precesses about the field at the angular frequency
+
+$$
+\omega_{\mathrm{cyc}}=rac{ϙ B}{m},
+$$
+
+which is the cyclotron frequency, and the velocity turns with it. For an electron the sign is negative, and the frame and the velocity turn the same way.
+
+**In a general uniform field the rotation part of the rotor is the precession of the frame, and it is not the precession of the velocity.** The velocity turns about the field; the frame turns by the composition of that turn with the Thomas–Wigner rotation of the boost that carries the rest frame onto the worldline. The two differ by exactly the gyration of *The Wigner Angle of Two Boosts: Closed Form, Axis and Composition*, accumulated per unit proper time, and the difference is the Thomas precession computed in *Exercise: The Thomas Precession*. This is why a spinning particle in a storage ring precesses faster than its momentum turns: the eigenspinor's frame carries the extra rotation, and the eigenspinor is the object that holds it.
+
+**The precession is therefore not a separate effect bolted onto the rotor.** It is the imaginary part of the rotor's logarithm, and the closed form above already contains it: $\log	ilde U=	frac12ec\Omega_{\mathrm{LT}}	au+\log	ilde U(0)$, whose pure-vector part is the rotation and whose scalar part is the rapidity. A worldline in a uniform field is a screw, and the precession is the pitch of the screw.
 
 ## What the Framework Supplies and What It Only Transcribes
 

@@ -73,7 +73,7 @@ $$
 
 so the symbol is Hermitian for the sesquilinear form $\langle\tilde X,\tilde Y\rangle_{*}=\mathrm{Sc}(\tilde X\tilde Y^{*})$, and the flow preserves $\mathrm{Sc}(\tilde X\tilde X^{*})$.
 
-**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex Hermitian array with $2\,\mathrm{Sc}\,L_{\mathrm{axf}}(\tilde H_\Psi)=4h_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, and it names no spatial direction. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: the equation is written with elements and read with an axis-free array, and no matrix algebra stands between the two.
+**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex Hermitian array with $2\,\mathrm{Sc}\,L_{\mathrm{axf}}(\tilde H_\Psi)=4h_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, and it names no spatial direction. This is the ruling of *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*: the equation is written with elements and read with an axis-free array, and no matrix algebra stands between the two.
 
 ### The word
 
@@ -363,7 +363,7 @@ A central field's word collapses to a scale, a phase and a sign, and that case i
 - [The Meaning of N-Regularity and Degeneracy](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for $N$, the invertibles and the cone.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html) and [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same word applied to the two relativistic equations.
 - [The Non-Quantum Limit and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the pair read as the first term of a series.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for why the body of the equation carries elements and not arrays.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for why the body of the equation carries elements and not arrays.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1927) 322–326, for the continuity equation and the Hamilton–Jacobi equation of a scalar wave.
 - Takehiko Takabayasi, "On the formulation of quantum mechanics associated with classical pictures," *Progress of Theoretical Physics* **8** (1952) 143–182, for the same pair read as a hydrodynamical formulation.
 - David Bohm, "A suggested interpretation of the quantum theory in terms of hidden variables," *Physical Review* **85** (1952) 166–193, for the quantum potential and the guidance equation it defines.

@@ -475,7 +475,7 @@ The conventions are those of three companion articles:
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the scalar equation to which the Proca field reduces, and for the plane-wave convention used here.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the massless equation, the potential and field-strength biquaternions, and the gauge structure.
-- Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, for the Hodge dual and the split of the field strength on the vector part of the algebra.
+- Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane*, for the Hodge dual and the split of the field strength on the vector part of the algebra.
 
 ## Summary
 

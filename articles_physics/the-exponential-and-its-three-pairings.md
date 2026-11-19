@@ -607,7 +607,7 @@ The second row is the truncation, and it is the reason the degenerate sector has
 - [The H Norm: Amplitude and Frame](the-h-norm-amplitude-and-frame.html), the amplitude as the measure that survives the largest group of motions.
 - [Spin-Velocity Locking on the Degenerate Sector](spin-velocity-locking-on-the-degenerate-sector.html), the lock read for a fluid.
 - [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), the two strata as two physical situations.
-- [The Eigenspinor: The Lorentz Rotor as a Function of Proper Time](the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html), the half-angle attached to a worldline.
+- [The Eigenspinor: The Lorentz Rotor as a Function of Proper Time](the-eigenspinor-along-a-worldline-precession-in-a-uniform-field.html), the half-angle attached to a worldline.
 - [Similitudes Between Biquaternion Rotors and Hamiltonian Flow](similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html), the rotor's conjugation read as a flow.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the two modes read as two polar variables.
 - [Norm and Pairing Conventions](norm-and-pairing-conventions.html), §*The Four Objects Called a Boost*, the bookkeeping of the factor two.

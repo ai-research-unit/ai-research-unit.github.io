@@ -247,7 +247,7 @@ with $U$ the sixteen signed biquaternion units; its even part of order $16$ is a
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen two-sided operators and the group of order $32$.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis and the four left matrices.
 - [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen matrices of the operators in the coefficient frame.

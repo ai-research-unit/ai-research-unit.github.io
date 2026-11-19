@@ -188,7 +188,7 @@ Each statement below is a computation and not an analogy.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 This section is the only place in the article where the gamma matrices appear. They are not a different algebra and no formula above needs them: they are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and each gamma *is* one of the five frame basis operators, the factor $i$ included, so the dictionary below carries no extra phase.
 
@@ -298,7 +298,7 @@ The biquaternion algebra read over $\mathbb{C}$ has $\mathbb{C}$ for scalars, so
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - B. L. van der Waerden, *Group Theory and Quantum Mechanics* (Springer, 1974), and R. Brauer and H. Weyl, "Spinors in $n$ dimensions," *American Journal of Mathematics* **57** (1935) 425–449, for spinors over the division rings $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$.
 - M. F. Atiyah, R. Bott and A. Shapiro, "Clifford modules," *Topology* **3** (1964) 3–38, for the classification of real and complex Clifford algebras and their division rings.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the intrinsic order-two maps and the pseudoautomorphism of a Clifford algebra.

@@ -254,7 +254,7 @@ $$
 -i\left(\vec e_x\tilde Q\vec e_y\,p_x+\vec e_y\tilde Q\vec e_y\,p_y+\vec e_z\tilde Q\vec e_y\,p_z\right),
 $$
 
-with one term per component of the momentum, each of the form $\tilde Q\mapsto a\tilde Qb$ with two multipliers. This is why the framework writes the contraction with two-sided multipliers, the basis operators of *Operators Acting on Two Sides*: a single multiplier would keep the operator inside the four-dimensional algebra, and the four components need the pair. The arrays the framework prints for the propagation are not used in the body of an article; the reasons are the subject of *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+with one term per component of the momentum, each of the form $\tilde Q\mapsto a\tilde Qb$ with two multipliers. This is why the framework writes the contraction with two-sided multipliers, the basis operators of *Operators Acting on Two Sides*: a single multiplier would keep the operator inside the four-dimensional algebra, and the four components need the pair. The arrays the framework prints for the propagation are not used in the body of an article; the reasons are the subject of *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*.
 
 Two of the multipliers that the corpus prints are single ones, because $e_t$ is the unit of the algebra and a slot carrying it collapses: the time term is the single multiplier $\tilde Q\mapsto i\tilde Q\vec e_xE$, and the multiplier $\tilde Q\mapsto-i\tilde Q\vec e_z$, which the solutions article reads on the two values $\tilde{Ξ}_{L},\tilde{Ξ}_{R}$, is the other single one. The derivative form of the contraction replaces $p_\mu$ by $\partial/\partial R_\mu$.
 
@@ -377,7 +377,7 @@ Two gaps remain, and one identification remains conditional. The field S-matrix 
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the two legacy displays are not printed in the body of an article.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the two legacy displays are not printed in the body of an article.
 - John A. Wheeler, "On the Mathematical Description of Light Nuclei by the Method of Resonating Group Structure," *Physical Review* **52** (1937) 1107–1122, for the introduction of the scattering matrix.
 - Werner Heisenberg, "Die 'beobachtbaren Größen' in der Theorie der Elementarteilchen," *Zeitschrift für Physik* **120** (1943) 513–538, for the S-matrix program.
 - Freeman J. Dyson, "The S-Matrix in Quantum Electrodynamics," *Physical Review* **75** (1949) 1736–1755, for the time-ordered exponential and the equivalence of the interaction-picture and Heisenberg-picture formulations.

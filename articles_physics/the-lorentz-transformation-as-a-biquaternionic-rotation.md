@@ -6,9 +6,11 @@ The Lorentz transformation is usually presented as a change of coordinates betwe
 
 This article develops the biquaternionic formulation of the Lorentz transformation. The central objects are:
 
-1. The **boost biquaternion** $\tilde U_{\Psi,\mathrm b}$, the Lorentz rotor that generates the transformation.
-2. The **four-velocity biquaternion** $\tilde{V}_{\Phi}$, which describes the state of motion.
-3. The **rotor conjugation** $\tilde{Q}_2 = \tilde U_{\Psi,\mathrm b}\tilde{Q}\tilde U_{\Psi,\mathrm b}^{*}$, which implements the transformation on four-vectors.
+1. The **boost biquaternion** $\tilde U_{\mathrm b}$, the Lorentz rotor that generates the transformation.
+2. The **four-vector** $\tilde Q$, the object the transformation acts on, written $\tilde P$ when it is a four-momentum and $\tilde V$ when it is a four-velocity.
+3. The **rotor conjugation** $\tilde Q_2 = \tilde U_{\mathrm b}\tilde Q\tilde U_{\mathrm b}^{*}$, which implements the transformation on four-vectors.
+
+**One convention about the subscripts, and it is only a convention.** The rotor is a unit-norm biquaternion, and on a four-dimensional real slice of the algebra it is written $\tilde U_{\Psi,\mathrm b}$; on the conjugate slice it is written $\tilde U_{\Phi,\mathrm b}$. The two spellings are one element with one multiplication, and the subscript records the slice on which the article displays it. This article keeps the subscripts because its reader meets them in the companions, and it states the elements generically where a statement holds of both: $\tilde U_{\mathrm b}$ for the rotor, $\tilde Q$ for what it acts on. Nothing below depends on which slice is chosen.
 
 The article is organized as follows. First the $i r'_t$ convention and the Euclidean form of the metric are recalled, because this is what makes the Lorentz transformation a rotation. Then the boost biquaternion is defined and its properties established. The rotor conjugation is stated and verified against the standard component formulas. The relation between the boost biquaternion and the four-velocity is derived. The group structure is identified, and the optical experiments that select this group rather than the Galilean one are recorded, with their ownership marked. Finally, the subtleties introduced by the complex nature of the rotation and by the local complex structure are discussed.
 

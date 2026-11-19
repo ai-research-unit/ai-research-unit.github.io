@@ -193,7 +193,7 @@ The identities Jacobi, Jordan, the derivation identity, the fundamental identity
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Liu Yu-Fen, "Triality, Biquaternion and Vector Representation of the Dirac Equation," arXiv:math-ph/0109008 (2001), §1 and §2, for the structure constants $c_{\mu\nu\lambda}$, the normed condition, the Lie and Jordan halves, the fundamental identity, the Jordan triple system, and the four $2\times2$ periodic matrices.
 - Liu Yu-Fen, "Triality and Dual Equivalence Between Dirac Field and Topologically Massive Gauge Field," arXiv:hep-th/0602275 (2006), for the order-$\ell$ ding and the ternary structure.
 - N. Jacobson, *Structure and Representations of Jordan Algebras* (American Mathematical Society Colloquium Publications 39, Providence, 1968), for Jordan algebras, their triple systems, and the quadratic representation.

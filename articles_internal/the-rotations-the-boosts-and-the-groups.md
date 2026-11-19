@@ -894,8 +894,8 @@ The isometry group of the fourth form is $\mathrm{U}(1,3)$ of dimension sixteen,
 - [The Biquaternion Group of Invertibles as a Topological Group](../articles_maths/the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the topology of the group of invertibles.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the group of invertibles and the norm-one slice.
 - [The Four Forms and the Four Algebraic Norms](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms and their isometry groups.
-- [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the compact slice read as a gauge group.
-- [The K Norm and the Indefinite Structure](the-k-norm-and-the-indefinite-structure.html), for the physical reading of the fourth form.
-- [Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form](kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form.html), for the antiunitary coset.
-- [The CPT Theorem in Biquaternionic Form](the-cpt-theorem-in-biquaternionic-form.html), for the discrete symmetries and their components.
-- [Integer Spin Quantization and the Adjoint Action on the Material Sector](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint acting on the material sector.
+- [The Group of Invertibles, the Cone and the Orders](../articles_physics/the-group-of-invertibles-the-cone-and-the-orders.html), for the compact slice read as a gauge group.
+- [The K Norm and the Indefinite Structure](../articles_physics/the-k-norm-and-the-indefinite-structure.html), for the physical reading of the fourth form.
+- [Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form](../articles_physics/kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form.html), for the antiunitary coset.
+- [The CPT Theorem in Biquaternionic Form](../articles_physics/the-cpt-theorem-in-biquaternionic-form.html), for the discrete symmetries and their components.
+- [Integer Spin Quantization and the Adjoint Action on the Material Sector](../articles_physics/integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the adjoint acting on the material sector.

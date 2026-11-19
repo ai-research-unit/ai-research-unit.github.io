@@ -514,7 +514,7 @@ all four of real dimension eight, so the equation can be carried by $\mathbb{B}$
 
 The advantage is that the algebra is the object and the array is a display of it. A biquaternion has four complex coefficients and the equation is one element acting on one element; the array needs a frame, a labelling of rows by the values and of columns by the letters of the units, and every identity is then a statement about one display. The corpus writes the element and prints the array only where a comparison wants it.
 
-The price is a boundary case. A biquaternion acts on itself by left multiplication, so the field is a general element rather than a column, and the mass is a pairing of the two parts rather than an entry of a matrix; both are available in the algebra, and neither needs an extra object to hold the four numbers. What the array does better is bookkeeping: four rows make the four coefficients visible one by one, and a reader who is counting degrees of freedom will reach for it. That is why *The Legacy Pauli Gamma Formulation* keeps the arrays, from the article *Why AXF Matrices instead of Pauli and Gamma Matrices* onward, as a check on the algebra and not as its definition.
+The price is a boundary case. A biquaternion acts on itself by left multiplication, so the field is a general element rather than a column, and the mass is a pairing of the two parts rather than an entry of a matrix; both are available in the algebra, and neither needs an extra object to hold the four numbers. What the array does better is bookkeeping: four rows make the four coefficients visible one by one, and a reader who is counting degrees of freedom will reach for it. That is why *The Legacy Pauli Gamma Formulation* keeps the arrays, from the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused* onward, as a check on the algebra and not as its definition.
 
 ### What the Biquaternion Formulation Adds
 
@@ -671,7 +671,7 @@ These questions are open.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -781,7 +781,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 - [Introduction to the Spin-Half Bispinor Spaces](the-spin-half-bispinor-spaces.html), for the two minimal left ideals as the carriers of the two values, the exactness of the closure, and the theorem that no subspace of the material sector is a left ideal.
 - [Explicit Solutions of the Biquaternionic Dirac Equation](explicit-solutions-of-the-biquaternionic-dirac-equation.html), for the plane waves, the massless and massive kernel conditions, the completed spherical and cylindrical solutions and the field as the gradient of a scalar potential.
 - [The Dirac–Maxwell Correspondence in Biquaternionic Form](the-dirac-maxwell-correspondence-in-biquaternionic-form.html), for the identity of form with the Maxwell equation, the mass term, the static-medium dictionary, the mass shell as a condition and the Lanczos feedback reading.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Three Wavenumbers of a Particle](the-three-wavenumbers-of-a-particle.html), for the definition of the wave number $k_m=mc/\hbar$ and of the two state wave numbers $k_{\Phi}$ and $k_{t}^{\prime}$, their values for the electron, the proton and the other particles, and the unit argument that fixes the coefficient of the mass term.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original Dirac equation.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the foundational treatment of the Dirac equation.

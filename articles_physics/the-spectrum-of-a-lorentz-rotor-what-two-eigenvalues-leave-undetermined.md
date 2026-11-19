@@ -261,7 +261,101 @@ $\tilde U$ and $-\tilde U$ are different elements of $G$ with different spectra 
 
 ### Why Both Are Discrete
 
-Neither ambiguity is continuous: one is a swap of two labels, the other a global sign. That is why the two-to-one cover and the ordering ambiguity are harmless in a formula that computes a *magnitude* and fatal in a formula that computes a *phase*. The interference experiments of *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* are the experiments that see the difference.
+Neither ambiguity is continuous: one is a swap of two labels, the other a global sign. That is why the two-to-one cover and the ordering ambiguity are harmless in a formula that computes a *magnitude* and fatal in a formula that computes a *phase*. The interference experiments of *The Two-Sheeted Cover and the Topology of the Group* are the experiments that see the difference.
+
+## The Two Eigenvalues Are the Two Weyl Weights
+
+**Why this belongs here.** The two eigenvalues of a rotor of unit norm were counted above as a modulus and a phase. For a boost they carry a name from the representation theory of the group: they are the two Weyl weights, exponentiated. The identification is worth stating once, because it is the bridge from this article to the representation labels of *$P$, $T$ and the Representation Labels*.
+
+## The Eigenvalues Are the Weights
+
+### The Cartan Element
+
+Take the boost axis to be $\vec e_z$. The generator of the family is the Cartan element
+
+$$
+K_z=\tfrac12 i\vec e_z,\qquad \mathsf{M}_2(K_z)=\tfrac12\sigma_z,
+$$
+
+and the boost of rapidity $\theta_{\mathrm{rpd}}$ is $\exp(\theta_{\mathrm{rpd}}K_z)$. The two eigenspinors of $\mathsf{M}_2(K_z)$ have eigenvalues $\pm\tfrac12$.
+
+### The Weight Definition
+
+A weight of a representation is a linear functional $w$ on the Cartan such that the representation's Cartan action on the weight vector is multiplication by $w(H)$. For the fundamental representation on $\mathbb{C}^{2}$ the two weights are
+
+$$
+w_\pm(K_z)=\pm\tfrac12 .
+$$
+
+Then the representation's action of the group element $\exp(\theta_{\mathrm{rpd}} K_z)$ on the weight vector is multiplication by
+
+$$
+e^{\theta_{\mathrm{rpd}}\,w_\pm(K_z)}=e^{\pm\theta_{\mathrm{rpd}}/2},
+$$
+
+which is exactly the eigenvalue computed above.
+
+### The Dictionary
+
+| object | value on the fundamental | where it appears |
+|---|---|---|
+| weight $w_+$ | $+\tfrac12$ | $\lambda_+=e^{+\theta_{\mathrm{rpd}}/2}$ |
+| $B$, $B^{2}=Q_x^{2}+Q_y^{2}+Q_z^{2}$ | the square root of the squared vector part, and the square itself | — |
+| $\lambda_\pm=Q_t\pm iB$ | the two eigenvalues of the general element | — |
+| $\vec Z=-i\vec Q/B$, $P_\pm=\tfrac12(e_t\pm\vec Z)$ | the unit vector of the vector part and the two eigenprojectors | — |
+| weight $w_-$ | $-\tfrac12$ | $\lambda_-=e^{-\theta_{\mathrm{rpd}}/2}$ |
+| sum $w_++w_-$ | $0$ | $\det=1$ |
+| root of the adjoint | $\pm1$ | eigenvalue ratio $e^{2\theta_{\mathrm{rpd}}}$ |
+
+The last row is the statement that the adjoint's eigenvalues are $\pm\alpha$ with $\alpha$ the root, and the fundamental's are $\pm\tfrac12\alpha$: one factor of two, which is the same factor of two that makes the fundamental a spinor rather than a vector.
+
+### Why the Statement Is Not a Tautology
+
+It would be circular to say "the eigenvalues are the weights" if the weights were defined as the eigenvalues. They are not: the weights are defined as linear functionals on the Cartan subalgebra, computed from the structure of the representation and the root system, and they exist before any exponential is taken. The content of the identification is that exponentiating a weight functional evaluated on a generator reproduces the matrix eigenvalue. That is a theorem about the compatibility of the exponential with the weight decomposition, and it is what makes the weights the right labels.
+## The Two Roots and the Two Weights
+
+### The Roots
+
+The adjoint representation has eigenvalues $\pm\alpha$ on the Cartan, with $\alpha(K_z)=1$ in the normalisation where the root length is one. In the corpus's anti-Hermitian convention the two Cartan generators $K_z$ and $J_z$ give different root values, real and imaginary respectively, as *The Cartan Subalgebra, the Roots and the Three Real Forms* states.
+
+### The Weights
+
+The fundamental representation has eigenvalues $\pm\tfrac12\alpha$ on the same Cartan. So the two Weyl weights are half the two roots, and the "half" is the spin.
+
+### The Shift by $\rho$
+
+The sum of the two weights is zero, and the Weyl vector is $\rho=\tfrac12\alpha$. Adding $\rho$ to each weight gives $\{0,1\}$, the two integers that label the two states of a two-level system. That shift is the reason the eigenvalues $e^{\pm\theta_{\mathrm{rpd}}/2}$ are conventionally rewritten as $e^{\theta_{\mathrm{rpd}}/2}$ and $e^{-\theta_{\mathrm{rpd}}/2}$ rather than as a symmetric pair around one, and it is the reason the second Casimir's eigenvalues are $m(m+1)$ rather than $m^{2}$.
+
+### Why Two and Only Two
+
+The fundamental representation is two-dimensional, so it has two weights. The number of weights equals the dimension, and the number of independent ones equals the rank, here one. For the Lorentz algebra the rank is two, so a representation's weights are labelled by two integers, which is the $(m,n)$ of the block.
+## The Degenerate Case
+
+### When the Eigenvalues Coincide
+
+$\lambda_+=\lambda_-$ requires $\operatorname{tr}^{2}=4$, that is $H_t^{2}=1$. Since $\tilde H$ is Hermitian of unit norm, $H_t$ is real and
+
+$$
+1=\langle\tilde H\rangle_{\natural}=H_t^{2}+\sum_\eta H_\eta^{2}=H_t^{2}-\sum_\eta\lvert H_\eta\rvert^{2},
+$$
+
+so $H_t^{2}\ge1$ with equality **if and only if the vector part vanishes**. Hence
+
+$$
+\lambda_+=\lambda_-\iff\tilde H=\pm e_t .
+$$
+
+### What It Means
+
+At $\tilde H=e_t$ both eigenvalues are $1$ and the eigenprojectors are undefined; at $\tilde H=-e_t$ both are $-1$, and the element is not Hermitian positive, so it is not an admissible boost factor. So the boost family's eigenvalues are distinct at every point except the identity, where the whole family collapses.
+
+### The Reading at the Boundary
+
+The rapidity $\theta_{\mathrm{rpd}}\to\infty$ is *not* a degenerate case: the eigenvalues run to $\infty$ and $0$ and stay distinct. The degenerate case is the opposite end, $\theta_{\mathrm{rpd}}=0$, the identity. This is worth saying because a reader who expects degeneracy at the speed of light will look in the wrong place: at the light speed the eigenvalues are infinite and zero, and the spinor transformation is singular in the limit but its two eigenvalues remain distinguishable for every finite rapidity.
+
+### The Rotation's Degenerate Case
+
+For a rotation the eigenvalues are $e^{\pm i\theta_{\mathrm{axr}}/2}$, which coincide exactly when $\theta_{\mathrm{axr}}\in\{0,2\pi\}$, that is at $\pm e_t$. The two families therefore degenerate at the same two elements, and the reason is the same: total scalar action.
 
 ## Summary
 

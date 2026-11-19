@@ -328,7 +328,7 @@ its equation (30). **As printed, the parameter $q_7$ appears in two coefficients
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -417,7 +417,7 @@ The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{C
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Alejandro Arias Jiménez, "Biquaternion representation of the spin one half and it's application on the relativistic one electron atom," arXiv:2403.02344v1 [quant-ph] (28 February 2024), Universidad de las Américas Puebla, the source recorded here.
 - V. V. Kravchenko and M. V. Shapiro, *Integral Representations for Spatial Models of Mathematical Physics*, Pitman Research Notes in Mathematics 351 (Addison-Wesley Longman, 1996), for the $2\times2$ matrix form $\left(\begin{smallmatrix}z&w\\-\bar w&\bar z\end{smallmatrix}\right)$ of the real quaternions and the quaternionic function theory built on it.
 - V. V. Kravchenko, *Applied Quaternionic Analysis*, Research and Exposition in Mathematics 28 (Heldermann, 2003), for the quaternionic Dirac operators and potentials that the source's last sections approach from the matrix side.

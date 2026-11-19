@@ -264,7 +264,7 @@ The Dirac algebra is $\mathrm{Cl}(1,3)$, of real dimension $16$, isomorphic to $
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the comparison of the two notations, the worked Dirac operator and the length table.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the comparison of the two notations, the worked Dirac operator and the length table.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen operators $L_{e_\mu} R_{e_\nu}$ and their product rule.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the multiplication table.
 - [$M_4(\mathbb{C})$ Axis-Free Representation: Operators](m4c-axis-free-representation-operators.html), for the sixteen products in the coefficient frame, their signs and their composition.

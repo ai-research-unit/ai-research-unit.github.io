@@ -172,7 +172,7 @@ Hence $\vec J_+$ spans the self-dual bivectors and $\vec J_-$ the anti-self-dual
 
 ### Why the Names Are the Right Ones
 
-A bivector is self-dual when $\star F=iF$ and anti-self-dual when $\star F=-iF$. Those are the two eigenspaces just computed. On the field strength the same split is the subject of *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, and on the algebra it is the split of this section; the two are one statement seen in two carriers.
+A bivector is self-dual when $\star F=iF$ and anti-self-dual when $\star F=-iF$. Those are the two eigenspaces just computed. On the field strength the same split is the subject of *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane*, and on the algebra it is the split of this section; the two are one statement seen in two carriers.
 
 ## The Adjoint as $(1,0)\oplus(0,1)$
 
@@ -244,4 +244,4 @@ The two triples $\vec J_\pm=\tfrac12(\vec J\pm i\vec K)$ each close with structu
 - R. Penrose and W. Rindler, *Spinors and Space-Time*, Vol. 1, Cambridge University Press, 1984 — the self-dual and anti-self-dual decomposition of bivectors and the $\star^{2}=-1$ convention.
 - M. Carmeli, *Group Theory and General Relativity*, McGraw-Hill, 1977 — the complexification of the Lorentz algebra and its two ideals.
 - *The Six Generators and Their Commutators* — the table rewritten here.
-- *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* — the same split on the field strength, in the corpus's own notation.
+- *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* — the same split on the field strength, in the corpus's own notation.

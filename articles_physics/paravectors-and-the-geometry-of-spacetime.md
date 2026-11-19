@@ -291,7 +291,7 @@ The one genuinely new object in the source's programme is not a change of basis 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas of this section are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, and they are **basis operators**, not elements. The section of the same name in *The Number Systems as Clifford Algebras* uses the word for the **elements** $i\vec e_\eta$; here it names the basis operators that represent those elements on the Dirac module. The module is what tells the two apart, and the basis operators act on it while the elements are multiplied. In the corpus's notation they are
 
@@ -419,7 +419,7 @@ Rotors compose by multiplication and the composite is a norm-one element whose p
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Number Systems as Clifford Algebras](../articles_maths/the-number-systems-as-clifford-algebras.html), for the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$.
 - William E. Baylis, "Relativity in Introductory Physics", *Canadian Journal of Physics* **82** (2004) 853–873 (arXiv:physics/0406158), for the paravector formalism, the boost rule and the plane-wave identity.
 - William E. Baylis, *Electrodynamics: A Modern Geometric Approach* (Birkhäuser, 1999), for the full development of the algebra of physical space.

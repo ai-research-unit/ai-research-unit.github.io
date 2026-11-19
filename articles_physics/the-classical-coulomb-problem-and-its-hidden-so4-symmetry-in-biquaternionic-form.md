@@ -256,7 +256,7 @@ Under this action $\mathbb{B}$ is a single balanced representation. The two Casi
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The five generators are basis operators, each a pure tensor, and the six multipliers of the symmetry section are read in the same frame:
 
@@ -345,7 +345,7 @@ The framework supplies the real three-space in which all six generators take the
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - W. Pauli, "Über das Wasserstoffspektrum vom Standpunkt der neuen Quantenmechanik," *Zeitschrift für Physik* **36** (1926) 336–363, for the derivation of the Balmer formula from the conserved vectors and their commutation relations.
 - V. Fock, "Zur Theorie des Wasserstoffatoms," *Zeitschrift für Physik* **98** (1935) 145–154, for the geometrical identification of the hydrogen symmetry group as $SO(4)$.
 - V. Bargmann, "Zur Theorie des Wasserstoffatoms: Bemerkungen zur gleichnamigen Arbeit von V. Fock," *Zeitschrift für Physik* **99** (1936) 576–582, for the representation theory of the bound-state symmetry.

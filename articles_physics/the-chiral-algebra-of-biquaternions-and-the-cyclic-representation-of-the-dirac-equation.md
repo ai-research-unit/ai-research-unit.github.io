@@ -552,7 +552,7 @@ The remaining physical items are recorded as the author's claims. The boost, the
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. The basis operators are named here and nowhere else, with $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$:
 
@@ -642,7 +642,7 @@ Two corrections of computation run through the article. The first is the factor 
 ## Further Reading
 
 - [Operator Chirality on the Biquaternion Algebra](../articles_maths/operator-chirality-on-the-biquaternion-algebra.html), for the two slots, the basis operator $\mathsf{V}_{\mathrm{vol}}$ of a frame, the two projectors $\tfrac12(\mathrm I\pm\mathsf{V}_{\mathrm{vol}})$, the swap and the conjugation, and the objects the notion does not need.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Sergey Y. Kotkovskiy, *Chiral algebra of Dirac equation*, version v3 (February 2026); earlier version *Cyclic representation of the Dirac equation*, v2 (March 2025). The source of this article: the isotropic basis, the four multiplication types, the exchange and cyclic conjugations, the cyclic representation, the Hadamard expression, the two array correspondences, the Lorentz boost, the plane waves, the spin operators and the rotation transformation. The paper prints the identifier `2502.0126`, which is malformed and belongs on arXiv to an unrelated statistics paper; no record of this work was found under that number, its title, or its author's name, so the two versions held in the corpus are the source of record.
 - S. Ya. Kotkovsky, "Nullvector algebra", *Hypercomplex Numbers in Geometry and Physics* **2**(23) (2014), for the author's earlier nullvector algebra, the origin of the isotropic basis and the terminology of nullquaternions used throughout.
 - V. V. Kravchenko, *Applied Quaternionic Analysis* (Heldermann, 2003), and the corpus's [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) and [The Time-Harmonic Maxwell Operator and the Quaternionic Cauchy Integral](the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.html), for the standard biquaternionic Dirac machinery against which the paper's purpose-made algebra should be read.

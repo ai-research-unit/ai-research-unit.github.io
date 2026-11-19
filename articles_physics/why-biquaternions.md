@@ -342,7 +342,7 @@ This is not a defect of notation, and it is where the framework pays most visibl
 
 ### The array and the direction
 
-The Pauli and gamma matrices write a direction on the page, and they write it silently. Exactly one of the three Pauli matrices is real and diagonal, and that is the one that built the idempotents. A triplet with one diagonal member and two off-diagonal members cannot be written without deciding which member it is, so the decision is taken at the moment the arrays are written ([Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html)). The direction then travels: into the root $i\vec e_z$, into the Peirce frame, into the ideal, into the column, into the spinor and into the gamma set, and every later sentence about "the third component" or "the upper block" inherits it.
+The Pauli and gamma matrices write a direction on the page, and they write it silently. Exactly one of the three Pauli matrices is real and diagonal, and that is the one that built the idempotents. A triplet with one diagonal member and two off-diagonal members cannot be written without deciding which member it is, so the decision is taken at the moment the arrays are written ([The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused)). The direction then travels: into the root $i\vec e_z$, into the Peirce frame, into the ideal, into the column, into the spinor and into the gamma set, and every later sentence about "the third component" or "the upper block" inherits it.
 
 The coefficient array writes none. Its diagonal basis operators are the four squares, $e_te_t$, $\vec e_x\vec e_x$, $\vec e_y\vec e_y$ and $\vec e_z\vec e_z$, one per unit, and a permutation of the three spatial units permutes them without changing the shape of the array. No slot is privileged, because no slot was chosen.
 
@@ -460,7 +460,7 @@ The corpus articles, in the order in which this article uses them:
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html). The convection and spin parts, and $g=2$.
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html). The cone, the phase winding, and the quantum of circulation.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html). The Madelung pair and its relativistic form.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html). The direction an array display writes, and the axis-free display.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused). The direction an array display writes, and the axis-free display.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). $\mathrm{SU}(2)$ from the vector units, and why colour is outside.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html). Imaginary time as a coordinate.
 - [Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html). States, entropy, and the null cone.

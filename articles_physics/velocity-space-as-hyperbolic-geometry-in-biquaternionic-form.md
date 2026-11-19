@@ -30,7 +30,7 @@ Hermitian and of unit norm. Throughout, $c$ is the speed of light in the medium,
 The companion articles supply the pieces:
 
 - *The Relativistic Particle in Biquaternionic Form*, for the four-velocity, the rapidity and the statement that the four-velocity tip is the hyperboloid $\langle\tilde{V}_{\Phi}\rangle_{\natural} = -c^2$.
-- *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the boost manifold $\mathcal{B}\cong\mathbb{H}^3$, its contractibility and the non-closure of the boosts.
+- *The Two-Sheeted Cover and the Topology of the Group*, for the boost manifold $\mathcal{B}\cong\mathbb{H}^3$, its contractibility and the non-closure of the boosts.
 - *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form*, for the Wigner rotation, the closed-loop holonomy and the numerical angles reproduced below.
 - *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the cone $\langle\tilde{Q}\rangle_{\natural} = 0$ and its two families.
 - *The Lorentz Transformation as a Biquaternionic Rotation*, for the rotor conjugation and the square-root relation between the rotor and the four-velocity.

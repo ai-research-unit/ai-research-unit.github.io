@@ -394,7 +394,7 @@ The worldline and the checkerboard are complementary descriptions of the same ob
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C}) = M_4(\mathbb{C})$, not a different algebra; here $L_aR_b$ is the two-sided multiplication $\tilde{Ξ}\mapsto a\tilde{Ξ} b$. The five are the frame basis operators under the gammas' own letters, so that the dictionary between the two writings is the identity on the operators:
 
@@ -509,7 +509,7 @@ In the biquaternion framework, a single odd variable is not an element of the al
 ## Further Reading
 
 - [The Path Integral and the Dirac Equation in Biquaternionic Polar Variables](the-path-integral-and-the-dirac-equation-in-biquaternionic-polar-variables.html), the companion, for the same integral read in the polar word.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - R. P. Feynman, "Space-time approach to non-relativistic quantum mechanics," *Reviews of Modern Physics* **20** (1948) 367–387, for the path integral.
 - R. P. Feynman, "The theory of positrons," *Physical Review* **76** (1949) 749–759, and "Mathematical formulation of the quantum theory of electromagnetic interaction," *Physical Review* **80** (1950) 440–457, for the first-order propagator and its proper-time structure.
 - H. A. Gersch, "Feynman's relativistic chessboard as an Ising model," *International Journal of Theoretical Physics* **20** (1981) 491–501, for the checkerboard model and its continuum limit.

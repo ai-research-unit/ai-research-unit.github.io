@@ -417,7 +417,7 @@ The three closures are not a decomposition. The carriers are one algebra read th
 - [Idempotents](../articles_maths/idempotents.html), for the roots of one and the families indexed by the axis.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the polar form of the norm and the inertias.
 - [Representations of Groups](../articles_maths/representations-of-groups.html), for complete reducibility and the highest-weight string.
-- [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html), for the actions whose carriers these are.
+- [The Rotations, the Boosts and the Groups](../articles_internal/the-rotations-the-boosts-and-the-groups.html), for the actions whose carriers these are.
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the central operator and the restriction to the centre.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the left multiplier and the two ideals.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the sector as the space of a four-vector.

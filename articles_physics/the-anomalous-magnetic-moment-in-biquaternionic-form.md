@@ -208,7 +208,7 @@ The on-shell states were built as $w=i\,p_0\,w_0\vec e_x-\sum_\eta i\,p_\eta\,\v
 
 **The normalisation of the bivector.** The conventions article writes the Lorentz generator as half the commutator of the two basis operators, $\sigma_{\mu\nu}=\tfrac14\big[\gamma_\mu,\gamma_\nu\big]=\tfrac12c_\mu c_\nu$, and it takes twice that for the bivector of the pair. This article writes $\mathcal G_{\mu\nu}=-i\,c_\mu c_\nu=-2i\,\sigma_{\mu\nu}$ and $S_{\mu\nu}=\tfrac12\mathcal G_{\mu\nu}=-i\,\sigma_{\mu\nu}$: the conventions' objects times $-2i$ and $-i$, the minus being the reversal of the two right multipliers. What the factor buys is the Hermiticity of the class, $\mathcal G_{j\eta}=i\vec e_m$ fixed by the star, and it is what fixes the sign of the closure in §*The Reduction of a Numerator*. The two tables of six entries are one table read twice, the arithmetic of §*The Six Directions* reading the rotations against $i\vec e_m$ and the timelike pairs against $i\vec e_\eta$ on the left and $\vec e_z$ on the right.
 
-**Why the display is not used.** The reason is the one given in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*: the gammas are a frame of one display and not a second algebra, the four directions are elements of one algebra, and every identity of this article is an identity of that algebra, unchanged by the display the reader writes it in.
+**Why the display is not used.** The reason is the one given in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*: the gammas are a frame of one display and not a second algebra, the four directions are elements of one algebra, and every identity of this article is an identity of that algebra, unchanged by the display the reader writes it in.
 
 ## Summary
 
@@ -257,5 +257,5 @@ The algebra supplies the tensor structure, the sector placement and the conventi
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the pairing and the two Dirac equations.
 - [Angular Momentum and Spin in Biquaternionic Form](angular-momentum-and-spin-in-biquaternionic-form.html), for the spin generators.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the frame's operators, their traces and the display of the closing section.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reason the closing section closes.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reason the closing section closes.
 

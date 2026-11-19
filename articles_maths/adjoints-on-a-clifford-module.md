@@ -347,7 +347,7 @@ Hermitian Dirac Operator* and *The Hermitian Cauchy Kernel as an Adjoint*.
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - F. Brackx, R. Delanghe and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the algebra-valued and scalar pairings of the Clifford theory and the adjoints they induce.
 - R. Delanghe, F. Sommen and V. Souček, *Clifford Algebra and Spinor-Valued Functions* (Kluwer, 1992), for the module pairings, the intertwiner adjoints and the spinor dual.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Clifford module, its Hermitian forms and the self-adjointness of Dirac-type operators.

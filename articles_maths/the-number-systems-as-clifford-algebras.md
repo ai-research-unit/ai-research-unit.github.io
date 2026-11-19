@@ -228,7 +228,7 @@ The composition property of the norm â€” the multiplicativity $N(xy)=N(x)N(y)$ â
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A. K. Peters, 2003), for the number systems and the composition law.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the low-dimensional Clifford algebras with the classical number systems.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the norms and conjugations of the Clifford algebras of small dimension.

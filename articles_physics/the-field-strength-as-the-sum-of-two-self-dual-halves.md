@@ -6,7 +6,7 @@ A field strength is a two-form, and a two-form in four dimensions has six compon
 
 This article is the field-theoretic reading of the block's structural articles. It states the field strength as a bivector and as an element of the Lie algebra, defines the dual and its square, performs the split, identifies the Riemann–Silberstein half, derives the transformation law and the statement that the halves transform by the tensor action and not by the congruence, and writes the Bianchi identity and the field equation as one complex equation.
 
-The algebra and the sign conventions are those of the corpus's field-strength articles, and this article does not restate them. *The Field-Strength Biquaternion and Its Invariants* supplies the field-strength biquaternion, the Hodge dual and the invariants; *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* supplies the projectors and the naming of the two signs; *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies the duality rotation and the warning about the transformation law; *Maxwell's Equations in the Biquaternionic Formulation* supplies the potential and the gauge structure. The block adds only the group-theoretic reading.
+The algebra and the sign conventions are those of the corpus's field-strength articles, and this article does not restate them. *The Field-Strength Biquaternion and Its Invariants* supplies the field-strength biquaternion, the Hodge dual and the invariants; *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* supplies the projectors and the naming of the two signs; *Exercise: Duality Rotation and the Riemann–Silberstein Vector* supplies the duality rotation and the warning about the transformation law; *Maxwell's Equations in the Biquaternionic Formulation* supplies the potential and the gauge structure. The block adds only the group-theoretic reading.
 
 ## The Field Strength as a Bi-Vector
 
@@ -329,6 +329,6 @@ A field strength is a two-form, hence an element of the Lorentz Lie algebra, wit
 - J. D. Jackson, *Classical Electrodynamics*, 3rd ed., Wiley, 1999, chapter 11 — the complex field combination and the duality rotation.
 - I. Białynicki-Birula and Z. Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism", *Journal of Physics A* 46 (2013) 053001 — the modern review.
 - *The Field-Strength Biquaternion and Its Invariants* — the conventions this article uses throughout.
-- *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* — the projectors and the naming.
+- *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* — the projectors and the naming.
 - *Exercise: Duality Rotation and the Riemann–Silberstein Vector* — the duality rotation and the warning about the transformation law.
 - *The Two Commuting Complex Triples* — the algebraic reading of the two halves.

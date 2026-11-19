@@ -355,7 +355,7 @@ which is the classical Larmor frequency for a moment $\mu=ϙ\hbar/2m$ in the fie
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy, and the reasons are in *Why AXF Matrices instead of Pauli and Gamma Matrices*. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and they are used in this section only, as the frame in which the algebra's own operators can be compared with the standard matrices.
+The Pauli and gamma formulation is legacy, and the reasons are in *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra, and they are used in this section only, as the frame in which the algebra's own operators can be compared with the standard matrices.
 
 **The frame.** Write $L_a\tilde\Xi=a\tilde\Xi$ and $R_b\tilde\Xi=\tilde\Xi b$ for left and right multiplication, and $c(M)$ for the matrix of a basis operator in the basis of the sixteen products. The four gammas and $\gamma_5$ are single basis operators:
 
@@ -509,7 +509,7 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the pairing that the current is.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the derivation of the gyromagnetic ratio.
 - [Relativistic Mechanics from the Dirac Wave](relativistic-mechanics-from-the-dirac-wave.html), for the Lorentz force and the spin term at first order.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the legacy frame is a frame and not the algebra.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the legacy frame is a frame and not the algebra.
 - P. A. M. Dirac, "The quantum theory of the electron," *Proceedings of the Royal Society A* **117** (1928) 610–624, for the original equation and the minimal coupling.
 - Hermann Weyl, "Elektron und Gravitation," *Zeitschrift für Physik* **56** (1929) 330–352, for the local phase.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard treatment of minimal coupling and the conserved current.

@@ -130,7 +130,7 @@ because $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t$ as a coefficien
 
 ### The Three Regions Are Orbits
 
-The invariance is sharpened by the orbit structure. Under the restricted Lorentz group $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$, realized by the rotor conjugation, the future-directed nonzero null elements of $\mathbb{B}_{\Phi}$ form a single orbit and their past-directed counterparts form a second, the future-directed timelike elements of a fixed biquaternion norm form a single orbit, the past-directed timelike elements of that biquaternion norm form a single orbit, and the spacelike elements of a fixed biquaternion norm form a single orbit. The automorphism interpretation of the group is developed in the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, and the covering and topology in *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*.
+The invariance is sharpened by the orbit structure. Under the restricted Lorentz group $SO^+(1,3) \cong SL(2,\mathbb{C})/\{\pm e_t\}$, realized by the rotor conjugation, the future-directed nonzero null elements of $\mathbb{B}_{\Phi}$ form a single orbit and their past-directed counterparts form a second, the future-directed timelike elements of a fixed biquaternion norm form a single orbit, the past-directed timelike elements of that biquaternion norm form a single orbit, and the spacelike elements of a fixed biquaternion norm form a single orbit. The automorphism interpretation of the group is developed in the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, and the covering and topology in *The Two-Sheeted Cover and the Topology of the Group*.
 
 The orbit statement is exactly the statement that the regions are the algebra's invariant strata. Two events with a timelike separation can be brought to a standard form by a rotor; two events with a spacelike separation cannot be brought to that form, and no rotor relates them. There is no continuous Lorentz transformation that interpolates between the two cases, because the invariant $\langle\cdot\rangle_{\natural}$ would have to change sign while remaining equal to itself.
 
@@ -374,7 +374,7 @@ The conventions and the results taken over from the relativity series are those 
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the zero-divisor criterion, the idempotent form of the real cone and the dispersionless propagation locus.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the rotor conjugation and its component action.
 - Companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, for the orbit structure of the causal classes.
-- Companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the topology of the boost group and the two sheets.
+- Companion article *The Two-Sheeted Cover and the Topology of the Group*, for the topology of the boost group and the two sheets.
 - Companion article *Relativistic Mechanics in Biquaternionic Form*, for the four-velocity, the proper-time integral and the invariant interval.
 - Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the additive composition of rapidities and the composed velocity.
 - Companion article *Exercise: The Relativistic Doppler Effect*, for the four-wavevector, the invariant phase and the frequency measured by an observer.

@@ -537,6 +537,6 @@ The two ideals are the two spinor chiralities: they are the eigenspaces of $-iR_
 - [Chirality and the Weyl Spinors](exercise-chirality-and-the-weyl-spinors.html), for the two-component equations of the massless limit.
 - [The Celestial Sphere of the Null Cone — Null Directions, Chirality and the Phase](the-celestial-sphere-of-the-null-cone-null-directions-chirality-and-the-phase.html), for a massless element as a direction together with a phase.
 - [Two Spin-Half Particles in Biquaternionic Form](two-spin-half-particles-in-biquaternionic-form.html), for the composite system and the exchange operator.
-- [The Eigenspinor: the Lorentz Rotor as a Function of Proper Time](the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html), for the rotor that acts on the carrier and the plane.
+- [The Eigenspinor: the Lorentz Rotor as a Function of Proper Time](the-eigenspinor-along-a-worldline-precession-in-a-uniform-field.html), for the rotor that acts on the carrier and the plane.
 
 **The next entry.** *Introduction to the Spin-One Anti-Hermitian Subspace* takes the third carrier, the three-dimensional vector part, and completes the sequence that the centre began and the bispinor continued.

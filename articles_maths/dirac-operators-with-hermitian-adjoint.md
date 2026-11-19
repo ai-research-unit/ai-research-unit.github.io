@@ -135,7 +135,7 @@ The **finite-dimensional model** is the Dirac element $D_{\mathrm{alg}} = \sum_j
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Dirac operator on a Hermitian Clifford module, the positivity of the square and the space of harmonic spinors.
 - Nicole Berline, Ezra Getzler and Michèle Vergne, *Heat Kernels and Dirac Operators*, Grundlehren der mathematischen Wissenschaften 298 (Springer, 1992), for the Weitzenböck formula, the positivity of the square and the Hodge-type splitting.
 - Mikio Kato, *Perturbation Theory for Linear Operators* (Springer, 2nd ed. 1976), for self-adjoint operators, their spectra and the positivity of $D^{*}D$.

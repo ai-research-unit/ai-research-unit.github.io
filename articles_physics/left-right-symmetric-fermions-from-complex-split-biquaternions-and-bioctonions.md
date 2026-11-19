@@ -236,7 +236,7 @@ is the left-right symmetric gauge group. These subgroup statements are standard 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 Every section but this one is written on the algebra; here the same objects are written as gamma matrices, for readers who want the standard notation. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -363,7 +363,7 @@ The construction, like the particle-roster one, is outside the biquaternion alge
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - V. Vaibhav and T. P. Singh, "Left-Right Symmetric Fermions and Sterile Neutrinos from Complex Split Biquaternions and Bioctonions," arXiv:2108.01858, for the construction, the interpretation and the further programme recorded here. The version recorded here is **v2** (19 April 2023), whose sixth section carries the three-generation, mass-ratio and pre-spacetime material; the fifth section carries the explicit construction of the isospin generators.
 - G. Trayling and W. E. Baylis, "A geometric basis for the standard-model gauge group," *Journal of Physics A* **34** (2001) 3309, and G. Trayling, "A geometric approach to the Standard Model," arXiv:hep-th/9912231, for the predecessor interpretation of $\mathrm{Cl}(7)$ — four spacetime dimensions for rotations and boosts and four for the electroweak and colour sector — from which the source's construction departs.
 - R. A. Wilson, "On the problem of choosing subgroups of Clifford algebras for applications in fundamental physics," *Advances in Applied Clifford Algebras* **31** (2021) 59, arXiv:2011.05171, for the alternative route to the Pati–Salam group as $\mathrm{Spin}(6)\times\mathrm{Spin}(4)$ from the real Clifford algebras $\mathrm{Cl}(0,6)$ and $\mathrm{Cl}(3,3)$, cited by the source as the contrast to its own complex split algebras.

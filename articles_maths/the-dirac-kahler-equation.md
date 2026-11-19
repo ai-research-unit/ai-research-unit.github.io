@@ -191,7 +191,7 @@ In four-dimensional flat space the basis change $Z_{ab}=\sum_H(-1)^{h(h-1)/2}(c_
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - D. Iwanenko and L. Landau, "Zur Theorie des magnetischen Elektrons I," *Zeitschrift für Physik* **48** (1928) 340–348, for the original equation.
 - E. Kähler, "Der innere Differentialkalkül," *Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg* **25** (1962) 192–205, for the rediscovery and the inner calculus.
 - W. Graf, "Differential forms as spinors," *Annales de l'Institut Henri Poincaré A* **29** (1978) 85–109, for the Clifford module and the bundle structure.

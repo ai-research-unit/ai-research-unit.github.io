@@ -838,4 +838,4 @@ The scalar term is $2i\operatorname{Im}(\alpha\bar\beta)$, and it vanishes exact
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the rotor, the two-to-one cover and the comparison of the two two-sided actions
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the glyphs $L_X$, $R_X$, $\operatorname{Ad}_u$ and $\operatorname{ad}_X$
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the rule that no array is written in a symbol, and the basis-free form of an operator
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the axis carried by an array and the axis-free display that does not carry one
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the axis carried by an array and the axis-free display that does not carry one

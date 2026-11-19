@@ -2,7 +2,9 @@
 
 ## Introduction
 
-The group that acts on the material sector of the biquaternion framework has so far been introduced in two ways: as the group of unit-norm biquaternions, and as the group of Hermitian pairs they generate. Both descriptions take the group as given and derive its action. This article takes the opposite route. It asks what group the algebra *forces* when the biquaternion norm is regarded as the structure to be preserved, and shows that the answer is the Lorentz group, with the rotor description recovered as the coordinate form of the automorphisms.
+The Lorentz group of the biquaternion framework has so far been introduced in two ways: as the group of unit-norm biquaternions, and as the group of Hermitian pairs they generate. Both descriptions take the group as given and derive its action. This article takes the opposite route. It asks what group the algebra *forces* when the biquaternion norm is regarded as the structure to be preserved, and shows that the answer is the Lorentz group, with the rotor description recovered as the coordinate form of the automorphisms.
+
+**The norm is one form on the whole algebra, and the slices are its readings.** Nothing in this article needs a sector: the norm is multiplicative on $\mathbb{B}$, the automorphism group is the group of elements that preserve it, and the two real slices of the algebra are two restrictions of the one form. The inertial signature of each restriction is the topic of §*The Real Slice and the Minkowski Form*, and the difference between the two signatures is the sign of one form and not a difference of automorphism groups. A reader who wants the particle reading of the slice will find it named once, in §*The Real Slice*, and nowhere else in the argument.
 
 The point of the automorphism interpretation is that the biquaternion norm is not an extra structure laid on the algebra. It is the algebra's own multiplicative quadratic form,
 
@@ -485,7 +487,7 @@ The conventions of the construction are those of the following companion article
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Lie algebra, the real forms and the representation theory.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module and the action of the group on it.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the cone preserved by the automorphisms.
-- Companion article *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, for the covering group and the global structure.
+- Companion article *The Two-Sheeted Cover and the Topology of the Group*, for the covering group and the global structure.
 
 ## Summary
 

@@ -299,7 +299,7 @@ so that the one-particle term reproduces $D_F=Z/(N(\tilde Q_{\Phi})+m^{2}\,c^{2}
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the basis operators directly.
 
@@ -380,7 +380,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. Lehmann, K. Symanzik, and W. Zimmermann, "Zur Formulierung quantisierter Feldtheorien," *Il Nuovo Cimento* **1** (1955) 205–225, for the original reduction formula.
 - H. Lehmann, K. Symanzik, and W. Zimmermann, "On the formulation of quantized field theories. II," *Il Nuovo Cimento* **6** (1957) 319–333, for the extension and the renormalization constants.
 - G. Källén, "On the definition of the renormalization constants in quantum electrodynamics," *Helvetica Physica Acta* **25** (1952) 417–434, for the spectral representation of the propagator.

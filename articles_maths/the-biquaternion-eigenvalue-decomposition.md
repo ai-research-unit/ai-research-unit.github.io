@@ -327,7 +327,7 @@ The spectrum and the similarity classification are *The Spectrum*, §*The Spectr
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternions with $\mathrm{Cl}_{3,0}$ and the volume element.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the bivectors, the volume element and the spinor ideals.
 - The biquaternion articles of this corpus: *The Biquaternion Algebra*, *The Spectrum*, *Idempotents*, and *Peirce Decompositions of the Biquaternion Algebra*.

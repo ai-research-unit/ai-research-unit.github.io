@@ -223,7 +223,7 @@ A Dirac spinor carries sixteen **bilinear covariants** — a scalar, a pseudosca
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed., 2001), for the classification of spinors by their bilinear covariants, the Fierz aggregate and the boomerang; the origin of the classification.
 - J. P. Crawford, "On the algebra of Dirac bispinor densities: factorization and inversion theorems," *Journal of Mathematical Physics* **26** (1985) 1439, and "Bispinor geometry for even-dimensional space-time," *Journal of Mathematical Physics* **31** (1990) 1991, for the Fierz identities and the inversion theorem.
 - M. Fierz, "Zur Fermischen Theorie des $\beta$-Zerfalls," *Zeitschrift für Physik* **104** (1937) 553, and W. Kofink, "Über die Bilinearformen der Diracmatrizen," *Annalen der Physik* **30** (1937) 91, for the original identities.

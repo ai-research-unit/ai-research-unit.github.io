@@ -2,11 +2,11 @@
 
 ## Introduction
 
-Two frame changes compose to a frame change and a rotation. The rotation is one angle, and it can be read in two sectors. In the material sector it is the defect that makes the addition of velocities non-associative. In the informational sector it is a unitary channel: the one piece of a frame change that a measurement can see as a reversible operation.
+Two frame changes compose to a frame change and a rotation. The rotation is one angle, and the addition of velocities is not associative because of it. This article computes that angle, its axis and the laws it obeys.
 
-The companions already carry the two halves of the setup. *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form* computes the compact factor of a product of boosts, its cocycle, its holonomy and its integral along an accelerated path. *The Two Actions of One Group* proves that the adjoint and the congruence coincide on the rotation subgroup. Neither computes the defect of associativity, and neither reads the compact factor as a channel. That is the subject here.
+The companions carry the two readings of the result elsewhere. *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form* computes the compact factor, its cocycle, its holonomy and its path integral; *Velocity Space as Hyperbolic Geometry in Biquaternionic Form* reads the angle as a hyperbolic area; *The Informational Reading of the Wigner Angle* reads it as a unitary channel. None of the three computes the defect of associativity, the gyrogroup laws or the closed form. That is the subject here.
 
-The article's claim is that the two readings are readings of one matrix, and that the matrix is fixed by the pair of velocities alone. The angle does not depend on what is transported, on the state, or on the third velocity in an addition. That independence is what makes it a gyration rather than the holonomy of a general path.
+The article's claim is that the matrix is fixed by the pair of velocities alone. The angle does not depend on what is transported or on the third velocity in an addition, and that independence is what makes it a gyration rather than the holonomy of a general path.
 
 The findings are stated in advance.
 
@@ -16,7 +16,6 @@ The findings are stated in advance.
 4. **The gyrogroup laws hold exactly.** Gyrocommutativity $\vec u\oplus\vec v=\operatorname{gyr}[\vec u,\vec v](\vec v\oplus\vec u)$ to $1.1\times10^{-16}$; the two loop properties to $1.2\times10^{-14}$; the inverse law $\operatorname{gyr}[\vec v,\vec u]=\operatorname{gyr}[\vec u,\vec v]^{-1}$ to $2.1\times10^{-15}$.
 5. **The defect vanishes along the axis.** A third velocity parallel to $\vec u\times\vec v$ is untouched by the gyration, and there the two groupings agree exactly.
 6. **The angle is frame-dependent and therefore relational.** The pair $(0.6\vec e_x,0.6\vec e_y)$ reads $12.680383^\circ$; after a boost of rapidity $0.8$ along $\vec e_x$ the transported pair reads $16.018431^\circ$.
-7. **In the informational sector the same matrix is a channel.** As a congruence it preserves $2\,\mathrm{Sc}$ to $8.9\times10^{-16}$, acts on the Bloch ball as the same matrix to $3.3\times10^{-16}$, and preserves the Bures distance to $5.8\times10^{-16}$.
 
 The notation is that of the companions. The element $\tilde U_{\vec u}$ is the boost rotor of rapidity $\theta_1=\operatorname{artanh}\lvert\vec u\rvert$ along $\vec u$; the gyration rotor $\tilde U_{\mathrm gyr}$ is real and of unit norm. The congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$; the trace of the $2\times2$ image is $2\,\mathrm{Sc}$; the state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $\vec s_{\Psi}$ real and radius below one. The Wigner angle is written $\theta_{\mathrm{wgn}}$ here and $\Omega$ in the companion on the shared group. Velocities are in units of $c$.
 
@@ -124,64 +123,14 @@ verified to $1.1\times10^{-16}$ on fifty pairs. So the addition is commutative u
 
 **The inverse law closes the structure.** $\operatorname{gyr}[\vec v,\vec u]=\operatorname{gyr}[\vec u,\vec v]^{-1}$, to $2.1\times10^{-15}$. Reading it with the axis in hand: reversing the order reverses the angle and keeps the axis up to sign, which is what a rotation about a line does.
 
-## The Material Reading
+## The Two Readings
 
-### A rotation of the velocity ball
+**This article fixes the angle, the axis and the composition law, and it stops there.** The angle is one number of the group, and it can be read on either of the two slices of the algebra; the two readings are articles, not paragraphs, and they live in the sections below.
 
-**In the material sector the gyration is a rotation of the velocity ball, and it is the only piece of a frame change that is one.** A boost is a Möbius map of the ball: it moves points and does not preserve the Euclidean structure. The gyration is an orthogonal matrix fixing the origin; it preserves the radius of every velocity and rotates the ball about a diameter.
+- **The material reading** is the holonomy of the boost connection: the gyration as a motion of the velocity ball, the deficit of the geodesic triangle, and Thomas precession as its rate form. It is a section of [Velocity Space as Hyperbolic Geometry in Biquaternionic Form](velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html), under *The Curvature of the Boost Connection*.
+- **The informational reading** is the gyration as a unitary channel: the one piece of a frame change that preserves the normalised slice and the Bures distance, acting on the Bloch ball by the same matrix. It is [The Informational Reading of the Wigner Angle](the-informational-reading-of-the-wigner-angle.html).
 
-**The two together are the composition law of the ball.** Every product of two boosts is a boost followed by a gyration, and the gyration is a Euclidean motion while the boost is not. So the ball's group of frame changes is generated by non-Euclidean maps, and each product carries a Euclidean residual.
-
-**The gyration is a motion of both metrics of the ball.** It preserves the Cayley–Klein distance because it is a subgroup element, and it preserves the Euclidean radius because it is orthogonal. No boost has both properties.
-
-### The holonomy of the triangle
-
-**A closed path of boosts returns the frame and not the axes, and the deficit is the gyration.** Take the path that runs from rest to $\vec u$, then to $\vec u\oplus\vec v$, then back to rest. The product of the three rotors is
-$$
-\tilde U_{\vec u\oplus\vec v}^{-1}\,\tilde U_{\vec u}\,\tilde U_{\vec v}=\tilde U_{\mathrm gyr},
-$$
-so the loop's holonomy is exactly the gyration of the pair. For the pair $(0.6\vec e_x,0.6\vec e_y)$ the holonomy is the matrix above, $12.680383^\circ$ about the normal.
-
-**This is why the angle is a curvature and not a convention.** A holonomy of a closed loop is a geometric object: it is the integral of the curvature over a surface the loop bounds, and it does not depend on how the loop is parametrised. The three sides of this loop are geodesics of the velocity space, so the loop is a geodesic triangle, and Gauss–Bonnet gives a second route to the same number.
-
-**The second route agrees to machine precision.** The same triangle has side lengths $0.693147181$, $1.016348097$ and $0.693147181$ in the Klein metric and angles $0.674740942$, $1.570796327$ and $0.674740942$; the sum falls short of $\pi$ by $0.221314442$, and the holonomy is $0.221314442$. The deficit of the angles, the area of the triangle at curvature $-1$, and the holonomy of the boost loop are one number, and the agreement is $3.6\times10^{-16}$.
-
-**Thomas precession is the differential of the same object.** The finite angle is the holonomy of a closed loop; the precession rate is the holonomy per unit of path as the loop shrinks. One quantity, two names, and the corpus's velocity article derives the finite form while the accelerator literature uses the rate.
-
-## The Informational Reading
-
-### The one piece of a frame change that is a channel
-
-**A boost is not a channel, and the previous article proves why in one line.** Under the congruence by a boost the doubled scalar part of the image is $2\,\mathrm{Sc}=\cosh\theta_{\mathrm{rpd}}+s_{\parallel}\sinh\theta_{\mathrm{rpd}}$, which is one only at the identity, so a boost takes a state off the normalised slice. A map that does not preserve the slice is not a channel on the state space, and its linear form is not trace-preserving.
-
-**The gyration is a channel, and the reason is the one the previous article isolates.** The gyration rotor is real, so $\tilde U_{\mathrm gyr}^{*}=\tilde U_{\mathrm gyr}^{-1}$ and the congruence by it is also its adjoint, so $2\,\mathrm{Sc}$ is preserved identically. Verified: on fifty random states the doubled scalar part of the image is one to $8.9\times10^{-16}$, the map on the ball equals the matrix $\operatorname{gyr}[\vec u,\vec v]$ to $3.3\times10^{-16}$, and the Bures distance of every pair is preserved to $5.8\times10^{-16}$.
-
-**So a composition of two frame changes contains exactly one channel, and it is the gyration.** The product is a boost times a gyration. The boost part carries the state off the slice and needs a projection; the gyration part is a unitary channel, affine, trace-preserving and Bures-isometric. Nothing else in a frame change has that status.
-
-**This is the sharp form of the two-sector statement.** A single boost is invisible to any metric of the state space, because it is not in the category those metrics measure. A pair of boosts is not: it imprints a rotation, and a rotation is a measurement-visible reversible operation. What a measurement can see of a frame change is therefore not nothing, and it is not the boost; it is the gyration the boost pair produces.
-
-### The same matrix on the Bloch ball
-
-**The matrix that rotates the velocity ball rotates the Bloch ball.** For the pair of the worked example the congruence by $\tilde U_{\mathrm gyr}$ sends a state of vector $\vec s_{\Psi}$ to the state of vector $\operatorname{gyr}[\vec u,\vec v]\vec s_{\Psi}$, verified to $3.3\times10^{-16}$. The two sectors share the matrix, not merely the angle.
-
-**Why they can share it is the companion's coincidence theorem.** The adjoint and the congruence differ by the inverse, and for a real unit quaternion the inverse is the star. So on the compact part of the group the two actions are one action, and an element that acts on velocities by a rotation acts on states by the same rotation. This is the only place in the group where that happens, and the gyration is the only element of a frame change that sits there.
-
-| | the material reading | the informational reading |
-| --- | --- | --- |
-| the object | a rotation of the velocity ball | a rotation of the Bloch ball |
-| the matrix | $\operatorname{gyr}[\vec u,\vec v]$ | $\operatorname{gyr}[\vec u,\vec v]$ |
-| the metric preserved | Klein and Euclidean | Klein and Bures |
-| $2\,\mathrm{Sc}$ | not applicable | preserved |
-| the category | a motion of the ball | a unitary channel |
-| what registers it | a closed path of boosts | a comparison of two states |
-
-### Why the two readings agree
-
-**They agree because the angle is a property of the group element and not of a sector.** The composition of two boosts is one product in $\mathbb{B}$, and its compact factor is one element. The material sector sees that element act on four-velocities; the informational sector sees it act on states. Both see the same matrix because the matrix is the element.
-
-**What differs is what each sector can measure.** The material sector measures the angle by watching a velocity return rotated after a closed path. The informational sector measures it by watching a state rotate, which requires two states or one state before and after. That difference is the difference of the observables, not of the angle.
-
-**The relational character follows from that.** No single state registers the gyration, because a rotation about a line fixes the line and the centre; what registers it is a comparison. No single velocity registers it either, because a gyration is a function of a pair. The angle is a property of a relation between two frames, and both sectors say so.
+**What stays here is what holds on both.** The failure of associativity, the gyration, the closed form and the gyrogroup laws are statements about the group, and a statement about the group is a statement about the algebra before any slice is chosen.
 
 ## Objections
 
@@ -211,9 +160,9 @@ so the loop's holonomy is exactly the gyration of the pair. For the pair $(0.6\v
 
 **The gyrogroup laws hold exactly.** Gyrocommutativity to $1.1\times10^{-16}$, the two loop properties to $1.2\times10^{-14}$ and $8.8\times10^{-15}$, and the inverse law to $2.1\times10^{-15}$. The gyration is the holonomy of the closed triangle of boosts, so it is a curvature of velocity space and not a bookkeeping convention.
 
-**In the informational sector the same matrix is a channel.** The gyration rotor is real, so its congruence is its adjoint, so $2\,\mathrm{Sc}$ is preserved to $8.9\times10^{-16}$, the ball map is the matrix to $3.3\times10^{-16}$, and the Bures distance is preserved to $5.8\times10^{-16}$. A boost is outside the channel category and the gyration is inside it: of the two factors of a frame-change product, exactly one is an operation a measurement can see as reversible.
+**The gyration is the compact factor, and it is the only piece of a frame change that is an isometry of the compact slice.** Its rotor is real, so its congruence is its adjoint; a boost's is not. The consequence on the state space is the subject of *The Informational Reading of the Wigner Angle*, and the consequence on the velocity ball is a section of *Velocity Space as Hyperbolic Geometry in Biquaternionic Form*. Neither statement is used here.
 
-**The angle is relational.** No single state and no single velocity registers it; a comparison does. It is not an invariant of the group but a function of a pair, and it changes with the frame that reads it.
+**The angle is relational.** No single velocity registers it; a comparison of two does. It is not an invariant of the group but a function of a pair, and it changes with the frame that reads it.
 
 ## Summary of Notation
 
@@ -228,8 +177,6 @@ so the loop's holonomy is exactly the gyration of the pair. For the pair $(0.6\v
 | $\phi$ | the angle between the directions of $\vec u$ and $\vec v$ |
 | $\vec u_{\mathrm r}$ | the axis of the gyration, $\pm\vec u\times\vec v$ |
 | $\mathrm{Cg}_{\tilde U}$ | the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ |
-| $2\,\mathrm{Sc}$ | the doubled scalar part; the trace of the $2\times2$ image |
-| $\tilde{Ϛ}_{\Psi}$ | the state $\tfrac12(e_t+i\vec s_{\Psi})$ |
 
 ## Further Reading
 
@@ -241,5 +188,5 @@ so the loop's holonomy is exactly the gyration of the pair. For the pair $(0.6\v
 - *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form* — the compact factor, its cocycle and its holonomy
 - *The Two Actions of One Group: Adjoint and Congruence* — the coincidence of the two actions on the compact slice
 - *The Lorentz Group on the Bloch Ball: Projective Action and Two Metrics* — the congruence as a Lorentz transformation and the placing of the two metrics
-- *Bures Isometries of the Bloch Ball: Rotations, the Slice and the Conformal Boundary* — the preservation of $2\,\mathrm{Sc}$ as the dividing line between frames and channels
+- [The Informational Reading of the Wigner Angle](the-informational-reading-of-the-wigner-angle.html) — the compact factor read as a unitary channel on the state space
 - *Velocity Space as Hyperbolic Geometry in Biquaternionic Form* — the ball, its Klein metric and the defect of its triangles

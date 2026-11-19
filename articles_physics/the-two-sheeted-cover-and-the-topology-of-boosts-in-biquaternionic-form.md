@@ -1,4 +1,4 @@
-# __The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form__
+# __The Two-Sheeted Cover and the Topology of the Group__
 
 ## Introduction
 
@@ -10,7 +10,7 @@ SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\},
 SL(2,\mathbb{C}) = \{\tilde U_{\mathrm{lor}}\in\mathbb{B} : \langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = e_t\},
 $$
 
-and the correspondence is two-to-one. The identification raises two questions that are not answered by the group law alone. What is the topology of the covering group, and what is the topology of the subgroup formed by the boosts? The two questions have contrasting answers, and the contrast is the subject of this article.
+and the correspondence is two-to-one. The identification raises two questions that are not answered by the group law alone. What is the topology of the covering group, and what is the topology of the subset formed by the boosts, which is not a subgroup? The second question matters because the boosts are the half of the group that carries the velocity, and because their failure to close is the same fact as the curvature of velocity space. The two answers contrast, and the contrast is the subject of this article.
 
 The **covering group** $SL(2,\mathbb{C})$ is simply connected. As a manifold it is diffeomorphic to $SU(2)\times\mathbb{R}^3$, and it deformation-retracts onto $SU(2)\cong S^3$. Consequently the map
 

@@ -6,7 +6,7 @@ A massive particle's little group is the set of Lorentz transformations that lea
 
 This article identifies the little group, defines the spin label from its representations, computes the Wigner rotation that a general transformation produces, states its cocycle, and explains what the two-to-one cover does to states.
 
-The article assumes *Wigner's Classification: Two Casimirs, Three Orbits* for the orbit picture, *The Little Group of a Null Momentum: $E(2)$* for the contrast, *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* for the cover, and *Composition of Two Boosts: The Commutator Table and Non-Additivity* for the Thomas–Wigner rotation.
+The article assumes *Wigner's Classification: Two Casimirs, Three Orbits* for the orbit picture, *The Little Group of a Null Momentum: $E(2)$* for the contrast, *The Two-Sheeted Cover and the Topology of the Group* for the cover, and *Composition of Two Boosts: The Commutator Table and Non-Additivity* for the Thomas–Wigner rotation.
 
 ## The Rest Frame
 
@@ -204,7 +204,7 @@ The sign flip is measurable when two paths in the rotation group are compared: o
 
 ### The Consistency of the Block
 
-The block uses $SU(2)$ as the little group throughout, and its two-to-one relation to the rotation group is the same two-to-one relation that *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* describes for the whole Lorentz group. There is one cover, not two, and the little group's is its restriction.
+The block uses $SU(2)$ as the little group throughout, and its two-to-one relation to the rotation group is the same two-to-one relation that *The Two-Sheeted Cover and the Topology of the Group* describes for the whole Lorentz group. There is one cover, not two, and the little group's is its restriction.
 
 ## Summary
 
@@ -227,5 +227,5 @@ A massive particle's little group is the stabiliser of its momentum, and in the 
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1, Cambridge University Press, 1995, §2.5 — the Wigner rotation and its cocycle in the physicist's notation.
 - H. Rauch et al., "Verification of coherent spinor rotation of fermions", *Physics Letters A* 54 (1975) 425 — the $4\pi$ periodicity measured with neutrons.
 - *Composition of Two Boosts: The Commutator Table and Non-Additivity* — the Thomas–Wigner rotation from the group side.
-- *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* — the cover whose restriction is this little group.
+- *The Two-Sheeted Cover and the Topology of the Group* — the cover whose restriction is this little group.
 - *The Determination of the Possible Spins in Biquaternionic Form* — the carrier table that realises $j=0,\tfrac12,1$.

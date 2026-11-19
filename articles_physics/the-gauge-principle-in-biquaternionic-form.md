@@ -4,7 +4,7 @@
 
 The **gauge principle** is the statement that a symmetry which holds *globally* — the same at every point of spacetime — can be promoted to a symmetry which holds *locally*, from point to point, at the price of introducing a new field, the **connection**, and of replacing the ordinary derivative by a **covariant derivative**. The field strength of the new field is then the **curvature** of the connection. This article develops that principle inside the biquaternion algebra $\mathbb{B}$ of *Algebra and Element Conventions*, in the notation of the companion articles.
 
-**The article writes its operators as actions.** Where the corpus names an operator, the page writes what the operator does to an element: the action $\tilde Q\mapsto a\tilde Q b$, a product of two elements of $\mathbb{B}$, and no operator symbol stands between the reader and that product. Two names are kept. The first is the covariant derivative $D$, whose action is displayed once and used thereafter. The second is the **Dirac adjoint** $\bar{\tilde{Ξ}}=\tilde{Ξ}^*i\vec e_x$, which is kept because it is a pairing of two states and not an action on one. The basis operators of the frame appear, with their frame names, only in §*The Legacy Pauli Gamma Formulation*; the reasons for writing the action rather than the basis operator are those of *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+**The article writes its operators as actions.** Where the corpus names an operator, the page writes what the operator does to an element: the action $\tilde Q\mapsto a\tilde Q b$, a product of two elements of $\mathbb{B}$, and no operator symbol stands between the reader and that product. Two names are kept. The first is the covariant derivative $D$, whose action is displayed once and used thereafter. The second is the **Dirac adjoint** $\bar{\tilde{Ξ}}=\tilde{Ξ}^*i\vec e_x$, which is kept because it is a pairing of two states and not an action on one. The basis operators of the frame appear, with their frame names, only in §*The Legacy Pauli Gamma Formulation*; the reasons for writing the action rather than the basis operator are those of *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*.
 
 **Two Dirac equations, not one.** The corpus carries the one-sided chiral pair, two elements $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$ with one equation each, and the two-sided single equation on the algebra. The pair writes the value read by the test as a splitting of the field; the two-sided equation writes it as a multiplication on the right, and its mass term carries a coefficient conjugation. The subscript takes its two values from *Special Element Conventions*, §*The Chirality Convention*: $L$ for the value minus one of the chirality basis operator, $R$ for the value plus one. This article uses the pair for the gauging and records the two-sided form in the section on the mass term, where the two are set side by side. They are related by the real-linear dictionary $A$ of *The Dirac Equation in Biquaternionic Form* and are not the same operator.
 
@@ -337,7 +337,7 @@ What the external construction gives this article is therefore not a new result 
 7. **Empirical content.** As everywhere in the framework, the unresolved question is whether any of this yields a prediction distinguishing it from standard gauge theory. The gauge principle as presented is a reformulation; the framework-level question of empirical contact remains open.
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. They are the only place in the article where a $\gamma$ symbol is used.
 
@@ -453,7 +453,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Hermann Weyl, "Elektron und Gravitation," *Zeitschrift für Physik* **56** (1929) 330–352, for the origin of the gauge principle and the local phase.
 - Chen-Ning Yang and Robert L. Mills, "Conservation of Isotopic Spin and Isotopic Gauge Invariance," *Physical Review* **96** (1954) 191–195, for the non-abelian extension.
 - P. A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for first-class constraints and the Hamiltonian form of gauge theories.

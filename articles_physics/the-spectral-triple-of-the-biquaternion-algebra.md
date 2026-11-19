@@ -403,7 +403,7 @@ The requirement that $D_F$ be odd under the chirality — that it anticommute wi
 - The exact relation between the algebra's involution $\flat$ and the algebra's antilinear operator of square $-1$ is stated qualitatively and is not constructed explicitly. In particular, the sign $\epsilon'$ of $JD=\epsilon'DJ$ is not computed.
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. A gamma is an array in a chosen basis and not an object of the algebra; the arrays below are written in the basis of the four units, and no statement in this article depends on the choice.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. A gamma is an array in a chosen basis and not an object of the algebra; the arrays below are written in the basis of the four units, and no statement in this article depends on the choice.
 
 This article needs no gamma matrix, and they are collected here only for comparison with the literature, as a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$ and not as a different algebra.
 
@@ -480,7 +480,7 @@ The spectral dimension is read from the heat-kernel growth $\mathrm{Tr}\,\exp(-r
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - A. Connes, *Noncommutative Geometry* (Academic Press, 1994), for the founding treatment of spectral triples.
 - A. Connes, "Noncommutative geometry and reality," *Journal of Mathematical Physics* **36** (1995) 6194–6231, for the real structure, the axioms, and the KO-dimension.
 - A. Connes, "Gravity coupled with matter and the foundation of non-commutative geometry," *Communications in Mathematical Physics* **182** (1996) 155–176, for inner fluctuations and the spectral action.

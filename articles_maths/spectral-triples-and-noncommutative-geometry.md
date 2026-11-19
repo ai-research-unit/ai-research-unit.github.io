@@ -233,7 +233,7 @@ The Connes–Chern character is the cyclic cocycle $\operatorname{ch}(D)(a_0,\do
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Alain Connes, *Noncommutative Geometry* (Academic Press, 1994), for spectral triples, the distance formula, cyclic cohomology and the index pairing.
 - Alain Connes, "Noncommutative geometry and reality," *Journal of Mathematical Physics* **36** (1995), 6194–6231, for the real structure, the KO-dimension and the signs table.
 - Alain Connes and Henri Moscovici, "The local index formula in noncommutative geometry," *Geometric and Functional Analysis* **5** (1995), 174–243, for the local index formula and the dimension spectrum.

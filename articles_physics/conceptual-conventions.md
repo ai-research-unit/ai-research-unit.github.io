@@ -56,5 +56,5 @@ Operator chirality is the model case, because it is a slot and not a gamma subsc
 - [Index and Notation Conventions](index-and-notation-conventions.html). The marks and the subscripts.
 - [Conceptual Conventions](../articles_maths/conceptual-conventions.html). The same rule at the algebraic layer, where the three kinds of defect are stated in full.
 - [The Differentiable Field: One Primary Equation and the Linear Sector](the-differentiable-field-one-primary-equation-and-the-linear-sector.html). The ledger of the postulated, the derived and the imported, which classifies claims and not concepts.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html). The defect in full, the covariance test, and the frames that are not defects.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused). The defect in full, the covariance test, and the frames that are not defects.
 - [Biquaternion Physical Interpretation of Operator Chirality](biquaternion-physical-interpretation-of-operator-chirality.html). The objects the physics does not need, and the limit of the copies.

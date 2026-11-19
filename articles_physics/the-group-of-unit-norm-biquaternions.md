@@ -53,7 +53,7 @@ $$
 Z(G)=\{\pm e_t\}\cong\mathbb{Z}/2\mathbb{Z}.
 $$
 
-That group is the kernel of the double cover and the reason every conjugation is blind to the sign of the rotor. *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* is the article that reads it physically.
+That group is the kernel of the double cover and the reason every conjugation is blind to the sign of the rotor. *The Two-Sheeted Cover and the Topology of the Group* is the article that reads it physically.
 
 ### What the Set Is Not
 
@@ -196,7 +196,7 @@ The chart is a local diffeomorphism away from its cut and it covers the group ex
 
 ### Why the Fibre Matters Physically
 
-An exponential coordinate is a set of six numbers that a laboratory could in principle dial: three rapidities and three rotation angles. The fibre is the statement that the dials do not determine the element uniquely, and it is the same statement as the two-to-one cover seen at the level of coordinates. A rotation by $2\pi$ returns $-e_t$ and not $e_t$; a rotation by $4\pi$ returns $e_t$. The physical interferometric mark of that sign is the subject of *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*.
+An exponential coordinate is a set of six numbers that a laboratory could in principle dial: three rapidities and three rotation angles. The fibre is the statement that the dials do not determine the element uniquely, and it is the same statement as the two-to-one cover seen at the level of coordinates. A rotation by $2\pi$ returns $-e_t$ and not $e_t$; a rotation by $4\pi$ returns $e_t$. The physical interferometric mark of that sign is the subject of *The Two-Sheeted Cover and the Topology of the Group*.
 
 The practical rule for this block: an exponential coordinate is used where a *path* is what is meant — a continuous motion of a frame — and never where an element alone is meant.
 
@@ -229,4 +229,4 @@ The group of unit-norm biquaternions is the set of elements whose quaternionic n
 - S. Lang, *$SL_2(\mathbb{R})$*, Addison-Wesley, 1975 — the same group and its decompositions treated as a working object, with the topology done explicitly.
 - P. Lounesto, *Clifford Algebras and Spinors*, 2nd ed., Cambridge University Press, 2001 — the unit-norm biquaternions as a Clifford group and the identification with $SL(2,\mathbb{C})$.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations*, §*The Group of Unit-Norm Biquaternions* — the survey's own statement of the closure, the inverse and the dimension.
-- *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, *The Exponential Map from Algebra to Group*, *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* — the three articles that take this group apart.
+- *The Two-Sheeted Cover and the Topology of the Group*, *The Exponential Map from Algebra to Group*, *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* — the three articles that take this group apart.

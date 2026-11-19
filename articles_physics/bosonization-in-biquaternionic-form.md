@@ -266,7 +266,7 @@ The non-abelian extension is stated and its status fixed.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gamma symbols are used only in this section; every other section writes the same objects as basis operators. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra; in the two-dimensional reduction of this article the two generators are $\gamma_0=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}=iR_{\mathrm{pau},\vec e_x}$ and $\gamma_1=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}$ with $L_{a}R_{b}$, and the two-dimensional chirality is their product, the basis operator $L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z}$, not the four-dimensional $\gamma_5$.
 
@@ -379,7 +379,7 @@ and the framework's contribution is to name the two sides: the fermion is an ele
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - S. Coleman, "Quantum sine-Gordon equation as the massive Thirring model," *Physical Review D* **11** (1975) 2088–2097, for the equivalence of the massive Thirring and sine-Gordon models.
 - S. Mandelstam, "Soliton operators for the quantized sine-Gordon equation," *Physical Review D* **11** (1975) 3026–3030, for the fermion operators in terms of the boson.
 - E. Witten, "Non-abelian bosonization in two dimensions," *Communications in Mathematical Physics* **92** (1984) 455–472, for non-abelian bosonization and the Wess–Zumino term.

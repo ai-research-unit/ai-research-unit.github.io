@@ -331,7 +331,7 @@ connects the nucleon axial charge, its mass and its pion coupling. The relation 
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -446,7 +446,7 @@ The framework supplies the pion's adjoint isovector assignment, the geometric ch
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - M. Gell-Mann and M. Lévy, "The axial vector current in beta decay," *Il Nuovo Cimento* **16** (1960) 705–726, for the linear sigma model and the origin of PCAC.
 - M. Gell-Mann, R. J. Oakes, and B. Renner, "Behavior of current divergences under $SU(3)\times SU(3)$," *Physical Review* **175** (1968) 2195–2199, for the relation between the pion mass, the decay constant and the quark condensate.
 - S. L. Adler, "Consistency conditions on the strong interactions implied by a partially conserved axial-vector current," *Physical Review* **137** (1965) B1022–B1033, and W. I. Weisberger, "Unsubtracted dispersion relations and the renormalization of the weak axial-vector coupling constant," *Physical Review Letters* **14** (1965) 1047–1050, for the sum rules and the soft-pion theorems.

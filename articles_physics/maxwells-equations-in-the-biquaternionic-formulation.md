@@ -816,7 +816,7 @@ This is the natural generalization of the $i r'_t$ structure. The electromagneti
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The body writes its operators as basis operators $L_aR_b$, a left multiplication followed by a right one: $L_a$ multiplies on the left by $a$ and $R_b$ on the right by $b$. The gamma names are the names of the frame basis operators. Two basis operators multiply by multiplying the left factors and the right factors, the right factors in reverse order,
 
@@ -931,7 +931,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover).
 - Albert Einstein, *The Meaning of Relativity* (Princeton, 1922), for the $i r'_t$ formulation of special relativity.
 - James Clerk Maxwell, *A Treatise on Electricity and Magnetism* (Dover, 1954), for the original formulation.

@@ -259,7 +259,7 @@ The table sorts the proton's properties by the status they have in the framework
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 No gamma appears in the sections above, and this section is where it does. Its purpose is to give the same basis operators their standard names, for a reader who wants the Dirac notation, and to state once the identities that notation carries. The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
 
@@ -366,7 +366,7 @@ What the framework does not supply is everything that makes the proton a proton.
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the charge on each value of the field, the mass selection rule $ϙ_L=ϙ_R$, and the real-structure question that the separate pairing poses.
 - [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the biquaternion Dirac equation in its linear chiral-pair form, the mass term, and the mass-shell relation used here.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the $\mathrm{SU}(2)$ generators $T_a=\tfrac12e_a$, their spectra, and the compact factor of the material sector whose distinction from the charge generator this article checks.

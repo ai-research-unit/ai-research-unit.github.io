@@ -175,7 +175,7 @@ So the group of the sky is $SL_2(\mathbb{C})$ acting on $\mathbb{CP}^{1}$, and t
 
 The Möbius action is two-to-one from $SL_2(\mathbb{C})$ to its projective version, and the sky's conformal group is the projective version. So the conformal group of the sky is *smaller* than the biquaternion group by the centre, and the biquaternion group's extra element is the sign.
 
-That is the same statement as *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*: the double cover is invisible on the sky and visible in interference.
+That is the same statement as *The Two-Sheeted Cover and the Topology of the Group*: the double cover is invisible on the sky and visible in interference.
 
 ### The Conformal Group of Spacetime
 

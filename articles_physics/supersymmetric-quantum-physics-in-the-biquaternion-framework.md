@@ -253,7 +253,7 @@ In the biquaternion framework shape invariance has a direct interpretation. The 
 **The isospectral family.** The partner pair is the corpus's simplest isospectral family: $H_+=A^{\dagger}A$ and $H_-=AA^{\dagger}$ agree away from zero, differ at zero where the Witten index counts the imbalance, and are carried into one another by the change of the mass profile that shape invariance describes. The element-level version of the same statement, with the mass as a root of a general element, is [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html).
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, not to the array.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra. Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ} b$, and a basis operator is $L_{a}R_{b}$.
 
@@ -335,7 +335,7 @@ The Dirac oscillator is the three-dimensional relativistic realisation: the pair
 | $S=\sum_\eta L_{\mathrm{orb},\eta}\tilde S_{\Psi,\eta}$ | Spin–orbit element of the oscillator, with the two values $\hbar\,l$ and $-\hbar\,(l+1)$ |
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - E. Witten, "Dynamical breaking of supersymmetry," *Nuclear Physics B* **188** (1981) 513–554, for the introduction of supersymmetric quantum physics and the Witten index.
 - E. Witten, "Constraints on supersymmetry breaking," *Nuclear Physics B* **202** (1982) 253–316, for the index and its invariance.
 - P. Salomonson and J. W. van Holten, "Fermionic coordinates and supersymmetry in quantum mechanics," *Nuclear Physics B* **196** (1982) 509–531, for the supercharge formalism.

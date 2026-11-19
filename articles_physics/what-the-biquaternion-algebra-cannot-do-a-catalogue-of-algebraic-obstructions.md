@@ -404,7 +404,7 @@ Read as a whole, the catalogue is the framework's **ledger of forbidden structur
 - **Mass is a breaking, not a product.** O22 read forwards: since a left multiplication acts by the same element on the two parts and cannot couple them, a mass term is not a left multiplication but a breaking, which the conventions realise as the right multiplication by $\tfrac12(i\vec e_x-\vec e_y)$. Boundary: the shape of the term is the algebra's, its mechanism and its value are not; the physical statement is developed in *The Quantum–Relativity Tension and the Biquaternion Framework*.
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, and the frame is named on the coordinate.
 
 The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a separate algebra; the body writes the basis operators directly.
 
@@ -453,7 +453,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - N. Jacobson, *Structure of Rings* (American Mathematical Society, 1956), for central simple algebras, their derivations, and their maximal commutative subalgebras.
 - R. S. Pierce, *Associative Algebras* (Springer, 1982), for the structure of full matrix algebras and their simplicity.
 - Y. A. Drozd and V. V. Kirichenko, *Finite Dimensional Algebras* (Springer, 1994), for zero divisors, the Wedderburn theorems, and the structure theory of finite-dimensional algebras.

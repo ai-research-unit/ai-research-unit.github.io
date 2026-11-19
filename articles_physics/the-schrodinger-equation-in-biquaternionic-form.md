@@ -108,7 +108,7 @@ $(i\vec e_x)^{*} = i\vec e_x$), one has $-i\,(i\vec e_x)=\vec e_x$, and $\vec e_
 
 The field is one element $\tilde{Ξ}$ of $\mathbb{B}$, with four complex coefficients, that is eight real numbers. The equation is left multiplication by $\tilde H_\Psi$, and $\mathbb{B}$ is an algebra, so a product of two elements is an element: if the right-hand side is in the carrier, so is the left-hand side, and the equation restricts nothing.
 
-**Nothing stands behind the field.** No column, no ideal, no projector, no idempotent and no declared axis is needed to write the equation or to solve it. This is the ruling of *Why AXF Matrices instead of Pauli and Gamma Matrices*: a field is an element, the operator is left multiplication, and the display, when one is wanted, is the axis-free array of the multiplication table.
+**Nothing stands behind the field.** No column, no ideal, no projector, no idempotent and no declared axis is needed to write the equation or to solve it. This is the ruling of *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*: a field is an element, the operator is left multiplication, and the display, when one is wanted, is the axis-free array of the multiplication table.
 
 **The equation is complex-linear, and its symbol is Hermitian.** Since $i$ is central,
 
@@ -124,7 +124,7 @@ $$
 
 so the symbol $L_{\tilde H_\Psi}$ is Hermitian for that form, and the flow it generates preserves $\mathrm{Sc}(\tilde X\tilde X^{*})$. Both identities were checked on a hundred random pairs.
 
-**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is the array $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex matrix with $2\,\mathrm{Sc}L_{\mathrm{axf}}(\tilde H_\Psi)=4h_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, where $\langle\tilde H_\Psi\rangle_\natural=h_t^{2}-|\vec h_\Psi|^{2}$: the determinant of left multiplication is the square of the reduced norm, the identity and its numerical verification being those of *Why AXF Matrices instead of Pauli and Gamma Matrices*. The array is Hermitian on the nose, and it names no spatial direction. The equation is therefore the ordinary complex-linear Schrödinger equation on four complex coefficients with that Hermitian symbol, and nothing beyond the algebra enters the display.
+**The display, where a display is wanted, is the axis-free array.** In the coefficient basis the symbol is the array $L_{\mathrm{axf}}(\tilde H_\Psi)$, a $4\times4$ complex matrix with $2\,\mathrm{Sc}L_{\mathrm{axf}}(\tilde H_\Psi)=4h_t$ and $\det L_{\mathrm{axf}}(\tilde H_\Psi)=\langle\tilde H_\Psi\rangle_{\natural}^{2}$, where $\langle\tilde H_\Psi\rangle_\natural=h_t^{2}-|\vec h_\Psi|^{2}$: the determinant of left multiplication is the square of the reduced norm, the identity and its numerical verification being those of *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The array is Hermitian on the nose, and it names no spatial direction. The equation is therefore the ordinary complex-linear Schrödinger equation on four complex coefficients with that Hermitian symbol, and nothing beyond the algebra enters the display.
 
 ### The four coefficients, and the central field
 

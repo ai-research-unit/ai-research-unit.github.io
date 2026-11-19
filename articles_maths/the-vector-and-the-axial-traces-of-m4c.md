@@ -242,7 +242,7 @@ Their sum is the regular trace $4b_0$. The chiral traces are $2b_0$ and $2\bar b
 
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the coefficient basis, the four left matrices and the trace $4c_{tt}$.
 - [The Element, the Coordinates and the Trace of $M_4(\mathbb{C})$](the-element-the-coordinates-and-the-trace-of-m4c.html), for the coefficients read by traces and the sign of the trace pairing.
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame operators and the Clifford basis.
 - [The Two-Sided Operators Method to Build $M_4(\mathbb{C})$](the-two-sided-operators-method-to-build-m4c.html), for the sixteen $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ and their product table.
 - [The $\mathbb{Z}$-Grading and the Odd Slot of $M_4(\mathbb{C})$](the-z-grading-and-the-odd-slot-of-m4c.html), for the table $L_{\mathrm{pau},e_t}R_{\mathrm{pau},e_t}=I$, the pseudoscalar basis operator $L_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z}$ and the grades of the other fourteen.

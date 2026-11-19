@@ -287,14 +287,14 @@ In each row the physical component count is $2s+1$ for the particle, and the equ
 
 **What is imported.** The identification of the field with a spin-$\tfrac32$ particle, the value of the mass, the existence of a consistent interaction, and the resolution of the Velo–Zwanziger problem are inputs beyond the free algebra. The canonical quantisation of the field and its propagator belong to the field-theoretic companion subcategory.
 
-**The display the literature uses is a choice of generators, not the algebra.** The reasons the biquaternion writing replaces it are the subject of the article *Why AXF Matrices instead of Pauli and Gamma Matrices*, and they are not restated here.
+**The display the literature uses is a choice of generators, not the algebra.** The reasons the biquaternion writing replaces it are the subject of the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*, and they are not restated here.
 
 **The structural point that this article makes for the subcategory** is that the field is a tensor product of the algebra's four-vector structure with its Dirac-field structure, so its spin-$\tfrac32$ content is not native to the algebra but arises from the product. The final article of the subcategory states this in general and proves that the algebra's own elements carry only spin one-half, the scalar living in the centre and the vector in the adjoint.
 
 **The conventions are those of two companion articles:**
 
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the biquaternion chiral pair and its equivalence with the component Dirac equation.
-- Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector*, for the vector part of the algebra and the four-vector representation from which the family of components is built.
+- Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane*, for the vector part of the algebra and the four-vector representation from which the family of components is built.
 
 ## Summary
 
@@ -344,7 +344,7 @@ The field is a tensor product of the algebra's four-vector structure and its Dir
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the biquaternion formulation replaces a display of generators.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the biquaternion formulation replaces a display of generators.
 - William Rarita and Julian Schwinger, "On a theory of particles with half-integral spin", *Physical Review* 60 (1941) 61, for the original field equation for spin three-halves.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. III: Supersymmetry* (Cambridge, 2000), for the Rarita–Schwinger field, its gauge structure, and its role in supergravity.
 - Daniel Z. Freedman and Antoine Van Proeyen, *Supergravity* (Cambridge, 2012), for the spin-$\tfrac32$ field, its constraints, and the counting of its physical states.

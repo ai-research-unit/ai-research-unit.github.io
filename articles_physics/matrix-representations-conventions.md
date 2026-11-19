@@ -26,7 +26,7 @@ The article assumes the base of *Algebra and Element Conventions*, the products 
 
 **The test.** Open the article at a body section and read the symbols. A sigma or a gamma in a body section is a violation. The display is replaced by its basis operators before the article is published, and the array moves to the legacy section if it is worth keeping.
 
-**Why this is a rule and not a taste.** An array carries a frame, a dimension and a sign pattern inside a symbol, and the sentence that prints it does not say so. A basis operator carries none of the three. That is the defect stated in full in *Why AXF Matrices instead of Pauli and Gamma Matrices*, and it is the reason the two formulations are kept as a record and not used as a language.
+**Why this is a rule and not a taste.** An array carries a frame, a dimension and a sign pattern inside a symbol, and the sentence that prints it does not say so. A basis operator carries none of the three. That is the defect stated in full in *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*, and it is the reason the two formulations are kept as a record and not used as a language.
 
 ## The Matrix Models
 
@@ -114,7 +114,7 @@ e_\mu e_\nu=\sum_\rho\varepsilon_{\mu\nu}^{\ \ \rho}\,e_\rho,\qquad
 $$
 and the array $\varepsilon$ is the algebra: the table is that array written out.
 
-**Why this frame is first, and why the physics articles print it.** The construction uses the multiplication of the algebra and nothing else: no idempotent is chosen, no direction is singled out, no root is fixed. The display is therefore unique once the basis is, and the basis is the one the algebra comes with. That is why it is the first display of the article, and why a computation that must not favour an axis starts here. The physics articles of the series print it for the same reason: a formula of general physics distinguishes no spatial direction, and a display that distinguishes one would carry a datum the formula does not contain. *Why AXF Matrices instead of Pauli and Gamma Matrices* makes that argument in full.
+**Why this frame is first, and why the physics articles print it.** The construction uses the multiplication of the algebra and nothing else: no idempotent is chosen, no direction is singled out, no root is fixed. The display is therefore unique once the basis is, and the basis is the one the algebra comes with. That is why it is the first display of the article, and why a computation that must not favour an axis starts here. The physics articles of the series print it for the same reason: a formula of general physics distinguishes no spatial direction, and a display that distinguishes one would carry a datum the formula does not contain. *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused* makes that argument in full.
 
 **The label.** Write $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{axf},e_\mu}$, and $R_{\mathrm{axf}}(\tilde Q)$ and $R_{\mathrm{axf},e_\mu}$. The label is a name in lowercase roman letters, like $\mathrm{opp}$ and $\mathrm{fop}$, not an exponent: $L_{\mathrm{axf},\vec e_x}$ is the left matrix of $\vec e_x$, and its square is written $(L_{\mathrm{axf},\vec e_x})^2$. The label is carried by the family and not by the entry, because the frame is a property of the carrier and the side is a property of the action.
 
@@ -841,7 +841,7 @@ so the frame is visible in the formula.
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, $Q_\mu$ or $x_\mu$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *The AXF Matrices: Axis-Free, Integer Entries*, §*Why the Pauli and the Gamma Displays Are Refused*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_\eta^2=-I_4$. The frame belongs to the coordinate, $Q_\mu$ or $x_\mu$, not to the array. The fifth is written $\gamma_5$ with no bracket and no frame, because it is the product of the four and not the image of a direction.
 
 The gammas are the five frame basis operators of §*The Clifford Structure* written as arrays, and the section writes them in both frames: first the Peirce arrays, which are the ones the gamma literature prints, and then the axis-free ones, which are the display of the body.
 
@@ -1105,7 +1105,7 @@ Its eight unit matrices are real signed permutations, its stitch is $R_{\mathrm{
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - [Conventions in the Biquaternion Universe](algebra-and-element-conventions.html), for the algebra and the element glyphs.
 - [Conventions of the Products and the Forms](product-and-form-conventions.html), for the products the matrix product mirrors.
 - [Operator and Calculus Conventions](operator-and-calculus-conventions.html), for the left and right multiplications these matrices represent.

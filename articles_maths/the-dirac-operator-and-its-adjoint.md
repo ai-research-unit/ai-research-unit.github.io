@@ -196,7 +196,7 @@ The **Cauchy–Riemann operator** $D=\sum_ic(e_i)\nabla^{\mathcal{S}}_{e_i}$ of 
 
 ## Further Reading
 
-- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the spinor inner product, the self-adjointness and the Lichnerowicz formula.
 - Thomas Friedrich, *Dirac Operators in Riemannian Geometry*, Graduate Studies in Mathematics 25 (American Mathematical Society, 2000), for the self-adjointness, the spectrum and the twisted operators.
 - Michael F. Atiyah and Isadore M. Singer, "The index of elliptic operators I, III," *Annals of Mathematics* **87** (1968), 484–530 and 546–604, for the index of the chiral operator and the $\hat A$-genus.

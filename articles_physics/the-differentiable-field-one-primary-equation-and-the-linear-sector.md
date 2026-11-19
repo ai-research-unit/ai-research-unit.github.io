@@ -230,5 +230,5 @@ The last is the fork. Conjugation first gives the two sectors and the corpus's q
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the postulate the derivation route replaces with a theorem.
 - [Gauge Curvature and the Bianchi Identity in Biquaternionic Form](gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.html), for the Bianchi identity as a Jacobi identity and the form the field equations take.
 - [The Non-Quantum Limit and the Schrödinger Equation in Biquaternionic Polar Variables](the-non-quantum-limit-and-the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the eikonal as the short-wavelength limit, the relation this article inverts.
-- [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html), for the statement that a boost is a motion and not an automorphism, which is the corpus's side of the fork.
+- [The Rotations, the Boosts and the Groups](../articles_internal/the-rotations-the-boosts-and-the-groups.html), for the statement that a boost is a motion and not an automorphism, which is the corpus's side of the fork.
 - [Introduction to the Biquaternion Universe](introduction-to-the-biquaternion-universe.html), for the framework's own test of a structural hypothesis and its list of open questions.

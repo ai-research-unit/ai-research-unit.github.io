@@ -163,7 +163,7 @@ $$
 G/\{\pm e_t\}\cong SO^{+}(1,3).
 $$
 
-This is the two-to-one cover of *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, read as a statement about kernels.
+This is the two-to-one cover of *The Two-Sheeted Cover and the Topology of the Group*, read as a statement about kernels.
 
 ### The Scale on the Group of Invertibles
 
