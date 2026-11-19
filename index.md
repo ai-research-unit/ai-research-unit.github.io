@@ -13,7 +13,7 @@ $$
 where $e_t = 1$ and $\vec e_x, \vec e_y, \vec e_z$ are the quaternion units, so that $\vec Q = Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z$ is the vector part. The four coefficients $Q_\mu$ are **complex**, and everything that follows turns on how each of them is split. Writing every coefficient as a real part plus $i$ times a real part,
 
 $$
-Q_t = q_t + iq'_t, \qquad Q_x = q_x + iq'_x, \qquad Q_y = q_y + iq'_y, \qquad Q_z = q_z + iq'_z, \qquad q_\mu, q'_\mu \in \mathbb{R},
+Q_t = q_t + iq'_t, \quad Q_x = q_x + iq'_x, \quad Q_y = q_y + iq'_y, \quad Q_z = q_z + iq'_z, \qquad q_\mu, q'_\mu \in \mathbb{R},
 $$
 
 replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the eight parameters are the coordinates of one point. Which parameter belongs to which sector is decided below, in *The Complex Coordinates*, once the two sectors have been named. The four coefficients are lengths, and the two temporal parameters are lengths as well, so one element carries one unit in all four of its directions and no constant stands between the parameters. The prime therefore marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and it splits into two four-dimensional real subspaces; which four parameters each takes is stated in *The Complex Coordinates*. The identification of which direction is "real" and which is "imaginary" is the same at every point. What is local is the **unit** of the temporal axis, set by the local speed of light $c=1/\sqrt{\epsilon\mu}$.
@@ -63,20 +63,9 @@ $$
 \tilde{Q} = \underbrace{(i q'_t)\,e_t + (q_x\,\vec e_x + q_y\,\vec e_y + q_z\,\vec e_z)}_{=\,\tilde Q_\Phi\,\in\,\mathbb{B}_{\Phi}} \;+\; \underbrace{(q_t)\,e_t + (i q'_{x}\,\vec e_x + i q'_{y}\,\vec e_y + i q'_{z}\,\vec e_z)}_{=\,\tilde Q_\Psi\,\in\,\mathbb{B}_{\Psi}},
 $$
 
-the coefficients $Q_t, Q_x, Q_y, Q_z$ take the explicit form
-
-$$
-\begin{aligned}
-Q_t &= q_t + i q'_t, \
-Q_x &= q_x + i q'_x, \
-Q_y &= q_y + i q'_y, \
-Q_z &= q_z + i q'_z.
-\end{aligned}
-$$
-
 Written on its own part, each of the two blocks is four real numbers in the four slots: the material block is $\tilde Q_\Phi = i q'_t\,e_t+\vec Q_\Phi$ with $\vec Q_\Phi=q_x\vec e_x+q_y\vec e_y+q_z\vec e_z$, and the informational block is $\tilde Q_\Psi = q_t\,e_t+i\vec Q_\Psi$ with $\vec Q_\Psi=q'_x\vec e_x+q'_y\vec e_y+q'_z\vec e_z$. The two blocks take four parameters each, and between them they take the eight of the element.
 
-Each coefficient is thus shown in its two guises: the complex coefficient $Q_\mu$ itself, and the pair of parameters it carries, $q_\mu$ from one sector and $q'_\mu$ from the other, the two times in metres like the two spaces.
+Each coefficient is shown in its two guises: the complex coefficient $Q_\mu$ itself, and the pair of parameters it carries, $q_\mu$ from one sector and $q'_\mu$ from the other, the two times in metres like the two spaces.
 
 The **real parameters** $(q'_t,q_x,q_y,q_z)$ describe the material sector, and the **real parameters** $(q_t, q'_{x}, q'_{y}, q'_{z})$ describe the informational sector. Each sector is four-dimensional, and the full complexified spacetime is the direct sum of the two.
 
