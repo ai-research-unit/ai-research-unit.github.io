@@ -30,27 +30,25 @@ $$
 
 The subspace $\mathbb{B}_{\Phi}$ is the **anti-Hermitian subspace**, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation ${}^{*}$ with eigenvalue $-1$). The subspace $\mathbb{B}_{\Psi}$ is the **Hermitian subspace**, the fixed-point set of the Hermitian conjugation ${}^{*}$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial. Every element of the algebra splits accordingly, $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$, into its **material part** $\tilde Q_\Phi\in\mathbb{B}_{\Phi}$ and its **informational part** $\tilde Q_\Psi\in\mathbb{B}_{\Psi}$; an element of $\mathbb{B}_{\Phi}$ is its own material part, and an element of $\mathbb{B}_{\Psi}$ its own informational part. Both halves carry the one glyph, and the sector mark alone separates them; the general element $\tilde Q$ takes no sector mark, since its sector depends on its value.
 
-The two subspaces have distinct physical roles:
+The two subspaces have distinct physical roles.
 
-- **$\mathbb{B}_{\Phi}$ is the material sector.** It is the home of the four-vectors of relativistic physics, with an imaginary temporal coordinate. Time can be measured, but it cannot be touched, held or moved through.
-- **$\mathbb{B}_{\Psi}$ is the informational sector.** It is the home of the Hermitian operators, whose algebraic structure is that of a quantum-mechanical state space: its elements are the states, observables and measurement operators of a qubit. The name reflects that content, and claims nothing about entropy.
-Written as elements of the algebra, each sector carries its own four real parameters: the parameter is the coordinate, and no conversion stands between them.
+- **$\mathbb{B}_{\Phi}$ is the material sector**, the anti-Hermitian subspace. It is the home of the four-vectors of relativistic physics, with an imaginary temporal coordinate; time can be measured, but it cannot be touched, held or moved through. Written out in four real parameters,
 
-- **$\mathbb{B}_{\Phi}$**, the material sector, corresponding to the anti-Hermitian subspace:
     $$
     \tilde Q_\Phi = i q'_t\,e_t + \vec Q_\Phi = i q'_t\,e_t + q_x\vec e_x + q_y\vec e_y + q_z\vec e_z \in \mathbb{B}_{\Phi},
     $$
 
-    with $q'_t$ the material temporal coordinate, a length, and $\vec Q_\Phi = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$ the material space.
+    where $q'_t$ is the material temporal coordinate, a length, and $\vec Q_\Phi = q_x\vec e_x + q_y\vec e_y + q_z\vec e_z$ the material space.
 
-- **$\mathbb{B}_{\Psi}$**, the informational sector, corresponding to the Hermitian subspace:
+- **$\mathbb{B}_{\Psi}$ is the informational sector**, the Hermitian subspace. It is the home of the Hermitian operators, whose algebraic structure is that of a quantum-mechanical state space: its elements are the states, observables and measurement operators of a qubit. The name reflects that content, and claims nothing about entropy. Written out in four real parameters,
+
     $$
     \tilde Q_\Psi = q_t\,e_t + i\vec Q_\Psi = q_t\,e_t + i\bigl(q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z\bigr) \in \mathbb{B}_{\Psi},
     $$
 
-    with $q_t$ the informational temporal coordinate, a length, and $\vec Q_\Psi = q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z$ the informational space.
+    where $q_t$ is the informational temporal coordinate, a length, and $\vec Q_\Psi = q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z$ the informational space.
 
-The prime falls on the **scalar** $q'_t$ in $\mathbb{B}_{\Phi}$ and on the **three vectors** $q'_\eta$ in $\mathbb{B}_{\Psi}$, which is what makes the two sectors mirror images. The complex structure is then visible as a count: the material sector has three real spatial directions and one imaginary temporal direction, the informational sector three imaginary spatial directions and one real temporal direction.
+In both cases the parameter is the coordinate, and no conversion stands between them. The prime falls on the **scalar** $q'_t$ in $\mathbb{B}_{\Phi}$ and on the **three vectors** $q'_\eta$ in $\mathbb{B}_{\Psi}$, which is what makes the two sectors mirror images. The complex structure is then visible as a count: the material sector has three real spatial directions and one imaginary temporal direction, the informational sector three imaginary spatial directions and one real temporal direction.
 
 ## The Complex Coordinates
 
