@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sector Map and Its Exact Parts — Biquaternion Universe</title>
+  <meta name="description" content="The algebra carries two four-dimensional real slices, and they are the two fixed spaces of one involution. This article writes the map between them…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sector-map-and-its-exact-parts"><strong>The Sector Map and Its Exact Parts</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The algebra carries two four-dimensional real slices, and they are the two fixed spaces of one involution. This article writes the map between them, states exactly what it preserves and exactly what it does not, and refuses the inference that a map of the elements is a dictionary of the physics.</p>
+<p><strong>The map is multiplication by the scalar imaginary.</strong> For $\tilde Q \in \mathbb{B}_\Phi$ put $J(\tilde Q) = i\tilde Q$. Since $i$ is central and $\bar i = -i$, the element $i\tilde Q$ is Hermitian whenever $\tilde Q$ is anti-Hermitian, so $J$ carries one slice onto the other. It is a real-linear bijection, and $J^{2} = -e_t$ on both.</p>
+<p><strong>Three things are exact, and one is not.</strong></p>
+<ol>
+<li>The <strong>action</strong> is carried exactly. For every unit-norm biquaternion $\tilde U$, the congruence commutes with $J$, so a Lorentz transformation on one slice becomes the same Lorentz transformation on the other.</li>
+<li>The <strong>quaternionic norm</strong> changes sign, $\langle J\tilde Q\rangle_\natural = -\langle\tilde Q\rangle_\natural$. That one sign is the interval's inertia, and the flip from $(3,1)$ to $(1,3)$ is this identity read on the coordinates.</li>
+<li>The <strong>Hermitian form</strong> is preserved, $H(J\tilde Q) = H(\tilde Q)$.</li>
+<li>The <strong>product</strong> is not preserved: $J(\tilde Q\tilde Q') = -J(\tilde Q)J(\tilde Q')$. The map is an anti-homomorphism up to a sign, and no rescaling of $J$ repairs it, because the sign is fixed by $i^{2}=-1$.</li>
+</ol>
+<p><strong>What follows from the fourth item is the whole reason the two sectors are not interchangeable.</strong> A map that carries the group action but reverses the product cannot carry a statement about composition; and composition is what a dynamics is. The sectors are two readings of one algebra, and the map between them is exact enough to compare invariants and too weak to identify theories.</p>
+<p>The conventions are those of <a href="the-algebraic-vocabulary-element-conjugations-six-subspaces-and-two-ledgers.html">The Element: the Six Subspaces and the Two Ledgers</a> for the star and the natural conjugation, <a href="the-four-forms-and-the-four-norms.html">The Four Forms and the Four Norms</a> for the four measures, and <a href="the-unit-metric-in-the-biquaternion-universe.html">The Unit Metric in the Biquaternion Universe</a> for the metric that is read off the multiplication rather than postulated.</p>
+<h2 id="the-two-projections">The Two Projections</h2>
+<p><strong>The involution is the star, and its two fixed spaces are the slices.</strong> For any element,</p>
+<p>$$
+P_\Psi(\tilde Q) = \tfrac12\left(\tilde Q+\tilde Q^{*}\right),
+\qquad
+P_\Phi(\tilde Q) = \tfrac12\left(\tilde Q-\tilde Q^{*}\right),
+$$</p>
+<p>and the two are idempotent, orthogonal in the sense $P_\Psi P_\Phi = 0$, and sum to the identity. So</p>
+<p>$$
+\mathbb{B} = \mathbb{B}_\Psi \oplus \mathbb{B}_\Phi,
+\qquad
+\dim_\mathbb{R}\mathbb{B}_\Psi = \dim_\mathbb{R}\mathbb{B}_\Phi = 4 .
+$$</p>
+<p><strong>Neither projection is an algebra homomorphism, and the defect is one commutator.</strong> For two elements,</p>
+<p>$$
+P_\Psi(\tilde Q\tilde Q') - P_\Psi(\tilde Q)P_\Psi(\tilde Q') = \tfrac14\left(\tilde Q\tilde Q' - \tilde Q'\tilde Q\right)^{*} - \tfrac14\left(\tilde Q\tilde Q' - \tilde Q'\tilde Q\right),
+$$</p>
+<p>which is the anti-Hermitian part of the commutator. A product of two Hermitian elements is Hermitian exactly when they commute, and that single fact is the source of every non-additivity in the informational sector: the sum of two observables is an observable, the product is an observable only when the two commute. The same statement, read on the material slice, is that the sum of two four-vectors is a four-vector and the product is not.</p>
+<p><strong>Why the decomposition is canonical and the choice of slice is not.</strong> The decomposition above needs no choice: the star is fixed by the algebra, so the two projections are fixed. What is a choice is which slice is called <em>material</em> and which <em>informational</em>, and that choice is a naming, not a structure. This article uses the corpus's naming and states every result in a form that does not depend on it.</p>
+<h2 id="multiplication-by-the-scalar-imaginary">Multiplication by the Scalar Imaginary</h2>
+<p><strong>The map and its square.</strong> Define</p>
+<p>$$
+J:\mathbb{B}_\Phi\longrightarrow\mathbb{B}_\Psi,\qquad J(\tilde Q)=i\tilde Q .
+$$</p>
+<p>It is real-linear, injective, and onto: a Hermitian element $\tilde H$ has the anti-Hermitian preimage $-i\tilde H$, and $-i\tilde H$ is anti-Hermitian because $(-i\tilde H)^{*}=i\tilde H^{*}=i\tilde H=-(-i\tilde H)$. Applying $J$ twice gives $-e_t$, so $J$ is a complex structure on the pair, and the pair is one complex vector space of complex dimension four — which is the statement $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ read slice by slice.</p>
+<p><strong>It commutes with the congruence, and this is the exact part.</strong> For $\tilde U$ of unit norm and $\tilde Q\in\mathbb{B}_\Phi$,</p>
+<p>$$
+J\left(\tilde U\tilde Q\tilde U^{*}\right)=i\,\tilde U\tilde Q\tilde U^{*}=\tilde U\left(i\tilde Q\right)\tilde U^{*},
+$$</p>
+<p>because $i$ is central and is fixed by the star. So a Lorentz transformation acting on one slice is the <em>same</em> element acting on the other, and the two actions have the same orbits up to $J$. Every statement about the group — the six generators, the two Casimirs, the Cartan decomposition, the Wigner angle — is therefore a statement about both slices at once, and is proved once.</p>
+<p><strong>It reverses the product, and this is the exact part that costs.</strong> For $\tilde Q,\tilde Q'\in\mathbb{B}_\Phi$,</p>
+<p>$$
+J(\tilde Q\tilde Q')=i\tilde Q\tilde Q'=-\left(i\tilde Q\right)\left(i\tilde Q'\right)=-J(\tilde Q)J(\tilde Q').
+$$</p>
+<p>There is no linear rescaling $J_\lambda=\lambda\,\mathrm{id}$ that repairs the sign: multiplicativity would require $\lambda=\lambda^{2}$, that is $\lambda\in\{0,1\}$, and the identity map does not carry one slice to the other. The sign is the arithmetic of $i^{2}=-1$ and it cannot be normalised away. Read as a statement about representations, $J$ is an isomorphism of $\mathbb{B}_\Phi$ with the <strong>opposite</strong> algebra $\mathbb{B}_\Psi^{\mathrm{op}}$, which is why the two sectors are mirror images rather than copies.</p>
+<h2 id="the-two-forms-under-the-map">The Two Forms Under the Map</h2>
+<p><strong>The quaternionic norm changes sign.</strong> For $\tilde Q\in\mathbb{B}_\Phi$,</p>
+<p>$$
+\langle J\tilde Q\rangle_\natural=\left(i\tilde Q\right)\left(i\tilde Q\right)^{\natural}=i^{2}\,\tilde Q\tilde Q^{\natural}=-\langle\tilde Q\rangle_\natural .
+$$</p>
+<p>Since the norm is a sum of four squares of the coefficients, the identity says that the complexified interval is negated. On the material slice the physical interval is this norm at a negative real value, $\langle\tilde P_\Phi\rangle_\natural=-m^{2}c^{2}$; on the informational slice the same polynomial at a positive value is what the corpus calls an indefinite weight and never a state.</p>
+<p><strong>The Hermitian form is preserved.</strong> For the same element,</p>
+<p>$$
+H(J\tilde Q)=\mathrm{Sc}\left((i\tilde Q)(i\tilde Q)^{*}\right)=\mathrm{Sc}\left(i\tilde Q\cdot(-i\tilde Q^{*})\right)=\mathrm{Sc}\left(\tilde Q\tilde Q^{*}\right)=H(\tilde Q),
+$$</p>
+<p>because $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and the two factors of $i$ multiply to one. So the positive-definite form is the same number on the two sides of the map, and this is the precise sense in which the amplitude of the informational sector and the weight of the material sector are one computation.</p>
+<p><strong>The pair of statements is the asymmetry of the corpus in one line.</strong> $J$ preserves $H$ and negates $\langle\cdot\rangle_\natural$. On the material side the physical scalar is the negated one; on the informational side the physical scalar is the preserved one. That is why the interval is indefinite and the weight is definite, and it is not a convention: it is the two signs of the same map.</p>
+<p><strong>The trace.</strong> The trace of the $2\times2$ image is $2\,\mathrm{Sc}$, and $J$ changes the scalar part by $i$: $\mathrm{Sc}(i\tilde Q)=i\,\mathrm{Sc}(\tilde Q)$. So the trace is <em>not</em> preserved; it is multiplied by $i$, which is the statement that the material scalar (an energy, an interval coefficient) and the informational scalar (a normalisation, a weight) are different numbers of different dimensions and are not to be compared without the factor.</p>
+<h2 id="the-coordinate-dictionary">The Coordinate Dictionary</h2>
+<p><strong>What the map does to the corpus coordinates.</strong> Write the material element in the corpus's letters, $\tilde R_\Phi=i\,r'_t\,e_t+\vec r$, and apply $J$:</p>
+<p>$$
+J\left(i\,r'_t\,e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\right)=-r'_t\,e_t+i\left(r_x\vec e_x+r_y\vec e_y+r_z\vec e_z\right).
+$$</p>
+<p>This is the informational element $c t'\,e_t+i\left(x'\vec e_x+y'\vec e_y+z'\vec e_z\right)$ with</p>
+<p>$$
+c t'=-r'_t,\qquad x'=r_x,\qquad y'=r_y,\qquad z'=r_z .
+$$</p>
+<p><strong>So the map moves the $i$ and flips the time.</strong> The material coordinate carries the imaginary unit on the temporal coefficient; the image carries it on the three spatial coefficients and carries the temporal coefficient real. This is the corpus's Wick rotation stated as a map of elements rather than as a substitution, and the sign on $c t'$ is the sign of the norm flip computed above, not a separate convention.</p>
+<p><strong>The inertias are the two signatures.</strong> With $\delta_{\mu\nu}=(1,1,1,1)$ the interval is a contraction with the unit metric on each side, and the two readings are</p>
+<p>$$
+\langle\tilde R_\Phi\rangle_\natural=-c^{2}{t'}^{2}+r_x^{2}+r_y^{2}+r_z^{2},
+\qquad
+\langle J\tilde R_\Phi\rangle_\natural=c^{2}{t'}^{2}-{x'}^{2}-{y'}^{2}-{z'}^{2},
+$$</p>
+<p>of inertia $(3,1)$ and $(1,3)$. One metric, one tuple of signs, two inertias, and the difference is the minus sign of the map. A reader who wants the two signatures from two matrices has to choose two; a reader who takes them from one map chooses once.</p>
+<h2 id="what-the-map-does-not-carry">What the Map Does Not Carry</h2>
+<p><strong>A four-vector is not a state, and the map does not pretend otherwise.</strong> A state is $\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_\Psi)$, of trace one and radius below one. The image of a four-momentum is $J(\tilde P_\Phi)$, of Hermitian form $H(\tilde P_\Phi)$ and of norm $+m^{2}c^{2}$; normalising it by its trace gives an element of the informational slice, and that element is not the state of the particle. It is the element whose vector part is the spatial momentum scaled by the energy, and the corpus's conventions call it a generator, not a state.</p>
+<p><strong>The Born weight is not the interval.</strong> The weight of an observable $\tilde A$ in a state is $\mathrm{Sc}(\tilde{Ϛ}_\Psi\tilde A)$, and it is a probability only after the state and the observable are placed in the same slice. $J$ carries one slice to the other, so it carries the <em>algebra</em> of the pairing, and it does not carry the interpretation: a probability and an interval are different functionals of the same elements.</p>
+<p><strong>Composition is the casualty.</strong> Because $J$ reverses the product, it cannot carry a statement of the form "the product of these two elements is the evolution". A reader who composes two maps, one on each side, must insert a sign, and the sign is $(-1)$ per factor. The corpus's rule is therefore: compare invariants across the map, never compose across it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>under $J$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$</td>
+<td>preserved</td>
+</tr>
+<tr>
+<td>the quaternionic norm</td>
+<td>negated</td>
+</tr>
+<tr>
+<td>the Hermitian form</td>
+<td>preserved</td>
+</tr>
+<tr>
+<td>the trace $2\,\mathrm{Sc}$</td>
+<td>multiplied by $i$</td>
+</tr>
+<tr>
+<td>the product</td>
+<td>reversed up to $-1$</td>
+</tr>
+<tr>
+<td>the inertia</td>
+<td>$(3,1)\leftrightarrow(1,3)$</td>
+</tr>
+<tr>
+<td>the coordinate $i\,r'_t e_t+\vec r$</td>
+<td>$-r'_t e_t+i\vec r$</td>
+</tr>
+<tr>
+<td>a four-vector</td>
+<td>an element, not a state</td>
+</tr>
+<tr>
+<td>a composition of two maps</td>
+<td>requires a sign</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>The two slices are the fixed spaces of the star, and multiplication by $i$ is the exact map between them. It commutes with the congruence, so every statement about the Lorentz group holds on both slices at once; it negates the quaternionic norm, which is the flip of the inertia from $(3,1)$ to $(1,3)$; it preserves the Hermitian form, which is why one weight serves both sectors; and it reverses the product up to a sign, which is why the two sectors are mirror images and not copies. The map is exact where exactness is useful and broken where it matters.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P_\Psi$, $P_\Phi$</td>
+<td>the projections onto the Hermitian and anti-Hermitian slices, $\tfrac12(\tilde Q\pm\tilde Q^{*})$</td>
+</tr>
+<tr>
+<td>$J(\tilde Q)=i\tilde Q$</td>
+<td>the map from the material to the informational slice</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$</td>
+<td>the quaternionic norm, the interval on the material slice</td>
+</tr>
+<tr>
+<td>$H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$</td>
+<td>the Hermitian form, the weight</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}$</td>
+<td>the trace of the $2\times2$ image</td>
+</tr>
+<tr>
+<td>$\tilde R_\Phi=i\,r'_t e_t+\vec r$</td>
+<td>the material coordinate</td>
+</tr>
+<tr>
+<td>$\delta_{\mu\nu}=(1,1,1,1)$</td>
+<td>the unit metric, read off the multiplication</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In this category.</strong> <a href="the-algebraic-vocabulary-element-conjugations-six-subspaces-and-two-ledgers.html">The Element: the Six Subspaces and the Two Ledgers</a> fixes the star and the natural conjugation. <a href="the-four-forms-and-the-four-norms.html">The Four Forms and the Four Norms</a> proves which form is multiplicative and which is definite. <a href="the-two-sectors-the-hermitian-split-and-the-four-bridges.html">The Two Sectors: the Hermitian Split and the Four Bridges</a> states the four constructions that carry one slice to the other. <a href="the-unit-metric-in-the-biquaternion-universe.html">The Unit Metric in the Biquaternion Universe</a> reads the metric off the multiplication. <a href="the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a> reads the two temporal coefficients that this article's dictionary relates. <a href="two-readings-of-one-transformation-a-comparison.html">Two Readings of One Transformation: A Comparison</a> takes the map as the instrument of the comparison.</p>
+<p><strong>In the mathematics corpus.</strong> <a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a> supplies the product laws that the sign reversal violates, and the opposite-algebra statement is there.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

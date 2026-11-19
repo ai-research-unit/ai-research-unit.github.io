@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Thermal Circle: Inverse Temperature Is an Inverse Time — Biquaternion Universe</title>
+  <meta name="description" content="Temperature enters the informational sector as a parameter of a state, and the parameter has the dimensions of an inverse energy. In units with an inverse…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-thermal-circle-inverse-temperature-is-an-inverse-time"><strong>The Thermal Circle: Inverse Temperature Is an Inverse Time</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Temperature enters the informational sector as a parameter of a state, and the parameter has the dimensions of an inverse energy. In units with $c=1$ an inverse energy is a time, and in units with $\hbar=1$ it is also an inverse frequency. The article takes that dimensional statement seriously and shows that it is structural: <strong>$\beta$ is the circumference of a circle, and the circle is an orbit of the algebra's compact flow.</strong></p>
+<p><strong>Three exact statements carry the reading.</strong></p>
+<ol>
+<li><strong>The thermal state is one orbit of the centre.</strong> $\tilde{Ϛ}_\Psi(\beta)=e^{-\beta\tilde H}/\operatorname{tr}e^{-\beta\tilde H}$ is the congruence of $\tfrac12 e_t$ by the positive Hermitian element $e^{-\beta\tilde H/2}$, renormalised. The Gibbs path is therefore the radial segment from the centre of the ball to its boundary, and it is an orbit of a <em>semigroup</em>, not of a group — which is why it is not a group orbit and why the corpus's article on that point is right.</li>
+<li><strong>The circle appears on analytic continuation.</strong> Continuing $\beta\mapsto i\tau$ turns $e^{-\beta\tilde H}$ into $e^{-i\tau\tilde H}$, which is $*$-unitary when $\tilde H$ is Hermitian. That flow is a rotation of the $\Psi$ slice, and the Boltzmann weight is a <em>translation along imaginary time by $\beta$</em>. The circumference of that direction is $\beta$, and it is fixed by the KMS condition, not by the spectrum.</li>
+<li><strong>The two ends are the two exceptional loci.</strong> At $\beta=0$ the state is the centre, $\tfrac12 e_t$, degenerate and maximally mixed; at $\beta\to\infty$ it is the projector on the lowest eigenline, pure and on the boundary. The thermal path is the only radial family that joins the two.</li>
+</ol>
+<p><strong>What the article does not claim.</strong> It does not derive a temperature, it does not add a dynamics, and it does not say that the material sector has a thermal circle: a boost is non-compact, its orbit is a hyperbola, and its parameter is a rapidity without a period. The circle belongs to the compact half of the one algebra, and that is exactly the informational half.</p>
+<p>The conventions are those of <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a> for $Z$, $\beta$ and the trace, <a href="inverse-temperature-as-a-rapidity.html">Inverse Temperature as a Rapidity: Translation, Addition and the Common Bound</a> for the addition law of two inverse temperatures, <a href="impurity-in-a-boosted-frame.html">Impurity in a Boosted Frame: The Invariant and the Read Value</a> for the invariant that makes the reading frame-independent, and <a href="the-exceptional-point-of-a-boosted-state.html">The Exceptional Point of a Boosted State</a> for the two ends of the path.</p>
+<h2 id="the-thermal-state-as-one-orbit">The Thermal State as One Orbit</h2>
+<p><strong>The Gibbs state and its exponential form.</strong> For a Hermitian Hamiltonian $\tilde H$ of the informational sector, the thermal state is</p>
+<p>$$
+\tilde{Ϛ}_\Psi(\beta)=\frac{e^{-\beta\tilde H}}{\operatorname{tr}e^{-\beta\tilde H}},\qquad \beta=\frac{1}{k_BT},
+$$</p>
+<p>with $\operatorname{tr}$ the $2\times2$ trace, $2\,\mathrm{Sc}$. Since $e^{-\beta\tilde H}$ is Hermitian positive and of unit $*$-norm after normalisation, it is a congruence of the centre:</p>
+<p>$$
+\tilde{Ϛ}_\Psi(\beta)=\mathrm{Cg}_{\tilde U_\beta}\left(\tfrac12 e_t\right),\qquad \tilde U_\beta=\frac{e^{-\beta\tilde H/2}}{\sqrt{\operatorname{tr}e^{-\beta\tilde H}}},\qquad \tilde U_\beta\tilde U_\beta^{*}=e_t .
+$$</p>
+<p><strong>So the whole thermal family is the orbit of one point.</strong> The point is the exceptional one of the previous article, and the orbit is generated by the family of positive Hermitian elements. That family is a semigroup — a product of two positive elements is positive and the inverse of a non-trivial one is not — so the orbit is a half-line and not a group orbit. This is the precise content of the statement that the Gibbs path is not a group orbit: the group acts by $*$-unitary congruences, which preserve the radius, and the thermal path is radial, so it cannot be generated by the group.</p>
+<p><strong>The path is radial, and it is the segment from the centre to the boundary.</strong> The thermal state commutes with $\tilde H$, so it is diagonal in the energy basis and its Bloch vector lies along the axis of $\tilde H$. With eigenvalues $\lambda_1\ge\lambda_2$ of $\tilde H$ and gap $\omega=\lambda_1-\lambda_2$,</p>
+<p>$$
+r(\beta)=\tanh\frac{\beta\omega}{2},
+$$</p>
+<p>and the state is $\tfrac12\left(e_t+i\tanh\tfrac{\beta\omega}{2}\vec n\right)$ with $\vec n$ the axis of $\tilde H$. The radius is monotone in $\beta$, it vanishes at $\beta=0$, and it tends to one as $\beta\to\infty$.</p>
+<p><strong>That formula is the whole thermodynamics of two levels.</strong> $\operatorname{tr}\tilde{Ϛ}_\Psi^{2}=\tfrac12\left(1+\tanh^{2}\tfrac{\beta\omega}{2}\right)$, $S=\ln 2-\tfrac{\beta\omega}{2}\tanh\tfrac{\beta\omega}{2}+\ln\cosh\tfrac{\beta\omega}{2}$, and the energy is $-\partial_\beta\ln Z$ with $Z=2\cosh\tfrac{\beta\omega}{2}$. Each is a function of $\beta\omega$ alone, which is the statement that the pair $(T,\omega)$ enters only through the product.</p>
+<h2 id="the-circle">The Circle</h2>
+<p><strong>The continuation.</strong> Put $\beta=i\tau$. Then</p>
+<p>$$
+e^{-\beta\tilde H}=e^{-i\tau\tilde H},
+$$</p>
+<p>and for Hermitian $\tilde H$ the element $e^{-i\tau\tilde H}$ is $*$-unitary: its star is $e^{+i\tau\tilde H}=e^{-i\tau\tilde H}{}^{-1}$. So the analytic continuation of the Boltzmann factor is a flow of the compact kind, generated by a Hermitian element, acting on the $\Psi$ slice. This is the same continuation that the corpus uses in the other direction for the material sector, where $i r'_t$ is a coordinate and not a parameter.</p>
+<p><strong>A translation, and that is where the reading starts.</strong> Write $U(\tau)=e^{-i\tau\tilde H}$ for the continued flow. Then the Boltzmann operator is $U$ at the imaginary value of its parameter,</p>
+<p>$$
+e^{-\beta\tilde H}=U(-i\beta),
+$$</p>
+<p>so $\beta$ is a <strong>length along the imaginary-time axis</strong>: it is how far the operator translates. That identity is the whole of the structural claim, and it does not use the spectrum at all. It says that a system at inverse temperature $\beta$ is one whose Boltzmann weight is the translation by $\beta$ in imaginary time — which is why the partition function, $Z=\operatorname{tr}U(-i\beta)$, is a trace over a loop of that length rather than a sum over a point.</p>
+<p><strong>Two circles, and they must not be identified.</strong> The continued flow itself turns with the <em>free</em> period. In the energy basis it multiplies the eigenlines by $e^{-i\tau\lambda_1}$ and $e^{-i\tau\lambda_2}$, the relative phase returns when $\tau\omega$ is a multiple of $2\pi$, and</p>
+<p>$$
+\tau_{\mathrm{free}}=\frac{2\pi}{\omega},
+$$</p>
+<p>a number fixed by the gap and by nothing else. It does not depend on the temperature and it is the same at every $\beta$. The circle whose circumference is the inverse temperature is a different one: it is the circle on which the imaginary time of the <em>thermal state</em> is closed, and its circumference is $\beta\hbar$, the width of the KMS strip. The two coincide at exactly one temperature,</p>
+<p>$$
+\beta\hbar=\frac{2\pi}{\omega}\quad\Longleftrightarrow\quad k_BT=\frac{\hbar\omega}{2\pi},
+$$</p>
+<p>and that coincidence is a property of a particular two-level system, not the definition of $\beta$. A sentence that reads the inverse temperature off $2\pi/\omega$ has read the gap and called it a temperature.</p>
+<p><strong>What the trace over a loop gives, and what it does not.</strong> $Z(\beta)=2\cosh\frac{\beta\omega}{2}$ is the sum of the two eigenvalues of the translation $U(-i\beta)$, which is the trace of a translation and not the trace of a periodic function: the operator $U(-i\beta)$ is Hermitian positive, and it does not come back at $\tau=-i\beta$. What is periodic is the thermal <em>correlation function</em>, and its period is $\beta\hbar$. So the correct statement of the circle is the KMS one, and it is the following. For the thermal state at $\beta$, the two-point function of any two observables obeys</p>
+<p>$$
+F_{AB}(r'_t+i\beta\hbar)=F_{BA}(r'_t),
+$$</p>
+<p>which closes the imaginary axis into a circle of circumference $\beta\hbar$. The periodicity is a property of the <em>state</em>, and it holds at every temperature; the free flow's periodicity is a property of the <em>spectrum</em>, and it holds at every temperature too, at a different number.</p>
+<p><strong>Where a circumference is forced rather than chosen.</strong> In a two-level system $\beta$ is a free parameter and the circle is whatever length the reservoir sets, so the geometry is a picture and not a derivation. The case where the geometry does the work is a horizon, and the corpus has it in <em>The Unruh Effect in Biquaternionic Form</em>: the boost's orbit closes in imaginary time with period $2\pi$ <strong>in the rapidity</strong>, the Euclidean chart must be regular at the horizon, regularity fixes that period, and $\beta=2\pi c/a$ follows. There the circumference is computed and the temperature is its reciprocal; here the circumference is given and the temperature is its reciprocal by definition. The two statements are one formula, $T\propto1/\beta$, read once as a theorem and once as a definition.</p>
+<p><strong>Where the circle is absent.</strong> For a boost the generator is a pure vector and the element is $e^{\theta\tilde n/2}$, real, with $\tilde n^{2}=-1$: the flow is $e^{\theta}$ and $e^{-\theta}$, a hyperbola and not a circle. There is no period, and the parameter is a rapidity. The same algebra therefore supplies a compact flow on one slice and a non-compact flow on the other, and the thermal circle exists on the compact one.</p>
+<h2 id="inverse-temperature-is-an-inverse-time">Inverse Temperature Is an Inverse Time</h2>
+<p><strong>The dimensional statement is the structural one.</strong> $\beta$ has units of inverse energy; with $c=1$ that is a time, and with $\hbar=1$ it is an inverse frequency. The article's claim is that this is not a unit coincidence but the length of the orbit computed above: $\beta=\tau_{\mathrm{per}}/\hbar$ at the scale set by the gap. Temperature is a frequency, $k_BT=\hbar\omega$, and the thermal circle is the orbit whose period is that frequency's inverse.</p>
+<p><strong>Two limits, and they are the two ends of the ball.</strong></p>
+<ul>
+<li><strong>$\beta\to0$</strong> is infinite temperature. $\tanh\frac{\beta\omega}{2}\to0$, so $\tilde{Ϛ}_\Psi\to\tfrac12 e_t$: the centre, the exceptional point, the state of no axis and maximal entropy. Every state of the ball is equidistant from it, and no measurement distinguishes the two energies.</li>
+<li><strong>$\beta\to\infty$</strong> is zero temperature. $\tanh\frac{\beta\omega}{2}\to1$, so $\tilde{Ϛ}_\Psi\to\tfrac12(e_t+i\vec n)$: the projector on the lower eigenline, pure, on the boundary. The state has an axis, the entropy vanishes, and the two energies are maximally distinguished.</li>
+</ul>
+<p><strong>The path between them is the diameter.</strong> Since the thermal state is diagonal and its vector is along $\vec n$, the Gibbs path is the straight segment from the centre to the boundary point $\vec n$ — a geodesic of the ball in both metrics of the companion articles, since a diameter is a geodesic of the Euclidean metric and of the Cayley–Klein one. The thermal family is therefore the simplest orbit the ball has: one radius, one direction, and the whole of the temperature in the radius.</p>
+<p><strong>The bound, and why there is one.</strong> The two-level radius obeys $\lvert\vec s_\Psi\rvert=\tanh\frac{\beta\omega}{2}<1$ for every finite $\beta$, so the thermal state is never pure at finite temperature and never exactly at the centre at non-zero temperature. The companion's common bound on the rapidity and on $\beta$ is the same statement seen from the group side: both parameters run over an open interval, and both approach their endpoint only in a limit.</p>
+<h2 id="what-the-reading-does-and-does-not-give">What the Reading Does and Does Not Give</h2>
+<p><strong>It gives one parameter and one geometry.</strong> Temperature is the length of a closed orbit of the compact flow, the thermal state is the point of the diameter at the corresponding radius, and the two limits are the two exceptional loci of the ball. Nothing else is needed: no reservoir, no coarse-graining and no ensemble.</p>
+<p><strong>It does not give a derivation of thermality.</strong> The article takes the Gibbs form as given, as the corpus's partition article does, and shows what it is in the algebra. Why a subsystem is thermal, and with what $\beta$, is a question about an environment and is not answered here.</p>
+<p><strong>It does not put the circle in the material sector.</strong> The temptation to read the Wick rotation as a thermal circle on the material slice is refused for the reason given above: the material flow is non-compact. What the two sectors share is the algebra and the continuation; what they do not share is the periodicity.</p>
+<h2 id="summary">Summary</h2>
+<p>The thermal state is the congruence of the centre by $e^{-\beta\tilde H/2}$, so the Gibbs path is the radial segment from the maximally mixed state to a pure state on the boundary, and it is an orbit of a semigroup rather than of the group. Continuing $\beta\mapsto i\tau$ turns the Boltzmann factor into the value $U(-i\beta)$ of the compact flow $U(\tau)=e^{-i\tau\tilde H}$, so $\beta$ is a translation length along imaginary time and the thermal circle's circumference is $\beta\hbar$; the flow's own period, $2\pi/\omega$, is a different number fixed by the gap, and the two agree only at $k_BT=\hbar\omega/2\pi$. Temperature is therefore an inverse time in the structural sense and not only in the dimensional one, the two limits $\beta\to0$ and $\beta\to\infty$ are the centre and the boundary, and the circle exists on the informational slice because its generator is Hermitian — the material flow is a boost, and a boost does not come back.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\beta$</td>
+<td></td>
+</tr>
+<tr>
+<td>the inverse temperature; $\beta\hbar$ is the circumference, and $\beta$ is a length in units with $\hbar=1$</td>
+<td></td>
+</tr>
+<tr>
+<td>$\tilde H$</td>
+<td>the Hermitian Hamiltonian of the informational sector</td>
+</tr>
+<tr>
+<td>$\lambda_1\ge\lambda_2$, $\omega=\lambda_1-\lambda_2$</td>
+<td>the two energies and their gap</td>
+</tr>
+<tr>
+<td>$Z=\operatorname{tr}e^{-\beta\tilde H}=2\cosh\frac{\beta\omega}{2}$</td>
+<td>the partition function</td>
+</tr>
+<tr>
+<td>$\tilde{Ϛ}_\Psi(\beta)$</td>
+<td>the thermal state, of Bloch radius $\tanh\frac{\beta\omega}{2}$</td>
+</tr>
+<tr>
+<td>$\tilde U_\beta=e^{-\beta\tilde H/2}/\sqrt{Z}$</td>
+<td>the positive Hermitian element whose congruence gives the state</td>
+</tr>
+<tr>
+<td>$\tau$</td>
+<td>the imaginary time, $\beta=i\tau$</td>
+</tr>
+<tr>
+<td>$\beta\hbar$</td>
+<td>the circumference of the thermal circle, the width of the KMS strip</td>
+</tr>
+<tr>
+<td>$\tau_{\mathrm{free}}=2\pi/\omega$</td>
+<td>the period of the continued free flow; a property of the gap, not of the temperature</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In this category.</strong> <a href="the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a> states the periodicity that makes $\beta$ a length, and <a href="the-local-thermal-structure-kb-as-the-scale-of-imaginary-time.html">The Local Thermal Structure: k_B as the Scale of Imaginary Time</a> reads $k_B$ as the scale of that axis. <a href="the-unruh-effect-in-biquaternionic-form.html">The Unruh Effect in Biquaternionic Form</a> is the case where regularity of the horizon fixes the circumference. <a href="the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a> fixes $Z$, $\beta$ and the trace. <a href="inverse-temperature-as-a-rapidity.html">Inverse Temperature as a Rapidity: Translation, Addition and the Common Bound</a> gives the addition law and the bound. <a href="the-gibbs-path-is-not-a-group-orbit.html">The Gibbs Path Is Not a Group Orbit</a> proves the semigroup statement that this article uses. <a href="impurity-in-a-boosted-frame.html">Impurity in a Boosted Frame: The Invariant and the Read Value</a> shows which thermal quantity survives a change of frame. <a href="curies-law-for-the-bloch-radius.html">Curie's Law for the Bloch Radius: Expansion, Error and Saturation</a> expands the radius at high temperature. <a href="the-exceptional-point-of-a-boosted-state.html">The Exceptional Point of a Boosted State</a> is the article on the two ends of the diameter. <a href="states-observables-and-the-born-weight.html">States, Observables and the Born Weight</a> supplies the state and the pairing.</p>
+<p><strong>The material companion.</strong> <a href="the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a> states the material reading of the imaginary time that this article continues.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Readings of One Transformation: A Comparison — Biquaternion Universe</title>
+  <meta name="description" content="One group, two slices, two actions. The element that carries one frame to another is a single unit-norm biquaternion, and it acts on the material slice…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="two-readings-of-one-transformation-a-comparison"><strong>Two Readings of One Transformation: A Comparison</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>One group, two slices, two actions. The element that carries one frame to another is a single unit-norm biquaternion, and it acts on the material slice and on the informational slice by the same formula, $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$. The article sets the two readings side by side, states which comparisons are exact identities of the algebra, and states where the comparison stops.</p>
+<p><strong>The comparison has a spine, and it is a statement about isometry groups.</strong></p>
+<ul>
+<li>The transformations that preserve the <strong>interval</strong> — the quaternionic norm of the material slice — are the <strong>rotors</strong>, the unit-norm biquaternions. That is a six-dimensional group, and every element of it is an isometry of the material reading.</li>
+<li>The transformations that preserve the <strong>trace</strong> — the doubled scalar part of the informational slice — are the <strong>$*$-unitary</strong> elements, $\tilde U\tilde U^{*}=e_t$. That is a four-dimensional group, $U(2)$, and every element of it is a channel.</li>
+<li>The two groups <strong>intersect in the rotations</strong>, the real unit quaternions, of dimension three. There, and only there, one element is an isometry of both readings.</li>
+</ul>
+<p><strong>Everything else follows from those three lines.</strong> A boost is in the first group and not the second, so it is a symmetry of the interval and not a channel. A phase $e^{i\theta}$ is in the second and not the first, so it is a channel and not a symmetry of the interval. Neither is an isometry of both, and no element of either group is a symmetry of both readings except the rotation.</p>
+<p><strong>What the article refuses.</strong> It refuses a duality: the two readings are two actions of one group on two subspaces of one algebra, not two theories that a map identifies. It refuses a translation of states into four-vectors: the map that carries the congruence carries neither the product nor the interpretation. And it refuses to call the comparison a result of physics: it is a comparison of two mathematical readings whose physical vocabularies are fixed elsewhere.</p>
+<p>The article uses <a href="the-two-sectors-the-hermitian-split-and-the-four-bridges.html">The Two Sectors: the Hermitian Split and the Four Bridges</a> for the split, <a href="the-sector-map-and-its-exact-parts.html">The Sector Map and Its Exact Parts</a> for the map between them, <a href="the-four-forms-and-the-four-norms.html">The Four Forms and the Four Norms</a> for the measures, and the group articles of the previous section for the two isometry groups.</p>
+<h2 id="the-same-element-two-actions">The Same Element, Two Actions</h2>
+<p><strong>One element.</strong> The Lorentz transformation is one unit-norm biquaternion, and its two readings are two congruences:</p>
+<p>$$
+\text{material:}\quad \tilde P_\Phi\longmapsto\tilde U\tilde P_\Phi\tilde U^{*},
+\qquad
+\text{informational:}\quad \tilde{Ϛ}_\Psi\longmapsto\tilde U\tilde{Ϛ}_\Psi\tilde U^{*}.
+$$</p>
+<p>The formula is the same; the elements acted on are not. A four-momentum is anti-Hermitian of norm $-m^{2}c^{2}$; a state is Hermitian of trace one. Nothing in the congruence knows the difference, and that is the point: the group acts on the whole algebra and the two slices are two invariant subspaces.</p>
+<p><strong>Both slices are invariant because the star commutes with the congruence.</strong> For $\tilde Q$ Hermitian, $(\tilde U\tilde Q\tilde U^{*})^{*}=\tilde U\tilde Q\tilde U^{*}$; for $\tilde Q$ anti-Hermitian, the same computation with the two signs gives an anti-Hermitian element. So the action never mixes the slices, and a reader may compute on either one and know where the answer lives.</p>
+<p><strong>The invariants are not the same invariant.</strong> The material action preserves $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$; the informational action preserves $\mathrm{Sc}\,\tilde Q$ and the doubled scalar part. For a general element neither is preserved, and the two failures are the subject of the next section.</p>
+<h2 id="the-catalogue">The Catalogue</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>material reading</th>
+<th>informational reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the object acted on</td>
+<td>a four-vector $\tilde P_\Phi$, anti-Hermitian</td>
+<td>a state $\tilde{Ϛ}_\Psi$, Hermitian of trace one</td>
+</tr>
+<tr>
+<td>the space</td>
+<td>Minkowski space, inertia $(3,1)$</td>
+<td>the Bloch ball, radius below one</td>
+</tr>
+<tr>
+<td>the invariant</td>
+<td>$\langle\tilde Q\rangle_\natural$, the interval</td>
+<td>$2\,\mathrm{Sc}$, the trace, and the radius</td>
+</tr>
+<tr>
+<td>the isometry group</td>
+<td>the rotors, unit-norm, dimension six</td>
+<td>the $*$-unitary elements, dimension four</td>
+</tr>
+<tr>
+<td>the intersection</td>
+<td>the rotations, real unit quaternions, dimension three</td>
+<td>the same</td>
+</tr>
+<tr>
+<td>a boost</td>
+<td>an isometry</td>
+<td>not a channel; moves the slice</td>
+</tr>
+<tr>
+<td>a phase $e^{i\theta}$</td>
+<td>not an isometry</td>
+<td>a channel; fixes every state</td>
+</tr>
+<tr>
+<td>the compact part</td>
+<td>$SU(2)$, a double cover of $SO(3)$</td>
+<td>$SU(2)$, acting by the same matrices</td>
+</tr>
+<tr>
+<td>what a measurement reads</td>
+<td>an interval, an energy, a momentum</td>
+<td>a weight, a probability, a distance</td>
+</tr>
+<tr>
+<td>the physical name of the group</td>
+<td>the Lorentz group</td>
+<td>the same group, acting on states</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is the article in one object.</strong> Every row is one of the three isometry statements above, or a consequence of one.</p>
+<p><strong>Two rows deserve the derivation.</strong> The first is that a boost preserves the interval: it is an element of the rotor group, so $\tilde U\tilde P_\Phi\tilde U^{*}$ has the same natural norm, and the mass shell is preserved identically — not by a cancellation but because the norm is multiplicative and the rotor has norm one. The second is that a phase fixes every state: $\tilde U=e^{i\theta}e_t$ is central, so $\tilde U\tilde{Ϛ}_\Psi\tilde U^{*}=e^{i\theta}e^{-i\theta}\tilde{Ϛ}_\Psi=\tilde{Ϛ}_\Psi$. A transformation that fixes every state is a channel and carries no information, which is the exact sense in which the centre of $U(2)$ acts trivially on the ball.</p>
+<h2 id="the-exact-correspondences">The Exact Correspondences</h2>
+<p><strong>The congruence is carried by the sector map.</strong> With $J(\tilde Q)=i\tilde Q$ from the companion, $J(\tilde U\tilde Q\tilde U^{*})=\tilde U(i\tilde Q)\tilde U^{*}$, because $i$ is central and fixed by the star. So any statement about the orbits of the group on one slice is a statement about the orbits on the other, and the two orbit spaces are the same set. This is the strongest exact statement available, and it is a statement about actions, not about algebras.</p>
+<p><strong>The Hermitian form is carried, the natural norm is negated.</strong> $H(J\tilde Q)=H(\tilde Q)$ and $\langle J\tilde Q\rangle_\natural=-\langle\tilde Q\rangle_\natural$. So an amplitude computed on one side is a weight on the other, and an interval computed on one side becomes the negative of itself. The second identity is the reason the material interval is indefinite and the informational weight definite: they are one number and its negative, read at two points of one map.</p>
+<p><strong>The compact part acts identically.</strong> For a real unit quaternion $\tilde u$, $\tilde u^{*}=\tilde u^{\natural}=\tilde u^{-1}$, so the congruence by $\tilde u$ is simultaneously an isometry of both forms. This is why the rotation subgroup is the bridge, why the gyration of a boost pair is the one piece of a frame change that both readings can see, and why $SU(2)$ appears on both rows of the table with the same matrices.</p>
+<p><strong>The two group elements that are not in the intersection are the two asymmetries.</strong> A boost is in the rotor group and not in $U(2)$: it preserves the interval and moves the trace. A phase is in $U(2)$ and not in the rotor group: it preserves the trace and changes the natural norm by $e^{2i\theta}$. Each reading is blind to what the other one sees, and the blindness is a group-theoretic fact and not a limitation of a calculation.</p>
+<h2 id="where-the-readings-diverge">Where the Readings Diverge</h2>
+<p><strong>They diverge on composition, and the divergence is a sign.</strong> The sector map reverses the product, $J(\tilde Q\tilde Q')=-J(\tilde Q)J(\tilde Q')$, so a composite computed on one side and carried to the other arrives with a sign per factor. A reader who composes two maps across the comparison will get the wrong answer unless the sign is inserted, and the corpus's rule is therefore to compare invariants and never to compose across the map.</p>
+<p><strong>They diverge on what a measurement is.</strong> The material reading measures an interval; the informational reading measures a weight. The two are different functionals of the same element, and no experiment measures both on one object: an interval is read from a clock and a ruler, a weight from a counting statistic.</p>
+<p><strong>They diverge on the exceptional locus.</strong> The material degeneration — the Jordan part — needs a complex momentum and is unreachable on the real slice. The informational one is the centre of the ball, real, semi-simple and present in every frame. One sector's degenerate point is a calculation and the other's is a place.</p>
+<p><strong>They agree on the angle.</strong> The one quantity that both readings compute from the same element and report as the same number is the compact factor: the rotation that a product of two boosts contains. The material reading sees it as the holonomy of the velocity ball, the informational one as a unitary channel on the Bloch ball, and the matrix is the same matrix. This is the sharpest positive statement of the comparison, and it is a consequence of the intersection being non-trivial.</p>
+<h2 id="what-the-comparison-does-not-claim">What the Comparison Does Not Claim</h2>
+<p><strong>It does not claim a duality of theories.</strong> A duality would be a map that carries every statement of one theory to a statement of another, including composition. The sector map fails on composition, so no duality follows from it.</p>
+<p><strong>It does not claim that a state is a four-vector.</strong> The map carries elements; it does not carry interpretations. The image of a four-momentum is an element, not a state, and the corpus never writes it as one.</p>
+<p><strong>It does not claim that the two readings are two physical effects.</strong> A single experiment is read in one vocabulary. The comparison is a statement about the algebra, and its physical content is exactly the three-group structure of the first section.</p>
+<h2 id="summary">Summary</h2>
+<p>One unit-norm biquaternion acts on two slices by one congruence. The material reading is the action on four-vectors preserving the natural norm; the informational reading is the action on states preserving the trace. The two isometry groups are the rotors, of dimension six, and the $*$-unitary elements, of dimension four, and they intersect exactly in the rotations, of dimension three. The sector map carries the action and the Hermitian form, negates the natural norm, and reverses the product. Boosts are isometries of one reading and not the other; phases are the reverse; rotations are both. Every agreement and every divergence in the table follows from that.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$</td>
+<td>the natural norm, the interval on the material slice</td>
+</tr>
+<tr>
+<td>$H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$</td>
+<td>the Hermitian form</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}$</td>
+<td>the trace of the $2\times2$ image</td>
+</tr>
+<tr>
+<td>$\mathrm{Cg}_{\tilde U}$</td>
+<td>the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$</td>
+</tr>
+<tr>
+<td>the rotor group</td>
+<td>unit-norm biquaternions, $\cong SL(2,\mathbb{C})$, dimension six</td>
+</tr>
+<tr>
+<td>$U(\mathbb{B})$</td>
+<td>the $*$-unitary group, $\cong U(2)$, dimension four</td>
+</tr>
+<tr>
+<td>$J(\tilde Q)=i\tilde Q$</td>
+<td>the sector map</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In this category.</strong> <a href="the-two-sectors-the-hermitian-split-and-the-four-bridges.html">The Two Sectors: the Hermitian Split and the Four Bridges</a> fixes the split. <a href="the-sector-map-and-its-exact-parts.html">The Sector Map and Its Exact Parts</a> proves the four identities used above. <a href="the-four-forms-and-the-four-norms.html">The Four Forms and the Four Norms</a> supplies the measures. <a href="the-h-norm-amplitude-and-frame.html">The H Norm: Amplitude and Frame</a> identifies $U(\mathbb{B})$ as the group of H-isometries. <a href="the-group-of-unit-norm-biquaternions.html">The Group of Unit-Norm Biquaternions</a> is the material isometry group. <a href="the-lorentz-group-on-the-bloch-ball.html">The Lorentz Group on the Bloch Ball: Projective Action and Two Metrics</a> is the informational one. <a href="the-informational-reading-of-the-wigner-angle.html">The Informational Reading of the Wigner Angle</a> and <a href="velocity-space-as-hyperbolic-geometry-in-biquaternionic-form.html">Velocity Space as Hyperbolic Geometry in Biquaternionic Form</a> are the two readings of the one angle.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
