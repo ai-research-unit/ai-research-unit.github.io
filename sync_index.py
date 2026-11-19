@@ -2,8 +2,9 @@
 """Regenerate index.md from the introduction article.
 
 `index.md` is generated, not written: it is a copy of
-`articles_physics/introduction-to-the-biquaternion-universe.md`, so the landing
-page is the introduction and the two can never drift.
+`articles_physics/introduction-to-the-biquaternion-universe.md`, with only the
+first heading replaced by the landing-page title (`build.INDEX_TITLE`), so the
+landing page is the introduction and the two can never drift.
 
 Both build scripts call the same function (build.sync_index) at the top of
 main(), so a normal `python3 build.py` or `python3 build2.py` regenerates the
@@ -21,7 +22,7 @@ def main():
     if "--check" in sys.argv[1:]:
         same = (build.INDEX_TARGET.exists()
                 and build.INDEX_TARGET.read_text(encoding="utf-8")
-                == build.INDEX_SOURCE.read_text(encoding="utf-8"))
+                == build.index_text(build.INDEX_SOURCE.read_text(encoding="utf-8")))
         print("index.md up to date" if same else "index.md is out of date — run sync_index.py")
         return 0 if same else 1
     build.sync_index()

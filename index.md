@@ -1,4 +1,4 @@
-# __Introduction to the Biquaternion Universe__
+# __AI unifies quantum physics and relativity__
 
 In theoretical physics, progress often begins by finding the right algebraic arena — a single mathematical structure in which seemingly separate phenomena appear as complementary facets of one object. Standard physics treats special relativity and quantum mechanics in distinct formalisms: real four-vectors and Lorentzian intervals on one side, complex Hilbert spaces and Hermitian operators on the other. This programme begins with the observation that both structures already live inside a single eight-dimensional algebra, the biquaternions $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, splitting cleanly into its anti-Hermitian material subspace $\mathbb{B}_\Phi$ and its Hermitian informational subspace $\mathbb{B}_\Psi$. Unifying the two sectors at the algebraic level does not alter their established predictions; instead, it puts causal geometry, spinor symmetries, quantum states, and measurement rules into a common language — exposing cross-sector links and structural constraints that remain hidden when the two theories are kept apart.
 

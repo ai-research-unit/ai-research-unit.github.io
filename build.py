@@ -209,19 +209,39 @@ def ensure_dirs():
 INDEX_SOURCE = SRC / "articles_physics" / "introduction-to-the-biquaternion-universe.md"
 INDEX_TARGET = SRC / "index.md"
 
+# The landing page is the introduction, but it carries its own H1: the article
+# keeps its catalog title, the front page names the claim.
+INDEX_TITLE = "AI unifies quantum physics and relativity"
+
+_INDEX_H1 = re.compile(r"^#\s*__.+?__\s*$")
+
+
+def index_text(source):
+    """Copy the introduction, keeping only its H1 replaced by INDEX_TITLE."""
+    lines = source.splitlines(keepends=True)
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if not s:
+            continue
+        if _INDEX_H1.match(s):
+            lines[i] = f"# __{INDEX_TITLE}__\n"
+        break
+    return "".join(lines)
+
 
 def sync_index():
     """Rewrite index.md as a copy of the introduction article.
 
     The landing page is the introduction, so it is generated and not edited by
-    hand: editing index.md is undone by the next build. The write is skipped
-    when the content already matches, so an unchanged article leaves index.md's
-    mtime alone and the incremental build in build2.py stays incremental.
+    hand: editing index.md is undone by the next build. Only the first heading
+    differs (see INDEX_TITLE). The write is skipped when the content already
+    matches, so an unchanged article leaves index.md's mtime alone and the
+    incremental build in build2.py stays incremental.
     """
     if not INDEX_SOURCE.exists():
         print(f"Warning: {INDEX_SOURCE.relative_to(SRC)} not found — index.md kept as it is.")
         return False
-    source = INDEX_SOURCE.read_text(encoding="utf-8")
+    source = index_text(INDEX_SOURCE.read_text(encoding="utf-8"))
     if INDEX_TARGET.exists() and INDEX_TARGET.read_text(encoding="utf-8") == source:
         return False
     INDEX_TARGET.write_text(source, encoding="utf-8")
