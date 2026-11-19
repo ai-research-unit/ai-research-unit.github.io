@@ -109,7 +109,7 @@ The framework results used here are those of the companion articles:
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the massless equation, its chiral solutions and the fermion bilinears.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the axial current and its conservation law.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the separation of the linear chiral pair from the real structure $\flat$.
-- Companion article *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*, for the status of colour and the strong dynamics that a condensate requires.
+- Companion article *Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall*, for the status of colour and the strong dynamics that a condensate requires.
 
 ## The Pair, the Two-Sided Equation and the Chirality
 
@@ -395,7 +395,7 @@ Four statements, in decreasing order of strength.
 - **The order parameter is a central scalar.** As an algebra element the condensate sits on the real scalar direction $\mathbb{R}e_t\subset\mathbb{B}_{C}$. That is the framework's way of saying it is a Lorentz scalar and vector-neutral, and it is exact.
 - **The second kind of mass is not involved.** The condensate is a chiral pairing, so it is linear and built on the chiral off-diagonal coupling; it is not the antilinear self-pairing built on $\flat$. The framework's two-mass distinction, established in the companion on antilinear structure, is what keeps the two from being conflated here.
 
-**What is genuinely missing.** The framework has no colour group, no confinement, and no strong-coupling dynamics. The compact gauge algebra inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of real dimension four; every complex representation of $\mathbb{B}$ has even dimension, so no three-dimensional colour representation exists; and the strong-interaction agenda records that $SU(3)$ is an obstacle with no route. A condensate of the NJL type can therefore be *written down* in the framework — its bilinears and its symmetry pattern are the framework's — but it cannot be *derived* from a framework interaction, because the interaction that produces it in nature is the colour gauge theory the framework does not contain. The four-fermion coupling $G$ is an effective parameter in the framework in exactly the way it is in NJL.
+**What is genuinely missing.** The framework has no colour group, no confinement, and no strong-coupling dynamics. The compact gauge algebra inside $\mathbb{B}$ is at most $\mathrm{U}(2)$ of real dimension four; every complex representation of $\mathbb{B}$ has even dimension, so no three-dimensional colour representation exists; and the strong-interaction article records that $SU(3)$ is an obstacle with no route. A condensate of the NJL type can therefore be *written down* in the framework — its bilinears and its symmetry pattern are the framework's — but it cannot be *derived* from a framework interaction, because the interaction that produces it in nature is the colour gauge theory the framework does not contain. The four-fermion coupling $G$ is an effective parameter in the framework in exactly the way it is in NJL.
 
 ## Goldstone Counting, and Where the Pion Lives
 

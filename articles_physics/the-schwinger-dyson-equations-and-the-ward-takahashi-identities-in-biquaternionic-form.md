@@ -122,7 +122,7 @@ The free case is the statement that the expectation of the free field solves the
 $$
 \Big\langle\big(\sum_\mu D_\mu F_{\mu\nu}\big)_a\Big\rangle=\Big\langle J_{\mathrm{gf},\nu a}\Big\rangle+\Big\langle J_{\mathrm{gh},\nu a}\Big\rangle ,
 $$
-with the gauge content carried by the Slavnov–Taylor identities rather than by the equation. The algebra's part is the covariant divergence as the adjoint twisting of a central differential operator; the two-sided structure of the gravitational analogue, and its consequences, belong to the quantum-gravity agenda and are not repeated here. The abelian limit of the same derivation is the Schwinger–Dyson statement of Maxwell's equation, with the field-independent Faddeev–Popov determinant of the abelian theory.
+with the gauge content carried by the Slavnov–Taylor identities rather than by the equation. The algebra's part is the covariant divergence as the adjoint twisting of a central differential operator; the two-sided structure of the gravitational analogue, and its consequences, belong to the quantum-gravity article and are not repeated here. The abelian limit of the same derivation is the Schwinger–Dyson statement of Maxwell's equation, with the field-independent Faddeev–Popov determinant of the abelian theory.
 
 **The fermion.** For the Dirac field the quadratic operator is not central, because the mass term is the linear, chirality-off-diagonal pairing
 $$
@@ -215,7 +215,7 @@ For a non-abelian gauge theory the symmetry whose Ward–Takahashi identity is a
 
 3. **The master equation on the module.** The master equation was written with the variation evaluated at $\delta/\delta\tilde J_{\Phi}$ through the real pairing. Can the whole hierarchy be packaged as a single identity of $\mathbb{B}$-module operators, without passing through a component basis, in the way the effective action is packaged on the module?
 
-4. **The gravitational Ward identity.** The gauge Ward identity comes from a one-sided symmetry of a one-sided connection; the gravitational analogue has the two-sided rotor action of *Curved Spacetime and the Biquaternion Framework*. What is the Ward–Takahashi identity of the local Lorentz symmetry, and does its derivation meet the same two-sided obstruction that the quantum-gravity agenda records for the gauge-fixing problem?
+4. **The gravitational Ward identity.** The gauge Ward identity comes from a one-sided symmetry of a one-sided connection; the gravitational analogue has the two-sided rotor action of *Curved Spacetime and the Biquaternion Framework*. What is the Ward–Takahashi identity of the local Lorentz symmetry, and does its derivation meet the same two-sided obstruction that the quantum-gravity article records for the gauge-fixing problem?
 
 5. **The central phase and the axial identity as a pair.** Both identities are Ward–Takahashi identities of an internal rotation, one of the centre and one of the chirality. The centre's identity is exact; the chirality's acquires the anomaly. Is the difference the algebra's, in the sense that the centre is a genuine scalar symmetry and the chirality is the off-diagonal rotation between the two central ideals, or is it the standard difference of measure behaviour that the algebra merely inherits?
 

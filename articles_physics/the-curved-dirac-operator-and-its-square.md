@@ -1,0 +1,276 @@
+# __The Curved Dirac Operator and Its Square__
+
+## Introduction
+
+The curved Dirac equation is the one place in the curved-space programme where a calculation produces a number that can be checked against an independent derivation. The operator itself is short,
+
+$$
+\tilde F_{\mu}D_{\mu},
+\qquad
+\tilde F_{\mu}=g_{\mu\nu}\tilde E_{\Phi,\nu},
+\qquad
+\langle\tilde F_{\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}=\delta_{\mu\nu},
+$$
+
+the dual frame contracted with a one-sided covariant derivative. Its square is the Lichnerowicz formula,
+
+$$
+(\tilde F_{\mu}D_{\mu})^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric},
+$$
+
+with $\mathrm{Ric}$ the scalar curvature of the Gram metric. The coefficient $\tfrac14$ is the coefficient of Lichnerowicz, and it is the same number on both sides for a reason, not by coincidence: the square of a first-order operator with a second-order principal part is fixed by the Weitzenböck decomposition, and the decomposition reads the same in any algebra that carries the Clifford relations with the right signs. That agreement is this article's evidential weight, and the article is written to be cited for it by the quantum-gravity article.
+
+Three things have to be said at once, because each is a place where a summary of this result goes wrong.
+
+**The field's derivative is one-sided, and that is not an inconsistency with the frame's.** The frame is a four-vector and transforms by rotor conjugation, so its derivative compensates on both sides. The Dirac field transforms by left multiplication alone, so its derivative compensates once. Conflating the two is the commonest error in second-hand accounts, in both directions: calling the one-sided derivative a defect, or transferring the two-sided form onto the field.
+
+**The square is the square of a basis operator, not of an algebra element.** Squaring the algebra element $\tilde F_\mu D_\mu$ does not produce a scalar, because the algebra product carries a vector remainder. The Lichnerowicz identity is a statement about the operator acting on $\mathbb{B}$ read as a four-dimensional complex vector space, that is, about its left-regular representation. This distinction is not pedantry; it is the difference between a true identity and a false one.
+
+**The equation is written on a background.** It contains the frame and the connection and determines neither. There is no action here, no variation, and no Einstein equation.
+
+The conventions are inherited. $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$; $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian subspaces under the star $^{*}$, which conjugates coefficients and negates vectors; ${}^{\natural}$ keeps the scalar and negates the vectors and is complex-linear; $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ and $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$; the rotor group is $\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$. The coordinates are $x_\mu=(r'_t,r_x,r_y,r_z)$, all four in metres, and $Q_t=i q'_t$.
+
+## The Two Derivatives, and Why They Are Different Objects
+
+The material frame of the companion articles is a set of four elements of $\mathbb{B}_{\Phi}$, and it transforms by rotor conjugation, $\tilde E_{\Phi,\mu}\mapsto\tilde U\tilde E_{\Phi,\mu}\tilde U^{*}$. The Dirac field is not a four-vector. It is an element $\tilde\Xi$ of $\mathbb{B}$ on which the Lorentz group acts by **left multiplication**,
+
+$$
+\tilde\Xi\longmapsto\tilde U\tilde\Xi ,
+$$
+
+as the spinor-module article establishes. The two actions differ in the number of factors of $\tilde U$, and the derivatives differ with them:
+
+$$
+D_\mu\tilde Q=\partial_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}
+\quad\text{for the vector},
+\qquad
+D_\mu\tilde\Xi=\partial_\mu\tilde\Xi+\vec\Gamma_\mu\tilde\Xi
+\quad\text{for the field}.
+$$
+
+Both connections live in the same six-real-dimensional Lie subspace $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}=\{\vec G:\mathrm{Sc}(\vec G)=0\}$ of the companion article, and both derivatives are the standard covariant derivatives of the representations they act on. Nothing is doubled and nothing is missing: the vector receives two connection terms because it carries the transformation twice, and the field receives one because it carries it once.
+
+**Covariance fixes the connection's law.** If $\tilde\Xi\mapsto\tilde U\tilde\Xi$ then $D_\mu\tilde\Xi\mapsto\tilde U D_\mu\tilde\Xi$ precisely when
+
+$$
+\vec\Gamma_\mu\longmapsto\tilde U\vec\Gamma_\mu\tilde U^{-1}-\left(\partial_\mu\tilde U\right)\tilde U^{-1},
+$$
+
+which is the inhomogeneous law of a connection on the field. The two-sided derivative of the vector carries the corresponding two-sided law, with $\tilde U^{-1}$ on the right replaced by $\tilde U^{*}$ in the frame's own slot. A rotor field gives the pure-gauge example at once: $\vec\Gamma_\mu=-(\partial_\mu\tilde U)\tilde U^{-1}$ has vanishing curvature and is exactly the connection that makes a rotor-carried frame constant.
+
+**One consequence worth stating early.** The inhomogeneous term $(\partial_\mu\tilde U)\tilde U^{-1}$ is what makes the field's equation invariant. A reader who has seen the two-sided derivative described as an unnecessary complication has usually not seen this line, because the law for the field is the ordinary Yang–Mills-type law and looks unremarkable. It is not the two-sided form in disguise; the two are different because the representations are different.
+
+## The Operator and the Equation
+
+The biquaternion gradient on the material sector, in the physical coordinates $x_\mu=(r'_t,r_x,r_y,r_z)$, is
+
+$$
+\tilde\nabla_\Phi=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial x_\eta ,
+$$
+
+because $\partial/\partial r'_t=i\,\partial/\partial R_t$ and the two imaginary units multiply to a sign, $(-i)\cdot i=+1$. Its curved replacement substitutes the frame field for the rigid material frame and the one-sided derivative for the partial derivative. The rigid material frame is
+
+$$
+\tilde E_{\Phi,0}=ie_t,\qquad \tilde E_{\Phi,\eta}=\vec e_\eta,
+\qquad
+\tilde F_0=-ie_t,\qquad \tilde F_\eta=\vec e_\eta ,
+$$
+
+and it is **not** the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, because $e_t$ is not in $\mathbb{B}_{\Phi}$. A term-by-term replacement of $\tilde E_{\Phi,\mu}$ by $e_\mu$ is invalid, and it is the commonest error in a first reading.
+
+The two equations are then immediate.
+
+**Massless.**
+
+$$
+\tilde F_{\mu}D_{\mu}\tilde\Xi=0 .
+$$
+
+**Massive, as a chiral pair**, with the mass length $\hbar/(mc)$ written $k_m$ and the two halves $\tilde\Xi_{R}$, $\tilde\Xi_{L}$ of the Dirac field:
+
+$$
+\tilde F_{\mu}D_{\mu}\tilde\Xi_{R}=k_m\tilde\Xi_{L},
+\qquad
+(\tilde F_{\mu}D_{\mu})^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R}.
+$$
+
+The second line needs the conjugate operator: ${}^{\natural}$ is an anti-automorphism, so it reverses the order of the factors, and the conjugate frame and the conjugate connection appear in the opposite order. It reduces to $(\tilde\nabla_\Phi)^{\natural}$ when the frame is rigid and the connection vanishes.
+
+**Why the mass is a chiral pair and not a right multiplication.** A right multiplication by a fixed algebra element acts within each chiral half, whereas the mass term must exchange the two halves. The exchange is what the pair above does. The right-multiplication form belongs to the two-sided, Kravchenko representation of the flat equation, where it represents the same coupling; that dictionary has not been extended to a curved background, and this article therefore constructs the one-sided pair only.
+
+## The Flat Limit Is Exact
+
+Two consistency statements locate the construction, and the first is a limit that must reproduce the flat equation exactly. Take the rigid material frame above and $\vec\Gamma_\mu=0$. Then
+
+$$
+\tilde F_{\mu}D_{\mu}=\tilde F_{\mu}\partial_\mu=-i\,e_t\,\partial/\partial r'_t+\sum_\eta\vec e_\eta\,\partial/\partial x_\eta=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta=\tilde\nabla_\Phi ,
+$$
+
+using $Q_t=i q'_t$ and $\partial/\partial r'_t=i\,\partial/\partial R_t$. The curved object is a strict generalisation: nothing is added at flatness and nothing of the flat structure is lost.
+
+**A nearby trap.** The informational frame, built from $e_{\inf,0}=e_t$ and $\vec e_{\inf,k}=i\vec e_\eta$, gives $F_{\inf,\mu}\partial_\mu=e_t\partial/\partial r'_t+i\sum_\eta\vec e_\eta\partial/\partial x_\eta=i\tilde\nabla_\Phi$ in the same limit. So the biquaternion object that represents a source's differential operator may be $i\tilde\nabla_\Phi$ rather than $\tilde\nabla_\Phi$, and the two frames are related but not interchangeable. The material frame is the one the metric and the frame route use, and it is the one used here.
+
+## The Square, and the Object It Is Taken Of
+
+The square is the article's centre, and it has to be stated with its reading attached.
+
+$$
+\boxed{\;(\tilde F_{\mu}D_{\mu})^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}\;}
+$$
+
+Here $\mathrm{Ric}$ is the **scalar curvature** of the Gram metric, and
+
+$$
+\Box_{g,\Phi}=\sum_{\mu,\nu}G_{\mu\nu}\nabla_\mu\nabla_\nu
+=\frac{1}{\sqrt{-\det g}}\sum_{\mu,\nu}\frac{\partial}{\partial x_\mu}\left(\sqrt{-\det g}\,G_{\mu\nu}\frac{\partial}{\partial x_\nu}\right)
+$$
+
+is the Laplace–Beltrami operator acting on the field, with $G$ the inverse metric written as a matrix because it is the inverse and not a component. With $\vec\nabla_\Phi^{*}\vec\nabla_\Phi=-\Box_{g,\Phi}$ the identity is the standard Lichnerowicz formula $\vec\nabla_\Phi^{*}\vec\nabla_\Phi+\tfrac14\mathrm{Ric}$ in Lorentzian signature, the form of *Spin Geometry*.
+
+**The reading.** The square is taken on the **basis operator**: the operator acting on $\mathbb{B}$ read as a four-dimensional complex vector space, that is, its left-regular representation. Its representative is not the coefficient matrix of left multiplication by $\tilde F_\mu$ — that matrix squares with a vector cross term left over. It is the sum of the four frame basis operators of the matrix-representation conventions, weighted by the inverse vierbein. The four close on the plain weight $\varepsilon_a$, with $\varepsilon=(1,-1,-1,-1)$:
+
+$$
+\{iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\nu(a)}},\,iL_{\mathrm{axf},e_b}R_{\mathrm{axf},\vec e_{\nu(b)}}\}=2\varepsilon_a\delta_{ab}I_4,
+$$
+
+with $\nu(t)=x$ and $\nu(\eta)=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.
+
+**Why the algebra element does not square to a scalar.** In the rigid frame $\tilde\nabla_\Phi^{2}$ carries the vector term $-2i\sum_\eta\vec e_\eta\,\partial^2/\partial r'_t\partial x_\eta$, so the algebra square is a biquaternion-valued operator and not the scalar Lichnerowicz square. The identity is true of the basis operator and false of the algebra element, and a version of this article that omitted the distinction would be wrong.
+
+**The sign, fixed by the flat limit.** The basis operators square to $+I_4$ on the time leg and to $-I_4$ on each spatial leg, so the rigid square is $\partial^2/\partial{r'_t}^2-\Delta_\Phi=-\Box_{g,\Phi}$. The curvature term must then carry the opposite sign to the Laplacian term, which is the sign displayed. No sign is chosen freely: the flat limit and the signature fix it.
+
+**The check that was run.** The identity was recomputed on a conformal metric in two dimensions, in both sign conventions of the basis operators, with the connection taken from the frame. It held identically in the geometer's convention, in which the basis operators square to minus the norm, and the sign flips with the convention as it must.
+
+## Where the One Quarter Comes From
+
+The identity is worth checking against the derivation that does not use the algebra at all, because the point of the article is that the two agree.
+
+**The Clifford derivation, in three steps.** Let $\gamma_a$ be a set of generators with $\gamma_a\gamma_b+\gamma_b\gamma_a=2\eta_{ab}$ and let $D=\sum_a\gamma_a\nabla_a$ with $\nabla_a$ the spin connection in the frame. Then
+
+$$
+D^{2}=\sum_{a,b}\gamma_a\gamma_b\nabla_a\nabla_b
+=\sum_{a,b}\gamma_a\gamma_b\left(\nabla_{(a}\nabla_{b)}+\tfrac12[\nabla_a,\nabla_b]\right)
+=\nabla^{*}\nabla+\tfrac12\sum_{a,b}\gamma_a\gamma_b R_{ab},
+$$
+
+where the symmetric part is the connection Laplacian, up to the curvature of the frame itself, and $R_{ab}$ is the curvature two-form acting on spinors. The first step uses the anticommutator to symmetrise, the second separates the commutator, and the third replaces the commutator by the curvature. The remaining task is to evaluate the Clifford contraction of the curvature.
+
+**The contraction, and the factor.** The curvature two-form on spinors is built from the spin generators $S_{cd}=\tfrac14[\gamma_c,\gamma_d]$, so $R_{ab}=\tfrac12R_{abcd}S_{cd}$, and since $[\gamma_c,\gamma_d]=2\gamma_c\gamma_d$ for $c\neq d$ while the antisymmetry of $R_{abcd}$ kills the $c=d$ terms,
+
+$$
+R_{ab}=\tfrac14R_{abcd}\,\gamma_c\gamma_d .
+$$
+
+Then
+
+$$
+\tfrac12\sum_{a,b}\gamma_a\gamma_b R_{ab}
+=\tfrac18\sum_{a,b,c,d}R_{abcd}\,\gamma_a\gamma_b\gamma_c\gamma_d
+=\tfrac18\cdot 2\,\mathrm{Ric}
+=\tfrac14\,\mathrm{Ric},
+$$
+
+and the four-gamma contraction with the Riemann tensor equals twice the scalar curvature: the identity $\sum_{a,b,c,d}R_{abcd}\gamma_a\gamma_b\gamma_c\gamma_d=2R$ follows from writing $\gamma_a\gamma_b=\gamma_{ab}+\eta_{ab}$, discarding the $\eta_{ab}$ term by the antisymmetry of $R_{abcd}$ in the first pair, and reducing $\gamma_{ab}\gamma_{cd}R_{abcd}$ by the pair antisymmetries and the Bianchi identity. So the coefficient is $\tfrac18\times2=\tfrac14$, and it is what it has to be for the known result.
+
+**The coefficient is representation-independent; the curvature is not.** The factor $\tfrac18$ in front of the four-gamma contraction is forced by the algebra of the Clifford generators and by the $\tfrac14$ in the spin generators, and it is the same in any representation in which the generators obey the Clifford relations. What depends on the representation is which curvature appears: for the spin representation the four-gamma contraction reduces to the scalar curvature alone, while for a representation carrying extra indices a Ricci term survives alongside. Both statements together are the honest form of "the coefficient is the same number on both sides": **the $\tfrac14$ is universal and the curvature is the representation's**, and the framework's basis operator happens to sit in a representation whose curvature term is the scalar one, so the formulas coincide rather than merely resembling each other.
+
+**Two checks that the coefficient is not adjustable.** The flat limit forbids a rescaling of the whole right-hand side, since the flat square must be exactly $-\Box$. Dimensional analysis forbids a rescaling of the curvature term alone, since the curvature has dimension inverse length squared and the coefficient must be a pure number. So the only freedom would be a different number with the same dimensions, and the Clifford contraction fixes it.
+
+## Minimal Coupling, and the Pauli Term
+
+With minimal coupling to an electromagnetic potential of the companion articles, the square acquires one further term. Writing $D_\mu\to D_\mu+A_\mu$ and squaring,
+
+$$
+(\tilde F_\mu D_\mu)^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}+\sum_{\mu,\nu}F_{\mu\nu}S_{\mu\nu},
+$$
+
+where $F_{\mu\nu}$ is the field strength and $S_{\mu\nu}$ is the spin basis operator, a quarter of the commutator of two frame basis operators, written with world indices. The term is derived in form rather than in coefficient: the quarter is the same quarter, for the same reason, since the commutator of two covariant derivatives is the curvature and the spin generators carry the quarter. Its overall normalisation against the curved-Dirac literature is stated there and is not rederived here. The term is the curved-space relative of the Pauli term of the Gordon decomposition, and it is the only place in the curved equation where the electromagnetic field couples to the spin rather than to the charge.
+
+## The Dirac–Kähler Alternative, and Its Price
+
+A reader who wants the square to be exactly the Laplacian, with no curvature term, has a well-known option, and the corpus records it rather than dismissing it. The **Dirac–Kähler equation** is the first-order equation on the exterior algebra whose square is the Laplace–de Rham operator; its symbol is a Clifford multiplication, its field is a differential form rather than a spinor, and its square has no $\mathrm{Ric}/4$ term.
+
+The price is the one that matters for this framework. The Dirac–Kähler field decomposes into differential forms of definite degree, and on a curved background that decomposition does not coincide with the Lorentz-covariant decomposition of the field into its four sectors: the degrees mix under local Lorentz transformations because the Hodge star depends on the metric. What the biquaternion formulation buys by taking the Lichnerowicz square instead is that the field's four components transform as a spinor at each point, which is what makes $\tilde\Xi\mapsto\tilde U\tilde\Xi$ a representation of the local Lorentz group rather than a mixture. **The curvature term is the price of covariance**, and the corpus pays it deliberately.
+
+## What This Article Does Not Settle
+
+Six limits belong in the article, because the Dirac equation is the most inviting place in the programme to overclaim.
+
+**The frame and the connection are not determined.** Nothing in the algebra or in the equation fixes $\tilde E_{\Phi,\mu}$ or $\vec\Gamma_\mu$, selects the Levi–Civita lift over a torsionful one, or supplies an action for either. The Einstein equation is as absent here as in the frame route.
+
+**The equation is on a background.** It is the correct curved-space transcription of the matter equation on a geometry inserted by hand, and that is exactly what it is.
+
+**Whether the substitution form is what a variation produces is a separate question.** An external source shows that for a gravitationally coupled fermion in the vierbein formulation the substitution $\partial_\mu\to D_\mu$ and the Euler–Lagrange variation do not commute, and that the difference is a vector connection term. The parent article carries that analysis and its source; this article constructs the substitution form and does not adjudicate.
+
+**The source is outside the algebra.** The conserved current of the Dirac field carries a basis operator rather than an algebra product, and the closed sourced system, in which the current feeds a curved biquaternion Maxwell equation, is not written.
+
+**The global question is untouched.** Whether the field exists on the manifold at all is a topological condition, and no local operator can answer it.
+
+**The Born weight has no curved analogue**, which is the subject of the next section.
+
+## The Informational Sector on a Curved Background
+
+The material sector has a curved-space treatment, an operator, and a square. The other half of the framework does not, and the absence is structural rather than pending. This closing section states the reason once, so that a reader does not look for the missing article, and lists what would have to exist before one could be written.
+
+**What the sector is.** The informational sector $\mathbb{B}_{\Psi}$ carries the framework's states and observables, with the plain form
+
+$$
+\langle\tilde H_{\Psi,1},\tilde H_{\Psi,2}\rangle=\mathrm{Sc}(\tilde H_{\Psi,1}\tilde H_{\Psi,2}),
+$$
+
+read as the plain pairing, and the Born weight read from it. In flat spacetime this is the most successful part of the construction: the ladder structure, the Hamiltonian, and the uncertainty relations of the companion articles all live here.
+
+**What survives on a curved background, and what does not.** The elements of $\mathbb{B}_{\Psi}$ would become fields of operators, one copy of the algebra attached at each point. That much is formal and it goes through unchanged: the fibre is defined, the pointwise operator algebra is unchanged, and the two-sector decomposition $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is a pointwise decomposition that survives on any background.
+
+What does not go through is the **trace**. The trace in the pairing is the $2\times2$ matrix trace at a point. It carries no volume element and no integration. Every trace in a field theory is an integral over the manifold, with a measure that itself depends on the metric, and the framework's trace cannot play that role. So the pointwise expectation value survives and the global one has nowhere to live: even the Born rule has no constructed curved-space analogue here.
+
+**Why this is not a gap of effort.** The missing object is a measure, and the measure is exactly what the Gram matrix route does not supply. The metric is a pointwise pullback and a density is not. So the informational sector's curved treatment is blocked by the same absence that blocks every global statement in the series, and the obstruction is not going to be removed by more work on the algebra.
+
+**What would have to exist.** Four things, in order of dependence. A density built from the metric, which the framework has as a formula and not as an object of the algebra. An inner product on the space of sections, which needs that density and a completion. A choice of what a state is on a curved background — whether a pointwise operator, a section, or a functional — which the flat case answers and the curved case does not. And a coupling between the two sectors, which would have to be an equation of motion for fields belonging to both; no such equation exists in the flat case either, so a fortiori none exists here.
+
+**The one thing that is not blocked.** The pointwise algebra of observables at a point of a curved background is defined, and every statement that does not integrate goes through. That is worth saying because it is the difference between a sector with no global theory and a sector with no theory at all. The framework has the former.
+
+## Summary
+
+The curved Dirac operator is $\tilde F_\mu D_\mu$, the dual frame contracted with a one-sided derivative. The derivative is one-sided because the field transforms by left multiplication, and the frame's is two-sided because the frame transforms by conjugation; the difference is the representation and not a defect.
+
+The massless equation is $\tilde F_\mu D_\mu\tilde\Xi=0$; the massive equation is a chiral pair with the quaternionic conjugate operator on the second line. The flat limit reproduces the biquaternion gradient exactly, with the rigid material frame $ie_t,\vec e_x,\vec e_y,\vec e_z$ and not the algebra basis.
+
+The square of the basis operator is the Lichnerowicz formula, $(\tilde F_\mu D_\mu)^2=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}$ with the scalar curvature of the Gram metric. The identity is true of the basis operator, that is, of the left-regular representation, and false of the algebra element, which squares to a biquaternion-valued operator with a vector remainder. The coefficient $\tfrac14$ is the coefficient of the Clifford derivation, and it is forced twice over: the flat limit forbids rescaling the whole right-hand side, and the Clifford contraction of the curvature fixes the number.
+
+Minimal electromagnetic coupling adds a field-strength–spin term with the same quarter. The Dirac–Kähler alternative removes the curvature term at the price of losing the Lorentz-covariant decomposition of the field. What the article does not settle is the frame, the connection, the action, the source, the global existence of the field, and the measure — the last of which is why the informational sector has no curved-space treatment and cannot get one from this construction.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}$, $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | biquaternion algebra; material (anti-Hermitian) and informational (Hermitian) sectors |
+| $^{*}$, ${}^{\natural}$ | star (conjugate coefficients, negate vectors, conjugate-linear); quaternionic conjugation (keep scalar, negate vectors, complex-linear) |
+| $\langle\tilde Q\rangle_{\natural}$, $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}$ | the biquaternion norm; the bilinear form on $\mathbb{B}_{\Phi}$ |
+| $\tilde E_{\Phi,\mu}\in\mathbb{B}_{\Phi}$ | frame field; transforms $\tilde E\mapsto\tilde U\tilde E\tilde U^{*}$ |
+| $\tilde F_\mu=g_{\mu\nu}\tilde E_{\Phi,\nu}$ | dual frame; $\langle\tilde F_\mu,\tilde E_{\Phi,\nu}\rangle_{\natural}=\delta_{\mu\nu}$ |
+| $\tilde\Xi$, $\tilde\Xi_R$, $\tilde\Xi_L$ | the Dirac field and its two chiral halves; $\tilde\Xi\mapsto\tilde U\tilde\Xi$ |
+| $\vec\Gamma_\mu\in\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$ | connection, scalar-free; law $\tilde U\vec\Gamma_\mu\tilde U^{-1}-(\partial_\mu\tilde U)\tilde U^{-1}$ |
+| $D_\mu\tilde\Xi=\partial_\mu\tilde\Xi+\vec\Gamma_\mu\tilde\Xi$ | one-sided covariant derivative of the field |
+| $D_\mu\tilde Q=\partial_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}$ | two-sided covariant derivative of a vector |
+| $\tilde F_\mu D_\mu$ | the curved Dirac operator |
+| $k_m=\hbar/(mc)$ | mass length |
+| $\Box_{g,\Phi}=\sum_{\mu,\nu}G_{\mu\nu}\nabla_\mu\nabla_\nu$ | Laplace–Beltrami operator; $\vec\nabla_\Phi^{*}\vec\nabla_\Phi=-\Box_{g,\Phi}$ |
+| $\mathrm{Ric}$ | scalar curvature of the Gram metric |
+| $(\tilde F_\mu D_\mu)^2=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}$ | Lichnerowicz square, taken on the basis operator |
+| $iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\nu(a)}}$ | the four frame basis operators; $\nu(t)=x$, $\nu(\eta)=y$ |
+| $\varepsilon_a$ | plain weight of the basis operators, $\varepsilon=(1,-1,-1,-1)$ |
+| $S_{\mu\nu}$ | spin basis operator, one quarter of the commutator of two frame basis operators |
+
+## Further Reading
+
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route, the connection, and the external analysis of the substitution form against the variational one.
+- [The Two-Sided Derivative and the Star Eigenvalue](the-two-sided-derivative-and-the-star-eigenvalue.html), for the derivative of the vector and the reason the field's is different.
+- [The Gram Matrix as the Only Metric](the-gram-matrix-as-the-only-metric.html), for the metric whose scalar curvature appears in the square.
+- [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html), for the left action that makes the field's derivative one-sided.
+- [The Dirac Operator on a Manifold](../articles_maths/the-dirac-operator-on-a-manifold.html), for the Lichnerowicz formula, its sign conventions, and the vanishing theorem it implies.
+- [Spin Geometry](../articles_maths/spin-geometry.html), for the Clifford bundle, the spin connection, and the Clifford contraction that fixes the coefficient.
+- [The Symmetric and Antisymmetric Parts of an Algebra Product](../articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html), for the Dirac–Kähler comparison and its algebraic reading.
+- [Conceptual Conventions](../articles_internal/conceptual-conventions.html), for the pointwise character of every trace in the framework.
+- H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the Lichnerowicz formula and the Weitzenböck decomposition.
+- André Lichnerowicz, "Spineurs harmoniques," *Comptes Rendus de l'Académie des Sciences* **257** (1963), 7–9, for the formula and its coefficient.

@@ -10,7 +10,7 @@ $$
 
 The appearance of $\sin^2\theta_W$ in that bracket is therefore not a second convention. It is the residue of the rotation, and §*The Rotation, and Why the Angle Appears Squared* proves it in three lines.
 
-**The standing.** Standard theory, transcribed. The framework supplies two free couplings and no embedding, so neither the angle nor the electric-charge relation follows, and the corpus's own agenda classifies the row *no route yet*. This article does not soften that; it states what would settle it.
+**The standing.** Standard theory, transcribed. The framework supplies two free couplings and no embedding, so neither the angle nor the electric-charge relation follows, and the corpus's own ledger classifies the row *no route yet*. This article does not soften that; it states what would settle it.
 
 **Three results that the companion articles quote and do not derive.**
 
@@ -357,13 +357,13 @@ Twenty measurements against four parameters is five to one, and the ratio is not
 
 ## What the Framework Supplies
 
-**The corpus's own classification.** [Electroweak Theory under the Biquaternionic Framework — A Research Agenda](electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html) carries the row
+**The corpus's own classification.** [Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) carries the row
 
 | Quantity | Status | What would be needed |
 |---|---|---|
 | Weinberg angle, electric-charge relation $Q_{\mathrm{em}}=T_3+Y$ | **No route yet** | Fix both couplings and the embedding of $\mathrm{U}(1)$ in $\mathrm{U}(2)$; requires hypercharge |
 
-**Quoted as the agenda prints it**, capitals and all, because a cross-reference whose wording has been smoothed is a paraphrase wearing a citation. The article does not improve on the row. The statement is exact: the framework supplies two couplings, $\kappa$ for the non-abelian factor and $ϙ$ for the abelian one, both free, and no embedding that would relate them. ($\kappa$ here is the agenda's gauge coupling and has nothing to do with $\kappa_{\mathrm{OS}}$, which is a ratio of two angles; the corpus reuses the letter and the subscript is what separates them.)
+**Quoted as the article prints it**, capitals and all, because a cross-reference whose wording has been smoothed is a paraphrase wearing a citation. The article does not improve on the row. The statement is exact: the framework supplies two couplings, $\kappa$ for the non-abelian factor and $ϙ$ for the abelian one, both free, and no embedding that would relate them. ($\kappa$ here is the article's gauge coupling and has nothing to do with $\kappa_{\mathrm{OS}}$, which is a ratio of two angles; the corpus reuses the letter and the subscript is what separates them.)
 
 **Why the angle is not merely a missing number.** An angle is a ratio, and a ratio can be derived from a structure even when the individual numbers cannot. What the framework lacks is therefore not the values of $g$ and $g_{\mathrm Y}$ but a structure in which the two form a pair. The two couplings sit on different objects — one on the compact factor $\mathrm{SU}(2)\subset\mathbb{B}_\Phi$, one on the central phase — and nothing in the algebra relates the two objects' normalisations.
 
@@ -371,7 +371,7 @@ Twenty measurements against four parameters is five to one, and the ratio is not
 
 **The sharpest way to say it.** The mixing angle is the angle between two directions in the neutral space, measured in the metric that the kinetic terms define. The algebra supplies the directions and not the metric, and the free overall coefficient of each kinetic term is exactly the freedom that leaves the angle undetermined. A framework that fixed the relative normalisation of its two kinetic terms would have a prediction; this one does not fix either.
 
-**What would settle it.** Two things, and they are the agenda's two.
+**What would settle it.** Two things, and they are the article's two.
 
 - **A normalisation principle.** A reason why the central and compact kinetic terms carry equal coefficients. The standard model has such a principle only in the grand-unified setting, where the two factors sit in one simple group and the couplings meet at one scale; [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html) records that route — hypercharge as a generator of a simple group, its eigenvalues fixed by tracelessness, the couplings meeting at one scale — and states the negative half too: the framework's abelian factor is central and continuous, so it has neither the embedding nor the meeting.
 - **An embedding.** A construction in which $\mathrm{U}(1)_Y$ and the Cartan of $SU(2)_L$ are two directions of one algebra. The framework's $\mathrm{U}(2)$ is a candidate arena and its Cartan is two-dimensional, so the second is not obviously impossible; it is unexplored.
@@ -394,7 +394,7 @@ At the pole the widths are reproduced to one per cent or better in every channel
 
 The neutral current measures what the charged current cannot, because it is the only vertex in which both couplings of the product group appear: the charged current gives one number, $g$, while the neutral current gives two per channel, $g_L$ and $g_R$, whose ratio is the angle. The sector's twenty measurements against four parameters are five to one, and the five is the smaller half of the argument: any four of the twenty fix the four parameters, and the other sixteen are predictions with errors too small to absorb a change in the Lagrangian.
 
-The framework has no route to the angle, and the corpus's agenda says so. The obstruction is not a missing number but a missing pair: the two couplings sit on different objects, the compact factor and the central phase, and nothing relates their normalisations, so the angle — which is a ratio of norms on a two-dimensional neutral space whose directions the algebra does supply — is undetermined. The framework's abelian factor is moreover vector-like, so it cannot produce $g_L\neq g_R$ at all. Three things are needed and all three are absent: a chiral abelian factor, an embedding of the two neutral directions in one algebra, and a normalisation principle for the two kinetic terms.
+The framework has no route to the angle, and the companion article says so. The obstruction is not a missing number but a missing pair: the two couplings sit on different objects, the compact factor and the central phase, and nothing relates their normalisations, so the angle — which is a ratio of norms on a two-dimensional neutral space whose directions the algebra does supply — is undetermined. The framework's abelian factor is moreover vector-like, so it cannot produce $g_L\neq g_R$ at all. Three things are needed and all three are absent: a chiral abelian factor, an embedding of the two neutral directions in one algebra, and a normalisation principle for the two kinetic terms.
 
 ## Summary of Notation
 
@@ -425,7 +425,7 @@ The framework has no route to the angle, and the corpus's agenda says so. The ob
 - [The W and Z Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The same currents written with the algebra's scalar part, and the $Z$-pole section this article expands.
 - [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Q=T_3+Y$ holds, which this article uses to eliminate $Y$.
 - [The Standard Model Lagrangian Assembled: Four Sectors in One Expression](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html). The neutral current in the assembled sum.
-- [Electroweak Theory under the Biquaternionic Framework — A Research Agenda](electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html). The *no route yet* row and the two settling objects.
+- [Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The *no route yet* row and the two settling objects.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The $\mathrm{U}(2)$ whose Cartan is the two-dimensional neutral space.
 - [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The vector-like character of the framework's abelian factor, which blocks the chiral neutral current.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The couplings $g$ and $g_{\mathrm Y}$ in the count of nineteen.

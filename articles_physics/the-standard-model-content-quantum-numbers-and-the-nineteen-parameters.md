@@ -6,7 +6,7 @@
 
 **The standing.** Every object below is standard theory, recorded in the corpus's symbols and displayed in the corpus's tables. Nothing here is a framework result. No object in this section follows from the biquaternion algebra, and the article says so again in the last section, where the count is read against the algebra.
 
-**Why a table is needed.** The three agendas — [The Standard Model under the Biquaternion Framework](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html), [Electroweak Theory under the Biquaternion Framework](electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html) and [Quantum Chromodynamics under the Biquaternion Framework](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) — sort the model into objects the framework reaches and objects it does not. Each sorts item by item, and each says what is absent. None of the three prints the content in one place, because none of them is an exposition. This article is that place. It is the table the other articles of the series quote when they name a field, a charge or a parameter.
+**Why a table is needed.** The three articles — [The Standard Model under the Biquaternion Framework](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html), [Electroweak Theory under the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and [Quantum Chromodynamics under the Biquaternion Framework](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html) — sort the model into objects the framework reaches and objects it does not. Each sorts item by item, and each says what is absent. None of the three prints the content in one place, because none of them is an exposition. This article is that place. It is the table the other articles of the series quote when they name a field, a charge or a parameter.
 
 **The strongest objection, named at the start.** A table of imported content is worth nothing if it is mistaken for a result. The objection is exact, and the answer is the standing: the table is a checklist. Its use is to say what a derivation would have to reproduce. A reader who wants the boundary in one number should read the parameter count, which is the subject of the last two sections.
 
@@ -229,7 +229,7 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 ## What the Algebra Fixes
 
-**Nothing in the list.** The framework's gauge principle supplies a central abelian factor with a charge parameter $ϙ$, a connection, a covariant derivative and a curvature; [The Standard Model under the Biquaternion Framework](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html) records that the parameter is free, that no relation binds it to a second coupling, and that no hypercharge assignment or scalar sector follows. The count above is therefore inherited whole.
+**Nothing in the list.** The framework's gauge principle supplies a central abelian factor with a charge parameter $ϙ$, a connection, a covariant derivative and a curvature; [The Standard Model under the Biquaternion Framework](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html) records that the parameter is free, that no relation binds it to a second coupling, and that no hypercharge assignment or scalar sector follows. The count above is therefore inherited whole.
 
 **The framework's own parameters.** The algebra's parameters are not the model's. The gauge principle carries $ϙ$, and the mass formula carries the mass $m$ and the constant $k_m$ of the massive equation; none of the three is one of the nineteen, and none of them is fixed by the algebra either. The framework is in the same position as the model it reformulates, with a different list.
 
@@ -271,7 +271,7 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 
 ## Further Reading
 
-- [The Standard Model under the Biquaternion Framework — A Research Agenda](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html). The boundary in item-by-item form, and the three refusals this article respects.
+- [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The boundary in item-by-item form, and the three refusals this article respects.
 - [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The derivation of the four conditions.
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the three is accommodated and not derived.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The seven or eight parameters that a neutrino mass costs.

@@ -210,7 +210,7 @@ It does **not**:
 
 ## Open Questions
 
-The questions raised by this article are open, and they constitute a research agenda.
+The questions raised by this article are open, and they constitute an article.
 
 **1. Empirical contact.** What quantitative prediction distinguishes the biquaternion framework from standard quantum physics? This is the central question, and the one on which the eventual evaluation of the framework depends. Without it, the framework remains a reformulation.
 

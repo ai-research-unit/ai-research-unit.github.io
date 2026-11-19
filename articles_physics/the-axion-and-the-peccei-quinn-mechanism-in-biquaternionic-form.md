@@ -33,7 +33,7 @@ is minimised at $a/f_a = -\bar\theta$ modulo $2\pi$, which is the dynamical rela
 - Companion article *The Pion and the Chiral Lagrangian in Biquaternionic Form*, for the chiral Lagrangian that fixes the axion mass.
 - Companion article *The Nonlinear Sigma Model in Biquaternionic Form*, for the abelian nonlinear realisation with the shift symmetry.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the anomaly context and the axial rotation.
-- Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the programme the axion belongs to.
+- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, for the programme the axion belongs to.
 
 ## The Strong CP Problem and the Theta Parameter
 

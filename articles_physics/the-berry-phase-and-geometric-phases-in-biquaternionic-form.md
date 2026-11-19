@@ -142,7 +142,7 @@ The first term is the conjugate of the second (complex conjugation in $\mathbb{B
 $$
 \begin{aligned}
 \mathrm{Sc}\!\left(\tilde{Ξ}_{2}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}_{2}\right)
-&= \mathrm{Sc}\!\left(\exp(-i\theta_{\mathrm{gau}})\tilde{Ξ}^{\dagger}\left(i\,\partial/\partial R_\mu\theta_{\mathrm{gau}}\,\exp(i\theta_{\mathrm{gau}})\tilde{Ξ} + \exp(i\theta_{\mathrm{gau}})\partial/\partial R_\mu\tilde{Ξ}\right)\right) \
+&= \mathrm{Sc}\!\left(\exp(-i\theta_{\mathrm{gau}})\tilde{Ξ}^{\dagger}\left(i\,\partial/\partial R_\mu\theta_{\mathrm{gau}}\,\exp(i\theta_{\mathrm{gau}})\tilde{Ξ} + \exp(i\theta_{\mathrm{gau}})\partial/\partial R_\mu\tilde{Ξ}\right)\right) \\
 &= i\,\partial/\partial R_\mu\alpha\;\mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\tilde{Ξ}\right) + \mathrm{Sc}\!\left(\tilde{Ξ}^{\dagger}\partial/\partial R_\mu\tilde{Ξ}\right).
 \end{aligned}
 $$

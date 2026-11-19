@@ -50,7 +50,7 @@ because the vector part of $a$ contributes only to the imaginary part of $\langl
 
 The paper's plan is stated in its Section I: Dirac fields are taken as bi-quaternionic fields, spacetime geometry is taken as emergent from them, and both are to follow from a single variational principle. Its announced results are a composite tetrad and contorsion built from bilinears in $\tilde{Ξ}$, a torsion that is the "spin-squared of quaternionic commutators", a constrained action with Lagrange multipliers, an intrinsic time from the phase of $\tilde{Ξ}$, torsion-wave solutions carrying an entropy current, and three experimental predictions.
 
-The corpus is not the intended audience, and the source does not engage with it. The overlap is structural: the source's "$q_\mu$" are the corpus's algebra units, its bi-quaternionic field is the corpus's biquaternion, and its programme is the corpus's agenda question — whether the algebra or the matter field can generate geometry — answered in the affirmative. Whether the answer survives recomputation is what this article establishes, and in the places that matter most it does not.
+The corpus is not the intended audience, and the source does not engage with it. The overlap is structural: the source's "$q_\mu$" are the corpus's algebra units, its bi-quaternionic field is the corpus's biquaternion, and its programme is the corpus's open question — whether the algebra or the matter field can generate geometry — answered in the affirmative. Whether the answer survives recomputation is what this article establishes, and in the places that matter most it does not.
 
 ## The Source's Algebra, and Four Displays Under Test
 

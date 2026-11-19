@@ -106,9 +106,9 @@ $$
 so
 $$
 J = \begin{pmatrix}
-1 & 0 & 0 & 1-p\
-0 & 0 & 0 & 0\
-0 & 0 & 0 & 0\
+1 & 0 & 0 & 1-p\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
 1-p & 0 & 0 & 1
 \end{pmatrix}.
 $$
@@ -152,9 +152,9 @@ To test complete positivity, compute the Choi matrix. Transposition swaps the of
 $$
 J_T = E_{00}\otimes E_{00} + E_{11}\otimes E_{11} + E_{01}\otimes E_{10} + E_{10}\otimes E_{01}
 = \begin{pmatrix}
-1 & 0 & 0 & 0\
-0 & 0 & 1 & 0\
-0 & 1 & 0 & 0\
+1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
 0 & 0 & 0 & 1
 \end{pmatrix}.
 $$

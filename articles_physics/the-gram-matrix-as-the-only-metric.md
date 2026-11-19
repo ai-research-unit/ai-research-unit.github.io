@@ -1,0 +1,171 @@
+# __The Gram Matrix as the Only Metric__
+
+## Introduction
+
+Every gravitational article in this series rests on one equation, and the equation is short:
+
+$$
+g_{\mu\nu}(x) = \langle \tilde{E}_{\Phi,\mu}(x), \tilde{E}_{\Phi,\nu}(x)\rangle_{\natural} .
+$$
+
+Four fields with values in the material sector, their Gram matrix under the algebra's own bilinear form. That is the whole of the framework's kinematical contact with a curved metric. This article states it once, cleanly, and draws out what it does and does not imply, so that the articles that use it can cite one page instead of re-deriving it.
+
+The claim of the article is that the equation is a statement about **quadratic spaces** and nothing more. The frame field is a linear map from the coordinate four-space into $\mathbb{B}_{\Phi}$, the metric is the form pulled back along it, and everything the framework can say about a curved metric follows from the pullback and from Sylvester's law of inertia. Three consequences organise the discussion, and two of them are usually stated loosely.
+
+**First, the equation is a congruence, not a construction.** In components it reads $g = E^{\mathsf T}\Phi E$, where $\Phi$ is the matrix of the algebra's form and $E$ is the matrix of frame components. A congruence is a change of basis, and a change of basis neither adds nor removes anything.
+
+**Second, Sylvester's law preserves an inertia, and does not create one.** The Lorentzian signature of every metric the framework can write is inherited from the form on $\mathbb{B}_{\Phi}$, which has inertia $(3,1)$ before any frame is chosen. The frame cannot change it, and it cannot produce a metric of any other signature.
+
+**Third, the converse holds: every Lorentzian metric is locally of this form.** So the framework excludes no spacetime. That is not a strength of the construction but the measure of its emptiness, and the article states it in those words.
+
+The conventions are inherited from the companion articles and none is redefined. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$ satisfying $\vec e_{\eta}^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$, and scalar imaginary $i$ commuting with the quaternion units. The anti-Hermitian and Hermitian subspaces are $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$, the real-quaternion subspace is $\mathbb{B}_{H}$, and the biquaternion norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, where ${}^{\natural}$ keeps the scalar and negates the three vector coefficients. The material sector is $\mathbb{B}_{\Phi}=\{i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z : r'_t,r_\eta\in\mathbb{R}\}$, with four-vector coordinates $(r'_t,r_x,r_y,r_z)$, and the rotor group is $\{\tilde U : \tilde U\tilde U^{\natural}=e_t\}\cong SL(2,\mathbb{C})$, acting on $\mathbb{B}_{\Phi}$ by rotor conjugation $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, with covering homomorphism $\mathrm{Ad}$ onto $SO^{+}(1,3)$ and kernel $\{\pm e_t\}$.
+
+Two index conventions are used throughout. Every index is low, in this article as in the rest of the series: the metric is the unit metric on the four $Q_\mu$, a metric that is the identity raises nothing, and a contraction is written as an explicit sum. And the one minus of the interval is never inserted by hand. It is the square of the $i$ in $Q_t=i q'_t$, made once, on the time slot.
+
+## The Equation, and What It Asserts
+
+A local frame is a way of carrying coordinate differentials into the algebra:
+
+$$
+d\tilde R_{\Phi} = \sum_{\mu}\tilde{E}_{\Phi,\mu}(x)\,dx_{\mu},
+\qquad
+\tilde{E}_{\Phi,\mu}(x)\in\mathbb{B}_{\Phi} .
+$$
+
+The interval of the framework is the norm of a displacement, $ds^{2}=\langle d\tilde R_{\Phi}\rangle_{\natural}$, and the norm's polar form is the bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$. Substituting the frame and using bilinearity,
+
+$$
+\boxed{\;g_{\mu\nu}(x)=\langle\tilde{E}_{\Phi,\mu}(x),\tilde{E}_{\Phi,\nu}(x)\rangle_{\natural}\;},
+$$
+
+where $g_{\mu\nu}$ is the coefficient matrix of the quadratic form $ds^{2}$ in the differentials $dx_{\mu}$. Three properties are then automatic rather than assumed.
+
+**The metric is symmetric**, because the form is symmetric: $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_2,\tilde Q_1\rangle_{\natural}$, since $\mathrm{Sc}(AB^{\natural})=\mathrm{Sc}(BA^{\natural})$. On the real material slice the two conjugate products differ in their vector parts and agree in their scalar part, which is all the metric reads: $\tfrac12(\tilde Q_1\tilde Q_2^{\natural}+\tilde Q_2\tilde Q_1^{\natural})=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$.
+
+**The metric is real**, because the form is real on $\mathbb{B}_{\Phi}$, which is the point of the sector. An element of $\mathbb{B}_{\Phi}$ and its conjugate differ by a sign, so the scalar part of a product of two of them is real. This was checked on a hundred random material pairs, with no residual; it is the reason the metric is read from $\mathbb{B}_{\Phi}$ and not from $\mathbb{B}_{\Psi}$.
+
+**The metric is a pullback**, and this is the sentence that carries the article. The four frame fields are a linear map $E(x):\mathbb{R}^{4}\to\mathbb{B}_{\Phi}$, and $g$ is the form of $\mathbb{B}_{\Phi}$ pulled back along it. Nothing else is used: not the quaternionic multiplication beyond the scalar part of one product, not the two-sector decomposition, not the complex structure, not the Peirce decomposition, not the rotor action. The equation calls on the biquaternion norm and on nothing else.
+
+## Sixteen Functions, Ten Components
+
+Four fields, each with four real coefficients, so **sixteen functions**. The metric has ten components at a point. The two counts are reconciled by a local symmetry, and the reconciliation is the standard one of the orthonormal-frame formulation of general relativity.
+
+If $\tilde U(x)$ is a unit-norm biquaternion depending on position, then
+
+$$
+\tilde{E}_{\Phi,\mu}\longmapsto \tilde U\tilde E_{\Phi,\mu}\tilde U^{*}
+$$
+
+leaves $g_{\mu\nu}$ unchanged point by point, because rotor conjugation preserves the bilinear form. The group so supplied is a copy of $SL(2,\mathbb{C})$ at each point, its action on $\mathbb{B}_{\Phi}$ is the vector representation through $\mathrm{Ad}$, and its dimension is six. The stabiliser of a frame — of four *independent* legs, not of one vector — is $\{\pm e_t\}$, which is discrete, so the orbit through a generic frame is six-dimensional and
+
+$$
+16-6=10 ,
+$$
+
+which is the number of components of a symmetric metric in four dimensions. The map from the sixteen frame functions to the ten metric components is therefore a submersion, and the six-dimensional fibres are the local Lorentz freedom of the tetrad.
+
+The count is worth a second sentence, because it is sometimes presented as a derivation. It is not one. The count says the frame carries exactly the information a metric carries, plus a redundancy that the metric cannot see. It does not say the frame is determined: the fibres are six-dimensional, so a metric determines a six-parameter family of frames and no member of it.
+
+## Sylvester Preserves an Inertia, It Does Not Create One
+
+Write the frame components in the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ as the columns of a $4\times4$ real matrix $E$, and the form's matrix in that basis as $\Phi=\mathrm{diag}(-1,+1,+1,+1)$. Then the equation is the congruence
+
+$$
+g = E^{\mathsf T}\,\Phi\,E .
+$$
+
+Two exact statements follow, and they are one line each.
+
+**Nondegeneracy is the linear independence of the legs.** $\det g=(\det E)^{2}\det\Phi$, so $g$ is nondegenerate exactly when $E$ is invertible, that is, exactly when the four frame fields are linearly independent at the point. A frame that degenerates at a point produces a degenerate metric there and no metric at all beyond it. This is the only failure mode the equation has, and it is a statement about the frame and not about the algebra.
+
+**The inertia is the algebra's, and the frame transports it.** By Sylvester's law of inertia, two matrices related by a congruence with an invertible $E$ have the same inertia. Since $\Phi$ has inertia $(3,1)$, every nondegenerate Gram matrix of this form has inertia $(3,1)$, for every frame. The metric is therefore Lorentzian automatically, and the reason is not that the frame is restricted in some special way but that a congruence cannot move an inertia.
+
+The precision that the loose summaries lose is the direction of this implication. **Sylvester's law does not make the metric Lorentzian.** It says that the Lorentzian character, once present in the form, is preserved by every change of basis. The character is in $\Phi$ before any frame exists. Saying that Sylvester creates the signature is like saying that a change of coordinates creates the dimension.
+
+Two corollaries are worth naming, because they are usually left implicit.
+
+**The framework cannot produce a metric of another signature by this route.** A Riemannian $(4,0)$ metric or a split $(2,2)$ metric is not available, and not because of a defect in the frames. $\mathbb{B}_{\Phi}$'s form has inertia $(3,1)$; a congruence preserves it; so $(3,1)$ is all that comes out. A Euclidean metric would need a different sector, and the corpus has one: $\mathbb{B}_{H}$ carries the quaternionic norm with all four coefficients $+1$, which is $(4,0)$. **The sector is what fixes the signature**, and this is the precise sense in which the choice of sector is a physical choice and not a notation.
+
+**The null cone of the metric is the zero-divisor cone.** A vector is null for the metric exactly when its biquaternion norm vanishes, and the elements of $\mathbb{B}_{\Phi}$ with vanishing norm are exactly the zero divisors of the algebra together with the origin. So the light cone is not imported: it is the singular set the algebra already has, and the frame carries it to the manifold point by point.
+
+## One Minus, One Substitution
+
+The minus in the interval is worth isolating, because it is the one place where the corpus's notation does real work and where a reader can lose an afternoon.
+
+On the four coefficients $Q_\mu$ the form is the **unit metric** $\delta_{\mu\nu}=(1,1,1,1)$: all four coefficients are $+1$, and no direction is singled out by a sign. The material reading writes the time coefficient as $Q_t=i q'_t$, and then
+
+$$
+\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=-{q'_{t}}^{2}+q_x^{2}+q_y^{2}+q_z^{2},
+$$
+
+because $(iq'_t)^{2}=-{q'_{t}}^{2}$. The interval's one minus is the square of the $i$, made once, on the time slot. There is no second metric and no sign convention to choose.
+
+In the frame language the same statement appears as the rigid frame
+
+$$
+\tilde E_{\Phi,0}=i e_t,\qquad \tilde E_{\Phi,\eta}=\vec e_\eta ,
+$$
+
+whose Gram matrix is $\mathrm{diag}(-1,+1,+1,+1)$ in the coordinates $(r'_t,r_x,r_y,r_z)$ and $\delta_{\mu\nu}$ in the coordinates $Q_\mu$. Both displays describe one object read in two coordinate systems, and the transition between them is the substitution $Q_t=i q'_t$ applied to the time slot alone.
+
+The corollary is a warning that the companion articles repeat. The rigid frame is **not** the algebra basis $e_\mu=(e_t,\vec e_x,\vec e_y,\vec e_z)$, because $e_t$ is not in $\mathbb{B}_{\Phi}$. A term-by-term replacement of $\tilde E_{\Phi,\mu}$ by $e_\mu$ is invalid, and it is the commonest error in a first reading of the construction.
+
+## The Converse: Every Lorentzian Metric Is Locally of This Form
+
+The equation would be idle if only special metrics satisfied it. The converse removes that worry at once, and it is the reason the construction is a kinematics rather than a restriction.
+
+Let $g_{\mu\nu}$ be any Lorentzian metric on a four-dimensional manifold. Choose a local $g$-orthonormal frame $e_{a\mu}$, with $a$ running over the four frame labels, and let $\tilde E_{\Phi,a}$ be the rigid frame above, indexed the same way. The linear map that sends $e_{a}$ to $\tilde E_{\Phi,a}$ is an isometry of quadratic spaces, because both forms have inertia $(3,1)$ and two quadratic spaces of the same dimension and inertia are isometric. Define
+
+$$
+\tilde E_{\Phi,\mu}=\sum_{a}e_{a\mu}\,\tilde E_{\Phi,a} .
+$$
+
+Then $\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}=\sum_{a,b}e_{a\mu}e_{b\nu}\langle\tilde E_{\Phi,a},\tilde E_{\Phi,b}\rangle_{\natural}=\sum_{a,b}e_{a\mu}e_{b\nu}\eta_{ab}=g_{\mu\nu}$, which is the inverse of the orthonormality relation $\sum_{\mu,\nu}g_{\mu\nu}e_{a\mu}e_{b\nu}=\eta_{ab}$. So every Lorentzian metric is locally a Gram matrix of four material fields, and no integrability condition intervenes: the construction is pointwise.
+
+**The honest reading of the converse is that it costs the construction its content.** Any four-dimensional real vector space with a form of inertia $(3,1)$ would satisfy the same theorem. The biquaternion algebra contributes one form, and that form is indistinguishable, as a quadratic space, from $\mathbb{R}^{1,3}$. Nothing in the equation uses the multiplication, the sector decomposition, or the complex structure, so nothing in it tests anything distinctive about $\mathbb{B}$. This is what the corpus means by its one-line ledger: **the arena is derived and the dynamics is imported**. The Gram matrix is the arena part, and it is derived at the level of the form, not at the level of the algebra's structure.
+
+## Three Things the Equation Cannot Do
+
+The equation is exact, and it is narrow. Three limits belong in the same article, because each is a place where a reader is tempted to read more.
+
+**It is not a field equation.** Nothing determines $\tilde E_{\Phi,\mu}$. There is no action, no variation, no condition from the algebra that the frame must satisfy, and therefore no Einstein equation. Every Lorentzian metric satisfies the equation, including every vacuum spacetime and every non-vacuum one, so the equation selects nothing. The companion article records the consequence: the framework contains the kinematical fibre of tetrad gravity and none of its dynamics.
+
+**It cannot supply a measure.** The determinant $\det g$ is a number at a point, and a number at a point is not an integral. Every trace in a field theory is an integral over the manifold with a density that depends on the metric, and the framework's trace is the $2\times2$ matrix trace at a point. So the equation gives a metric and no volume element, and the consequence runs through the whole series: the Dirac operator can be written on a background but the Born weight has no global analogue, and the informational sector has no curved-space treatment at all.
+
+**It does not make the complex structure local.** The frame is a real-linear map at each point, and the imaginary direction of $\mathbb{B}$ remains the coefficient of $e_t$ in a fixed basis. The framework's own locality proposal — the local scale factor $c=1/\sqrt{\epsilon\mu}$ on the imaginary time axis — is a different device, and it is not contained in this one. The frame route gives the kinematics of general relativity and leaves the framework's own locality proposal behind; the local-scale route keeps that proposal and cannot reach a non-flat Ricci-flat vacuum. That tension is a finding of the series, not a problem this article resolves.
+
+## Summary
+
+A curved metric enters the framework through one equation, $g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$, and everything the framework says about that metric follows from it plus Sylvester's law of inertia.
+
+In components the equation is a congruence, $g=E^{\mathsf T}\Phi E$, with $\Phi=\mathrm{diag}(-1,+1,+1,+1)$ the algebra's form. A congruence preserves an inertia, so the metric is nondegenerate exactly when the four legs are independent, and its inertia is $(3,1)$ for every such frame. The Lorentzian signature is therefore the algebra's, carried by the frame and not created by it; and no other signature is reachable along this route, because the sector fixes the form.
+
+The count reconciles: sixteen frame functions, six local rotor parameters, ten metric components. The converse holds locally for every Lorentzian metric, which is what makes the construction a kinematics: it admits every spacetime and selects none. The equation determines no frame, supplies no measure, and does not make the complex structure local.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$ |
+| $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | anti-Hermitian (material) and Hermitian (informational) subspaces |
+| $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | biquaternion norm; ${}^{\natural}$ keeps the scalar and negates the vectors |
+| $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ | the bilinear form on $\mathbb{B}_{\Phi}$, the interval; symmetric and real there |
+| $\delta_{\mu\nu}=(1,1,1,1)$ | the unit metric on the four $Q_\mu$; the interval's minus is the $i$ in $Q_t=i q'_t$ |
+| $\tilde{E}_{\Phi,\mu}(x)\in\mathbb{B}_{\Phi}$ | frame field (tetrad); $d\tilde R_{\Phi}=\sum_\mu\tilde E_{\Phi,\mu}dx_\mu$ |
+| $g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$ | the metric, the Gram matrix of the frame |
+| $E$ | $4\times4$ matrix of frame components in the basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$; $g=E^{\mathsf T}\Phi E$ |
+| $\Phi=\mathrm{diag}(-1,+1,+1,+1)$ | matrix of the form on $\mathbb{B}_{\Phi}$ in that basis; its inertia is the metric's |
+| $\tilde U\in SL(2,\mathbb{C})$ | unit-norm biquaternion, the local Lorentz parameter |
+| $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ | rotor conjugation; leaves $g_{\mu\nu}$ unchanged |
+| $16-6=10$ | frame functions, rotor parameters, metric components |
+
+## Further Reading
+
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the three routes to a curved metric and the boundary of the programme.
+- [The Two-Sided Derivative and the Star Eigenvalue](the-two-sided-derivative-and-the-star-eigenvalue.html), for the connection that the frame still needs before any derivative can be taken.
+- [The Curved Dirac Operator and Its Square](the-curved-dirac-operator-and-its-square.html), for the one place where the missing measure bites.
+- [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the material sector, its form, and the identification of its null cone with the zero divisors.
+- [The Topology of the Zero-Divisor Cone](../articles_maths/the-topology-of-the-zero-divisor-cone.html), for the singular set that the metric's null cone reproduces point by point.
+- [Conceptual Conventions](../articles_internal/conceptual-conventions.html), for the rule that the sector fixes the signs and for the status of a frame as an unpreferred concept.
+- Robert M. Wald, *General Relativity* (Chicago, 1984), for Sylvester's law of inertia, orthonormal frames, and the tetrad formulation.
+- Charles W. Misner, Kip S. Thorne, and John A. Wheeler, *Gravitation* (Freeman, 1973), for the vierbein as the object that carries a metric between coordinate and orthonormal descriptions.

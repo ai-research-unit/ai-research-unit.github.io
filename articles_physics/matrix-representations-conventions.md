@@ -131,9 +131,9 @@ which is the definition of *Element and Operator Representations: The Three Acti
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\
-Q_x&Q_t&-Q_z&Q_y\
-Q_y&Q_z&Q_t&-Q_x\
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
 Q_z&-Q_y&Q_x&Q_t
 \end{pmatrix}.
 $$
@@ -180,9 +180,9 @@ the same construction with the order of the two factors exchanged.
 $$
 R_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\
-Q_x&Q_t&Q_z&-Q_y\
-Q_y&-Q_z&Q_t&Q_x\
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&Q_z&-Q_y\\
+Q_y&-Q_z&Q_t&Q_x\\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$
@@ -988,7 +988,7 @@ with $\sigma_1,\sigma_2,\sigma_3$ the Pauli matrices of §*The Two Tensor Factor
 $$
 \mathsf{M}_2(\tilde Q)=
 \begin{pmatrix}
-Q_t-iQ_z&-iQ_x-Q_y\
+Q_t-iQ_z&-iQ_x-Q_y\\
 -iQ_x+Q_y&Q_t+iQ_z
 \end{pmatrix}
 =\begin{pmatrix}a&b\ c&d\end{pmatrix},
@@ -1047,17 +1047,17 @@ The algebra is displayed in three ways, in the order in which the displays are b
 $$
 L_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\
-Q_x&Q_t&-Q_z&Q_y\
-Q_y&Q_z&Q_t&-Q_x\
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&-Q_z&Q_y\\
+Q_y&Q_z&Q_t&-Q_x\\
 Q_z&-Q_y&Q_x&Q_t
 \end{pmatrix},
 \qquad
 R_{\mathrm{axf}}(\tilde Q)=
 \begin{pmatrix}
-Q_t&-Q_x&-Q_y&-Q_z\
-Q_x&Q_t&Q_z&-Q_y\
-Q_y&-Q_z&Q_t&Q_x\
+Q_t&-Q_x&-Q_y&-Q_z\\
+Q_x&Q_t&Q_z&-Q_y\\
+Q_y&-Q_z&Q_t&Q_x\\
 Q_z&Q_y&-Q_x&Q_t
 \end{pmatrix}.
 $$

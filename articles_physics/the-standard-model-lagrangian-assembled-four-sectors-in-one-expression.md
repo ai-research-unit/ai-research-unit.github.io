@@ -344,6 +344,6 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 - [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html). The normalisation of the fifth line and its status as a total derivative.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The one sector with no corpus counterpart.
 - [The Gluon: An Octet Outside the Biquaternion Algebra](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The colour sector at the level of the field.
-- [The Standard Model under the Biquaternion Framework — A Research Agenda](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html). Which terms the framework reaches and which it imports.
+- [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). Which terms the framework reaches and which it imports.
 
 The three companions this article names but does not carry — the QCD Lagrangian, gauge fixing and the electroweak precision observables — are written, as articles 9, 7 and 8 of the series, and each is linked above at the point where it is invoked.

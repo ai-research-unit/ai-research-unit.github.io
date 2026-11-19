@@ -1,24 +1,24 @@
-# __Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda__
+# __Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall__
 
 ## Introduction
 
-**Quantum chromodynamics** (QCD) is the non-abelian gauge theory of the colour interaction: a gauge theory with group $SU(3)$, quarks in the fundamental three-dimensional representation, gluons in the adjoint, a coupling that becomes weak at short distances, and a spectrum from which the coloured states are absent — confinement. This article is a research agenda for QCD inside the biquaternion framework. Its subject is not a result; it is the boundary between what the framework has built and what QCD requires.
+**Quantum chromodynamics** (QCD) is the non-abelian gauge theory of the colour interaction: a gauge theory with group $SU(3)$, quarks in the fundamental three-dimensional representation, gluons in the adjoint, a coupling that becomes weak at short distances, and a spectrum from which the coloured states are absent — confinement. This article's finding is that the framework reaches the general machinery of a non-abelian gauge theory and stops before colour: no $SU(3)$, no triplet, and no confinement mechanism is available on the present construction.
 
-The starting position is stated at the outset, because the whole agenda depends on it and because it is easy to overstate.
+The starting position is stated at the outset, because the finding depends on it and because it is easy to overstate.
 
 - **The framework has a non-abelian gauge construction.** It has a connection, a curvature with the commutator term, the adjoint transformation law, the Bianchi identity, and a gauge-invariant Yang–Mills density, developed inside the algebra for a gauge algebra that is present in the material sector. This is established and is recalled in the next section.
 - **The framework records a chiral-fermion issue.** The field $\tilde{Ξ}$ splits into the two values $L$ and $R$, and its mass bilinear is odd under their exchange; the gauge group drawn from the algebra's centre is vector-like and cannot be chiral; and the interpretation of the separate conjugate-pairing (Majorana-type) term built on the algebra's real structure is open. This is established, and it is inherited here unchanged.
 - **The framework has not constructed a colour theory.** Nothing in the series derives $SU(3)$, and nothing derives any three-valued internal structure that could play the role of colour. The word "colour" occurs in the corpus only where standard QCD is being transcribed — in the renormalization-group article, which imports the $SU(3)$ one-loop coefficients, and in the helicity-formalism article, which states plainly that the framework "does not contain a colored gauge theory". No article derives a colour group, a quark colour triplet, a gluon octet, a confinement mechanism, or a colour coupling.
 
-The discipline this forces on the article is the one the genre requires: **an agenda that quietly assumes a colour group has fabricated its premise.** The colour group is therefore carried as an **open item throughout**, never as a working assumption. Wherever a standard QCD statement is written down — $N_c=3$, $b_0 = 11 - \tfrac{2}{3}N_f$, the area law — it is flagged as standard input, not as a framework result.
+The discipline this forces on the article is the one the genre requires: **an article that quietly assumes a colour group has fabricated its premise.** The colour group is therefore carried as an **open item throughout**, never as a working assumption. Wherever a standard QCD statement is written down — $N_c=3$, $b_0 = 11 - \tfrac{2}{3}N_f$, the area law — it is flagged as standard input, not as a framework result.
 
-**The three-way classification.** The article sorts every item into one of three categories, and the distinction is the point of the agenda.
+**The three-way classification.** The article sorts every item into one of three categories, and the distinction is the point of the article.
 
 1. **Established.**
 2. **Obstacle with a known route.** The object does not exist, but the route to it is identifiable, usually because standard field theory supplies the computation and the framework must reproduce it on its own carrier.
 3. **Obstacle with no route yet.** No mechanism has been proposed, and naming an object is not the same as having a route to it. Confinement and the colour group are in this class.
 
-The four obstacles the agenda treats are the **colour group** (§"The Colour Group"), **confinement** (§"Confinement"), the **chiral-fermion issue** as it bears on the quark couplings (§"The Chiral-Fermion Issue"), and the **running coupling and asymptotic freedom** (§"The Running Coupling"). They are not independent: the last needs the first and the third, and confinement needs apparatus all of them need. A closing ledger collects them, and a short synthesis names the two upstream items.
+The four obstacles the article treats are the **colour group** (§"The Colour Group"), **confinement** (§"Confinement"), the **chiral-fermion issue** as it bears on the quark couplings (§"The Chiral-Fermion Issue"), and the **running coupling and asymptotic freedom** (§"The Running Coupling"). They are not independent: the last needs the first and the third, and confinement needs apparatus all of them need. A closing ledger collects them, and a short synthesis names the two upstream items.
 
 ## What the Framework Already Reaches
 
@@ -51,7 +51,7 @@ $$
 
 is **not** gauge invariant but transforms in the adjoint representation, $F_{2,\mu\nu} = \tilde U F_{\mu\nu} \tilde U^{-1}$; it satisfies the Bianchi identity $D_\lambda F_{\mu\nu} + D_\mu F_{\nu\lambda} + D_\nu F_{\lambda\mu} = 0$; and $-\tfrac12\mathrm{Tr}\bigl(\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{\mu\nu}F_{\mu\nu}\bigr)$ is a gauge-invariant density, with the trace taken on the $\mathrm{SU}(2)$ factor.
 
-What this construction is, for the purposes of this agenda, is the **general machinery of a non-abelian gauge theory**: everything that depends only on having a compact simple factor and a non-commuting connection is present. What it is not is a *colour* theory, because the factor it uses is $\mathrm{SU}(2)$ and the connection is $\mathrm{SU}(2)$-valued. The whole question of QCD is whether the framework can replace that factor by colour; the next section shows where that step stops.
+What this construction is, for the purposes of this article, is the **general machinery of a non-abelian gauge theory**: everything that depends only on having a compact simple factor and a non-commuting connection is present. What it is not is a *colour* theory, because the factor it uses is $\mathrm{SU}(2)$ and the connection is $\mathrm{SU}(2)$-valued. The whole question of QCD is whether the framework can replace that factor by colour; the next section shows where that step stops.
 
 ### The gauge algebra the algebra contains, and its ceiling
 
@@ -79,7 +79,7 @@ This is the precise ceiling of the present construction, and it is what makes th
 
 ### The chiral-fermion issue
 
-The read-list article *Chiral Fermions in the Biquaternion Framework* establishes the following, and this agenda inherits it without change. The gradient, the d'Alembertian and the two first-order equations are those of *Operator and Calculus Conventions*, and the two values $L$ and $R$ are those of *Special Element Conventions*; none of the three is derived here.
+The read-list article *Chiral Fermions in the Biquaternion Framework* establishes the following, and this article inherits it without change. The gradient, the d'Alembertian and the two first-order equations are those of *Operator and Calculus Conventions*, and the two values $L$ and $R$ are those of *Special Element Conventions*; none of the three is derived here.
 
 **The field and its two values.** The field is an element $\tilde{Ξ}$ of $\mathbb{B}$. It splits into two parts,
 
@@ -158,7 +158,7 @@ QCD begins with a group. The colour group is $SU(3)$, its rank-two simple compac
 - **The three components of the complement of the light cone.** The zero-divisor cone gives a three-part classification of intervals (timelike, spacelike, null) and the complement of the cone has three connected components. A partition of a cone is not a group, and interval type is not an internal quantum number.
 - **The dimension count $8 = 8$.** Both $\mathbb{B}$ and $\mathrm{SU}(3)$ are eight-real-dimensional, but $\mathbb{B}$'s compact part is $\mathrm{U}(2)$ and its module is two-dimensional. Equality of dimensions is a coincidence of counting, not an embedding.
 
-**What positing would and would not be.** One can of course write down a colour group and tensor it on: take the matter field to be $\tilde{Ξ}\otimes c$ with $c\in\mathbb{C}^3$, let $SU(3)$ act on $c$ and $\mathbb{B}$ act on $\tilde{Ξ}$, and build a connection valued in $\mathrm{SU}(3)$ on the colour factor. That constructs *a* theory with colour, and it is exactly the move through which the corpus already passes once: the chiral-fermion article writes its abelian chiral connection as "a connection valued in the algebra of module endomorphisms", i.e. on an enlarged carrier rather than inside $\mathbb{B}$. But it is an **adjoining of an independent factor**, and adjoining $\mathbb{C}^3$ is not deriving it. The framework fixes neither the dimension three, nor the group $SU(3)$, nor the reason the factor should exist at all. To posit $SU(3)$ and then present the resulting construction as the framework's colour theory is precisely the fabrication the agenda must not commit.
+**What positing would and would not be.** One can of course write down a colour group and tensor it on: take the matter field to be $\tilde{Ξ}\otimes c$ with $c\in\mathbb{C}^3$, let $SU(3)$ act on $c$ and $\mathbb{B}$ act on $\tilde{Ξ}$, and build a connection valued in $\mathrm{SU}(3)$ on the colour factor. That constructs *a* theory with colour, and it is exactly the move through which the corpus already passes once: the chiral-fermion article writes its abelian chiral connection as "a connection valued in the algebra of module endomorphisms", i.e. on an enlarged carrier rather than inside $\mathbb{B}$. But it is an **adjoining of an independent factor**, and adjoining $\mathbb{C}^3$ is not deriving it. The framework fixes neither the dimension three, nor the group $SU(3)$, nor the reason the factor should exist at all. To posit $SU(3)$ and then present the resulting construction as the framework's colour theory is precisely the fabrication the article must not commit.
 
 **The one candidate route, stated as a candidate.** If colour is to come from the framework rather than be added to it, the construction must be enlarged in a way the algebra *forces*. Two shapes of such an enlargement are conceivable. The first is to let the carrier be the endomorphism algebra of a $\mathbb{B}$-module tensored with an internal space $X$, whose dimension the algebra somehow determines; since the endomorphism algebra of a carrier of complex dimension six contains $\mathrm{SU}(3)$, the group can live there — the question is what fixes $X$. The second is to look for a rank-two compact structure already inside $\mathbb{B}$'s representation theory, for instance in the decomposition of tensor powers or in the complexification, on the chance that an $\mathrm{SU}(3)$ subalgebra of some natural endomorphism algebra appears. Neither of these is a route yet. The first assumes the answer ($X=\mathbb{C}^3$); the second is a search with no known outcome, and the ceiling argument of the preceding section is evidence against it. The honest classification is therefore **no route yet**, with the candidate named so that it can be tried rather than forgotten.
 
@@ -188,7 +188,7 @@ The framework's closest structures are the zero divisor cone and the null four-v
 
 The chiral-fermion issue is inherited from the read-list article, whose content is carried unchanged. It has three parts: the splitting of the field into its two values is exact, the framework's canonically available gauge group is vector-like and cannot be chiral, and the framework's own mass term is a linear off-diagonal chiral coupling that breaks the axial symmetry while leaving the vector $\mathrm{U}(1)$ exact. One of the gaps that article left — the anomaly — has since been partly closed elsewhere in the series, and that is addressed below.
 
-The question for this agenda is how much of that is a *QCD* obstacle. The answer requires care, because one natural interpretation of the issue does not apply to colour and another does.
+The question for this article is how much of that is a *QCD* obstacle. The answer requires care, because one natural interpretation of the issue does not apply to colour and another does.
 
 **The gauge-chirality obstruction is not itself a colour obstruction.** Colour is a **vector-like** interaction: the $L$ and $R$ parts of a quark carry the *same* colour representation, so a colour gauge transformation acts identically on $\tilde{Ξ}_{L}$ and $\tilde{Ξ}_{R}$. The chiral-fermion article's finding that the centre is scalar and vector-like, and cannot generate a chiral gauge group, is therefore not an obstruction to colour; if anything it is the opposite, since a vector-like action is exactly what colour needs. It is worth saying this plainly so that the chiral-fermion result is not over-read: the framework's inability to make a *chiral gauge group* bears on the electroweak sector, not on colour.
 
@@ -228,7 +228,7 @@ So the running coupling and asymptotic freedom are an obstacle with a **known ro
 
 ## The Ledger
 
-The table collects the items of the agenda and sorts each into the three-way classification. "Established" means recomputed in the series and inherited here; "known route" means the object does not exist but the computation that would produce it is identifiable; "no route yet" means no mechanism has been proposed.
+The table collects the items of the article and sorts each into the three-way classification. "Established" means recomputed in the series and inherited here; "known route" means the object does not exist but the computation that would produce it is identifiable; "no route yet" means no mechanism has been proposed.
 
 | Item | Status | Object or computation that would settle it |
 |---|---|---|
@@ -246,20 +246,20 @@ The table collects the items of the agenda and sorts each into the three-way cla
 | The framework's mass term: linear off-diagonal chiral coupling (vector $\mathrm{U}(1)$ exact, axial broken) | Established | The linear chiral pair; the separate $\flat$-pairing on the single-field equation is a distinct, still-open interpretation |
 | Empirical contact: a prediction distinguishing the framework from standard QCD | **No route yet** | Any observable the two theories compute differently; none is proposed |
 
-## What Would Settle It
+## The Object Each Row Needs
 
 The obstacles are not independent, and the dependency chain is short. The quark's colour representation (obstacle 3) needs the carrier that the colour-group question (obstacle 1) would settle; the running coupling (obstacle 4) needs both, plus the action and regulator; confinement (obstacle 2) needs the action and regulator and, to be a statement about colour at all, needs the colour group. Two items are therefore upstream of everything else.
 
-1. **A derivation or a justified fixing of the internal colour structure.** Either colour comes out of $\mathbb{B}$ — a rank-two compact algebra and a three-dimensional internal module, with a principle that selects three — or it is shown that colour must be adjoined as an independent factor. Either outcome converts the framework's relation to QCD from "unknown" to "stated". The one thing that does not convert it is writing $SU(3)$ down and proceeding; that is the fabricated premise the agenda exists to prevent.
+1. **A derivation or a justified fixing of the internal colour structure.** Either colour comes out of $\mathbb{B}$ — a rank-two compact algebra and a three-dimensional internal module, with a principle that selects three — or it is shown that colour must be adjoined as an independent factor. Either outcome converts the framework's relation to QCD from "unknown" to "stated". The one thing that does not convert it is writing $SU(3)$ down and proceeding; that is the fabricated premise the article exists to prevent.
 2. **A $\mathbb{B}$-valued action with a gauge-invariant regulator.** The renormalization-group article names the absent action, measure, and regulator, and the confinement section shows they are prerequisites for even posing the area law. Until they exist, every QCD computation in the framework is a transcription of a standard one, and every non-perturbative statement is unavailable.
 
-With those two settled, the rest of the agenda becomes ordinary work: construct the quark representation, compute the anomaly, run the colour coupling, and look for the area law. Without them, the honest summary of the framework's relation to QCD is the one this article opened with: it has the general non-abelian gauge machinery, it has an exact splitting of the field into its two values, it has the form of the running coupling, and it does not have a colour theory.
+With those two settled, the rest of the article becomes ordinary work: construct the quark representation, compute the anomaly, run the colour coupling, and look for the area law. Without them, the honest summary of the framework's relation to QCD is the one this article opened with: it has the general non-abelian gauge machinery, it has an exact splitting of the field into its two values, it has the form of the running coupling, and it does not have a colour theory.
 
-Finally, the genre's standing caution applies here in its strongest form. *The Empirical Status of the Biquaternion Framework* records that on every domain developed, the framework is so far empirically equivalent to the standard theory it reformulates. A biquaternionic colour theory, if one is ever constructed, would inherit that position unless it makes a prediction standard QCD does not; and a theory whose colour group, matter content, coupling, and confinement mechanism are all imported has no prospect of doing so. The agenda's most useful output may be to make that consequence visible early, rather than to produce a construction that appears to answer QCD while assuming all of it.
+Finally, the genre's standing caution applies here in its strongest form. *The Empirical Status of the Biquaternion Framework* records that on every domain developed, the framework is so far empirically equivalent to the standard theory it reformulates. A biquaternionic colour theory, if one is ever constructed, would inherit that position unless it makes a prediction standard QCD does not; and a theory whose colour group, matter content, coupling, and confinement mechanism are all imported has no prospect of doing so. The article's most useful output may be to make that consequence visible early, rather than to produce a construction that appears to answer QCD while assuming all of it.
 
 ## Summary
 
-This article is a research agenda for quantum chromodynamics inside the biquaternion framework. Its finding is that the framework reaches the general machinery of a non-abelian gauge theory and stops before colour.
+The finding of this article is that the biquaternion framework reaches the general machinery of a non-abelian gauge theory and stops before colour.
 
 What is established is recalled: the non-abelian gauge construction, with a connection transforming in the adjoint, a curvature containing the commutator term and satisfying the Bianchi identity, and a gauge-invariant Yang–Mills density, built on the $\mathrm{SU}(2)$ factor of the material sector; the Lie-algebra decomposition $\mathbb{B}_{\Phi} = \mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, so that the compact algebra available is $\mathrm{U}(2)$; the two values of the field, a chirality-odd mass bilinear, and the selection rule $ϙ_L=ϙ_R$; the vector-like character of the centre; and a renormalization-group article that does reach the non-abelian case and reproduces the standard one-loop beta function, $C_2(G)=N$, the QCD coefficient $b_0=11-\tfrac{2}{3}N_f$, and the asymptotic-freedom threshold — as a transcription.
 
@@ -270,7 +270,7 @@ What is not established is everything QCD-specific.
 - **The chiral-fermion issue.** Its gauge half does not obstruct colour, because colour is vector-like; but the quark's colour representation is unbuilt, the axial anomaly has a framework formulation only for a single abelian current with its coefficient quoted, and the framework's mass term, being the linear chiral coupling, breaks the axial charge while leaving fermion number exact.
 - **The running coupling.** The series has the machinery and reaches the non-abelian case, but the gauge group, matter content, action, measure, and regulator are all inputs. **Known route, blocked on the very objects the other obstacles are missing.**
 
-The two upstream items are a derivation (or a justified fixing) of the internal colour structure and a $\mathbb{B}$-valued action with a gauge-invariant regulator. Everything else depends on them. The article commits throughout to the agenda's central discipline: no section assumes a colour group, and where standard QCD numbers appear, they are marked as imports.
+The two upstream items are a derivation (or a justified fixing) of the internal colour structure and a $\mathbb{B}$-valued action with a gauge-invariant regulator. Everything else depends on them. The article commits throughout to the article's central discipline: no section assumes a colour group, and where standard QCD numbers appear, they are marked as imports.
 
 ## Summary of Notation
 
@@ -299,7 +299,7 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 
 ## Further Reading
 
-- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the gauge-invariant density, and the open matter-representation question this agenda inherits.
+- [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the gauge-invariant density, and the open matter-representation question this article inherits.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian origin of the connection and the reality-condition gap the non-abelian construction takes up.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the splitting of the field into its two values, the vector-like centre, the mass selection rule, the linear chiral-coupling mass term, and the anomaly it leaves unformulated.
 - [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the Adler–Bell–Jackiw divergence written in the framework's own elements, the anomaly density as the second field invariant $I_2=\vec E\cdot\vec B$, the 't Hooft vertex, and the Standard Model cancellation conditions; the coefficient is quoted rather than derived, and $\theta$ and strong $CP$ lie outside its scope.
@@ -311,6 +311,6 @@ The two upstream items are a derivation (or a justified fixing) of the internal 
 - [Modules over the Biquaternion Algebra](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) and [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the module structure and the compact-subalgebra facts behind the ceiling on the colour group.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) — the null cone and the bivector structure, the objects closest to the confinement and topological-charge items.
 - [The Lorentz Group in Biquaternionic Form — Structure and Representations](the-lorentz-group-in-biquaternionic-form-structure-and-representations.html) — the representation theory on which the adjoint and fundamental bookkeeping rests.
-- [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html) — the corpus's explicit statement that the framework "does not contain a colored gauge theory"; the transcription boundary this agenda makes systematic.
+- [Helicity in Biquaternionic Form](helicity-in-biquaternionic-form.html) — the corpus's explicit statement that the framework "does not contain a colored gauge theory"; the transcription boundary this article makes systematic.
 - [The Empirical Status of the Biquaternion Framework](the-empirical-status-of-the-biquaternion-framework.html) — the standing empirical-equivalence result, the caution under which any biquaternionic QCD would labour.
-- [The Einstein Field Equations under the Biquaternion Framework — A Research Agenda](the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html) — the companion agenda whose three-way classification and settling-object discipline this article follows.
+- [The Einstein Field Equations in the Biquaternion Framework: The Linearised Dictionary and the Non-Linear Gap](the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.html) — the companion article whose three-way classification and settling-object discipline this article follows.

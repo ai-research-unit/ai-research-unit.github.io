@@ -264,7 +264,7 @@ The physically relevant Green's function is the **retarded** one, which vanishes
 $$
 \begin{aligned}
 \tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}\,G_{\Box,\Phi}
-&=\frac{1}{4\pi R c}\,\delta'\!\left(r'_t - R\right)\bigl(-i\,e_t + \vec u_R\bigr)\
+&=\frac{1}{4\pi R c}\,\delta'\!\left(r'_t - R\right)\bigl(-i\,e_t + \vec u_R\bigr)\\
 &\quad+\frac{1}{4\pi R^2}\,\delta\!\left(r'_t - R\right)\vec u_R,
 \end{aligned}
 $$

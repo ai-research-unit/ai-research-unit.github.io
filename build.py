@@ -15,10 +15,24 @@ DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-uni
 # Old URLs kept alive after a rename: (deployed page, alias that copies it).
 # The pruner spares the aliases, and no sitemap lists them.
 LEGACY_COPIES = [
+    ("articles_physics/cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html",
+     "articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html"),
+    ("articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html",
+     "articles_physics/electroweak-theory-under-the-biquaternion-framework-a-research-agenda.html"),
+    ("articles_physics/quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html",
+     "articles_physics/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html"),
+    ("articles_physics/the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html",
+     "articles_physics/the-standard-model-under-the-biquaternion-framework-a-research-agenda.html"),
+    ("articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html",
+     "articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html"),
+    ("articles_physics/the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap.html",
+     "articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html"),
     ("articles_physics/introduction-to-the-lorentz-group-in-biquaternionic-form.html",
      "articles_physics/ai-describes-the-lorentz-group.html"),
     ("articles_physics/introduction-to-the-lorentz-group-in-biquaternionic-form.html",
      "articles_physics/biquaternions-and-the-lorentz-group.html"),
+    ("articles_internal/internal-summary-of-the-biquaternion-particle-physics.html",
+     "articles_internal/internal-summary-of-the-biquaternion-particle-physics-and-gauge-fields.html"),
 ]
 
 # One date for the whole site: the moment the last build started. build2.py

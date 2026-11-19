@@ -93,7 +93,7 @@ $$
 
 That single line is the whole of the alignment: the charge operator annihilates the vacuum, so the electromagnetic group survives, and the three generators orthogonal to it do not, so the other three gauge directions acquire mass.
 
-**The stationarity check.** The minimum conditions $\partial V/\partial\varphi=0$ give $-\mu^2+2\lambda\varphi^\dagger\varphi=0$, which at the minimum reads $\mu^2=\lambda v^2$. The potential energy at the minimum is $V_{\min}=-\mu^4/(4\lambda)=-\lambda v^4/4=-M_H^2v^2/8$, a negative constant. That constant is the cosmological constant problem in its original form: the model sets the zero of energy at the minimum and puts the vacuum at $-M_H^2v^2/8$, and nothing in it cancels the result against the observed dark-energy density. [Cosmology under the Biquaternion Framework — A Research Agenda](cosmology-under-the-biquaternion-framework-a-research-agenda.html) records the logical status of $\Lambda$ and why neither of its standard readings makes it a prediction; the constant plays no part in the masses.
+**The stationarity check.** The minimum conditions $\partial V/\partial\varphi=0$ give $-\mu^2+2\lambda\varphi^\dagger\varphi=0$, which at the minimum reads $\mu^2=\lambda v^2$. The potential energy at the minimum is $V_{\min}=-\mu^4/(4\lambda)=-\lambda v^4/4=-M_H^2v^2/8$, a negative constant. That constant is the cosmological constant problem in its original form: the model sets the zero of energy at the minimum and puts the vacuum at $-M_H^2v^2/8$, and nothing in it cancels the result against the observed dark-energy density. [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html) records the logical status of $\Lambda$ and why neither of its standard readings makes it a prediction; the constant plays no part in the masses.
 
 **The shift.** Write the field as the vacuum plus an excitation,
 
@@ -156,9 +156,9 @@ $$
 $$
 M^2=\frac{v^2}{4}
 \begin{pmatrix}
-g^2 & 0 & 0 & 0\
-0 & g^2 & 0 & 0\
-0 & 0 & g^2 & -g\,g_{\mathrm Y}\
+g^2 & 0 & 0 & 0\\
+0 & g^2 & 0 & 0\\
+0 & 0 & g^2 & -g\,g_{\mathrm Y}\\
 0 & 0 & -g\,g_{\mathrm Y} & g_{\mathrm Y}^2
 \end{pmatrix} .
 $$
@@ -507,6 +507,6 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). Where the two scalar parameters sit in the count of nineteen.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic group that the framework's scalar can and cannot break.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why the framework's central scalar is a singlet, and why a singlet breaks nothing.
-- [The Standard Model under the Biquaternion Framework — A Research Agenda](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html). The sector in agenda form, with this article's three items marked imported.
+- [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The sector in ledger form, with this article's three items marked imported.
 
 The two companions that §*The Numbers* leans on — [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html), for the sector at the other end of the mass ladder, and [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html), for the $\delta r$ and $\rho$ statements used above — are both in the corpus.

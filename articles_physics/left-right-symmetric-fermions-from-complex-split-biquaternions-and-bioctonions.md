@@ -13,7 +13,7 @@ are the subject of *Complex Split Biquaternions and the Clifford Algebra Cl(3)*;
 $$
 \mathrm{Cl}(7) \cong \mathrm{Cl}(6)\oplus\mathrm{Cl}(6),
 $$
-by the same computation of the volume-element square, which *The Two Algebraic Facts* below redoes for both cases; and the octonionic chain algebra $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$, with its ladder operators, its intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$, its primitive idempotent and its charge spectrum $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$, is the complex octonionic chain algebra, whose physics interpretation is *The Particle Roster of the Complex Octonionic Chain Algebra*. The neutrino content against which the construction is compared is *The Neutrino and Majorana Fermions in Biquaternionic Form* and *The Seesaw Mechanism and Majorana Mass in Biquaternionic Form*; the anomaly conditions that decide whether a sterile state is allowed are *Anomalies and Anomaly Cancellation in Biquaternionic Form*; the framework's own ledger on the electroweak factor, on the generation count and on the ceiling it cannot pass is *The Standard Model under the Biquaternion Framework — A Research Agenda*, *The Number of Generations and the Biquaternion Algebra* and *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*; and the exceptional structures of the source's further programme are outside the framework's algebra.
+by the same computation of the volume-element square, which *The Two Algebraic Facts* below redoes for both cases; and the octonionic chain algebra $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$, with its ladder operators, its intrinsic $\mathrm{su}(3)\oplus\mathrm{u}(1)$, its primitive idempotent and its charge spectrum $0,\tfrac13,\tfrac13,\tfrac13,\tfrac23,\tfrac23,\tfrac23,1$, is the complex octonionic chain algebra, whose physics interpretation is *The Particle Roster of the Complex Octonionic Chain Algebra*. The neutrino content against which the construction is compared is *The Neutrino and Majorana Fermions in Biquaternionic Form* and *The Seesaw Mechanism and Majorana Mass in Biquaternionic Form*; the anomaly conditions that decide whether a sterile state is allowed are *Anomalies and Anomaly Cancellation in Biquaternionic Form*; the framework's own ledger on the electroweak factor, on the generation count and on the ceiling it cannot pass is *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, *The Number of Generations and the Biquaternion Algebra* and *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*; and the exceptional structures of the source's further programme are outside the framework's algebra.
 
 As in *The Particle Roster of the Complex Octonionic Chain Algebra*, the construction is **outside the biquaternion algebra**: $\mathbb{B}\cong M_2(\mathbb{C})$ is four-dimensional over $\mathbb{C}$ and eight-dimensional over $\mathbb{R}$, the chain algebras here are $\mathrm{Cl}(6)$ and $\mathrm{Cl}(7)$, of complex dimensions $64$ and $128$, and no operation of $\mathbb{B}$ reaches them. The article is in the physics category as a record of the literature's most economical answer to the chirality and sterile-neutrino questions, not as a derivation inside the framework, and no result of it feeds back into the framework's ledger. Besides the doubling and its interpretation, the record covers the further pieces of the source: the source's construction by which each of the two weak factors is made to act on one chirality only, with its dependence on a chosen idempotent named; the interpretation of the volume element as the Higgs; the source's proposal that the two chiralities existed in a combined leptoquark state before symmetry breaking; the source's later programme, in which the right-handed weak factor becomes a chiral formulation of gravity in a ten-dimensional octonionic pre-spacetime and the second summand's charge becomes a square root of mass; and the $\mathrm{Cl}(5)$ statement that the right action of $\mathbb{C}\otimes\mathbb{H}$ on $\mathrm{Cl}(3)$ generates $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, recomputed in the companion mathematics article.
 
@@ -92,7 +92,7 @@ The construction is a finite algebra, and the source writes no equation of motio
 **The one-sided pair.** The biquaternion Dirac field is an element of $\mathbb{B}$, and chirality is its subscript in the sense of *Operator Chirality on the Biquaternion Algebra*: the side is the slot of an operator, and a state has a value only as the eigenvalue of a basis operator, here $\tilde{Ξ}_{L}$ in the $-1$ eigenspace of $-iR_{\vec e_z}$ and $\tilde{Ξ}_{R}$ in the $+1$, so the field is one of the two and the pair below is a pair of *equations*, not a pair of halves. The equation is the chirality-off-diagonal pair
 $$
 \begin{aligned}
-\tilde\nabla_\Phi\tilde{Ξ}_{R}&=k_m\,\tilde{Ξ}_{L},\
+\tilde\nabla_\Phi\tilde{Ξ}_{R}&=k_m\,\tilde{Ξ}_{L},\\
 (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}&=k_m\,\tilde{Ξ}_{R},
 \end{aligned}
 $$
@@ -180,7 +180,7 @@ with $\omega^2=1$ and $\vec e_z^{\,2}=-e_t$. That is why the Coxeter element is 
 
 ## What the Construction Establishes, Interprets, and Leaves Open
 
-The construction is best summarised by sorting its steps, as the framework's agendas sort theirs.
+The construction is best summarised by sorting its steps, as the framework's articles sort theirs.
 
 | Step | Status |
 |---|---|
@@ -243,7 +243,7 @@ Every section but this one is written on the algebra; here the same objects are 
 The basis operators are those of the setup, $L_aR_b$ with $x\mapsto axb$ and the right factors multiplying in reverse order; $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products, and $\ell(M)=\operatorname{rank}c(M)$ its basis operator rank. The frame is
 $$
 \begin{aligned}
-\gamma_0&=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}, & \gamma_1&=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}, & \gamma_2&=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\
+\gamma_0&=iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_x}, & \gamma_1&=iL_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}, & \gamma_2&=iL_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_y},\\
 \gamma_3&=iL_{\mathrm{pau},\vec e_z}R_{\mathrm{pau},\vec e_y}, & \gamma_5&=-iL_{\mathrm{pau},e_t}R_{\mathrm{pau},\vec e_z} .
 \end{aligned}
 $$
@@ -252,7 +252,7 @@ The same in the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0&=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}, & \gamma_1&=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}, & \gamma_2&=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\
+\gamma_0&=iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_x}, & \gamma_1&=iL_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}, & \gamma_2&=iL_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_y},\\
 \gamma_3&=iL_{\mathrm{axf},\vec e_z}R_{\mathrm{axf},\vec e_y}, & \gamma_5&=-iL_{\mathrm{axf},e_t}R_{\mathrm{axf},\vec e_z} .
 \end{aligned}
 $$
@@ -262,14 +262,14 @@ Every gamma is a single basis operator. The single basis operators are the pure 
 **The relations, and where the signs come from.** With $\varepsilon=(1,-1,-1,-1)$,
 $$
 \begin{aligned}
-\{\gamma_\mu,\gamma_\nu\}&=2\varepsilon_\mu\delta_{\mu\nu}I_4, & \gamma_0^2&=I_4, & \gamma_1^2=\gamma_2^2=\gamma_3^2&=-I_4,\
+\{\gamma_\mu,\gamma_\nu\}&=2\varepsilon_\mu\delta_{\mu\nu}I_4, & \gamma_0^2&=I_4, & \gamma_1^2=\gamma_2^2=\gamma_3^2&=-I_4,\\
 \{\gamma_\mu,\gamma_5\}&=0, & \gamma_5^2&=I_4.
 \end{aligned},
 \qquad \varepsilon=(1,-1,-1,-1),$$
 Each entry is the basis operator rule with $i^2=-1$ and $\vec e_\eta^{\,2}=-e_t$. The first pair, for instance,
 $$
 \begin{aligned}
-\gamma_0\gamma_1&=i^2\,L_{\mathrm{pau},e_t}L_{\mathrm{pau},\vec e_x}\,R_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},-\vec e_z}=+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z},\
+\gamma_0\gamma_1&=i^2\,L_{\mathrm{pau},e_t}L_{\mathrm{pau},\vec e_x}\,R_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_y}=-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},-\vec e_z}=+L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z},\\
 \gamma_1\gamma_0&=i^2\,L_{\mathrm{pau},\vec e_x}L_{\mathrm{pau},e_t}\,R_{\mathrm{pau},\vec e_y}R_{\mathrm{pau},\vec e_x}=-L_{\mathrm{pau},\vec e_x}R_{\mathrm{pau},\vec e_z},
 \end{aligned}
 $$
@@ -278,7 +278,7 @@ In the axis-free display:
 
 $$
 \begin{aligned}
-\gamma_0\gamma_1&=i^2\,L_{\mathrm{axf},e_t}L_{\mathrm{axf},\vec e_x}\,R_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}=-L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},-\vec e_z}=+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_z},\
+\gamma_0\gamma_1&=i^2\,L_{\mathrm{axf},e_t}L_{\mathrm{axf},\vec e_x}\,R_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_y}=-L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},-\vec e_z}=+L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_z},\\
 \gamma_1\gamma_0&=i^2\,L_{\mathrm{axf},\vec e_x}L_{\mathrm{axf},e_t}\,R_{\mathrm{axf},\vec e_y}R_{\mathrm{axf},\vec e_x}=-L_{\mathrm{axf},\vec e_x}R_{\mathrm{axf},\vec e_z},
 \end{aligned}
 $$

@@ -209,8 +209,8 @@ verified with residuals $0$. In the Kramers basis $\{v,\mathcal Tv\}$ an invaria
 
 $$
 \begin{aligned}
-b=0:\quad &\text{spectrum } \{-1,-1,3,3\}\ \text{(Kramers pairs)},\
-b=0.01:\quad &\text{spectrum } \{-1.01,-0.99,2.99,3.01\},\
+b=0:\quad &\text{spectrum } \{-1,-1,3,3\}\ \text{(Kramers pairs)},\\
+b=0.01:\quad &\text{spectrum } \{-1.01,-0.99,2.99,3.01\},\\
 b=0.02:\quad &\text{spectrum } \{-1.02,-0.98,2.98,3.02\},
 \end{aligned}
 $$

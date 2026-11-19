@@ -201,8 +201,8 @@ three angles and one phase. The subtraction is the same $2N-1=5$ that article 1 
 
 $$
 V=\begin{pmatrix}
-c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\theta_{\mathrm{cpk}}}\
--s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & s_{23}c_{13}\
+c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\theta_{\mathrm{cpk}}}\\
+-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & s_{23}c_{13}\\
 s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{23}c_{13}
 \end{pmatrix},
 $$
@@ -212,8 +212,8 @@ with $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$. The three angles are $\
 **The hierarchy of the angles, and what the Wolfenstein form adds.** The angles are not of comparable size: $\theta_{12}$ is thirteen degrees, $\theta_{23}$ is two, $\theta_{13}$ is a fifth of one. The Wolfenstein form makes the hierarchy explicit by expanding in $\lambda=s_{12}=0.225$:
 
 $$
-V=\begin{pmatrix}1-\lambda^{2}/2 & \lambda & A\lambda^{3}\left(\bar\rho-i\bar\eta\right)\
--\lambda & 1-\lambda^{2}/2 & A\lambda^{2}\
+V=\begin{pmatrix}1-\lambda^{2}/2 & \lambda & A\lambda^{3}\left(\bar\rho-i\bar\eta\right)\\
+-\lambda & 1-\lambda^{2}/2 & A\lambda^{2}\\
 A\lambda^{3}\left(1-\bar\rho-i\bar\eta\right) & -A\lambda^{2} & 1\end{pmatrix}+O\left(\lambda^{4}\right),
 $$
 

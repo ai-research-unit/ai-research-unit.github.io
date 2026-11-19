@@ -274,8 +274,8 @@ and $\exp(A\theta)=\cos\theta+A\sin\theta$ because $A^2=-e_t$. Therefore
 $$
 \begin{aligned}
 UHU^\dagger
-&=\exp(A\theta/2)\,\beta E\exp(A\theta)\exp(-A\theta/2)\
-&=\beta E\exp(-A\theta/2)\exp(A\theta)\exp(-A\theta/2)\
+&=\exp(A\theta/2)\,\beta E\exp(A\theta)\exp(-A\theta/2)\\
+&=\beta E\exp(-A\theta/2)\exp(A\theta)\exp(-A\theta/2)\\
 &=\beta E,
 \end{aligned}
 $$

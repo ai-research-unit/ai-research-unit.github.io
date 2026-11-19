@@ -11,13 +11,13 @@ The position is stated at the outset, and the article defends it section by sect
 - **Established.** The algebra carries the whole chain. Lanczos's coupled system $\tilde\nabla_\Phi\tilde Q_1=m\tilde Q_2$, $\tilde\nabla_\Phi\tilde Q_2=m\tilde Q_1$ is the massless Maxwell equation with a feedback; promoting the scalar $m$ to a biquaternion $\tilde m_{\mathrm{fld}}$ turns the second-order equations into **eigenvalue equations for the mass**, whose two eigenvalues are those of $\tilde m_{\mathrm{fld}}\tilde m_{\mathrm{fld}}^{*}$; the reduction of Petiau's closed system to Lanczos's, for a constant spin-0 field, is exact. These are algebra, and they are checked here.
 - **Transcribed.** Petiau's double-periodic waves, the quartic Hamiltonian $H=C_0\mu^4k^2$, and the quantisation of the amplitude and the proper mass are taken from Petiau through the review of Gsponer and Hurni. They are not re-derived here, and their status is that of the source, not of the framework.
 - **Empirical.** Barut's leptonic mass formula is an external numerical fit. Its agreement with the lepton data is a fact about the formula and the data, not a framework result, and the ratio $7.46$ of the two singular moduli is offered by the source as a plausible numerical coincidence, not as a derivation.
-- **Not supplied.** No mass value is derived from $\mathbb{B}$. The algebra is scale-free, the standard-model agenda's ledger is unchanged, and the article's contribution is to place the Lanczos–Einstein–Mayer–Petiau construction in the corpus with its verified content and its labelled speculation separated.
+- **Not supplied.** No mass value is derived from $\mathbb{B}$. The algebra is scale-free, the standard-model article's ledger is unchanged, and the article's contribution is to place the Lanczos–Einstein–Mayer–Petiau construction in the corpus with its verified content and its labelled speculation separated.
 
 The article is organised as follows. The next section sets up the mass as a field, from the Lanczos feedback through the Einstein–Mayer mass biquaternion to the eigenvalues that read as two masses. A section states Petiau's closure of the system and checks its reduction to Lanczos. Two sections give the double-periodic waves and the quartic Hamiltonian. A section gives Barut's empirical formula and the moduli ratio, with its status. A closing section separates what is supplied, transcribed, and missing.
 
 The framework results used here are those of the companion articles:
 
-- Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, whose sub-section *The Gürsey Reading, the Reversion Test, and the Einstein–Mayer Equation* first records the Lanczos system, the Einstein–Mayer equation and the isospin interpretation; the present article takes the same equations as its starting point and does not repeat the isospin interpretation.
+- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, whose sub-section *The Gürsey Reading, the Reversion Test, and the Einstein–Mayer Equation* first records the Lanczos system, the Einstein–Mayer equation and the isospin interpretation; the present article takes the same equations as its starting point and does not repeat the isospin interpretation.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the biquaternionic Dirac equation, its linear off-diagonal mass term, and the relation of the massive equation to the massless one.
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive spin-1 equation that the same feedback produces.
 - Companion article *Algebra and Element Conventions*, for the algebra, the conjugations, the metric and the d'Alembertian.
@@ -38,7 +38,7 @@ $$
 
 where $\tilde Q_1$ and $\tilde Q_2$ are two biquaternion fields and $m=k_m$ is the mass in inverse-length units. The equation is Maxwell's with the source replaced by the other field, and this is what "feedback" means: the two fields source each other. Following Lanczos, that self-sourcing is the algebraic mark of a **massive** particle, as against the massless photon, whose field is its own source-free equation.
 
-The system is invariant under $\tilde Q_1\to\tilde Q_1G$, $\tilde Q_2\to\tilde Q_2G$ for a $*$-unitary biquaternion $G$, and its superposition $D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}$, with $\sigma$ an idempotent of the algebra, is **strictly equivalent to Dirac's equation**. That equivalence, the spin axis it makes explicit, and the isospin reading of the doubled solution count are recorded in the standard-model agenda article and are not repeated here. What matters for the present article is one structural fact: **the mass enters as a single scalar parameter $m$ multiplying the other field**, and the two fields obey the same second-order equation, obtained by applying the conjugate gradient,
+The system is invariant under $\tilde Q_1\to\tilde Q_1G$, $\tilde Q_2\to\tilde Q_2G$ for a $*$-unitary biquaternion $G$, and its superposition $D=\tilde Q_1\sigma+\tilde Q_2^{*}\bar{\sigma}$, with $\sigma$ an idempotent of the algebra, is **strictly equivalent to Dirac's equation**. That equivalence, the spin axis it makes explicit, and the isospin reading of the doubled solution count are recorded in the standard-model article article and are not repeated here. What matters for the present article is one structural fact: **the mass enters as a single scalar parameter $m$ multiplying the other field**, and the two fields obey the same second-order equation, obtained by applying the conjugate gradient,
 
 $$
 \Box_\Phi\tilde Q_1 = m^2\tilde Q_1,
@@ -99,8 +99,8 @@ The Einstein–Mayer system has a mass field $\tilde m_{\mathrm{fld}}$ that is p
 
 $$
 \boxed{\;\begin{aligned}
-\tilde\nabla_\Phi\tilde Q_1 &= \tilde Q_2\tilde Q_3,\
-\tilde\nabla_\Phi\tilde Q_2 &= \tilde Q_1\tilde Q_3,\
+\tilde\nabla_\Phi\tilde Q_1 &= \tilde Q_2\tilde Q_3,\\
+\tilde\nabla_\Phi\tilde Q_2 &= \tilde Q_1\tilde Q_3,\\
 \tilde\nabla_\Phi\tilde Q_3 &= \tilde Q_1\tilde Q_2.
 \end{aligned}\;}
 $$
@@ -203,7 +203,7 @@ The article's accounting, collected.
 
 **Empirical, and not a framework result.** Barut's leptonic formula and its quark extension, and the moduli ratio $7.464$ that the source proposes as their explanation. The formula fits the three known charged leptons well and extrapolates to a fourth that does not exist; the ratio is exact arithmetic offered as a plausible coincidence.
 
-**Not supplied.** The framework derives no mass value. The algebra is scale-free — the companion article *Physics Units and Common Elements Conventions* records in §*Physical Units* that it fixes no scale — so a construction built on $\mathbb{B}$ cannot by itself produce the electron mass or any other. The construction's value is structural: it shows that the algebra can carry a **mass that is a field with its own equation**, whose eigenvalues are the masses of a doublet, and it makes the mass spectrum a question about a nonlinear system rather than about free Yukawa couplings. That reframing is the article's result; the mass values remain outside the framework, exactly as the standard-model agenda's ledger has it.
+**Not supplied.** The framework derives no mass value. The algebra is scale-free — the companion article *Physics Units and Common Elements Conventions* records in §*Physical Units* that it fixes no scale — so a construction built on $\mathbb{B}$ cannot by itself produce the electron mass or any other. The construction's value is structural: it shows that the algebra can carry a **mass that is a field with its own equation**, whose eigenvalues are the masses of a doublet, and it makes the mass spectrum a question about a nonlinear system rather than about free Yukawa couplings. That reframing is the article's result; the mass values remain outside the framework, exactly as the standard-model article's ledger has it.
 
 ## Open Questions
 

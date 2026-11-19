@@ -56,8 +56,8 @@ So the number of PMNS parameters depends on the neutrino's nature: six for Major
 $$
 U_{\mathrm{PMNS}}=
 \begin{pmatrix}
-c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\theta_{\mathrm{cpk}}}\
--s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & s_{23}c_{13}\
+c_{12}c_{13} & s_{12}c_{13} & s_{13}e^{-i\theta_{\mathrm{cpk}}}\\
+-s_{12}c_{23}-c_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{12}c_{23}-s_{12}s_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & s_{23}c_{13}\\
 s_{12}s_{23}-c_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & -c_{12}s_{23}-s_{12}c_{23}s_{13}e^{i\theta_{\mathrm{cpk}}} & c_{23}c_{13}
 \end{pmatrix}
 \times\mathrm{diag}\!\left(1,e^{i\theta_{\mathrm{mjr},21}/2},e^{i\theta_{\mathrm{mjr},31}/2}\right) .

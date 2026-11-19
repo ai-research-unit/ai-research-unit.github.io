@@ -124,8 +124,8 @@ The coefficients are the multiplicities: the quark doublet is six states, each q
 
 $$
 M=\begin{pmatrix}
-2 & -1 & -1 & 0 & 0\
-3 & 0 & 0 & 1 & 0\
+2 & -1 & -1 & 0 & 0\\
+3 & 0 & 0 & 1 & 0\\
 6 & -3 & -3 & 2 & -1
 \end{pmatrix} .
 $$
@@ -314,6 +314,6 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the colour ceiling.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why a central charge cannot be chiral, and the non-central case as the open question.
 - [The Standard Model Lagrangian Assembled: Four Sectors in One Expression](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html). The covariant derivative and the Yukawa terms whose invariance fixes $Y_\varphi$.
-- [The Standard Model under the Biquaternion Framework — A Research Agenda](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html). The same boundary in agenda form.
+- [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The same boundary in ledger form.
 
 The two companions this article leans on most — [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html), which consumes the count of two continuous parameters and one discrete choice, and [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html), which carries the quantisation argument of §*The Three Labels and the Charge* — are both in the corpus, and both are linked above at the point where they are used.

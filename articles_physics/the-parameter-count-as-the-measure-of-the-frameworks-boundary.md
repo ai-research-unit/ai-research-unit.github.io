@@ -262,7 +262,7 @@ That table is the boundary in one line. The framework's value is not in the seco
 | The Skyrme soliton | 1–9 | None | Ratios within a truncation, not parameters |
 | The ceiling | — | Constraint | Forbids a $\mathbb{B}$ colour triplet, which forbids nothing among the nineteen |
 
-**What the table shows.** One relation, of a restricted kind. Five arenas. Zero values. And one constraint that constrains the framework rather than the model. The table is the honest answer to "what does the framework fix", and it is the table the three agendas could not print before the nineteen articles existed.
+**What the table shows.** One relation, of a restricted kind. Five arenas. Zero values. And one constraint that constrains the framework rather than the model. The table is the honest answer to "what does the framework fix", and it is the table the three articles could not print before the nineteen articles existed.
 
 **The row that deserves a second look.** The ceiling row is the only one where the framework *forbids* something, and what it forbids is a representation, not a number. That is worth stating precisely, because a constraint that forbids no parameter is not a constraint on the model: the model's nineteen numbers are untouched by the absence of a $\mathbb{B}$ triplet. The ceiling is a statement about what the framework can build, and the building it forbids is one the model does not require.
 

@@ -55,7 +55,7 @@ The framework results used here are those of the companion articles:
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the topological density and its identification with the invariant $I_2$.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field strength, the invariants $I_1$ and $I_2$, and the biquaternion norm.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the chiral classification, the Dirac pair, and the gauge quantum numbers of the left- and right-handed fields.
-- Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the multiplet structure whose charge sums are the cancellation conditions.
+- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, for the multiplet structure whose charge sums are the cancellation conditions.
 
 ## The Classical Symmetry and its Quantum Failure
 
@@ -211,7 +211,7 @@ $$
 \boxed{\;\sum_{\text{L}} ϙ^3 - \sum_{\text{R}} ϙ^3 = 0\;},
 $$
 
-identically, for every state and every charge. This is the algebraic statement that the framework's abelian gauge factor is **vector-like**, and it is the reason that factor cannot be weak hypercharge: hypercharge is chiral, with independent left and right charges, and it is precisely the independent left and right charges that make the cubic sum a condition rather than a tautology. The companion articles on chiral fermions and on the Standard Model agenda make the same point.
+identically, for every state and every charge. This is the algebraic statement that the framework's abelian gauge factor is **vector-like**, and it is the reason that factor cannot be weak hypercharge: hypercharge is chiral, with independent left and right charges, and it is precisely the independent left and right charges that make the cubic sum a condition rather than a tautology. The companion articles on chiral fermions and on the Standard Model article make the same point.
 
 ## Gauge Anomaly Cancellation on the Standard Model Spectrum
 

@@ -187,7 +187,7 @@ with odd traces vanishing; *The Legacy Pauli Gamma Formulation* records them wit
 $$
 \begin{aligned}
 \overline{|\mathcal M|^2} = 2e^4\Bigl\{&
-\frac{s^2+u^2-8m^2(s+u)+24m^4}{t^2}\
+\frac{s^2+u^2-8m^2(s+u)+24m^4}{t^2}\\
 &+\frac{s^2+t^2-8m^2(s+t)+24m^4}{u^2}
 +\frac{2(s^2-8m^2s+12m^4)}{tu}\Bigr\}.
 \end{aligned}
@@ -290,7 +290,7 @@ The Møller and Bhabha amplitudes are related by **crossing symmetry**: moving a
 
 ### What the framework supplies and what it does not
 
-The framework supplies the two vertex currents, the photon propagator, the Fock space in which the external states live, and the exchange sign as the antisymmetry of its mode algebra. It does **not** supply the numerical evaluation of the traces as a derivation from its own structure — the trace algebra is the dictionary of *The Legacy Pauli Gamma Formulation* — nor does it supply the $Z$-exchange diagrams, which belong to the framework's electroweak research agenda rather than to its established content. The parity-violating asymmetry above is quoted as the experimental fact that motivates the left-handed coupling; the corpus's chiral-fermion article discusses the framework's treatment of handedness, and the electroweak article collects the open questions. No framework-specific prediction is claimed.
+The framework supplies the two vertex currents, the photon propagator, the Fock space in which the external states live, and the exchange sign as the antisymmetry of its mode algebra. It does **not** supply the numerical evaluation of the traces as a derivation from its own structure — the trace algebra is the dictionary of *The Legacy Pauli Gamma Formulation* — nor does it supply the $Z$-exchange diagrams, which belong to the framework's electroweak articles rather than to its established content. The parity-violating asymmetry above is quoted as the experimental fact that motivates the left-handed coupling; the corpus's chiral-fermion article discusses the framework's treatment of handedness, and the electroweak article collects the open questions. No framework-specific prediction is claimed.
 
 ## Open Questions
 
@@ -300,7 +300,7 @@ The framework supplies the two vertex currents, the photon propagator, the Fock 
 
 3. **Crossing and $\mathcal C$.** Is the Mandelstam analytic continuation of the framework's amplitude literally the action of $\mathcal C$ on the external states, or only the same relabelling at the level of the on-shell elements?
 
-4. **The weak asymmetry.** The corpus's electroweak agenda lists the framework's internal $SU(2)\times \mathrm{U}(1)$ questions; the Møller $A_{\mathrm{PV}}$ is a concrete target. Does the framework's left-handed coupling reproduce the $(1/4-\sin^2\theta_{\mathrm W})$ coefficient, or only the general form?
+4. **The weak asymmetry.** The corpus's electroweak article lists the framework's internal $SU(2)\times \mathrm{U}(1)$ questions; the Møller $A_{\mathrm{PV}}$ is a concrete target. Does the framework's left-handed coupling reproduce the $(1/4-\sin^2\theta_{\mathrm W})$ coefficient, or only the general form?
 
 5. **Loops.** The corpus's Ward–Takahashi and Schwinger–Dyson articles treat the identities a loop computation must satisfy, but no loop amplitude is evaluated. Whether Møller scattering at one loop can be organised in the framework without new structure is open.
 

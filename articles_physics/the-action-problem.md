@@ -1,0 +1,148 @@
+# __The Action Problem__
+
+## Introduction
+
+Every article in this category ends at the same sentence: there is no action. The frame route carries metrics, the connection gives a covariant derivative, the Dirac operator exists on a curved background, the Weyl scalars are hosted, and horizons and cosmology are reachable up to their global halves. None of it is dynamics, and the reason is one missing object.
+
+This article treats that object on its own rather than as the last bullet of a list. The question is narrow — what would a biquaternion-intrinsic action have to be, and why does the algebra not supply one — and the answer offered here is narrower still: **the action problem is a derivative-counting problem**. An action is a functional of fields and their derivatives. The algebra supplies the fields and the algebraic operations. It does not supply the derivative, and it therefore cannot fix how many derivatives a Lagrangian may contain. Gravity needs exactly two. Nothing algebraic prefers two, and nothing algebraic forbids four.
+
+That statement is worth separating from two weaker ones it is often confused with. It is not the claim that the algebra lacks ingredients: every ingredient of a gravitational action — a scalar, a volume element, a connection, a curvature two-form — is present in the corpus, and the next sections list them. Nor is it the claim that a *wrong* action has been proposed and rejected. No action has been proposed at all.
+
+## What an Action Needs, and What the Algebra Has
+
+A local action in four dimensions needs four things.
+
+**A scalar density.** Something whose integral is coordinate-independent. The algebra has a canonical scalar, the scalar part $\mathrm{Sc}$ of an element, and it has a canonical bilinear form $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ which returns a scalar from two elements.
+
+**A volume element.** $\sqrt{|g|}$ in the metric language. In the frame route $g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$, so $\sqrt{|g|}=\sqrt{|\det G|}$ with $G$ the Gram matrix of the four frame legs. That is an algebraic quantity: a determinant of an array of scalars the algebra produced.
+
+**A connection.** The corpus constructs one: a $\mathbb{B}$-valued one-form $\vec\Gamma_\mu$ taking values in the six-real-dimensional scalar-free subspace, with a curvature two-form and a torsion. This is the object Route Three of the parent article builds, and it is the one place where the algebra makes a positive contribution rather than merely hosting.
+
+**A space of fields to vary over, and a boundary term.** The frame, the connection, or both. The boundary term is required for a well-posed variational principle, and it is a technical demand the corpus has never addressed.
+
+So the ingredients are all present, and the absence of an action is not an absence of material. What is missing is a reason.
+
+## The Derivative Is Not an Algebra Operation
+
+Here is the structural point, and it is short. Every operation the algebra owns is algebraic: products, the natural involution, the scalar part, the determinant of the matrix image. A derivative is not among them. Differentiation is an operation of the manifold, acting on the frame field $\tilde E_{\Phi,\mu}(x)$, and it appears in the theory only because the frame is a *field* — a function of position — not because it is a biquaternion.
+
+That has a consequence which is easy to miss because it looks like a technicality. The algebra can constrain the *algebraic shape* of an integrand — it can say that the scalar must be built from $\mathrm{Sc}$, that the bilinear pairings must respect the two sectors, that a wedge product must be a $\mathbb{B}$-valued two-form — and it cannot constrain the *number of derivatives*. A functional with one derivative per field, with two, and with four are all equally algebraic in shape. The algebra is blind to the difference, and the difference is precisely what distinguishes Yang–Mills from general relativity from higher-derivative gravity.
+
+So the selection problem is not "which algebraic combination" but "which derivative order", and the algebra has no opinion on the second question. That is why the corpus could build the curved Dirac operator and stop: the Dirac equation's derivative order is fixed by the flat equation it deforms, which was itself fixed by experiment. Gravity has no such anchor, because the Einstein equation was never derived in the framework to begin with.
+
+## Why the Natural Algebra Action Is Not Einstein's
+
+The functional the algebra suggests most strongly is the quadratic one,
+
+$$
+S_{\mathrm{YM}}[\vec\Gamma]=\int d^{4}x\,\sqrt{|\det G|}\;\mathrm{Sc}\bigl(\tilde F_{\mu\nu}\tilde F^{\mu\nu\,\natural}\bigr),
+\qquad
+\tilde F_{\mu\nu}=\partial_{\mu}\vec\Gamma_{\nu}-\partial_{\nu}\vec\Gamma_{\mu}+[\vec\Gamma_{\mu},\vec\Gamma_{\nu}],
+$$
+
+with $\tilde F$ the curvature two-form. It is the exact analogue of the Maxwell action the corpus already varies — the biquaternion Maxwell equation follows from it, with the caveat the corpus records that the Lorentz generator does not commute with the basis operator, so the varied form differs from the substituted form by a term. Its equations are second order in the connection, its principal symbol is the wave operator on each component, and its content is a gauge field, not a metric.
+
+Einstein's action is a different functional of different variables,
+
+$$
+S_{\mathrm{EH}}[g]=\frac{1}{16\pi G}\int d^{4}x\,\sqrt{|g|}\,R[g],
+$$
+
+second order in the metric and linear in its second derivatives. Its variation gives second-order equations whose principal symbol is the wave operator on the trace-reversed perturbation — the operator the gravitational-waves article writes down — and not a Laplacian on a connection.
+
+Two things are worth saying about the comparison, because both are commonly got wrong.
+
+**The two cannot be separated by dimensions.** In four dimensions both integrands have mass dimension four, so no scaling argument distinguishes them. Any claim that "the algebra's natural action is the only marginal one" is false: gravity is marginal too.
+
+**They cannot be separated by gauge invariance.** Both are invariant under their respective gauge groups, and the frame route's local Lorentz freedom is exactly the gauge freedom the Einstein–Hilbert action has. Invariance therefore does not select between them.
+
+What separates them is derivative order and variable: one derivative of a connection against two derivatives of a frame. The algebra sees neither.
+
+## Route One: the Scalar Curvature Read Off the Dirac Square
+
+There is one place in the corpus where a curvature scalar appears as an algebraic expression, and it is worth stating precisely, because it is the most promising route to an action written in the algebra's own terms.
+
+The companion article proves the Lichnerowicz identity for the biquaternion Dirac operator on a curved background,
+
+$$
+(\tilde F_{\mu}D_{\mu})^{2}=-\Box_{g,\Phi}+\tfrac14 R ,
+$$
+
+where $\Box_{g,\Phi}$ is the connection Laplacian and $R$ the scalar curvature of the Gram metric. The identity holds of the basis operator, that is, of the left-regular representation of the algebra on itself as a four-dimensional complex vector space, and that qualification is the article's own headline caveat.
+
+Read it backwards, and it gives the scalar curvature as a trace:
+
+$$
+R=\mathrm{tr}\bigl[(\tilde F_{\mu}D_{\mu})^{2}+\Box_{g,\Phi}\bigr],
+$$
+
+because the constant term contributes $\tfrac14R$ on each of the four basis elements and $4\cdot\tfrac14=1$. So the Einstein–Hilbert action can be written without ever naming the Riemann tensor:
+
+$$
+S=\frac{1}{16\pi G}\int d^{4}x\,\sqrt{|\det G|}\;\mathrm{tr}\bigl[(\tilde F D)^{2}+\Box\bigr].
+$$
+
+This is a genuine rewriting and it should not be oversold. It is not a derivation: the right-hand side needs $\Box$, which needs the connection, which is the same datum the left-hand side needs, so the identity expresses $R$ in terms of objects it presupposes. The gain is conceptual rather than computational — the curvature scalar becomes a spectral quantity, a trace of an operator built from the algebra's own Dirac operator, which is the shape a spectral action takes. Whether that shape buys anything depends on whether the trace can be regulated without a background metric, and the corpus has no measure and no regulator.
+
+The route is therefore recorded as the better of the two candidates, not as a result. Its virtue is that it makes the action *algebra-writable*; its defect is that it does not make the choice of two derivatives *algebraic*. The same trace could be taken of a fourth power of the Dirac operator, and the algebra would not object.
+
+## Route Two: the Source as a Gram Matrix
+
+An action needs a matter part, and the matter part needs a source. The framework's difficulty here is independent of the gravitational one and is recorded in the cosmology article: the natural algebra packaging of a rank-two tensor collapses to its trace.
+
+For a symmetric tensor $T_{\mu\nu}$ the framework's natural object is the bilinear sum
+
+$$
+\tilde{\mathcal T}=\sum_{\mu,\nu}T_{\mu\nu}\,\tilde E_{\Phi,\mu}\tilde E_{\Phi,\nu}^{\natural}\in\mathbb{B},
+$$
+
+and its scalar part is the trace, $\mathrm{Sc}\,\tilde{\mathcal T}=\sum_\mu T_{\mu\mu}$. For a perfect fluid in its rest frame $T=\mathrm{diag}(\rho,p,p,p)$ this gives $(-\rho+3p)e_t$: the two independent functions $\rho$ and $p$ are replaced by the single combination $-\rho+3p$, and the four-velocity and any anisotropic stress are discarded. A radiation fluid, for which $p=\rho/3$, is annihilated entirely.
+
+That is the second half of the action problem. Even with a gravitational action in hand, the variation would need a source, and the source object the algebra naturally forms does not carry the two functions a source has. The trace-free part would have to be carried by a different map — the corpus calls it the rank-two carrier — and no such map exists yet.
+
+There is a sharp way to put the two halves together: **the action problem is a pairing problem.** An action pairs a field with a source through an integral, and the framework's only integral is the scalar part, which is a trace, which annihilates the traceless part of anything. Gravity's source is precisely the part that a trace does not see.
+
+## Beyond Having an Action: the Conformal Factor
+
+Suppose the action problem were solved and a functional were written whose variation is the Einstein equation. One problem would remain, and it belongs in this article because it is often mistaken for a detail.
+
+The Euclidean Einstein–Hilbert action is unbounded below. Under a conformal rescaling $g\mapsto\Omega^{2}g$ the action changes by a term whose quadratic form in $\Omega$ is indefinite, so the action can be driven to minus infinity along a conformal direction at fixed conformal class. This is the conformal factor problem of Euclidean quantum gravity, and it means that a path integral over metrics requires a contour prescription — a rotation in the conformal direction — before it is defined at all.
+
+The framework has no such prescription and no place to put one: a contour is a choice about a measure, and the corpus's measure problem is the same one recorded for the informational sector, where the trace has no volume element. So even a solved action problem would leave the quantisation problem open, and the quantum-gravity article's ordering argument — that quantisation presupposes an action, a momentum and a constraint structure — understates the case by one item. It presupposes a measure as well.
+
+## What Is Not the Problem
+
+**The frame route is not weakened by the absence of an action.** Carrying a metric does not require a dynamics, and every result in the neighbouring articles stands. The absence is a boundary of the programme's reach, not an error in its constructions.
+
+**The absence is not an inconsistency.** Nothing in the corpus asserts an equation of motion it cannot derive. The articles that come closest — the gravitational-wave and black-hole-thermodynamics articles — both mark their equations as transcribed, and the audit that preceded this category found no place where a transcription had been promoted to a result.
+
+**The problem is not that the algebra is too small.** It is not: the connection's home, the curvature two-form, the frame, the determinant and the scalar part are all present. The problem is that the algebra is derivative-free, and an action is a statement about derivatives.
+
+## What Would Settle It
+
+The settling object is a single functional, and it has four requirements, each of which can be checked separately.
+
+1. **It is written in the algebra's operations**, with no object introduced that the corpus does not already construct: $\mathrm{Sc}$, the natural involution, the Gram determinant, the $\mathbb{B}$-valued connection and its curvature.
+2. **Its variation with respect to the frame reproduces the Einstein equation** in the vacuum case, including the correct coefficient, and its variation with respect to the connection reproduces metric compatibility and vanishing torsion — the Palatini structure, which the corpus is unusually well placed to write because it already has both variables as $\mathbb{B}$-valued objects.
+3. **Its matter part produces a source that is not traceless**, which requires the rank-two carrier the cosmology article lists as its second item.
+4. **It carries a boundary term** that makes the variational principle well posed on a region with a boundary.
+
+A no-go would be equally valuable and is easier to state: a proof that no functional of the frame alone, built from $\mathrm{Sc}$ and the Gram determinant, can produce a source with a traceless part would close the second half of the problem in the negative. The trace collapse of the natural packaging is a strong enough constraint that such a proof may be within reach, and searching for it is cheaper than searching for the action.
+
+## Summary
+
+The action problem is one question — what functional of the frame and the connection has the Einstein equation as its variation — and this article's answer to why it is open is a single structural fact: **the algebra has no derivative, so it cannot count derivatives, and gravity is a two-derivative theory.** The algebra supplies every ingredient of an action (a scalar part, a Gram determinant as the volume element, a $\mathbb{B}$-valued connection, a curvature two-form) and supplies no principle that selects a derivative order, which is why the quadratic functional it most naturally suggests is Yang–Mills and not Einstein.
+
+Two candidate routes survive. The scalar curvature can be written as the trace of the squared Dirac operator plus the connection Laplacian, $R=\mathrm{tr}[(\tilde FD)^{2}+\Box]$, which makes the Hilbert action algebra-writable at the cost of presupposing the connection it uses. And the source can be sought as a Gram-like object, which fails today because the natural packaging is a trace and a trace annihilates the traceless part — the part a source needs.
+
+Even a solved action would leave the conformal factor and the measure open. The honest position is that this is the corpus's single hardest open object, that it is open for a reason that can be stated in one sentence, and that the negative route — a no-go for the traceless source — is the cheaper of the two attacks.
+
+## Further Reading
+
+- [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html), for the frame route, Route Three's connection, and the standing statement that there is no action.
+- [The Curved Dirac Operator and Its Square](the-curved-dirac-operator-and-its-square.html), for the Lichnerowicz identity $(\tilde F D)^{2}=-\Box+\tfrac14R$ on which Route One rests, and for its basis-operator caveat.
+- [The Gram Matrix as the Only Metric](the-gram-matrix-as-the-only-metric.html), for the volume element as a Gram determinant and for the congruence reading of the metric.
+- [Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source](cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html), for the rank-two carrier and the trace collapse of the perfect-fluid source.
+- [Quantum Gravity in the Biquaternion Framework: The Two-Sided Obstruction and the Modular Temperature](quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html), for the ordering argument that puts the action before any quantisation.
+- [Stress–Energy Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html) and [The Action Principle and the Non-Quantum Limit in Biquaternionic Form](the-action-principle-and-the-non-quantum-limit-in-biquaternionic-form.html), for the actions the corpus does have, which are the quadratic functionals this article contrasts with the Hilbert action.
+- *Curvature and Geodesics*, for the curvature conventions.

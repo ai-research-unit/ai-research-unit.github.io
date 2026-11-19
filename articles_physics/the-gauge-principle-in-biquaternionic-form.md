@@ -107,10 +107,10 @@ Then the covariant derivative built from the transformed connection, applied to 
 $$
 \begin{aligned}
 D_2(\lambda\tilde{Ξ})
-&=\tilde\nabla_\Phi(\lambda\tilde{Ξ})+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi,2}(\lambda\tilde{Ξ}) \
+&=\tilde\nabla_\Phi(\lambda\tilde{Ξ})+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi,2}(\lambda\tilde{Ξ}) \\
 &=\lambda\,\tilde\nabla_\Phi\tilde{Ξ}+\frac{i\,ϙ}{\hbar}\lambda(\tilde\nabla_\Phi\Gamma)\tilde{Ξ}
  +\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}\lambda\tilde{Ξ}
- -\frac{i\,ϙ}{\hbar}(\tilde\nabla_\Phi\Gamma)\lambda\tilde{Ξ} \
+ -\frac{i\,ϙ}{\hbar}(\tilde\nabla_\Phi\Gamma)\lambda\tilde{Ξ} \\
 &=\lambda\left(\tilde\nabla_\Phi\tilde{Ξ}+\frac{i\,ϙ}{\hbar}\tilde A_{\Phi}\tilde{Ξ}\right)
  =\lambda\,D\tilde{Ξ} .
 \end{aligned}

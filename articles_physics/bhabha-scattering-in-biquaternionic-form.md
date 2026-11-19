@@ -294,7 +294,7 @@ The framework supplies the two currents, the photon propagator, the external Foc
 
 4. **Luminosity and precision.** The Bhabha small-angle cross section is known to high order in $\alpha$; can the framework organize the higher-order terms through the Ward–Takahashi and Schwinger–Dyson identities of the corpus, or does it stop at tree level?
 
-5. **Weak corrections.** As in Møller scattering, $Z$ exchange and the parity-violating asymmetry belong to the framework's electroweak agenda; Bhabha scattering at and above the $Z$ pole is an asymmetry-sensitive target.
+5. **Weak corrections.** As in Møller scattering, $Z$ exchange and the parity-violating asymmetry belong to the framework's electroweak article; Bhabha scattering at and above the $Z$ pole is an asymmetry-sensitive target.
 
 6. **Empirical contact.** The article carries the standard cross section and no framework-specific prediction; the standing disclaimer applies.
 

@@ -289,14 +289,14 @@ so a factor of two in $M_H$ moves $S$ by $0.037$, about half the experimental un
 | The definitions of $S$, $T$, $U$ | imported, Peskin–Takeuchi |
 | The measured values | imported, PDG |
 | The one-loop Veltman bracket, and the estimate $N_c/(6\pi)$ for a degenerate chiral doublet | imported |
-| The particle content that fixes $N_c$ and the multiplicities | imported; a *no route yet* row of the agenda |
+| The particle content that fixes $N_c$ and the multiplicities | imported; a *no route yet* row of that article |
 
 **What the algebra contributes that is not a transcription.** Two things, and they are the reason the article can be written in this language at all.
 
 - **Transversality is structural.** The self-energy must lie in the projector $P$, and $P$ is the object article 7 already built to make the vector propagator invertible. So the same algebra that fixed the gauge produces the tensor structure of the vacuum polarisation, and no new machinery is needed.
 - **The count is a dimension.** The three parameters are the dimension of a quotient of the eight Taylor coefficients by five constraints, and a dimension is exactly what a linear-algebra framework can state without knowing the dynamics.
 
-**What the algebra does not contribute.** The numerical values, and the *existence* of the three parameters as measurements. The framework can say why three combinations survive; it cannot say what they are worth, because their worth is set by the particle content, and the particle content is the item the agenda classifies as having no route yet.
+**What the algebra does not contribute.** The numerical values, and the *existence* of the three parameters as measurements. The framework can say why three combinations survive; it cannot say what they are worth, because their worth is set by the particle content, and the particle content is the item that article classifies as having no route yet.
 
 **The strongest objection, and the answer.** The objection is that this article is standard theory with the author's notation on top, and the framework could be deleted without loss. The answer is that the deletion would lose the two structural statements above, and that those two are what make the article consistent with article 7 rather than merely adjacent to it: the same $P$ and $L$, the same Ward identity, the same $\Pi$. A transcription that did not use them would be a transcript; this one is a continuation.
 
@@ -314,7 +314,7 @@ A mass splitting shifts $T$ through the Veltman bracket, which is quadratic in $
 
 The standard large-$N$ estimate for a chiral doublet's contribution to $S$, $N_c/(6\pi)=0.053$, is the size of the experimental uncertainty. That coincidence is what makes the sector a precision test: one chiral doublet at the electroweak scale would be visible, and none is. A vector-like singlet, and any state with no isospin, shifts nothing at leading order, so the parameters measure multiplet structure and its breaking rather than the presence of heavy states. The oblique description is itself a hypothesis, tested by the fit's residuals, with a date on it.
 
-The framework supplies the transversality of the self-energy through article 7's projector and the dimension count as linear algebra. It does not supply the definitions, the numbers, or the particle content, and the particle content is the agenda's *no route yet* item.
+The framework supplies the transversality of the self-energy through article 7's projector and the dimension count as linear algebra. It does not supply the definitions, the numbers, or the particle content, and the particle content is the article's *no route yet* item.
 
 ## Summary of Notation
 
@@ -347,7 +347,7 @@ The framework supplies the transversality of the self-energy through article 7's
 - [Custodial Symmetry and the Rho Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The group-theoretic content of the custodial relation, and the earlier use of $\alpha T\approx\rho-1$.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The parameter table and the scheme column that $S$, $T$ and $U$ are not in.
 - [The Standard Model Lagrangian Assembled: Four Sectors in One Expression](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html). The sign rule that puts a corpus action beside a standard one.
-- [The Standard Model under the Biquaternion Framework: A Research Agenda](the-standard-model-under-the-biquaternion-framework-a-research-agenda.html). The classification that the last section uses.
+- [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The classification that the last section uses.
 
 - [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html). The strong sector that fixes $N_c$ in the bracket of §*What a Heavy Sector Would Shift*, and the colour factor that makes a quark doublet three times a leptonic one.
 - [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). The top mass that sets the reference subtraction, and the Higgs coupling whose scale dependence is the other half of the scheme question.

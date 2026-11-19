@@ -19,7 +19,7 @@ which was verified numerically to the finite-difference error. The two-derivativ
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone boson, its derivative couplings, its effective Lagrangian and its decay constant, whose abelian reduction this article generalises to the group-valued case.
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the linear model whose radial mode is integrated out.
 - Companion article *The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form*, for the loop-level treatment of the same scalar potential.
-- Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the framework's compact non-abelian structure and the programme the chiral case belongs to.
+- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, for the framework's compact non-abelian structure and the programme the chiral case belongs to.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the matter representation and the chiral obstruction at the level of the target manifold.
 - Companion article *The Skyrme Model and the Topological Baryon in Biquaternionic Form*, for the stabilising fourth-order term that turns the three-dimensional model into a soliton theory.
 
@@ -227,7 +227,7 @@ $$
 $$
 and the two statements together are the content of the model: flatness is what distinguishes the group-valued field from a general algebra-valued gauge potential.
 
-**What the framework does not supply here.** The two currents above are a left and a right adjoint current of $SU(2)$, but the framework's $SU(2)_V$ is realised on the group manifold and not on chirality. The axial current that a chiral Lagrangian pairs with the vector current — the $j_{5\mu}$ whose conservation would tie the sigma model to the fermion sector — is not produced by the centre, which is vector-like. The principal chiral model is therefore a global-symmetry construction available to the framework; the chiral current algebra is not. This is the same distinction that the companion articles on chiral fermions and on the Standard Model agenda record for the spinor sector, seen here at the level of the target manifold.
+**What the framework does not supply here.** The two currents above are a left and a right adjoint current of $SU(2)$, but the framework's $SU(2)_V$ is realised on the group manifold and not on chirality. The axial current that a chiral Lagrangian pairs with the vector current — the $j_{5\mu}$ whose conservation would tie the sigma model to the fermion sector — is not produced by the centre, which is vector-like. The principal chiral model is therefore a global-symmetry construction available to the framework; the chiral current algebra is not. This is the same distinction that the companion articles on chiral fermions and on the Standard Model record for the spinor sector, seen here at the level of the target manifold.
 
 ## The Abelian Target, the Compact Phase and the Axion
 
@@ -286,7 +286,7 @@ where $\Lambda$ is the scale of the sector that was integrated out — in the fr
 
 1. **Does the framework fix the normalisation of $f$?** The decay constant is the order parameter in units of the kinetic term; whether the framework's biquaternion norm or plain form fixes a preferred relation between $f$ and the vacuum value $v_0$, beyond the linear-model matching $f = \sqrt2\,v_0$, is not shown.
 
-2. **Is the unit quaternion the only non-abelian target available?** The framework's compact group is $SU(2)$; whether higher-rank targets can be built inside $\mathbb{B}$ or one of its modules — and hence whether an $SU(3)$ flavour sigma model is available — is not settled. The Standard Model agenda's flavour discussion bears on this.
+2. **Is the unit quaternion the only non-abelian target available?** The framework's compact group is $SU(2)$; whether higher-rank targets can be built inside $\mathbb{B}$ or one of its modules — and hence whether an $SU(3)$ flavour sigma model is available — is not settled. The Standard Model article's flavour discussion bears on this.
 
 3. **The Wess–Zumino–Witten level.** Whether the framework's spinor sector, once its chirality is fixed, supplies the anomaly coefficient that quantises the Wess–Zumino–Witten level is the question that would promote the geometric sigma model to an anomalous one. It is not answered here.
 

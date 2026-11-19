@@ -266,9 +266,9 @@ The note's "**remarkable coincidence**" is that $g^*$ is the same tensor as the 
 $$
 g^*_{\mu\nu} - g_{\mathrm{eff},\mu\nu} =
 \begin{pmatrix}
--b^2-c^2 & -ab & -ac & 0\
--ab & 2(b^2+c^2) & 0 & 0\
--ac & 0 & 2(b^2+c^2) & 0\
+-b^2-c^2 & -ab & -ac & 0\\
+-ab & 2(b^2+c^2) & 0 & 0\\
+-ac & 0 & 2(b^2+c^2) & 0\\
 0 & 0 & 0 & 2(b^2+c^2)
 \end{pmatrix},
 $$

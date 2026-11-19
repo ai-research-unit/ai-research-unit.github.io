@@ -195,8 +195,8 @@ The full polarization content of Thomson scattering is a linear map on the Stoke
 $$
 \frac{d\sigma_T}{d\Omega}:\quad
 \begin{aligned}
-I_{\mathrm{out}} &= \tfrac{r_e^2}{2}\bigl[(1+\cos^2\theta)\,I+\sin^2\theta\,Q\bigr] ,\
-Q_{\mathrm{out}} &= \tfrac{r_e^2}{2}\bigl[\sin^2\theta\,I+(1+\cos^2\theta)\,Q\bigr] ,\
+I_{\mathrm{out}} &= \tfrac{r_e^2}{2}\bigl[(1+\cos^2\theta)\,I+\sin^2\theta\,Q\bigr] ,\\
+Q_{\mathrm{out}} &= \tfrac{r_e^2}{2}\bigl[\sin^2\theta\,I+(1+\cos^2\theta)\,Q\bigr] ,\\
 \mathcal U_{\mathrm{out}} &= r_e^2\cos\theta\;\mathcal U ,\qquad
 \mathcal V_{\mathrm{out}} = r_e^2\cos\theta\;\mathcal V ,
 \end{aligned}

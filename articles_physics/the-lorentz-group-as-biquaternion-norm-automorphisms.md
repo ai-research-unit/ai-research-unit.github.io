@@ -306,7 +306,7 @@ preserving the complex quadratic form $\sigma = z_1^2+z_2^2+z_3^2 = -\langle\til
 The source's matrix realization differs from the $\mathsf{M}_2$ of the conventions above. It is the assignment
 
 $$
-\tilde{Q}\ \longmapsto\
+\tilde{Q}\ \longmapsto\\
 \begin{pmatrix}
 z_0+z_3 & z_1-iz_2\\
 z_1+iz_2 & z_0-z_3

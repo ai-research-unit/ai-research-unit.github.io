@@ -219,8 +219,8 @@ because $\lambda$ is a central scalar function and each derivative acts on it co
 $$
 \begin{aligned}
 \tilde\nabla_{\mathrm{gco},\Phi,2}(\lambda\tilde{Ξ}_{R})
-&= \tilde\nabla_\Phi(\lambda\tilde{Ξ}_{R}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\right)(\lambda\tilde{Ξ}_{R}) \
-&= \lambda\,\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{R} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{R} -\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{R} \
+&= \tilde\nabla_\Phi(\lambda\tilde{Ξ}_{R}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi} - \tilde\nabla_\Phi\Gamma\right)(\lambda\tilde{Ξ}_{R}) \\
+&= \lambda\,\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{R} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}\,\tilde{Ξ}_{R} -\frac{i\,ϙ}{\hbar}\left(\tilde\nabla_\Phi\Gamma\right)\lambda\tilde{Ξ}_{R} \\
 &= \lambda\left[\tilde\nabla_\Phi\tilde{Ξ}_{R} +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi}\tilde{Ξ}_{R}\right] = \lambda\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde{Ξ}_{R} .
 \end{aligned}
 $$
@@ -230,8 +230,8 @@ The two $\tilde\nabla_\Phi\Gamma$ terms cancel, and the central $\lambda$ moves 
 $$
 \begin{aligned}
 \tilde\nabla_{\mathrm{gco},\Phi,2}^{\natural}(\lambda\tilde{Ξ}_{L})
-&= (\tilde\nabla_\Phi)^{\natural}(\lambda\tilde{Ξ}_{L}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma\right)(\lambda\tilde{Ξ}_{L}) \
-&= \lambda\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{L} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{L} -\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{L} \
+&= (\tilde\nabla_\Phi)^{\natural}(\lambda\tilde{Ξ}_{L}) +\frac{i\,ϙ}{\hbar}\left(\tilde{A}_{\Phi}^{\natural} - (\tilde\nabla_\Phi)^{\natural}\Gamma\right)(\lambda\tilde{Ξ}_{L}) \\
+&= \lambda\,(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} +\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{L} +\frac{i\,ϙ}{\hbar}\lambda\,\tilde{A}_{\Phi}^{\natural}\,\tilde{Ξ}_{L} -\frac{i\,ϙ}{\hbar}\left((\tilde\nabla_\Phi)^{\natural}\Gamma\right)\lambda\tilde{Ξ}_{L} \\
 &= \lambda\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde{Ξ}_{L} .
 \end{aligned}
 $$

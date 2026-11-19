@@ -203,8 +203,8 @@ Let $V(x)=V_0$ on $0<x<a$ and zero elsewhere, with $E<V_0$. The solution is osci
 $$
 \xi_{\mathrm{scl}}(x) =
 \begin{cases}
-\exp(ikx)+r\exp(-ikx), & x<0,\
-A\,\exp(k_{\Phi,\mathrm{ev}} x)+B\,\exp(-k_{\Phi,\mathrm{ev}} x), & 0<x<a,\
+\exp(ikx)+r\exp(-ikx), & x<0,\\
+A\,\exp(k_{\Phi,\mathrm{ev}} x)+B\,\exp(-k_{\Phi,\mathrm{ev}} x), & 0<x<a,\\
 t\,\exp(ikx), & x>a,
 \end{cases}
 \qquad
