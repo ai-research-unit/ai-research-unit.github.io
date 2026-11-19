@@ -1,4 +1,4 @@
-# __The Bell Basis as the Idempotent Basis of B⊗B__
+# __The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$__
 
 ## Introduction
 
@@ -149,7 +149,7 @@ $$
 \vec e_\mu\otimes \vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)\in\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi} .
 $$
 
-So every $\tilde\Pi_\epsilon$ is an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, the space of two-qubit states and observables, as required.
+So every $\tilde\Pi_\epsilon$ is an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, the space of two-qubit states and observables, as required. That space is the whole Hermitian part of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$ and not half of it: the two aligned corners coincide, since $i\vec e_\mu\otimes i\vec e_\mu=-\vec e_\mu\otimes\vec e_\mu$ in the quotient. The four idempotents therefore span a slice of the algebra, which is [The Multi-Qubit Split, I](the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.html).
 
 **Identification with the standard Bell states.** Under the isomorphism, $\vec e_\mu$ corresponds to $-i\sigma_\mu$, so $\vec e_\mu\otimes \vec e_\mu$ corresponds to $-\sigma_\mu\otimes\sigma_\mu$. Writing $\tilde\Pi_\epsilon$ in the Pauli-string basis gives
 

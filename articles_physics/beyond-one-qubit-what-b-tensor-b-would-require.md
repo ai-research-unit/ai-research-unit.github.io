@@ -1,4 +1,4 @@
-# __Beyond One Qubit: What $\mathbb{B}\otimes\mathbb{B}$ Would Require__
+# __The Multi-Qubit Boundary: What $\mathbb{B}\otimes\mathbb{B}$ Would Require__
 
 ## Introduction
 
@@ -28,7 +28,7 @@ one real number, bilinear in the state and the observable.
 
 **The counting matches, and that is why the construction closes.** Three state parameters, three observable parameters after the trace is fixed, three channel parameters after the phase is quotiented out: the same three, and the same ball. The algebra is not a convenient notation for a two-level system; on one system it is the system.
 
-**The density operator is an element, not a matrix.** $\tilde{Ϛ}_\Psi$ is an element of $\mathbb{B}_\Psi$, and its $2\times2$ image is a representative. The product $\tilde{Ϛ}_\Psi\tilde A$ is an element, and its scalar part is the weight. No column, no tensor index and no basis enters.
+**The density operator is an element, not a matrix.** $\tilde{Ϛ}_\Psi$ is an element of $\mathbb{B}_{\Psi}$, and its $2\times2$ image is a representative. The product $\tilde{Ϛ}_\Psi\tilde A$ is an element, and its scalar part is the weight. No column, no tensor index and no basis enters.
 
 ## The Tensor Product
 
@@ -44,7 +44,7 @@ of complex dimension sixteen. The isomorphism is not a relabelling of the biquat
 
 **The obstruction is a class, not a convention.** In the Brauer group of $\mathbb{C}$ every central simple algebra is trivial, so the statement is the degree count above and nothing deeper; over $\mathbb{R}$ the same composition is the statement that the quaternion class has order two, so two copies of $\mathbb{H}$ are a matrix algebra over $\mathbb{R}$ and not a quaternion algebra. Either way the class is additive under the tensor product, and the one-system class plus itself is not the one-system class. **A second system doubles the degree, and the algebra of degree two exists only once.**
 
-**The star extends and the slices survive as a splitting.** With $(\tilde Q\otimes\tilde Q')^{*}=\tilde Q^{*}\otimes\tilde Q'^{*}$ the involution is an anti-automorphism: the star of a product reverses the order in both factors and therefore reverses the order of the product. So the sixteen-dimensional real space splits into an eight-dimensional Hermitian part and an eight-dimensional anti-Hermitian part, and the splitting is canonical. What is *not* canonical is a product on either part: the Hermitian part of $M_4(\mathbb{C})$ is not closed under multiplication, and neither is the anti-Hermitian part. The one-system algebra had a product that will be used; the two-system algebra has only the commutator and the anticommutator, which is the ordinary quantum-mechanical situation the corpus was built to avoid.
+**The star extends and the slices survive as a splitting.** With $(\tilde Q\otimes\tilde Q')^{*}=\tilde Q^{*}\otimes\tilde Q'^{*}$ the involution is an anti-automorphism: the star of a product reverses the order in both factors and therefore reverses the order of the product. So the thirty-two-dimensional real algebra splits into a sixteen-dimensional Hermitian part and a sixteen-dimensional anti-Hermitian part, and the splitting is canonical. What is *not* canonical is a product on either part: the Hermitian part of $M_4(\mathbb{C})$ is not closed under multiplication, and neither is the anti-Hermitian part. The one-system algebra had a product that will be used; the two-system algebra has only the commutator and the anticommutator, which is the ordinary quantum-mechanical situation the corpus was built to avoid.
 
 **What a state would have to be.** A state must be a positive element of trace one in the Hermitian part: fifteen parameters, of which the two "marginal" six are the two Bloch vectors and the remaining nine are the correlations. Those nine have no representative in $\mathbb{B}$: an element of the algebra has four, and a pair of elements has eight, and the ninth — the one that entanglement needs — is exactly the part that the tensor product adds and the algebra cannot supply.
 

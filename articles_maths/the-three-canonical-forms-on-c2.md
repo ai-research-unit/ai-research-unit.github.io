@@ -6,7 +6,7 @@ The duo-complex numbers carry three canonical forms: the Hermitian form $H$, the
 
 The article treats the forms on the space alone. The isometry groups are *The Classical Groups of $\mathbb{C}^2$*; the Kähler structure they define is *The Flat Kähler Structure of $\mathbb{C}^2$*; the real inertias are also read in *The Realification of $\mathbb{C}^2$*, and the computations are repeated here only where the complex statement needs them. The general theory of bilinear and sesquilinear forms is *Bilinear Forms* and *The Sesquilinear Structure of the Endomorphism Algebra*; this article does not restate it.
 
-**The three forms are of three different kinds and are not three normalisations of one object.** $H$ is sesquilinear and definite; $B$ is symmetric and indefinite; $\omega$ is alternating and nondegenerate. The first carries the metric, the second the isotropic cone, the third the holomorphic symplectic structure. One table at the end of the article collects them.
+**The three forms are of three different kinds and are not three normalisations of one object.** $H$ is sesquilinear and definite; $B$ is symmetric and indefinite; $\omega$ is alternating and nondegenerate. The first carries the metric, the second the isotropic cone, the third the holomorphic symplectic structure. One table at the end of the article collects them. Their use does not stop at one system: carried to tensor powers the three become the metric, the norm and the entanglement pairing, which is the subject of [The Duo-Complex Bridge: The Three Canonical Forms and Their Tensor Powers](../articles_physics/the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html). There the tensor square of $\omega$ evaluates on a two-qubit state to $2\det c$, the determinant of the coefficient array, so the concurrence of two qubits is the alternating form of this article applied to both factors.
 
 ## The Hermitian Form
 
@@ -242,5 +242,6 @@ The three are related by $H(Q_1,Q_2)=B(Q_1,\overline{Q}_2)$, by the Lagrange ide
 - [The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$](the-isotropic-cone-of-the-bilinear-form-on-c2.html), for the cone as a real object and its image in $\mathbb{CP}^1$.
 - [The Flat Kähler Structure of $\mathbb{C}^2$](the-flat-kahler-structure-of-c2.html), for the metric, the Kähler form and the isometries.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-c2.html), for the groups that preserve each form.
+- [The Duo-Complex Bridge: The Three Canonical Forms and Their Tensor Powers](../articles_physics/the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html), for the three forms carried to tensor powers, where $H$ gives the metric, $B$ the norm and $\omega$ the entanglement pairing.
 - [Bilinear Forms](bilinear-forms.html), for the general theory of symmetric and alternating forms.
 - [The Sesquilinear Structure of the Endomorphism Algebra](the-sesquilinear-structure-of-the-endomorphism-algebra.html), for the general theory of Hermitian forms.

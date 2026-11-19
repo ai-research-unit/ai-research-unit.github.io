@@ -51,11 +51,11 @@ Three measures are used below, all standard.
 
 **Schmidt coefficients.** A pure two-qubit state admits the decomposition $|\tilde{Ξ}\rangle = \sum_{i=1}^2 s_i\,|a_i\rangle|b_i\rangle$ with $s_i\geq0$ and $s_1^2+s_2^2=1$; the $s_i^2$ are the eigenvalues of either reduced state, and the state is a product if and only if one coefficient vanishes.
 
-**Concurrence.** With the two-qubit spin-flip $\tilde{Ξ} = (i\sigma_2)\otimes(i\sigma_2)$ in the matrix model, the concurrence of a pure state is
+**Concurrence.** With the two-qubit spin-flip $\tilde{\mathcal S}=(i\sigma_2)\otimes(i\sigma_2)$ in the matrix model, the concurrence of a pure state is
 $$
-C(|\tilde{Ξ}\rangle) = \bigl|\langle\tilde{Ξ}|\,\tilde{Ξ}\,|\tilde{Ξ}^*\rangle\bigr| = 2\,s_1s_2 ,
+C(|\tilde{Ξ}\rangle) = \bigl|\langle\tilde{Ξ}|\,\tilde{\mathcal S}\,|\tilde{Ξ}^*\rangle\bigr| = 2\,s_1s_2 ,
 $$
-vanishing on product states and equal to $1$ on the Bell states; for a mixed state $\tilde{Ϛ}_{\Psi}$ it is $C(\tilde{Ϛ}_{\Psi}) = \max(0,\lambda_1-\lambda_2-\lambda_3-\lambda_4)$, where $\lambda_1\geq\lambda_2\geq\lambda_3\geq\lambda_4$ are the square roots of the eigenvalues of the Hermitian positive-semidefinite matrix $\tilde{Ϛ}_{\Psi}^{1/2}\,\tilde{Ξ}\tilde{Ϛ}_{\Psi}^{*}\tilde{Ξ}\,\tilde{Ϛ}_{\Psi}^{1/2}$.
+vanishing on product states and equal to $1$ on the Bell states; for a mixed state $\tilde{Ϛ}_{\Psi}$ it is $C(\tilde{Ϛ}_{\Psi}) = \max(0,\lambda_1-\lambda_2-\lambda_3-\lambda_4)$, where $\lambda_1\geq\lambda_2\geq\lambda_3\geq\lambda_4$ are the square roots of the eigenvalues of the Hermitian positive-semidefinite matrix $\tilde{Ϛ}_{\Psi}^{1/2}\,\tilde{\mathcal S}\tilde{Ϛ}_{\Psi}^{*}\tilde{\mathcal S}\,\tilde{Ϛ}_{\Psi}^{1/2}$.
 
 **Entanglement entropy.** For a pure joint state it is the von Neumann entropy of either reduced state, $E = S(\mathrm{Tr}_2\tilde\Pi) = -s_1^2\log s_1^2 - s_2^2\log s_2^2$, and it is a function of the single invariant $s_1^2$. For mixed joint states the partial-trace entropy is a marginal entropy and not an entanglement measure, as the companion exercise records; the concurrence is used for mixed states below.
 
@@ -152,7 +152,7 @@ $$
 $$
 to be a maximally entangled state of $A$ and $B$, let $A$ carry the symmetric two-branch momentum superposition with $\theta = 0.8$ and speed $0.5c$, and let $B$ carry a sharp momentum along the boost axis. Boosting with rapidity $\theta_{\mathrm{rpd}}$ gives, for the spin state after tracing the momentum,
 
-| $\tilde{Ξ}$ | $C(\tilde{Ϛ}_{\Psi,\mathrm{spin}})$ | $S(\tilde{Ϛ}_{\Psi,\mathrm{spin}})$ |
+| $\theta_{\mathrm{rpd}}$ | $C(\tilde{Ϛ}_{\Psi,\mathrm{spin}})$ | $S(\tilde{Ϛ}_{\Psi,\mathrm{spin}})$ |
 |---:|---:|---:|
 | $0$ | $1.00000000$ | $0.000000$ |
 | $0.5$ | $0.99514440$ | $0.024587$ |
@@ -164,8 +164,8 @@ where $C$ is the concurrence and $S$ is the von Neumann entropy of the two-qubit
 
 If both particles carry momentum superpositions whose branch directions differ, the effect is larger, because then the local channel is non-trivial on both factors. For $A$ superposed in the boost–$x$ plane at $\theta_A = 0.8$ and $B$ superposed in the boost–$y$ plane at $\theta_B = 2.0$, also at speed $0.5c$, the same initial state gives
 $$
-\tilde{Ξ} = 1:\ C = 0.95881842,\quad S = 0.166051; \qquad
-\tilde{Ξ} = 2:\ C = 0.88816953,\quad S = 0.372196 .
+\theta_{\mathrm{rpd}} = 1:\ C = 0.95881842,\quad S = 0.166051; \qquad
+\theta_{\mathrm{rpd}} = 2:\ C = 0.88816953,\quad S = 0.372196 .
 $$
 The comparison of the two tables isolates the origin of the effect: what matters is not the boost alone nor the momentum spread alone, but the mismatch between the Wigner rotations of the branches that are traced over.
 
@@ -181,7 +181,7 @@ because every Wigner rotor is $*$-unitary. The maximally mixed spin state is the
 
 The spinor description makes the invariant and the non-invariant parts of the concurrence visible. On the spinor module, a pure two-qubit state is a four-component object $\tilde{Ξ}\in S\otimes S$, and the Lorentz group acts by $\tilde U_{\mathrm{lor}}\otimes\tilde U_{\mathrm{lor}}$ with $\langle\tilde U_{\mathrm{lor}}\rangle_{\natural} = 1$. With the symplectic form
 $$
-\epsilon = \begin{pmatrix}0 & 1\ -1 & 0\end{pmatrix}, \qquad
+\epsilon = \begin{pmatrix}0 & 1\\-1 & 0\end{pmatrix}, \qquad
 \tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\,\tilde U_{\mathrm{lor}} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\,\epsilon = \epsilon ,
 $$
 the **symplectic concurrence**
@@ -217,11 +217,11 @@ $$
 $$
 which is verified to machine precision at several rapidities. The angle increases monotonically with both rapidities, tends to $\arctan(\sinh\theta_{\mathrm{rpd}})$ as $\xi\to\infty$, and is bounded by $\pi/2$.
 
-**Small rapidities.** Expanding the same configuration for small $\tilde{Ξ},\xi$ gives
+**Small rapidities.** Expanding the same configuration for small $\theta_{\mathrm{rpd}},\xi$ gives
 $$
-\theta_{\mathrm{wgn}} = \tfrac12\,\tilde{Ξ}\xi\,\sin\theta + O(3),
+\theta_{\mathrm{wgn}} = \tfrac12\,\theta_{\mathrm{rpd}}\,\xi\,\sin\theta + O(3),
 $$
-with the coefficient $1/2$ confirmed by a numerical limit in which both rapidities are driven to zero at fixed ratio; since $\tilde{Ξ}\approx v/c$ and $\xi\approx v_b/c$ at low speed, this is the leading Thomas–Wigner term $\theta_{\mathrm{wgn}}\approx v\,v_b\sin\theta/(2c^2)$, the rotation that accompanies the composition of two non-collinear boosts.
+with the coefficient $1/2$ confirmed by a numerical limit in which both rapidities are driven to zero at fixed ratio; since $\theta_{\mathrm{rpd}}\approx v_b/c$ and $\xi\approx v/c$ at low speed, this is the leading Thomas–Wigner term $\theta_{\mathrm{wgn}}\approx v\,v_b\sin\theta/(2c^2)$, the rotation that accompanies the composition of two non-collinear boosts.
 
 **The maximum.** For fixed rapidities the angle vanishes at the endpoints and has a single maximum in between. For a boost of rapidity $\theta_{\mathrm{rpd}} = 1.5$ and a particle of speed $0.5c$, the angle rises from $0$ at $\theta = 0$ through $11.40^\circ$ at $30^\circ$ and $15.58^\circ$ at $45^\circ$ to a maximum of $19.60^\circ$ near $\theta = 80^\circ$, then returns to $0$ at $\theta = 180^\circ$. The maximum is therefore attained, to within a few degrees, at perpendicular momentum, but the exact location is somewhat below $90^\circ$ and drifts as the rapidities change.
 
@@ -263,7 +263,7 @@ The invariant behind the computation is the spinor symplectic concurrence $\math
 | $\mathrm{Tr}_2$ | Partial trace over the second factor |
 | $\tilde\Pi_{\mathrm{singlet}} = \tfrac14\bigl(e_t\otimes e_t+\sum_{\eta=x,y,z}\vec e_\eta\otimes \vec e_\eta\bigr)$ | Singlet idempotent |
 | $s_1,s_2$ | Schmidt coefficients, $s_1^2+s_2^2=1$ |
-| $C(|\tilde{Ξ}\rangle) = \|\langle\tilde{Ξ}|\tilde{Ξ}|\tilde{Ξ}^*\rangle\|$ | Concurrence, $\tilde{Ξ}=(i\sigma_2)\otimes(i\sigma_2)$ |
+| $C(|\tilde{Ξ}\rangle) = \bigl|\langle\tilde{Ξ}|\,\tilde{\mathcal S}\,|\tilde{Ξ}^*\rangle\bigr|$ | Concurrence, spin flip $\tilde{\mathcal S}=(i\sigma_2)\otimes(i\sigma_2)$ |
 | $E = S(\mathrm{Tr}_2\tilde\Pi)$ | Entanglement entropy of a pure state |
 | $\tilde{V}_{\Phi,j}$ | Four-velocity of particle $j$, $\langle\tilde{V}_{\Phi,j}\rangle_{\natural} = -c^2$ |
 | $\tilde U_{\mathrm{Wig}}(\tilde U_{\mathrm{lor}},\tilde{V}_{\Phi}) = \tilde U_{\mathrm{lor},\tilde{V}_{\Phi,\mathrm{out}}}\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor},\tilde{V}_{\Phi}}{}^{-1}\in SU(2)$ | Wigner rotation, $\tilde V_{\Phi,\mathrm{out}}=\tilde U_{\mathrm{lor}}\tilde V_{\Phi}\tilde U_{\mathrm{lor}}{}^{*}$ |
