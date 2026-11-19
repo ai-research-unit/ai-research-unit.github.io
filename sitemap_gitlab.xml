@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://a-i-research-unit.gitlab.io/index.html</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/disclaimer.html</loc>
@@ -62,6 +62,10 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-axf-matrices-axis-free-integer-entries.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/ai-advances-quantum-physics.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>

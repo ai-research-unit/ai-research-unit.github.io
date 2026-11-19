@@ -26,6 +26,9 @@ import build
 
 
 def main():
+    # Before the state is read and stamped: a copy written here is this build's
+    # input, not the next build's change.
+    build.sync_index()
     started = datetime.now()
 
     since = build.read_state()

@@ -1,7 +1,6 @@
 # __AI Physics__
 
 ## Biquaternion Universe
-## Biquaternion Universe
 
 ### Programme & Motivation
 
@@ -46,6 +45,9 @@
 <a href="articles_physics/the-axf-matrices-axis-free-integer-entries.html">The AXF Matrices: Axis-Free, Integer Entries</a>
 <!-- the AXF display, the axis-free family built in the coefficient basis: the two families, the stitch $R=DL^{\mathsf T}D$ with $D=\operatorname{diag}(1,-1,-1,-1)$, the ten properties of the sixteen arrays (integer entries, signed permutations, orthogonality, entries equal to the structure constants, the transpose as the quaternion conjugation, the real diagonal stitch, the quaternion group on $\mathbb{R}^4$, cyclic symmetry, the real slice, determinant one), the uniqueness among signed-permutation frames, the four norms as quarter-traces, the six subspaces as four entrywise conditions; read as the operator that is unique and the array that is a conjugacy class, the display that chooses no spatial direction and carries the sign pattern as a sign, and the frame that is legible in its own entries. the refusal of the Pauli and the gamma displays, the direction each carries in its notation, the covariance test, the intrinsic form and the migration rules, as the section *Why the Pauli and the Gamma Displays Are Refused* -->
 
+<a href="articles_physics/ai-advances-quantum-physics.html">AI Advances Quantum Physics</a>
+<!-- quantum physics in the informational sector, written as one self-contained article: the Hermitian subspace and the two forms it carries, the Hermitian form against the biquaternion norm; the states, pure as the idempotents and mixed as the Bloch ball; the observables and their compatibility; the Born rule from the Hermitian form, with the expectation values, the probabilities, the measurement update and the normalisation by the scalar part; the dynamics in the Schrödinger and the Heisenberg picture, and reversibility; measurement as the algebraic operation; purity, the spectral decomposition, the entropy and the fidelity; the symmetries, the $*$-unitary group, the unit quaternions as spin rotations and the Lie algebra; the ten-point checklist applied; the compatibility with relativity; then what is structural, what is new and the open questions. -->
+
 <a href="articles_physics/ai-describes-the-lorentz-group.html">AI describes the Lorentz Group</a>
 <!-- one name, stated in bold at the head of the article: $\mathrm{SO}^{+}(1,3)$, the identity component of the maps with $\Lambda^{\mathsf T}\eta\Lambda=\eta$, fixed by $\det\Lambda=+1$ and $\Lambda^{0}{}_{0}\ge1$, which is the group of changes of frame; the discrete signs are the only reason the family is larger, and no other group is named. Six parameters from ten conditions out of sixteen entries, three boosts and three rotations, and every element a boost times a rotation, $\Lambda=\Lambda_{\mathrm b}\Lambda_{\mathrm{rot}}$, uniquely, though only the rotations close. The same group in the algebra: the unit elements $N(\tilde U)=1$ form $\mathrm{SL}(2,\mathbb{C})$ and act on a four-vector by the two-sided Hermitian pair $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, which preserves the interval because the norm is multiplicative, the kernel $\{\pm e_t\}$ leaving the operators exactly $\mathrm{SO}^{+}(1,3)$. The unit element is a boost times a rotation with the two exponentials, and the two factors act as the boost and the rotation. -->
 
@@ -60,7 +62,7 @@
 <a href="articles_physics/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a>
 <!-- what would count as a test; the standing agreement domain by domain; why agreement is not confirmation; candidate tests; what would settle it. physical readings. -->
 
-### Conventions & Notation
+### Conventions & Notations
 
 <a href="articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>
 <!-- the first of the ten conventions articles, and the one that fixes the base: the algebra and its basis, the base and its units, the element and its coefficients, the remarkable subspaces and the conjugations; the nine companion articles that carry the rest of the conventions, in dependency order. no physical readings. -->

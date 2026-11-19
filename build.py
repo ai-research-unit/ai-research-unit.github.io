@@ -197,6 +197,29 @@ def ensure_dirs():
         coll["deploy"].mkdir(parents=True, exist_ok=True)
 
 
+INDEX_SOURCE = SRC / "articles_physics" / "introduction-to-the-biquaternion-universe.md"
+INDEX_TARGET = SRC / "index.md"
+
+
+def sync_index():
+    """Rewrite index.md as a copy of the introduction article.
+
+    The landing page is the introduction, so it is generated and not edited by
+    hand: editing index.md is undone by the next build. The write is skipped
+    when the content already matches, so an unchanged article leaves index.md's
+    mtime alone and the incremental build in build2.py stays incremental.
+    """
+    if not INDEX_SOURCE.exists():
+        print(f"Warning: {INDEX_SOURCE.relative_to(SRC)} not found — index.md kept as it is.")
+        return False
+    source = INDEX_SOURCE.read_text(encoding="utf-8")
+    if INDEX_TARGET.exists() and INDEX_TARGET.read_text(encoding="utf-8") == source:
+        return False
+    INDEX_TARGET.write_text(source, encoding="utf-8")
+    print("Synced: index.md ← articles_physics/introduction-to-the-biquaternion-universe.md")
+    return True
+
+
 def newer_than(path, since):
     """True when `path` exists and was modified after `since` (a datetime)."""
     return path.exists() and path.stat().st_mtime > since.timestamp()
@@ -540,6 +563,9 @@ def run_convention_check():
 
 
 def main():
+    # Before the state is stamped: the copy it may write must not look newer
+    # than this build, or the next incremental run rebuilds index.html for nothing.
+    sync_index()
     started = datetime.now()
 
     write_ai_physics_overview()
