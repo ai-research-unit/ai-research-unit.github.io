@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Multi-Qubit Extension: The Two Corners Collapse and a Central Bit Appears — Biquaternion Universe</title>
+  <meta name="description" content="The corpus says it once, in the introduction, and the sentence is exact. The quantum formalism presented in the companion article is for a single qubit.…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-multi-qubit-extension-the-two-corners-collapse-and-a-central-bit-appears"><strong>The Multi-Qubit Extension: The Two Corners Collapse and a Central Bit Appears</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The corpus says it once, in the introduction, and the sentence is exact.</strong> <em>The quantum formalism presented in the companion article is for a single qubit.</em> The extension to $n$ qubits is listed there as open. The digest records the identity $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ and stops.</p>
+<p><strong>The claim of this note is that the missing piece is not the tensor product.</strong> The corpus already owns a two-qubit literature of a dozen articles. The tensor product is written down, the scalar part is defined, the reductions are computed, the Bell basis is built, and the CHSH bound is derived. What none of those articles asks is what happens to the material/informational split when a second system is adjoined. The answer is sharp and it is not the expected one.</p>
+<p><strong>Three statements carry the answer.</strong></p>
+<ol>
+<li>The split does not tensor. The sector projection of one factor is an antilinear involution, and an antilinear involution of one factor is not well defined on the complex tensor product. The two-line obstruction is the relation $i\otimes1=1\otimes i$, which the partial projection sends to a nonzero element. So no two-qubit observable carries a "material" or an "informational" label per subsystem.</li>
+<li>The two corners nonetheless coincide. Over $\mathbb{C}$, the image of $\mathbb{B}_{\Psi}\otimes_\mathbb{R}\mathbb{B}_{\Psi}$ and the image of $\mathbb{B}_{\Phi}\otimes_\mathbb{R}\mathbb{B}_{\Phi}$ are the same sixteen-dimensional real subspace, and it is the whole Hermitian part. So every two-qubit observable is a real combination of informational-informational tensors, and also a real combination of material-material tensors, and neither description is preferred.</li>
+<li>Over $\mathbb{R}$ the pair is twice as large, and the extra half is a central bit. $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$ is $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, split by the central involution $J=i\otimes i$. The physical complex tensor product is one summand; the other is the tensor product with the conjugate complex structure, which is the material/informational swap of one subsystem. Composition therefore creates exactly the central split that the single algebra does not have, and the physical choice of scalars discards it.</li>
+</ol>
+<p><strong>What the split does do in the pair, positively.</strong> Positivity of the eight diagonal Hermitian candidates is exactly the sign condition $\epsilon_1\epsilon_2\epsilon_3=+1$. The four that satisfy it are the Bell projectors. The four that violate it are $\tfrac12 e_t\otimes e_t-\tilde\Pi$, of spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$, and they are not states. The split appears in the pair as a constraint on signs, not as a label on factors.</p>
+<p><strong>What was recomputed for this note.</strong> The partial projection on the defining relation, exact. The non-descendence of the partial star, exact on the relation and on five random products. The two corners, rank sixteen of sixteen and stacked rank sixteen. The real tensor product, sixty-four real dimensions, centre of real dimension four, $J^2=e_t\otimes e_t$, $J$ central, two central idempotents, components of real dimension thirty-two with centre of real dimension two. The eight diagonal candidates, four idempotents with spectrum $(0,0,0,1)$ and four with spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$. The eight reductions, all $\tfrac12 e_t$. The concurrence identity in the Bell basis, two hundred random normalised states, zero failures. The star as an anti-automorphism of $\mathbb{B}$, sixty-four of sixty-four basis products.</p>
+<p><strong>This is an analysis and a plan, not a corpus change.</strong> No article is modified here. The three places where the existing corpus is loose are reported at the end of the inventory, not patched.</p>
+<h2 id="what-the-corpus-already-has">What the Corpus Already Has</h2>
+<p><strong>The two-qubit literature exists and is not small.</strong> It is worth listing, because the question "what is missing" can only be answered against what is present.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>What it fixes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../articles_physics/beyond-one-qubit-what-b-tensor-b-would-require.html">Beyond One Qubit: What $\mathbb{B}\otimes\mathbb{B}$ Would Require</a></td>
+<td>The degree count, the obstruction, the verdict that the sector reading stops at one system</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/entangled-subsystems-in-the-biquaternion-framework.html">Entangled Subsystems in the Biquaternion Framework</a></td>
+<td>The two-qubit arena, the scalar part, the reductions, the singlet</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html">The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</a></td>
+<td>Four Bell idempotents, orthogonality, completeness, the stabiliser spectrum</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-correlation-function-of-the-bell-states.html">Exercise: The Correlation Function of the Bell States</a></td>
+<td>The four sign patterns and their correlations</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-two-spins-in-the-singlet-state.html">Exercise: Two Spins in the Singlet State</a></td>
+<td>The singlet as one whole, with one reduction</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-reduced-state-of-an-entangled-subsystem.html">Exercise: The Reduced State of an Entangled Subsystem</a></td>
+<td>Rank inflation under the partial scalar part</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-teleportation-in-biquaternionic-form.html">Quantum Teleportation in Biquaternionic Form</a></td>
+<td>Three factors, $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/exercise-the-chsh-inequality-and-tsirelsons-bound.html">Exercise: The CHSH Inequality and Tsirelson's Bound</a></td>
+<td>The Bell operator as one element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/entanglement-entropy-and-the-replica-trick-in-biquaternionic-form.html">Entanglement Entropy and the Replica Trick</a></td>
+<td>Entropy from tensor powers</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.html">The Area Law of Entanglement Entropy</a></td>
+<td>The scaling statement</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/quantum-discord-and-correlations-beyond-entanglement-in-biquaternionic-form.html">Quantum Discord and Correlations Beyond Entanglement</a></td>
+<td>Correlations that are not entanglement</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/covariant-qubit-channels.html">Covariant Qubit Channels</a></td>
+<td>Channels as congruences</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form.html">No-Cloning and the Algebraic Obstruction</a></td>
+<td>The quadratic cloning map against affine evolution</td>
+</tr>
+<tr>
+<td><a href="../articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">Higher Spin from Tensor Products</a></td>
+<td>The module route, $S^{\otimes 2s}$, and where it stops</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three mathematics articles in the same corpus are also part of the answer, and they were not counted.</strong> <em>The Three Canonical Forms on $\mathbb{C}^2$</em> defines $H$, $B$ and $\omega$ and proves them not proportional. <em>The Tensor Square of $\mathbb{C}^2$</em> proves the splitting $\mathbb{C}^2\otimes\mathbb{C}^2=\operatorname{sym}^2\oplus\Lambda^2$ from the swap alone. <em>The Category of Modules</em> parametrises the minimal left ideals by $\mathbb{P}^1(\mathbb{C})$ and records there is no fixed ideal under the real structure. The last of the three is the article whose sentence was, in an earlier draft of this note, wrongly reported as an error. It is correct, and the wrong report is recorded at the end of the appendix.</p>
+<p><strong>The verdict is already written and it is right.</strong> <em>Beyond One Qubit</em> concludes that the state of one system is an element of the algebra and the state of two is not. It gives three supports: the dimension count, the degree-four algebra, and the absence of a product on either star-eigenspace of $M_4$. This note does not overturn that verdict. It sharpens the reason and adds the one structure the verdict does not mention.</p>
+<p><strong>Three places where the existing writing is loose, all of the same kind.</strong> None changes a result; each changes a sentence.</p>
+<ul>
+<li><em>The Bell basis article.</em> It says that each Bell state is an idempotent of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$, and later justifies the anti-Hermitian terms by $\vec e_\mu\otimes\vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)$. That identity is true in the complex tensor product and false in the real one. Read as a real tensor product, the claim is wrong; read as the complex tensor product, $\mathbb{B}_{\Psi}\otimes_\mathbb{C}\mathbb{B}_{\Psi}$ is the whole algebra and the claim is vacuous. The correct object is the real span of the decomposable tensors $h\otimes h'$ with $h,h'$ Hermitian, and the identity quoted is precisely the theorem that this span is everything Hermitian. The article contains the proof of the collapse and uses it as a licence for the label; the two should be separated.</li>
+<li><em>The entangled-subsystems and teleportation articles.</em> They write $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Psi}^{\otimes 3}$ without saying whether the tensor is over $\mathbb{R}$ or over $\mathbb{C}$. Every computation there is correct, because the reductions are $\mathbb{C}$-linear and the products used are associative. The notation is what is undefined.</li>
+<li><em>The digest.</em> It records $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$ and calls the sector story complicated without saying how. The complication is not dimensional. It is that the split is a real structure.</li>
+</ul>
+<p><strong>One question the corpus asks twice and answers neither time.</strong> <em>Beyond One Qubit</em> and the Bell basis article both record the open question whether the tensor product is natural for the framework. This note does not settle it either. It shows what the choice costs on each side.</p>
+<h2 id="the-split-is-a-real-structure">The Split Is a Real Structure</h2>
+<p><strong>The definitions are the ones of the two-sectors article.</strong> The star is Hermitian conjugation, the antilinear anti-automorphism of $\mathbb{B}$ that fixes $\mathbb{B}_{\Psi}$ and negates $\mathbb{B}_{\Phi}$. With $\tilde Q=z_0e_t+z_1\vec e_x+z_2\vec e_y+z_3\vec e_z$, the condition $\tilde Q^{*}=\tilde Q$ reads $z_0=\bar z_0$ and $z_k=-\bar z_k$. The informational sector has the real basis $\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ and the material sector the real basis $\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$. Each is four-real-dimensional, and</p>
+<p>$$
+\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi},\qquad i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi},\qquad i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}.
+$$</p>
+<p><strong>The last identity is the one that matters, and it is not a defect.</strong> Multiplication by $i$ exchanges the sectors. So the split is not a $\mathbb{Z}_2$-grading by a complex-linear operator; it is the eigenspace decomposition of an antilinear involution. The sectors are real subspaces, not complex ones. The obstruction catalogue records this as O16 and reads it as the statement that the Hermitian sector carries no intrinsic complex structure.</p>
+<p><strong>The consequence for composition is a general fact about real structures.</strong> A real structure on a complex algebra is an antilinear involution. Real structures do not tensor. If $\sigma_1$ is a real structure on $A$ and $\sigma_2$ one on $B$, then $\sigma_1\otimes\sigma_2$ is a real structure on $A\otimes_\mathbb{C}B$, and it is the only one the tensor product produces. Neither $\sigma_1\otimes\mathrm{id}$ nor $\mathrm{id}\otimes\sigma_2$ is available, because each is conjugate-linear in one slot and the tensor product over $\mathbb{C}$ identifies the two imaginary units. The next section makes the failure exact.</p>
+<p><strong>The physical consequence is stated before the computation.</strong> A two-qubit observable has one parity, not two. It is Hermitian or anti-Hermitian, and that parity is the product of the parities of its factors. It does not carry the parity of the first factor as a separate datum. The sector vocabulary therefore describes a subsystem only while there is one subsystem.</p>
+<h2 id="the-partial-projection-does-not-descend">The Partial Projection Does Not Descend</h2>
+<p><strong>Set up the real tensor product first.</strong> Write $V=\mathbb{B}$ as a real vector space and $V=V_+\oplus V_-$ for the two sectors. On $V\otimes_\mathbb{R}V$ define</p>
+<p>$$
+\sigma_1=\star\otimes\mathrm{id},\qquad \sigma_2=\mathrm{id}\otimes\star,\qquad \sigma=\star\otimes\star .
+$$</p>
+<p>Each is a real-linear involution. On the basis of decomposable tensors, $\sigma_1(x\otimes y)=x^{*}\otimes y$.</p>
+<p><strong>The star is an anti-automorphism, and the partial maps are not.</strong> The first statement was checked on all sixty-four products of real basis elements of $\mathbb{B}$, with no failure: $(xy)^{*}=y^{*}x^{*}$ holds on the algebra. The second was checked on five random products in $V\otimes_\mathbb{R}V$, with five failures: $\sigma_1(xy)\neq\sigma_1(y)\sigma_1(x)$ in general. So $\sigma_1$ is an involution and not an anti-automorphism, and it is not a star in the operative sense.</p>
+<p><strong>The obstruction is the defining relation of the complex tensor product.</strong> Let</p>
+<p>$$
+r=i\otimes e_t-e_t\otimes i .
+$$</p>
+<p>The complex tensor product $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$ is the quotient of $V\otimes_\mathbb{R}V$ by the linear span of the elements $ix\otimes y-x\otimes iy$ with $x,y\in V$; the element $r$ is the case $x=y=e_t$. Applying $\sigma_1$,</p>
+<p>$$
+\sigma_1(r)=\overline{i}\otimes e_t-e_t\otimes i=-i\otimes e_t-e_t\otimes i ,
+$$</p>
+<p>which is nonzero and is not a multiple of $r$. So one element of the kernel is sent outside the kernel, and $\sigma_1$ does not factor through the quotient. <strong>There is no induced involution on $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$.</strong></p>
+<p><strong>The total star does descend, and the computation shows why.</strong> Applying $\sigma$ to the same relation,</p>
+<p>$$
+\sigma(r)=\overline{i}\otimes\overline{e_t}-\overline{e_t}\otimes\overline{i}=-r ,
+$$</p>
+<p>so the linear span of the relations is carried to itself, with a sign. The sign is harmless and the induced map on the quotient is the star $(\tilde Q\otimes\tilde Q')^{*}=\tilde Q^{*}\otimes\tilde Q'^{*}$ used in <em>Beyond One Qubit</em>. On the sixty-four real dimensions of $V\otimes_\mathbb{R}V$ it has thirty-two $+1$ eigenvalues and thirty-two $-1$ eigenvalues, so its fixed space is thirty-two-real-dimensional. That fixed space is the Hermitian part of $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$.</p>
+<p><strong>What the failure means.</strong> The projection onto the material sector is an operation on one factor. In a pair, it is not an operation on any subsystem, and the reason is structural and not technical: the two factors have been given the same imaginary unit. Conjugating the $i$ of one factor is exactly what the partial map would do, and the quotient has already identified that $i$ with the other.</p>
+<h2 id="the-two-corners-coincide">The Two Corners Coincide</h2>
+<p><strong>The computational content is one identity.</strong> For $\mu\in\{x,y,z\}$ the unit $\vec e_\mu$ is anti-Hermitian and $i\vec e_\mu$ is Hermitian. In the complex tensor product,</p>
+<p>$$
+\vec e_\mu\otimes\vec e_\mu=-\,(i\vec e_\mu)\otimes(i\vec e_\mu),
+$$</p>
+<p>because the two factors share the scalar $i$ and $i^2=-1$. The left side is a decomposable tensor of the material-material corner; the right side is one of the informational-informational corner. The identity is the complex-tensor statement that the two corners meet.</p>
+<p><strong>Theorem.</strong> In $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$, the real span of $\{h\otimes h'\}$ with $h,h'\in\mathbb{B}_{\Psi}$ and the real span of $\{x\otimes y\}$ with $x,y\in\mathbb{B}_{\Phi}$ are the same sixteen-dimensional real subspace, and it is the Hermitian part of the algebra.</p>
+<p><em>Proof.</em> Each generator of the second span equals a generator of the first, with a sign, by the identity above; and conversely $h\otimes h'=-((ih)\otimes(ih'))$ with $ih,ih'\in\mathbb{B}_{\Phi}$. So the two spans are equal. Each lies in the Hermitian part, because the star acts on a decomposable tensor as the tensor of the stars, $(x\otimes y)^{*}=x^{*}\otimes y^{*}$, so a tensor of two factors of the same parity is fixed. The associative product is not used here; the product of two Hermitian elements is not Hermitian in general, which is O15. Each span is sixteen-real-dimensional, since it is spanned by sixteen independent tensors. The Hermitian part of $M_4(\mathbb{C})$ is also sixteen-real-dimensional. An inclusion between spaces of equal finite dimension is an equality.</p>
+<p><strong>The four corners give two spaces, and that is the whole count.</strong> The theorem above compares the two aligned corners. The complete statement is smaller than it looks: label each factor by the parity of its material content, then take the real span of all decomposable tensors with a given parity pattern. Every even pattern spans the Hermitian part, and every odd pattern spans the anti-Hermitian part,</p>
+<p>$$
+\operatorname{span}_{\mathbb{R}}\{x_1\otimes x_2:\; x_k \text{ Hermitian if } \epsilon_k=+1,\ \text{anti-Hermitian if } \epsilon_k=-1\}
+=\begin{cases}\mathrm{Herm}(M_4(\mathbb{C})), & \epsilon_1\epsilon_2=+1,\\[2pt] \mathrm{anti\text{-}Herm}(M_4(\mathbb{C})), & \epsilon_1\epsilon_2=-1,\end{cases}
+$$</p>
+<p>so four corners produce two spaces, not four. The rule is the parity of the number of material factors, and it is the parity because the star acts on a decomposable tensor as $(x\otimes y)^{*}=x^{*}\otimes y^{*}$: an even number of sign flips fixes the tensor and an odd number negates it. The count is checked directly, and it continues: for $n$ factors the $2^{n}$ parity patterns collapse onto two subspaces, the Hermitian and the anti-Hermitian part of $M_{2^{n}}(\mathbb{C})$, and each is $2^{2n-1}$-real-dimensional, which for $n=2$ is the sixteen of each part and for $n=3$ the sixty-four of each part.</p>
+<p><strong>This is the precise sense in which a bit is missing.</strong> Two factors should carry two bits of sector data, one per factor, which is four corners. Quotienting by the complex scalar leaves exactly one bit, the relative parity, and it is global: it says how many factors are material, not which. So the pair keeps $2^{1}$ of the $2^{2}$ sector patterns it would have had, and for $n$ factors it keeps $2$ of $2^{n}$. The missing bit is the relative one, and the next section exhibits it as the choice of summand over $\mathbb{R}$. The loss over $\mathbb{C}$ and the charge over $\mathbb{R}$ are one fact, recorded over two fields.</p>
+<p><strong>The dimension count was checked directly.</strong> Each corner has rank sixteen as a family of real vectors in the thirty-two-real-dimensional algebra. Stacked together they still have rank sixteen, so they span the same space. The Hermitian part of $M_4(\mathbb{C})$ has sixteen $+1$ eigenvalues of the adjoint map and sixteen $-1$ eigenvalues, so its real dimension is sixteen. The two numbers agree.</p>
+<p><strong>What follows for the corpus's notation.</strong> The writing $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}\subset\mathbb{B}\otimes\mathbb{B}$ is correct and total if the left side means the real span of the decomposable Hermitian-Hermitian tensors inside the complex tensor product. It is vacuous if the left side means the complex tensor product, because the complex span of the Hermitian elements is the whole algebra. The notation must be defined once. The theorem above is the definition, and it also explains why no two-qubit article ever needs the material corner: the material corner adds nothing.</p>
+<p><strong>What the span is and is not closed under.</strong> The Hermitian part is closed under the anticommutator, $\{H,H'\}=HH'+H'H$, so it is a real Jordan algebra. It is not closed under the associative product: the product of two Hermitian matrices is Hermitian only when they commute. It is also not closed under multiplication by $i$, since $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. So the definition of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ as a real span is not a hedge; a complex subalgebra with that name does not exist. This is the two-qubit reading of O15.</p>
+<p><strong>What follows physically.</strong> A two-qubit state has no amount of material. There are two decompositions of every Hermitian element, one entirely in the informational corner and one entirely in the material corner, and they are related by the shared $i$. Neither is canonical. The computation makes this explicit: the singlet idempotent is written as one informational term plus three material terms, and equally as four informational terms with signs. Both expressions are the same matrix, and the two differ by the identification above.</p>
+<p><strong>This is the sharp form of the verdict in <em>Beyond One Qubit</em>.</strong> The verdict there is that the sector reading stops at one system. The reason given there is the dimension count. The reason here is stronger: the two sectors of a pair are not two spaces, they are one space with two descriptions.</p>
+<p><strong>The strongest objection is that a collapse is a loss.</strong> If the two corners are one space, the split contributes nothing to a pair, and the honest conclusion is that two qubits have no sector structure at all. The answer is that the coincidence is a statement about the pair, not the absence of one. For a single system the two sectors meet only at zero. For a pair they meet everywhere. That difference is what the central charge of the real algebra records, and what the positivity condition of the next section exhibits, and neither has a one-system analogue. What is lost is the label on a subsystem, and that label was never an observable.</p>
+<h2 id="over-math135-the-pair-doubles-and-gains-a-central-bit">Over $\mathbb{R}$ the Pair Doubles and Gains a Central Bit</h2>
+<p><strong>Drop the identification and the algebra doubles.</strong> In $V\otimes_\mathbb{R}V$ the two imaginary units are independent. The element $J=i\otimes i$ satisfies $J^2=i^2\otimes i^2=e_t\otimes e_t$, so $J$ is an involution. It commutes with every element, because $i$ is central in each factor. So $J$ is a central involution, and</p>
+<p>$$
+u=\tfrac12(e_t\otimes e_t+J),\qquad v=\tfrac12(e_t\otimes e_t-J)
+$$</p>
+<p>are central idempotents, orthogonal, of sum the identity. They are the two idempotents of the scalar extension $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, tensored with the rest. The check is the one of the scalar-extension article, with $\mathbb{H}\otimes_\mathbb{R}\mathbb{H}$ in place of the second field.</p>
+<p><strong>The decomposition is two copies of the two-qubit algebra.</strong></p>
+<p>$$
+\mathbb{B}\otimes_\mathbb{R}\mathbb{B}\;\cong\;(\mathbb{C}\otimes_\mathbb{R}\mathbb{C})\otimes_\mathbb{R}(\mathbb{H}\otimes_\mathbb{R}\mathbb{H})\;\cong\;(\mathbb{C}\oplus\mathbb{C})\otimes_\mathbb{R}M_4(\mathbb{R})\;\cong\;M_4(\mathbb{C})\oplus M_4(\mathbb{C}).
+$$</p>
+<p>The dimension is sixty-four over $\mathbb{R}$, that is thirty-two over $\mathbb{C}$, which is two copies of sixteen. The computation confirms the structure: the centre is four-real-dimensional, spanned by $e_t\otimes e_t$, $i\otimes e_t$, $e_t\otimes i$ and $J$; the two ideals $u(\mathbb{B}\otimes_\mathbb{R}\mathbb{B})$ and $v(\mathbb{B}\otimes_\mathbb{R}\mathbb{B})$ are each thirty-two-real-dimensional; each has centre of real dimension two; each is semisimple, and a semisimple algebra with centre $\mathbb{C}$ and complex dimension sixteen is $M_4(\mathbb{C})$.</p>
+<p><strong>The physical tensor product is one of the two summands.</strong> In the $v$ summand the relation $i\otimes1=1\otimes i$ holds, so $v$ times the complex tensor product equals the $v$ summand, and</p>
+<p>$$
+\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\;\cong\;v\,(\mathbb{B}\otimes_\mathbb{R}\mathbb{B}).
+$$</p>
+<p>In the $u$ summand the relation holds with the opposite sign, $i\otimes1=-1\otimes i$. That is the tensor product of $\mathbb{B}$ with the conjugate algebra $\bar{\mathbb{B}}$, the algebra in which the scalar imaginary is $-i$. It is isomorphic to $M_4(\mathbb{C})$ as well, so no invariant distinguishes the two summands as algebras; what distinguishes them is which $i$ is conjugated in the second factor.</p>
+<p><strong>Conjugating the $i$ of one factor is exactly swapping that factor's sectors.</strong> Since $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$, the map $i\mapsto-i$ exchanges the two sectors of the factor it acts on. So the two summands differ by the material/informational swap of one subsystem. The $v$ summand is the aligned pair; the $u$ summand is the anti-aligned pair.</p>
+<p><strong>This is a genuine structural gain, and it is the only one composition produces.</strong> The obstruction catalogue records at O2 that the single algebra has no non-trivial central split: its only central idempotents are $0$ and $e_t$. The pair has four, namely $0$, $u$, $v$ and $e_t\otimes e_t$. So composition creates a two-valued central charge that neither factor has. The charge is the relative sector parity of the pair.</p>
+<p><strong>The physical choice discards it, and the choice is defensible.</strong> A quantum state is a vector in a complex Hilbert space, and both factors must be complex with the same scalar field. That is the content of $\otimes_\mathbb{C}$. So the corpus's choice is right for the Hilbert space, and it is exactly the choice that sets the relative parity to the number $-1$ and makes the charge unobservable.</p>
+<p><strong>In the complex tensor product the charge is not merely unobservable, it is a number.</strong> There $i\otimes i=i^2(e_t\otimes e_t)=-e_t\otimes e_t$, so the involution $J$ is the scalar $-1$ and the images of the two idempotents are $\bar u=0$ and $\bar v=e_t\otimes e_t$. The two-valued charge collapses to the single value $-1$, and one of the two summands is empty. The trade is explicit: keep the module complex, lose the label; keep the label, work in twice the algebra.</p>
+<p><strong>The physical interpretation, which is an interpretation and not a derivation.</strong> A flip of $J$ is the conjugation of the complex structure of one factor. On states that is a relative anti-unitary operation. The anti-unitary layer of the framework is the one studied in the article on antilinear structure and the two kinds of mass; the $u$ summand is the algebraic home of a relative operation of that kind. This note records the interpretation and does not develop it.</p>
+<p><strong>The pattern generalises, and the count is the plan's first open item.</strong> The same two steps apply to $n$ factors. The scalar factor is $\mathbb{C}^{\otimes_\mathbb{R} n}\cong\mathbb{C}^{\,2^{n-1}}$, a product of $2^{n-1}$ copies of $\mathbb{C}$. The quaternion factor $\mathbb{H}^{\otimes_\mathbb{R} n}$ is $M_{2^n}(\mathbb{R})$ for even $n$ and $M_{2^{n-1}}(\mathbb{H})$ for odd $n$, according to the order-two class of $\mathbb{H}$ in the Brauer group of $\mathbb{R}$; its complexification is $M_{2^n}(\mathbb{C})$ either way. Hence</p>
+<p>$$
+\mathbb{B}^{\otimes_\mathbb{R} n}\;\cong\;\bigl(M_{2^n}(\mathbb{C})\bigr)^{\oplus\,2^{n-1}},
+$$</p>
+<p>of real dimension $2^{n-1}\cdot 2\cdot 4^{n}=2^{3n}$, which is $(2^3)^n$ as it must be. So the relative sector parity of $n$ systems is a $\mathbb{Z}_2^{\,n-1}$ charge, and the physical complex tensor product is one of the $2^{n-1}$ summands. The count is recomputed at $n=1$, $n=2$ and $n=3$.</p>
+<p><strong>The count at three factors is now checked.</strong> The scalar factor $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}\otimes_\mathbb{R}\mathbb{C}$ was computed as the group algebra of $\mathbb{Z}_2^3$: the three commuting involutions $-i_ji_k$ give four orthogonal central idempotents that sum to the identity, and each component is one copy of $\mathbb{C}$, of real dimension two with centre equal to the whole component. Four copies of $M_8(\mathbb{C})$ follow, so the formula gives $2^{2}=4$ summands and a $\mathbb{Z}_2^{2}$ charge at three factors, as it should.</p>
+<h2 id="the-bell-basis-read-through-the-split">The Bell Basis Read Through the Split</h2>
+<p><strong>The split's positive role in the pair is a sign condition.</strong> Consider the eight diagonal Hermitian elements</p>
+<p>$$
+Z_\epsilon=\tfrac14\left(e_t\otimes e_t+\epsilon_1\,\vec e_x\otimes\vec e_x+\epsilon_2\,\vec e_y\otimes\vec e_y+\epsilon_3\,\vec e_z\otimes\vec e_z\right),
+\qquad \epsilon_k=\pm1 .
+$$</p>
+<p>Each has one informational term and three material terms, in the sense of the previous sections; the decomposition is not canonical, but the object is. Under the isomorphism $e_t\mapsto I_2$, $\vec e_k\mapsto-i\sigma_k$, the element becomes $\tfrac14(I_4-\epsilon_1\sigma_1\otimes\sigma_1-\epsilon_2\sigma_2\otimes\sigma_2-\epsilon_3\sigma_3\otimes\sigma_3)$.</p>
+<p><strong>Exactly half of them are states.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\epsilon=(\epsilon_1,\epsilon_2,\epsilon_3)$</th>
+<th>$\epsilon_1\epsilon_2\epsilon_3$</th>
+<th>spectrum</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(+1,+1,+1)$</td>
+<td>$+1$</td>
+<td>$(0,0,0,1)$</td>
+<td>idempotent, the singlet</td>
+</tr>
+<tr>
+<td>$(+1,-1,-1)$</td>
+<td>$+1$</td>
+<td>$(0,0,0,1)$</td>
+<td>idempotent</td>
+</tr>
+<tr>
+<td>$(-1,+1,-1)$</td>
+<td>$+1$</td>
+<td>$(0,0,0,1)$</td>
+<td>idempotent</td>
+</tr>
+<tr>
+<td>$(-1,-1,+1)$</td>
+<td>$+1$</td>
+<td>$(0,0,0,1)$</td>
+<td>idempotent</td>
+</tr>
+<tr>
+<td>$(+1,+1,-1)$</td>
+<td>$-1$</td>
+<td>$(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$</td>
+<td>not positive</td>
+</tr>
+<tr>
+<td>$(+1,-1,+1)$</td>
+<td>$-1$</td>
+<td>$(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$</td>
+<td>not positive</td>
+</tr>
+<tr>
+<td>$(-1,+1,+1)$</td>
+<td>$-1$</td>
+<td>$(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$</td>
+<td>not positive</td>
+</tr>
+<tr>
+<td>$(-1,-1,-1)$</td>
+<td>$-1$</td>
+<td>$(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$</td>
+<td>not positive</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The condition is the standard one, read in the sector letters.</strong> The four positive cases are the Bell projectors, and the four vectors $(1,\epsilon_1,\epsilon_2,\epsilon_3)$ are pairwise orthogonal, so the matrix they form is Hadamard: the row signs multiply to $+1$ exactly when the projectors exist. The four negative cases are not new elements; each is a Bell projector subtracted from the maximally mixed state,</p>
+<p>$$
+Z_\epsilon=\tfrac12 e_t\otimes e_t-\tilde\Pi_{-\epsilon},
+\qquad \epsilon_1\epsilon_2\epsilon_3=-1,
+$$</p>
+<p>which was checked exactly. That identity explains the spectrum: subtracting a rank-one projector from $\tfrac12 I_4$ leaves one negative eigenvalue.</p>
+<p><strong>The reduction is blind to the condition.</strong> All eight elements, positive and negative alike, reduce to the maximally mixed qubit state,</p>
+<p>$$
+2\,\mathrm{Sc}_1(Z_\epsilon)=2\,\mathrm{Sc}_2(Z_\epsilon)=\tfrac12 e_t ,
+$$</p>
+<p>for every sign pattern. So the local data do not see the sign at all. The distinction is entirely in the correlated terms, and it appears as positivity, not as a difference of marginals.</p>
+<p><strong>What the split does here, exactly.</strong> The three material coefficients of a diagonal two-qubit element are signs. The algebra admits all eight sign patterns. Positivity admits exactly those whose product is $+1$. So the sector signs of the pair are not free: the state cone constrains their orientation. That is the nontrivial role of the split in the two-qubit case, and it is a constraint on signs rather than a label on factors.</p>
+<p><strong>The caution, and it is the reason this is a constraint and not a census.</strong> The split of a two-qubit element into informational and material parts is not canonical. The singlet has one decomposition with one informational term and three material terms, and another with four informational terms, and both are the same element. So no counting of "how much material" a state carries is meaningful. Any claim of the form "this two-qubit state is $30\%$ material" is an artefact of a representative.</p>
+<h2 id="the-concurrence-is-a-split-signature-form">The Concurrence Is a Split-Signature Form</h2>
+<p><strong>The two-qubit Hilbert space carries two independent quadratic forms, and the corpus writes only one of them.</strong> Both are the tensor square of a canonical form on the one-qubit space: the norm is $B\otimes B$ and the concurrence amplitude is $\tfrac12\omega\otimes\omega$, with $B$ the symmetric bilinear and $\omega$ the alternating form on $\mathbb{C}^2$. They are independent because $B$ and $\omega$ are not proportional, and they are invariant under different groups: $\omega\otimes\omega$ under $SL_2(\mathbb{C})\times SL_2(\mathbb{C})$, and $B\otimes B$ under $SO(2,\mathbb{C})\times SO(2,\mathbb{C})$. Under the group that preserves both factor forms the space of invariant quadratic forms is exactly two-dimensional; under $SL_2\times SL_2$ it is one-dimensional, and the one is the concurrence.</p>
+<ul>
+<li>The first is the biquaternion norm $N(\psi)=\sum_k c_k^2$, which in the quaternion basis is $\sum_\mu Q_\mu^2=\det M_2(\tilde Q)$ and is the corpus's interval form.</li>
+<li>The second is the concurrence amplitude $D(\psi)=c_1c_4-c_2c_3$, the determinant of the $2\times2$ coefficient matrix in the product basis.</li>
+</ul>
+<p><strong>In the Bell basis the second form is diagonal and has split signature.</strong> With $|b_k\rangle$ the Bell basis and $\psi=\sum_k b_k|b_k\rangle$,</p>
+<p>$$
+2D(\psi)=b_1^2-b_2^2-b_3^2+b_4^2 ,
+$$</p>
+<p>so the concurrence is the modulus of the quadratic form $b_1^2-b_2^2-b_3^2+b_4^2$, which on real amplitudes has inertia $(2,2)$. The identity was checked on two hundred random normalised states, with zero failures, against $C=2\lvert c_1c_4-c_2c_3\rvert$. The biquaternion norm is unaffected by the change of basis, because the Bell transform is orthogonal, so $N$ is $\sum_k b_k^2$ in either basis.</p>
+<p><strong>The signs of the form are the signs of one material coefficient.</strong> The four Bell states enter the form with the sign of $\epsilon_2$, the coefficient of $\vec e_y$, as the table of the previous section shows. So the split signature of the concurrence form is an interpretation of the sector signs, and the direction $\vec e_y$ is the one the spin flip singles out.</p>
+<p><strong>The form cannot be written with the algebra acting by left multiplication.</strong> The concurrence amplitude needs the swap of the two factors. On the module $\mathbb{C}^4\cong\mathbb{B}$ the permutation that exchanges $e_x$ and $e_y$ and fixes $e_t$ and $e_z$ is not a left multiplication: if it were, its value on $e_t$ would be the multiplier, which is $e_t$, and left multiplication by $e_t$ is the identity. So the entanglement measure requires the tensor structure and not the algebra. That is the same conclusion as <em>Beyond One Qubit</em>, reached through an invariant rather than through a dimension.</p>
+<p><strong>What this adds to the corpus.</strong> The corpus treats the quaternionic norm as the one invariant of the framework and the higher-degree invariants as replacements for it in the multi-qubit case. The computation here says something sharper: at two qubits there is a second invariant of the same degree, and it is the one that measures entanglement. The pair does not need a higher-degree replacement yet; it needs the second quadratic.</p>
+<h2 id="the-plan">The Plan</h2>
+<p><strong>Three routes are open, and each has a stated cost.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Route</th>
+<th>What it keeps</th>
+<th>What it pays</th>
+<th>What it buys</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. Real tensor product</td>
+<td>The sector label of each factor, the two corners, the central bit</td>
+<td>Twice the algebra, a superselection charge with no dynamics, and a choice of summand for every reduction</td>
+<td>The only setting in which the split is a per-subsystem structure</td>
+</tr>
+<tr>
+<td>B. Complex tensor product, with the corners defined once</td>
+<td>The physical Hilbert space, the reductions, the Born weight, every existing computation</td>
+<td>The sector vocabulary is descriptive, not operational, for the pair</td>
+<td>The current corpus, repaired by one definition and three sentences</td>
+</tr>
+<tr>
+<td>C. Module route</td>
+<td>The Lorentz action, the spin carriers, the many-body limit</td>
+<td>The state is a matrix, not an element; the sector reading is gone</td>
+<td>What <em>Beyond One Qubit</em> already recommends and the higher-spin articles use</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The recommendation for the published corpus is B, with one definition and three sentences added.</strong> B is what every existing two-qubit article already does, and none of its computations is wrong. Three sentences make it consistent.</p>
+<ol>
+<li>In the Bell basis article, replace the claim that a Bell idempotent is an element of $\mathbb{B}_{\Psi}\otimes\mathbb{B}_{\Psi}$ by the definition: it is an element of the real span of the decomposable Hermitian-Hermitian tensors, that span is the whole Hermitian part, and it is closed under the anticommutator and not under the associative product.</li>
+<li>In the same article, keep the identity $\vec e_\mu\otimes\vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)$ and add its interpretation: this is why the two corners coincide, and therefore why no two-qubit observable carries a sector label.</li>
+<li>In <em>Beyond One Qubit</em>, add the sharper reason to the verdict: the split is an antilinear involution of one factor, and an antilinear involution of one factor is not defined on the complex tensor product. The dimension count is the symptom; the real structure is the cause.</li>
+</ol>
+<p><strong>The recommendation for the internal line is A, as a bounded investigation with three steps.</strong></p>
+<ol>
+<li><strong>Write the algebra of $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$ once.</strong> The scalar-extension article supplies the two idempotents; the real-forms article supplies the classification; what is missing is a single article that states the isomorphism with $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, the two summands, and the identification of the physical summand. It belongs in the mathematics category.</li>
+<li><strong>Decide whether the anti-aligned summand has an interpretation.</strong> The candidate is a relative anti-unitary operation, in the sense of the antilinear-structure article. If it has none, the doubling is a bookkeeping device and route A loses its motivation.</li>
+<li><strong>Decide whether the central charge can be given a dynamics.</strong> A central idempotent that no operation moves is a superselection rule. If nothing in the framework moves $J$, then route A's charge is a constant and route B is not merely convenient but equivalent.</li>
+</ol>
+<p><strong>What would change if A were adopted.</strong> The Bell basis article would be rewritten in the real algebra, with the two summands distinguished. <em>Beyond One Qubit</em> would keep its verdict and change its reason. The entangled-subsystems and teleportation articles would need the tensor declared. The CHSH exercise would need a statement that the observable lives in one summand. That is five articles and no new physics.</p>
+<p><strong>What would falsify the claim, and what would not.</strong> Nothing experimental: the statement is formal and every prediction is unchanged by the choice of tensor. What would falsify the claim is an error in the computations, and all were checked exactly. A wrong rank in the corner computation, or a nonzero image of the relation under the partial projection, would do it. Neither occurred.</p>
+<h2 id="what-is-not-claimed">What Is Not Claimed</h2>
+<p><strong>No physical prediction is made.</strong> The note is about which structures the algebra admits, not about which the world uses. The relative sector parity is a formal charge here, and the corpus has no experiment that could read it.</p>
+<p><strong>No claim is made that the real tensor product is the physical one.</strong> The module of a quantum theory is complex. The complex tensor product is the correct one for the Hilbert space, and the doubling is a formal device.</p>
+<p><strong>No dynamics is proposed.</strong> The note says nothing about how two-qubit states evolve, entangle, or decohere. The existing articles on channels, discord and the area law own that ground.</p>
+<p><strong>The measurement problem is untouched.</strong> Nothing here bears on it.</p>
+<p><strong>The corpus's multi-qubit results are not in question.</strong> The Bell basis, the reductions, the CHSH bound, the teleportation protocol and the entropy computations are correct as written. What is added is the reason they are correct, and the price the notation pays for being short.</p>
+<h2 id="summary">Summary</h2>
+<p>The corpus's quantum formalism is single-qubit, and its multi-qubit literature is built on $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$. The sector split is an antilinear involution of one factor, and it does not pass to the complex tensor product: the partial projection sends the defining relation $i\otimes1=1\otimes i$ to a nonzero element. So no two-qubit observable carries a material or informational label per subsystem. What survives is stronger and simpler: the material-material and informational-informational corners coincide, and their common image is the whole sixteen-dimensional Hermitian part. Every two-qubit observable is therefore describable entirely in either corner, and the two descriptions differ by the shared $i$.</p>
+<p>Over $\mathbb{R}$ the pair is twice as large. The central involution $J=i\otimes i$ splits $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$ into two copies of $M_4(\mathbb{C})$, with the two idempotents of the scalar extension as projectors. The physical complex tensor product is the summand in which the two imaginary units agree; the other summand is the tensor product with the conjugate algebra, which is the material/informational swap of one subsystem. Composition therefore creates exactly the central split that the single algebra lacks, and the choice of complex scalars sets that charge to the number $-1$.</p>
+<p>What the split does in the pair is constrain the signs. Of the eight diagonal Hermitian candidates, exactly the four with $\epsilon_1\epsilon_2\epsilon_3=+1$ are positive; the other four are $\tfrac12 e_t\otimes e_t-\tilde\Pi$ and have spectrum $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12)$. All eight reduce to $\tfrac12 e_t$, so the reduction does not see the sign. And the concurrence of a two-qubit pure state is the modulus of a second invariant quadratic, of inertia $(2,2)$ on real amplitudes in the Bell basis, which needs the swap of the factors and therefore lies outside the algebra's left action.</p>
+<p><strong>The positive half is that the corpus's three canonical forms tensor.</strong> $H^{\otimes n}$, $B^{\otimes n}$ and $\omega^{\otimes n}$ are the inner product, the norm and the entanglement pairing of the $n$-qubit theory. At $n=2$ the third gives $\omega\otimes\omega(\psi,\psi)=2\det c$, so $2\lvert\det c\rvert$ is the concurrence; that is the $n=2$ formula only. For general $n$ the parity theorem $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ makes the form antisymmetric and diagonal-zero at odd $n$, so $\omega$ says nothing at three qubits and the three-qubit measures must be quartic. The criterion is one property: a bilinear form tensors, an antilinear involution does not.</p>
+<p>The published corpus should keep the complex tensor product and add one definition with three sentences. The internal line should write the real algebra once and decide whether the anti-aligned summand has an interpretation. Neither step changes a prediction.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$</td>
+<td>the biquaternion algebra, real dimension eight</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\Psi}$, $\mathbb{B}_{\Phi}$</td>
+<td>Hermitian and anti-Hermitian sectors, real dimension four each</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>Hermitian conjugation, $\tilde Q^{*}$; an antilinear anti-automorphism</td>
+</tr>
+<tr>
+<td>$\sigma_1=\star\otimes\mathrm{id}$, $\sigma_2=\mathrm{id}\otimes\star$</td>
+<td>partial projections on $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$; involutions, not anti-automorphisms</td>
+</tr>
+<tr>
+<td>$\sigma=\star\otimes\star$</td>
+<td>the total star; the only one that descends to $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$r=i\otimes e_t-e_t\otimes i$</td>
+<td>the defining relation of the complex tensor product</td>
+</tr>
+<tr>
+<td>$J=i\otimes i$</td>
+<td>the central involution of $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$u=\tfrac12(e_t\otimes e_t+J)$, $v=\tfrac12(e_t\otimes e_t-J)$</td>
+<td>the two central idempotents; $v$ selects the physical summand</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$</td>
+<td>the two-qubit algebra, real dimension thirty-two</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes_\mathbb{R}\mathbb{B}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$</td>
+<td>the real two-qubit algebra, real dimension sixty-four</td>
+</tr>
+<tr>
+<td>$Z_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k\vec e_k\otimes\vec e_k)$</td>
+<td>the eight diagonal Hermitian candidates</td>
+</tr>
+<tr>
+<td>$\epsilon_1\epsilon_2\epsilon_3=+1$</td>
+<td>the positivity condition; the four Bell projectors</td>
+</tr>
+<tr>
+<td>$N(\psi)=\sum_k c_k^2$</td>
+<td>the biquaternion norm on the two-qubit module</td>
+</tr>
+<tr>
+<td>$D(\psi)=c_1c_4-c_2c_3$</td>
+<td>the concurrence amplitude; $C=2\lvert D\rvert$</td>
+</tr>
+<tr>
+<td>$H$, $B$, $\omega$</td>
+<td>the Hermitian, symmetric-bilinear and alternating forms on the duo-complex space $\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$B\otimes B$</td>
+<td>the norm form; the $SL_2$-breaking quadratic invariant</td>
+</tr>
+<tr>
+<td>$\omega\otimes\omega$</td>
+<td>the concurrence form; $2D=\omega\otimes\omega(\psi,\psi)$</td>
+</tr>
+<tr>
+<td>$b_1^2-b_2^2-b_3^2+b_4^2$</td>
+<td>$2D$ in the Bell basis; inertia $(2,2)$ on real amplitudes</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$, $\mathrm{Sc}_1$, $\mathrm{Sc}_2$</td>
+<td>scalar part and the two partial scalar parts of the tensor product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/beyond-one-qubit-what-b-tensor-b-would-require.html">Beyond One Qubit: What $\mathbb{B}\otimes\mathbb{B}$ Would Require</a>, for the verdict, the degree count and the three requirements that compose nothing.</li>
+<li><a href="../articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html">The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$</a>, for the four idempotents, the stabiliser spectrum and the identity that this note reads as the collapse of the corners.</li>
+<li><a href="../articles_physics/entangled-subsystems-in-the-biquaternion-framework.html">Entangled Subsystems in the Biquaternion Framework</a>, for the arena, the scalar part and the reductions.</li>
+<li><a href="../articles_physics/the-two-sectors-the-hermitian-split-and-the-four-bridges.html">The Two Sectors: The Hermitian Split and the Four Bridges</a>, for the sector definitions and the operations that cross the split.</li>
+<li><a href="../articles_physics/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do</a>, for O2, the absent central split that the pair repairs, O13, the absent internal factorisation, O15, the sectors that are not a grading, and O16, the sector exchange by $i$.</li>
+<li><a href="../articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html">Antilinear Structure and the Two Kinds of Mass</a>, for the anti-unitary layer that the anti-aligned summand would carry.</li>
+<li><a href="../articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">Higher Spin from Tensor Products</a>, for the module route, its three carriers and its missing fourth.</li>
+<li><a href="../articles_maths/the-scalar-extension-of-the-complex-numbers-and-its-two-idempotents.html">The Scalar Extension of the Complex Numbers and Its Two Idempotents</a>, for $u$ and $v$, their orthogonality and their uniqueness.</li>
+<li><a href="../articles_maths/the-quaternionic-structure-and-the-real-forms-of-m4c.html">The Quaternionic Structure and the Real Forms of $M_4(\mathbb{C})$</a>, for $\mathbb{B}\otimes_\mathbb{R}\mathbb{C}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$ and the real-form classification.</li>
+<li><a href="../articles_maths/the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html">The Kronecker Factorisation of $M_4(\mathbb{C})$ into $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the matrix model used throughout.</li>
+<li><a href="../articles_maths/tensor-products-of-algebras.html">Tensor Products of Algebras</a>, for the multiplication rule that the dimension count uses.</li>
+<li><a href="../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html">The Four General Products and Their Relations over the Biquaternion Algebra</a>, for the product laws that the tensor product abandons.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the Bell basis, the concurrence and the partial trace.</li>
+<li>W. K. Wootters, "Entanglement of formation of an arbitrary state of two qubits," <em>Physical Review Letters</em> <strong>80</strong> (1998) 2245–2248, for the concurrence and the spin flip.</li>
+<li>Lidia Obojska, "Bi-particle entanglement and its quaternion representation," <em>Journal of Physics Communications</em> <strong>2</strong> (2018) 085021, for the quaternion treatment of a bipartite state.</li>
+</ul>
+<h2 id="appendix-the-proposed-section-the-list-and-the-descriptions">Appendix: The Proposed Section, the List, and the Descriptions</h2>
+<h3 id="the-section">The section</h3>
+<blockquote>
+<p><strong>Section</strong> — Biquaternion Relativistic Quantum Theory
+<strong>Subsection</strong> — Focus on informational aspects</p>
+</blockquote>
+<p><strong>Fourteen articles.</strong> <code>[=]</code> already there, <code>[&gt;]</code> moved in, <code>[+]</code> new. Six titles say <em>multi-qubit</em> or <em>multi-partite</em> outright.</p>
+<hr />
+<h3 id="the-list">The list</h3>
+<pre><code> 1. [=] The Material-Informational Split as a Superselection Structure
+        in Biquaternionic Form
+ 2. [=] The Relativistic Qubit in Biquaternionic Form
+ 3. [=] Frame-Dependent Entanglement and Relativistic Quantum Information
+        in Biquaternionic Form
+ 4. [=] Spin Entropy and the Lorentz Group in Biquaternionic Form
+ 5. [&gt;] The Multi-Qubit Boundary: What B (x) B Would Require
+        from: The Lorentz Transformation on the Informational Sector
+        was: Beyond One Qubit
+ 6. [+] Composite Systems and the Multi-Qubit Extension:
+        The Module Route and the Algebra Route
+ 7. [+] The Multi-Qubit Split, I: The Antilinear Obstruction
+        and the Corner Collapse
+ 8. [+] The Multi-Qubit Split, II: The Sign Condition,
+        the Concurrence Form and the Central Bit
+ 9. [+] The Duo-Complex Bridge: The Three Canonical Forms
+        and Their Tensor Powers
+10. [+] Multi-Partite Entanglement: GHZ, W and the Three-Qubit Classification
+11. [+] Entanglement Monogamy and the CKW Inequality
+12. [&gt;] The Bell Basis as the Idempotent Basis of B (x) B
+        from: Non Relativistic Approximation
+13. [&gt;] Entangled Subsystems in the Biquaternion Framework
+        from: Non Relativistic Approximation
+14. [&gt;] Quantum Teleportation in Biquaternionic Form
+        from: Non Relativistic Approximation
+</code></pre>
+<p><strong>Counts.</strong> Four already there, four moved in, six new. Fourteen in the subsection.</p>
+<p><strong>Order.</strong> The order is the reading order, not the menu order. Articles 1 to 4 are the single system and its relativistic composites. Article 5 states the boundary. Article 6 frames the two routes. Articles 7 and 8 are the two halves of the split result. Article 9 is the positive half: what the corpus already owns that does survive composition. Articles 10, 11, 12 and 14 are the multi-partite tests. Article 13 is the conceptual anchor.</p>
+<p><strong>Nothing is renamed on disk and nothing is deleted.</strong> Only the menu moves, so every existing cross-link still resolves.</p>
+<p><strong>Prerequisites outside the subsection.</strong> <em>The Three Canonical Forms on $\mathbb{C}^2$</em> and <em>The Tensor Square of $\mathbb{C}^2$</em> in the mathematics corpus supply $H$, $B$ and $\omega$ and the $3\oplus1$ splitting. <em>The Category of Modules</em> supplies the projective-line parametrisation used in article 9. <em>Algebra and Element Conventions</em> supplies the basis and the two sectors.</p>
+<hr />
+<h3 id="what-the-multi-qubit-extension-is-in-one-page">What the multi-qubit extension is, in one page</h3>
+<p><strong>The single-system claim.</strong> The algebra $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}\cong M_2(\mathbb{C})$ splits into Hermitian and anti-Hermitian sectors, which the corpus calls informational and material. The split is not a grading: multiplication by $i$ swaps the sectors, so no complex-linear operator separates them. It is the eigenspace decomposition of the antilinear star. That word, antilinear, is the whole story.</p>
+<p><strong>The question composition asks.</strong> For two systems one would like to label each factor separately: informational on the first, material on the second, four corners in all. Two spin-$\tfrac12$ particles allow exactly this for spin. The extension asks whether the sector split allows it.</p>
+<p><strong>The obstruction.</strong> The partial map $\sigma_1=\star\otimes\mathrm{id}$ is an involution on $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$. The complex tensor product is the quotient imposing $i\otimes e_t=e_t\otimes i$. Applying $\sigma_1$ to that difference returns $(-i)\otimes e_t-e_t\otimes i\neq0$. A relation killed by the quotient survives the map, so $\sigma_1$ does not descend. There is no per-subsystem sector label. Two lines, exact.</p>
+<p><strong>The collapse.</strong> The failure is not the end. In the complex tensor product the factors share $i$, so $\vec e_\mu\otimes\vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)$: material-times-material and informational-times-informational are the same element. The rule is parity: an even number of material factors spans $\mathrm{Herm}(M_4(\mathbb{C}))$ and an odd number spans its anti-Hermitian part, so four corners give two spaces. Every two-qubit observable is entirely informational or entirely material, and neither description is preferred. The corners do not fail to extend; they merge.</p>
+<p><strong>The central bit.</strong> Refusing the quotient gives a real algebra twice as large, and $J=i\otimes i$ splits it into two copies of $M_4(\mathbb{C})$ with the two central idempotents $u=\tfrac12(e_t\otimes e_t+J)$ and $v=\tfrac12(e_t\otimes e_t-J)$. On the physical summand $J$ takes the value $-1$, so $v$ is the identity there and $u$ vanishes: <strong>$v$ is the physical summand and $u$ is the conjugate one.</strong> One is the complex tensor product, the other its conjugate, which swaps the sectors of one subsystem. Composition creates a two-valued charge that neither factor has. In the complex quotient $J$ <em>is</em> the number $-1$, so the parity is not hidden but frozen. For $n$ factors the split runs $2^{n-1}$ ways. Nothing in the framework moves the charge.</p>
+<p><strong>What the split still does.</strong> Of the eight diagonal Hermitian candidates $\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k\vec e_k\otimes\vec e_k)$, exactly the four with $\epsilon_1\epsilon_2\epsilon_3=+1$ are states; the other four carry a negative eigenvalue. All eight reduce to the same maximally mixed qubit, so the reduction is blind: the sign lives in the correlated terms and shows as positivity.</p>
+<p><strong>What does survive, and this is the positive half.</strong> The duo-complex space $\mathbb{C}^2$ carries three canonical forms, $H$ (Hermitian, Gram matrix the identity), $B$ (symmetric bilinear, Gram matrix the identity) and $\omega$ (alternating, Gram matrix $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$). $H$ and $B$ share a Gram matrix and differ only by the conjugation in the second slot, which is why a matrix alone never identifies the form. Each tensors, and the three tensor powers are the three structures of the $n$-qubit theory: $H^{\otimes n}$ the Born weights, $B^{\otimes n}$ the norm, $\omega^{\otimes n}$ the entanglement pairing. At $n=2$,</p>
+<p>$$
+\omega\otimes\omega(\psi,\psi)=2\bigl(c_{00}c_{11}-c_{01}c_{10}\bigr)=2\det c ,
+$$</p>
+<p>so $2\lvert\det c\rvert$ is the concurrence, with inertia $(2,2)$ on real amplitudes. <strong>That identity is the $n=2$ formula and not a general one.</strong> For general $n$ the bridge is the tensor power itself, and the parity theorem $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ says that odd $n$ gives an antisymmetric form vanishing on the diagonal, so $\omega$ is silent at three qubits. Three-qubit measures are therefore quartic: the three-tangle, Cayley's hyperdeterminant.</p>
+<p><strong>Why the biquaternion language earns this.</strong> In $M_2(\mathbb{C})$ the Hermitian split is a textbook decomposition and nobody calls it physical. The formalism makes the claim, and the note holds it to account under composition. The claim fails as a per-subsystem label, survives as a positivity constraint, and reveals a central charge that complex scalars discard. Ordinary matrix language would not have asked.</p>
+<p><strong>The criterion that decides both questions.</strong> $\omega$ is bilinear, so it passes through the tensor product untouched, and the concurrence exists. The sector split is antilinear, so it does not descend, and the label does not exist. One property decides both halves.</p>
+<p><strong>What is not claimed.</strong> No prediction changes. No experiment reads the parity. The real tensor product is not asserted to be physical. Every existing two-qubit computation stays correct; what is added is the reason it is correct, and the price the notation pays for being short.</p>
+<hr />
+<h3 id="descriptions-of-the-fourteen-articles">Descriptions of the fourteen articles</h3>
+<p><strong>1. [=] The Material-Informational Split as a Superselection Structure in Biquaternionic Form.</strong>
+The article that states the split once, and the one every other article here leans on.</p>
+<p>Sections. <em>Superselection structures: the standard notion</em> sets the textbook definition, a central projection commuting with the observable algebra, so that the state space is a direct sum of sectors and no coherent superposition across them is observable. <em>The two sectors as the eigenspaces of an involution</em> shows that $\mathbb{B}_\Psi$ and $\mathbb{B}_\Phi$ are the eigenspaces of the star for the eigenvalues $+1$ and $-1$, and that multiplication by $i$ exchanges them. <em>The factor property: there is no central-projection superselection</em> proves the negative result: $\mathbb{B}$ is a factor, its centre is $\mathbb{R}e_t\oplus i\mathbb{R}e_t$, and there is no nontrivial central projection, so the textbook notion does not apply. <em>What survives: the real-structure grading</em> replaces it with the $\mathbb{Z}_2$ action of the involution, which is what the corpus actually has. <em>The unobservable relative phase</em> draws the consequence: a relative phase between an informational and a material component is not merely unobserved but unobservable, because no complex-linear operator sees it. <em>The Lie-algebra grading: the Cartan decomposition</em> records that on the commutator the split is a genuine $\mathbb{Z}_2$ grading, so the Lie algebra splits into two subspaces with the bracket exchanging them. <em>The physical reading</em> is the corpus's claim that the two sectors are information and matter.</p>
+<p>Why it is first. Every later article uses two facts from here: that the split is antilinear and not central, and that it is a commutator grading but not an associative one. Articles 7 and 8 are the tensor lift of exactly those two facts.</p>
+<p><strong>2. [=] The Relativistic Qubit in Biquaternionic Form.</strong>
+The single-system baseline, and the reason $n=1$ is not an empty case in this section.</p>
+<p>Sections. <em>The qubit as the defining module</em> identifies the carrier with $S=\mathbb{C}^2$, the simple module of $\mathbb{B}$, so a qubit is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it. <em>The Lorentz action on the carrier</em> realises the action of $SL_2(\mathbb{C})$ on the module, with the algebra elements supplying the generators and the norm supplying the invariant. <em>Pure states: the celestial sphere</em> reads the rays of $S$ as the Riemann sphere, with the Hopf fibration $S^1\to S^3\to S^2$ giving the Bloch sphere and the relativistic reading of the same picture. <em>Mixed states and the little group</em> computes the action on the density operator and the residual symmetry of a state. <em>Observables, generators, and the two sectors</em> fixes where the Hermitian part acts, which is the ingredient every later article uses.</p>
+<p>What it supplies downstream. The identification of the qubit with the module is what article 6 turns into the module route. The Lorentz action on one carrier is the atom from which article 3 builds the two-particle action.</p>
+<p><strong>3. [=] Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form.</strong>
+The corpus's first composite system, and the one place where a two-particle state is genuinely transformed rather than merely written down.</p>
+<p>Sections. <em>Entangled states in the tensor product</em> writes a two-particle state in $\mathbb{B}\otimes\mathbb{B}$ and fixes the notation. <em>The Lorentz transformation of a two-particle state</em> applies the action factor by factor and shows that the result is not the original state rewritten in a new basis. <em>Momentum superposition and the frame dependence</em> is the core: when the two particles have different momenta the two factors are boosted by different amounts, so the state changes under a boost even with no interaction present, and the entanglement changes with the frame. <em>The Wigner angle and its momentum dependence</em> computes the residual rotation from the product of two non-collinear boosts and its dependence on the momenta. <em>What is frame-dependent and what is not</em> separates the invariants from the frame artefacts. <em>Relativistic quantum information: the biquaternion reading</em> states what the reformulation adds and does not add.</p>
+<p>Why it matters here. It refutes a natural hope: that because the algebra carries its own Lorentz structure, one $\mathbb{B}$ per particle would compose for free. It composes, but as a tensor product of two modules boosted differently, which is exactly the tensor structure the rest of the section is about.</p>
+<p><strong>4. [=] Spin Entropy and the Lorentz Group in Biquaternionic Form.</strong>
+An information quantity carried through the relativistic action, and a test of how much quantum information theory the single-factor language can host.</p>
+<p>Sections. <em>The spin entropy of a state</em> defines the quantity on the density operator and computes it on the reduction of a two-spin state. <em>The Lorentz action on the spin entropy</em> follows the quantity through a boost and exhibits the dependence. <em>Spin entropy and the little-group representation</em> ties the invariance of the entropy to the residual little group. <em>The two regimes of frame dependence</em> separates the cases where the entropy is frame-independent from those where it is not. <em>The entropy and the biquaternion norm</em> connects the quantity to the algebra's own form.</p>
+<p>What it establishes for the section. The entropy is a function of the reduction, and the reduction is a partial scalar part. This is the first article in the corpus where a two-system object is read through a one-system one, which is exactly the operation article 7 later shows to be blind to the sector sign.</p>
+<p><strong>5. [&gt;] The Multi-Qubit Boundary: What $\mathbb{B}\otimes\mathbb{B}$ Would Require.</strong>
+Moved from <em>The Lorentz Transformation on the Informational Sector</em>, retitled from <em>Beyond One Qubit</em>. The verdict article.</p>
+<p>Sections. <em>The one-qubit state space</em> repeats the count that closes on the Bloch ball: three real parameters, one element of the Hermitian sector, one state. <em>The tensor product</em> forms $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ and records that it is central simple of degree four. <em>What the algebra would have to be</em> states the three requirements a two-system element would have to satisfy: a single element carrying both factors, a sector label on each factor, and a product respecting both. <em>What the corpus does instead</em> records the route actually taken, tensor powers of the module, and what that route keeps and what it loses.</p>
+<p>Why it stays. It is the shortest statement of the negative result, and it is the article a reader arriving from the relativistic side will already have open. Article 6 sits beside it rather than replacing it: 5 is the verdict, 6 is the reason and the two routes. The retitling removes the impression that the question is closed, because it is closed only on the algebra route.</p>
+<p><strong>6. [+] Composite Systems and the Multi-Qubit Extension: The Module Route and the Algebra Route.</strong>
+The framing article. Written first, read before 5 and 7.</p>
+<p>Sections. <em>Two senses of composition</em> separates the element sense, a state is one element of one algebra, from the module sense, a state is one element of a tensor product of modules. <em>The module route</em> states what the corpus actually does: $n$ qubits are the tensor power $S^{\otimes n}$ of the simple module, and the joint algebra is the tensor power of the endomorphism algebras, which is $M_{2^n}(\mathbb{C})$. <em>The algebra route</em> states what a naive extension would try: one copy of $\mathbb{B}$, an internal factorisation, and a sector label on each factor. <em>Why the routes differ, and where they agree</em> proves that the two give the same state space and the same observables, and shows that the only thing the algebra route adds is the sector label, which is the thing articles 7 and 8 show cannot be had. <em>The boundary of the claim</em> records what is not asserted: no physics changes, and the module route is not a failure but the correct route, recorded because the corpus sometimes writes as though it were a compromise.</p>
+<p>Why it is needed. Without it the rest reads as a list of failures. With it the section has a subject: the corpus composes by modules, and this section examines what the sector reading costs on that route and what it would cost on the other.</p>
+<p><strong>7. [+] The Multi-Qubit Split, I: The Antilinear Obstruction and the Corner Collapse.</strong>
+One theorem in two halves, both exact. The technical centre of the section.</p>
+<p>Sections. <em>The quotient and the partial star</em> defines the complex tensor product as the quotient of $\mathbb{B}\otimes_\mathbb{R}\mathbb{B}$ by $i\otimes e_t-e_t\otimes i$, and defines $\sigma_1=\star\otimes\mathrm{id}$. <em>The non-descent</em> proves that $\sigma_1$ carries the defining relation to its negative, so it does not descend to the quotient, so no per-subsystem sector label exists. Two lines. <em>The corner identity</em> proves $\vec e_\mu\otimes\vec e_\mu=-(i\vec e_\mu)\otimes(i\vec e_\mu)$ from the shared central $i$, and identifies the two aligned corners. <em>The parity rule</em> extends it: the real span of decomposable tensors with $k$ material factors is $\mathrm{Herm}(M_4(\mathbb{C}))$ for even $k$ and its anti-Hermitian part for odd $k$, so four corners give two spaces. The proof is $(x\otimes y)^*=x^*\otimes y^*$, which flips the sign once per material factor. <em>The rank computation</em> verifies the count directly: each corner class has rank sixteen as a family of real vectors in the thirty-two-real-dimensional algebra, and the Hermitian part has sixteen $+1$ and sixteen $-1$ eigenvalues of the adjoint. <em>What the definition does and does not assert</em> fixes the meaning of $\mathbb{B}_\Psi\otimes\mathbb{B}_\Psi$ as a real span inside the complex tensor product, closed under the anticommutator, not under the product, and not under multiplication by $i$.</p>
+<p>Why it is its own article. This is the article the Bell basis article needs, because that article writes $\mathbb{B}_\Psi\otimes\mathbb{B}_\Psi$ without defining it. It also carries the argument ordinary matrix language would not have produced, since in $M_2(\mathbb{C})$ the Hermitian split is unremarkable.</p>
+<p><strong>8. [+] The Multi-Qubit Split, II: The Sign Condition, the Concurrence Form and the Central Bit.</strong>
+The three things the pair has that the single system cannot express, in one article because each is a positive residue of the same failure.</p>
+<p>Sections. <em>The eight diagonal candidates</em> writes $Z_\epsilon=\tfrac14(e_t\otimes e_t+\sum_k\epsilon_k\vec e_k\otimes\vec e_k)$ and computes the spectrum. <em>The sign condition</em> proves that exactly the four with $\epsilon_1\epsilon_2\epsilon_3=+1$ are positive, with spectrum $(0,0,0,1)$, while the other four carry $-\tfrac12$. <em>The reduction is blind</em> shows that all eight reduce to the same maximally mixed qubit, so no partial trace sees the sign: it lives in the correlated terms and appears only as positivity. <em>The second quadratic form</em> computes $2D=b_1^2-b_2^2-b_3^2+b_4^2$ in the Bell basis, with inertia $(2,2)$, and proves that no left multiplication by an algebra element produces it, because the required permutation fixes $e_t$ and would therefore have to be the identity. <em>The real tensor product</em> doubles the algebra, exhibits $J=i\otimes i$ as a central involution, and splits it into two copies of $M_4(\mathbb{C})$. <em>The physical summand and the frozen charge</em> identifies the $v$ summand with the complex tensor product and the $u$ summand with the tensor product against the conjugate algebra, and shows that in the quotient $J$ is literally $-1$, so the parity is frozen rather than hidden. <em>The count for $n$ factors</em> gives $2^{n-1}$ summands and the alignment reading.</p>
+<p>Why these belong together. Each is unavailable in one factor: a positivity condition reduction cannot see, an entanglement measure left multiplication cannot write, and a central charge that composition creates. Split into four articles they would repeat the same setup four times.</p>
+<p><strong>9. [+] The Duo-Complex Bridge: The Three Canonical Forms and Their Tensor Powers.</strong>
+The positive half of the section, and the reason the duo-complex chapter belongs to quantum information rather than to geometry.</p>
+<p>Sections. <em>The space and its three forms</em> fixes $\mathbb{C}^2$ as the simple module, of dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$, and states $H$, $B$ and $\omega$ with their Gram matrices: the identity, the identity, and $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. <em>Why identical Gram matrices are not identical forms</em> gives the point a reader trips on. $H$ and $B$ agree on every pair of basis vectors because the basis is real, and differ on $Q=(1,i)$, where $H(Q,Q)=2$ and $B(Q,Q)=0$. The bar in $H(Q_1,Q_2)=Q_1^{\mathsf T}G\bar Q_2$ is the entire difference, and a Gram matrix records values on a real basis and nothing more. <em>The tensor powers</em> states the bridge: $H^{\otimes n}$ gives the inner product and the Born weights, $B^{\otimes n}$ gives $\sum c^2$ and the interval form, $\omega^{\otimes n}$ gives the entanglement pairing. <em>The two-qubit identity</em> proves $\omega\otimes\omega(\psi,\psi)=2(c_{00}c_{11}-c_{01}c_{10})=2\det c$, so $2\lvert\det c\rvert$ is the concurrence, with inertia $(2,2)$ matching the Bell-basis diagonalisation; the section states explicitly that this is the $n=2$ formula and not a general one. <em>The parity boundary</em> proves $(\omega^{\otimes n})^{\mathsf T}=(-1)^{n}\omega^{\otimes n}$ and draws the consequence: odd $n$ gives an antisymmetric form vanishing on the diagonal, so $\omega$ is silent at three qubits and the three-qubit measures must be quartic, which is the three-tangle and Cayley's hyperdeterminant. <em>Charge conjugation as the same pairing</em> identifies the corpus's $\mathcal{C}[X]=-\vec e_yX^*\vec e_y$ with $\omega$ composed with conjugation, shows $\mathcal{C}\otimes\mathcal{C}$ is bilinear, and records</p>
+<p>$$
+C(\psi)=\bigl|\langle\psi|\,\mathcal{C}\otimes\mathcal{C}\,|\psi^*\rangle\bigr|=2\lvert\det c\rvert ,
+$$</p>
+<p>noting that this is the same pairing that separates the Dirac from the Majorana mass. <em>Bilinearity as the criterion</em> states the rule deciding both halves of the section: a bilinear form tensors, an antilinear involution does not. <em>The trap</em> records that coefficient conjugation, $i\mapsto-i$ with the units fixed, acts on the projective line as $z\mapsto-1/\bar z$ with no fixed point, while entrywise matrix conjugation acts as $z\mapsto\bar z$ and fixes the real lines. Testing the wrong one produces a false contradiction with <em>The Category of Modules</em>, which is correct as written.</p>
+<p>Why it is new and why here. The corpus has the three forms and has the concurrence, but never connects them, and never states that the entanglement measure is one of its own canonical forms applied twice. Without this article the section is a list of what the sector reading cannot do; with it, the section says what the corpus already owns that does compose.</p>
+<p><strong>10. [+] Multi-Partite Entanglement: GHZ, W and the Three-Qubit Classification.</strong>
+A test of the vocabulary, and the article that makes the $2^{n-1}$ count concrete.</p>
+<p>Sections. <em>The two inequivalent classes</em> defines $|GHZ\rangle=\tfrac{1}{\sqrt2}(|000\rangle+|111\rangle)$ and $|W\rangle=\tfrac{1}{\sqrt3}(|001\rangle+|010\rangle+|100\rangle)$ and states their inequivalence under local operations with classical communication. <em>What separates them</em> gives the discriminating invariants: the three-tangle nonvanishing for GHZ, vanishing for W with nonzero pairwise concurrence, and the different behaviour under loss of one qubit. <em>The quartic obstruction</em> uses article 9: $\omega^{\otimes 3}$ is antisymmetric and vanishes on every state, so no degree-two invariant exists at three qubits and the measures must be degree four, which is why the classification needs the hyperdeterminant and not a determinant. <em>What the biquaternion vocabulary reaches</em> is the honest assessment: the three-fold tensor product carries the operators, the local groups act factor by factor, and the invariants belong to the tensor structure rather than to the algebra, so the vocabulary organises the computation without supplying the invariant. <em>What is not claimed</em> records that no new physics and no new invariant is produced.</p>
+<p>Why in this section. The corpus has no article about three systems, and the $2^{n-1}$ count of article 8 is about exactly three. This article gives that count a physical example.</p>
+<p><strong>11. [+] Entanglement Monogamy and the CKW Inequality.</strong>
+The same kind of test one level on, and the sharpest example of a statement that cannot be made about one system.</p>
+<p>Sections. <em>The inequality</em> states the Coffman-Kundu-Wootters bound, $\tau_{AB}+\tau_{AC}\le\tau_{A(BC)}$ in the tangle form and $C_{AB}^2+C_{AC}^2\le C_{A(BC)}^2$ in the squared-concurrence form, for a pure three-qubit state with the first qubit against the other two. <em>The saturation</em> shows equality for $W$ and the failure of naive additivity for GHZ, which is the quantitative form of the inequivalence of article 10. <em>Why monogamy needs three systems</em> proves that no two-system statement expresses the bound: it relates three pairwise quantities to one tripartite quantity, so no reduction can see it. <em>The biquaternion reading</em> writes the three concurrences as the three pairings $\omega\otimes\omega$ on the three bipartitions and the tripartite term as the quartic tangle of article 10. <em>The boundary</em> records that the inequality is imported and not derived, and that the contribution here is the placement of its ingredients.</p>
+<p>Why in this section. It shows that the section's subject is not exhausted by $n=2$, and it is the strongest argument that a section about informational aspects needs the multi-partite layer.</p>
+<p><strong>12. [&gt;] The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$.</strong>
+Moved from <em>Non Relativistic Approximation</em>. The two-qubit arena.</p>
+<p>Sections. <em>The two-qubit algebra and idempotent bases</em> constructs the four Bell projectors in the complex tensor product and shows they form a complete orthogonal family. <em>The state vector and the state operator: $\mathbb{C}^4\cong\mathbb{B}$</em> separates the two objects the corpus sometimes conflates, a state as a vector and a state as a projector, and gives the identification $|00\rangle\mapsto e_t$, $|01\rangle\mapsto\vec e_x$, $|10\rangle\mapsto\vec e_y$, $|11\rangle\mapsto\vec e_z$. <em>The four Bell idempotents</em> writes them explicitly. <em>Orthogonality and completeness</em> proves the trace relations. <em>The Bell basis as a stabiliser eigenbasis</em> reads the four states as the joint eigenbasis of the two commuting spin flips. <em>Maximal entanglement and the diagonal tensor structure</em> relates maximal entanglement to the diagonal form of the coefficient matrix. <em>A claimed enumeration of the maximally entangled states</em> refutes the claim that twelve patterns exhaust them, with the family $\tfrac{1}{\sqrt2}(|00\rangle+e^{i\theta}|11\rangle)$ as the counterexample and a dimension count, three real conditions on a six-real-dimensional projective space, as the reason no finite list can work. <em>The reductions and maximal mixedness</em> computes the partial traces. <em>A remark on the status of the tensor product</em> is the open question this section answers.</p>
+<p>Why it is here. It is the article that uses the notation $\mathbb{B}_\Psi\otimes\mathbb{B}_\Psi$ without defining it, so article 7 supplies the definition and this article keeps its place with one sentence changed.</p>
+<p><strong>13. [&gt;] Entangled Subsystems in the Biquaternion Framework.</strong>
+Moved from <em>Non Relativistic Approximation</em>. The conceptual two-qubit article.</p>
+<p>Sections. <em>The entangled subsystem in the biquaternion language</em> sets the vocabulary: the scalar part, the two partial scalar parts, and the division rule that recovers a subsystem from a joint element. <em>The five debates, revisited</em> takes five standard debates about entanglement and reformulates each in the algebra, which is what the article exists for. <em>What the reformulation makes visible</em> states the gains. <em>What the reformulation does not claim</em> draws the boundary. <em>Open questions</em> lists what is left undecided, among them the status of the sector label under composition, which articles 7 and 8 settle.</p>
+<p>Why it is here. It is the article a reader looking for the corpus's position on entanglement will open first, and it currently sits in a section about the non-relativistic limit.</p>
+<p><strong>14. [&gt;] Quantum Teleportation in Biquaternionic Form.</strong>
+Moved from <em>Non Relativistic Approximation</em>. The section's one complete three-system computation.</p>
+<p>Sections. <em>The three-qubit arena and the objects of the protocol</em> fixes the resource, the message and the classical bits. <em>The resource and the Bell measurement</em> writes the singlet and the measurement in the algebra. <em>The teleportation identity</em> verifies that the corrected branches reproduce the message. <em>The correction gates</em> writes the four Pauli corrections as multiplications. <em>No-signalling, and why there is no copy</em> proves that the receiver's marginal is unchanged, so nothing travels and no cloning occurs. <em>The protocol as a channel</em> identifies the induced map and its properties. <em>What the reformulation does and does not claim</em> and <em>open questions</em> close the article.</p>
+<p>Why it is here. It is the only article in the corpus carrying a genuine three-system state through a complete protocol, so it is the section's one check that the vocabulary survives $n=3$ and not only $n=2$.</p>
+<hr />
+<h3 id="what-the-fourteen-articles-do-taken-together">What the fourteen articles do, taken together</h3>
+<p><strong>Articles 1 to 4 fix the single system and its relativistic composites.</strong> They establish the split, the module, the Lorentz action on one carrier, the two-particle state, and one information quantity carried through the action. Nothing here depends on the multi-qubit question.</p>
+<p><strong>Articles 5 and 6 state the boundary and the two routes.</strong> Article 5 is the verdict with its three requirements. Article 6 is the reason, and its contribution is that the module route is correct rather than a compromise.</p>
+<p><strong>Articles 7 and 8 are the split result in two halves.</strong> 7 is the obstruction and the collapse, exact and proved. 8 is the positive residue: a positivity condition, a second quadratic form, and a central bit.</p>
+<p><strong>Article 9 is the positive half of the whole section.</strong> The corpus's own three canonical forms tensor to the three structures of the $n$-qubit theory, and the concurrence is one of them applied twice.</p>
+<p><strong>Articles 10, 11, 12 and 14 are the tests.</strong> Two multi-partite statements, the two-qubit arena the others refer to, and one complete three-system protocol.</p>
+<p><strong>Article 13 is the conceptual anchor.</strong> It states the corpus's reading of entanglement, and it is the article that most needed to leave the non-relativistic section.</p>
+<p><strong>If a reader reads only three.</strong> Article 7 for the theorem, article 9 for the bridge, article 6 for the framing. The rest are consequences and tests.</p>
+<hr />
+<h3 id="the-placement-defect-and-how-it-is-repaired">The placement defect, and how it is repaired</h3>
+<p><strong>The defect.</strong> Fourteen articles cannot all sit under a header that says <em>Relativistic</em>: articles 5 to 14 are not relativistic. Two repairs exist and only one of them costs nothing.</p>
+<p><strong>Repair 1, chosen.</strong> Keep the subsection where it is, and justify it once. The sector split is a property of $\mathbb{B}$, not of a Hamiltonian. The algebra is the same at every speed; what changes with the limit is the dynamics, not the decomposition. The informational reading is therefore limit-independent, and its subsection may collect the relativistic single system and the non-relativistic composites together. The section's opening sentence says this, so the reader is not left to infer it.</p>
+<p><strong>Repair 2, rejected.</strong> Lift the subsection to its own top-level entry beside the relativistic section. That is cleaner on a tree diagram and worse in practice: it breaks the corpus's convention that every top-level section ends in a <em>Focus on informational aspects</em>, which is the very convention this restructure relies on.</p>
+<p><strong>Why this is not a fudge.</strong> Repair 1 is a claim that can be false. If a later article finds a place where the sector structure changes with the limit, the subsection must move. None is known.</p>
+<hr />
+<h3 id="which-algebraic-structure-is-required">Which Algebraic Structure Is Required</h3>
+<p><strong>Four items. Only the third is easy to miss.</strong></p>
+<ol>
+<li>The Hilbert space $\mathcal{H}_n=(\mathbb{C}^2)^{\otimes n}$, complex dimension $2^n$. Pure states are its rays, or equivalently its rank-one projectors.</li>
+<li>The algebra $M_{2^n}(\mathbb{C})$ acting on it: observables are its Hermitian part, states its positive trace-one elements, evolution its completely positive trace-preserving maps.</li>
+<li><strong>A declared factorisation</strong> $\mathcal{H}_n=\mathcal{H}_1\otimes\cdots\otimes\mathcal{H}_n$. This is extra data. $M_{2^n}(\mathbb{C})$ is simple with centre $\mathbb{C}$; it carries no canonical splitting, and the set of splittings is a continuous family, not a finite list.</li>
+<li>Nothing else. No biquaternion, no real form, no sector label.</li>
+</ol>
+<p><strong>The third item is O13 restated.</strong> "$\mathbb{B}$ does not factor internally" and "$M_4(\mathbb{C})$ has no canonical factorisation" are the same statement, and it is the honest reason the single-algebra programme stops at one system. Every quantity this section discusses — partial trace, entanglement entropy, concurrence, Bell correlations, GHZ/W classes, monogamy — is a statement about a chosen splitting, not about the algebra. A dimension count is a symptom; the absent factorisation is the cause.</p>
+<p><strong>What the biquaternion form is for, then.</strong> Since $\mathbb{B}\cong M_2(\mathbb{C})$, the real form adds nothing to the physics of one system and nothing to the physics of $n$. What it adds is a question the matrix presentation does not ask: does the Hermitian/anti-Hermitian split, which the corpus reads as informational and material, survive composition? The answer is no as labels, yes as one global bit, and yes as a positivity constraint. That is a result about the corpus's own reading. It is not a multi-qubit theory and must not be sold as one. What it is, precisely, is a biquaternionic reading of multi-qubit states, observables and invariants: the state space is the tensor power of the duo-complex module, the invariant content is the tensor power of the three canonical forms, and the contribution is the analysis of what the material/informational split does under composition. It replaces nothing and adds no invariant.</p>
+<p><strong>The collapse is complete, not partial, and the rule is parity.</strong> Four corners should give four sectors, one label per factor. They give two: every even number of material factors spans $\mathrm{Herm}(M_4(\mathbb{C}))$, every odd number spans its anti-Hermitian part. For $n$ factors the $2^{n}$ patterns collapse onto the same two subspaces of $M_{2^{n}}(\mathbb{C})$. So the pair keeps two sector patterns where it should keep four, and for $n$ factors it keeps two of $2^{n}$: exactly one global bit, the relative parity, survives. The bit that is lost over $\mathbb{C}$ is the bit that reappears over $\mathbb{R}$ as the choice of summand. One fact, two fields. The theorem and its proof are in the main line, under <em>The Two Corners Coincide</em>.</p>
+<p><strong>Over $\mathbb{C}$ there is no repair of O2.</strong> $\mathbb{B}\otimes_\mathbb{C}\mathbb{B}\cong M_4(\mathbb{C})$ is simple, so its only central idempotents are $0$ and $1$: no superselection, no sector. Over $\mathbb{R}$ the pair splits. The labels vanishing over $\mathbb{C}$ and the split appearing over $\mathbb{R}$ are one fact seen over two fields.</p>
+<p><strong>The fibre picture, and what it is not.</strong> Giving particle $k$ its own copy $\mathbb{B}_k$ and tensoring adds no algebra: $\bigotimes_k\mathbb{B}_k$ is $\mathbb{B}^{\otimes n}$, whose factors were already labelled by position. A particle-indexed copy is legitimate if what is meant is an internal or spin label $k$, or a copy carried along each worldline; it is not legitimate as a spacetime tangent bundle, because then the index would be an event, not a particle. Nor is the label a spacetime index. A tangent-bundle fibre is indexed by a point of $M$; two particles at the same event share one fibre, so "one $\mathbb{B}$ per particle" is not a bundle over spacetime. The geometric statement that does exist is a different one: $\mathbb{B}$ is the fibre of the Clifford/Dirac bundle at each event, a one-particle state is a wavefunction on $M$ valued in it, and the $n$-particle space is a symmetric or antisymmetric power of the one-particle Hilbert space.</p>
+<p><strong>The one thing the fibre picture does say correctly.</strong> If the $n$ copies are kept as real algebras, each with its own complex structure $\iota_k$, then there are $2^n$ ways to align them and $2^{n-1}$ up to conjugating the whole algebra at once. That is the central bit of article 8 in geometric language. So the picture is a picture of $\otimes_\mathbb{R}$, and nothing beyond it.</p>
+<h3 id="peirce-modules-and-why-neither-substitutes-for-the-split">Peirce, Modules, and Why Neither Substitutes for the Split</h3>
+<p><strong>Two different $\mathbb{Z}_2$ structures are often confused, and the corpus already keeps them apart (O15).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Peirce split</th>
+<th>sector split</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>splitting operator</td>
+<td>$\mathrm{ad}\,\tilde\Pi$, with $\tilde\Pi$ a rank-one idempotent</td>
+<td>the star $\star$</td>
+</tr>
+<tr>
+<td>blocks</td>
+<td>$\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$, four of complex dimension 1</td>
+<td>Hermitian and anti-Hermitian, four real dimensions each</td>
+</tr>
+<tr>
+<td>algebra grading?</td>
+<td>yes: $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$; $\mathcal{A}_0=\mathbb{B}_{++}\oplus\mathbb{B}_{--}\cong\mathbb{C}\times\mathbb{C}$ is a subalgebra</td>
+<td>no; only the commutator is graded (O15)</td>
+</tr>
+<tr>
+<td>does it tensor?</td>
+<td>yes: $\mathrm{ad}\sum_k\tilde\Pi_k$ is complex-linear with integral eigenvalues in $\{-n,\dots,n\}$; the $\mathbb{Z}_2$ grading is their parity</td>
+<td>no: $\sigma_1$ does not descend</td>
+</tr>
+<tr>
+<td>what varies</td>
+<td>a four-real-parameter family of idempotent pairs, and $\mathbb{P}^1(\mathbb{C})$ of minimal left ideals</td>
+<td>a two-sphere of directions (O17)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Peirce split answers <em>which basis</em>; the sector split asks <em>which sector</em>.</strong> Only the first is a grading, only the first tensors, and only the first survives a change of frame. This closes a tempting false move: "give each particle its own Peirce decomposition" does not produce two qubits. Varying the root of $1$ moves the cut inside one copy of $M_2(\mathbb{C})$, and a cut of one algebra is never a tensor factor.</p>
+<p><strong>One correction to the usual description of the Peirce grading.</strong> The off-diagonal part $\mathcal{A}_1=\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}$ is <em>not</em> square-zero. Each block squares to zero individually, but their sum does not: $\mathcal{A}_1\mathcal{A}_1=\mathcal{A}_0$, and for the diagonal pair $\mathcal{A}_1^2=e_t$. That inclusion, $\mathcal{A}_1\mathcal{A}_1\subseteq\mathcal{A}_0$, is precisely what makes $\mathcal{A}_0$ a subalgebra and the decomposition a genuine $\mathbb{Z}_2$ grading. Calling $\mathcal{A}_1$ square-zero would describe a different, exterior-type structure that the algebra does not have.</p>
+<p><strong>Module theory corroborates O13; it does not replace it.</strong> Every left $\mathbb{B}$-module is $S^{\oplus k}\cong\mathbb{C}^{2k}$ with $S\cong\mathbb{C}^2$, so $S$ is projective and not free, and freeness is the divisibility of the dimension by four. The two-qubit operator algebra has complex dimension sixteen, so as a left $\mathbb{B}$-module it is $\mathbb{B}^{\oplus 4}$: four copies of the single-qubit algebra, with nothing in the left action to say which copy is which factor. And the tensor product of two left $\mathbb{B}$-modules is not a left $\mathbb{B}$-module at all, because two actions would compete on the shared algebra and only a diagonal one can survive. A two-qubit register is therefore provably not a $\mathbb{B}$-module with two visible factors. That is O13 reached from module theory instead of from the dimension count, and the coincidence of the three routes — dimension, module, algebra — is the strongest form of the claim.</p>
+<h3 id="the-duo-complex-route-what-the-corpus-already-has">The Duo-Complex Route: What the Corpus Already Has</h3>
+<p><strong>This section is the working file behind article 9, kept here so the chain of the argument is visible.</strong> Article 9 states the result; this states how it was found, in the order it was found, including the route that fails and the conjugation that is easy to take wrongly.</p>
+<p><strong>A duo-complex number is a pair of complex numbers, and it is the spinor module.</strong> In the corpus, $\mathbb{C}^2=\{(Q_{\blacktriangle},Q_{\blacktriangledown})\}$ is the simple left module of $\mathbb{B}\cong M_2(\mathbb{C})$, of dimension $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$, and it carries three canonical forms: the Hermitian $H$, the symmetric bilinear $B$, and the alternating $\omega$, with Gram matrices the identity, the identity and $\left(\begin{smallmatrix}0&1\\-1&0\end{smallmatrix}\right)$. The corpus proves them not proportional, and it proves the tensor square splits canonically,</p>
+<p>$$
+\mathbb{C}^2\otimes\mathbb{C}^2=\operatorname{sym}^2\mathbb{C}^2\oplus\Lambda^2\mathbb{C}^2\cong 3\oplus 1,
+$$</p>
+<p>from the swap alone. The second summand is one-dimensional and is the $\omega$-direction. Read as spins that is the singlet; read as two qubits it is the Bell antisymmetric state. The decomposition is already in the corpus, under <em>The Tensor Square of $\mathbb{C}^2$</em>.</p>
+<p><strong>The concurrence is the second canonical form, tensored.</strong> For any two-qubit state written as a $2\times2$ coefficient array $c$,</p>
+<p>$$
+\omega\otimes\omega(\psi,\psi)=\sum_{ijkl}\omega_{ij}\omega_{kl}c_{ij}c_{kl}=2\bigl(c_{00}c_{11}-c_{01}c_{10}\bigr)=2\,\mathrm{Det}(c),
+$$</p>
+<p>checked on two hundred random normalised states with zero failures. So the entanglement measure the corpus already uses is one of its own three forms, applied twice; the tensor product is the only new input. The inertia of $\omega\otimes\omega$ as a real quadratic form is $(2,2)$, which is exactly the inertia the note records for the concurrence form, and that is why the Bell basis diagonalises it with two signs of each.</p>
+<p><strong>The other form is the norm, and the note's "two quadratic forms" now have names.</strong> $B\otimes B$ is the identity on the coefficients, so $B\otimes B(\psi,\psi)=\sum_{ij}c_{ij}^2$, the biquaternion norm. The three forms of the duo-complex space therefore map onto the three structures of the pair: $H\otimes H$ is the inner product and the Born weight, $B\otimes B$ is the interval form, and $\omega\otimes\omega$ is the entanglement measure.</p>
+<p><strong>Why $\omega$ composes and the sector label does not.</strong> $\omega$ is bilinear, so it needs no conjugation and passes through the tensor product untouched. The sector label is the <em>antilinear</em> star, and an antilinear map does not descend: that is $\sigma_1$ in the theorem above. The criterion for surviving composition is therefore exactly bilinearity, and it decides both halves of this note at once — the reason there is no per-subsystem sector label is the reason there is a concurrence.</p>
+<p><strong>The charge conjugation of the corpus is the same object, and the corpus half-says so.</strong> Its module charge conjugation is $\mathcal{C}[\tilde\Xi]=-\vec e_y\tilde\Xi^{*}\vec e_y$, an antilinear involution whose matrix is that of $\omega$ composed with conjugation. Two of them compose to a bilinear map, which is why $\mathcal{C}\otimes\mathcal{C}$ is available at all:</p>
+<p>$$
+C(\psi)=\bigl|\langle\psi|\,\mathcal{C}\otimes\mathcal{C}\,|\psi^{*}\rangle\bigr|=2\bigl|c_{00}c_{11}-c_{01}c_{10}\bigr|,
+$$</p>
+<p>checked against the determinant. The corpus remarks that the concurrence carries no separate glyph because $\mathcal{C}$ is already charge conjugation. That remark is not a notational accident: the concurrence <em>is</em> the charge-conjugation pairing on the two-spinor space, and the same pairing is what separates the Dirac mass from the Majorana mass in <em>Antilinear Structure and the Two Kinds of Mass</em>. Three readings — mass pairing, spin flip, entanglement measure — of one bilinear form.</p>
+<p><strong>The parity of the number of factors decides the degree.</strong> Transposing every slot gives $(\omega^{\otimes n})^{\mathsf T}=(-\omega)^{\otimes n}=(-1)^n\omega^{\otimes n}$. So for odd $n$ the form is antisymmetric and vanishes identically on the diagonal: at three qubits $\omega\otimes\omega\otimes\omega$ gives nothing at all. For $n=2$ it is symmetric and is the complete measure; for $n=4$ it is symmetric again and nontrivial. The degree of a usable invariant is thus forced by the parity of the number of factors, and the three-qubit measures — the three-tangle and Cayley's hyperdeterminant — must be quartic. That is a reason rather than a coincidence.</p>
+<p><strong>The tempting-but-wrong route, stated so it is not tried.</strong> A Peirce decomposition exhibits two minimal left ideals, hence two copies of the duo-complex space. Counting them does not give two qubits. They are the same qubit twice — the multiplicity of the regular module of a $2\times2$ matrix algebra — and the corpus's own module article calls that multiplicity bookkeeping. This is O13 in a third language, after the dimension count and the non-descendence of $\sigma_1$. Two qubits come from tensoring the duo-complex spaces of distinct factors, and it is then that the three forms tensor with them.</p>
+<p><strong>A trap worth recording, because it caught me.</strong> Two different antilinear automorphisms act on $\mathbb{B}$, and they move the lattice of minimal left ideals differently.</p>
+<ul>
+<li>Coefficient conjugation $\sigma$, the corpus's $\mathrm{conj}\otimes\mathrm{id}$: $i\mapsto-i$ with the quaternion units fixed. It acts on the kernel line by $z\mapsto-1/\bar z$, an antiholomorphic involution with no fixed point. Hence no minimal left ideal is $\sigma$-stable, and the real circle is preserved with $t\mapsto-1/t$, the antipodal map. This is the corpus's statement, and it is correct.</li>
+<li>Entrywise matrix conjugation $\kappa$: it acts by $z\mapsto\bar z$ and fixes every ideal with a real kernel line.</li>
+</ul>
+<p>Both are homomorphisms; they differ because they are not inner-equivalent. In a matrix display $\kappa$ looks like the obvious conjugation and $\sigma$ does not, so testing the wrong one yields a false erratum. The corpus is right and the trap is the display's.</p>
+<p><strong>What this changes.</strong> Nothing in the results, and it closes the note's asymmetry. Until now the note said only what the sector split cannot do under composition. This says what the corpus already owns that does compose, that the concurrence was one of its three canonical forms from the start, and that bilinearity, not sectorhood, is the property that survives.</p>
+<h3 id="the-mathematics-article">The mathematics article</h3>
+<p><strong>The Tensor Product of Two Biquaternion Algebras.</strong> <code>maths.md</code> → <code>## Biquaternions</code> → <code>### Algebra</code>, before <code>#### Operators</code>. The complex and real tensor products, the two factors $\mathbb{C}\otimes_\mathbb{R}\mathbb{C}$ and $\mathbb{H}\otimes_\mathbb{R}\mathbb{H}$, the Brauer class of $\mathbb{H}$, the $2^{n-1}$ count, the central idempotents, and the checks at one, two and three factors. Filed in the generic algebra chapter it is lost.</p>
+<h3 id="actions-in-order">Actions, in order</h3>
+<ol>
+<li>Rewrite the subsection at physics.md line 808 with the fourteen entries above.</li>
+<li>Write article 6, then 7, then 8.</li>
+<li>Write article 9. It is the one article the corpus has no draft of and the one that carries the bridge.</li>
+<li>Write the mathematics article.</li>
+<li>Add the five one-sentence edits: the Bell basis definition, the corner identity, the <em>Multi-Qubit Boundary</em> reason, the superselection sentence, and the pointer from <em>The Three Canonical Forms on $\mathbb{C}^2$</em> to article 9.</li>
+<li>Write articles 10 and 11.</li>
+<li>Add the one sentence at the head of the section that states Repair 1.</li>
+</ol>
+<p><strong>What an earlier draft got wrong, kept here as a record.</strong> It listed forty-one articles, then fifteen, then thirteen. The first count treated "mentions a bipartition" as "belongs here" and would have put decoherence, five channel articles and the whole entropy block of Quantum Fields under this heading. The second count was right about membership but sliced the multi-qubit core into four articles where two carry the same content. Thirteen is the number that survives both tests: subject, and size.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
