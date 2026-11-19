@@ -36,6 +36,9 @@ def main():
 
     print(f"Last build started {since.isoformat(timespec='seconds')}")
 
+    # The url list is regenerated every run, before the sitemaps that follow it:
+    # a new article must never be missing from it either.
+    build.write_ai_physics_overview()
     build.collect_articles()
     if not any(c["articles"] for c in build.COLLECTIONS):
         print("No md files found in articles_maths/ or articles_physics/. Add some and re-run.")
