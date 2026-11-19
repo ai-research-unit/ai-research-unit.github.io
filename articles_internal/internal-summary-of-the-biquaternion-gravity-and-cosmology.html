@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Gravity and Cosmology — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Gravity and Cosmology, eleven articles, the last category of the physics menu. It gives…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-gravity-and-cosmology"><strong>Internal Summary of the Biquaternion Gravity and Cosmology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Gravity and Cosmology</em>, eleven articles, the last category of the physics menu. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them.</p>
+<p><strong>What the category does, and what it refuses to do.</strong> It <strong>carries</strong> gravity: the algebra supplies a frame field, hence a metric, hence a spin connection, hence a Dirac operator on a curved background. It <strong>transcribes</strong> the linearised sector and the black-hole thermodynamics. It <strong>does not derive</strong> the Einstein field equations, and three of the eleven articles are agendas whose whole content is that separation.</p>
+<p><strong>The discipline of the category, stated once.</strong> Every item is classified three ways: <em>established</em> (proved inside the corpus), <em>carried</em> (written in the letters, not derived from them), <em>open</em> (no construction exists). The gravitational agenda says it plainly: even the linearised sector has been carried and transcribed rather than derived.</p>
+<p><strong>The one structural fact that makes the category possible.</strong></p>
+<p>$$
+\boxed{\;g_{\mu\nu}(x)=\bigl\langle\tilde E_{\Phi,\mu}(x),\tilde E_{\Phi,\nu}(x)\bigr\rangle_{\natural}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> A metric is a Gram matrix of a frame of four $\mathbb{B}_\Phi$ elements. So the algebra carries <em>any</em> Lorentzian metric, at the price of a frame field: the metric is not produced by the algebra, it is <em>encoded</em> in four algebra-valued functions. This is the precise sense in which the framework reaches gravity — as a kinematical carrier, not as a dynamical theory.</p>
+<p><strong>The four menu blocks.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The kinematical route</td>
+<td>frame field, metric, curved Dirac operator, torsion and contorsion, Newman–Penrose</td>
+</tr>
+<tr>
+<td>The linearised sector</td>
+<td>$h_{\mu\nu}$, gauge freedom, wave equation, gravitational waves</td>
+</tr>
+<tr>
+<td>Black holes</td>
+<td>surface gravity, temperature, entropy, the first law, Smarr</td>
+</tr>
+<tr>
+<td>The three agendas</td>
+<td>field equations, cosmology, quantum gravity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-the-kinematical-route">1. The Kinematical Route</h2>
+<p><strong>The frame field and the metric.</strong> Given $\tilde E_{\Phi,\mu}$ with $\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}=g_{\mu\nu}$, the covariant derivative on algebra-valued fields is</p>
+<p>$$
+\boxed{\;D_\mu\tilde Q=\partial_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}\;}
+$$</p>
+<p>and the curved Dirac operator obeys the Lichnerowicz identity <strong>inside the algebra</strong>:</p>
+<p>$$
+\boxed{\;\bigl(\tilde F_\mu D_\mu\bigr)^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}\;}
+$$</p>
+<p>$$
+\tilde F_\mu D_\mu\tilde\Xi_R=k_m\tilde\Xi_L,\qquad \bigl(\tilde F_\mu D_\mu\bigr)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The identity $(\gamma\!\cdot\!D)^2=-\Box+\tfrac14R$ is normally a statement about matrices and a Clifford algebra. Here the square is taken in $\mathbb{B}$, the Laplacian is the Laplace–Beltrami operator of $g$, and the Ricci scalar enters with the same coefficient $\tfrac14$. The algebra therefore reproduces the <em>curvature coupling</em> of a Dirac field, which is what makes the frame route physically meaningful rather than formal.</p>
+<p><strong>Torsion and contorsion.</strong></p>
+<p>$$
+T_{\lambda\mu\nu}=\Gamma_{\lambda\mu\nu}-\Gamma_{\lambda\nu\mu},\qquad
+\Gamma_{\lambda\mu\nu}=\Bigl\{{}_{\lambda\mu\nu}\Bigr\}+N_{\mathrm{cont},\lambda\mu\nu},
+$$</p>
+<p>$$
+\boxed{\;\nabla_\mu g_{\nu\rho}=-\bigl(g_{\nu\lambda}N_{\mathrm{cont},\lambda\mu\rho}+g_{\rho\lambda}N_{\mathrm{cont},\lambda\mu\nu}\bigr)\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> Metric compatibility is <em>equivalent</em> to an algebraic symmetry of the contorsion: the connection is metric-compatible exactly when $N_{\mathrm{cont}}$ is antisymmetric in its first and third indices. For totally antisymmetric torsion the contorsion is half the torsion, $N_{\mathrm{cont}}=\tfrac12T$, and the spin connection is fixed by the frame and the contorsion together.</p>
+<p><strong>The Newman–Penrose tetrad is the idempotent structure.</strong></p>
+<p>$$
+\boxed{\;l=\sqrt2\,i\,\tilde\Pi_1,\qquad n=\sqrt2\,i\,\tilde\Pi_2,\qquad m=\sqrt2\,i\,x,\qquad \bar m=\sqrt2\,i\,y\;}
+$$</p>
+<p>$$
+\tilde\Pi_1=\tfrac12(e_t+i\vec e_z),\quad \tilde\Pi_2=\tfrac12(e_t-i\vec e_z),\quad
+\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y),\quad \vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y).
+$$</p>
+<p><strong>The non-trivial claim, and it is the sharpest in the category.</strong> The null tetrad of Newman–Penrose <em>is</em> the pair of minimal idempotents plus the pair of nilpotents:</p>
+<p>$$
+\langle l,n\rangle_{*}=(\sqrt2 i)^{2}\mathrm{Sc}\bigl(\tilde\Pi_1\bar{\tilde\Pi}_2\bigr)=-2\,\mathrm{Sc}\bigl(\tilde\Pi_1^{2}\bigr)=-1 .
+$$</p>
+<p>So null directions, the light cone, the vacuum of the quantum category and the tetrad of the classical one are one and the same object. The null and orthogonality relations $l\cdot l=n\cdot n=m\cdot m=0$, $l\cdot n=-1$, $m\cdot\bar m=+1$ are then faces of $\tilde\Pi^{2}=\tilde\Pi$ and $\vec\Upsilon^{2}=0$, not independent axioms.</p>
+<p><strong>Curvature from a field-valued light speed.</strong> The corpus records one exact curved family:</p>
+<p>$$
+d(ir'_t)=i\,c\,dt'+i\,t'\,dc,\qquad
+ds^{2}=-c^{2}dt'^{2}-2ct'\,dt'\,dc-t'^{2}(dc)^{2}+dr_x^{2}+dr_y^{2}+dr_z^{2},
+$$</p>
+<p>whose coefficient tuple in $(t',r_x,r_y,r_z)$ is $(-c^{2},1,1,1)$ and whose Ricci components are second derivatives of $w=c^{2}$.</p>
+<p><strong>The non-trivial claim.</strong> If the light speed is a function of position, the metric is <em>genuinely</em> curved, with $g_{ij}=\delta_{ij}$, no shift vector and one free function. The class is narrow, and the corpus states its width exactly: one free function, flat spatial slices, no rotation. Whether this family is physically the right one is not claimed.</p>
+<p><strong>Source.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, <code>articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.md</code>, <code>articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.md</code>.</p>
+<h2 id="2-the-linearised-sector">2. The Linearised Sector</h2>
+<p><strong>The expansion and the gauge freedom.</strong></p>
+<p>$$
+g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad
+h_{\mu\nu}\mapsto h_{\mu\nu}-\partial_\mu\zeta_\nu-\partial_\nu\zeta_\mu,
+$$</p>
+<p>$$
+\bar h_{00}=h_{00}+\tfrac12h,\quad \bar h_{0\eta}=h_{0\eta},\quad \bar h_{\eta l}=h_{\eta l}-\tfrac12h\,\delta_{\eta l},\quad \bar h=-\bar h_{00}+\sum_\eta\bar h_{\eta\eta}.
+$$</p>
+<p><strong>The wave equation.</strong></p>
+<p>$$
+\boxed{\;\Box_\Phi\bar h_{\mu\nu}=-\frac{16\pi G}{c^{4}}T_{\mu\nu},\qquad\text{and in vacuum}\qquad \Box_\Phi\bar h_{\mu\nu}=0\;}
+$$</p>
+<p><strong>The residual gauge.</strong></p>
+<p>$$
+\bar h_{00}\mapsto\bar h_{00}-2\partial_0\zeta_0-D,\qquad \bar D_\nu\mapsto\bar D_\nu-\Box_\Phi\zeta_\nu,
+\qquad \boxed{\;\Box_\Phi\zeta_\nu=0\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The harmonic gauge leaves a residual freedom whose parameters are themselves solutions of the wave equation. So the physical content is a <em>quotient</em>: two metrics are the same state when they differ by a harmonic vector. The counting of polarisations — two for a massless spin-two field — is the dimension of that quotient, and the corpus derives it from the residual gauge rather than asserting it.</p>
+<p><strong>Waves on the frame.</strong> The perturbation of the frame field is</p>
+<p>$$
+\bar{\delta\tilde E_{\Phi}}_\mu=\delta\tilde E_{\Phi,\mu}-\tfrac14h\,\varepsilon_\mu,\qquad
+h=2\bigl\langle\varepsilon_\nu,\delta\tilde E_{\Phi,\nu}\bigr\rangle_{\natural},\qquad
+\Box_\Phi\,\bar{\delta\tilde E_{\Phi}}_\mu=0 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The wave equation holds for the <em>frame</em> perturbation, not only for the metric perturbation, and the trace part is subtracted in the same way. A gravitational wave is therefore a propagating congruence of frames, and its two polarisations are the two ways the congruence can shear.</p>
+<p><strong>Source.</strong> <code>articles_physics/linearized-gravity-in-biquaternionic-form.md</code>, <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code>.</p>
+<h2 id="3-black-holes">3. Black Holes</h2>
+<p>$$
+\boxed{\;T=\frac{\kappa}{2\pi},\qquad S=\frac{A}{4G}\;}
+$$</p>
+<p>$$
+dM=\frac{\kappa}{8\pi G}dA+\Omega\,dJ+\Xi\,dϘ,\qquad
+M=\frac{\kappa A}{4\pi G}+2\Omega J+\Xi\,Ϙ,
+$$</p>
+<p>$$
+T_{\mathrm H}=\frac{\hbar\kappa}{2\pi ck_B}=\frac{\hbar c^{3}}{8\pi GMk_B},\qquad
+S=\frac{c^{3}k_BA}{4\hbar G}=\frac{k_BA}{4\ell_P^{2}},\qquad \ell_P^{2}=\frac{\hbar G}{c^{3}}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The first law and the Smarr formula are <em>the same</em> equation: the Smarr relation is the first law integrated with the homogeneity of the mass. In the corpus this is not an analogy but an identity, because $M$ is homogeneous of degree one in $(A,J,Ϙ)$ and the coefficients are the conjugate potentials. The factor $\tfrac14$ in the entropy is the factor that no classical argument fixes; the corpus states it as input from the quantum category (Hawking's temperature) and does not derive it here.</p>
+<p><strong>Source.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>.</p>
+<h2 id="4-the-three-agendas">4. The Three Agendas</h2>
+<p><strong>The field-equation agenda.</strong> Its question is whether the framework reproduces the Einstein equations. Its answer is a separation: the kinematical route is established (any metric can be carried), the linearised sector is carried and transcribed, the non-linear equations are <strong>open</strong>. The sharper finding is that no action for the metric has been produced inside the algebra: the frame field is constrained by the Gram relation, and the constraint has not been shown to follow from a variational principle.</p>
+<p><strong>The cosmology agenda.</strong> Its question is what it would take to carry FLRW, the Friedmann equations, the equation of state and the growth of structure. Its answer is the same three-way classification, applied construction by construction. <strong>The non-trivial claim</strong> it records: a spatially flat FLRW metric is <em>in</em> the frame route, because it is diagonal with one free function of time — so the carrier exists and what is missing is the dynamics, not the kinematics.</p>
+<p><strong>The quantum-gravity agenda.</strong> Its question is downstream: quantisation presupposes a classical theory with an action, a conjugate momentum and a constraint structure, and the gravity series supplies none of the three. <strong>The non-trivial claim</strong> is that this is not a technical gap but an ordering one: the category cannot quantise gravity before the field-equation agenda produces an action, and the agenda says so.</p>
+<p><strong>The two remaining articles.</strong> <em>An External Construction of Space from Quaternionic Spinors</em> and <em>The Biquaternion Basis of a Unified-Field Fibre Bundle</em> record the two ways the algebra has been used to <em>build</em> spacetime rather than to live on it. They are recorded as constructions, not as derivations.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.md</code>, <code>articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.md</code>, <code>articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in six formulas.</strong></p>
+<p>$$
+g_{\mu\nu}=\bigl\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\bigr\rangle_{\natural},\qquad
+\bigl(\tilde F_\mu D_\mu\bigr)^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric},\qquad
+\Box_\Phi\bar h_{\mu\nu}=-\frac{16\pi G}{c^{4}}T_{\mu\nu},
+$$</p>
+<p>$$
+l=\sqrt2 i\,\tilde\Pi_1,\qquad n=\sqrt2 i\,\tilde\Pi_2,\qquad
+T=\frac{\kappa}{2\pi},\qquad S=\frac{A}{4G}.
+$$</p>
+<p><strong>Five results to keep.</strong> The metric is the Gram matrix of a frame, so the algebra carries any Lorentzian geometry. The curved Dirac operator satisfies Lichnerowicz inside the algebra, with the $\tfrac14$ coefficient. The Newman–Penrose null tetrad is exactly the two idempotents and the two nilpotents. The linearised equations are carried and the residual gauge is harmonic. Black-hole thermodynamics is transcribed, and the $\tfrac14$ is not derived.</p>
+<p><strong>Three refusals.</strong> The category does not derive the Einstein equations. It does not produce an action for the metric. It does not quantise gravity, and it states the ordering reason.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde E_{\Phi,\mu}$</td>
+<td>frame field</td>
+</tr>
+<tr>
+<td>$\vec\Gamma_\mu$</td>
+<td>spin connection</td>
+</tr>
+<tr>
+<td>$N_{\mathrm{cont}}$</td>
+<td>contorsion</td>
+</tr>
+<tr>
+<td>$h_{\mu\nu}$, $\bar h_{\mu\nu}$</td>
+<td>metric perturbation and its trace reverse</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>surface gravity</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{1,2}$, $x$, $y$</td>
+<td>NP tetrad in the letters</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>curved-spacetime-and-the-biquaternion-framework</code>, <code>the-newman-penrose-formalism-in-biquaternionic-form</code>, <code>linearized-gravity-in-biquaternionic-form</code>, <code>black-hole-thermodynamics-in-biquaternionic-form</code>. Traps: the three research agendas, which must be read as ledgers and never as results.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

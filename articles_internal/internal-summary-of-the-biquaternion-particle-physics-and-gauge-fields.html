@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Particle Physics and Gauge Fields — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Particle Physics and Gauge Fields, the longest category of the physics menu. It gives the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-particle-physics-and-gauge-fields"><strong>Internal Summary of the Biquaternion Particle Physics and Gauge Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Particle Physics and Gauge Fields</em>, the longest category of the physics menu. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> Two things, and the corpus never confuses them. It <strong>develops</strong> what the algebra reaches: the gauge principle, the covariant derivative, the curvature, the instanton, the Higgs mechanism, the electroweak sector, the Yukawa sector, the flavour matrices. It <strong>records</strong> what the algebra does not reach: colour, the octet, the generations, the nineteen parameters, grand unification. Every article of the second kind states its obstruction precisely.</p>
+<p><strong>The one structural theorem of the category.</strong></p>
+<p>$$
+\boxed{\;\exp\bigl(\mathbb{B}_{\Phi}\bigr)=\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1),\qquad \dim_{\mathbb{R}}\mathrm{U}(2)=4\;}
+$$</p>
+<p>$$
+\boxed{\;\dim_{\mathbb{R}}\mathrm{SU}(3)=8\;>\;4=\dim_{\mathbb{R}}\mathrm{U}(2)\;}\qquad
+\boxed{\;V\ \text{a }\mathbb{B}\text{-module}\ \Longrightarrow\ \dim_{\mathbb{C}}V=2r\ \text{is even}\;}
+$$</p>
+<p><strong>The non-trivial claim, stated once for the whole category.</strong> The algebra carries $\mathrm{SU}(2)\times\mathrm{U}(1)$ as its unitary group and nothing larger. Colour is not merely absent from one construction; it is <em>excluded</em> by the dimension count and by the parity of the module dimension. Everything about the strong interaction in this category is either transcendent (the running coupling, the area law) or recorded as outside.</p>
+<p><strong>The five menu subsections.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generalities</td>
+<td>gauge principle, covariant derivative, curvature, Hopf, index theorem, instantons, ADHM, instanton gas, duality, theta, the $SU(2)$-but-not-$SU(3)$ theorem, the centre bound, GUT failure, the Standard Model and its parameters</td>
+</tr>
+<tr>
+<td>Particles of spin 0</td>
+<td>Higgs, electroweak breaking, Coleman–Weinberg, sigma model, pion, custodial symmetry, oblique parameters, Skyrme, axion</td>
+</tr>
+<tr>
+<td>Particles of spin $\tfrac12$</td>
+<td>chiral fermions, condensate, anomalies, Fujikawa, neutrino and Majorana, seesaw, EDM, nucleons, generations, Yukawa, CKM, PMNS, meson mixing, spin–mass formulas, $SU(3)$ multiplets</td>
+</tr>
+<tr>
+<td>Particles of spin 1 and above</td>
+<td>non-Abelian fields, Yang–Mills, Faddeev–Popov, $R_\xi$, lattice, $W$ and $Z$, weak interaction, Stueckelberg, gluon, QCD, asymptotic freedom, parton model, jets</td>
+</tr>
+<tr>
+<td>Focus on informational aspects</td>
+<td>gauge redundancy, confinement as information loss, the Higgs mechanism as erasure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-generalities">1. Generalities</h2>
+<p><strong>The gauge principle.</strong></p>
+<p>$$
+\lambda=e^{i\theta_{\mathrm{cen}}},\qquad \tilde\Xi\mapsto\lambda\tilde\Xi,\qquad
+D\tilde\Xi:=\tilde\nabla_\Phi\tilde\Xi+\frac{iϙ}{\hbar}\tilde A_\Phi\tilde\Xi,
+$$</p>
+<p>$$
+\boxed{\;\tilde A_{\Phi,2}=\tilde A_\Phi-\tilde\nabla_\Phi\Gamma\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The global symmetry is the <strong>centre</strong>: the only $\lambda$ that commutes with everything is a central phase. Gauging it is therefore the only gauging the algebra offers for free, and it gives $\mathrm{U}(1)$. The gauge transformation law is the standard one, and the field strength is unchanged by it.</p>
+<p><strong>The curvature and the Bianchi identity.</strong></p>
+<p>$$
+\boxed{\;[D_\mu,D_\nu]=i\kappa\,F_{\mu\nu},\qquad F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu]\;}
+$$</p>
+<p>$$
+\mathcal A_{\mathrm g,\mu}=\tilde U\mathcal A_\mu\tilde U^{-1}+\frac{i}{\kappa}(\partial_\mu\tilde U)\tilde U^{-1},\qquad F_{\mathrm g,\mu\nu}=\tilde U F_{\mu\nu}\tilde U^{-1}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The curvature's non-Abelian term is the <em>commutator inside the algebra</em>, so the field strength is a bivector-valued element and the Bianchi identity is the Jacobi identity of that commutator. The corpus writes the $\mathrm{SU}(2)$ case in the letters $\vec e_x,\vec e_y,\vec e_z$, and the commutator is the cross product.</p>
+<p><strong>The index theorem.</strong></p>
+<p>$$
+\boxed{\;\mathrm{ind}\,\tilde D_R=\int_MA_{\mathrm{aro}}(TM)\wedge\mathrm{ch}(E_R)=\frac{1}{8\pi^{2}}\int_{\mathbb{R}^{4}}\mathrm{Tr}_R\bigl(F\wedge F\bigr)=2\,T(R)\,Ϙ\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The index is the instanton number times twice the index of the representation, and the factor $2$ is the same $2\,\mathrm{Sc}=\operatorname{tr}$ of the whole corpus. The zero-mode count is therefore <em>the same number</em> as the trace of the representation, read twice.</p>
+<p><strong>Instantons and the topological charge.</strong></p>
+<p>$$
+\boxed{\;Ϙ=\frac{1}{8\pi^{2}}\int_{\mathbb{R}^{4}}\mathrm{Tr}\bigl(F\wedge F\bigr)\;}
+$$</p>
+<p>$$
+\star^{2}=+1\ \text{(Euclidean)},\quad \star^{2}=-1\ \text{(Lorentzian)},\qquad
+\text{self-dual}\iff\vec B=+\vec E,\quad \text{anti-self-dual}\iff\vec B=-\vec E .
+$$</p>
+<p><strong>The non-trivial claim.</strong> On the Euclidean section the temporal unit is rotated to a real coordinate and the Hodge star squares to $+1$, so (anti-)self-duality is a real condition and the instanton exists. In the Lorentzian section the star squares to $-1$ and the same condition has no real solution. The instanton is thus a Euclidean object <em>because of the algebra's temporal unit</em>, not by convention.</p>
+<p><strong>The centre bound, and the theta angle.</strong></p>
+<p>$$
+\boxed{\;L=\pi i m\,e_t+\pi n\,\vec U,\qquad m\equiv n\pmod 2\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The allowed central phases are quantised and their two labels are locked mod $2$: a half-turn in the centre and a half-turn in the gauge direction must come together. This is the algebraic statement that the gauge group is a quotient of the product, and it fixes the possible theta angles.</p>
+<p><strong>Where unification fails.</strong> $G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times U(1)_Y$ has rank four and eight $+$ three $+$ one generators. Any embedding into a simple group must contain the eight of $SU(3)$. Since the algebra's unitary group has four real dimensions and every module has even complex dimension, the embedding fails at the first step.</p>
+<p><strong>The Standard Model and its nineteen parameters.</strong></p>
+<p>$$
+\underbrace{13}_{\text{flavour}}+\underbrace{3}_{\text{couplings}}+\underbrace{1}_{\theta_{\mathrm{QCD}}}+\underbrace{2}_{\text{scalar}}=19,\qquad
+19\ \text{parameters}-1\ \text{unit}=18\ \text{dimensionless numbers}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The parameter count is the measure of the framework's boundary: the algebra supplies the <em>arena</em> (the four sectors, the derivative, the curvature), the <em>relations</em> between the sectors, and the <em>constraints</em>; it does not supply the eighteen numbers. The corpus states this as a ledger, not as a failure.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-gauge-principle-in-biquaternionic-form.md</code>, <code>articles_physics/gauge-curvature-and-the-bianchi-identity-in-biquaternionic-form.md</code>, <code>articles_physics/the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.md</code>, <code>articles_physics/instantons-and-solitons-in-biquaternionic-form.md</code>, <code>articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.md</code>, <code>articles_physics/the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.md</code>, <code>articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.md</code>, <code>articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.md</code>.</p>
+<h2 id="2-spin-zero-the-higgs-sector">2. Spin Zero: The Higgs Sector</h2>
+<p><strong>The mechanism.</strong></p>
+<p>$$
+V(\xi^{*}\xi)=\beta\Bigl(\xi^{*}\xi-\frac{v^{2}}{2}\Bigr)^{2},\qquad |\xi|=\frac{v}{\sqrt2},\qquad
+\xi=\frac{1}{\sqrt2}\bigl(v+h\bigr)e^{i\theta_{\mathrm{gld}}},
+$$</p>
+<p>$$
+\boxed{\;m_h^{2}=2\beta v^{2}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Goldstone mode $\theta_{\mathrm{gld}}$ is <em>eaten</em>: the covariant derivative acting on the condensate gives</p>
+<p>$$
+D_\mu\tilde\Xi\big|_{\langle\tilde\Xi\rangle}=\frac{iϙ}{\hbar}A_\mu\langle\tilde\Xi\rangle,
+$$</p>
+<p>so the phase disappears from the spectrum and reappears as the longitudinal polarisation of the gauge boson. The counting works because the algebra's phase is the central direction: gauging the centre eats the phase, and the count $4-1=3$ is the massive vector.</p>
+<p><strong>The doublet and the mass relation.</strong></p>
+<p>$$
+\langle H\rangle=\frac{v}{\sqrt2}I_2,\qquad \mathrm{Sc}\bigl(\langle H\rangle^{\dagger}\langle H\rangle\bigr)=\frac{v^{2}}{2},
+$$</p>
+<p>$$
+\rho=\frac{M_W^{2}}{M_Z^{2}\cos^{2}\theta_W},\qquad
+M_W^{2}=M_Z^{2}\cos^{2}\theta_W\iff\rho=1 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The condensate proportional to the identity is what makes the $\mathrm{SU}(2)$ breaking custodial: the residual symmetry is $SU(2)_V=\{g_L=g_R=g\}$ and the tree-level $\rho$ is exactly one. A condensate with a different direction gives $\rho\neq1$ and the general formula</p>
+<p>$$
+\rho=\frac{\sum_iv_i^{2}\bigl[T_i(T_i+1)-T_{3i}^{2}\bigr]}{\sum_i2v_i^{2}T_{3i}^{2}}.
+$$</p>
+<p><strong>The effective potential and the rest.</strong> The Coleman–Weinberg mechanism is recorded as the one-loop correction to the potential; the sigma model and the pion as the non-linear realisation of the same breaking; the oblique parameters $S,T,U$ as the three curvature invariants of the vacuum polarisation; the Skyrme model as the topological baryon; the axion as the phase of a second condensate.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-higgs-mechanism-in-biquaternionic-form.md</code>, <code>articles_physics/electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.md</code>, <code>articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.md</code>, <code>articles_physics/electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code>, <code>articles_physics/the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.md</code>.</p>
+<h2 id="3-spin-one-half-flavour-anomalies-and-matter">3. Spin One Half: Flavour, Anomalies and Matter</h2>
+<p><strong>Chiral fermions and the condensate.</strong> Chirality is the projectors of the two sectors; the condensate is an off-diagonal expectation value that breaks the chiral symmetry, and its scale is set by the same mechanism as the Higgs, one level down.</p>
+<p><strong>Anomalies.</strong> The Fujikawa method computes the anomaly as the Jacobian of the path-integral measure:</p>
+<p>$$
+\mathcal D\tilde\Xi\mapsto\mathcal D\tilde\Xi\,\exp\Bigl(i\int\alpha\,\mathcal A\Bigr),\qquad
+\mathcal A\propto\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The anomaly is the <em>trace of the fermion loop</em>, and the trace is $2\,\mathrm{Sc}$: the factor $2$ again. Cancellation of the Standard Model anomalies is then a statement about the charge assignments, and the corpus checks the three conditions in the letters.</p>
+<p><strong>Majorana and the self-conjugate field.</strong></p>
+<p>$$
+\boxed{\;\tilde\Xi^{c}=\mathcal C\tilde\Xi=i\,\bar{\tilde\Xi},\qquad \mathcal C^{2}\tilde\Xi=\tilde\Xi\;}
+$$</p>
+<p>$$
+\tilde\Xi=\tilde\Xi^{c}=i\bar{\tilde\Xi}\quad\text{(the Majorana condition)}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The charge-conjugation operator squares to $+1$, so the Majorana condition is a <em>real</em> condition with real solutions, and the neutrino can be its own antiparticle. The seesaw follows: a large Majorana mass and a Dirac mass give one light and one heavy eigenstate.</p>
+<p><strong>The Yukawa sector.</strong></p>
+<p>$$
+M_f=\frac{v}{\sqrt2}Y^{f},\qquad M=WDV^{\dagger},\qquad D=\operatorname{diag}(m_1,m_2,m_3),
+$$</p>
+<p>$$
+\boxed{\;V_{\mathrm{CKM}}=W_u^{\dagger}W_d\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The mixing matrix is the <em>relative</em> unitary of the two diagonalisations. The corpus states that the algebra makes the singular-value decomposition of a mass matrix its natural reading — the polar decomposition, one level up — and that CP violation is the phase of the relative unitary that cannot be removed by rephasing.</p>
+<p><strong>The number of generations.</strong> The corpus states the result in two lines. <em>Established</em>: the framework carries a generation index as a multiplicity factor, a spectrum of $N_g$ generations being $\mathcal S_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ with the algebra acting trivially on the second factor, so the invariants (dimension, centre, trace, sectors) are independent of $N_g$. <em>Not established</em>: nothing in the algebra selects $3$. The framework accommodates the generations; it does not explain them.</p>
+<p><strong>The $SU(3)$ multiplets in the letters.</strong> The dimension formula</p>
+<p>$$
+N(n,n_{\mathrm{dyn}})=\tfrac12(n+1)(n_{\mathrm{dyn}}+1)(n+n_{\mathrm{dyn}}+2)
+$$</p>
+<p>and the Gell-Mann–Okubo formula are recorded with the octet decomposition</p>
+<p>$$
+\mathrm{sym}_0^{(1,1)}=\Xi_3\oplus\Xi_2\oplus\Xi^{*}_2\oplus\Xi_0,
+\qquad
+\Xi_3=\{\Sigma^{+},\Sigma^{0},\Sigma^{-}\},\quad \Xi_2=\{p,n\},\quad \Xi_0=\{\Lambda\}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The $SU(3)$ multiplets can be <em>written</em> in the letters, but the group is not a subgroup of the algebra's unitary group. Writing the multiplets is not embedding the group, and the corpus says so explicitly in the article that fixes the boundary.</p>
+<p><strong>Source.</strong> <code>articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.md</code>, <code>articles_physics/the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form.md</code>, <code>articles_physics/the-neutrino-and-majorana-fermions-in-biquaternionic-form.md</code>, <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code>, <code>articles_physics/su-3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.md</code>, <code>articles_physics/the-number-of-generations-and-the-biquaternion-algebra.md</code>.</p>
+<h2 id="4-spin-one-and-above-yangmills-and-qcd">4. Spin One and Above: Yang–Mills and QCD</h2>
+<p><strong>Yang–Mills.</strong></p>
+<p>$$
+F_{\mu\nu}=\partial_\mu\mathcal A_\nu-\partial_\nu\mathcal A_\mu+i\kappa[\mathcal A_\mu,\mathcal A_\nu],\qquad
+D_\mu F^{\mu\nu}=J^{\nu}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Yang–Mills equation is the same product as Maxwell's, with the commutator supplying the non-Abelian term. Since the algebra's unitary group is $\mathrm{U}(2)$, the non-Abelian part is $\mathrm{SU}(2)$: the electroweak sector fits, and the colour sector does not.</p>
+<p><strong>The $W$ and $Z$.</strong> The massive vector fields are the Proca fields of the broken phase, with masses read from the condensate. The neutral current is the combination orthogonal to the photon, and the mixing angle is its parameter.</p>
+<p><strong>The gluon, recorded as outside.</strong></p>
+<p>$$
+\text{the octet}: \dim\mathrm{SU}(3)=8,\qquad \text{the algebra's unitary group}: \dim\mathrm{U}(2)=4 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The gluon is an octet of a group the algebra does not contain. The QCD Lagrangian, the Feynman rules and the parton model are recorded as transcriptions, and the corpus marks them as such: nothing in them is a consequence of the biquaternion structure.</p>
+<p><strong>Asymptotic freedom.</strong></p>
+<p>$$
+\beta_{g_s}=\mu\frac{dg_s}{d\mu}=-\frac{g_s^{3}}{16\pi^{2}}b_0,\qquad b_0=\frac{11}{3}C_A-\frac{4}{3}T_RN_f,
+$$</p>
+<p>$$
+\alpha_s(\mu)=\frac{\alpha_s(\mu_0)}{1+\dfrac{b_0\alpha_s(\mu_0)}{2\pi}\ln\dfrac{\mu}{\mu_0}},\qquad
+\Lambda=\mu_0\exp\Bigl(-\frac{2\pi}{b_0\alpha_s(\mu_0)}\Bigr).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The sign of $b_0$ is the competition between the gauge self-coupling ($+11/3\,C_A$) and the fermion screening ($-4/3\,T_RN_f$), and with $N_f\le16$ the coupling falls. The algebra contributes nothing to this count; the corpus records it and states the boundary.</p>
+<p><strong>Source.</strong> <code>articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.md</code>, <code>articles_physics/the-yang-mills-equation-in-biquaternionic-form.md</code>, <code>articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.md</code>, <code>articles_physics/asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code>, <code>articles_physics/the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.md</code>.</p>
+<h2 id="5-informational-aspects">5. Informational Aspects</h2>
+<p><strong>Gauge redundancy.</strong> The gauge orbit carries no information: the physical state is the orbit, and the entropy of the orbit is zero. <strong>The non-trivial claim.</strong> The gauge group acts by congruence, and a congruence preserves trace and determinant, hence preserves both the scalar part and the norm. Gauge redundancy is therefore <em>information-free by construction</em>.</p>
+<p><strong>Confinement as information loss.</strong></p>
+<p>$$
+\langle W(C)\rangle\sim e^{-\sigma\,\mathrm{area}(C)},\qquad
+I(C):=-\log\bigl|\langle W(C)\rangle\bigr|\simeq\sigma\,\mathrm{area}(C).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The area law says that the information needed to resolve a parton pair grows with the area they sweep, i.e. linearly with separation. Confinement is therefore an information statement: the partonic description loses resolution at a rate set by the string tension.</p>
+<p><strong>The Higgs mechanism as erasure.</strong></p>
+<p>$$
+\tilde\varrho_\Psi\mapsto U\tilde\varrho_\Psi U^{*},\qquad \vec s_\Psi\mapsto(\vec s_\Psi\!\cdot\!\vec u)\,\vec u .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The eaten Goldstone mode collapses the state onto a single direction of the Bloch ball: the transverse components are erased, and the erasure is an orthogonal projection. The Landauer price of the erasure is paid into the mass of the gauge boson, and the corpus records the analogy without claiming it is a thermodynamic derivation.</p>
+<p><strong>Source.</strong> <code>articles_physics/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.md</code>, <code>articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.md</code>, <code>articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in six formulas.</strong></p>
+<p>$$
+\exp(\mathbb{B}_\Phi)=\mathrm{U}(2),\qquad \dim\mathrm{SU}(3)=8>4,\qquad
+[D_\mu,D_\nu]=i\kappa F_{\mu\nu},
+$$</p>
+<p>$$
+m_h^{2}=2\beta v^{2},\qquad \rho=\frac{M_W^{2}}{M_Z^{2}\cos^{2}\theta_W},\qquad V_{\mathrm{CKM}}=W_u^{\dagger}W_d.
+$$</p>
+<p><strong>Five results to keep.</strong> The algebra's unitary group is $\mathrm{U}(2)$, so the electroweak sector fits and colour does not. The instanton exists because the Euclidean temporal unit makes the Hodge star square to $+1$. The index is $2\,T(R)\,Ϙ$, with the corpus's factor $2$. The Higgs mechanism eats the central phase, and the condensate proportional to the identity gives $\rho=1$ at tree level. The nineteen parameters are the boundary of the framework, not its content.</p>
+<p><strong>Three refusals.</strong> The category does not embed $SU(3)$ by writing its multiplets in the letters. It does not derive the running coupling. It does not claim the Standard Model parameters are explained.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal A_\mu$</td>
+<td>gauge connection, $\mathrm{su}(2)$-valued</td>
+</tr>
+<tr>
+<td>$F_{\mu\nu}$</td>
+<td>curvature</td>
+</tr>
+<tr>
+<td>$Ϙ$</td>
+<td>instanton number</td>
+</tr>
+<tr>
+<td>$\xi$, $H$</td>
+<td>Higgs field, doublet</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>condensate</td>
+</tr>
+<tr>
+<td>$W_{u,d}$, $V_{u,d}$</td>
+<td>diagonalising unitaries</td>
+</tr>
+<tr>
+<td>$b_0$</td>
+<td>one-loop beta coefficient</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>why-the-biquaternion-algebra-reaches-su-2-but-not-su-3</code>, <code>the-gauge-principle-in-biquaternionic-form</code>, <code>the-higgs-mechanism-in-biquaternionic-form</code>, <code>instantons-and-solitons-in-biquaternionic-form</code>. Traps: <code>the-gluon-an-octet-outside-the-biquaternion-algebra</code>, <code>the-number-of-generations-and-the-biquaternion-algebra</code>, <code>the-parameter-count-as-the-measure-of-the-frameworks-boundary</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

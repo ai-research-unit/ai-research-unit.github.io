@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Quantum Fields — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Quantum Fields, the largest category of the physics corpus. It gives the objects, the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-quantum-fields"><strong>Internal Summary of the Biquaternion Quantum Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Quantum Fields</em>, the largest category of the physics corpus. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> It quantises the fields of the two previous categories: the scalar, the Dirac, the Maxwell, the Proca, the Rarita–Schwinger and the graviton field. The algebra supplies the Fock space, the vacuum and the grading; the corpus supplies the standard machinery (Wick, Bogoliubov, path integrals, LSZ, BRST) rewritten in it.</p>
+<p><strong>The structural fact that organises the category.</strong> The vacuum is a <strong>minimal idempotent</strong>:</p>
+<p>$$
+\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr)=|0\rangle\langle 0|,\qquad \tilde\Pi^2=\tilde\Pi,\qquad \mathrm{rank}\,\mathsf M_2(\tilde\Pi)\in\{0,1,2\}.
+$$</p>
+<p>So "no particles" is not a vector added to the theory: it is a rank-one projection inside the algebra, and the Fock space is built on it:</p>
+<p>$$
+\mathcal F=\bigoplus_{n\ge0}\bigl(\mathcal H_1^{\otimes n}\bigr)_{\pm},\qquad
+|0\rangle\in\bigl(\mathcal H_1^{\otimes 0}\bigr)_{\pm}\cong\mathbb{C}.
+$$</p>
+<p><strong>The price, stated at once.</strong> An idempotent is a zero divisor. The vacuum state is therefore on the boundary of the cone, and every statement of the category that uses a polar decomposition, a logarithm or an inverse must say how it avoids the boundary. The corpus does this case by case, and the failures are collected in the last subsection.</p>
+<p><strong>The five menu subsections.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generalities</td>
+<td>vacuum, Fock space, grading, GNS, Wick, Bogoliubov, path integrals, generating functional, Schwinger–Dyson, determinant, S-matrix, LSZ, scattering, spin–statistics, CPT, charge conjugation, thermal circle, Unruh, Hawking, RG, trace anomaly, theta vacuum, bosonization, spectral triple</td>
+</tr>
+<tr>
+<td>Particles of spin 0</td>
+<td>Klein–Gordon quantisation, scalar Fock space, pair creation, path integral, Goldstone</td>
+</tr>
+<tr>
+<td>Particles of spin $\tfrac12$</td>
+<td>Dirac quantisation, the sea, fermionic Fock space, Grassmann states, propagator, path integral, doubling, matter, Jordan–Wigner, Kramers, anomalous moment</td>
+</tr>
+<tr>
+<td>Particles of spin 1 and above</td>
+<td>Maxwell, photon, Casimir, Proca, integer spin, BRST, gauge path integral, Wilson loops, Rarita–Schwinger, graviton, anyons</td>
+</tr>
+<tr>
+<td>Focus on informational aspects</td>
+<td>relative entropy, strong subadditivity, Reeh–Schlieder, Bisognano–Wichmann, modular Hamiltonian, replica, area law</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-sentence version.</strong> Quantisation in this algebra is the choice of a rank-one idempotent, and everything else — statistics, vacuum energy, modular flow — is read from its two-sector structure.</p>
+<h2 id="1-generalities">1. Generalities</h2>
+<p><strong>The state and the GNS form.</strong></p>
+<p>$$
+\omega_{\tilde\Pi}(\tilde Q_3)=2\,\mathrm{Sc}\bigl(\tilde\Pi\tilde Q_3\bigr),\qquad
+\mathcal H_{\tilde\Pi_+}\cong\mathbb{B}\,\tilde\Pi_+\cong\mathbb{C}^2 .
+$$</p>
+<p><strong>The grading, and the odd generators.</strong></p>
+<p>$$
+\vec\Upsilon_x=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\qquad \vec\Upsilon_y=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),
+$$</p>
+<p>$$
+\boxed{\;\vec\Upsilon_x^{2}=0,\qquad \vec\Upsilon_y^{2}=0,\qquad \{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,\qquad [\vec\Upsilon_x,\vec\Upsilon_y]=i\vec e_z\neq e_t\;}
+$$</p>
+<p>$$
+\tilde\Pi_-=\vec\Upsilon_y\vec\Upsilon_x=\tfrac12(e_t-i\vec e_z),\qquad (-1)^F=e_t-2\tilde\Pi_-=i\vec e_z .
+$$</p>
+<p><strong>The non-trivial claim of spin–statistics.</strong> The two odd generators are nilpotent and their <em>anticommutator</em> is the identity while their <em>commutator</em> is $i\vec e_z$, whose scalar part is zero. A canonical commutator must equal a $c$-number times the identity; here only the anticommutator does. The bosonic option is therefore algebraically excluded, and the fermionic one is forced. Add to this the rotor's double cover,</p>
+<p>$$
+\boxed{\;\tilde u(2\pi,\vec u)=-e_t,\qquad \tilde u(4\pi,\vec u)=+e_t\;}
+$$</p>
+<p>and the theorem is complete in the algebra: half-integer spin means a sign under $2\pi$, and a sign under $2\pi$ means anticommutation.</p>
+<p><strong>Field operators and the mode expansion.</strong></p>
+<p>$$
+\tilde\Xi_{\mathrm{fop}}(X,r'_t)=\int\frac{d^{3}p}{(2\pi\hbar)^{3}}\sqrt{\frac{\hbar c}{2E_{\vec p}}}\sum_{r=1}^{2}\Bigl[a_{\mathrm{fop},r}(\vec p)\tilde\Xi_+^{(r)}(\vec p)e^{-i\cdots}+b^{\dagger}\cdots\Bigr].
+$$</p>
+<p><strong>Wick, Bogoliubov, path integrals.</strong> The corpus restates Wick's theorem as the statement that the contraction is the two-point function of the GNS form; Bogoliubov transformations are the congruences that preserve the form; the functional integral is over the algebra-valued field with the action of the previous category; the generating functional and the effective action are the Legendre pair; the functional determinant is the Fredholm determinant of the operator, and it is where the trace anomaly enters.</p>
+<p><strong>S-matrix and LSZ.</strong> The S-matrix is the congruence sandwiched between asymptotic Fock vacua; LSZ is the statement that the pole of the correlator at the mass shell is the residue of the one-particle state. The Lippmann–Schwinger equation for the quaternionic Dirac operator and the Faddeev Green's function are recorded with the radiation condition.</p>
+<p><strong>CPT.</strong> The discrete operations are elements of the algebra:</p>
+<p>$$
+\omega=-\vec e_z,\quad \omega^{2}=-e_t,\qquad \Gamma=i\omega=-i\vec e_z,\quad \Gamma^{2}=e_t,\qquad
+C[\tilde\Xi]=\bigl(-\tilde\Xi_R^{J},\ \tilde\Xi_L^{J}\bigr).
+$$</p>
+<p><strong>The non-trivial claim.</strong> CPT is a theorem about the reality structure of the algebra, not about the Lagrangian: the product $CPT$ is the anti-linear involution that fixes the field equation, and the three factors are its three ways of being written. Charge conjugation is the place where the division-ring structure matters: a charged particle needs the ring, a neutral particle is a fixed point, and a <em>truly</em> neutral particle is a fixed point of the full anti-linear map.</p>
+<p><strong>Unruh and Hawking.</strong></p>
+<p>$$
+T=\frac{\hbar\,a}{2\pi c k_B},\qquad T=\frac{\hbar\,\kappa}{2\pi c k_B},\qquad T_{\mathrm H}=\frac{\hbar c^{3}}{8\pi GMk_B}.
+$$</p>
+<p>The derivation in the algebra uses the Rindler wedge $R=\{(r'_t,r_x):r_x>|r'_t|\}$, the hyperbolic coordinates</p>
+<p>$$
+x=\rho\cosh\eta,\qquad r'_t=\rho\sinh\eta,\qquad c\,d\tau=\rho\,d\eta,\qquad a=\frac{c^{2}}{\rho},
+$$</p>
+<p>and the boost rotor $\tilde U_{\Psi,\mathrm b}(\theta_{\mathrm{rpd}})=\exp(\frac{\theta_{\mathrm{rpd}}}{2}G_1)$ with $G_1=i\vec e_x\in\mathbb{B}_\Psi$. For the black hole the surface gravity is</p>
+<p>$$
+\kappa^{2}=-\tfrac12\Bigl[\varepsilon_{r'_t}\varepsilon_r\Bigl(\frac{c^{2}}{2}\frac{df}{dr}\Bigr)^{2}+\varepsilon_r\varepsilon_{r'_t}\Bigl(\frac{c^{2}}{2}\frac{df}{dr}\Bigr)^{2}\Bigr]
+$$</p>
+<p>evaluated at the horizon, and the temperature follows. <strong>The non-trivial claim.</strong> The temperature is the period of the imaginary time circle, and the period is fixed by the algebra's boost parameter: the horizon is the place where the temporal unit degenerates, so the thermal circle is the <em>only</em> consistent continuation.</p>
+<p><strong>The renormalisation group.</strong></p>
+<p>$$
+\boxed{\;\partial_{r'_t}\Gamma_\eta[\xi]=\mathrm{Sc}\Bigl[\bigl(\Gamma_\eta^{(2)}[\xi]+R_\eta\bigr)^{-1}\partial_{r'_t}R_\eta\Bigr],\qquad r'_t=\log\frac{k}{\Lambda}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The flow is a one-loop exact statement about the second functional derivative, and it requires a <em>Euclidean</em> norm to regulate:</p>
+<p>$$
+\langle\tilde P_{\Phi}\rangle_{\natural}\le\Lambda^{2}\ \text{(indefinite)},\qquad
+\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=k_{\mathrm{eu}}^{2}\ge0 .
+$$</p>
+<p>The two-star pairing is positive on the Euclidean sector, so the shell $\Lambda/b<\sqrt{\cdot}<\Lambda$ is well defined there and only there. This is the algebraic reason why the Wilsonian regulator needs a rotation of the temporal unit.</p>
+<p><strong>The trace anomaly.</strong></p>
+<p>$$
+\boxed{\;T_\mu{}^\mu=\frac{c}{24\pi}R\;}\qquad(d=2),\qquad
+\boxed{\;T_\mu{}^\mu=\frac{1}{(4\pi)^{2}}\bigl(c\,W^{2}-a\,E_4+b\,\Box_\Phi R\bigr)\;}\qquad(d=4).
+$$</p>
+<p><strong>The theta vacuum and bosonization.</strong></p>
+<p>$$
+|\theta_{\mathrm{vac}}\rangle=\sum_{Ϙ\in\mathbb{Z}}e^{i\theta_{\mathrm{vac}}Ϙ}|Ϙ\rangle,\qquad
+S_{\mathrm{vac}}=\frac{\theta_{\mathrm{vac}}}{16\pi^{2}}\int d^{4}r\,\mathrm{tr}\Bigl(\sum_{\mu,\nu}F_{\mu\nu}\tilde F_{\mu\nu}\Bigr)=\theta_{\mathrm{vac}}\,Ϙ,
+$$</p>
+<p>$$
+\boxed{\;j_\mu\longleftrightarrow-\frac{1}{\sqrt{\pi}}\sum_\nu\epsilon_{\mu\nu}\varepsilon_\nu\frac{\partial\xi_{\mathrm{scl}}}{\partial R_\nu}\;}
+$$</p>
+<p><strong>The non-trivial claim about the theta angle.</strong> $\exp(i\theta_{\mathrm{vac}}Ϙ)e_t$ lies in the centre $\mathbb{B}_C$ and commutes with every element. The theta angle is therefore a <em>central</em> phase, not a field-dependent one, and the vacuum angle cannot be removed by a field redefinition inside the algebra.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-biquaternion-vacuum-as-a-minimal-idempotent.md</code>, <code>articles_physics/the-spin-statistics-theorem-in-biquaternionic-form.md</code>, <code>articles_physics/the-cpt-theorem-in-biquaternionic-form.md</code>, <code>articles_physics/the-unruh-effect-in-biquaternionic-form.md</code>, <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, <code>articles_physics/the-renormalization-group-in-biquaternionic-form.md</code>, <code>articles_physics/the-trace-anomaly-in-biquaternionic-form.md</code>, <code>articles_physics/the-theta-vacuum-in-biquaternionic-form.md</code>, <code>articles_physics/bosonization-in-biquaternionic-form.md</code>.</p>
+<h2 id="2-spin-zero">2. Spin Zero</h2>
+<p><strong>Quantisation.</strong> The scalar field is expanded in modes with $[a(\vec p),a^{\dagger}(\vec p')]\propto\delta$, and the Fock space is the symmetric algebra on the one-particle space. The canonical momentum is the time derivative; the equal-time commutator is the canonical pair; the Hamiltonian is normal-ordered.</p>
+<p><strong>Pair creation.</strong> A background that depends on time mixes positive and negative frequencies; the Bogoliubov coefficients give the pair-production probability $|v/u|^{2}$. <strong>The non-trivial claim.</strong> In the algebra the mixing is a boost congruence, so the pair creation rate is the modulus of the boost parameter — the same quantity that gives the Unruh temperature.</p>
+<p><strong>Goldstone's theorem.</strong></p>
+<p>$$
+V=\frac{\lambda}{4}\Bigl(\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)-v^{2}\Bigr)^{2},\qquad
+\boxed{\;m_h^{2}=\lambda v^{2},\qquad m_G^{2}=0\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The broken symmetry is a rotation of the phase $\theta_{\mathrm{cen}}$, so the Goldstone mode is the phase and its masslessness is the statement that a phase has no potential. The radial mode is the modulus. The split is the polar decomposition, one level down.</p>
+<p><strong>Source.</strong> <code>articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.md</code>, <code>articles_physics/the-scalar-fock-space-in-biquaternionic-form.md</code>, <code>articles_physics/scalar-pair-creation-in-biquaternionic-form.md</code>, <code>articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.md</code>, <code>articles_physics/goldstones-theorem-in-biquaternionic-form.md</code>.</p>
+<h2 id="3-spin-one-half">3. Spin One Half</h2>
+<p><strong>Quantisation, and the sea.</strong> The Dirac field is expanded in the two spinor solutions and their conjugates; the anticommutator is forced (section 1). The Dirac sea is the filled negative-energy branch, and a hole in it is an antiparticle.</p>
+<p><strong>Two interpretations, distinguished.</strong> The corpus keeps the historical hole theory (a filled sea, holes as antiparticles) apart from the modern resolution, which is in <em>Canonical Quantization of the Biquaternion Dirac Field</em>: the field is expanded in positive and negative frequencies, and <strong>if the modes commuted the energy would be unbounded below</strong>, so the anticommutator is what makes the ground state stable. The hole theory is then a picture, not a mechanism. An agent must not present the sea as the corpus's explanation.</p>
+<p><strong>Fermionic calculus.</strong> Grassmann coherent states, the fermionic path integral and the Feynman propagator are written in the algebra. <strong>The non-trivial claim</strong> is that the Grassmann variables are <em>not</em> elements of $\mathbb{B}$: the algebra is not graded-commutative, and the anticommuting parameters must be adjoined. The corpus is explicit about this boundary.</p>
+<p><strong>Fermion doubling.</strong> The Nielsen–Ninomiya theorem is recorded: a local, Hermitian, chirally invariant lattice Dirac operator has doubled species. In the algebra the doubling is the statement that the two sectors give two branches and the lattice cannot separate them.</p>
+<p><strong>Dirac matter.</strong> Graphene, the Dirac cones and the topological insulators are recorded as the physical systems whose low-energy description is the Dirac operator; the corpus states which of their features are algebra and which are lattice.</p>
+<p><strong>Jordan–Wigner and Kramers.</strong> The Jordan–Wigner transformation maps a chain of qubits to fermions; in the algebra it is the map from the tensor algebra to the exterior algebra. Kramers degeneracy is the statement that an anti-unitary involution squaring to $-1$ forces a double degeneracy — in the algebra, the involution is conjugation composed with $i$.</p>
+<p><strong>The anomalous moment.</strong></p>
+<p>$$
+a=\frac{g-2}{2},
+$$</p>
+<p>computed from the vertex correction. The corpus records the one-loop value and states the status: the number is standard, and the algebra reproduces it.</p>
+<p><strong>Source.</strong> <code>articles_physics/canonical-quantization-of-the-biquaternion-dirac-field.md</code>, <code>articles_physics/the-dirac-sea-hole-theory-and-antimatter-in-biquaternionic-form.md</code>, <code>articles_physics/grassmann-coherent-states-in-biquaternionic-form.md</code>, <code>articles_physics/fermion-doubling-and-the-nielsen-ninomiya-theorem-in-biquaternionic-form.md</code>, <code>articles_physics/kramers-degeneracy-and-antiunitary-symmetry-in-biquaternionic-form.md</code>, <code>articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.md</code>.</p>
+<h2 id="4-spin-one-and-above">4. Spin One and Above</h2>
+<p><strong>The photon and the Casimir effect.</strong></p>
+<p>$$
+\boxed{\;E_0=\sum_{r=0}^{3}\sigma_{\mathrm{met},r}\sum_{\text{modes}}\tfrac12\hbar\omega_k,\qquad \sum_{r=0}^{3}\sigma_{\mathrm{met},r}=-1+1+1+1=2\;}
+$$</p>
+<p>$$
+\boxed{\;\frac{E_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{720a^{3}},\qquad \frac{F_{\mathrm{EM}}}{A}=-\frac{\pi^{2}\hbar c}{240a^{4}}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The vacuum energy is the metric signature traced over the four polarisations: $-1$ for the scalar and $+1$ for each of the three vectors, so the sum is $2=\mathrm{tr}\,\eta$. The count is therefore not a convention but a signature count read in the algebra, and it is the reason the photon contributes two net degrees of freedom after the two unphysical ones cancel.</p>
+<p><strong>Proca, Rarita–Schwinger, graviton.</strong> Each is quantised by the same pattern: a constraint removes the unphysical branch, and the count of physical polarisations is the rank of the projector on the constraint surface. Integer-spin quantisation on the material sector uses the adjoint action, and the corpus proves that the adjoint representation carries integer spin only.</p>
+<p><strong>BRST and the gauge path integral.</strong> The gauge freedom is an odd symmetry of the extended action; the BRST operator is nilpotent, and the physical states are its cohomology. <strong>The non-trivial claim.</strong> In the algebra the BRST operator is the odd part of the derivation generated by the constraint, so its nilpotency is the statement that the constraint squares to zero.</p>
+<p><strong>Wilson loops.</strong></p>
+<p>$$
+\Bigl\langle W_{ϙ_1}(C_1)W_{ϙ_2}(C_2)\Bigr\rangle=\exp\Bigl(2\pi i\frac{ϙ_1ϙ_2}{k}\mathrm{Lk}(C_1,C_2)\Bigr).
+$$</p>
+<p><strong>Anyons, and the fractional phase.</strong></p>
+<p>$$
+\boxed{\;\theta_{\mathrm{any}}=\frac{e\,\Xi}{2\hbar}\pmod{2\pi},\qquad \theta_{\mathrm{any}}=2\pi s\pmod{2\pi}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The exchange phase is <em>half</em> the Aharonov–Bohm phase of a full loop, because an exchange is a half-link. Anyonic statistics are therefore the statement that the braid group, and not the symmetric group, is the group of the configuration space.</p>
+<p><strong>Source.</strong> <code>articles_physics/canonical-quantization-of-the-biquaternion-maxwell-field.md</code>, <code>articles_physics/the-photon-in-biquaternionic-form.md</code>, <code>articles_physics/the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form.md</code>, <code>articles_physics/brst-symmetry-in-biquaternionic-form.md</code>, <code>articles_physics/wilson-loops-in-biquaternionic-form.md</code>, <code>articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.md</code>.</p>
+<h2 id="5-informational-aspects">5. Informational Aspects</h2>
+<p><strong>Modular structure.</strong></p>
+<p>$$
+\mathcal M_{\mathrm{mod}}(\tilde Q_3)=e^{-\tilde H_{\Psi,\mathrm{modular}}}\tilde Q_3\,e^{\tilde H_{\Psi,\mathrm{modular}}},\qquad
+\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde\varrho_\Psi,
+$$</p>
+<p>$$
+\tilde H_{\Psi,\mathrm{modular}}=-\tfrac12\log\frac{1-|\vec s_\Psi|^{2}}{4}\,e_t-i\,\mathrm{artanh}(|\vec s_\Psi|)\,\vec u_s .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The modular Hamiltonian is $-\log$ of the state, and for the two-level state it has a closed form: a <em>real</em> scalar part and an <em>imaginary</em> vector part. The imaginary unit sits on the boost generator, so the modular flow is a boost. This is the algebraic content of Bisognano–Wichmann: the modular flow of a wedge is the boost that preserves it.</p>
+<p><strong>The null space and Reeh–Schlieder.</strong></p>
+<p>$$
+\boxed{\;\mathcal N_{\tilde\varrho_\Psi}=\bigl\{\tilde Q_3:\tilde Q_3\tilde\varrho_\Psi=0\bigr\}=\bigl\{\tilde Q_3:\tilde Q_3\,\mathrm{range}(\tilde\varrho_\Psi)=0\bigr\}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The GNS null space is the right annihilator of the state. So the representation is the left regular one, and its faithfulness is the statement $\tilde Q_3\tilde\varrho_\Psi=0\Rightarrow\tilde Q_3=0$ — which fails exactly when the state is a zero divisor. Reeh–Schlieder is therefore conditional in this algebra: it holds for a faithful (non-boundary) state and fails for a minimal idempotent. The corpus states both cases.</p>
+<p><strong>Relative entropy, strong subadditivity, replica.</strong> These are recorded with their algebraic statements: relative entropy is the difference of two modular Hamiltonians; strong subadditivity is the monotonicity of the relative entropy under restriction; the replica trick turns the entropy into a partition function on a branched cover, and the area law follows.</p>
+<p><strong>The area law.</strong></p>
+<p>$$
+\boxed{\;S_A=\kappa\frac{|\partial A|}{\epsilon^{d-1}}+c_{d-1}\frac{|\partial A|}{\epsilon^{d-2}}+\cdots+\text{(universal terms)}\;}
+$$</p>
+<p>and, as a bound:</p>
+<p>$$
+\mathbb{B}^{\otimes N}\cong M_{2^{N}}(\mathbb{C}),\qquad
+\mathrm{rank}\,\rho_A\le2^{|\partial A|},\qquad
+S_A\le\log\mathrm{rank}\,\rho_A\le|\partial A|\log2 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The area law's <em>coefficient</em> is a counting statement: the rank of a reduced state is bounded by the number of boundary legs, because a cut through a tensor network cuts only the bonds that cross it. The algebra supplies the tensor structure $\mathbb{B}^{\otimes N}\cong M_{2^{N}}(\mathbb{C})$ and therefore the $\log2$ per bond.</p>
+<p><strong>Source.</strong> <code>articles_physics/modular-hamiltonian-in-biquaternionic-form.md</code>, <code>articles_physics/the-bisognano-wichmann-theorem-under-the-biquaternion-framework.md</code>, <code>articles_physics/the-reeh-schlieder-theorem-under-the-biquaternion-framework.md</code>, <code>articles_physics/entanglement-entropy-and-the-replica-trick-in-biquaternionic-form.md</code>, <code>articles_physics/the-area-law-of-entanglement-entropy-in-biquaternionic-form.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in six formulas.</strong></p>
+<p>$$
+|0\rangle\langle 0|=\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\qquad
+\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,\qquad \mathrm{Sc}[\vec\Upsilon_x,\vec\Upsilon_y]=0,
+$$</p>
+<p>$$
+T=\frac{\hbar\kappa}{2\pi ck_B},\qquad T_\mu{}^\mu=\frac{c}{24\pi}R,\qquad
+S_A\le|\partial A|\log2 .
+$$</p>
+<p><strong>Five results to keep.</strong> The vacuum is a rank-one idempotent, hence a zero divisor, and that is why the boundary cases matter. Spin–statistics is forced by the vanishing scalar part of the odd commutator. The Casimir vacuum energy is the metric trace over four polarisations. The RG regulator needs the Euclidean pairing, which is the only positive one. The modular Hamiltonian is $-\log\varrho$ and its flow is the boost.</p>
+<p><strong>Three refusals.</strong> The category does not grade the algebra: Grassmann parameters are adjoined, not found. It does not claim Reeh–Schlieder unconditionally: it holds for faithful states only. It does not produce new numbers: it reproduces the standard ones.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Pi_\pm$</td>
+<td>minimal idempotents, vacuum and its complement</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_x,\vec\Upsilon_y$</td>
+<td>odd (fermionic) generators</td>
+</tr>
+<tr>
+<td>$(-1)^F=i\vec e_z$</td>
+<td>fermion parity</td>
+</tr>
+<tr>
+<td>$\mathcal F$</td>
+<td>Fock space</td>
+</tr>
+<tr>
+<td>$\tilde H_{\Psi,\mathrm{modular}}$</td>
+<td>modular Hamiltonian</td>
+</tr>
+<tr>
+<td>$\mathcal N_{\tilde\varrho}$</td>
+<td>GNS null space</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{met},r}$</td>
+<td>metric sign of the polarisation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-biquaternion-vacuum-as-a-minimal-idempotent</code>, <code>the-spin-statistics-theorem-in-biquaternionic-form</code>, <code>canonical-quantization-of-the-biquaternion-dirac-field</code>, <code>the-vacuum-state-and-the-casimir-effect-in-biquaternionic-form</code>. Traps: <code>the-reeh-schlieder-theorem-under-the-biquaternion-framework</code>, <code>grassmann-coherent-states-in-biquaternionic-form</code>, <code>the-renormalization-group-in-biquaternionic-form</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

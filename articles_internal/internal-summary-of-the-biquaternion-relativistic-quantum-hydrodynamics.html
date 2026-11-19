@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Relativistic Quantum Hydrodynamics — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Relativistic Quantum Hydrodynamics, forty-five articles. It gives the objects, the boxed…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-relativistic-quantum-hydrodynamics"><strong>Internal Summary of the Biquaternion Relativistic Quantum Hydrodynamics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Relativistic Quantum Hydrodynamics</em>, forty-five articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> It reads each relativistic quantum field as a fluid. The reading is a map from the field to a set of fluid variables: a density, a phase, a unit four-velocity, and, for spin, two more vector fields. Substituting the reading into the field equation produces the fluid equations. The non-classical term is one: the quantum potential.</p>
+<p><strong>What the map is, and what it is not.</strong></p>
+<p>$$
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},\qquad
+\tilde U_{\Psi,\mathrm b}=\cosh\frac{\theta_{\mathrm{rpd}}}{2}e_t+i\sinh\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b},
+$$</p>
+<p>$$
+\boxed{\;\text{the complete polar decomposition exists}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\ \text{is }N\text{-regular}\;}
+$$</p>
+<p><strong>The non-trivial claim of the category, stated first.</strong> The reading is a <em>map</em> and not an identity. It is many-to-one, it is defined only off the zero-divisor cone, it fails in the massless limit, and the choice of which fluid variable to call "the density" is not unique. Five articles of the last subsection are about exactly these failures, and an agent must know them before quoting any fluid result.</p>
+<p><strong>The five menu subsections.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generalities</td>
+<td>the space as a fluid</td>
+</tr>
+<tr>
+<td>The fluid layer</td>
+<td>Euler, vorticity, viscosity, equation of state, the reverse Madelung map, Clebsch potentials, the one-dimensional map, Gross–Pitaevskii</td>
+</tr>
+<tr>
+<td>Particles of spin 0</td>
+<td>the scalar fluid, its Lagrangian, its stress tensor, the nodal set, the charged fluid</td>
+</tr>
+<tr>
+<td>Particles of spin $\tfrac12$</td>
+<td>the Takabayasi correspondence, the spin-half fluid, its stress tensor, the charged case</td>
+</tr>
+<tr>
+<td>Particles of spin 1 and above</td>
+<td>the spin-one fluid and its three currents</td>
+</tr>
+<tr>
+<td>The algebra of the reading</td>
+<td>the current algebra, non-uniqueness, the sign $\varepsilon$, locking, the domain, the two scales, the massless failure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-the-fluid-layer">1. The Fluid Layer</h2>
+<p><strong>The Euler system.</strong></p>
+<p>$$
+\partial_{t'}\rho_{\mathrm{mass}}+\vec\nabla_\Phi\!\cdot\!(\rho_{\mathrm{mass}}\vec v)=0,
+$$</p>
+<p>$$
+\partial_{t'}\vec v+(\vec v\!\cdot\!\nabla)\vec v=-\frac{1}{\rho_{\mathrm{mass}}}\vec\nabla_\Phi p_{\mathrm{th}}+\vec f_{\mathrm{ext}},
+\qquad
+\partial_{t'}s_{\mathrm{spc}}+\vec v\!\cdot\!\nabla s_{\mathrm{spc}}=0 .
+$$</p>
+<p>and the relativistic form is one product against the four-velocity:</p>
+<p>$$
+\bigl\langle\tilde V_\Phi,\tilde\nabla_\Phi f\bigr\rangle_{\natural}=c\,\partial_{r'_t}f+\vec v\!\cdot\!\nabla f,
+\qquad
+\bigl\langle\tilde\nabla_\Phi,\tilde J_\Phi\bigr\rangle_{\natural}=c\,\partial_{r'_t}\rho_{\mathrm{num}}+\vec\nabla_\Phi\!\cdot\!(\rho_{\mathrm{num}}\vec v).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The continuity equation is the scalar part of the derivative dotted with the current, and the Euler equation is the vector part of the same object. One product gives both.</p>
+<p><strong>Vorticity and the irrotational condition.</strong></p>
+<p>$$
+\omega_{\mu\nu}=\partial_\mu v_{\Phi,\nu}-\partial_\nu v_{\Phi,\mu},\qquad
+v_{\Phi,\mu}=\frac{1}{m}\partial_\mu S_{\tilde\Xi}.
+$$</p>
+<p>The irrotational condition is $\omega_{\mu\nu}=0$, and it holds exactly when the velocity is a gradient. The non-trivial statement is that the <em>phase</em> is the potential, so irrotationality is the single-valuedness of the phase.</p>
+<p><strong>Clebsch potentials and the rank of the vorticity.</strong> A general vorticity has rank four, and it needs two Clebsch pairs; in three dimensions it needs one pair. The corpus states the rank criterion and reads it as the statement that a rotational flow needs two scalar potentials, not one.</p>
+<p><strong>Viscosity.</strong> The dissipative term is written with the Rayleigh dissipation function; the stress tensor is symmetric, and the bulk and shear viscosities are the two coefficients of the symmetric traceless decomposition. The non-trivial claim is that the dissipation function is a <em>norm</em>, so the second law is the statement that the norm of the strain rate is non-negative.</p>
+<p><strong>The equation of state.</strong> A barotropic fluid has $p=p(\rho)$; the speed of sound is $c_s^{2}=dp/d\rho$. The corpus uses the barotropic condition to close the system and records that the algebraic reading gives no equation of state: it must be supplied.</p>
+<p><strong>The reverse Madelung map.</strong> The forward map takes a field to fluid variables. The reverse map takes fluid variables to a nonlinear wave equation:</p>
+<p>$$
+\text{fluid}\ \longrightarrow\ \text{nonlinear Schr\"odinger-type equation}.
+$$</p>
+<p>The non-trivial claim is that the reverse map is <em>not</em> the inverse: the fluid data determine the modulus and the phase gradient of the field, but not its phase, and the resulting equation is nonlinear in the density.</p>
+<p><strong>The fluid–wave correspondence.</strong> Each fluid constant corresponds to a field constant:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Fluid</th>
+<th>Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mass density</td>
+<td>$\varrho^{2}$</td>
+</tr>
+<tr>
+<td>velocity</td>
+<td>$\nabla S/m$</td>
+</tr>
+<tr>
+<td>pressure</td>
+<td>quantum potential</td>
+</tr>
+<tr>
+<td>vorticity</td>
+<td>$\omega_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>circulation quantum</td>
+<td>$2\pi\hbar/m$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-dimensional reverse map.</strong> In one dimension the reverse map is a Hopf equation with a dispersive correction; the characteristics cross in finite time, and the KdV term regularises the crossing into solitons. The non-trivial claim is that the KdV equation is the one-dimensional reverse Madelung map with the quantum potential kept to first order in $\hbar^{2}$.</p>
+<p><strong>Gross–Pitaevskii.</strong> A superfluid or a BEC obeys</p>
+<p>$$
+i\hbar\,\partial_{t'}\psi=-\frac{\hbar^{2}}{2m}\Delta_\Phi\psi+V\psi+g|\psi|^{2}\psi,
+$$</p>
+<p>which is the reverse map with a local interaction. The healing length and the vortex core are the two scales that the map produces.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-euler-and-continuity-equations-in-biquaternionic-form.md</code>, <code>articles_physics/the-vorticity-form-and-the-irrotational-condition.md</code>, <code>articles_physics/the-reverse-madelung-map-fluid-to-nonlinear-wave.md</code>, <code>articles_physics/the-fluid-wave-correspondence-which-constant-each-field-carries.md</code>, <code>articles_physics/the-clebsch-potentials-and-the-rank-of-the-vorticity.md</code>, <code>articles_physics/the-one-dimensional-reverse-map-characteristics-kdv-hopf.md</code>, <code>articles_physics/superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.md</code>.</p>
+<h2 id="2-spin-zero">2. Spin Zero</h2>
+<p><strong>The reading.</strong> The scalar case is the simplest and it fixes the pattern:</p>
+<p>$$
+\boxed{\;\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\varepsilon\,e_t\;}\qquad
+\rho_{\mathrm{num}}=\varrho^{2},\quad S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}},\quad \varepsilon=\pm1 .
+$$</p>
+<p><strong>The two fluid equations.</strong></p>
+<p>$$
+\Bigl(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\Bigr)^{2}-|\nabla S_{\tilde\Xi}|^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi\varrho}{\varrho},
+$$</p>
+<p>$$
+\frac{E^{2}}{c^{2}}-|\vec p|^{2}=m^{2}c^{2}+2mQ_{\mathrm{qnt}},\qquad
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\varrho}{\varrho}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The quantum potential is the <em>only</em> term that distinguishes the fluid from a classical relativistic fluid. It is a function of the density alone, and it is $O(\hbar^{2})$. Every other fluid quantity is classical.</p>
+<p><strong>The equation of motion.</strong></p>
+<p>$$
+\boxed{\;\frac{d\vec p}{dt}=-\frac{1}{\gamma}\vec\nabla_\Phi Q_{\mathrm{qnt}}\;}
+\qquad
+\frac{d}{dt}=\partial_t+\vec v\!\cdot\!\nabla,\qquad \vec p=m\gamma\vec v .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The force is the gradient of the quantum potential, divided by $\gamma$. The fluid is therefore <em>not</em> pressureless: the quantum potential acts as the pressure, and in the non-relativistic limit it reproduces the Bohm force.</p>
+<p><strong>The quantum stress tensor.</strong> The stress tensor of the scalar field decomposes into a kinetic part, a pressure part and a quantum part; the quantum part is the Schr\"odinger stress tensor of the density $\varrho$.</p>
+<p><strong>The nodal set and quantized circulation.</strong></p>
+<p>$$
+\kappa=\oint\tilde V_\Phi\!\cdot\!d\vec l=\frac{1}{m}\oint\nabla S_{\tilde\Xi}\!\cdot\!d\vec l=\frac{\hbar}{m}\oint\nabla\theta_{\mathrm{phs}}\!\cdot\!d\vec l=\frac{2\pi\hbar\,n}{m},
+$$</p>
+<p>$$
+\kappa_1=\frac{2\pi\hbar}{m}=\frac{2\pi c}{k_m},\qquad |\vec v|=\frac{\hbar|n|}{m\,r},\qquad |\vec J_\Phi|=\rho_{\mathrm{num}}|\vec v|=\frac{A^{2}\hbar|n|}{m}\,r\to0 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The circulation is quantized because the phase is an angle, and the phase is single-valued only up to $2\pi n$. The current vanishes on the node, so the vortex core carries no current: the quantisation is a topological statement about the nodal set, and the nodal set is where the polar form fails.</p>
+<p><strong>The charged scalar fluid.</strong> Minimal coupling replaces the momentum by the mechanical momentum, and the vorticity becomes the field strength:</p>
+<p>$$
+\omega_{\mu\nu}=\frac{ϙ}{m}F_{\mu\nu},\qquad
+\tilde V_\Phi=\frac{1}{m}\bigl(\tilde\nabla_\Phi S_{\tilde\Xi}+ϙ\tilde A_\Phi\bigr),
+$$</p>
+<p>$$
+\oint\tilde P^{\mathrm{mech}}\!\cdot\!d\vec l=2\pi\hbar\,n+ϙ\Phi_B,\qquad
+\tilde P^{\mathrm{mech}}\tilde P^{\mathrm{mech}}=-m^{2}c^{2}-2mQ_{\mathrm{qnt}} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> In a charged superfluid the vorticity <em>is</em> the magnetic field, and the circulation is the sum of the flux quantisation and the Aharonov–Bohm phase. This is the algebraic content of the London equation: the field is not an independent object when the fluid is charged and irrotational.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-spin-zero-fluid.md</code>, <code>articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.md</code>, <code>articles_physics/the-nodal-set-and-quantized-circulation.md</code>, <code>articles_physics/the-charged-spin-zero-fluid-vorticity-is-the-field-strength.md</code>, <code>articles_physics/the-schrodinger-fluid.md</code>.</p>
+<h2 id="3-spin-one-half">3. Spin One Half</h2>
+<p><strong>The Takabayasi variables.</strong> Five objects replace the four of the scalar case, and three constraints tie them:</p>
+<p>$$
+\{\rho,\ \theta,\ v_\mu,\ w_\mu,\ k_\mu\},\qquad
+\rho>0,\quad \sum_\mu\varepsilon_\mu v_\mu v_\mu=-1,\quad \sum_\mu\varepsilon_\mu w_\mu w_\mu=1,\quad \sum_\mu\varepsilon_\mu v_\mu w_\mu=0 .
+$$</p>
+<p><strong>The derivative of the field, in the variables.</strong></p>
+<p>$$
+\frac{\partial\tilde\Xi}{\partial R_\mu}=\tilde\Xi\Bigl[\frac{1}{2}\frac{\partial\ln\rho_{\mathrm{num}}}{\partial R_\mu}+i\frac{\partial\theta_{\mathrm{pha}}}{\partial R_\mu}+\cdots\Bigr].
+$$</p>
+<p><strong>The non-trivial claim.</strong> The spin is carried by the <em>right</em> factor $\tilde u_{\mathrm r}$, and it enters the derivative as a separate term. This is why the spin-half fluid has more variables than the scalar fluid and why the spin cannot be absorbed into the velocity.</p>
+<p><strong>The density and the mass.</strong></p>
+<p>$$
+\rho^{2}=\Omega^{2}+\Omega_{\mathrm{ps}}^{2}=\sum_\mu\varepsilon_\mu j_\mu j_\mu,\qquad m\Omega=m\rho\cos\theta .
+$$</p>
+<p><strong>The energy–momentum and the pressure.</strong></p>
+<p>$$
+\sum_\mu\varepsilon_\mu T_{\mu\mu}=mc^{2}\Omega=mc^{2}\rho\cos\theta,\qquad
+p=\tfrac13\bigl(\epsilon-mc^{2}\rho\cos\theta\bigr),
+$$</p>
+<p>$$
+T_{\mu\nu}=mc^{2}\Omega\,u_\mu u_\nu,\qquad u_\mu=\frac{P_\mu}{mc}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The perfect-fluid form is recovered, with the pressure given by the trace anomaly. The spin contributes to the trace and not to the flow, so the fluid is a perfect fluid with an equation of state fixed by the spin angle.</p>
+<p><strong>The current, with its spin term.</strong></p>
+<p>$$
+J_{\Phi,\mu}=\frac{\rho}{m}P_{\Phi,\mu}+\frac{1}{k_m}\partial_\nu\bigl(\bar{\tilde\Xi}\Sigma_{\mu\nu}\tilde\Xi\bigr),
+$$</p>
+<p>which is the Gordon decomposition of the spin-$\tfrac12$ category, rewritten as a fluid current: a convection part plus a magnetisation part.</p>
+<p><strong>The charged spin-half fluid, and the sharp claim.</strong> The charge couples to the Lorentz force; the spin does not.</p>
+<p>$$
+\frac{d\vec\pi}{dt}=ϙ(\vec E+\vec v\times\vec B),\qquad \text{the spin obeys the BMT-type transport instead.}
+$$</p>
+<p><strong>The non-trivial claim.</strong> A charged spin-$\tfrac12$ fluid feels the field through its charge current and through the spin transport equation <em>separately</em>, and the two are not the same force. The corpus states this as the difference between the spin-$\tfrac12$ fluid and the spin-0 fluid, where the vorticity is the field strength.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.md</code>, <code>articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.md</code>, <code>articles_physics/the-spin-half-energy-momentum-tensor.md</code>, <code>articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.md</code>.</p>
+<h2 id="4-spin-one-and-above">4. Spin One and Above</h2>
+<p><strong>The spin-one fluid.</strong> The field is a bivector-valued element; the fluid has a density, a velocity, a frame (the right factor) and a spin density. The frame carries no momentum — this is the Fourier transform result — and the charged case has three currents and one compressibility.</p>
+<p><strong>The non-trivial claim.</strong> The constraint that reduces four components to three is the <em>amplitude</em> condition, not a gauge choice: the Proca subsidiary condition appears in the fluid as a relation between the density and the longitudinal component.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-spin-one-fluid.md</code>, <code>articles_physics/the-charged-spin-one-fluid-three-currents-and-a-compressibility.md</code>.</p>
+<h2 id="5-the-algebra-of-the-reading">5. The Algebra of the Reading</h2>
+<p><strong>The current algebra.</strong> The word has four factors and the algebra has three independent bilinears, and the whole observable content of the fluid is that mismatch. The three are the current, the spin and the norm:</p>
+<p>$$
+J_\Phi=\rho_{\mathrm{num}}\tilde V_\Phi,\qquad s=\rho_{\mathrm{num}}\frac{\hbar}{2}\,i\hat s,\qquad N=\varrho^{2}e^{2i\theta}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The phase and the spin never meet in one bilinear. A current cannot carry spin information and a spin cannot carry phase information, not by arrangement but because the two factors are of types no single quadratic product reaches at once. The fourth bilinear re-reads the scale and the boost, so it duplicates the first.</p>
+<p><strong>The non-uniqueness of the reading.</strong></p>
+<p>$$
+(-\varrho)e^{i(\theta_{\mathrm{pha}}+\pi)}=\varrho\,e^{i\theta_{\mathrm{pha}}}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The map is two-to-one at least, and the sign ambiguity is not removable. The corpus counts the further ambiguities: the sign of $\varepsilon$, and the sign of the rotation angle, give a finite group of readings of the same field. Any fluid statement must therefore be checked for invariance under this group.</p>
+<p><strong>The sign $\varepsilon$ and the rigidity constraint on $\Sigma_{10}$.</strong></p>
+<p>$$
+\varepsilon:=\frac{\Xi_t}{\varrho\,e^{i\theta_{\mathrm{pha}}}},\qquad
+\varepsilon=\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}-i\kappa\sinh\frac{\theta_{\mathrm{rpd}}}{2}\sin\frac{\theta_{\mathrm{axr}}}{2},
+$$</p>
+<p>$$
+\Sigma_{10}=\{\tilde\Xi:N\neq0,\ \varepsilon=\pm1\},\qquad
+\cosh\frac{\theta_{\mathrm{rpd}}}{2}\cos\frac{\theta_{\mathrm{axr}}}{2}=\varepsilon .
+$$</p>
+<p><strong>The non-trivial claim.</strong> $\varepsilon$ is a derived number and not a label, and $\Sigma_{10}$ is the locus where it takes the values $\pm1$. Care is needed: the level set $|\varepsilon|=1$ is strictly larger than the sector — one real equation selects seven dimensions, while the sector has six. The difference is a phase, and the sector is the two points of the unit circle where that phase is a multiple of $\pi$. The rigidity is the statement that on the sector only the two signs are reachable.</p>
+<p><strong>Spin–velocity locking.</strong></p>
+<p>$$
+\frac{\hat s\!\cdot\!\vec v}{|\vec v|}=\sin\theta_{\mathrm{axr}},\qquad |\hat s_\perp|=|\cos\theta_{\mathrm{axr}}|,\qquad
+\frac{\partial\theta_{\mathrm{rpd}}}{\partial R_\mu}=\pm\sec\frac{\theta_{\mathrm{axr}}}{2}\frac{\partial\theta_{\mathrm{axr}}}{\partial R_\mu}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The spin direction is locked to the velocity through one angle, so a gradient of the rapidity forces a gradient of the spin angle. The fluid cannot have a velocity shear without a spin shear, and the sign is the two-valuedness of the reading.</p>
+<p><strong>The domain of the polar decomposition.</strong> The reading is defined on the invertible elements. The corpus states the domain and its boundary (the zero-divisor cone), and it notes that the boundary is not a set of measure zero for a field with nodes.</p>
+<p><strong>The two scales.</strong> Every field has a proper density and a Euclidean size; the two differ by the factor $\cosh\theta_{\mathrm{rpd}}$ and they are not interchangeable. The non-trivial claim is that the fluid density of the literature is sometimes one and sometimes the other, and that the corpus fixes which is which in each article.</p>
+<p><strong>The massless fluid.</strong> In the massless limit the label cone $N(\tilde K_\Phi)=0$ and the pole set $N(\tilde K_\Phi)=-k_m^{2}$ coincide, and both charts fail:</p>
+<p>$$
+\underbrace{N(\tilde K_\Phi)=0}_{\text{label cone}}\qquad\text{and}\qquad \underbrace{N(\tilde K_\Phi)=-k_m^{2}}_{\text{pole set}},
+$$</p>
+<p>$$
+Q_{\mathrm{qnt}}\propto\frac{1}{m}\to\infty,\qquad
+\frac{d\vec p}{dt}=\frac{\hbar^{2}}{2E}\vec\nabla_\Phi\Bigl(\frac{\Box_\Phi\varrho}{\varrho}\Bigr).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The massless fluid has no quantum potential in the usual sense, because the Bohm force diverges as $1/m$ while the momentum vanishes. The correct massless reading is a null fluid with a degenerate rank-four density matrix, and the corpus constructs it. An agent that takes the $m\to0$ limit of the massive formulas gets nonsense.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-current-algebra.md</code>, <code>articles_physics/the-non-uniqueness-of-the-spin-half-fluid.md</code>, <code>articles_physics/the-sign-epsilon-and-the-rigidity-constraint-on-sigma-10.md</code>, <code>articles_physics/spin-velocity-locking-on-the-degenerate-sector.md</code>, <code>articles_physics/the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.md</code>, <code>articles_physics/the-two-scales-of-the-field-the-proper-density-and-the-euclidean-size.md</code>, <code>articles_physics/the-massless-fluid-where-the-label-and-value-charts-both-fail.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in five formulas.</strong></p>
+<p>$$
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r},\qquad
+Q_{\mathrm{qnt}}=-\frac{\hbar^{2}}{2m}\frac{\Box_\Phi\varrho}{\varrho},
+$$</p>
+<p>$$
+\frac{d\vec p}{dt}=-\frac{1}{\gamma}\vec\nabla_\Phi Q_{\mathrm{qnt}},\qquad
+\kappa=\frac{2\pi\hbar n}{m},\qquad
+\omega_{\mu\nu}=\frac{ϙ}{m}F_{\mu\nu}\ \text{(charged, irrotational)}.
+$$</p>
+<p><strong>Four results to keep.</strong> The quantum potential is the only non-classical term, and it is a function of the density alone. Circulation is quantised because the phase is an angle, and the node carries no current. In a charged irrotational fluid the vorticity <em>is</em> the magnetic field. The reading is many-to-one and fails on the zero-divisor cone and in the massless limit.</p>
+<p><strong>Three refusals.</strong> The category does not claim that the fluid is the ontology; it calls the reading a map. It does not supply an equation of state: the algebra gives none. It does not extend the reading to the massless case by a limit; it constructs that case separately.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varrho$, $\theta_{\mathrm{pha}}$</td>
+<td>amplitude, phase</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{num}}$, $\rho_{\mathrm{mass}}$</td>
+<td>number density, mass density</td>
+</tr>
+<tr>
+<td>$v_\mu$, $w_\mu$, $k_\mu$</td>
+<td>Takabayasi velocity, spin vector, spin bivector</td>
+</tr>
+<tr>
+<td>$Q_{\mathrm{qnt}}$</td>
+<td>quantum potential</td>
+</tr>
+<tr>
+<td>$\omega_{\mu\nu}$</td>
+<td>vorticity</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>circulation</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>sign of the scalar part, $\pm1$ on $\Sigma_{10}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-relativistic-quantum-space-as-a-fluid</code>, <code>the-spin-zero-fluid</code>, <code>the-spin-half-fluid-and-the-takabayasi-correspondence</code>, <code>the-charged-spin-zero-fluid-vorticity-is-the-field-strength</code>. Traps: <code>the-non-uniqueness-of-the-spin-half-fluid</code>, <code>the-massless-fluid-where-the-label-and-value-charts-both-fail</code>, <code>the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

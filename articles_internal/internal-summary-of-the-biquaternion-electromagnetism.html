@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Electromagnetism — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Electromagnetism, twenty-nine articles. It gives the objects, the boxed equations and the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-electromagnetism"><strong>Internal Summary of the Biquaternion Electromagnetism</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Electromagnetism</em>, twenty-nine articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> It writes Maxwell's theory as one equation in one element, then uses that compression to reach results that the four-vector formulation reaches slowly: the null field, the shear-free congruence, the optical metric of a medium, the chiral diagonalisation, and the nonlinear programmes that the algebra makes writable.</p>
+<p><strong>The single structural fact.</strong> The field strength is one pure vector of $\mathbb{B}_V$ whose two halves lie in the two sectors:</p>
+<p>$$
+\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad
+\mathrm{Sc}\,\tilde F=0,\qquad
+\underbrace{i\sqrt{\epsilon}\,\vec E}_{\in\,\mathbb{B}_{\Psi}}\;+\;\underbrace{\bigl(-\sqrt{\mu}\,\vec H\bigr)}_{\in\,\mathbb{B}_{\Phi}} .
+$$</p>
+<p>The electric half is informational and the magnetic half is material. This is why the electric and magnetic fields behave differently under the operations of the framework, and why a boost mixes them.</p>
+<p><strong>The one-sentence version.</strong> One element, one gradient, one equation, and the two sectors carry the two fields.</p>
+<h2 id="1-the-field-strength-and-the-single-equation">1. The Field Strength and the Single Equation</h2>
+<p><strong>The potential and the field.</strong></p>
+<p>$$
+\tilde A_\Phi=A_0+\vec A,\qquad A_0=i\,a'_t,\qquad
+\tilde F=\frac{1}{\sqrt{\mu}}\Bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi-\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)\Bigr),
+$$</p>
+<p>$$
+\boxed{\;\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\sqrt{\mu}\,\tilde F\;}
+$$</p>
+<p><strong>The equation.</strong></p>
+<p>$$
+\boxed{\;\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi\;}
+$$</p>
+<p>with the retarded solution</p>
+<p>$$
+\boxed{\;\tilde F(\tilde Q)=+\sqrt{\mu}\int\tilde G_{\Phi,\tilde\nabla_\Phi}(\tilde Q-\tilde R_{\Phi,2})\,\tilde J_\Phi(\tilde R_{\Phi,2})\,d^{4}R_2\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The equation is a <em>product</em>, so the constraint $\mathrm{div}\,\vec B=0$ is not a separate equation: it is the scalar part of the product. The corpus states that the constraint is a consequence of the formula and not an extra condition imposed beside it, and it notes that a current with a non-vanishing scalar part produces a field with a scalar part, whose value is the retarded average of that violation.</p>
+<p><strong>The invariants.</strong></p>
+<p>$$
+\boxed{\;\langle\tilde F\rangle_{\natural}=\sum_{\eta=1}^{3}\bigl(i\sqrt{\epsilon}E_\eta-\sqrt{\mu}H_\eta\bigr)^{2}\;}
+$$</p>
+<p>$$
+\mathrm{Re}\langle\tilde F\rangle_{\natural}=-\epsilon\bigl(\vec E^{2}-c^{2}\vec B^{2}\bigr),\qquad
+\mathrm{Im}\langle\tilde F\rangle_{\natural}=-2\epsilon c\,\vec E\!\cdot\!\vec B .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The two classical invariants are the real and imaginary parts of one biquaternion norm. The norm vanishes exactly for a null field, and a null field is a zero divisor. The corpus uses this as the algebraic definition of "radiation field": a field whose norm is zero.</p>
+<p><strong>The energy–momentum.</strong></p>
+<p>$$
+\boxed{\;\tilde\Sigma_\Psi=\tfrac12\tilde F\tilde F^{*}=W+\frac{i}{c}\vec S\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The energy density and the Poynting vector are the two parts of one Hermitian element. The stress–energy tensor is the same object read in components; the corpus's exercise states the conservation law in both readings and checks that they agree.</p>
+<p><strong>Gauge transformations.</strong> The first kind is the phase rotation of the potential; the second kind is</p>
+<p>$$
+\tilde A_{\Phi,2}=\tilde U\tilde A_\Phi\tilde U^{*},
+$$</p>
+<p>the congruence by a unit rotor. The non-trivial claim is that the gauge transformation of the second kind is <em>the same operation</em> as the Lorentz transformation, so gauge covariance and Lorentz covariance are one statement in this algebra. The corpus marks the difference: the first kind leaves $\tilde F$ invariant, the second rotates it.</p>
+<p><strong>Source.</strong> <code>articles_physics/maxwells-equations-in-the-biquaternionic-formulation.md</code>, <code>articles_physics/the-field-strength-biquaternion-and-its-invariants.md</code>, <code>articles_physics/exercise-the-electromagnetic-energy-momentum-tensor.md</code>, <code>articles_physics/gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form.md</code>.</p>
+<h2 id="2-media-and-the-local-complex-structure">2. Media and the Local Complex Structure</h2>
+<p><strong>The constitutive relations, and the local speed.</strong></p>
+<p>$$
+\vec D=\epsilon\vec E,\qquad \vec B=\mu\vec H,\qquad c=\frac{1}{\sqrt{\epsilon\mu}},\qquad Z=\sqrt{\frac{\mu}{\epsilon}},\qquad
+\epsilon=\frac{1}{cZ},\quad \mu=\frac{Z}{c}.
+$$</p>
+<p><strong>The optical metric.</strong> The medium enters through the conversion $t'=r'_t/c$, and the interval becomes</p>
+<p>$$
+\langle d\tilde Q\rangle_{\natural}=-d{r'_t}^{2}+dr_x^{2}+dr_y^{2}+dr_z^{2}
+=-c^{2}dt'^{2}+dr_x^{2}+dr_y^{2}+dr_z^{2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Lorentzian metric is <em>read off</em> the algebra and not postulated: the inertia $(3,1)$ is the sign pattern of the norm on $\mathbb{B}_\Phi$. The medium changes $c$ and therefore changes the cone, which is why the optical metric of a medium is a conformal rescaling of the vacuum one.</p>
+<p><strong>Chiral media, and the diagonalisation.</strong> A chiral medium adds the magnetoelectric coupling; the time-harmonic system diagonalises into two circular polarisations,</p>
+<p>$$
+\vec N_\pm=\sqrt{\epsilon}\,\vec E\pm i\sqrt{\mu}\,\vec H,
+$$</p>
+<p>each obeying a Beltrami equation</p>
+<p>$$
+\mathrm{rot}\,\vec N_\pm=k_\Phi^{\pm}\,\vec N_\pm ,
+$$</p>
+<p>with two different wavenumbers $k_\Phi^{+}\neq k_\Phi^{-}$.</p>
+<p><strong>The non-trivial claim.</strong> Optical activity is the statement that the two idempotents of the polarisation sphere propagate with different wavenumbers, hence different phases, hence a rotation of the plane of linear polarisation. The quaternionic form shows that the two Beltrami equations are one equation in the two sectors, and that the chirality parameter is the difference of the two wavenumbers.</p>
+<p><strong>The time-harmonic operator and the Cauchy integral.</strong> For a lossy isotropic medium the stationary system diagonalises into two conjugate quaternionic operators, and the solution is a quaternionic Cauchy integral with a kernel that is the fundamental solution of that operator. This is the medium version of the retarded Green's function.</p>
+<p><strong>The parabolic Dirac operator.</strong> The operators $D\pm i\partial/\partial r'_t$, with $D$ the Moisil–Teodorescu operator, characterise the solutions of the stationary Maxwell system; the corpus records the Fourier reformulation of A. Guillén-Villalobos and co-authors and separates what the framework already had from what the reformulation adds.</p>
+<p><strong>Source.</strong> <code>articles_physics/electromagnetism-in-media-the-local-complex-structure-at-work.md</code>, <code>articles_physics/the-effective-optical-metric-of-the-local-complex-structure.md</code>, <code>articles_physics/maxwells-equations-in-chiral-media-the-quaternionic-reformulation.md</code>, <code>articles_physics/the-time-harmonic-maxwell-operator-and-the-quaternionic-cauchy-integral.md</code>, <code>articles_physics/the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.md</code>.</p>
+<h2 id="3-null-fields-twistors-and-nonlinear-programmes">3. Null Fields, Twistors and Nonlinear Programmes</h2>
+<p><strong>Null fields and the shear-free congruence.</strong> A null field has $\langle\tilde F\rangle_{\natural}=0$, so $\tilde F$ is a zero divisor. Two classical results join the algebraic statement:</p>
+<p><strong>Bateman's representation</strong>: every real null solution of the source-free equations is, locally, the real part of an exterior product of two eikonal gradients, $C=d\alpha\wedge d\beta$ with $\partial\alpha\!\cdot\!\partial\beta=0$.</p>
+<p><strong>The Mariot–Robinson theorem</strong>: the principal null direction of a null field is tangent to a shear-free congruence of null geodesics.</p>
+<p><strong>The non-trivial claim.</strong> The corpus's programme states that the congruence is primary and the field secondary. The join shows that the association already exists in <em>linear</em> Maxwell theory, where it constrains neither the profile nor the singularity; what the nonlinear system adds is the construction of the field from the congruence and the location of the singularity.</p>
+<p><strong>Congruence twistors.</strong> The twistor of a congruence is the pair of spinors of the algebra that encodes its direction and its shear. The corpus generates the fields of a congruence from its twistor and checks that the result is null and source-free.</p>
+<p><strong>The boost of a plane wave.</strong> A plane wave has a null momentum $\tilde P_\Phi=\frac{\omega}{c}(i+\vec u_\Phi)$ with $\langle\tilde P_\Phi\rangle_{\natural}=0$. A boost acts on it as a rotation times a dilation:</p>
+<p>$$
+\tilde P_{\Phi,2}=\tilde U_{\Psi,\mathrm b}\tilde P_\Phi\tilde U_{\Psi,\mathrm b}^{*}=\exp(d)\,\tilde u\,\tilde P_\Phi\,\tilde u^{*},
+$$</p>
+<p>because $(i+\vec u_\Phi)$ is an eigenvector of the left multiplication by $\vec u_\Phi$ with eigenvalue $i$. This one-line eigenrelation is the reason the boost of a null field is a rotation and a scaling: the null direction is an eigenvector, so the boost cannot change it.</p>
+<p><strong>Shock electromagnetic waves.</strong> Three regimes are separated, and the separation is the result. Linear Maxwell in vacuum has <strong>no</strong> shocks: the equations are linear and non-dispersive, so smooth data stay smooth. A nonlinear medium, with $\epsilon$ or $\mu$ depending on $|\tilde F|$, can steepen into a discontinuity. A plasma can form shock-like structures through the coupling to matter. Only the first regime is the linear biquaternion Maxwell system; the other two need a material extension, and the corpus says so.</p>
+<p><strong>The nonlinear programmes.</strong> Two are recorded as external programmes, and the corpus marks them as such.</p>
+<p><em>The algebrodynamical programme</em> (Kassandrov type) generates fields from the implicit condition</p>
+<p>$$
+\boxed{\;\Bigl(\frac{\partial\Sigma}{\partial z_0}\Bigr)^{2}-\Bigl(\frac{\partial\Sigma}{\partial z_1}\Bigr)^{2}-\Bigl(\frac{\partial\Sigma}{\partial z_2}\Bigr)^{2}-\Bigl(\frac{\partial\Sigma}{\partial z_3}\Bigr)^{2}=0\;}
+$$</p>
+<p>with the self-quantisation condition</p>
+<p>$$
+\boxed{\;ϙ=\frac{N}{4},\quad N\in\mathbb{Z}\;}
+$$</p>
+<p>and an induced causal geometry with $\vartheta=-\hbar^{2}q/(2c^{2}M^{2})$.</p>
+<p><em>The electro-gravimagnetic programme</em> (Alexeyeva type) identifies magnetic charge with gravitational mass. Its non-trivial content is the stress pseudotensor and the Cauchy theory; its identification is marked as a hypothesis of the author and not a consequence of the algebra.</p>
+<p><strong>Superluminal and subluminal waves.</strong> The corpus records the existence of both in the biquaternionic formulation and states the condition that separates them: the sign of the norm of the wave four-vector.</p>
+<p><strong>Source.</strong> <code>articles_physics/null-electromagnetic-fields-and-the-shear-free-congruence.md</code>, <code>articles_physics/congruence-twistors-and-the-fields-they-generate.md</code>, <code>articles_physics/the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation.md</code>, <code>articles_physics/shock-electromagnetic-waves.md</code>, <code>articles_physics/the-algebrodynamical-programme-nonlinear-cauchy-riemann-conditions-self-quantized-charge-and-induced-causal-geometry.md</code>, <code>articles_physics/the-electro-gravimagnetic-field-and-the-magnetic-charge-mass-hypothesis.md</code>, <code>articles_physics/subluminal-and-superluminal-electromagnetic-waves-in-biquaternionic-form.md</code>.</p>
+<h2 id="4-sources-forces-and-radiation">4. Sources, Forces and Radiation</h2>
+<p><strong>The Lorentz force.</strong></p>
+<p>$$
+\frac{d\vec\pi}{dt}=ϙ\bigl(\vec E+\vec v\times\vec B\bigr),
+$$</p>
+<p>and in the algebra the force is the vector part of a product of the field with the current. The non-trivial claim is that the force density is one element of $\mathbb{B}_\Phi$ whose scalar part is the power and whose vector part is the force.</p>
+<p><strong>Radiation from accelerated charges.</strong> The retarded potential is the convolution with the Green's function; the radiation field is the $1/r$ part; the angular distribution is</p>
+<p>$$
+\frac{dP}{d\Omega}\propto|\hat n\times(\hat n\times\dot{\vec v})|^{2}.
+$$</p>
+<p>The corpus writes the whole chain (Liťnard–Wiechert potential, field, power) in the algebra and checks that the result is the Larmor formula in the non-relativistic limit.</p>
+<p><strong>The moving charge.</strong> The field of a uniformly moving charge is the boost of the Coulomb field. In the algebra this is a congruence, and the result is the Heaviside ellipsoid: the field lines are radial in the rest frame and compressed in the direction of motion by the factor $\sqrt{1-v^{2}/c^{2}}$.</p>
+<p><strong>The complex-displaced singularity and the circle electron.</strong> The corpus displaces the singular set off $\mathbb{B}_\Phi$, into the complex extension of space, and the singularity becomes a <strong>circle</strong>. The field of the ring acquires an intrinsic magnetic-type component (the <em>mesomagnetic</em> component of Gsponer and Hurni), and Lanczos's self-energy is the finite difference of two separately divergent energies. The model is marked as a model: the finite self-energy is a result of the construction, not a prediction of the algebra.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-lorentz-force-in-biquaternion-form.md</code>, <code>articles_physics/radiation-from-accelerated-charges-in-biquaternionic-form.md</code>, <code>articles_physics/exercise-the-electromagnetic-field-of-a-uniformly-moving-charge.md</code>, <code>articles_physics/the-complex-displaced-singularity-and-the-circle-electron.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in five formulas.</strong></p>
+<p>$$
+\tilde F=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H,\qquad
+\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi,\qquad
+\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)=\sqrt{\mu}\,\tilde F,
+$$</p>
+<p>$$
+\langle\tilde F\rangle_{\natural}=\sum_\eta\bigl(i\sqrt{\epsilon}E_\eta-\sqrt{\mu}H_\eta\bigr)^{2},\qquad
+\tilde\Sigma_\Psi=\tfrac12\tilde F\tilde F^{*}=W+\frac{i}{c}\vec S .
+$$</p>
+<p><strong>Four results to keep.</strong> The electric half of the field is informational and the magnetic half is material. The two classical invariants are the real and imaginary parts of one norm. A null field is a zero divisor, and its principal direction is tangent to a shear-free congruence. The gauge transformation of the second kind is a Lorentz transformation.</p>
+<p><strong>Two refusals.</strong> The category does not claim that the algebra predicts the nonlinear programmes; it records them as external. It does not claim that the optical metric is new physics; it states that the metric is read off the norm.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde A_\Phi$</td>
+<td>potential, material sector</td>
+</tr>
+<tr>
+<td>$\tilde F$</td>
+<td>field strength, pure vector of $\mathbb{B}_V$</td>
+</tr>
+<tr>
+<td>$\tilde J_\Phi$</td>
+<td>current</td>
+</tr>
+<tr>
+<td>$\tilde\Sigma_\Psi$</td>
+<td>energy–momentum element</td>
+</tr>
+<tr>
+<td>$\epsilon$, $\mu$, $c$, $Z$</td>
+<td>permittivity, permeability, speed, impedance</td>
+</tr>
+<tr>
+<td>$k_\Phi^{\pm}$</td>
+<td>chiral wavenumbers</td>
+</tr>
+<tr>
+<td>$W$, $\vec S$</td>
+<td>energy density, Poynting vector</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>maxwells-equations-in-the-biquaternionic-formulation</code>, <code>the-field-strength-biquaternion-and-its-invariants</code>, <code>electromagnetism-in-media-the-local-complex-structure-at-work</code>. Traps: <code>the-boost-of-an-electromagnetic-plane-wave-as-a-rotation-and-a-dilation</code>, <code>null-electromagnetic-fields-and-the-shear-free-congruence</code>, <code>gauge-transformations-of-the-first-and-second-kind-in-biquaternionic-form</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
