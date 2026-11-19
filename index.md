@@ -200,7 +200,7 @@ The framework is a research programme, not a finished theory. The algebraic iden
 | $\mathbb{B}_{H}$ | Real quaternion subspace (home of the rotation rotors): the real half, all four coefficients real, fixed points of complex conjugation; a subalgebra |
 | $\mathbb{B}_{iH}$ | Antiquaternion subspace: the imaginary half, all four coefficients purely imaginary, the partner of $\mathbb{B}_{H}$ in $\mathbb{B} = \mathbb{B}_{H} \oplus \mathbb{B}_{iH}$. This split crosses the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ split: the scalar of $\mathbb{B}_{\Phi}$ and the vectors of $\mathbb{B}_{\Psi}$ come from here |
 | $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ | Idempotent (pure state of the informational sector) |
-| $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, $\lvert\vec s_{\Psi}\rvert \le 1$ | Mixed state (positive, trace one). The Bloch vector $\vec s_{\Psi}$ carries no sector label and is distinct from the two vector parts $\vec Q_\Phi$ and $\vec Q_\Psi$ |
+| $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$, $\lvert\vec s_{\Psi}\rvert \le 1$ | Mixed state: positive, normalised by $2\operatorname{Sc}\tilde{Ϛ}_{\Psi}=1$, so its $2\times2$ image is of trace one. The Bloch vector $\vec s_{\Psi}$ carries no sector label and is distinct from the two vector parts $\vec Q_\Phi$ and $\vec Q_\Psi$ |
 | $(q'_t,q_x,q_y,q_z)$ | Real coordinates of the material sector, all four in metres; the speed of light is a conversion and not a coordinate |
 | $(q_t, q'_{x}, q'_{y}, q'_{z})$ | Real coordinates of the informational sector, all four in metres |
 | $\tilde U_{\mathrm{lor}} \in \mathbb{B}$ with $\tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t$ | Lorentz rotor (unit-norm biquaternion) |
