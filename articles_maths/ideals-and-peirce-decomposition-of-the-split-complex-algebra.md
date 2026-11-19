@@ -338,7 +338,7 @@ $$
 \mathsf{M}_2(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
 $$
 
-which is diagonal in the idempotent basis with eigenvalues $Q_{+}$ and $Q_{-}$, the scalar coefficients of the Peirce coordinates (*The Matrix Element Representations of the Split-Complexoid*). The Peirce components are the two eigenspaces:
+which is diagonal in the idempotent basis with eigenvalues $Q_{+}$ and $Q_{-}$, the scalar coefficients of the Peirce coordinates (*Comparison of Element Representations and Matrix Models*). The Peirce components are the two eigenspaces:
 
 $$
 \mathbb{C}_{\mathrm{spl},++}=\mathbb{R}\Pi_{+},\qquad \mathbb{C}_{\mathrm{spl},--}=\mathbb{R}\Pi_{-}.

@@ -27,7 +27,7 @@ $$
 \mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}\cong\mathbb{R},\qquad j\mathbb{R}_{\mathbb{C}_{\mathrm{spl}}}\cong\mathbb{R},\qquad \mathbb{R}\Pi_+\cong\mathbb{R},\qquad \mathbb{R}\Pi_-\cong\mathbb{R}.
 $$
 
-So none of the four lines of *Split-Complexoid Subspaces* carries topology beyond that of a point; the geometry of the form comes from the restricted quadratic form and not from the topology.
+So none of the four lines of *The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space* carries topology beyond that of a point; the geometry of the form comes from the restricted quadratic form and not from the topology.
 
 ## The Euclidean Unit Circle
 

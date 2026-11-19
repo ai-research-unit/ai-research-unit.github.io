@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Of the two products of *The Two Products of the Split-Complexoid Space*, exactly one makes the underlying real space of $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, an associative unital $\mathbb{R}$-algebra; the algebra is *Split-Complex Algebra*, and its multiplication is the general plain bilinear product of two split-complex numbers, $Q_1Q_2$. That product is the one read throughout this article.
+Of the two products of *The Two Products of the Split-Complex Space*, exactly one makes the underlying real space of $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$, $j^{2}=+1$, an associative unital $\mathbb{R}$-algebra; the algebra is *Split-Complex Algebra*, and its multiplication is the general plain bilinear product of two split-complex numbers, $Q_1Q_2$. That product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $Ζ\in\mathbb{C}_{\mathrm{spl}}$ with
 
@@ -16,7 +16,7 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 
 The article is algebraic. The zero-divisor set and its two families are *Zero Divisors of the Split-Complex Algebra*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the Split-Complex Algebra*; the ideals are *Ideals and Peirce Decomposition of the Split-Complex Algebra*; and the square-root problem for a general radicand is *Square Roots of a General Element in the Split-Complex Algebra*. The comparison with the dual numbers, where $\varepsilon^{2}=0$ has the nonzero root $\varepsilon$, is *The Specificities of the Split-Complex Algebra*.
 
-The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other product of the space carries roots of $0$ and square-zero sets of its own, and they are *Relations and Comparison Between the Two Products of the Split-Complexoid Space*.
+The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other product of the space carries roots of $0$ and square-zero sets of its own.
 
 ## The Roots of Zero
 

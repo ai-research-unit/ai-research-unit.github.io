@@ -2,7 +2,7 @@
 
 In theoretical physics, progress often begins by finding the right algebraic arena — a single mathematical structure in which seemingly separate phenomena appear as complementary facets of one object. Standard physics treats special relativity and quantum mechanics in distinct formalisms: real four-vectors and Lorentzian intervals on one side, complex Hilbert spaces and Hermitian operators on the other. This programme begins with the observation that both structures already live inside a single eight-dimensional algebra, the biquaternions $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, splitting cleanly into its anti-Hermitian material subspace $\mathbb{B}_\Phi$ and its Hermitian informational subspace $\mathbb{B}_\Psi$. Unifying the two sectors at the algebraic level does not alter their established predictions; instead, it puts causal geometry, spinor symmetries, quantum states, and measurement rules into a common language — exposing cross-sector links and structural constraints that remain hidden when the two theories are kept apart.
 
-## Core Proposal
+## Core Hypothesis
 
 The central hypothesis of this programme is that the biquaternion algebra is not merely a convenient representation of known physics, but the underlying structure from which the familiar relativistic and quantum sectors arise. What is mathematics is stated as such: the algebra carries a definite form, a Lorentzian form and a positive cone, and those facts hold whatever the universe turns out to be. What is hypothesis is the further claim that this structure is the one nature uses. A point of that space is an element of the **biquaternion algebra** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, written as a biquaternionic coordinate
 

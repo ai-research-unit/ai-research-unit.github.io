@@ -4,7 +4,7 @@
 
 This article studies the algebraic norm that the general plain bilinear product, the multiplication $Q_2Q_1$ of the split-complex algebra, carries, and the invertibility of the elements of that product.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its general plain bilinear form, the definition of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*: for the plain product the form is $\langle Q_2,Q_1\rangle=Q_2Q_1$ and its diagonal is
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its general plain bilinear form, the definition of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*: for the plain product the form is $\langle Q_2,Q_1\rangle=Q_2Q_1$ and its diagonal is
 
 $$
 \langle Q\rangle=Q^{2}=(q^{2}+q'^{2})+2qq'j,
@@ -34,7 +34,7 @@ $$
 \langle Q_2,Q_1\rangle=Q_2Q_1,
 $$
 
-the general plain bilinear form of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*. The form is symmetric, because the algebra is commutative. In coordinates,
+the general plain bilinear form of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*. The form is symmetric, because the algebra is commutative. In coordinates,
 
 $$
 \langle Q\rangle=(q+jq')^{2}=q^{2}+q'^{2}+2qq'j,

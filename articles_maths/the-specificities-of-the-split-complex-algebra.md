@@ -137,7 +137,7 @@ $$
 \det\mathsf{M}_2(Q) = q^2 - q'^2 = \langle Q\rangle_{*}, \qquad \operatorname{tr}\mathsf{M}_2(Q) = 2q ,
 $$
 
-the determinant and the trace of the regular element, the determinant being the norm $\langle Q\rangle_{*}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*.
+the determinant and the trace of the regular element, the determinant being the norm $\langle Q\rangle_{*}$ of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*.
 
 **Proposition (degeneracy).** The image $\mathsf{M}_2(\mathbb{C}_{\mathrm{spl}})$ is a commutative two-dimensional subalgebra of $M_2(\mathbb{R})$ equal to its own commutant, and a single change of basis diagonalises all of its elements at once:
 
@@ -149,7 +149,7 @@ $$
 
 **Corollary.** The matrix model $\mathsf{M}_2$ is the algebra $\mathbb{R}\oplus\mathbb{R}$ in disguise: in the idempotent basis it is the diagonal subalgebra of $M_2(\mathbb{R})$, its centre is itself, and the image carries no idempotent other than the four diagonal projections and no nilpotent other than $0$.
 
-The degeneracy is the matrix form of commutativity: the split-complex model is a commutative subalgebra that diagonalises completely. The $4\times4$ real model of $\mathbb{C}_{\mathrm{spl}}$, the left regular representation on $\mathbb{C}_{\mathrm{spl}}\oplus\mathbb{C}_{\mathrm{spl}}$, is the same algebra with the two diagonal entries repeated, so it adds nothing: it extends the $2\times2$ model by two dimensions that carry no new invariant. The models are *The Matrix Element Representations of the Split-Complexoid*, and the element reading of the regular matrix is *Split-Complex Regular Element Representation*.
+The degeneracy is the matrix form of commutativity: the split-complex model is a commutative subalgebra that diagonalises completely. The $4\times4$ real model of $\mathbb{C}_{\mathrm{spl}}$, the left regular representation on $\mathbb{C}_{\mathrm{spl}}\oplus\mathbb{C}_{\mathrm{spl}}$, is the same algebra with the two diagonal entries repeated, so it adds nothing: it extends the $2\times2$ model by two dimensions that carry no new invariant. The models are *Comparison of Element Representations and Matrix Models*, and the element reading of the regular matrix is *Split-Complex Regular Element Representation*.
 
 ## Summary
 

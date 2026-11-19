@@ -103,7 +103,7 @@ The thirteen subject articles and the source articles that supply their entries,
 | *Comparison of Harmonic Analysis* | the harmonic-analysis series of the eight algebras |
 | *Comparison of Geometry* | *Real Line Geometry and Isometries*; *Rotations and Reflections in the Complex Plane*; the split-complex, dual, quaternion, split-quaternion, biquaternion and split-biquaternion geometry series |
 | *Comparison of Automorphisms and Derivations* | the automorphism-and-derivation article of each of the eight algebras |
-| *Comparison of Subspaces and Involutions* | $\mathbb{R}$ has no source; *The Group of Involutions and the Two Subspaces of the Complex Space*; *Split-Complexoid Subspaces*; *Dual-Number Subspaces*; *The Scalar and Vector Subspaces of $\mathbb{H}$*; the split-quaternion subspace series; the biquaternion subspace series; the split-biquaternion subspace series |
+| *Comparison of Subspaces and Involutions* | $\mathbb{R}$ has no source; *The Group of Involutions and the Two Subspaces of the Complex Space*; *The Involutions, the Subspaces and the Idempotent Lines of the Split-Complex Space*; *Dual-Number Subspaces*; *The Scalar and Vector Subspaces of $\mathbb{H}$*; the split-quaternion subspace series; the biquaternion subspace series; the split-biquaternion subspace series |
 | *Comparison of Element Representations and Matrix Models* | *Real Element Representations* and *Real Regular Element Representation*; the complex, split-complex and dual representation series; the quaternion and split-quaternion representation series; the biquaternion and split-biquaternion representation series |
 | *Comparison of the Polar Decomposition* | the polar-decomposition article of each of the eight algebras |
 

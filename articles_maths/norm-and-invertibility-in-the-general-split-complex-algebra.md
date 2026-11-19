@@ -4,7 +4,7 @@
 
 This article studies the **algebraic norm** of the split-complex algebra read through the general plain sesquilinear product, and it settles what invertibility means for the plain product.
 
-A norm is relative to a product, and the algebraic norm of a product is the diagonal of its form, the definition of *The Two Forms and the Two Algebraic Norms of the Split-Complexoid Space*. For the general plain sesquilinear product
+A norm is relative to a product, and the algebraic norm of a product is the diagonal of its form, the definition of *The Two Forms and the Two Algebraic Norms of the Split-Complex Space*. For the general plain sesquilinear product
 
 $$
 Q_1\star Q_2=Q_1\bar Q_2,
@@ -256,7 +256,7 @@ Let ${\mathbb{C}_{\mathrm{spl}}}^{\times}=\{Q:\langle Q\rangle_{*}\neq0\}$ be th
 
 **Proposition.** The set ${\mathbb{C}_{\mathrm{spl}}}^{\times}$ is the group of invertibles of the plain product, it contains $1$, and it is stable under the sesquilinear product. It is **not** a group under $\star$: the product has no two-sided unit and it is not associative, so ${\mathbb{C}_{\mathrm{spl}}}^{\times}$ with $\star$ is a set with a right unit in which every right translation is a bijection, and nothing more.
 
-**Proof.** The first clause is the plain invertibility criterion. Stability under $\star$ is the multiplicativity of the algebraic norm: $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}\neq0$. The absence of a two-sided unit is §*The Unit and the Absence of the Inverse*, and the failure of associativity is *The Two Products of the Split-Complexoid Space*; a group requires both, so there is none. Finally, the right translation $Q_2\mapsto Q_1\star Q_2=Q_1\bar Q_2$ is a plain right multiplication by the unit $Q_1$ composed with the conjugation, and it is a bijection.
+**Proof.** The first clause is the plain invertibility criterion. Stability under $\star$ is the multiplicativity of the algebraic norm: $\langle Q_1\star Q_2\rangle_{*}=\langle Q_1\rangle_{*}\langle Q_2\rangle_{*}\neq0$. The absence of a two-sided unit is §*The Unit and the Absence of the Inverse*, and the failure of associativity is *The Two Products of the Split-Complex Space*; a group requires both, so there is none. Finally, the right translation $Q_2\mapsto Q_1\star Q_2=Q_1\bar Q_2$ is a plain right multiplication by the unit $Q_1$ composed with the conjugation, and it is a bijection.
 
 **The four components.** Under the isomorphism $\mathbb{C}_{\mathrm{spl}}\cong\mathbb{R}\oplus\mathbb{R}$ the group of invertibles corresponds to
 

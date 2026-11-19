@@ -213,7 +213,7 @@ $$
 \mathsf{M}(Q)=\begin{pmatrix}q&q'\\q'&q\end{pmatrix},
 $$
 
-an injective homomorphism of the algebra into $M_2(\mathbb{R})$ (*The Matrix Element Representations of the Split-Complexoid*). The left multiplication $L_Q$ is the same matrix acting on column vectors, and its kernel is the annihilator:
+an injective homomorphism of the algebra into $M_2(\mathbb{R})$ (*Comparison of Element Representations and Matrix Models*). The left multiplication $L_Q$ is the same matrix acting on column vectors, and its kernel is the annihilator:
 
 $$
 \ker\mathsf{M}(Q)=A(Q).
