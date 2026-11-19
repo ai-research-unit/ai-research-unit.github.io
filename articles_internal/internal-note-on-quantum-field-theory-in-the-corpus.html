@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Field Theory in the Corpus: The One-Particle Category, the Second-Quantised Category, and the Imported Standard Model — Biquaternion Universe</title>
+  <meta name="description" content="The result, first. The corpus does contain quantum field theory. A second-quantised category of sixty-three article links follows the one-particle…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-field-theory-in-the-corpus-the-one-particle-category-the-second-quantised-category-and-the-imported-standard-model"><strong>Quantum Field Theory in the Corpus: The One-Particle Category, the Second-Quantised Category, and the Imported Standard Model</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The result, first.</strong> The corpus does contain quantum field theory. A second-quantised category of sixty-three article links follows the one-particle category that Kimi read. The sentence Kimi quotes is true of that one category and false of the corpus. It is a boundary marker, not a confession.</p>
+<p><strong>The criticism.</strong> Kimi lists seven claims. The fields are one-particle fields. The Klein–Gordon, Dirac and Proca equations are wave equations and not field operators. There is no Fock space. There are no creation and annihilation operators. There is no interacting QFT. There is no Standard Model. The path integral is sketched but not developed into a computational framework.</p>
+<p><strong>What this note does.</strong> It locates the quoted sentence. It maps the two categories. It checks every clause against the articles. It then states the gap that is real. The subject is the corpus, not the algebra. The algebra has its own ledger, and this note repeats it only where a clause depends on it.</p>
+<p><strong>The strongest objection, named at the start.</strong> A category of transcriptions is not an answer. If every QFT result is imported, then Kimi's deeper point survives: the biquaternion framework does not quantise anything by itself. The objection is correct, and the answer is a distinction. Coverage and derivation are two claims. Most of Kimi's clauses are claims about coverage: "there's no Fock space" is an existence claim, not a derivation claim. The coverage claim is factual, and it is false. Derivation is a different claim, and it is true that the algebra does not derive QFT. The corpus states that negative itself, in the same articles that do the quantisation.</p>
+<p><strong>The order.</strong> The quoted sentence and its scope come first. The one-particle category comes next. The second-quantised category follows. The native limit, the interacting sector, the Standard Model and the path integral come after. A clause-by-clause verdict closes the argument, then the presentation gap that made the criticism plausible.</p>
+<h2 id="the-sentence-and-its-scope">The Sentence and Its Scope</h2>
+<p><strong>Where the sentence sits.</strong> The sentence occurs verbatim in <code>articles_internal/internal-summary-of-the-biquaternion-relativistic-quantum-theory.md</code>, in the closing section titled <em>Three things the category refuses</em>:</p>
+<blockquote>
+<p>It does not quantise: the fields are one-particle fields, and the second quantisation is the next category.</p>
+</blockquote>
+<p><strong>The subject is the category.</strong> The heading names the category, and the sentence's subject is the category's fields. The same paragraph says what the category does do, what it does not derive, and what it leaves open. The sentence is one item in a list of three refusals. It is not a statement about the corpus.</p>
+<p><strong>The next category is named in the sentence itself.</strong> The clause "the second quantisation is the next category" points to <em>Biquaternion Quantum Fields</em>. The menu states the same dependency in its header comment: the reading is a re-coordinatisation of one element, the field is that element's quantisation, and the state is a trace over the quantised field. The order is dependency, not preference.</p>
+<p><strong>The count.</strong> The one-particle category links one hundred and twenty-seven articles. The second-quantised category links sixty-three. The menu header comment of the second category still says "sixty-two articles"; the menu itself links sixty-three, and all sixty-three files resolve. The discrepancy is one stale word in a comment, not a missing article.</p>
+<p><strong>The map.</strong> The categories that carry the argument are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Links</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biquaternion Relativistic Quantum Theory</td>
+<td>127</td>
+<td>one-particle wave equations and their informational reading</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Quantum Hydrodynamics</td>
+<td>45</td>
+<td>the single-particle fluid reading of the same element</td>
+</tr>
+<tr>
+<td>Biquaternion Quantum Fields</td>
+<td>63</td>
+<td>second quantisation, Fock space, S-matrix, LSZ, RG, anomalies</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Quantum Thermodynamics</td>
+<td>22</td>
+<td>the thermal state as a trace over the Fock space</td>
+</tr>
+<tr>
+<td>Biquaternion Particle Physics and Gauge Fields</td>
+<td>73</td>
+<td>the Standard Model, transcribed, and the algebra's ceiling</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading of the map.</strong> The second row is single-particle and says so. The third row is the second quantisation of the same element. The fourth row cannot be written before the third row's Fock space exists. The fifth row is a separate ledger: it records the Standard Model and states which parts the algebra reaches.</p>
+<h2 id="what-the-one-particle-category-does">What the One-Particle Category Does</h2>
+<p><strong>The equations are wave equations.</strong> The category writes the Klein–Gordon equation as $(\Box_\Phi-k_m^2)\tilde\Xi=0$, the Dirac equation as the chiral pair $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$, and the Proca equation as $\tilde\nabla_\Phi\tilde F=k_m^2\tilde A_\Phi$ with $\partial_\mu A^\mu=0$. Each is an equation for one element of the algebra. None is an operator-valued field.</p>
+<p><strong>The Klein–Gordon article states the defect itself.</strong> It says the equation is second order in time, has two frequency branches, has a non-positive conserved density, and therefore admits no one-particle interpretation. It names the standard resolution: read $\tilde\Xi$ and $\tilde\Xi^*$ as field operators that annihilate and create the particle and the antiparticle. The biquaternion form does not change that resolution.</p>
+<p><strong>The defect is the bridge.</strong> The one-particle category ends where the field operator begins. That is why the next category exists. The sentence Kimi quotes is the signpost at the bridge, not a claim that the bridge is missing.</p>
+<p><strong>The one-particle articles are not silent about the bridge.</strong> The Klein–Gordon article lists second quantisation as an open question: whether the biquaternion structure adds anything to the procedure, or is a relabelling, is left open. The canonical quantisation article answers that question: it adds the centrality of the scalar field and the biquaternion-norm reading of the mass shell, and it does not add a bosonic ladder. The open question is therefore narrower than it looks, and it is answered in the next category.</p>
+<p><strong>Kimi's first three clauses are true here.</strong> In this category the fields are one-particle fields. The Klein–Gordon, Dirac and Proca equations are wave equations. There is no Fock space and no creation or annihilation operator. The clauses are accurate as a description of the category.</p>
+<h2 id="what-the-second-quantised-category-adds">What the Second-Quantised Category Adds</h2>
+<p><strong>The vacuum is an algebraic object.</strong> The category opens with the vacuum as a minimal idempotent:</p>
+<p>$$
+\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr),\qquad \tilde\Pi_+^2=\tilde\Pi_+,\qquad |0\rangle\langle0|=\tilde\Pi_+ .
+$$</p>
+<p>"No particles" is not a vector added to the theory. It is a rank-one projection inside the algebra, and the one-particle module is the minimal left ideal it defines.</p>
+<p><strong>The Fock space is built on that module.</strong> The Fock space article fixes the standard construction and then asks where its objects live:</p>
+<p>$$
+\mathcal F=\bigoplus_{n\ge0}\bigl(\mathcal H_1^{\otimes n}\bigr)_{\pm},\qquad
+\{a_{\mathrm{fop},i},a_{\mathrm{fop},j}^{\dagger}\}=\delta_{ij}\ \text{or}\ [a_{\mathrm{fop},i},a_{\mathrm{fop},j}^{\dagger}]=\delta_{ij}.
+$$</p>
+<p>The one-particle space is a module over $\mathbb{B}$. The Fock space is the symmetric or exterior algebra of that module. Neither is a subalgebra of $\mathbb{B}$.</p>
+<p><strong>The article separates three answers.</strong> The transcription is the standard Fock space on the module. The finite-dimensional core is one fermionic mode inside the algebra. The gap is that there is no Fock space in $\mathbb{B}$. The corpus states all three, and it does not confuse them.</p>
+<p><strong>The creation and annihilation operators are written.</strong> The Dirac field expands with $a_{\mathrm{fop},r}$ and $b_{\mathrm{fop},r}^{\dagger}$; the mode algebra is the equal-time anticommutator; the number operators are $N_a$, $N_b$, $F=N_a+N_b$ and $Ϙ_{\mathrm{fop}}=N_a-N_b$. The Maxwell field expands in four polarisations with the Gupta–Bleuler commutator and the subsidiary condition. The scalar field expands with $[a_{\mathrm{fop}}(\vec p),a_{\mathrm{fop}}^{\dagger}(\vec p')]\propto\delta$. These are not programmes. They are written expansions in the canonical quantisation articles.</p>
+<p><strong>The field types are covered.</strong> The category has canonical quantisation of the Klein–Gordon, Dirac, Maxwell, Proca, Rarita–Schwinger and graviton fields. It has a scalar Fock space article and a fermionic Fock space article. It has the spin–statistics theorem, the CPT theorem, charge conjugation, the Unruh effect, Hawking radiation, the trace anomaly, the theta vacuum and bosonisation.</p>
+<p><strong>So two clauses are false about the corpus.</strong> "There's no Fock space" is false: there are three Fock-space articles. "No creation/annihilation operators" is false: the mode expansions and the mode algebras are the content of the quantisation articles.</p>
+<h2 id="the-precise-limit-no-native-ladder">The Precise Limit: No Native Ladder</h2>
+<p><strong>The bosonic obstruction is a theorem.</strong> One bosonic mode needs $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=e_t$. No such pair exists in $\mathbb{B}$. The scalar part of a commutator vanishes, while $2\,\mathrm{Sc}(e_t)=2$. The only relation of the form $[a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}]=c\,e_t$ that can hold has $c=0$. The Maxwell and scalar Fock spaces are therefore standard constructions on an imported module.</p>
+<p><strong>The fermionic mode does exist.</strong> The algebra contains nilpotent odd generators with</p>
+<p>$$
+\{\vec\Upsilon_x,\vec\Upsilon_y\}=e_t,\qquad \vec\Upsilon_x^2=\vec\Upsilon_y^2=0 .
+$$</p>
+<p>One fermionic mode is native. The rest of the fermionic Fock space is the exterior algebra of the Dirac one-particle module.</p>
+<p><strong>The corpus states the limit in every relevant article.</strong> The Klein–Gordon quantisation article says the scalar field takes values in the centre and the algebra supplies no bosonic ladder. The Proca article says the bosonic ladder is not native. The Fock-space article says "there is no Fock space in $\mathbb{B}$" and puts the statement in bold. The scalar path-integral article says the bosonic gap persists diagrammatically.</p>
+<p><strong>The precise true statement.</strong> There is no Fock space and no bosonic ladder inside the finite-dimensional algebra. There is a Fock space built on a $\mathbb{B}$-module, and one fermionic mode inside $\mathbb{B}$. Kimi's clauses are true only in the first, narrow sense. They are false as statements about the category's coverage.</p>
+<h2 id="interacting-qft">Interacting QFT</h2>
+<p><strong>The scalar interaction is written.</strong> The scalar path-integral article writes the renormalisable central quartic interaction:</p>
+<p>$$
+\mathcal L_{\mathrm{int}}=-\frac{\lambda}{4}\Bigl(\mathrm{Sc}(\tilde\Xi^*\tilde\Xi)\Bigr)^2 .
+$$</p>
+<p>The generating functional becomes a functional differential operator, the expansion in $\lambda$ is the standard perturbative series, the propagator is the inverse quadratic form, and the vertex is a central unit times the coupling. The loop expansion is the expansion in $\hbar$.</p>
+<p><strong>The S-matrix is written.</strong> The S-matrix article fixes the interaction picture and the time-ordered exponential</p>
+<p>$$
+S=T\exp\Bigl(-i\int d^4r\,\mathcal H_I\Bigr),
+$$</p>
+<p>expands it in the Dyson series, derives $S=1+iT$ and the optical theorem $2\,\mathrm{Im}\,T=T^{\dagger}T$, and contracts the series into Feynman propagators by Wick's theorem.</p>
+<p><strong>The reduction is written.</strong> The LSZ article derives the reduction formula in the framework's terms: Fourier transform each leg, amputate by the mass-shell operator, put every external momentum on the mass shell, divide by $\sqrt Z$ per leg. The mass shell is the level set of the biquaternion norm. Wave-function renormalisation is the residue at the pole.</p>
+<p><strong>The quantum corrections are written.</strong> The Schwinger–Dyson and Ward–Takahashi article derives the identities from the invariance of the functional integral. The renormalisation-group article writes the Wetterich equation</p>
+<p>$$
+\frac{\partial\Gamma_\eta}{\partial r'_t}=\mathrm{Sc}\Bigl[\bigl(\Gamma_\eta^{(2)}+R_\eta\bigr)^{-1}\frac{\partial R_\eta}{\partial r'_t}\Bigr],
+$$</p>
+<p>integrates out a shell for the scalar quartic coupling and the non-abelian gauge coupling, and checks the fixed points. The trace-anomaly article writes the two- and four-dimensional coefficients. The BRST article writes the nilpotent operator and its cohomology.</p>
+<p><strong>So "no interacting QFT" is false as a statement about the formalism.</strong> The corpus has the perturbative machinery of an interacting theory and one worked scalar quartic model.</p>
+<p><strong>The limit is precise.</strong> The S-matrix article says the Dyson series is interaction-agnostic and that the biquaternion form of a specific vertex belongs to the gauge-principle article and its planned companions. The QFT category does not derive a specific gauge interaction. The specific interactions are transcribed elsewhere: the QED scattering articles sit in the one-particle category, and the weak interaction and QCD sit in the Particle Physics and Gauge Fields category. Every vertex is imported. The algebra supplies the central-valuedness of the scalar vertex and the module the fields act on, not a native interaction.</p>
+<p><strong>The accurate statement.</strong> The corpus has interacting QFT as a transcribed formalism, with one worked scalar interaction. It does not have a native interacting QFT derived from the algebra. The corpus says both halves of that sentence itself.</p>
+<h2 id="the-standard-model">The Standard Model</h2>
+<p><strong>"No Standard Model" is false about coverage.</strong> The Particle Physics and Gauge Fields category links seventy-three articles. It contains the Standard Model content and the nineteen parameters, the Standard Model Lagrangian assembled in four sectors, the electroweak gauge group and the hypercharge assignment, the QCD Lagrangian with colour, the octet and the Feynman rules, asymptotic freedom, the parton model, jets, the Higgs mechanism, the Yukawa sector, anomaly cancellation, CKM and PMNS mixing.</p>
+<p><strong>The category is explicit about its standing.</strong> The Standard Model content article says: "It derives nothing." It says: "Nothing here is a framework result." The Lagrangian article says the expression is "transcribed, not derived." The research agenda says colour, weak isospin, hypercharge and the scalar sector are obstacles with no route yet.</p>
+<p><strong>The structural reason is a theorem.</strong> The algebra's own compact gauge group is</p>
+<p>$$
+\exp(\mathbb{B}_\Phi)=\mathrm{U}(2),\qquad \dim_{\mathbb{R}}\mathrm{U}(2)=4,\qquad \dim_{\mathbb{R}}SU(3)=8 .
+$$</p>
+<p>A module over $\mathbb{B}\cong M_2(\mathbb{C})$ has even complex dimension. A colour triplet needs complex dimension three. The algebra reaches $SU(2)$ and not $SU(3)$, and the article that proves this states the three separate questions: the algebra's own group, an embedding into a matrix enlargement, and the existence of a colour module. The first is $U(2)$; the second needs $M_2(\mathbb{B})$; the third fails.</p>
+<p><strong>So Kimi's clause splits.</strong> As coverage, "no Standard Model" is false: the corpus has the content, the Lagrangian, the phenomenology and the parameter count. As derivation, "no Standard Model" is true: the algebra does not produce the gauge group, the chiral action, the hypercharge, the scalar sector or the nineteen parameters. The corpus's own parameter-count article calls the nineteen parameters the measure of the framework's boundary.</p>
+<h2 id="the-path-integral">The Path Integral</h2>
+<p><strong>The formal apparatus is developed.</strong> The corpus has the functional integral, the generator $Z[J]$, the connected generator $W$, the effective action as the Legendre transform, the loop expansion, the functional determinant, the Gaussian evaluation, the Euclidean rotation and the lattice regulator. It has a gauge-field path integral with Faddeev–Popov, a fermionic path integral with the Berezin measure and the Pfaffian, and a lattice gauge theory with a finite product of compact Haar integrals.</p>
+<p><strong>The lattice article is the computational core.</strong> It replaces the continuum by a finite set of link variables, replaces the formal measure by a finite product of compact-group integrals, and carries out the strong-coupling expansion, the area law and the string tension. It says plainly that this is the only construction in the subcategory in which the path integral is a genuine finite-dimensional integral.</p>
+<p><strong>Finite pieces are checked numerically.</strong> The scalar path-integral article reports the finite-dimensional Gaussian identity verified by quadrature to a relative difference of $9.7\times10^{-13}$, and the lattice Klein–Gordon inverse to $5.6\times10^{-16}$. The S-matrix article reports the unitarity identity checked to $10^{-16}$. The QCD article reports the Gell-Mann identities checked to $1.3\times10^{-15}$. These are checks of finite algebraic pieces, not a solver.</p>
+<p><strong>The gap is stated in the articles.</strong> The functional-integral article calls the measure the algebra's largest gap. It says the algebra does not supply the space of field configurations, the action beyond its quadratic part, the choice of regulator, or the definition of the continuum measure. The renormalisation-group article says the regulator is an input and that the integral is standard field theory written in the notation. The scalar path-integral article leaves the branch of the determinant open.</p>
+<p><strong>So the clause is partly true.</strong> "Sketched" understates the formal development: the corpus develops the functional integral, the generating functional, the effective action, the Feynman rules, the Dyson series, LSZ, the RG and the lattice regulator. "Not developed into a computational framework" is true if "computational" means numerical: there is no code, no non-perturbative solver and no numerical prediction. The accurate phrase is a computational framework for formal perturbation theory, not a numerical one.</p>
+<h2 id="the-verdict-clause-by-clause">The Verdict, Clause by Clause</h2>
+<p><strong>The table.</strong> Each row gives Kimi's clause, the verdict, and the warrant.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Clause</th>
+<th>Verdict</th>
+<th>Warrant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"It does not quantise: the fields are one-particle fields, and the second quantisation is the next category."</td>
+<td>True of the one-particle category; false of the corpus</td>
+<td>The sentence is the closing item of <em>Three things the category refuses</em> in the one-particle summary; the next category is <em>Biquaternion Quantum Fields</em>, sixty-three links</td>
+</tr>
+<tr>
+<td>"The Klein–Gordon, Dirac, and Proca equations are treated as one-particle wave equations, not as field operators."</td>
+<td>True of the one-particle category; false of the QFT category</td>
+<td>Canonical quantisation articles for Klein–Gordon, Dirac, Proca, Maxwell, Rarita–Schwinger and graviton</td>
+</tr>
+<tr>
+<td>"There's no Fock space."</td>
+<td>False as coverage; true only as "no Fock space inside $\mathbb{B}$"</td>
+<td><code>fock-space-and-creation-annihilation-operators-in-biquaternionic-form.md</code>, the scalar Fock-space article, the fermionic Fock-space article</td>
+</tr>
+<tr>
+<td>"No creation/annihilation operators."</td>
+<td>False as coverage; true only as "no native bosonic ladder"</td>
+<td>Mode expansions in the canonical quantisation articles; the trace argument in the Fock-space article</td>
+</tr>
+<tr>
+<td>"No interacting QFT."</td>
+<td>False as coverage of the formalism; true as "no native interacting QFT"</td>
+<td>Scalar quartic interaction, Dyson series, LSZ, Schwinger–Dyson, RG; the S-matrix article's interaction-agnostic statement</td>
+</tr>
+<tr>
+<td>"No Standard Model."</td>
+<td>False as coverage; true as derivation</td>
+<td>Seventy-three-link Particle Physics category; Standard Model content and Lagrangian articles; the $U(2)$ ceiling</td>
+</tr>
+<tr>
+<td>"The path integral is sketched but not developed into a computational framework."</td>
+<td>Partly true</td>
+<td>Functional integral, generating functional, effective action, determinant, lattice gauge theory; the measure and determinant branch remain open; no numerical solver</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern.</strong> Four clauses are true of one category and false of the corpus. One clause is half true. Two clauses are true only when read as derivation or native-existence claims. The criticism is not a list of seven corpus gaps. It is one category boundary read as a corpus boundary, plus one real numerical gap.</p>
+<h2 id="why-the-criticism-is-understandable">Why the Criticism Is Understandable</h2>
+<p><strong>The standalone digest omits the QFT category.</strong> <code>articles_physics/ai-physics-review.md</code> is the document the corpus offers as a standalone digest, and it says it can be copied whole into an AI chat. It has no section on quantum field theory. It never uses the words "Fock", "creation", "annihilation" or "Standard Model". It mentions quantisation only in passing, in the phrase "not to quantise relativity" and in a paragraph on refused external programmes.</p>
+<p><strong>The digest states the negative without the positive.</strong> Its section <em>What the Framework Does Not Do</em> says: "No commutation relation in the algebra. The canonical commutator must be imported." It says: "The internal group stops at $\mathrm{U}(2)$." Its thermality section says the many-body thermal state and the field-theoretic generalisation are not built. A reader of that digest alone will reproduce Kimi's conclusion. The reader is not wrong about the digest. The digest is incomplete.</p>
+<p><strong>The one-particle summary supplies the sentence without the next page.</strong> The internal summary of the one-particle category ends with the quoted refusal. The summary of the QFT category exists, but a reader who stops at the first summary never sees it. The sentence is accurate and the next step is not signposted.</p>
+<p><strong>A stale cross-reference makes it worse.</strong> The Klein–Gordon article's open-question list still asks whether the biquaternion structure adds anything to second quantisation, and it does not point to the canonical quantisation article that answers the question. The answer is: it adds the centrality and the module, not a ladder. The line is defensible as a question about added value, but it reads as a question about existence.</p>
+<p><strong>The presentation gap is the real fault.</strong> The corpus has the QFT category, the Standard Model category, and the internal summaries of both. The public digest does not mention them. That is a presentation fault, not a physics fault, and it is the fault that produced the criticism.</p>
+<p><strong>The remedy is small.</strong> Add one paragraph to the standalone digest. It should say that the one-particle category is followed by a second-quantised category and a particle-physics category, and it should name the Fock-space, canonical-quantisation and Standard Model articles. Add a forward link in the Klein–Gordon open question. Do not change any physics claim.</p>
+<h2 id="what-is-genuinely-absent">What Is Genuinely Absent</h2>
+<p><strong>The narrow list.</strong> The corpus's real absences are these.</p>
+<ul>
+<li><strong>No native bosonic ladder.</strong> No pair in $\mathbb{B}$ satisfies $[a,a^{\dagger}]=e_t$. The scalar and Maxwell ladders are imported.</li>
+<li><strong>No native Fock space.</strong> The Fock space is built on a module. The algebra contains one fermionic mode and no more.</li>
+<li><strong>No native interaction.</strong> The scalar quartic is central but its vertex is imported. The gauge interactions are transcribed in the particle-physics category.</li>
+<li><strong>No derivation of the Standard Model.</strong> The algebra reaches $U(2)$. Colour, weak isospin, hypercharge, the scalar sector and the nineteen parameters are outside.</li>
+<li><strong>No numerical computational framework.</strong> The path integral is formally developed. It is not a solver, and the measure and determinant branch remain open.</li>
+<li><strong>No new prediction.</strong> The framework is empirically equivalent to standard physics, and the corpus says so.</li>
+</ul>
+<p><strong>The comparison.</strong> Kimi's list is longer than this one. The difference is not a matter of taste. Four of his items are coverage claims, and the coverage exists. The items that survive are derivation claims, and the corpus states them more sharply than the criticism does.</p>
+<p><strong>The one-sentence position.</strong> The corpus covers QFT and imports it; it does not derive it; and it says so in the articles that do the work.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The corpus does second-quantise.</strong> The sentence Kimi quotes is the closing item of <em>Three things the category refuses</em> in the one-particle summary. Its subject is the category, and it names the next category in the same sentence.</p>
+<p><strong>The coverage is real.</strong> The <em>Biquaternion Quantum Fields</em> category links sixty-three articles: the vacuum as a minimal idempotent, the Fock space, the creation and annihilation operators, canonical quantisation of six fields, the scalar and fermionic Fock spaces, the Dyson series, LSZ, Schwinger–Dyson, the renormalisation group, BRST, anomalies, the Unruh effect, Hawking radiation and the entanglement structure.</p>
+<p><strong>The Standard Model is present as a transcription.</strong> The <em>Particle Physics and Gauge Fields</em> category links seventy-three articles: the content, the Lagrangian, the electroweak sector, QCD, asymptotic freedom, the parton model, jets, the Higgs sector, the Yukawa sector and the nineteen parameters. The corpus states that none of it is a framework result. The algebra's own gauge group is $U(2)$, and $SU(3)$ is excluded by the dimension count and the parity of the module dimension.</p>
+<p><strong>The path integral is formally developed, not numerically.</strong> The corpus has the functional integral, the generating functional, the effective action, the functional determinant, the Feynman rules, the loop expansion and the lattice regulator. It does not have a numerical solver, and the measure and the determinant branch remain open.</p>
+<p><strong>The real gap is narrower than the criticism.</strong> There is no native bosonic ladder, no native Fock space, no native interaction, no derivation of the Standard Model and no numerical computational framework. The corpus states the first four, and it states the measure gap that blocks the fifth.</p>
+<p><strong>The fault is presentational.</strong> The standalone digest does not mention the QFT or Standard Model categories. A reader of the digest alone will conclude that the corpus has no QFT. That is the criticism's real cause, and one paragraph in the digest would remove it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Phi$, $\mathbb{B}_\Psi$</td>
+<td>material and informational sectors</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+$</td>
+<td>minimal idempotent, the vacuum $\lvert 0\rangle\langle 0\rvert$</td>
+</tr>
+<tr>
+<td>$\vec\Upsilon_x,\vec\Upsilon_y$</td>
+<td>odd nilpotent generators, one fermionic mode</td>
+</tr>
+<tr>
+<td>$a_{\mathrm{fop}},a_{\mathrm{fop}}^{\dagger}$</td>
+<td>annihilation and creation operators</td>
+</tr>
+<tr>
+<td>$\mathcal F$</td>
+<td>Fock space, the symmetric or exterior algebra of the one-particle module</td>
+</tr>
+<tr>
+<td>$S=T\exp(-i\int d^4r\,\mathcal H_I)$</td>
+<td>S-matrix, the Dyson series</td>
+</tr>
+<tr>
+<td>$Z[J]$, $\Gamma[\xi]$</td>
+<td>generating functional and effective action</td>
+</tr>
+<tr>
+<td>$R_\eta$</td>
+<td>renormalisation-group regulator</td>
+</tr>
+<tr>
+<td>$U(2)$</td>
+<td>the algebra's own compact gauge group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>The two categories.</strong> <a href="internal-summary-of-the-biquaternion-relativistic-quantum-theory.html">Internal Summary of the Biquaternion Relativistic Quantum Theory</a> carries the quoted sentence and the one-particle equations. <a href="internal-summary-of-the-biquaternion-quantum-fields.html">Internal Summary of the Biquaternion Quantum Fields</a> carries the second quantisation, the Fock space and the S-matrix. <a href="internal-summary-of-the-biquaternion-particle-physics-and-gauge-fields.html">Internal Summary of the Biquaternion Particle Physics and Gauge Fields</a> carries the Standard Model ledger and the $U(2)$ ceiling.</p>
+<p><strong>The decisive articles.</strong> <a href="../articles_physics/fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a> states the three answers and the gap. <a href="../articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a> states the bosonic obstruction. <a href="../articles_physics/the-scalar-field-path-integral-in-biquaternionic-form.html">The Scalar Field Path Integral in Biquaternionic Form</a> writes the quartic interaction and the loop expansion. <a href="../articles_physics/the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a> writes the Dyson series and states the interaction-agnostic limit. <a href="../articles_physics/the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a> states the measure gap.</p>
+<p><strong>The Standard Model ledger.</strong> <a href="../articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a> prints the content and says it derives nothing. <a href="../articles_physics/the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html">The Standard Model Lagrangian Assembled</a> says the expression is transcribed. <a href="../articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a> proves the ceiling.</p>
+<p><strong>The presentation gap.</strong> <a href="../articles_physics/ai-physics-review.html">AI Physics Review</a> is the standalone digest. It has no QFT section, and its <em>What the Framework Does Not Do</em> list is the likely source of the criticism.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

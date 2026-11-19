@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extending the Corpus to Curved Spaces: The Corpus Ledger, the Chat&#x27;s Three Slips, and the Open List — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. An internal reading of one chat transcript against the corpus. The transcript is chat-to-split: seventy kilobytes, sixty-two lines…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="extending-the-corpus-to-curved-spaces-the-corpus-ledger-the-chats-three-slips-and-the-open-list"><strong>Extending the Corpus to Curved Spaces: The Corpus Ledger, the Chat's Three Slips, and the Open List</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> An internal reading of one chat transcript against the corpus. The transcript is <code>chat-to-split</code>: seventy kilobytes, sixty-two lines, twenty answers and one question, no headings and no formulas set as displays. Its subject is the extension of the framework to curved spacetime and to many qubits.</p>
+<p><strong>The verdict in one line.</strong> No corpus article needs correcting. Eight curved-space statements were recomputed for this file and all eight hold. The transcript restates five of them correctly, states three of them wrongly, and in its one new proposal links entanglement to curvature through a holonomy that is unitary, and therefore cannot degrade entanglement at all.</p>
+<p><strong>What the corpus achieves on curved space, in one paragraph.</strong> The algebra carries any Lorentzian metric, as the Gram matrix of four material frame elements. The local symmetry is a copy of $\mathrm{SL}(2,\mathbb{C})$ at each point, and the counting closes. The covariant derivative is two-sided, and the trap in writing it as a commutator is stated. The curved Dirac operator squares to the Laplace–Beltrami operator plus a quarter of the Ricci scalar, with the coefficient the Clifford derivation gives. The Newman–Penrose null tetrad is the pair of minimal idempotents and the pair of nilpotents, with no separate axiom. The framework's own local-scale proposal is a diagonal member of the frame route, and its optical reading agrees with Gordon's metric exactly. The one boundary is precise: inside the one-function class, Ricci-flatness forces flatness. That is a measured wall, not a collapse.</p>
+<p><strong>Why the sorting is the work.</strong> A chat answer reads as authority and carries no ledger. Three of its sentences are indistinguishable, to a reader, from results of the corpus, and they are wrong. The value of this file is the attribution: what is the corpus's, what is the chat's, and what is nobody's yet.</p>
+<h2 id="what-the-framework-achieves-on-curved-space">What the Framework Achieves on Curved Space</h2>
+<p>Each row below is a result of the corpus. The last column says what this file did about it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Content</th>
+<th>Warrant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A frame carries any metric</td>
+<td>$g_{\mu\nu}=\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$ with $\tilde E_{\Phi,\mu}\in\mathbb{B}_{\Phi}$; the Gram matrix has inertia $(3,1)$ by Sylvester, and every Lorentzian metric is locally of this form</td>
+<td>algebraic, read from the corpus</td>
+</tr>
+<tr>
+<td>The local group</td>
+<td>$\tilde E_{\Phi,\mu}\mapsto\tilde U\tilde E_{\Phi,\mu}\tilde U^{*}$ with $\tilde U$ of unit norm; sixteen frame functions minus six rotor parameters leave the ten components of $g_{\mu\nu}$</td>
+<td>counting, recomputed</td>
+</tr>
+<tr>
+<td>The two-sided derivative</td>
+<td>$D_\mu\tilde Q=\partial_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}$, with $\vec\Gamma_\mu$ in the six-dimensional scalar-free subspace</td>
+<td>recomputed on one material element</td>
+</tr>
+<tr>
+<td>The curved Dirac square</td>
+<td>$(\tilde F_\mu D_\mu)^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}$, with the square taken in $\mathbb{B}$</td>
+<td>corpus result; the $\tfrac14$ is the coefficient of the Clifford derivation</td>
+</tr>
+<tr>
+<td>The null tetrad</td>
+<td>$l=\sqrt2i\tilde\Pi_1$, $n=\sqrt2i\tilde\Pi_2$, $m=\sqrt2i\vec\Upsilon_1$, $\bar m=\sqrt2i\vec\Upsilon_2$, so the orthogonality relations follow from $\tilde\Pi^2=\tilde\Pi$ and $\vec\Upsilon^2=0$</td>
+<td>recomputed</td>
+</tr>
+<tr>
+<td>The local scale is a frame</td>
+<td>$E_0=i\,c\,e_t$ and $E_\eta=\vec e_\eta$ give $\langle E_0,E_0\rangle_{\natural}=-c^2$ and a diagonal Gram matrix</td>
+<td>recomputed at three values of $c$</td>
+</tr>
+<tr>
+<td>The optical reading</td>
+<td>in the static case the framework's interval and Gordon's are the same quadratic form, with $n=c_0/c$</td>
+<td>corpus result, checked there</td>
+</tr>
+<tr>
+<td>The boundary</td>
+<td>inside the one-function class, Ricci-flatness implies $u$ affine in space, and the affine family is flat</td>
+<td>recomputed symbolically</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The frame route is not a formality.</strong> Four material elements, sixteen functions, one Gram matrix. Where the four are independent the matrix is nondegenerate, and Sylvester fixes its inertia at $(3,1)$, so the result is automatically Lorentzian. Conversely, take a $g$-orthonormal frame of any Lorentzian metric, map it into $\mathbb{B}_{\Phi}$ by a linear isometry of quadratic spaces, and read the coordinate components. Nothing is excluded. The price is stated in the corpus and it is the right price: the algebra contributes a four-dimensional real space with a form, and the metric itself is carried by the frame.</p>
+<p><strong>The two-sided derivative is the corpus's sharpest correction of the textbook.</strong> On a material element the group acts by $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$, so the infinitesimal action of a generator $G$ is $\tilde Q\mapsto\tilde Q+\epsilon(G\tilde Q+\tilde QG^{*})$. I recomputed both actions on the element $0.7i\,e_t+0.3\vec e_x-0.4\vec e_y+0.9\vec e_z$. For the rotation generator $\vec e_x$ the two-sided form and the commutator agree. For the boost generator $i\vec e_x$ they do not. The commutator of a boost with a material element is a rotation in the $\vec e_y\vec e_z$ plane, and the two-sided action is a genuine boost:</p>
+<p>$$
+r'_t\longmapsto r'_t-2\epsilon\,r_x,\qquad r_x\longmapsto r_x-2\epsilon\,r'_t .
+$$</p>
+<p>So the framework's own notation tells a writer where a textbook formula fails. That is an advantage of the algebra, and it is worth saying before any criticism of a transcript.</p>
+<p><strong>The local-scale proposal belongs to the frame route, and this is the good news.</strong> Take the four frame elements $E_0=i\,c(\vec r)\,e_t$ and $E_\eta=\vec e_\eta$. I computed the Gram matrix at $c=0.7$, $c=2.0$ and $c=3.3$ and found</p>
+<p>$$
+\langle E_0,E_0\rangle_{\natural}=-c^2,\qquad \langle E_0,E_\eta\rangle_{\natural}=0,\qquad \langle E_\eta,E_\eta\rangle_{\natural}=1 .
+$$</p>
+<p>That is Reading B's interval, $-c^2d{t'}^2+dr_x^2+dr_y^2+dr_z^2$, written as a frame. So the framework's own proposal is a diagonal, spatially rigid member of the general construction. The corpus says exactly this, and reading the two routes as rivals is too strong: the metric classes are nested, and what differs is the device, not the reach. The frame has sixteen functions and carries anything; the local scale has one function and carries one family.</p>
+<p><strong>The null tetrad is the idempotent structure, and I recomputed it.</strong> With $\tilde\Pi_1=\tfrac12(e_t+i\vec e_z)$ and $\tilde\Pi_2=\tfrac12(e_t-i\vec e_z)$ I found $\tilde\Pi_1^2=\tilde\Pi_1$, $\tilde\Pi_2^2=\tilde\Pi_2$ and $\tilde\Pi_1\tilde\Pi_2=0$. With $\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y)$ and $\vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y)$ both squares vanish. The tetrad then satisfies $\langle l,n\rangle_{*}=-1$ and $\langle m,\bar m\rangle_{*}=+1$, and the null relations follow. Null directions, the light cone, the quantum vacuum and the classical tetrad are one object. This is a unification inside the algebra, and no Clifford algebra is needed to state it.</p>
+<p><strong>The boundary is a measurement, not a defeat.</strong> Within the one-function class the corpus derives $\mathrm{Ric}_{00}=u\Delta_\Phi u$ and $\mathrm{Ric}_{ij}=-\partial_i\partial_j u/u$. Setting the spatial equations to zero makes $u$ affine in space, and I computed the full Riemann tensor for $u=\vec a(t)\cdot\vec r+b(t)$ with arbitrary functions and found every component zero. For $u=2+\sin x$ I found scalar curvature $2\sin x/(2+\sin x)$, which is $+\tfrac23$ at $x=\pi/2$ and vanishes at $x=0$ and $x=\pi$, and I recovered every component of the Ricci tensor from the corpus's closed form. So the class is curved in general and flat whenever it is vacuum: it cannot hold a vacuum wave or a vacuum exterior. A one-function class with one free direction falls short of a theory with two free metric functions, and the corpus states the shortfall rather than hiding it. That is a result.</p>
+<h2 id="what-the-transcript-contains">What the Transcript Contains</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Answers</th>
+<th>Subject</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The programme is algebraically sound and ontologically unusual</td>
+<td>appraisal, no geometric claim</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The imaginary time coordinate obstructs general relativity; tensor powers break the dimensional match</td>
+<td>correct, and the corpus says so with a reason</td>
+</tr>
+<tr>
+<td>3–4</td>
+<td>Tetrads, spin connections, the curved Dirac operator, the medium's local structure</td>
+<td>restated, with two slips</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The corpus's one-sided chiral pair preferred to a two-sided form</td>
+<td>correct</td>
+</tr>
+<tr>
+<td>6, 15</td>
+<td>Many qubits: the dimensional mismatch and the growth of rank</td>
+<td>correct, and weaker than the corpus</td>
+</tr>
+<tr>
+<td>7–8</td>
+<td>A question on per-particle tangent spaces, answered by fiber bundles</td>
+<td>not a claim about the corpus</td>
+</tr>
+<tr>
+<td>9–14</td>
+<td>The twelve products, causal structure, the two sesquilinear forms, the absent clock, measurement, density matrices</td>
+<td>the corpus's algebra, restated correctly</td>
+</tr>
+<tr>
+<td>16–18</td>
+<td>Hyperdeterminants, parallel transport, holonomy</td>
+<td>the one link to curvature, and its mechanism is inert</td>
+</tr>
+<tr>
+<td>19–20</td>
+<td>The Dirac–Maxwell correspondence under holonomy; the Proca carrier</td>
+<td>standard transcription, outside this file</td>
+</tr>
+</tbody>
+</table></div>
+<p>Five of the six curved-space answers are right. The sixth contains the three slips below.</p>
+<h2 id="the-three-slips">The Three Slips</h2>
+<p><strong>First, the tetrad does not make the complex structure local.</strong> The transcript says the tetrad "twists the local complex structure from point to point" and that the spin connection "dynamically adjusts where the factor of $i$ falls". In this framework the frame field is a real linear map. The imaginary direction stays the coefficient of $e_t$ in a fixed basis. My rotor-gauge check makes the point concrete: for $\tilde E_{\Phi,\mu}=\tilde Uu_\mu\tilde U^{*}$ with $\tilde U=\cos\theta+\sin\theta\,\vec e_x$ and $\theta=0.8x$, I found the Gram matrix constant and equal to $\mathrm{diag}(-1,1,1,1)$ at $x=0$ and at $x=1.3$. A point-dependent rotor moves no $i$ and produces no curvature. Curvature is the part of the frame that is not pure rotor gauge.</p>
+<p><strong>Second, the covariant derivative written as a commutator is wrong for the boosts.</strong> The recomputation above settles it: agreement for $\vec e_x$, disagreement for $i\vec e_x$. The three boost generators are Hermitian and the three rotation generators are not, so the commutator form keeps the rotations and drops the boosts. A gravitational connection written that way has lost its Lorentzian content. The correct form is the two-sided one.</p>
+<p><strong>Third, the projected derivative in the transcript is malformed.</strong> Its display contracts the tetrad index with itself while raising the manifold index, so the two labels cannot be separated and nothing follows from it as written. The defect is small and diagnostic: it shows a textbook formula copied rather than an algebra read, and the same slot confusion is what hides the two-sided action.</p>
+<p><strong>None of the three is a corpus error.</strong> Each is a slip in translating a corpus result into the language of tetrad gravity, and in two cases the translation reverses a sign of the algebra.</p>
+<h2 id="the-point-the-transcript-gets-right">The Point the Transcript Gets Right</h2>
+<p><strong>The diagnosis of the imaginary time coordinate is fair.</strong> The transcript calls $Q_t=i q'_t$ an $ict$-style convention and says it does not generalise cleanly to curved spacetime. The corpus records the same limitation in its own words: the convention is tied to the existence of a global inertial frame, and the algebra is fixed while its embedding into physical spacetime is not.</p>
+<p>Two things must be said in the framework's favour, because the transcript's phrasing invites the opposite conclusion.</p>
+<p>The convention is not a rotation of a metric. There is one metric, $\delta_{\mu\nu}=(1,1,1,1)$, with four coefficients $+1$. The minus of the interval is $i^2=-1$ acting on the time coefficient. The corpus refuses the word <em>signature</em> for that reason; what a form has is an <strong>inertia</strong>, here $(3,1)$.</p>
+<p>The repair is smaller than the transcript claims. The transcript's conclusion is that the fix is a tetrad localising the complex structure; the fix is a tetrad localising the frame and leaving the complex structure global. That is the construction the corpus has already built, and the local scale is its diagonal member.</p>
+<h2 id="the-multi-qubit-half-the-one-link-to-curvature-and-why-it-fails">The Multi-Qubit Half: The One Link to Curvature, and Why It Fails</h2>
+<p><strong>The only link between the multi-qubit half and curved space is the holonomy.</strong> Everything else in that half is flat-space algebra: the tensor product, the sector labels, the twelve products, the two sesquilinear forms, the concurrence. None of those sees a metric. The single point of contact with curvature is the statement that parallel transport around a closed loop acts on the fiber. The corpus owns that object: the Wilson loop is the path-ordered exponential of the connection, its trace is the gauge-invariant observable, and the article on it states the spin factor explicitly, with the holonomy taken in the representation of the spin rather than the fundamental one. So the link exists and the corpus supplies it.</p>
+<p><strong>The transcript's logic is right about gauge invariance.</strong> A polynomial in the amplitudes is invariant under a change of frame at a point, so a pointwise transformation cannot move it. Only the loop, which is gauge-covariant, can. That is correct and it is the standard reason local invariants are blind to a connection.</p>
+<p><strong>The invariant half is the corpus's, and the corpus is sharper.</strong> The alternating form of one qubit tensors to the concurrence, and I confirmed $\omega\otimes\omega(\psi,\psi)=2\det c$ on twenty random two-qubit states, with $C=1$ on the Bell state and $C=0$ on a product state. The parity rule then fixes the degree: the tensor square of the form is symmetric, and the tensor cube vanishes on the diagonal, so no degree-two invariant exists at three qubits and the three-qubit measures are quartic. I checked Cayley's quartic on the two standard states and found $1/4$ for the normalised GHZ and $0$ for $W$, with tangle $1$ and $0$. The transcript asks for "higher-degree invariants"; the corpus has computed them and explained why the degree jumps where it does.</p>
+<p><strong>The mechanism the transcript proposes cannot do the work it claims.</strong> This is the decisive point, and it is a counting one. The spin connection lives in the six-dimensional scalar-free subspace, so its holonomy is an element of $\mathrm{SL}(2,\mathbb{C})$ acting on one copy of $\mathbb{C}^{2}$. Two qubits on two worldlines therefore acquire the joint action $U_1\otimes U_2$, a product of local unitaries. I checked concurrence under exactly that action on two hundred random two-qubit states and the change was $8.9\times10^{-16}$, which is zero to machine precision. A product of local unitaries is the one class of operations that preserves every entanglement measure exactly. The transcript's "differential geometric twisting" is such a product, so it cannot degrade entanglement, and the sentence that says it does is wrong.</p>
+<p>The dimension count makes the obstruction structural rather than accidental. The real dimension of $\mathfrak{sl}(2,\mathbb{C})$ is $6$; the real dimension of $\mathfrak{u}(4)$ is $16$. One geometry gives one six-parameter holonomy per worldline, and never a generic two-qubit unitary. A single connected spacetime cannot generate an entangling operation, because all of its qubits ride the same connection and each carries its own copy of it.</p>
+<p><strong>What would actually degrade entanglement, and what it costs.</strong> Entanglement is invariant under every unitary. It falls only when degrees of freedom are discarded: the state is traced over an environment, and what remains is mixed. The Bell state reduced by tracing out one qubit has purity $\tfrac12$, and that is a genuine loss. In a gravitational field the physical version of this is the non-invariance of the vacuum: a Bogoliubov transformation mixes positive and negative frequencies, the notion of particle becomes observer-dependent, and a detector that traces over the modes it cannot see records a thermal state. That is the Unruh effect, and the Hawking effect is the same mechanism at a horizon.</p>
+<p>So the honest requirement is not "a Born weight" but a <strong>vacuum</strong>. A Bogoliubov transformation presupposes a Fock space with a distinguished vacuum, and the corpus constructs neither on a curved background. The transcript never mentions a vacuum, a Fock space, or a trace. Its mechanism is unitary and therefore inert, and the mechanism that works is the one the corpus has no machinery for.</p>
+<p><strong>The verdict on this half is therefore narrower than "placed".</strong> The invariant half is the corpus's, and sharper there. The holonomy half is the corpus's, and inert as the transcript uses it. The proposal is not refuted as physics, because the Unruh route is real. It is refuted as a consequence of the framework, because the framework's holonomy is a product of local unitaries and its vacuum is unbuilt.</p>
+<h2 id="what-stays-open">What Stays Open</h2>
+<p>The corpus's open list is already written in the gravity agendas. This file orders the transcript's proposal inside it.</p>
+<ol>
+<li><strong>An action for the frame or the connection.</strong> Nothing in the algebra selects one, and without one there is no field equation. Every other item waits on this one.</li>
+<li><strong>Coupling to sources.</strong> The framework's fields are four-vectors in $\mathbb{B}_{\Phi}$; the gravitating source is a symmetric rank-two object. No coupling has been written.</li>
+<li><strong>Maxwell on a curved background.</strong> The Dirac form is constructed on an inserted background. The Maxwell form is not, and the background dependence of the biquaternionic gradient is the stated obstacle.</li>
+<li><strong>The coupling ambiguity of the Lorentz group.</strong> The substituted and the varied Dirac equations differ, because the Lorentz generator does not commute with the generator basis operator. The corpus states the ambiguity and does not resolve it.</li>
+<li><strong>A vacuum and a Fock space on a curved background.</strong> The measure gap of the previous section, and with it the reason the Unruh and Hawking mechanisms have no home: a Bogoliubov transformation needs a distinguished vacuum to mix. It is the precondition for anything said about entanglement on a curved background.</li>
+<li><strong>Global and topological structure.</strong> The algebra is a point. Horizons, causal structure, singularities and the vanishing of the second Stiefel–Whitney class are outside it.</li>
+<li><strong>Empirical contact.</strong> Nothing in either half of the transcript advances it.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>The framework's curved-space ledger is strong, and it is closed at one end.</strong> The algebra carries any Lorentzian metric as a Gram matrix of four frame elements. The local group is a pointwise $\mathrm{SL}(2,\mathbb{C})$ and the counting closes. The covariant derivative is two-sided, and the corpus names the trap of writing it as a commutator. The curved Dirac operator squares to the Laplace–Beltrami operator plus a quarter of the Ricci scalar, inside the algebra. The null tetrad is the idempotent structure, recomputed here. The framework's own local scale is the diagonal member of the frame route, and its optical reading agrees with Gordon's metric. The one boundary is exact: within the one-function class, vacuum forces flatness.</p>
+<p><strong>The transcript restates that ledger, mostly correctly.</strong> Five of its six curved-space answers agree with the corpus. The three that do not are a misreading of the frame as a local complex structure, a commutator form of the derivative that drops the boosts, and a malformed projected derivative. No corpus article needs correction; eight curved-space statements were recomputed for this file and all eight hold.</p>
+<p><strong>One proposal is new, and its mechanism is inert.</strong> The holonomy account of entanglement is the only link between the multi-qubit half and curvature, and the link is real: the corpus owns the Wilson loop. But the holonomy is a product of local unitaries, $U_1\otimes U_2$, and I confirmed on two hundred random states that concurrence does not move under it by more than $8.9\times10^{-16}$. Entanglement falls only under a non-unitary channel, and the physical one in a gravitational field is the Unruh mechanism, which needs a vacuum and a Fock space. The corpus has neither, so the claim is not refuted as physics and is refuted as a consequence of the framework.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde E_{\Phi,\mu}$</td>
+<td>frame field, four elements of $\mathbb{B}_{\Phi}$, one per coordinate direction</td>
+</tr>
+<tr>
+<td>$g_{\mu\nu}$</td>
+<td>the Gram matrix of the frame, $\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}$</td>
+</tr>
+<tr>
+<td>$\vec\Gamma_\mu$</td>
+<td>spin connection, valued in the six-dimensional scalar-free subspace</td>
+</tr>
+<tr>
+<td>$D_\mu$</td>
+<td>the two-sided covariant derivative</td>
+</tr>
+<tr>
+<td>$\tilde F_\mu$</td>
+<td>the dual frame, the operator of the curved Dirac equation</td>
+</tr>
+<tr>
+<td>$i q'_t$</td>
+<td>the material time coefficient; the minus of the interval is $i^2=-1$</td>
+</tr>
+<tr>
+<td>$u$</td>
+<td>the local light speed $c$ in Reading B, one free function</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>the alternating two-form of one qubit, whose tensor powers carry the concurrence</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{\otimes n}\cong M_{2^{n}}(\mathbb{C})$</td>
+<td>the algebra of $n$ systems; the biquaternion algebra at $n=1$ and never again</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <a href="../articles_physics/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a>, <a href="../articles_physics/the-effective-optical-metric-of-the-local-complex-structure.html">The Effective Optical Metric of the Local Complex Structure</a>, <a href="../articles_physics/the-local-complex-structure-and-the-speed-of-light.html">The Local Complex Structure and the Speed of Light</a>, <a href="../articles_physics/frame-and-metric-conventions.html">Frame and Metric Conventions</a>.</p>
+<p>Multi-qubit: <a href="../articles_physics/beyond-one-qubit-what-b-tensor-b-would-require.html">The Multi-Qubit Boundary: What $\mathbb{B}\otimes\mathbb{B}$ Would Require</a>, <a href="../articles_physics/composite-systems-and-the-multi-qubit-extension.html">Composite Systems and the Multi-Qubit Extension: The Module Route and the Algebra Route</a>, <a href="../articles_physics/ai-physics-review.html">AI Physics Review</a>, §<em>The multi-qubit extension</em>.</p>
+<p>The frame of the argument: <a href="../articles_physics/why-complexify-spacetime.html">Why Complexify Spacetime?</a>, <a href="../articles_physics/the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html">The SO(4) Route to the Euclidean Frame: An Alternative to the Imaginary Time Coordinate</a>, <a href="../articles_maths/curvature-and-geodesics.html">Curvature and Geodesics</a>, <a href="conceptual-conventions.html">Conceptual Conventions</a>.</p>
+<p>Agendas, which are ledgers and never results: <a href="../articles_physics/the-einstein-field-equations-under-the-biquaternion-framework-a-research-agenda.html">The Einstein Field Equations under the Biquaternion Framework — A Research Agenda</a>, <a href="../articles_physics/cosmology-under-the-biquaternion-framework-a-research-agenda.html">Cosmology under the Biquaternion Framework — A Research Agenda</a>, <a href="../articles_physics/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a>.</p>
+<p>Source of the reading: <code>articles_internal/chat-to-split</code>, answers 1 to 6 for the curved half, 7 to 20 for the multi-qubit and field-theory material.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
