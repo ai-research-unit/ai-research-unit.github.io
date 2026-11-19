@@ -400,7 +400,7 @@ the quadruple $(\tilde\Pi_+,u_-,u_+,\tilde\Pi_-)$ is an eigenbasis of $L_{\tilde
 
 *Proof.* Since $\vec{Ζ}=-i\rho$ and $\rho\nu=\zeta$, we have $\vec{Ζ}\nu=-i\zeta$, so $\tilde\Pi_+\nu=\tfrac12(\nu-i\zeta)=u_-$ and $\tilde\Pi_-\nu=\tfrac12(\nu+i\zeta)=u_+$. From $\rho\nu=\zeta$ and $\rho\zeta=-\nu$, $\rho u_-=\tfrac12(\zeta+i\nu)=iu_-$ and $\rho u_+=\tfrac12(\zeta-i\nu)=-iu_+$. Left multiplication by $\tilde Q=Q_te_t+B\rho$ is $Q_t\mathrm{id}+BL_\rho$, which gives the stated eigenvalues.
 
-**The two cuts.** In the matrix model of §*The Matrix Model*, the first Fourier plane is the diagonal subspace and the second is the off-diagonal subspace. The spectral eigenspaces are the two rows: $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ is the first row, $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$ the second. Each row meets each Fourier plane in one line, so neither decomposition refines the other. The Fourier factorization keeps the planes and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue.
+**The two cuts.** In the matrix model of §*The 2×2 Matrix Model*, the first Fourier plane is the diagonal subspace and the second is the off-diagonal subspace. The spectral eigenspaces are the two rows: $E_+=\operatorname{span}\{\tilde\Pi_+,u_-\}$ is the first row, $E_-=\operatorname{span}\{u_+,\tilde\Pi_-\}$ the second. Each row meets each Fourier plane in one line, so neither decomposition refines the other. The Fourier factorization keeps the planes and applies an ordinary complex transform to each; the spectral decomposition regroups the four lines by eigenvalue.
 
 ### The Four Labels
 
@@ -415,7 +415,7 @@ Each basis vector is a joint eigenvector of four operators: left and right multi
 
 The identity $\tilde Q=Q_te_t+iB\vec{Ζ}$ explains the table: the left value is $Q_t+iBs$, the right value is $Q_t+iBt$, where $s$ and $t$ are the two signs. The two gradings, by left index and by right index, are independent, and the four rows are their four combinations.
 
-### The Matrix Model
+### The 2×2 Matrix Model
 
 Assign the four basis vectors to the matrix units by
 

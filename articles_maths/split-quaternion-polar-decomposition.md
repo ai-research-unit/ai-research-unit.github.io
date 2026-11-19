@@ -65,7 +65,7 @@ so $1+\vec e_y$ and $1-\vec e_y$ are nonzero zero divisors and $\langle 1\pm \ve
 
 The polar decomposition is a statement about the two invertible classes, and the null cone is exactly its domain of failure. This is the first appearance in the series of a decomposition whose domain is not the whole of the nonzero elements, and it is worth noting that the failure here is the mildest one: it is a single cone, of codimension one, and on it the decomposition fails by degeneracy rather than by contradiction, since $\tilde q \tilde q_{\tau}$ becomes positive semidefinite instead of positive definite.
 
-### The Matrix Model
+### The 2×2 Matrix Model
 
 Under the isomorphism $\mathsf{M}_2 : \mathbb{H}_{\mathrm{spl}} \to M_2(\mathbb{R})$ of *Split-Quaternion Algebra*, fixed on the basis by
 

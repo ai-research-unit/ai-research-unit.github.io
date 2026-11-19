@@ -218,7 +218,7 @@ with $\Pi_\pm$ the two eigenprojectors, which are Hermitian idempotents of trace
 
 ### The Angles
 
-The diagonalising $\tilde u$ is a rotation, and its angle and axis are read from $\tilde H$'s vector part: the axis of $\tilde u$ is orthogonal to $\hat u$, and its angle is fixed by the relative phase of the two eigenvectors. The block uses the diagonalisation only through the eigenvalues, and the angle is material for *The Spectrum Does Not Determine the Frame*.
+The diagonalising $\tilde u$ is a rotation, and its angle and axis are read from $\tilde H$'s vector part: the axis of $\tilde u$ is orthogonal to $\hat u$, and its angle is fixed by the relative phase of the two eigenvectors. The block uses the diagonalisation only through the eigenvalues, and the angle is material for *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined*.
 
 ### The Physical Reading
 

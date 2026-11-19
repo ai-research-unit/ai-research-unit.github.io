@@ -73,8 +73,8 @@
 
 | subsection | from | the entry |
 | --- | --- | --- |
-| I.1 | The Algebra of Biquaternions, $8$ | The Element, the Six Subspaces and the Two Ledgers |
-| I.2 | Matrix Representations, $4$ | The AXF Matrices: Axis-Free, Integer Entries; *The Pauli and Gamma Matrices: the Direction in the Display*, a companion |
+| I.1 | The Algebra of Biquaternions, $8$ | The Algebraic Vocabulary: Element, Conjugations, Six Subspaces and Two Ledgers |
+| I.2 | Matrix Representations, $4$ | The AXF Matrices: Axis-Free, Integer Entries; *The Pauli Pair and the Gamma Frame: Which Statements Survive Conjugation*, a companion |
 | I.3 | The Idempotents, the Ideals and the Peirce Decomposition, $7$ | Idempotents, Ideals and Observables |
 | I.4 | The Modules, $5$ | The Modules: What the Algebra Acts On |
 | I.5 | The Spectral Theory, $6$ | The Spectrum and the Two Modes |
@@ -84,7 +84,7 @@
 | I.9 | Algebra with the N Norm, $5$ | The N Norm: Mass, Angle and the Cone |
 | I.10 | The Spectral Strata and the N Norm, $6$ | The Partition: Two Invariants and Four Regimes, and the four regime entries |
 | I.11 | Algebra with the K Norm, $3$ | The K Norm and the Indefinite Structure |
-| I.12 | Remarkable Subspaces and the Forms, $2$ | The Two Sectors: Split and the Four Bridges; Four-Vectors and the Interval; States, Observables and the Born Weight; *The Fubini–Study Geometry and the Biquaternion Norm*, a companion |
+| I.12 | Remarkable Subspaces and the Forms, $2$ | The Two Sectors: The Hermitian Split and the Four Bridges; Four-Vectors and the Interval; States, Observables and the Born Weight; *The Fubini–Study Geometry and the Biquaternion Norm*, a companion |
 | I.13 | Operators, $29$ | The Operators of the Algebra; *Biquaternion Physical Interpretation of Operator Chirality*, a companion |
 
 **I.2 is two entries, I.10 is five and I.12 is four.** The two entries of I.2 split the section by display and not by size: the axis-free entry reads the frame that chooses no direction, and the companion reads the Peirce frame, the compression at size two and the gamma set, with the readings numbered continuously from I.2.a to I.2.q across the pair.  The partition entry states the three-level theorem — the partition of the algebra, the characterisation of each stratum by a geometric condition on an element, and the sectors as the strata particularised to the material closure — and then one entry to each regime. I.12 states the two sectors as two geometries, then the four-vector with its interval and its Lorentz action, then the state space with its observables and its Born weight, and the Fubini–Study entry alongside it reads the metric that the state space carries.
@@ -368,7 +368,7 @@
 
 **The archive is not a second reading of the subject.** The derived entries above are the category. The archived articles are kept for two reasons: their readings are being carried over one at a time, and a reader who wants the older and longer treatment of one point can still find it. An archived article is retired once its readings have been carried into an entry and that entry has been checked against it.
 
-**Three articles are not archived, because they survive.** *The Two Sectors: Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Group of Invertibles, the Cone and the Orders* is taken unchanged as II.1. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
+**Three articles are not archived, because they survive.** *The Two Sectors: The Hermitian Split and the Four Bridges* is taken unchanged as the first entry of I.12. *The Group of Invertibles, the Cone and the Orders* is taken unchanged as II.1. This introduction is rewritten in place, because its subject is unchanged and its content is the new structure.
 
 ## The Limits of the Category
 

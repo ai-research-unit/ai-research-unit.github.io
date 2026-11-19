@@ -289,6 +289,6 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the current as a pairing.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the spin's transport in a background.
 - [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), for the spin-half-fluid reading of the four brackets.
-- [The Gauge Extension of the Central Phase: Why the Centre Caps the Group](the-gauge-extension-of-the-central-phase-why-the-centre-caps-the-group.html), for the localization that produces the coupling.
+- [The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html), for the localization that produces the coupling.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the covariant derivative in geometric algebra.
 - Takehiko Takabayasi, "Relativistic hydrodynamics of the Dirac matter," *Progress of Theoretical Physics Supplement* **4** (1957) 1–80, for the spin-half-fluid variables and their underdetermination.

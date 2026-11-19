@@ -80,7 +80,7 @@ it is surjective onto $S^3$, its kernel is the union of the spheres $2\pi kS^2$,
 
 **Remark (the two readings of the contrast).** The real isometry group of $P$ is the large non-compact $O(1,3)$ of [The P Isometry Group and Its Cartan Decomposition](the-p-isometry-group-and-its-cartan-decomposition.html), and almost none of it commutes with the algebra; the real isometry group of $N$ is the compact $O(4)$, and its $\mathbb{H}$-linear part is the versor group. **The definite form has a unitary group of the algebra and it is the versors; the indefinite form has none, and the contrast is the sharpest measure of what the definite form does for the algebra.**
 
-## The Matrix Model and $\mathrm{U}(2)$
+## The 2×2 Matrix Model and $\mathrm{U}(2)$
 
 **Theorem (the intersection with $\mathrm{U}(2)$).** In the model $\mathbb{H}\subset M_2(\mathbb{C})$, the versor group is $\mathbb{H}\cap U(2)=SU(2)$, and $U(2)$ is the central product of $SU(2)$ with the circle of the scalar phases, a circle that leaves the algebra.
 

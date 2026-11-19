@@ -32,7 +32,7 @@ $$
 
 **Remark (the two operations are of different kinds).** Addition is defined pointwise, so it uses only the abelian group of $V$; composition uses the fact that the source and the target of a linear map coincide, and it is not defined for $\operatorname{Hom}_F(V,W)$ when $V \neq W$. The algebra $E$ is thus the first place in the corpus where a linear space carries a second operation, and the multiplication records the composition of the structure maps of $V$ rather than any extra datum on $V$.
 
-### The Matrix Model
+### The 2×2 Matrix Model
 
 Fix an ordered basis $v_1,\dots,v_n$ of $V$ and let $E_{ij}$ be the endomorphism sending $v_j$ to $v_i$ and every other basis vector to $0$. Its matrix has a single $1$ in position $(i,j)$, so the assignment $A \mapsto [A]$ is an isomorphism of algebras
 

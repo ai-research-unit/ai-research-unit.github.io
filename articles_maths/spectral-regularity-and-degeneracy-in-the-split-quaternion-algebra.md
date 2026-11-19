@@ -124,7 +124,7 @@ $$
 
 **Corollary (the cone is the scalar line plus the defect).** The spectral cone is the disjoint union of the scalar line $\{\vec v=0\}$ and $\mathcal D$. On the scalar line $L_q=t\,\mathrm{id}$ is semisimple with minimal polynomial $\lambda-t$; on $\mathcal D$ the element is defective. Spectral degeneracy is therefore not defect: the scalar line is degenerate and semisimple.
 
-## The Matrix Model and the Singular Locus
+## The 2×2 Matrix Model and the Singular Locus
 
 **Theorem (the matrix model).** The assignment
 

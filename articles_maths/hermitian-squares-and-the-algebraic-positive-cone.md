@@ -90,7 +90,7 @@ because $(yx)^{*} = x^{*}y^{*}$. The left side is a Hermitian square, hence an e
 
 **Remark.** The criterion reduces properness to a single additive map that is strictly positive on the nonzero squares. There is no such map for free: the existence of one is exactly what the non-proper examples below lack, and the maps of the criterion are the positive functionals of the algebra that are strict on the nonzero squares, of which one instance is computed below. This is the precise sense in which no order and no inequality are available at this layer: the cone and the preorder it defines are supplied by the algebra alone, but properness is a condition on the cone and not a theorem about it, so a genuine order is present only when an additional positivity is supplied, and the general sesqualgebra carries none.
 
-## The Matrix Model and Two Non-Proper Examples
+## The 2×2 Matrix Model and Two Non-Proper Examples
 
 ### The Conjugate Transpose is Proper
 

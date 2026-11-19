@@ -886,6 +886,6 @@ $$
 - [The Rest Frame and the Exceptional Point](the-rest-frame-and-the-exceptional-point.html), for the stratum on which the modulus exists and the eigenbasis does not.
 - [Mass in Motion: The Region of Both Invariants](the-region-of-mass-in-motion.html), for the open stratum and the two-mode picture.
 - [The Partition: Two Invariants and Four Regimes](the-partition-two-invariants-and-four-regimes.html), for the arrangement of the four strata and the statement that the two conditions are independent.
-- [From the Spin to the Carriers and the Closures](from-the-spin-to-the-carriers-and-the-closures.html), for the reach of each carrier on each stratum.
+- [Rotor, Spin, Pair and Carrier: A Survey of the Closure Block](rotor-spin-pair-and-carrier-a-survey-of-the-closure-block.html), for the reach of each carrier on each stratum.
 - [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the cone whose apex is this stratum's material share.
 - [Norm and Pairing Conventions](norm-and-pairing-conventions.html), for the letters, the inertias and the two norms used throughout.

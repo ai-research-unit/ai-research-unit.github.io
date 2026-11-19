@@ -81,7 +81,7 @@ A reviewer must not "correct" the assignment by making the three images real, an
 
 It is an isomorphism of associative algebras, and it also carries the corpus's involution ${}^{*}$: the star of an element is the conjugate transpose of its image, $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$. Conjugating the entries on their own is a different operation and is no involution of the algebra: it negates the images of $\vec e_x$ and $\vec e_z$ and leaves $\mathsf{M}_2(\vec e_y)$, whose array is real, untouched, so it maps no element to an element. The remaining conjugations $\natural$, $\bar{\phantom{Q}}$ and ${}^{\flat}$ are carried by explicit formulas, which *Element and Operator Representations: The Three Actions* records and this block uses.
 
-The isomorphism is also not an isometry of the two quadratic forms that live on the two sides. On the algebra side the form is the biquaternion norm $N$. On the matrix side it is the determinant. Those two agree, which is the next statement, but neither is the Minkowski interval; that distinction is the subject of *The Matrix Model: What It Sees and What It Hides*.
+The isomorphism is also not an isometry of the two quadratic forms that live on the two sides. On the algebra side the form is the biquaternion norm $N$. On the matrix side it is the determinant. Those two agree, which is the next statement, but neither is the Minkowski interval; that distinction is the subject of *The 2×2 Matrix Model: What It Computes and What It Cannot Show*.
 
 ### The Determinant Is the Norm
 
@@ -175,7 +175,7 @@ The statement matters because the adjoint action of the group on the algebra is 
 
 ### What the Centre Does Physically
 
-The two central directions are the scale and the phase of a biquaternion, $r$ and $e^{i\theta_{\mathrm{pha}}}$. Neither is a Lorentz transformation. They are the two factors that must be divided out before a biquaternion is a frame change, which is why *A Frame Is a Boost Times a Rotation: The Cartan Word* removes them first and only then splits.
+The two central directions are the scale and the phase of a biquaternion, $r$ and $e^{i\theta_{\mathrm{pha}}}$. Neither is a Lorentz transformation. They are the two factors that must be divided out before a biquaternion is a frame change, which is why *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* removes them first and only then splits.
 
 ## The Complexification
 

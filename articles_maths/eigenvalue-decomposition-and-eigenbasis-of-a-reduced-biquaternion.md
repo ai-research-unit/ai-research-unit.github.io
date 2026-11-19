@@ -366,7 +366,7 @@ A general element $\breve Q_2=\zeta_++\zeta_-$ is not a spinor of one Peirce cop
 
 **One complex component per Peirce copy.** The base field is $\mathbb{C}$, so each spinor space is a one-dimensional complex vector space, of real dimension two. A spinor has a single complex component, not a pair: the two components displayed above belong to the two different chiralities. The biquaternion case is the one in which a single spinor space is two-dimensional over $\mathbb{C}$ and therefore carries a pair of complex components. The extra dimension there is supplied by the nilpotent direction $\vec\Upsilon_\pm$, which is absent here.
 
-### The Matrix Model and the Two Columns
+### The 2×2 Matrix Model and the Two Columns
 
 **In the eigenbasis the Peirce matrix of every element is diagonal, the two diagonal entries are the spinor coordinates, and the two columns are the two spinor spaces.**
 

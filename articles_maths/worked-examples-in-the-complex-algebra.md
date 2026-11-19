@@ -127,7 +127,7 @@ $$
 
 the Pythagorean instance of the definite decomposition; for $Q_2$, $\langle Q_{2,+}\rangle_{*} + \langle Q_{2,-}\rangle_{*} = 1 + 4 = 5 = \langle Q_2\rangle_{*}$.
 
-## The Matrix Model, Worked
+## The 2×2 Matrix Model, Worked
 
 Multiplication by an element is an $\mathbb{R}$-linear endomorphism of $\mathbb{C}$, and in the basis $1$, $i$ it is the Cayley matrix of *Complex Regular Element Representation*. The matrices of the two worked elements are
 

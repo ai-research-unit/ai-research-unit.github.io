@@ -6,7 +6,7 @@ Frames can be rotated, boosted, sheared, or screwed. The four words name the fou
 
 This article states the classification, gives the eigenvalues of each kind, says what each kind does to a frame and to the light cone, writes the four in the algebra, and isolates the two exceptional cases at $\tau=\pm2$.
 
-The article assumes *The Exponential Map from Algebra to Group* for the parametrisation, *When the Axes Commute: The Normal Transformations* for the normal class, *The Spectrum Does Not Determine the Frame* for what the spectrum does and does not fix, and *Why Boosts Are Not Additive: The Bracket Table* for the non-commutativity that produces the fourth kind.
+The article assumes *The Exponential Map from Algebra to Group* for the parametrisation, *When the Axes Commute: The Normal Transformations* for the normal class, *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined* for what the spectrum does and does not fix, and *Composition of Two Boosts: The Commutator Table and Non-Additivity* for the non-commutativity that produces the fourth kind.
 
 ## The Classifier
 
@@ -220,4 +220,4 @@ The Lorentz group has four conjugacy classes, classified by the trace $\tau=2Q_t
 - R. Penrose and W. Rindler, *Spinors and Space-Time*, Vol. 1, Cambridge University Press, 1984 — the action of Lorentz transformations on the celestial sphere and the fixed null directions.
 - *The Exponential Map from Algebra to Group* — the chart whose cut locus is the parabolic class.
 - *When the Axes Commute: The Normal Transformations* — the normal class, of which the loxodromic case is the non-degenerate part.
-- *The Spectrum Does Not Determine the Frame* — what the eigenvalues of these four classes do and do not fix.
+- *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined* — what the eigenvalues of these four classes do and do not fix.

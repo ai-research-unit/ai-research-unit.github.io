@@ -6,7 +6,7 @@ The set of elements of zero norm is the null cone. In the algebra it is the dete
 
 This article describes the cone three times — complex, real, and projected — states the spinor factorisation that makes the projective description work, and explains why the massless limit is a boundary and not a special case.
 
-The article assumes *The Isomorphisms and Their Dimensions* for the determinant, *The Four Kinds of Frame Transformation* for the parabolic class, which is the cone's own class, and *The Matrix Model: What It Sees and What It Hides* for the complex form. It hands the massive orbits to *Wigner's Classification: Two Casimirs, Three Orbits* and the little group of a null momentum to *The Little Group of a Null Momentum: $E(2)$*.
+The article assumes *The Isomorphisms and Their Dimensions* for the determinant, *The Four Kinds of Frame Transformation* for the parabolic class, which is the cone's own class, and *The 2×2 Matrix Model: What It Computes and What It Cannot Show* for the complex form. It hands the massive orbits to *Wigner's Classification: Two Casimirs, Three Orbits* and the little group of a null momentum to *The Little Group of a Null Momentum: $E(2)$*.
 
 ## The Null Cone
 

@@ -308,7 +308,7 @@ $$
 
 so a gauge field with values in $\mathfrak{su}(2)$ is a connection on the algebra itself, and instantons and solitons follow from the same product ([Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html), [Instantons and Solitons in Biquaternionic Form](instantons-and-solitons-in-biquaternionic-form.html)).
 
-The ceiling is exact and it is stated as a result rather than a hope. The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$, so colour with three values is outside the carrier ([The Gauge Group Ceiling](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html)). The weak isospin fits; the strong interaction does not, and no construction inside the algebra supplies the third colour.
+The ceiling is exact and it is stated as a result rather than a hope. The algebra reaches $\mathrm{SU}(2)$ and not $\mathrm{SU}(3)$, so colour with three values is outside the carrier ([Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html)). The weak isospin fits; the strong interaction does not, and no construction inside the algebra supplies the third colour.
 
 ### Antimatter
 
@@ -461,7 +461,7 @@ The corpus articles, in the order in which this article uses them:
 - [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html). The cone, the phase winding, and the quantum of circulation.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html). The Madelung pair and its relativistic form.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html). The direction an array display writes, and the axis-free display.
-- [The Gauge Group Ceiling](the-gauge-group-ceiling-why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). $\mathrm{SU}(2)$ from the vector units, and why colour is outside.
+- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). $\mathrm{SU}(2)$ from the vector units, and why colour is outside.
 - [The KMS Condition and the Biquaternion Framework](the-kms-condition-and-the-biquaternion-framework.html). Imaginary time as a coordinate.
 - [Coarse-Graining and the Biquaternion Entropy Functional](coarse-graining-and-the-biquaternion-entropy-functional.html). States, entropy, and the null cone.
 - [Canonical Quantization of the Biquaternion Dirac Field](canonical-quantization-of-the-biquaternion-dirac-field.html). The anticommutator and the antiparticles.

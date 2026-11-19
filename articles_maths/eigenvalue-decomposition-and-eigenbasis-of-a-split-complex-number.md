@@ -399,7 +399,7 @@ S_-^{\mathbb{C}}=\mathbb{C}\Pi_-.
 $$
 Each is one-dimensional over $\mathbb{C}$ and two-dimensional over $\mathbb{R}$. This complexified form is the one that matches the reduced-biquaternion article, where the base field is already $\mathbb{C}$.
 
-### The Matrix Model and the Two Columns
+### The 2×2 Matrix Model and the Two Columns
 
 **In the eigenbasis the Peirce matrix of every element is diagonal, the two diagonal entries are the spinor coordinates, and the two columns are the two spinor spaces.**
 

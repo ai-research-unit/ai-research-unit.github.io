@@ -214,7 +214,7 @@ because $\langle\tilde U^{*}\rangle_{\natural}=\overline{\langle\tilde U\rangle_
 | --- | --- | --- | --- | --- | --- |
 | $N$ | $0.160000$ | $0.199375$ | $0.227500$ | $0.244375$ | $0.250000$ |
 
-**That is why the locus is inert in the precise sense and not in a vague one.** The algebra does not forbid approaching the boundary; it forbids reaching it by any reversible motion, because the only approach is a non-invertible map and no inner derivation generates one. The companion *The Thermal Path Is Not an Orbit* draws the thermodynamic consequence; the statement here is algebraic, and it is a statement about the sign of $N$.
+**That is why the locus is inert in the precise sense and not in a vague one.** The algebra does not forbid approaching the boundary; it forbids reaching it by any reversible motion, because the only approach is a non-invertible map and no inner derivation generates one. The companion *The Gibbs Path Is Not a Group Orbit* draws the thermodynamic consequence; the statement here is algebraic, and it is a statement about the sign of $N$.
 
 ### Why the cone is not a causal boundary here
 

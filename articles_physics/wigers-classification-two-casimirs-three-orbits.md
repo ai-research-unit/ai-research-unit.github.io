@@ -164,7 +164,7 @@ $$
 U(\Lambda)|p,\sigma\rangle=\sum_{\sigma'}D_{\sigma\sigma'}\bigl(W(\Lambda,p)\bigr)|\Lambda p,\sigma'\rangle,
 $$
 
-with $W(\Lambda,p)=s(\Lambda p)^{-1}\Lambda s(p)$ the Wigner rotation — the element of the little group that the transformation produces. That element is exactly the Thomas–Wigner rotation of *Why Boosts Are Not Additive: The Bracket Table*, and here it is the cocycle that makes the representation work.
+with $W(\Lambda,p)=s(\Lambda p)^{-1}\Lambda s(p)$ the Wigner rotation — the element of the little group that the transformation produces. That element is exactly the Thomas–Wigner rotation of *Composition of Two Boosts: The Commutator Table and Non-Additivity*, and here it is the cocycle that makes the representation work.
 
 ## The Physical Labels
 
@@ -231,4 +231,4 @@ Wigner's classification reduces a particle to an orbit of the Lorentz group in m
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1, Cambridge University Press, 1995, §2.5 — the construction in the physicist's notation, with the Wigner rotation explicit.
 - Y. Ohnuki, *Unitary Representations of the Poincaré Group and Relativistic Wave Equations*, World Scientific, 1988 — the three little groups and the induced modules written out.
 - *$P$, $T$ and the Representation Labels* — the Casimirs whose values appear here.
-- *Why Boosts Are Not Additive: The Bracket Table* — the Thomas–Wigner rotation that becomes the cocycle.
+- *Composition of Two Boosts: The Commutator Table and Non-Additivity* — the Thomas–Wigner rotation that becomes the cocycle.

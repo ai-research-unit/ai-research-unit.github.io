@@ -12,7 +12,7 @@ The elements of the group that can be written this way are exactly the **normal*
 
 This article proves the criterion, describes the normal class, counts its dimensions, computes the spectra, and treats the two exceptional cases: the identity and the half-turn, whose rotor is a pure real quaternion.
 
-The article assumes *A Frame Is a Boost Times a Rotation: The Cartan Word* for the word and its uniqueness, *The Spectrum Does Not Determine the Frame* for the spectral counting, and *The Two Commuting Complex Triples* for the split of the algebra. It feeds *The Four Kinds of Frame Transformation*, which classifies the words the block meets.
+The article assumes *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* for the word and its uniqueness, *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined* for the spectral counting, and *The Two Commuting Complex Triples* for the split of the algebra. It feeds *The Four Kinds of Frame Transformation*, which classifies the words the block meets.
 
 ## The Commutation Condition
 
@@ -141,7 +141,7 @@ The converse requires one extra fact: that the two factors are functions of the 
 
 ### What Fails Without Normality
 
-For a general element there is no orthonormal eigenbasis and no unitary diagonalisation, and the spectrum is not enough even to describe the element's action. *The Spectrum Does Not Determine the Frame* gives the counting and exhibits the failure; the present article supplies the exact class in which the failure does not occur.
+For a general element there is no orthonormal eigenbasis and no unitary diagonalisation, and the spectrum is not enough even to describe the element's action. *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined* gives the counting and exhibits the failure; the present article supplies the exact class in which the failure does not occur.
 
 ### The Class Is Not a Subgroup
 
@@ -232,6 +232,6 @@ A boost and a rotation commute exactly when their axes are collinear, or when on
 - R. A. Horn and C. R. Johnson, *Matrix Analysis*, 2nd ed., Cambridge University Press, 2012 — normal matrices, the spectral theorem, and the unitary diagonalisation.
 - S. Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press, 1978 — the symmetric space of boosts and the role of commuting Cartan directions.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1, Cambridge University Press, 1995, §2.4 — the special case of a boost and a rotation about a common axis, which is the case in which the Wigner rotation vanishes.
-- *A Frame Is a Boost Times a Rotation: The Cartan Word* — the word whose factors are tested here.
-- *The Spectrum Does Not Determine the Frame* — what the spectrum of a normal element does and does not fix.
+- *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* — the word whose factors are tested here.
+- *The Spectrum of a Lorentz Rotor: What Two Eigenvalues Leave Undetermined* — what the spectrum of a normal element does and does not fix.
 - *The Four Kinds of Frame Transformation* — the classification of the words into the four cases the block uses.

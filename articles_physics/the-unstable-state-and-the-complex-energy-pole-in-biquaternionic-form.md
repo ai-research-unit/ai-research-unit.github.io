@@ -327,7 +327,7 @@ The article therefore states an approximation with its window, not a law. It mak
 
 ## Open Questions
 
-**1. Is there an algebraic home for the decaying state?** The pole is a central complex number, but the state that carries it is not a normalisable module element once the continuum is present. Whether the framework's direct-integral description of the module, used in *The Biquaternion Framework and the Canonical Commutation Relation: Independence, Not a Defect* to carry the continuum, can give the decaying state an algebraic home as a distributional element is not settled here.
+**1. Is there an algebraic home for the decaying state?** The pole is a central complex number, but the state that carries it is not a normalisable module element once the continuum is present. Whether the framework's direct-integral description of the module, used in *The Biquaternion Framework and the Canonical Commutation Relation: An Independent Axiom* to carry the continuum, can give the decaying state an algebraic home as a distributional element is not settled here.
 
 **2. Is the decay rate a Lyapunov exponent?** The decay rate and the Lyapunov exponent of *The Lyapunov Exponent and Information Loss in the Biquaternion Framework* are both exponential loss rates of an initial condition. Whether they are the same quantity in the framework, or two limits of one, is not known.
 

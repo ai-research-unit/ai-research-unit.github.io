@@ -152,7 +152,7 @@ If $\Upsilon$ were both nilpotent and idempotent, then $\Upsilon^{2}=\Upsilon$ a
 
 The conjugation is an automorphism and fixes the only square-zero element: $\overline{0}=0$. It therefore maps the nilpotent cone to itself. The statement is vacuous for the nonzero nilpotents, but it is the statement that the nilpotent set is invariant under the involution, as it must be for any set defined by a polynomial equation with real coefficients.
 
-### The Matrix Model
+### The 2×2 Matrix Model
 
 In the regular matrix model
 

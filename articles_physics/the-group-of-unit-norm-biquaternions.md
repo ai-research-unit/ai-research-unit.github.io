@@ -77,7 +77,7 @@ $$
 
 and the pair is unique. The Hermitian factor is a positive Hermitian matrix of determinant one; the unitary factor is a $*$-unitary biquaternion of determinant one, which is to say a unitary $2\times2$ matrix of determinant one.
 
-Three facts about this description are needed later, and each is proved in *A Frame Is a Boost Times a Rotation: The Cartan Word*.
+Three facts about this description are needed later, and each is proved in *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation*.
 
 - The Hermitian factor is a pure boost: it is $\tilde U_{\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$.
 - The unitary factor is a pure rotation: it is $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$.
@@ -229,4 +229,4 @@ The group of unit-norm biquaternions is the set of elements whose quaternionic n
 - S. Lang, *$SL_2(\mathbb{R})$*, Addison-Wesley, 1975 — the same group and its decompositions treated as a working object, with the topology done explicitly.
 - P. Lounesto, *Clifford Algebras and Spinors*, 2nd ed., Cambridge University Press, 2001 — the unit-norm biquaternions as a Clifford group and the identification with $SL(2,\mathbb{C})$.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations*, §*The Group of Unit-Norm Biquaternions* — the survey's own statement of the closure, the inverse and the dimension.
-- *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, *The Exponential Map from Algebra to Group*, *A Frame Is a Boost Times a Rotation: The Cartan Word* — the three articles that take this group apart.
+- *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form*, *The Exponential Map from Algebra to Group*, *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* — the three articles that take this group apart.

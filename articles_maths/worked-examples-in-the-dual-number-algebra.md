@@ -197,7 +197,7 @@ $$
 (q + \varepsilon q')\Bigl(\frac{1}{q} - \frac{q'}{q^2}\varepsilon\Bigr) = 1 + \Bigl(-\frac{q'}{q} + \frac{q'}{q}\Bigr)\varepsilon = 1.
 $$
 
-## The Matrix Model and the Shear
+## The 2×2 Matrix Model and the Shear
 
 ### The Matrix of a Worked Product
 

@@ -8,7 +8,7 @@
 
 **The entry also states what an array is not.** The operator is unique and frame-free; its matrix is one representative of a conjugacy class. Every invariant is read from the operator, and the array is a service to the reader and a diagnostic of the frame.
 
-**Boundaries.** The basis, the two families, the stitch, the ten properties, the uniqueness among sparse frames, the product, the trace, the determinant and the four norms are *$M_4(\mathbb{C})$ Axis-Free Representation*; the general theory of the two families and of the change of frame is *Families of Matrix Representations*; the six subspaces and the three decompositions are *Subspaces and Decompositions of the Biquaternion Algebra*. The Peirce display — the root, the idempotents, the tensor product and the compression at size two — is *The Pauli and Gamma Matrices: the Direction in the Display*, and why the corpus displays in this basis rather than in that one is *Why AXF Matrices instead of Pauli and Gamma Matrices*. The spectrum is named here because the matrix invariants carry it, and it is read in *The Spectrum and the Two Modes*. No dynamics, no Clifford algebra and no gamma matrix appears below.
+**Boundaries.** The basis, the two families, the stitch, the ten properties, the uniqueness among sparse frames, the product, the trace, the determinant and the four norms are *$M_4(\mathbb{C})$ Axis-Free Representation*; the general theory of the two families and of the change of frame is *Families of Matrix Representations*; the six subspaces and the three decompositions are *Subspaces and Decompositions of the Biquaternion Algebra*. The Peirce display — the root, the idempotents, the tensor product and the compression at size two — is *The Pauli Pair and the Gamma Frame: Which Statements Survive Conjugation*, and why the corpus displays in this basis rather than in that one is *Why AXF Matrices instead of Pauli and Gamma Matrices*. The spectrum is named here because the matrix invariants carry it, and it is read in *The Spectrum and the Two Modes*. No dynamics, no Clifford algebra and no gamma matrix appears below.
 
 ## The Source Table
 
@@ -284,7 +284,7 @@ $$
 
 ## The Limits
 
-**The entry reads one family and not the algebra.** It states what the axis-free display is worth and what it costs. The Peirce display, the root, the idempotents and the compression at size two belong to *The Pauli and Gamma Matrices: the Direction in the Display*, and the argument that the corpus should display in this basis belongs to *Why AXF Matrices instead of Pauli and Gamma Matrices*.
+**The entry reads one family and not the algebra.** It states what the axis-free display is worth and what it costs. The Peirce display, the root, the idempotents and the compression at size two belong to *The Pauli Pair and the Gamma Frame: Which Statements Survive Conjugation*, and the argument that the corpus should display in this basis belongs to *Why AXF Matrices instead of Pauli and Gamma Matrices*.
 
 **The entry does not read the spectrum.** The eigenvalue pair is named because the matrix invariants carry it, and the spectral theory is the subject of its own entry. What is established here is only that the pair is the same at both sizes and that the multiplicity is the module's dimension.
 
@@ -330,7 +330,7 @@ $$
 - [Families of Matrix Representations](../articles_maths/families-of-matrix-representations.html), for the two families in a general frame and the change of frame.
 - [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and the three decompositions.
 - [Matrix Representations Conventions](../articles_maths/matrix-representations-conventions.html), for the naming of the basis and of the family.
-- [The Pauli and Gamma Matrices: the Direction in the Display](the-pauli-and-gamma-matrices-the-direction-in-the-display.html), for the Peirce display, the gamma frame and what those displays print.
+- [The Pauli Pair and the Gamma Frame: Which Statements Survive Conjugation](the-pauli-pair-and-the-gamma-frame-which-statements-survive-conjugation.html), for the Peirce display, the gamma frame and what those displays print.
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](why-axf-matrices-instead-of-pauli-and-gamma-matrices.html), for the argument that this basis is the one to display in.
 - [The Operators of the Algebra](the-operators-of-the-algebra.html), for the two-sided operators, the five pictures and the mass coupling at operator level.
 - [The Four Forms and the Four Norms](the-four-forms-and-the-four-norms.html), for the four norms in the algebra rather than in the array.

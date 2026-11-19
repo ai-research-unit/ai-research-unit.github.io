@@ -217,7 +217,7 @@ by the grade theorem of *The Geometric Product and the Grade Decomposition*. If 
 
 **Remark.** The examples show why the projectors of a homogeneous element are not usually homogeneous. The scalar part of a projector is an idempotent of the base field, hence $0$ or $1$; the higher-grade parts are constrained by the eigenvalue equation and by the resolution of the identity, and they cancel in the sum of a complete family.
 
-## The Matrix Model and the Reduced Spectrum
+## The 2×2 Matrix Model and the Reduced Spectrum
 
 ### The Algebraic Closure
 

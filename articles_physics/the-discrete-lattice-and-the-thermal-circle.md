@@ -15,8 +15,7 @@ The article owns the comparison and the principle, and no theorem. The orders an
 orders article; the frequencies, the circle and the KMS condition are the Matsubara article, *The KMS
 Condition and the Biquaternion Framework* and *Thermal Time and the Modular Flow in the Biquaternion
 Framework*; the central phase whose compactification the thermal circle realises is *The Central
-Rotation: Phase, Duality and the Wick Rotation as One Generator*; the clock structure is *Each Sector Is the
-Other's Clock: the Sector Exchange as Relational Time*; and the discrete charge is *Particle Types, Discrete
+Rotation: Phase, Duality and the Wick Rotation as One Generator*; the clock structure is *Relational Time from the Sector Exchange: The Material and Informational Clocks*; and the discrete charge is *Particle Types, Discrete
 Charge and Three-Particle Couplings*.
 
 ## One Principle

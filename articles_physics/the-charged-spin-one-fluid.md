@@ -41,7 +41,7 @@ $$
 
 **What is not here.** No new solution and no new particle. The article's subject is the fluid reading of the covariant Proca equation, and its work is to say what the coupling does to a fluid whose current *was* its field.
 
-**Position in the block.** This article is the charged companion of [The Spin-One Fluid](the-spin-one-fluid.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html), and §*The Three Charged Fluids* compares the three.
+**Position in the block.** This article is the charged companion of [The Spin-One Fluid](the-spin-one-fluid.html). Its siblings are [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html), and §*The Three Charged Fluids* compares the three.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $^{\natural}$ is quaternion conjugation, $^{*}$ Hermitian conjugation, $\mathrm{Sc}$ the coefficient of $e_t$. The material sector is $\mathbb{B}_\Phi=\{i a'_t e_t+\vec A\}$ with $a'_t$ and $\vec A$ real, and the connection is $\tilde A_\Phi\in\mathbb{B}_\Phi$. The coupling is $ϙ$, $k_m=mc/\hbar$, and $\langle\tilde A\rangle_\natural:=\tilde A\tilde A^{\natural}$ is the natural norm, a central complex number. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout.
 
@@ -311,7 +311,7 @@ The stiff equation of state survives as a formula on the sector where the field 
 - [The Spin-One Fluid](the-spin-one-fluid.html), the free companion, whose twelve properties these twelve answer.
 - [The Coupled Proca Equation in Biquaternionic Polar Variables](the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the word, the covariant logarithmic derivative, the constraint and the mass term's frame dependence.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the free decomposition and the two branches.
-- [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html), the two companions.
+- [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html), the two companions.
 - [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), for the criterion by which the block denies an equation of state.
 - [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html), for the rank hierarchy.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the central connection and the curvature.

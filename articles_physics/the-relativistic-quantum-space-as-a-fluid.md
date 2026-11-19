@@ -22,7 +22,7 @@ Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-
 Circulation](the-nodal-set-and-quantized-circulation.html) for its charge, and [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) for the same
 field with a connection. [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) takes the spinor case, in which
 all four survive, with [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) for its frame, [The Spin
-Energy-Momentum Tensor](the-spin-half-energy-momentum-tensor.html) for its spin current and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid.html) for its coupling.
+Energy-Momentum Tensor](the-spin-half-energy-momentum-tensor.html) for its spin current and [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) for its coupling.
 [The Spin-One Fluid](the-spin-one-fluid.html) takes the vector case, with [The Charged Proca
 Fluid](the-charged-spin-one-fluid.html) for its coupling. The closing group is the algebra that reads all of them: the bilinears, the choices the word leaves open, the
 sign $\varepsilon$ with its rigidity constraint, the locking of velocity to spin on the degenerate sector, and the boundary at which the chart ends.
@@ -139,7 +139,7 @@ The complement is the zero-divisor cone, a complex hypersurface: two real condit
 **What survives on the cone is the two-factor decomposition.** Every element factors as $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry, and that factorisation is defined on the whole algebra. The four-factor word is the finer decomposition, and it is the one a fluid needs, because only it separates the velocity from the spin.
 
 **The cone has its own article.** Its geometry, why the two families above lie on it while the field is at its loudest, and the three places where the reading is a limit
-rather than an identity are [The Domain of the Fluid Reading](the-domain-of-the-fluid-reading.html); this section states only what the rest of the block uses.
+rather than an identity are [The Domain of the Polar Decomposition: Invertible Elements and the Zero-Divisor Cone](the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.html); this section states only what the rest of the block uses.
 
 **The domain restriction is not an approximation.** Nothing in the block is expanded in a small parameter and nothing is dropped at a boundary. A field that reaches the cone has no fluid description at the event where it reaches it, and the articles say so at each statement rather than in a footnote.
 

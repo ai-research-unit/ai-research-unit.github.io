@@ -83,7 +83,7 @@ The table has three blocks, and each block is a statement of its own.
 - $[\mathfrak{k},\mathfrak{p}]\subset\mathfrak{p}$: the boost directions transform as a vector under the rotations. This is the statement that a rotated boost is a boost in the rotated direction, and it is why the boost manifold is a symmetric space.
 - $[\mathfrak{p},\mathfrak{p}]\subset\mathfrak{k}$: the boosts do not close, and their bracket is a rotation. The minus sign in the third row is the Lorentzian sign pattern; with a plus the algebra would be $\mathfrak{so}(4)$.
 
-Here $\mathfrak{k}$ is the span of the $J$ and $\mathfrak{p}$ the span of the $K$; *Why Boosts Are Not Additive: The Bracket Table* is the article that reads the third row physically.
+Here $\mathfrak{k}$ is the span of the $J$ and $\mathfrak{p}$ the span of the $K$; *Composition of Two Boosts: The Commutator Table and Non-Additivity* is the article that reads the third row physically.
 
 ### The Structure Constants
 
@@ -256,5 +256,5 @@ The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact,
 - B. C. Hall, *Lie Groups, Lie Algebras, and Representations*, 2nd ed., Springer, 2015 — structure constants, the Jacobi identity and the Casimir element of the universal enveloping algebra.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1, Cambridge University Press, 1995, §2.4 — the Lorentz generators, the commutators in the physicist's Hermitian convention, and the dictionary of signs.
 - W. Greiner and B. Müller, *Quantum Mechanics: Symmetries*, 2nd ed., Springer, 1994 — the same table derived in the rotation-plus-boost form with every sign displayed.
-- *Why Boosts Are Not Additive: The Bracket Table* — the physical reading of the third block.
+- *Composition of Two Boosts: The Commutator Table and Non-Additivity* — the physical reading of the third block.
 - *The Two Commuting Complex Triples* and *The Two Casimirs of the Lorentz Algebra* — the rewriting of this table in the complex basis and the invariants built from it.

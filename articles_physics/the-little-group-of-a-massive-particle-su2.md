@@ -6,7 +6,7 @@ A massive particle's little group is the set of Lorentz transformations that lea
 
 This article identifies the little group, defines the spin label from its representations, computes the Wigner rotation that a general transformation produces, states its cocycle, and explains what the two-to-one cover does to states.
 
-The article assumes *Wigner's Classification: Two Casimirs, Three Orbits* for the orbit picture, *The Little Group of a Null Momentum: $E(2)$* for the contrast, *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* for the cover, and *Why Boosts Are Not Additive: The Bracket Table* for the Thomas–Wigner rotation.
+The article assumes *Wigner's Classification: Two Casimirs, Three Orbits* for the orbit picture, *The Little Group of a Null Momentum: $E(2)$* for the contrast, *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* for the cover, and *Composition of Two Boosts: The Commutator Table and Non-Additivity* for the Thomas–Wigner rotation.
 
 ## The Rest Frame
 
@@ -108,7 +108,7 @@ The Wigner rotation is the frame-dependent part of a Lorentz transformation's ef
 
 ### The Thomas Precession
 
-The Wigner rotation for a sequence of boosts is the Thomas–Wigner rotation of *Why Boosts Are Not Additive: The Bracket Table*, and the precession of a spin under acceleration is its physical consequence. So the little-group cocycle is the same object as the non-additivity of boosts, seen from the representation side rather than from the group side.
+The Wigner rotation for a sequence of boosts is the Thomas–Wigner rotation of *Composition of Two Boosts: The Commutator Table and Non-Additivity*, and the precession of a spin under acceleration is its physical consequence. So the little-group cocycle is the same object as the non-additivity of boosts, seen from the representation side rather than from the group side.
 
 ## The Composition
 
@@ -158,7 +158,7 @@ which is second order in the rapidity. The value is verified numerically: at $\t
 
 ### Why Second Order
 
-A single boost is a pure boost. Two parallel boosts compose into one boost, by the additivity of rapidities along one axis. Two non-parallel boosts fail to compose into a boost, and the failure is a rotation. The failure vanishes to first order because the first-order part of the product is the sum of the two generators, which is again a boost generator; the rotation appears only in the commutator, which is second order. That is the bracket table of *Why Boosts Are Not Additive: The Bracket Table*, and the Wigner angle is its integrated consequence.
+A single boost is a pure boost. Two parallel boosts compose into one boost, by the additivity of rapidities along one axis. Two non-parallel boosts fail to compose into a boost, and the failure is a rotation. The failure vanishes to first order because the first-order part of the product is the sum of the two generators, which is again a boost generator; the rotation appears only in the commutator, which is second order. That is the bracket table of *Composition of Two Boosts: The Commutator Table and Non-Additivity*, and the Wigner angle is its integrated consequence.
 
 ### The Large-Rapidity Limit
 
@@ -226,6 +226,6 @@ A massive particle's little group is the stabiliser of its momentum, and in the 
 - E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group", *Annals of Mathematics* 40 (1939) 149 — the little group and the spin label.
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1, Cambridge University Press, 1995, §2.5 — the Wigner rotation and its cocycle in the physicist's notation.
 - H. Rauch et al., "Verification of coherent spinor rotation of fermions", *Physics Letters A* 54 (1975) 425 — the $4\pi$ periodicity measured with neutrons.
-- *Why Boosts Are Not Additive: The Bracket Table* — the Thomas–Wigner rotation from the group side.
+- *Composition of Two Boosts: The Commutator Table and Non-Additivity* — the Thomas–Wigner rotation from the group side.
 - *The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form* — the cover whose restriction is this little group.
 - *The Determination of the Possible Spins in Biquaternionic Form* — the carrier table that realises $j=0,\tfrac12,1$.

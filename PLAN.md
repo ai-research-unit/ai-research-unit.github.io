@@ -132,6 +132,13 @@ The agent reads carefully the convention articles.
 
 The agent reads the subject of the article to write.
 
+Concerning the choice of titles: the title names the object and the result.
+
+Write it before the article, not after.
+
+A physicist who reads only the title should know what is studied. If not, rewrite it.
+
+
 He searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
 
 If needed, the agent then gathers interesting complementary information from the internet.

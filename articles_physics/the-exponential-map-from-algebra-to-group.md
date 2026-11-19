@@ -13,7 +13,7 @@ with the limit $\Rho\to0$ understood as the identity plus $\tilde X$. One formul
 
 The article then states something that is often asserted wrongly. The exponential of the traceless algebra is **not** onto the unit-norm group. It misses one conjugacy class, the class of $-e_t$ plus a nonzero nilpotent, and the missing class is exactly what produces the "$\pi$ rotation" of the double cover at the level of the algebra. The exponential of the **full eight-dimensional algebra** is onto the group of invertibles, by a different and classical theorem, and the difference between the two statements is the central direction.
 
-The article assumes *The Group of Unit-Norm Biquaternions* for the group and its dimension, *The Six Generators and Their Commutators* for the algebra, and *The Two Casimirs of the Lorentz Algebra* for the labels. It feeds *A Frame Is a Boost Times a Rotation: The Cartan Word* and *The Principal Series and the Complementary Series*.
+The article assumes *The Group of Unit-Norm Biquaternions* for the group and its dimension, *The Six Generators and Their Commutators* for the algebra, and *The Two Casimirs of the Lorentz Algebra* for the labels. It feeds *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* and *The Principal Series and the Complementary Series*.
 
 ## The Exponential of a Biquaternion
 
@@ -252,7 +252,7 @@ six numbers $(\theta_{\mathrm{rpd}},\vec u_{\mathrm b};\theta_{\mathrm{axr}},\ve
 | $\vec u_{\mathrm b}$ | $S^{2}$ | the boost axis |
 | $\theta_{\mathrm{axr}}$ | $[0,2\pi]$ | $2\pi$ returns $-e_t$ |
 
-and the pair $(\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ covers $SU(2)$ once at $\theta_{\mathrm{axr}}\in[0,2\pi)$ except for the endpoint. Positivity of the Hermitian factor is what makes the pair unique, and *A Frame Is a Boost Times a Rotation: The Cartan Word* proves that it is.
+and the pair $(\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ covers $SU(2)$ once at $\theta_{\mathrm{axr}}\in[0,2\pi)$ except for the endpoint. Positivity of the Hermitian factor is what makes the pair unique, and *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* proves that it is.
 
 ### What the Coordinates Are Not
 
@@ -280,4 +280,4 @@ The exponential of a scalar-free biquaternion has the closed form $\exp(\tilde X
 - W. J. Culver, "On the existence and uniqueness of the real logarithm of a matrix", *Proceedings of the American Mathematical Society* **17** (1966) 1146–1151 — the theorem that a complex matrix has a logarithm exactly when it is nonsingular.
 - W. Rossmann, *Lie Groups: An Introduction through Linear Groups*, Oxford University Press, 2002 — the differential of the exponential, the cut locus and the divided-difference formula.
 - *The Group of Unit-Norm Biquaternions* — the target group, its dimension and its exponential chart read as a chart.
-- *A Frame Is a Boost Times a Rotation: The Cartan Word* — the global product decomposition that the coordinates of the last section describe.
+- *The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation* — the global product decomposition that the coordinates of the last section describe.

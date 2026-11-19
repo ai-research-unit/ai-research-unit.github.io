@@ -216,7 +216,7 @@ The diagonal sum is closed under the product, since $e_i A e_i \cdot e_j A e_j \
 
 **Remark.** The case $n = 2$ is the one-idempotent theorem read with $e_{1} = e$ and $e_{2} = f = 1 - e$, and the two statements are the same. There the off-diagonal sum is the two mixed spaces and its square lands in the diagonal sum, $e_1 A e_2 \cdot e_2 A e_1 \subseteq e_1 A e_1$ and $e_2 A e_1 \cdot e_1 A e_2 \subseteq e_2 A e_2$, the other products of two off-diagonal spaces being zero. For $n \geq 3$ that last statement fails: with three distinct indices $e_1 A e_2 \cdot e_2 A e_3 \subseteq e_1 A e_3$ is again off-diagonal, so only the bimodule statement survives in general. The family form is the one that a coordinate decomposition of a matrix algebra produces.
 
-## The Matrix Model
+## The 2×2 Matrix Model
 
 ### The Complex Matrices
 

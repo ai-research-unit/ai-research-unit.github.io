@@ -6,7 +6,7 @@ A single Weyl spinor is a spin-$\tfrac12$ field of one chirality. It cannot carr
 
 This article states the two Weyl spinors and their actions, forms the Dirac pair, shows why the mass term couples the halves and why the coupling is a parity-respecting bilinear, fixes the chirality grading and its relation to helicity, and states the Majorana option and the sense in which it is a different pairing.
 
-The article assumes *The Two Commuting Complex Triples* and *P, T and the Representation Labels* for the representation labels, *The Matrix Model: What It Sees and What It Hides* for the algebra acting on a spinor, and the corpus's field articles for the equations. It does not restate the corpus's conventions for the spinor module, which are fixed in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; the mass's algebraic shape is settled in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and this article defers to it.
+The article assumes *The Two Commuting Complex Triples* and *P, T and the Representation Labels* for the representation labels, *The 2×2 Matrix Model: What It Computes and What It Cannot Show* for the algebra acting on a spinor, and the corpus's field articles for the equations. It does not restate the corpus's conventions for the spinor module, which are fixed in *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; the mass's algebraic shape is settled in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, and this article defers to it.
 
 ## The Two Weyl Spinors
 

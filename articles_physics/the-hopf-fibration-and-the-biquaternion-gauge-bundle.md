@@ -23,7 +23,7 @@ The article proceeds by deriving each of these interpretations and then stating 
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge connection and the covariant derivative.
 - Companion article *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for the non-abelian connection.
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the instanton boundary map.
-- Companion article *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the structure group and its ceiling.
+- Companion article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the structure group and its ceiling.
 
 ## The Two Spheres Inside the Algebra
 

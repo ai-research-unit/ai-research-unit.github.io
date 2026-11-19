@@ -423,7 +423,7 @@ The two chains are $(\vec\Upsilon_-,\tilde\Pi_+)$ and $(\tilde\Pi_-,\vec\Upsilon
 
 **Remark (no simultaneous Jordan basis).** If one basis put both $L_{\tilde Q}$ and $R_{\tilde Q}$ in Jordan form, both would be $\operatorname{diag}(J_2(Q_t),J_2(Q_t))$, since the Jordan form of a single eigenvalue with two blocks of size two is unique, hence $L_{\tilde Q}=R_{\tilde Q}$. But $L_{\tilde Q}\tilde\Pi_+=Q_t\tilde\Pi_+$ while $R_{\tilde Q}\tilde\Pi_+=Q_t\tilde\Pi_++\vec\Upsilon_-$. The two actions have different chain pairings and no common Jordan form.
 
-### The Matrix Model
+### The 2×2 Matrix Model
 
 Assign the four vectors, in the corner order, to the matrix units by
 

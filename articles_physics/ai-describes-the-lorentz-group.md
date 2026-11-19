@@ -185,4 +185,4 @@ The congruence of $\tilde U_{\mathrm b}$ is the boost matrix written above and t
 - [The Rotations, the Boosts and the Groups](the-rotations-the-boosts-and-the-groups.html), for the five groups that contain the two families and what each leaves invariant.
 - [The Group of Unit-Norm Biquaternions](the-group-of-unit-norm-biquaternions.html), for the group as a set inside the algebra.
 - [The Lorentz Transformation as a Biquaternionic Rotation](the-lorentz-transformation-as-a-biquaternionic-rotation.html), for the two-sided action in detail.
-- [A Frame Is a Boost Times a Rotation: The Cartan Word](a-frame-is-a-boost-times-a-rotation-the-cartan-word.html), for the proof of the decomposition and its degenerate cases.
+- [The Cartan Decomposition: Every Lorentz Transformation as a Boost and a Rotation](the-cartan-decomposition-every-lorentz-transformation-as-a-boost-and-a-rotation.html), for the proof of the decomposition and its degenerate cases.

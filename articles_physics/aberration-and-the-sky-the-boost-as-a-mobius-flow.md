@@ -6,7 +6,7 @@ The sky is the sphere of light directions. A boost does not deform it: it moves 
 
 This article states the sky's geometry, derives the aberration formula from the block's congruence action, exhibits the boost as a one-parameter Möbius flow, computes the conformal factor, and takes the two limits.
 
-The article assumes *The Null Cone: The Massless Boundary* for the sky, *The Matrix Model: What It Sees and What It Hides* for the spinor coordinates, *The Group of Unit-Norm Biquaternions* for the congruence action, and *Velocity Space as Hyperbolic Geometry in Biquaternionic Form* for the related hyperbolic picture on the other side of the correspondence.
+The article assumes *The Null Cone: The Massless Boundary* for the sky, *The 2×2 Matrix Model: What It Computes and What It Cannot Show* for the spinor coordinates, *The Group of Unit-Norm Biquaternions* for the congruence action, and *Velocity Space as Hyperbolic Geometry in Biquaternionic Form* for the related hyperbolic picture on the other side of the correspondence.
 
 ## The Sky
 

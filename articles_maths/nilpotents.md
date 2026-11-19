@@ -271,7 +271,7 @@ The star fixes no nonzero nilpotent: a star-fixed element has real coefficients,
 
 The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\vec p+i\vec p'$ with $\vec p,\vec p'$ real pure vectors, the nilpotency is the pair of real equations of §*The Nilpotent Cone*: the two real parts of a nilpotent are orthogonal and have equal sum of squares. This is a real condition, and the class is real-algebraically defined even though the algebra is complex.
 
-### The Matrix Model
+### The 2×2 Matrix Model
 
 **Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ the nilpotents are exactly the nonzero matrices that are trace-free and singular, equivalently the nonzero rank-one matrices conjugate to the strictly triangular matrix $\begin{pmatrix}0&1\\0&0\end{pmatrix}$.**
 
