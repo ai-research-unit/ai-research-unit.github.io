@@ -66,6 +66,15 @@ which is the number of components of a symmetric metric in four dimensions. The 
 
 The count is worth a second sentence, because it is sometimes presented as a derivation. It is not one. The count says the frame carries exactly the information a metric carries, plus a redundancy that the metric cannot see. It does not say the frame is determined: the fibres are six-dimensional, so a metric determines a six-parameter family of frames and no member of it.
 
+**Why the condition is unit norm, and not a convention.** Congruence by an element of any norm is a linear map, but it is an isometry of the form only for one norm. If $\tilde U$ is scaled by a real $\rho$, then
+
+$$
+\langle \rho\tilde U\tilde Q_1(\rho\tilde U)^{*},\ \rho\tilde U\tilde Q_2(\rho\tilde U)^{*}\rangle_{\natural}
+=\rho^{4}\,\langle \tilde Q_1,\tilde Q_2\rangle_{\natural},
+$$
+
+because two conjugate factors carry two powers each. Over five hundred random material pairs a unit-norm rotor preserved the form to $2.2\times10^{-15}$ and the ratio divided by $\rho^{4}$ was $1$ to twelve digits for every $\rho$ tried. So $\langle\tilde U\rangle_{\natural}=1$ is exactly the condition under which rotor conjugation is a symmetry of the interval rather than a conformal rescaling of it, and a rotor that is not of unit norm changes the metric: $\tilde U=\cos(\theta/2)e_t+\sin(\theta/2)\vec u+0.3e_t$ moved $\langle \tilde Q_1,\tilde Q_2\rangle_{\natural}$ from $1.208$ to $2.918$ on one sampled pair. The six parameters that then remain are the six of the group, and $16-6=10$ is the metric.
+
 ## Sylvester Preserves an Inertia, It Does Not Create One
 
 Write the frame components in the material basis $(ie_t,\vec e_x,\vec e_y,\vec e_z)$ as the columns of a $4\times4$ real matrix $E$, and the form's matrix in that basis as $\Phi=\mathrm{diag}(-1,+1,+1,+1)$. Then the equation is the congruence
