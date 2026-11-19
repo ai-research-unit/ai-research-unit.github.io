@@ -122,7 +122,7 @@
 <h3 id="one-operator-one-outcome-one-channel">One Operator, One Outcome, One Channel</h3>
 <p>An <strong>instrument</strong> is a family of completely positive maps indexed by an outcome. In the algebra it is a family of Kraus operators $\tilde M_{\mathrm{kraus},y}$ with</p>
 <p>$$
-\tilde{\mathcal E}_{\Psi}_y=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y},\qquad \sum_y\tilde{\mathcal E}_{\Psi}_y=e_t,\qquad p_y=2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde{\mathcal E}_{\Psi}_y\right),\qquad \tilde{Ϛ}_{\Psi,y}=\frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{p_y}.
+\tilde{\mathcal E}_{\Psi,y}=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y},\qquad \sum_y\tilde{\mathcal E}_{\Psi,y}=e_t,\qquad p_y=2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde{\mathcal E}_{\Psi,y}\right),\qquad \tilde{Ϛ}_{\Psi,y}=\frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{p_y}.
 $$</p>
 <p>Dropping the outcome label gives the <strong>channel</strong></p>
 <p>$$
@@ -316,7 +316,7 @@ $$</p>
 <p>$$
 r'_\parallel=\frac{s_\parallel+\tanh\theta_{\mathrm{rpd},w}}{1+s_\parallel\tanh\theta_{\mathrm{rpd},w}},
 \qquad
-\vec s_{\Psi}'_\perp=\frac{\vec s_{\Psi,\perp}}{\cosh\theta_{\mathrm{rpd},w}+s_\parallel\sinh\theta_{\mathrm{rpd},w}},
+\vec s_{\Psi,\perp}'=\frac{\vec s_{\Psi,\perp}}{\cosh\theta_{\mathrm{rpd},w}+s_\parallel\sinh\theta_{\mathrm{rpd},w}},
 $$</p>
 <p>with $s_\parallel=\vec s_{\Psi}\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\theta_{\mathrm{rpd},w}$, and it is not a rotation of the ball.</p>
 <h3 id="the-contraction-bound">The Contraction Bound</h3>
@@ -332,7 +332,7 @@ $$</p>
 <p>$$
 \boxed{\;\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}\;}.
 $$</p>
-<p>The eigenvalues of $\tilde{\mathcal E}_{\Psi}$ are $\sigma_i^{2}$, the squares of the singular values of $\tilde M_{\mathrm{kraus}}$ and the eigenvalues of $\tilde M_{\mathrm{kraus},H}^{2}$. The effect is positive, and $\tilde{\mathcal E}_{\Psi}\leq e_t$ exactly when every $\sigma_i\leq1$; for an instrument the resolution $\sum_y\tilde{\mathcal E}_{\Psi}_y=e_t$ forces each $\sigma_i\leq1$.</p>
+<p>The eigenvalues of $\tilde{\mathcal E}_{\Psi}$ are $\sigma_i^{2}$, the squares of the singular values of $\tilde M_{\mathrm{kraus}}$ and the eigenvalues of $\tilde M_{\mathrm{kraus},H}^{2}$. The effect is positive, and $\tilde{\mathcal E}_{\Psi}\leq e_t$ exactly when every $\sigma_i\leq1$; for an instrument the resolution $\sum_y\tilde{\mathcal E}_{\Psi,y}=e_t$ forces each $\sigma_i\leq1$.</p>
 <p>The formula is not $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus},H}^{2}$ in general. The two agree only when $\tilde M_{\mathrm{kraus},0}$ commutes with $\tilde M_{\mathrm{kraus},H}$, and in particular when $\tilde M_{\mathrm{kraus},0}$ is a function of $\tilde M_{\mathrm{kraus},H}$. On the cone they need not agree at all: the effect and the squared strength can sit on different lines, with $\tilde M_{\mathrm{kraus},0}$ carrying one to the other.</p>
 <h3 id="the-effect-does-not-determine-the-split">The Effect Does Not Determine the Split</h3>
 <p>The effect determines the singular values, not the factorization. If $\tilde U_{\mathrm{gau}}$ is $*$-unitary and $\tilde M_{\mathrm{kraus}}'=\tilde U_{\mathrm{gau}}\tilde M_{\mathrm{kraus}}$, then</p>
@@ -441,11 +441,11 @@ $$</p>
 <p>A channel is a sum of terms, and the polar decomposition applies to each term separately:</p>
 <p>$$
 Ξ(\tilde{Ϛ}_{\Psi})=\sum_l\tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}
-=\sum_l\tilde H_\Psi_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{p},l}^{*}\tilde H_\Psi_{\mathrm{pos},l}.
+=\sum_l\tilde H_{\Psi,\mathrm{pos},l}\tilde U_{\mathrm{p},l}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{p},l}^{*}\tilde H_{\Psi,\mathrm{pos},l}.
 $$</p>
 <p>Trace preservation is</p>
 <p>$$
-\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_\Psi_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t.
+\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_{\Psi,\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t.
 $$</p>
 <p>The polar decomposition of the sum is not the sum of the polar decompositions. The object decomposed here is each Kraus operator; the channel is a completely positive map, and its own polar decomposition as an operator on the Hilbert–Schmidt space is a different statement, not made here.</p>
 <h3 id="the-dichotomy-is-the-minimal-number-of-terms">The Dichotomy Is the Minimal Number of Terms</h3>
@@ -460,7 +460,7 @@ $$</p>
 \tilde M_{\mathrm{kraus},0}=\sqrt{1-\tfrac p2}\,e_t,\qquad
 \tilde M_{\mathrm{kraus},1}=\sqrt{\tfrac p2}\,Z,\qquad Z=i\vec e_z,
 $$</p>
-<p>with $Z$ $*$-unitary and $Z^{2}=e_t$. For $0<p<1$ both terms have scalar strength, $\tilde H_\Psi_{\mathrm{pos},0}=\sqrt{1-p/2}e_t$ and $\tilde H_\Psi_{\mathrm{pos},1}=\sqrt{p/2}e_t$, and both have $*$-unitary backaction, $\tilde U_{\mathrm{p},0}=e_t$ and $\tilde U_{\mathrm{p},1}=Z$. The channel is nevertheless irreversible for every $p>0$, because its minimal Kraus rank is two. At $p=0$ the second term vanishes and the channel is the identity; at $p=1$ the two terms are $e_t/\sqrt2$ and $Z/\sqrt2$ and the channel is fully dephasing.</p>
+<p>with $Z$ $*$-unitary and $Z^{2}=e_t$. For $0<p<1$ both terms have scalar strength, $\tilde H_{\Psi,\mathrm{pos},0}=\sqrt{1-p/2}e_t$ and $\tilde H_{\Psi,\mathrm{pos},1}=\sqrt{p/2}e_t$, and both have $*$-unitary backaction, $\tilde U_{\mathrm{p},0}=e_t$ and $\tilde U_{\mathrm{p},1}=Z$. The channel is nevertheless irreversible for every $p>0$, because its minimal Kraus rank is two. At $p=0$ the second term vanishes and the channel is the identity; at $p=1$ the two terms are $e_t/\sqrt2$ and $Z/\sqrt2$ and the channel is fully dephasing.</p>
 <p>The example states the article's negative thesis. The reversibility of a channel is not the triviality of a single strength and not the unitarity of a single backaction. It is the minimal number of terms in the sum.</p>
 <h2 id="physical-interpretation">Physical Interpretation</h2>
 <p>The polar form separates two questions that the outcome probability answers together. The strength answers <strong>how much</strong> the outcome responds to each direction; the backaction answers <strong>which way</strong> the state is carried when the outcome occurs. The probability is the trace of the effect, so it sees only the squares of the strengths. The post-measurement state sees the backaction as well. Two amplitudes with the same effect but different $\tilde M_{\mathrm{kraus},0}$ are indistinguishable in their statistics and distinguishable in their aftermath; the polar form is what makes the difference explicit.</p>
@@ -528,7 +528,7 @@ $$</p>
 </tr>
 <tr>
 <td>channel</td>
-<td>$\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_\Psi_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t$; reversible iff minimal Kraus rank one</td>
+<td>$\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_{\Psi,\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t$; reversible iff minimal Kraus rank one</td>
 </tr>
 <tr>
 <td>dephasing</td>

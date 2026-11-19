@@ -125,7 +125,7 @@ because the terms with two distinct units annihilate one another: the factor $\v
 $$
 \tilde\nabla_\Phi^2=\Box_\Phi-2\Delta_\Phi+2\sum_\eta\vec e_\eta\frac{\partial^2}{\partial R_t\partial R_\eta},
 $$
-which is not a scalar. Recomputed on the test field $f=Q_tQ_x+\tfrac{3}{10}Q_y^2-\tfrac{7}{10}Q_xQ_z+\tfrac12$ at $Q=(0.7,0.2,-0.4,0.9)$, the first identity leaves a residual of $3\times10^{-6}$ against $\Box_\Phi f=0.599996$, and the second returns the scalar part $-0.6=\Box_\Phi f-2\Delta_\Phif$ together with a vector part $2.0\,\vec e_x=2\,\partial^2f/\partial R_t\partial R_x$.</p>
+which is not a scalar. Recomputed on the test field $f=Q_tQ_x+\tfrac{3}{10}Q_y^2-\tfrac{7}{10}Q_xQ_z+\tfrac12$ at $Q=(0.7,0.2,-0.4,0.9)$, the first identity leaves a residual of $3\times10^{-6}$ against $\Box_\Phi f=0.599996$, and the second returns the scalar part $-0.6=\Box_\Phi f-2\Delta_\Phi f$ together with a vector part $2.0\,\vec e_x=2\,\partial^2f/\partial R_t\partial R_x$.</p>
 <p><strong>The consequence for the mass.</strong> A single field cannot carry a mass at first order, because there is no scalar to subtract from a square that is not scalar. The massive equation is therefore the chiral pair, and it is the same dynamics written for the two values and not a second one:
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L},
@@ -265,17 +265,14 @@ $$
 recomputed as $9$ at $k=(2,1,0,0)$. It is singular exactly when $k$ is null, and there its rank is two: at $k=(1,1,0,0)$, $(1,0,1,0)$, $(1,0,0,1)$ and $(3,1,2,2)$ the rank is $2$, and off the cone at $k=(2,1,0,0)$ it is $4$. A gradient plane wave is annihilated by the gradient exactly when the wave vector is null, which is the light cone and nothing else.</p>
 <p><strong>The six bivector components.</strong> The bivectors of the algebra are the six elements $\vec e_x,\ \vec e_y,\ \vec e_z,\ i\vec e_x,\ i\vec e_y,\ i\vec e_z$, the three spacelike and the three timelike ones, and a bivector field is a real combination $f$ of them. This is the sector the field strength occupies: $\tilde F$ is a bivector, and so is its square.</p>
 <p><strong>The kernel on the null cone.</strong> Left multiplication by a null symbol maps that six-dimensional real space into the four-dimensional algebra, and the image has dimension four. The kernel is therefore two-dimensional, and it consists of null bivectors. Recomputed for five null wave vectors, with an off-cone row as control:
-$$
-\begin{array}{c|c|c|c}
-k & \text{rank} & \dim\ker & \lvert f^2\rvert\ \text{on the kernel}\ \hline
-(2,1,0,0) & 6 & 0 & \text{empty}\
-(1,1,0,0) & 4 & 2 & 4.4\times10^{-16},\ 2.2\times10^{-16}\
-(1,0,1,0) & 4 & 2 & 2.2\times10^{-16},\ 3.3\times10^{-16}\
-(1,0,0,1) & 4 & 2 & 2.2\times10^{-16},\ 2.2\times10^{-16}\
-(2,1,1,\sqrt2) & 4 & 2 & 1.2\times10^{-16},\ 2.6\times10^{-16}\
-(1,0.6,0.8,0) & 4 & 2 & 1.5\times10^{-14},\ 2.8\times10^{-16}
-\end{array}
-$$
+| $k$ | $\operatorname{rank}$ | $\dim\ker$ | $\lvert f^{2}\rvert$ on the kernel |
+| --- | --- | --- | --- |
+| (2,1,0,0) | 6 | 0 | empty |
+| (1,1,0,0) | 4 | 2 | $4.4\times10^{-16}$, $2.2\times10^{-16}$ |
+| (1,0,1,0) | 4 | 2 | $2.2\times10^{-16}$, $3.3\times10^{-16}$ |
+| (1,0,0,1) | 4 | 2 | $2.2\times10^{-16}$, $2.2\times10^{-16}$ |
+| (2,1,1,\sqrt2) | 4 | 2 | $1.2\times10^{-16}$, $2.6\times10^{-16}$ |
+| (1,0.6,0.8,0) | 4 | 2 | $1.5\times10^{-14}$, $2.8\times10^{-16}$ |
 <strong>How to read the table.</strong> The first row is the off-cone control: the symbol is invertible on the bivectors and the kernel is empty. The rank is four and the kernel is two for every null wave vector, and $f^2=0$ on the whole kernel. Two real dimensions is one complex dimension: the bivector sector carries exactly one surviving polarisation on the cone, and the bivector that survives is null in the algebra's own product.</p>
 <p><strong>What the kernel says.</strong> A bivector whose square vanishes is a radiation field: for $\tilde F=i\sqrt\epsilon\,\vec E-\sqrt\mu\,\vec H$ the square is $-\mu(\lvert\vec H\rvert^2-\epsilon\lvert\vec E\rvert^2)+2i\sqrt{\epsilon\mu}\,\vec E\cdot\vec H$, which vanishes exactly when the two fields are orthogonal and equal in magnitude. So the algebra's own statement about a null wave is that its field strength is a null bivector, and the null bivectors are precisely the components that the gradient annihilates on the cone. That is the framework's content in the sector where the index density lives, and it is what this article recomputes in place of the source's four-object trace.</p>
 <h2 id="the-regulator-and-the-symmetry-it-preserves">The Regulator and the Symmetry It Preserves</h2>
