@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizons Without a Global Structure — Biquaternion Universe</title>
+  <meta name="description" content="A horizon is the place where the corpus&#x27;s language quietly stops. The neighbouring articles carry a metric, a frame, a connection, a curvature bivector, a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="horizons-without-a-global-structure"><strong>Horizons Without a Global Structure</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A horizon is the place where the corpus's language quietly stops. The neighbouring articles carry a metric, a frame, a connection, a curvature bivector, a Dirac operator and a thermodynamics of black holes, and every one of those objects is either pointwise or a rewriting of something pointwise. A horizon is not. It is a statement about which events can send signals to which other events, and that is a statement about a whole spacetime at once.</p>
+<p>This article is a ledger. It separates three kinds of statement that the word "horizon" covers — the local condition at a point, the locus of that condition in a manifold, and the causal boundary of a spacetime — and it records which of the three the framework reaches and which it does not. The purpose is narrow and, in this series, necessary: the article on black-hole thermodynamics transcribes a temperature and an entropy that are correct and are not derived, and a reader who takes that article as evidence of a global theory has read it wrongly. This page says so explicitly, in one place, so that the thermodynamics article does not have to.</p>
+<p>The result is not the flat statement that "horizons are outside the algebra". That statement is true of the algebra and false of the programme, and the difference matters. Once a frame field is placed on a manifold, the framework does have points, and it can write the equation $\theta=0$ at a point and the locus where that equation holds. What it cannot do is identify that locus with a causal boundary, because the framework carries no causal structure and no infinity. The gap is a gap in kind, not in degree.</p>
+<h2 id="three-things-called-a-horizon">Three Things Called a Horizon</h2>
+<p><strong>The causal boundary.</strong> The event horizon is $\partial J^{-}(\mathcal J^{+})$, the boundary of the set of events from which a signal can reach future null infinity. It is defined by a global construction: one needs the whole spacetime, its conformal completion, and the notion of a signal escaping. Nothing about it is local. Two spacetimes can agree on a neighbourhood of a point and disagree about whether that point is inside an event horizon.</p>
+<p><strong>The marginally trapped surface.</strong> A two-surface $S$ with two future-directed null normals $l$ and $n$ is <em>marginally outer trapped</em> when the expansion of $l$ vanishes, $\theta_{(l)}=0$, and that of $n$ is negative. This is local: it is a condition on the null normals and their derivatives at $S$, and it can be checked at a single point. It is the condition a numerical horizon finder solves, and it is the only one of the three that a pointwise algebra could ever address.</p>
+<p><strong>The Killing horizon.</strong> A null hypersurface on which a Killing field is null. This is intermediate: it needs a global symmetry to exist, but once the symmetry is given the statement is local in a neighbourhood, and it is the setting in which surface gravity and the laws of black-hole mechanics are written.</p>
+<p>The three coincide for the stationary black holes the corpus's thermodynamics article treats, which is exactly why the distinction is easy to lose. They do not coincide in general.</p>
+<h2 id="what-the-algebra-reaches-the-pointwise-half">What the Algebra Reaches: the Pointwise Half</h2>
+<p>The expansion of a null congruence is a spin coefficient, and spin coefficients are hosted by the algebra. This is the one substantive link, and it is exact.</p>
+<p>In the Newman–Penrose convention of the companion article — $l\cdot n=-1$, $m\cdot\bar m=+1$, every other inner product zero — the expansion of the congruence generated by $l$ is</p>
+<p>$$
+\theta \;=\; \rho+\bar\rho ,
+\qquad
+\rho \;=\; l_{\mu;\nu}\,m^{\mu}\bar m^{\nu},
+$$</p>
+<p>and the shear is the imaginary part of the same object, $\sigma=l_{\mu;\nu}m^{\mu}m^{\nu}$. Both were checked against explicit congruences. For the outgoing radial congruence $l^{\mu}=(1,\hat r)$ in flat space the Christoffel symbols give $\rho=1/r$ exactly — the two angular contributions are $1/(2r)$ each — and the divergence gives $\theta=2/r$, so $\theta=\rho+\bar\rho$ holds identically; at $r=2$ both sides are $1$. For the incoming congruence $l^{\mu}=(1,-\hat r)$ the signs reverse on both sides, $\theta=-2/r$ and $\rho=-1/r$, and the identity survives. For the comoving congruence of a flat FLRW metric with $a=1+\tfrac12 t$ the expansion computed from the connection is $3\dot a/a=1$, which is the standard value.</p>
+<p>Two consequences follow, and they are the whole of the framework's reach here.</p>
+<p><strong>Marginality is a condition on one algebra-hosted object.</strong> $\theta_{(l)}=0$ is $\mathrm{Re}\,\rho=0$, and $\rho$ is a component of a $\mathbb{B}$-valued connection one-form in the null frame. So a point can be tested for marginality using objects the algebra hosts, once the frame and the connection are supplied. That is exactly the information a numerical horizon finder uses, and it is available here.</p>
+<p><strong>The focusing equation is the same object's derivative.</strong> For an affinely parametrised null geodesic congruence the Raychaudhuri equation reads</p>
+<p>$$
+\frac{d\theta}{d\lambda} \;=\; -\frac{\theta^{2}}{2}-\sigma\bar\sigma+\omega\bar\omega-R_{\mu\nu}l^{\mu}l^{\nu},
+$$</p>
+<p>with $\omega$ the twist. For the flat radial congruence $\lambda=r$, $\theta=2/r$ and $d\theta/d\lambda=-2/r^{2}=-\theta^{2}/2$ exactly, with shear, twist and curvature all zero, so the equation is satisfied by the one term that survives. Raychaudhuri's equation is therefore reachable in the same sense as $\rho$: it is a differential identity among objects the algebra hosts, and it needs the connection but not the manifold's global structure.</p>
+<p>What is <em>not</em> reachable in this half is surface gravity. The definition $\xi^{\nu}\nabla_{\nu}\xi^{\mu}=\kappa\,\xi^{\mu}$ requires a Killing field $\xi$, and a Killing field is a solution of a differential equation on the whole manifold with a boundary condition at infinity. The algebra cannot supply it, and the frame route can only be handed it. This is the precise sense in which the temperature in the thermodynamics article is transcribed: $\kappa$ is not an algebra object, and even with $\kappa$ in hand the relation $T=\kappa/2\pi$ is a quantum input that no part of this corpus derives.</p>
+<h2 id="what-the-frame-route-adds-loci">What the Frame Route Adds: Loci</h2>
+<p>Once the frame field $\tilde E_{\Phi,\mu}(x)$ is placed on a manifold, the framework acquires what the algebra lacks — a space of points — and with it a second layer of statements becomes available.</p>
+<p><strong>A horizon can be defined as a locus.</strong> The set of points where $\mathrm{Re}\,\rho=0$ is a well-defined subset of the manifold, defined by a diffeomorphism-covariant equation. The framework can write it, and the equation is the one a horizon finder solves.</p>
+<p><strong>Area can be integrated.</strong> The induced two-metric on a cross-section is $\gamma_{ab}=\langle \tilde E_{\Phi,a},\tilde E_{\Phi,b}\rangle_{\natural}$ restricted to the surface, and its area is $\int\sqrt{|\det\gamma|}$, an ordinary integral of a Gram determinant. Nothing algebraic is missing: the integrand is exactly the object the <em>Gram Matrix</em> article identifies as the only metric. The framework reaches the area of a horizon in the same sense in which it reaches any area.</p>
+<p><strong>But the locus is not identified.</strong> An equation of the form $\theta=0$ holds on many surfaces, and nothing in the frame route says which of them is "the" horizon. Selecting one needs an input the route does not have: asymptotic flatness and a conformal completion, or a Killing field, or an initial-data prescription with an outer boundary condition. The framework can compute the locus; it cannot say that the locus is a causal boundary, because it has no causal structure to compare it with.</p>
+<p>That last sentence is the sharpest statement this article can make, and it is worth separating from the weaker claim that "the algebra is a point". The algebra being a point costs the framework nothing that a manifold repairs. What a manifold does not repair is causality: the statement "no signal from here reaches there" is a statement about all curves between two points, and no amount of pointwise algebra produces it.</p>
+<h2 id="what-is-out-of-reach-and-why">What Is Out of Reach, and Why</h2>
+<p><strong>Causal structure.</strong> Not available at any level. The frame route gives geodesics, and geodesics are the raw material of causality, but the causal relation requires knowing which curves are timelike everywhere and comparing their endpoints globally. The corpus's own summary lists causal structure as outside, and that listing is correct.</p>
+<p><strong>The event horizon as a boundary.</strong> A special case of the previous item, and the reason the framework cannot distinguish an apparent horizon from an event horizon.</p>
+<p><strong>Singularity theorems.</strong> The local ingredient, Raychaudhuri's equation, is reachable, as above. The theorems themselves also need global assumptions — a trapped surface, a causality condition, an energy condition integrated along a congruence — and a conclusion about geodesic incompleteness, which is a statement about the manifold. The framework supplies the first ingredient and neither of the others.</p>
+<p><strong>The spin structure.</strong> The existence of the spinor field on a manifold is obstructed by the second Stiefel–Whitney class, a topological invariant. It is invisible to a pointwise algebra: two manifolds with the same local algebra and different $w_{2}$ are indistinguishable at every point.</p>
+<p><strong>Entropy as $A/4$.</strong> The area is reachable, as shown. The coefficient is not. The thermodynamics article fixes it inside general relativity — from $T=\kappa/2\pi$ together with the first law, and then by the dimensional argument and the Euclidean localisation — and it states plainly that no microscopic counting is claimed. That is exactly the position this ledger describes: the coefficient is fixed by inputs the framework does not contain, namely a temperature read off a Killing field and a quantum of action, and the areas it multiplies are integrals of pointwise data.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>Layer</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the null normal is a zero divisor, rank one</td>
+<td>algebra, pointwise</td>
+<td>native</td>
+</tr>
+<tr>
+<td>$\theta=\rho+\bar\rho$, shear $\sigma$</td>
+<td>algebra, pointwise, given a connection</td>
+<td>hosted</td>
+</tr>
+<tr>
+<td>$\theta_{(l)}=0$ at a point</td>
+<td>algebra, pointwise</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>Raychaudhuri along a congruence</td>
+<td>algebra, pointwise, given a connection</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>the horizon as the locus $\{\mathrm{Re}\,\rho=0\}$</td>
+<td>frame field on a manifold</td>
+<td>reachable, not unique</td>
+</tr>
+<tr>
+<td>the area $\int\sqrt{|\det\gamma|}$</td>
+<td>frame field on a manifold</td>
+<td>reachable</td>
+</tr>
+<tr>
+<td>surface gravity $\kappa$</td>
+<td>needs a Killing field</td>
+<td>not reachable</td>
+</tr>
+<tr>
+<td>$T=\kappa/2\pi$</td>
+<td>quantum input</td>
+<td>transcribed</td>
+</tr>
+<tr>
+<td>$S=A/4$</td>
+<td>quantum input plus an integral</td>
+<td>transcribed</td>
+</tr>
+<tr>
+<td>event horizon $\partial J^{-}(\mathcal J^{+})$</td>
+<td>global causal structure</td>
+<td>out of reach</td>
+</tr>
+<tr>
+<td>singularity theorems</td>
+<td>global, plus Raychaudhuri</td>
+<td>partly reachable</td>
+</tr>
+<tr>
+<td>$w_{2}(M)=0$</td>
+<td>topology</td>
+<td>out of reach</td>
+</tr>
+</tbody>
+</table></div>
+<p>The table's shape is the article's result: the entries the framework reaches are pointwise or integrals of pointwise data, and the entries it does not reach are the ones that quantify over curves, over infinity, or over the manifold's topology.</p>
+<h2 id="what-the-thermodynamics-article-is-evidence-for">What the Thermodynamics Article Is Evidence For</h2>
+<p>It is evidence that the framework can <strong>host</strong> a black-hole thermodynamics: the metric, the null frame, the surface, the area and the first law's kinematic terms all live in objects the corpus constructs. It is not evidence that the framework <strong>produces</strong> a horizon, a temperature or an entropy. Each of those needs an input from outside — a Killing field, a quantum of action, a global causal structure — and the thermodynamics article is careful to separate what is established from what is read into it, and to say that no microstate count is claimed.</p>
+<p>Read together with this page, the two articles give the honest position. The framework contains the local half of horizon physics and none of its global half, and the local half is the half that is algebra. That is a boundary of kind, and it will not be moved by computing harder on the algebra; it would be moved by giving the framework a causal structure, which means giving it a manifold with more than a frame field on it.</p>
+<h2 id="summary">Summary</h2>
+<p>A horizon comes in three layers, and the framework reaches one and a half of them. The pointwise layer — the null normal as a zero divisor, the expansion as a spin coefficient, marginality as $\mathrm{Re}\,\rho=0$, and Raychaudhuri's equation — is reachable, and the identities $\theta=\rho+\bar\rho$ and $d\theta/d\lambda=-\theta^{2}/2$ were checked on explicit congruences. The layer of loci and integrals is reachable once a frame field is placed on a manifold: the horizon is writable as a locus and its area as a Gram-determinant integral, though the locus is not unique and cannot be identified with a causal boundary. The global layer — the event horizon, causal structure, singularity theorems, the spin-structure obstruction — is not reachable at any effort, because it quantifies over curves and over the manifold's topology rather than over the tangent space at a point.</p>
+<p>Surface gravity and the two thermodynamic coefficients sit between the layers and belong to neither. $\kappa$ needs a Killing field, and $T=\kappa/2\pi$ and $S=A/4$ need a quantum of action. The framework hosts the surface and the area; it transcribes the temperature and the entropy. That is the honest ledger, and stating it is the whole purpose of this article.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="black-hole-thermodynamics-in-biquaternionic-form.html">Black Hole Thermodynamics in Biquaternionic Form</a>, for the horizon thermodynamics this page bounds, and for its own separation of what is established from what is interpretation.</li>
+<li><a href="the-newman-penrose-formalism-in-biquaternionic-form.html">The Newman–Penrose Formalism in Biquaternionic Form</a>, for the null tetrad, the spin coefficients $\rho$ and $\sigma$, and the conventions in which $\theta=\rho+\bar\rho$.</li>
+<li><a href="the-gram-matrix-as-the-only-metric.html">The Gram Matrix as the Only Metric</a>, for the induced metric on a surface and the area integral as a Gram determinant.</li>
+<li><a href="curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a>, for the frame route, the connection, and the listing of global structure as outside the algebra.</li>
+<li><a href="quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html">Quantum Gravity in the Biquaternion Framework: The Two-Sided Obstruction and the Modular Temperature</a>, for why a quantum horizon is not available before an action is.</li>
+<li><em>The Topology of the Zero-Divisor Cone</em>, for the one place where the algebra's own topology is nontrivial — the link $S^{2}\times S^{3}$ — which is a topology of the fibre and not of spacetime.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Note: The Electroweak Force in the Biquaternion Corpus — Biquaternion Universe</title>
+  <meta name="description" content="The corpus transcribes the electroweak sector completely and constructs it partly. It has twenty-four articles on the sector, every one of them explicit…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-note-the-electroweak-force-in-the-biquaternion-corpus">Internal Note: The Electroweak Force in the Biquaternion Corpus</h1>
+<h2 id="the-answer">The Answer</h2>
+<p><strong>The corpus transcribes the electroweak sector completely and constructs it partly.</strong> It has twenty-four articles on the sector, every one of them explicit about which half it is doing. The algebra supplies a four-dimensional compact algebra, the charged and neutral directions, the free massive-vector kinematics and the abelian Higgs mechanism. It does not supply hypercharge, chirality, the doublet, the masses or the mixing angle. Those are imported.</p>
+<p><strong>The decisive correction.</strong> The non-abelian factor of the framework's gauge algebra is the rotation group of space, not an internal isospin. <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> says so itself: its group is "the group of rotors of pure spatial rotations ... the double cover of $\mathrm{SO}(3)$". So the four gauge directions are three spacetime and one internal, where the Standard Model has four internal. The dimension match is a match of counts, not of kinds.</p>
+<p><strong>The consequence, in one line.</strong> A gauge field in the adjoint of $\mathrm{Spin}(3)$ is the spatial part of a spin connection. Read as an internal symmetry it fails; read as geometry it is gravity, and the corpus already has that reading.</p>
+<h2 id="what-the-electroweak-force-is">What the Electroweak Force Is</h2>
+<p><strong>One interaction with two charges, one of them chiral.</strong> Above the breaking scale the carriers are four massless vector fields, $W^1,W^2,W^3$ and $B$, with couplings $g$ and $g_{\mathrm Y}$. Below it, one neutral direction stays massless — the photon — and three acquire mass.</p>
+<p><strong>The group is $SU(2)_L\times \mathrm{U}(1)_Y$.</strong> The $L$ is the whole content of the word electroweak: the $SU(2)$ acts on left-handed fields only. That one letter is what the framework cannot reproduce, for a reason that is a theorem rather than a gap in the work.</p>
+<p><strong>What unifies is the description, not the coupling.</strong> $g$ and $g_{\mathrm Y}$ remain independent parameters. The unification is a statement about one group and one covariant derivative, and the mixing angle is measured.</p>
+<h2 id="what-the-standard-theory-says">What the Standard Theory Says</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Standard content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group</td>
+<td>$SU(2)_L\times\mathrm{U}(1)_Y$, couplings $g$ and $g_{\mathrm Y}$</td>
+</tr>
+<tr>
+<td>Charge</td>
+<td>$Q=T_3+Y$</td>
+</tr>
+<tr>
+<td>Carriers</td>
+<td>$W^1,W^2,W^3,B$, massless before breaking</td>
+</tr>
+<tr>
+<td>Breaking</td>
+<td>a complex doublet of hypercharge $\tfrac12$, vacuum value $v=246.22$ GeV</td>
+</tr>
+<tr>
+<td>Masses</td>
+<td>$M_W=gv/2$, $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2$, $M_\gamma=0$</td>
+</tr>
+<tr>
+<td>Mixing</td>
+<td>$\tan\theta_W=g_{\mathrm Y}/g$, $\sin^2\theta_W=0.23122$</td>
+</tr>
+<tr>
+<td>Matter</td>
+<td>three chiral generations, one doublet and two singlets per charge sector</td>
+</tr>
+<tr>
+<td>Consistency</td>
+<td>four anomaly conditions, solved by the observed hypercharges</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The list is what the note measures the corpus against.</strong> Every row is either constructed, transcribed, or absent, and the rest of the note says which.</p>
+<h2 id="the-proca-claim-examined">The Proca Claim, Examined</h2>
+<p><strong>The claim that prompted this note was that electromagnetism is a zero-mass limit of Proca, and that the corpus builds the electroweak sector on that.</strong> It is right in structure and wrong in direction.</p>
+<p><strong>Right, in three exact statements.</strong> Maxwell is the massless limit of Proca, not a separate theory. The mass term occupies the slot where Maxwell puts a source, so the two differ by one term and a parameter. And only the complexified Proca field carries a current that can source Maxwell — the real field has none.</p>
+<p><strong>Wrong, in one.</strong> Electromagnetism is not derived from Proca. The photon is the direction that remains massless at $k_m=0$, and in the electroweak sector its masslessness is a property of the vacuum's alignment with $Q=T_3+Y$, not of the Proca equation.</p>
+<h2 id="two-layers">Two Layers</h2>
+<h3 id="what-the-algebra-supplies">What the algebra supplies</h3>
+<p><strong>A compact four-dimensional algebra.</strong> $\mathbb{B}_\Phi=\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1)$: three antisymmetric spatial generators $\vec e_x,\vec e_y,\vec e_z$ and one central phase $ie_t$. Four directions, matching the four gauge fields in count.</p>
+<p><strong>The charged directions, with their charges computed rather than inserted.</strong> The off-diagonal elements are $\vec e_x\pm i\vec e_y$, and the adjoint action of the Cartan generator is diagonal on them:</p>
+<p>$$
+[i\vec e_z,\ \vec e_x\pm i\vec e_y]=\pm 2(\vec e_x\pm i\vec e_y).
+$$</p>
+<p>The eigenvalues are $\pm 2$; with the generators normalised so that the Cartan element carries unit charge, they are the $W$ charge difference $\pm1$. This is the closest the framework comes to deriving an electroweak quantum number, and it derives a charge difference, not a charge scale.</p>
+<p><strong>The neutral plane.</strong> The two commuting generators span a two-dimensional neutral space, and the mixing is a rotation inside it:</p>
+<p>$$
+Z_\mu=\cos\theta_W\,W_{\mu 3}-\sin\theta_W\,B_\mu,\qquad
+A_\mu=\sin\theta_W\,W_{\mu 3}+\cos\theta_W\,B_\mu .
+$$</p>
+<p>The algebra supplies the plane and the rotation. The angle needs a metric, and the metric is the relative normalisation of two kinetic terms — two free coefficients. <em>The Weinberg Angle</em> states the gap in one sentence: "The algebra supplies the directions and not the metric."</p>
+<p><strong>The self-couplings.</strong> Writing the curvature with the commutator term, the cubic and quartic terms of the Yang–Mills density are powers of the commutator, with structure constants $f_{abc}=2\varepsilon_{abc}$ read from the quaternion table. The $WW\gamma$, $WWZ$ and four-point vertices follow. The central direction has vanishing structure constants, so the abelian factor does not self-couple — the algebra's own version of a correct physical statement.</p>
+<p><strong>The kinematics of a massive vector, complete.</strong> A free $W$ or $Z$ is a Proca field: the Lorenz condition follows rather than being imposed, there are three polarizations, and the transverse sum $\mathcal P_{\mu\nu}=\delta_{\mu\nu}+p_\mu p_\nu/M^2$ is idempotent and annihilates $p_\nu$ on shell.</p>
+<p><strong>The abelian Higgs mechanism, whole.</strong> One charged central scalar, one potential with a circle of minima at $|\xi|=v/\sqrt 2$, and a mass from the scalar kinetic term,</p>
+<p>$$
+M_A^2=\frac{\kappa^2 v^2}{\hbar^2}.
+$$</p>
+<p>The count balances: $2+2=1+3$, two real scalars and two transverse polarizations before, one scalar and three vector polarizations after.</p>
+<h3 id="what-is-imported">What is imported</h3>
+<p><strong>Seven rows, and the corpus marks them so.</strong> The group with its $L$; the hypercharge values; the chiral action on doublets and singlets; the scalar doublet with its representation; the mixing angle; the vector masses; the charged and neutral currents. The corpus's ledger words are <em>imported</em> and <em>no route yet</em>, and it uses them in print.</p>
+<p><strong>The distinction matters because it is the note's whole subject.</strong> A transcription is not a failure. It is the correct description of a framework that hosts the algebra and receives the model.</p>
+<h2 id="the-three-obstructions">The Three Obstructions</h2>
+<p><strong>First: the scalar is a singlet.</strong> The corpus's scalar is the central field $\xi e_t$. Anything proportional to the identity is fixed by every inner automorphism, so it carries the trivial representation of $\mathrm{SU}(2)$ and cannot break it. The non-abelian factor acquires no mass from it. The abelian mechanism is unaffected, because a singlet can carry a $\mathrm{U}(1)$ charge.</p>
+<p><strong>Second: the centre is vector-like.</strong> The central element $ie_t$ commutes with everything, so a coupling to it gives the same charge to every field, left-handed and right-handed alike. Hypercharge gives six different charges. One uniform charge cannot be hypercharge, and no relabelling fixes it: any Lie-algebra isomorphism of $\mathfrak{u}(2)$ onto $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ carries the centre onto the centre.</p>
+<p><strong>Third: the framework cannot fix the gauge.</strong> Without a gauge-fixing principle the corpus computes curvature components and cannot say what the spectrum is. Every mass statement in the sector inherits the gap.</p>
+<p><strong>One root under all three.</strong> The gauge group of the framework <em>is</em> the spin group, and representation is therefore a function of spin. A spin-zero field carries the trivial representation; a spin-half field carries the spinor on both letters. The Standard Model needs spin and gauge label to be independent, and here they are not.</p>
+<h2 id="the-non-abelian-factor-is-the-rotation-group">The Non-Abelian Factor Is the Rotation Group</h2>
+<p><strong>The corpus states the action, and states it as left multiplication.</strong> <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> writes</p>
+<p>$$
+D_\mu\tilde\Xi=\frac{\partial}{\partial R_\mu}\tilde\Xi+i\kappa\,\mathcal A_\mu\tilde\Xi,
+$$</p>
+<p>"acting on a matter field by left multiplication", with $\tilde\Xi\mapsto\tilde Q\tilde\Xi$ and $\tilde Q$ a unit real quaternion. So the one-sided left action is the corpus's, in its own words.</p>
+<p><strong>The left action is the spin representation, and this is not a conjecture.</strong> <em>The One-Sided Action and the Spin Representation</em> states it: "the same left multiplication, restricted from the algebra to the spin group, is the representation that carries the spinors." The carrier is a minimal left ideal, two complex-dimensional. It is one-sided by necessity, because a right multiplication does not preserve a left ideal.</p>
+<p><strong>And it is not the action that rotates.</strong> <em>Polar Decomposition of Quaternions</em> states that "a rotor acts on the pure quaternions by the two-sided operator", with the Rodrigues form rotating by $2\theta$. So one rotor has two actions: conjugation rotates an element, left multiplication carries a spinor. They are different operations, kept in different articles.</p>
+<p><strong>The two are exact opposites in what they preserve.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Conjugation $\tilde QX\tilde Q^{-1}$</th>
+<th>Left product $\tilde QX$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>multiplicative in the pair</td>
+<td>yes, inner automorphism</td>
+<td>no, not an endomorphism</td>
+</tr>
+<tr>
+<td>preserves the star, hence both sectors</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>preserves the trace</td>
+<td>yes, $0$</td>
+<td>no, $0.206$</td>
+</tr>
+<tr>
+<td>preserves Hermiticity</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p>The residual of the automorphism law over forty random pairs is $2\times 10^{-15}$. The trace line is the discriminator: rotating an algebra element preserves the trace, carrying a spinor does not.</p>
+<p><strong>A boost is excluded, and the exclusion is sharp.</strong> Conjugation preserves the grading exactly when $A$ is unitary up to scale, $\tilde Q\tilde Q^{\ast}=\lambda I$ with $\lambda>0$; a boost is not unitary. And the rotor fails both halves of the definition of an internal symmetry: it does not commute with the boost generators, $[\vec e_x,i\vec e_y]=2i\vec e_z\neq 0$, and it rotates a spinor index by construction.</p>
+<p><strong>So the field has a home, and it is not an internal one.</strong> A gauge field in the adjoint of $\mathrm{Spin}(3)$ is the spatial part of a tetrad spin connection. <em>Curved Spacetime and the Biquaternion Framework</em> says that "the spin connection of the tetrad formalism is therefore not foreign to the algebra; it sits inside it", while recording that the algebra determines nothing about it. The fork is explicit, and there is no third branch:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Reading</th>
+<th>What the field is</th>
+<th>Where it belongs</th>
+<th>What it costs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>internal</td>
+<td>weak isospin</td>
+<td>the electroweak sector</td>
+<td>an internal group commuting with the Lorentz action, which the algebra does not have</td>
+</tr>
+<tr>
+<td>geometric</td>
+<td>part of the spin connection</td>
+<td>gravity, via the tetrad</td>
+<td>nothing, and it is not electroweak</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-dimension-match-at-four-levels">The Dimension Match, at Four Levels</h2>
+<p><strong>The match $4=4$ is true and is not an identification.</strong></p>
+<p><strong>Level one: the group is not a product.</strong> $\mathrm{U}(2)\cong(\mathrm{Spin}(3)\times \mathrm{U}(1))/\mathbb Z_2$, the quotient by the common central $\mathbb Z_2$ — the same element that makes $\mathrm{Spin}(3)$ a double cover of $\mathrm{SO}(3)$. The algebra $\mathfrak{u}(2)$ cannot tell $\mathrm{U}(2)$ from $SU(2)\times\mathrm{U}(1)$; the group can, and the corpus keeps the distinction in <em>The Electroweak Gauge Group and the Hypercharge Assignment</em>.</p>
+<p><strong>Level two: the centre argument.</strong> Any isomorphism carries the centre to the centre, so the match forces $B\propto ie_t$. One central charge for every field, where hypercharge gives six. This is the no-go that no relabelling escapes.</p>
+<p><strong>Level three: the two factors live on opposite sides of the star.</strong> The chiral charge element is star-even and the gauge potentials are star-odd, so they occupy different eigenspaces of one involution. A chiral gauge potential is not an object this algebra holds.</p>
+<p><strong>Level four: the chiral one-sided actions are abelian.</strong> Among one-sided multiplications, those that respect a chirality split commute with the chirality operator, and that centraliser is abelian. Chiral abelian is available — the centre is exactly that. Chiral non-abelian is not.</p>
+<p><strong>What the four levels buy.</strong> The framework's electroweak sector is a coherent gauge theory with one massive vector, a complex singlet scalar, vector-like fermions and ten degrees of freedom where the model has twelve. None of those numbers is an accident; each follows from the scalar being a singlet and the fermion being vector-like.</p>
+<h2 id="representation-is-a-function-of-spin">Representation Is a Function of Spin</h2>
+<p><strong>The root, stated once.</strong> Because the gauge group is the spin group, the representation a field carries is fixed by its spin, and the two cannot be chosen independently.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Spin</th>
+<th>Carrier in the algebra</th>
+<th>Representation of $\mathrm{Spin}(3)$</th>
+<th>Model needs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>the line $\mathbb R e_t$</td>
+<td>trivial</td>
+<td>a doublet</td>
+</tr>
+<tr>
+<td>$\tfrac12$</td>
+<td>the ideal $S_+$, module $\mathbb C^2$</td>
+<td>spinor, both letters alike</td>
+<td>chiral: doublet on one letter only</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>the vector part $\mathfrak k$</td>
+<td>adjoint</td>
+<td>adjoint, and it matches</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One row out of three matches, and it is the vector row.</strong> That is why the self-couplings and the free kinematics come out right: for spin one the framework <em>is</em> Yang–Mills. The other two rows cannot match, and the reason is not an unfinished construction but the identity of the group with the rotation group.</p>
+<h2 id="the-photon-and-the-one-coincidence">The Photon, and the One Coincidence</h2>
+<p><strong>The framework reaches the free photon's polarization structure exactly.</strong> The polarization space is the material sector, the indefinite form is the biquaternion norm, and the two circular polarizations are the eigenvectors of left multiplication by $\vec u_\Phi$ with eigenvalues $\mp i$. The helicity operator $\tfrac{i}{2}\mathrm{ad}_{\vec u_\Phi}$ has spectrum $\{+1,0,-1\}$ and its $\pm1$ eigenvectors are the two physical polarizations.</p>
+<p><strong>And it reaches nothing further.</strong> There is no bosonic ladder, so no photon-number operator. No gauge-fixing principle, so the reduction from four polarizations to two is imposed from outside. Masslessness is inserted: nothing in the algebra fixes $m=0$. Interactions are outside the free treatment.</p>
+<p><strong>The one derivation of masslessness is elsewhere and is real.</strong> It is in <em>Electroweak Symmetry Breaking</em>: the zero eigenvalue of the neutral mass matrix is structural, because $Q=T_3+Y$ annihilates the vacuum. It is a statement about the imported doublet, not about the algebra, and it is nonetheless a genuine result.</p>
+<p><strong>The coincidence is the mass formula.</strong> The abelian Higgs gives $M_A=\kappa v/\hbar$; the model gives $M_W=gv/2$. The same structure with $\kappa/\hbar=g/2$. The factor $\tfrac12$ is the isospin of the scalar, and the framework's scalar has isospin zero, so the identification is made from the standard side and after the fact. A match of structure, not a derivation.</p>
+<h2 id="numbers-and-empirical-status">Numbers and Empirical Status</h2>
+<p><strong>Three independent routes to $M_W$, and they bracket the measurement.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Inputs</th>
+<th>Output</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g$, $g_{\mathrm Y}$, $v$ at $M_Z$</td>
+<td>$M_W$, $M_Z$</td>
+<td>$80.24$, $91.51$ GeV</td>
+</tr>
+<tr>
+<td>$\alpha(M_Z)$, $G_F$, $M_Z$</td>
+<td>$M_W$</td>
+<td>$79.83$ GeV</td>
+</tr>
+<tr>
+<td>$\alpha(0)$, $G_F$, $M_Z$</td>
+<td>$M_W$</td>
+<td>$80.94$ GeV</td>
+</tr>
+<tr>
+<td>measurement</td>
+<td>$M_W$</td>
+<td>$80.377$ GeV</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The brackets miss in opposite directions, and the corpus names the correction.</strong> The difference is the one-loop term, quoted as $\delta r=0.0355$. The bookkeeping is correct and is standard theory throughout.</p>
+<p><strong>No measurement separates the framework from standard physics in this sector, and the reason is structural.</strong> A test needs an input that is not algebra — a dynamics, a coupling, a scale, or a selection principle. Here the framework supplies the algebra and imports every input, so nothing is left over to test.</p>
+<p><strong>The cheapest candidate for a test is named by the corpus itself.</strong> A relation $g_{\mathrm Y}=f(g)$ would remove one free parameter and be visible at the per-mille level in the oblique parameters. It does not exist, and the corpus says so in print.</p>
+<h2 id="verdict">Verdict</h2>
+<p><strong>What is in the corpus.</strong> The group and the algebra; the four bosons; the breaking; the mixing; the four-part Lagrangian and the eight-part one after breaking; the currents; the self-couplings; the Yukawa sector; the mixing matrices; the gauge fixing; the anomalies; the precision observables. Every element has a named article, and no article overclaims.</p>
+<p><strong>What is not.</strong> The derivation. The corpus says which parts the algebra produces and which it receives, article by article, and it lists six items of work with the object each needs. That honesty is the corpus's strongest feature and the reason the boundary can be drawn this precisely.</p>
+<p><strong>The one sentence.</strong> The corpus reaches the sector's kinematics, its algebra, its self-couplings and its abelian scalar mechanism; it imports its group, its quantum numbers, its angle and its masses; and it records the difference rather than blurring it.</p>
+<h2 id="the-list-of-articles-in-the-corpuss-order">The List of Articles, in the Corpus's Order</h2>
+<p><strong>Thirty-two entries, numbered straight through.</strong> Twenty-four are the existing articles of the sector; one is the existing <em>Non-Abelian Gauge Fields in Biquaternionic Form</em>, which carries the argument; one is the existing <em>Curved Spacetime and the Biquaternion Framework</em>, in the gravity category; six are proposed. Entries marked <em>(to be written)</em> do not exist yet. Entries marked <em>(to be modified)</em> exist and need one change, stated in the description below.</p>
+<h3 id="biquaternion-particle-physics">Biquaternion Particle Physics</h3>
+<p><strong>Category of <code>physics.md</code>, one of twelve, split into five subsections.</strong> All files in <code>articles_physics/</code>.</p>
+<h4 id="generalities">Generalities</h4>
+<ol>
+<li>The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</li>
+<li>The Standard Model Lagrangian Assembled: Four Sectors in One Expression</li>
+<li>The Electroweak Gauge Group and the Hypercharge Assignment</li>
+<li>Why the Centre Cannot Carry Hypercharge <em>(to be written)</em></li>
+<li>The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors <em>(to be modified)</em></li>
+<li>Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall <em>(to be modified)</em></li>
+<li>Representation Is a Function of Spin <em>(to be written)</em></li>
+<li>The Gauge Carrier of the Material Sector: Why the Action Is One-Sided <em>(to be written)</em></li>
+<li>The Parameter Count as the Measure of the Framework's Boundary</li>
+<li>What Would Count as a Derivation of the Electroweak Sector <em>(to be written)</em></li>
+<li>What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron</li>
+</ol>
+<h4 id="particles-of-spin-0">Particles of spin 0</h4>
+<ol>
+<li>The Higgs Mechanism in Biquaternionic Form <em>(to be modified)</em></li>
+<li>Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses</li>
+<li>The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form</li>
+<li>The Pion and the Chiral Lagrangian in Biquaternionic Form</li>
+<li>Custodial Symmetry and the Rho Parameter in Biquaternionic Form</li>
+<li>Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$</li>
+</ol>
+<h4 id="particles-of-spin-12">Particles of spin 1/2</h4>
+<ol>
+<li>Chiral Fermions in the Biquaternion Framework <em>(to be modified)</em></li>
+<li>The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</li>
+<li>Anomalies and Anomaly Cancellation in Biquaternionic Form</li>
+<li>The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form</li>
+<li>The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation</li>
+<li>The CKM Matrix and CP Violation in Biquaternionic Form</li>
+<li>The PMNS Matrix and Lepton Mixing</li>
+</ol>
+<h4 id="particles-of-spin-1-and-above">Particles of spin 1 and above</h4>
+<ol>
+<li>Non-Abelian Gauge Fields in Biquaternionic Form <em>(to be modified)</em></li>
+<li>Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem</li>
+<li>The W and Z Bosons in Biquaternionic Form <em>(to be modified)</em></li>
+<li>The Weinberg Angle, the Neutral Current and the $Z$ Coupling</li>
+<li>The Normalisation of the Two Kinetic Terms <em>(to be written)</em></li>
+</ol>
+<h4 id="focus-on-informational-aspects">Focus on informational aspects</h4>
+<ol>
+<li>The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</li>
+</ol>
+<h3 id="biquaternion-gravity-and-cosmology">Biquaternion Gravity and Cosmology</h3>
+<p><strong>One category, no subsections, ten existing articles.</strong> One proposal lands here, because the field it treats is geometric and not internal.</p>
+<ol>
+<li>Curved Spacetime and the Biquaternion Framework <em>(to be modified)</em></li>
+<li>The Spin Connection in Biquaternionic Form <em>(to be written)</em></li>
+</ol>
+<p><strong>Three articles outside <code>articles_physics/</code> carry the structural result of this note</strong>, and a physics reader will not find them by searching the physics menu: <em>Operators Acting on One Side</em>, <em>The One-Sided Action and the Spin Representation</em> and <em>Polar Decomposition of Quaternions</em>, all in <code>articles_maths/</code>. That is the argument for entry 8, and the reason it is proposed as a physics article rather than a mathematics one.</p>
+<h2 id="what-each-article-contains">What Each Article Contains</h2>
+<p><strong>Same order, same numbers.</strong> Each entry is a short description, then the parenthesis that says what the article is for in the sector.</p>
+<p><strong>1. The Standard Model: Content, Quantum Numbers and the Nineteen Parameters.</strong> The group and its three couplings; the five multiplets with $T_3$, $Y$ and $Q=Y+T_3$, counted $15=6+3+3+2+1$; the twelve gauge bosons and the degree-of-freedom check; the four anomaly conditions and the three hypercharge rays; the nineteen parameters with scheme and scale on every row; and the count of what the algebra fixes, which is none. (the inventory of the model)</p>
+<p><strong>2. The Standard Model Lagrangian Assembled: Four Sectors in One Expression.</strong> Why there are four sectors; the sign rule that identifies the corpus's kinetic terms with the standard ones; the three curvatures; the fermion term; the potential and its minimum; the three Yukawa matrices with the hypercharge audit; the gauge-invariance audit term by term; and sixty parameters reduced to nineteen over the two flavour rotations. (the Lagrangian, and what it costs)</p>
+<p><strong>3. The Electroweak Gauge Group and the Hypercharge Assignment.</strong> The algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and its difference from $\mathfrak{u}(2)$; the seven-row hypercharge table; the triangle coefficients and the lemmas that make three conditions vanish; the $3\times 5$ matrix of rank three and its two-dimensional solution space; the cubic and its three rays; and why the framework's central phase is vector-like and cannot be $Y$. (the group and the charges)</p>
+<p><strong>4. Why the Centre Cannot Carry Hypercharge.</strong> <em>To be written, and it finishes entry 3, which ends by naming its obstacle.</em> The no-go: any Lie-algebra isomorphism of $\mathfrak{u}(2)$ onto $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ carries the centre to the centre; the central element is $ie_t$; and one central charge gives one charge to everything, where hypercharge gives six. (the refusal route, proved in print)</p>
+<p><strong>5. The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors.</strong> <em>To be modified: the ceiling should carry the grading this note adopts — the computations are theorems, the Coleman–Mandula name is an interpretation.</em> What the framework reaches in each of the three gauge factors; matter, chirality, hypercharge and content; the scalar sector as unbuilt; the ledger; and the object each row needs. (the boundary of the whole model)</p>
+<p><strong>6. Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall.</strong> <em>To be modified: the ledger's six rows should gain a seventh, the carrier, whose object is entry 8.</em> What the framework reaches; the chiral-fermion obstacle; hypercharge with nothing deriving it; the scalar sector; gauge fixing and the content of an orbit; the ledger; and the object each row needs. (the boundary of this sector, and the source of the six-item project)</p>
+<p><strong>7. Representation Is a Function of Spin.</strong> <em>To be written, and it states the root that entries 6, 12 and 18 share.</em> The theorem; the correspondence table for spin zero, half and one; and the three-way failure — spin zero cannot be a doublet, spin half cannot be chiral, only spin one matches. (the single sentence the three obstructions reduce to)</p>
+<p><strong>8. The Gauge Carrier of the Material Sector: Why the Action Is One-Sided.</strong> <em>To be written; the alternative filing is Particles of spin 1/2 if the corpus prefers to keep the carrier with matter.</em> The three results in one place: the left family is multiplicative in its parameter; the single operator is not an endomorphism; the left action on the spin group is the spin representation on a minimal left ideal. Plus the trace discriminator against conjugation. (the carrier, collected where a physics reader will look)</p>
+<p><strong>9. The Parameter Count as the Measure of the Framework's Boundary.</strong> The nineteen regrouped with the flavour block at $68.4\%$; the three grades of fixing — a value, a relation, a constraint — kept apart; a typology of the nineteen by kind of object and the five machines the five kinds need; and the framework's own three parameters counted the same way, giving $19+3=22$ and an imported share of $86.4\%$. (the boundary turned into a number)</p>
+<p><strong>10. What Would Count as a Derivation of the Electroweak Sector.</strong> <em>To be written, and it fixes the standard against which entry 9 is read.</em> The acceptance criteria, stated before anything is claimed: which objects a derivation must produce, in which order, and what would count as having produced them. (the standard, in public)</p>
+<p><strong>11. What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron.</strong> The missing mass, with the model's content at $15.7\%$ of the budget and no knob to turn; $N_\nu=2.9963\pm0.0074$ from the $Z$ width; direct detection fourteen orders below a weak cross-section; and the sphaleron as the one success that forbids its own use. (what lies outside the model)</p>
+<p><strong>12. The Higgs Mechanism in Biquaternionic Form.</strong> <em>To be modified: it should record that the scalar is central, hence a singlet, and that this is why the non-abelian factor acquires no mass from it.</em> The scalar, the phase and the covariant derivative; the potential and the vacuum; the mass from the scalar kinetic term, $M_A=\kappa v/\hbar$; the would-be Goldstone and the count $2+2=1+3$; and what the framework does not supply. (the mechanism in the only form the algebra gives it)</p>
+<p><strong>13. Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses.</strong> The three requirements on the scalar and why a doublet meets them; the three-sphere of minima; $Q\langle\varphi\rangle=0$ as the reason the photon stays massless; the $4\times 4$ mass matrix and its eigenvalues; the trace sum rule; the mixing angle as the diagonalising angle; the count $12=12$; the unitary gauge; and the numbers by three routes. (the mechanism in the form the model needs)</p>
+<p><strong>14. The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form.</strong> The invariant potential and its symmetry; the effective action and the constant field; the one-loop correction; radiative breaking; and the scale dependence. (the potential beyond the tree)</p>
+<p><strong>15. The Pion and the Chiral Lagrangian in Biquaternionic Form.</strong> Chiral symmetry and its breaking; the pion as an adjoint of the material sector; the chiral Lagrangian; the Gell-Mann–Oakes–Renner relation; currents, the decay constant and the soft limit. (the low-energy limit of the sector)</p>
+<p><strong>16. Custodial Symmetry and the Rho Parameter in Biquaternionic Form.</strong> The custodial symmetry of a scalar sector; its action in the algebra; the mass matrices and $\rho=M_W^2/(M_Z^2\cos^2\theta_W)$; the relation to the chiral Lagrangian; and the empirical status. (one relation among the vector masses)</p>
+<p><strong>17. Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$.</strong> The count $8-2-3=3$; transversality as a Ward identity; $\alpha T=\rho-1$, so that entry 16's $\rho$ is this article's numerator; $S$ as the $W^3$–$B$ mixing coefficient; the Veltman bracket and its two limits; and the measurements with their correlation. (the sector as measured)</p>
+<p><strong>18. Chiral Fermions in the Biquaternion Framework.</strong> <em>To be modified: it should state the letter law as the obstruction it is, and name the left action as the spin representation rather than as a candidate gauge action.</em> The two chiral halves and the projectors; chiral gauge symmetry on the Dirac module; what the centre supplies, a vector-like abelian sector; the mass term and the real structure; and what the framework supplies, transcribes and does not supply. (matter, and the obstruction that stops the sector)</p>
+<p><strong>19. The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form.</strong> The chiral symmetry of the linear mass term; the condensate as an order parameter; the gap equation and the critical coupling; the effective potential and the mass shell; Goldstone counting and where the pion lives. (matter, broken dynamically)</p>
+<p><strong>20. Anomalies and Anomaly Cancellation in Biquaternionic Form.</strong> The classical symmetry and its quantum failure; the axial anomaly; the triangle coefficient and the group factors; cancellation on the model spectrum; the anomaly as a topological density; the non-abelian anomaly and its consistency condition; and the 't Hooft vertex. (matter, consistency)</p>
+<p><strong>21. The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form.</strong> The measure and the chiral rotation; the Jacobian and the heat-kernel regulator; the regulator and the symmetry it preserves; the comparison with the diagrammatic derivation; and the integrated form and the index. (the same anomaly, from the measure side)</p>
+<p><strong>22. The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation.</strong> The four forbidden mass terms and why each fails; the three matrices as $3\times 3$ complex and why three; $M_f=Y^f v/\sqrt 2$ and why it is not Hermitian; the singular-value theorem and why bi-unitary is forced; $V_{\mathrm{CKM}}=W_u^{\dagger}W_d$ with the neutral currents staying diagonal; the count $9-5=4$; and the Jarlskog invariant. (matter, masses and mixing)</p>
+<p><strong>23. The CKM Matrix and CP Violation in Biquaternionic Form.</strong> The matrix as a flavour-factor operator; the parameter count and the CP phase; why the phase is not central; the mass matrices as the origin of the mixing; the Jarlskog invariant; and the unitarity triangle against the data. (matter, quark mixing)</p>
+<p><strong>24. The PMNS Matrix and Lepton Mixing.</strong> The matrix as $U_e^{\dagger}U_\nu$; the parameter count as a test of the neutrino's nature, four if Dirac against six if Majorana; the measured angles and phase; why neutrinos oscillate; and two Jarlskog values. (matter, lepton mixing)</p>
+<p><strong>25. Non-Abelian Gauge Fields in Biquaternionic Form.</strong> <em>To be modified: its open item 3 — "the representation carried by the matter field must be specified" — can now point at entry 8 instead of standing open, and its group should be named $\mathrm{Spin}(3)$ with the geometric reading attached.</em> The gauge algebra inside the material sector; the connection and the covariant derivative acting by left multiplication; the field strength as the commutator of covariant derivatives; the Bianchi identity and where Jacobi enters; the Yang–Mills action; and the reality condition. (the article this note rests on)</p>
+<p><strong>26. Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem.</strong> The parameter named, with the corpus writing $\zeta$ and the title keeping $R_\xi$; the zero mode of the quadratic kernel as the gauge orbit; one functional doing two jobs; the ghost determinant; the ghost masses as coordinates; and the equivalence theorem. (the vector sector, gauge-fixed)</p>
+<p><strong>27. The W and Z Bosons in Biquaternionic Form.</strong> <em>To be modified: the self-couplings section should say that the non-abelian factor is the rotation group, so that its three- and four-point vertices are those of a frame connection.</em> The vector bosons; the charged and neutral directions inside the algebra, $\vec e_x\pm i\vec e_y$ with eigenvalues $\pm 1$; mass generation and what the framework reaches; the currents and the vector-like obstruction; and the self-couplings as powers of the commutator. (the vectors, and the one construction the algebra supports)</p>
+<p><strong>28. The Weinberg Angle, the Neutral Current and the $Z$ Coupling.</strong> The two neutral currents before mixing; the single condition $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ that fixes the angle; the proof that the $Z$ bracket is $\sqrt{g^2+g_{\mathrm Y}^2}(J^3-\sin^2\theta_W J^Q)$ and that the $\sin^2$ is a residue and not a convention; the chiral decomposition; and the Paschos–Wolfenstein ratio. (the vectors, after mixing)</p>
+<p><strong>29. The Normalisation of the Two Kinetic Terms.</strong> <em>To be written; the only proposal that needs new mathematics.</em> A principle fixing the relative normalisation of the two gauge kinetic terms, and therefore a value of $\sin^2\theta_W$. It would replace the measurement of entry 28 with a computation, and it is the only entry on this list that could give the sector a prediction. (the one falsifiable item)</p>
+<p><strong>30. The Higgs Mechanism as an Erasure of Information in Biquaternionic Form.</strong> The symmetric phase and the information in its vacuum; the flat directions of the potential; the erasure as the elimination of a gauge direction; where the information goes, into the longitudinal mode and the mass; and the vacuum as a stable record. (the same mechanism, read as information)</p>
+<p><strong>31. Curved Spacetime and the Biquaternion Framework.</strong> <em>To be modified: it should accept the $\mathrm{Spin}(3)$ identification as the corpus's own spin connection, since the sentence it already contains — "it sits inside it" — is the whole of the point.</em> What the flat machinery assumes; why curvature cannot be carried by the algebra; the three routes, the local scale factor, the field of frames with the Kerr–Schild sub-class, and the connection with the two-sided derivative; the Dirac equation on a curved background and its Lichnerowicz square; and the informational sector on a curved background. (the geometric branch of the fork)</p>
+<p><strong>32. The Spin Connection in Biquaternionic Form.</strong> <em>To be written, and it states as a construction what entry 31 states as a remark; it sits beside Torsion, Contorsion and the Spin Connection in Biquaternionic Form.</em> The adjoint field of $\mathrm{Spin}(3)$ identified as the spatial part of the tetrad spin connection; the covariant derivative it defines; and the explicit statement of what the algebra does not determine. (the field the non-abelian factor actually is)</p>
+<h2 id="verification">Verification</h2>
+<p><strong>Three commands, each under a minute.</strong></p>
+<p><strong>One: the sector is twenty-four of the seventy-three articles of the category.</strong></p>
+<pre><code class="language-bash">python3 - &lt;&lt;'PY'
+import re
+t=open('physics.md').read()
+s=re.search(r'(?ms)^## Biquaternion Particle Physics\n(.*?)^## ',t).group(1)
+slugs=re.findall(r'href=&quot;articles_physics/([^&quot;]+)\.html&quot;',s)
+kw=['electroweak','weinberg','higgs','w-and-z','custodial','hypercharge','yukawa',
+    'ckm','pmns','chiral','goldstone','oblique','anomal','parameter-count',
+    'standard-model','gauge-fixing','fujikawa','pion','condensate',
+    'effective-potential','neutral']
+print(len(slugs), len([x for x in slugs if any(k in x for k in kw)]))
+PY
+</code></pre>
+<p>The output is <code>73 24</code>.</p>
+<p><strong>Two: the list follows the menu, and the six proposals are the only titles the menu does not carry.</strong></p>
+<pre><code class="language-bash">python3 - &lt;&lt;'PY'
+import re
+t=open('physics.md').read()
+n=open('articles_internal/internal-note-on-the-electroweak-force-in-the-corpus.md').read()
+menu=[]
+for cat in ['Biquaternion Particle Physics','Biquaternion Gravity and Cosmology']:
+    sec=re.search(r'(?ms)^## '+cat+r'\n(.*?)(?=^## |\Z)',t).group(1)
+    menu+=re.findall(r'href=&quot;articles_physics/[^&quot;]+\.html&quot;&gt;([^&lt;]+)&lt;',sec)
+b=n[n.index('## The List of Articles'):n.index('## What Each Article Contains')]
+titles=re.findall(r'(?m)^\d+\. (.+?)(?: \*\(|$)',b)
+idx=[menu.index(x) for x in titles if x in menu]
+print('entries',len(titles),'existing',len(idx),'in menu order',idx==sorted(idx))
+print('proposed',[x for x in titles if x not in menu])
+PY
+</code></pre>
+<p>The output is <code>entries 32</code>, <code>existing 26</code>, <code>in menu order True</code>, and one line naming exactly the six proposals: the centre no-go, representation-is-a-function-of-spin, the carrier, the acceptance criteria, the normalisation of the two kinetic terms, and the spin connection.</p>
+<p><strong>Three: no raised index, which is a corpus rule and not a style preference.</strong> The rule is that the metric is the unit metric, which raises nothing, so a raised index would name the same index twice. Every derivative here is written $\partial/\partial R_\mu$.</p>
+<pre><code class="language-bash">grep -cE '\\partial/\\partial R\^|d/dR\^' \
+  articles_internal/internal-note-on-the-electroweak-force-in-the-corpus.md
+</code></pre>
+<p>The output is <code>0</code>. The exit status is $1$, because <code>grep -c</code> returns $1$ when it counts nothing, and counting nothing is the expected result here.</p>
+<p><strong>What the commands do not show.</strong> They show that the file exists, that the count is twenty-four, that the list follows the menu and that no index is raised. They do not show that any statement in this note is right. The numerical claims it rests on — the automorphism residual, the non-endomorphism of left multiplication, the trace discriminator, the exclusion of the boost — were recomputed in Python before being written, and any reader can rerun the four checks in the two tables above from the formulas given.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
