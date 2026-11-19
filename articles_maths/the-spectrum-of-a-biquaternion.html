@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Spectrum — Biquaternion Universe</title>
+  <title>The Spectrum of a Biquaternion — Biquaternion Universe</title>
   <meta name="description" content="The biquaternion algebra carries many quadratic conditions; this article studies one of them, the square of the vector part,">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,7 +69,7 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-spectrum"><strong>The Spectrum</strong></h1>
+        <h1 id="the-spectrum-of-a-biquaternion"><strong>The Spectrum of a Biquaternion</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>The biquaternion algebra carries many quadratic conditions; this article studies one of them, the square of the vector part,</p>
 <p>$$
@@ -80,7 +80,7 @@ $$</p>
 <p>$$
 B^2=Q_x^2+Q_y^2+Q_z^2,\qquad \vec Q^2=-B^2e_t.
 $$</p>
-<p>The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The companion article <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em> studies the zero-divisor set; this article studies $B^2$ and the spectral cases it defines. The matrix realization $\mathsf{M}_2$ of <em>$M_2(\mathbb{C})$ Pauli Representation</em> appears only as a check, through the identity $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$; the criterion is proved without it. The algebra and its conventions are <em>The Biquaternion Algebra</em>; the eigenvalue decomposition, the normality criterion and the spectral theorem are <em>The Biquaternion Eigenvalue Decomposition</em>.</p>
+<p>The number $B$ is a fixed complex square root of $B^2$; the other root only exchanges the two eigenvalues. The companion article <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em> studies the zero-divisor set; this article studies $B^2$ and the spectral cases it defines. The matrix realization $\mathsf{M}_2$ of <em>$M_2(\mathbb{C})$ Pauli Representation</em> appears only as a check, through the identity $\det\mathsf{M}_2(\tilde Q)=Q_t^2+B^2$; the criterion is proved without it. The algebra and its conventions are <em>Introduction to the Algebra of Biquaternions</em>; the eigenvalue decomposition, the normality criterion and the spectral theorem are <em>The Biquaternion Eigenvalue Decomposition</em>.</p>
 <h2 id="the-spectral-criterion">The Spectral Criterion</h2>
 <p><strong>An eigenvalue is a scalar for which a left ideal is proper, and the criterion turns that definition into a single polynomial equation.</strong></p>
 <p><strong>Definition (eigenvalue).</strong> A scalar $\lambda\in\mathbb{C}$ is an <strong>eigenvalue</strong> of $\tilde Q$ if the left ideal $\mathbb{B}(\tilde Q-\lambda e_t)$ is proper, that is $\mathbb{B}(\tilde Q-\lambda e_t)\neq\mathbb{B}$.</p>
@@ -244,7 +244,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The first row is the spectrally regular case. The second row is the central part of the spectral-degenerate cone, $\vec Q=0$: it is semisimple too, but its semisimplicity comes from the degree-one minimal polynomial, not from distinct roots. The last two rows form the non-central part of the cone, split by the scalar part. The table says what the two-case split does not. The characteristic polynomial cannot separate the scalar case from the Jordan case: both have $(X-Q_t)^2$, and only the minimal polynomial distinguishes them. It also cannot separate the nilpotent case from the origin: both have $X^2$. The two-case split of this article is the coarser reading by $B^2$: the regular case is the non-scalar semisimple row, and the degenerate case contains the scalar, Jordan and nilpotent rows. The classification is the one used in <em>The Semisimple–Nilpotent Split</em>.</p>
+<p>The first row is the spectrally regular case. The second row is the central part of the spectral-degenerate cone, $\vec Q=0$: it is semisimple too, but its semisimplicity comes from the degree-one minimal polynomial, not from distinct roots. The last two rows form the non-central part of the cone, split by the scalar part. The table says what the two-case split does not. The characteristic polynomial cannot separate the scalar case from the Jordan case: both have $(X-Q_t)^2$, and only the minimal polynomial distinguishes them. It also cannot separate the nilpotent case from the origin: both have $X^2$. The two-case split of this article is the coarser reading by $B^2$: the regular case is the non-scalar semisimple row, and the degenerate case contains the scalar, Jordan and nilpotent rows. The classification is the one used in <em>The Semisimple–Nilpotent Split of a Biquaternion</em>.</p>
 <p><strong>Remark (the words).</strong> Unqualified <strong>regular</strong> means <strong>spectrally regular</strong>, $B^2\neq0$, and <strong>degenerate</strong> means <strong>spectrally degenerate</strong>, $B^2=0$; both words are fixed by the discriminant. Degenerate here does not mean defective: the vertex is semisimple, while the other two strata of the spectral-degenerate cone are defective.</p>
 <p><strong>Remark (the condition is not multiplicative).</strong> Neither case is stable under the product. Two elements of $B^2=0$ can multiply to an element of $B^2\neq0$: both factors of</p>
 <p>$$
@@ -492,7 +492,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-semisimple-nilpotent-split.html">The Semisimple–Nilpotent Split</a>, for the four types as the semisimple and nilpotent split, the Peirce corner pattern and the multiplicative form.</li>
+<li><a href="the-semisimple-nilpotent-split-of-a-biquaternion.html">The Semisimple–Nilpotent Split</a>, for the four types as the semisimple and nilpotent split, the Peirce corner pattern and the multiplicative form.</li>
 <li><a href="the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a>, for the construction, the normalisation, the expansion of every biquaternion and the spinor reading.</li>
 <li><a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>, for the comparison of the null cone and the spectral-degenerate cone, the four sectors, the two decompositions and the two operator loci.</li>
 <li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the unipotent stratum inside the group of invertibles.</li>
