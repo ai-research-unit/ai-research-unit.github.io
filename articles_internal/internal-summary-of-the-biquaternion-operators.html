@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Operators — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the Operators block of the maths category Biquaternions, forty articles. It gives the objects, the boxed equations…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-operators"><strong>Internal Summary of the Biquaternion Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the <em>Operators</em> block of the maths category <em>Biquaternions</em>, forty articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them.</p>
+<p><strong>What the block does.</strong> It takes the one algebra and asks what its own linear maps are. The answer has a spine:</p>
+<p>$$
+L_{\tilde Q}(X)=\tilde QX,\qquad R_{\tilde Q}(X)=X\tilde Q,\qquad
+\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*},
+$$</p>
+<p>$$
+\boxed{\;\dim L(\mathbb{B})=\dim R(\mathbb{B})=4,\qquad \dim\bigl(L(\mathbb{B})\cap R(\mathbb{B})\bigr)=1,\qquad \dim\bigl(L(\mathbb{B})+R(\mathbb{B})\bigr)=7\;}
+$$</p>
+<p>$$
+\boxed{\;\mathbb{B}^{e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})\;}
+$$</p>
+<p><strong>The non-trivial claim, and it organises the whole block.</strong> The algebra of one-sided operators is <strong>seven</strong>-dimensional, not eight: $L$ and $R$ overlap exactly on the scalars. So the operators <em>almost</em> span $\mathrm{End}_{\mathbb{C}}$, and the missing direction is exactly the two-sided sandwich, which is why $\mathrm{Sd}$ is not an $L$ or an $R$ but a product of the two.</p>
+<p><strong>Why this matters to an agent.</strong> A "two-sided operator" is not a new object requiring a new theorem: it is the composite $R_{\tilde Q^{*}}\circ L_{\tilde Q}$, and its properties follow from the two one-sided families. Every closure statement of the block ("from the rotor to the spin", "from the spin to the carriers") is an instance of this composite.</p>
+<h2 id="1-the-four-products-are-the-source">1. The Four Products Are the Source</h2>
+<p>$$
+\tilde Q_1\tilde Q_2,\qquad \tilde Q_1^{\natural}\tilde Q_2,\qquad \tilde Q_1\tilde Q_2^{*},\qquad \tilde Q_1^{\natural}\tilde Q_2^{*}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Each product, read as a map in the second slot, gives a different <em>adjoint pair</em>. The four products do not give four theories; they give the four ways a $\mathbb{C}$-linear map can be related to its adjoint. This is why the operator block begins with the products and not with the maps.</p>
+<h2 id="2-the-one-sided-families">2. The One-Sided Families</h2>
+<p>$$
+L_{\lambda\tilde Q+\mu\tilde Q_2}=\lambda L_{\tilde Q}+\mu L_{\tilde Q_2},\qquad
+L_{\tilde Q}L_{\tilde Q_2}=L_{\tilde Q\tilde Q_2},\qquad
+R_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2\tilde Q},
+$$</p>
+<p>$$
+L_{\tilde Q}R_{\tilde Q_2}=R_{\tilde Q_2}L_{\tilde Q},\qquad
+\operatorname{Ann}_r(\tilde Q)=\{X:\tilde QX=0\},\qquad \operatorname{Ann}_l(\tilde Q)=\{X:X\tilde Q=0\}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> $L$ is a homomorphism and $R$ is an <em>anti</em>-homomorphism. This single sign is the origin of the transposition identity</p>
+<p>$$
+L_{\tilde Q}=\natural\,R_{\natural(\tilde Q)}\,\natural,\qquad R_{\tilde Q}=\natural\,L_{\natural(\tilde Q)}\,\natural,
+$$</p>
+<p>so left and right are the same family conjugated by the involution. There is no separate theory of right multiplication.</p>
+<p><strong>The kernel is the annihilator.</strong> $\ker L_{\tilde Q}=\mathrm{Ann}_r(\tilde Q)$, and it is nonzero exactly on the zero-divisor cone. <strong>The non-trivial claim:</strong> injectivity of $L_{\tilde Q}$ is invertibility of $\tilde Q$, with no intermediate case. The reason is finite dimension: injective implies surjective implies a right inverse, and a right inverse in a finite-dimensional algebra is an inverse. So the operator picture and the algebraic picture agree exactly, and there is no "almost invertible" operator.</p>
+<h2 id="3-two-sided-operators-and-the-enveloping-algebra">3. Two-Sided Operators and the Enveloping Algebra</h2>
+<p>$$
+L_{\tilde Q}R_{\tilde Q_2}(X)=\tilde Q\,X\,\tilde Q_2,\qquad
+\bigl(L_aR_b\bigr)\bigl(L_cR_d\bigr)=L_{ac}R_{db},
+$$</p>
+<p>$$
+\mathbb{B}^{e}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}_{\mathrm{opp}},\qquad
+(\tilde Q_1\otimes\tilde Q_{\mathrm{opp},2})\cdot\tilde Q_3=\tilde Q_1\tilde Q_3\tilde Q_2,\qquad
+\mathbb{B}^{e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C}).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The sandwich product law $L_aR_bL_cR_d=L_{ac}R_{db}$ has the <em>inner</em> indices contracted, not the outer ones — the reverse of matrix multiplication in the second factor. That single reversal is why $\mathbb{B}_{\mathrm{opp}}$ and not $\mathbb{B}$ appears in the enveloping algebra.</p>
+<p><strong>The sandwich, and its own law.</strong></p>
+<p>$$
+\mathrm{Sd}_{\tilde Q}(X)=\tilde QX\tilde Q^{*},\qquad \mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}\circ L_{\tilde Q},\qquad
+\mathrm{Sd}_{\tilde Q\tilde Q'}=\mathrm{Sd}_{\tilde Q}\circ\mathrm{Sd}_{\tilde Q'},
+$$</p>
+<p>$$
+\boxed{\;\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde Q_H}\circ\mathrm{Sd}_{\tilde Q_0},\qquad \mathrm{Sd}_{\tilde Q}=4a^{2}\,\mathrm{Sd}_{\tilde Q_0}\ \text{ when }\ \tilde Q=2a\tilde Q_0\;.}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The sandwich is multiplicative and it respects the polar decomposition: the modulus part acts as a scalar rescaling, so the <em>projective</em> sandwich — the one that matters for rotations — depends only on the unit part. This is the operator-level statement of "a rotation is unchanged by rescaling".</p>
+<h2 id="4-adjoints-hermitian-pairs-transposition">4. Adjoints, Hermitian Pairs, Transposition</h2>
+<p>$$
+\langle F\tilde Q_1,\tilde Q_2\rangle_{\phi}=\langle\tilde Q_1,F^{\phi}\tilde Q_2\rangle_{\phi}\qquad\text{(adjoint pair)},
+$$</p>
+<p>$$
+(F^{\approx})^{\approx}=F,\qquad (F\circ G)^{\approx}=G^{\approx}\circ F^{\approx}\qquad\text{(the transposition involution)}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Each of the four forms gives an adjoint operation, and the four are related by</p>
+<p>$$
+\langle\tilde Q_1,\tilde Q_2\rangle_{*}=\langle\tilde Q_1,\bar{\tilde Q}_2\rangle_{\natural},\qquad
+\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\langle\tilde Q_1^{\natural},\tilde Q_2\rangle .
+$$</p>
+<p>So the Hermitian theory has <em>one</em> adjoint operation that looks like four, and the "Hermitian pair" articles are the four displays of that one. The Hermitian pair of $L$ is $R$ with a rotated involution; the Hermitian pair of $L R$ is the sandwich with the rotated one.</p>
+<p><strong>The non-trivial claim about the four sectors.</strong> The dimension count</p>
+<p>$$
+\dim L=4,\quad \dim R=4,\quad \dim(L\cap R)=1,\quad \dim(L+R)=7
+$$</p>
+<p>means that the one-sided operators span a seven-dimensional Lie algebra. Its commutators are the inner derivations, of real dimension six, and the scalars contribute one central direction, so the algebra is $\mathfrak{so}(1,3)\oplus\mathfrak{u}(1)$. This is the same $6+1$ split the Geometry block gets from the versors, and the operator language and the group language are the same statement.</p>
+<h2 id="5-the-block-structure-on-the-regular-sector">5. The Block Structure on the Regular Sector</h2>
+<p><strong>The splitting of $L$, and the two halves.</strong></p>
+<p>$$
+L_{\tilde Q}=\begin{pmatrix}D_{\tilde Q}&O_{\tilde Q}\\O_{\tilde Q}&D_{\tilde Q}\end{pmatrix},\qquad
+D_{\tilde Q}(X)=\tfrac12\bigl(\tilde QX+X\tilde Q^{*}\bigr),\qquad
+O_{\tilde Q}(X)=\tfrac12\bigl(\tilde QX-X\tilde Q^{*}\bigr).
+$$</p>
+<p><strong>The non-trivial claim.</strong> On the N-regular sector the operator splits into a <strong>Hermitian part</strong> $D$ and an <strong>anti-Hermitian part</strong> $O$ with respect to $*$. That is a Cartan decomposition of the operator, and its two factors are the "dilatation" and "rotation" of the map. This is where the operator block meets the geometry block: $D$ is the stretch, $O$ is the turn.</p>
+<p><strong>The spin-zero, spin-half, spin-one strata.</strong> The block tests three subspaces against N-regularity and spectral regularity:</p>
+<p>$$
+\mathbb{C}e_t\ \ (\text{spin zero}),\qquad \mathcal{S}_{\mathrm{bisp}}\ \ (\text{spin half}),\qquad \mathbb{B}_{\Phi}\ \ (\text{spin one, anti-Hermitian}),
+$$</p>
+<p>and reports, for each, whether the operator families act faithfully, whether they preserve the subspace, and which stratum of N and of the spectrum they meet.</p>
+<p><strong>The non-trivial claim about the centre.</strong> On $\mathbb{C}e_t$ the norm is $N(\lambda e_t)=\lambda^{2}$, whose only zero is $\lambda=0$: the centre has no zero divisors. So the spin-zero sector is <em>regular by construction</em>, and every failure the block reports elsewhere is a failure off the centre.</p>
+<h2 id="6-spinors-and-the-fierzkofink-identities">6. Spinors and the Fierz–Kofink Identities</h2>
+<p><strong>The five bilinears, and the identity they obey.</strong></p>
+<p>$$
+\sigma=\psi^{\dagger}iR_{\vec e_x}\psi,\qquad
+\omega=i\psi^{\dagger}iR_{\vec e_x}(-iR_{\vec e_z})\psi,\qquad
+J_0=\psi^{\dagger}iR_{\vec e_x}iR_{\vec e_x}\psi,\qquad J_k=\psi^{\dagger}iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}\psi,
+$$</p>
+<p>$$
+\boxed{\;J^{2}=\sigma^{2}+\omega^{2},\qquad J^{2}=-K^{2},\qquad J\cdot K=0\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> These are exactly the Fierz–Kofink identities of the Dirac theory, and here they are <em>operator identities</em> on the eight-dimensional carrier, not spinor identities obtained case by case. The classification of spinors (the "flags" of the spinor variety) then follows from the signs of $J^2$ and $K^2$, and an agent gets the classification for free.</p>
+<p><strong>The rotor group.</strong></p>
+<p>$$
+\mathrm{Rot}=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=\{\tilde q:|\tilde q|=1\}=S^{3},\qquad
+[J_x,J_y]=2J_z,\quad[J_y,J_z]=2J_x,\quad[J_z,J_x]=2J_y .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The factor $\tfrac12$ in the exponent, $\exp(\tfrac{\theta}{2}\vec u)$, is the <em>consequence</em> of the sandwich being quadratic in $\tilde q$: $\tilde q\tilde X\tilde q^{\natural}$ needs a half angle to give the angle. Spin is therefore not added to the algebra; it is forced by the quadratic action, and the closure chain "rotor → spin of the rotor → spin of a pair of two-sided operators → the carriers" is exactly this forcing written four times.</p>
+<h2 id="7-the-matrix-models-of-the-operators">7. The Matrix Models of the Operators</h2>
+<p>$$
+L_{\mathrm{axf}}(\tilde Q)=\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix},\qquad
+\mathcal{E}_{\mathbb{C}}=\{F\in\mathcal{E}_{\mathbb{R}}:FJ=JF\}\cong M_4(\mathbb{C}).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The axis-free model is the real form and the Pauli model is the complex form; the relation between them is <em>exactly</em> the commutation with the complex structure $J$. An agent converting between the two should convert by imposing $FJ=JF$, not by matching entries.</p>
+<p><strong>The SVD.</strong></p>
+<p>$$
+F=\sum_{k=1}^{4}\rho_k\,\mathcal P_{\tilde U_k,\tilde V_k},\qquad \rho_1\ge\rho_2\ge\rho_3\ge\rho_4\ge0,\qquad F(\tilde V_k)=\rho_k\tilde U_k ,
+$$</p>
+<p>with $\mathcal P$ the rank-one operators built from the <em>positive</em> form $H$.</p>
+<p><strong>The non-trivial claim.</strong> The SVD exists because $H$ is positive definite — and $H$ is the only one of the four forms that is. So the SVD is the one operator decomposition that <em>cannot</em> be moved to the Krein form: on $\mathrm{Kr}$ the singular values can vanish without the operator doing so.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The block in six formulas.</strong></p>
+<p>$$
+L_{\tilde Q}(X)=\tilde QX,\quad R_{\tilde Q}(X)=X\tilde Q,\quad \mathrm{Sd}_{\tilde Q}=R_{\tilde Q^{*}}L_{\tilde Q},
+$$</p>
+<p>$$
+\dim(L)+\dim(R)-\dim(L\cap R)=4+4-1=7,\qquad
+\mathbb{B}^{e}\cong M_4(\mathbb{C}),\qquad
+J^{2}=\sigma^{2}+\omega^{2},\quad J\cdot K=0 .
+$$</p>
+<p><strong>Five results to keep.</strong> One-sided operators span seven of the eight dimensions. $L$ is a homomorphism, $R$ an anti-homomorphism, and the transposition identity makes them one family. The sandwich is the polar-decomposition-respecting composite, and the half-angle is forced by its quadratic action. The five Fierz–Kofink bilinears are operator identities. The SVD lives on the positive form only.</p>
+<p><strong>Three refusals.</strong> The block does not produce a division algebra of operators. It does not give a spectral theorem on the Krein form. It does not add spin: spin is proved, not assumed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde Q}$, $R_{\tilde Q}$</td>
+<td>left, right multiplication</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_{\tilde Q}$</td>
+<td>sandwich $X\mapsto\tilde QX\tilde Q^{*}$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}^{e}$</td>
+<td>enveloping algebra</td>
+</tr>
+<tr>
+<td>$\mathcal{E}_{\mathbb{C}}$, $\mathcal{E}_{\mathbb{R}}$</td>
+<td>complex, real endomorphisms</td>
+</tr>
+<tr>
+<td>$D_{\tilde Q}$, $O_{\tilde Q}$</td>
+<td>Hermitian, anti-Hermitian halves of $L$</td>
+</tr>
+<tr>
+<td>$\sigma,\omega,J,K$</td>
+<td>the Fierz–Kofink bilinears</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>introduction-to-the-operators-of-the-biquaternion-algebra</code>, <code>operators-acting-on-one-side</code>, <code>operators-acting-on-two-sides</code>, <code>the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure</code>, <code>the-fierz-kofink-identities-and-the-classification-of-spinors</code>, <code>the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra</code>. Companions in this folder: <code>left-and-right-actions-of-operators.md</code>, <code>the-rotor-sandwich-and-the-one-sided-matrix.md</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
