@@ -45,7 +45,7 @@ The article proves the bridge, the kernel identity, the two unitarity criteria a
 | The roots of $1$, the pure root and the Hermitian root | [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), §*The Root of One* |
 | The Fourier reading of the normalised Peirce basis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*The Fourier Reading of the Basis* |
 | The truncated exponential on the spectral cone | [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), §*Multiplication, Inversion, and the Exponential* |
-| The characteristic polynomial, the eigenvalues $Q_t\pm iB$ and the spectral criterion | [The Spectrum](the-spectrum.html), §*The Spectral Criterion* |
+| The characteristic polynomial, the eigenvalues $Q_t\pm iB$ and the spectral criterion | [The Spectrum](the-spectrum-of-a-biquaternion.html), §*The Spectral Criterion* |
 | The idempotents $\tilde\Pi_\pm$, the eigenspaces and the normalised Peirce basis | [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), §*The Eigenbasis* |
 | Normality, the Hermitian projectors and the orthogonal spectral resolution | [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Hermitian Case* |
 | The Fourier kernel, the root-adapted basis and the factorization into complex transforms | [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), §*The Fourier Kernel* and §*Factorization into Complex Fourier Transforms* |
@@ -124,7 +124,7 @@ $$
 
 ### The Spectrum as Two Frequencies
 
-The characteristic polynomial and the spectral criterion are those of *The Spectrum*, §*The Spectral Criterion*:
+The characteristic polynomial and the spectral criterion are those of *The Spectrum of a Biquaternion*, §*The Spectral Criterion*:
 
 $$
 p_{\tilde Q}(X)=X^2-2Q_tX+Q_t^2+B^2=(X-Q_t-iB)(X-Q_t+iB),
@@ -483,10 +483,10 @@ The normality of the element, the Hermiticity of the root and the existence of a
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, its two regimes and the Hermitian norm of the flow.
 - [Biquaternion Continuous Harmonic Analysis](biquaternion-continuous-harmonic-analysis.html), for the kernel, the root of one, the Peirce factorization and the analytic theorems.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the eigenbasis, the normalised Peirce basis and the Fourier reading of the basis.
-- [The Spectrum](the-spectrum.html), for the characteristic polynomial and the spectral criterion.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the characteristic polynomial and the spectral criterion.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), for the normality theorem and the orthogonal spectral resolution.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the three strata of the cone.
 - [Special Element and Peirce Conventions](special-element-and-peirce-conventions.html), for the root glyph, the halving map and the Peirce coordinates.
-- [Idempotents](idempotents.html), for the idempotents of the biquaternion algebra and their classification.
+- [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the idempotents of the biquaternion algebra and their classification.
 - [The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root](the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html), for the unitarity criterion of the character.
 - [Dual Numbers Harmonic Analysis](dual-numbers-harmonic-analysis.html), for the truncated character at the cone.

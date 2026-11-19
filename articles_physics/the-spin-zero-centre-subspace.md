@@ -36,7 +36,7 @@
 | the list of three carriers, the criterion of the weight string, the four closure rules | [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
 | the two predicates, the four sectors and the placement of the carriers among them | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the multiplicativity of the norm and its vanishing exactly on the elements without an inverse | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| the simple module $\mathbb{C}^{2}$, every module a sum of copies of it, the multiplicity as the complex dimension | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
+| the simple module $\mathbb{C}^{2}$, every module a sum of copies of it, the multiplicity as the complex dimension | [The Category of Modules](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) |
 
 **The three rows that own the carrier.** The first row states the subspace and the action, the second states the first predicate, and the third states the second. The other four supply what those three use: the place of the carrier in the list of three, the sector notation that places it among the four regions, the multiplicativity that turns the vanishing of the norm into a statement about invertibility, and the classification of the modules that excludes a module of odd complex dimension.
 

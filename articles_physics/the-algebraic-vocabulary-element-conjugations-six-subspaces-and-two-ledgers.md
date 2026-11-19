@@ -12,13 +12,13 @@
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| the algebra as a tensor product, the basis, the multiplication table, associativity, the unit, the centre | [Introduction to the Algebra of Biquaternions](../articles_maths/the-biquaternion-algebra.html) |
-| the general element, the three coordinate writings, the scalar–vector split, the four conjugations, the real form, the central complex structure | [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](../articles_maths/the-element-the-coordinates-and-the-conjugations.html) |
-| the two conjugations, the Klein four-group, the three splittings, the orbits, the sign-twisted adjoint | [The Group of Involutions of the Biquaternion Algebra](../articles_maths/the-group-of-involutions.html) |
+| the algebra as a tensor product, the basis, the multiplication table, associativity, the unit, the centre | [Introduction to the Algebra of Biquaternions](../articles_maths/introduction-to-the-algebra-of-biquaternions.html) |
+| the general element, the three coordinate writings, the scalar–vector split, the four conjugations, the real form, the central complex structure | [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](../articles_maths/the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html) |
+| the two conjugations, the Klein four-group, the three splittings, the orbits, the sign-twisted adjoint | [The Group of Involutions of the Biquaternion Algebra](../articles_maths/the-group-of-involutions-of-the-biquaternion-algebra.html) |
 | the six remarkable subspaces, the four coordinate blocks, the three decompositions, and why there are exactly three | [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html) |
-| the square, its two parts, the central square, the square-zero elements, the isotropic cone | [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element.html) |
-| the two annihilators, the zero divisors, the invertibles and the criterion that separates them | [Zero Divisors and Invertibles in the Biquaternion Algebra](../articles_maths/zero-divisors-and-invertibles.html) |
-| the reduction of the root problem, the classification of roots, the three central values | [The Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-an-element.html) |
+| the square, its two parts, the central square, the square-zero elements, the isotropic cone | [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element-in-the-biquaternion-algebra.html) |
+| the two annihilators, the zero divisors, the invertibles and the criterion that separates them | [Zero Divisors and Invertibles in the Biquaternion Algebra](../articles_maths/zero-divisors-and-invertibles-in-the-biquaternion-algebra.html) |
+| the reduction of the root problem, the classification of roots, the three central values | [The Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/the-square-roots-of-a-general-element-in-the-biquaternion-algebra.html) |
 
 **The rows are in the order the entry uses them.** The algebra comes first, then the element that inhabits it, then the maps that cut it, then the pieces the maps produce, then the two operations that are read: the square and the root.
 
@@ -377,7 +377,7 @@ $$
 
 ## Further Reading
 
-**In the mathematics corpus.** The seven articles of the source table, and [The Spectrum](../articles_maths/the-spectrum.html) for the eigenvalue pair $\lambda_\pm=Q_t\pm iB$, which this entry names and does not read.
+**In the mathematics corpus.** The seven articles of the source table, and [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) for the eigenvalue pair $\lambda_\pm=Q_t\pm iB$, which this entry names and does not read.
 
 **In this category.** The entries that take up what this one states in brief are [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html) and [The Pauli Pair and the Gamma Frame: Which Statements Survive Conjugation](the-pauli-pair-and-the-gamma-frame-which-statements-survive-conjugation.html) for the two displays, [Idempotents, Ideals and Observables](idempotents-ideals-and-observables.html) for the idempotents and the Peirce corners, [The Spectrum and the Two Modes](the-spectrum-and-the-two-modes.html) for the eigenvalue pair and the two predicates, [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html) for the norm, [Four-Vectors and the Interval](four-vectors-and-the-interval.html) for the real slice and its metric, and [States, Observables and the Born Weight](states-observables-and-the-born-weight.html) for the Hermitian slice and the weight.
 

@@ -6,7 +6,7 @@
 
 The article proves the homotopy equivalence with the maximal compact subgroup, computes the fundamental group from the determinant, records the higher homotopy and the homology of $U(2)$, treats the real group and its orthogonal subgroup, and shows that the halves are contractible so that their only invariants come from the components of the invertible elements inside them. It assumes *The Topology of $M_2(\mathbb{C})$*, *The Cartan Decomposition of $\mathrm{GL}_2(\mathbb{C})$* and *The Two Halves and Their Topology at $n=2$*.
 
-It follows the biquaternion article *The Regular Module* for the corresponding statements in the biquaternion coordinates.
+It follows the biquaternion article *The Regular Module in the Biquaternion Algebra* for the corresponding statements in the biquaternion coordinates.
 
 ## The Group and Its Maximal Compact
 

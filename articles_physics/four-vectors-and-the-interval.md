@@ -46,7 +46,7 @@ $$
 | the rotor conjugation, the double covers, $SO^{+}(1,3)$ and $\mathrm{Spin}(1,3)$ | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | the exponential, the boost and rotation families and their closed forms | [Biquaternion Lie Group and Exponential Structure](../articles_maths/biquaternion-lie-group-and-exponential-structure.html) |
 | the eigenvalue decomposition, the eigenprojectors and the degenerate case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| the spectrum, the centraliser and the semisimple–nilpotent split | [The Spectrum](../articles_maths/the-spectrum.html) |
+| the spectrum, the centraliser and the semisimple–nilpotent split | [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) |
 | the K norm and the coincidence of the two null sets on this sector | [Kr-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | the rank of the one-sided multiplications and the polar decomposition | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 
@@ -495,7 +495,7 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 ### I.12.e — The Modes of a Four-Vector Are in the Other Sector
 
-**Read:** the eigenprojector display and the idempotent argument of §*The Spectrum*.
+**Read:** the eigenprojector display and the idempotent argument of §*The Spectrum of a Biquaternion*.
 
 **The two spectral projectors of a momentum are Hermitian idempotents, so they lie in the informational half.** The momentum lies in the material half. The decomposition $\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-$ therefore writes a material element as a combination of informational ones with imaginary coefficients.
 
@@ -507,7 +507,7 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 ### I.12.f — The Spectrum Is a Doppler Pair
 
-**Read:** the eigenvalues, the rapidity and the ratio of §*The Spectrum*, and *The Spectral Reading of a Four-Vector*.
+**Read:** the eigenvalues, the rapidity and the ratio of §*The Spectrum of a Biquaternion*, and *The Spectral Reading of a Four-Vector*.
 
 **The two eigenvalues are imaginary and their quotients by $i$ are the two light-cone frequencies.** For a massive momentum they are $mc\,e^{\pm\theta_{\mathrm{rpd}}}$, the rest frequency scaled by the two reciprocal Doppler factors of the momentum's own rapidity. The sum is twice the energy, the difference twice the momentum, the ratio the squared Doppler factor, and the product the mass squared.
 
@@ -519,7 +519,7 @@ and the interpolation of the two imaginary eigenvalues returns $\frac12(e_t\mp i
 
 ### I.12.g — The Branch Is Declared and Not Derived
 
-**Read:** the fifth claim of the introduction and the two degenerate cases of §*The Spectrum*.
+**Read:** the fifth claim of the introduction and the two degenerate cases of §*The Spectrum of a Biquaternion*.
 
 **The statement that both frequencies are non-negative is the statement $E/c\ge\lvert\vec p\rvert$, and that is the choice of the future sheet.** The proper orthochronous group preserves the sign of the temporal component, so the choice is stable under every transformation the entry uses. It is nonetheless a choice: the past sheet gives the same pair with both signs reversed, and the two sheets are exchanged by a reflection and not by a boost.
 

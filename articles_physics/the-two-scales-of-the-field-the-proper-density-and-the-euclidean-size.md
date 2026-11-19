@@ -1,4 +1,4 @@
-# __The Two Scales of the Field: the Proper Density and the Euclidean Size__
+# __The Two Scales of the Field: The Proper Density and the Euclidean Size__
 
 ## Introduction
 

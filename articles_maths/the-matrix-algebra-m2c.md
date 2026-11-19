@@ -179,4 +179,4 @@ Its centre is $\mathbb{C}I$ and it is simple, hence central simple. The trace is
 - Roger A. Horn and Charles R. Johnson, *Matrix Analysis* (Cambridge University Press, 2013), for the matrix units, the trace and the determinant at order two.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for central simple algebras and the centre.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the identification with the biquaternion algebra in full.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra $\mathbb{B}$ identified with this one.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra $\mathbb{B}$ identified with this one.

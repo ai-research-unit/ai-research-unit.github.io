@@ -109,7 +109,7 @@ $$
 
 of determinant $\langle\tilde Q_1\rangle_{\natural}^2$ and trace $4Q_{1t}$, with characteristic polynomial $\bigl((\omega-Q_{1t})^2+\sum_kQ_k^2\bigr)^2$. The two are different objects: $\mathsf{M}_2(L_{\tilde Q_1})$ is not defined, and the eigenvalues of the $4\times4$ matrix $L_{\tilde Q_1}$ are $\{Q_{1t}+iB,Q_{1t}+iB,Q_{1t}-iB,Q_{1t}-iB\}$ with $B=\sqrt{\sum_kQ_k^2}$, the eigenvalues of $\mathsf{M}_2(\tilde Q_1)$ each counted twice.
 
-**Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q_1}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q_1)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q_1)$ acts by $M$ (*The Category of Modules*). The eigenvalues of $M$ are $Q_{1t}\pm iB$ by the characteristic polynomial of the matrix-element-representation article.
+**Proof.** Under the identification $\mathbb{B}=\mathbb{C}^4$ the operator $L_{\tilde Q_1}$ is the left regular representation, and its characteristic polynomial is the square of that of $\mathsf{M}_2(\tilde Q_1)$ because $\mathbb{B}\cong M_2(\mathbb{C})$ is the direct sum of two copies of the simple module on which $M=\mathsf{M}_2(\tilde Q_1)$ acts by $M$ (*The Category of Modules in the Biquaternion Algebra*). The eigenvalues of $M$ are $Q_{1t}\pm iB$ by the characteristic polynomial of the matrix-element-representation article.
 
 **Corollary (where the operator enters the dynamics).** The derivative of the quadratic family is the sum of two operators on the space and not an element,
 
@@ -144,6 +144,6 @@ The matrix model conjugates the biquaternion quadratic family to the polynomial 
 
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html) and [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the isomorphism, the trace and the determinant in matrix form.
 - [The Biquaternion Quadratic Map and Its Julia Sets](the-biquaternion-quadratic-map-and-its-julia-sets.html), for the family, the eigenvalue reduction and the critical set.
-- [The Category of Modules](the-category-of-modules.html), for the regular representation and the doubling of the spectrum.
+- [The Category of Modules](the-category-of-modules-in-the-biquaternion-algebra.html), for the regular representation and the doubling of the spectrum.
 - [The Zero Divisors and the Singular Julia Sets](the-zero-divisors-and-the-singular-julia-sets.html), for the cone that the leading part of the matrix family is not proper over.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm $\langle\cdot\rangle_{\natural}$ and the Euclidean norm compared here.

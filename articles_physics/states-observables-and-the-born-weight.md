@@ -73,10 +73,10 @@ A timelike momentum gives a positive state, a null one gives a pure state, and a
 | the effect interval, the orthomodular lattice and the projection lattice | [Effect Algebras and Orthomodular Lattices](../articles_maths/effect-algebras-and-orthomodular-lattices.html) |
 | the extremal rays of a cone and the convex structure of a slice | [Cones, Extremal Rays and the Choquet Theory](../articles_maths/cones-extremal-rays-and-the-choquet-theory.html) |
 | the eigenvalue decomposition, the idempotents and the degenerate case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| the spectrum, the centraliser and the semisimple–nilpotent split | [The Spectrum](../articles_maths/the-spectrum.html) |
+| the spectrum, the centraliser and the semisimple–nilpotent split | [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) |
 | the positive square root and the polar decomposition of an element | [Positive Operators and the Square Root](../articles_maths/positive-operators-and-the-square-root.html) |
 | the completely positive maps, the Kraus form and the dilation | [Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint](../articles_maths/completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.html) |
-| the centraliser of a generic element and its dimension | [The Centraliser in the Biquaternion Algebra](../articles_maths/the-centraliser.html) |
+| the centraliser of a generic element and its dimension | [The Centraliser in the Biquaternion Algebra](../articles_maths/the-centraliser-in-the-biquaternion-algebra.html) |
 | the rotor conjugation, the double covers and the Lorentz action | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
 | the bracket and the Jordan structure of the two halves | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
 | the K norm and the coincidence of the two null sets on the material sector | [Kr-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |

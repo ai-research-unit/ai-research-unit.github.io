@@ -211,7 +211,7 @@ The comparison isolates the plane: in $\mathbb{C}$ the eigenvalues leave $\mathb
 
 ## Further Reading
 
-- [The Spectrum](the-spectrum.html), for the cone and its strata.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the cone and its strata.
 - [Split-Quaternion Spectral Theory](split-quaternion-spectral-theory.html), for the cone and its defects.
 - [Eigenvalue Decomposition and Eigenbasis of a Split-Complex Number](eigenvalue-decomposition-and-eigenbasis-of-a-split-complex-number.html), for the eigenprojections and the regimes.
 - [$M_2(\mathbb{R})$ Hyperbolic Representation](m2r-hyperbolic-representation.html), for the matrix models.

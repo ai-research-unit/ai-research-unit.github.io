@@ -1,12 +1,12 @@
-# __The Group of Involutions__
+# __The Group of Involutions of the Biquaternion Algebra__
 
 ## Introduction
 
 The biquaternion algebra carries two conjugations. The **quaternion conjugation** ${}^{\natural}$ is $\mathbb{C}$-linear and changes the sign of the vector part. The **Hermitian conjugation** ${}^{*}$ is antilinear and conjugates the coefficients as well. Both are involutions, both reverse the order of a product, and they commute. The identity, the two maps and their composite therefore make a set of four that is closed under composition. That set is the Klein four-group $V_{4}\cong\mathbb{Z}_{2}\times\mathbb{Z}_{2}$.
 
-This article fixes the group: the two definitions, the composition rules, the Cayley table, the three subgroups, the three splittings that the subgroups induce, and the orbits. It closes with the map $\flat=-{}^{*}$, which *The Element, the Coordinates and the Conjugations* records beside the four and which is not in the group.
+This article fixes the group: the two definitions, the composition rules, the Cayley table, the three subgroups, the three splittings that the subgroups induce, and the orbits. It closes with the map $\flat=-{}^{*}$, which *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra* records beside the four and which is not in the group.
 
-The algebra is *The Biquaternion Algebra*; the element, its coordinates and the definitions of the conjugations are *The Element, the Coordinates and the Conjugations*. Only what the group needs is recalled here.
+The algebra is *Introduction to the Algebra of Biquaternions*; the element, its coordinates and the definitions of the conjugations are *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. Only what the group needs is recalled here.
 
 ## The Two Conjugations
 
@@ -170,7 +170,7 @@ four distinct elements, so the orbit has size $4$. For $\tilde Q=(1+3i)e_t$ the 
 
 ## The Sign-Twisted Adjoint
 
-*The Element, the Coordinates and the Conjugations* records a further map beside the four, the **anti-Hermitian conjugation** $\flat=-{}^{*}$:
+*The Element, the Coordinates and the Conjugations in the Biquaternion Algebra* records a further map beside the four, the **anti-Hermitian conjugation** $\flat=-{}^{*}$:
 
 $$
 \tilde Q^{\flat}=-\tilde Q^{*}=-\bar Q_te_t+\bar Q_x\vec e_x+\bar Q_y\vec e_y+\bar Q_z\vec e_z .
@@ -209,8 +209,8 @@ The algebra carries the quaternion conjugation ${}^{\natural}$, $\mathbb{C}$-lin
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its basis and its tensor product
-- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the four maps and the scalar–vector form of the product
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra, its basis and its tensor product
+- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the four maps and the scalar–vector form of the product
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces of the three splittings, one to a section
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the relations between the six and the lattice they form
 - [Adjoint Pair of $L$ and $R$ Operators](adjoint-pair-of-l-and-r-operators.html), for the matrix images of the four maps

@@ -6,7 +6,7 @@ An exceptional point is a degeneracy at which two eigenvalues coincide **and** t
 
 The biquaternion spectrum has both. For $\tilde Q=Q_te_t+\vec Q$ the eigenvalues are $\lambda_\pm=Q_t\pm iB$ with $B^2=(\vec Q,\vec Q)$. They coincide exactly when $B=0$. If $\vec Q=0$ the element is central and semisimple: the degeneracy is diabolic. If $\vec Q\neq0$ and $B=0$ the element is a single Jordan block: the degeneracy is exceptional. The second case is the subject of this article.
 
-The article owns the question, not the theorem. The spectrum and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*; the spectral-degenerate cone and the Jordan normal form are those of *The Spectrum*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
+The article owns the question, not the theorem. The spectrum and the eigenprojections are those of *The Biquaternion Eigenvalue Decomposition*; the spectral-degenerate cone and the Jordan normal form are those of *The Spectrum of a Biquaternion*. The exponential of the nilpotent is that of *Biquaternion Elementary Functions*. What is added here is the reading of the degenerate point, the distinction from the diabolic point, the two normal forms, and the boundary of the physical claim.
 
 ## The Results It Uses
 
@@ -14,11 +14,11 @@ The article owns the question, not the theorem. The spectrum and the eigenprojec
 | --- | --- |
 | The spectrum, the characteristic polynomial and the discriminant | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
 | The eigenprojections and the Hermitian case | [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html) |
-| The spectral-degenerate cone and the Jordan normal form | [The Spectrum](../articles_maths/the-spectrum.html) |
+| The spectral-degenerate cone and the Jordan normal form | [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) |
 | The exponential in the nilpotent regime | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The logarithm of a Jordan block | [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html) |
 | The two strata of the zero-divisor cone | *The Complete Polar Decomposition of an N-Regular Biquaternion* |
-| The nilpotents and their square-zero property | [Nilpotents](../articles_maths/nilpotents.html) |
+| The nilpotents and their square-zero property | [Nilpotents](../articles_maths/the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html) |
 
 ## The Discriminant and the Degeneracy
 
@@ -179,10 +179,10 @@ An exceptional point is not a measurement. The eigenprojections disappear at the
 
 ## Further Reading
 
-- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/the-spectrum.html) for the spectral-degenerate cone and the Jordan normal form.
+- [The Biquaternion Eigenvalue Decomposition](../articles_maths/the-biquaternion-eigenvalue-decomposition.html), for the spectrum and the eigenprojections, and [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) for the spectral-degenerate cone and the Jordan normal form.
 - [Biquaternion Elementary Functions](../articles_maths/biquaternion-elementary-functions.html), for the exponential and the logarithm in the nilpotent regime.
 - *The Complete Polar Decomposition of an N-Regular Biquaternion*, for the boundary of the word and the two strata of the cone.
-- [Nilpotents](../articles_maths/nilpotents.html), for the nilpotents and their square-zero property.
+- [Nilpotents](../articles_maths/the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotents and their square-zero property.
 - [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the nilpotent stratum read physically and its distinction from the photon.
 - [Biorthogonal Quantum Mechanics and the Biquaternion Spectrum](biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html), for the probability calculus of a non-normal element.
 - [The Unstable State and the Complex Energy Pole in Biquaternionic Form](the-unstable-state-and-the-complex-energy-pole-in-biquaternionic-form.html), for the resonance pole, which is not an exceptional point.

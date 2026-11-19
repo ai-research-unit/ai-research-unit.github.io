@@ -178,7 +178,7 @@ Every biquaternion has a unique Peirce expansion, with the scalar part and the a
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition in the whole algebra
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis of the four corners
 - [The Special Decomposition of a Biquaternion under a Peirce Basis](the-special-decomposition-of-a-biquaternion-under-a-peirce-basis.html), for the reading of an element in that basis
-- [The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](nilpotents.html), for the nilpotents of the whole algebra
-- [The Square Roots of One and the Idempotents of the Biquaternion Algebra](idempotents.html), for the classification of the idempotents
+- [The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the nilpotents of the whole algebra
+- [The Square Roots of One and the Idempotents of the Biquaternion Algebra](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the idempotents
 - [The $M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the matrix model in which the table is the table of matrix units
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the Peirce constants.

@@ -194,7 +194,7 @@ the two differing, so $\Lambda_X^{\dagger}$ is not $\Lambda_X$ but the conjugate
 
 ### The Indefinite Biquaternion Form
 
-**Example (the indefinite biquaternion form).** On $\mathbb{B}$ with the general quaternionic sesquilinear form $h_{\natural*}$ of signature $(2,6)$ and the fundamental symmetry $J = \operatorname{diag}(1,-1,-1,-1)$ of *The Fundamental Symmetry of the Form*, §*The Biquaternion Algebra*, the adjoints are related by
+**Example (the indefinite biquaternion form).** On $\mathbb{B}$ with the general quaternionic sesquilinear form $h_{\natural*}$ of signature $(2,6)$ and the fundamental symmetry $J = \operatorname{diag}(1,-1,-1,-1)$ of *The Fundamental Symmetry of the Form*, §*Introduction to the Algebra of Biquaternions*, the adjoints are related by
 
 $$
 T^{\dagger} = J\,T^{*}\,J ,

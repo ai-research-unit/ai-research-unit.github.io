@@ -1,4 +1,4 @@
-# __Square Roots of an Element__
+# __The Square Roots of a General Element in the Biquaternion Algebra__
 
 ## Introduction
 
@@ -8,11 +8,11 @@ $$
 \tilde{Ζ}^2 = \tilde Q .
 $$
 
-The method needs no Clifford algebra, no norm and no form. It is the same vector–scalar split that solves the three central cases $\tilde{Ζ}^2=-1,0,+1$ in *Idempotents* and *Nilpotents*, carried one step further: the split turns the equation into one vector equation and one scalar equation, and the scalar equation is a quadratic in the square $x=Ζ_t^2$ of the scalar part of a root. The roots are then read off the solutions of that quadratic, and the answer is a finite set — generically four elements, falling to two — or a four-parameter family, or empty.
+The method needs no Clifford algebra, no norm and no form. It is the same vector–scalar split that solves the three central cases $\tilde{Ζ}^2=-1,0,+1$ in *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*, carried one step further: the split turns the equation into one vector equation and one scalar equation, and the scalar equation is a quadratic in the square $x=Ζ_t^2$ of the scalar part of a root. The roots are then read off the solutions of that quadratic, and the answer is a finite set — generically four elements, falling to two — or a four-parameter family, or empty.
 
-**The results.** For a radicand with non-vanishing vector part the roots come in pairs $\pm\tilde{Ζ}$: there are **four roots** generically, **two** in the two degenerate rows, and **none** for the rootless row $(\vec Q,\vec Q) = 0$, $n = 0$, $Q_t = 0$. For a complex scalar radicand $\tilde Q = Q_t e_t$ the roots are the two scalars $\pm\sqrt{Q_t}\,e_t$ together with a **four-parameter family** of pure $\vec{Ζ}$ with $(\vec{Ζ},\vec{Ζ}) = -Q_t$. The three central values recover the three sets of *Idempotents* and *Nilpotents*. Each case below states its answer first and then proves it.
+**The results.** For a radicand with non-vanishing vector part the roots come in pairs $\pm\tilde{Ζ}$: there are **four roots** generically, **two** in the two degenerate rows, and **none** for the rootless row $(\vec Q,\vec Q) = 0$, $n = 0$, $Q_t = 0$. For a complex scalar radicand $\tilde Q = Q_t e_t$ the roots are the two scalars $\pm\sqrt{Q_t}\,e_t$ together with a **four-parameter family** of pure $\vec{Ζ}$ with $(\vec{Ζ},\vec{Ζ}) = -Q_t$. The three central values recover the three sets of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*. Each case below states its answer first and then proves it.
 
-The article is algebraic. The biquaternion algebra also carries a Clifford structure, treated in *Biquaternion Versors and the Orthogonal Group*; that structure is not used here. The three central values of *Idempotents* and *Nilpotents* are recovered as the case of a complex scalar $\tilde Q$, in §*The Three Central Values*, which checks this method against the direct computations of those articles. The zero-divisor cone, of which the nonzero roots of $0$ are a part, is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, named here only where the classification touches it. The polar and exponential decompositions that the answer must be consistent with are *The Complete Polar Decomposition of an N-Regular Biquaternion*.
+The article is algebraic. The biquaternion algebra also carries a Clifford structure, treated in *Biquaternion Versors and the Orthogonal Group*; that structure is not used here. The three central values of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra* are recovered as the case of a complex scalar $\tilde Q$, in §*The Three Central Values*, which checks this method against the direct computations of those articles. The zero-divisor cone, of which the nonzero roots of $0$ are a part, is *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors*, named here only where the classification touches it. The polar and exponential decompositions that the answer must be consistent with are *The Complete Polar Decomposition of an N-Regular Biquaternion*.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked.
 
@@ -198,7 +198,7 @@ $$
 
 **The three central values reproduce the three sets of the companion articles: the roots of $-1$ and of $+1$ in the first, the roots of $0$ in the second.**
 
-The classification specialises to the three central values $\tilde Q=-1,0,+1$ of the companion articles *Idempotents* and *Nilpotents*, and reproduces them; the agreement is the check that this method and the direct computations of those articles are the same computation.
+The classification specialises to the three central values $\tilde Q=-1,0,+1$ of the companion articles *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*, and reproduces them; the agreement is the check that this method and the direct computations of those articles are the same computation.
 
 **$\tilde Q=-e_t$ ($Q_t=-1$, $\vec Q=0$).** A complex scalar, so the complex-scalar case. The scalar roots are $\pm\sqrt{-1}\,e_t=\pm ie_t$, the trivial roots of the companion articles. The family is $(\vec{Ζ},\vec{Ζ})=1$, that is $\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=1$ and $\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0$, which is exactly the pure roots of $-1$: the real roots are the members with $\vec\zeta'=0$, and the non-trivial roots are the members with $\vec\zeta'\neq0$.
 
@@ -281,8 +281,8 @@ The number of roots is: **four** when $(\vec Q,\vec Q)\neq0$ and $n\neq0$; **two
 
 ## Further Reading
 
-- [Idempotents](idempotents.html), for the case $\tilde Q=+e_t$, the idempotents and their geometry.
-- [Nilpotents](nilpotents.html), for the case $\tilde Q=0$ and the nilpotent cone.
+- [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the case $\tilde Q=+e_t$, the idempotents and their geometry.
+- [Nilpotents](the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the case $\tilde Q=0$ and the nilpotent cone.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition attached to a root of $+1$.
 - A. Acus and A. Dargys, *Square roots of complexified quaternions*, arXiv:2601.08391 (2026), for the square-root problem of complexified quaternions and the worked examples reproduced here.
 - S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the central case.

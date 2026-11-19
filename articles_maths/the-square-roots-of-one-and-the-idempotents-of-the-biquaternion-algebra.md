@@ -1,8 +1,8 @@
-# __Idempotents__
+# __The Square Roots of One and the Idempotents of the Biquaternion Algebra__
 
 ## Introduction
 
-The multiplication of the algebra $\mathbb{B}$ is the plain product $\tilde Q_1\tilde Q_2$ of *The Biquaternion Algebra*, and that product is the one read throughout this article.
+The multiplication of the algebra $\mathbb{B}$ is the plain product $\tilde Q_1\tilde Q_2$ of *Introduction to the Algebra of Biquaternions*, and that product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $+1$, the elements $\tilde{Ζ}\in\mathbb{B}$ with
 
@@ -35,7 +35,7 @@ The following table collects the results at a glance.
 | Zero divisors | every non-trivial idempotent; every non-pure zero divisor is $2Q_t\tilde\Pi$ | two families |
 | Involutions | the quaternion conjugation and the bar exchange the standard pair; the star fixes both | three involutions |
 
-The article is algebraic. It does not treat the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, which is *Square Roots of an Element*; the roots of $0$ and the nilpotents, which are *Nilpotents*; the structure of the zero-divisor set, which is *Zero Divisors and Invertibles*; or the corner decomposition the standard idempotents produce, which is *Peirce Decompositions of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
+The article is algebraic. It does not treat the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, which is *The Square Roots of a General Element in the Biquaternion Algebra*; the roots of $0$ and the nilpotents, which are *The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*; the structure of the zero-divisor set, which is *Zero Divisors and Invertibles in the Biquaternion Algebra*; or the corner decomposition the standard idempotents produce, which is *Peirce Decompositions of the Biquaternion Algebra*. The subsection §*The Roots of Minus One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
 
 $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
@@ -680,8 +680,8 @@ The idempotents are the trivial elements $0$ and $e_t$ and the elements $\tilde\
 
 ## Further Reading
 
-- [Square Roots of an Element](square-roots-of-an-element.html), for the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, of which the roots of $+1$ here are one case.
-- [Nilpotents](nilpotents.html), for the roots of $0$ and the nilpotents, the second central value.
+- [Square Roots of an Element](the-square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, of which the roots of $+1$ here are one case.
+- [Nilpotents](the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the roots of $0$ and the nilpotents, the second central value.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, of which the non-pure family consists of the complex multiples of the non-trivial idempotents.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition the standard idempotents drive.
 - [Square Roots of One and the Idempotents of the Split-Complex Algebra](square-roots-of-one-and-the-idempotents-of-the-split-complex-algebra.html), the real commutative case, where the roots of $+1$ and the idempotents are four points and there is no root of $-1$.

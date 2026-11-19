@@ -70,7 +70,7 @@ $$
 =\sum_{s,t}\tilde\Pi_{s}\tilde Q\tilde\Pi_{t}
 $$
 
-for every $\tilde Q\in\mathbb{B}$. Each corner is nonzero: the diagonal corner contains $\tilde\Pi_{s}$, and the mixed corners are nonzero by the lemma, since $\mathbb{B}$ is simple (*The Biquaternion Algebra*). The algebra has complex dimension four, the sum is direct, and it has four nonzero summands; hence each summand is one-dimensional.
+for every $\tilde Q\in\mathbb{B}$. Each corner is nonzero: the diagonal corner contains $\tilde\Pi_{s}$, and the mixed corners are nonzero by the lemma, since $\mathbb{B}$ is simple (*Introduction to the Algebra of Biquaternions*). The algebra has complex dimension four, the sum is direct, and it has four nonzero summands; hence each summand is one-dimensional.
 
 ### The Biquaternion Case
 
@@ -217,8 +217,8 @@ A nondegenerate complete family $\tilde\Pi_{+},\tilde\Pi_{-}$ of two idempotents
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the units, the product table, the centre and simplicity.
-- [Idempotents](idempotents.html), for the classification of the idempotents and the standard pair.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the units, the product table, the centre and simplicity.
+- [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the idempotents and the standard pair.
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the choice of an element in each line and the gauge.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the elements of the two spinor spaces; the matrix form of the cut.
 - [The Peirce Decomposition in $n$ Dimensions](the-peirce-decomposition-in-n-dimensions.html), for the general family.

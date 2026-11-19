@@ -142,5 +142,5 @@ Every element is semisimple, because $\mathbb R[\tilde q]$ is $\mathbb R$ or $\m
 - [Eigenvalue Decomposition and Eigenbasis of a Quaternion](eigenvalue-decomposition-and-eigenbasis-of-a-quaternion.html), for the centraliser, the eigenlines and the eigenbasis.
 - [Relations between the Quaternion Norm and Spectral Regularity and Degeneracy](relations-between-the-quaternion-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the two quadratic conditions.
 - [The Three Sectors of the Quaternion Algebra](the-three-sectors-of-the-quaternion-algebra.html), for the three nonempty sectors and the empty fourth.
-- [The Spectrum](the-spectrum.html), for the biquaternion cone and its strata.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the biquaternion cone and its strata.
 - [Split-Quaternion Algebra](split-quaternion-algebra.html), for the split-quaternion multiplication and the element $1+\vec e_x+\vec e_y$.

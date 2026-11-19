@@ -20,7 +20,7 @@ The article is a catalogue in the genre of the subspace and obstruction catalogu
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
 | The sectors as the eigenspaces of Hermitian conjugation, their bases and dimensions | [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
-| The four conjugations as a Klein four-group, their commutativity and their fixed spaces | [The Group of Involutions](../articles_maths/the-group-of-involutions.html) |
+| The four conjugations as a Klein four-group, their commutativity and their fixed spaces | [The Group of Involutions](../articles_maths/the-group-of-involutions-of-the-biquaternion-algebra.html) |
 | The norm, its multiplicativity and the identity $\tilde Q^{\natural}\tilde Q=\langle\tilde Q\rangle_{\natural}e_t$ | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
 | The four general products and their behaviour on the sectors | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html) |
 | The two-sided operator by a Hermitian rotor and the adjoint action | [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html) |
@@ -232,7 +232,7 @@ The algebra splits into the material and the informational sectors, the eigenspa
 ## Further Reading
 
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the sectors, the conjugations and the trace.
-- [The Group of Involutions](../articles_maths/the-group-of-involutions.html), for the Klein four-group and its fixed spaces.
+- [The Group of Involutions](../articles_maths/the-group-of-involutions-of-the-biquaternion-algebra.html), for the Klein four-group and its fixed spaces.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm identity and its multiplicativity.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) and [Remarkable Subspaces and the Four General Products, Forms and Norms](../articles_maths/remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the products and their sector behaviour.
 - [Biquaternion Rotations and Lorentz Transformations](../articles_maths/biquaternion-rotations-and-lorentz-transformations.html), for the two-sided operator and the rotors.

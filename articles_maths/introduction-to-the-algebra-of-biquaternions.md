@@ -1,4 +1,4 @@
-# __The Biquaternion Algebra__
+# __Introduction to the Algebra of Biquaternions__
 
 ## Introduction
 
@@ -8,9 +8,9 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H} ,
 $$
 
-the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new scalar imaginary $i$ adjoined as a **central** element. This article fixes the algebra: the construction by the tensor product, the multiplication and its table, the algebra axioms, the multiplication as a scalar extension, the centre and the structure map, the presentation by generators and relations, and the absence of division. The element, its three coordinate systems, the two scalar readings and the complex structure $J$ are *The Element, the Coordinates and the Conjugations*; the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*; the hyperbolic basis of the plain scalar part is filed with the plain product, after the forms.
+the four quaternion units $e_t, \vec e_x, \vec e_y, \vec e_z$ kept and the new scalar imaginary $i$ adjoined as a **central** element. This article fixes the algebra: the construction by the tensor product, the multiplication and its table, the algebra axioms, the multiplication as a scalar extension, the centre and the structure map, the presentation by generators and relations, and the absence of division. The element, its three coordinate systems, the two scalar readings and the complex structure $J$ are *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*; the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*; the hyperbolic basis of the plain scalar part is filed with the plain product, after the forms.
 
-The multiplication is stated here at the level of the basis, the table and bilinearity. Its scalar–vector form, the four general products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*. The four conjugations, their group, their fixed spaces and the lattice they form are *The Element, the Coordinates and the Conjugations*, *The Group of Involutions* and *Subspaces and Decompositions*. The algebra read over the real scalars is in *The Element, the Coordinates and the Conjugations*. No form appears here: the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+The multiplication is stated here at the level of the basis, the table and bilinearity. Its scalar–vector form, the four general products, their relations and their comparison are *The Four General Products and Their Relations over the Biquaternion Algebra*. The four conjugations, their group, their fixed spaces and the lattice they form are *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*, *The Group of Involutions of the Biquaternion Algebra* and *Subspaces and Decompositions*. The algebra read over the real scalars is in *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. No form appears here: the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 This article opens the group *The Algebra and Its Vector Spaces* and the Biquaternions category. It is self-contained up to the quaternion algebra $\mathbb{H}$, whose basis, multiplication and conjugation are assumed. The construction of $\mathbb{B}$ taken as a stack of three layers, with the proof that the third layer is a scalar extension and not a rung of the Cayley–Dickson doubling, is *The Cayley–Dickson Construction of the Biquaternion Algebra*, below this article in this category; the same algebra declared from the four units and the central scalar, without a base field inside the vector part, is *The Axis-Free Construction of the Biquaternion Algebra*, before it.
 
@@ -245,7 +245,7 @@ $$
 
 Two generators suffice, and the relations $\vec e_x^2 = \vec e_y^2 = -e_t$ and $\vec e_x \vec e_y + \vec e_y \vec e_x = 0$ present the algebra as the quaternion algebra over $\mathbb{C}$.
 
-The algebra is central simple of dimension four. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations*; the group they form is *The Group of Involutions*.
+The algebra is central simple of dimension four. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*; the group they form is *The Group of Involutions of the Biquaternion Algebra*.
 
 | Property | Value for $\mathbb{B}$ |
 |---|---|
@@ -287,11 +287,11 @@ The algebra is central simple of dimension four. The element, its three coordina
 - Tsit-Yuen Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the quaternion algebra over a field, its presentations and its behaviour under an extension of scalars.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the presentation of an algebra by generators and relations and for central simplicity.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the scalar–vector form of the multiplication, the four general products and their comparison.
-- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their Cayley table and their orbits.
+- [The Group of Involutions](the-group-of-involutions-of-the-biquaternion-algebra.html), for the four conjugations, their Cayley table and their orbits.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the subspaces the conjugations single out.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the invertibility criterion and the zero-divisor cone.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents, the Peirce decomposition and the matrix model $M_2(\mathbb{C})$.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix model in full.
-- [The Category of Modules](the-category-of-modules.html), for the simple modules, the classification, Schur's lemma, the intertwiners and the Morita equivalence.
+- [The Category of Modules](the-category-of-modules-in-the-biquaternion-algebra.html), for the simple modules, the classification, Schur's lemma, the intertwiners and the Morita equivalence.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.

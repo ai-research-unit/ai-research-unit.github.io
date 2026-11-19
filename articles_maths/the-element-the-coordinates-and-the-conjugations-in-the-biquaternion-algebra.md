@@ -1,12 +1,12 @@
-# __The Element, the Coordinates and the Conjugations__
+# __The Element, the Coordinates and the Conjugations in the Biquaternion Algebra__
 
 ## Introduction
 
-This article reads one element of the biquaternion algebra and the coordinates in which it is written. It is the second article of the block and it assumes the product, the basis and the axioms of *The Biquaternion Algebra*.
+This article reads one element of the biquaternion algebra and the coordinates in which it is written. It is the second article of the block and it assumes the product, the basis and the axioms of *Introduction to the Algebra of Biquaternions*.
 
 The first two sections give the element and its three readings: the scalar-vector split $\tilde Q=Q_te_t+\vec Q$, the real, complex and hyperbolic coordinate systems, and the complex structure $J$ that carries the difference between the real and the complex readings. The third section defines the four conjugations and separates them by their relation to $J$. The last two sections read the same element over the real scalars and through $J$.
 
-The four conjugations are defined here and used throughout the block. Their group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions*; the subspaces themselves are *Subspaces and Decompositions*.
+The four conjugations are defined here and used throughout the block. Their group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions of the Biquaternion Algebra*; the subspaces themselves are *Subspaces and Decompositions*.
 
 Nothing in this article pairs two different elements and takes a scalar part. The hyperbolic basis of the plain scalar part is a form statement and is filed with the plain product, after the forms; the matrices of the two models are *$M_2(\mathbb{C})$ Pauli Representation* and *$M_4(\mathbb{C})$ Axis-Free Representation*.
 
@@ -72,7 +72,7 @@ $$
 \tilde Q^{*}=\bar Q_te_t-\overline{\vec Q} ,
 $$
 
-with $\tilde Q^{\flat}=-\tilde Q^{*}$ the **anti-Hermitian** one. They are involutions, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$; the group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions*.
+with $\tilde Q^{\flat}=-\tilde Q^{*}$ the **anti-Hermitian** one. They are involutions, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and $\{\mathrm{id},\natural,\bar{\cdot},{}^{*}\}\cong\mathbb{Z}_2\times\mathbb{Z}_2$; the group, its table, its orbits and the six fixed and anti-fixed subspaces are *The Group of Involutions of the Biquaternion Algebra*.
 
 ## The Real Scalars
 
@@ -94,7 +94,7 @@ $$
 J : \tilde{Q} \mapsto i\tilde{Q}, \qquad J^2 = -\mathrm{id},
 $$
 
-is real-linear, and it is the **complex structure** of the real space, already met in *The Biquaternion Algebra*, §*The Scalars, the Centre and the Structure Map*. It carries the whole gap between the readings: for $\lambda = a + bi$, the centrality of the scalars gives
+is real-linear, and it is the **complex structure** of the real space, already met in *Introduction to the Algebra of Biquaternions*, §*The Scalars, the Centre and the Structure Map*. It carries the whole gap between the readings: for $\lambda = a + bi$, the centrality of the scalars gives
 
 $$
 \boxed{\;
@@ -166,6 +166,6 @@ The marks and their case rules are those of *Algebra and Element Conventions*.
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the product and the axioms.
-- [The Group of Involutions](the-group-of-involutions.html), for the Klein group and the orbits.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the product and the axioms.
+- [The Group of Involutions](the-group-of-involutions-of-the-biquaternion-algebra.html), for the Klein group and the orbits.
 - [Subspaces and Decompositions](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the fixed spaces.

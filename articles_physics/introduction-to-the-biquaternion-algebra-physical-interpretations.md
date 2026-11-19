@@ -132,13 +132,13 @@
 
 #### The Algebra of Biquaternions
 
-- [Introduction to the Algebra of Biquaternions](../articles_maths/the-biquaternion-algebra.html)
-- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](../articles_maths/the-element-the-coordinates-and-the-conjugations.html)
-- [The Group of Involutions of the Biquaternion Algebra](../articles_maths/the-group-of-involutions.html)
+- [Introduction to the Algebra of Biquaternions](../articles_maths/introduction-to-the-algebra-of-biquaternions.html)
+- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](../articles_maths/the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html)
+- [The Group of Involutions of the Biquaternion Algebra](../articles_maths/the-group-of-involutions-of-the-biquaternion-algebra.html)
 - [Subspaces and Decompositions of the Biquaternion Algebra](../articles_maths/subspaces-and-decompositions-of-the-biquaternion-algebra.html)
-- [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element.html)
-- [Zero Divisors and Invertibles in the Biquaternion Algebra](../articles_maths/zero-divisors-and-invertibles.html)
-- [The Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-an-element.html)
+- [The Square of an Element in the Biquaternion Algebra](../articles_maths/the-square-of-an-element-in-the-biquaternion-algebra.html)
+- [Zero Divisors and Invertibles in the Biquaternion Algebra](../articles_maths/zero-divisors-and-invertibles-in-the-biquaternion-algebra.html)
+- [The Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/the-square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
 
 #### Matrix Representations
 
@@ -149,8 +149,8 @@
 
 #### The Idempotents, the Ideals and the Peirce Decomposition
 
-- [The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/nilpotents.html)
-- [The Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/idempotents.html)
+- [The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html)
+- [The Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
 - [The Minimal Left Ideals of the Biquaternion Algebra](../articles_maths/the-minimal-left-ideals-of-the-biquaternion-algebra.html)
 - [Peirce Decompositions of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html)
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-basis-of-the-biquaternion-algebra.html)
@@ -159,17 +159,17 @@
 
 #### The Modules in the Biquaternion Algebra
 
-- [The Regular Module in the Biquaternion Algebra](../articles_maths/the-regular-module.html)
+- [The Regular Module in the Biquaternion Algebra](../articles_maths/the-regular-module-in-the-biquaternion-algebra.html)
 - [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html)
 - [The Pauli Module of the Biquaternion Algebra](../articles_maths/the-pauli-module-of-the-biquaternion-algebra.html)
-- [The Category of Modules in the Biquaternion Algebra](../articles_maths/the-category-of-modules.html)
+- [The Category of Modules in the Biquaternion Algebra](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html)
 - [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html)
 
 #### The Spectral Theory in the Biquaternion Algebra
 
-- [The Spectrum of a Biquaternion](../articles_maths/the-spectrum.html)
-- [The Centraliser in the Biquaternion Algebra](../articles_maths/the-centraliser.html)
-- [The Semisimple–Nilpotent Split of a Biquaternion](../articles_maths/the-semisimple-nilpotent-split.html)
+- [The Spectrum of a Biquaternion](../articles_maths/the-spectrum-of-a-biquaternion.html)
+- [The Centraliser in the Biquaternion Algebra](../articles_maths/the-centraliser-in-the-biquaternion-algebra.html)
+- [The Semisimple–Nilpotent Split of a Biquaternion](../articles_maths/the-semisimple-nilpotent-split-of-a-biquaternion.html)
 - [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html)
 - [Worked Examples of an Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html)
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html)

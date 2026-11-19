@@ -1,4 +1,4 @@
-# __The Topological J\*-Algebra__
+# __The Topological J*-Algebra__
 
 ## Introduction
 

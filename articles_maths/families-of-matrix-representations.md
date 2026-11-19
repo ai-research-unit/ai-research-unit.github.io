@@ -243,5 +243,5 @@ No conjugation carries the left family onto the right, because a conjugation pre
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for one four-dimensional instance of the general frame.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for another four-dimensional instance, in the coefficient basis.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the element size, the compression and the conjugate as a transpose.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the multiplication table, the scalar product and the centre.
-- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the element, the four conjugations and the coordinate systems.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the multiplication table, the scalar product and the centre.
+- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the element, the four conjugations and the coordinate systems.

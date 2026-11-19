@@ -20,10 +20,10 @@ $$
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| ideals, the two-sided ideals, Artinian and semisimple, length two, the radical, the three regular modules, the submodules are the ideals, the endomorphisms of the regular object | [The Regular Module](../articles_maths/the-regular-module.html) |
+| ideals, the two-sided ideals, Artinian and semisimple, length two, the radical, the three regular modules, the submodules are the ideals, the endomorphisms of the regular object | [The Regular Module](../articles_maths/the-regular-module-in-the-biquaternion-algebra.html) |
 | the two minimal left ideals, all minimal left ideals, the simple module, the two spinor spaces, the canonical splitting, the ladder, the gauge, the invariants of a single spinor, the Peirce index, right multiplication, what the spinor is not | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | the root and the frame, the display polarizes for free, what the display is not | [The Pauli Module of the Biquaternion Algebra](../articles_maths/the-pauli-module-of-the-biquaternion-algebra.html) |
-| representations and modules, the category of left modules, projectivity and the parity of freeness, the standard bimodule, Morita equivalence, torsion, real structures, the lattice of left ideals, the projective line and the Möbius action | [The Category of Modules](../articles_maths/the-category-of-modules.html) |
+| representations and modules, the category of left modules, projectivity and the parity of freeness, the standard bimodule, Morita equivalence, torsion, real structures, the lattice of left ideals, the projective line and the Möbius action | [The Category of Modules](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) |
 | the module and the two actions, the names of the elements, a splitting is a pair of points, the polarizations of the corpus, the axis-free frame, the swap, what the module carries instead, the conjugate pair, what the absence costs | [The Unpolarized Module of the Biquaternion Algebra](../articles_maths/the-unpolarized-module-of-the-biquaternion-algebra.html) |
 
 **The rows are the entry's order.** The regular module first, because it names the carrier; then the polarized module, which fixes one splitting and develops it; then the Pauli module, which is the frame that displays a splitting silently; then the unpolarized module, which proves that no splitting is canonical; then the category of modules, which classifies the carriers.
@@ -267,7 +267,7 @@ The action is transitive, and simply transitive on ordered triples of distinct p
 
 **The distinguishing property is the isomorphism over $\mathbb{R}$.** $S_+$ and $S_-$ are isomorphic as left modules, so over $\mathbb{C}$ they are the same object. $S$ and $S^{\mathrm{c}}$ are isomorphic over $\mathbb{C}$ as well, but not over $\mathbb{R}$: the quaternionic module and its conjugate are genuinely different real objects. A label that survives a change of frame must be carried by a structure that no frame can move, and only the real structure qualifies.
 
-**The algebra says this twice, independently.** It says it in the no-go theorem: no element of $\mathbb{B}$ acts as the central sign $\chi$, so the grading cannot be an element and must be an operator. And it says it in the parity of §*The Category of Modules*: a module descends to a quaternionic module exactly when it is free, that is when $k$ is even, so a single copy of $S$ has no real structure at all.
+**The algebra says this twice, independently.** It says it in the no-go theorem: no element of $\mathbb{B}$ acts as the central sign $\chi$, so the grading cannot be an element and must be an operator. And it says it in the parity of §*The Category of Modules in the Biquaternion Algebra*: a module descends to a quaternionic module exactly when it is free, that is when $k$ is even, so a single copy of $S$ has no real structure at all.
 
 **The physical reading is that chirality is Lorentz-invariant and a polarization is not.** A Lorentz transformation is an automorphism of the algebra, and it moves the pairs of points of the projective line; it does not move the real structure. That is why a chirality is a physical label and a spin-frame component is not.
 

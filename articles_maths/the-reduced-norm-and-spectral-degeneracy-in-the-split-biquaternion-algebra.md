@@ -216,6 +216,6 @@ The biquaternion algebra has a sum, not a product. Its Hermitian idempotents $\t
 - [Split-Biquaternion Norm and Invertibility](split-biquaternion-norm-and-invertibility.html), for the reduced norm, the inverse formula and the group of invertibles.
 - [Split-Biquaternion Zero Divisors](split-biquaternion-zero-divisors.html), for the two ideals and the zero-divisor set.
 - [Spectral Regularity and Degeneracy in the Split-Biquaternion Algebra](spectral-regularity-and-degeneracy-in-the-split-biquaternion-algebra.html), for the repeated-root criterion.
-- [The Spectrum](the-spectrum.html), for the complex cone and the comparison with the split case.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the complex cone and the comparison with the split case.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the biquaternion $\Sigma_{01}$ and the Hermitian idempotents.
 - [The Three Sectors of the Split-Biquaternion Algebra](the-three-sectors-of-the-split-biquaternion-algebra.html), for the three non-empty sectors and their dimensions.

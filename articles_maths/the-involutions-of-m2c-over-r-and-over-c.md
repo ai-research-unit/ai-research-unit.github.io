@@ -154,5 +154,5 @@ An involution of $M_2(\mathbb{C})$ is an automorphism or an antiautomorphism of 
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (AMS, 1998), for the classification of the involutions of a central simple algebra into orthogonal and symplectic types.
 - Israel Nathan Herstein, *Noncommutative Rings* (Carus Mathematical Monographs, 1968), for the Skolem–Noether theorem in the form used here.
 - [The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$](the-two-base-fields-m2r-inside-m2c.html), for the two real forms.
-- [The Element: The Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the three conjugations of the biquaternion algebra.
+- [The Element: The Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the three conjugations of the biquaternion algebra.
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the reversion in the Peirce coordinates.

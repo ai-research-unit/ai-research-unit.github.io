@@ -32,7 +32,7 @@ so that $\mathsf M_2(\vec e_k)=-i\sigma_k$. The representation is called Pauli b
 
 **What this article leaves out.** The sixteen products $L_{\mathrm{pau},e_\mu}R_{\mathrm{pau},e_\nu}$ are a basis of the whole algebra $M_4(\mathbb{C})$, not only of the two copies, so every endomorphism has a coefficient matrix $c(M)$ in that basis and a length $\ell(M)=\operatorname{rank}c(M)$, the least number of products summing to it. That chain is the subject of the companion article *$M_4(\mathbb{C})$ Pauli Representation : Operators*, together with the congruence that makes the length survive a change of element basis. This article stops at the two families and at the algebra they generate.
 
-**Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The idempotents and the Peirce decomposition are *Peirce Decompositions of the Biquaternion Algebra* and *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*. The general theory of the two families, of the stitch and of the change of frame is *Families of Matrix Representations*; this article is one instance of it, worked out in full, and the frame below is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ Axis-Free Representation*, and at the element size the block is *$M_2(\mathbb{C})$ Pauli Representation*.
+**Boundaries.** The algebra, the multiplication table and the four conjugations are *Introduction to the Algebra of Biquaternions* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The idempotents and the Peirce decomposition are *Peirce Decompositions of the Biquaternion Algebra* and *The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra*. The general theory of the two families, of the stitch and of the change of frame is *Families of Matrix Representations*; this article is one instance of it, worked out in full, and the frame below is the canonical frame of *Matrix Representations Conventions*, §*The Matrix Models*. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the Peirce frame. The same element in the coefficient basis is *$M_4(\mathbb{C})$ Axis-Free Representation*, and at the element size the block is *$M_2(\mathbb{C})$ Pauli Representation*.
 
 ## The Root and the Peirce Frame
 
@@ -347,7 +347,7 @@ $$
 L(\tilde Q)^{\dagger}=L(\tilde Q^{*}),\qquad
 R(\tilde Q)^{\dagger}=R(\tilde Q^{*}),
 $$
-with $\tilde Q^{*}=\bar Q_te_t-\overline{\vec Q}$ the Hermitian conjugation of *The Element, the Coordinates and the Conjugations*.
+with $\tilde Q^{*}=\bar Q_te_t-\overline{\vec Q}$ the Hermitian conjugation of *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*.
 
 **Why the two matrices differ.** The transpose acts on the tensor factor that carries the element: $C_L$ acts on the second factor, where $A$ sits in $L$, and $C_R$ acts on the first, where $A^{\mathsf T}$ sits in $R$. The conjugation $\natural$ is the transpose composed with the two copies of $\sigma_2$ in that factor, which is why a transposition costs a sign change of the vector part and nothing else.
 
@@ -958,9 +958,9 @@ The comparison of §*The Comparison Table* closes the article: no frame says yes
 
 - [Families of Matrix Representations](families-of-matrix-representations.html), for the two families, the stitch and the change of frame in general.
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and the three decompositions.
-- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the four conjugations and the coordinate systems.
+- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the four conjugations and the coordinate systems.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for this article continued at the element size: the block $A$ read on its own, with the trace $2Q_t$, the determinant $\langle\tilde Q\rangle_{\natural}$ and the four norms.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra and the multiplication table.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the canonical frame and the tensor displays of the two copies.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the same content in the coefficient basis and the sign stitch.
 - [$M_4(\mathbb{C})$ Pauli Representation : Operators](m4c-pauli-representation-operators.html), for the products, the coefficient matrix, the length and its invariance.

@@ -299,7 +299,7 @@ Bochner's theorem for the biquaternion transform is a theorem about the general 
 - [Biquaternion Discrete Harmonic Analysis](biquaternion-discrete-harmonic-analysis.html), for the discrete transform, the sampling theorem and the discrete form of the same positivity statement.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four pairings, $\langle\tilde Q_1,\tilde Q_2\rangle_{*}$ among them, and their conjugations.
 - [Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint](hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.html), for the classification of the Hermitian forms and the unit form of inertia $(8,0)$.
-- [Square Roots of an Element](square-roots-of-an-element.html), for the classification of the roots of $-1$, $-0$ and $+1$.
+- [Square Roots of an Element](the-square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the classification of the roots of $-1$, $-0$ and $+1$.
 - [Quaternion Harmonic Analysis](quaternion-harmonic-analysis.html), for the quaternion case that does hold, the positivity theorem of the real roots.
 - [Positive Definite Functions and Hermitian Kernels](positive-definite-functions-and-hermitian-kernels.html), [Reproducing Kernel Hilbert Spaces](reproducing-kernel-hilbert-spaces.html) and [Positive Definite Distributions](positive-definite-distributions.html), for Bochner's theorem, the Aronszajn theorem and the Bochner–Schwartz theorem in the classical setting.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the symbols of the roots, the conjugations and the pairings.

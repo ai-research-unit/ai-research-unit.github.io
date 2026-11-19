@@ -118,7 +118,7 @@ and the passage is exactly the reading of the complex basis $\{1,j\}$ on the rea
 | complex | $1,j$ | $2$ | $\mathbb{C}$ | $(Q_{\blacktriangle},Q_{\blacktriangledown})$ |
 | idempotent | $\Pi_+,\Pi_-$ | $2$ | $\mathbb{C}$ | $(Q_{+},Q_{-})$ |
 
-The first and the third are real- or complex-based readings of the same four real coordinates; the second and the third are two complex bases of the same two-dimensional complex space. The table is the reduced biquaternion instance of the coordinate table of *The Biquaternion Algebra*, with the quaternionic coordinate system absent because the algebra has no quaternionic factor.
+The first and the third are real- or complex-based readings of the same four real coordinates; the second and the third are two complex bases of the same two-dimensional complex space. The table is the reduced biquaternion instance of the coordinate table of *Introduction to the Algebra of Biquaternions*, with the quaternionic coordinate system absent because the algebra has no quaternionic factor.
 
 ## Linear and Antilinear Maps
 
@@ -188,4 +188,4 @@ A second complex coordinate system is the idempotent one, $(\Pi_+,\Pi_-)$, in wh
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), below this article, for the four general products and the clause that decides which slot carries a conjugation.
 - [The Four-Vector Element Representation of the Reduced Biquaternions](the-four-vector-element-representation-of-the-reduced-biquaternions.html), for the real quadruple and the complex pair as element representations.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), §*The Elements and their Coefficients*, for the scalar part, the $j$-part and the two complex coordinates.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the coordinate systems of the non-commutative companion, whose quaternionic row is absent here.

@@ -50,7 +50,7 @@ The two readings differ in one point alone: whether the second coordinate is use
 
 *Proof.* The entries are computed pair by pair from the twelve products, and the results are the twelve tables of §*The Twelve Tables*; inspection shows every entry to be $0$ or $\pm e_\mu$. The reason is structural: the basis is a real basis of real quaternions, closed under both conjugations up to sign, $\overline{e_\mu}=e_\mu$ and $e_\mu^{\natural}=e_\mu^{*}=\varepsilon_\mu e_\mu$, and the plain product of two real quaternions is a real quaternion; since the central imaginary $i$ is a coefficient and never a factor, no entry can carry it.
 
-**Remark.** The tables are therefore integral: each is a table of integers times basis elements, and a table over $\mathbb{Z}$ rather than over $\mathbb{C}$. This is the table form of the statement that the complex structure of $\mathbb{B}$ lives in the coefficients and not in the multiplication, which is the reading of the multiplication tables in *The Biquaternion Algebra*, §*The Multiplication Table*, and of the change of scalars in *The Realification and the Effect of the Change of Scalars*.
+**Remark.** The tables are therefore integral: each is a table of integers times basis elements, and a table over $\mathbb{Z}$ rather than over $\mathbb{C}$. This is the table form of the statement that the complex structure of $\mathbb{B}$ lives in the coefficients and not in the multiplication, which is the reading of the multiplication tables in *Introduction to the Algebra of Biquaternions*, §*The Multiplication Table*, and of the change of scalars in *The Realification and the Effect of the Change of Scalars*.
 
 ---
 
@@ -60,7 +60,7 @@ The twelve tables are written below, one to a product, in the order general, sym
 
 ### The Four General Tables
 
-**$\tilde Q_1\tilde Q_2$, the general plain bilinear product $\tilde Q_1\tilde Q_2$** (the class $\mathrm A$, $\mathbb{C}$-bilinear). It is the quaternion table, the one already read in *The Biquaternion Algebra*, §*The Multiplication Table*.
+**$\tilde Q_1\tilde Q_2$, the general plain bilinear product $\tilde Q_1\tilde Q_2$** (the class $\mathrm A$, $\mathbb{C}$-bilinear). It is the quaternion table, the one already read in *Introduction to the Algebra of Biquaternions*, §*The Multiplication Table*.
 
 | $\star$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
@@ -337,7 +337,7 @@ On the four-element basis $e_t,\vec e_x,\vec e_y,\vec e_z$ the twelve tables tak
 
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the twelve products, their formulas and laws, the method of the decomposition and the reconstruction product by product; the tables of the present article are those products read on the basis.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four general products on the coordinates.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), §*The Multiplication Table* and §*Bilinearity and the Determination by the Table*, for the table of $\tilde Q_1\tilde Q_2$ and the determination of a bilinear product by its table.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), §*The Multiplication Table* and §*Bilinearity and the Determination by the Table*, for the table of $\tilde Q_1\tilde Q_2$ and the determination of a bilinear product by its table.
 - [The Symmetric and Antisymmetric Parts of an Algebra Product](the-symmetric-and-antisymmetric-parts-of-an-algebra-product.html) and [The Symmetric and Antisymmetric Parts of a Sesqualgebra Product](the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.html), for the two exchanges and the two splits whose entrywise reading is the content of §*The Table of a Part Is the Entrywise Part*.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the sixteen basis products of its own structure.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the sixteen basis products of its own structure.
 - [Conventions in the Biquaternion Universe](../articles_physics/algebra-and-element-conventions.html), for the group of the involutions, the conjugations and the remarkable subspaces used in the conventions above.

@@ -26,7 +26,7 @@ with $\mu,\nu\in\{t,x,y,z\}$. They are named here, at the start, because the gen
 
 **The letters.** The parameters are $\tilde Q,\tilde Q_2,\tilde Q_3,\tilde Q_4$, the argument is $X$, and the operator is $L_{\tilde Q}R_{\tilde Q_2}$. The two letters $L$ and $R$, written together, name the two-sided family; the two-sided operator $\mathrm{Sd}$ is a different letter and a different object, and it is not used here. The conventions of the four letters, the slots and the set names are *Operator Family Conventions*.
 
-**Boundaries.** The algebra is *The Biquaternion Algebra*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the two regular families and their commutant are *Operators Acting on One Side*; the matrix units are *Special Element and Peirce Conventions*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
+**Boundaries.** The algebra is *Introduction to the Algebra of Biquaternions*; the ambient operator space is *The Endomorphisms of the Biquaternion Algebra*; the two regular families and their commutant are *Operators Acting on One Side*; the matrix units are *Special Element and Peirce Conventions*; the form is *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*.
 
 ## The Operator $L_{\tilde Q}R_{\tilde Q_2}$
 

@@ -20,7 +20,7 @@ The general theory of the pair $M_n(\mathbb{R})\subset M_n(\mathbb{C})$ is *The 
 
 **Proof.** An entry is fixed by the conjugation exactly when it is real. The real matrices are closed under sums, products and real scalars, so they form a real subalgebra; their real dimension is the count of the four entries, that is $4$.
 
-**The fixed set is not an ideal and not a complex subspace.** It is closed under multiplication by real scalars only: $iI$ is not real, so $M_2(\mathbb{R})$ is not stable under multiplication by $i$. It is a real form in the sense of *The Element, the Coordinates and the Conjugations*, §*The Real Form*: it meets $iM_2(\mathbb{R})$ only at $0$, and the two together fill the algebra.
+**The fixed set is not an ideal and not a complex subspace.** It is closed under multiplication by real scalars only: $iI$ is not real, so $M_2(\mathbb{R})$ is not stable under multiplication by $i$. It is a real form in the sense of *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*, §*The Real Form*: it meets $iM_2(\mathbb{R})$ only at $0$, and the two together fill the algebra.
 
 ## The Complexification
 

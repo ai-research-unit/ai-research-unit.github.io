@@ -123,5 +123,5 @@ $M_n(\mathbb{R})$ is the fixed set of the entrywise conjugation of $M_n(\mathbb{
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for real forms and involutions of the first and second kind.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the real algebra itself.
 - [The Matrix Algebra $M_n(\mathbb{C})$](the-matrix-algebra-mnc.html), for the complex algebra and its Hermitian form.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra that both real forms complexify to.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra that both real forms complexify to.
 - [Quaternion Algebra](quaternion-algebra.html), for the compact real form $M_{n/2}(\mathbb{H})$ at $n=2$.

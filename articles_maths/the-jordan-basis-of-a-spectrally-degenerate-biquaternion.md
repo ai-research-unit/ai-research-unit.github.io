@@ -60,7 +60,7 @@ the zero set of the square of the vector part. Its complement $\mathbb{B}\setmin
 
 (v) the characteristic polynomial is a square, $p_{\tilde Q}(X)=(X-Q_t)^2$.
 
-*Proof.* The identity $\vec Q^2=-B^2e_t$ gives (i)$\iff$(ii). The characteristic polynomial of *The Spectrum* is
+*Proof.* The identity $\vec Q^2=-B^2e_t$ gives (i)$\iff$(ii). The characteristic polynomial of *The Spectrum of a Biquaternion* is
 
 $$
 p_{\tilde Q}(X)=X^2-2Q_tX+Q_t^2+B^2,
@@ -76,7 +76,7 @@ $$
 
 and the spectrum is the single point $\{Q_t\}$: the two roots have merged, so no symmetric function of them can separate them.
 
-**Remark (three readings of one equation).** The equation is **geometric** — the vector part is isotropic, $\vec Q\cdot\vec Q=0$ for the complex dot product of the vector subspace; **algebraic** — the vector part is square-zero, hence nilpotent of index two when it is non-zero; and **spectral** — the discriminant vanishes. The three readings are those of *The Spectrum*, §*The Spectral-Degenerate Cone*, where the proofs are given; the stratification is §*The Three Strata* below.
+**Remark (three readings of one equation).** The equation is **geometric** — the vector part is isotropic, $\vec Q\cdot\vec Q=0$ for the complex dot product of the vector subspace; **algebraic** — the vector part is square-zero, hence nilpotent of index two when it is non-zero; and **spectral** — the discriminant vanishes. The three readings are those of *The Spectrum of a Biquaternion*, §*The Spectral-Degenerate Cone*, where the proofs are given; the stratification is §*The Three Strata* below.
 
 **Remark (a closed cone, not a subspace).** The sector is a complex cone: it is closed under multiplication by scalars, since $B^2$ is homogeneous of degree two. It is not closed under addition, since $\vec e_x+i\vec e_y$ and $\vec e_x-i\vec e_y$ both lie in it while their sum $2\vec e_x$ does not. It is a proper algebraic subset, of empty interior in $\mathbb{B}$.
 
@@ -101,7 +101,7 @@ $$
 
 and on the sector the three conditions "$\det\mathsf{M}_2(\tilde Q)\neq0$", "$Q_t\neq0$" and "$\tilde Q$ is invertible with repeated eigenvalue" are equivalent.
 
-*Proof.* By the theorem, $\det\mathsf{M}_2(\tilde Q)=Q_t^2$. A complex square vanishes exactly when its argument does. The last equivalence is the criterion of *Zero Divisors and Invertibles*, which identifies $\det\mathsf{M}_2(\tilde Q)\neq0$ with invertibility. ∎
+*Proof.* By the theorem, $\det\mathsf{M}_2(\tilde Q)=Q_t^2$. A complex square vanishes exactly when its argument does. The last equivalence is the criterion of *Zero Divisors and Invertibles in the Biquaternion Algebra*, which identifies $\det\mathsf{M}_2(\tilde Q)\neq0$ with invertibility. ∎
 
 **Corollary (both kinds of element).** The sector contains units and zero divisors. Its unit half is $\Sigma_{10}$; its zero-divisor half is $\Sigma_{00}\setminus\{0\}$, the nilpotent stratum. Hence spectral degeneracy is not a form of non-invertibility: every element of $\Sigma_{10}$ is invertible, with inverse
 
@@ -757,7 +757,7 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the matrix form, the Jordanising matrix and the defect
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the $4\times4$ model
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the general Peirce construction and the Jordan basis as a particular Peirce matrix
-- [The Spectrum](the-spectrum.html), for the spectral criterion, the cone, the three strata and the similarity classification
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the spectral criterion, the cone, the three strata and the similarity classification
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the complementary sector and the eigenbasis construction
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the matrix reading of the eigenbasis
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the unit half as a sector, with the Peirce data and the degenerate limits of the eigenbasis
@@ -769,7 +769,7 @@ The Jordan basis is not the limit of the eigenbasis. The spectral idempotents di
 - [The N-Regular Sector](the-n-regular-sector.html) and [The N-Degenerate Sector](the-n-degenerate-sector.html), for the two halves of the norm partition
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the vanishing modulus and the partial isometry
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the independence of the two cones
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its coordinates and its conjugations
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra, its coordinates and its conjugations
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix model, the determinant and the trace
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential and its truncated form
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).

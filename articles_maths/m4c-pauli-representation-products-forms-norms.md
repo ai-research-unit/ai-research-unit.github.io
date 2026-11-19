@@ -413,6 +413,6 @@ The Gram matrices of the four forms in this frame are half-integer arrays, of wh
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms and the four norms without matrices.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the two exchanges and the twelve products.
 - [Families of Matrix Representations](families-of-matrix-representations.html), for the change of frame and the congruence of the Gram matrices.
-- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the three conjugations.
-- [Zero Divisors and Invertibles in the Biquaternion Algebra](zero-divisors-and-invertibles.html), for the cone $\langle\tilde Q\rangle_{\natural}=0$ and the rank.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
+- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the three conjugations.
+- [Zero Divisors and Invertibles in the Biquaternion Algebra](zero-divisors-and-invertibles-in-the-biquaternion-algebra.html), for the cone $\langle\tilde Q\rangle_{\natural}=0$ and the rank.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra and the multiplication table.

@@ -504,7 +504,7 @@ The polar decomposition survives on the cone in degenerate form: the Hermitian f
 - [The Topology of the Zero-Divisor Cone](the-topology-of-the-zero-divisor-cone.html), for the link, the projectivisation and the singularity
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the idempotents and the Peirce corners
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the mixed units and the Peirce coordinates
-- [Nilpotents](nilpotents.html), for the pure stratum
+- [Nilpotents](the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the pure stratum
 - [The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$](the-forms-the-norms-and-the-singular-set-of-m4c.html), for the rank-one matrices and the determinant
 - [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the complement of the cone
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401--416.

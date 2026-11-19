@@ -75,8 +75,8 @@ The corpus also develops the representation theory of the real, complex, split-c
 | Complex representation | a representation over $\mathbb{C}$, the algebraically closed case | *Complex Element Representations* |
 | Split-complex representation | a module over the ring with zero divisors $\mathbb{C}_{\mathrm{spl}}$ | *Split-Complex Element Representations* |
 | Quaternion representation | a module over the division ring $\mathbb{H}$ | *Quaternion Linear Representations* |
-| Biquaternion representation | a module over $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with the complex-linear and biquaternion-linear cases separated | *The Category of Modules* |
-| Non-example: a biquaternion module treated as a vector space | fails to have a basis: $\mathbb{B}$ has zero divisors, so a $\mathbb{B}$-module need not be free | *The Category of Modules* |
+| Biquaternion representation | a module over $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with the complex-linear and biquaternion-linear cases separated | *The Category of Modules in the Biquaternion Algebra* |
+| Non-example: a biquaternion module treated as a vector space | fails to have a basis: $\mathbb{B}$ has zero divisors, so a $\mathbb{B}$-module need not be free | *The Category of Modules in the Biquaternion Algebra* |
 
 ## Representations of Quivers
 

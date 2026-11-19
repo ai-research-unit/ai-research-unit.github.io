@@ -8,7 +8,7 @@
 
 **What the article does not do.** The operators produced by the multiplication itself, the left and the right regular families and their products, are the subject of *Operator Chirality on the Biquaternion Algebra* and *Operators Acting on One Side*. This article needs one display of them, the inner derivation $\tilde Qx-x\tilde Q$, and one pointer: the two summands of that display are the regular operators, and they are defined and studied there, not here. The matrix form of the ambient space is the subject of *Matrix Representations Conventions*; this article states the dimension and leaves the matrix to the article that fixes the frame.
 
-**Boundaries.** The algebra, its basis and its multiplication are *The Biquaternion Algebra*; the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *$M_2(\mathbb{C})$ Pauli Representation*; the ambient operator space in general is *The Operators on an Algebra*; the regular representations are *The Regular Representation as an Algebra of Operators*. The article is pure algebra: no bilinear form, no topology and no norm enters, and every dimension it states is qualified by its field.
+**Boundaries.** The algebra, its basis and its multiplication are *Introduction to the Algebra of Biquaternions*; the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ is *$M_2(\mathbb{C})$ Pauli Representation*; the ambient operator space in general is *The Operators on an Algebra*; the regular representations are *The Regular Representation as an Algebra of Operators*. The article is pure algebra: no bilinear form, no topology and no norm enters, and every dimension it states is qualified by its field.
 
 ## The Carrier and Its Linear Maps
 
@@ -159,7 +159,7 @@ The **quaternion conjugation** $D$ is the one conjugation that is complex-linear
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its basis and its multiplication.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra, its basis and its multiplication.
 - [The SVD Decomposition of Endomorphisms of the Biquaternion Algebra](the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html), for the shortest expression of an endomorphism as a sum of rank-one endomorphisms, the bound four, the orthogonal decomposition with weights, and the two-sided operators as a proper subfamily of the atoms.
 - [The Operators on an Algebra](the-operators-on-an-algebra.html), for the ambient operator space in general and the subspace-group rule.
 - [The Regular Representation as an Algebra of Operators](the-regular-representation-as-an-algebra-of-operators.html), for the regular representations and their double centraliser.

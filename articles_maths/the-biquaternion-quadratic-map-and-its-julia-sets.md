@@ -4,7 +4,7 @@
 
 In the complex plane the quadratic family is one map, $\omega\mapsto\omega^2+C$, and one filled Julia set for each parameter. In the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the same formula denotes several maps at once, because the square of an element can be read with the general plain bilinear product, with one of the three other products the space carries, or with the left, the right and the matrix product, and the maps so obtained are not equivalent. This article fixes the reading, defines the family and its filled Julia set, and separates what survives the passage from the field to the algebra from what does not.
 
-The algebra, its conjugations and its remarkable subspaces are *The Biquaternion Algebra* and *Subspaces and Decompositions*; its zero divisors and its idempotents are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and *Idempotents*; the norm and the Euclidean norm are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*. These are used here and none is restated. The classical theory in $\mathbb{C}$ is *The Julia Sets of a Complex Polynomial*, *The Mandelbrot Set and the Quadratic Family* and *The Fatou Components and the Classification of the Dynamics*, and the comparison with it is made section by section.
+The algebra, its conjugations and its remarkable subspaces are *Introduction to the Algebra of Biquaternions* and *Subspaces and Decompositions*; its zero divisors and its idempotents are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, §*The Zero Divisors* and *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the norm and the Euclidean norm are *N-Regularity and N-Degeneracy in the Biquaternion Algebra*; the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*. These are used here and none is restated. The classical theory in $\mathbb{C}$ is *The Julia Sets of a Complex Polynomial*, *The Mandelbrot Set and the Quadratic Family* and *The Fatou Components and the Classification of the Dynamics*, and the comparison with it is made section by section.
 
 This article owns the several readings of the square and the choice of the map, the definition of the biquaternion quadratic family, the filled Julia set and the Julia set, their complete invariance, the equivariance of the family under the conjugations, the critical set, and the reduction of the central-parameter family to a pair of complex quadratic families in the matrix model. It does not treat the escape radius (*The Escape Radius and the Green's Function for the Biquaternions*), the parameter locus (*The Biquaternion Mandelbrot Set and the Connectedness Locus*), the slices (*The Slices of the Biquaternion Julia Sets*), the zero divisors as a dynamical phenomenon (*The Zero Divisors and the Singular Julia Sets*), the Jacobian and the Fatou theory (*The Biquaternion Holomorphic Dynamics and the Jacobian*), or the dimension (*The Hausdorff Dimension of the Biquaternion Julia Sets*). No physical vocabulary is used.
 
@@ -20,7 +20,7 @@ the sum being that of the underlying complex vector space. The parameter is fixe
 
 The formula $\tilde Q\mapsto\tilde Q^2$ is unambiguous once a product is chosen and the square is read as the diagonal of the corresponding bilinear map. Both clauses matter.
 
-**The general plain bilinear square.** The general plain bilinear product $\tilde Q\tilde Q_2$ is the only one of the four general products of the space that is the multiplication of an associative unital $\mathbb{C}$-algebra (*The Biquaternion Algebra*). Its diagonal $\tilde Q\tilde Q$ is the square this article uses. In the four complex coordinates it is a polynomial map with no conjugated coordinate, hence holomorphic; this is what makes the matrix model above all a model of *complex* dynamics.
+**The general plain bilinear square.** The general plain bilinear product $\tilde Q\tilde Q_2$ is the only one of the four general products of the space that is the multiplication of an associative unital $\mathbb{C}$-algebra (*Introduction to the Algebra of Biquaternions*). Its diagonal $\tilde Q\tilde Q$ is the square this article uses. In the four complex coordinates it is a polynomial map with no conjugated coordinate, hence holomorphic; this is what makes the matrix model above all a model of *complex* dynamics.
 
 **The diagonal of a left or a right multiplication.** For a fixed element $\tilde Q_3$ the two maps
 
@@ -35,7 +35,7 @@ are affine: for $\tilde Q_3$ an invertible element they are conjugate to a linea
 | reading of the square | the map | kind | the theory |
 |---|---|---|---|
 | general plain bilinear $\tilde Q\tilde Q$ | $\tilde Q\mapsto\tilde Q^2+\tilde Q_5$ | holomorphic, quadratic | this article |
-| quaternion $\tilde Q\tilde Q^{\natural}$ | $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde Q_5$ | scalar-valued, uses the bar | *Square Roots of an Element* |
+| quaternion $\tilde Q\tilde Q^{\natural}$ | $\tilde Q\mapsto \langle\tilde Q\rangle_{\natural}e_t+\tilde Q_5$ | scalar-valued, uses the bar | *The Square Roots of a General Element in the Biquaternion Algebra* |
 | Hermitian $\tilde Q\tilde Q^{*}$ | $\tilde Q\mapsto\tilde Q\tilde Q^{*}+\tilde Q_5$ | real-analytic, not holomorphic | *N-Regularity and N-Degeneracy in the Biquaternion Algebra* |
 | left or right $\tilde Q_3\tilde Q_1$, $\tilde Q_1\tilde Q_3$ | affine in $\tilde Q_1$ | no fractal | — |
 | matrix $\mathsf{M}_2^{-1}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)$ | $\tilde Q\mapsto\tilde Q^2+\tilde Q_5$ | the same map | *The Matrix Element Representation and the Biquaternion Dynamics* |
@@ -62,7 +62,7 @@ If $\tilde Q_5$ is central, $\tilde Q_5=Ce_t$ with $C\in\mathbb{C}$, every $p_n$
 
 **Proof.** Induction on $n$: $\tilde Q_{n+1}=p_n(\tilde Q)^2+\tilde Q_5=p_{n+1}(\tilde Q)$ by the recursion. If $\tilde Q_5$ is central the recursion stays in the polynomial ring over the centre, and the evaluation is taken in the commutative subalgebra $\mathbb{C}[\tilde Q]$ generated by one element.
 
-The last clause is why the central parameter is the computable one: $\mathbb{C}[\tilde Q]$ has complex dimension at most two, and a polynomial in one element is a polynomial in its two coordinates there (*The Biquaternion Algebra*, §*The Subalgebra Generated by One Element*).
+The last clause is why the central parameter is the computable one: $\mathbb{C}[\tilde Q]$ has complex dimension at most two, and a polynomial in one element is a polynomial in its two coordinates there (*Introduction to the Algebra of Biquaternions*, §*The Subalgebra Generated by One Element*).
 
 ## The Filled Julia Set and the Julia Set
 
@@ -98,7 +98,7 @@ Consequently $g(\mathcal K_{\tilde Q_5})=\mathcal K_{g(\tilde Q_5)}$ and $g(J_{\
 
 **Corollary (the symmetry group of the fractal).** Let $G_{\tilde Q_5}=\{g\in\{\mathrm{id},{}^{\natural},\bar{\cdot},{}^{*}\} : g(\tilde Q_5)=\tilde Q_5\}$. Then $\mathcal K_{\tilde Q_5}$ and $J_{\tilde Q_5}$ are invariant under every element of $G_{\tilde Q_5}$. The stabiliser is one of the five subgroups of the Klein group, according as the parameter is a real central element, a non-real central element, a non-central real quaternion, a non-central Hermitian element, or a general element; the classification, the five symmetric families and the central inversion are *The Slices of the Biquaternion Julia Sets*, §*The Conjugation Symmetries of the Slices*.
 
-**Proof.** The invariance is the theorem applied elementwise; the classification is the fixed-subspace computation of *The Group of Involutions* and *Subspaces and Decompositions*, carried out in the cited section.
+**Proof.** The invariance is the theorem applied elementwise; the classification is the fixed-subspace computation of *The Group of Involutions of the Biquaternion Algebra* and *Subspaces and Decompositions*, carried out in the cited section.
 
 ## The Critical Set
 
@@ -171,9 +171,9 @@ The biquaternion quadratic family is $F_{\tilde Q_5}(\tilde Q)=\tilde Q^2+\tilde
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its one associative unital product and the plane generated by one element.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra, its one associative unital product and the plane generated by one element.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the isomorphism $\mathsf{M}_2$, the trace and the determinant.
-- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their fixed spaces and the orbits that give the symmetry groups.
+- [The Group of Involutions](the-group-of-involutions-of-the-biquaternion-algebra.html), for the four conjugations, their fixed spaces and the orbits that give the symmetry groups.
 - [The Slices of the Biquaternion Julia Sets](the-slices-of-the-biquaternion-julia-sets.html), for the five symmetric families and the slices on which the symmetries are read.
 - [The Julia Sets of a Complex Polynomial](the-julia-sets-of-a-complex-polynomial.html), [The Mandelbrot Set and the Quadratic Family](the-mandelbrot-set-and-the-quadratic-family.html) and [The Fatou Components and the Classification of the Dynamics](the-fatou-components-and-the-classification-of-the-dynamics.html), for the one-variable theory the family generalises.
 - [The Escape Radius and the Green's Function for the Biquaternions](the-escape-radius-and-the-greens-function-for-the-biquaternions.html), for the metric statement the filled Julia set dispenses with.

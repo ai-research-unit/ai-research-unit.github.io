@@ -163,4 +163,4 @@ An element is $\breve Q=Q_{\blacktriangle}+jQ_{\blacktriangledown}$ with scalar 
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), above this article, for the four general products and the norms they carry.
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), below this article, for the algebraic norm of the multiplication and the criterion of invertibility.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), below this article, for the null cone and its structure.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), the non-commutative counterpart, for the same data of an algebra with a division-adjacent structure absent here.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), the non-commutative counterpart, for the same data of an algebra with a division-adjacent structure absent here.

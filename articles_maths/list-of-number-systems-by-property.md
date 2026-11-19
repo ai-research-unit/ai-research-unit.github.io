@@ -79,7 +79,7 @@ Beside the division chain the corpus develops the split and degenerate systems, 
 | $\mathbb{C}_{\mathrm{dln}}$ dual numbers | commutative, associative; **has nilpotents**, local; not a division algebra, not a field | *Dual Numbers Algebra* |
 | Split biquaternions $\mathbb{B}_{\mathrm{spl}} = \mathbb{C}_{\mathrm{spl}}\otimes_{\mathbb{R}}\mathbb{H}$ | associative; **has zero divisors**, $\cong \mathbb{H}\oplus\mathbb{H}$, and no nonzero nilpotents; not a division algebra, not a field | *Split-Biquaternion Algebra* |
 | Split-octonions | alternative; **has zero divisors**; not a division algebra, not associative | *Normed Division Algebras and the Hurwitz Theorem* |
-| $\mathbb{B}$ biquaternions | associative; **has zero divisors**, $\cong M_2(\mathbb{C})$; not a division algebra, not a field | *The Biquaternion Algebra* |
+| $\mathbb{B}$ biquaternions | associative; **has zero divisors**, $\cong M_2(\mathbb{C})$; not a division algebra, not a field | *Introduction to the Algebra of Biquaternions* |
 | Non-example: $\mathbb{C}_{\mathrm{spl}}$ as a field | fails: $(1-t)(1+t) = 0$ | *Split-Complex Algebra* |
 | Non-example: the split biquaternions as a division algebra | fail: they have zero divisors, though they have no nonzero nilpotents | *Split-Biquaternion Algebra* |
 

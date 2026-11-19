@@ -6,7 +6,7 @@
 
 The article gives the minor description of the cone, identifies it with the cone of squares, writes it as the feasible set of a linear matrix inequality, describes the stratification by rank, examines the determinant barrier and the analytic centre, and states the semidefinite programme of order two. It assumes *The Positive Cone in $\mathrm{Herm}_2$ and Its Boundary*, *The Jordan Algebra $\operatorname{Sym}_2$* and *The Elementary Symmetric Functions: $\operatorname{tr}$ and $\det$ in Dimension Two*.
 
-It follows the biquaternion article *Idempotents* for the rank-one extreme rays of the same cone.
+It follows the biquaternion article *The Square Roots of One and the Idempotents of the Biquaternion Algebra* for the rank-one extreme rays of the same cone.
 
 ## The Description by Minors
 

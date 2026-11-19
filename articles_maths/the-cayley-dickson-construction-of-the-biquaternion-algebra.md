@@ -8,11 +8,11 @@
 
 The biquaternion algebra is the complexification of the quaternion algebra, and this article builds it as a stack of three layers. The first two are the rungs of the Cayley–Dickson doubling that carry the real numbers to the quaternions: the unit $\vec e_z$ adjoined to $\mathbb{R}$ gives $\mathbb{C}$, and the unit $\vec e_x$ adjoined to $\mathbb{C}$ under the twisting rule gives $\mathbb{H}$. The third layer is the scalar imaginary $i$, adjoined to $\mathbb{H}$ as a central element.
 
-The article asks one question about the third layer and answers it: whether it is a fourth rung of the same ladder. It is not. The Cayley–Dickson double of an associative algebra is associative exactly when that algebra is commutative, so no double of $\mathbb{H}$ is associative, while $\mathbb{B}$ is associative. The move that produces $\mathbb{B}$ is the **scalar extension**: it adjoins a central element, which *The Biquaternion Algebra* calls the gate, and it leaves the four units of $\mathbb{H}$, their squares and their products untouched.
+The article asks one question about the third layer and answers it: whether it is a fourth rung of the same ladder. It is not. The Cayley–Dickson double of an associative algebra is associative exactly when that algebra is commutative, so no double of $\mathbb{H}$ is associative, while $\mathbb{B}$ is associative. The move that produces $\mathbb{B}$ is the **scalar extension**: it adjoins a central element, which *Introduction to the Algebra of Biquaternions* calls the gate, and it leaves the four units of $\mathbb{H}$, their squares and their products untouched.
 
 The rest follows from reading the third layer against the first two. It keeps the multiplication table, the associativity and the non-commutativity of the quaternion layer, it changes the centre from the real line to the complex line, and it destroys the division property. The mechanism of the last is short: every unit direction of the quaternion layer, multiplied by $i$, has square $+e_t$, so the layer carries the idempotents $\tfrac12(e_t\pm i\vec u)$ and the zero divisors $(e_t+i\vec e_x)(e_t-i\vec e_x)$.
 
-**The boundaries.** The full Cayley–Dickson construction of $\mathbb{H}$, with the nine derivations of Hamilton's rules and the argument that fixes the twist, is *The Cayley–Dickson Construction of the Quaternion Algebra*, in the Quaternion Algebra category. The algebra $\mathbb{B}$, its table, its axioms and the proof that it is not a division algebra are *The Biquaternion Algebra*, above this article in this category. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations*; the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the zero divisors and the unit criterion are *Zero Divisors and Invertibles*; the general doubling and its associativity criterion are *Quadratic Forms over Algebras and Norms*; the tensor product is *Tensor Products of Algebras*.
+**The boundaries.** The full Cayley–Dickson construction of $\mathbb{H}$, with the nine derivations of Hamilton's rules and the argument that fixes the twist, is *The Cayley–Dickson Construction of the Quaternion Algebra*, in the Quaternion Algebra category. The algebra $\mathbb{B}$, its table, its axioms and the proof that it is not a division algebra are *Introduction to the Algebra of Biquaternions*, above this article in this category. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*; the algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the zero divisors and the unit criterion are *Zero Divisors and Invertibles in the Biquaternion Algebra*; the general doubling and its associativity criterion are *Quadratic Forms over Algebras and Norms*; the tensor product is *Tensor Products of Algebras*.
 
 **What the construction uses.** One unit for the first rung, $\vec e_z$; one unit for the second, $\vec e_x$; one scalar for the third, $i$. The third direction of the vector subspace, $\vec e_y$, is computed and not adjoined, $\vec e_y=\vec e_z\vec e_x$. The letters j and k are not used at any layer: the three directions keep the letters $x$, $y$ and $z$, and the remaining letter is the scalar $i$.
 
@@ -108,7 +108,7 @@ $$
 i^2=-e_t,\qquad i\,\tilde q=\tilde q\,i\quad\text{for every }\tilde q\in\mathbb{H} .
 $$
 
-The first is the square; the second says that $i$ is **central**, and it is the property that separates this layer from the two rungs below it. A central element of square $-e_t$ is what *The Biquaternion Algebra* calls a gate: it is the same datum as a complex algebra structure on a real algebra, with the scalar action $(a+ib)\tilde Q=a\tilde Q+b\,i\tilde Q$. Multiplication by $i$, the map $J(\tilde Q)=i\tilde Q$, is therefore the complex structure of the algebra, and it is the one of *The Element, the Coordinates and the Conjugations*.
+The first is the square; the second says that $i$ is **central**, and it is the property that separates this layer from the two rungs below it. A central element of square $-e_t$ is what *Introduction to the Algebra of Biquaternions* calls a gate: it is the same datum as a complex algebra structure on a real algebra, with the scalar action $(a+ib)\tilde Q=a\tilde Q+b\,i\tilde Q$. Multiplication by $i$, the map $J(\tilde Q)=i\tilde Q$, is therefore the complex structure of the algebra, and it is the one of *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*.
 
 **The space.** Every element of the layer is written uniquely as
 
@@ -116,7 +116,7 @@ $$
 \tilde Q=\tilde q+i\tilde q',\qquad \tilde q,\tilde q'\in\mathbb{H} ,
 $$
 
-and the eight elements $e_t,\vec e_x,\vec e_y,\vec e_z,i,i\vec e_x,i\vec e_y,i\vec e_z$ are a real basis. The real dimension is eight and the complex dimension, with $i$ as the scalar, is four. The algebra is the tensor product $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ of the complex algebra and the quaternion algebra, by *Tensor Products of Algebras* and by §*The Tensor Product of the Two Multiplications* of *The Biquaternion Algebra*.
+and the eight elements $e_t,\vec e_x,\vec e_y,\vec e_z,i,i\vec e_x,i\vec e_y,i\vec e_z$ are a real basis. The real dimension is eight and the complex dimension, with $i$ as the scalar, is four. The algebra is the tensor product $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ of the complex algebra and the quaternion algebra, by *Tensor Products of Algebras* and by §*The Tensor Product of the Two Multiplications* of *Introduction to the Algebra of Biquaternions*.
 
 **The product rule.** For two elements,
 
@@ -128,7 +128,7 @@ $$
 
 **The table does not change.** The sixteen products of $e_t,\vec e_x,\vec e_y,\vec e_z$ are those of §*Rung Two: The Quaternion Algebra*, unchanged, because $i$ is never a factor of a product of two units: it is central, so it moves to the front of every term. This is why the table of a complex quaternion algebra is a table of real quaternions.
 
-**The scalar-vector split.** The element splits as $\tilde Q=Q_te_t+\vec Q$ with the complex scalar $Q_t$ and the complex vector part $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, as in *The Element, the Coordinates and the Conjugations*. The two halves are recovered from the element by
+**The scalar-vector split.** The element splits as $\tilde Q=Q_te_t+\vec Q$ with the complex scalar $Q_t$ and the complex vector part $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, as in *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The two halves are recovered from the element by
 
 $$
 \tilde q=\tfrac12\bigl(\tilde Q+\bar{\tilde Q}\bigr),\qquad \tilde q'=\tfrac{1}{2i}\bigl(\tilde Q-\bar{\tilde Q}\bigr),
@@ -186,7 +186,7 @@ $$
 Z(\mathbb{B})=\{Q_te_t\}=\mathbb{C}e_t=\mathbb{B}_{C} ,
 $$
 
-of real dimension two. *Proof.* The commutator $[X,Y]=XY-YX$ with a vector unit reads $[\tilde Q,\vec e_x]=2Q_z\vec e_y-2Q_y\vec e_z$, which vanishes exactly when $Q_y=Q_z=0$, and the two other commutators are its cyclic permutations. So centrality forces the three vector coefficients to vanish, and conversely every $Q_te_t$ is central because $i$ commutes with the four units. This is §*The Scalars Are the Centre* of *The Biquaternion Algebra*, read in the coordinates of the construction.
+of real dimension two. *Proof.* The commutator $[X,Y]=XY-YX$ with a vector unit reads $[\tilde Q,\vec e_x]=2Q_z\vec e_y-2Q_y\vec e_z$, which vanishes exactly when $Q_y=Q_z=0$, and the two other commutators are its cyclic permutations. So centrality forces the three vector coefficients to vanish, and conversely every $Q_te_t$ is central because $i$ commutes with the four units. This is §*The Scalars Are the Centre* of *Introduction to the Algebra of Biquaternions*, read in the coordinates of the construction.
 
 **The centre across the layers.** The centre grows at the first rung, shrinks at the second and grows again at the third.
 
@@ -229,7 +229,7 @@ $$
 (e_t+i\vec e_x)(e_t-i\vec e_x)=e_t^2-(i\vec e_x)^2=e_t-e_t=0 .
 $$
 
-This is the witness of §*Central Simplicity and the Absence of Division* of *The Biquaternion Algebra*, and the two accounts agree.
+This is the witness of §*Central Simplicity and the Absence of Division* of *Introduction to the Algebra of Biquaternions*, and the two accounts agree.
 
 **The division property is gone.** In $\mathbb{H}$ the only idempotents are $0$ and $e_t$, because $x^2=x$ gives $x(x-e_t)=0$ and the algebra has no zero divisors. In $\mathbb{B}$ every $\Pi_+$ of the family is a non-zero idempotent which is not the unit, so no such element is invertible, and the algebra is not a division algebra. The layer has kept the table and the associativity of $\mathbb{H}$ and has lost the property that made the table a division table.
 
@@ -266,7 +266,7 @@ $$
 
 **What each does.** All three are involutions. The conjugation $\natural$ is $\mathbb{C}$-linear, it fixes the scalar $i$ and the scalar line, and it reverses the three directions. The coefficient conjugation is conjugate-linear, it fixes the quaternion layer and it sends $i$ to $-i$. The star is conjugate-linear, and its fixed space is the Hermitian subspace of *Subspaces and Decompositions of the Biquaternion Algebra*, of real basis $e_t,i\vec e_x,i\vec e_y,i\vec e_z$.
 
-**Which ones reverse the order.** The conjugation and the star reverse the order of a product, $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$ and $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, and the coefficient conjugation does not: it is an automorphism, $\overline{\tilde Q_1\tilde Q_2}=\bar{\tilde Q_1}\,\bar{\tilde Q_2}$. The reason is that it conjugates the scalar field alone and fixes the quaternion factor, and a field is commutative. The composite of the star and the conjugation is the coefficient conjugation, an automorphism and not an anti-automorphism, and this is the identity $\bar{\cdot}={}^{\natural}{}^{*}$ of *The Group of Involutions*.
+**Which ones reverse the order.** The conjugation and the star reverse the order of a product, $(\tilde Q_1\tilde Q_2)^{\natural}=\tilde Q_2^{\natural}\tilde Q_1^{\natural}$ and $(\tilde Q_1\tilde Q_2)^{*}=\tilde Q_2^{*}\tilde Q_1^{*}$, and the coefficient conjugation does not: it is an automorphism, $\overline{\tilde Q_1\tilde Q_2}=\bar{\tilde Q_1}\,\bar{\tilde Q_2}$. The reason is that it conjugates the scalar field alone and fixes the quaternion factor, and a field is commutative. The composite of the star and the conjugation is the coefficient conjugation, an automorphism and not an anti-automorphism, and this is the identity $\bar{\cdot}={}^{\natural}{}^{*}$ of *The Group of Involutions of the Biquaternion Algebra*.
 
 **The norm.** For every element,
 
@@ -292,7 +292,7 @@ $$
 \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{N(\tilde Q)} ,
 $$
 
-two-sided, because $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_t$ by the same computation on the other side. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a zero divisor. Hence **an element is invertible exactly when its norm is non-zero**, which is the criterion of *Zero Divisors and Invertibles*, and the vanishing set of the norm is the set of the zero divisors of the layer.
+two-sided, because $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_t$ by the same computation on the other side. If $N(\tilde Q)=0$ and $\tilde Q\neq0$, then $\tilde Q\tilde Q^{\natural}=0$ with $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a zero divisor. Hence **an element is invertible exactly when its norm is non-zero**, which is the criterion of *Zero Divisors and Invertibles in the Biquaternion Algebra*, and the vanishing set of the norm is the set of the zero divisors of the layer.
 
 ## The Place of the Layer
 
@@ -332,15 +332,15 @@ two-sided, because $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_t$ by the same comp
 | $i$ | the central scalar imaginary, $i^2=-e_t$ | this article, the third layer |
 | $w=u+v\vec e_z$ | the generic element of the base $\mathbb{C}$ | this article, rung one |
 | $\tilde q$ | the generic element of $\mathbb{H}$, $w_1+w_2\vec e_x$ | this article, rung two |
-| $\tilde Q=\tilde q+i\tilde q'$ | the generic element of $\mathbb{B}$ | *The Biquaternion Algebra* |
-| $Q_\mu=q_\mu+iq'_\mu$ | a complex coefficient and its two real parts | *The Element, the Coordinates and the Conjugations* |
-| $\vec Q$ | the vector part, $Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | *The Element, the Coordinates and the Conjugations* |
-| $\natural$ | the quaternion conjugation, $\mathbb{C}$-linear | *The Group of Involutions* |
-| $\bar{\cdot}$ | the coefficient conjugation, $i\mapsto-i$ | *The Group of Involutions* |
-| ${}^{*}$ | the composite $\bar{\cdot}\circ\natural$, the Hermitian conjugation | *The Group of Involutions* |
+| $\tilde Q=\tilde q+i\tilde q'$ | the generic element of $\mathbb{B}$ | *Introduction to the Algebra of Biquaternions* |
+| $Q_\mu=q_\mu+iq'_\mu$ | a complex coefficient and its two real parts | *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra* |
+| $\vec Q$ | the vector part, $Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ | *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra* |
+| $\natural$ | the quaternion conjugation, $\mathbb{C}$-linear | *The Group of Involutions of the Biquaternion Algebra* |
+| $\bar{\cdot}$ | the coefficient conjugation, $i\mapsto-i$ | *The Group of Involutions of the Biquaternion Algebra* |
+| ${}^{*}$ | the composite $\bar{\cdot}\circ\natural$, the Hermitian conjugation | *The Group of Involutions of the Biquaternion Algebra* |
 | $N(\tilde Q)$ | $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the scalar of $\tilde Q\tilde Q^{\natural}$ | *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* |
 | $\Pi_\pm$ | $\tfrac12(e_t\pm i\vec u)$, the idempotents of the layer | this article |
-| $J$ | the complex structure $\tilde Q\mapsto i\tilde Q$ | *The Element, the Coordinates and the Conjugations* |
+| $J$ | the complex structure $\tilde Q\mapsto i\tilde Q$ | *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra* |
 
 ## Further Reading
 

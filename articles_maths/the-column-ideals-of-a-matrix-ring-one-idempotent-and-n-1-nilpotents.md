@@ -1,4 +1,4 @@
-# __The Column Ideals of a Matrix Ring: One Idempotent and \(n-1\) Nilpotents__
+# __The Column Ideals of a Matrix Ring: One Idempotent and $n-1$ Nilpotents__
 
 ## Introduction
 

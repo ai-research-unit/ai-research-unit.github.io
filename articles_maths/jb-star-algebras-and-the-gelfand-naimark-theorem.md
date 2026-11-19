@@ -1,5 +1,5 @@
 
-# __JB\*-Algebras and the Gelfand–Naimark Theorem__
+# __JB*-Algebras and the Gelfand–Naimark Theorem__
 
 ## Introduction
 

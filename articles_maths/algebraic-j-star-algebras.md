@@ -1,4 +1,4 @@
-# __Algebraic J\*-Algebras__
+# __Algebraic J*-Algebras__
 
 ## Introduction
 

@@ -21,15 +21,15 @@ $$
 \vec e_x\vec e_y=\vec e_z,\quad \vec e_y\vec e_z=\vec e_x,\quad \vec e_z\vec e_x=\vec e_y .
 $$
 
-The construction, the multiplication table and the coordinate rule are in [Introduction to the Algebra of Biquaternions](the-biquaternion-algebra.html). An element is written
+The construction, the multiplication table and the coordinate rule are in [Introduction to the Algebra of Biquaternions](introduction-to-the-algebra-of-biquaternions.html). An element is written
 
 $$
 \tilde Q=Q_t e_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu\in\mathbb{C},
 $$
 
-with scalar part $Q_te_t$ and vector part $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$; a pure element is one with $Q_t=0$, written $\vec Q$. The element, its coordinates and the three coordinate systems are in [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html).
+with scalar part $Q_te_t$ and vector part $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$; a pure element is one with $Q_t=0$, written $\vec Q$. The element, its coordinates and the three coordinate systems are in [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html).
 
-**The centre.** The centre of $\mathbb{B}$ is the scalar line $\mathbb{C}e_t$, and $\mathbb{B}$ is central simple over $\mathbb{C}$. Both statements are in [Introduction to the Algebra of Biquaternions](the-biquaternion-algebra.html), and both are used below: the centre is what a complex structure must act on, and central simplicity is what makes the classification short.
+**The centre.** The centre of $\mathbb{B}$ is the scalar line $\mathbb{C}e_t$, and $\mathbb{B}$ is central simple over $\mathbb{C}$. Both statements are in [Introduction to the Algebra of Biquaternions](introduction-to-the-algebra-of-biquaternions.html), and both are used below: the centre is what a complex structure must act on, and central simplicity is what makes the classification short.
 
 **The two readings.** The same multiplication with the same structure constants, the constants being integers, is defined over $\mathbb{R}$. Write
 
@@ -104,7 +104,7 @@ $$
 
 the second condition saying that $J$ is multiplication by a central scalar. The **complex form** attached to $\kappa$ is $A_0$ with the scalars of $\mathbb{C}$ acting through $\kappa$; it is a complex algebra whose restriction of scalars is $A_0$.
 
-**Remark (why centrality is in the definition).** The equation $J(XY)=J(X)Y$ fails for an operator that is not central, and such an operator defines a real-linear endomorphism and not a change of scalars. The complex structure of the biquaternion algebra is the operator $J(\tilde Q)=i\tilde Q$, which is central because $i$ is a central scalar; the operator $\tilde Q\mapsto i\tilde Q$ read on the eight real coordinates is the operator $J$ of [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), §*The Complex Structure*.
+**Remark (why centrality is in the definition).** The equation $J(XY)=J(X)Y$ fails for an operator that is not central, and such an operator defines a real-linear endomorphism and not a change of scalars. The complex structure of the biquaternion algebra is the operator $J(\tilde Q)=i\tilde Q$, which is central because $i$ is a central scalar; the operator $\tilde Q\mapsto i\tilde Q$ read on the eight real coordinates is the operator $J$ of [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), §*The Complex Structure*.
 
 ### The Two Questions Are Not Inverse
 
@@ -148,7 +148,7 @@ $$
 \sigma_{\mathrm{comp}}(\tilde Q)=\overline{Q_t}e_t+\overline{Q_x}\vec e_x+\overline{Q_y}\vec e_y+\overline{Q_z}\vec e_z ,
 $$
 
-the conjugation $\overline{\phantom{Q}}$ of [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html). It is conjugate-linear, multiplicative and involutive, and its fixed set is the set of elements with real coefficients,
+the conjugation $\overline{\phantom{Q}}$ of [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html). It is conjugate-linear, multiplicative and involutive, and its fixed set is the set of elements with real coefficients,
 
 $$
 \mathbb{B}_H=\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_x,\vec e_y,\vec e_z\},
@@ -255,7 +255,7 @@ $$
 
 read as a pair of eigenspaces.
 
-**The split fixed set is not one of the six.** The fixed set of $\sigma_{\mathrm{split}}$ is $\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_y,i\vec e_x,i\vec e_z\}$, and it is not among the six: it differs from $\mathbb{B}_{\Psi}=\operatorname{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ by the exchange of $i\vec e_y$ for $\vec e_y$, and from $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{iH}$ by more than one element. The six subspaces are the fixed and anti-fixed spaces, that is the $\pm1$-eigenspaces, of the three involutions of the group $\{\mathrm{id},\natural,\overline{\phantom{Q}},{}^{*}\}$, and $\sigma_{\mathrm{split}}$ is not in that group, being the coefficient conjugation composed with an inner automorphism. The group of involutions, its Cayley table and the three splittings are [The Group of Involutions of the Biquaternion Algebra](the-group-of-involutions.html).
+**The split fixed set is not one of the six.** The fixed set of $\sigma_{\mathrm{split}}$ is $\operatorname{span}_{\mathbb{R}}\{e_t,\vec e_y,i\vec e_x,i\vec e_z\}$, and it is not among the six: it differs from $\mathbb{B}_{\Psi}=\operatorname{span}_{\mathbb{R}}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ by the exchange of $i\vec e_y$ for $\vec e_y$, and from $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{iH}$ by more than one element. The six subspaces are the fixed and anti-fixed spaces, that is the $\pm1$-eigenspaces, of the three involutions of the group $\{\mathrm{id},\natural,\overline{\phantom{Q}},{}^{*}\}$, and $\sigma_{\mathrm{split}}$ is not in that group, being the coefficient conjugation composed with an inner automorphism. The group of involutions, its Cayley table and the three splittings are [The Group of Involutions of the Biquaternion Algebra](the-group-of-involutions-of-the-biquaternion-algebra.html).
 
 **The complex structure acts on the six.** The operator $J(\tilde Q)=i\tilde Q$ preserves $\mathbb{B}_C$ and $\mathbb{B}_V$, which are complex subspaces of complex dimensions one and three, and exchanges the two four-dimensional pairs: $J\mathbb{B}_H=\mathbb{B}_{iH}$ and $J\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. A real structure and a complex structure therefore act on the list in different ways, the first fixing a member of the list and the second permuting the list.
 

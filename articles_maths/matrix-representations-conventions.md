@@ -84,7 +84,7 @@ The subscript names the copy: $M_4(\mathbb{C})_{\mathbb{B}_L}$ is the left copy,
 
 ## The $M_4(\mathbb{C})$ Axis-Free Representation
 
-**The basis is the one the algebra carries.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and its basis is the tensor basis of *The Biquaternion Algebra*, §*The Basis and the Complexification*,
+**The basis is the one the algebra carries.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and its basis is the tensor basis of *Introduction to the Algebra of Biquaternions*, §*The Basis and the Complexification*,
 $$
 e_t=1\otimes1,\qquad \vec e_x=1\otimes\vec e_x,\qquad \vec e_y=1\otimes\vec e_y,\qquad \vec e_z=1\otimes\vec e_z,
 $$
@@ -92,7 +92,7 @@ the vector units on the right being those of $\mathbb{H}$, and the scalar imagin
 $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu=q_\mu+iq'_\mu,
 $$
-the developed form of *The Element, the Coordinates and the Conjugations*, §*The Coordinate Systems*. This basis is called the **coefficient basis**, because its four coordinates are the coefficients of the developed form, and it is called **axis-free**, because no one of the three vector directions enters by a rule of its own.
+the developed form of *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*, §*The Coordinate Systems*. This basis is called the **coefficient basis**, because its four coordinates are the coefficients of the developed form, and it is called **axis-free**, because no one of the three vector directions enters by a rule of its own.
 
 **The multiplication table.** Every matrix below is read from this table and from nothing else:
 

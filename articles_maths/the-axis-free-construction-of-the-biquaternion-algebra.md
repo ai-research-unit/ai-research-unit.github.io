@@ -10,13 +10,13 @@
 
 **What is left over, and what it costs.** One bit, the same one as for the quaternion algebra: the table needs a cyclic order of the three vector units, and a cyclic order is an orientation and not a direction. The central imaginary adds a second two-element choice, the sign of $i$, and that one is absorbed by the coefficientwise conjugation, which is an automorphism of the algebra and exchanges $i$ with $-i$. Neither bit costs anything. §*What Is Free and What Is Fixed* proves both absorptions.
 
-**The tensor product becomes a theorem.** The base article *The Biquaternion Algebra* defines $\mathbb{B}$ as $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and derives the table from the tensor product. This article runs the argument the other way: it declares the table, proves the algebra axioms, and then derives the tensor product from the coefficient rule. The two routes reach the same object, and the second shows that the tensor product is a consequence of the coefficient field and not a construction step.
+**The tensor product becomes a theorem.** The base article *Introduction to the Algebra of Biquaternions* defines $\mathbb{B}$ as $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and derives the table from the tensor product. This article runs the argument the other way: it declares the table, proves the algebra axioms, and then derives the tensor product from the coefficient rule. The two routes reach the same object, and the second shows that the tensor product is a consequence of the coefficient field and not a construction step.
 
 **What the article contains.** Section §*The Data* states the four units and the central scalar. Section §*The Product* gives the rule and shows that complex bilinearity is the whole of the difference from the quaternion algebra. Section §*The Table* prints the sixteen products. Section §*The Tensor Product as a Theorem* derives the tensor product. Section §*Associativity* proves associativity from the four left multipliers, now complex matrices, and records what that display says about the algebra. Section §*The First Properties* gives the centre, the four conjugations, the two sectors, the norm, the zero divisors, the idempotents and the commutator. Section §*What Is Free and What Is Fixed* accounts for the two bits. Section §*The Contrast with the Stack* sets the two constructions side by side.
 
-**The overlap, declared.** The table, the ten statements and several of the properties below overlap *The Biquaternion Algebra* and the doubling article. A construction must produce the object those articles use. What this article adds is the order of the argument, the associativity proof inside the coefficient display, the derivation of the tensor product, and the accounting of what is chosen and what is forced.
+**The overlap, declared.** The table, the ten statements and several of the properties below overlap *Introduction to the Algebra of Biquaternions* and the doubling article. A construction must produce the object those articles use. What this article adds is the order of the argument, the associativity proof inside the coefficient display, the derivation of the tensor product, and the accounting of what is chosen and what is forced.
 
-**Boundaries.** The algebra as a structure, with its scalar extension, its centre, its structure map and the absence of division, is *The Biquaternion Algebra*, above this article in this category. The stack of three layers is *The Cayley–Dickson Construction of the Biquaternion Algebra*, beside this one. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations*; the annihilators and the unit criterion are *Zero Divisors and Invertibles*; the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the square of an element and its roots are *The Square of an Element*. The real case of this construction is *The Axis-Free Construction of the Quaternion Algebra*, in the Quaternions category.
+**Boundaries.** The algebra as a structure, with its scalar extension, its centre, its structure map and the absence of division, is *Introduction to the Algebra of Biquaternions*, above this article in this category. The stack of three layers is *The Cayley–Dickson Construction of the Biquaternion Algebra*, beside this one. The element, its three coordinate systems and the four conjugations are *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*; the annihilators and the unit criterion are *Zero Divisors and Invertibles in the Biquaternion Algebra*; the forms and their algebraic norms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the square of an element and its roots are *The Square of an Element in the Biquaternion Algebra*. The real case of this construction is *The Axis-Free Construction of the Quaternion Algebra*, in the Quaternions category.
 
 ## The Data
 
@@ -158,7 +158,7 @@ with all terms complex.
 
 ### The Table Is the Quaternion Table
 
-**The statement.** Every entry is invertible with a real sign. The table is the table of *The Axis-Free Construction of the Quaternion Algebra* and of *The Biquaternion Algebra*, entry for entry.
+**The statement.** Every entry is invertible with a real sign. The table is the table of *The Axis-Free Construction of the Quaternion Algebra* and of *Introduction to the Algebra of Biquaternions*, entry for entry.
 
 **Why this is the central fact of the construction.** A complex algebra of dimension four needs a table of sixteen complex numbers. This one needs sixteen integers. The coefficient field has enlarged and the multiplication has not changed, which is possible only because the new scalar is central. A reader who wants one sentence for the whole construction has it: the biquaternion algebra is the quaternion algebra with complex coefficients.
 
@@ -209,7 +209,7 @@ and the two agree term by term. ∎
 
 **The check.** The two expansions were compared on one hundred random complex pairs, largest residual $2.0\times10^{-15}$.
 
-**The reading.** The tensor product is a theorem here and a definition in *The Biquaternion Algebra*. Both statements are true and they are not rivals: the definition there answers the question what the algebra is made of, and the theorem here answers the question what the algebra built from the table turns out to be. The reverse reading is the useful one for this article, because a construction that begins with a tensor product has already chosen which factor is a field.
+**The reading.** The tensor product is a theorem here and a definition in *Introduction to the Algebra of Biquaternions*. Both statements are true and they are not rivals: the definition there answers the question what the algebra is made of, and the theorem here answers the question what the algebra built from the table turns out to be. The reverse reading is the useful one for this article, because a construction that begins with a tensor product has already chosen which factor is a field.
 
 **What the theorem does not say.** It does not say that $\mathbb{H}$ is the important factor or that $\mathbb{C}$ is an added layer. The tensor product is symmetric as a set of data, and the choice of the quaternion factor as the one with the vector units is a description, not a construction step.
 
@@ -271,7 +271,7 @@ $$
 
 **The centre of the display.** The matrix $L(\tilde Q)$ has trace $4Q_t$ and determinant $\langle\tilde Q\rangle_{\natural}^{2}$, the square of the norm of §*The Norm*, so the display separates the scalar part from the rest by its trace and detects the zero divisors by its determinant.
 
-**The check.** The trace identity held exactly on one hundred random complex elements, and the determinant identity to $7.7\times10^{-14}$. The rank of $L(\tilde Q)$ was $4$ on an invertible element and $2$ on the zero divisor $e_t+i\vec e_x$, which is the rank statement behind the annihilator dimension of *Zero Divisors and Invertibles*.
+**The check.** The trace identity held exactly on one hundred random complex elements, and the determinant identity to $7.7\times10^{-14}$. The rank of $L(\tilde Q)$ was $4$ on an invertible element and $2$ on the zero divisor $e_t+i\vec e_x$, which is the rank statement behind the annihilator dimension of *Zero Divisors and Invertibles in the Biquaternion Algebra*.
 
 ## The First Properties
 
@@ -363,7 +363,7 @@ because $\vec u^2=-e_t$ and $i^2=-e_t$, so both factors are nonzero and both are
 
 **The check.** The idempotent, Hermitian and null properties held on one hundred random real unit vectors, largest residual $1.1\times10^{-16}$.
 
-**The sphere of idempotents.** The idempotents of this form are indexed by the unit sphere of the real vector part, and the rotations of that sphere are automorphisms of the algebra, so no one of them is distinguished. The corpus writes one pair, $\tfrac12(e_t\pm i\vec e_z)$, because a frame is needed for the physics; the algebra supplies a sphere. The full classification of the idempotents, which is wider than this family, is *The Square of an Element*.
+**The sphere of idempotents.** The idempotents of this form are indexed by the unit sphere of the real vector part, and the rotations of that sphere are automorphisms of the algebra, so no one of them is distinguished. The corpus writes one pair, $\tfrac12(e_t\pm i\vec e_z)$, because a frame is needed for the physics; the algebra supplies a sphere. The full classification of the idempotents, which is wider than this family, is *The Square of an Element in the Biquaternion Algebra*.
 
 ### The Classes of Element
 
@@ -499,13 +499,13 @@ Two bits are left over and both are absorbed: the orientation of the three vecto
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra as a tensor product, its table, its axioms, its centre and the absence of division.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra as a tensor product, its table, its axioms, its centre and the absence of division.
 - [The Cayley–Dickson Construction of the Biquaternion Algebra](the-cayley-dickson-construction-of-the-biquaternion-algebra.html), for the stack of three layers and the proof that the third is a scalar extension.
 - [The Axis-Free Construction of the Quaternion Algebra](the-axis-free-construction-of-the-quaternion-algebra.html), for the real case, the ten statements and the associativity proof this article repeats.
-- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the four conjugations, their group and the three coordinate systems.
-- [Zero Divisors and Invertibles](zero-divisors-and-invertibles.html), for the annihilators, their dimension two, and the unit criterion.
+- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the four conjugations, their group and the three coordinate systems.
+- [Zero Divisors and Invertibles](zero-divisors-and-invertibles-in-the-biquaternion-algebra.html), for the annihilators, their dimension two, and the unit criterion.
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the norm as a form, its conjugates and its vanishing set.
-- [The Square of an Element](the-square-of-an-element.html), for the roots of a general element and the full classification of the idempotents.
+- [The Square of an Element](the-square-of-an-element-in-the-biquaternion-algebra.html), for the roots of a general element and the full classification of the idempotents.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the axis-free array and the reason the coefficient basis is the one that names no direction.
 - [Biquaternion Automorphisms and Derivations](biquaternion-automorphisms-and-derivations.html), for the full automorphism group, its two connected components, the derivation algebra and the role of Skolem–Noether.
 - [Quaternion Automorphisms and Derivations](quaternion-automorphisms-and-derivations.html), for the real case of the same three objects.

@@ -46,7 +46,7 @@ $$
 
 *Proof.* The trace and the determinant of a matrix are invariant under conjugation, hence independent of the basis; the multiplicativity of the determinant and the cyclicity of the trace are the matrix identities. The Cayley–Hamilton identity in dimension two is the computation of the characteristic polynomial $\lambda^2-(\operatorname{tr}T)\lambda+\det T$ at $\lambda=T$, and it is verified entrywise or by the general theorem (*$M_2(\mathbb{C})$ Pauli Representation*).
 
-**Remark (the spectrum).** Over $\mathbb{C}$ every operator has two eigenvalues counted with multiplicity, the roots of $\lambda^2-(\operatorname{tr}T)\lambda+\det T$. **The discriminant $\Delta=(\operatorname{tr}T)^2-4\det T$ separates the two cases**: for $\Delta\neq0$ the eigenvalues are distinct and the operator is diagonalisable; for $\Delta=0$ the operator is either scalar or a single Jordan block of size two, and in the second case it is not diagonalisable (*The Spectrum* and *The Jordan Basis* in the $M_2(\mathbb{C})$ Model).
+**Remark (the spectrum).** Over $\mathbb{C}$ every operator has two eigenvalues counted with multiplicity, the roots of $\lambda^2-(\operatorname{tr}T)\lambda+\det T$. **The discriminant $\Delta=(\operatorname{tr}T)^2-4\det T$ separates the two cases**: for $\Delta\neq0$ the eigenvalues are distinct and the operator is diagonalisable; for $\Delta=0$ the operator is either scalar or a single Jordan block of size two, and in the second case it is not diagonalisable (*The Spectrum of a Biquaternion* and *The Jordan Basis* in the $M_2(\mathbb{C})$ Model).
 
 ## The General Linear Group and the Projective Group
 
@@ -118,7 +118,7 @@ of real dimension $2$. The centraliser of this line is $\operatorname{End}_{\mat
 
 *Proof.* Let $T$ commute with every $S$. Since $J$ is complex-linear, $T$ commutes with $J$, hence $T$ is complex-linear. A complex-linear operator commuting with every complex-linear operator is scalar: testing against $E_{11}$ and $E_{12}$ gives the same computation as for the centre. Hence $T=aI+bJ$, that is multiplication by the complex number $a+ib$. Conversely such a map commutes with every complex-linear map. The second statement is the same computation applied to the line: a map commuting with $aI+bJ$ for all $a,b$ commutes with $J$, hence is complex-linear.
 
-**Remark (the two centralisers are not the same).** The centraliser of $J$ is the whole matrix algebra, of dimension $8$; the centraliser of the matrix algebra is the line of complex scalars, of dimension $2$. **The passage from an operator to the operators commuting with it thus loses and then recovers the algebra**: the bicommutant of $\operatorname{End}_{\mathbb{C}}(V)$ in $\operatorname{End}_{\mathbb{R}}(V)$ is $\operatorname{End}_{\mathbb{C}}(V)$, which is the finite-dimensional case of the double centraliser theorem. The matrix computation is *The Centraliser*; the general theorem is *The Endomorphism Algebra of a Module*.
+**Remark (the two centralisers are not the same).** The centraliser of $J$ is the whole matrix algebra, of dimension $8$; the centraliser of the matrix algebra is the line of complex scalars, of dimension $2$. **The passage from an operator to the operators commuting with it thus loses and then recovers the algebra**: the bicommutant of $\operatorname{End}_{\mathbb{C}}(V)$ in $\operatorname{End}_{\mathbb{R}}(V)$ is $\operatorname{End}_{\mathbb{C}}(V)$, which is the finite-dimensional case of the double centraliser theorem. The matrix computation is *The Centraliser in the Biquaternion Algebra*; the general theorem is *The Endomorphism Algebra of a Module*.
 
 **Remark (the centraliser of one operator).** The centraliser in $\operatorname{End}_{\mathbb{C}}(V)$ of a single operator $T$ is larger than the scalars: it has complex dimension $4$ when $T$ is scalar and complex dimension $2$ otherwise. **The two-dimensional case is the algebra of polynomials in $T$**, which is $\mathbb{C}[T]$ and coincides with the centraliser for every non-scalar $2\times2$ matrix (*The Centraliser and the Double Centraliser* in the $M_2(\mathbb{C})$ Model).
 
@@ -141,7 +141,7 @@ $$
 
 *Proof.* A submodule is a complex subspace stable under every operator; the only such subspaces are $0$ and the whole space, since the operators $E_{jk}$ move any nonzero vector to any other. Faithfulness is the definition of the endomorphism algebra as a subalgebra of the maps. Uniqueness is the classification of the simple modules over a matrix algebra (*The Regular Module in the Biquaternion Algebra* and *Modules over an Algebra*).
 
-**Remark (the choices behind the identification).** The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is not canonical: it depends on the choice of the complex basis of $\mathbb{C}^2$ and on the identification of the quaternion units with the three matrices above. **What is canonical is the algebra of operators and its action on the space**; the matrix model is a coordinate reading, and the conjugations of the biquaternion algebra are read on the matrices by the corresponding conjugations (*The Element, the Coordinates and the Conjugations* and *Adjoint Pair of $L$ and $R$ Operators*).
+**Remark (the choices behind the identification).** The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ is not canonical: it depends on the choice of the complex basis of $\mathbb{C}^2$ and on the identification of the quaternion units with the three matrices above. **What is canonical is the algebra of operators and its action on the space**; the matrix model is a coordinate reading, and the conjugations of the biquaternion algebra are read on the matrices by the corresponding conjugations (*The Element, the Coordinates and the Conjugations in the Biquaternion Algebra* and *Adjoint Pair of $L$ and $R$ Operators*).
 
 ## Summary
 
@@ -172,8 +172,8 @@ The conjugate-linear maps form a complex vector space of dimension $4$ and real 
 - [The Tensor Square of $\mathbb{C}^2$](the-tensor-square-of-c2.html), for $V\otimes V$ and its relation to the endomorphism algebra.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-c2.html), for $\mathrm{GL}_2$, $\mathrm{SL}_2$, $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and their intersections.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the matrix computations of the product, the trace and the determinant.
-- [The Centraliser](the-centraliser.html), for the centraliser of a single matrix and the bicommutant.
+- [The Centraliser](the-centraliser-in-the-biquaternion-algebra.html), for the centraliser of a single matrix and the bicommutant.
 - [The Biquaternion Group of Invertibles as a Topological Group](the-biquaternion-group-of-invertibles-as-a-topological-group.html), for the groups and the determinant.
 - [The Möbius Transformation as an Operator](the-mobius-transformation-as-an-operator.html), for the action on $\mathbb{CP}^1$.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its isomorphism with $M_2(\mathbb{C})$.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its isomorphism with $M_2(\mathbb{C})$.
 - [The Endomorphism Algebra of a Module](the-endomorphism-algebra-of-a-module.html), for the double centraliser theorem in general.

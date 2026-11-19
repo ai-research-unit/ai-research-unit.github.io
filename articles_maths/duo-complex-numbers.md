@@ -12,7 +12,7 @@ The article states the definitions and the elementary propositions that every la
 
 One warning is stated at once. **The number that measures the size of $\mathbb{C}^2$ is not a property of the set: it is $2$ over $\mathbb{C}$ and $4$ over $\mathbb{R}$.** The two numbers are both correct, they count different things, and no statement in this category is allowed to leave the field implicit.
 
-The space is also the natural module of the matrix algebra. The algebra $M_2(\mathbb{C})$ acts on $\mathbb{C}^2$ by $TQ$, and $M_2(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the space is therefore the simple module, or the spinor module, of the biquaternion algebra (*The Endomorphisms of $\mathbb{C}^2$*, and *The Biquaternion Algebra*). Nothing of that reading is used below: the space is fixed first, and the operators come after.
+The space is also the natural module of the matrix algebra. The algebra $M_2(\mathbb{C})$ acts on $\mathbb{C}^2$ by $TQ$, and $M_2(\mathbb{C})$ is the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the space is therefore the simple module, or the spinor module, of the biquaternion algebra (*The Endomorphisms of $\mathbb{C}^2$*, and *Introduction to the Algebra of Biquaternions*). Nothing of that reading is used below: the space is fixed first, and the operators come after.
 
 ## The Set and the Two Scalar Structures
 
@@ -252,5 +252,5 @@ The notation is distinguished four ways: $\mathbb{C}^2$ is the pair space, contr
 - [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-c2.html), below in this category, for the one-point compactification $S^4$ and the projective compactification $\mathbb{CP}^2$.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), below in this category, for the Hopf bundle $S^1\to S^3\to S^2$.
 - [Several Complex Variables](several-complex-variables.html), for the general theory of holomorphic functions of several variables, of which this category treats the case of two variables.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ whose simple module is this space.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ whose simple module is this space.
 - [Conway, *Functions of One Complex Variable*](https://link.springer.com/book/10.1007/978-1-4612-6313-5), for the one-variable facts that the two-variable theory inherits and those it does not.

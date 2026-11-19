@@ -34,7 +34,7 @@ Two columns of that table decide the shape of the whole subject. The plain bilin
 
 Each family is named after the adjoint whose form it records, so a row here and a row of the table above carry the same word: plain bilinear, quaternionic, Hermitian, Krein. The fourth row is not a fifth adjoint, and the distinction matters. The form is the plain sesquilinear form, the same one as the row above it; only the operator carries the grade involution on its left factor. So there are **four adjoints and five families**, and the word *signed* names the same operation in every row where it appears: the insertion of $\natural$.
 
-The article proves the theorem of §*The Four Adjoints*, works one operator through all four adjoints, gives the self-adjointness criteria of the four, and shows that only the Hermitian family preserves the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ of the algebra. The forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four involutions are *The Group of Involutions*; the general transpose of a bilinear form is *Bilinear Forms*, §*Isometries*. No step uses a topology, a distance or a limit.
+The article proves the theorem of §*The Four Adjoints*, works one operator through all four adjoints, gives the self-adjointness criteria of the four, and shows that only the Hermitian family preserves the two sectors $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ of the algebra. The forms are *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the four involutions are *The Group of Involutions of the Biquaternion Algebra*; the general transpose of a bilinear form is *Bilinear Forms*, §*Isometries*. No step uses a topology, a distance or a limit.
 
 ## The Four Forms
 
@@ -398,7 +398,7 @@ Of the five families only the **Hermitian pair** preserves the sectors $\mathbb{
 
 - [Introduction to the Operators of the Biquaternion Algebra](introduction-to-the-operators-of-the-biquaternion-algebra.html), for the products-to-operators bridge that the four adjoints serve, and for the two switches $\sigma$ and $\alpha$ read in the parameters
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms, their Gram matrices and their inertias
-- [The Group of Involutions](the-group-of-involutions.html), for the four conjugations, their group and their linearity
+- [The Group of Involutions](the-group-of-involutions-of-the-biquaternion-algebra.html), for the four conjugations, their group and their linearity
 - [The Transposition of the Two Sides](the-transposition-of-the-two-sides.html), for the plain bilinear adjoint read as the transpose of the plain form, $L_{\tilde Q}^{\mathsf T}=R_{\tilde Q}$, for the conjugation $\natural L_{\tilde Q}\natural=R_{\tilde Q^{\natural}}$, and for the three maps that surround them
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the Conway operator basis on which the plain bilinear adjoint reverses the factors
 - [Bilinear Forms](bilinear-forms.html), §*Isometries*, and [Quadratic Forms and Polarisation](quadratic-forms-and-polarisation.html), §*Isometry of Forms*, for the general transpose $M\mapsto G^{-1}M^{\mathsf T}G$

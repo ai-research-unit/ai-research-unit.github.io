@@ -169,6 +169,6 @@ The square of the vector part on the plane is $-\lambda^{2}/4$, so the plane is 
 - [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the other predicate on the same spaces
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector in which the plane away from the origin lies
-- [The Spectrum](the-spectrum.html), for the two eigenvalues of an element and the quadratic relation
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the two eigenvalues of an element and the quadratic relation
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the idempotents, the ideals and the splitting
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers taken together

@@ -153,7 +153,7 @@ On the anti-Hermitian closure the square of the vector part is $\lvert\vec v\rve
 - [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the carrier, the closure and the action on it
 - [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the other predicate on the same space
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the definitions of the two predicates and the four sectors
-- [The Spectrum](the-spectrum.html), for the two eigenvalues of an element and the quadratic relation
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the two eigenvalues of an element and the quadratic relation
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the sector in which the carrier away from the origin lies
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector containing the null cone of the closure
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers taken together

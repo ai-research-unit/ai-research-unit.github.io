@@ -523,4 +523,4 @@ The numbers $r_+$ and $r_-$ are the singular values of the element, and $r=(r_++
 - [The Unitary Group of the Biquaternion Algebra](the-unitary-group-of-the-biquaternion-algebra.html), for $\mathrm{U}(\mathbb{B})\cong\mathrm{U}(2)$ and its action.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the element-dependent root compared in §*Relation to the Eigenbasis*.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the matrix check of §*The Matrix Model as a Check*.
-- [Idempotents](idempotents.html), for the classification of the idempotents and the halving map from the roots of $e_t$.
+- [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the idempotents and the halving map from the roots of $e_t$.

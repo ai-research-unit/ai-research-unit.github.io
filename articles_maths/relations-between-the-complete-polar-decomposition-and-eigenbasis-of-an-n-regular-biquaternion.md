@@ -8,7 +8,7 @@ The two readings depend on the invariant $B^2=Q_x^2+Q_y^2+Q_z^2$ differently. Of
 
 The dictionary is therefore one dictionary with two shapes. Off the wall it is a two-step map: eigenvalues first, eigenprojections second. On the wall the first step collapses to $Q_t\mapsto(Q_t,\varepsilon)$ and the second step carries everything else. The constant part, across the wall, is the scalar factor $\varrho e^{i\theta_{\mathrm{pha}}}$: it is read from the reduced product in both cases, because $\lambda_+\lambda_-=N$ off the wall and $N=Q_t^2$ on it.
 
-The algebra is that of *The Complete Polar Decomposition of an N-Regular Biquaternion* for the word and the Cartan decomposition, and that of *The Biquaternion Eigenvalue Decomposition* and *The Spectrum* for the spectral side. The Jordan chain on the wall is the one of *The Jordan Basis of a Spectrally Degenerate Biquaternion*. No proof is repeated from those articles; the Jordan chain is recalled only where the dictionary needs it. The numerical cases are in *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion* and in *Worked Examples of the Complete Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion*.
+The algebra is that of *The Complete Polar Decomposition of an N-Regular Biquaternion* for the word and the Cartan decomposition, and that of *The Biquaternion Eigenvalue Decomposition* and *The Spectrum of a Biquaternion* for the spectral side. The Jordan chain on the wall is the one of *The Jordan Basis of a Spectrally Degenerate Biquaternion*. No proof is repeated from those articles; the Jordan chain is recalled only where the dictionary needs it. The numerical cases are in *Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion* and in *Worked Examples of the Complete Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion*.
 
 **The plan.** The two decompositions and their common domain are set out in §*The Two Decompositions*. §*The Dictionary* gives the translation in both directions, with the wall's table as its last subsection. §*The Regimes* lists the six spectral regimes with their polar status, and §*The Jordan Reading* replaces the eigenbasis by a Jordan chain on the wall. The exponential and the logarithm are treated in §*The Exponential and the Logarithm*, the two boundaries in §*The Boundary*, and the matrix form in §*The Matrix Picture*. §*A Worked Example at the Wall* computes one defective element in both readings. The summary collects the main results, the dictionary across the three algebras, and what the example shows.
 
@@ -33,7 +33,7 @@ $$
 \vec{Ζ}=-i\vec Q\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2},
 $$
 
-with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec{Ζ}$, and $\vec{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *The Spectrum*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
+with $\tilde\Pi_\pm$ primitive, orthogonal and complete, but noncentral. They depend on $\tilde Q$: they are the two idempotents of the pure root $\vec{Ζ}$, and $\vec{Ζ}=\tilde\Pi_+-\tilde\Pi_-$. These are the statements of *The Spectrum of a Biquaternion*, §*The Spectral Criterion* and §*The Spectral Decomposition*.
 
 | Spectral item | Value |
 |---|---|
@@ -86,7 +86,7 @@ The spectral decomposition exists in the distinct case $Q_x^2+Q_y^2+Q_z^2\neq0$,
 * a **zero divisor** with $Q_x^2+Q_y^2+Q_z^2\neq0$ and $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ has two distinct eigenvalues and a two-term spectral decomposition, but no polar word;
 * a **Jordan element** with $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$ and $Q_t\neq0$ has a repeated eigenvalue and no two-term spectral decomposition, but it is invertible and has a polar word.
 
-The table records the regimes of *The Spectrum*, §*The Two Cases*, with the polar status added; the zero element is separated from the scalar regime.
+The table records the regimes of *The Spectrum of a Biquaternion*, §*The Two Cases*, with the polar status added; the zero element is separated from the scalar regime.
 
 | Regime | Condition | Spectrum | Spectral decomposition | Polar decomposition |
 |---|---|---|---|---|
@@ -731,7 +731,7 @@ The polar domain is the complement of the null cone $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$.
 | Idempotent | $Q_x^2+Q_y^2+Q_z^2\neq0$, $Q_t^2+Q_x^2+Q_y^2+Q_z^2=0$ | $\lambda_+\neq\lambda_-$, one zero | $\tilde Q=\lambda_\sigma\tilde\Pi_\sigma$, a complex multiple of a minimal idempotent | $\varrho\to0$, $\theta_{\mathrm{rpd}}\to\infty$, $\varrho e^{\theta_{\mathrm{rpd}}/2}\to R$ |
 | Nilpotent | $Q_x^2+Q_y^2+Q_z^2=0$, $\vec Q\neq0$, $Q_t=0$ | $\lambda_+=\lambda_-=0$, no eigenprojection | $\tilde Q=\vec Q$, $\vec Q^2=0$ | the same limit with the rotor anticommuting with the boost axis |
 
-For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec{Ζ})$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *Idempotents* and *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*; they are not repeated here.
+For the idempotent stratum, the eigenprojection is well defined, and the element is a nonzero complex multiple of $\tilde\Pi_\sigma=\tfrac12(e_t+\sigma\vec{Ζ})$; the other eigenvalue is zero. For the nilpotent stratum, $Q_x^2+Q_y^2+Q_z^2=0$ and the eigenprojection formula fails, because the inverse square root $\bigl(Q_x^2+Q_y^2+Q_z^2\bigr)^{-1/2}$ is undefined; the element is a pure nilpotent. The classification of the minimal idempotents and the Peirce decomposition are those of *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*; they are not repeated here.
 
 The polar word reaches the boundary with $\varrho\to0$ and $\theta_{\mathrm{rpd}}\to\infty$ at the rate $\varrho e^{\theta_{\mathrm{rpd}}/2}\to R$ with $0<R<\infty$. The limit is
 
@@ -739,7 +739,7 @@ $$
 \frac{R\,e^{i\theta_{\mathrm{pha}}}}{2}\bigl(e_t+i\vec u_{\mathrm b}\bigr)\tilde u_{\mathrm r},
 $$
 
-which is a nonzero complex multiple of a minimal idempotent when $\tilde u_{\mathrm r}$ does not anticommute with $\vec u_{\mathrm b}$, and a nilpotent when it does. This is the boundary form of the two strata: the eigenprojection survives in the first case and disappears in the second. The detailed boundary limits and the two strata are in *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Two Strata* and §*The Two Walls*; the classification of the minimal idempotents is in *Idempotents*. The present article records only their spectral reading.
+which is a nonzero complex multiple of a minimal idempotent when $\tilde u_{\mathrm r}$ does not anticommute with $\vec u_{\mathrm b}$, and a nilpotent when it does. This is the boundary form of the two strata: the eigenprojection survives in the first case and disappears in the second. The detailed boundary limits and the two strata are in *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Two Strata* and §*The Two Walls*; the classification of the minimal idempotents is in *The Square Roots of One and the Idempotents of the Biquaternion Algebra*. The present article records only their spectral reading.
 
 ### Across the Wall
 
@@ -1081,7 +1081,7 @@ Read down a column for one algebra and across a row for one concept. The first t
 - [Worked Examples of the Complete Polar Decomposition of an N-Regular Biquaternion](worked-examples-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the numerical cases of the word, off the wall and on it.
 - [Worked Examples of the Complete Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion](worked-examples-of-the-complete-polar-decomposition-in-the-eigenbasis-of-an-n-regular-biquaternion.html), for the same cases read in the eigenbasis and in the Jordan chain.
 - [The Biquaternion Eigenvalue Decomposition](the-biquaternion-eigenvalue-decomposition.html), §*The Eigenvalues* and §*The Eigenprojectors*, for the spectrum and the eigenprojections.
-- [The Spectrum](the-spectrum.html), for the four sectors, the discriminants, and the degenerate cone.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the four sectors, the discriminants, and the degenerate cone.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the chain selected by the Hermitian form.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the principal branch.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus and the unit factor.

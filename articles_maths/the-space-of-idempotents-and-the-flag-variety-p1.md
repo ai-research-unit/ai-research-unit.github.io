@@ -6,7 +6,7 @@
 
 The article classifies the idempotents, proves the correspondence between rank-one idempotents and pairs of complementary lines, identifies the flag variety and the minimal left ideals with $\mathbb{P}^{1}$, describes the surface as a bundle over $\mathbb{P}^{1}$, and shows that the Hermitian idempotents form the sphere $S^{2}$. It assumes *The Space of Idempotents and the Peirce Decomposition*, *The Minimal Left Ideals of the Biquaternion Algebra* and *The Spectral Theorem: the Hermitian Case and the Sphere of Idempotents*.
 
-It follows the biquaternion article *Idempotents* for the same classification in the biquaternion coordinates.
+It follows the biquaternion article *The Square Roots of One and the Idempotents of the Biquaternion Algebra* for the same classification in the biquaternion coordinates.
 
 ## The Idempotents
 

@@ -1,5 +1,5 @@
 
-# __The Graded Adjoint Action on a Graded Module__
+# __The Graded Adjoint Action on a Module over an Involutive Banach Algebra__
 
 ## Introduction
 

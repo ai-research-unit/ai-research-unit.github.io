@@ -131,5 +131,5 @@ Of the eight structures on $\mathbb{B}_{\mathrm{red}}=\mathbb{C}\Pi_+\oplus\math
 - [Ideals and Peirce Decomposition of the Algebra of the Reduced Biquaternions](ideals-and-peirce-decomposition-of-the-algebra-of-the-reduced-biquaternions.html), for the ideal lattice and the Peirce decomposition.
 - [$M_2(\mathbb{C})$ Reduced Representation : Operators](m2c-reduced-representation-operators.html), for the operators and the bi-module structure.
 - [The Group of Invertibles of the Algebra of the Reduced Biquaternions](the-group-of-invertibles-of-the-algebra-of-the-reduced-biquaternions.html), for the group of invertibles and its boundary.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the non-commutative companion and the same criterion.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the non-commutative companion and the same criterion.
 - [The Four Products, Their Forms and Their Algebraic Norms](the-four-products-their-forms-and-their-algebraic-norms.html), for the eight structures and the isolation.

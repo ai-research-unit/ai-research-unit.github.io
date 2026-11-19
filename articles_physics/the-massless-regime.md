@@ -34,7 +34,7 @@ $$
 | the eigenbasis, the normalisation, the Peirce basis and the spinor reading on the whole spectrally regular part | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html) |
 | the idempotents, the minimal left ideals and the projective structure | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | the null quadric, its rulings and its projective geometry | [The Null Quadric and Its Projective Geometry](../articles_maths/the-null-quadric-and-its-projective-geometry.html) |
-| the characteristic polynomial, the two eigenvalues and the discriminant | [The Spectrum](../articles_maths/the-spectrum.html) |
+| the characteristic polynomial, the two eigenvalues and the discriminant | [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) |
 | the two predicates, the independence of the cones and the chain of invariants | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the corner rule, the idempotents and the off-diagonal nilpotents | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | the modulus and the place where the polar word has no value | [The Polar Decomposition of an N-Degenerate Biquaternion](../articles_maths/the-polar-decomposition-of-an-n-degenerate-biquaternion.html) |

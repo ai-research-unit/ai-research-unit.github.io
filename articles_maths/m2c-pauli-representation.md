@@ -44,7 +44,7 @@ which are printed here once because the display of this article is built from th
 
 **The order of the article.** The article follows the $4\times4$ one step by step, at the size of one block. The root and its two idempotents come first, as the compression of §*The Root and the Peirce Frame* of the $4\times4$ article (§*The Root and the Two Idempotents*), then the Peirce basis in the two orders that the two sides need (§*The Peirce Basis and the Two Orders*). The left and the right matrices are read on the two ideals (§*The Left and Right Matrices*, against §*The Left Family* and §*The Right Family*), then the images of the four units (§*The Images of the Four Units*) and the stitch between the two sides (§*The Stitch Between the Left and the Right*, against §*The Stitch Between the Two Families*). The compression maps and the surviving switch follow (§*The Compression and the Switch*, against §*Every Frame Is a Conjugate of This One*), and then the entry-size quantities: the product, the trace and the determinant (§*The Product*, §*The Trace*, §*The Determinant*). The spectral projectors, the diagonalising matrix, the adjugate and the inverse, and the four norms are new at the element size, with no section of their own in the $4\times4$ article (§*The Spectral Projectors*, §*The Adjugate and the Inverse*, §*The Four Norms*). The six subspaces close the article in their compressed form (§*The Six Subspaces*), and what fails to compress is named at the end of §*The Compression and the Switch*.
 
-**Boundaries.** This article is the continuation of *$M_4(\mathbb{C})$ Pauli Representation*: it takes the block of §*The Left Family* and §*The Right Family* there and follows it to the end. The algebra and the multiplication table are *The Biquaternion Algebra*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations*. The matrix units and the two Peirce planes are *The Polarized Module of the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
+**Boundaries.** This article is the continuation of *$M_4(\mathbb{C})$ Pauli Representation*: it takes the block of §*The Left Family* and §*The Right Family* there and follows it to the end. The algebra and the multiplication table are *Introduction to the Algebra of Biquaternions*; the element, its coordinates and the four conjugations are *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The matrix units and the two Peirce planes are *The Polarized Module of the Biquaternion Algebra*. The six subspaces are defined in *Subspaces and Decompositions of the Biquaternion Algebra* and tabulated here in §*The Six Subspaces*.
 
 ## The Root and the Two Idempotents
 
@@ -537,7 +537,7 @@ The identity is the matrix form of $\tilde Q^2-2Q_t\tilde Q+\langle\tilde Q\rang
 $$
 \mathbb{C}[A]=\operatorname{span}\{\mathrm I_2,A\},
 $$
-of complex dimension two, so every polynomial in $A$ of degree at least two is a linear combination of $\mathrm I_2$ and $A$. The minimal polynomial is $t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}$ for a non-scalar element and $t-Q_t$ for a scalar. Its degree stays two in the first case even when the two eigenvalues coincide, which is why the centraliser of a spectrally regular element is two-dimensional, as in *The Centraliser*.
+of complex dimension two, so every polynomial in $A$ of degree at least two is a linear combination of $\mathrm I_2$ and $A$. The minimal polynomial is $t^2-2Q_tt+\langle\tilde Q\rangle_{\natural}$ for a non-scalar element and $t-Q_t$ for a scalar. Its degree stays two in the first case even when the two eigenvalues coincide, which is why the centraliser of a spectrally regular element is two-dimensional, as in *The Centraliser in the Biquaternion Algebra*.
 
 ## The Spectral Projectors
 
@@ -851,7 +851,7 @@ The compression keeps the product, the trace, the determinant and the six subspa
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for the uncompressed representation, the two blocks, the stitch and the axis-free basis switch.
 - [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-pauli-representation-operators.html), for the operators on the algebra, the one-matrix and pair descriptions, and the Kronecker display.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the same element in the axis-free basis.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
-- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the coefficient form of the element and the four conjugations.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra and the multiplication table.
+- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the coefficient form of the element and the four conjugations.
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and the three splits.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the fixed model and the conventions of the matrix models.

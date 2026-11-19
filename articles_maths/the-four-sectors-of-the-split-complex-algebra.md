@@ -137,7 +137,7 @@ The closures overlap: $\overline{\Sigma_{11}}=\mathbb{C}_{\mathrm{spl}}$ meets e
 
 *Proof.* The first two sectors have $b\neq0$ and the last two $b=0$; apply the theorem.
 
-Unlike *[The Spectrum](the-spectrum.html)*, whose degenerate cone carries nilpotent and unipotent defective strata, $\mathbb{C}_{\mathrm{spl}}$ is reduced: its degenerate locus is the real axis, with no defective stratum. "Degenerate" records the vanishing of a condition, not a defect of the operator.
+Unlike *[The Spectrum](the-spectrum-of-a-biquaternion.html)*, whose degenerate cone carries nilpotent and unipotent defective strata, $\mathbb{C}_{\mathrm{spl}}$ is reduced: its degenerate locus is the real axis, with no defective stratum. "Degenerate" records the vanishing of a condition, not a defect of the operator.
 
 ## The Sectors at a Glance
 

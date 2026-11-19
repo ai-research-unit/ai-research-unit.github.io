@@ -18,7 +18,7 @@ The article assumes *Algebra and Element Conventions*, whose §*The Conjugations
 
 The roots carry a symbol of their own, beside the idempotent $\tilde\Pi$ (§*The Idempotent Convention*) and the nilpotent $\tilde\nu$ (§*The Nilpotent Convention*): the **root glyph**, in the two cases.
 
-A **root of $1$** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{Ζ}^2 = \lambda e_t$; the roots of the three central values $-1, 0, +1$ are determined in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general problem is *Square Roots of an Element*.
+A **root of $1$** of the algebra is an element $\tilde{Ζ}$ with $\tilde{Ζ}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{Ζ}^2 = \lambda e_t$; the roots of the three central values $-1, 0, +1$ are determined in *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general problem is *The Square Roots of a General Element in the Biquaternion Algebra*.
 
 **The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents: the class is relative to the product, and the roots of a value are read product by product in *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 

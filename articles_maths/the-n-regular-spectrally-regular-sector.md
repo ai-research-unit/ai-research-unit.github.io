@@ -14,7 +14,7 @@ $$
 \Sigma_{11}=\mathbb{B}\setminus(\mathcal N\cup\mathcal S),
 $$
 
-and it is the **generic** sector: the open dense sector in which both problems of the arrangement receive the positive answer. The other three sectors are the mixed sectors $\Sigma_{10}=\mathcal S\setminus\mathcal N$ and $\Sigma_{01}=\mathcal N\setminus\mathcal S$, and the doubly degenerate sector $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*.
+and it is the **generic** sector: the open dense sector in which both problems of the arrangement receive the positive answer. The other three sectors are the mixed sectors $\Sigma_{10}=\mathcal S\setminus\mathcal N$ and $\Sigma_{01}=\mathcal N\setminus\mathcal S$, and the doubly degenerate sector $\Sigma_{00}=\mathcal N\cap\mathcal S$, treated in *The N-Regular, Spectrally Degenerate Sector*, *The N-Degenerate, Spectrally Regular Sector* and *The N-Degenerate, Spectrally Degenerate Sector*. The vocabulary, the two cones and the naming convention are those of *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum of a Biquaternion*.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_k^2=-e_t$, and $\tilde Q=Q_te_t+\vec Q$; the conjugation is ${}^{\natural}$; the quaternionic norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$, central; and the product is the plain product unless stated otherwise. The null cone is $\mathcal N=\{N=0\}$; the spectral-degenerate cone is $\mathcal S=\{B^2=0\}$; **regular** means non-zero: $\langle\tilde Q\rangle_{\natural}\neq0$ for the norm, $B^2\neq0$ for the spectrum.
 
@@ -44,7 +44,7 @@ $$
 
 (ii) $\iff$ (iv): with distinct eigenvalues the spectral idempotents $e_\pm$ exist, are non-trivial, and are unique; the coefficients $\lambda_\pm$ are distinct and non-zero because $\langle\tilde Q\rangle_{\natural}=\lambda_+\lambda_-\neq0$. Conversely such a decomposition exhibits two distinct eigenvalues and a non-zero norm.
 
-(i) $\iff$ (v): for a non-scalar element a Peirce decomposition relative to $\tilde Q$ exists exactly when $B^2\neq0$, by the existence theorem of *The Spectrum*; invertibility is exactly $\langle\tilde Q\rangle_{\natural}\neq0$. So both conditions together are exactly (i).
+(i) $\iff$ (v): for a non-scalar element a Peirce decomposition relative to $\tilde Q$ exists exactly when $B^2\neq0$, by the existence theorem of *The Spectrum of a Biquaternion*; invertibility is exactly $\langle\tilde Q\rangle_{\natural}\neq0$. So both conditions together are exactly (i).
 
 **Corollary (regular semisimple units).** The sector is the set of regular semisimple elements of the group of invertibles:
 
@@ -1087,7 +1087,7 @@ The sector is the generic sector. It is the set of invertibles with distinct non
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for $\Sigma_{01}$, the scaled idempotents.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for $\Sigma_{10}$, the unipotents and the scalar line.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone, its strata and the group of invertibles.
-- [The Spectrum](the-spectrum.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the discriminant, the spectral criterion and the spectral-degenerate cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors and the comparison of the two cones.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners and the minimal ideals.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt N$ and the unit factor.

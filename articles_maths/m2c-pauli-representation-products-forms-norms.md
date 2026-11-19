@@ -450,6 +450,6 @@ The plane carries one non-degenerate form and three degenerate restrictions: $[H
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms and the four norms without matrices.
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the two exchanges and the twelve products.
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the four products.
-- [Zero Divisors and Invertibles in the Biquaternion Algebra](zero-divisors-and-invertibles.html), for the cone $\langle\tilde Q\rangle_{\natural}=0$ and the three ranks.
+- [Zero Divisors and Invertibles in the Biquaternion Algebra](zero-divisors-and-invertibles-in-the-biquaternion-algebra.html), for the cone $\langle\tilde Q\rangle_{\natural}=0$ and the three ranks.
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra and the multiplication table.

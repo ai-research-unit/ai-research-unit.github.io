@@ -6,7 +6,7 @@
 
 The article collects the shape of the base case, separates the statements that hold at every order from the accidents of order two, records where order three departs from the pattern, and hands the reader to the series on $M_3(\mathbb{C})$. It assumes the whole preceding sequence, in particular *The Frame, the Simple Nilpotent and the Gauge of $M_2(\mathbb{C})$*, *The Polar Decomposition from the Two Halves at $n=2$* and *The Symmetric Space $\mathrm{GL}_2/O(2)$ and Its Complex Twin*.
 
-It follows the biquaternion article *The Biquaternion Algebra* for the same base case in the older language.
+It follows the biquaternion article *Introduction to the Algebra of Biquaternions* for the same base case in the older language.
 
 ## The Shape of the Base Case
 

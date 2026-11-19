@@ -1,10 +1,10 @@
-# __The Square of an Element__
+# __The Square of an Element in the Biquaternion Algebra__
 
 ## Introduction
 
 The square is the first operation of the algebra that is not linear. This article computes it on the general element, in the coordinates of that element, and reads the two parts of the result. It then reads the square as a condition: when the square is central, when it vanishes, and when it equals the element again.
 
-The article is form-free. It uses the product, the coefficients and the scalar–vector split of *The Element, the Coordinates and the Conjugations*, and it pairs no two different elements. No norm and no form appears.
+The article is form-free. It uses the product, the coefficients and the scalar–vector split of *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*, and it pairs no two different elements. No norm and no form appears.
 
 ## The Formula
 
@@ -70,7 +70,7 @@ $$
 \tilde Q^2=0\iff Q_t=0\ \text{and}\ B^2=0 .
 $$
 
-The elements whose square vanishes are exactly the pure elements whose complex length is zero. The non-zero elements of this set are treated in *Nilpotents*.
+The elements whose square vanishes are exactly the pure elements whose complex length is zero. The non-zero elements of this set are treated in *The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
 
 ## The Square that Equals the Element
 
@@ -88,7 +88,7 @@ $$
 \tilde Q^2=\tilde Q\iff \tilde Q\in\{0,e_t\}\ \text{or}\ \Bigl(Q_t=\tfrac12,\ B^2=-\tfrac14\Bigr).
 $$
 
-The second case is the family $\tilde Q=\tfrac12(e_t+\vec u)$ with $\vec u$ a pure element of $(\vec u,\vec u)=-1$. These elements are classified in *Idempotents*.
+The second case is the family $\tilde Q=\tfrac12(e_t+\vec u)$ with $\vec u$ a pure element of $(\vec u,\vec u)=-1$. These elements are classified in *The Square Roots of One and the Idempotents of the Biquaternion Algebra*.
 
 ## The Isotropic Cone
 
@@ -133,8 +133,8 @@ The quantity $B^2$ is the scalar of the square of the pure part, $\vec Q^2=-B^2e
 
 ## Further Reading
 
-- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the split and the coefficients.
-- [Nilpotents](nilpotents.html), for the elements whose square vanishes.
-- [Idempotents](idempotents.html), for the elements fixed by their square.
-- [The Spectrum](the-spectrum.html), for the degenerate cone.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the product and the basis.
+- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the split and the coefficients.
+- [Nilpotents](the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the elements whose square vanishes.
+- [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the elements fixed by their square.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the degenerate cone.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the product and the basis.

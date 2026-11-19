@@ -832,7 +832,7 @@ The scalar term is $2i\operatorname{Im}(\alpha\bar\beta)$, and it vanishes exact
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the idempotents, the minimality and the splitting of the algebra
 - [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the system of matrix units
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners and the diagonal part
-- [The Regular Module in the Biquaternion Algebra](the-regular-module.html), for the algebra read as a module over itself
+- [The Regular Module in the Biquaternion Algebra](the-regular-module-in-the-biquaternion-algebra.html), for the algebra read as a module over itself
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the centre, the pure part and the two Hermitian halves
 - [Representations of Groups](representations-of-groups.html), for complete reducibility by averaging, which is what compactness of the group of invertibles supplies
 - [Biquaternion Rotations and Lorentz Transformations](biquaternion-rotations-and-lorentz-transformations.html), for the rotor, the two-to-one cover and the comparison of the two two-sided actions

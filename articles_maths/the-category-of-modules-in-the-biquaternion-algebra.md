@@ -1,4 +1,4 @@
-# __The Category of Modules__
+# __The Category of Modules in the Biquaternion Algebra__
 
 ## Introduction
 
@@ -136,7 +136,7 @@ Every statement that can be made about $\mathbb{B}$-modules is a statement about
 
 The naive notion of torsion does not survive the passage from a commutative domain to $\mathbb{B}$, and it is worth recording why, since the failure is a feature of the module category rather than a defect.
 
-Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors, treated in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, *Zero Divisors and Invertibles*, and for every nonzero $s\in S$ the annihilator
+Recall that over a commutative domain a nonzero module element $m$ is torsion when $\operatorname{Ann}(m)\neq0$, an invariant that classifies finitely generated modules over a principal ideal domain (*Modules over a PID*). Over $\mathbb{B}$ the definition collapses. The algebra has zero divisors, treated in *N-Regularity and N-Degeneracy in the Biquaternion Algebra*, *Zero Divisors and Invertibles in the Biquaternion Algebra*, and for every nonzero $s\in S$ the annihilator
 
 $$
 \operatorname{Ann}_\mathbb{B}(s)=\{b\in\mathbb{B}:bs=0\}
@@ -190,7 +190,7 @@ one for each kernel line, so the family of minimal left ideals is a projective l
 
 **The left ideals are $0$, the minimal left ideals and $\mathbb{B}$; the middle layer is a projective line, and every minimal left ideal is maximal.**
 
-The two-sided lattice is the two-element chain $0\subset\mathbb{B}$ of *The Regular Module*, §*The Two-Sided Ideals*; the lattice with a middle layer is the left one.
+The two-sided lattice is the two-element chain $0\subset\mathbb{B}$ of *The Regular Module in the Biquaternion Algebra*, §*The Two-Sided Ideals*; the lattice with a middle layer is the left one.
 
 Over $\mathbb{C}$, every left ideal of the simple artinian algebra $\mathbb{B}$ is a direct sum of minimal left ideals, so the left ideals are exactly $0$, the minimal ones, and $\mathbb{B}$.
 
@@ -294,6 +294,6 @@ a Borel subgroup of $PGL_2(\mathbb{C})$, of complex dimension two.
 
 ## Further Reading
 
-- [The Regular Module](the-regular-module.html), for the ideals as submodules.
+- [The Regular Module](the-regular-module-in-the-biquaternion-algebra.html), for the ideals as submodules.
 - [The Polarized Module of the Biquaternion Algebra](the-polarized-module-of-the-biquaternion-algebra.html), for the simple module in the algebra; the matrix model of the classification.
-- [The Centraliser](the-centraliser.html), for the commutant of an element.
+- [The Centraliser](the-centraliser-in-the-biquaternion-algebra.html), for the commutant of an element.

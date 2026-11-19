@@ -32,7 +32,7 @@ $$
 | --- | --- |
 | the sector, its three descriptions, the geometry, the elements, the annihilators, the Peirce data, the origin and the products | [The N-Degenerate, Spectrally Degenerate Sector](../articles_maths/the-n-degenerate-spectrally-degenerate-sector.html) |
 | the canonical Jordan basis of a defective element, and the pair selected by the Hermitian form | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html) |
-| the characteristic polynomial, the two eigenvalues and the discriminant | [The Spectrum](../articles_maths/the-spectrum.html) |
+| the characteristic polynomial, the two eigenvalues and the discriminant | [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) |
 | the two predicates, the independence of the cones and the single point where both degenerations coincide | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the corner rule, the off-diagonal nilpotents and the dimensions of the four corners | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | the quaternionic norm, the null cone, its pure stratum and the group of invertibles | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |

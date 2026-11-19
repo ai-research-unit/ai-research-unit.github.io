@@ -22,7 +22,7 @@
 | the Krein partition, the two sectors of the Krein norm, the indefinite geometry | [Kr-Regularity and Degeneracy in the Biquaternion Algebra](../articles_maths/kr-regularity-and-degeneracy-in-the-biquaternion-algebra.html) |
 | the algebraic norm of a form and its distinction from the topological norm | [The Norm Defined by a Form](../articles_maths/the-norm-defined-by-a-form.html) |
 | the one topological norm of the space and its square root | [The Euclidean Topology of the Biquaternion Algebra](../articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.html) |
-| the unqualified *regular* and *degenerate*, which are spectral and not norm-theoretic | [The Spectrum](../articles_maths/the-spectrum.html) |
+| the unqualified *regular* and *degenerate*, which are spectral and not norm-theoretic | [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) |
 
 **The rows are the order of the entry.** The four forms first, because they are the objects. Then the count of the four, which is one lemma. Then the inertias, which are what a restriction can change. Then the groups, which are what a form preserves. Then the four cuts, which are what a norm separates. The readings come last, and each names the section of mathematics it rests on.
 

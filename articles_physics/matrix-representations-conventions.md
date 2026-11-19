@@ -96,7 +96,7 @@ the vector units on the right being those of $\mathbb{H}$, and the scalar imagin
 $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu=q_\mu+iq'_\mu,
 $$
-the developed form of *Algebra and Element Conventions*, §*The Element, the Coordinates and the Conjugations*. This basis is called the **coefficient basis**, because its four coordinates are the coefficients of the developed form, and it is called **axis-free**, because no one of the three vector directions enters by a rule of its own.
+the developed form of *Algebra and Element Conventions*, §*The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. This basis is called the **coefficient basis**, because its four coordinates are the coefficients of the developed form, and it is called **axis-free**, because no one of the three vector directions enters by a rule of its own.
 
 **The multiplication table.** Every matrix below is read from this table and from nothing else:
 

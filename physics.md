@@ -371,7 +371,7 @@
 <a href="articles_physics/the-relativistic-two-body-problem-in-biquaternionic-form.html">The Relativistic Two-Body Problem in Biquaternionic Form</a>
 <!-- the two four-momenta in the material sector; the total four-momentum and its norm; conservation in the biquaternion formulation; the centre-of-momentum frame; the relative four-velocity and rapidity; the invariant mass of the pair; the decay configuration; reduction to the effective one-body problem; the non-relativistic limit; the Breit equation and the Dirac–Coulomb–Breit Hamiltonian; the Breit–Pauli terms and the synchronisation convention. -->
 
-<a href="articles_physics/the-eigenspinor-along-a-worldline-precession-in-a-uniform-field.html">The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</a>
+<a href="articles_physics/the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time.html">The Eigenspinor: The Lorentz Rotor as a Function of Proper Time</a>
 <!-- the eigenspinor as the rotor carrying the rest frame to the laboratory, with the four-momentum its quadratic product; the two gauges and the one-sided spinor law; the linear evolution $d\tilde U/d\tau=\tfrac12\tilde\Omega\tilde U$ and the identity $d\tilde P_{\Phi}/d\tau=P_{\mathbb{B}_{\Phi}}(\tilde\Omega\tilde P_{\Phi})$; the norm condition on the rate; the field identification $\tilde\Omega=-(q/m)\tilde F^\dagger$, recovering the Lorentz four-force and agreeing with the product formula; the eigenframe as a tetrad; the closed form in a uniform field. --> 
 
 #### The action and the flow
@@ -1071,7 +1071,7 @@
 <a href="articles_physics/covariant-qubit-channels.html">Covariant Qubit Channels: The Mixture Family, Unitality and Choi Rank</a>
 <!-- admission refused as a goal, since $\mathbb{B}\cong M_2(\mathbb{C})$ admits every CPTP map; simplicity: a unital endomorphism is inner, so multiplicativity, Choi rank one and conjugation by a unit are one condition and a channel is a map that has abandoned the product; covariance selects the mixture family $\mathcal E_\lambda$, with its Choi eigenvalues $\tfrac12(1+3c)$ and $\tfrac12(1-c)$ and its three boundaries at $c=-\tfrac13$, $\lvert c\rvert=1$ and $\lambda\in[0,1]$; unitality as the arrow, $r'\le r$ hence $N'\ge N$, with the centre as the unique common fixed point; the rank staircase $1,2,4$ with $\mathbb{B}\otimes\mathbb{B}$ and $M_8$; the fixed ceiling and the dimensional ceiling; what is refused, which is the bath. -->
 
-<a href="articles_physics/exercise-quantum-channels-and-dephasing-in-m.html">Exercise: Quantum Channels and Dephasing in M₊</a>
+<a href="articles_physics/exercise-quantum-channels-and-dephasing-in-m.html">Exercise: Quantum Channels and Dephasing in M+</a>
 <!-- six problems: dephasing as a Kraus sum; the Kraus rank of dephasing; a positive map that is not completely positive; the amplitude-damping channel; composition of channels and the growth of Kraus rank; Bloch-ball contraction and the increase of entropy. -->
 
 <a href="articles_physics/the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html">The Polar Decomposition of a Kraus Operator: Effect, Backaction and the Measurement Boundary</a>

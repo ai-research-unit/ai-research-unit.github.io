@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ c
 
 The sector is the set-theoretic intersection of the two cones. It has three descriptions, given in §*The Sector and Its Three Descriptions*: it is $\{Q_t=0,\ \vec Q^2=0\}$, it is the set of square-zero elements, and it is the pure stratum of the null cone with the origin adjoined. The article then computes its geometry (a complex cone of dimension two), its elements (nilpotents of index two), the special role of the origin, and its behaviour under multiplication. The last sections compare it with the other three sectors and collect the consequences.
 
-**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum*. A **sector** is one of the four sectors cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $\langle\tilde Q\rangle_{\natural}=0$ and $B^2=0$.
+**Scope and naming.** The product is the plain product of $\mathbb{B}$; the algebra is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ on $e_t,\vec e_x,\vec e_y,\vec e_z$, with $\vec e_k^2=-e_t$; the conjugation is ${}^{\natural}$, and $\langle\tilde Q\rangle_{\natural}=\tilde Q^{\natural}\tilde Q$ is central. The null cone is written $\mathcal{N}$ and the spectral-degenerate cone $\mathcal S$, as in *N-Regularity and N-Degeneracy in the Biquaternion Algebra* and *The Spectrum of a Biquaternion*. A **sector** is one of the four sectors cut out by the two conditions. The word degenerate is qualified by the condition it refers to, so "doubly degenerate" means $\langle\tilde Q\rangle_{\natural}=0$ and $B^2=0$.
 
 ## The Sector and Its Three Descriptions
 
@@ -333,7 +333,7 @@ The sector is the doubly degenerate sector: the set of square-zero elements, the
 
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the quaternionic norm, the null cone and its pure and non-pure strata.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the sector as a whole: the equation, the three strata, the geometry and the Jordan basis.
-- [The Spectrum](the-spectrum.html), for the spectral criterion, the two cases and the degenerate cone.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the spectral criterion, the two cases and the degenerate cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the independence of the two cones, the nilpotent intersection and the four sectors.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}=\sqrt{N}$ and the unit factor of norm one.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce corners and their dimensions.

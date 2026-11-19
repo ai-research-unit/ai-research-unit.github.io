@@ -49,12 +49,12 @@ The article takes the following results as established and does not prove them a
 |---|---|---|
 | the four factors, their ranges and their order | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Four Factors* | the word that is bracketed |
 | existence and uniqueness of the word on $\langle\tilde Q\rangle_{\natural}\neq0$ | *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*Existence and Uniqueness* | the factorisation $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\vec U\Theta)$ and the uniqueness of the regrouping |
-| the eigenvalues, the axis, the pure root and the eigenprojections | *The Spectrum*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$, the axis $\vec U=\vec Q/B$, the root $\vec{Ζ}$ and $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ |
+| the eigenvalues, the axis, the pure root and the eigenprojections | *The Spectrum of a Biquaternion*, §*The Spectral Criterion*, and *The Biquaternion Eigenvalue Decomposition*, §*The Eigenprojectors* | the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}}$, the axis $\vec U=\vec Q/B$, the root $\vec{Ζ}$ and $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ |
 | the closed forms of the exponential and the logarithm | *Biquaternion Elementary Functions*, §*The Closed Form* and §*The Eigenvalue Formula* | the exponential $\exp(\tilde Q)$ and the logarithm of the second factor |
-| the roots of one and their idempotents | *Idempotents*, §*The Roots of One* and §*The Two Idempotents of a Root* | the second half |
+| the roots of one and their idempotents | *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One* and §*The Two Idempotents of a Root* | the second half |
 | the eigenbasis, its nilpotents and the spinor spaces | *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions*, and *The N-Regular, Spectrally Regular Sector*, §*The Eigenbasis, the Nilpotents, and the Peirce Corners* and §*The Spinor Spaces and their Coordinates* | the eigenbasis, the diagonal action and the spinor spaces of §*The Eigenbasis and the Spinor Spaces* |
-| the hyperbolic form of a non-trivial root | *Idempotents*, §*The Non-Hermitian Roots*, and §*The Root From Its Coordinates* of this article | the two directions and the rapidity of §*The Two Pure Elements* |
-| the idempotent exponential form and the extraction $-i\tilde{Ζ}$ | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* of this article, on the halving map of *Idempotents*, §*The Correspondence with the Roots of One* | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* |
+| the hyperbolic form of a non-trivial root | *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Non-Hermitian Roots*, and §*The Root From Its Coordinates* of this article | the two directions and the rapidity of §*The Two Pure Elements* |
+| the idempotent exponential form and the extraction $-i\tilde{Ζ}$ | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* of this article, on the halving map of *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence with the Roots of One* | §*The Idempotent Exponential Form* and §*The Bridge Between the Two Forms* |
 | the Peirce decomposition | *Peirce Decompositions of the Biquaternion Algebra*, §*The Peirce Decompositions* | the idempotents and the four corners |
 | the polar decomposition of the ordinary quaternions | *Modulus–Unit Polar Decomposition of Quaternions*, §*The Two Factors* | the classical limit |
 
@@ -84,7 +84,7 @@ $$
 
 Then $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}(\cos\Theta+\vec U\sin\Theta)$.
 
-The axis and the eigenvalues are those of *The Spectrum*, §*The Spectral Criterion*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ of the spectrum. The branch of $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Spectral Decomposition* of that article.
+The axis and the eigenvalues are those of *The Spectrum of a Biquaternion*, §*The Spectral Criterion*: $\vec U^2=-e_t$, $\lambda_\pm=Q_t\pm iB$, and the definitions above are the polar form $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ of the spectrum. The branch of $\varrho\,e^{i\theta_{\mathrm{pha}}}$ is fixed by the polar word and the branch of $B$ by the choice of $\vec U$; the replacement $B\mapsto-B$ exchanges the two eigenvalues and the two eigenprojections, which is the label ambiguity of §*The Spectral Decomposition* of that article.
 
 **The axis.** The normalisation $\vec U^2=-e_t$ is what $B=\sqrt{\langle\vec Q,\vec Q\rangle_{\natural}}$ provides. The axis is not an arbitrary root of $-1$ but the one parallel to the vector part, and that parallelism is what makes the representation canonical. When the vector part is null, $B=0$ and the axis does not exist; that is the domain restriction below.
 
@@ -109,7 +109,7 @@ $$
 
 It is central, so it commutes with the second factor, and it carries the whole norm, $\langle\varrho\,e^{i\theta_{\mathrm{pha}}}\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The principal branch of the square root is the one of the polar word, so the modulus is unique; its two constituents are the scale $\varrho$ and the phase $\exp(i\theta_{\mathrm{pha}})$.
 
-The modulus is the eigenvalue data of *The Spectrum*, §*The Spectral Criterion*: it is the common modulus of $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ read in §*The Statement*, so that $\lambda_+\lambda_-=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The article uses that identification and does not re-derive the eigenvalue decomposition.
+The modulus is the eigenvalue data of *The Spectrum of a Biquaternion*, §*The Spectral Criterion*: it is the common modulus of $\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\exp(\pm i\Theta)$ read in §*The Statement*, so that $\lambda_+\lambda_-=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. The article uses that identification and does not re-derive the eigenvalue decomposition.
 
 | aspect | value |
 |---|---|
@@ -286,7 +286,7 @@ The consistency of the second row is a consequence of $\langle\bar{\tilde Q}\ran
 
 ## The Root Reading
 
-The second half reads the same four-factor word at the elements where it closes, $\tilde{Ζ}^2=e_t$. The classification of the roots is that of *Idempotents*, and the exponential forms are read here on the polar word. The readings are collected in the table.
+The second half reads the same four-factor word at the elements where it closes, $\tilde{Ζ}^2=e_t$. The classification of the roots is that of *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the exponential forms are read here on the polar word. The readings are collected in the table.
 
 | reading | object | form | what it shows |
 |---|---|---|---|
@@ -301,7 +301,7 @@ The first row is the word of the first half; the other five are the readings of 
 
 ### The Word at a Root of One
 
-The roots of $+1$ are classified in *Idempotents*, §*The Roots of One*: they are $\pm e_t$ and the pure roots $\vec{Ζ}$ with $\vec{Ζ}^2=e_t$. Taking norms in $\tilde{Ζ}^2=e_t$ gives $\langle\tilde{Ζ}\rangle_{\natural}=\pm e_t$, because the norm is multiplicative, so the polar word of a root has one of two shapes.
+The roots of $+1$ are classified in *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One*: they are $\pm e_t$ and the pure roots $\vec{Ζ}$ with $\vec{Ζ}^2=e_t$. Taking norms in $\tilde{Ζ}^2=e_t$ gives $\langle\tilde{Ζ}\rangle_{\natural}=\pm e_t$, because the norm is multiplicative, so the polar word of a root has one of two shapes.
 
 | norm | word | condition on the factors |
 |---|---|---|
@@ -431,7 +431,7 @@ $$
 \tilde{Ζ}=\exp(i\pi\tilde\Pi_-),\qquad \tilde\Pi_-=\tfrac12(e_t-\tilde{Ζ})
 $$
 
-The identity is the idempotency of $\tilde\Pi_-$, and the halving is that of *Idempotents*, §*The Correspondence with the Roots of One*. The form is a single exponential of one element where the polar word is an ordered product of four. The two ends of the halving are the trivial roots: $\tilde{Ζ}=e_t$ gives $\tilde\Pi_-=0$, and $\tilde{Ζ}=-e_t$ gives $\tilde\Pi_-=e_t$.
+The identity is the idempotency of $\tilde\Pi_-$, and the halving is that of *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Correspondence with the Roots of One*. The form is a single exponential of one element where the polar word is an ordered product of four. The two ends of the halving are the trivial roots: $\tilde{Ζ}=e_t$ gives $\tilde\Pi_-=0$, and $\tilde{Ζ}=-e_t$ gives $\tilde\Pi_-=e_t$.
 
 ### The Bridge Between the Two Forms
 
@@ -463,7 +463,7 @@ $$
 \tilde{Ζ}=\pm e_t,\qquad \tilde{Ζ}=i\vec u_{\mathrm n}\quad(\vec u_{\mathrm n}\in\mathcal{A}),
 $$
 
-as in *Idempotents*, §*The Roots of One*. In the idempotent form the halving element of a Hermitian root is Hermitian.
+as in *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One*. In the idempotent form the halving element of a Hermitian root is Hermitian.
 
 ### The Two Pure Elements
 
@@ -473,7 +473,7 @@ $$
 \tilde{Ζ}=i\cosh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm r}-\sinh\tfrac{\theta_{\mathrm{rpd}}}{2}\,\vec u_{\mathrm b}\vec u_{\mathrm r},\qquad \tilde{Ζ}^2=e_t,\qquad \langle\tilde{Ζ}\rangle_{\natural}=-e_t
 $$
 
-(§*The Root From Its Coordinates* above, and *Idempotents*, §*The Non-Hermitian Roots*). The root is pure and lies in the plane of the two directions; at zero rapidity it is the Hermitian root $i\vec u_{\mathrm r}$, a single direction, and the boost switches the second direction on.
+(§*The Root From Its Coordinates* above, and *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Non-Hermitian Roots*). The root is pure and lies in the plane of the two directions; at zero rapidity it is the Hermitian root $i\vec u_{\mathrm r}$, a single direction, and the boost switches the second direction on.
 
 **The element.** The same two non-central factors, dialled by the central scale and the central phase, are the general element of the domain,
 
@@ -823,8 +823,8 @@ The two exponents of the word, the Hermitian $\mathcal H=i\frac{\theta_{\mathrm{
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus $\varrho\,e^{i\theta_{\mathrm{pha}}} = \sqrt{\langle\tilde Q\rangle_{\natural}}$, the domain, and the degenerate cases against which the roots of the second half are read; §*The Algorithm* of that article, for the procedure in the coordinates of the element, the five steps, the factors and the exponents with their positions; and §*The Order of the Factors* of that article, for the exponents $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ of the two non-central factors and for the failing sum rule; §*The Single Exponential* above is the sharpened form, where the product is nevertheless a single exponential with a complex angle.
 - [The Quaternion Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-quaternion-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the quaternion grouping, the other partial pairing, and the comparison of the two domains.
 - [The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the third grouping, $\tilde{Q} = HU$, which is not partial and has the full domain.
-- [Idempotents](idempotents.html), for the classification of the roots of one and the halving map to the idempotents.
+- [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the roots of one and the halving map to the idempotents.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html) and [Hermitian Idempotents and the Peirce Decomposition](hermitian-idempotents-and-the-peirce-decomposition.html), for the Peirce pieces into which a root of one splits the algebra through its halving idempotents.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the coordinate systems $Q_\mu = q_\mu+iq'_\mu$ used to read the coordinates of a root.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the coordinate systems $Q_\mu = q_\mu+iq'_\mu$ used to read the coordinates of a root.
 - [Modulus–Unit Polar Decomposition of Quaternions](modulus-unit-polar-decomposition-of-quaternions.html), for the quaternion polar form that the Hamilton representation generalises on the real quaternions.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone on which the pairing fails.

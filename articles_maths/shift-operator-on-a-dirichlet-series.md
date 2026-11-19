@@ -1,5 +1,5 @@
 
-# __Shift Operator on a Dirichlet Series__
+# __The Shift Operator on a Dirichlet Series__
 
 ## Introduction
 

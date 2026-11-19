@@ -1,4 +1,4 @@
-# __The Eigenspinor Along a Worldline: Precession in a Uniform Field__
+# __The Eigenspinor: The Lorentz Rotor as a Function of Proper Time__
 
 ## Introduction
 
@@ -195,7 +195,8 @@ Both factors are rotors: $\vec\Omega_{\mathrm{LT}}$ is a pure vector, so $\exp(\
 
 **What precesses is the frame the eigenspinor carries, and the rate is the rate of the rotor.** The tetrad $	ilde E_{\Phi,(\mu)}=	ilde U\mathcal{E}_\mu	ilde U^{*}$ turns with $	ilde U$, so the angular velocity of the particle's own axes in the laboratory is read off $ec\Omega_{\mathrm{LT}}$: the vector part of the rate is the instantaneous rotation, and its modulus is the rate at which the frame turns per unit proper time.
 
-**In a purely magnetic field that rate has a name.** With $ec E=0$ the rate is $ec\Omega_{\mathrm{LT}}=-(ϙ/m)ec B$, real and pure, so the exponential $\exp(	frac12ec\Omega_{\mathrm{LT}}	au)$ is a real unit quaternion: a spatial rotation of angle $\lvertec\Omega_{\mathrm{LT}}vert	au$ about $ec B$. The frame precesses about the field at the angular frequency
+**In a purely magnetic field that rate has a name.** With $ec E=0$ the rate is $ec\Omega_{\mathrm{LT}}=-(ϙ/m)ec B$, real and pure, so the exponential $\exp(	frac12ec\Omega_{\mathrm{LT}}	au)$ is a real unit quaternion: a spatial rotation of angle $\lvertec\Omega_{\mathrm{LT}}
+vert	au$ about $ec B$. The frame precesses about the field at the angular frequency
 
 $$
 \omega_{\mathrm{cyc}}=rac{ϙ B}{m},

@@ -18,7 +18,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 |---|---|---|
 | the generalized Cartan pairing on all of $\mathbb{B}$ | [*The Polar Decomposition of a Biquaternion*](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), §*The Isometry Factor* | $\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},H}\tilde M_{\mathrm{kraus},0}$, $\tilde M_{\mathrm{kraus},H}=\sqrt{\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}}$, $\tilde M_{\mathrm{kraus},0}=\tilde M_{\mathrm{kraus},H}^{+}\tilde M_{\mathrm{kraus}}$ |
 | the Cartan pairing off the null cone | **The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions**, §*The Statement* | the invertible case, where $\tilde M_{\mathrm{kraus},0}$ is $*$-unitary |
-| the rank-one Hermitian idempotents | [Idempotents](../articles_maths/idempotents.html), §*The Classification of the Idempotents* | the sharp outcome $\tilde M_{\mathrm{kraus}}=\tilde\Pi$ and the Bloch form of its projections |
+| the rank-one Hermitian idempotents | [Idempotents](../articles_maths/the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), §*The Classification of the Idempotents* | the sharp outcome $\tilde M_{\mathrm{kraus}}=\tilde\Pi$ and the Bloch form of its projections |
 | the zero-divisor cone | [*N-Regularity and N-Degeneracy in the Biquaternion Algebra*](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), §*The Zero Divisor Set* | the boundary where the amplitude loses rank |
 | the Kraus representation and the channel dichotomy | [*Quantum Channels and the Reversible/Irreversible Dichotomy*](quantum-channels-and-the-reversible-irreversible-dichotomy.html), §*The Kraus Representation* | the instrument and channel context |
 | the effect as a Kraus square | [*POVMs and the Positive Cone in Biquaternionic Form*](povms-and-the-positive-cone-in-biquaternionic-form.html), §*The post-measurement state* | $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}$ and the Born weight |
@@ -419,7 +419,7 @@ The channel-level statement is the correction that the polar programme makes to 
 - [The Polar Decomposition of a Biquaternion](../articles_maths/the-polar-decomposition-of-a-biquaternion.html), for the theorem, its uniqueness with the initial and final projections, and the rank-one case.
 - *The Cartan Hermitian Pairing of the Polar Decomposition of Biquaternions*, for the pairing off the null cone and the $*$-unitary factor.
 - [The Exponential and Its Three Pairings](the-exponential-and-its-three-pairings.html), for the four-factor word and the action of each factor on the two sectors.
-- [Idempotents](../articles_maths/idempotents.html), for the rank-one idempotents and the Bloch sphere.
+- [Idempotents](../articles_maths/the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the rank-one idempotents and the Bloch sphere.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the null cone and its singular locus.
 - [Quantum Channels and the Reversible/Irreversible Dichotomy](quantum-channels-and-the-reversible-irreversible-dichotomy.html), for the Kraus representation, the channel dichotomy, and the dephasing channel.
 - [POVMs and the Positive Cone in Biquaternionic Form](povms-and-the-positive-cone-in-biquaternionic-form.html), for effects, the effect body, and the Born rule.

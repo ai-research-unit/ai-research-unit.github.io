@@ -132,7 +132,7 @@ $$
 
 *Proof.* Both sets with $j=1$ are empty by the theorem. The condition $\langle Q\rangle\neq0$ is $a^2\neq0$, which over the real closed field $R$ is $a\neq0$; this is also the unit criterion. Its complement is $a=0$, namely $\mathrm{M}$.
 
-**Remark (degenerate is not defective).** The theorem says that the eigenvalue is repeated; it does not say that the operator is not diagonalisable. The real axis $b=0$ consists of scalar operators $a\,\mathrm{id}$, which are diagonalisable, while $b\neq0$ is not. The word **degenerate** is fixed by the discriminant; **defective** is fixed by the minimal polynomial. The biquaternion cone draws the same distinction; see *The Spectrum*.
+**Remark (degenerate is not defective).** The theorem says that the eigenvalue is repeated; it does not say that the operator is not diagonalisable. The real axis $b=0$ consists of scalar operators $a\,\mathrm{id}$, which are diagonalisable, while $b\neq0$ is not. The word **degenerate** is fixed by the discriminant; **defective** is fixed by the minimal polynomial. The biquaternion cone draws the same distinction; see *The Spectrum of a Biquaternion*.
 
 ## The Minimal Polynomial Dichotomy
 
@@ -246,11 +246,11 @@ The values are collected in the table; the dual row is the last.
 | $\mathbb{B}$ | $Q_t+\vec Q$ | $\vec Q$ | $B^2$ | $(X-Q_t)^2+B^2$ | $-4B^2$ | $Q_t\pm iB$ |
 | $\mathbb{C}_{\mathrm{dln}}$ | $a+b\varepsilon$ | $b\varepsilon$ | $0$ | $(X-a)^2$ | $0$ | $a$ (double) |
 
-Here $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$ with $j^2=1$ and norm $a^2-b^2$; $\mathbb{H}$ is the quaternion algebra with norm $q_t^2+\lvert\vec q\rvert^2$; $\mathbb{B}$ is the biquaternion algebra with $B^2=Q_x^2+Q_y^2+Q_z^2$ and spectral polynomial as in *The Spectrum*; and $\mathbb{C}_{\mathrm{dln}}$ is the dual algebra, where $\langle b\varepsilon\rangle = b^2\varepsilon^2 = 0$.
+Here $\mathbb{C}_{\mathrm{spl}}=\mathbb{R}[j]$ with $j^2=1$ and norm $a^2-b^2$; $\mathbb{H}$ is the quaternion algebra with norm $q_t^2+\lvert\vec q\rvert^2$; $\mathbb{B}$ is the biquaternion algebra with $B^2=Q_x^2+Q_y^2+Q_z^2$ and spectral polynomial as in *The Spectrum of a Biquaternion*; and $\mathbb{C}_{\mathrm{dln}}$ is the dual algebra, where $\langle b\varepsilon\rangle = b^2\varepsilon^2 = 0$.
 
 **Theorem (the discriminant is the norm of the pure part).** In each row of the table, the spectral polynomial is $(X-a)^2+\langle\pi\rangle$ and its discriminant is $-4\langle\pi\rangle$.
 
-*Proof.* The complex and split-complex rows are the ordinary quadratic formulae for the matrices of multiplication by $a+bi$ and $a+bj$. The quaternion row is the spectral polynomial of *Quaternion Spectral Theory*, and the biquaternion row is that of *The Spectrum*, with pure part $\vec q$ or $\vec Q$ and its norm. The dual row is the characteristic polynomial of the preceding section, with pure part $b\varepsilon$ and norm $\langle b\varepsilon\rangle=b^2\varepsilon^2=0$.
+*Proof.* The complex and split-complex rows are the ordinary quadratic formulae for the matrices of multiplication by $a+bi$ and $a+bj$. The quaternion row is the spectral polynomial of *Quaternion Spectral Theory*, and the biquaternion row is that of *The Spectrum of a Biquaternion*, with pure part $\vec q$ or $\vec Q$ and its norm. The dual row is the characteristic polynomial of the preceding section, with pure part $b\varepsilon$ and norm $\langle b\varepsilon\rangle=b^2\varepsilon^2=0$.
 
 **Corollary (spectral regularity in the five algebras).** In $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{H}$ and $\mathbb{B}$ the spectral-regular locus is the complement of the vanishing locus of a non-zero quadratic form in the pure part; it is non-empty and, over $\mathbb{R}$ or $\mathbb{C}$, open and dense. In $\mathbb{C}_{\mathrm{dln}}$ the spectral-regular locus is empty.
 
@@ -295,7 +295,7 @@ The comparison with the neighbouring algebras is the comparison of discriminants
 - [Dual-Numbers Linear Representations](dual-numbers-linear-representations.html), for the regular representation in the basis $(1,\varepsilon)$.
 - [The Defective Sector of the Dual-Number Algebra](the-defective-sector-of-the-dual-number-algebra.html), for the defect, its two strata, the module picture and the polar decomposition.
 - [Relations between the Dual Norm and Spectral Degeneracy](relations-between-the-dual-norm-and-spectral-degeneracy.html), for the comparison of the norm and the defect and the chain of invariants.
-- [The Spectrum](the-spectrum.html), for the same distinction on the biquaternion spectral-degenerate cone.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the same distinction on the biquaternion spectral-degenerate cone.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the four sectors in the biquaternion algebra.
 - [Nilpotent Elements and the Jordan–Chevalley Decomposition](nilpotent-elements-and-the-jordan-chevalley-decomposition.html), for the additive decomposition $Q=a\cdot1+b\varepsilon$.
 - [Modules over $k[x]$ and the Jordan Form](modules-over-kx-and-the-jordan-form.html), for the Jordan block and the module picture of the defect.

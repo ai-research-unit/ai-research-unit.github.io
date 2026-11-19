@@ -8,7 +8,7 @@ V\otimes V=\operatorname{sym}^2V\oplus\Lambda^2V,\qquad 4=3+1.
 $$
 The article computes the two summands, identifies the square with the endomorphism algebra once a bilinear form is chosen, defines the twisted product that makes the square an algebra, and reads the decomposition under the classical groups.
 
-The article is the last of the algebraic articles of the category. It does not restate the theory of tensor products, which is *Tensor Products of Algebras* for the universal property and *The Exterior Algebra* for the alternating powers; it does not treat the symmetric algebra in general, which is *The Symmetric Algebra*; and it does not treat the Clifford algebra, which is built on the same square but with a different product. The endomorphism algebra is *The Endomorphisms of $\mathbb{C}^2$*, and the biquaternion reading is *The Biquaternion Algebra*.
+The article is the last of the algebraic articles of the category. It does not restate the theory of tensor products, which is *Tensor Products of Algebras* for the universal property and *The Exterior Algebra* for the alternating powers; it does not treat the symmetric algebra in general, which is *The Symmetric Algebra*; and it does not treat the Clifford algebra, which is built on the same square but with a different product. The endomorphism algebra is *The Endomorphisms of $\mathbb{C}^2$*, and the biquaternion reading is *Introduction to the Algebra of Biquaternions*.
 
 **The point of the article is the distinction between what is canonical and what requires a choice.** The decomposition $3+1$ is canonical; the identification of the square with $M_2(\mathbb{C})$ is not, because it needs a nondegenerate bilinear form, and the identification of the two summands with $\mathbb{C}^3$ and $\mathbb{C}$ needs a basis. The twisted product is the algebra structure that the choice of form puts on the square.
 
@@ -180,7 +180,7 @@ A=\begin{pmatrix}1&1\\1&0\end{pmatrix},\qquad C=\begin{pmatrix}0&1\\1&1\end{pmat
 $$
 the product $AC=\begin{pmatrix}1&2\\0&1\end{pmatrix}$ is not symmetric. The alternating square corresponds to the antisymmetric matrices, and in this dimension the product of two antisymmetric matrices is always symmetric, so it also leaves the line.
 
-**Remark (the biquaternion reading).** The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $M_2(\mathbb{C})$, hence to the biquaternion algebra $\mathbb{B}$. **The tensor square with the twisted product is a second copy of the biquaternion algebra, built from the space and a form rather than from the tensor product of the field and the quaternions**; the symmetric and alternating squares are the fixed and anti-fixed spaces of the involution induced by the swap, and they correspond to the symmetric and antisymmetric matrices in the model. The algebra is *The Biquaternion Algebra*, and the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*.
+**Remark (the biquaternion reading).** The algebra $(V\otimes V,\cdot_F)$ is isomorphic to $M_2(\mathbb{C})$, hence to the biquaternion algebra $\mathbb{B}$. **The tensor square with the twisted product is a second copy of the biquaternion algebra, built from the space and a form rather than from the tensor product of the field and the quaternions**; the symmetric and alternating squares are the fixed and anti-fixed spaces of the involution induced by the swap, and they correspond to the symmetric and antisymmetric matrices in the model. The algebra is *Introduction to the Algebra of Biquaternions*, and the matrix model is *$M_2(\mathbb{C})$ Pauli Representation*.
 
 ## The Decomposition under the Groups
 
@@ -232,7 +232,7 @@ The square is canonically the endomorphism algebra only as $V\otimes V^{*}\cong\
 - [Duo-Complex Numbers](duo-complex-numbers.html), for the space and its forms.
 - [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-c2.html), the previous article, for the algebra $M_2(\mathbb{C})$ and its identification with the biquaternion algebra.
 - [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-c2.html), for the forms $B$ and $\omega$ used in the twisted product.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and its simple module.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ and its simple module.
 - [Tensor Products of Algebras](tensor-products-of-algebras.html), for the universal property and the general theory of the tensor product.
 - [The Exterior Algebra](the-exterior-algebra.html), for the alternating powers and the determinant.
 - [The Determinant and Alternating Forms](the-determinant-and-alternating-forms.html), for the determinant as an alternating form.

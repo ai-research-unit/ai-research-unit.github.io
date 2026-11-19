@@ -204,7 +204,7 @@ and it is stable under multiplication by non-zero complex scalars.
 
 **Correspondence (the remarkable subspaces).** By the inertias tabulated in §*The Two Cases on the Remarkable Subspaces*, the norm is anisotropic on the centre, the quaternion subspace and the anti-quaternion subspace: it vanishes only at the origin there, so none of the three contains a zero divisor; the zero-divisor set in the vector subspace is the pure stratum; and the Hermitian and anti-Hermitian subspaces each carry a null cone. A generic zero divisor has all four coefficients non-zero and lies in none of them.
 
-**Remark (the spectral reading).** Inside $\mathcal{N}$ the pure stratum is cut out by $\vec Q^2=0$, which is the quadratic equation that also marks the spectral-degenerate elements. The strata here are defined by $Q_t$ alone; the comparison of the two cones belongs to *The Spectrum*.
+**Remark (the spectral reading).** Inside $\mathcal{N}$ the pure stratum is cut out by $\vec Q^2=0$, which is the quadratic equation that also marks the spectral-degenerate elements. The strata here are defined by $Q_t$ alone; the comparison of the two cones belongs to *The Spectrum of a Biquaternion*.
 
 The matrix reading of the split is in *The Forms, the Norms and the Singular Set of $M_4(\mathbb{C})$*, §*The Factorisation*: a non-zero null element is a rank-one matrix $uv^{\mathsf T}$, its scalar part is the contraction $\tfrac12 v^{\mathsf T}u$, the pure stratum is the locus $v^{\mathsf T}u=0$, and the square identity $\tilde Q^2=2Q_t\tilde Q$ is the rank-one identity.
 
@@ -259,7 +259,7 @@ The $\natural$-degenerate case is the null cone, with the origin at its apex and
 
 ## Further Reading
 
-- [The Spectrum](the-spectrum.html), for the quadratic condition $B^2$, the spectral-degenerate cone and the behaviour on it.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the quadratic condition $B^2$, the spectral-degenerate cone and the behaviour on it.
 - [Relations between the N Norm and Spectral Regularity and Degeneracy](relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html), for the comparison of the norm with the spectral condition, the four sectors and the information each invariant carries.
 - [The N-Regular Sector](the-n-regular-sector.html), for the group of invertibles as a sector, its matrix model, its topology and its two spectral sectors.
 - [The N-Degenerate Sector](the-n-degenerate-sector.html), for the null cone, its three strata, its link and its degenerate polar decomposition.

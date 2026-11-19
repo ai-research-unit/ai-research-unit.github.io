@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}$ carries four conjugations, and each of the
 
 This article is the single article of the group for the remarkable subspaces and for the three decompositions they cut out. It defines the six subspaces one to a section, introduces the four coordinate blocks out of which they are built, establishes the three decompositions with their projection formulas, and collects the relations between the subspaces: the intersections, the sums, the action of the conjugations by signs, the lattice of the fixed spaces and the action of the complex structure. The decompositions are vector-space decompositions: they are read off the conjugations, and no product is needed. The table is the summary; the sections are the detail.
 
-The conjugations themselves are not defined here: their formulas, the coordinates and the linear or antilinear character are in *The Element, the Coordinates and the Conjugations* and *The Biquaternion Algebra*, and the group they form is *The Group of Involutions*. What the subspaces carry beyond their linear algebra — the product, the four general products, the forms and the norms — is treated in *Remarkable Subspaces and the Four General Products, Forms and Norms*, *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and the *Remarkable Subspaces under ...* articles.
+The conjugations themselves are not defined here: their formulas, the coordinates and the linear or antilinear character are in *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra* and *Introduction to the Algebra of Biquaternions*, and the group they form is *The Group of Involutions of the Biquaternion Algebra*. What the subspaces carry beyond their linear algebra — the product, the four general products, the forms and the norms — is treated in *Remarkable Subspaces and the Four General Products, Forms and Norms*, *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra* and the *Remarkable Subspaces under ...* articles.
 
 Nothing below is a physical statement. The elements are written $\tilde{Q}, \tilde{Q}_1, \tilde{Q}_2, \dots$, their complex coefficients $Q_t, Q_x, Q_y, Q_z$, and the real and imaginary parts of a coefficient $Q_\mu = q_\mu + i q'_\mu$; no other coordinates are used.
 
@@ -364,7 +364,7 @@ The object is not a chain, and it is not closed under sum, being the union of th
 
 ## The Complex Structure and the Remarkable Subspaces
 
-The scalar imaginary $i$ gives the real-linear map $J : \tilde{Q} \mapsto i\tilde{Q}$ with $J^2 = -\mathrm{id}$, the complex structure carried by every complex vector space, defined for $\mathbb{B}$ in *The Biquaternion Algebra*. It is not one of the four conjugations, and its action on the remarkable subspaces is read directly from the block table; no product is invoked. Since $i(q + iq') = -q' + iq$ on the coefficients, $J$ exchanges the two scalar blocks and the two vector blocks:
+The scalar imaginary $i$ gives the real-linear map $J : \tilde{Q} \mapsto i\tilde{Q}$ with $J^2 = -\mathrm{id}$, the complex structure carried by every complex vector space, defined for $\mathbb{B}$ in *Introduction to the Algebra of Biquaternions*. It is not one of the four conjugations, and its action on the remarkable subspaces is read directly from the block table; no product is invoked. Since $i(q + iq') = -q' + iq$ on the coefficients, $J$ exchanges the two scalar blocks and the two vector blocks:
 
 $$
 J(A_1) = A_2, \qquad J(A_2) = A_1, \qquad J(B_1) = B_2, \qquad J(B_2) = B_1.
@@ -458,16 +458,16 @@ Each of the four conjugations preserves each remarkable subspace and acts on it 
 
 ## Further Reading
 
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra, its basis, its conjugations and its coordinate systems
-- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the formulas of the conjugations and their linear or antilinear character
-- [The Group of Involutions of the Biquaternion Algebra](the-group-of-involutions.html), for the four conjugations as an abstract group
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra, its basis, its conjugations and its coordinate systems
+- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the formulas of the conjugations and their linear or antilinear character
+- [The Group of Involutions of the Biquaternion Algebra](the-group-of-involutions-of-the-biquaternion-algebra.html), for the four conjugations as an abstract group
 - [Remarkable Subspaces and the Four General Products, Forms and Norms](remarkable-subspaces-and-the-four-general-products-forms-and-norms.html), for the four general products brought to the remarkable subspaces together, the product of two elements of the remarkable subspaces, and the Jordan and the Lie algebra each subspace carries
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the four forms on the remarkable subspaces side by side, the only orthogonal pair and the comparison of the two readings
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the norm, the inverse formula, the group of invertibles and the zero divisors of the whole algebra
-- [Square Roots of an Element](square-roots-of-an-element.html), for the three classifications in the whole algebra
-- [Idempotents](idempotents.html), for the classification of the idempotents of the whole algebra, the bijection with the roots of minus one and the projection reading
+- [Square Roots of an Element](the-square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the three classifications in the whole algebra
+- [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the idempotents of the whole algebra, the bijection with the roots of minus one and the projection reading
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition in the whole algebra
-- [The Category of Modules](the-category-of-modules.html), for the simple module $S$, the minimal left ideals and the Morita equivalence
+- [The Category of Modules](the-category-of-modules-in-the-biquaternion-algebra.html), for the simple module $S$, the minimal left ideals and the Morita equivalence
 - [The Four General Products and Their Relations over the Biquaternion Algebra](the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html), for the product and its scalar–vector form
 - [Symmetric and Antisymmetric Decomposition of the Four General Products](symmetric-and-antisymmetric-decomposition-of-the-four-general-products.html), for the two parts into which the product splits
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.

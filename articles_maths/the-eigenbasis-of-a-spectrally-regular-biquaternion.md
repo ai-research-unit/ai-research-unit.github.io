@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article *The Spectrum* proves that such a basis exists. This article constructs it, proves that the Peirce representative is unique once a normalisation is fixed, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and the Peirce index in it. Off the normal locus the pair is determined up to sign by the element itself; on the normal locus a chart is required.
+The eigenbasis of a biquaternion is a basis of the algebra that depends on the biquaternion. It exists exactly when the two eigenvalues are distinct, that is when $B^2\neq0$, and it is the coordinate system in which left multiplication by the element is diagonal. The companion article *The Spectrum of a Biquaternion* proves that such a basis exists. This article constructs it, proves that the Peirce representative is unique once a normalisation is fixed, proves that every biquaternion has a unique expansion in it, and reads the spinor spaces and the Peirce index in it. Off the normal locus the pair is determined up to sign by the element itself; on the normal locus a chart is required.
 
 **Place among the Peirce decompositions.** This article is the regular particular case of *Peirce Decompositions of the Biquaternion Algebra*. That article attaches a Peirce basis to any complete orthogonal pair of idempotents, and shows that the four basis vectors split into the two couples $\mathcal{C}_+=(\tilde\Pi_+,\vec\Upsilon_+)$ and $\mathcal{C}_-=(\vec\Upsilon_-,\tilde\Pi_-)$, on which left multiplication acts by the same Peirce matrix. Here the pair is the spectral pair: it exists exactly when $B^2\neq0$, it commutes with $\tilde Q$, and the Peirce matrix is $\operatorname{diag}(\lambda_+,\lambda_-)$. Each couple is therefore a pair of eigenvectors, and the Peirce basis is the eigenbasis. The general theory leaves a reciprocal $\mathbb{C}^\times$ of mixed bases; the normalisations below fix it.
 
@@ -894,7 +894,7 @@ The construction of the basis fails exactly on the spectral-degenerate cone, and
 
 ## Further Reading
 
-- [The Spectrum](the-spectrum.html), for the spectral criterion, the two eigenvalues, the cone and the existence of the eigenbasis.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the spectral criterion, the two eigenvalues, the cone and the existence of the eigenbasis.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), for the sector $\Sigma_{11}$, the Peirce corners and the spinor spaces.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html), for the sector $\Sigma_{01}$, the scaled idempotents and the same eigenbasis with a zero eigenvalue.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the scalar line and the Jordan part, where the construction stops.

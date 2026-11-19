@@ -441,5 +441,5 @@ Finally the mechanism and the name. The exchange of the sides is exactly the rev
 - [The Hermitian Pair of Operators Acting on One Side](the-hermitian-pair-of-operators-acting-on-one-side.html), for the two-sided operators whose parameters are related by the conjugation, which are the operators fixed by the involution of this article
 - [Operator Chirality on the Biquaternion Algebra](operator-chirality-on-the-biquaternion-algebra.html), for the exchange of the sides as the corpus records it, and for its difference from the swap of the two slots
 - [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html), for the generation of the endomorphism algebra by two families, one of which this article derives from the other
-- [The Group of Involutions](the-group-of-involutions.html), for $\natural$, $\ast$ and the coefficient conjugation, their linearity and their grades
+- [The Group of Involutions](the-group-of-involutions-of-the-biquaternion-algebra.html), for $\natural$, $\ast$ and the coefficient conjugation, their linearity and their grades
 - [Bilinear Forms](bilinear-forms.html), §*Isometries*, for the transpose of a bilinear form, of which the plain bilinear adjoint is the biquaternion case

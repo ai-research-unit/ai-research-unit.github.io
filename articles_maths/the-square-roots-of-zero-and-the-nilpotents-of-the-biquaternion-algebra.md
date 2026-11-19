@@ -1,8 +1,8 @@
-# __Nilpotents__
+# __The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra__
 
 ## Introduction
 
-Of the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *The Biquaternion Algebra*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde Q_1\tilde Q_2$, the product being the one of the algebra. That product is the one read throughout this article.
+Of the four general products of *The Four General Products and Their Relations over the Biquaternion Algebra*, exactly one makes the underlying complex space of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra; the algebra is *Introduction to the Algebra of Biquaternions*, and its multiplication is the general plain bilinear product of two biquaternions, $\tilde Q_1\tilde Q_2$, the product being the one of the algebra. That product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde{Ζ}\in\mathbb{B}$ with
 
@@ -10,11 +10,11 @@ $$
 \tilde{Ζ}^2=0 .
 $$
 
-The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one: the roots of $0$ are the element $0$ together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. The roots of $+1$ are the companion article *Idempotents*; the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$ are *Square Roots of an Element*.
+The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one: the roots of $0$ are the element $0$ together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. The roots of $+1$ are the companion article *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$ are *The Square Roots of a General Element in the Biquaternion Algebra*.
 
 **The results.** The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.
 
-The article is algebraic. The zero-divisor set and the criterion on the central square are *Zero Divisors and Invertibles*; the roots of $+1$ are *Idempotents*; the minimal ideals the nilpotents generate are *The Polarized Module of the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The article is algebraic. The zero-divisor set and the criterion on the central square are *Zero Divisors and Invertibles in the Biquaternion Algebra*; the roots of $+1$ are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the minimal ideals the nilpotents generate are *The Polarized Module of the Biquaternion Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 $$
 (\vec Q_1,\vec Q_2)=\sum_kQ_{1k}Q_{2k},
@@ -134,13 +134,13 @@ $$
 
 The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. This is the criterion of §*The Criterion*: an element has vanishing square exactly when it is pure with isotropic vector part, $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, which is the defining equation of the null cone above with the origin removed. The roots of $0$ are therefore the origin together with the nilpotent cone, and the remainder of this article studies that cone.
 
-The nonzero roots of $0$ are **not units**. A root of $0$ other than $0$ is a nilpotent, hence a square-zero element, and a square-zero element is a zero divisor: it annihilates itself, and an invertible element is never a zero divisor. The roots of the three central values and their invertibility are read value by value in *Idempotents* and *Square Roots of an Element*.
+The nonzero roots of $0$ are **not units**. A root of $0$ other than $0$ is a nilpotent, hence a square-zero element, and a square-zero element is a zero divisor: it annihilates itself, and an invertible element is never a zero divisor. The roots of the three central values and their invertibility are read value by value in *The Square Roots of One and the Idempotents of the Biquaternion Algebra* and *The Square Roots of a General Element in the Biquaternion Algebra*.
 
 ## The Nilpotents
 
 **The nilpotents of the plain algebra are exactly the nonzero pure elements with isotropic vector part, $Q_{1t}=0$ and $Q_{1x}^2+Q_{1y}^2+Q_{1z}^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace; every nilpotent has index two.**
 
-The **nilpotents** of the biquaternion algebra are the nonzero elements whose square vanishes. The class is small and rigid. A nilpotent has vanishing scalar part, so it is a pure biquaternion; its vector part is isotropic for the complex dot product $\vec Q\cdot\vec Q$; and those two conditions together are equivalent to the vanishing of the square. Nothing of the kind happens at index three: an element whose cube vanishes already has vanishing square, so the algebra carries no nilpotent of higher index. Each nonzero nilpotent annihilates itself, $\tilde\Upsilon\tilde\Upsilon=0$, and is therefore a zero divisor of a particularly simple kind, its own two-sided annihilating partner. The nilpotents are exactly the pure family of the zero divisors of *Zero Divisors and Invertibles*.
+The **nilpotents** of the biquaternion algebra are the nonzero elements whose square vanishes. The class is small and rigid. A nilpotent has vanishing scalar part, so it is a pure biquaternion; its vector part is isotropic for the complex dot product $\vec Q\cdot\vec Q$; and those two conditions together are equivalent to the vanishing of the square. Nothing of the kind happens at index three: an element whose cube vanishes already has vanishing square, so the algebra carries no nilpotent of higher index. Each nonzero nilpotent annihilates itself, $\tilde\Upsilon\tilde\Upsilon=0$, and is therefore a zero divisor of a particularly simple kind, its own two-sided annihilating partner. The nilpotents are exactly the pure family of the zero divisors of *Zero Divisors and Invertibles in the Biquaternion Algebra*.
 
 ### The Definition
 
@@ -300,7 +300,7 @@ The entries are forced: the centre, the quaternion subspace and the anti-quatern
 
 ## Summary
 
-The general plain bilinear product of *The Four General Products and Their Relations over the Biquaternion Algebra* is the multiplication of the algebra $\mathbb{B}$ of *The Biquaternion Algebra*. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde{Ζ}=Ζ_x\vec e_x+Ζ_y\vec e_y+Ζ_z\vec e_z$ with $Ζ_x^2+Ζ_y^2+Ζ_z^2=0$, a four-real-parameter family; writing $Ζ_k=\zeta_k+i\zeta'_k$, the two real equations are $\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=0$ and $\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0$, and a worked instance is $\vec e_x+i\vec e_y$.
+The general plain bilinear product of *The Four General Products and Their Relations over the Biquaternion Algebra* is the multiplication of the algebra $\mathbb{B}$ of *Introduction to the Algebra of Biquaternions*. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde{Ζ}=Ζ_x\vec e_x+Ζ_y\vec e_y+Ζ_z\vec e_z$ with $Ζ_x^2+Ζ_y^2+Ζ_z^2=0$, a four-real-parameter family; writing $Ζ_k=\zeta_k+i\zeta'_k$, the two real equations are $\zeta_x^2+\zeta_y^2+\zeta_z^2-(\zeta'_x)^2-(\zeta'_y)^2-(\zeta'_z)^2=0$ and $\zeta_x\zeta'_x+\zeta_y\zeta'_y+\zeta_z\zeta'_z=0$, and a worked instance is $\vec e_x+i\vec e_y$.
 
 The nonzero roots of $0$ are exactly the nilpotents of the algebra, the nonzero elements of vanishing square. The criterion is $Q_{1t}=0$ and $(\vec Q_1,\vec Q_1)=0$, so every nilpotent is pure and its vector part is isotropic for the complex dot product $\vec Q\cdot\vec Q$; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\vec u_p+i\vec u_{p'})$ over pairs of real vectors with $\vec u_p\cdot\vec u_{p'}=0$ and $\vec u_p\cdot\vec u_p=\vec u_{p'}\cdot\vec u_{p'}=1$. The algebra has no nilpotent of index three: $\tilde Q_1^3=0$ exactly when $\tilde Q_1^2=0$, so index two is the only index, and the powers of a nilpotent stop at the second.
 
@@ -327,8 +327,8 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor; t
 
 ## Further Reading
 
-- [Idempotents](idempotents.html), for the roots of $+1$ and the idempotents, the other two central element classes.
-- [Square Roots of an Element](square-roots-of-an-element.html), for the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, of which the roots of $0$ here are one case.
+- [Idempotents](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the roots of $+1$ and the idempotents, the other two central element classes.
+- [Square Roots of an Element](the-square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the roots of the general quadratic $\tilde{Ζ}^2=\tilde Q$, of which the roots of $0$ here are one case.
 - [N-Regularity and N-Degeneracy in the Biquaternion Algebra](n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the off-diagonal units $\vec\Upsilon_x,\vec\Upsilon_y$ and the Peirce basis.
 - [The $M_4(\mathbb{C})$ Axis-Free Representation](m4c-axis-free-representation.html), for the isomorphism $\mathsf M_2$, the trace and determinant, and the strictly triangular form.

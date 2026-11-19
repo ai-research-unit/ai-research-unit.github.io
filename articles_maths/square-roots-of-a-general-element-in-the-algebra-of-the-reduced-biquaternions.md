@@ -10,7 +10,7 @@ $$
 
 The method needs no norm and no form. It uses the one structural fact the algebra carries, the **idempotent coordinates**: the multiplication is componentwise in the basis $\Pi_+,\Pi_-$ of the two nontrivial idempotents, so the single equation $X^{2}=\breve Q$ splits into the **two independent complex equations** $p^{2}=Q_{+}$ and $q^{2}=Q_{-}$, where $X=(p,q)$ and $\breve Q=(Q_{+},Q_{-})$ are the pairs of idempotent coordinates. This is the same split that solves the central cases $X^{2}=1$ and $X^{2}=0$ in *Square Roots of One and the Idempotents of the Algebra of the Reduced Biquaternions* and *Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions*, carried to an arbitrary radicand.
 
-**The results.** Every element of the algebra has a square root, because every complex number does; there is **no rootless element**, in sharp contrast with the biquaternion algebra of *Square Roots of an Element*, where a whole row of radicands has an empty root set. The count is read from the two idempotent coordinates alone:
+**The results.** Every element of the algebra has a square root, because every complex number does; there is **no rootless element**, in sharp contrast with the biquaternion algebra of *The Square Roots of a General Element in the Biquaternion Algebra*, where a whole row of radicands has an empty root set. The count is read from the two idempotent coordinates alone:
 
 - **four roots** when $\breve Q$ lies on neither of the two idempotent lines, that is when $Q_{+}\neq0$ and $Q_{-}\neq0$;
 - **two roots** when $\breve Q$ lies on exactly one of the two lines and is not $0$, that is when exactly one of $Q_{+},Q_{-}$ vanishes;
@@ -168,4 +168,4 @@ The square-root problem $X^{2}=\breve Q$ in the multiplication is solved by the 
 - [Square Roots of Zero and the Nilpotents of the Algebra of the Reduced Biquaternions](square-roots-of-zero-and-the-nilpotents-of-the-algebra-of-the-reduced-biquaternions.html), for the roots of zero.
 - [Norm and Invertibility in the Algebra of the Reduced Biquaternions](norm-and-invertibility-in-the-algebra-of-the-reduced-biquaternions.html), for the norm and its vanishing set.
 - [Zero Divisors of the Algebra of the Reduced Biquaternions](zero-divisors-of-the-algebra-of-the-reduced-biquaternions.html), for the two idempotent lines.
-- [Square Roots of an Element](square-roots-of-an-element.html), for the non-split companion, whose root set can be empty.
+- [Square Roots of an Element](the-square-roots-of-a-general-element-in-the-biquaternion-algebra.html), for the non-split companion, whose root set can be empty.

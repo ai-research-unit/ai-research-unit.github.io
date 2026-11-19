@@ -1,12 +1,12 @@
-# __The Centraliser__
+# __The Centraliser in the Biquaternion Algebra__
 
 ## Introduction
 
 The centraliser of an element is the set of elements that commute with it. In the biquaternion algebra it is small and completely determined: for every non-central element it is the plane spanned by $e_t$ and the element itself, of complex dimension two, and its algebra type changes with the discriminant, $\mathbb{C}\times\mathbb{C}$ off the spectral-degenerate cone and the dual numbers on it. The central element is the single exception, and it lies on that same cone: there the centraliser is the whole algebra.
 
-The article is the intrinsic half of the element's theory. It gives the centraliser, its type, the double centraliser and the dimension count, and it supplies the uniqueness proof of *The Semisimple–Nilpotent Split*: the two parts of the split are polynomials in the element, hence lie in a commutative centraliser, hence commute.
+The article is the intrinsic half of the element's theory. It gives the centraliser, its type, the double centraliser and the dimension count, and it supplies the uniqueness proof of *The Semisimple–Nilpotent Split of a Biquaternion*: the two parts of the split are polynomials in the element, hence lie in a commutative centraliser, hence commute.
 
-The article is form-free. It uses the product, the coefficients and the square of *The Square of an Element*.
+The article is form-free. It uses the product, the coefficients and the square of *The Square of an Element in the Biquaternion Algebra*.
 
 ## The Definition
 
@@ -77,7 +77,7 @@ $$
 
 For the central element, $C(\tilde Q)=\mathbb{B}$ and $C(\mathbb{B})=\mathbb{C}e_t$. The two cases are the two extremes of the double-centraliser theorem: the bicommutant of a subalgebra of a matrix algebra is the subalgebra itself when the subalgebra is its own bicommutant, and the centre is the fixed point of the operation.
 
-The double centraliser is the algebra-side statement of the module classification: the endomorphism ring of the simple module is $\mathbb{C}$, and the double centraliser of $\mathbb{C}$ is $\mathbb{B}$. The module form is *The Category of Modules*.
+The double centraliser is the algebra-side statement of the module classification: the endomorphism ring of the simple module is $\mathbb{C}$, and the double centraliser of $\mathbb{C}$ is $\mathbb{B}$. The module form is *The Category of Modules in the Biquaternion Algebra*.
 
 ## The Uniqueness of the Split
 
@@ -90,7 +90,7 @@ The two explicit cases are these.
 - $B^2\neq0$: $\tilde Q$ is semisimple already, so $\tilde Q_s=\tilde Q$ and $\vec\Upsilon=0$.
 - $B^2=0$: $\tilde Q=Q_te_t+\vec Q$ with $\vec Q^2=0$, so $\tilde Q_s=Q_te_t$ and $\vec\Upsilon=\vec Q$. This covers both halves of the cone; at the centre $\vec Q=0$ and the nilpotent part vanishes.
 
-The four types of the split — scalar, semisimple, Jordan, nilpotent — are the four positions of $(\tilde Q_s,\vec\Upsilon)$ in these two cases. They are stated, with the corner pattern, in *The Semisimple–Nilpotent Split*.
+The four types of the split — scalar, semisimple, Jordan, nilpotent — are the four positions of $(\tilde Q_s,\vec\Upsilon)$ in these two cases. They are stated, with the corner pattern, in *The Semisimple–Nilpotent Split of a Biquaternion*.
 
 ## Summary
 
@@ -111,6 +111,6 @@ The four types of the split — scalar, semisimple, Jordan, nilpotent — are th
 
 ## Further Reading
 
-- [The Spectrum](the-spectrum.html), for the discriminant and the two eigenvalues.
-- [The Semisimple–Nilpotent Split](the-semisimple-nilpotent-split.html), for the decomposition.
-- [The Centraliser](the-centraliser.html), for the matrix form.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the discriminant and the two eigenvalues.
+- [The Semisimple–Nilpotent Split](the-semisimple-nilpotent-split-of-a-biquaternion.html), for the decomposition.
+- [The Centraliser](the-centraliser-in-the-biquaternion-algebra.html), for the matrix form.

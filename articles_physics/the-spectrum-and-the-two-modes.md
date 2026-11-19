@@ -22,9 +22,9 @@ $$
 
 | Mathematical Content | Source Mathematical Article |
 | --- | --- |
-| the spectral criterion, eigenvalues and eigenvectors, the characteristic and minimal polynomials, the two cases, the spectral-degenerate cone, the isotropic flag, the similarity classification, the restrictions to the six subspaces | [The Spectrum](../articles_maths/the-spectrum.html) |
-| the centraliser, its three cases, the double centraliser, the uniqueness of the semisimple–nilpotent split | [The Centraliser](../articles_maths/the-centraliser.html) |
-| the Jordan–Chevalley decomposition, the four types, the Peirce form, the multiplicative form, the two bases, five worked examples | [The Semisimple–Nilpotent Split](../articles_maths/the-semisimple-nilpotent-split.html) |
+| the spectral criterion, eigenvalues and eigenvectors, the characteristic and minimal polynomials, the two cases, the spectral-degenerate cone, the isotropic flag, the similarity classification, the restrictions to the six subspaces | [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) |
+| the centraliser, its three cases, the double centraliser, the uniqueness of the semisimple–nilpotent split | [The Centraliser](../articles_maths/the-centraliser-in-the-biquaternion-algebra.html) |
+| the Jordan–Chevalley decomposition, the four types, the Peirce form, the multiplicative form, the two bases, five worked examples | [The Semisimple–Nilpotent Split](../articles_maths/the-semisimple-nilpotent-split-of-a-biquaternion.html) |
 | the root, the spectral idempotents, the corners, the nilpotent pair, the normalisation, the eigenbasis, the Fourier reading, the four labels, the matrix model, the expansion theorem, the dependence on the line, spinors and the Peirce index | [The Eigenbasis of a Spectrally Regular Biquaternion](../articles_maths/the-eigenbasis-of-a-spectrally-regular-biquaternion.html) |
 | eight computed cases, the regimes, the eigenbasis table, the matrix table | [Worked Examples of an Eigenbasis of a Biquaternion](../articles_maths/worked-examples-of-an-eigenbasis-of-a-biquaternion.html) |
 | the sector, its three strata, the obstruction, the adapted and canonical frames, the Jordan pair, the Jordan basis, the matrix model, inversion and the truncated exponential, the relation to the regular sector | [The Jordan Basis of a Spectrally Degenerate Biquaternion](../articles_maths/the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html) |

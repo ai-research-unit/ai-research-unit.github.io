@@ -6,7 +6,7 @@
 
 The article identifies the Clifford algebra of the plane with $M_2(\mathbb{R})$, its even part with the complex numbers inside, the Clifford algebra of three-space with $M_2(\mathbb{C})$, and its even part with the quaternions. It proves that the quaternion algebra sits inside $M_2(\mathbb{C})$ as a real subspace closed under multiplication but not under the complex structure, and it explains what survives at order two. It assumes *The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover*, *Rotors Acting on the Bivector Space at $n=2$: the Adjoint Action* and *The Two Base Fields: $M_2(\mathbb{R})$ inside $M_2(\mathbb{C})$*.
 
-It follows the biquaternion side of the corpus, where the same eight real dimensions are written as *The Biquaternion Algebra*.
+It follows the biquaternion side of the corpus, where the same eight real dimensions are written as *Introduction to the Algebra of Biquaternions*.
 
 ## The Clifford Algebra of the Plane
 

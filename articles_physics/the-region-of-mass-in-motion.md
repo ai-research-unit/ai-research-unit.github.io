@@ -34,7 +34,7 @@ $$
 | the Peirce corners, the special decomposition and the corner generators | [The Peirce Decomposition of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) |
 | the minimal left ideals, the polarized module, the two Peirce copies | [The Polarized Module of the Biquaternion Algebra](../articles_maths/the-polarized-module-of-the-biquaternion-algebra.html) |
 | the multiplicative norm, the group of invertibles and the null cone | [N-Regularity and N-Degeneracy in the Biquaternion Algebra](../articles_maths/n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html) |
-| the spectral criterion, the eigenvalues and the spectral-degenerate cone | [The Spectrum](../articles_maths/the-spectrum.html) |
+| the spectral criterion, the eigenvalues and the spectral-degenerate cone | [The Spectrum](../articles_maths/the-spectrum-of-a-biquaternion.html) |
 | the two predicates, the independence of the cones, the chain of invariants | [Relations between the N Norm and Spectral Regularity and Degeneracy](../articles_maths/relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html) |
 | the modulus, the unit factor and the three pairings of the complete polar decomposition | [The Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) |
 | the rank of left multiplication, the annihilators and the two-sided operator | [The Four General Products and Their Relations over the Biquaternion Algebra](../articles_maths/the-four-general-products-and-their-relations-over-the-biquaternion-algebra.html) |

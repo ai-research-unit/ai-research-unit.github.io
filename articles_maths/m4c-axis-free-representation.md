@@ -6,7 +6,7 @@
 
 **The order of the article.** The left family is built first, from the multiplication of the algebra and from nothing else: §*The Left Family* writes the columns of the matrix as the products $\tilde Qe_\nu$, reads the multiplicativity off associativity, and displays the four matrices of the invertibles. The right family is built second, by the same construction read on the other side (§*The Right Family*). The matrix that carries the left family onto the right one is then read off the transpose of the first (§*The Stitch Between the Two Families*). Every other frame is a conjugate of this one (§*Every Family Is a Conjugate of This One*), and the properties that this frame has and the others lack are listed, counted and weighed: the ten properties, the subring of the entries and the meaning of realness (§*What the Axis-Free Family Makes Simple*, §*The Real-Coefficient Question*), then the uniqueness of the frame among the frames with the same sparsity, and the difference between the unique operator and the conjugacy class of its matrices (§*No Other Basis Does the Same*, §*The Operator Is Unique, the Matrix Is a Class*). The product, the trace, the determinant and the six subspaces follow (§*The Product*, §*The Trace*, §*The Determinant*, §*The Six Subspaces*).
 
-**The basis and the label.** The article works in the basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of *The Biquaternion Algebra*, the one the other articles call the coefficient basis. An element is
+**The basis and the label.** The article works in the basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of *Introduction to the Algebra of Biquaternions*, the one the other articles call the coefficient basis. An element is
 $$
 \tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad Q_\mu\in\mathbb{C},
 $$
@@ -16,15 +16,15 @@ and the entries of its matrices are these coefficients with the signs of the mul
 
 **The result in one line.** The four left matrices $L_{\mathrm{axf},e_\mu}$ and the four right matrices $R_{\mathrm{axf},e_\mu}$ are signed permutation matrices, with entries $0$ and $\pm1$ only, and each four is a basis of a four-dimensional subalgebra of $M_4(\mathbb{C})$. The left matrix of a general element is displayed in §*The Left Family*, the right matrix in §*The Right Family*, and the switch between them is the real sign matrix $D=\operatorname{diag}(1,-1,-1,-1)$. The trace is $4Q_t$, the determinant is $\langle\tilde Q\rangle_{\natural}^2=(Q_t^2+B^2)^2$, and the eigenvalues are $Q_t\pm iB$, each twice. Every other frame is $C^{-1}$ times this one times $C$, and this frame is the only one, up to relabelling the three directions and changing their signs, in which the sixteen matrices are real, integer-valued, signed permutations.
 
-**Boundaries.** The algebra, the multiplication table and the four conjugations are *The Biquaternion Algebra* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The general theory of the two families, of the change of frame and of the switch is *Families of Matrix Representations*; this article is one instance of it, worked out in full. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the axis-free basis. The same element in the tensor-product display is *$M_4(\mathbb{C})$ Pauli Representation*, and at the element size it is *$M_2(\mathbb{C})$ Pauli Representation*.
+**Boundaries.** The algebra, the multiplication table and the four conjugations are *Introduction to the Algebra of Biquaternions* and *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*. The general theory of the two families, of the change of frame and of the switch is *Families of Matrix Representations*; this article is one instance of it, worked out in full. The six subspaces are defined and decomposed in *Subspaces and Decompositions of the Biquaternion Algebra*; this article reads their images in the axis-free basis. The same element in the tensor-product display is *$M_4(\mathbb{C})$ Pauli Representation*, and at the element size it is *$M_2(\mathbb{C})$ Pauli Representation*.
 
 ## The Axis-Free Basis
 
-**The basis is the one of *The Biquaternion Algebra*.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and its basis is the tensor basis of §*The Basis and the Complexification* of *The Biquaternion Algebra*,
+**The basis is the one of *Introduction to the Algebra of Biquaternions*.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, and its basis is the tensor basis of §*The Basis and the Complexification* of *Introduction to the Algebra of Biquaternions*,
 $$
 e_t=1\otimes1,\qquad \vec e_x=1\otimes\vec e_x,\qquad \vec e_y=1\otimes\vec e_y,\qquad \vec e_z=1\otimes\vec e_z,
 $$
-the vector units on the right being those of $\mathbb{H}$, and the scalar imaginary $i=i\otimes1$ being central and occurring only as a coefficient. The four are a $\mathbb{C}$-basis. The element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu=q_\mu+iq'_\mu$, which is the developed form of §*The Coordinate Systems* of *The Element, the Coordinates and the Conjugations*.
+the vector units on the right being those of $\mathbb{H}$, and the scalar imaginary $i=i\otimes1$ being central and occurring only as a coefficient. The four are a $\mathbb{C}$-basis. The element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with $Q_\mu=q_\mu+iq'_\mu$, which is the developed form of §*The Coordinate Systems* of *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*.
 
 **Two names for one basis.** *Matrix Representations Conventions* calls this basis the coefficient basis, because its four coordinates are the coefficients of the developed form. This article calls the same basis axis-free, and writes the label on the family, $L_{\mathrm{axf}}(\tilde Q)$ and $L_{\mathrm{axf},e_\mu}$, as that article prescribes. The superscript $\mathrm{axf}$ is a name in lowercase roman letters, not an exponent: $L_{\mathrm{axf},\vec e_x}$ is the left matrix of $\vec e_x$, and its square is written $(L_{\mathrm{axf},\vec e_x})^2$. The two names are not two objects; the first names the coordinates, the second names what the frame does not do.
 
@@ -37,7 +37,7 @@ and the array $\varepsilon$ is the algebra: the table above is that array, writt
 
 **The frame names no direction.** The three vector units enter every formula below by the same rule: none of them is singled out by the construction, and §*No Direction Is Privileged* develops the point. The price is that the idempotents of the algebra are not adapted to the basis. The gain is that the entries are integers and that the transpose is the quaternion conjugation (§*The Left Family*).
 
-**The multiplication table.** The table of §*The Multiplication Table* of *The Biquaternion Algebra* is reproduced here, because the columns of the matrices built below are read from this table and from nothing else:
+**The multiplication table.** The table of §*The Multiplication Table* of *Introduction to the Algebra of Biquaternions* is reproduced here, because the columns of the matrices built below are read from this table and from nothing else:
 
 | $e_\mu e_\nu$ | $e_t$ | $\vec e_x$ | $\vec e_y$ | $\vec e_z$ |
 |---|---|---|---|---|
@@ -663,7 +663,7 @@ The six subspaces are the scalar, traceless, real, purely imaginary, Hermitian a
 - [Families of Matrix Representations](families-of-matrix-representations.html), for the general theory of the two families, of the change of frame and of the switch.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the conventions used across the category.
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the six subspaces and the three decompositions.
-- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations.html), for the four conjugations and the coordinate systems.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the multiplication table.
+- [The Element, the Coordinates and the Conjugations in the Biquaternion Algebra](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the four conjugations and the coordinate systems.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra and the multiplication table.
 - [$M_4(\mathbb{C})$ Pauli Representation](m4c-pauli-representation.html), for the same content in another frame, with the tensor-product display and the pure swap.
 - [$M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the element size and the compression.

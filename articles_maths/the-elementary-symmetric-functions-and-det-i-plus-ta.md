@@ -146,7 +146,7 @@ $$
 
 separating the two distinct eigenvalues from the double one. The orbits are the strata of *The Minimal Polynomial and the Jordan Form*: two distinct eigenvalues, one eigenvalue with a diagonalisable matrix, and one eigenvalue with a nontrivial Jordan block, the last being the single orbit of $A\ne\lambda\mathrm{I}$ with $\Delta=0$.
 
-**The biquaternion norm is not the determinant.** At $n=2$ the algebra is the biquaternion algebra $\mathbb{B}$, and the article *The Biquaternion Algebra* attaches to each element a real norm $N$. That norm is real-valued and indefinite, while $\det$ is complex-valued and multiplicative; the two agree in neither inertia nor domain. The determinant of the matrix of $q$ is the complex number $\det q$, and the statement $N(q)=\det q$ is false for a biquaternion. What survives is the trace: $\operatorname{tr}$ is complex-linear on $\mathbb{B}$, and its real part is the real part of the biquaternion trace.
+**The biquaternion norm is not the determinant.** At $n=2$ the algebra is the biquaternion algebra $\mathbb{B}$, and the article *Introduction to the Algebra of Biquaternions* attaches to each element a real norm $N$. That norm is real-valued and indefinite, while $\det$ is complex-valued and multiplicative; the two agree in neither inertia nor domain. The determinant of the matrix of $q$ is the complex number $\det q$, and the statement $N(q)=\det q$ is false for a biquaternion. What survives is the trace: $\operatorname{tr}$ is complex-linear on $\mathbb{B}$, and its real part is the real part of the biquaternion trace.
 
 ## Summary
 
@@ -171,4 +171,4 @@ The elementary symmetric functions $e_k(A)$, the sum of the principal $k\times k
 - David Cox, John Little and Donal O'Shea, *Ideals, Varieties, and Algorithms* (Springer, 2015), for the invariant ring of the conjugation action and the algebraic independence of the generators.
 - [The Element: Rank, Trace, Determinant, Characteristic Polynomial](the-element-rank-trace-determinant-characteristic-polynomial.html), for the four invariants and the coefficient form of $\chi_A$.
 - [The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$](the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html), for the degree count $n(n+1)/2$ against the frame count.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the indefinite norm $N$ that is not the determinant.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the indefinite norm $N$ that is not the determinant.

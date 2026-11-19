@@ -1,4 +1,4 @@
-# __Zero Divisors and Invertibles__
+# __Zero Divisors and Invertibles in the Biquaternion Algebra__
 
 ## Introduction
 
@@ -6,7 +6,7 @@ Multiplication makes every element of the algebra act on the algebra, on the lef
 
 For $\tilde Q_1\in\mathbb{B}$, the set of elements that left multiplication by $\tilde Q_1$ sends to zero is a complex subspace of $\mathbb{B}$, and so is the set of elements that right multiplication sends to zero. The two are the **annihilators** of $\tilde Q_1$. Their dimensions are the invariant that separates the elements: an element that kills nothing is invertible, an element that kills something is a zero divisor, and there is no third case.
 
-The article computes the two annihilators in coordinates, proves that a non-zero element has annihilators of dimension $0$ or $2$ and never anything else, exhibits a basis in each case, identifies the two-sided annihilator, and closes with the unit criterion. The article is form-free: it uses the product and the coefficients of *The Element, the Coordinates and the Conjugations*, and the square of *The Square of an Element*. The degenerate condition $Q_{1t}^2+B_1^2=0$ appears as the condition for a linear system to have a solution, not as a norm.
+The article computes the two annihilators in coordinates, proves that a non-zero element has annihilators of dimension $0$ or $2$ and never anything else, exhibits a basis in each case, identifies the two-sided annihilator, and closes with the unit criterion. The article is form-free: it uses the product and the coefficients of *The Element, the Coordinates and the Conjugations in the Biquaternion Algebra*, and the square of *The Square of an Element in the Biquaternion Algebra*. The degenerate condition $Q_{1t}^2+B_1^2=0$ appears as the condition for a linear system to have a solution, not as a norm.
 
 ## The Two Annihilators
 
@@ -195,7 +195,7 @@ Both annihilators then have complex dimension $2$, the two-sided annihilator has
 
 The zero divisors split into two families.
 
-**The pure family.** $Q_{1t}=0$ and $B_1^2=0$, with $\vec Q_1\neq0$. The element is pure and isotropic, it annihilates itself on both sides, and $\tilde Q_1^2=0$. Its annihilators are the planes through the line $\mathbb{C}\tilde Q_1$. These elements are the non-zero square-zero elements of the algebra; they are treated in *Nilpotents*.
+**The pure family.** $Q_{1t}=0$ and $B_1^2=0$, with $\vec Q_1\neq0$. The element is pure and isotropic, it annihilates itself on both sides, and $\tilde Q_1^2=0$. Its annihilators are the planes through the line $\mathbb{C}\tilde Q_1$. These elements are the non-zero square-zero elements of the algebra; they are treated in *The Square Roots of Zero and the Nilpotents of the Biquaternion Algebra*.
 
 **The non-pure family.** $Q_{1t}\neq0$ and $Q_{1t}^2+B_1^2=0$, so $B_1^2=-Q_{1t}^2\neq0$. The element does not annihilate itself: $\tilde Q_1^2=2Q_{1t}(Q_{1t}e_t+\vec Q_1)\neq0$, because $Q_{1t}\neq0$ and $\vec Q_1\neq0$. Its two annihilators are distinct planes meeting in the line $\mathbb{C}\tilde Q_1^{\natural}$. The conjugate is the common annihilator: it is the first generator of each of the two bases above, and it lies in both annihilators.
 
@@ -253,7 +253,7 @@ has $B_1^2=1+i^2=0$ and is invertible, with $Q_{1t}^2+B_1^2=1$.
 
 ## Further Reading
 
-- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations.html), for the product and the conjugate.
-- [The Square of an Element](the-square-of-an-element.html), for the square and the pure isotropic case.
-- [Nilpotents](nilpotents.html), for the pure family of the zero divisors.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for the algebra and the basis.
+- [The Element, the Coordinates and the Conjugations](the-element-the-coordinates-and-the-conjugations-in-the-biquaternion-algebra.html), for the product and the conjugate.
+- [The Square of an Element](the-square-of-an-element-in-the-biquaternion-algebra.html), for the square and the pure isotropic case.
+- [Nilpotents](the-square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html), for the pure family of the zero divisors.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for the algebra and the basis.

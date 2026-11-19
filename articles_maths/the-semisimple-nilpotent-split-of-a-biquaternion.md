@@ -1,12 +1,12 @@
-# __The Semisimple–Nilpotent Split__
+# __The Semisimple–Nilpotent Split of a Biquaternion__
 
 ## Introduction
 
-Every element of the biquaternion algebra is the sum of a semisimple element and a nilpotent element that commute, and the sum is unique. The split is the finest decomposition that the product alone determines: it uses no norm, no form, no pairing and no matrix. This article proves the split for $\mathbb{B}$, states it in the frame supplied by *The Centraliser* and *Peirce Decompositions of the Biquaternion Algebra*, and shows that the eigenvalue decomposition and the Jordan basis are its two frames.
+Every element of the biquaternion algebra is the sum of a semisimple element and a nilpotent element that commute, and the sum is unique. The split is the finest decomposition that the product alone determines: it uses no norm, no form, no pairing and no matrix. This article proves the split for $\mathbb{B}$, states it in the frame supplied by *The Centraliser in the Biquaternion Algebra* and *Peirce Decompositions of the Biquaternion Algebra*, and shows that the eigenvalue decomposition and the Jordan basis are its two frames.
 
 The algebra has degree two, so the theorem is short. An element $\tilde Q=Q_te_t+\vec Q$ has characteristic polynomial $(X-Q_t)^2+B^2$, with $B^2=Q_x^2+Q_y^2+Q_z^2$. The cases are read in two steps, first by the discriminant and then by centrality. First $B^2\neq0$: the two roots are distinct and the element is already semisimple. Then $B^2=0$, where the roots coalesce. This second case has two halves: the central half $\vec Q=0$, where the element is scalar; and the non-central half $\vec Q\neq0$, where the element is a scalar part plus a non-zero square-zero vector. The non-central half splits once more by the scalar part, into the Jordan type when $Q_t\neq0$ and the nilpotent type when $Q_t=0$. There are therefore four minimal-polynomial types, and the semisimple outcome of the split has three Peirce sub-cases: scalar, unit and zero divisor.
 
-The article is the biquaternion case of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, where the general theorem, its uniqueness and its multiplicative form are proved. What is added here is the explicit frame, the corner pattern and the exact list of types. The two frame articles are *The Eigenbasis of a Spectrally Regular Biquaternion* and *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*, and the centraliser is *The Centraliser*.
+The article is the biquaternion case of *Nilpotent Elements and the Jordan–Chevalley Decomposition*, where the general theorem, its uniqueness and its multiplicative form are proved. What is added here is the explicit frame, the corner pattern and the exact list of types. The two frame articles are *The Eigenbasis of a Spectrally Regular Biquaternion* and *The Jordan Basis of a Spectrally Degenerate Biquaternion*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*, and the centraliser is *The Centraliser in the Biquaternion Algebra*.
 
 **Notation.** An element is $\tilde Q=Q_te_t+\vec Q$, with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$, and its quaternion conjugation is $\tilde Q^{\natural}=Q_te_t-\vec Q$. The product is the plain product, associative with unit $e_t$. The scalar part is $\operatorname{Sc}(\tilde Q)=Q_t$, and
 
@@ -20,11 +20,11 @@ $$
 p_{\tilde Q}(X)=(X-Q_t)^2+B^2,
 $$
 
-and the minimal polynomial is written $m_{\tilde Q}$. An element is **semisimple** when $m_{\tilde Q}$ is squarefree, and **nilpotent** when some power of it is zero. An element is a **zero divisor** when $\tilde Q\neq0$ and some non-zero $\tilde Q_3$ satisfies $\tilde Q\tilde Q_3=0$ or $\tilde Q_3\tilde Q=0$. All three notions are properties of the product alone. The algebra and its conventions are *The Biquaternion Algebra*; the polynomial and its two cases are *The Spectrum*.
+and the minimal polynomial is written $m_{\tilde Q}$. An element is **semisimple** when $m_{\tilde Q}$ is squarefree, and **nilpotent** when some power of it is zero. An element is a **zero divisor** when $\tilde Q\neq0$ and some non-zero $\tilde Q_3$ satisfies $\tilde Q\tilde Q_3=0$ or $\tilde Q_3\tilde Q=0$. All three notions are properties of the product alone. The algebra and its conventions are *Introduction to the Algebra of Biquaternions*; the polynomial and its two cases are *The Spectrum of a Biquaternion*.
 
 ## The Frame
 
-The split is read in the Peirce frame of *Peirce Decompositions of the Biquaternion Algebra*, and its uniqueness is read in the centraliser of *The Centraliser*. The two facts are these.
+The split is read in the Peirce frame of *Peirce Decompositions of the Biquaternion Algebra*, and its uniqueness is read in the centraliser of *The Centraliser in the Biquaternion Algebra*. The two facts are these.
 
 - A non-central element has $C(\tilde Q)=\mathbb{C}[\tilde Q]$, of complex dimension two: $\mathbb{C}\times\mathbb{C}$ when $B^2\neq0$, the dual numbers when $B^2=0$ and $\vec Q\neq0$. At the centre, $B^2=0$ with $\vec Q=0$, the centraliser is all of $\mathbb{B}$.
 - A complete orthogonal pair $\{\tilde\Pi,\tilde\Pi'\}$ cuts the algebra into four corners $\mathbb{B}_{\sigma\tau}$, each a complex line, with the corner rule $\mathbb{B}_{\sigma\tau}\mathbb{B}_{\mu\nu}\subseteq\delta_{\tau\mu}\mathbb{B}_{\sigma\nu}$.
@@ -55,7 +55,7 @@ $$
 
 Then $\vec\Upsilon^2=0$, so $\vec\Upsilon$ is nilpotent; $\tilde Q_s$ is scalar, hence semisimple and central; and $\tilde Q_s\vec\Upsilon=\vec\Upsilon\tilde Q_s$.
 
-**Proof (uniqueness).** The two parts commute with $\tilde Q$, so they lie in the centraliser $C(\tilde Q)$ computed in *The Centraliser*.
+**Proof (uniqueness).** The two parts commute with $\tilde Q$, so they lie in the centraliser $C(\tilde Q)$ computed in *The Centraliser in the Biquaternion Algebra*.
 
 If $B^2\neq0$, the element has two distinct eigenvalues, and its centraliser is $\mathbb{C}[\tilde Q]\cong\mathbb{C}\times\mathbb{C}$. Every element of a product of fields is semisimple, so the only nilpotent element of the centraliser is $0$. Hence $\vec\Upsilon=0$ and $\tilde Q_s=\tilde Q$.
 
@@ -282,7 +282,7 @@ For an invertible element, the additive split gives the multiplicative form $\ti
 
 ## Further Reading
 
-- [The Spectrum](the-spectrum.html), for the characteristic polynomial, the spectral criterion and the two cases.
+- [The Spectrum](the-spectrum-of-a-biquaternion.html), for the characteristic polynomial, the spectral criterion and the two cases.
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the spectral frame, the root and the eigenbasis.
 - [The Jordan Basis of a Spectrally Degenerate Biquaternion](the-jordan-basis-of-a-spectrally-degenerate-biquaternion.html), for the defective sector, the support idempotents and the Jordan basis.
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition, the corners and the mixed generators.

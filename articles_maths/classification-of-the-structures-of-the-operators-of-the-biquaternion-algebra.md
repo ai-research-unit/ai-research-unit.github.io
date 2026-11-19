@@ -20,7 +20,7 @@ The operator algebras are not the element-level algebra under another name. The 
 
 ## The Two Operator Algebras
 
-**The carrier.** The algebra $\mathbb{B}$ is the complex matrix algebra $M_2(\mathbb{C})$ read with the base $e_t=\mathrm{I}_2$, $\vec e_x=-i\sigma_1$, $\vec e_y=-i\sigma_2$, $\vec e_z=-i\sigma_3$, as in [The Biquaternion Algebra](the-biquaternion-algebra.html). It has complex dimension four and real dimension eight, and the four units are a complex basis of the first and a real basis of the second. An element is written $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients, and its coordinate column in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the object on which every operator of this article acts.
+**The carrier.** The algebra $\mathbb{B}$ is the complex matrix algebra $M_2(\mathbb{C})$ read with the base $e_t=\mathrm{I}_2$, $\vec e_x=-i\sigma_1$, $\vec e_y=-i\sigma_2$, $\vec e_z=-i\sigma_3$, as in [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html). It has complex dimension four and real dimension eight, and the four units are a complex basis of the first and a real basis of the second. An element is written $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients, and its coordinate column in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$ is the object on which every operator of this article acts.
 
 **Definition (the two operator algebras).** The complex operator algebra is
 

@@ -80,7 +80,7 @@ $$
 
 This factor is the dimension of the carrier and nothing else. It is the reason the matrix norm is written with the bracket: the bar belongs to the element, where the scalar part is the one half of the trace.
 
-**The qualified regular and the qualified degenerate.** For a letter $Ξ$ of the four, a biquaternion is **$Ξ$-regular** when $Ξ(\tilde{Q})\neq0$ and **$Ξ$-degenerate** when $Ξ(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the group of invertibles and $N$-degenerate the non-invertibles. $P$-degenerate and $\mathrm{Kr}$-degenerate contain units, $P(e_t+\vec e_x)=\mathrm{Kr}(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum*, so the letter is never omitted.
+**The qualified regular and the qualified degenerate.** For a letter $Ξ$ of the four, a biquaternion is **$Ξ$-regular** when $Ξ(\tilde{Q})\neq0$ and **$Ξ$-degenerate** when $Ξ(\tilde{Q})=0$. Only $N$ decides invertibility: $\{N=0\}$ is the origin together with the zero divisors, so $N$-regular is the group of invertibles and $N$-degenerate the non-invertibles. $P$-degenerate and $\mathrm{Kr}$-degenerate contain units, $P(e_t+\vec e_x)=\mathrm{Kr}(e_t+\vec e_x)=0$ with $N(e_t+\vec e_x)=2$, and $H$-degenerate is the origin alone. The unqualified *regular* is the spectral one, $B^{2}\neq0$, of *The Spectrum of a Biquaternion*, so the letter is never omitted.
 
 ### The Unitary Convention
 

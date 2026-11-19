@@ -16,7 +16,7 @@ $$
 Q_t = q_t + iq'_t, \qquad Q_x = q_x + iq'_x, \qquad Q_y = q_y + iq'_y, \qquad Q_z = q_z + iq'_z, \qquad q_\mu, q'_\mu \in \mathbb{R},
 $$
 
-replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the eight parameters are the coordinates of one point. Which parameter belongs to which sector is decided below, in *The Complex Coordinates*, once the two sectors have been named. The four coefficients are lengths, and the two temporal parameters are lengths as well, so one element carries one unit in all four of its directions and no constant stands between the parameters. The prime therefore marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and it splits into two four-dimensional real subspaces; which four parameters each takes is stated in *The Complex Coordinates*. The complex structure — the identification of which direction is "real" and which is "imaginary" — is **local**, determined by the electromagnetic properties of the medium at each point.
+replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the eight parameters are the coordinates of one point. Which parameter belongs to which sector is decided below, in *The Complex Coordinates*, once the two sectors have been named. The four coefficients are lengths, and the two temporal parameters are lengths as well, so one element carries one unit in all four of its directions and no constant stands between the parameters. The prime therefore marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and it splits into two four-dimensional real subspaces; which four parameters each takes is stated in *The Complex Coordinates*. The identification of which direction is "real" and which is "imaginary" is the same at every point. What is local is the **unit** of the temporal axis, set by the local speed of light $c=1/\sqrt{\epsilon\mu}$.
 
 The evidence currently available for this hypothesis is structural rather than empirical: the same algebra naturally contains both the relativistic and quantum frameworks, together with relationships between them that become visible only when they are expressed in a common algebraic language.
 
@@ -28,7 +28,7 @@ $$
 \mathbb{B} = \mathbb{B}_{\Phi} \oplus \mathbb{B}_{\Psi}.
 $$
 
-The subspace $\mathbb{B}_{\Phi}$ is the **anti-Hermitian subspace**, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation ${}^{*}$ with eigenvalue $-1$). The subspace $\mathbb{B}_{\Psi}$ is the **Hermitian subspace**, the fixed-point set of the Hermitian conjugation ${}^{*}$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial. Every element of the algebra splits accordingly, $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$, into its **material part** $\tilde Q_\Phi\in\mathbb{B}_{\Phi}$ and its **informational part** $\tilde Q_\Psi\in\mathbb{B}_{\Psi}$; an element of $\mathbb{B}_{\Phi}$ is its own material part, and an element of $\mathbb{B}_{\Psi}$ its own informational part. Both halves carry the one glyph of the element, and the sector mark alone separates them; the general element $\tilde Q$ takes no sector mark, since its sector depends on its value. The prime carries the reading rather than the sector: it marks the time in the material half $i q'_t\,e_t+\vec Q_\Phi$, and the space in the informational half $q_t\,e_t+i\vec Q_\Psi$, and the eight numbers of an element are the same eight whichever half is written.
+The subspace $\mathbb{B}_{\Phi}$ is the **anti-Hermitian subspace**, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation ${}^{*}$ with eigenvalue $-1$). The subspace $\mathbb{B}_{\Psi}$ is the **Hermitian subspace**, the fixed-point set of the Hermitian conjugation ${}^{*}$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial. Every element of the algebra splits accordingly, $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$, into its **material part** $\tilde Q_\Phi\in\mathbb{B}_{\Phi}$ and its **informational part** $\tilde Q_\Psi\in\mathbb{B}_{\Psi}$; an element of $\mathbb{B}_{\Phi}$ is its own material part, and an element of $\mathbb{B}_{\Psi}$ its own informational part. Both halves carry the one glyph of the element, and the sector mark alone separates them; the general element $\tilde Q$ takes no sector mark, since its sector depends on its value. The prime carries the reading rather than the sector: it marks the time in the material half $i q'_t\,e_t+\vec Q_\Phi$, and the space in the informational half $q_t\,e_t+i\vec Q_\Psi$, and the eight parameters are the same eight whichever half is read.
 
 The two subspaces have distinct physical roles:
 
@@ -86,55 +86,6 @@ The unprimed parameter is throughout the **real part** of the complex coefficien
 
 **One element, one point, one label.** The eight parameters split four and four between the parts, and the split gives the element its second interpretation. Read on its material part, the element is a spacetime event, $\tilde Q_\Phi=i q'_t\,e_t+\vec Q_\Phi$, and its informational part $\tilde Q_\Psi$ supplies the four parameters of its **internal label**; read on its informational part, it is an event of the informational sector, $\tilde Q_\Psi=q_t\,e_t+i\vec Q_\Psi$, and its material part $\tilde Q_\Phi$ supplies the four parameters of its **spacetime label**. The four complex coefficients therefore read as a spacetime point together with the matching point of the other sector, and no coefficient is idle: each carries one coordinate of each sector at once. That is why one element of $\mathbb{B}$ serves both as a four-vector and as a state — the two interpretations use the two halves of the same four coefficients.
 
-### The Vacuum Limit
-
-In vacuum the local speed of light is the constant $c_0$; in a material medium it is $c=1/\sqrt{\epsilon\mu}$ and varies from point to point. Neither value enters the coordinate, because the four coefficients are lengths in either case. What is local is the complex structure and its scale, and the scale is read through the one conversion the scheme still uses, $t=q'_t/c$, wherever a clock is compared with a length. The writing of an element is therefore the same in vacuum and in a medium, in the same spirit as the metric of general relativity, which is local while the coordinates of a chart are not.
-
-## The Metric
-
-The quadratic form on the biquaternion algebra is the **biquaternion norm**
-
-$$
-\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\, d\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} (dQ_\mu)^2,
-$$
-
-where ${}^{\natural}$ is the **quaternion conjugate**, the involution that reverses the three quaternion directions and leaves the complex coefficients alone: $e_t^{\natural}=e_t$, $\vec e_\eta^{\natural}=-\vec e_\eta$, hence $d\tilde{Q}^{\natural} = dQ_t\,e_t - dQ_x\,\vec e_x - dQ_y\,\vec e_y - dQ_z\,\vec e_z$. A second conjugation appears later in the article, the **bar**, and it acts on the other factor: it conjugates the complex coefficients and leaves the quaternion basis alone, $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}\,e_\mu$. The two are different operations on the same element, and the norm uses the first. The quaternion conjugate is what produces the sum of squares: the plain square $d\tilde{Q}\,d\tilde{Q}$ is not $\sum_\mu (dQ_\mu)^2$. Expanding in real and imaginary parts,
-
-$$
-(dQ_t)^2 = \bigl((dq_t)^2 - (dq'_t)^2 + 2i\,dq_t\,dq'_t\bigr),\qquad (dQ_\eta)^2 = (dq_\eta)^2 - (dq'_\eta)^2 + 2i\,dq_\eta\,dq'_\eta .
-$$
-
-The **real part** of $\langle d\tilde{Q}\rangle_{\natural} = \sum_\mu (dQ_\mu)^2$ reproduces the Lorentzian interval on the material sector and the mirror interval on the informational one. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $i q'_t$, not from an independently postulated metric. The **imaginary part** couples the material and informational sectors through cross terms.
-
-Because each part retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material part, where $d\tilde Q=d\tilde Q_\Phi$ and only $dq'_t$ and the $dq_\eta$ are non-zero,
-
-$$
-\boxed{\;\langle d\tilde Q_\Phi\rangle_{\natural} = -(dq'_t)^2 + dq_x^2 + dq_y^2 + dq_z^2\;},
-$$
-
-the Minkowski interval, one negative direction and three positive. On the informational part, where $d\tilde Q=d\tilde Q_\Psi$ and only $dq_t$ and the $dq'_\eta$ are non-zero,
-
-$$
-\boxed{\;\langle d\tilde Q_\Psi\rangle_{\natural} = dq_t^2 - (dq'_x)^2 - (dq'_y)^2 - (dq'_z)^2\;},
-$$
-
-the mirror interval, one positive direction and three negative. The two are exchanged by $i$, and the sign of the form reverses with them, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$. In both cases the null cone — each sector's part of the zero divisor set of the algebra, discussed in the companion articles — has the same two interpretations:
-
-$$
-\mathbb{B}_{\Phi}:\;\; (dq'_t)^2 = dq_x^2 + dq_y^2 + dq_z^2, \qquad
-\mathbb{B}_{\Psi}:\;\; dq_t^2 = (dq'_x)^2 + (dq'_y)^2 + (dq'_z)^2 .
-$$
-
-Each of these is one equation in the four parameters of its sector, with the temporal parameter squared against the three spatial ones.
-
-**Where the minus comes from.** Read as a form on $\mathbb{C}$, the same norm has the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ for its coefficient tuple, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$, with every entry $+1$ and the four directions of $\mathbb{B}$ on an equal footing: there is no minus sign in the complex form itself, and none is needed, since a complex coefficient can carry the sign. The minus appears only when a *real* coordinate is placed on a direction whose coefficient carries a factor of $i$, as it is in each of the two real sectors above. The Minkowski signs are therefore not an independent input of the theory: it is what the algebra's own form looks like once the material time is written $i q'_t$, with $i^2=-1$ supplying the minus. The metric is *The Unit Metric in the Biquaternion Universe*, which also states the absorbed alternative $g=\mathrm{diag}(-1,1,1,1)$ and why the series refuses it. The norm as a complex form, and the four forms it takes, are treated in *Algebra and Element Conventions*; the local complex structure behind the choice of $i$ is *The Local Complex Structure and the Speed of Light*.
-
-**One root, three names.** The minus of the interval is one case of a single algebraic fact: the equation $\tilde{Q}^{2}=\lambda e_t$ in the plain product has three distinguished radicands: a root of $-1$ is a complex structure, a root of $0$ a nilpotent of the light cone, and a root of $+1$ an involution. The central root $i$ is the scalar imaginary that writes $i q'_t$; a non-central root is an internal complex structure of the real space, not a change of the algebra's scalars. The three answers are one equation, and the subspace in which the root is sought decides the physical name. Read on the elements, the same observation gives the massive, the massless and the spacelike as the interior, the boundary and the exterior of one quadric. The trichotomy is *Roots, Idempotents and Observables* and *The Zero-Divisor Cone and the Massless Spectrum*; the boundary is *The Light Cone as the Biquaternion Zero-Divisor Cone*; and the mass shell is *The Physical Interpretation of the 12 Products*.
-
-### The Two Forms of One Element
-
-The body has so far developed one form, the biquaternion norm $\langle\cdot\rangle_{\natural}$. The second is the **Hermitian form** on $\mathbb{B}_{\Psi}$, $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, the sum of the four coordinates of one element against the conjugates of the other — the bar, the coefficient conjugation, and not the quaternion conjugate ${}^{\natural}$ of the norm. The two forms are two interpretations of one element, and they part company at once: the norm is complex and vanishes on the null cone, the Hermitian form is positive and vanishes only at the origin. At $\tilde{Q}=e_t+i\vec e_z$ the two already differ: the norm is $\langle\tilde{Q}\rangle_{\natural}=0$, while the Hermitian form is $\langle\tilde{Q},\tilde{Q}\rangle_{*}=2$. The same element is a null direction for the interval and a state of positive weight. The norm is the **interval**, whose zero set is the light cone; the Hermitian form is the **probability weight**, the form the Born rule draws on. One element carries both, and the framework's account of why the causal and the probabilistic structures coexist is that they are two forms on one biquaternion space and not two algebras. The form read as a product, and the positivity and the rank it carries, are treated in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the probability reading is *The Informational Sector: States, Observables and Probability*.
-
 ## What the Framework Achieves
 
 The main result of the framework so far is that the biquaternion algebra **contains, as a matter of algebra, the structures required for both relativity and quantum physics**. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same biquaternion space, appearing in its two complementary subspaces. Two further classifications are read from that algebra and developed elsewhere: the **reality condition** that fixes the type of a particle, and the split of the internal symmetry into a compact part carrying a discrete charge and a non-compact part carrying a continuous label. Both are treated in *The Physical Interpretation of the 12 Products*; the antilinear structure behind them is *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*.
@@ -152,8 +103,10 @@ the imaginary temporal coordinate $i q'_{t}$, a length, together with the three 
 The material sector $\mathbb{B}_{\Phi}$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **proper orthochronous Lorentz group** $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the **group of biquaternions of unit norm** in $\mathbb{B}$; its elements are the Lorentz rotors, written $\tilde U_{\mathrm{lor}}$:
 
 $$
-\boxed{\;SL(2,\mathbb{C}) \;\cong\; \{\tilde U_{\mathrm{lor}} \in \mathbb{B} : \tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t\}\;}.
+SL(2,\mathbb{C}) \;\cong\; \{\tilde U_{\mathrm{lor}} \in \mathbb{B} : \tilde U_{\mathrm{lor}}\tilde U_{\mathrm{lor}}{}^{\natural} = e_t\}.
 $$
+
+The norm $\langle\cdot\rangle_{\natural}$ and the quaternion conjugate ${}^{\natural}$ that appear here are defined in *The Metric*, later in the article.
 
 This group **acts** on the material sector by the **rotor conjugation**
 
@@ -161,7 +114,7 @@ $$
 \tilde Q_\Phi \;\longmapsto\; \tilde U_{\mathrm{lor}}\,\tilde Q_\Phi\,\tilde U_{\mathrm{lor}}{}^{*}.
 $$
 
-The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{B}_{\Phi}$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{B}_{\Phi}$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{B}_{\Psi}$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{B}_{H}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.
+The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{B}_{\Phi}$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{B}_{\Phi}$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{B}_{\Psi}$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{B}_{H}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra. The rotation rotors sit in the **real half** $\mathbb{B}_{H}$, whose four coefficients are all real, a subalgebra in its own right; the **imaginary half** $\mathbb{B}_{iH}$, whose four coefficients are purely imaginary, is its partner in $\mathbb{B}=\mathbb{B}_{H}\oplus\mathbb{B}_{iH}$. That split crosses the material–informational one: the scalar of $\mathbb{B}_{\Phi}$ and the vector of $\mathbb{B}_{\Psi}$ come from $\mathbb{B}_{iH}$.
 
 The relativistic wave equations — **Maxwell's equations** and the **Dirac equation** — have natural biquaternion forms, as developed in the companion articles.
 
@@ -175,7 +128,7 @@ $$
 
 the real temporal coordinate $q_t$, a length, together with the three imaginary spatial coordinates $i q'_{x}, i q'_{y}, i q'_{z}$.
 
-The informational sector $\mathbb{B}_{\Psi}$ is, exactly, the **Hermitian part** of the operator algebra of a two-state quantum system: its elements are the observables, and they generate the full matrix algebra. This is established in the companion article *Quantum Physics in Biquaternionic Form*, and it can be summarized as follows.
+The informational sector $\mathbb{B}_{\Psi}$ is, exactly, the **Hermitian part** of the operator algebra of a two-state quantum system: its elements are the observables, and they generate the full matrix algebra. The subspace is a real vector space and not a subalgebra: the product of two Hermitian elements is not in general Hermitian, and only its symmetric half stays in the sector. The operator product is therefore read through the two slots (*The Two Slots of One Product*) and not as a multiplication internal to $\mathbb{B}_{\Psi}$. This is established in the companion article *Quantum Physics in Biquaternionic Form*, and it can be summarized as follows. The Hermitian form $\langle\cdot,\cdot\rangle_{*}$ that appears below is defined in *The Metric*, later in the article.
 
 - The **elements** of $\mathbb{B}_{\Psi}$, of the form $\tilde Q_\Psi = q_t\,e_t + i\vec Q_\Psi$ with $\vec Q_\Psi = q'_x\vec e_x + q'_y\vec e_y + q'_z\vec e_z$ and $q_t, q'_x, q'_y, q'_z \in \mathbb{R}$ — the scalar coefficient real and the vector coefficients imaginary, which is the usual writing of quantum physics — are the observables (they are automatically Hermitian by definition of $\mathbb{B}_{\Psi}$), with spectral decomposition in terms of idempotents. The correspondence runs both ways: the Hermitian elements of $\mathbb{B}$ are exactly the elements of $\mathbb{B}_{\Psi}$, and the observables of the two-state system are exactly the Hermitian $2\times2$ matrices, so nothing outside $\mathbb{B}_{\Psi}$ is an observable and no element of $\mathbb{B}_{\Psi}$ is idle. The four parameters are then the four numbers a measurement of that observable reports: the two outcomes are $q_t \pm \lvert\vec Q_\Psi\rvert$, so $q_t$ is their mean and the vector $\vec Q_\Psi$ fixes their half-splitting.
 - The **idempotents** in $\mathbb{B}_{\Psi}$, of the form $\tilde\Pi_{1,2}(\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $\vec u$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.
@@ -200,6 +153,55 @@ Every product of the algebra reads two elements, one in each **slot**, and in th
 
 **The reading order.** The corpus is organised in four blocks. **Algebra** fixes the vocabulary: the elements, the twelve products, the four forms and the four norms. **Topology** reads the group of invertibles, the cone and the orders. **Analysis** reads the exponential, the logarithm and the poles. **Geometry** reads the sectors, the frames, the bundles and the null quadric. The physical articles follow the same order: the algebra first, then the material and informational sectors, then the processes and the spectra. A reader who wants one path through the series can take the algebra block, then *The Material Sector: Four-Vectors, Interval and Lorentz Action* and *The Informational Sector: States, Observables and Probability*, then the analysis of the exponential, and then the spectral articles.
 
+## The Metric
+
+The quadratic form on the biquaternion algebra is the **biquaternion norm**
+
+$$
+\langle d\tilde{Q}\rangle_{\natural} = d\tilde{Q}\, d\tilde{Q}^{\natural} = \sum_{\mu\in\{t,x,y,z\}} (dQ_\mu)^2,
+$$
+
+where ${}^{\natural}$ is the **quaternion conjugate**, the involution that reverses the three quaternion directions and leaves the complex coefficients alone: $e_t^{\natural}=e_t$, $\vec e_\eta^{\natural}=-\vec e_\eta$, hence $d\tilde{Q}^{\natural} = dQ_t\,e_t - dQ_x\,\vec e_x - dQ_y\,\vec e_y - dQ_z\,\vec e_z$. A second conjugation appears later in the article, the **bar**, and it acts on the other factor: it conjugates the complex coefficients and leaves the quaternion basis alone, $\overline{\tilde{Q}} = \sum_\mu \overline{Q_\mu}\,e_\mu$. The two are different operations on the same element, and the norm uses the first. The quaternion conjugate is what produces the sum of squares: the plain square $d\tilde{Q}\,d\tilde{Q}$ is not $\sum_\mu (dQ_\mu)^2$. Expanding in real and imaginary parts,
+
+$$
+(dQ_t)^2 = \bigl((dq_t)^2 - (dq'_t)^2 + 2i\,dq_t\,dq'_t\bigr),\qquad (dQ_\eta)^2 = (dq_\eta)^2 - (dq'_\eta)^2 + 2i\,dq_\eta\,dq'_\eta .
+$$
+
+The **real part** of $\langle d\tilde{Q}\rangle_{\natural} = \sum_\mu (dQ_\mu)^2$ reproduces the Lorentzian interval on the material sector and the mirror interval on the informational one. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $i q'_t$, not from an independently postulated metric. The **imaginary part** couples the material and informational sectors through cross terms.
+
+Because each part retains only half of the eight parameters, the same biquaternion norm reads off as a real quadratic form on each, and it is again worth having both writings. On the material part, where $d\tilde Q=d\tilde Q_\Phi$ and only $dq'_t$ and the $dq_\eta$ are non-zero,
+
+$$
+\langle d\tilde Q_\Phi\rangle_{\natural} = -(dq'_t)^2 + dq_x^2 + dq_y^2 + dq_z^2
+$$
+
+the Minkowski interval, one negative direction and three positive. On the informational part, where $d\tilde Q=d\tilde Q_\Psi$ and only $dq_t$ and the $dq'_\eta$ are non-zero,
+
+$$
+\langle d\tilde Q_\Psi\rangle_{\natural} = dq_t^2 - (dq'_x)^2 - (dq'_y)^2 - (dq'_z)^2
+$$
+
+the mirror interval, one positive direction and three negative. The two are exchanged by $i$ — left multiplication by $i$ carries $\mathbb{B}_{\Phi}$ onto $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Psi}$ onto $\mathbb{B}_{\Phi}$ — and the sign of the form reverses with them, $\langle i\tilde{Q}\rangle_{\natural} = -\langle\tilde{Q}\rangle_{\natural}$. In both cases the null cone — each sector's part of the zero divisor set of the algebra, discussed in the companion articles — has the same two interpretations:
+
+$$
+\mathbb{B}_{\Phi}:\;\; (dq'_t)^2 = dq_x^2 + dq_y^2 + dq_z^2, \qquad
+\mathbb{B}_{\Psi}:\;\; dq_t^2 = (dq'_x)^2 + (dq'_y)^2 + (dq'_z)^2 .
+$$
+
+Each of these is one equation in the four parameters of its sector, with the temporal parameter squared against the three spatial ones.
+
+**Where the minus comes from.** Read as a form on $\mathbb{C}$, the same norm has the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ for its coefficient tuple, $\langle\tilde{Q}\rangle_{\natural}=\sum_\mu Q_\mu^2$, with every entry $+1$ and the four directions of $\mathbb{B}$ on an equal footing: there is no minus sign in the complex form itself, and none is needed, since a complex coefficient can carry the sign. The minus appears only when a *real* coordinate is placed on a direction whose coefficient carries a factor of $i$, as it is in each of the two real sectors above. The Minkowski signs are therefore not an independent input of the theory: it is what the algebra's own form looks like once the material time is written $i q'_t$, with $i^2=-1$ supplying the minus. The metric is *The Unit Metric in the Biquaternion Universe*, which also states the absorbed alternative $g=\mathrm{diag}(-1,1,1,1)$ and why the series refuses it. The norm as a complex form, and the four forms it takes, are treated in *Algebra and Element Conventions*; the local complex structure behind the choice of $i$ is *The Local Complex Structure and the Speed of Light*.
+
+**One root, three names.** The minus of the interval is one case of a single algebraic fact: the equation $\tilde{Q}^{2}=\lambda e_t$ in the plain product has three distinguished radicands: a root of $-1$ is a complex structure, a root of $0$ a nilpotent of the light cone, and a root of $+1$ an involution. The central root $i$ is the scalar imaginary that writes $i q'_t$; a non-central root is an internal complex structure of the real space, not a change of the algebra's scalars. The three answers are one equation, and the subspace in which the root is sought decides the physical name. Read on the elements, the same observation gives the massive, the massless and the spacelike as the interior, the boundary and the exterior of one quadric. The trichotomy is *Roots, Idempotents and Observables* and *The Zero-Divisor Cone and the Massless Spectrum*; the boundary is *The Light Cone as the Biquaternion Zero-Divisor Cone*; and the mass shell is *The Physical Interpretation of the 12 Products*.
+
+### The Two Forms of One Element
+
+The body has so far developed one form, the biquaternion norm $\langle\cdot\rangle_{\natural}$. The second is the **Hermitian form** on $\mathbb{B}_{\Psi}$, $\langle\tilde{Q}_1,\tilde{Q}_2\rangle_{*}=\sum_\mu Q_{1\mu}\overline{Q_{2\mu}}$, the sum of the four coordinates of one element against the conjugates of the other — the bar, the coefficient conjugation, and not the quaternion conjugate ${}^{\natural}$ of the norm. The two forms are two interpretations of one element, and they part company at once: the norm is complex and vanishes on the null cone, the Hermitian form is positive and vanishes only at the origin. At $\tilde{Q}=e_t+i\vec e_z$ the two already differ: the norm is $\langle\tilde{Q}\rangle_{\natural}=0$, while the Hermitian form is $\langle\tilde{Q},\tilde{Q}\rangle_{*}=2$. The same element is a null direction for the interval and a state of positive weight. The norm is the **interval**, whose zero set is the light cone; the Hermitian form is the **probability weight**, the form the Born rule draws on. One element carries both, and the framework's account of why the causal and the probabilistic structures coexist is that they are two forms on one biquaternion space and not two algebras. The form read as a product, and the positivity and the rank it carries, are treated in *The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra*; the probability reading is *The Informational Sector: States, Observables and Probability*.
+
+## The Vacuum Limit
+
+In vacuum the local speed of light is the constant $c_0$; in a material medium it is $c=1/\sqrt{\epsilon\mu}$ and varies from point to point. Neither value enters the coordinate, because the four coefficients are lengths in either case. The identification $r'_t\mapsto i r'_t$ is the same at every point; what is local is its scale, and the scale is read through the one conversion the scheme still uses, $t=q'_t/c$, wherever a clock is compared with a length. The writing of an element is therefore the same in vacuum and in a medium, in the same spirit as the metric of general relativity, which is local while the coordinates of a chart are not.
+
 ## Status and Open Questions
 
 The framework is a **research programmeme**, not a finished theory. The algebraic results — that $\mathbb{B}_{\Phi}$ carries the four-vectors of relativity and that $\mathbb{B}_{\Psi}$ carries the operator algebra of quantum physics — are established mathematics, and the identifications with the physical theories are developed in the companion articles.
@@ -216,7 +218,7 @@ What is not established is whether the framework has consequences beyond a refor
 
 5. **Curved spacetime.** The framework so far is formulated on flat spacetime. Its extension to curved spacetime, and its relation to general relativity, remain open.
 
-6. **Empirical contact.** What quantitative prediction distinguishes this framework from standard physics? This is the central open question, and the one on which the eventual evaluation of the hypothesis will depend.
+6. **Empirical contact.** What quantitative prediction distinguishes this framework from standard physics? This is the central open question, and the one on which the eventual evaluation of the hypothesis will depend. The contact that would count is a number the standard formulation does not supply: a measured cross-sector effect, or a bound on one, at a stated scale. A reformulation that produces neither is confirmed by every experiment and tested by none.
 
 From that shared foundation, the programme investigates where this algebraic unity leads next: whether cross-sector couplings generate new dynamics, how single-qubit geometry extends to multi-qubit tensor spaces $\mathbb{B}^{\otimes n}$ and quantum fields, and how a local complex structure generalizes to curved spacetime.
 

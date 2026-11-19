@@ -193,6 +193,6 @@ The two real forms of $M_4(\mathbb{C})$ are $M_4(\mathbb{R})$ and $M_2(\mathbb{H
 - [The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$](the-lie-algebra-gl4c-and-sl4c-of-m4c.html), for $\mathfrak{su}^{*}(4)\cong\mathfrak{so}(5,1)$ and $\mathfrak{sp}(2)$.
 - [The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$](the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html), for the two copies of $\mathbb{B}$.
 - [The Derivations and the Automorphisms of $M_4(\mathbb{C})$](the-derivations-and-the-automorphisms-of-m4c.html), for the antilinear automorphism group.
-- [The Biquaternion Algebra](the-biquaternion-algebra.html), for $\mathbb{B}$ and its complexification of $\mathbb{H}$.
+- [The Biquaternion Algebra](introduction-to-the-algebra-of-biquaternions.html), for $\mathbb{B}$ and its complexification of $\mathbb{H}$.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Brauer group and the real forms.
 - T. Y. Lam, *A First Course in Noncommutative Rings* (Springer, 2001), for the quaternionic matrix algebras and the Dieudonné determinant.

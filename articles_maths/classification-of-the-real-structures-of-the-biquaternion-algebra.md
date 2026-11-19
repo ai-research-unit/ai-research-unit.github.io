@@ -78,7 +78,7 @@ $$
 \vec e_x^{\,2}=\vec e_y^{\,2}=\vec e_z^{\,2}=-e_t,\qquad \vec e_x\vec e_y=\vec e_z,\quad \vec e_y\vec e_z=\vec e_x,\quad \vec e_z\vec e_x=\vec e_y ,
 $$
 
-which is the quaternion table of [Introduction to the Algebra of Biquaternions](the-biquaternion-algebra.html). Every nonzero element is invertible, with inverse $\tilde q^{-1}=\tilde q^{\natural}/(\tilde q\tilde q^{\natural})$ and $\tilde q\tilde q^{\natural}$ a positive real multiple of $e_t$.
+which is the quaternion table of [Introduction to the Algebra of Biquaternions](introduction-to-the-algebra-of-biquaternions.html). Every nonzero element is invertible, with inverse $\tilde q^{-1}=\tilde q^{\natural}/(\tilde q\tilde q^{\natural})$ and $\tilde q\tilde q^{\natural}$ a positive real multiple of $e_t$.
 
 **What this article adds.** Three layers and one group layer.
 

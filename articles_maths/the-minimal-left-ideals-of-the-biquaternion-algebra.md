@@ -127,7 +127,7 @@ for the subspaces $W\subseteq\mathbb{C}^2$ in the defining module, and the latti
 
 **Theorem.** $\mathbb{B}$ is simple: its only two-sided ideals are $0$ and $\mathbb{B}$.
 
-*Proof.* *The Biquaternion Algebra*, §*Simplicity*: a nonzero two-sided ideal contains a nonzero element, and multiplying by the invertibles and taking linear combinations produces the whole algebra; equivalently $\mathbb{B}\cong M_2(\mathbb{C})$ is a full matrix algebra over a field, which is simple.
+*Proof.* *Introduction to the Algebra of Biquaternions*, §*Simplicity*: a nonzero two-sided ideal contains a nonzero element, and multiplying by the invertibles and taking linear combinations produces the whole algebra; equivalently $\mathbb{B}\cong M_2(\mathbb{C})$ is a full matrix algebra over a field, which is simple.
 
 **Corollary (a carrier of the multiplication is one-sided).** No two-sided ideal other than $0$ and $\mathbb{B}$ exists, so an irreducible left ideal is a carrier and the algebra itself is not one. The two-sided structure is exhausted by the trivial pair, and every carrier of the multiplication is a minimal left ideal.
 
@@ -169,11 +169,11 @@ The algebra splits as $\mathbb{B}=S_{+}\oplus S_{-}$ into two copies of one simp
 
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the ideals as carriers and for the count of types
 - [The Companion Nilpotents of the Biquaternion Algebra](the-companion-nilpotents-of-the-biquaternion-algebra.html), for $\vec\Upsilon_{\mp\pm}$, the corners and the Peirce functional
-- [The Square Roots of One and the Idempotents of the Biquaternion Algebra](idempotents.html), for the classification of the idempotents of the whole algebra
+- [The Square Roots of One and the Idempotents of the Biquaternion Algebra](the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html), for the classification of the idempotents of the whole algebra
 - [Peirce Decompositions of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the Peirce decomposition at an idempotent
 - [The Peirce Basis of a Peirce Decomposition of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis adapted to a pair of idempotents
-- [The Category of Modules in the Biquaternion Algebra](the-category-of-modules.html), for the simple module and the Morita equivalence
-- [The Regular Module in the Biquaternion Algebra](the-regular-module.html), for the algebra as a module over itself
+- [The Category of Modules in the Biquaternion Algebra](the-category-of-modules-in-the-biquaternion-algebra.html), for the simple module and the Morita equivalence
+- [The Regular Module in the Biquaternion Algebra](the-regular-module-in-the-biquaternion-algebra.html), for the algebra as a module over itself
 - [The $M_2(\mathbb{C})$ Pauli Representation](m2c-pauli-representation.html), for the matrix model used in the examples
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for idempotents, minimal left ideals and the Peirce decomposition.
 - Israel Nathan Herstein, *Noncommutative Rings* (Carus Monographs, 1968), for the simplicity of a full matrix algebra and its left ideals.

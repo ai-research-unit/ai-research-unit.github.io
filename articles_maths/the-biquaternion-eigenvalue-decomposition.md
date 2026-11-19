@@ -16,7 +16,7 @@ $$
 
 with the two primitive idempotents $\tilde\Pi_{\pm}=\tfrac12(1\pm\vec{Ζ})$ of the pure root $\vec{Ζ}=-i\vec Q/B$. In the Clifford reading, $i$ is the volume element $\omega$, the biquaternion vector part $\vec Q$ is a bivector, the root $\vec{Ζ}$ is a unit vector, and the idempotents are the standard vector idempotents of grades $0$ and $1$. The eigenvalues are central elements of grades $0$ and $3$. The article develops this reading, records the Peirce and spinor structure that it makes visible, and treats the two degenerate regimes.
 
-The algebra and its four conjugations are from *The Biquaternion Algebra*; the spectrum and the characteristic polynomial are *The Spectrum*, §*The Spectral Criterion*; the normality criterion and the spectral theorem are §*The Hermitian Case* below; the roots of one and the idempotents are *Idempotents*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*; the eigenvalue decomposition in coordinates is §*The Eigenprojectors* below; the Clifford dictionary is *The Number Systems as Clifford Algebras*, §*The Biquaternion Algebra*; the general Clifford theory is *The Eigenvalue Decomposition in a Clifford Algebra*; and the grade decomposition is *The Geometric Product and the Grade Decomposition*.
+The algebra and its four conjugations are from *Introduction to the Algebra of Biquaternions*; the spectrum and the characteristic polynomial are *The Spectrum of a Biquaternion*, §*The Spectral Criterion*; the normality criterion and the spectral theorem are §*The Hermitian Case* below; the roots of one and the idempotents are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*; the eigenvalue decomposition in coordinates is §*The Eigenprojectors* below; the Clifford dictionary is *The Number Systems as Clifford Algebras*, §*Introduction to the Algebra of Biquaternions*; the general Clifford theory is *The Eigenvalue Decomposition in a Clifford Algebra*; and the grade decomposition is *The Geometric Product and the Grade Decomposition*.
 
 ## The Clifford Dictionary
 
@@ -34,7 +34,7 @@ $$
 \omega=\eta_{1}\eta_{2}\eta_{3}, \qquad \omega^{2}=-1,
 $$
 
-and it is central because the dimension is odd. The isomorphism of *The Number Systems as Clifford Algebras*, §*The Biquaternion Algebra*, is
+and it is central because the dimension is odd. The isomorphism of *The Number Systems as Clifford Algebras*, §*Introduction to the Algebra of Biquaternions*, is
 
 $$
 \eta_{\mu}\longmapsto i\vec e_{\mu},
@@ -85,7 +85,7 @@ $$
 \vec Q^{2}=-(Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2})e_{t},
 $$
 
-as in *The Spectrum*, §*The Spectral Criterion*. Let $B$ be a square root of $Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ and assume $B\neq0$. Put
+as in *The Spectrum of a Biquaternion*, §*The Spectral Criterion*. Let $B$ be a square root of $Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2}$ and assume $B\neq0$. Put
 
 $$
 \vec U=\frac{\vec Q}{B}, \qquad \vec{Ζ}=-i\vec U=-\frac{i\vec Q}{B}.
@@ -97,7 +97,7 @@ $$
 \vec{Ζ}^{2}=(-i)^{2}\frac{\vec Q^{2}}{B^{2}}=(-1)\frac{-B^{2}}{B^{2}}=1,
 $$
 
-so $\vec{Ζ}$ is a unit vector, and it is a pure root of $+1$ in the sense of *Idempotents*, §*The Roots of One*. The choice of $B$ is two-fold, and the replacement $B\mapsto-B$ replaces $\vec{Ζ}$ by $-\vec{Ζ}$; only the unordered pair is determined by $\tilde Q$.
+so $\vec{Ζ}$ is a unit vector, and it is a pure root of $+1$ in the sense of *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Roots of One*. The choice of $B$ is two-fold, and the replacement $B\mapsto-B$ replaces $\vec{Ζ}$ by $-\vec{Ζ}$; only the unordered pair is determined by $\tilde Q$.
 
 ### The Eigenvalues
 
@@ -119,7 +119,7 @@ $$
 \lambda_{\pm}=Q_{t}\pm iB=Q_{t}\pm B\omega .
 $$
 
-The **spectrum**, defined by invertibility as $\sigma(\tilde Q)=\{\lambda\in\mathbb{C}:\tilde Q-\lambda e_t\text{ is not invertible}\}$, is this root set; the equivalence of the two definitions is *The Spectrum*, §*The Spectral Criterion*.
+The **spectrum**, defined by invertibility as $\sigma(\tilde Q)=\{\lambda\in\mathbb{C}:\tilde Q-\lambda e_t\text{ is not invertible}\}$, is this root set; the equivalence of the two definitions is *The Spectrum of a Biquaternion*, §*The Spectral Criterion*.
 
 In the Clifford reading, the eigenvalues are **central elements of grades $0$ and $3$**: $Q_{t}$ is grade $0$, and $B\omega$ is the top grade. They are internal non-scalar eigenvalues in the sense of *The Eigenvalue Decomposition in a Clifford Algebra*, §*Internal and External Non-Scalar Eigenvalues*: the imaginary unit is the volume element of the algebra, not an external scalar. The discriminant is
 
@@ -137,7 +137,7 @@ $$
 \tilde\Pi_{+}=\tfrac12(e_{t}+\vec{Ζ}), \qquad \tilde\Pi_{-}=\tfrac12(e_{t}-\vec{Ζ}).
 $$
 
-These are the two idempotents of the root $\vec{Ζ}$ under the halving map of *Idempotents*, §*The Idempotents*. In the Clifford reading they are the **standard vector idempotents** of the unit vector $\vec{Ζ}$: they are idempotent, orthogonal and complete, and their grade support is $\{0,1\}$. They are primitive, and the pair is the complete orthogonal pair of *Peirce Decompositions of the Biquaternion Algebra*, §*Idempotents and Orthogonal Idempotents*.
+These are the two idempotents of the root $\vec{Ζ}$ under the halving map of *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, §*The Idempotents*. In the Clifford reading they are the **standard vector idempotents** of the unit vector $\vec{Ζ}$: they are idempotent, orthogonal and complete, and their grade support is $\{0,1\}$. They are primitive, and the pair is the complete orthogonal pair of *Peirce Decompositions of the Biquaternion Algebra*, §*Idempotents and Orthogonal Idempotents*.
 
 The eigenvalue relations are
 
@@ -305,7 +305,7 @@ with $\vec{Ζ}=-i\vec Q/B$ a unit vector and $B^{2}=Q_{x}^{2}+Q_{y}^{2}+Q_{z}^{2
 
 The Peirce corners of the pair are the four one-dimensional complex spaces of the matrix model; the diagonal part is $\mathbb{C}[\tilde Q]$, and the mixed part is the commutator with $\tilde\Pi_{+}$. The left ideals $\mathbb{B}\tilde\Pi_{\pm}$ are the two Peirce carriers, and the two minimal left ideals, the spinor spaces. In the nilpotent regime $B=0$, $\vec Q\neq0$, there is no eigenvalue decomposition; in the scalar regime $\vec Q=0$, the one-term decomposition is unique but the two-projector refinement is not. In the Hermitian case the projectors are Hermitian, the root is purely imaginary, of the form $\vec{Ζ}=-i\vec u$ for a real unit vector $\vec u$, and the resolution is the spectral theorem of the biquaternion algebra.
 
-The spectrum and the similarity classification are *The Spectrum*, §*The Spectral Criterion* and §*The Similarity Classification*; the coordinate formulas and the projectors are §*The Eigenprojectors* above; the roots and idempotents are *Idempotents*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*; the Clifford dictionary is *The Number Systems as Clifford Algebras*; and the general theory is *The Eigenvalue Decomposition in a Clifford Algebra*.
+The spectrum and the similarity classification are *The Spectrum of a Biquaternion*, §*The Spectral Criterion* and §*The Similarity Classification*; the coordinate formulas and the projectors are §*The Eigenprojectors* above; the roots and idempotents are *The Square Roots of One and the Idempotents of the Biquaternion Algebra*; the Peirce decomposition is *Peirce Decompositions of the Biquaternion Algebra*; the Clifford dictionary is *The Number Systems as Clifford Algebras*; and the general theory is *The Eigenvalue Decomposition in a Clifford Algebra*.
 
 ## Summary of Notation
 
@@ -330,5 +330,5 @@ The spectrum and the similarity classification are *The Spectrum*, §*The Spectr
 - [Why AXF Matrices instead of Pauli and Gamma Matrices](../articles_physics/the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the identification of the biquaternions with $\mathrm{Cl}_{3,0}$ and the volume element.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2001), for the bivectors, the volume element and the spinor ideals.
-- The biquaternion articles of this corpus: *The Biquaternion Algebra*, *The Spectrum*, *Idempotents*, and *Peirce Decompositions of the Biquaternion Algebra*.
+- The biquaternion articles of this corpus: *Introduction to the Algebra of Biquaternions*, *The Spectrum of a Biquaternion*, *The Square Roots of One and the Idempotents of the Biquaternion Algebra*, and *Peirce Decompositions of the Biquaternion Algebra*.
 - Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the Peirce decomposition and the matrix model.

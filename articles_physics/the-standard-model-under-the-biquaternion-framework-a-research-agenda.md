@@ -407,7 +407,7 @@ The article commits throughout to the agenda's central discipline: no section as
 
 - [Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda](quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html) — the colour gap, the ceiling on the gauge algebra, and the three-way classification this article shares.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) — the one-loop non-abelian beta function and the article's own statement that the group, matter, action, and regulator are inputs; the caution against reading a transcription as a derivation.
-- [Modules over the Biquaternion Algebra](../articles_maths/the-category-of-modules.html) and [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the module structure and the compact-subalgebra facts behind the ceiling.
+- [Modules over the Biquaternion Algebra](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) and [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the module structure and the compact-subalgebra facts behind the ceiling.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) and [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the spinor module, the mass term, and the real-structure origin of chirality.
 
 - [Peirce Decompositions of the Biquaternion Algebra](../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html) — the ideal decomposition, distinguished from the chiral and sector decompositions.
