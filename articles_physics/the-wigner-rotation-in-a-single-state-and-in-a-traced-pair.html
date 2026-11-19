@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Wigner Rotation in a Single State and in a Traced Pair — Biquaternion Universe</title>
+  <meta name="description" content="The polar split of a frame change writes it as with Hermitian and unitary. The companion establishes that is the Wigner rotation, that it is an isometry…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-wigner-rotation-in-a-single-state-and-in-a-traced-pair"><strong>The Wigner Rotation in a Single State and in a Traced Pair</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The polar split of a frame change writes it as $\tilde U=\tilde L\tilde R$ with $\tilde L$ Hermitian and $\tilde R$ unitary. The companion establishes that $\tilde R$ is the Wigner rotation, that it is an isometry of the Bures angle while $\tilde L$ is not, and that $\tilde R$ is the part of a frame change the Bures geometry cannot see. This article takes the next step and asks what $\tilde R$ is <em>about</em>. The answer is short and it closes a door: <strong>no single state registers $\tilde R$, and only a comparison does.</strong></p>
+<p>The claim is not that the rotation is unobservable. It is that the rotation is unobservable <em>in a single state</em>, and everything that has been said about it — including the frame dependence of entanglement — needs a second object or a discarded label to have any content at all.</p>
+<p>The findings are stated in advance.</p>
+<ol>
+<li><strong>A rotation of one state moves the vector and changes no invariant.</strong> $\lvert\vec s\rvert$ and $N$ are unchanged to $0$ and to $1.0\times10^{-15}$ over three angles spanning $0.4$ to $3.0$; a rotation is an isometry of the ball and the ball is homogeneous under it.</li>
+<li><strong>State and axes rotated together change nothing.</strong> The image vector is the rotated vector to $1.7\times10^{-16}$, and $\lvert\vec s'\rvert-\lvert\vec s\rvert=0$. So $\tilde R$ is data only relative to something that does not rotate with it.</li>
+<li><strong>A common rotation of every branch of a traced label changes nothing.</strong> With weights $0.7$ and $0.3$ the reduced vector has $\lvert\vec s\rvert=1.000000000000000$ for every angle.</li>
+<li><strong>Unequal rotations on the branches are registered.</strong> The same state with $\tilde R(0)$ on one branch and $\tilde R(\varphi)$ on the other has $\lvert\vec s\rvert=1$, $0.973953117965$, $0.898291137919$, $0.761577310586$, $0.400000000000$ at $\varphi=0$, $0.5$, $1$, $\pi/2$, $\pi$, matching the closed form $\sqrt{(1-w)^{2}\sin^{2}\varphi+(w+(1-w)\cos\varphi)^{2}}$ to twelve digits; the impurity moves from $0$ to $0.210000000000$.</li>
+<li><strong>A pure pair's entanglement is untouched by any local unitary.</strong> The concurrence of a state with $C=0.96$ is $0.960000000000000$ after three arbitrary local rotations, including unequal ones on the two factors.</li>
+<li><strong>A pair's entanglement is changed only by a rotation that varies over a discarded label.</strong> With two branches carrying the same Bell pair and relative rotation $\varphi$, the concurrence is $\lvert\cos\varphi\rvert$ exactly and the purity is $(1+\cos^{2}\varphi)/2$, both to twelve digits.</li>
+<li><strong>So frame-dependent entanglement is a statement about the trace, not about the frame.</strong> $\tilde R$ contributes to entanglement only when it is distributed unequally across a label that is then summed out.</li>
+</ol>
+<p>The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; the impurity is $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$. A rotation by angle $\varphi$ about the unit vector $\vec n$ is written $\mathrm{Rot}_{\vec n}(\varphi)$, with $\tilde R=\mathrm{Rot}_{\vec n}(\varphi)$ the unitary rotor of the same angle. The polar split is $\tilde U=\tilde L\tilde R$. The concurrence of a two-qubit pure state $\psi=(a,b,c,d)$ is $C=2\lvert ad-bc\rvert$, and of a mixed state is the usual $\max(0,\lambda_{1}-\lambda_{2}-\lambda_{3}-\lambda_{4})$ over the roots of $\rho\tilde\rho$.</p>
+<h2 id="what-the-rotation-does-to-one-state">What the Rotation Does to One State</h2>
+<h3 id="it-moves-the-vector-and-nothing-else">It moves the vector and nothing else</h3>
+<p><strong>A rotation sends $\vec s$ to $\mathrm{Rot}_{\vec n}(\varphi)\vec s$ and leaves every invariant of the single state alone.</strong> At $\vec s=(0.3,-0.5,0.6)$, $\lvert\vec s\rvert=0.836660026534076$ and $N=0.075000000000000$ in the original and after rotations of $0.4$, $1.7$ and $3.0$; the worst deviation in $\lvert\vec s\rvert$ is $1.0\times10^{-15}$ and in $N$ it is $0$.</p>
+<p><strong>The reason is that a rotation is an isometry of the ball and the ball is homogeneous under rotations.</strong> Every point of a sphere can be moved to every other by a rotation, so the orbit is the whole sphere, and a sphere has no marked point. There is no functional of one state that a rotation can change, because a rotation generates the whole space of states of a given radius.</p>
+<h3 id="so-the-statement-math65-was-applied-has-no-truth-value-for-one-state">So the statement "$\tilde R$ was applied" has no truth value for one state</h3>
+<p><strong>This is the sharp form of the claim, and it is not the weak one.</strong> The weak form would say that a rotation is hard to detect. The sharp form says that a single state does not carry the information, so there is nothing to detect: a state is a vector in a space whose symmetry group is the rotations, and the question of whether a symmetry was applied before the state was written in the frame is a question about the writing and not about the state.</p>
+<p><strong>Care is needed with the word "unobservable".</strong> A rotation of a spin is observable as a phase in an interference experiment, and the Wigner rotation is observable in the interference between momentum branches. What is not observable is a rotation <em>of a state on its own</em>, and the two statements differ by the presence of a second branch. The rest of the article is about that second branch.</p>
+<h2 id="the-gauge-statement">The Gauge Statement</h2>
+<p><strong>Rotating the state and the axes together changes nothing at all.</strong> The image of $\vec s$ under a rotation of $0.9$ about $\vec n=(1,1,0)/\sqrt2$ is the rotated vector to $1.7\times10^{-16}$, and the modulus is unchanged to $0$. That is the content of "orientation is relational" in one line: only the angle between the state and something else is data.</p>
+<p><strong>So $\tilde R$ has content exactly when something fails to rotate with it.</strong> Two cases exhaust the possibilities. Either there is a second object that does not rotate — a reference state, a second spin, a Hamiltonian with a fixed axis — and then $\tilde R$ is registered as a <em>relative</em> orientation. Or there is a label over which the rotation varies and which is then discarded, and then $\tilde R$ is registered in the reduced state. Both cases need two things; neither needs one.</p>
+<h2 id="what-a-comparison-registers">What a Comparison Registers</h2>
+<h3 id="a-rotation-that-varies-over-a-discarded-label">A rotation that varies over a discarded label</h3>
+<p><strong>Take one spin, two branches, unequal weights, and a different rotation on each branch.</strong> The state is $\sqrt{w}\,\lvert\uparrow\rangle\lvert p_a\rangle+\sqrt{1-w}\,\lvert\uparrow\rangle\lvert p_b\rangle$ with $w=0.7$, the branch $a$ is left alone, and branch $b$ is rotated by $\varphi$ about $\hat x$; the label is then traced out.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\varphi$</th>
+<th>$\lvert\vec s\rvert$</th>
+<th>$N$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$1.000000000000$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$0.5$</td>
+<td>$0.973953117965$</td>
+<td>$0.012853831002$</td>
+</tr>
+<tr>
+<td>$1.0$</td>
+<td>$0.898291137919$</td>
+<td>$0.048268257884$</td>
+</tr>
+<tr>
+<td>$\pi/2$</td>
+<td>$0.761577310586$</td>
+<td>$0.105000000000$</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>$0.400000000000$</td>
+<td>$0.210000000000$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The closed form is $\lvert\vec s\rvert^{2}=(1-w)^{2}\sin^{2}\varphi+\bigl(w+(1-w)\cos\varphi\bigr)^{2}$, matched to twelve digits at all five angles.</strong> Nothing in it refers to the rotation as an absolute object; it refers to the <em>difference</em> between the rotation applied on one branch and the rotation applied on the other.</p>
+<p><strong>A common rotation moves nothing.</strong> With $\varphi$ the same on both branches, $\lvert\vec s\rvert=1.000000000000000$ at $\varphi=0$, $0.7$ and $2.2$. The state is a pure state whose vector has merely rotated inside the frame, and the impurity does not move, which is the previous section's statement in the reduced language.</p>
+<h3 id="the-pattern">The pattern</h3>
+<p><strong>What the reduced state registers is the variance of $\tilde R$ over the discarded label, and only that.</strong> A constant $\tilde R$ is a relabelling; a varying $\tilde R$ is a physical operation, because it correlates the spin with the label. This is decoherence with a unitary cause, and it is the only mechanism by which a frame change reaches a reduced state.</p>
+<h2 id="what-follows-for-frame-dependent-entanglement">What Follows for Frame-Dependent Entanglement</h2>
+<h3 id="a-local-unitary-cannot-change-a-pure-pairs-concurrence">A local unitary cannot change a pure pair's concurrence</h3>
+<p><strong>The concurrence of a pure two-qubit state is $C=2\lvert ad-bc\rvert$, which is invariant under $U_1\otimes U_2$ for any unitaries.</strong> Starting from $(0.8,0,0,0.6)$ with $C=0.960000000000000$, three arbitrary pairs of local rotations — including the unequal pair $(2.1,0.4)$ — return $0.960000000000000$ exactly. This is the Schmidt decomposition's statement, and it holds for rotations as for any other unitaries.</p>
+<p><strong>So a Wigner rotation applied to one spin, or to both with the same angle, does nothing to the entanglement.</strong> A claim that a boost changes the entanglement of a pair must therefore explain how the boost does something other than apply one unitary to each factor.</p>
+<h3 id="the-pair-that-does-change">The pair that does change</h3>
+<p><strong>Distribute the rotation over a label and discard the label.</strong> The state is $\bigl(\lvert\Phi\rangle\lvert p_a\rangle+\lvert\Phi\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\Phi\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{Rot}_{\hat z}(\varphi)$ on both; the label is traced out.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\varphi$</th>
+<th>concurrence</th>
+<th>purity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$1.000000000000$</td>
+<td>$1.000000000000$</td>
+</tr>
+<tr>
+<td>$0.3$</td>
+<td>$0.955336489126$</td>
+<td>$0.956333903727$</td>
+</tr>
+<tr>
+<td>$0.6$</td>
+<td>$0.825335614910$</td>
+<td>$0.840589438619$</td>
+</tr>
+<tr>
+<td>$1.0$</td>
+<td>$0.540302305868$</td>
+<td>$0.645963290863$</td>
+</tr>
+<tr>
+<td>$\pi/2$</td>
+<td>$0.000000000000$</td>
+<td>$0.500000000000$</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>$1.000000000000$</td>
+<td>$1.000000000000$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Both closed forms are exact: the concurrence is $\lvert\cos\varphi\rvert$ and the purity is $(1+\cos^{2}\varphi)/2$, matched to twelve digits.</strong> The state is a mixture of two Bell states related by a relative rotation, and the mixture of two orthogonal Bell states at $\varphi=\pi/2$ is the maximally mixed state, which has neither entanglement nor purity.</p>
+<p><strong>The recovery at $\varphi=\pi$ is not an error.</strong> A rotation by $\pi$ on a spin is $-i\sigma_{z}$, so on both factors it is $-\sigma_{z}\otimes\sigma_{z}$, and $\sigma_{z}\otimes\sigma_{z}$ acts as $+1$ on $\lvert\Phi\rangle$; the two branches are then the same ray and the state is pure again. The concurrence is therefore not monotone in the frame's rotation, and a reader who expects monotonicity will misread the table.</p>
+<h3 id="the-corrected-statement-about-frames">The corrected statement about frames</h3>
+<p><strong>Frame-dependent entanglement is a property of the trace, not of the frame.</strong> In the table the frame change is a rotation applied to both spins of a branch, which is a local unitary and cannot change entanglement on its own; what changes the entanglement is that the rotation differs between branches while the branch label is summed out. <strong>The frame supplies the variation and the trace supplies the loss.</strong> Both are needed, and neither alone is enough.</p>
+<p><strong>This matters for how the result is stated in the literature.</strong> A boost is momentum dependent, and the Wigner rotation inherits the dependence; the spin state of a moving particle is entangled with its momentum, and a boost therefore applies different rotations to different momentum components. The entanglement that changes is the entanglement of the reduced spin state, and the momentum is what is discarded. The phrase "entanglement depends on the frame" is thus elliptical for "entanglement depends on the frame <em>and</em> on which degrees of freedom are traced out", and the second clause is the one that does the work.</p>
+<h2 id="objections">Objections</h2>
+<p><strong>The objection is that this makes the Wigner rotation pure gauge, and it is observed.</strong> It is not pure gauge, and the objection conflates two absences. The rotation is unregistered by a single state, and it is registered by any comparison. Interference between two momentum branches is a comparison: the relative phase between them carries the rotation, and the corpus's Wigner angle is measured exactly there.</p>
+<p><strong>A second objection is that the $\lvert\cos\varphi\rvert$ result is about tracing and not about frames.</strong> That is what the article claims, and it is the reason the section exists. The rotation alone cannot change a concurrence; a rotation plus a discarded label can; the physics of frame-dependent entanglement is in the second term.</p>
+<p><strong>A third objection is that a state which registers nothing is not worth calling oriented.</strong> Agreed, and the objection names the point. Orientation is not a property a state has; it is a relation between a state and something else, and the article's contribution is to say what the something else has to be.</p>
+<h2 id="what-is-not-claimed">What Is Not Claimed</h2>
+<p><strong>It does not claim that the Wigner rotation is unobservable.</strong> It claims that one state does not register it. Interference, and the relative orientation of two states, do.</p>
+<p><strong>It does not claim that entanglement is subjective.</strong> The concurrence in the table is a property of the reduced density matrix and is as objective as any other number. What is frame-dependent is which reduced density matrix one is discussing.</p>
+<p><strong>It does not re-derive the Wigner angle.</strong> The companion has the closed form, the axis and the numerical checks; this article takes the angle as given and asks what it is about.</p>
+<p><strong>It does not settle which degrees of freedom a real experiment traces out.</strong> That is a question about the apparatus, and the article's formulas hold for any choice.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>A rotation of one state is an isometry of the ball and changes no invariant</strong>: $\lvert\vec s\rvert$ and $N$ are fixed, to $1.0\times10^{-15}$ and to $0$. A single state therefore does not register $\tilde R$, and the statement "$\tilde R$ was applied" has no truth value for it.</p>
+<p><strong>Rotating the state and the axes together changes nothing</strong> — the image vector is the rotated vector to $1.7\times10^{-16}$ — so only a relative orientation is data.</p>
+<p><strong>A rotation that varies over a discarded label is registered.</strong> With weights $0.7$ and $0.3$ the reduced modulus runs from $1$ to $0.400000000000$ and the impurity from $0$ to $0.210000000000$ as the relative angle runs from $0$ to $\pi$, matching a closed form to twelve digits; a common rotation moves nothing.</p>
+<p><strong>A pure pair's concurrence is untouched by any local unitary</strong>, $0.960000000000000$ after three arbitrary local rotations, so a boost that acts as one unitary per factor cannot change entanglement.</p>
+<p><strong>A pair's concurrence does change when the rotation varies over a traced label</strong>: $\lvert\cos\varphi\rvert$ exactly, with purity $(1+\cos^{2}\varphi)/2$, recovering to one at $\varphi=\pi$ because the two branches become the same ray.</p>
+<p><strong>Frame-dependent entanglement is a statement about the trace.</strong> The frame supplies the variation of $\tilde R$; the trace supplies the loss; neither alone is enough.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde U=\tilde L\tilde R$</td>
+<td>the polar split of a frame change</td>
+</tr>
+<tr>
+<td>$\tilde R=\mathrm{Rot}_{\vec n}(\varphi)$</td>
+<td>the unitary factor; the Wigner rotation</td>
+</tr>
+<tr>
+<td>$\vec s\mapsto\mathrm{Rot}_{\vec n}(\varphi)\vec s$</td>
+<td>the action on one state</td>
+</tr>
+<tr>
+<td>$N=\tfrac14(1-\lvert\vec s\rvert^{2})$</td>
+<td>the impurity; unchanged by any rotation</td>
+</tr>
+<tr>
+<td>$w$</td>
+<td>the weight of the first branch in the traced example</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>the relative rotation between two branches</td>
+</tr>
+<tr>
+<td>$C=2\lvert ad-bc\rvert$</td>
+<td>the concurrence of a pure two-qubit state</td>
+</tr>
+<tr>
+<td>$\lambda_{i}$</td>
+<td>the roots of $\rho\tilde\rho$ in the mixed concurrence</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>E. P. Wigner, "On unitary representations of the inhomogeneous Lorentz group", <em>Annals of Mathematics</em> <strong>40</strong> (1939) 149–204 — the little group and the rotation a boost induces</li>
+<li>A. Peres and D. R. Terno, "Quantum information and relativity theory", <em>Reviews of Modern Physics</em> <strong>76</strong> (2004) 93–123 — frame dependence of entanglement, and what a boost does to a reduced state</li>
+<li>R. M. Gingrich and C. Adami, "Quantum entanglement of moving bodies", <em>Physical Review Letters</em> <strong>89</strong> (2002) 270402 — the spin-momentum entanglement that a boost redistributes</li>
+<li>P. M. Alsing and G. J. Milburn, "Lorentz invariance of entanglement", <em>Quantum Information and Computation</em> <strong>2</strong> (2002) 487–512 — the invariance under a common unitary and its failure under a varying one</li>
+<li>M. A. Nielsen and I. L. Chuang, <em>Quantum Computation and Quantum Information</em>, Cambridge University Press, 2000 — the Schmidt decomposition, local unitaries and concurrence</li>
+<li>W. K. Wootters, "Entanglement of formation of an arbitrary state of two qubits", <em>Physical Review Letters</em> <strong>80</strong> (1998) 2245–2248 — the concurrence</li>
+<li><em>The Wigner Angle of Two Boosts</em> — the Wigner angle, its axis and the two readings</li>
+<li><em>Bures Isometries of the Bloch Ball: Rotations, the Slice and the Conformal Boundary</em> — the polar split and $\tilde R$ as the Bures isometry</li>
+<li><em>Impurity in a Boosted Frame: The Invariant and the Read Value</em> — the trace condition, the projection and the read impurity</li>
+<li><em>Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form</em> — the corpus's treatment of the boosted pair</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

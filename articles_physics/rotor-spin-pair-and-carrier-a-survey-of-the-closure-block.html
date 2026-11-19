@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotor, Spin, Pair and Carrier: A Survey of the Closure Block — Biquaternion Universe</title>
+  <meta name="description" content="This entry reads the block Rotors, Spins, Carriers and Closures of the mathematical category: four articles, in the order rotor, spin of a rotor, spin of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="rotor-spin-pair-and-carrier-a-survey-of-the-closure-block"><strong>Rotor, Spin, Pair and Carrier: A Survey of the Closure Block</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>This entry reads the block <em>Rotors, Spins, Carriers and Closures</em> of the mathematical category: four articles, in the order rotor, spin of a rotor, spin of a pair, carriers and closures.</strong> The first three derive the three spins from the rotor group; the fourth names, for each spin, the subspace that carries it and the subspace a field takes its values in. The last of them answers a single question — how the rotations act on the algebra, and into what pieces the algebra falls — and its answer is three subspaces of real dimensions one, two and three, carrying the weights zero, one half and one. Everything below is the reading of that answer, and the reading has one sentence at its centre: a field is a function with values in the closure of its carrier, and the spin of the field is the weight of the carrier.</p>
+<p><strong>The first claim is that the spin is a spectrum and not a name.</strong> The carrier is defined by an action, the action has a generator, and the generator has eigenvalues. The weights are the real numbers $\lambda$ such that $i\lambda$ is an eigenvalue of the generator on the carrier, and the spin is the largest weight. So $s=\tfrac12$ is a statement about the spectrum of one real operator on a real plane, and the identity $2s+1=\dim_\mathbb{R}$ of the mathematics is a relation between two readings of one string of eigenvalues and not between two independent numbers. Verified: on the plane the generator acts as the scalar $-\tfrac i2$ to $8.3\times10^{-17}$, and on the vector part as the cross product with the axis to $0$.</p>
+<p><strong>The second claim is that there are three carriers and no more, and that the reason is one line of module theory.</strong> The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, which is simple, so it has one isomorphism class of simple modules and every module is a sum of copies of it. The left action therefore sees one type, of complex dimension two, and its weight is $\tfrac12$. The adjoint action is an action of the group of invertibles, and it adds the fixed centre and the three-dimensional traceless part, whose weights are $0$ and $1$. A fourth value would need a second simple module, and there is none.</p>
+<p><strong>The third claim is that a carrier is a module and not a subspace, and that the passage from one to the other is a step of its own.</strong> The step is the closure. It is not one rule applied four times: the line closes by being made complex, the plane by the transverse direction, the spinor space by the second idempotent, and the vector part by the fixed line of the conjugation. The two lists of dimensions are therefore different, and the difference is the content of the entry: the carriers are $1,2,3$ and the spaces a field takes values in are $2,4,4$, with $8$ for the second step of the half-integer case. The arithmetic says the two lists are not one: $1+2+3=6$ while the algebra has real dimension $8$, and $2+4+8+4=18$, which counts the same algebra several times.</p>
+<p><strong>The fourth claim is that the closure performs two repairs and not a third.</strong> It restores invariance, which the plane does not have: no real subspace of dimension two is invariant under the whole rotation group, and the smallest invariant real subspace containing the plane has dimension four. It restores the norm, which the plane does not have either, and here the failure is total: the norm vanishes identically on a minimal left ideal, because every element of one has rank at most one. Verified on one hundred random elements of each ideal: the largest value of $\lvert N\rvert$ is $1.4\times10^{-15}$. What the closure does not repair is that vanishing: the norm of a pair of values is the pairing of the two, $N(\tilde\Xi_L+\tilde\Xi_R)=2\,\mathrm{Sc}(\tilde\Xi_L\tilde\Xi_R^{\natural})$, verified to $4.4\times10^{-15}$, so a single value of a spin-half field has no norm at any point of space-time and never acquires one. The mass of such a field is a coupling and not a modulus.</p>
+<p><strong>The fifth claim is that the three closures are not a decomposition of the algebra.</strong> The three carriers are three readings of one eight-dimensional object, not three summands of it. The only two decompositions available are the sector split $\mathbb{B}=\mathbb{B}_\Psi\oplus\mathbb{B}_\Phi$ and the Peirce split $\mathbb{B}=S_+\oplus S_-$ at an axis, and neither of them is the list of carriers.</p>
+<p><strong>The sixth claim is that the three carriers are the three answers to one question about an equation.</strong> Which subspaces of the algebra does the operator of a field equation preserve? A central operator preserves every complex subspace and therefore chooses nothing; the choice is made by the spin. A left multiplier preserves exactly the left ideals, and a sector equation preserves the sector. The three carriers, reached from the representation theory, are the same three spaces that the Klein–Gordon, Dirac and Proca operators select, and the two routes agree.</p>
+<p><strong>The first objection is that this is the representation theory of $\mathrm{SU}(2)$ and says nothing new.</strong> The values are standard, and the entry does not claim otherwise. What is not standard is that the carriers are subspaces of the algebra itself, so that all three live inside one eight-dimensional object and the three actions are actions of that object on itself. The consequence is the item the standard theory does not have: the norm vanishes identically on the half-integer carrier. That is a statement about the algebra, not about a module over it, and it is the reason the closure exists.</p>
+<p><strong>The second objection is that the two lists of dimensions are a bookkeeping muddle.</strong> They are two objects and the entry keeps the two words apart throughout: a carrier is a module, a closure is a subspace, and the words line, plane and vector part name the carriers while centre, spinor space, bispinor space and material sector name the closures. The lists differ because the passage is not free, and the section on the closure states what each passage costs.</p>
+<p><strong>The third objection is that a match between three algebraic labels and the observed spins is a prediction.</strong> It is not, and the mathematics does not make it. The algebra supplies the set $\{0,\tfrac12,1\}$; it does not say which particle carries which spin, and it does not say why the list is realised. The entry states the match, states its boundary, and does not lean on it.</p>
+<p><strong>The letters.</strong> The algebra is $\mathbb{B}$ with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and $\vec e_k^{2}=-e_t$, the central imaginary is $i$ with $i^{2}=-e_t$, and an element is $\tilde Q=Q_te_t+\vec Q$ with $Q_\mu$ complex. The star is ${}^{*}$, the natural conjugation is ${}^{\natural}$, and the norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$. The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$; the centre is $\mathbb{B}_C=\mathbb{C}e_t$; the sectors are $\mathbb{B}_\Psi=\{X^{*}=X\}$ and $\mathbb{B}_\Phi=\{X^{*}=-X\}$. At a unit real axis $\vec u$ the idempotents are $\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$, the plane is $\Sigma=\mathbb{C}\tilde\Pi_+$, and the ideals are $S_\pm=\mathbb{B}\tilde\Pi_\pm$. The generator is $A=\tfrac12\vec u$ and the rotor is $\tilde u=\cos\tfrac\theta2\,e_t+\sin\tfrac\theta2\,\vec u$. A representation is $\rho_{\mathrm{rep}}$, a weight is $\lambda$, the spin is $s$, and the quadratic element is $C=\sum_k\tilde S_k^{2}$ with $\tilde S_k=\tfrac12 i\vec e_k$.</p>
+<p><strong>Boundaries.</strong> The definition, the classification, the criterion, the quadratic element and the four closure rules are the mathematics' <em>From the Spin to the Carriers and the Closures</em>; the rotor group and the two derivations of the spins are <em>The Rotor Group via $4\times4$ Real Matrices</em>, <em>From the Rotor to the Spin of the Rotor</em> and <em>From the Spin of the Rotor to the Spin of a Pair of Operators Acting on Two Sides</em>; the module theory behind the count is <em>The Category of Modules</em>; the Peirce basis and the corners are <em>The Peirce Decomposition of the Biquaternion Algebra</em>; the idempotents and their conjugacy are <em>Idempotents</em>; the polar form of the norm that carries the completeness proof is <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>; the averaging argument for compact groups is <em>Representations of Groups</em>. The three carriers are read one at a time in the three entries that follow this one, <em>Introduction to the Spin-Zero Centre Subspace</em>, <em>Introduction to the Spin-Half Bispinors Spaces</em> and <em>Introduction to the Spin-One Anti-Hermitian Subspace</em>. The reading of the carrier by a field equation is <em>The Klein–Gordon Equation in Biquaternionic Form</em>, <em>The Dirac Equation in Biquaternionic Form</em> and <em>The Proca Equation: Massive Spin 1 in Biquaternionic Form</em>. No dynamics, no action principle, no mass value and no quantum postulate appear below.</p>
+<h2 id="the-source-table">The Source Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mathematical content</th>
+<th>source article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the rotor group $S^3\to SO(\mathfrak{k})$ with kernel $\{\pm e_t\}$</td>
+<td><a href="../articles_maths/the-rotor-group-via-4x4-real-matrices.html">The Rotor Group via $4\times4$ Real Matrices</a></td>
+</tr>
+<tr>
+<td>the left-regular generators $L_k^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, the Casimir $-3\,\mathrm{I}_4$, the spin $\tfrac12$ from $s(s+1)=\tfrac34$</td>
+<td><a href="../articles_maths/from-the-rotor-to-the-spin-of-the-rotor.html">From the Rotor to the Spin of the Rotor</a></td>
+</tr>
+<tr>
+<td>the pair on two sides, the two Casimirs, the total Casimir and the addition rule $\tfrac12\otimes\tfrac12=0\oplus1$</td>
+<td><a href="../articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html">From the Spin of the Rotor to the Spin of a Pair of Operators Acting on Two Sides</a></td>
+</tr>
+<tr>
+<td>the rotation action and its generator, the three actions, the definition of a carrier, the two identities, the criterion of irreducibility by the weight string, the three carriers with their spectra, the completeness proof, the quadratic element, the four closure rules</td>
+<td><a href="../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a></td>
+</tr>
+<tr>
+<td>the simple module, the isomorphism $\mathbb{B}\cong\operatorname{End}_\mathbb{C}(S)$ and $\mathbb{B}\cong S\oplus S$, the classification of the modules</td>
+<td><a href="../articles_maths/the-category-of-modules.html">The Category of Modules</a></td>
+</tr>
+<tr>
+<td>the two idempotents of an axis, the Peirce basis, the four corners, the minimal left ideals and the nilpotents</td>
+<td><a href="../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the roots of one, the idempotents, their conjugacy and the families indexed by the axis</td>
+<td><a href="../articles_maths/idempotents.html">Idempotents</a></td>
+</tr>
+<tr>
+<td>the four forms of the twelve products, the Gram matrices and the inertias</td>
+<td><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a></td>
+</tr>
+<tr>
+<td>the compact group, complete reducibility, the averaging argument and the highest-weight string</td>
+<td><a href="../articles_maths/representations-of-groups.html">Representations of Groups</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth row owns the section, and the three above it give the spins that the section then places.</strong> The other six supply the tools the section uses and does not prove: the module category, which makes the count of types a theorem; the Peirce basis, which produces the ideal from the axis; the idempotents, which make the family of ideals a family and not a choice; the polar form of the norm, which carries the completeness proof and does the work a trace form does in a treatment by matrices; and the compactness of the group, which makes the reducibility argument work without a finiteness hypothesis.</p>
+<h2 id="the-results-in-brief">The Results in Brief</h2>
+<p><strong>The definition.</strong> A carrier is a nonzero real subspace of $\mathbb{B}$ that is invariant and irreducible under one of the algebra's own actions: left multiplication, or conjugation by an invertible element. The action is part of the carrier.</p>
+<p><strong>The route.</strong> The three spins come from the rotor group alone, before any subspace is named. One rotor: on the quaternion layer the left-regular generators satisfy $L_k^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, so the Casimir is $-3\,\mathrm{I}_4$, and $s(s+1)=\tfrac34$ gives $s=\tfrac12$. A pair acting on two sides: each factor carries $\tfrac12$, the addition rule gives $\tfrac12\otimes\tfrac12=0\oplus1$, and the total Casimir on the two-sided carrier has the spectrum $\{0,-2,-2,-2\}$. So $0$, $\tfrac12$ and $1$ are fixed first, and the subspaces are read afterwards.</p>
+<p><strong>The three carriers.</strong> The line $\mathbb{R}e_t$, of real dimension $1$, under the trivial action, with weight $0$ and spin $0$. The plane $\Sigma=\mathbb{C}\tilde\Pi_+(\vec u)$, of real dimension $2$, under left multiplication by the circle about $\vec u$, with weights $\pm\tfrac12$ and spin $\tfrac12$. The vector part $\mathfrak{k}$, of real dimension $3$, under the conjugation, with weights $\pm1,0$ and spin $1$. The dimensions are $1,2,3$ and the identity $2s+1=\dim_\mathbb{R}$ holds in the three cases.</p>
+<p><strong>The mechanism.</strong> Two identities carry every computation: $\vec u\tilde\Pi_+(\vec u)=-i\tilde\Pi_+(\vec u)$, and $[\tfrac12\vec u,\vec v]=\vec u\times\vec v$ for $\vec v\in\mathfrak{k}$. The first gives the scalar $-\tfrac i2$ on the plane, the second gives the cross product on the vector part. The commutator consumes the axis twice and the multiplication consumes it once, and that is the factor of two between the two spectra.</p>
+<p><strong>The criterion.</strong> A weight string that is simple and spaced by one is the string of an irreducible module, of complex dimension $2s+1$, where $s$ is its largest value. The three strings $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ pass the test, so the three carriers are irreducible; a repeated weight is a direct sum, which is what the whole algebra shows, since its string is $\pm\tfrac12$ with multiplicity two.</p>
+<p><strong>The full turn.</strong> The operator of a full rotation is $+1$ on the line and on the vector part and $-1$ on the plane, that is $(-1)^{2s}$. On the plane the $-1$ is visible in the plane itself: a full rotation of space is a half turn of the plane.</p>
+<p><strong>The quadratic element.</strong> $C=\sum_k\tilde S_k^{2}=\tfrac34e_t$, and its values in the three modules are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$.</p>
+<p><strong>The completeness.</strong> Three types and no fourth, from the simplicity of $M_2(\mathbb{C})$ for the left action and from the compactness of the group for the conjugation. The two halves of the proof are different arguments and neither is a count of dimensions.</p>
+<p><strong>The two repairs.</strong> Invariance: no real two-dimensional subspace is invariant under the whole group, and the smallest invariant real subspace containing the plane is the ideal $S_+$, of real dimension $4$; verified, the residual of a transverse left multiplication on the plane is $2.24$ and the dimension of the invariant closure is $4$. Norm: the norm vanishes identically on each ideal, and the norm of a pair is twice the cross pairing, $N(\tilde\Xi_L+\tilde\Xi_R)=2\,\mathrm{Sc}(\tilde\Xi_L\tilde\Xi_R^{\natural})$.</p>
+<p><strong>The non-repair.</strong> A single value of a spin-half field has $N=0$ everywhere. The closure gives a norm to the pair and not to the value, so the mass of the field is a coupling of two values and never a modulus of one.</p>
+<p><strong>The closures.</strong> The line closes to the centre, $\dim_\mathbb{R}2$; the plane to the spinor space $S_+$, $\dim_\mathbb{R}4$; the spinor space to a bispinor space, $\dim_\mathbb{R}8$; the vector part to the anti-Hermitian space $\mathbb{B}_\Phi$, $\dim_\mathbb{R}4$, which the physics calls the material sector.</p>
+<p><strong>No fourth.</strong> The elementary list is closed on $\mathbb{B}$ alone. Higher spin requires a tensor product, and the algebra does not forbid it; it forbids only a fourth elementary value.</p>
+<p><strong>The match.</strong> The three values are the spins the established particles realise: the Higgs boson $0$, the six quarks and six leptons $\tfrac12$, the photon, the $W^{\pm}$, the $Z$ and the eight gluons $1$. The hadrons of higher spin are composites, and the massless spin-one field keeps two of its three states.</p>
+<h2 id="what-a-carrier-is">What a Carrier Is</h2>
+<p><strong>The two actions.</strong> The algebra acts on itself in two ways, and the classification uses both.</p>
+<p>$$
+L_X(Y)=XY,\qquad \mathrm{Ad}_u(Y)=uYu^{*},
+$$</p>
+<p>the first for every element $X$ and the second for every invertible $u$, that is for $uu^{*}=e_t$. The first is multiplicative on the whole algebra and needs no hypothesis; the second is an action of the group of invertibles by automorphisms, and it needs the unit condition, since $u^{-1}=u^{*}$ is what makes $\mathrm{Ad}_{uv}=\mathrm{Ad}_u\mathrm{Ad}_v$ hold. Right multiplication adds no type, because $\mathbb{B}$ is a full matrix algebra and left and right ideals correspond; and the bracket $\operatorname{ad}_X=L_X-R_X$ is the derived form of the second action, so a carrier of the conjugation at the identity is a carrier of the bracket.</p>
+<p><strong>The definition.</strong> A <strong>carrier</strong> is a nonzero real subspace $W\subseteq\mathbb{B}$ that is invariant and irreducible under one of these two actions. The action is part of the carrier, because the same subspace can be reducible for one and irreducible for the other, and there are examples at hand in both directions. The centre $\mathbb{B}_C$ is fixed pointwise by the conjugation and is therefore reducible for it: it is two real lines, each invariant. The vector part $\mathfrak{k}$ is irreducible for the conjugation and is not even invariant under left multiplication, since $i\vec e_x$ leaves it. So the word carrier without the action is not a word.</p>
+<p><strong>Why the action is part of the definition.</strong> The reason is not pedantry. The question a field theory asks is which subspaces survive the operator of its equation, and the operator is a multiplication or a conjugation and not an abstract map. A subspace can be minimal for one action and not closed for the other, and the closure of the later section is exactly the passage from a subspace that is minimal for a circle of rotations to one that survives an arbitrary multiplication. If the action were not part of the carrier, that passage would be invisible.</p>
+<p><strong>The three actions and the three carriers.</strong> Three representations occur, and each has one carrier.</p>
+<p>The <strong>trivial action</strong> on the real line $\mathbb{R}e_t$: the conjugation fixes $e_t$, since $ue_tu^{*}=e_t$ for every invertible element, so the line is fixed pointwise and the operator of the generator is zero.</p>
+<p>The <strong>spinor action</strong> on the plane $\Sigma=\mathbb{C}\tilde\Pi_+(\vec u)$: left multiplication, restricted to the circle of rotors about the axis $\vec u$. It acts on the plane by a phase of half the angle, which is where the half-integer weight comes from.</p>
+<p>The <strong>adjoint action</strong> on the vector part $\mathfrak{k}$: the conjugation by the whole group of invertibles, which preserves $\mathfrak{k}$ and preserves the form, so it is a homomorphism onto $SO(\mathfrak{k})$ with kernel $\{\pm e_t\}$.</p>
+<p><strong>Irreducibility means two different things in the two cases, and the difference is the point.</strong> For the trivial action every real subspace is invariant, so irreducible means one-dimensional: the carrier of spin zero is a line, and the centre, which has real dimension two, is reducible and therefore not a carrier. For a nontrivial action irreducibility is a real condition, and the mathematics turns it into a reading of the spectrum by the criterion of the next section but one.</p>
+<p><strong>The generator.</strong> The generator along the axis is $A(\vec u)=\tfrac12\vec u$, a real pure element, and the representation of the rotor is its exponential,</p>
+<p>$$
+\rho_{\mathrm{rep}}(\tilde u)=\exp\bigl(\theta\,\rho_{\mathrm{rep}}(A(\vec u))\bigr),
+$$</p>
+<p>with a real operator and a real exponent. The halved angle of the rotor is not inserted into this formula; it is already in the element, since $\tilde u=\cos\tfrac\theta2+\sin\tfrac\theta2\vec u=\exp(\tfrac\theta2\vec u)$.</p>
+<p><strong>The weights.</strong> The <strong>weights</strong> of a carrier are the real numbers $\lambda$ such that $i\lambda$ is an eigenvalue of $\rho_{\mathrm{rep}}(A(\vec u))$ on the carrier's space, counted with multiplicity; the <strong>spin</strong> is the largest of them. The definition is well posed for two reasons, and the mathematics proves both. The weights are real, because the three operators are real-linear with purely imaginary eigenvalues: zero on the line, the scalar $-\tfrac i2$ on the plane, and the cross product on the vector part. And the weights do not depend on the axis, because the operators at two axes are similar, the similarity being the conjugation by a rotor that carries one axis to the other.</p>
+<p><strong>What the definition does not use.</strong> No angle, no array and no coordinate. The spin is read at the identity of the group, and the only place an angle enters is the full turn, where it enters as $2\pi$.</p>
+<h2 id="the-route-a-rotor-a-pair-and-three-spins">The Route: a Rotor, a Pair and Three Spins</h2>
+<p><strong>The rotor.</strong> A rotation of the pure part is a real-linear map that preserves the form and has determinant one, and the rotors are the unit quaternions $S^3=\{\tilde q:N(\tilde q)=1\}$. The map $S^3\to SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$, so a rotation has two rotors. Read on the quaternion layer $\mathbb{H}=\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ as a real space of dimension four, left multiplication by $\vec e_k$ is a real operator $L_k$, and the three satisfy</p>
+<p>$$
+L_k^2=-\mathrm{I}_4,\qquad [L_x,L_y]=2L_z\quad\text{and cyclically.}
+$$</p>
+<p>Verified on the layer: the three squares are $-\mathrm{I}_4$ to $0$, and the bracket identity to $0$.</p>
+<p><strong>Part A: one rotor, and the spin follows from a sum of squares.</strong> The generators of the action are the halved ones, $A_k=\tfrac12\vec e_k$, and with them the bracket is standard, $[A_x,A_y]=A_z$. The sum of their squares is a scalar,</p>
+<p>$$
+\sum_kL_k^2=-3\,\mathrm{I}_4,\qquad \sum_kA_k^2=-\tfrac34\,\mathrm{I}_4,
+$$</p>
+<p>verified to $0$. On a carrier of spin $s$ the same sum is $-s(s+1)$, so $s(s+1)=\tfrac34$ and the spin is $\tfrac12$. The number is read from one sum of squares on one real space of dimension four.</p>
+<p><strong>Part B: two rotors, and the other two spins from an addition rule.</strong> One factor on one side is not an action by automorphisms, since $L_X(YZ)=XYZ$ while $L_X(Y)L_X(Z)=XYXZ$: the two displays carry one copy of $X$ and two. A two-sided product carries one copy on each side, so a pair of rotors acts by $X\mapsto\tilde qX\tilde p$, and the diagonal generator is the difference of the two families,</p>
+<p>$$
+A_k^{\mathrm{tot}}=A_k-A_k',\qquad A_k'=\tfrac12R_{\vec e_k},
+$$</p>
+<p>which satisfies the standard bracket, because the minus sign of the right bracket cancels the minus sign of the difference. Each factor carries $\tfrac12$, and the addition rule for the labels of the rotor group gives</p>
+<p>$$
+\tfrac12\otimes\tfrac12=0\oplus1 .
+$$</p>
+<p><strong>The check by the total Casimir.</strong> On the two-sided carrier, of real dimension four, the total Casimir has spectrum $\{0\}$ once and $\{-2\}$ three times; on the tensor carrier, of real dimension sixteen, $0$ four times and $-2$ twelve times. Both verified. The equation $-j(j+1)\in\{0,-2\}$ has the two solutions $j=0$ and $j=1$, so the pair carries $0$ and $1$ and nothing else.</p>
+<p><strong>The three spins.</strong> One rotor gives $\tfrac12$, a pair gives $0$ and $1$, and the three are the whole list. The next question is which subspace of $\mathbb{B}$ of real dimension $2s+1$ carries each of them, and it is answered in <em>The Carriers</em>, after the criterion.</p>
+<p><strong>The quadratic element.</strong> The same three numbers are values of one element of the algebra. With $\tilde S_k=\tfrac i2\vec e_k$ the quadratic element is $C=\sum_k\tilde S_k^{2}=\tfrac34e_t$, verified, and its values on the three carriers are $0$, $\tfrac34$ and $2$, which are $s(s+1)$ at $s=0,\tfrac12,1$. The element is central and the values are those of the composed operator, so the algebra element and the operator are two objects; the mathematics says so in one remark, and the entry does not need more.</p>
+<h2 id="the-criterion">The Criterion</h2>
+<p>Irreducibility is the one property of a carrier that no dimension supplies. The mathematics replaces the case-by-case check by one test, and the test is worth stating on its own because it is what makes the word spin a spectral word.</p>
+<p><strong>The theorem.</strong> Let $V$ be a finite-dimensional complex module for the rotation algebra, and suppose the weights of $\rho_{\mathrm{rep}}(A(\vec u))$ on $V$ are simple and spaced by one, the largest being $s$. Then $V$ is irreducible, $s$ is its highest weight, and $\dim_\mathbb{C}V=2s+1$.</p>
+<p><strong>The proof in one paragraph.</strong> The group is compact, so $V$ splits into irreducibles. On an irreducible the weights form one string, symmetric about zero and spaced by one: the module is generated by an eigenvector of the largest weight, and the two ladder elements built on an oriented pair completing the axis raise and lower the weight by one, or annihilate at the ends. A string that is symmetric and spaced by one contains $0$ exactly once, so the multiplicity of the weight $0$ on $V$ is the number of its summands, and the hypothesis makes that number one.</p>
+<p><strong>What the test buys.</strong> The three strings $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ are simple and spaced by one, so the three carriers are irreducible and their complex dimensions after complexification are $1,2,3$. The largest weight is read from the string and the length of the string is the complex dimension, so a carrier is determined in both respects by its spectrum, and $2s+1=\dim$ is a relation between two readings of one string.</p>
+<p><strong>What a repeated weight means.</strong> A weight that occurs twice is a direct sum. The whole algebra under left multiplication has the string $\pm\tfrac12$ with multiplicity two, and the reason is $\mathbb{B}=S_+\oplus S_-$: two carriers of one type, not two types. This is why the criterion is a statement about multiplicities and not only about the set of values, and it is the sentence that keeps the corpus from counting the two ideals as two particles.</p>
+<p><strong>The reading.</strong> A spin-$s$ multiplet has $2s+1$ states, and here the count is the count of the real dimensions of the carrier. The two numbers are the same number because the carrier is a real space and the rotation acts on it by a real operator whose eigenvalues are purely imaginary and come in pairs. Nothing in the criterion refers to a particle, a field or a representation of the Lorentz group; it refers to the spectrum of one element on one real space.</p>
+<h2 id="the-carriers">The Carriers</h2>
+<p>The three carriers are stated in the order of their spins, $0$, $\tfrac12$, $1$, which is also the order fixed line, spinor plane, vector part: the two rotation-invariant pieces first, the one-sided one after. Each is described by the same template: the subspace, the action, the operator, the spectrum, the dimension, the spin, and the sign of a full turn.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>action</th>
+<th>$\rho_{\mathrm{rep}}(A(\vec u))$</th>
+<th>weights</th>
+<th>$s$</th>
+<th>$2s+1$</th>
+<th>full turn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fixed line $\mathbb{R}e_t$</td>
+<td>$1$</td>
+<td>trivial</td>
+<td>$0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$+1$</td>
+</tr>
+<tr>
+<td>spinor plane $\Sigma=\mathbb{C}\tilde\Pi_+$</td>
+<td>$2$</td>
+<td>$L$ on the circle about $\vec u$</td>
+<td>the scalar $-\tfrac i2$</td>
+<td>$\{\pm\tfrac12\}$</td>
+<td>$\tfrac12$</td>
+<td>$2$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{k}$</td>
+<td>$3$</td>
+<td>$\mathrm{Ad}$ of the invertibles</td>
+<td>$\vec u\times$</td>
+<td>$\{\pm1,0\}$</td>
+<td>$1$</td>
+<td>$3$</td>
+<td>$+1$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-fixed-line">The Fixed Line</h3>
+<p>The line is $\mathbb{R}e_t$. The conjugation fixes it pointwise, because $e_t$ is central and $uu^{*}=e_t$. The operator is zero, the spectrum is $\{0\}$ with multiplicity one, the dimension is one, the spin is zero, and a full turn has operator $+\mathrm{id}$. The line is the smallest carrier in the list and the only one whose action is trivial, and the triviality is not a degenerate case to be apologised for: it is what spin zero is, and the whole of the scalar sector of the corpus rests on it.</p>
+<h3 id="the-spinor-plane">The Spinor Plane</h3>
+<p>The plane is $\Sigma=\mathbb{C}\tilde\Pi_+(\vec u)=\mathbb{R}\{\tilde\Pi_+,\,i\tilde\Pi_+\}$, where $\tilde\Pi_+=\tfrac12(e_t+i\vec u)$ is the idempotent of the axis. It lies in the left ideal $S_+=\mathbb{B}\tilde\Pi_+$, so every left multiplication carries it into $S_+$ and not necessarily into itself.</p>
+<p>The action is one line of algebra. The axis commutes with the idempotent, since the idempotent is a polynomial in it, and $\vec u\tilde\Pi_+=\tfrac12(\vec u+i\vec u^{2})=\tfrac12(\vec u-ie_t)=-i\tilde\Pi_+$. So the rotor multiplies the plane by a phase of half its angle,</p>
+<p>$$
+\tilde u\,\tilde\Pi_+(\vec u)=\Bigl(\cos\tfrac\theta2-i\sin\tfrac\theta2\Bigr)\tilde\Pi_+(\vec u)=e^{-i\theta/2}\,\tilde\Pi_+(\vec u).
+$$</p>
+<p>The half angle is therefore not a convention and not an insertion: it is what the identity gives. The operator of the generator is the scalar $-\tfrac i2$, and as a real operator on two real dimensions its eigenvalues are $-\tfrac i2$ and $+\tfrac i2$. The spectrum is $\{\pm\tfrac12\}$, the dimension two, the spin $\tfrac12$, and a full turn has operator $-1$.</p>
+<p><strong>The plane is not invariant under the whole group.</strong> Left multiplication by the transverse axis sends $\tilde\Pi_+(\vec u)$ out of $\Sigma(\vec u)$, and the plane is carried by the circle of rotations about its own axis and by no larger group. This is the failure that the closure repairs, and the repair is forced: the smallest real subspace that contains the plane and is invariant under all left multiplications has real dimension four, and it is $S_+$.</p>
+<h3 id="the-vector-part">The Vector Part</h3>
+<p>The vector part is $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$. The conjugation preserves it, because $u\vec vu^{*}$ is a real pure element for an invertible element $u$ and a real pure $\vec v$, and it preserves the norm, so it preserves the form and gives a homomorphism onto $SO(\mathfrak{k})$ with kernel $\{\pm e_t\}$.</p>
+<p>The operator is the cross product with the axis. The identity is the quaternion product rule $\vec u\vec v=-\vec u\cdot\vec v+\vec u\times\vec v$ applied to the difference $\vec u\vec v-\vec v\vec u$:</p>
+<p>$$
+[\tfrac12\vec u,\vec v]=\tfrac12(\vec u\vec v-\vec v\vec u)=\vec u\times\vec v ,
+$$</p>
+<p>and the commutator with half the axis is the cross product with the whole axis. The cross product annihilates the axis and turns the perpendicular plane by a quarter turn, so with an oriented orthonormal pair $\vec u_2,\vec u_3$ completing the axis the eigenvectors are $\vec u_2\pm i\vec u_3$, with eigenvalues $\mp i$. The weights are $\pm1$ and $0$; the dimension is three, the spin one, and a full turn has operator $+\mathrm{id}$.</p>
+<h3 id="the-factor-of-two">The Factor of Two</h3>
+<p>The generator is the same real element $\tfrac12\vec u$ in both nontrivial cases, and the two spectra differ by a factor of two. The reason is one sentence: the commutator consumes the axis twice and the multiplication consumes it once. On the vector part the operator is $[\tfrac12\vec u,\cdot]$, which equals the cross product with the whole axis, and the quarter turn of the cross product gives the eigenvalues $\mp i$, hence the weights $\pm1$. On the plane the operator is a single multiplication by half the axis, which gives the scalar $-\tfrac i2$, hence the weights $\pm\tfrac12$. This is the algebraic content of the difference between integer and half-integer spin, and it is a statement about how many times an element is used in the operator, not about a group.</p>
+<h2 id="three-and-no-more">Three and No More</h2>
+<p><strong>The left action sees one type.</strong> The algebra is $\mathbb{B}\cong M_2(\mathbb{C})$ and $M_2(\mathbb{C})$ is simple, so it has one isomorphism class of simple modules, of complex dimension two, and every finite-dimensional left module is a sum of copies of it. On that module the generator $\tfrac12\vec u$ is a traceless matrix whose square is a quarter of the unit, with weights $\pm\tfrac12$. A one-dimensional module would be a unital algebra map $M_2(\mathbb{C})\to\mathbb{C}$, whose kernel is a two-sided ideal; the algebra is simple, so the kernel is zero or everything, and neither is possible. There is therefore no one-dimensional module, and the left action has no spin zero.</p>
+<p><strong>The conjugation adds two.</strong> As a Lie algebra the biquaternion algebra is $\mathbb{B}=\mathbb{C}e_t\oplus\mathfrak{k}$ with $\mathfrak{k}\cong\mathfrak{sl}_2(\mathbb{C})$; the centre is the trivial module, of weight $0$, and the traceless part is the three-dimensional irreducible module, of weights $\pm1,0$. There is no other irreducible invariant subspace, because the conjugation is a compact group action and the two summands are the fixed space and its orthogonal complement for the invariant form.</p>
+<p><strong>The count.</strong> One type from multiplication and two from conjugation, and no fourth: a fourth would need a second simple module, and the algebra has one.</p>
+<p><strong>Where higher spin lives.</strong> The closure is a statement about $\mathbb{B}$ alone, and it does not forbid higher spin. Spin $2$ is the symmetric traceless square of the vector part, spin $\tfrac32$ is the symmetric cube of the plane, and the general construction is a tensor product. The mathematics states this and stops there; it is the subject of <em>Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</em>, which is the archived reading of the same closure from the side of the tensors.</p>
+<p><strong>The reading of the count.</strong> The set $\{0,\tfrac12,1\}$ is what one algebra of dimension eight can carry as elementary types. That the observed elementary particles carry exactly these three spins is a match of labels and is stated as such: the Standard Model assigns the spins by hand, and the algebra does not select which particle carries which.</p>
+<p><strong>The two halves of the proof are different arguments.</strong> The half for the left action is module theory and it is sharp: one simple module, hence one type. The half for the conjugation is compactness and averaging: the group is compact, so the module splits, and the fixed space of the action is the centre by the invariance of the polar form of the norm. Neither half is a count of dimensions, and neither would survive without its hypothesis.</p>
+<h2 id="the-closure-of-a-carrier">The Closure of a Carrier</h2>
+<p>A carrier is a module and a field takes values in a subspace. The passage from one to the other is the <strong>closure</strong>: to a carrier attach a real subspace of $\mathbb{B}$ that contains its space, is invariant under the action, and is the smallest subspace with a further property named by the rule of the case. The definition is deliberately incomplete, because the further property is not the same in the four cases. The table below is the mathematics' own, reproduced because every one of its four rows is a placement of a field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>closure</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>property the rule adds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>line</td>
+<td>$1$</td>
+<td>centre $\mathbb{C}e_t$</td>
+<td>$2$</td>
+<td>being a complex subspace</td>
+</tr>
+<tr>
+<td>plane</td>
+<td>$2$</td>
+<td>spinor space $S_+\cong\mathbb{C}^{2}$</td>
+<td>$4$</td>
+<td>none: invariance under the whole group</td>
+</tr>
+<tr>
+<td>spinor space</td>
+<td>$4$</td>
+<td>a bispinor space</td>
+<td>$8$</td>
+<td>containing both members of the Peirce pair</td>
+</tr>
+<tr>
+<td>vector part</td>
+<td>$3$</td>
+<td>material sector $\mathbb{B}_\Phi$</td>
+<td>$4$</td>
+<td>being the whole eigenspace of the conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="the-first-repair-invariance">The First Repair: Invariance</h3>
+<p><strong>The failure.</strong> No real subspace of $\mathbb{B}$ of dimension two is invariant under the whole rotation group. The plane is invariant under the rotations about its axis and under no others: the transverse axis is an element whose left multiplication carries $\tilde\Pi_+(\vec u)$ out of $\Sigma(\vec u)$.</p>
+<p><strong>The measurement.</strong> The residual of $L_{\vec w}\Sigma$ on $\Sigma$ for an invertible element $\vec w$ perpendicular to the axis is $2.24$ in the Euclidean norm on the eight real coordinates, over one hundred random axes, so the failure is not marginal. The dimension of the real span of $L_X\Sigma$ over a basis of the algebra is $4$ in every trial, and that span is $S_+$, which is closed under every left multiplication.</p>
+<p><strong>The repair.</strong> The smallest invariant real subspace containing the plane is the minimal left ideal $S_+=\mathbb{B}\tilde\Pi_+$. The step is not a convenience and not a supply of $i$ either: the plane is a complex line already and multiplication by $i$ acts inside it. What the plane lacks is the transverse direction, and the repair adds it. The step is inside the ideal, from one complex line to two, and it costs two real dimensions.</p>
+<p><strong>The reading.</strong> The field equation of a half-integer field is a left multiplication, and a subspace survives an arbitrary left multiplication only if it is a left ideal. The plane therefore cannot be the space a spin-half field takes values in, and the reason is not that the plane is too small for the spin but that it is too small for the equation. This is the precise sense in which a field takes values in a closure: the closure is the smallest space that the equation cannot push it out of.</p>
+<h3 id="the-second-repair-the-norm">The Second Repair: The Norm</h3>
+<p><strong>The failure.</strong> The norm vanishes identically on a minimal left ideal. The reason is that every element of an ideal has rank at most one as an endomorphism of the two-dimensional complex module, and an element of rank at most one is a zero divisor, so its norm is zero. Verified on one hundred random elements of each of the two ideals at one hundred random axes: the largest value of $\lvert N\rvert$ is $1.4\times10^{-15}$.</p>
+<p><strong>What the failure costs.</strong> No length, no mass, no normalisation and no probability density from the algebra's own form. A value of a spin-half field cannot be assigned a modulus, and the failure is not a defect of a particular element: it holds at every element of the ideal, at every axis, at every point of space-time. Nothing that the closure does can give a norm to a single value, and this is the one thing the closure does not repair.</p>
+<p><strong>The repair.</strong> The norm of a pair of values is the cross pairing of the two. With $\tilde\Xi_L\in S_+$ and $\tilde\Xi_R\in S_-$,</p>
+<p>$$
+N(\tilde\Xi_L+\tilde\Xi_R)=2\,\mathrm{Sc}\bigl(\tilde\Xi_L\tilde\Xi_R^{\natural}\bigr),
+$$</p>
+<p>verified to $4.4\times10^{-15}$ on one hundred random pairs. Each term on the right is a pairing of the two ideals, and the left side is the norm of the sum; so the norm of a bispinor is twice its pairing, and the pairing is the only place a norm can live.</p>
+<p><strong>The reading.</strong> A mass term of a spin-half field cannot be a modulus, because a modulus of one value is zero at every point; it must couple two values, and the only invariant coupling available is the pairing. This is the strongest single statement of the section, and it is exact rather than approximate: the vanishing is an identity.</p>
+<p><strong>The boundary of the reading.</strong> The two Peirce ideals are copies of one module, and the copy index is not a chirality; the chiral pairing is between a value and its conjugate space, not between the two Peirce summands. The pairing statement above holds for both readings because both are a pairing of two slots, and the entry does not identify the two. What the entry claims is the shape: a spin-half mass is off-diagonal in whatever two-slot structure the field is written in.</p>
+<h3 id="what-is-not-repaired">What Is Not Repaired</h3>
+<p><strong>The vanishing is not a symptom.</strong> A reader may expect the closure to restore the norm of the value, since it restores invariance. It does not, and the mathematics says why in the same breath: the norm on the bispinor space is off-diagonal. The diagonal is zero on each summand, and the closure adds the second summand and the pairing between them, not a modulus on either.</p>
+<p><strong>The contrast with the other two carriers.</strong> On the centre the norm is the square of a complex number, real and positive on the real axis and real and negative on the imaginary one, so the modulus exists on the two copies of the carrier and not on the complex plane they span. On the material sector the norm is real and indefinite, so a vector field has a modulus that can have either sign. On the ideals the norm is zero, and the field has a modulus only through a pair. The three carriers therefore behave in three different ways under the one operation that a field theory needs most, and the difference is a property of the carrier and not of the field.</p>
+<h2 id="the-closures">The Closures</h2>
+<h3 id="the-centre">The Centre</h3>
+<p>The carrier is the line $\mathbb{R}e_t$ and the closure is the centre $\mathbb{C}e_t=\mathbb{R}e_t\oplus\mathbb{R}(ie_t)$, of real dimension two. The property named by the rule is being a complex subspace, and the smallest complex subspace containing the line is the line together with $ie_t$. That the result is the whole fixed space of the conjugation, and not merely a complex line through $e_t$, is a theorem and not part of the rule: $uXu^{*}=X$ for every invertible element holds only for the central elements.</p>
+<p>The carrier sits inside with multiplicity two: the real and the imaginary lines are two copies of the trivial carrier, and they are the real and imaginary parts of one complex line. This is why the centre is a closure and not a carrier: as a space under the trivial action it is reducible, and the carrier is the line.</p>
+<p><strong>The reading.</strong> The closure adds one degree of freedom and it is the phase. A real line has a magnitude and no phase; a complex line has a magnitude and a phase, and the phase is what a charge is. The step from the carrier to the closure is therefore the step from a real scalar to a complex scalar, and it is the smallest step in the list: one real dimension, one phase, one charge.</p>
+<h3 id="the-spinor-space">The Spinor Space</h3>
+<p>The carrier is the spinor plane and the closure is the spinor space $S_+=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\vec u_2\tilde\Pi_+\}$, of real dimension four and complex dimension two. It is a minimal left ideal: no nonzero left subspace of it is invariant. It carries the same carrier as the plane, with weights $\pm\tfrac12$, and the step adds the transverse direction.</p>
+<p><strong>The reading.</strong> The closure adds the state the equation reaches. The plane is the set of values a spinor can have at a point in a basis of one complex line; the ideal is the set of values it can have when the equation is allowed to multiply by anything. The two differ by one complex direction, and that direction is not a second spin: it is the same spin, in the other basis vector of the module.</p>
+<h3 id="the-bispinor-spaces">The Bispinor Spaces</h3>
+<p>The complementary idempotent $\tilde\Pi_-=\tfrac12(e_t-i\vec u)=e_t-\tilde\Pi_+$ gives a second ideal $S_-=\mathbb{B}\tilde\Pi_-$, of the same dimension, and the sum is direct, $\mathbb{B}=S_+\oplus S_-$. Each axis therefore produces a <strong>bispinor space</strong>: the algebra read through the Peirce basis of that axis, that is, the pair of ideals and their sum.</p>
+<p><strong>The family.</strong> There is one bispinor space per Peirce basis, so there are as many as there are unit axes, and two axes that differ by a sign give the same unordered pair, so the family is indexed by the real projective plane. As sets the members coincide, because each of them is $\mathbb{B}$; what varies is the splitting. The family is therefore a family of decompositions of one space and not a family of subspaces of it, and the naming keeps that apart: a spinor space is a subspace, and a bispinor space is the whole space together with a splitting.</p>
+<p><strong>The reading.</strong> The pair of values is a pair and not two particles. The two ideals are isomorphic, metrically orthogonal, and exchanged by nothing in the algebra's structure; the second is added because the field must be able to occupy both, and the reason it must is the norm of the previous section, which is off-diagonal. And the axis is a frame and not a datum: the algebra carries every axis and singles out none, so the choice of Peirce basis is a choice of basis and not a statement about the algebra.</p>
+<h3 id="the-anti-hermitian-space">The Anti-Hermitian Space</h3>
+<p>The carrier is the vector part and the closure is the anti-Hermitian space $\mathbb{B}_\Phi=\{X:X^{*}=-X\}=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of real dimension four. The property named by the rule is being the whole eigenspace of the conjugation, and the star is an involution, so the algebra splits into its $+1$ and $-1$ eigenspaces and the closure takes the whole of the $-1$ one.</p>
+<p><strong>The extra line.</strong> The vector part lies in the $-1$ eigenspace and is not the whole of it: multiplication by $i$ carries the vector part to a Hermitian space, so the eigenspace needs a real line as well, and the line is $\mathbb{R}(ie_t)$. That line is not a second carrier: it is the degenerate summand, fixed by the action, and it is the same carrier as the line of the centre.</p>
+<p><strong>Why this half and not the other.</strong> The Hermitian half $\mathbb{B}_\Psi$ is also invariant, also of dimension four, and also splits as a line and a three-dimensional summand; the two halves carry the same module, since multiplication by $i$ is a real-linear isomorphism carrying one onto the other. What separates them is the involution identity $(XY)^{*}=Y^{*}X^{*}$, which needs no axis: on $\mathbb{B}_\Phi$ the bracket of two elements stays in the half, and on $\mathbb{B}_\Psi$ it does not. Of the four halves of the algebra exactly two are closed under the bracket, and only $\mathbb{B}_\Phi$ both contains the carrier and is closed. Verified: the bracket of two random anti-Hermitian elements is anti-Hermitian with defect $0$.</p>
+<p><strong>The reading.</strong> The closure adds the time slot. A spin-one field's value has three states, and the material sector has four real dimensions; the fourth is the temporal direction $ie_t$, and it is the generator of the central phase and not a state. The constraint of the theory removes it, and the carrier that survives the constraint is the vector part again. This is why the spin-one closure is the only one whose dimension does not equal $2s+1$: the fourth slot is not a state.</p>
+<p><strong>The exact statement of the mismatch.</strong> On the centre the real dimension of the closure is $2$ and $2s+1=1$; on the ideal the real dimension is $4$ and $2s+1=2$; on the material sector the real dimension is $4$ and $2s+1=3$. In the first two cases the closure is complex and its complex dimension is $2s+1$; in the third the closure is a real form, so no complex dimension exists and the identity has no reading at all. The identity is therefore a statement about the carrier, and every attempt to read it directly on the closure either doubles it or fails.</p>
+<h2 id="the-carrier-and-the-field-equation">The Carrier and the Field Equation</h2>
+<p><strong>The question the dynamics asks.</strong> An equation is an operator acting on a field, and a subspace carries the solutions of the equation when the operator maps that subspace into itself for every field in it. The three carriers are the three answers, and the answers are reached from the dynamics without using the representation theory.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>equation</th>
+<th>field</th>
+<th>spin</th>
+<th>the space</th>
+<th>the operator preserves it by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klein–Gordon</td>
+<td>$\tilde\Xi$</td>
+<td>$0$</td>
+<td>the centre</td>
+<td>being a central real scalar</td>
+</tr>
+<tr>
+<td>Dirac</td>
+<td>$\tilde\Xi_L,\tilde\Xi_R$</td>
+<td>$\tfrac12$</td>
+<td>$S_+,S_-$ and their sum</td>
+<td>multiplying on the left</td>
+</tr>
+<tr>
+<td>Proca</td>
+<td>$\tilde A_\Phi$</td>
+<td>$1$</td>
+<td>the material sector, then the vector part</td>
+<td>the two-sided action, and the constraint</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The scalar case, and why the equation chooses nothing.</strong> The Klein–Gordon operator is central and real, so it multiplies all four complex coefficients by the same number and preserves every subspace closed under real scalars. The equation is therefore satisfied by a field with four independent complex coefficients and by a field with one, and nothing in the equation prefers either. The spin prefers one: a spin-zero field has one complex value at each event, and the carrier of one complex number is the centre. The restriction of the field to the centre costs nothing in the equation, because the operator is central.</p>
+<p><strong>The spinor case, and why the sector cannot hold it.</strong> The Dirac operator is the gradient, an element multiplying on the left, so it preserves exactly the left ideals. No nonzero subspace of the material sector is a left ideal, and the proof is one line: if $W\subseteq\mathbb{B}_\Phi$ were a nonzero left ideal, then $iW\subseteq W$ because $i$ is central, but $i\mathbb{B}_\Phi=\mathbb{B}_\Psi$, so $iW\subseteq\mathbb{B}_\Phi\cap\mathbb{B}_\Psi=\{0\}$ and $W=\{0\}$. Verified: a random left multiple of a random anti-Hermitian element leaves the sector by $22.4$. A spin-half field therefore cannot be confined to the material sector, whatever the frame, and this is a theorem and not an opinion.</p>
+<p><strong>The vector case, and why the sector is the space.</strong> The Proca potential is an element of the material sector, the operator is built from one material gradient, and the sector is preserved by the two-sided action and by real central multiplication. The sector is therefore the space the field takes values in, and the vector part inside it is the carrier of the spin; the difference of one dimension is the constraint, which removes the temporal slot.</p>
+<p><strong>The two routes agree.</strong> The representation theory says three carriers of dimensions one, two and three. The dynamics says a central operator, a left multiplier and a sector. The two lists are the same list, and the agreement is not an accident: both are asking which subspaces the algebra's own actions preserve.</p>
+<h2 id="why-the-three-are-not-a-direct-sum">Why the Three Are Not a Direct Sum</h2>
+<p><strong>The arithmetic.</strong> The carriers are $1+2+3=6$ real dimensions while the algebra has $8$. The closures are $2+4+8+4=18$, which is more than twice the algebra. Neither sum is a decomposition, and the second is not even a sum of disjoint subspaces: the bispinor space is the whole algebra, the spinor space is one of its summands, and the centre meets the material sector in the line $\mathbb{R}(ie_t)$.</p>
+<p><strong>The two decompositions that do exist.</strong> The star splits the algebra into the two sectors, of real dimensions $4+4$, and the Peirce basis splits it into the two ideals, also $4+4$. The first is a split into a Lie algebra and its complement; the second is a split into two minimal left modules. The carriers are neither.</p>
+<p><strong>The reading.</strong> A biquaternion field is not a scalar plus a spinor plus a vector. It is one eight-real-dimensional value at each event, and the three carriers are three readings of that value, one for each action. The distinction has teeth: a model that added the three would have six real dimensions at each event and would not be this algebra, and a model that added the closures would have eighteen and would not be a space at all.</p>
+<h2 id="the-interpretations">The Interpretations</h2>
+<p><strong>The spin is the top of a ladder.</strong> The spin of a carrier is its largest weight, and the weights of an irreducible carrier are $s,s-1,\dots,-s$, so the carrier has $2s+1$ of them and that number is its real dimension. The warrant is the criterion and the three computations. The boundary is that this is the rotation spin: the Lorentz label of a field is a pair of spins, and the massless case uses helicity.</p>
+<p><strong>A field takes values in the closure, not in the carrier.</strong> The carrier is what the action sees; the closure is what the equation cannot push the field out of. The warrant is the first repair: the plane fails invariance by $2.24$ in the Euclidean norm, and the smallest invariant space containing it has dimension four. The boundary is that the closure is a subspace condition and not an equation of motion: it says where the field may live, not how it moves.</p>
+<p><strong>The carrier fixes the dimension of the value, and the equation does not.</strong> The Klein–Gordon operator is central, so it preserves every subspace and chooses nothing; the spin chooses. The warrant is the centrality, which is exact. The boundary is that the choice is by dimension and by action, and the equation of a given spin is a separate statement.</p>
+<p><strong>One value has no norm; the mass is a pairing.</strong> The norm vanishes on the ideal at every element, and the norm of a pair is twice the cross pairing. The warrant is the identity $N(\tilde\Xi_L+\tilde\Xi_R)=2\,\mathrm{Sc}(\tilde\Xi_L\tilde\Xi_R^{\natural})$ to $4.4\times10^{-15}$ and the vanishing to $1.4\times10^{-15}$. The boundary is that the pairing is a shape and not a number, and that the two Peirce ideals are copies and not chiralities.</p>
+<p><strong>The axis is a frame, not a datum.</strong> The idempotents exist at every unit axis, the spectrum does not depend on the axis, and the family of bispinor spaces is indexed by the real projective plane. The warrant is the lemma that the operators at two axes are similar and the theorem that the algebra singles out no axis. The boundary is that a choice of quantisation axis is a choice of basis; nothing in the algebra makes one axis preferred.</p>
+<p><strong>A full turn is $(-1)^{2s}$.</strong> The operator of the full turn is $+\mathrm{id}$ on the integer carriers and $-\mathrm{id}$ on the half-integer one, so the half-integer carrier is an action of the double cover and the integer carriers are actions of the rotation group. The warrant is the eigenvalue $e^{2\pi i\lambda}$ at $\lambda=\pm\tfrac12$, verified as $\rho_{\mathrm{rep}}(-e_t)=-\mathrm{id}$ on the plane to $8.7\times10^{-17}$. The boundary is that the sign is a statement about the action and not about statistics.</p>
+<p><strong>Charge belongs to the closure and not to the carrier.</strong> The centre carries every phase, since a central phase commutes with everything and preserves the complex line; the material sector carries only $\pm1$, since every other phase leaves it. The warrant is the centrality of $i$ and the reality of the sector. The boundary is that this is a statement about which phases preserve the space of values, and not about a coupling constant.</p>
+<p><strong>The extra line of the material sector is the time slot.</strong> The carrier has three dimensions and the closure has four, and the fourth is $\mathbb{R}(ie_t)$, which is the generator of the central phase and not a state; the constraint removes it. The warrant is the split $\mathbb{B}_\Phi=\mathfrak{k}\oplus\mathbb{R}(ie_t)$ and the fact that the field strength is pure, hence already in the carrier. The boundary is that the constraint is an input and not a consequence.</p>
+<p><strong>The three carriers are three readings and not three summands.</strong> The carriers are $1+2+3=6$ dimensions against an algebra of $8$, and the closures $2+4+8+4=18$. The warrant is the arithmetic and the overlaps. The boundary is that the two decompositions that exist, by the star and by the Peirce basis, are not the list.</p>
+<p><strong>The three values are the spins of the observed elementary particles.</strong> The set $\{0,\tfrac12,1\}$ is not only the algebra's list; it is the list that the established particles realise, and no established particle carries another value. The warrant is the classification and the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$s$</th>
+<th>established elementary particles</th>
+<th>carrier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>the Higgs boson $H$</td>
+<td>the line</td>
+</tr>
+<tr>
+<td>$\tfrac12$</td>
+<td>the six quarks $u,d,c,s,t,b$ and the six leptons $e,\mu,\tau,\nu_e,\nu_\mu,\nu_\tau$</td>
+<td>the plane</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>the photon $\gamma$, the $W^{\pm}$ and the $Z$, and the eight gluons $g$</td>
+<td>the vector part</td>
+</tr>
+</tbody>
+</table></div>
+<p>The boundary is that the match is a match of labels. The algebra supplies the set and does not select which particle carries which value, and it says nothing about masses, generations, charges or colour. The quarks and the gluons are counted by flavour and by colour although they are observed only as confined constituents of hadrons and jets, and the gluon's colour octet is an $SU(3)$ structure that the algebra does not host: what the vector part carries for a gluon is its free kinematics and not its colour.</p>
+<p><strong>Two boundaries hold the match in place.</strong> The first is that hadrons are composites. The values $\tfrac32$, $2$ and $\tfrac52$ do occur, and the particles that carry them — the $\mathcal{B}(1232)$ and the $\Omega^-$, the tensor mesons, the $N(1680)$ — are bound states of quarks and gluons and not elementary, so they are excluded from the table rather than left unexplained by it. The second is that the massless spin-one field keeps two states and not three: the carrier has three dimensions, and for a massless field the longitudinal state is removed by gauge invariance, leaving the two helicities of the photon and of the gluon. The warrant is the count $2s+1=3$ and the gauge reduction. The boundary is that the reduction is an input of the massless theory and not a consequence of the carrier: the algebra supplies the triplet, and the two-state count is what gauge invariance does to it.</p>
+<h2 id="the-limits">The Limits</h2>
+<ul>
+<li><strong>No dynamics.</strong> The entry states which subspaces carry a field and what the operator preserves. It does not write an equation of motion, an action or a propagation.</li>
+<li><strong>No mass value.</strong> The pairing is a shape; the number is dynamical and belongs to the equations.</li>
+<li><strong>The rotation spin only.</strong> The label $s$ is the highest weight of the rotation generator. The Lorentz label is a pair, and the massless case is a helicity.</li>
+<li><strong>No spin-statistics.</strong> The split between the associative carrier and the adjoint carriers is algebraic. The link from that split to Fermi and Bose statistics is a separate theorem, and the entry does not make it.</li>
+<li><strong>The particle match is a label match.</strong> The three values are the observed elementary spins, stated under <strong>The three values are the spins of the observed elementary particles</strong>, with the two boundaries under <strong>Two boundaries hold the match in place</strong>. The algebra supplies the set and does not select which particle carries which, the hadrons of higher spin are composites and not elementary, and the massless spin-one field keeps two states and not three.</li>
+<li><strong>The closure is not positivity.</strong> The material sector is indefinite, and the norm on the ideal vanishes. Nothing in the entry produces a positive definite form on a carrier.</li>
+<li><strong>No canonical axis.</strong> The bispinor family is indexed by the real projective plane and the algebra singles out no member. Whether a condition internal to the algebra could fix one is an open question of the mathematics.</li>
+<li><strong>Families, not spaces.</strong> The bispinor spaces coincide as sets and differ as splittings. A statement about one of them is a statement about a decomposition, not about a subspace.</li>
+<li><strong>One algebra.</strong> The classification is for $\mathbb{B}$ alone. Higher spin needs a tensor product, and the algebra does not forbid it.</li>
+<li><strong>Copies are not chiralities.</strong> The two Peirce ideals are isomorphic copies of one module. The chirality of a field is the side of a basis operator, and the entry does not identify the two.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Three spins, and they come from the rotor group before any subspace is named. One rotor: on the quaternion layer the left-regular generators satisfy $L_k^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$, so the Casimir is $-3\,\mathrm{I}_4$ and $s(s+1)=\tfrac34$ gives $s=\tfrac12$. A pair on two sides: each factor carries $\tfrac12$, the addition rule gives $0$ or $1$, and the total Casimir confirms it. The subspaces are read afterwards, and not before.</p>
+<p>The carrier is a nonzero real subspace of the algebra, invariant and irreducible under one of the algebra's own actions, and the action is part of the carrier. There are three: the line, of real dimension one, under the trivial action, with weight $0$; the plane, of real dimension two, under left multiplication by the circle about its axis, with weights $\pm\tfrac12$; and the vector part, of real dimension three, under the conjugation, with weights $\pm1,0$. The spins are $0,\tfrac12,1$, the identity $2s+1=\dim_\mathbb{R}$ holds in the three cases, and the count is complete because the algebra is a full matrix algebra with one simple module and because the group of invertibles is compact.</p>
+<p>The weights come from two identities and no array: the axis times the idempotent is $-i$ times the idempotent, which gives the scalar $-\tfrac i2$ on the plane, and the commutator with half the axis is the cross product with the whole axis, which gives the quarter turn on the vector part. The factor of two between the two spectra is the number of times the axis is used in the operator.</p>
+<p>The closure is the passage from a module to a subspace, and it is four rules: the line becomes complex, the plane gains the transverse direction, the spinor space gains the second idempotent, and the vector part gains the fixed line of the conjugation. The closure performs two repairs. It restores invariance, which the plane lacks by $2.24$ and which the ideal supplies at the cost of two real dimensions. It restores the norm, which the ideal lacks entirely, since every element of an ideal has rank at most one and the norm vanishes at every element; the norm of a pair is twice the cross pairing, so a spin-half mass is a coupling of two values. The closure does not repair the vanishing of the norm of a single value, and that is the one exact statement of the entry: a single value of a spin-half field is massless at every point of space-time.</p>
+<p>The three closures are not a decomposition. The carriers are one algebra read three ways, and the arithmetic $1+2+3=6$ and $2+4+8+4=18$ is the proof. The two decompositions the algebra has are the sector split and the Peirce split, and the carriers are neither.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, real dimension $8$, $\cong M_2(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the quaternion basis, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>the central imaginary, $i^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$\tilde Q=Q_te_t+\vec Q$</td>
+<td>an element, with complex coefficients $Q_\mu$</td>
+</tr>
+<tr>
+<td>${}^{*}$, ${}^{\natural}$</td>
+<td>the star and the natural conjugation</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$</td>
+<td>the norm</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$</td>
+<td>the scalar part of a product</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}$</td>
+<td>the vector part, $\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_C=\mathbb{C}e_t$</td>
+<td>the centre, real dimension $2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Psi$, $\mathbb{B}_\Phi$</td>
+<td>the Hermitian and anti-Hermitian sectors, the second being the material sector</td>
+</tr>
+<tr>
+<td>$\vec u$</td>
+<td>a unit real axis</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the rotation angle, twice the angle of the rotor</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm=\tfrac12(e_t\pm i\vec u)$</td>
+<td>the idempotents of the axis, a Peirce basis</td>
+</tr>
+<tr>
+<td>$\Sigma=\mathbb{C}\tilde\Pi_+$</td>
+<td>the spinor plane, real dimension $2$</td>
+</tr>
+<tr>
+<td>$S_\pm=\mathbb{B}\tilde\Pi_\pm$</td>
+<td>the spinor spaces, real dimension $4$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the quaternion layer, $\mathbb{R}e_t\oplus\mathfrak{k}$, real dimension $4$</td>
+</tr>
+<tr>
+<td>$L_k$, $R_k$</td>
+<td>left and right multiplication by $\vec e_k$, real $4\times4$ operators</td>
+</tr>
+<tr>
+<td>$A_k=\tfrac12\vec e_k$, $A_k'=\tfrac12R_{\vec e_k}$</td>
+<td>the halved generators of the two sides</td>
+</tr>
+<tr>
+<td>$A(\vec u)=\tfrac12\vec u$</td>
+<td>the generator along the axis</td>
+</tr>
+<tr>
+<td>$\tilde S_k=\tfrac12 i\vec e_k$</td>
+<td>the Hermitian generator of the coordinate axis</td>
+</tr>
+<tr>
+<td>$C=\sum_k\tilde S_k^{2}=\tfrac34e_t$</td>
+<td>the quadratic element</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{rep}}$</td>
+<td>a representation of an action on a carrier</td>
+</tr>
+<tr>
+<td>$\lambda$, $s$</td>
+<td>a weight, and the spin, the largest weight</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_maths/the-rotor-group-via-4x4-real-matrices.html">The Rotor Group via $4\times4$ Real Matrices</a>, for the rotor group and its kernel.</li>
+<li><a href="../articles_maths/from-the-rotor-to-the-spin-of-the-rotor.html">From the Rotor to the Spin of the Rotor</a>, for the left-regular generators, the Casimir and $s=\tfrac12$.</li>
+<li><a href="../articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html">From the Spin of the Rotor to the Spin of a Pair of Operators Acting on Two Sides</a>, for the pair, the two Casimirs and the addition rule.</li>
+<li><a href="../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, for the definition, the criterion, the completeness proof and the four closure rules.</li>
+<li><a href="../articles_maths/the-category-of-modules.html">The Category of Modules</a>, for the simple module, the isomorphism $\mathbb{B}\cong\operatorname{End}_\mathbb{C}(S)$ and the classification of the modules.</li>
+<li><a href="../articles_maths/the-peirce-decomposition-of-the-biquaternion-algebra.html">The Peirce Decomposition of the Biquaternion Algebra</a>, for the two idempotents, the four corners and the minimal left ideals.</li>
+<li><a href="../articles_maths/idempotents.html">Idempotents</a>, for the roots of one and the families indexed by the axis.</li>
+<li><a href="../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the polar form of the norm and the inertias.</li>
+<li><a href="../articles_maths/representations-of-groups.html">Representations of Groups</a>, for complete reducibility and the highest-weight string.</li>
+<li><a href="the-rotations-the-boosts-and-the-groups.html">The Rotations, the Boosts and the Groups</a>, for the actions whose carriers these are.</li>
+<li><a href="the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>, for the central operator and the restriction to the centre.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>, for the left multiplier and the two ideals.</li>
+<li><a href="the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a>, for the sector as the space of a four-vector.</li>
+<li><a href="higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</a>, for what the closure does not forbid.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bures Isometries of the Bloch Ball: Rotations, the Slice and the Conformal Boundary — Biquaternion Universe</title>
+  <meta name="description" content="The state space of the informational sector carries two metrics, and they disagree about which transformations are motions. The Cayley–Klein metric is…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="bures-isometries-of-the-bloch-ball-rotations-the-slice-and-the-conformal-boundary"><strong>Bures Isometries of the Bloch Ball: Rotations, the Slice and the Conformal Boundary</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The state space of the informational sector carries two metrics, and they disagree about which transformations are motions. The Cayley–Klein metric is preserved by every congruence, so its isometry group is the whole six-dimensional group of the sector. The Bures metric is preserved by the rotations alone, so its isometry group is three-dimensional. The gap between the two is not a matter of taste. It is the gap between frames and channels, and it has a one-line proof.</p>
+<p>The proof is a statement about $2\,\mathrm{Sc}$. A congruence by an element $\tilde U$ carries the functional $2\,\mathrm{Sc}$ to itself only when $\tilde U$ is unitary, and the unitary elements of the group are exactly the real unit quaternions, which are the rotations. Every boost changes $2\,\mathrm{Sc}$, hence takes a state off the normalised slice, hence is not a trace-preserving map. The Bures metric is the metric that is monotone under trace-preserving maps. A metric of that kind cannot be invariant under a map that does not preserve the trace.</p>
+<p>The article states the equivalence, proves it, and then draws four consequences the hemisphere picture makes visible. The pole of the hemisphere moves under a boost, so the latitude is measured from a state and not from a frame. The order of two states by purity is not invariant, and the article gives a pair whose order reverses. The distance to the pure boundary is finite, so the third law cannot be read off the Bures metric at all. And what does survive is the conformal class of the boundary, which is where the group still acts.</p>
+<p>The findings are stated in advance.</p>
+<ol>
+<li><strong>The polar split separates the two actions.</strong> Every unit-norm element is $\tilde U=\tilde L\tilde R$ with $\tilde L$ a boost rotor and $\tilde R$ a rotation rotor, and the split is unique. Verified on a hundred random elements to $5.1\times10^{-15}$.</li>
+<li><strong>A congruence preserves $2\,\mathrm{Sc}$ only if it is a rotation.</strong> The map $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ satisfies $2\,\mathrm{Sc}(\tilde U\tilde Q\tilde U^{*})=2\,\mathrm{Sc}\,\tilde Q$ for every $\tilde Q$ if and only if $\tilde U\tilde U^{*}=1$, and on the group that holds if and only if $\tilde L=1$.</li>
+<li><strong>Hence the three-way equivalence.</strong> A congruence is a Bures isometry, a congruence preserves the state slice, and a congruence is a rotation: the three conditions are one condition.</li>
+<li><strong>The Bures metric sees the state and not the frame.</strong> Latitude and entropy are visible to it; the boost that connects two observers is not.</li>
+<li><strong>The group survives on the boundary as the conformal group.</strong> A boost scales the round metric of the pure-state sphere by a point-dependent factor and preserves every angle, verified to $1.2\times10^{-6}$ on a finite-difference probe that is limited by the probe.</li>
+</ol>
+<p>The notation is that of the foundational articles. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$ with $\vec s_{\Psi}$ real and $r=\lvert\vec s_{\Psi}\rvert<1$; the congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$; the star is the anti-involution fixing $\mathbb{B}_{\Psi}$; the scalar part is $\mathrm{Sc}\tilde Q$, and the trace of the $2\times2$ image is twice it. The rapidity is $\theta_{\mathrm{rpd}}$, the boost rotor is $\tilde U_{\mathrm b}=\cosh(\theta_{\mathrm{rpd}}/2)e_t+i\sinh(\theta_{\mathrm{rpd}}/2)\vec u$ and the rotation rotor is $\tilde U_{\mathrm r}=\cos(\theta/2)e_t+\sin(\theta/2)\vec u$, both of unit norm. The Bures distance is the angle convention $d_{B}=\arccos F$, with $F$ the fidelity, so that two pure states at Bloch angle $\phi$ are at $d_{B}=\phi/2$.</p>
+<p>The hemisphere is not re-derived here. <em>The Fubini–Study Geometry and the Biquaternion Norm</em> proves that the Bures ball is the northern hemisphere of a round three-sphere of radius $\tfrac12$, with the maximally mixed state at the pole, the pure states on the equator and the latitude equal to the purity. This article takes that picture as a coordinate system and asks what the group does inside it.</p>
+<p>The companion articles supply the pieces:</p>
+<ul>
+<li><em>The Fubini–Study Geometry and the Biquaternion Norm</em>, for the hemisphere, its isometry group $O(3)$ and the Bures line element.</li>
+<li><em>The Lorentz Group on the Bloch Ball: Projective Action and Two Metrics</em>, for the congruence as a Lorentz transformation, the projective action and the two metrics.</li>
+<li><em>States, Observables and the Born Weight</em>, for the state slice and the statement that it is preserved by the unitary group and by nothing larger.</li>
+<li><em>Quantum Channels and the Reversible/Irreversible Dichotomy</em>, for the channel category and the unitary channels inside it.</li>
+<li><em>Coarse-Graining and the Biquaternion Entropy Functional</em>, for the monotonicity of the entropy and the direction of the second law.</li>
+<li><em>Fisher Information and the Biquaternion Norm</em>, for the Fisher form as four times the Bures form.</li>
+</ul>
+<h2 id="the-polar-split">The Polar Split</h2>
+<h3 id="the-factorisation">The factorisation</h3>
+<p><strong>Every element of the group factors into a boost and a rotation, and the factors are unique.</strong> Write $\tilde U=\tilde L\tilde R$ with $\tilde L$ Hermitian positive of unit norm and $\tilde R$ real of unit norm. In the defining representation this is the polar decomposition of a determinant-one matrix into a positive Hermitian factor and a unitary one, and the determinant condition fixes the scalar part of each factor to one. Verified on a hundred random products of one boost, one rotation and one boost: $\lvert\tilde U-\tilde L\tilde R\rvert\le4.5\times10^{-16}$, $\tilde L^{\dagger}=\tilde L$ and $N(\tilde L)=1$ to $5.1\times10^{-15}$, $\tilde R$ real and $N(\tilde R)=1$ to $5.0\times10^{-15}$.</p>
+<p><strong>The split names two kinds of transformation the corpus already separates.</strong> $\tilde L$ is a boost rotor: Hermitian, so $\tilde L^{*}=\tilde L$, and its congruence is the Lorentz transformation of the previous article. $\tilde R$ is a rotation rotor: real, so $\tilde R^{*}=\tilde R^{-1}$, and its congruence turns the vector $\vec s_{\Psi}$ about $\vec u$. The first is the non-compact half of the group and the second is the compact half, and the split exhibits the group as the product of the two, which is the Cartan decomposition.</p>
+<h3 id="what-each-factor-does">What each factor does</h3>
+<p><strong>The two factors act on the two metrics differently, and the table is the summary of the article.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the boost $\tilde L$</th>
+<th>the rotation $\tilde R$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2\,\mathrm{Sc}$ of the image</td>
+<td>$\cosh\theta_{\mathrm{rpd}}+s_{\parallel}\sinh\theta_{\mathrm{rpd}}$</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>the state slice</td>
+<td>not preserved</td>
+<td>preserved</td>
+</tr>
+<tr>
+<td>the position on the hemisphere</td>
+<td>latitude and longitude both move</td>
+<td>longitude only</td>
+</tr>
+<tr>
+<td>the Klein metric</td>
+<td>preserved</td>
+<td>preserved</td>
+</tr>
+<tr>
+<td>the Bures metric</td>
+<td>changed</td>
+<td>preserved</td>
+</tr>
+<tr>
+<td>the map on states</td>
+<td>projective, non-affine</td>
+<td>linear, affine</td>
+</tr>
+<tr>
+<td>the channel category</td>
+<td>outside</td>
+<td>inside</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every row of the table is a computation, and the rows are the argument of the next three sections.</strong> The scalar-part row is the theorem. The metric rows are the statement that one metric belongs to the group and the other does not. The last row is the reason the metric rows hold, and it is the conceptual content of the article.</p>
+<h2 id="the-dividing-line-is-the-scalar-part">The Dividing Line Is the Scalar Part</h2>
+<h3 id="the-theorem">The theorem</h3>
+<p><strong>A congruence preserves $2\,\mathrm{Sc}$ if and only if it is a rotation.</strong> For any element $\tilde Q$ and any unit-norm $\tilde U$,
+$$
+2\,\mathrm{Sc}\bigl(\tilde U\tilde Q\tilde U^{*}\bigr)=2\,\mathrm{Sc}\bigl(\tilde Q\tilde U^{*}\tilde U\bigr)
+$$
+by the cyclicity of the trace in the defining representation. The right side equals $2\,\mathrm{Sc}\,\tilde Q$ for every $\tilde Q$ if and only if $\tilde U^{*}\tilde U=1$, which is the unitarity of $\tilde U$. On the group, $\tilde U=\tilde L\tilde R$ gives $\tilde U^{*}\tilde U=\tilde R^{*}\tilde L^{2}\tilde R$, so unitarity holds if and only if $\tilde L^{2}=1$, and $\tilde L$ positive gives $\tilde L=1$.</p>
+<p><strong>The consequence is that the state space is exactly the set the rotations preserve.</strong> A congruence carries states to states when it carries the normalised slice to itself, and the slice is the level set $2\,\mathrm{Sc}=1$. So the congruences that act on the state space are the rotations, and this is the statement the corpus records as claim six of <em>States, Observables and the Born Weight</em>. Verified: a rotation leaves $2\,\mathrm{Sc}$ of a random Hermitian element fixed to $8.9\times10^{-16}$ and a boost changes it by up to $10.09$.</p>
+<p><strong>The boost therefore acts on states only after a projection.</strong> The linear image has doubled scalar part $2\,\mathrm{Sc}=\cosh\theta_{\mathrm{rpd}}+s_{\parallel}\sinh\theta_{\mathrm{rpd}}$, which is one only at $\theta_{\mathrm{rpd}}=0$; dividing by it produces a map that is defined on the state space and is not linear. So there are two maps, and neither is a channel: the linear one is not trace-preserving and the projected one is not affine.</p>
+<p><strong>The non-affinity is a number.</strong> Take the two states of the order-reversal table below, $\vec s_{\Psi}=(0.3,0,0)$ and $\vec s_{\Psi}'=(-0.35,0,0)$, mix them with weight $\lambda=0.4$ and boost along $\vec e_x$ at rapidity $1$: the image of the mixture has coordinate $0.721015$ while the mixture of the images has $0.682370$, a difference of $0.038645$. The same comparison for a rotation of the same angle differs by $1.1\times10^{-16}$. A channel is affine on the state space by definition, so no boost is a channel.</p>
+<h3 id="the-channel-interpretation">The channel interpretation</h3>
+<p><strong>The Bures metric is the metric of the channel category, and this is why it cannot see the boost.</strong> The Bures metric is monotone under completely positive trace-preserving maps, which is Petz's theorem, and it is the smallest of the monotone metrics. A monotone metric is one for which every channel is a contraction, so its isometries must be realised by channels that are themselves reversible, and the reversible channels are the unitary ones. So the isometries of the Bures metric are the unitary channels, and in this algebra those are the rotations.</p>
+<p><strong>The two maps of a boost fall outside the category for different reasons, and both reasons are fatal.</strong> The linear congruence is completely positive and not trace-preserving, so it is not a channel but a subnormalised one. The projected map is trace-preserving and not affine, so it is not a channel at all. The Bures metric is a metric of the first category, and a frame change belongs to neither.</p>
+<p><strong>This is the content of the dividing line.</strong> The Bures metric does not see the boost because the boost is not in the category whose metric the Bures metric is. It is not that the metric is insensitive by accident; it is that the metric was selected for a different purpose. Asking the Bures metric to compare two frames is like asking a ruler to weigh.</p>
+<h2 id="what-the-bures-metric-sees">What the Bures Metric Sees</h2>
+<h3 id="the-latitude-and-the-entropy">The latitude and the entropy</h3>
+<p><strong>The visible coordinates are the latitude and the relative angle, and both are functions the corpus already uses.</strong> Write the lift of the state as
+$$
+\mathsf{w}(\vec s_{\Psi})=\bigl(\sqrt{1-r^{2}},\ \vec s_{\Psi}\bigr)\in\mathbb{R}^{4},
+$$
+a unit vector of the round three-sphere, with $r=\sin\alpha$ and $\alpha\in[0,\pi/2]$ the latitude. The Bures distance is half the angle between two lifts, $d_{B}=\tfrac12\arccos\langle\mathsf{w}_1,\mathsf{w}_2\rangle$, which is the hemisphere statement of the companion article; verified on a hundred random pairs to $9.7\times10^{-16}$.</p>
+<p><strong>The linear entropy is the square of the height above the equatorial plane.</strong> On the slice $S_{\mathrm{lin}}=\tfrac12(1-r^{2})=\tfrac12\cos^{2}\alpha$, and $\cos\alpha$ is the first coordinate of the lift. So the linear entropy is $\tfrac12\mathsf{w}_0^{2}$: a function of the latitude alone, and therefore a function the Bures metric sees exactly.</p>
+<p><strong>The distance from the pole is the other half of the same pair of coordinates.</strong> For a state of radius $r$,
+$$
+d_{B}\bigl(\vec 0,\vec s_{\Psi}\bigr)=\tfrac12\arcsin r ,
+$$
+which follows from the lift at once: the centre lifts to $(1,\vec 0)$ and the angle to $\mathsf{w}$ has cosine $\sqrt{1-r^{2}}$. Verified against the fidelity formula on a hundred states, worst deviation $6.5\times10^{-16}$.</p>
+<h3 id="the-relative-angle">The relative angle</h3>
+<p><strong>The Bures distance depends on three numbers and on nothing else.</strong> It depends on $r$, on $r'$ and on $\vec s_{\Psi}\cdot\vec s_{\Psi}'$; it does not depend on the direction of either state. That is the statement that the isometry group contains the rotations, and the companion article proves that it contains nothing else: the isometry group is $O(3)$, of dimension three, against the six of the group.</p>
+<p><strong>So the metric sees the shape of a configuration and not its placement.</strong> Two states at the same radii and the same mutual angle are at the same Bures distance wherever they sit in the ball. Everything the metric can say is said in the pair $(r,r')$ and the angle between them, and the direction of the pair is invisible.</p>
+<h2 id="what-the-metric-cannot-see">What the Metric Cannot See</h2>
+<h3 id="the-pole-moves">The pole moves</h3>
+<p><strong>The latitude is measured from a state, and a boost moves that state.</strong> The pole of the hemisphere is the maximally mixed state, $\vec s_{\Psi}=0$. A boost carries it to radius $\tanh\theta_{\mathrm{rpd}}$, hence to latitude $\alpha=\arcsin(\tanh\theta_{\mathrm{rpd}})$, and the numbers are the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\theta_{\mathrm{rpd}}$</th>
+<th>the radius of the image of the pole</th>
+<th>its latitude $\alpha$</th>
+<th>its Bures distance from the pole</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0.5$</td>
+<td>$0.462117$</td>
+<td>$0.480381$</td>
+<td>$0.240191$</td>
+</tr>
+<tr>
+<td>$1.0$</td>
+<td>$0.761594$</td>
+<td>$0.865769$</td>
+<td>$0.432885$</td>
+</tr>
+<tr>
+<td>$2.0$</td>
+<td>$0.964028$</td>
+<td>$1.301760$</td>
+<td>$0.650880$</td>
+</tr>
+<tr>
+<td>$3.0$</td>
+<td>$0.995055$</td>
+<td>$1.471304$</td>
+<td>$0.735652$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The interpretation is that the trivial state of one frame is not the trivial state of another.</strong> The pole is the maximally mixed state, and a boost carries it off the pole. What the boost changes is the normalisation against which the state is counted, not the element that the framework counts. So "this state is more mixed than that one" is a comparison that requires a frame, and the latitude is a coordinate of the frame rather than a property of the state. The corpus records the same fact for the thermal state in a moving frame.</p>
+<h3 id="the-order-by-purity-is-not-invariant">The order by purity is not invariant</h3>
+<p><strong>Two states can exchange their order by purity under a boost, and the exchange is easy to exhibit.</strong> Take the states $\vec s_{\Psi}=(0.3,0,0)$ and $\vec s_{\Psi}'=(-0.35,0,0)$ and boost along $\vec e_x$ with rapidity $1$. The first has the smaller radius before and the larger after, and both distances from the pole move with it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the radius before</th>
+<th>$d_{B}$ from the pole before</th>
+<th>the radius after</th>
+<th>$d_{B}$ from the pole after</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec s_{\Psi}=(0.3,0,0)$</td>
+<td>$0.3000$</td>
+<td>$0.152346$</td>
+<td>$0.8642$</td>
+<td>$0.521733$</td>
+</tr>
+<tr>
+<td>$\vec s_{\Psi}'=(-0.35,0,0)$</td>
+<td>$0.3500$</td>
+<td>$0.178786$</td>
+<td>$0.5612$</td>
+<td>$0.297906$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The order reverses and the distance between the two states changes.</strong> Before the boost the pair is at $d_{B}=0.331132$; after it is at $d_{B}=0.223827$. So a statement of the form "this state is purer than that one" has no frame-independent truth value, and no Bures distance can supply one, because the distance itself is not preserved.</p>
+<p><strong>This is not a paradox and it is worth saying why.</strong> Purity is the distance from the maximally mixed state, and that state is frame-dependent by the previous subsection. Any ordering built on it inherits the dependence. The invariant object is the biquaternion norm of the element, which is another number entirely, and the previous article shows that it does not move.</p>
+<h3 id="the-third-law">The third law</h3>
+<p><strong>The pure boundary is at finite Bures distance, so the metric cannot express the third law.</strong> The distance from the centre to the boundary is $\pi/4=0.785398$, and the diameter of the ball is $\pi/2$, attained by two orthogonal pure states. Both are finite. In the Klein metric the same boundary is at infinite distance, and that is the metric in which "unreachable" is a statement about distance.</p>
+<p><strong>The approach to the boundary is exponential in the rapidity, and this is the quantitative form of the difference.</strong> A path that runs along an axis with increasing rapidity sits at radius $\tanh\theta_{\mathrm{rpd}}$, and its Bures distance to the boundary point in the same direction is
+$$
+d_{B}=\tfrac12\arccos\bigl(\tanh\theta_{\mathrm{rpd}}\bigr),
+$$
+which tends to $e^{-\theta_{\mathrm{rpd}}}$ for large rapidity. The table records the ratio, and it tends to one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\theta_{\mathrm{rpd}}$</th>
+<th>the radius</th>
+<th>$d_{B}$ to the boundary</th>
+<th>$e^{-\theta_{\mathrm{rpd}}}$</th>
+<th>the ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$0.761594$</td>
+<td>$0.352513$</td>
+<td>$0.367879$</td>
+<td>$0.958$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$0.964028$</td>
+<td>$0.134518$</td>
+<td>$0.135335$</td>
+<td>$0.994$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$0.995055$</td>
+<td>$0.049746$</td>
+<td>$0.049787$</td>
+<td>$0.999$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0.999329$</td>
+<td>$0.018314$</td>
+<td>$0.018316$</td>
+<td>$1.000$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$0.999909$</td>
+<td>$0.006738$</td>
+<td>$0.006738$</td>
+<td>$1.000$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the boundary is near in the Bures metric and unreachable in the group.</strong> Every finite rapidity leaves a finite gap; the gap shrinks exponentially and never closes. A statement of the third law is therefore a statement about the unboundedness of the group parameter, and any argument that rests on "the boundary is infinitely far" is an argument in the Klein metric that has been written in the wrong metric. If the rapidity of the path is the temperature parameter, which is the identification the thermal companion proposes, then the gap is $e^{-\beta\lvert\vec h_{\Psi}\rvert}$ and the third law is the statement that it does not vanish at finite $\beta$.</p>
+<h2 id="the-conformal-group-on-the-boundary">The Conformal Group on the Boundary</h2>
+<h3 id="the-boundary-metric">The boundary metric</h3>
+<p><strong>The group survives on the boundary, where it acts conformally and not isometrically.</strong> The boundary is the set of pure states, a sphere, and the congruence group acts on it by Möbius transformations. A Möbius map scales the round metric by a point-dependent factor and preserves every angle. The check is the isotropy of the scale factor: at a hundred random points and boosts, the two principal scale factors of the map agree to $1.2\times10^{-6}$, which is the accuracy of the finite-difference probe and not a defect of the map.</p>
+<p><strong>The lengths change, and the change is large.</strong> Two orthogonal pure states are at $1.570796$ rad on the sphere; after a boost of rapidity $1$ they are at $0.952036$ rad. So the boundary metric is not preserved and its conformal class is.</p>
+<p><strong>This is the resolution of the apparent contradiction between the two pictures.</strong> The Bures metric sees no boost inside the ball, and the group sees every boost on the boundary up to scale. The two statements are consistent because a conformal map is not an isometry: it preserves the angles and the circles, which is what the celestial-sphere article uses, and it does not preserve the distances, and distance is what the Bures metric measures.</p>
+<h3 id="what-the-conformal-class-buys">What the conformal class buys</h3>
+<p><strong>The invariant object on the boundary is the conformal class of the round metric, and the group acts on it faithfully.</strong> A statement written in angles, in cross ratios or in circles is a statement the group can carry; a statement written in lengths is not. That is a usable criterion for the corpus: any sentence about the pure states that is to be frame-independent must be conformal, and any sentence that uses a length is tied to a frame.</p>
+<p><strong>The criterion also explains the Kähler structure.</strong> The companion article proves that the Fubini–Study metric on the boundary is one quarter of the round metric and that the complex structure is supplied by the commutator. A Möbius map preserves the conformal class and the circles, so it preserves the complex structure up to the same scale. The algebra's complex structure therefore survives the group on the boundary, and the flat metric of the interior, which is not the Bures metric, does not.</p>
+<h2 id="objections">Objections</h2>
+<p><strong>The objection is that the Bures metric is the physical metric on states, so an article that measures a metric by its isometry group has chosen the wrong yardstick.</strong> Distinguishability is what a measurement returns, and the Bures metric is the minimal monotone metric; a metric that no boost preserves is then a metric that correctly records that a boost changes what can be distinguished.</p>
+<p><strong>The answer is that both metrics are physical and they answer different questions.</strong> The Bures metric answers how far apart two states are for an observer who has already fixed a frame; the Klein metric answers how far apart two frames are. A boost changes the first because it changes the state, and preserves the second because it is a change of frame. Neither statement is more fundamental, and the one that is wrong is the one that is used outside its category.</p>
+<p><strong>A second objection is that the article's equivalence is a tautology.</strong> Trace preservation, slice preservation and unitarity are three descriptions of one condition, and the article proves nothing new.</p>
+<p><strong>The answer is that the equivalence is not a tautology but a dictionary, and the dictionary has consequences.</strong> The three descriptions come from three different vocabularies, and each one supplies a fact the others do not: unitarity supplies the isometry of two metrics, slice preservation supplies the boundary of the state space, and trace preservation supplies the channel category and with it the monotonicity of the Bures metric. The content is in the last one, and it is the reason the title is a statement about a category and not about a formula.</p>
+<p><strong>A third objection is that the boost is a symmetry of the theory, so a metric that breaks it must be an artefact.</strong> The answer is that the boost is a symmetry of the algebra and not of the state space: it acts on the cone and not on the section. A metric on the section has no reason to inherit a symmetry of the cone, and the Bures metric does not. The Klein metric does inherit it, and that is exactly why it is not monotone under channels.</p>
+<h2 id="what-is-not-claimed">What Is Not Claimed</h2>
+<p><strong>It does not rank the two metrics.</strong> Each is the metric of a category, and the article's point is that the categories are different. A reader who takes "cannot see" as a defect has the wrong picture: a ruler that cannot weigh is not a bad ruler.</p>
+<p><strong>It does not say that entropy is subjective.</strong> The entropy of a state is a function of its radius, and every observer agrees on it once the state is agreed. What runs under a boost is the radius of the projected image, and the previous article establishes that.</p>
+<p><strong>It does not give a dynamics.</strong> The channel category is where dynamics lives, and the article says that the frame changes are outside it. That is a statement about what a frame change is not, and it leaves the question of what a thermalisation is exactly where the thermal-path article leaves it.</p>
+<p><strong>It does not prove the isometry group is $O(3)$.</strong> That is the companion article's result, cited and used. What is proved here is the equivalence of the three descriptions and the consequences that follow from the hemisphere picture.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The group splits into a boost and a rotation, and only the rotation preserves $2\,\mathrm{Sc}$.</strong> The polar decomposition $\tilde U=\tilde L\tilde R$ is unique, the linear congruence by $\tilde U$ preserves $2\,\mathrm{Sc}$ for every element if and only if $\tilde U$ is unitary, and on the group that means $\tilde L=1$. So the congruences that carry states to states are the rotations, which is why the state space is preserved by $U(2)$ and by nothing larger.</p>
+<p><strong>The Bures metric is the metric of the channel category, and a boost is not a channel.</strong> The linear congruence of a boost is completely positive and not trace-preserving; the projected map is trace-preserving and not affine, with a non-affinity of $0.0112$ against $1.1\times10^{-16}$ for a rotation. The Bures metric is monotone under channels and its isometries are the unitary channels, which are the rotations. So the metric is blind to the boost for a structural reason and not by accident.</p>
+<p><strong>Four consequences follow, and each is a number.</strong> The pole moves to latitude $\arcsin(\tanh\theta_{\mathrm{rpd}})$, so purity is a frame-dependent coordinate. Two states at radii $0.30$ and $0.35$ reverse their order under a boost of rapidity one, becoming $0.8642$ and $0.5612$. The pure boundary is at the finite Bures distance $\pi/4$, and the gap along such a path closes as $e^{-\theta_{\mathrm{rpd}}}$, so the third law is a statement about the group parameter and not about distance.</p>
+<p><strong>What survives is the conformal class of the boundary.</strong> A boost scales the round metric of the pure-state sphere by a point-dependent factor and by the same factor in every direction at a point — the two principal scale factors agree to $1.2\times10^{-6}$ — while the lengths change, from $1.570796$ to $0.952036$ rad on the sample pair. So the group acts on the boundary by conformal maps, and that is the only place where the full six-dimensional action is visible in the geometry of the state space.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{Ϛ}_{\Psi}$</td>
+<td>the state $\tfrac12(e_t+i\vec s_{\Psi})$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>the radius $\lvert\vec s_{\Psi}\rvert$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the latitude, $r=\sin\alpha$</td>
+</tr>
+<tr>
+<td>$\mathsf{w}$</td>
+<td>the lift $(\sqrt{1-r^{2}},\vec s_{\Psi})$ to the unit three-sphere</td>
+</tr>
+<tr>
+<td>$d_{B}$</td>
+<td>the Bures distance, $\arccos F$</td>
+</tr>
+<tr>
+<td>$d_{K}$</td>
+<td>the Cayley–Klein distance</td>
+</tr>
+<tr>
+<td>$F$</td>
+<td>the fidelity, $\cos d_{B}$</td>
+</tr>
+<tr>
+<td>$\tilde L$</td>
+<td>the boost factor of the polar split, Hermitian of unit norm</td>
+</tr>
+<tr>
+<td>$\tilde R$</td>
+<td>the rotation factor, real of unit norm</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$</td>
+<td>the rapidity of a boost</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}$</td>
+<td>the doubled scalar part; the trace of the $2\times2$ image</td>
+</tr>
+<tr>
+<td>$S_{\mathrm{lin}}$</td>
+<td>the linear entropy $\tfrac12(1-r^{2})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>D. Petz, "Monotone metrics on matrix spaces", <em>Linear Algebra and its Applications</em> 244 (1996) 81–96 — the monotone metrics, the Bures metric as the minimal one, and the role of complete positivity</li>
+<li>A. Uhlmann, "The 'transition probability' in the state space of a *-algebra", <em>Reports on Mathematical Physics</em> 9 (1976) 273–279 — the transition probability and the Bures distance</li>
+<li>I. Bengtsson and K. Życzkowski, <em>Geometry of Quantum States</em>, 2nd ed., Cambridge University Press, 2017 — the Bloch ball, the Bures metric, the hemisphere and the monotonicity</li>
+<li>M. A. Nielsen and I. L. Chuang, <em>Quantum Computation and Quantum Information</em>, Cambridge University Press, 2000 — the fidelity, the trace distance and the channel category</li>
+<li>A. A. Ungar, <em>Analytic Hyperbolic Geometry and Albert Einstein's Special Theory of Relativity</em>, World Scientific, 2008 — the Klein model and its isometry group</li>
+<li><em>The Fubini–Study Geometry and the Biquaternion Norm</em> — the hemisphere of radius $\tfrac12$, its isometry group $O(3)$ and the Bures line element</li>
+<li><em>The Lorentz Group on the Bloch Ball: Projective Action and Two Metrics</em> — the congruence as a Lorentz transformation, the projective action and the two metrics</li>
+<li><em>States, Observables and the Born Weight</em> — the state slice and the unitary group as its stabiliser</li>
+<li><em>Quantum Channels and the Reversible/Irreversible Dichotomy</em> — the channel category and the unitary channels inside it</li>
+<li><em>Fisher Information and the Biquaternion Norm</em> — the Fisher form as four times the Bures form</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
