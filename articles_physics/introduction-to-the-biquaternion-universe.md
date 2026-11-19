@@ -1,5 +1,7 @@
 # __Introduction to the Biquaternion Universe__
 
+In theoretical physics, progress often begins by finding the right algebraic arena — a single mathematical structure in which seemingly separate phenomena appear as complementary facets of one object. Standard physics treats special relativity and quantum mechanics in distinct formalisms: real four-vectors and Lorentzian intervals on one side, complex Hilbert spaces and Hermitian operators on the other. This programme begins with the observation that both structures already live inside a single eight-dimensional algebra, the biquaternions $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, splitting cleanly into its anti-Hermitian material subspace $\mathbb{B}_\Phi$ and its Hermitian informational subspace $\mathbb{B}_\Psi$. Unifying the two sectors at the algebraic level does not alter their established predictions; instead, it puts causal geometry, spinor symmetries, quantum states, and measurement rules into a common language — exposing cross-sector links and structural constraints that remain hidden when the two theories are kept apart.
+
 ## Core Proposal
 
 The fundamental structure of the universe is a biquaternionic space, of which Minkowski space is a slice. A point in this complexified spacetime is an element of the **biquaternion algebra** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, written as a biquaternionic coordinate
@@ -215,6 +217,8 @@ What is not established is whether the framework has consequences beyond a refor
 5. **Curved spacetime.** The framework so far is formulated on flat spacetime. Its extension to curved spacetime, and its relation to general relativity, remain open.
 
 6. **Empirical contact.** What quantitative prediction distinguishes this framework from standard physics? This is the central open question, and the one on which the eventual evaluation of the hypothesis will depend.
+
+From that shared foundation, the programme investigates where this algebraic unity leads next: whether cross-sector couplings generate new dynamics, how single-qubit geometry extends to multi-qubit tensor spaces $\mathbb{B}^{\otimes n}$ and quantum fields, and how a local complex structure generalizes to curved spacetime.
 
 The framework is offered as a structural intuition: that the two natural subspaces of the biquaternion algebra have distinct physical roles — one material, one informational — and that the algebra $\mathbb{B}$ is the natural home in which both relativity and quantum physics are expressed. The local speed of light $c = 1/\sqrt{\epsilon\mu}$ is the local scale of the complex structure. Since the four coefficients are lengths, that scale does not appear in the element itself; it appears in the conversion $t=q'_t/c$, and in the numbers a clock and a ruler report of the same point. The vacuum case $c=c_0$ is the special case of it, in the same way that special relativity is a local approximation of general relativity.
 
