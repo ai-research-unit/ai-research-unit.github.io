@@ -4,7 +4,7 @@ In theoretical physics, progress often begins by finding the right algebraic are
 
 ## Core Proposal
 
-The fundamental structure of the universe is a biquaternionic space, of which Minkowski space is a slice. A point in this complexified spacetime is an element of the **biquaternion algebra** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, written as a biquaternionic coordinate
+The central hypothesis of this programme is that the biquaternion algebra is not merely a convenient representation of known physics, but the underlying structure from which the familiar relativistic and quantum sectors arise. What is mathematics is stated as such: the algebra carries a definite form, a Lorentzian form and a positive cone, and those facts hold whatever the universe turns out to be. What is hypothesis is the further claim that this structure is the one nature uses. A point of that space is an element of the **biquaternion algebra** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, written as a biquaternionic coordinate
 
 $$
 \tilde{Q} = Q_t e_t + \vec Q = Q_t e_t + Q_x \vec e_x + Q_y \vec e_y + Q_z \vec e_z,
@@ -16,9 +16,9 @@ $$
 Q_t = q_t + iq'_t, \qquad Q_x = q_x + iq'_x, \qquad Q_y = q_y + iq'_y, \qquad Q_z = q_z + iq'_z, \qquad q_\mu, q'_\mu \in \mathbb{R},
 $$
 
-replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the eight parameters are the coordinates of one point. Where the prime falls tells the sector: the material four are $q'_t$ together with $q_x, q_y, q_z$, the informational four are $q_t$ together with $q'_x, q'_y, q'_z$. The four coefficients are lengths, and the two temporal parameters are lengths as well, so one element carries one unit in all four of its directions and no constant stands between the parameters. The prime therefore marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and it splits naturally into two four-dimensional real subspaces — one taking $q'_t$ together with $q_x, q_y, q_z$, the other taking $q_t$ together with $q'_x, q'_y, q'_z$. The complex structure — the identification of which direction is "real" and which is "imaginary" — is **local**, determined by the electromagnetic properties of the medium at each point.
+replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the eight parameters are the coordinates of one point. Which parameter belongs to which sector is decided below, in *The Complex Coordinates*, once the two sectors have been named. The four coefficients are lengths, and the two temporal parameters are lengths as well, so one element carries one unit in all four of its directions and no constant stands between the parameters. The prime therefore marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and it splits into two four-dimensional real subspaces; which four parameters each takes is stated in *The Complex Coordinates*. The complex structure — the identification of which direction is "real" and which is "imaginary" — is **local**, determined by the electromagnetic properties of the medium at each point.
 
-The hypothesis of this article is that this biquaternionic structure is the natural language in which the fundamental structures of physics are written, and that the fact that the framework contains both relativity and quantum physics is evidence for the proposal.
+The evidence currently available for this hypothesis is structural rather than empirical: the same algebra naturally contains both the relativistic and quantum frameworks, together with relationships between them that become visible only when they are expressed in a common algebraic language.
 
 ## Two Sectors: Material and Informational
 
