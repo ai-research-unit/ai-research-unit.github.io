@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tensor Product of Two Biquaternion Algebras — Biquaternion Universe</title>
+  <meta name="description" content="The tensor product of two copies of is not a biquaternion algebra, and there are two tensor products to compute. This article computes both: the complex…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-tensor-product-of-two-biquaternion-algebras"><strong>The Tensor Product of Two Biquaternion Algebras</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The tensor product of two copies of $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is not a biquaternion algebra, and there are two tensor products to compute. This article computes both: the complex one, $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_4(\mathbb{C})$, of complex dimension sixteen, and the real one, $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, of real dimension sixty-four. It also computes what happens to the two structures the algebra carries: the star, which survives only in its total form, and the sector splitting, which does not survive at all but leaves a parity rule behind.</p>
+<p>The article is the algebra behind the multi-qubit extension in the physics corpus. What is computed here is used there: <a href="../articles_physics/composite-systems-and-the-multi-qubit-extension.html">Composite Systems and the Multi-Qubit Extension</a> for the two routes, <a href="../articles_physics/the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.html">The Multi-Qubit Split, I</a> for the obstruction and the collapse, and <a href="../articles_physics/the-multi-qubit-split-ii-the-sign-condition-the-concurrence-form-and-the-central-bit.html">The Multi-Qubit Split, II</a> for the central bit. The algebra is in <a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>; the star is in <a href="the-group-of-involutions.html">The Group of Involutions</a>; the decompositions are in <a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>; the modules are in <a href="the-category-of-modules.html">The Category of Modules in the Biquaternion Algebra</a>.</p>
+<p><strong>The four results.</strong> First, the complex tensor product is a full matrix algebra of degree four, central simple with no non-trivial two-sided ideal, and not isomorphic to $\mathbb{B}$. Second, the partial star does not descend to it, so there is no per-factor sector label; the total star does descend, so one global label survives. Third, in the complex tensor product the four sector corners collapse pairwise, because a material unit of one factor is $i$ times an informational unit and $i\otimes i=-1$. Fourth, over $\mathbb{R}$ the algebra doubles and a central involution splits it into two matrix algebras, which is where the central bit of the physical description comes from.</p>
+<h2 id="the-two-tensor-products">The Two Tensor Products</h2>
+<p><strong>Over $\mathbb{R}$.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is a real algebra of dimension eight, with centre $\mathbb{C}e_t$ of real dimension two. The real tensor product $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}$ has real dimension sixty-four and centre of real dimension four.</p>
+<p><strong>Over $\mathbb{C}$.</strong> The complex tensor product is the quotient</p>
+<p>$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}=\bigl(\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}\bigr)\big/\bigl(i\otimes e_t-e_t\otimes i\bigr),
+$$</p>
+<p>that is, the real tensor product with the two central scalars identified. Its dimension over $\mathbb{C}$ is sixteen, and over $\mathbb{R}$ thirty-two. The single relation is the whole difference between the two objects: every other product is untouched, so $e_t\otimes\vec e_x$ and $\vec e_x\otimes e_t$ remain distinct, and the quaternion units of the two factors do not commute by fiat.</p>
+<p><strong>The universal property, stated to fix the reading.</strong> For any complex algebra $A$ and any pair of $\mathbb{C}$-algebra maps $f_1,f_2:\mathbb{B}\to A$, there is a unique $\mathbb{C}$-algebra map $f:\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\to A$ with $f(x\otimes e_t)=f_1(x)$ and $f(e_t\otimes y)=f_2(y)$. So the complex tensor product is the algebra of pairs of commuting copies of $\mathbb{B}$, and the real tensor product is the algebra of pairs of copies with independent centres.</p>
+<p><strong>A dimension table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>field</th>
+<th>dimension</th>
+<th>centre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>$\mathbb{R}$</td>
+<td>$8$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}$</td>
+<td>$\mathbb{R}$</td>
+<td>$64$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$</td>
+<td>$\mathbb{C}$</td>
+<td>$16$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-complex-tensor-product">The Complex Tensor Product</h2>
+<p><strong>The theorem.</strong> $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_4(\mathbb{C})$.</p>
+<p><em>Proof.</em> $\mathbb{B}\cong M_2(\mathbb{C})$ as a complex algebra, and the tensor product of matrix algebras is the matrix algebra of the product of the degrees: $M_m(\mathbb{C})\otimes_{\mathbb{C}}M_n(\mathbb{C})\cong M_{mn}(\mathbb{C})$ through the Kronecker product. With $m=n=2$ the degree is four. $\square$</p>
+<p><strong>The consequences of being a full matrix algebra.</strong> $M_4(\mathbb{C})$ is simple, so it has no two-sided ideal other than $0$ and the whole algebra; it is central, so its centre is $\mathbb{C}\mathrm I_4$, of complex dimension one; it is the endomorphism algebra of a four-dimensional complex space, unique up to isomorphism; and every automorphism is inner, so $\operatorname{Aut}(M_4)=\mathrm{PGL}_4(\mathbb{C})$.</p>
+<p><strong>The consequence that matters for the sectors.</strong> A decomposition of an algebra into a direct sum of two-sided ideals is the same thing as a family of central idempotents summing to one. Since the centre of $M_4(\mathbb{C})$ is one-dimensional, its only idempotents are $0$ and $1$, so there is no such decomposition. <strong>The complex tensor product admits no sector decomposition into two-sided ideals, at any level.</strong></p>
+<p><strong>The explicit isomorphism.</strong> In the Pauli model $e_t=\mathrm I_2$ and $\vec e_k=i\sigma_k$, so</p>
+<p>$$
+e_\mu\otimes e_\nu\;\longmapsto\;\mathsf M_2(e_\mu)\otimes\mathsf M_2(e_\nu)\in M_2(\mathbb{C})\otimes M_2(\mathbb{C})=M_4(\mathbb{C}),
+$$</p>
+<p>and the sixteen products $e_\mu\otimes e_\nu$ are a complex basis of the image. The identification of the two central scalars is the identification of $i\mathrm I_2\otimes\mathrm I_2$ with $\mathrm I_2\otimes i\mathrm I_2$, which is $i\mathrm I_4$ in both cases.</p>
+<p><strong>The reading of the degree.</strong> The degree of the tensor product is the product of the degrees, so $2\cdot2=4$. This is the whole of the obstruction to a biquaternion reading of two qubits: a biquaternion algebra has degree two, and no relabelling changes a degree. Four amplitudes per subsystem give sixteen amplitudes, which is the square of four and not four.</p>
+<h2 id="the-star-on-the-complex-tensor-product">The Star on the Complex Tensor Product</h2>
+<p><strong>The total star descends.</strong> Let $\sigma_{\mathrm{tot}}={}^{*}\otimes{}^{*}$ on $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}$. It preserves the quotient relation, since</p>
+<p>$$
+\sigma_{\mathrm{tot}}\bigl(i\otimes e_t-e_t\otimes i\bigr)=(-i)\otimes e_t-e_t\otimes(-i)=-\bigl(i\otimes e_t-e_t\otimes i\bigr),
+$$</p>
+<p>so it induces an involution $\bar\sigma_{\mathrm{tot}}$ of $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$. Under the isomorphism with $M_4(\mathbb{C})$ it is the Hermitian adjoint $X\mapsto X^{\dagger}$, and its fixed space is $\mathrm{Herm}(M_4(\mathbb{C}))$, of real dimension sixteen, half of thirty-two.</p>
+<p><strong>The partial star does not descend.</strong> Let $\sigma_1={}^{*}\otimes\mathrm{id}$. Then</p>
+<p>$$
+\sigma_1\bigl(i\otimes e_t-e_t\otimes i\bigr)=(-i)\otimes e_t-e_t\otimes i ,
+$$</p>
+<p>whose class in the quotient is $-2\,(i\otimes e_t)$, that is $-2i\mathrm I_4$, which is nonzero. Since a map descends to a quotient exactly when it carries the ideal into itself, no induced map exists.</p>
+<p><strong>Why the partial star had no chance, in algebraic terms.</strong> $\sigma_1$ is not an algebra map, because the star reverses the order of a product; and it is not an anti-algebra map either, since the reversal would have to be applied in both slots while $\sigma_1$ applies it in one. So the candidate for a per-factor label reverses the order in one factor and preserves it in the other, and no such map is an involution of an algebra of pairs. Its natural home is $\mathbb{B}^{\mathrm{op}}\otimes\mathbb{B}$, and the identification of $\mathbb{B}$ with its opposite does not carry the star to the identity.</p>
+<p><strong>The count of the involutions.</strong> Of the four maps built from the two stars — the identity, the two partial stars, the total star — the two partial ones fail to descend and the total one descends. So the tensor product carries exactly one sector involution, and its eigenspaces are the Hermitian and anti-Hermitian parts. The label that survives labels the whole and not a factor.</p>
+<h2 id="the-real-tensor-product">The Real Tensor Product</h2>
+<p><strong>The theorem.</strong> $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$.</p>
+<p><em>Proof.</em> Factor the algebra: $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}=(\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C})\otimes_{\mathbb{R}}(\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H})$. The scalar extension is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ through $a\otimes b\mapsto(ab,\bar a b)$, and the quaternion tensor square is $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$. Hence the algebra is $(\mathbb{C}\oplus\mathbb{C})\otimes_{\mathbb{R}}M_4(\mathbb{R})\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$. $\square$</p>
+<p><strong>The dimension check.</strong> Each summand is sixteen over $\mathbb{C}$, that is thirty-two over $\mathbb{R}$, and there are two, for sixty-four, which is $8\cdot8$.</p>
+<p><strong>The isomorphism made explicit.</strong> $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$ is the regular representation of one factor on the other, and the two copies of $\mathbb{C}$ are the two characters of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$: the pairs $(a\otimes b)\mapsto ab$ and $(a\otimes b)\mapsto\bar ab$. So the two summands are the complex tensor product and the tensor product against the conjugate algebra.</p>
+<h2 id="the-centre-and-the-central-involution">The Centre and the Central Involution</h2>
+<p><strong>The centre.</strong> The centre of $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}$ is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$, of real dimension four, with real basis $e_t\otimes e_t$, $i\otimes e_t$, $e_t\otimes i$ and $i\otimes i$.</p>
+<p><strong>The central involution.</strong> Put $\mathsf J=i\otimes i$. Then</p>
+<p>$$
+\mathsf J^{2}=i^{2}\otimes i^{2}=(-e_t)\otimes(-e_t)=e_t\otimes e_t ,
+$$</p>
+<p>so $\mathsf J$ is an involution, and it is central because $i$ is central in each factor.</p>
+<p><strong>The idempotents.</strong></p>
+<p>$$
+u=\tfrac12\bigl(e_t\otimes e_t+\mathsf J\bigr),\qquad v=\tfrac12\bigl(e_t\otimes e_t-\mathsf J\bigr),
+$$</p>
+<p>are central, idempotent, orthogonal and sum to the identity:</p>
+<p>$$
+u^{2}=u,\quad v^{2}=v,\quad uv=0,\quad u+v=e_t\otimes e_t .
+$$</p>
+<p><strong>The evaluation of $\mathsf J$.</strong> Under $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\to\mathbb{C}\oplus\mathbb{C}$, $a\otimes b\mapsto(ab,\bar a b)$, the element $i\otimes i$ maps to $\bigl(i\cdot i,\ (-i)\cdot i\bigr)=(-1,+1)$. So $\mathsf J$ is $-1$ on the summand cut by $v$ and $+1$ on the summand cut by $u$; and since $\mathsf J=u-v$ on the centre, $u\mathsf J=u$ and $v\mathsf J=-v$.</p>
+<p><strong>The two ideals.</strong> The summands are $u(\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B})$ and $v(\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B})$, each of real dimension thirty-two, each isomorphic to $M_4(\mathbb{C})$.</p>
+<h2 id="the-two-summands-and-the-physical-one">The Two Summands and the Physical One</h2>
+<p><strong>The summand cut by $v$ is the complex tensor product.</strong> There $\mathsf J=-1$, so</p>
+<p>$$
+\mathsf J=(i\otimes e_t)(e_t\otimes i)
+$$</p>
+<p>is the product of the two central scalars, and each of them squares to $i^{2}=-1$. Two equal scalars therefore multiply to $-1$, and a scalar and its conjugate multiply to $-i\,i=+1$. So the value of $\mathsf J$ is exactly the verdict on whether the two scalars agree, and $\mathsf J=-1$ says they do. Agreement is the relation that defines $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$, so this summand is the quotient, and it is $M_4(\mathbb{C})$.</p>
+<p><strong>The summand cut by $u$ is the tensor product against the conjugate algebra.</strong> There $\mathsf J=+1$, so $i\otimes e_t=-(e_t\otimes i)$: the second scalar is the negative of the first, that is the conjugate of the first. So the algebra is $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}}$, of the same size and with the opposite complex structure.</p>
+<p><strong>The naming is easy to invert, so the sign is checked against the explicit map.</strong> With $a\otimes b\mapsto(ab,\bar a b)$ and $i\otimes i\mapsto\bigl(i^{2},\bar i\,i\bigr)=(-1,+1)$, the first entry corresponds to the product $ab$, in which the two scalars are taken as they are, and the second to $\bar a b$, in which the first is conjugated. Since $u=\tfrac12(e_t\otimes e_t+\mathsf J)$ maps to $(0,1)$ and $v=\tfrac12(e_t\otimes e_t-\mathsf J)$ to $(1,0)$, the first entry — and therefore the summand with $\mathsf J=-1$, cut by $v$ — is the one in which the scalars agree. That is the complex tensor product.</p>
+<p><strong>Stated once, unambiguously.</strong> The physical summand, the complex tensor product $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$, is the one on which $\mathsf J=-1$, cut by $v=\tfrac12(e_t\otimes e_t-\mathsf J)$. The other summand, on which $\mathsf J=+1$ and cut by $u$, is $\mathbb{B}\otimes_{\mathbb{C}}\overline{\mathbb{B}}$.</p>
+<h2 id="the-corners-and-the-parity-rule">The Corners and the Parity Rule</h2>
+<p><strong>The four corners.</strong> For $a,b\in\mathbb{B}_\Psi$ and $a',b'\in\mathbb{B}_\Phi$, the four real subspaces</p>
+<p>$$
+C_{\Psi\Psi}=\operatorname{span}_{\mathbb{R}}\{a\otimes b\},\quad
+C_{\Phi\Phi}=\operatorname{span}_{\mathbb{R}}\{a'\otimes b'\},\quad
+C_{\Psi\Phi},\quad C_{\Phi\Psi},
+$$</p>
+<p>each of real dimension sixteen, are the corners that a per-factor sector decomposition would separate.</p>
+<p><strong>The corner identity.</strong> For a quaternion unit $\vec e_\mu$ the material element is $\vec e_\mu$ itself and the informational element it generates is $i\vec e_\mu$; in the complex tensor product $i\otimes i=-e_t\otimes e_t$, so</p>
+<p>$$
+(i\vec e_\mu)\otimes(i\vec e_\mu)=(i\otimes i)\bigl(\vec e_\mu\otimes\vec e_\mu\bigr)=-\bigl(\vec e_\mu\otimes\vec e_\mu\bigr).
+$$</p>
+<p>Hence $C_{\Psi\Psi}=C_{\Phi\Phi}$ and, by the same computation with one slot moved, $C_{\Psi\Phi}=C_{\Phi\Psi}$. <strong>The four corners are two spaces</strong>, each of real dimension sixteen, and together they are the whole algebra of thirty-two.</p>
+<p><strong>The parity rule.</strong> For $n$ factors and a decomposable tensor,</p>
+<p>$$
+\bigl(x_1\otimes\cdots\otimes x_n\bigr)^{*\otimes n}=(-1)^{k}\,x_1\otimes\cdots\otimes x_n ,
+$$</p>
+<p>where $k$ is the number of material factors. So the real span indexed by $k$ is the eigenspace of the total star for $(-1)^{k}$, and the $2^{n}$ corners collapse onto</p>
+<p>$$
+\bigoplus_{k\ \mathrm{even}}C_k=\mathrm{Herm}\bigl(M_{2^{n}}(\mathbb{C})\bigr),\qquad
+\bigoplus_{k\ \mathrm{odd}}C_k=\operatorname{anti\text{-}Herm}\bigl(M_{2^{n}}(\mathbb{C})\bigr),
+$$</p>
+<p>of real dimension $2^{2n-1}$ each.</p>
+<p><strong>A basis check at $n=2$.</strong> The sixteen tensors $e_\mu\otimes e_\nu$ with $e_\mu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ are Hermitian and independent, since in the Pauli model they are the products of two real bases of $\mathrm{Herm}(2)$, which form a real basis of $\mathrm{Herm}(2)\otimes_{\mathbb{R}}\mathrm{Herm}(2)\cong\mathrm{Herm}(4)$. So the corner has the dimension the count gives, and the equality of the two aligned corners is an equality of sixteen-dimensional spaces and not a containment.</p>
+<h2 id="the-star-on-each-summand">The Star on Each Summand</h2>
+<p><strong>The star preserves the summands.</strong> Since $\mathsf J^{*}=\mathsf J$ — each $i$ changes sign and there are two of them — the idempotents satisfy $u^{*}=u$ and $v^{*}=v$, so the total star restricts to each summand.</p>
+<p><strong>On either summand it is an involution of the second kind.</strong> The summand is a complex algebra and the star multiplies the complex scalar by $-1$; hence it is conjugate-linear, an involution, and its fixed space has real dimension sixteen, half of thirty-two. In the matrix model it is the Hermitian adjoint, and its fixed space is the Hermitian part.</p>
+<p><strong>What this does not give.</strong> An involution of the second kind is not a sector decomposition: its two eigenspaces are the Hermitian and anti-Hermitian parts, and the eigenspaces of a conjugate-linear map are real subspaces exchanged by multiplication by $i$, not ideals. So even on the summand where the labels would be expected, the surviving structure is one real grading and not a family of sectors.</p>
+<h2 id="what-the-tensor-product-is-not">What the Tensor Product Is Not</h2>
+<p><strong>It is not a biquaternion algebra.</strong> Its degree is four and a biquaternion algebra's degree is two. Consequently no element of it is a two-qubit state in the sense in which an element of $\mathbb{B}_\Psi$ is a one-qubit state: the Hermitian part has real dimension sixteen, and the state space has real dimension fifteen, so the states are a positivity cone inside it and not the whole of a slice that dimension alone would call the state space.</p>
+<p><strong>It has no sector decomposition.</strong> By simplicity there is no non-trivial central idempotent, hence no splitting into two-sided ideals. The corners exist as real subspaces and collapse; they are not ideals, and they are not stable under multiplication by $i$.</p>
+<p><strong>It has no per-factor star.</strong> By the non-descent theorem there is no involution of the quotient that acts as the star on one factor. So the object that a two-system sector structure would need does not exist, and the failure is a statement about the quotient and not about a choice of basis.</p>
+<p><strong>What it does have, and this is not nothing.</strong> It has the total star, hence one global label; it has the corners, hence a parity rule; and over $\mathbb{R}$ it has the central involution, hence a bit. The three are the exact residues of the sector structure, and each is computed above.</p>
+<h2 id="summary">Summary</h2>
+<p>The complex tensor product is $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_4(\mathbb{C})$, central simple of degree four, with centre $\mathbb{C}\mathrm I_4$; it is not a biquaternion algebra, and it has no non-trivial two-sided ideal, hence no sector decomposition. The partial star $\sigma_1={}^{*}\otimes\mathrm{id}$ does not descend, since it sends the relation $i\otimes e_t-e_t\otimes i$ to $-2i\mathrm I_4\neq0$; the total star ${}^{*}\otimes{}^{*}$ does descend, and is the Hermitian adjoint with fixed space of real dimension sixteen. In the quotient the corner identity $(i\vec e_\mu)\otimes(i\vec e_\mu)=-\vec e_\mu\otimes\vec e_\mu$ collapses the four corners onto two spaces of real dimension sixteen, and the parity rule generalises this to $n$ factors, where the $2^{n}$ corners collapse onto the Hermitian and anti-Hermitian parts of $M_{2^{n}}(\mathbb{C})$, of real dimension $2^{2n-1}$ each. Over $\mathbb{R}$ the algebra is $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, split by the central involution $\mathsf J=i\otimes i$, which is $-1$ on the summand where the two scalars agree and $+1$ on the summand where they are conjugate; the complex tensor product is the summand with $\mathsf J=-1$, cut by $v=\tfrac12(e_t\otimes e_t-\mathsf J)$. For $n$ factors there are $2^{n-1}$ summands.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}$</td>
+<td>the real tensor product, real dimension sixty-four, centre of dimension four</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_4(\mathbb{C})$</td>
+<td>the quotient by $i\otimes e_t-e_t\otimes i$, complex dimension sixteen</td>
+</tr>
+<tr>
+<td>$\sigma_1={}^{*}\otimes\mathrm{id}$</td>
+<td>the partial star; it does not descend</td>
+</tr>
+<tr>
+<td>$\sigma_{\mathrm{tot}}={}^{*}\otimes{}^{*}$</td>
+<td>the total star; it descends, and is the Hermitian adjoint</td>
+</tr>
+<tr>
+<td>$\mathsf J=i\otimes i$</td>
+<td>the central involution of the real tensor product</td>
+</tr>
+<tr>
+<td>$u=\tfrac12(e_t\otimes e_t+\mathsf J)$</td>
+<td>the idempotent of the summand where the scalars are conjugate</td>
+</tr>
+<tr>
+<td>$v=\tfrac12(e_t\otimes e_t-\mathsf J)$</td>
+<td>the idempotent of the summand where the scalars agree, that is the complex tensor product</td>
+</tr>
+<tr>
+<td>$C_{\Psi\Psi}=C_{\Phi\Phi}=\mathrm{Herm}(M_4)$</td>
+<td>the corner collapse</td>
+</tr>
+<tr>
+<td>$(-1)^{k}$</td>
+<td>the eigenvalue of ${}^{*\otimes n}$ on a tensor with $k$ material factors</td>
+</tr>
+<tr>
+<td>$2^{2n-1}$</td>
+<td>the real dimension of each surviving space at $n$ factors</td>
+</tr>
+<tr>
+<td>$2^{n-1}$</td>
+<td>the number of summands of $\mathbb{B}^{\otimes_{\mathbb{R}}n}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-biquaternion-algebra.html">The Biquaternion Algebra</a>, for the algebra, its basis and its structure map.</li>
+<li><a href="the-group-of-involutions.html">The Group of Involutions</a>, for the star, the quaternion conjugation and their Klein group.</li>
+<li><a href="subspaces-and-decompositions-of-the-biquaternion-algebra.html">Subspaces and Decompositions of the Biquaternion Algebra</a>, for the six subspaces and the blocks $A_1,A_2,B_1,B_2$ used in the parity rule.</li>
+<li><a href="the-category-of-modules.html">The Category of Modules in the Biquaternion Algebra</a>, for the module theory, including the fact that every module over $M_4(\mathbb{C})$ is a sum of copies of $\mathbb{C}^4$.</li>
+<li><a href="families-of-matrix-representations.html">Families of Matrix Representations</a>, for the left and right families behind the explicit isomorphism.</li>
+<li><a href="the-three-canonical-forms-on-c2.html">The Three Canonical Forms on $\mathbb{C}^2$</a>, for the forms on the space the tensor product acts on.</li>
+<li><a href="../articles_physics/composite-systems-and-the-multi-qubit-extension.html">Composite Systems and the Multi-Qubit Extension</a>, <a href="../articles_physics/the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.html">The Multi-Qubit Split, I</a> and <a href="../articles_physics/the-multi-qubit-split-ii-the-sign-condition-the-concurrence-form-and-the-central-bit.html">The Multi-Qubit Split, II</a>, for what these computations are for.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

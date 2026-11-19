@@ -73,7 +73,7 @@
 <h2 id="introduction">Introduction</h2>
 <p>The duo-complex numbers carry three canonical forms: the Hermitian form $H$, the complex bilinear symmetric form $B$ and the complex bilinear alternating form $\omega$. They are defined in <em>Duo-Complex Numbers</em> and announced there; this article computes them. It gives their Gram matrices, their symmetry and nondegeneracy, their isotropic sets, their real and imaginary parts, the relations among them, and the distinction between $\operatorname{Im}H$ and $\omega$, which is the point at which the three are most often confused.</p>
 <p>The article treats the forms on the space alone. The isometry groups are <em>The Classical Groups of $\mathbb{C}^2$</em>; the Kähler structure they define is <em>The Flat Kähler Structure of $\mathbb{C}^2$</em>; the real inertias are also read in <em>The Realification of $\mathbb{C}^2$</em>, and the computations are repeated here only where the complex statement needs them. The general theory of bilinear and sesquilinear forms is <em>Bilinear Forms</em> and <em>The Sesquilinear Structure of the Endomorphism Algebra</em>; this article does not restate it.</p>
-<p><strong>The three forms are of three different kinds and are not three normalisations of one object.</strong> $H$ is sesquilinear and definite; $B$ is symmetric and indefinite; $\omega$ is alternating and nondegenerate. The first carries the metric, the second the isotropic cone, the third the holomorphic symplectic structure. One table at the end of the article collects them.</p>
+<p><strong>The three forms are of three different kinds and are not three normalisations of one object.</strong> $H$ is sesquilinear and definite; $B$ is symmetric and indefinite; $\omega$ is alternating and nondegenerate. The first carries the metric, the second the isotropic cone, the third the holomorphic symplectic structure. One table at the end of the article collects them. Their use does not stop at one system: carried to tensor powers the three become the metric, the norm and the entanglement pairing, which is the subject of <a href="../articles_physics/the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html">The Duo-Complex Bridge: The Three Canonical Forms and Their Tensor Powers</a>. There the tensor square of $\omega$ evaluates on a two-qubit state to $2\det c$, the determinant of the coefficient array, so the concurrence of two qubits is the alternating form of this article applied to both factors.</p>
 <h2 id="the-hermitian-form">The Hermitian Form</h2>
 <p><strong>The Hermitian form is the positive definite sesquilinear form of the space; its Gram matrix is the identity and its norm is the Euclidean norm.</strong></p>
 <p><strong>Definition.</strong> The <strong>Hermitian form</strong> is
@@ -97,7 +97,7 @@ $$
 H(Q_1,Q_2)=g(Q_1,Q_2)-i\Omega(Q_1,Q_2),\qquad \Omega(Q_1,Q_2)=g(JQ_1,Q_2),
 $$
 and it is the reason the Hermitian form carries both the metric and the symplectic structure of the space.</p>
-<h2 id="the-complex-bilinear-form-math35">The Complex Bilinear Form $B$</h2>
+<h2 id="the-complex-bilinear-form-math37">The Complex Bilinear Form $B$</h2>
 <p><strong>The complex bilinear form is symmetric and nondegenerate; its isotropic set is the union of two complex lines, and in suitable holomorphic coordinates its quadratic form is the product $uv$.</strong></p>
 <p><strong>Definition.</strong> The <strong>complex bilinear form</strong> is
 $$
@@ -129,7 +129,7 @@ B(JQ_1,JQ_2)=-B(Q_1,Q_2).
 $$</p>
 <p><em>Proof.</em> $B(iQ_1,iQ_2)=i^2B(Q_1,Q_2)=-B(Q_1,Q_2)$.</p>
 <p><strong>Remark (two different isometry groups).</strong> The unitary group preserves $H$, and the complex orthogonal group $\mathrm{O}(2,\mathbb{C})$ preserves $B$. The two groups are different, because $U^{*}U=I$ does not imply $U^{T}U=I$: a unitary matrix need not be complex orthogonal. <strong>Their intersection is the real orthogonal group $\mathrm{O}(2)$</strong>, the matrices that are at once real and unitary (<em>The Classical Groups of $\mathbb{C}^2$</em>).</p>
-<h2 id="the-holomorphic-symplectic-form-math85">The Holomorphic Symplectic Form $\omega$</h2>
+<h2 id="the-holomorphic-symplectic-form-math87">The Holomorphic Symplectic Form $\omega$</h2>
 <p><strong>The holomorphic symplectic form is alternating and nondegenerate; it vanishes on every complex line, and it is the form whose powers give the complex volume.</strong></p>
 <p><strong>Definition.</strong> The <strong>holomorphic symplectic form</strong> is
 $$
@@ -188,7 +188,7 @@ H(Q_1,Q_2)=\tfrac12\bigl(u(Q_1)\overline{u(Q_2)}+v(Q_1)\overline{v(Q_2)}\bigr).
 $$</p>
 <p><em>Proof.</em> The first is the theorem of the previous section. For the second, $u(Q_1)v(Q_2)-v(Q_1)u(Q_2)=-2i(Q_{1\blacktriangle}Q_{2\blacktriangledown}-Q_{1\blacktriangledown}Q_{2\blacktriangle})=-2i\,\omega(Q_1,Q_2)$. For the third, $u(Q_1)\overline{u(Q_2)}+v(Q_1)\overline{v(Q_2)}=2(Q_{1\blacktriangle}\overline{Q_{2\blacktriangle}}+Q_{1\blacktriangledown}\overline{Q_{2\blacktriangledown}})=2H(Q_1,Q_2)$.</p>
 <p><strong>Remark (the three forms in one coordinate system).</strong> In the coordinates $u,v$ the three forms are the product, the symplectic form and the Euclidean metric, and the space is the product of two lines. <strong>The coordinates $u,v$ are holomorphic, so the types of the forms are preserved: $B$ stays symmetric, $\omega$ stays alternating and $H$ stays Hermitian.</strong> The normal form displays the isotropic cone as the union of the axes and the Lagrangian lines as the axes themselves.</p>
-<h2 id="the-distinction-between-math162-and-math163">The Distinction between $\operatorname{Im}H$ and $\omega$</h2>
+<h2 id="the-distinction-between-math164-and-math165">The Distinction between $\operatorname{Im}H$ and $\omega$</h2>
 <p><strong>The forms $\operatorname{Im}H$ and $\omega$ are both alternating and both nondegenerate, and they are not the same form; the negative of the first is the Kähler form, the second is the holomorphic symplectic form.</strong></p>
 <p>The two are compared in the table below. The comparison is the answer to the most frequent confusion of the category.</p>
 <div class="table-scroll"><table>
@@ -345,6 +345,7 @@ $$</p>
 <li><a href="the-isotropic-cone-of-the-bilinear-form-on-c2.html">The Isotropic Cone of the Bilinear Form on $\mathbb{C}^2$</a>, for the cone as a real object and its image in $\mathbb{CP}^1$.</li>
 <li><a href="the-flat-kahler-structure-of-c2.html">The Flat Kähler Structure of $\mathbb{C}^2$</a>, for the metric, the Kähler form and the isometries.</li>
 <li><a href="the-classical-groups-of-c2.html">The Classical Groups of $\mathbb{C}^2$</a>, for the groups that preserve each form.</li>
+<li><a href="../articles_physics/the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html">The Duo-Complex Bridge: The Three Canonical Forms and Their Tensor Powers</a>, for the three forms carried to tensor powers, where $H$ gives the metric, $B$ the norm and $\omega$ the entanglement pairing.</li>
 <li><a href="bilinear-forms.html">Bilinear Forms</a>, for the general theory of symmetric and alternating forms.</li>
 <li><a href="the-sesquilinear-structure-of-the-endomorphism-algebra.html">The Sesquilinear Structure of the Endomorphism Algebra</a>, for the general theory of Hermitian forms.</li>
 </ul>

@@ -521,10 +521,6 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/beyond-one-qubit-what-b-tensor-b-would-require.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/fundamental-and-derived-elements-in-the-biquaternion-framework.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
@@ -993,6 +989,46 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/beyond-one-qubit-what-b-tensor-b-would-require.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/composite-systems-and-the-multi-qubit-extension.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-multi-qubit-split-i-the-antilinear-obstruction-and-the-corner-collapse.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-multi-qubit-split-ii-the-sign-condition-the-concurrence-form-and-the-central-bit.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-duo-complex-bridge-the-three-canonical-forms-and-their-tensor-powers.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/multi-partite-entanglement-ghz-w-and-the-three-qubit-classification.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/entanglement-monogamy-and-the-ckw-inequality.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/entangled-subsystems-in-the-biquaternion-framework.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/quantum-teleportation-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-double-slit-experiment-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
@@ -1241,15 +1277,7 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-tensor-b.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/exercise-the-correlation-function-of-the-bell-states.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/entangled-subsystems-in-the-biquaternion-framework.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -1302,10 +1330,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-polar-decomposition-of-a-kraus-operator-effect-backaction-and-the-measurement-boundary.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/quantum-teleportation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -9194,7 +9218,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-three-canonical-forms-on-c2.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-19</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-subspaces-of-c2.html</loc>
@@ -10111,6 +10135,10 @@
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/square-roots-of-an-element.html</loc>
     <lastmod>2026-11-17</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_maths/the-tensor-product-of-two-biquaternion-algebras.html</loc>
+    <lastmod>2026-11-19</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/families-of-matrix-representations.html</loc>
@@ -12354,7 +12382,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/maths.html</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-19</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/physics.html</loc>
