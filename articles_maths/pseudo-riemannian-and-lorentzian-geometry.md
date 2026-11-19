@@ -83,7 +83,7 @@ $$
 
 ### Curvature in the Indefinite Case
 
-**Definition.** The **curvature tensor** is $R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$, with $R(X, Y, Z, W) = g(R(X, Y)Z, W)$, and the curvature form is $\mathcal{R} = dA + A\wedgeA$ in a frame.
+**Definition.** The **curvature tensor** is $R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$, with $R(X, Y, Z, W) = g(R(X, Y)Z, W)$, and the curvature form is $\mathcal{R} = dA + A\wedge A$ in a frame.
 
 **Theorem (symmetries).** The tensor satisfies
 

@@ -257,19 +257,19 @@ $$
 \tilde\nabla_\Phi \tilde{G}_{\Phi,\tilde\nabla_\Phi}(\tilde Q) = -\delta(\tilde{Q})\,e_t,
 $$
 
-with the sign convention of *The Biquaternion D'Alembertian and Its Green's Functions*, $\Box_\Phi G_\Box_\Phi=-\delta$.
+with the sign convention of *The Biquaternion D'Alembertian and Its Green's Functions*, $\Box_\Phi G_{\Box,\Phi}=-\delta$.
 
 The physically relevant Green's function is the **retarded** one, which vanishes for $r'_t < 0$ and has support on the future light cone. It is the first-order kernel of the companion article *The Biquaternion D'Alembertian and Its Green's Functions*,
 
 $$
 \begin{aligned}
-\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}\,G_\Box_\Phi
+\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}\,G_{\Box,\Phi}
 &=\frac{1}{4\pi R c}\,\delta'\!\left(r'_t - R\right)\bigl(-i\,e_t + \vec u_R\bigr)\
 &\quad+\frac{1}{4\pi R^2}\,\delta\!\left(r'_t - R\right)\vec u_R,
 \end{aligned}
 $$
 
-where $G_\Box_\Phi(R,r'_t) = (4\pi R)^{-1}\delta(r'_t - R)$ is the scalar retarded kernel of the wave operator, $\delta'$ is the derivative of the delta with respect to its argument, $R = \sqrt{r_x^2+r_y^2+r_z^2}$, and $\vec u_R = (r_x \vec e_x + r_y \vec e_y + r_z \vec e_z)/R$ is the unit radial biquaternion. It satisfies $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural})G_{\Box_\Phi} = \Box_\Phi G_{\Box_\Phi}\,e_t = -\delta(\tilde{Q})\,e_t$, the unit $e_t$ being the one carried by the right-hand side of the defining equation, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
+where $G_{\Box,\Phi}(R,r'_t) = (4\pi R)^{-1}\delta(r'_t - R)$ is the scalar retarded kernel of the wave operator, $\delta'$ is the derivative of the delta with respect to its argument, $R = \sqrt{r_x^2+r_y^2+r_z^2}$, and $\vec u_R = (r_x \vec e_x + r_y \vec e_y + r_z \vec e_z)/R$ is the unit radial biquaternion. It satisfies $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural})G_{\Box_\Phi} = \Box_\Phi G_{\Box_\Phi}\,e_t = -\delta(\tilde{Q})\,e_t$, the unit $e_t$ being the one carried by the right-hand side of the defining equation, and it is supported on the future light cone. The kernel is not a multiple of the delta alone: the $\delta'$ term is a **double layer** on the cone and the $\delta$ term a **single layer**, and it is the $\delta'$ term — absent from any schematic multiple-of-$\delta$ display — that the wave-front and jump conditions of *Shock Electromagnetic Waves* require. Its distributional layer calculus is that of *Distributions on Surfaces, Layers, and Jump Conditions*.
 
 The solution of the inhomogeneous equation is then the retarded convolution
 
@@ -279,7 +279,7 @@ $$
 
 where the integral is over the past light cone of $\tilde{Q}$. This is the biquaternionic form of the retarded solution of Maxwell's equations, and it is the physically correct solution for radiation problems: the field at a point depends only on the sources in its past light cone, not on the future sources.
 
-The scalar part of that formula is where the integrability condition acts, and it is worth writing out. Since $\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}G_{\Box_\Phi}$, the derivatives in $(\tilde\nabla_\Phi)^{\natural}$ can be moved from the kernel onto the source without changing any sign — the change of variable contributes one minus per derivative and the integration by parts the other — and the minus on the vector part of $(\tilde\nabla_\Phi)^{\natural}$ meets the minus in $\vec v = -\vec\nabla_\Phi G_\Box_\Phi$, so the two terms of the scalar part agree. The result is
+The scalar part of that formula is where the integrability condition acts, and it is worth writing out. Since $\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}G_{\Box_\Phi}$, the derivatives in $(\tilde\nabla_\Phi)^{\natural}$ can be moved from the kernel onto the source without changing any sign — the change of variable contributes one minus per derivative and the integration by parts the other — and the minus on the vector part of $(\tilde\nabla_\Phi)^{\natural}$ meets the minus in $\vec v = -\vec\nabla_\Phi G_{\Box,\Phi}$, so the two terms of the scalar part agree. The result is
 
 $$
 \mathrm{Sc}\bigl(\tilde F\bigr)
@@ -899,7 +899,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\mathbb{B}_{\Psi}$ | Hermitian subspace (informational sector) |
 | $\tilde{A}_{\Phi}$ | Potential biquaternion |
 | $\tilde{F}$ | Field-strength biquaternion |
-| $G_\Box_\Phi$, $\tilde G_{\Phi,\tilde\nabla_\Phi}$ | Scalar retarded kernel $(4\pi R)^{-1}\delta(r'_t-R)$ and the first-order kernel $(\tilde\nabla_\Phi)^{\natural}G_{\Box_\Phi}$ |
+| $G_{\Box,\Phi}$, $\tilde G_{\Phi,\tilde\nabla_\Phi}$ | Scalar retarded kernel $(4\pi R)^{-1}\delta(r'_t-R)$ and the first-order kernel $(\tilde\nabla_\Phi)^{\natural}G_{\Box_\Phi}$ |
 | $\delta'$ | Derivative of the delta with respect to its argument |
 | $\vec N = \vec E + ic\vec B$ | Riemann–Silberstein vector; $\tilde F = i\sqrt{\epsilon}\,\vec N$ |
 | $L_a$, $R_b$ | Left and right multiplication, by $a$ on the left and by $b$ on the right |

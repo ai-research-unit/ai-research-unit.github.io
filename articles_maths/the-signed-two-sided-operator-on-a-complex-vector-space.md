@@ -79,7 +79,7 @@ and it is an involution exactly when $u\alpha(u)$ is central. If moreover $\alph
 
 ## The Relation to the Unsigned Two-Sided Operator and the Degenerate Cases
 
-**Proposition (the unsigned two-sided operator as the trivial involution).** The signed two-sided operator with $\alpha = \mathrm{id}$ is the unsigned two-sided operator, $\mathrm{Sd}_{\mathrm{id}}_{\mathrm{id},a,b} = \Phi_{a,b}$; for the general grade involution,
+**Proposition (the unsigned two-sided operator as the trivial involution).** The signed two-sided operator with $\alpha = \mathrm{id}$ is the unsigned two-sided operator, $\mathrm{Sd}_{\mathrm{id},\mathrm{id},a,b} = \Phi_{a,b}$; for the general grade involution,
 $$
 \mathrm{Sd}^{\alpha}_{a,b} = \Phi_{a,b}\circ\alpha = \alpha\circ\Phi_{\alpha(a),\alpha(b)},
 $$

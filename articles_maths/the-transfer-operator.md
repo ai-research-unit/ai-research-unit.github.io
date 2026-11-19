@@ -116,7 +116,7 @@ $$
 \boxed{\;\mu_p(T(A))=\int_A\exp(P(p)-p)\,d\mu_p \qquad \text{locally}\;},
 $$
 
-and $h_{\mu_p}+\intp\,d\mu_p=P(p)$, the **variational principle**.
+and $h_{\mu_p}+\int p\,d\mu_p=P(p)$, the **variational principle**.
 
 *Proof.* Quoted as standard from *Hyperbolic Dynamics and Anosov Systems*, where the transfer operator is written $\mathcal L$ and the thermodynamic formalism, the Gibbs property, the Bowen–Ruelle measure and the periodic orbit counting are developed; the notation $\mathcal{P}_p$ is used here to keep the Lie derivative $\mathcal L_X$ of *The Flow Operator* distinct from the operator. No proof is repeated.
 

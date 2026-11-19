@@ -92,21 +92,21 @@ This restatement is exact. It is also only a restatement: membership in one clas
 The acting element $\tilde Q_3$ is the Kraus operator of the outcome, and $\Gamma_{\tilde Q_3}$ is the unnormalized update. Its generalized polar form is
 
 $$
-\tilde Q_3=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p},
+\tilde Q_3=\tilde H_{\Psi,\mathrm{pos}}\tilde Q_{p},
 \qquad
-\tilde H_\Psi_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}},
+\tilde H_{\Psi,\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}},
 $$
 
-with $\tilde H_\Psi_{\mathrm{pos}}$ Hermitian positive semidefinite and $\tilde Q_{p}$ a partial isometry. The update is
+with $\tilde H_{\Psi,\mathrm{pos}}$ Hermitian positive semidefinite and $\tilde Q_{p}$ a partial isometry. The update is
 
 $$
 \Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})
-=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde H_\Psi_{\mathrm{pos}}:
+=\tilde H_{\Psi,\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde H_{\Psi,\mathrm{pos}}:
 $$
 
 the $*$-unitary factor acts first, then the positive filter.
 
-The two classes of the preceding section are the two extremes of this family. The $*$-unitary case is $\tilde H_\Psi_{\mathrm{pos}}=e_t$ and $\tilde Q_{p}=\tilde Q_3$, with no filter. The idempotent case is $\tilde Q_3=\tilde\Pi$, hence $\tilde H_\Psi_{\mathrm{pos}}=\tilde Q_{p}=\tilde\Pi$: the element is on the null cone, the amplitude is rank one, and the outcome is sharp. A general invertible $\tilde Q_3$ has $\tilde H_\Psi_{\mathrm{pos}}>0$ and $\tilde Q_{p}$ $*$-unitary; the outcome is unsharp, the update is a rotation followed by a filter, and the element is neither $*$-unitary nor idempotent.
+The two classes of the preceding section are the two extremes of this family. The $*$-unitary case is $\tilde H_{\Psi,\mathrm{pos}}=e_t$ and $\tilde Q_{p}=\tilde Q_3$, with no filter. The idempotent case is $\tilde Q_3=\tilde\Pi$, hence $\tilde H_{\Psi,\mathrm{pos}}=\tilde Q_{p}=\tilde\Pi$: the element is on the null cone, the amplitude is rank one, and the outcome is sharp. A general invertible $\tilde Q_3$ has $\tilde H_{\Psi,\mathrm{pos}}>0$ and $\tilde Q_{p}$ $*$-unitary; the outcome is unsharp, the update is a rotation followed by a filter, and the element is neither $*$-unitary nor idempotent.
 
 The two classes are therefore not an exhaustive partition of the acting elements; they are the endpoints and the boundary of one polar family. The reversible/irreversible dichotomy of the maps remains, but the element that acts in a single outcome can be an interior point. The algebraic selection problem is the selection of an element from this family, not a binary choice between two elements. The null cone is the boundary of the sharp case, not a third dynamics. The companion article *The Polar Decomposition of a Kraus Operator* gives the full classification, the effect formula and the worked examples.
 
@@ -258,8 +258,8 @@ What the reformulation changes is the form of the statement: two dynamics become
 | $p_\pm = 2\langle\tilde\Pi_{1,2}(\vec u_\Psi),\tilde{Ϛ}_{\Psi}\rangle_{*}$ | Outcome probabilities |
 | $\vec u_\Psi = \vec h_\Psi/\|\vec h_\Psi\|$, $\vec u$ | Measurement and pointer directions |
 | $\Gamma_{\tilde{Q}_3}(\tilde{Q}) = \tilde{Q}_3\tilde{Q}\tilde{Q}_3^{*}$ | Conjugation; $*$-unitary evolution (when $\tilde Q_3\tilde Q_3^{*}=e_t$) or projective two-sided operator ($\tilde{Q}_3 = \tilde\Pi_{1,2}$) |
-| $\tilde Q_3=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p}$, $\tilde H_\Psi_{\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}}$ | Polar form of the acting element; $\tilde H_\Psi_{\mathrm{pos}}\ge0$, $\tilde Q_{p}$ a partial isometry |
-| $\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=\tilde H_\Psi_{\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde H_\Psi_{\mathrm{pos}}$ | $*$-Unitary backaction followed by the positive filter |
+| $\tilde Q_3=\tilde H_{\Psi,\mathrm{pos}}\tilde Q_{p}$, $\tilde H_{\Psi,\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}}$ | Polar form of the acting element; $\tilde H_{\Psi,\mathrm{pos}}\ge0$, $\tilde Q_{p}$ a partial isometry |
+| $\Gamma_{\tilde Q_3}(\tilde{Ϛ}_{\Psi})=\tilde H_{\Psi,\mathrm{pos}}\tilde Q_{p}\tilde{Ϛ}_{\Psi}\tilde Q_{p}^{*}\tilde H_{\Psi,\mathrm{pos}}$ | $*$-Unitary backaction followed by the positive filter |
 | $\tilde Q_3\tilde Q_3^{*} = e_t$ | $*$-Unitary element (reversible evolution) |
 | $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2} = \tilde\Pi_{1,2}^{*}$ | Hermitian idempotent (orthogonal projection; irreversible) |
 | $\tilde{Ϛ}_{\Psi,d} = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ | Fully dephased state (pointer-diagonal) |

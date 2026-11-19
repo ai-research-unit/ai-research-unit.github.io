@@ -78,7 +78,7 @@ and the fixed space is the span of the symmetric combinations and the antisymmet
 
 ### Descent
 
-**Proposition.** Let $I$ be a two-sided ideal of $F\langle X\rangle$ stable under an anti-involution $\mathrm{J}$ of the free algebra. Then $I$ is stable under $\mathrm{J}$, the quotient $F\langle X\rangle/I$ carries the descended anti-involution $\bar\mathrm{J}$ of order two, and the quotient map is equivariant. The same holds for the descent of an involutive automorphism, with stability the only hypothesis.
+**Proposition.** Let $I$ be a two-sided ideal of $F\langle X\rangle$ stable under an anti-involution $\mathrm{J}$ of the free algebra. Then $I$ is stable under $\mathrm{J}$, the quotient $F\langle X\rangle/I$ carries the descended anti-involution $\\bar{\\mathrm{J}}$ of order two, and the quotient map is equivariant. The same holds for the descent of an involutive automorphism, with stability the only hypothesis.
 
 *Proof.* Stability of the ideal under the involution makes the map on the quotient well defined, and the quotient inherits the order-two and anti-multiplicativity properties from the free algebra; this is the descent of *Ideals and Quotients of Algebras*.
 

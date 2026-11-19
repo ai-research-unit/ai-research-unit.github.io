@@ -262,7 +262,7 @@ $$
 
 The reason is that the ambient is two-dimensional and commutative and the determinant is the norm: the cofactor formula produces the conjugate, and the conjugate is what transposition gives. In the quaternion model the adjugate was $N\mathsf{M}_4(\tilde q^{*})$ and the conjugate transpose was a different matrix; here the factor $N$ is absent because the determinant is already the norm, and the two formulas merge.
 
-**The consequence for the geometry.** The identity $\operatorname{adj}=\,^{\mathsf T}$ reads $\mathsf{M}_2(Q)^{-1}=\mathsf{M}_2(Q)^{\mathsf T}/N$, that is
+**The consequence for the geometry.** The identity $\operatorname{adj}=\,{}^{\mathsf T}$ reads $\mathsf{M}_2(Q)^{-1}=\mathsf{M}_2(Q)^{\mathsf T}/N$, that is
 
 $$
 \mathsf{M}_2(Q)^{\mathsf T}\mathsf{M}_2(Q)=N(Q)I_2 .

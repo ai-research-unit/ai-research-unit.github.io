@@ -539,7 +539,7 @@ $$
 \ell(M)=\operatorname{rank}c(M).
 $$
 
-*Proof.* If $M=\sum_{i\le r}L_{\mathrm{axf}}(\tilde Q_i)R_{\mathrm{axf}}(\tilde Q_2_i)$, then $c(M)=\sum_{i\le r}[Q_i][P_i]^{\mathsf T}$ is a sum of $r$ rank-one matrices, so $\operatorname{rank}c(M)\le r$ and $\ell(M)\ge\operatorname{rank}c(M)$. Conversely, let $\operatorname{rank}c=r$ and factor $c=UV$ with $U$ of size $4\times r$ and $V$ of size $r\times4$; the $i$-th column of $U$ is $[Q_i]$ and the $i$-th row of $V$ is $[P_i]^{\mathsf T}$, so $M=\sum_{i\le r}L_{\mathrm{axf}}(\tilde Q_i)R_{\mathrm{axf}}(\tilde Q_2_i)$ and $\ell(M)\le r$.
+*Proof.* If $M=\sum_{i\le r}L_{\mathrm{axf}}(\tilde Q_i)R_{\mathrm{axf}}(\tilde Q_{2,i})$, then $c(M)=\sum_{i\le r}[Q_i][P_i]^{\mathsf T}$ is a sum of $r$ rank-one matrices, so $\operatorname{rank}c(M)\le r$ and $\ell(M)\ge\operatorname{rank}c(M)$. Conversely, let $\operatorname{rank}c=r$ and factor $c=UV$ with $U$ of size $4\times r$ and $V$ of size $r\times4$; the $i$-th column of $U$ is $[Q_i]$ and the $i$-th row of $V$ is $[P_i]^{\mathsf T}$, so $M=\sum_{i\le r}L_{\mathrm{axf}}(\tilde Q_i)R_{\mathrm{axf}}(\tilde Q_{2,i})$ and $\ell(M)\le r$.
 
 **The count.** Every matrix is a sum of at most four products; $\ell(M)=4$ exactly when $\det c(M)\neq0$. The condition $\det c(M)\neq0$ is open and dense, so a generic matrix needs four products and none needs five.
 

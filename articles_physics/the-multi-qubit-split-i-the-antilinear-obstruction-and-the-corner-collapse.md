@@ -33,7 +33,7 @@ and it has complex dimension sixteen, that is real dimension thirty-two.
 **The map.** Let $^{*}$ be the Hermitian conjugation of $\mathbb{B}$, the antilinear involution that fixes $\mathbb{B}_{\Psi}$ and negates $\mathbb{B}_{\Phi}$. On the real tensor product define the partial star
 
 $$
-\sigma_1=\;^{*}\otimes\mathrm{id},\qquad \sigma_1(x\otimes y)=x^{*}\otimes y ,
+\sigma_1={}^{*}\otimes\mathrm{id},\qquad \sigma_1(x\otimes y)=x^{*}\otimes y ,
 $$
 
 a real-linear involution of $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}$. It is the natural candidate for a sector label on the first factor: its $+1$ eigenspace would be $\mathbb{B}_{\Psi}\otimes\mathbb{B}$, its $-1$ eigenspace $\mathbb{B}_{\Phi}\otimes\mathbb{B}$, and its four intersections with the four corner spaces would be the four labelled sectors.
@@ -48,7 +48,7 @@ $$
 \sigma_1\bigl(i\otimes e_t-e_t\otimes i\bigr)=(-i)\otimes e_t-e_t\otimes i .
 $$
 
-Modulo $I$ the two terms have the same class, because $i\otimes e_t-e_t\otimes i\in I$. So the class of the image is the class of $-2\,(i\otimes e_t)$, which is $-2i\mathrm I_4$ under the isomorphism with $M_4(\mathbb{C})$. That element is nonzero, so the image does not lie in $I$. $\square$
+Modulo $I$ the two terms have the same class, because $i\otimes e_t-e_t\otimes i\in I$. So the class of the image is the class of $-2\,(i\otimes e_t)$, which is $-2i\mathrm I_4$ under the isomorphism with $M_4(\mathbb{C})$. That element is nonzero, so the image does not lie in $I$.
 
 **What the proof says in one sentence.** The partial star reverses the sign of the central scalar, and the relation that defines the quotient is a statement about that scalar; a map that flips the scalar cannot preserve a relation that identifies two of its values.
 
@@ -57,7 +57,7 @@ Modulo $I$ the two terms have the same class, because $i\otimes e_t-e_t\otimes i
 **The positive counterpart (the total star descends).** Define
 
 $$
-\sigma_{\mathrm{tot}}=\;^{*}\otimes{}^{*},\qquad \sigma_{\mathrm{tot}}(x\otimes y)=x^{*}\otimes y^{*}.
+\sigma_{\mathrm{tot}}={}^{*}\otimes{}^{*},\qquad \sigma_{\mathrm{tot}}(x\otimes y)=x^{*}\otimes y^{*}.
 $$
 
 It is antilinear, and it preserves $I$, because
@@ -92,7 +92,7 @@ because $i\otimes i$ has class $i^{2}=-1$. The left side lies in $C_{\Psi\Psi}$,
 
 **The theorem (the two aligned corners coincide).** $C_{\Psi\Psi}=C_{\Phi\Phi}$.
 
-*Proof.* The identity shows $C_{\Phi\Phi}\subseteq C_{\Psi\Psi}$: the material sector has basis $ie_t,\vec e_x,\vec e_y,\vec e_z$, so $C_{\Phi\Phi}$ is spanned by the products of pairs drawn from that basis, and the identity rewrites each such product as minus a product of two informational tensors. The converse is the same identity read backwards. For general elements the identity extends by bilinearity: if $a=\sum_\mu a_\mu u_\mu$ and $b=\sum_\nu b_\nu u_\nu$ with $u_\mu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the informational basis, then the same computation in each pair of slots gives $(\mathrm i a)\otimes(\mathrm i b)=-(a\otimes b)$. $\square$
+*Proof.* The identity shows $C_{\Phi\Phi}\subseteq C_{\Psi\Psi}$: the material sector has basis $ie_t,\vec e_x,\vec e_y,\vec e_z$, so $C_{\Phi\Phi}$ is spanned by the products of pairs drawn from that basis, and the identity rewrites each such product as minus a product of two informational tensors. The converse is the same identity read backwards. For general elements the identity extends by bilinearity: if $a=\sum_\mu a_\mu u_\mu$ and $b=\sum_\nu b_\nu u_\nu$ with $u_\mu\in\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$ the informational basis, then the same computation in each pair of slots gives $(\mathrm i a)\otimes(\mathrm i b)=-(a\otimes b)$.
 
 **The two cross corners coincide as well, and with each other.** The mixed tensors $a\otimes b$ with $a$ informational and $b$ material satisfy $(\mathrm i a)\otimes b=-(a\otimes\mathrm i b)$, so $C_{\Psi\Phi}=C_{\Phi\Psi}$, and this common space is the anti-Hermitian part of $M_4(\mathbb{C})$.
 
@@ -131,7 +131,7 @@ $$
 
 each of real dimension $4^{n}/2=2^{2n-1}$.
 
-*Proof.* The eigenvalue statement is the computation above. A tensor with $k$ material factors lies in the span indexed by $k$, and the spans for the same parity of $k$ are all equal to the corresponding eigenspace by the corner identity applied slot by slot: replacing a factor $x_j$ by $\mathrm i x_j$ moves one slot between sectors and multiplies the tensor by $-\mathrm i\cdot\mathrm i=-1$... more directly, replacing an informational factor $u$ by the material factor $\mathrm i u$ maps a tensor with $k$ material factors to the negative of a tensor with $k+1$; hence the spans for $k$ and for $k+2$ coincide, and only the parity remains. The dimensions follow from $\dim_{\mathbb{R}}M_{2^{n}}(\mathbb{C})=2\cdot4^{n}$ split evenly by the involution. $\square$
+*Proof.* The eigenvalue statement is the computation above. A tensor with $k$ material factors lies in the span indexed by $k$, and the spans for the same parity of $k$ are all equal to the corresponding eigenspace by the corner identity applied slot by slot: replacing a factor $x_j$ by $\mathrm i x_j$ moves one slot between sectors and multiplies the tensor by $-\mathrm i\cdot\mathrm i=-1$... more directly, replacing an informational factor $u$ by the material factor $\mathrm i u$ maps a tensor with $k$ material factors to the negative of a tensor with $k+1$; hence the spans for $k$ and for $k+2$ coincide, and only the parity remains. The dimensions follow from $\dim_{\mathbb{R}}M_{2^{n}}(\mathbb{C})=2\cdot4^{n}$ split evenly by the involution.
 
 **The numbers.** At $n=2$ the four corners give two spaces of real dimension $16$, summing to $32$, which is $\dim_{\mathbb{R}}M_4(\mathbb{C})$. At $n=3$ the eight corners give two spaces of real dimension $64$, summing to $128$, which is $\dim_{\mathbb{R}}M_8(\mathbb{C})$. In general the $2^{n}$ corners give two spaces of real dimension $2^{2n-1}$.
 

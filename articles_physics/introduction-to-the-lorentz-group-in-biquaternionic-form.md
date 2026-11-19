@@ -1,4 +1,4 @@
-# __AI describes the Lorentz Group__
+# __Introduction to the Lorentz Group in Biquaternionic Form__
 
 ## Introduction
 

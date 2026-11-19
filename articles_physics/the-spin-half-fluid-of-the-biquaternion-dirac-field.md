@@ -227,7 +227,7 @@ The degeneration is not a physical limit in which interesting physics is lost. I
 
 ### The scalar field is the sector with no frame to freeze
 
-**The scalar polar form has a scale and a phase and nothing else, so its velocity is a gradient by construction.** The word is $\tilde\Xi=\lVert\tilde\Xi\rVerte^{i\theta_{\mathrm{phs}}}e_t$, and the two parameters are the amplitude and the action. There is no third factor, so there is no frame element, so there is nothing whose gradient could make the flow non-closed. The scalar field is therefore the frozen-frame sector in the precise sense that it is the sector with no frame: a frame that does not exist cannot vary.
+**The scalar polar form has a scale and a phase and nothing else, so its velocity is a gradient by construction.** The word is $\tilde\Xi=\lVert\tilde\Xi\rVert e^{i\theta_{\mathrm{phs}}}e_t$, and the two parameters are the amplitude and the action. There is no third factor, so there is no frame element, so there is nothing whose gradient could make the flow non-closed. The scalar field is therefore the frozen-frame sector in the precise sense that it is the sector with no frame: a frame that does not exist cannot vary.
 
 Throughout, $\theta_{\mathrm{phs}}:=S_{\tilde\Xi}/\hbar$ is the spinor phase, a real angle: the polar form separates the amplitude $\lVert\tilde\Xi\rVert$ from the phase, so $S_{\tilde\Xi}$ is real and $\exp(i\theta_{\mathrm{phs}})$ has modulus one.
 

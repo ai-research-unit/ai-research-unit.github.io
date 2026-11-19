@@ -327,7 +327,7 @@ The complete simply connected manifolds of constant curvature are the round sphe
 | $P_\gamma$ | Parallel transport along the curve $\gamma$; an isometry of tangent spaces |
 | $\operatorname{Hol}_p$ | Holonomy group at $p$; its Lie algebra is spanned by the curvature |
 | $R(X,Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X,Y]}Z$ | Curvature tensor |
-| $\mathcal{R} = dA + A\wedgeA$ | Curvature $2$-form, matrix-valued, in a frame; no bare $\Omega$ is used |
+| $\mathcal{R} = dA + A\wedge A$ | Curvature $2$-form, matrix-valued, in a frame; no bare $\Omega$ is used |
 | $K(\sigma) = R(v,w,w,v)$ | Sectional curvature of the two-plane $\sigma$ with orthonormal basis $v,w$ |
 | $\operatorname{Ric}(X,Y) = \sum_i R(e_i,X,Y,e_i)$ | Ricci tensor; average of sectional curvatures |
 | $S = \sum_i \operatorname{Ric}(e_i,e_i)$ | Scalar curvature |

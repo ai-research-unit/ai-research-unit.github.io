@@ -69,7 +69,7 @@ $$
 and they are **nilpotent and null in the biquaternion norm**,
 
 $$
-\tilde S_{\Psi,\pm}^2=0,\qquad \langle\tilde S_{\Psi,\pm}\rangle_{\natural}=\tilde S_{\Psi,\pm}\tilde S_{\Psi}^{\natural}_\pm=0 ,
+\tilde S_{\Psi,\pm}^2=0,\qquad \langle\tilde S_{\Psi,\pm}\rangle_{\natural}=\tilde S_{\Psi,\pm}\tilde S_{\Psi,\pm}^{\natural}=0 ,
 $$
 
 so the raising and lowering operators of the fundamental module are zero divisors of $\mathbb{B}$. The Casimir is the central element

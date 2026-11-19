@@ -193,20 +193,20 @@ Both factors are rotors: $\vec\Omega_{\mathrm{LT}}$ is a pure vector, so $\exp(\
 
 ## The Precession
 
-**What precesses is the frame the eigenspinor carries, and the rate is the rate of the rotor.** The tetrad $	ilde E_{\Phi,(\mu)}=	ilde U\mathcal{E}_\mu	ilde U^{*}$ turns with $	ilde U$, so the angular velocity of the particle's own axes in the laboratory is read off $ec\Omega_{\mathrm{LT}}$: the vector part of the rate is the instantaneous rotation, and its modulus is the rate at which the frame turns per unit proper time.
+**What precesses is the frame the eigenspinor carries, and the rate is the rate of the rotor.** The tetrad $\tilde E_{\Phi,(\mu)}=\tilde U\mathcal{E}_\mu\tilde U^{*}$ turns with $\tilde U$, so the angular velocity of the particle's own axes in the laboratory is read off $\vec\Omega_{\mathrm{LT}}$: the vector part of the rate is the instantaneous rotation, and its modulus is the rate at which the frame turns per unit proper time.
 
-**In a purely magnetic field that rate has a name.** With $ec E=0$ the rate is $ec\Omega_{\mathrm{LT}}=-(ϙ/m)ec B$, real and pure, so the exponential $\exp(	frac12ec\Omega_{\mathrm{LT}}	au)$ is a real unit quaternion: a spatial rotation of angle $\lvertec\Omega_{\mathrm{LT}}
-vert	au$ about $ec B$. The frame precesses about the field at the angular frequency
+**In a purely magnetic field that rate has a name.** With $\vec E=0$ the rate is $\vec\Omega_{\mathrm{LT}}=-(ϙ/m)\vec B$, real and pure, so the exponential $\exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)$ is a real unit quaternion: a spatial rotation of angle $\lvert\vec\Omega_{\mathrm{LT}}
+vert\tau$ about $\vec B$. The frame precesses about the field at the angular frequency
 
 $$
-\omega_{\mathrm{cyc}}=rac{ϙ B}{m},
+\omega_{\mathrm{cyc}}=\frac{ϙ B}{m},
 $$
 
 which is the cyclotron frequency, and the velocity turns with it. For an electron the sign is negative, and the frame and the velocity turn the same way.
 
 **In a general uniform field the rotation part of the rotor is the precession of the frame, and it is not the precession of the velocity.** The velocity turns about the field; the frame turns by the composition of that turn with the Thomas–Wigner rotation of the boost that carries the rest frame onto the worldline. The two differ by exactly the gyration of *The Wigner Angle of Two Boosts: Closed Form, Axis and Composition*, accumulated per unit proper time, and the difference is the Thomas precession computed in *Exercise: The Thomas Precession*. This is why a spinning particle in a storage ring precesses faster than its momentum turns: the eigenspinor's frame carries the extra rotation, and the eigenspinor is the object that holds it.
 
-**The precession is therefore not a separate effect bolted onto the rotor.** It is the imaginary part of the rotor's logarithm, and the closed form above already contains it: $\log	ilde U=	frac12ec\Omega_{\mathrm{LT}}	au+\log	ilde U(0)$, whose pure-vector part is the rotation and whose scalar part is the rapidity. A worldline in a uniform field is a screw, and the precession is the pitch of the screw.
+**The precession is therefore not a separate effect bolted onto the rotor.** It is the imaginary part of the rotor's logarithm, and the closed form above already contains it: $\log\tilde U=\tfrac12\vec\Omega_{\mathrm{LT}}\tau+\log\tilde U(0)$, whose pure-vector part is the rotation and whose scalar part is the rapidity. A worldline in a uniform field is a screw, and the precession is the pitch of the screw.
 
 ## What the Framework Supplies and What It Only Transcribes
 

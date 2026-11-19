@@ -158,10 +158,10 @@ which give $C=2\,\hbar^{2}$ on all three states. The value is $\hbar^{2}\,s\,(s+
 **The little group.** For a particle of four-momentum $\tilde P_{\Phi}$, the little group is the stabiliser
 
 $$
-G_{\tilde P}_{\Phi}=\{\tilde U\in SL(2,\mathbb{C}):\tilde U\tilde P_{\Phi}\tilde U^{*}=\tilde P_{\Phi}\}.
+G_{\tilde P,\Phi}=\{\tilde U\in SL(2,\mathbb{C}):\tilde U\tilde P_{\Phi}\tilde U^{*}=\tilde P_{\Phi}\}.
 $$
 
-For a massive particle $\tilde P_{\Phi}$ is timelike and $G_{\tilde P}_{\Phi}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P_{\Phi}$ is null and $G_{\tilde P}_{\Phi}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the gauge condition, not the little group.
+For a massive particle $\tilde P_{\Phi}$ is timelike and $G_{\tilde P,\Phi}\cong SU(2)$; its irreducible representations are the spin representations, labelled by $s$, and the rest-frame carrier has $2s+1$ states. For a massless particle $\tilde P_{\Phi}$ is null and $G_{\tilde P,\Phi}$ is the double cover of $E(2)$; each finite-dimensional irreducible unitary representation carries a single helicity $h$, and a massless particle of spin $s$ uses the two representations $h=\pm s$ (at $s=0$, only $h=0$). The reduction from $2s+1$ to two is the gauge condition, not the little group.
 
 The passage from $SU(2)$ to the double cover of $E(2)$ is the reason the massless count is two and not three. It is a property of the momentum, not of the carrier.
 

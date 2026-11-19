@@ -190,7 +190,7 @@ The decomposition of the material sector, $\mathbb{B}_{\Phi}=\mathrm{span}_{\mat
 For spin $s$ the carrier is the space of symmetric traceless rank-$s$ tensors of the material vector space $V$, of complex dimension $2s+1$. In biquaternion terms this is the symmetric traceless part of the $s$-fold tensor power of the vector part, and the angular momentum operator is the sum of the adjoint actions on the factors, by the Leibniz rule,
 
 $$
-\tilde S_{\Psi}^{(s)}_k = \sum_{a=1}^{s}\underbrace{I\otimes\cdots\otimes\tfrac12\mathrm{ad}_{i\vec e_\eta}a\otimes\cdots\otimes I}_{s\ \text{factors}} .
+\tilde S_{\Psi,k}^{(s)} = \sum_{a=1}^{s}\underbrace{I\otimes\cdots\otimes\tfrac12\mathrm{ad}_{i\vec e_\eta}a\otimes\cdots\otimes I}_{s\ \text{factors}} .
 $$
 
 The trace removal is what reduces the tensor power to the irreducible spin-$s$ piece; it can be imposed by the metric pairing $\langle\cdot,\cdot\rangle=\mathrm{Sc}(\cdot\,{}^{\natural})$ between factors, which is an operation the algebra already provides. The integer-spin representations are thus all constructed from the adjoint action, the tensor product, the symmetry projector, and the trace removal, and no new algebraic input is required.
@@ -302,7 +302,7 @@ What the algebra supplies is the triplet, its ladder, its Casimir, and the tenso
 | $\xi_r$, $r=1,\dots,2s+1$ | Polarization labels of a spin-$s$ field |
 | $a_{\mathrm{fop},r},a_{\mathrm{fop},r}^{\dagger}$ | Bosonic mode operators, $[a_{\mathrm{fop},r},a_{\mathrm{fop},s}^{\dagger}]=\delta_{rs}(2\pi\hbar)^3\delta^{(3)}$ |
 | $\lambda=\vec u_p\cdot\vec S$ | Helicity; eigenvalues $\pm s$ |
-| $\tilde S_{\Psi}^{(s)}_k=\sum_a I\otimes\cdots\otimes \tilde S_{\Psi,\mathrm{adj},\eta}\otimes\cdots\otimes I$ | Internal spin for rank-$s$ carriers |
+| $\tilde S_{\Psi,k}^{(s)}=\sum_a I\otimes\cdots\otimes \tilde S_{\Psi,\mathrm{adj},\eta}\otimes\cdots\otimes I$ | Internal spin for rank-$s$ carriers |
 
 ## Further Reading
 

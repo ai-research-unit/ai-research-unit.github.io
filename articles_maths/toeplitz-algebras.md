@@ -65,23 +65,23 @@ $$
 T_p = P M_p P \in B(H^2) ,
 $$
 
-where $M_p$ is the multiplication operator on $L^2(\mathbb{T})$ and $P$ is the orthogonal projection onto $H^2$, the two spaces being identified as in the remark above; $M_p$ is bounded with $\lVert M_p\rVert = \lVertp\rVert_\infty$. The symbol map is the linear map $p \mapsto T_p$.
+where $M_p$ is the multiplication operator on $L^2(\mathbb{T})$ and $P$ is the orthogonal projection onto $H^2$, the two spaces being identified as in the remark above; $M_p$ is bounded with $\lVert M_p\rVert = \lVert p\rVert_\infty$. The symbol map is the linear map $p \mapsto T_p$.
 
 **Proposition.** Let $p, q \in L^\infty(\mathbb{T})$ and $\lambda \in \mathbb{C}$. Then
 
-**(a)** $T_{p+q} = T_p + T_q$ and $T_{\lambdap} = \lambda T_p$, and $\lVert T_p\rVert \leq \lVertp\rVert_\infty$;
+**(a)** $T_{p+q} = T_p + T_q$ and $T_{\lambda p} = \lambda T_p$, and $\lVert T_p\rVert \leq \lVert p\rVert_\infty$;
 
-**(b)** $T_p^* = T_{\barp}$, and $T_p = 0$ only if $p = 0$; so $p \mapsto T_p$ is injective;
+**(b)** $T_p^* = T_{\bar p}$, and $T_p = 0$ only if $p = 0$; so $p \mapsto T_p$ is injective;
 
-**(c)** if $p$ is inner (analytic with $\lvertp\rvert = 1$ a.e.) then $T_p$ is an isometry, and if $p$ is co-inner (that is, $\barp$ is inner) then $T_p$ is a co-isometry;
+**(c)** if $p$ is inner (analytic with $\lvert p\rvert = 1$ a.e.) then $T_p$ is an isometry, and if $p$ is co-inner (that is, $\bar p$ is inner) then $T_p$ is a co-isometry;
 
-**(d)** $\lVert T_p\rVert = \lVertp\rVert_\infty$ for every $p \in L^\infty(\mathbb{T})$.
+**(d)** $\lVert T_p\rVert = \lVert p\rVert_\infty$ for every $p \in L^\infty(\mathbb{T})$.
 
-**Proof.** (a) is the linearity of $M$ and $P$ together with $\lVert P\rVert = 1$. (b) The adjoint of $PM_p P$ is $PM_{\barp}P$, and injectivity holds because $\langle T_p e_n, e_m\rangle = \hatp(m-n)$ determines all Fourier coefficients of $p$, as the next theorem records. (c) If $p$ is inner then $p H^2 \subseteq H^2$ and $\lvertp\rvert = 1$, so $\lVert T_p f\rVert = \lVert P(p f)\rVert = \lVertp f\rVert = \lVert f\rVert$; the co-inner case is the adjoint statement by (b). (d) The inequality $\lVert T_p\rVert \leq \lVertp\rVert_\infty$ is (a). For the reverse inequality one uses the positivity of $T_{\lvertp\rvert^2} = T_{\barp}T_p$ for $p$ analytic, whence $\lVert T_p f\rVert^2 = \langle T_{\barp}T_p f, f\rangle \geq \lVertp\rVert_\infty^2\lVert f\rVert^2$ for a suitable vector $f$ constructed from an approximate eigenvector of the multiplication operator; the general case follows by a uniform boundedness argument. This is the standard computation of the norm of a Toeplitz operator and is quoted as standard.
+**Proof.** (a) is the linearity of $M$ and $P$ together with $\lVert P\rVert = 1$. (b) The adjoint of $PM_p P$ is $PM_{\bar p}P$, and injectivity holds because $\langle T_p e_n, e_m\rangle = \hat p(m-n)$ determines all Fourier coefficients of $p$, as the next theorem records. (c) If $p$ is inner then $p H^2 \subseteq H^2$ and $\lvert p\rvert = 1$, so $\lVert T_p f\rVert = \lVert P(p f)\rVert = \lVert p f\rVert = \lVert f\rVert$; the co-inner case is the adjoint statement by (b). (d) The inequality $\lVert T_p\rVert \leq \lVert p\rVert_\infty$ is (a). For the reverse inequality one uses the positivity of $T_{\lvert p\rvert^2} = T_{\bar p}T_p$ for $p$ analytic, whence $\lVert T_p f\rVert^2 = \langle T_{\bar p}T_p f, f\rangle \geq \lVert p\rVert_\infty^2\lVert f\rVert^2$ for a suitable vector $f$ constructed from an approximate eigenvector of the multiplication operator; the general case follows by a uniform boundedness argument. This is the standard computation of the norm of a Toeplitz operator and is quoted as standard.
 
 ### The Matrix Form
 
-**Theorem (Toeplitz structure).** Let $p = \sum_{k\in\mathbb{Z}}c_kz^k \in L^\infty(\mathbb{T})$ with Fourier coefficients $c_k = \hatp(k)$, and let $e_n = z^n$, $n\geq0$, be the orthonormal basis of $H^2$. Then
+**Theorem (Toeplitz structure).** Let $p = \sum_{k\in\mathbb{Z}}c_kz^k \in L^\infty(\mathbb{T})$ with Fourier coefficients $c_k = \hat p(k)$, and let $e_n = z^n$, $n\geq0$, be the orthonormal basis of $H^2$. Then
 
 $$
 \langle T_p e_n, e_m\rangle = c_{m-n} \qquad (m, n \geq 0) ,
@@ -103,7 +103,7 @@ $$
 \boxed{\;T_{pq} = T_p T_q\;}
 $$
 
-if and only if $p \in \overline{H^\infty}$ or $q \in H^\infty$, where $H^\infty$ denotes the space of bounded analytic symbols (those with $\hatp(n) = 0$ for $n<0$) and $\overline{H^\infty}$ its complex conjugates, the bounded co-analytic symbols (those with $\hatp(n) = 0$ for $n>0$).
+if and only if $p \in \overline{H^\infty}$ or $q \in H^\infty$, where $H^\infty$ denotes the space of bounded analytic symbols (those with $\hat p(n) = 0$ for $n<0$) and $\overline{H^\infty}$ its complex conjugates, the bounded co-analytic symbols (those with $\hat p(n) = 0$ for $n>0$).
 
 **Proof.** The difference is
 
@@ -113,7 +113,7 @@ $$
 
 where $Q = 1-P$ projects onto the negative powers. If $q \in H^\infty$ then $q H^2 \subseteq H^2$, so $QM_q P = 0$ and the difference vanishes for every $p$; if $p \in \overline{H^\infty}$ then $PM_p Q = 0$, since multiplication by a co-analytic symbol sends a function supported on the negative powers to a function supported on the strictly negative powers, which the projection $P$ annihilates, and the difference vanishes for every $q$. The converse is the nontrivial direction of the Brown–Halmos theorem: it is checked on the monomials and extended by approximation, the failure for the pair $(p,q) = (z,\bar z)$ being the computation of the next corollary. It is quoted as standard.
 
-**Corollary (analytic symbols).** The map $p \mapsto T_p$ is an isometric unital algebra homomorphism of $H^\infty$ onto a commutative subalgebra of $B(H^2)$: for $p, q \in H^\infty$ the right factor $q$ is analytic, so $T_{pq} = T_p T_q$, and the norm is $\lVert T_p\rVert = \lVertp\rVert_\infty$ by the proposition above. In particular $T_z^n = T_{z^n}$ for every $n$. Multiplicativity fails for the pair $z$, $\bar z$, and the two products are
+**Corollary (analytic symbols).** The map $p \mapsto T_p$ is an isometric unital algebra homomorphism of $H^\infty$ onto a commutative subalgebra of $B(H^2)$: for $p, q \in H^\infty$ the right factor $q$ is analytic, so $T_{pq} = T_p T_q$, and the norm is $\lVert T_p\rVert = \lVert p\rVert_\infty$ by the proposition above. In particular $T_z^n = T_{z^n}$ for every $n$. Multiplicativity fails for the pair $z$, $\bar z$, and the two products are
 
 $$
 T_{\bar z}T_z = 1, \qquad T_zT_{\bar z} = 1 - P_0 ,
@@ -148,7 +148,7 @@ where $s(T_p + K) = p$ is the **symbol map**, a surjective $*$-homomorphism whos
 
 **Theorem (Coburn's ideal theorem; standard).** The closed two-sided ideals of $\mathcal{T}$ are exactly $\{0\}$, $K(H^2)$ and $\mathcal{T}$: the compact operators form the unique nontrivial closed two-sided ideal, and the quotient by it is $C(\mathbb{T})$.
 
-**Proof (sketch).** That $K(H^2)$ is an ideal follows from the structure theorem; that it is the only nontrivial one is Coburn's theorem, quoted as standard. The mechanism is the compactness of $T_p T_q$ for continuous $p,q$ with $pq = 0$, which is the case $pq = 0$ of the identity $T_{pq} - T_p T_q = H^*_{\barp}H_q$ of the index theorem below together with Hartman's theorem; from it one shows that every nonzero closed ideal contains a nonzero compact operator, and the simplicity of $K(H^2)$ then forces the ideal to contain all of $K(H^2)$.
+**Proof (sketch).** That $K(H^2)$ is an ideal follows from the structure theorem; that it is the only nontrivial one is Coburn's theorem, quoted as standard. The mechanism is the compactness of $T_p T_q$ for continuous $p,q$ with $pq = 0$, which is the case $pq = 0$ of the identity $T_{pq} - T_p T_q = H^*_{\bar p}H_q$ of the index theorem below together with Hartman's theorem; from it one shows that every nonzero closed ideal contains a nonzero compact operator, and the simplicity of $K(H^2)$ then forces the ideal to contain all of $K(H^2)$.
 
 **Theorem (Coburn).** Let $V \in B(H)$ be a proper isometry, that is, $V^*V = 1$ and $VV^* \neq 1$. Then there is an isomorphism of $\mathrm{C}^*$-algebras $\mathcal{T} \to \mathrm{C}^*(V)$ carrying $S$ to $V$. Consequently $\mathcal{T}$ is the **universal $\mathrm{C}^*$-algebra generated by a proper isometry**.
 
@@ -180,7 +180,7 @@ $$
 
 ### The Index of a Toeplitz Operator
 
-**Definition.** Let $p \in C(\mathbb{T})$ be nowhere vanishing. The **winding number** $\operatorname{wind}(p)$ is the degree of the continuous map $\mathbb{T} \to \mathbb{T}$, $z \mapsto p(z)/\lvertp(z)\rvert$; it is the integer determined by the homotopy class of this map and it is additive, $\operatorname{wind}(pq) = \operatorname{wind}(p) + \operatorname{wind}(q)$ for nowhere-vanishing continuous $p,q$. For $p(z) = z^k$ the winding number is $k$; this has been checked numerically for $k = -3,-1,1,2,5$ by summing the increments of the argument of $z^k$ around a grid of $2\cdot10^5$ points of the circle, giving the values $-3,-1,1,2,5$.
+**Definition.** Let $p \in C(\mathbb{T})$ be nowhere vanishing. The **winding number** $\operatorname{wind}(p)$ is the degree of the continuous map $\mathbb{T} \to \mathbb{T}$, $z \mapsto p(z)/\lvert p(z)\rvert$; it is the integer determined by the homotopy class of this map and it is additive, $\operatorname{wind}(pq) = \operatorname{wind}(p) + \operatorname{wind}(q)$ for nowhere-vanishing continuous $p,q$. For $p(z) = z^k$ the winding number is $k$; this has been checked numerically for $k = -3,-1,1,2,5$ by summing the increments of the argument of $z^k$ around a grid of $2\cdot10^5$ points of the circle, giving the values $-3,-1,1,2,5$.
 
 **Theorem (Toeplitz index theorem; Noether, Gohberg–Krein).** Let $p \in C(\mathbb{T})$ and let $T_p = PM_p P$ be the Toeplitz operator with symbol $p$. Then $T_p$ is Fredholm if and only if $p(z) \neq 0$ for all $z \in \mathbb{T}$, and in that case
 
@@ -188,10 +188,10 @@ $$
 \boxed{\;\operatorname{index}(T_p) = -\operatorname{wind}(p)\;} .
 $$
 
-**Proof.** The Hankel operator $H_{\barp} = QM_{\barp}P = (PM_p Q)^*$ is compact when $p \in C(\mathbb{T})$ by Hartman's theorem; hence
+**Proof.** The Hankel operator $H_{\bar p} = QM_{\bar p}P = (PM_p Q)^*$ is compact when $p \in C(\mathbb{T})$ by Hartman's theorem; hence
 
 $$
-T_{pq} - T_p T_q = PM_p QM_q P = H_{\barp}^* H_q
+T_{pq} - T_p T_q = PM_p QM_q P = H_{\bar p}^* H_q
 $$
 
 is compact for continuous $p,q$, and the Toeplitz map is multiplicative modulo the compacts. Consequently $T_p$ is invertible modulo the compacts exactly when the multiplication operator $M_p$ is: the Calkin image of $T_p$ is the compression of the invertible class of $M_p$, and $M_p$ is invertible in $B(L^2(\mathbb{T}))$ exactly when $p$ vanishes nowhere. For the index formula one uses that the index is invariant under compact perturbation, that it is additive, and that the symbol $p$ may be deformed through nowhere-vanishing continuous symbols to a monomial $z^k$; the deformation does not change the index by the local constancy of the previous theorem, and the index of $T_{z^k} = S^k$ is $-k$, while the winding number of $z^k$ is $k$. This is the Toeplitz index theorem, proved in the cited literature by the same deformation argument together with an explicit computation of the kernel and co-kernel dimensions of $S^k$; it is quoted as standard.
@@ -211,10 +211,10 @@ is compact for continuous $p,q$, and the Toeplitz map is multiplicative modulo t
 **Example (matrix-valued symbols).** Let $p : \mathbb{T} \to M_n(\mathbb{C})$ be continuous, and let $T_p$ act on $H^2 \otimes \mathbb{C}^n$ by $T_p = P_nM_p P_n$, where $P_n = P \otimes 1$. Then $T_p$ is Fredholm if and only if $p(z)$ is invertible for every $z$, that is, if and only if $p$ takes values in the general linear group $GL_n(\mathbb{C})$, and
 
 $$
-\operatorname{index}(T_p) = -\operatorname{wind}(\detp) .
+\operatorname{index}(T_p) = -\operatorname{wind}(\det p) .
 $$
 
-The winding number of $\detp$ is the degree of the map $\mathbb{T} \to \mathbb{C}^\times$; the formula is the matrix-valued Toeplitz index theorem of Gohberg–Krein, quoted as standard, and it reduces to the scalar case for $n=1$ because then $\detp = p$.
+The winding number of $\det p$ is the degree of the map $\mathbb{T} \to \mathbb{C}^\times$; the formula is the matrix-valued Toeplitz index theorem of Gohberg–Krein, quoted as standard, and it reduces to the scalar case for $n=1$ because then $\det p = p$.
 
 **Example (the Toeplitz algebra of a vector-valued Hardy space).** With matrix symbols the Toeplitz algebra is generated by $S \otimes 1$ and the matrix-valued multiplications; the quotient by the compacts is $C(\mathbb{T}, M_n(\mathbb{C}))$, so the symbol map takes values in matrix-valued functions, and the extension theory is correspondingly richer. This is the $\mathrm{C}^*$-algebraic form of the Wiener–Hopf theory of systems, and its analysis belongs to *Analysis on Linear Spaces* in Part III.
 
@@ -226,9 +226,9 @@ The winding number of $\detp$ is the degree of the map $\mathbb{T} \to \mathbb{C
 
 ## Summary
 
-The **Hardy space** $H^2$ is the closed span in $L^2(\mathbb{T})$ of the monomials $z^n$, $n \geq 0$, and the **unilateral shift** $S = T_z$ is the isometry of multiplication by $z$. Its adjoint satisfies $S^*S = 1$ and $SS^* = 1 - P_0$ with $P_0$ the rank-one projection onto the constants, so $S$ is essentially normal, its self-commutator is compact, its spectrum is the closed disc $\overline{\mathbb{U}}$ and its essential spectrum is the circle $\mathbb{T}$; it is Fredholm with $\ker S = \{0\}$, $\ker S^* = \mathbb{C}e_0$ and $\operatorname{index}(S) = -1$. For $p \in L^\infty(\mathbb{T})$ the **Toeplitz operator** $T_p = PM_p P$ has the Toeplitz matrix $\langle T_p e_n, e_m\rangle = \hatp(m-n)$, constant along diagonals, with $\lVert T_p\rVert = \lVertp\rVert_\infty$, $T_p^* = T_{\barp}$ and $p \mapsto T_p$ injective; $T_p$ is an isometry when $p$ is inner and a co-isometry when $p$ is co-inner. By the **Brown–Halmos theorem**, $T_{pq} = T_p T_q$ if and only if $p$ is co-analytic or $q$ is analytic, so $p \mapsto T_p$ is an isometric algebra homomorphism on $H^\infty$, and the failure for the pair $(z,\bar z)$ is exactly $T_{\bar z}T_z = 1$, $T_zT_{\bar z} = 1 - P_0$.
+The **Hardy space** $H^2$ is the closed span in $L^2(\mathbb{T})$ of the monomials $z^n$, $n \geq 0$, and the **unilateral shift** $S = T_z$ is the isometry of multiplication by $z$. Its adjoint satisfies $S^*S = 1$ and $SS^* = 1 - P_0$ with $P_0$ the rank-one projection onto the constants, so $S$ is essentially normal, its self-commutator is compact, its spectrum is the closed disc $\overline{\mathbb{U}}$ and its essential spectrum is the circle $\mathbb{T}$; it is Fredholm with $\ker S = \{0\}$, $\ker S^* = \mathbb{C}e_0$ and $\operatorname{index}(S) = -1$. For $p \in L^\infty(\mathbb{T})$ the **Toeplitz operator** $T_p = PM_p P$ has the Toeplitz matrix $\langle T_p e_n, e_m\rangle = \hat p(m-n)$, constant along diagonals, with $\lVert T_p\rVert = \lVert p\rVert_\infty$, $T_p^* = T_{\bar p}$ and $p \mapsto T_p$ injective; $T_p$ is an isometry when $p$ is inner and a co-isometry when $p$ is co-inner. By the **Brown–Halmos theorem**, $T_{pq} = T_p T_q$ if and only if $p$ is co-analytic or $q$ is analytic, so $p \mapsto T_p$ is an isometric algebra homomorphism on $H^\infty$, and the failure for the pair $(z,\bar z)$ is exactly $T_{\bar z}T_z = 1$, $T_zT_{\bar z} = 1 - P_0$.
 
-The **Toeplitz algebra** $\mathcal{T} = \mathrm{C}^*(S)$ consists of the operators $T_p + K$ with $p$ continuous and $K$ compact; its quotient by the compacts is $C(\mathbb{T})$ via the **symbol map** $\sigma(T_p + K) = p$, giving the **Toeplitz extension** $0 \to K(H^2) \to \mathcal{T} \to C(\mathbb{T}) \to 0$, and $K(H^2)$ is the unique nontrivial closed two-sided ideal. By **Coburn's theorem** $\mathcal{T}$ is the universal $\mathrm{C}^*$-algebra generated by a proper isometry, and every proper isometry generates a copy of it. In the **Fredholm theory**, $T_p$ is Fredholm exactly when $p$ vanishes nowhere, and the **Toeplitz index theorem** gives $\operatorname{index}(T_p) = -\operatorname{wind}(p)$; the index is additive and invariant under compact perturbation, it is invisible in every finite section of the operator — the $n\times n$ truncations of the shift all have index $0$ — and the theorem is the fundamental case of the index pairing whose general theory is not treated here. The matrix-valued version gives $\operatorname{index}(T_p) = -\operatorname{wind}(\detp)$ for symbols in $GL_n(\mathbb{C})$-valued functions.
+The **Toeplitz algebra** $\mathcal{T} = \mathrm{C}^*(S)$ consists of the operators $T_p + K$ with $p$ continuous and $K$ compact; its quotient by the compacts is $C(\mathbb{T})$ via the **symbol map** $\sigma(T_p + K) = p$, giving the **Toeplitz extension** $0 \to K(H^2) \to \mathcal{T} \to C(\mathbb{T}) \to 0$, and $K(H^2)$ is the unique nontrivial closed two-sided ideal. By **Coburn's theorem** $\mathcal{T}$ is the universal $\mathrm{C}^*$-algebra generated by a proper isometry, and every proper isometry generates a copy of it. In the **Fredholm theory**, $T_p$ is Fredholm exactly when $p$ vanishes nowhere, and the **Toeplitz index theorem** gives $\operatorname{index}(T_p) = -\operatorname{wind}(p)$; the index is additive and invariant under compact perturbation, it is invisible in every finite section of the operator — the $n\times n$ truncations of the shift all have index $0$ — and the theorem is the fundamental case of the index pairing whose general theory is not treated here. The matrix-valued version gives $\operatorname{index}(T_p) = -\operatorname{wind}(\det p)$ for symbols in $GL_n(\mathbb{C})$-valued functions.
 
 ## Summary of Notation
 
@@ -241,7 +241,7 @@ The **Toeplitz algebra** $\mathcal{T} = \mathrm{C}^*(S)$ consists of the operato
 | $M_p$ | Multiplication operator on $L^2(\mathbb{T})$ |
 | $S$ | Unilateral shift, $S = T_z$; $S^*$ its adjoint |
 | $T_p = PM_p P$ | Toeplitz operator with symbol $p$ |
-| $\hatp(k)$ | $k$-th Fourier coefficient of $p$ |
+| $\hat p(k)$ | $k$-th Fourier coefficient of $p$ |
 | $H^\infty$, $\overline{H^\infty}$ | Bounded analytic, bounded co-analytic symbols |
 | $\mathcal{T} = \mathrm{C}^*(S)$ | Toeplitz algebra |
 | $s(T_p + K) = p$ | Symbol map, kernel $K(H^2)$ |

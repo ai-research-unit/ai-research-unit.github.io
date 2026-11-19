@@ -197,7 +197,7 @@ $$
 which leaves the trilinear form
 
 $$
-A_\mu\bigl(\tilde{Ξ}^{\dagger}C_0_{(1)}\, C_\mu\tilde{Ξ}_{(2)} + \tilde{Ξ}^{\dagger}C_0_{(2)}\, C_\mu\tilde{Ξ}_{(1)}\bigr)
+A_\mu\bigl(\tilde{Ξ}^{\dagger}C_{0,(1)}\, C_\mu\tilde{Ξ}_{(2)} + \tilde{Ξ}^{\dagger}C_{0,(2)}\, C_\mu\tilde{Ξ}_{(1)}\bigr)
 = 2\sum_{\nu,\lambda,\sigma}\epsilon_\nu\epsilon_\lambda\epsilon_\sigma\, A_\mu\, \varepsilon_{\lambda\mu\nu\sigma}N_\lambda B_\nu k_\sigma
 $$
 

@@ -10,7 +10,7 @@ $$
 \bigl(\mathrm{Sd}^{\alpha}_x\bigr)^{*} = \mathrm{Sd}^{\alpha}_{x^{\dagger}} ,
 $$
 
-with the sign preserved: adjacency commutes with the grade involution because the involution does not change the parity, $\varepsilon_{x^{\dagger}} = \varepsilon_x$. Three further facts complete the picture. Self-adjointness of the signed two-sided operator is again $x = x^{\dagger}$. The unitarity criterion is again $x^{\dagger}x = xx^{\dagger} = 1$, and here the sign drops out of the computation, because $x^{\dagger}x$ is even and $\varepsilon_{x^{\dagger}x} = +1$: the sign is visible in the operator and invisible in its modulus. And the modular conjugation leaves the signed two-sided operator invariant, $\jmath\bar\mathrm{Sd}^{\alpha}_x\jmath = \bar\mathrm{Sd}^{\alpha}_x$, because the sign is a real scalar and $\jmath$ is antilinear; so the signed two-sided operator sits in the same place as the unsigned one with respect to the exchange between the algebra and its commutant.
+with the sign preserved: adjacency commutes with the grade involution because the involution does not change the parity, $\varepsilon_{x^{\dagger}} = \varepsilon_x$. Three further facts complete the picture. Self-adjointness of the signed two-sided operator is again $x = x^{\dagger}$. The unitarity criterion is again $x^{\dagger}x = xx^{\dagger} = 1$, and here the sign drops out of the computation, because $x^{\dagger}x$ is even and $\varepsilon_{x^{\dagger}x} = +1$: the sign is visible in the operator and invisible in its modulus. And the modular conjugation leaves the signed two-sided operator invariant, $\jmath\\bar{\\mathrm{Sd}}^{\alpha}_x\jmath = \\bar{\\mathrm{Sd}}^{\alpha}_x$, because the sign is a real scalar and $\jmath$ is antilinear; so the signed two-sided operator sits in the same place as the unsigned one with respect to the exchange between the algebra and its commutant.
 
 This article fixes the signed two-sided operator, its adjoint, the sign rule for adjunction, the self-adjointness and unitarity criteria, and the behaviour under the modular conjugation and the modular flow.
 
@@ -95,17 +95,17 @@ so the adjoint of the signed family is obtained from the adjoint of the unsigned
 **Proposition (invariance under the modular conjugation).** The signed two-sided operator is invariant under the modular conjugation of the standard form,
 
 $$
-\jmath\,\bar\mathrm{Sd}^{\alpha}_x\,\jmath = \bar\mathrm{Sd}^{\alpha}_x ,
+\jmath\,\\bar{\\mathrm{Sd}}^{\alpha}_x\,\jmath = \\bar{\\mathrm{Sd}}^{\alpha}_x ,
 $$
 
 because the sign is a real scalar and the modular conjugation is antilinear with $\jmath^{2} = \mathrm{id}$.
 
-**Proof.** $\jmath\bar\mathrm{Sd}^{\alpha}_x\jmath = \varepsilon_x\,\jmath\bar\mathrm{Sd}_x\jmath = \varepsilon_x\bar\mathrm{Sd}_x = \bar\mathrm{Sd}^{\alpha}_x$, using the invariance of the unsigned two-sided operator of *The Adjoint of the Two-Sided Operator on a Hermitian Algebra*.
+**Proof.** $\jmath\\bar{\\mathrm{Sd}}^{\alpha}_x\jmath = \varepsilon_x\,\jmath\\bar{\\mathrm{Sd}}_x\jmath = \varepsilon_x\\bar{\\mathrm{Sd}}_x = \\bar{\\mathrm{Sd}}^{\alpha}_x$, using the invariance of the unsigned two-sided operator of *The Adjoint of the Two-Sided Operator on a Hermitian Algebra*.
 
 **Proposition (the modular flow on the signed family).** The modular automorphism $\sigma_t(x) = \Delta^{it}x\Delta^{-it}$ acts by
 
 $$
-\boxed{\;\Delta^{it}\,\bar\mathrm{Sd}^{\alpha}_x\,\Delta^{-it} = \bar\mathrm{Sd}^{\alpha}_{\sigma_t(x)}\;} ,
+\boxed{\;\Delta^{it}\,\\bar{\\mathrm{Sd}}^{\alpha}_x\,\Delta^{-it} = \\bar{\\mathrm{Sd}}^{\alpha}_{\sigma_t(x)}\;} ,
 $$
 
 and it preserves the parity, $\varepsilon_{\sigma_t(x)} = \varepsilon_x$, so it preserves the sign; the modular flow therefore acts on the family of signed two-sided operators through its action on the parameters and commutes with the sign bookkeeping.
@@ -136,7 +136,7 @@ $$
 \bigl(\mathrm{Sd}^{\alpha}_x\bigr)^{*} = \mathrm{Sd}^{\alpha}_{x^{\dagger}} ,
 $$
 
-the sign being preserved because the involution preserves the parity, $\varepsilon_{x^{\dagger}} = \varepsilon_x$. Its adjoint products are $\mathrm{Sd}_{x^{\dagger}x}$ and $\mathrm{Sd}_{xx^{\dagger}}$, which are unsigned because $x^{\dagger}x$ and $xx^{\dagger}$ are even, so the **unitarity criterion** is the unsigned one, $(\mathrm{Sd}^{\alpha}_x)^{*}\mathrm{Sd}^{\alpha}_x = \mathrm{Sd}_{x^{\dagger}x} = \mathrm{id}$ (in particular $x^{\dagger}x = 1$), and **self-adjointness** is $\mathrm{Sd}_{x^{\dagger}} = \mathrm{Sd}_x$, which holds for $x^{\dagger} = \pm x$. The **sign rule** of the composition is unchanged by adjunction, since adjunction multiplies both the operator and its adjoint by the same scalar, and the composite of two odd signed two-sided operators is an ordinary two-sided operator. The **modular conjugation** leaves the signed two-sided operator invariant, $\jmath\bar\mathrm{Sd}^{\alpha}_x\jmath = \bar\mathrm{Sd}^{\alpha}_x$, and the **modular flow** acts by $\Delta^{it}\bar\mathrm{Sd}^{\alpha}_x\Delta^{-it} = \bar\mathrm{Sd}^{\alpha}_{\sigma_t(x)}$ with the parity and the sign preserved; so the sign lives in the parameter, in the value at the unit and in the composition table, and nowhere in the adjoint operation. The grading and the signed multiplications are *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, the unsigned adjoint is *The Adjoint of the Two-Sided Operator on a Hermitian Algebra*, and the modular objects are *The Modular Operator and Tomita-Takesaki Theory*.
+the sign being preserved because the involution preserves the parity, $\varepsilon_{x^{\dagger}} = \varepsilon_x$. Its adjoint products are $\mathrm{Sd}_{x^{\dagger}x}$ and $\mathrm{Sd}_{xx^{\dagger}}$, which are unsigned because $x^{\dagger}x$ and $xx^{\dagger}$ are even, so the **unitarity criterion** is the unsigned one, $(\mathrm{Sd}^{\alpha}_x)^{*}\mathrm{Sd}^{\alpha}_x = \mathrm{Sd}_{x^{\dagger}x} = \mathrm{id}$ (in particular $x^{\dagger}x = 1$), and **self-adjointness** is $\mathrm{Sd}_{x^{\dagger}} = \mathrm{Sd}_x$, which holds for $x^{\dagger} = \pm x$. The **sign rule** of the composition is unchanged by adjunction, since adjunction multiplies both the operator and its adjoint by the same scalar, and the composite of two odd signed two-sided operators is an ordinary two-sided operator. The **modular conjugation** leaves the signed two-sided operator invariant, $\jmath\\bar{\\mathrm{Sd}}^{\alpha}_x\jmath = \\bar{\\mathrm{Sd}}^{\alpha}_x$, and the **modular flow** acts by $\Delta^{it}\\bar{\\mathrm{Sd}}^{\alpha}_x\Delta^{-it} = \\bar{\\mathrm{Sd}}^{\alpha}_{\sigma_t(x)}$ with the parity and the sign preserved; so the sign lives in the parameter, in the value at the unit and in the composition table, and nowhere in the adjoint operation. The grading and the signed multiplications are *The Grading of a Hermitian Algebra with Signed Hermitian Adjoint* and *One-Sided Operators on a Hermitian Algebra with Signed Hermitian Adjoint*, the unsigned adjoint is *The Adjoint of the Two-Sided Operator on a Hermitian Algebra*, and the modular objects are *The Modular Operator and Tomita-Takesaki Theory*.
 
 ## Summary of Notation
 
@@ -148,8 +148,8 @@ the sign being preserved because the involution preserves the parity, $\varepsil
 | $\varepsilon_{x^{\dagger}} = \varepsilon_x$ | Adjunction preserves the sign |
 | $(\mathrm{Sd}^{\alpha}_x)^{*}\mathrm{Sd}^{\alpha}_x = \mathrm{Sd}_{x^{\dagger}x}$ | Adjoint product, unsigned |
 | $x^{\dagger}x = xx^{\dagger} = 1$ | Unitarity criterion |
-| $\jmath\bar\mathrm{Sd}^{\alpha}_x\jmath = \bar\mathrm{Sd}^{\alpha}_x$ | Invariance under the modular conjugation |
-| $\Delta^{it}\bar\mathrm{Sd}^{\alpha}_x\Delta^{-it} = \bar\mathrm{Sd}^{\alpha}_{\sigma_t(x)}$ | Modular flow on the family |
+| $\jmath\\bar{\\mathrm{Sd}}^{\alpha}_x\jmath = \\bar{\\mathrm{Sd}}^{\alpha}_x$ | Invariance under the modular conjugation |
+| $\Delta^{it}\\bar{\\mathrm{Sd}}^{\alpha}_x\Delta^{-it} = \\bar{\\mathrm{Sd}}^{\alpha}_{\sigma_t(x)}$ | Modular flow on the family |
 
 ## Further Reading
 

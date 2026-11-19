@@ -34,7 +34,7 @@ that is, the real tensor product with the two central scalars identified. Its di
 
 **The theorem.** $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_4(\mathbb{C})$.
 
-*Proof.* $\mathbb{B}\cong M_2(\mathbb{C})$ as a complex algebra, and the tensor product of matrix algebras is the matrix algebra of the product of the degrees: $M_m(\mathbb{C})\otimes_{\mathbb{C}}M_n(\mathbb{C})\cong M_{mn}(\mathbb{C})$ through the Kronecker product. With $m=n=2$ the degree is four. $\square$
+*Proof.* $\mathbb{B}\cong M_2(\mathbb{C})$ as a complex algebra, and the tensor product of matrix algebras is the matrix algebra of the product of the degrees: $M_m(\mathbb{C})\otimes_{\mathbb{C}}M_n(\mathbb{C})\cong M_{mn}(\mathbb{C})$ through the Kronecker product. With $m=n=2$ the degree is four.
 
 **The consequences of being a full matrix algebra.** $M_4(\mathbb{C})$ is simple, so it has no two-sided ideal other than $0$ and the whole algebra; it is central, so its centre is $\mathbb{C}\mathrm I_4$, of complex dimension one; it is the endomorphism algebra of a four-dimensional complex space, unique up to isomorphism; and every automorphism is inner, so $\operatorname{Aut}(M_4)=\mathrm{PGL}_4(\mathbb{C})$.
 
@@ -76,7 +76,7 @@ whose class in the quotient is $-2\,(i\otimes e_t)$, that is $-2i\mathrm I_4$, w
 
 **The theorem.** $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$.
 
-*Proof.* Factor the algebra: $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}=(\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C})\otimes_{\mathbb{R}}(\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H})$. The scalar extension is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ through $a\otimes b\mapsto(ab,\bar a b)$, and the quaternion tensor square is $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$. Hence the algebra is $(\mathbb{C}\oplus\mathbb{C})\otimes_{\mathbb{R}}M_4(\mathbb{R})\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$. $\square$
+*Proof.* Factor the algebra: $\mathbb{B}\otimes_{\mathbb{R}}\mathbb{B}=(\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C})\otimes_{\mathbb{R}}(\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H})$. The scalar extension is $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ through $a\otimes b\mapsto(ab,\bar a b)$, and the quaternion tensor square is $\mathbb{H}\otimes_{\mathbb{R}}\mathbb{H}\cong M_4(\mathbb{R})$. Hence the algebra is $(\mathbb{C}\oplus\mathbb{C})\otimes_{\mathbb{R}}M_4(\mathbb{R})\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$.
 
 **The dimension check.** Each summand is sixteen over $\mathbb{C}$, that is thirty-two over $\mathbb{R}$, and there are two, for sixty-four, which is $8\cdot8$.
 

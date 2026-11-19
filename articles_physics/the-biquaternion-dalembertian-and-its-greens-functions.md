@@ -18,7 +18,7 @@ and it is the one used by the Klein–Gordon and Dirac companions and by every a
 
 Second, the kernels. Because the $i r'_t$ coordinate turns $\Box_\Phi$ into the four-dimensional Euclidean Laplacian, the inversion of $\Box_\Phi$ is the classical theory of the Laplacian's fundamental solutions, and its different Green's functions are different boundary conditions on one equation. The **invariant** (Euclidean) kernel is $1/(4\pi^2\rho^2)$ with $\rho^2 = \langle\tilde R_\Phi\rangle_{\natural}$; the **retarded** and **advanced** kernels are supported on the light cone, $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(r'_t - R)$ and $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(r'_t + R)$; their difference is the commutator function; and the **causal** kernel is the boundary-value combination that the Wick rotation continues to the Euclidean one. The light-cone delta and its Jacobian, which the companion exercise *Exercise: The Retarded Potentials and the Green's Function* derives for the electromagnetic problem, are re-derived here as the general statement they are an instance of.
 
-Third, the genuinely biquaternionic kernel. The second-order operator $\Box_\Phi$ has a scalar Green's function, but the first-order operator $\tilde\nabla_\Phi$ — the one the Dirac and Maxwell equations are built from — has a **biquaternion-valued** Green's function, $\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural} G_\Box_\Phi$, and it lies in the material sector $\mathbb{B}_{\Phi}$. This is not a cosmetic difference. The scalar kernel is central and commutes with the whole algebra; the first-order kernel is a material four-vector, transforms under the rotor action, and does not commute. Both facts are consequences of the algebra and are verified below.
+Third, the genuinely biquaternionic kernel. The second-order operator $\Box_\Phi$ has a scalar Green's function, but the first-order operator $\tilde\nabla_\Phi$ — the one the Dirac and Maxwell equations are built from — has a **biquaternion-valued** Green's function, $\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural} G_{\Box,\Phi}$, and it lies in the material sector $\mathbb{B}_{\Phi}$. This is not a cosmetic difference. The scalar kernel is central and commutes with the whole algebra; the first-order kernel is a material four-vector, transforms under the rotor action, and does not commute. Both facts are consequences of the algebra and are verified below.
 
 The article is organised as follows. The gradient and the d'Alembertian are established first, with the composition, the symbol, the central scalar, and the adjoint. The defining equation for the Green's function, the invariant kernel, and the causal kernels follow, with the light-cone Jacobian and the boundary condition that selects the retarded solution. The massive operator and the first-order kernel are treated next, together with the shifted gradient — central and non-central — and the Kirchhoff and Kirchhoff–Green representations the shift carries, and the article closes with the sector structure of the kernels and the table of results.
 
@@ -262,7 +262,7 @@ which was checked on a random on-shell four-momentum $K = i(\omega/c)e_t + \vec 
 
 ## The First-Order Kernel
 
-The Dirac and Maxwell equations are first order, and their kernel is the kernel of $\tilde\nabla_\Phi$ rather than of $\Box_\Phi$. Since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, the inverse of left multiplication by $\tilde\nabla_\Phi$ is left multiplication by $(\tilde\nabla_\Phi)^{\natural}$ followed by the scalar kernel; the subscript names the operator inverted, as $G_\Box_\Phi$ names $\Box_\Phi$:
+The Dirac and Maxwell equations are first order, and their kernel is the kernel of $\tilde\nabla_\Phi$ rather than of $\Box_\Phi$. Since $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Box_\Phi$, the inverse of left multiplication by $\tilde\nabla_\Phi$ is left multiplication by $(\tilde\nabla_\Phi)^{\natural}$ followed by the scalar kernel; the subscript names the operator inverted, as $G_{\Box,\Phi}$ names $\Box_\Phi$:
 $$
 \boxed{\;\begin{aligned}
 \tilde{G}_{\Phi,\tilde\nabla_\Phi}(\tilde R_\Phi) &:= (\tilde\nabla_\Phi)^{\natural}\,G_{\Box_\Phi}(\tilde R_\Phi) \in \mathbb{B}_{\Phi} ,\\[2pt]
@@ -272,11 +272,11 @@ $$
 = -\,\delta^{(4)}(\tilde R_\Phi) .
 \end{aligned}\;}
 $$
-So $\tilde{G}_{\Phi,\tilde\nabla_\Phi}$ inverts the first-order operator with the same sign as $G_\Box_\Phi$ inverts the second. The result is not a scalar. With $G_\Box_\Phi$ a real scalar kernel,
+So $\tilde{G}_{\Phi,\tilde\nabla_\Phi}$ inverts the first-order operator with the same sign as $G_{\Box,\Phi}$ inverts the second. The result is not a scalar. With $G_{\Box,\Phi}$ a real scalar kernel,
 $$
-\tilde{G}_{\Phi,\tilde\nabla_\Phi} = e_t\,\partial/\partial R_t\,G_\Box_\Phi - \vec e_x\,\partial/\partial R_x\,G_\Box_\Phi - \vec e_y\,\partial/\partial R_y\,G_\Box_\Phi - \vec e_z\,\partial/\partial R_z\,G_\Box_\Phi ,
+\tilde{G}_{\Phi,\tilde\nabla_\Phi} = e_t\,\partial/\partial R_t\,G_{\Box,\Phi} - \vec e_x\,\partial/\partial R_x\,G_{\Box,\Phi} - \vec e_y\,\partial/\partial R_y\,G_{\Box,\Phi} - \vec e_z\,\partial/\partial R_z\,G_{\Box,\Phi} ,
 $$
-and since $\partial/\partial R_t\,G_\Box_\Phi = -i\partial/\partial r'_t\,G_\Box_\Phi$ is imaginary while the spatial derivatives are real, the first-order kernel has an imaginary scalar part and a real vector part:
+and since $\partial/\partial R_t\,G_{\Box,\Phi} = -i\partial/\partial r'_t\,G_{\Box,\Phi}$ is imaginary while the spatial derivatives are real, the first-order kernel has an imaginary scalar part and a real vector part:
 $$
 \tilde{G}_{\Phi,\tilde\nabla_\Phi} \in \mathbb{B}_{\Phi} , \qquad\text{that is,}\qquad \tilde{G}_{\Phi,\tilde\nabla_\Phi}^{\flat} = \tilde{G}_{\Phi,\tilde\nabla_\Phi} .
 $$
@@ -286,7 +286,7 @@ Three consequences follow and are used by the companion articles.
 
 **The kernel transforms as a vector.** Under the Lorentz action the scalar kernel is invariant, but the first-order kernel transforms by the four-vector rule,
 $$
-G_\Box_\Phi(\tilde R_\Phi) \mapsto G_\Box_\Phi(\tilde R_\Phi) ,
+G_{\Box,\Phi}(\tilde R_\Phi) \mapsto G_{\Box,\Phi}(\tilde R_\Phi) ,
 \qquad
 \tilde{G}_{\Phi,\tilde\nabla_\Phi}(\tilde R_\Phi) \mapsto \tilde{U}\,\tilde{G}_{\Phi,\tilde\nabla_\Phi}(\tilde{U}^{-1}\tilde R_\Phi\tilde{U}^{-{}^{*}})\,\tilde{U}^{*} ,
 $$
@@ -297,7 +297,7 @@ $$
 \tilde{Q}_1\,\tilde{G}_{\Phi,\tilde\nabla_\Phi} \neq \tilde{G}_{\Phi,\tilde\nabla_\Phi}\tilde{Q}_1
 \qquad \text{for generic } \tilde{Q}_1 \in \mathbb{B} ,
 $$
-in contrast with $G_\Box_\Phi$. The scalar kernel may be moved through any algebraic factor; the first-order kernel may not, and its order relative to a field is part of the equation.
+in contrast with $G_{\Box,\Phi}$. The scalar kernel may be moved through any algebraic factor; the first-order kernel may not, and its order relative to a field is part of the equation.
 
 **The massless first-order equation is the conjugation-invariant one.** The homogeneous first-order equation $\tilde\nabla_\Phi\tilde{Ξ} = 0$ is the massless Dirac equation on the spinor module and the source-free Maxwell equation on the field strength, and its kernel theory is the theory of the functions annihilated by $(\tilde\nabla_\Phi)^{\natural}$. The massive first-order operator requires the chirality-off-diagonal mass term of the companion *The Dirac Equation in Biquaternionic Form* and is treated in the spin-$1/2$ articles; the massless kernel above is the common structure those articles specialise.
 
@@ -384,7 +384,7 @@ The conditions on the shock fronts of this equation are the companion shock arti
 
 The four conjugations of the algebra act on the kernels in a way that is worth recording, because it is the bridge to the companion article on the involution lattice. The real scalar kernels — the invariant, the retarded and the advanced ones — are real multiples of $e_t$: the three involutions ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}$ fix them, while $\flat = -{}^{*}$ negates them,
 $$
-G_\Box_\Phi^{\natural} = \bar{G}_\Box_\Phi = G_\Box_\Phi^{*} = G_\Box_\Phi , \qquad G_\Box_\Phi^\flat = -\,G_\Box_\Phi ,
+G_{\Box,\Phi}^{\natural} = \bar{G}_{\Box,\Phi} = G_{\Box,\Phi}^{*} = G_{\Box,\Phi} , \qquad G_{\Box,\Phi}^\flat = -\,G_{\Box,\Phi} ,
 $$
 where the last line uses $\flat = -{}^{*}$. The first-order kernel lies in the fixed space of $\flat$ and is negated by ${}^{*}$,
 $$
@@ -442,7 +442,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $(\tilde\nabla_\Phi)^{\natural} = \sum_\mu e_\mu^{*}\partial/\partial R_\mu$ | Quaternion-conjugate gradient, $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\eta\,\vec e_\eta\partial/\partial R_\eta$ |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$ | Series d'Alembertian; central scalar; $\Box_\Phi \to \omega^2/c^2 - \vec k_\Phi^2$ |
 | $\tilde\nabla_\Phi^{*} = -(\tilde\nabla_\Phi)^{\natural}$, $\Box_\Phi^{*} = \Box_\Phi$ | Adjoints under $\langle\tilde{F},\tilde Q\rangle = \int2\,\mathrm{Sc}(\tilde{F}^{*}\tilde Q)$ |
-| $\Box_\Phi^\flat = -\Box_\Phi$, $G_\Box_\Phi^\flat = -G_\Box_\Phi$, $\tilde{G}_{\Phi,\tilde\nabla_\Phi}^\flat = \tilde{G}_{\Phi,\tilde\nabla_\Phi}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde\nabla_\Phi} \in \mathbb{B}_{\Psi}$ |
+| $\Box_\Phi^\flat = -\Box_\Phi$, $G_{\Box,\Phi}^\flat = -G_{\Box,\Phi}$, $\tilde{G}_{\Phi,\tilde\nabla_\Phi}^\flat = \tilde{G}_{\Phi,\tilde\nabla_\Phi}$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_{\Phi,\tilde\nabla_\Phi} \in \mathbb{B}_{\Psi}$ |
 | $\tilde R_\Phi = i r'_t\,e_t + r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z$ | Material four-position |
 | $\rho^2 = \langle\tilde R_\Phi\rangle_{\natural} = -{r'_{t}}^2 +r_x^2+r_y^2+r_z^2$ | Biquaternion norm of the separation; Euclidean four-distance squared |
 | $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ | Invariant (Euclidean) kernel; $-\Box_\Phi G_{\mathrm{inv}} = \delta^{(4)}$ |
@@ -451,7 +451,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $\mathcal{G}_{\mathrm{PJ}} = G_{\mathrm{ret}} - G_{\mathrm{adv}}$ | Pauli–Jordan commutator function; $\Box_\Phi\mathcal{G}_{\mathrm{PJ}} = 0$ |
 | $G_F = \frac{1}{4\pi^2}\frac{1}{\rho^2 - i\epsilon}$ | Causal (Feynman) kernel; Wick-rotates to $G_{\mathrm{inv}}$ |
 | $G^{(1/k_m)}_{\mathrm{inv}} = \frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$ | Massive invariant kernel; the label $1/k_m$ names the massive case, whose coefficient is $k_m=\hbar/(mc)$ |
-| $\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}G_\Box_\Phi \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde\nabla_\Phi} = -\delta$ |
+| $\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}G_{\Box,\Phi} \in \mathbb{B}_{\Phi}$ | First-order kernel; $\tilde\nabla_\Phi\tilde{G}_{\Phi,\tilde\nabla_\Phi} = -\delta$ |
 | $\tilde\nabla_\Phi + \kappa$, $\kappa \in \mathbb{C}$ | The shifted gradient, written out; the glyph is never extended |
 | $(\tilde\nabla_\Phi+\kappa)((\tilde\nabla_\Phi)^{\natural}+\kappa) = \Box_\Phi - 2i\kappa\,e_t\partial/\partial r'_t + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k_\Phi\|^2$ |
 | $\vec\nabla_{+} = \partial/\partial\tau + i\vec\nabla_\Phi$, $\vec\nabla_{-} = \partial/\partial\tau - i\vec\nabla_\Phi$; $D^{+}_F = \vec\nabla_{+} + f + F$, $D^{-}_F = \vec\nabla_{-} + f - F$ | The source's mutual bigradients and mutual Maxwell–Dirac operators, without the corpus sector mark; $\vec\nabla_{+} = i\tilde\nabla_\Phi$ and $\vec\nabla_{-} = i(\tilde\nabla_\Phi)^{\natural}$, and the non-central shift is the paper's own |

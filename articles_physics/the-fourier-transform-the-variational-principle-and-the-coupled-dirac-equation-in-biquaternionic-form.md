@@ -187,7 +187,7 @@ checked to $2.2\times10^{-16}$ over the four rows below.
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
-=\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F ,
+=\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F ,
 \qquad
 \bigl[\tilde\nabla_{\mathrm{gco},\Phi,\mu},\tilde\nabla_{\mathrm{gco},\Phi,\nu}\bigr]=\frac{i\,ϙ}{\hbar}\tilde F_{\mu\nu},
 $$
@@ -205,7 +205,7 @@ measured as a residual of $0.0\times10^{0}$. **A pure vector is $\natural$-antis
 **So the composed operator is a central scalar exactly when the added term vanishes.** With $\tilde F=0$ the operator is a multiple of the identity, as §*The Second Variation Is One Number, for a New Reason* measures. With $\tilde F\neq0$ it is not, and the compatibility condition
 
 $$
-\Bigl(\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
+\Bigl(\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
 $$
 
 is an equation between elements and not an equation between numbers. **That is the precise sense in which the zero-pole relation stops**: the free article's relation is between a number and its inverse, and here one of the two is not a number.

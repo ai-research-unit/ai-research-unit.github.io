@@ -84,7 +84,7 @@ and $K=A-U$, with $K_{ij}=a_{ij}$ for $i>j$ and $K_{ji}=-a_{ij}$.
 **The example.** Take $A$ with entries $a_{ij}=4(i-1)+j$, the matrix
 
 $$
-A=egin{pmatrix}1&2&3&4\ 5&6&7&8\ 9&10&11&12\ 13&14&15&16\end{pmatrix}.
+A=\begin{pmatrix}1&2&3&4\\ 5&6&7&8\\ 9&10&11&12\\ 13&14&15&16\end{pmatrix}.
 $$
 
 Then $U$ has the diagonal $1,6,11,16$, the strict upper entries $2+5=7$, $3+9=12$, $4+13=17$, $7+10=17$, $8+14=22$, $12+15=27$, and zeros below, and $K=A-U$ has the strict lower entries $5,9,13,10,14,15$ with the negatives in the transposed positions.

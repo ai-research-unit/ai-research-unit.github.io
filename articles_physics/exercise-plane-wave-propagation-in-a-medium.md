@@ -21,13 +21,16 @@ $$
 \tilde{F}(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z,r'_t) = \tilde{F}_0\,\exp(\,i\theta_{\mathrm{pwp}}),
 \qquad
 \tilde{F}_0 = i\sqrt{\epsilon}\,\vec E_0 - \sqrt{\mu}\,\vec H_0,
+$$
+
 with the single phase angle
+
 $$
 \theta_{\mathrm{pwp}} := \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-\omega r'_t/c \;\in\; \mathbb{R},
 $$
+
 a real number: $\omega$ is real for a monochromatic wave and $\vec k_\Phi$ is real in a non-dissipative medium. The field is then $\tilde{F}=\tilde{F}_0\exp(i\theta_{\mathrm{pwp}})$, an exponent that is $i$ times a real angle wherever the medium is transparent. Every later exponential in this article is written $\exp(i\theta_{\mathrm{pwp}})$ for that same angle.
 
-$$
 the equation $\tilde\nabla_\Phi\tilde{F} = 0$ reduces to
 $$
 \vec k_\Phi\cdot\vec E_0 = 0, \qquad \vec k_\Phi\cdot\vec H_0 = 0, \qquad \vec k_\Phi\times\vec E_0 = \omega\mu\,\vec H_0, \qquad \vec k_\Phi\times\vec H_0 = -\omega\epsilon\,\vec E_0

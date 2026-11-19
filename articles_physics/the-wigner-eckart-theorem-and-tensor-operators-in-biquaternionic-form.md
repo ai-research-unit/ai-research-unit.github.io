@@ -143,13 +143,13 @@ the first from the vanishing of the Clebsch–Gordan coefficient unless the magn
 The theorem can be checked against explicit matrices in the two-qubit space, where the coupled multiplets are the triplet $s_{\mathrm{tot}}=1$ and the singlet $s_{\mathrm{tot}}=0$ and the Clebsch–Gordan coefficients are known. The operator used is
 
 $$
-T^{(1)}_\mu=\tilde S_{\Psi}^{(1)}_\mu ,
+T^{(1)}_\mu=\tilde S_{\Psi,\mu}^{(1)} ,
 $$
 
 the one-particle spin of the first factor, which is a vector operator under the **total** spin because
 
 $$
-[\tilde S_{\Psi,i},\tilde S_{\Psi}^{(1)}_j]=[\tilde S_{\Psi,i}^{(1)},\tilde S_{\Psi}^{(1)}_j]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}^{(1)}.
+[\tilde S_{\Psi,i},\tilde S_{\Psi,j}^{(1)}]=[\tilde S_{\Psi,i}^{(1)},\tilde S_{\Psi,j}^{(1)}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\eta}^{(1)}.
 $$
 
 Its spherical components are those of the previous section applied to the first factor. Working in units of $\hbar$, forming the matrix elements in the coupled basis, and dividing by the Clebsch–Gordan coefficients, one finds the following.
@@ -168,7 +168,7 @@ $$
 \langle  1\,\|\tilde S_{\Psi}\|\,1\rangle=\sqrt2\,\hbar,
 $$
 
-whose ratio to the one-particle value $\frac{\hbar}{\sqrt2}$ is $2$: the total spin is twice the symmetric part of the one-particle spin, exactly as $\tilde S_{\Psi,\mu}=\tilde S_{\Psi}^{(1)}_\mu+\tilde S_{\Psi}^{(2)}_\mu$ and the two terms contribute equally in the symmetric sector. All three columns are consistent with the theorem and would be impossible if the Clebsch–Gordan factorisation failed.
+whose ratio to the one-particle value $\frac{\hbar}{\sqrt2}$ is $2$: the total spin is twice the symmetric part of the one-particle spin, exactly as $\tilde S_{\Psi,\mu}=\tilde S_{\Psi,\mu}^{(1)}+\tilde S_{\Psi,\mu}^{(2)}$ and the two terms contribute equally in the symmetric sector. All three columns are consistent with the theorem and would be impossible if the Clebsch–Gordan factorisation failed.
 
 A last check of the theorem's content is the vanishing of matrix elements that the selection rules permit. For the one-particle operator the $(1,0)$ and $(0,1)$ entries above are nonzero, so no accidental vanishing occurs here; but a rank-$2$ operator built from the same material has no matrix element connecting $s_{\mathrm{fin}}=1$ to $s_{\mathrm{tot}}=0$, because the triangle condition $|1-2|\le s_{\mathrm{fin}}\le3$ excludes $s_{\mathrm{fin}}=0$. The selection rules, not the dynamics, decide which triples can be nonzero.
 
@@ -199,7 +199,7 @@ A direct evaluation in the basis of eigenvectors of $\mathrm{ad}_{\tilde S_{\Psi
 
 ### Vector operators and the angular-momentum corollary
 
-The simplest vector operator in the framework is the spin itself. On the triplet of the two-spin system the reduced matrix element is $\sqrt2\,\hbar$, computed above; on the fundamental module of a single factor, $\tilde S_{\Psi}^{(1)}_\mu$ has reduced element $\frac{\hbar}{\sqrt2}$ when regarded as an operator on the coupled space.
+The simplest vector operator in the framework is the spin itself. On the triplet of the two-spin system the reduced matrix element is $\sqrt2\,\hbar$, computed above; on the fundamental module of a single factor, $\tilde S_{\Psi,\mu}^{(1)}$ has reduced element $\frac{\hbar}{\sqrt2}$ when regarded as an operator on the coupled space.
 
 A corollary of the theorem covers all vector operators at once. For $k=1$ and $s_{\mathrm{fin}}=s_{\mathrm{tot}}$, the matrix elements of any two vector operators are proportional to the same Clebsch–Gordan coefficients, so their matrix elements are proportional to one another:
 

@@ -173,7 +173,7 @@ The three cases are collected in the following table, together with the ladder c
 | $S_+ =\hbar\,\sigma_{+}$ | $\tilde S_{\Psi,+} =\frac{\hbar}{2}(i \vec e_x - \vec e_y)$ | $\hbar\,\sigma_{+}$ |
 | $S_- =\hbar\,\sigma_{-}$ | $\tilde S_{\Psi,-} =\frac{\hbar}{2}(i \vec e_x + \vec e_y)$ | $\hbar\,\sigma_{-}$ |
 
-Here $\sigma_\pm = \tfrac{1}{2}(\sigma_1 \pm i\sigma_2)$ are the standard raising and lowering matrices. The elements $\tilde S_{\Psi,\eta}$ lie in $\mathbb{B}_{\Psi}$ and are Hermitian. The ladder operators do **not**: $\tilde S_{\Psi,\pm}^{*} = \tilde S_{\Psi,\mp}$, so they are neither Hermitian nor in $\mathbb{B}_{\Psi}$; they lie in the full algebra $\mathbb{B}$. They are also invariant, up to sign, under quaternion conjugation, $\tilde S_{\Psi}^{\natural}_\pm = -\tilde S_{\Psi,\pm}$.
+Here $\sigma_\pm = \tfrac{1}{2}(\sigma_1 \pm i\sigma_2)$ are the standard raising and lowering matrices. The elements $\tilde S_{\Psi,\eta}$ lie in $\mathbb{B}_{\Psi}$ and are Hermitian. The ladder operators do **not**: $\tilde S_{\Psi,\pm}^{*} = \tilde S_{\Psi,\mp}$, so they are neither Hermitian nor in $\mathbb{B}_{\Psi}$; they lie in the full algebra $\mathbb{B}$. They are also invariant, up to sign, under quaternion conjugation, $\tilde S_{\Psi,\pm}^{\natural} = -\tilde S_{\Psi,\pm}$.
 
 The pure spin states are the idempotents $\tilde\Pi(\pm\vec u) = \tfrac{1}{2}(e_t \pm i\vec u)$ with $\vec u$ a unit pure real quaternion, and they are the eigenstates of the spin along $\vec u$:
 
@@ -291,7 +291,7 @@ $$
 The spin ladder operators have an algebraic property that the standard matrices share but that the biquaternion algebra exhibits transparently:
 
 $$
-\tilde{S}_{\Psi,\pm}^2 = 0, \qquad \langle\tilde{S}_{\Psi,\pm}\rangle_{\natural} = \tilde{S}_{\Psi,\pm} \tilde{S}_{\Psi}^{\natural}_\pm = 0 .
+\tilde{S}_{\Psi,\pm}^2 = 0, \qquad \langle\tilde{S}_{\Psi,\pm}\rangle_{\natural} = \tilde{S}_{\Psi,\pm} \tilde{S}_{\Psi,\pm}^{\natural} = 0 .
 $$
 
 They are **nilpotent**, and they are **zero divisors** of $\mathbb{B}$ — indeed they lie on the biquaternion-norm cone. The raising and lowering operators are therefore elements of the same null cone that defines the light cone of the material sector and the pure states of the informational sector. This is a genuinely algebraic feature of the biquaternion realisation: the ladder operators are not merely non-Hermitian matrices, they are null elements of the algebra.
@@ -301,7 +301,7 @@ They are **nilpotent**, and they are **zero divisors** of $\mathbb{B}$ — indee
 Two independent angular momenta $\vec S^{(1)}$ and $\vec S^{(2)}$, acting on different factors of a tensor product, combine by
 
 $$
-\tilde S_{\Psi,\mathrm{tot},\eta} = \tilde S_{\Psi}^{(1)}_\eta + \tilde S_{\Psi}^{(2)}_k,
+\tilde S_{\Psi,\mathrm{tot},\eta} = \tilde S_{\Psi,\eta}^{(1)} + \tilde S_{\Psi,k}^{(2)},
 $$
 
 with each factor satisfying its own commutation relations and cross-commutators vanishing. The total operator again satisfies $[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\,\hbar\,\epsilon_{ij\eta}\,\tilde{S}_{\Psi,\mathrm{tot},\eta}$, and the coupled states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$ are the eigenvectors of $\tilde S_{\Psi,\mathrm{tot}}^2$ and $\tilde S_{\Psi,\mathrm{tot},3}$.

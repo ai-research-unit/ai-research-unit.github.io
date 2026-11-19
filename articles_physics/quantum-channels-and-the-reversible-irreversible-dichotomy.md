@@ -79,16 +79,16 @@ The companion article already introduced this form for generalized measurements.
 The Kraus representation is a sum, but each term has its own generalized polar decomposition. Write
 
 $$
-\tilde M_{\mathrm{kraus},l}=\tilde H_\Psi_{\mathrm{pos},l}\,\tilde U_{\mathrm{p},l},
+\tilde M_{\mathrm{kraus},l}=\tilde H_{\Psi,\mathrm{pos},l}\,\tilde U_{\mathrm{p},l},
 \qquad
-\tilde H_\Psi_{\mathrm{pos},l}=\sqrt{\tilde M_{\mathrm{kraus},l}\tilde M_{\mathrm{kraus},l}^{*}},
+\tilde H_{\Psi,\mathrm{pos},l}=\sqrt{\tilde M_{\mathrm{kraus},l}\tilde M_{\mathrm{kraus},l}^{*}},
 $$
 
-with $\tilde H_\Psi_{\mathrm{pos},l}$ Hermitian positive semidefinite and $\tilde U_{\mathrm{p},l}$ a partial isometry. The companion article *The Polar Decomposition of a Kraus Operator* reads the factorization physically: the positive factor is the strength of the outcome, the partial isometry its backaction, and the effect is their conjugated square.
+with $\tilde H_{\Psi,\mathrm{pos},l}$ Hermitian positive semidefinite and $\tilde U_{\mathrm{p},l}$ a partial isometry. The companion article *The Polar Decomposition of a Kraus Operator* reads the factorization physically: the positive factor is the strength of the outcome, the partial isometry its backaction, and the effect is their conjugated square.
 
-For a channel with a single Kraus operator, trace preservation is $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=e_t$. In finite dimension this makes $\tilde M_{\mathrm{kraus}}$ invertible, so $\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}=e_t$, hence $\tilde H_\Psi_{\mathrm{pos}}=e_t$ and $\tilde Q_{\mathrm{p}}=\tilde M_{\mathrm{kraus}}$ is $*$-unitary. The reversible case is therefore exactly the case of a trivial positive factor, and the one-term channel is conjugation by a $*$-unitary. This is the same statement as §*The Reversible Case*, read on the operator rather than on the map.
+For a channel with a single Kraus operator, trace preservation is $\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=e_t$. In finite dimension this makes $\tilde M_{\mathrm{kraus}}$ invertible, so $\tilde M_{\mathrm{kraus}}\tilde M_{\mathrm{kraus}}^{*}=e_t$, hence $\tilde H_{\Psi,\mathrm{pos}}=e_t$ and $\tilde Q_{\mathrm{p}}=\tilde M_{\mathrm{kraus}}$ is $*$-unitary. The reversible case is therefore exactly the case of a trivial positive factor, and the one-term channel is conjugation by a $*$-unitary. This is the same statement as §*The Reversible Case*, read on the operator rather than on the map.
 
-A single term of a multi-term channel need not be trace preserving. Its $\tilde H_\Psi_{\mathrm{pos}}$ can be non-trivial, and its $\tilde Q_{\mathrm{p}}$ can be a proper partial isometry. The channel's reversibility is not the value of one $\tilde H_\Psi_{\mathrm{pos}}$; it is the minimal Kraus rank of the sum. The dephasing channel is the witness: one of its Kraus operators is a scalar multiple of the identity, with scalar strength and $\tilde Q_{\mathrm{p}}=e_t$, and the channel is irreversible for $p>0$ because there is a second term. The polar factor classifies a term; the Kraus rank classifies the map.
+A single term of a multi-term channel need not be trace preserving. Its $\tilde H_{\Psi,\mathrm{pos}}$ can be non-trivial, and its $\tilde Q_{\mathrm{p}}$ can be a proper partial isometry. The channel's reversibility is not the value of one $\tilde H_{\Psi,\mathrm{pos}}$; it is the minimal Kraus rank of the sum. The dephasing channel is the witness: one of its Kraus operators is a scalar multiple of the identity, with scalar strength and $\tilde Q_{\mathrm{p}}=e_t$, and the channel is irreversible for $p>0$ because there is a second term. The polar factor classifies a term; the Kraus rank classifies the map.
 
 ## The Reversible Case: $*$-Unitary Rotor Conjugation
 
@@ -329,7 +329,7 @@ The relation of the split to the two subspaces is asymmetric. States and observa
 | $2\langle\tilde{Ϛ}_{\Psi},\tilde H_\Psi\rangle_{*} = 2\,\mathrm{Sc}(\tilde{Ϛ}_{\Psi}\tilde H_\Psi)$ | Born weight at normalisation |
 | $Ξ(\tilde{Ϛ}_{\Psi}) = \sum_l \tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}$ | Kraus representation of a channel |
 | $\sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde M_{\mathrm{kraus},l} = e_t$ | Trace-preservation condition |
-| $\tilde M_{\mathrm{kraus},l}=\tilde H_\Psi_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}$, $\tilde H_\Psi_{\mathrm{pos},l}=\sqrt{\tilde M_{\mathrm{kraus},l}\tilde M_{\mathrm{kraus},l}^{*}}$ | Generalized Cartan factorization of a Kraus operator; $\tilde H_\Psi_{\mathrm{pos},l}\ge0$, $\tilde U_{\mathrm{p},l}$ a partial isometry |
+| $\tilde M_{\mathrm{kraus},l}=\tilde H_{\Psi,\mathrm{pos},l}\tilde U_{\mathrm{p},l}$, $\tilde H_{\Psi,\mathrm{pos},l}=\sqrt{\tilde M_{\mathrm{kraus},l}\tilde M_{\mathrm{kraus},l}^{*}}$ | Generalized Cartan factorization of a Kraus operator; $\tilde H_{\Psi,\mathrm{pos},l}\ge0$, $\tilde U_{\mathrm{p},l}$ a partial isometry |
 | $Ξ^{*}(\tilde H_\Psi) = \sum_l \tilde M_{\mathrm{kraus},l}^{*}\tilde H_\Psi\tilde M_{\mathrm{kraus},l}$ | Dual (Heisenberg-picture) map |
 | $\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})$ | One-parameter $*$-unitary group |
 | $-\frac{i\,H}{\hbar\,\in\,\mathbb{B}}_{\Phi}$ | Generator of reversible evolution |

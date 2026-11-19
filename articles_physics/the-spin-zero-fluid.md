@@ -231,7 +231,7 @@ $$
 **Linearity of the equation is not linearity of the fluid, and the gap is the interference term.** Superposition holds for $\psi$: $\psi_1+\psi_2$ solves. It fails for the fluid's data, because $\rho_{\mathrm{num}}=\lvert\psi\rvert^{2}$ and
 
 $$
-\rho_{\mathrm{num}}=\rho_{\mathrm{num}}_1+\rho_{\mathrm{num}}_2+2\sqrt{\rho_{\mathrm{num}}_1\rho_{\mathrm{num}}_2}\cos\!\Bigl(\frac{S_1-S_2}{\hbar}\Bigr) .
+\rho_{\mathrm{num}}=\rho_{\mathrm{num},1}+\rho_{\mathrm{num},2}+2\sqrt{\rho_{\mathrm{num},1}\rho_{\mathrm{num},2}}\cos\!\Bigl(\frac{S_1-S_2}{\hbar}\Bigr) .
 $$
 
 **Two plane waves give a density modulated at the beat of the two actions, while the two densities taken separately are uniform.** A reader who calls the scalar fluid linear has confused the unknown of the equation with the data of the fluid; the data obey a nonlinear system even here.
@@ -368,7 +368,7 @@ The fluid meets the reverse map's criterion. Its four-velocity is a gradient, so
 
 Compared with the block's other two fluids, this one is the only gradient flow. Its density is a bilinear and not the field, its vorticity is zero rather than read off a frame or from a field strength, and its force is one gradient where the spin-one fluid has two forces and the spin-half fluid has a stress. What it shares with them is the skeleton of the correspondence: an exact word, a reverse map onto a class, and a piece of extra structure — here a Korteweg stress — that makes the fluid a classical medium. The three fields pick the three ways a medium can exceed a dust, and the scalar case picks the gradient of the state.
 
-With $V=0$ the reverse map's output is linear, and it is $(\Box_\Phi-k_m^{2})\psi=0$. The substitution $\psi=\varrho e^{iS_{\tilde\Xi}/\hbar}$ returns the pair exactly: the real part is the amplitude equation and the imaginary part is the transport equation. So the scalar fluid is the one case in the block where both directions close on a local linear equation, and the linearity is of the equation and not of the data, since $\rho_{\mathrm{num}}$ carries the interference term $2\sqrt{\rho_{\mathrm{num}}_1\rho_{\mathrm{num}}_2}\cos((S_1-S_2)/\hbar)$.
+With $V=0$ the reverse map's output is linear, and it is $(\Box_\Phi-k_m^{2})\psi=0$. The substitution $\psi=\varrho e^{iS_{\tilde\Xi}/\hbar}$ returns the pair exactly: the real part is the amplitude equation and the imaginary part is the transport equation. So the scalar fluid is the one case in the block where both directions close on a local linear equation, and the linearity is of the equation and not of the data, since $\rho_{\mathrm{num}}$ carries the interference term $2\sqrt{\rho_{\mathrm{num},1}\rho_{\mathrm{num},2}}\cos((S_1-S_2)/\hbar)$.
 
 ## Summary of Notation
 

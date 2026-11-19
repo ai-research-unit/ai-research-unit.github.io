@@ -187,13 +187,13 @@ $$
 as in the companion article *Relativistic Mechanics in Biquaternionic Form*. For two observers with four-velocities $\tilde{V}_{\Phi,1}, \tilde{V}_{\Phi,2}$, the contraction
 
 $$
-\boxed{\;-\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2\right)
+\boxed{\;-\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi,2}^{\natural}\right)
 = \gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right)
 = \gamma_1\gamma_2\left(1 - \beta_1\beta_2\cos\theta\right)
 \equiv \gamma_{\mathrm{rel}}\;}
 $$
 
-is the Lorentz factor of their relative motion, where $\beta_i = |\vec v_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\tilde{V}_{\Phi}^{\natural}_2 = \gamma_2(ic\,e_t - \vec v_2)$ and $\mathrm{Sc}((ic\,e_t+\vec v_1)\cdot(ic\,e_t-\vec v_2)) = -c^2 + \vec v_1\cdot\vec v_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.
+is the Lorentz factor of their relative motion, where $\beta_i = |\vec v_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\tilde{V}_{\Phi,2}^{\natural} = \gamma_2(ic\,e_t - \vec v_2)$ and $\mathrm{Sc}((ic\,e_t+\vec v_1)\cdot(ic\,e_t-\vec v_2)) = -c^2 + \vec v_1\cdot\vec v_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.
 
 ### The Inequality That Makes the Barrier
 
@@ -391,7 +391,7 @@ The causal structure of the material sector $\mathbb{B}_{\Phi}$ is the structure
 
 4. **The topological barrier.** The complement of the cone has three connected components, and $\langle\cdot\rangle_{\natural}$ can change sign along a continuous path only at the cone. A continuous causal process therefore reaches the elsewhere only by leaving the cone.
 
-5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2)/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
+5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi,2}^{\natural})/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
 
 6. **The rapidity barrier.** Boosts compose additively in rapidity, $\beta = \tanh\theta_{\mathrm{rpd}}$, so the barrier $\beta = 1$ lies at $\theta_{\mathrm{rpd}} = \infty$ and is attained by no finite composition.
 
@@ -425,7 +425,7 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\tilde{V}_{\Phi} = \gamma(ic\,e_t+\vec v)$, $\langle\tilde{V}_{\Phi}\rangle_{\natural}=-c^2$ | Four-velocity |
 | $\beta = |\vec v|/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\theta_{\mathrm{rpd}}$, $\tanh\theta_{\mathrm{rpd}}=\beta$ | Rapidity |
-| $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi}^{\natural}_2)/c^2$ |
+| $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_{\Phi,1}\tilde{V}_{\Phi,2}^{\natural})/c^2$ |
 | $\tilde\nabla_\Phi, (\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its conjugate |
 | $\Box_\Phi = \tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= \partial^2/\partial R_{1t}^2+\Delta_\Phi$ | d'Alembertian, series convention |
 | $SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$ | Restricted Lorentz group |

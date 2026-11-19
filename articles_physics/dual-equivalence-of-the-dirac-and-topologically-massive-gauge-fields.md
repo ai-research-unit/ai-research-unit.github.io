@@ -72,9 +72,9 @@ $A_\mu$ is the electromagnetic potential, and it enters only through the covaria
 $$
 \tilde\nabla_\mu G_\lambda=\frac{\partial G_\lambda}{\partial x_\mu}+ieA_\mu\,\epsilon_\lambda\sum_{\sigma,\nu}\epsilon_\sigma\,\check c_{\lambda\sigma\nu}u_\nu G_\sigma .
 $$
-The second term is the chirality of the four-vector carrier, and it is written as the contraction of structure constants on the neutral vector $\vec k_\Phi$ that it is. The source prints the same object as a $4\times4$ array $c_5{}_{\mu\nu}$, one representative of the chirality, with $c_5{}_{\mu\nu}=-\epsilon_\mu\check c_{\mu\nu\lambda}u_\lambda$ and no sum on $\mu$; the array obeys $(c_5)^2=1$ and is $\epsilon$-antisymmetric, so the chirality of the carrier takes its two values on the two chiral parts of $G$. The contraction puts $k$ on the page, where the representative had absorbed it. The derivative that the auxiliary field uses is the same object with the constant $a$ added in the manner of a second coupling, $\tilde\nabla_\Phi^{a}_\mu B_\nu=\partial/\partial x_\mu B_\nu+ia\,j_\mu B^*_\nu$, the second term conjugating the field, so that
+The second term is the chirality of the four-vector carrier, and it is written as the contraction of structure constants on the neutral vector $\vec k_\Phi$ that it is. The source prints the same object as a $4\times4$ array $c_5{}_{\mu\nu}$, one representative of the chirality, with $c_5{}_{\mu\nu}=-\epsilon_\mu\check c_{\mu\nu\lambda}u_\lambda$ and no sum on $\mu$; the array obeys $(c_5)^2=1$ and is $\epsilon$-antisymmetric, so the chirality of the carrier takes its two values on the two chiral parts of $G$. The contraction puts $k$ on the page, where the representative had absorbed it. The derivative that the auxiliary field uses is the same object with the constant $a$ added in the manner of a second coupling, $\tilde\nabla_{\Phi,\mu}^{a} B_\nu=\partial/\partial x_\mu B_\nu+ia\,j_\mu B^*_\nu$, the second term conjugating the field, so that
 $$
-\tilde\nabla_\Phi^{a}_\mu B_\nu-\tilde\nabla_\Phi^{a}_\nu B_\mu=\partial/\partial x_\mu B_\nu-\partial/\partial x_\nu B_\mu+ia\,j_\mu B^*_\nu-ia\,j_\nu B^*_\mu=F_{\mu\nu},
+\tilde\nabla_{\Phi,\mu}^{a} B_\nu-\tilde\nabla_{\Phi,\nu}^{a} B_\mu=\partial/\partial x_\mu B_\nu-\partial/\partial x_\nu B_\mu+ia\,j_\mu B^*_\nu-ia\,j_\nu B^*_\mu=F_{\mu\nu},
 $$
 which is the source's field strength: it reduces to the Maxwell tensor at $a=0$ and is invariant under the generalized gauge transformation $B_\mu\mapsto B_\mu+p^+_{\mu\nu}\partial/\partial x_\nu\Theta$. The constant $a$ is real and differs from $m$; it survives in the reductions as the combination $m-a$ and is set to zero in the three-dimensional case.
 
@@ -82,7 +82,7 @@ which is the source's field strength: it reduces to the Maxwell tensor at $a=0$ 
 
 The parent action is linear in the auxiliary field and quadratic in the Dirac field,
 $$
-S_{GH}=\int\Bigl[\bigl(G_\nu+\tfrac12 H_\nu\bigr)^*i\check c_{\nu\mu\lambda}\tilde\nabla_\Phi^{ea}_\mu H_\lambda-\bigl(\tilde\nabla_\Phi^{ea}_\mu H_\nu\bigr)^*i\check c_{\nu\mu\lambda}\bigl(G_\lambda+\tfrac12 H_\lambda\bigr)+\tfrac{m-a}{2}\bigl(G\cdot G+G^*\cdot G^*\bigr)+\partial Z_{0\mu}/\partial x_\mu\Bigr],
+S_{GH}=\int\Bigl[\bigl(G_\nu+\tfrac12 H_\nu\bigr)^*i\check c_{\nu\mu\lambda}\tilde\nabla_{\Phi,\mu}^{ea} H_\lambda-\bigl(\tilde\nabla_{\Phi,\mu}^{ea} H_\nu\bigr)^*i\check c_{\nu\mu\lambda}\bigl(G_\lambda+\tfrac12 H_\lambda\bigr)+\tfrac{m-a}{2}\bigl(G\cdot G+G^*\cdot G^*\bigr)+\partial Z_{0\mu}/\partial x_\mu\Bigr],
 $$
 with $\tilde\nabla_\Phi^{ea}$ the derivative above carrying both insertions, the electromagnetic and the $a$-term. The *same* $\check c$ contracts the Dirac field, the auxiliary field and the derivative in both halves: the two eliminations are two ways of inverting one linear system, and the coupling constants $e$ and $a$ sit in the derivative while the mass $m$ sits in the quadratic terms. $Z_{0\mu}$ is a surface term, chosen so that the total divergence produced by the elimination vanishes.
 
@@ -90,7 +90,7 @@ with $\tilde\nabla_\Phi^{ea}$ the derivative above carrying both insertions, the
 
 **Eliminating the auxiliary field.** Varying $H_\mu$ gives
 $$
-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\tilde\nabla_\Phi^{ea}_\nu G_\lambda=-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\tilde\nabla_\Phi^{ea}_\nu H_\lambda ,
+\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\tilde\nabla_{\Phi,\nu}^{ea} G_\lambda=-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\tilde\nabla_{\Phi,\nu}^{ea} H_\lambda ,
 $$
 and substituting this back leaves the **Dirac Lagrangian** in the vector representation,
 $$
@@ -102,11 +102,11 @@ The source does not solve the varied equation for $H_\mu$, and says so: the equa
 
 **Eliminating the Dirac field.** Varying $G_\nu$ gives the linear relation
 $$
-(m-a)G_\lambda=\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\bigl(\tilde\nabla_\Phi^{ea}_\mu H_\nu\bigr)^*i\check c_{\nu\mu\lambda},
+(m-a)G_\lambda=\sum_{\mu,\nu}\epsilon_\mu\epsilon_\nu\bigl(\tilde\nabla_{\Phi,\mu}^{ea} H_\nu\bigr)^*i\check c_{\nu\mu\lambda},
 $$
 and substituting it back leaves a **second-order Lagrangian** for $H_\mu$ (sums over repeated indices, one $\epsilon$ per index),
 $$
-\mathcal{L}_H=\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda,\rho,\delta}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}\tilde\nabla_\Phi^{ea}_\mu H_\lambda\bigr)\bigl(\check c_{\nu\rho\delta}\tilde\nabla_\Phi^{ea}_\rho H_\delta\bigr)+\tfrac12\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda H^*_\nu\,i\check c_{\nu\mu\lambda}\tilde\nabla_\Phi^{ea}_\mu H_\lambda+\text{c.c.}+\partial Z_{0\mu}/\partial x_\mu ,
+\mathcal{L}_H=\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda,\rho,\delta}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\epsilon_\rho\epsilon_\delta\bigl(\check c_{\nu\mu\lambda}\tilde\nabla_{\Phi,\mu}^{ea} H_\lambda\bigr)\bigl(\check c_{\nu\rho\delta}\tilde\nabla_{\Phi,\rho}^{ea} H_\delta\bigr)+\tfrac12\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda H^*_\nu\,i\check c_{\nu\mu\lambda}\tilde\nabla_{\Phi,\mu}^{ea} H_\lambda+\text{c.c.}+\partial Z_{0\mu}/\partial x_\mu ,
 $$
 The first term is quadratic in the derivative and is the kinetic term; the second carries one derivative and no mass, and it is the **cubic (order-three) form** of the companion article. At $a=e=0$, and after the rescaling $H_\mu\mapsto bH_\mu$ that restores canonical normalisation, it reads
 $$
@@ -122,7 +122,7 @@ S_{G\xi B}=\int\Bigl[\tfrac12\bigl(G^*_\nu+\tfrac12 B^*_\nu\bigr)i\check c_{\nu\
 $$
 Varying $B_\mu$ gives
 $$
-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\bigl(\tilde\nabla_\Phi^{a}_\nu G_\lambda-\tilde\nabla_\Phi^{a}_\lambda G_\nu\bigr)=-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}F_{\nu\lambda},
+\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}\bigl(\tilde\nabla_{\Phi,\nu}^{a} G_\lambda-\tilde\nabla_{\Phi,\lambda}^{a} G_\nu\bigr)=-\sum_{\nu,\lambda}\epsilon_\nu\epsilon_\lambda\,\check c_{\mu\nu\lambda}F_{\nu\lambda},
 $$
 and substituting back returns the Dirac Lagrangian, now with $A_\mu=0$ and $G_\mu=G_{\mathrm{tr},\mu}-j_\mu\xi$. Varying $G_\nu$ gives
 $$
@@ -135,7 +135,7 @@ $$
 &-\tfrac{1}{2(m-a)}\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\bigl(\partial\xi/\partial x_\mu\bigr)\check c_{\mu\nu\lambda}F_{\nu\lambda}+\text{(scalar sector)}+\text{c.c.}+\partial Z_{2\mu}/\partial x_\mu .
 \end{aligned}
 $$
-The abbreviation *scalar sector* stands for the source's two terms in $\xi$ alone, $\tfrac{1}{2(m-a)}\sum_{\mu,\nu}\partial\xi/\partial x_\mu\,p_{+,\mu\nu}\,\partial\xi^*/\partial x_\nu$ and $\tfrac i2\sum_\mu\xi^*j_\mu\tilde\nabla_\Phi^{-a}_\mu\xi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $\sum_\nu B_\nu j_\nu=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $\sum_\nu j_\nu\partial B_\mu/\partial x_\nu=\sum_\nu j_\nu\partial\xi/\partial x_\nu=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\xi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
+The abbreviation *scalar sector* stands for the source's two terms in $\xi$ alone, $\tfrac{1}{2(m-a)}\sum_{\mu,\nu}\partial\xi/\partial x_\mu\,p_{+,\mu\nu}\,\partial\xi^*/\partial x_\nu$ and $\tfrac i2\sum_\mu\xi^*j_\mu\tilde\nabla_{\Phi,\mu}^{-a}\xi$, which the elimination carries through unchanged; the potential $B$ is in the axial gauge $\sum_\nu B_\nu j_\nu=0$. On the spin manifold, where the fields depend on the three coordinates of the slice orthogonal to $j$ and $\sum_\nu j_\nu\partial B_\mu/\partial x_\nu=\sum_\nu j_\nu\partial\xi/\partial x_\nu=0$, and at $a=0$, the two mixing terms — the $B^*\check cF$ term at the end of the first line and the $(\partial\xi)\check cF$ term that opens the second — combine into a surface term, and the Lagrangian reduces to
 $$
 \boxed{\;\mathcal{L}_G=-\tfrac{1}{4m}\sum_{\mu,\lambda}\epsilon_\mu\epsilon_\lambda F_{\mu\lambda}F_{\mu\lambda}+\tfrac14\sum_{\mu,\nu,\lambda}\epsilon_\mu\epsilon_\nu\epsilon_\lambda\,\check\varepsilon_{\nu\mu\lambda}\,B^*_\nu F_{\mu\lambda}+\text{(scalar sector)}+\text{c.c.}\;}
 $$
@@ -322,7 +322,7 @@ The parent actions and the eliminations are the source's; the algebraic identiti
 | $\Gamma:\tilde{Ξ}\mapsto-i\tilde{Ξ}\vec e_z=\tilde{Ξ}(i\omega)$ | Chirality, a right action alone; $\Gamma^2=\mathrm{id}$; $\Gamma=i\,(C_0C_1C_2C_3)$, whose left factors cancel in pairs |
 | $\omega=-\vec e_z$ | Pseudoscalar, $\omega^2=-e_t$; the source's $i$, kept distinct from the central unit |
 | $\tilde\nabla_\Phi$, $(\tilde\nabla_\Phi)^{\natural}$ | Biquaternionic gradient and its quaternion conjugate, elements acting on the left |
-| $\tilde\nabla_\Phi^{ea}_\mu$, $\tilde\nabla_\Phi^{a}_\mu$ | The same derivative with the electromagnetic and $a$ insertions; superscripts name insertions, not a second operator |
+| $\tilde\nabla_{\Phi,\mu}^{ea}$, $\tilde\nabla_{\Phi,\mu}^{a}$ | The same derivative with the electromagnetic and $a$ insertions; superscripts name insertions, not a second operator |
 | $\Box_\Phi$ | The d'Alembertian, the norm of $\tilde\nabla_\Phi$; on $Q_t=i q'_t$ it is $\Delta_\Phi-\partial^2/\partial {r'_t}^2$ |
 | $c_5{}_{\mu\nu}$ | The source's array of the chirality on the four-vector carrier, written here as $-\epsilon_\mu\check c_{\mu\nu\lambda}u_\lambda$ with no sum on $\mu$; $(c_5)^2=1$, $\epsilon$-antisymmetric |
 | $\delta_{\mu\nu}=(1,1,1,1)$ | The unit metric of the index space; it pairs two slots as $\epsilon_\mu\delta_{\mu\nu}$, with no sum on $\mu$ |

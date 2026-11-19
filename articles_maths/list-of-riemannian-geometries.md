@@ -51,7 +51,7 @@ The curvature tensor is the failure of second covariant derivatives to commute, 
 | Object | The property it has | Introduced in |
 |---|---|---|
 | the curvature tensor $R(X,Y)Z$ | the commutator of covariant derivatives, an algebraic curvature tensor | *Curvature and Geodesics* |
-| the curvature form $\mathcal{R} = dA + A\wedgeA$ | the matrix-valued two-form of the connection in a frame | *Curvature and Geodesics* |
+| the curvature form $\mathcal{R} = dA + A\wedge A$ | the matrix-valued two-form of the connection in a frame | *Curvature and Geodesics* |
 | the sectional curvature $K(\sigma) = R(v,w,w,v)$ | the curvature of a two-plane, the value that determines $R$ | *Curvature and Geodesics* |
 | the Ricci tensor $\operatorname{Ric}(X,Y)$ | the trace of the curvature, the average of the sectional curvatures | *Curvature and Geodesics* |
 | the scalar curvature $S$ | the trace of the Ricci tensor | *Curvature and Geodesics* |

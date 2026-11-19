@@ -15,7 +15,7 @@ $$
 
 The first bracket is the free Proca symbol with $\pi$ in place of $k$ — translation and rank-one projector together — and the second is the commutator of two covariant derivatives. **The first term is what the transform says and the second is what the transform cannot say**, and the article is the separation of the two.
 
-**The translation is exact and it is the corpus's own identity.** The parent proves $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)}$, a decomposition of the covariant d'Alembertian into a symmetric sum of squares and a curvature. **In frequency space the first piece is $-\pi^{2}$ and the second is the curvature term**, so the identity is exactly the symbol's two terms and the article's first finding is that no third term exists.
+**The translation is exact and it is the corpus's own identity.** The parent proves $(\tilde\nabla_\Phi)^{\natural}_{\mathrm{gco}}\tilde\nabla_{\mathrm{gco},\Phi}=\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)}$, a decomposition of the covariant d'Alembertian into a symmetric sum of squares and a curvature. **In frequency space the first piece is $-\pi^{2}$ and the second is the curvature term**, so the identity is exactly the symbol's two terms and the article's first finding is that no third term exists.
 
 **The second finding is that the same four-wave-number can give different symbols.** Two connections can agree in $\pi$ at a point and disagree in $F$ there, and the symbol's difference is $\frac{i\varkappa}{\hbar}$ times the difference of the curvatures: for two connections used below, $\lvert F_{21}\rvert$ is $0$ and $0.9$ while $\pi$ agrees at the point of evaluation. **So the symbol is not a function of the momentum alone**, and that is the exact statement of what a Fourier description of a gauge theory loses.
 
@@ -55,7 +55,7 @@ whose second term is the parent's extra piece, measured between $0.7$ and $12$ o
 
 $$
 (\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
-=\sum_\mu\tilde\nabla_\Phi^{2}_{\mathrm{gco},\mu}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)} ,
+=\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\varkappa}{\hbar}\tilde F^{(\Phi)} ,
 \qquad
 \bigl[D_{\mathrm{gco},\mu},D_{\mathrm{gco},\nu}\bigr]=\frac{i\varkappa}{\hbar}F^{(\Phi)}_{\mu\nu} ,
 $$

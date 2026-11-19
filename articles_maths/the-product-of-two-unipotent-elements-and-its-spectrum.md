@@ -342,10 +342,10 @@ $$
 \tilde Q_2=c\,U,\qquad c\in\mathbb{C}^{\times},\quad U=e_t+\vec\Upsilon,\quad \vec\Upsilon^2=0,\quad\vec\Upsilon\neq0,
 $$
 
-by *The N-Regular, Spectrally Degenerate Sector*, §*Definition and Characterisation*. For two such elements $\tilde Q_2_i=c_iU_i$,
+by *The N-Regular, Spectrally Degenerate Sector*, §*Definition and Characterisation*. For two such elements $\tilde Q_{2,i}=c_iU_i$,
 
 $$
-\tilde Q_2_1\tilde Q_2_2=c_1c_2\,T,
+\tilde Q_{2,1}\tilde Q_{2,2}=c_1c_2\,T,
 $$
 
 with $T=U_1U_2$ the product on the norm-one slice. The characteristic polynomial is
@@ -364,7 +364,7 @@ The product is defective exactly at the two roots $t=0$ and $t=-4$, with the sca
 
 The type is not fixed by the sign of $t$, nor by the sign of $s$. It is fixed by whether $t$ lies in $(-4,0)$ or outside it, equivalently by the sign of $t(t+4)$ for real $t$, equivalently by whether $s$ lies in $(0,2)$ or outside it. The sign of $t$ then separates the positive real branch from the negative one. The two examples $t=-1$ and $t=1$ illustrate two of the regular types.
 
-Every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents. The general defective case reduces to the norm-one slice by the central scaling $\tilde Q_2_i=c_iU_i$, which scales the spectrum and leaves the defectivity unchanged.
+Every element of the norm-one group except $-e_t$ is a product of two non-trivial unipotents. The general defective case reduces to the norm-one slice by the central scaling $\tilde Q_{2,i}=c_iU_i$, which scales the spectrum and leaves the defectivity unchanged.
 
 ## Summary of Notation
 

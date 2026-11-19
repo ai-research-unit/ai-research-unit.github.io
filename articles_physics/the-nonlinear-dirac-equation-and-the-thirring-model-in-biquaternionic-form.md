@@ -319,7 +319,7 @@ $S_{cd}=\tfrac14[\gamma_c,\gamma_d]$ is the Lorentz generator in the $\gamma$ ba
 
 ### The Four Contraction Sums
 
-A basis operator's square is a frame statement, and every contraction of the frame inherits that. Written with the sign $\\varepsilon_\\mu$ on the summed index, the way every other contraction in this article is written, the four sums hold in either frame:
+A basis operator's square is a frame statement, and every contraction of the frame inherits that. Written with the sign $\varepsilon_\mu$ on the summed index, the way every other contraction in this article is written, the four sums hold in either frame:
 
 $$
 \sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4,\qquad

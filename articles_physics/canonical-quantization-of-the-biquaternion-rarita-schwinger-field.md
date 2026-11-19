@@ -163,7 +163,7 @@ The canonical momentum conjugate to $\tilde{Ξ}_{\mu}$ is, from the standard Rar
 $$
 \pi_\mu = \frac{\partial\mathcal{L}}{\partial(\partial/\partial r'_t\,\tilde{Ξ}_{\mu})}=\sum_\lambda T_{\lambda h_t\mu}\bigl(\bar{\tilde{Ξ}}_{\lambda}\bigr),
 \qquad
-\bar{\tilde{Ξ}}_{\lambda}:=\tilde{Ξ}_{\lambdaiR}^{\dagger}_{\mathrm{axf},\vec e_x} ,
+\bar{\tilde{Ξ}}_{\lambda}:=\tilde{Ξ}_{\lambda iR,\mathrm{axf},\vec e_x}^{\dagger} ,
 $$
 
 the element the triple produces from the Dirac adjoint, with the normalization of the Lagrangian left free. The triple is the antisymmetrized product of three plain basis operators,
@@ -371,7 +371,7 @@ $$
 \qquad
 P_{\mu\nu}=g_{\mu\nu}I_4-\tfrac14\gamma_\mu\gamma_\nu,
 \qquad
-\pi_\mu=i\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}_\nu\,\gamma_{[\nu h_t\mu]},
+\pi_\mu=i\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x,\nu}\,\gamma_{[\nu h_t\mu]},
 $$
 
 and the polarization equations, the completeness relation and the propagator are
@@ -420,7 +420,7 @@ In the biquaternion framework the field is the tensor product of the material fo
 | $V\otimes S$, $1\otimes\tfrac12=\tfrac32\oplus\tfrac12$ | Spatial part of the carrier and its decomposition; $3\cdot2=4+2$ |
 | $\tilde{Ξ}_{\mu}\mapsto\tilde{Ξ}_{\mu}+\partial/\partial x_\mu\,\epsilon$ | Massless gauge symmetry; spinor parameter |
 | $T_{\mu\nu\rho}$ | Antisymmetrized triple of three plain basis operators; antisymmetric, zero when two indices coincide, and $i\gamma_{[\mu\nu\rho]}$ in the gamma dictionary |
-| $\pi_\mu=\sum_\lambda T_{\lambda h_t\mu}(\bar{\tilde{Ξ}}_{\lambda})$, $\bar{\tilde{Ξ}}_{\lambda}:=\tilde{Ξ}_{\lambdaiR}^{\dagger}_{\mathrm{axf},\vec e_x}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
+| $\pi_\mu=\sum_\lambda T_{\lambda h_t\mu}(\bar{\tilde{Ξ}}_{\lambda})$, $\bar{\tilde{Ξ}}_{\lambda}:=\tilde{Ξ}_{\lambda iR,\mathrm{axf},\vec e_x}^{\dagger}$ | Canonical momentum, read as the triple applied to the Dirac adjoint; the triple is plain, so the $i$ of the adjoint is the only one |
 | $\vec r:=r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$ | Shorthand for the spatial point in the anticommutator and the delta function |
 | $\{A,B\}_D$, $C_{ab}=\{\xi_a,\xi_b\}_P$ | Dirac bracket and its constraint matrix (second-class constraints, $m\neq0$) |
 | $\{a_r(\vec p),a_s^\dagger(\vec k_\Phi)\}=(2\pi\hbar)^3\delta_{rs}\delta^{(3)}(\vec p-\vec p^{\,\prime})$ | Fermionic mode algebra |

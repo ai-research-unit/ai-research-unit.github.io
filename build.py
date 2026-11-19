@@ -12,6 +12,15 @@ from urllib.parse import quote
 SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit")
 DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy")
 
+# Old URLs kept alive after a rename: (deployed page, alias that copies it).
+# The pruner spares the aliases, and no sitemap lists them.
+LEGACY_COPIES = [
+    ("articles_physics/introduction-to-the-lorentz-group-in-biquaternionic-form.html",
+     "articles_physics/ai-describes-the-lorentz-group.html"),
+    ("articles_physics/introduction-to-the-lorentz-group-in-biquaternionic-form.html",
+     "articles_physics/biquaternions-and-the-lorentz-group.html"),
+]
+
 # One date for the whole site: the moment the last build started. build2.py
 # reads it to decide which pages to rebuild. It lives in the source folder,
 # never in the deploy folder.
@@ -524,11 +533,13 @@ def prune_orphans():
     # indexable, and silently diverging from the current article. Drop any
     # deployed article page that no longer has a matching source. This also
     # removes pages left in a collection by a file that moved to the other one.
+    # The legacy aliases are the exception: they have no source by design.
+    keep = {(DEPLOY / alias).resolve() for _, alias in LEGACY_COPIES}
     for coll in COLLECTIONS:
         built = {str(f.relative_to(coll["src"]).with_suffix(".html")) for f in coll["articles"]}
         for stale in coll["deploy"].rglob("*.html"):
             rel = str(stale.relative_to(coll["deploy"]))
-            if rel not in built:
+            if rel not in built and stale.resolve() not in keep:
                 stale.unlink()
                 print(f"Removed orphan: {coll['src'].name}/{rel}")
     # ──────────────────────────────────────────────────────────────────────
@@ -543,6 +554,25 @@ def prune_legacy():
     if legacy_art.is_dir():
         shutil.rmtree(legacy_art)
         print("Removed legacy deploy directory: articles/")
+    # ──────────────────────────────────────────────────────────────────────
+
+
+def copy_legacy_pages():
+    # ── serve the pre-rename URL ──────────────────────────────────────────
+    # A bookmark or an outside link to the old name must not 404. The alias is a
+    # byte copy, so it follows every later rebuild of the article with no second
+    # template pass. It runs after prune_orphans(), which would otherwise delete
+    # a deployed page that has no source .md behind it.
+    for src_rel, alias_rel in LEGACY_COPIES:
+        src = DEPLOY / src_rel
+        if not src.exists():
+            continue
+        data = src.read_bytes()
+        alias = DEPLOY / alias_rel
+        if alias.exists() and alias.read_bytes() == data:
+            continue
+        alias.write_bytes(data)
+        print(f"Alias written: {alias_rel}")
     # ──────────────────────────────────────────────────────────────────────
 
 
@@ -594,6 +624,7 @@ def main():
     prune_legacy()
     write_sitemaps()
     run_convention_check()
+    copy_legacy_pages()
     write_state(started)
 
     print("Done.")

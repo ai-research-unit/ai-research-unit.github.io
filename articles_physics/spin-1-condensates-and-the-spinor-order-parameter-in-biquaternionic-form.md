@@ -179,7 +179,7 @@ The polar states have a different and equally transparent realisation: they are 
 
 $$
 \boxed{\;\tilde\Pi_{\mathrm{sym}}\left(\tilde\Pi(\vec u)\otimes \tilde\Pi(-\vec u)\right)\tilde\Pi_{\mathrm{sym}}
-=\tfrac{1}{2}\,\lvert\vec\varkappa_{\mathrm{ord},\vec u}_{\mathrm{pol}}\rangle\langle\vec\varkappa_{\mathrm{ord},\vec u}_{\mathrm{pol}}\rvert\;},
+=\tfrac{1}{2}\,\lvert\vec\varkappa_{\mathrm{ord},\vec u,\mathrm{pol}}\rangle\langle\vec\varkappa_{\mathrm{ord},\vec u,\mathrm{pol}}\rvert\;},
 $$
 
 with $\tilde\Pi(-\vec u)$ the orthogonal idempotent along the same axis. That the result is proportional to the polar-state idempotent, and that it is the polar state with director $\vec u$, was verified directly: for $\vec u=\vec u_z$ the left-hand side is $\tfrac12\lvert 1,0\rangle\langle 1,0\rvert$ and the state has $\langle\vec F\rangle=0$, $\mathcal{Q}=\tfrac13\mathrm{diag}(1,1,-2)$. The nematic phase is thus the phase in which the two constituent fundamental spins are *antiparallel*: the magnetic order cancels, and what survives is the common axis, in the form of the traceless symmetric tensor.

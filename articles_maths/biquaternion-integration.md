@@ -209,23 +209,23 @@ The derivative in the surface term is essential and cannot be dropped. The produ
 **The fundamental solution of $\Box_\Phi$.** Since $\Delta_\Phi(\|\tilde{Q}\|^{-2}) = -4\pi^2 \delta_0$ in four dimensions, the operator $\Box_\Phi$ has the central fundamental solution
 
 $$
-G_\Box_\Phi(\tilde{Q}) = -\frac{e_t}{4\pi^2 \|\tilde{Q}\|^2}, \qquad \Box_\Phi G_\Box_\Phi = \delta_0 ,
+G_{\Box_{\Phi}}(\tilde{Q}) = -\frac{e_t}{4\pi^2 \|\tilde{Q}\|^2}, \qquad \Box_\Phi G_{\Box_{\Phi}} = \delta_0 ,
 $$
 
 homogeneous of degree $-2$. It is a different object from the gradient kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ of the preceding sections, which is homogeneous of degree $-3$ and inverts the first-order operator $\tilde\nabla_\Phi$ rather than the second-order $\Box_\Phi$. The companion physics article *The Biquaternion D'Alembertian and Its Green's Functions* writes the corresponding kernel, with the opposite overall sign because its fourth coordinate is $iq'_t$, as $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ with $-\Box_\Phi G_{\mathrm{inv}} = \delta^{(4)}$.
 
-**Theorem (representation formula).** Let $\Omega \subset \mathbb{B}_{H}$ be a bounded domain with piecewise smooth boundary, let $\varphi$ be a twice continuously differentiable biquaternion-valued function on $\bar\Omega$, and let $G_\Box_\Phi$ be as above; write $G_\Box_\Phi(\tilde{Q}_0 - \tilde{Q})$ for the kernel translated to an interior point $\tilde{Q}_0 \in \Omega$, and let $\partial/\partial\tilde u_{\mathrm n}$ act on $\tilde{Q}$. Then
+**Theorem (representation formula).** Let $\Omega \subset \mathbb{B}_{H}$ be a bounded domain with piecewise smooth boundary, let $\varphi$ be a twice continuously differentiable biquaternion-valued function on $\bar\Omega$, and let $G_{\Box_{\Phi}}$ be as above; write $G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})$ for the kernel translated to an interior point $\tilde{Q}_0 \in \Omega$, and let $\partial/\partial\tilde u_{\mathrm n}$ act on $\tilde{Q}$. Then
 
 $$
-\varphi(\tilde{Q}_0) = \int_\Omega G_\Box_\Phi(\tilde{Q}_0 - \tilde{Q})\,(\Box_\Phi \varphi)(\tilde{Q})\,dV + \int_{\partial \Omega} \left[ \varphi(\tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} G_\Box_\Phi(\tilde{Q}_0 - \tilde{Q}) - G_\Box_\Phi(\tilde{Q}_0 - \tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} \varphi(\tilde{Q}) \right] dS .
+\varphi(\tilde{Q}_0) = \int_\Omega G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})\,(\Box_\Phi \varphi)(\tilde{Q})\,dV + \int_{\partial \Omega} \left[ \varphi(\tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q}) - G_{\Box_{\Phi}}(\tilde{Q}_0 - \tilde{Q})\,\partial/\partial\tilde u_{\mathrm n} \varphi(\tilde{Q}) \right] dS .
 $$
 
-**Proof.** Apply the Green formula for $\Box_\Phi$ to $\varphi$ and to $G_\Box_\Phi(\tilde{Q}_0 - \cdot)$ on the domain $\Omega \setminus B(\tilde{Q}_0,\varepsilon)$, whose boundary is $\partial\Omega$ together with the small sphere. The term $G_\Box_\Phi(\tilde{Q}_0 - \cdot)$ is annihilated by $\Box_\Phi$ away from $\tilde{Q}_0$, while its image under $\Box_\Phi$ is $\delta_0$, so the volume integrand carries $-\varphi(\tilde{Q}_0)$ from the excised ball and $G_\Box_\Phi(\tilde{Q}_0-\tilde{Q})(\Box_\Phi \varphi)(\tilde{Q})$ from $\Omega$; the outer and inner boundary pieces assemble into the stated surface integral. Letting $\varepsilon \to 0$ gives the identity. The volume integral converges at $\tilde{Q}_0$ because the kernel is of order $\|\tilde{Q}-\tilde{Q}_0\|^{-2}$, which is integrable in four dimensions.
+**Proof.** Apply the Green formula for $\Box_\Phi$ to $\varphi$ and to $G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)$ on the domain $\Omega \setminus B(\tilde{Q}_0,\varepsilon)$, whose boundary is $\partial\Omega$ together with the small sphere. The term $G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)$ is annihilated by $\Box_\Phi$ away from $\tilde{Q}_0$, while its image under $\Box_\Phi$ is $\delta_0$, so the volume integrand carries $-\varphi(\tilde{Q}_0)$ from the excised ball and $G_{\Box_{\Phi}}(\tilde{Q}_0-\tilde{Q})(\Box_\Phi \varphi)(\tilde{Q})$ from $\Omega$; the outer and inner boundary pieces assemble into the stated surface integral. Letting $\varepsilon \to 0$ gives the identity. The volume integral converges at $\tilde{Q}_0$ because the kernel is of order $\|\tilde{Q}-\tilde{Q}_0\|^{-2}$, which is integrable in four dimensions.
 
 **Corollary ($\Box_\Phi$-harmonic case).** If $\Box_\Phi \varphi = 0$ in $\Omega$ the volume term drops out and
 
 $$
-\varphi(\tilde{Q}_0) = \int_{\partial \Omega} \left[ \varphi\,\partial/\partial\tilde u_{\mathrm n} G_\Box_\Phi(\tilde{Q}_0 - \cdot) - G_\Box_\Phi(\tilde{Q}_0 - \cdot)\,\partial/\partial\tilde u_{\mathrm n} \varphi \right] dS ,
+\varphi(\tilde{Q}_0) = \int_{\partial \Omega} \left[ \varphi\,\partial/\partial\tilde u_{\mathrm n} G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot) - G_{\Box_{\Phi}}(\tilde{Q}_0 - \cdot)\,\partial/\partial\tilde u_{\mathrm n} \varphi \right] dS ,
 $$
 
 so a function annihilated by the four-dimensional Laplacian is determined at every interior point by its boundary values and its normal derivative. This is the second-order companion of the Cauchy integral formula above, which represents a function annihilated by the first-order operator $\tilde\nabla_\Phi$ by its boundary values alone; here it is the vanishing of $\Box_\Phi \varphi$, not the size of the kernel's singularity, that removes the volume term.
@@ -495,9 +495,9 @@ The following questions are not answered in this article and are left for later 
 
 The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{B}_{H}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas. Because the algebra is not commutative, transposing the gradient off a product requires the right gradient, written $\tilde\nabla_\Phi^{R}$ after the function it differentiates, and the commutative-looking forms hold only for central fields; the identities are stated in the forms that hold for general biquaternion-valued fields.
 
-The **fundamental solution** of the gradient operator on $\mathbb{B}_{H}$ is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$, which satisfies $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from the origin and $\tilde\nabla_\Phi G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ in the sense of distributions. The fundamental solution of the second-order operator $\Box_\Phi$ is the central function $G_\Box_\Phi = -e_t/(4\pi^2\|\tilde{Q}\|^2)$.
+The **fundamental solution** of the gradient operator on $\mathbb{B}_{H}$ is $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$, which satisfies $\tilde\nabla_\Phi G_{\mathrm{fn}} = 0$ away from the origin and $\tilde\nabla_\Phi G_{\mathrm{fn}} = -2\pi^2 \delta_0 e_t$ in the sense of distributions. The fundamental solution of the second-order operator $\Box_\Phi$ is the central function $G_{\Box_{\Phi}} = -e_t/(4\pi^2\|\tilde{Q}\|^2)$.
 
-The **Green formula for $\Box_\Phi$** and its **representation formula** express a biquaternion-valued function at an interior point by the volume integral of its $\Box_\Phi$ against $G_\Box_\Phi$ together with a surface integral of its boundary values and normal derivative; when $\Box_\Phi \varphi = 0$ the volume term drops out and the interior value is carried by the boundary alone. For the wave operator this is the biquaternionic **Kirchhoff–Green representation**, the analogue of the classical Kirchhoff and Green formulas.
+The **Green formula for $\Box_\Phi$** and its **representation formula** express a biquaternion-valued function at an interior point by the volume integral of its $\Box_\Phi$ against $G_{\Box_{\Phi}}$ together with a surface integral of its boundary values and normal derivative; when $\Box_\Phi \varphi = 0$ the volume term drops out and the interior value is carried by the boundary alone. For the wave operator this is the biquaternionic **Kirchhoff–Green representation**, the analogue of the classical Kirchhoff and Green formulas.
 
 The **Cauchy integral formula** expresses the value of a continuously differentiable function at an interior point in terms of its boundary values and the volume integral of its gradient. For functions satisfying $\tilde\nabla_\Phi F_{\mathrm{fn}} = 0$ (the biquaternion analogue of the Cauchy–Riemann equations), the volume integral vanishes and the value at the interior point is given entirely by the boundary values.
 
@@ -522,7 +522,7 @@ The integration theory is related to complex analysis, Fueter's quaternionic ana
 | $\tilde u_{\mathrm n} = \sum_\mu n_\mu e_\mu$, $\sum_\mu n_\mu^2 = 1$ | Outward unit normal, an element of norm one |
 | $\partial/\partial\tilde u_{\mathrm n} = \sum_\mu n_\mu \partial/\partial q_\mu$ | Scalar normal derivative in the outward direction |
 | $G_{\mathrm{fn}}(\tilde{Q}) = \tilde{Q}^{\natural}/\|\tilde{Q}\|^4$ | Fundamental solution of the gradient |
-| $G_\Box_\Phi(\tilde{Q}) = -e_t/(4\pi^2\|\tilde{Q}\|^2)$ | Fundamental solution of $\Box_\Phi$ |
+| $G_{\Box_{\Phi}}(\tilde{Q}) = -e_t/(4\pi^2\|\tilde{Q}\|^2)$ | Fundamental solution of $\Box_\Phi$ |
 | $dV$ | Lebesgue measure on the four real coordinates of $\mathbb{B}_{H}$ |
 
 ## Further Reading

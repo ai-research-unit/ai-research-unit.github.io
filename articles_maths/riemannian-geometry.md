@@ -91,7 +91,7 @@ $$
 R(X, Y)Z = \nabla_X\nabla_YZ - \nabla_Y\nabla_XZ - \nabla_{[X, Y]}Z,
 $$
 
-and $R(X, Y, Z, W) = g(R(X, Y)Z, W)$ is its fully covariant form. The curvature form in a frame is $\mathcal{R} = dA + A\wedgeA$, by the structure equation, and $\Omega$ is never used for it here.
+and $R(X, Y, Z, W) = g(R(X, Y)Z, W)$ is its fully covariant form. The curvature form in a frame is $\mathcal{R} = dA + A\wedge A$, by the structure equation, and $\Omega$ is never used for it here.
 
 **Theorem (symmetries and Bianchi identities).**
 
@@ -317,7 +317,7 @@ The isometry group of a connected Riemannian manifold is a Lie group by the Myer
 | $\operatorname{Isom}(M,g)$ | Isometry group; a Lie group by Myers–Steenrod |
 | $\nabla$, $\Gamma_{kij}$, $A_{ij}$ | Levi-Civita connection; Christoffel symbols; connection form |
 | $R(X,Y)Z$, $R(X,Y,Z,W)$ | Curvature tensor and its fully covariant form |
-| $\mathcal{R} = dA+A\wedgeA$ | Curvature $2$-form in a frame; no bare $\Omega$ is used |
+| $\mathcal{R} = dA+A\wedge A$ | Curvature $2$-form in a frame; no bare $\Omega$ is used |
 | $K(\sigma)$ | Sectional curvature of the two-plane $\sigma$ |
 | $\operatorname{Ric}$, $S$, $G = \operatorname{Ric}-\frac12Sg$ | Ricci tensor, scalar curvature, Einstein tensor |
 | Einstein manifold | $\operatorname{Ric} = \lambda g$; then $\lambda = S/n$ |

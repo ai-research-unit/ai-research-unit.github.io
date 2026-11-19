@@ -385,13 +385,13 @@ $$
 The conjugate square satisfies the analogous identity
 
 $$
-(\tilde\nabla_\Phi)^{\natural}^2 = 2\,\frac{\partial}{\partial Q_t}\,(\tilde\nabla_\Phi)^{\natural} - \Box_\Phi.
+(\tilde\nabla_\Phi)^{\natural2} = 2\,\frac{\partial}{\partial Q_t}\,(\tilde\nabla_\Phi)^{\natural} - \Box_\Phi.
 $$
 
 The two squares are related to each other and to $\Box_\Phi$ by
 
 $$
-\tilde\nabla_\Phi^2 + (\tilde\nabla_\Phi)^{\natural}^2 = 2\left(\frac{\partial^2}{\partial Q_t^2} - \Delta_\Phi\right) e_t, \qquad \tilde\nabla_\Phi^2 - (\tilde\nabla_\Phi)^{\natural}^2 = 4\sum_{\mu=1}^{3} \vec e_\mu \frac{\partial^2}{\partial Q_t \partial Q_\mu}.
+\tilde\nabla_\Phi^2 + (\tilde\nabla_\Phi)^{\natural2} = 2\left(\frac{\partial^2}{\partial Q_t^2} - \Delta_\Phi\right) e_t, \qquad \tilde\nabla_\Phi^2 - (\tilde\nabla_\Phi)^{\natural2} = 4\sum_{\mu=1}^{3} \vec e_\mu \frac{\partial^2}{\partial Q_t \partial Q_\mu}.
 $$
 
 

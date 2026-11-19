@@ -97,6 +97,8 @@ def main():
     # new article must never be missing from them.
     build.write_sitemaps()
     build.run_convention_check()
+    # The article was renamed, so the old address must keep serving it.
+    build.copy_legacy_pages()
     build.write_state(started)
 
     print("Done.")

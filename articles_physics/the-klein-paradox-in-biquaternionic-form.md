@@ -17,7 +17,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B} 
 A static electrostatic potential $\xi(x)$ is the time component of the four-potential, $\tilde{A}_{\Phi} = i\,a'_te_t$ in the corpus's convention for the potential biquaternion, with no magnetic part. Inserted into the minimal-coupling prescription of the companion article, the covariant derivative is
 
 $$
-D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\cdoti\,a'_te_t = \tilde\nabla_\Phi -\frac{ϙ\,a'_{t}}{\hbar}e_t .
+D = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\tilde{A}_{\Phi} = \tilde\nabla_\Phi +\frac{i\,ϙ}{\hbar}\cdot i\,a'_te_t = \tilde\nabla_\Phi -\frac{ϙ\,a'_{t}}{\hbar}e_t .
 $$
 
 The added term is a **central scalar multiple of $e_t$**. This is the algebraic statement that an electrostatic potential couples to the scalar slot and not to the state module: it cannot rotate, mix or relatively phase the two chiral components of the field. The one-dimensional-scattering article makes the same point for the Schrödinger case, and the mechanism is identical here.

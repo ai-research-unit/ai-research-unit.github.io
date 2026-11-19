@@ -30,7 +30,7 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 An **instrument** is a family of completely positive maps indexed by an outcome. In the algebra it is a family of Kraus operators $\tilde M_{\mathrm{kraus},y}$ with
 
 $$
-\tilde{\mathcal E}_{\Psi}_y=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y},\qquad \sum_y\tilde{\mathcal E}_{\Psi}_y=e_t,\qquad p_y=2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde{\mathcal E}_{\Psi}_y\right),\qquad \tilde{Ϛ}_{\Psi,y}=\frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{p_y}.
+\tilde{\mathcal E}_{\Psi,y}=\tilde M_{\mathrm{kraus},y}^{*}\tilde M_{\mathrm{kraus},y},\qquad \sum_y\tilde{\mathcal E}_{\Psi,y}=e_t,\qquad p_y=2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}\,\tilde{\mathcal E}_{\Psi,y}\right),\qquad \tilde{Ϛ}_{\Psi,y}=\frac{\tilde M_{\mathrm{kraus},y}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},y}^{*}}{p_y}.
 $$
 
 Dropping the outcome label gives the **channel**
@@ -187,7 +187,7 @@ Normalising by $a_2$ gives the action on the Bloch ball,
 $$
 r'_\parallel=\frac{s_\parallel+\tanh\theta_{\mathrm{rpd},w}}{1+s_\parallel\tanh\theta_{\mathrm{rpd},w}},
 \qquad
-\vec s_{\Psi}'_\perp=\frac{\vec s_{\Psi,\perp}}{\cosh\theta_{\mathrm{rpd},w}+s_\parallel\sinh\theta_{\mathrm{rpd},w}},
+\vec s_{\Psi,\perp}'=\frac{\vec s_{\Psi,\perp}}{\cosh\theta_{\mathrm{rpd},w}+s_\parallel\sinh\theta_{\mathrm{rpd},w}},
 $$
 
 with $s_\parallel=\vec s_{\Psi}\cdot\vec u_{\mathrm b}$. The poles $\pm\vec u_{\mathrm b}$ are fixed, the boundary sphere is mapped to itself, and every interior point moves toward $+\vec u_{\mathrm b}$. This is velocity addition along the boost axis, with strength $\tanh\theta_{\mathrm{rpd},w}$, and it is not a rotation of the ball.
@@ -214,7 +214,7 @@ $$
 \boxed{\;\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus}}^{*}\tilde M_{\mathrm{kraus}}=\tilde M_{\mathrm{kraus},0}^{*}\tilde M_{\mathrm{kraus},H}^{2}\tilde M_{\mathrm{kraus},0}\;}.
 $$
 
-The eigenvalues of $\tilde{\mathcal E}_{\Psi}$ are $\sigma_i^{2}$, the squares of the singular values of $\tilde M_{\mathrm{kraus}}$ and the eigenvalues of $\tilde M_{\mathrm{kraus},H}^{2}$. The effect is positive, and $\tilde{\mathcal E}_{\Psi}\leq e_t$ exactly when every $\sigma_i\leq1$; for an instrument the resolution $\sum_y\tilde{\mathcal E}_{\Psi}_y=e_t$ forces each $\sigma_i\leq1$.
+The eigenvalues of $\tilde{\mathcal E}_{\Psi}$ are $\sigma_i^{2}$, the squares of the singular values of $\tilde M_{\mathrm{kraus}}$ and the eigenvalues of $\tilde M_{\mathrm{kraus},H}^{2}$. The effect is positive, and $\tilde{\mathcal E}_{\Psi}\leq e_t$ exactly when every $\sigma_i\leq1$; for an instrument the resolution $\sum_y\tilde{\mathcal E}_{\Psi,y}=e_t$ forces each $\sigma_i\leq1$.
 
 The formula is not $\tilde{\mathcal E}_{\Psi}=\tilde M_{\mathrm{kraus},H}^{2}$ in general. The two agree only when $\tilde M_{\mathrm{kraus},0}$ commutes with $\tilde M_{\mathrm{kraus},H}$, and in particular when $\tilde M_{\mathrm{kraus},0}$ is a function of $\tilde M_{\mathrm{kraus},H}$. On the cone they need not agree at all: the effect and the squared strength can sit on different lines, with $\tilde M_{\mathrm{kraus},0}$ carrying one to the other.
 
@@ -320,13 +320,13 @@ A channel is a sum of terms, and the polar decomposition applies to each term se
 
 $$
 Ξ(\tilde{Ϛ}_{\Psi})=\sum_l\tilde M_{\mathrm{kraus},l}\tilde{Ϛ}_{\Psi}\tilde M_{\mathrm{kraus},l}^{*}
-=\sum_l\tilde H_\Psi_{\mathrm{pos},l}\tilde U_{\mathrm{p},l}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{p},l}^{*}\tilde H_\Psi_{\mathrm{pos},l}.
+=\sum_l\tilde H_{\Psi,\mathrm{pos},l}\tilde U_{\mathrm{p},l}\tilde{Ϛ}_{\Psi}\tilde U_{\mathrm{p},l}^{*}\tilde H_{\Psi,\mathrm{pos},l}.
 $$
 
 Trace preservation is
 
 $$
-\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_\Psi_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t.
+\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_{\Psi,\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t.
 $$
 
 The polar decomposition of the sum is not the sum of the polar decompositions. The object decomposed here is each Kraus operator; the channel is a completely positive map, and its own polar decomposition as an operator on the Hilbert–Schmidt space is a different statement, not made here.
@@ -350,7 +350,7 @@ $$
 \tilde M_{\mathrm{kraus},1}=\sqrt{\tfrac p2}\,Z,\qquad Z=i\vec e_z,
 $$
 
-with $Z$ $*$-unitary and $Z^{2}=e_t$. For $0<p<1$ both terms have scalar strength, $\tilde H_\Psi_{\mathrm{pos},0}=\sqrt{1-p/2}e_t$ and $\tilde H_\Psi_{\mathrm{pos},1}=\sqrt{p/2}e_t$, and both have $*$-unitary backaction, $\tilde U_{\mathrm{p},0}=e_t$ and $\tilde U_{\mathrm{p},1}=Z$. The channel is nevertheless irreversible for every $p>0$, because its minimal Kraus rank is two. At $p=0$ the second term vanishes and the channel is the identity; at $p=1$ the two terms are $e_t/\sqrt2$ and $Z/\sqrt2$ and the channel is fully dephasing.
+with $Z$ $*$-unitary and $Z^{2}=e_t$. For $0<p<1$ both terms have scalar strength, $\tilde H_{\Psi,\mathrm{pos},0}=\sqrt{1-p/2}e_t$ and $\tilde H_{\Psi,\mathrm{pos},1}=\sqrt{p/2}e_t$, and both have $*$-unitary backaction, $\tilde U_{\mathrm{p},0}=e_t$ and $\tilde U_{\mathrm{p},1}=Z$. The channel is nevertheless irreversible for every $p>0$, because its minimal Kraus rank is two. At $p=0$ the second term vanishes and the channel is the identity; at $p=1$ the two terms are $e_t/\sqrt2$ and $Z/\sqrt2$ and the channel is fully dephasing.
 
 The example states the article's negative thesis. The reversibility of a channel is not the triviality of a single strength and not the unitarity of a single backaction. It is the minimal number of terms in the sum.
 
@@ -389,7 +389,7 @@ The channel-level statement is the correction that the polar programme makes to 
 | sharp outcome | $\tilde M_{\mathrm{kraus}}=\tilde\Pi$: $\tilde M_{\mathrm{kraus},H}=\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, $\tilde{\mathcal E}_{\Psi}=\tilde\Pi$, on the null cone |
 | soft rank-one outcome | $\tilde M_{\mathrm{kraus}}=\sigma\tilde\Pi$: $\tilde M_{\mathrm{kraus},H}=\sigma\tilde\Pi$, $\tilde M_{\mathrm{kraus},0}=\tilde\Pi$, $\tilde{\mathcal E}_{\Psi}=\sigma^{2}\tilde\Pi$ |
 | unsharp outcome | $\tilde M_{\mathrm{kraus}}$ invertible: $\tilde M_{\mathrm{kraus},H}>0$, $\tilde M_{\mathrm{kraus},0}$ $*$-unitary, $\tilde{\mathcal E}_{\Psi}>0$ |
-| channel | $\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_\Psi_{\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t$; reversible iff minimal Kraus rank one |
+| channel | $\sum_l\tilde U_{\mathrm{p},l}^{*}\tilde H_{\Psi,\mathrm{pos},l}^{2}\tilde U_{\mathrm{p},l}=e_t$; reversible iff minimal Kraus rank one |
 | dephasing | two scalar strengths and two $*$-unitary backactions, minimal Kraus rank two, irreversible for $p>0$ |
 
 ## Summary of Notation

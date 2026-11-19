@@ -125,7 +125,7 @@ This is also the statement $\tilde\Pi_+(\vec u_p)=\tilde\Pi_-(-\vec u_p)$: the s
 **Rotation.** For the rotor $\tilde u$ of a rotation carrying $\vec u_p$ to $\vec u_{p'}$ (*Angular Momentum and Spin in Biquaternionic Form*, §*The Rotor Realisation of Rotations*), the operator is conjugated,
 
 $$
-\lambda(\vec p\,')=\tilde u\,\lambda(\vec p)\,\tilde u^{*},
+\lambda(\vec p')=\tilde u\,\lambda(\vec p)\,\tilde u^{*},
 $$
 
 so a rotation relabels the axis and leaves the spectrum alone. Helicity is a scalar under rotations by construction, and no rotation can spoil the label.

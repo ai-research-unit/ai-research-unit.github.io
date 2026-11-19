@@ -94,7 +94,7 @@ $$
 \tau=1-C_{AB}^{2}-C_{AC}^{2}-\lvert\vec s_A\rvert^{2} .
 $$
 
-*Proof.* The first two are squares of concurrences and the third is a squared norm, so all are non-negative. The sum bound is the inequality after substitution. The identity for $\tau$ is the definition with $4\det\rho_A$ replaced. $\square$
+*Proof.* The first two are squares of concurrences and the third is a squared norm, so all are non-negative. The sum bound is the inequality after substitution. The identity for $\tau$ is the definition with $4\det\rho_A$ replaced.
 
 **The numbers at the two extremes.** For GHZ, $C_{AB}^{2}=0$, $C_{AC}^{2}=0$ and $\lvert\vec s_A\rvert^{2}=0$, so the three numbers are $(0,0,0)$ and the deficit is one. For $W$, $C_{AB}^{2}=\tfrac49$, $C_{AC}^{2}=\tfrac49$ and $\lvert\vec s_A\rvert^{2}=\tfrac19$, so the three sum to exactly one and the deficit is zero.
 

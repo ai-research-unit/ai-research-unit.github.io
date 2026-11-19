@@ -8,7 +8,7 @@ W[\tilde J_{\Phi}] = \log Z[\tilde J_{\Phi}],
 $$
 the **connected generating functional**, whose derivatives give the connected correlation functions. The second is its Legendre transform,
 $$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \sup_{\tilde J}_{\Phi}\Big(\langle \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde J_{\Phi}]\Big),
+\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \sup_{\tilde J,\Phi}\Big(\langle \tilde J_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde J_{\Phi}]\Big),
 \qquad
 \tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde J}_{\Phi},
 $$
@@ -71,7 +71,7 @@ The **classical field** is the source-derivative of the connected functional,
 $$
 \tilde{Ξ}_{\mathrm{cl}}(x) = \frac{\delta W}{\delta\tilde J_{\Phi}(x)} ,
 $$
-a module-valued function. It is the one-point function in the presence of the source, $\tilde{Ξ}_{\mathrm{cl}}=\langle\tilde{Ξ}\rangle_{\tilde J}_{\Phi}$.
+a module-valued function. It is the one-point function in the presence of the source, $\tilde{Ξ}_{\mathrm{cl}}=\langle\tilde{Ξ}\rangle_{\tilde J,\Phi}$.
 
 **The effective action** is the Legendre transform
 $$
@@ -90,7 +90,7 @@ with the comparison of the two module elements understood through the positive-d
 
 **The inverse-Hessian relation.** The second derivatives satisfy
 $$
-\Gamma^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\;W^{(2)}[\tilde J_{\Phi}]\Big|_{Ξ_{\mathrm{cl}}=\delta W/\delta\tilde J}_{\Phi} = I ,
+\Gamma^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\;W^{(2)}[\tilde J_{\Phi}]\Big|_{Ξ_{\mathrm{cl}}=\delta W/\delta\tilde J,\Phi} = I ,
 $$
 the module identity, and the Legendre identity
 $$

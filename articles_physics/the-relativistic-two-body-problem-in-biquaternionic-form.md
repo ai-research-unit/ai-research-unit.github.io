@@ -33,7 +33,7 @@ with $\gamma_1 = (1 - \vec v_1^2/c^2)^{-1/2}$. The second body is described iden
 Each four-momentum satisfies the **mass-shell relation**
 
 $$
-\langle\tilde{P}_{\Phi,a}\rangle_{\natural} = \tilde{P}_{\Phi,a}\tilde{P}_{\Phi}^{\natural}_a = -\frac{E_a^2}{c^2} + \vec p_a^2 = -m_a^2c^2,
+\langle\tilde{P}_{\Phi,a}\rangle_{\natural} = \tilde{P}_{\Phi,a}\tilde{P}_{\Phi,a}^{\natural} = -\frac{E_a^2}{c^2} + \vec p_a^2 = -m_a^2c^2,
 \qquad a = 1, 2,
 $$
 

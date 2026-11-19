@@ -629,7 +629,7 @@ $$
 \;},
 $$
 
-whose argument is the sum of the argument of the modulus, $\logM_{\mathrm{mod}} = \ln\lambda + j\tau$, and the argument of the rotor, $\log\tilde{U} = \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2$.
+whose argument is the sum of the argument of the modulus, $\log M_{\mathrm{mod}} = \ln\lambda + j\tau$, and the argument of the rotor, $\log\tilde{U} = \tfrac{\theta_+}{2}\mu_+\tilde\Pi_1 + \tfrac{\theta_-}{2}\mu_-\tilde\Pi_2$.
 
 **Proof.** The two summands commute, the first being central and the second lying in the compact part, so the exponential of the sum is the product of the exponentials and the product is $M_{\mathrm{mod}}\tilde{U} = \tilde{Q}$. If both components of $\tilde{Q}$ are non-zero then $\varrho_\pm>0$, both quaternion logarithms exist, and the argument is defined; if a component vanishes then $\tilde{Q}$ is a zero divisor, and no exponential has a vanishing component, because $\left|\exp\tilde q\right| = \exp(q_t)>0$ for every quaternion $\tilde q$.
 
