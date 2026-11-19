@@ -172,7 +172,7 @@ The core intuition is this: **the real slice is a projection, and the complex st
 
 The metric convention tells you **what** the geometry is. The $i r'_t$ convention tells you **why**. And the "why" may be where the next physics lies.
 
-This is not a proof. It is a research program. The motivations above are reasons to take it seriously, not reasons to believe it. The next articles lay out the mathematical structure in detail: first the two natural subspaces of the biquaternion algebra — the material sector $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$ — and then the objects that live in each.
+This is not a proof. It is a research programme. The motivations above are reasons to take it seriously, not reasons to believe it. The next articles lay out the mathematical structure in detail: first the two natural subspaces of the biquaternion algebra — the material sector $\mathbb{B}_{\Phi}$ and the informational sector $\mathbb{B}_{\Psi}$ — and then the objects that live in each.
 
 ## Physical Readings
 
