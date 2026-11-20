@@ -4,6 +4,8 @@
 
 This article writes the charged-current weak interaction as an extremum of an action, and shows that eliminating the $W$ from that action produces the four-fermion contact with the coefficient $G_F$ fixed. It is the action-first companion of *The Weak Interaction in Biquaternionic Form*, which states the currents and the rates; this article asks what functional produces the $V-A$ vertex, and why the contact approximation is as good as it is.
 
+**Its place in the sector.** The action here is the charged-current term of the sector's functional, [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html), with the $W$ already massive and the neutral sector dropped. The elimination below is exact only in that truncated setting, and the article says where.
+
 **The equation.** The parent's equation is the $W$'s own equation with the charged current as source,
 
 $$
@@ -25,7 +27,7 @@ the stationarity conditions are the parent's equations, and the vertex is the th
 *Second, the variation eliminates the field.* Varying $W^{+}_\mu$ gives its equation; solving it at low momentum and substituting back gives the contact action
 
 $$
-S_{\mathrm{eff}}=-\frac{4G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu ,
+S_{\mathrm{eff}}=-\frac{G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu ,
 \qquad
 \frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2} .
 $$
@@ -93,14 +95,14 @@ with $G$ the propagator of the massive vector, $G(k)=1/(M_W^2-k^2)$. The Gaussia
 **The momentum expansion, and where it is justified.** For $|k^2|\ll M_W^2$, $G(k)=M_W^{-2}(1+k^2/M_W^2+\cdots)$, and the leading term gives the contact
 
 $$
-\boxed{\;S_{\mathrm{eff}}=-\frac{4G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu+O\!\left(\frac{\partial^2}{M_W^2}\right),
+\boxed{\;S_{\mathrm{eff}}=-\frac{G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu+O\!\left(\frac{\partial^2}{M_W^2}\right),
 \qquad
 \frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2}\;}
 $$
 
 with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum transfer of $100$ MeV the ratio is $1.55\times10^{-6}$, so the contact is accurate to a part per million for nuclear beta decay, and this is why the $W$ is never seen as a propagating degree of freedom in that setting.
 
-**The signs, checked against the rate.** The coefficient $4G_F/\sqrt2$ and not $2G_F/\sqrt2$ follows from the $(1-\gamma_5)$ normalization: the projector squares to twice itself, so the contact carries a factor two relative to the naive product. The muon lifetime computed from it, $\Gamma=G_F^2m_\mu^5/(192\pi^3)$, agrees with the measurement to $0.44\%$, which is the radiative correction, and that agreement is the check on the coefficient.
+**The coefficient, counted from the action and not remembered.** The interaction carries $\frac{g}{2\sqrt2}$; squaring it gives $\frac{g^2}{8}$, and the eliminated mass supplies $M_W^{-2}$, so the contact is $-\frac{g^2}{8M_W^2}J^{+}J^{-}$ and the coefficient is $\frac{G_F}{\sqrt2}$ with no further factor. A reader who meets $\frac{4G_F}{\sqrt2}$ in a textbook is reading a current written $\bar\psi\gamma_\mu P_L\psi$: the projector $P_L$ halves the current, so the product of two such currents is four times smaller and the coefficient four times larger. With the full $(1-\gamma_5)$ current used here, the $\frac{4G_F}{\sqrt2}$ form would be wrong by that factor and the muon rate too large by sixteen. The rate computed from the coefficient above, $\Gamma=G_F^2m_\mu^5/(192\pi^3)=3.009\times10^{-19}$ GeV, is $\tau_\mu=2.187\times10^{-6}$ s against the measured $2.197\times10^{-6}$ s — $0.44\%$ short, which is the size of the radiative correction the tree-level formula omits — and that agreement is the check on the coefficient.
 
 ## The Reality of the Action
 
@@ -186,7 +188,7 @@ with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum t
 
 ## Summary
 
-**The action.** The $W$'s Proca action plus $-\frac{g}{2\sqrt2}(W^{+}J^{+}+W^{-}J^{-})$. Varying $W$ gives its equation with the current as source; solving at low momentum gives the contact $-\frac{4G_F}{\sqrt2}J^{+}J^{-}$ with $G_F/\sqrt2=g^2/(8M_W^2)$.
+**The action.** The $W$'s Proca action plus $-\frac{g}{2\sqrt2}(W^{+}J^{+}+W^{-}J^{-})$. Varying $W$ gives its equation with the current as source; solving at low momentum gives the contact $-\frac{G_F}{\sqrt2}J^{+}J^{-}$ with $G_F/\sqrt2=g^2/(8M_W^2)$.
 
 **The three findings.** The contact is an exact Gaussian elimination followed by a momentum expansion, and the expansion's scale is $M_W$. The $V-A$ structure is the algebra's chirality projection and is exact. The strength is a ratio of the electroweak coupling and mass, so the four-fermion theory has no parameter of its own.
 

@@ -33,6 +33,8 @@ LEGACY_COPIES = [
      "articles_physics/biquaternions-and-the-lorentz-group.html"),
     ("articles_internal/internal-summary-of-the-biquaternion-particle-physics.html",
      "articles_internal/internal-summary-of-the-biquaternion-particle-physics-and-gauge-fields.html"),
+    ("articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html",
+     "articles_physics/quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html"),
 ]
 
 # One date for the whole site: the moment the last build started. build2.py

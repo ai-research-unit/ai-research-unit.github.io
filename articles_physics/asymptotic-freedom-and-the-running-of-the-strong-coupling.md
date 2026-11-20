@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. The one-loop coefficient is the formula of [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), and it is not re-derived here; what this article adds is the arithmetic of the coefficient in terms of the colour factors of [the QCD article](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html), the solution of the running equation, the numbers at the scales where the coupling is measured, and the one parameter that replaces the coupling.
+**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. The one-loop coefficient is the formula of [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), and it is not re-derived here; what this article adds is the arithmetic of the coefficient in terms of the colour factors of [the QCD article](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html), the solution of the running equation, the numbers at the scales where the coupling is measured, and the one parameter that replaces the coupling.
 
 **The claim.** The strong coupling is not a constant, and its dependence on scale has a sign that makes the theory calculable. Three statements carry the article.
 
@@ -307,7 +307,7 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 ## Further Reading
 
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html). The beta functions, the regulator question and the fixed points that this article uses without repeating.
-- [Quantum Chromodynamics and the Lagrangian: The Triplet, the Octet and the Feynman Rules](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html). The colour factors $C_A=3$ and $T_R=1/2$, computed from explicit Gell-Mann matrices, and the vertices the loops are built from.
+- [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The colour factors $C_A=3$ and $T_R=1/2$, computed from explicit Gell-Mann matrices, and the vertices the loops are built from.
 - [The Gluon: An Octet Outside the Biquaternion Algebra](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The adjoint representation and the embedded $\mathrm{SU}(3)$ elements.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The dimension bound behind the ledger's first row.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). Where $\alpha_s$ sits among the parameters, and at which scale.

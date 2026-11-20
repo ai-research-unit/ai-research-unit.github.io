@@ -4,15 +4,17 @@
 
 This article writes the Stueckelberg action for a massive abelian vector and shows that its two ways of counting the same physics — the unitary gauge and the covariant gauges — are two readings of one functional. It is the action-first companion of *The Stueckelberg Mechanism in Biquaternionic Form*, which states the mechanism and the degree-of-freedom count; this article asks what action makes a mass term gauge invariant, and at what price.
 
+**Its place in the sector.** The vector here is abelian, so this functional is not a term of [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html): the sector masses its bosons with the Higgs and not with a shift field. The construction is filed beside the electroweak articles because that is where a massive vector is discussed, not because the sector uses it. The general statement, with no sector attached, is [The Stueckelberg Mechanism for a Massive Abelian Vector in Biquaternionic Form](the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.html).
+
 **The equation.** The parent's equations are the Proca equation for $A_\mu$ and the equation for the scalar $\xi$,
 
 $$
-\partial_\nu F_{\mu\nu}-\mu^2 A_\mu-\mu\,\partial_\mu\xi=0 ,
+\partial_\nu F_{\mu\nu}-\mu^2 A_\mu+\mu\,\partial_\mu\xi=0 ,
 \qquad
-\partial_\mu A_\mu+\mu\,\xi=0 ,
+\partial_\mu A_\mu-\frac{1}{\mu}\Box\xi=0 ,
 $$
 
-the second being the deformed Lorenz condition that the first implies. The two together are the Proca system in the unitary gauge, and the article asks what functional has them as its stationary conditions.
+the second being the deformed Lorenz condition that the divergence of the first implies. The two together are the Proca system in the unitary gauge, and the article asks what functional has them as its stationary conditions.
 
 **Three things are established.**
 
@@ -144,7 +146,7 @@ which is the deformed Lorenz condition, $\partial_\mu A_\mu=\frac{1}{\mu}\Box\xi
 
 **Why there is no ghost.** The Faddeev–Popov determinant for the abelian condition is $\det(\Box-\zeta\mu^2)$, which is field independent, so it contributes a constant to the path integral and no propagating ghost. In the non-abelian case the determinant is field dependent, the ghosts propagate, and the counting involves them. The abelian mechanism's unphysical sector is therefore one scalar and nothing else, and that is the minimum for a massive vector.
 
-**The constraint that must survive.** The mass-shell constraint $\partial_\mu A_\mu+\mu\xi=0$ is not optional: without it the time component of $A_\mu$ would propagate and the energy would be unbounded. The constraint is implied by the vector equation, as shown above, and the derivation is what makes the count three rather than four.
+**The constraint that must survive.** The mass-shell constraint $\partial_\mu A_\mu=\Box\xi/\mu$ — which in the unitary gauge $\xi=0$ is the Lorenz condition $\partial_\mu A_\mu=0$ — is not optional: without it the time component of $A_\mu$ would propagate and the energy would be unbounded. The constraint is implied by the vector equation, as shown above, and the derivation is what makes the count three rather than four.
 
 ## The Structural Consequence: The Mass Term Becomes Invariant, and the Field Becomes a Coordinate
 

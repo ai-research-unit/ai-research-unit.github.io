@@ -12,13 +12,15 @@
 
 ## Conventions
 
-**The conventions are the electroweak articles'.** The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g'$; the gauge fields are $W_\mu^{a}$ for $a=1,2,3$ and $B_\mu$; the field strengths are $W^{a}_{\mu\nu}=\partial_\mu W^{a}_\nu-\partial_\nu W^{a}_\mu+g\epsilon^{abc}W^{b}_\mu W^{c}_\nu$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$. The doublet is $\Phi$, a complex two-component column with hypercharge $Y=+1$; its covariant derivative is
+**The conventions are the corpus's, and they are the ones the menu's convention articles fix.** The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_\mu^{a}$ for $a=1,2,3$ and $B_\mu$; the field strengths are $W^{a}_{\mu\nu}=\partial_\mu W^{a}_\nu-\partial_\nu W^{a}_\mu+g\epsilon^{abc}W^{b}_\mu W^{c}_\nu$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$. The doublet is $\Phi$, a complex two-component column with hypercharge $Y_\varphi=+\tfrac12$; its covariant derivative is
 
 $$
-D_\mu\Phi=\Bigl(\partial_\mu-i\frac{g}{2}\tau^{a}W^{a}_\mu-i\frac{g'}{2}B_\mu\Bigr)\Phi ,
+D_\mu\Phi=\Bigl(\partial_\mu+i\,g\,\tau^{a}W^{a}_\mu+i\,g_{\mathrm Y}Y_\varphi B_\mu\Bigr)\Phi ,
 $$
 
-with $\tau^{a}$ the Pauli matrices. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The metric is mostly plus, the measure $\mathrm{d}^{4}x$, and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
+with $\tau^{a}=\sigma^{a}/2$ the generators in the doublet, so that $T^{3}$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T^{3}+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The metric is mostly plus, the measure $\mathrm{d}^{4}x$, and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
+
+**Two conventions, both settled by the corpus.** The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T^{3}+Y$ with $Y_\varphi=+\tfrac12$, as [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_\mu$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
 
 **One convention is a warning.** The corpus's biquaternion algebra carries the $U(1)$ connection exactly and the $SU(2)$ connection only partly — the electroweak articles state the reach and the ceiling. So the displays below are in the component dictionary, which is exact, and the biquaternionic translation is claimed only where the electroweak articles claim it.
 
@@ -39,10 +41,10 @@ with $\mathcal{L}_{\mathrm{matter}}$ the fermion kinetic terms with their covari
 **The broken phase, written in the unitary chart.** Choose the vacuum $\Phi=\frac{1}{\sqrt{2}}\binom{0}{v+h}$ with $h$ the physical scalar. Then the scalar's gradient term becomes
 
 $$
-(D_\mu\Phi)^{\dagger}D^{\mu}\Phi\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W^{1}_\mu)^{2}+(W^{2}_\mu)^{2}\bigr)+(gW^{3}_\mu-g'B_\mu)^{2}\Bigr]+\frac{g^{2}v}{4}h\,W^{+}W^{-}+\cdots ,
+(D_\mu\Phi)^{\dagger}D^{\mu}\Phi\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W^{1}_\mu)^{2}+(W^{2}_\mu)^{2}\bigr)+(gW^{3}_\mu-g_{\mathrm Y}B_\mu)^{2}\Bigr]+\frac{g^{2}v}{2}h\,W^{+}W^{-}+\cdots ,
 $$
 
-which is a mass term for the combinations $W^{\pm}=(W^{1}\mp iW^{2})/\sqrt2$ and $Z=(gW^{3}-g'B)/\sqrt{g^{2}+g'^{2}}$, and none for $A=(g'B+gW^{3})/\sqrt{g^{2}+g'^{2}}$. The masses are $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g'^{2}}\,v/2$ and $m_A=0$.
+which is a mass term for the combinations $W^{\pm}=(W^{1}\mp iW^{2})/\sqrt2$ and $Z=(gW^{3}-g_{\mathrm Y}B)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, and none for $A=(g_{\mathrm Y}B+gW^{3})/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$. The masses are $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ and $m_A=0$.
 
 **What the display is not.** It is not a gauge-fixing term and not a quantisation. It is the same action, evaluated at a chosen vacuum, with the scalar's fluctuations kept. The chart is called unitary because it keeps only the physical scalar; the quantised theory's $R_\xi$ charts are a different construction and are not in this article.
 
@@ -82,27 +84,27 @@ and varying the fermions gives their covariant Dirac equations.
 
 ## The Structural Consequence: The Masses Are Couplings Times a Vacuum Value
 
-**The claim.** $m_W=gv/2$ and $m_Z=\sqrt{g^{2}+g'^{2}}\,v/2$ are not free parameters of the broken action. They are the coefficients that the scalar's gradient term produces when the doublet is expanded about its minimum, and each is a product of one coupling and one number.
+**The claim.** $m_W=gv/2$ and $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ are not free parameters of the broken action. They are the coefficients that the scalar's gradient term produces when the doublet is expanded about its minimum, and each is a product of one coupling and one number.
 
-**The hand check.** Expand $\Phi=\frac{1}{\sqrt2}\binom{0}{v}$ in the gradient term. The term is $\frac12(\partial_\mu\Phi)^{\dagger}\partial^{\mu}\Phi$ with the covariant derivative; the $W$ parts give $\frac{g^{2}v^{2}}{8}[(W^{1})^{2}+(W^{2})^{2}]$, which is $\frac12 m_W^{2}(W^{1}W^{1}+W^{2}W^{2})$ with $m_W=gv/2$; the neutral part gives $\frac{v^{2}}{8}(gW^{3}-g'B)^{2}=\frac12 m_Z^{2}Z^{2}$ with $m_Z^{2}=(g^{2}+g'^{2})v^{2}/4$. The massless combination is orthogonal to $Z$ and reads $A=(g'B+gW^{3})/\sqrt{g^{2}+g'^{2}}$, the photon.
+**The hand check.** Expand $\Phi=\frac{1}{\sqrt2}\binom{0}{v}$ in the gradient term. The term is $(D_\mu\Phi)^{\dagger}D^{\mu}\Phi$, with the $1/\sqrt2$ already inside $\Phi$; the $W$ parts give $\frac{g^{2}v^{2}}{8}[(W^{1})^{2}+(W^{2})^{2}]$, which is $\frac12 m_W^{2}(W^{1}W^{1}+W^{2}W^{2})$ with $m_W=gv/2$; the neutral part gives $\frac{v^{2}}{8}(gW^{3}-g_{\mathrm Y}B)^{2}=\frac12 m_Z^{2}Z^{2}$ with $m_Z^{2}=(g^{2}+g_{\mathrm Y}^{2})v^{2}/4$. The massless combination is orthogonal to $Z$ and reads $A=(g_{\mathrm Y}B+gW^{3})/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, the photon.
 
-**What follows without a further assumption.** The ratio $m_W/m_Z=\cos\theta_W$ with $\tan\theta_W=g'/g$; the photon's masslessness, because $A$ is the direction the doublet does not see; and the $W$'s and $Z$'s coupling to the scalar, $\frac{g^{2}v}{4}hW^{+}W^{-}$, which is the same $v$ and therefore the same $g$.
+**What follows without a further assumption.** The ratio $m_W/m_Z=\cos\theta_W$ with $\tan\theta_W=g_{\mathrm Y}/g$; the photon's masslessness, because $A$ is the direction the doublet does not see; and the $W$'s and $Z$'s coupling to the scalar, $\frac{g^{2}v}{2}hW^{+}W^{-}=2M_W^{2}hW^{+}W^{-}/v$, which is the same $v$ and therefore the same $g$.
 
-**What the claim forbids.** It forbids treating the vector masses as independent parameters and then adding a scalar with a tuned coupling: the action has one $v$, one $g$, one $g'$, and the masses and the trilinear couplings are all read from them. An action that produced $m_W$ and $m_Z$ with independent coefficients would not be a gauge theory's broken phase; it would be a Proca theory with two masses.
+**What the claim forbids.** It forbids treating the vector masses as independent parameters and then adding a scalar with a tuned coupling: the action has one $v$, one $g$, one $g_{\mathrm Y}$, and the masses and the trilinear couplings are all read from them. An action that produced $m_W$ and $m_Z$ with independent coefficients would not be a gauge theory's broken phase; it would be a Proca theory with two masses.
 
 ## The Noether Currents and the Sign of the Charge
 
 **Three currents and one combination that survives the breaking.** The $SU(2)$ currents $J^{a\,\mu}$ and the hypercharge current $J^{Y\,\mu}$ are conserved in the unbroken phase; after breaking, the three combinations that correspond to the broken generators are not conserved, and the combination
 
 $$
-Q=T^{3}+\frac{Y}{2}
+Q=T^{3}+Y
 $$
 
 is. Its current is the electromagnetic one, and the photon is its gauge field.
 
-**The sign.** The sign of the electric charge is the sign of the eigenvalue of $Q$, and $Q$'s normalisation is fixed by the doublet's hypercharge assignment $Y=+1$ and by $T^{3}=\pm\frac12$. So the electron's charge is negative because its $T^{3}$ and $Y$ combine to $-1$, and the assignment is the corpus's electroweak articles', not this article's choice.
+**The sign.** The sign of the electric charge is the sign of the eigenvalue of $Q$, and $Q$'s normalisation is fixed by the scalar's hypercharge $Y_\varphi=+\tfrac12$ and by $T^{3}=\pm\tfrac12$ on the doublet. The electron sits in the lepton doublet, whose hypercharge is $-\tfrac12$, and its $T^{3}=-\tfrac12$; the two sum to the observed $Q=-1$. The assignment is the corpus's electroweak articles', not this article's choice.
 
-**Why only one combination survives.** A current is conserved after breaking if its generator annihilates the vacuum. The vacuum is neutral under $Q$ and not under $T^{1},T^{2}$ or $T^{3}-Y/2$ separately, so exactly one combination of the four generators leaves it invariant. That is the same statement as the photon's masslessness, read from the currents rather than from the masses — two readings of one fact, and the article gives both because they are checkable independently.
+**Why only one combination survives.** A current is conserved after breaking if its generator annihilates the vacuum. The vacuum is neutral under $Q$ and not under $T^{1},T^{2}$ or $T^{3}-Y$ separately, so exactly one combination of the four generators leaves it invariant. That is the same statement as the photon's masslessness, read from the currents rather than from the masses — two readings of one fact, and the article gives both because they are checkable independently.
 
 **The stress.** The energy density is the sum of the gauge fields', the scalar's and the fermions'. In the broken phase the vector masses contribute $\frac12m^{2}A_0^{2}$ terms to it, and the positivity of the energy is the positivity of each term. There is no cross term of indefinite sign, and that is a property of the unitary chart: in a general chart the Goldstone modes' kinetic terms can look indefinite, and the chart is what removes the appearance.
 
@@ -112,13 +114,13 @@ is. Its current is the electromagnetic one, and the photon is its gauge field.
 
 **Relabels.** The corpus's electroweak articles' statements — the group, the hypercharge, the doublet, the potential, the masses, the quotient, the parity lock — are all recoverable from the action, and the action adds no number to them.
 
-**What it does not reach, and this family does not either.** The quantised theory: the gauge fixing and the ghosts, the $R_\xi$ charts, the Ward identities, the running of $g$ and $g'$, the oblique parameters, the precision observables. The corpus has articles *about* those subjects and does not have the theory that computes them. A reader who wants the $S$-parameter will find its definition and not its value from this family.
+**What it does not reach, and this family does not either.** The quantised theory: the gauge fixing and the ghosts, the $R_\xi$ charts, the Ward identities, the running of $g$ and $g_{\mathrm Y}$, the oblique parameters, the precision observables. The corpus has articles *about* those subjects and does not have the theory that computes them. A reader who wants the $S$-parameter will find its definition and not its value from this family.
 
 **The honest sentence.** This family's electroweak content is a classical gauge theory with a classical breaking, exact and checkable, and it is not the Standard Model. The gap is quantisation, and the bridge article is where the gap is named.
 
 ## Summary
 
-The electroweak Lagrangian is the $SU(2)\times U(1)$ gauge action with one complex doublet and its potential. Its variation gives the Yang–Mills equations with the doublet's currents, the covariant scalar equation and four Gauss constraints. At the potential's minimum the doublet's gradient term gives $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g'^{2}}v/2$ and $m_A=0$, and the count eight-plus-four becomes nine-plus-two-plus-one without loss. The surviving current is the electric one, $Q=T^{3}+Y/2$. Nothing is quantised, and the article says so.
+The electroweak Lagrangian is the $SU(2)\times U(1)$ gauge action with one complex doublet and its potential. Its variation gives the Yang–Mills equations with the doublet's currents, the covariant scalar equation and four Gauss constraints. At the potential's minimum the doublet's gradient term gives $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}v/2$ and $m_A=0$, and the count eight-plus-four becomes nine-plus-two-plus-one without loss. The surviving current is the electric one, $Q=T^{3}+Y$. Nothing is quantised, and the article says so.
 
 $$
 S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W^{a}_{\mu\nu}W^{a\,\mu\nu}-\tfrac14B_{\mu\nu}B^{\mu\nu}+(D_\mu\Phi)^{\dagger}D^{\mu}\Phi-V(\Phi)\Bigr\},
@@ -130,16 +132,16 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $g,\ g'$ | $SU(2)_L$ and $U(1)_Y$ couplings |
+| $g,\ g_{\mathrm Y}$ | $SU(2)_L$ and $U(1)_Y$ couplings |
 | $W^{a}_\mu,\ B_\mu$ | Gauge fields of the two factors |
 | $W^{a}_{\mu\nu},\ B_{\mu\nu}$ | Field strengths, the first non-Abelian |
-| $\Phi$ | Complex doublet, hypercharge $+1$ |
+| $\Phi$ | Complex doublet, hypercharge $Y_\varphi=+\tfrac12$ |
 | $D_\mu\Phi$ | Covariant derivative with both connections |
 | $V(\Phi)$ | $-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ |
 | $v=\sqrt{\mu^{2}/\lambda}$ | Vacuum expectation value |
 | $W^{\pm},\ Z,\ A$ | Mass eigenstates of the neutral and charged sectors |
-| $m_W=gv/2,\ m_Z=\sqrt{g^{2}+g'^{2}}v/2$ | Vector masses |
-| $Q=T^{3}+Y/2$ | Electric charge |
+| $m_W=gv/2,\ m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}v/2$ | Vector masses |
+| $Q=T^{3}+Y$ | Electric charge |
 | $h$ | Physical scalar fluctuation |
 
 ## Further Reading

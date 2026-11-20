@@ -23,7 +23,7 @@ $$
 R=\frac{\sigma(e^+e^-\to\text{hadrons})}{\sigma(e^+e^-\to\mu^+\mu^-)}=N_c\sum_fQ_f^2\left[1+\frac{\alpha_s}{\pi}+c_2\left(\frac{\alpha_s}{\pi}\right)^2+\dots\right] ,
 $$
 
-with $N_c=3$ from [the QCD article](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html) and the sum over the flavours that are kinematically open.
+with $N_c=3$ from [the QCD article](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html) and the sum over the flavours that are kinematically open.
 
 **The staircase.** The Born-level values are exact rationals, since the charges are:
 
@@ -351,7 +351,7 @@ The framework supplies the null direction and the form of the interference, and 
 
 - [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html). The splitting functions, their moments, and the convention that fixes their first moment.
 - [Asymptotic Freedom and the Running of the Strong Coupling](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $\alpha_s$ at every scale, and the discipline that every coupling carries a scale.
-- [Quantum Chromodynamics and the Lagrangian: The Triplet, the Octet and the Feynman Rules](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html). $C_F$, $C_A$ and the vertices the real-emission diagrams are built from.
+- [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). $C_F$, $C_A$ and the vertices the real-emission diagrams are built from.
 - [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). Why the parton description is a description at a resolution, and what the asymptotic algebra can and cannot see.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The null direction and the interference between the two helicity halves that the angular ordering resembles.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The bound behind every row of the ledger.

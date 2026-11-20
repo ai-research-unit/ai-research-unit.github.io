@@ -4,6 +4,8 @@
 
 This article writes the massive vector bosons of the electroweak sector as the extremum of one action, and shows that their masses are not parameters of that action but products of a coupling and a vacuum value. It is the action-first companion of *The W and Z Bosons in Biquaternionic Form*, which states the fields, the mixing and the masses; this article asks what functional produces the Proca-like equations of the two bosons, and where the masses in it come from.
 
+**Its place in the sector.** The functional here is the gauge and scalar part of the sector's complete action, written in [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html). That article is the sector's action; this one is the $W$–$Z$ reading of it, and it stops at the two curvatures and the scalar's gradient term.
+
 **The equation.** The parent's equations are the Yang–Mills equations for $W^a_\mu$ and $B_\mu$ with a source,
 
 $$
@@ -157,19 +159,19 @@ the gauged Klein–Gordon equation with a potential. At the vacuum this equation
 
 ## The Constraints the Action Imposes: Four Gauss Laws and One Massless Mode
 
-**The constraint structure.** Each gauge field brings a first-class constraint, the Gauss law $D_j W^a_{0j}=j^a_0$, so there are four constraints on eight gauge components; with the four would-be Goldstones, the count is
+**The constraint structure.** Each gauge field brings a first-class constraint, the Gauss law $D_j W^a_{0j}=j^a_0$, so four constraints act on eight gauge components, and the three Goldstones are not removed by the constraints but absorbed as longitudinal modes. Counting polarisation states before and after the breaking,
 
 $$
-8\ \text{gauge components}+4\ \text{scalar components}-4\ \text{constraints}-3\ \text{Goldstones}=5\ \text{physical},
+\underbrace{8}_{\text{four vectors, massless}}+\underbrace{4}_{\text{four scalars}}\;=\;\underbrace{9}_{\text{three massive vectors}}+\underbrace{2}_{\text{photon}}+\underbrace{1}_{\text{radial scalar}}\;=\;12 ,
 $$
 
-namely three for the $W^\pm$ together and two for the $Z$, plus one for the photon. The count is the same in any gauge; the distribution is not.
+so no mode is lost and none is added: three of the four scalars become the longitudinal modes of the three vectors that acquire a mass, and what remains is three massive vectors of three modes each, a massless vector of two and one radial scalar. In particles rather than modes the same spectrum is five states, $W^{+}$, $W^{-}$, $Z$, $A$ and $h$. The count is the same in any gauge; the distribution is not.
 
 **Why the Goldstones are removed and not the modes.** The scalar's four components are three Goldstones and one radial mode, and the three Goldstones become the longitudinal polarizations of the three massive gauge fields. The bookkeeping is exact: three massless gauge fields would have six polarizations in total counting the photon, and three massive ones have nine, so three polarizations must be supplied, and the Goldstones supply them.
 
 **The one massless combination.** The photon's masslessness is the vanishing eigenvalue of the mass matrix, and it is a constraint in the technical sense: the unbroken $\mathrm{U}(1)_{\mathrm{em}}$ generator annihilates the vacuum, so its Gauss law survives as a constraint and the corresponding field stays massless. That is the same mechanism as in the electromagnetic article, with the generator being the combination $Q=T_3+Y$.
 
-**The check that the count is gauge independent.** In the $R_\xi$ gauge the Goldstones are kept with $\xi$-dependent masses and the same five physical modes appear; in the unitary gauge they are removed and the gauge propagators take their Proca form. The two descriptions differ in what is counted and agree in what is physical, which is the content of the gauge-fixing article for this sector.
+**The check that the count is gauge independent.** In the $R_\xi$ gauge the Goldstones are kept with $\xi$-dependent masses and the same twelve modes over the same five states appear; in the unitary gauge they are removed and the gauge propagators take their Proca form. The two descriptions differ in what is counted and agree in what is physical, which is the content of the gauge-fixing article for this sector.
 
 ## The Structural Consequence: Masses Are Couplings Times a Vacuum Value
 
