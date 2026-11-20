@@ -38,7 +38,7 @@ and every other term of the Lagrangian is the free one, letter for letter. The f
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar Lagrangian article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
 
-## The Coupled Polar Lagrangian
+## The Action in Polar Variables, Coupled
 
 **The substitution.** The element-form companion's action is Article 3's,
 
@@ -84,7 +84,7 @@ $$
 
 It is a functional of the eight parameters and of the two connection numbers, it is first order in the parameters' velocities, and its only dependence on the connection is through $V_{\mathrm{gco}}$.
 
-## The Euler–Lagrange Equations
+## The Variation: The Euler–Lagrange Equations
 
 **The momenta are the free ones.** Differentiating with respect to the velocities and using $\partial(\vec\Omega\cdot\vec u_{\mathrm b})/\partial\dot\theta_{\mathrm{rpd}}=0$ (the angular velocity is the rotor's own, not the boost's):
 
@@ -128,7 +128,7 @@ which are the free flow's rates with the shifted numbers.
 
 **One difference in the residual's shape.** In the operator setting the residual is not a single element at a point but a differential operator, and the parameter equations then contain the gradient terms of §*The Central Field in the Operator Setting*. The constant setting is where the article's structural statements live, and the operator setting is where the physics of the potential and the current lives.
 
-## The Gauge Direction of the Chart
+## The Constraints the Action Imposes: The Gauge Direction of the Chart
 
 **The action of the gauge group on the parameters.** Under $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$,
 
@@ -208,7 +208,7 @@ with $N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ the density of the free section a
 
 **What the gauge direction does to the current.** The current is invariant under the gauge transformation of the chart, because $N$ is built from $\varrho$ and the frame and the transformation moves only the phase. That invariance is the statement that the current is physical, and it is the chart's form of the element article's gauge invariance of the Noether current.
 
-## The Central Field in the Operator Setting
+## The Two Settings: The Central Field in the Operator Setting
 
 **The word collapses.** With $\theta_{\mathrm{rpd}}=0$ and a rotor that is a sign, the two paragraphs of the free article apply: the boost and the rotor are trivial, $K=-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$, and the potential is $h_t \varrho^{2}$. With the connection in place and the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{2}/2m-ϙ\varphi+\hat V_{\mathrm{op}}$, the action becomes
 
@@ -256,7 +256,7 @@ which is the element-form companion's identity in the chart and is one line here
 
 **What the operator setting does not have.** It has no vanishing momenta. The action is second order in the spatial derivatives and first order in time, so the momenta conjugate to $\varrho$ and to the phase are both nontrivial, and the constraint structure of the constant setting has no analogue here. The two settings' variational principles are different objects, and the article keeps them apart as the parents do.
 
-## What It Adds and What It Does Not
+## What the Principle Adds and What It Relabels: And What It Does Not
 
 **Adds.** The coupled Lagrangian in the chart, and with it the two-number statement of minimal coupling: $h_t\mapsto h_t-ϙ\varphi$, $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$ in the potential, and nothing else. The statement that the kinetic term is untouched, with the algebraic reason — the connection is central and carries no velocity — and the corollary that the four vanishing momenta and the cross term are untouched. The covariant Madelung action with its three coupling pieces, its two Euler–Lagrange equations, and the current as $-\partial L/\partial\vec A$. And the gauge direction of the chart, with the invariant momentum $-\hbar N$ along it.
 

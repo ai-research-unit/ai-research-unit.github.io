@@ -30,7 +30,7 @@ with $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ and $\tilde A_\Phi=i(\varphi
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
 
-## The Coupled Action
+## The Action in Element Form, Coupled
 
 **The kinetic term is Hermitian.** Write $K=\frac{i\hbar}{2}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)$. Then
 
@@ -87,7 +87,7 @@ which is the companion's equation, with $\vec\pi_\eta=-i\hbar D_\eta$ the mechan
 
 **What the variation does not produce.** It does not produce a Maxwell equation. The connection is a fixed background here, and varying it would produce the inhomogeneous Maxwell equation with the current of §*The Noether Current* as source; that step belongs to the Maxwell article's action-and-source section and is not repeated. It also does not produce a constraint on the field's amplitude: the equation is linear, so the variation is a linear equation and the space of solutions is a vector space.
 
-## Gauge Invariance of the Action
+## The Constraints the Action Imposes: Gauge Invariance of the Action
 
 **The transformation.** Let $\Gamma$ be a real function, $\lambda=\exp(iϙ\Gamma/\hbar)$, and let the field and the connection transform as
 
@@ -125,7 +125,7 @@ and taking $\mathrm{Sc}$ gives $-ϙ\,\partial_{t'}\Gamma\,n$.
 
 **What the invariance does not say.** It says nothing about the operator setting's domains or about large gauge functions with nonzero winding; those are the polar companion's open question 2 and the flux discussion, and the action's invariance is local and does not decide them.
 
-## The Lorentz Force
+## The Structural Consequence: The Lorentz Force
 
 **The statement.** The divergence of the stress tensor of the coupled field is the Lorentz force density,
 
@@ -141,7 +141,7 @@ with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{ch
 
 **What the identity would show.** That the field's momentum is not conserved, that the rate at which it is not conserved is the Lorentz force, and that the force is the sum of an electric part from the potential's gradient and a magnetic part from the current crossed with the field. The free article has no such statement because a free field has no force to feel.
 
-## The Noether Current
+## The Noether Currents
 
 **The global symmetry.** For constant $\alpha$ the transformation is $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ and the action is invariant. The Noether construction gives the current of the element-form companion,
 
@@ -166,7 +166,7 @@ where the second equality uses $\mathrm{Re}(iZ)=-\mathrm{Im}Z$. So the charge cu
 
 **The factor and the letters.** $j_\eta$ is the particle current; $ϙ j_\eta$ is the charge current. The element-form companion writes the charge current as $\vec J=ϙ\vec j$ and identifies it as the source of $\tilde\nabla_\Phi\tilde F=-\mu\tilde J$; the article uses that identification and does not re-derive it. The normalisation of $j$ is the free article's and is a convention, as it records.
 
-## The Energy and the Two Settings
+## The Two Settings: The Energy
 
 **The constant setting.** With $\tilde H_\Psi$ and the connection constant, the Lagrangian is the free one with the two coefficients shifted and the energy is the free article's,
 

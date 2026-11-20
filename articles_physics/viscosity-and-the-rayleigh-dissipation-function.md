@@ -56,7 +56,7 @@ $$
 \sigma_{\mathrm{vsc},ij}\,\partial_jv_i=2F_{\mathrm{rlh}},
 $$
 
-by expansion: the shear part contributes $2\eta_{\mathrm{shr}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in [The Lagrangian and Hamiltonian Mechanics](the-lagrangian-and-hamiltonian-mechanics.html).
+by expansion: the shear part contributes $2\eta_{\mathrm{shr}}S_{ij}S_{ij}$ because $\sum_{ij}(\partial_jv_i)S_{ij}=\sum_{ij}S_{ij}S_{ij}$, and the bulk part contributes $\zeta_{\mathrm{blk}}(\vec\nabla_\Phi\cdot\vec v)^{2}$. The identity is exact for every differentiable flow, and it is the continuum reading of $\mathrm{d}E/\mathrm{d}t'=-2F$ in [The Non-Quantum Limit of the Action Principle and the Lagrangian](the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html).
 
 **The energy of an isolated viscous flow decreases.** With no external force and no flux through the boundary,
 
@@ -82,7 +82,7 @@ $$
 \frac{\mathrm{d}}{\mathrm{d}t'}\frac{\partial\mathrm{Lag}}{\partial(\mathrm{d}q_i/\mathrm{d}t')}-\frac{\partial\mathrm{Lag}}{\partial q_i}=-\frac{\partial F}{\partial(\mathrm{d}q_i/\mathrm{d}t')},
 $$
 
-and [The Lagrangian and Hamiltonian Mechanics](the-lagrangian-and-hamiltonian-mechanics.html) states what this costs: the force is added by hand, the energy stops being conserved, and the formalism's symmetry is not restored. The equation is Lagrange's equation plus a term, not the variation of one functional.
+and [The Non-Quantum Limit of the Action Principle and the Lagrangian](the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html) states what this costs: the force is added by hand, the energy stops being conserved, and the formalism's symmetry is not restored. The equation is Lagrange's equation plus a term, not the variation of one functional.
 
 **A variational formulation exists and it is not the one that matters.** Doubling the variables, adding an auxiliary field, or using a principle with a dissipation functional all reproduce the viscous equations. They do so at a price: the action is not a function of the flow alone, and its conjugate momentum is not the flow's momentum. An action that needs an auxiliary field describes a larger system, and whatever is read from its phase belongs to the larger system. The viscous fluid is then a projection of that system and not its solution.
 
@@ -199,4 +199,4 @@ The heat equation is not a wave equation. Its frequency is $-i\nu_{\mathrm{kin}}
 - Carl Eckart, "The thermodynamics of irreversible processes III: relativistic theory of the simple fluid," *Physical Review* **58** (1940) 919–924, for the entropy production of a viscous fluid.
 - Lev D. Landau and Evgeny M. Lifshitz, *Fluid Mechanics*, 2nd ed. (Pergamon, 1987), §§16, 49, for the dissipation function and the entropy balance.
 - The companion articles: [The Euler and Continuity Equations in Biquaternionic Form](the-euler-and-continuity-equations-in-biquaternionic-form.html), [The Vorticity Form and the Irrotational Condition](the-vorticity-form-and-the-irrotational-condition.html), [The Equation of State and the Barotropic Condition](the-equation-of-state-and-the-barotropic-condition.html), [The One-Dimensional Reverse Map: Characteristics, KdV, Hopf](the-one-dimensional-reverse-map-characteristics-kdv-hopf.html).
-- [The Lagrangian and Hamiltonian Mechanics](the-lagrangian-and-hamiltonian-mechanics.html), for Rayleigh's device; [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for the continuation that turns the wave equation into the heat equation.
+- [The Non-Quantum Limit of the Action Principle and the Lagrangian](the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html), for Rayleigh's device; [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for the continuation that turns the wave equation into the heat equation.

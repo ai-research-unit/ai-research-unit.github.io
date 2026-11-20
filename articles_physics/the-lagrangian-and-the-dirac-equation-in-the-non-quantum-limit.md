@@ -32,7 +32,7 @@ with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direct
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\hbar\theta_{\mathrm{pha}}$; $k_m=mc/\hbar$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
 
-## The Action and the One-Form
+## The Action in the Non-Quantum Limit: The One-Form
 
 **The action, with its three ingredients separated.**
 
@@ -82,7 +82,7 @@ which are the momenta and the eight first-order equations of the previous sectio
 
 **Where the mass shell sits.** The mass term is inside $U$, so its variation contributes to $\partial_yU$ and to nothing else: the mass fixes the direction and does not enter the one-form. That is the content of the following section, and the variation is what makes the separation visible.
 
-## The Mass Term and the Fixed Direction
+## The Structural Consequence: The Mass Term and the Fixed Direction
 
 **The mass bilinear vanishes on the chirality parts unless a direction is inserted.** With $\tilde\Xi_L=\tilde\Xi\Pi_+$ and $\tilde\Xi_R=\tilde\Xi\Pi_-$,
 
@@ -106,7 +106,7 @@ using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. **N
 
 **The energy.** The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot q$ cancels the kinetic term. So the energy of a configuration is the mass term evaluated on it, $U=\hbar c\,k_m\varrho^{2}\mathcal V$, and the equation of motion is the statement that the flow is tangent to the level surfaces of $U$ in the symplectic form $\Omega$. The energy carries the mass and the density does not, which is the limit's version of the split the element article makes.
 
-## The Error, and Why There Is None
+## The Limit: The Truncation and Its Error
 
 **There is no truncation error because there is no truncation.** The limit removed nothing, so the difference between the parent action and the limit's action is zero, and the difference between the parent's equations and the limit's is zero as well. **The error of this family's non-quantum limit is identically zero**, and the article says so in one sentence rather than in a section — except that the sentence needs a section, because a zero error is easy to misread as a strong result.
 
@@ -118,7 +118,7 @@ using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. **N
 
 **Consequence for the family's status.** A limit that approximates nothing and deletes nothing cannot be used to argue that the theory is "almost classical" at large scales. **The Dirac family's classical appearance is a property of its order count from the start**, and the limit merely names it.
 
-## What the Limit Reads
+## The Limit: What Survives
 
 **Nothing is deleted, so the limit is an assignment.** The two statements it makes are:
 
@@ -134,7 +134,7 @@ using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. **N
 
 **The third row is order two and it is not a term of the action.** The products of two flow equations are what the iteration produces, and they are the amplitude's curvature combined with the frame's. **A variational principle on a first-order action cannot produce a second-derivative term**, and that is the structural reason this family has no quantum potential of the Klein–Gordon type.
 
-## What the Variational Route Adds
+## What the Principle Adds and What It Relabels: By the Variational Route
 
 **Three things, and the first is the constraint reading.**
 

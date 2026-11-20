@@ -32,7 +32,7 @@ with the connection in the material sector $\mathbb{B}_\Phi$ and with central sc
 
 **The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $k_m=mc/\hbar$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.
 
-## The Coupled Action
+## The Action in Element Form, Coupled
 
 The free action of the parent article is
 
@@ -105,7 +105,7 @@ the covariant wave equation with the curvature term. The coupling therefore chan
 
 **What the article looks at.** The orbit, because the symmetry is exact, and the constraints only to the extent that they fix the count. That is the division the family uses, and the polar companion is where the count is carried out in full.
 
-## Why the Coupling Is Forced
+## The Structural Consequence: Why the Coupling Is Forced
 
 The action's free part is invariant under a *constant* central phase. Localizing the phase destroys the invariance, and the repair is unique.
 
@@ -134,7 +134,7 @@ and the two brackets cancel for every field exactly when $\delta\tilde A_\Phi=-\
 
 **What it does not settle.** The repair is unique *within the abelian class* and up to terms of higher order in the field strength. A term built from $\tilde F$ alone is invariant and cannot be excluded by this argument; it is the gauge field's own action and belongs to the Maxwell article, not to the matter action. The argument also says nothing about non-abelian connections, where $\tilde A_\Phi$ does not commute with the field and the two terms above do not separate.
 
-## The Current: What the Action Produces and What It Does Not
+## The Noether Currents: What the Action Produces and What It Does Not
 
 The local phase is a symmetry of the coupled action, so it has a Noether current. This section states the current, states what the algebra does *not* hand over with it, and states the repair.
 
@@ -216,7 +216,7 @@ with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary poin
 
 **The loop phase and the flux.** The current's conservation on a closed surface is one consequence of the phase symmetry; the phase accumulated along a closed loop at fixed material time is another, and it is a property of the action's invariance rather than of the equations. In the constant setting the loop's phase is the holonomy $\exp(i\frac{ϙ}{\hbar}\oint\tilde A_\Phi\cdot\mathrm{d}l)$, and single-valuedness of the field requires the holonomy to be trivial, which is the flux quantum $\Phi=2\pi n\hbar/ϙ$ in the standard reading. **The framework's Wilson-loop construction reads the loop differently**, as the norm of a unit element rather than as the trace of a phase, and the two readings have not been reconciled in the corpus. The article records the tension rather than resolving it.
 
-## What the Variational Principle Adds and What It Relabels
+## What the Principle Adds and What It Relabels
 
 **Adds.**
 

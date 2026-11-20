@@ -37,7 +37,7 @@ summed over the four slots with the metric signs of the corpus's convention. The
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ central; $^{*}$ Hermitian conjugation, $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ the coefficient of $e_t$, ; the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The word's parameters are $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\hat u_{\mathrm r}$, and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the material time is $r'_t=c\,t'$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$.
 
-## The Action in the Chart
+## The Action in Polar Variables
 
 **The free bracket's four types.** The free polar article writes the kinetic term as $\mathrm{Sc}\big[\tilde\Xi^{*}\tilde\Xi\,\mathcal A_\mu\mathcal A_\mu^{*}\big]$ with $\mathcal A_\mu$ the sum of four objects: a real central scale rate, a central imaginary phase rate, a Hermitian vector conjugated by the rotor, and a real vector part. The frame density $\tilde\Xi^{*}\tilde\Xi=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ weights the whole thing, and the resulting metric carries $\cosh\theta_{\mathrm{rpd}}$ on the four squares and $\sinh\theta_{\mathrm{rpd}}$ on the two cross terms.
 
@@ -88,7 +88,7 @@ $$
 
 so the interaction is a term linear in the potential multiplying the free phase rate, plus a term quadratic in the potential with no phase. The first is the one a "current times potential" presentation writes; the second is the one it does not, and it is the term that makes the action invariant under $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Lambda/\hbar$, $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$. The chart therefore shows the coupling's second order in the potential as a separate object, and the article records this as its third result.
 
-## The Central Field
+## The Action in Polar Variables: The Central Field
 
 **The action.** With $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ and $\rho_{\mathrm{num}}=\varrho^{2}$,
 
@@ -125,7 +125,7 @@ $$
 
 up to the normalisation of the two terms, and it is invertible for $\rho_{\mathrm{num}}>0$: the connection contributes no $\partial_{r'_t}$-dependent term beyond the shift, so the rank is the free rank and the Legendre transform is the free one. This is the precise sense in which the coupling is not a constraint: it changes where the velocities are measured from, not which velocities the action contains.
 
-## The General Element
+## The Action in Polar Variables: The General Element
 
 **The bracket's shift in the eight-parameter chart.** With $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$ and $\mathcal A_\mu$ the free bracket, the action is the free polar article's
 
@@ -141,7 +141,7 @@ with the metric unchanged. The metric is unchanged because the metric is a prope
 
 **The Legendre transform.** The kinetic matrix in the eight velocities is the free one plus the connection's contribution, and the connection's contribution to the velocities' dependence is a shift: the $\partial_{r'_t}\theta_{\mathrm{pha}}$ terms become $\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_t$ and the $\partial_\eta\theta_{\mathrm{pha}}$ terms $\partial_\eta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\eta$. A shift of a velocity does not change the matrix of second derivatives, so the free article's invertibility and its "regular Legendre transform" statement survive verbatim. The only new second-derivative structure is the $\rho_{\mathrm{chg}}^{2}A^{2}$ term, which has no velocity and contributes to the potential alone.
 
-## The Euler–Lagrange Equations
+## The Variation: The Euler–Lagrange Equations
 
 **Two variations of one functional.** Varying the chart's action with respect to $\varrho$ and with respect to $\theta_{\mathrm{pha}}$ gives the two equations of the central field; varying the frame's angles gives the four equations of the general element; varying the connection gives the source equation. All of them are the element article's system read in the chart, because the word is a bijection on the invertibles and the Jacobian of the substitution is invertible wherever $\varrho>0$.
 
@@ -183,7 +183,7 @@ The four objects are the four brackets. They are not four new fields: each is a 
 
 **What this article's field does with them.** The coupled Klein–Gordon connection enters the logarithmic derivative as one additive term, $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$, and its two slots have two different types: real in the temporal slot, central imaginary in the spatial ones. It therefore joins the scale bracket and the phase bracket and reaches neither the boost nor the rotor. **That single type fact is the reason the coupling shifts the phase's gradient and nothing else**, and why the frame density and the amplitude–rapidity block are the free article's, unchanged.
 
-## The Charge, Its Sign and Its Gauge Invariance
+## The Noether Currents: The Charge, Its Sign and Its Gauge Invariance
 
 **The charge is the phase rate times the density.** The temporal component of the current in the chart is
 
@@ -199,7 +199,7 @@ with $E=-\hbar c\,\partial_{r'_t}\theta_{\mathrm{pha}}$, which is the free polar
 
 **What the pairing of the two branches gives.** Complex conjugation sends $\theta_{\mathrm{pha}}\to-\theta_{\mathrm{pha}}$ and leaves the connection alone; the charge changes sign and the action is unchanged, because the action is even in $\partial\theta$ except for the linear interaction term, and that term changes sign with the phase. So the conjugate branch is the antiparticle's chart, with the opposite charge and the same mass shell, and the potential's contribution to the charge reverses with it. The statement is the free article's, and the coupling's only addition is that the potential enters the charge.
 
-## The Vorticity and the Flux
+## The Noether Currents: The Vorticity and the Flux
 
 **The action's statement.** The chart's current is $\vec j_{\mathrm{mech}}=\frac{\rho_{\mathrm{num}}}{m}(\vec\nabla_\Phi S_{\tilde\Xi}-q\vec A)$, and its vorticity is the curl of a gradient plus the curl of the potential. Varying the action in the phase gives the transport equation, and the transport equation is the statement that this current is divergenceless; so the action knows the current and not its curl. The curl is a consequence of the current's definition and not of the equation:
 
@@ -217,7 +217,7 @@ with $n$ the winding of the phase and $\Phi_B$ the flux enclosed. So the mechani
 
 **Why the action does not see it.** A circulation is a property of a closed loop and the action is a functional of functions; the loop's statement is a consequence of the phase's being single valued, which the action's variations do not test. The article states the consequence and records that it is not an equation of motion: it is a boundary condition on the phase's winding, and the free article's nodal-set structure is where it is analysed.
 
-## What the Polar Principle Adds and What It Does Not
+## What the Principle Adds and What It Relabels: In the Polar Chart
 
 **Adds.**
 

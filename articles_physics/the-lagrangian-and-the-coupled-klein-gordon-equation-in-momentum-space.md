@@ -32,7 +32,7 @@ $$
 
 **The denials are the main article's, restated once.** The transform does not exchange sectors; a symbol exists only at constant coefficients; and a Legendre transform between a field and its conjugate momentum is not a Fourier transform, so the parent's four canonical momenta are not wave numbers and no display below reads them as one.
 
-## The Action's Operator
+## The Action in Momentum Space: The Action's Operator
 
 **The action's Euler–Lagrange operator is the squared one, and the measurement is decisive.** For the temporal slot with a constant $c_t$ the functional is $S_t=\int\bigl\lvert(\partial_{R_t}+c_t)\Xi\bigr\rvert^{2}$, and its variation is computed twice: once by the analytic reading $\delta S_t/\delta\Xi^{*}=(\partial_{R_t}+c_t)^{2}\Xi$, and once by differencing the functional itself at $\Xi\pm h\eta$ with $h=10^{-5}$ and a two-mode probe $\eta$. The linear term of the difference is $96.374889164$ and the analytic prediction $2\,\mathrm{Re}\langle(\partial_{R_t}+c_t)^{2}\Xi,\eta\rangle$ is $96.374889162$: a ratio of $1.000000000020$.
 
@@ -49,13 +49,13 @@ $$
 
 **The correction is an attribution and not an equation.** Nothing in the parent's displays is wrong as a display. $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ is a perfectly good operator and the article of §*The Ordering Ambiguity Is the Cross Term* identifies its symbol. What is wrong is the sentence that attaches it to the action. **The corpus's action and the corpus's equation are one operator**, and the third object is the subject of the next section.
 
-## The Source's Symbol
+## The Action in Momentum Space: The Source's Symbol
 
 **The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform.** Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{ϙ}{\hbar}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. **The source's symbol is therefore the transform of the current, and it is a convolution in every other case.**
 
 **The constant setting is the one the article uses and the one the parent uses.** There the current's transform is a coefficient at one wave number, the connection's equation is algebraic, and the fork of §*The Ordering Ambiguity Is the Cross Term* is the fork between two polynomials in the same variable. **Nothing in the source's structure decides which polynomial is the operator's**, and the article states this rather than reading a decision into the variation.
 
-## The Ordering Ambiguity Is the Cross Term
+## The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term
 
 **The paired form is the product of the two charge-conjugate first-order operators.** Writing the two factors as $(\partial_{R_t}-\bar c_t)$ and $(\partial_{R_t}+c_t)$, their product is $\partial^{2}_{R_t}+\partial_{R_t}(c_t-\bar c_t)-\lvert c_t\rvert^{2}$, and for a real $c_t$ the middle term vanishes and the product is $\partial^{2}-c_t^{2}$. **The squared form is the product of one factor with itself**, $(\partial_{R_t}+c_t)^{2}=\partial^{2}+2c_t\partial+c_t^{2}$, and the two differ by
 
@@ -71,7 +71,7 @@ which is the corpus's own identity at the temporal slot and which is first order
 
 **Nothing in the parity lemma distinguishes the two readings.** Both are real in the corpus's writing, because both are built from real coefficients there. The lemma decides reality; the ordering decides the power of the response. **The article keeps them apart because they are decided by different arguments.**
 
-## The Charge Ambiguity Translates the Pair
+## The Action in Momentum Space: The Charge Ambiguity Translates the Pair
 
 **Flipping the charge translates the roots and leaves their separation.** The squared shell is $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$; at $k_m=0.7$ and $\lvert\vec\kappa\rvert=3$ its roots with $c_t=-0.31$ are $+2.770584$ and $-3.390584$, and with $c_t=+0.31$ they are $+3.390584$ and $-2.770584$. **The separation is $6.161169$ in both cases and the pair translates by $-2c_t=0.62$**; the symbol at a fixed wave number moves from $10.956100$ to $7.236100$.
 
@@ -101,7 +101,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## Reality of the Action Is Weaker Than Reality of the Symbol
+## The Reality of the Action: Weaker Than Reality of the Symbol
 
 **The action is real for every connection, and that is an identity rather than a measurement.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. **No choice of connection can make the action complex**, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
 
@@ -111,7 +111,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **So the variational principle's role here is narrower than it looks.** It supplies the operator, and it does not supply the criterion. The criterion is the parity lemma, which is an observation about the square of a complex number and needs no action at all.
 
-## They Are One Question
+## The Structural Consequence: They Are One Question
 
 **The one criterion that survives all the choices is the reality of the symbol.** Both readings, both signs of the charge, and both orderings give real symbols in the corpus's anti-Hermitian writing, and none of them does in a writing with a real temporal potential. **So the invariant is the parity condition**, and the variational principle's contribution is to say that it is the condition under which the operator the action produces is real-coefficient.
 
@@ -163,7 +163,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the section adds.** It states where the two settings come from, and it states that they come from the form and not from the coupling. **The reading's two branches are older than the connection**, and the coupled article's contribution is that the connection moves them without splitting them.
 
-## Limits
+## The Limits and the Truncation’s Error
 
 **The constant-coefficient licence bounds the article.** The Euler–Lagrange operator of §*The Action's Operator* is read at constant $c_t$; a varying potential makes the functional's variation a differential operator of higher order in the coefficient and the identification with a symbol fails there, as the main article's ladder records.
 
@@ -171,7 +171,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **The self-adjointness argument is not used.** Both readings are self-adjoint in the corpus's writing, so the standard criterion that a real action's operator be self-adjoint does not separate them. The article derives the separation from the cross term instead, and says so because the weaker argument is tempting.
 
-## What the Transform Adds and What It Relabels
+## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
 

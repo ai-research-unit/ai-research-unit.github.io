@@ -129,7 +129,7 @@ a form the companion article uses, because there the parameters are real and the
 
 **Why the kinetic term is antisymmetrized.** The symmetric combination $\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)$ is complex. Its real part is a total derivative, $\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)=\tfrac14\partial\rho$ with $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\,\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, and its imaginary part is the whole of the kinetic Lagrangian. The antisymmetrization keeps the imaginary part and discards the total derivative, which is the same device as in the standard action $\int\bigl[(i\hbar/2)(\psi^{*}\dot\psi-\dot\psi^{*}\psi)-\psi^{*}\hat H\psi\bigr]$. The companion uses the same identity once, in its kinetic term, and the identity is not repeated there.
 
-## The Two Writings from the Action
+## The Variation: The Two Writings from the Action
 
 The parent's two writings are not two actions. There is one real functional, and the two writings are two readings of it.
 
@@ -261,7 +261,7 @@ The parent's two settings are different equations, and the variational principle
 
 **No transfer.** A statement about the constant setting is not a statement about the operator setting. The conserved energy of the previous section is a number in the first and a density in the second. The closed-form propagator of the first has no counterpart in the second. The variational principle is stated for the constant setting here; the operator setting's action is the standard field-theoretic one with a central operator, and its working out belongs to *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* and to the companion article's Madelung section.
 
-## What the Variational Principle Adds and What It Relabels
+## What the Principle Adds and What It Relabels
 
 **Adds.** A compact statement of the equation, one action and one variation. The two currents in one derivation. The variational reading of the two writings: one functional, and the choice of which factor carries the central $i$. And the variational status of the two settings, which the action makes explicit rather than implicit.
 
@@ -327,7 +327,7 @@ The article adds a compact statement, one derivation of the two currents, and a 
 - [The Lagrangian and the Schrödinger Equation in Polar Variables](the-lagrangian-and-the-schrodinger-equation-in-polar-variables.html), the companion, where the parameters of the word are the variables.
 - [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the stress tensor named in the fourth section.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the general statement of the construction used twice here.
-- [The Lagrangian and Hamiltonian Mechanics](the-lagrangian-and-hamiltonian-mechanics.html), for the action and the Legendre transform in the non-quantum setting.
+- [The Non-Quantum Limit of the Action Principle and the Lagrangian](the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html), for the action and the Legendre transform in the non-quantum setting.
 - [The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case](the-hydrogen-atom-in-biquaternionic-form-the-non-relativistic-case.html), for the operator setting.
 - [The Group of Invertibles, the Cone and the Orders](the-group-of-invertibles-the-cone-and-the-orders.html), for the anti-Hermiticity that the flow's unitarity is.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the standard action and the standard variation.

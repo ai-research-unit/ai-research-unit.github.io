@@ -69,7 +69,7 @@ so that $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)=\tfrac12(\epsilon\ve
 
 **Why the second-order form and not a first-order one.** The Proca equation is second order in the potential and first order in the field strength, and the action above is the second-order form. A first-order form, with $\tilde F$ an independent variable, exists and is the standard Palatini-type action, but it adds a variable and a pair of equations that are algebraically equivalent to the definition of $\tilde F$. The corpus uses the second-order form throughout, and this article does too: the polar companion's count of parameters is a count for the second-order form.
 
-## The Equation from the Action
+## The Variation: The Equation from the Action
 
 **The variation.** Treat $\tilde A_\Phi$ as the variable and vary over the four real components of $\mathbb{B}_\Phi$: the scalar potential $a'_t$ and the three components of $\vec A$. The field strength is linear in the potential, so
 
@@ -93,7 +93,7 @@ and it is four real equations, one per component. The count is the count of the 
 
 **The antisymmetry is what the boundary term leaves behind.** The integration by parts is legitimate because $\tilde F$ is built from the antisymmetric part of $(\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi$: the symmetric part is the scalar $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$, which is removed by the projection. That removal is the algebraic statement of the antisymmetry of $F_{\mu\nu}$, and it is why the field term depends on the potential only through the curl.
 
-## The Lorenz Condition Is a Consequence
+## The Constraints the Action Imposes: The Lorenz Condition Is a Consequence
 
 **The divergence argument.** Apply the conjugate gradient to the equation and take the scalar part. The left side is $\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde F)$, which vanishes identically for a pure-vector $\tilde F$ because the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi$ applied to a vector is a total divergence of an antisymmetric object; the right side is $k_m^2\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)=k_m^2S$. So
 
@@ -126,7 +126,7 @@ and neither of the last two terms vanishes for a general $\Gamma$. So the action
 
 **The hand check.** Put $\tilde A_\Phi=a'_t e_t$ alone, spatially constant. Then $\tilde F=0$ and the equation reads $k_m^{2}a'_t e_t=0$, so $a'_t=0$: a purely temporal, constant potential is not a solution of the massive theory, though it is a pure gauge configuration of the massless one. The mass term is what removes it, and the count above is that removal stated in general.
 
-## No Second Current
+## The Noether Currents: No Second Current
 
 **The phase rotation is not a symmetry.** For a complex field the transformation $\tilde\Xi\to e^{i\alpha}\tilde\Xi$ leaves the kinetic term invariant and produces the conserved density of the Schrödinger and Dirac articles. For the Proca field it is not defined: $e^{i\alpha}\tilde A_\Phi$ leaves $\mathbb{B}_\Phi$ for $\alpha\notin\pi\mathbb{Z}$, because $i\tilde A_\Phi$ is Hermitian and not anti-Hermitian. The carrier has no central phase to rotate, and the action therefore has no continuous internal symmetry at all.
 
@@ -172,7 +172,7 @@ symmetric term by term: the improvement was needed to symmetrise the canonical f
 
 **The spin part.** The angular momentum current is $M_{\mu\nu\lambda}=R_\nu T_{\mu\lambda}-R_\lambda T_{\mu\nu}+\Sigma_{\mu\nu\lambda}$ with $\Sigma$ the vector-index part. That $\Sigma$ is the spin-one content of the field, and it is not a separate current with its own conservation law: the orbital and spin parts are separately conserved only after the improvement, and the total is the Noether current. The polar article's frame bracket is the transport of the same object read as a direction.
 
-## Exact Solutions and What They Show
+## Aside: Exact Solutions and What They Show
 
 **Plane waves.** With $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ and $\theta_{\mathrm{pwp}}=k'_t r'_t-\vec k_\Phi\cdot\vec r$, the equation requires the dispersion relation $k'^2_t=\vec k_\Phi^2+k_m^2$ and the Lorenz condition requires the amplitude relation $a'_{t,0}=\vec k_\Phi\cdot\vec A_0/k'_t$. Three amplitude directions survive at each wavevector: two transverse and one longitudinal. These are the parent's modes, and the action adds only that they extremize it.
 
@@ -186,7 +186,7 @@ Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nabla\psi)-\v
 
 **No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $k_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.
 
-## What the Variational Principle Adds and What It Relabels
+## What the Principle Adds and What It Relabels
 
 **Adds.**
 

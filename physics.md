@@ -1206,11 +1206,8 @@
 ## Biquaternion Non Relativistic Non Quantum Approximation
 
 ### Generalities
-<a href="articles_physics/the-lagrangian-and-hamiltonian-mechanics.html">The Lagrangian and Hamiltonian Mechanics</a>
-<!-- level 0 of the variational series: the standard formulation; the biquaternionic configuration; the Legendre transform; phase space as a single biquaternion; the four-Hamiltonian and the exactness of the action one-form, with the relativistic Hamilton-Jacobi equation derived from the mass-shell identity; the Poisson bracket; the action, symmetries and conservation; the formalism that the six variational articles take as given. Non-relativistic in its systems, relativistic in that one section. -->
-
-<a href="articles_physics/the-lagrangian-and-the-non-quantum-limit-the-action-principle.html">The Lagrangian and the Non-Quantum Limit: The Action Principle</a>
-<!-- level 0 of the variational series: the action and its first variation; the second variation and stability; the action as a geodesic principle; the classical limit as stationary phase; the Hamilton–Jacobi equation and the classical phase; the principle that the six variational articles apply. -->
+<a href="articles_physics/the-non-quantum-limit-of-the-action-principle-and-the-lagrangian.html">The Non-Quantum Limit of the Action Principle and the Lagrangian</a>
+<!-- level 0 of the variational series, in one article: the standard formulation and the biquaternionic configuration; the Legendre transform; phase space as a single biquaternion; the four-Hamiltonian and the exactness of the action one-form, with the relativistic Hamilton-Jacobi equation derived from the mass-shell identity; the Poisson bracket; the action, symmetries and conservation; what the formulation does and does not give; the action and its first variation, with the symplectic potential; the second variation and the Jacobi operator; the geodesic principle for a rotor-valued path; the classical limit as stationary phase; the Hamilton–Jacobi equation and the classical phase; no commutator and no state space anywhere. -->
 
 <a href="articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.html">The Symplectic Form and the Biquaternion Norm Cone</a>
 <!-- the standard symplectic structure; the Hermitian pairing of the phase-space biquaternion; the symplectic potential and the biquaternion two-form; the biquaternion norm and its cone; the coadjoint orbit and the biquaternion-norm level sets; Darboux coordinates and the canonical frame. -->
@@ -2139,32 +2136,3 @@
 
 <a href="articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a>
 <!-- the source and its principal fibre bundle $P(G,M)$ with structural group $G=[[A,B],[-B,A]]$; the three invariant tensors $J$, $g$, $\sigma_{\lambda\mu}$; the dictionary translation of its $2\times2$ matrix $Q=a_0\sigma_0-i\boldsymbol\sigma\!\cdot\!\mathbf a$ to the biquaternion $\tilde Q=a_0+\mathbf a\!\cdot\!\mathbf e$ with $a_0=p_0/m$, $\mathbf a=i\mathbf p/m$, so that its unit-norm sum $a_0^2+a_1^2+a_2^2+a_3^2=1$ and its relativistic relation $p_0^2-\mathbf p^2=m^2$ are one identity and its object is the corpus's Hermitian biquaternion of unit norm, in the informational sector; what its $G^+G=I_4$ means, namely the quaternionic conjugation and not the matrix adjoint, and why the block assembly is the regular representation of the pair and not the realification of $Q$; the Majorana transformation and its verified effect, that $G'=UGU^{-1}$ is real and symmetric because the transformed generators are purely imaginary while the $a_k$ are; the sign lost in the printed $\gamma_0$ of Eq. (28) and the two slips in the printed $G'$, the wrong sign in the $(\sigma_3a_1\pm\sigma_1a_3)$ combination and the $G'^{\mathsf T}G'=I_4$ that does not reproduce; the $\mathrm{SL}(2,\mathbb{R})$ triple and the $(2{+}2)$ inertia, whose coefficient sum $a_0^2+a_1^2-a_2^2+a_3^2=1$ reads $p_0^2-p_1^2+p_2^2-p_3^2=m^2$; the claim that the Majorana representation is tied to the signs and the corpus's mod-eight table; the non-Hermitian momentum as the source's own construction rather than the structural object; the bundle-basis claim and the naturality it must specify; the G-structure, the reduced tangent bundle whose structure group becomes the induced field theory's, the torsion-induced sign and CP, and the incompleteness of Rothstein's theorem; the Clifford-algebra interlude and the bosonic half the corpus lacks; an independent, constructed biquaternionic basis in the material sector, set beside the source's informational-sector one; the source as external evidence that the algebra appears unsought; an external source, recorded and not endorsed. -->
-
-## The Lagrangian Family: The Reading Hubs
-
-<a href="articles_physics/the-lagrangian-family-a-map.html">The Lagrangian Family: A Map of the Forty-Eight Articles</a>
-<!-- the method applied per field; the five readings and the coupled corner; the seventeen-slot schema and its slot-7 test; the completeness table; the boundary in a table, Fock space, creation operators, interacting QFT, Standard Model, quantised gravity and the path integral as a computational framework all absent; the two proposed schema moves and why both fail the test; what the family is for. -->
-
-<a href="articles_physics/the-lagrangian-element-readings.html">The Lagrangian: The Element Readings</a>
-<!-- the eight articles that vary the field as one element; the free parents and the coupled four; what the group does, what it does not claim, and the order to read it in. -->
-
-<a href="articles_physics/the-lagrangian-polar-readings.html">The Lagrangian: The Polar Readings</a>
-<!-- the eight articles that vary the eight parameters of the word; the canonical tables as the group's result; the nonlinearity of the word moved into the kinetic term. -->
-
-<a href="articles_physics/the-lagrangian-momentum-space-readings.html">The Lagrangian: The Momentum-Space Readings</a>
-<!-- the eight articles at one mode; the symbol, the boundary term and the reality conditions; the poles as Green functions' and not Feynman propagators'. -->
-
-<a href="articles_physics/the-lagrangian-non-quantum-limit-readings.html">The Lagrangian: The Non-Quantum Limit Readings</a>
-<!-- the eight articles that truncate the phase's rate inside the action; the masses shell, the one-form, the longitudinal coefficient, the eikonal; the dropped term displayed. -->
-
-<a href="articles_physics/the-lagrangian-fluid-readings.html">The Lagrangian: The Fluid Readings</a>
-<!-- the eight articles in density, phase, velocity and rotor; the canonical tables' fluid readings; the quantum potential as a functional derivative; the indefinite gradient energy of the spin-zero fluid against the spin-one fluid's positivity. -->
-
-<a href="articles_physics/the-lagrangian-coupled-readings.html">The Lagrangian: The Coupled Readings</a>
-<!-- the twelve minimal-coupling articles across the four readings; one derivative replaced and one constant; the identity that joins the matter and field equations; the vorticity as the field strength. -->
-
-<a href="articles_physics/the-lagrangian-beyond-one-particle.html">The Lagrangian: Beyond the One-Particle Fields</a>
-<!-- the eight frontier articles; the classical actions stated exactly and the absences stated in place; three articles whose content is the absence. -->
-
-<a href="articles_physics/the-lagrangian-articles-by-object-four-fields-nine-articles-each.html">The Lagrangian Articles by Object: Four Fields, Nine Articles Each</a>
-<!-- the family read from the object instead of the reading; four lists of nine, the element, polar, momentum, limit and four coupled readings plus one fluid; what the nine make in common and where the four fields differ; the caution that nine readings of one object are not nine objects. -->

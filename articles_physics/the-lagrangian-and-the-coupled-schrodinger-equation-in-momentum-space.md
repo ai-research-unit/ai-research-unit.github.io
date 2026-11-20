@@ -34,7 +34,7 @@ an integral over time of a density that already contains the spatial derivatives
 
 **The mode.** $\tilde\Xi=e^{-i\omega t'}\tilde X$ in the constant setting, and $\tilde\Xi=e^{-i\omega t'+i\vec k_\Phi\cdot\vec r}\tilde X_0$ in the operator setting. The two substitutions differ by the spatial factor, and the difference is what makes the second setting's symbol a function of two arguments.
 
-## The Coupled Action at Fixed Frequency
+## The Action in Momentum Space, Coupled: At Fixed Frequency
 
 **The constant setting.** With $\tilde\Xi=e^{-i\omega t'}\tilde X$ and a constant connection, the density is
 
@@ -81,7 +81,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## Reality Term by Term
+## The Reality of the Action: Term by Term
 
 **The kinetic term.** The antisymmetrised covariant kinetic density is real exactly when the root is anti-Hermitian, by the free article's computation, and the covariant derivative's connection part is central so it does not change the type. **The coupling adds a real number to a real quantity.**
 
@@ -95,7 +95,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **The modulus is preserved by the connection.** $\lvert D_\eta\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. **That invariance is the reason the action's gauge covariance is exact and not up to a total derivative**, and the parent states it once.
 
-## Gauge Invariance of the Symbol, and the Resolution of the Sign
+## The Constraints the Action Imposes: Gauge Invariance of the Symbol
 
 **The two shifts.** Under a gauge transformation $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$, the connection moves as $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so its frequency and wave vector move as
 
@@ -151,7 +151,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## Legendre and the Two Invariant Slopes
+## The Legendre Transform
 
 **The slope in the frequency.** $\partial\sigma_{\mathrm{gco}}/\partial\omega=\hbar$, independent of $\varphi$, of $\vec A$ and of the Hamiltonian. **The connection shifts the arguments and never the slope**, because it does not depend on the frequency.
 
@@ -165,7 +165,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **Why the mixed derivative matters.** A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. **The article's class has none**, and the flatness of the second derivative is the class's mark.
 
-## The Energy Is the Symbol at Zero Frequency
+## The Noether Currents: The Energy Is the Symbol at Zero Frequency
 
 **The constant setting.** The energy on a mode is $E=\mathrm{Sc}\big(\tilde X^{*}\tilde H^{\mathrm{gco}}_\Psi\tilde X\big)$, and the symbol at zero frequency is $\sigma_{\mathrm{gco}}(0)=-\tilde H^{\mathrm{gco}}_\Psi$. So
 
@@ -185,7 +185,7 @@ and the identity is exact by construction. **The sign is the Lagrangian's**: a L
 
 **A check of the sign's consistency.** Composing the identity with the on-shell condition gives $E=0$ on a solution at zero frequency, which is the statement that a zero-frequency solution has zero energy under this normalisation. **The statement is a normalisation and not a physical claim**, and the article states it once.
 
-## Limits
+## The Limits and the Truncation’s Error
 
 **Constant coefficients.** The symbol exists for a constant Hamiltonian and a constant connection. With $\vec A$ linear in space the symbol depends on position through $\vec A$ and the plane-wave reduction fails even for a constant field strength.
 
@@ -193,7 +193,7 @@ and the identity is exact by construction. **The sign is the Lagrangian's**: a L
 
 **One time.** The action is an integral over $t'$, so the transform is in one variable. The four-dimensional transform would put the slope at $\hbar c$ and keep every other statement, and the article does not construct it.
 
-## What the Coupled Version Adds
+## What the Principle Adds and What It Relabels: Under Coupling
 
 **One identity, one sign, one invariance.** The identity is that the coupled symbol is the fixed-frequency coupled action. The sign is $E=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified with zero residual. The invariance is the cancellation of the gauge shift, verified to $8.9\times10^{-16}$.
 

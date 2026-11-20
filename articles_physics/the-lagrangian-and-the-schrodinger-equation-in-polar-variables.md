@@ -55,7 +55,7 @@ so that the potential term of the Lagrangian is $\varrho^{2}V$. Both symbols are
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
-## The Polar Action: The General Element
+## The Action in Polar Variables: The General Element
 
 The substitution is one differentiation, but the order of the factors matters and is the first place an error enters. Since $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$ for a real unit rotor,
 
@@ -203,7 +203,7 @@ The two connections have opposite algebraic types. The rotor's connection $\part
 
 There is no analogous term in the potential because the potential has no velocity: it is the scalar part of a product of two elements and carries no connection at all. The asymmetry between the two halves of the action is therefore not an accident of the calculation: the kinetic term is the only place where a connection can appear, and the word has two connections, one of each type.
 
-## The Polar Action: The Central Field
+## The Action in Polar Variables: The Central Field
 
 Set $\theta_{\mathrm{rpd}}=0$ and let the rotor be a sign, $\tilde u_{\mathrm r}=\varepsilon\,e_t$ with $\varepsilon=\pm1$. Then $\tilde U_{\Psi,\mathrm b}=e_t$, $\vec\Omega=0$, $\cosh\theta_{\mathrm{rpd}}=1$ and $\sinh\theta_{\mathrm{rpd}}=0$, so the kinetic term is $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$ and the potential is $\varrho^{2}h_t$. The action is
 
@@ -225,7 +225,7 @@ whose Euler–Lagrange equations are the continuity equation for $\varrho^{2}$ a
 
 **Why the central case cannot detect the cross term.** On the central field $\sinh\theta_{\mathrm{rpd}}=0$, so the cross term vanishes identically and the action is indistinguishable from the naive one. Every statement about the central field in this section would therefore survive the error of dropping the cross term. That is why the general element must be computed, and why the next section is the article's test.
 
-## The Euler–Lagrange Equations
+## The Variation: The Euler–Lagrange Equations
 
 Write $a=\vec\Omega\cdot\vec u_{\mathrm b}$ and $V$ as above. The Euler–Lagrange equations are four from the coordinates whose momenta vanish and four from the others:
 
@@ -299,7 +299,7 @@ The eight vectors $\partial\tilde\Xi/\partial p_a$ are the columns of the word's
 
 **What was checked.** The kinetic formula was recomputed from the element on a hundred random parameter points and random velocities, and the largest relative deviation was $4.6\times10^{-10}$; the potential formula, on a hundred random points, to $7\times10^{-16}$; the four vanishing momenta, on a hundred random points, to $3\times10^{-10}$; and the residual identity, on a hundred random triples of a point, a velocity and a variation, to $2.3\times10^{-9}$. The five Euler–Lagrange equations above were verified by substitution rather than numerically: the pair for $\dot\theta_{\mathrm{pha}}$ and $a$ is linear and its solution is the one displayed.
 
-## The Relation to the Four Brackets
+## The Parameter Basis and the Four Brackets
 
 There are two bases of the tangent space at $\tilde\Xi$, and the article's last technical point is the relation between them.
 
@@ -326,15 +326,24 @@ and the four brackets are the real scale term, the central imaginary phase term,
 
 *The parameter equations are not the brackets.* They are the same equations in another basis. Saying that they are "the four brackets" would be an error, and the sixth section's ledger keeps the two apart.
 
-**The Jacobian in the central case.** There the map is $\Xi_t=\varrho\,e^{i\theta}$ from $(\varrho,\theta)$ to the two real components of the single complex coefficient, and its Jacobian is
+
+## The Structural Consequence: The Chart Is Diagonal on the Central Field
+
+**The claim in one sentence.** On the central field the general polar action reduces to the central one and the Jacobian of the word is diagonal, with $\det J=\varrho>0$; on the general element the first statement survives by inspection and the second is open.
+
+**The reduction.** With $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_t$ the boost is the identity and $\sinh\theta_{\mathrm{rpd}}=0$, so the cross term that separates the general action from the naive one vanishes identically and the action is $-\hbar\varrho^{2}\dot\theta_{\mathrm{pha}}-\varrho^{2}V$ (§*The Action in Polar Variables: The Central Field*).
+
+**The Jacobian.** There the map is $(\varrho,\theta_{\mathrm{pha}})\mapsto(\varrho\cos\theta_{\mathrm{pha}},\varrho\sin\theta_{\mathrm{pha}})$ from the two parameters to the two real components of the single complex coefficient, and its Jacobian is
 
 $$
-J=\begin{pmatrix}\cos\theta & -\varrho\sin\theta\\ \sin\theta & \varrho\cos\theta\end{pmatrix},
+J=\begin{pmatrix}\cos\theta_{\mathrm{pha}} & -\varrho\sin\theta_{\mathrm{pha}}\\ \sin\theta_{\mathrm{pha}} & \varrho\cos\theta_{\mathrm{pha}}\end{pmatrix},
 \qquad
 \det J=\varrho>0,
 $$
 
-a rotation composed with a dilation, invertible everywhere except at $\varrho=0$ which is outside the domain. The two parameter equations are the conservation of $\varrho^{2}$ and the phase rate, and they are the same two numbers as the two brackets $(\dot \varrho/\varrho,\dot\theta)$ of the same field. The general-element Jacobian is not computed here, and the article's open questions say so.
+a rotation composed with a dilation, invertible everywhere except at $\varrho=0$, which the parameter domain excludes. The two parameter equations are the conservation of $\varrho^{2}$ and the phase rate, and they are the same two numbers as the two brackets $(\dot\varrho/\varrho,\dot\theta_{\mathrm{pha}})$ of the same field. That is what "the chart is diagonal here" means: one parameter per bracket, and no mixing.
+
+**What the claim does not say.** A diagonal Jacobian on one subclass is not a general statement, and the article does not make one. The general-element Jacobian is not computed, and §*Open Questions* records it as the third open question. The value of the claim is that it separates what is proved from what is inherited: exactness on the central field, an open computation elsewhere.
 
 ## The Noether Currents: Density and Energy
 
@@ -358,7 +367,7 @@ The conserved quantity is $N$, the number density, and the minus sign is the con
 
 **What the chart does not add.** No new current and no new conservation law. The phase current is the parent's density, the energy is the parent's Hamiltonian, and the chart's contribution is that both are functions of the density and the frame rather than of the field. That is the honest ledger, and it is the reason the article is short.
 
-## What the Polar Variational Principle Adds and What It Does Not
+## What the Principle Adds and What It Relabels: In the Polar Chart
 
 **Adds.** A biquaternionic derivation of Madelung's variational principle, which is standard as a variational principle and new only in the algebra's notation. The exact polar Lagrangian of the general element, with the metric factor $\cosh\theta_{\mathrm{rpd}}$ and the rotor–boost cross term. The statement that four of the eight momenta vanish identically, and the identification of the four that do not. And the equivalence proof: the eight parameter equations hold exactly when the equation does, and the flow is their solution.
 

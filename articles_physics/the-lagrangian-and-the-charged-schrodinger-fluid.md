@@ -34,7 +34,7 @@ $$
 
 **The action has no external potential and needs none.** In the free article $V$ stood for a potential given from outside; here the potentials are the coupling's own and the term $\rho_{\mathrm{num}}ϙ\varphi$ is the potential energy, $-\rho_{\mathrm{num}}q\varphi$ with $q=-ϙ$. A second external potential would be a second, unrelated coupling, and the article does not add one.
 
-## The Three Variations
+## The Variation: Three of Them
 
 **Varying the phase gives continuity, and the current is the kinetic one.** $\mathcal L_{\mathrm{fl}}$ depends on $S$ through $\partial_{t'}S$ and $\vec\nabla_\Phi S$, and $\partial\mathcal L_{\mathrm{fl}}/\partial(\vec\nabla_\Phi S)=-\rho_{\mathrm{num}}\vec\pi/m$, so
 
@@ -70,7 +70,7 @@ which is the block's display and, with $q=-ϙ$, the standard force on a charge $
 
 **The third variation is absent because there is no third field.** The velocity is $\vec\pi/m$, a function of the phase and the potential. Promoting it to a field would add a multiplier equal to the momentum density, exactly as in the free companion, and the constraint it enforces would be $\vec v=\vec\pi/m$ with $\vec\pi$ now carrying $\vec A$. Nothing is gained, and the rotational case does not need the promotion, for the reason the next section gives.
 
-## Gauge Invariance, Term by Term
+## The Constraints the Action Imposes: Gauge Invariance, Term by Term
 
 **The density is invariant and not merely invariant up to a divergence.** Under $S\mapsto S+ϙ\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$,
 
@@ -84,7 +84,7 @@ and under $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ the combination $\vec\nabl
 
 **The canonical energy is gauge dependent and the fluid's energy is not.** The Legendre transform of $\mathcal L_{\mathrm{fl}}$ in $\dot S$ gives $\rho_{\mathrm{num}}\vec\pi^{2}/2m+\mathcal E_{\mathrm{grad}}-\rho_{\mathrm{num}}ϙ\varphi$, which moves under a gauge transformation; the quantity $\mathcal E$ of the energy equation does not. This is the standard situation for a charged field, and it is worth stating because it limits what the article may call the fluid's energy: **$\mathcal E$ is the kinetic energy and it is gauge invariant; the canonical energy is the matter action's and only the sum with the field's energy is physical.** No thermodynamics is intended here, and the third category's local thermal state is a different object.
 
-## The Coupling Supplies the Clebsch Structure
+## The Structural Consequence: The Coupling Supplies the Clebsch Structure
 
 **A rotational fluid needs a second representation of its velocity, and the connection is one.** The Clebsch form of a velocity with rank-two vorticity is $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, with the pair carrying the curl. Here
 
@@ -116,7 +116,7 @@ with $q$ the charge. The velocity is the mechanical one, and that is the whole o
 
 **The sign.** The sign of the charge is the sign of $q$, and the density remains positive. The two are independent: a negative charge with a positive density is a negative temporal component, and the article's gauge-invariance section is what makes the pair consistent under a gauge transformation.
 
-## What the Fluid Variational Principle Adds and Does Not Add
+## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The coupling as one substitution in one object, the four-derivative of the phase, rather than as three separate amendments to three equations. The gauge invariance as an exact property of the density, with the reason each term is separately invariant. The sign of the Lorentz force fixed once, at the potential energy's term. The Clebsch structure identified as the connection, which explains the rank and explains why the pair is free. And the quantum sector visible as the one term the connection cannot reach.
 
@@ -124,7 +124,7 @@ with $q$ the charge. The velocity is the mechanical one, and that is the whole o
 
 **The one thing it states that the block does not.** The block's charged article notes that the coupling adds no fourth datum and adds a redundancy. The action states the redundancy as the invariance of the density, and it lets the count be read: four terms, two of them gauge invariant only in pairs, one of them not gauge dependent at all, and one of them — the potential energy — whose partner is the phase's time derivative. **The count of independent gauge-invariant combinations is two**, $\mathcal E$ and $\vec\pi$, and they are the two the word's phase and boost would have supplied at the rung above.
 
-## What the Fluid Adds That the Element and the Limit Do Not
+## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **The coupling becomes a modification of the fluid's own velocity.** In the element reading the connection enters the covariant bracket; in the fluid reading, the corresponding statement is that **the velocity that carries the density is not the canonical velocity but the gauge-shifted one**. The minimal substitution is then not a recipe but a description: the fluid moves in the field the particle feels, not in the potential the chart names.
 

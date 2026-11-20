@@ -1,6 +1,6 @@
 # __The Lagrangian and the Dirac Equation in Momentum Space__
 
-**Declared omissions.** The action's only constraint is the first-order structure that the symbol's reality already carries, so slot 6 is not separated. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The action's only constraint is the first-order structure that the symbol's reality already carries, so slot 6 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ $$
 
 with $k_m=mc/\hbar$, the two parts $\tilde\Xi_L$ and $\tilde\Xi_R$ and the Hermitian pairing $\mathrm{Sc}(\cdot^{*}\cdot)$. The two parts are not values; the parent's warning applies unchanged, and no display below splits a value.
 
-## The Momentum-Space Action
+## The Action in Momentum Space
 
 **The transform of the action replaces each derivative by a multiplier and each integration by parts by nothing.** The action becomes
 
@@ -70,7 +70,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Real Part Is the Hermiticity of the Symbol
+## The Reality of the Action: The Real Part Is the Hermiticity of the Symbol
 
 **In position space the real part is a statement about the adjoint.** The parent's derivation shows that each kinetic density is real up to a divergence, that the divergence integrates away, and that the imaginary part of the bracket is therefore a surface term. One sentence of it is worth quoting: the $i$ inside the material time is what makes the temporal kinetic term self-adjoint without disturbing the spatial ones.
 
@@ -87,7 +87,7 @@ because $i\tilde K_\Phi$ is Hermitian: $\mathrm{Sc}(\tilde A^{*}H\tilde A)$ is r
 
 **A reader should not conclude that the real part was a decoration.** Without it the position-space functional is not real, and the variation is not the pair; the parent shows both. The claim here is narrower: the real part's work is done by the symbol's Hermiticity once the transform is taken, so the momentum-space action needs no boundary argument and no surface term.
 
-## Zero and Pole Are One Object
+## Zero, Pole and the On-Shell Action: Zero and Pole Are One Object
 
 **The variational output is the zero.** The pair's compatibility condition is $(k^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions of the equation of motion are supported exactly where the central scalar vanishes. The variational principle's content in momentum space is therefore: on the shell, any amplitude solves the pair; off it, none does.
 
@@ -97,7 +97,19 @@ because $i\tilde K_\Phi$ is Hermitian: $\mathrm{Sc}(\tilde A^{*}H\tilde A)$ is r
 
 **This is the precise sense in which the parent's third open question is closed.** The parent asked for the path integral and did not attempt it. The answer attempted here is not the integral; it is the observation that the two objects the parent separated — the extremum's object and the sum over configurations — meet in one momentum-space function, one at its zero and the other at its pole. **The construction of the sum is the companion articles' work, and the relation is the reason the two articles describe one theory.**
 
-## The Second Variation Is One Central Scalar
+## The Structural Consequence: The Three Objects Are One Number
+
+**The claim.** The zero of the mode action, the pole of the free kernel and the residue that normalises that pole are three readings of one central scalar, and none of them is an independent input. **An article that fixed the shell from the equation and the normalisation from a commutator would be importing one number it already has**, and this reading does not need the import.
+
+**Why one number is enough.** The second variation at a mode is the central scalar $N(\tilde K_\Phi)=k^{2}-k_m^{2}$ of *The Second Variation Is One Central Scalar*. The variational statement is $N=0$; a Gaussian sum over the mode's amplitude returns a power of $N$; the kernel's residue at the pole is therefore fixed by the same $N$, up to the numerator the companion writes. **Zero, pole and residue are one function read at three places**, and the centrality is what makes the third follow from the first two.
+
+**What the centrality buys, and what it would cost to lose it.** A Hessian on the algebra is normally an element, so the three objects would sit on different footings and the normalisation would be a free choice. Here the Hessian is a number, so the choice is not free. **That is the precise content of the article's claim, and it is a statement about the algebra and not about the sum.**
+
+**What it does not claim.** It does not evaluate the integral, compute a residue, or promote a bracket: the free normalisation is read, and the promotion of the bracket to a commutator remains the next category's step. It does not extend to an interacting mode, where the Hessian is no longer one number and the three objects separate.
+
+**What it corrects.** *Zero and Pole Are One Object* states that the two are one function; this section states the consequence the article owns, that the third object is not a third assumption. **A reader who takes the normalisation as an input has added a postulate the action did not need.**
+
+## The Second Variation: One Central Scalar
 
 **Compose the two members of the pair and the operator's square is a number.** In momentum space the pair is
 
@@ -159,7 +171,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **One caution.** On shell the form vanishes, so the transform of the on-shell form is zero. **The transform must be taken before the equation is imposed**, and the article says so once, because the opposite order gives a trivial answer that looks like a contradiction.
 
-## Limits
+## The Limits and the Truncation’s Error
 
 **Constant coefficients.** The momentum-space action is a family of quadratic forms only where the symbol is constant. The mass is constant, so the free action transforms exactly and every display above is exact. With a potential the symbol depends on the position, the transform of the action is a convolution, the Hessian is an operator again, and the central-scalar statement stops. *The Lagrangian and the Coupled Dirac Equation* and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* are where that case is treated, and nothing here anticipates them.
 
@@ -176,7 +188,7 @@ checked to $3.9\times10^{-16}$ over five momenta. On $k_t'=1$, $\vec k_\Phi=(0.6
 
 **The denial, once more.** The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equations on elements, and the centrality of the second variation is a statement about one coefficient's behaviour. No sector flip occurs at any step.
 
-## What the Transform Adds and What It Relabels
+## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
 

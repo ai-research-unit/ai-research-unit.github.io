@@ -1,6 +1,6 @@
 # __The Lagrangian and the Dirac Equation__
 
-**Declared omissions.** The action's only constraint is the first-order structure the currents section uses, so slot 6 is not separated. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The action's only constraint is the first-order structure the currents section uses, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -61,7 +61,7 @@ and each side is real up to a boundary term. The $i$ inside the material time is
 
 **The constant $\hbar c$.** It multiplies the whole action and cancels in the variation, so the residuals do not carry it while the currents carry one power of it. It is written so that the two terms have the dimension of an action and so that the derivative term is $\hbar c\,\tilde\nabla_\Phi$ and not $\tilde\nabla_\Phi$.
 
-## The Variation and the Pair
+## The Variation: The Pair
 
 Vary both parts, $\tilde\Xi_p\mapsto\tilde\Xi_p+\delta\tilde\Xi_p$, and take the real part. The result is
 
@@ -85,7 +85,7 @@ $$
 
 **The massless limit is two independent equations.** At $k_m=0$ the residuals decouple, $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=0$ and $\tilde\nabla_\Phi\tilde\Xi_R=0$, and the action is a sum of two independent functionals. Each is a one-sided functional on its own part, and each is not empty. The contrast with the candidate rejected in §*Why the Pairing Is the Hermitian One* is exactly the $i$: without it the one-sided functional is real and its variation is the residual, and it is only the extra $i\hbar c$ that makes the operator anti-self-adjoint and the functional empty.
 
-## The Count of the Pair
+## Aside: The Count of the Pair
 
 Three counts must be kept apart, and the action keeps them apart.
 
@@ -97,7 +97,7 @@ Three counts must be kept apart, and the action keeps them apart.
 
 **What the value-split would do.** If the parts were taken as $\tilde\Xi\Pi_\pm$ with $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ the frame's idempotents, the mass term would vanish identically: $\mathrm{Sc}[\Pi_+\tilde\Xi^{*}\tilde\Xi\Pi_-]=0$ because $\Pi_-\Pi_+=0$ and $\mathrm{Sc}$ is cyclic. The vanishing is the identity $\mathrm{Sc}[\tilde\Pi_+\tilde X^{*}\tilde X\tilde\Pi_-]=0$, since the product $\tilde\Pi_-\tilde\Pi_+$ is zero and $\mathrm{Sc}$ is cyclic. The kinetic terms survive such a split, the mass does not. The parent's display with the fixed direction $i\vec v$ in the mass term is the repair, and the polar companion uses it.
 
-## Why the Pairing Is the Hermitian One
+## The Reality of the Action: Why the Pairing Is the Hermitian One
 
 The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian form, the same form the two Schrödinger articles use. The quaternion pairing $\mathrm{Sc}(\cdot^{\natural}\cdot)$ does not work, and the reason is worth stating because the symbol $\natural$ appears everywhere in the Dirac equation and the temptation to pair with it is strong.
 
@@ -133,7 +133,7 @@ and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde
 
 **Therefore the split is a factorization, and the operator count is its reason.** The pair is not one operator applied once. The gradient acts on the part written $R$, the conjugated gradient acts on the part written $L$, and $k_m$ relates them. A first-order functional hosts one operator per slot, so the pair needs two slots, and the mass is the only term that can couple them, which is why it is off-diagonal. That is the variational reading of the parent's remark that the field is one element and the letters name two parts of it: the parts are what the action needs, they are not values, and the mass is what makes the two of them necessary.
 
-## The Two-Sided Form Has No Action of Its Own
+## The Structural Consequence: The Two-Sided Form Has No Action of Its Own
 
 The parent writes a second display of the same equation, in which the mass acts on the right,
 
@@ -193,7 +193,7 @@ with $\mathcal{L}$ the integrand of the action. Its conservation on solutions is
 
 **What is deliberately absent.** There is no spin current in this section. The spin of this field is the rotor's (§*the polar companion*), it is not a Noether current of the element action, and a "spin current" derived here would be a second derivation of something the polar form already states exactly. The Dirac spin current as a Noether current belongs to the polar article, where the rotor is a variable.
 
-## The Massless Case and the Two Phases
+## The Two Settings: The Massless Case and the Two Phases
 
 At $k_m=0$ the action has two independent phase symmetries,
 
@@ -209,7 +209,7 @@ with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is 
 
 **One caution.** The chiral symmetry of this action is a symmetry of the two-part functional. Whether it is a symmetry of the parent's equation read as a single equation is the same question as whether the split is canonical, and the answer is not needed here.
 
-## What the Variational Principle Adds
+## What the Principle Adds and What It Relabels
 
 The honest ledger, as in the Schrödinger companion.
 

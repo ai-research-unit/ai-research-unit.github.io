@@ -82,6 +82,6 @@ Four sectors, four answers. The electromagnetic sector is carried exactly, the e
 
 ## Further Reading
 
-- [The Lagrangian Family: A Map of the Forty-Eight Articles](the-lagrangian-family-a-map.html), for the schema and the boundary in a table.
+- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html), for the four sectors assembled in one expression.
 - [The Quantisation Hub: The Sixteen Articles That Import the Promotion](the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html), for the column the table marks absent in all four rows.
-- [The Lagrangian Articles by Object: Four Fields, Nine Articles Each](the-lagrangian-articles-by-object-four-fields-nine-articles-each.html), for the same articles reached from their objects.
+- [The Biquaternion Object Hubs](the-klein-gordon-object-every-article-on-one-equation.html), for the same articles reached from their objects.

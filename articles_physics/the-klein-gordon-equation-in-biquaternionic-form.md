@@ -37,7 +37,7 @@ The angle is $\theta_{\mathrm{rst}}=k_m r'_t$: the mass wave number and the real
 
 The conventions are those of the read list. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_t = 1, \vec e_x, \vec e_y, \vec e_z$ with $\vec e_\mu^2 = -e_t$ and $\vec e_\mu \vec e_\nu = \varepsilon_{\mu\nu\lambda}\vec e_\lambda$, and $i$ is the scalar imaginary, central in $\mathbb{B}$. The fixed-point subspaces are $\mathbb{B}_{\Phi}$ (anti-Hermitian, imaginary scalar and real vector), $\mathbb{B}_{\Psi}$ (Hermitian, real scalar and imaginary vector), $\mathbb{B}_{H}$ (real quaternions, the fixed points of complex conjugation), and $\mathbb{B}_{C} = \operatorname{span}_{\mathbb{R}}\{e_t, ie_t\}$ (the complex scalar line, which is the centre). The gradient is $\tilde\nabla_\Phi = e_t\partial/\partial R_t + \sum_\mu \vec e_\mu\partial/\partial R_\mu$ with $(\tilde\nabla_\Phi)^{\natural} = e_t\partial/\partial R_t - \sum_\mu \vec e_\mu\partial/\partial R_\mu$, so that $\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}= (\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi = \Box_\Phi = \Delta_\Phi - \partial^2/\partial {r^{\prime}_t}^2$, and $\partial^2/\partial R_t^2 = -\partial^2/\partial {r'_{t}}^2$. The conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*} = ({}^{\natural})^{*}$ (Hermitian), and ${}^\flat = -{}^{*}$ (anti-Hermitian). Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
-## The Equation and Its Operator
+## Before the Action: The Equation and Its Operator
 
 The equation of the introduction, kept in view and boxed here, is
 
@@ -413,7 +413,7 @@ The honest bottom line is a negative result about the framework's central struct
 
 6. **A factorable massive operator.** The vector-coefficient operator $\Box_A + (\vec F,\vec F) + 2i(\vec F,\vec\nabla_\Phi)$ factors into first-order operators and has a light-cone kernel, but its mass and its directional term cannot be separated. Is there a class of *massive* scalar operators with elementary kernels that is not obtained by this compensated construction — or, equivalently, is the price of factorisability always a compensating first-order term? The construction also raises whether the compensated operator has a **physical interpretation** of its own, rather than being a device for solving the first-order system.
 
-## What Was Checked
+## Verification
 
 **The dispersion relation.** A case independent of the derivation was evaluated: $c/c_0=2$, $k_m=1.4\ \mathrm{m^{-1}}$, $\vec k_\Phi=(0.9,-0.5,0.3)\ \mathrm{m^{-1}}$, giving $\omega\approx3.527\,c_0\ \mathrm{m^{-1}}$. A cosine of each sign of $\omega$ left a residual of order $h^{2}$ in $\Box_\Phi\tilde\Xi-k_m^{2}\tilde\Xi$, so both branches solve the one equation. The case was chosen away from $\vec k_\Phi=0$, where a sign error would be invisible.
 

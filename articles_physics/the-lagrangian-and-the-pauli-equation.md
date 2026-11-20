@@ -16,7 +16,7 @@
 
 Two symbols are specific to the limit. The rest phase is $\exp(-ik_m r'_t)$, and the residual field $\tilde\chi$ is defined by $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$; it varies on the slow scale $r'_t$ and its time derivative is of order $1/m$ relative to the mass term. The spin direction is $\vec n_{\mathrm{rot}}$, the rotor's axis, and the spin vector is $\vec S=\frac{\hbar}{2}\vec n_{\mathrm{rot}}$. The magnetic field is the vector part of $\tilde F$, $\vec B=\mu\vec H$.
 
-## The Limit: What Is Dropped and What Is Kept
+## The Limit: The Deletion
 
 **The expansion parameter is $1/m$, and the expansion is in the rest frame.** Write $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$ and insert it into the Dirac action. The mass term cancels the rest phase's contribution exactly, and the derivative brings down $-ik_m$ plus $\partial_{r'_t}$, so each occurrence of $\partial_{r'_t}\tilde\Xi$ becomes $\bigl(-ik_m+\partial_{r'_t}\bigr)\tilde\chi$.
 
@@ -26,7 +26,7 @@ Two symbols are specific to the limit. The rest phase is $\exp(-ik_m r'_t)$, and
 
 **The bookkeeping, in one line.** The two-component structure survives because the rest phase does not mix the chiral parts: the projection onto the large component is the projection onto the fixed spin direction, and the small component is eliminated by its own equation of motion rather than set to zero. That elimination is what produces the magnetic moment, and it is the next section's computation.
 
-## The Action in the Limit
+## The Action in Element Form
 
 **The result, then the two computations that give it.**
 
@@ -88,7 +88,7 @@ the parent's bilinear. The spin term contributes nothing to it: it is a function
 
 **The sign of the charge.** The charge's sign is $q$'s, as everywhere. The moment's sign is the product of $q$'s sign and the spin's orientation, and that product is the reason a spin-up electron and a spin-down electron have opposite magnetic moments.
 
-## The Error, and What the Limit Costs
+## The Limit: The Truncation and Its Error
 
 **The error is of order $1/m$, and it is not uniform.** The dropped second time derivative is $\frac{\hbar^{2}}{2mc^{2}}\partial^{2}_{r'^{2}_{t}}\tilde\chi$ in energy units: small when the kinetic energy is small compared with $mc^{2}$, and not small when it is not. So the limit is a low-energy limit, and its validity is a statement about the state and not about the equation.
 
@@ -98,7 +98,7 @@ the parent's bilinear. The spin term contributes nothing to it: it is a function
 
 **Why the truncation is stated rather than hidden.** Because a reader can check the order: the dropped term is displayed above with its coefficient, and the claim that it is small is the claim that the state's energy is small. A limit whose error is not written is a claim, not a derivation.
 
-## What the Variational Principle Adds and What It Relabels
+## What the Principle Adds and What It Relabels
 
 **What it adds.** A functional. The equation-level derivation expands the Dirac equation and reads $g=2$ off the result; the reader is asked to accept the coefficient because it came out of the algebra. The action route supplies something the equation route cannot: one object whose variation gives both the Schrödinger kinetic term and the magnetic term at once, so the coefficient is a property of a functional rather than of an expansion. That is the difference between deriving a number and displaying where it comes from.
 

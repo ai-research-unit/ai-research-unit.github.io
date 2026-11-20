@@ -58,7 +58,7 @@ with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material fo
 
 **The stationarity is the symbol and the check is a finite difference.** $\partial\mathcal{Q}/\partial A_\nu=-(\sigma A)_\nu$ with $(\sigma A)_\nu=(k^{2}-k_m^{2})A_\nu-k_\nu(k\cdot A)$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. **So the momentum-space variational principle is $\sigma A=0$**, and the form companion's matrix is this form's Hessian.
 
-## The Quadratic Form and Its Stationarity
+## The Action in Momentum Space: The Quadratic Form and Its Stationarity
 
 **At a wave number the action is a quadratic form and nothing more.** There is no coupling between different wave numbers in the free case, so the transform does not merely simplify the action; it decomposes it into an independent form at each wave number. **The variation is then algebraic at each index**, and the Euler–Lagrange equation is the vanishing of one gradient.
 
@@ -88,7 +88,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Constraint Is the Vanishing of a Coefficient
+## The Constraints the Action Imposes: The Constraint Is the Vanishing of a Coefficient
 
 **The Lorenz condition is the stationarity of the form along the wave number.** The derivative in the direction of the wave number is
 
@@ -106,7 +106,7 @@ because $A\cdot k=[kA]$ and the two $k^{2}$ terms cancel. **So the directional d
 
 **What the form cannot say is which representative to choose.** A gauge freedom is a freedom, and a quadratic form that has a null direction does not select one. **The parent's statement that in the massless theory $S=0$ can be reached from any potential by a gauge transformation is the statement that the null direction can be removed by a shift**, and the form's version is that the kernel of the Hessian contains the wave number. The two agree and neither is deeper.
 
-## The Temporal Coefficient Has No Frequency
+## The Constraints the Action Imposes: The Temporal Coefficient Has No Frequency
 
 **The coefficient of $A_0^{2}$ contains no $\omega^{2}$, and that is the primary constraint.** Expanding the form's diagonal,
 
@@ -124,7 +124,7 @@ so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three
 
 **The three spatial coefficients move because they are the propagating ones.** Their frequency dependence is the dispersion relation's, read as a coefficient: on the shell the transverse coefficient vanishes, which is the symbol's rank drop. **The temporal coefficient never vanishes for a massive field**, which is why the primary constraint is not a dynamical equation at any frequency.
 
-## Zero, Pole and Degeneracy Are One Locus
+## Zero, Pole and the On-Shell Action: Zero, Pole and Degeneracy Are One Locus
 
 **The form degenerates exactly where the symbol is singular and exactly where the propagator has its pole.** The transverse coefficient is $-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, so the form is degenerate on the Lorenz plane precisely at $k^{2}=k_m^{2}$. That is the same surface as the form companion's $\det\sigma=0$ and the same surface as the propagator's denominator's zero. **Three registers, one locus**, and the naming is *The Lagrangian and the Dirac Equation in Momentum Space*'s, whose §*Zero and Pole Are One Object* establishes it for the Dirac action.
 
@@ -134,7 +134,7 @@ so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three
 
 **The degeneracy is not the pole's whole story.** A propagator's residue at the pole is a projector, and here it is the transverse projector: the residue is supported on the Lorenz plane and vanishes along the wave number. **That is why the longitudinal mode's contribution to the propagator is not a pole at all** but the $-1/k_m^{2}$ term the standard treatment records, and the form's eigenvalues say so in one line.
 
-## The Longitudinal Coefficient Is the Mass Alone
+## The Structural Consequence: The Longitudinal Coefficient Is the Mass Alone
 
 **Along the wave number the form is the mass and nothing else.** Put $A\parallel k_\mu$, so that $A=\lambda k_\mu$ and $[kA]=\lambda k^{2}$. Then
 
@@ -161,7 +161,7 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 
 **The identity explains why the constraint exists in the massive case only.** The variation along $k_\mu$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac12k_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $k_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
 
-## The Trace Is the Mass
+## The Structural Consequence: The Trace Is the Mass
 
 **The form's Hessian has a trace and the trace is the mass on the shell.** $\mathrm{tr}\,\sigma=4(k^{2}-k_m^{2})-k^{2}=3k^{2}-4k_m^{2}$, which at $k^{2}=k_m^{2}$ is $-k_m^{2}$ exactly. **So on the mass shell the symbol's trace is the mass and nothing else**, independent of the wave vector, the frequency and the direction.
 
@@ -193,7 +193,7 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 
 **One caution.** The transform is taken before the equation is imposed. **On shell the form vanishes**, so the transform of the on-shell form is zero on both branches and on the longitudinal direction alike, and the article does not take it.
 
-## Limits
+## The Limits and the Truncation’s Error
 
 **The constant-coefficient licence bounds every statement here.** The form is a form at one wave number only where the coefficients are constant. With a connection there is a form at a mode only for a constant connection, and the coupled companion treats that case.
 
@@ -203,7 +203,7 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 
 **The denial, once more.** No sector is exchanged. The form is a real number per wave number, the amplitude is four real components, and twice the scalar part is a sum of four numbers. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
 
-## What the Transform Adds and What It Relabels
+## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
 

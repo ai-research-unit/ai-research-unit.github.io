@@ -35,7 +35,7 @@ with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$,
 
 **The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection and $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ with $A_\mu$ the real components of $\tilde A_\Phi$ and $ϙ$ the charge of the field, fixed once here and never re-chosen. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$, the pure-vector part of the conjugate gradient. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4x=\mathrm{d}r'_t\,\mathrm{d}^3x$, the mass is $k_m=mc/\hbar$, and the field term's normalisation $\sqrt{\mu}$ is the Maxwell article's and is not fixed again.
 
-## The Action
+## The Action in Element Form
 
 **The matter term.** The free companion's action is the sum over the four slots of $\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}\partial_\mu\tilde\Xi\big]$ with the metric signs of the display, minus the mass term. Covariantising the four slots gives
 
@@ -59,7 +59,7 @@ exactly, because $Y^{*}Y=\mathrm{nat}(\bar Y)Y$ has scalar part $\sum_\lambda\lv
 
 **The pairing.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, the free companion's choice, and the reason is the free companion's: $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ for complex coefficients is not real and does not give a real action, so the quaternionic pairing is unavailable. The polar companion uses the same pairing.
 
-## The Variation in the Field
+## The Variation: In the Field
 
 **The Euler–Lagrange equation.** Vary $\tilde\Xi$ and $\tilde\Xi^{*}$ independently, which is legitimate over the complex carrier and is the standard device for a complex field, and integrate by parts once per slot. The result is
 
@@ -87,7 +87,7 @@ The article states the equation as $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\ti
 
 **The count.** The equation is four complex equations for four complex coefficients, which is eight real equations for eight real functions. The action is real, so the variations with respect to $\tilde\Xi$ and with respect to $\tilde\Xi^{*}$ are not independent constraints: the pair gives the four complex equations and their four conjugates, and the conjugate set is the same set. The count is the free companion's, unchanged by the coupling.
 
-## The Variation in the Connection
+## The Variation: In the Connection
 
 **The source.** Varying $A_\mu$ acts only inside the covariant derivatives, through $\delta\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)=\frac{iϙ}{\hbar}\,\delta A_\mu\,\tilde\Xi$, and the connection's coefficient is central, so the variation does not have to choose a side. Hence
 
@@ -126,7 +126,7 @@ holds for the current as defined in this section, the companion's $J$ being this
 
 **What this establishes.** A coupling between a field and a connection exists exactly when the field has a conserved current, because the connection's equation must be integrable. For the scalar, the current is the phase symmetry's, the symmetry exists because the centre of the algebra is a $\mathrm{U}(1)$, and the coupling is the localization of that symmetry. The chain is the gauge principle article's, and the coupled Klein–Gordon Lagrangian article supplies the one computation the chain needs at second order.
 
-## Gauge Invariance of the Total Action and What It Buys
+## The Constraints the Action Imposes: Gauge Invariance of the Total Action
 
 **The matter term is invariant, exactly.** Under $\tilde\Xi\mapsto e^{iϙ\Lambda/\hbar}\tilde\Xi$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$ the covariant derivative is covariant — the computation is the element companion's and it is exact for a general element — so each slot's squared modulus is invariant and the mass term is invariant. The invariance is not up to a divergence; it is an identity.
 
@@ -183,7 +183,7 @@ up to the current's normalisation, with $F_{\nu\mu}=\partial_\nu A_\mu-\partial_
 
 **What the stress tensor does not need.** No improvement term for symmetry, because the tensor is already symmetric; no improvement term for the trace, because the trace of the matter tensor is the mass term and the mass term is what the trace is expected to be; and no gauge repair, because the tensor is built from covariant derivatives. The free companion's stress discussion carries over with the substitution of the derivative and one new identity, the Lorentz force.
 
-## What the Principle Adds and What It Does Not
+## What the Principle Adds and What It Relabels: And What It Does Not
 
 **Adds.**
 

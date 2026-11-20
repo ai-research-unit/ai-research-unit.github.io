@@ -34,7 +34,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
 
-## The Equation and Its Operator
+## Before the Action: The Equation and Its Operator
 
 Two conventions of the parent are fixed here once, because every sign below follows from them.
 
@@ -138,7 +138,7 @@ $$
 
 the parent's equation, with the mass term's sign fixed by the dispersion relation of the previous section. Varying $\tilde\Xi$ instead of $\tilde\Xi^{*}$ gives the Hermitian conjugate of the same equation, so the two variations of the real functional give one equation and its conjugate and not two equations.
 
-## The Conjugate Pair
+## Aside: The Conjugate Pair
 
 The equation is second order in the material time, so the action is second order in the velocity and the canonical momentum is not the field but its conjugate. This section states the Legendre transform, because it is the closest analogue in this problem of the parent Schrödinger article's two writings, and because it is where the closed-form exponential survives.
 
@@ -284,7 +284,7 @@ The parent distinguishes two objects and this article inherits the distinction i
 
 **What does not transfer.** Two statements of the Schrödinger pair have no counterpart here and are not imported. There is no setting in which the equation is an ordinary differential equation, because the Laplacian is in the operator in every case. And there is no exponential $\exp(-\tfrac{i}{\hbar}\tilde H t')$ whose powers solve the equation, because the second-order equation needs two data per mode; the block of §*The Conjugate Pair* is what replaces it, and it exists for the constant coefficient only.
 
-## What the Variational Principle Adds and What It Relabels
+## What the Principle Adds and What It Relabels
 
 The ledger is short and it is the reason the article is worth writing.
 
@@ -302,7 +302,7 @@ The ledger is short and it is the reason the article is worth writing.
 
 3. **The carrier under a non-central coefficient.** The free equation preserves the carrier: it maps $\mathbb{B}$ to $\mathbb{B}$ and each minimal left ideal to itself, since the operator is central. A non-central Hermitian $\tilde M$ acts by left multiplication and does not commute with a right ideal, so a field started in a Peirce carrier leaves it. Whether the physical restriction to a carrier survives an external potential, and in which representation, is the Klein–Gordon form of the closure question the Schrödinger article raises.
 
-## What Was Checked
+## Verification
 
 **The variation.** The difference quotient of the action was compared with $2\,\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ on a periodic grid with a random biquaternion field and a random complex variation, and the two agreed to ten significant figures. The step is also exact on paper: the kinetic halves are conjugates and the boundary term of the integration by parts vanishes for a variation of compact support.
 

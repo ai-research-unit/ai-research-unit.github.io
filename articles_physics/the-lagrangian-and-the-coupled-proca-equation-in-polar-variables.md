@@ -34,7 +34,7 @@ with eight real parameters. The word is a bijection onto the N-regular set, so t
 
 **The conventions are the free chart's, restated for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the word is $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u$, with $\varrho>0$ and $\tilde u$ a unit element of the frame; the connection is $\tilde A_\Phi$ with real components $A_\mu$ and the coupling is $ϙ$. The pairing and the measure are those of the free chart, $k_m=mc/\hbar$, and the two settings are the parent's.
 
-## The Action in the Chart
+## The Action in Polar Variables
 
 **The mass term is a function of the frame and the scale.** Substituting the word into the invariant length gives $\varrho^{2}$ times a real function of the four frame angles: the central phase cancels between $\tilde A^{*}$ and $\tilde A^{\natural}$, the scale factors out, and what is left is a scalar part of the frame's four units.
 
@@ -73,7 +73,7 @@ in the phase slot and in the phase slot alone, with the other seven parameters' 
 
 **The second-order structure.** The action is second order in the material time, so its Hessian with respect to the eight velocities is the metric $G$ and not a matrix with zero eigenvalues. That is the formal difference from the first-order companions: there the action is linear in the velocities, the Hessian has six zero eigenvalues, and the chart's Euler–Lagrange equations are a constrained system. Here there is no such degeneracy in form, and the chart's equations are eight second-order equations for eight parameters.
 
-## The Euler–Lagrange Equations
+## The Variation: The Euler–Lagrange Equations
 
 **The count.** Eight parameters, eight equations, and each equation is second order. The two equations that the free article displays — one real equation for the modulus and one traceless equation for the frame — are the free case's reduction, and the coupling adds the connection's shift to the phase equation and to the others through it.
 
@@ -85,7 +85,7 @@ in the phase slot and in the phase slot alone, with the other seven parameters' 
 
 **What the chart's equations do not do.** They do not turn the coupled Proca equation into a simpler system. They turn it into a system whose variables have physical names — scale, phase, rapidity, direction, rotation — and whose coupling is one shift. Whether that is a simplification is a question about what one wants to compute, and the article's answer is that it is a simplification for reading the coupling and not for solving the equation.
 
-## The Gauge Transformation in the Chart
+## The Constraints the Action Imposes: The Gauge Transformation in the Chart
 
 **The exact statement.** For a constant central unit $\lambda=\exp(i\vartheta_{\mathrm{gau}})$,
 
@@ -137,7 +137,7 @@ with the scale real, the phase central imaginary, the boost Hermitian and the ro
 
 **What the coupling adds.** The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{iϙ}{\hbar}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
 
-## The Currents in the Chart
+## The Noether Currents: The Currents in the Chart
 
 **The charge is the momentum conjugate to the phase.** The action depends on $\theta_{\mathrm{pha}}$ only through its gradient, so the phase rotation is a symmetry and the Noether charge is the momentum conjugate to the phase:
 
@@ -154,7 +154,7 @@ the temporal slot of the element form's current, by the chain rule and because t
 
 **What is absent.** No spin current, for the reason the element-form companion gives: the frame's rotor is an internal rotation and not a spin density, and the free polar article exhibits the absence of a rotor bracket in the material sector. The rotor's return with the charge is the return of a frame, not of a spin.
 
-## What the Polar Variational Principle Adds and What It Does Not
+## What the Principle Adds and What It Relabels: In the Polar Chart
 
 **Adds.**
 

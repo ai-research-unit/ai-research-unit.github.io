@@ -42,7 +42,7 @@ with $V_{\Phi,\mu}=\partial_\mu S_{\tilde\Xi}/m=\partial_\mu\theta_{\mathrm{pha}
 
 **There is no term in $\rho_{\mathrm{num}}$ alone apart from the mass term, and that is why the fluid has no equation of state.** A barotropic fluid's pressure is the derivative of an energy with respect to the density at fixed entropy; here the only such derivative is $mc^{2}$, a constant per particle, so the bulk pressure vanishes identically. What survives is the gradient energy's pressure, which is the block's $\sigma^{Q}_{ij}$. **The absence of an equation of state is visible in the action as the absence of a term**, and the block's denial of one is the same statement made about the equations.
 
-## The Two Variations
+## The Variation: Two of Them
 
 **Varying the phase gives continuity of the current.** $\mathcal L_{\mathrm{fl}}$ depends on $S_{\tilde\Xi}$ only through $\sum_\mu V_\mu V_\mu$, so
 
@@ -80,7 +80,7 @@ which is the block's boxed law. The action's contribution to this display is not
 
 **The count is therefore two and two, with nothing left over.** No multiplier, no subsidiary condition, no constraint surface to reduce. The rung below has the same count and reaches it differently; the rung above loses it.
 
-## The Gradient Energy Is Indefinite
+## The Reality of the Action: The Gradient Energy Is Indefinite
 
 **The sign of the second term is not uniform, and the reason is the operator's.** With the corpus's conventions the temporal component of a four-gradient carries an $i$, so
 
@@ -114,7 +114,7 @@ which is the acceleration law with the quantum potential as its only force beyon
 
 **Why the count matters.** A Lagrangian with two fields and two equations is not over-determined, and a fluid whose acceleration is a consequence of its shell is a fluid with no independent pressure. Both statements are what the family needs in order to say that the scalar fluid at this rung is dust plus a quantum stress.
 
-## The Stress as the Translation Current
+## The Noether Currents: The Stress as the Translation Current
 
 **The action is invariant under translations, so it has a stress, and the stress is the block's up to an improvement.** The canonical tensor is
 
@@ -128,7 +128,7 @@ and it splits into the two terms the action has. The first is the dust's: $\part
 
 **And it explains the asymmetry between the two rungs.** At the first-order rung the stress has no flux and no energy density separate from the block, because the action has one time derivative; there is nothing to project away and the identity is unconditional. Here there is a full four-dimensional stress and the projection costs.
 
-## What the Fluid Variational Principle Adds and Does Not Add
+## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The mass shell as an equation of motion rather than a constraint, and with it the correct status of the acceleration law. The absence of an equation of state as the absence of a term. The identification of $\rho_{\mathrm{num}}$ and $\rho_{\mathrm{chg}}$ as one action's density and one current's component, with $\gamma$ as the Jacobian. The indefiniteness of the gradient energy, which is the action's version of the rung's missing positivity, and its blindness to $\varepsilon$, which is the action's version of the two branches. And the stress as a translation current, with the block's identity read as its conservation and the static caveat explained rather than removed.
 
@@ -136,7 +136,7 @@ and it splits into the two terms the action has. The first is the dust's: $\part
 
 **The one comparison worth making with the polar companion.** That article finds the polar action to be quadratic in the bracket with a metric that depends on the point, and it computes the metric for the four scalar parameters with both axes held fixed. The fluid chart replaces the rapidity by the velocity, so the metric's dependence on the point becomes the shell's dependence on $Q_{\mathrm{qnt}}$: **the point-dependent metric and the quantum potential are one object read in two charts**, and the fluid chart is the one in which it appears as an energy rather than as a metric.
 
-## What the Fluid Adds That the Element and the Limit Do Not
+## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **The full element is a fluid with a frame that is not a spin.** The biquaternion scalar field's polar word carries the boost and the rotor as well as the scale and the phase, so its fluid has a local frame in which the rapidity is an anisotropy and the rotor is a rotation of the frame about itself. **The element reading calls these parameters; the fluid reading calls the frame a state of the medium**, and the second naming is what lets a reader ask what the medium's anisotropy does to the pressure.
 

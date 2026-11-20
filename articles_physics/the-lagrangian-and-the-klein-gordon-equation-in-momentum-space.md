@@ -36,7 +36,7 @@ $$
 
 **The potential is a constant element.** Throughout, $\tilde M$ is a constant element of $\mathbb{B}$: Hermitian, $\tilde M=a\,e_t+i\vec v\cdot\vec e$ with $a$ and $\vec v$ real, or anti-Hermitian, $\tilde M=i\,a\,e_t+\vec v\cdot\vec e$. Its left multiplication $L(\tilde M)$ is complex-linear on the four-dimensional complex space $\mathbb{B}$, because $i$ is central, so it is a $4\times4$ complex matrix in the basis $e_\mu$ and its eigenvalues are ordinary complex eigenvalues.
 
-## The Momentum-Space Equation Is an Eigenvalue Problem
+## The Action in Momentum Space: The Momentum-Space Equation Is an Eigenvalue Problem
 
 **Finding 1.** Substituting $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ into $(\Box_\Phi-\tilde M)\tilde\Xi=0$ and using the symbol rule gives, in one line,
 
@@ -56,7 +56,7 @@ $$
 
 **The licence travels with the finding**: everything in this section needs $\tilde M$ constant, because the symbol exists only there, and a position-dependent $\tilde M$ replaces the matrix by a convolution with no eigenvalue problem at all.
 
-## The Spectrum of Left Multiplication
+## The Action in Momentum Space: The Spectrum of Left Multiplication
 
 **Finding 2.** For a Hermitian potential $\tilde M=a\,e_t+i\vec v\cdot\vec e$ with $a$ and $\vec v$ real, the spectrum of $L(\tilde M)$ is
 
@@ -96,7 +96,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## Reality of the Action and the Selection Rule
+## The Reality of the Action: And the Selection Rule
 
 **Finding 3.** The potential term of the action is $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$, and its reality is equivalent to $\tilde M$ being Hermitian. The parent's kinetic term is already real for every field, so the potential term is the only place where a sector question can arise, and this is what it decides.
 
@@ -117,7 +117,7 @@ $$
 
 **The comparison with the Dirac family is exact and it is instructive.** There the symbol is first order and the object that must be Hermitian is the symbol itself, because a first-order equation is a flow and a flow wants a unitary generator. Here the equation is second order, its action contains $\tilde M$ quadratically, and the object that must be real is the action's density. **Same selection rule, different quantity selected.** The scalar family selects on $S$ and the spinor family selects on $H$, and neither selection is available in the other family. **The free case is the boundary of the rule**: with $\tilde M=k_m^{2}e_t$ the potential is central and Hermitian at once, the anti-Hermitian part vanishes, and both sectors pass the test, which is why the free theory cannot tell them apart.
 
-## The Denial That Survives
+## The Structural Consequence: The Denial That Survives
 
 **The informational sector is not the Fourier dual of the material sector.** Every transform in this article acts on a $\mathbb{B}$-valued function and returns a $\mathbb{B}$-valued function. No step carries a field out of its sector, and no display above identifies a coefficient's sector with a function's sector. The sector statements are statements about one constant element that multiplies, at one wave number or at one event.
 
@@ -137,7 +137,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## The Tachyon Threshold
+## Zero, Pole and the On-Shell Action: The Tachyon Threshold
 
 **Finding 4.** The lower branch $a-\lvert\vec v\rvert$ is the threshold, and the condition for a non-negative spectrum is one inequality:
 
@@ -151,7 +151,7 @@ $$
 
 **The occurrence is common, and the count says so.** Over three hundred draws with $a$ standard normal and $\vec v$ standard normal in three dimensions, the lower branch was negative in $276$ of them. The vector part of a random Hermitian potential has three components and its length is typically larger than one component, so a positive scalar part does not by itself keep the spectrum non-negative. **A potential whose scalar part is not larger than the length of its vector part has a tachyon branch, and that is the generic case for unconstrained coefficients.** What the threshold is not: it is not a bound on the energy of a state, and it is not a statement about the sign of the charge. It is a statement about the sign of one eigenvalue of one operator, and its only consequence is the sign of $\omega^{2}$ at small $k_\Phi$. The parent's two defects — indefinite charge and negative energies — are separate, and neither is decided by this inequality.
 
-## Why the Free Case Says Nothing
+## Zero, Pole and the On-Shell Action: Why the Free Case Says Nothing
 
 **Finding 5.** With $\tilde M=k_m^{2}e_t$ the four eigenvalues coincide at $k_m^{2}$, the symbol commutes with every element of $\mathbb{B}$, and no sector statement can be made. The eigenvalue problem degenerates from a matrix problem to a multiple of the identity. The count is exact and it is the point: the computed spectrum was $k_m^{2}$ four times with a residual below $10^{-15}$, and the commutator of the symbol with fifty random elements of $\mathbb{B}$ was $0.0$ in every component. A central symbol commutes with the sector projectors, so $\Box_\Phi-k_m^{2}$ acts identically on $\mathbb{B}_\Psi$ and on $\mathbb{B}_\Phi$. The equation cannot tell the sectors apart because its operator does not contain them.
 
@@ -173,7 +173,7 @@ $$
 
 **One caution the article keeps.** The transform is taken at fixed wave number and fixed amplitude, before the equation is imposed. **On shell the form vanishes and the transform of zero is zero**, so the order matters and the article states it once.
 
-## Limits
+## The Limits and the Truncation’s Error
 
 **Constant coefficients are the licence.** The eigenvalue problem needs $\tilde M$ constant, because the symbol exists only there. A position-dependent Hermitian $\tilde M$ keeps the equation and loses the spectrum: the momentum-space operator becomes a convolution, its kernel is the transform of $\tilde M$, and there is no matrix and no eigenvalue. The parent's constant setting is therefore not a simplification of convenience but the only setting in which the four branches exist as branches.
 
@@ -183,7 +183,7 @@ $$
 
 **The third article of the family reads the polar word, and this one does not.** *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables* asks where the transform's phase comes from and what removes the symbol; its answer is about the amplitude, and it is not a restatement of anything here. Nothing in the article is a transform between sectors: every object above is an element of $\mathbb{B}$ or a coefficient of one, and the transform returns the same algebra.
 
-## What the Transform Adds and What It Relabels
+## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
 

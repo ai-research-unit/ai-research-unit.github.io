@@ -20,7 +20,7 @@ The frame perturbation is $\delta\tilde E_{\Phi,\mu}\in\mathbb{B}_\Phi$, related
 
 **The literature's letters.** Where the standard form of the action is quoted, it is quoted in the tensor dictionary that the parent supplies, and every step below is a step in that dictionary. The biquaternionic translation of the quadratic form is exact on the frame perturbation; the translation of the *non-linear* action is not, and that is the gap.
 
-## The Action
+## The Action in Element Form
 
 **The action is the quadratic expansion, and it is the second variation of the Einstein–Hilbert term.** Write the Einstein–Hilbert action with the cosmological term absent and expand $\sqrt{-g}R$ to second order in $h$. The first-order term is a total derivative on shell and drops; the second-order term is the quadratic action,
 

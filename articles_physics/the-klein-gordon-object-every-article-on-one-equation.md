@@ -74,6 +74,6 @@ Every article the corpus has on the Klein–Gordon equation is listed above, gro
 
 ## Further Reading
 
-- [The Lagrangian Family: A Map of the Forty-Eight Articles](the-lagrangian-family-a-map.html), for the schema the Lagrangian articles share.
-- [The Lagrangian Articles by Object: Four Fields, Nine Articles Each](the-lagrangian-articles-by-object-four-fields-nine-articles-each.html), for the same four objects seen through the Lagrangian articles alone.
+- [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), for the element reading of this object's action.
+- [The Sector Hub: What the Lagrangian Family Reaches in Each Sector](the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html), for which sectors the family reaches and which it does not.
 - [The Lagrangian and the Second Quantisation: From the Action to the Commutator](the-lagrangian-and-the-second-quantisation.html), for the step none of these articles takes.

@@ -107,7 +107,7 @@ the coupled Proca equation. The two terms of the action produce the two terms of
 
 **What the variation does not produce.** It does not produce the Lorenz condition. The condition is the trace of the equation, as the element-form article shows, and it is a consequence of the equation rather than a constraint imposed on the action. In the free case the same division holds and the free article reads it as the statement that the mass term breaks the gauge symmetry. Here the mass term does not break the symmetry, so that reading is not available, and the condition is what it is: a consequence.
 
-## The Constraint from the Action
+## The Constraints the Action Imposes: The One That Comes from the Action
 
 **The constraint is not imposed and it is not lost.** Varying the action gives the equation; the scalar part of the equation is the covariant Lorenz condition
 
@@ -121,7 +121,7 @@ The element-form article proves that the curvature does not enter this trace, be
 
 **A check.** The constraint holds exactly, to machine precision, in a background with constant field strength as well as in a flat one, which is the numerical form of the statement that the curvature is traceless. The element-form article's lattice computation is the check, and the variational reading adds nothing to it.
 
-## The Field Term and the Charge
+## The Structural Consequence: The Field Term and the Charge
 
 **The problem, stated exactly.** The algebra's field strength is a pure vector: six real components, the antisymmetric part of a covariant gradient. A complex bivector has twelve real components. The field strength of a complex potential therefore cannot be stored in one pure vector, and the algebra stores one half of it. For a *material* potential that is enough, because the two halves are the electric and magnetic fields and they are real; for a complex potential it is not, because the two halves are complex and one half does not determine the other.
 
@@ -179,7 +179,7 @@ symmetric on solutions, conserved on solutions, and positive in energy for the f
 
 **What is absent.** There is no spin current, and its absence is not an oversight: the Proca field is a four-vector, its frame's brackets carry the direction and not a spin, and the free polar article states that the material sector has no rotor bracket to build one from. The Dirac spin current belongs to the Dirac articles. The coupled Proca field's rotor, which the complex carrier restores, is the frame's internal rotation and not a spin density, and the polar companion is where that distinction is drawn.
 
-## What the Variational Principle Adds and What It Relabels
+## What the Principle Adds and What It Relabels
 
 **Adds.**
 

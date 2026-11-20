@@ -60,7 +60,7 @@ where $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ is the shifted Lorenz form and
 
 **The constant-connection licence.** The form is the action at a mode for a constant connection. **A varying connection has no form at a mode**, and the element companion shows why: the symbol is not a function of the momentum alone.
 
-## The Form on a Mode
+## The Action in Momentum Space: The Form on a Mode
 
 **The two terms have different algebraic characters and that is the article's engine.** $\mathcal{F}$ is a square of a linear form in $A$; $\mathcal{M}$ is a Hermitian square. **A square of a linear form is bilinear; a Hermitian square is sesquilinear**, and the whole of the phase behaviour follows: the first picks up the transformation's factor twice and the second cancels it.
 
@@ -92,7 +92,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Constraint Is a Determination
+## The Constraints the Action Imposes: The Constraint Is a Determination
 
 **The parent's coupled reading of the constraint is a determination and not a residue, and frequency space makes the determination a division.** On the coupled carrier the mass term does not break the gauge symmetry, so the free article's "the mass breaks it" reading is unavailable; what remains is that the equation's longitudinal content determines the temporal amplitude from the spatial ones:
 
@@ -112,7 +112,7 @@ $$
 
 **What the constraint is not is the gauge-fixing condition of the free theory.** The free article's constraint was the vanishing of a coefficient that the mass supplied, and it removed the direction along the wave number; here the same equation removes the gradient part of the amplitude and leaves the mass's longitudinal polarisation. **The two readings are the same equation and different bookkeeping**, and the parent says so: "the same statement in both cases with a different bookkeeping".
 
-## The Temporal Coefficient Has No Frequency
+## The Constraints the Action Imposes: The Temporal Coefficient Has No Frequency
 
 **The primary constraint survives the coupling as an absent power of $\pi_t$.** Expanding the form's diagonal,
 
@@ -136,7 +136,7 @@ so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficient
 
 **What the coupling changes is the coefficient's value and not its character.** $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$ moves with the background potential through $\vec\pi$ and with the mass; it never vanishes for a massive field in a bounded background. **So the primary constraint is never a dynamical equation**, in the free theory or the coupled one.
 
-## The Two Terms Transform Differently
+## The Structural Consequence: The Two Terms Transform Differently
 
 **Under a constant central phase the mass term does not move and the field term rotates at twice the angle.** With $\alpha$ a constant and $A\mapsto e^{i\alpha}A$,
 
@@ -185,7 +185,7 @@ the first because $e^{-i\alpha}e^{i\alpha}=1$ and the second because the two fac
 
 **At a mode the count is one line each.** The charge is the coefficient of the temporal connection in the mode form; the energy is the value of the form on the shell. Both are read off the display of the third section without a new integral.
 
-## The Charge Has No Mass and the Energy Has Mass-Squared
+## The Noether Currents: The Charge Has No Mass
 
 **The two conserved quantities come from the two terms and they carry different constants.** The parent's charge current is a Noether current of the phase, and the phase is the mass term's symmetry; the parent's stress tensor is a Noether current of translations, and its trace is the mass term. **In frequency space the charge current's symbol carries $\pi_\mu$ and is linear in one power of the amplitude, so it carries no $k_m$; the trace carries $k_m^{2}$ and nothing else on the material slice.**
 
@@ -197,7 +197,7 @@ the first because $e^{-i\alpha}e^{i\alpha}=1$ and the second because the two fac
 
 **What the asymmetry forbids is a statement of the form "the charge measures the mass".** It does not; the charge measures the phase's flow and the mass measures the scale's. **A frequency-space statement about the mass is a statement about the trace or about the longitudinal coefficient**, and those are the two places the article has looked.
 
-## The Legendre Inversion Is Two-Valued
+## The Legendre Transform
 
 **The form is quadratic in the frequency, so solving it for the frequency gives two roots.** $\mathcal{F}$ is a square of a form linear in $\pi_t$ and $\mathcal{M}$ is independent of $\pi_t$; the resulting polynomial in $\omega$ is quadratic. **So every value of the other variables corresponds to two frequencies**, and the pair is the particle–antiparticle pair.
 
@@ -213,7 +213,7 @@ a reflection about $\omega=-\varkappa c\varphi/\hbar$ rather than about zero. **
 
 **What the two roots mean for the constraint is nothing, and that is worth stating.** The constraint is the vanishing of the temporal coefficient's $\pi_t$ dependence, which is absent at both roots; the two roots are the two branches' frequencies and both satisfy it. **A constraint that does not depend on the frequency cannot select a root**, and the article's last sentence about the inversion is that the two structures are independent.
 
-## Limits
+## The Limits and the Truncation’s Error
 
 **The constant-connection licence bounds the form.** The form is the action at a mode for a constant connection; a varying connection has no form at a mode, and the element companion's argument is the reason.
 
@@ -223,7 +223,7 @@ a reflection about $\omega=-\varkappa c\varphi/\hbar$ rather than about zero. **
 
 **The denial, once more.** No sector is exchanged. The action is real, the form is a complex number per mode, and the phase is a coordinate. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
 
-## What the Transform Adds and What It Relabels
+## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
 

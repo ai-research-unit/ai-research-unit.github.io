@@ -35,7 +35,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 
-## The Substitution: The Word and the Two Parts
+## Before the Action: The Substitution and the Two Parts
 
 The element action is written on two parts, and the word is written for one element. The parts must therefore be named before the substitution can be made.
 
@@ -85,7 +85,7 @@ $$
 
 the scale, the phase, the boost connection and the rotor connection. Substituting this into the boxed display is the whole of the computation, and the next two sections read the result.
 
-## The Kinetic Term
+## The Action in Polar Variables: The Kinetic Term
 
 The kinetic term comes out in closed form, and the closed form settles the momentum table.
 
@@ -135,7 +135,7 @@ where $\vec p_{\mathrm{spin}}$ is the vector whose contraction with $\vec\omega_
 
 **The sign, and the overall factor.** The Dirac kinetic term is $+\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$; the Schrödinger one is $-\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$. The difference is one operator and one antisymmetrization. The Dirac term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}(-i\hbar c\,\partial_{t'})\tilde\Xi]$, and $-i\hbar c\,\partial_{t'}$ is self-adjoint, so its expectation has a real part and no symmetrization is needed. The Schrödinger term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}(i\hbar c\,\partial_{r'_t})\tilde\Xi]$, and $i\hbar c\,\partial_{r'_t}$ is anti-self-adjoint, so its expectation is purely imaginary and the action must antisymmetrize: $\tfrac{i\hbar c}{2}(\tilde\Xi^{*}\dot{\tilde\Xi}-\dot{\tilde\Xi}^{*}\tilde\Xi)$ has scalar part $-\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$, which is where the minus comes from. The sign is a fact about the two equations and not a convention, while the factor $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is common to both and is the physical statement.
 
-## The Euler–Lagrange Equations
+## The Variation: The Euler–Lagrange Equations
 
 The Lagrangian is a one-form plus a potential, and that single fact is the constraint structure.
 
@@ -218,7 +218,7 @@ for every $\varrho>0$. One non-vanishing bracket is enough: the constraints are 
 
 **The parent's flow, at rest.** At $\theta_{\mathrm{rpd}}=0$ the two rate equations give $\dot\theta_{\mathrm{pha}}=k_m\mathcal V$ and $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=-k_m\partial_{\theta_{\mathrm{rpd}}}\mathcal V$, with $\varrho$ and the rapidity constant. The phase rate is the parent's. The rotor's rate along the boost axis comes from the potential's rapidity dependence, and the two rates transverse to it come from the rotor's own equations. Whether that reproduces the parent's gap rate is the closure question, and the article does not assume the answer.
 
-## The Mass Term and the Fixed Direction
+## The Structural Consequence: The Mass Term and the Fixed Direction
 
 The mass term of the element action is off-diagonal in the parts, and on the frame's parts it vanishes.
 
@@ -262,7 +262,7 @@ The scale enters as $\varrho^{2}$ in both terms. The phase enters only through i
 
 **The overall factor.** The element action carries $\hbar c/2$; the box has $\hbar c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §*The Kinetic Term*.
 
-## The Four Brackets and the Parameter Basis
+## The Parameter Basis and the Four Brackets
 
 Two bases of the eight-dimensional tangent space at an invertible element, and one change of basis.
 
@@ -294,7 +294,7 @@ so the conserved density is $\rho_{\mathrm{pol}}=\varrho^{2}\cosh\theta_{\mathrm
 
 **What the mass term kills.** The axial current. The vector current survives, because it is the phase's; the axial one is the difference of the two chiral currents, and the mass term is exactly the term that converts one into the other. The chart shows it as the term that couples $\theta_{\mathrm{rpd}}$ to $\theta_{\mathrm{pha}}$, and the element article's *Massless Case and the Two Phases* is the $k_m=0$ limit of the same display.
 
-## What the Polar Variational Principle Adds
+## What the Principle Adds and What It Relabels: In the Polar Chart
 
 **Adds.** The polar form of the element action in one closed display: the kinetic term is $\hbar c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$. The momentum table as an identity rather than a sample: $p_r=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$, $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$. The reason for each entry, which is the reality of three contributions to the scalar part. The reason the mass term needs a fixed direction, which is the variational form of the parent's value-reading warning, together with the fact that the direction must be perpendicular to the frame's third direction. The bracket that makes the four primary constraints second class, computed and not assumed.
 
@@ -304,7 +304,7 @@ so the conserved density is $\rho_{\mathrm{pol}}=\varrho^{2}\cosh\theta_{\mathrm
 
 **The qualification is part of the statement.** The spin's momentum is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at rest it vanishes and the spin is not canonical either. The unconditional form of the claim fails at $\theta_{\mathrm{rpd}}=0$, and the closed form is what shows it: the spin enters the kinetic term only through its cross term with the boost, so a frame at rest has no spin momentum to speak of. What survives at rest is the phase alone.
 
-## Takabayasi's Multipliers and Why They Are Absent
+## Comparisons with Other Formulations: Takabayasi’s Multipliers and Why They Are Absent
 
 The comparison is worth stating precisely, because the two formulations are usually confused.
 

@@ -39,7 +39,7 @@ $$
 
 with $\vec H=\vec B/\mu$; the imaginary part is the electric field and the real part is the magnetic one, the electric term carrying the factor $i$ because it carries the time index. The source is $\tilde J_\Phi=ic\rho\,e_t+\vec J$, whose scalar part is the charge density and whose vector part is the current density. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$, the measure is $\mathrm{d}^{4}r$, and the symbol $\mathrm{Vect}$ is the pure-vector part.
 
-## The Action
+## The Action in Element Form
 
 **One term, and the potential appears only through the field strength.**
 

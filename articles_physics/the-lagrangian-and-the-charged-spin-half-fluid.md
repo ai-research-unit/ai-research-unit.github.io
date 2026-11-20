@@ -20,7 +20,7 @@
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
 
-## The Kinetic Term and the Two Covariant Rates
+## The Action in the Fluid Variables: The Kinetic Term and the Two Rates
 
 **The free kinetic term is a charge density times two rates, and the coupling makes both of them covariant.**
 
@@ -44,7 +44,7 @@ $$
 
 **The one thing the variation adds.** It shows that the coupling cannot change the canonical table: the connection is central, so it commutes with the frame and with the rotor, and a central element added to a derivative changes the value of a momentum and not its dependence. That is the article's *The Canonical Table Is Unchanged* seen from the variation side.
 
-## The Coupling in the Brackets
+## The Constraints the Action Imposes: The Coupling in the Brackets
 
 **The word's logarithmic derivative splits into four objects of four types, and the connection is one object of two.** Since $\tilde A_\Phi\in\mathbb{B}_\Phi$ is Hermitian,
 
@@ -65,7 +65,7 @@ and the first term is central imaginary while the second is Hermitian with a rea
 
 **This is the type argument of the block's charged articles, in its most economical form.** The scalar charged articles state it as one sentence about a central element reaching the phase and the boost and not the scale and the rotor; here it is a table whose two zeros are read off the decomposition of $\tilde A_\Phi$.
 
-## Gauge Invariance Is Exact Because the Group Is Central
+## The Constraints the Action Imposes: Gauge Invariance Is Exact Because the Group Is Central
 
 **The invariance is one line and it rests on the gauge element's being central.** With $\tilde\Xi\mapsto\tilde\Xi\lambda$ and $\lambda\in\mathbb{C}$ central,
 
@@ -81,7 +81,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **The current and the stress follow as at the scalar charged rung.** The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ\sum_\nu F_{\mu\nu}J_\nu$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.
 
-## Norms Survive and the Vorticity Stays the Frame's
+## The Structural Consequence: Norms Survive and the Vorticity Stays the Frame's
 
 **The two rungs differ in what kind of object the velocity is, and every downstream difference follows.**
 
@@ -103,7 +103,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **The sign.** The charge's sign is $q$'s; the spin's is the frame's, negative, and the product of the two signs is the spin's contribution to the energy. That product is what the article's canonical table records and the coupling does not change.
 
-## The Canonical Table Is Unchanged
+## The Two Settings: The Canonical Table Is Unchanged
 
 **Four statements, and the coupling moves none of them.**
 
@@ -120,7 +120,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **And the contrast with the scalar rung is exact.** There the velocity is $\tilde P^{\mathrm{mech}}/m$, a four-vector whose norm the mass shell fixes, and the shell's right-hand side carries $-2Q_{\mathrm{qnt}}/m$; the coupling changes the velocity and not the shell, so the norm moves with the field through the quantum potential. Here the velocity is invertible's square and no term is available to move it. **One rung has a norm that measures the state; the other has a norm that is a property of the frame.**
 
-## What the Fluid Variational Principle Adds and Does Not Add
+## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The coupling's reach as a table with two structural zeros, and hence the type argument in one line. "No torque" as the invariance of the weight $\beta$ rather than as a computation. The canonical table's invariance, which is the same statement read canonically. The surviving normalisation as the statement that a connection transports and does not measure. The gauge invariance's exactness as the centrality of the gauge group rather than as a checked cancellation. And the contrast with the scalar rung as a difference in the kind of object the velocity is: a gradient there, a square here.
 
@@ -128,7 +128,7 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **The one asymmetry within the layer.** Of the eight articles, this is the one in which the coupling changes nothing that the canonical structure can see. That is not an accident of the formalism: the coupling's image is the phase and the boost, and the canonical structure's non-trivial rows are the phase's and the spin's. **The one row the coupling could have moved is the spin's, and the type argument is exactly what forbids it.**
 
-## What the Fluid Adds That the Element and the Limit Do Not
+## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **The connection enters the torque, and that is the article's whole contribution.** In the coupled spin-half fluid the covariant derivative is not only in the transport; it is in the torque's building blocks, so **the polarisation rotates partly because the field does work on it**. The element reading has the same term inside the covariant bracket; the fluid reading is where its effect on the frame's balance is visible.
 

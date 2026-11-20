@@ -54,7 +54,7 @@ The conventions are those of the two companion articles: $\mathbb{B}=\mathbb{C}\
 
 **The conventions are the corpus's, restated here for the chart.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\varrho>0$ is the scale, $\theta_{\mathrm{rpd}}\ge0$ the rapidity and $\hat u_{\mathrm b}$ the boost axis, so that $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ on the branch. The measure is $\mathrm{d}^4r$, the pairing is $\mathrm{Sc}(\cdot)$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term, $k_m=mc/\hbar$, and the chart's velocities are the material-time derivatives. The branch is the timelike one; the spacelike branch is named where it matters and is not followed here.
 
-## The Action in the Chart
+## The Action in Polar Variables
 
 **The field term.** Write $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ and $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$, so that the conjugate gradient is the sum of a scalar and a pure vector,
 
@@ -89,7 +89,7 @@ with the last term read from the branch. The three pieces are the full quadratic
 
 **The parameters.** On the timelike branch the field is $\tilde A_\Phi(q)$ with $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.
 
-## The Euler–Lagrange Equations
+## The Variation: The Euler–Lagrange Equations
 
 **The change-of-variables argument.** The word is a bijection from the parameter set onto the branch, and both are open subsets of four-dimensional spaces; it is smooth with smooth inverse away from the coordinate singularity at the pure scalar-potential line. A diffeomorphism carries a variational problem to a variational problem: if $\tilde A_\Phi=\Phi(q)$ and $S=\int\mathcal{L}(\Phi(q),\partial\Phi(q))$, then
 
@@ -130,7 +130,7 @@ which is the form the polar article verifies numerically. The mass term enters t
 
 **What the variation of the middle piece does.** The term $-\tfrac12S^2$ is the only piece that pairs the scalar projection with itself. Its variation produces the scalar equation that is the Lorenz condition, and the remaining pieces produce the two dynamical equations. In this sense the chart separates the three jobs that the element form performs at once: the curl term carries the propagation, the square carries the constraint, and the mass carries the scale. The separation is a rewriting, but it is a rewriting that names each job.
 
-## The Lorenz Condition in the Chart
+## The Constraints the Action Imposes: The Lorenz Condition in the Chart
 
 **One equation on four parameters.** The chart's form of the condition is
 
@@ -145,7 +145,7 @@ with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{
 
 **What it is not.** It is not the continuity equation of a fluid and it is not a guidance equation, because the material sector has no phase and therefore no phase current to conserve. The scalar Madelung pair is a pair because the field is one complex function; here the field is a real four-vector, and the condition is a single divergence. The variational principle does not manufacture the missing half.
 
-## The Mass Term, the Branch, and the Constraint
+## The Structural Consequence: The Mass Term, the Branch, and the Constraint
 
 **The Hessian has rank three.** The kinetic part of the chart's Lagrangian is $\tfrac12\epsilon\vec E^2$ with $\vec E=-\vec\nabla_\Phi a'_t-\partial_{t'}\vec A$, so only $\vec A$ carries velocities, and
 
@@ -202,7 +202,7 @@ real scalar, central imaginary, Hermitian and real vector. The brackets are a pr
 
 **The hand check.** Count the conjugate momenta from the Hessian of the previous section: three non-zero and one zero. The zero one is not a charge; it is the primary constraint. A charge would be a non-zero momentum whose conservation follows from a symmetry, and there is no such symmetry here.
 
-## What the Polar Variational Principle Adds and What It Does Not
+## What the Principle Adds and What It Relabels: In the Polar Chart
 
 **Adds.**
 

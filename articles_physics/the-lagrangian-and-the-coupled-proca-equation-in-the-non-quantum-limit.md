@@ -33,7 +33,7 @@ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
 
-## The Blocks
+## The Action in the Non-Quantum Limit: The Blocks
 
 | block | derivative count | order |
 |---|---|---|
@@ -46,7 +46,7 @@ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar
 
 **Why the asymmetry.** The amplitude is the envelope and its curvature is $\epsilon^{2}$ against the mass term. The frame's curvature is the transport law's own content and removing it would remove the dynamics. **The two curvatures are of the same order and their fates differ because of what they are**, which is a statement a term count alone cannot make.
 
-## The Deletion in the Proca Pair
+## The Limit: The Deletion
 
 **The ledger across the two Proca articles.**
 
@@ -59,7 +59,7 @@ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar
 
 **The exactness row deserves its sentence.** On a constant envelope the deleted term is identically zero, so the truncated action is not an approximation there but the same functional. **The limit's error is exactly the envelope's curvature and nothing else**, and that is the strongest statement available in the family.
 
-## The Three Variations
+## The Variation: Three of Them
 
 **Varying the phase.** The covariant transport,
 
@@ -107,7 +107,7 @@ with $q$ the parent's charge.
 
 **The mass in the energy only.** As in every family of the corpus, the charge carries no mass and the energy carries the mass squared. The limit's contribution is that both survive with their signs intact, and that the constraint the coupling covariantises is the one that removes the fourth degree of freedom.
 
-## The Truncation and Its Error
+## The Limit: The Truncation and Its Error
 
 **There is no small parameter, and the section has to say so first.** The deleted block is the amplitude's kinetic term; the kept blocks are the frame's terms and the mass. At a plane wave the ratio of the deleted block to the mass term is not $\epsilon^{2}$ but a number of order one, and it is the same number at every time. **The truncation therefore has no error estimate, and the article's claim is that it has none.**
 
@@ -121,7 +121,7 @@ with $q$ the parent's charge.
 
 **Why the deletion is still made.** Because the surviving equations are the ones the corpus calls the non-quantum limit, and the reader is owed a statement of what that limit is even when it is not an approximation. **The article separates the definition from the justification**, and this section is where the justification fails and is said to fail.
 
-## What Survives
+## The Limit: What Survives
 
 **Three equations and a constraint, all exact on the truncated functional.** The variations of the truncated action give the frame's transport, the constraint that the scalar part of the conjugate gradient vanishes, and the mass-shell relation on the amplitude. **They are exact solutions of the truncated action and not approximations to the parent's**, and the article says exactly that and no more.
 
@@ -135,7 +135,7 @@ with $q$ the parent's charge.
 
 **What does not survive.** Any claim that the truncated theory describes a solution of the Proca equation whose envelope varies. **That class is outside the limit**, and the article's one sentence about it is in this section.
 
-## What the Variational Route Adds
+## What the Principle Adds and What It Relabels: By the Variational Route
 
 **Adds.**
 

@@ -52,7 +52,7 @@ The four terms are, in order, the phase term, the kinetic energy of the flow, th
 
 **What is absent is as informative as what is present.** There is no term in $\dot \varrho$ and no term in $\vec\nabla_\Phi\theta$ that is not inside the square. The first absence is why the density has no kinetic energy of its own; the second is why the flow's energy is the square of a gradient and therefore why the vorticity vanishes identically rather than by a constraint. Both are properties of the first-order rung. At the rung above, the two densities appear and the second absence disappears.
 
-## The Two Variations
+## The Variation: Two of Them
 
 **Varying the phase gives continuity, and the variation is one line.** Since $\mathcal L_{\mathrm{fl}}$ depends on $S$ only through $\partial_{t'}S$ and $\vec\nabla_\Phi S$,
 
@@ -88,7 +88,7 @@ because $\vec\nabla_\Phi(\vec\nabla_\Phi S)^{2}/2m=(\vec v\cdot\nabla)\vec v$ wh
 
 **The pair is closed and the count is right.** Two real fields and two real equations, with the velocity a function of the phase. The action has no constraint and needs no multiplier, and that is the first-order rung's privilege: the word has two factors, the two factors are the two fields, and the map is a bijection away from $\varrho=0$. At the rung above, the word has four factors and the count breaks.
 
-## The Quantum Potential Is a Functional Derivative
+## The Structural Consequence: The Quantum Potential Is a Functional Derivative
 
 **The third term of the Lagrangian is the whole of the quantum effect, and the quantum potential is its derivative.** Write the gradient energy as a functional of the density,
 
@@ -144,7 +144,7 @@ conserved by the continuity equation that the phase's variation gives. Translati
 
 **What the corpus keeps.** The energy is not the mass shell's value but the Legendre transform of the boxed Lagrangian, and the two differ by the quantum potential. That difference is the reason the fluid form of the Schrödinger fluid and the fluid form of the Klein–Gordon fluid do not agree term by term.
 
-## The Velocity Is Not Canonical
+## The Two Settings: The Velocity Is Not Canonical
 
 **No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid.** In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes
 
@@ -158,7 +158,7 @@ and the three variations are these. Varying $\vec\lambda$ returns the definition
 
 **A rotational fluid needs two more fields and cannot be written with $\vec v$ alone.** If the flow is not a gradient, the velocity must be represented as $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
 
-## What the Fluid Variational Principle Adds and Does Not Add
+## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The two-term structure of the Lagrangian, which names the fluid's two ingredients as the two terms. The identification of the quantum potential as a functional derivative, which turns the block's computed identity into a definition and places the fluid in the Korteweg class. The direct derivation of continuity and the energy equation, with the acceleration law as a gradient and no wave equation in between. The statement that the velocity is not canonical, in the chart where it is a one-line count. And the identification of the reverse map's hypotheses with the action's structure: the flow is irrotational because the velocity is a gradient, inviscid because no time derivative of the velocity appears, and barotropic in the extended sense because the pressure is the gradient energy's and depends on the density and its gradients alone.
 
@@ -166,7 +166,7 @@ and the three variations are these. Varying $\vec\lambda$ returns the definition
 
 **The one asymmetry worth stating.** The polar action carries four vanishing momenta; the fluid action carries one. That is not a loss of content, because at this rung three of the polar variables are absent altogether: the boost is the identity and the rotor is the identity, so their momenta have nothing to be the momentum of. The count agrees once the variables are counted.
 
-## The Action Is the Same Functional in Two Charts
+## What the Principle Adds and What It Relabels: The Same Functional in Two Charts
 
 **The statement that organizes the eight articles of this layer.** The action is a functional of the field. Written in the field's components it is the element action; written in the polar parameters it is the polar companion's; written in the density, the phase and the velocity it is this article's. The three are one functional, and the maps between the charts are the word and its derivatives.
 
@@ -174,7 +174,7 @@ and the three variations are these. Varying $\vec\lambda$ returns the definition
 
 **And the direction of the map matters here as it does there.** The forward map from the fluid's data to the field is exact away from the nodes: given $\rho_{\mathrm{num}}$ and $S$, the element is $\varrho e^{i\theta}\varepsilon e_t$ and there is nothing to solve. The reverse map, from an arbitrary barotropic irrotational inviscid flow to a wave, holds only on the image. The action sits on the fluid side and its stationarity conditions are the fluid's equations, so it does not need the reverse map at all; what it inherits is the map's domain. [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html) states the map and its qualification, and [The Fluid–Wave Correspondence: Which Constant Each Field Carries](the-fluid-wave-correspondence-which-constant-each-field-carries.html) states which direction is exact in which row. This article adds the observation that the action is the object the two directions share.
 
-## What the Fluid Adds That the Element and the Limit Do Not
+## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **One object, three readings, and the difference is what each takes as primary.** The element reading starts from the field and asks what its polar word is; the limit reading starts from the truncated action and asks what survives; **the fluid reading starts from the velocity field and asks what the density must do for that velocity to be a flow.** The third is the only one of the three in which the velocity is given before the potential, and that ordering is the fluid's contribution.
 

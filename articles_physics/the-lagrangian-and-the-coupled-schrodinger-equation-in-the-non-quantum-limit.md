@@ -26,7 +26,7 @@
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.
 
-## The Action and Its Orders
+## The Action in the Non-Quantum Limit: The Orders
 
 **The parent's action for the central field in the operator setting.**
 
@@ -55,7 +55,7 @@ with $ϙ=-q$. Five terms, and the parent's display is reproduced without change.
 
 **There is no expansion in $q$, and the reason is one sentence.** An expansion in $q$ would order the three pieces as $q^{0}$, $q^{1}$, $q^{2}$, which is a bookkeeping in the coupling rather than in the derivatives; the limit's parameter is the derivative count and the two bookkeepings are different. **A truncated series in $q$ would truncate the leading term of this limit**, and that is a different approximation of the same equation.
 
-## The Deletion
+## The Limit: The Deletion
 
 **Delete the only order-two term.** That is the whole of the limit:
 
@@ -69,7 +69,7 @@ $$
 
 **What the truncated action is.** The action of a charged, irrotational, pressureless fluid: density $\varrho^{2}$, velocity $\vec\pi/m=(\vec\nabla_\Phi S-q\vec A)/m$, no pressure, and a body force from $\varphi$ and $\vec A$. The deleted term is the fluid's pressure, as it is in the free case, and it is the only pressure the theory has.
 
-## Varying the Scale: the Covariant Eikonal
+## The Variation: Varying the Scale: the Covariant Eikonal
 
 **The scale's variation of the truncated action.** No term of $S_{\mathrm{cl}}$ carries a derivative of $\varrho$, so the Euler–Lagrange equation is algebraic:
 
@@ -95,7 +95,7 @@ which divided by $-2\varrho$ is the parent's Hamilton–Jacobi equation with $Q=
 
 **The quantum potential does not carry the connection, and the action shows why.** The deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, a function of the scale alone. The scale is invariant under the gauge group, so its gradient is too, and the divergence that follows from it is $Q$ and nothing more. **This is the variational form of the parent's first finding**, which the equation route obtains by inspection.
 
-## Gauge Invariance of the Truncated Action
+## The Constraints the Action Imposes: Gauge Invariance of the Truncated Action
 
 **The transformation on the chart.** With $\Gamma$ real, the phase is translated, the vector potential shifted, and the scalar potential shifted:
 
@@ -123,7 +123,7 @@ $$
 
 **The limit and the gauge transformation commute.** The deletion is the removal of a term built from the scale alone, so it removes a gauge invariant quantity. **Deleting and gauging in either order gives the same action**, and that is a one-line statement here and a computation in an equation-first account.
 
-## Varying the Phase: the Covariant Transport, Unchanged
+## The Structural Consequence: Varying the Phase: the Covariant Transport, Unchanged
 
 **The phase's variation of the truncated action.**
 
@@ -155,7 +155,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
-## The Truncation and Its Error
+## The Limit: The Truncation and Its Error
 
 **Which block is deleted, and how much it costs.** The truncated action drops the gradient of the density squared. That block carries two spatial derivatives and no time derivative, so its order is two in the parameter and its size against the kept terms is the density's curvature over the density itself. **The error is therefore second order and it is a functional of the density alone**, which is the same structure the scalar family has and the reason the two sections are worded alike.
 
@@ -169,7 +169,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **Why the coupling does not change the error.** The connection enters the covariant derivatives of the phase and the potential and does not enter the density's gradient. **The error is the free theory's error**, and the coupled article says so in one sentence.
 
-## What Survives
+## The Limit: What Survives
 
 **The covariant eikonal.** The phase's variation of the truncated action gives the covariant eikonal equation, with the connection inside the covariant bracket and the potential's two slots where the article's chart puts them. **The equation survives the truncation unchanged**, because the deleted block contains no phase.
 
@@ -183,7 +183,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **Why this list is short.** The family deletes one block and keeps four, so the truncated theory is thin. **The article says that plainly**: the non-quantum limit of the Schrödinger family is the eikonal plus the continuity equation, and the rest of the parent's content is in the term that was removed.
 
-## What the Variational Route Adds
+## What the Principle Adds and What It Relabels: By the Variational Route
 
 **Three things, and the third is the coupling's.**
 

@@ -18,7 +18,7 @@
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
 
-## The Action in the Limit
+## The Action in the Non-Quantum Limit
 
 **The two displays, side by side, and their difference.**
 
@@ -53,7 +53,7 @@ $$
 $$
 and that is the only change. The one-form's rotor term is untouched, because the connection is central and the rotor bracket is a real vector part.
 
-## The Deletion, Stated in Coordinates
+## The Limit: The Deletion
 
 **What is deleted.**
 
@@ -97,7 +97,7 @@ and the Euler–Lagrange equation of the density and of the guidance angle gives
 
 **The equation is recovered, not assumed.** The two evolution equations are the Euler–Lagrange equations of the boxed display, and the six remaining equations are the vanishing momenta. Both statements are read off the variation and neither is imported from the parent.
 
-## The Constraint Structure
+## The Constraints the Action Imposes: The Structure
 
 **Seven momenta and two evolution equations.** Of the eight conjugate momenta, seven vanish or are fixed functions of the coordinates; two Euler–Lagrange equations carry time derivatives, the continuity equation for $\rho_{\mathrm{num}}$ and the guidance equation; and six equations are constraints on the frame's variables.
 
@@ -105,7 +105,7 @@ and the Euler–Lagrange equation of the density and of the guidance angle gives
 
 **What the constraints are in the limit's language.** They are the frame's algebra: the rapidity, the boost's axis and the rotor's three angles are determined by the coordinates they are conjugate to. **Order zero's polarisation is this algebra**, seen from the action rather than from the equation.
 
-## The Coupling's Reach
+## The Structural Consequence: The Coupling's Reach
 
 **One potential, two brackets.** The potential is one element of $\mathbb{B}_\Phi$ with a temporal slot and a spatial vector slot, so it joins the phase bracket's temporal slot and the boost bracket's spatial slots. **No second rule is needed**, and the parent's statement that no sign can be chosen independently follows from the slots.
 
@@ -121,7 +121,7 @@ and the Euler–Lagrange equation of the density and of the guidance angle gives
 
 **What the mass term does.** It removes the phase from the dynamics of the density and puts it into the guidance equation, so that the charge is conserved without the mass appearing in its conservation law. The energy carries the mass; the charge does not. That split is the limit's form of the element article's *The Charge Has No Mass and the Energy Has Mass-Squared*, and it is the reason the two currents are computed separately here.
 
-## What the Deletion Costs and What It Buys
+## The Limit: The Truncation and Its Error
 
 **It costs the spin's curvature and the velocity's curvature.** The order-two terms deleted are the ones that would bend the density, the velocity field and the spin's frame. **Their size is the free size**: $\epsilon^{2}$ against the leading term, $\delta^{2}$ against the rest mass, because a curvature of a field varying on $L$ is $L^{-2}$.
 
@@ -131,7 +131,7 @@ and the Euler–Lagrange equation of the density and of the guidance angle gives
 
 **It buys a comparison the corpus can make and does not make elsewhere.** The two displays are printed in the same article, so the limit's ledger is not a reconstruction but an inspection. **This is the only family in the corpus where that is so**, and it is worth saying because the reader's natural question — what exactly does the limit throw away — has a printed answer here.
 
-## What Survives
+## The Limit: What Survives
 
 **The constraints survive, and they are the limit's whole content.** The truncated functional's variations give the mass-shell relation at the shifted frequency, the condition that fixes the frame's polarisation, and the vanishing of the three momenta that the polar word never gave a kinetic term. **None of these is an approximation**: they are the parent's conditions, and the limit is their statement.
 
@@ -145,7 +145,7 @@ and the Euler–Lagrange equation of the density and of the guidance angle gives
 
 **Why the family is worth its own article, then.** Because the exact structure is not the classical point-particle theory: the frame is a dynamical variable, the spin is a density, and the transport is not a geodesic equation. **The non-quantum limit of the Dirac family is the closest thing the corpus has to a classical spinning particle**, and it is exact, which is why the family's three articles each end with what survives rather than with what is lost.
 
-## What the Variational Route Does Not Do
+## What the Principle Adds and What It Relabels: What the Route Does Not Do
 
 **It does not derive the force.** The parent says so: the type table says where the potential acts and not what the resulting motion is. The force is read from the gradient of the mass shell, which is the equation-route companion's computation.
 

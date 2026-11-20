@@ -18,7 +18,7 @@
 
 **One symbol is used and not defined by this article.** The literature's action is written with matrices that act on the spinor index. The parent's equation has no matrix, because the algebra's left and right multiplication supplies the action of the frame directly. Where this article names the standard action, it does so in the literature's notation and marks the matrices as unnamed, since their biquaternionic counterparts are the object the corpus has not built.
 
-## The Action Named and Not Written
+## The Action in Element Form: Named and Not Written
 
 **The standard action, named.** In the literature the massive spin-$\tfrac32$ field's action is written with a vector-spinor $\psi_\mu$, the Dirac matrices $\gamma^\mu$, and the object $\gamma^{\mu\nu}=\frac{i}{2}[\gamma^\mu,\gamma^\nu]$:
 
@@ -48,7 +48,7 @@ with the antisymmetrised product $\gamma^{\mu\nu\rho}$. It is not written here i
 
 **Why the check is not optional.** The spin-$\tfrac32$ equation has the well-known pathology that its constraints are needed to remove the lower-spin content, and an action that does not produce them describes more degrees of freedom than the parent's equation does. So the missing object is not a convenience: without it the count of degrees of freedom is wrong, and the count is what the next section but one is about.
 
-## The Constraints the Action Would Impose
+## The Constraints the Action Imposes: The Constraints the Action Would Impose
 
 **Two constraints, and they are the parent's.** The trace constraint $\tilde\Xi_0+\sum_\eta\vec e_\eta\tilde\Xi_k\vec e_z=0$ and the divergence constraint $\sum_\mu\varepsilon_\mu\partial_\mu\tilde\Xi_\mu=0$ are the parent's statements. This section records what they do to the count, because the action's job is to produce them.
 
@@ -78,7 +78,7 @@ with the antisymmetrised product $\gamma^{\mu\nu\rho}$. It is not written here i
 
 **Why the section exists at all.** Because a reader is entitled to know what survives the absence. The currents survive in form; the normalisation, the multiplier structure and the variational derivation do not.
 
-## What the Absence Changes and Does Not Change
+## What the Principle Adds and What It Relabels: The Absence
 
 **It does not change the physics of the parent.** The equation, the constraints, the quartet, the gauge freedom: all of it stands, and none of it was derived from an action.
 

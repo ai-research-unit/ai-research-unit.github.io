@@ -30,7 +30,7 @@ The parent writes it in $r'_t$ with a factor $c$; the substitution $i\hbar\,c\,\
 
 **The two kinds of coefficient.** A *Hermitian coefficient* is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with real numbers. A *root* is $\tilde Z$ with $\tilde Z^{2}=-e_t$; the four used below are $i$, $\vec e_z$, $\vec e_x$ and $(\vec e_x+\vec e_z)/\sqrt2$. Every root is anti-Hermitian, because $\vec e_\mu^{*}=-\vec e_\mu$ and $i^{*}=-i$.
 
-## The Quadratic Form at Fixed Frequency
+## The Action in Momentum Space: The Quadratic Form at Fixed Frequency
 
 **One substitution.** Put $\tilde\Xi=e^{-i\omega t'}\tilde X$ with $\tilde X$ constant. Then $\partial\tilde\Xi=-i\omega\tilde\Xi$, the antisymmetrised kinetic density is $\hbar\omega\,\mathrm{Sc}(\tilde X^{*}\tilde X)$, and the action becomes
 
@@ -49,7 +49,7 @@ $$
 
 **What the substitution does not do.** It does not discretise, and it does not assume a single frequency for a general field. A general field is a sum of such terms, and the action is the sum of the forms plus the cross terms that the transform's orthogonality removes. **The cross terms are the interference, and they are what makes a superposition's density not the sum of densities.**
 
-## The Boundary Term, and Why One Variation Suffices
+## The Variation: The Boundary Term
 
 **The boundary term.** Varying $\tilde\Xi^{*}$ and integrating the kinetic term by parts gives
 
@@ -76,7 +76,7 @@ and it holds for every anti-Hermitian root, for the same reason the action is re
 
 **Why the Hermitian pairing is enough.** For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. **The argument is the parent's and it is quoted once here.**
 
-## Reality of the Action Is the Anti-Hermitian Root
+## The Reality of the Action: The Anti-Hermitian Root
 
 **The equation with a root.** Write $\hbar\,c\,\tilde Z\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ with $\tilde Z^{2}=-e_t$, in the parent's own form. The action that produces it has the kinetic coefficient $\hbar c\,\tilde Z$ in place of $i\hbar c$, because the variation must return the equation's own operator.
 
@@ -94,7 +94,7 @@ so $K^{*}=K$ exactly when $\tilde Z^{*}=-\tilde Z$. **The action is real exactly
 
 **What the reality does not use.** It does not use the centrality of the root, and it does not use any commutation with the Hamiltonian. It uses one thing: the root's type. **That is the whole content of this section, and it is why the next section can report a gap.**
 
-## Reality of the Action Is Weaker Than Reality of the Spectrum
+## The Reality of the Action: Weaker Than Reality of the Spectrum
 
 **The stronger requirement.** The parent requires the generator $-\tilde Z\tilde H_\Psi/(\hbar c)$ to be anti-Hermitian for every Hermitian $\tilde H_\Psi$, so that the flow preserves the norm. In $t'$ the generator is $\frac{1}{\hbar}\tilde Z^{-1}\tilde H_\Psi$, and its anti-Hermiticity is
 
@@ -124,7 +124,7 @@ with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros a
 
 **A caveat in the other direction.** Reality of the spectrum does not imply that the action with that root is real for a non-Hermitian Hamiltonian, and the article makes no such claim. Both statements are about Hermitian coefficients, and both are about different objects: one about a functional, one about a pencil.
 
-## The Symbol Is the Quadratic Form
+## The Structural Consequence: The Symbol Is the Quadratic Form
 
 **Two readings of one identity.** Read as an operator, $\sigma(\omega)$ is an array; read as a quadratic form, it is $\tilde X\mapsto\langle\tilde X,\sigma(\omega)\tilde X\rangle$. The two agree on the diagonal and differ off it; the form determines the self-adjoint part of the array, and that is all the action can see.
 
@@ -162,7 +162,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## Parseval Is the Noether Charge's Transform
+## The Noether Currents: Parseval Is the Charge's Transform
 
 **The charge.** The parent's phase symmetry gives the current whose temporal component is $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the conserved charge is $Q_N=\int\mathrm{d}t'\,n$. The factor of two against $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is the $2\,\mathrm{Sc}(\tilde Q)=2Q_t$ convention and is not a normalisation.
 
@@ -188,7 +188,7 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 
 **What Parseval does not say.** It does not say that the coefficients are probabilities, and it does not normalise them. **The charge is a real number and the algebra supplies no probability rule**; the corpus's measurement articles are where that reading is made, and this article does not make it.
 
-## Legendre
+## The Legendre Transform
 
 **The slope.** $\partial\sigma/\partial\omega=\hbar$ for every $\tilde H_\Psi$, because the Hamiltonian does not depend on the frequency. A central difference on the scalar part at $\omega=0.7$ returned $1.000000000000$ at a step of $10^{-2}$ and $10^{-4}$, and $1.000000000029$ at $10^{-6}$, which is the roundoff of the step and not a deviation of the slope. **The frequency is conjugate to time with slope $\hbar$, and the slope is the same for every Hamiltonian.**
 
@@ -200,7 +200,7 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 
 **What the slope fixes.** The slope fixes the normalisation of the transform and therefore the normalisation of $Q_N$ and $E$. **One choice of $\hbar$ fixes both**, and no second convention enters.
 
-## Limits
+## The Limits and the Truncation’s Error
 
 **Constant coefficients.** Every statement about the symbol needs a constant Hamiltonian, and the operator setting replaces the symbol by a convolution. The action remains real there, term by term, for the same reason; what fails is the fixed-frequency reduction, not the reality.
 
@@ -208,7 +208,7 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 
 **One-time functionals.** The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.
 
-## What the Variational Reading Adds
+## What the Principle Adds and What It Relabels: In Momentum Space
 
 **One identity and one separation.** The identity is that the symbol is the fixed-frequency action's kernel, so the two companion articles describe one object. The separation is that the reality of the action and the reality of the spectrum are different requirements, with different strengths and different counts.
 

@@ -22,7 +22,7 @@ with $\tau^{a}$ the Pauli matrices. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dag
 
 **One convention is a warning.** The corpus's biquaternion algebra carries the $U(1)$ connection exactly and the $SU(2)$ connection only partly — the electroweak articles state the reach and the ceiling. So the displays below are in the component dictionary, which is exact, and the biquaternionic translation is claimed only where the electroweak articles claim it.
 
-## The Action
+## The Action in Element Form
 
 **The unbroken action, in four terms.**
 

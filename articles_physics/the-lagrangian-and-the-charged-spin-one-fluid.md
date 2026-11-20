@@ -54,7 +54,7 @@ and the identity behind the split is algebraic: $F(D)(r u)=r\,(Du)+\mathrm{d}r\w
 
 **Where the constraint comes from.** The mass block has no derivative, so the scalar part of the connection's equation is the only constraint the system has; it is derived in the next section and it is not imposed here. The variation is what makes the distinction between an equation and a constraint visible: both are Euler–Lagrange equations of the same functional, and the difference is which coordinate they determine.
 
-## The Lorenz Condition Ceases to Be Continuity
+## The Constraints the Action Imposes: The Lorenz Condition Ceases to Be Continuity
 
 **The identity survives and the conclusion changes.** Taking the covariant divergence of the field equation,
 
@@ -86,7 +86,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 *The count of equations changes in one place.* The free rung had four field components, four equations, and one of them a consequence of the others through an identity. The charged rung has the same four and the same identity, and the consequence is now a condition with a source rather than a conservation law. **The count is the same and the content is not.**
 
-## What the Mass Term Still Does
+## The Structural Consequence: What the Mass Term Still Does
 
 **Three statements, and each is unchanged.**
 
@@ -100,7 +100,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 **And the coupling does not break the external gauge symmetry.** Under $A\mapsto\lambda A$ with $\lambda=\exp(iϙ\Gamma/\hbar)$ and $A^{\mathrm{ext}}_\mu\mapsto A^{\mathrm{ext}}_\mu-\partial_\mu\Gamma$, both terms are invariant: the derivative term because $D$ is, the algebraic term because $\lvert\lambda\rvert^{2}=1$. **Two different freedoms must be kept apart**: the field's own shift, which the mass breaks at both rungs, and the external group's phase rotation, which is a symmetry at the charged rung and is what makes the carrier complex.
 
-## What the Carrier's Doubling Costs
+## The Structural Consequence: What the Carrier's Doubling Costs
 
 **The free carrier has four real parameters; the charged one has eight, and the action says which term sees which.** The block's charged article records the doubling and this article states its location: the derivative term sees all eight, the algebraic term sees one combination of them — the magnitude — and the external gauge redundancy removes one.
 
@@ -116,7 +116,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 **The sign.** The charge is $q\rho_{\mathrm{chg}}$ with $\rho_{\mathrm{chg}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}>0$, so the sign is $q$'s. The spin's sign is negative, the frame's, and the two signs are independent: a positive charge can carry a spin pointing either way. That independence is the reason the article treats the two currents separately and does not fold them into one.
 
-## What the Fluid Variational Principle Adds and Does Not Add
+## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The location of the coupling in the action: the derivative term and not the algebraic one, hence the pressure's survival and the continuity's loss. The decomposition $F=r\Omega+\mathrm{d}r\wedge u$ as an algebraic identity with $D$ in place of $\mathrm{d}$, and with it the statement that the vorticity's source has changed while its structure has not. The condition's loss of its fluid reading, stated as the source term that $\partial\cdot A$ acquires. The separation of the two gauge freedoms. And the count's failure to close, located at the carrier's complex structure.
 
@@ -124,7 +124,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 **The layer's ledger, in one sentence per article.** The scalar first-order rung has one substitution in two brackets; the scalar relativistic rung has a substitution that meets the shell; the spinor rung has a substitution whose image is the phase and the boost and never the rotor; the vector rung has a substitution that reaches the derivative term and leaves the pressure alone and takes the continuity away. **Four charged articles, one connection, four different reaches** — and the reaches are read off the connection's type in the algebra, which is the same argument in all four.
 
-## What the Fluid Adds That the Element and the Limit Do Not
+## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **A charge and a constraint in the same fluid, and the article's claim is that they do not interact.** The coupled Proca fluid has a charge because the phase is coupled, and it has a constraint because the scalar part of the conjugate gradient vanishes. **The fluid reading is where the two are seen to be independent**: the charge is the phase's conjugate, the constraint is the frame's, and neither equation contains the other.
 

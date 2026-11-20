@@ -26,7 +26,7 @@ with $\beta=\lvert\vec v\rvert/c$, $\vec\omega_{\mathrm r}$ the rotor's body ang
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\beta=\tanh\theta_{\mathrm{rpd}}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ with $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. The action is the element action of [The Lagrangian and the Dirac Equation in Polar Variables](the-lagrangian-and-the-dirac-equation-in-polar-variables.html), and the spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow.
 
-## The Kinetic Term
+## The Action in the Fluid Variables: The Kinetic Term
 
 **The computation is the polar companion's and its result is one line.** Substituting the complete polar decomposition into $\frac{\hbar c}{2}\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\nabla_\Phi\tilde\Xi_R]$ and keeping the temporal slots gives
 
@@ -54,7 +54,7 @@ $$
 
 **What the variation cannot give.** It cannot produce the pressure, because the action has no term in $\rho_{\mathrm{num}}$ alone apart from the mass term; a fluid with an equation of state needs one. That absence is the article's declaration, not a defect of the calculation, and it is what makes the spin-half fluid a pressureless fluid with a spin.
 
-## The Constraints and Where the Non-Closure Lives
+## The Constraints the Action Imposes: Where the Non-Closure Lives
 
 **The four vanishing momenta are four primary constraints, and they are second class.** That is the polar companion's computation, and the fluid chart states its content: $\phi_1=p_r$, $\phi_2=p_{\theta_{\mathrm{rpd}}}$, $\phi_{3,4}=p_{u_{\mathrm{b}}}$ vanish on every configuration, and their brackets with the configuration variables are not zero, so they are second class and the system is reduced by a Dirac bracket rather than by a gauge.
 
@@ -64,7 +64,7 @@ $$
 
 **The counting is worth recording because it is where the two rungs differ.** At the first-order rung there are no constraints and the Dirac bracket is the Poisson bracket. At the scalar relativistic rung there are none either. Here there are four, and they are the price of writing the velocity as a coordinate: **a fluid always has more coordinates than canonical ones, and the difference is the constraints.**
 
-## The Mass Term and the Declared Direction
+## The Structural Consequence: The Mass Term and the Declared Direction
 
 **The mass is the one term the fluid's data do not determine, and the article states it without softening it.** The polar companion finds that the element-form mass bilinear vanishes on the frame's parts: the two chiral parts sit in complementary right ideals, $\Pi_+\Pi_-=0$, and $\mathrm{Sc}$ is cyclic, so the pairing is zero identically. The mass returns only when the bilinear carries a fixed unit direction inside it, $\tilde\Xi_R\mapsto\tilde\Xi_R i\vec v$ with $\vec v\perp\vec e_z$.
 
@@ -74,7 +74,7 @@ $$
 
 **What follows is a statement of scope and not a resolution.** The action below is the corpus's, with the declaration, and every canonical statement in this article is independent of it — the kinetic term and the table do not contain the mass term at all. **A reader who wants the mass without a declared direction must change the naming of the parts, and that is a different article.** The corpus's [Klein–Gordon from the Dirac Square](klein-gordon-from-the-dirac-square-in-biquaternionic-form.html) supplies the second-order equation in which the pairing does not arise, and it is the natural place to look for the resolution.
 
-## The Two Currents, and What the Particle Setting Cannot See
+## The Noether Currents: The Two Currents, and What the Particle Setting Cannot See
 
 **The action's invariances give the block's two currents, and the identification is exact for one and conditional for the other.** Translation invariance gives the stress; the phase's shift gives the current; the frame's rotation gives the spin current. In the particle setting the first two are the block's $\tilde J_\Phi$ and $T_{\mu\nu}$ restricted to a homogeneous field, and the third is $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ with the transport law that the rotor's equation supplies.
 
@@ -84,7 +84,7 @@ $$
 
 **The honest boundary.** This article does not compute those terms. It states the closed form of the particle setting, the canonical table that follows from it, the location of the non-closure, and the structure the operator setting must have. **A reader looking for the full field-theoretic Lagrangian of the spin-half fluid will find the particle setting's exact result and the operator setting's programme, and the two are not the same article.**
 
-## The Canonical Table
+## The Two Settings: The Canonical Table
 
 **Four statements, and each is an identity rather than a sample.** Differentiating the closed form,
 
@@ -104,7 +104,7 @@ $$
 
 **The qualification is part of the table and not a footnote.** At $\theta_{\mathrm{rpd}}=0$ the spin's momentum vanishes with the density's and the velocity's, and the table has one non-zero row. The polar companion records that the phase and the spin are not unconditional: the unconditional form of the claim fails at rest. The fluid chart's version of the correction is the weight $\beta$: **the spin's canonical weight is the flow's speed, so the rest frame is the degenerate case of the table and not an exception to it.**
 
-## What the Fluid Variational Principle Adds and Does Not Add
+## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The kinetic term as one bracket with the spin's weight $\beta$ visible in it, which is the sharpest statement of why a rest frame has no spin dynamics. The canonical table as an identity: which of the triple's data carry momentum, with what weights and along which directions. The canonical spin's direction named as the boost axis in the body frame, and the block's degeneracy stated as a lock of magnitudes that does not make the two directions one vector. The location of the non-closure in the Dirac bracket, which turns the block's structural obstruction into a computable object. And the mass term's declared direction stated as the one place the fluid's data are insufficient.
 
@@ -112,7 +112,7 @@ $$
 
 **The one comparison that matters for the layer.** The scalar relativistic article of this layer finds the shell to be an equation of motion and the stress to be a translation current. Here the analogous statements are weaker: the constraints are constraints and not equations, because the frame's variables are coordinates with no kinetic term, and the stress is a restriction of the block's. **The difference is the count of the word's factors**: two for the scalar, four for the spinor, and the two extra factors carry no kinetic term at all.
 
-## What the Fluid Adds That the Element and the Limit Do Not
+## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **The spin current is the fluid's own object.** In the element reading the spin is a density carried by the frame; in the limit reading it is a first integral; **in the fluid reading the spin has a current, and the current's divergence is a torque.** The third object — the torque — appears in no other reading of these three articles, and it is the reason this article exists.
 

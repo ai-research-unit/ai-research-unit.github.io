@@ -30,7 +30,7 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, wit
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the polar parent and its variational companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\Gamma_\mu$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$.
 
-## The Action in the Word
+## The Action in the Non-Quantum Limit
 
 **The blocks.**
 
@@ -46,7 +46,7 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, wit
 
 **The constraint.** The Lorenz condition is the scalar part of the equation, $\mathrm{Sc}(\tilde\nabla_\Phi^{\natural}\tilde A_\Phi)=0$, which in the chart is one real equation among four. **It is a constraint on the frame and on the amplitude together**, and it is the chart's version of the transversality of a massive vector field.
 
-## The Deletion
+## The Limit: The Deletion
 
 **What is deleted.** The Proca action's amplitude sector is $\tfrac12(\partial\varrho)^{2}-\tfrac12k_m^{2}\varrho^{2}$ plus the frame's terms, and the limit deletes the first block: **the amplitude's kinetic term, a two-derivative object, is removed and the mass term is kept.** The frame's terms carry two derivatives as well and are kept, which is the first sign that this family is not the scalar one.
 
@@ -58,13 +58,29 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, wit
 
 **Why the section comes before the variations.** Because the variations of the truncated action are the variations of a different functional, and a reader has to know which term is missing before reading them. **The three variations are then three statements about the surviving blocks**, and the article's order — deletion, then variations, then what survives — is the order of the argument and not a convenience.
 
-## The Two Variations
+## The Variation: Two of Them
 
 **Two variations of one display, and a third for the constraint.** The chart's action has an amplitude block with two derivatives, a mass block with none, and the frame's sigma-model term. Varying the amplitude gives an equation with a second derivative and the mass term; varying the frame's angles gives the transport of the boost, which is the article's *What Survives*; varying the connection gives the Lorenz condition.
 
 **The boundary term.** The amplitude's variation produces one, because its block carries two derivatives; on a region with fixed amplitude on the boundary it vanishes, and on a region that reaches infinity the fall-off kills it. The frame's variation produces none, because the frame enters algebraically through $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ and through no derivative of its own beyond the covariant one.
 
 **Why the constraint is not a choice.** The Lorenz condition is the scalar part of the connection's variation, so it is one of the Euler–Lagrange equations and not a gauge fixing. In the massless limit the same variation gives an identity instead, and that change of status is the article's *The Truncation and Its Error* read from the variation side.
+
+## The Structural Consequence: The Obstruction Is Visible in the Coefficients
+
+**The claim.** In this chart no non-quantum limit exists as an approximation, and the reason is visible in two coefficients of one display rather than in an order count. **A limit that deletes half of an operator is a change of theory**, and the article's contribution is to show that the Proca amplitude's block is one operator with two halves.
+
+**Why the coefficients settle it.** The amplitude's sector of the action is read off the display of *The Action in the Word*:
+
+$$
+\mathcal{L}_{\varrho}=\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partial_\mu\varrho\bigr)^{2}-\tfrac12k_m^{2}\varrho^{2},
+$$
+
+and the two blocks are the two terms of $(\Box_\Phi-k_m^{2})\varrho$. **The first carries two derivatives and the second carries the mass squared, and for a solution both are of order $k_m^{2}$**, because the dispersion relation puts $\omega^{2}-\lvert\vec k\rvert^{2}$ at $k_m^{2}$. Deleting the first leaves an algebraic amplitude with the frame still dynamical; that is a different action, not a smaller one.
+
+**What the claim rules out, and what it leaves standing.** It rules out an eikonal expansion, a ray equation and any statement of a truncation error as a power of a small parameter, since no such parameter exists in the sector. It leaves standing the frame's transport and the Lorenz condition, both exact, both variations of the same functional, and both stated in *What Survives*. **The negative result and the positive one are the same observation read in two directions.**
+
+**What it does not claim.** It does not claim that the Proca field has no classical limit: the parent equation is that limit and it is exact. It does not claim that the chart is useless: the frame's sector is what the chart is good for. **It claims one thing, that the deleted term and the retained term are the same size**, and *The Truncation and Its Error* is where the size is computed.
 
 ## The Noether Currents: The Stress and No Charge
 
@@ -80,17 +96,7 @@ with $\vec E$ and $\vec B$ the chart's fields. The energy is what the frame's tr
 
 **What the absence says about the limit.** A non-quantum limit is usually read as a particle limit, with a density and a flux. This family has neither, so the limit's language does not transfer: what survives is a field's stress and a constraint. That is the sharpest negative result of the family, and it is why the article refuses a truncation.
 
-## The Truncation and Its Error
-
-## What Survives
-
-**The frame's sector.** The variation of the frame's angles returns the parent's second boxed equation, and it is the chart's genuine dynamical content. **The frame of a real massive vector field is a dynamical object and its transport is exact.**
-
-**The constraint.** The Lorenz condition is exact and it is one equation among four. **In the other families the analogous condition is the transversality of the polarisation**, and here it comes from the action's own structure.
-
-**The absence of a quantum potential.** With no small parameter there is no term that plays the role of a correction, so nothing in this family deserves the name. **The corpus's language about a quantum potential does not transfer to the free Proca chart**, and the article records that rather than inventing one.
-
-
+## The Limit: The Truncation and Its Error
 
 **What a non-quantum limit would delete.** The amplitude's kinetic term, by analogy with every other family. **What remains is $-\tfrac12k_m^{2}\varrho^{2}$ plus the frame's terms**, that is an algebraic amplitude and a dynamical frame.
 
@@ -108,7 +114,15 @@ with $\vec E$ and $\vec B$ the chart's fields. The energy is what the frame's tr
 
 **What the variational route can still do.** It can state the constraint and the frame's transport as variations, which is exact. **It cannot justify a truncation, and the honest move is to say so and stop**, rather than to present a truncation whose error is unestimated because it is large.
 
-## What the Variational Principle Adds to the Family
+## The Limit: What Survives
+
+**The frame's sector.** The variation of the frame's angles returns the parent's second boxed equation, and it is the chart's genuine dynamical content. **The frame of a real massive vector field is a dynamical object and its transport is exact.**
+
+**The constraint.** The Lorenz condition is exact and it is one equation among four. **In the other families the analogous condition is the transversality of the polarisation**, and here it comes from the action's own structure.
+
+**The absence of a quantum potential.** With no small parameter there is no term that plays the role of a correction, so nothing in this family deserves the name. **The corpus's language about a quantum potential does not transfer to the free Proca chart**, and the article records that rather than inventing one.
+
+## What the Principle Adds and What It Relabels: To the Family
 
 **Adds.**
 

@@ -26,7 +26,7 @@
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with its eight real parameters; the central field $\theta_{\mathrm{rpd}}=0$, $\tilde u_{\mathrm r}=\varepsilon e_{t}$; the operator setting $\tilde H_\Psi=\hat H e_{t}$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V_{\mathrm{op}}(\vec x)$; $\Delta_\Phi$ the Laplacian of the material sector; $S=\hbar\theta_{\mathrm{pha}}$.
 
-## The Action and Its Two Orders
+## The Action in the Non-Quantum Limit: The Two Orders
 
 **The parent's action for the central field in the operator setting.**
 
@@ -51,7 +51,7 @@ with $\dot\theta_{\mathrm{pha}}=\partial_{t'}\theta_{\mathrm{pha}}$ and $V_{\mat
 
 **Why the phase's gradient is order zero and the scale's is order one.** In the phase, a spatial derivative brings down $k_{\Phi}=\lvert\vec p\rvert/\hbar$, which is the large number. In the scale, a spatial derivative brings down $L^{-1}$, which is small against it. The ratio is the parameter, $\epsilon=1/(k_{\Phi}L)$, and the distinction is exactly the one the companion states: only derivatives of the scale are ordered.
 
-## The Deletion
+## The Limit: The Deletion
 
 **Delete the order-two term.** That is the whole of the limit in this route:
 
@@ -65,7 +65,7 @@ $$
 
 **The four terms have a reading, and it is worth one line each.** The first is the phase's rate times the density, and it is what makes the action first order. The second is the kinetic energy of the flow, $\rho_{\mathrm{num}}\lvert\vec v\rvert^{2}/2$ with $\rho_{\mathrm{num}}=\varrho^{2}$ and $\vec v=\hbar\vec\nabla_\Phi\theta_{\mathrm{pha}}/m$. The third, deleted, is the only term quadratic in the scale's gradient. The fourth is the potential energy times the density.
 
-## Varying the Scale: the Eikonal
+## The Variation: Varying the Scale: the Eikonal
 
 **The scale's variation, on the truncated action.** With $\partial L_{\mathrm{cl}}/\partial(\partial_\mu \varrho)=0$ because no term of $L_{\mathrm{cl}}$ carries a derivative of $\varrho$, the Euler–Lagrange equation is algebraic:
 
@@ -99,7 +99,7 @@ $$
 
 for a stationary state, and the leading-order equation is the vanishing of a quadratic form the algebra already carries.
 
-## Varying the Phase: the Transport, Unchanged
+## The Structural Consequence: Varying the Phase: the Transport, Unchanged
 
 **The phase's variation, on the truncated action.**
 
@@ -135,7 +135,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
-## The Truncation and Its Error
+## The Limit: The Truncation and Its Error
 
 **The deleted block, and its order.** The limit drops $(\nabla\varrho)^{2}/(2m\varrho)$, which carries two spatial derivatives and no time derivative. **Its order is two and its coefficient is $\hbar^{2}/2m$**, so the error is second order in the parameter and first order in $\hbar$ — a quantum correction in the literal sense.
 
@@ -149,7 +149,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **Why the section follows the deletion.** Because the deletion names the term and this section prices it, and the price is what a reader needs before reading the surviving equations as exact.
 
-## What Survives
+## The Limit: What Survives
 
 **The eikonal, exactly.** The scale's variation of the truncated action gives the eikonal equation, and it is not an approximation to the parent's: **it is the parent's equation with the quantum potential set to zero**, and the difference is the deleted block alone.
 
@@ -163,7 +163,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **Why the list is short.** One block is deleted and four are kept, so the truncated theory is the eikonal plus the transport plus the currents. **That is the whole of the non-quantum limit of the Schrödinger family**, and the article's summary says exactly that in one line.
 
-## What the Variational Route Adds
+## What the Principle Adds and What It Relabels: By the Variational Route
 
 **Three things, and each is a statement about the terms that the equation route can only make about equations.**
 

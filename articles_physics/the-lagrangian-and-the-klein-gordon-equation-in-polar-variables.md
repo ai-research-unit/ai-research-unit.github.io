@@ -156,7 +156,7 @@ $$
 
 which is Madelung's relativistic action for the pair $(\varrho,S_{\tilde\Xi})$ with $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The signs are the Minkowski ones, so the amplitude equation of the next section carries the d'Alembertian and not the Laplacian.
 
-## The Euler–Lagrange Equations
+## The Variation: The Euler–Lagrange Equations
 
 ### The central field: the pair, and nothing else
 
@@ -204,7 +204,7 @@ For the eight parameters the statement is one line and it is exact.
 
 The equivalence holds on the $N$-regular set, and only there. At $\varrho=0$ the word has no value, the parameters are not coordinates, and the parameter equations are not defined; the Klein–Gordon equation itself is defined and regular there, and its solutions cross the nodal set without incident. So the polar action is a description of the field off its nodal set, and the element-form action of the companion is the description of the field everywhere. The two agree wherever both are defined. This is the same boundary the parent records, and the variational principle inherits it unchanged: a parametrisation cannot extend a functional past the points where the parametrisation stops.
 
-## The Four Brackets and the Parameter Basis
+## The Parameter Basis and the Four Brackets
 
 ### Two bases of one tangent space
 
@@ -248,9 +248,23 @@ so the Jacobian is diagonal and the metric is $(1,\varrho^{2})$. The two paramet
 
 **The parameter form is the Jacobian image of it.** It is the form in which the variational principle is stated over eight real functions with no auxiliary object, and it is the form in which the count is right: eight functions, eight equations, no constraint. But it is not simpler, and the parameter equations are not four equations plus four conditions; they are eight equations whose content is the brackets'.
 
-**The equivalence is exact.** The Jacobian is invertible on the $N$-regular set, so the two systems have the same solutions there. Neither is weaker: a solution of the brackets is a solution of the parameters and conversely, and the passage is the chain rule.
 
-## The Currents in Polar Variables
+## The Structural Consequence: The Chart Is a Change of Variables, and That Is the Whole Claim
+
+**The claim.** The polar action is the element action written in eight real coordinates. It is not a second functional, it carries no constraint, and it needs no multiplier. Everything the article derives follows from that one statement, and the statement is checkable by hand.
+
+**The check.** The word $p\mapsto\tilde\Xi$ is a bijection from the parameter domain onto the $N$-regular set, with a smooth inverse and a Jacobian of full rank everywhere on that set. The residual identity
+
+$$
+R_a=\mathrm{Sc}\Big[\Big(\frac{\partial\tilde\Xi}{\partial p^{a}}\Big)^{*}E\Big],
+\qquad a=1,\dots,8,
+$$
+
+then says that the eight parameter equations vanish exactly when $E$ vanishes: the Jacobian is the only object between the two systems, and it is invertible, so neither system is stronger and the passage between them is the chain rule. On the central field the check is one line, because the Jacobian is diagonal there with $\det J=\varrho>0$ and the parameter domain excludes $\varrho=0$ (§*The Parameter Basis and the Four Brackets*).
+
+**What the claim does not say.** It says nothing about the flow. The bijection makes the *variation* the same variation; it does not make the constrained dynamics the same object, and where that question arises the article defers it to §*The Reconstruction and Its Limits*. A change of variables is exact or it is not, and here it is exact. A flow is a further statement, and the article does not make it.
+
+## The Noether Currents: The Currents in Polar Variables
 
 The Noether currents of the companion are one computation in the element form and one line each in these variables. That is the clearest thing the polar action adds.
 
@@ -305,7 +319,7 @@ which is four squares and a positive potential for $V>0$, hence non-negative for
 
 The second equation of the pair is the variation of $\varrho$, and in the polar variables it reads as the mass shell shifted by the curvature of the amplitude. So the two Euler–Lagrange equations of the polar action are the two statements of the parent's §*The Equation in Polar Variables*, and the variational principle adds to them the statement that they are two variations of one functional. The action that produces both is the one of §*The Action in Polar Variables*, and no second functional is needed.
 
-## What the Polar Variational Principle Adds and What It Does Not
+## What the Principle Adds and What It Relabels: In the Polar Chart
 
 **Adds.** A variational derivation of the parent's pair, with the two equations as two variations of one functional. The exact metric of the parameter space, with the cosh on the squares, the two sinh cross terms and the unit determinant of the amplitude–rapidity block. The potential as $\varrho^{2}V$ with the same $V$ as the Schrödinger companion, so that the two articles' potentials are one function. The statement that the charge conservation is the phase equation and the mass shell is the amplitude equation. The statement that the unit conditions cost no multiplier, because the word is a parameterisation of the constraint surface. And the statement that the second-order polar action has no primary constraint, in contrast with the first-order case.
 

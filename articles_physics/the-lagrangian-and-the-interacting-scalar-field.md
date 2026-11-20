@@ -22,7 +22,7 @@ $$
 
 which is real and non-negative for every field, because $\tilde\Xi^{*}\tilde\Xi$ is Hermitian and a Hermitian element's scalar part is real. The symbol $N$ is used for this number throughout and is not to be confused with a particle number: it is a density per unit volume, and the corpus's charge density is a different object.
 
-## The Action
+## The Action in Element Form
 
 **The free action plus one term.**
 

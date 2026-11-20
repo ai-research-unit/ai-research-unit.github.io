@@ -24,7 +24,7 @@ The addition is the bracket's notation. For a field $\phi$ and its conjugate $\p
 
 **One symbol is a postulate and is marked.** The promotion's symbol is $\frac{1}{i\hbar}[\,,\,]$. Everything to its left is classical and derivable from the actions the corpus has; everything to its right is a new axiom. The article marks the boundary once, here, and does not blur it below.
 
-## The Action It Starts From
+## The Action in Element Form: The Point of Departure
 
 **The starting point is a quadratic action, and the family has ten of them.** Each is of the form
 
@@ -40,7 +40,7 @@ with $\mathcal{D}$ a differential operator: $\Box_\Phi-k_m^{2}$ for the scalar, 
 
 **The first-order case.** For the Dirac action the operator is first order and the conjugate momentum is a bilinear of the field rather than its own derivative; the article's *The Conjugate Pair* is the classical statement of that, and it is why the promotion of a first-order action needs the Dirac bracket rather than the Poisson one.
 
-## The Peierls Bracket
+## The Variation: The Peierls Bracket
 
 **The construction, in three lines.** Let $G_{R}$ and $G_{A}$ be the retarded and advanced Green functions of $\mathcal{D}$, fixed by the boundary conditions that a source switched on at a time affects the field only after it (retarded) or before it (advanced). Then
 
@@ -66,7 +66,7 @@ which vanishes at $\Delta r'^{0}=0$ and whose time derivative there is $\delta^{
 
 **What the construction needs that the corpus has.** The Green functions of each action. The family's articles compute them or state their form in momentum space; the momentum-space articles are where the propagators appear, and they appear there as Green functions and not as quantum propagators. The distinction is the whole of this article.
 
-## The Dirac Bracket
+## The Constraints the Action Imposes: The Dirac Bracket
 
 **Constraints, and the bracket they force.** When the action is first order or has a gauge symmetry, the Legendre transform does not invert and the naive bracket is inconsistent on the constraint surface. Dirac's construction replaces it: solve the constraints, or gauge-fix them, and define
 
@@ -114,7 +114,7 @@ Then expand $\hat\phi$ in the modes of the free action, $\hat\phi=\sum_k(a_k u_k
 
 **The honest ledger.** Nothing in this section is a result of this family. It is the shape of what the next category would produce, stated so that the family's articles' silence on it is legible as a boundary and not as an omission.
 
-## What the Bridge Adds and What It Relabels
+## What the Principle Adds and What It Relabels: The Bridge
 
 **Adds.** A name for the gap, a four-step map of it, and the identification of the classical half the family actually completes: the Green functions, the constraints, the count. That identification is the article's value. A reader can now say exactly what is missing — the promotion and the representation — instead of saying that the corpus "does not quantise".
 

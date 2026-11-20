@@ -84,7 +84,7 @@ $$
 
 **The two settings are the parent's and they are kept apart.** The constant setting is where $\mathcal{Q}$ exists; the operator setting is where the transform of the product is a convolution and $\mathcal{Q}$ does not exist. **Nothing below transfers between them**, and §*Limits* states the boundary.
 
-## The Action at a Mode: The Coupled Form Is the Free One Translated
+## The Action in Momentum Space, Coupled: The Free One Translated
 
 **The coupling's contribution to the symbol is the same $i$ that the free symbol already carries.** The free symbol is $i\tilde K_\Phi$; the coupled symbol is
 
@@ -116,7 +116,7 @@ with $\mathcal{Q}_{\mathrm{free}}$ the free article's form. **Every exact statem
 
 **What the relabelling costs is that the coupling is invisible.** A functional that depends on $\tilde A_\Phi$ only through $\tilde K_{\Phi,\mathrm{gco}}$ cannot distinguish "the coupling is present and the momentum is shifted" from "the coupling is absent and the momentum is the shifted one". **That is exactly right for a constant connection**, which the parent proves is pure gauge: a constant potential is removable by a phase and the two descriptions are the same physical situation.
 
-## The Symbol and the Quadratic Form
+## The Symbol and the Quadratic Form: The Symbol and the Quadratic Form
 
 **One form, one symbol.** At a wave number the coupled action is a quadratic form in the mode's amplitude, and the form's kernel is the symbol:
 
@@ -156,7 +156,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Real Part Is Redundant Twice Over
+## The Reality of the Action: The Real Part Is Redundant Twice Over
 
 **In the free case the real part removes nothing, because $i\tilde K_\Phi$ is Hermitian.** The sibling's check covered one hundred random fields and momenta and found a largest imaginary part of $2.2\times10^{-15}$. In the coupled case there are two kinetic terms and two different operators, and the same conclusion holds for a two-line reason.
 
@@ -168,7 +168,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What the real part was doing in position space, restated.** The parent's argument is that each kinetic density is real up to a total divergence, that the divergence integrates away, and that the imaginary part is therefore a surface term. At a mode there is no surface, and there is no divergence because there is no derivative: **the surface term's vanishing and the bracket's reality are one fact read twice**, and the coupling does not disturb either.
 
-## The Local Phase Is Invisible at a Mode
+## The Constraints the Action Imposes: The Local Phase Is Invisible at a Mode
 
 **The mode form is invariant under a constant central phase, for the free action and the coupled action alike.** Every term of $\mathcal{Q}$ pairs one factor of the field with one factor of its conjugate, so a common phase $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ multiplies each term by $\overline{e^{i\alpha}}e^{i\alpha}=1$. **Measured over fifty random draws at three angles: the largest deviation was $3.8\times10^{-15}$, $1.1\times10^{-14}$ and $7.2\times10^{-15}$ at $\alpha=0.7$, $1.9$ and $3.1$.**
 
@@ -180,7 +180,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **Why the difference is what it is, in one sentence.** A pairing of a field with its conjugate is invariant under any phase; a square of a linear form is invariant only when the phase squares to one. **The Dirac action pairs; the Proca field term squares**, and no amount of coupling changes which of the two it does.
 
-## Why the Parent's Test Field Had Two Modes
+## Aside: Why the Parent’s Test Field Had Two Modes
 
 **A bilinear of one mode is constant in the position, so its divergence vanishes identically and no single-mode test can separate a conserved current from a non-conserved one.** With $\tilde\Xi=\tilde\Xi_0e^{i\theta_{\mathrm{pha}}}$ and $\theta_{\mathrm{pha}}=\vec k_\Phi\cdot\vec r-k_t'r_t'$, every product of the field with itself, or with its conjugate, is a constant element times a phase that cancels. **So the naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ and the conserved current agree on a single mode in the only respect the test can see: both have zero divergence.**
 
@@ -190,7 +190,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **The article does not compute the transition bilinear.** The parent's current display is the one to use, the Gordon article identifies its frame units, and the transition object's evaluation is a separate computation with its own normalisation. **What is added here is the reason the single-mode form cannot carry the statement at all**, and that reason is the phase cancellation above.
 
-## On the Shell the Mode Action Vanishes
+## Zero, Pole and the On-Shell Action: On the Shell the Mode Action Vanishes
 
 **The mode form is zero on every solution, and that is the first-order Lagrangian's vanishing read in momentum space.** Substituting the pair into $\mathcal{Q}$ term by term gives
 
@@ -210,7 +210,7 @@ so the two kinetic terms reproduce the two mass terms and the four cancel pairwi
 
 **The consequence for the propagator is that the action's value carries no information about the coupling.** A functional that vanishes on every solution of the free theory and on every solution of the coupled theory cannot distinguish them, and the distinguishing information is in the *operator*, not in the value. **That is why the propagator and not the action is the object that knows about the potential**, and it is the parent's reason for computing the propagator separately.
 
-## Zero and Pole, with the Shift
+## Zero, Pole and the On-Shell Action: Zero and Pole, with the Shift
 
 **The variational output is the zero of $N=\pi^{2}-k_m^{2}$.** The compatibility condition at a constant connection is $(\pi^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions are supported exactly where the number vanishes and nowhere else. **The values in the table of §*The Second Variation Is One Number, for a New Reason* are that statement with numbers**: $0.750000$ and $2.032500$ off the shell, and the shell is the surface where the column of $N$ crosses zero.
 
@@ -222,7 +222,7 @@ so the two kinetic terms reproduce the two mass terms and the four cancel pairwi
 
 **What the relation is not is a derivation of the integral.** The zero selects the support and the pole gives the weight; neither implies the other without the construction in between, and the construction is the path-integral companion's. **The relation is a computed equality of two displays at one wave number**, and the coupling shifts both displays by the same substitution.
 
-## The Curvature Is the Term That Cannot Be a Number
+## The Structural Consequence: The Curvature Is the Term That Cannot Be a Number
 
 **At a varying connection the symbol does not exist, and what replaces it is an operator whose one unfamiliar term is the curvature.** The parent's identity is
 
@@ -255,7 +255,7 @@ is an equation between elements and not an equation between numbers. **That is t
 
 **What this does not say is that the coupled theory has no dispersion relation.** It says that the relation is an element equation whose scalar content has to be extracted, and that the extraction is the curvature's business. **The article's claim is about the *form* of the second variation and not about the existence of a spectrum**, and the Landau-level article is where a nonzero curvature's spectrum is actually computed.
 
-## The Second Variation Is One Number, for a New Reason
+## The Second Variation: One Number, for a New Reason
 
 **Compose the pair and the composed operator is a central multiple of the identity.** At a mode the pair is
 
@@ -338,7 +338,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **One caution.** The transform is taken at fixed amplitude and fixed wave number. **A transform taken along a solution is a different object**, and the article does not take it, because on shell the form vanishes and the transform of zero is zero.
 
-## Limits
+## The Limits and the Truncation’s Error
 
 **Constant coefficients.** The mode form exists where the connection is constant, and every exact statement above is a statement under that licence. A varying connection replaces the symbol by a convolution, and no display in §*The Second Variation Is One Number, for a New Reason* survives unchanged.
 
@@ -350,7 +350,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **The denial, once more.** The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equations on elements, and the centrality of $N$ is a statement about one element's $\natural$-square. **No sector flip occurs at any step**, and the sector talk of §*Conventions* is talk about coefficients.
 
-## What the Transform Adds and What It Relabels
+## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
 

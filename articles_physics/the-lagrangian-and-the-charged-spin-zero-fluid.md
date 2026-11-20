@@ -36,7 +36,7 @@ $$
 
 **The action has two arguments and they are the two gauge-invariant data of the fluid.** Write them as $\varrho$ and $W_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$. Then $\mathcal L_{\mathrm{fl}}=\mathcal L_{\mathrm{fl}}[\varrho,\partial_\mu \varrho,W_\mu]$, and no other combination of the word's data survives a gauge transformation. **The free action's two arguments were $\varrho$ and $S_{\tilde\Xi}$; the charged action's are $\varrho$ and $W$**, and the change of variable is the whole of the coupling.
 
-## The Two Variations
+## The Variation: Two of Them
 
 **Varying the phase gives continuity of the mechanical current.** Since $\mathcal L_{\mathrm{fl}}$ depends on $S_{\tilde\Xi}$ only through $V$,
 
@@ -74,7 +74,7 @@ which is the block's boxed law. **The sign is fixed by the substitution's time s
 
 **The count is two and two, as at the free rung, and the coupling does not change it.** Two fields, $\varrho$ and $S_{\tilde\Xi}$, or equivalently $\varrho$ and $W$; two equations; no multiplier. The constraint structure is not the coupling's business, and this is the rung at which that is cleanest: **the first-order charged fluid has a gauge redundancy and the relativistic one has a redundancy plus a shell, and neither has a subsidiary condition.**
 
-## Gauge Invariance as a Redundancy
+## The Constraints the Action Imposes: Gauge Invariance as a Redundancy
 
 **The action is written in invariant variables, and that is stronger than being invariant.** Both arguments, $\varrho$ and $W_\mu$, are fixed by a gauge transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
 
@@ -84,7 +84,7 @@ which is the block's boxed law. **The sign is fixed by the substitution's time s
 
 **The canonical stress is gauge dependent and the physical one is not.** Computing $T_{\mu\nu}$ with $S_{\tilde\Xi}$ as the variable gives a tensor that moves under a gauge transformation by terms in $\partial\Gamma$; the difference is a total derivative, so the conserved charges are unaffected, and the tensor written in $W$ and $\partial \varrho$ is invariant. The same caution as at the first-order charged rung applies: **the article may call $\mathcal E^{\mathrm{mech}}$ and $\sigma^{Q}$ the fluid's, and must not call the canonical tensor the fluid's without saying which variable it was computed from.**
 
-## The Vorticity Is the Field Strength
+## The Structural Consequence: The Vorticity Is the Field Strength
 
 **The velocity's curl is the curl of a potential, so the vorticity is an identity about the variables.** With $V_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$,
 
@@ -98,7 +98,7 @@ $$
 
 **The Clebsch cost is the field's and not the fluid's.** A rotational fluid written in Eulerian variables needs the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$, as [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states. Here the pair's part is played by the connection: the velocity is $\partial S_{\tilde\Xi}/m-q A_\mu/m$, one vector standing where the Clebsch form wants two scalars, and its own equation is Maxwell's, which the matter action does not contain. **The fluid's rotation is not a new degree of freedom because it is already the field's**, and the equality of the rank with the field's rank is the same statement.
 
-## What the Charge Does Not Change, and Why That Is the Article's Main Point
+## The Structural Consequence: What the Charge Does Not Change, and Why That Is the Article's Main Point
 
 **Three objects are exactly the free ones.**
 
@@ -118,7 +118,7 @@ $$
 
 **The sign, and why it is the article's point.** The charge's sign is $q$'s and the density is positive, so a change of sign of $q$ reverses the current and not the density. That is what the article means by the charge not changing the fluid: the fluid's density, velocity field and stress are the neutral ones, and the charge is a label on the current.
 
-## What the Fluid Variational Principle Adds and Does Not Add
+## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The coupling as a change of variable rather than an added term, with the reason: a central element multiplies the phase factor and cannot reach the amplitude. Gauge invariance as a property of the variables rather than a checked symmetry, and the reason the current survives it. The sign of the Lorentz force fixed at the substitution's time slot. The vorticity's identity as a computation about the variables, and the rank as the field's. And the coupling-blindness of the entire quantum sector as one term of the action.
 
@@ -126,7 +126,7 @@ $$
 
 **The comparison worth recording.** The four charged articles of this layer differ in what the coupling can reach. At the first order it reaches the phase and the velocity and not the gradient energy; here it reaches the velocity and not the gradient energy either; in the spinor case it reaches the frame's transport and not the rotor's norm; in the vector case it reaches the field's own divergence and turns the Lorentz condition into a statement about the charge. **The action states each case as which variable is charged**, and the four are one sentence: the connection is central, and what is central reaches the phase and the boost's logarithm and cannot reach a modulus.
 
-## What the Fluid Adds That the Element and the Limit Do Not
+## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **The charge is the phase and nothing else, and the spin-zero fluid is where that is exact.** The charged biquaternion fluid carries a frame as well as a density and a phase, and the coupling reaches the scale bracket and the phase bracket and never the frame's. **So the fluid's charge density is the density and its current is the phase's gradient, unchanged by the frame's presence**, and the article's comparison with the charged Schrödinger fluid is the statement that the frame does not enter the charge at all.
 

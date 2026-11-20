@@ -22,7 +22,7 @@
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
 
-## The Action and Its Three Blocks
+## The Action in the Non-Quantum Limit: The Three Blocks
 
 **The parent's central action.**
 
@@ -46,7 +46,7 @@ Three blocks, and the middle one carries the phase twice.
 
 **Why the middle block cannot be the scale's partner.** In the general element the action is the sigma-model form $g_{ab}(p)\,\partial p^{a}\partial p^{b}$ with a metric on the eight parameters, and the central field is its restriction to two coordinates. **The scale's block and the angle's block are two diagonal blocks of one metric**, and the order is a property of the coordinate: derivatives of the scale are order $\epsilon$ and derivatives of the angle are order zero.
 
-## The Deletion
+## The Limit: The Deletion
 
 **Delete the scale's block.**
 
@@ -63,7 +63,7 @@ $$
 
 **What is not deleted, and it matters.** The phase's block keeps both signs of the material signs, so the truncated action is not a Euclidean or a static object: it carries $(\partial_{r'_{t}}\theta)^{2}$ and $-\lvert\vec\nabla_\Phi\theta\rvert^{2}$ and its Euler–Lagrange equations are the relativistic ones. **The limit is not the non-relativistic reduction**; the second truncation, in $\beta=v/c$, is a different operation performed on the truncated theory.
 
-## Varying the Scale: the Mass Shell
+## The Variation: Varying the Scale: the Mass Shell
 
 **The truncated action has no $\partial \varrho$, so the scale's variation is algebraic.**
 
@@ -91,7 +91,7 @@ which divided by $2\varrho$ is $\left(\partial\theta_{\mathrm{pha}}\right)^{2}-k
 
 **The Hamiltonian of the truncated theory is the constraint.** A degenerate Lagrangian of this shape has no independent momentum for the scale, and the Legendre transform produces the mass-shell condition as the only constraint. **The limit therefore produces a reparametrisation-invariant-looking system with the mass shell as its Hamiltonian**, which is the standard form of a relativistic particle or of dust, and the corpus's phrase for it is irrotational dust.
 
-## Varying the Phase: the Transport, Unchanged
+## The Structural Consequence: Varying the Phase: the Transport, Unchanged
 
 **The phase's variation.**
 
@@ -119,7 +119,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
-## The Truncation and Its Error
+## The Limit: The Truncation and Its Error
 
 **The error is the deleted block, and its order is two.** The truncated action differs from the parent by $(\partial\varrho)^{2}$ in the material signs, and each factor of $\partial$ carries one power of the parameter. **The error is therefore of order $\epsilon^{2}$**, and the ratio that makes it small is the amplitude's gradient over the scale the truncation assumes: $|\partial\varrho|^{2}/(k_m^{2}\varrho^{2})$, which is small exactly when the amplitude varies slowly compared with the Compton length.
 
@@ -133,7 +133,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **Why the section is separate from the deletion.** A reader can accept that a term is deleted and still be wrong about what the deletion costs. **The two sections answer two questions** — which term, and how much — and the article keeps them apart because the family's honesty about its limits is the whole point of the reading.
 
-## What Survives
+## The Limit: What Survives
 
 **Everything of order zero, and it survives exactly.** The truncated action's variations give the mass-shell relation for the scale and the covariant transport for the phase, and neither is an approximation to the parent's equation: **they are the parent's equations with the order-two term set to zero**, and the difference is the quantum potential and nothing else.
 
@@ -147,7 +147,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **What does not survive.** The amplitude's dynamics. **Any solution whose density varies on the Compton scale is outside the truncated theory**, and the article says so in one sentence rather than leaving the reader to infer the boundary from the order count.
 
-## What the Variational Route Adds
+## What the Principle Adds and What It Relabels: By the Variational Route
 
 **Three things, and the first is this family's own.**
 

@@ -38,7 +38,7 @@ with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $V$ the pot
 
 **The conventions are the free chart's, restated for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is the pair of parts, each written in the word $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\tilde U_{\Psi,\mathrm b}$, with $\varrho>0$ and the rotor on the left, which is the free chart's ordering. The connection is central, the coupling is $ϙ$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4r$, and $k_m=mc/\hbar$.
 
-## The Action in the Word
+## The Action in Polar Variables
 
 Substituting the word into the coupled action is a computation in three parts: the kinetic terms, the mass terms and the potential. The first two are the parent polar article's and the third is the coupling's.
 
@@ -92,7 +92,7 @@ with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. The third term
 
 **One caution about the first term's coefficient.** The coefficient $\hbar c\rho_{\mathrm{num}}$ contains the rapidity, so the action is *not* linear in the velocities in the naive sense: $\rho_{\mathrm{num}}$ depends on $\theta_{\mathrm{rpd}}$, and $\theta_{\mathrm{rpd}}$ is one of the parameters whose velocity does not appear. The action is linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$ with a coefficient that depends on a coordinate. That is the standard shape of a first-order constrained system and it is the reason the Dirac analysis is needed rather than a Legendre transform.
 
-## The Euler–Lagrange Equations
+## The Variation: The Euler–Lagrange Equations
 
 **The variation is over the eight parameters.** In the chart the variables are $\varrho$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, the two angles of the boost axis $\hat u_{\mathrm b}$, and the three angles of the rotor $\tilde u_{\mathrm r}$. Varying the chart's action with respect to them, and using that the word is a bijection on the invertibles, returns exactly the coupled pair of the element article:
 
@@ -108,7 +108,7 @@ one equation per part and per material slot. The variation of the connection is 
 
 **What the variation does not do.** It does not produce the constraint algebra. The eight equations determine some velocities and not others, and which is which is the subject of the next section; the variation alone cannot answer it, because the Lagrangian is linear in four of the eight rates.
 
-## The Constraint Structure
+## The Constraints the Action Imposes: The Structure
 
 The action is first order in eight parameters, one of which has its velocity in the action. That single fact fixes the whole constraint structure.
 
@@ -151,7 +151,7 @@ The second is the continuity equation with the density $\rho_{\mathrm{num}}$; th
 
 **What kind of constraints.** They are primary: they follow from the momenta's vanishing, not from the equations of motion. Whether they are first class or second class — whether they generate gauge transformations or restrict the initial data — has not been determined. That determination requires the Poisson brackets of the constraints among themselves, and the brackets are the ones the four-bracket structure suggests and not the ones a canonical analysis of the parameters would give. The article does not carry the computation out, and §*Open Questions* says so.
 
-## The Bracket Expansion
+## The Parameter Basis and the Four Brackets: The Bracket Expansion
 
 The four brackets are the decomposition of the logarithmic derivative, and the coupling acts on two of them. That statement is exact, it does not depend on the conjecture, and it is the article's clearest structural result.
 
@@ -183,7 +183,21 @@ where $A_\mu^{\,t}$ and $A_\mu^{\,\eta}$ are the temporal and spatial slots of t
 
 **The limit of the statement.** The type table says where the potential acts; it does not say what the resulting motion is. For a constant potential the motion is a gauge phase and the shift is unobservable; for a non-constant one the shift is the Lorentz force at the level of the momentum, and the article does not derive the force from the brackets. That derivation belongs to the element companion's forces and to *Relativistic Mechanics from the Dirac Wave*.
 
-## Which Currents the Word Produces
+## The Structural Consequence: The Brackets Count the Constraints
+
+**The claim.** The partition of the eight parameters into two evolution equations and six constraints is the partition of the four brackets into the field's two and the frame's two. The count is read off the type table, not off a Hessian, and not off a canonical analysis of the parameters.
+
+**The partition.** The scale and phase brackets are the field's: their parameters are $\varrho$ and $\theta_{\mathrm{pha}}$, they are the two whose equations carry a time derivative, and they give the continuity equation and the guidance equation. The boost and rotor brackets are the frame's: their parameters are the rapidity $\theta_{\mathrm{rpd}}$, the axis angle $\theta_{\mathrm{axr}}$ and the two unit vectors $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, six in all, and they are the six whose velocities the action does not contain:
+
+$$
+1+1+2+2=6,\qquad 8-6=2 .
+$$
+
+**The check by hand.** The type table of §*The Action in Polar Variables* sends every parameter to exactly one bracket, and the frame's brackets hold six parameters. The count of constraints in §*The Constraints the Action Imposes: The Structure* is also six, and the agreement of the two counts is the claim.
+
+**The limit, stated.** The brackets give the count and the location, and they do not give the algebra. Whether the six are first class or second class is undetermined, and the Dirac brackets that would decide it are the computation the article does not carry out.
+
+## The Noether Currents: Which Currents the Word Produces
 
 The word has a phase, and a phase has a current. The current the word produces is not the current the element action produces, and the difference is the subject of this section.
 
@@ -207,7 +221,7 @@ This is the Noether current of the word's phase symmetry, and it is the statemen
 
 **What is not claimed.** Nothing in this section says the word's phase current is wrong. It is the correct current of the current that the word's phase generates. What it is not is the element action's current, and the article declines to identify the two.
 
-## The Operator Setting
+## The Two Settings: The Operator Setting
 
 The chart's parameters become fields, and the action acquires gradient terms.
 
@@ -225,7 +239,7 @@ and the gradient terms are the quantum potential's, in the spin-half-fluid form.
 
 **The step that is not taken.** The article does not show that the operator setting's action reduces to the standard one in every case, and it does not show that the constraints close in the operator setting any better than in the constant one. Both are open.
 
-## What the Polar Variational Principle Adds
+## What the Principle Adds and What It Relabels: In the Polar Chart
 
 **Adds.**
 
@@ -245,7 +259,7 @@ and the gradient terms are the quantum potential's, in the spin-half-fluid form.
 
 **The ledger in one paragraph.** The polar variational principle is the element variational principle in eight coordinates, and the substitution buys one thing that the element form cannot state as cleanly: the constraints are visible, they are Euler–Lagrange equations, and the exact parameterisation removes the multipliers that the tensor formulations need. It buys nothing else, and in particular it does not buy a derivation of the equation's flow, because that derivation needs the Dirac brackets and they are not computed.
 
-## The Reconstruction Conjecture
+## The Reconstruction and Its Limits: The Conjecture
 
 **The statement.** Suppose the coupled equation, written for a general element, has a conserved current; suppose further that the current is the one the field's own parameters define, that is, the phase current together with the boost current; then the local symmetry that the current generates is a local phase flow combined with a local boost, and the flow's operator is the word's boost and rotor. **The conjecture is that the constrained system of §*The Constraint Structure*, once its Dirac brackets are computed, generates exactly this flow.**
 

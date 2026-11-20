@@ -44,7 +44,7 @@ obtained by expanding $-\frac14F^{2}$ and using $u^{2}=-1$. Four terms: the dens
 
 **There is no $\hbar$ anywhere in the derivative terms.** The only place the quantum of action appears is inside $k_m$. So this rung's fluid is not a Madelung fluid: it is a classical field read as a medium, and the block's article says as much by giving an acceleration law with no quantum potential.
 
-## The Two Variations and the Multiplier
+## The Variation: The Two Variations and the Multiplier
 
 **The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part.** That is the cleanest way to state the pair, and it follows from the split of $\delta A_\mu=u_\mu\,\delta r+r\,\delta u_\mu$ into a longitudinal and a transverse piece.
 
@@ -60,7 +60,7 @@ and the multiplier enters the direction's equation as $\lambda u_\mu$, which is 
 
 **The contrast with the spin article is worth recording.** There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. **The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint**: the word's frame is a group element, and a direction is a coset.
 
-## The Mass Term Does Two Things
+## The Structural Consequence: The Mass Term Does Two Things
 
 **The Euler–Lagrange equation is the field equation, and its divergence is an identity on one side.**
 
@@ -98,7 +98,7 @@ which is the continuity equation for a density $r$ and a velocity $u_\mu$. **The
 
 **The sign.** With no charge there is no sign to fix, and the spin's sign is the frame's. That absence is the sharpest difference between this rung and the two below it, and it is why the fluid form of the Proca field is a fluid of a field and not of a medium.
 
-## What the Fluid Form Adds to the Block's Account
+## What the Principle Adds and What It Relabels: The Fluid Chart Against the Block
 
 **Three statements, and the block makes each of them in the equations' language.**
 
@@ -108,7 +108,7 @@ which is the continuity equation for a density $r$ and a velocity $u_\mu$. **The
 
 *The equation of state is the mass term's, and the action shows it as the only term without a derivative.* The mass term $\frac{k_m^{2}}{2}r^{2}$ is the one term in the action that carries the density and no gradient, and it fixes the pressure in one line: the energy density it contributes is $\epsilon=\frac{k_m^{2}}{2}r^{2}$ and the force it exerts is $-\vec\nabla_\Phi\ln r$, so $\mathrm{d}p/(\epsilon+p)=\mathrm{d}\ln r$ and $p=\epsilon$. **A spin-one fluid is stiff, and the stiffness is the mass's**, which is the block's reading of the acceleration law; the action's addition is that no other law is available, because no other term of the action is free of derivatives.
 
-## What the Fluid Variational Principle Adds and Does Not Add
+## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The mass term's double role, stated once: it removes the gauge freedom and supplies the condition that replaces it, and in the fluid's variables that condition is continuity. The pair of variations as the field equation's longitudinal and transverse parts, with the Lorenz condition as their consequence by an identity. The multiplier's necessity and its reading as a pressure. The decomposition of the field strength into vorticity and density gradient. And the reason this rung has no quantum force: the action has no second derivative of the magnitude.
 
@@ -116,7 +116,7 @@ which is the continuity equation for a density $r$ and a velocity $u_\mu$. **The
 
 **The one thing the action says that the equations cannot.** The Lorenz condition, the loss of gauge freedom, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. **That is the strongest case in the layer for writing the fluid's Lagrangian**: not a new result, but the location of four results in one coefficient.
 
-## What the Fluid Adds That the Element and the Limit Do Not
+## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **The constraint becomes a property of the fluid's own frame.** In the element reading the vanishing of the scalar part of the conjugate gradient is a condition that the variation produces; in the fluid reading, the corresponding statement is that **the fluid's four-velocity cannot have a longitudinal component that carries the mass**. The constraint is the same equation, and the fluid reading says what it means: a pressure cannot push along the direction the fluid is already moving.
 

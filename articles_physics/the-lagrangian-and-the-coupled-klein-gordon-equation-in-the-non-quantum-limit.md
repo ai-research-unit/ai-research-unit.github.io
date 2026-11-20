@@ -26,7 +26,7 @@
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
 
-## The Action and Its Blocks
+## The Action in the Non-Quantum Limit: The Blocks
 
 **The parent's action for the central field.**
 
@@ -60,7 +60,7 @@ $$
 
 **Why the quadratic piece cannot be dropped, in the parent's two reasons.** It makes the kinetic part bounded below, because $-\lvert\vec A\rvert^{2}$ enters with a plus sign after the overall minus of the bracket; and it is what makes the action invariant under a local phase translation, because the potential's shift has to be compensated in a term quadratic in the potential. **A truncation in powers of $q$ would break both**, and that is why no such truncation is the non-quantum limit.
 
-## The Deletion
+## The Limit: The Deletion
 
 **Delete the scale's block.**
 
@@ -76,7 +76,7 @@ with $S=\hbar\theta_{\mathrm{pha}}$ and $m^{2}c^{2}=\hbar^{2}k_{m}^{2}$; the bra
 
 **The contrast with the first-order families is one line.** There the deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ alone, which no boost preserves, so the limit there is defined in a frame and its action is the action of a fluid with a distinguished time. **Here the limit is defined on the manifold**, and the truncated action's only time is the sector's.
 
-## Varying the Scale: the Mechanical Mass Shell
+## The Variation: Varying the Scale: the Mechanical Mass Shell
 
 **The scale's variation.**
 
@@ -102,7 +102,7 @@ which divided by $2\varrho$ is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{
 
 **The constraint is the truncated theory's Hamiltonian.** A degenerate Lagrangian of this shape has no momentum conjugate to the scale, and the Legendre transform returns the mechanical shell as the only constraint. **The limit has converted the scale from a dynamical field into the carrier of one constraint**, which is what "the density becomes auxiliary" means in covariant language.
 
-## Gauge Invariance and the Deletion
+## The Constraints the Action Imposes: Gauge Invariance and the Deletion
 
 **The invariants.** The truncated action is built from two combinations, $\left(\partial_{r'_{t}}S+q\varphi/c\right)$ and $\vec\nabla_\Phi S-q\vec A$, and both are unchanged under the local phase translation with the potential's shift. **The action is invariant term for term**, the quadratic piece supplying the compensation for the potential's square.
 
@@ -110,7 +110,7 @@ which divided by $2\varrho$ is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{
 
 **Why this matters for the limit's meaning.** The non-quantum limit is supposed to be a statement about the field and not about the chart. The covariance and the gauge invariance of the deletion are what make that true, and they are the two properties the first-order families cannot have in the same form.
 
-## Varying the Phase: the Covariant Transport, Unchanged
+## The Structural Consequence: Varying the Phase: the Covariant Transport, Unchanged
 
 **The phase's variation.**
 
@@ -138,7 +138,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
-## The Truncation and Its Error
+## The Limit: The Truncation and Its Error
 
 **The error is the deleted block and its order is two.** The truncated action differs from the parent by the scale's kinetic term, which carries two derivatives and therefore two powers of the parameter. **The error is of order $\epsilon^{2}$**, and the ratio that makes it small is the amplitude's gradient against the mass term, $|\partial\varrho|^{2}/(k_m^{2}\varrho^{2})$.
 
@@ -152,7 +152,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **Why the section is separate from the deletion.** Which term is deleted and what the deletion costs are two questions, and a reader can be right about the first and wrong about the second. **The article answers them in two sections** for that reason.
 
-## What Survives
+## The Limit: What Survives
 
 **The covariant transport, verbatim.** The phase's variation of the truncated action gives the covariant transport because the deleted block contains no phase and no connection. **The equation surviving is not an approximation: it is the parent's equation with the order-two term removed**, and the removal does not touch it.
 
@@ -166,7 +166,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **What does not survive.** The amplitude's dynamics near a node, and any configuration whose density varies on the Compton scale. **The article states the boundary once**, in this section, so that the earlier sections can be read as exact statements on a restricted class rather than as approximations everywhere.
 
-## What the Variational Route Adds
+## What the Principle Adds and What It Relabels: By the Variational Route
 
 **Three things, and the second is the coupling's.**
 

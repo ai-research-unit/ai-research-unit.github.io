@@ -59,5 +59,4 @@ Sixteen articles, four groups. The six quantisations carry the postulate; two bu
 ## Further Reading
 
 - [The Lagrangian and the Second Quantisation: From the Action to the Commutator](the-lagrangian-and-the-second-quantisation.html), for the classical half of the promotion.
-- [The Lagrangian Family: A Map of the Forty-Eight Articles](the-lagrangian-family-a-map.html), for the boundary in a table.
 - [The Biquaternion Object Hubs](the-klein-gordon-object-every-article-on-one-equation.html), for the same articles reached from their objects.
