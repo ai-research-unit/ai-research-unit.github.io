@@ -17,7 +17,7 @@ The article is organised as follows. The next section sets up the mass as a fiel
 
 The framework results used here are those of the companion articles:
 
-- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, whose sub-section *The Gürsey Reading, the Reversion Test, and the Einstein–Mayer Equation* first records the Lanczos system, the Einstein–Mayer equation and the isospin interpretation; the present article takes the same equations as its starting point and does not repeat the isospin interpretation.
+- Companion article [Reading an Extra Component: The Gürsey Default, the Reversion Test, and the Prior-Art Warning](reading-an-extra-component-the-gursey-default-the-reversion-test-and-the-prior-art-warning.html), which records the Lanczos system, the Einstein–Mayer equation, the isospin interpretation and the legitimacy test; the present article takes the same equations as its starting point and does not repeat the isospin interpretation.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the biquaternionic Dirac equation, its linear off-diagonal mass term, and the relation of the massive equation to the massless one.
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive spin-1 equation that the same feedback produces.
 - Companion article *Algebra and Element Conventions*, for the algebra, the conjugations, the metric and the d'Alembertian.

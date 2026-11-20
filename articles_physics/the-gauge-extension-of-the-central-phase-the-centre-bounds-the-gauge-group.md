@@ -98,6 +98,14 @@ The two interpretations are not contradictory: the first states what the framewo
 would **need**, and the article's position is that both are true and that the disagreement is about which
 question is being asked.
 
+### What Reading A cannot deliver
+
+**The hypercharge clause of Reading A is false, and the disproof is one paragraph.** Write $\mathfrak u(2)=\mathfrak{su}(2)\oplus\mathfrak u(1)$ by the trace decomposition. Any Lie-algebra isomorphism onto that direct sum carries the centre onto the centre, because the centre is an invariant of the algebra and not of a chosen splitting; the centre of $\mathfrak u(2)$ is the line $\mathbb R\,ie_t$, and the line is one-dimensional. A connection valued in $\mathfrak u(1)$ therefore couples to every field through the single number that multiplies $ie_t$. Hypercharge requires six values on one generation, with $Y_L\neq Y_R$ for a single species, and a map that sends every element to a multiple of one generator cannot produce them.
+
+**So the two readings survive, with one clause removed.** Reading A remains true as a statement about the framework's group: the gauge group is $\mathrm U(2)$, the abelian factor is the central phase, and the ceiling is exact. What it cannot also claim is that this phase *is* hypercharge. Reading B is untouched, since it already denies that the algebra contains the needed structure.
+
+**Where the computation is.** The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
+
 ## What Is Not Claimed
 
 - The article does not claim that the central phase is **gaugeable** in the sense of producing a
