@@ -66,26 +66,9 @@ $$
 
 Flatness is what makes $j_\mu$ a pure gauge connection and what makes the topological density below a total derivative: it is the property that no other algebra-valued one-form has.
 
-**The two terms.** The two-derivative term is the chiral Lagrangian of the pion article,
+**The two terms.** The model is the sum of two invariants of the flat current: the two-derivative chiral term, proportional to $\mathrm{Sc}(\bar j_\mu j_\mu)$ with coefficient $f_\pi^2/2$, and the four-derivative **Skyrme term**, proportional to $\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])$ with coefficient $1/(16e^2)$ and $e$ a dimensionless parameter. The action, the variation that gives the field equation, the sign bookkeeping that makes the kinetic energy positive, and the derivative expansion to which both terms belong are written in [The Lagrangian and the Skyrme Model](the-lagrangian-and-the-skyrme-model.html); this article does not repeat the functional. What is used below is the shape of the two terms and the fact that the second is the unique four-derivative term at most quadratic in time derivatives, which is what makes the static energy functional well posed.
 
-$$
-\mathcal{L}_2 = -\frac{f_\pi^2}{2}\,\mathrm{Sc}\!\left(\bar j_\mu\,j_\mu\right)
-$$
-
-(again with the overall sign convention that makes the kinetic energy positive), and the four-derivative **Skyrme term** is the unique term at this order that is at most quadratic in time derivatives and stabilises a soliton,
-
-$$
-\mathcal{L}_4 = \frac{1}{32e^2}\,2\,\mathrm{Sc}\!\left(\left[j_\mu, j_\nu\right]\left[j_\mu, j_\nu\right]\right)
-= \frac{1}{16e^2}\,\mathrm{Sc}\!\left(\left[j_\mu, j_\nu\right]\left[j_\mu, j_\nu\right]\right),
-$$
-
-with $e$ a dimensionless parameter. The commutator lies in $\mathrm{SU}(2)$, so its square is a negative-definite algebra element and the scalar part is negative; the overall sign of $\mathcal{L}_4$ is fixed by requiring the energy to be positive, and in the static gauge the term becomes
-
-$$
-\mathcal{L}_4 = \frac{1}{16e^2}\,\mathrm{Sc}\!\left([j_i,j_j][j_i,j_j]\right)\Big|_{\text{static}} .
-$$
-
-The two invariants $\mathcal{L}_2$ and $\mathcal{L}_4$ are the first two terms of the derivative expansion of the pion effective theory; the first fixes the target geometry and $f_\pi$, and the second is weighted by $1/e^2$. The framework's contribution is that both are biquaternion norms of the algebra-valued current, and the reason the Skyrme term is a commutator is that $\mathrm{SU}(2)$ is the algebra the current lies in.
+The commutator lies in $\mathrm{SU}(2)$, so its square is a negative-definite algebra element and the scalar part is negative; the overall sign of the Skyrme term is the one that makes the energy positive, and the family article records the convention. Both terms are biquaternion norms of the algebra-valued current, and the reason the Skyrme term is a commutator is that $\mathrm{SU}(2)$ is the algebra the current lies in.
 
 **Why the fourth-order term is needed.** A term with four derivatives has dimension of length to the minus four in four spacetime dimensions and is therefore non-renormalizable; it is admitted in the effective theory because it is the leading term that can stabilise a soliton. The next section shows that the two-derivative term alone cannot.
 

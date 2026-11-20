@@ -64,7 +64,7 @@ and with $\tilde A_\Phi\in\mathbb{B}_\Phi$ anti-Hermitian, which the parent writ
 
 **The connection's $\natural$-behaviour is the parent's and it is used below.** For $\tilde A_\Phi=i a_t e_t+\vec a$ with $a_t$ and $\vec a$ real, the $\natural$-image is $\tilde A_\Phi^{\natural}=i a_t e_t-\vec a$. **So a purely electric connection is $\natural$-symmetric and a purely magnetic one is $\natural$-antisymmetric**, which is the parent's split read as a symmetry of the element rather than of a gauge.
 
-**The four sector statements.** $\tilde K_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $i\tilde K_\Phi\in\mathbb{B}_\Psi$ and Hermitian; $\tilde A_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $\frac{i\,ϙ}{\hbar}\tilde A_\Phi\in\mathbb{B}_\Psi$ and Hermitian. **The sum of two Hermitian elements is Hermitian**, and that one sentence is the whole of §*The Real Part Is Redundant Twice Over*.
+**The four sector statements.** $\tilde K_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $i\tilde K_\Phi\in\mathbb{B}_\Psi$ and Hermitian; $\tilde A_\Phi\in\mathbb{B}_\Phi$ and anti-Hermitian; $\frac{i\,ϙ}{\hbar}\tilde A_\Phi\in\mathbb{B}_\Psi$ and Hermitian. **The sum of two Hermitian elements is Hermitian**, and that one sentence is the whole of §*The Reality of the Action*.
 
 **The momentum-space action is the action at one wave number, and its licence is stated here.** For a constant connection,
 
@@ -82,7 +82,7 @@ $$
 
 **No derivative appears in $\mathcal{Q}$ and none can appear**, because a constant connection turns the multiplication into a multiplier and the derivative into a multiplier, and a sum of multipliers is a multiplier.
 
-**The two settings are the parent's and they are kept apart.** The constant setting is where $\mathcal{Q}$ exists; the operator setting is where the transform of the product is a convolution and $\mathcal{Q}$ does not exist. **Nothing below transfers between them**, and §*Limits* states the boundary.
+**The two settings are the parent's and they are kept apart.** The constant setting is where $\mathcal{Q}$ exists; the operator setting is where the transform of the product is a convolution and $\mathcal{Q}$ does not exist. **Nothing below transfers between them**, and §*The Limits and the Truncation’s Error* states the boundary.
 
 ## The Action in Momentum Space, Coupled: The Free One Translated
 
@@ -156,7 +156,15 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Reality of the Action: The Real Part Is Redundant Twice Over
+## The Reality of the Action
+
+**Four questions, and this article answers (b) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+
+### The Pairing
+
+**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$; the two summands examined below are its two slots.
+
+### The Type of the Coefficient
 
 **In the free case the real part removes nothing, because $i\tilde K_\Phi$ is Hermitian.** The sibling's check covered one hundred random fields and momenta and found a largest imaginary part of $2.2\times10^{-15}$. In the coupled case there are two kinetic terms and two different operators, and the same conclusion holds for a two-line reason.
 
@@ -168,13 +176,21 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What the real part was doing in position space, restated.** The parent's argument is that each kinetic density is real up to a total divergence, that the divergence integrates away, and that the imaginary part is therefore a surface term. At a mode there is no surface, and there is no divergence because there is no derivative: **the surface term's vanishing and the bracket's reality are one fact read twice**, and the coupling does not disturb either.
 
+### The Selection Rule
+
+**Not examined here.** The connection is Hermitian by the article's licence, so no inadmissible sector arises. The rule is read where a potential is a free element.
+
+### What Reality Does Not Buy
+
+**Not at issue here.** The section's claim is that the real part is redundant twice over, which is a statement about the $\mathrm{Re}$ device. The gap between a real action and a real symbol is the free coupled scalar article's.
+
 ## The Constraints the Action Imposes: The Local Phase Is Invisible at a Mode
 
 **The mode form is invariant under a constant central phase, for the free action and the coupled action alike.** Every term of $\mathcal{Q}$ pairs one factor of the field with one factor of its conjugate, so a common phase $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ multiplies each term by $\overline{e^{i\alpha}}e^{i\alpha}=1$. **Measured over fifty random draws at three angles: the largest deviation was $3.8\times10^{-15}$, $1.1\times10^{-14}$ and $7.2\times10^{-15}$ at $\alpha=0.7$, $1.9$ and $3.1$.**
 
 **That invariance is stronger than the parent's and the strength is the finding.** The parent shows that the *mass* term is invariant under a local central phase without help and that the *kinetic* term is not, and that the covariant derivative is the unique repair. At a mode both terms are invariant, and they are invariant for the same reason. **So the asymmetry the parent's derivation turns on is a statement about derivatives, and a mode has none.**
 
-**The consequence is that the coupling is invisible at a single mode and the charge is not a property of a mode.** A symmetry that holds for the free action and the coupled action equally cannot distinguish them, and a Noether current built from a single mode is built from an invariance that a single mode has anyway. **The charge needs two modes**, and §*Why the Parent's Test Field Had Two Modes* says why.
+**The consequence is that the coupling is invisible at a single mode and the charge is not a property of a mode.** A symmetry that holds for the free action and the coupled action equally cannot distinguish them, and a Noether current built from a single mode is built from an invariance that a single mode has anyway. **The charge needs two modes**, and §*Aside: Why the Parent’s Test Field Had Two Modes* says why.
 
 **The Proca companion's form is not invariant, and the contrast is exact.** There the field term is $\tfrac12[\,\pi A\,]^{2}$, a square of a *linear* form and therefore bilinear: under $A\mapsto e^{i\alpha}A$ it acquires $e^{2i\alpha}$, measured as arguments $1.400000$, $-2.483185$ and $-0.083185$ at $\alpha=0.7,\,1.9,\,3.1$. **The Dirac form is sesquilinear in every term and the Proca form is not in its field term**, so the Dirac theory's phase symmetry is a property of its pairing and the Proca theory's failure is a property of its degree.
 
@@ -212,13 +228,13 @@ so the two kinetic terms reproduce the two mass terms and the four cancel pairwi
 
 ## Zero, Pole and the On-Shell Action: Zero and Pole, with the Shift
 
-**The variational output is the zero of $N=\pi^{2}-k_m^{2}$.** The compatibility condition at a constant connection is $(\pi^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions are supported exactly where the number vanishes and nowhere else. **The values in the table of §*The Second Variation Is One Number, for a New Reason* are that statement with numbers**: $0.750000$ and $2.032500$ off the shell, and the shell is the surface where the column of $N$ crosses zero.
+**The variational output is the zero of $N=\pi^{2}-k_m^{2}$.** The compatibility condition at a constant connection is $(\pi^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions are supported exactly where the number vanishes and nowhere else. **The values in the table of §*The Second Variation: One Number, for a New Reason* are that statement with numbers**: $0.750000$ and $2.032500$ off the shell, and the shell is the surface where the column of $N$ crosses zero.
 
 **The path integral's propagator has the pole, and the shift moves it without changing its shape.** The free kernel's denominator is $\langle\tilde K_\Phi\rangle_{\natural}+k_m^{2}=-(k^{2}-k_m^{2})$, the negative of the free second variation. With the coupling the same construction gives $-\pi^{2}+k_m^{2}$, the negative of the number above, so **the kernel is large exactly where $\pi^{2}=k_m^{2}$**.
 
 **The pole's surface is a translated hyperboloid and not a deformed one.** $\pi^{2}$ is one fixed quadratic form evaluated at the shifted four-momentum, so its zero set is congruent to the free one and the congruence is a translation. **That is the companion's Finding 3 read at the pole**, and the article states it here because the propagator is where the translation is visible as a physical statement rather than as an algebraic identity.
 
-**The relation is exact only where the number exists, and that is the article's answer to the free article's open question.** The free sibling asks "whether the zero-pole relation survives when the symbol is an operator". The answer is: **it survives exactly at zero field strength, and it fails to be statable otherwise** — not because the propagator stops having poles, but because the object whose zero it would be stopped being a number. §*The Curvature Is the Term That Cannot Be a Number* is that answer's argument.
+**The relation is exact only where the number exists, and that is the article's answer to the free article's open question.** The free sibling asks "whether the zero-pole relation survives when the symbol is an operator". The answer is: **it survives exactly at zero field strength, and it fails to be statable otherwise** — not because the propagator stops having poles, but because the object whose zero it would be stopped being a number. §*The Structural Consequence: The Curvature Is the Term That Cannot Be a Number* is that answer's argument.
 
 **What the relation is not is a derivation of the integral.** The zero selects the support and the pole gives the weight; neither implies the other without the construction in between, and the construction is the path-integral companion's. **The relation is a computed equality of two displays at one wave number**, and the coupling shifts both displays by the same substitution.
 
@@ -243,7 +259,7 @@ $$
 
 measured as a residual of $0.0\times10^{0}$. **A pure vector is $\natural$-antisymmetric, and a $\natural$-antisymmetric element cannot be in the centre**: its commutator with a generic element was $4.43$ for a curvature component of size $0.9$ against a random complex element of unit scale.
 
-**So the composed operator is a central scalar exactly when the added term vanishes.** With $\tilde F=0$ the operator is a multiple of the identity, as §*The Second Variation Is One Number, for a New Reason* measures. With $\tilde F\neq0$ it is not, and the compatibility condition
+**So the composed operator is a central scalar exactly when the added term vanishes.** With $\tilde F=0$ the operator is a multiple of the identity, as §*The Second Variation: One Number, for a New Reason* measures. With $\tilde F\neq0$ it is not, and the compatibility condition
 
 $$
 \Bigl(\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
@@ -340,7 +356,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 ## The Limits and the Truncation’s Error
 
-**Constant coefficients.** The mode form exists where the connection is constant, and every exact statement above is a statement under that licence. A varying connection replaces the symbol by a convolution, and no display in §*The Second Variation Is One Number, for a New Reason* survives unchanged.
+**Constant coefficients.** The mode form exists where the connection is constant, and every exact statement above is a statement under that licence. A varying connection replaces the symbol by a convolution, and no display in §*The Second Variation: One Number, for a New Reason* survives unchanged.
 
 **The abelian component form.** The parent's coupling separates into components because the coefficients are central scalars. **A non-abelian connection would put the connection between the field and its conjugate**, the reality argument would have to be redone with the ordering explicit, and $\mathcal{Q}$ would not be a quadratic form in the amplitude.
 
@@ -362,7 +378,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **Whether the zero-pole relation has an operator-level reading is the free article's question and this article answers it only negatively.** The relation survives at zero field strength and stops being statable beyond it. **Whether some other object — the inverse of the convolution, or the determinant of the composed operator — plays the pole's role for a general connection is not settled**, and the question is well posed because the convolution's inverse exists as a distribution.
 
-**Whether the transition bilinear can be written as a statement about a pair of modes is open.** §*Why the Parent's Test Field Had Two Modes* locates the charge's conservation in the pairs and does not compute them. **A momentum-space form of the current display, with the frame units carried through, would either reproduce the parent's numbers or fail to**, and neither outcome is known here.
+**Whether the transition bilinear can be written as a statement about a pair of modes is open.** §*Aside: Why the Parent’s Test Field Had Two Modes* locates the charge's conservation in the pairs and does not compute them. **A momentum-space form of the current display, with the frame units carried through, would either reproduce the parent's numbers or fail to**, and neither outcome is known here.
 
 **Whether the choice of frame units is forced is the parent's third open question and it is untouched.** The algebra supplies every factor of the triple product; **it does not single out $\vec e_x$ and $\vec e_y$**, and nothing in the transform bears on which units the pairing uses.
 

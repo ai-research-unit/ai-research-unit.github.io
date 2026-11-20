@@ -81,7 +81,15 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Reality of the Action: Term by Term
+## The Reality of the Action
+
+**Four questions, and this article answers (b) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+
+### The Pairing
+
+**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the three terms below are its three applications.
+
+### The Type of the Coefficient
 
 **The kinetic term.** The antisymmetrised covariant kinetic density is real exactly when the root is anti-Hermitian, by the free article's computation, and the covariant derivative's connection part is central so it does not change the type. **The coupling adds a real number to a real quantity.**
 
@@ -94,6 +102,14 @@ the symbol equation the article solves. The passage from the action to the equat
 **What the term-by-term structure forbids.** It forbids a complex action from a real connection and a Hermitian Hamiltonian. **A complex action would need a non-Hermitian coefficient or a complex $ϙ$**, and the article's licence excludes both.
 
 **The modulus is preserved by the connection.** $\lvert D_\eta\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. **That invariance is the reason the action's gauge covariance is exact and not up to a total derivative**, and the parent states it once.
+
+### The Selection Rule
+
+**Not examined here.** The potential is real by the licence, $\varrho\varphi$ with $\varphi$ real, so no sector is excluded. The exclusion needs a potential that is a free element, and that is the scalar family's case.
+
+### What Reality Does Not Buy
+
+**Not at issue here.** The section shows the sum is real term by term, which is stronger than the free case's statement; it does not compare the action's reality with the spectrum's.
 
 ## The Constraints the Action Imposes: Gauge Invariance of the Symbol
 

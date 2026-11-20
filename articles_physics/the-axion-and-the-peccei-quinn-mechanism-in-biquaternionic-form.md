@@ -183,21 +183,9 @@ $$
 \sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,j_{PQ,\mu} = \frac{1}{32\pi^2}\,\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a} .
 $$
 
-That density is itself a total derivative, $\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a} = \sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,J_{\mathrm{cs},\mu}$, with $J_{\mathrm{cs},\mu}$ the Chern–Simons current. The axion therefore couples to the gauge fields through the topological density,
+That density is itself a total derivative, $\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a} = \sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,J_{\mathrm{cs},\mu}$, with $J_{\mathrm{cs},\mu}$ the Chern–Simons current. So the axion can couple to the gauge fields through the topological density without breaking the shift symmetry of the previous section. The coupling term, its equivalence to a derivative coupling of the axion to the Chern–Simons current, and the functional whose variation it is are written in [The Lagrangian and the Axion](the-lagrangian-and-the-axion.html); that article also states the potential's cosine form as the periodicity's consequence rather than an assumption. What matters here is the one consequence: integrating out the gauge fields in the presence of the coupling produces the periodic function of $a/f_a+\bar\theta$ written above, and its coefficient $\Lambda^4$ is the topological susceptibility of the gauge sector.
 
-$$
-\mathcal{L}_{aGG} = \frac{a}{f_a}\,\frac{1}{32\pi^2}\,\sum_{\mu,\nu,a}F_{\mu\nu a}F_{\mathrm{dual},\mu\nu a} ,
-$$
-
-and, because the density is a total derivative, the coupling is equivalent to a derivative coupling of the axion to the Chern–Simons current, $\frac{1}{f_a}\sum_\mu\varepsilon_\mu\,\partial/\partial R_\mu\,a\,J_{\mathrm{cs},\mu}$. This is the coupling that generates the potential: integrating out the gauge fields in the presence of this term produces the periodic function of $a/f_a+\bar\theta$ written above, and the coefficient $\Lambda^4$ is the topological susceptibility of the gauge sector.
-
-**Compatibility with the periodicity.** The theta term's charge is quantised, $\frac{1}{32\pi^2}\int d^4r\,FF_{\mathrm{dual}} = Ϙ\in\mathbb{Z}$, so under the shift $a\to a+2\pi f_a$ the axion's coupling changes the action by
-
-$$
-\delta S = \frac{2\pi f_a}{f_a}\,Ϙ = 2\pi Ϙ ,
-$$
-
-and $\exp(i\delta S) = 1$. The periodicity of the axion field is therefore **compatible** with the anomaly: the shift by $2\pi f_a$ is a symmetry of the quantum theory because the topological charge is an integer. This is the standard consistency condition (Weinberg 1978; Wilczek 1978), and it is the reason the axion's potential is a cosine of the total angle rather than a polynomial, and the reason the CP-conserving minimum at $\bar\theta_{\text{eff}} = 0$ is one of a periodic family.
+**Compatibility with the periodicity.** The theta term's charge is quantised, $\frac{1}{32\pi^2}\int d^4r\,FF_{\mathrm{dual}} = Ϙ\in\mathbb{Z}$, so under the shift $a\to a+2\pi f_a$ the action changes by $2\pi Ϙ$ and $\exp(i\delta S) = 1$. The periodicity of the axion field is therefore **compatible** with the anomaly: the shift by $2\pi f_a$ is a symmetry of the quantum theory because the topological charge is an integer. This is the standard consistency condition (Weinberg 1978; Wilczek 1978), and it is the reason the axion's potential is a cosine of the total angle rather than a polynomial, and the reason the CP-conserving minimum at $\bar\theta_{\text{eff}} = 0$ is one of a periodic family. The action article carries the same check at the level of the functional.
 
 **The theta vacuum as the source.** The potential $V(\bar\theta_{\text{eff}})$ is exactly the dependence of the theta-vacuum energy on the theta parameter, $V(\bar\theta_{\text{eff}}) = E_{\text{vac}}(\bar\theta_{\text{eff}}) - E_{\text{vac}}(0)$, as the companion articles on the theta vacuum and the instanton gas establish; the axion mechanism reads that dependence as a potential for a field, and the minimum of the vacuum energy at $\bar\theta_{\text{eff}} = 0$ — guaranteed by the CP symmetry $\bar\theta\to-\bar\theta$ of the gauge sector — becomes the vacuum of the axion. The framework's contribution to this interpretation is the periodic central field of the previous section; the vacuum-energy dependence is the theta-vacuum article's, and the anomalous coupling is the spinor sector's.
 

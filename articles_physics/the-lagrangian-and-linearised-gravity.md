@@ -10,7 +10,7 @@
 
 **What is not done.** Nothing is quantised. There is no graviton operator, no Fock space, no propagator, no loop and no statement about renormalisability. The gravity articles this family draws on are classical, and the corpus's separate quantisation programme — *Canonical Quantization of the Biquaternion Graviton Field* — is a different construction and not this family's; the bridge article records what a quantisation would need.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, where the quadratic form's reality is shown from the reality of the frame perturbation, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the non-linear theory is attempted beyond the parent's gap, so slot 13 is omitted. The open question is the non-linear completion, which is named and not separated, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is settled inside *The Action*, where the quadratic form's reality is shown from the reality of the frame perturbation, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the non-linear theory is attempted beyond the parent's gap, so slot 13 is omitted. The open question is the non-linear completion, which is named and not separated, so slot 14 is omitted.
 
 ## Conventions
 

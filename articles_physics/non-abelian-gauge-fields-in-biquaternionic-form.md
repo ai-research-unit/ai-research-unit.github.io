@@ -197,25 +197,11 @@ which is the non-abelian analogue of the statement that the homogeneous Maxwell 
 
 ## The Yang–Mills Action
 
-The action is the integral of the simplest invariant density built from the field strength. Since $F_{\mathrm g,\mu\nu} = \tilde Q F_{\mu\nu}\tilde Q^{-1}$ and the trace is cyclic,
+The action is the integral of the simplest invariant density built from the field strength: the trace of the square, $\mathcal{L}=-\tfrac12\,\mathrm{Tr}(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu})$ with $S_{\mathrm{YM}}=\int d^4r\,\mathcal{L}$. It is gauge invariant because $F_{\mathrm g,\mu\nu}=\tilde QF_{\mu\nu}\tilde Q^{-1}$ and the trace is cyclic. The functional, its variation, the sign and normalization bookkeeping, the constraint count and the currents are written in [The Lagrangian and the Non-Abelian Gauge Fields](the-lagrangian-and-the-non-abelian-gauge-fields.html); this section keeps the one point this article's argument turns on.
 
-$$
-\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mathrm g,\mu\nu}F_{\mathrm g,\mu\nu}\right)
-= \mathrm{Tr}\!\left(\sum_{\mu,\nu}\tilde Q F_{\mu\nu}\tilde Q^{-1}\tilde Q F_{\mu\nu}\tilde Q^{-1}\right)
-= \mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
-$$
+**The trace is not the reduction.** The trace is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathrm{SU}(2)$ factor; it is **not** the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind this article warns against when it distinguishes the material from the informational sector, and it would cost the invariance: the reduction is not cyclic and the density built from it is not a gauge invariant.
 
-so the local density
-
-$$
-\boxed{\;\mathcal{L} = -\frac{1}{2}\,\mathrm{Tr}\!\left(\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}\right),
-\qquad
-S_{\mathrm{YM}} = \int d^4r\;\mathcal{L}\;},
-$$
-
-is gauge invariant. The trace here is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$, restricted to the $\mathrm{SU}(2)$ factor; it is **not** the informational reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, which pairs an element of the informational sector with a Hermitian element and is a different pairing on a different subspace. Conflating the two would be an error of the same kind the parent article warns against when it distinguishes the material from the informational sector.
-
-The sign and normalization of $\mathcal{L}$ are the standard ones when the generators are normalized so that the form $-4\,\mathrm{Sc}(T_aT_b) = \delta_{ab}$; the overall sign convention is fixed by the reality class of the connection, treated in the next section. Since the density is a total trace, its variation under a gauge transformation vanishes, and the field equations are the non-abelian Maxwell–Yang–Mills equations, obtained by varying $\mathcal{A}_\mu$: the source-free equation is $\sum_\mu D_\mu F_{\mu\nu} = 0$, in place of the abelian $\sum_\mu\partial/\partial R_\mu F_{\mu\nu} = 0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
+**The equation it produces.** Varying $\mathcal{A}_\mu$ gives the source-free non-abelian equation $\sum_\mu D_\mu F_{\mu\nu}=0$, in place of the abelian $\sum_\mu\partial/\partial R_\mu F_{\mu\nu}=0$. The covariant derivative is necessary, not decorative: the source term of a non-abelian gauge field is itself charged, so the field equation cannot be linear in $F$.
 
 ## The Abelian Parent's Curvature Formula Does Not Survive
 

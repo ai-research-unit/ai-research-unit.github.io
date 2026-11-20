@@ -1,6 +1,6 @@
 # __The Lagrangian and the Proca Equation in Momentum Space__
 
-**Declared omissions.** The reality of the action is a statement about the symbol and is made there, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is a statement about the symbol and is made there, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 

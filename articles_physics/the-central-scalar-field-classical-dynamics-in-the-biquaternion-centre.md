@@ -60,6 +60,8 @@ A field in the centre is a Lorentz scalar in two senses. It is invariant under t
 
 ## The Classical Action and the Field Equation
 
+The action, its variation, its reality, its absent constraint and its currents are set out in the family's field slots in [The Lagrangian and the Central Scalar Field](the-lagrangian-and-the-central-scalar-field.html). This section keeps the equation and the solution the article is about.
+
 ### The Action
 
 The classical action of a real central scalar field coupled to a prescribed source density $\rho$ is

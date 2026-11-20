@@ -20,7 +20,7 @@ import sys
 # 4 when an article varies two independent fields, 7 carries more than one
 # section in three fluid articles. Every other slot
 # appears at most once.
-REPEATABLE = ('3', '4', '7', '9', '12')
+REPEATABLE = ('3', '4', '6', '7', '9', '12', 'M2', 'KEEP')
 
 MANDATORY = [
     ('1', 'Introduction'),
@@ -40,7 +40,6 @@ CONDITIONAL = []
 CANONICAL = [
     ('1', 'Introduction'),
     ('2', 'Conventions'),
-    ('2b', 'Before the Action:'),
     ('3', 'The Action in '),
     ('4', 'The Variation'),
     ('5', 'The Reality of the Action'),
@@ -71,6 +70,18 @@ CANONICAL = [
 
 CANONICAL_BY_LENGTH = sorted(CANONICAL, key=lambda x: -len(x[1]))
 
+# Slot 5 is one section over four distinct questions. The questions are fixed
+# subsections, in this order; a subsection that does not arise carries a
+# declaration and is never dropped.
+SUBSECTIONS = {
+    '5': [
+        'The Pairing',
+        'The Type of the Coefficient',
+        'The Selection Rule',
+        'What Reality Does Not Buy',
+    ],
+}
+
 
 def slot_of(heading):
     for slot, prefix in CANONICAL_BY_LENGTH:
@@ -84,6 +95,16 @@ def h2(path):
     for line in open(path, encoding='utf-8'):
         if line.startswith('## '):
             out.append(line[3:].strip())
+    return out
+
+
+def h2_with_h3(path):
+    out = []
+    for line in open(path, encoding='utf-8'):
+        if line.startswith('## '):
+            out.append([line[3:].strip(), []])
+        elif line.startswith('### ') and out:
+            out[-1][1].append(line[4:].strip())
     return out
 
 
@@ -113,6 +134,10 @@ def main():
                 errs.append('mandatory slot %s (%s) absent' % (slot, name))
             elif n > 1 and slot not in REPEATABLE:
                 errs.append('slot %s appears %d times' % (slot, n))
+        for slot in sorted(set(s for s in (slot_of(h) for h in heads) if s)):
+            n = sum(1 for h in heads if slot_of(h) == slot)
+            if n > 1 and slot not in REPEATABLE and slot not in [m[0] for m in MANDATORY]:
+                errs.append('conditional slot %s appears %d times' % (slot, n))
         order = [slot_of(h) for h in heads]
         pos = {}
         for i, s in enumerate(order):
@@ -122,6 +147,16 @@ def main():
         got = sorted(pos, key=pos.get)
         if got != want:
             errs.append('mandatory slots out of order: %s (want %s)' % (got, want))
+        for slot, want_subs in SUBSECTIONS.items():
+            blocks = [b for b in h2_with_h3(p) if slot_of(b[0]) == slot]
+            if len(blocks) != 1:
+                continue
+            got = blocks[0][1]
+            missing = [s for s in want_subs if s not in got]
+            if missing:
+                errs.append('slot %s missing subsections: %s' % (slot, missing))
+            elif [s for s in got if s in want_subs] != want_subs:
+                errs.append('slot %s subsections out of order: %s' % (slot, got))
         for slot, name in CONDITIONAL:
             if sum(1 for h in heads if slot_of(h) == slot) == 0:
                 carried.append(slug)

@@ -8,7 +8,7 @@
 
 **What is not done.** No scattering amplitude, no perturbation series, no Feynman rule, no loop, no renormalisation. This family has no quantised theory in which a four-point function could be computed, and this article does not manufacture one. What it has is the classical action, its exact equation, its exact current and its exact stress, and the observation that all three differ from the free ones in a controlled way.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, term by term, so slot 5 is omitted. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the textbook $\phi^{4}$ treatment is attempted, so slot 13 is omitted. The open questions are folded into the ledger, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is settled inside *The Action*, term by term, so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the textbook $\phi^{4}$ treatment is attempted, so slot 13 is omitted. The open questions are folded into the ledger, so slot 14 is omitted.
 
 ## Conventions
 

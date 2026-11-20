@@ -251,6 +251,8 @@ where $\Lambda$ is the scale of the sector that was integrated out — in the fr
 
 **The two-dimensional exception.** In two spacetime dimensions the $O(N)$ nonlinear sigma model is asymptotically free and its coupling grows in the infrared, so the model is a genuine interacting quantum field theory rather than only a low-energy expansion; the beta function is that of the companion renormalization-group article. The framework's sigma model inherits this statement in two dimensions, because the algebra's role in the computation is confined to the target metric and the trace, and the running is that of the coupling $1/f^2$. In four dimensions the model is the effective theory described above.
 
+The functional whose expansion this is, the variation that gives the field equation, the reality of the coefficients and the truncation's error are written in [The Lagrangian and the Nonlinear Sigma Model](the-lagrangian-and-the-nonlinear-sigma-model.html), which also states the derivative count as the reason the series terminates in practice. This section keeps only the bookkeeping that the framework's reading needs.
+
 **What the framework adds.** The derivative expansion and the power counting are standard and are imported. The framework's contribution is that the target manifold, its invariant metric, and the flat connection of the group-valued field are all read off from the algebra: the target is the compact subgroup manifold, the metric is the biquaternion norm, and the Maurer–Cartan form is the algebra-valued one-form of the algebra's own commutators. No new mechanism is introduced, consistent with the absence of a native ladder in the scalar sector that the companion articles record.
 
 ## The Biquaternion Reading

@@ -1,6 +1,6 @@
 # __The Lagrangian and the Coupled Schrödinger Equation__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -18,11 +18,11 @@ with $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ and $\tilde A_\Phi=i(\varphi
 
 **Three findings.**
 
-*First, the action is real for a general element, and the reality is structural.* The kinetic term is Hermitian, the gradient term is a sum of moduli and therefore a positive real number, and the potential term is Hermitian because $ϙ\varphi$ is a real scalar. $\mathrm{Sc}$ of a Hermitian element is real, so the three terms are real separately and no cancellation between them is needed (§*The Coupled Action*).
+*First, the action is real for a general element, and the reality is structural.* The kinetic term is Hermitian, the gradient term is a sum of moduli and therefore a positive real number, and the potential term is Hermitian because $ϙ\varphi$ is a real scalar. $\mathrm{Sc}$ of a Hermitian element is real, so the three terms are real separately and no cancellation between them is needed (§*The Action in Element Form, Coupled*).
 
 *Second, the connection enters the action in one place and the variation puts it in two.* The action carries the connection inside $D_\eta$ and inside $ϙ\varphi$; the equation carries it in the kinetic operator and in the potential. The two are one substitution seen from two sides, and the boundary-term identity that relates the gradient form to the operator form is what makes the variation produce the equation and not a different one (§*The Variation*).
 
-*Third, the local phase transformation leaves the action invariant exactly, with no boundary term.* The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$ and the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two gains are equal and opposite. The gradient term is invariant by covariance. So the invariance is term by term, and it is the clearest statement of why the covariant derivative and the potential are one object (§*Gauge Invariance of the Action*).
+*Third, the local phase transformation leaves the action invariant exactly, with no boundary term.* The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$ and the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two gains are equal and opposite. The gradient term is invariant by covariance. So the invariance is term by term, and it is the clearest statement of why the covariant derivative and the potential are one object (§*The Constraints the Action Imposes: Gauge Invariance of the Action*).
 
 **What is not claimed.** The action is not new: it is the standard action of a non-relativistic charged scalar field, written in the algebra's letters. The current it delivers is the element-form companion's current, not a second one. No new prediction and no new solution. The article's content is the closure of the variational statement — the action's reality, the variation's exactness, the invariance's exactness, and the current's identity with the equation's — and the honest record of the one thing it does not do, which is the local energy flux.
 
@@ -265,7 +265,7 @@ The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in 
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the central phase and the forced transformation law.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the covariance identities the invariance proof uses.
 - [Noether's Theorem in Biquaternionic Form](noethers-theorem-in-biquaternionic-form.html), for the construction of the current from the symmetry.
-- [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the stress tensor and the improvement terms that §*The Energy and the Two Settings* leaves out.
+- [Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form](stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html), for the stress tensor and the improvement terms that §*The Two Settings: The Energy* leaves out.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the equation that this article's current sources.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the second-order case, where the same identities have a different completion.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html) and [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the spinor case, where the current is not a derivative bilinear.

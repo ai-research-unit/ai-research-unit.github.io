@@ -1,6 +1,6 @@
 # __The Lagrangian and the Coupled Schrödinger Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -26,11 +26,11 @@ $$
 V_{\mathrm{gco}}=(h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,\big((\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b}\big),
 $$
 
-and every other term of the Lagrangian is the free one, letter for letter. The four vanishing momenta stay vanishing, the cross term $\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}(\vec\Omega\cdot\vec u_{\mathrm b})$ stays, and the phase momentum stays $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ (§*The Coupled Polar Lagrangian*, §*The Euler–Lagrange Equations*).
+and every other term of the Lagrangian is the free one, letter for letter. The four vanishing momenta stay vanishing, the cross term $\frac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}(\vec\Omega\cdot\vec u_{\mathrm b})$ stays, and the phase momentum stays $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}$ (§*The Action in Polar Variables, Coupled*, §*The Variation: The Euler–Lagrange Equations*).
 
-*Second, the shift is the whole of minimal coupling in a setting with no derivatives, and it is a shift of two numbers.* The unshifted pair $(h_t,\vec h_\Psi)$ is the canonical pair; the shifted one is the kinetic pair; the flow's two rates are built from the shifted one. So the coupled flow is the free flow with $h_t\to h_t-ϙ\varphi$ and $\vec h_\Psi\to\vec h_\Psi-q\vec A$, and no structural statement changes (§*The Euler–Lagrange Equations*).
+*Second, the shift is the whole of minimal coupling in a setting with no derivatives, and it is a shift of two numbers.* The unshifted pair $(h_t,\vec h_\Psi)$ is the canonical pair; the shifted one is the kinetic pair; the flow's two rates are built from the shifted one. So the coupled flow is the free flow with $h_t\to h_t-ϙ\varphi$ and $\vec h_\Psi\to\vec h_\Psi-q\vec A$, and no structural statement changes (§*The Variation: The Euler–Lagrange Equations*).
 
-*Third, the chart acquires a gauge direction, and the direction is $\theta_{\mathrm{pha}}$.* The gauge group translates the phase and leaves the other seven parameters alone, so the coupled chart has a direction along which the field and the connection together are unchanged. The free chart has no such direction: all eight parameters are physical. The consequence is the sharp statement of the coupled chart — the momentum conjugate to the gauge direction is $-\hbar N$, and $N$ is the charge that the connection sources (§*The Gauge Direction of the Chart*).
+*Third, the chart acquires a gauge direction, and the direction is $\theta_{\mathrm{pha}}$.* The gauge group translates the phase and leaves the other seven parameters alone, so the coupled chart has a direction along which the field and the connection together are unchanged. The free chart has no such direction: all eight parameters are physical. The consequence is the sharp statement of the coupled chart — the momentum conjugate to the gauge direction is $-\hbar N$, and $N$ is the charge that the connection sources (§*The Constraints the Action Imposes: The Gauge Direction of the Chart*).
 
 **What is not claimed.** No new prediction and no new solution. The polar Lagrangian is a substitution, not a new principle; the free article's closure argument — that the parameter equations are the equation's components and the Jacobian is invertible — is repeated with covariant letters and not replaced. The genuinely new statements are the four above: that the kinetic term is untouched, that the constraint structure is therefore untouched, that the potential shift is a two-number shift, and that the gauge direction of the chart is the phase.
 
@@ -98,7 +98,7 @@ p_{\vec u_{\mathrm b}}=0,
 p_{\theta_{\mathrm{pha}}}=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}} .
 $$
 
-Four vanishing momenta and one nonzero, exactly as in the free article, and for the same reason: the Lagrangian is first order, so the velocities other than $\dot\theta_{\mathrm{pha}}$ enter only through $\vec\Omega$, which is not conjugated to any of them. **The coupling does not change the constraint structure**, and the reason is stated in §*The Coupled Polar Lagrangian*: it contributes no velocity, so it cannot create a momentum.
+Four vanishing momenta and one nonzero, exactly as in the free article, and for the same reason: the Lagrangian is first order, so the velocities other than $\dot\theta_{\mathrm{pha}}$ enter only through $\vec\Omega$, which is not conjugated to any of them. **The coupling does not change the constraint structure**, and the reason is stated in §*The Action in Polar Variables, Coupled*: it contributes no velocity, so it cannot create a momentum.
 
 **The equations.** The Euler–Lagrange equations are the free ones with $V\to V_{\mathrm{gco}}$:
 
@@ -124,9 +124,9 @@ which are the free flow's rates with the shifted numbers.
 
 **Why the coupled system closes the way the free one does.** The free article's closure argument is that the eight residuals are exactly the eight real components of the field equation in the parameter basis, and that the word's Jacobian is invertible. Neither half of that argument uses the potential: the first is an identity between the residual $i\hbar\partial_{t'}\tilde\Xi-\tilde H_\Psi\tilde\Xi$ and its coordinates, and the second is a property of the word. In the coupled case the residual is $i\hbar D_t\tilde\Xi-\frac{1}{2m}(-i\hbar\vec D)^{2}\tilde\Xi$ in the operator setting, and in the constant setting it is $i\hbar\partial_{t'}\tilde\Xi-\tilde H^{\mathrm{gco}}_\Psi\tilde\Xi$ — the same element equation with a different letter. So the closure carries over unchanged, and the article states that rather than repeating the proof.
 
-**The honest qualification.** The closure of the *free* polar variational principle is the free article's result and it is established there. The coupled statement is a corollary and not a new proof, which is why this section is short. What the coupling does not do is supply a second, independent derivation: the parameter equations are the equation's components, and they are not "the four brackets" — the relation between the two bases is the Jacobian's, and it is the free article's §*The Relation to the Four Brackets*.
+**The honest qualification.** The closure of the *free* polar variational principle is the free article's result and it is established there. The coupled statement is a corollary and not a new proof, which is why this section is short. What the coupling does not do is supply a second, independent derivation: the parameter equations are the equation's components, and they are not "the four brackets" — the relation between the two bases is the Jacobian's, and it is the free article's §*The Parameter Basis and the Four Brackets*.
 
-**One difference in the residual's shape.** In the operator setting the residual is not a single element at a point but a differential operator, and the parameter equations then contain the gradient terms of §*The Central Field in the Operator Setting*. The constant setting is where the article's structural statements live, and the operator setting is where the physics of the potential and the current lives.
+**One difference in the residual's shape.** In the operator setting the residual is not a single element at a point but a differential operator, and the parameter equations then contain the gradient terms of §*The Two Settings: The Central Field in the Operator Setting*. The constant setting is where the article's structural statements live, and the operator setting is where the physics of the potential and the current lives.
 
 ## The Constraints the Action Imposes: The Gauge Direction of the Chart
 
@@ -282,9 +282,9 @@ which is the element-form companion's identity in the chart and is one line here
 
 **1. The coupled closure of the constrained system.** The free article leaves open whether the Dirac constraint analysis of the four vanishing momenta closes and reproduces the flow directly. The coupling does not change the constraints, so it does not change the question; but it does add one thing to check, namely that the Dirac bracket of the shifted potential's constraints reproduces the shifted flow and not the free one. The check is short and is not performed here.
 
-**2. The operator setting for the general element.** The article's operator statements are the central field's. A boost that varies from point to point puts a gradient into the Hermitian bracket, and the connection's central-imaginary addition then sits alongside a Hermitian gradient term; how the three coupling pieces of §*The Central Field in the Operator Setting* generalize to the four-bracket decomposition is not examined here.
+**2. The operator setting for the general element.** The article's operator statements are the central field's. A boost that varies from point to point puts a gradient into the Hermitian bracket, and the connection's central-imaginary addition then sits alongside a Hermitian gradient term; how the three coupling pieces of §*The Two Settings: The Central Field in the Operator Setting* generalize to the four-bracket decomposition is not examined here.
 
-**3. The coupling's own variation in the chart.** Varying the connection in the polar action gives the Maxwell equation with the current of §*The Central Field in the Operator Setting* as source, and varying $\varphi$ gives the Gauss law with the density as its source. The chart has a sharper form of the second statement: the source is the momentum conjugate to the phase, $-\hbar N$, so the charge and the phase's momentum are one object. Whether that identification survives the constraint analysis of the constant-setting system is not examined here.
+**3. The coupling's own variation in the chart.** Varying the connection in the polar action gives the Maxwell equation with the current of §*The Two Settings: The Central Field in the Operator Setting* as source, and varying $\varphi$ gives the Gauss law with the density as its source. The chart has a sharper form of the second statement: the source is the momentum conjugate to the phase, $-\hbar N$, so the charge and the phase's momentum are one object. Whether that identification survives the constraint analysis of the constant-setting system is not examined here.
 
 ## Summary
 

@@ -35,15 +35,8 @@ Spacetime indices are written low and every contraction is an explicit sum, in t
 
 ### The Gauge Fields and the Mixing
 
-The electroweak gauge sector is the product group $SU(2)_L\times \mathrm{U}(1)_Y$, with three gauge fields $W_{\mu a}$ $(a=1,2,3)$ of coupling $g$ and one field $B_\mu$ of coupling $g_{\mathrm Y}$. The kinetic terms are
-$$
-\mathcal{L}_{\mathrm{kin}}=-\tfrac14\sum_{a,\mu,\nu}W_{\mu\nu a}W_{\mu\nu a}-\tfrac14\,\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu},
-$$
-$$
-W_{\mu\nu a}=\frac{\partial W_{\nu a}}{\partial R_\mu}-\frac{\partial W_{\mu a}}{\partial R_\nu}+g\sum_{b,c}\varepsilon_{abc}W_{\mu b}W_{\nu c},
-\qquad
-B_{\mu\nu}=\frac{\partial B_\nu}{\partial R_\mu}-\frac{\partial B_\mu}{\partial R_\nu}.
-$$
+The electroweak gauge sector is the product group $SU(2)_L\times \mathrm{U}(1)_Y$, with three gauge fields $W_{\mu a}$ $(a=1,2,3)$ of coupling $g$ and one field $B_\mu$ of coupling $g_{\mathrm Y}$. The action for the sector — the two curvatures, the scalar doublet's covariant kinetic term and potential, and the mass matrix that the vacuum produces from it — is written, varied and diagonalized in [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html). That article obtains $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$ as the nonzero eigenvalues of a rank-three mass matrix and reads the photon's masslessness as the zero eigenvalue; it also states why no mass term may be written by hand. This article does not repeat the functional. It takes the two masses, the mixing and the masses' relation as its data and asks what the algebra does with them.
+
 The W fields are charged under the electromagnetic subgroup and the physical charged combinations are
 $$
 W^\pm_\mu=\frac{1}{\sqrt{2}}\left(W_{\mu 1}\mp i W_{\mu 2}\right),

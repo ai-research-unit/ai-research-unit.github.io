@@ -70,7 +70,15 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Reality of the Action: The Real Part Is the Hermiticity of the Symbol
+## The Reality of the Action
+
+**Four questions, and this article answers (b) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+
+### The Pairing
+
+**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and §*The Reality of the Action* of *The Lagrangian and the Dirac Equation* is where the quaternionic alternative was rejected.
+
+### The Type of the Coefficient
 
 **In position space the real part is a statement about the adjoint.** The parent's derivation shows that each kinetic density is real up to a divergence, that the divergence integrates away, and that the imaginary part of the bracket is therefore a surface term. One sentence of it is worth quoting: the $i$ inside the material time is what makes the temporal kinetic term self-adjoint without disturbing the spatial ones.
 
@@ -86,6 +94,14 @@ because $i\tilde K_\Phi$ is Hermitian: $\mathrm{Sc}(\tilde A^{*}H\tilde A)$ is r
 **The two readings are one mechanism seen twice.** In position space the central $i$ sits in the coordinate $R_t=ir_t'$ and splits the four derivative directions into one anti-Hermitian and three Hermitian; the real part then cancels the one imaginary contribution. In momentum space the same $i$ sits in front of the symbol and makes all four directions Hermitian at once; the real part then has nothing to cancel. **One element, used in one place at a time, and the real part is the trace of where it was used.**
 
 **A reader should not conclude that the real part was a decoration.** Without it the position-space functional is not real, and the variation is not the pair; the parent shows both. The claim here is narrower: the real part's work is done by the symbol's Hermiticity once the transform is taken, so the momentum-space action needs no boundary argument and no surface term.
+
+### The Selection Rule
+
+**Not examined here.** The symbol is Hermitian by the article's licence; which potentials are admissible is the scalar family's question, where the potential is a free element and can be neither.
+
+### What Reality Does Not Buy
+
+**Not at issue here.** The section establishes that the real part removes nothing at a mode. That is a statement about the $\mathrm{Re}$ device and not about the gap between a real action and a real spectrum, which the limit reading measures.
 
 ## Zero, Pole and the On-Shell Action: Zero and Pole Are One Object
 

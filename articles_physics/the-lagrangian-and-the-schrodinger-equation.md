@@ -26,7 +26,7 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Schrödinger equation in its element form.
 
-**Declared omissions.** The reality of the action is examined inside *The Two Writings from the Action* and inside the structural consequence, and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the depth already made with the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is examined inside *The Two Writings from the Action* and inside the structural consequence, so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the depth already made with the parent is attempted, so slot 13 is omitted.
 
 ## Conventions
 

@@ -1,6 +1,6 @@
 # __The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -26,7 +26,7 @@ summed over the four slots with the metric signs of the corpus's convention. The
 
 *Second, the Euler–Lagrange equations are the parent's with one substitution, and the rank of the kinetic matrix does not change.* The potential shifts velocities by functions and adds a term proportional to $\lvert A\rvert^{2}$ with no velocity, so the Legendre transform stays regular, no constraint appears, and no multiplier is needed — the free polar article's exact equivalence by the invertible Jacobian survives the coupling intact.
 
-*Third, the interaction term's structure is visible in the chart and it is not the standard one-term coupling.* Expanding the kinetic term in powers of the connection gives a term linear in $A$ and a term quadratic in $A$; the quadratic term is what makes the action gauge invariant, and it is the term that a presentation writing the coupling as "current times potential" does not have. The chart exhibits the two terms separately, and §*The Action in the Chart* computes them.
+*Third, the interaction term's structure is visible in the chart and it is not the standard one-term coupling.* Expanding the kinetic term in powers of the connection gives a term linear in $A$ and a term quadratic in $A$; the quadratic term is what makes the action gauge invariant, and it is the term that a presentation writing the coupling as "current times potential" does not have. The chart exhibits the two terms separately, and §*The Action in Polar Variables* computes them.
 
 **Scope and settings.** The connection is external and treated at the level of the action; the field is the scalar of the element companion. The central-field case is the Madelung variational principle with a potential, which is standard and closed. The general element is the eight-parameter chart, whose action is regular and whose equations are the Jacobian image of the element form's — also closed, because the free polar article's argument does not use the connection. What is *not* closed here is the same thing that is not closed in the free polar article: the explicit Jacobian in the general case. The article states what it computes and says so.
 
@@ -67,7 +67,7 @@ $$
 \varrho^{2}\Bigl\lvert\partial_\eta\ln \varrho+i\Bigl(\partial_\eta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\eta\Bigr)\Bigr\rvert^{2}.
 $$
 
-In the temporal slot the connection sits with the scale; in the spatial slots it sits with the phase. The two moduli are the same function of the *mechanical* four-momentum, and §*The Central Field* writes the action in that form.
+In the temporal slot the connection sits with the scale; in the spatial slots it sits with the phase. The two moduli are the same function of the *mechanical* four-momentum, and §*The Action in Polar Variables: The Central Field* writes the action in that form.
 
 **The action.** Collecting the four slots with their metric signs and the mass term,
 
@@ -133,7 +133,7 @@ $$
 S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_\mu(\mathcal A^{\mathrm{gco}}_\mu)^{*}\bigr]-k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\}
 $$
 
-with the metric unchanged. The metric is unchanged because the metric is a property of the *free* bracket's coefficients in the parameter basis, and the connection's term is not a parameter derivative; it is an additive constant in the bracket, and its contribution to the action is the two terms of §*The Action in the Chart*. So the frame density, the $\cosh$ and $\sinh$ structure, the amplitude–rapidity block's unit determinant and the two cross terms are all the free article's.
+with the metric unchanged. The metric is unchanged because the metric is a property of the *free* bracket's coefficients in the parameter basis, and the connection's term is not a parameter derivative; it is an additive constant in the bracket, and its contribution to the action is the two terms of §*The Action in Polar Variables*. So the frame density, the $\cosh$ and $\sinh$ structure, the amplitude–rapidity block's unit determinant and the two cross terms are all the free article's.
 
 **Which parameter equations are affected.** Varying the eight parameters gives eight equations: the scale's, the phase's, the rapidity's, the boost axis's two, the rotor's angle, and the rotor axis's two. The connection enters through the phase's temporal derivative and the scale's spatial derivatives, so the equations that contain those derivatives are shifted and the rest are shifted only through the potential term $-\frac{ϙ^{2}\varrho^{2}}{\hbar^{2}}(a_{t}'^{2}-\lvert\vec A\rvert^{2})$, which is a function of the coordinates and of $\varrho$ alone and therefore adds $\partial/\partial p$ of a known function to the right side of each.
 

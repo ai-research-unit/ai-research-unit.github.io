@@ -8,7 +8,7 @@
 
 **Why write an article that stops.** Because the absence is the interesting fact, and because a reader who finds an action called QED is entitled to know which four words of the name the corpus can support. It supports *electro* and *dynamics*. It does not support *quantum*, and it does not support the perturbation theory that the name usually brings with it.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, where each of its three terms is shown real, so slot 5 is omitted. The action's constraints are the ones the two parents state, and this article does not repeat them in a section of its own, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the textbook formulation is attempted beyond the parent's, so slot 13 is omitted. The open questions are folded into the last section, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is settled inside *The Action*, where each of its three terms is shown real, so slot 5 is omitted, with its four subsections. The action's constraints are the ones the two parents state, and this article does not repeat them in a section of its own, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the textbook formulation is attempted beyond the parent's, so slot 13 is omitted. The open questions are folded into the last section, so slot 14 is omitted.
 
 ## Conventions
 

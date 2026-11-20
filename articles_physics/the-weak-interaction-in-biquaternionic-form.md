@@ -30,15 +30,15 @@ $$
 J^{+}_\mu=\tilde{Ξ}_{\mathrm u}^{\dagger}iR_{\vec e_x}\,\gamma_\mu(1-\gamma_5)\tilde{Ξ}_{\mathrm d},
 $$
 
-and the interaction Lagrangian is $\mathcal{L}_{\mathrm{cc}}=-\frac{g}{2\sqrt2}\sum_\mu\varepsilon_\mu\big(W^{+}_\mu J^{+}_\mu+W^{-}_\mu J^{-}_\mu\big)$, with $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. Eliminating the W at momenta small against its mass replaces the propagator by $\varepsilon_\mu\delta_{\mu\nu}/M_W^2$ and leaves a contact,
+and the interaction Lagrangian, its variation and the contact it produces are not repeated here: [The Lagrangian and the Weak Interaction](the-lagrangian-and-the-weak-interaction.html) writes the charged-current action, varies the field, solves for it and expands the propagator at $q^2/M_W^2$, and obtains Fermi's four-fermion form
 
 $$
 \mathcal{L}_{\mathrm{eff}}=-\frac{4G_{\mathrm F}}{\sqrt2}\sum_\mu\varepsilon_\mu J^{+}_\mu J^{-}_\mu,
 \qquad
-\frac{G_{\mathrm F}}{\sqrt2}=\frac{g^2}{8M_W^2},
+\frac{G_{\mathrm F}}{\sqrt2}=\frac{g^2}{8M_W^2}.
 $$
 
-which is Fermi's four-fermion form with the coefficient fixed by the W mass. The framework's companion article on Møller scattering uses the same elimination on the neutral current, and the parity-violating asymmetry computed there is the neutral counterpart of what follows. With the standard inputs $G_{\mathrm F}=1.1663787\times10^{-5}$ GeV$^{-2}$ and $M_W=80.3692$ GeV, the relation was verified to give $g=0.65283$, the accepted value to four figures, and it inverts to $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=246.22$ GeV.
+What this article uses from that result is the coefficient and nothing else. The framework's companion article on Møller scattering uses the same elimination on the neutral current, and the parity-violating asymmetry computed there is the neutral counterpart of what follows. With the standard inputs $G_{\mathrm F}=1.1663787\times10^{-5}$ GeV$^{-2}$ and $M_W=80.3692$ GeV, the relation was verified to give $g=0.65283$, the accepted value to four figures, and it inverts to $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=246.22$ GeV.
 
 ### The contact is a very good approximation, and that is the point
 

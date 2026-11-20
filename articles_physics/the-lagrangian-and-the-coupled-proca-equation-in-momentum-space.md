@@ -1,6 +1,6 @@
 # __The Lagrangian and the Coupled Proca Equation in Momentum Space__
 
-**Declared omissions.** The reality of the action is a statement about the symbol and is made there, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is a statement about the symbol and is made there, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -70,7 +70,7 @@ where $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ is the shifted Lorenz form and
 
 **The form is complex and the action is its real part.** $\mathcal{F}$ is complex for a complex amplitude and real for a material one; $\mathcal{M}$ is real always. **So the action at a mode is $\mathrm{Re}(\mathcal{F})+\mathcal{M}$**, and the imaginary part of $\mathcal{F}$ is the part the action discards — the same discard the parent records at $\mathrm{Re}\,\mathrm{Sc}$.
 
-**What the imaginary part does is carry the phase's mismatch.** A bilinear form's complex value has an argument that rotates at twice the phase and a modulus that does not; discarding the imaginary part therefore discards the information that would have made the term invariant. **That is the article's sharpest statement about the parent's complaint**, and §*The Two Terms Transform Differently* measures it.
+**What the imaginary part does is carry the phase's mismatch.** A bilinear form's complex value has an argument that rotates at twice the phase and a modulus that does not; discarding the imaginary part therefore discards the information that would have made the term invariant. **That is the article's sharpest statement about the parent's complaint**, and §*The Structural Consequence: The Two Terms Transform Differently* measures it.
 
 ## The Variation
 

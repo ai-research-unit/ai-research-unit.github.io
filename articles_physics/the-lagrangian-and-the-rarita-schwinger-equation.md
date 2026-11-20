@@ -10,7 +10,7 @@
 
 **What the article still does.** It states the action's standard form by name; it lists the two multipliers the constraints require; it states the invariance the massless case demands; and it states what the action's Noether procedure would give, since those currents are known from the parent's equation and the action would have to reproduce them.
 
-**Declared omissions.** The reality of the action is not checked, because the action is not written, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. The open question is the article's subject and is not separated from the ledger, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is not checked, because the action is not written, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. The open question is the article's subject and is not separated from the ledger, so slot 14 is omitted.
 
 ## Conventions
 

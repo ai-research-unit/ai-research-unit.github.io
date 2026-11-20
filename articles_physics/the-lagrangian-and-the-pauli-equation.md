@@ -8,7 +8,7 @@
 
 **What this article is not.** It is not a derivation of the anomalous moment, which needs the quantised theory; it is not a discussion of the fine structure, which is the next order; and it is not a replacement for the polar companion, which writes the same limit in the chart's variables. It is the element-form limit, with its error term stated.
 
-**Declared omissions.** The reality of the action is inherited from the Dirac action and is not rechecked in a section of its own, so slot 5 is omitted. The limit's constraints are the parent's and are not restated, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. The open questions are folded into the error section, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is inherited from the Dirac action and is not rechecked in a section of its own, so slot 5 is omitted, with its four subsections. The limit's constraints are the parent's and are not restated, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. The open questions are folded into the error section, so slot 14 is omitted.
 
 ## Conventions
 

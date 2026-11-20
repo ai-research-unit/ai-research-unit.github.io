@@ -1,6 +1,6 @@
 # __The Lagrangian and the Spin-Zero Fluid__
 
-**Declared omissions.** The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is computed only for the gradient energy, whose sign is what §*The Second Variation: The Gradient Energy Is Indefinite* states; the full quadratic form is not assembled, and no slot 5 is filled because the fluid's pairing is the parent's. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -80,7 +80,7 @@ which is the block's boxed law. The action's contribution to this display is not
 
 **The count is therefore two and two, with nothing left over.** No multiplier, no subsidiary condition, no constraint surface to reduce. The rung below has the same count and reaches it differently; the rung above loses it.
 
-## The Reality of the Action: The Gradient Energy Is Indefinite
+## The Second Variation: The Gradient Energy Is Indefinite
 
 **The sign of the second term is not uniform, and the reason is the operator's.** With the corpus's conventions the temporal component of a four-gradient carries an $i$, so
 

@@ -1,6 +1,6 @@
 # __The Lagrangian and the Coupled Dirac Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $V$ the pot
 
 *Third, the honest limit.* Whether the constrained system's solutions are the coupled pair's solutions is **not established here**. The equivalence is formal — the word is a bijection, so the variation of the action in the eight parameters and the variation in the element are the same variation — but the *flow* that the constrained system generates has not been shown to be the pair's flow. That is the article's open question and it is stated as such, not concealed.
 
-**The two settings.** The connection is taken constant, with constant coefficients, because that is the setting in which the parameters are coordinates on a fixed frame. In the operator setting the word's rapidity and rotor angle become fields and the action acquires gradient terms for them; the structure is the standard one of the quantum hydrodynamics of a spin fluid, and the article states it in §*The Operator Setting* without deriving it.
+**The two settings.** The connection is taken constant, with constant coefficients, because that is the setting in which the parameters are coordinates on a fixed frame. In the operator setting the word's rapidity and rotor angle become fields and the action acquires gradient terms for them; the structure is the standard one of the quantum hydrodynamics of a spin fluid, and the article states it in §*The Two Settings: The Operator Setting* without deriving it.
 
 ## Conventions
 
@@ -78,7 +78,7 @@ $$
 V=\text{the scalar part of the frame's image of }\tfrac{ϙ}{\hbar}\tilde A_\Phi,
 $$
 
-with $V$ a real function of $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$ and independent of $\varrho$ and $\theta_{\mathrm{pha}}$. **The independence of $\varrho$ is what makes the scale's momentum vanish** and it is §*The Constraint Structure*'s first fact.
+with $V$ a real function of $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$, $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$ and independent of $\varrho$ and $\theta_{\mathrm{pha}}$. **The independence of $\varrho$ is what makes the scale's momentum vanish** and it is §*The Constraints the Action Imposes: The Structure*'s first fact.
 
 **Which slots of the potential reach which bracket.** Decompose as in the polar companion: the temporal slot $\frac{iϙ}{\hbar}A_t$ is central imaginary, the spatial slots $\frac{iϙ}{\hbar}A_\eta\vec e_\eta$ are Hermitian. The potential therefore adds to the *phase bracket* and to the *boost bracket*, and it cannot reach the scale bracket or the rotor bracket. In the action that shows up as the structure of $V$: it depends on the boost's rapidity and axis through the Hermitian slot, and it depends on $\theta_{\mathrm{pha}}$ not at all.
 
@@ -253,7 +253,7 @@ and the gradient terms are the quantum potential's, in the spin-half-fluid form.
 
 - No new solution. The fields are the element companion's, and the word is a change of variables.
 - No new prediction. The functional is the element companion's.
-- No proof that the constrained system's flow is the coupled equation's flow. That is the conjecture of §*The Reconstruction Conjecture* and it is not settled.
+- No proof that the constrained system's flow is the coupled equation's flow. That is the conjecture of §*The Reconstruction and Its Limits: The Conjecture* and it is not settled.
 - No second current from the action. The word has two flows and the action has one symmetry; the combination is the conjecture's business.
 - No resolution of the constraint algebra: first class or second class is not determined.
 
@@ -261,7 +261,7 @@ and the gradient terms are the quantum potential's, in the spin-half-fluid form.
 
 ## The Reconstruction and Its Limits: The Conjecture
 
-**The statement.** Suppose the coupled equation, written for a general element, has a conserved current; suppose further that the current is the one the field's own parameters define, that is, the phase current together with the boost current; then the local symmetry that the current generates is a local phase flow combined with a local boost, and the flow's operator is the word's boost and rotor. **The conjecture is that the constrained system of §*The Constraint Structure*, once its Dirac brackets are computed, generates exactly this flow.**
+**The statement.** Suppose the coupled equation, written for a general element, has a conserved current; suppose further that the current is the one the field's own parameters define, that is, the phase current together with the boost current; then the local symmetry that the current generates is a local phase flow combined with a local boost, and the flow's operator is the word's boost and rotor. **The conjecture is that the constrained system of §*The Constraints the Action Imposes: The Structure*, once its Dirac brackets are computed, generates exactly this flow.**
 
 **Why it is a conjecture and not a theorem.** The equivalence of the two functionals is formal and follows from the bijection. What does not follow is that the *flow* generated by the constrained system's brackets is the flow the equation defines. A degenerate action can be equivalent to a non-degenerate one as a functional and still fail to reproduce its flow, because the constraint surface can be too small or the brackets can differ from the Poisson brackets by terms that do not vanish on it.
 
@@ -271,13 +271,13 @@ and the gradient terms are the quantum potential's, in the spin-half-fluid form.
 
 **What would settle it.** The Dirac brackets of the six constraints, computed with the four-bracket structure in place of the parameter structure, and the verification that the resulting flow reproduces $\partial_{r'_t}\tilde\Xi=-i\tilde K_\Phi\tilde\Xi$ up to the gauge factor. This is a finite computation on a system with eight parameters and six constraints, and it is not attempted here.
 
-**What the article claims without the conjecture.** Everything in §*The Action in the Word* and §*The Constraint Structure* stands without the conjecture: the action, the momenta, the two evolution equations, the six constraints, and the absence of multipliers for the unit conditions. The conjecture is what would connect them to the equation, and the connection is what is missing.
+**What the article claims without the conjecture.** Everything in §*The Action in the Word* and §*The Constraints the Action Imposes: The Structure* stands without the conjecture: the action, the momenta, the two evolution equations, the six constraints, and the absence of multipliers for the unit conditions. The conjecture is what would connect them to the equation, and the connection is what is missing.
 
 ## Open Questions
 
 **The constraint algebra.** Whether the six constraints are first class or second class, and what brackets they obey, is the article's central open question. The computation is finite and is not attempted here. Until it is done, the reconstruction conjecture cannot be tested.
 
-**The reconstruction conjecture.** §*The Reconstruction Conjecture* states it, states the strongest objection to it, and states what would settle it. The objection — that a conserved current can always be presented as some symmetry's current — is not answered in general, and the partial answer relative to a frame is the most the article can say.
+**The reconstruction conjecture.** §*The Reconstruction and Its Limits: The Conjecture* states it, states the strongest objection to it, and states what would settle it. The objection — that a conserved current can always be presented as some symmetry's current — is not answered in general, and the partial answer relative to a frame is the most the article can say.
 
 **The two flows and the one symmetry.** The word has a phase flow and a boost flow; the action has one symmetry. Whether the constrained system supplies the second flow is the same question as the conjecture's, approached from the other side. A computation of the boost's Noether charge in the constrained system, and its comparison with the pairing's spatial slots, would settle it.
 

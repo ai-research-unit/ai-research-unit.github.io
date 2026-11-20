@@ -1,6 +1,6 @@
 # __The Lagrangian and the Schrödinger Fluid__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the ledger, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the ledger, so slot 14 is omitted.
 
 ## Introduction
 

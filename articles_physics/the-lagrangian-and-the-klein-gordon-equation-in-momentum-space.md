@@ -96,7 +96,19 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Reality of the Action: And the Selection Rule
+## The Reality of the Action
+
+**Four questions, and this article answers (c) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+
+### The Pairing
+
+**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$; the quaternionic alternative and its two defects are §*The Reality of the Action* of *The Lagrangian and the Klein–Gordon Equation*, and the density here is that pairing applied to the symbol's action.
+
+### The Type of the Coefficient
+
+**Settled once and inherited.** The kinetic coefficient is the central $i$, anti-Hermitian by inspection, so every kinetic density at a mode is real for every field. That is the element article's computation and it is not repeated.
+
+### The Selection Rule
 
 **Finding 3.** The potential term of the action is $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$, and its reality is equivalent to $\tilde M$ being Hermitian. The parent's kinetic term is already real for every field, so the potential term is the only place where a sector question can arise, and this is what it decides.
 
@@ -106,7 +118,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **So the material sector is excluded, and the exclusion is a selection rule.** A Klein–Gordon Lagrangian whose potential is anti-Hermitian, $\tilde M=\tfrac12(\tilde M-\tilde M^{*})\in\mathbb{B}_\Phi$, has an action whose imaginary part is $\int\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$, which is not a boundary term and does not vanish. A complex action is not a variational principle with real stationary points; it is a saddle-point problem, and its stationarity conditions are not the equation the parent derives. The exclusion is therefore not a restriction of convenience. It is the condition under which the action of §*The Action in Element Form* exists at all.
 
-**The formal consequence, stated after the exclusion and not before.** If one keeps the anti-Hermitian potential anyway, the equation still has plane-wave solutions, because the algebra does not care about the reality of an integral. Their eigenvalues are purely imaginary, by §*The Spectrum of Left Multiplication*, so
+**The formal consequence, stated after the exclusion and not before.** If one keeps the anti-Hermitian potential anyway, the equation still has plane-wave solutions, because the algebra does not care about the reality of an integral. Their eigenvalues are purely imaginary, by §*The Action in Momentum Space: The Spectrum of Left Multiplication*, so
 
 $$
 \frac{\omega^{2}}{c^{2}}=k_\Phi^{2}+i\,\lambda,
@@ -116,6 +128,10 @@ $$
 **The result is not a wave.** The frequency is complex for every wave number, and a complex frequency is growth or decay in time with no propagation threshold, so the mode is not a wave in any sense the parent's dispersion relation recognises. That is the formal content of the excluded case; it is recorded so that a reader who meets it elsewhere can identify it, not as a candidate theory.
 
 **The comparison with the Dirac family is exact and it is instructive.** There the symbol is first order and the object that must be Hermitian is the symbol itself, because a first-order equation is a flow and a flow wants a unitary generator. Here the equation is second order, its action contains $\tilde M$ quadratically, and the object that must be real is the action's density. **Same selection rule, different quantity selected.** The scalar family selects on $S$ and the spinor family selects on $H$, and neither selection is available in the other family. **The free case is the boundary of the rule**: with $\tilde M=k_m^{2}e_t$ the potential is central and Hermitian at once, the anti-Hermitian part vanishes, and both sectors pass the test, which is why the free theory cannot tell them apart.
+
+### What Reality Does Not Buy
+
+**Not at issue here.** The action of this article is real for every admissible field, and its claim is the opposite direction: that the *symbol* is real only for a Hermitian $\tilde M$. The gap between the two is not a weakness of the action here but the content of the exclusion, and the coupled article states it as one.
 
 ## The Structural Consequence: The Denial That Survives
 
@@ -193,7 +209,7 @@ $$
 
 ## Open Questions
 
-**One question is left open, and it is about a potential the selection rule might admit.** The exclusion of §*Reality of the Action and the Selection Rule* is the exclusion of an anti-Hermitian part, because that part makes the action's density imaginary. An anti-Hermitian part that is a total derivative — that is, one whose contribution to the action is a boundary term — would make the action real up to a surface term, and the variation would be unaffected. Whether such a potential exists in this algebra, whether it can be written as $\tilde\nabla_\Phi\tilde\Gamma$ for some $\tilde\Gamma$, and whether its spectrum is then admissible, is not decided here. No claim is made in either direction.
+**One question is left open, and it is about a potential the selection rule might admit.** The exclusion of §*The Reality of the Action* is the exclusion of an anti-Hermitian part, because that part makes the action's density imaginary. An anti-Hermitian part that is a total derivative — that is, one whose contribution to the action is a boundary term — would make the action real up to a surface term, and the variation would be unaffected. Whether such a potential exists in this algebra, whether it can be written as $\tilde\nabla_\Phi\tilde\Gamma$ for some $\tilde\Gamma$, and whether its spectrum is then admissible, is not decided here. No claim is made in either direction.
 
 **A second question follows from the doubling, and it is narrower.** The eigenspace of a branch is a right ideal $\mathbb{B}w$, and its Hermitian representative is $ww^{*}$. Whether the physical restriction to a Peirce carrier — the question the parent's §*Open Questions* raises for a non-central coefficient — can be imposed inside one eigenspace without breaking the $i$-invariance that produces the doubling, is open as well.
 

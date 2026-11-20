@@ -27,7 +27,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 Every symbol is defined where it first appears, and §*Summary of Notation* collects them.
 
-**One convention, used throughout.** The two parts are written $\tilde\Xi_L$ and $\tilde\Xi_R$. They are not the parts of definite value. A part of definite value is an element of a right ideal of $\mathbb{B}$, and left multiplication by $\tilde\nabla_\Phi$ preserves the value, so the two sides of the first line would have different values and only the zero field would solve the pair. The parent states this; the action makes it visible, because a value-split action is identically zero (§*The Count of the Pair*).
+**One convention, used throughout.** The two parts are written $\tilde\Xi_L$ and $\tilde\Xi_R$. They are not the parts of definite value. A part of definite value is an element of a right ideal of $\mathbb{B}$, and left multiplication by $\tilde\nabla_\Phi$ preserves the value, so the two sides of the first line would have different values and only the zero field would solve the pair. The parent states this; the action makes it visible, because a value-split action is identically zero (§*Aside: The Count of the Pair*).
 
 ## Conventions
 
@@ -46,7 +46,7 @@ Its two kinetic terms are diagonal in the parts and its mass term is off-diagona
 
 **The two kinetic terms are one operator on the two parts.** The left part carries $\tilde\nabla_\Phi^{\natural}$ and the right part carries $\tilde\nabla_\Phi$, so the two differ only in the sign of the spatial derivative. In the homogeneous case both reduce to $-i\partial_{r'_t}$, and the kinetic sum collapses to $\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi_L^{*}\dot{\tilde\Xi}_L+\tilde\Xi_R^{*}\dot{\tilde\Xi}_R]$. The polar companion computes that object for the word, and it is the reason the polar action has no momentum conjugate to the boost.
 
-**The potential term is the mass, and it is the only term that couples the parts.** A kinetic term couples a part to itself; a mass term couples one part to the other. This is why the massless theory has two independent symmetries and the massive theory has one (§*The Massless Case and the Two Phases*).
+**The potential term is the mass, and it is the only term that couples the parts.** A kinetic term couples a part to itself; a mass term couples one part to the other. This is why the massless theory has two independent symmetries and the massive theory has one (§*The Two Settings: The Massless Case and the Two Phases*).
 
 **Reality, and the reason the real part is not a truncation.** Both gradients are self-adjoint for the Hermitian pairing. The temporal term is $e_t\partial_{R_t}=-i\partial_{r'_t}$; left multiplication by an imaginary unit is antisymmetric for $\mathrm{Sc}(\cdot^{*}\cdot)$, and $\partial_{r'_t}$ is antisymmetric under integration by parts, so the two signs cancel and the temporal term is self-adjoint. Each spatial term is a left multiplication by $\vec e_\eta$, which is antisymmetric, times the same antisymmetric derivative, and it is self-adjoint for the same reason. Hence
 
@@ -83,7 +83,7 @@ $$
 
 **Stationarity is the pair.** The pairing $\mathrm{Re}\,\mathrm{Sc}(\delta\tilde\Xi^{*}\,\cdot)$ is non-degenerate on the eight real directions of $\mathbb{B}$, so the vanishing of $\delta S$ for every variation is exactly $r_L=r_R=0$. No boundary term appears when the variation has compact support, and none appears when the fields are periodic in the spatial directions.
 
-**The massless limit is two independent equations.** At $k_m=0$ the residuals decouple, $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=0$ and $\tilde\nabla_\Phi\tilde\Xi_R=0$, and the action is a sum of two independent functionals. Each is a one-sided functional on its own part, and each is not empty. The contrast with the candidate rejected in §*Why the Pairing Is the Hermitian One* is exactly the $i$: without it the one-sided functional is real and its variation is the residual, and it is only the extra $i\hbar c$ that makes the operator anti-self-adjoint and the functional empty.
+**The massless limit is two independent equations.** At $k_m=0$ the residuals decouple, $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=0$ and $\tilde\nabla_\Phi\tilde\Xi_R=0$, and the action is a sum of two independent functionals. Each is a one-sided functional on its own part, and each is not empty. The contrast with the candidate rejected in §*The Reality of the Action* is exactly the $i$: without it the one-sided functional is real and its variation is the residual, and it is only the extra $i\hbar c$ that makes the operator anti-self-adjoint and the functional empty.
 
 ## Aside: The Count of the Pair
 
@@ -97,7 +97,11 @@ Three counts must be kept apart, and the action keeps them apart.
 
 **What the value-split would do.** If the parts were taken as $\tilde\Xi\Pi_\pm$ with $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ the frame's idempotents, the mass term would vanish identically: $\mathrm{Sc}[\Pi_+\tilde\Xi^{*}\tilde\Xi\Pi_-]=0$ because $\Pi_-\Pi_+=0$ and $\mathrm{Sc}$ is cyclic. The vanishing is the identity $\mathrm{Sc}[\tilde\Pi_+\tilde X^{*}\tilde X\tilde\Pi_-]=0$, since the product $\tilde\Pi_-\tilde\Pi_+$ is zero and $\mathrm{Sc}$ is cyclic. The kinetic terms survive such a split, the mass does not. The parent's display with the fixed direction $i\vec v$ in the mass term is the repair, and the polar companion uses it.
 
-## The Reality of the Action: Why the Pairing Is the Hermitian One
+## The Reality of the Action
+
+**Four questions, and this article answers (a) and (b) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+
+### The Pairing
 
 The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian form, the same form the two Schrödinger articles use. The quaternion pairing $\mathrm{Sc}(\cdot^{\natural}\cdot)$ does not work, and the reason is worth stating because the symbol $\natural$ appears everywhere in the Dirac equation and the temptation to pair with it is strong.
 
@@ -117,6 +121,8 @@ A kinetic density that is a total derivative on every field carries no equation 
 
 **The Hermitian pairing is the one the equation's own structure uses.** The two lines of the pair carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$. Under $*$ these are two different operators, related by $(\tilde\nabla_\Phi)^{*}=(\tilde\nabla_\Phi)^{\natural}$, and the pairing is antilinear in its first slot, so the two slots are not interchangeable. Under $\natural$ the two are related by a conjugation of the invertibles alone, the $i$ of the material time is untouched, and the bilinear is symmetric, which is why it cannot produce a density that is not exact. The pair's asymmetry is the $*$-pairing's asymmetry.
 
+### The Type of the Coefficient
+
 **Which one-sided functional is empty, and which is not.** Two candidates look alike and behave differently.
 
 Without the $i$ the candidate is not empty. $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}\hbar c\,\tilde\nabla_\Phi\tilde\Xi]$ is real, because the gradient is self-adjoint for the pairing, and its variation is twice the residual $\tilde\nabla_\Phi\tilde\Xi$; the factor two is the absence of a $\tfrac12$ in front. So one element does carry a real first-order action, and the equation it gives is $\tilde\nabla_\Phi\tilde\Xi=0$, which is the massless member the parent writes $R$.
@@ -132,6 +138,14 @@ and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde
 **What the emptiness does and does not prove.** It does not prove that no real first-order action on one element exists. The standard Dirac action is a one-field action and is not empty, because its bilinear carries one element more than the candidate above: the Dirac adjoint's $\gamma_{0}$, which in this algebra is a right multiplication by $i\vec e_\eta$. The same repair is available here — a Hermitian right multiplier inside the bilinear makes the operator self-adjoint and the functional non-empty — and it gives the one-element equation $\tilde\nabla_\Phi\tilde\Xi=k_m\tilde\Xi$, which is one equation on one element and is not the pair.
 
 **Therefore the split is a factorization, and the operator count is its reason.** The pair is not one operator applied once. The gradient acts on the part written $R$, the conjugated gradient acts on the part written $L$, and $k_m$ relates them. A first-order functional hosts one operator per slot, so the pair needs two slots, and the mass is the only term that can couple them, which is why it is off-diagonal. That is the variational reading of the parent's remark that the field is one element and the letters name two parts of it: the parts are what the action needs, they are not values, and the mass is what makes the two of them necessary.
+
+### The Selection Rule
+
+**Not examined here.** The selection rule is a statement about the symbol's Hermiticity and belongs to the momentum reading, where the potential is an operator acting at a mode. In this article the potential is central and the question does not arise.
+
+### What Reality Does Not Buy
+
+**Not at issue here.** The claim is that the action is real and that the pair has no one-element rival; how much weaker a real action is than a real spectrum is the momentum reading's question, and the limit reading's.
 
 ## The Structural Consequence: The Two-Sided Form Has No Action of Its Own
 

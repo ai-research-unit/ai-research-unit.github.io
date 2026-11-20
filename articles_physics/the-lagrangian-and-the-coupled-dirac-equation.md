@@ -1,6 +1,6 @@
 # __The Lagrangian and the Coupled Dirac Equation__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -24,7 +24,7 @@ with the connection in the material sector $\mathbb{B}_\Phi$ and with central sc
 
 *Second, the coupling is derived and not postulated.* The action has a local central phase symmetry only when the gradient is replaced by the covariant derivative; the connection absorbs exactly the derivative of the phase and nothing else. Minimal coupling is therefore the answer to a question asked of the action, and the question cannot be asked of the element *equation* alone: the equation accepts any operator, and only the functional decides which operator is admissible.
 
-*Third, the current is settled.* The local phase's Noether current is conserved on solutions, and it is the pairing with two fixed frame units that the element form states and the Gordon article identifies. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant, is of the density sign, and is not conserved. The action does not produce it and the equation does not conserve it. The positive statement and the counterexample are both in §*The Current: What the Action Produces and What It Does Not*.
+*Third, the current is settled.* The local phase's Noether current is conserved on solutions, and it is the pairing with two fixed frame units that the element form states and the Gordon article identifies. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant, is of the density sign, and is not conserved. The action does not produce it and the equation does not conserve it. The positive statement and the counterexample are both in §*The Noether Currents: What the Action Produces and What It Does Not*.
 
 **The two settings.** The action is stated for a connection that may depend on the coordinates. The two settings of the framework are distinct and are kept apart here. In the constant setting the connection is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients; the equation becomes algebraic in momentum space, the propagator is a finite product of exponentials up to the gauge factor, and a constant potential is pure gauge. In the operator setting the connection is an operator or a general function of position; the equation is a partial differential equation, the propagator is not a finite product, and the variational principle is the standard field-theoretic one. The article computes in the constant setting and states where the operator setting differs. Nothing is transferred between them.
 
@@ -61,7 +61,7 @@ the left part sees $\tilde A_\Phi^{\natural}$ and the right part sees $\tilde A_
 
 **Reality.** Each kinetic term is self-adjoint for the Hermitian pairing, and the argument is the parent's: the temporal slot of each covariant component is $-i\partial_{r'_t}+\frac{iϙ}{\hbar}A_t$, which is a central imaginary operator and antisymmetric for $\mathrm{Sc}(\cdot^{*}\cdot)$, so the two signs cancel under integration by parts; each spatial slot is $\partial_\eta+\frac{iϙ}{\hbar}A_\eta$, which is a real-derivative-plus-imaginary-multiplication and is self-adjoint for the same reason. The mass terms are Hermitian because they pair one part with the conjugate of the other. Hence the bracket's imaginary part is a total divergence, the real part carries the content, and the integral is real on fields of compact support.
 
-**The connection's contribution to reality is nil, and that is not an accident.** A central complex number multiplying the field multiplies the pairing by its modulus squared in each term, so the potential's contribution to the reality of the action cancels between the field and its conjugate. What the potential does to the action is not realness but *local invariance*, which is §*Why the Coupling Is Forced*.
+**The connection's contribution to reality is nil, and that is not an accident.** A central complex number multiplying the field multiplies the pairing by its modulus squared in each term, so the potential's contribution to the reality of the action cancels between the field and its conjugate. What the potential does to the action is not realness but *local invariance*, which is §*The Structural Consequence: Why the Coupling Is Forced*.
 
 **The constant $\hbar c$.** It multiplies the whole functional, it cancels in the variation, and the residuals do not carry it while the currents carry one power of it. The parent's reason for the convention is unchanged by the coupling.
 
@@ -138,7 +138,7 @@ and the two brackets cancel for every field exactly when $\delta\tilde A_\Phi=-\
 
 The local phase is a symmetry of the coupled action, so it has a Noether current. This section states the current, states what the algebra does *not* hand over with it, and states the repair.
 
-**The Noether computation.** Take $\tilde\Xi\mapsto e^{i\alpha(R)}\tilde\Xi$ with $\alpha$ a local central angle and with the connection held fixed. The mass term contributes nothing, as §*Why the Coupling Is Forced* shows. The kinetic terms contribute $-\int\sum_\mu(\partial_\mu\alpha)J_\mu$, and the current is the parent's:
+**The Noether computation.** Take $\tilde\Xi\mapsto e^{i\alpha(R)}\tilde\Xi$ with $\alpha$ a local central angle and with the connection held fixed. The mass term contributes nothing, as §*The Structural Consequence: Why the Coupling Is Forced* shows. The kinetic terms contribute $-\int\sum_\mu(\partial_\mu\alpha)J_\mu$, and the current is the parent's:
 
 $$
 J^{t}=\mathrm{Re}\,\mathrm{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\Xi_L+\tilde\Xi_R^{*}\tilde\Xi_R\Bigr],

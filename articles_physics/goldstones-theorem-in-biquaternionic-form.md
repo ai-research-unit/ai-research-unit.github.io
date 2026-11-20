@@ -213,16 +213,7 @@ The counting is a statement about the geometry of the vacuum manifold, not about
 
 ## The Effective Lagrangian and the Soft Limit
 
-Below the radial mass the massive mode can be integrated out, and the Goldstone field is governed by an effective Lagrangian in which every term is a derivative. Because the potential is flat along the orbit and the only non-derivative couplings of $\vartheta_{\mathrm{fld}}$ involve the radial field, the effective theory of $\vartheta_{\mathrm{fld}}$ alone is built from powers of $\tilde\nabla_\Phi\vartheta_{\mathrm{fld}}$,
-
-$$
-\mathcal{L}_{\mathrm{eff}}=\frac{1}{2}\sum_\mu\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}
-+\frac{c_4}{f^4}\,\Bigl(\sum_\mu\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}\,\partial/\partial R_\mu\,\vartheta_{\mathrm{fld}}\Bigr)^2+\cdots ,
-\qquad
-f=\sqrt2\,v ,
-$$
-
-the field being the canonically normalized one used above, so that its kinetic term carries no factor of $f$, and the dimensionless coefficients $c_4,\dots$ of the higher-dimension operators being fixed by the details of the radial sector; the decay constant is their suppression scale, so the Goldstone interactions are weak at momenta small compared with $f$. Equivalently, in the dimensionless normalization of the phase — the canonical field being $f\vartheta_{\mathrm{fld}}$ — the same series reads $\frac{f^2}{2}(\partial\vartheta_{\mathrm{fld}})^2+c_4(\partial\vartheta_{\mathrm{fld}})^4+\cdots$, which is the standard coset form; it is in that normalization that the decay constant appears as the normalization of the kinetic term. With the symmetry realized **nonlinearly**, $\vartheta_{\mathrm{fld}}\to\vartheta_{\mathrm{fld}}+\text{const}$, the constant shift leaves $\mathcal{L}_{\mathrm{eff}}$ invariant because only derivatives appear. This is the standard coset construction of the Goldstone effective theory, and it is the low-energy face of the derivative coupling observed in the mass-matrix expansion above.
+Below the radial mass the massive mode can be integrated out, and the Goldstone field is governed by an effective Lagrangian in which every term is a derivative: the canonical kinetic term, then a tower of higher-derivative operators suppressed by powers of $f=\sqrt2\,v$, with dimensionless coefficients fixed by the details of the radial sector. The functional, the variation that gives the free wave equation, the reality of the coefficients and the reason the series is an expansion in $p/\Lambda$ are written in [The Lagrangian and the Goldstone Effective Action](the-lagrangian-and-the-goldstone-effective-action.html). This article keeps the one consequence that the theorem itself is tested by.
 
 The derivative structure has a sharp consequence, the **soft limit**. The amplitude for a process with an additional Goldstone boson of momentum $k_\Phi$ is proportional to $k_\Phi$ at small momentum; in the limit $k\to0$ the amplitude with the extra Goldstone vanishes. The reason is visible in the effective Lagrangian: every Goldstone leg carries a derivative, so a leg with vanishing momentum contributes nothing, and the remaining amplitude is the amplitude without that leg. This "Adler zero" is the standard statement that softly emitted Goldstone bosons decouple, and it is why a broken continuous symmetry's low-energy theory is weakly coupled at low energy even when the underlying coupling is strong.
 

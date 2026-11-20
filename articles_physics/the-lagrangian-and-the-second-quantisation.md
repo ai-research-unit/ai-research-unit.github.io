@@ -14,7 +14,7 @@
 
 **What this article is not.** It is not a derivation of the promotion — the promotion is a postulate and Dirac's, not this corpus's. It is not a path integral — the corpus's path integral is sketched elsewhere and this article does not use it. And it is not a shortcut: a reader who wants a scattering amplitude will not find one here, because a bridge is not a destination.
 
-**Declared omissions.** The reality of the action is the family's and is not rechecked, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with a textbook quantisation is attempted beyond the ledger, so slot 13 is omitted. The open question — whether the promotion is forced or chosen — is the article's subject and is not separated, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is the family's and is not rechecked, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with a textbook quantisation is attempted beyond the ledger, so slot 13 is omitted. The open question — whether the promotion is forced or chosen — is the article's subject and is not separated, so slot 14 is omitted.
 
 ## Conventions
 

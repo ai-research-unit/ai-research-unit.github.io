@@ -1,6 +1,6 @@
 # __The Lagrangian and the Klein–Gordon Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -111,7 +111,7 @@ $$
 \det=\tfrac14\bigl(\cosh^{2}\theta_{\mathrm{rpd}}-\sinh^{2}\theta_{\mathrm{rpd}}\bigr)=\tfrac14 ,
 $$
 
-so the amplitude and the rapidity mix without changing the volume, and the block is invertible for every rapidity. The identity $\cosh^{2}-\sinh^{2}=1$ appears here as a property of the parameter metric, which is why the Legendre transform of §*The Euler–Lagrange Equations* is regular.
+so the amplitude and the rapidity mix without changing the volume, and the block is invertible for every rapidity. The identity $\cosh^{2}-\sinh^{2}=1$ appears here as a property of the parameter metric, which is why the Legendre transform of §*The Variation: The Euler–Lagrange Equations* is regular.
 
 **The metric is the induced one.** Writing $g_{ab}(p)=\mathrm{Sc}\big[(\partial\tilde\Xi/\partial p^{a})^{*}(\partial\tilde\Xi/\partial p^{b})\big]$ for the eight parameters $p^{a}$, the kinetic Lagrangian is $g_{ab}\sum_\mu\partial_\mu p^{a}\partial_\mu p^{b}$ with the metric signs of the action, and $g$ is the pull-back of the flat Hermitian metric of $\mathbb{C}^{4}$ by the word. Since $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is a sum of squares, $g$ is positive semi-definite in every direction, and it is positive definite wherever the word's Jacobian has full rank, which is everywhere on the $N$-regular set.
 

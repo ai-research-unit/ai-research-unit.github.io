@@ -14,7 +14,7 @@
 
 **The fourth finding is that the Legendre structure is trivial and non-degenerate.** The symbol is affine in $\omega$ with slope $\hbar$, for every Hamiltonian. So the frequency is conjugate to time and the map is invertible; a first-order equation has no constraint to impose, and the variational principle has no multiplier to introduce.
 
-**The companion articles.** *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form* gives the symbol; its polar companion gives the same object in the word. The coupled version of this article adds a connection and keeps the structure; §*Limits* states what the connection does not change.
+**The companion articles.** *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form* gives the symbol; its polar companion gives the same object in the word. The coupled version of this article adds a connection and keeps the structure; §*The Limits and the Truncation’s Error* states what the connection does not change.
 
 ## Conventions
 
@@ -76,7 +76,15 @@ and it holds for every anti-Hermitian root, for the same reason the action is re
 
 **Why the Hermitian pairing is enough.** For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. **The argument is the parent's and it is quoted once here.**
 
-## The Reality of the Action: The Anti-Hermitian Root
+## The Reality of the Action
+
+**Four questions, and this article answers (b) and (d) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+
+### The Pairing
+
+**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian form, and the quaternionic alternative was rejected in *The Lagrangian and the Schrödinger Equation*, §*The Reality of the Action*. The coefficient examined below is what replaces the $i$ there, and the pairing is not.
+
+### The Type of the Coefficient
 
 **The equation with a root.** Write $\hbar\,c\,\tilde Z\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ with $\tilde Z^{2}=-e_t$, in the parent's own form. The action that produces it has the kinetic coefficient $\hbar c\,\tilde Z$ in place of $i\hbar c$, because the variation must return the equation's own operator.
 
@@ -94,7 +102,11 @@ so $K^{*}=K$ exactly when $\tilde Z^{*}=-\tilde Z$. **The action is real exactly
 
 **What the reality does not use.** It does not use the centrality of the root, and it does not use any commutation with the Hamiltonian. It uses one thing: the root's type. **That is the whole content of this section, and it is why the next section can report a gap.**
 
-## The Reality of the Action: Weaker Than Reality of the Spectrum
+### The Selection Rule
+
+**Not examined here.** The Hamiltonian is Hermitian by the article's licence, so no sector is excluded; the anti-Hermitian potential and its complex frequency are the scalar family's, where the potential is a free element.
+
+### What Reality Does Not Buy
 
 **The stronger requirement.** The parent requires the generator $-\tilde Z\tilde H_\Psi/(\hbar c)$ to be anti-Hermitian for every Hermitian $\tilde H_\Psi$, so that the flow preserves the norm. In $t'$ the generator is $\frac{1}{\hbar}\tilde Z^{-1}\tilde H_\Psi$, and its anti-Hermiticity is
 
@@ -204,7 +216,7 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 
 **Constant coefficients.** Every statement about the symbol needs a constant Hamiltonian, and the operator setting replaces the symbol by a convolution. The action remains real there, term by term, for the same reason; what fails is the fixed-frequency reduction, not the reality.
 
-**Hermitian coefficients.** The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument of §*Reality of the Action Is the Anti-Hermitian Root* does not apply to the potential.
+**Hermitian coefficients.** The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument of §*The Reality of the Action* does not apply to the potential.
 
 **One-time functionals.** The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.
 

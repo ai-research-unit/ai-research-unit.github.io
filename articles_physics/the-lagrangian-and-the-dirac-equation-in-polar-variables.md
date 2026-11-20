@@ -1,6 +1,6 @@
 # __The Lagrangian and the Dirac Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted.
 
 ## Introduction
 
@@ -26,7 +26,6 @@ The word is a bijection from eight parameters onto the invertibles of $\mathbb{B
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Dirac equation in its polar form.
 
-
 **The parameters and their ranges.** $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$; $\theta_{\mathrm{axr}}\in[0,2\pi]$ with $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ unit real vectors. The density is $\rho_{\mathrm{num}}=\varrho^{2}$ and the Lorentz factor is $\gamma=\cosh\theta_{\mathrm{rpd}}$, so $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 **The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
@@ -35,11 +34,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 **The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 
-## Before the Action: The Substitution and the Two Parts
-
-The element action is written on two parts, and the word is written for one element. The parts must therefore be named before the substitution can be made.
-
-**The parts are the frame's.** The frame declares one direction, $\vec e_z$, in order to read the value of an element. The idempotents built from it are
+**The parts, and their idempotents.** The frame declares one direction, $\vec e_z$, in order to read the value of an element. The idempotents built from it are
 
 $$
 \Pi_\pm=\tfrac12\bigl(e_t\pm i\vec e_z\bigr),
@@ -52,26 +47,23 @@ $$
 \qquad
 \Pi_\pm^{\natural}=\Pi_\mp .
 $$
+## The Action in Polar Variables: The Kinetic Term
 
-The parts are $\tilde\Xi_L=\tilde\Xi\Pi_+$ and $\tilde\Xi_R=\tilde\Xi\Pi_-$. Each lies in a right ideal, hence is a zero divisor, hence has no polar word of its own; the word is a word for the sum. That is not an obstacle to the substitution, because the action is polynomial in the parts and the parts are polynomial in the field.
-
-**Two identities are used, and both are exact.** First, the star conjugation fixes the idempotents, so $\tilde\Xi_{L,R}^{*}=\Pi_{\pm}\tilde\Xi^{*}$ and the kinetic terms can be written with the field on the right:
-
-$$
-\mathrm{Sc}\bigl[\tilde\Xi_{L,R}^{*}\,\dot{\tilde\Xi}_{L,R}\bigr]
-=\mathrm{Sc}\bigl[\Pi_{\pm}\tilde\Xi^{*}\dot{\tilde\Xi}\Pi_{\pm}\bigr].
-$$
+**The parts are substituted into the element action, and two identities carry the substitution.** Both are exact. First, the star conjugation fixes the idempotents, so $\tilde\Xi_{L,R}^{*}=\Pi_{\pm}\tilde\Xi^{*}$ and the kinetic terms can be written with the field on the right:
 
 Second, the two operators coincide in the homogeneous setting: with $\partial_\eta=0$, both $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$ reduce to $-i\partial_{r'_t}$.
 
 **The kinetic term in the homogeneous setting.** Substituting both identities,
 
 $$
+\mathrm{Sc}\bigl[\tilde\Xi_{L,R}^{*}\,\dot{\tilde\Xi}_{L,R}\bigr]
+=\mathrm{Sc}\bigl[\Pi_{\pm}\tilde\Xi^{*}\dot{\tilde\Xi}\Pi_{\pm}\bigr].
+$$
+
+$$
 \boxed{\;
 \mathcal{L}_{\mathrm{kin}}=\hbar c\,\mathrm{Im}\,\mathrm{Sc}\Bigl[\Pi_+\,\tilde\Xi^{*}\dot{\tilde\Xi}\,\Pi_++\Pi_-\,\tilde\Xi^{*}\dot{\tilde\Xi}\,\Pi_-\,\Bigr]\;}
 $$
-
-The display is the article's starting point. It is one line, it is exact, and it says what the kinetic term reads: the field's logarithmic derivative, projected onto the two ideals, traced, and taken imaginary. The $\mathrm{Im}$ is not a choice: the action's kinetic term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi_{L,R}^{*}(-i\hbar c\,\dot{\tilde\Xi}_{L,R})]$, and $\mathrm{Re}(-iZ)=\mathrm{Im}(Z)$.
 
 **What the display does not depend on.** The projectors can be removed from it, because $\mathrm{Sc}$ is cyclic: $\mathrm{Sc}[\Pi_\pm X\Pi_\pm]=\mathrm{Sc}[\Pi_\pm^{2}X]=\mathrm{Sc}[\Pi_\pm X]$, and the two together give $\mathrm{Sc}[X]$. That is what §*The Kinetic Term* uses, and it is an identity of the trace and the idempotents rather than an approximation about the field.
 
@@ -82,10 +74,6 @@ $$
 +\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\dot{\tilde U}_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
 +\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r},
 $$
-
-the scale, the phase, the boost connection and the rotor connection. Substituting this into the boxed display is the whole of the computation, and the next two sections read the result.
-
-## The Action in Polar Variables: The Kinetic Term
 
 The kinetic term comes out in closed form, and the closed form settles the momentum table.
 

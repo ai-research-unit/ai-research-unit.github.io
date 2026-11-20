@@ -29,7 +29,7 @@ with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$,
 
 **What is not claimed.** No new solution, no new prediction. The action is the standard scalar-electrodynamics action; the algebra's contribution is that the coupling is one derivative, that the current and the source are one object, and that the two equations' consistency is one line.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, where each of the three terms is shown real, and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The reality of the action is settled inside *The Action*, where each of the three terms is shown real, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Conventions
 
@@ -210,7 +210,7 @@ up to the current's normalisation, with $F_{\nu\mu}=\partial_\nu A_\mu-\partial_
 
 **The operator setting.** The action is classical and the connection is external. Whether the quantised version's current requires the normal ordering that the free quantised scalar article discusses, and whether the one charge survives renormalisation as one charge, is the quantisation's question and is not attempted.
 
-**The temporal slot's pairing.** §*The Variation in the Field* records that the action's pairing of the two factors in the temporal slot is $\partial_{R_t}^{2}-(ϙa'_t/\hbar)^{2}$ while the article's equation carries $(\partial_{R_t}-ϙa'_t/\hbar)^{2}$, the two differing by the cross term through which the electric potential shifts the energy. The difference is a property of the corpus's convention $A_t=i a'_t$: the temporal coefficient of the covariant derivative is real, while the standard scalar action's minimal coupling pairs an imaginary one. Whether the convention should be read as the four-potential's time component being imaginary throughout — in which case the temporal slot's cross term belongs to the energy and not to the derivative — or whether the action for an electric connection should be written with the adjoint pairing in that slot, is not settled here. The magnetic case, the free limit, and the polar pair are unaffected; what is at stake is one bookkeeping choice, stated rather than absorbed.
+**The temporal slot's pairing.** §*The Variation: In the Field* records that the action's pairing of the two factors in the temporal slot is $\partial_{R_t}^{2}-(ϙa'_t/\hbar)^{2}$ while the article's equation carries $(\partial_{R_t}-ϙa'_t/\hbar)^{2}$, the two differing by the cross term through which the electric potential shifts the energy. The difference is a property of the corpus's convention $A_t=i a'_t$: the temporal coefficient of the covariant derivative is real, while the standard scalar action's minimal coupling pairs an imaginary one. Whether the convention should be read as the four-potential's time component being imaginary throughout — in which case the temporal slot's cross term belongs to the energy and not to the derivative — or whether the action for an electric connection should be written with the adjoint pairing in that slot, is not settled here. The magnetic case, the free limit, and the polar pair are unaffected; what is at stake is one bookkeeping choice, stated rather than absorbed.
 
 ## Summary
 
@@ -220,7 +220,7 @@ $$
 S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\sum_\mu\bigl[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr]-k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]+\tfrac12\mathrm{Re\,Sc}\bigl[\tilde F\tilde F\bigr]\Bigr\},
 $$
 
-with the coupling inside the derivative and not as a separate term. Varying the field gives $\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi=0$ — exactly for a magnetic connection and in the free limit, and up to the temporal slot's cross term for an electric one, the bookkeeping of §*The Variation in the Field* and one of the article's open questions — varying the connection gives $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\tilde J_\Phi^{\mathrm{(src)}}$ with the matter current as the source; and the two are consistent because the matter current is conserved,
+with the coupling inside the derivative and not as a separate term. Varying the field gives $\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi=0$ — exactly for a magnetic connection and in the free limit, and up to the temporal slot's cross term for an electric one, the bookkeeping of §*The Variation: In the Field* and one of the article's open questions — varying the connection gives $\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\tilde J_\Phi^{\mathrm{(src)}}$ with the matter current as the source; and the two are consistent because the matter current is conserved,
 
 $$
 \partial_\mu J_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}\Bigl[\tilde\Xi^{*}\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)\tilde\Xi\Bigr]=0

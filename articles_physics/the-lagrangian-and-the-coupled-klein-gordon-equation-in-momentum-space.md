@@ -47,13 +47,13 @@ $$
 
 **What this does to the parent's recorded mismatch.** The parent's second display, $(\partial_{R_t}-ϙa_t'/\hbar)^{2}$, is the action's slot with $c_t=-ϙa_t'/\hbar$, so the parent's *equation* side is the action's operator and the two agree. The parent's first display, $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$, is $\partial^{2}-c_t^{2}$: the paired form, which no functional in the parent produces. **The mismatch is real but it is not between the action and the equation**; it is between the action and a third object the parent wrote down as though it were the action's.
 
-**The correction is an attribution and not an equation.** Nothing in the parent's displays is wrong as a display. $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ is a perfectly good operator and the article of §*The Ordering Ambiguity Is the Cross Term* identifies its symbol. What is wrong is the sentence that attaches it to the action. **The corpus's action and the corpus's equation are one operator**, and the third object is the subject of the next section.
+**The correction is an attribution and not an equation.** Nothing in the parent's displays is wrong as a display. $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ is a perfectly good operator and the article of §*The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term* identifies its symbol. What is wrong is the sentence that attaches it to the action. **The corpus's action and the corpus's equation are one operator**, and the third object is the subject of the next section.
 
 ## The Action in Momentum Space: The Source's Symbol
 
 **The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform.** Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{ϙ}{\hbar}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. **The source's symbol is therefore the transform of the current, and it is a convolution in every other case.**
 
-**The constant setting is the one the article uses and the one the parent uses.** There the current's transform is a coefficient at one wave number, the connection's equation is algebraic, and the fork of §*The Ordering Ambiguity Is the Cross Term* is the fork between two polynomials in the same variable. **Nothing in the source's structure decides which polynomial is the operator's**, and the article states this rather than reading a decision into the variation.
+**The constant setting is the one the article uses and the one the parent uses.** There the current's transform is a coefficient at one wave number, the connection's equation is algebraic, and the fork of §*The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term* is the fork between two polynomials in the same variable. **Nothing in the source's structure decides which polynomial is the operator's**, and the article states this rather than reading a decision into the variation.
 
 ## The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term
 
@@ -101,11 +101,25 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Reality of the Action: Weaker Than Reality of the Symbol
+## The Reality of the Action
 
-**The action is real for every connection, and that is an identity rather than a measurement.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. **No choice of connection can make the action complex**, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
+**Four questions, and this article answers (b) and (d) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+
+### The Pairing
+
+**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the kinetic term here is its modulus squared. The alternative was rejected in the element article and the rejection is unchanged by the connection.
+
+### The Type of the Coefficient
 
 **The symbol is real only in the corpus's writing, and the difference is the whole content.** Applying the parity lemma of the main article, the squared symbol $\sum_\mu(\sigma_\mu+c_\mu)^{2}$ is real in the temporal slot when $c_t$ is real — that is, when $A_t$ is imaginary — and real in a spatial slot when $c_\eta$ is imaginary — that is, when $A_\eta$ is real. Both conditions together are $\tilde A_\Phi^{*}=-\tilde A_\Phi$. **A modulus squared is real for every $c$; a symbol is real for the anti-Hermitian $c$ and for no other.**
+
+### The Selection Rule
+
+**Not examined here.** A connection is not a potential: it enters the gradient, not the potential's slot, so there is no admissible sector to exclude. What the connection does do to the symbol is the next subsection's question.
+
+### What Reality Does Not Buy
+
+**The action is real for every connection, and that is an identity rather than a measurement.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. **No choice of connection can make the action complex**, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
 
 **The gap between the two conditions is one slot deep.** Take a real $A_t$, which is what a four-potential written in ordinary coordinates suggests. Then $c_t$ is imaginary, the action is still real, and the symbol is $(\sigma_t+i\lvert c_t\rvert)^{2}=k_t'^{2}-2ik_t'\lvert c_t\rvert-\lvert c_t\rvert^{2}$: real part $k_t'^{2}-\lvert c_t\rvert^{2}$, imaginary part $-2k_t'\lvert c_t\rvert$. **The action reports nothing and the symbol reports a complex number**, and the complex number is exactly the shape of the one the path-integral companion measures for a wrong-parity coefficient.
 
@@ -165,7 +179,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 ## The Limits and the Truncation’s Error
 
-**The constant-coefficient licence bounds the article.** The Euler–Lagrange operator of §*The Action's Operator* is read at constant $c_t$; a varying potential makes the functional's variation a differential operator of higher order in the coefficient and the identification with a symbol fails there, as the main article's ladder records.
+**The constant-coefficient licence bounds the article.** The Euler–Lagrange operator of §*The Action in Momentum Space: The Action's Operator* is read at constant $c_t$; a varying potential makes the functional's variation a differential operator of higher order in the coefficient and the identification with a symbol fails there, as the main article's ladder records.
 
 **The temporal slot is the only one where the two readings differ.** In a spatial slot $\bar c_\eta=-c_\eta$, the cross term vanishes identically, and the action, the squared form and the paired form are one operator. **A vector potential therefore gives no ordering ambiguity**, and the article does not manufacture one.
 

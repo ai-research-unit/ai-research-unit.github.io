@@ -43,6 +43,8 @@ so that the transformation changes the action by a term proportional to $\mu^2$.
 
 ## The Shift Field and the Invariant Mass Term
 
+The same action, its variation, its reality and its constraint count are set out in the family's field slots in [The Lagrangian and the Stueckelberg Mechanism](the-lagrangian-and-the-stueckelberg-mechanism.html), which also compares the gauge choices and states what the mechanism does and does not add. This section keeps the construction and the biquaternionic reading.
+
 ### The Stueckelberg Field
 
 Let $\tilde Q_5=\xi e_t$ be a real **central** scalar, and let it transform by a shift under the abelian gauge transformation:

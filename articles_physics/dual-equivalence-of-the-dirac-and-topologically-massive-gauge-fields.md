@@ -49,6 +49,8 @@ and the mixed term is a vector. The operator $\Box_\Phi$ has no such term becaus
 
 ## The Parent Action
 
+The action of this article is also written, varied and read for its consequences in [The Lagrangian and the Topologically Massive Gauge Field](the-lagrangian-and-the-topologically-massive-gauge-field.html), which carries the field slots — the action, the variation, the reality of the coefficients, the constraint count, the currents and the comparison with the family's other massive vectors. This section keeps the construction the duality needs and does not repeat that reading.
+
 ### The Fields
 
 $G_\mu$ is the Dirac field in the vector representation, the **s-vector**: a complex four-vector with the bilinears of the companion article,
