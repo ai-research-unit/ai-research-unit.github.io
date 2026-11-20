@@ -424,7 +424,7 @@ $$</p>
 <p><strong>26. The Spin Connection in Biquaternionic Form..</strong> <em>To be written, and it states as a construction what entry 25 states as a remark; it sits beside Torsion, Contorsion and the Spin Connection in Biquaternionic Form.</em> The adjoint field of $\mathrm{Spin}(3)$ identified as the spatial part of the tetrad spin connection; the covariant derivative it defines; and the explicit statement of what the algebra does not determine. (the field the non-abelian factor actually is)</p>
 <h2 id="verification">Verification</h2>
 <p><strong>Three commands, each under a minute.</strong></p>
-<p><strong>One: the electroweak part is twenty-six of the seventy-three articles of the category.</strong></p>
+<p><strong>One: the electroweak part is twenty-six of the eighty articles of the category.</strong></p>
 <pre><code class="language-bash">python3 - &lt;&lt;'PY'
 import re
 t=open('physics.md').read()
@@ -434,7 +434,7 @@ al=re.findall(r'href=&quot;articles_physics/[^&quot;]+\.html&quot;',cat)
 print(len(al), len(re.findall(r'href=&quot;articles_physics/[^&quot;]+\.html&quot;',ew)))
 PY
 </code></pre>
-<p>The output is <code>73 26</code>.</p>
+<p>The output is <code>80 26</code>.</p>
 <p><strong>Two: the list is the menu's, and the six proposals are the only titles it does not carry.</strong></p>
 <pre><code class="language-bash">python3 - &lt;&lt;'PY'
 import re

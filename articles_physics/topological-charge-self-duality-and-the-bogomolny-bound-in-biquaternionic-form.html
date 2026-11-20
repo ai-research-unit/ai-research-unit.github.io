@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topological Charge, Self-Duality and the Bogomolny Bound in Biquaternionic Form — Biquaternion Universe</title>
+  <meta name="description" content="The object. A field configuration can be classified by an integer that no continuous deformation changes. For a gauge field the integer is the integral of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form"><strong>Topological Charge, Self-Duality and the Bogomolny Bound in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The object.</strong> A field configuration can be classified by an integer that no continuous deformation changes. For a gauge field the integer is the integral of a density built from the field strength, and it is fixed by the behaviour of the field at infinity rather than by its shape. Configurations with nonzero charge are <strong>instantons</strong> in the Euclidean theory; the same charge in the Lorentzian theory would be carried by solitons, and the two cases differ in what makes a configuration stable.</p>
+<p><strong>What this article is.</strong> The general theory, with no sector attached: the density, its primitivity, the self-duality condition, the bound that self-dual configurations saturate, and the reason the framework's own invariants supply the abelian density and not the non-abelian one. It is used by the strong sector, where the objects are the non-perturbative configurations of the colour gauge theory.</p>
+<p><strong>Where the applications are.</strong></p>
+<ul>
+<li>The strong sector. The application is <a href="instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a>, which exhibits the BPST solution inside the framework's compact factor and states what the framework's invariants can and cannot supply.</li>
+<li>The electroweak sector, nowhere. The weak sector's non-perturbative configurations belong to the same topology but are not what that sector's articles treat.</li>
+</ul>
+<h2 id="the-density-and-its-primitivity">The Density and Its Primitivity</h2>
+<p><strong>The density.</strong> For a gauge field with field strength $F_{\mu\nu}$,</p>
+<p>$$
+\varrho=\frac{1}{16\pi^2}\,\mathrm{Tr}\left(F_{\mu\nu}\tilde F^{\mu\nu}\right),
+\qquad
+\tilde F^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma},
+$$</p>
+<p>and the charge is its integral, $Q=\int d^4x\ \varrho$.</p>
+<p><strong>The primitivity.</strong> The density is a total derivative,</p>
+<p>$$
+\boxed{\;\mathrm{Tr}\left(F\wedge F\right)=d\,\Omega_{\mathrm{CS}}\;}
+$$</p>
+<p>with $\Omega_{\mathrm{CS}}$ the Chern–Simons form. The identity is what makes the charge topological: the integral depends only on the boundary, so it is invariant under any deformation that does not cross the boundary, and it is an integer when the field is defined on a closed manifold. A density that were not a total derivative would give a charge that varies continuously, and there would be no sectors to sum over.</p>
+<p><strong>The abelian case.</strong> For an abelian field the density reduces to the divergence of a four-vector,</p>
+<p>$$
+\varrho=\partial_\mu J^{\mu}_{\mathrm{CS}},
+\qquad
+J^{\mu}_{\mathrm{CS}}=\tfrac14\epsilon^{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma},
+$$</p>
+<p>and $J_{\mathrm{CS}}$ is gauge dependent while $\varrho$ is not. The primitive is therefore a computational device, not an invariant, and this distinction matters when the question is whether the framework can write the density at all.</p>
+<p><strong>The abelian charge vanishes.</strong> On $\mathbb R^4$ with finite action the boundary term vanishes, so there is no abelian instanton. Instantons are intrinsically non-abelian.</p>
+<h2 id="self-duality-and-the-bound">Self-Duality and the Bound</h2>
+<p><strong>The star.</strong> On two-forms the Hodge star satisfies $\star^2=-1$ in Lorentzian signature and $\star^2=+1$ in Euclidean. Consequently $F=\star F$ forces $F=0$ on real Lorentzian fields, and the self-duality condition is a Euclidean condition. This is the single reason instantons are defined on the Euclidean continuation and not on spacetime.</p>
+<p><strong>The bound.</strong> Writing the action as a square plus a topological term,</p>
+<p>$$
+S=\frac{1}{2g^2}\int\mathrm{Tr}\left(F\pm\star F\right)^2+\frac{8\pi^2}{g^2}|Q|,
+$$</p>
+<p>gives</p>
+<p>$$
+\boxed{\;S\ \ge\ \frac{8\pi^2}{g^2}\,|Q|\;}
+$$</p>
+<p>with equality exactly when $F=\pm\star F$. The self-dual configurations are therefore the minima of the action in each topological sector, and the second-order equation of motion follows from the first-order self-duality condition rather than the other way round.</p>
+<p><strong>What the bound buys.</strong> Existence can be shown by solving a first-order equation; stability in a fixed sector needs no potential; and the value of the action is fixed by the charge and the coupling alone. The bound is the reason instantons control the semiclassical expansion.</p>
+<h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
+<ul>
+<li><strong>Supplied.</strong> Two invariants of the abelian field, $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, and the identity $\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=4I_2$ in the Euclidean case, so the imaginary part of the biquaternion norm <strong>is</strong> the abelian density.</li>
+<li><strong>Not supplied.</strong> The non-abelian density. $\mathrm{Tr}(F\wedge F)$ needs a matrix trace over the gauge algebra, and the biquaternion norm is a rank-two bilinear with a single algebra slot; the norm of the biquaternion representative is not gauge invariant under $F_{\mu\nu}\mapsto\tilde UF_{\mu\nu}\tilde U^{-1}$. This is a recorded gap, not an oversight.</li>
+<li><strong>Imported.</strong> The star, the bound and the Chern–Simons primitive.</li>
+</ul>
+<p><strong>Where the application is.</strong> <a href="instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a> applies every statement above to the framework's compact factor: it writes the density for both cases, verifies the total-derivative identity symbolically, checks the non-invariance numerically, and exhibits the BPST solution with its charge and action.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F_{\mu\nu}$</td>
+<td>the field strength</td>
+</tr>
+<tr>
+<td>$\tilde F^{\mu\nu}$</td>
+<td>its dual</td>
+</tr>
+<tr>
+<td>$\varrho$</td>
+<td>the topological density</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>the topological charge, an integer</td>
+</tr>
+<tr>
+<td>$\Omega_{\mathrm{CS}}$</td>
+<td>the Chern–Simons form</td>
+</tr>
+<tr>
+<td>$J^{\mu}_{\mathrm{CS}}$</td>
+<td>the abelian Chern–Simons current</td>
+</tr>
+<tr>
+<td>$g$</td>
+<td>the gauge coupling</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>A. A. Belavin, A. M. Polyakov, A. S. Schwarz and Yu. S. Tyupkin, "Pseudoparticle Solutions of the Yang–Mills Equations," <em>Physics Letters B</em> <strong>59</strong> (1975) 85–87, the BPST instanton.</li>
+<li>E. B. Bogomolny, "Stability of Classical Solutions," <em>Soviet Journal of Nuclear Physics</em> <strong>24</strong> (1976) 449, the bound.</li>
+<li>S. Coleman, <em>Aspects of Symmetry</em>, Chapter 7, for the topological charge and its consequences.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

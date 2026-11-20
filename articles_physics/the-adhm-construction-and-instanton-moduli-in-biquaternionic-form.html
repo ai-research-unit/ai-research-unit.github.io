@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The ADHM Construction and Instanton Moduli in Biquaternionic Form — Biquaternion Universe</title>
+  <meta name="description" content="The object. A topological sector is not one configuration but a family. The self-dual connections of charge form a manifold, the moduli space, and its…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adhm-construction-and-instanton-moduli-in-biquaternionic-form"><strong>The ADHM Construction and Instanton Moduli in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The object.</strong> A topological sector is not one configuration but a family. The self-dual connections of charge $k$ form a manifold, the <strong>moduli space</strong>, and its dimension, its metric and its singularities are what the semiclassical expansion needs. The <strong>ADHM construction</strong> builds every such connection from a finite algebraic datum: two matrices and two vectors satisfying a pair of quadratic equations.</p>
+<p><strong>What this article is.</strong> The construction in general form, with no sector attached. It states the self-duality equation as a quaternionic condition, the ADHM equations, the dimension of the moduli space, the reduction to the BPST solution at charge one, and the twistor reading. The construction is a statement about $SU(N)$ gauge theory in four Euclidean dimensions; it names no force.</p>
+<p><strong>Where the applications are.</strong></p>
+<ul>
+<li>The strong sector. The application is <a href="the-adhm-construction-and-biquaternion-instanton-data.html">The ADHM Construction and Biquaternion Instanton Data</a>, which carries the construction in the framework's notation, fixes the minimal datum for the framework's compact factor and relates the quaternionic structure to the algebra's own.</li>
+<li>The electroweak sector, nowhere.</li>
+</ul>
+<p><strong>Why a finite datum is worth having.</strong> The moduli space is infinite-dimensional as a space of connections and finite-dimensional as a manifold. The ADHM datum is the finite description, and without it the measure on the moduli space could not be written.</p>
+<h2 id="self-duality-as-a-quaternionic-equation">Self-Duality as a Quaternionic Equation</h2>
+<p><strong>The identification.</strong> On $\mathbb{R}^4$ the coordinates combine into a quaternion, $x=x_0e_t+x_1\vec e_x+x_2\vec e_y+x_3\vec e_z$, and the field strength splits into a self-dual and an anti-self-dual part. Self-duality is the statement that one part vanishes.</p>
+<p><strong>The quaternionic form.</strong> A connection whose curvature is self-dual is equivalent to a connection whose curvature is a quaternionic-linear object: the three components of the anti-self-dual part vanish, and what remains is a triple of two-forms obeying the quaternionic relations. This is why the construction is algebraic rather than analytic — the differential equation becomes a linear condition on a finite set of matrices.</p>
+<h2 id="the-adhm-equations">The ADHM Equations</h2>
+<p><strong>The datum.</strong> For gauge group $SU(N)$ and charge $k$:</p>
+<p>$$
+B_1,\ B_2 \in \mathrm{Hom}(\mathbb{C}^k,\mathbb{C}^k),
+\qquad
+I\in\mathrm{Hom}(\mathbb{C}^N,\mathbb{C}^k),
+\qquad
+J\in\mathrm{Hom}(\mathbb{C}^k,\mathbb{C}^N).
+$$</p>
+<p><strong>The equations.</strong> Two conditions, one complex and one real:</p>
+<p>$$
+\boxed{\;\mu_{\mathbb C}=[B_1,B_2]+IJ=0\;}
+$$</p>
+<p>$$
+\boxed{\;\mu_{\mathbb R}=[B_1,B_1^{\dagger}]+[B_2,B_2^{\dagger}]+II^{\dagger}-J^{\dagger}J=0\;}
+$$</p>
+<p>The first is holomorphic and the second is the moment map for the unitary action; together they are the self-duality equation in disguise.</p>
+<p><strong>The gauge redundancy.</strong> The datum carries a $\mathrm{U}(k)$ action, $B_i\mapsto gB_ig^{-1}$, $I\mapsto gI$, $J\mapsto Jg^{-1}$, which does not change the connection. The moduli space is the quotient of the solution set by that action, and taking the quotient is what makes it a manifold rather than a cone.</p>
+<h2 id="the-dimension-of-the-moduli-space">The Dimension of the Moduli Space</h2>
+<p><strong>The count.</strong> The datum has $4k^2+4kN$ real parameters; the two equations remove $3k^2$; the quotient removes $k^2$. The remainder is</p>
+<p>$$
+\boxed{\;\dim\mathcal{M}_{N,k}=4kN\;}
+$$</p>
+<p>the standard dimension of the charge-$k$ moduli space of $SU(N)$.</p>
+<p><strong>The reading.</strong> Every instanton carries four translational, four scale and three orientation parameters for each unit of charge, plus the parameters that come from the gauge orientation of the instanton in the group. The formula reproduces that count and fixes the measure.</p>
+<p><strong>The metric.</strong> The moduli space carries the metric induced by the field-space metric on the space of connections; the ADHM coordinates make it computable, and the hyper-Kähler structure of the manifold is visible in the quaternionic form of the equations.</p>
+<h2 id="the-minimal-datum-and-the-charge-one-solution">The Minimal Datum and the Charge-One Solution</h2>
+<p><strong>The reduction.</strong> At $k=1$ the matrices $B_i$ are numbers and the equations reduce to algebraic relations among them. Solving them and inserting the datum into the reconstruction formula gives the BPST solution with its scale, its position and its gauge orientation.</p>
+<p><strong>The reconstruction.</strong> The connection is built from the null space of a linear operator constructed from the datum; the self-duality of the resulting connection is a consequence of the two equations, not an extra condition. This is the sense in which the construction is complete: every self-dual connection arises, and every datum gives one.</p>
+<p><strong>The twistor reading.</strong> The same equations are the statement that a certain holomorphic bundle over twistor space is trivial on each twistor line. The quaternionic and twistor pictures agree, and the agreement is what makes the moduli space hyper-Kähler.</p>
+<h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
+<ul>
+<li><strong>Supplied.</strong> The quaternionic structure itself. The algebra is a quaternion algebra over $\mathbb{C}$, so the identification of $\mathbb{R}^4$ with the quaternions and the split of the field strength into self-dual parts are carried by the algebra and not imported.</li>
+<li><strong>Imported.</strong> The moduli-space dimension, the quotient and the reconstruction formula. These are standard mathematics, transcribed.</li>
+<li><strong>Not supplied.</strong> The gauge group of the sector. The construction is written for $SU(N)$; which $N$ applies is a sector question, and in this framework the compact factor fixes $N=2$.</li>
+</ul>
+<p><strong>Where the application is.</strong> <a href="the-adhm-construction-and-biquaternion-instanton-data.html">The ADHM Construction and Biquaternion Instanton Data</a> works the construction for the framework's compact factor, states the dimension it gives, and relates the quaternionic structure of the datum to the algebra's own left multiplication.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$k$</td>
+<td>the instanton charge</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the rank of the gauge group</td>
+</tr>
+<tr>
+<td>$B_1,B_2$</td>
+<td>the complex matrices of the datum</td>
+</tr>
+<tr>
+<td>$I,J$</td>
+<td>the vectors of the datum</td>
+</tr>
+<tr>
+<td>$\mu_{\mathbb C},\mu_{\mathbb R}$</td>
+<td>the complex and real equations</td>
+</tr>
+<tr>
+<td>$\mathcal{M}_{N,k}$</td>
+<td>the moduli space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>M. F. Atiyah, N. J. Hitchin, V. G. Drinfeld and Yu. I. Manin, "Construction of Instantons," <em>Physics Letters A</em> <strong>65</strong> (1978) 185–187, the construction.</li>
+<li>M. F. Atiyah, <em>Geometry of Yang–Mills Fields</em>, the twistor reading.</li>
+<li>N. Dorey, T. J. Hollowood, V. V. Khoze and M. P. Mattis, "The Calculus of Many Instantons," <em>Physics Reports</em> <strong>371</strong> (2002) 231–459, the moduli-space measure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

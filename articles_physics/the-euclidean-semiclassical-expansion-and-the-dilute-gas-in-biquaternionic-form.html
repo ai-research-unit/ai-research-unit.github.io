@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form — Biquaternion Universe</title>
+  <meta name="description" content="The object. The path integral of a theory with topology is a sum over sectors, and each sector is dominated by the configurations of least action.…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form"><strong>The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The object.</strong> The path integral of a theory with topology is a sum over sectors, and each sector is dominated by the configurations of least action. Expanding about them turns each into a contribution to a physical quantity, with a measure on the collective coordinates and a one-loop prefactor. When the configurations are dilute, the sum exponentiates and the result is an explicit non-perturbative term.</p>
+<p><strong>What this article is.</strong> The general machinery, with no sector attached: steepest descent in the Euclidean integral, the collective-coordinate measure, the sum over sectors and the theta angle, the dilute-gas approximation, the one-loop prefactor, and dimensional transmutation. It names no force; it applies to any theory with instantons.</p>
+<p><strong>Where the applications are.</strong></p>
+<ul>
+<li>The strong sector. The application is <a href="the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</a>, which sets the machinery in the framework's compact factor and follows what the algebra does and does not provide. The theta angle that the sum produces is the subject of <a href="the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a>.</li>
+<li>The electroweak sector. The same expansion exists there, and it is not what that sector's articles treat, because the weak sector's non-perturbative effects are not the object of the corpus's electroweak series.</li>
+</ul>
+<h2 id="the-euclidean-integral-and-steepest-descent">The Euclidean Integral and Steepest Descent</h2>
+<p><strong>The continuation.</strong> The path integral $e^{iS/\hbar}$ becomes $e^{-S_E/\hbar}$ after continuation to Euclidean signature, and the weight is then largest where the Euclidean action is smallest. The saddle points are the solutions of the Euclidean equations of motion, and the integral is a sum of Gaussian fluctuations about them.</p>
+<p><strong>The expansion.</strong> For a saddle $\phi_0$,</p>
+<p>$$
+Z=\sum_{\phi_0}e^{-S_E[\phi_0]/\hbar}\int\mathcal{D}\delta\phi\ e^{-\frac{1}{2}\delta\phi\,S''[\phi_0]\,\delta\phi/\hbar},
+$$</p>
+<p>the inner integral being the one-loop determinant, which contributes a prefactor rather than a phase.</p>
+<h2 id="collective-coordinates-and-the-measure">Collective Coordinates and the Measure</h2>
+<p><strong>The zero modes.</strong> A saddle that is not isolated has flat directions: translations, rotations, scale and gauge orientation. Each flat direction corresponds to a zero eigenvalue of $S''$, and the Gaussian integral along it is not Gaussian.</p>
+<p><strong>The Jacobian.</strong> The cure is to change variables from the field to the collective coordinates plus the orthogonal fluctuations. The change of variables produces a Jacobian,</p>
+<p>$$
+\boxed{\;\mathcal{D}\phi=\prod_i d c_i\ \sqrt{\det\left(\left\langle\frac{\partial\phi_0}{\partial c_i},\frac{\partial\phi_0}{\partial c_j}\right\rangle\right)}\ \mathcal{D}\phi_{\perp}\;}
+$$</p>
+<p>so each zero mode becomes an integration over its coordinate with a measure fixed by the field-space metric. The determinant is the overlap matrix of the tangent vectors, and it is what makes the answer finite and correct.</p>
+<h2 id="the-theta-vacuum-and-the-sum-over-sectors">The Theta Vacuum and the Sum over Sectors</h2>
+<p><strong>The sectors.</strong> The configurations fall into classes labelled by an integer $n$, and the integral is a sum over them. Because the classes are not connected by any continuous deformation, the sum is not constrained by locality, and a relative phase between sectors is allowed:</p>
+<p>$$
+\boxed{\;|\theta\rangle=\sum_n e^{in\theta}\,|n\rangle\;}
+$$</p>
+<p>with $\theta$ a parameter of the theory. The sum over sectors in the presence of $\theta$ weights the $n$-th sector by $e^{in\theta}$.</p>
+<p><strong>The consequence.</strong> A parameter that no symmetry forbids appears in the action, and the theory has one more coupling than the classical Lagrangian suggests. The theta term is a total derivative and therefore does not affect the equations of motion, but it does affect the weights, so it is physical.</p>
+<h2 id="the-dilute-gas">The Dilute Gas</h2>
+<p><strong>The approximation.</strong> When the density of instantons is small, the configurations can be treated as non-interacting, and the sum exponentiates:</p>
+<p>$$
+\boxed{\;Z_\theta=\exp\left(2V\!\!\int\!d\rho\ \frac{d(\rho)}{\rho^5}\cos\theta\right)\;}
+$$</p>
+<p><strong>The reading.</strong> The partition function becomes the exponential of a single-instanton contribution, the vacuum energy acquires a $\cos\theta$ dependence, and the result is non-perturbative in the coupling because $d(\rho)$ carries the factor $e^{-8\pi^2/g^2}$.</p>
+<p><strong>The limits.</strong> The approximation fails at large density, where interactions matter, and at large instanton size, where the integral diverges in the infrared. The divergence is not a defect of the method; it signals that the dilute gas is an ultraviolet description and that the infrared requires a different argument.</p>
+<h2 id="the-one-loop-prefactor-and-dimensional-transmutation">The One-Loop Prefactor and Dimensional Transmutation</h2>
+<p><strong>The prefactor.</strong> The determinant around the instanton gives a power of the scale, $d(\rho)\propto\mu^{b_0}\rho^{b_0}$, with $b_0$ the one-loop coefficient of the beta function. The exponent is the same one that appears in the running coupling.</p>
+<p><strong>The transmutation.</strong> Combining the classical factor with the prefactor replaces the coupling by a scale,</p>
+<p>$$
+\boxed{\;\Lambda=\mu\,e^{-8\pi^2/(b_0g^2(\mu))}\;}
+$$</p>
+<p>so the theory trades a dimensionless coupling for a dimensionful parameter. This is dimensional transmutation, and it is the reason a theory with no mass parameter can have a mass gap.</p>
+<h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
+<ul>
+<li><strong>Supplied.</strong> The Euclidean continuation, through the Wick rotation that identifies $\mathbb{B}_\Phi$ with its real-quaternion subspace, and the one-instanton data — charge, action, moduli — from the companion articles.</li>
+<li><strong>Imported.</strong> The steepest-descent machinery, the collective-coordinate measure, the theta angle and the beta function. These are standard field theory, transcribed.</li>
+<li><strong>Not supplied.</strong> A sector. The machinery is silent on which theory it is applied to, and the two applications are named above.</li>
+</ul>
+<p><strong>Where the application is.</strong> <a href="the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html">The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</a> carries the whole expansion in the framework's compact factor and records the phase-integral content and the gaps.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_E$</td>
+<td>the Euclidean action</td>
+</tr>
+<tr>
+<td>$c_i$</td>
+<td>collective coordinates</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the vacuum angle</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>the topological sector label</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>the instanton size</td>
+</tr>
+<tr>
+<td>$d(\rho)$</td>
+<td>the instanton density per unit size</td>
+</tr>
+<tr>
+<td>$b_0$</td>
+<td>the one-loop beta-function coefficient</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>the transmuted scale</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>G. 't Hooft, "Computation of the Quantum Effects Due to a Four-Dimensional Pseudoparticle," <em>Physical Review D</em> <strong>14</strong> (1976) 3432, the measure and the prefactor.</li>
+<li>C. G. Callan, R. Dashen and D. J. Gross, "The Structure of the Gauge Theory Vacuum," <em>Physics Letters B</em> <strong>63</strong> (1976) 334, the theta vacuum.</li>
+<li>S. Coleman, <em>Aspects of Symmetry</em>, Chapter 7, for the dilute gas.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
