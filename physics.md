@@ -1813,6 +1813,27 @@
 <a href="articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a>
 <!-- why a regulator; the lattice carrier; the plaquette and the Wilson action; the lattice path integral; strong coupling, the area law and confinement; the continuum limit and the running coupling.  The algebra's own orders are read as a discrete spacetime lattice, the real slice Euclidean and the complex order lightlike. -->
 
+<a href="articles_physics/topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.html">Topological Charge, Self-Duality and the Bogomolny Bound in Biquaternionic Form</a>
+<!-- the density and its primitivity; the abelian primitive and the vanishing abelian charge; the star in the two signatures; the Bogomolny bound and what self-duality buys; the framework's two invariants and the rank-two gap in the non-abelian density. **The machinery both forces share: the strong sector applies it in *Instantons and Solitons*.** -->
+
+<a href="articles_physics/the-adhm-construction-and-instanton-moduli-in-biquaternionic-form.html">The ADHM Construction and Instanton Moduli in Biquaternionic Form</a>
+<!-- self-duality as a quaternionic equation; the ADHM equations, complex and real; the gauge redundancy and the quotient; the dimension $4kN$; the minimal datum and the charge-one solution; the twistor reading. **The machinery both forces share: the strong sector applies it in *The ADHM Construction and Biquaternion Instanton Data*.** -->
+
+<a href="articles_physics/the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form.html">The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form</a>
+<!-- steepest descent and the one-loop determinant; collective coordinates and their Jacobian; the theta vacuum and the sum over sectors; the dilute gas; the one-loop prefactor and dimensional transmutation. **The machinery both forces share: the strong sector applies it in *The Semiclassical Expansion and the Instanton Gas*.** -->
+
+<a href="articles_physics/the-nonlinear-sigma-model-and-the-chiral-field-in-biquaternionic-form.html">The Nonlinear Sigma Model and the Chiral Field in Biquaternionic Form</a>
+<!-- the nonlinear realisation of a broken symmetry; the passage from the linear model; the geometric Lagrangian and the decay constant; the flat current and its conservation; power counting and the effective-field-theory reading. **The machinery both forces share: the strong sector applies it in *The Pion and the Chiral Lagrangian* and *The Skyrme Model*.** -->
+
+<a href="articles_physics/the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html">The Effective Potential and the One-Loop Correction in Biquaternionic Form</a>
+<!-- the constant-field reduction; the functional determinant; the coefficient of $\rho^2\ln\rho$; radiative symmetry breaking and the condition for a minimum; renormalisation-scale dependence and the stability bound. **The machinery both forces share: the electroweak sector applies it in *The Effective Potential and the Coleman–Weinberg Mechanism*.** -->
+
+<a href="articles_physics/the-path-integral-anomaly-and-the-fujikawa-measure-in-biquaternionic-form.html">The Path-Integral Anomaly and the Fujikawa Measure in Biquaternionic Form</a>
+<!-- the measure and the chiral rotation; the Jacobian; the regulated trace and the heat kernel; what the regulator must preserve; the index relation. **The machinery both forces share: the electroweak sector applies it in *Anomalies and Anomaly Cancellation*, the strong sector in *The Theta Parameter and Strong CP*.** -->
+
+<a href="articles_physics/the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.html">The Stueckelberg Mechanism for a Massive Abelian Vector in Biquaternionic Form</a>
+<!-- the Proca obstruction and its consequences; the shift field and the invariant mass term; the equations and the degree-of-freedom count; unitary gauge; the relation to the abelian Higgs; the abelian boundary of renormalisability. **The machinery both forces share: the electroweak sector applies it in *The Stueckelberg Mechanism*.** -->
+
 ### The Electroweak Interaction
 
 #### Generalities

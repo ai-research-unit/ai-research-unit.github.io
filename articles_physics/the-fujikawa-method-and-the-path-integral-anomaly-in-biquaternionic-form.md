@@ -2,6 +2,8 @@
 
 ## Introduction
 
+**This article is the electroweak application of a general derivation.** The measure, the Jacobian and the regulated trace are stated with no sector attached in [The Path-Integral Anomaly and the Fujikawa Measure in Biquaternionic Form](the-path-integral-anomaly-and-the-fujikawa-measure-in-biquaternionic-form.html). What is added here is the electroweak content: the chiral spectrum of one generation, the representation each field carries, and the four conditions the anomaly must satisfy.
+
 The **Fujikawa method** derives the axial anomaly from the path integral rather than from a diagram. The observation is that the fermion measure is not invariant under a chiral rotation of the integration variables: the rotation is a linear change of variables whose Jacobian is a formal determinant, the determinant is infinite, and when it is regulated and evaluated it is not one. The anomaly is that Jacobian. The method makes the anomaly look like what it is — a property of the measure, not of the equations of motion — and it exhibits the coefficient as the weighted trace of the pseudoscalar against the heat kernel of the fermion operator.
 
 The derivation has two facts and one regularisation.

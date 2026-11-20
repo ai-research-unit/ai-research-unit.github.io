@@ -2,6 +2,8 @@
 
 ## Introduction
 
+**This article is the strong sector's application of a general theory.** The density, its primitivity, the self-duality condition and the Bogomolny bound are stated with no sector attached in [Topological Charge, Self-Duality and the Bogomolny Bound in Biquaternionic Form](topological-charge-self-duality-and-the-bogomolny-bound-in-biquaternionic-form.html). What is added here is the strong sector's content: the objects are the non-perturbative configurations of the colour gauge theory, and the question the article answers is what the framework's own invariants supply for them and what they do not.
+
 The companion article *Non-Abelian Gauge Fields in Biquaternionic Form* closes with an open question: whether the biquaternion framework supplies a preferred connection with finite action and nonzero topological charge, and whether the zero-divisor structure of $\mathbb{B}_{\Phi}$ plays any role in it. This article takes that question up. Its subject is **localised finite-energy solutions** of the framework's field equations, and it treats the two families that the phrase covers separately, because they differ in three things at once — the sign of the star, boundary conditions, and what makes them stable.
 
 - **Instantons** are **Euclidean** objects. They are defined on the Euclidean continuation of spacetime, they are classified by an integer topological charge, and the classical route to them is the **self-duality** condition $F=\star F$, which replaces the second-order equation of motion by a first-order equation. The word "instanton" is not a synonym for "localised solution of the Lorentzian theory"; an instanton is not a configuration that propagates in time.
