@@ -80,6 +80,12 @@
 $$</p>
 <p><strong>The non-trivial claim.</strong> The compact algebra is four-dimensional and its group is $\mathrm{U}(2)$, so the electroweak <em>algebras</em> fit and the electroweak <em>theory</em> does not. The $\mathrm{SU}(2)$ present is the rotation group of space — the group of rotors of the spatial rotations, the double cover of $\mathrm{SO}(3)$ — not an internal isospin. The dimension match of four directions is a match of counts, not of kinds: three spacetime and one internal, where the Standard Model has four internal. The $\mathrm{U}(1)$ present is the central phase, which is vector-like and therefore cannot be $Y$.</p>
 <p><strong>Why the split is a theorem and not a lapse.</strong> Representation is fixed by spin. The gauge group is the spin group, so a field cannot carry a representation chosen independently of its spin. The Standard Model needs the two independent; this framework forbids the separation. Three of the four mismatches in the part reduce to that one sentence.</p>
+<p><strong>The letter, after the migration.</strong> The compact factor is written $\mathrm{Rot}$ in the articles of this part, and $\mathrm{Rot}=\mathrm{Spin}(3)=S^3$ is the group of unit real quaternions: the identification with $\mathrm{SU}(2)$ is an identity and not an embedding, and the corpus now uses the name that says what the object is. Three consequences are used throughout the part and stated once, in <code>articles_physics/representation-is-a-function-of-spin.md</code>, §<em>The Rotor Conventions</em>:</p>
+<ul>
+<li><strong>The group is a quotient.</strong> The electroweak group is $(\mathrm{Rot}\times S^1)/\{\pm e_t\}$, not the product. The compact factor and the centre share the two points $\pm e_t$, and that sharing is the parity lock $q\equiv2j\pmod 2$ — the group-theoretic source of the half-angle obstruction.</li>
+<li><strong>The action is one-sided.</strong> A gauge field acts by left multiplication, $L_{\tilde u}$, so the carrier is a minimal left ideal of dimension two and the action cannot be made two-sided. The chirality operator of the EDM article is a right multiplication precisely because the left side is taken.</li>
+<li><strong>The scalar is central.</strong> The framework's scalar is a central singlet, so it cannot break the non-abelian factor; the abelian mechanism is the one the algebra carries.</li>
+</ul>
 <p><strong>The one-sentence version.</strong> The part reaches the electroweak kinematics, its algebra, its self-couplings and its abelian scalar mechanism; it imports its group, its quantum numbers, its angle and its masses; and it records the difference rather than blurring it.</p>
 <p><strong>The four bands, and the count.</strong> The part is cut by spin inside the part, because it is one of the two parts of the category that use all four spins.</p>
 <div class="table-scroll"><table>
@@ -93,8 +99,8 @@ $$</p>
 <tbody>
 <tr>
 <td>Generalities</td>
-<td>7</td>
-<td>the group and the hypercharge table, the $\mathrm{U}(2)$ ceiling, the $\mathrm{U}(2)$ reach and the chiral wall, the centre bound, representation as a function of spin, the one-sided carrier, the action in both phases</td>
+<td>6</td>
+<td>the group and the hypercharge table, the quotient and the parity lock, the $\mathrm{U}(2)$ reach and the chiral wall, the centre bound, representation as a function of spin, the one-sided carrier</td>
 </tr>
 <tr>
 <td>Spin $0$</td>
@@ -108,11 +114,12 @@ $$</p>
 </tr>
 <tr>
 <td>Spin $1$</td>
-<td>8</td>
-<td>gauge fixing, the $W$ and $Z$, the $W$–$Z$ action, the Weinberg angle and the $Z$ coupling, the weak interaction, the contact action, Stueckelberg, the Stueckelberg action</td>
+<td>9</td>
+<td>gauge fixing, the $W$ and $Z$, the $W$–$Z$ action, the Weinberg angle and the $Z$ coupling, the weak interaction, the contact action, Stueckelberg, the Stueckelberg action, the action of the whole sector in both phases</td>
 </tr>
 </tbody>
 </table></div>
+<p><strong>The band counts come from the anchors, and they are $6+6+12+9=33$.</strong> The bands are the menu's four <code>####</code> blocks; the fifth <code>####</code> block of the part, <em>Focus on informational aspects</em>, belongs to another part. An earlier version of this table gave $7$ and $8$, which also sums to thirty-three and hid the exchange: <em>The Lagrangian and the Electroweak Theory</em> sits in the spin-$1$ block, not in the Generalities.</p>
 <p><strong>Four articles of the part are the sector's ledger; the rest compute.</strong> <em>The Standard Model … The U(2) Ceiling</em>, <em>Electroweak Theory … The U(2) Reach and the Chiral Wall</em>, <em>The Gauge Extension of the Central Phase</em> and <em>Representation Is a Function of Spin</em> set the boundary. The spin-$0$ and spin-$\tfrac12$ blocks compute on top of it. A reader who needs the verdict reads §1, §2, §4, §5 and §15; a reader who needs a number reads the rest.</p>
 <p><strong>A trap recorded at the top.</strong> Nine of the part's articles are computations about <em>the model the framework inherits</em>, not about the framework: the hypercharge solution, the doublet potential, the oblique parameters and the flavour counts, and the five actions of §16. They are exact and they are not derivations. The article in each case says so; this file repeats it so a compressed reading cannot promote them.</p>
 <h2 id="1-the-group-the-centre-and-the-split-on-the-element">1. The Group, the Centre and the Split on the Element</h2>
@@ -211,7 +218,7 @@ $$</p>
 <p><strong>Two readings, and the corpus chooses neither.</strong> That the central extension is the <em>whole</em> extension, which makes hypercharge the central phase and weak isospin the module action; or that the central phase is the trace of a local structure the algebra does not contain. The article states both and says what the first cannot deliver: a central phase multiplies both values alike, so reading A cannot give two charges.</p>
 <p><strong>Read on the representations, and checked against the table.</strong> The lock is a statement about the group, so it can be turned round: a multiplet of spin $j$ carries an integer central charge $q$ only with $q\equiv 2j\pmod 2$, and the product group imposes no such parity. The framework's compact group is thus a $\mathbb{Z}_2$ quotient of the electroweak pair and not the pair, which is the group-level content of the dimension match $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$. Taken at the least integral step $q=6Y$, the seven rows of the hypercharge table all satisfy the lock, and on that table the lock is exactly the statement that electric charge is quantised in thirds — so the quotient is met by the observed content and is not a constraint that excludes it. It fixes parity and not scale: the values remain the anomaly solution, and the two couplings remain free, so the mixing angle stays a ratio of two free parameters.</p>
 <p><strong>Source.</strong> <code>articles_physics/the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.md</code>, <code>articles_physics/the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.md</code>.</p>
-<h2 id="6-the-breaking-potential-masses-math71">6. The Breaking: Potential, Masses, $\rho$</h2>
+<h2 id="6-the-breaking-potential-masses-math81">6. The Breaking: Potential, Masses, $\rho$</h2>
 <p><strong>The abelian mechanism, which works, and the non-abelian one, which does not.</strong> The framework's scalar is $\tilde\Xi=\xi e_t\in\mathbb{B}_{C}$, central, and the connection coefficient is central too, so left and right multiplication agree and the covariant derivative stays on $e_t$:</p>
 <p>$$
 D_\mu\tilde{\Xi}\Big|_{\langle\tilde{\Xi}\rangle}=\frac{i\,ϙ}{\hbar}\,A_\mu\,\langle\tilde{\Xi}\rangle,
