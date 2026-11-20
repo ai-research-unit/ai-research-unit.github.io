@@ -20,13 +20,13 @@
 
 ## The Action in Element Form: Named and Not Written
 
-**The standard action, named.** In the literature the massive spin-$\tfrac32$ field's action is written with a vector-spinor $\psi_\mu$, the Dirac matrices $\gamma^\mu$, and the object $\gamma^{\mu\nu}=\frac{i}{2}[\gamma^\mu,\gamma^\nu]$:
+**The standard action, named.** In the literature the massive spin-$\tfrac32$ field's action is written with a vector-spinor $\psi_\mu$, the Dirac matrices, and the object $\gamma_{\mu\nu}=\frac{i}{2}[\gamma_\mu,\gamma_\nu]$:
 
 $$
-S_{\mathrm{RS}}=\int\mathrm{d}^{4}x\;\bar\psi_\mu\Bigl(i\gamma^{\mu\nu\rho}\partial_\rho-m\,\gamma^{\mu\nu}\Bigr)\psi_\nu ,
+S_{\mathrm{RS}}=\int\mathrm{d}^{4}x\;\bar\psi_\mu\Bigl(i\gamma_{\mu\nu\rho}\partial_\rho-m\,\gamma_{\mu\nu}\Bigr)\psi_\nu ,
 $$
 
-with the antisymmetrised product $\gamma^{\mu\nu\rho}$. It is not written here in the algebra, and the box is a quotation of the literature's form rather than a formula of this corpus. The biquaternionic counterpart would replace $\psi_\mu$ by $\tilde\Xi_\mu$, $\partial_\rho$ by $\tilde\nabla_\Phi$, and the matrices by elements of the algebra acting by multiplication — and it is the last replacement that has not been made.
+with the antisymmetrised product $\gamma_{\mu\nu\rho}$. The literature prints these matrices with the index raised and this article prints every index low: the metric is the identity, so the two spellings name the same array and the action is the same functional. It is not written here in the algebra, and the box is a quotation of the literature's form rather than a formula of this corpus. The biquaternionic counterpart would replace $\psi_\mu$ by $\tilde\Xi_\mu$, $\partial_\rho$ by $\tilde\nabla_\Phi$, and the matrices by elements of the algebra acting by multiplication — and it is the last replacement that has not been made.
 
 **What the action must contain for the parent's results to follow.**
 
@@ -111,7 +111,7 @@ $$
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\vec e_z$ | Fixed direction of the trace constraint |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
-| $\psi_\mu,\ \gamma^\mu,\ \gamma^{\mu\nu}$ | Literature's notation, quoted and not adopted |
+| $\psi_\mu,\ \gamma_\mu,\ \gamma_{\mu\nu}$ | The literature's matrices, printed low and not adopted |
 | $S_{\mathrm{RS}}$ | The standard action, named and not written |
 
 ## Further Reading

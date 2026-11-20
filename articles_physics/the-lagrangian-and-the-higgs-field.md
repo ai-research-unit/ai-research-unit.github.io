@@ -14,7 +14,7 @@
 
 ## Conventions
 
-**The conventions are the electroweak articles', with the gauge fields switched off.** The metric is mostly plus, the measure $\mathrm{d}^{4}x$, and $\hbar=c=1$ throughout. The doublet is a complex two-component column,
+**The conventions are the electroweak articles', with the gauge fields switched off.** The measure is $\mathrm{d}^{4}x$ and $\hbar=c=1$ throughout; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $\partial_\mu\Phi^{\dagger}\partial_\mu\Phi=\sum_\mu\varepsilon_\mu\partial_\mu\Phi^{\dagger}\partial_\mu\Phi$ carries the sign the mostly-minus literature carries. The doublet is a complex two-component column,
 
 $$
 \Phi=\frac{1}{\sqrt2}\begin{pmatrix}\phi_1+i\phi_2\\ \phi_3+i\phi_4\end{pmatrix},
@@ -40,8 +40,8 @@ and its minimum sits at $\Phi^{\dagger}\Phi=\mu^{2}/2\lambda\equiv v^{2}/2$, so 
 **The scalar block of the electroweak action, with the connection removed.**
 
 $$
-S[\Phi,\Phi^{\dagger}]=\int\mathrm{d}^{4}x\;\Bigl\{\partial_\mu\Phi^{\dagger}\,\partial^{\mu}\Phi-V(\Phi)\Bigr\}
-=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_\mu r\,\partial^{\mu}r+\tfrac{r^{2}}{2}\partial_\mu\theta_A\partial^{\mu}\theta_A+\tfrac{\mu^{2}}{2}r^{2}-\tfrac{\lambda}{4}r^{4}\Bigr\},
+S[\Phi,\Phi^{\dagger}]=\int\mathrm{d}^{4}x\;\Bigl\{\partial_\mu\Phi^{\dagger}\,\partial_{\mu}\Phi-V(\Phi)\Bigr\}
+=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_\mu r\,\partial_{\mu}r+\tfrac{r^{2}}{2}\partial_\mu\theta_A\partial_{\mu}\theta_A+\tfrac{\mu^{2}}{2}r^{2}-\tfrac{\lambda}{4}r^{4}\Bigr\},
 $$
 
 where the second form uses the three angular coordinates of the four-sphere $r=\mathrm{const}$ and is written to show the structure and not to be varied in.
@@ -49,13 +49,13 @@ where the second form uses the three angular coordinates of the four-sphere $r=\
 **The same action in the unitary chart.**
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_\mu h\,\partial^{\mu}h-\tfrac12 m_h^{2}h^{2}-\lambda vh^{3}-\tfrac{\lambda}{4}h^{4}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\partial_\mu h\,\partial_{\mu}h-\tfrac12 m_h^{2}h^{2}-\lambda vh^{3}-\tfrac{\lambda}{4}h^{4}\Bigr\},
 \qquad m_h^{2}=2\lambda v^{2}.
 $$
 
 The chart is the expansion about one point of the circle of minima, and the three terms after the mass term are the same $\lambda$ read at third and fourth order.
 
-**It is real, term by term.** The kinetic term is $\partial_\mu\Phi^{\dagger}\partial^{\mu}\Phi=\sum_A(\partial_\mu\phi_A)^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\phi_A^{2}/2$, real and negative. The quartic is $\lambda(\Phi^{\dagger}\Phi)^{2}=\lambda(\sum_A\phi_A^{2})^{2}/4$, real and positive for $\lambda>0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.
+**It is real, term by term.** The kinetic term is $\partial_\mu\Phi^{\dagger}\partial_{\mu}\Phi=\sum_A(\partial_\mu\phi_A)^{2}/2$, a sum of squares with a fixed sign. The mass term is $-\mu^{2}\Phi^{\dagger}\Phi=-\mu^{2}\sum_A\phi_A^{2}/2$, real and negative. The quartic is $\lambda(\Phi^{\dagger}\Phi)^{2}=\lambda(\sum_A\phi_A^{2})^{2}/4$, real and positive for $\lambda>0$. The potential is therefore bounded below, and the bound is what makes a minimum exist at all.
 
 **Why the sign of $\mu^{2}$ is the whole content.** With $\mu^{2}<0$ the potential has a single stationary point, at $\Phi=0$, and it is a minimum; the four components are degenerate and each has mass $\sqrt{-\mu^{2}}$. With $\mu^{2}>0$ the origin is a maximum and the minimum is the three-sphere $\Phi^{\dagger}\Phi=v^{2}/2$. Nothing else in the action changes. The article's subject is the second case, and the first is named here only because the same display covers both.
 
@@ -66,7 +66,7 @@ The chart is the expansion about one point of the circle of minima, and the thre
 **Varying the conjugate.**
 
 $$
-\delta S=\int\mathrm{d}^{4}x\;\Bigl\{-\partial_\mu\partial^{\mu}\Phi^{\dagger}\,\delta\Phi-\frac{\partial V}{\partial\Phi^{\dagger}}\delta\Phi^{\dagger}\Bigr\}+\text{(boundary)},
+\delta S=\int\mathrm{d}^{4}x\;\Bigl\{-\partial_\mu\partial_{\mu}\Phi^{\dagger}\,\delta\Phi-\frac{\partial V}{\partial\Phi^{\dagger}}\delta\Phi^{\dagger}\Bigr\}+\text{(boundary)},
 $$
 
 and holding $\delta\Phi^{\dagger}$ arbitrary gives
@@ -164,7 +164,7 @@ where the constant is subtracted so that the energy of the vacuum is zero by def
 The scalar action is the Klein–Gordon action for a complex doublet with $V=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$, whose potential depends on one variable and whose minimum is a three-sphere. The variation gives $\Box\Phi=\mu^{2}\Phi-2\lambda(\Phi^{\dagger}\Phi)\Phi$, the radial anharmonic equation and, in the unitary chart, $\Box h+m_h^{2}h+3\lambda vh^{2}+\lambda h^{3}=0$. The curvature at the minimum is $m_h^{2}=2\lambda v^{2}$, the third and fourth derivatives give $g_{hhh}=3m_h^{2}/v$ and $g_{hhhh}=3m_h^{2}/v^{2}$, so one number is measured three times. Three directions are flat, they carry the hypercharge current, and the vectors that eat them inherit it. Nothing is quantised, and the value of $\lambda$ is not derived.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\partial_\mu\Phi^{\dagger}\partial^{\mu}\Phi+\mu^{2}\Phi^{\dagger}\Phi-\lambda(\Phi^{\dagger}\Phi)^{2}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{\partial_\mu\Phi^{\dagger}\partial_{\mu}\Phi+\mu^{2}\Phi^{\dagger}\Phi-\lambda(\Phi^{\dagger}\Phi)^{2}\Bigr\},
 \qquad
 m_h^{2}=2\lambda v^{2},\quad v^{2}=\frac{\mu^{2}}{\lambda}.
 $$

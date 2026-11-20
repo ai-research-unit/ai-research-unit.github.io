@@ -145,7 +145,7 @@ with the Poynting vector $\vec S=\vec E\times\vec H$ as the mixed components. Th
 
 **Where the charge and its sign come from.** From the source. Once a charged matter action is added, the total action is invariant under the local phase only if the connection shifts, and the current is what the connection multiplies. Its sign is then the sign of the matter field's charge, fixed once in the coupled article that derives it, and the field equation's sign is fixed by the same constant. The free field has no sign to fix, and saying so is more useful than manufacturing one.
 
-**The stress's conservation.** $\partial_\mu T^{\mu\nu}=0$ on solutions is the divergence of the field equation contracted with $\tilde F$, the standard identity; it holds for the free field and it is not an extra assumption.
+**The stress's conservation.** $\partial_\mu T_{\mu\nu}=0$ on solutions is the divergence of the field equation contracted with $\tilde F$, the standard identity; it holds for the free field and it is not an extra assumption.
 
 ## What the Principle Adds and What It Relabels
 
@@ -181,7 +181,7 @@ $$
 | $\tilde J_\Phi=ic\rho\,e_t+\vec J$ | Four-current |
 | $\vec D=\epsilon\vec E,\ \vec B=\mu\vec H$ | Displacement and induction |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
-| $T^{\mu\nu}$ | Energy–momentum tensor |
+| $T_{\mu\nu}$ | Energy–momentum tensor |
 | $\Lambda$ | Gauge parameter, a real scalar |
 
 ## Further Reading

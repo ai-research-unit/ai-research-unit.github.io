@@ -14,7 +14,7 @@
 
 ## Conventions
 
-**The conventions are the parent's.** The metric is mostly plus, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ in the length units of the material sector, with the interval $-c^{2}\mathrm{d}r'^{2}_{t}+\mathrm{d}r_x^{2}+\mathrm{d}r_y^{2}+\mathrm{d}r_z^{2}$. The perturbation is $h_{\mu\nu}$, symmetric, with $\lvert h_{\mu\nu}\rvert\ll1$; the trace is $h=\eta^{\mu\nu}h_{\mu\nu}$ and the trace-reversed variable is $\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$. Indices are raised and lowered with $\eta$.
+**The conventions are the parent's, with one exception.** The interval's array is $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$, and it is the one place in this article where a metric other than the corpus's $\delta_{\mu\nu}=(1,1,1,1)$ is used: it is the interval's array, kept until the article is rewritten in the corpus's. It is in the length units of the material sector, with the interval $-c^{2}\mathrm{d}r'^{2}_{t}+\mathrm{d}r_x^{2}+\mathrm{d}r_y^{2}+\mathrm{d}r_z^{2}$. The perturbation is $h_{\mu\nu}$, symmetric, with $\lvert h_{\mu\nu}\rvert\ll1$; the trace is $h=\sum_{\mu}\eta_{\mu\mu}h_{\mu\mu}$ and the trace-reversed variable is $\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$. A repeated low index is summed with the weight $\eta_{\mu\mu}$ of that index, so that $\partial_\lambda h_{\mu\nu}\partial_\lambda h_{\mu\nu}=\sum_{\lambda,\mu,\nu}\eta_{\lambda\lambda}\eta_{\mu\mu}\eta_{\nu\nu}(\partial_\lambda h_{\mu\nu})^{2}$; no index is raised.
 
 The frame perturbation is $\delta\tilde E_{\Phi,\mu}\in\mathbb{B}_\Phi$, related to the metric by $h_{\mu\nu}=\langle\varepsilon_\mu,\delta\tilde E_{\Phi,\nu}\rangle_{\natural}+\langle\delta\tilde E_{\Phi,\mu},\varepsilon_\nu\rangle_{\natural}$, the parent's dictionary. The gravitational constant enters once, through $\kappa^{2}=16\pi G/c^{4}$, and this article does not re-derive its normalisation: the Einstein–Hilbert normalisation is the gravity articles' and is quoted.
 
@@ -25,13 +25,13 @@ The frame perturbation is $\delta\tilde E_{\Phi,\mu}\in\mathbb{B}_\Phi$, related
 **The action is the quadratic expansion, and it is the second variation of the Einstein–Hilbert term.** Write the Einstein–Hilbert action with the cosmological term absent and expand $\sqrt{-g}R$ to second order in $h$. The first-order term is a total derivative on shell and drops; the second-order term is the quadratic action,
 
 $$
-S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac12\,\partial_\lambda h_{\mu\nu}\,\partial^{\lambda}h^{\mu\nu}+\partial_\mu h^{\mu\nu}\,\partial_\nu h-\partial_\mu h^{\mu\nu}\,\partial_\lambda h^{\lambda}_{\ \nu}+\tfrac12\,\partial_\lambda h\,\partial^{\lambda}h\Bigr\},
+S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac12\,\partial_\lambda h_{\mu\nu}\,\partial_\lambda h_{\mu\nu}+\partial_\mu h_{\mu\nu}\,\partial_\nu h-\partial_\mu h_{\mu\nu}\,\partial_\lambda h_{\lambda\nu}+\tfrac12\,\partial_\lambda h\,\partial_\lambda h\Bigr\},
 $$
 
 the Fierz–Pauli form with the mass set to zero. In the trace-reversed variable the same functional is one line shorter,
 
 $$
-S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\,\partial_\lambda\bar h_{\mu\nu}\,\partial^{\lambda}\bar h^{\mu\nu}-\tfrac14\,\partial_\lambda\bar h\,\partial^{\lambda}\bar h\Bigr\}
+S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\,\partial_\lambda\bar h_{\mu\nu}\,\partial_\lambda\bar h_{\mu\nu}-\tfrac14\,\partial_\lambda\bar h\,\partial_\lambda\bar h\Bigr\}
 +\text{(the de Donder total derivative)},
 $$
 
@@ -48,13 +48,13 @@ because the trace-reversed variable absorbs the two cross terms up to a surface 
 **One variation, two integrations by parts, and the linearised Einstein tensor.** Varying $\bar h_{\mu\nu}$ in the second display,
 
 $$
-\delta S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\partial_\lambda\bar h_{\mu\nu}\,\partial^{\lambda}\delta\bar h^{\mu\nu}-\tfrac12\,\partial_\lambda\bar h\,\partial^{\lambda}\delta\bar h\Bigr\},
+\delta S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\partial_\lambda\bar h_{\mu\nu}\,\partial_\lambda\delta\bar h_{\mu\nu}-\tfrac12\,\partial_\lambda\bar h\,\partial_\lambda\delta\bar h\Bigr\},
 $$
 
 and two integrations by parts move the derivatives onto the perturbation. The result is
 
 $$
-\delta S^{(2)}=-\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\delta\bar h^{\mu\nu}\Bigl(\Box\bar h_{\mu\nu}-\eta_{\mu\nu}\Box\bar h-\partial_\mu\partial^{\lambda}\bar h_{\lambda\nu}-\partial_\nu\partial^{\lambda}\bar h_{\lambda\mu}+\eta_{\mu\nu}\partial^{\lambda}\partial^{\rho}\bar h_{\lambda\rho}\Bigr),
+\delta S^{(2)}=-\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\delta\bar h_{\mu\nu}\Bigl(\Box\bar h_{\mu\nu}-\eta_{\mu\nu}\Box\bar h-\partial_\mu\partial_\lambda\bar h_{\lambda\nu}-\partial_\nu\partial_\lambda\bar h_{\lambda\mu}+\eta_{\mu\nu}\partial_\lambda\partial_\rho\bar h_{\lambda\rho}\Bigr),
 $$
 
 whose bracket is the linearised Einstein tensor in the trace-reversed variable, up to the factor that the trace reversal contributes. Stationarity gives $\delta G_{\mu\nu}=0$, the parent's equation.
@@ -75,11 +75,11 @@ $$
 
 a condition on the initial data at every time. That is Gauss's law's counterpart: the field's temporal component is not dynamical, and the equation that would determine it is a constraint instead.
 
-**The gauge orbit.** The action is invariant under the linearised diffeomorphism $h_{\mu\nu}\mapsto h_{\mu\nu}-\partial_\mu\zeta_\nu-\partial_\nu\zeta_\mu$, equivalently $\bar h_{\mu\nu}\mapsto\bar h_{\mu\nu}-\partial_\mu\zeta_\nu-\partial_\nu\zeta_\mu+\eta_{\mu\nu}\partial^{\lambda}\zeta_\lambda$. Four functions, hence four directions in the kernel of the map from perturbation to linearised curvature.
+**The gauge orbit.** The action is invariant under the linearised diffeomorphism $h_{\mu\nu}\mapsto h_{\mu\nu}-\partial_\mu\zeta_\nu-\partial_\nu\zeta_\mu$, equivalently $\bar h_{\mu\nu}\mapsto\bar h_{\mu\nu}-\partial_\mu\zeta_\nu-\partial_\nu\zeta_\mu+\eta_{\mu\nu}\partial_\lambda\zeta_\lambda$. Four functions, hence four directions in the kernel of the map from perturbation to linearised curvature.
 
 **The count.** Ten components; four gauge directions; four constraints (the time-time and time-space equations, which are four conditions and not evolution equations); two remaining. The two are the transverse-traceless polarisations, and the parent's structural finding — that the single-biquaternion carrier is blind to exactly that part — is the statement that the algebra's naive carrier holds the trace and not the physics.
 
-**What the constraints are not.** They are not the de Donder condition. The de Donder condition $\partial^{\lambda}\bar h_{\lambda\mu}=0$ is a *gauge choice*, used above to shorten the variation; the constraints are the equations' own content and hold in every gauge. Mixing the two is the standard error, and the article separates them because the count depends on it.
+**What the constraints are not.** They are not the de Donder condition. The de Donder condition $\partial_\lambda\bar h_{\lambda\mu}=0$ is a *gauge choice*, used above to shorten the variation; the constraints are the equations' own content and hold in every gauge. Mixing the two is the standard error, and the article separates them because the count depends on it.
 
 ## The Structural Consequence: The Count Needs Both, and the Algebra Sees Only One
 
@@ -114,7 +114,7 @@ a condition on the initial data at every time. That is Gauss's law's counterpart
 The linearised gravitational field's action is the second variation of the Einstein–Hilbert action, a quadratic form with two derivatives, given above in both the metric and the trace-reversed variables. Its variation gives the linearised Einstein equation and the Bianchi identity; its time-time component is a constraint; its gauge orbit is the linearised diffeomorphism; and the count is ten minus four minus four, which is two. The biquaternionic writing is exact on the frame perturbation and blind on a single element, which is the parent's structural finding read from the action side. The non-linear completion and the quantisation are both absent.
 
 $$
-S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\,\partial_\lambda\bar h_{\mu\nu}\,\partial^{\lambda}\bar h^{\mu\nu}-\tfrac14\,\partial_\lambda\bar h\,\partial^{\lambda}\bar h\Bigr\},
+S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\,\partial_\lambda\bar h_{\mu\nu}\,\partial_\lambda\bar h_{\mu\nu}-\tfrac14\,\partial_\lambda\bar h\,\partial_\lambda\bar h\Bigr\},
 \qquad
 \bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h,
 \qquad
@@ -125,9 +125,9 @@ $$
 
 | Symbol | Meaning |
 |---|---|
-| $\eta_{\mu\nu}$ | Background metric, mostly plus |
+| $\eta_{\mu\nu}$ | The interval's array, $\mathrm{diag}(-1,+1,+1,+1)$; an exception |
 | $h_{\mu\nu}$ | Metric perturbation, symmetric, small |
-| $h=\eta^{\mu\nu}h_{\mu\nu}$ | Trace |
+| $h=\sum_{\mu}\eta_{\mu\mu}h_{\mu\mu}$ | Trace |
 | $\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$ | Trace-reversed perturbation |
 | $\delta\tilde E_{\Phi,\mu}$ | Frame perturbation, the exact carrier |
 | $\zeta_\mu$ | Gauge parameter of the linearised diffeomorphism |

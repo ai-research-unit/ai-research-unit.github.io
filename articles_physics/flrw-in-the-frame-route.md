@@ -65,8 +65,7 @@ With the frame in hand, the kinematic quantities of a cosmology are ordinary com
 The comoving congruence is the time leg, $u=\tilde E_{\Phi,0}$, normalised so that $u\cdot u=-1$ when $N=1$. Its expansion is
 
 $$
-\theta=\nabla_{\mu}u^{\mu}
-=\frac{1}{\sqrt{|g|}}\,\partial_{\mu}\bigl(\sqrt{|g|}\,u^{\mu}\bigr)
+\theta=\sum_{\mu}(g^{-1})_{\mu\mu}\,\nabla_{\mu}u_{\mu}
 =\frac{1}{N a^{3}}\,\partial_{t}\bigl(N a^{3}\bigr),
 $$
 

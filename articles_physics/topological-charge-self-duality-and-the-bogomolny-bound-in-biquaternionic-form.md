@@ -16,9 +16,9 @@
 **The density.** For a gauge field with field strength $F_{\mu\nu}$,
 
 $$
-\varrho=\frac{1}{16\pi^2}\,\mathrm{Tr}\left(F_{\mu\nu}\tilde F^{\mu\nu}\right),
+\varrho=\frac{1}{16\pi^2}\,\mathrm{Tr}\left(F_{\mu\nu}\tilde F_{\mu\nu}\right),
 \qquad
-\tilde F^{\mu\nu}=\tfrac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma},
+\tilde F_{\mu\nu}=\tfrac12\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma},
 $$
 
 and the charge is its integral, $Q=\int d^4x\ \varrho$.
@@ -34,9 +34,9 @@ with $\Omega_{\mathrm{CS}}$ the Chern–Simons form. The identity is what makes 
 **The abelian case.** For an abelian field the density reduces to the divergence of a four-vector,
 
 $$
-\varrho=\partial_\mu J^{\mu}_{\mathrm{CS}},
+\varrho=\partial_\mu J_{\mathrm{CS},\mu},
 \qquad
-J^{\mu}_{\mathrm{CS}}=\tfrac14\epsilon^{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma},
+J_{\mathrm{CS},\mu}=\tfrac14\epsilon_{\mu\nu\rho\sigma}A_\nu F_{\rho\sigma},
 $$
 
 and $J_{\mathrm{CS}}$ is gauge dependent while $\varrho$ is not. The primitive is therefore a computational device, not an invariant, and this distinction matters when the question is whether the framework can write the density at all.
@@ -76,11 +76,11 @@ with equality exactly when $F=\pm\star F$. The self-dual configurations are ther
 | Symbol | Meaning |
 |---|---|
 | $F_{\mu\nu}$ | the field strength |
-| $\tilde F^{\mu\nu}$ | its dual |
+| $\tilde F_{\mu\nu}$ | its dual |
 | $\varrho$ | the topological density |
 | $Q$ | the topological charge, an integer |
 | $\Omega_{\mathrm{CS}}$ | the Chern–Simons form |
-| $J^{\mu}_{\mathrm{CS}}$ | the abelian Chern–Simons current |
+| $J_{\mathrm{CS},\mu}$ | the abelian Chern–Simons current |
 | $g$ | the gauge coupling |
 
 ## Further Reading

@@ -18,7 +18,7 @@ $$
 D_\mu\Phi=\Bigl(\partial_\mu+i\,g\,\tau^{a}W^{a}_\mu+i\,g_{\mathrm Y}Y_\varphi B_\mu\Bigr)\Phi ,
 $$
 
-with $\tau^{a}=\sigma^{a}/2$ the generators in the doublet, so that $T^{3}$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T^{3}+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The metric is mostly plus, the measure $\mathrm{d}^{4}x$, and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
+with $\tau^{a}=\sigma^{a}/2$ the generators in the doublet, so that $T^{3}$ has eigenvalues $\pm\tfrac12$ and the electric charge is $Q=T^{3}+Y$. The potential is $V(\Phi)=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}$ with $\mu^{2}>0$ and $\lambda>0$. The measure is $\mathrm{d}^{4}x$; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $(D_\mu\Phi)^{\dagger}D_\mu\Phi=\sum_\mu\varepsilon_\mu(D_\mu\Phi)^{\dagger}D_\mu\Phi$ carries the sign the mostly-minus literature carries; and the biquaternionic writing of the $U(1)$ connection is the Maxwell article's.
 
 **Two conventions, both settled by the corpus.** The hypercharge here is $Y$, not the reference tables' $Y_W=2Y$: the corpus writes $Q=T^{3}+Y$ with $Y_\varphi=+\tfrac12$, as [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) fixes it and as [Electroweak Symmetry Breaking](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) uses it. Only the product $g_{\mathrm Y}Y$ enters any display, so a reader who arrives with $Y_W$ must halve every hypercharge and change no physical statement. The sign of the coupling in $D_\mu$ is likewise the corpus's, $+ig$; the opposite choice, $-ig$, is the same theory with $g\mapsto-g$, and every mass below is quadratic in $g$ and unchanged.
 
@@ -29,7 +29,7 @@ with $\tau^{a}=\sigma^{a}/2$ the generators in the doublet, so that $T^{3}$ has 
 **The unbroken action, in four terms.**
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14 W^{a}_{\mu\nu}W^{a\,\mu\nu}-\tfrac14 B_{\mu\nu}B^{\mu\nu}+(D_\mu\Phi)^{\dagger}D^{\mu}\Phi-V(\Phi)+\mathcal{L}_{\mathrm{matter}}\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14 W^{a}_{\mu\nu}W^{a}_{\mu\nu}-\tfrac14 B_{\mu\nu}B_{\mu\nu}+(D_\mu\Phi)^{\dagger}D_{\mu}\Phi-V(\Phi)+\mathcal{L}_{\mathrm{matter}}\Bigr\},
 $$
 
 with $\mathcal{L}_{\mathrm{matter}}$ the fermion kinetic terms with their covariant derivatives and the Yukawa couplings, which this article names and does not expand.
@@ -41,7 +41,7 @@ with $\mathcal{L}_{\mathrm{matter}}$ the fermion kinetic terms with their covari
 **The broken phase, written in the unitary chart.** Choose the vacuum $\Phi=\frac{1}{\sqrt{2}}\binom{0}{v+h}$ with $h$ the physical scalar. Then the scalar's gradient term becomes
 
 $$
-(D_\mu\Phi)^{\dagger}D^{\mu}\Phi\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W^{1}_\mu)^{2}+(W^{2}_\mu)^{2}\bigr)+(gW^{3}_\mu-g_{\mathrm Y}B_\mu)^{2}\Bigr]+\frac{g^{2}v}{2}h\,W^{+}W^{-}+\cdots ,
+(D_\mu\Phi)^{\dagger}D_{\mu}\Phi\supset\frac{v^{2}}{8}\Bigl[g^{2}\bigl((W^{1}_\mu)^{2}+(W^{2}_\mu)^{2}\bigr)+(gW^{3}_\mu-g_{\mathrm Y}B_\mu)^{2}\Bigr]+\frac{g^{2}v}{2}h\,W^{+}W^{-}+\cdots ,
 $$
 
 which is a mass term for the combinations $W^{\pm}=(W^{1}\mp iW^{2})/\sqrt2$ and $Z=(gW^{3}-g_{\mathrm Y}B)/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, and none for $A=(g_{\mathrm Y}B+gW^{3})/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$. The masses are $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ and $m_A=0$.
@@ -53,15 +53,15 @@ which is a mass term for the combinations $W^{\pm}=(W^{1}\mp iW^{2})/\sqrt2$ and
 **Three variations and the constraint each produces.** Varying $W^{a}_\mu$ and $B_\mu$ gives the Yang–Mills and Maxwell equations with the currents of the doublet and the fermions as sources,
 
 $$
-D_\mu W^{a\,\mu\nu}=J^{a\,\nu},
+D_\mu W^{a}_{\mu\nu}=J^{a}_{\nu},
 \qquad
-\partial_\mu B^{\mu\nu}=J^{Y\,\nu},
+\partial_\mu B_{\mu\nu}=J^{Y}_{\nu},
 $$
 
 with the covariant divergence on the left because the field strength is non-Abelian. Varying $\Phi^{\dagger}$ gives the covariant Klein–Gordon equation with the potential's derivative,
 
 $$
-D_\mu D^{\mu}\Phi=-\frac{\partial V}{\partial\Phi^{\dagger}} ,
+D_\mu D_{\mu}\Phi=-\frac{\partial V}{\partial\Phi^{\dagger}} ,
 $$
 
 and varying the fermions gives their covariant Dirac equations.
@@ -86,7 +86,7 @@ and varying the fermions gives their covariant Dirac equations.
 
 **The claim.** $m_W=gv/2$ and $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}\,v/2$ are not free parameters of the broken action. They are the coefficients that the scalar's gradient term produces when the doublet is expanded about its minimum, and each is a product of one coupling and one number.
 
-**The hand check.** Expand $\Phi=\frac{1}{\sqrt2}\binom{0}{v}$ in the gradient term. The term is $(D_\mu\Phi)^{\dagger}D^{\mu}\Phi$, with the $1/\sqrt2$ already inside $\Phi$; the $W$ parts give $\frac{g^{2}v^{2}}{8}[(W^{1})^{2}+(W^{2})^{2}]$, which is $\frac12 m_W^{2}(W^{1}W^{1}+W^{2}W^{2})$ with $m_W=gv/2$; the neutral part gives $\frac{v^{2}}{8}(gW^{3}-g_{\mathrm Y}B)^{2}=\frac12 m_Z^{2}Z^{2}$ with $m_Z^{2}=(g^{2}+g_{\mathrm Y}^{2})v^{2}/4$. The massless combination is orthogonal to $Z$ and reads $A=(g_{\mathrm Y}B+gW^{3})/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, the photon.
+**The hand check.** Expand $\Phi=\frac{1}{\sqrt2}\binom{0}{v}$ in the gradient term. The term is $(D_\mu\Phi)^{\dagger}D_{\mu}\Phi$, with the $1/\sqrt2$ already inside $\Phi$; the $W$ parts give $\frac{g^{2}v^{2}}{8}[(W^{1})^{2}+(W^{2})^{2}]$, which is $\frac12 m_W^{2}(W^{1}W^{1}+W^{2}W^{2})$ with $m_W=gv/2$; the neutral part gives $\frac{v^{2}}{8}(gW^{3}-g_{\mathrm Y}B)^{2}=\frac12 m_Z^{2}Z^{2}$ with $m_Z^{2}=(g^{2}+g_{\mathrm Y}^{2})v^{2}/4$. The massless combination is orthogonal to $Z$ and reads $A=(g_{\mathrm Y}B+gW^{3})/\sqrt{g^{2}+g_{\mathrm Y}^{2}}$, the photon.
 
 **What follows without a further assumption.** The ratio $m_W/m_Z=\cos\theta_W$ with $\tan\theta_W=g_{\mathrm Y}/g$; the photon's masslessness, because $A$ is the direction the doublet does not see; and the $W$'s and $Z$'s coupling to the scalar, $\frac{g^{2}v}{2}hW^{+}W^{-}=2M_W^{2}hW^{+}W^{-}/v$, which is the same $v$ and therefore the same $g$.
 
@@ -123,7 +123,7 @@ is. Its current is the electromagnetic one, and the photon is its gauge field.
 The electroweak Lagrangian is the $SU(2)\times U(1)$ gauge action with one complex doublet and its potential. Its variation gives the Yang–Mills equations with the doublet's currents, the covariant scalar equation and four Gauss constraints. At the potential's minimum the doublet's gradient term gives $m_W=gv/2$, $m_Z=\sqrt{g^{2}+g_{\mathrm Y}^{2}}v/2$ and $m_A=0$, and the count eight-plus-four becomes nine-plus-two-plus-one without loss. The surviving current is the electric one, $Q=T^{3}+Y$. Nothing is quantised, and the article says so.
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W^{a}_{\mu\nu}W^{a\,\mu\nu}-\tfrac14B_{\mu\nu}B^{\mu\nu}+(D_\mu\Phi)^{\dagger}D^{\mu}\Phi-V(\Phi)\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac14W^{a}_{\mu\nu}W^{a}_{\mu\nu}-\tfrac14B_{\mu\nu}B_{\mu\nu}+(D_\mu\Phi)^{\dagger}D_{\mu}\Phi-V(\Phi)\Bigr\},
 \qquad
 V=-\mu^{2}\Phi^{\dagger}\Phi+\lambda(\Phi^{\dagger}\Phi)^{2}.
 $$

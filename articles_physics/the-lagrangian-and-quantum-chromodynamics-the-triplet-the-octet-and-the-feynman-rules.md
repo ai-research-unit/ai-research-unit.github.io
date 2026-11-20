@@ -341,7 +341,7 @@ and it is **covariantly** conserved, $D_\mu j^{a\,\mu}=0$, not ordinarily conser
 **Energy, momentum and the trace anomaly.** The translation current is the symmetric stress tensor, and its trace is not zero:
 
 $$
-\theta^{\mu}_{\ \mu}=\frac{\beta(g_s)}{2g_s}\sum_{a,\mu,\nu}G^{a}_{\mu\nu}G^{a}_{\mu\nu} ,
+\sum_\mu\varepsilon_\mu\theta_{\mu\mu}=\frac{\beta(g_s)}{2g_s}\sum_{a,\mu,\nu}G^{a}_{\mu\nu}G^{a}_{\mu\nu} ,
 \qquad
 \beta(g_s)=-\frac{b_0}{16\pi^2}g_s^{3} ,
 $$
@@ -351,7 +351,7 @@ Classically the trace vanishes for massless quarks, because the action is then s
 **The axial current and its two terms.** The flavour-singlet axial current is not conserved either, and its divergence has a mass term and a topological term,
 
 $$
-\partial_\mu j^{\mu}_{5}=2i\sum_fm_f\bar\psi_f\gamma_5\psi_f+\frac{g_s^{2}N_f}{16\pi^{2}}\sum_{a,\mu,\nu}G^{a}_{\mu\nu}\widetilde G^{a}_{\mu\nu} ,
+\partial_\mu j_{5,\mu}=2i\sum_fm_f\bar\psi_f\gamma_5\psi_f+\frac{g_s^{2}N_f}{16\pi^{2}}\sum_{a,\mu,\nu}G^{a}_{\mu\nu}\widetilde G^{a}_{\mu\nu} ,
 $$
 
 so that a chiral symmetry the classical action has is broken by the measure. The second term is a total derivative in the field strength but not in the current, and that difference is what makes $\theta_{\mathrm{QCD}}$ a parameter of the theory rather than a surface term that can be discarded.
@@ -457,8 +457,8 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 | $C_A=3$ | Quadratic Casimir of the adjoint, $\sum_{c,e}f^{ace}f^{bce}=C_A\delta^{ab}$ |
 | $D_\mu$ | Covariant derivative, $\partial_\mu-ig_sG^a_\mu T^a$ |
 | $j^{a}_\mu$ | Colour current, $\sum_f\bar\psi_f\varepsilon_\mu\gamma_\mu T^a\psi_f$; covariantly conserved |
-| $j^{\mu}_{5}$ | Flavour-singlet axial current, with the mass and anomaly terms in its divergence |
-| $\theta^{\mu}_{\ \mu}$ | Trace of the stress tensor; equal to $\beta(g_s)G^aG^a/2g_s$ |
+| $j_{5,\mu}$ | Flavour-singlet axial current, with the mass and anomaly terms in its divergence |
+| $\sum_\mu\varepsilon_\mu\theta_{\mu\mu}$ | Trace of the stress tensor; equal to $\beta(g_s)G^aG^a/2g_s$ |
 | $\zeta$ | Gauge parameter; $\zeta=1$ is Feynman gauge |
 | $c^a$, $\bar c^a$ | Ghost and antighost, in the adjoint |
 | $\theta_{\mathrm{QCD}}$ | Coefficient of the $G\widetilde G$ term |

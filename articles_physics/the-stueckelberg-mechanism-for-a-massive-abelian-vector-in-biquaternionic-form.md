@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The object.** A mass term $-\tfrac12\mu^2 A_\mu A^\mu$ is not invariant under an abelian gauge transformation $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$. A massive vector is therefore either a gauge field whose symmetry has been broken by hand, or a gauge field whose mass is carried by an extra field. The **Stueckelberg mechanism** is the second route: a scalar is introduced that shifts under the same transformation, the combination
+**The object.** A mass term $-\tfrac12\mu^2 A_\mu A_\mu$ is not invariant under an abelian gauge transformation $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$. A massive vector is therefore either a gauge field whose symmetry has been broken by hand, or a gauge field whose mass is carried by an extra field. The **Stueckelberg mechanism** is the second route: a scalar is introduced that shifts under the same transformation, the combination
 
 $$
 A_{\mu,\mathrm u}=A_\mu-\partial_\mu\xi

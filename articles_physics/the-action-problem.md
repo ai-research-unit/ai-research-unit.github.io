@@ -35,7 +35,7 @@ So the selection problem is not "which algebraic combination" but "which derivat
 The functional the algebra suggests most strongly is the quadratic one,
 
 $$
-S_{\mathrm{YM}}[\vec\Gamma]=\int d^{4}x\,\sqrt{|\det G|}\;\mathrm{Sc}\bigl(\tilde F_{\mu\nu}\tilde F^{\mu\nu\,\natural}\bigr),
+S_{\mathrm{YM}}[\vec\Gamma]=\int d^{4}x\,\sqrt{|\det G|}\;\mathrm{Sc}\bigl(\tilde F_{\mu\nu}\tilde F_{\mu\nu}^{\natural}\bigr),
 \qquad
 \tilde F_{\mu\nu}=\partial_{\mu}\vec\Gamma_{\nu}-\partial_{\nu}\vec\Gamma_{\mu}+[\vec\Gamma_{\mu},\vec\Gamma_{\nu}],
 $$
