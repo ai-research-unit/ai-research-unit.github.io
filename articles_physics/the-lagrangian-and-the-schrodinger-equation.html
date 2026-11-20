@@ -86,16 +86,15 @@ $$</p>
 <p><strong>Nothing here is new in the physics.</strong> The action is the standard first-order action of a complex field, rewritten in the algebra. It predicts nothing the parent does not predict and solves nothing the parent does not solve. What it supplies is a compact statement of the equation, one derivation of the two currents, and a variational reading of the parent's two writings. The honest ledger is the subject of the sixth section.</p>
 <p><strong>The two settings are distinguished from the first line.</strong> The parent has a constant-element setting, $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t$ and $\vec h_\Psi$ fixed numbers, and an operator setting, $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V$. The action below is written in both, but every result about a solution is a result of the constant setting, and no result is transferred from one setting to the other.</p>
 <p>The formalism is that of <em>The Lagrangian and Hamiltonian Mechanics</em>, and the action principle is that of <em>The Lagrangian and the Non-Quantum Limit: The Action Principle</em>; this article applies the principle to the Schrödinger equation in its element form.</p>
-<p><strong>Declared omissions.</strong> The reality of the action is examined inside <em>The Two Writings from the Action</em> and inside the structural consequence, so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the depth already made with the parent is attempted, so slot 13 is omitted.</p>
 <h2 id="conventions">Conventions</h2>
-<p><strong>The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i\hbar\,c\,\partial/\partial r'_t=i\hbar\,\partial/\partial t'$ is exact and is not repeated.</p>
+<p><strong>The conventions are restated here so that every sign below is checkable from this page alone.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i\hbar\,c\,\partial/\partial r'_t=i\hbar\,\partial/\partial t'$ is exact and is not repeated.</p>
 <h2 id="the-action-in-element-form">The Action in Element Form</h2>
 <p>The action is</p>
 <p>$$
 S[\tilde\Xi,\tilde\Xi^{*}]=\int \mathrm{d}r'_t\;\mathrm{Sc}\Bigl[\frac{i\hbar\,c}{2}\bigl(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-(\partial_{r'_t}\tilde\Xi^{*})\tilde\Xi\bigr)-\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi\Bigr].
 $$</p>
 <p>The choice of variable is the parent's, and the constant multiplying the derivative is $i\hbar\,c$. Four properties must be checked, and each is a line.</p>
-<h3 id="the-kinetic-term-is-hermitian">The kinetic term is Hermitian</h3>
+<p><strong>The kinetic term is Hermitian.</strong></p>
 <p>Write the kinetic density as</p>
 <p>$$
 T=\frac{i\hbar\,c}{2}\bigl(\tilde\Xi^{*}\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde\Xi\bigr),
@@ -106,15 +105,15 @@ T^{*}=\frac{-i\hbar\,c}{2}\bigl((\partial\tilde\Xi)^{*}\tilde\Xi-\tilde\Xi^{*}\p
 =\frac{i\hbar\,c}{2}\bigl(\tilde\Xi^{*}\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde\Xi\bigr)=T,
 $$</p>
 <p>so $T$ is Hermitian. The scalar part of a Hermitian element is real, because $\mathrm{Sc}(X)^{*}=\mathrm{Sc}(X^{*})=\mathrm{Sc}(X)$ when $X^{*}=X$. Hence $\mathrm{Sc}(T)$ is real.</p>
-<h3 id="the-potential-term-is-hermitian">The potential term is Hermitian</h3>
+<p><strong>The potential term is Hermitian.</strong></p>
 <p>For $\tilde H_\Psi^{*}=\tilde H_\Psi$,</p>
 <p>$$
 \bigl(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi\bigr)^{*}=\tilde\Xi^{*}\tilde H_\Psi^{*}\tilde\Xi=\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi,
 $$</p>
 <p>so the potential density is Hermitian and its scalar part is real. The hypothesis is used here and nowhere else: a non-Hermitian $\tilde H_\Psi$ would make the potential term non-real, and the action would not be a real functional.</p>
-<h3 id="the-action-is-real">The action is real</h3>
+<p><strong>The action is real.</strong></p>
 <p>Both densities are Hermitian and the scalar part of a Hermitian element is real, so the integrand is a sum of two real numbers. The action is real.</p>
-<h3 id="the-pairing-is-the-hermitian-form">The pairing is the Hermitian form</h3>
+<p><strong>The pairing is the Hermitian form.</strong></p>
 <p>The bilinear in the action is the Hermitian form</p>
 <p>$$
 \langle X,Y\rangle=\mathrm{Sc}\bigl(X^{*}Y\bigr),
@@ -124,7 +123,7 @@ $$</p>
 \langle\tilde H_\Psi X,Y\rangle=\mathrm{Sc}\bigl((\tilde H_\Psi X)^{*}Y\bigr)=\mathrm{Sc}\bigl(X^{*}\tilde H_\Psi^{*}Y\bigr)=\mathrm{Sc}\bigl(X^{*}\tilde H_\Psi Y\bigr)=\langle X,\tilde H_\Psi Y\rangle,
 $$</p>
 <p>and an action that reproduces the equation must be built on the form for which the symbol is Hermitian. The companion article uses the same pairing throughout, and the two articles' currents are therefore comparable term by term.</p>
-<h3 id="the-variation">The variation</h3>
+<p><strong>The variation.</strong></p>
 <p>Treat $\tilde\Xi$ and $\tilde\Xi^{*}$ as independent over $\mathbb{C}$, which is the standard device for a first-order action. Vary $\tilde\Xi^{*}$ and hold $\tilde\Xi$ fixed. The variation of the kinetic term is</p>
 <p>$$
 \frac{i\hbar\,c}{2}\int \mathrm{d}r'_t\;\mathrm{Sc}\bigl(\delta\tilde\Xi^{*}\partial\tilde\Xi-(\partial\delta\tilde\Xi^{*})\tilde\Xi\bigr)
@@ -178,6 +177,11 @@ $$</p>
 <p>and $i\vec e_y$ is Hermitian, so the generator $-\tilde Z\tilde H_\Psi/(\hbar\,c)$ is Hermitian and not anti-Hermitian; the minus sign flips nothing, because $-1$ is real and conjugation is antilinear. The corresponding flow is not norm-preserving, and the parent's explicit computation gives the failure at $r'_t=\pi\hbar\,c/2$, where the accumulated factor is $\exp(-i\pi\vec e_y)=\cosh\pi\,e_t-i\sinh\pi\,\vec e_y$, which is not $e_t$. Here the root is anti-Hermitian and the action is still real; what fails is the flow.</p>
 <p><strong>Unitarity is the anti-Hermiticity read back.</strong> The flow of the equation is $\tilde Q(r'_t)=\exp\bigl(-i\tilde H_\Psi r'_t/(\hbar\,c)\bigr)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$, and its $*$-unitarity is exactly the anti-Hermiticity of $-i\tilde H_\Psi/(\hbar\,c)$. That anti-Hermiticity is the centrality computation above, so the conservation of the norm is the variational principle's reality statement seen from the flow side. The two are one fact about $i$.</p>
 <p>The angle is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar c)$, the scalar part of the generator times the interval over $\hbar$; the vector part of the generator contributes the separate rotor angle $\theta=|\vec h_\Psi|\,r'_t/(\hbar c)$. The generator is anti-Hermitian, not Hermitian, and the anti-Hermiticity is the whole content: a purely imaginary scalar part makes the phase a real angle, and a real vector part makes the rotor a unit rotor.</p>
+<h2 id="the-constraints-the-action-imposes-unitarity-is-a-condition-on-the-coefficients">The Constraints the Action Imposes: Unitarity Is a Condition on the Coefficients</h2>
+<p><strong>The density carries one time derivative, so the momentum is the field's own adjoint.</strong> The kinetic term is $\tfrac{i\hbar c}{2}\bigl(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-(\partial_{r'_t}\tilde\Xi^{*})\tilde\Xi\bigr)$, and differentiating with respect to the rate gives $\pi=i\hbar c\,\tilde\Xi^{\natural}$. The map cannot be inverted for a rate, so the action imposes a primary constraint, and the bracket between the constraint and its partner does not vanish.</p>
+<p><strong>What the action imposes is a condition on the display and not on the data.</strong> Reality forces the $i$ onto the derivative, and the generator's anti-Hermiticity follows from that placement rather than from a restriction on the states. A reader who takes unitarity as a condition on admissible configurations has the implication backwards: <strong>the coefficients are constrained and the solution space is not</strong>.</p>
+<p><strong>The counterexample is the test of that reading.</strong> Replacing $i$ by a non-central root of $-e_t$ produces a flow that is not unitary on the same states, which shows the constraint falls on the coefficient. That is why the structural consequence can call reality the weakest of its four requirements: it constrains the writing of the density and leaves the Hamiltonian's spectrum alone.</p>
+<p><strong>What the section does not claim.</strong> It does not build the Dirac bracket, and it does not claim the first-order pair is the whole of the canonical structure. The claim is narrower: one primary constraint per part, second class, arising from the first order and from no gauge symmetry.</p>
 <h2 id="the-structural-consequence-reality-is-the-weakest-of-four">The Structural Consequence: Reality Is the Weakest of Four</h2>
 <p><strong>The four requirements form a ladder, and only the strongest gives the theory.</strong> The section above proves the four statements separately; this one states what their order is, because the order is the article's result.</p>
 <div class="table-scroll"><table>

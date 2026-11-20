@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Lagrangian and the Coupled Dirac Equation in Polar Variables — Biquaternion Universe</title>
-  <meta name="description" content="Declared omissions. The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation…">
+  <meta name="description" content="This article substitutes the complete polar decomposition into the coupled action of The Lagrangian and the Coupled Dirac Equation and reads what the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -70,7 +70,6 @@
     <main class="article">
       <div class="article-body">
         <h1 id="the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables"><strong>The Lagrangian and the Coupled Dirac Equation in Polar Variables</strong></h1>
-<p><strong>Declared omissions.</strong> The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.</p>
 <h2 id="introduction">Introduction</h2>
 <p>This article substitutes the complete polar decomposition into the coupled action of <em>The Lagrangian and the Coupled Dirac Equation</em> and reads what the substitution gives. It is the fourth member of the coupled quartet: the element equation, the polar equation, the element action, and this one.</p>
 <p><strong>The substitution.</strong> The word</p>
@@ -125,6 +124,10 @@ $$</p>
 $$</p>
 <p>with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. The third term is the mass's, written in the chart's letters; the second is the potential's; the first is the only term with a velocity.</p>
 <p><strong>One caution about the first term's coefficient.</strong> The coefficient $\hbar c\rho_{\mathrm{num}}$ contains the rapidity, so the action is <em>not</em> linear in the velocities in the naive sense: $\rho_{\mathrm{num}}$ depends on $\theta_{\mathrm{rpd}}$, and $\theta_{\mathrm{rpd}}$ is one of the parameters whose velocity does not appear. The action is linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$ with a coefficient that depends on a coordinate. That is the standard shape of a first-order constrained system and it is the reason the Dirac analysis is needed rather than a Legendre transform.</p>
+<p><strong>The pairing. Inherited, and the connection is what the pairing now sees.</strong> The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$. Its two chiral densities carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$, and the sum is real because the two terms are conjugates. The chart writes the field as a density, a rapidity and a rotor and the connection as four components; all of the chart's variables are real or unit-modulus, so the conjugation that made the sum real in the element form is a fact about the chart's parametrisation and needs no rechecking.</p>
+<p><strong>The type of the coefficient. The mass is real, and the connection's four brackets are the price of the covariant derivative.</strong> Beyond $k_m$, the only coefficients the action carries are the four components of the connection, and the requirement that both variations be real is a requirement on their types. It is P1's question and P1's answer.</p>
+<p><strong>The selection rule. Declared.</strong> The coupling object is a connection and not a potential, so the action has no admissible sector to choose between. The selection rule belongs to the free scalar, where a potential is a free element.</p>
+<p><strong>What reality does not buy. Reality of the pair does not make the two chiral equations compatible.</strong> The density is real term by term and the two variations are real; whether the two resulting equations can hold at once is a different question, and the article answers it in the structural consequence.</p>
 <h2 id="the-variation-the-eulerlagrange-equations">The Variation: The Euler–Lagrange Equations</h2>
 <p><strong>The variation is over the eight parameters.</strong> In the chart the variables are $\varrho$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, the two angles of the boost axis $\hat u_{\mathrm b}$, and the three angles of the rotor $\tilde u_{\mathrm r}$. Varying the chart's action with respect to them, and using that the word is a bijection on the invertibles, returns exactly the coupled pair of the element article:</p>
 <p>$$
@@ -134,37 +137,8 @@ $$</p>
 $$</p>
 <p>one equation per part and per material slot. The variation of the connection is separate and is the source equation, as in the element article.</p>
 <p><strong>Why the bijection is the whole argument.</strong> A variation $\delta\tilde\Xi$ corresponds to one and only one variation of the eight parameters, because the word is a diffeomorphism from the parameter domain onto the invertible elements. So the chart's Euler–Lagrange system is the element system in other coordinates, and the change of variables adds no equation and removes none. That is the reason the polar article can claim the coupled pair without re-deriving it, and it is the first instance of the rule the whole reading obeys.</p>
-<p><strong>What the variation does not do.</strong> It does not produce the constraint algebra. The eight equations determine some velocities and not others, and which is which is the subject of the next section; the variation alone cannot answer it, because the Lagrangian is linear in four of the eight rates.</p>
-<h2 id="the-constraints-the-action-imposes-the-structure">The Constraints the Action Imposes: The Structure</h2>
-<p>The action is first order in eight parameters, one of which has its velocity in the action. That single fact fixes the whole constraint structure.</p>
-<p><strong>The conjugate momenta.</strong> With $\mathcal{L}$ the integrand,</p>
-<p>$$
-\pi_{\varrho}=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}\varrho)}=0,
-\qquad
-\pi_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho_{\mathrm{num}},
-\qquad
-\pi_{\theta_{\mathrm{rpd}}}=\pi_{\theta_{\mathrm{axr}}}=\pi_{u_{\mathrm b}}=\pi_{u_{\mathrm r}}=0 .
-$$</p>
-<p><strong>Seven of the eight momenta either vanish or are fixed functions of the coordinates.</strong> Only $\pi_{\theta_{\mathrm{pha}}}$ is a genuine momentum, and even it is not independent: it is $-\hbar c\rho_{\mathrm{num}}$, a function of $\varrho$ and $\theta_{\mathrm{rpd}}$.</p>
-<p><strong>The count.</strong> Eight parameters, eight Euler–Lagrange equations, of which two carry a time derivative — the equation of $\varrho$ and the equation of $\theta_{\mathrm{pha}}$ — and six do not. The six without a time derivative are <strong>constraints</strong>, and their number is the number of parameters whose velocity the action does not contain.</p>
-<p><strong>The constraint equations.</strong> Varying the six parameters whose velocities are absent gives</p>
-<p>$$
-\frac{\partial}{\partial p}\bigl(\rho_{\mathrm{num}} V\bigr)=0
-\qquad\text{for}\qquad p\in\{\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r}\},
-$$</p>
-<p>which is six equations on six parameters because the two axes are unit vectors and are counted with their own conditions. The content is that the potential's frame-dependence must be stationary: the frame sits where the potential is extremal in the frame variables.</p>
-<p><strong>The two evolution equations.</strong> Varying $\varrho$ and $\theta_{\mathrm{pha}}$ gives</p>
-<p>$$
--\hbar c\cosh\theta_{\mathrm{rpd}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-V-mc^{2}=0,
-\qquad
-\partial_{r'_t}\bigl(\varrho^{2}\cosh\theta_{\mathrm{rpd}}\bigr)=0 .
-$$</p>
-<p>The second is the continuity equation with the density $\rho_{\mathrm{num}}$; the first is the guidance equation with the potential and the mass added. In the chart's letters these are the Madelung pair with a boost factor, and the boost factor is the density's.</p>
-<p><strong>No Lagrange multipliers for the unit conditions.</strong> This is the point on which the polar parameterisation earns its place. The boost $\tilde U_{\Psi,\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ are invertible <em>by construction</em>, because they are exponentials of a rapidity times an axis and of an angle times an axis; the axes are unit vectors and the parameterisation respects that. No condition $\tilde U\tilde U^{\natural}=e_t$ has to be imposed, so no multiplier is needed for it. <strong>The tensor formulations of the spin-half fluid need three multipliers for exactly these conditions</strong>, and the article's contribution is to record that the exact parameterisation removes them.</p>
-<p><strong>No multipliers is not no constraints.</strong> The six equations above are constraints, and they are Euler–Lagrange equations of the same functional; they are not multipliers and they are not optional. A reader who takes "no multipliers" for "no constraints" has the wrong picture, and the distinction is the article's main technical point.</p>
-<p><strong>What kind of constraints.</strong> They are primary: they follow from the momenta's vanishing, not from the equations of motion. Whether they are first class or second class — whether they generate gauge transformations or restrict the initial data — has not been determined. That determination requires the Poisson brackets of the constraints among themselves, and the brackets are the ones the four-bracket structure suggests and not the ones a canonical analysis of the parameters would give. The article does not carry the computation out, and §<em>Open Questions</em> says so.</p>
-<h2 id="the-parameter-basis-and-the-four-brackets-the-bracket-expansion">The Parameter Basis and the Four Brackets: The Bracket Expansion</h2>
-<p>The four brackets are the decomposition of the logarithmic derivative, and the coupling acts on two of them. That statement is exact, it does not depend on the conjecture, and it is the article's clearest structural result.</p>
+<p><strong>What the variation does not do.</strong> It does not produce the constraint algebra. The eight equations determine some velocities and not others, and which is which is the subject of §<em>The Constraints the Action Imposes</em>; the variation alone cannot answer it, because the Lagrangian is linear in four of the eight rates.</p>
+<p><strong>The parameter basis and the four brackets.</strong> The four brackets are the decomposition of the logarithmic derivative, and the coupling acts on two of them. That statement is exact, it does not depend on the conjecture, and it is the article's clearest structural result.</p>
 <p><strong>The four brackets, with the coupling.</strong> For each component,</p>
 <p>$$
 \tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
@@ -215,6 +189,34 @@ $$</p>
 <p><strong>Two of four, and the two are the momentum and the velocity.</strong> The potential joins the phase bracket, where the momentum is read, and the boost bracket, where the velocity is read. It cannot join the scale bracket, where the density is read, and it cannot join the rotor bracket, where the spin is read. That is the polar statement of what a central connection can and cannot do, and it is a statement of algebraic type: a central scalar times a field cannot produce a real vector part.</p>
 <p><strong>Why the two-bracket structure is the one to read the coupling from.</strong> It says in advance which physical quantities the potential can shift and which it must leave alone. The density is untouched because the potential is central; the spin direction is untouched for the same reason. The momentum and the velocity are shifted because the potential's two slots have exactly the two types those brackets carry. No computation of the potential's effect on the field is needed beyond the type table.</p>
 <p><strong>The limit of the statement.</strong> The type table says where the potential acts; it does not say what the resulting motion is. For a constant potential the motion is a gauge phase and the shift is unobservable; for a non-constant one the shift is the Lorentz force at the level of the momentum, and the article does not derive the force from the brackets. That derivation belongs to the element companion's forces and to <em>Relativistic Mechanics from the Dirac Wave</em>.</p>
+<h2 id="the-constraints-the-action-imposes-the-structure">The Constraints the Action Imposes: The Structure</h2>
+<p>The action is first order in eight parameters, one of which has its velocity in the action. That single fact fixes the whole constraint structure.</p>
+<p><strong>The conjugate momenta.</strong> With $\mathcal{L}$ the integrand,</p>
+<p>$$
+\pi_{\varrho}=\frac{\partial\mathcal{L}}{\partial(\partial_{r'_t}\varrho)}=0,
+\qquad
+\pi_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho_{\mathrm{num}},
+\qquad
+\pi_{\theta_{\mathrm{rpd}}}=\pi_{\theta_{\mathrm{axr}}}=\pi_{u_{\mathrm b}}=\pi_{u_{\mathrm r}}=0 .
+$$</p>
+<p><strong>Seven of the eight momenta either vanish or are fixed functions of the coordinates.</strong> Only $\pi_{\theta_{\mathrm{pha}}}$ is a genuine momentum, and even it is not independent: it is $-\hbar c\rho_{\mathrm{num}}$, a function of $\varrho$ and $\theta_{\mathrm{rpd}}$.</p>
+<p><strong>The count.</strong> Eight parameters, eight Euler–Lagrange equations, of which two carry a time derivative — the equation of $\varrho$ and the equation of $\theta_{\mathrm{pha}}$ — and six do not. The six without a time derivative are <strong>constraints</strong>, and their number is the number of parameters whose velocity the action does not contain.</p>
+<p><strong>The constraint equations.</strong> Varying the six parameters whose velocities are absent gives</p>
+<p>$$
+\frac{\partial}{\partial p}\bigl(\rho_{\mathrm{num}} V\bigr)=0
+\qquad\text{for}\qquad p\in\{\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r}\},
+$$</p>
+<p>which is six equations on six parameters because the two axes are unit vectors and are counted with their own conditions. The content is that the potential's frame-dependence must be stationary: the frame sits where the potential is extremal in the frame variables.</p>
+<p><strong>The two evolution equations.</strong> Varying $\varrho$ and $\theta_{\mathrm{pha}}$ gives</p>
+<p>$$
+-\hbar c\cosh\theta_{\mathrm{rpd}}\,\partial_{r'_t}\theta_{\mathrm{pha}}-V-mc^{2}=0,
+\qquad
+\partial_{r'_t}\bigl(\varrho^{2}\cosh\theta_{\mathrm{rpd}}\bigr)=0 .
+$$</p>
+<p>The second is the continuity equation with the density $\rho_{\mathrm{num}}$; the first is the guidance equation with the potential and the mass added. In the chart's letters these are the Madelung pair with a boost factor, and the boost factor is the density's.</p>
+<p><strong>No Lagrange multipliers for the unit conditions.</strong> This is the point on which the polar parameterisation earns its place. The boost $\tilde U_{\Psi,\mathrm b}$ and the rotor $\tilde u_{\mathrm r}$ are invertible <em>by construction</em>, because they are exponentials of a rapidity times an axis and of an angle times an axis; the axes are unit vectors and the parameterisation respects that. No condition $\tilde U\tilde U^{\natural}=e_t$ has to be imposed, so no multiplier is needed for it. <strong>The tensor formulations of the spin-half fluid need three multipliers for exactly these conditions</strong>, and the article's contribution is to record that the exact parameterisation removes them.</p>
+<p><strong>No multipliers is not no constraints.</strong> The six equations above are constraints, and they are Euler–Lagrange equations of the same functional; they are not multipliers and they are not optional. A reader who takes "no multipliers" for "no constraints" has the wrong picture, and the distinction is the article's main technical point.</p>
+<p><strong>What kind of constraints.</strong> They are primary: they follow from the momenta's vanishing, not from the equations of motion. Whether they are first class or second class — whether they generate gauge transformations or restrict the initial data — has not been determined. That determination requires the Poisson brackets of the constraints among themselves, and the brackets are the ones the four-bracket structure suggests and not the ones a canonical analysis of the parameters would give. The article does not carry the computation out, and §<em>Open Questions</em> says so.</p>
 <h2 id="the-structural-consequence-the-brackets-count-the-constraints">The Structural Consequence: The Brackets Count the Constraints</h2>
 <p><strong>The claim.</strong> The partition of the eight parameters into two evolution equations and six constraints is the partition of the four brackets into the field's two and the frame's two. The count is read off the type table, not off a Hessian, and not off a canonical analysis of the parameters.</p>
 <p><strong>The partition.</strong> The scale and phase brackets are the field's: their parameters are $\varrho$ and $\theta_{\mathrm{pha}}$, they are the two whose equations carry a time derivative, and they give the continuity equation and the guidance equation. The boost and rotor brackets are the frame's: their parameters are the rapidity $\theta_{\mathrm{rpd}}$, the axis angle $\theta_{\mathrm{axr}}$ and the two unit vectors $\vec u_{\mathrm b}$, $\vec u_{\mathrm r}$, six in all, and they are the six whose velocities the action does not contain:</p>

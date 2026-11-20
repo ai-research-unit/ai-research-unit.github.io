@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Lagrangian and the Spin-One Fluid — Biquaternion Universe</title>
-  <meta name="description" content="Declared omissions. The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no…">
+  <meta name="description" content="At this rung the fluid&#x27;s variables are the field&#x27;s own, and the action&#x27;s mass term does double work. The Proca field is: a magnitude and a direction…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -70,7 +70,6 @@
     <main class="article">
       <div class="article-body">
         <h1 id="the-lagrangian-and-the-spin-one-fluid"><strong>The Lagrangian and the Spin-One Fluid</strong></h1>
-<p><strong>Declared omissions.</strong> The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.</p>
 <h2 id="introduction">Introduction</h2>
 <p><strong>At this rung the fluid's variables are the field's own, and the action's mass term does double work.</strong> The Proca field is $A_\mu=r\,u_\mu$: a magnitude and a direction, which are a density and a velocity. So the fluid is not a reading of a polar decomposition imposed from outside — it is the field's own parameterisation, and the action written in it is the Proca action and nothing else.</p>
 <p><strong>Three results.</strong></p>
@@ -79,7 +78,7 @@
 <p><em>Third, this is the only action in the layer with no $\hbar$ in its derivative term, and correspondingly the only fluid in the block whose acceleration law has no quantum force.</em> The polar decomposition of a vector field produces no second derivative of the magnitude, and the action says why: $A=ru$ has one derivative and the Lagrangian is quadratic in it.</p>
 <p><strong>Position in the block.</strong> This is the variational companion of <a href="the-spin-one-fluid.html">The Spin-One Fluid</a> and the seventh of the eight articles of this layer. It is the only one in which a Lagrange multiplier is genuinely needed, and the only one whose fluid is not a quantum fluid.</p>
 <h2 id="conventions">Conventions</h2>
-<p><strong>The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.</strong> $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. <strong>No index is raised</strong>: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.</p>
+<p><strong>The conventions are restated here so that every sign below is checkable from this page alone.</strong> $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. <strong>No index is raised</strong>: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.</p>
 <h2 id="the-action-in-the-fields-own-variables">The Action in the Field's Own Variables</h2>
 <p><strong>One substitution, and the field strength splits into a magnitude's part and a direction's part.</strong> Since $A=ru$,</p>
 <p>$$
@@ -104,6 +103,11 @@ $$</p>
 $$</p>
 <p>and the multiplier enters the direction's equation as $\lambda u_\mu$, which is a force along the flow. <strong>It plays the part a pressure plays in an incompressible fluid</strong>, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.</p>
 <p><strong>The contrast with the spin article is worth recording.</strong> There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. <strong>The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint</strong>: the word's frame is a group element, and a direction is a coset.</p>
+<h2 id="the-constraints-the-action-imposes-the-unit-condition-is-the-one-constraint">The Constraints the Action Imposes: The Unit Condition Is the One Constraint</h2>
+<p><strong>The word's parameterisation postpones the unit condition rather than removing it.</strong> With $A=ru$ the field is split into a magnitude and a direction, and the direction is described by parameters while the condition $u\cdot u=1$ remains a relation among them that the action does not supply. A multiplier is therefore needed, and this is the one place in the layer where it genuinely is.</p>
+<p><strong>The constraint is first class and it is the only one.</strong> The multiplier's equation enforces the condition, the condition is preserved by the flow because the density is invariant under the reparameterisation of the direction, and no second condition follows. The count of degrees is the naive count minus the constraint's, which is why three polarisations survive where a count of the components would give four.</p>
+<p><strong>The mass term adds no constraint.</strong> It is a function of the magnitude and the frame and carries no derivative of an independent variable, so it changes the equations and leaves the count alone. <strong>That is what the structural consequence means when it says the mass term does two things</strong>: it fixes the direction's weight in the action and it does not restrict the data.</p>
+<p><strong>The contrast with the spin article is why the section exists.</strong> There the parameterisation removes the need for a multiplier and the constraint is carried by the chart itself. Here it does not, and the difference is a fact about which chart is used rather than about the field.</p>
 <h2 id="the-structural-consequence-the-mass-term-does-two-things">The Structural Consequence: The Mass Term Does Two Things</h2>
 <p><strong>The Euler–Lagrange equation is the field equation, and its divergence is an identity on one side.</strong></p>
 <p>$$
