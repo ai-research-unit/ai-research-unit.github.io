@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock — Biquaternion Universe</title>
+  <meta name="description" content="The framework&#x27;s compact gauge group is, and the electroweak group of the Standard Model is. The two have the same Lie algebra and the same dimension…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock"><strong>The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The framework's compact gauge group is $\mathrm{U}(2)$, and the electroweak group of the Standard Model is $SU(2)_L\times \mathrm{U}(1)_Y$. The two have the same Lie algebra and the same dimension count, and they are different groups: the framework's is a $\mathbb{Z}_2$ quotient, and the model's is a product. This article states that difference, computes what it forbids, and checks the observed hypercharge table against it.</p>
+<p><strong>The finding, first.</strong> The framework shares the <strong>algebra</strong> of the electroweak pair and not its <strong>group</strong>. The pair's algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of real dimension $3+1=4$, and it is the anti-Hermitian sector of $\mathbb{B}$; that is the match, and it is exact. The framework's compact group is the $*$-unitary slice $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong\mathrm{U}(2)=(SU(2)\times\mathrm{U}(1))/\mathbb{Z}_2$, a central product; the Standard Model's is the product $SU(2)\times\mathrm{U}(1)$ itself, without the identification. The quotient is smaller, and the difference is a parity lock on the representation labels: a multiplet of spin $j$ carries an integer central charge $q$ with $q\equiv 2j\pmod 2$. The lock follows from the algebra's exponential, it is not a convention, and the observed hypercharge table satisfies it, with the least admissible step $q=6Y$. The quotient therefore does not exclude the observed multiplets. What remains outside is everything else: the chiral action, the assignment itself, the relation between the two couplings, and the scalar.</p>
+<p><strong>What this article is, in the family.</strong> It is the electroweak part of the Standard Model audit, given its own place. The audit as a whole — the three gauge factors, the matter content, the parameter count, the interpretive criteria, the ledger — is <em>The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors</em>, which sits in <em>The Standard Model as a Whole</em> because it is about the whole model. The sector's own boundary — the chiral wall, hypercharge, the scalar sector, gauge fixing — is <em>Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall</em>. Both are cited and neither is restated. The object of this article is narrower and it is one object: <strong>the pair</strong>, and the exact sense in which the framework has it.</p>
+<p><strong>Why the pair is worth an article.</strong> Because the error it guards against is the most natural one in the corpus. "The algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, the electroweak algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, therefore the framework contains the electroweak group" is a sentence that writes itself, and it is false at the group level: the framework's group is the quotient, the model's is the product, and the quotient quantises and locks the abelian charge in a way the product does not. The dimension count cannot see the difference. A parity check can.</p>
+<h2 id="the-algebra-is-the-pairs-algebra">The Algebra Is the Pair's Algebra</h2>
+<p><strong>The decomposition, in one display.</strong> The material sector is a direct sum of Lie algebras,</p>
+<p>$$
+\boxed{\;\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2),\qquad
+[e_a,e_b]=2\,\varepsilon_{abc}e_c,\quad T_a=\tfrac12e_a,\quad [T_a,T_b]=\varepsilon_{abc}T_c\;}
+$$</p>
+<p>of real dimension $1+3=4$. That is $\mathfrak{u}(1)\oplus\mathfrak{su}(2)=\mathfrak{u}(2)$, which is the algebra of the electroweak pair and the algebra of $\mathrm{U}(2)$. <em>Non-Abelian Gauge Fields in Biquaternionic Form</em> builds the full machinery on the compact factor: the adjoint connection law, the curvature with its commutator term, the Bianchi identity, and the gauge-invariant Yang–Mills density.</p>
+<p><strong>The match is exact and it stops at the algebra.</strong> Both factors are ideals, so each carries its own coupling and its own kinetic term. That is what the pair needs: two coupling constants, $\kappa$ on the compact factor and $ϙ$ on the centre, each free and neither fixed by the algebra. A direct sum of ideals with two independent coefficients is a two-parameter gauge theory, and this is the framework's.</p>
+<p><strong>What the algebra does not carry is the representation.</strong> The abelian factor acts by left multiplication by a central element, hence as a scalar on every element, hence with one charge for all components; the compact factor acts by left multiplication by a unit quaternion, hence identically on the two values of the chirality. Both are vector-like. <em>Representation Is a Function of Spin</em> states the general form of this: the gauge group is the spin group, so the representation is read from the carrier and not chosen, and the carrier's three rows match the model in exactly one. <em>Chiral Fermions in the Biquaternion Framework</em> states the consequence for the two letters: a chiral action needs $ϙ_L\ne ϙ_R$ and a non-central charge, so it is not supplied by the algebra's own gauge principle.</p>
+<h2 id="the-group-is-not-the-pairs-group">The Group Is Not the Pair's Group</h2>
+<p><strong>The group, not the algebra.</strong> The intrinsic group is the $*$-unitary slice,</p>
+<p>$$
+U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong\mathrm{U}(2)=\frac{SU(2)\times\mathrm{U}(1)}{\mathbb{Z}_2},
+\qquad
+\mathbb{Z}_2=\{(\tilde e_t,1),\,(-\tilde e_t,-1)\},
+$$</p>
+<p>so the pair $(\tilde U,e^{i\theta})$ and its negative name the same group element. The Standard Model's gauge group has no such identification: $SU(2)_L\times\mathrm{U}(1)_Y$ is the product, and $(-1,-1)$ is a distinct element there. The framework's group is a <strong>quotient</strong> of the pair's group, not the pair's group, and the electroweak theory of the Standard Model is a product theory. This is the statement the dimension count hides.</p>
+<p><strong>The lock the quotient imposes.</strong> The kernel of the exponential on the diagonal part is the parity-matched lattice</p>
+<p>$$
+L=\pi i m\,e_t+\pi n\,\vec U,\qquad m\equiv n\pmod 2,
+$$</p>
+<p>computed in <em>The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group</em>, where it is read as the statement that the two factors are not independent at the level of the exponent. Read on representations it is a selection rule. A multiplet of spin $j$ and central charge $q$ is a representation of $U$ only if it is trivial on $L$: on the half-turn $\pi\vec U$ it acts as $(-1)^{2j}$, on the half-phase $\pi i\,e_t$ as $(-1)^{q}$, so triviality on the odd-odd element requires</p>
+<p>$$
+\boxed{\;q\equiv 2j\pmod 2\;}
+$$</p>
+<p>and the even-even elements are automatically trivial. Integrality of $q$ alone says the phase is a circle; the parity is the quotient.</p>
+<p><strong>What the product allows and the quotient forbids.</strong> In the product the abelian charge of a multiplet is free: a doublet may be assigned any real $Y$, and the assignment is fixed by anomaly cancellation together with the observed electric charges. In the quotient the abelian charge of a doublet must be <strong>odd</strong> and that of a singlet <strong>even</strong>, in the lattice of the central phase. A framework multiplet cannot be given a charge independent of its spin.</p>
+<p><strong>The observed table passes the check.</strong> Take the central charge to be $q=6Y$, the least step on which every observed hypercharge is an integer; the table below is <em>The Electroweak Gauge Group and the Hypercharge Assignment</em>'s, with the two added columns $q=6Y$ and $2j$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>multiplet</th>
+<th>$T_3$</th>
+<th>$Y$</th>
+<th>$Q=T_3+Y$</th>
+<th>$q=6Y$</th>
+<th>$2j$</th>
+<th>$q\equiv 2j$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u_L$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac16$</td>
+<td>$+\tfrac23$</td>
+<td>$+1$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$d_L$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac16$</td>
+<td>$-\tfrac13$</td>
+<td>$+1$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>$0$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac23$</td>
+<td>$+4$</td>
+<td>$0$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$0$</td>
+<td>$-\tfrac13$</td>
+<td>$-\tfrac13$</td>
+<td>$-2$</td>
+<td>$0$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\nu_L$</td>
+<td>$+\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$-3$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$e_L$</td>
+<td>$-\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+<td>$-3$</td>
+<td>$1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-6$</td>
+<td>$0$</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the check had to pass, and what that means.</strong> On a doublet $6Y=6Q-6T_3=6Q\mp3$, odd exactly when $6Q$ is even; on a singlet $6Y=6Q$, even exactly when $6Q$ is even. Read on the table, the lock is therefore <strong>the statement that electric charge is quantised in thirds</strong>, $3Q\in\mathbb{Z}$, given the $T_3$ assignment. Every observed fermion satisfies it, and so does every fermion of any completion of the table that keeps charge in thirds. The lock does not exclude the observed content; it says something sharper: it is <strong>not a constraint on the model but a constraint the model meets</strong>, and a state of charge outside $\tfrac13\mathbb{Z}$ could not be a framework multiplet at all.</p>
+<p><strong>What the check does not do.</strong> It does not derive the values. The step six is chosen to make the table integral, and the seven rows are the model's; the lock fixes the parity of the abelian charge against the spin and says nothing about which charge a multiplet carries. The two statements must be kept apart, because this is the one place in the sector where a framework computation touches the table without importing it, and it would be easy to read more into it than it holds. <em>The Electroweak Gauge Group and the Hypercharge Assignment</em> is where the values are computed as a solution of the anomaly conditions, and where the solution is shown to need the model's content as input.</p>
+<h2 id="the-two-couplings-and-the-missing-angle">The Two Couplings and the Missing Angle</h2>
+<p><strong>Two parameters, no relation.</strong> The algebra gives each factor its own coefficient: $\kappa$ on the compact factor, $ϙ$ on the centre. Both are free, neither is fixed by the algebra, and the algebra supplies <strong>no relation between them</strong>. A relation is what a mixing angle is. With $g$ and $g_{\mathrm Y}$ the two couplings,</p>
+<p>$$
+\tan\theta_W=\frac{g_{\mathrm Y}}{g},\qquad e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W,\qquad Q_{\mathrm{em}}=T_3+Y,
+$$</p>
+<p>and the angle is a derived quantity of a theory that supplies both couplings and their embedding. The framework supplies neither the values nor a principle relating them, so the angle it could at best compute is the ratio of two free parameters, which is not a prediction. The relation $Q_{\mathrm{em}}=T_3+Y$ is the same statement from the charge side: it needs the $T_3$ of a doublet and the $Y$ of the same doublet to come from one normalisation, and the framework has one normalisation only if the lock is used, which fixes parity and not scale.</p>
+<p><strong>What would settle it.</strong> A principle fixing the relative normalisation of the two factors on the framework's own carrier: a unification condition, an anomaly condition tying the two, or a derivation of the embedding of the centre in $\mathrm{U}(2)$ that the quotient already suggests. <em>Grand Unification in the Biquaternion Framework: Where the Embedding Fails</em> records that the standard route fails on the same ceiling, because a group large enough to fix the ratio is not available. The row is <strong>blocked</strong>, and it is blocked behind the same wall as hypercharge, not behind a new one.</p>
+<p><strong>One reading, stated and not adopted.</strong> That the parity lock be read as the framework's version of charge quantisation, with the two couplings the two halves of one normalisation, is a reading the algebra permits and does not require. It would make $\theta_W$ a framework number. Nothing in the corpus computes it, and this article does not supply the computation.</p>
+<h2 id="the-pairs-ledger">The Pair's Ledger</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Status</th>
+<th>Object or computation that would settle it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The algebra $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$, dimension $3+1=4$</td>
+<td>Established</td>
+<td>—</td>
+</tr>
+<tr>
+<td>The two gauge constructions: abelian connection and curvature; adjoint connection, commutator curvature, Bianchi identity, invariant density</td>
+<td>Established</td>
+<td>—</td>
+</tr>
+<tr>
+<td>The group $\mathrm{U}(2)=(SU(2)\times\mathrm{U}(1))/\mathbb{Z}_2$, a quotient and not a product</td>
+<td>Established</td>
+<td>—</td>
+</tr>
+<tr>
+<td>The parity lock $q\equiv 2j\pmod 2$ on the representation labels</td>
+<td>Established, read off the kernel lattice</td>
+<td>—</td>
+</tr>
+<tr>
+<td>The lock against the observed table with $q=6Y$; equivalence to $3Q\in\mathbb{Z}$</td>
+<td>Checked here</td>
+<td>A state of charge outside $\tfrac13\mathbb{Z}$, or a framework multiplet that fails the lock</td>
+</tr>
+<tr>
+<td>A chiral action of the compact factor, $SU(2)_L$ and not the vector-like $\mathrm{SU}(2)$</td>
+<td>No route yet</td>
+<td>A non-central action under which the two letters transform inequivalently</td>
+</tr>
+<tr>
+<td>The hypercharge values $Y$ of the multiplets</td>
+<td>No route yet</td>
+<td>A derivation of the table, or a no-go forcing it to be adjoined; the lock constrains parity only</td>
+</tr>
+<tr>
+<td>The relative coupling and the mixing angle $\theta_W$</td>
+<td>Blocked</td>
+<td>A principle fixing the ratio of the two couplings on the framework's carrier</td>
+</tr>
+<tr>
+<td>The scalar of the pair, with its potential and its expectation value</td>
+<td>Blocked</td>
+<td>A gauge-charged scalar with a non-trivial invariant minimum</td>
+</tr>
+<tr>
+<td>Empirical contact</td>
+<td>Open</td>
+<td>A prediction distinguishing the framework's group from the product</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The dependency, in one line.</strong> The chiral action is upstream of everything: without it the compact factor is not weak isospin, and without weak isospin the pair is a direct sum of a vector-like phase and a vector-like rotation, which is a gauge theory and not the electroweak theory. The lock is the one item independent of the chiral question, because it is a property of the group and not of the action.</p>
+<h2 id="what-the-article-refuses">What the Article Refuses</h2>
+<p><strong>Three inferences, refused here and refused in the audit.</strong> They are the reason the pair needs its own place.</p>
+<ul>
+<li><strong>"The algebra is the electroweak algebra, so the group is the electroweak group."</strong> False at the group level: the framework's group is the $\mathbb{Z}_2$ quotient. The two agree on the tangent space and differ on the representations, and the representations are where the physics is.</li>
+<li><strong>"The parity lock derives hypercharge."</strong> False: the lock fixes the parity of the abelian charge against the spin and leaves the scale free. The step six is chosen, and the values remain the model's.</li>
+<li><strong>"Two couplings from one algebra are one coupling."</strong> False: the algebra is a direct sum of ideals, so the two coefficients are independent and no relation between them is available. The mixing angle is the missing relation, not a missing number.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The framework shares the Lie algebra of the electroweak pair, $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$ of real dimension four, and not its group. Its compact group is the quotient $\mathrm{U}(2)=(SU(2)\times\mathrm{U}(1))/\mathbb{Z}_2$, whose kernel is the parity-matched lattice $L=\pi i m\,e_t+\pi n\,\vec U$ with $m\equiv n\pmod 2$; read on representations, the lattice is the lock $q\equiv 2j\pmod 2$ on the integer central charge, which the product group does not impose. The observed hypercharge table satisfies the lock with the least step $q=6Y$, and on that table the lock is the statement that electric charge is quantised in thirds — a consistency check the model meets, not a derivation of its values. The two couplings are free and unrelated, so the mixing angle is not a framework number; the chiral action, the assignment and the scalar remain outside; and the honest statement of the pair is that the framework has its algebra, its two gauge constructions and its group, and not its theory.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$</td>
+<td>material sector, a direct sum of Lie algebras, $\mathfrak{u}(2)$ of dimension $4$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)=(SU(2)\times\mathrm{U}(1))/\mathbb{Z}_2$</td>
+<td>the $*$-unitary slice: the framework's compact group, a quotient</td>
+</tr>
+<tr>
+<td>$L=\pi i m\,e_t+\pi n\,\vec U$, $m\equiv n\pmod 2$</td>
+<td>kernel lattice of the exponential on the diagonal part</td>
+</tr>
+<tr>
+<td>$q$</td>
+<td>integer central charge, the label of the abelian factor</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>spin label of the $\mathrm{SU}(2)$ factor; $2j$ its parity</td>
+</tr>
+<tr>
+<td>$q\equiv 2j\pmod 2$</td>
+<td>the parity lock on a $\mathrm{U}(2)$ multiplet</td>
+</tr>
+<tr>
+<td>$\kappa$, $ϙ$</td>
+<td>the two gauge couplings, on the compact factor and on the centre</td>
+</tr>
+<tr>
+<td>$T_3$, $Y$, $Q=T_3+Y$</td>
+<td>weak isospin, hypercharge, electric charge (standard notation)</td>
+</tr>
+<tr>
+<td>$\tan\theta_W=g_{\mathrm Y}/g$</td>
+<td>the mixing angle, a ratio of the two couplings</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html">The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors</a> — the audit of the whole model, of which this article is the electroweak part.</li>
+<li><a href="electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html">Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall</a> — the sector's own boundary: the chiral obstacle, hypercharge, the scalar sector, gauge fixing.</li>
+<li><a href="the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html">The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group</a> — the quotient, the kernel lattice, and the no-go that caps the group.</li>
+<li><a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment</a> — the table used in the check, the anomaly conditions and the three rays.</li>
+<li><a href="representation-is-a-function-of-spin.html">Representation Is a Function of Spin</a> — why the representation is read from the carrier, and the one row in three that matches.</li>
+<li><a href="chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a> — the two letters, the selection rule, and the absent chiral gauge group.</li>
+<li><a href="non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a> — the compact factor's full gauge construction.</li>
+<li><a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a> — the ceiling, for the factor that is not there.</li>
+<li><a href="grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a> — why no larger group fixes the relative coupling.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
