@@ -75,7 +75,7 @@ $$
 
 Since $V_{ts}\approx V_{cb}$ and $V_{td}\approx A\lambda^3 R_t$, this is a measurement of $R_t$ that uses no tree-level decay at all.
 
-**One sentence on the rotor, and it is a negative one.** The closure test is a statement about the unitary on generation space, and generation space is not a carrier of the rotor: the compact factor $SU(2)=\mathrm{SU}(2)$ acts on the spin index and identically on every generation. The test is therefore **neutral under the rotor**, and the loop that this article computes runs over flavours, not over the rotor's display tower. That is why the GIM mechanism here is a statement about cancellation between generations and has no counterpart among the algebra's carriers. The statement is worth recording because it locates the article: whatever mixes generations is not the gauge group, and the framework's account of it begins where this article ends.
+**One sentence on the rotor, and it is a negative one.** The closure test is a statement about the unitary on generation space, and generation space is not a carrier of the rotor: the compact factor $\mathrm{SU}(2)=\mathrm{Spin}(3)$ acts on the spin index and identically on every generation. The test is therefore **neutral under the rotor**, and the loop that this article computes runs over flavours, not over the rotor's display tower. That is why the GIM mechanism here is a statement about cancellation between generations and has no counterpart among the algebra's carriers. The statement is worth recording because it locates the article: whatever mixes generations is not the gauge group, and the framework's account of it begins where this article ends.
 
 ## The Box Diagram and the GIM Mechanism
 

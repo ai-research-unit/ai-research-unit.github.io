@@ -35,6 +35,12 @@ LEGACY_COPIES = [
      "articles_internal/internal-summary-of-the-biquaternion-particle-physics-and-gauge-fields.html"),
     ("articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html",
      "articles_physics/quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html"),
+    ("articles_maths/the-spin-group-via-4x4-real-matrices.html",
+     "articles_maths/the-rotor-group-via-4x4-real-matrices.html"),
+    ("articles_maths/from-the-spin-group-to-the-spin-of-a-single-rotor.html",
+     "articles_maths/from-the-rotor-to-the-spin-of-the-rotor.html"),
+    ("articles_maths/from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html",
+     "articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html"),
 ]
 
 # One date for the whole site: the moment the last build started. build2.py

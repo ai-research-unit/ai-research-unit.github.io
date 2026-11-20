@@ -63,18 +63,18 @@ $$
 so that $r>0$ and $\theta$ is determined modulo $2\pi$ when $b\ne0$. Then
 
 $$
-C=r\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix}=r\,\mathrm{Rot}(\theta).
+C=r\begin{pmatrix}\cos\theta&-\sin\theta\\ \sin\theta&\cos\theta\end{pmatrix}=r\,R(\theta).
 $$
 
-**The two factors both are visible in the entries.** The dilation is the scalar $r$ and the rotation is the orthogonal matrix $\mathrm{Rot}(\theta)\in\mathrm{SO}(2)$.
+**The two factors both are visible in the entries.** The dilation is the scalar $r$ and the rotation is the orthogonal matrix $R(\theta)\in\mathrm{SO}(2)$.
 
-**The block satisfies its characteristic polynomial in the strong form.** Since $C=r\,\mathrm{Rot}(\theta)$ and $\mathrm{Rot}(\theta)^{2}-2\cos\theta\,\mathrm{Rot}(\theta)+\mathrm{I}=0$,
+**The block satisfies its characteristic polynomial in the strong form.** Since $C=r\,R(\theta)$ and $R(\theta)^{2}-2\cos\theta\,R(\theta)+\mathrm{I}=0$,
 
 $$
 C^{2}-2aC+r^{2}\mathrm{I}_2=0.
 $$
 
-The identity is the reason the rotation block is the right real replacement for a complex eigenvalue: it encodes $\mu$ and $\bar\mu$ at once. The powers read $C^{k}=r^{k}\mathrm{Rot}(k\theta)$, so the block spirals with ratio $r$ per step and angle $\theta$.
+The identity is the reason the rotation block is the right real replacement for a complex eigenvalue: it encodes $\mu$ and $\bar\mu$ at once. The powers read $C^{k}=r^{k}R(k\theta)$, so the block spirals with ratio $r$ per step and angle $\theta$.
 
 ## The Minimal Polynomial of $R_1$
 
