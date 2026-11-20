@@ -72,6 +72,7 @@
         <h1 id="the-lagrangian-and-the-weak-interaction"><strong>The Lagrangian and the Weak Interaction</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>This article writes the charged-current weak interaction as an extremum of an action, and shows that eliminating the $W$ from that action produces the four-fermion contact with the coefficient $G_F$ fixed. It is the action-first companion of <em>The Weak Interaction in Biquaternionic Form</em>, which states the currents and the rates; this article asks what functional produces the $V-A$ vertex, and why the contact approximation is as good as it is.</p>
+<p><strong>Its place in the sector.</strong> The action here is the charged-current term of the sector's functional, <a href="the-lagrangian-and-the-electroweak-theory.html">The Lagrangian and the Electroweak Theory</a>, with the $W$ already massive and the neutral sector dropped. The elimination below is exact only in that truncated setting, and the article says where.</p>
 <p><strong>The equation.</strong> The parent's equation is the $W$'s own equation with the charged current as source,</p>
 <p>$$
 D_\nu W^{+}_{\mu\nu}-M_W^2 W^{+}_\mu=\frac{g}{2\sqrt2}J^{+}_\mu ,
@@ -85,7 +86,7 @@ $$</p>
 <p>the stationarity conditions are the parent's equations, and the vertex is the third term.</p>
 <p><em>Second, the variation eliminates the field.</em> Varying $W^{+}_\mu$ gives its equation; solving it at low momentum and substituting back gives the contact action</p>
 <p>$$
-S_{\mathrm{eff}}=-\frac{4G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu ,
+S_{\mathrm{eff}}=-\frac{G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu ,
 \qquad
 \frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2} .
 $$</p>
@@ -111,7 +112,7 @@ $$</p>
 <p><strong>Why the current carries the $V-A$ structure.</strong> In the algebra the projection is the right multiplication by a unit imaginary vector, and the two chiral parts of $\tilde\Xi$ are the two eigenspaces of that insertion. The corpus's Dirac bilinear $\bar{\tilde\Xi}\gamma_\mu(1-\gamma_5)\tilde\Xi$ is the component form of the object, and the algebraic statement is that the weak vertex selects one of the two chiral halves. The selection is exact: it is a projection in the algebra and not an approximation to one.</p>
 <p><strong>Why the $W$ is charged.</strong> $W^{+}_\mu$ carries one unit of electric charge and one unit of the weak ladder; its conjugate carries the opposite. The action is real because the two terms are conjugates of each other, and the factor $1/\sqrt2$ is the normalization of the ladder operators $\tau^{\pm}=(\tau^1\pm i\tau^2)/\sqrt2$.</p>
 <p><strong>The gauge-fixed form.</strong> The mass term breaks the local $SU(2)_L$ of the $W$'s own sector, so the action above is written in the unitary gauge, where the $W$'s longitudinal mode is its third polarization and there is no Goldstone. In a covariant gauge the Goldstone returns and the same physics is distributed differently; that is the gauge-fixing article's, and this article uses the unitary form throughout because the vertex does not depend on the choice.</p>
-<h2 id="the-variation-solving-for-math45-gives-the-contact">The Variation: Solving for $W$ Gives the Contact</h2>
+<h2 id="the-variation-solving-for-math46-gives-the-contact">The Variation: Solving for $W$ Gives the Contact</h2>
 <p><strong>The variation with respect to $W^{+}_\mu$.</strong> In the unitary gauge the equation is algebraic in momentum space,</p>
 <p>$$
 \bigl(-k^2+M_W^2\bigr)W^{+}_\mu(k)=\frac{g}{2\sqrt2}J^{+}_\mu(k),
@@ -127,12 +128,12 @@ $$</p>
 <p>with $G$ the propagator of the massive vector, $G(k)=1/(M_W^2-k^2)$. The Gaussian integration is exact; no approximation has entered.</p>
 <p><strong>The momentum expansion, and where it is justified.</strong> For $|k^2|\ll M_W^2$, $G(k)=M_W^{-2}(1+k^2/M_W^2+\cdots)$, and the leading term gives the contact</p>
 <p>$$
-\boxed{\;S_{\mathrm{eff}}=-\frac{4G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu+O\!\left(\frac{\partial^2}{M_W^2}\right),
+\boxed{\;S_{\mathrm{eff}}=-\frac{G_F}{\sqrt2}\int d^4r\;\sum_\mu J^{+}_\mu J^{-}_\mu+O\!\left(\frac{\partial^2}{M_W^2}\right),
 \qquad
 \frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2}\;}
 $$</p>
 <p>with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum transfer of $100$ MeV the ratio is $1.55\times10^{-6}$, so the contact is accurate to a part per million for nuclear beta decay, and this is why the $W$ is never seen as a propagating degree of freedom in that setting.</p>
-<p><strong>The signs, checked against the rate.</strong> The coefficient $4G_F/\sqrt2$ and not $2G_F/\sqrt2$ follows from the $(1-\gamma_5)$ normalization: the projector squares to twice itself, so the contact carries a factor two relative to the naive product. The muon lifetime computed from it, $\Gamma=G_F^2m_\mu^5/(192\pi^3)$, agrees with the measurement to $0.44\%$, which is the radiative correction, and that agreement is the check on the coefficient.</p>
+<p><strong>The coefficient, counted from the action and not remembered.</strong> The interaction carries $\frac{g}{2\sqrt2}$; squaring it gives $\frac{g^2}{8}$, and the eliminated mass supplies $M_W^{-2}$, so the contact is $-\frac{g^2}{8M_W^2}J^{+}J^{-}$ and the coefficient is $\frac{G_F}{\sqrt2}$ with no further factor. A reader who meets $\frac{4G_F}{\sqrt2}$ in a textbook is reading a current written $\bar\psi\gamma_\mu P_L\psi$: the projector $P_L$ halves the current, so the product of two such currents is four times smaller and the coefficient four times larger. With the full $(1-\gamma_5)$ current used here, the $\frac{4G_F}{\sqrt2}$ form would be wrong by that factor and the muon rate too large by sixteen. The rate computed from the coefficient above, $\Gamma=G_F^2m_\mu^5/(192\pi^3)=3.009\times10^{-19}$ GeV, is $\tau_\mu=2.187\times10^{-6}$ s against the measured $2.197\times10^{-6}$ s — $0.44\%$ short, which is the size of the radiative correction the tree-level formula omits — and that agreement is the check on the coefficient.</p>
 <h2 id="the-reality-of-the-action">The Reality of the Action</h2>
 <h3 id="the-pairing">The Pairing</h3>
 <p><strong>The pairing is the Dirac bilinear, and its reality is what makes the contact real.</strong> $J^{+}_\mu J^{-}_\mu=\lvert J^{+}_\mu\rvert^{2}$ is a squared modulus, real and non-negative term by term, so the contact action is real with a definite sign. The full action is real because the interaction term is a sum of a term and its conjugate.</p>
@@ -184,7 +185,7 @@ $$</p>
 <p><strong>Can the contact's first correction be computed in the corpus's notation?</strong> The $O(\partial^2/M_W^2)$ term is standard and the corpus does not compute it; a computation would test the elimination's bookkeeping at the next order.</p>
 <p><strong>Does the algebra carry the neutral current as exactly as the charged one?</strong> The Møller article computes the parity-violating asymmetry and records the answer; the two currents' statuses are compared there and not here.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>The action.</strong> The $W$'s Proca action plus $-\frac{g}{2\sqrt2}(W^{+}J^{+}+W^{-}J^{-})$. Varying $W$ gives its equation with the current as source; solving at low momentum gives the contact $-\frac{4G_F}{\sqrt2}J^{+}J^{-}$ with $G_F/\sqrt2=g^2/(8M_W^2)$.</p>
+<p><strong>The action.</strong> The $W$'s Proca action plus $-\frac{g}{2\sqrt2}(W^{+}J^{+}+W^{-}J^{-})$. Varying $W$ gives its equation with the current as source; solving at low momentum gives the contact $-\frac{G_F}{\sqrt2}J^{+}J^{-}$ with $G_F/\sqrt2=g^2/(8M_W^2)$.</p>
 <p><strong>The three findings.</strong> The contact is an exact Gaussian elimination followed by a momentum expansion, and the expansion's scale is $M_W$. The $V-A$ structure is the algebra's chirality projection and is exact. The strength is a ratio of the electroweak coupling and mass, so the four-fermion theory has no parameter of its own.</p>
 <p><strong>The boundary.</strong> The vertex is the algebra's; the mass, the coupling and the neutral current are not.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
