@@ -32,6 +32,14 @@ an integral over time of a density that already contains the spatial derivatives
 
 **The mode.** $\tilde\Xi=e^{-i\omega t'}\tilde X$ in the constant setting, and $\tilde\Xi=e^{-i\omega t'+i\vec k_\Phi\cdot\vec r}\tilde X_0$ in the operator setting. The two substitutions differ by the spatial factor, and the difference is what makes the second setting's symbol a function of two arguments.
 
+### The Constant-Coefficient Licence
+
+**Constant coefficients.** The symbol exists for a constant Hamiltonian and a constant connection. With $\vec A$ linear in space the symbol depends on position through $\vec A$ and the plane-wave reduction fails even for a constant field strength.
+
+**Hermitian coefficients and real $ϙ$.** The term-by-term reality uses both. A complex $ϙ$ makes the potential term complex; a non-Hermitian Hamiltonian makes the kinetic term complex for the central root as well.
+
+**One time.** The action is an integral over $t'$, so the transform is in one variable. The four-dimensional transform would put the slope at $\hbar c$ and keep every other statement, and the article does not construct it.
+
 ## The Action in Momentum Space, Coupled: At Fixed Frequency
 
 **The constant setting.** With $\tilde\Xi=e^{-i\omega t'}\tilde X$ and a constant connection, the density is
@@ -111,6 +119,20 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **One difference from the scalar case, stated once.** The Schrödinger symbol is first order in the frequency, so its zero is a single condition and not a quadratic one. **The pole is simple**, and a simple pole is what makes the residue — the density per mode — a first derivative rather than a ratio of two roots. That is the reason the free article's density is $\hbar$ times the norm and not a difference of two branches.
 
+### The Legendre Transform
+
+**The slope in the frequency.** $\partial\sigma_{\mathrm{gco}}/\partial\omega=\hbar$, independent of $\varphi$, of $\vec A$ and of the Hamiltonian. **The connection shifts the arguments and never the slope**, because it does not depend on the frequency.
+
+**The slope in the temporal wave number.** With $k_t'=\omega/c$ the slope is $\hbar c$, and the factor is the unit that relates the two variables. **The two slopes are one slope read in two units**, and no physics depends on which is written.
+
+**Non-degeneracy.** $\hbar\neq0$, so the Legendre map is invertible and the variational problem has no constraint and no multiplier. **The coupling does not introduce one**, because the connection enters the density as a number and not as a Lagrange multiplier.
+
+**What the slope does not see.** The slope does not see $\vec\pi$, so the mechanical momentum is not a Legendre conjugate of anything in this article. **It is a Noether momentum**, the parent's, and the two notions coincide only in a second-order theory.
+
+**The mixed derivative vanishes.** $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$, so the frequency and the wave vector are separated in the symbol. **The separation is the statement that the symbol is a sum of a frequency term and a wave-vector term**, and it is the constant-coefficient structure read on the second derivative.
+
+**Why the mixed derivative matters.** A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. **The article's class has none**, and the flatness of the second derivative is the class's mark.
+
 ## The Constraints the Action Imposes: Gauge Invariance of the Symbol
 
 **The two shifts.** Under a gauge transformation $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$, the connection moves as $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so its frequency and wave vector move as
@@ -173,28 +195,6 @@ and the identity is exact by construction. **The sign is the Lagrangian's**: a L
 
 **A check of the sign's consistency.** Composing the identity with the on-shell condition gives $E=0$ on a solution at zero frequency, which is the statement that a zero-frequency solution has zero energy under this normalisation. **The statement is a normalisation and not a physical claim**, and the article states it once.
 
-## The Legendre Transform
-
-**The slope in the frequency.** $\partial\sigma_{\mathrm{gco}}/\partial\omega=\hbar$, independent of $\varphi$, of $\vec A$ and of the Hamiltonian. **The connection shifts the arguments and never the slope**, because it does not depend on the frequency.
-
-**The slope in the temporal wave number.** With $k_t'=\omega/c$ the slope is $\hbar c$, and the factor is the unit that relates the two variables. **The two slopes are one slope read in two units**, and no physics depends on which is written.
-
-**Non-degeneracy.** $\hbar\neq0$, so the Legendre map is invertible and the variational problem has no constraint and no multiplier. **The coupling does not introduce one**, because the connection enters the density as a number and not as a Lagrange multiplier.
-
-**What the slope does not see.** The slope does not see $\vec\pi$, so the mechanical momentum is not a Legendre conjugate of anything in this article. **It is a Noether momentum**, the parent's, and the two notions coincide only in a second-order theory.
-
-**The mixed derivative vanishes.** $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$, so the frequency and the wave vector are separated in the symbol. **The separation is the statement that the symbol is a sum of a frequency term and a wave-vector term**, and it is the constant-coefficient structure read on the second derivative.
-
-**Why the mixed derivative matters.** A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. **The article's class has none**, and the flatness of the second derivative is the class's mark.
-
-## The Limits and the Truncation’s Error
-
-**Constant coefficients.** The symbol exists for a constant Hamiltonian and a constant connection. With $\vec A$ linear in space the symbol depends on position through $\vec A$ and the plane-wave reduction fails even for a constant field strength.
-
-**Hermitian coefficients and real $ϙ$.** The term-by-term reality uses both. A complex $ϙ$ makes the potential term complex; a non-Hermitian Hamiltonian makes the kinetic term complex for the central root as well.
-
-**One time.** The action is an integral over $t'$, so the transform is in one variable. The four-dimensional transform would put the slope at $\hbar c$ and keep every other statement, and the article does not construct it.
-
 ## What the Principle Adds and What It Relabels: Under Coupling
 
 **One identity, one sign, one invariance.** The identity is that the coupled symbol is the fixed-frequency coupled action. The sign is $E=-\sigma_{\mathrm{gco}}(0,\vec k)$, verified with zero residual. The invariance is the cancellation of the gauge shift, verified to $8.9\times10^{-16}$.
@@ -205,13 +205,11 @@ and the identity is exact by construction. **The sign is the Lagrangian's**: a L
 
 ## Open Questions
 
-**The first question is the varying connection's Legendre structure.** The slope in $\omega$ is $\hbar$ everywhere, and the local frequency is a function of position. Whether a local Legendre transform with a local slope exists is the polar companion's question, and it is open here.
+**The varying connection's Legendre structure.** The slope in $\omega$ is $\hbar$ everywhere, and the local frequency is a function of position. Whether a local Legendre transform with a local slope exists is open.
 
-**The second is the bound's sharpness.** The energy is bounded below by the potential's bound, and the symbol at zero frequency sees that bound. Whether the bound is attained by a mode of the present class for any potential is not decided.
+**The bound's sharpness.** The energy is bounded below by the potential's bound, and the symbol at zero frequency sees that bound. Whether the bound is attained by a mode of the present class for any potential is not decided.
 
-**The third is the sign of $ϙ\varphi$ in the energy.** The article's identity fixes the relation between $\sigma_{\mathrm{gco}}(0)$ and $E$ and does not fix the physical sign of $ϙ$. That is a conventions question and the conventions articles own it.
-
-**The fourth is the second-order analogue.** The free article's gap between the reality of an action and the reality of a spectrum has no coupled counterpart here, because the coupled symbol's spectrum is the free one's. Whether a coupled second-order equation would show the same gap is the Dirac and Klein–Gordon companions' question.
+**The second-order analogue.** The free article's gap between the reality of an action and the reality of a spectrum has no coupled counterpart here, because the coupled symbol's spectrum is the free one's. Whether a coupled second-order equation would show the same gap is open.
 
 ## Summary
 

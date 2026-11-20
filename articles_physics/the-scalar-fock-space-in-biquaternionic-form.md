@@ -52,7 +52,7 @@ $$
 U(\Lambda)|\vec p\rangle=|\Lambda\vec p\rangle ,
 $$
 
-one state per momentum, with no polarization label, no discrete index and no Wigner rotation. The framework's rotor group acts through the trivial representation for the same algebraic reason as the field: the scalar is the singlet of the rotor conjugation, $\tilde U e_t\tilde U^{*}=e_t$. The invariant measure
+one state per momentum, with no polarization label, no discrete index and no Wigner rotation. The framework's $SU(2)$ acts through the trivial representation for the same algebraic reason as the field: the scalar is the singlet of the rotor conjugation, $\tilde U e_t\tilde U^{*}=e_t$. The invariant measure
 
 $$
 \int\!\frac{d^3p}{(2\pi\hbar)^3\,\frac{\hbar c}{2E_{\vec p}}}

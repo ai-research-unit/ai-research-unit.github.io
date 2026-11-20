@@ -30,6 +30,14 @@ $$
 
 **The denials are the main article's, restated once.** The transform does not exchange sectors; a symbol exists only at constant coefficients; and a Legendre transform between a field and its conjugate momentum is not a Fourier transform, so the parent's four canonical momenta are not wave numbers and no display below reads them as one.
 
+### The Constant-Coefficient Licence
+
+**The constant-coefficient licence bounds the article.** The Euler–Lagrange operator of §*The Action in Momentum Space: The Action's Operator* is read at constant $c_t$; a varying potential makes the functional's variation a differential operator of higher order in the coefficient and the identification with a symbol fails there, as the main article's ladder records.
+
+**The temporal slot is the only one where the two readings differ.** In a spatial slot $\bar c_\eta=-c_\eta$, the cross term vanishes identically, and the action, the squared form and the paired form are one operator. **A vector potential therefore gives no ordering ambiguity**, and the article does not manufacture one.
+
+**The self-adjointness argument is not used.** Both readings are self-adjoint in the corpus's writing, so the standard criterion that a real action's operator be self-adjoint does not separate them. The article derives the separation from the cross term instead, and says so because the weaker argument is tempting.
+
 ## The Action in Momentum Space
 
 ### The Action's Operator
@@ -127,6 +135,22 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **One consequence for the density.** The density per mode is the symbol's derivative in the frequency, so a degenerate zero is also where the density's derivative vanishes. **The three objects — zero, pole and vanishing density — are one locus**, and the article's claim is that they coincide because they are three derivatives of one quadratic form.
 
+### The Legendre Transform
+
+**The transform inverts, and it is two-valued.** The mode action is quadratic in the frequency, so the derivative with respect to $\omega$ is linear in $\omega$ and the transform inverts: **the energy is the transform's value and the dispersion relation is the inverse image of the mass shell.** Two frequencies give the same derivative, one on each branch, and the two branches are the reading's two settings.
+
+**Why two-valued and not double-covered.** The quadratic's two roots are $+$ and $-$; they are not the same state twice, because the density per mode carries the sign of the derivative and the two roots give opposite signs. **The pair is the particle and the antiparticle**, and the transform is where the sign becomes visible: the same form, read at positive and negative frequency, gives two energies with two densities.
+
+**What the transform does not do.** It does not choose between them. **The choice is the state, and the transform is a function of the form**, so the article records the two branches and leaves the selection to the setting. That is why the section on the two settings exists separately: a transform is a property of the action, and a setting is a property of what the reader does with it.
+
+**The coupling's place.** The connection translates the frequency and the wave number, so the transform's two branches are the free branches at the shifted arguments. **The transform inherits the translation and adds nothing to it**, and that is the honest statement of what the momentum reading can say about the coupling.
+
+**The slope and the density.** The derivative of the action with respect to $\omega$ is the density per mode, and the transform's slope is therefore the density as a function of the energy. **The transform makes the density a function of the branch**, and the free case's degenerate zero is where the two densities meet — which is exactly where the transform's two roots coincide.
+
+**One caution, and it is the one the article's limits section repeats.** The transform is taken at a fixed wave number. **A transform taken along a solution is the identity and gives the on-shell action, which is zero**, and the article does not take it. That is not an omission: on shell the form vanishes, so the transform of the on-shell form is zero for every branch and distinguishes nothing.
+
+**What the section adds.** It states where the two settings come from, and it states that they come from the form and not from the coupling. **The reading's two branches are older than the connection**, and the coupled article's contribution is that the connection moves them without splitting them.
+
 ## The Constraints the Action Imposes: The Constraint Is the Vanishing Symbol
 
 **The variation at a mode is algebraic, so the constraint is not a surface in field space.** The mode form $Q$ is a quadratic form in the amplitude, and stationarity forces its bracket to vanish for every $\delta X^{*}$, by the positivity argument the action section records. Nothing is then imposed on the amplitude: where the bracket is invertible the only stationary amplitude is zero, and a zero amplitude is not a restricted configuration but the absence of one.
@@ -159,30 +183,6 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## The Legendre Transform
-
-**The transform inverts, and it is two-valued.** The mode action is quadratic in the frequency, so the derivative with respect to $\omega$ is linear in $\omega$ and the transform inverts: **the energy is the transform's value and the dispersion relation is the inverse image of the mass shell.** Two frequencies give the same derivative, one on each branch, and the two branches are the reading's two settings.
-
-**Why two-valued and not double-covered.** The quadratic's two roots are $+$ and $-$; they are not the same state twice, because the density per mode carries the sign of the derivative and the two roots give opposite signs. **The pair is the particle and the antiparticle**, and the transform is where the sign becomes visible: the same form, read at positive and negative frequency, gives two energies with two densities.
-
-**What the transform does not do.** It does not choose between them. **The choice is the state, and the transform is a function of the form**, so the article records the two branches and leaves the selection to the setting. That is why the section on the two settings exists separately: a transform is a property of the action, and a setting is a property of what the reader does with it.
-
-**The coupling's place.** The connection translates the frequency and the wave number, so the transform's two branches are the free branches at the shifted arguments. **The transform inherits the translation and adds nothing to it**, and that is the honest statement of what the momentum reading can say about the coupling.
-
-**The slope and the density.** The derivative of the action with respect to $\omega$ is the density per mode, and the transform's slope is therefore the density as a function of the energy. **The transform makes the density a function of the branch**, and the free case's degenerate zero is where the two densities meet — which is exactly where the transform's two roots coincide.
-
-**One caution, and it is the one the article's limits section repeats.** The transform is taken at a fixed wave number. **A transform taken along a solution is the identity and gives the on-shell action, which is zero**, and the article does not take it. That is not an omission: on shell the form vanishes, so the transform of the on-shell form is zero for every branch and distinguishes nothing.
-
-**What the section adds.** It states where the two settings come from, and it states that they come from the form and not from the coupling. **The reading's two branches are older than the connection**, and the coupled article's contribution is that the connection moves them without splitting them.
-
-## The Limits and the Truncation’s Error
-
-**The constant-coefficient licence bounds the article.** The Euler–Lagrange operator of §*The Action in Momentum Space: The Action's Operator* is read at constant $c_t$; a varying potential makes the functional's variation a differential operator of higher order in the coefficient and the identification with a symbol fails there, as the main article's ladder records.
-
-**The temporal slot is the only one where the two readings differ.** In a spatial slot $\bar c_\eta=-c_\eta$, the cross term vanishes identically, and the action, the squared form and the paired form are one operator. **A vector potential therefore gives no ordering ambiguity**, and the article does not manufacture one.
-
-**The self-adjointness argument is not used.** Both readings are self-adjoint in the corpus's writing, so the standard criterion that a real action's operator be self-adjoint does not separate them. The article derives the separation from the cross term instead, and says so because the weaker argument is tempting.
-
 ## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
@@ -193,9 +193,7 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 ## Open Questions
 
-**The paired form's functional is not identified.** Both operators are self-adjoint at constant coefficients, so both are the Euler–Lagrange operators of some real quadratic functional, and the article exhibits the difference between the two functionals as the cross term without exhibiting the paired functional itself. Whether it is the cross bilinear $\int\bigl[(\partial_{R_t}-\bar c_t)\Xi\bigr]^{*}\bigl[(\partial_{R_t}+c_t)\Xi\bigr]$ and whether that object has a name in the standard literature is open. **The question is well posed because the operator is self-adjoint**, and nothing in the article answers it.
-
-**Whether the corpus wants the first-order response is the parent's question and it is not answered here.** The action's operator shifts the energy linearly and the paired form shifts the mass squared; the difference is $2c_t(c_t-k_t')$ and it is first order in the potential. Which of the two the physics follows is a question about the corpus's choice of equation, and the article records the two responses without ranking them.
+**The paired form's functional is not identified.** Both operators are self-adjoint at constant coefficients, so both are the Euler–Lagrange operators of some real quadratic functional, and the article exhibits the difference between the two functionals as the cross term without exhibiting the paired functional itself. Whether it is the cross bilinear $\int\bigl[(\partial_{R_t}-\bar c_t)\Xi\bigr]^{*}\bigl[(\partial_{R_t}+c_t)\Xi\bigr]$ and whether that object has a name in the standard literature is open. The question is well posed because the operator is self-adjoint, and nothing in the article answers it.
 
 ## Summary
 

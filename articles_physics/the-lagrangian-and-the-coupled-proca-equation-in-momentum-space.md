@@ -58,6 +58,16 @@ where $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ is the shifted Lorenz form and
 
 **The constant-connection licence.** The form is the action at a mode for a constant connection. **A varying connection has no form at a mode**, and the element companion shows why: the symbol is not a function of the momentum alone.
 
+### The Constant-Coefficient Licence
+
+**The constant-connection licence bounds the form.** The form is the action at a mode for a constant connection; a varying connection has no form at a mode, and the element companion's argument is the reason.
+
+**The field term's status is the parent's and the article does not improve it.** The action is written in the free article's form, its field term is not phase-invariant, and the invariant pairing's normalisation is open. **Every statement above about $\mathcal{F}$ is a statement about the action as written**, and the article says so because the temptation to read the $e^{2i\alpha}$ as a defect of the field rather than of the term is strong.
+
+**The Abelian case is the one treated.** The phase's centrality is what makes the transformation a constant multiplication, and the corpus's coupling is Abelian.
+
+**The denial, once more.** No sector is exchanged. The action is real, the form is a complex number per mode, and the phase is a coordinate. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
+
 ## The Action in Momentum Space: The Form on a Mode
 
 **The two terms have different algebraic characters and that is the article's engine.** $\mathcal{F}$ is a square of a linear form in $A$; $\mathcal{M}$ is a Hermitian square. **A square of a linear form is bilinear; a Hermitian square is sesquilinear**, and the whole of the phase behaviour follows: the first picks up the transformation's factor twice and the second cancels it.
@@ -103,6 +113,22 @@ the symbol equation the article solves. The passage from the action to the equat
 **What the section does not claim.** It does not claim that a zero at negative frequency is a negative energy. The transform's two branches are the article's Legendre section, and the sign distinction belongs there. **Zero and pole are statements about the propagator; the branch is a statement about the transform.**
 
 **One consequence worth naming.** Because the determinant carries $k_m^{2}$ as a factor, the longitudinal mode's pole is at a fixed coefficient and not at a running one. **The longitudinal coefficient is the mass alone**, and the article's measurement of it — $0.245$ at $k_m=0.7$ and $0.045$ at $k_m=0.3$, at every frequency in the range — is a numerical restatement of that factor.
+
+### The Legendre Transform
+
+**The form is quadratic in the frequency, so solving it for the frequency gives two roots.** $\mathcal{F}$ is a square of a form linear in $\pi_t$ and $\mathcal{M}$ is independent of $\pi_t$; the resulting polynomial in $\omega$ is quadratic. **So every value of the other variables corresponds to two frequencies**, and the pair is the particle–antiparticle pair.
+
+**With the connection the reflection's axis is translated and not moved.** The form depends on $\pi_t=\hbar\omega/c+\varkappa\varphi$ quadratically, so it is even under
+
+$$
+\omega\longmapsto-\omega-\frac{2\varkappa c\,\varphi}{\hbar} ,
+$$
+
+a reflection about $\omega=-\varkappa c\varphi/\hbar$ rather than about zero. **A constant scalar potential therefore moves the axis of the two-valued inversion**, which is the frequency-space form of "a constant potential shifts every energy".
+
+**The two-valuedness is a property of the form's degree and not of the Proca field.** A first-order theory's form is linear in the frequency and its inversion is single-valued; the Dirac variational companion's inversion is of that kind. **The Proca form is degree two, so its inversion is degree two**, and the article states the degree rather than the analogy.
+
+**What the two roots mean for the constraint is nothing, and that is worth stating.** The constraint is the vanishing of the temporal coefficient's $\pi_t$ dependence, which is absent at both roots; the two roots are the two branches' frequencies and both satisfy it. **A constraint that does not depend on the frequency cannot select a root**, and the article's last sentence about the inversion is that the two structures are independent.
 
 ## The Constraints the Action Imposes: The Constraint Is a Determination
 
@@ -193,32 +219,6 @@ the first because $e^{-i\alpha}e^{i\alpha}=1$ and the second because the two fac
 
 **What the asymmetry forbids is a statement of the form "the charge measures the mass".** It does not; the charge measures the phase's flow and the mass measures the scale's. **A frequency-space statement about the mass is a statement about the trace or about the longitudinal coefficient**, and those are the two places the article has looked.
 
-## The Legendre Transform
-
-**The form is quadratic in the frequency, so solving it for the frequency gives two roots.** $\mathcal{F}$ is a square of a form linear in $\pi_t$ and $\mathcal{M}$ is independent of $\pi_t$; the resulting polynomial in $\omega$ is quadratic. **So every value of the other variables corresponds to two frequencies**, and the pair is the particle–antiparticle pair.
-
-**With the connection the reflection's axis is translated and not moved.** The form depends on $\pi_t=\hbar\omega/c+\varkappa\varphi$ quadratically, so it is even under
-
-$$
-\omega\longmapsto-\omega-\frac{2\varkappa c\,\varphi}{\hbar} ,
-$$
-
-a reflection about $\omega=-\varkappa c\varphi/\hbar$ rather than about zero. **A constant scalar potential therefore moves the axis of the two-valued inversion**, which is the frequency-space form of "a constant potential shifts every energy".
-
-**The two-valuedness is a property of the form's degree and not of the Proca field.** A first-order theory's form is linear in the frequency and its inversion is single-valued; the Dirac variational companion's inversion is of that kind. **The Proca form is degree two, so its inversion is degree two**, and the article states the degree rather than the analogy.
-
-**What the two roots mean for the constraint is nothing, and that is worth stating.** The constraint is the vanishing of the temporal coefficient's $\pi_t$ dependence, which is absent at both roots; the two roots are the two branches' frequencies and both satisfy it. **A constraint that does not depend on the frequency cannot select a root**, and the article's last sentence about the inversion is that the two structures are independent.
-
-## The Limits and the Truncation’s Error
-
-**The constant-connection licence bounds the form.** The form is the action at a mode for a constant connection; a varying connection has no form at a mode, and the element companion's argument is the reason.
-
-**The field term's status is the parent's and the article does not improve it.** The action is written in the free article's form, its field term is not phase-invariant, and the invariant pairing's normalisation is open. **Every statement above about $\mathcal{F}$ is a statement about the action as written**, and the article says so because the temptation to read the $e^{2i\alpha}$ as a defect of the field rather than of the term is strong.
-
-**The Abelian case is the one treated.** The phase's centrality is what makes the transformation a constant multiplication, and the corpus's coupling is Abelian.
-
-**The denial, once more.** No sector is exchanged. The action is real, the form is a complex number per mode, and the phase is a coordinate. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
-
 ## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
@@ -229,13 +229,13 @@ a reflection about $\omega=-\varkappa c\varphi/\hbar$ rather than about zero. **
 
 ## Open Questions
 
-**Whether a sesquilinear field term exists whose normalisation is the free one's is open, and it is the parent's first open item.** The frequency-space form of the question is sharp: a sesquilinear term is a function of $A$ and $A^{\dagger}$, so it is invariant under the phase; whether the algebra supplies a second field strength whose pairing with $\tilde F$ is sesquilinear *and* reduces to the Maxwell density is the question. **The article's $e^{2i\alpha}$ is the arithmetic of the deficit and not a solution of it.**
+**Whether a sesquilinear field term exists whose normalisation is the free one's.** The frequency-space form of the question is sharp: a sesquilinear term is a function of $A$ and $A^{\dagger}$, so it is invariant under the phase; whether the algebra supplies a second field strength whose pairing with $\tilde F$ is sesquilinear *and* reduces to the Maxwell density is the question. The article's $e^{2i\alpha}$ is the arithmetic of the deficit and not a solution of it.
 
-**Whether the constraint's determination has a chart reading is open.** The division $a_t'=\vec k_\Phi\cdot\vec a/k_t'$ is a statement about amplitudes. **Whether it is the frequency-space image of the chart's one real equation among eight is a question the polar companion raises jointly**, and neither article answers it.
+**Whether the constraint's determination has a chart reading.** The division $a_t'=\vec k_\Phi\cdot\vec a/k_t'$ is a statement about amplitudes. Whether it is the frequency-space image of the chart's one real equation among eight is a question the polar companion raises jointly, and neither article answers it.
 
-**Whether the charge's mass-independence survives a dynamical connection is open.** The article's argument is that the mass is not in the operator, which holds for a background connection; with a dynamical connection the mass term would have a second variation and the argument would need redoing.
+**Whether the charge's mass-independence survives a dynamical connection.** The article's argument is that the mass is not in the operator, which holds for a background connection; with a dynamical connection the mass term would have a second variation and the argument would need redoing.
 
-**Whether the two-valued inversion has a reading in the currents is open.** The charge is linear in the amplitude and the energy is quadratic, so the inversion's two roots give opposite charges and equal energies. **Whether that is a statement about antiparticles or about the form's degree is a question the article raises and does not answer.**
+**Whether the two-valued inversion has a reading in the currents.** The charge is linear in the amplitude and the energy is quadratic, so the inversion's two roots give opposite charges and equal energies. Whether that is a statement about antiparticles or about the form's degree is a question the article raises and does not answer.
 
 ## Summary
 

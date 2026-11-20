@@ -180,10 +180,6 @@ is conserved identically, not on shell, because it is a total derivative. Its co
 
 **Is the fourth-order coefficient fixed by the algebra?** $e$ is a parameter of the model and nothing in the algebra fixes it. Whether the algebra's commutator structure imposes a relation between $e$ and $f$ is not established; the two are independent in the standard model and in the corpus.
 
-**Does the algebra's $\mathrm{U}(2)$ ceiling allow a larger target?** The Skyrme term exists for any target with a flat current, and the algebra's current lies in $\mathrm{SU}(2)$. A target of larger dimension would need a current outside the algebra's compact subgroup, which the ceiling excludes.
-
-**Is the baryon identification derivable?** No. It is the programme's hypothesis, and the corpus records it as one.
-
 ## Summary
 
 **The action.** $S=\int d^4r\,[-\frac{f^2}{2}\mathrm{Sc}(\bar j_\mu j_\mu)+\frac{1}{16e^2}\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])]$ with $j_\mu=\tilde U^{\natural}\partial_\mu\tilde U$ flat on $\mathbb{H}^1$. Varying inside the constraint gives the parent's equation.

@@ -82,6 +82,18 @@ $$
 
 **The two settings are the parent's and they are kept apart.** The constant setting is where $\mathcal{Q}$ exists; the operator setting is where the transform of the product is a convolution and $\mathcal{Q}$ does not exist. **Nothing below transfers between them**, and §*The Limits and the Truncation’s Error* states the boundary.
 
+### The Constant-Coefficient Licence
+
+**Constant coefficients.** The mode form exists where the connection is constant, and every exact statement above is a statement under that licence. A varying connection replaces the symbol by a convolution, and no display in §*The Second Variation: One Number, for a New Reason* survives unchanged.
+
+**The abelian component form.** The parent's coupling separates into components because the coefficients are central scalars. **A non-abelian connection would put the connection between the field and its conjugate**, the reality argument would have to be redone with the ordering explicit, and $\mathcal{Q}$ would not be a quadratic form in the amplitude.
+
+**The $\natural$-square's centrality is a type statement and not a smallness statement.** Every element's $\natural$-square is central, so the second variation collapses for any connection for which a symbol exists. **What does not collapse is the curvature term**, and the article's two statements are of different kinds: one is an identity of the algebra, the other is the absence of an identity.
+
+**The measure.** The momentum-space measure's constant is the transform's convention and the action's overall constant is the parent's $\frac{\hbar c}{2}$. **No display above depends on either and no normalisation is claimed.**
+
+**The denial, once more.** The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equations on elements, and the centrality of $N$ is a statement about one element's $\natural$-square. **No sector flip occurs at any step**, and the sector talk of §*Conventions* is talk about coefficients.
+
 ## The Action in Momentum Space, Coupled: The Free One Translated
 
 **The coupling's contribution to the symbol is the same $i$ that the free symbol already carries.** The free symbol is $i\tilde K_\Phi$; the coupled symbol is
@@ -252,6 +264,20 @@ so the two kinetic terms reproduce the two mass terms and the four cancel pairwi
 
 **What the relation is not is a derivation of the integral.** The zero selects the support and the pole gives the weight; neither implies the other without the construction in between, and the construction is the path-integral companion's. **The relation is a computed equality of two displays at one wave number**, and the coupling shifts both displays by the same substitution.
 
+### The Legendre Transform
+
+**What the transform is asked to do.** The mode action is a function of the frequency and the amplitude, and the Legendre transform in the frequency is the reading's way of passing from the action to the energy. For a symbol linear in $\omega$ the transform is degenerate: **the derivative with respect to $\omega$ is a function of the amplitude alone**, so the transform does not invert and it returns a constraint rather than an energy.
+
+**Why that is the right answer and not a failure.** The Dirac action is first order; a first-order action's Legendre transform is a constraint by construction, and the corpus's element articles already say so. **The mode reading inherits the degeneracy and localises it**: at a fixed wave number the transform is degenerate in one direction and invertible in the others, so the constraint is one condition on four amplitudes and the energy is the other three.
+
+**Where the two branches come from, if not from the transform.** The transform in the frequency returns one value, because the symbol is linear. **The two branches are the two eigenvalues of the Hamiltonian at that wave number**, and they are a property of the symbol's spectrum and not of the transform. A reader who expects the transform to produce $\pm$ has confused the Legendre transform of a quadratic action with the diagonalisation of a linear one.
+
+**The coupling's place in the transform.** Because the coupling only translates the argument, the transform's degeneracy is untouched and the eigenvalues are the free eigenvalues at the shifted wave number. **The transform cannot see the coupling except through the shift**, and that is the strongest statement the reading can make about it.
+
+**What the transform adds to the article.** One number: the slope of the action with respect to the frequency, which is the density per mode up to the sign convention. **The transform is not a new equation; it is the same form read as a function of its argument**, and its value here is that it makes the constraint's origin visible — the constraint is the degeneracy of a first-order form, and it would be absent if the form were quadratic.
+
+**One caution.** The transform is taken at fixed amplitude and fixed wave number. **A transform taken along a solution is a different object**, and the article does not take it, because on shell the form vanishes and the transform of zero is zero.
+
 ## The Constraints the Action Imposes: The Local Phase Is Invisible at a Mode
 
 **The mode form is invariant under a constant central phase, for the free action and the coupled action alike.** Every term of $\mathcal{Q}$ pairs one factor of the field with one factor of its conjugate, so a common phase $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ multiplies each term by $\overline{e^{i\alpha}}e^{i\alpha}=1$. **Measured over fifty random draws at three angles: the largest deviation was $3.8\times10^{-15}$, $1.1\times10^{-14}$ and $7.2\times10^{-15}$ at $\alpha=0.7$, $1.9$ and $3.1$.**
@@ -311,32 +337,6 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## The Legendre Transform
-
-**What the transform is asked to do.** The mode action is a function of the frequency and the amplitude, and the Legendre transform in the frequency is the reading's way of passing from the action to the energy. For a symbol linear in $\omega$ the transform is degenerate: **the derivative with respect to $\omega$ is a function of the amplitude alone**, so the transform does not invert and it returns a constraint rather than an energy.
-
-**Why that is the right answer and not a failure.** The Dirac action is first order; a first-order action's Legendre transform is a constraint by construction, and the corpus's element articles already say so. **The mode reading inherits the degeneracy and localises it**: at a fixed wave number the transform is degenerate in one direction and invertible in the others, so the constraint is one condition on four amplitudes and the energy is the other three.
-
-**Where the two branches come from, if not from the transform.** The transform in the frequency returns one value, because the symbol is linear. **The two branches are the two eigenvalues of the Hamiltonian at that wave number**, and they are a property of the symbol's spectrum and not of the transform. A reader who expects the transform to produce $\pm$ has confused the Legendre transform of a quadratic action with the diagonalisation of a linear one.
-
-**The coupling's place in the transform.** Because the coupling only translates the argument, the transform's degeneracy is untouched and the eigenvalues are the free eigenvalues at the shifted wave number. **The transform cannot see the coupling except through the shift**, and that is the strongest statement the reading can make about it.
-
-**What the transform adds to the article.** One number: the slope of the action with respect to the frequency, which is the density per mode up to the sign convention. **The transform is not a new equation; it is the same form read as a function of its argument**, and its value here is that it makes the constraint's origin visible — the constraint is the degeneracy of a first-order form, and it would be absent if the form were quadratic.
-
-**One caution.** The transform is taken at fixed amplitude and fixed wave number. **A transform taken along a solution is a different object**, and the article does not take it, because on shell the form vanishes and the transform of zero is zero.
-
-## The Limits and the Truncation’s Error
-
-**Constant coefficients.** The mode form exists where the connection is constant, and every exact statement above is a statement under that licence. A varying connection replaces the symbol by a convolution, and no display in §*The Second Variation: One Number, for a New Reason* survives unchanged.
-
-**The abelian component form.** The parent's coupling separates into components because the coefficients are central scalars. **A non-abelian connection would put the connection between the field and its conjugate**, the reality argument would have to be redone with the ordering explicit, and $\mathcal{Q}$ would not be a quadratic form in the amplitude.
-
-**The $\natural$-square's centrality is a type statement and not a smallness statement.** Every element's $\natural$-square is central, so the second variation collapses for any connection for which a symbol exists. **What does not collapse is the curvature term**, and the article's two statements are of different kinds: one is an identity of the algebra, the other is the absence of an identity.
-
-**The measure.** The momentum-space measure's constant is the transform's convention and the action's overall constant is the parent's $\frac{\hbar c}{2}$. **No display above depends on either and no normalisation is claimed.**
-
-**The denial, once more.** The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equations on elements, and the centrality of $N$ is a statement about one element's $\natural$-square. **No sector flip occurs at any step**, and the sector talk of §*Conventions* is talk about coefficients.
-
 ## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
@@ -347,13 +347,9 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 ## Open Questions
 
-**Whether the zero-pole relation has an operator-level reading is the free article's question and this article answers it only negatively.** The relation survives at zero field strength and stops being statable beyond it. **Whether some other object — the inverse of the convolution, or the determinant of the composed operator — plays the pole's role for a general connection is not settled**, and the question is well posed because the convolution's inverse exists as a distribution.
+**Whether the zero-pole relation has an operator-level reading.** The relation survives at zero field strength and stops being statable beyond it. Whether some other object — the inverse of the convolution, or the determinant of the composed operator — plays the pole's role for a general connection is not settled, and the question is well posed because the convolution's inverse exists as a distribution.
 
-**Whether the transition bilinear can be written as a statement about a pair of modes is open.** §*Aside: Why the Parent’s Test Field Had Two Modes* locates the charge's conservation in the pairs and does not compute them. **A momentum-space form of the current display, with the frame units carried through, would either reproduce the parent's numbers or fail to**, and neither outcome is known here.
-
-**Whether the choice of frame units is forced is the parent's third open question and it is untouched.** The algebra supplies every factor of the triple product; **it does not single out $\vec e_x$ and $\vec e_y$**, and nothing in the transform bears on which units the pairing uses.
-
-**Whether the invisibility of the local phase at a mode has a reading in the word is open.** The polar companion counts brackets; this article counts phases. **A statement of the form "the phase bracket of a mode is empty and the phase bracket of a pair is not" would join the two**, and neither article states it.
+**Whether the invisibility of the local phase at a mode has a reading in the word.** The polar companion counts brackets; this article counts phases. A statement of the form *the phase bracket of a mode is empty and the phase bracket of a pair is not* would join the two, and neither article states it.
 
 ## Summary
 

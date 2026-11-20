@@ -34,6 +34,16 @@ $$
 
 **The potential is a constant element.** Throughout, $\tilde M$ is a constant element of $\mathbb{B}$: Hermitian, $\tilde M=a\,e_t+i\vec v\cdot\vec e$ with $a$ and $\vec v$ real, or anti-Hermitian, $\tilde M=i\,a\,e_t+\vec v\cdot\vec e$. Its left multiplication $L(\tilde M)$ is complex-linear on the four-dimensional complex space $\mathbb{B}$, because $i$ is central, so it is a $4\times4$ complex matrix in the basis $e_\mu$ and its eigenvalues are ordinary complex eigenvalues.
 
+### The Constant-Coefficient Licence
+
+**Constant coefficients are the licence.** The eigenvalue problem needs $\tilde M$ constant, because the symbol exists only there. A position-dependent Hermitian $\tilde M$ keeps the equation and loses the spectrum: the momentum-space operator becomes a convolution, its kernel is the transform of $\tilde M$, and there is no matrix and no eigenvalue. The parent's constant setting is therefore not a simplification of convenience but the only setting in which the four branches exist as branches.
+
+**The abelian component form matters for the same reason.** The parent separates the covariant derivative into components because the coefficients are central scalars, and that is what makes $L(\tilde M)$ a single constant matrix rather than a connection. A non-abelian coefficient would add a commutator inside the potential term and the eigenvalue problem would become a matrix-valued one with no scalar spectrum.
+
+**The companion's question is the zero set, and it is not this article's.** *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form* asks when the second-order symbol factors into first-order ones and answers through the reducibility of its quadric. A spectrum and a factorization are different properties of the same symbol: an operator can have a perfectly good spectrum and no square root, which is exactly the Klein–Gordon case, and the scalar Klein–Gordon operator has both a known spectrum and a known obstruction.
+
+**The third article of the family reads the polar word, and this one does not.** *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables* asks where the transform's phase comes from and what removes the symbol; its answer is about the amplitude, and it is not a restatement of anything here. Nothing in the article is a transform between sectors: every object above is an element of $\mathbb{B}$ or a coefficient of one, and the transform returns the same algebra.
+
 ## The Action in Momentum Space
 
 ### The Momentum-Space Equation Is an Eigenvalue Problem
@@ -143,6 +153,20 @@ $$
 
 **The thesis of the article is this finding read backwards.** Because the free symbol is central and carries no sector content, every sector statement at Klein–Gordon level must come from the potential. The article's four other findings are the four ways in which it does: the spectrum, the multiplicity, the reality, and the threshold. Remove the potential and all four collapse to one number.
 
+### The Legendre Transform
+
+**Quadratic in the frequency, so two-valued.** The mode action is quadratic in $\omega$, so its derivative with respect to $\omega$ is linear and the transform inverts. **The inverse image of the energy is two frequencies**, and the two are the reading's two branches: the same form, read at $+\omega$ and at $-\omega$, with densities of opposite sign.
+
+**The two branches meet at one wave number.** The quadratic's discriminant vanishes where $\vec k^{2}+k_m^{2}=0$, and there the two roots coincide. **That is the article's tachyon threshold**, and in the transform's language it is the place where the two branches become one and the density's sign stops being able to distinguish them. Below it there are two branches; above it there is none.
+
+**Why the threshold is a property of the form.** It is the discriminant of the symbol's frequency dependence, and the symbol is the form's kernel. **The threshold is therefore not a statement about a particle's mass but a statement about when the form's two roots are real**, which is why the article's section on it precedes the section on what the free case does and does not say.
+
+**What the transform adds.** The slope: the derivative of the action with respect to $\omega$ is the density per mode, so the transform maps the form's argument to its density. **The slope's sign is the branch's sign**, and the two branches therefore have opposite slopes at the same energy — the statement that makes the particle and the antiparticle distinguishable in this reading.
+
+**What the free case says, in the transform's language.** Nothing about the coupling, and the article says so. **The free transform is the coupled transform at zero connection**, so every free statement is a special case and no free statement tests the shift. That is why the coupled article's transform section is short and its zero-pole section is long.
+
+**One caution the article keeps.** The transform is taken at fixed wave number and fixed amplitude, before the equation is imposed. **On shell the form vanishes and the transform of zero is zero**, so the order matters and the article states it once.
+
 ## The Constraints the Action Imposes: The Constraint Is the Mass Shell
 
 **The action's equation is an eigenvalue problem, and that is where the constraint sits.** In this chart the field equation reads $\bigl(\omega^{2}/c^{2}-k_\Phi^{2}\bigr)\tilde\Xi_0=\tilde M\tilde\Xi_0$, so the operator's symbol acts on the amplitude and the condition for a nonzero amplitude is that the symbol be singular at that momentum. Nothing is imposed on the amplitude itself.
@@ -173,30 +197,6 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## The Legendre Transform
-
-**Quadratic in the frequency, so two-valued.** The mode action is quadratic in $\omega$, so its derivative with respect to $\omega$ is linear and the transform inverts. **The inverse image of the energy is two frequencies**, and the two are the reading's two branches: the same form, read at $+\omega$ and at $-\omega$, with densities of opposite sign.
-
-**The two branches meet at one wave number.** The quadratic's discriminant vanishes where $\vec k^{2}+k_m^{2}=0$, and there the two roots coincide. **That is the article's tachyon threshold**, and in the transform's language it is the place where the two branches become one and the density's sign stops being able to distinguish them. Below it there are two branches; above it there is none.
-
-**Why the threshold is a property of the form.** It is the discriminant of the symbol's frequency dependence, and the symbol is the form's kernel. **The threshold is therefore not a statement about a particle's mass but a statement about when the form's two roots are real**, which is why the article's section on it precedes the section on what the free case does and does not say.
-
-**What the transform adds.** The slope: the derivative of the action with respect to $\omega$ is the density per mode, so the transform maps the form's argument to its density. **The slope's sign is the branch's sign**, and the two branches therefore have opposite slopes at the same energy — the statement that makes the particle and the antiparticle distinguishable in this reading.
-
-**What the free case says, in the transform's language.** Nothing about the coupling, and the article says so. **The free transform is the coupled transform at zero connection**, so every free statement is a special case and no free statement tests the shift. That is why the coupled article's transform section is short and its zero-pole section is long.
-
-**One caution the article keeps.** The transform is taken at fixed wave number and fixed amplitude, before the equation is imposed. **On shell the form vanishes and the transform of zero is zero**, so the order matters and the article states it once.
-
-## The Limits and the Truncation’s Error
-
-**Constant coefficients are the licence.** The eigenvalue problem needs $\tilde M$ constant, because the symbol exists only there. A position-dependent Hermitian $\tilde M$ keeps the equation and loses the spectrum: the momentum-space operator becomes a convolution, its kernel is the transform of $\tilde M$, and there is no matrix and no eigenvalue. The parent's constant setting is therefore not a simplification of convenience but the only setting in which the four branches exist as branches.
-
-**The abelian component form matters for the same reason.** The parent separates the covariant derivative into components because the coefficients are central scalars, and that is what makes $L(\tilde M)$ a single constant matrix rather than a connection. A non-abelian coefficient would add a commutator inside the potential term and the eigenvalue problem would become a matrix-valued one with no scalar spectrum.
-
-**The companion's question is the zero set, and it is not this article's.** *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form* asks when the second-order symbol factors into first-order ones and answers through the reducibility of its quadric. A spectrum and a factorization are different properties of the same symbol: an operator can have a perfectly good spectrum and no square root, which is exactly the Klein–Gordon case, and the scalar Klein–Gordon operator has both a known spectrum and a known obstruction.
-
-**The third article of the family reads the polar word, and this one does not.** *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables* asks where the transform's phase comes from and what removes the symbol; its answer is about the amplitude, and it is not a restatement of anything here. Nothing in the article is a transform between sectors: every object above is an element of $\mathbb{B}$ or a coefficient of one, and the transform returns the same algebra.
-
 ## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
@@ -207,9 +207,9 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 ## Open Questions
 
-**One question is left open, and it is about a potential the selection rule might admit.** The exclusion in the reality part of §*The Action* is the exclusion of an anti-Hermitian part, because that part makes the action's density imaginary. An anti-Hermitian part that is a total derivative — that is, one whose contribution to the action is a boundary term — would make the action real up to a surface term, and the variation would be unaffected. Whether such a potential exists in this algebra, whether it can be written as $\tilde\nabla_\Phi\tilde\Gamma$ for some $\tilde\Gamma$, and whether its spectrum is then admissible, is not decided here. No claim is made in either direction.
+**Is there an anti-Hermitian potential whose density is a total derivative?** The exclusion in the reality part of §*The Action* is the exclusion of an anti-Hermitian part, because that part makes the action's density imaginary. An anti-Hermitian part that is a total derivative — one whose contribution to the action is a boundary term — would make the action real up to a surface term, and the variation would be unaffected. Whether such a potential exists in this algebra, whether it can be written as $\tilde\nabla_\Phi\tilde\Gamma$ for some $\tilde\Gamma$, and whether its spectrum is then admissible, is not decided. No claim is made in either direction.
 
-**A second question follows from the doubling, and it is narrower.** The eigenspace of a branch is a right ideal $\mathbb{B}w$, and its Hermitian representative is $ww^{*}$. Whether the physical restriction to a Peirce carrier — the question the parent's §*Open Questions* raises for a non-central coefficient — can be imposed inside one eigenspace without breaking the $i$-invariance that produces the doubling, is open as well.
+**Can the Peirce restriction be imposed inside one eigenspace?** The eigenspace of a branch is a right ideal $\mathbb{B}w$, and its Hermitian representative is $ww^{*}$. Whether the physical restriction to a Peirce carrier — the question the parent's §*Open Questions* raises for a non-central coefficient — can be imposed inside one eigenspace without breaking the $i$-invariance that produces the doubling is open.
 
 ## Summary
 

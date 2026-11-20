@@ -106,7 +106,7 @@ so every nonzero displacement is invertible except the null ones.
 
 Two features of $\mathcal{Z}$ are used below. First, it is the common boundary of the three regions of the classification: $\langle\cdot\rangle_{\natural}$ is a continuous real function on $\mathbb{B}_{\Phi}$, its sign is locally constant off $\mathcal{Z}$, and a continuous path can change the sign only by passing through $\mathcal{Z}$. Second, the complement of $\mathcal{Z} \cup \{0\}$ has exactly three connected components: the spacelike region $N > 0$, and the two components of the timelike region $N < 0$, distinguished by the sign of $r'_t$, called the **future** and the **past**. This is the standard three-component structure of Minkowski space; it is what makes the cone a separating surface and not merely a level set.
 
-## The Barrier That the Rotor Group Preserves
+## The Barrier That $SU(2)$ Preserves
 
 ### Invariance of the Biquaternion Norm
 
@@ -136,7 +136,7 @@ The orbit statement is exactly the statement that the regions are the algebra's 
 
 ### Why the Barrier Is a Barrier
 
-Combining the two preceding subsections: the sign of $\langle\cdot\rangle_{\natural}$ is invariant under the rotor group, and it is locally constant off the cone. A physical process that transforms a configuration continuously — a sequence of boosts and rotations, a worldline, the propagation of a wavefront — therefore cannot carry a displacement from one component of the complement of $\mathcal{Z}$ to another. To pass from the future to the past, or from either to the spacelike region, such a process must land on $\mathcal{Z}$. The cone is not a wall that a process is forbidden to touch; it is the unique surface through which a continuous causal process can change its causal character, and a signal that reaches a spacelike-separated event must have left the cone at some point. The physical postulate that signals do not do so is the causal postulate. The algebra supplies the invariant structure on which the postulate acts.
+Combining the two preceding subsections: the sign of $\langle\cdot\rangle_{\natural}$ is invariant under $SU(2)$, and it is locally constant off the cone. A physical process that transforms a configuration continuously — a sequence of boosts and rotations, a worldline, the propagation of a wavefront — therefore cannot carry a displacement from one component of the complement of $\mathcal{Z}$ to another. To pass from the future to the past, or from either to the spacelike region, such a process must land on $\mathcal{Z}$. The cone is not a wall that a process is forbidden to touch; it is the unique surface through which a continuous causal process can change its causal character, and a signal that reaches a spacelike-separated event must have left the cone at some point. The physical postulate that signals do not do so is the causal postulate. The algebra supplies the invariant structure on which the postulate acts.
 
 ## Transitivity and Antisymmetry of the Causal Order
 
@@ -353,7 +353,7 @@ J^-(p) = \{\, q : q \preceq p \,\},
 E(p) = \mathbb{B}_{\Phi} \setminus \big(J^+(p) \cup J^-(p)\big).
 $$
 
-$J^+(p)$ and $J^-(p)$ are the **causal future** and **causal past** of $p$, and $E(p)$ is its **elsewhere**, the set of events with a spacelike separation from $p$. In terms of the displacement $\tilde{Q}_{qp}$, membership in $J^+(p)$ is the condition $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ with $\mathrm{Im}\,\mathrm{Sc}(\tilde{Q}_{qp}) \ge 0$; membership in $J^-(p)$ is the same norm condition with the opposite sign of the scalar part; and $E(p)$ is the set on which $\langle\tilde{Q}_{qp}\rangle_{\natural} > 0$. Each of the three sets is a union of orbits of the rotor group, and their common boundary is the light cone through $p$.
+$J^+(p)$ and $J^-(p)$ are the **causal future** and **causal past** of $p$, and $E(p)$ is its **elsewhere**, the set of events with a spacelike separation from $p$. In terms of the displacement $\tilde{Q}_{qp}$, membership in $J^+(p)$ is the condition $\langle\tilde{Q}_{qp}\rangle_{\natural} \le 0$ with $\mathrm{Im}\,\mathrm{Sc}(\tilde{Q}_{qp}) \ge 0$; membership in $J^-(p)$ is the same norm condition with the opposite sign of the scalar part; and $E(p)$ is the set on which $\langle\tilde{Q}_{qp}\rangle_{\natural} > 0$. Each of the three sets is a union of orbits of $SU(2)$, and their common boundary is the light cone through $p$.
 
 The information-theoretic content is the following pair of statements.
 

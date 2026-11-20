@@ -207,6 +207,8 @@ $$
 
 the last step because every generator of $SU(2)$ is traceless. No array enters the argument.
 
+The same conclusion in the rotor's own terms. $SU(2)$ is $\mathrm{SU}(2)=\mathrm{Spin}(3)$, and its carriers are the three the algebra has: the trivial one, the minimal left ideal, and the adjoint. Left multiplication keeps the letter of its operand, so the spinor carrier and its conjugate are the same module, $2\cong\bar 2$; every carrier is therefore real or pseudoreal, the symmetric square contains no invariant third-rank object, and no symmetrised trace of three generators can be non-zero. The vanishing is a consequence of the carrier census, not of an index computation.
+
 The same conclusion holds for every $SU(2)$ representation: each is real or pseudoreal, the cubic invariant does not exist, and the triangle coefficient vanishes — verified on the spins $\tfrac12$, $1$, $\tfrac32$ and $2$. The step that makes this useful is the sign rule: because a left-handed doublet and a right-handed doublet contribute with opposite signs, and because each is separately anomalous only through a coefficient that is already zero, **$SU(2)$ is anomaly-free whatever its fermion content.** This is a property of the group, not of the model.
 
 **The abelian factor.** For the central $\mathrm{U}(1)$ the coefficient is the cubic charge sum. The framework's own central phase acts as a **scalar** on the algebra: multiplication by $\exp(i\theta_{\mathrm{cen}})$ multiplies every coefficient of a state by the same factor, so a state and its partner of the opposite chirality carry the *same* charge $ϙ$. The two contributions to the cubic sum are therefore $+ϙ^3$ and $-ϙ^3$, the sign being the left-minus-right rule and not a difference of charges,

@@ -138,11 +138,7 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 ## Open Questions
 
-1. **The extra four parameters.** Whether the carrier's remaining freedom can be read as a second fluid, with its own density and phase, is not settled. The block's article records the doubling and leaves it.
-
-2. **The condition's source and the current.** The source term in $\sum_\mu\varepsilon_\mu\partial_\mu A_\mu$ is $-\frac{iϙ}{\hbar}A^{\mathrm{ext}}\cdot A$; whether it is the divergence of a current the fluid can name — as the scalar rung's $ϙ\vec j$ is — is not computed here.
-
-3. **The massless limit.** As at the free rung, the fluid reading does not survive $k_m=0$, and the charged case adds a second reason: the condition's source is present at $k_m=0$ as well, so the limit loses both the condition and the reading.
+**The extra four parameters.** Whether the carrier's remaining freedom can be read as a second fluid, with its own density and phase, is not settled.
 
 ## Summary
 

@@ -168,11 +168,7 @@ with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum t
 
 ## Open Questions
 
-**Is the $(1-\gamma_5)$ projection derivable from the algebra's structure?** The corpus writes it as the right multiplication by $\vec e_z$ and treats the projection as exact. Whether the choice of that unit imaginary vector is fixed by something deeper, or is a convention matching the observed chirality, is not settled here.
-
-**Can the contact's first correction be computed in the corpus's notation?** The $O(\partial^2/M_W^2)$ term is standard and the corpus does not compute it; a computation would test the elimination's bookkeeping at the next order.
-
-**Does the algebra carry the neutral current as exactly as the charged one?** The Møller article computes the parity-violating asymmetry and records the answer; the two currents' statuses are compared there and not here.
+**Is the $(1-\gamma_5)$ projection derivable from the algebra's structure?** The corpus writes it as the right multiplication by $\vec e_z$ and treats the projection as exact. Whether the choice of that unit imaginary vector is fixed by something deeper, or is a convention matching the observed chirality, is not settled.
 
 ## Summary
 

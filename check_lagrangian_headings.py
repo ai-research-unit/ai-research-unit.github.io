@@ -19,52 +19,52 @@ import sys
 
 # Slots that may carry more than one section: 3 when the action is stated in
 # blocks, 4 when the variation is run twice or closes with the bracket
-# decomposition, 7 in three fluid articles, 9 when a current is denied as well
-# as stated, 12 when the ledger separates what the method adds from what the
+# decomposition, 6 in three fluid articles, 7 when a current is denied as well
+# as stated, 8 when the ledger separates what the method adds from what the
 # chart adds.
-REPEATABLE = ('3', '4', '7', '9', '12', 'KEEP')
+#
+# The five chart blocks -- the Legendre transform, the two settings, the limit,
+# the comparisons and the reconstruction -- are subsections now, so a top-level
+# heading carrying one of their names is a regression and this script fails it.
+REPEATABLE = ('3', '4', '6', '7', '8', 'KEEP')
 
 MANDATORY = [
     ('1', 'Introduction'),
     ('2', 'Conventions'),
     ('3', 'The Action in '),
     ('4', 'The Variation'),
-    ('7', 'The Structural Consequence'),
-    ('9', 'The Noether Currents'),
-    ('12', 'What the Principle Adds and What It Relabels'),
-    ('15', 'Summary'),
-    ('16', 'Summary of Notation'),
-    ('17', 'Further Reading'),
+    ('5', 'The Constraints the Action Imposes'),
+    ('6', 'The Structural Consequence'),
+    ('7', 'The Noether Currents'),
+    ('8', 'What the Principle Adds and What It Relabels'),
+    ('10', 'Summary'),
+    ('11', 'Summary of Notation'),
+    ('12', 'Further Reading'),
 ]
 
 CONDITIONAL = []
 
-# The spine, in order. Slot 5 is retired.
+# The spine, in order: twelve slots, numbered without gaps.
 CANONICAL = [
     ('1', 'Introduction'),
     ('2', 'Conventions'),
     ('3', 'The Action in '),
     ('4', 'The Variation'),
-    ('6', 'The Constraints the Action Imposes'),
-    ('7', 'The Structural Consequence'),
-    ('9', 'The Noether Currents'),
-    ('M3', 'The Legendre Transform'),
-    ('10', 'The Two Settings'),
-    ('11', 'The Limits and the Truncation\u2019s Error'),
-    ('12', 'What the Principle Adds and What It Relabels'),
-    ('13', 'Comparisons with Other Formulations'),
-    ('P2', 'The Reconstruction and Its Limits'),
-    ('14', 'Open Questions'),
-    ('15', 'Summary'),
-    ('16', 'Summary of Notation'),
-    ('17', 'Further Reading'),
+    ('5', 'The Constraints the Action Imposes'),
+    ('6', 'The Structural Consequence'),
+    ('7', 'The Noether Currents'),
+    ('8', 'What the Principle Adds and What It Relabels'),
+    ('9', 'Open Questions'),
+    ('10', 'Summary'),
+    ('11', 'Summary of Notation'),
+    ('12', 'Further Reading'),
     ('KEEP', 'Aside:'),
     ('KEEP', 'Verification'),
 ]
 
 # The QCD article is the only sector article. Its nine sections depend on
 # individual slots -- the covariant derivative on slot 3, gauge fixing on slot
-# 6, the vertices on slot 7 -- so they interleave by necessity and are checked
+# 5, the vertices on slot 6 -- so they interleave by necessity and are checked
 # for internal order only, never for position on the spine.
 SECTOR = [
     ('S1', 'Why Three Colours'),

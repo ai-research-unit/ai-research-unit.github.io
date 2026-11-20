@@ -96,6 +96,22 @@ and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde
 
 **What reality does not buy. Not at issue here.** The claim is that the action is real and that the pair has no one-element rival; how much weaker a real action is than a real spectrum is the momentum reading's question, and the limit reading's.
 
+### The Two Settings: The Massless Case and the Two Phases
+
+At $k_m=0$ the action has two independent phase symmetries,
+
+$$
+\tilde\Xi_L\mapsto e^{i\alpha}\tilde\Xi_L,
+\qquad
+\tilde\Xi_R\mapsto e^{i\beta}\tilde\Xi_R,
+$$
+
+with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is the electric phase; the difference is the chiral phase. For $k_m\ne0$ the mass term carries $\tilde\Xi_L^{*}\tilde\Xi_R$ and its conjugate, both invariant under the sum and neither invariant under the difference, so the chiral symmetry is broken by the mass and by nothing else.
+
+**The chiral current is the difference of the two part-currents**, and it is conserved exactly when $k_m=0$. The article does not derive it: it is the same Noether computation as the electric one with the two signs opposite, and its conservation is the statement that the mass term is the only obstruction.
+
+**One caution.** The chiral symmetry of this action is a symmetry of the two-part functional. Whether it is a symmetry of the parent's equation read as a single equation is the same question as whether the split is canonical, and the answer is not needed here.
+
 ## The Variation: The Pair
 
 Vary both parts, $\tilde\Xi_p\mapsto\tilde\Xi_p+\delta\tilde\Xi_p$, and take the real part. The result is
@@ -190,22 +206,6 @@ with $\mathcal{L}$ the integrand of the action. Its conservation on solutions is
 
 **What is deliberately absent.** There is no spin current in this section. The spin of this field is the rotor's (§*the polar companion*), it is not a Noether current of the element action, and a "spin current" derived here would be a second derivation of something the polar form already states exactly. The Dirac spin current as a Noether current belongs to the polar article, where the rotor is a variable.
 
-## The Two Settings: The Massless Case and the Two Phases
-
-At $k_m=0$ the action has two independent phase symmetries,
-
-$$
-\tilde\Xi_L\mapsto e^{i\alpha}\tilde\Xi_L,
-\qquad
-\tilde\Xi_R\mapsto e^{i\beta}\tilde\Xi_R,
-$$
-
-with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is the electric phase; the difference is the chiral phase. For $k_m\ne0$ the mass term carries $\tilde\Xi_L^{*}\tilde\Xi_R$ and its conjugate, both invariant under the sum and neither invariant under the difference, so the chiral symmetry is broken by the mass and by nothing else.
-
-**The chiral current is the difference of the two part-currents**, and it is conserved exactly when $k_m=0$. The article does not derive it: it is the same Noether computation as the electric one with the two signs opposite, and its conservation is the statement that the mass term is the only obstruction.
-
-**One caution.** The chiral symmetry of this action is a symmetry of the two-part functional. Whether it is a symmetry of the parent's equation read as a single equation is the same question as whether the split is canonical, and the answer is not needed here.
-
 ## What the Principle Adds and What It Relabels
 
 The honest ledger, as in the Schrödinger companion.
@@ -220,11 +220,9 @@ The honest ledger, as in the Schrödinger companion.
 
 ## Open Questions
 
-1. **Which reading of the current is physical.** That the current's spatial component is ambiguous is recorded in §*The Noether Currents* as a limitation of this derivation. The question that remains is the physical one: which element of the algebra the measured current is. It is not a question about conservation, which holds in both readings. An answer would have to state the two parts as functionals of one field, and the author knows of no such statement.
+**Which reading of the current is physical.** That the current's spatial component is ambiguous is recorded in §*The Noether Currents* as a limitation of this derivation. What remains is the physical question: which element of the algebra the measured current is. It is not a question about conservation, which holds in both readings. An answer would have to state the two parts as functionals of one field, and the author knows of no such statement.
 
-2. **The operator setting.** The action is written for a constant Hamiltonian, where the propagator is a closed form. With an operator Hamiltonian the same functional exists, but whether the two parts stay in $\mathbb{B}$ under a non-central potential is the parent's closure question, and the action inherits it.
-
-3. **The path integral.** The action is the extremum's object; the path integral is the sum over configurations. The two are different objects and the second is not attempted here.
+**The operator setting.** The action is written for a constant Hamiltonian, where the propagator is a closed form. With an operator Hamiltonian the same functional exists, but whether the two parts stay in $\mathbb{B}$ under a non-central potential is the parent's closure question, and the action inherits it.
 
 ## Summary
 

@@ -82,7 +82,7 @@ $$
 
 and the inverse of a rotor is the exponential of $-K$, also in the even part. So the group of rotors is a subgroup of the group of invertibles of $Cl^{0}(n)$, and the computation confirms the membership at $n=3,4$ through the polynomial fit.
 
-**The rotor group is the spin group.** By definition
+**$SU(2)$ is the spin group.** By definition
 
 $$
 \mathrm{Spin}(n)=\{R\in Cl^{0}(n):R\bar R=1,\ RVR^{-1}\subset V\},

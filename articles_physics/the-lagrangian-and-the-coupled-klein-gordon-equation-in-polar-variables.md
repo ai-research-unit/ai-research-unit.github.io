@@ -196,6 +196,18 @@ No other parameter moves. The claim is that this is the *whole* of minimal coupl
 
 **What it forbids.** A coupling that entered the frame's brackets would break the gauge invariance computed in the section on the charge, because the frame is what the gauge transformation rotates. The placement is therefore forced by the symmetry and not chosen for convenience.
 
+### The Reconstruction and Its Limits
+
+**The reconstruction is the free one's, and that is a fact worth stating.** The word does not contain the connection, so its inverse does not either: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$, by the same formulas as in the free polar article. **The coupling is in the action and in the potential; it is not in the chart.** A reader who expected the reconstructed variables to depend on $A_\mu$ has confused the field's parameterisation with its dynamics.
+
+**What the coupling does change is which frame is reconstructed.** The potential depends on the frame variables and not on $\varrho$ or $\theta_{\mathrm{pha}}$, so the Euler–Lagrange equations for the six frame parameters are constraints rather than evolutions: the frame sits where the potential is extremal. **The reconstruction recovers the frame, and then the constraint fixes it.** Recovering and fixing are two steps, and the article keeps them apart because the first is a property of the bijection and the second a property of the coupling.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element and the cone's apex, so a field that reaches $\varrho=0$ leaves the chart. The coupled theory has no exception: the connection's term is finite at $\varrho=0$ and the chart still fails there, because the failure is in the parameterisation and not in the dynamics.
+
+**The angle's limits.** The rotor's angle must be closed at $2\pi$ or the word misses the elements whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$. Both are inherited unchanged, and the coupling does not move either endpoint.
+
+**What the reconstruction does not give.** The flow of the constrained system. The bijection makes the variation the same variation; it does not make the eight parameter equations' reduced flow the coupled pair's flow. **This is the article's open question**, stated once in the introduction and once here, because it is the one place where the polar reading of the coupled field is weaker than the element reading.
+
 ## The Noether Currents
 
 ### The Charge, Its Sign and Its Gauge Invariance
@@ -252,25 +264,9 @@ with $n$ the winding of the phase and $\Phi_B$ the flux enclosed. So the mechani
 
 **The honest ledger.** For the central field the polar variational principle is Madelung's, and the coupling makes it Madelung's with a potential; that is standard and the article says so. For the general element the chart is exact and regular, the connection shifts two slots, and nothing about the closure changes — the closure was the chart's and it stays the chart's. The genuinely new content is small and precise: the two interaction terms' separation, and the observation that a velocity shift leaves the Legendre transform's rank alone, so the coupling cannot turn a regular system into a constrained one.
 
-## The Reconstruction and Its Limits
-
-**The reconstruction is the free one's, and that is a fact worth stating.** The word does not contain the connection, so its inverse does not either: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$, by the same formulas as in the free polar article. **The coupling is in the action and in the potential; it is not in the chart.** A reader who expected the reconstructed variables to depend on $A_\mu$ has confused the field's parameterisation with its dynamics.
-
-**What the coupling does change is which frame is reconstructed.** The potential depends on the frame variables and not on $\varrho$ or $\theta_{\mathrm{pha}}$, so the Euler–Lagrange equations for the six frame parameters are constraints rather than evolutions: the frame sits where the potential is extremal. **The reconstruction recovers the frame, and then the constraint fixes it.** Recovering and fixing are two steps, and the article keeps them apart because the first is a property of the bijection and the second a property of the coupling.
-
-**The scale's limit.** $\varrho>0$ excludes the zero element and the cone's apex, so a field that reaches $\varrho=0$ leaves the chart. The coupled theory has no exception: the connection's term is finite at $\varrho=0$ and the chart still fails there, because the failure is in the parameterisation and not in the dynamics.
-
-**The angle's limits.** The rotor's angle must be closed at $2\pi$ or the word misses the elements whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$. Both are inherited unchanged, and the coupling does not move either endpoint.
-
-**What the reconstruction does not give.** The flow of the constrained system. The bijection makes the variation the same variation; it does not make the eight parameter equations' reduced flow the coupled pair's flow. **This is the article's open question**, stated once in the introduction and once here, because it is the one place where the polar reading of the coupled field is weaker than the element reading.
-
 ## Open Questions
 
-**The explicit Jacobian with the connection.** The free polar article states the relation between the parameter equations and the four brackets and leaves the full Jacobian open. The coupling does not change the Jacobian, so the question is inherited rather than new; whether the connection's shift makes the correspondence triangular in a natural ordering — the phase's equation first, then the scale's, then the frame's — is not settled here.
-
-**The $\rho_{\mathrm{chg}}^{2}A^{2}$ term's role in the chart's reading.** The quadratic term is a potential and the chart's "potential" $V$ in the free article is a function of the frame; with the connection the potential acquires a term that depends on the frame only through $\varrho^{2}$. Whether that term has a reading as an effective mass or as a refractive index in the hydrodynamic picture is not attempted.
-
-**The operator setting.** The article treats the connection as an external field and the action as classical. In the operator setting the amplitude and the phase are fields, the quantum potential is a functional of the density, and the $\rho_{\mathrm{chg}}^{2}A^{2}$ term's renormalisation is the quantised theory's question. Whether the chart's exactness survives there in the sense of a well-defined functional integral is the path-integral article's subject and not this one's.
+**The $\rho_{\mathrm{chg}}^{2}A^{2}$ term's role in the chart's reading.** The quadratic term is a potential and the chart's $V$ in the free article is a function of the frame; with the connection the potential acquires a term that depends on the frame only through $\varrho^{2}$. Whether that term has a reading as an effective mass or as a refractive index in the hydrodynamic picture is not attempted.
 
 ## Summary
 

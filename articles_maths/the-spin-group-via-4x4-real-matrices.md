@@ -1,10 +1,10 @@
-# __The Rotor Group via $4\times4$ Real Matrices__
+# __The Spin Group via $4\times4$ Real Matrices__
 
 ## Introduction
 
-The rotor group is the group of unit quaternions. It is the sphere $S^3$ with the multiplication of $\mathbb{H}$, and its real dimension is three. The group has many matrix displays, and the one every text prints first is the complex one: the $2\times2$ matrices of $SU(2)$. That display is a good one, and it is not the only one. This article develops a second display in full, the $4\times4$ **real** left-regular matrices, and states exactly what the second display buys and what it costs.
+The spin group is the group of unit quaternions. It is the sphere $S^3$ with the multiplication of $\mathbb{H}$, and its real dimension is three. The group has many matrix displays, and the one every text prints first is the complex one: the $2\times2$ matrices of $SU(2)$. That display is a good one, and it is not the only one. This article develops a second display in full, the $4\times4$ **real** left-regular matrices, and states exactly what the second display buys and what it costs.
 
-**A group is not its matrices.** The rotor group is $S^3$. The group $SU(2)$ is the image of $S^3$ under one particular map, the $2\times2$ complex display. The two are isomorphic, and the isomorphism is a choice of display, not a definition. The sentence "the rotor group is $SU(2)$" is therefore true up to isomorphism and misleading in practice, because it makes the display look like the object. When the display is mistaken for the object, the properties of the display are read as properties of the group. The worst of those readings is the belief that the group has a preferred axis, which it does not.
+**A group is not its matrices.** The spin group is $S^3$. The group $SU(2)$ is the image of $S^3$ under one particular map, the $2\times2$ complex display. The two are isomorphic, and the isomorphism is a choice of display, not a definition. The sentence "the spin group is $SU(2)$" is therefore true up to isomorphism and misleading in practice, because it makes the display look like the object. When the display is mistaken for the object, the properties of the display are read as properties of the group. The worst of those readings is the belief that the group has a preferred axis, which it does not.
 
 **What the second display is.** Left multiplication by a unit quaternion is an isometry of $\mathbb{H}$ read as a four-dimensional real Euclidean space, so it is a $4\times4$ real orthogonal matrix of determinant one. The assignment $\tilde q\mapsto L(\tilde q)$ is multiplicative, injective, and carries the sign, $L(-\tilde q)=-L(\tilde q)$. Its image is a three-dimensional subgroup of the six-dimensional $SO(4)$, written here $SO_R(4)_{\mathrm{left}}$. The three infinitesimal generators $L_x,L_y,L_z$ are real antisymmetric matrices with integer entries.
 
@@ -12,24 +12,24 @@ The rotor group is the group of unit quaternions. It is the sphere $S^3$ with th
 
 **Roadmap.** The next section fixes the vocabulary and refuses the conflation. Then come the complex display, briefly, because the comparison needs it; the real display in full; the two side by side; the structural theorems; the two lists of what changes and what does not; the worked examples; the trade; the sentences that must not be written; the numerical check.
 
-## The Rotor Group and Its Matrix Representations
+## The Spin Group and Its Matrix Representations
 
-**Definition (rotor group).** The **rotor group** is
+**Definition (spin group).** The **spin group** is
 
 $$
-\mathrm{Rot}:=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=\{\tilde q\in\mathbb{H}:\lvert\tilde q\rvert=1\}=S^3,
+\mathrm{Spin}(3):=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=\{\tilde q\in\mathbb{H}:\lvert\tilde q\rvert=1\}=S^3,
 $$
 
-the unit quaternions under quaternion multiplication, of real dimension three. The corpus writes it $Sp(1)$ and calls its elements versors or rotors. This article writes $\mathrm{Rot}$ to keep the name of the group apart from the names of its displays.
+the unit quaternions under quaternion multiplication, of real dimension three. The corpus writes it $Sp(1)$ and calls its elements versors or rotors. This article writes $\mathrm{Spin}(3)$ to keep the name of the group apart from the names of its displays.
 
-**Definition (matrix display).** A **matrix display** of the rotor group is a homomorphism into $GL(V)$, for a real or complex vector space $V$, from $\mathrm{Rot}$ or from a product of copies of it. The rotor group is not any one of its displays. Four of them matter here.
+**Definition (matrix display).** A **matrix display** of the spin group is a homomorphism into $GL(V)$, for a real or complex vector space $V$, from $\mathrm{Spin}(3)$ or from a product of copies of it. The spin group is not any one of its displays. Four of them matter here.
 
-- The **defining display** is $\mathsf M_2:\mathrm{Rot}\to SU(2)\subset M_2(\mathbb{C})$, left multiplication on $\mathbb{H}$ read as a complex plane. It is written $\mathsf M_2$ because it is the restriction to $\mathrm{Rot}$ of the $2\times2$ element display fixed in *Matrix Representations Conventions*.
-- The **left regular display** is $L:\mathrm{Rot}\to SO_R(4)_{\mathrm{left}}\subset SO(4)$, left multiplication on $\mathbb{H}$ read as a real four-dimensional space. It is the subject of this article.
-- The **adjoint, or vector, display** is $\operatorname{Ad}:\mathrm{Rot}\to SO(3)$, the conjugation $\tilde q\mapsto[\tilde X\mapsto\tilde q\tilde X\tilde q^{-1}]$ on the imaginary part. It is the classical two-to-one cover, and it is not injective.
-- The **two-sided display** is $\rho:\mathrm{Rot}\times\mathrm{Rot}\to SO(4)$, $(\tilde q_L,\tilde q_R)\mapsto[\tilde X\mapsto\tilde q_L\tilde X\tilde q_R^{-1}]$. It is surjective with kernel $\{\pm(\mathrm{I}_4,\mathrm{I}_4)\}$.
+- The **defining display** is $\mathsf M_2:\mathrm{Spin}(3)\to SU(2)\subset M_2(\mathbb{C})$, left multiplication on $\mathbb{H}$ read as a complex plane. It is written $\mathsf M_2$ because it is the restriction to $\mathrm{Spin}(3)$ of the $2\times2$ element display fixed in *Matrix Representations Conventions*.
+- The **left regular display** is $L:\mathrm{Spin}(3)\to SO_R(4)_{\mathrm{left}}\subset SO(4)$, left multiplication on $\mathbb{H}$ read as a real four-dimensional space. It is the subject of this article.
+- The **adjoint, or vector, display** is $\operatorname{Ad}:\mathrm{Spin}(3)\to SO(3)$, the conjugation $\tilde q\mapsto[\tilde X\mapsto\tilde q\tilde X\tilde q^{-1}]$ on the imaginary part. It is the classical two-to-one cover, and it is not injective.
+- The **two-sided display** is $\rho:\mathrm{Spin}(3)\times\mathrm{Spin}(3)\to SO(4)$, $(\tilde q_L,\tilde q_R)\mapsto[\tilde X\mapsto\tilde q_L\tilde X\tilde q_R^{-1}]$. It is surjective with kernel $\{\pm(\mathrm{I}_4,\mathrm{I}_4)\}$.
 
-**The rule.** The article never writes "the rotor group is $SU(2)$" and never writes "$SU(2)=S^3$". It writes: the rotor group is $S^3$, and $SU(2)$ is its defining display. The same rule separates $S^3$ from the left regular image. The rule is not pedantry. Every error listed under *Pitfalls and Corrections* is a consequence of breaking it, and each is repaired by asking which map is meant.
+**The rule.** The article never writes "the spin group is $SU(2)$" and never writes "$SU(2)=S^3$". It writes: the spin group is $S^3$, and $SU(2)$ is its defining display. The same rule separates $S^3$ from the left regular image. The rule is not pedantry. Every error listed under *Pitfalls and Corrections* is a consequence of breaking it, and each is repaired by asking which map is meant.
 
 **Remark (the corpus writes $Sp(1)\cong SU(2)$, and that is consistent).** The quaternion articles of the corpus say that the group $Sp(1)$ of unit quaternions is $SU(2)$. Read as an isomorphism the sentence is true, since $\mathsf M_2$ is an isomorphism onto $SU(2)$. Read as an identity of objects it is the conflation this article refuses. The two readings differ exactly when two displays are compared, which is the whole subject here.
 
@@ -64,7 +64,7 @@ $$
 =\begin{pmatrix}q_t-iq_z&-iq_x-q_y\\-iq_x+q_y&q_t+iq_z\end{pmatrix}.
 $$
 
-**The group.** The display is multiplicative, since it is the restriction of an algebra isomorphism. For unit $\tilde q$ the matrix is unitary, $\mathsf M_2(\tilde q)^{\dagger}\mathsf M_2(\tilde q)=\mathsf M_2(\tilde q^{\natural})\mathsf M_2(\tilde q)=\mathrm{I}_2$, and its determinant is $\langle\tilde q\rangle_{\natural}=1$. So $\mathsf M_2$ carries $\mathrm{Rot}$ into $SU(2)$, and it is onto because every $SU(2)$ matrix has the displayed shape with real $q_\mu$ and unit norm. It is injective because the four entries recover $(q_t,q_x,q_y,q_z)$.
+**The group.** The display is multiplicative, since it is the restriction of an algebra isomorphism. For unit $\tilde q$ the matrix is unitary, $\mathsf M_2(\tilde q)^{\dagger}\mathsf M_2(\tilde q)=\mathsf M_2(\tilde q^{\natural})\mathsf M_2(\tilde q)=\mathrm{I}_2$, and its determinant is $\langle\tilde q\rangle_{\natural}=1$. So $\mathsf M_2$ carries $\mathrm{Spin}(3)$ into $SU(2)$, and it is onto because every $SU(2)$ matrix has the displayed shape with real $q_\mu$ and unit norm. It is injective because the four entries recover $(q_t,q_x,q_y,q_z)$.
 
 **The generators.** Write $J_k:=\mathsf M_2(\vec e_k)$, so $J_k$ is the image of the $k$-th basis vector and not a new object. The three are anti-Hermitian, $J_k^{\dagger}=-J_k$, and each squares to $-\mathrm{I}_2$. Since the display is multiplicative and $\vec e_x\vec e_y=\vec e_z$, the bracket is
 
@@ -145,10 +145,10 @@ The bracket closes on $\mathfrak{g}_L$ with $[L_i,L_j]=2\varepsilon_{ijk}L_k$, s
 **The group.** Define
 
 $$
-SO_R(4)_{\mathrm{left}}:=\exp(\mathfrak{g}_L)=\{\,L(\tilde q):\tilde q\in\mathrm{Rot}\,\}\subset SO(4),
+SO_R(4)_{\mathrm{left}}:=\exp(\mathfrak{g}_L)=\{\,L(\tilde q):\tilde q\in\mathrm{Spin}(3)\,\}\subset SO(4),
 $$
 
-of real dimension three inside the six-dimensional $SO(4)$. That the two descriptions agree is a theorem of *Structural Theorems*. The closed form below gives $\exp(\mathfrak{g}_L)\subset\{L(\tilde q):\tilde q\in\mathrm{Rot}\}$, and the other inclusion follows from the polar form of a unit quaternion.
+of real dimension three inside the six-dimensional $SO(4)$. That the two descriptions agree is a theorem of *Structural Theorems*. The closed form below gives $\exp(\mathfrak{g}_L)\subset\{L(\tilde q):\tilde q\in\mathrm{Spin}(3)\}$, and the other inclusion follows from the polar form of a unit quaternion.
 
 **The exponential, in closed form.** Let $\vec u$ be a unit imaginary quaternion and $\theta$ real. Since $\vec u^2=-e_t$, the matrix $U=n_xL_x+n_yL_y+n_zL_z$ satisfies $U^2=-\mathrm{I}_4$, and the series collapses,
 
@@ -199,7 +199,7 @@ The identity is the same, $N^2=-\mathrm{I}_2$ and $U^2=-\mathrm{I}_4$. The image
 
 ## Structural Theorems
 
-**Theorem (isomorphism).** The map $L:\mathrm{Rot}\to SO_R(4)_{\mathrm{left}}$ is an isomorphism of Lie groups. Both sides have real dimension three.
+**Theorem (isomorphism).** The map $L:\mathrm{Spin}(3)\to SO_R(4)_{\mathrm{left}}$ is an isomorphism of Lie groups. Both sides have real dimension three.
 
 *Proof.* The display is multiplicative, $L(\tilde q)L(\tilde p)=L(\tilde q\tilde p)$, because the $\nu$-th column of the left side is the coordinate column of $\tilde q\tilde p e_\nu=\tilde q(\tilde pe_\nu)$ and the $\nu$-th column of the right side is $\tilde q$ acting on the coordinate column of $\tilde pe_\nu$. It is injective, since the first column recovers $\tilde q$. It is smooth, because the entries are the coordinates of $\tilde q$. A bijective smooth homomorphism of Lie groups with smooth inverse is an isomorphism, and here the inverse is the first column. Both sides are three-dimensional: the group is $S^3$, and the image is the exponential of a three-dimensional algebra. ∎
 
@@ -209,7 +209,7 @@ The identity is the same, $N^2=-\mathrm{I}_2$ and $U^2=-\mathrm{I}_4$. The image
 
 **Remark (what faithfulness does and does not mean).** The adjoint display is not faithful: $\tilde q$ and $-\tilde q$ induce the same rotation of the imaginary part, which is the two-to-one cover $S^3\to SO(3)$. The left regular display is faithful because it does not confine itself to the imaginary part. Left multiplication by $\vec e_z$ sends $e_t$ to $\vec e_z$, so the scalar line is mixed into the vector part and the sign shows up as $L(-\tilde q)\neq L(\tilde q)$. A reader who looks only at the rotation induced on the imaginary part still cannot tell $\tilde q$ from $-\tilde q$. A reader who looks at the matrix can.
 
-**Theorem (irreducibility).** $\mathbb{R}^4$ is an irreducible real representation of $\mathrm{Rot}$ under left multiplication. It does not split as a line plus a three-space.
+**Theorem (irreducibility).** $\mathbb{R}^4$ is an irreducible real representation of $\mathrm{Spin}(3)$ under left multiplication. It does not split as a line plus a three-space.
 
 *Proof.* Let $W\subset\mathbb{H}$ be a real subspace carried into itself by left multiplication by every unit quaternion, hence by every quaternion, since the unit sphere spans $\mathbb{H}$ over $\mathbb{R}$ and scalar multiples are limits. If $W\neq0$ choose $X\in W$ with $X\neq0$. Then $\tilde qX\in W$ for every $\tilde q$, and left multiplication by $X$ is a linear isomorphism of $\mathbb{H}$, so $W$ contains $\{\tilde qX\}=\mathbb{H}$. Hence $W=\mathbb{H}$. ∎
 
@@ -231,9 +231,9 @@ The identity is the same, $N^2=-\mathrm{I}_2$ and $U^2=-\mathrm{I}_4$. The image
 
 **Remark (what the theorem does not say).** It does not say that the group has no axis; a group has no axes at all. It says that the display cannot mark one, because marking requires a diagonal generator and a real antisymmetric matrix cannot be diagonal. The marking in the complex display is therefore a feature of the display and not of the group, and the next theorem says what it is.
 
-**Theorem (frame dependence of the $2\times2$ display).** A complex $2\times2$ display of $\mathrm{Rot}$ requires a complex structure on $\mathbb{H}$, that is a unit imaginary quaternion $u$, that is a point of $S^2$. For each such $u$ the right multiplication $J_u(X)=Xu$ is a complex structure, every left multiplication is complex-linear for it, and in an adapted basis the generator $L(u)$ is diagonal with entries $\pm i$, while the other two are not. Different choices give conjugate displays. The real $4\times4$ display requires no such choice.
+**Theorem (frame dependence of the $2\times2$ display).** A complex $2\times2$ display of $\mathrm{Spin}(3)$ requires a complex structure on $\mathbb{H}$, that is a unit imaginary quaternion $u$, that is a point of $S^2$. For each such $u$ the right multiplication $J_u(X)=Xu$ is a complex structure, every left multiplication is complex-linear for it, and in an adapted basis the generator $L(u)$ is diagonal with entries $\pm i$, while the other two are not. Different choices give conjugate displays. The real $4\times4$ display requires no such choice.
 
-*Proof.* $J_u^2=-\mathrm{id}$ because $u^2=-e_t$, so $J_u$ makes $\mathbb{H}$ a complex two-space. Left and right multiplications commute, $L(\tilde q)J_u(X)=\tilde qXu=J_uL(\tilde q)(X)$, so each $L(\tilde q)$ is complex-linear and has a $2\times2$ matrix. The operator $L(u)$ is complex-linear and satisfies $L(u)^2=-\mathrm{id}$, so it is diagonal in an adapted complex basis with entries $\pm i$. The other two generators do not commute with $L(u)$, since $[L_x,L_y]=2L_z\neq0$, so they cannot be simultaneously diagonal with it. For the conjugacy, right multiplication by $p\in\mathrm{Rot}$ carries $J_u$ to $J_{p^{-1}up}$, and the conjugation action of $\mathrm{Rot}$ is transitive on $S^2$. ∎
+*Proof.* $J_u^2=-\mathrm{id}$ because $u^2=-e_t$, so $J_u$ makes $\mathbb{H}$ a complex two-space. Left and right multiplications commute, $L(\tilde q)J_u(X)=\tilde qXu=J_uL(\tilde q)(X)$, so each $L(\tilde q)$ is complex-linear and has a $2\times2$ matrix. The operator $L(u)$ is complex-linear and satisfies $L(u)^2=-\mathrm{id}$, so it is diagonal in an adapted complex basis with entries $\pm i$. The other two generators do not commute with $L(u)$, since $[L_x,L_y]=2L_z\neq0$, so they cannot be simultaneously diagonal with it. For the conjugacy, right multiplication by $p\in\mathrm{Spin}(3)$ carries $J_u$ to $J_{p^{-1}up}$, and the conjugation action of $\mathrm{Spin}(3)$ is transitive on $S^2$. ∎
 
 **Remark (the exact content of "frame-free").** The three generators pairwise fail to commute, so no complex display can have two diagonal generators. Every complex display therefore has at most one, and the corpus's display has exactly one, $J_z$. The axis $\vec e_z$ is not preferred by the group; it is preferred by the display, and the preference is the choice of $u=\vec e_z$. A computation that must not appear to prefer an axis can be written in the $4\times4$ real display, where the preference cannot be expressed at all.
 
@@ -241,7 +241,7 @@ The identity is the same, $N^2=-\mathrm{I}_2$ and $U^2=-\mathrm{I}_4$. The image
 
 **What does not change.** The following are properties of the group, and the display does not touch them.
 
-- **The group.** Both displays are $\mathrm{Rot}=S^3$ up to isomorphism, and both are faithful, so both carry the sign.
+- **The group.** Both displays are $\mathrm{Spin}(3)=S^3$ up to isomorphism, and both are faithful, so both carry the sign.
 - **The dimension.** Three, in both.
 - **The Lie algebra, up to isomorphism.** $\mathfrak{su}(2)$, $\mathfrak{g}_L$ and $\mathfrak{so}(3)$ are one algebra in three writings.
 - **The bracket type.** $2\varepsilon_{ijk}$ for the raw generators on both sides, $\varepsilon_{ijk}$ after halving, on both sides.
@@ -258,7 +258,7 @@ The identity is the same, $N^2=-\mathrm{I}_2$ and $U^2=-\mathrm{I}_4$. The image
 - **The ambient algebra.** $\mathfrak{u}(2)$, of real dimension four, becomes $\mathfrak{so}(4)$, of real dimension six. The image is three-dimensional in both, so the codimension grows from one to three.
 - **The reducibility of the ambient action.** The conjugation action splits as a line plus a three-space and the left action does not. The display chosen determines which of the two actions the matrix exhibits.
 
-**The one sentence that carries the section.** Nothing about the rotor group changes. The complex structure moves from being implicit in the display to being an explicit choice, and the real display is what the group looks like when that choice is not made.
+**The one sentence that carries the section.** Nothing about the spin group changes. The complex structure moves from being implicit in the display to being an explicit choice, and the real display is what the group looks like when that choice is not made.
 
 ## Worked Examples
 
@@ -320,7 +320,7 @@ of trace $2c$ and determinant one. The two displays agree on the scalar part up 
 
 **Nothing about the group is lost.** The left regular display is faithful, so the group and its multiplication are recovered exactly. The carrier $\mathbb{R}^4$ is the carrier $\mathbb{C}^2$ read over the reals, with the complex structure forgotten. The complex structure can be put back by choosing a point of $S^2$, and any two choices give conjugate displays. The complex module is therefore recoverable and not lost.
 
-**What is lost is the illusion.** The $2\times2$ display makes the complex structure look like part of the group, because the entries are complex and one generator is diagonal. It is not part of the group: it is a choice, and the choice is a point of $S^2$. A writer who forgets this writes that the rotor group has a preferred axis, or that the $z$-generator is the distinguished one. The $4\times4$ display cannot support the illusion, because its entries are real and no generator can be diagonal.
+**What is lost is the illusion.** The $2\times2$ display makes the complex structure look like part of the group, because the entries are complex and one generator is diagonal. It is not part of the group: it is a choice, and the choice is a point of $S^2$. A writer who forgets this writes that the spin group has a preferred axis, or that the $z$-generator is the distinguished one. The $4\times4$ display cannot support the illusion, because its entries are real and no generator can be diagonal.
 
 **What is gained.** Five things, each a theorem of *Structural Theorems* or a line of *The Left Regular Display*.
 
@@ -336,13 +336,13 @@ of trace $2c$ and determinant one. The two displays agree on the scalar part up 
 
 **The nine sentences that must not be written.** Each of them was written at some point in the drafting of this material, and each is wrong for a stated reason.
 
-1. **"The rotor group is $SU(2)$."** The rotor group is $S^3$. $SU(2)$ is its defining display, that is the image of $\mathsf M_2$. The two groups are isomorphic and the isomorphism is a choice.
+1. **"The spin group is $SU(2)$."** The spin group is $S^3$. $SU(2)$ is its defining display, that is the image of $\mathsf M_2$. The two groups are isomorphic and the isomorphism is a choice.
 2. **"$SU(2)=S^3$."** The same error in the other notation. $S^3$ is a subset of $\mathbb{H}$, $SU(2)$ is a subset of $M_2(\mathbb{C})$, and the identification is the display.
 3. **"$SO_R(4)_{\mathrm{left}}$ is all of $SO(4)$."** It is the three-dimensional image, and $SO(4)$ is six-dimensional. The other three dimensions are the right regular copy, and the two copies commute.
 4. **"$SO_R(4)_{\mathrm{left}}\cong\mathbb{H}$."** $\mathbb{H}$ is a four-dimensional vector space and the group is three-dimensional. The group acts on $\mathbb{H}$ and is not isomorphic to it. What is true is that the group is a subgroup of $GL(\mathbb{H})=GL(4,\mathbb{R})$.
 5. **"The left action fixes the scalar line."** It does not, since $L_z$ sends $e_t$ to $\vec e_z$. The conjugation action fixes the scalar line, and the left action is irreducible precisely because it does not.
 6. **"The left action splits as $\mathbf{1}\oplus\mathbf{3}$."** It is irreducible, by the left ideal argument of *Structural Theorems*. The splitting belongs to the conjugation action.
-7. **"$L_{\mathrm{axf}}$ restricted to $SU(2)$."** This mixes a display of the algebra, defined on all of $\mathbb{H}$, with a subgroup that lives in a different algebra. The object is $\rho_L:\mathrm{Rot}\to SO(4)$, $\tilde q\mapsto[X\mapsto\tilde qX]$, with image $SO_R(4)_{\mathrm{left}}$.
+7. **"$L_{\mathrm{axf}}$ restricted to $SU(2)$."** This mixes a display of the algebra, defined on all of $\mathbb{H}$, with a subgroup that lives in a different algebra. The object is $\rho_L:\mathrm{Spin}(3)\to SO(4)$, $\tilde q\mapsto[X\mapsto\tilde qX]$, with image $SO_R(4)_{\mathrm{left}}$.
 8. **"$SOL(4)$" or "$SOR(4)$".** The names collide with successive over-relaxation and read as typographical errors. The names used here are $\mathfrak{g}_L$ and $SO_R(4)_{\mathrm{left}}$, each defined in one line.
 9. **"$SO_R(4)_{\mathrm{left}}$ is unitary."** It is real orthogonal. It becomes unitary only after complexification, which is optional and outside this article.
 
@@ -396,7 +396,7 @@ of trace $2c$ and determinant one. The two displays agree on the scalar part up 
 
 ## Summary
 
-The rotor group is $S^3$, of real dimension three, and it has several faithful matrix displays. The defining display is the $2\times2$ complex one, $\mathsf M_2:\mathrm{Rot}\to SU(2)$. The left regular display is the $4\times4$ real one, $L:\mathrm{Rot}\to SO_R(4)_{\mathrm{left}}\subset SO(4)$, built from the multiplication alone: the $\nu$-th column of $L(\tilde q)$ is the coordinate column of $\tilde qe_\nu$.
+The spin group is $S^3$, of real dimension three, and it has several faithful matrix displays. The defining display is the $2\times2$ complex one, $\mathsf M_2:\mathrm{Spin}(3)\to SU(2)$. The left regular display is the $4\times4$ real one, $L:\mathrm{Spin}(3)\to SO_R(4)_{\mathrm{left}}\subset SO(4)$, built from the multiplication alone: the $\nu$-th column of $L(\tilde q)$ is the coordinate column of $\tilde qe_\nu$.
 
 The two displays are the same group. Both are injective, so both carry the sign, $L(-\tilde q)=-L(\tilde q)$. Both have three-dimensional Lie algebras isomorphic to $\mathfrak{su}(2)$, with the bracket $2\varepsilon_{ijk}$ on the raw generators and $\varepsilon_{ijk}$ after halving, on both sides. Both exponentials are the ordinary matrix exponential, and both collapse to $\cos\theta$ times the identity plus $\sin\theta$ times the generator, because the generator squares to minus the identity.
 
@@ -408,10 +408,10 @@ The structural results are these. The image is one of the two isoclinic copies o
 
 | symbol | meaning |
 |---|---|
-| $\mathrm{Rot}=Sp(1)=S^3$ | the rotor group, the unit quaternions |
+| $\mathrm{Spin}(3)=Sp(1)=S^3$ | the spin group, the unit quaternions |
 | $\mathbb{H}$, $e_t,\vec e_x,\vec e_y,\vec e_z$ | the quaternion algebra and its real basis, with $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ |
 | $\langle\tilde q\rangle_{\natural}$, $\tilde q^{\natural}$ | the quaternion norm and the conjugation |
-| $\mathsf M_2$ | the defining display, $\mathrm{Rot}\to SU(2)\subset M_2(\mathbb{C})$ |
+| $\mathsf M_2$ | the defining display, $\mathrm{Spin}(3)\to SU(2)\subset M_2(\mathbb{C})$ |
 | $J_x,J_y,J_z$ | $\mathsf M_2(\vec e_k)$, the three defining generators, with $J_z$ diagonal |
 | $L(\tilde q)$ | the left regular matrix, $L(\tilde q)_{\mu\nu}=[\tilde qe_\nu]_\mu$ |
 | $L_x,L_y,L_z$ | $L(\vec e_k)$, the three real generators, none diagonal |
@@ -419,7 +419,7 @@ The structural results are these. The image is one of the two isoclinic copies o
 | $SO_R(4)_{\mathrm{left}}$ | $\exp(\mathfrak{g}_L)$, the three-dimensional image in $SO(4)$ |
 | $SO(4)=SO_R(4)$ | the six-dimensional ambient orthogonal group |
 | $R(\tilde q)$, $\mathfrak{g}_R$ | the right regular family and its algebra, the other copy |
-| $\operatorname{Ad}$ | the conjugation display $\mathrm{Rot}\to SO(3)$, of kernel $\{\pm1\}$ |
+| $\operatorname{Ad}$ | the conjugation display $\mathrm{Spin}(3)\to SO(3)$, of kernel $\{\pm1\}$ |
 | $J_u$ | the complex structure $X\mapsto Xu$ defined by a unit imaginary $u$ |
 
 ## Further Reading

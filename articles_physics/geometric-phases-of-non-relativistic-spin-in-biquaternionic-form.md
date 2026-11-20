@@ -230,7 +230,7 @@ The rotating field exhibits the interpolation between the adiabatic Berry phase 
 
 **What the algebra organises.**
 
-- **The double cover is explicit.** The rotor group is $\mathbb{B}_{H}$, the unit real quaternions, and the kernel of the spinor representation is $\{\pm e_t\}$; the $4\pi$ periodicity is the statement that $-e_t$ acts trivially on the idempotents and non-trivially on the spinor. The algebra makes the covering map manifest.
+- **The double cover is explicit.** $SU(2)$ is $\mathbb{B}_{H}$, the unit real quaternions, and the kernel of the spinor representation is $\{\pm e_t\}$; the $4\pi$ periodicity is the statement that $-e_t$ acts trivially on the idempotents and non-trivially on the spinor. The algebra makes the covering map manifest.
 - **The phase lives in the spinor.** The idempotent contains no phase, as the Berry article records; the Hermitian form on the spinor, read through the scalar part, carries the Pancharatnam connection. The geometric phase is thus a property of the lift of the Bloch vector, not of the Bloch vector.
 - **The holonomy is a rotor with two faces.** The same unit quaternion produces the spatial rotation (observable in the orientation) and the spinor phase (observable in interference). The factor $\tfrac12$ relating them is the lift $\mathbb{B}_{H}\to SO(3)$.
 - **A common rotating-frame structure.** The rotating-field problem has the same effective Hamiltonian form as the Rabi problem, with the detuning replaced by $\omega_L\cos\theta_0-\omega$ and the transverse coupling by $\omega_L\sin\theta_0$. The framework makes the identity of the two problems visible.

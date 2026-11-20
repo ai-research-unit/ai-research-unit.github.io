@@ -140,6 +140,18 @@ with $R$ a function of the frame's angles alone. The scalar potential and the ve
 
 **The hand check.** Set the frame to the identity, $\theta_{\mathrm{rpd}}=0$. Then $\vec A=0$, the Hessian vanishes, and the chart degenerates: the pure-scale configuration has no kinetic term at all. The mass term is still $\varrho^{2}R(1)$, so the configuration is a minimum of the potential and not a solution of the dynamics. That degeneration is the chart's way of saying that a Proca field with no vector part is not a field.
 
+### The Reconstruction and Its Limits
+
+**The reconstruction is exact on a branch.** The chart is a diffeomorphism from the parameter domain onto one branch of the material sector's N-regular set, so the word can be inverted there: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. The inverse is the bijection read backwards and adds nothing to the action.
+
+**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12k_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12k_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element, so a field that reaches $\varrho=0$ leaves the chart. For the Proca field that is not a pathology but a boundary: the mass shell's two branches meet only through the origin, and the origin is excluded.
+
+**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. Neither is a convention of this article; both are properties of the parameterisation it inherits.
+
+**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow, and the article says so. **The frame's reconstruction has a further weakness here**: the mass term is a function of the frame, $R(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})\varrho^{2}$, so the reconstructed frame is constrained by the potential and is not a free coordinate. That is not a defect of the map — it is the statement that the Proca field's frame is where the mass is extremal.
+
 ## The Noether Currents: The Currents in the Chart
 
 **The charge is the momentum conjugate to the phase.** The action depends on $\theta_{\mathrm{pha}}$ only through its gradient, so the phase rotation is a symmetry and the Noether charge is the momentum conjugate to the phase:
@@ -176,25 +188,11 @@ the temporal slot of the element form's current, by the chain rule and because t
 
 **The distinction that matters.** The first-order companions' charts expose a constrained system and their variational principles are constrained systems. This one does not, and the difference is the order of the field equation and not the choice of variables. The chart's genuine gain is that the coupling becomes a shift of one coordinate and the gauge group becomes one coordinate, and its genuine cost is that the equation becomes a contraction with a field-dependent frame.
 
-## The Reconstruction and Its Limits
-
-**The reconstruction is exact on a branch.** The chart is a diffeomorphism from the parameter domain onto one branch of the material sector's N-regular set, so the word can be inverted there: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. The inverse is the bijection read backwards and adds nothing to the action.
-
-**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12k_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12k_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
-
-**The scale's limit.** $\varrho>0$ excludes the zero element, so a field that reaches $\varrho=0$ leaves the chart. For the Proca field that is not a pathology but a boundary: the mass shell's two branches meet only through the origin, and the origin is excluded.
-
-**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. Neither is a convention of this article; both are properties of the parameterisation it inherits.
-
-**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow, and the article says so. **The frame's reconstruction has a further weakness here**: the mass term is a function of the frame, $R(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})\varrho^{2}$, so the reconstructed frame is constrained by the potential and is not a free coordinate. That is not a defect of the map — it is the statement that the Proca field's frame is where the mass is extremal.
-
 ## Open Questions
 
 **The Hessian.** Whether the metric $G$ on the eight-dimensional parameter space is non-degenerate everywhere on the N-regular set — and if not, where it degenerates — is not established. The article states the count and the formal second-order structure and stops there.
 
 **The metric's signs.** Positivity of the energy in the chart requires the metric's signs and the mass term's sign to cooperate. The mass term's sign is fixed on the material slice and its chart value is $\varrho^{2}$ there; whether the general complex case has positive energy is open, and it is the chart's form of the element form's trace question.
-
-**The field term's chart form.** The quadratic form's coefficients are not displayed. A future computation would give $G$ explicitly and would state which bracket each coefficient comes from; the article records the structure and not the table.
 
 ## Summary
 

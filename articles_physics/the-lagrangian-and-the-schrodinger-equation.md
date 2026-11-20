@@ -127,6 +127,16 @@ a form the companion article uses, because there the parameters are real and the
 
 **Why the kinetic term is antisymmetrized.** The symmetric combination $\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)$ is complex. Its real part is a total derivative, $\mathrm{Re}\,\mathrm{Sc}(\tilde\Xi^{*}\partial\tilde\Xi)=\tfrac14\partial\rho$ with $\rho=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\,\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})$, and its imaginary part is the whole of the kinetic Lagrangian. The antisymmetrization keeps the imaginary part and discards the total derivative, which is the same device as in the standard action $\int\bigl[(i\hbar/2)(\psi^{*}\dot\psi-\dot\psi^{*}\psi)-\psi^{*}\hat H\psi\bigr]$. The companion uses the same identity once, in its kinetic term, and the identity is not repeated there.
 
+### The Two Settings
+
+The parent's two settings are different equations, and the variational principle inherits the distinction.
+
+**The constant setting.** $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t$ and $\vec h_\Psi$ fixed numbers. The equation is an ordinary differential equation in $r'_t$, the action is an integral over that one variable, and its Euler–Lagrange equation is the equation. The solution is the closed form $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$, and along it the two currents of the previous section are conserved. Everything in this article about solutions is about this setting.
+
+**The operator setting.** $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V$. The equation is the ordinary Schrödinger equation, a partial differential equation. The action is the same expression with the operator in the coupling and an integral over $r'_t$ and the three space coordinates, and its Euler–Lagrange equation is the same equation, now a field equation. Its solution is not a finite product of exponentials, and the closed form of the constant setting does not apply.
+
+**No transfer.** A statement about the constant setting is not a statement about the operator setting. The conserved energy of the previous section is a number in the first and a density in the second. The closed-form propagator of the first has no counterpart in the second. The variational principle is stated for the constant setting here; the operator setting's action is the standard field-theoretic one with a central operator, and its working out belongs to *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* and to the companion article's Madelung section.
+
 ## The Variation: The Two Writings from the Action
 
 The parent's two writings are not two actions. There is one real functional, and the two writings are two readings of it.
@@ -259,16 +269,6 @@ In the operator setting the action has a spatial density as well, and the transl
 
 There is no spin current. The Schrödinger equation has no spin; the field carries a rotor, but the rotor is a frame datum and carries no spin density in this equation. A "spin current" written for the Schrödinger case would be a confusion of the rotor's geometry with a conserved spin, and the Dirac spin current belongs to the polar article on the Dirac equation.
 
-## The Two Settings
-
-The parent's two settings are different equations, and the variational principle inherits the distinction.
-
-**The constant setting.** $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with $h_t$ and $\vec h_\Psi$ fixed numbers. The equation is an ordinary differential equation in $r'_t$, the action is an integral over that one variable, and its Euler–Lagrange equation is the equation. The solution is the closed form $\tilde Q(r'_t)=\exp(-i\theta_{\mathrm{evo}})$, and along it the two currents of the previous section are conserved. Everything in this article about solutions is about this setting.
-
-**The operator setting.** $\tilde H_\Psi=\hat H\,e_t$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V$. The equation is the ordinary Schrödinger equation, a partial differential equation. The action is the same expression with the operator in the coupling and an integral over $r'_t$ and the three space coordinates, and its Euler–Lagrange equation is the same equation, now a field equation. Its solution is not a finite product of exponentials, and the closed form of the constant setting does not apply.
-
-**No transfer.** A statement about the constant setting is not a statement about the operator setting. The conserved energy of the previous section is a number in the first and a density in the second. The closed-form propagator of the first has no counterpart in the second. The variational principle is stated for the constant setting here; the operator setting's action is the standard field-theoretic one with a central operator, and its working out belongs to *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case* and to the companion article's Madelung section.
-
 ## What the Principle Adds and What It Relabels
 
 **Adds.** A compact statement of the equation, one action and one variation. The two currents in one derivation. The variational reading of the two writings: one functional, and the choice of which factor carries the central $i$. And the variational status of the two settings, which the action makes explicit rather than implicit.
@@ -281,11 +281,7 @@ The parent's two settings are different equations, and the variational principle
 
 ## Open Questions
 
-**1. A potential with a vector part.** The action's reality needs only $\tilde H_\Psi^{*}=\tilde H_\Psi$, and the polar parent records that a Hamiltonian with $\vec h_\Psi\ne0$ carries a central field off the centre at once. The variational principle inherits the question in its own terms: whether the carrier's closure under the flow, and the reality of the action, survive a potential whose vector part is not aligned with a fixed axis. Nothing here settles it.
-
-**2. The stress tensor, as a check.** The energy component of the operator action's stress tensor should reproduce the tensor of *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form*. This is a check and not a derivation, and it is not performed here.
-
-**3. The relation to the path integral.** The variational principle is the extremum of an action; the path integral is the sum over configurations. Both are integral in form and they are different objects. The path-integral version belongs to *The Path Integral and the Schrödinger Equation in Biquaternionic Form*, and the relation between the two is not attempted here.
+**A potential with a vector part.** The action's reality needs only $\tilde H_\Psi^{*}=\tilde H_\Psi$, and the polar parent records that a Hamiltonian with $\vec h_\Psi\ne0$ carries a central field off the centre at once. The variational principle inherits the question in its own terms: whether the carrier's closure under the flow, and the reality of the action, survive a potential whose vector part is not aligned with a fixed axis. Nothing here settles it.
 
 ## Summary
 

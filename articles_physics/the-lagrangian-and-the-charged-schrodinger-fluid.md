@@ -138,9 +138,9 @@ with $q$ the charge. The velocity is the mechanical one, and that is the whole o
 
 ## Open Questions
 
-1. **The pair's rank in the operator setting.** The action above is written for a homogeneous field. In the inhomogeneous case the amplitude's gradient and the potential's gradient both carry spatial structure, and whether the Clebsch identification survives — that is, whether the potential remains a second potential when $\vec B$ varies — is not settled here. The block's charged article keeps its identity $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$ in general, so the rank statement survives; the *representation* is the part that may not.
+**The pair's rank in the operator setting.** The action is written for a homogeneous field. In the inhomogeneous case the amplitude's gradient and the potential's gradient both carry spatial structure, and whether the Clebsch identification survives — whether the potential remains a second potential when $\vec B$ varies — is not settled. The block's charged article keeps its identity $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$ in general, so the rank statement survives; the representation is the part that may not.
 
-2. **The boundary term at the nodes.** The action is stated on $\varrho>0$, as in the free companion. Whether the gradient energy's variation produces a boundary term at a nodal surface that requires a condition there is not addressed, and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) is where the surface itself is described.
+**The boundary term at the nodes.** The action is stated on $\varrho>0$. Whether the gradient energy's variation produces a boundary term at a nodal surface that requires a condition there is not addressed, and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) is where the surface itself is described.
 
 ## Summary
 

@@ -90,6 +90,54 @@ It is a functional of the eight parameters and of the two connection numbers, it
 
 **What reality does not buy. Reality does not make the density positive.** The chart's density is real and can be negative; the sign of the charge density is *The Noether Currents*' question, and the sign of the energy is not in this section's reach.
 
+### The Two Settings: The Central Field in the Operator Setting
+
+**The word collapses.** With $\theta_{\mathrm{rpd}}=0$ and a rotor that is a sign, the two paragraphs of the free article apply: the boost and the rotor are trivial, $K=-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$, and the potential is $h_t \varrho^{2}$. With the connection in place and the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{2}/2m-ϙ\varphi+\hat V_{\mathrm{op}}$, the action becomes
+
+$$
+S=\int dt'\,d^{3}x\Big[-\hbar\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}
+-\frac{\hbar^{2}}{2m}\Big(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}\Big)
+-\varrho^{2}V_{\mathrm{op}}+ϙ\varphi\,\varrho^{2}\Big],
+$$
+
+which is the free article's Madelung action with the two covariant replacements: the phase gradient becomes the kinetic momentum over $\hbar$, and the potential energy is added. Both replacements are the same rule as everywhere else, and neither is optional.
+
+**The three coupling pieces.** Expanding the middle term separates the coupling into three parts,
+
+$$
+-\frac{\hbar^{2}}{2m}\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}
+=-\frac{\hbar^{2}}{2m}\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}
+-\frac{\hbar ϙ}{m}\varrho^{2}\,\vec A\cdot\nabla\theta_{\mathrm{pha}}
+-\frac{ϙ^{2}}{2m}\varrho^{2}A^{2},
+$$
+
+which are the free kinetic term, the paramagnetic term linear in $\vec A$, and the diamagnetic term quadratic in $\vec A$. The three are one object read at three orders, and the sign of the third is what makes the energy bounded below: the quadratic term is positive for every $\vec A$, so the coupled action's kinetic part is bounded below by zero, and the diamagnetism is a variational statement before it is a physical one.
+
+**The equations.** Varying $\theta_{\mathrm{pha}}$ gives the covariant continuity equation, varying $\varrho$ the covariant Hamilton–Jacobi equation with the quantum potential, and varying the sign gives nothing because the sign is a branch. The two are the polar companion's pair,
+
+$$
+\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot\Big(\varrho^{2}\,\frac{\vec\nabla_\Phi S-q\vec A}{m}\Big)=0,
+\qquad
+\partial_{t'}S+\frac{|\vec\nabla_\Phi S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
+$$
+
+with $S=\hbar\theta_{\mathrm{pha}}$ and $Q=-\hbar^{2}\Delta_\Phi \varrho/2m\varrho$, and the article does not re-derive them: they are the Euler–Lagrange equations of the action above, and the derivation is the free article's with two substitutions.
+
+**The current as the action's derivative.** The vector potential's conjugate is the current:
+
+$$
+-\frac{\partial L}{\partial\vec A}
+=\frac{\hbar^{2}}{2m}\varrho^{2}\cdot 2\Big(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big)\frac{ϙ}{\hbar}
+=ϙ\,\frac{\varrho^{2}\big(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\big)}{m}
+=ϙ\,\vec j,
+$$
+
+which is the element-form companion's identity in the chart and is one line here because the action's only $\vec A$-dependence is the modulus. The polar form of the identity is worth having because it displays the current's three pieces at once: a gradient piece, a term linear in $\vec A$ from the paramagnetic term, and a term quadratic in $\vec A$ from the diamagnetic one — and only the sum is gauge invariant.
+
+**The vorticity, unchanged in form.** The velocity is $\vec\pi/m$ and its curl is $ϙ\vec B/m$; the parameterization does not change that, because the curl of a gradient vanishes and the parameterization only names the gradient. So the free article's irrotationality statement becomes: the canonical flow is irrotational, the kinetic flow is rotational exactly where the field is, and the chart exhibits the difference as the difference between $\vec\nabla_\Phi S$ and $\vec\pi$.
+
+**What the operator setting does not have.** It has no vanishing momenta. The action is second order in the spatial derivatives and first order in time, so the momenta conjugate to $\varrho$ and to the phase are both nontrivial, and the constraint structure of the constant setting has no analogue here. The two settings' variational principles are different objects, and the article keeps them apart as the parents do.
+
 ## The Variation: The Euler–Lagrange Equations
 
 **The momenta are the free ones.** Differentiating with respect to the velocities and using $\partial(\vec\Omega\cdot\vec u_{\mathrm b})/\partial\dot\theta_{\mathrm{rpd}}=0$ (the angular velocity is the rotor's own, not the boost's):
@@ -195,6 +243,20 @@ because the derivative is first order and the connection is central. The claim i
 
 **Why the first-order case can say it so plainly.** A second-order derivative would produce a term quadratic in the connection, and the shift would have to be checked against it. Here there is no such term: the connection enters linearly and only through the potential, so the shift is exact and not a truncation. That is the structural difference between this chart and the Klein–Gordon one, whose coupling shifts a bracket rather than a potential.
 
+### The Reconstruction and Its Limits
+
+**The reconstruction, for the coupled central pair.** The word does not contain the connection, so the inverse map is the free chart's: $\varrho$ is the modulus, $\theta_{\mathrm{pha}}$ the argument, and the rapidity and rotor are recovered from the two norms as in the free polar article. **The coupling changes the potential's frame dependence and not the chart**, and a reader who expected otherwise has confused the parameterisation with the dynamics.
+
+**The node, and why the coupling makes it worse.** At $\varrho=0$ the phase is undefined and the reconstruction fails. In the free theory that failure is the nodal set, and it is the corpus's circulation article's subject. Here the potential is $V_{\mathrm{gco}}=(h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,((\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b})$, which depends on the frame and not on $\varrho$; **so the failure at the node is in the phase and not in the constraint**, and the frame is still reconstructed there. That is a real difference between the two failures and the article does not blur it.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element, and the coupled chart has no exception: the connection's term is finite at $\varrho=0$ and the chart still fails, because the failure is in the parameterisation.
+
+**The angle's limits.** The rotor's angle closed at $2\pi$, the phase on a half-open interval of length $\pi$. Both inherited unchanged.
+
+**What the reconstruction does not give.** The flow, and here the gap is narrow: the two evolution equations are the continuity equation and the guidance equation with the shifted potential, and the article derives both from the action. **What it does not derive is that the reduced flow is the coupled pair's flow**, which is the article's open question. The reconstruction recovers the field; the flow is argued separately.
+
+**One limit the free article does not have.** The coupled potential depends on the frame, so the frame is reconstructed and then fixed by an extremum rather than evolved. **A reconstruction that treated the frame as a dynamical coordinate would be wrong here**, and the section exists partly to say so.
+
 ## The Noether Currents: The Coupled Charge
 
 **The current is the potential's conjugate.** In the chart the connection couples to the phase's rate only, so the current that the connection sees is the phase's conjugate momentum with the charge as its coefficient:
@@ -211,54 +273,6 @@ with $N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ the density of the free section a
 
 **What the gauge direction does to the current.** The current is invariant under the gauge transformation of the chart, because $N$ is built from $\varrho$ and the frame and the transformation moves only the phase. That invariance is the statement that the current is physical, and it is the chart's form of the element article's gauge invariance of the Noether current.
 
-## The Two Settings: The Central Field in the Operator Setting
-
-**The word collapses.** With $\theta_{\mathrm{rpd}}=0$ and a rotor that is a sign, the two paragraphs of the free article apply: the boost and the rotor are trivial, $K=-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$, and the potential is $h_t \varrho^{2}$. With the connection in place and the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{2}/2m-ϙ\varphi+\hat V_{\mathrm{op}}$, the action becomes
-
-$$
-S=\int dt'\,d^{3}x\Big[-\hbar\,\varrho^{2}\,\dot\theta_{\mathrm{pha}}
--\frac{\hbar^{2}}{2m}\Big(|\vec\nabla_\Phi \varrho|^{2}+\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}\Big)
--\varrho^{2}V_{\mathrm{op}}+ϙ\varphi\,\varrho^{2}\Big],
-$$
-
-which is the free article's Madelung action with the two covariant replacements: the phase gradient becomes the kinetic momentum over $\hbar$, and the potential energy is added. Both replacements are the same rule as everywhere else, and neither is optional.
-
-**The three coupling pieces.** Expanding the middle term separates the coupling into three parts,
-
-$$
--\frac{\hbar^{2}}{2m}\varrho^{2}\Big|\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big|^{2}
-=-\frac{\hbar^{2}}{2m}\varrho^{2}|\vec\nabla_\Phi\theta_{\mathrm{pha}}|^{2}
--\frac{\hbar ϙ}{m}\varrho^{2}\,\vec A\cdot\nabla\theta_{\mathrm{pha}}
--\frac{ϙ^{2}}{2m}\varrho^{2}A^{2},
-$$
-
-which are the free kinetic term, the paramagnetic term linear in $\vec A$, and the diamagnetic term quadratic in $\vec A$. The three are one object read at three orders, and the sign of the third is what makes the energy bounded below: the quadratic term is positive for every $\vec A$, so the coupled action's kinetic part is bounded below by zero, and the diamagnetism is a variational statement before it is a physical one.
-
-**The equations.** Varying $\theta_{\mathrm{pha}}$ gives the covariant continuity equation, varying $\varrho$ the covariant Hamilton–Jacobi equation with the quantum potential, and varying the sign gives nothing because the sign is a branch. The two are the polar companion's pair,
-
-$$
-\partial_{t'}\varrho^{2}+\vec\nabla_\Phi\cdot\Big(\varrho^{2}\,\frac{\vec\nabla_\Phi S-q\vec A}{m}\Big)=0,
-\qquad
-\partial_{t'}S+\frac{|\vec\nabla_\Phi S-q\vec A|^{2}}{2m}-ϙ\varphi+Q=0,
-$$
-
-with $S=\hbar\theta_{\mathrm{pha}}$ and $Q=-\hbar^{2}\Delta_\Phi \varrho/2m\varrho$, and the article does not re-derive them: they are the Euler–Lagrange equations of the action above, and the derivation is the free article's with two substitutions.
-
-**The current as the action's derivative.** The vector potential's conjugate is the current:
-
-$$
--\frac{\partial L}{\partial\vec A}
-=\frac{\hbar^{2}}{2m}\varrho^{2}\cdot 2\Big(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Big)\frac{ϙ}{\hbar}
-=ϙ\,\frac{\varrho^{2}\big(\hbar\nabla\theta_{\mathrm{pha}}-q\vec A\big)}{m}
-=ϙ\,\vec j,
-$$
-
-which is the element-form companion's identity in the chart and is one line here because the action's only $\vec A$-dependence is the modulus. The polar form of the identity is worth having because it displays the current's three pieces at once: a gradient piece, a term linear in $\vec A$ from the paramagnetic term, and a term quadratic in $\vec A$ from the diamagnetic one — and only the sum is gauge invariant.
-
-**The vorticity, unchanged in form.** The velocity is $\vec\pi/m$ and its curl is $ϙ\vec B/m$; the parameterization does not change that, because the curl of a gradient vanishes and the parameterization only names the gradient. So the free article's irrotationality statement becomes: the canonical flow is irrotational, the kinetic flow is rotational exactly where the field is, and the chart exhibits the difference as the difference between $\vec\nabla_\Phi S$ and $\vec\pi$.
-
-**What the operator setting does not have.** It has no vanishing momenta. The action is second order in the spatial derivatives and first order in time, so the momenta conjugate to $\varrho$ and to the phase are both nontrivial, and the constraint structure of the constant setting has no analogue here. The two settings' variational principles are different objects, and the article keeps them apart as the parents do.
-
 ## What the Principle Adds and What It Relabels: And What It Does Not
 
 **Adds.** The coupled Lagrangian in the chart, and with it the two-number statement of minimal coupling: $h_t\mapsto h_t-ϙ\varphi$, $\vec h_\Psi\mapsto\vec h_\Psi-q\vec A$ in the potential, and nothing else. The statement that the kinetic term is untouched, with the algebraic reason — the connection is central and carries no velocity — and the corollary that the four vanishing momenta and the cross term are untouched. The covariant Madelung action with its three coupling pieces, its two Euler–Lagrange equations, and the current as $-\partial L/\partial\vec A$. And the gauge direction of the chart, with the invariant momentum $-\hbar N$ along it.
@@ -267,27 +281,13 @@ which is the element-form companion's identity in the chart and is one line here
 
 **The distinction that matters, stated once.** In the constant setting the coupling is a shift of the potential, so it touches the flow's numbers and not the flow's structure. In the operator setting the coupling is a covariant gradient, so it touches the kinetic term and not the potential's shape. The two settings' statements are different, and the polar chart is the only place where both are visible in one symbol — the phase bracket — because that is where the covariant derivative and the potential both live.
 
-## The Reconstruction and Its Limits
-
-**The reconstruction, for the coupled central pair.** The word does not contain the connection, so the inverse map is the free chart's: $\varrho$ is the modulus, $\theta_{\mathrm{pha}}$ the argument, and the rapidity and rotor are recovered from the two norms as in the free polar article. **The coupling changes the potential's frame dependence and not the chart**, and a reader who expected otherwise has confused the parameterisation with the dynamics.
-
-**The node, and why the coupling makes it worse.** At $\varrho=0$ the phase is undefined and the reconstruction fails. In the free theory that failure is the nodal set, and it is the corpus's circulation article's subject. Here the potential is $V_{\mathrm{gco}}=(h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,((\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b})$, which depends on the frame and not on $\varrho$; **so the failure at the node is in the phase and not in the constraint**, and the frame is still reconstructed there. That is a real difference between the two failures and the article does not blur it.
-
-**The scale's limit.** $\varrho>0$ excludes the zero element, and the coupled chart has no exception: the connection's term is finite at $\varrho=0$ and the chart still fails, because the failure is in the parameterisation.
-
-**The angle's limits.** The rotor's angle closed at $2\pi$, the phase on a half-open interval of length $\pi$. Both inherited unchanged.
-
-**What the reconstruction does not give.** The flow, and here the gap is narrow: the two evolution equations are the continuity equation and the guidance equation with the shifted potential, and the article derives both from the action. **What it does not derive is that the reduced flow is the coupled pair's flow**, which is the article's open question. The reconstruction recovers the field; the flow is argued separately.
-
-**One limit the free article does not have.** The coupled potential depends on the frame, so the frame is reconstructed and then fixed by an extremum rather than evolved. **A reconstruction that treated the frame as a dynamical coordinate would be wrong here**, and the section exists partly to say so.
-
 ## Open Questions
 
-**1. The coupled closure of the constrained system.** The free article leaves open whether the Dirac constraint analysis of the four vanishing momenta closes and reproduces the flow directly. The coupling does not change the constraints, so it does not change the question; but it does add one thing to check, namely that the Dirac bracket of the shifted potential's constraints reproduces the shifted flow and not the free one. The check is short and is not performed here.
+**The coupled closure of the constrained system.** The free article leaves open whether the Dirac constraint analysis of the four vanishing momenta closes and reproduces the flow directly. The coupling does not change the constraints, so it does not change the question; but it does add one thing to check, namely that the Dirac bracket of the shifted potential's constraints reproduces the shifted flow and not the free one. The check is short and is not performed here.
 
-**2. The operator setting for the general element.** The article's operator statements are the central field's. A boost that varies from point to point puts a gradient into the Hermitian bracket, and the connection's central-imaginary addition then sits alongside a Hermitian gradient term; how the three coupling pieces of §*The Two Settings: The Central Field in the Operator Setting* generalize to the four-bracket decomposition is not examined here.
+**The operator setting for the general element.** The article's operator statements are the central field's. A boost that varies from point to point puts a gradient into the Hermitian bracket, and the connection's central-imaginary addition then sits alongside a Hermitian gradient term; how the three coupling pieces of §*The Two Settings: The Central Field in the Operator Setting* generalize to the four-bracket decomposition is not examined here.
 
-**3. The coupling's own variation in the chart.** Varying the connection in the polar action gives the Maxwell equation with the current of §*The Two Settings: The Central Field in the Operator Setting* as source, and varying $\varphi$ gives the Gauss law with the density as its source. The chart has a sharper form of the second statement: the source is the momentum conjugate to the phase, $-\hbar N$, so the charge and the phase's momentum are one object. Whether that identification survives the constraint analysis of the constant-setting system is not examined here.
+**The coupling's own variation in the chart.** Varying the connection in the polar action gives the Maxwell equation with the current of §*The Two Settings: The Central Field in the Operator Setting* as source, and varying $\varphi$ gives the Gauss law with the density as its source. The chart has a sharper form of the second statement: the source is the momentum conjugate to the phase, $-\hbar N$, so the charge and the phase's momentum are one object. Whether that identification survives the constraint analysis of the constant-setting system is not examined here.
 
 ## Summary
 

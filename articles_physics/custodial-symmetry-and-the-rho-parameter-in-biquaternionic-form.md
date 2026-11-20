@@ -223,7 +223,7 @@ $$
 
 where the sum runs over the components that acquire vacuum expectation values, with isospin $T_i$ and third component $T_{3i}$. The electroweak $\mathrm{U}(1)_Y$ breaks custodial symmetry explicitly, so the formula is exact only at tree level in the limit $g_{\mathrm Y}\to0$; the hypercharge and the multiplet splittings generate corrections at higher order.
 
-**The relation to the pion's isospin.** The same $SU(2)$ that appears here is the framework's compact group, and the triplet $\vec\pi$ of the companion pion article transforms in its adjoint. The custodial triplet of would-be Goldstone modes and the pion triplet are both adjoints of the framework's $SU(2)$; the difference is that the custodial triplet is eaten by the gauge bosons while the pion triplet is physical, which is a statement about the gauging and the explicit breaking and not about the algebra. The framework's algebra carries both triplets; it does not by itself decide which is which.
+**The relation to the pion's isospin.** The same $SU(2)$ that appears here is the framework's compact group — $SU(2)$ under its biquaternion name, $\mathrm{SU}(2)=\mathrm{Spin}(3)$ — and the triplet $\vec\pi$ of the companion pion article transforms in its adjoint. The custodial triplet of would-be Goldstone modes and the pion triplet are both adjoints of the framework's $SU(2)$; the difference is that the custodial triplet is eaten by the gauge bosons while the pion triplet is physical, which is a statement about the gauging and the explicit breaking and not about the algebra. The framework's algebra carries both triplets; it does not by itself decide which is which.
 
 ## Custodial Symmetry and the Chiral Lagrangian
 

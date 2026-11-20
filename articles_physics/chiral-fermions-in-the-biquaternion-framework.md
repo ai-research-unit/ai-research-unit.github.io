@@ -106,7 +106,7 @@ an identity for arbitrary $ϙ_L,ϙ_R$.
 
 **The same fact read positively.** Restricted to the rotation group, the left action is the **spin representation** on a minimal left ideal — [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html) states it and proves it. So the framework does have an irreducible carrier for spin-half matter, and what it lacks is a second one, or a second action on the same one, that would let a non-abelian group see one value and not the other. [Representation Is a Function of Spin](representation-is-a-function-of-spin.html) states the general form: representation is a function of spin, so the spinor module comes with the spinor's spin and not with a gauge label attached.
 
-**A third reading, and the shortest one: one phase and its inverse.** Write the left action of a rotor on the ideal in the Peirce basis of an axis $\vec u_{\mathrm r}$. A unit rotor $\tilde u=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec u$ acts there as
+**A third reading, and the shortest one: one phase and its inverse.** Write the left action of a rotor — an element of $SU(2)=\mathrm{SU}(2)$, the unit real quaternions — on the ideal in the Peirce basis of an axis $\vec u_{\mathrm r}$. A unit rotor $\tilde u=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec u$ acts there as
 
 $$
 L_{\tilde u}\big|_{S_+(\vec u_{\mathrm r})}=\operatorname{diag}\bigl(e^{-i\varphi/2},\,e^{+i\varphi/2}\bigr),

@@ -195,6 +195,18 @@ The chart's gain is the first row: the boost is parametrized, not constrained, s
 
 **Why the Schrödinger case differs.** There the Lagrangian is linear in $\dot\theta_{\mathrm{pha}}$, so the momentum conjugate to $\varrho$ vanishes identically and the system is a constrained one whose closure needs Dirac analysis. Here the Lagrangian is quadratic in the velocities, the momenta are the velocities' images under a rank-three map, and there is exactly one constraint pair. The order of the Lagrangian, and not the choice of variables, is what decides.
 
+### The Reconstruction and Its Limits
+
+**The reconstruction is exact on a branch.** The chart is a diffeomorphism from the parameter domain onto one branch of the material sector's N-regular set, so the word can be inverted there: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. The inverse is the bijection read backwards and adds nothing to the action.
+
+**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12k_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12k_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element, so a field that reaches $\varrho=0$ leaves the chart. For the Proca field that is not a pathology but a boundary: the mass shell's two branches meet only through the origin, and the origin is excluded.
+
+**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. Neither is a convention of this article; both are properties of the parameterisation it inherits.
+
+**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow, and the article says so. **The frame's reconstruction has a further weakness here**: the mass term is a function of the frame, $R(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})\varrho^{2}$, so the reconstructed frame is constrained by the potential and is not a free coordinate. That is not a defect of the map — it is the statement that the Proca field's frame is where the mass is extremal.
+
 ## The Noether Currents: The Stress and the Absence of a Charge
 
 **One current and not two.** The free Proca field has no phase symmetry, and the article's element companion proves it: the potential is real on the material sector, so a central phase rotation is not a symmetry of the action but a complexification, and the Noether procedure returns nothing. The chart inherits the verdict, and it is worth stating in the chart because the chart is where a reader expects a density.
@@ -224,23 +236,11 @@ The chart's gain is the first row: the boost is parametrized, not constrained, s
 
 **The distinction that matters.** The polar variational principle is a coordinate change of a standard variational problem, and its value is entirely in what the coordinates display: the sign of the mass term as the branch, the three jobs of the three pieces, and the constraint's exact location. It is not a new principle, and the article claims nothing of the kind.
 
-## The Reconstruction and Its Limits
-
-**The reconstruction is exact on a branch.** The chart is a diffeomorphism from the parameter domain onto one branch of the material sector's N-regular set, so the word can be inverted there: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. The inverse is the bijection read backwards and adds nothing to the action.
-
-**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12k_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12k_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
-
-**The scale's limit.** $\varrho>0$ excludes the zero element, so a field that reaches $\varrho=0$ leaves the chart. For the Proca field that is not a pathology but a boundary: the mass shell's two branches meet only through the origin, and the origin is excluded.
-
-**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. Neither is a convention of this article; both are properties of the parameterisation it inherits.
-
-**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow, and the article says so. **The frame's reconstruction has a further weakness here**: the mass term is a function of the frame, $R(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})\varrho^{2}$, so the reconstructed frame is constrained by the potential and is not a free coordinate. That is not a defect of the map — it is the statement that the Proca field's frame is where the mass is extremal.
-
 ## Open Questions
 
-1. **The spacelike branch's equations.** The scale equation and the transport equation are displayed here for the timelike branch, where the frame is the only object differentiated. On the spacelike branch the direction $\hat u$ is differentiated as well, and it is locked to the boost axis, so the transport acquires a real-vector bracket that the timelike branch does not have; the explicit Euler–Lagrange equations of that branch are not written out. This is the article's largest gap and not a detail: the branch with the extra bracket is the branch where the chart differs most from a boosted scalar, and the polar article records the same gap in the same words.
-2. **The crossing set.** The chart is a diffeomorphism on each branch and fails on the lightlike set of field values. What the variational problem does across the crossing — whether the action can be continued, and whether the continuation is stationary — is not settled.
-3. **The constraint analysis in the chart.** The rank-three Hessian and the second-class pair are identified here but not carried through the Dirac bracket. The canonical quantization article performs the analysis in the component variables; whether the chart's variables simplify the bracket, or merely obscure it, is open.
+**The crossing set.** The chart is a diffeomorphism on each branch and fails on the lightlike set of field values. What the variational problem does across the crossing — whether the action can be continued, and whether the continuation is stationary — is not settled.
+
+**The constraint analysis in the chart.** The rank-three Hessian and the second-class pair are identified here but not carried through the Dirac bracket. The canonical quantization article performs the analysis in the component variables; whether the chart's variables simplify the bracket, or merely obscure it, is open.
 
 ## Summary
 

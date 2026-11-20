@@ -20,7 +20,7 @@ $$
 
 The dimension and the spin are tied by $2s+1=\dim_\mathbb{R}$, and the tie is a relation between two counts of the same nature, both read from one real space.
 
-**The route.** The spin comes first, and a carrier is the answer to which subspace carries it. *Part A* derives $s=\tfrac12$ from the rotor group alone: the real left-regular matrices of the quaternion layer, their three generators, and the Casimir. *Part B* derives $s\in\{0,1\}$ from a pair of operators acting on two sides: each factor carries $\tfrac12$, and the addition rule for the labels of the rotor group gives $0$ or $1$. *The Carriers* then reads, for each $s$, the subspace of real dimension $2s+1$ that carries it, and the assignment is forced by the dimension and by the natural action of the algebra on itself — trivial, left multiplication, conjugation. *The Closure of a Carrier* then places each carrier in a subspace of $\mathbb{B}$. *Three and No More* closes the list, and *The Quadratic Element* reads the same three numbers from one central element of the algebra.
+**The route.** The spin comes first, and a carrier is the answer to which subspace carries it. *Part A* derives $s=\tfrac12$ from $SU(2)$ alone: the real left-regular matrices of the quaternion layer, their three generators, and the Casimir. *Part B* derives $s\in\{0,1\}$ from a pair of operators acting on two sides: each factor carries $\tfrac12$, and the addition rule for the labels of $SU(2)$ gives $0$ or $1$. *The Carriers* then reads, for each $s$, the subspace of real dimension $2s+1$ that carries it, and the assignment is forced by the dimension and by the natural action of the algebra on itself — trivial, left multiplication, conjugation. *The Closure of a Carrier* then places each carrier in a subspace of $\mathbb{B}$. *Three and No More* closes the list, and *The Quadratic Element* reads the same three numbers from one central element of the algebra.
 
 The whole article is written over the reals, and this is not a matter of taste. A spatial rotation acts on a real space; a subspace that a rotation leaves alone is a real subspace; and the question asks for those subspaces. Over the reals the three dimensions are $1,2,3$, the three spins are $0,\tfrac12,1$, and the identity $2s+1=\dim$ compares two counts of the same nature. Over the complex numbers the three dimensions would be $1,2,3$ again, but the identity would compare a complex dimension with a weight count, which is weaker.
 
@@ -184,7 +184,7 @@ the largest weight, with $s=0$ for the spectrum $\{0\}$. The definition is well 
 
 The first of the three spins comes from one rotor, and it comes from three real matrices and one sum of squares.
 
-**The rotor group.** The rotors form $Sp(1)$, the unit sphere of the quaternion layer,
+**$SU(2)$.** The rotors form $Sp(1)$, the unit sphere of the quaternion layer,
 
 $$
 S^3=\{q\in\mathbb{H}:N(q)=1\},
@@ -240,7 +240,7 @@ the other root being $s=-\tfrac32$ and the spin being taken non-negative. ∎
 
 ## Part B: The Spin of a Pair Acting on Two Sides
 
-The other two spins come from two rotors, one acting on the left and one on the right. The step from one factor to two is the addition rule, and it is a theorem about the rotor group.
+The other two spins come from two rotors, one acting on the left and one on the right. The step from one factor to two is the addition rule, and it is a theorem about $SU(2)$.
 
 **Why the two-sided form is forced.** Let $X$ be an element and $L_X$ left multiplication. Then
 
@@ -316,7 +316,7 @@ $$
 \mathbf{A}^2_{\mathrm{tot}}:=\sum_k\bigl(A_k^{\mathrm{tot}}\bigr)^2 .
 $$
 
-**The addition rule.** The carriers of the rotor group are labelled by
+**The addition rule.** The carriers of $SU(2)$ are labelled by
 
 $$
 j\in\tfrac12\mathbb{Z}_{\ge0}=\{0,\tfrac12,1,\tfrac32,2,\dots\},
@@ -542,7 +542,7 @@ An irreducible $W$ is therefore one of these two summands. The centre is a compl
 
 *Proof.* Let $\lambda$ run over the weights, and let $\varrho(A)$ be the operator of the generator. The eigenvalues of $\varrho(A)$ are $i\lambda$, so the eigenvalues of $\varrho(\tilde u_{\mathrm r})=\exp(\theta_{\mathrm{axr}}\varrho(A))$ are $e^{i\theta_{\mathrm{axr}}\lambda}$. At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$ and the eigenvalues are $e^{2\pi i\lambda}$. For $\lambda\in\{0,\pm1\}$ this is $+1$; for $\lambda=\pm\tfrac12$ it is $e^{\pm i\pi}=-1$. On each carrier all the eigenvalues are equal and the operator is diagonalisable, so the operator is that single value times the identity: $+1$ on the line and on the vector part, $-1$ on the plane.
 
-**Remark (the reading of the sign).** The sign is not a defect of the computation. On the plane $\varrho$ is defined on the rotors, and a full rotation has the rotor $-e_t$, which is not the identity of the rotor group; the value $-1$ shows that the action does not descend to the rotation group. The half-integer carrier is therefore an action of the double cover, and the integer carriers are actions of the rotation group. On the plane the statement is geometric: a full rotation of space is a half turn of the plane.
+**Remark (the reading of the sign).** The sign is not a defect of the computation. On the plane $\varrho$ is defined on the rotors, and a full rotation has the rotor $-e_t$, which is not the identity of $SU(2)$; the value $-1$ shows that the action does not descend to the rotation group. The half-integer carrier is therefore an action of the double cover, and the integer carriers are actions of the rotation group. On the plane the statement is geometric: a full rotation of space is a half turn of the plane.
 
 **Remark (the spacing).** The three spectra are symmetric about zero, spaced by $1$, and of length $2s+1$: $0$ alone, then $+\tfrac12$ and $-\tfrac12$, then $+1,0,-1$ in steps of $1$. The spacing is checked in the three cases; it is not assumed.
 
@@ -705,7 +705,7 @@ The same identity shows that the anticommutator runs the other way, $\{X,Y\}^{*}
 
 ## Discussion
 
-**The three steps.** The article proceeds in three steps, and the order is the whole point. In Parts A and B the three spins $0,\tfrac12,1$ are derived from the rotor group: $s=\tfrac12$ from the Casimir of the single-rotor generators, and $s\in\{0,1\}$ from the pair acting on two sides by the addition rule. In *The Carriers* each spin is then read as a subspace of $\mathbb{B}$ of real dimension $2s+1$, the dimension and the action forcing the assignment. In *The Closure of a Carrier* each carrier is placed in a subspace of $\mathbb{B}$ by a rule named for that carrier. *Three and No More* proves that the list of three spins is complete, and *The Quadratic Element* reads the same three values $s(s+1)$ from one central element of the algebra.
+**The three steps.** The article proceeds in three steps, and the order is the whole point. In Parts A and B the three spins $0,\tfrac12,1$ are derived from $SU(2)$: $s=\tfrac12$ from the Casimir of the single-rotor generators, and $s\in\{0,1\}$ from the pair acting on two sides by the addition rule. In *The Carriers* each spin is then read as a subspace of $\mathbb{B}$ of real dimension $2s+1$, the dimension and the action forcing the assignment. In *The Closure of a Carrier* each carrier is placed in a subspace of $\mathbb{B}$ by a rule named for that carrier. *Three and No More* proves that the list of three spins is complete, and *The Quadratic Element* reads the same three values $s(s+1)$ from one central element of the algebra.
 
 **What is established.** Three carriers of real dimensions $1$, $2$, $3$; the actions trivial, by left multiplication, and by conjugation; the weights $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ obtained from the two identities without any array; the spins $0,\tfrac12,1$; the identity $2s+1=\dim_\mathbb{R}$ checked in the three cases and covering every carrier, because the list is complete and the completeness is proved; the full-turn sign $(-1)^{2s}$, with the $-1$ visible as a half turn of the plane; the quadratic element, whose values on the three carriers are $s(s+1)$; and the closures — the centre, the spinor and bispinor spaces, and the anti-Hermitian space.
 

@@ -63,6 +63,24 @@ the left part sees $\tilde A_\Phi^{\natural}$ and the right part sees $\tilde A_
 
 **The constant $\hbar c$.** It multiplies the whole functional, it cancels in the variation, and the residuals do not carry it while the currents carry one power of it. The parent's reason for the convention is unchanged by the coupling.
 
+### The Two Settings
+
+**The constant setting.** $\tilde A_\Phi$ is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients. The equation is algebraic in momentum space, the residual is linear with constant coefficients, and the solution is a finite product of exponentials up to the gauge factor:
+
+$$
+\tilde\Xi=\exp\Bigl(-i\frac{ϙ}{\hbar}\tilde A_\Phi\cdot R\Bigr)\tilde\Xi_{\mathrm{free}},
+$$
+
+with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary points are the same set, and the value of the action on a solution is the free value, because a constant potential is pure gauge and the gauge factor's contribution cancels between the field and its conjugate.
+
+**The closed-form propagator, and what it is not.** The propagator is a finite product of exponentials because the operator is a fixed element: the exponential of a fixed element can be computed by squaring, and no ordering problem arises. That is the whole reason the constant setting is closed, and it is the reason nothing in this setting transfers to the operator one.
+
+**The operator setting.** $\tilde A_\Phi$ is a function of position or an operator, the covariant components do not commute with one another, and no finite product of exponentials gives the propagator. The variational principle is the standard field-theoretic one: the action is a functional on fields, stationarity is the equation, the Noether currents are the same display, and the stress tensor is the same tensor. What differs is that the currents are now functionals of a field that cannot be written in closed form, so their evaluation is a separate problem.
+
+**The one statement that crosses is a negative one.** A constant potential opens no gap, and this is a statement about the constant setting. It does not say that no potential opens a gap; a non-constant potential with a non-vanishing field strength does, and the Landau-level article computes the spectrum for the constant magnetic field. The two statements are consistent and they are different statements.
+
+**The loop phase and the flux.** The current's conservation on a closed surface is one consequence of the phase symmetry; the phase accumulated along a closed loop at fixed material time is another, and it is a property of the action's invariance rather than of the equations. In the constant setting the loop's phase is the holonomy $\exp(i\frac{ϙ}{\hbar}\oint\tilde A_\Phi\cdot\mathrm{d}l)$, and single-valuedness of the field requires the holonomy to be trivial, which is the flux quantum $\Phi=2\pi n\hbar/ϙ$ in the standard reading. **The framework's Wilson-loop construction reads the loop differently**, as the norm of a unit element rather than as the trace of a phase, and the two readings have not been reconciled in the corpus. The article records the tension rather than resolving it.
+
 ## The Variation
 
 Vary both parts and take the real part. The result is
@@ -196,24 +214,6 @@ up to the normalization of the current, which is the statement that the matter s
 
 **What is deliberately absent.** There is no spin current in this section. The spin of this field is the rotor's, it is not a Noether current of the element action, and a spin current derived here would be a second derivation of something the polar companion states exactly. The Dirac spin current as a Noether current appears when the rotor is a variable of the action, which is the polar variational companion, and even there the coupling does not reach it.
 
-## The Two Settings
-
-**The constant setting.** $\tilde A_\Phi$ is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients. The equation is algebraic in momentum space, the residual is linear with constant coefficients, and the solution is a finite product of exponentials up to the gauge factor:
-
-$$
-\tilde\Xi=\exp\Bigl(-i\frac{ϙ}{\hbar}\tilde A_\Phi\cdot R\Bigr)\tilde\Xi_{\mathrm{free}},
-$$
-
-with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary points are the same set, and the value of the action on a solution is the free value, because a constant potential is pure gauge and the gauge factor's contribution cancels between the field and its conjugate.
-
-**The closed-form propagator, and what it is not.** The propagator is a finite product of exponentials because the operator is a fixed element: the exponential of a fixed element can be computed by squaring, and no ordering problem arises. That is the whole reason the constant setting is closed, and it is the reason nothing in this setting transfers to the operator one.
-
-**The operator setting.** $\tilde A_\Phi$ is a function of position or an operator, the covariant components do not commute with one another, and no finite product of exponentials gives the propagator. The variational principle is the standard field-theoretic one: the action is a functional on fields, stationarity is the equation, the Noether currents are the same display, and the stress tensor is the same tensor. What differs is that the currents are now functionals of a field that cannot be written in closed form, so their evaluation is a separate problem.
-
-**The one statement that crosses is a negative one.** A constant potential opens no gap, and this is a statement about the constant setting. It does not say that no potential opens a gap; a non-constant potential with a non-vanishing field strength does, and the Landau-level article computes the spectrum for the constant magnetic field. The two statements are consistent and they are different statements.
-
-**The loop phase and the flux.** The current's conservation on a closed surface is one consequence of the phase symmetry; the phase accumulated along a closed loop at fixed material time is another, and it is a property of the action's invariance rather than of the equations. In the constant setting the loop's phase is the holonomy $\exp(i\frac{ϙ}{\hbar}\oint\tilde A_\Phi\cdot\mathrm{d}l)$, and single-valuedness of the field requires the holonomy to be trivial, which is the flux quantum $\Phi=2\pi n\hbar/ϙ$ in the standard reading. **The framework's Wilson-loop construction reads the loop differently**, as the norm of a unit element rather than as the trace of a phase, and the two readings have not been reconciled in the corpus. The article records the tension rather than resolving it.
-
 ## What the Principle Adds and What It Relabels
 
 **Adds.**
@@ -234,13 +234,11 @@ with $\tilde\Xi_{\mathrm{free}}$ the free solution. The action's stationary poin
 
 ## Open Questions
 
-**The non-abelian action.** With a $\mathbb{B}$-valued connection the two kinetic terms no longer separate, because the connection does not commute with the field, and the reality argument has to be redone with the ordering explicit. Whether the resulting action is self-adjoint, and whether the Noether current is the covariant one, is the non-abelian article's subject and is not settled here.
+**The non-abelian action.** With a $\mathbb{B}$-valued connection the two kinetic terms no longer separate, because the connection does not commute with the field, and the reality argument has to be redone with the ordering explicit. Whether the resulting action is self-adjoint, and whether the Noether current is the covariant one, is not settled.
 
 **The choice of frame units in the current.** §*The Current* states the residue: the algebra does not single out $\vec e_x$ and $\vec e_y$. Whether the choice is forced by the requirement that the pairing be of a definite value, or whether it is a genuine datum of the framework, is not settled. A computation that derives the invertibles from an invariance of the pairing would close it.
 
 **The loop phase and the flux quantum.** The two readings of a closed loop — the trace of a holonomy and the norm of a unit element — give different statements about enclosed flux, and they have not been brought together. This is a corpus-level tension and not a question this article can settle.
-
-**The operator setting's current.** The Noether current's conservation is an identity of the action and holds in both settings. What is not examined here is whether the operator-setting current, once renormalized, agrees with the element-form display order by order. That is a check and not a derivation, and it belongs with the stress-tensor article.
 
 ## Summary
 

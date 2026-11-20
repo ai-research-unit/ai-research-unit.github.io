@@ -16,13 +16,13 @@ The findings are stated in advance.
 6. **A pair's entanglement is changed only by a rotation that varies over a discarded label.** With two branches carrying the same Bell pair and relative rotation $\varphi$, the concurrence is $\lvert\cos\varphi\rvert$ exactly and the purity is $(1+\cos^{2}\varphi)/2$, both to twelve digits.
 7. **So frame-dependent entanglement is a statement about the trace, not about the frame.** $\tilde R$ contributes to entanglement only when it is distributed unequally across a label that is then summed out.
 
-The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; the impurity is $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$. A rotation by angle $\varphi$ about the unit vector $\vec n$ is written $\mathrm{Rot}_{\vec n}(\varphi)$, with $\tilde R=\mathrm{Rot}_{\vec n}(\varphi)$ the unitary rotor of the same angle. The polar split is $\tilde U=\tilde L\tilde R$. The concurrence of a two-qubit pure state $\psi=(a,b,c,d)$ is $C=2\lvert ad-bc\rvert$, and of a mixed state is the usual $\max(0,\lambda_{1}-\lambda_{2}-\lambda_{3}-\lambda_{4})$ over the roots of $\rho\tilde\rho$.
+The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; the impurity is $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$. A rotation by angle $\varphi$ about the unit vector $\vec n$ is written $\mathrm{SU}(2)_{\vec n}(\varphi)$, with $\tilde R=\mathrm{SU}(2)_{\vec n}(\varphi)$ the unitary rotor of the same angle. The polar split is $\tilde U=\tilde L\tilde R$. The concurrence of a two-qubit pure state $\psi=(a,b,c,d)$ is $C=2\lvert ad-bc\rvert$, and of a mixed state is the usual $\max(0,\lambda_{1}-\lambda_{2}-\lambda_{3}-\lambda_{4})$ over the roots of $\rho\tilde\rho$.
 
 ## What the Rotation Does to One State
 
 ### It moves the vector and nothing else
 
-**A rotation sends $\vec s$ to $\mathrm{Rot}_{\vec n}(\varphi)\vec s$ and leaves every invariant of the single state alone.** At $\vec s=(0.3,-0.5,0.6)$, $\lvert\vec s\rvert=0.836660026534076$ and $N=0.075000000000000$ in the original and after rotations of $0.4$, $1.7$ and $3.0$; the worst deviation in $\lvert\vec s\rvert$ is $1.0\times10^{-15}$ and in $N$ it is $0$.
+**A rotation sends $\vec s$ to $\mathrm{SU}(2)_{\vec n}(\varphi)\vec s$ and leaves every invariant of the single state alone.** At $\vec s=(0.3,-0.5,0.6)$, $\lvert\vec s\rvert=0.836660026534076$ and $N=0.075000000000000$ in the original and after rotations of $0.4$, $1.7$ and $3.0$; the worst deviation in $\lvert\vec s\rvert$ is $1.0\times10^{-15}$ and in $N$ it is $0$.
 
 **The reason is that a rotation is an isometry of the ball and the ball is homogeneous under rotations.** Every point of a sphere can be moved to every other by a rotation, so the orbit is the whole sphere, and a sphere has no marked point. There is no functional of one state that a rotation can change, because a rotation generates the whole space of states of a given radius.
 
@@ -70,7 +70,7 @@ The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12
 
 ### The pair that does change
 
-**Distribute the rotation over a label and discard the label.** The state is $\bigl(\lvert\Phi\rangle\lvert p_a\rangle+\lvert\Phi\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\Phi\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{Rot}_{\hat z}(\varphi)$ on both; the label is traced out.
+**Distribute the rotation over a label and discard the label.** The state is $\bigl(\lvert\Phi\rangle\lvert p_a\rangle+\lvert\Phi\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\Phi\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{SU}(2)_{\hat z}(\varphi)$ on both; the label is traced out.
 
 | $\varphi$ | concurrence | purity |
 | --- | --- | --- |
@@ -128,8 +128,8 @@ The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12
 | symbol | meaning |
 | --- | --- |
 | $\tilde U=\tilde L\tilde R$ | the polar split of a frame change |
-| $\tilde R=\mathrm{Rot}_{\vec n}(\varphi)$ | the unitary factor; the Wigner rotation |
-| $\vec s\mapsto\mathrm{Rot}_{\vec n}(\varphi)\vec s$ | the action on one state |
+| $\tilde R=\mathrm{SU}(2)_{\vec n}(\varphi)$ | the unitary factor; the Wigner rotation |
+| $\vec s\mapsto\mathrm{SU}(2)_{\vec n}(\varphi)\vec s$ | the action on one state |
 | $N=\tfrac14(1-\lvert\vec s\rvert^{2})$ | the impurity; unchanged by any rotation |
 | $w$ | the weight of the first branch in the traced example |
 | $\varphi$ | the relative rotation between two branches |

@@ -246,7 +246,7 @@ in agreement with the twist computation. The two computations use different meth
 
 ### The Double Cover
 
-The factor of $2$ between the vector angle and the spinor phase is the double cover of the rotor group. The spin-$\tfrac12$ state is a spinor in the algebra, and its adiabatic phase around the same cycle is half the classical angle,
+The factor of $2$ between the vector angle and the spinor phase is the double cover of $SU(2)$. The spin-$\tfrac12$ state is a spinor in the algebra, and its adiabatic phase around the same cycle is half the classical angle,
 
 $$
 \boxed{\;\gamma_{\text{spinor}}=-\frac{\theta_{\mathrm{sol}}}{2}\;},

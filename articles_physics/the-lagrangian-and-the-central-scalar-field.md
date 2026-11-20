@@ -153,11 +153,7 @@ whose time–time component is the energy density $\tfrac12(\dot\xi^2+\sum_j(\pa
 
 ## Open Questions
 
-**Is a $\xi^4$ term the algebra's or an addition?** The corpus treats the quartic scalar coupling as standard input. Whether the algebra can produce an interaction of the scalar with itself through a noncentral insertion is not established, and the interacting-scalar article records the standard term without claiming it.
-
-**Can the centre carry a gauge charge?** Not as a real central element; the complexification is needed, and the charged-scalar article takes it. Whether the charge survives the reduction to the centre is the question that article answers.
-
-**What is the scalar's status in the state module?** Outside it, by the centrality argument. The spin-zero articles state the exclusion and its consequences.
+**Is a $\xi^4$ term the algebra's or an addition?** The corpus treats the quartic scalar coupling as standard input. Whether the algebra can produce an interaction of the scalar with itself through a noncentral insertion is not established.
 
 ## Summary
 

@@ -213,11 +213,7 @@ whose trace in four dimensions vanishes for the two-derivative action, which is 
 
 ## Open Questions
 
-**Is the four-derivative term singled out?** At four derivatives the target admits more than one invariant, and the Skyrme term is the combination that is at most quadratic in time derivatives. Whether that condition is forced by the algebra or is a choice within the standard classification is not settled here; the Skyrme article states the condition and uses it.
-
-**Does the algebra's $\mathrm{U}(2)$ ceiling reach the sigma model?** The target is $\mathrm{SU}(2)$ and the ceiling is a statement about which compact groups the algebra carries. The sigma model sits below the ceiling and does not test it; whether a model with a larger target could be written in the algebra is the dimension-ceiling question, and the answer recorded elsewhere is no.
-
-**What fixes $f$?** Nothing in the action. $f$ is measured, and the corpus records it as input; a derivation would require the radial sector, which the linear model carries and the nonlinear one has removed.
+**Is the four-derivative term singled out?** At four derivatives the target admits more than one invariant, and the Skyrme term is the combination that is at most quadratic in time derivatives. Whether that condition is forced by the algebra or is a choice within the standard classification is not settled; the Skyrme article states the condition and uses it.
 
 ## Summary
 

@@ -49,7 +49,7 @@ The formula is the same; the elements acted on are not. A four-momentum is anti-
 
 **The table is the article in one object.** Every row is one of the three isometry statements above, or a consequence of one.
 
-**Two rows deserve the derivation.** The first is that a boost preserves the interval: it is an element of the rotor group, so $\tilde U\tilde P_\Phi\tilde U^{*}$ has the same natural norm, and the mass shell is preserved identically — not by a cancellation but because the norm is multiplicative and the rotor has norm one. The second is that a phase fixes every state: $\tilde U=e^{i\theta}e_t$ is central, so $\tilde U\tilde{Ϛ}_\Psi\tilde U^{*}=e^{i\theta}e^{-i\theta}\tilde{Ϛ}_\Psi=\tilde{Ϛ}_\Psi$. A transformation that fixes every state is a channel and carries no information, which is the exact sense in which the centre of $U(2)$ acts trivially on the ball.
+**Two rows deserve the derivation.** The first is that a boost preserves the interval: it is an element of $SU(2)$, so $\tilde U\tilde P_\Phi\tilde U^{*}$ has the same natural norm, and the mass shell is preserved identically — not by a cancellation but because the norm is multiplicative and the rotor has norm one. The second is that a phase fixes every state: $\tilde U=e^{i\theta}e_t$ is central, so $\tilde U\tilde{Ϛ}_\Psi\tilde U^{*}=e^{i\theta}e^{-i\theta}\tilde{Ϛ}_\Psi=\tilde{Ϛ}_\Psi$. A transformation that fixes every state is a channel and carries no information, which is the exact sense in which the centre of $U(2)$ acts trivially on the ball.
 
 ## The Exact Correspondences
 
@@ -59,7 +59,7 @@ The formula is the same; the elements acted on are not. A four-momentum is anti-
 
 **The compact part acts identically.** For a real unit quaternion $\tilde u$, $\tilde u^{*}=\tilde u^{\natural}=\tilde u^{-1}$, so the congruence by $\tilde u$ is simultaneously an isometry of both forms. This is why the rotation subgroup is the bridge, why the gyration of a boost pair is the one piece of a frame change that both readings can see, and why $SU(2)$ appears on both rows of the table with the same matrices.
 
-**The two group elements that are not in the intersection are the two asymmetries.** A boost is in the rotor group and not in $U(2)$: it preserves the interval and moves the trace. A phase is in $U(2)$ and not in the rotor group: it preserves the trace and changes the natural norm by $e^{2i\theta}$. Each reading is blind to what the other one sees, and the blindness is a group-theoretic fact and not a limitation of a calculation.
+**The two group elements that are not in the intersection are the two asymmetries.** A boost is in $SU(2)$ and not in $U(2)$: it preserves the interval and moves the trace. A phase is in $U(2)$ and not in $SU(2)$: it preserves the trace and changes the natural norm by $e^{2i\theta}$. Each reading is blind to what the other one sees, and the blindness is a group-theoretic fact and not a limitation of a calculation.
 
 ## Where the Readings Diverge
 
@@ -91,7 +91,7 @@ One unit-norm biquaternion acts on two slices by one congruence. The material re
 | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q^{*})$ | the Hermitian form |
 | $2\,\mathrm{Sc}$ | the trace of the $2\times2$ image |
 | $\mathrm{Cg}_{\tilde U}$ | the congruence $\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$ |
-| the rotor group | unit-norm biquaternions, $\cong SL(2,\mathbb{C})$, dimension six |
+| $SU(2)$ | unit-norm biquaternions, $\cong SL(2,\mathbb{C})$, dimension six |
 | $U(\mathbb{B})$ | the $*$-unitary group, $\cong U(2)$, dimension four |
 | $J(\tilde Q)=i\tilde Q$ | the sector map |
 

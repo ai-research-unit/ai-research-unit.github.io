@@ -4,7 +4,7 @@
 
 **The rotor of a rotation in $n$ dimensions is an element of a Clifford algebra, and from $n=7$ that algebra has more dimensions than $M_n(\mathbb{R})$ has: the rotor stops being an $n\times n$ matrix.** The rotor acts on a vector by two multiplications, $X\mapsto RX\widetilde{R}$, and the product lands back in the $n$-dimensional space. What does not survive is the reading of $R$ itself as a matrix of size $n$.
 
-The article builds $Cl(n)$ from the relations $e_ie_j+e_je_i=-2\delta_{ij}$, isolates the even subalgebra $Cl^0(n)$ of dimension $2^{n-1}$, identifies the bivectors with the antisymmetric matrices, defines the rotor group and counts its map onto $\mathrm{SO}(n)$ as two-to-one, then compares $2^{n-1}$ with $n^2$ and $n$ with the size of the smallest faithful module. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* and *The Involutions of the First Kind: Transpose and Symplectic*, and it defers the exponential of an antisymmetric matrix to *The Exponential of the Antisymmetric Part: One-Parameter Rotations*.
+The article builds $Cl(n)$ from the relations $e_ie_j+e_je_i=-2\delta_{ij}$, isolates the even subalgebra $Cl^0(n)$ of dimension $2^{n-1}$, identifies the bivectors with the antisymmetric matrices, defines $SU(2)$ and counts its map onto $\mathrm{SO}(n)$ as two-to-one, then compares $2^{n-1}$ with $n^2$ and $n$ with the size of the smallest faithful module. It assumes *The Matrix Algebra $M_n(\mathbb{R})$* and *The Involutions of the First Kind: Transpose and Symplectic*, and it defers the exponential of an antisymmetric matrix to *The Exponential of the Antisymmetric Part: One-Parameter Rotations*.
 
 ## The Clifford Algebra
 
@@ -76,7 +76,7 @@ so $[e_{12},e_{23}]=-2e_{13}$, and $[E_{12}-E_{21},E_{23}-E_{32}]=E_{13}-E_{31}$
 
 **Corollary.** The map $A\mapsto-\tfrac12\omega(A)$ is an isomorphism of Lie algebras from $\operatorname{Skew}_n$ to the bivectors under the commutator, and $\dim\operatorname{Skew}_n=n(n-1)/2=\dim\mathfrak{so}(n)$. The factor $-\tfrac12$ is the normalisation that makes the bivector act as the antisymmetric matrix in the spin representation. Numerically the identity $[\omega(A),\omega(B)]=-2\omega([A,B])$ holds to $10^{-16}$ at $n=4$ on random antisymmetric pairs.
 
-## The Rotor Group
+## The Group $SU(2)$
 
 **Definition.** A **rotor** is an even element $R\in Cl^0(n)$ with $R\widetilde{R}=1$. The rotors form a group: if $R\widetilde R=1$ and $S\widetilde S=1$ then $(RS)\widetilde{(RS)}=RS\widetilde S\widetilde R=1$, and $R^{-1}=\widetilde R$.
 
@@ -102,7 +102,7 @@ so the image is a vector of the same length. The map is linear and injective, he
 
 **The count.** The kernel has two elements, so each rotation has exactly two rotors, $R$ and $-R$. At $n=3$ this is the familiar pair $q$, $-q$ of unit quaternions giving one rotation, and numerically the two produce the same $3\times3$ matrix to machine precision.
 
-**A caveat about the centre.** The kernel is $\{\pm1\}$ for every $n$, but the centre of the rotor group is larger for even $n$: the volume element $\omega=e_1\cdots e_n$ is then even, it is a rotor, it commutes with every even element, and it satisfies $\omega X=-X\omega$ on vectors. So $\omega$ maps to $-\mathrm{I}$ and not to the identity: a larger centre does not enlarge the kernel, and the map stays two-to-one.
+**A caveat about the centre.** The kernel is $\{\pm1\}$ for every $n$, but the centre of $SU(2)$ is larger for even $n$: the volume element $\omega=e_1\cdots e_n$ is then even, it is a rotor, it commutes with every even element, and it satisfies $\omega X=-X\omega$ on vectors. So $\omega$ maps to $-\mathrm{I}$ and not to the identity: a larger centre does not enlarge the kernel, and the map stays two-to-one.
 
 ## Where the Rotor Leaves $M_n(\mathbb{R})$
 
@@ -140,9 +140,9 @@ $$
 
 **At $n=2$ the rotor is a complex number.** $Cl^0(2)=\mathbb{C}$ with basis $1,e_{12}$ and $e_{12}^2=-1$. A rotor is $R=a+be_{12}$ with $a^2+b^2=1$, and $R$ acts as the rotation with $\cos\theta=a^2-b^2$ and $\sin\theta=2ab$. The pair $\pm R$ gives one rotation, and $\mathrm{SO}(2)$ is the circle.
 
-**At $n=3$ the rotor is a quaternion.** $Cl^0(3)=\mathbb{H}$ with $i=e_{23}$, $j=e_{31}$, $k=e_{12}$. The rotor group is the unit sphere $S^3$, which covers $\mathrm{SO}(3)$ two-to-one, and $\rho_R$ is conjugation on the imaginary quaternions; see *Quaternion Algebra*.
+**At $n=3$ the rotor is a quaternion.** $Cl^0(3)=\mathbb{H}$ with $i=e_{23}$, $j=e_{31}$, $k=e_{12}$. $SU(2)$ is the unit sphere $S^3$, which covers $\mathrm{SO}(3)$ two-to-one, and $\rho_R$ is conjugation on the imaginary quaternions; see *Quaternion Algebra*.
 
-**At $n=4$ the rotor is a pair of quaternions.** $Cl^0(4)=\mathbb{H}\oplus\mathbb{H}$, the rotor group is $S^3\times S^3$ of dimension $6$, and the action is $x\mapsto q_+xq_-^{-1}$ on $\mathbb{R}^4=\mathbb{H}$. The two-to-one cover is the pair $(q_+,q_-)\mapsto(-q_+,-q_-)$.
+**At $n=4$ the rotor is a pair of quaternions.** $Cl^0(4)=\mathbb{H}\oplus\mathbb{H}$, $SU(2)$ is $S^3\times S^3$ of dimension $6$, and the action is $x\mapsto q_+xq_-^{-1}$ on $\mathbb{R}^4=\mathbb{H}$. The two-to-one cover is the pair $(q_+,q_-)\mapsto(-q_+,-q_-)$.
 
 **A numerical anchor at $n=3$.** With $R=\exp(-\theta e_{12}/2)$ and $\theta=0.7$, the rotor satisfies $R\widetilde R=1$ and sends $e_1$ to $\cos\theta\,e_1-\sin\theta\,e_2$, with no four-vector part: the image stays in the vector space, as the theorem requires.
 
@@ -150,7 +150,7 @@ $$
 
 **The first runs through the whole algebra.** Let $\mathrm{Pin}(n)$ be the group generated by the unit vectors of $Cl(n)$, that is by the $u$ with $u^2=-1$. Each such $u$ is invertible with $u^{-1}=-u$, and $X\mapsto-uXu$ is the reflection in the hyperplane orthogonal to $u$. A product of $k$ unit vectors acts as $k$ reflections, of determinant $(-1)^k$.
 
-**The second runs through the even part.** Put $\mathrm{Spin}(n)=\{R\in Cl^0(n):R\widetilde R=1\}$, the rotor group. It is the even part of $\mathrm{Pin}(n)$: a product of an even number of unit vectors is even, and every such product is a rotor.
+**The second runs through the even part.** Put $\mathrm{Spin}(n)=\{R\in Cl^0(n):R\widetilde R=1\}$, $SU(2)$. It is the even part of $\mathrm{Pin}(n)$: a product of an even number of unit vectors is even, and every such product is a rotor.
 
 **The two agree.** The intersection $\mathrm{Pin}(n)\cap Cl^0(n)$ is $\mathrm{Spin}(n)$, and the map $\mathrm{Pin}(n)\to\mathrm{O}(n)$ restricts to $\mathrm{Spin}(n)\to\mathrm{SO}(n)$ with kernel $\{\pm1\}$. Both groups have dimension $n(n-1)/2$ and are connected for $n\ge2$, so $\mathrm{Spin}(n)$ is the double cover of $\mathrm{SO}(n)$, and the universal cover because $\pi_1(\mathrm{SO}(n))=\mathbb{Z}/2$ for $n\ge3$.
 
@@ -170,12 +170,12 @@ The Clifford algebra $Cl(n)$ is generated by $e_1,\dots,e_n$ with $e_ie_j+e_je_i
 | $\widetilde R$ | The reversal of $R$ |
 | $R$ | A rotor: even, with $R\widetilde R=1$ |
 | $\rho_R(X)=RX\widetilde R$ | The rotation of $\mathbb{R}^n$ defined by $R$ |
-| $\mathrm{Spin}(n)$ | The rotor group, of dimension $n(n-1)/2$ |
+| $\mathrm{Spin}(n)$ | $SU(2)$, of dimension $n(n-1)/2$ |
 | $\omega$ | The volume element $e_1\cdots e_n$ |
 
 ## Further Reading
 
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the rotor group and the low-dimensional identifications.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for $SU(2)$ and the low-dimensional identifications.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge, 1995), for the period-eight table and the spin representations.
 - [The Matrix Algebra $M_n(\mathbb{R})$](the-matrix-algebra-mnr.html), for the algebra, its dimension and its group of invertibles.
 - [The Involutions of the First Kind: Transpose and Symplectic](the-involutions-of-the-first-kind-transpose-and-symplectic.html), for $\operatorname{Skew}_n$ and its identification with $\mathfrak{so}(n)$.

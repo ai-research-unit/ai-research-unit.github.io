@@ -67,6 +67,29 @@ three gradients and not eight: the phase's gradient is not among them, and neith
 **What survives.** One term linear in the phase's rate, the frame potential, and the mass term. **The surviving action is first order in the phase and algebraic in the frame**, so its Euler–Lagrange equations are the guidance equation and the constraints.
 
 **The guidance equation in mechanical variables.** Varying $\theta_{\mathrm{pha}}$ returns the continuity equation with $\vec v$ the kinetic velocity; varying the frame's angles returns the constraints; and the constraint surface evaluated with the coupling is the mechanical mass shell. **The chain from the boxed action to the mechanical shell goes through the constraints and not through a second-order equation**, and that is why this family's limit is a constraint-and-flow split.
+
+### The Limits and the Truncation’s Error
+
+**It costs the spin's curvature and the velocity's curvature.** The order-two terms deleted are the ones that would bend the density, the velocity field and the spin's frame. **Their size is the free size**: $\epsilon^{2}$ against the leading term, $\delta^{2}$ against the rest mass, because a curvature of a field varying on $L$ is $L^{-2}$.
+
+**It costs nothing of the coupling.** The potential sits in the phase slot and the boost slot; the deleted terms are the gradients of the scale, the rapidity and the rotor angle. **The two sets are disjoint**, so the deletion leaves the coupling entire, as in every family.
+
+**It buys the constraint structure as an exact statement.** The boxed action's equations are the frame's algebra and the guidance equation, and both are exact statements about the chart. **A variational principle that kept the gradients could not state them without invoking the discarded terms.**
+
+**It buys a comparison the corpus can make and does not make elsewhere.** The two displays are printed in the same article, so the limit's ledger is not a reconstruction but an inspection. **This is the only family in the corpus where that is so**, and it is worth saying because the reader's natural question — what exactly does the limit throw away — has a printed answer here.
+
+**The constraints survive, and they are the limit's whole content.** The truncated functional's variations give the mass-shell relation at the shifted frequency, the condition that fixes the frame's polarisation, and the vanishing of the three momenta that the polar word never gave a kinetic term. **None of these is an approximation**: they are the parent's conditions, and the limit is their statement.
+
+**The frame's transport survives.** Varying the frame gives the transport that rotates the polarisation along the flow, with the connection inside the covariant bracket. **It survives unchanged**, because no frame block was touched — the article's whole point is that nothing was.
+
+**The charge and the spin survive.** The phase's variation gives the charge and the frame's variation gives the spin density, with the connection entering only through the covariant derivative. **Both expressions are the parent's**, and the article's section on the charge and the spin is where they are displayed.
+
+**The gauge covariance survives.** The parent action is gauge invariant and the limit touches no term, so the truncated functional is gauge invariant. **The truncation cannot break the gauge symmetry, because there is no truncation**; the section says so once and does not labour it.
+
+**What does not survive, and this is the honest part.** Nothing is lost, and nothing is gained: **the limit does not select a class of solutions, because it is not an approximation to anything.** The article's claim is that the order-zero structure is exact, and that the "non-quantum" name describes an exact structure rather than a limit of one.
+
+**Why the family is worth its own article, then.** Because the exact structure is not the classical point-particle theory: the frame is a dynamical variable, the spin is a density, and the transport is not a geodesic equation. **The non-quantum limit of the Dirac family is the closest thing the corpus has to a classical spinning particle**, and it is exact, which is why the family's three articles each end with what survives rather than with what is lost.
+
 ## The Variation
 **Seven momenta and two evolution equations, from one variation.** The boxed action is first order in seven of the eight coordinates: it contains $\partial_{r'_t}\theta_{\mathrm{pha}}$ and no other rate. Varying it with respect to the coordinates gives two kinds of equation. The seven coordinates whose rates are absent give
 
@@ -103,27 +126,6 @@ and the Euler–Lagrange equation of the density and of the guidance angle gives
 **The spin current, unchanged.** The rotor's bracket is a real vector part and the connection is central, so the spin current is the free one: the rotor's conjugate momentum $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, transported by the same flow. The statement is exact and not an approximation of the limit: it is exact in the parent and the limit does not touch it.
 
 **What the mass term does.** It removes the phase from the dynamics of the density and puts it into the guidance equation, so that the charge is conserved without the mass appearing in its conservation law. The energy carries the mass; the charge does not. That split is the limit's form of the element article's *The Charge Has No Mass and the Energy Has Mass-Squared*, and it is the reason the two currents are computed separately here.
-## The Limits and the Truncation’s Error
-**It costs the spin's curvature and the velocity's curvature.** The order-two terms deleted are the ones that would bend the density, the velocity field and the spin's frame. **Their size is the free size**: $\epsilon^{2}$ against the leading term, $\delta^{2}$ against the rest mass, because a curvature of a field varying on $L$ is $L^{-2}$.
-
-**It costs nothing of the coupling.** The potential sits in the phase slot and the boost slot; the deleted terms are the gradients of the scale, the rapidity and the rotor angle. **The two sets are disjoint**, so the deletion leaves the coupling entire, as in every family.
-
-**It buys the constraint structure as an exact statement.** The boxed action's equations are the frame's algebra and the guidance equation, and both are exact statements about the chart. **A variational principle that kept the gradients could not state them without invoking the discarded terms.**
-
-**It buys a comparison the corpus can make and does not make elsewhere.** The two displays are printed in the same article, so the limit's ledger is not a reconstruction but an inspection. **This is the only family in the corpus where that is so**, and it is worth saying because the reader's natural question — what exactly does the limit throw away — has a printed answer here.
-
-**The constraints survive, and they are the limit's whole content.** The truncated functional's variations give the mass-shell relation at the shifted frequency, the condition that fixes the frame's polarisation, and the vanishing of the three momenta that the polar word never gave a kinetic term. **None of these is an approximation**: they are the parent's conditions, and the limit is their statement.
-
-**The frame's transport survives.** Varying the frame gives the transport that rotates the polarisation along the flow, with the connection inside the covariant bracket. **It survives unchanged**, because no frame block was touched — the article's whole point is that nothing was.
-
-**The charge and the spin survive.** The phase's variation gives the charge and the frame's variation gives the spin density, with the connection entering only through the covariant derivative. **Both expressions are the parent's**, and the article's section on the charge and the spin is where they are displayed.
-
-**The gauge covariance survives.** The parent action is gauge invariant and the limit touches no term, so the truncated functional is gauge invariant. **The truncation cannot break the gauge symmetry, because there is no truncation**; the section says so once and does not labour it.
-
-**What does not survive, and this is the honest part.** Nothing is lost, and nothing is gained: **the limit does not select a class of solutions, because it is not an approximation to anything.** The article's claim is that the order-zero structure is exact, and that the "non-quantum" name describes an exact structure rather than a limit of one.
-
-**Why the family is worth its own article, then.** Because the exact structure is not the classical point-particle theory: the frame is a dynamical variable, the spin is a density, and the transport is not a geodesic equation. **The non-quantum limit of the Dirac family is the closest thing the corpus has to a classical spinning particle**, and it is exact, which is why the family's three articles each end with what survives rather than with what is lost.
-
 ## What the Principle Adds and What It Relabels: What the Route Does Not Do
 **It does not derive the force.** The parent says so: the type table says where the potential acts and not what the resulting motion is. The force is read from the gradient of the mass shell, which is the equation-route companion's computation.
 

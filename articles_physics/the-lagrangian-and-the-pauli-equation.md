@@ -40,6 +40,17 @@ with $\tilde\nabla_\Phi^{\mathrm{mech}}=\tilde\nabla_\Phi-\frac{iq}{\hbar}\vec A
 **What is dropped.** Three things, and each is named because a limit that does not name its error is not a limit. The second time derivative of the residual field: order $1/m$. The negative-energy branch: it is not expanded, it is discarded, and its discarding is the content of "one particle". And the field's own back-reaction on the connection: the limit treats $\tilde A_\Phi$ as fixed, so it is a limit of the matter action at fixed field.
 
 **The bookkeeping, in one line.** The two-component structure survives because the rest phase does not mix the chiral parts: the projection onto the large component is the projection onto the fixed spin direction, and the small component is eliminated by its own equation of motion rather than set to zero. That elimination is what produces the magnetic moment, and it is the computation of §*The Structural Consequence*.
+
+### The Limits and the Truncation’s Error
+
+**The error is of order $1/m$, and it is not uniform.** The dropped second time derivative is $\frac{\hbar^{2}}{2mc^{2}}\partial^{2}_{r'^{2}_{t}}\tilde\chi$ in energy units: small when the kinetic energy is small compared with $mc^{2}$, and not small when it is not. So the limit is a low-energy limit, and its validity is a statement about the state and not about the equation.
+
+**The cost, in three items.** The negative-energy branch is discarded, so the limit cannot describe pair creation. The field is fixed, so the limit cannot describe radiation. And the spin's dynamics is reduced to precession, so the limit cannot describe the spin current's transport. Each is a feature of the Dirac theory that the limit does not carry, and each is the subject of an article the corpus has.
+
+**What the limit reads, and what it does not.** It reads the Dirac action's non-relativistic content as the Pauli action with $g=2$, and it reads the spin as the rotor's direction surviving the limit. It does not read the fine structure, the Darwin term or the spin-orbit coupling, which are the next order in the same expansion, and the corpus's parent article states them from the equation rather than from the action. That gap is real and it is the reason this article's displays stop at order $1/m$.
+
+**Why the truncation is stated rather than hidden.** Because a reader can check the order: the dropped term is displayed above with its coefficient, and the claim that it is small is the claim that the state's energy is small. A limit whose error is not written is a claim, not a derivation.
+
 ## The Variation
 **Two variations, and neither is new.** Varying $\tilde\chi^{*}$ gives the Pauli equation: the Schrödinger equation with the spin term added,
 
@@ -91,15 +102,6 @@ the parent's bilinear. The spin term contributes nothing to it: it is a function
 **The stress.** The energy density is the Schrödinger one plus the spin term's contribution, $-\frac{q}{m}\vec S\cdot\vec B$ with the sign of the display. Its positivity is not automatic: the spin term can be negative, and the bound is the parent's bound plus this term. That is the price of a limit: the relativistic energy was bounded below by the mass, and the non-relativistic one is bounded below by the mass only up to the magnetic term.
 
 **The sign of the charge.** The charge's sign is $q$'s, as everywhere. The moment's sign is the product of $q$'s sign and the spin's orientation, and that product is the reason a spin-up electron and a spin-down electron have opposite magnetic moments.
-## The Limits and the Truncation’s Error
-**The error is of order $1/m$, and it is not uniform.** The dropped second time derivative is $\frac{\hbar^{2}}{2mc^{2}}\partial^{2}_{r'^{2}_{t}}\tilde\chi$ in energy units: small when the kinetic energy is small compared with $mc^{2}$, and not small when it is not. So the limit is a low-energy limit, and its validity is a statement about the state and not about the equation.
-
-**The cost, in three items.** The negative-energy branch is discarded, so the limit cannot describe pair creation. The field is fixed, so the limit cannot describe radiation. And the spin's dynamics is reduced to precession, so the limit cannot describe the spin current's transport. Each is a feature of the Dirac theory that the limit does not carry, and each is the subject of an article the corpus has.
-
-**What the limit reads, and what it does not.** It reads the Dirac action's non-relativistic content as the Pauli action with $g=2$, and it reads the spin as the rotor's direction surviving the limit. It does not read the fine structure, the Darwin term or the spin-orbit coupling, which are the next order in the same expansion, and the corpus's parent article states them from the equation rather than from the action. That gap is real and it is the reason this article's displays stop at order $1/m$.
-
-**Why the truncation is stated rather than hidden.** Because a reader can check the order: the dropped term is displayed above with its coefficient, and the claim that it is small is the claim that the state's energy is small. A limit whose error is not written is a claim, not a derivation.
-
 ## What the Principle Adds and What It Relabels
 **What it adds.** A functional. The equation-level derivation expands the Dirac equation and reads $g=2$ off the result; the reader is asked to accept the coefficient because it came out of the algebra. The action route supplies something the equation route cannot: one object whose variation gives both the Schrödinger kinetic term and the magnetic term at once, so the coefficient is a property of a functional rather than of an expansion. That is the difference between deriving a number and displaying where it comes from.
 

@@ -67,7 +67,7 @@ $$
 
 and the three parameters are unique: the first column of $\Lambda$ is $(\gamma,-\gamma\vec\beta)$, so $\vec\beta$ is read off, and what remains after the boost is removed fixes the time axis and is therefore a rotation. So the boosts and the rotations generate the group, and two factors suffice: a frame is fixed by the velocity of the observer and the orientation of the observer's axes, and by nothing else.
 
-**This is not a product of groups.** The boosts are not closed under composition, since two boosts about different axes compose to a boost and a rotation, so the group is not $\mathrm{Boost}\times\mathrm{Rot}$; what is a product is the set of elements.
+**This is not a product of groups.** The boosts are not closed under composition, since two boosts about different axes compose to a boost and a rotation, so the group is not $\mathrm{Boost}\times\mathrm{SU}(2)$; what is a product is the set of elements.
 
 **The half-angle enters every boost.** Because $\cosh w$ and $\sinh w$ factor through it, $\cosh\tfrac w2=\sqrt{(\gamma+1)/2}$ and $\sinh\tfrac w2=\sqrt{(\gamma-1)/2}$. At $\beta=0.6$ the values are $\gamma=1.25$, $w=0.693147$ and $\cosh\tfrac w2=1.060660$.
 

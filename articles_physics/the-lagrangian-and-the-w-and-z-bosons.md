@@ -215,11 +215,7 @@ with the charge operator $Q=T_3+Y$, and its conservation is exact because the un
 
 ## Open Questions
 
-**Is the $SU(2)$ part carried by the algebra?** Only in part. The parent records the $\mathrm{U}(2)$ ceiling, and this article writes the $SU(2)$ lines in components. Whether a biquaternionic form of the full $SU(2)$ action exists is the ceiling question, and the answer recorded is no for the fundamental representation in general.
-
 **Why one doublet?** The action permits any number of scalars; the $\rho=1$ relation and the absence of flavour-changing neutral currents select one at tree level. Whether the algebra constrains the count is not established.
-
-**What fixes $v$?** Nothing in the action. It is measured, and the hierarchy problem article records the absence of a derivation as a standing item.
 
 ## Summary
 

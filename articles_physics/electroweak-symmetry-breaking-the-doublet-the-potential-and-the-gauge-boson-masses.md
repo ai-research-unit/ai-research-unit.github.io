@@ -74,13 +74,13 @@ $$
 
 which in four real components is a three-sphere $S^3$ of radius $v/\sqrt2$. Every point of it is a minimum, and the theory must choose one.
 
-**Which three-sphere it is, and why that is free.** The unit sphere of any four-real-dimensional carrier with a positive-definite invariant norm is $S^3$, and $S^3$ is the group manifold of the rotor group
+**Which three-sphere it is, and why that is free.** The unit sphere of any four-real-dimensional carrier with a positive-definite invariant norm is $S^3$, and $S^3$ is the group manifold of $SU(2)$, which is $SU(2)$
 
 $$
-\mathrm{Rot}=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=\mathrm{Spin}(3)=\mathrm{Sp}(1),
+\mathrm{SU}(2)=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=\mathrm{Spin}(3)=\mathrm{Sp}(1)=SU(2),
 $$
 
-of real dimension three. So the three Goldstones are coordinates on $\mathrm{Rot}$, the count is $3=\dim S^3=\dim\mathrm{Rot}=\dim SO(3)$, and unitary gauge is the choice of one point of the manifold. That much is a labelling, and it costs nothing: it does not say which carrier the sphere came from, and every statement so far survives it. The corpus's account of the group as an object rather than as a matrix display is [The Rotor Group via 4×4 Real Matrices](../articles_maths/the-rotor-group-via-4x4-real-matrices.html); the operator vocabulary used below is fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
+of real dimension three. So the three Goldstones are coordinates on $\mathrm{SU}(2)$, the count is $3=\dim S^3=\dim\mathrm{SU}(2)=\dim SO(3)$, and unitary gauge is the choice of one point of the manifold. That much is a labelling, and it costs nothing: it does not say which carrier the sphere came from, and every statement so far survives it. The corpus's account of the group as an object rather than as a matrix display is [The Spin Group via 4×4 Real Matrices](../articles_maths/the-spin-group-via-4x4-real-matrices.html); the operator vocabulary used below is fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
 
 **Where the identification stops.** The labelling earns its keep only if a rotor acts on that sphere by left multiplication, that is, only if some carrier of the algebra is left-stable and carries spin zero. Two computations settle whether one is, and both are one line.
 
@@ -89,7 +89,7 @@ of real dimension three. So the three Goldstones are coordinates on $\mathrm{Rot
 
 **The numbers are reproduced and the carrier is not.** Three Goldstones and one surviving circle follow from the ideal, and the same three and one are what the Standard Model doublet gives. The carriers the rotor reaches by left multiplication are the algebra itself, the two minimal left ideals, and the centre; the ideals carry spin one-half, the centre is fixed, and neither is a spin-zero carrier on which the rotor acts non-trivially. That is the gap left visible in [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html), and what the two lines above add is that the gap is a computation on the sector split rather than a remark: the sphere the doublet traces is the rotor's own manifold, and the only carrier that carries the rotor action is the one that carries spin one-half.
 
-**What this does not claim.** The doublet is a carrier choice and is imported, not derived; the potential, $\lambda$, $v$ and the normalisation of $\varphi$ are imported with it; unitary gauge is not $\tilde U=e_t$, because $e_t$ is the vacuum of the central scalar and not of the ideal. The identification of $S^3$ with $\mathrm{Rot}$ is a statement about a manifold, and it is the whole of what the paragraph above establishes.
+**What this does not claim.** The doublet is a carrier choice and is imported, not derived; the potential, $\lambda$, $v$ and the normalisation of $\varphi$ are imported with it; unitary gauge is not $\tilde U=e_t$, because $e_t$ is the vacuum of the central scalar and not of the ideal. The identification of $S^3$ with $\mathrm{SU}(2)$ is a statement about a manifold, and it is the whole of what the paragraph above establishes.
 
 **The choice is the breaking.** Take
 

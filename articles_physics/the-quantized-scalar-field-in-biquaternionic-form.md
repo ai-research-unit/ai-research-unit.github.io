@@ -181,7 +181,7 @@ U(\Lambda,a)\,\tilde{Ξ}_{\mathrm{fop}}(\tilde R_\Phi)\,U(\Lambda,a)^{-1}
 =\tilde{Ξ}_{\mathrm{fop}}\big(\Lambda\tilde R_\Phi+a\big),
 $$
 
-the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde U\in\mathbb{B}_{\Psi}$ acting on the material coordinate by conjugation, $\tilde R_\Phi\mapsto\tilde U\tilde R_\Phi\tilde U^{*}$, and the rotor acts trivially on the central value, $\tilde U e_t\tilde U^{*}=e_t$. The spin-$0$ representation is thus the trivial representation of the rotor group on the centre.
+the defining property of a scalar field: no matrix acts on the value space, and the argument is transported by the Lorentz transformation and the translation. In the framework's notation the Lorentz part is a rotor $\tilde U\in\mathbb{B}_{\Psi}$ acting on the material coordinate by conjugation, $\tilde R_\Phi\mapsto\tilde U\tilde R_\Phi\tilde U^{*}$, and the rotor acts trivially on the central value, $\tilde U e_t\tilde U^{*}=e_t$. The spin-$0$ representation is thus the trivial representation of $SU(2)$ on the centre.
 
 The internal symmetry acts by the central phase,
 

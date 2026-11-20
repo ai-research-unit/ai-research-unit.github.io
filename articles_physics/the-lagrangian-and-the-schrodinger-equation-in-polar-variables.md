@@ -359,6 +359,18 @@ a rotation composed with a dilation, invertible everywhere except at $\varrho=0$
 
 **What the claim does not say.** A diagonal Jacobian on one subclass is not a general statement, and the article does not make one. The general-element Jacobian is not computed, and §*Open Questions* records it as the third open question. The value of the claim is that it separates what is proved from what is inherited: exactness on the central field, an open computation elsewhere.
 
+### The Reconstruction and Its Limits
+
+**The reconstruction of the central field.** For the central field the word reduces to $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the inverse is the inverse of a plane polar coordinate map: $\varrho$ is the modulus and $\theta_{\mathrm{pha}}$ the argument. The two-norm form of the general element is not needed, because the rotor is trivial and the rapidity is zero; the reconstruction here is exactly the classical one, and the article uses it without comment.
+
+**The one real limit is the node.** At $\varrho=0$ the phase is undefined, so the reconstruction fails at every zero of the field and the chart must be patched across it. **The failure is not removable and it is not an artefact**: a field with a nodal line has a phase that winds, the winding is an integer, and the integer is not a function of the local parameters. The corpus's circulation article owns that statement; this article inherits it and states it once so that the reconstruction is not read as global.
+
+**The phase's range.** The phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct and a shift by $\pi$ is not a symmetry of the action. A reconstruction that used $(-\pi,\pi]$ would double-count every element; the interval the chart uses is the one the action's invariance allows.
+
+**What the reconstruction does not give.** The flow. For the central field the two parameter equations are the continuity equation and the guidance equation, and the article derives both; but the derivation is the Euler–Lagrange argument, and the reconstruction argument — that the field at each instant is recovered — says nothing about which field comes next. **The two are often run together in the literature and the article keeps them apart.**
+
+**What the coupling does to the reconstruction.** Nothing, in the free article, because there is no coupling; and in the coupled companion the same holds, because the word does not contain the connection. **The chart is the free one's and the dynamics is where the connection lives**, which is why the reconstruction section of a polar article is short and its constraint section is long.
+
 ## The Noether Currents: Density and Energy
 
 **The density is the phase's conjugate momentum, with a sign.** The boxed action for the central field is
@@ -407,25 +419,11 @@ The conserved quantity is $N$, the number density, and the minus sign is the con
 
 Two rows carry the whole difference. The kinetic row has no element-form counterpart to the cross term, because in the element form the rotor and the boost are not separated, so the term is inside one bilinear and cannot be seen. And the degeneracy row is the polar chart's own discovery: the same action, written in the eight parameters, exhibits the four vanishing momenta that the eight components hide.
 
-## The Reconstruction and Its Limits
-
-**The reconstruction of the central field.** For the central field the word reduces to $\varrho\,e^{i\theta_{\mathrm{pha}}}$ and the inverse is the inverse of a plane polar coordinate map: $\varrho$ is the modulus and $\theta_{\mathrm{pha}}$ the argument. The two-norm form of the general element is not needed, because the rotor is trivial and the rapidity is zero; the reconstruction here is exactly the classical one, and the article uses it without comment.
-
-**The one real limit is the node.** At $\varrho=0$ the phase is undefined, so the reconstruction fails at every zero of the field and the chart must be patched across it. **The failure is not removable and it is not an artefact**: a field with a nodal line has a phase that winds, the winding is an integer, and the integer is not a function of the local parameters. The corpus's circulation article owns that statement; this article inherits it and states it once so that the reconstruction is not read as global.
-
-**The phase's range.** The phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct and a shift by $\pi$ is not a symmetry of the action. A reconstruction that used $(-\pi,\pi]$ would double-count every element; the interval the chart uses is the one the action's invariance allows.
-
-**What the reconstruction does not give.** The flow. For the central field the two parameter equations are the continuity equation and the guidance equation, and the article derives both; but the derivation is the Euler–Lagrange argument, and the reconstruction argument — that the field at each instant is recovered — says nothing about which field comes next. **The two are often run together in the literature and the article keeps them apart.**
-
-**What the coupling does to the reconstruction.** Nothing, in the free article, because there is no coupling; and in the coupled companion the same holds, because the word does not contain the connection. **The chart is the free one's and the dynamics is where the connection lives**, which is why the reconstruction section of a polar article is short and its constraint section is long.
-
 ## Open Questions
 
-**1. The Dirac form of the four constraints.** The four vanishing momenta are primary constraints, and the article shows that their Euler–Lagrange equations fix the four velocities the momenta do not. The Dirac bracket on the reduced phase space, and the explicit proof that the reduced flow is the parent's, are not written out here. The equivalence identity makes the conclusion safe; the constraint algebra itself is open.
+**The Dirac form of the four constraints.** The four vanishing momenta are primary constraints, and the article shows that their Euler–Lagrange equations fix the four velocities the momenta do not. The Dirac bracket on the reduced phase space, and the explicit proof that the reduced flow is the parent's, are not written out here. The equivalence identity makes the conclusion safe; the constraint algebra itself is open.
 
-**2. The operator setting for the general element.** The article treats the constant Hamiltonian for the general element and the operator Hamiltonian only for the central field. In the operator setting the gradient of the word produces, in addition to the Madelung quantum potential, terms in the gradient of the boost and of the rotor. Whether the cross term of this article has a gradient counterpart, and whether the parameterisation still absorbs the unit conditions, is not attempted.
-
-**3. The general Jacobian.** The central-field Jacobian is computed; the general one is not. A future computation would state which bracket each parameter equation carries, and whether the correspondence is triangular in some ordering of the parameters.
+**The operator setting for the general element.** The article treats the constant Hamiltonian for the general element and the operator Hamiltonian only for the central field. In the operator setting the gradient of the word produces, in addition to the Madelung quantum potential, terms in the gradient of the boost and of the rotor. Whether the cross term of this article has a gradient counterpart, and whether the parameterisation still absorbs the unit conditions, is not attempted.
 
 ## Summary
 

@@ -28,6 +28,14 @@ The parent writes it in $r'_t$ with a factor $c$; the substitution $i\hbar\,c\,\
 
 **The two kinds of coefficient.** A *Hermitian coefficient* is $\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi$ with real numbers. A *root* is $\tilde Z$ with $\tilde Z^{2}=-e_t$; the four used below are $i$, $\vec e_z$, $\vec e_x$ and $(\vec e_x+\vec e_z)/\sqrt2$. Every root is anti-Hermitian, because $\vec e_\mu^{*}=-\vec e_\mu$ and $i^{*}=-i$.
 
+### The Constant-Coefficient Licence
+
+**Constant coefficients.** Every statement about the symbol needs a constant Hamiltonian, and the operator setting replaces the symbol by a convolution. The action remains real there, term by term, for the same reason; what fails is the fixed-frequency reduction, not the reality.
+
+**Hermitian coefficients.** The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument in the reality part of §*The Action* does not apply to the potential.
+
+**One-time functionals.** The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.
+
 ## The Action in Momentum Space: The Quadratic Form at Fixed Frequency
 
 **One substitution.** Put $\tilde\Xi=e^{-i\omega t'}\tilde X$ with $\tilde X$ constant. Then $\partial\tilde\Xi=-i\omega\tilde\Xi$, the antisymmetrised kinetic density is $\hbar\omega\,\mathrm{Sc}(\tilde X^{*}\tilde X)$, and the action becomes
@@ -136,6 +144,18 @@ and it holds for every anti-Hermitian root, for the same reason the action is re
 
 **What the section does not claim.** It does not claim that the zero is a bound state. **A zero of the form is a propagation condition**, and whether the propagating mode is normalisable is a question about the boundary conditions that this reading does not supply.
 
+### The Legendre Transform
+
+**The slope.** $\partial\sigma/\partial\omega=\hbar$ for every $\tilde H_\Psi$, because the Hamiltonian does not depend on the frequency. A central difference on the scalar part at $\omega=0.7$ returned $1.000000000000$ at a step of $10^{-2}$ and $10^{-4}$, and $1.000000000029$ at $10^{-6}$, which is the roundoff of the step and not a deviation of the slope. **The frequency is conjugate to time with slope $\hbar$, and the slope is the same for every Hamiltonian.**
+
+**Non-degeneracy.** $\hbar\neq0$, so the Legendre map from the frequency to the time derivative is invertible everywhere. **There is no constraint surface and no multiplier**: the variational principle for a first-order equation is unconstrained, which is what the polar variational companion means when it says no multiplier is needed for the unit conditions.
+
+**The symbol is affine, so the transform is trivial.** A function affine in $\omega$ is its own Legendre transform up to a total derivative. So the frequency-space action and the time-domain action are related by the elementary transform and not by a nontrivial dualisation. **The nontrivial dualisations in this corpus are in the second-order articles**, where the symbol is quadratic and the derivative of the symbol is the velocity.
+
+**The velocity and the momentum.** For a first-order equation the velocity is the field's time derivative and the momentum is the field's conjugate, and the two are not related by the symbol's derivative. **The symbol's derivative is $\hbar$ times the identity**, so the "velocity" the transform returns is the same for every mode: that is the statement that a first-order equation has no dispersion to invert.
+
+**What the slope fixes.** The slope fixes the normalisation of the transform and therefore the normalisation of $Q_N$ and $E$. **One choice of $\hbar$ fixes both**, and no second convention enters.
+
 ## The Constraints the Action Imposes: The Constraint Is the Frequency
 
 **At fixed frequency the variation is algebraic.** The substitution $\tilde\Xi=e^{-i\omega t'}\tilde X$ has removed the derivative, so the action $S_\omega$ is a quadratic form in the constant amplitude. Stationarity forces its bracket to vanish, and where the bracket is invertible the only stationary amplitude is zero.
@@ -196,26 +216,6 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 
 **What Parseval does not say.** It does not say that the coefficients are probabilities, and it does not normalise them. **The charge is a real number and the algebra supplies no probability rule**; the corpus's measurement articles are where that reading is made, and this article does not make it.
 
-## The Legendre Transform
-
-**The slope.** $\partial\sigma/\partial\omega=\hbar$ for every $\tilde H_\Psi$, because the Hamiltonian does not depend on the frequency. A central difference on the scalar part at $\omega=0.7$ returned $1.000000000000$ at a step of $10^{-2}$ and $10^{-4}$, and $1.000000000029$ at $10^{-6}$, which is the roundoff of the step and not a deviation of the slope. **The frequency is conjugate to time with slope $\hbar$, and the slope is the same for every Hamiltonian.**
-
-**Non-degeneracy.** $\hbar\neq0$, so the Legendre map from the frequency to the time derivative is invertible everywhere. **There is no constraint surface and no multiplier**: the variational principle for a first-order equation is unconstrained, which is what the polar variational companion means when it says no multiplier is needed for the unit conditions.
-
-**The symbol is affine, so the transform is trivial.** A function affine in $\omega$ is its own Legendre transform up to a total derivative. So the frequency-space action and the time-domain action are related by the elementary transform and not by a nontrivial dualisation. **The nontrivial dualisations in this corpus are in the second-order articles**, where the symbol is quadratic and the derivative of the symbol is the velocity.
-
-**The velocity and the momentum.** For a first-order equation the velocity is the field's time derivative and the momentum is the field's conjugate, and the two are not related by the symbol's derivative. **The symbol's derivative is $\hbar$ times the identity**, so the "velocity" the transform returns is the same for every mode: that is the statement that a first-order equation has no dispersion to invert.
-
-**What the slope fixes.** The slope fixes the normalisation of the transform and therefore the normalisation of $Q_N$ and $E$. **One choice of $\hbar$ fixes both**, and no second convention enters.
-
-## The Limits and the Truncation’s Error
-
-**Constant coefficients.** Every statement about the symbol needs a constant Hamiltonian, and the operator setting replaces the symbol by a convolution. The action remains real there, term by term, for the same reason; what fails is the fixed-frequency reduction, not the reality.
-
-**Hermitian coefficients.** The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument in the reality part of §*The Action* does not apply to the potential.
-
-**One-time functionals.** The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.
-
 ## What the Principle Adds and What It Relabels: In Momentum Space
 
 **One identity and one separation.** The identity is that the symbol is the fixed-frequency action's kernel, so the two companion articles describe one object. The separation is that the reality of the action and the reality of the spectrum are different requirements, with different strengths and different counts.
@@ -228,13 +228,11 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 
 ## Open Questions
 
-**The first question is whether a weaker reality suffices for a unitary flow.** The action is real for every anti-Hermitian root, and the flow is unitary for none of the non-central ones. Whether some other functional distinguishes them is not settled here.
+**Whether a weaker reality suffices for a unitary flow.** The action is real for every anti-Hermitian root, and the flow is unitary for none of the non-central ones. Whether some other functional distinguishes them is not settled.
 
-**The second is the count's dependence on the measure.** The counts $32$, $30$ and $37$ are counts with respect to uniform coefficients. A different measure gives different numbers, and the cone condition, not the number, is the invariant statement.
+**The second-order root.** The Dirac and Klein–Gordon articles factor their operators and ask about a square root; the Schrödinger operator has a square root trivially, because it is first order. Whether the variational argument has a second-order analogue in which the root's type is again the deciding condition is open.
 
-**The third is the second-order root.** The Dirac and Klein–Gordon articles factor their operators and ask about a square root; the Schrödinger operator has a square root trivially, because it is first order. Whether the variational argument has a second-order analogue in which the root's type is again the deciding condition is open.
-
-**The fourth is the operator setting's Legendre structure.** With a position-dependent Hamiltonian the slope in $\omega$ is still $\hbar$, and the dual variable is still a time. Whether the position dependence can be absorbed into a local frequency with a Legendre structure of its own is the polar companion's question.
+**The operator setting's Legendre structure.** With a position-dependent Hamiltonian the slope in $\omega$ is still $\hbar$, and the dual variable is still a time. Whether the position dependence can be absorbed into a local frequency with a Legendre structure of its own is open.
 
 ## Summary
 

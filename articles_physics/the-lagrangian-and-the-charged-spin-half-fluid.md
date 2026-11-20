@@ -34,6 +34,23 @@ $$
 
 **The sign and the normalisation are the scalar charged article's.** The coupling enters the time slot with the same sign there and here, because the substitution is the same substitution; the difference is that here it also enters the boost's bracket, and there it entered the velocity's gradient. **The Lorentz force's sign is fixed once for both rungs**, and the sign of the second rate's modification is what the block's $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ requires.
 
+### The Two Settings: The Canonical Table Is Unchanged
+
+**Four statements, and the coupling moves none of them.**
+
+| momentum | value | changed by the coupling? |
+| --- | --- | --- |
+| $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,\rho_{\mathrm{chg}}$ | no |
+| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | no |
+| $p_{\theta_{\mathrm{rpd}}}$ | $0$ | no |
+| $p_{u_{\mathrm b}}$, $p_{\varrho}$ | $0$ | no |
+
+**The invariance of the table is "no torque" stated canonically.** A torque is a change in the spin's momentum; the spin's momentum is a closed form in the rotor and the boost, and the connection is in neither, so the form is unchanged. The force is a change in the velocity's momentum, and the velocity is not canonical here at all: its momentum is zero before and after. **The asymmetry is exact: the coupling moves the one quantity that has no momentum and leaves alone the two that have.**
+
+**What the table says about the block's claim of a surviving normalisation.** $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, and the table gives the reason: the velocity is built from the boost element, the boost's bracket is a connection, and a connection does not change a norm. **A connection changes transports; a norm is not a transport.** The free companion's normalisation is therefore not "surviving" anything — nothing was ever at risk.
+
+**And the contrast with the scalar rung is exact.** There the velocity is $\tilde P^{\mathrm{mech}}/m$, a four-vector whose norm the mass shell fixes, and the shell's right-hand side carries $-2Q_{\mathrm{qnt}}/m$; the coupling changes the velocity and not the shell, so the norm moves with the field through the quantum potential. Here the velocity is invertible's square and no term is available to move it. **One rung has a norm that measures the state; the other has a norm that is a property of the frame.**
+
 ## The Variation
 
 **The covariant rates vary independently.** The kinetic term is the free one with the phase's rate and the rotor's rate replaced by their covariant versions. Varying the density and the phase gives the continuity equation for $\rho_{\mathrm{chg}}$ and the guidance equation with the mechanical momentum $\vec\pi=\vec p-q\vec A$; varying the rotor gives the spin's transport with the same momentum; varying the connection gives the Maxwell equation. The three vanishing momenta of the canonical table are unchanged, because they are algebraic consequences of the parameterisation and the coupling never reaches them.
@@ -99,23 +116,6 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **The sign.** The charge's sign is $q$'s; the spin's is the frame's, negative, and the product of the two signs is the spin's contribution to the energy. That product is what the article's canonical table records and the coupling does not change.
 
-## The Two Settings: The Canonical Table Is Unchanged
-
-**Four statements, and the coupling moves none of them.**
-
-| momentum | value | changed by the coupling? |
-| --- | --- | --- |
-| $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,\rho_{\mathrm{chg}}$ | no |
-| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | no |
-| $p_{\theta_{\mathrm{rpd}}}$ | $0$ | no |
-| $p_{u_{\mathrm b}}$, $p_{\varrho}$ | $0$ | no |
-
-**The invariance of the table is "no torque" stated canonically.** A torque is a change in the spin's momentum; the spin's momentum is a closed form in the rotor and the boost, and the connection is in neither, so the form is unchanged. The force is a change in the velocity's momentum, and the velocity is not canonical here at all: its momentum is zero before and after. **The asymmetry is exact: the coupling moves the one quantity that has no momentum and leaves alone the two that have.**
-
-**What the table says about the block's claim of a surviving normalisation.** $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, and the table gives the reason: the velocity is built from the boost element, the boost's bracket is a connection, and a connection does not change a norm. **A connection changes transports; a norm is not a transport.** The free companion's normalisation is therefore not "surviving" anything — nothing was ever at risk.
-
-**And the contrast with the scalar rung is exact.** There the velocity is $\tilde P^{\mathrm{mech}}/m$, a four-vector whose norm the mass shell fixes, and the shell's right-hand side carries $-2Q_{\mathrm{qnt}}/m$; the coupling changes the velocity and not the shell, so the norm moves with the field through the quantum potential. Here the velocity is invertible's square and no term is available to move it. **One rung has a norm that measures the state; the other has a norm that is a property of the frame.**
-
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 
 **Adds.** The coupling's reach as a table with two structural zeros, and hence the type argument in one line. "No torque" as the invariance of the weight $\beta$ rather than as a computation. The canonical table's invariance, which is the same statement read canonically. The surviving normalisation as the statement that a connection transports and does not measure. The gauge invariance's exactness as the centrality of the gauge group rather than as a checked cancellation. And the contrast with the scalar rung as a difference in the kind of object the velocity is: a gradient there, a square here.
@@ -140,11 +140,9 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 ## Open Questions
 
-1. **The bracket with the connection.** Whether the Dirac bracket closes when the constraints are computed with the covariant one-form — that is, whether the connection's presence changes the class of the four constraints — is not settled. The polar companion's computation is for the free field.
+**The bracket with the connection.** Whether the Dirac bracket closes when the constraints are computed with the covariant one-form — whether the connection's presence changes the class of the four constraints — is not settled. The polar companion's computation is for the free field.
 
-2. **The operator setting.** As in the free companion, the frame's spatial gradients are where the vorticity lives, and the article does not compute them. Whether the connection's spatial part changes their closed form by more than a substitution is open.
-
-3. **The mass and the direction.** One declared direction, as in the free companion. Whether the coupling's phase freedom can absorb it in some naming of the parts is not settled and the article does not claim it can.
+**The mass and the direction.** One declared direction, as in the free companion. Whether the coupling's phase freedom can absorb it in some naming of the parts is not settled and the article does not claim it can.
 
 ## Summary
 

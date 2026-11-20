@@ -1,21 +1,21 @@
-# __From the Spin of the Rotor to the Spin of a Pair of Operators Acting on Two Sides__
+# __From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides__
 
 ## Introduction
 
 A single rotor carries spin $\tfrac12$. The number comes from three real $4\times4$ matrices and one sum of squares, and it needs no complex two-vector and no table of coefficients. A pair of operators acting on two sides carries two such factors, one on the left and one on the right, and the pair carries spin $0$ and spin $1$. This article computes both numbers in the real display and states exactly what each step uses.
 
-**The thread.** Left multiplication by a unit quaternion is a real orthogonal matrix. Its three generators square to minus the identity, so the sum of their squares is $-3\mathrm{I}_4$, and the Casimir of the halved generators is $\pm\tfrac34$. On an irreducible carrier the Casimir is $s(s+1)$, so $s=\tfrac12$. The pair is an element of the product group $S^3_L\times S^3_R$, each factor carries $\tfrac12$, and the addition rule for the irreducible carriers of the rotor group gives $0$ and $1$. The total Casimir then takes the values $0$ and $2$, and those are the only two values.
+**The thread.** Left multiplication by a unit quaternion is a real orthogonal matrix. Its three generators square to minus the identity, so the sum of their squares is $-3\mathrm{I}_4$, and the Casimir of the halved generators is $\pm\tfrac34$. On an irreducible carrier the Casimir is $s(s+1)$, so $s=\tfrac12$. The pair is an element of the product group $S^3_L\times S^3_R$, each factor carries $\tfrac12$, and the addition rule for the irreducible carriers of the spin group gives $0$ and $1$. The total Casimir then takes the values $0$ and $2$, and those are the only two values.
 
 **What the article does not use.** No matrix group called $SU(2)$, no complex two-space, and no Clebsch–Gordan coefficients. The carriers are real, the generators are real antisymmetric matrices, and the multiplicities are read off as dimensions of eigenspaces. The complex display appears once, in a remark, as a bookkeeping device that the real computation does not need.
 
-**Roadmap.** The rotor group comes first, then the single rotor and its Casimir, then the two-sided operator and the correction it needs, then the pair, then the addition rule, then the Casimir check on the two carriers, then what is and is not claimed. The corrections, the verification and the summary close the article.
+**Roadmap.** The spin group comes first, then the single rotor and its Casimir, then the two-sided operator and the correction it needs, then the pair, then the addition rule, then the Casimir check on the two carriers, then what is and is not claimed. The corrections, the verification and the summary close the article.
 
-## The Rotor Group
+## The Spin Group
 
-**Definition.** The **rotor group** is the group of unit quaternions,
+**Definition.** The **spin group** is the group of unit quaternions,
 
 $$
-\mathrm{Rot}:=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=\{\tilde q\in\mathbb{H}:\lvert\tilde q\rvert=1\}=S^3,
+\mathrm{Spin}(3):=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=\{\tilde q\in\mathbb{H}:\lvert\tilde q\rvert=1\}=S^3,
 $$
 
 under quaternion multiplication. Its real dimension is three. It is the spin group $Spin(3)$, and it is not a group of matrices: every matrix group below is an image of it.
@@ -28,9 +28,9 @@ $$
 
 is a surjective homomorphism with kernel $\{\pm e_t\}$. A rotation by $2\pi$ corresponds to the rotor $-e_t$, and only a rotation by $4\pi$ corresponds to $+e_t$. This is the geometric origin of the half-integer numbers: the sphere covers the rotation group twice, so a carrier on which $-e_t$ acts as $-1$ is available, and it does not descend to the rotation group.
 
-**The two names.** $Spin(3)$ and $\mathrm{Rot}$ denote one object. For $n\ge4$ the spin group is a cover of $SO(n)$ of dimension $\binom n2$ and is not a sphere; the identification with the rotor group is a statement about $n=3$ only.
+**The two names.** $Spin(3)$ and $S^3$ denote one object. For $n\ge4$ the spin group is a cover of $SO(n)$ of dimension $\binom n2$ and is not a sphere; the identification with the spin group is a statement about $n=3$ only.
 
-**Remark (the excluded sentence).** The sentence "the rotor group is $SU(2)$" is excluded. $SU(2)$ is the image of the $2\times2$ complex display, and the isomorphism from $S^3$ to that image is a choice of display. Every statement below is a statement about $S^3$ and about real carriers, so the exclusion costs nothing here.
+**Remark (the excluded sentence).** The sentence "the spin group is $SU(2)$" is excluded. $SU(2)$ is the image of the $2\times2$ complex display, and the isomorphism from $S^3$ to that image is a choice of display. Every statement below is a statement about $S^3$ and about real carriers, so the exclusion costs nothing here.
 
 ## The Single Rotor
 
@@ -163,7 +163,7 @@ The brief of this article names $\mathbb{R}^{16}$ and the generators $J_k\otimes
 
 ## The Addition Rule
 
-**The theorem.** The irreducible unitary carriers of the rotor group are labelled by
+**The theorem.** The irreducible unitary carriers of the spin group are labelled by
 
 $$
 j\in\tfrac12\mathbb{Z}_{\ge0}=\{0,\tfrac12,1,\tfrac32,2,\ldots\},
@@ -175,7 +175,7 @@ $$
 j_1\otimes j_2=\bigoplus_{j=\lvert j_1-j_2\rvert}^{j_1+j_2} j .
 $$
 
-This is a theorem about the representation theory of the rotor group, equivalently about its Lie algebra. It is not a formula about complex matrices, and no coefficient is computed in this article; the statement used here is the list of labels, and the labels are identified with the numbers $0$ and $1$ by the Casimir, in the next section.
+This is a theorem about the representation theory of the spin group, equivalently about its Lie algebra. It is not a formula about complex matrices, and no coefficient is computed in this article; the statement used here is the list of labels, and the labels are identified with the numbers $0$ and $1$ by the Casimir, in the next section.
 
 **The case of two rotors.** With $j_1=j_2=\tfrac12$,
 
@@ -238,13 +238,13 @@ where $Q$ is the orthogonal projection onto the part of label $0$. On carrier A,
 
 **The sentences that must not be written.** Each is an error of fact or of scope, and each has a repair above.
 
-1. **"The rotor group is $SU(2)$."** The rotor group is $S^3$. $SU(2)$ is the image of one complex display, and the isomorphism is a choice.
+1. **"The spin group is $SU(2)$."** The spin group is $S^3$. $SU(2)$ is the image of one complex display, and the isomorphism is a choice.
 2. **"The $L$-generators give all spins."** They give $\tfrac12$, on $\mathbb{R}^4$. Other spins need other carriers.
 3. **"A boost has $\tilde U_{\mathrm b}^{\natural}\ne\tilde U_{\mathrm b}^{-1}$, so the two-sided operator is not inverse-conjugation on the boost sector."** The premise is false: a boost has norm one, so $\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1}$ and the $\natural$-operator is inverse-conjugation on it. The operator that fails to be inverse-conjugation there is the $*$-operator, since $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$.
 4. **"The pair contains spin $2$."** It contains $0$ and $1$. Spin $2$ needs four factors.
 5. **"The pair carries spin $\tfrac12$ again."** The total Casimir has no half-integer value on either carrier. The half-integer belongs to one factor, not to the pair.
 6. **"The right multiplication is a homomorphism, so the total generator is $J_k+J'_k$."** Right multiplication is an anti-homomorphism, $R(\tilde q)R(\tilde p)=R(\tilde p\tilde q)$, its generators obey $[R_x,R_y]=-2R_z$, and the diagonal rotation generator is $J_k-J'_k$. The combination $J_k+J'_k$ generates $X\mapsto\tilde qX\tilde q$, which is not a group action at all.
-7. **"The decomposition is the complex formula $\mathbf{2}\otimes\mathbf{2}=\mathbf{1}\oplus\mathbf{3}$, imported."** The formula is a matrix realization of the theorem. The theorem is the addition rule for the labels of the rotor group, and the real computation confirms it with real matrices.
+7. **"The decomposition is the complex formula $\mathbf{2}\otimes\mathbf{2}=\mathbf{1}\oplus\mathbf{3}$, imported."** The formula is a matrix realization of the theorem. The theorem is the addition rule for the labels of the spin group, and the real computation confirms it with real matrices.
 8. **"Differentiate at $R=1$."** The Lie algebra is the tangent space at the identity; the phrase "differentiate at $R=1$" mixes a matrix entry with a group element.
 9. **"The proof is circular, because the Casimir is used to define the spin and the addition rule to define the Casimir."** Neither is used to define the other. The Casimir is a sum of squares of explicit matrices, the addition rule is a theorem about labels, and the two agree.
 10. **"The Casimir of the real antisymmetric generators is $+\tfrac34$."** It is $-\tfrac34$; the Hermitian normalization $H_k=iJ_k$ gives $+\tfrac34$. Both appear above, and the sign is the sign of $i^2$.
@@ -286,13 +286,13 @@ where $Q$ is the orthogonal projection onto the part of label $0$. On carrier A,
 
 ## Summary
 
-The rotor group is $S^3$, of real dimension three, and it is $Spin(3)$. Its double cover of $SO(3)$ has kernel $\{\pm e_t\}$, a full turn upstairs is $-e_t$, and this is where half-integer carriers come from.
+The spin group is $S^3$, of real dimension three, and it is $Spin(3)$. Its double cover of $SO(3)$ has kernel $\{\pm e_t\}$, a full turn upstairs is $-e_t$, and this is where half-integer carriers come from.
 
 Left multiplication gives three real antisymmetric generators with $L_k^2=-\mathrm{I}_4$ and $[L_x,L_y]=2L_z$. Halving them gives $[J_i,J_j]=\varepsilon_{ijk}J_k$ and the Casimir $\sum_kJ_k^2=-\tfrac34\mathrm{I}_4$, or $+\tfrac34\mathrm{I}_4$ in the Hermitian normalization $H_k=iJ_k$. On the irreducible carrier $\mathbb{R}^4$ the Casimir is $s(s+1)$, so $s=\tfrac12$, and the weights $\pm\tfrac12$ confirm it. The real dimension is $4$ where $2s+1=2$, because the carrier is quaternionic.
 
 The two-sided product is forced, since one-sided multiplication is multiplicative only for the unit. The corpus operator $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{\natural}$ equals the norm times conjugation by the inverse, so it is an automorphism exactly on the norm-one surface, and on the rotor sphere the two marks coincide and the operator is conjugation by the inverse with no ambiguity. On the boost sector $\natural$ is still the inverse, since a boost has norm one; the operator that fails there is the $*$-operator. The right factor of a two-sided action is an anti-homomorphism, and the diagonal rotation generator is $J_k-J'_k$.
 
-The pair is $S^3_L\times S^3_R$, acting on $\mathbb{H}$ of real dimension four, with two commuting Casimirs each $-\tfrac34$. The addition rule for the labels of the rotor group gives $\tfrac12\otimes\tfrac12=0\oplus1$. The total Casimir is $2(\mathrm{I}-Q)$ with $Q$ the projection onto the singlet part: on $\mathbb{H}$ its spectrum is $0$ once and $2$ three times, and on $\mathbb{H}\otimes\mathbb{H}$ it is $0$ four times and $2$ twelve times. The values $0$ and $2$ are $j(j+1)$ at $j=0$ and $j=1$, and those are the two spins of the pair.
+The pair is $S^3_L\times S^3_R$, acting on $\mathbb{H}$ of real dimension four, with two commuting Casimirs each $-\tfrac34$. The addition rule for the labels of the spin group gives $\tfrac12\otimes\tfrac12=0\oplus1$. The total Casimir is $2(\mathrm{I}-Q)$ with $Q$ the projection onto the singlet part: on $\mathbb{H}$ its spectrum is $0$ once and $2$ three times, and on $\mathbb{H}\otimes\mathbb{H}$ it is $0$ four times and $2$ twelve times. The values $0$ and $2$ are $j(j+1)$ at $j=0$ and $j=1$, and those are the two spins of the pair.
 
 A full turn is $-1$ on the single carrier and $+1$ on both pair carriers, so the pair is an action of the rotation group. The projection $Q$ commutes with the total generators and not with either factor alone, which is the precise sense in which the split belongs to the pair.
 
@@ -300,7 +300,7 @@ A full turn is $-1$ on the single carrier and $+1$ on both pair carriers, so the
 
 | symbol | meaning |
 | --- | --- |
-| $\mathrm{Rot}=S^3=Spin(3)$ | the rotor group, the unit quaternions |
+| $\mathrm{Spin}(3)=S^3$ | the spin group, the unit quaternions |
 | $\mathbb{H}$, $e_t,\vec e_x,\vec e_y,\vec e_z$ | the quaternion algebra and its real basis |
 | $\natural$, $*$ | quaternion conjugation and the Hermitian adjoint $*=\bar{\cdot}\circ\natural$ |
 | $\langle\tilde Q\rangle_{\natural}$ | the value of the quaternion norm on $\tilde Q$ |
@@ -317,8 +317,8 @@ A full turn is $-1$ on the single carrier and $+1$ on both pair carriers, so the
 
 ## Further Reading
 
-- [From the Rotor to the Spin of the Rotor](from-the-rotor-to-the-spin-of-the-rotor.html), for the single-rotor Casimir, the forcing of the two-sided product and the tensor square of the rotor carrier.
-- [The Rotor Group via 4×4 Real Matrices](the-rotor-group-via-4x4-real-matrices.html), for the left-regular display, its generators, its exponential and the two isoclinic copies of $S^3$ in $SO(4)$.
+- [From the Spin Group to the Spin of a Single Rotor](from-the-spin-group-to-the-spin-of-a-single-rotor.html), for the single-rotor Casimir, the forcing of the two-sided product and the tensor square of the rotor carrier.
+- [The Spin Group via 4×4 Real Matrices](the-spin-group-via-4x4-real-matrices.html), for the left-regular display, its generators, its exponential and the two isoclinic copies of $S^3$ in $SO(4)$.
 - [The Two-Sided Operators and the Spin Group](the-two-sided-operators-and-the-spin-group.html), for the two-sided operators of the biquaternion algebra and their relation to the spin group.
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table and the identity $2s+1=\dim$.
 - [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the operator $\Theta_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{*}$ and its multiplicativity.

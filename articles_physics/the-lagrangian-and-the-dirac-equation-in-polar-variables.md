@@ -282,6 +282,26 @@ The scale enters as $\varrho^{2}$ in both terms. The phase enters only through i
 
 **The overall factor.** The element action carries $\hbar c/2$; the box has $\hbar c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §*The Kinetic Term*.
 
+### The Reconstruction and Its Limits
+
+**The reconstruction here is not the scalar field's.** The word recovers the element from eight parameters, and for the Dirac field the rotor is not decoration: the kinetic term is
+
+$$
+\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr),
+$$
+
+so the rotor's angular velocity enters the action and its reconstruction is part of what the chart must deliver. **The inverse map must recover the rotor axis as well as the angle**, and it must recover the direction $\hat n_{\mathrm{rot}}$ that couples the boost and the rotor.
+
+**The limit that this field has and the scalar field does not.** The cross term is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at $\theta_{\mathrm{rpd}}=0$ it vanishes and with it every trace of the rotor's rate. **A reconstruction performed at zero rapidity cannot recover $\vec\omega_{\mathrm r}$**, because the quantity that would carry it is not in the action there. This is not a defect of the inverse map: the map recovers the rotor angle, and the action then declines to use it. The article states the distinction because a reader who saw the rotor drop out at $\theta_{\mathrm{rpd}}=0$ could conclude that it had been lost in the change of variables, and it has not.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element and the cone's apex. A field that reaches $\varrho=0$ leaves the chart, and the element form is the description that survives there.
+
+**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$, the negative real axis among them. The phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. **Both endpoints are properties of the parameterisation and neither is a convention of this article.**
+
+**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow. **For this field the gap is wider than for the scalar one**, because three momenta vanish and the constraints that replace them are what fixes the frame — and whether the reduced flow is the pair's flow is the article's open question.
+
+**One further limit of the reconstructed chart.** The reconstruction is pointwise, so it cannot see the phase's winding around a zero of $\varrho$. That is the nodal set, it belongs to the corpus's circulation article, and this article inherits the exception rather than solving it.
+
 ## The Noether Currents: The Phase Charge and the Spin
 
 **Two currents, and the chart gives both by differentiation.** The phase symmetry is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\text{const}$, and the conjugate momentum is read from the boxed kinetic term of the third section:
@@ -306,7 +326,7 @@ so the conserved density is $\rho_{\mathrm{pol}}=\varrho^{2}\cosh\theta_{\mathrm
 
 **The qualification is part of the statement.** The spin's momentum is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at rest it vanishes and the spin is not canonical either. The unconditional form of the claim fails at $\theta_{\mathrm{rpd}}=0$, and the closed form is what shows it: the spin enters the kinetic term only through its cross term with the boost, so a frame at rest has no spin momentum to speak of. What survives at rest is the phase alone.
 
-## Comparisons with Other Formulations: Takabayasi’s Multipliers and Why They Are Absent
+### Comparisons with Other Formulations: Takabayasi’s Multipliers and Why They Are Absent
 
 The comparison is worth stating precisely, because the two formulations are usually confused.
 
@@ -318,35 +338,13 @@ The comparison is worth stating precisely, because the two formulations are usua
 
 **The correspondence is exact in one respect and only one.** Takabayasi's velocity field enters the Lagrangian algebraically, without a time derivative, and so does the boost here: $p_{\theta_{\mathrm{rpd}}}=0=p_{u_{\mathrm b}}$. Takabayasi's spin direction carries a transport equation, and so does the rotor here: away from rest its three momenta are non-zero, they are $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, and its three equations are dynamical. The agreement with Takabayasi is therefore an agreement about a boosted frame. At rest the spin's momentum vanishes, and the polar action's spin sector becomes constrained as well; the article states this because the closed form makes it visible, and does not claim it for Takabayasi's formulation, where the spin momentum is not proportional to a rapidity.
 
-## The Reconstruction and Its Limits
-
-**The reconstruction here is not the scalar field's.** The word recovers the element from eight parameters, and for the Dirac field the rotor is not decoration: the kinetic term is
-
-$$
-\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr),
-$$
-
-so the rotor's angular velocity enters the action and its reconstruction is part of what the chart must deliver. **The inverse map must recover the rotor axis as well as the angle**, and it must recover the direction $\hat n_{\mathrm{rot}}$ that couples the boost and the rotor.
-
-**The limit that this field has and the scalar field does not.** The cross term is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at $\theta_{\mathrm{rpd}}=0$ it vanishes and with it every trace of the rotor's rate. **A reconstruction performed at zero rapidity cannot recover $\vec\omega_{\mathrm r}$**, because the quantity that would carry it is not in the action there. This is not a defect of the inverse map: the map recovers the rotor angle, and the action then declines to use it. The article states the distinction because a reader who saw the rotor drop out at $\theta_{\mathrm{rpd}}=0$ could conclude that it had been lost in the change of variables, and it has not.
-
-**The scale's limit.** $\varrho>0$ excludes the zero element and the cone's apex. A field that reaches $\varrho=0$ leaves the chart, and the element form is the description that survives there.
-
-**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$, the negative real axis among them. The phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. **Both endpoints are properties of the parameterisation and neither is a convention of this article.**
-
-**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow. **For this field the gap is wider than for the scalar one**, because three momenta vanish and the constraints that replace them are what fixes the frame — and whether the reduced flow is the pair's flow is the article's open question.
-
-**One further limit of the reconstructed chart.** The reconstruction is pointwise, so it cannot see the phase's winding around a zero of $\varrho$. That is the nodal set, it belongs to the corpus's circulation article, and this article inherits the exception rather than solving it.
-
 ## Open Questions
 
-1. **Closure.** The four primary constraints are second class, and their consistency conditions generate further relations. Whether the Dirac bracket closes the system and reproduces the parent's flow — the gap rate for the rotor, and constant $\varrho$ and rapidity — is not established here. The computation is now finite and explicit: the one-form is known, the constraints are known, and what remains is the bracket.
+**Closure.** The four primary constraints are second class, and their consistency conditions generate further relations. Whether the Dirac bracket closes the system and reproduces the parent's flow — the gap rate for the rotor, and constant $\varrho$ and rapidity — is not established here. The computation is now finite and explicit: the one-form is known, the constraints are known, and what remains is the bracket.
 
-2. **The rest frame.** At $\theta_{\mathrm{rpd}}=0$ the spin's momentum vanishes with the scale's and the velocity's. The kinetic one-form then has four fewer non-zero components, and the rotor's equations become constraints. Whether the polar parameterization still describes the rest-frame flow, or whether the rest frame is a singular point of the action that requires its own treatment, is not settled. The parent's flow is regular there; the action may not be.
+**The rest frame.** At $\theta_{\mathrm{rpd}}=0$ the spin's momentum vanishes with the scale's and the velocity's. The kinetic one-form then has four fewer non-zero components, and the rotor's equations become constraints. Whether the polar parameterization still describes the rest-frame flow, or whether the rest frame is a singular point of the action that requires its own treatment, is not settled. The parent's flow is regular there; the action may not be.
 
-3. **The direction in the mass term.** The mass bilinear on the frame's parts needs a fixed unit direction $i\vec v$ with $\vec v\perp\vec e_z$. Whether the direction can be dispensed with by a different naming of the parts — one that is not the frame's — is not settled. If it cannot, then the biquaternionic Dirac action requires one declared direction, which is the same declaration the value test makes, and the requirement is a property of the algebra rather than of the formalism.
-
-4. **The operator setting.** The article sets the spatial derivatives to zero. Whether the parameterization absorbs the constraints in the inhomogeneous case, where $\tilde\nabla_\Phi$ carries the Laplacian-like part, is not attempted.
+**The direction in the mass term.** The mass bilinear on the frame's parts needs a fixed unit direction $i\vec v$ with $\vec v\perp\vec e_z$. Whether the direction can be dispensed with by a different naming of the parts — one that is not the frame's — is not settled. If it cannot, then the biquaternionic Dirac action requires one declared direction, which is the same declaration the value test makes, and the requirement is a property of the algebra rather than of the formalism.
 
 ## Summary
 

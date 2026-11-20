@@ -61,6 +61,30 @@ $$
 
 because $D_\eta^{\dagger}=-D_\eta$. The two differ by a total divergence, so they give the same variation and the same equation, and the article uses the modulus form because it is manifestly positive and the operator form because it makes the variation one line.
 
+### The Two Settings: The Energy
+
+**The constant setting.** With $\tilde H_\Psi$ and the connection constant, the Lagrangian is the free one with the two coefficients shifted and the energy is the free article's,
+
+$$
+E=\mathrm{Sc}\big(\tilde\Xi^{*}\tilde H^{\mathrm{gco}}_\Psi\tilde\Xi\big),
+\qquad
+\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A),
+$$
+
+and it is conserved because $\tilde H^{\mathrm{gco}}_\Psi$ commutes with itself: $\frac{d}{dt'}E=\mathrm{Sc}(\partial_{t'}\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi+\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\partial_{t'}\tilde\Xi)=0$ on solutions. This is the free article's computation with the shifted element, and it needs no new argument.
+
+**The operator setting.** The energy density is
+
+$$
+e=\frac{\hbar^{2}}{2m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\varphi\,n,
+$$
+
+which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and **it is conserved for a time-independent connection**: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.
+
+**What the article does not do.** It does not print the local energy flux. The local conservation law $\partial_{t'}e+\vec\nabla_\Phi\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.
+
+**The positivity.** The first term of $e$ is positive and the second is positive or negative according to the sign of $ϙ\varphi$; so the energy is bounded below whenever $ϙ\varphi$ is bounded above, which is the diamagnetic statement again and the reason the operator setting's flow is well posed for a confining potential.
+
 ## The Variation
 
 **Varying the field.** Treating $\tilde\Xi$ and $\tilde\Xi^{*}$ as independent — legitimate over $\mathbb{C}$ — and integrating the gradient term by parts,
@@ -164,30 +188,6 @@ where the second equality uses $\mathrm{Re}(iZ)=-\mathrm{Im}Z$. So the charge cu
 
 **The factor and the letters.** $j_\eta$ is the particle current; $ϙ j_\eta$ is the charge current. The element-form companion writes the charge current as $\vec J=ϙ\vec j$ and identifies it as the source of $\tilde\nabla_\Phi\tilde F=-\mu\tilde J$; the article uses that identification and does not re-derive it. The normalisation of $j$ is the free article's and is a convention, as it records.
 
-## The Two Settings: The Energy
-
-**The constant setting.** With $\tilde H_\Psi$ and the connection constant, the Lagrangian is the free one with the two coefficients shifted and the energy is the free article's,
-
-$$
-E=\mathrm{Sc}\big(\tilde\Xi^{*}\tilde H^{\mathrm{gco}}_\Psi\tilde\Xi\big),
-\qquad
-\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A),
-$$
-
-and it is conserved because $\tilde H^{\mathrm{gco}}_\Psi$ commutes with itself: $\frac{d}{dt'}E=\mathrm{Sc}(\partial_{t'}\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi+\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\partial_{t'}\tilde\Xi)=0$ on solutions. This is the free article's computation with the shifted element, and it needs no new argument.
-
-**The operator setting.** The energy density is
-
-$$
-e=\frac{\hbar^{2}}{2m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\varphi\,n,
-$$
-
-which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and **it is conserved for a time-independent connection**: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.
-
-**What the article does not do.** It does not print the local energy flux. The local conservation law $\partial_{t'}e+\vec\nabla_\Phi\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.
-
-**The positivity.** The first term of $e$ is positive and the second is positive or negative according to the sign of $ϙ\varphi$; so the energy is bounded below whenever $ϙ\varphi$ is bounded above, which is the diamagnetic statement again and the reason the operator setting's flow is well posed for a confining potential.
-
 ## What the Principle Adds and What It Relabels
 
 **Adds.** The action in one line, and the equation as one variation. The current twice: as the phase symmetry's Noether charge and as the connection's derivative, with the two identified. The invariance of the action under the local transformation, exactly and term by term. The positivity of the kinetic part, and with it the boundedness of the energy. The potential's sign fixed by the action rather than by a convention. And the identity of the current with the Maxwell source, which is the closure statement the element-form companion states and this article derives.
@@ -198,11 +198,7 @@ which is the free article's density with the covariant gradient and the potentia
 
 ## Open Questions
 
-**1. The local energy flux.** The density and the global conservation are stated; the flux is not. The missing computation is the standard one, with the potential's gradient term, and it belongs with the stress tensor's improvement. Until it is done, the article's energy statement is global in the operator setting and exact only in the constant setting.
-
-**2. The connection's own variation.** Varying $\tilde A_\Phi$ in this action produces the inhomogeneous Maxwell equation with $\vec J$ as source, and it also produces a constraint on $\vec A$ from the temporal variation. The Maxwell article derives the equation from its own action; whether the two actions are one action with two variations, and whether the constraint is the Gauss law or its conjugate, is not examined here.
-
-**3. The operator setting's boundary conditions.** The action's variation discards a boundary term, which is legitimate for fields that vanish at infinity and not for fields on a torus or with a flux tube. The self-adjointness of $\hat H^{\rm gco}$ under such conditions, and the effect of a singular connection, are the element-form companion's open questions and are inherited here.
+**The connection's own variation.** Varying $\tilde A_\Phi$ in this action produces the inhomogeneous Maxwell equation with $\vec J$ as source, and it also produces a constraint on $\vec A$ from the temporal variation. The Maxwell article derives the equation from its own action; whether the two actions are one action with two variations, and whether the constraint is the Gauss law or its conjugate, is not examined here.
 
 ## Summary
 

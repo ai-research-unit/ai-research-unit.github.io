@@ -10,7 +10,7 @@ $$
 
 Two products instead of one. This article explains why there are two, and what the two-sided form buys that a one-sided or commutator form does not. It is the article a reader needs before any calculation with a curved connection, and it exists because that explanation is scattered across the gravitational articles of the series and is nowhere stated once.
 
-The reason is not a convention. The rotor group acts on the material sector by **conjugation**,
+The reason is not a convention. $SU(2)$ acts on the material sector by **conjugation**,
 
 $$
 \tilde Q\longmapsto\tilde U\tilde Q\tilde U^{*},
@@ -22,7 +22,7 @@ so a derivative that is to be covariant under that action must compensate on bot
 
 Two boundary remarks belong in the introduction, because they are what keeps the article honest. The two-sided derivative is corpus content and it is not a flaw; the recurring external summary that calls it an unnecessary complication is a misreading, and the calculation here is what answers it. And the derivative, once written, is still only a derivative: it does not produce a connection, and it does not produce curvature. Choosing one is a further condition, stated at the end.
 
-The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$. The subspaces $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian parts under the star $^{*}$, which conjugates the coefficients and negates the three vectors, so that $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and $^{*}$ is conjugate-linear. Quaternionic conjugation ${}^{\natural}$ keeps the scalar and negates the vectors and is complex-linear, so $\tilde Q^{*}=\overline{\tilde Q}^{\natural}$; the two agree on $\mathbb{B}_{H}$. The norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, the bilinear form on the material sector is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, and the rotor group is $\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$, so that $\tilde U^{-1}=\tilde U^{\natural}$.
+The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_t=1,\vec e_x,\vec e_y,\vec e_z$, $\vec e_\eta^{2}=-e_t$, $\vec e_x\vec e_y=\vec e_z$. The subspaces $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ are the anti-Hermitian and Hermitian parts under the star $^{*}$, which conjugates the coefficients and negates the three vectors, so that $(i\tilde Q)^{*}=-i\tilde Q^{*}$ and $^{*}$ is conjugate-linear. Quaternionic conjugation ${}^{\natural}$ keeps the scalar and negates the vectors and is complex-linear, so $\tilde Q^{*}=\overline{\tilde Q}^{\natural}$; the two agree on $\mathbb{B}_{H}$. The norm is $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$, the bilinear form on the material sector is $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$, and $SU(2)$ is $\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$, so that $\tilde U^{-1}=\tilde U^{\natural}$.
 
 ## The Lie Algebra of the Frame
 
@@ -197,7 +197,7 @@ What the derivative does not supply is the connection. Metric compatibility and 
 | $\mathbb{B}_{\Phi}$, $\mathbb{B}_{\Psi}$ | anti-Hermitian and Hermitian subspaces under $^{*}$; material and informational sectors |
 | $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$ | the biquaternion norm |
 | $\langle\tilde Q_1,\tilde Q_2\rangle_{\natural}=\mathrm{Sc}(\tilde Q_1\tilde Q_2^{\natural})$ | the bilinear form on $\mathbb{B}_{\Phi}$ |
-| $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}=\{\vec G:\mathrm{Sc}(\vec G)=0\}$ | the six-real-dimensional Lie subspace of the rotor group |
+| $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}=\{\vec G:\mathrm{Sc}(\vec G)=0\}$ | the six-real-dimensional Lie subspace of $SU(2)$ |
 | $\vec e_x,\vec e_y,\vec e_z$ | rotation generators; $^{*}$-eigenvalue $\sigma=-1$ |
 | $i\vec e_x,i\vec e_y,i\vec e_z$ | boost generators; $^{*}$-eigenvalue $\sigma=+1$ |
 | $\vec\Gamma_\mu=\vec\omega_\mu+\vec\beta_\mu$ | connection; rotation part plus boost part |

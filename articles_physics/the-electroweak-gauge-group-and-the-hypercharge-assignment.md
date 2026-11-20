@@ -28,10 +28,10 @@ $$
 
 of a compact simple group and a compact abelian group. The two factors carry two independent couplings, $g$ and $g_{\mathrm Y}$, and the model supplies no relation between them. The ratio $g_{\mathrm Y}/g$ is the Weinberg angle, and it is measured rather than computed.
 
-**What the framework has in place of the product.** The first factor is present as an object and the second as an object, but their union is not a product on the nose. The framework's compact factor is the **rotor group** $\mathrm{Rot}=S^3$, the second is the central phase $S^1=\{\xi e_t:|\xi|=1\}$, and the two share the two points $\pm e_t$ — the rotor $-e_t$ is the same rotation as $+e_t$, and it is also the phase of angle $\pi$. The gauge group of the construction is therefore the quotient
+**What the framework has in place of the product.** The first factor is present as an object and the second as an object, but their union is not a product on the nose. The framework's compact factor is $SU(2)$, which in this algebra is the **group** $\mathrm{SU}(2)=S^3$, the second is the central phase $S^1=\{\xi e_t:|\xi|=1\}$, and the two share the two points $\pm e_t$ — the rotor $-e_t$ is the same rotation as $+e_t$, and it is also the phase of angle $\pi$. The gauge group of the construction is therefore the quotient
 
 $$
-\bigl(\mathrm{Rot}\times S^1\bigr)/\{\pm e_t\},
+\bigl(\mathrm{SU}(2)\times S^1\bigr)/\{\pm e_t\},
 $$
 
 which is $\mathrm{U}(2)$ and not $\mathrm{SU}(2)\times\mathrm{U}(1)$. Two consequences are used later and neither is an assumption. The **parity lock** — the statement that the label $q$ of a field is congruent to twice its spin, $q\equiv 2j \pmod 2$ — is the kernel of the exponential read on the two factors: the identification of $-e_t$ with $+e_t$ is exactly a half-turn on the rotor and a full turn on the phase, and that is the relation between the two labels. And the **hypercharge assignment** below is not supplied by the glue at all: it is a choice of which circle inside the quotient carries which charge, and it is imported.

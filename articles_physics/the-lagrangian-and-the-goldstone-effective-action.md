@@ -146,10 +146,6 @@ and its conservation, $\partial_\mu j_\mu=f\,\Box_\Phi\vartheta_{\mathrm{fld}}=0
 
 **Do the coefficients $c_4,\dots$ have a biquaternionic form?** The corpus writes the two-derivative term exactly and the four-derivative terms in the Skyrme article. Whether the full tower has a uniform algebra expression is not established.
 
-**Is the shift symmetry exact in the presence of the anomaly?** No. The axial current's anomaly adds a term proportional to $F\tilde F$ times the phase, and that term is the axion's coupling in the axion article. The effective action here is the anomaly-free part.
-
-**What fixes $f$?** Nothing in the low-energy theory. It is measured, and the corpus records it as input, with $f_\pi=130.2$ MeV in the corpus's normalization.
-
 ## Summary
 
 **The action.** $S_{\mathrm{eff}}=\int d^4r\,[\tfrac12(\partial\vartheta)^2+c_4(\partial\vartheta)^4/f^4+\cdots]$, invariant under a constant shift, whose leading variation is $\Box_\Phi\vartheta_{\mathrm{fld}}=0$.

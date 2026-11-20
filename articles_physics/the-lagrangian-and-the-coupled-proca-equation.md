@@ -196,11 +196,9 @@ symmetric on solutions, conserved on solutions, and positive in energy for the f
 
 ## Open Questions
 
-**The normalization of the invariant field term.** The pairing $\mathrm{Re\,Sc}(\tilde F\overline{\tilde F'})$ is invariant and does not reduce to the free field term with a constant ratio on the material slice. Whether a different normalization of $\tilde F$ — for instance absorbing $\sqrt{\epsilon}$ and $\sqrt{\mu}$ into the units rather than the coefficients — makes the two agree, and whether the self-dual splitting of the field strength is the right framework for the question, is the article's first open item. The corpus's self-dual decomposition is the natural place to look.
+**The normalization of the invariant field term.** The pairing $\mathrm{Re\,Sc}(\tilde F\overline{\tilde F'})$ is invariant and does not reduce to the free field term with a constant ratio on the material slice. Whether a different normalization of $\tilde F$ — for instance absorbing $\sqrt{\epsilon}$ and $\sqrt{\mu}$ into the units rather than the coefficients — makes the two agree, and whether the self-dual splitting of the field strength is the right framework for the question, is open. The corpus's self-dual decomposition is the natural place to look.
 
-**The trace with a general connection.** The material-slice trace is the mass term exactly. Whether the general complex case has a closed trace, and whether it is the mass term plus a total derivative, is not settled here.
-
-**The operator setting.** The article treats a constant connection and a general field. Whether the coupled action with a *dynamical* connection — the Proca field coupled to Maxwell, with the connection integrated over — preserves the algebra's closure and the constraint, is a different theory and is not attempted.
+**The trace with a general connection.** The material-slice trace is the mass term exactly. Whether the general complex case has a closed trace, and whether it is the mass term plus a total derivative, is not settled.
 
 ## Summary
 

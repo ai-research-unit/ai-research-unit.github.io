@@ -92,7 +92,7 @@ It assumes *The Rotor as a Square Root of a Rotation: the Two Signs and the Doub
 
 **Proof.** The group of invertibles of a direct sum of two matrix algebras is the product of the two general linear groups.
 
-**Corollary.** The rotor group double covers $SO(4,\mathbb{C})$ with kernel $\{\pm1\}$, and the kernel is the simultaneous sign in the two factors.
+**Corollary.** $SU(2)$ double covers $SO(4,\mathbb{C})$ with kernel $\{\pm1\}$, and the kernel is the simultaneous sign in the two factors.
 
 **Proof.** The covering of the earlier article and the identification of the factors.
 
@@ -143,7 +143,7 @@ The invertible even elements are the scalars times $\mathrm{Spin}(4,\mathbb{C})\
 
 ## Further Reading
 
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the even part and the rotor group.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the even part and $SU(2)$.
 - [The Clifford Group and the Frame Stabiliser](the-clifford-group-and-the-frame-stabiliser.html), for the even Clifford group and its two biquaternion factors.
 - [The Gamma Frame and the Complexified Dirac Algebra of $M_4(\mathbb{C})$](the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html), for the five frame operators and the graded basis.
 - [The Rotor as a Square Root of a Rotation: the Two Signs and the Double Cover at $n=4$](the-rotor-as-a-square-root-of-a-rotation-the-two-signs-and-the-double-cover-at-n-4.html), for the rotors and the covering.

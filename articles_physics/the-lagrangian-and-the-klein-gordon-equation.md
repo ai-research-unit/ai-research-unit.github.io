@@ -104,6 +104,16 @@ using $(\tilde\Xi^{*})^{*}=\tilde\Xi$ and $\tilde M^{*}=\tilde M$. So the densit
 
 **What reality does not buy. Not at issue here.** The article claims that the density is real and positive; the gap between a real action and a real spectrum opens only where the potential is a free element, which is the momentum reading.
 
+### The Two Settings
+
+The parent distinguishes two objects and this article inherits the distinction in the form the second-order equation allows.
+
+**The constant coefficient.** With $k_m$ a number and no other coefficient, the equation is translation invariant, the plane waves of the parent are the complete set of modes, and the pair propagator of §*Aside: The Conjugate Pair* is closed form. Every result of this article about a solution is a result of this case.
+
+**The varying coefficient.** With $\tilde M=\tilde M(x)$ Hermitian and not constant, the equation keeps its form and loses its modes. There is no closed-form propagator, the Green's functions are those of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, and the variational principle is unchanged: the same functional, with $\tilde M$ in place of $k_m^{2}e_t$, has the same Euler–Lagrange equation and the same Noether construction, and the currents are conserved with the same identity. What is lost is not the variational principle but the solubility.
+
+**What does not transfer.** Two statements of the Schrödinger pair have no counterpart here and are not imported. There is no setting in which the equation is an ordinary differential equation, because the Laplacian is in the operator in every case. And there is no exponential $\exp(-\tfrac{i}{\hbar}\tilde H t')$ whose powers solve the equation, because the second-order equation needs two data per mode; the block of §*Aside: The Conjugate Pair* is what replaces it, and it exists for the constant coefficient only.
+
 ## The Variation
 
 **Vary the conjugate and integrate by parts.** The variation is taken with respect to $\tilde\Xi^{*}$, the two halves of a complex field being independent variables of the real functional. Writing $\partial_t=\partial_{r'_t}$ and summing over the spatial slots with their metric signs, the variation of the display of the previous section is
@@ -246,16 +256,6 @@ which vanishes on solutions, so conservation of the stress is the equation and n
 
 **What is not here.** There is no spin current. The Klein–Gordon field of this article carries no spin index, the action has no spin term, and a spin current built from it would be a current of a symmetry the action does not have. The spin current of the Dirac field belongs to the Dirac article.
 
-## The Two Settings
-
-The parent distinguishes two objects and this article inherits the distinction in the form the second-order equation allows.
-
-**The constant coefficient.** With $k_m$ a number and no other coefficient, the equation is translation invariant, the plane waves of the parent are the complete set of modes, and the pair propagator of §*Aside: The Conjugate Pair* is closed form. Every result of this article about a solution is a result of this case.
-
-**The varying coefficient.** With $\tilde M=\tilde M(x)$ Hermitian and not constant, the equation keeps its form and loses its modes. There is no closed-form propagator, the Green's functions are those of *The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form*, and the variational principle is unchanged: the same functional, with $\tilde M$ in place of $k_m^{2}e_t$, has the same Euler–Lagrange equation and the same Noether construction, and the currents are conserved with the same identity. What is lost is not the variational principle but the solubility.
-
-**What does not transfer.** Two statements of the Schrödinger pair have no counterpart here and are not imported. There is no setting in which the equation is an ordinary differential equation, because the Laplacian is in the operator in every case. And there is no exponential $\exp(-\tfrac{i}{\hbar}\tilde H t')$ whose powers solve the equation, because the second-order equation needs two data per mode; the block of §*Aside: The Conjugate Pair* is what replaces it, and it exists for the constant coefficient only.
-
 ## What the Principle Adds and What It Relabels
 
 The ledger is short and it is the reason the article is worth writing.
@@ -268,11 +268,11 @@ The ledger is short and it is the reason the article is worth writing.
 
 ## Open Questions
 
-1. **The current of a general field.** The phase current above is a bilinear of the element, and it is additive over the coefficients of a value outside the centre by the identity of §*The Action on the Carrier and on the Algebra*. The parent's §*General Fields* records a second reading, which puts the current in the vector slots of $\mathbb{B}_{\Phi}$ and finds no diagonal term there. The two readings cannot both be the conserved current of a sector-valued element, and this article's variational derivation does not decide between them: it produces the additive one because the action is additive. The choice is recorded as open in the polar companion and in the parent.
+**The current of a general field.** The phase current is a bilinear of the element, and it is additive over the coefficients of a value outside the centre by the identity of §*The Action on the Carrier and on the Algebra*. The parent's §*General Fields* records a second reading, which puts the current in the vector slots of $\mathbb{B}_{\Phi}$ and finds no diagonal term there. The two readings cannot both be the conserved current of a sector-valued element, and this article's variational derivation does not decide between them: it produces the additive one because the action is additive.
 
-2. **The stress tensor and its improvement.** The tensor of §*Space Translations and Rotations* is the canonical one. Whether it agrees with the tensor of *The Quantum Stress Tensor of the Biquaternion Scalar Field*, and whether the massless case needs the improvement term that makes the trace vanish, is a comparison this article does not make. The conformal article's improved trace is the object to compare against.
+**The stress tensor and its improvement.** The tensor of §*Space Translations and Rotations* is the canonical one. Whether it agrees with the tensor of *The Quantum Stress Tensor of the Biquaternion Scalar Field*, and whether the massless case needs the improvement term that makes the trace vanish, is a comparison this article does not make. The conformal article's improved trace is the object to compare against.
 
-3. **The carrier under a non-central coefficient.** The free equation preserves the carrier: it maps $\mathbb{B}$ to $\mathbb{B}$ and each minimal left ideal to itself, since the operator is central. A non-central Hermitian $\tilde M$ acts by left multiplication and does not commute with a right ideal, so a field started in a Peirce carrier leaves it. Whether the physical restriction to a carrier survives an external potential, and in which representation, is the Klein–Gordon form of the closure question the Schrödinger article raises.
+**The carrier under a non-central coefficient.** The free equation preserves the carrier: it maps $\mathbb{B}$ to $\mathbb{B}$ and each minimal left ideal to itself, since the operator is central. A non-central Hermitian $\tilde M$ acts by left multiplication and does not commute with a right ideal, so a field started in a Peirce carrier leaves it. Whether the physical restriction to a carrier survives an external potential, and in which representation, is the Klein–Gordon form of the closure question.
 
 ## Summary
 

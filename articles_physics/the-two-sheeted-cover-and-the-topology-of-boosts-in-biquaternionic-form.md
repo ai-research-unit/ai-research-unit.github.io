@@ -146,7 +146,7 @@ $$
 \pi_1\bigl(SO^+(1,3)\bigr)\cong\ker\pi\cong\mathbb{Z}/2\mathbb{Z}.
 $$
 
-The statement is worth making twice, because it is the algebraic heart of the matter: **the restricted Lorentz group has exactly one nontrivial loop**, and it is the image of a path in $SL(2,\mathbb{C})$ that joins $e_t$ to $-e_t$. The rotor group itself is simply connected, so nothing is lost by working with rotors; what is lost by working with four-vectors is precisely the distinction between the two sheets.
+The statement is worth making twice, because it is the algebraic heart of the matter: **the restricted Lorentz group has exactly one nontrivial loop**, and it is the image of a path in $SL(2,\mathbb{C})$ that joins $e_t$ to $-e_t$. $SU(2)$ itself is simply connected, so nothing is lost by working with rotors; what is lost by working with four-vectors is precisely the distinction between the two sheets.
 
 ## The $2\pi$ Loop and the Belt
 

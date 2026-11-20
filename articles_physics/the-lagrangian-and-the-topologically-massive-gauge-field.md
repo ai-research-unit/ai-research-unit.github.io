@@ -90,6 +90,16 @@ which is Maxwell plus a Chern–Simons mass. The normalization is the source's: 
 - *No positive-definite energy without a sign condition.* The Hamiltonian is positive for one sign of $m$ only, and the sign is a choice the action permits both ways.
 - *No uniqueness of the reduction.* Which field is eliminated is a choice, and the two choices give different-looking theories.
 
+### The Two Settings
+
+**The four-dimensional setting.** The parent action is four-dimensional, $G_\mu$ and $H_\mu$ are four-vectors, and the mass $m$ couples the two chiral halves of the s-vector. The reduction gives the Dirac theory in the vector representation, and the mass is a plain Dirac mass.
+
+**The three-dimensional setting.** The parent is three-dimensional, the duality is taken between the pairs $(G_\mu;\xi)$ and $(B_\mu;\xi)$, and the reduction gives Maxwell plus Chern–Simons with a scalar spectator. The mass is topological.
+
+**Why the two settings differ in the mass's character and not in the method.** In four dimensions the antisymmetric symbol has four indices and the one-derivative term $H^{*}\check c\,\partial H$ reduces to the Dirac mass; in three the symbol has three, the one-derivative term survives as the Chern–Simons term, and the mass stays first order. The method is the same elimination; the dimension decides whether the mass is plain or topological.
+
+**What the comparison shows.** The duality is a statement about the parent, not about the dimension. The same parent structure, read in four or in three dimensions, gives two theories whose masses differ in character, and that is the cleanest demonstration in the corpus that a mass's shape is a consequence of the term that carries it.
+
 ## The Variation: Two Eliminations, Two Theories
 
 **Varying the auxiliary field.** $\delta S/\delta H_\mu=0$ gives the first relation of the introduction. Substituting it back leaves the Dirac Lagrangian in the vector representation,
@@ -146,16 +156,6 @@ whose divergence is $F\tilde F$; it is conserved identically in three dimensions
 
 **What there is not.** No central phase, no second gauge current, no topological charge of the winding kind. The sector's current content is one gauge current and one identically conserved topological current.
 
-## The Two Settings
-
-**The four-dimensional setting.** The parent action is four-dimensional, $G_\mu$ and $H_\mu$ are four-vectors, and the mass $m$ couples the two chiral halves of the s-vector. The reduction gives the Dirac theory in the vector representation, and the mass is a plain Dirac mass.
-
-**The three-dimensional setting.** The parent is three-dimensional, the duality is taken between the pairs $(G_\mu;\xi)$ and $(B_\mu;\xi)$, and the reduction gives Maxwell plus Chern–Simons with a scalar spectator. The mass is topological.
-
-**Why the two settings differ in the mass's character and not in the method.** In four dimensions the antisymmetric symbol has four indices and the one-derivative term $H^{*}\check c\,\partial H$ reduces to the Dirac mass; in three the symbol has three, the one-derivative term survives as the Chern–Simons term, and the mass stays first order. The method is the same elimination; the dimension decides whether the mass is plain or topological.
-
-**What the comparison shows.** The duality is a statement about the parent, not about the dimension. The same parent structure, read in four or in three dimensions, gives two theories whose masses differ in character, and that is the cleanest demonstration in the corpus that a mass's shape is a consequence of the term that carries it.
-
 ## What the Principle Adds and What It Relabels
 
 **Adds.**
@@ -172,7 +172,7 @@ whose divergence is $F\tilde F$; it is conserved identically in three dimensions
 
 **The distinction that matters.** The parent is exact and the descriptions are partial. Each reduced theory is the parent with one field solved for, and neither reduction is privileged except by which field one calls physical.
 
-## Comparisons with Other Formulations
+### Comparisons with Other Formulations
 
 **Dirac versus topologically massive.** The two reduced theories are not the same theory in two notations: they have different fields, different dimensions and different masses. They are the same *parent* read two ways, and the comparison's content is that a single functional can have two physically distinct extrema.
 
@@ -187,8 +187,6 @@ whose divergence is $F\tilde F$; it is conserved identically in three dimensions
 **Is the parent action itself derivable from the algebra?** The action is the source's and is written in the algebra's structure constants; whether the parent form is forced by the algebra's chirality structure, or is one choice among several, is open.
 
 **Does the duality extend to four-dimensional topological mass terms?** The Chern–Simons term exists only in odd dimensions, so the topological mass has no four-dimensional analogue in this construction. Whether another term plays the role is not known.
-
-**What fixes $m$ and $a$?** Nothing in the action; they are parameters, and the reduced theories depend on $m-a$ alone.
 
 ## Summary
 

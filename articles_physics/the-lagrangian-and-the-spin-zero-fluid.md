@@ -160,9 +160,9 @@ and it splits into the two terms the action has. The first is the dust's: $\part
 
 ## Open Questions
 
-1. **The two sheets and the action's domain.** $\varepsilon$ does not appear in the action, so the two branches $\varepsilon=\pm1$ are one functional's two images and the action selects neither. Whether they are two sectors of one functional or two functionals that agree on the boundary is not settled, and it is the same question the block's article poses about the density's sign.
+**The two sheets and the action's domain.** $\varepsilon$ does not appear in the action, so the two branches $\varepsilon=\pm1$ are one functional's two images and the action selects neither. Whether they are two sectors of one functional or two functionals that agree on the boundary is not settled, and it is the same question the block's article poses about the density's sign.
 
-2. **The nodal set in four dimensions.** The chart fails at $\varrho=0$, and at this rung the failure is on a timelike surface as well as a spacelike one. Whether the action needs a condition there, and whether the circulation's quantisation supplies it, is open; [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) describes the surface and the integral.
+**The nodal set in four dimensions.** The chart fails at $\varrho=0$, and at this rung the failure is on a timelike surface as well as a spacelike one. Whether the action needs a condition there, and whether the circulation's quantisation supplies it, is open; [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) describes the surface and the integral.
 
 ## Summary
 

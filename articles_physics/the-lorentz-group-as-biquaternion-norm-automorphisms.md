@@ -202,7 +202,7 @@ $$
 
 the full Lorentz group including the discrete reflections and the time-reversal and parity components. The connected component of the identity is the **restricted Lorentz group** $SO^+(1,3)$: the transformations that are proper (determinant $+1$) and orthochronous (preserve the time direction). This is the group the algebra supplies at the real level: the automorphisms of the biquaternion norm that respect the material slice.
 
-The discrete components are automorphisms of the form and are not Hermitian pairs; they include spatial reflection and time reversal, which are outer with respect to the rotor group. The rotor group covers only the identity component, which is why a spinor or a rotor is not by itself sensitive to orientation-reversing transformations.
+The discrete components are automorphisms of the form and are not Hermitian pairs; they include spatial reflection and time reversal, which are outer with respect to $SU(2)$. $SU(2)$ covers only the identity component, which is why a spinor or a rotor is not by itself sensitive to orientation-reversing transformations.
 
 ## The Rotor Realization of the Automorphisms
 
@@ -273,7 +273,7 @@ $$
 \;=\;\{\pi(\tilde U_{\mathrm{lor}}): \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}=1\}/\ker\pi\;}.
 $$
 
-A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. The rotor group $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by the Hermitian pair with unit-norm elements.
+A word on the relation between the complex and the real descriptions is in order, because the two groups have the same complexification. The complex group $SO(4,\mathbb{C})$ has complex dimension six; the real Lorentz group $SO(1,3)$ also has real dimension six, and is a real form of it. $SU(2)$ $SL(2,\mathbb{C})$ is a six-real-dimensional group that doubly covers the identity component. The real structure is what reduces the first to the second; the map $\pi$ is what realizes the second by the Hermitian pair with unit-norm elements.
 
 ## The Algebra Automorphisms: the Diagonal, and an Induced Causality
 
@@ -472,7 +472,7 @@ This is what makes each combination close on itself with the same structure cons
 
 1. **Automorphisms of the full algebra.** The maps considered here preserve the biquaternion norm and, at the real level, the material slice. The $\mathbb{C}$-algebra automorphisms of $\mathbb{B}\cong M_2(\mathbb{C})$ are the inner automorphisms, the subfamily $AB^{*}=I$ of the form automorphisms. The group-theoretic half of the question has a sharp answer, given in the section above: the subgroup is the **adjoint-inverse subfamily** $SO(3,\mathbb{C})\cong PGL(2,\mathbb{C})$ inside $SO(4,\mathbb{C})$, and as a real group it is the restricted Lorentz group itself — which is why a construction can take the algebra automorphisms, rather than the slice automorphisms, as the physical Lorentz group. What remains open is whether the framework adopts that interpretation, in which Minkowski space is a bilinear image of $\mathbb{C}^3$ and the causal structure follows from the Lagrange identity, or keeps the slice interpretation of the summary. The corpus records the construction and its checks, and leaves the choice to the foundational articles.
 
-2. **The discrete components.** $O(1,3)$ has four components; the rotor group covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside the rotor group. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.
+2. **The discrete components.** $O(1,3)$ has four components; $SU(2)$ covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside $SU(2)$. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.
 
 3. **Real forms and the two sectors.** Both $\mathbb{B}_{\Phi}$ and $\mathbb{B}_{\Psi}$ restrict the form to a Lorentzian inertia — $(3,1)$ on the material slice and $(1,3)$ on the informational one — and $\mathbb{B}_{H}$ to $(4,0)$. The Euclidean real form is thus available. Is the Euclidean form, and the compact group it defines, the home of the informational sector's own symmetries? The question connects this article to *The Informational Sector: States, Observables and Probability*.
 

@@ -92,6 +92,16 @@ which is the standard form, with $g$ absorbed into the normalization of $A^a_\mu
 - *No running from the classical action.* The beta function is a one-loop object, and the classical action says nothing about it.
 - *No mass gap.* Whether the quantum theory has one is a non-perturbative question, and the classical action is silent.
 
+### The Two Settings
+
+**The element setting.** The action written as $-\tfrac12\mathrm{Tr}(FF)$ with $F$ an element of $\mathfrak{su}(2)\subset\mathbb{B}$. The invariance is one line, and the trace-versus-pairing distinction is visible.
+
+**The component setting.** The action written as $-\tfrac14\sum_aF^a_{\mu\nu}F^a_{\mu\nu}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.
+
+**Why the two settings are not a choice of notation.** They differ in what they display and in what they hide. The element form makes the gauge invariance obvious and the vertices obscure; the component form does the reverse. A reader who knows only one has a partial view of the same object, and the corpus uses both deliberately.
+
+**What the comparison shows.** The passage between the two is the passage between the trace and the structure constants, and the identity that connects them is $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$ together with $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$. The two settings are one action read two ways, and the normalization is what makes the readings agree.
+
 ## The Variation: The Yang–Mills Equation from the Curvature's Square
 
 **The variation.** Vary $A_\mu\mapsto A_\mu+\delta A_\mu$ with $\delta A_\mu$ in $\mathfrak{su}(2)$ and vanishing at the boundary. The curvature's variation is the covariant derivative of the variation,
@@ -165,16 +175,6 @@ which is the standard non-abelian current. It is conserved on shell, $D_\mu j^a_
 
 **What there is not.** No topological current in the classical action — the $\theta$ term is a separate total derivative — and no central phase.
 
-## The Two Settings
-
-**The element setting.** The action written as $-\tfrac12\mathrm{Tr}(FF)$ with $F$ an element of $\mathfrak{su}(2)\subset\mathbb{B}$. The invariance is one line, and the trace-versus-pairing distinction is visible.
-
-**The component setting.** The action written as $-\tfrac14\sum_aF^a_{\mu\nu}F^a_{\mu\nu}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.
-
-**Why the two settings are not a choice of notation.** They differ in what they display and in what they hide. The element form makes the gauge invariance obvious and the vertices obscure; the component form does the reverse. A reader who knows only one has a partial view of the same object, and the corpus uses both deliberately.
-
-**What the comparison shows.** The passage between the two is the passage between the trace and the structure constants, and the identity that connects them is $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$ together with $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$. The two settings are one action read two ways, and the normalization is what makes the readings agree.
-
 ## What the Principle Adds and What It Relabels
 
 **Adds.**
@@ -193,11 +193,7 @@ which is the standard non-abelian current. It is conserved on shell, $D_\mu j^a_
 
 ## Open Questions
 
-**Is the trace the only pairing that works?** For the action's invariance, yes at this order; the reduction fails and the trace is the unique invariant bilinear. Whether a different invariant exists at higher order is not explored.
-
-**Can the $\mathrm{U}(2)$ ceiling be circumvented by a non-associative structure?** The corpus's octonionic and split-complex constructions are attempts, and they are recorded as failures for colour. The ceiling's status is the dimension-ceiling article's.
-
-**What fixes the coupling?** Nothing in the classical action; it runs, and its value at a scale is a measurement or a boundary condition.
+**Is the trace the only pairing that works?** For the action's invariance, yes at this order: the reduction fails and the trace is the unique invariant bilinear. Whether a different invariant exists at higher order is not explored.
 
 ## Summary
 

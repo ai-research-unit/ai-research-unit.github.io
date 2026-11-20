@@ -283,6 +283,20 @@ then says that the eight parameter equations vanish exactly when $E$ vanishes: t
 
 **What the claim does not say.** It says nothing about the flow. The bijection makes the *variation* the same variation; it does not make the constrained dynamics the same object, and where that question arises the article defers it to §*The Reconstruction and Its Limits*. A change of variables is exact or it is not, and here it is exact. A flow is a further statement, and the article does not make it.
 
+### The Reconstruction and Its Limits
+
+**The reconstruction.** The word is a bijection from the parameter domain onto the N-regular set, so it has an inverse, and the inverse is what "reconstruction" names. From the element, the two norms give the scale and the rapidity, the direction of the phase factor gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. **The inverse is the same bijection read backwards**, and the article uses it only to say what the chart does and does not carry.
+
+**The first limit is the scale.** $\varrho>0$ excludes the zero element and the cone's apex, and it excludes them by construction rather than by a condition. A field that reaches $\varrho=0$ therefore leaves the chart, and the chart's equations cannot be continued through that point; the element form can, and the two descriptions differ exactly there. **This is the boundary the corpus's N-regularity article draws**, and it is not a defect of the chart: the polar variables are a chart on the invertibles, and a field that is not invertible is outside it.
+
+**The second limit is the rotor's angle.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range must be closed at that point or the word misses every element whose rotor factor is $-e_t$, the negative real axis among them. **The endpoint is not a convention**: without it the map is not onto, and the change of variables is not a change of variables.
+
+**The third limit is the phase.** $\theta_{\mathrm{pha}}$ ranges over a half-open interval of length $\pi$, because the element and its negative are different elements and the interval must distinguish them, while a shift by $\pi$ in the phase is not a symmetry of the action.
+
+**What the reconstruction does not give.** The flow. The bijection makes the *variation* the same variation, and that is what the article's equivalence argument uses. It does not make the constrained system's flow the element equation's flow: the eight parameter equations determine two velocities and six constraints, and whether the reduced flow is the parent's is the article's open question, not its claim. **A reconstruction that recovers the field at each instant is not a reconstruction of the dynamics.**
+
+**One further limit, of the reading and not of the chart.** The reconstruction is local and pointwise, so it says nothing about a field whose phase winds around a zero of $\varrho$, where the phase is multivalued and the chart must be patched. That is the nodal set, and it belongs to the corpus's circulation article rather than to this one.
+
 ## The Noether Currents: The Currents in Polar Variables
 
 The Noether currents of the companion are one computation in the element form and one line each in these variables. That is the clearest thing the polar action adds.
@@ -346,27 +360,13 @@ The second equation of the pair is the variation of $\varrho$, and in the polar 
 
 **The distinction that matters.** The element-form variational principle is standard and its Noether currents are the classical ones. The polar-form one is the same functional in the coordinates of the algebra's polar decomposition, and what it delivers that the element form does not is the metric, the density weighting, and the one-line reading of the two currents. What it costs is the domain: the polar action is defined off the nodal set only.
 
-## The Reconstruction and Its Limits
-
-**The reconstruction.** The word is a bijection from the parameter domain onto the N-regular set, so it has an inverse, and the inverse is what "reconstruction" names. From the element, the two norms give the scale and the rapidity, the direction of the phase factor gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. **The inverse is the same bijection read backwards**, and the article uses it only to say what the chart does and does not carry.
-
-**The first limit is the scale.** $\varrho>0$ excludes the zero element and the cone's apex, and it excludes them by construction rather than by a condition. A field that reaches $\varrho=0$ therefore leaves the chart, and the chart's equations cannot be continued through that point; the element form can, and the two descriptions differ exactly there. **This is the boundary the corpus's N-regularity article draws**, and it is not a defect of the chart: the polar variables are a chart on the invertibles, and a field that is not invertible is outside it.
-
-**The second limit is the rotor's angle.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range must be closed at that point or the word misses every element whose rotor factor is $-e_t$, the negative real axis among them. **The endpoint is not a convention**: without it the map is not onto, and the change of variables is not a change of variables.
-
-**The third limit is the phase.** $\theta_{\mathrm{pha}}$ ranges over a half-open interval of length $\pi$, because the element and its negative are different elements and the interval must distinguish them, while a shift by $\pi$ in the phase is not a symmetry of the action.
-
-**What the reconstruction does not give.** The flow. The bijection makes the *variation* the same variation, and that is what the article's equivalence argument uses. It does not make the constrained system's flow the element equation's flow: the eight parameter equations determine two velocities and six constraints, and whether the reduced flow is the parent's is the article's open question, not its claim. **A reconstruction that recovers the field at each instant is not a reconstruction of the dynamics.**
-
-**One further limit, of the reading and not of the chart.** The reconstruction is local and pointwise, so it says nothing about a field whose phase winds around a zero of $\varrho$, where the phase is multivalued and the chart must be patched. That is the nodal set, and it belongs to the corpus's circulation article rather than to this one.
-
 ## Open Questions
 
-1. **The metric with moving axes.** The boxed metric is computed on the slice of fixed axes, where four of the eight parameters vary. With the axes moving there are further terms, and whether the eight-parameter metric factors into a product of the four bracket blocks, or keeps irreducible cross terms between them, is not settled here. The central-field case suggests a product structure; the $\sinh$ cross terms already show that the product is not the naive one.
+**The metric with moving axes.** The boxed metric is computed on the slice of fixed axes, where four of the eight parameters vary. With the axes moving there are further terms, and whether the eight-parameter metric factors into a product of the four bracket blocks, or keeps irreducible cross terms between them, is not settled. The central-field case suggests a product structure; the $\sinh$ cross terms already show that the product is not the naive one.
 
-2. **The nodal set and the functional.** The polar action is defined where the word is, and the word stops at $\varrho=0$. The element-form action of the companion is defined everywhere and its solutions cross the nodal set. Whether a functional of the eight parameters can be continued across a node, and what the continuation means for the circulation of the phase around it, is a question for *The Nodal Set and Quantized Circulation* and is not answered by the variational principle.
+**The nodal set and the functional.** The polar action is defined where the word is, and the word stops at $\varrho=0$. The element-form action of the companion is defined everywhere and its solutions cross the nodal set. Whether a functional of the eight parameters can be continued across a node, and what the continuation means for the circulation of the phase around it, is a question for *The Nodal Set and Quantized Circulation* and is not answered by the variational principle.
 
-3. **The operator case in these variables.** With a coefficient that varies in space and time the polar action keeps its form and $V$ becomes a function of position as well as of the parameters. Whether the quantum potential keeps its density-only form when $V$ varies, and whether the metric story survives a coefficient that is not central, is not attempted here. The non-relativistic limit of the parent suggests that the density-only form survives, and a suggestion is not a derivation.
+**The operator case in these variables.** With a coefficient that varies in space and time the polar action keeps its form and $V$ becomes a function of position as well as of the parameters. Whether the quantum potential keeps its density-only form when $V$ varies, and whether the metric story survives a coefficient that is not central, is not attempted. The non-relativistic limit of the parent suggests that the density-only form survives, and a suggestion is not a derivation.
 
 ## Summary
 

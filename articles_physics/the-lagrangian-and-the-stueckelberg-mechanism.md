@@ -180,11 +180,7 @@ and its conservation, $\partial_\mu j_\mu=0$, is exactly the scalar's equation. 
 
 ## Open Questions
 
-**Is the Stueckelberg scalar the Goldstone of a broken symmetry?** In the electroweak sector it is; in the abelian theory the symmetry is introduced by hand, so the scalar has no ultraviolet origin. Whether the abelian mechanism can be embedded in a theory where the symmetry is broken spontaneously is the embedding question, and the electroweak article answers it for the doublet.
-
-**Does the algebra fix the form of the invariant?** The invariant is the vector part of the conjugate gradient of the difference, and that form is the algebra's. Whether a different pairing would give a different invariant is not explored; the standard one is used and it is the one that works.
-
-**Is the abelian case's no-ghost property robust?** It follows from the determinant's field independence, which is exact. A curved background or a non-abelian extension changes the determinant, and the corpus records the change in the gauge-fixing article.
+**Does the algebra fix the form of the invariant?** The invariant is the vector part of the conjugate gradient of the difference, and that form is the algebra's. Whether a different pairing would give a different invariant is not explored.
 
 ## Summary
 

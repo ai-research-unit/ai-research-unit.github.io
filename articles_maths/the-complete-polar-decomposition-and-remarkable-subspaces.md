@@ -220,7 +220,7 @@ The two rows are exchanged row for row under the interchange $\mathbb{B}_{\Psi}\
 
 The signs in the two sign rows are the signs of the two central coordinates of the sector: on $\mathbb{B}_{\Psi}$ with $N>0$ the rotor is $\operatorname{sign}(\sigma)e_t$, and on $\mathbb{B}_{\Phi}$ with $N<0$ it is $\operatorname{sign}(\tau)e_t$ with $\tau$ the scalar coordinate. Both were verified over the random samples of each branch, with the boost matching the element to $1.8\times10^{-15}$ on $\mathbb{B}_{\Psi}$ and to $7.2\times10^{-15}$ on $\mathbb{B}_{\Phi}$.
 
-## The Boost Family and the Rotor Group
+## The Boost Family and $SU(2)$
 
 The four factors are four subsets of the algebra, one for each of the four exponents, and three of them are groups and one is not.
 

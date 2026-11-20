@@ -406,7 +406,7 @@ $$
 \tilde{U} = e_t\tilde\Pi_1 - e_t\tilde\Pi_2 = \tilde\Pi_1 - \tilde\Pi_2 = j ,
 $$
 
-so the decomposition is $\tilde{Q} = \tilde{U}$: the element is already a rotor, with modulus one, no scale and no phase. This is the analogue of the observation in the biquaternion case that a Lorentz rotor is already in polar form, and here it holds for every element of the unit sphere, because the unit sphere of the algebra is the rotor group itself. The steps of the algorithm reproduce it at once: $\langle\tilde{Q}\rangle_{\natural} = e_t$, $M_{\mathrm{mod}} = e_t$, $\tilde q+\tilde q' = e_t$, $\tilde q-\tilde q' = -e_t$, so $\tilde u_+ = e_t$ and $\tilde u_- = -e_t$.
+so the decomposition is $\tilde{Q} = \tilde{U}$: the element is already a rotor, with modulus one, no scale and no phase. This is the analogue of the observation in the biquaternion case that a Lorentz rotor is already in polar form, and here it holds for every element of the unit sphere, because the unit sphere of the algebra is $SU(2)$ itself. The steps of the algorithm reproduce it at once: $\langle\tilde{Q}\rangle_{\natural} = e_t$, $M_{\mathrm{mod}} = e_t$, $\tilde q+\tilde q' = e_t$, $\tilde q-\tilde q' = -e_t$, so $\tilde u_+ = e_t$ and $\tilde u_- = -e_t$.
 
 ## The Factors and Their Meanings
 
@@ -453,7 +453,7 @@ $$
 \tilde{Q} = \tilde{U} , \qquad \langle\tilde{Q}\rangle_{\natural} = e_t .
 $$
 
-The element is its own rotor: the unit sphere of the algebra is the rotor group $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ itself, of dimension six, and every element of it is already in polar form. This is the case in which the two factors of the decomposition are one, and it is the case the rotation theory of the companion article uses, in which a rotation of $\mathbb{R}^4$ is written by a pair of unit quaternions alone. The element $j = \tilde\Pi_1 - \tilde\Pi_2$ of the second example above is the least trivial illustration, its two halves being $e_t$ and $-e_t$, and the sign of the second half is the whole of its content.
+The element is its own rotor: the unit sphere of the algebra is $SU(2)$ $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ itself, of dimension six, and every element of it is already in polar form. This is the case in which the two factors of the decomposition are one, and it is the case the rotation theory of the companion article uses, in which a rotation of $\mathbb{R}^4$ is written by a pair of unit quaternions alone. The element $j = \tilde\Pi_1 - \tilde\Pi_2$ of the second example above is the least trivial illustration, its two halves being $e_t$ and $-e_t$, and the sign of the second half is the whole of its content.
 
 ### The Central Elements
 
@@ -473,7 +473,7 @@ is of this kind: $\varrho_+ = 2$, $\varrho_- = 1$, $M_{\mathrm{mod}} = 1.5 + 0.5
 
 ### The Real Quaternions
 
-If $\tilde{Q} = \tilde q\in\mathbb{H}$, that is $\tilde q' = 0$, then $\tilde q\pm \tilde q' = \tilde q$, so $\varrho_+ = \varrho_- = |\tilde q|$, $M_{\mathrm{mod}} = |\tilde q|e_t$, $\lambda = |\tilde q|$, $\tau = 0$ and $\tilde{U} = (\tilde q/|\tilde q|)\tilde\Pi_1 + (\tilde q/|\tilde q|)\tilde\Pi_2$, which is the diagonal element $(\tilde u_{\mathrm r},\tilde u_{\mathrm r})$ with $\tilde u_{\mathrm r} = \tilde q/|\tilde q|$. The polar decomposition of a real quaternion is therefore the quaternion polar decomposition itself, with the same unit factor in both halves: the modulus is the real number $|\tilde q|$ written as the central element $|\tilde q|e_t$, and the rotor is the diagonal element $\tilde u_{\mathrm r}\,\tilde\Pi_1 + \tilde u_{\mathrm r}\,\tilde\Pi_2$. The two factors of the present decomposition agree term by term with the two factors of the quaternion polar form of the companion article *Modulus–Unit Polar Decomposition of Quaternions*. The two-sided rotor group contains the diagonal $\mathrm{Sp}(1)$ as the locus of the real quaternions, and a real quaternion carries no hyperbolic phase, its two component moduli being equal.
+If $\tilde{Q} = \tilde q\in\mathbb{H}$, that is $\tilde q' = 0$, then $\tilde q\pm \tilde q' = \tilde q$, so $\varrho_+ = \varrho_- = |\tilde q|$, $M_{\mathrm{mod}} = |\tilde q|e_t$, $\lambda = |\tilde q|$, $\tau = 0$ and $\tilde{U} = (\tilde q/|\tilde q|)\tilde\Pi_1 + (\tilde q/|\tilde q|)\tilde\Pi_2$, which is the diagonal element $(\tilde u_{\mathrm r},\tilde u_{\mathrm r})$ with $\tilde u_{\mathrm r} = \tilde q/|\tilde q|$. The polar decomposition of a real quaternion is therefore the quaternion polar decomposition itself, with the same unit factor in both halves: the modulus is the real number $|\tilde q|$ written as the central element $|\tilde q|e_t$, and the rotor is the diagonal element $\tilde u_{\mathrm r}\,\tilde\Pi_1 + \tilde u_{\mathrm r}\,\tilde\Pi_2$. The two factors of the present decomposition agree term by term with the two factors of the quaternion polar form of the companion article *Modulus–Unit Polar Decomposition of Quaternions*. The two-sided $SU(2)$ contains the diagonal $\mathrm{Sp}(1)$ as the locus of the real quaternions, and a real quaternion carries no hyperbolic phase, its two component moduli being equal.
 
 ### The Zero Divisors
 
@@ -501,7 +501,7 @@ and the rotor has $\tilde u_+ = (1+\vec e_x)/\sqrt2$ in its $\tilde\Pi_1$ factor
 
 ### The Zero Element
 
-For $\tilde{Q} = 0$ the modulus is $M_{\mathrm{mod}} = 0$ and the rotor is arbitrary: $0 = 0\cdot\tilde{U}$ for every $\tilde{U}$ in the rotor group, so the representation exists and is maximally non-unique. The scale and the phase are those of the zero modulus, that is, the scale is zero and the phase is undetermined. This is the only element at which the modulus itself vanishes, since $\varrho_+ = \varrho_- = 0$ forces $\tilde q = \tilde q' = 0$ and hence $\tilde{Q} = 0$.
+For $\tilde{Q} = 0$ the modulus is $M_{\mathrm{mod}} = 0$ and the rotor is arbitrary: $0 = 0\cdot\tilde{U}$ for every $\tilde{U}$ in $SU(2)$, so the representation exists and is maximally non-unique. The scale and the phase are those of the zero modulus, that is, the scale is zero and the phase is undetermined. This is the only element at which the modulus itself vanishes, since $\varrho_+ = \varrho_- = 0$ forces $\tilde q = \tilde q' = 0$ and hence $\tilde{Q} = 0$.
 
 ## Behaviour Under the Conjugations
 
@@ -701,7 +701,7 @@ The representation also has an exponential form. The exponential of an element w
 | $\lambda = \sqrt{\varrho_+\varrho_-}$ | the scale, a positive real except on the zero divisors |
 | $\tau = \tfrac12\ln(\varrho_+/\varrho_-)$ | the hyperbolic phase angle |
 | $\tilde{U} = \tilde u_+\tilde\Pi_1+\tilde u_-\tilde\Pi_2$ | the rotor, $\tilde u_\pm\in Sp(1)$, an element of the unit sphere |
-| $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ | the unit sphere and rotor group, the pairs of unit real quaternions, dimension six, compact |
+| $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ | the unit sphere and $SU(2)$, the pairs of unit real quaternions, dimension six, compact |
 | $\theta_\pm\in[0,2\pi]$, $\mu_\pm$ | the rotation angle and unit axis of the two halves of the rotor, $\tilde u_\pm = \cos\tfrac{\theta_\pm}{2} + \mu_\pm\sin\tfrac{\theta_\pm}{2}$ |
 | $\exp$, $\log$ | the exponential and the logarithm, componentwise on the two halves, $\log$ defined exactly on the invertible elements |
 | $Q_t$, $\vec Q$ | the split complex scalar part and the vector part of an element |

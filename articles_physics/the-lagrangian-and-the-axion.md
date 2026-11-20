@@ -168,11 +168,7 @@ which is the statement that the current is conserved classically and not quantum
 
 ## Open Questions
 
-**Is $f_a$ fixed by the algebra?** No. It is a parameter, and the corpus records the phenomenological window without deriving a value.
-
 **Does the corpus's periodic central field have a unique origin?** The parent constructs it as the phase of a complex central element; whether that construction is forced, or is one of several, is open.
-
-**Is the potential's leading cosine sufficient?** For most purposes yes; the higher harmonics are suppressed by powers of the susceptibility, and the corpus records the leading term as the whole of the claim.
 
 ## Summary
 

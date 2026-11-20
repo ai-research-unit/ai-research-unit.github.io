@@ -1270,7 +1270,7 @@ The compact part has two circular directions, and they are not interchangeable. 
 
 ### The Homotopy Type
 
-Forgetting the branch, the map $\tilde Q\mapsto(\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U)$ is a bijection onto $\mathbb{C}^{\times}\times\mathrm{SL}_2(\mathbb{C})$, and it is not a homeomorphism: on the cut the phase jumps by $-1$ and the rotor changes sign. The positive cone is homeomorphic to $\mathbb{R}^{3}$ and the rotor group is $S^{3}$, so $\mathrm{SL}_2(\mathbb{C})\simeq\mathbb{R}^{3}\times S^{3}$, and $U(2)\cong U(1)\times SU(2)$ as a space gives $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
+Forgetting the branch, the map $\tilde Q\mapsto(\varrho\,e^{i\theta_{\mathrm{pha}}},\tilde U)$ is a bijection onto $\mathbb{C}^{\times}\times\mathrm{SL}_2(\mathbb{C})$, and it is not a homeomorphism: on the cut the phase jumps by $-1$ and the rotor changes sign. The positive cone is homeomorphic to $\mathbb{R}^{3}$ and $SU(2)$ is $S^{3}$, so $\mathrm{SL}_2(\mathbb{C})\simeq\mathbb{R}^{3}\times S^{3}$, and $U(2)\cong U(1)\times SU(2)$ as a space gives $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$.
 
 ### The Coordinate Lines
 

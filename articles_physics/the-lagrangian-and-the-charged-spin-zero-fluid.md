@@ -140,9 +140,9 @@ $$
 
 ## Open Questions
 
-1. **The two signs of the charge and the two sheets.** $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ with $\gamma=(E+ϙ a'_t)/(mc^{2})$, so the charge density's sign is the energy's, and the action's indefiniteness is inherited. Whether a single functional covers both signs, and whether the two are related by charge conjugation, is the second category's question; the action states the problem and does not solve it.
+**The two signs of the charge and the two sheets.** $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ with $\gamma=(E+ϙ a'_t)/(mc^{2})$, so the charge density's sign is the energy's and the action's indefiniteness is inherited. Whether a single functional covers both signs, and whether the two are related by charge conjugation, is the second category's question; the action states the problem and does not solve it.
 
-2. **The boundary at a nodal surface.** As in the free companion, the chart fails at $\varrho=0$, and here the failure is on a surface that also carries a phase singularity with a flux through it. The block's charged article states the flux quantisation; whether the action requires a boundary term there is open.
+**The boundary at a nodal surface.** The chart fails at $\varrho=0$, and here the failure is on a surface that also carries a phase singularity with a flux through it. The block's charged article states the flux quantisation; whether the action requires a boundary term there is open.
 
 ## Summary
 

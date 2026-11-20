@@ -140,11 +140,11 @@ which is the continuity equation for a density $r$ and a velocity $u_\mu$. **The
 
 ## Open Questions
 
-1. **The massless limit.** The action's derivative terms survive at $k_m=0$ and the fluid reading does not, because the field becomes pure gauge and $A=ru$ is then a gauge-dependent split. Whether some gauge-fixed chart makes the limit continuous is not settled, and the block's article denies the reading without stating the obstruction in these terms.
+**The massless limit.** The action's derivative terms survive at $k_m=0$ and the fluid reading does not, because the field becomes pure gauge and $A=ru$ is then a gauge-dependent split. Whether some gauge-fixed chart makes the limit continuous is not settled.
 
-2. **The constraint's class.** Whether the unit condition and the transverse projection produce a second-class system with a Dirac bracket that closes — the spin-one fluid's analogue of the spin article's open problem — is not computed here.
+**The constraint's class.** Whether the unit condition and the transverse projection produce a second-class system with a Dirac bracket that closes is not computed here.
 
-3. **The multiplier's sign.** $\lambda$ is determined by the equations and its sign is the density's gradient's, so a region of decreasing density has a negative pressure in this reading. Whether that is physical or an artefact of the split is not settled.
+**The multiplier's sign.** $\lambda$ is determined by the equations and its sign is the density's gradient's, so a region of decreasing density has a negative pressure in this reading. Whether that is physical or an artefact of the split is not settled.
 
 ## Summary
 

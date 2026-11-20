@@ -50,6 +50,20 @@ The four terms are, in order, the phase term, the kinetic energy of the flow, th
 
 **What is absent is as informative as what is present.** There is no term in $\dot \varrho$ and no term in $\vec\nabla_\Phi\theta$ that is not inside the square. The first absence is why the density has no kinetic energy of its own; the second is why the flow's energy is the square of a gradient and therefore why the vorticity vanishes identically rather than by a constraint. Both are properties of the first-order rung. At the rung above, the two densities appear and the second absence disappears.
 
+### The Two Settings: The Velocity Is Not Canonical
+
+**No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid.** In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes
+
+$$
+\mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}+\vec\lambda\cdot\Bigl(\vec v-\frac{\vec\nabla_\Phi S}{m}\Bigr),
+$$
+
+and the three variations are these. Varying $\vec\lambda$ returns the definition, so the constraint is the chart's and carries no physics. Varying $\vec v$ fixes the multiplier, $\vec\lambda=\rho_{\mathrm{num}}m\vec v$, which is the momentum density and nothing else. Varying $S$ gives continuity with $\vec j=\vec\lambda/m$, which is the same equation as before. **The promotion buys a name and no equation**, and the multiplier is not an independent field: it is determined by the equation that would have defined it.
+
+**What the promotion does buy is the correct statement of the constraint.** At the rungs above, the velocity's place is taken by the rapidity, and its momentum vanishes identically — the relativistic companion computes $\partial\mathcal L/\partial\dot\theta_{\mathrm{rpd}}=0$ on every configuration. Here the same fact is $p_{\vec v}=0$ once the velocity is promoted: it is then a coordinate with no kinetic term, so its conjugate is zero rather than small. **The two statements are the same statement in two charts**, and the fluid chart is the one in which it is visible without algebra; at this rung the density's momentum $p_r=0$ is the same fact in the chart that needs no promotion.
+
+**A rotational fluid needs two more fields and cannot be written with $\vec v$ alone.** If the flow is not a gradient, the velocity must be represented as $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
+
 ## The Variation: Two of Them
 
 **Varying the phase gives continuity, and the variation is one line.** Since $\mathcal L_{\mathrm{fl}}$ depends on $S$ only through $\partial_{t'}S$ and $\vec\nabla_\Phi S$,
@@ -151,20 +165,6 @@ conserved by the continuity equation that the phase's variation gives. Translati
 **The sign.** The density is positive and the current flows with the phase's gradient, so the mass current's sign is the orientation of $S$. There is no charge here and therefore no sign convention to fix: the fluid is neutral, and the only sign that could be chosen is the overall one of the action, which cancels.
 
 **What the corpus keeps.** The energy is not the mass shell's value but the Legendre transform of the boxed Lagrangian, and the two differ by the quantum potential. That difference is the reason the fluid form of the Schrödinger fluid and the fluid form of the Klein–Gordon fluid do not agree term by term.
-
-## The Two Settings: The Velocity Is Not Canonical
-
-**No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid.** In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes
-
-$$
-\mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}+\vec\lambda\cdot\Bigl(\vec v-\frac{\vec\nabla_\Phi S}{m}\Bigr),
-$$
-
-and the three variations are these. Varying $\vec\lambda$ returns the definition, so the constraint is the chart's and carries no physics. Varying $\vec v$ fixes the multiplier, $\vec\lambda=\rho_{\mathrm{num}}m\vec v$, which is the momentum density and nothing else. Varying $S$ gives continuity with $\vec j=\vec\lambda/m$, which is the same equation as before. **The promotion buys a name and no equation**, and the multiplier is not an independent field: it is determined by the equation that would have defined it.
-
-**What the promotion does buy is the correct statement of the constraint.** At the rungs above, the velocity's place is taken by the rapidity, and its momentum vanishes identically — the relativistic companion computes $\partial\mathcal L/\partial\dot\theta_{\mathrm{rpd}}=0$ on every configuration. Here the same fact is $p_{\vec v}=0$ once the velocity is promoted: it is then a coordinate with no kinetic term, so its conjugate is zero rather than small. **The two statements are the same statement in two charts**, and the fluid chart is the one in which it is visible without algebra; at this rung the density's momentum $p_r=0$ is the same fact in the chart that needs no promotion.
-
-**A rotational fluid needs two more fields and cannot be written with $\vec v$ alone.** If the flow is not a gradient, the velocity must be represented as $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
 
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 

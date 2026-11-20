@@ -56,6 +56,16 @@ with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material fo
 
 **The stationarity is the symbol and the check is a finite difference.** $\partial\mathcal{Q}/\partial A_\nu=-(\sigma A)_\nu$ with $(\sigma A)_\nu=(k^{2}-k_m^{2})A_\nu-k_\nu(k\cdot A)$, verified to $2.1\times10^{-11}$ at $k_t'=1.2$, $\vec k_\Phi=(0.3,0.2,0.1)$, $k_m=0.7$ on a random complex amplitude. **So the momentum-space variational principle is $\sigma A=0$**, and the form companion's matrix is this form's Hessian.
 
+### The Constant-Coefficient Licence
+
+**The constant-coefficient licence bounds every statement here.** The form is a form at one wave number only where the coefficients are constant. With a connection there is a form at a mode only for a constant connection, and the coupled companion treats that case.
+
+**The form is the second-order form's.** The parent sets the Palatini form aside and the article follows it. **A first-order form would have eight amplitudes and a pair of equations**, and none of the coefficients above would be the coefficients of that form.
+
+**The overall sign is a convention.** The relative sign of the two terms is the parent's, fixed by positive energy. **The article's coefficients are quoted with that sign**, and a reader who uses the opposite convention will find every coefficient negated and every vanishing unchanged.
+
+**The denial, once more.** No sector is exchanged. The form is a real number per wave number, the amplitude is four real components, and twice the scalar part is a sum of four numbers. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
+
 ## The Action in Momentum Space: The Quadratic Form and Its Stationarity
 
 **At a wave number the action is a quadratic form and nothing more.** There is no coupling between different wave numbers in the free case, so the transform does not merely simplify the action; it decomposes it into an independent form at each wave number. **The variation is then algebraic at each index**, and the Euler–Lagrange equation is the vanishing of one gradient.
@@ -95,6 +105,20 @@ the symbol equation the article solves. The passage from the action to the equat
 **What the Proca case adds to the Dirac precedent is the projector.** In the Dirac case the second variation is one central scalar and the zero is a number's vanishing. Here the second variation is a matrix with two distinct eigenvalues, so the locus where the form degenerates is a locus where it degenerates *partially*: rank one on the shell, not rank zero. **The partial degeneracy is the three polarisations**, and the article's one addition to the precedent is that sentence.
 
 **The degeneracy is not the pole's whole story.** A propagator's residue at the pole is a projector, and here it is the transverse projector: the residue is supported on the Lorenz plane and vanishes along the wave number. **That is why the longitudinal mode's contribution to the propagator is not a pole at all** but the $-1/k_m^{2}$ term the standard treatment records, and the form's eigenvalues say so in one line.
+
+### The Legendre Transform
+
+**The transform inverts on the transverse directions and is degenerate on the longitudinal one.** The Proca mode form is quadratic in the frequency, so the transform inverts in general; but the mass term removes one degree of freedom, and the direction it removes is the one where the transform's derivative does not depend on the frequency. **The transform is therefore two-valued on the transverse form and single-valued on the longitudinal one**, and that asymmetry is what the coupled article's section calls the inversion being two-valued.
+
+**Where the two branches are.** The two roots of the quadratic are the two mass-shell branches, and they differ by the sign of the frequency. **The branches are not two particles**: they are the same form read at $\pm\omega$, and the density's sign is what distinguishes them.
+
+**The longitudinal direction's single value.** On the longitudinal direction the form reduces to $\tfrac12k_m^{2}(A\cdot A)$ and the frequency has dropped out. **The transform's derivative there is the mass and not the frequency**, so the transform returns the coefficient $k_m^{2}$ and no branch. This is the precise sense in which the Proca field has three degrees of freedom and not four: one direction is a coefficient and the other three are a form.
+
+**The slope.** The derivative of the action with respect to $\omega$ is the density per mode, and the transform's slope is therefore the density as a function of the energy. **On the transverse directions the slope changes sign between branches; on the longitudinal direction it does not**, because the density there carries the mass and not the frequency.
+
+**What the transform does not do.** It does not produce the constraint. **The constraint is already in the form** — the vanishing of the longitudinal coefficient's variation — and the transform only reports it as a coefficient that does not move. A reader who expected a Lagrange multiplier has looked for one in the wrong place: the exact parameterisation and the mass term both make it unnecessary.
+
+**One caution.** The transform is taken before the equation is imposed. **On shell the form vanishes**, so the transform of the on-shell form is zero on both branches and on the longitudinal direction alike, and the article does not take it.
 
 ## The Constraints the Action Imposes: The Constraint Is the Vanishing of a Coefficient
 
@@ -175,30 +199,6 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 
 **What the mass term does.** It fixes the longitudinal coefficient to $k_m^{2}$ and therefore fixes the energy of the longitudinal mode; the transverse modes keep the Maxwell dispersion. That split of the stress into two pieces is the mode-level statement of the count the element article makes, and it is the reason the Proca article's *Longitudinal Coefficient* section exists.
 
-## The Legendre Transform
-
-**The transform inverts on the transverse directions and is degenerate on the longitudinal one.** The Proca mode form is quadratic in the frequency, so the transform inverts in general; but the mass term removes one degree of freedom, and the direction it removes is the one where the transform's derivative does not depend on the frequency. **The transform is therefore two-valued on the transverse form and single-valued on the longitudinal one**, and that asymmetry is what the coupled article's section calls the inversion being two-valued.
-
-**Where the two branches are.** The two roots of the quadratic are the two mass-shell branches, and they differ by the sign of the frequency. **The branches are not two particles**: they are the same form read at $\pm\omega$, and the density's sign is what distinguishes them.
-
-**The longitudinal direction's single value.** On the longitudinal direction the form reduces to $\tfrac12k_m^{2}(A\cdot A)$ and the frequency has dropped out. **The transform's derivative there is the mass and not the frequency**, so the transform returns the coefficient $k_m^{2}$ and no branch. This is the precise sense in which the Proca field has three degrees of freedom and not four: one direction is a coefficient and the other three are a form.
-
-**The slope.** The derivative of the action with respect to $\omega$ is the density per mode, and the transform's slope is therefore the density as a function of the energy. **On the transverse directions the slope changes sign between branches; on the longitudinal direction it does not**, because the density there carries the mass and not the frequency.
-
-**What the transform does not do.** It does not produce the constraint. **The constraint is already in the form** — the vanishing of the longitudinal coefficient's variation — and the transform only reports it as a coefficient that does not move. A reader who expected a Lagrange multiplier has looked for one in the wrong place: the exact parameterisation and the mass term both make it unnecessary.
-
-**One caution.** The transform is taken before the equation is imposed. **On shell the form vanishes**, so the transform of the on-shell form is zero on both branches and on the longitudinal direction alike, and the article does not take it.
-
-## The Limits and the Truncation’s Error
-
-**The constant-coefficient licence bounds every statement here.** The form is a form at one wave number only where the coefficients are constant. With a connection there is a form at a mode only for a constant connection, and the coupled companion treats that case.
-
-**The form is the second-order form's.** The parent sets the Palatini form aside and the article follows it. **A first-order form would have eight amplitudes and a pair of equations**, and none of the coefficients above would be the coefficients of that form.
-
-**The overall sign is a convention.** The relative sign of the two terms is the parent's, fixed by positive energy. **The article's coefficients are quoted with that sign**, and a reader who uses the opposite convention will find every coefficient negated and every vanishing unchanged.
-
-**The denial, once more.** No sector is exchanged. The form is a real number per wave number, the amplitude is four real components, and twice the scalar part is a sum of four numbers. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
-
 ## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
@@ -209,11 +209,9 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 
 ## Open Questions
 
-**Whether the first-order form has a longitudinal coefficient that is also $\omega$-independent is open.** The parent records the Palatini form and does not use it. In the first-order form the field strength is an independent variable, and the longitudinal direction's cost would be a property of the constraint's multiplier rather than of the mass term. Whether the constant survives is not settled here.
+**Whether the first-order form has a longitudinal coefficient that is also $\omega$-independent.** The parent records the Palatini form and does not use it. In the first-order form the field strength is an independent variable, and the longitudinal direction's cost would be a property of the constraint's multiplier rather than of the mass term. Whether the constant survives is not settled.
 
-**Whether the absent $\omega^{2}$ in the temporal coefficient has a chart reading is open.** The polar companion shows that the chart's four parameters are not four momenta and that four of the Legendre momenta vanish. Whether the vanishing of those momenta and the absence of the frequency in the temporal coefficient are one statement is a question the two articles raise jointly and neither answers.
-
-**Whether the form's partial degeneracy has a reading that is not the imported one is open.** Rank one on the shell is a statement about the Hessian. **That the degenerate directions are the three polarisations is the corpus's identification**, imported as in the form companion, and the article records the import rather than hiding it.
+**Whether the absent $\omega^{2}$ in the temporal coefficient has a chart reading.** The polar companion shows that the chart's four parameters are not four momenta and that four of the Legendre momenta vanish. Whether the vanishing of those momenta and the absence of the frequency in the temporal coefficient are one statement is a question the two articles raise jointly and neither answers.
 
 ## Summary
 

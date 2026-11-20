@@ -34,6 +34,23 @@ $$
 
 with $k_m=mc/\hbar$, the two parts $\tilde\Xi_L$ and $\tilde\Xi_R$ and the Hermitian pairing $\mathrm{Sc}(\cdot^{*}\cdot)$. The two parts are not values; the parent's warning applies unchanged, and no display below splits a value.
 
+### The Constant-Coefficient Licence
+
+**Constant coefficients.** The momentum-space action is a family of quadratic forms only where the symbol is constant. The mass is constant, so the free action transforms exactly and every display above is exact. With a potential the symbol depends on the position, the transform of the action is a convolution, the Hessian is an operator again, and the central-scalar statement stops. *The Lagrangian and the Coupled Dirac Equation* and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* are where that case is treated, and nothing here anticipates them.
+
+**Where the mass sits.** The second variation is $\langle i\tilde K_\Phi\rangle_\natural-k_m^{2}$, with the mass subtracted as a central number. It is not $\langle i\tilde K_\Phi-k_m\rangle_\natural$, and the difference is not small:
+
+$$
+\langle i\tilde K_\Phi-k_m\rangle_\natural
+=k^{2}+2k_mk_t'+k_m^{2},
+$$
+
+checked to $3.9\times10^{-16}$ over five momenta. On $k_t'=1$, $\vec k_\Phi=(0.6,0,0)$ and $k_m=0.7$ the wrong object is $2.53$ and the right one is $0.64-0.49=0.15$. The norm is not linear in its argument, so the mass cannot sit inside it; it is a coefficient of the action, and the composition of the pair subtracts it from a number.
+
+**The measure.** The momentum-space measure's constant is the transform's convention, and the action's overall constant is the parent's $\frac{\hbar c}{2}$. No display above depends on either, and no normalization is claimed.
+
+**The denial, once more.** The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equations on elements, and the centrality of the second variation is a statement about one coefficient's behaviour. No sector flip occurs at any step.
+
 ## The Action in Momentum Space
 
 **The transform of the action replaces each derivative by a multiplier and each integration by parts by nothing.** The action becomes
@@ -133,6 +150,20 @@ $$
 
 **This is the precise sense in which the parent's third open question is closed.** The parent asked for the path integral and did not attempt it. The answer attempted here is not the integral; it is the observation that the two objects the parent separated — the extremum's object and the sum over configurations — meet in one momentum-space function, one at its zero and the other at its pole. **The construction of the sum is the companion articles' work, and the relation is the reason the two articles describe one theory.**
 
+### The Legendre Transform
+
+**A first-order form has a degenerate transform.** The mode action is linear in the frequency, so its derivative with respect to $\omega$ does not contain $\omega$; the transform therefore does not invert, and it returns a condition on the amplitude rather than an energy. **That is not a defect of this reading: it is the same statement the element article makes when it says that three momenta vanish identically.**
+
+**What the condition is.** The derivative of the form with respect to $\omega$ is the density, and the requirement that the density be the conjugate of the frequency is the constraint. **At a fixed wave number the constraint is one condition on four amplitudes**, and the remaining three are the energy's carriers. So the transform gives one constraint and three degrees of freedom, which is the Dirac field's count in the mode language.
+
+**Where the two branches are, then.** They are the two eigenvalues of the Hamiltonian at that wave number, not two roots of a quadratic. **The reading distinguishes the two by the sign of the eigenvalue and not by the sign of the root**, and the distinction is the same one in either language.
+
+**The transform's one number.** The slope of the action with respect to the frequency is $\hbar$ times the norm, which is the density per mode. **The transform is therefore the map from the form's argument to the form's density**, and it is injective on the amplitude and constant on the frequency.
+
+**Why the article still needs it.** Because the momentum reading's claim is that the mode action *is* the symbol, and a reader can test that claim only by differentiating: if the derivative in the frequency is the density and the derivative in the amplitude is the symbol, the identification is complete. **The transform is the test, not a new result.**
+
+**One caution.** On shell the form vanishes, so the transform of the on-shell form is zero. **The transform must be taken before the equation is imposed**, and the article says so once, because the opposite order gives a trivial answer that looks like a contradiction.
+
 ## The Constraints the Action Imposes: The Constraint Is the Frequency Condition
 
 **At a mode the variation is algebraic and the constraint falls on the momentum.** The transform has replaced $\tilde\nabla_\Phi$ by $i\tilde K_\Phi$ and its adjoint by $i\tilde K_\Phi^{\natural}$, so the density is a quadratic form in the amplitude with no derivative left. Stationarity forces the form's bracket to vanish, and where the form is invertible the only stationary amplitude is zero.
@@ -169,37 +200,6 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## The Legendre Transform
-
-**A first-order form has a degenerate transform.** The mode action is linear in the frequency, so its derivative with respect to $\omega$ does not contain $\omega$; the transform therefore does not invert, and it returns a condition on the amplitude rather than an energy. **That is not a defect of this reading: it is the same statement the element article makes when it says that three momenta vanish identically.**
-
-**What the condition is.** The derivative of the form with respect to $\omega$ is the density, and the requirement that the density be the conjugate of the frequency is the constraint. **At a fixed wave number the constraint is one condition on four amplitudes**, and the remaining three are the energy's carriers. So the transform gives one constraint and three degrees of freedom, which is the Dirac field's count in the mode language.
-
-**Where the two branches are, then.** They are the two eigenvalues of the Hamiltonian at that wave number, not two roots of a quadratic. **The reading distinguishes the two by the sign of the eigenvalue and not by the sign of the root**, and the distinction is the same one in either language.
-
-**The transform's one number.** The slope of the action with respect to the frequency is $\hbar$ times the norm, which is the density per mode. **The transform is therefore the map from the form's argument to the form's density**, and it is injective on the amplitude and constant on the frequency.
-
-**Why the article still needs it.** Because the momentum reading's claim is that the mode action *is* the symbol, and a reader can test that claim only by differentiating: if the derivative in the frequency is the density and the derivative in the amplitude is the symbol, the identification is complete. **The transform is the test, not a new result.**
-
-**One caution.** On shell the form vanishes, so the transform of the on-shell form is zero. **The transform must be taken before the equation is imposed**, and the article says so once, because the opposite order gives a trivial answer that looks like a contradiction.
-
-## The Limits and the Truncation’s Error
-
-**Constant coefficients.** The momentum-space action is a family of quadratic forms only where the symbol is constant. The mass is constant, so the free action transforms exactly and every display above is exact. With a potential the symbol depends on the position, the transform of the action is a convolution, the Hessian is an operator again, and the central-scalar statement stops. *The Lagrangian and the Coupled Dirac Equation* and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* are where that case is treated, and nothing here anticipates them.
-
-**Where the mass sits.** The second variation is $\langle i\tilde K_\Phi\rangle_\natural-k_m^{2}$, with the mass subtracted as a central number. It is not $\langle i\tilde K_\Phi-k_m\rangle_\natural$, and the difference is not small:
-
-$$
-\langle i\tilde K_\Phi-k_m\rangle_\natural
-=k^{2}+2k_mk_t'+k_m^{2},
-$$
-
-checked to $3.9\times10^{-16}$ over five momenta. On $k_t'=1$, $\vec k_\Phi=(0.6,0,0)$ and $k_m=0.7$ the wrong object is $2.53$ and the right one is $0.64-0.49=0.15$. The norm is not linear in its argument, so the mass cannot sit inside it; it is a coefficient of the action, and the composition of the pair subtracts it from a number.
-
-**The measure.** The momentum-space measure's constant is the transform's convention, and the action's overall constant is the parent's $\frac{\hbar c}{2}$. No display above depends on either, and no normalization is claimed.
-
-**The denial, once more.** The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equations on elements, and the centrality of the second variation is a statement about one coefficient's behaviour. No sector flip occurs at any step.
-
 ## What the Principle Adds and What It Relabels: In Momentum Space
 
 **What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
@@ -210,11 +210,7 @@ checked to $3.9\times10^{-16}$ over five momenta. On $k_t'=1$, $\vec k_\Phi=(0.6
 
 ## Open Questions
 
-**The article leaves no question of its own open.** The three statements are identities and exact checks, and the zero-pole relation is a computed equality of two displays.
-
-**Two of the parent's questions are untouched, and they are not this article's.** Which reading of the electric current is physical, and whether the operator setting closes for a position-dependent Hamiltonian, remain the parent's first and second open questions; nothing above bears on either.
-
-**One neighbouring question is now well posed.** Whether the zero-pole relation survives when the symbol is an operator — that is, whether the path integral of the coupled theory is the inverse of the coupled action's Hessian in the same sense — is a question about the coupled articles. It is stated here because the free case makes it precise, and it is not answered here.
+**Whether the zero-pole relation survives when the symbol is an operator.** That is, whether the path integral of the coupled theory is the inverse of the coupled action's Hessian in the same sense. It is a question about the coupled articles, stated here because the free case makes it precise, and it is not answered here.
 
 ## Summary
 

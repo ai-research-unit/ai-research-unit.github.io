@@ -60,6 +60,33 @@ $$
 **The selection rule. Declared.** No free potential; the action's coefficients are the mass and the metric's weights, and neither admits an inadmissible sector.
 
 **What reality does not buy. The truncated action is real and incomplete.** Its densities are real exactly as the full action's are; what the truncation costs is accuracy and not reality, and the order of the cost is stated in *The Limits and the Truncation’s Error*.
+
+### The Limits and the Truncation’s Error
+
+**There is no truncation error because there is no truncation.** The limit removed nothing, so the difference between the parent action and the limit's action is zero, and the difference between the parent's equations and the limit's is zero as well. **The error of this family's non-quantum limit is identically zero**, and the article says so in one sentence rather than in a section — except that the sentence needs a section, because a zero error is easy to misread as a strong result.
+
+**Why it is not a strong result.** A zero error means the limit is exact, and an exact limit carries no information about the small parameter. **The Dirac family's limit cannot be used to justify dropping anything**, because nothing was dropped; every later approximation — the envelope, the slowly varying frame, the neglect of the back-reaction — is a different approximation with its own error, and the article's other sections are where those are priced.
+
+**What a reader might expect, and why the expectation is wrong.** In the scalar family the limit's error is the quantum potential, and a reader who comes to the Dirac family expecting the same will look for a term that is absent from the parent. **The polar word has no scale-kinetic block**, so there is nothing to delete and nothing to restore, and the article's coordinates section is where that is shown.
+
+**The price, stated honestly.** The exactness is bought by the limit being vacuous as an approximation. **The article's claim is not that the Dirac family's non-quantum limit is better than the others; it is that the limit is a different kind of object**, a reading of an exact structure rather than a truncation of an approximate one.
+
+**Consequence for the family's status.** A limit that approximates nothing and deletes nothing cannot be used to argue that the theory is "almost classical" at large scales. **The Dirac family's classical appearance is a property of its order count from the start**, and the limit merely names it.
+
+**Nothing is deleted, so the limit is an assignment.** The two statements it makes are:
+
+| object | what it is | order |
+|---|---|---|
+| the vanishing momenta | three algebraic conditions on the eight coordinates | $0$ |
+| the flow $\Omega\dot q=\mathrm{d}U$ | eight first-order transport equations | $1$ |
+| products of two flow equations | quadratic in the connections | $2$ |
+
+**The first row is the equation route's order zero.** $p_r=0$ is the statement that the scale is not a dynamical variable, and its equation is the mass shell once $\mathcal V$ is evaluated on the constraint surface; $p_{\theta_{\mathrm{rpd}}}=0$ and $p_{\vec u_{\mathrm b}}=0$ are the conditions that fix the boost's rapidity and axis, that is the polarisation of the frame by the momentum. **The algebraic frame of the companion article is the vanishing of three momenta.**
+
+**The second row is the equation route's order one.** The flow is first order and it carries the density, the velocity and the spin, because the eight coordinates are the density, the phase, the rapidity, the boost's axis and the rotor's three angles. **Three transport laws and one phase rate**, which is what the companion's order one is.
+
+**The third row is order two and it is not a term of the action.** The products of two flow equations are what the iteration produces, and they are the amplitude's curvature combined with the frame's. **A variational principle on a first-order action cannot produce a second-derivative term**, and that is the structural reason this family has no quantum potential of the Klein–Gordon type.
+
 ## The Variation: The Momenta and the Flow
 **The variation of a first-order action gives the momenta and the flow.** The action is $\int\mathrm{d}t'\,\bigl\{A_x(q)\dot q^{x}-U(q)\bigr\}$ with $A$ the one-form of the previous section. Varying it gives
 
@@ -111,31 +138,6 @@ using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. **N
 **The spin.** The rotor's momentum is $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, a vector along the boost axis weighted by the rapidity. Its conservation is the statement that the spin direction is transported without precession in the free theory, and the mass term is what couples the spin direction to the momentum, so the free conservation is exact and the coupled one is not.
 
 **The energy.** The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot q$ cancels the kinetic term. So the energy of a configuration is the mass term evaluated on it, $U=\hbar c\,k_m\varrho^{2}\mathcal V$, and the equation of motion is the statement that the flow is tangent to the level surfaces of $U$ in the symplectic form $\Omega$. The energy carries the mass and the density does not, which is the limit's version of the split the element article makes.
-## The Limits and the Truncation’s Error
-**There is no truncation error because there is no truncation.** The limit removed nothing, so the difference between the parent action and the limit's action is zero, and the difference between the parent's equations and the limit's is zero as well. **The error of this family's non-quantum limit is identically zero**, and the article says so in one sentence rather than in a section — except that the sentence needs a section, because a zero error is easy to misread as a strong result.
-
-**Why it is not a strong result.** A zero error means the limit is exact, and an exact limit carries no information about the small parameter. **The Dirac family's limit cannot be used to justify dropping anything**, because nothing was dropped; every later approximation — the envelope, the slowly varying frame, the neglect of the back-reaction — is a different approximation with its own error, and the article's other sections are where those are priced.
-
-**What a reader might expect, and why the expectation is wrong.** In the scalar family the limit's error is the quantum potential, and a reader who comes to the Dirac family expecting the same will look for a term that is absent from the parent. **The polar word has no scale-kinetic block**, so there is nothing to delete and nothing to restore, and the article's coordinates section is where that is shown.
-
-**The price, stated honestly.** The exactness is bought by the limit being vacuous as an approximation. **The article's claim is not that the Dirac family's non-quantum limit is better than the others; it is that the limit is a different kind of object**, a reading of an exact structure rather than a truncation of an approximate one.
-
-**Consequence for the family's status.** A limit that approximates nothing and deletes nothing cannot be used to argue that the theory is "almost classical" at large scales. **The Dirac family's classical appearance is a property of its order count from the start**, and the limit merely names it.
-
-**Nothing is deleted, so the limit is an assignment.** The two statements it makes are:
-
-| object | what it is | order |
-|---|---|---|
-| the vanishing momenta | three algebraic conditions on the eight coordinates | $0$ |
-| the flow $\Omega\dot q=\mathrm{d}U$ | eight first-order transport equations | $1$ |
-| products of two flow equations | quadratic in the connections | $2$ |
-
-**The first row is the equation route's order zero.** $p_r=0$ is the statement that the scale is not a dynamical variable, and its equation is the mass shell once $\mathcal V$ is evaluated on the constraint surface; $p_{\theta_{\mathrm{rpd}}}=0$ and $p_{\vec u_{\mathrm b}}=0$ are the conditions that fix the boost's rapidity and axis, that is the polarisation of the frame by the momentum. **The algebraic frame of the companion article is the vanishing of three momenta.**
-
-**The second row is the equation route's order one.** The flow is first order and it carries the density, the velocity and the spin, because the eight coordinates are the density, the phase, the rapidity, the boost's axis and the rotor's three angles. **Three transport laws and one phase rate**, which is what the companion's order one is.
-
-**The third row is order two and it is not a term of the action.** The products of two flow equations are what the iteration produces, and they are the amplitude's curvature combined with the frame's. **A variational principle on a first-order action cannot produce a second-derivative term**, and that is the structural reason this family has no quantum potential of the Klein–Gordon type.
-
 ## What the Principle Adds and What It Relabels: By the Variational Route
 **Three things, and the first is the constraint reading.**
 
