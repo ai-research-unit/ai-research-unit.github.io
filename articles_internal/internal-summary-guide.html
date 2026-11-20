@@ -97,7 +97,7 @@
 <p><strong>Coverage means claim coverage, not article coverage.</strong> Every article inside the boundary must be <em>reachable</em>: cited in a <code>**Source.**</code> line, named in a prose enumeration, or listed in Further Reading. It need not get a block. An article with no irrecoverable line is a member of a list, and that is the right fate for it. The check is mechanical:</p>
 <pre><code>grep -o 'articles_physics/[a-z0-9-]*\.md' &lt;file&gt; | sort -u | wc -l
 </code></pre>
-<p>The particle physics summary cites sixty-four of its eighty-three articles this way and names the rest in prose. The defect to avoid is a sharp claim that no source line can audit.</p>
+<p>The particle physics summary cites all eighty-three of its articles, in six lists of bare slugs, one list per part; a slug in backticks is the citation form. The defect to avoid is a sharp claim that no source line can audit.</p>
 <h2 id="4-the-skeleton">4. The Skeleton</h2>
 <p><strong>Six parts, always in this order.</strong> The fifteen existing summaries share it without exception.</p>
 <div class="table-scroll"><table>
@@ -174,7 +174,7 @@ model would not produce, and what it costs.
 <p><strong>Box only the load-bearing display.</strong> <code>\boxed{}</code> marks the equation an agent must reproduce. The existing files use zero to fourteen boxes; the electromagnetism summary uses eight for twenty-nine articles, the universe summary none, because its load-bearing content is its tables. The box count is a budget, not a quota.</p>
 <p><strong>Use <code>###</code> when a section passes four items.</strong> The intersection rule of the corpus applies unchanged: give every intersection a heading, define before tabulating.</p>
 <p><strong>Tables carry counts, dimensions and ledgers.</strong> Which subspace, which dimension, which role; which region, which invariant, which reading. A table is the cheapest way to store an enumeration, and the right way to store one.</p>
-<p><strong>Close the section with <code>**Source.**</code> when it maps to a set of articles.</strong> Backticked relative paths, <code>.md</code> extension, comma separated. Three of the fifteen summaries carry none, their sources sitting in Further Reading. Pick one form per file and hold it.</p>
+<p><strong>Close the section with <code>**Source.**</code> when it maps to a set of articles.</strong> Backticked relative paths, <code>.md</code> extension, comma separated. Every one of the seventeen summaries now closes each mapped section this way; the particle physics summary is the one exception, and it uses <code>*Articles.*</code> with bare slugs, one list per part. Pick one form per file and hold it.</p>
 <p><strong>Do not repeat a display.</strong> The same formula in three sections is a sign that the sections are one section.</p>
 <p><strong>Do not write the algebra out.</strong> No intermediate step of a derivation, no chain of substitutions, no expansion the model performs faster than it reads. The summary holds the endpoints and the obstruction, not the route.</p>
 <h2 id="7-the-claim-ledger">7. The Claim Ledger</h2>
@@ -229,7 +229,7 @@ model would not produce, and what it costs.
 </ul>
 <p><strong>What looks like content and is not.</strong> A boxed identity that restates a definition. A table of symbols already defined in the body. A paragraph whose only verb is <em>is</em>. Each costs the tokens of a sharp claim and buys nothing.</p>
 <h2 id="11-length-density-and-the-budget">11. Length, Density and the Budget</h2>
-<p><strong>Measured on the fifteen existing files.</strong> Sizes run from 12 KB to 34 KB, lines from 209 to 611, numbered sections from 4 to 16, non-trivial claims from 3 to 21, boxed displays from 0 to 14, Source lines from 0 to 16, total 4,871 lines.</p>
+<p><strong>Measured on the seventeen existing files.</strong> Sizes run from 13 KB to 41 KB, lines from 178 to 612, numbered sections from 4 to 16, non-trivial claims from 1 to 16, boxed displays from 0 to 13, citation blocks from 4 to 16, total 5,639 lines.</p>
 <p><strong>Density is claim density, not article density.</strong> The electromagnetism summary gives every item a block and boxes eight displays for twenty-nine articles. The relativity summary gives the spine a block and the enumerations a table, at one hundred and one articles. The universe summary boxes nothing and carries sixteen sections of structure. Each is right for its claim count.</p>
 <p><strong>Budget rule.</strong> One block per irrecoverable claim, one line per article that carries no claim, one table per enumeration of more than four objects. Nothing else. A section that exceeds it is either over-written or is really two sections.</p>
 <p><strong>The floor is the acceptance test.</strong> A file that fails the test is too short, whatever its length. A file that repeats itself is too long, whatever its length.</p>

@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="internal-summary-of-the-biquaternion-operators"><strong>Internal Summary of the Biquaternion Operators</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>What this file is.</strong> A compressed map of the <em>Operators</em> block of the maths category <em>Biquaternions</em>, forty articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them.</p>
+<p><strong>What this file is.</strong> A compressed map of the <em>Operators</em> block of the maths category <em>Biquaternions</em>, forty articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source articles named at the end of the section.</p>
 <p><strong>What the block does.</strong> It takes the one algebra and asks what its own linear maps are. The answer has a spine:</p>
 <p>$$
 L_{\tilde Q}(X)=\tilde QX,\qquad R_{\tilde Q}(X)=X\tilde Q,\qquad
@@ -91,6 +91,7 @@ $$</p>
 \tilde Q_1\tilde Q_2,\qquad \tilde Q_1^{\natural}\tilde Q_2,\qquad \tilde Q_1\tilde Q_2^{*},\qquad \tilde Q_1^{\natural}\tilde Q_2^{*}.
 $$</p>
 <p><strong>The non-trivial claim.</strong> Each product, read as a map in the second slot, gives a different <em>adjoint pair</em>. The four products do not give four theories; they give the four ways a $\mathbb{C}$-linear map can be related to its adjoint. This is why the operator block begins with the products and not with the maps.</p>
+<p><strong>Source.</strong> <code>articles_maths/introduction-to-the-operators-of-the-biquaternion-algebra.md</code></p>
 <h2 id="2-the-one-sided-families">2. The One-Sided Families</h2>
 <p>$$
 L_{\lambda\tilde Q+\mu\tilde Q_2}=\lambda L_{\tilde Q}+\mu L_{\tilde Q_2},\qquad
@@ -107,6 +108,7 @@ L_{\tilde Q}=\natural\,R_{\natural(\tilde Q)}\,\natural,\qquad R_{\tilde Q}=\nat
 $$</p>
 <p>so left and right are the same family conjugated by the involution. There is no separate theory of right multiplication.</p>
 <p><strong>The kernel is the annihilator.</strong> $\ker L_{\tilde Q}=\mathrm{Ann}_r(\tilde Q)$, and it is nonzero exactly on the zero-divisor cone. <strong>The non-trivial claim:</strong> injectivity of $L_{\tilde Q}$ is invertibility of $\tilde Q$, with no intermediate case. The reason is finite dimension: injective implies surjective implies a right inverse, and a right inverse in a finite-dimensional algebra is an inverse. So the operator picture and the algebraic picture agree exactly, and there is no "almost invertible" operator.</p>
+<p><strong>Source.</strong> <code>articles_maths/operators-acting-on-one-side.md</code>, <code>articles_maths/operator-chirality-on-the-biquaternion-algebra.md</code>, <code>articles_maths/the-transposition-of-the-two-sides.md</code></p>
 <h2 id="3-two-sided-operators-and-the-enveloping-algebra">3. Two-Sided Operators and the Enveloping Algebra</h2>
 <p>$$
 L_{\tilde Q}R_{\tilde Q_2}(X)=\tilde Q\,X\,\tilde Q_2,\qquad
@@ -127,6 +129,7 @@ $$</p>
 \boxed{\;\mathrm{Sd}_{\tilde Q}=\mathrm{Sd}_{\tilde Q_H}\circ\mathrm{Sd}_{\tilde Q_0},\qquad \mathrm{Sd}_{\tilde Q}=4a^{2}\,\mathrm{Sd}_{\tilde Q_0}\ \text{ when }\ \tilde Q=2a\tilde Q_0\;.}
 $$</p>
 <p><strong>The non-trivial claim.</strong> The sandwich is multiplicative and it respects the polar decomposition: the modulus part acts as a scalar rescaling, so the <em>projective</em> sandwich — the one that matters for rotations — depends only on the unit part. This is the operator-level statement of "a rotation is unchanged by rescaling".</p>
+<p><strong>Source.</strong> <code>articles_maths/operators-acting-on-two-sides.md</code>, <code>articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md</code>, <code>articles_maths/the-endomorphisms-of-the-biquaternion-algebra.md</code></p>
 <h2 id="4-adjoints-hermitian-pairs-transposition">4. Adjoints, Hermitian Pairs, Transposition</h2>
 <p>$$
 \langle F\tilde Q_1,\tilde Q_2\rangle_{\phi}=\langle\tilde Q_1,F^{\phi}\tilde Q_2\rangle_{\phi}\qquad\text{(adjoint pair)},
@@ -145,6 +148,7 @@ $$</p>
 \dim L=4,\quad \dim R=4,\quad \dim(L\cap R)=1,\quad \dim(L+R)=7
 $$</p>
 <p>means that the one-sided operators span a seven-dimensional Lie algebra. Its commutators are the inner derivations, of real dimension six, and the scalars contribute one central direction, so the algebra is $\mathfrak{so}(1,3)\oplus\mathfrak{u}(1)$. This is the same $6+1$ split the Geometry block gets from the versors, and the operator language and the group language are the same statement.</p>
+<p><strong>Source.</strong> <code>articles_maths/adjoint-pair-of-l-and-r-operators.md</code>, <code>articles_maths/the-hermitian-pair-of-operators-acting-on-one-side.md</code>, <code>articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.md</code>, <code>articles_maths/classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra.md</code>, <code>articles_maths/classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra.md</code>, <code>articles_maths/classification-of-the-complex-structures-of-the-operators-of-the-biquaternion-algebra.md</code></p>
 <h2 id="5-the-block-structure-on-the-regular-sector">5. The Block Structure on the Regular Sector</h2>
 <p><strong>The splitting of $L$, and the two halves.</strong></p>
 <p>$$
@@ -159,6 +163,7 @@ $$</p>
 $$</p>
 <p>and reports, for each, whether the operator families act faithfully, whether they preserve the subspace, and which stratum of N and of the spectrum they meet.</p>
 <p><strong>The non-trivial claim about the centre.</strong> On $\mathbb{C}e_t$ the norm is $N(\lambda e_t)=\lambda^{2}$, whose only zero is $\lambda=0$: the centre has no zero divisors. So the spin-zero sector is <em>regular by construction</em>, and every failure the block reports elsewhere is a failure off the centre.</p>
+<p><strong>Source.</strong> <code>articles_maths/introduction-to-the-operators-on-the-four-sectors.md</code>, <code>articles_maths/one-sided-operators-on-the-n-regular-sector.md</code>, <code>articles_maths/two-sided-operators-on-the-n-regular-sector.md</code>, <code>articles_maths/one-sided-operators-on-the-n-degenerate-sector.md</code>, <code>articles_maths/two-sided-operators-on-the-n-degenerate-sector.md</code>, <code>articles_maths/the-spin-zero-centre-subspace.md</code>, <code>articles_maths/the-spin-zero-centre-subspace-and-n-norm-regularity.md</code>, <code>articles_maths/the-spin-zero-centre-subspace-and-spectral-regularity.md</code>, <code>articles_maths/the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.md</code></p>
 <h2 id="6-spinors-and-the-fierzkofink-identities">6. Spinors and the Fierz–Kofink Identities</h2>
 <p><strong>The five bilinears, and the identity they obey.</strong></p>
 <p>$$
@@ -176,6 +181,7 @@ $$</p>
 [J_x,J_y]=2J_z,\quad[J_y,J_z]=2J_x,\quad[J_z,J_x]=2J_y .
 $$</p>
 <p><strong>The non-trivial claim.</strong> The factor $\tfrac12$ in the exponent, $\exp(\tfrac{\theta}{2}\vec u)$, is the <em>consequence</em> of the sandwich being quadratic in $\tilde q$: $\tilde q\tilde X\tilde q^{\natural}$ needs a half angle to give the angle. Spin is therefore not added to the algebra; it is forced by the quadratic action, and the closure chain "rotor → spin of the rotor → spin of a pair of two-sided operators → the carriers" is exactly this forcing written four times.</p>
+<p><strong>Source.</strong> <code>articles_maths/spinors-and-dirac-spinors-in-the-biquaternion-algebra.md</code>, <code>articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.md</code>, <code>articles_maths/the-rotor-group-via-4x4-real-matrices.md</code>, <code>articles_maths/from-the-rotor-to-the-spin-of-the-rotor.md</code>, <code>articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.md</code>, <code>articles_maths/the-carriers-the-representation-the-spin-and-the-closure.md</code>, <code>articles_maths/the-spin-half-bispinor-spaces.md</code>, <code>articles_maths/the-spin-half-bispinor-spaces-and-n-norm-regularity.md</code>, <code>articles_maths/the-spin-half-bispinor-spaces-and-spectral-regularity.md</code>, <code>articles_maths/the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity.md</code>, <code>articles_maths/the-spin-one-anti-hermitian-subspace.md</code>, <code>articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.md</code>, <code>articles_maths/the-spin-one-anti-hermitian-subspace-and-spectral-regularity.md</code>, <code>articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.md</code></p>
 <h2 id="7-the-matrix-models-of-the-operators">7. The Matrix Models of the Operators</h2>
 <p>$$
 L_{\mathrm{axf}}(\tilde Q)=\begin{pmatrix}Q_t&-Q_x&-Q_y&-Q_z\\Q_x&Q_t&-Q_z&Q_y\\Q_y&Q_z&Q_t&-Q_x\\Q_z&-Q_y&Q_x&Q_t\end{pmatrix},\qquad
@@ -188,6 +194,7 @@ F=\sum_{k=1}^{4}\rho_k\,\mathcal P_{\tilde U_k,\tilde V_k},\qquad \rho_1\ge\rho_
 $$</p>
 <p>with $\mathcal P$ the rank-one operators built from the <em>positive</em> form $H$.</p>
 <p><strong>The non-trivial claim.</strong> The SVD exists because $H$ is positive definite — and $H$ is the only one of the four forms that is. So the SVD is the one operator decomposition that <em>cannot</em> be moved to the Krein form: on $\mathrm{Kr}$ the singular values can vanish without the operator doing so.</p>
+<p><strong>Source.</strong> <code>articles_maths/m4c-axis-free-representation-operators.md</code>, <code>articles_maths/m4c-pauli-representation-operators.md</code>, <code>articles_maths/m2c-pauli-representation-operators.md</code>, <code>articles_maths/the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.md</code></p>
 <h2 id="summary">Summary</h2>
 <p><strong>The block in six formulas.</strong></p>
 <p>$$

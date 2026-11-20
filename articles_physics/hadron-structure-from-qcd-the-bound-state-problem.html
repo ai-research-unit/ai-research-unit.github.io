@@ -76,11 +76,11 @@
 <p><strong>The claim, in four parts.</strong></p>
 <ul>
 <li><strong>The mass is not a sum of masses.</strong> The current masses of the two up quarks and the down quark in the proton total $9.0$ MeV. The proton weighs $938.3$ MeV. The difference is not a correction; it is the whole phenomenon, and no accounting in terms of the Lagrangian's parameters reaches it.</li>
-<li><strong>The mass is the trace anomaly.</strong> A classical theory with no dimensionful parameter has a traceless energy–momentum tensor. The quantum theory does not: the trace is proportional to the beta function, and the proton's mass is the matrix element of that trace in the proton state. The coefficient that makes the coupling run is the coefficient that makes the proton heavy.</li>
+<li><strong>The mass is the conformal anomaly.</strong> A classical theory with no dimensionful parameter has a traceless energy–momentum tensor. The quantum theory does not: the trace is proportional to the beta function, and the proton's mass is the matrix element of that trace in the proton state. The coefficient that makes the coupling run is the coefficient that makes the proton heavy.</li>
 <li><strong>The mass is therefore non-perturbative in a precise sense.</strong> $\Lambda_{\mathrm{QCD}}$ depends on the coupling as $e^{-2\pi/b_0\alpha_s}$, which has an essential singularity at $\alpha_s=0$. No finite order, and no sum of finitely many orders, can produce it. This is why an article about the bound-state problem cannot be an article about Feynman diagrams.</li>
 <li><strong>What "the spin of the proton" means is a decomposition, not a fact.</strong> $\tfrac12=\tfrac12\delta\Sigma+L_q+J_g$, and the measured $\delta\Sigma$ is about $0.32$, so two thirds of the proton's spin is not carried by quark spin. That is a measurement, not a paradox, and the article states it as one.</li>
 </ul>
-<p><strong>The order.</strong> The counting problem, then the trace anomaly and the decomposition of the mass, then the non-analyticity, then the chiral limit, then the routes to the number and which of them predict, then how the lattice computation works, then the spin decomposition, then the Bjorken sum rule as the spin analogue of the previous article's coupling determination, then what "solving" would mean, then the ledger.</p>
+<p><strong>The order.</strong> The counting problem, then the conformal anomaly and the decomposition of the mass, then the non-analyticity, then the chiral limit, then the routes to the number and which of them predict, then how the lattice computation works, then the spin decomposition, then the Bjorken sum rule as the spin analogue of the previous article's coupling determination, then what "solving" would mean, then the ledger.</p>
 <h2 id="the-counting-problem">The Counting Problem</h2>
 <p><strong>The arithmetic that fails.</strong> Take the quark content $uud$ and add the current masses, $\overline{\mathrm{MS}}$ at $2$ GeV:</p>
 <p>$$
@@ -114,7 +114,7 @@ $$</p>
 =-\frac{b_0\alpha_s}{8\pi}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^{a\,\mu\nu}
 +\sum_f m_f\,\bar q_f q_f ,
 $$</p>
-<p>with $b_0=11-\tfrac23N_f$ from <a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">the running article</a>. The first term is the anomaly, and it survives in the chiral limit; the second is the explicit breaking by the quark masses, and it vanishes with them. <a href="the-trace-anomaly-in-biquaternionic-form.html">The trace anomaly article</a> established the framework's reading of the first term — the central scalar coefficient multiplying the curvature invariant, distinguished there from the phase of the $\theta$ term.</p>
+<p>with $b_0=11-\tfrac23N_f$ from <a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">the running article</a>. The first term is the anomaly, and it survives in the chiral limit; the second is the explicit breaking by the quark masses, and it vanishes with them. <a href="the-conformal-anomaly-in-biquaternionic-form.html">The conformal anomaly article</a> established the framework's reading of the first term — the central scalar coefficient multiplying the curvature invariant, distinguished there from the phase of the $\theta$ term.</p>
 <p><strong>The mass as a matrix element.</strong> In the standard relativistic normalisation,</p>
 <p>$$
 m_p=\frac{1}{2m_p}\langle p|\sum_\mu\varepsilon_\mu T_{\mu\mu}|p\rangle ,
@@ -233,7 +233,7 @@ $$</p>
 <p>$$
 m_\pi^2f_\pi^2=-\left(m_u+m_d\right)\langle\bar qq\rangle ,
 $$</p>
-<p>the Gell-Mann–Oakes–Renner relation, which <a href="the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">the pion article</a> derives from the chiral Lagrangian in the corpus's variables. With that article's inputs, $m_\pi=139.6$ MeV, $f_\pi=92.1$ MeV and $m_u+m_d=7.0$ MeV — the illustrative value the pion article uses, a little above the $6.83$ that the $\overline{\mathrm{MS}}$ masses of the first section sum to — it gives $B_0=2.783$ GeV and</p>
+<p>the Gell-Mann–Oakes–Renner relation, which <a href="the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html">the pion article</a> derives from the chiral Lagrangian in the corpus's variables. With that article's inputs, $m_\pi=139.6$ MeV, $f_\pi=92.1$ MeV and $m_u+m_d=7.0$ MeV — the illustrative value the pion article uses, a little above the $6.83$ that the $\overline{\mathrm{MS}}$ masses of the first section sum to — it gives $B_0=2.783$ GeV and</p>
 <p>$$
 \left(-\langle\bar qq\rangle\right)^{1/3}=286.8\ \mathrm{MeV},
 $$</p>
@@ -466,7 +466,7 @@ $$</p>
 <tr>
 <td>Structural</td>
 <td>The decomposition into terms, each computable or measurable</td>
-<td><strong>Achieved</strong>: the trace anomaly decomposition</td>
+<td><strong>Achieved</strong>: the conformal anomaly decomposition</td>
 </tr>
 <tr>
 <td>Analytic</td>
@@ -480,7 +480,7 @@ $$</p>
 <p><strong>The one structural question the decomposition raises.</strong> The anomaly's matrix element $\langle p|G^2|p\rangle$ is a property of the proton state, and the proton state is a solution of the theory. So the decomposition is exact and not yet an explanation: it says the mass is the gluon energy, and it does not say why the gluon energy has the value it does. That gap is where the lattice does its work, and it is honest to call it a gap.</p>
 <h2 id="what-the-framework-supplies">What the Framework Supplies</h2>
 <p><strong>Declared, item by item.</strong> The framework's contribution to this article is representation, not derivation, and the boundary is stated before the list.</p>
-<p><strong>What it supplies.</strong> The proton as an effective spin-$\tfrac12$ field of $\mathbb{B}$, established in <a href="the-proton-in-biquaternionic-form.html">The Proton</a> and <a href="the-neutron-in-biquaternionic-form.html">The Neutron</a>: a Dirac field whose charge operator and magnetic moment are computed, and whose compositeness is absorbed into imported parameters. The chiral condensate as an order parameter with a gap equation and a critical coupling, in <a href="the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">the condensate article</a>. The trace anomaly as a central scalar coefficient of the determinant, in <a href="the-trace-anomaly-in-biquaternionic-form.html">the trace anomaly article</a>. The group manifold on which a winding number lives, in <a href="the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html">the Skyrme article</a>. And the lattice formulation itself, in <a href="lattice-gauge-theory-and-the-biquaternion-path-integral.html">the lattice article</a>, which is where the numerical route of this article is set out.</p>
+<p><strong>What it supplies.</strong> The proton as an effective spin-$\tfrac12$ field of $\mathbb{B}$, established in <a href="the-proton-in-biquaternionic-form.html">The Proton</a> and <a href="the-neutron-in-biquaternionic-form.html">The Neutron</a>: a Dirac field whose charge operator and magnetic moment are computed, and whose compositeness is absorbed into imported parameters. The chiral condensate as an order parameter with a gap equation and a critical coupling, in <a href="the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">the condensate article</a>. The conformal anomaly as a central scalar coefficient of the determinant, in <a href="the-conformal-anomaly-in-biquaternionic-form.html">the conformal anomaly article</a>. The group manifold on which a winding number lives, in <a href="the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html">the Skyrme article</a>. And the lattice formulation itself, in <a href="lattice-gauge-theory-and-the-biquaternion-path-integral.html">the lattice article</a>, which is where the numerical route of this article is set out.</p>
 <p><strong>What it does not supply, stated as a declaration.</strong> No colour triplet, so no quarks in the algebraic sense. No gluon. No Wilson loop, no area law, no string tension. No many-body bound-state formalism. No measure on which $\int d^3p/2E$ is an algebraic operation. The bound-state problem of this article is therefore entirely standard physics, transcribed into the corpus's notation, and the framework's role is to say what it can represent and to say so plainly.</p>
 <p><strong>The ledger.</strong></p>
 <div class="table-scroll"><table>
@@ -501,7 +501,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\sum_\mu\varepsilon_\mu T_{\mu\mu}=\frac{\beta}{2g}G^2+\sum m_f\bar q_fq_f$</td>
-<td><strong>Imported.</strong> The anomaly's framework reading is in the trace-anomaly article</td>
+<td><strong>Imported.</strong> The anomaly's framework reading is in the conformal-anomaly article</td>
 </tr>
 <tr>
 <td>$m_p=\langle p\vert\sum_\mu\varepsilon_\mu T_{\mu\mu}\vert p\rangle/(2m_p)$</td>
@@ -662,17 +662,17 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">Asymptotic Freedom and the Running of the Strong Coupling</a>. $b_0$, dimensional transmutation, the trace anomaly's first appearance, and where perturbation theory dies.</li>
-<li><a href="the-trace-anomaly-in-biquaternionic-form.html">The Trace Anomaly in Biquaternionic Form</a>. The central scalar coefficient and its determinant reading.</li>
+<li><a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html">Asymptotic Freedom and the Running of the Strong Coupling</a>. $b_0$, dimensional transmutation, the conformal anomaly's first appearance, and where perturbation theory dies.</li>
+<li><a href="the-conformal-anomaly-in-biquaternionic-form.html">The Conformal Anomaly in Biquaternionic Form</a>. The central scalar coefficient and its determinant reading.</li>
 <li><a href="the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html">The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</a>. The order parameter, the gap equation, the critical coupling.</li>
-<li><a href="the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html">The Pion and the Chiral Lagrangian in Biquaternionic Form</a>. Gell-Mann–Oakes–Renner and the numerical check of the condensate.</li>
+<li><a href="the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html">The Chiral Theory and the Lagrangian: The Pion and the Decay Constant</a>. Gell-Mann–Oakes–Renner and the numerical check of the condensate.</li>
 <li><a href="the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a>. The effective field, the charge operator, and the compositeness the framework does not represent.</li>
 <li><a href="the-neutron-in-biquaternionic-form.html">The Neutron in Biquaternionic Form</a>. Neutrality, the magnetic moment, and the accounting.</li>
 <li><a href="the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html">The Skyrme Model and the Topological Baryon in Biquaternionic Form</a>. The soliton route and its $30\%$ truncation error.</li>
 <li><a href="lattice-gauge-theory-and-the-biquaternion-path-integral.html">Lattice Gauge Theory and the Biquaternion Path Integral</a>. The formulation behind the numerical route.</li>
 <li><a href="the-parton-model-and-deep-inelastic-scattering.html">The Parton Model and Deep Inelastic Scattering</a>. The Gross–Llewellyn Smith sum rule, whose spin analogue is the Bjorken rule here.</li>
 <li><a href="jets-the-qcd-cross-section-and-the-infrared-structure.html">Jets, the QCD Cross Section and the Infrared Structure</a>. $\alpha_s$ from event shapes at the $Z$, and the resummation the moments do not need.</li>
-<li><a href="the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html">The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules</a>. The Lagrangian whose trace is the anomaly.</li>
+<li><a href="quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html">Quantum Chromodynamics and the Lagrangian: The Triplet, the Octet and the Feynman Rules</a>. The Lagrangian whose trace is the anomaly.</li>
 <li><a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$</a>. The bound behind every "not available" row of the ledger.</li>
 </ul>
       </div>
