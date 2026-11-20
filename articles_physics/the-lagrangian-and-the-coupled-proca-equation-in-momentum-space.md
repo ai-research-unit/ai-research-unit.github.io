@@ -90,6 +90,20 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
+### Zero, Pole and the On-Shell Action
+
+**The form's kernel, and why it is not the same statement as in the scalar case.** The coupled Proca mode action is $\mathcal F+\mathcal M$ with $\mathcal F=\tfrac12[\pi A]^{2}$ and $\mathcal M=\tfrac12k_m^{2}A^{\dagger}A$, and $\pi_\mu=\hbar k_\mu-qA_\mu$. Its stationarity is the coupled symbol, so the kernel of the form is the symbol again; what differs from the scalar case is that **the mass term makes the form positive on the transverse directions and indefinite on the longitudinal one**, so the vanishing of the form is one condition with a different character on each subspace.
+
+**Zero and pole.** The propagator at the wave number is the form's inverse, and the inverse fails exactly where the form is singular. **For the Proca field the singularity is at the mass shell and nowhere else**, because the mass term removes the longitudinal degeneracy that the massless form has: the determinant is $k_m^{2}$ times the transverse determinant, so the only zeros are the two mass-shell branches. That is the precise content of the article's observation that the two terms have different algebraic characters.
+
+**The on-shell action vanishes, and here that is a stronger statement.** On a solution the amplitude is a kernel vector, so $\mathcal F+\mathcal M=0$; but on shell $\mathcal F=-\mathcal M$ term by term, because the mass term is what the gradient term contributes at the pole. **The mode action is zero because the two halves cancel, not because each is zero**, and the cancellation is the Proca field's own signature.
+
+**What the coupling moves.** At a constant connection the shift $\pi_\mu=\hbar k_\mu-qA_\mu$ moves the zero exactly as in the scalar case: the mass-shell locus is translated, not deformed. **The mass does not move**, which is why the coupled article's section on the charge and the energy says that the charge has no mass and the energy has mass-squared.
+
+**What the section does not claim.** It does not claim that a zero at negative frequency is a negative energy. The transform's two branches are the article's Legendre section, and the sign distinction belongs there. **Zero and pole are statements about the propagator; the branch is a statement about the transform.**
+
+**One consequence worth naming.** Because the determinant carries $k_m^{2}$ as a factor, the longitudinal mode's pole is at a fixed coefficient and not at a running one. **The longitudinal coefficient is the mass alone**, and the article's measurement of it — $0.245$ at $k_m=0.7$ and $0.045$ at $k_m=0.3$, at every frequency in the range — is a numerical restatement of that factor.
+
 ## The Constraints the Action Imposes: The Constraint Is a Determination
 
 **The parent's coupled reading of the constraint is a determination and not a residue, and frequency space makes the determination a division.** On the coupled carrier the mass term does not break the gauge symmetry, so the free article's "the mass breaks it" reading is unavailable; what remains is that the equation's longitudinal content determines the temporal amplitude from the spatial ones:
@@ -158,20 +172,6 @@ the first because $e^{-i\alpha}e^{i\alpha}=1$ and the second because the two fac
 **The consequence for the action is that the phase is a symmetry of one term and not of the other.** The mass term alone would give a conserved charge for every constant $\alpha$; the sum gives one only at $\alpha\in\{0,\pi\}$, which is no continuous symmetry at all. **So the coupled action's phase symmetry is not a symmetry of the action as written**, and the parent's record of the field term's exact non-invariance is the same statement.
 
 **What an invariant field term would need is a sesquilinear structure, and the algebra's single field strength does not supply one.** A sesquilinear term would pair $\tilde F$ with its conjugate, which is the parent's $\mathrm{Re}\,\mathrm{Sc}(\tilde F\overline{\tilde F'})$, and in frequency space that pairing needs a second field strength to conjugate. **The missing second half is the parent's twelve-minus-six**, and the article's display of $e^{2i\alpha}$ is the arithmetic of the same deficit.
-
-## Zero, Pole and the On-Shell Action
-
-**The form's kernel, and why it is not the same statement as in the scalar case.** The coupled Proca mode action is $\mathcal F+\mathcal M$ with $\mathcal F=\tfrac12[\pi A]^{2}$ and $\mathcal M=\tfrac12k_m^{2}A^{\dagger}A$, and $\pi_\mu=\hbar k_\mu-qA_\mu$. Its stationarity is the coupled symbol, so the kernel of the form is the symbol again; what differs from the scalar case is that **the mass term makes the form positive on the transverse directions and indefinite on the longitudinal one**, so the vanishing of the form is one condition with a different character on each subspace.
-
-**Zero and pole.** The propagator at the wave number is the form's inverse, and the inverse fails exactly where the form is singular. **For the Proca field the singularity is at the mass shell and nowhere else**, because the mass term removes the longitudinal degeneracy that the massless form has: the determinant is $k_m^{2}$ times the transverse determinant, so the only zeros are the two mass-shell branches. That is the precise content of the article's observation that the two terms have different algebraic characters.
-
-**The on-shell action vanishes, and here that is a stronger statement.** On a solution the amplitude is a kernel vector, so $\mathcal F+\mathcal M=0$; but on shell $\mathcal F=-\mathcal M$ term by term, because the mass term is what the gradient term contributes at the pole. **The mode action is zero because the two halves cancel, not because each is zero**, and the cancellation is the Proca field's own signature.
-
-**What the coupling moves.** At a constant connection the shift $\pi_\mu=\hbar k_\mu-qA_\mu$ moves the zero exactly as in the scalar case: the mass-shell locus is translated, not deformed. **The mass does not move**, which is why the coupled article's section on the charge and the energy says that the charge has no mass and the energy has mass-squared.
-
-**What the section does not claim.** It does not claim that a zero at negative frequency is a negative energy. The transform's two branches are the article's Legendre section, and the sign distinction belongs there. **Zero and pole are statements about the propagator; the branch is a statement about the transform.**
-
-**One consequence worth naming.** Because the determinant carries $k_m^{2}$ as a factor, the longitudinal mode's pole is at a fixed coefficient and not at a running one. **The longitudinal coefficient is the mass alone**, and the article's measurement of it — $0.245$ at $k_m=0.7$ and $0.045$ at $k_m=0.3$, at every frequency in the range — is a numerical restatement of that factor.
 
 ## The Noether Currents: The Two Conserved Quantities Per Mode
 

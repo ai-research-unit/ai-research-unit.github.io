@@ -97,6 +97,20 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
+### Zero, Pole and the On-Shell Action
+
+**At a fixed frequency the symbol is a matrix, and its zero is a condition on the wave number.** The coupled Schrödinger mode action is $\langle\tilde X,\sigma_{\mathrm{gco}}(\omega,\vec k)\tilde X\rangle$, and the symbol depends on $\omega$ and $\vec k$ through the shifted arguments only. **The form's kernel is the equation at that frequency**, so the zero of the symbol is the dispersion condition: the wave number at which a fixed frequency propagates.
+
+**Zero and pole are one locus.** The resolvent at the frequency is the form's inverse, and it fails exactly where the symbol is singular. **The pole of the resolvent is the zero of the symbol**, and the article states the identity once because every later statement about the spectrum is a statement about it.
+
+**Why the coupling only translates.** The shift is $\omega\to\omega-q\varphi$ in the temporal slot and $\vec k\to\vec k-q\vec A$ in the spatial ones, so the zero is moved and not deformed. **The coupled dispersion is the free dispersion written in the shifted variables**, and that is the whole of the coupling's effect on the spectrum. The section on the reality of the action already established that the shift is real in this setting, which is why the moved zero stays on the real frequency axis.
+
+**The on-shell action.** On a solution the amplitude is a kernel vector, so the quadratic form vanishes and the mode action is zero. **The mode action is zero on shell because the action is the form**, and the statement is the same one the free article makes, with the translated symbol in place of the free one.
+
+**What is not claimed.** The section does not claim that every zero is a bound state or that the spectrum is bounded below. **A zero of the form is a propagation condition and nothing more**, and the article's limits section is where the two settings — the fixed-frequency reading and the evolution reading — are separated.
+
+**One difference from the scalar case, stated once.** The Schrödinger symbol is first order in the frequency, so its zero is a single condition and not a quadratic one. **The pole is simple**, and a simple pole is what makes the residue — the density per mode — a first derivative rather than a ratio of two roots. That is the reason the free article's density is $\hbar$ times the norm and not a difference of two branches.
+
 ## The Constraints the Action Imposes: Gauge Invariance of the Symbol
 
 **The two shifts.** Under a gauge transformation $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$, the connection moves as $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so its frequency and wave vector move as
@@ -124,20 +138,6 @@ $$
 **The hand check.** Write the free symbol's defining identity, $\sigma(\omega)\tilde X=\bigl(\hbar(\omega-\omega_0)-\tilde H_\Psi\bigr)\tilde X$; replacing $\tilde H_\Psi$ by $\tilde H_\Psi-ϙ\tilde A$ shifts the zero of the frequency by $ϙ\tilde A/\hbar$ and leaves the slope in $\omega$ unchanged. The slope is the article's *Legendre* result, and its invariance under the coupling is the statement that the coupling is not a velocity.
 
 **What the shift cannot do.** It cannot change the reality of the symbol, because $ϙ\tilde A$ is real and adding a real element to a Hermitian one keeps it Hermitian. So the coupled article's reality statements are the free ones, and the gauge invariance of the symbol is the statement that a shift by a gradient moves the zero and not the spectrum.
-
-## Zero, Pole and the On-Shell Action
-
-**At a fixed frequency the symbol is a matrix, and its zero is a condition on the wave number.** The coupled Schrödinger mode action is $\langle\tilde X,\sigma_{\mathrm{gco}}(\omega,\vec k)\tilde X\rangle$, and the symbol depends on $\omega$ and $\vec k$ through the shifted arguments only. **The form's kernel is the equation at that frequency**, so the zero of the symbol is the dispersion condition: the wave number at which a fixed frequency propagates.
-
-**Zero and pole are one locus.** The resolvent at the frequency is the form's inverse, and it fails exactly where the symbol is singular. **The pole of the resolvent is the zero of the symbol**, and the article states the identity once because every later statement about the spectrum is a statement about it.
-
-**Why the coupling only translates.** The shift is $\omega\to\omega-q\varphi$ in the temporal slot and $\vec k\to\vec k-q\vec A$ in the spatial ones, so the zero is moved and not deformed. **The coupled dispersion is the free dispersion written in the shifted variables**, and that is the whole of the coupling's effect on the spectrum. The section on the reality of the action already established that the shift is real in this setting, which is why the moved zero stays on the real frequency axis.
-
-**The on-shell action.** On a solution the amplitude is a kernel vector, so the quadratic form vanishes and the mode action is zero. **The mode action is zero on shell because the action is the form**, and the statement is the same one the free article makes, with the translated symbol in place of the free one.
-
-**What is not claimed.** The section does not claim that every zero is a bound state or that the spectrum is bounded below. **A zero of the form is a propagation condition and nothing more**, and the article's limits section is where the two settings — the fixed-frequency reading and the evolution reading — are separated.
-
-**One difference from the scalar case, stated once.** The Schrödinger symbol is first order in the frequency, so its zero is a single condition and not a quadratic one. **The pole is simple**, and a simple pole is what makes the residue — the density per mode — a first derivative rather than a ratio of two roots. That is the reason the free article's density is $\hbar$ times the norm and not a difference of two branches.
 
 ## The Noether Currents: The Charge Per Mode
 

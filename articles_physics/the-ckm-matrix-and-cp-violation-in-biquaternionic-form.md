@@ -49,6 +49,8 @@ where $\vec e_{\nu(\mu)}$ is the unit the frame pairs with $x_\mu$ (*Frame and M
 
 **The lepton sector, in parallel.** The same structure applies to the leptons, with the mixing matrix of the lepton sector playing the role of $V$ and the neutrino mass operators replacing the up-type quarks. The framework's structure on the labels is identical; the values differ because the mass matrices differ, and the two mixings are independent inputs. The companion article on the neutrino treats the lepton mixing; this article treats the quark sector and the framework features common to both.
 
+**One sentence on the rotor, and it is a negative one.** The mixing is a unitary on generation space, and generation space is not a carrier of the rotor: the compact factor acts on the spin index, identically on every generation. So the mixing matrix is **neutral under the rotor**, and nothing in this article's computation changes when the group is written as $\mathrm{Rot}$ instead of $SU(2)_L$. The statement is worth recording because it locates the article: whatever mixes generations is not the gauge group, and the framework's account of it begins where this article ends.
+
 ## The Parameter Count and the CP Phase
 
 **Counting the parameters.** A general $N_g\times N_g$ $*$-unitary matrix has $N_g^2$ real parameters. Of these, $N_g$ are removed by rephasing the $N_g$ up-type quarks and $N_g$ by rephasing the $N_g$ down-type quarks, except that one overall phase is unobservable, leaving

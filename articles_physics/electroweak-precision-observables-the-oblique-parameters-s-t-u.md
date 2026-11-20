@@ -118,6 +118,14 @@ $$
 
 each side being written in the mass eigenstates. At $q^2=0$ the photon pieces vanish and the relation reads $\Pi_{WW}(0)=c_W^2\Pi_{ZZ}(0)$, which is $M_W^2=M_Z^2c_W^2$. **One relation, evaluated and differentiated, produces the zeros of $T$ and $U$.**
 
+**The same relation in the framework's carriers.** The multiplet structure behind the relation is the rotor's display: the left-handed fields are carried by a minimal left ideal, the right-handed by the conjugate, and the hypercharge is a circle inside the right action. The custodial group is then the **diagonal rotor** acting by the Hermitian pair, which is the spatial rotation, so the three oblique parameters have a one-line reading and no formula changes:
+
+- $T=0$ when the vacuum is fixed by the diagonal rotor — that is, when the vacuum is rotation-invariant, which is the framework's statement of custodial symmetry.
+- $U=0$ with $T$ when no further carrier splits off at the same order, since the rotor's tower is complete at spin one.
+- $S$ measures how far the vacuum's carrier is from being the trivial one, which is why it is the one parameter that does not vanish for a degenerate heavy sector.
+
+None of this computes a number. It names the objects whose failure to be symmetric the three parameters measure, and it is why the count is three: the rotor has three carriers, one per spin.
+
 **The three parameters as three ways of breaking it.**
 
 | Parameter | Which part of the relation fails |

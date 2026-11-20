@@ -106,6 +106,20 @@ an identity for arbitrary $ϙ_L,ϙ_R$.
 
 **The same fact read positively.** Restricted to the rotation group, the left action is the **spin representation** on a minimal left ideal — [The One-Sided Action and the Spin Representation](../articles_maths/the-one-sided-action-and-the-spin-representation.html) states it and proves it. So the framework does have an irreducible carrier for spin-half matter, and what it lacks is a second one, or a second action on the same one, that would let a non-abelian group see one value and not the other. [Representation Is a Function of Spin](representation-is-a-function-of-spin.html) states the general form: representation is a function of spin, so the spinor module comes with the spinor's spin and not with a gauge label attached.
 
+**A third reading, and the shortest one: one phase and its inverse.** Write the left action of a rotor on the ideal in the Peirce basis of an axis $\vec u_{\mathrm r}$. A unit rotor $\tilde u=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec u$ acts there as
+
+$$
+L_{\tilde u}\big|_{S_+(\vec u_{\mathrm r})}=\operatorname{diag}\bigl(e^{-i\varphi/2},\,e^{+i\varphi/2}\bigr),
+$$
+
+a single rotation of the plane whose two entries are one phase and the reciprocal of that phase. The determinant is one, the trace is $2\cos\tfrac{\varphi}{2}$, and the two numbers a chiral theory would want to be independent — the charges of the two values — are here the same number with opposite signs. A chiral action needs instead
+
+$$
+\tilde\Xi\ \longmapsto\ \Lambda\tilde\Xi_L+\tilde\Xi_R,\qquad \Lambda=\exp\Bigl(\tfrac{i}{\hbar}\textstyle\sum_a\Gamma_aT_a\Bigr),
+$$
+
+in which $\Lambda$ reaches one value and not the other. The missing object is therefore not a matrix and not a normalisation: it is a **second slot**. Left multiplication has one slot, and a connection that carries two unrelated slots is not $\mathbb{B}$-valued — it is a pair of elements with no relation between them, which is the two-sided operator $\mathrm{Sd}$ only when the dagger ties the pair, and the tie is what removes the independence again.
+
 **What would lift it.** A carrier that is not a left ideal — a two-slot structure, or an enlarged algebra on which the left action and the letter are independent — which is the route named in *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*. Nothing smaller lifts it: on a left ideal the letter is a right-multiplication eigenvalue, and left multiplications commute with right multiplications up to the letter they preserve.
 
 ## What the Centre Supplies: A Vector-Like Abelian Sector

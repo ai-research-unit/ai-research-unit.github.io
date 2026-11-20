@@ -221,6 +221,16 @@ Three properties make the Stueckelberg mechanism the framework's natural route t
 
 ### What Does Not Carry Over: The Non-Abelian Case
 
+**The missing object, in rotor terms.** A Stueckelberg field is a gauge transformation promoted to a dynamical field. For the abelian factor the transformation is a phase, and a phase is exactly what the centre supplies, which is why the construction above closes with no extra structure. For the compact factor the transformation is a rotor, so the field would be $\tilde U(x)\in\mathrm{Rot}$ and the invariant one-form would be its Maurer–Cartan form,
+
+$$
+\tilde U^{*}\partial_\mu\tilde U\ \in\ \mathfrak{su}(2)=\mathfrak{k},
+$$
+
+since $\tilde U^{*}=\tilde U^{-1}$ on the unitary slice. Two facts make this a well-posed object rather than a formal expression: the form takes values in the Lie algebra, where the bracket is closed, and its pointwise length is defined because the rotor group is compact — the scalar part $\langle\cdot\rangle_{\natural}$ is negative definite on $\mathfrak{k}$, so $-\langle\tilde U^{*}\partial_\mu\tilde U\rangle_{\natural}$ is a positive number. The form alone is not invariant, because a gauge transformation shifts it by an adjoint term; the mass term therefore uses the covariantized combination $\tilde U^{*}D_\mu\tilde U$ with $D_\mu\tilde U=\partial_\mu\tilde U+i\kappa\mathcal A_\mu\tilde U$, and $-\langle\tilde U^{*}D_\mu\tilde U\rangle_{\natural}$ is invariant at each point. That is the non-abelian counterpart of the combination $\tilde A_{\Phi,\mathrm u}$ computed above.
+
+**Why the framework cannot supply it.** A field in $\mathrm{Rot}$ is a field in the group, not an element of the algebra, and the framework's own scalar is central: it reaches the circle and no more. So the abelian Stueckelberg field of this article is the shadow of the rotor-valued one, taken along the centre. That is a statement of the shape of the gap and not a construction of the non-abelian case, which this article does not attempt.
+
 The mechanism as constructed is abelian. Its essential ingredient is that the shift is a single function and the field strength $F_{\mu\nu}$ is invariant by itself; in the non-abelian theory the field strength is not invariant but transforms in the adjoint, $F_{2,\mu\nu}=UF_{\mu\nu}U^{-1}$, and a scalar that restores the mass term must transform in the adjoint as well, so that $D_\mu\xi$ and $F_{\mu\nu}$ sit in the same representation. The Stueckelberg mechanism for a non-abelian group therefore requires a scalar in the **adjoint** representation, and the non-linear sigma model of the Goldstone fields. The framework's central scalar is a singlet of the compact factor; its covariant derivative is the ordinary derivative and contains no adjoint action, so it cannot supply the invariant combination for the non-abelian directions. The same limitation that prevents the central scalar from breaking the non-abelian group in the Higgs mechanism prevents it from restoring the non-abelian mass term here. The framework's Stueckelberg mechanism is an abelian mechanism, and it reaches the central direction and no other.
 
 ## What the Algebra Supplies and What It Imports

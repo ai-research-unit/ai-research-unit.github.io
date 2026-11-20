@@ -185,7 +185,13 @@ $$
 
 For an abelian factor this reduces to $\sum Y^3=0$ over the charged left-handed content, with the right-handed sign. For a simple factor it reduces to the vanishing of the sum of the cubic Casimirs over the spectrum, $\sum A(R)=0$: trivial when the Casimir itself vanishes, as it does for $SU(2)$, and a genuine condition when it does not, as for $SU(3)$, where $A(3)=1$ and $A(\bar3)=-1$ in the usual normalisation. Both are standard.
 
-**The $\mathrm{SU}(2)$ factor vanishes identically.** For $SU(2)$ in any representation the symmetrised trace of three generators is zero, because there is no cubic Casimir. For the doublet the proof is one line, and it uses only the algebra of the generators: the anticommutator of two of them is central,
+**The $\mathrm{SU}(2)$ factor vanishes identically.** For $SU(2)$ in any representation the symmetrised trace of three generators is zero, because there is no cubic Casimir.
+
+**The same vanishing without a trace, on the generators themselves.** The generators are $\vec e_a$, and the coefficient the anomaly needs is the scalar part of a product of three of them. Two evaluations give the whole answer. When two indices agree the product reduces to $-\vec e_c$ times a squared length, so the scalar part is zero. When the three are distinct the product is $\pm e_t$, with the sign given by the parity of the permutation: $\vec e_x\vec e_y\vec e_z=-e_t$ and $\vec e_x\vec e_z\vec e_y=+e_t$. So
+$$
+\mathrm{Sc}(\vec e_a\vec e_b\vec e_c)=-\varepsilon_{abc},
+$$
+which is **totally antisymmetric**. A totally antisymmetric symbol summed over all six permutations gives zero, so the symmetrised coefficient vanishes, and it vanishes for the same reason in every representation — the statement is about the algebra and not about a module. Contrast $\mathrm{SU}(3)$: there the third-order invariant survives symmetrisation because the algebra admits a symmetric $\mathrm{d}_{abc}$, and it is the absence of that symmetric invariant in $\mathbb{H}$ — the scalar part is the alternating one instead — that makes the compact factor safe. For the doublet the proof is one line, and it uses only the algebra of the generators: the anticommutator of two of them is central,
 
 $$
 \{T_b,T_c\}=\tfrac12\delta_{bc}\,\mathrm I ,

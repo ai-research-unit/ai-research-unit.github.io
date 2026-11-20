@@ -65,6 +65,17 @@ $$
 \mathrm{U}(2) = \mathrm{U}(1)\oplus\mathrm{SU}(2),\quad \dim_\mathbb{R} = 4\;}.
 $$
 
+**The object behind the symbol.** The compact factor named $\mathrm{SU}(2)$ above is the **rotor group**, the unit real quaternions
+$$
+\mathrm{Rot}=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=S^3=\mathrm{Spin}(3),
+$$
+of real dimension three; $\mathrm{SU}(2)$ is what it looks like once a complex structure on $\mathbb{H}$ has been chosen, and the choice of that structure is a choice of axis. Two things follow, and the whole of the chiral wall is in them.
+
+- **The rotor acts on its carrier on one side.** A rotor can turn a frame, which is the Hermitian pair $\mathrm{Sd}_{\tilde u}(\vec v)=\tilde u\vec v\tilde u^{*}$ on the vector part, or it can carry a module, which is left multiplication $L_{\tilde u}$. A matter field is carried and not turned, so its carrier is a left module and the action is $L$ alone.
+- **Left multiplication gives both chiral letters the same rotor.** The letter is a right-multiplication eigenvalue, and left multiplications commute with right multiplications, so $(a\tilde\Xi)_L=a\tilde\Xi_L$ and $(a\tilde\Xi)_R=a\tilde\Xi_R$ for every element $a$. A group that cannot read the letter cannot be told to act on one letter only.
+
+The notation and the operator names are fixed once, in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html), and the two facts above are its *Two carriers, one angle* and its sector rules.
+
 This is the read-list article's central algebraic result, and it is the reason the electroweak question can be posed at all: the compact algebra of dimension four that electroweak theory uses is *already present in the material sector*, not adjoined. What is not present is the way electroweak theory uses it. The gauge group of the construction is the unit real quaternions, $SU(2) = \{\tilde U \in \mathbb{B}_{H} : \tilde U\bar{\tilde U} = e_t\}$, acting on a matter field **by left multiplication**. The connection transforms as
 
 $$

@@ -117,6 +117,8 @@ acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-depen
 
 For the framework's central scalar the field content is the scalar itself and the central gauge field, and the two field-dependent masses are read off from the tree potential and from the Higgs mechanism of the companion article.
 
+**What the loop would sum over, if the breaking were the compact factor's.** The multiplicities in a Coleman–Weinberg coefficient are the dimensions of the carriers that run in the loop, and for the rotor group they are three numbers and no more: the trivial carrier, dimension one, which is the centre; the spinor carrier, dimension two, which is a minimal left ideal; and the adjoint, dimension three, which is the vector part. So a loop over the rotor's own display tower has $1+2+3=6$ real bosonic degrees of freedom per generation of carrier, and the coefficient of the quartic logarithm is fixed by that count rather than chosen. This article does not use the count, because the field content here is the central scalar and the central gauge field — one and two real degrees of freedom — and no non-abelian carrier is broken. The count is recorded because it is the number that a computation on the compact factor would need, and because it shows that the multiplicities are group-theoretic and not free.
+
 - **The two real scalar modes.** With $\rho = \xi^*\xi$ and the potential $\frac{\lambda}{4}(\rho - v_0^2)^2$, the two real components of $\xi$ have the field-dependent masses
 $$
 m_1^2(\rho) = \frac{\lambda}{2}\left(3\rho - v_0^2\right),

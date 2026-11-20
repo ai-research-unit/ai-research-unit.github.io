@@ -78,6 +78,26 @@ which is the block's boxed law. The action's contribution to this display is not
 
 **The count is therefore two and two, with nothing left over.** No multiplier, no subsidiary condition, no constraint surface to reduce. The rung below has the same count and reaches it differently; the rung above loses it.
 
+### The Second Variation: The Gradient Energy Is Indefinite
+
+**The sign of the second term is not uniform, and the reason is the operator's.** With the corpus's conventions the temporal component of a four-gradient carries an $i$, so
+
+$$
+\sum_\mu(\partial_\mu \varrho)^{2}=\sum_j(\partial_jr)^{2}-\bigl(\partial_{r'_t}\varrho\bigr)^{2},
+$$
+
+and the quadratic form is a difference and not a sum. The gradient energy is therefore bounded neither above nor below, and the fluid has no positive-definite energy functional.
+
+**Three consequences, and the block states each of them in another language.**
+
+*The quantum potential changes sign.* $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ with an indefinite $\Box_\Phi$, so a density that varies in time contributes with the opposite sign to one that varies in space. The non-relativistic quantum potential is $\Delta_\Phi$'s and is negative at a maximum of $\varrho$; this one is not sign-definite at all.
+
+*The action cannot see the sign $\varepsilon$.* The block's charged article names the density's indefinite sign as the free article's defect which the coupling moves and does not repair. In the action it is one line: $\varepsilon$ is central and $\varepsilon^{2}=1$, so it cancels in $\tilde\Xi^{*}\tilde\Xi$ and in $\mathcal A_\mu$, and the two branches $\varepsilon=\pm1$ give the same Lagrangian. **The action is blind to the branch and the charge density's sign is what blindness costs.**
+
+*The functional has no ground state, and that is not a defect of the fluid reading.* A field theory with an indefinite quadratic form has no lowest configuration, which is why the relativistic object of this block is a field and not a fluid with a rest state. **The action says this before any quantization**, and the second category's Fock space is where the two signs become particles and antiparticles.
+
+**At the rung below the form is definite and the difference is the whole of the difference between the two rungs.** The Schrödinger fluid's gradient energy is $\frac{\hbar^{2}}{2m}\int(\vec\nabla_\Phi \varrho)^{2}$, a sum of squares, and its quantum potential is a Laplacian's. One operator, one sign, one sheet.
+
 ## The Constraints the Action Imposes: There Is No Subsidiary Condition
 
 **Two fields, two equations, and nothing left over.** The phase's variation gives continuity, the amplitude's gives the energy relation, and the acceleration law is the gradient of the second rather than a third equation. No multiplier appears, no subsidiary condition is imposed, and no constraint surface restricts the variation.
@@ -101,26 +121,6 @@ $$
 which is the acceleration law with the quantum potential as its only force beyond inertia. One differentiation, no new postulate, and the third equation is the second's gradient.
 
 **Why the count matters.** A Lagrangian with two fields and two equations is not over-determined, and a fluid whose acceleration is a consequence of its shell is a fluid with no independent pressure. Both statements are what the family needs in order to say that the scalar fluid at this rung is dust plus a quantum stress.
-
-## The Second Variation: The Gradient Energy Is Indefinite
-
-**The sign of the second term is not uniform, and the reason is the operator's.** With the corpus's conventions the temporal component of a four-gradient carries an $i$, so
-
-$$
-\sum_\mu(\partial_\mu \varrho)^{2}=\sum_j(\partial_jr)^{2}-\bigl(\partial_{r'_t}\varrho\bigr)^{2},
-$$
-
-and the quadratic form is a difference and not a sum. The gradient energy is therefore bounded neither above nor below, and the fluid has no positive-definite energy functional.
-
-**Three consequences, and the block states each of them in another language.**
-
-*The quantum potential changes sign.* $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ with an indefinite $\Box_\Phi$, so a density that varies in time contributes with the opposite sign to one that varies in space. The non-relativistic quantum potential is $\Delta_\Phi$'s and is negative at a maximum of $\varrho$; this one is not sign-definite at all.
-
-*The action cannot see the sign $\varepsilon$.* The block's charged article names the density's indefinite sign as the free article's defect which the coupling moves and does not repair. In the action it is one line: $\varepsilon$ is central and $\varepsilon^{2}=1$, so it cancels in $\tilde\Xi^{*}\tilde\Xi$ and in $\mathcal A_\mu$, and the two branches $\varepsilon=\pm1$ give the same Lagrangian. **The action is blind to the branch and the charge density's sign is what blindness costs.**
-
-*The functional has no ground state, and that is not a defect of the fluid reading.* A field theory with an indefinite quadratic form has no lowest configuration, which is why the relativistic object of this block is a field and not a fluid with a rest state. **The action says this before any quantization**, and the second category's Fock space is where the two signs become particles and antiparticles.
-
-**At the rung below the form is definite and the difference is the whole of the difference between the two rungs.** The Schrödinger fluid's gradient energy is $\frac{\hbar^{2}}{2m}\int(\vec\nabla_\Phi \varrho)^{2}$, a sum of squares, and its quantum potential is a Laplacian's. One operator, one sign, one sheet.
 
 ## The Noether Currents: The Stress as the Translation Current
 

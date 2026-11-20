@@ -113,6 +113,20 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
+### Zero, Pole and the On-Shell Action
+
+**The zero of the symbol is the pole of the propagator.** The mode action's kernel is the symbol, so the propagator at that wave number is the symbol's inverse, and the inverse does not exist exactly where the symbol vanishes. **The zero of the symbol and the pole of the propagator are one locus, read from two sides**, and the article treats them as one object rather than two.
+
+**Why the identification matters here.** The coupled scalar's symbol is the free one with a translated argument, so its zero is the free zero moved by the connection: $k_\mu\to k_\mu-\frac{q}{\hbar}A_\mu$. **The coupling does not create a new zero and does not remove one; it moves the existing one**, and every statement about the spectrum in the coupled theory is the free statement translated.
+
+**The on-shell action.** On a solution the amplitude is a null vector of the symbol, so the quadratic form $\langle\tilde X,\sigma\tilde X\rangle$ is zero. **The mode action vanishes on shell**, and that is not a coincidence: the action is the form, the equation is the kernel, and a kernel vector is annihilated by the form. A reader who expects the on-shell action to equal the energy has imported a non-degenerate Lagrangian from another reading; here the form is the action and its value on a solution is zero.
+
+**Degeneracy and the free case.** Where the symbol has a degenerate zero, two conditions hold at once and the propagator has a double pole. The free case is exactly that, and the article's section says so: **the free symbol's zero is degenerate, and the degeneracy is why the free case carries no information about the coupling.** A single pole in the coupled theory and a double pole in the free one are the same statement about one locus, and the article prefers the second formulation because it survives the translation.
+
+**What the section does not claim.** It does not claim that every zero is a physical mass. A zero at a negative frequency is the other branch, and the article's limits section is where that is separated. **The identification of zero with pole is a statement about the propagator and not about the spectrum**, and the spectrum needs the positivity that the limits section supplies.
+
+**One consequence for the density.** The density per mode is the symbol's derivative in the frequency, so a degenerate zero is also where the density's derivative vanishes. **The three objects — zero, pole and vanishing density — are one locus**, and the article's claim is that they coincide because they are three derivatives of one quadratic form.
+
 ## The Constraints the Action Imposes: The Constraint Is the Vanishing Symbol
 
 **The variation at a mode is algebraic, so the constraint is not a surface in field space.** The mode form $Q$ is a quadratic form in the amplitude, and stationarity forces its bracket to vanish for every $\delta X^{*}$, by the positivity argument the action section records. Nothing is then imposed on the amplitude: where the bracket is invertible the only stationary amplitude is zero, and a zero amplitude is not a restricted configuration but the absence of one.
@@ -130,20 +144,6 @@ the symbol equation the article solves. The passage from the action to the equat
 **The three statements of the invariant agree.** The parity lemma states it slot by slot; the anti-Hermiticity of $\tilde A_\Phi$ states it once; the requirement that the operator's coefficients be real in the $R$-slot basis states it in the language of the functional. **They are one condition written three ways**, and the article states all three because a reader arriving from any of the three directions should meet the same sentence.
 
 **What the invariant does not do is choose between the readings.** A reader who wants the variational principle to select E2 over E1 will not get it from the reality of the symbol, because both are real. **The selection, where there is one, is the action's**, and the action's operator is the squared one — that is the previous section, and it is a different kind of statement.
-
-## Zero, Pole and the On-Shell Action
-
-**The zero of the symbol is the pole of the propagator.** The mode action's kernel is the symbol, so the propagator at that wave number is the symbol's inverse, and the inverse does not exist exactly where the symbol vanishes. **The zero of the symbol and the pole of the propagator are one locus, read from two sides**, and the article treats them as one object rather than two.
-
-**Why the identification matters here.** The coupled scalar's symbol is the free one with a translated argument, so its zero is the free zero moved by the connection: $k_\mu\to k_\mu-\frac{q}{\hbar}A_\mu$. **The coupling does not create a new zero and does not remove one; it moves the existing one**, and every statement about the spectrum in the coupled theory is the free statement translated.
-
-**The on-shell action.** On a solution the amplitude is a null vector of the symbol, so the quadratic form $\langle\tilde X,\sigma\tilde X\rangle$ is zero. **The mode action vanishes on shell**, and that is not a coincidence: the action is the form, the equation is the kernel, and a kernel vector is annihilated by the form. A reader who expects the on-shell action to equal the energy has imported a non-degenerate Lagrangian from another reading; here the form is the action and its value on a solution is zero.
-
-**Degeneracy and the free case.** Where the symbol has a degenerate zero, two conditions hold at once and the propagator has a double pole. The free case is exactly that, and the article's section says so: **the free symbol's zero is degenerate, and the degeneracy is why the free case carries no information about the coupling.** A single pole in the coupled theory and a double pole in the free one are the same statement about one locus, and the article prefers the second formulation because it survives the translation.
-
-**What the section does not claim.** It does not claim that every zero is a physical mass. A zero at a negative frequency is the other branch, and the article's limits section is where that is separated. **The identification of zero with pole is a statement about the propagator and not about the spectrum**, and the spectrum needs the positivity that the limits section supplies.
-
-**One consequence for the density.** The density per mode is the symbol's derivative in the frequency, so a degenerate zero is also where the density's derivative vanishes. **The three objects — zero, pole and vanishing density — are one locus**, and the article's claim is that they coincide because they are three derivatives of one quadratic form.
 
 ## The Noether Currents: The Charge Per Mode
 

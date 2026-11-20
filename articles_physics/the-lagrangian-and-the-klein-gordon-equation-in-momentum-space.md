@@ -121,24 +121,6 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Constraints the Action Imposes: The Constraint Is the Mass Shell
-
-**The action's equation is an eigenvalue problem, and that is where the constraint sits.** In this chart the field equation reads $\bigl(\omega^{2}/c^{2}-k_\Phi^{2}\bigr)\tilde\Xi_0=\tilde M\tilde\Xi_0$, so the operator's symbol acts on the amplitude and the condition for a nonzero amplitude is that the symbol be singular at that momentum. Nothing is imposed on the amplitude itself.
-
-**The singular set is the mass shell.** The eigenvalue $\tilde M$ contributes $k_m^{2}$ on the central part and nothing on the spatial ones, so the singular set is $\omega^{2}/c^{2}-k_\Phi^{2}=k_m^{2}$ on the branch the amplitude occupies: the cone at $k_m=0$ and a two-sheeted surface at finite mass, the two sheets being the two signs of the frequency.
-
-**The mass is the only thing that separates the sheets.** A constant connection translates the frequency and rotates the wave vector and leaves the separation at $2k_m$, which is why the dispersion relation of this article and the polar article's agree after the substitution that takes one chart to the other. **The constraint is therefore one scalar equation on four numbers**, and everything else the action says is about the amplitude.
-
-**What is absent.** No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one momentum cannot see one; no restriction on the amplitude at a singular momentum. The constraint content is one determinant, and the structural consequence's denial is a statement about what that determinant leaves free.
-
-## The Structural Consequence: The Denial That Survives
-
-**The informational sector is not the Fourier dual of the material sector.** Every transform in this article acts on a $\mathbb{B}$-valued function and returns a $\mathbb{B}$-valued function. No step carries a field out of its sector, and no display above identifies a coefficient's sector with a function's sector. The sector statements are statements about one constant element that multiplies, at one wave number or at one event.
-
-**A second denial belongs here because the eigenvalue problem invites the error**: the eigenvalues of $L(\tilde M)$ are complex numbers, and their real or imaginary character is a statement about $\tilde M$'s sector and not about the field's. A field in $\mathbb{B}_\Psi$ and a field in $\mathbb{B}_\Phi$ feel the same matrix, because the matrix is left multiplication on the whole algebra; what differs is only which sector their values occupy, and that is not an eigenvalue.
-
-## Zero, Pole and the On-Shell Action
-
 ### The Tachyon Threshold
 
 **Finding 4.** The lower branch $a-\lvert\vec v\rvert$ is the threshold, and the condition for a non-negative spectrum is one inequality:
@@ -160,6 +142,22 @@ $$
 **This is the parent's conclusion reached in one line.** The parent's §*Does the Second-Order Structure Fit $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$?* argues in position space that the sector split gives two $i$-related copies of the same equation and is therefore not the doubling the equation needs. In momentum space the same statement is a property of a scalar multiple of the identity: an operator proportional to $I$ has one eigenspace, which is the whole space, and the whole space is where the sectors live.
 
 **The thesis of the article is this finding read backwards.** Because the free symbol is central and carries no sector content, every sector statement at Klein–Gordon level must come from the potential. The article's four other findings are the four ways in which it does: the spectrum, the multiplicity, the reality, and the threshold. Remove the potential and all four collapse to one number.
+
+## The Constraints the Action Imposes: The Constraint Is the Mass Shell
+
+**The action's equation is an eigenvalue problem, and that is where the constraint sits.** In this chart the field equation reads $\bigl(\omega^{2}/c^{2}-k_\Phi^{2}\bigr)\tilde\Xi_0=\tilde M\tilde\Xi_0$, so the operator's symbol acts on the amplitude and the condition for a nonzero amplitude is that the symbol be singular at that momentum. Nothing is imposed on the amplitude itself.
+
+**The singular set is the mass shell.** The eigenvalue $\tilde M$ contributes $k_m^{2}$ on the central part and nothing on the spatial ones, so the singular set is $\omega^{2}/c^{2}-k_\Phi^{2}=k_m^{2}$ on the branch the amplitude occupies: the cone at $k_m=0$ and a two-sheeted surface at finite mass, the two sheets being the two signs of the frequency.
+
+**The mass is the only thing that separates the sheets.** A constant connection translates the frequency and rotates the wave vector and leaves the separation at $2k_m$, which is why the dispersion relation of this article and the polar article's agree after the substitution that takes one chart to the other. **The constraint is therefore one scalar equation on four numbers**, and everything else the action says is about the amplitude.
+
+**What is absent.** No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one momentum cannot see one; no restriction on the amplitude at a singular momentum. The constraint content is one determinant, and the structural consequence's denial is a statement about what that determinant leaves free.
+
+## The Structural Consequence: The Denial That Survives
+
+**The informational sector is not the Fourier dual of the material sector.** Every transform in this article acts on a $\mathbb{B}$-valued function and returns a $\mathbb{B}$-valued function. No step carries a field out of its sector, and no display above identifies a coefficient's sector with a function's sector. The sector statements are statements about one constant element that multiplies, at one wave number or at one event.
+
+**A second denial belongs here because the eigenvalue problem invites the error**: the eigenvalues of $L(\tilde M)$ are complex numbers, and their real or imaginary character is a statement about $\tilde M$'s sector and not about the field's. A field in $\mathbb{B}_\Psi$ and a field in $\mathbb{B}_\Phi$ feel the same matrix, because the matrix is left multiplication on the whole algebra; what differs is only which sector their values occupy, and that is not an eigenvalue.
 
 ## The Noether Currents: The Charge Per Mode
 

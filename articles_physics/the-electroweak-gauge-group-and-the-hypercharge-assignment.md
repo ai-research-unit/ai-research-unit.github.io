@@ -28,6 +28,16 @@ $$
 
 of a compact simple group and a compact abelian group. The two factors carry two independent couplings, $g$ and $g_{\mathrm Y}$, and the model supplies no relation between them. The ratio $g_{\mathrm Y}/g$ is the Weinberg angle, and it is measured rather than computed.
 
+**What the framework has in place of the product.** The first factor is present as an object and the second as an object, but their union is not a product on the nose. The framework's compact factor is the **rotor group** $\mathrm{Rot}=S^3$, the second is the central phase $S^1=\{\xi e_t:|\xi|=1\}$, and the two share the two points $\pm e_t$ — the rotor $-e_t$ is the same rotation as $+e_t$, and it is also the phase of angle $\pi$. The gauge group of the construction is therefore the quotient
+
+$$
+\bigl(\mathrm{Rot}\times S^1\bigr)/\{\pm e_t\},
+$$
+
+which is $\mathrm{U}(2)$ and not $\mathrm{SU}(2)\times\mathrm{U}(1)$. Two consequences are used later and neither is an assumption. The **parity lock** — the statement that the label $q$ of a field is congruent to twice its spin, $q\equiv 2j \pmod 2$ — is the kernel of the exponential read on the two factors: the identification of $-e_t$ with $+e_t$ is exactly a half-turn on the rotor and a full turn on the phase, and that is the relation between the two labels. And the **hypercharge assignment** below is not supplied by the glue at all: it is a choice of which circle inside the quotient carries which charge, and it is imported.
+
+The names, the operators and the sector vocabulary are fixed once, in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html); the quotient itself is argued in [The Electroweak Pair](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html).
+
 **Why the subscript $L$.** The $SU(2)$ factor acts on left-handed fields and not on right-handed ones. Every left-handed doublet has $T=\tfrac12$; every right-handed field is a singlet. This asymmetry is the whole reason a chiral gauge theory has anomalies at all, and it is why the conditions of §*The Anomaly System* are a system rather than a tautology.
 
 **Why the abelian factor is chiral too.** The hypercharge of a left-handed field and the hypercharge of its right-handed partner are different numbers. For the electron, $Y_L=-\tfrac12$ and $Y_R=-1$. A vector-like abelian factor would assign the same charge to both, and the corpus's own central phase does exactly that, which is the substance of §*Why the Assignment Is Not Derivable Here*.

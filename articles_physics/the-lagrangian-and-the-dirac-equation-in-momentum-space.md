@@ -89,39 +89,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Constraints the Action Imposes: The Constraint Is the Frequency Condition
-
-**At a mode the variation is algebraic and the constraint falls on the momentum.** The transform has replaced $\tilde\nabla_\Phi$ by $i\tilde K_\Phi$ and its adjoint by $i\tilde K_\Phi^{\natural}$, so the density is a quadratic form in the amplitude with no derivative left. Stationarity forces the form's bracket to vanish, and where the form is invertible the only stationary amplitude is zero.
-
-**The condition is an eigenvalue statement, and it is satisfied twice.** The vanishing of the bracket's determinant is a quadratic in the frequency, because the two kinetic terms carry one power of it each and the mass couples them without one. Each root is a frequency at which a nonzero mode exists, so the singular set carries two frequencies per momentum, which is the momentum-space form of the two-sidedness the element article reads off the action.
-
-**The set is the dispersion surface and the connection translates it.** At $k_m=0$ the two sheets meet on the cone; at finite mass they separate by $2k_m$. The connection's temporal slot shifts the frequency and its spatial slots rotate the wave vector, so the sheet separation is a property of the mass alone.
-
-**What is absent, and why the absence is a statement about the chart.** No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one momentum cannot see one; no restriction on the amplitude at a singular momentum. The constraint content is one determinant, and the structural consequence is a claim about what that determinant leaves free.
-
-## The Structural Consequence: The Three Objects Are One Number
-
-**The claim.** The zero of the mode action, the pole of the free kernel and the residue that normalises that pole are three readings of one central scalar, and none of them is an independent input. **An article that fixed the shell from the equation and the normalisation from a commutator would be importing one number it already has**, and this reading does not need the import.
-
-**Why one number is enough.** The second variation at a mode is the central scalar $N(\tilde K_\Phi)=k^{2}-k_m^{2}$ of *The Second Variation Is One Central Scalar*. The variational statement is $N=0$; a Gaussian sum over the mode's amplitude returns a power of $N$; the kernel's residue at the pole is therefore fixed by the same $N$, up to the numerator the companion writes. **Zero, pole and residue are one function read at three places**, and the centrality is what makes the third follow from the first two.
-
-**What the centrality buys, and what it would cost to lose it.** A Hessian on the algebra is normally an element, so the three objects would sit on different footings and the normalisation would be a free choice. Here the Hessian is a number, so the choice is not free. **That is the precise content of the article's claim, and it is a statement about the algebra and not about the sum.**
-
-**What it does not claim.** It does not evaluate the integral, compute a residue, or promote a bracket: the free normalisation is read, and the promotion of the bracket to a commutator remains the next category's step. It does not extend to an interacting mode, where the Hessian is no longer one number and the three objects separate.
-
-**What it corrects.** *Zero and Pole Are One Object* states that the two are one function; this section states the consequence the article owns, that the third object is not a third assumption. **A reader who takes the normalisation as an input has added a postulate the action did not need.**
-
-## Zero, Pole and the On-Shell Action: Zero and Pole Are One Object
-
-**The variational output is the zero.** The pair's compatibility condition is $(k^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions of the equation of motion are supported exactly where the central scalar vanishes. The variational principle's content in momentum space is therefore: on the shell, any amplitude solves the pair; off it, none does.
-
-**The path integral's free propagator has the pole.** The path-integral companion writes the free Dirac kernel in momentum space with the denominator $\langle\tilde K_\Phi\rangle_\natural+k_m^{2}$, which is $-k^{2}+k_m^{2}$, the negative of the second variation. The kernel is large exactly where the scalar vanishes, and its residue there is the numerator the companion computes.
-
-**The two are one function, read at its zero and at its inverse.** Writing $N(\tilde K_\Phi)=k^{2}-k_m^{2}$, the variational statement is $N=0$ and the propagator is proportional to $1/N$. Neither statement is more fundamental, and neither implies the other without the construction in between: the zero selects the support and the pole gives the weight.
-
-**This is the precise sense in which the parent's third open question is closed.** The parent asked for the path integral and did not attempt it. The answer attempted here is not the integral; it is the observation that the two objects the parent separated — the extremum's object and the sum over configurations — meet in one momentum-space function, one at its zero and the other at its pole. **The construction of the sum is the companion articles' work, and the relation is the reason the two articles describe one theory.**
-
-## The Second Variation: One Central Scalar
+### The Second Variation: One Central Scalar
 
 **Compose the two members of the pair and the operator's square is a number.** In momentum space the pair is
 
@@ -154,6 +122,38 @@ $$
 **Centrality is the point.** The second variation of a biquaternionic action is normally an element or an operator, because the Hessian of a functional on a non-commutative algebra is a bilinear form that need not be central. Here it is a number. **That is why the corpus can write the mass shell as a scalar equation** $\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_m^{2}$ rather than as the vanishing of a determinant, and it is why the dispersion relation of the Dirac equation in this algebra is one equation and not a spectral problem.
 
 **The number is the one the variational parent's action was built to produce.** The parent's variation gives the pair; composing the pair gives this scalar; the scalar's vanishing is the shell. The action therefore knows the shell twice, once through each member, and the two readings agree because the norm is central.
+
+### Zero, Pole and the On-Shell Action: Zero and Pole Are One Object
+
+**The variational output is the zero.** The pair's compatibility condition is $(k^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions of the equation of motion are supported exactly where the central scalar vanishes. The variational principle's content in momentum space is therefore: on the shell, any amplitude solves the pair; off it, none does.
+
+**The path integral's free propagator has the pole.** The path-integral companion writes the free Dirac kernel in momentum space with the denominator $\langle\tilde K_\Phi\rangle_\natural+k_m^{2}$, which is $-k^{2}+k_m^{2}$, the negative of the second variation. The kernel is large exactly where the scalar vanishes, and its residue there is the numerator the companion computes.
+
+**The two are one function, read at its zero and at its inverse.** Writing $N(\tilde K_\Phi)=k^{2}-k_m^{2}$, the variational statement is $N=0$ and the propagator is proportional to $1/N$. Neither statement is more fundamental, and neither implies the other without the construction in between: the zero selects the support and the pole gives the weight.
+
+**This is the precise sense in which the parent's third open question is closed.** The parent asked for the path integral and did not attempt it. The answer attempted here is not the integral; it is the observation that the two objects the parent separated — the extremum's object and the sum over configurations — meet in one momentum-space function, one at its zero and the other at its pole. **The construction of the sum is the companion articles' work, and the relation is the reason the two articles describe one theory.**
+
+## The Constraints the Action Imposes: The Constraint Is the Frequency Condition
+
+**At a mode the variation is algebraic and the constraint falls on the momentum.** The transform has replaced $\tilde\nabla_\Phi$ by $i\tilde K_\Phi$ and its adjoint by $i\tilde K_\Phi^{\natural}$, so the density is a quadratic form in the amplitude with no derivative left. Stationarity forces the form's bracket to vanish, and where the form is invertible the only stationary amplitude is zero.
+
+**The condition is an eigenvalue statement, and it is satisfied twice.** The vanishing of the bracket's determinant is a quadratic in the frequency, because the two kinetic terms carry one power of it each and the mass couples them without one. Each root is a frequency at which a nonzero mode exists, so the singular set carries two frequencies per momentum, which is the momentum-space form of the two-sidedness the element article reads off the action.
+
+**The set is the dispersion surface and the connection translates it.** At $k_m=0$ the two sheets meet on the cone; at finite mass they separate by $2k_m$. The connection's temporal slot shifts the frequency and its spatial slots rotate the wave vector, so the sheet separation is a property of the mass alone.
+
+**What is absent, and why the absence is a statement about the chart.** No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one momentum cannot see one; no restriction on the amplitude at a singular momentum. The constraint content is one determinant, and the structural consequence is a claim about what that determinant leaves free.
+
+## The Structural Consequence: The Three Objects Are One Number
+
+**The claim.** The zero of the mode action, the pole of the free kernel and the residue that normalises that pole are three readings of one central scalar, and none of them is an independent input. **An article that fixed the shell from the equation and the normalisation from a commutator would be importing one number it already has**, and this reading does not need the import.
+
+**Why one number is enough.** The second variation at a mode is the central scalar $N(\tilde K_\Phi)=k^{2}-k_m^{2}$ of *The Second Variation Is One Central Scalar*. The variational statement is $N=0$; a Gaussian sum over the mode's amplitude returns a power of $N$; the kernel's residue at the pole is therefore fixed by the same $N$, up to the numerator the companion writes. **Zero, pole and residue are one function read at three places**, and the centrality is what makes the third follow from the first two.
+
+**What the centrality buys, and what it would cost to lose it.** A Hessian on the algebra is normally an element, so the three objects would sit on different footings and the normalisation would be a free choice. Here the Hessian is a number, so the choice is not free. **That is the precise content of the article's claim, and it is a statement about the algebra and not about the sum.**
+
+**What it does not claim.** It does not evaluate the integral, compute a residue, or promote a bracket: the free normalisation is read, and the promotion of the bracket to a commutator remains the next category's step. It does not extend to an interacting mode, where the Hessian is no longer one number and the three objects separate.
+
+**What it corrects.** *Zero and Pole Are One Object* states that the two are one function; this section states the consequence the article owns, that the third object is not a third assumption. **A reader who takes the normalisation as an input has added a postulate the action did not need.**
 
 ## The Noether Currents: The Charge Per Mode
 

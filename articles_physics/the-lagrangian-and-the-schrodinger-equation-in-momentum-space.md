@@ -122,6 +122,20 @@ and it holds for every anti-Hermitian root, for the same reason the action is re
 
 **Why the Hermitian pairing is enough.** For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. **The argument is the parent's and it is quoted once here.**
 
+### Zero, Pole and the On-Shell Action
+
+**The kernel of the fixed-frequency form.** The action at frequency $\omega$ is $S_\omega[\tilde X]=\int\mathrm{d}t'\,\langle\tilde X,\sigma(\omega)\tilde X\rangle$, so the form's kernel is the symbol and the symbol's zero is the condition that a non-zero amplitude costs nothing. **That condition is the dispersion relation**, and in this reading it is not an assumption: it is the vanishing of the form's kernel.
+
+**Zero and pole.** The resolvent at the frequency is the form's inverse, and it fails exactly at the zero. **The pole of the resolvent and the zero of the form are one locus read from two sides**, and the article uses whichever side the sentence needs.
+
+**Why the pole is simple here.** The Schrödinger symbol is first order in the frequency, so its zero is one linear condition and the pole is simple. **A simple pole has a residue**, and the residue is the density per mode: $\hbar$ times the norm, which is the article's statement that the Legendre slope is $\hbar$ and the mixed derivative vanishes. A quadratic symbol would give two branches and a residue that is a difference; this one gives one branch and a residue that is a product.
+
+**The on-shell action.** On a solution the amplitude is a kernel vector, so $\langle\tilde X,\sigma\tilde X\rangle=0$ and the mode action vanishes. **The action is zero on shell because the action is the form**, and this is the one place where the reading's identification is tested: a reader who thought the action was an energy would find the answer zero and ask why.
+
+**The free case's degeneracy.** The free symbol's zero is not degenerate, but the free *spectrum* is: every root of $-e_t$ gives the same symbol because the symbol depends on the Hamiltonian and not on the root. **That is the one degeneracy this reading has**, and it is why the article separates the reality of the form from the reality of the whole action: the form is real for every amplitude, and the action is real because the root is anti-Hermitian.
+
+**What the section does not claim.** It does not claim that the zero is a bound state. **A zero of the form is a propagation condition**, and whether the propagating mode is normalisable is a question about the boundary conditions that this reading does not supply.
+
 ## The Constraints the Action Imposes: The Constraint Is the Frequency
 
 **At fixed frequency the variation is algebraic.** The substitution $\tilde\Xi=e^{-i\omega t'}\tilde X$ has removed the derivative, so the action $S_\omega$ is a quadratic form in the constant amplitude. Stationarity forces its bracket to vanish, and where the bracket is invertible the only stationary amplitude is zero.
@@ -141,20 +155,6 @@ and it holds for every anti-Hermitian root, for the same reason the action is re
 **What the form cannot see.** An anti-Hermitian part of the array contributes a purely imaginary value to the form and cancels in the sum with its conjugate. So the action is blind to the anti-Hermitian part, and its blindness is the reason the next section's statement is possible.
 
 **The trace is the form on a basis.** Summing the form over an orthonormal basis of the coefficient space gives $\operatorname{tr}\sigma(\omega)=4(\hbar\omega-h_t)$. **The action's trace is four times the mean frequency**, and the determinant, which the form cannot see, is the square of the gap.
-
-## Zero, Pole and the On-Shell Action
-
-**The kernel of the fixed-frequency form.** The action at frequency $\omega$ is $S_\omega[\tilde X]=\int\mathrm{d}t'\,\langle\tilde X,\sigma(\omega)\tilde X\rangle$, so the form's kernel is the symbol and the symbol's zero is the condition that a non-zero amplitude costs nothing. **That condition is the dispersion relation**, and in this reading it is not an assumption: it is the vanishing of the form's kernel.
-
-**Zero and pole.** The resolvent at the frequency is the form's inverse, and it fails exactly at the zero. **The pole of the resolvent and the zero of the form are one locus read from two sides**, and the article uses whichever side the sentence needs.
-
-**Why the pole is simple here.** The Schrödinger symbol is first order in the frequency, so its zero is one linear condition and the pole is simple. **A simple pole has a residue**, and the residue is the density per mode: $\hbar$ times the norm, which is the article's statement that the Legendre slope is $\hbar$ and the mixed derivative vanishes. A quadratic symbol would give two branches and a residue that is a difference; this one gives one branch and a residue that is a product.
-
-**The on-shell action.** On a solution the amplitude is a kernel vector, so $\langle\tilde X,\sigma\tilde X\rangle=0$ and the mode action vanishes. **The action is zero on shell because the action is the form**, and this is the one place where the reading's identification is tested: a reader who thought the action was an energy would find the answer zero and ask why.
-
-**The free case's degeneracy.** The free symbol's zero is not degenerate, but the free *spectrum* is: every root of $-e_t$ gives the same symbol because the symbol depends on the Hamiltonian and not on the root. **That is the one degeneracy this reading has**, and it is why the article separates the reality of the form from the reality of the whole action: the form is real for every amplitude, and the action is real because the root is anti-Hermitian.
-
-**What the section does not claim.** It does not claim that the zero is a bound state. **A zero of the form is a propagation condition**, and whether the propagating mode is normalisable is a question about the boundary conditions that this reading does not supply.
 
 ## The Noether Currents: The Charge Per Mode
 

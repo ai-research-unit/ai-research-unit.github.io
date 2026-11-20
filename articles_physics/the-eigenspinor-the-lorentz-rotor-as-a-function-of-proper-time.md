@@ -195,8 +195,7 @@ Both factors are rotors: $\vec\Omega_{\mathrm{LT}}$ is a pure vector, so $\exp(\
 
 **What precesses is the frame the eigenspinor carries, and the rate is the rate of the rotor.** The tetrad $\tilde E_{\Phi,(\mu)}=\tilde U\mathcal{E}_\mu\tilde U^{*}$ turns with $\tilde U$, so the angular velocity of the particle's own axes in the laboratory is read off $\vec\Omega_{\mathrm{LT}}$: the vector part of the rate is the instantaneous rotation, and its modulus is the rate at which the frame turns per unit proper time.
 
-**In a purely magnetic field that rate has a name.** With $\vec E=0$ the rate is $\vec\Omega_{\mathrm{LT}}=-(ϙ/m)\vec B$, real and pure, so the exponential $\exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)$ is a real unit quaternion: a spatial rotation of angle $\lvert\vec\Omega_{\mathrm{LT}}
-vert\tau$ about $\vec B$. The frame precesses about the field at the angular frequency
+**In a purely magnetic field that rate has a name.** With $\vec E=0$ the rate is $\vec\Omega_{\mathrm{LT}}=-(ϙ/m)\vec B$, real and pure, so the exponential $\exp(\tfrac12\vec\Omega_{\mathrm{LT}}\tau)$ is a real unit quaternion: a spatial rotation of angle $\lvert\vec\Omega_{\mathrm{LT}}\rvert\tau$ about $\vec B$. The frame precesses about the field at the angular frequency
 
 $$
 \omega_{\mathrm{cyc}}=\frac{ϙ B}{m},

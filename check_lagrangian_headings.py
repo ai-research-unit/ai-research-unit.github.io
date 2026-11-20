@@ -21,8 +21,8 @@ import sys
 # blocks, 4 when the variation is run twice or closes with the bracket
 # decomposition, 7 in three fluid articles, 9 when a current is denied as well
 # as stated, 12 when the ledger separates what the method adds from what the
-# chart adds, and M2 where the zero and the pole are separate statements.
-REPEATABLE = ('3', '4', '7', '9', '12', 'M2', 'KEEP')
+# chart adds.
+REPEATABLE = ('3', '4', '7', '9', '12', 'KEEP')
 
 MANDATORY = [
     ('1', 'Introduction'),
@@ -47,8 +47,6 @@ CANONICAL = [
     ('4', 'The Variation'),
     ('6', 'The Constraints the Action Imposes'),
     ('7', 'The Structural Consequence'),
-    ('M2', 'Zero, Pole and the On-Shell Action'),
-    ('8', 'The Second Variation'),
     ('9', 'The Noether Currents'),
     ('M3', 'The Legendre Transform'),
     ('10', 'The Two Settings'),

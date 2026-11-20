@@ -167,84 +167,7 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Constraints the Action Imposes: The Local Phase Is Invisible at a Mode
-
-**The mode form is invariant under a constant central phase, for the free action and the coupled action alike.** Every term of $\mathcal{Q}$ pairs one factor of the field with one factor of its conjugate, so a common phase $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ multiplies each term by $\overline{e^{i\alpha}}e^{i\alpha}=1$. **Measured over fifty random draws at three angles: the largest deviation was $3.8\times10^{-15}$, $1.1\times10^{-14}$ and $7.2\times10^{-15}$ at $\alpha=0.7$, $1.9$ and $3.1$.**
-
-**That invariance is stronger than the parent's and the strength is the finding.** The parent shows that the *mass* term is invariant under a local central phase without help and that the *kinetic* term is not, and that the covariant derivative is the unique repair. At a mode both terms are invariant, and they are invariant for the same reason. **So the asymmetry the parent's derivation turns on is a statement about derivatives, and a mode has none.**
-
-**The consequence is that the coupling is invisible at a single mode and the charge is not a property of a mode.** A symmetry that holds for the free action and the coupled action equally cannot distinguish them, and a Noether current built from a single mode is built from an invariance that a single mode has anyway. **The charge needs two modes**, and §*Aside: Why the Parent’s Test Field Had Two Modes* says why.
-
-**The Proca companion's form is not invariant, and the contrast is exact.** There the field term is $\tfrac12[\,\pi A\,]^{2}$, a square of a *linear* form and therefore bilinear: under $A\mapsto e^{i\alpha}A$ it acquires $e^{2i\alpha}$, measured as arguments $1.400000$, $-2.483185$ and $-0.083185$ at $\alpha=0.7,\,1.9,\,3.1$. **The Dirac form is sesquilinear in every term and the Proca form is not in its field term**, so the Dirac theory's phase symmetry is a property of its pairing and the Proca theory's failure is a property of its degree.
-
-**Why the difference is what it is, in one sentence.** A pairing of a field with its conjugate is invariant under any phase; a square of a linear form is invariant only when the phase squares to one. **The Dirac action pairs; the Proca field term squares**, and no amount of coupling changes which of the two it does.
-
-## The Structural Consequence: The Curvature Is the Term That Cannot Be a Number
-
-**At a varying connection the symbol does not exist, and what replaces it is an operator whose one unfamiliar term is the curvature.** The parent's identity is
-
-$$
-(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
-=\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F ,
-\qquad
-\bigl[\tilde\nabla_{\mathrm{gco},\Phi,\mu},\tilde\nabla_{\mathrm{gco},\Phi,\nu}\bigr]=\frac{i\,ϙ}{\hbar}\tilde F_{\mu\nu},
-$$
-
-and it is the parent's, checked there to $1.1\times10^{-5}$ on a test function.
-
-**The curvature's element type is the obstruction, and it is a type statement rather than a size statement.** $\tilde F$ is a two-form, which in this algebra is a pure vector: it has no scalar part, so
-
-$$
-\tilde F^{\natural}=-\tilde F ,
-$$
-
-measured as a residual of $0.0\times10^{0}$. **A pure vector is $\natural$-antisymmetric, and a $\natural$-antisymmetric element cannot be in the centre**: its commutator with a generic element was $4.43$ for a curvature component of size $0.9$ against a random complex element of unit scale.
-
-**So the composed operator is a central scalar exactly when the added term vanishes.** With $\tilde F=0$ the operator is a multiple of the identity, as §*The Second Variation: One Number, for a New Reason* measures. With $\tilde F\neq0$ it is not, and the compatibility condition
-
-$$
-\Bigl(\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
-$$
-
-is an equation between elements and not an equation between numbers. **That is the precise sense in which the zero-pole relation stops**: the free article's relation is between a number and its inverse, and here one of the two is not a number.
-
-**The two-way statement, with its qualifier.** The second variation is a central number if and only if the connection is pure gauge, and the gauge qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that gauge the symbol exists and the number is $\pi^{2}-k_m^{2}$. **A connection with $\tilde F\neq0$ has no gauge in which the number exists**, because $\tilde F$ is gauge invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".
-
-**What this does not say is that the coupled theory has no dispersion relation.** It says that the relation is an element equation whose scalar content has to be extracted, and that the extraction is the curvature's business. **The article's claim is about the *form* of the second variation and not about the existence of a spectrum**, and the Landau-level article is where a nonzero curvature's spectrum is actually computed.
-
-## Zero, Pole and the On-Shell Action: On the Shell the Mode Action Vanishes
-
-**The mode form is zero on every solution, and that is the first-order Lagrangian's vanishing read in momentum space.** Substituting the pair into $\mathcal{Q}$ term by term gives
-
-$$
-\mathrm{Sc}\bigl(\tilde\Xi_L^{*}i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_L\bigr)=k_m\mathrm{Sc}\bigl(\tilde\Xi_L^{*}\tilde\Xi_R\bigr),
-\qquad
-\mathrm{Sc}\bigl(\tilde\Xi_R^{*}i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_R\bigr)=k_m\mathrm{Sc}\bigl(\tilde\Xi_R^{*}\tilde\Xi_L\bigr),
-$$
-
-so the two kinetic terms reproduce the two mass terms and the four cancel pairwise.
-
-**The check, with the shell imposed by construction.** Taking $\tilde\Xi_L=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_R/k_m$ on shell, the two residuals were $2.2\times10^{-16}$, $5.0\times10^{-16}$ and $1.7\times10^{-16}$, and $\mathcal{Q}$ was $3.6\times10^{-15}$, $1.8\times10^{-15}$ and $1.8\times10^{-15}$ — zero.
-
-**Off the shell the same construction fails in both respects and the failure is large.** At $k^{2}-k_m^{2}=2.740000$ the second residual was $5.58$ and $6.65$, and $\mathcal{Q}$ was $-16.908619$ and $-32.554945$. **So the vanishing is the shell's and not an algebraic accident of the construction**, which is what the two orders of magnitude are there to show.
-
-**This is what the parent's sentence about the action's value means, stated exactly.** The parent says that "the value of the action on a solution is the free value, because a constant potential is pure gauge and the gauge factor's contribution cancels between the field and its conjugate". At a mode the sentence has a sharper form: **the value is zero, and the free value is zero, and the two zeros are the same zero.** The cancellation the parent attributes to the gauge factor is the cancellation of the four terms, and it happens with or without the potential.
-
-**The consequence for the propagator is that the action's value carries no information about the coupling.** A functional that vanishes on every solution of the free theory and on every solution of the coupled theory cannot distinguish them, and the distinguishing information is in the *operator*, not in the value. **That is why the propagator and not the action is the object that knows about the potential**, and it is the parent's reason for computing the propagator separately.
-
-## Zero, Pole and the On-Shell Action: Zero and Pole, with the Shift
-
-**The variational output is the zero of $N=\pi^{2}-k_m^{2}$.** The compatibility condition at a constant connection is $(\pi^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions are supported exactly where the number vanishes and nowhere else. **The values in the table of §*The Second Variation: One Number, for a New Reason* are that statement with numbers**: $0.750000$ and $2.032500$ off the shell, and the shell is the surface where the column of $N$ crosses zero.
-
-**The path integral's propagator has the pole, and the shift moves it without changing its shape.** The free kernel's denominator is $\langle\tilde K_\Phi\rangle_{\natural}+k_m^{2}=-(k^{2}-k_m^{2})$, the negative of the free second variation. With the coupling the same construction gives $-\pi^{2}+k_m^{2}$, the negative of the number above, so **the kernel is large exactly where $\pi^{2}=k_m^{2}$**.
-
-**The pole's surface is a translated hyperboloid and not a deformed one.** $\pi^{2}$ is one fixed quadratic form evaluated at the shifted four-momentum, so its zero set is congruent to the free one and the congruence is a translation. **That is the companion's Finding 3 read at the pole**, and the article states it here because the propagator is where the translation is visible as a physical statement rather than as an algebraic identity.
-
-**The relation is exact only where the number exists, and that is the article's answer to the free article's open question.** The free sibling asks "whether the zero-pole relation survives when the symbol is an operator". The answer is: **it survives exactly at zero field strength, and it fails to be statable otherwise** — not because the propagator stops having poles, but because the object whose zero it would be stopped being a number. §*The Structural Consequence: The Curvature Is the Term That Cannot Be a Number* is that answer's argument.
-
-**What the relation is not is a derivation of the integral.** The zero selects the support and the pole gives the weight; neither implies the other without the construction in between, and the construction is the path-integral companion's. **The relation is a computed equality of two displays at one wave number**, and the coupling shifts both displays by the same substitution.
-
-## The Second Variation: One Number, for a New Reason
+### The Second Variation: One Number, for a New Reason
 
 **Compose the pair and the composed operator is a central multiple of the identity.** At a mode the pair is
 
@@ -298,6 +221,81 @@ checked to $2.2\times10^{-16}$ over the four rows below.
 **Two rows of the same momentum and opposite potentials are the article's cleanest contrast.** The second variation is $2.032500$ and $-0.127500$, so a scalar potential of $\pm0.5$ moves the number across zero; the wrong object is $5.322500$ and $1.902500$, and it does not cross. **So the number's sign is a physical statement and the wrong object's sign is not**, which is why the distinction between the two is not bookkeeping.
 
 **The number is gauge invariant, and that is a one-line consequence of the companion's translation finding.** A linear gauge function translates the support of the field in momentum space and leaves $\pi$ where it was, because the shift of $\tilde A_\Phi$ and the shift of $k$ cancel in $\hbar k+ϙA$. **So $\pi^{2}-k_m^{2}$ is a number attached to the mode and not to the gauge**, and the free article's $\tilde K_\Phi$-dependent statement was not.
+
+### Zero, Pole and the On-Shell Action
+
+**The mode form is zero on every solution, and that is the first-order Lagrangian's vanishing read in momentum space.** Substituting the pair into $\mathcal{Q}$ term by term gives
+
+$$
+\mathrm{Sc}\bigl(\tilde\Xi_L^{*}i\tilde K_{\Phi,\mathrm{gco}}^{\natural}\tilde\Xi_L\bigr)=k_m\mathrm{Sc}\bigl(\tilde\Xi_L^{*}\tilde\Xi_R\bigr),
+\qquad
+\mathrm{Sc}\bigl(\tilde\Xi_R^{*}i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_R\bigr)=k_m\mathrm{Sc}\bigl(\tilde\Xi_R^{*}\tilde\Xi_L\bigr),
+$$
+
+so the two kinetic terms reproduce the two mass terms and the four cancel pairwise.
+
+**The check, with the shell imposed by construction.** Taking $\tilde\Xi_L=i\tilde K_{\Phi,\mathrm{gco}}\tilde\Xi_R/k_m$ on shell, the two residuals were $2.2\times10^{-16}$, $5.0\times10^{-16}$ and $1.7\times10^{-16}$, and $\mathcal{Q}$ was $3.6\times10^{-15}$, $1.8\times10^{-15}$ and $1.8\times10^{-15}$ — zero.
+
+**Off the shell the same construction fails in both respects and the failure is large.** At $k^{2}-k_m^{2}=2.740000$ the second residual was $5.58$ and $6.65$, and $\mathcal{Q}$ was $-16.908619$ and $-32.554945$. **So the vanishing is the shell's and not an algebraic accident of the construction**, which is what the two orders of magnitude are there to show.
+
+**This is what the parent's sentence about the action's value means, stated exactly.** The parent says that "the value of the action on a solution is the free value, because a constant potential is pure gauge and the gauge factor's contribution cancels between the field and its conjugate". At a mode the sentence has a sharper form: **the value is zero, and the free value is zero, and the two zeros are the same zero.** The cancellation the parent attributes to the gauge factor is the cancellation of the four terms, and it happens with or without the potential.
+
+**The consequence for the propagator is that the action's value carries no information about the coupling.** A functional that vanishes on every solution of the free theory and on every solution of the coupled theory cannot distinguish them, and the distinguishing information is in the *operator*, not in the value. **That is why the propagator and not the action is the object that knows about the potential**, and it is the parent's reason for computing the propagator separately.
+
+**The variational output is the zero of $N=\pi^{2}-k_m^{2}$.** The compatibility condition at a constant connection is $(\pi^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions are supported exactly where the number vanishes and nowhere else. **The values in the table of §*The Second Variation: One Number, for a New Reason* are that statement with numbers**: $0.750000$ and $2.032500$ off the shell, and the shell is the surface where the column of $N$ crosses zero.
+
+**The path integral's propagator has the pole, and the shift moves it without changing its shape.** The free kernel's denominator is $\langle\tilde K_\Phi\rangle_{\natural}+k_m^{2}=-(k^{2}-k_m^{2})$, the negative of the free second variation. With the coupling the same construction gives $-\pi^{2}+k_m^{2}$, the negative of the number above, so **the kernel is large exactly where $\pi^{2}=k_m^{2}$**.
+
+**The pole's surface is a translated hyperboloid and not a deformed one.** $\pi^{2}$ is one fixed quadratic form evaluated at the shifted four-momentum, so its zero set is congruent to the free one and the congruence is a translation. **That is the companion's Finding 3 read at the pole**, and the article states it here because the propagator is where the translation is visible as a physical statement rather than as an algebraic identity.
+
+**The relation is exact only where the number exists, and that is the article's answer to the free article's open question.** The free sibling asks "whether the zero-pole relation survives when the symbol is an operator". The answer is: **it survives exactly at zero field strength, and it fails to be statable otherwise** — not because the propagator stops having poles, but because the object whose zero it would be stopped being a number. §*The Structural Consequence: The Curvature Is the Term That Cannot Be a Number* is that answer's argument.
+
+**What the relation is not is a derivation of the integral.** The zero selects the support and the pole gives the weight; neither implies the other without the construction in between, and the construction is the path-integral companion's. **The relation is a computed equality of two displays at one wave number**, and the coupling shifts both displays by the same substitution.
+
+## The Constraints the Action Imposes: The Local Phase Is Invisible at a Mode
+
+**The mode form is invariant under a constant central phase, for the free action and the coupled action alike.** Every term of $\mathcal{Q}$ pairs one factor of the field with one factor of its conjugate, so a common phase $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ multiplies each term by $\overline{e^{i\alpha}}e^{i\alpha}=1$. **Measured over fifty random draws at three angles: the largest deviation was $3.8\times10^{-15}$, $1.1\times10^{-14}$ and $7.2\times10^{-15}$ at $\alpha=0.7$, $1.9$ and $3.1$.**
+
+**That invariance is stronger than the parent's and the strength is the finding.** The parent shows that the *mass* term is invariant under a local central phase without help and that the *kinetic* term is not, and that the covariant derivative is the unique repair. At a mode both terms are invariant, and they are invariant for the same reason. **So the asymmetry the parent's derivation turns on is a statement about derivatives, and a mode has none.**
+
+**The consequence is that the coupling is invisible at a single mode and the charge is not a property of a mode.** A symmetry that holds for the free action and the coupled action equally cannot distinguish them, and a Noether current built from a single mode is built from an invariance that a single mode has anyway. **The charge needs two modes**, and §*Aside: Why the Parent’s Test Field Had Two Modes* says why.
+
+**The Proca companion's form is not invariant, and the contrast is exact.** There the field term is $\tfrac12[\,\pi A\,]^{2}$, a square of a *linear* form and therefore bilinear: under $A\mapsto e^{i\alpha}A$ it acquires $e^{2i\alpha}$, measured as arguments $1.400000$, $-2.483185$ and $-0.083185$ at $\alpha=0.7,\,1.9,\,3.1$. **The Dirac form is sesquilinear in every term and the Proca form is not in its field term**, so the Dirac theory's phase symmetry is a property of its pairing and the Proca theory's failure is a property of its degree.
+
+**Why the difference is what it is, in one sentence.** A pairing of a field with its conjugate is invariant under any phase; a square of a linear form is invariant only when the phase squares to one. **The Dirac action pairs; the Proca field term squares**, and no amount of coupling changes which of the two it does.
+
+## The Structural Consequence: The Curvature Is the Term That Cannot Be a Number
+
+**At a varying connection the symbol does not exist, and what replaces it is an operator whose one unfamiliar term is the curvature.** The parent's identity is
+
+$$
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\nabla_{\mathrm{gco},\Phi}
+=\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F ,
+\qquad
+\bigl[\tilde\nabla_{\mathrm{gco},\Phi,\mu},\tilde\nabla_{\mathrm{gco},\Phi,\nu}\bigr]=\frac{i\,ϙ}{\hbar}\tilde F_{\mu\nu},
+$$
+
+and it is the parent's, checked there to $1.1\times10^{-5}$ on a test function.
+
+**The curvature's element type is the obstruction, and it is a type statement rather than a size statement.** $\tilde F$ is a two-form, which in this algebra is a pure vector: it has no scalar part, so
+
+$$
+\tilde F^{\natural}=-\tilde F ,
+$$
+
+measured as a residual of $0.0\times10^{0}$. **A pure vector is $\natural$-antisymmetric, and a $\natural$-antisymmetric element cannot be in the centre**: its commutator with a generic element was $4.43$ for a curvature component of size $0.9$ against a random complex element of unit scale.
+
+**So the composed operator is a central scalar exactly when the added term vanishes.** With $\tilde F=0$ the operator is a multiple of the identity, as §*The Second Variation: One Number, for a New Reason* measures. With $\tilde F\neq0$ it is not, and the compatibility condition
+
+$$
+\Bigl(\sum_\mu\tilde\nabla_{\Phi,\mathrm{gco},\mu}^{2}+\frac{i\,ϙ}{\hbar}\tilde F-k_m^{2}\Bigr)\tilde\Xi_R=0
+$$
+
+is an equation between elements and not an equation between numbers. **That is the precise sense in which the zero-pole relation stops**: the free article's relation is between a number and its inverse, and here one of the two is not a number.
+
+**The two-way statement, with its qualifier.** The second variation is a central number if and only if the connection is pure gauge, and the gauge qualifier is not removable. A constant connection has $\tilde F=0$ and is removable by a phase, and in that gauge the symbol exists and the number is $\pi^{2}-k_m^{2}$. **A connection with $\tilde F\neq0$ has no gauge in which the number exists**, because $\tilde F$ is gauge invariant. So the number's existence and the connection's purity are one condition, and it is the same condition the companion states as "the multiplier case is the zero-curvature case".
+
+**What this does not say is that the coupled theory has no dispersion relation.** It says that the relation is an element equation whose scalar content has to be extracted, and that the extraction is the curvature's business. **The article's claim is about the *form* of the second variation and not about the existence of a spectrum**, and the Landau-level article is where a nonzero curvature's spectrum is actually computed.
 
 ## The Noether Currents: The Charge Per Mode
 
