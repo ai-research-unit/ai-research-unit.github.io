@@ -442,3 +442,4 @@ In the biquaternion framework the field is the tensor product of the material fo
 - Marc Henneaux and Claudio Teitelboim, *Quantization of Gauge Systems* (Princeton, 1992), for first-class and second-class constraints and the Dirac bracket.
 - Stanley Deser, J. H. Kay and K. S. Stelle, "Renormalizability Properties of Supergravity," *Physical Review Letters* **38** (1977) 527–530, for the consistency of the spin-$\tfrac32$ field coupled to gravity.
 - G. Velo and D. Zwanziger, "Propagation and Quantization of Rarita–Schwinger Waves in an External Electromagnetic Potential," *Physical Review* **186** (1969) 1337–1341, for the loss of the constraint and the superluminal modes in a background.
+- [The Lagrangian and the Second Quantisation: From the Action to the Commutator](the-lagrangian-and-the-second-quantisation.html), for the classical bracket this quantisation promotes and for what the promotion does not derive from the one-particle action.

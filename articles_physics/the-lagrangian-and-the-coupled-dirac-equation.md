@@ -65,35 +65,6 @@ the left part sees $\tilde A_\Phi^{\natural}$ and the right part sees $\tilde A_
 
 **The constant $\hbar c$.** It multiplies the whole functional, it cancels in the variation, and the residuals do not carry it while the currents carry one power of it. The parent's reason for the convention is unchanged by the coupling.
 
-## Why the Coupling Is Forced
-
-The action's free part is invariant under a *constant* central phase. Localizing the phase destroys the invariance, and the repair is unique.
-
-**The mass term is safe.** Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ with $\lambda=\lambda(R)$ central, the mass term $\tilde\Xi_L^{*}\tilde\Xi_R$ becomes $\bar\lambda\lambda\,\tilde\Xi_L^{*}\tilde\Xi_R=\tilde\Xi_L^{*}\tilde\Xi_R$, since $\lambda$ commutes and has unit modulus. A mass term linear in two fields with one conjugate is invariant under a local central phase without any help.
-
-**The kinetic term is not.** The derivative acts on $\lambda$:
-
-$$
-\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\bigl(\lambda\tilde\Xi_L\bigr)
-=\lambda\,\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L
-+\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\lambda\bigr)\tilde\Xi_L,
-$$
-
-and the second term is nonzero. The obstruction is therefore the derivative and only the derivative.
-
-**The repair is unique within the abelian class.** Demand that the action be invariant under $\tilde\Xi\mapsto\lambda\tilde\Xi$ with $\tilde A_\Phi\mapsto\tilde A_\Phi+\delta\tilde A_\Phi$. The kinetic terms acquire
-
-$$
-\frac{i\,ϙ}{\hbar}\Bigl(\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\Gamma\bigr)\tilde\Xi_L+\tilde\Xi_R^{*}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\tilde\Xi_R\Bigr)
-+\frac{i\,ϙ}{\hbar}\Bigl(\tilde\Xi_L^{*}\delta\tilde A_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\delta\tilde A_\Phi\tilde\Xi_R\Bigr),
-$$
-
-and the two brackets cancel for every field exactly when $\delta\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$, that is, when the connection obeys the gauge law with the sign the element companion uses. **The covariant derivative is the unique repair of this shape**, and the sign of the coupling is fixed by the sign of the gauge law. No further term can be added: a term without a derivative would have to be a function of $\tilde A_\Phi$ alone, and such a term is not invariant under the shift of the connection.
-
-**What this settles that the equation alone could not.** The coupled equation can be written down with any operator in place of the gradient, and every such equation is an equation. Only the functional selects the operator whose equation is *the* equation of a locally phased field. The variational principle therefore does real work here: it converts "couple by this prescription" into "the prescription is what local invariance requires".
-
-**What it does not settle.** The repair is unique *within the abelian class* and up to terms of higher order in the field strength. A term built from $\tilde F$ alone is invariant and cannot be excluded by this argument; it is the gauge field's own action and belongs to the Maxwell article, not to the matter action. The argument also says nothing about non-abelian connections, where $\tilde A_\Phi$ does not commute with the field and the two terms above do not separate.
-
 ## The Variation
 
 Vary both parts and take the real part. The result is
@@ -123,6 +94,45 @@ $$
 the covariant wave equation with the curvature term. The coupling therefore changes the compatibility condition in exactly one place, the curvature, and nowhere else.
 
 **Boundary terms.** The variation of a field of compact support produces none. For fields periodic in the spatial directions no boundary term appears either, provided the gauge function is periodic; a non-periodic gauge function changes the boundary data and the action is then stationary only within a gauge class. That is the standard statement and the coupling does not alter it.
+
+## The Constraints the Action Imposes: The Two Gauges
+
+**A first-order action has constrained momenta, and a coupled one has a gauge orbit.** Two different objects are called a constraint in this family, and the article keeps them apart because confusing them is the commonest error in the coupled case.
+
+**The primary constraints.** The action is first order: the conjugate momentum of each part is a bilinear of the other part, not a rate. So the momenta do not determine the velocities and the Legendre transform is not invertible. The count is the parent's, and the polar companion exhibits it as the vanishing of the momenta of the frame; here it is the statement that the action is linear in the time derivatives of the two parts.
+
+**The gauge orbit.** The local central phase $\tilde\Xi_{R,L}\mapsto e^{i\Lambda}\tilde\Xi_{R,L}$, $\tilde A_\Phi\mapsto\tilde A_\Phi-(\hbar/ϙ)\partial\Lambda$ is a symmetry of the action, and it is the orbit and not the choice: the action selects no representative, and no Lorenz condition is imposed anywhere in this article. The distinction matters because the constraint is physical — it removes momenta — while the orbit is a redundancy of the description and removes no degree of freedom from the action's content.
+
+**What the article looks at.** The orbit, because the symmetry is exact, and the constraints only to the extent that they fix the count. That is the division the family uses, and the polar companion is where the count is carried out in full.
+
+## Why the Coupling Is Forced
+
+The action's free part is invariant under a *constant* central phase. Localizing the phase destroys the invariance, and the repair is unique.
+
+**The mass term is safe.** Under $\tilde\Xi\mapsto\lambda\tilde\Xi$ with $\lambda=\lambda(R)$ central, the mass term $\tilde\Xi_L^{*}\tilde\Xi_R$ becomes $\bar\lambda\lambda\,\tilde\Xi_L^{*}\tilde\Xi_R=\tilde\Xi_L^{*}\tilde\Xi_R$, since $\lambda$ commutes and has unit modulus. A mass term linear in two fields with one conjugate is invariant under a local central phase without any help.
+
+**The kinetic term is not.** The derivative acts on $\lambda$:
+
+$$
+\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\bigl(\lambda\tilde\Xi_L\bigr)
+=\lambda\,\tilde\Xi_L^{*}\tilde\nabla_\Phi^{\natural}\tilde\Xi_L
++\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\lambda\bigr)\tilde\Xi_L,
+$$
+
+and the second term is nonzero. The obstruction is therefore the derivative and only the derivative.
+
+**The repair is unique within the abelian class.** Demand that the action be invariant under $\tilde\Xi\mapsto\lambda\tilde\Xi$ with $\tilde A_\Phi\mapsto\tilde A_\Phi+\delta\tilde A_\Phi$. The kinetic terms acquire
+
+$$
+\frac{i\,ϙ}{\hbar}\Bigl(\tilde\Xi_L^{*}\bigl(\tilde\nabla_\Phi^{\natural}\Gamma\bigr)\tilde\Xi_L+\tilde\Xi_R^{*}\bigl(\tilde\nabla_\Phi\Gamma\bigr)\tilde\Xi_R\Bigr)
++\frac{i\,ϙ}{\hbar}\Bigl(\tilde\Xi_L^{*}\delta\tilde A_\Phi^{\natural}\tilde\Xi_L+\tilde\Xi_R^{*}\delta\tilde A_\Phi\tilde\Xi_R\Bigr),
+$$
+
+and the two brackets cancel for every field exactly when $\delta\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$, that is, when the connection obeys the gauge law with the sign the element companion uses. **The covariant derivative is the unique repair of this shape**, and the sign of the coupling is fixed by the sign of the gauge law. No further term can be added: a term without a derivative would have to be a function of $\tilde A_\Phi$ alone, and such a term is not invariant under the shift of the connection.
+
+**What this settles that the equation alone could not.** The coupled equation can be written down with any operator in place of the gradient, and every such equation is an equation. Only the functional selects the operator whose equation is *the* equation of a locally phased field. The variational principle therefore does real work here: it converts "couple by this prescription" into "the prescription is what local invariance requires".
+
+**What it does not settle.** The repair is unique *within the abelian class* and up to terms of higher order in the field strength. A term built from $\tilde F$ alone is invariant and cannot be excluded by this argument; it is the gauge field's own action and belongs to the Maxwell article, not to the matter action. The argument also says nothing about non-abelian connections, where $\tilde A_\Phi$ does not commute with the field and the two terms above do not separate.
 
 ## The Current: What the Action Produces and What It Does Not
 

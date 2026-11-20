@@ -1,5 +1,7 @@
 # __The Lagrangian and the Klein–Gordon Equation in the Non-Quantum Limit__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+
 ## Introduction
 
 **The limit in one sentence.** Write the parent's polar action for the central field, delete the scale's kinetic term — one Lorentz scalar — and the two variations of what is left are the mass shell and the transport equation.
@@ -16,7 +18,9 @@
 
 **The restriction is the parent's.** The central field is $\theta_{\mathrm{rpd}}=0$ with the rotor a sign, and the parent proves that class is invariant only under a central Hamiltonian. The limit is defined there, as in the other families.
 
-**Conventions.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
 
 ## The Action and Its Three Blocks
 
@@ -102,6 +106,18 @@ which is $\partial_{r'_{t}}(\rho_{\mathrm{num}}\partial_{r'_{t}}S)-\vec\nabla_\P
 **The current follows from the same variation.** Differentiating $\varrho^{2}(\partial\theta)^{2}$ with respect to $\partial_\mu\theta$ returns $2\varrho^{2}\partial_\mu\theta$, so the current is $\rho_{\mathrm{num}}\partial_\mu S$, which is the parent's $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde P_\Phi/m$ up to the mass factor. **The truncated action already knows the current**, and the transport equation is its conservation.
 
 **The pair the limit produces, in the parent's words.** Relativistic irrotational dust: a pressureless flow along the phase gradient, with the density carried by the flow and the four-velocity normalised to $mc$. The parent states that with the quantum term the fluid is not dust, and that without it the pair is dust. **This article supplies the action of the dust and nothing more.**
+
+## The Noether Currents: Density, Charge and Energy
+
+**The current is the density times the transport velocity, and the limit makes that literal.** The phase's momentum is the density,
+$$
+\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\ \longrightarrow\ \varrho^{2}\quad\text{in the non-quantum limit},
+$$
+and the phase's Euler–Lagrange equation is the continuity equation $\partial_{r'_t}\rho+\vec\nabla_\Phi\cdot(\rho\vec v)=0$ with $\vec v$ the transport velocity. The limit does not change the equation; it removes the terms that made $\rho$ differ from $\varrho^{2}$.
+
+**The charge and the energy.** The charge is the integral of $\rho$, times the coupling where the field is charged, and it carries no mass. The energy is the mass shell's value, and it carries the mass. The split is exact in the parent and survives the limit unchanged, which is why this article's verification section can check both in one line each.
+
+**What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
 ## What the Variational Route Adds
 

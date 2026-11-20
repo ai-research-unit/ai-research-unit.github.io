@@ -1,5 +1,7 @@
 # __The Lagrangian and the Schrödinger Equation in Polar Variables__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 *The Schrödinger Equation in Biquaternionic Polar Variables* substitutes the complete polar decomposition of the field into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out. The action in element form is the companion's, *The Lagrangian and the Schrödinger Equation*:
@@ -34,7 +36,6 @@ The angle is $\theta_{\mathrm{evo}}=h_t t'/\hbar$, the scalar part of the Hamilt
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Schrödinger equation in its polar form.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 **Two notational choices, made once.** First, the rotor's angular velocity is the real vector $\vec\Omega$ defined by
 
@@ -49,6 +50,10 @@ V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi\cdot\ve
 $$
 
 so that the potential term of the Lagrangian is $\varrho^{2}V$. Both symbols are used with these meanings throughout.
+
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 ## The Polar Action: The General Element
 
@@ -330,6 +335,28 @@ J=\begin{pmatrix}\cos\theta & -\varrho\sin\theta\\ \sin\theta & \varrho\cos\thet
 $$
 
 a rotation composed with a dilation, invertible everywhere except at $\varrho=0$ which is outside the domain. The two parameter equations are the conservation of $\varrho^{2}$ and the phase rate, and they are the same two numbers as the two brackets $(\dot \varrho/\varrho,\dot\theta)$ of the same field. The general-element Jacobian is not computed here, and the article's open questions say so.
+
+## The Noether Currents: Density and Energy
+
+**The density is the phase's conjugate momentum, with a sign.** The boxed action for the central field is
+
+$$
+L=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\varrho^{2}V+\text{(rotor terms)},
+$$
+
+so
+
+$$
+p_{\theta_{\mathrm{pha}}}=-\hbar\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N,
+\qquad
+N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}>0 .
+$$
+
+The conserved quantity is $N$, the number density, and the minus sign is the convention on the action's overall factor, not a negative density. The article states it once here and uses $N$ throughout.
+
+**The energy.** The Legendre transform of the box is the Hamiltonian, and the two terms are the kinetic energy of the frame and the potential $\varrho^{2}V$; the first is what the free element article calls the quadratic form and the second is the parent's potential. The conservation of $N$ is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, which the fourth section displays as $\mathrm{d}(\varrho^{2})/\mathrm{d}t'=0$ in the central case; the two statements are one equation read as a current and as an equation.
+
+**What the chart does not add.** No new current and no new conservation law. The phase current is the parent's density, the energy is the parent's Hamiltonian, and the chart's contribution is that both are functions of the density and the frame rather than of the field. That is the honest ledger, and it is the reason the article is short.
 
 ## What the Polar Variational Principle Adds and What It Does Not
 

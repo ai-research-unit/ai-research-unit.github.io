@@ -1,5 +1,7 @@
 # __The Lagrangian and the Spin-Half Fluid__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The spinor case is the one in which the action's canonical structure has a closed form, and the closed form says something the equations do not.** In [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) the fluid is a triple at each event — a density, a frame and a spin direction — and the system does not close. Here the same field is written as an action in those variables, and the action's canonical structure is computed rather than asserted: which of the triple's data are canonical and which are not, with what weights.
@@ -20,7 +22,9 @@ with $\beta=\lvert\vec v\rvert/c$, $\vec\omega_{\mathrm r}$ the rotor's body ang
 
 **Position in the block.** This is the variational companion of [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) and the fifth of the eight articles of this layer. It is the first in which the canonical structure is not trivial, and the first in which the particle setting is a real restriction: the block's vorticity is a spatial gradient of the frame and the closed form below has no spatial gradient anywhere.
 
-**Conventions.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\beta=\tanh\theta_{\mathrm{rpd}}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ with $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. The action is the element action of [The Lagrangian and the Dirac Equation in Polar Variables](the-lagrangian-and-the-dirac-equation-in-polar-variables.html), and the spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\beta=\tanh\theta_{\mathrm{rpd}}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ with $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. The action is the element action of [The Lagrangian and the Dirac Equation in Polar Variables](the-lagrangian-and-the-dirac-equation-in-polar-variables.html), and the spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow.
 
 ## The Kinetic Term
 
@@ -42,25 +46,13 @@ $$
 
 **The sign of the second term is the frame's and it is worth recording.** It is negative, so the spin's contribution to the kinetic term opposes the phase's. The polar companion notes that the two kinetic terms of the Schrödinger and Dirac companions have the same shape and opposite signs, and the fluid reading says where the sign sits: in the cross term between the flow's direction and the rotor's rate, not in the phase's term.
 
-## The Canonical Table
+## The Variation
 
-**Four statements, and each is an identity rather than a sample.** Differentiating the closed form,
+**The action is first order in two of the five coordinates.** The kinetic term carries $\dot\theta_{\mathrm{pha}}$ and the rotor's body angular velocity, and no other rate. So the variation produces two kinds of equation. The two canonical coordinates give the equations the fluid uses: the phase's is the continuity equation for $\rho_{\mathrm{chg}}$, and the rotor's is the transport of the spin direction. The three remaining coordinates give $p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=p_{\varrho}=0$, which are the algebraic conditions of the canonical table and not evolution equations.
 
-| momentum | value | fluid reading |
-| --- | --- | --- |
-| $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\hbar c\,\rho_{\mathrm{chg}}$ | the charge density; the phase is canonical in every frame |
-| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\vec n_{\mathrm{rot}}=-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | the charge density times $\beta$, along the boost axis in the body frame |
-| $p_{\theta_{\mathrm{rpd}}}$ | $0$ | the rapidity is not canonical |
-| $p_{u_{\mathrm b}}$ | $0$ | the velocity's direction is not canonical |
-| $p_{\varrho}$ | $0$ | the density is not canonical |
+**No boundary term.** A first-order action has nothing to integrate by parts, so the variation of the kinetic term is algebraic in the variations and the only surface contribution comes from the spatial gradient terms, which vanish for a variation of compact support. That is why the fluid's equations are first order in the density and the phase and second order in nothing.
 
-**The middle row is the one the block's articles could not state.** $\vec p_{\mathrm{spin}}$ is a closed form and not a projector: it is a vector, its magnitude is $\hbar c\rho_{\mathrm{chg}}\beta$, and its direction is $\vec n_{\mathrm{rot}}$. **The canonical spin is therefore locked to the flow's direction, and the lock is through the frame's rotor**: $\vec n_{\mathrm{rot}}$ is the boost axis carried into the body frame, so it is the velocity's direction as the spin's own frame sees it.
-
-**The lock the block states is a lock of magnitudes, and it does not identify the two directions.** [Spin-Velocity Locking on the Degenerate Sector](spin-velocity-locking-on-the-degenerate-sector.html) constrains the rapidity against the spin angle, $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$, and constrains the two axes to be orthogonal; nothing in it makes $\vec n_{\mathrm{rot}}$ and $\vec s$ one vector. They are different objects for a structural reason: $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ is the boost axis carried into the body frame, and $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ is the declared axis carried out of it, so the rotor acts on the two in inverse senses. **The canonical spin is the flow's direction as the body frame sees it and the spin direction is the body frame's own axis**, and they coincide only where the rotor is trivial and the boost is along $\vec e_z$, which is the end of the sector where both momenta vanish. Off that point the difference between them is the quantity [The Non-Uniqueness of the Spin-Half Fluid](the-non-uniqueness-of-the-spin-half-fluid.html) isolates.
-
-**The four zeros are the scalar rung's statement, extended.** There the density and the velocity are not canonical and nothing else is; here the phase and the spin are canonical and the other two are not. **The count is the triple's**: three data, of which the density and the frame never carry momentum and the phase and the spin do. That is why the block's fluid can be described by a density and a direction and why the dynamics sits in the two angles.
-
-**The qualification is part of the table and not a footnote.** At $\theta_{\mathrm{rpd}}=0$ the spin's momentum vanishes with the density's and the velocity's, and the table has one non-zero row. The polar companion records that the phase and the spin are not unconditional: the unconditional form of the claim fails at rest. The fluid chart's version of the correction is the weight $\beta$: **the spin's canonical weight is the flow's speed, so the rest frame is the degenerate case of the table and not an exception to it.**
+**What the variation cannot give.** It cannot produce the pressure, because the action has no term in $\rho_{\mathrm{num}}$ alone apart from the mass term; a fluid with an equation of state needs one. That absence is the article's declaration, not a defect of the calculation, and it is what makes the spin-half fluid a pressureless fluid with a spin.
 
 ## The Constraints and Where the Non-Closure Lives
 
@@ -91,6 +83,26 @@ $$
 **The operator setting's action must therefore contain the frame's spatial gradients, and its structure is determined by what the block already knows.** [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html) writes the operator action with the gradient terms collected as "terms in $\vec\nabla_\Phi \varrho$, $\vec\nabla_\Phi\theta_{\mathrm{rpd}}$, $\vec\nabla_\Phi\theta_{\mathrm{axr}}$" and does not compute them. What the block's vorticity statement fixes is their content: the antisymmetrised gradient of the frame is the spin connection's field strength, so the gradient terms are the spin connection's kinetic term, and the vorticity is its curl. **The block's sentence "the vorticity is sourced by the frame's gradients" and the statement "the gradient terms are the spin connection's" are the same statement**, and the second is the one a variational formulation can use.
 
 **The honest boundary.** This article does not compute those terms. It states the closed form of the particle setting, the canonical table that follows from it, the location of the non-closure, and the structure the operator setting must have. **A reader looking for the full field-theoretic Lagrangian of the spin-half fluid will find the particle setting's exact result and the operator setting's programme, and the two are not the same article.**
+
+## The Canonical Table
+
+**Four statements, and each is an identity rather than a sample.** Differentiating the closed form,
+
+| momentum | value | fluid reading |
+| --- | --- | --- |
+| $p_{\theta_{\mathrm{pha}}}$ | $\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=\hbar c\,\rho_{\mathrm{chg}}$ | the charge density; the phase is canonical in every frame |
+| $\vec p_{\mathrm{spin}}$ | $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\vec n_{\mathrm{rot}}=-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$ | the charge density times $\beta$, along the boost axis in the body frame |
+| $p_{\theta_{\mathrm{rpd}}}$ | $0$ | the rapidity is not canonical |
+| $p_{u_{\mathrm b}}$ | $0$ | the velocity's direction is not canonical |
+| $p_{\varrho}$ | $0$ | the density is not canonical |
+
+**The middle row is the one the block's articles could not state.** $\vec p_{\mathrm{spin}}$ is a closed form and not a projector: it is a vector, its magnitude is $\hbar c\rho_{\mathrm{chg}}\beta$, and its direction is $\vec n_{\mathrm{rot}}$. **The canonical spin is therefore locked to the flow's direction, and the lock is through the frame's rotor**: $\vec n_{\mathrm{rot}}$ is the boost axis carried into the body frame, so it is the velocity's direction as the spin's own frame sees it.
+
+**The lock the block states is a lock of magnitudes, and it does not identify the two directions.** [Spin-Velocity Locking on the Degenerate Sector](spin-velocity-locking-on-the-degenerate-sector.html) constrains the rapidity against the spin angle, $\cosh(\theta_{\mathrm{rpd}}/2)\cos(\theta_{\mathrm{axr}}/2)=\varepsilon$, and constrains the two axes to be orthogonal; nothing in it makes $\vec n_{\mathrm{rot}}$ and $\vec s$ one vector. They are different objects for a structural reason: $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$ is the boost axis carried into the body frame, and $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ is the declared axis carried out of it, so the rotor acts on the two in inverse senses. **The canonical spin is the flow's direction as the body frame sees it and the spin direction is the body frame's own axis**, and they coincide only where the rotor is trivial and the boost is along $\vec e_z$, which is the end of the sector where both momenta vanish. Off that point the difference between them is the quantity [The Non-Uniqueness of the Spin-Half Fluid](the-non-uniqueness-of-the-spin-half-fluid.html) isolates.
+
+**The four zeros are the scalar rung's statement, extended.** There the density and the velocity are not canonical and nothing else is; here the phase and the spin are canonical and the other two are not. **The count is the triple's**: three data, of which the density and the frame never carry momentum and the phase and the spin do. That is why the block's fluid can be described by a density and a direction and why the dynamics sits in the two angles.
+
+**The qualification is part of the table and not a footnote.** At $\theta_{\mathrm{rpd}}=0$ the spin's momentum vanishes with the density's and the velocity's, and the table has one non-zero row. The polar companion records that the phase and the spin are not unconditional: the unconditional form of the claim fails at rest. The fluid chart's version of the correction is the weight $\beta$: **the spin's canonical weight is the flow's speed, so the rest frame is the degenerate case of the table and not an exception to it.**
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 

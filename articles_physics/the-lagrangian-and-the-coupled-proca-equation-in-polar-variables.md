@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Proca Equation in Polar Variables__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 This article substitutes the complete polar decomposition into the coupled Proca action and reads what the substitution makes visible. It is the polar companion of *The Lagrangian and the Coupled Proca Equation*, it depends on *The Coupled Proca Equation in Biquaternionic Polar Variables* for the word and the brackets, and its free counterpart is *The Lagrangian and the Proca Equation in Polar Variables*.
@@ -27,6 +29,10 @@ with eight real parameters. The word is a bijection onto the N-regular set, so t
 *Third, the chart's system is second order and regular in form, and the article does not establish that its Hessian is non-degenerate.* The Proca field is second order in the material time, so no momentum vanishes identically and there is no primary constraint to exhibit. That is the structural difference from the Schrödinger and Dirac companions, whose actions are first order and whose charts expose six vanishing momenta. The article states the count, states the difference, and records the Hessian's regularity as an open item rather than asserting it.
 
 **What is not here.** The element-form companion owns the field term's normalization question; this article uses the action as given. The equation, the covariant field strength and the covariant Lorenz condition are the polar companion's. This article's subject is the action in the chart, what the chart makes exact, and what it does not.
+
+## Conventions
+
+**The conventions are the free chart's, restated for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the word is $\tilde A=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde u$, with $\varrho>0$ and $\tilde u$ a unit element of the frame; the connection is $\tilde A_\Phi$ with real components $A_\mu$ and the coupling is $ϙ$. The pairing and the measure are those of the free chart, $k_m=mc/\hbar$, and the two settings are the parent's.
 
 ## The Action in the Chart
 
@@ -97,6 +103,20 @@ exactly, with the other seven parameters fixed: the gauge transformation is the 
 **The range caveat.** A finite translation may carry $\theta_{\mathrm{pha}}$ outside $(-\pi/2,\pi/2]$, and the word's first factor is then not in the chart's normal form. The field is unaffected and the chart is; the article states the infinitesimal identity as the exact statement and records the range as a property of the coordinates. The polar companion makes the same remark for the same reason.
 
 **What the chart does not need.** A Lagrange multiplier for the Lorenz condition. The condition is the trace of the equation and it is a consequence, not a constraint to be imposed, and in the chart it is the statement that the divergence of the word vanishes. A formulation that imposed it with a multiplier would be imposing an equation that the variation already gives, and the article records the redundancy rather than using it.
+
+## The Structural Consequence: The Mass Term Is a Function of the Frame
+
+**In the chart the mass term loses the potential and keeps the frame.** The element article's mass term is $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$, a bilinear of the complex potential. Substituting the word, the phases cancel inside the bilinear and what remains is
+
+$$
+\mathrm{Sc}\bigl(\tilde A^{*}\tilde A^{\natural}\bigr)=\varrho^{2}\,R(\text{frame}),
+$$
+
+with $R$ a function of the frame's angles alone. The scalar potential and the vector potential have become the scale and the frame, and the mass term depends on them only through the invariant length.
+
+**The consequence, and it is the article's own.** Because the mass term carries no derivative, it cannot change the rank of the kinetic Hessian; because it depends on the frame, it is what makes the longitudinal direction massive. The two statements are the two halves of the Proca mechanism in this chart, and they are visible in one display: the Hessian is built from $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ and the mass term from $\varrho^{2}R$.
+
+**The hand check.** Set the frame to the identity, $\theta_{\mathrm{rpd}}=0$. Then $\vec A=0$, the Hessian vanishes, and the chart degenerates: the pure-scale configuration has no kinetic term at all. The mass term is still $\varrho^{2}R(1)$, so the configuration is a minimum of the potential and not a solution of the dynamics. That degeneration is the chart's way of saying that a Proca field with no vector part is not a field.
 
 ## The Currents in the Chart
 

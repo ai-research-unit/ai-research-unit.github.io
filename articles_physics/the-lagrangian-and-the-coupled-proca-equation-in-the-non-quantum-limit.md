@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Proca Equation in the Non-Quantum Limit__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The limit adds no constraint beyond the one the parent imposes, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+
 ## Introduction
 
 **The finding, in one sentence.** The same deletion that fails in the free Proca action succeeds in the coupled one, because the complex carrier puts the oscillation in the phase and leaves the amplitude an envelope whose kinetic term is genuinely small.
@@ -27,7 +29,9 @@ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar
 
 **The restriction.** The word is defined for $\varrho>0$; the limit is a statement on the chart's domain; the cone is $\varrho=0$.
 
-**Conventions.** Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
 
 ## The Blocks
 
@@ -68,6 +72,14 @@ the mass shell with the frame factor on the right. **Keeping the block would add
 
 **What the three variations give together.** A constraint, a transport, and a transport — the same three-plus-one structure as the free chart, now with the phase's bracket available and therefore with a genuine guidance equation among them.
 
+## The Structural Consequence: The Coupling Reaches the Constraint and Not the Mass
+
+**Two brackets out of four, and the two are the ones that matter.** The potential is central with a temporal and a spatial slot, so it enters the amplitude's covariant derivative and the frame's transport. It does not enter the mass block, which is a function of $\varrho$ and the frame alone, and it does not enter the rotor, which is a real vector part.
+
+**The consequence.** The Lorenz condition is covariantised, because it is the scalar part of a covariant divergence; the mass shell is not, because the mass term is unchanged; and the spin direction is not, because the connection cannot reach it. Those three statements are the article's ledger, and they are exact: no approximation enters, since the coupling is a substitution in the derivative.
+
+**The hand check.** Set the connection to a pure gradient, $\tilde A_\Phi=\partial\Lambda$. The covariant derivative shifts by a central element, the field strength is unchanged, and the constraint's scalar part is unchanged, because the extra term is a divergence. The mass block never sees the connection at all. So the gauge orbit is a direction in which only the phase moves, and the structural three-way split is visible in one choice.
+
 ## The Deletion in the Proca Pair
 
 **The ledger across the two Proca articles.**
@@ -80,6 +92,20 @@ the mass shell with the frame factor on the right. **Keeping the block would add
 **The same block, two verdicts, and the difference is the word's second factor.** A complex word's phase absorbs the oscillation, so the amplitude's gradient is a slow gradient; a real word has no phase and the amplitude's gradient is the oscillation itself.
 
 **The exactness row deserves its sentence.** On a constant envelope the deleted term is identically zero, so the truncated action is not an approximation there but the same functional. **The limit's error is exactly the envelope's curvature and nothing else**, and that is the strongest statement available in the family.
+
+## The Noether Currents: The Conserved Charge of the Coupled Chart
+
+**The charge exists once the potential is complex.** The free Proca field has no phase symmetry; the coupled one does, because the potential is complex and the phase rotation is compensated by the connection. So the charge appears with the coupling and not before it, and its density is the phase's conjugate momentum,
+
+$$
+\rho_{\mathrm{ch}}=q\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}=q\,N ,
+$$
+
+with $q$ the parent's charge.
+
+**Why the coupling creates it.** In the free theory the phase is not a variable; in the coupled theory it is, and the connection absorbs its gradient. The Noether procedure then returns the current that the connection multiplies in the action, which is the same object the element article calls the source. The identity of current and source is therefore a statement about the variation, and the limit does not weaken it.
+
+**The mass in the energy only.** As in every family of the corpus, the charge carries no mass and the energy carries the mass squared. The limit's contribution is that both survive with their signs intact, and that the constraint the coupling covariantises is the one that removes the fourth degree of freedom.
 
 ## What the Variational Route Adds
 

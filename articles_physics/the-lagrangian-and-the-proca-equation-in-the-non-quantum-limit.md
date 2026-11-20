@@ -1,5 +1,7 @@
 # __The Lagrangian and the Proca Equation in the Non-Quantum Limit__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The limit adds no constraint beyond the one the parent imposes, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+
 ## Introduction
 
 **The finding, in one sentence.** The variational route confirms the local-form companion's result and makes it quantitative: in the Proca action the amplitude's kinetic term and the mass term are of the same size, so deleting one is not an approximation but a change of theory.
@@ -24,7 +26,9 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, wit
 
 **The restriction.** The word is defined for $\varrho>0$ on one branch; the boundary is the lightlike set where the norm vanishes.
 
-**Conventions.** Those of the polar parent and its variational companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\Gamma_\mu$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the polar parent and its variational companion: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde A_\Phi=a'_{t}e_{t}+\vec A$ real; $\Gamma_\mu$ the frame's connection; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$.
 
 ## The Action in the Word
 
@@ -41,6 +45,36 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, wit
 **The frame's terms.** The boost's connection enters the kinetic term through the covariant derivative, so the action is the free scalar action of the amplitude plus a sigma-model term for the frame. **The parent's two boxed equations are exactly the two variations of this display.**
 
 **The constraint.** The Lorenz condition is the scalar part of the equation, $\mathrm{Sc}(\tilde\nabla_\Phi^{\natural}\tilde A_\Phi)=0$, which in the chart is one real equation among four. **It is a constraint on the frame and on the amplitude together**, and it is the chart's version of the transversality of a massive vector field.
+
+## The Two Variations
+
+**Two variations of one display, and a third for the constraint.** The chart's action has an amplitude block with two derivatives, a mass block with none, and the frame's sigma-model term. Varying the amplitude gives an equation with a second derivative and the mass term; varying the frame's angles gives the transport of the boost, which is the article's *What Survives*; varying the connection gives the Lorenz condition.
+
+**The boundary term.** The amplitude's variation produces one, because its block carries two derivatives; on a region with fixed amplitude on the boundary it vanishes, and on a region that reaches infinity the fall-off kills it. The frame's variation produces none, because the frame enters algebraically through $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ and through no derivative of its own beyond the covariant one.
+
+**Why the constraint is not a choice.** The Lorenz condition is the scalar part of the connection's variation, so it is one of the Euler–Lagrange equations and not a gauge fixing. In the massless limit the same variation gives an identity instead, and that change of status is the article's *The Truncation and Its Error* read from the variation side.
+
+## What Survives
+
+**The frame's sector.** The variation of the frame's angles returns the parent's second boxed equation, and it is the chart's genuine dynamical content. **The frame of a real massive vector field is a dynamical object and its transport is exact.**
+
+**The constraint.** The Lorenz condition is exact and it is one equation among four. **In the other families the analogous condition is the transversality of the polarisation**, and here it comes from the action's own structure.
+
+**The absence of a quantum potential.** With no small parameter there is no term that plays the role of a correction, so nothing in this family deserves the name. **The corpus's language about a quantum potential does not transfer to the free Proca chart**, and the article records that rather than inventing one.
+
+## The Noether Currents: The Stress and No Charge
+
+**No charge, because there is no phase.** The Proca potential is real on the material sector, so a central phase rotation is not a symmetry of the action; the element article proves it and the chart inherits it. The parameter that would carry a charge, $\theta_{\mathrm{pha}}$, is not a variable of the branch, so there is no momentum to conserve and no density to call a charge.
+
+**The stress.** Translation invariance gives the energy–momentum of the field, and in the chart its temporal component is the energy density,
+
+$$
+\mathcal{H}=\tfrac12\bigl(\epsilon\vec E^{2}+\vec B^{2}/\mu+k_m^{2}\lvert\vec A\rvert^{2}\bigr),
+$$
+
+with $\vec E$ and $\vec B$ the chart's fields. The energy is what the frame's transport conserves, and it is the only conserved quantity the free Proca action has.
+
+**What the absence says about the limit.** A non-quantum limit is usually read as a particle limit, with a density and a flux. This family has neither, so the limit's language does not transfer: what survives is a field's stress and a constraint. That is the sharpest negative result of the family, and it is why the article refuses a truncation.
 
 ## The Truncation and Its Error
 
@@ -59,14 +93,6 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, wit
 **The third row is the article's result**, and the second row's entry is the reason the Dirac family could be treated at all: there the deleted terms are gradients of a frame that follows the momentum.
 
 **What the variational route can still do.** It can state the constraint and the frame's transport as variations, which is exact. **It cannot justify a truncation, and the honest move is to say so and stop**, rather than to present a truncation whose error is unestimated because it is large.
-
-## What Survives
-
-**The frame's sector.** The variation of the frame's angles returns the parent's second boxed equation, and it is the chart's genuine dynamical content. **The frame of a real massive vector field is a dynamical object and its transport is exact.**
-
-**The constraint.** The Lorenz condition is exact and it is one equation among four. **In the other families the analogous condition is the transversality of the polarisation**, and here it comes from the action's own structure.
-
-**The absence of a quantum potential.** With no small parameter there is no term that plays the role of a correction, so nothing in this family deserves the name. **The corpus's language about a quantum potential does not transfer to the free Proca chart**, and the article records that rather than inventing one.
 
 ## What the Variational Principle Adds to the Family
 

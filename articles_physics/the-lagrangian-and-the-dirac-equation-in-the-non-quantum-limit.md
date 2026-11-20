@@ -1,5 +1,7 @@
 # __The Lagrangian and the Dirac Equation in the Non-Quantum Limit__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The limit adds no constraint beyond the one the parent imposes, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+
 ## Introduction
 
 **The limit in one sentence.** The parent's Dirac action is already first order in every velocity, so there is no kinetic term to delete: the non-quantum limit in this family is the statement that the three vanishing momenta are the order-zero constraints and that the flow they generate is order one.
@@ -26,7 +28,9 @@ with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direct
 
 **The restriction.** The word exists where $N(\tilde\Xi)\neq0$, and the action is written for the central class's complement — the eight parameters with the frame. The limit is defined on that domain.
 
-**Conventions.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\hbar\theta_{\mathrm{pha}}$; $k_m=mc/\hbar$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $S=\hbar\theta_{\mathrm{pha}}$; $k_m=mc/\hbar$; $\vec\omega_{\mathrm r}$ the rotor's body angular velocity; $\hat n_{\mathrm{rot}}$ its axis; $\mathcal V$ the mass function of the frame; $\epsilon=1/(k_{\Phi}L)$.
 
 ## The Action and the One-Form
 
@@ -56,21 +60,27 @@ $$
 
 **The equations.** $\Omega_{xy}\dot q^{y}=\partial_x U$ with $\Omega=\mathrm{d}A$ closed because $\mathrm{d}^{2}=0$ and degenerate for the same reason the Hessian is. **Eight first-order equations**, and the parent prints three of them at once.
 
-## What the Limit Reads
+## The Variation: The Momenta and the Flow
 
-**Nothing is deleted, so the limit is an assignment.** The two statements it makes are:
+**The variation of a first-order action gives the momenta and the flow.** The action is $\int\mathrm{d}t'\,\bigl\{A_x(q)\dot q^{x}-U(q)\bigr\}$ with $A$ the one-form of the previous section. Varying it gives
 
-| object | what it is | order |
-|---|---|---|
-| the vanishing momenta | three algebraic conditions on the eight coordinates | $0$ |
-| the flow $\Omega\dot q=\mathrm{d}U$ | eight first-order transport equations | $1$ |
-| products of two flow equations | quadratic in the connections | $2$ |
+$$
+\delta S=\int\mathrm{d}t'\;\Bigl[\bigl(A_x\dot q^{x}-U\bigr)_{,y}\delta q^{y}-\frac{\mathrm{d}}{\mathrm{d}t'}\bigl(A_y\delta q^{y}\bigr)\Bigr],
+$$
 
-**The first row is the equation route's order zero.** $p_r=0$ is the statement that the scale is not a dynamical variable, and its equation is the mass shell once $\mathcal V$ is evaluated on the constraint surface; $p_{\theta_{\mathrm{rpd}}}=0$ and $p_{\vec u_{\mathrm b}}=0$ are the conditions that fix the boost's rapidity and axis, that is the polarisation of the frame by the momentum. **The algebraic frame of the companion article is the vanishing of three momenta.**
+and the second term is a total derivative, so it contributes a boundary term at the endpoints and nothing else. Setting the first bracket to zero and using $\Omega=\mathrm{d}A$ gives
 
-**The second row is the equation route's order one.** The flow is first order and it carries the density, the velocity and the spin, because the eight coordinates are the density, the phase, the rapidity, the boost's axis and the rotor's three angles. **Three transport laws and one phase rate**, which is what the companion's order one is.
+$$
+p_y=A_y(q),
+\qquad
+\Omega_{yx}\dot q^{x}=\partial_y U ,
+$$
 
-**The third row is order two and it is not a term of the action.** The products of two flow equations are what the iteration produces, and they are the amplitude's curvature combined with the frame's. **A variational principle on a first-order action cannot produce a second-derivative term**, and that is the structural reason this family has no quantum potential of the Klein–Gordon type.
+which are the momenta and the eight first-order equations of the previous section. The two displays of the parent's are read here as one variation, and the reading is exact.
+
+**Why the Hessian vanishes, seen from the variation.** The action is linear in every rate, so $\partial^{2}S/\partial\dot q^{x}\partial\dot q^{y}=0$ identically and the Legendre transform is not invertible. That is the same fact as the vanishing of the three momenta, and it is the reason the equation is first order rather than second.
+
+**Where the mass shell sits.** The mass term is inside $U$, so its variation contributes to $\partial_yU$ and to nothing else: the mass fixes the direction and does not enter the one-form. That is the content of the following section, and the variation is what makes the separation visible.
 
 ## The Mass Term and the Fixed Direction
 
@@ -87,6 +97,30 @@ using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. **N
 **What this is in the limit's language.** The direction is the spin axis's own frame direction, so the mass term and the spin's axis are one object in this action. **The polarisation the companion's order zero fixes is not an extra assumption: it is what the mass term requires**, and the limit inherits it unchanged.
 
 **The variational form of the parent's warning.** The parent says that reading the pair's letters as values gives no non-zero solution, and that the value-consistent display carries the direction $i\vec v$. The action says the same from the other side: a mass term that couples the two chirality parts vanishes identically unless the direction is there. **Two statements, one fact.**
+
+## The Noether Currents: The Density, the Spin and the Energy
+
+**Three quantities, and the first is a momentum.** The phase rotation is a symmetry, and its conserved quantity is the momentum that the one-form carries, $p_{\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. Division by $\hbar c$ gives the density $\rho_{\mathrm{num}}$, positive, and the current is $\rho_{\mathrm{num}}$ times the transport velocity.
+
+**The spin.** The rotor's momentum is $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, a vector along the boost axis weighted by the rapidity. Its conservation is the statement that the spin direction is transported without precession in the free theory, and the mass term is what couples the spin direction to the momentum, so the free conservation is exact and the coupled one is not.
+
+**The energy.** The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot q$ cancels the kinetic term. So the energy of a configuration is the mass term evaluated on it, $U=\hbar c\,k_m\varrho^{2}\mathcal V$, and the equation of motion is the statement that the flow is tangent to the level surfaces of $U$ in the symplectic form $\Omega$. The energy carries the mass and the density does not, which is the limit's version of the split the element article makes.
+
+## What the Limit Reads
+
+**Nothing is deleted, so the limit is an assignment.** The two statements it makes are:
+
+| object | what it is | order |
+|---|---|---|
+| the vanishing momenta | three algebraic conditions on the eight coordinates | $0$ |
+| the flow $\Omega\dot q=\mathrm{d}U$ | eight first-order transport equations | $1$ |
+| products of two flow equations | quadratic in the connections | $2$ |
+
+**The first row is the equation route's order zero.** $p_r=0$ is the statement that the scale is not a dynamical variable, and its equation is the mass shell once $\mathcal V$ is evaluated on the constraint surface; $p_{\theta_{\mathrm{rpd}}}=0$ and $p_{\vec u_{\mathrm b}}=0$ are the conditions that fix the boost's rapidity and axis, that is the polarisation of the frame by the momentum. **The algebraic frame of the companion article is the vanishing of three momenta.**
+
+**The second row is the equation route's order one.** The flow is first order and it carries the density, the velocity and the spin, because the eight coordinates are the density, the phase, the rapidity, the boost's axis and the rotor's three angles. **Three transport laws and one phase rate**, which is what the companion's order one is.
+
+**The third row is order two and it is not a term of the action.** The products of two flow equations are what the iteration produces, and they are the amplitude's curvature combined with the frame's. **A variational principle on a first-order action cannot produce a second-derivative term**, and that is the structural reason this family has no quantum potential of the Klein–Gordon type.
 
 ## What the Variational Route Adds
 

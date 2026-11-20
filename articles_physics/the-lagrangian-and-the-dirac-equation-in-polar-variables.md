@@ -1,5 +1,7 @@
 # __The Lagrangian and the Dirac Equation in Polar Variables__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted.
+
 ## Introduction
 
 *The Dirac Equation in Biquaternionic Polar Variables* substitutes the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out.
@@ -24,11 +26,14 @@ The word is a bijection from eight parameters onto the invertibles of $\mathbb{B
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Dirac equation in its polar form.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 
 **The parameters and their ranges.** $\varrho>0$; $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$; $\theta_{\mathrm{rpd}}\ge0$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$; $\theta_{\mathrm{axr}}\in[0,2\pi]$ with $\tilde u_{\mathrm r}=\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$; $\vec u_{\mathrm b}$ and $\vec u_{\mathrm r}$ unit real vectors. The density is $\rho_{\mathrm{num}}=\varrho^{2}$ and the Lorentz factor is $\gamma=\cosh\theta_{\mathrm{rpd}}$, so $2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
 **The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
+
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 
 ## The Substitution: The Word and the Two Parts
 
@@ -129,50 +134,6 @@ where $\vec p_{\mathrm{spin}}$ is the vector whose contraction with $\vec\omega_
 **The spin's momentum is locked to the boost.** $\vec p_{\mathrm{spin}}$ is proportional to $\sinh\theta_{\mathrm{rpd}}$. In the rest frame the rotor carries no momentum at all, however fast it turns, and the action's dynamical content is the phase alone. This is the sharpest statement the closed form makes, and it is the one the projector display could not make.
 
 **The sign, and the overall factor.** The Dirac kinetic term is $+\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$; the Schrödinger one is $-\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$. The difference is one operator and one antisymmetrization. The Dirac term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}(-i\hbar c\,\partial_{t'})\tilde\Xi]$, and $-i\hbar c\,\partial_{t'}$ is self-adjoint, so its expectation has a real part and no symmetrization is needed. The Schrödinger term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}(i\hbar c\,\partial_{r'_t})\tilde\Xi]$, and $i\hbar c\,\partial_{r'_t}$ is anti-self-adjoint, so its expectation is purely imaginary and the action must antisymmetrize: $\tfrac{i\hbar c}{2}(\tilde\Xi^{*}\dot{\tilde\Xi}-\dot{\tilde\Xi}^{*}\tilde\Xi)$ has scalar part $-\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$, which is where the minus comes from. The sign is a fact about the two equations and not a convention, while the factor $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is common to both and is the physical statement.
-
-## The Mass Term and the Fixed Direction
-
-The mass term of the element action is off-diagonal in the parts, and on the frame's parts it vanishes.
-
-**The vanishing, in one line.** With $\tilde\Xi_L=\tilde\Xi\Pi_+$ and $\tilde\Xi_R=\tilde\Xi\Pi_-$,
-
-$$
-\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_R\bigr]
-=\mathrm{Sc}\bigl[\Pi_+\tilde\Xi^{*}\tilde\Xi\Pi_-\bigr]
-=\mathrm{Sc}\bigl[\Pi_-\Pi_+\tilde\Xi^{*}\tilde\Xi\bigr]=0,
-$$
-
-using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. The conjugate term vanishes the same way. Nothing is assumed here beyond the idempotents and the trace property, so the vanishing needs no sample.
-
-**What the vanishing means.** It is the variational form of the parent's warning. The parent says that reading the pair's letters as values gives no non-zero solution, and that the value-consistent display carries the direction $i\vec v$. The action says the same thing from the other side: a mass term that couples two complementary ideals is zero, so a value-split action has no mass at all, and the mass must come back through an element that reverses the value.
-
-**The repair, and its form.** Right multiplication by $i\vec v$ with $\vec v$ a fixed unit spatial direction reverses the value, because $\vec v\vec e_z=-\vec e_z\vec v$ for $\vec v\perp\vec e_z$. So
-
-$$
-\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_R\,i\vec v\bigr]\ne0
-\qquad\text{for }\vec v\perp\vec e_z,
-$$
-
-and it is zero for $\vec v\parallel\vec e_z$, so the direction is fixed by the frame's third direction and is not a free choice: only the directions that reverse the value give a mass. The mass term of the polar action is therefore
-
-$$
-\mathcal{L}_{\mathrm{mass}}=-\hbar c\,k_m\,\varrho^{2}\,\mathcal{V},
-\qquad
-\mathcal{V}=\frac{2}{\varrho^{2}}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_R\,i\vec v\bigr],
-$$
-
-with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direction, and with no dependence on $\varrho$ or on $\theta_{\mathrm{pha}}$. The direction sits on the same side in both halves of the bilinear: the star of $\tilde\Xi_Ri\vec v$ is $i\vec v\,\tilde\Xi_R^{*}$, because $i\vec v$ is Hermitian, so the second half is $i\vec v\,\tilde\Xi_R^{*}\tilde\Xi_L$ and the two halves are conjugates. Writing the direction on the right in both halves cancels the real part and makes the mass term vanish; the direction belongs to the element, and the conjugation moves it.
-
-**The polar action, in full.**
-
-$$
-\boxed{\;
-S=\int\mathrm{d}t'\;\hbar c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\}\;}
-$$
-
-The scale enters as $\varrho^{2}$ in both terms. The phase enters only through its velocity. The boost enters through $\cosh\theta_{\mathrm{rpd}}$, through $\sinh\theta_{\mathrm{rpd}}$ and through the axis $\hat n_{\mathrm{rot}}$, and not through its own rate. The rotor enters through its body angular velocity and through the axis it carries. Nothing else enters.
-
-**The overall factor.** The element action carries $\hbar c/2$; the box has $\hbar c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §*The Kinetic Term*.
 
 ## The Euler–Lagrange Equations
 
@@ -275,6 +236,74 @@ Two bases of the eight-dimensional tangent space at an invertible element, and o
 
 **What the polar action adds to this.** Nothing about the equation. The E-L equations, when closed, are the equation's components in the parameter basis; the four brackets remain the natural form, and the article does not claim that the parameter equations are simpler. The polar action's contribution is the constraint structure: it exhibits which parameters are dynamical and which are not, and that is a statement the bracket form does not make.
 
+## The Mass Term and the Fixed Direction
+
+The mass term of the element action is off-diagonal in the parts, and on the frame's parts it vanishes.
+
+**The vanishing, in one line.** With $\tilde\Xi_L=\tilde\Xi\Pi_+$ and $\tilde\Xi_R=\tilde\Xi\Pi_-$,
+
+$$
+\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_R\bigr]
+=\mathrm{Sc}\bigl[\Pi_+\tilde\Xi^{*}\tilde\Xi\Pi_-\bigr]
+=\mathrm{Sc}\bigl[\Pi_-\Pi_+\tilde\Xi^{*}\tilde\Xi\bigr]=0,
+$$
+
+using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. The conjugate term vanishes the same way. Nothing is assumed here beyond the idempotents and the trace property, so the vanishing needs no sample.
+
+**What the vanishing means.** It is the variational form of the parent's warning. The parent says that reading the pair's letters as values gives no non-zero solution, and that the value-consistent display carries the direction $i\vec v$. The action says the same thing from the other side: a mass term that couples two complementary ideals is zero, so a value-split action has no mass at all, and the mass must come back through an element that reverses the value.
+
+**The repair, and its form.** Right multiplication by $i\vec v$ with $\vec v$ a fixed unit spatial direction reverses the value, because $\vec v\vec e_z=-\vec e_z\vec v$ for $\vec v\perp\vec e_z$. So
+
+$$
+\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_R\,i\vec v\bigr]\ne0
+\qquad\text{for }\vec v\perp\vec e_z,
+$$
+
+and it is zero for $\vec v\parallel\vec e_z$, so the direction is fixed by the frame's third direction and is not a free choice: only the directions that reverse the value give a mass. The mass term of the polar action is therefore
+
+$$
+\mathcal{L}_{\mathrm{mass}}=-\hbar c\,k_m\,\varrho^{2}\,\mathcal{V},
+\qquad
+\mathcal{V}=\frac{2}{\varrho^{2}}\,\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\tilde\Xi_R\,i\vec v\bigr],
+$$
+
+with $\mathcal{V}$ a function of the boost, of the rotor and of the fixed direction, and with no dependence on $\varrho$ or on $\theta_{\mathrm{pha}}$. The direction sits on the same side in both halves of the bilinear: the star of $\tilde\Xi_Ri\vec v$ is $i\vec v\,\tilde\Xi_R^{*}$, because $i\vec v$ is Hermitian, so the second half is $i\vec v\,\tilde\Xi_R^{*}\tilde\Xi_L$ and the two halves are conjugates. Writing the direction on the right in both halves cancels the real part and makes the mass term vanish; the direction belongs to the element, and the conjugation moves it.
+
+**The polar action, in full.**
+
+$$
+\boxed{\;
+S=\int\mathrm{d}t'\;\hbar c\,\Bigl\{\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr)-\varrho^{2}k_m\,\mathcal{V}\Bigr\}\;}
+$$
+
+The scale enters as $\varrho^{2}$ in both terms. The phase enters only through its velocity. The boost enters through $\cosh\theta_{\mathrm{rpd}}$, through $\sinh\theta_{\mathrm{rpd}}$ and through the axis $\hat n_{\mathrm{rot}}$, and not through its own rate. The rotor enters through its body angular velocity and through the axis it carries. Nothing else enters.
+
+**The overall factor.** The element action carries $\hbar c/2$; the box has $\hbar c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §*The Kinetic Term*.
+
+## The Noether Currents: The Phase Charge and the Spin
+
+**Two currents, and the chart gives both by differentiation.** The phase symmetry is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\text{const}$, and the conjugate momentum is read from the boxed kinetic term of the third section:
+
+$$
+p_{\theta_{\mathrm{pha}}}=\frac{\partial\mathcal{L}}{\partial\dot\theta_{\mathrm{pha}}}=\hbar c\,\varrho^{2}\cosh\theta_{\mathrm{rpd}},
+$$
+
+so the conserved density is $\rho_{\mathrm{pol}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, positive for every field and equal to $\varrho^{2}$ on the central slice. The sign is positive because the box carries $+\hbar c$; the Schrödinger chart's box carries $-\hbar$, and its density is $-\hbar\varrho^{2}$. The two signs are the two conventions on the action and not two physics.
+
+**The spin.** The rotor $\tilde u_{\mathrm r}$ carries the spin, and its conjugate momentum is the body angular momentum. The mass term is what makes the spin direction a variable rather than a gauge: at $k_m=0$ the two phases of the element article are independent, the rotor's angle is one of them, and the spin current is conserved separately. At $k_m\neq0$ the mass couples the two parts and the rotor's angle is tied to the boost, which is the chart's form of the statement that a massive spin-$\tfrac12$ field has one spin direction and not two.
+
+**What the mass term kills.** The axial current. The vector current survives, because it is the phase's; the axial one is the difference of the two chiral currents, and the mass term is exactly the term that converts one into the other. The chart shows it as the term that couples $\theta_{\mathrm{rpd}}$ to $\theta_{\mathrm{pha}}$, and the element article's *Massless Case and the Two Phases* is the $k_m=0$ limit of the same display.
+
+## What the Polar Variational Principle Adds
+
+**Adds.** The polar form of the element action in one closed display: the kinetic term is $\hbar c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$. The momentum table as an identity rather than a sample: $p_r=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$, $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$. The reason for each entry, which is the reality of three contributions to the scalar part. The reason the mass term needs a fixed direction, which is the variational form of the parent's value-reading warning, together with the fact that the direction must be perpendicular to the frame's third direction. The bracket that makes the four primary constraints second class, computed and not assumed.
+
+**Does not add.** No new prediction: the equation is the parent's. No new solution: the flow is the parent's. No closure of the constrained system. No simplification of the four brackets, which remain the natural form.
+
+**The structural statement, stated exactly.** Away from rest the canonical objects are the phase and the spin: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, both non-zero, both functions of the coordinates alone, and neither recoverable from the other. The scale and the velocity are never canonical: their momenta vanish identically in every frame.
+
+**The qualification is part of the statement.** The spin's momentum is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at rest it vanishes and the spin is not canonical either. The unconditional form of the claim fails at $\theta_{\mathrm{rpd}}=0$, and the closed form is what shows it: the spin enters the kinetic term only through its cross term with the boost, so a frame at rest has no spin momentum to speak of. What survives at rest is the phase alone.
+
 ## Takabayasi's Multipliers and Why They Are Absent
 
 The comparison is worth stating precisely, because the two formulations are usually confused.
@@ -286,16 +315,6 @@ The comparison is worth stating precisely, because the two formulations are usua
 **So no multipliers are needed for the unit conditions, and the article says exactly that.** It does not say that the polar action has no constraints. The constraints are there, four of them, and they are Euler–Lagrange equations: the vanishing of the momenta conjugate to the scale and to the boost. Those constraints come from the *structure* of the kinetic term, not from an invertible element condition, and a multiplier would not remove them.
 
 **The correspondence is exact in one respect and only one.** Takabayasi's velocity field enters the Lagrangian algebraically, without a time derivative, and so does the boost here: $p_{\theta_{\mathrm{rpd}}}=0=p_{u_{\mathrm b}}$. Takabayasi's spin direction carries a transport equation, and so does the rotor here: away from rest its three momenta are non-zero, they are $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, and its three equations are dynamical. The agreement with Takabayasi is therefore an agreement about a boosted frame. At rest the spin's momentum vanishes, and the polar action's spin sector becomes constrained as well; the article states this because the closed form makes it visible, and does not claim it for Takabayasi's formulation, where the spin momentum is not proportional to a rapidity.
-
-## What the Polar Variational Principle Adds
-
-**Adds.** The polar form of the element action in one closed display: the kinetic term is $\hbar c\,\varrho^{2}(\cosh\theta_{\mathrm{rpd}}\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r})$. The momentum table as an identity rather than a sample: $p_r=p_{\theta_{\mathrm{rpd}}}=p_{u_{\mathrm b}}=0$, $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$. The reason for each entry, which is the reality of three contributions to the scalar part. The reason the mass term needs a fixed direction, which is the variational form of the parent's value-reading warning, together with the fact that the direction must be perpendicular to the frame's third direction. The bracket that makes the four primary constraints second class, computed and not assumed.
-
-**Does not add.** No new prediction: the equation is the parent's. No new solution: the flow is the parent's. No closure of the constrained system. No simplification of the four brackets, which remain the natural form.
-
-**The structural statement, stated exactly.** Away from rest the canonical objects are the phase and the spin: $p_{\theta_{\mathrm{pha}}}=\hbar c\rho_{\mathrm{num}}\gamma$ and $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, both non-zero, both functions of the coordinates alone, and neither recoverable from the other. The scale and the velocity are never canonical: their momenta vanish identically in every frame.
-
-**The qualification is part of the statement.** The spin's momentum is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at rest it vanishes and the spin is not canonical either. The unconditional form of the claim fails at $\theta_{\mathrm{rpd}}=0$, and the closed form is what shows it: the spin enters the kinetic term only through its cross term with the boost, so a frame at rest has no spin momentum to speak of. What survives at rest is the phase alone.
 
 ## Open Questions
 

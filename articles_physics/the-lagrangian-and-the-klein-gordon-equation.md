@@ -1,9 +1,5 @@
 # __The Lagrangian and the Klein–Gordon Equation__
 
-## Conventions
-
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
-
 ## Introduction
 
 *The Klein–Gordon Equation in Biquaternionic Form* writes the equation as
@@ -32,6 +28,11 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Klein–Gordon equation in its element form.
 
+**Declared omissions.** The reality of the action is checked inside *The Action in Element Form*, where the two pairings are compared, and it is not given a section of its own, so slot 5 is omitted. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
 
 ## The Equation and Its Operator
 
@@ -110,32 +111,6 @@ The convention fixed in §*The Equation and Its Operator* is $\Box_\Phi=\Delta_\
 
 **No factor of one half.** The overall normalization is a convention and this article fixes it once: the action above has no $\tfrac12$, so the charge and the energy below carry the constants written and no others. A factor of $\tfrac12$ in front of $S$ multiplies every Noether current by $\tfrac12$ and changes no equation.
 
-**Declared omissions.** The reality of the action is checked inside *The Action in Element Form*, where the two pairings are compared, and it is not given a section of its own, so slot 5 is omitted. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
-## The Structural Consequence: Four Scalar Actions
-
-**The spin-zero action is one scalar action.** The field is central, so the Lagrangian is the ordinary complex scalar Lagrangian and the sum below has one term. The separation that follows is exact on the whole algebra, and it is recorded because it is what the restriction rules out: four terms with no cross term are four independent fields, each with its own density, its own charge and its own action, and the carrier admits one.
-
-**The separation.** By $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ applied to $A=\partial\tilde\Xi$, and by the same identity applied to $\tilde\Xi$ itself, every term of the Lagrangian is a sum over the four coefficients,
-
-$$
-\mathrm{Sc}\big[(\partial\tilde\Xi)^{*}\partial\tilde\Xi\big]=\sum_{\mu}\partial\Xi_\mu^{*}\,\partial\Xi_\mu,
-\qquad
-\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\sum_{\mu}\lvert\Xi_\mu\rvert^{2},
-$$
-
-with the metric signs of the display above understood in each summand. Hence
-
-$$
-S[\tilde\Xi]=\sum_{\mu}S[\Xi_\mu],
-$$
-
-where $S$ on the right is the scalar action of one complex coefficient. There are no cross terms, because the four units are orthogonal for the Hermitian pairing and every off-diagonal product $\vec e_\mu^{*}\vec e_\nu$ with $\mu\neq\nu$ is a spatial unit and has no scalar part.
-
-**What follows for the equation.** On the centre there is one coefficient, one action and one solution set $S$. On the whole algebra the four coefficients are independent and the solution space is $\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, which is four fields; the parent's §*A value outside the centre, and the four equations* is the same statement read on the equation. The variational form adds the reason: the independence is the orthogonality of the four units under the pairing, so no choice of coefficients can produce a coupling that the Lagrangian does not contain.
-
-**What breaks it.** A non-central Hermitian coefficient $\tilde M$ in the potential term does couple the coefficients. Left multiplication by $\tilde M$ is a real-linear map of $\mathbb{B}$, Hermitian for the $\mathrm{Sc}$ pairing when $\tilde M$ is Hermitian, so the potential term is still real, but it is now a Hermitian $4\times4$ matrix in the basis $e_\mu$ rather than four numbers. The equation keeps its form, $\left(\Box_\Phi-\tilde M\right)\tilde\Xi=0$, and the four copies become four coupled channels. For a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, whose four branches are the four eigenvalues. The free field is the case in which $\tilde M$ is central and the branches coincide.
-
 ## The Variation
 
 **Vary the conjugate and integrate by parts.** The variation is taken with respect to $\tilde\Xi^{*}$, the two halves of a complex field being independent variables of the real functional. Writing $\partial_t=\partial_{r'_t}$ and summing over the spatial slots with their metric signs, the variation of the display of the previous section is
@@ -193,6 +168,30 @@ $$
 $$
 
 which is the parent's two frequency branches $e^{\pm i k'_t r'_t}$ recombined into a real block. The single element alone has no such closed form, and that is the precise sense in which the second-order equation needs the doubling.
+
+## The Structural Consequence: Four Scalar Actions
+
+**The spin-zero action is one scalar action.** The field is central, so the Lagrangian is the ordinary complex scalar Lagrangian and the sum below has one term. The separation that follows is exact on the whole algebra, and it is recorded because it is what the restriction rules out: four terms with no cross term are four independent fields, each with its own density, its own charge and its own action, and the carrier admits one.
+
+**The separation.** By $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ applied to $A=\partial\tilde\Xi$, and by the same identity applied to $\tilde\Xi$ itself, every term of the Lagrangian is a sum over the four coefficients,
+
+$$
+\mathrm{Sc}\big[(\partial\tilde\Xi)^{*}\partial\tilde\Xi\big]=\sum_{\mu}\partial\Xi_\mu^{*}\,\partial\Xi_\mu,
+\qquad
+\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\sum_{\mu}\lvert\Xi_\mu\rvert^{2},
+$$
+
+with the metric signs of the display above understood in each summand. Hence
+
+$$
+S[\tilde\Xi]=\sum_{\mu}S[\Xi_\mu],
+$$
+
+where $S$ on the right is the scalar action of one complex coefficient. There are no cross terms, because the four units are orthogonal for the Hermitian pairing and every off-diagonal product $\vec e_\mu^{*}\vec e_\nu$ with $\mu\neq\nu$ is a spatial unit and has no scalar part.
+
+**What follows for the equation.** On the centre there is one coefficient, one action and one solution set $S$. On the whole algebra the four coefficients are independent and the solution space is $\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, which is four fields; the parent's §*A value outside the centre, and the four equations* is the same statement read on the equation. The variational form adds the reason: the independence is the orthogonality of the four units under the pairing, so no choice of coefficients can produce a coupling that the Lagrangian does not contain.
+
+**What breaks it.** A non-central Hermitian coefficient $\tilde M$ in the potential term does couple the coefficients. Left multiplication by $\tilde M$ is a real-linear map of $\mathbb{B}$, Hermitian for the $\mathrm{Sc}$ pairing when $\tilde M$ is Hermitian, so the potential term is still real, but it is now a Hermitian $4\times4$ matrix in the basis $e_\mu$ rather than four numbers. The equation keeps its form, $\left(\Box_\Phi-\tilde M\right)\tilde\Xi=0$, and the four copies become four coupled channels. For a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, whose four branches are the four eigenvalues. The free field is the case in which $\tilde M$ is central and the branches coincide.
 
 ## The Noether Currents
 

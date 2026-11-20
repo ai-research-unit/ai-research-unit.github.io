@@ -1,5 +1,7 @@
 # __The Lagrangian and the Proca Equation in Polar Variables__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 This article substitutes the polar word of the material sector into the Proca action and reads the result. It is the polar companion of *The Lagrangian and the Proca Equation*, and it depends on three articles: *The Proca Equation in Biquaternionic Polar Variables* for the word and the equation in the chart, that element-form variational article for the action, and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* for the carrier.
@@ -47,6 +49,10 @@ The sign of the mass term in the chart **is** the branch: it is the causal chara
 **What is at stake in the contrast.** The Schrödinger polar article's action is first order in the time derivative, and its momenta vanish identically, so six of the eight are constraints and the closure needs Dirac analysis. The Proca action is second order, its Hessian has rank three out of four, and its single constraint is the standard one of a massive vector field. So the two polar variational principles are not the same kind of object, and the difference is the order of the Lagrangian, not the algebra.
 
 The conventions are those of the two companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$; the material sector $\mathbb{B}_\Phi$ anti-Hermitian; $\mathrm{Sc}$ the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ the quaternionic norm, real on $\mathbb{B}_\Phi$; $\partial/\partial R_t=-i\,\partial/\partial r'_t$; $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; $k_m=mc/\hbar$.
+
+## Conventions
+
+**The conventions are the corpus's, restated here for the chart.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\varrho>0$ is the scale, $\theta_{\mathrm{rpd}}\ge0$ the rapidity and $\hat u_{\mathrm b}$ the boost axis, so that $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ on the branch. The measure is $\mathrm{d}^4r$, the pairing is $\mathrm{Sc}(\cdot)$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term, $k_m=mc/\hbar$, and the chart's velocities are the material-time derivatives. The branch is the timelike one; the spacelike branch is named where it matters and is not followed here.
 
 ## The Action in the Chart
 
@@ -124,6 +130,21 @@ which is the form the polar article verifies numerically. The mass term enters t
 
 **What the variation of the middle piece does.** The term $-\tfrac12S^2$ is the only piece that pairs the scalar projection with itself. Its variation produces the scalar equation that is the Lorenz condition, and the remaining pieces produce the two dynamical equations. In this sense the chart separates the three jobs that the element form performs at once: the curl term carries the propagation, the square carries the constraint, and the mass carries the scale. The separation is a rewriting, but it is a rewriting that names each job.
 
+## The Lorenz Condition in the Chart
+
+**One equation on four parameters.** The chart's form of the condition is
+
+$$
+S=\varepsilon\Bigl[c\,\partial_{r'_t}\varrho-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
++\tfrac12rs\,\partial_{r'_t}\theta_{\mathrm{rpd}}-\tfrac12rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\vec\nabla_\Phi\cdot\hat u_{\mathrm b}\Bigr]=0,
+$$
+
+with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$. It is the divergence of the four-vector in the chart's variables, and it is the secondary constraint. On shell it removes one of the four parameters and leaves three.
+
+**It is implied, and the variational reading says why.** In the element form the condition follows from the divergence of the equation. In the chart it follows from the variation of the $-\tfrac12S^2$ term together with the rest, and it is the statement that the longitudinal part of the field is not free. There is no multiplier attached to it, and there is no gauge orbit along which it could be reached: it is one equation among the four.
+
+**What it is not.** It is not the continuity equation of a fluid and it is not a guidance equation, because the material sector has no phase and therefore no phase current to conserve. The scalar Madelung pair is a pair because the field is one complex function; here the field is a real four-vector, and the condition is a single divergence. The variational principle does not manufacture the missing half.
+
 ## The Mass Term, the Branch, and the Constraint
 
 **The Hessian has rank three.** The kinetic part of the chart's Lagrangian is $\tfrac12\epsilon\vec E^2$ with $\vec E=-\vec\nabla_\Phi a'_t-\partial_{t'}\vec A$, so only $\vec A$ carries velocities, and
@@ -152,20 +173,15 @@ The chart's gain is the first row: the boost is parametrized, not constrained, s
 
 **Why the Schrödinger case differs.** There the Lagrangian is linear in $\dot\theta_{\mathrm{pha}}$, so the momentum conjugate to $\varrho$ vanishes identically and the system is a constrained one whose closure needs Dirac analysis. Here the Lagrangian is quadratic in the velocities, the momenta are the velocities' images under a rank-three map, and there is exactly one constraint pair. The order of the Lagrangian, and not the choice of variables, is what decides.
 
-## The Lorenz Condition in the Chart
+## The Noether Currents: The Stress and the Absence of a Charge
 
-**One equation on four parameters.** The chart's form of the condition is
+**One current and not two.** The free Proca field has no phase symmetry, and the article's element companion proves it: the potential is real on the material sector, so a central phase rotation is not a symmetry of the action but a complexification, and the Noether procedure returns nothing. The chart inherits the verdict, and it is worth stating in the chart because the chart is where a reader expects a density.
 
-$$
-S=\varepsilon\Bigl[c\,\partial_{r'_t}\varrho-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
-+\tfrac12rs\,\partial_{r'_t}\theta_{\mathrm{rpd}}-\tfrac12rc\,\hat u_{\mathrm b}\cdot\nabla\theta_{\mathrm{rpd}}-rs\,\vec\nabla_\Phi\cdot\hat u_{\mathrm b}\Bigr]=0,
-$$
+**The stress.** Translation invariance gives the canonical energy–momentum tensor, and in the chart it is the object whose components are the energy density $\tfrac12(\epsilon\vec E^{2}+\vec B^{2}/\mu+k_m^{2}\lvert\vec A\rvert^{2})$ and the Poynting flux. Both are read off the Lagrangian of the chart with the standard formula, and neither needs the phase.
 
-with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$. It is the divergence of the four-vector in the chart's variables, and it is the secondary constraint. On shell it removes one of the four parameters and leaves three.
+**What the absence means.** The parameter that would carry a charge is $\theta_{\mathrm{pha}}$, and the chart's Lagrangian does not contain it: the word for the Proca field is real, $\theta_{\mathrm{pha}}=0$ is not a variable of the branch, and the mass term is $\varrho^{2}R$. So the chart has seven parameters and not eight on the physical branch, and the missing one is the one that would have carried a conserved charge. That is the chart's statement of "no second current", and it agrees with the element form's.
 
-**It is implied, and the variational reading says why.** In the element form the condition follows from the divergence of the equation. In the chart it follows from the variation of the $-\tfrac12S^2$ term together with the rest, and it is the statement that the longitudinal part of the field is not free. There is no multiplier attached to it, and there is no gauge orbit along which it could be reached: it is one equation among the four.
-
-**What it is not.** It is not the continuity equation of a fluid and it is not a guidance equation, because the material sector has no phase and therefore no phase current to conserve. The scalar Madelung pair is a pair because the field is one complex function; here the field is a real four-vector, and the condition is a single divergence. The variational principle does not manufacture the missing half.
+**The hand check.** Count the conjugate momenta from the Hessian of the previous section: three non-zero and one zero. The zero one is not a charge; it is the primary constraint. A charge would be a non-zero momentum whose conservation follows from a symmetry, and there is no such symmetry here.
 
 ## What the Polar Variational Principle Adds and What It Does Not
 

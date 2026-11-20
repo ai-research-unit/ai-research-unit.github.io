@@ -1,5 +1,7 @@
 # __The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+
 ## Introduction
 
 **The limit in one sentence.** Write the parent's polar action, delete the one term that carries a spatial derivative of the scale, and the two variations of what is left are the eikonal and the transport equation — the limit as a deletion, and the two surviving equations as the two variations.
@@ -20,7 +22,9 @@
 
 **What is not new.** That the semiclassical limit of a wave equation is a truncation of its action, that the leading-order action is the Hamilton–Jacobi action, and that the transport equation is its phase variation are standard results of semiclassical mechanics. Added here: the identification of the deleted term with one factor of the complete polar decomposition, the exact statement that the phase variation is invariant under the deletion, and the reading of the truncated action as a pressureless fluid's.
 
-**Conventions.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with its eight real parameters; the central field $\theta_{\mathrm{rpd}}=0$, $\tilde u_{\mathrm r}=\varepsilon e_{t}$; the operator setting $\tilde H_\Psi=\hat H e_{t}$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V_{\mathrm{op}}(\vec x)$; $\Delta_\Phi$ the Laplacian of the material sector; $S=\hbar\theta_{\mathrm{pha}}$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with its eight real parameters; the central field $\theta_{\mathrm{rpd}}=0$, $\tilde u_{\mathrm r}=\varepsilon e_{t}$; the operator setting $\tilde H_\Psi=\hat H e_{t}$ with $\hat H=-\hbar^{2}\Delta_\Phi/2m+V_{\mathrm{op}}(\vec x)$; $\Delta_\Phi$ the Laplacian of the material sector; $S=\hbar\theta_{\mathrm{pha}}$.
 
 ## The Action and Its Two Orders
 
@@ -118,6 +122,18 @@ the transport equation, a conservation law for the density $\varrho^{2}$ carried
 **What the truncated action describes.** A fluid of density $\varrho^{2}$ and velocity $\vec\nabla_\Phi S/m$, irrotational because the velocity is a gradient, with no pressure and with a body force $-\vec\nabla_\Phi V_{\mathrm{op}}$. Its two equations are the two the limit produces, and the deleted term is exactly the pressure: $-\frac{\hbar^{2}}{2m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is the internal energy of a fluid whose pressure potential is the quantum potential, since $\frac{\hbar^{2}}{2m}\lvert\vec\nabla_\Phi\ln \varrho\rvert^{2}$ differentiated gives the quantum force.
 
 **The symmetry that survives.** A constant shift $\theta_{\mathrm{pha}}\to\theta_{\mathrm{pha}}+\theta_{0}$ leaves the truncated action invariant, because only the derivative appears. A shift depending on position does not, because the kinetic term is not invariant under it; the action is not gauge invariant and the free Schrödinger equation is not either. **The truncation therefore preserves exactly the symmetry the parent's action has**, and no symmetry is broken or gained by the deletion.
+
+## The Noether Currents: Density, Charge and Energy
+
+**The current is the density times the transport velocity, and the limit makes that literal.** The phase's momentum is the density,
+$$
+\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\ \longrightarrow\ \varrho^{2}\quad\text{in the non-quantum limit},
+$$
+and the phase's Euler–Lagrange equation is the continuity equation $\partial_{r'_t}\rho+\vec\nabla_\Phi\cdot(\rho\vec v)=0$ with $\vec v$ the transport velocity. The limit does not change the equation; it removes the terms that made $\rho$ differ from $\varrho^{2}$.
+
+**The charge and the energy.** The charge is the integral of $\rho$, times the coupling where the field is charged, and it carries no mass. The energy is the mass shell's value, and it carries the mass. The split is exact in the parent and survives the limit unchanged, which is why this article's verification section can check both in one line each.
+
+**What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
 ## What the Variational Route Adds
 

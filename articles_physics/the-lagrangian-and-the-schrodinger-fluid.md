@@ -1,5 +1,7 @@
 # __The Lagrangian and the Schrödinger Fluid__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the ledger, so slot 14 is omitted.
+
 ## Introduction
 
 **This article writes the action in the fluid's variables and varies them.** [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the equation and names the density, the velocity and the quantum potential. Here the same field is written as an action over the density and the phase, and the Euler–Lagrange equations are read. Nothing about the equation changes; what changes is which object is primitive.
@@ -20,7 +22,9 @@ a phase term, a kinetic term, a gradient energy and an external potential. There
 
 **Position in the block.** This is the variational companion of [The Schrödinger Fluid](the-schrodinger-fluid.html), and the first of the eight articles that write the action in the fluid variables. It sits at the bottom of the scalar ladder: at this rung the velocity has no norm, the density is the charge density, and the quantum potential carries the Laplacian, so every statement below is unconditional.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\hbar\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\hbar\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.
 
 ## The Action in the Fluid Variables
 
@@ -119,6 +123,26 @@ $$
 *The fluid is of Korteweg type and not of Euler type.* A Korteweg fluid is one whose stress depends on the gradients of the density, and that is exactly what the third term supplies. The literature on quantum hydrodynamics says this, and the action says why: the gradient energy is the only term the algebra permits at that order.
 
 **The sign is the sign of a pressure.** $Q$ is positive at the centre of a localised packet and falls as the density falls, so $\vec\nabla_\Phi Q$ points inward there and the force $-\vec\nabla_\Phi Q$ points outward. The packet spreads. Nothing in the action chooses this; it is the sign of the $\hbar^{2}$ term, which is the sign that makes the energy positive.
+
+## The Noether Currents: Mass, Energy and What the Quantum Potential Touches
+
+**Two currents and the quantum potential enters one of them.** The phase rotation is a symmetry and its current is the mass current,
+
+$$
+\rho_{\mathrm{num}}=\varrho^{2},
+\qquad
+\vec j_{\mathrm{m}}=\rho_{\mathrm{num}}\vec v ,
+\qquad
+\vec v=\frac{\vec\nabla_\Phi S}{m},
+$$
+
+conserved by the continuity equation that the phase's variation gives. Translation invariance gives the energy–momentum, and there the quantum potential appears: the gradient energy contributes the stress $\hbar^{2}\partial_i\varrho\,\partial_j\varrho/m$ and the energy density $\hbar^{2}(\vec\nabla_\Phi\varrho)^{2}/2m$.
+
+**Why the split is forced.** The quantum potential is a functional derivative of a term that depends on $\varrho$ and not on $S$; the mass current is the derivative of the action with respect to $\partial S$, so it cannot see that term. A current that carried the quantum potential would have to come from a term linear in $\partial S$, and there is none.
+
+**The sign.** The density is positive and the current flows with the phase's gradient, so the mass current's sign is the orientation of $S$. There is no charge here and therefore no sign convention to fix: the fluid is neutral, and the only sign that could be chosen is the overall one of the action, which cancels.
+
+**What the corpus keeps.** The energy is not the mass shell's value but the Legendre transform of the boxed Lagrangian, and the two differ by the quantum potential. That difference is the reason the fluid form of the Schrödinger fluid and the fluid form of the Klein–Gordon fluid do not agree term by term.
 
 ## The Velocity Is Not Canonical
 

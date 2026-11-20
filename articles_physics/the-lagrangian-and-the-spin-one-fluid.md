@@ -1,5 +1,7 @@
 # __The Lagrangian and the Spin-One Fluid__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **At this rung the fluid's variables are the field's own, and the action's mass term does double work.** The Proca field is $A_\mu=r\,u_\mu$: a magnitude and a direction, which are a density and a velocity. So the fluid is not a reading of a polar decomposition imposed from outside — it is the field's own parameterisation, and the action written in it is the Proca action and nothing else.
@@ -14,7 +16,9 @@
 
 **Position in the block.** This is the variational companion of [The Spin-One Fluid](the-spin-one-fluid.html) and the seventh of the eight articles of this layer. It is the only one in which a Lagrange multiplier is genuinely needed, and the only one whose fluid is not a quantum fluid.
 
-**Conventions.** $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. **No index is raised**: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. **No index is raised**: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.
 
 ## The Action in the Field's Own Variables
 
@@ -39,6 +43,22 @@ obtained by expanding $-\frac14F^{2}$ and using $u^{2}=-1$. Four terms: the dens
 **The cross term is what makes the free spin-one fluid's acceleration law as short as the block's.** $a_\mu=-\nabla_\mu\ln r-r^{-1}E_\mu$ has no quantum force because the two pieces of $F$ are first derivatives and no second derivative of $r$ survives the variation; the cross term is where the density's gradient and the vorticity meet, and it is the term that turns the field equation into a statement about the flow's acceleration.
 
 **There is no $\hbar$ anywhere in the derivative terms.** The only place the quantum of action appears is inside $k_m$. So this rung's fluid is not a Madelung fluid: it is a classical field read as a medium, and the block's article says as much by giving an acceleration law with no quantum potential.
+
+## The Two Variations and the Multiplier
+
+**The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part.** That is the cleanest way to state the pair, and it follows from the split of $\delta A_\mu=u_\mu\,\delta r+r\,\delta u_\mu$ into a longitudinal and a transverse piece.
+
+The $r$ variation gives $\sum_\mu\varepsilon_\mu u_\mu(\sum_\nu\partial_\nu F_{\nu\mu}-k_m^{2}A_\mu)=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_\nu\mathsf{P}_{\mu\nu}(\sum_\lambda\partial_\lambda F_{\lambda\nu}-k_m^{2}A_\nu)=0$. **The two together are the field equation and neither alone is.**
+
+**The unit condition is the one place in this layer where a multiplier is genuinely needed.** The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_\mu$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,
+
+$$
+\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(\sum_\mu\varepsilon_\mu u_\mu u_\mu+1\bigr),
+$$
+
+and the multiplier enters the direction's equation as $\lambda u_\mu$, which is a force along the flow. **It plays the part a pressure plays in an incompressible fluid**, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.
+
+**The contrast with the spin article is worth recording.** There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. **The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint**: the word's frame is a group element, and a direction is a coset.
 
 ## The Mass Term Does Two Things
 
@@ -68,21 +88,15 @@ which is the continuity equation for a density $r$ and a velocity $u_\mu$. **The
 
 **And the flow's own expansion is not zero.** Differentiating $ru_\mu$ gives $\sum_\mu\varepsilon_\mu\partial_\mu u_\mu=-\sum_\mu\varepsilon_\mu u_\mu\partial_\mu\ln r$, so the velocity's divergence is the density's logarithmic derivative along the flow. The divergence-free object is the field, and reading it as continuity is what makes the density and the velocity into a fluid's.
 
-## The Two Variations and the Multiplier
+## The Noether Currents: Stress, Spin and No Charge
 
-**The density's variation is the field equation contracted with the flow, and the direction's variation is its transverse part.** That is the cleanest way to state the pair, and it follows from the split of $\delta A_\mu=u_\mu\,\delta r+r\,\delta u_\mu$ into a longitudinal and a transverse piece.
+**No charge, and the spin is the field's own.** The Proca potential is real on the material sector, so the phase rotation is not a symmetry and there is no conserved charge; the parameter that would carry one is absent from the branch. What the chart does carry is the spin sector: the rotor is a physical variable here, unlike the scalar rungs, and its conjugate momentum is a genuine spin current.
 
-The $r$ variation gives $\sum_\mu\varepsilon_\mu u_\mu(\sum_\nu\partial_\nu F_{\nu\mu}-k_m^{2}A_\mu)=0$, since $\partial F/\partial r$ along $u$ is the contraction; the $\delta u$ variation, restricted to $u\cdot\delta u=0$, gives the transverse part, $\sum_\nu\mathsf{P}_{\mu\nu}(\sum_\lambda\partial_\lambda F_{\lambda\nu}-k_m^{2}A_\nu)=0$. **The two together are the field equation and neither alone is.**
+**The stress.** The translation current is the chart's energy–momentum, with the mass term contributing $\tfrac12k_m^{2}\lvert\vec A\rvert^{2}$ to the energy density and the frame's sigma-model term contributing the rest. The stress is what the frame's transport conserves.
 
-**The unit condition is the one place in this layer where a multiplier is genuinely needed.** The word's parameterisation absorbs the unit conditions of the boost and the rotor — a unit element is invertible for every value of its parameters — but the Proca direction is invertible by declaration and not by parameterisation: $u_\mu$ is three functions subject to one constraint, and the constraint must be imposed. Written with a multiplier,
+**Why the mass term does two things.** It fixes the longitudinal coefficient and it makes the spin's longitudinal polarisation physical. The first is a statement about the stress, the second about the spin current, and the article keeps them apart because a single term producing two effects is exactly what a reader is entitled to have explained twice.
 
-$$
-\mathcal L_{\lambda}=\mathcal L+\lambda\bigl(\sum_\mu\varepsilon_\mu u_\mu u_\mu+1\bigr),
-$$
-
-and the multiplier enters the direction's equation as $\lambda u_\mu$, which is a force along the flow. **It plays the part a pressure plays in an incompressible fluid**, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.
-
-**The contrast with the spin article is worth recording.** There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. **The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint**: the word's frame is a group element, and a direction is a coset.
+**The sign.** With no charge there is no sign to fix, and the spin's sign is the frame's. That absence is the sharpest difference between this rung and the two below it, and it is why the fluid form of the Proca field is a fluid of a field and not of a medium.
 
 ## What the Fluid Form Adds to the Block's Account
 

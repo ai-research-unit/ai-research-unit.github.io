@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Schrödinger Equation in Polar Variables__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 *The Lagrangian and the Schrödinger Equation in Polar Variables* computes the free polar Lagrangian exactly,
@@ -32,7 +34,9 @@ and every other term of the Lagrangian is the free one, letter for letter. The f
 
 **What is not claimed.** No new prediction and no new solution. The polar Lagrangian is a substitution, not a new principle; the free article's closure argument — that the parameter equations are the equation's components and the Jacobian is invertible — is repeated with covariant letters and not replaced. The genuinely new statements are the four above: that the kinetic term is untouched, that the constraint structure is therefore untouched, that the potential shift is a two-number shift, and that the gauge direction of the chart is the phase.
 
-**Conventions.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar variational article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar variational article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
 
 ## The Coupled Polar Lagrangian
 
@@ -124,6 +128,68 @@ which are the free flow's rates with the shifted numbers.
 
 **One difference in the residual's shape.** In the operator setting the residual is not a single element at a point but a differential operator, and the parameter equations then contain the gradient terms of §*The Central Field in the Operator Setting*. The constant setting is where the article's structural statements live, and the operator setting is where the physics of the potential and the current lives.
 
+## The Gauge Direction of the Chart
+
+**The action of the gauge group on the parameters.** Under $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$,
+
+$$
+\varrho\longmapsto \varrho,
+\qquad
+\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Gamma,
+\qquad
+\theta_{\mathrm{rpd}}\longmapsto\theta_{\mathrm{rpd}},
+\qquad
+\vec u_{\mathrm b}\longmapsto\vec u_{\mathrm b},
+\qquad
+\theta_{\mathrm{axr}}\longmapsto\theta_{\mathrm{axr}},
+\qquad
+\vec u_{\mathrm r}\longmapsto\vec u_{\mathrm r},
+$$
+
+because the factor is central and commutes with every invertible element. Seven parameters are inert and one is translated by a function.
+
+**The Lagrangian's response.** The kinetic term gains $-ϙ\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$ and the potential term gains $+ϙ\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$, since $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ enters $V_{\mathrm{gco}}$ with one minus. The gains cancel, and the action of the field and the connection together is invariant — the element-form companion's statement, in the chart's letters, and here it is visibly the statement that $\theta_{\mathrm{pha}}$'s coefficient and $\varphi$'s coefficient are the same function of the rapidity.
+
+**What happens when the connection is held fixed.** With $\varphi$ fixed, the two gains do not cancel and the action changes by a boundary term for a time-dependent $\Gamma$. So the local transformation is not a symmetry of the fixed-background action; only its constant part is. The distinction is worth stating because it is exactly the distinction between the global symmetry that gives the charge and the local one that gives the redundancy: **the gauge direction of the chart is a direction of the coupled system's action and not of the field's action in a fixed background.**
+
+**The momentum along the gauge direction.** $p_{\theta_{\mathrm{pha}}}=-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N$, and $N$ is invariant, so the momentum is invariant: the translation of $\theta_{\mathrm{pha}}$ moves the coordinate and not the momentum. That is the chart's version of the statement that the charge is gauge invariant and the phase is not, and it is also the reason the conservation of $N$ survives the coupling: it is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, and the gauge direction does not disturb it, because the equation is $\dot p_{\theta}=0$ and a constant translation cannot change a derivative.
+
+**What the chart's degeneracy means for the equations.** The eight parameter equations are the eight components of the field equation, and the gauge direction is not one of them: the field equation is invariant, so a family of parameters related by the gauge direction gives one equation. The counting is therefore unchanged — eight equations for eight parameters, with the gauge direction a redundancy of the description and not a new degree of freedom. The free chart's counting is the same, with the redundancy absent.
+
+**The free article's "no gauge freedom" and the coupled statement.** The free polar variational article records that the free equation fixes the phase's rate and that there is no gauge freedom to fix. The coupled statement is compatible with it and sharper: the rate is still fixed, and it is the gauge-invariant combination $\mathcal E=-\hbar\dot\theta_{\mathrm{pha}}+ϙ\varphi$ that is fixed; the phase itself is free. So the coupling converts a physical coordinate into a coordinate with a gauge direction, and the direction is the one whose conjugate momentum is the density.
+
+## The Structural Consequence: The Potential Shift Is the Whole of the Coupling
+
+**The chart's statement of minimal coupling is two replacements and no new term.** In the chart the covariant derivative acts on the word as a shift of the potential,
+
+$$
+h_t\ \longmapsto\ h_t-ϙ\varphi ,
+\qquad
+\vec h_\Psi\ \longmapsto\ \vec h_\Psi-ϙ\vec A ,
+$$
+
+because the derivative is first order and the connection is central. The claim is that these two replacements are the whole of the coupling: the chart's Lagrangian for the coupled field is the free one with $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,(\vec h_\Psi\cdot\vec u_{\mathrm b})$ evaluated at the shifted potential, and with nothing else changed.
+
+**The hand check.** The operator setting's statement is $H=-(\hbar^{2}/2m)\Delta_\Phi+V$ with $p\mapsto p-ϙ\vec A$ in the covariant Laplacian; in the chart the same replacement appears as $\vec h_\Psi\mapsto\vec h_\Psi-ϙ\vec A$ inside $V$, since $\vec h_\Psi$ is the chart's symbol for the momentum. One substitution, two charts, one coupling.
+
+**Why the first-order case can say it so plainly.** A second-order derivative would produce a term quadratic in the connection, and the shift would have to be checked against it. Here there is no such term: the connection enters linearly and only through the potential, so the shift is exact and not a truncation. That is the structural difference between this chart and the Klein–Gordon one, whose coupling shifts a bracket rather than a potential.
+
+## The Noether Currents: The Coupled Charge
+
+**The current is the potential's conjugate.** In the chart the connection couples to the phase's rate only, so the current that the connection sees is the phase's conjugate momentum with the charge as its coefficient:
+
+$$
+j^{t}=\frac{\partial\mathcal{L}}{\partial A_t}=ϙ\,N ,
+\qquad
+\vec j=\frac{\partial\mathcal{L}}{\partial\vec A}=ϙ\,N\,\vec v ,
+$$
+
+with $N=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ the density of the free section and $\vec v$ the transport velocity of the chart. The two displays are the covariant current of the element article written in the chart's variables, and the identification is the content of the section.
+
+**The sign.** The charge is $ϙ N$ with $ϙ$ the coupling fixed in the conventions; the sign of the current is the sign of the charge, and the density is positive. The article's element companion fixes the same sign by the same convention, and the chart adds nothing to it.
+
+**What the gauge direction does to the current.** The current is invariant under the gauge transformation of the chart, because $N$ is built from $\varrho$ and the frame and the transformation moves only the phase. That invariance is the statement that the current is physical, and it is the chart's form of the element article's gauge invariance of the Noether current.
+
 ## The Central Field in the Operator Setting
 
 **The word collapses.** With $\theta_{\mathrm{rpd}}=0$ and a rotor that is a sign, the two paragraphs of the free article apply: the boost and the rotor are trivial, $K=-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$, and the potential is $h_t \varrho^{2}$. With the connection in place and the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{2}/2m-ϙ\varphi+\hat V_{\mathrm{op}}$, the action becomes
@@ -171,36 +237,6 @@ which is the element-form companion's identity in the chart and is one line here
 **The vorticity, unchanged in form.** The velocity is $\vec\pi/m$ and its curl is $ϙ\vec B/m$; the parameterization does not change that, because the curl of a gradient vanishes and the parameterization only names the gradient. So the free article's irrotationality statement becomes: the canonical flow is irrotational, the kinetic flow is rotational exactly where the field is, and the chart exhibits the difference as the difference between $\vec\nabla_\Phi S$ and $\vec\pi$.
 
 **What the operator setting does not have.** It has no vanishing momenta. The action is second order in the spatial derivatives and first order in time, so the momenta conjugate to $\varrho$ and to the phase are both nontrivial, and the constraint structure of the constant setting has no analogue here. The two settings' variational principles are different objects, and the article keeps them apart as the parents do.
-
-## The Gauge Direction of the Chart
-
-**The action of the gauge group on the parameters.** Under $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$,
-
-$$
-\varrho\longmapsto \varrho,
-\qquad
-\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\Gamma,
-\qquad
-\theta_{\mathrm{rpd}}\longmapsto\theta_{\mathrm{rpd}},
-\qquad
-\vec u_{\mathrm b}\longmapsto\vec u_{\mathrm b},
-\qquad
-\theta_{\mathrm{axr}}\longmapsto\theta_{\mathrm{axr}},
-\qquad
-\vec u_{\mathrm r}\longmapsto\vec u_{\mathrm r},
-$$
-
-because the factor is central and commutes with every invertible element. Seven parameters are inert and one is translated by a function.
-
-**The Lagrangian's response.** The kinetic term gains $-ϙ\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$ and the potential term gains $+ϙ\,\varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\partial_{t'}\Gamma$, since $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ enters $V_{\mathrm{gco}}$ with one minus. The gains cancel, and the action of the field and the connection together is invariant — the element-form companion's statement, in the chart's letters, and here it is visibly the statement that $\theta_{\mathrm{pha}}$'s coefficient and $\varphi$'s coefficient are the same function of the rapidity.
-
-**What happens when the connection is held fixed.** With $\varphi$ fixed, the two gains do not cancel and the action changes by a boundary term for a time-dependent $\Gamma$. So the local transformation is not a symmetry of the fixed-background action; only its constant part is. The distinction is worth stating because it is exactly the distinction between the global symmetry that gives the charge and the local one that gives the redundancy: **the gauge direction of the chart is a direction of the coupled system's action and not of the field's action in a fixed background.**
-
-**The momentum along the gauge direction.** $p_{\theta_{\mathrm{pha}}}=-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}=-\hbar N$, and $N$ is invariant, so the momentum is invariant: the translation of $\theta_{\mathrm{pha}}$ moves the coordinate and not the momentum. That is the chart's version of the statement that the charge is gauge invariant and the phase is not, and it is also the reason the conservation of $N$ survives the coupling: it is the Euler–Lagrange equation of $\theta_{\mathrm{pha}}$, and the gauge direction does not disturb it, because the equation is $\dot p_{\theta}=0$ and a constant translation cannot change a derivative.
-
-**What the chart's degeneracy means for the equations.** The eight parameter equations are the eight components of the field equation, and the gauge direction is not one of them: the field equation is invariant, so a family of parameters related by the gauge direction gives one equation. The counting is therefore unchanged — eight equations for eight parameters, with the gauge direction a redundancy of the description and not a new degree of freedom. The free chart's counting is the same, with the redundancy absent.
-
-**The free article's "no gauge freedom" and the coupled statement.** The free polar variational article records that the free equation fixes the phase's rate and that there is no gauge freedom to fix. The coupled statement is compatible with it and sharper: the rate is still fixed, and it is the gauge-invariant combination $\mathcal E=-\hbar\dot\theta_{\mathrm{pha}}+ϙ\varphi$ that is fixed; the phase itself is free. So the coupling converts a physical coordinate into a coordinate with a gauge direction, and the direction is the one whose conjugate momentum is the density.
 
 ## What It Adds and What It Does Not
 

@@ -1,5 +1,7 @@
 # __The Lagrangian and the Charged Spin-Zero Fluid__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **At this rung the coupling adds no term to the action; it changes one variable.** The two terms of [The Lagrangian and the Spin-Zero Fluid](the-lagrangian-and-the-spin-zero-fluid.html) survive intact, and the only change is that the four-velocity is the mechanical one, $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ with $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$. That is the minimal coupling stated covariantly, and it is why the density is untouched: **a substitution inside one square cannot reach a term that carries no phase.**
@@ -14,7 +16,9 @@
 
 **Position in the block.** This is the variational companion of [The Charged Spin-Zero Fluid](the-charged-spin-zero-fluid.html) and the fourth of the eight articles of this layer. It is the first in which the action's variables are gauge invariant by construction, and the first in which the fluid's vorticity is not a property of the flow.
 
-**Conventions.** Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ with $a'_t=\varphi$; the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\varphi$ carries the opposite sign on the phase and the potential moves with it. **The two rungs differ in the sign of one bracket and in nothing else**, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the free companion, with the connection: $ϙ$ is the coupling, $q=-ϙ$ the electric charge; $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta$ with $a'_t=\varphi$; the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$; $\tilde P^{\mathrm{mech}}_\Phi=\tilde P_\Phi+ϙ\tilde A_\Phi$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$. A gauge transformation is $S_{\tilde\Xi}\mapsto S_{\tilde\Xi}+ϙ\Gamma$ together with $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$, that is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$. The temporal slot's sign is the one that looks odd and is not: the invariant is $W_0=(\partial_{t'}S_{\tilde\Xi}+ϙ a'_t)/m$, so the scalar potential moves against the phase and not with it, where the first-order rung's bracket $\partial_{t'}S-ϙ\varphi$ carries the opposite sign on the phase and the potential moves with it. **The two rungs differ in the sign of one bracket and in nothing else**, and a reader moving between the two articles should expect the scalar potential to shift in opposite directions.
 
 ## The Action in the Fluid Variables
 
@@ -70,6 +74,16 @@ which is the block's boxed law. **The sign is fixed by the substitution's time s
 
 **The count is two and two, as at the free rung, and the coupling does not change it.** Two fields, $\varrho$ and $S_{\tilde\Xi}$, or equivalently $\varrho$ and $W$; two equations; no multiplier. The constraint structure is not the coupling's business, and this is the rung at which that is cleanest: **the first-order charged fluid has a gauge redundancy and the relativistic one has a redundancy plus a shell, and neither has a subsidiary condition.**
 
+## Gauge Invariance as a Redundancy
+
+**The action is written in invariant variables, and that is stronger than being invariant.** Both arguments, $\varrho$ and $W_\mu$, are fixed by a gauge transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
+
+**The contrast with the first-order rung is instructive and it is not a difference of degree.** There the action's terms were $-\rho_{\mathrm{num}}\mathcal E$ and $-\rho_{\mathrm{num}}\vec\pi^{2}/2m$, each invariant, but $S$ and $\varphi$ appeared separately and the invariance had to be checked inside each bracket. Here they never appear separately.
+
+**What the redundancy costs and what it does not.** It removes one of the word's eight parameters from the action's arguments: $\theta_{\mathrm{pha}}$ and $a'_t$ enter only through $W_0$, so the phase and the scalar potential are one degree of freedom between them. It does not remove the current: the constant shift is a global subgroup and its Noether current is the charge current. **A redundancy and a symmetry are different objects, and the action shows both at once**: the local one is the redundancy that the variables have already absorbed, the global one is the current.
+
+**The canonical stress is gauge dependent and the physical one is not.** Computing $T_{\mu\nu}$ with $S_{\tilde\Xi}$ as the variable gives a tensor that moves under a gauge transformation by terms in $\partial\Gamma$; the difference is a total derivative, so the conserved charges are unaffected, and the tensor written in $W$ and $\partial \varrho$ is invariant. The same caution as at the first-order charged rung applies: **the article may call $\mathcal E^{\mathrm{mech}}$ and $\sigma^{Q}$ the fluid's, and must not call the canonical tensor the fluid's without saying which variable it was computed from.**
+
 ## The Vorticity Is the Field Strength
 
 **The velocity's curl is the curl of a potential, so the vorticity is an identity about the variables.** With $V_\mu=(\partial_\mu S_{\tilde\Xi}-q A_\mu)/m$,
@@ -84,16 +98,6 @@ $$
 
 **The Clebsch cost is the field's and not the fluid's.** A rotational fluid written in Eulerian variables needs the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$, as [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states. Here the pair's part is played by the connection: the velocity is $\partial S_{\tilde\Xi}/m-q A_\mu/m$, one vector standing where the Clebsch form wants two scalars, and its own equation is Maxwell's, which the matter action does not contain. **The fluid's rotation is not a new degree of freedom because it is already the field's**, and the equality of the rank with the field's rank is the same statement.
 
-## Gauge Invariance as a Redundancy
-
-**The action is written in invariant variables, and that is stronger than being invariant.** Both arguments, $\varrho$ and $W_\mu$, are fixed by a gauge transformation, so $\mathcal L_{\mathrm{fl}}$ is fixed by construction and no boundary term arises.
-
-**The contrast with the first-order rung is instructive and it is not a difference of degree.** There the action's terms were $-\rho_{\mathrm{num}}\mathcal E$ and $-\rho_{\mathrm{num}}\vec\pi^{2}/2m$, each invariant, but $S$ and $\varphi$ appeared separately and the invariance had to be checked inside each bracket. Here they never appear separately.
-
-**What the redundancy costs and what it does not.** It removes one of the word's eight parameters from the action's arguments: $\theta_{\mathrm{pha}}$ and $a'_t$ enter only through $W_0$, so the phase and the scalar potential are one degree of freedom between them. It does not remove the current: the constant shift is a global subgroup and its Noether current is the charge current. **A redundancy and a symmetry are different objects, and the action shows both at once**: the local one is the redundancy that the variables have already absorbed, the global one is the current.
-
-**The canonical stress is gauge dependent and the physical one is not.** Computing $T_{\mu\nu}$ with $S_{\tilde\Xi}$ as the variable gives a tensor that moves under a gauge transformation by terms in $\partial\Gamma$; the difference is a total derivative, so the conserved charges are unaffected, and the tensor written in $W$ and $\partial \varrho$ is invariant. The same caution as at the first-order charged rung applies: **the article may call $\mathcal E^{\mathrm{mech}}$ and $\sigma^{Q}$ the fluid's, and must not call the canonical tensor the fluid's without saying which variable it was computed from.**
-
 ## What the Charge Does Not Change, and Why That Is the Article's Main Point
 
 **Three objects are exactly the free ones.**
@@ -105,6 +109,14 @@ $$
 *The mass shell's right-hand side.* $-c^{2}-2Q_{\mathrm{qnt}}/m$ is the free display's, and the coupling's only trace in the shell is that the velocity is mechanical.
 
 **So the coupling's entire content is one substitution in one variable, and the action states that in a form no equation-by-equation account can.** The block's charged article says the same thing in three sentences — the force becomes the Lorentz force, the quantum force stays, the density is untouched — and the action says it as one line: the variables are $(\varrho,W)$ and only $W$ is charged.
+
+## The Noether Currents: The Charge and the Vorticity
+
+**One current, and the vorticity is its curl.** The charge current is $q\rho_{\mathrm{num}}$ and $q\rho_{\mathrm{num}}\vec v$, and the article's *The Vorticity Is the Field Strength* identifies the curl of the velocity with the magnetic field. The two statements are one: the current is what sources the field, and the vorticity is what the field measures.
+
+**The energy.** The stress is the free scalar fluid's, because the coupling enters only the phase's rate and gradient and the stress is built from $\varrho$ and $S$; the quantum potential's contribution is unchanged. The mass shell is covariantised, the stress is not.
+
+**The sign, and why it is the article's point.** The charge's sign is $q$'s and the density is positive, so a change of sign of $q$ reverses the current and not the density. That is what the article means by the charge not changing the fluid: the fluid's density, velocity field and stress are the neutral ones, and the charge is a label on the current.
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 

@@ -1,5 +1,7 @@
 # __The Lagrangian and the Charged Spin-One Fluid__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The connection enters one of the two terms and it enters it as a derivative.** The Proca action has a derivative term and an algebraic one; the coupling replaces $\partial_\mu$ by $D_\mu$ in the first and cannot touch the second, because the second is the magnitude's and a connection reaches derivatives. **So the charged spin-one fluid keeps its pressure and loses its continuity**, which is the reverse of what the other charged articles of this layer do.
@@ -14,7 +16,9 @@
 
 **Position in the block.** This is the variational companion of [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) and the eighth and last of the articles of this layer. It is the only one in which the coupling degrades a statement rather than adding a force, and the only one in which the free rung's cleanest result is lost.
 
-**Conventions.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
 
 ## The Action in the Fluid Variables
 
@@ -41,6 +45,14 @@ and the identity behind the split is algebraic: $F(D)(r u)=r\,(Du)+\mathrm{d}r\w
 **What changes is the vorticity's definition and hence its source.** At the free rung $\omega=\mathrm{d}u$ and the vorticity is the direction's curl; here $\Omega=Du$ and the vorticity carries the connection. **The fluid's rotation is no longer a property of the direction alone**, and the difference is the field strength's contribution to it — which is the opposite of what happens at the scalar rung, where the coupling *is* the vorticity. The two are not in contradiction: the scalar velocity is a gradient and the vector velocity is a direction, so a connection shifts the first into the field and folds itself into the second.
 
 **The rank is still two, and the reason is still the dimension of the rest space.** The covariant vorticity of the congruence is the projected curl, $\Omega^{\perp}_{\mu\nu}=\sum_{\alpha,\beta}\mathsf{P}_{\mu\alpha}\mathsf{P}_{\nu\beta}\Omega_{\alpha\beta}$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$, and it annihilates $u$ by construction; a two-form on three dimensions is simple, so the rank is two wherever $\vec\Omega\ne0$. **The raw covariant curl is not transverse, and compatibility with the norm is not what would make it so**: $\sum_\nu\varepsilon_\nu\Omega_{\mu\nu}u_\nu=-\sum_\nu\varepsilon_\nu u_\nu D_\nu u_\mu$, the covariant acceleration, which is orthogonal to the flow because the norm is preserved and not because the curl is.
+
+## The Variation
+
+**Three variations and the multiplier's absence.** The chart's action is the free one with two covariant rates and with the mass block unchanged. Varying the density gives the continuity equation with the covariant phase rate; varying the phase gives the transport; varying the frame's angles gives the spin's transport and the two vanishing momenta $\varrho$ and $\theta_{\mathrm{rpd}}$ carry; varying the connection gives the Maxwell equation with the current as its source. No Lagrange multiplier appears, because the word is an exact parameterisation and the frame's unit conditions hold identically.
+
+**The boundary term.** The covariant derivative carries the connection, which is fixed in the variation of the matter fields, so the integration by parts touches only the field's own derivatives and produces the usual surface term, killed by compact support.
+
+**Where the constraint comes from.** The mass block has no derivative, so the scalar part of the connection's equation is the only constraint the system has; it is derived in the next section and it is not imposed here. The variation is what makes the distinction between an equation and a constraint visible: both are Euler–Lagrange equations of the same functional, and the difference is which coordinate they determine.
 
 ## The Lorenz Condition Ceases to Be Continuity
 
@@ -95,6 +107,14 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 **The density and the direction are therefore not enough to describe the carrier, and that is the difference from the other charged articles.** At the scalar rung the carrier is one complex number and the fluid's variables exhaust it; at the spinor rung the carrier is one biquaternion and the word's eight parameters exhaust it; **here the carrier is a complex vector, the fluid's variables are a magnitude and a direction, and the count does not close.** The balance is the phase and the imaginary part of the direction, and the action puts the phase in the derivative term only.
 
 **The consequence for what the fluid reading can be is a boundary and the article states it as one.** [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) finds that the free incompressibility is revealed as the mass's gift, that the condition ceases to be continuity, and that the carrier doubles. A reader who wants to know whether the charged Proca field has a fluid reading at all is being told: **it has a fluid reading of its magnitude and direction, and the carrier has four parameters more than those two supply.** Whether the extra four can be read as a second fluid — a second density with its own phase — is not settled anywhere in the corpus.
+
+## The Noether Currents: Charge, Spin and Stress
+
+**Three currents, and the constraint removes part of one.** The charge current is $q\rho_{\mathrm{chg}}$ and $q\rho_{\mathrm{chg}}\vec v$ with the mechanical velocity; the spin current is the rotor's momentum, $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, transported by the flow; the stress is the translation current of the chart's Lagrangian.
+
+**What the constraint does to them.** The Lorenz condition is the scalar part of the connection's equation, so it constrains the charge current's divergence and not the spin's. The spin current is conserved by the rotor's equation alone, and the mass term does not break its conservation — it changes what the spin means, by making the longitudinal polarisation physical.
+
+**The sign.** The charge is $q\rho_{\mathrm{chg}}$ with $\rho_{\mathrm{chg}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}>0$, so the sign is $q$'s. The spin's sign is negative, the frame's, and the two signs are independent: a positive charge can carry a spin pointing either way. That independence is the reason the article treats the two currents separately and does not fold them into one.
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 

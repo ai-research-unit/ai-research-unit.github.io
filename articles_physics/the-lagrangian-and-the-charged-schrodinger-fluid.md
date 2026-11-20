@@ -1,5 +1,7 @@
 # __The Lagrangian and the Charged Schrödinger Fluid__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The coupling is one substitution and the action shows it as one substitution.** In [The Lagrangian and the Schrödinger Fluid](the-lagrangian-and-the-schrodinger-fluid.html) the Lagrangian has four terms. Here two of the four change in a single way — the phase's derivative becomes a covariant derivative — and the third does not change at all. That asymmetry is the type argument of [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html), and the action is where it is visible without a decomposition.
@@ -14,7 +16,9 @@
 
 **Position in the block.** This is the variational companion of [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html) and the second of the eight articles of this layer. It is the only one of the eight whose equation is first order, and therefore the only one in which the two slots of a single covariant derivative exhaust the action's dependence on the phase, with no shell term between them.
 
-**Conventions.** Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\varphi$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the free companion, with the connection added: $ϙ$ is the coupling and equals minus the electric charge, $q=-ϙ$; $\varphi$ and $\vec A$ are the scalar and vector potentials; $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$; a gauge transformation is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+ϙ\Gamma/\hbar$, $\varphi\mapsto\varphi+\partial_{t'}\Gamma$, $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. The field is $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, and the covariant derivative is $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$, so the mechanical momentum is $\tilde P^{\mathrm{mech}}=\tilde P+ϙ\tilde A$.
 
 ## The Action in the Fluid Variables
 
@@ -66,6 +70,20 @@ which is the block's display and, with $q=-ϙ$, the standard force on a charge $
 
 **The third variation is absent because there is no third field.** The velocity is $\vec\pi/m$, a function of the phase and the potential. Promoting it to a field would add a multiplier equal to the momentum density, exactly as in the free companion, and the constraint it enforces would be $\vec v=\vec\pi/m$ with $\vec\pi$ now carrying $\vec A$. Nothing is gained, and the rotational case does not need the promotion, for the reason the next section gives.
 
+## Gauge Invariance, Term by Term
+
+**The density is invariant and not merely invariant up to a divergence.** Under $S\mapsto S+ϙ\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$,
+
+$$
+\partial_{t'}S-ϙ\varphi\longmapsto\partial_{t'}S+ϙ\partial_{t'}\Gamma-ϙ\varphi-ϙ\partial_{t'}\Gamma=\partial_{t'}S-ϙ\varphi,
+$$
+
+and under $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ the combination $\vec\nabla_\Phi S-q\vec A$ is fixed by the same cancellation. The amplitude and the gradient energy do not move. So every term of $\mathcal L_{\mathrm{fl}}$ is separately invariant, and the action is invariant without a boundary term.
+
+**The invariance is stronger than the free article's and it is a different kind.** The free action is invariant under a constant shift of the phase, which is a global symmetry with a Noether current. This one is invariant under a *local* shift, which is a redundancy and not a symmetry: the current it implies is the charge current, and its conservation is an identity rather than a consequence of the equations. **A local invariance gives no conserved quantity beyond the one the global subgroup gives**, and the global subgroup here is the constant shift, whose current is $ϙ\rho_{\mathrm{num}}$ — the charge density.
+
+**The canonical energy is gauge dependent and the fluid's energy is not.** The Legendre transform of $\mathcal L_{\mathrm{fl}}$ in $\dot S$ gives $\rho_{\mathrm{num}}\vec\pi^{2}/2m+\mathcal E_{\mathrm{grad}}-\rho_{\mathrm{num}}ϙ\varphi$, which moves under a gauge transformation; the quantity $\mathcal E$ of the energy equation does not. This is the standard situation for a charged field, and it is worth stating because it limits what the article may call the fluid's energy: **$\mathcal E$ is the kinetic energy and it is gauge invariant; the canonical energy is the matter action's and only the sum with the field's energy is physical.** No thermodynamics is intended here, and the third category's local thermal state is a different object.
+
 ## The Coupling Supplies the Clebsch Structure
 
 **A rotational fluid needs a second representation of its velocity, and the connection is one.** The Clebsch form of a velocity with rank-two vorticity is $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, with the pair carrying the curl. Here
@@ -80,19 +98,23 @@ so the representation is of that shape after a transcription: $\phi_{\mathrm{clb
 
 **What the action adds to the block's statement is the reason the pair costs nothing.** In a classical rotational fluid the Clebsch pair is two extra fields with their own equations, and [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the cost. Here the pair is not extra: the potential is already in the action as the thing the phase couples to, and its equation is Maxwell's, which the matter action does not contain. **The charge fluid is rotational for free because its rotation is the field's.**
 
-## Gauge Invariance, Term by Term
+## The Noether Currents: The Charge the Coupling Creates
 
-**The density is invariant and not merely invariant up to a divergence.** Under $S\mapsto S+ϙ\Gamma$ and $\varphi\mapsto\varphi+\partial_{t'}\Gamma$,
+**The charge exists because the coupling does.** The free Schrödinger fluid is neutral; with the connection present the phase rotation is local and compensated, so the current that the connection multiplies is conserved:
 
 $$
-\partial_{t'}S-ϙ\varphi\longmapsto\partial_{t'}S+ϙ\partial_{t'}\Gamma-ϙ\varphi-ϙ\partial_{t'}\Gamma=\partial_{t'}S-ϙ\varphi,
+\rho_{\mathrm{chg}}=q\,\rho_{\mathrm{num}},
+\qquad
+\vec j_{\mathrm{chg}}=q\,\rho_{\mathrm{num}}\vec v ,
+\qquad
+\vec v=\frac{\vec\nabla_\Phi S-q\vec A}{m},
 $$
 
-and under $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$ the combination $\vec\nabla_\Phi S-q\vec A$ is fixed by the same cancellation. The amplitude and the gradient energy do not move. So every term of $\mathcal L_{\mathrm{fl}}$ is separately invariant, and the action is invariant without a boundary term.
+with $q$ the charge. The velocity is the mechanical one, and that is the whole of the coupling's effect on the current.
 
-**The invariance is stronger than the free article's and it is a different kind.** The free action is invariant under a constant shift of the phase, which is a global symmetry with a Noether current. This one is invariant under a *local* shift, which is a redundancy and not a symmetry: the current it implies is the charge current, and its conservation is an identity rather than a consequence of the equations. **A local invariance gives no conserved quantity beyond the one the global subgroup gives**, and the global subgroup here is the constant shift, whose current is $ϙ\rho_{\mathrm{num}}$ — the charge density.
+**The energy and the quantum potential.** The stress is the free one, because the quantum potential depends on $\varrho$ alone and the coupling does not touch $\varrho$. So the charge current is covariantised and the stress is not, which is the article's *What the Charge Does Not Change* seen from the currents.
 
-**The canonical energy is gauge dependent and the fluid's energy is not.** The Legendre transform of $\mathcal L_{\mathrm{fl}}$ in $\dot S$ gives $\rho_{\mathrm{num}}\vec\pi^{2}/2m+\mathcal E_{\mathrm{grad}}-\rho_{\mathrm{num}}ϙ\varphi$, which moves under a gauge transformation; the quantity $\mathcal E$ of the energy equation does not. This is the standard situation for a charged field, and it is worth stating because it limits what the article may call the fluid's energy: **$\mathcal E$ is the kinetic energy and it is gauge invariant; the canonical energy is the matter action's and only the sum with the field's energy is physical.** No thermodynamics is intended here, and the third category's local thermal state is a different object.
+**The sign.** The sign of the charge is the sign of $q$, and the density remains positive. The two are independent: a negative charge with a positive density is a negative temporal component, and the article's gauge-invariance section is what makes the pair consistent under a gauge transformation.
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 

@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Proca Equation in Momentum Space__
 
+**Declared omissions.** The reality of the action is a statement about the symbol and is made there, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The coupled variational parent ends with a precise complaint and this article answers the part of it that frequency space can answer.** *The Lagrangian and the Coupled Proca Equation* states the action, proves the mass term's exact invariance, states the field term's **exact non-invariance**, and records that the symmetric pairing $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$ is invariant under the phase "only when the phase's square is one". **The complaint is that the algebra's single field strength cannot carry a complex bivector's Lagrangian.** The article's first finding is the frequency-space form of that complaint, and it is one number.
@@ -70,32 +72,25 @@ where $[\,\pi A\,]=\pi_t a_t'+\vec\pi\cdot\vec a$ is the shifted Lorenz form and
 
 **What the imaginary part does is carry the phase's mismatch.** A bilinear form's complex value has an argument that rotates at twice the phase and a modulus that does not; discarding the imaginary part therefore discards the information that would have made the term invariant. **That is the article's sharpest statement about the parent's complaint**, and §*The Two Terms Transform Differently* measures it.
 
-## The Two Terms Transform Differently
+## The Variation
 
-**Under a constant central phase the mass term does not move and the field term rotates at twice the angle.** With $\alpha$ a constant and $A\mapsto e^{i\alpha}A$,
+**The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
 
 $$
-\mathcal{M}\bigl(e^{i\alpha}A\bigr)=\mathcal{M}(A) ,
-\qquad
-\mathcal{F}\bigl(e^{i\alpha}A\bigr)=e^{2i\alpha}\,\mathcal{F}(A) ,
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
 $$
 
-the first because $e^{-i\alpha}e^{i\alpha}=1$ and the second because the two factors of the square each carry one power. **Measured on a random complex amplitude at $\pi_t=1.2$, $\vec\pi=(0.3,0.2,0.1)$, $k_m=0.7$:**
+with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
 
-| $\alpha$ | $\mathcal{M}$ | $\lvert\mathcal{F}\rvert$ | $\arg\bigl(\mathcal{F}(e^{i\alpha}A)/\mathcal{F}(A)\bigr)$ | $2\alpha$ mod $2\pi$ |
-| --- | --- | --- | --- | --- |
-| $0$ | $0.169050$ | $0.158799$ | $0.000000$ | $0.000000$ |
-| $0.7$ | $0.169050$ | $0.158799$ | $+1.400000$ | $+1.400000$ |
-| $1.9$ | $0.169050$ | $0.158799$ | $-2.483185$ | $+3.800000$ |
-| $3.1$ | $0.169050$ | $0.158799$ | $-0.083185$ | $+6.200000$ |
+**Stationarity is the symbol equation.** Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
 
-**Four rows, one invariant column, one rotating column.** The mass term's value is identical in every row to six digits, and the field term's modulus is identical in every row while its argument advances by exactly twice the phase. **So the field term is invariant in modulus and not in argument**, which is the precise statement the parent makes in prose.
+$$
+\mathcal{S}(\omega,\vec k)\,X=0,
+$$
 
-**The parent's "only when the phase's square is one" is the case $\alpha\in\{0,\pi\}$.** At $\alpha=\pi$ the factor is $e^{2i\pi}=1$ and the field term returns to itself; at every other angle it does not. **So invariance holds on a discrete two-element set and nowhere else**, and the article's table is that sentence with numbers.
+the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
 
-**The consequence for the action is that the phase is a symmetry of one term and not of the other.** The mass term alone would give a conserved charge for every constant $\alpha$; the sum gives one only at $\alpha\in\{0,\pi\}$, which is no continuous symmetry at all. **So the coupled action's phase symmetry is not a symmetry of the action as written**, and the parent's record of the field term's exact non-invariance is the same statement.
-
-**What an invariant field term would need is a sesquilinear structure, and the algebra's single field strength does not supply one.** A sesquilinear term would pair $\tilde F$ with its conjugate, which is the parent's $\mathrm{Re}\,\mathrm{Sc}(\tilde F\overline{\tilde F'})$, and in frequency space that pairing needs a second field strength to conjugate. **The missing second half is the parent's twelve-minus-six**, and the article's display of $e^{2i\alpha}$ is the arithmetic of the same deficit.
+**What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
 ## The Constraint Is a Determination
 
@@ -141,6 +136,41 @@ so the temporal coefficient has no $\pi_t^{2}$ and the three spatial coefficient
 
 **What the coupling changes is the coefficient's value and not its character.** $\tfrac12(\lvert\vec\pi\rvert^{2}+k_m^{2})$ moves with the background potential through $\vec\pi$ and with the mass; it never vanishes for a massive field in a bounded background. **So the primary constraint is never a dynamical equation**, in the free theory or the coupled one.
 
+## The Two Terms Transform Differently
+
+**Under a constant central phase the mass term does not move and the field term rotates at twice the angle.** With $\alpha$ a constant and $A\mapsto e^{i\alpha}A$,
+
+$$
+\mathcal{M}\bigl(e^{i\alpha}A\bigr)=\mathcal{M}(A) ,
+\qquad
+\mathcal{F}\bigl(e^{i\alpha}A\bigr)=e^{2i\alpha}\,\mathcal{F}(A) ,
+$$
+
+the first because $e^{-i\alpha}e^{i\alpha}=1$ and the second because the two factors of the square each carry one power. **Measured on a random complex amplitude at $\pi_t=1.2$, $\vec\pi=(0.3,0.2,0.1)$, $k_m=0.7$:**
+
+| $\alpha$ | $\mathcal{M}$ | $\lvert\mathcal{F}\rvert$ | $\arg\bigl(\mathcal{F}(e^{i\alpha}A)/\mathcal{F}(A)\bigr)$ | $2\alpha$ mod $2\pi$ |
+| --- | --- | --- | --- | --- |
+| $0$ | $0.169050$ | $0.158799$ | $0.000000$ | $0.000000$ |
+| $0.7$ | $0.169050$ | $0.158799$ | $+1.400000$ | $+1.400000$ |
+| $1.9$ | $0.169050$ | $0.158799$ | $-2.483185$ | $+3.800000$ |
+| $3.1$ | $0.169050$ | $0.158799$ | $-0.083185$ | $+6.200000$ |
+
+**Four rows, one invariant column, one rotating column.** The mass term's value is identical in every row to six digits, and the field term's modulus is identical in every row while its argument advances by exactly twice the phase. **So the field term is invariant in modulus and not in argument**, which is the precise statement the parent makes in prose.
+
+**The parent's "only when the phase's square is one" is the case $\alpha\in\{0,\pi\}$.** At $\alpha=\pi$ the factor is $e^{2i\pi}=1$ and the field term returns to itself; at every other angle it does not. **So invariance holds on a discrete two-element set and nowhere else**, and the article's table is that sentence with numbers.
+
+**The consequence for the action is that the phase is a symmetry of one term and not of the other.** The mass term alone would give a conserved charge for every constant $\alpha$; the sum gives one only at $\alpha\in\{0,\pi\}$, which is no continuous symmetry at all. **So the coupled action's phase symmetry is not a symmetry of the action as written**, and the parent's record of the field term's exact non-invariance is the same statement.
+
+**What an invariant field term would need is a sesquilinear structure, and the algebra's single field strength does not supply one.** A sesquilinear term would pair $\tilde F$ with its conjugate, which is the parent's $\mathrm{Re}\,\mathrm{Sc}(\tilde F\overline{\tilde F'})$, and in frequency space that pairing needs a second field strength to conjugate. **The missing second half is the parent's twelve-minus-six**, and the article's display of $e^{2i\alpha}$ is the arithmetic of the same deficit.
+
+## The Noether Currents: The Two Conserved Quantities Per Mode
+
+**Two quantities and two different masses.** The article's *The Charge Has No Mass and the Energy Has Mass-Squared* is the position-space statement; at a mode the same split appears as two functionals of the amplitude. The charge is the bilinear $ϙ\,\mathrm{Sc}[X^{*}X]$ per mode, with no $k_m$ in it, and it is conserved because the local phase is a symmetry of the coupled action. The energy is the symbol on the shell, and there the mass appears squared.
+
+**Why they must differ.** The charge comes from the phase rotation, which acts on the field and not on the connection; the energy comes from the time translation, which acts on both. A quantity that came from the phase could not carry the mass, because the mass term is invariant under the phase. That is the whole reason for the split, and it survives the transform because the transform is linear and commutes with both symmetries.
+
+**At a mode the count is one line each.** The charge is the coefficient of the temporal connection in the mode form; the energy is the value of the form on the shell. Both are read off the display of the third section without a new integral.
+
 ## The Charge Has No Mass and the Energy Has Mass-Squared
 
 **The two conserved quantities come from the two terms and they carry different constants.** The parent's charge current is a Noether current of the phase, and the phase is the mass term's symmetry; the parent's stress tensor is a Noether current of translations, and its trace is the mass term. **In frequency space the charge current's symbol carries $\pi_\mu$ and is linear in one power of the amplitude, so it carries no $k_m$; the trace carries $k_m^{2}$ and nothing else on the material slice.**
@@ -178,6 +208,14 @@ a reflection about $\omega=-\varkappa c\varphi/\hbar$ rather than about zero. **
 **The Abelian case is the one treated.** The phase's centrality is what makes the transformation a constant multiplication, and the corpus's coupling is Abelian.
 
 **The denial, once more.** No sector is exchanged. The action is real, the form is a complex number per mode, and the phase is a coordinate. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
+
+## What the Transform Adds and What It Relabels
+
+**What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
+
+**What it relabels.** The variational principle itself: nothing is added to the physics, no new current appears, and no equation is solved that the parent did not already solve. The word *action* at a mode is a density in the frequency and the wave number, not an integral over a region, and calling it an action is a shorthand that this section keeps because the shorthand is the point.
+
+**What it cannot reach.** The boundary term, the varying coefficient and the operator ordering. The first two need position space; the third is invisible at a constant symbol, where left and right multiplication agree. Each of those is named where the article meets it, and none is repaired by the transform.
 
 ## Open Questions
 

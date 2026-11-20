@@ -319,3 +319,4 @@ The field's value space is the centre $\mathbb{B}_{C}$, and the algebra supplies
 - S. Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the general construction of the Fock space and the connection between spin and statistics.
 - P. A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for the classification of constraints that distinguishes the scalar, Dirac and Maxwell Legendre transforms.
 - R. Haag, *Local Quantum Physics: Fields, Particles, Algebras* (Springer, 1996), for the algebraic formulation in which the field is an operator-valued distribution and the commutator function is the causal structure.
+- [The Lagrangian and the Second Quantisation: From the Action to the Commutator](the-lagrangian-and-the-second-quantisation.html), for the classical bracket this quantisation promotes and for what the promotion does not derive from the one-particle action.

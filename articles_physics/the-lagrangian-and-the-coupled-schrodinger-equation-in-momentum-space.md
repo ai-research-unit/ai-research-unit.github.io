@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Schrödinger Equation in Momentum Space__
 
+**Declared omissions.** The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The coupled action's fixed-frequency form is the coupled symbol, and its reality is a term-by-term fact.** *The Lagrangian and the Coupled Schrödinger Equation* writes the action for $i\hbar D_t\tilde\Xi=\frac{1}{2m}\sum(-i\hbar D_\eta)^{2}\tilde\Xi$. Take a mode of one frequency and one wave vector, and the action's density becomes the symbol of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*. **The identity is the same identity as in the free case**, with two shifted arguments.
@@ -59,6 +61,26 @@ and the density is $\sigma_{\mathrm{gco}}(\omega,\vec k)$ times $\mathrm{Sc}(\ti
 
 **What the substitution does not assume.** It does not assume that the connection is constant. A varying connection makes the density a function of position, and then the fixed-frequency reduction is a reduction in time only. **The reduction in space is a separate assumption and it is named in the mode's definition.**
 
+## The Variation
+
+**The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
+
+$$
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
+$$
+
+with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
+
+**Stationarity is the symbol equation.** Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
+
+$$
+\mathcal{S}(\omega,\vec k)\,X=0,
+$$
+
+the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
+
+**What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
+
 ## Reality Term by Term
 
 **The kinetic term.** The antisymmetrised covariant kinetic density is real exactly when the root is anti-Hermitian, by the free article's computation, and the covariant derivative's connection part is central so it does not change the type. **The coupling adds a real number to a real quantity.**
@@ -72,6 +94,48 @@ and the density is $\sigma_{\mathrm{gco}}(\omega,\vec k)$ times $\mathrm{Sc}(\ti
 **What the term-by-term structure forbids.** It forbids a complex action from a real connection and a Hermitian Hamiltonian. **A complex action would need a non-Hermitian coefficient or a complex $ϙ$**, and the article's licence excludes both.
 
 **The modulus is preserved by the connection.** $\lvert D_\eta\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. **That invariance is the reason the action's gauge covariance is exact and not up to a total derivative**, and the parent states it once.
+
+## Gauge Invariance of the Symbol, and the Resolution of the Sign
+
+**The two shifts.** Under a gauge transformation $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$, the connection moves as $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so its frequency and wave vector move as
+
+$$
+\omega\longmapsto\omega-\frac{ϙ}{\hbar}\partial_{t'}\Gamma,
+\qquad
+\vec k\longmapsto\vec k+\frac{ϙ}{\hbar}\vec\nabla_\Phi\Gamma .
+$$
+
+**The symbol is invariant.** Substituting the four shifts into $\sigma_{\mathrm{gco}}$ cancels $\partial_{t'}\Gamma$ in the frequency term and $\vec\nabla_\Phi\Gamma$ in the mechanical momentum, so $\sigma_{\mathrm{gco}}$ is unchanged. **Verified over one hundred draws with constant $\Gamma$: the residual was $8.9\times10^{-16}$.**
+
+**What the invariance says.** The symbol is a function of $\mathcal E=\hbar\omega+ϙ\varphi$ and $\vec\pi=\hbar\vec k-q\vec A$ and of nothing else. **The four ingredients are not independent**, and the symbol's two arguments are the two invariants of the polar companion.
+
+**The resolution of the sign.** The frequency shift in the symbol is $+ϙ\varphi/\hbar$ and the mode's frequency shift under a gauge transformation is $-ϙ\partial_{t'}\Gamma/\hbar$. The two signs differ, and they must differ, because $\varphi$ and $\partial_{t'}\Gamma$ enter $\mathcal E$ with the *same* sign while $\omega$ and $\partial_{t'}\Gamma$ enter with opposite signs. **A substitution that gave $\omega\mapsto\omega+ϙ\varphi/\hbar$ with the other sign would break the cancellation**, and that is how the article detects the error rather than asserting the convention.
+
+**What the invariance does not say.** It does not say that the action is gauge invariant. The action's value moves by a total derivative, which is the parent's statement and not this article's. **The symbol's invariance is stronger and it needs no boundary term**, because the symbol is a density at one point and a total derivative has no local content.
+
+**A remaining freedom.** A constant $\Gamma$ shifts both invariants by the same constants, so the symbol is invariant under a two-parameter translation of its arguments. **That freedom is the constant-background case's**, and it is why the polar companion can call the constant background exact.
+
+## The Structural Consequence: The Coupling Is a Translation of the Symbol
+
+**One shift, and the symbol moves by it.** The coupled symbol is the free symbol evaluated at the shifted potential, $\sigma_{\mathrm{gco}}(\omega)=\sigma(\omega;\,\tilde H_\Psi-ϙ\tilde A)$, and the claim is that this is the whole difference between the two articles. The proof is the substitution: the covariant derivative differs from the ordinary one by a central element, the transform replaces the derivative by its multiplier, and the central element adds to the multiplier and to nothing else.
+
+**The hand check.** Write the free symbol's defining identity, $\sigma(\omega)\tilde X=\bigl(\hbar(\omega-\omega_0)-\tilde H_\Psi\bigr)\tilde X$; replacing $\tilde H_\Psi$ by $\tilde H_\Psi-ϙ\tilde A$ shifts the zero of the frequency by $ϙ\tilde A/\hbar$ and leaves the slope in $\omega$ unchanged. The slope is the article's *Legendre* result, and its invariance under the coupling is the statement that the coupling is not a velocity.
+
+**What the shift cannot do.** It cannot change the reality of the symbol, because $ϙ\tilde A$ is real and adding a real element to a Hermitian one keeps it Hermitian. So the coupled article's reality statements are the free ones, and the gauge invariance of the symbol is the statement that a shift by a gradient moves the zero and not the spectrum.
+
+## The Noether Currents: The Charge Per Mode
+
+**The charge at a mode.** The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
+
+$$
+\mathcal{Q}(\vec k)=\hbar\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+$$
+
+up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
+
+**The energy.** The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
+
+**What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
 ## Legendre and the Two Invariant Slopes
 
@@ -107,25 +171,13 @@ and the identity is exact by construction. **The sign is the Lagrangian's**: a L
 
 **A check of the sign's consistency.** Composing the identity with the on-shell condition gives $E=0$ on a solution at zero frequency, which is the statement that a zero-frequency solution has zero energy under this normalisation. **The statement is a normalisation and not a physical claim**, and the article states it once.
 
-## Gauge Invariance of the Symbol, and the Resolution of the Sign
+## Limits
 
-**The two shifts.** Under a gauge transformation $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$, the connection moves as $\varphi\mapsto\varphi+\partial_{t'}\Gamma$ and $\vec A\mapsto\vec A-\vec\nabla_\Phi\Gamma$. A mode's phase moves as $\theta\mapsto\theta+ϙ\Gamma/\hbar$, so its frequency and wave vector move as
+**Constant coefficients.** The symbol exists for a constant Hamiltonian and a constant connection. With $\vec A$ linear in space the symbol depends on position through $\vec A$ and the plane-wave reduction fails even for a constant field strength.
 
-$$
-\omega\longmapsto\omega-\frac{ϙ}{\hbar}\partial_{t'}\Gamma,
-\qquad
-\vec k\longmapsto\vec k+\frac{ϙ}{\hbar}\vec\nabla_\Phi\Gamma .
-$$
+**Hermitian coefficients and real $ϙ$.** The term-by-term reality uses both. A complex $ϙ$ makes the potential term complex; a non-Hermitian Hamiltonian makes the kinetic term complex for the central root as well.
 
-**The symbol is invariant.** Substituting the four shifts into $\sigma_{\mathrm{gco}}$ cancels $\partial_{t'}\Gamma$ in the frequency term and $\vec\nabla_\Phi\Gamma$ in the mechanical momentum, so $\sigma_{\mathrm{gco}}$ is unchanged. **Verified over one hundred draws with constant $\Gamma$: the residual was $8.9\times10^{-16}$.**
-
-**What the invariance says.** The symbol is a function of $\mathcal E=\hbar\omega+ϙ\varphi$ and $\vec\pi=\hbar\vec k-q\vec A$ and of nothing else. **The four ingredients are not independent**, and the symbol's two arguments are the two invariants of the polar companion.
-
-**The resolution of the sign.** The frequency shift in the symbol is $+ϙ\varphi/\hbar$ and the mode's frequency shift under a gauge transformation is $-ϙ\partial_{t'}\Gamma/\hbar$. The two signs differ, and they must differ, because $\varphi$ and $\partial_{t'}\Gamma$ enter $\mathcal E$ with the *same* sign while $\omega$ and $\partial_{t'}\Gamma$ enter with opposite signs. **A substitution that gave $\omega\mapsto\omega+ϙ\varphi/\hbar$ with the other sign would break the cancellation**, and that is how the article detects the error rather than asserting the convention.
-
-**What the invariance does not say.** It does not say that the action is gauge invariant. The action's value moves by a total derivative, which is the parent's statement and not this article's. **The symbol's invariance is stronger and it needs no boundary term**, because the symbol is a density at one point and a total derivative has no local content.
-
-**A remaining freedom.** A constant $\Gamma$ shifts both invariants by the same constants, so the symbol is invariant under a two-parameter translation of its arguments. **That freedom is the constant-background case's**, and it is why the polar companion can call the constant background exact.
+**One time.** The action is an integral over $t'$, so the transform is in one variable. The four-dimensional transform would put the slope at $\hbar c$ and keep every other statement, and the article does not construct it.
 
 ## What the Coupled Version Adds
 
@@ -134,14 +186,6 @@ $$
 **The term-by-term reality.** The coupled action is real because each of its three terms is real, not because of a cancellation. **That is a stronger statement than the free article's**, and it is the reason a central connection cannot spoil the variational structure.
 
 **What it does not add.** No new prediction, no new solution, no statement about a varying field strength. **The action is the parent's and the symbol is the companion's**; the article joins them and checks the join.
-
-## Limits
-
-**Constant coefficients.** The symbol exists for a constant Hamiltonian and a constant connection. With $\vec A$ linear in space the symbol depends on position through $\vec A$ and the plane-wave reduction fails even for a constant field strength.
-
-**Hermitian coefficients and real $ϙ$.** The term-by-term reality uses both. A complex $ϙ$ makes the potential term complex; a non-Hermitian Hamiltonian makes the kinetic term complex for the central root as well.
-
-**One time.** The action is an integral over $t'$, so the transform is in one variable. The four-dimensional transform would put the slope at $\hbar c$ and keep every other statement, and the article does not construct it.
 
 ## Open Questions
 

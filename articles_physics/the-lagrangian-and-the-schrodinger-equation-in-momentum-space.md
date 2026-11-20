@@ -1,5 +1,7 @@
 # __The Lagrangian and the Schrödinger Equation in Momentum Space__
 
+**Declared omissions.** The mode form imposes no constraint beyond its own vanishing, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The action is a functional of the field, and the transform turns it into a quadratic form.** *The Lagrangian and the Schrödinger Equation* writes one real functional whose Euler–Lagrange equation is the parent's equation. Take a field of one frequency, $\tilde\Xi=e^{-i\omega t'}\tilde X$, and the functional becomes a quadratic form in $\tilde X$ whose kernel is the symbol of *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*. **The symbol is not a second object beside the action**; it is the action's density at fixed frequency, and that identity is the first thing below.
@@ -47,15 +49,32 @@ $$
 
 **What the substitution does not do.** It does not discretise, and it does not assume a single frequency for a general field. A general field is a sum of such terms, and the action is the sum of the forms plus the cross terms that the transform's orthogonality removes. **The cross terms are the interference, and they are what makes a superposition's density not the sum of densities.**
 
-## The Symbol Is the Quadratic Form
+## The Boundary Term, and Why One Variation Suffices
 
-**Two readings of one identity.** Read as an operator, $\sigma(\omega)$ is an array; read as a quadratic form, it is $\tilde X\mapsto\langle\tilde X,\sigma(\omega)\tilde X\rangle$. The two agree on the diagonal and differ off it; the form determines the self-adjoint part of the array, and that is all the action can see.
+**The boundary term.** Varying $\tilde\Xi^{*}$ and integrating the kinetic term by parts gives
 
-**Reality of the form is self-adjointness.** $S_\omega[\tilde X]$ is real for every $\tilde X$ exactly when $\sigma(\omega)$ is self-adjoint for the pairing, which is exactly when $\hbar\omega\,e_t-\tilde H_\Psi$ is Hermitian, which is exactly when $\tilde H_\Psi$ is. **So the reality of the fixed-frequency action at every frequency is the Hermiticity of the Hamiltonian**, verified over one hundred draws on random $\tilde X$.
+$$
+\delta S=\int\mathrm{d}t'\;\mathrm{Sc}\Big[\delta\tilde\Xi^{*}\big(\hbar c\,\tilde Z\,\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi\big)\Big]
+-\frac{\hbar c}{2}\Big[\mathrm{Sc}\big(\delta\tilde\Xi^{*}\tilde Z\tilde\Xi\big)\Big]_{\mathrm{bdy}},
+$$
 
-**What the form cannot see.** An anti-Hermitian part of the array contributes a purely imaginary value to the form and cancels in the sum with its conjugate. So the action is blind to the anti-Hermitian part, and its blindness is the reason the next section's statement is possible.
+and the boundary term vanishes when $\delta\tilde\Xi^{*}$ vanishes at both ends. **The boundary condition is a condition on the field's variation and not on its value**, and it is the same condition for every root.
 
-**The trace is the form on a basis.** Summing the form over an orthonormal basis of the coefficient space gives $\operatorname{tr}\sigma(\omega)=4(\hbar\omega-h_t)$. **The action's trace is four times the mean frequency**, and the determinant, which the form cannot see, is the square of the gap.
+**Reality is what makes the second variation redundant.** Because the action is real, the variation with respect to $\tilde\Xi$ is the conjugate of the variation with respect to $\tilde\Xi^{*}$, and one of them carries the content. The parent's identity for a real variation is
+
+$$
+\delta S=2\,\mathrm{Re}\int\mathrm{d}t'\;\mathrm{Sc}\big[\delta\tilde\Xi^{*}E\big],
+\qquad
+E=\hbar c\,\tilde Z\,\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi,
+$$
+
+and it holds for every anti-Hermitian root, for the same reason the action is real. **Two variations for the price of one is the payoff of the reality established above.**
+
+**What the identity is not.** It is not a proof that the equation is variational for a complex root. For a root that is neither Hermitian nor anti-Hermitian the kinetic term's scalar part has an imaginary piece, the boundary term does not vanish with a real variation, and the argument fails at the first line.
+
+**The vanishing of the bracket is the equation.** Since the pairing $\mathrm{Sc}(XY)$ is non-degenerate on $\mathbb{B}$, the bracket vanishes as an element. **The non-degeneracy is the parent's, and it is not the same as the definiteness of the Hermitian form**: it is a Hermitian pairing, and it needs no positivity.
+
+**Why the Hermitian pairing is enough.** For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. **The argument is the parent's and it is quoted once here.**
 
 ## Reality of the Action Is the Anti-Hermitian Root
 
@@ -105,32 +124,29 @@ with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros a
 
 **A caveat in the other direction.** Reality of the spectrum does not imply that the action with that root is real for a non-Hermitian Hamiltonian, and the article makes no such claim. Both statements are about Hermitian coefficients, and both are about different objects: one about a functional, one about a pencil.
 
-## The Boundary Term, and Why One Variation Suffices
+## The Symbol Is the Quadratic Form
 
-**The boundary term.** Varying $\tilde\Xi^{*}$ and integrating the kinetic term by parts gives
+**Two readings of one identity.** Read as an operator, $\sigma(\omega)$ is an array; read as a quadratic form, it is $\tilde X\mapsto\langle\tilde X,\sigma(\omega)\tilde X\rangle$. The two agree on the diagonal and differ off it; the form determines the self-adjoint part of the array, and that is all the action can see.
+
+**Reality of the form is self-adjointness.** $S_\omega[\tilde X]$ is real for every $\tilde X$ exactly when $\sigma(\omega)$ is self-adjoint for the pairing, which is exactly when $\hbar\omega\,e_t-\tilde H_\Psi$ is Hermitian, which is exactly when $\tilde H_\Psi$ is. **So the reality of the fixed-frequency action at every frequency is the Hermiticity of the Hamiltonian**, verified over one hundred draws on random $\tilde X$.
+
+**What the form cannot see.** An anti-Hermitian part of the array contributes a purely imaginary value to the form and cancels in the sum with its conjugate. So the action is blind to the anti-Hermitian part, and its blindness is the reason the next section's statement is possible.
+
+**The trace is the form on a basis.** Summing the form over an orthonormal basis of the coefficient space gives $\operatorname{tr}\sigma(\omega)=4(\hbar\omega-h_t)$. **The action's trace is four times the mean frequency**, and the determinant, which the form cannot see, is the square of the gap.
+
+## The Noether Currents: The Charge Per Mode
+
+**The charge at a mode.** The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
 
 $$
-\delta S=\int\mathrm{d}t'\;\mathrm{Sc}\Big[\delta\tilde\Xi^{*}\big(\hbar c\,\tilde Z\,\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi\big)\Big]
--\frac{\hbar c}{2}\Big[\mathrm{Sc}\big(\delta\tilde\Xi^{*}\tilde Z\tilde\Xi\big)\Big]_{\mathrm{bdy}},
+\mathcal{Q}(\vec k)=\hbar\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
 $$
 
-and the boundary term vanishes when $\delta\tilde\Xi^{*}$ vanishes at both ends. **The boundary condition is a condition on the field's variation and not on its value**, and it is the same condition for every root.
+up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
 
-**Reality is what makes the second variation redundant.** Because the action is real, the variation with respect to $\tilde\Xi$ is the conjugate of the variation with respect to $\tilde\Xi^{*}$, and one of them carries the content. The parent's identity for a real variation is
+**The energy.** The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
 
-$$
-\delta S=2\,\mathrm{Re}\int\mathrm{d}t'\;\mathrm{Sc}\big[\delta\tilde\Xi^{*}E\big],
-\qquad
-E=\hbar c\,\tilde Z\,\partial\tilde\Xi-\tilde H_\Psi\tilde\Xi,
-$$
-
-and it holds for every anti-Hermitian root, for the same reason the action is real. **Two variations for the price of one is the payoff of the reality established above.**
-
-**What the identity is not.** It is not a proof that the equation is variational for a complex root. For a root that is neither Hermitian nor anti-Hermitian the kinetic term's scalar part has an imaginary piece, the boundary term does not vanish with a real variation, and the argument fails at the first line.
-
-**The vanishing of the bracket is the equation.** Since the pairing $\mathrm{Sc}(XY)$ is non-degenerate on $\mathbb{B}$, the bracket vanishes as an element. **The non-degeneracy is the parent's, and it is not the same as the definiteness of the Hermitian form**: it is a Hermitian pairing, and it needs no positivity.
-
-**Why the Hermitian pairing is enough.** For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. **The argument is the parent's and it is quoted once here.**
+**What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
 ## Parseval Is the Noether Charge's Transform
 
@@ -170,6 +186,14 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 
 **What the slope fixes.** The slope fixes the normalisation of the transform and therefore the normalisation of $Q_N$ and $E$. **One choice of $\hbar$ fixes both**, and no second convention enters.
 
+## Limits
+
+**Constant coefficients.** Every statement about the symbol needs a constant Hamiltonian, and the operator setting replaces the symbol by a convolution. The action remains real there, term by term, for the same reason; what fails is the fixed-frequency reduction, not the reality.
+
+**Hermitian coefficients.** The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument of §*Reality of the Action Is the Anti-Hermitian Root* does not apply to the potential.
+
+**One-time functionals.** The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.
+
 ## What the Variational Reading Adds
 
 **One identity and one separation.** The identity is that the symbol is the fixed-frequency action's kernel, so the two companion articles describe one object. The separation is that the reality of the action and the reality of the spectrum are different requirements, with different strengths and different counts.
@@ -179,14 +203,6 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 **The transform of the two functionals.** Parseval and the energy identity are one normalisation of the charge and of the energy, and both are diagonal in the transform. **No new conservation law appears**, and none is claimed.
 
 **What it does not add.** No new prediction, no new solution, no closure of the operator setting. The variational principle is the parent's and the transform is the companion's; the article joins them.
-
-## Limits
-
-**Constant coefficients.** Every statement about the symbol needs a constant Hamiltonian, and the operator setting replaces the symbol by a convolution. The action remains real there, term by term, for the same reason; what fails is the fixed-frequency reduction, not the reality.
-
-**Hermitian coefficients.** The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument of §*Reality of the Action Is the Anti-Hermitian Root* does not apply to the potential.
-
-**One-time functionals.** The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.
 
 ## Open Questions
 

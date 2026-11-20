@@ -1,9 +1,5 @@
 # __The Lagrangian and the Schrödinger Equation__
 
-## Conventions
-
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i\hbar\,c\,\partial/\partial r'_t=i\hbar\,\partial/\partial t'$ is exact and is not repeated.
-
 ## Introduction
 
 *The Schrödinger Equation in Biquaternionic Form* writes the equation as
@@ -30,6 +26,11 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Schrödinger equation in its element form.
 
+**Declared omissions.** The reality of the action is examined inside *The Two Writings from the Action* and inside the structural consequence, and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the depth already made with the parent is attempted, so slot 13 is omitted.
+
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i\hbar\,c\,\partial/\partial r'_t=i\hbar\,\partial/\partial t'$ is exact and is not repeated.
 
 ## The Action in Element Form
 
@@ -186,8 +187,6 @@ The angle is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar c)$, the scalar part of the
 **The hand check.** Take $\tilde Z=\vec e_z$ and $\tilde H_\Psi=i\vec e_x$. Then $\vec e_z(i\vec e_x)=i\vec e_y$, which is Hermitian, so the generator $-\vec e_z\tilde H_\Psi/(\hbar c)$ is Hermitian and the flow it generates is not norm-preserving. The root is anti-Hermitian, so the action is real; the flow still fails, and it fails at $r'_t=\pi\hbar c/2$, where the accumulated factor is $\cosh\pi\,e_t-i\sinh\pi\,\vec e_y$. One counterexample separates the first row of the table from the other three.
 
 **What the ladder says about the action.** The factor $i$ sits on the derivative because reality alone already demands an anti-Hermitian root, and the factor is central because the other three requirements demand it. A non-central anti-Hermitian root would buy a real action and nothing else. That is why the action is written with $i$ and not with a general root, and the reason is a property of the algebra rather than a convention.
-
-**Declared omissions.** The reality of the action is examined inside *The Two Writings from the Action* and inside the structural consequence, and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the depth already made with the parent is attempted, so slot 13 is omitted.
 
 ## The Noether Currents
 

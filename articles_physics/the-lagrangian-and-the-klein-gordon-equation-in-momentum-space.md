@@ -1,5 +1,7 @@
 # __The Lagrangian and the Klein–Gordon Equation in Momentum Space__
 
+**Declared omissions.** The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The variational parent states one sentence in passing and drops it.** At its §*The Action on the Carrier and on the Algebra* it writes that for a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, "whose four branches are the four eigenvalues". The sentence is stated, used as a remark about what a non-central coefficient would do, and not developed. This article develops it.
@@ -74,6 +76,26 @@ $$
 
 **The anti-Hermitian case has the same shape with $i$ in front.** For $\tilde M=i\,a\,e_t+\vec v\cdot\vec e$ the same identity gives $\operatorname{eig}L(\tilde M)=i(a\pm\lvert\vec v\rvert)$, each twice. Over three hundred draws the real part of every eigenvalue was below $8.9\times10^{-16}$ and the sorted spectrum matched $i(a\pm\lvert\vec v\rvert)$ to $3.6\times10^{-15}$. The spectrum is purely imaginary, and that is exactly what disqualifies the case in the next section.
 
+## The Variation
+
+**The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
+
+$$
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
+$$
+
+with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
+
+**Stationarity is the symbol equation.** Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
+
+$$
+\mathcal{S}(\omega,\vec k)\,X=0,
+$$
+
+the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
+
+**What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
+
 ## Reality of the Action and the Selection Rule
 
 **Finding 3.** The potential term of the action is $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$, and its reality is equivalent to $\tilde M$ being Hermitian. The parent's kinetic term is already real for every field, so the potential term is the only place where a sector question can arise, and this is what it decides.
@@ -94,6 +116,26 @@ $$
 **The result is not a wave.** The frequency is complex for every wave number, and a complex frequency is growth or decay in time with no propagation threshold, so the mode is not a wave in any sense the parent's dispersion relation recognises. That is the formal content of the excluded case; it is recorded so that a reader who meets it elsewhere can identify it, not as a candidate theory.
 
 **The comparison with the Dirac family is exact and it is instructive.** There the symbol is first order and the object that must be Hermitian is the symbol itself, because a first-order equation is a flow and a flow wants a unitary generator. Here the equation is second order, its action contains $\tilde M$ quadratically, and the object that must be real is the action's density. **Same selection rule, different quantity selected.** The scalar family selects on $S$ and the spinor family selects on $H$, and neither selection is available in the other family. **The free case is the boundary of the rule**: with $\tilde M=k_m^{2}e_t$ the potential is central and Hermitian at once, the anti-Hermitian part vanishes, and both sectors pass the test, which is why the free theory cannot tell them apart.
+
+## The Denial That Survives
+
+**The informational sector is not the Fourier dual of the material sector.** Every transform in this article acts on a $\mathbb{B}$-valued function and returns a $\mathbb{B}$-valued function. No step carries a field out of its sector, and no display above identifies a coefficient's sector with a function's sector. The sector statements are statements about one constant element that multiplies, at one wave number or at one event.
+
+**A second denial belongs here because the eigenvalue problem invites the error**: the eigenvalues of $L(\tilde M)$ are complex numbers, and their real or imaginary character is a statement about $\tilde M$'s sector and not about the field's. A field in $\mathbb{B}_\Psi$ and a field in $\mathbb{B}_\Phi$ feel the same matrix, because the matrix is left multiplication on the whole algebra; what differs is only which sector their values occupy, and that is not an eigenvalue.
+
+## The Noether Currents: The Charge Per Mode
+
+**The charge at a mode.** The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
+
+$$
+\mathcal{Q}(\vec k)=\hbar\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+$$
+
+up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
+
+**The energy.** The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
+
+**What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
 ## The Tachyon Threshold
 
@@ -117,12 +159,6 @@ $$
 
 **The thesis of the article is this finding read backwards.** Because the free symbol is central and carries no sector content, every sector statement at Klein–Gordon level must come from the potential. The article's four other findings are the four ways in which it does: the spectrum, the multiplicity, the reality, and the threshold. Remove the potential and all four collapse to one number.
 
-## The Denial That Survives
-
-**The informational sector is not the Fourier dual of the material sector.** Every transform in this article acts on a $\mathbb{B}$-valued function and returns a $\mathbb{B}$-valued function. No step carries a field out of its sector, and no display above identifies a coefficient's sector with a function's sector. The sector statements are statements about one constant element that multiplies, at one wave number or at one event.
-
-**A second denial belongs here because the eigenvalue problem invites the error**: the eigenvalues of $L(\tilde M)$ are complex numbers, and their real or imaginary character is a statement about $\tilde M$'s sector and not about the field's. A field in $\mathbb{B}_\Psi$ and a field in $\mathbb{B}_\Phi$ feel the same matrix, because the matrix is left multiplication on the whole algebra; what differs is only which sector their values occupy, and that is not an eigenvalue.
-
 ## Limits
 
 **Constant coefficients are the licence.** The eigenvalue problem needs $\tilde M$ constant, because the symbol exists only there. A position-dependent Hermitian $\tilde M$ keeps the equation and loses the spectrum: the momentum-space operator becomes a convolution, its kernel is the transform of $\tilde M$, and there is no matrix and no eigenvalue. The parent's constant setting is therefore not a simplification of convenience but the only setting in which the four branches exist as branches.
@@ -132,6 +168,14 @@ $$
 **The companion's question is the zero set, and it is not this article's.** *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form* asks when the second-order symbol factors into first-order ones and answers through the reducibility of its quadric. A spectrum and a factorization are different properties of the same symbol: an operator can have a perfectly good spectrum and no square root, which is exactly the Klein–Gordon case, and the scalar Klein–Gordon operator has both a known spectrum and a known obstruction.
 
 **The third article of the family reads the polar word, and this one does not.** *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Polar Variables* asks where the transform's phase comes from and what removes the symbol; its answer is about the amplitude, and it is not a restatement of anything here. Nothing in the article is a transform between sectors: every object above is an element of $\mathbb{B}$ or a coefficient of one, and the transform returns the same algebra.
+
+## What the Transform Adds and What It Relabels
+
+**What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
+
+**What it relabels.** The variational principle itself: nothing is added to the physics, no new current appears, and no equation is solved that the parent did not already solve. The word *action* at a mode is a density in the frequency and the wave number, not an integral over a region, and calling it an action is a shorthand that this section keeps because the shorthand is the point.
+
+**What it cannot reach.** The boundary term, the varying coefficient and the operator ordering. The first two need position space; the third is invisible at a constant symbol, where left and right multiplication agree. Each of those is named where the article meets it, and none is repaired by the transform.
 
 ## Open Questions
 

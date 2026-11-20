@@ -1,5 +1,7 @@
 # __The Lagrangian and the Proca Equation in Momentum Space__
 
+**Declared omissions.** The reality of the action is a statement about the symbol and is made there, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The variational parent states its central structural fact in prose and this article puts a number on it.** *The Lagrangian and the Proca Equation* writes the action $\mathcal{L}=\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12k_m^{2}\langle\tilde A_\Phi\rangle_\natural$, derives the equation, and then says the sentence the whole subject turns on: **the mass term is the obstruction to gauge invariance**. Shifting the potential by a gradient leaves the field term alone and moves the mass term, so the action has no gauge symmetry and the equation inherits a longitudinal part. The article says the obstruction is the presence of one term in the action. **What it does not say is what the term costs.**
@@ -66,32 +68,25 @@ with $A\!\cdot\!A=-\lvert a_t'\rvert^{2}+\lvert\vec a\rvert^{2}$ the material fo
 
 **What the form does not do is decide which equation the physics uses.** The parent adopts the second-order form and puts the Palatini form aside; the form below is the second-order one's. **A first-order form would give a different form and a pair of equations**, and §*Open Questions* records that the article does not treat it.
 
-## The Longitudinal Coefficient Is the Mass Alone
+## The Variation
 
-**Along the wave number the form is the mass and nothing else.** Put $A\parallel k_\mu$, so that $A=\lambda k_\mu$ and $[kA]=\lambda k^{2}$. Then
+**The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
 
 $$
-\mathcal{Q}\bigl(\lambda k\bigr)
-=\tfrac12\Bigl(\lambda^{2}k^{4}-\bigl(k^{2}-k_m^{2}\bigr)\lambda^{2}k^{2}\Bigr)
-=\tfrac12\lambda^{2}k_m^{2}k^{2}
-=\tfrac12 k_m^{2}\bigl(A\!\cdot\!A\bigr) ,
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
 $$
 
-and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancellation is the statement that the field term does not act along the wave number**, which is the parent's "the field term depends on the longitudinal part only through a total derivative", read as an algebraic identity.
+with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
 
-**The coefficient is constant across the frequency, and it is measured.** On a unit-norm longitudinal amplitude, with $\vec k_\Phi=(0.3,0.2,0.1)$:
+**Stationarity is the symbol equation.** Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
 
-| $k_m$ | $k_t'=0.5$ | $k_t'=1.2$ | $k_t'=2.0$ | $\tfrac12k_m^{2}\lvert A\!\cdot\!A\rvert$ |
-| --- | --- | --- | --- | --- |
-| $0.7$ | $+0.245000000$ | $+0.245000000$ | $+0.245000000$ | $+0.245000000$ |
-| $0.3$ | $+0.045000000$ | $+0.045000000$ | $+0.045000000$ | $+0.045000000$ |
-| $0$ | $0$ | $0$ | $0$ | $0$ |
+$$
+\mathcal{S}(\omega,\vec k)\,X=0,
+$$
 
-**Nine entries, three frequencies, one column.** The value does not depend on $k_t'$ at all, which is the same statement as the algebra above: the longitudinal coefficient is a function of the mass and of the amplitude's norm and of nothing else. **No other coefficient of the form has that property.**
+the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
 
-**The transverse coefficient is the contrast, and it depends on both.** On the Lorenz plane $[kA]=0$ and $\mathcal{Q}=-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, which moves with $k^{2}$ and therefore with the frequency and the wave vector. **So the form is one constant direction and three moving ones**, and the constant direction is the one the constraint removes. That is the sense in which the constraint's cost is fixed and the propagating modes' cost is not.
-
-**The identity explains why the constraint exists in the massive case only.** The variation along $k_\mu$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac12k_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $k_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
+**What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
 ## The Constraint Is the Vanishing of a Coefficient
 
@@ -139,6 +134,33 @@ so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three
 
 **The degeneracy is not the pole's whole story.** A propagator's residue at the pole is a projector, and here it is the transverse projector: the residue is supported on the Lorenz plane and vanishes along the wave number. **That is why the longitudinal mode's contribution to the propagator is not a pole at all** but the $-1/k_m^{2}$ term the standard treatment records, and the form's eigenvalues say so in one line.
 
+## The Longitudinal Coefficient Is the Mass Alone
+
+**Along the wave number the form is the mass and nothing else.** Put $A\parallel k_\mu$, so that $A=\lambda k_\mu$ and $[kA]=\lambda k^{2}$. Then
+
+$$
+\mathcal{Q}\bigl(\lambda k\bigr)
+=\tfrac12\Bigl(\lambda^{2}k^{4}-\bigl(k^{2}-k_m^{2}\bigr)\lambda^{2}k^{2}\Bigr)
+=\tfrac12\lambda^{2}k_m^{2}k^{2}
+=\tfrac12 k_m^{2}\bigl(A\!\cdot\!A\bigr) ,
+$$
+
+and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancellation is the statement that the field term does not act along the wave number**, which is the parent's "the field term depends on the longitudinal part only through a total derivative", read as an algebraic identity.
+
+**The coefficient is constant across the frequency, and it is measured.** On a unit-norm longitudinal amplitude, with $\vec k_\Phi=(0.3,0.2,0.1)$:
+
+| $k_m$ | $k_t'=0.5$ | $k_t'=1.2$ | $k_t'=2.0$ | $\tfrac12k_m^{2}\lvert A\!\cdot\!A\rvert$ |
+| --- | --- | --- | --- | --- |
+| $0.7$ | $+0.245000000$ | $+0.245000000$ | $+0.245000000$ | $+0.245000000$ |
+| $0.3$ | $+0.045000000$ | $+0.045000000$ | $+0.045000000$ | $+0.045000000$ |
+| $0$ | $0$ | $0$ | $0$ | $0$ |
+
+**Nine entries, three frequencies, one column.** The value does not depend on $k_t'$ at all, which is the same statement as the algebra above: the longitudinal coefficient is a function of the mass and of the amplitude's norm and of nothing else. **No other coefficient of the form has that property.**
+
+**The transverse coefficient is the contrast, and it depends on both.** On the Lorenz plane $[kA]=0$ and $\mathcal{Q}=-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, which moves with $k^{2}$ and therefore with the frequency and the wave vector. **So the form is one constant direction and three moving ones**, and the constant direction is the one the constraint removes. That is the sense in which the constraint's cost is fixed and the propagating modes' cost is not.
+
+**The identity explains why the constraint exists in the massive case only.** The variation along $k_\mu$ is $\partial\mathcal{Q}/\partial\lambda=2\lambda\tfrac12k_m^{2}(A\!\cdot\!A)$, which vanishes for every $\lambda$ when $k_m=0$. **A coefficient that is proportional to the mass is a constraint that exists in proportion to the mass**, and that is a sharper statement than "the mass breaks the symmetry": nothing is broken, one coefficient is zero.
+
 ## The Trace Is the Mass
 
 **The form's Hessian has a trace and the trace is the mass on the shell.** $\mathrm{tr}\,\sigma=4(k^{2}-k_m^{2})-k^{2}=3k^{2}-4k_m^{2}$, which at $k^{2}=k_m^{2}$ is $-k_m^{2}$ exactly. **So on the mass shell the symbol's trace is the mass and nothing else**, independent of the wave vector, the frequency and the direction.
@@ -149,6 +171,14 @@ so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three
 
 **What the trace does not do is vanish anywhere physical.** $\mathrm{tr}\,\sigma=0$ requires $k^{2}=\tfrac43k_m^{2}$, which is not the mass shell. **So the massive vector field's symbol is never traceless**, and the parent's conformal non-invariance is the same fact: the mass is in the trace and cannot be removed from it. A massless field has $\mathrm{tr}\,\sigma=3k^{2}$, which vanishes exactly on the cone.
 
+## The Noether Currents: The Stress Per Mode
+
+**No charge, and the mode form says why.** The free Proca field has no phase symmetry, so there is no conserved charge and no bilinear to carry one; the element article proves it and the chart inherits it. What survives the transform is the energy–momentum, and at a mode it is the symbol acting as the energy.
+
+**The stress at a mode.** The energy of a mode is $\mathcal{Q}$ evaluated on the shell, and the momentum flux is the same form with the wave number in place of the frequency. The two are the components of one object, and the object is the quadratic form of the article's third section read twice. No separate computation is needed, and none is offered.
+
+**What the mass term does.** It fixes the longitudinal coefficient to $k_m^{2}$ and therefore fixes the energy of the longitudinal mode; the transverse modes keep the Maxwell dispersion. That split of the stress into two pieces is the mode-level statement of the count the element article makes, and it is the reason the Proca article's *Longitudinal Coefficient* section exists.
+
 ## Limits
 
 **The constant-coefficient licence bounds every statement here.** The form is a form at one wave number only where the coefficients are constant. With a connection there is a form at a mode only for a constant connection, and the coupled companion treats that case.
@@ -158,6 +188,14 @@ so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three
 **The overall sign is a convention.** The relative sign of the two terms is the parent's, fixed by positive energy. **The article's coefficients are quoted with that sign**, and a reader who uses the opposite convention will find every coefficient negated and every vanishing unchanged.
 
 **The denial, once more.** No sector is exchanged. The form is a real number per wave number, the amplitude is four real components, and twice the scalar part is a sum of four numbers. **None of the three is a statement about $\mathbb{B}_\Phi$ and $\mathbb{B}_\Psi$.**
+
+## What the Transform Adds and What It Relabels
+
+**What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
+
+**What it relabels.** The variational principle itself: nothing is added to the physics, no new current appears, and no equation is solved that the parent did not already solve. The word *action* at a mode is a density in the frequency and the wave number, not an integral over a region, and calling it an action is a shorthand that this section keeps because the shorthand is the point.
+
+**What it cannot reach.** The boundary term, the varying coefficient and the operator ordering. The first two need position space; the third is invisible at a constant symbol, where left and right multiplication agree. Each of those is named where the article meets it, and none is repaired by the transform.
 
 ## Open Questions
 

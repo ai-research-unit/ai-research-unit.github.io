@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Schrödinger Equation in the Non-Quantum Limit__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+
 ## Introduction
 
 **The limit in one sentence.** Write the parent's coupled polar action, delete the one term carrying a spatial derivative of the scale, and the two variations of what is left are the covariant Hamilton–Jacobi equation and the covariant continuity equation.
@@ -20,7 +22,9 @@
 
 **The sign, stated once.** The parent's coupling is $ϙ$ with $ϙ=-q$; its action carries $+ϙ\varphi\,\varrho^{2}$, which is $-q\varphi\,\varrho^{2}$ here, and its covariant gradient is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$, which is $(\vec\nabla_\Phi S-q\vec A)/\hbar$ here. Every display below uses $q$, the electric charge, and $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
 
-**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.
 
 ## The Action and Its Orders
 
@@ -91,26 +95,6 @@ which divided by $-2\varrho$ is the parent's Hamilton–Jacobi equation with $Q=
 
 **The quantum potential does not carry the connection, and the action shows why.** The deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, a function of the scale alone. The scale is invariant under the gauge group, so its gradient is too, and the divergence that follows from it is $Q$ and nothing more. **This is the variational form of the parent's first finding**, which the equation route obtains by inspection.
 
-## Varying the Phase: the Covariant Transport, Unchanged
-
-**The phase's variation of the truncated action.**
-
-$$
-\hbar\,\partial_{t'}\varrho^{2}+\frac{\hbar}{m}\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\bigl(\vec\nabla_\Phi S-q\vec A\bigr)\Bigr)=0 ,
-$$
-
-that is
-
-$$
-\boxed{\ \frac{\partial \varrho^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\frac{\vec\pi}{m}\Bigr)=0\ }
-$$
-
-the covariant continuity equation, whose current is the kinetic momentum over the mass.
-
-**It is identical on the full action, and the reason is again the deleted term's content.** The deleted term contains no $\theta_{\mathrm{pha}}$ and no $\vec A$, so both derivatives of the Lagrangian with respect to the phase are unchanged. **The transport equation is not an order of an expansion**: it is invariant under the deletion, and that invariance is the variational statement that the connection changes the current's carrier and not its structure.
-
-**The paramagnetic term is what puts $\vec A$ into the current.** Differentiating $\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\rvert^{2}$ with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns the covariant gradient, so the momentum conjugate to the phase is $\hbar \varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A)=\varrho^{2}\vec\pi$, the current. **The piece that looks like a perturbation in the action is the piece that makes the current gauge invariant**, and that is why it cannot be dropped.
-
 ## Gauge Invariance of the Truncated Action
 
 **The transformation on the chart.** With $\Gamma$ real, the phase is translated, the vector potential shifted, and the scalar potential shifted:
@@ -138,6 +122,38 @@ $$
 **The two canceling pairs are the two terms that carry the time derivative.** In the action the first term shifts by $-q \varrho^{2}\dot\Gamma$ and the potential-energy term by $+q \varrho^{2}\dot\Gamma$, term for term and pointwise, so no boundary term is produced and no integration by parts is needed. **The truncated action is gauge invariant exactly**, and the parent's reading is the reason it must be: the gauge group translates one coordinate of the word and leaves the other seven, so a term built from the scale and the invariant combination of the phase cannot see it.
 
 **The limit and the gauge transformation commute.** The deletion is the removal of a term built from the scale alone, so it removes a gauge invariant quantity. **Deleting and gauging in either order gives the same action**, and that is a one-line statement here and a computation in an equation-first account.
+
+## Varying the Phase: the Covariant Transport, Unchanged
+
+**The phase's variation of the truncated action.**
+
+$$
+\hbar\,\partial_{t'}\varrho^{2}+\frac{\hbar}{m}\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\bigl(\vec\nabla_\Phi S-q\vec A\bigr)\Bigr)=0 ,
+$$
+
+that is
+
+$$
+\boxed{\ \frac{\partial \varrho^{2}}{\partial t'}+\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\frac{\vec\pi}{m}\Bigr)=0\ }
+$$
+
+the covariant continuity equation, whose current is the kinetic momentum over the mass.
+
+**It is identical on the full action, and the reason is again the deleted term's content.** The deleted term contains no $\theta_{\mathrm{pha}}$ and no $\vec A$, so both derivatives of the Lagrangian with respect to the phase are unchanged. **The transport equation is not an order of an expansion**: it is invariant under the deletion, and that invariance is the variational statement that the connection changes the current's carrier and not its structure.
+
+**The paramagnetic term is what puts $\vec A$ into the current.** Differentiating $\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\rvert^{2}$ with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns the covariant gradient, so the momentum conjugate to the phase is $\hbar \varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A)=\varrho^{2}\vec\pi$, the current. **The piece that looks like a perturbation in the action is the piece that makes the current gauge invariant**, and that is why it cannot be dropped.
+
+## The Noether Currents: Density, Charge and Energy
+
+**The current is the density times the transport velocity, and the limit makes that literal.** The phase's momentum is the density,
+$$
+\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\ \longrightarrow\ \varrho^{2}\quad\text{in the non-quantum limit},
+$$
+and the phase's Euler–Lagrange equation is the continuity equation $\partial_{r'_t}\rho+\vec\nabla_\Phi\cdot(\rho\vec v)=0$ with $\vec v$ the transport velocity. The limit does not change the equation; it removes the terms that made $\rho$ differ from $\varrho^{2}$.
+
+**The charge and the energy.** The charge is the integral of $\rho$, times the coupling where the field is charged, and it carries no mass. The energy is the mass shell's value, and it carries the mass. The split is exact in the parent and survives the limit unchanged, which is why this article's verification section can check both in one line each.
+
+**What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
 ## What the Variational Route Adds
 

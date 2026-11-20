@@ -1,5 +1,7 @@
 # __The Lagrangian and the Dirac Equation in Momentum Space__
 
+**Declared omissions.** The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **In momentum space the Dirac action stops being a functional of neighbouring events and becomes an algebraic quadratic form at each wave number.** *The Lagrangian and the Dirac Equation* writes the action, varies it to the chiral pair, and derives the currents. This article performs the transform on that action and reads what the transform does to the three objects the variation rests on: the real part, the integration by parts and the Hessian.
@@ -48,6 +50,26 @@ with $\tilde\Xi_{L}$ and $\tilde\Xi_{R}$ now the transforms of the two parts. Th
 
 **That is what the transform buys, and it is a bookkeeping gain rather than a physical one.** The physics is the same equation. The gain is that three questions — is the bracket real, does it need a boundary term, what is the second variation — become questions about one element at one wave number instead of questions about a functional.
 
+## The Variation
+
+**The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
+
+$$
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
+$$
+
+with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
+
+**Stationarity is the symbol equation.** Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
+
+$$
+\mathcal{S}(\omega,\vec k)\,X=0,
+$$
+
+the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
+
+**What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
+
 ## The Real Part Is the Hermiticity of the Symbol
 
 **In position space the real part is a statement about the adjoint.** The parent's derivation shows that each kinetic density is real up to a divergence, that the divergence integrates away, and that the imaginary part of the bracket is therefore a surface term. One sentence of it is worth quoting: the $i$ inside the material time is what makes the temporal kinetic term self-adjoint without disturbing the spatial ones.
@@ -64,6 +86,16 @@ because $i\tilde K_\Phi$ is Hermitian: $\mathrm{Sc}(\tilde A^{*}H\tilde A)$ is r
 **The two readings are one mechanism seen twice.** In position space the central $i$ sits in the coordinate $R_t=ir_t'$ and splits the four derivative directions into one anti-Hermitian and three Hermitian; the real part then cancels the one imaginary contribution. In momentum space the same $i$ sits in front of the symbol and makes all four directions Hermitian at once; the real part then has nothing to cancel. **One element, used in one place at a time, and the real part is the trace of where it was used.**
 
 **A reader should not conclude that the real part was a decoration.** Without it the position-space functional is not real, and the variation is not the pair; the parent shows both. The claim here is narrower: the real part's work is done by the symbol's Hermiticity once the transform is taken, so the momentum-space action needs no boundary argument and no surface term.
+
+## Zero and Pole Are One Object
+
+**The variational output is the zero.** The pair's compatibility condition is $(k^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions of the equation of motion are supported exactly where the central scalar vanishes. The variational principle's content in momentum space is therefore: on the shell, any amplitude solves the pair; off it, none does.
+
+**The path integral's free propagator has the pole.** The path-integral companion writes the free Dirac kernel in momentum space with the denominator $\langle\tilde K_\Phi\rangle_\natural+k_m^{2}$, which is $-k^{2}+k_m^{2}$, the negative of the second variation. The kernel is large exactly where the scalar vanishes, and its residue there is the numerator the companion computes.
+
+**The two are one function, read at its zero and at its inverse.** Writing $N(\tilde K_\Phi)=k^{2}-k_m^{2}$, the variational statement is $N=0$ and the propagator is proportional to $1/N$. Neither statement is more fundamental, and neither implies the other without the construction in between: the zero selects the support and the pole gives the weight.
+
+**This is the precise sense in which the parent's third open question is closed.** The parent asked for the path integral and did not attempt it. The answer attempted here is not the integral; it is the observation that the two objects the parent separated — the extremum's object and the sum over configurations — meet in one momentum-space function, one at its zero and the other at its pole. **The construction of the sum is the companion articles' work, and the relation is the reason the two articles describe one theory.**
 
 ## The Second Variation Is One Central Scalar
 
@@ -99,15 +131,19 @@ $$
 
 **The number is the one the variational parent's action was built to produce.** The parent's variation gives the pair; composing the pair gives this scalar; the scalar's vanishing is the shell. The action therefore knows the shell twice, once through each member, and the two readings agree because the norm is central.
 
-## Zero and Pole Are One Object
+## The Noether Currents: The Charge Per Mode
 
-**The variational output is the zero.** The pair's compatibility condition is $(k^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions of the equation of motion are supported exactly where the central scalar vanishes. The variational principle's content in momentum space is therefore: on the shell, any amplitude solves the pair; off it, none does.
+**The charge at a mode.** The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
 
-**The path integral's free propagator has the pole.** The path-integral companion writes the free Dirac kernel in momentum space with the denominator $\langle\tilde K_\Phi\rangle_\natural+k_m^{2}$, which is $-k^{2}+k_m^{2}$, the negative of the second variation. The kernel is large exactly where the scalar vanishes, and its residue there is the numerator the companion computes.
+$$
+\mathcal{Q}(\vec k)=\hbar\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+$$
 
-**The two are one function, read at its zero and at its inverse.** Writing $N(\tilde K_\Phi)=k^{2}-k_m^{2}$, the variational statement is $N=0$ and the propagator is proportional to $1/N$. Neither statement is more fundamental, and neither implies the other without the construction in between: the zero selects the support and the pole gives the weight.
+up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
 
-**This is the precise sense in which the parent's third open question is closed.** The parent asked for the path integral and did not attempt it. The answer attempted here is not the integral; it is the observation that the two objects the parent separated — the extremum's object and the sum over configurations — meet in one momentum-space function, one at its zero and the other at its pole. **The construction of the sum is the companion articles' work, and the relation is the reason the two articles describe one theory.**
+**The energy.** The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
+
+**What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
 ## Limits
 
@@ -125,6 +161,14 @@ checked to $3.9\times10^{-16}$ over five momenta. On $k_t'=1$, $\vec k_\Phi=(0.6
 **The measure.** The momentum-space measure's constant is the transform's convention, and the action's overall constant is the parent's $\frac{\hbar c}{2}$. No display above depends on either, and no normalization is claimed.
 
 **The denial, once more.** The two parts remain elements of $\mathbb{B}$, the pair remains a pair of equations on elements, and the centrality of the second variation is a statement about one coefficient's behaviour. No sector flip occurs at any step.
+
+## What the Transform Adds and What It Relabels
+
+**What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
+
+**What it relabels.** The variational principle itself: nothing is added to the physics, no new current appears, and no equation is solved that the parent did not already solve. The word *action* at a mode is a density in the frequency and the wave number, not an integral over a region, and calling it an action is a shorthand that this section keeps because the shorthand is the point.
+
+**What it cannot reach.** The boundary term, the varying coefficient and the operator ordering. The first two need position space; the third is invisible at a constant symbol, where left and right multiplication agree. Each of those is named where the article meets it, and none is repaired by the transform.
 
 ## Open Questions
 

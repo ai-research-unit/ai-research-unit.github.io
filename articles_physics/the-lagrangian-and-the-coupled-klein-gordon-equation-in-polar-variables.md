@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 This article writes the action of the coupled Klein–Gordon theory in the coordinates of the complete polar decomposition and varies it. It is the polar companion of *The Lagrangian and the Coupled Klein–Gordon Equation*, and it continues *The Lagrangian and the Klein–Gordon Equation in Polar Variables*, whose bracket form of the kinetic term, metric, Legendre analysis and Jacobian argument it takes over. Its subject is the one thing the coupling changes in that structure, and the one thing it leaves alone.
@@ -28,9 +30,12 @@ summed over the four slots with the metric signs of the corpus's convention. The
 
 **Scope and settings.** The connection is external and treated at the level of the action; the field is the scalar of the element companion. The central-field case is the Madelung variational principle with a potential, which is standard and closed. The general element is the eight-parameter chart, whose action is regular and whose equations are the Jacobian image of the element form's — also closed, because the free polar article's argument does not use the connection. What is *not* closed here is the same thing that is not closed in the free polar article: the explicit Jacobian in the general case. The article states what it computes and says so.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ central; $^{*}$ Hermitian conjugation, $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ the coefficient of $e_t$, ; the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The word's parameters are $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\hat u_{\mathrm r}$, and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the material time is $r'_t=c\,t'$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$.
 
 **The endpoint $2\pi$.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range is closed at that point. Without the endpoint the word misses every element whose rotor factor is $-e_t$, the negative real axis $-\varrho e_t$ among them.
+
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ central; $^{*}$ Hermitian conjugation, $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ the coefficient of $e_t$, ; the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The word's parameters are $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$, $\theta_{\mathrm{rpd}}\ge0$, $\hat u_{\mathrm b}$, $\theta_{\mathrm{axr}}\in[0,2\pi]$, $\hat u_{\mathrm r}$, and $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ is the action. The connection is $\tilde A_\Phi=i a'_t e_t+\vec A$ with $a'_t$ and $\vec A$ real, the coupling is $ϙ$, the material time is $r'_t=c\,t'$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_{t}}^{2}$, and $k_m=mc/\hbar$.
 
 ## The Action in the Chart
 
@@ -120,6 +125,44 @@ $$
 
 up to the normalisation of the two terms, and it is invertible for $\rho_{\mathrm{num}}>0$: the connection contributes no $\partial_{r'_t}$-dependent term beyond the shift, so the rank is the free rank and the Legendre transform is the free one. This is the precise sense in which the coupling is not a constraint: it changes where the velocities are measured from, not which velocities the action contains.
 
+## The General Element
+
+**The bracket's shift in the eight-parameter chart.** With $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$ and $\mathcal A_\mu$ the free bracket, the action is the free polar article's
+
+$$
+S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_\mu(\mathcal A^{\mathrm{gco}}_\mu)^{*}\bigr]-k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\}
+$$
+
+with the metric unchanged. The metric is unchanged because the metric is a property of the *free* bracket's coefficients in the parameter basis, and the connection's term is not a parameter derivative; it is an additive constant in the bracket, and its contribution to the action is the two terms of §*The Action in the Chart*. So the frame density, the $\cosh$ and $\sinh$ structure, the amplitude–rapidity block's unit determinant and the two cross terms are all the free article's.
+
+**Which parameter equations are affected.** Varying the eight parameters gives eight equations: the scale's, the phase's, the rapidity's, the boost axis's two, the rotor's angle, and the rotor axis's two. The connection enters through the phase's temporal derivative and the scale's spatial derivatives, so the equations that contain those derivatives are shifted and the rest are shifted only through the potential term $-\frac{ϙ^{2}\varrho^{2}}{\hbar^{2}}(a_{t}'^{2}-\lvert\vec A\rvert^{2})$, which is a function of the coordinates and of $\varrho$ alone and therefore adds $\partial/\partial p$ of a known function to the right side of each.
+
+**No constraint and no multiplier.** The free polar article's argument is that the eight parameters are coordinates on the invertibles, that the word is a bijection with a smooth inverse, and that the Euler–Lagrange equations in the parameters are the Jacobian image of the element equation — hence exact, hence no constraint, hence no multiplier. The coupling does not touch the argument: the word is the same word, the bijection is the same bijection, and the Jacobian is the same Jacobian, because the connection enters the *action* and not the *parameterisation*. So the coupled polar variational principle is exactly as closed as the free one, and the closedness is a property of the chart and not of the dynamics.
+
+**The Legendre transform.** The kinetic matrix in the eight velocities is the free one plus the connection's contribution, and the connection's contribution to the velocities' dependence is a shift: the $\partial_{r'_t}\theta_{\mathrm{pha}}$ terms become $\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_t$ and the $\partial_\eta\theta_{\mathrm{pha}}$ terms $\partial_\eta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\eta$. A shift of a velocity does not change the matrix of second derivatives, so the free article's invertibility and its "regular Legendre transform" statement survive verbatim. The only new second-derivative structure is the $\rho_{\mathrm{chg}}^{2}A^{2}$ term, which has no velocity and contributes to the potential alone.
+
+## The Euler–Lagrange Equations
+
+**Two variations of one functional.** Varying the chart's action with respect to $\varrho$ and with respect to $\theta_{\mathrm{pha}}$ gives the two equations of the central field; varying the frame's angles gives the four equations of the general element; varying the connection gives the source equation. All of them are the element article's system read in the chart, because the word is a bijection on the invertibles and the Jacobian of the substitution is invertible wherever $\varrho>0$.
+
+**The one computation that is not a transcription.** The mass term is a function of the frame and the scale, $\varrho^{2}$ times a frame factor, and its variation with respect to $\varrho$ produces the term that the free article calls the mass shell. In the coupled case that term carries the connection through the phase's rate, so the two central equations are the covariant ones and not the free ones with a renamed variable. That is the content of the section after this one, and the variation is what produces it.
+
+## The Structural Consequence: Minimal Coupling Is a Shift of the Bracket
+
+**The chart states minimal coupling as one substitution and nothing else.** In the eight-parameter chart the covariant derivative differs from the ordinary one by a central element, so it acts on the word as a shift of the phase's rate and of the frame's spatial gradient:
+
+$$
+\partial_{r'_t}\theta_{\mathrm{pha}}\ \longmapsto\ \partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}A_t ,
+\qquad
+\vec\nabla_\Phi\theta_{\mathrm{pha}}\ \longmapsto\ \vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\vec A .
+$$
+
+No other parameter moves. The claim is that this is the *whole* of minimal coupling in the chart, and it is checkable in one line: the covariant derivative is $\partial+\frac{iϙ}{\hbar}A$ with $A$ central, and a central element commutes with the word, so it can only enter through the phase.
+
+**What it buys.** The four-bracket expansion of the free article is unchanged: the brackets are the logarithmic derivative's decomposition and know nothing about the connection. The coupling enters the phase's bracket alone, and the mass term, being a function of $\varrho$ and the frame, is untouched. Hence the coupled chart's Lagrangian is the free chart's Lagrangian with one rate and one gradient shifted, and the two-number statement of the operator setting — $h_t\mapsto h_t-ϙ\varphi$, $\vec h_\Psi\mapsto\vec h_\Psi-ϙ\vec A$ — is the same statement read in the other chart.
+
+**What it forbids.** A coupling that entered the frame's brackets would break the gauge invariance computed in the section on the charge, because the frame is what the gauge transformation rotates. The placement is therefore forced by the symmetry and not chosen for convenience.
+
 ## The Charge, Its Sign and Its Gauge Invariance
 
 **The charge is the phase rate times the density.** The temporal component of the current in the chart is
@@ -153,22 +196,6 @@ $$
 with $n$ the winding of the phase and $\Phi_B$ the flux enclosed. So the mechanical circulation is quantized up to the flux, and the chart's exact statement of the Aharonov–Bohm structure is that the flux enters the phase's bookkeeping and not the field's.
 
 **Why the action does not see it.** A circulation is a property of a closed loop and the action is a functional of functions; the loop's statement is a consequence of the phase's being single valued, which the action's variations do not test. The article states the consequence and records that it is not an equation of motion: it is a boundary condition on the phase's winding, and the free article's nodal-set structure is where it is analysed.
-
-## The General Element
-
-**The bracket's shift in the eight-parameter chart.** With $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$ and $\mathcal A_\mu$ the free bracket, the action is the free polar article's
-
-$$
-S=\int\mathrm{d}^{4}x\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,\mathcal A^{\mathrm{gco}}_\mu(\mathcal A^{\mathrm{gco}}_\mu)^{*}\bigr]-k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr]\Bigr\}
-$$
-
-with the metric unchanged. The metric is unchanged because the metric is a property of the *free* bracket's coefficients in the parameter basis, and the connection's term is not a parameter derivative; it is an additive constant in the bracket, and its contribution to the action is the two terms of §*The Action in the Chart*. So the frame density, the $\cosh$ and $\sinh$ structure, the amplitude–rapidity block's unit determinant and the two cross terms are all the free article's.
-
-**Which parameter equations are affected.** Varying the eight parameters gives eight equations: the scale's, the phase's, the rapidity's, the boost axis's two, the rotor's angle, and the rotor axis's two. The connection enters through the phase's temporal derivative and the scale's spatial derivatives, so the equations that contain those derivatives are shifted and the rest are shifted only through the potential term $-\frac{ϙ^{2}\varrho^{2}}{\hbar^{2}}(a_{t}'^{2}-\lvert\vec A\rvert^{2})$, which is a function of the coordinates and of $\varrho$ alone and therefore adds $\partial/\partial p$ of a known function to the right side of each.
-
-**No constraint and no multiplier.** The free polar article's argument is that the eight parameters are coordinates on the invertibles, that the word is a bijection with a smooth inverse, and that the Euler–Lagrange equations in the parameters are the Jacobian image of the element equation — hence exact, hence no constraint, hence no multiplier. The coupling does not touch the argument: the word is the same word, the bijection is the same bijection, and the Jacobian is the same Jacobian, because the connection enters the *action* and not the *parameterisation*. So the coupled polar variational principle is exactly as closed as the free one, and the closedness is a property of the chart and not of the dynamics.
-
-**The Legendre transform.** The kinetic matrix in the eight velocities is the free one plus the connection's contribution, and the connection's contribution to the velocities' dependence is a shift: the $\partial_{r'_t}\theta_{\mathrm{pha}}$ terms become $\partial_{r'_t}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_t$ and the $\partial_\eta\theta_{\mathrm{pha}}$ terms $\partial_\eta\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\eta$. A shift of a velocity does not change the matrix of second derivatives, so the free article's invertibility and its "regular Legendre transform" statement survive verbatim. The only new second-derivative structure is the $\rho_{\mathrm{chg}}^{2}A^{2}$ term, which has no velocity and contributes to the potential alone.
 
 ## What the Polar Principle Adds and What It Does Not
 

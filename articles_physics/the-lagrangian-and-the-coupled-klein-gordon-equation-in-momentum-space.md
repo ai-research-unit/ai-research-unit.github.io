@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Klein–Gordon Equation in Momentum Space__
 
+**Declared omissions.** The mode form imposes no constraint beyond its own vanishing, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The variational parent records a mismatch and leaves it open, and the mismatch is not where it says it is.** *The Lagrangian and the Coupled Klein–Gordon Equation* writes, at §*The Variation in the Field*, that the action's pairing of the two factors in the temporal slot is $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ while the article's equation carries $(\partial_{R_t}-ϙa_t'/\hbar)^{2}$, and it calls the difference "one bookkeeping choice, stated rather than absorbed". The two displays differ by a cross term, and the parent is right that a cross term is at stake. It is wrong about which side of the mismatch each display belongs to.
@@ -29,6 +31,26 @@ $$
 **The bookkeeping is the main article's and is quoted once.** With $c_\mu=\frac{i\,ϙ}{\hbar}A_\mu$ the material connection gives $c_t=-\frac{ϙa_t'}{\hbar}$ real and $c_\eta=i\frac{ϙ}{\hbar}A_\eta$ imaginary, and the free slot symbols are $\sigma_t=-k_t'$ real and $\sigma_\eta=i\kappa_\eta$ imaginary. The temporal slot is the only one where the two readings of the covariant square differ, so the article states everything in that slot and adds the spatial slots only where they change a conclusion.
 
 **The denials are the main article's, restated once.** The transform does not exchange sectors; a symbol exists only at constant coefficients; and a Legendre transform between a field and its conjugate momentum is not a Fourier transform, so the parent's four canonical momenta are not wave numbers and no display below reads them as one.
+
+## The Variation
+
+**The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
+
+$$
+\delta Q=\mathrm{Sc}\bigl[\delta X^{*}\,\mathcal{S}(\omega,\vec k)X\bigr],
+$$
+
+with no integration by parts, no surface term and no boundary condition. A boundary term appears in a variational principle because a derivative is varied; here no derivative is varied, so none appears. That is not a convenience of the calculation, it is what the transform does to the principle.
+
+**Stationarity is the symbol equation.** Vanishing for every $\delta X^{*}$ forces the bracket to vanish, by the same positivity argument as in the element article: choose $\delta X^{*}$ equal to the bracket and the scalar part becomes a sum of squared moduli. So
+
+$$
+\mathcal{S}(\omega,\vec k)\,X=0,
+$$
+
+the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
+
+**What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
 ## Reality of the Action Is Weaker Than Reality of the Symbol
 
@@ -91,6 +113,20 @@ which is the corpus's own identity at the temporal slot and which is first order
 
 **What the invariant does not do is choose between the readings.** A reader who wants the variational principle to select E2 over E1 will not get it from the reality of the symbol, because both are real. **The selection, where there is one, is the action's**, and the action's operator is the squared one — that is the previous section, and it is a different kind of statement.
 
+## The Noether Currents: The Charge Per Mode
+
+**The charge at a mode.** The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,
+
+$$
+\mathcal{Q}(\vec k)=\hbar\,\mathrm{Sc}\bigl[X^{*}(\vec k)X(\vec k)\bigr],
+$$
+
+up to the normalisation the element article fixes, so that the total charge is the integral of this density over the wave numbers. The step from the position-space charge to this display is Parseval's identity and nothing else; the companion article *The Lagrangian and the Schrödinger Equation in Momentum Space* proves it in that case and the proof transfers, because it uses only the transform and the Hermitian pairing.
+
+**The energy.** The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
+
+**What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
+
 ## The Source's Symbol
 
 **The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform.** Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{ϙ}{\hbar}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. **The source's symbol is therefore the transform of the current, and it is a convolution in every other case.**
@@ -104,6 +140,14 @@ which is the corpus's own identity at the temporal slot and which is first order
 **The temporal slot is the only one where the two readings differ.** In a spatial slot $\bar c_\eta=-c_\eta$, the cross term vanishes identically, and the action, the squared form and the paired form are one operator. **A vector potential therefore gives no ordering ambiguity**, and the article does not manufacture one.
 
 **The self-adjointness argument is not used.** Both readings are self-adjoint in the corpus's writing, so the standard criterion that a real action's operator be self-adjoint does not separate them. The article derives the separation from the cross term instead, and says so because the weaker argument is tempting.
+
+## What the Transform Adds and What It Relabels
+
+**What the transform adds.** One identity: the action at a fixed frequency is the quadratic form whose kernel is the symbol. That identity is worth having, because it turns the variational principle into linear algebra and the equation into a null space, and because it makes the reality of the action and the Hermiticity of the symbol one statement seen twice.
+
+**What it relabels.** The variational principle itself: nothing is added to the physics, no new current appears, and no equation is solved that the parent did not already solve. The word *action* at a mode is a density in the frequency and the wave number, not an integral over a region, and calling it an action is a shorthand that this section keeps because the shorthand is the point.
+
+**What it cannot reach.** The boundary term, the varying coefficient and the operator ordering. The first two need position space; the third is invisible at a constant symbol, where left and right multiplication agree. Each of those is named where the article meets it, and none is repaired by the transform.
 
 ## Open Questions
 

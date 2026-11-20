@@ -1,8 +1,24 @@
 # __The Lagrangian and the Coupled Dirac Equation in the Non-Quantum Limit__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+
 ## Introduction
 
 **The limit in one sentence.** The parent prints two actions — one for the operator setting, with gradient terms, and one boxed for the constant setting, without — and the difference is exactly the quantum potential's terms in the spin-half-fluid form, so the boxed action *is* the non-quantum action.
+
+**What the article establishes, in five sentences.** The parent's boxed action is the operator-setting action with the frame's gradient terms deleted, and the deleted terms are the quantum potential's. The deletion leaves a constrained system whose seven momenta are zero or fixed, whose two evolution equations are the continuity equation and the guidance equation, and whose six remaining equations are the frame's constraints. The coupling enters the phase slot and the boost slot only, so the guidance equation is the mechanical mass shell and the density and the spin are untouched by it. The limit is therefore a truncation with a computable ledger: the deleted terms are gradient terms in three of the eight coordinates, and nothing else is dropped. The action does not derive the force; the force is read from the constraint surface and it is the equation-route companion's subject.
+
+**What is not new.** The spin-half-fluid action with the frame's gradients, the constrained Hamiltonian reading, and the Madelung–Takabayasi correspondence are standard. Added here: the identification of the parent's boxed display with the non-quantum action, the ledger of what the limit deletes stated in coordinates, and the reading of the coupling's two-bracket reach as a statement about which quantities the limit may move.
+
+**The restriction.** The word exists where $N(\tilde\Xi)\neq0$; the action is written in the eight real coordinates of the chart, and the limit is defined there.
+
+**The signs.** The parent writes the coupling as $ϙ$ with $ϙ=-q$. The displays here keep the parent's letters and use $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\varphi$ when the mechanical variables are named.
+
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+
+## The Action in the Limit
 
 **The two displays, side by side, and their difference.**
 
@@ -31,23 +47,31 @@ $$
 
 **Two of four, and the two are the momentum and the velocity.** The potential is central and Hermitian, so it joins the phase bracket where the momentum is read and the boost bracket where the velocity is read; it cannot join the scale's, which is real central, and it cannot join the rotor's, which is a real vector part. **The table says in advance which quantities the coupling can move and which it must leave alone.**
 
-**What the article establishes, in five sentences.** The parent's boxed action is the operator-setting action with the frame's gradient terms deleted, and the deleted terms are the quantum potential's. The deletion leaves a constrained system whose seven momenta are zero or fixed, whose two evolution equations are the continuity equation and the guidance equation, and whose six remaining equations are the frame's constraints. The coupling enters the phase slot and the boost slot only, so the guidance equation is the mechanical mass shell and the density and the spin are untouched by it. The limit is therefore a truncation with a computable ledger: the deleted terms are gradient terms in three of the eight coordinates, and nothing else is dropped. The action does not derive the force; the force is read from the constraint surface and it is the equation-route companion's subject.
+**The coupling in the one-form.** The two displays above carry the free action's letters; with the connection present the phase's differential is the covariant one,
+$$
+\mathrm{d}\theta_{\mathrm{pha}}\ \longmapsto\ \mathrm{d}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}\tilde A_\Phi ,
+$$
+and that is the only change. The one-form's rotor term is untouched, because the connection is central and the rotor bracket is a real vector part.
 
-**What is not new.** The spin-half-fluid action with the frame's gradients, the constrained Hamiltonian reading, and the Madelung–Takabayasi correspondence are standard. Added here: the identification of the parent's boxed display with the non-quantum action, the ledger of what the limit deletes stated in coordinates, and the reading of the coupling's two-bracket reach as a statement about which quantities the limit may move.
+## The Variation
 
-**The restriction.** The word exists where $N(\tilde\Xi)\neq0$; the action is written in the eight real coordinates of the chart, and the limit is defined there.
+**Seven momenta and two evolution equations, from one variation.** The boxed action is first order in seven of the eight coordinates: it contains $\partial_{r'_t}\theta_{\mathrm{pha}}$ and no other rate. Varying it with respect to the coordinates gives two kinds of equation. The seven coordinates whose rates are absent give
 
-**The signs.** The parent writes the coupling as $ϙ$ with $ϙ=-q$. The displays here keep the parent's letters and use $\vec\pi=\vec p-q\vec A$ and $\mathcal E=E-q\varphi$ when the mechanical variables are named.
+$$
+p_x=A_x(q)=0 \ \text{or fixed},
+$$
 
-**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; $V(\theta_{\mathrm{rpd}},\vec u_{\mathrm b},\theta_{\mathrm{axr}},\vec u_{\mathrm r})$ the frame potential including the mass function $\mathcal V$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.
+the momenta read off the one-form; the phase gives the one non-trivial momentum,
 
-## The Coupling's Reach
+$$
+p_{\theta_{\mathrm{pha}}}=-\hbar c\,\rho_{\mathrm{num}},
+$$
 
-**One potential, two brackets.** The potential is one element of $\mathbb{B}_\Phi$ with a temporal slot and a spatial vector slot, so it joins the phase bracket's temporal slot and the boost bracket's spatial slots. **No second rule is needed**, and the parent's statement that no sign can be chosen independently follows from the slots.
+and the Euler–Lagrange equation of the density and of the guidance angle gives the two evolution equations the next section counts.
 
-**What it cannot reach, and the reason is type.** The scale bracket is a real central scalar and the potential is not; the rotor bracket is a real vector part and the potential is central. **So the density and the spin direction are exactly invariant**, and that is a statement of the polar form and not of the physics: the potential does not change the density at a point and does not rotate the spin's axis.
+**The boundary term is absent.** A first-order action has no second derivative to integrate by parts, so the variation produces no surface term and no boundary condition. That is why the limit's variational principle is a set of first-order transport equations and not a boundary-value problem, and it is the single largest difference between this family and the two scalar ones.
 
-**What follows for the limit's statements, in advance of any computation.** Order zero's polarisation condition is unaffected by the coupling; order one's density law is unaffected except through the velocity it carries; order one's velocity law is the one the coupling rewrites; order one's spin law is unaffected directly. **The table is a prediction of the limit's structure**, and the equation-route companion confirms each entry.
+**The equation is recovered, not assumed.** The two evolution equations are the Euler–Lagrange equations of the boxed display, and the six remaining equations are the vanishing momenta. Both statements are read off the variation and neither is imported from the parent.
 
 ## The Constraint Structure
 
@@ -80,6 +104,22 @@ three gradients and not eight: the phase's gradient is not among them, and neith
 **What survives.** One term linear in the phase's rate, the frame potential, and the mass term. **The surviving action is first order in the phase and algebraic in the frame**, so its Euler–Lagrange equations are the guidance equation and the constraints.
 
 **The guidance equation in mechanical variables.** Varying $\theta_{\mathrm{pha}}$ returns the continuity equation with $\vec v$ the kinetic velocity; varying the frame's angles returns the constraints; and the constraint surface evaluated with the coupling is the mechanical mass shell. **The chain from the boxed action to the mechanical shell goes through the constraints and not through a second-order equation**, and that is why this family's limit is a constraint-and-flow split.
+
+## The Coupling's Reach
+
+**One potential, two brackets.** The potential is one element of $\mathbb{B}_\Phi$ with a temporal slot and a spatial vector slot, so it joins the phase bracket's temporal slot and the boost bracket's spatial slots. **No second rule is needed**, and the parent's statement that no sign can be chosen independently follows from the slots.
+
+**What it cannot reach, and the reason is type.** The scale bracket is a real central scalar and the potential is not; the rotor bracket is a real vector part and the potential is central. **So the density and the spin direction are exactly invariant**, and that is a statement of the polar form and not of the physics: the potential does not change the density at a point and does not rotate the spin's axis.
+
+**What follows for the limit's statements, in advance of any computation.** Order zero's polarisation condition is unaffected by the coupling; order one's density law is unaffected except through the velocity it carries; order one's velocity law is the one the coupling rewrites; order one's spin law is unaffected directly. **The table is a prediction of the limit's structure**, and the equation-route companion confirms each entry.
+
+## The Noether Currents: The Charge and the Spin in the Limit
+
+**The charge is the density, and the coupling does not touch it.** The phase's momentum is $-\hbar c\,\rho_{\mathrm{num}}$, so the particle density is $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and the charge density is $q\rho_{\mathrm{num}}$, with $q=-ϙ$ the parent's charge. The current is $\rho_{\mathrm{num}}\vec v$ with $\vec v$ the transport velocity of the guidance equation, and the continuity equation of the limit is the conservation of this current.
+
+**The spin current, unchanged.** The rotor's bracket is a real vector part and the connection is central, so the spin current is the free one: the rotor's conjugate momentum $-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\hat n_{\mathrm{rot}}$, transported by the same flow. The statement is exact and not an approximation of the limit: it is exact in the parent and the limit does not touch it.
+
+**What the mass term does.** It removes the phase from the dynamics of the density and puts it into the guidance equation, so that the charge is conserved without the mass appearing in its conservation law. The energy carries the mass; the charge does not. That split is the limit's form of the element article's *The Charge Has No Mass and the Energy Has Mass-Squared*, and it is the reason the two currents are computed separately here.
 
 ## What the Deletion Costs and What It Buys
 

@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Dirac Equation in Polar Variables__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 This article substitutes the complete polar decomposition into the coupled action of *The Lagrangian and the Coupled Dirac Equation* and reads what the substitution gives. It is the fourth member of the coupled quartet: the element equation, the polar equation, the element action, and this one.
@@ -31,6 +33,10 @@ with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and $V$ the pot
 *Third, the honest limit.* Whether the constrained system's solutions are the coupled pair's solutions is **not established here**. The equivalence is formal — the word is a bijection, so the variation of the action in the eight parameters and the variation in the element are the same variation — but the *flow* that the constrained system generates has not been shown to be the pair's flow. That is the article's open question and it is stated as such, not concealed.
 
 **The two settings.** The connection is taken constant, with constant coefficients, because that is the setting in which the parameters are coordinates on a fixed frame. In the operator setting the word's rapidity and rotor angle become fields and the action acquires gradient terms for them; the structure is the standard one of the quantum hydrodynamics of a spin fluid, and the article states it in §*The Operator Setting* without deriving it.
+
+## Conventions
+
+**The conventions are the free chart's, restated for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is the pair of parts, each written in the word $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde u_{\mathrm r}\tilde U_{\Psi,\mathrm b}$, with $\varrho>0$ and the rotor on the left, which is the free chart's ordering. The connection is central, the coupling is $ϙ$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4r$, and $k_m=mc/\hbar$.
 
 ## The Action in the Word
 
@@ -85,6 +91,22 @@ $$
 with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. The third term is the mass's, written in the chart's letters; the second is the potential's; the first is the only term with a velocity.
 
 **One caution about the first term's coefficient.** The coefficient $\hbar c\rho_{\mathrm{num}}$ contains the rapidity, so the action is *not* linear in the velocities in the naive sense: $\rho_{\mathrm{num}}$ depends on $\theta_{\mathrm{rpd}}$, and $\theta_{\mathrm{rpd}}$ is one of the parameters whose velocity does not appear. The action is linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$ with a coefficient that depends on a coordinate. That is the standard shape of a first-order constrained system and it is the reason the Dirac analysis is needed rather than a Legendre transform.
+
+## The Euler–Lagrange Equations
+
+**The variation is over the eight parameters.** In the chart the variables are $\varrho$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, the two angles of the boost axis $\hat u_{\mathrm b}$, and the three angles of the rotor $\tilde u_{\mathrm r}$. Varying the chart's action with respect to them, and using that the word is a bijection on the invertibles, returns exactly the coupled pair of the element article:
+
+$$
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_R=k_m\tilde\Xi_L,
+\qquad
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R ,
+$$
+
+one equation per part and per material slot. The variation of the connection is separate and is the source equation, as in the element article.
+
+**Why the bijection is the whole argument.** A variation $\delta\tilde\Xi$ corresponds to one and only one variation of the eight parameters, because the word is a diffeomorphism from the parameter domain onto the invertible elements. So the chart's Euler–Lagrange system is the element system in other coordinates, and the change of variables adds no equation and removes none. That is the reason the polar article can claim the coupled pair without re-deriving it, and it is the first instance of the rule the whole reading obeys.
+
+**What the variation does not do.** It does not produce the constraint algebra. The eight equations determine some velocities and not others, and which is which is the subject of the next section; the variation alone cannot answer it, because the Lagrangian is linear in four of the eight rates.
 
 ## The Constraint Structure
 

@@ -2,10 +2,6 @@
 
 **Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
-## Conventions
-
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
-
 ## Introduction
 
 *The Lagrangian and the Schrödinger Equation* gives the free field's action, its variation and its two Noether currents. This article adds the electromagnetic connection to that action and asks what the addition changes: what the variation produces, what the symmetry delivers, and what the coupling costs.
@@ -30,6 +26,9 @@ with $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ and $\tilde A_\Phi=i(\varphi
 
 **What is not claimed.** The action is not new: it is the standard action of a non-relativistic charged scalar field, written in the algebra's letters. The current it delivers is the element-form companion's current, not a second one. No new prediction and no new solution. The article's content is the closure of the variational statement — the action's reality, the variation's exactness, the invariance's exactness, and the current's identity with the equation's — and the honest record of the one thing it does not do, which is the local energy flux.
 
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
 
 ## The Coupled Action
 
@@ -126,6 +125,22 @@ and taking $\mathrm{Sc}$ gives $-ϙ\,\partial_{t'}\Gamma\,n$.
 
 **What the invariance does not say.** It says nothing about the operator setting's domains or about large gauge functions with nonzero winding; those are the polar companion's open question 2 and the flux discussion, and the action's invariance is local and does not decide them.
 
+## The Lorentz Force
+
+**The statement.** The divergence of the stress tensor of the coupled field is the Lorentz force density,
+
+$$
+\partial_{t'}\mathcal P_\eta+\sum_\zeta\partial_\zeta T_{\zeta\eta}=-\rho_{\mathrm{chg}}\big(\vec E+\vec v\times\vec B\big)_\eta,
+\qquad
+\mathcal P_\eta=\hbar\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big)=m\,j_\eta,
+$$
+
+with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.
+
+**The status of the statement.** It is the standard identity for the Schrödinger field, and the article states it and does not perform it: the computation requires the stress tensor's improvement term, and the free article's §*The Noether Currents* already points at the stress-energy article for that object. It is recorded here because it is the one place where the coupling's two entries in the equation — the covariant derivative and the potential — appear together in a single conservation law, and because §*Open Questions* lists it as the check that would close the article's variational ledger.
+
+**What the identity would show.** That the field's momentum is not conserved, that the rate at which it is not conserved is the Lorentz force, and that the force is the sum of an electric part from the potential's gradient and a magnetic part from the current crossed with the field. The free article has no such statement because a free field has no force to feel.
+
 ## The Noether Current
 
 **The global symmetry.** For constant $\alpha$ the transformation is $\tilde\Xi\mapsto e^{i\alpha}\tilde\Xi$ and the action is invariant. The Noether construction gives the current of the element-form companion,
@@ -174,22 +189,6 @@ which is the free article's density with the covariant gradient and the potentia
 **What the article does not do.** It does not print the local energy flux. The local conservation law $\partial_{t'}e+\vec\nabla_\Phi\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.
 
 **The positivity.** The first term of $e$ is positive and the second is positive or negative according to the sign of $ϙ\varphi$; so the energy is bounded below whenever $ϙ\varphi$ is bounded above, which is the diamagnetic statement again and the reason the operator setting's flow is well posed for a confining potential.
-
-## The Lorentz Force
-
-**The statement.** The divergence of the stress tensor of the coupled field is the Lorentz force density,
-
-$$
-\partial_{t'}\mathcal P_\eta+\sum_\zeta\partial_\zeta T_{\zeta\eta}=-\rho_{\mathrm{chg}}\big(\vec E+\vec v\times\vec B\big)_\eta,
-\qquad
-\mathcal P_\eta=\hbar\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big)=m\,j_\eta,
-$$
-
-with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.
-
-**The status of the statement.** It is the standard identity for the Schrödinger field, and the article states it and does not perform it: the computation requires the stress tensor's improvement term, and the free article's §*The Noether Currents* already points at the stress-energy article for that object. It is recorded here because it is the one place where the coupling's two entries in the equation — the covariant derivative and the potential — appear together in a single conservation law, and because §*Open Questions* lists it as the check that would close the article's variational ledger.
-
-**What the identity would show.** That the field's momentum is not conserved, that the rate at which it is not conserved is the Lorentz force, and that the force is the sum of an electric part from the potential's gradient and a magnetic part from the current crossed with the field. The free article has no such statement because a free field has no force to feel.
 
 ## What the Principle Adds and What It Relabels
 

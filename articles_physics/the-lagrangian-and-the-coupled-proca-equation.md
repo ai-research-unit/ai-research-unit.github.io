@@ -107,6 +107,20 @@ the coupled Proca equation. The two terms of the action produce the two terms of
 
 **What the variation does not produce.** It does not produce the Lorenz condition. The condition is the trace of the equation, as the element-form article shows, and it is a consequence of the equation rather than a constraint imposed on the action. In the free case the same division holds and the free article reads it as the statement that the mass term breaks the gauge symmetry. Here the mass term does not break the symmetry, so that reading is not available, and the condition is what it is: a consequence.
 
+## The Constraint from the Action
+
+**The constraint is not imposed and it is not lost.** Varying the action gives the equation; the scalar part of the equation is the covariant Lorenz condition
+
+$$
+\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0 .
+$$
+
+The element-form article proves that the curvature does not enter this trace, because the second-order operator is the sum of the squared covariant components plus a pure vector. In the variational reading, that fact has a name: the constraint is the variation with respect to the *longitudinal* part of the field, and the action's dependence on that part is through the mass term alone, because the field term depends on it only through a total derivative.
+
+**The free article's reading, and why it changes.** The free article reads the constraint as the statement that the mass term breaks the gauge symmetry: vary along a pure gradient, the field term does not move, the mass term does, and the equation therefore carries a longitudinal part. On the coupled carrier the mass term does not break the symmetry, and the same computation gives a different answer: the variation along a pure gauge direction vanishes for both terms, so the constraint is not the residue of a broken symmetry. It is the statement that the longitudinal part of the field is determined by the transverse part through the mass, and it is the same statement in both cases with a different bookkeeping.
+
+**A check.** The constraint holds exactly, to machine precision, in a background with constant field strength as well as in a flat one, which is the numerical form of the statement that the curvature is traceless. The element-form article's lattice computation is the check, and the variational reading adds nothing to it.
+
 ## The Field Term and the Charge
 
 **The problem, stated exactly.** The algebra's field strength is a pure vector: six real components, the antisymmetric part of a covariant gradient. A complex bivector has twelve real components. The field strength of a complex potential therefore cannot be stored in one pure vector, and the algebra stores one half of it. For a *material* potential that is enough, because the two halves are the electric and magnetic fields and they are real; for a complex potential it is not, because the two halves are complex and one half does not determine the other.
@@ -164,20 +178,6 @@ symmetric on solutions, conserved on solutions, and positive in energy for the f
 **The trace.** On the material slice the trace is the mass term and nothing else: the field term's contribution is scalar-free there, so $\sum_\mu T_{\mu\mu}$ is proportional to $k_m^{2}\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ and vanishes only where the invariant length vanishes. The article leaves the overall sign to the free article's convention, which fixes it once. That proportionality is the field-theoretic form of the statement that the mass is the only scale in the theory. For a general complex field with a general connection the trace acquires the connection's contribution and the article does not state a closed form.
 
 **What is absent.** There is no spin current, and its absence is not an oversight: the Proca field is a four-vector, its frame's brackets carry the direction and not a spin, and the free polar article states that the material sector has no rotor bracket to build one from. The Dirac spin current belongs to the Dirac articles. The coupled Proca field's rotor, which the complex carrier restores, is the frame's internal rotation and not a spin density, and the polar companion is where that distinction is drawn.
-
-## The Constraint from the Action
-
-**The constraint is not imposed and it is not lost.** Varying the action gives the equation; the scalar part of the equation is the covariant Lorenz condition
-
-$$
-\mathrm{Sc}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)=0 .
-$$
-
-The element-form article proves that the curvature does not enter this trace, because the second-order operator is the sum of the squared covariant components plus a pure vector. In the variational reading, that fact has a name: the constraint is the variation with respect to the *longitudinal* part of the field, and the action's dependence on that part is through the mass term alone, because the field term depends on it only through a total derivative.
-
-**The free article's reading, and why it changes.** The free article reads the constraint as the statement that the mass term breaks the gauge symmetry: vary along a pure gradient, the field term does not move, the mass term does, and the equation therefore carries a longitudinal part. On the coupled carrier the mass term does not break the symmetry, and the same computation gives a different answer: the variation along a pure gauge direction vanishes for both terms, so the constraint is not the residue of a broken symmetry. It is the statement that the longitudinal part of the field is determined by the transverse part through the mass, and it is the same statement in both cases with a different bookkeeping.
-
-**A check.** The constraint holds exactly, to machine precision, in a background with constant field strength as well as in a flat one, which is the numerical form of the statement that the curvature is traceless. The element-form article's lattice computation is the check, and the variational reading adds nothing to it.
 
 ## What the Variational Principle Adds and What It Relabels
 

@@ -1,5 +1,7 @@
 # __The Lagrangian and the Charged Spin-Half Fluid__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 **The connection is a central element, and a central element decomposes into two of the four brackets and none of the others.** That single fact is the whole of the charged spin fluid's structure — the force without a torque, the norms that survive, the vorticity that stays the frame's — and the action is the place where it is one sentence instead of five results.
@@ -14,7 +16,33 @@
 
 **Position in the block.** This is the variational companion of [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) and the sixth of the eight articles of this layer. It is the article in which the coupling changes the least: the canonical table of [The Lagrangian and the Spin-Half Fluid](the-lagrangian-and-the-spin-half-fluid.html) is reproduced line for line.
 
-**Conventions.** Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
+
+## The Kinetic Term and the Two Covariant Rates
+
+**The free kinetic term is a charge density times two rates, and the coupling makes both of them covariant.**
+
+$$
+\mathcal L_{\mathrm{kin}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\dot\theta_{\mathrm{pha}}-\beta\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)
+\;\longrightarrow\;
+\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\mathcal R_{\mathrm{pha}}-\beta\,\mathcal R_{\mathrm{rpd}}\bigr),
+$$
+
+**The two covariant rates are the time slots of the phase's bracket and of the boost's.** The first is the gauge-invariant phase rate, $\dot\theta_{\mathrm{pha}}-ϙ a'_t/\hbar$, which is the free article's $\mathcal E$ up to the mass; the second is the rapidity's rate with the vector potential's component along the boost axis added, and it is what makes the velocity the mechanical one.
+
+**The weight $\beta$ is untouched, and that is the sharpest form of "no torque".** If the coupling had a rotor-bracket component, the second rate would acquire a term independent of $\beta$ and the spin would be canonically visible at rest. It has none, so the weight stays $\beta$ and the rest frame stays spinless. **The statement "the coupling adds a force and not a torque" is, in the action, the statement that $\beta$ is not modified.**
+
+**The sign and the normalisation are the scalar charged article's.** The coupling enters the time slot with the same sign there and here, because the substitution is the same substitution; the difference is that here it also enters the boost's bracket, and there it entered the velocity's gradient. **The Lorentz force's sign is fixed once for both rungs**, and the sign of the second rate's modification is what the block's $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ requires.
+
+## The Variation
+
+**The covariant rates vary independently.** The kinetic term is the free one with the phase's rate and the rotor's rate replaced by their covariant versions. Varying the density and the phase gives the continuity equation for $\rho_{\mathrm{chg}}$ and the guidance equation with the mechanical momentum $\vec\pi=\vec p-q\vec A$; varying the rotor gives the spin's transport with the same momentum; varying the connection gives the Maxwell equation. The three vanishing momenta of the canonical table are unchanged, because they are algebraic consequences of the parameterisation and the coupling never reaches them.
+
+**No boundary term, for the same reason as the free article.** The action is first order in the canonical coordinates; the covariant substitution does not raise the order.
+
+**The one thing the variation adds.** It shows that the coupling cannot change the canonical table: the connection is central, so it commutes with the frame and with the rotor, and a central element added to a derivative changes the value of a momentum and not its dependence. That is the article's *The Canonical Table Is Unchanged* seen from the variation side.
 
 ## The Coupling in the Brackets
 
@@ -37,21 +65,43 @@ and the first term is central imaginary while the second is Hermitian with a rea
 
 **This is the type argument of the block's charged articles, in its most economical form.** The scalar charged articles state it as one sentence about a central element reaching the phase and the boost and not the scale and the rotor; here it is a table whose two zeros are read off the decomposition of $\tilde A_\Phi$.
 
-## The Kinetic Term and the Two Covariant Rates
+## Gauge Invariance Is Exact Because the Group Is Central
 
-**The free kinetic term is a charge density times two rates, and the coupling makes both of them covariant.**
+**The invariance is one line and it rests on the gauge element's being central.** With $\tilde\Xi\mapsto\tilde\Xi\lambda$ and $\lambda\in\mathbb{C}$ central,
 
 $$
-\mathcal L_{\mathrm{kin}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\dot\theta_{\mathrm{pha}}-\beta\,\vec n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\bigr)
-\;\longrightarrow\;
-\mathcal L_{\mathrm{kin}}^{\mathrm{gco}}=\hbar c\,\rho_{\mathrm{chg}}\bigl(\mathcal R_{\mathrm{pha}}-\beta\,\mathcal R_{\mathrm{rpd}}\bigr),
+\tilde\Xi^{-1}\bigl(\partial_\mu+\tfrac{iϙ}{\hbar}A_\mu\bigr)\tilde\Xi
+\longmapsto
+\tilde\Xi^{-1}\bigl(\partial_\mu+\tfrac{iϙ}{\hbar}A_\mu\bigr)\tilde\Xi+\lambda^{-1}\partial_\mu\lambda,
 $$
 
-**The two covariant rates are the time slots of the phase's bracket and of the boost's.** The first is the gauge-invariant phase rate, $\dot\theta_{\mathrm{pha}}-ϙ a'_t/\hbar$, which is the free article's $\mathcal E$ up to the mass; the second is the rapidity's rate with the vector potential's component along the boost axis added, and it is what makes the velocity the mechanical one.
+and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so it cancels against the transformed connection. **The frame's brackets do not see the shift at all**, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
 
-**The weight $\beta$ is untouched, and that is the sharpest form of "no torque".** If the coupling had a rotor-bracket component, the second rate would acquire a term independent of $\beta$ and the spin would be canonically visible at rest. It has none, so the weight stays $\beta$ and the rest frame stays spinless. **The statement "the coupling adds a force and not a torque" is, in the action, the statement that $\beta$ is not modified.**
+**This is why the invariance is exact here and needs no boundary term, and it is also why it cannot reach the spin.** A gauge transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. **The coupling's reach and the gauge group's reach coincide, and both are the central direction of the algebra.**
 
-**The sign and the normalisation are the scalar charged article's.** The coupling enters the time slot with the same sign there and here, because the substitution is the same substitution; the difference is that here it also enters the boost's bracket, and there it entered the velocity's gradient. **The Lorentz force's sign is fixed once for both rungs**, and the sign of the second rate's modification is what the block's $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ requires.
+**The current and the stress follow as at the scalar charged rung.** The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ\sum_\nu F_{\mu\nu}J_\nu$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.
+
+## Norms Survive and the Vorticity Stays the Frame's
+
+**The two rungs differ in what kind of object the velocity is, and every downstream difference follows.**
+
+*At the scalar rung the velocity is a gradient.* $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ with $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}$, so the velocity is the covariant derivative of a function, and its curl is the field strength: $\omega=ϙ F/m$. The coupling makes the flow rotational, and the rotation is the field's.
+
+*At the spinor rung the velocity is a square.* $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, the square of a unit element read through the quaternionic norm, so it is a function of the boost factor alone. **A square of an invertible element is not the derivative of anything** — the block's article states this as the reason the Dirac velocity does not come from a potential — and adding a connection to a bracket does not turn a square into a gradient.
+
+**Hence the vorticity stays the frame's.** [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) finds that the vorticity is the frame's and that the coupling does not put the field strength into it, in contrast to the scalar case's $\mathrm{d}V=ϙ F/m$. The action's version: the connection enters the boost's bracket, the boost's bracket is not the velocity's curl, and the velocity's curl is the antisymmetrised derivative of a square, which is a frame quantity.
+
+**The consequence for what the fluid can and cannot do is worth stating.** The charged scalar fluid's rotation is a field-theoretic input that costs no field; the charged spin fluid's rotation is a property of its own frame, so the field cannot supply it and the fluid cannot be made rotational by turning on a field. **The two charged fluids are therefore not the same fluid with different spins**: one has its vorticity sourced from outside and the other has it sourced from within.
+
+## The Noether Currents: Charge and Spin with the Mechanical Momentum
+
+**Two currents, both with the mechanical momentum.** The charge current is $q\rho_{\mathrm{chg}}$ and $q\rho_{\mathrm{chg}}\vec v$ with $\vec v=\vec\pi/m$; the spin current is the canonical table's $\vec p_{\mathrm{spin}}=-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$, transported by the same flow. Both are the free currents with $\vec p$ replaced by $\vec\pi$, and that replacement is the whole of the coupling's effect.
+
+**Why nothing else moves.** The connection is central, so it multiplies the rotor and the frame without a side; the covariant derivative therefore changes the phase's rate and the spatial gradient and leaves the frame's algebra alone. The canonical table's three zeros are untouched, and so is the relation between the spin's magnitude and $\beta$.
+
+**The stress.** The translation current is the free one with the mechanical momentum, and its mixed component is the momentum flux that the guidance equation transports. The mass appears in the energy and not in the charge, as in every family.
+
+**The sign.** The charge's sign is $q$'s; the spin's is the frame's, negative, and the product of the two signs is the spin's contribution to the energy. That product is what the article's canonical table records and the coupling does not change.
 
 ## The Canonical Table Is Unchanged
 
@@ -69,34 +119,6 @@ $$
 **What the table says about the block's claim of a surviving normalisation.** $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, and the table gives the reason: the velocity is built from the boost element, the boost's bracket is a connection, and a connection does not change a norm. **A connection changes transports; a norm is not a transport.** The free companion's normalisation is therefore not "surviving" anything — nothing was ever at risk.
 
 **And the contrast with the scalar rung is exact.** There the velocity is $\tilde P^{\mathrm{mech}}/m$, a four-vector whose norm the mass shell fixes, and the shell's right-hand side carries $-2Q_{\mathrm{qnt}}/m$; the coupling changes the velocity and not the shell, so the norm moves with the field through the quantum potential. Here the velocity is invertible's square and no term is available to move it. **One rung has a norm that measures the state; the other has a norm that is a property of the frame.**
-
-## Norms Survive and the Vorticity Stays the Frame's
-
-**The two rungs differ in what kind of object the velocity is, and every downstream difference follows.**
-
-*At the scalar rung the velocity is a gradient.* $\tilde V_\Phi=\tilde P^{\mathrm{mech}}_\Phi/m$ with $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}$, so the velocity is the covariant derivative of a function, and its curl is the field strength: $\omega=ϙ F/m$. The coupling makes the flow rotational, and the rotation is the field's.
-
-*At the spinor rung the velocity is a square.* $\tilde V_\Phi=ic\tilde U_{\Psi,\mathrm b}^{-2}$, the square of a unit element read through the quaternionic norm, so it is a function of the boost factor alone. **A square of an invertible element is not the derivative of anything** — the block's article states this as the reason the Dirac velocity does not come from a potential — and adding a connection to a bracket does not turn a square into a gradient.
-
-**Hence the vorticity stays the frame's.** [The Charged Spin-Half Fluid](the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html) finds that the vorticity is the frame's and that the coupling does not put the field strength into it, in contrast to the scalar case's $\mathrm{d}V=ϙ F/m$. The action's version: the connection enters the boost's bracket, the boost's bracket is not the velocity's curl, and the velocity's curl is the antisymmetrised derivative of a square, which is a frame quantity.
-
-**The consequence for what the fluid can and cannot do is worth stating.** The charged scalar fluid's rotation is a field-theoretic input that costs no field; the charged spin fluid's rotation is a property of its own frame, so the field cannot supply it and the fluid cannot be made rotational by turning on a field. **The two charged fluids are therefore not the same fluid with different spins**: one has its vorticity sourced from outside and the other has it sourced from within.
-
-## Gauge Invariance Is Exact Because the Group Is Central
-
-**The invariance is one line and it rests on the gauge element's being central.** With $\tilde\Xi\mapsto\tilde\Xi\lambda$ and $\lambda\in\mathbb{C}$ central,
-
-$$
-\tilde\Xi^{-1}\bigl(\partial_\mu+\tfrac{iϙ}{\hbar}A_\mu\bigr)\tilde\Xi
-\longmapsto
-\tilde\Xi^{-1}\bigl(\partial_\mu+\tfrac{iϙ}{\hbar}A_\mu\bigr)\tilde\Xi+\lambda^{-1}\partial_\mu\lambda,
-$$
-
-and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so it cancels against the transformed connection. **The frame's brackets do not see the shift at all**, because it is added on the left of the element and the frame's factors are to the right, and because a central element commutes past every one of them.
-
-**This is why the invariance is exact here and needs no boundary term, and it is also why it cannot reach the spin.** A gauge transformation is a multiplication of the word by a central factor; the word's factors are the phase's and the frame's; a central multiplication can be absorbed into the phase's factor — which is what a phase shift is — and cannot be absorbed into the frame's, because the frame's factors are not central. So the shift is entirely the phase's, and the boost's bracket's apparent change is the connection's cancellation. **The coupling's reach and the gauge group's reach coincide, and both are the central direction of the algebra.**
-
-**The current and the stress follow as at the scalar charged rung.** The global subgroup supplies the charge current $ϙ\tilde J_\Phi$; translation invariance supplies the stress, whose divergence is $-ϙ\sum_\nu F_{\mu\nu}J_\nu$ plus the free spin term; and the canonical tensor computed with the phase as the variable is gauge dependent by a total derivative, while the tensor written in the frame's brackets is not.
 
 ## What the Fluid Variational Principle Adds and Does Not Add
 

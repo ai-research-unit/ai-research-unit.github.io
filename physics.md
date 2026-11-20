@@ -2095,3 +2095,54 @@
 
 <a href="articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a>
 <!-- the source and its principal fibre bundle $P(G,M)$ with structural group $G=[[A,B],[-B,A]]$; the three invariant tensors $J$, $g$, $\sigma_{\lambda\mu}$; the dictionary translation of its $2\times2$ matrix $Q=a_0\sigma_0-i\boldsymbol\sigma\!\cdot\!\mathbf a$ to the biquaternion $\tilde Q=a_0+\mathbf a\!\cdot\!\mathbf e$ with $a_0=p_0/m$, $\mathbf a=i\mathbf p/m$, so that its unit-norm sum $a_0^2+a_1^2+a_2^2+a_3^2=1$ and its relativistic relation $p_0^2-\mathbf p^2=m^2$ are one identity and its object is the corpus's Hermitian biquaternion of unit norm, in the informational sector; what its $G^+G=I_4$ means, namely the quaternionic conjugation and not the matrix adjoint, and why the block assembly is the regular representation of the pair and not the realification of $Q$; the Majorana transformation and its verified effect, that $G'=UGU^{-1}$ is real and symmetric because the transformed generators are purely imaginary while the $a_k$ are; the sign lost in the printed $\gamma_0$ of Eq. (28) and the two slips in the printed $G'$, the wrong sign in the $(\sigma_3a_1\pm\sigma_1a_3)$ combination and the $G'^{\mathsf T}G'=I_4$ that does not reproduce; the $\mathrm{SL}(2,\mathbb{R})$ triple and the $(2{+}2)$ inertia, whose coefficient sum $a_0^2+a_1^2-a_2^2+a_3^2=1$ reads $p_0^2-p_1^2+p_2^2-p_3^2=m^2$; the claim that the Majorana representation is tied to the signs and the corpus's mod-eight table; the non-Hermitian momentum as the source's own construction rather than the structural object; the bundle-basis claim and the naturality it must specify; the G-structure, the reduced tangent bundle whose structure group becomes the induced field theory's, the torsion-induced sign and CP, and the incompleteness of Rothstein's theorem; the Clifford-algebra interlude and the bosonic half the corpus lacks; an independent, constructed biquaternionic basis in the material sector, set beside the source's informational-sector one; the source as external evidence that the algebra appears unsought; an external source, recorded and not endorsed. -->
+
+## The Lagrangian Family
+
+<a href="articles_physics/the-lagrangian-family-a-map.html">The Lagrangian Family: A Map of the Forty-Eight Articles</a>
+<!-- the method applied per field; the five readings and the coupled corner; the seventeen-slot schema and its slot-7 test; the completeness table; the boundary in a table, Fock space, creation operators, interacting QFT, Standard Model, quantised gravity and the path integral as a computational framework all absent; the two proposed schema moves and why both fail the test; what the family is for. -->
+
+<a href="articles_physics/the-lagrangian-element-readings.html">The Lagrangian: The Element Readings</a>
+<!-- the eight articles that vary the field as one element; the free parents and the coupled four; what the group does, what it does not claim, and the order to read it in. -->
+
+<a href="articles_physics/the-lagrangian-polar-readings.html">The Lagrangian: The Polar Readings</a>
+<!-- the eight articles that vary the eight parameters of the word; the canonical tables as the group's result; the nonlinearity of the word moved into the kinetic term. -->
+
+<a href="articles_physics/the-lagrangian-momentum-space-readings.html">The Lagrangian: The Momentum-Space Readings</a>
+<!-- the eight articles at one mode; the symbol, the boundary term and the reality conditions; the poles as Green functions' and not Feynman propagators'. -->
+
+<a href="articles_physics/the-lagrangian-non-quantum-limit-readings.html">The Lagrangian: The Non-Quantum Limit Readings</a>
+<!-- the eight articles that truncate the phase's rate inside the action; the masses shell, the one-form, the longitudinal coefficient, the eikonal; the dropped term displayed. -->
+
+<a href="articles_physics/the-lagrangian-fluid-readings.html">The Lagrangian: The Fluid Readings</a>
+<!-- the eight articles in density, phase, velocity and rotor; the canonical tables' fluid readings; the quantum potential as a functional derivative; the indefinite gradient energy of the spin-zero fluid against the spin-one fluid's positivity. -->
+
+<a href="articles_physics/the-lagrangian-coupled-readings.html">The Lagrangian: The Coupled Readings</a>
+<!-- the twelve minimal-coupling articles across the four readings; one derivative replaced and one constant; the identity that joins the matter and field equations; the vorticity as the field strength. -->
+
+<a href="articles_physics/the-lagrangian-beyond-one-particle.html">The Lagrangian: Beyond the One-Particle Fields</a>
+<!-- the eight frontier articles; the classical actions stated exactly and the absences stated in place; three articles whose content is the absence. -->
+
+<a href="articles_physics/the-lagrangian-and-the-electromagnetic-field.html">The Lagrangian and the Electromagnetic Field</a>
+<!-- one term, $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$; its sign and its reality; the variation and the integration by parts; Gauss's law as the scalar part and the gauge orbit as the kernel; the longitudinal part not a degree of freedom; a positive stress and no free charge; what the principle adds and what it relabels; no quantisation. -->
+
+<a href="articles_physics/the-lagrangian-and-quantum-electrodynamics.html">The Lagrangian and Quantum Electrodynamics</a>
+<!-- the Dirac action with the covariant derivative plus the Maxwell term; why minimal coupling is the unique local choice; the three variations and the identity that makes the system consistent; three appearances of one constant; the vector current conserved and the axial one broken by the mass; the four words the corpus cannot support, quantum among them. -->
+
+<a href="articles_physics/the-lagrangian-and-the-interacting-scalar-field.html">The Lagrangian and the Interacting Scalar Field</a>
+<!-- the free action plus $-\frac{\lambda}{4}N^{2}$; the nonlinear equation; the nonlinearity as a density-dependent mass and the dispersion shift $\lambda N$; the stability threshold; the current unchanged; the exactness and the missing $S$-matrix. -->
+
+<a href="articles_physics/the-lagrangian-and-the-electroweak-theory.html">The Lagrangian and the Electroweak Theory</a>
+<!-- the $SU(2)\times U(1)$ action in two phases; the unbroken and unitary displays; the four Gauss constraints and the count eight-plus-four to nine-plus-two-plus-one; $m_W=gv/2$ and $m_Z=\sqrt{g^{2}+g'^{2}}v/2$ as couplings times a vacuum value; $Q=T^{3}+Y/2$; what a quantisation would add and the corpus does not. -->
+
+<a href="articles_physics/the-lagrangian-and-the-pauli-equation.html">The Lagrangian and the Pauli Equation</a>
+<!-- the Dirac action in the rest frame to first order in $1/m$; the Schrödinger action plus $\frac{q}{m}\vec S\cdot\vec B$; $g=2$ as the ratio of two currents and not a parameter; the error term displayed; the three losses of the limit. -->
+
+<a href="articles_physics/the-lagrangian-and-the-rarita-schwinger-equation.html">The Lagrangian and the Rarita–Schwinger Equation</a>
+<!-- the action named and not written; the three debts, the index-chirality contraction, the two multipliers and the massless invariance; the count the constraints control; the boundary of the family's variational method at spin three-halves. -->
+
+<a href="articles_physics/the-lagrangian-and-linearised-gravity.html">The Lagrangian and Linearised Gravity</a>
+<!-- the second variation of the Einstein–Hilbert action in the metric and trace-reversed forms; the linearised Einstein tensor and the Bianchi identity; the time-time constraint and the orbit; ten minus four minus four; the frame perturbation as the exact carrier and the single element's blindness; the stress that is not a tensor. -->
+
+<a href="articles_physics/the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation: From the Action to the Commutator</a>
+<!-- the four steps, Peierls bracket from the Green functions, Dirac bracket for the constrained cases, promotion to a commutator, representation on a Fock space; which step the corpus takes and which it does not; the promotion as a postulate and not a theorem; the item-by-item ledger of what a quantised theory would add. -->
+

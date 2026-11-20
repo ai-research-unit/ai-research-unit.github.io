@@ -29,6 +29,8 @@ with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$,
 
 **What is not claimed.** No new solution, no new prediction. The action is the standard scalar-electrodynamics action; the algebra's contribution is that the coupling is one derivative, that the current and the source are one object, and that the two equations' consistency is one line.
 
+**Declared omissions.** The reality of the action is settled inside *The Action*, where each of the three terms is shown real, and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Conventions
 
 **The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection and $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ with $A_\mu$ the real components of $\tilde A_\Phi$ and $ϙ$ the charge of the field, fixed once here and never re-chosen. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$, the pure-vector part of the conjugate gradient. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4x=\mathrm{d}r'_t\,\mathrm{d}^3x$, the mass is $k_m=mc/\hbar$, and the field term's normalisation $\sqrt{\mu}$ is the Maxwell article's and is not fixed again.
@@ -124,6 +126,16 @@ holds for the current as defined in this section, the companion's $J$ being this
 
 **What this establishes.** A coupling between a field and a connection exists exactly when the field has a conserved current, because the connection's equation must be integrable. For the scalar, the current is the phase symmetry's, the symmetry exists because the centre of the algebra is a $\mathrm{U}(1)$, and the coupling is the localization of that symmetry. The chain is the gauge principle article's, and the coupled Klein–Gordon variational article supplies the one computation the chain needs at second order.
 
+## Gauge Invariance of the Total Action and What It Buys
+
+**The matter term is invariant, exactly.** Under $\tilde\Xi\mapsto e^{iϙ\Lambda/\hbar}\tilde\Xi$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$ the covariant derivative is covariant — the computation is the element companion's and it is exact for a general element — so each slot's squared modulus is invariant and the mass term is invariant. The invariance is not up to a divergence; it is an identity.
+
+**The field term is invariant, exactly.** $\tilde F$ is unchanged because the gauge transformation of the connection is a gradient and the field strength is the antisymmetrised gradient; the Maxwell article's argument applies verbatim.
+
+**The interaction is not a separate term, and this is what the placement buys.** In the standard presentation the coupling is written as a term $\sum_\mu\varepsilon_\mu A_\mu J_\mu$ added to the free action, and its gauge invariance has to be checked by integrating by parts and using the current's conservation. Here the coupling is inside the derivative, so the invariance is automatic and the current's conservation appears instead as the *consistency* of the connection's equation. The two presentations are the same theory, and the difference is which statement is a computation: the derivative placement makes the invariance manifest and the conservation derived, the term placement makes the conservation manifest and the invariance derived.
+
+**What the invariance forces.** Nothing beyond the transformation laws, and that is the content of the second Noether theorem in this setting: the gauge symmetry is a symmetry of the action for every function $\Lambda$, so the variation of the action with respect to $\Lambda$ vanishes identically, and the identity that results is the current's conservation read off shell. The article does not need the theorem's general form; it needs the one line, and the one line is the previous section's consistency argument.
+
 ## The Structural Consequence: The Two Equations Cannot Contradict
 
 **One action, three variations, two equations, and no possible inconsistency.** The computations are in the two sections above; what they establish together is the article's structural claim.
@@ -139,18 +151,6 @@ $$
 which is $\partial_t\rho_{\mathrm{ch}}+\vec\nabla_\Phi\cdot\vec J=0$ written in the algebra.
 
 **Why this is a structural fact and not a coincidence.** It is the same identity that makes the coupling possible. A coupling that entered anywhere but inside the covariant derivative would break it, and the action would be inconsistent at the first variation. The placement of the coupling and the consistency of the two equations are one fact, seen from the action and from the equations.
-
-**Declared omissions.** The reality of the action is settled inside *The Action*, where each of the three terms is shown real, and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
-## Gauge Invariance of the Total Action and What It Buys
-
-**The matter term is invariant, exactly.** Under $\tilde\Xi\mapsto e^{iϙ\Lambda/\hbar}\tilde\Xi$ and $A_\mu\mapsto A_\mu-\partial_\mu\Lambda$ the covariant derivative is covariant — the computation is the element companion's and it is exact for a general element — so each slot's squared modulus is invariant and the mass term is invariant. The invariance is not up to a divergence; it is an identity.
-
-**The field term is invariant, exactly.** $\tilde F$ is unchanged because the gauge transformation of the connection is a gradient and the field strength is the antisymmetrised gradient; the Maxwell article's argument applies verbatim.
-
-**The interaction is not a separate term, and this is what the placement buys.** In the standard presentation the coupling is written as a term $\sum_\mu\varepsilon_\mu A_\mu J_\mu$ added to the free action, and its gauge invariance has to be checked by integrating by parts and using the current's conservation. Here the coupling is inside the derivative, so the invariance is automatic and the current's conservation appears instead as the *consistency* of the connection's equation. The two presentations are the same theory, and the difference is which statement is a computation: the derivative placement makes the invariance manifest and the conservation derived, the term placement makes the conservation manifest and the invariance derived.
-
-**What the invariance forces.** Nothing beyond the transformation laws, and that is the content of the second Noether theorem in this setting: the gauge symmetry is a symmetry of the action for every function $\Lambda$, so the variation of the action with respect to $\Lambda$ vanishes identically, and the identity that results is the current's conservation read off shell. The article does not need the theorem's general form; it needs the one line, and the one line is the previous section's consistency argument.
 
 ## The Noether Currents
 

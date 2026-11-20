@@ -342,3 +342,4 @@ The massless limit is the limit in which the two constraints become first class,
 - Claude Itzykson and Jean-Bernard Zuber, *Quantum Field Theory* (McGraw-Hill, 1980), for the Proca propagator and its polarization sum.
 - Paul A. M. Dirac, *Lectures on Quantum Mechanics* (Yeshiva University, 1964), for first-class and second-class constraints and the Dirac bracket.
 - Marc Henneaux and Claudio Teitelboim, *Quantization of Gauge Systems* (Princeton, 1992), for the constraint algorithm and the counting of degrees of freedom.
+- [The Lagrangian and the Second Quantisation: From the Action to the Commutator](the-lagrangian-and-the-second-quantisation.html), for the classical bracket this quantisation promotes and for what the promotion does not derive from the one-particle action.

@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Klein–Gordon Equation in the Non-Quantum Limit__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+
 ## Introduction
 
 **The limit in one sentence.** Write the parent's coupled polar action, delete the scale's kinetic term — the same Lorentz scalar the free family deletes — and the two variations of what is left are the mechanical mass shell and the covariant transport equation.
@@ -20,7 +22,9 @@
 
 **The signs.** The parent writes the coupling as $ϙ$ with $ϙ=-q$; its temporal bracket is $\partial_{r'_{t}}\theta_{\mathrm{pha}}-\frac{ϙ}{\hbar}a'_{t}$ and its spatial bracket is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$. Every display here uses $q$, the electric charge, $\vec\pi=\vec\nabla_\Phi S-q\vec A$ and $\mathcal E=E-q\varphi$ with $E=-c\,\partial_{r'_{t}}S$, so the temporal bracket is $-\mathcal E/c$ and the free article's convention $\mathcal E=E-q\varphi$ is the one kept.
 
-**Conventions.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$; $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$ with $\pi_{\Phi}=\lvert\vec\pi\rvert/\hbar$.
 
 ## The Action and Its Blocks
 
@@ -98,6 +102,14 @@ which divided by $2\varrho$ is $\mathcal E^{2}/c^{2}-\lvert\vec\pi\rvert^{2}=m^{
 
 **The constraint is the truncated theory's Hamiltonian.** A degenerate Lagrangian of this shape has no momentum conjugate to the scale, and the Legendre transform returns the mechanical shell as the only constraint. **The limit has converted the scale from a dynamical field into the carrier of one constraint**, which is what "the density becomes auxiliary" means in covariant language.
 
+## Gauge Invariance and the Deletion
+
+**The invariants.** The truncated action is built from two combinations, $\left(\partial_{r'_{t}}S+q\varphi/c\right)$ and $\vec\nabla_\Phi S-q\vec A$, and both are unchanged under the local phase translation with the potential's shift. **The action is invariant term for term**, the quadratic piece supplying the compensation for the potential's square.
+
+**The deletion commutes with the transformation, and the reason is structural.** The deleted block is built from the scale, the scale is inert under the gauge group, and a gauge invariant object removed from a gauge invariant action leaves a gauge invariant action. **No computation is needed and none was done**: the statement is a consequence of the block's content.
+
+**Why this matters for the limit's meaning.** The non-quantum limit is supposed to be a statement about the field and not about the chart. The covariance and the gauge invariance of the deletion are what make that true, and they are the two properties the first-order families cannot have in the same form.
+
 ## Varying the Phase: the Covariant Transport, Unchanged
 
 **The phase's variation.**
@@ -114,13 +126,17 @@ the covariant transport equation, with the mechanical momentum in the spatial di
 
 **The pair the truncated action produces is charged relativistic dust.** A flow along the mechanical momentum, a density carried by it, no pressure, and a normalisation that is the mechanical shell. **The parent's own phrase for the free case is irrotational dust**; with the connection the flow is still dust and it is no longer irrotational in the kinematic sense, which is the equation-route companion's vorticity split.
 
-## Gauge Invariance and the Deletion
+## The Noether Currents: Density, Charge and Energy
 
-**The invariants.** The truncated action is built from two combinations, $\left(\partial_{r'_{t}}S+q\varphi/c\right)$ and $\vec\nabla_\Phi S-q\vec A$, and both are unchanged under the local phase translation with the potential's shift. **The action is invariant term for term**, the quadratic piece supplying the compensation for the potential's square.
+**The current is the density times the transport velocity, and the limit makes that literal.** The phase's momentum is the density,
+$$
+\rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\ \longrightarrow\ \varrho^{2}\quad\text{in the non-quantum limit},
+$$
+and the phase's Euler–Lagrange equation is the continuity equation $\partial_{r'_t}\rho+\vec\nabla_\Phi\cdot(\rho\vec v)=0$ with $\vec v$ the transport velocity. The limit does not change the equation; it removes the terms that made $\rho$ differ from $\varrho^{2}$.
 
-**The deletion commutes with the transformation, and the reason is structural.** The deleted block is built from the scale, the scale is inert under the gauge group, and a gauge invariant object removed from a gauge invariant action leaves a gauge invariant action. **No computation is needed and none was done**: the statement is a consequence of the block's content.
+**The charge and the energy.** The charge is the integral of $\rho$, times the coupling where the field is charged, and it carries no mass. The energy is the mass shell's value, and it carries the mass. The split is exact in the parent and survives the limit unchanged, which is why this article's verification section can check both in one line each.
 
-**Why this matters for the limit's meaning.** The non-quantum limit is supposed to be a statement about the field and not about the chart. The covariance and the gauge invariance of the deletion are what make that true, and they are the two properties the first-order families cannot have in the same form.
+**What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
 ## What the Variational Route Adds
 

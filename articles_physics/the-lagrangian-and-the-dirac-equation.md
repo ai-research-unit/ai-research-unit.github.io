@@ -1,8 +1,6 @@
 # __The Lagrangian and the Dirac Equation__
 
-## Conventions
-
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central. $\mathrm{Sc}$ is the coefficient of $e_t$. The conjugations are $*$ (Hermitian, $\tilde X^{*}=\bar{\tilde X}^{\natural}$) and $\natural$ (quaternion). The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ with $R_t=ir'_t$, so that $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and $(\tilde\nabla_\Phi)^{\natural}$ is the same operator with the spatial part reversed. The four-position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. The material time is $r'_t=ct'$, a length, and the action below is integrated with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$ so that the constant multiplying the derivative is $\hbar c$ and not $\hbar$.
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action's only constraint is the first-order structure the currents section uses, so slot 6 is not separated. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -31,6 +29,10 @@ Every symbol is defined where it first appears, and §*Summary of Notation* coll
 
 **One convention, used throughout.** The two parts are written $\tilde\Xi_L$ and $\tilde\Xi_R$. They are not the parts of definite value. A part of definite value is an element of a right ideal of $\mathbb{B}$, and left multiplication by $\tilde\nabla_\Phi$ preserves the value, so the two sides of the first line would have different values and only the zero field would solve the pair. The parent states this; the action makes it visible, because a value-split action is identically zero (§*The Count of the Pair*).
 
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central. $\mathrm{Sc}$ is the coefficient of $e_t$. The conjugations are $*$ (Hermitian, $\tilde X^{*}=\bar{\tilde X}^{\natural}$) and $\natural$ (quaternion). The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial R_\eta$ with $R_t=ir'_t$, so that $\partial/\partial R_t=-i\,\partial/\partial r'_t$, and $(\tilde\nabla_\Phi)^{\natural}$ is the same operator with the spatial part reversed. The four-position is $\tilde R_\Phi=ir'_te_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. The material time is $r'_t=ct'$, a length, and the action below is integrated with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$ so that the constant multiplying the derivative is $\hbar c$ and not $\hbar$.
+
 ## The Action in Element Form
 
 The action is
@@ -58,42 +60,6 @@ and each side is real up to a boundary term. The $i$ inside the material time is
 **Consequence.** Each kinetic term is real up to a divergence and the mass terms are Hermitian, so the imaginary part of the bracket is a total divergence. Its integral vanishes on a closed surface, the real part carries the whole content, and nothing is lost by writing $\mathrm{Re}$ in front. This is an identity of the pairing, not a property observed on a lattice.
 
 **The constant $\hbar c$.** It multiplies the whole action and cancels in the variation, so the residuals do not carry it while the currents carry one power of it. It is written so that the two terms have the dimension of an action and so that the derivative term is $\hbar c\,\tilde\nabla_\Phi$ and not $\tilde\nabla_\Phi$.
-
-## Why the Pairing Is the Hermitian One
-
-The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian form, the same form the two Schrödinger articles use. The quaternion pairing $\mathrm{Sc}(\cdot^{\natural}\cdot)$ does not work, and the reason is worth stating because the symbol $\natural$ appears everywhere in the Dirac equation and the temptation to pair with it is strong.
-
-**The quaternion pairing makes every kinetic density a total derivative.** The form $\mathrm{Sc}(X^{\natural}Y)$ is complex-bilinear and symmetric, $\mathrm{Sc}(X^{\natural}Y)=\mathrm{Sc}(Y^{\natural}X)$, and it conjugates no coefficient: $\natural$ reverses the units and leaves the central $i$ alone. So the identity
-
-$$
-\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\partial_\mu\tilde\Xi\bigr)=\tfrac12\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\tilde\Xi\bigr)
-$$
-
-holds exactly, and multiplying by a central constant changes nothing, because the constant passes through the product and through the derivative:
-
-$$
-\mathrm{Sc}\bigl(\tilde\Xi^{\natural}i\hbar c\,\partial_\mu\tilde\Xi\bigr)=\tfrac{i\hbar c}{2}\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\tilde\Xi\bigr).
-$$
-
-A kinetic density that is a total derivative on every field carries no equation of motion. This is the whole defect of the $\natural$ pairing, and it is why the same symbol, used to conjugate the gradient, does not also serve to pair the action.
-
-**The Hermitian pairing is the one the equation's own structure uses.** The two lines of the pair carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$. Under $*$ these are two different operators, related by $(\tilde\nabla_\Phi)^{*}=(\tilde\nabla_\Phi)^{\natural}$, and the pairing is antilinear in its first slot, so the two slots are not interchangeable. Under $\natural$ the two are related by a conjugation of the invertibles alone, the $i$ of the material time is untouched, and the bilinear is symmetric, which is why it cannot produce a density that is not exact. The pair's asymmetry is the $*$-pairing's asymmetry.
-
-**Which one-sided functional is empty, and which is not.** Two candidates look alike and behave differently.
-
-Without the $i$ the candidate is not empty. $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}\hbar c\,\tilde\nabla_\Phi\tilde\Xi]$ is real, because the gradient is self-adjoint for the pairing, and its variation is twice the residual $\tilde\nabla_\Phi\tilde\Xi$; the factor two is the absence of a $\tfrac12$ in front. So one element does carry a real first-order action, and the equation it gives is $\tilde\nabla_\Phi\tilde\Xi=0$, which is the massless member the parent writes $R$.
-
-With the $i$ it is empty. $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}i\hbar c\,\tilde\nabla_\Phi\tilde\Xi]$ vanishes identically, because $i\hbar c\tilde\nabla_\Phi$ is anti-self-adjoint: $\langle\tilde\Xi,i\hbar c\tilde\nabla_\Phi\tilde\Xi\rangle$ is purely imaginary up to a boundary term, so its real part is zero for every field. The identity that states this correctly carries the real part on the left,
-
-$$
-\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\partial_\mu\tilde\Xi\bigr)=\tfrac12\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr),
-$$
-
-and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde\Xi^{*}\partial_\mu\tilde\Xi)$ is a current and not a derivative. The distinction is worth keeping, because it says exactly how much has been shown. The real part of the $i$-inserted functional is a boundary term; its imaginary part is not.
-
-**What the emptiness does and does not prove.** It does not prove that no real first-order action on one element exists. The standard Dirac action is a one-field action and is not empty, because its bilinear carries one element more than the candidate above: the Dirac adjoint's $\gamma_{0}$, which in this algebra is a right multiplication by $i\vec e_\eta$. The same repair is available here — a Hermitian right multiplier inside the bilinear makes the operator self-adjoint and the functional non-empty — and it gives the one-element equation $\tilde\nabla_\Phi\tilde\Xi=k_m\tilde\Xi$, which is one equation on one element and is not the pair.
-
-**Therefore the split is a factorization, and the operator count is its reason.** The pair is not one operator applied once. The gradient acts on the part written $R$, the conjugated gradient acts on the part written $L$, and $k_m$ relates them. A first-order functional hosts one operator per slot, so the pair needs two slots, and the mass is the only term that can couple them, which is why it is off-diagonal. That is the variational reading of the parent's remark that the field is one element and the letters name two parts of it: the parts are what the action needs, they are not values, and the mass is what makes the two of them necessary.
 
 ## The Variation and the Pair
 
@@ -131,21 +97,61 @@ Three counts must be kept apart, and the action keeps them apart.
 
 **What the value-split would do.** If the parts were taken as $\tilde\Xi\Pi_\pm$ with $\Pi_\pm=\tfrac12(e_t\pm i\vec e_z)$ the frame's idempotents, the mass term would vanish identically: $\mathrm{Sc}[\Pi_+\tilde\Xi^{*}\tilde\Xi\Pi_-]=0$ because $\Pi_-\Pi_+=0$ and $\mathrm{Sc}$ is cyclic. The vanishing is the identity $\mathrm{Sc}[\tilde\Pi_+\tilde X^{*}\tilde X\tilde\Pi_-]=0$, since the product $\tilde\Pi_-\tilde\Pi_+$ is zero and $\mathrm{Sc}$ is cyclic. The kinetic terms survive such a split, the mass does not. The parent's display with the fixed direction $i\vec v$ in the mass term is the repair, and the polar companion uses it.
 
-## The Massless Case and the Two Phases
+## Why the Pairing Is the Hermitian One
 
-At $k_m=0$ the action has two independent phase symmetries,
+The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian form, the same form the two Schrödinger articles use. The quaternion pairing $\mathrm{Sc}(\cdot^{\natural}\cdot)$ does not work, and the reason is worth stating because the symbol $\natural$ appears everywhere in the Dirac equation and the temptation to pair with it is strong.
+
+**The quaternion pairing makes every kinetic density a total derivative.** The form $\mathrm{Sc}(X^{\natural}Y)$ is complex-bilinear and symmetric, $\mathrm{Sc}(X^{\natural}Y)=\mathrm{Sc}(Y^{\natural}X)$, and it conjugates no coefficient: $\natural$ reverses the units and leaves the central $i$ alone. So the identity
 
 $$
-\tilde\Xi_L\mapsto e^{i\alpha}\tilde\Xi_L,
+\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\partial_\mu\tilde\Xi\bigr)=\tfrac12\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\tilde\Xi\bigr)
+$$
+
+holds exactly, and multiplying by a central constant changes nothing, because the constant passes through the product and through the derivative:
+
+$$
+\mathrm{Sc}\bigl(\tilde\Xi^{\natural}i\hbar c\,\partial_\mu\tilde\Xi\bigr)=\tfrac{i\hbar c}{2}\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{\natural}\tilde\Xi\bigr).
+$$
+
+A kinetic density that is a total derivative on every field carries no equation of motion. This is the whole defect of the $\natural$ pairing, and it is why the same symbol, used to conjugate the gradient, does not also serve to pair the action.
+
+**The Hermitian pairing is the one the equation's own structure uses.** The two lines of the pair carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$. Under $*$ these are two different operators, related by $(\tilde\nabla_\Phi)^{*}=(\tilde\nabla_\Phi)^{\natural}$, and the pairing is antilinear in its first slot, so the two slots are not interchangeable. Under $\natural$ the two are related by a conjugation of the invertibles alone, the $i$ of the material time is untouched, and the bilinear is symmetric, which is why it cannot produce a density that is not exact. The pair's asymmetry is the $*$-pairing's asymmetry.
+
+**Which one-sided functional is empty, and which is not.** Two candidates look alike and behave differently.
+
+Without the $i$ the candidate is not empty. $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}\hbar c\,\tilde\nabla_\Phi\tilde\Xi]$ is real, because the gradient is self-adjoint for the pairing, and its variation is twice the residual $\tilde\nabla_\Phi\tilde\Xi$; the factor two is the absence of a $\tfrac12$ in front. So one element does carry a real first-order action, and the equation it gives is $\tilde\nabla_\Phi\tilde\Xi=0$, which is the massless member the parent writes $R$.
+
+With the $i$ it is empty. $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}i\hbar c\,\tilde\nabla_\Phi\tilde\Xi]$ vanishes identically, because $i\hbar c\tilde\nabla_\Phi$ is anti-self-adjoint: $\langle\tilde\Xi,i\hbar c\tilde\nabla_\Phi\tilde\Xi\rangle$ is purely imaginary up to a boundary term, so its real part is zero for every field. The identity that states this correctly carries the real part on the left,
+
+$$
+\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\partial_\mu\tilde\Xi\bigr)=\tfrac12\partial_\mu\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr),
+$$
+
+and without the real part it is false: the imaginary part of $\mathrm{Sc}(\tilde\Xi^{*}\partial_\mu\tilde\Xi)$ is a current and not a derivative. The distinction is worth keeping, because it says exactly how much has been shown. The real part of the $i$-inserted functional is a boundary term; its imaginary part is not.
+
+**What the emptiness does and does not prove.** It does not prove that no real first-order action on one element exists. The standard Dirac action is a one-field action and is not empty, because its bilinear carries one element more than the candidate above: the Dirac adjoint's $\gamma_{0}$, which in this algebra is a right multiplication by $i\vec e_\eta$. The same repair is available here — a Hermitian right multiplier inside the bilinear makes the operator self-adjoint and the functional non-empty — and it gives the one-element equation $\tilde\nabla_\Phi\tilde\Xi=k_m\tilde\Xi$, which is one equation on one element and is not the pair.
+
+**Therefore the split is a factorization, and the operator count is its reason.** The pair is not one operator applied once. The gradient acts on the part written $R$, the conjugated gradient acts on the part written $L$, and $k_m$ relates them. A first-order functional hosts one operator per slot, so the pair needs two slots, and the mass is the only term that can couple them, which is why it is off-diagonal. That is the variational reading of the parent's remark that the field is one element and the letters name two parts of it: the parts are what the action needs, they are not values, and the mass is what makes the two of them necessary.
+
+## The Two-Sided Form Has No Action of Its Own
+
+The parent writes a second display of the same equation, in which the mass acts on the right,
+
+$$
+\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L i\vec v,
 \qquad
-\tilde\Xi_R\mapsto e^{i\beta}\tilde\Xi_R,
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R i\vec v,
 $$
 
-with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is the electric phase; the difference is the chiral phase. For $k_m\ne0$ the mass term carries $\tilde\Xi_L^{*}\tilde\Xi_R$ and its conjugate, both invariant under the sum and neither invariant under the difference, so the chiral symmetry is broken by the mass and by nothing else.
+with $\vec v$ a fixed unit spatial direction. That display has no action of its own, and the reason is structural rather than technical.
 
-**The chiral current is the difference of the two part-currents**, and it is conserved exactly when $k_m=0$. The article does not derive it: it is the same Noether computation as the electric one with the two signs opposite, and its conservation is the statement that the mass term is the only obstruction.
+**The two displays are one equation.** Right multiplication by a constant unit is invertible and commutes with $\tilde\nabla_\Phi$, so the second display is the first composed with a fixed element on the right of each part: $\tilde\Xi\mapsto\tilde\Xi i\vec v$ carries the boxed pair into the display above. Two displays related by an invertible constant change of the field's right frame are one equation, and one equation has one action.
 
-**One caution.** The chiral symmetry of this action is a symmetry of the two-part functional. Whether it is a symmetry of the parent's equation read as a single equation is the same question as whether the split is canonical, and the answer is not needed here.
+**The range of that argument, stated exactly.** It applies to a change of variable that is complex-linear, and $i\vec v$ is central and constant, so it applies here. It does not apply to the dictionary of the parent's §*An Explicit Dictionary with Conjugation in the Mass Term*, whose mass term carries a coefficient conjugation: that change of variable is a right multiplication composed with an antilinear map, and an antilinear map does not commute with $\tilde\nabla_\Phi$ in the same way. The conjugated display is still not a second equation, but the reason is different: it is the same functional read through a conjugation, and the reality of the action is what makes the two readings agree. The claim of this section is made for the display with $i\vec v$ and for that display only.
+
+**What the direction does.** In the two-sided display the letters can be read as values, because right multiplication by $i\vec v$ with $\vec v\perp\vec e_z$ reverses the value and the two sides then agree in value. That reading is available in the display and it is not available in the boxed pair. The action above is written for the boxed pair, where the letters are parts and not values; the value-reading needs the direction, and the direction is what the two-sided display supplies.
+
+**The price of the value-reading.** A fixed direction is an extra datum. The action of this article carries none, and it is therefore the version to use when the frame is not already declared. When the frame is declared — as it is in the polar form, where $\vec e_z$ is the direction of the value test — the direction costs nothing, and the polar companion takes the value-reading.
 
 ## The Noether Currents
 
@@ -187,25 +193,21 @@ with $\mathcal{L}$ the integrand of the action. Its conservation on solutions is
 
 **What is deliberately absent.** There is no spin current in this section. The spin of this field is the rotor's (§*the polar companion*), it is not a Noether current of the element action, and a "spin current" derived here would be a second derivation of something the polar form already states exactly. The Dirac spin current as a Noether current belongs to the polar article, where the rotor is a variable.
 
-## The Two-Sided Form Has No Action of Its Own
+## The Massless Case and the Two Phases
 
-The parent writes a second display of the same equation, in which the mass acts on the right,
+At $k_m=0$ the action has two independent phase symmetries,
 
 $$
-\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L i\vec v,
+\tilde\Xi_L\mapsto e^{i\alpha}\tilde\Xi_L,
 \qquad
-(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R i\vec v,
+\tilde\Xi_R\mapsto e^{i\beta}\tilde\Xi_R,
 $$
 
-with $\vec v$ a fixed unit spatial direction. That display has no action of its own, and the reason is structural rather than technical.
+with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is the electric phase; the difference is the chiral phase. For $k_m\ne0$ the mass term carries $\tilde\Xi_L^{*}\tilde\Xi_R$ and its conjugate, both invariant under the sum and neither invariant under the difference, so the chiral symmetry is broken by the mass and by nothing else.
 
-**The two displays are one equation.** Right multiplication by a constant unit is invertible and commutes with $\tilde\nabla_\Phi$, so the second display is the first composed with a fixed element on the right of each part: $\tilde\Xi\mapsto\tilde\Xi i\vec v$ carries the boxed pair into the display above. Two displays related by an invertible constant change of the field's right frame are one equation, and one equation has one action.
+**The chiral current is the difference of the two part-currents**, and it is conserved exactly when $k_m=0$. The article does not derive it: it is the same Noether computation as the electric one with the two signs opposite, and its conservation is the statement that the mass term is the only obstruction.
 
-**The range of that argument, stated exactly.** It applies to a change of variable that is complex-linear, and $i\vec v$ is central and constant, so it applies here. It does not apply to the dictionary of the parent's §*An Explicit Dictionary with Conjugation in the Mass Term*, whose mass term carries a coefficient conjugation: that change of variable is a right multiplication composed with an antilinear map, and an antilinear map does not commute with $\tilde\nabla_\Phi$ in the same way. The conjugated display is still not a second equation, but the reason is different: it is the same functional read through a conjugation, and the reality of the action is what makes the two readings agree. The claim of this section is made for the display with $i\vec v$ and for that display only.
-
-**What the direction does.** In the two-sided display the letters can be read as values, because right multiplication by $i\vec v$ with $\vec v\perp\vec e_z$ reverses the value and the two sides then agree in value. That reading is available in the display and it is not available in the boxed pair. The action above is written for the boxed pair, where the letters are parts and not values; the value-reading needs the direction, and the direction is what the two-sided display supplies.
-
-**The price of the value-reading.** A fixed direction is an extra datum. The action of this article carries none, and it is therefore the version to use when the frame is not already declared. When the frame is declared — as it is in the polar form, where $\vec e_z$ is the direction of the value test — the direction costs nothing, and the polar companion takes the value-reading.
+**One caution.** The chiral symmetry of this action is a symmetry of the two-part functional. Whether it is a symmetry of the parent's equation read as a single equation is the same question as whether the split is canonical, and the answer is not needed here.
 
 ## What the Variational Principle Adds
 
