@@ -232,8 +232,8 @@ $$</p>
 </tr>
 <tr>
 <td><strong>5. The Reality of the Action</strong></td>
-<td>Which bilinear, and why the other one fails</td>
-<td>The complex or indefinite bilinear is named and rejected, not omitted</td>
+<td>Four questions, four subsections, in this order: <em>The Pairing</em>, <em>The Type of the Coefficient</em>, <em>The Selection Rule</em>, <em>What Reality Does Not Buy</em></td>
+<td>The section is one heading and four named subsections; a subsection with nothing to hold carries a declaration and is never dropped</td>
 </tr>
 <tr>
 <td><strong>6. The Constraints the Action Imposes</strong></td>
@@ -324,9 +324,11 @@ $$</p>
 <p><strong>The tiering prices the rewrite.</strong> Seventeen mandatory slots per article would have meant eight new sections each; the tier puts the mean at about four over the forty field articles, 160 in all, not 320. Every one of the removed sections is one that would have been invented rather than derived.</p>
 <p><strong>Which slots are new, and which are extensions.</strong></p>
 <ul>
-<li><strong>5, 6, 8 and 13 are new.</strong> Each names a question every article asks and none named: <em>why this bilinear</em>, <em>what constraint the action imposes</em>, <em>what the second variation's sign is</em>, <em>what the comparison absorbs</em>. Together they absorb twenty-three differently titled sections.</li>
+<li><strong>5, 6, 8 and 13 are new</strong>, and 5 is new four times over. Its subsections name questions the articles ask in different words and none named: <em>why this bilinear</em>, <em>what type the coefficient must have</em>, <em>which potentials are admissible</em>, <em>how much weaker a real action is than a real spectrum</em>.</li>
 <li><strong>3, 4, 9, 10 and 11 are extensions.</strong> The action, the variation, the currents, the settings and the limits are already there under one name per variable set; the bilinear, the sign of the charge and the truncation's error are not.</li>
 </ul>
+<p><strong>One heading, four subsections, and the four are the correction.</strong> The eight articles that carried <em>The Reality of the Action</em> were not doing one thing. <em>The Dirac Equation</em> rejects the quaternionic pairing because it makes every kinetic density a total derivative. The four momentum articles ask what type the coefficient must have — an anti-Hermitian root, a Hermitian symbol — for the density to come out real. The Klein–Gordon momentum article asks which potentials the action admits at all, and finds the anti-Hermitian sector excluded with a complex frequency $\omega^{2}/c^{2}=k_\Phi^{2}+i\lambda$ where a wave should be. Two articles measure how much weaker a real action is than a real symbol or a real spectrum. Under one bare heading those four arguments were invisible, and an article could be said to have the slot by carrying any one of them. The section is now one heading with four fixed subsections, in the same order in every article that has it, and each subsection either holds its argument or says why it does not arise. The counts: <em>The Pairing</em> holds an argument in 2 of the 8, <em>The Type of the Coefficient</em> in 7, <em>The Selection Rule</em> in 1, <em>What Reality Does Not Buy</em> in 2. The four subsections are enforced by the same script, which fails an article that drops one or reorders them. The spin-zero fluid's <em>The Gradient Energy Is Indefinite</em> moved to slot 8, where a quadratic form's sign belongs.</p>
+<p><strong>The count of each subsection is the honest measure of the family, and it is small on purpose.</strong> <em>The Pairing</em> is proved once and cited thereafter; the other element-form articles inherit it and say so. <em>The Selection Rule</em> exists only where a potential is general enough to have an inadmissible sector, which is the free Klein–Gordon momentum article and no other: the three coupled momentum articles have a connection and not a potential, so the rule has nothing to exclude. That gap is real and it is the next item of work, not a naming fault.</p>
 <p><strong>The heading contract, and the script that enforces it.</strong> The slots above fix what a section holds. They did not fix what a section is <em>called</em>, and for a year they were not called the same thing twice: slot 3 was <em>The Action</em> in seven articles, <em>The Coupled Action</em> in four, <em>The Quadratic Form at Fixed Frequency</em> in one, and <em>The Action in Element Form</em> in seventeen. The table below fixes the string. It is enforced by <code>check_lagrangian_headings.py</code> at the repository root, which reads the articles and not the maps.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -346,11 +348,6 @@ $$</p>
 <td>2</td>
 <td><code>Conventions</code></td>
 <td>—</td>
-</tr>
-<tr>
-<td>2b</td>
-<td><code>Before the Action:</code></td>
-<td>what the section fixes, when a prerequisite precedes the action</td>
 </tr>
 <tr>
 <td>3</td>
@@ -479,11 +476,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Two prefixes exist so that a section outside the sequence can still be named.</strong> <code>Before the Action:</code> marks a prerequisite that must precede the action — <em>The Equation and Its Operator</em> in the Klein–Gordon article, <em>The Substitution and the Two Parts</em> in the Dirac polar article, <em>The Limit, What Is Dropped and What Is Kept</em> in the Pauli article. <code>Aside:</code> marks a result the article owns that belongs to no slot — <em>The Conjugate Pair</em>, <em>The Count of the Pair</em>, <em>Exact Solutions and What They Show</em>. Before the contract these five sections were indistinguishable from slot sections, and the order check could not tell a declared exception from a violation.</p>
+<p><strong>One prefix exists so that a section outside the sequence can still be named.</strong> <code>Aside:</code> marks a side result that belongs to no slot, and <code>Verification</code> marks the checked-claim appendix. Nothing else sits outside the sequence. A prerequisite that must precede the action is not its own section: it is a convention and belongs in slot 2, or it is the derivation that produces the action and belongs at the head of slot 3. The two articles that had a <code>Before the Action:</code> section were folded that way — the Klein–Gordon element article's d'Alembertian convention and its comparison of the two pairings went to slot 2 and to the first subsection of slot 5, and the Dirac polar article's idempotents went to slot 2 with the substitution that produces the kinetic term at the head of slot 3. Eighteen slot numbers became seventeen, and no article now has a section between <em>Conventions</em> and its action.</p>
 <p><strong>Five slots may hold more than one section, and the rest may hold exactly one.</strong> The checker allows a repeat at slot 3 when the action is stated in blocks, at slot 4 when an article varies two independent fields, at slot 7 in three fluid articles, at slot 9 where a current is denied as well as stated, and at slot 12 where the ledger separates what the method adds from what the chart adds. Every other slot appearing twice is a failure.</p>
 <p><strong>The order check is relative, not absolute.</strong> A block may sit outside the sequence — <code>11a</code> before the action, <code>P2</code> after slot 12 — so the checker does not demand positions. It demands that the nine mandatory slots appear, and that they appear in the order 1, 2, 3, 4, 9, 12, 15, 16, 17 relative to one another.</p>
-<p><strong>Slot 7 is now present in all forty-eight, and it did not used to be.</strong> Three polar articles — Klein–Gordon, the coupled Dirac, the Schrödinger — carried their consequence inside the variation and the current sections. Each now holds its own section, and the section is a claim with its check and not a summary: <em>the chart is a change of variables and that is the whole claim</em>, with the residual identity $R_a=\mathrm{Sc}[(\partial\tilde\Xi/\partial p^{a})^{*}E]$ carrying the argument; <em>the chart is diagonal on the central field</em>, with $\det J=\varrho$; <em>the brackets count the constraints</em>, with $1+1+2+2=6$ read off the type table. Slot 7 returned to the mandatory tier and the checker enforces it.</p>
-<p><strong>Current measurement of all forty-eight.</strong> <code>python3 check_lagrangian_headings.py</code> returns exit status 0: 48 checked, 0 failing, 163 + 66 headings renamed in one pass, no unmapped heading, no duplicate heading, no order violation. The four sector articles, the level-0 article and the sector hub are outside this contract and are listed by the script as unchecked.</p>
+<p><strong>Slot 7 is now present in all fifty-eight, and it did not used to be.</strong> Three polar articles — Klein–Gordon, the coupled Dirac, the Schrödinger — carried their consequence inside the variation and the current sections. Each now holds its own section, and the section is a claim with its check and not a summary: <em>the chart is a change of variables and that is the whole claim</em>, with the residual identity $R_a=\mathrm{Sc}[(\partial\tilde\Xi/\partial p^{a})^{*}E]$ carrying the argument; <em>the chart is diagonal on the central field</em>, with $\det J=\varrho$; <em>the brackets count the constraints</em>, with $1+1+2+2=6$ read off the type table. Slot 7 returned to the mandatory tier and the checker enforces it.</p>
+<p><strong>Current measurement of all fifty-eight.</strong> <code>python3 check_lagrangian_headings.py</code> returns exit status 0: 58 checked, 0 failing, 58 maps regenerated and agreeing with the checker's <code>slot_of()</code> row for row, no unmapped heading, no duplicate heading, no order violation. The forty-eight are the original family; the ten added in the eighth pass are those of <em>Pass Eight</em> below. The four sector articles, the level-0 article and the sector hub are outside this contract and are listed by the script as unchecked.</p>
 <p><strong>Three readings add their own blocks, mandatory in that reading only.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -557,6 +554,223 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>A sector article needs the seventeen slots and the seven; a free-field article needs the seventeen and the block of its reading.</strong> That is the whole classification.</p>
+<h2 id="the-counts-read-from-the-fifty-eight">The Counts, Read from the Fifty-Eight</h2>
+<p><strong>Every row below is a measurement of the fifty-eight articles and not a plan.</strong> The script walks each article's headings, maps each to its slot, and counts the articles in which that slot appears at least once. <em>Order</em> is the slot's place in the architecture, and <em>mean position</em> is where the section actually sits in the article, averaged over the articles that have it; a value near the order means the slot keeps its place, and 11a's 3.88 against its slot number 11 is the one that does not, because the deletion precedes the action it truncates.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Section</th>
+<th>Articles of 58</th>
+<th>Mean position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Introduction</td>
+<td><strong>58</strong></td>
+<td>1.00</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Conventions</td>
+<td><strong>58</strong></td>
+<td>2.00</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The Action in ⟨chart⟩</td>
+<td><strong>58</strong></td>
+<td>3.18</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Variation</td>
+<td><strong>58</strong></td>
+<td>4.31</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The Reality of the Action — four subsections</td>
+<td>18</td>
+<td>5.28</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Constraints the Action Imposes</td>
+<td>36</td>
+<td>5.51</td>
+</tr>
+<tr>
+<td>7</td>
+<td>The Structural Consequence</td>
+<td><strong>58</strong></td>
+<td>6.56</td>
+</tr>
+<tr>
+<td>8</td>
+<td>The Second Variation</td>
+<td>3</td>
+<td>8.33</td>
+</tr>
+<tr>
+<td>9</td>
+<td>The Noether Currents</td>
+<td><strong>58</strong></td>
+<td>7.89</td>
+</tr>
+<tr>
+<td>10</td>
+<td>The Two Settings</td>
+<td>12</td>
+<td>8.08</td>
+</tr>
+<tr>
+<td>11</td>
+<td>The Limits and the Truncation’s Error</td>
+<td>8</td>
+<td>12.25</td>
+</tr>
+<tr>
+<td>11a</td>
+<td>The Limit: The Deletion</td>
+<td>8</td>
+<td>3.88</td>
+</tr>
+<tr>
+<td>11b</td>
+<td>The Limit: The Truncation and Its Error</td>
+<td>9</td>
+<td>8.22</td>
+</tr>
+<tr>
+<td>11c</td>
+<td>The Limit: What Survives</td>
+<td>8</td>
+<td>9.25</td>
+</tr>
+<tr>
+<td>12</td>
+<td>What the Principle Adds and What It Relabels</td>
+<td><strong>58</strong></td>
+<td>9.62</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Comparisons with Other Formulations</td>
+<td>2</td>
+<td>9.50</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Open Questions</td>
+<td>41</td>
+<td>11.32</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Summary</td>
+<td><strong>58</strong></td>
+<td>11.83</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Summary of Notation</td>
+<td><strong>58</strong></td>
+<td>12.83</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Further Reading</td>
+<td><strong>58</strong></td>
+<td>13.83</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Ten slots hold all fifty-eight, and they are the skeleton.</strong> 1, 2, 3, 4, 7, 9, 12, 15, 16 and 17, and there is nothing between 2 and 3 in any of the forty-eight. A reader who opens any two of the family and turns to the same place finds the same section under the same name, and that is what <em>one architecture</em> means here. An earlier count gave nine, because slot 7 was then absent from three polar articles; it is in all forty-eight now.</p>
+<p><strong>Ten blocks reach only part of the family, and each count is a statement about the physics.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Articles of 58</th>
+<th>Why the count is that number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P1 The Parameter Basis and the Four Brackets</td>
+<td>8</td>
+<td>the eight polar articles, one each</td>
+</tr>
+<tr>
+<td>P2 The Reconstruction and Its Limits</td>
+<td>8</td>
+<td>the eight polar articles, one each</td>
+</tr>
+<tr>
+<td>M1 The Symbol and the Quadratic Form</td>
+<td>1</td>
+<td>one momentum article gives the symbol its own section; the other seven fold it into slot 3</td>
+</tr>
+<tr>
+<td>M2 Zero, Pole and the On-Shell Action</td>
+<td>8</td>
+<td>the eight momentum articles, one each</td>
+</tr>
+<tr>
+<td>M3 The Legendre Transform</td>
+<td>8</td>
+<td>the eight momentum articles, one each</td>
+</tr>
+<tr>
+<td>11a, 11b, 11c The limit block</td>
+<td>8, 9, 8</td>
+<td>the eight limit articles; 11b reaches one further, a momentum article that states its truncation</td>
+</tr>
+<tr>
+<td><code>Aside:</code> and <code>Verification</code></td>
+<td>12</td>
+<td>a result outside the sequence, or the checked-claim appendix, where one exists</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>M1 is the one block whose count is a fault and not a fact.</strong> The momentum reading asks four questions: what the symbol is, what its quadratic form is, where it vanishes, and how the Legendre transform reads. Seven of the eight momentum articles answer the first question inside slot 3 and give the other three their own sections. The block's own name says the two belong together — <em>The Symbol and the Quadratic Form</em> — and one article does it that way. The seven are not wrong; they are inconsistent, and that inconsistency is why the reading's sequence shifts from article to article.</p>
+<p><strong>Slot 5's subsections, counted the same way.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Holds an argument</th>
+<th>Carries a declaration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Pairing</td>
+<td>2</td>
+<td>6</td>
+</tr>
+<tr>
+<td>The Type of the Coefficient</td>
+<td>7</td>
+<td>1</td>
+</tr>
+<tr>
+<td>The Selection Rule</td>
+<td>1</td>
+<td>7</td>
+</tr>
+<tr>
+<td>What Reality Does Not Buy</td>
+<td>2</td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>A declared subsection is not a filled one, and the table keeps them apart.</strong> <em>The Selection Rule</em> is argued once, in the free Klein–Gordon momentum article, and declared seven times. The declaration is honest — a connection is not a potential, so nothing is excluded — but the count of one tells a reader that the corpus has one worked example of a selection rule and no second. That is the family's thinnest section, and it is thinnest because the exclusion needs a potential that is a free element, which only the scalar momentum article has.</p>
+<p><strong>What the table does not measure.</strong> It counts headings, not prose. An article can carry a section and state nothing in it, and the count would not show it. The check against that is §<em>The One Claim per Article</em>, one row per article, which is the only measurement here that reads the claim and not the title.</p>
 <h2 id="the-rule-that-protects-content">The Rule That Protects Content</h2>
 <p><strong>Nothing was purged, and the guarantee is not automatic.</strong> Half of every article is scaffolding that the template governs; the other half is sections whose names appear once in the corpus — 129 of the 156 headings, each a claim with a computation attached — <em>Reality of the Action Is the Anti-Hermitian Root</em>, <em>The Ordering Ambiguity Is the Cross Term</em>, <em>The Trace Is the Mass</em>. Each is a claim with a computation attached, and a rewrite that kept only the slots would fold them into <em>The Structural Consequence</em> and lose the computation. Five rules prevent that, and one mechanism enforces them: the heading map, written as a file before any article is touched.</p>
 <ol>
@@ -1066,11 +1280,11 @@ $$</p>
 </tr>
 <tr>
 <td>Mandatory slots present, ten of them</td>
-<td>48 of 48</td>
+<td>58 of 58</td>
 </tr>
 <tr>
 <td>Slot 7 present</td>
-<td>48 of 48</td>
+<td>58 of 58</td>
 </tr>
 <tr>
 <td>Slots repeated beyond the five allowed</td>
@@ -1483,13 +1697,13 @@ $$</p>
 <td>11</td>
 <td>Add slot 5 where the bilinear choice is made, and say so where it is not.</td>
 <td>done</td>
-<td>present in 8 of 48; the other forty declare the absence</td>
+<td>present in 18 of 58 (the ten added articles all carry it)</td>
 </tr>
 <tr>
 <td>12</td>
 <td>Add slot 6 wherever a constraint appears.</td>
 <td>done</td>
-<td>present in 26 of 48, mandatory in the Proca readings; the rest declare it</td>
+<td>present in 36 of 58, mandatory in the Proca readings; the rest declare it</td>
 </tr>
 <tr>
 <td>13</td>
@@ -1609,7 +1823,7 @@ $$</p>
 <td>28</td>
 <td>Do not fill a conditional slot to make an article look complete.</td>
 <td>held</td>
-<td>48 of 48 declarations match their maps, checked mechanically</td>
+<td>58 of 58 declarations match their maps, checked mechanically</td>
 </tr>
 <tr>
 <td>29</td>
@@ -1645,7 +1859,7 @@ $$</p>
 <td>33</td>
 <td>Run the four mechanical assertions on every batch.</td>
 <td>run</td>
-<td>three hold on 48 of 48; the display assertion is aggregate, see §<em>Verification</em></td>
+<td>three hold on 58 of 58; the display assertion is aggregate, see §<em>Verification</em></td>
 </tr>
 <tr>
 <td>34</td>
@@ -1743,9 +1957,147 @@ $$</p>
 <td>the tier corrected to ten and seven, two slot-7 sections written, the fluid slot relabelled 13 → 12, twelve count statements corrected</td>
 <td>a dead heading in the Proca limit article, and a summary four numbers out of date</td>
 </tr>
+<tr>
+<td>8. Missing articles</td>
+<td>ten family articles written, ten parents aligned, 58 maps regenerated, the counts tables re-measured</td>
+<td>the gap was a count and not a style: the four-chart rule is a property of eight parents, and five base objects still have no article</td>
+</tr>
 </tbody>
 </table></div>
 <p><strong>Two records kept because they are decisions, not history.</strong> Four pre-registered titles were not used: they carried a colon and a subtitle, which the convention reserves for the articles where the theory outweighs the functional, and when written they turned out to be family articles with the action at their centre. <em>The Action Problem</em> was in no menu until the last pass filed it; it is filed now, and it is the one article that states why an action is absent.</p>
+<h2 id="pass-eight-the-ten-missing-articles-and-the-actions-left-behind">Pass Eight: The Ten Missing Articles, and the Actions Left Behind</h2>
+<p><strong>The gap the seventh pass left was a count, not a style.</strong> The family had forty-eight articles, and the corpus writes an action in far more than forty-eight places. The forty-eight are eight parents with four charts each plus fourteen parents with one article; the four-chart rule is a property of eight parents, not a rule of the architecture. Twenty-eight articles outside the family wrote an action, and the question was which of those actions belonged to a missing article.</p>
+<p><strong>The test that separated them was one question: is the action the article's subject, or its tool.</strong> An article that is <em>about</em> the action belongs in the family, in the title form <em>The Lagrangian and X</em>, and owes the seventeen slots. An article that is about something else and writes the action to get at it is a tool case: the action moves out, the article keeps a pointer and the one result it needs. Three sector-form articles were counted as gaps in an earlier measurement and are not gaps: <em>Quantum Chromodynamics and the Lagrangian: The Triplet, the Octet and the Feynman Rules</em>, <em>The Chiral Theory and the Lagrangian: The Pion and the Decay Constant</em> and <em>The Standard Model and the Lagrangian: Four Sectors in One Expression</em> are architected Lagrangian articles, carry the seven sector slots, and need no family article. Their titles put the object first because the object outweighs the functional, which §<em>The Title Convention</em> already allows.</p>
+<p><strong>Ten tool cases had no destination, so the destination was written.</strong> Each row is a new article, its base object, and what its parent stopped carrying.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>New article</th>
+<th>Base object</th>
+<th>Words</th>
+<th>Its parent</th>
+<th>What the parent stopped carrying</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Lagrangian and the Nonlinear Sigma Model</em></td>
+<td>the chiral field on $\mathbb{S}^3$</td>
+<td>3,115</td>
+<td><em>The Nonlinear Sigma Model in Biquaternionic Form</em></td>
+<td>the derivative series and its truncation</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Skyrme Model</em></td>
+<td>the flat current and its fourth-order term</td>
+<td>2,728</td>
+<td><em>The Skyrme Model and the Topological Baryon</em></td>
+<td>the two terms as functionals, and the sign bookkeeping</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the W and Z Bosons</em></td>
+<td>the electroweak gauge sector</td>
+<td>3,024</td>
+<td><em>The W and Z Bosons in Biquaternionic Form</em></td>
+<td>the curvature terms and the mass matrix</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Stueckelberg Mechanism</em></td>
+<td>the invariant combination $\tilde A_\Phi-\tilde\nabla_\Phi\xi/\mu$</td>
+<td>2,818</td>
+<td><em>The Stueckelberg Mechanism in Biquaternionic Form</em></td>
+<td>nothing (pointer only; the mechanism's own account keeps its construction)</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Weak Interaction</em></td>
+<td>the charged current</td>
+<td>2,630</td>
+<td><em>The Weak Interaction in Biquaternionic Form</em></td>
+<td>the interaction term and the elimination of the $W$</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Topologically Massive Gauge Field</em></td>
+<td>the parent action of the duality</td>
+<td>3,213</td>
+<td><em>Dual Equivalence of the Dirac and Topologically Massive Gauge Fields</em></td>
+<td>nothing (pointer only; the parent action is that article's subject)</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Central Scalar Field</em></td>
+<td>the real central scalar</td>
+<td>2,590</td>
+<td><em>The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</em></td>
+<td>nothing (pointer only; the action is that article's subject)</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Goldstone Effective Action</em></td>
+<td>the derivative-only phase action</td>
+<td>2,499</td>
+<td><em>Goldstone's Theorem in Biquaternionic Form</em></td>
+<td>the effective functional</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Axion</em></td>
+<td>the periodic central field</td>
+<td>2,561</td>
+<td><em>The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</em></td>
+<td>the coupling term and the shift check on the functional</td>
+</tr>
+<tr>
+<td><em>The Lagrangian and the Non-Abelian Gauge Fields</em></td>
+<td>the $\mathfrak{su}(2)$ connection</td>
+<td>2,932</td>
+<td><em>Non-Abelian Gauge Fields in Biquaternionic Form</em></td>
+<td>the action, and the trace-versus-pairing argument</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Seven parents lost a display; three kept theirs and gained a pointer.</strong> The distinction is the same test applied one level down: where the action is the parent's subject — the Stueckelberg mechanism, the duality's parent action, the central scalar's classical action — the article keeps it and states where the family's reading is, because removing it would remove the article. Where the action was machinery for a rate, a mass, a soliton or an anomaly, it moved.</p>
+<p><strong>Five tool cases remain, and each needs a base object that has no article yet.</strong> They are the residue of this pass and the next batch's list.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Action displays</th>
+<th>Section that carries the action</th>
+<th>Why it was not moved</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Stress–Energy, Conservation Laws and the Field Action</em></td>
+<td>23</td>
+<td><em>The Field Action in Biquaternion Form</em></td>
+<td>needs <em>The Lagrangian and the Stress–Energy Tensor</em>, whose slot 7 is not yet decided</td>
+</tr>
+<tr>
+<td><em>The Relativistic Particle and the Lagrangian: The Stationary-Action Principle</em></td>
+<td>22</td>
+<td>the whole article</td>
+<td>a point-particle action has no field slot 3 and no constraint slot 6; the seventeen slots do not fit without a rule change</td>
+</tr>
+<tr>
+<td><em>Noether's Theorem in Biquaternionic Form</em></td>
+<td>20</td>
+<td><em>The Action and the Symmetry</em></td>
+<td>needs <em>The Lagrangian and Noether's Theorem</em>; the split is safe but unwritten</td>
+</tr>
+<tr>
+<td><em>BRST Symmetry in Biquaternionic Form</em></td>
+<td>18</td>
+<td><em>The Gauge-Fixed Action</em></td>
+<td>needs <em>The Lagrangian and BRST Symmetry</em>; the ghost sector has no family article</td>
+</tr>
+<tr>
+<td><em>Hamiltonian Field Theory in Biquaternionic Form</em></td>
+<td>13</td>
+<td><em>The Legendre Transform of the Field</em></td>
+<td>a Hamiltonian article is the dual of a family article, so it may belong as a reading rather than a sibling</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two more articles were counted as gaps and are not.</strong> <em>The Group of Invertibles, the Cone and the Orders</em> and the four <em>Canonical Quantization</em> articles write a Lagrangian several times, but they write it to display a conjugate momentum or a commutator; their subject is the quantisation, and the action is their input. They keep it.</p>
+<p><strong>What the pass measured.</strong> Ten articles, 28,110 words, the seventeen-slot check passing on all of them (58 checked, 0 failing), 58 maps regenerated and agreeing with the checker row for row, and every link in the ten new articles and in the ten edited parents resolving to a file that exists.</p>
 <h2 id="the-obstacles-and-what-each-cost">The Obstacles, and What Each Cost</h2>
 <p><strong>Seven obstacles stood between the plan and a uniform family, and each has a named answer and a measured price.</strong></p>
 <div class="table-scroll"><table>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrangian and the Nonlinear Sigma Model — Biquaternion Universe</title>
+  <meta name="description" content="This article writes the nonlinear sigma model as an extremum of an action in the algebra, and reads what the action&#x27;s structure gives. It is the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrangian-and-the-nonlinear-sigma-model"><strong>The Lagrangian and the Nonlinear Sigma Model</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article writes the nonlinear sigma model as an extremum of an action in the algebra, and reads what the action's structure gives. It is the action-first companion of <em>The Nonlinear Sigma Model in Biquaternionic Form</em>, which states the target geometry and the power counting as facts about a known model; this article asks the prior question, what functional has the sigma-model equation as its stationary condition, and what the algebra contributes to the answer.</p>
+<p><strong>The equation.</strong> The parent's equation is</p>
+<p>$$
+\frac{\partial}{\partial R_\mu}\Bigl(\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_\mu}\Bigr)=0 ,
+\qquad
+\tilde U\in\mathbb{H}^1_{\mathbb{B}},
+\qquad
+\tilde U\tilde U^{\natural}=e_t ,
+$$</p>
+<p>the conservation of the Maurer–Cartan current of a group-valued field. The article asks what action has this equation as its Euler–Lagrange condition.</p>
+<p><strong>Three things are established.</strong></p>
+<p><em>First, the action.</em> With $\tilde U$ varied subject to $\tilde U\tilde U^{\natural}=e_t$, and with $\mathrm{Sc}(\cdot)$ the scalar part,</p>
+<p>$$
+S[\tilde U]=-\frac{f^2}{2}\int d^4r\;\mathrm{Sc}\bigl(\bar j_\mu j_\mu\bigr),
+\qquad
+j_\mu=\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_\mu},
+\qquad
+f=f_\pi,
+$$</p>
+<p>the Euler–Lagrange condition is exactly the conservation of $j_\mu$. The action is the unique term with two derivatives that is invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$, and the coefficient $f^2$ is the only free number in it.</p>
+<p><em>Second, the constraint is the model.</em> The unit-norm condition on $\tilde U$ is not imposed after the variation; it is what makes the action nonlinear. Varying freely inside the constraint surface gives three equations for three Goldstone fields, and the fourth direction of $\mathbb{H}$ is removed by the constraint rather than by a gauge choice.</p>
+<p><em>Third, the action's only content is the derivative expansion.</em> Every invariant of the target that can be written is a power of $\partial\tilde U$, so the classical action is the first term of a series whose successive terms are suppressed by $f$. That is why the model is predictive below $4\pi f$ and silent above it.</p>
+<p><strong>What is not new.</strong> The model, its target, its current and its power counting are standard. The physics is imported whole. What the algebra supplies is the carrier: the target is a submanifold of $\mathbb{H}$, the metric on it is the biquaternion norm, and the current is an algebra-valued one-form whose flatness is a commutator identity of the algebra.</p>
+<p><strong>Declared omissions.</strong> Slot 8 is omitted: the second variation is the stability question for a soliton, and it belongs to the Skyrme article, where a soliton exists at leading order. Slots 10, 11 and 13 are omitted: this is not a coupled system, has no non-relativistic reading and no competing formulation to compare against.</p>
+<h2 id="conventions">Conventions</h2>
+<p><strong>The conventions are the corpus's, restated so that every sign below is checkable from this page.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^{2}=-e_t$ for $\eta=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.</p>
+<p><strong>The two products used.</strong> $\mathrm{Sc}(X)$ is the coefficient of $e_t$ in $X$; $\langle X\rangle_\natural=\mathrm{Sc}(X X^{\natural})$ is the Minkowski square of $X$. The spatial sum $\sum_\mu$ runs over $t,x,y,z$ with the corpus's sign rule $\sum_\mu X_\mu X_\mu=X_t^{2}-\sum_j X_j^{2}$.</p>
+<p><strong>The gradient.</strong> $\tilde\nabla_\Phi$ is the corpus's gradient, $\tilde\nabla_\Phi=e_t\partial/\partial r'_t+\sum_j\vec e_j\partial/\partial R_j$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ is the central scalar d'Alembertian. The volume element is $d^4r=c\,dr'_t\,dr_x\,dr_y\,dr_z$.</p>
+<p><strong>The sign convention.</strong> The overall sign of the action is fixed once by requiring that the energy computed from it be positive, exactly as in the Skyrme article; with that sign the time derivative enters the kinetic term with a positive coefficient and the spatial gradients with a negative one. Every sign below follows from it and is not re-chosen.</p>
+<h2 id="the-action-in-element-form">The Action in Element Form</h2>
+<p><strong>The field.</strong> The sigma-model field is the chiral field of the pion,</p>
+<p>$$
+\tilde U=\exp\!\left(\frac{\vec\pi}{f}\right),
+\qquad
+\vec\pi=\sum_\eta \pi_\eta\vec e_\eta ,
+\qquad
+\vec\pi^{\natural}=-\vec\pi ,
+$$</p>
+<p>which is a unit real quaternion because $\vec\pi$ is anti-Hermitian and the exponential of an anti-Hermitian quaternion has unit norm. In closed form,</p>
+<p>$$
+\tilde U=\cos\frac{|\pi|}{f}\,e_t+\frac{\sin(|\pi|/f)}{|\pi|}\,\vec\pi ,
+\qquad
+|\pi|=\sqrt{\sum_\eta\pi_\eta\pi_\eta},
+$$</p>
+<p>the second form showing that the three $\pi_\eta$ are coordinates on the group and not linear fields.</p>
+<p><strong>The current.</strong> The Maurer–Cartan form is</p>
+<p>$$
+j_\mu=\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_\mu}\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi ,
+$$</p>
+<p>and it is <strong>flat</strong>,</p>
+<p>$$
+\frac{\partial j_\nu}{\partial R_\mu}-\frac{\partial j_\mu}{\partial R_\nu}+[j_\mu,j_\nu]=0 ,
+$$</p>
+<p>which is an identity for any group-valued field and holds for no other algebra-valued one-form. Flatness is what makes $j_\mu$ a pure gauge connection, and it is the source of every distinctive property of the model below.</p>
+<p><strong>The action at two derivatives.</strong> The one invariant at this order is the norm of the current,</p>
+<p>$$
+\boxed{\;S[\tilde U]=-\frac{f^2}{2}\int d^4r\;\mathrm{Sc}\bigl(\bar j_\mu j_\mu\bigr)\;}
+$$</p>
+<p>with $\bar j_\mu=-j_\mu$ because $j_\mu$ is anti-Hermitian, so that $\mathrm{Sc}(\bar j_\mu j_\mu)=-\mathrm{Sc}(j_\mu j_\mu)=|j_\mu|^2\ge 0$ and the integrand is positive for the corpus's sign rule. Expanding to second order in $\vec\pi$,</p>
+<p>$$
+j_\mu=\frac{1}{f}\frac{\partial \vec\pi}{\partial R_\mu}+O(\pi^2),
+\qquad
+-\frac{f^2}{2}\mathrm{Sc}(j_\mu j_\mu)=-\frac12\sum_\eta\frac{\partial \pi_\eta}{\partial R_\mu}\frac{\partial \pi_\eta}{\partial R_\mu}+O(\pi^4),
+$$</p>
+<p>so that the quadratic part is the canonical kinetic term of three real fields with coefficient exactly one and no free parameter. The constant $f$ has cancelled between the coefficient and the current, and that cancellation is the statement that $f$ is the decay constant and not a coupling.</p>
+<p><strong>Why no potential term.</strong> A term $V(\tilde U)$ would have to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$, and the only invariant function of a unit quaternion is a constant. The absence of a potential is therefore not a choice of the model but a consequence of the target: on $\mathbb{H}^1$ there is no invariant to build one from, and a mass term for $\vec\pi$ requires a source outside the chiral group, which is the explicit breaking the Goldstone article treats.</p>
+<h2 id="the-variation-the-current-is-conserved-and-that-is-the-equation">The Variation: The Current Is Conserved, and That Is the Equation</h2>
+<p><strong>The variation.</strong> Write $\delta\tilde U=\tilde U\,\tilde\alpha$ with $\tilde\alpha\in\mathfrak{su}(2)$ vanishing at the boundary; the constraint $\tilde U\tilde U^{\natural}=e_t$ forces $\tilde\alpha$ anti-Hermitian, so the variation runs over the three directions of $\mathfrak{su}(2)$ and not over four. Then</p>
+<p>$$
+\delta j_\mu=\frac{\partial\tilde\alpha}{\partial R_\mu}+[j_\mu,\tilde\alpha] ,
+$$</p>
+<p>which is the covariant derivative of $\tilde\alpha$ with $j_\mu$ as connection.</p>
+<p><strong>The variation of the action.</strong> Substituting and integrating by parts,</p>
+<p>$$
+\delta S=-f^2\int d^4r\;\mathrm{Sc}\Bigl(\bar j_\mu\Bigl(\frac{\partial\tilde\alpha}{\partial R_\mu}+[j_\mu,\tilde\alpha]\Bigr)\Bigr)
+=f^2\int d^4r\;\mathrm{Sc}\Bigl(\tilde\alpha\,\frac{\partial \bar j_\mu}{\partial R_\mu}\Bigr),
+$$</p>
+<p>where the commutator term drops because $\mathrm{Sc}(\bar j_\mu[j_\mu,\tilde\alpha])$ is a trace of a commutator, and the boundary term drops because $\tilde\alpha$ vanishes there. The bracket vanishes for every $\tilde\alpha$ in the three-dimensional variation space, hence</p>
+<p>$$
+\boxed{\;\frac{\partial \bar j_\mu}{\partial R_\mu}=0\;}
+\qquad\Longleftrightarrow\qquad
+\frac{\partial}{\partial R_\mu}\Bigl(\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_\mu}\Bigr)=0 ,
+$$</p>
+<p>which is the parent's equation. The equation and the conservation law are the same statement, and that coincidence is not an accident of this model: it is what flatness buys, because a flat connection's divergence is the equation of motion of its own norm.</p>
+<p><strong>The spatial form, to make it checkable.</strong> In components the equation reads $\partial_\mu j_\mu=0$ with the corpus's sign rule, so the time component is conserved with a plus sign and each spatial component with a minus sign; a static configuration therefore obeys $\sum_j\partial_j j_j=0$, and a configuration constant in space obeys $\partial_t j_t=0$. Both are immediate from the boxed form.</p>
+<h2 id="the-reality-of-the-action">The Reality of the Action</h2>
+<h3 id="the-pairing">The Pairing</h3>
+<p><strong>The pairing is the real scalar part, and it is forced.</strong> The integrand $\mathrm{Sc}(\bar j_\mu j_\mu)$ is real because $\bar j_\mu j_\mu$ is the negative of a Hermitian norm: $j_\mu$ is anti-Hermitian, so $j_\mu^{\dagger}=-j_\mu$ and $\mathrm{Sc}(\bar j_\mu j_\mu)=-\mathrm{Sc}(j_\mu^{\dagger}j_\mu)=-\langle j_\mu\rangle_\natural$, a real number. No separate reality condition is needed, and no imaginary part survives the sum over $\mu$.</p>
+<p><strong>Why the pairing cannot be $\mathrm{Sc}(j_\mu j_\mu)$.</strong> That form is the negative of the one above only when $j_\mu$ is anti-Hermitian, which it is, so the two differ by a sign and not by a defect. The genuine alternative, $\mathrm{Re}\,\mathrm{Sc}(j_\mu j_\mu)$ without the conjugate, would fail to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$ because the left and right factors do not commute with $j_\mu$ in the same order; the conjugated pairing is the one that survives, and this is the same selection that fixes the Dirac bilinear in the element articles.</p>
+<h3 id="the-type-of-the-coefficient">The Type of the Coefficient</h3>
+<p><strong>The coefficient is a squared decay constant, real and dimensionful.</strong> $f^2$ has dimension of mass squared, is real by construction, and its value is fixed by the pion decay constant $f_\pi=130.2$ MeV in the corpus's normalization. It is not a coupling: it multiplies the whole action and cancels in the equation of motion, exactly as a coupling would not.</p>
+<p><strong>What that means for the count.</strong> Because $f$ cancels from the equation, the classical content of the model is $f$-independent, and $f$ enters only when the field is normalized canonically — that is, only in the interactions. This is the structural fact behind the statement that the sigma model has one parameter and no coupling.</p>
+<h3 id="the-selection-rule">The Selection Rule</h3>
+<p><strong>The selection rule is invariance under the chiral group, and it leaves one term.</strong> The group acts by $\tilde U\mapsto g_L\tilde U g_R^{*}$ with constant unit quaternions; the current transforms as $j_\mu\mapsto g_R^{*}j_\mu g_R$, so $\mathrm{Sc}(\bar j_\mu j_\mu)$ is invariant because the trace is cyclic. Of all the invariants that can be written with two derivatives, only this one exists at leading order, and the derivative expansion of the next section is the statement that all the others carry four or more.</p>
+<h3 id="what-reality-does-not-buy">What Reality Does Not Buy</h3>
+<p><strong>Reality does not buy a potential, a mass, or a coupling.</strong> The action is real, and its reality is a statement about the integrand and not about the physics. Three things the reality of the action does not supply, stated so that the boundary is visible:</p>
+<ul>
+<li><em>No mass for $\vec\pi$.</em> A mass term is not invariant under the shift $\vec\pi\to\vec\pi+\text{const}$, and the action has no place to put one.</li>
+<li><em>No interaction strength.</em> The coefficient is $f^2$ and cancels; the strength of the four-pion vertex is fixed by $f$ in the canonical normalization and is not a new number.</li>
+<li><em>No quantisation.</em> The action is classical. Its path integral is written in the companion article and is not part of this one.</li>
+</ul>
+<h2 id="the-constraints-the-action-imposes-the-field-is-group-valued">The Constraints the Action Imposes: The Field Is Group-Valued</h2>
+<p><strong>The constraint is $\tilde U\tilde U^{\natural}=e_t$, and it removes one of four components.</strong> The field lives on a three-dimensional surface inside a four-dimensional algebra. The variation therefore runs over three directions, and the four equations that a free variation would give reduce to three independent ones; the fourth is the constraint differentiated along the orbit.</p>
+<p><strong>What the constraint does to the equation.</strong> Differentiating $\tilde U\tilde U^{\natural}=e_t$ gives $\partial_\mu\tilde U\tilde U^{\natural}+\tilde U\partial_\mu\tilde U^{\natural}=0$, so $\partial_\mu\tilde U^{\natural}=-\tilde U^{\natural}\partial_\mu\tilde U\tilde U^{\natural}$ and the current satisfies $j_\mu^{\natural}=-j_\mu$ automatically. The anti-Hermiticity used in the variation is therefore not assumed; it is the constraint's consequence.</p>
+<p><strong>The degree-of-freedom count.</strong> Four components of $\mathbb{H}$ minus one constraint gives three fields, and three is the dimension of $\mathrm{SU}(2)$, which is the target's dimension. The count of degrees of freedom, the dimension of the target and the number of Goldstone bosons of the broken chiral group are the same number read three ways, and the equality is the content of Goldstone's theorem for this target.</p>
+<p><strong>The nonlinearity is the constraint, not an interaction added by hand.</strong> A linear sigma model would carry four fields and a potential with a Mexican hat; the nonlinear model is what remains when the radial field is removed by the constraint. The two descriptions agree below the radial mass and differ above it, which is why the sigma model is an effective theory and the linear model is the renormalizable one.</p>
+<h2 id="the-structural-consequence-one-term-now-a-series-later">The Structural Consequence: One Term Now, a Series Later</h2>
+<p><strong>The action is the first term of a series and not a complete theory.</strong> Every invariant of the target built from derivatives has even degree, so</p>
+<p>$$
+\mathcal{L}=\mathcal{L}_2+\mathcal{L}_4+\mathcal{L}_6+\cdots,
+\qquad
+\mathcal{L}_{2n}\sim\frac{f^2}{\Lambda^{2n-2}}\,\partial^{2n},
+$$</p>
+<p>with $\Lambda$ the mass of the sector integrated out. In four spacetime dimensions a term with $2n\ge 4$ derivatives has dimension greater than four and is non-renormalizable in the power-counting sense, so the series is an expansion in $p/\Lambda$ and not a definition.</p>
+<p><strong>Why that is a consequence of the action and not an assumption.</strong> A renormalizable action in four dimensions needs terms of dimension at most four, and the target admits no dimension-two or dimension-zero invariant except a constant. The only action the target permits is therefore non-renormalizable, and the sigma model's status as an effective theory follows from the geometry of $\mathbb{H}^1$ and not from a choice.</p>
+<p><strong>What the algebra carries and what it does not.</strong> The target $\mathbb{H}^1$ is the group $\mathrm{SU}(2)$, which is inside the algebra's compact group $\mathrm{U}(2)$; the metric on it is the biquaternion norm; and the flat current is the algebra's own commutator. Those three are the algebra's contribution. The dimension count, the power counting and the divergence structure are standard and are not the algebra's, which is the boundary the companion's power-counting section records.</p>
+<h2 id="the-noether-currents-two-chiral-currents-and-one-broken">The Noether Currents: Two Chiral Currents and One Broken</h2>
+<p><strong>The two currents.</strong> Invariance under $\tilde U\mapsto g_L\tilde U g_R^{*}$ with $g_L,g_R$ constant gives a left and a right current,</p>
+<p>$$
+j^{(L)}_\mu=\frac{\partial \tilde U}{\partial R_\mu}\tilde U^{\natural},
+\qquad
+j^{(R)}_\mu=\tilde U^{\natural}\frac{\partial \tilde U}{\partial R_\mu},
+$$</p>
+<p>the second of which is the $j_\mu$ of the action. Both are conserved on shell, and their sum and difference are the vector and axial currents.</p>
+<p><strong>The vector current is the unbroken one.</strong> The diagonal $g_L=g_R=g_V$ leaves the vacuum invariant and gives a conserved current with no Goldstone boson; the axial combination is the one whose conservation fails in the presence of a mass, and whose would-be Goldstone is the $\vec\pi$ itself. The distinction between the two is a statement about which symmetry is realized linearly and which nonlinearly, and the action does not distinguish them: both currents follow from the same invariance.</p>
+<p><strong>Energy–momentum.</strong> Translation invariance gives the canonical tensor</p>
+<p>$$
+T_{\mu\nu}=f^2\,\mathrm{Sc}\bigl(\bar j_\mu j_\nu\bigr)-g_{\mu\nu}\mathcal{L},
+$$</p>
+<p>whose trace in four dimensions vanishes for the two-derivative action, which is the statement that the classical sigma model is conformally invariant. A mass term or a four-derivative term would break it, and the trace anomaly of the quantised model is the companion article's.</p>
+<p><strong>What there is not.</strong> No current carries a central phase, because the carrier has none; there is no $\mathrm{U}(1)$ current to compare with the Dirac one. The model's currents are all chiral, and that is the structural difference from every element article in the family.</p>
+<h2 id="what-the-principle-adds-and-what-it-relabels">What the Principle Adds and What It Relabels</h2>
+<p><strong>Adds.</strong></p>
+<ul>
+<li><em>A variational origin for current conservation.</em> The parent states $\partial_\mu j_\mu=0$ as a property of the model; the action makes it the stationarity of one functional, and the flatness of the current becomes the reason the two coincide.</li>
+<li><em>A reason for the coefficient's cancellation.</em> The appearance of $f^2$ multiplying an action that does not depend on $f$ is visible only when the action is written; the equation alone hides it.</li>
+<li><em>A single place where the constraint enters.</em> In the equation the constraint is implicit in the field's definition; in the action it is the restricted variation, and the degree-of-freedom count follows from it directly.</li>
+</ul>
+<p><strong>Relabels.</strong></p>
+<ul>
+<li><em>The "nonlinear" of the model's name.</em> It is not a nonlinearity added to a linear theory; it is the constraint, and the linear sigma model is the unconstrained version with one more field.</li>
+<li><em>The derivative expansion.</em> It is not an approximation scheme laid over a known action; it is the complete list of terms the target admits, ordered by dimension.</li>
+<li><em>The decay constant.</em> It is not a coupling; it is the coefficient of the only term, and it cancels from the classical equation.</li>
+</ul>
+<p><strong>The distinction that matters.</strong> The action is local in content and integral in form: the integrand is a function of the field and its first derivative at a point, and the equation is a differential identity at each point. What the integral adds is the selection principle — the constraint on the variation — and that is what makes the difference between a current that happens to be conserved and one that must be.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p><strong>Is the four-derivative term singled out?</strong> At four derivatives the target admits more than one invariant, and the Skyrme term is the combination that is at most quadratic in time derivatives. Whether that condition is forced by the algebra or is a choice within the standard classification is not settled here; the Skyrme article states the condition and uses it.</p>
+<p><strong>Does the algebra's $\mathrm{U}(2)$ ceiling reach the sigma model?</strong> The target is $\mathrm{SU}(2)$ and the ceiling is a statement about which compact groups the algebra carries. The sigma model sits below the ceiling and does not test it; whether a model with a larger target could be written in the algebra is the dimension-ceiling question, and the answer recorded elsewhere is no.</p>
+<p><strong>What fixes $f$?</strong> Nothing in the action. $f$ is measured, and the corpus records it as input; a derivation would require the radial sector, which the linear model carries and the nonlinear one has removed.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The action.</strong> $S=-\frac{f^2}{2}\int d^4r\,\mathrm{Sc}(\bar j_\mu j_\mu)$ with $j_\mu=\tilde U^{\natural}\partial_\mu\tilde U$ and $\tilde U\tilde U^{\natural}=e_t$. Varying inside the constraint gives $\partial_\mu\bar j_\mu=0$, which is the parent's equation.</p>
+<p><strong>The three findings.</strong> The constraint is the nonlinearity and gives the three degrees of freedom. The coefficient $f^2$ cancels from the classical equation and enters only in the interactions. The target admits no invariant but the derivative series, so the model is an effective theory by geometry and not by choice.</p>
+<p><strong>The boundary.</strong> The target, the metric and the flat current are the algebra's; the power counting, the divergence structure and the value of $f$ are not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde U\in\mathbb{H}^1_{\mathbb{B}}$</td>
+<td>sigma-model field, a unit real quaternion</td>
+</tr>
+<tr>
+<td>$\vec\pi$</td>
+<td>the three Goldstone coordinates, $\vec\pi^{\natural}=-\vec\pi$</td>
+</tr>
+<tr>
+<td>$f=f_\pi$</td>
+<td>decay constant, $130.2$ MeV</td>
+</tr>
+<tr>
+<td>$j_\mu=\tilde U^{\natural}\partial_\mu\tilde U$</td>
+<td>Maurer–Cartan current, flat, anti-Hermitian</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}(\cdot)$, $\langle\cdot\rangle_\natural$</td>
+<td>scalar part; Minkowski square</td>
+</tr>
+<tr>
+<td>$g_L,g_R$</td>
+<td>constant unit quaternions acting on the left and right</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>mass of the integrated-out radial sector</td>
+</tr>
+<tr>
+<td>$d^4r$</td>
+<td>$c\,dr'_t\,dr_x\,dr_y\,dr_z$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-nonlinear-sigma-model-in-biquaternionic-form.html">The Nonlinear Sigma Model in Biquaternionic Form</a> — the parent: the target, the power counting and the two-dimensional exception.</li>
+<li><a href="the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html">The Chiral Theory and the Lagrangian: The Pion and the Decay Constant</a> — the same action read as the pion theory, with the explicit-breaking terms.</li>
+<li><a href="the-lagrangian-and-the-skyrme-model.html">The Lagrangian and the Skyrme Model</a> — the four-derivative term that stabilises a soliton.</li>
+<li><a href="goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a> — why the three fields are massless, and the soft limit.</li>
+<li><a href="the-lagrangian-and-the-interacting-scalar-field.html">The Lagrangian and the Interacting Scalar Field</a> — the linear model this one is the constrained limit of.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
