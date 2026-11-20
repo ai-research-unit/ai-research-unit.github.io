@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrangian Articles by Object: Four Fields, Nine Articles Each — Biquaternion Universe</title>
+  <meta name="description" content="The family is easier to use from the object than from the reading. A reader who wants the Proca action in every chart does not want to walk five reading…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrangian-articles-by-object-four-fields-nine-articles-each"><strong>The Lagrangian Articles by Object: Four Fields, Nine Articles Each</strong></h1>
+<h2 id="what-this-page-is-for">What this page is for</h2>
+<p>The family is easier to use from the object than from the reading. A reader who wants the Proca action in every chart does not want to walk five reading hubs; he wants one list of nine. This page gives the four lists.</p>
+<p><strong>How the nine are built.</strong> Each field carries the element action, the polar action, the action at one momentum mode, the action in the non-quantum limit, the minimal-coupling action in the same four readings, and one fluid. Four plus four plus one is nine, and the count is the same for the four fields because the readings are a closed list.</p>
+<p><strong>What the grouping shows.</strong> Every field's nine make the same moves in the same order. The differences are the field's own: the scalar's conjugate pair, the spinor's first-order structure, the vector's constraint, and the Schrödinger field's second-order-in-space operator. A reader who has read one list of nine can predict the shape of the other three, and the prediction is the family's claim about method.</p>
+<h2 id="the-kleingordon-equation">The Klein–Gordon Equation</h2>
+<ul>
+<li><a href="the-lagrangian-and-the-klein-gordon-equation.html">The Lagrangian and the Klein–Gordon Equation</a> — the action in element form; four separate scalar actions with the non-central coefficient as their only coupling.</li>
+<li><a href="the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html">The Lagrangian and the Klein–Gordon Equation in Polar Variables</a> — the same action in the word's coordinates, with the frame density weighting every square and the Jacobian invertible.</li>
+<li><a href="the-lagrangian-and-the-klein-gordon-equation-in-momentum-space.html">The Lagrangian and the Klein–Gordon Equation in Momentum Space</a> — the symbol at one mode; the reality of the action is the anti-Hermiticity of its root.</li>
+<li><a href="the-lagrangian-and-the-klein-gordon-equation-in-the-non-quantum-limit.html">The Lagrangian and the Klein–Gordon Equation in the Non-Quantum Limit</a> — the phase's rate deleted inside the action, the transport equation kept, the error displayed.</li>
+<li><a href="the-lagrangian-and-the-coupled-klein-gordon-equation.html">The Lagrangian and the Coupled Klein–Gordon Equation</a> — minimal coupling; the two equations cannot contradict because the current is conserved.</li>
+<li><a href="the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html">The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables</a> — minimal coupling as a shift of the bracket.</li>
+<li><a href="the-lagrangian-and-the-coupled-klein-gordon-equation-in-momentum-space.html">The Lagrangian and the Coupled Klein–Gordon Equation in Momentum Space</a> — the matter's stationarity and the connection's are one question at one mode.</li>
+<li><a href="the-lagrangian-and-the-coupled-klein-gordon-equation-in-the-non-quantum-limit.html">The Lagrangian and the Coupled Klein–Gordon Equation in the Non-Quantum Limit</a> — the covariant transport unchanged by the deletion.</li>
+<li><a href="the-lagrangian-and-the-spin-zero-fluid.html">The Lagrangian and the Spin-Zero Fluid</a> — the density and the phase as fluid variables; two fields, two equations, the third as a gradient.</li>
+</ul>
+<h2 id="the-dirac-equation">The Dirac Equation</h2>
+<ul>
+<li><a href="the-lagrangian-and-the-dirac-equation.html">The Lagrangian and the Dirac Equation</a> — the two-sided form has no action of its own; the action is the chiral pair's.</li>
+<li><a href="the-lagrangian-and-the-dirac-equation-in-polar-variables.html">The Lagrangian and the Dirac Equation in Polar Variables</a> — the mass term picks a direction in the word.</li>
+<li><a href="the-lagrangian-and-the-dirac-equation-in-momentum-space.html">The Lagrangian and the Dirac Equation in Momentum Space</a> — zero and pole are one object.</li>
+<li><a href="the-lagrangian-and-the-dirac-equation-in-the-non-quantum-limit.html">The Lagrangian and the Dirac Equation in the Non-Quantum Limit</a> — the polar action collapses to a one-form plus a potential, and the cost is stated.</li>
+<li><a href="the-lagrangian-and-the-coupled-dirac-equation.html">The Lagrangian and the Coupled Dirac Equation</a> — why the coupling is forced rather than chosen.</li>
+<li><a href="the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html">The Lagrangian and the Coupled Dirac Equation in Polar Variables</a> — the bracket expansion in the chart, and the constraint structure.</li>
+<li><a href="the-lagrangian-and-the-coupled-dirac-equation-in-momentum-space.html">The Lagrangian and the Coupled Dirac Equation in Momentum Space</a> — the curvature is the term that cannot be a number.</li>
+<li><a href="the-lagrangian-and-the-coupled-dirac-equation-in-the-non-quantum-limit.html">The Lagrangian and the Coupled Dirac Equation in the Non-Quantum Limit</a> — the coupling's reach after the truncation.</li>
+<li><a href="the-lagrangian-and-the-spin-half-fluid.html">The Lagrangian and the Spin-Half Fluid</a> — the mass term and the declared direction; norms survive and the vorticity stays the frame's.</li>
+</ul>
+<h2 id="the-proca-equation">The Proca Equation</h2>
+<ul>
+<li><a href="the-lagrangian-and-the-proca-equation.html">The Lagrangian and the Proca Equation</a> — the constraint removes one degree of freedom, and the count follows from the action.</li>
+<li><a href="the-lagrangian-and-the-proca-equation-in-polar-variables.html">The Lagrangian and the Proca Equation in Polar Variables</a> — the mass term, the branch and the constraint as one statement.</li>
+<li><a href="the-lagrangian-and-the-proca-equation-in-momentum-space.html">The Lagrangian and the Proca Equation in Momentum Space</a> — the longitudinal coefficient is the mass alone.</li>
+<li><a href="the-lagrangian-and-the-proca-equation-in-the-non-quantum-limit.html">The Lagrangian and the Proca Equation in the Non-Quantum Limit</a> — what survives is stated, and the mass term is the whole longitudinal action.</li>
+<li><a href="the-lagrangian-and-the-coupled-proca-equation.html">The Lagrangian and the Coupled Proca Equation</a> — the field term and the charge.</li>
+<li><a href="the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html">The Lagrangian and the Coupled Proca Equation in Polar Variables</a> — the mass term is a function of the frame.</li>
+<li><a href="the-lagrangian-and-the-coupled-proca-equation-in-momentum-space.html">The Lagrangian and the Coupled Proca Equation in Momentum Space</a> — the two terms transform differently.</li>
+<li><a href="the-lagrangian-and-the-coupled-proca-equation-in-the-non-quantum-limit.html">The Lagrangian and the Coupled Proca Equation in the Non-Quantum Limit</a> — the coupling reaches the constraint and not the mass.</li>
+<li><a href="the-lagrangian-and-the-spin-one-fluid.html">The Lagrangian and the Spin-One Fluid</a> — the mass term does two things.</li>
+</ul>
+<h2 id="the-schrodinger-equation">The Schrödinger Equation</h2>
+<ul>
+<li><a href="the-lagrangian-and-the-schrodinger-equation.html">The Lagrangian and the Schrödinger Equation</a> — reality is the weakest of four conditions the action can meet.</li>
+<li><a href="the-lagrangian-and-the-schrodinger-equation-in-polar-variables.html">The Lagrangian and the Schrödinger Equation in Polar Variables</a> — the polar action of the general element and its central case, with the four brackets.</li>
+<li><a href="the-lagrangian-and-the-schrodinger-equation-in-momentum-space.html">The Lagrangian and the Schrödinger Equation in Momentum Space</a> — the symbol is the quadratic form.</li>
+<li><a href="the-lagrangian-and-the-schrodinger-equation-in-the-non-quantum-limit.html">The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit</a> — the transport equation kept and the rate deleted.</li>
+<li><a href="the-lagrangian-and-the-coupled-schrodinger-equation.html">The Lagrangian and the Coupled Schrödinger Equation</a> — the Lorentz force, and why it is the classical face of minimal coupling.</li>
+<li><a href="the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html">The Lagrangian and the Coupled Schrödinger Equation in Polar Variables</a> — the potential shift is the whole of the coupling.</li>
+<li><a href="the-lagrangian-and-the-coupled-schrodinger-equation-in-momentum-space.html">The Lagrangian and the Coupled Schrödinger Equation in Momentum Space</a> — the coupling is a translation of the symbol.</li>
+<li><a href="the-lagrangian-and-the-coupled-schrodinger-equation-in-the-non-quantum-limit.html">The Lagrangian and the Coupled Schrödinger Equation in the Non-Quantum Limit</a> — the covariant transport unchanged.</li>
+<li><a href="the-lagrangian-and-the-schrodinger-fluid.html">The Lagrangian and the Schrödinger Fluid</a> — the quantum potential is a functional derivative.</li>
+</ul>
+<h2 id="what-the-four-lists-share-and-where-they-differ">What the four lists share, and where they differ</h2>
+<p><strong>Share.</strong> The four actions are quadratic, their conjugate pairs are stated, their currents are the Noether currents of one phase symmetry or one translation family, and their counts come from the constraints. None is quantised, and each says so in its first section.</p>
+<p><strong>Differ.</strong> The scalar's action is second order in every variable and its momenta are the field's own derivatives. The spinor's is first order and its momenta are bilinears, so its bracket is the Dirac bracket. The vector's carries a constraint that removes the longitudinal mode. The Schrödinger field's is second order in space and first order in time, which is why its reality condition is weaker than the relativistic three.</p>
+<p><strong>One caution.</strong> The nine of a field are nine readings of one object and not nine objects. A reader who compares, say, the Proca momentum-space article with the Proca polar article is comparing charts, and the invariants must agree across them. When they do not, one of the two articles has an error and not a disagreement.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lagrangian-family-a-map.html">The Lagrangian Family: A Map of the Forty-Eight Articles</a>, for the schema and the boundary.</li>
+<li><a href="the-lagrangian-element-readings.html">The Lagrangian: The Element Readings</a> and its four companion hubs, for the other axis of the same grid.</li>
+<li><a href="the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation: From the Action to the Commutator</a>, for what none of the four lists contains.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

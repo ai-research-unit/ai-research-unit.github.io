@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quantisation Hub: The Sixteen Articles That Import the Promotion — Biquaternion Universe</title>
+  <meta name="description" content="What this page is. The sixteen articles that turn the corpus&#x27;s classical actions into a quantum field theory, in the order in which the operation is…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quantisation-hub-the-sixteen-articles-that-import-the-promotion"><strong>The Quantisation Hub: The Sixteen Articles That Import the Promotion</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this page is.</strong> The sixteen articles that turn the corpus's classical actions into a quantum field theory, in the order in which the operation is performed. Each of them imports the standard quantisation and applies it to the biquaternion form; none of them derives it. The page exists so that the import is visible as a list and not read as a derivation.</p>
+<p><strong>The order matters.</strong> The bracket comes first, then the ladder, then the vacuum and the state space, then the objects built on them: the Wick theorem, the functional integral, the generating functional, the determinant, the S-matrix, LSZ, the spin–statistics theorem and the group flow. A reader who starts at the S-matrix will not know which of the sixteen carries the postulate.</p>
+<p><strong>Where the postulate sits.</strong> In the six canonical-quantisation articles, and nowhere else. They write $[\hat\phi,\hat\pi]=i\hbar\delta$, and the other ten use the result. The classical half of that equation is the family's, and <a href="the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation</a> derives it from the action.</p>
+<h2 id="the-six-quantisations">The Six Quantisations</h2>
+<ul>
+<li><a href="canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a></li>
+<li><a href="canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a></li>
+<li><a href="canonical-quantization-of-the-biquaternion-proca-field.html">Canonical Quantization of the Biquaternion Proca Field</a></li>
+<li><a href="canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a></li>
+<li><a href="canonical-quantization-of-the-biquaternion-rarita-schwinger-field.html">Canonical Quantization of the Biquaternion Rarita–Schwinger Field</a></li>
+<li><a href="canonical-quantization-of-the-biquaternion-graviton-field.html">Canonical Quantization of the Biquaternion Graviton Field</a></li>
+</ul>
+<h2 id="the-ladder-and-the-state-space">The Ladder and the State Space</h2>
+<ul>
+<li><a href="the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a></li>
+<li><a href="fock-space-and-creation-annihilation-operators-in-biquaternionic-form.html">Fock Space and Creation/Annihilation Operators in Biquaternionic Form</a></li>
+</ul>
+<h2 id="the-objects-built-on-the-ladder">The Objects Built on the Ladder</h2>
+<ul>
+<li><a href="the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a></li>
+<li><a href="the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a></li>
+<li><a href="the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a></li>
+<li><a href="the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a></li>
+<li><a href="the-s-matrix-in-biquaternionic-form.html">The S-Matrix in Biquaternionic Form</a></li>
+<li><a href="the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a></li>
+<li><a href="the-spin-statistics-theorem-in-biquaternionic-form.html">The Spin–Statistics Theorem in Biquaternionic Form</a></li>
+<li><a href="the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a></li>
+</ul>
+<h2 id="what-the-sixteen-do-not-do">What the Sixteen Do Not Do</h2>
+<p><strong>No native ladder.</strong> No pair in $\mathbb{B}$ satisfies $[a,a^{\dagger}]=e_t$, because the scalar part of a commutator vanishes. The scalar and Maxwell ladders are imported and act on a module.</p>
+<p><strong>No native interaction.</strong> The quartic vertex is imported. The corpus has the interacting scalar action and not its $S$-matrix, and the reason is the same one.</p>
+<p><strong>No derivation of the Standard Model.</strong> The algebra's compact group is $\mathrm{U}(2)$; colour, weak isospin and the nineteen parameters are outside it.</p>
+<h2 id="summary">Summary</h2>
+<p>Sixteen articles, four groups. The six quantisations carry the postulate; two build the ladder and the state space; eight build the objects every computation uses. The corpus quantises by import, and the page states the import rather than concealing it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\hat\phi,\hat\pi$</td>
+<td>field and conjugate momentum, promoted to operators</td>
+</tr>
+<tr>
+<td>$[\,,\,]$</td>
+<td>the commutator the promotion introduces</td>
+</tr>
+<tr>
+<td>$a,a^{\dagger}$</td>
+<td>annihilation and creation operators on the module</td>
+</tr>
+<tr>
+<td>$\mathcal F$</td>
+<td>Fock space, the symmetric or exterior algebra of the one-particle module</td>
+</tr>
+<tr>
+<td>$Z[J]$, $\Gamma$</td>
+<td>generating functional and effective action</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>the S-matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation: From the Action to the Commutator</a>, for the classical half of the promotion.</li>
+<li><a href="the-lagrangian-family-a-map.html">The Lagrangian Family: A Map of the Forty-Eight Articles</a>, for the boundary in a table.</li>
+<li><a href="the-klein-gordon-object-every-article-on-one-equation.html">The Biquaternion Object Hubs</a>, for the same articles reached from their objects.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

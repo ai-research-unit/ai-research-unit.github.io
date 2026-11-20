@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sector Hub: What the Lagrangian Family Reaches in Each Sector — Biquaternion Universe</title>
+  <meta name="description" content="What this page is. One page for the question a sector reader asks: does the family have an action for my sector, and if not, why not? Four sectors, four…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector"><strong>The Sector Hub: What the Lagrangian Family Reaches in Each Sector</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this page is.</strong> One page for the question a sector reader asks: does the family have an action for my sector, and if not, why not? Four sectors, four different answers, and the differences are the content.</p>
+<p><strong>The four answers, in one line each.</strong> The electromagnetic sector has one free action and sixteen coupled ones. The electroweak sector has one action and both of its phases. The strong sector has no action and cannot have one in this algebra. The gravitational sector has one quadratic action, and the exact carrier of its perturbation is a frame and not an element.</p>
+<p><strong>Why a page rather than four paragraphs in four summaries.</strong> Because the four answers are comparable and the comparison is the finding. Three sectors differ by what the algebra carries, and one differs by what the method reaches. A reader who sees only his own sector's answer will take a boundary of the method for a boundary of the algebra, or the reverse.</p>
+<p><strong>The strongest objection, answered first.</strong> The corpus transcribes the Standard Model and computes in it, so a page that says the family has no strong-sector action looks like a retreat. It is not. The transcription imports its fields and its couplings; the family's method writes an action in the algebra's own variables. The two are different activities and the page keeps them apart.</p>
+<h2 id="the-electromagnetic-sector">The Electromagnetic Sector</h2>
+<p><strong>What exists.</strong> One free action and sixteen coupled ones.</p>
+<ul>
+<li><a href="the-lagrangian-and-the-electromagnetic-field.html">The Lagrangian and the Electromagnetic Field</a> — the free action, its sign, its reality, and Gauss's law as a constraint rather than a gauge choice.</li>
+<li><a href="the-lagrangian-and-the-coupled-klein-gordon-equation.html">The Lagrangian and the Coupled Klein–Gordon Equation</a> — minimal coupling for the scalar; the two equations cannot contradict because the current is conserved.</li>
+<li><a href="the-lagrangian-and-the-coupled-dirac-equation.html">The Lagrangian and the Coupled Dirac Equation</a> — minimal coupling for the spinor, and why the coupling is forced.</li>
+<li><a href="the-lagrangian-and-the-coupled-proca-equation.html">The Lagrangian and the Coupled Proca Equation</a> — the massive vector coupled; the constraint survives and the mass does not move.</li>
+<li><a href="the-lagrangian-and-the-coupled-schrodinger-equation.html">The Lagrangian and the Coupled Schrödinger Equation</a> — the Lorentz force as a consequence of the variation and not as an addition.</li>
+<li><a href="the-lagrangian-and-quantum-electrodynamics.html">The Lagrangian and Quantum Electrodynamics</a> — the two actions assembled: two equations, one current, one constant.</li>
+</ul>
+<p><strong>What the sector's answer is.</strong> The algebra carries the $\mathrm{U}(1)$ connection exactly, so minimal coupling is exact and the sector is closed at the classical level. What is not closed is the quantisation: no vertex, no loop, no running.</p>
+<h2 id="the-electroweak-sector">The Electroweak Sector</h2>
+<p><strong>What exists.</strong> One action, both of its phases, and the masses computed from it.</p>
+<ul>
+<li><a href="the-lagrangian-and-the-electroweak-theory.html">The Lagrangian and the Electroweak Theory</a> — the $SU(2)\times U(1)$ action, the unbroken and unitary displays, four Gauss constraints, and $m_W=gv/2$ as a product of one coupling and one vacuum value.</li>
+<li><a href="the-electroweak-gauge-group-and-the-hypercharge-assignment.html">The Electroweak Gauge Group and the Hypercharge Assignment</a> — the conventions the action uses.</li>
+<li><a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html">Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses</a> — the breaking as a statement about a potential's minimum.</li>
+<li><a href="the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html">The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors</a> — where the algebra stops.</li>
+</ul>
+<p><strong>What the sector's answer is.</strong> Half-carried. The $\mathrm{U}(1)$ factor is exact in the algebra and the $SU(2)$ factor is carried only in part, which is why the action is written in components and the biquaternionic translation is claimed only where the algebra claims it. The breaking itself is classical and exact.</p>
+<h2 id="the-strong-sector">The Strong Sector</h2>
+<p><strong>What exists.</strong> No action. Nothing in the family corresponds to a gluon, a quark or a hadron.</p>
+<p><strong>Why not.</strong> The algebra's compact group is $\mathrm{U}(2)$, and colour needs $SU(3)$.</p>
+<ul>
+<li><a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a> — the dimension ceiling.</li>
+<li><a href="the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a> — why an embedding is not a derivation.</li>
+<li><a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a> — what the transcription supplies and the family does not.</li>
+</ul>
+<p><strong>What the sector's answer is.</strong> Absent, and absent for a stated reason. The absence is a boundary of the algebra and not of the method: a reader can see from the other three sectors what the method would do if the group existed.</p>
+<h2 id="the-gravitational-sector">The Gravitational Sector</h2>
+<p><strong>What exists.</strong> One quadratic action, written in the metric and in the trace-reversed form, with the count ten minus four minus four.</p>
+<ul>
+<li><a href="the-lagrangian-and-linearised-gravity.html">The Lagrangian and Linearised Gravity</a> — the second variation of the Einstein–Hilbert action, the linearised Einstein tensor, the time–time constraint and the orbit.</li>
+<li><a href="linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a> — the perturbation and where the algebra can and cannot carry it.</li>
+</ul>
+<p><strong>What the sector's answer is.</strong> The action exists and the carrier does not, in the sense that matters. The perturbation is carried by a frame of four elements and not by one element, so the family's slot-7 statement is a statement about that gap: the count needs both the constraint and the orbit, and the algebra sees only one of them.</p>
+<h2 id="the-comparison">The Comparison</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Action in the family</th>
+<th>Algebra carries it</th>
+<th>Quantised in the family</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>electromagnetic</td>
+<td>yes, one free and sixteen coupled</td>
+<td>exactly, the $\mathrm{U}(1)$ connection</td>
+<td>no</td>
+</tr>
+<tr>
+<td>electroweak</td>
+<td>yes, one, both phases</td>
+<td>partly, $U(1)$ exact and $SU(2)$ partial</td>
+<td>no</td>
+</tr>
+<tr>
+<td>strong</td>
+<td>no</td>
+<td>no, $SU(3)$ is outside</td>
+<td>no</td>
+</tr>
+<tr>
+<td>gravitational</td>
+<td>yes, quadratic only</td>
+<td>partly, by a frame and not an element</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the table says.</strong> The four rows differ in two independent columns, and the corpus's honesty consists in reporting both. A sector can have an action and not a carrier, as gravity does; or a carrier and not a group, as the strong sector would if the algebra were larger; or both, as the electromagnetic sector does.</p>
+<h2 id="summary">Summary</h2>
+<p>Four sectors, four answers. The electromagnetic sector is carried exactly, the electroweak sector partly, the strong sector not at all, and the gravitational sector by a frame rather than an element. In all four the quantisation is absent from the family and imported elsewhere. The table is the page's whole content, and the reason it exists is that the four rows are usually reported one at a time.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$SU(2)\times U(1)$</td>
+<td>the electroweak group, carried partly by the algebra</td>
+</tr>
+<tr>
+<td>$SU(3)$</td>
+<td>the colour group, outside the algebra</td>
+</tr>
+<tr>
+<td>$m_W=gv/2$</td>
+<td>the vector mass as a product of one coupling and one vacuum value</td>
+</tr>
+<tr>
+<td>ten minus four minus four</td>
+<td>the graviton's count: components, constraints, orbit</td>
+</tr>
+<tr>
+<td>the frame</td>
+<td>four elements carrying the metric perturbation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lagrangian-family-a-map.html">The Lagrangian Family: A Map of the Forty-Eight Articles</a>, for the schema and the boundary in a table.</li>
+<li><a href="the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html">The Quantisation Hub: The Sixteen Articles That Import the Promotion</a>, for the column the table marks absent in all four rows.</li>
+<li><a href="the-lagrangian-articles-by-object-four-fields-nine-articles-each.html">The Lagrangian Articles by Object: Four Fields, Nine Articles Each</a>, for the same articles reached from their objects.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
