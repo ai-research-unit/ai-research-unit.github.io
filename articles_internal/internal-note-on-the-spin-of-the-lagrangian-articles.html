@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Note: Why the Lagrangian Articles Sit at Different Spins in Different Sectors — Biquaternion Universe</title>
+  <meta name="description" content="The band records the spin of the field whose action the article writes, not the spin content of the force. That single sentence settles most of the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-note-why-the-lagrangian-articles-sit-at-different-spins-in-different-sectors">Internal Note: Why the Lagrangian Articles Sit at Different Spins in Different Sectors</h1>
+<h2 id="the-answer">The Answer</h2>
+<p><strong>The band records the spin of the field whose action the article writes, not the spin content of the force.</strong> That single sentence settles most of the puzzle. An article is filed where it is because of the object it puts a functional on, and the object is fixed by what the algebra can carry. The electroweak part writes vector actions because its business is the mass of a vector; the strong part writes scalar actions because the one object the algebra owns in that sector is a unit quaternion.</p>
+<p><strong>The filing, counted.</strong> Electroweak: four spin-$1$ Lagrangian articles, all on carriers the algebra supplies; one spin-$0$, written on an imported column; none at spin-$\tfrac12$. Strong: three spin-$0$ in the family and a fourth just outside it, all on the algebra's own chiral field; one spin-$1$, transcribed; none at spin-$\tfrac12$. The gauge-structure section has no bands and holds one Lagrangian article.</p>
+<p><strong>The two sectors are mirror images, and that is the reason.</strong> Electroweak writes its <em>carriers</em> and not its <em>matter</em>: the $\mathrm{U}(1)$ connection is exact in the algebra and the vector action is native, while the chiral fermion cannot be given an action. Strong writes its <em>matter</em> and not its <em>carriers</em>: the colour octet is outside the algebra, while the chiral field of the pion is the algebra's own group element. The spin bands record which half each sector owns.</p>
+<p><strong>The empty cell is the same cell in both sectors.</strong> Spin $\tfrac12$ has twelve electroweak articles and six strong ones, and no action in either. The reason is the same in kind: a fermion action needs the sector's connection acting on the fermion's carrier, and those are exactly the two objects the framework does not have — a chiral $\mathrm{SU}(2)_L$ and a colour $\mathrm{SU}(3)_c$.</p>
+<h2 id="the-filing-as-measured">The Filing, as Measured</h2>
+<p><strong>Three sections, six bands, ten articles.</strong> The particle-physics part of the menu holds the family's sector members. Counted from <code>physics.md</code>, they are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Band</th>
+<th>Lagrangian articles</th>
+<th>Articles in the band</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Gauge Structure</td>
+<td>no bands</td>
+<td>1 — <em>Non-Abelian Gauge Fields</em></td>
+<td>18</td>
+</tr>
+<tr>
+<td>The Electroweak Interaction</td>
+<td>spin $0$</td>
+<td>1 — <em>The Higgs Field</em></td>
+<td>6</td>
+</tr>
+<tr>
+<td>The Electroweak Interaction</td>
+<td>spin $\tfrac12$</td>
+<td><strong>0</strong></td>
+<td>12</td>
+</tr>
+<tr>
+<td>The Electroweak Interaction</td>
+<td>spin $1$ and above</td>
+<td>4 — <em>W and Z</em>, <em>Weak Interaction</em>, <em>Stueckelberg</em>, <em>Electroweak Theory</em></td>
+<td>9</td>
+</tr>
+<tr>
+<td>The Strong Interaction</td>
+<td>spin $0$</td>
+<td>3 — <em>Nonlinear Sigma Model</em>, <em>Skyrme Model</em>, <em>Axion</em> (plus <em>The Chiral Theory and the Lagrangian</em>, one step outside the family)</td>
+<td>7</td>
+</tr>
+<tr>
+<td>The Strong Interaction</td>
+<td>spin $\tfrac12$</td>
+<td><strong>0</strong></td>
+<td>6</td>
+</tr>
+<tr>
+<td>The Strong Interaction</td>
+<td>spin $1$ and above</td>
+<td>1 — <em>Quantum Chromodynamics</em></td>
+<td>5</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the two empty cells have in common.</strong> Nothing about spin as such. Both sectors discuss fermions at length — twelve articles on the electroweak side, six on the strong side — and neither writes a fermion action. The bands are full; the functional is missing.</p>
+<p><strong>What the two full cells do not have in common.</strong> Electroweak's weight is in spin $1$, strong's in spin $0$, and the two weights have different causes: one is an ownership, the other an exclusion. The next two sections take them in turn.</p>
+<h2 id="why-the-electroweak-part-sits-at-spin-1">Why the Electroweak Part Sits at Spin 1</h2>
+<p><strong>The sector's content is mass for a carrier, and a mass term is written on the carrier.</strong> Strip the electroweak sector of its fermions and what remains is this: four gauge fields in two factors, one scalar, and the statement that three of the four resulting vectors are heavy. The mass term $M_W^2\sum_\mu W^+_\mu W^-_\mu$ is quadratic in the vector and cannot be written anywhere else. So the four vector articles are not a preference; they are where the sector's own content physically sits.</p>
+<p><strong>The four articles are the four readings of one massive vector.</strong> They are not four applications; they are one object seen four ways.</p>
+<ul>
+<li><em>The W and Z Bosons</em> — the mass produced by the scalar's vacuum, $M_W=gv/2$, and the ratio that follows from the doublet's generators.</li>
+<li><em>The Stueckelberg Mechanism</em> — the same mass for an abelian vector without any breaking, the scalar entering as a shift.</li>
+<li><em>The Weak Interaction</em> — the same vector at low energy, eliminated in favour of a contact term, with $G_F=g^2/8M_W^2$ as the residue of the mass.</li>
+<li><em>The Electroweak Theory</em> — the assembly: both phases, the four Gauss constraints, and the two masses as outputs.</li>
+</ul>
+<p><strong>Why the assembly has no charts.</strong> A chart — polar, momentum, non-quantum limit — re-reads a single field equation. The electroweak action has three connections and a doublet; a chart of one of them would break the assembly. That is why the sector's four articles are four readings of the <em>physics</em> and not four readings of the <em>variables</em>, and why the electroweak part carries no polar or momentum companion.</p>
+<p><strong>The scalar is in the part because it supplies the vacuum value, and it is in spin $0$ because its subject is a scalar.</strong> The Higgs article's content is the potential and the doublet; the potential is the one term in the Standard Model with a negative mass squared, and the sign decides the phase. But the doublet is a two-component complex column, and the algebra's natural home for a column is the minimal left ideal, which carries spin one-half. So the scalar action is written on a carrier the framework does not supply as a scalar. That is why there is exactly one such article and no chart companion for it: the physics of the vacuum value has to be written somewhere, and it is written on an imported column.</p>
+<p><strong>The boundary is visible inside one display.</strong> The weak article's action is the $W$'s kinetic and mass terms plus $-\tfrac{g}{2\sqrt2}\sum_\mu(W^+_\mu J^+_\mu+W^-_\mu J^-_\mu)$. The fermion appears as a current $J$, bilinear in fields whose own action is not written. That is the ownership line drawn in the algebra: the vector is a field of the theory, the fermion is an external current.</p>
+<p><strong>Why the fermion action is absent, stated precisely.</strong> A fermion kinetic term needs a covariant derivative built from the sector's connection acting on the fermion's representation. For the electroweak sector that representation is chiral: left doublet, right singlet, different quantum numbers. The algebra's non-abelian factor is the rotation group of space, which acts vector-like on the field, and the mass bilinear is odd under the exchange of the two chiral halves. The corpus states this in <em>Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall</em> as a closed item: no chiral non-abelian matter representation is built. No representation, no covariant derivative, no action.</p>
+<h2 id="why-the-strong-part-sits-at-spin-0">Why the Strong Part Sits at Spin 0</h2>
+<p><strong>The carrier is outside the algebra, by two independent proofs.</strong> Dimension: the compact group available is $\mathrm{U}(2)$, and colour needs $\mathrm{SU}(3)$. Module parity: every $\mathbb{B}$-module has even complex dimension, and the triplet is three-dimensional and complex. The second proof is the stronger one, because it is not about a group at all: no change of basis produces an odd-dimensional complex carrier. A colour action would need both the group and the triplet, and neither exists.</p>
+<p><strong>What the algebra does own in this sector is the chiral field.</strong> The nonlinear sigma model's field is</p>
+<p>$$
+\tilde U=\exp\!\left(\frac{\vec\pi}{f}\right),\qquad \vec\pi=\sum_\eta\pi_\eta\vec e_\eta ,\qquad \vec\pi^{\natural}=-\vec\pi ,
+$$</p>
+<p>which is a unit real quaternion, because the exponential of an anti-Hermitian quaternion has unit norm. This is the algebra's own group element, not a transcription of one. The pion's field is a rotor; the algebra is made of rotors. That is why the strong part's actions are the ones it has.</p>
+<p><strong>The four scalar actions are four objects built on that field.</strong></p>
+<ul>
+<li><em>The Nonlinear Sigma Model</em> — the field $\tilde U$ itself, its Maurer–Cartan form, and the two-derivative action.</li>
+<li><em>The Chiral Theory and the Lagrangian</em> — the same field at low energy, with $f_\pi$ and the decay constant as the measured input.</li>
+<li><em>The Skyrme Model</em> — the soliton of that field, with the baryon number as the winding of $\vec\pi$.</li>
+<li><em>The Axion</em> — a phase, so a scalar again, and the periodic central field that the corpus already carries.</li>
+</ul>
+<p><strong>The one vector article is a transcription, and it says so.</strong> <em>The Lagrangian and Quantum Chromodynamics</em> writes the standard action with its gauge-fixing and ghost terms, and flags colour as input in every section: the triplet, the octet, $N_c=3$, $b_0$. It is the sector's only vector action, and it is the literature's rather than the framework's. That asymmetry — four native scalars, one imported vector — is the whole story of the band.</p>
+<p><strong>Why no fermion action: the same two reasons, one per rung.</strong> A quark's action needs the covariant derivative in the triplet, which does not exist. A baryon's action needs the baryon to be a field, and in this framework the baryon is a composite — a soliton or a bound state — not a field with a functional of its own. The six spin-$\tfrac12$ articles are about the proton, the neutron, hadron structure, the condensate, the multiplets and the spin–charge Hilbert space: all statements about composite objects, none of them an action.</p>
+<h2 id="the-mirror">The Mirror</h2>
+<p><strong>Each sector's actions sit where its ownership lies, and the two ownerships are complementary.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>Electroweak</th>
+<th>Strong</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The gauge side</td>
+<td>$\mathrm{U}(1)$ exact; $\mathrm{SU}(2)$ present but geometric, not internal</td>
+<td>Absent: no $\mathrm{SU}(3)$, no triplet, no octet</td>
+</tr>
+<tr>
+<td>The matter side</td>
+<td>Absent: no chiral representation, so no fermion action</td>
+<td>Present at low energy: the chiral field is a unit quaternion; the soliton is its winding</td>
+</tr>
+<tr>
+<td>The scalar carrier</td>
+<td>Absent as a scalar: the ideal carries spin one-half, so the doublet is an imported column</td>
+<td>Present: the pion's field is the algebra's own group element</td>
+</tr>
+<tr>
+<td>Where the actions land</td>
+<td>The carriers: four vector articles</td>
+<td>The order parameter: four scalar articles</td>
+</tr>
+<tr>
+<td>What is imported</td>
+<td>The hypercharge values, the group, the chiral assignment</td>
+<td>The colour group, the triplet, $N_c=3$, the running</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-line form.</strong> Electroweak can write $\tfrac14F^2$ and cannot write $\bar\psi i\gamma D\psi$; strong can write $\mathrm{Tr}\,\partial_\mu U\partial_\mu U^{\dagger}$ and cannot write $\tfrac14G^2$. Each part's band follows from that sentence, and nothing else is needed.</p>
+<p><strong>Why this is not a filing accident.</strong> A filing accident would be reversible by moving an article. This is not: moving the Higgs article to spin $1$ would make it false, and moving QCD to spin $0$ would make it false. The band is a claim about the object, and the object's carrier is a fact about the algebra.</p>
+<h2 id="why-some-spins-have-an-action-and-others-do-not">Why Some Spins Have an Action and Others Do Not</h2>
+<p><strong>The family, counted by parent.</strong> Sixty articles, and the bulk is four parents read in charts.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Parent</th>
+<th>Articles</th>
+<th>Why it carries a grid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Klein–Gordon</td>
+<td>10</td>
+<td>the scalar is one element; every chart of the element is available</td>
+</tr>
+<tr>
+<td>Dirac</td>
+<td>10</td>
+<td>the spinor is one element; polar, momentum, non-quantum limit, and the abelian coupling all exist</td>
+</tr>
+<tr>
+<td>Vector (Maxwell, Proca, topological mass)</td>
+<td>10</td>
+<td>the vector is the material sector; the abelian coupling is exact</td>
+</tr>
+<tr>
+<td>Schrödinger</td>
+<td>8</td>
+<td>first order in time, so the non-quantum limit is a chart of the same functional</td>
+</tr>
+<tr>
+<td>the eight fluids</td>
+<td>8</td>
+<td>one action, two sets of variables, density and phase kept</td>
+</tr>
+<tr>
+<td>sector actions, plus the non-abelian gauge article</td>
+<td>10</td>
+<td>one article per parent: an assembly has no charts</td>
+</tr>
+<tr>
+<td>second quantisation, the Goldstone action, Rarita–Schwinger, linearised gravity</td>
+<td>4</td>
+<td>four singletons, each for its own reason</td>
+</tr>
+</tbody>
+</table></div>
+<p>Thirty-eight of the sixty are the four parents' charts. That number is the answer to <em>why some spins have many articles</em>: a chart is cheap when the carrier is one element and the parent equation is single.</p>
+<p><strong>Three conditions, and a cell is empty when any one fails.</strong></p>
+<ol>
+<li><strong>The carrier exists in the algebra.</strong> A field equation carried by one element of $\mathbb{B}$, or by the material sector, can be given a functional. Spin $\tfrac32$ cannot: the Rarita–Schwinger action needs a contraction of the vector index with the spinor structure, and no element of the algebra has been shown to do that job. That article therefore <em>names</em> the action and states its three debts, and it is the only article of its kind — no polar, no momentum, no coupled companion, because a grid is built on a functional the family does not have.</li>
+<li><strong>The connection the action needs exists.</strong> The centre's $\mathrm{U}(1)$ is exact, which is why the coupled scalar, the coupled spinor, the coupled vector and the coupled Schrödinger actions all exist, and why quantum electrodynamics closes at the classical level. The algebra's $\mathrm{SU}(2)$ exists as geometry and not as an internal isospin, which is why no weak coupling is written. Colour does not exist at all.</li>
+<li><strong>The band's subject is a field with a functional.</strong> Where the band's articles are about states, measurements or operations, no action is owed. The non-relativistic spin-$\tfrac12$ band holds the Stern–Gerlach, precession, Berry-phase, qubit and channel articles; the spin-$1$ band holds the Bloch ball, the qutrit and the spin-1 condensates. A measurement is not a functional, and the absence of an action there is not a gap.</li>
+</ol>
+<p><strong>A fourth case, which looks like a gap and is not.</strong> The quantum-fields part has bands at spin $\tfrac12$ and spin $1$ and no Lagrangian article in either. The actions are the Dirac and Proca ones, filed in the quantum-theory part where the equations live; the quantum-fields part quantises them. The family files by chart, and quantisation is a chart of an action that already exists elsewhere. One parent, one action, one place.</p>
+<p><strong>The failure modes, tabulated.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Missing</th>
+<th>What is absent</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the carrier</td>
+<td>vector-spinor contraction at spin $\tfrac32$; the colour triplet; the chiral doublet</td>
+<td>Rarita–Schwinger: one article, action named not derived</td>
+</tr>
+<tr>
+<td>the connection</td>
+<td>chiral $\mathrm{SU}(2)_L$ as an internal group; $\mathrm{SU}(3)_c$</td>
+<td>no electroweak fermion action; no derived gluon action</td>
+</tr>
+<tr>
+<td>the field</td>
+<td>the band's subject is a state or a measurement</td>
+<td>twelve spin-$\tfrac12$ electroweak articles, six strong, none an action</td>
+</tr>
+<tr>
+<td>nothing — the action is elsewhere</td>
+<td>the same parent, filed by chart</td>
+<td>quantum-fields bands at $\tfrac12$ and $1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-count-follows-the-parents-not-the-ownership">The Count Follows the Parents, Not the Ownership</h2>
+<p><strong>A band's size is the number of distinct parents in it, not the strength of the framework's grip.</strong> Electroweak spin $0$ holds one parent — the doublet — and gets one article; strong spin $0$ holds four — the chiral field, its low-energy reading, its soliton, and the axion phase — and gets four. One band is thin because the physics there is a single object, and the other is thick because the physics there is a programme. The strength of the grip explains the <em>presence</em> of an action, not the <em>count</em>: on that measure the two scalar bands are not equal, since the strong field is native and the doublet is not.</p>
+<p><strong>So the two questions have different answers, and they must not be confused.</strong> <em>Why spin $1$ for electroweak and spin $0$ for strong</em> is answered by ownership and exclusion. <em>Why one article here and four there</em> is answered by counting parents. A reader who takes the band's population as a measure of the framework's strength will get both answers wrong in the same direction.</p>
+<p><strong>The eight fluids are the third case, and they belong to neither.</strong> They write one action and then keep only density and phase, so the spin label records the parent's spin and not the fluid's degrees of freedom. The spin-one fluid is a vector parent in a scalar chart; its own article states that the massless limit's fluid reading fails, because the field becomes pure gauge and the split $A=ru$ stops meaning anything.</p>
+<h2 id="what-would-falsify-this">What Would Falsify This</h2>
+<p><strong>A derived colour triplet would empty the strong part's scalar weight of its meaning.</strong> If a triplet representation appeared, the gluon's action would move from transcription to derivation, a quark action would become writable, and the strong band would shift its weight to spin $1$ and $\tfrac12$. Nothing in the corpus suggests it will: the two proofs of the ceiling are independent, and the module-parity one is a theorem about modules, not about groups.</p>
+<p><strong>A chiral fermion action inside the algebra's own $\mathrm{SU}(2)$ would fill the missing cell.</strong> It would need the internal reading of that factor, which the corpus explicitly rejects — the factor is the rotation group of space, and reading it as weak isospin fails. An article that produced a chiral action on a geometric group would have to explain why the mass bilinear is no longer odd.</p>
+<p><strong>An electroweak action in polar or momentum variables would show that an assembly has charts.</strong> None exists. If one were written without breaking the assembly, the claim that sector parents carry one article each would need restating.</p>
+<h2 id="how-to-read-the-menu">How to Read the Menu</h2>
+<p><strong>The bands are a thermometer of ownership, not a taxonomy of the forces.</strong> "Electroweak sits at spin $1$" does not say the electroweak theory is a spin-$1$ theory. It says the actions the framework can write for that sector are vector actions, plus one scalar for the vacuum. The sector itself uses three spins: $1$ for the carriers, $\tfrac12$ for the chiral matter, $0$ for the field that gives the carriers their mass.</p>
+<p><strong>A reader who wants a sector's spin content reads the note, not the band.</strong> The internal note on the strong interaction puts the three spins in one table — carriers, matter, Goldstones — and the note on the electroweak interaction does the same. The menu's bands then split those three spins across articles, and the split is uneven in the two sectors for the reason this note has given.</p>
+<p><strong>The imports are exactly one article each, and that is the signature of an import.</strong> The electroweak part borrows its scalar: one article, on a column. The strong part borrows its vector: one article, transcribed. Everything else in the two parts sits on a carrier the algebra supplies. A reader can therefore read the number of articles in a band as a two-way test — four means owned, one means borrowed — and the test has no exception in the two sectors.</p>
+<p><strong>One sentence to remember, if only one is kept.</strong> Each sector's actions cluster where its ownership lies, and the ownerships are opposite: the vectors of the electroweak sector, the scalars of the strong one, with one borrowed article standing in for the half that is missing on each side.</p>
+<h2 id="where-the-evidence-sits">Where the Evidence Sits</h2>
+<ul>
+<li><code>physics.md</code>, <em>Biquaternion Particle Physics</em> — the three sections, their bands, and every article's place.</li>
+<li><em>The Lagrangian and the Electroweak Theory</em> — the assembly, four Gauss constraints, both phases.</li>
+<li><em>The Lagrangian and the W and Z Bosons</em> — the mass as a coupling times a vacuum value.</li>
+<li><em>The Lagrangian and the Weak Interaction</em> — the vector eliminated, the fermion as a current only.</li>
+<li><em>The Lagrangian and the Stueckelberg Mechanism</em> — mass without breaking.</li>
+<li><em>The Lagrangian and the Higgs Field</em> — the scalar's own action and the potential's sign.</li>
+<li><em>The Lagrangian and the Nonlinear Sigma Model</em> — the chiral field as a unit real quaternion.</li>
+<li><em>The Lagrangian and the Skyrme Model</em>, <em>The Lagrangian and the Axion</em>, <em>The Chiral Theory and the Lagrangian</em> — the other three scalars.</li>
+<li><em>The Lagrangian and Quantum Chromodynamics</em> — the transcription, with colour flagged as input.</li>
+<li><em>The Lagrangian and the Rarita–Schwinger Equation</em> — the action named and not derived, and the only article of its kind.</li>
+<li><em>The Sector Hub: What the Lagrangian Family Reaches in Each Sector</em> — the same boundary stated sector by sector; its "no action" for the strong sector is about the gluon, and the chiral scalars are the other half of the picture.</li>
+<li><em>Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall</em>, and <em>Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall</em> — the two exclusions in their own words.</li>
+<li><code>articles_internal/internal-note-on-the-electroweak-interaction-in-the-corpus.md</code>, §<em>Three Spins in One Force</em> — the three-spin reading of one sector.</li>
+<li><code>articles_internal/internal-note-on-the-strong-interaction-in-the-corpus.md</code>, §<em>Three Spins in One Part</em> — the same for the other.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The question. The corpus writes in the electroweak section, in the spin articles and in the operator articles, and its own naming rule says that the name…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-meaning-of-math0-in-the-endomorphisms-of-the-biquaternion-algebra"><strong>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The corpus writes $\mathrm{SU}(2)$ in the electroweak section, in the spin articles and in the operator articles, and its own naming rule says that the name stays and that the sentence after the name says what the group is in the algebra. <em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em> gave that answer for the octet. This note gives the answer for the doublet, and the answer is of the opposite kind: $\mathrm{SU}(3)$ lives in the endomorphisms and not in the algebra, while $\mathrm{SU}(2)$ is the algebra's own group of rotors and enters the endomorphisms three times.</p>
+<p><strong>The answer in one line.</strong> One group, three operator addresses, and only the third inside the octet:</p>
+<p>$$
+\boxed{\;
+L(\mathfrak{k})=\mathrm{span}_{\mathbb{R}}\{L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}\},\qquad
+R(\mathfrak{k})=\mathrm{span}_{\mathbb{R}}\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\},\qquad
+\mathrm{ad}(\mathfrak{k})=\mathrm{span}_{\mathbb{R}}\{L_{\vec e_k}-R_{\vec e_k}\}\;}
+$$</p>
+<p>Their lengths, their sum, and their place relative to the octet:</p>
+<p>$$
+\boxed{\;
+\ell=1,\quad\ell=1,\quad\ell=2;\qquad
+L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4),\qquad
+\mathrm{ad}(\mathfrak{k})=\mathfrak{su}(3)\cap\mathfrak{so}(4)\;}
+$$</p>
+<p>with $\mathfrak{k}=\mathrm{span}_{\mathbb{R}}(\vec e_x,\vec e_y,\vec e_z)$ the vector part and $\ell$ the length of <em>Operators Acting on Two Sides</em>. The three addresses are the left multiplication, the right multiplication and the derivation. The first two are transverse to the octet; the third is the octet's rotation subalgebra, the $\mathfrak{so}(3)$ that the $\mathrm{SU}(3)$ note already isolated as its $\mathfrak{k}$.</p>
+<p><strong>What the word "rotor" adds.</strong> The group is the group of the rotor: an element is $\tilde u=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec u$ with $\vec u$ a unit real axis, and it acts on the vector part by the sandwich, turning it through the whole angle $\varphi$. The three addresses are three ways of saying "the rotor acts": on the left, on the right, and on both sides at once. The name $\mathrm{SU}(2)$ is the name of the group; the element is the rotor; the address says which operator.</p>
+<p><strong>Why the statement is needed.</strong> Three sentences of the corpus point at this group and none of them assembles it. The naming rule of <code>SU2-migration</code> fixes the word and refuses the matrix display. <em>The Spin Group via $4\times4$ Real Matrices</em> computes the left-regular display and warns that the group is $S^3$ and not a set of matrices. <em>The Endomorphisms of the Biquaternion Algebra</em> proves that the derivations are inner and of complex dimension three. This note joins the three: the algebra carries the group, the left and right regular families carry it into $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, and the derivations are its diagonal.</p>
+<p><strong>What is claimed, and what is not.</strong> Claimed: the three copies exist, their dimensions are three, their lengths are $1,1,2$, their bracket constants are $2\varepsilon_{abc}$ with the sign reversed on the right, and every statement below is verified numerically. Not claimed: that weak isospin is derived. The group is the group of the spatial rotations; it does not commute with the boosts, and §<em>The Boundary</em> states the consequence.</p>
+<h2 id="the-carrier-the-words-and-the-two-conditions">The Carrier, the Words, and the Two Conditions</h2>
+<p><strong>The carrier and the four units.</strong> $\mathbb{B}$ is four complex dimensions, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and</p>
+<p>$$
+\vec e_x\vec e_y=\vec e_z,\qquad \vec e_y\vec e_z=\vec e_x,\qquad \vec e_z\vec e_x=\vec e_y,\qquad \vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t .
+$$</p>
+<p>The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$, and $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu Q_{1\mu}Q_{2\mu}$.</p>
+<p><strong>The words and the length.</strong> The sixteen composites $e_\mu[\,]e_\nu=L_{e_\mu}R_{e_\nu}$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, an operator has a coefficient array $c(M)$ in that basis, and its <strong>length</strong> is $\ell(M)=\operatorname{rank}c(M)$, with $\ell\le4$ by the Conway theorem. The three addresses below differ first of all in the length of their generators, and that is why the length is introduced before the group.</p>
+<p><strong>The dagger and the trace.</strong> The Hermitian form is $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})=\sum_\mu X_\mu\overline{Y_\mu}$, of Gram $\mathrm{I}_4$, with ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ the element-level Hermitian conjugation. In the coefficient basis the adjoint of an operator is the conjugate transpose, and</p>
+<p>$$
+\operatorname{tr}\bigl(L_aR_b\bigr)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b),\qquad \operatorname{tr}M=4\,c_{tt}(M),\qquad \det L_a=\langle a\rangle_{\natural}^{2}.
+$$</p>
+<p><strong>Two conditions, at two levels.</strong> The same pair of conditions defines the group at the element level and the copy at the operator level, and the note uses both:</p>
+<p>$$
+\mathfrak{su}(2)=\{a\in\mathbb{B}:\ a^{*}=-a,\ \mathrm{Sc}(a)=0\}=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}
+$$</p>
+<p>$$
+L(\mathfrak{k})=\{L_a:\ a\in\mathfrak{su}(2)\}\subset\mathfrak{su}(4).
+$$</p>
+<p>The first display is a statement about $2\times2$ matrices; the second about $4\times4$ ones. They are the same two conditions, and §<em>The Left Copy: One Word, Length One</em> shows why the second adds nothing.</p>
+<h2 id="the-rotor-at-the-element-level">The Rotor at the Element Level</h2>
+<p><strong>The Lie algebra.</strong> With $\mathfrak{k}=\mathrm{span}_{\mathbb{R}}(\vec e_x,\vec e_y,\vec e_z)$, the brackets are twice the structure constants,</p>
+<p>$$
+[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c,\qquad T_a=\tfrac12\vec e_a,\qquad [T_a,T_b]=\varepsilon_{abc}T_c ,
+$$</p>
+<p>and the Killing form is fixed by $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$. The factor two is not a normalisation: it is the value of $\vec e_x\vec e_y-\vec e_y\vec e_x=2\vec e_z$, the same factor two that appears in every bracket of the corpus, from the defining display to the regular one.</p>
+<p><strong>The two conditions bite separately.</strong> Anti-Hermiticity alone gives the compact real form of the whole algebra,</p>
+<p>$$
+\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{k},
+$$</p>
+<p>of real dimension four, and tracelessness removes exactly the central direction $ie_t$. The chain of dimensions is $8\to4\to3$: the invertible elements, real dimension eight; the unitary ones, four; the unitary ones of norm one, three. The $\mathrm{SU}(3)$ note runs the same chain at the operator level as $32\to18\to9\to8$; here it runs at the element level, and the missing rung is the determinant.</p>
+<p><strong>The group.</strong> The unitary slice is the set $u^{*}u=e_t$, and on it the quaternion norm is a homomorphism to the circle, because there $\langle u\rangle_{\natural}=\det\mathsf M_2(u)$ and a unitary matrix has determinant of modulus one. Hence</p>
+<p>$$
+\mathrm{U}(2)=\{u:u^{*}u=e_t\},\qquad
+\mathrm{SU}(2)=\{u:u^{*}u=e_t,\ \langle u\rangle_{\natural}=e_t\}=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=S^3,
+$$</p>
+<p>by the norm map with kernel $\mathrm{SU}(2)$: real dimension three. The second description is the corpus's, the unit real quaternions; the first is the one the operator level repeats. They are the same group, and the real slice and the determinant condition agree coefficient by coefficient.</p>
+<p><strong>The rotor, and half the angle.</strong> For a unit real axis $\vec u$ and a real angle $\varphi$ put $\tilde u=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec u$. Three statements, and they must not be mixed:</p>
+<ul>
+<li>the sandwich $\mathrm{Sd}_{\tilde u}(\vec v)=\tilde u\vec v\tilde u^{*}$ turns the vector part through the angle $\varphi$ about $\vec u$, and it is the rotation, verified against Rodrigues;</li>
+<li>the left multiplication $L_{\tilde u}$ has the two eigenvalues $e^{-i\varphi/2}$ and $e^{+i\varphi/2}$, each twice, so its blocks carry half the angle;</li>
+<li>neither statement is a statement about the other map, and §<em>What the Left Copy Does</em> says where each one lives.</li>
+</ul>
+<p><strong>One sentence the level forbids.</strong> "The rotor turns the vector part by half its angle" is false: the vector part moves by the whole $\varphi$ under the sandwich, and $L_{\tilde u}$ does not even preserve it. The half angle is real, and it is paid for by the carrier on which the multiplication is read.</p>
+<h2 id="three-addresses-one-group">Three Addresses, One Group</h2>
+<p><strong>The table.</strong> Each row is a real three-dimensional subspace of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, closed under the bracket, isomorphic to $\mathfrak{su}(2)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>address</th>
+<th>generator</th>
+<th>words</th>
+<th>$\ell$</th>
+<th>bracket of two generators</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>$L_{\vec e_a}$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$[L_a,L_b]=L_{[a,b]}$</td>
+<td>the regular representation, the gauge action</td>
+</tr>
+<tr>
+<td>right</td>
+<td>$R_{\vec e_a}$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$[R_a,R_b]=-R_{[a,b]}$</td>
+<td>the anti-representation, the other factor</td>
+</tr>
+<tr>
+<td>adjoint</td>
+<td>$L_{\vec e_a}-R_{\vec e_a}$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$[\mathrm{ad}_a,\mathrm{ad}_b]=\mathrm{ad}_{[a,b]}$</td>
+<td>the inner derivations, the rotation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the table shows at a glance.</strong> The two one-sided copies are made of single words and the two-sided copy is a difference of two. The bracket of the right copy carries the opposite sign, and this one sign organises the whole spin bookkeeping of the corpus. And the adjoint copy lies in the sum of the other two while being of a different kind: it is a graph, not a third factor.</p>
+<p><strong>The two-sided sector.</strong> The span of the six one-sided generators is six-dimensional, closed under the bracket, and equal to the real antisymmetric matrices of the coefficient basis,</p>
+<p>$$
+L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4),\qquad \dim_{\mathbb{R}}=3+3=6 ,
+$$</p>
+<p>because the two copies commute and each is three-dimensional. The adjoint copy sits inside it as the graph of the linear map $L_a\mapsto-R_a$, of dimension three. The other graph, the plus diagonal spanned by $L_a+R_a$, does not close: its bracket is the minus graph,</p>
+<p>$$
+[L_a+R_a,\,L_b+R_b]=\mathrm{ad}_{[a,b]},
+$$</p>
+<p>verified. So the minus sign in the diagonal is not a convention of notation: the plus graph has no bracket closure, and the minus graph has.</p>
+<p><strong>Where the octet meets the six.</strong> The $\mathrm{SU}(3)$ note's corner consists of the anti-Hermitian traceless operators that kill $e_t$ and preserve $B_V$. Every $L_a$ sends $e_t$ to $a$ and every $R_b$ sends it to $b$, so the two one-sided copies miss the corner entirely:</p>
+<p>$$
+L(\mathfrak{k})\cap\mathfrak{su}(3)=0,\qquad R(\mathfrak{k})\cap\mathfrak{su}(3)=0 .
+$$</p>
+<p>The adjoint copy is exactly the intersection of the corner with the real antisymmetric six,</p>
+<p>$$
+\mathrm{ad}(\mathfrak{k})=\mathfrak{su}(3)\cap\mathfrak{so}(4),
+$$</p>
+<p>verified: the elements of the octet that are also real antisymmetric are exactly the corner's three real antisymmetric blocks, and those three are $L_{\vec e_k}-R_{\vec e_k}$, cyclically. This is the precise sense in which $\mathrm{SU}(2)$ is in the algebra and $\mathrm{SU}(3)$ is not: the octet's rotation subgroup is the only part of it that the multiplication itself supplies.</p>
+<h2 id="the-left-copy-one-word-length-one">The Left Copy: One Word, Length One</h2>
+<p><strong>The length.</strong> $L_a=a[\,]e_t$ has the coefficient array $a\,e_t^{\mathsf T}$, of rank one for every $a\neq0$. Hence $\ell(L_a)=1$ across the whole copy, invertible or not, and the eight-dimensional algebra of left multiplications is made of shortest words from end to end.</p>
+<p><strong>The two conditions, one rung up.</strong> The adjoint of a left multiplication is a left multiplication, $(L_a)^{\dagger}=L_{a^{*}}$, so</p>
+<p>$$
+L_a\ \text{anti-Hermitian}\iff a^{*}=-a,\qquad \operatorname{tr}L_a=4\,\mathrm{Sc}(a)=0\iff \mathrm{Sc}(a)=0 ,
+$$</p>
+<p>and the two conditions cut out exactly $L(\mathfrak{k})$. This is the point worth pausing on: the group's defining conditions are the same at both levels, and the operator level adds nothing that the element level did not already fix. For $\mathrm{SU}(3)$ the two levels are different statements, since there the corner is a subspace of $\mathfrak{su}(4)$ that no element of the algebra supplies.</p>
+<p><strong>The real form.</strong> For real coefficients $r_k$, $a=\sum_k r_k\vec e_k$, the matrix $L_a$ is real and antisymmetric, so the copy is not only anti-Hermitian but real orthogonal: $L(\mathfrak{k})\subset\mathfrak{so}(4)$, and at the group level $L(\mathrm{SU}(2))$ is a three-dimensional subgroup of $\mathrm{SO}(4)$, the left-regular display of <em>The Spin Group via $4\times4$ Real Matrices</em>.</p>
+<p><strong>The floor of two, and why it does not apply.</strong> The $\mathrm{SU}(3)$ note proves that no single word lies in $\mathfrak{su}(3)$, because a single word that kills the unit has rank at most one and the corner has no rank-one element. The hypothesis of that theorem is the condition $Xe_t=0$, and $L_a$ violates it at the first test, $L_a(e_t)=a$. So the floor of two is a floor on the corner of $\mathfrak{su}(4)$ and not on $\mathfrak{su}(4)$, and the two copies that escape the corner pay nothing.</p>
+<p><strong>What the copy commutes with.</strong> Every left multiplication commutes with every right multiplication, $[L_a,R_b]=0$, and the double centraliser theorem of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em> says that the commutant of one family is the other. Two consequences, and both are physical. The left copy is the algebra acting on itself, so it acts on every $\mathbb{B}$-module by multiplication, with no obstruction and no length to pay. And it is not $\mathbb{B}$-linear in the sense of the corner: the $\mathbb{B}$-linear maps of $\mathbb{B}$ are the right multiplications, and a left multiplication is one of them only at a central scalar, so $\mathfrak{su}(2)_L\cap R(\mathbb{B})=0$. The $\mathrm{SU}(3)$ note's boundary paragraph and this one are the same statement seen from two sides.</p>
+<h2 id="what-the-left-copy-does">What the Left Copy Does</h2>
+<p><strong>The spectrum.</strong> For $\tilde u=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec u$ the left multiplication is a real orthogonal matrix of determinant one with spectrum $\{e^{-i\varphi/2},e^{+i\varphi/2}\}$, each eigenvalue twice. The determinant is one at every rotor, $L(\mathrm{SU}(2))\subset\mathrm{SU}(4)$ as well as inside $\mathrm{SO}(4)$, and the two inclusions are the same statement read over $\mathbb{C}$ and over $\mathbb{R}$.</p>
+<p><strong>The half angle, on the ideal.</strong> Let $\Pi_+(\vec u)=\tfrac12(e_t+i\vec u)$ be the Peirce idempotent of the axis and $S_+(\vec u)=\mathbb{B}\Pi_+(\vec u)$ the minimal left ideal it generates, of complex dimension two. In the basis $(\Pi_+,\vec e_x\Pi_+)$ — the axis is $\vec e_z$ here — the left multiplication is diagonal,</p>
+<p>$$
+L_{\tilde u}\big|_{S_+}=\operatorname{diag}\bigl(e^{-i\varphi/2},\,e^{+i\varphi/2}\bigr)\in\mathrm{SU}(2),
+$$</p>
+<p>of determinant one and of unit columns. This is the carrier that the electroweak section calls the doublet, and the phase is the whole content of the half angle.</p>
+<p><strong>What the left copy does not do.</strong> It does not preserve the vector part: $L_{\vec e_z}(e_t)=\vec e_z$, and at the axis itself $L_{\tilde u}(\vec u)=\cos\tfrac{\varphi}{2}\vec u-\sin\tfrac{\varphi}{2}e_t$, a Hermitian component that no rotation produces. So the left copy carries the spinor and not the triplet, and the sentences that mix the two maps are the error that <code>SU2-migration</code> was written to remove.</p>
+<p><strong>The carrier, not the space.</strong> The left copy is one operator family and it acts on many carriers: it does not fix the line $\mathbb{R}e_t$, since $L_{\tilde u}(e_t)=\tilde u$; on $S_+(\vec u)$, one per axis, it is the half-angle phase; on the algebra as a whole it is irreducible, by the left-ideal argument of <em>The Spin Group via $4\times4$ Real Matrices</em>. A statement about the copy must therefore name the carrier, and the corpus does so at every use.</p>
+<h2 id="the-right-copy-is-an-anti-homomorphism">The Right Copy Is an Anti-Homomorphism</h2>
+<p><strong>The law.</strong> Right multiplication reverses the order, $R_aR_b=R_{ba}$, and therefore</p>
+<p>$$
+[R_a,R_b]=-R_{[a,b]},
+$$</p>
+<p>so $\mathfrak{k}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, $a\mapsto R_a$, is a Lie algebra <strong>anti</strong>-homomorphism while $a\mapsto L_a$ is a homomorphism. The two copies commute and each is a copy of the same three-dimensional algebra, so the six is a direct sum of two ideals and the sign is the only thing that distinguishes them.</p>
+<p><strong>Why the corpus writes $J-J'$.</strong> With $J_k=\tfrac12L_{\vec e_k}$ and $J'_k=\tfrac12R_{\vec e_k}$, the Casimirs are $\sum_kJ_k^{2}=\sum_kJ_k^{\prime 2}=-\tfrac34\mathrm{I}_4$, each factor spin $\tfrac12$, and the diagonal combination that generates the rotation is</p>
+<p>$$
+J^{\mathrm{tot}}_k=J_k-J'_k,\qquad [J^{\mathrm{tot}}_a,J^{\mathrm{tot}}_b]=\varepsilon_{abc}J^{\mathrm{tot}}_c ,
+$$</p>
+<p>verified, with the $\tfrac12$ of $J$ absorbed: in the $\vec e_a$ basis the same display reads $[J^{\mathrm{tot}}_a,J^{\mathrm{tot}}_b]=\tfrac12J^{\mathrm{tot}}_{[a,b]}$, since $[a,b]=2\vec e_c$. The minus sign is not a convention: it is the anti-homomorphism law of the right copy, and with a plus the diagonal would not close. The same fact appears in the $\mathrm{SU}(3)$ note as $\mathrm{ad}_{\vec e_k}=2J^{\mathrm{tot}}_k$.</p>
+<p><strong>The six, geometrically.</strong> Read as real matrices, the left triple is the <strong>self-dual</strong> triple of $\Lambda^2\mathbb{R}^4$ and the right triple is the <strong>anti-self-dual</strong> one, verified by the Hodge star, $\star F=F$ on the left and $\star F=-F$ on the right. That is the structural reason the two copies commute and the reason their sum is $\mathfrak{so}(4)$: $\mathfrak{so}(4)=\Lambda^2_+\oplus\Lambda^2_-$, and the algebra's two regular families are the two halves. At the group level the pair $(\tilde q,\tilde p)\mapsto L_{\tilde q}R_{\tilde p}$ is onto $\mathrm{SO}(4)$ with kernel $\{\pm(\mathrm{I}_4,\mathrm{I}_4)\}$, the classical double cover of <em>From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides</em>.</p>
+<p><strong>One warning.</strong> The right copy is not the left copy of another algebra chosen by hand: it is the left regular representation of $\mathbb{B}_{\mathrm{opp}}$, and the quaternion conjugation repairs the order, $a\mapsto R_{a^{\natural}}$ being a representation. The repair costs one more map and hides the reversal, which is why <em>Operators Acting on One Side</em> keeps the anti-representation.</p>
+<h2 id="the-adjoint-copy-the-rotor-proper">The Adjoint Copy: The Rotor Proper</h2>
+<p><strong>The operator.</strong> Write it in the four ways the corpus makes available:</p>
+<p>$$
+\mathrm{ad}_{\vec e_x}=L_{\vec e_x}-R_{\vec e_x}=\vec e_x[\,]e_t-e_t[\,]\vec e_x=2\,J^{\mathrm{tot}}_x ,
+$$</p>
+<p>and note that it is a difference of two words, hence of length two, while neither summand is short of anything: the length of the difference is the whole point.</p>
+<p><strong>Reading one: a derivation.</strong> <em>The Endomorphisms of the Biquaternion Algebra</em> proves that every derivation is inner, $\delta=\mathrm{ad}_{\tilde Q}$, with kernel the centre, and that $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$ of complex dimension three. Restricted to real coefficients the same display gives the compact three,</p>
+<p>$$
+\mathrm{Der}_{\mathbb{C}}(\mathbb{B})=\mathrm{ad}(\mathbb{B}),\qquad \mathrm{ad}(\mathfrak{k})=\mathrm{span}_{\mathbb{R}}\{\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y},\mathrm{ad}_{\vec e_z}\}\subset\mathfrak{su}(3),
+$$</p>
+<p>and the three generators of the third row of the table are <strong>all</strong> the derivations there are. This is the sense in which the rotor copy is the algebra's own symmetry algebra.</p>
+<p><strong>Reading two: the derivative of the rotation.</strong> Differentiating the group along the rotor sphere,</p>
+<p>$$
+\frac{d}{dt}\Big|_{0}\Bigl(L_{e^{t\vec e_x}}R_{e^{-t\vec e_x}}\Bigr)=L_{\vec e_x}R_{e_t}-L_{e_t}R_{\vec e_x}=\mathrm{ad}_{\vec e_x},
+$$</p>
+<p>so the adjoint copy is the tangent space of the conjugation, and the exponentiation returns the group element,</p>
+<p>$$
+\exp\bigl(\theta\,\mathrm{ad}_{\vec e_x}/2\bigr)\big|_{B_V}=\text{rotation by }\theta\text{ about }\vec e_x ,
+$$</p>
+<p>verified at the three axes and three angles, with the exponential computed from its series.</p>
+<p><strong>Reading three: the spectrum.</strong> On the vector part the generator is twice the cross product with the axis,</p>
+<p>$$
+\mathrm{ad}_{\vec u}\big|_{B_V}=2\,(\vec u\times),\qquad \operatorname{spec}=\{0,\,2i,\,-2i\},
+$$</p>
+<p>and the Hermitian representative is $i\,\mathrm{ad}_{\vec u}/2$, of spectrum $\{0,1,-1\}$: spin one, $2s+1=3$, the display of <em>The Spin-One Anti-Hermitian Subspace</em>. The factor two between this spectrum and the half-integer spectrum of the left copy is the factor that <em>Why the Two Spectra Differ by a Factor of Two</em> explains: the commutator consumes the axis twice.</p>
+<p><strong>Reading four: the group inside the octet.</strong> For a rotor the finite operator $\mathrm{Ad}_{\tilde u}=L_{\tilde u}R_{\tilde u^{-1}}$ is unitary, of determinant one, fixes $e_t$, preserves $B_V$, and acts on $B_V$ with determinant one; hence $\mathrm{Ad}(\mathrm{SU}(2))\subset\mathrm{SU}(3)$, with kernel $\{\pm e_t\}$ and image $\mathrm{SO}(3)$,</p>
+<p>$$
+\mathrm{SU}(2)/\{\pm e_t\}\cong\mathrm{SO}(3)=\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cap\mathrm{SU}(3).
+$$</p>
+<p>This is the copy that the $\mathrm{SU}(3)$ note met as its $\mathfrak{k}$, and the twenty-four unit quaternions it verifies are the binary tetrahedral group, the finite subgroup of the rotor sphere.</p>
+<h2 id="length-is-not-a-lie-functor">Length Is Not a Lie Functor</h2>
+<p><strong>The finite element is shorter than its generator.</strong> The rotor acts by the two-sided product, and at a unit element that product is a <strong>single</strong> word,</p>
+<p>$$
+\mathrm{Ad}_{\tilde u}=L_{\tilde u}R_{\tilde u^{-1}}=\tilde u\,[\,]\,\tilde u^{-1},
+$$</p>
+<p>whose coefficient array is the outer product $\tilde u\,(\tilde u^{-1})^{\mathsf T}$, of rank one. Hence $\ell(\mathrm{Ad}_{\tilde u})=1$ for every rotor, while $\ell(\mathrm{ad}_{\vec u})=2$ for its generator. Differentiation raises the length and exponentiation lowers it, so the length is not a property of the group and not a Lie functor.</p>
+<p><strong>The consequence for the octet.</strong> The $\mathrm{SU}(3)$ note's floor of two is a floor on the <em>generators</em> of the octet and not on the group, and its own generators are the ones that pay. This note is the control case: the same group, three addresses, lengths $1,1,2$, and a group element of length one at every point of the sphere.</p>
+<p><strong>The ceiling is not reached in the six.</strong> Every element of $L(\mathfrak{k})\oplus R(\mathfrak{k})$ has length at most two, because its coefficient array is supported on the words $e_k[\,]e_t$ and $e_t[\,]e_k$, a cross of two lines, of rank at most two. Verified on one hundred random combinations: all of length two. The Conway ceiling four needs the full sixteen-dimensional ambient space, as the $\mathrm{SU}(3)$ note records.</p>
+<p><strong>What the length measures, then.</strong> Not the size of an operator and not the rank of its matrix, but the number of independent words that the multiplication needs to write it. A group can be written in one word and its algebra in two, and the difference is exactly the difference between a rotation and a cross product.</p>
+<h2 id="no-axis-is-preferred">No Axis Is Preferred</h2>
+<p><strong>The presentation and the structure.</strong> The table names $\vec e_x$ in the derivations and $\vec e_z$ in the phase, and neither is preferred. The rotor of order three,</p>
+<p>$$
+\tilde u=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z),\qquad P=\mathrm{Ad}_{\tilde u},\qquad P^{3}=\mathrm{I}_4,
+$$</p>
+<p>permutes the three axes and the three generators cyclically, $P\,\mathrm{ad}_{\vec e_x}P^{-1}=\mathrm{ad}_{\vec e_y}$, verified, so the automorphism group acts on the triple as the full symmetric group $S_3$. No axis and no Cartan is invariant; the only invariant objects are the unit line and the vector part.</p>
+<p><strong>What is canonical, and what is chosen.</strong> The line $\mathbb{C}e_t$ is canonical because the unit is; the three-plane $B_V$ is canonical because the Hermitian form is; the three axes inside it are a basis, and the group moves them. A statement about this group must be written either in the split $1+3$ or in $L$ and $R$ with no axis named, and the table of §<em>Three Addresses, One Group</em> is the axis-free form.</p>
+<p><strong>What the matrix display costs.</strong> The $2\times2$ complex display makes one generator diagonal, and a diagonal generator is a chosen complex structure on $\mathbb{H}$, that is a point of $S^2$. The corpus refuses the Pauli array for exactly this reason, and states it once: the display is "misleading in practice, because it makes the display look like the object", and its worst reading is "the belief that the group has a preferred axis, which it does not". The $4\times4$ left-regular display has real entries, no diagonal generator and the same multiplication, and it is the display this note uses.</p>
+<p><strong>Three of the nine sentences the corpus forbids.</strong> "The spin group is $\mathrm{SU}(2)$", "$\mathrm{SU}(2)=S^3$", and "the left action rotates the vector part by half the angle". The first two confuse the group with its display; the third confuses two maps and two carriers. The naming rule keeps the name and states the identification once, and this note keeps it in the same way.</p>
+<h2 id="the-group-and-its-family">The Group and Its Family</h2>
+<p><strong>One copy, not a pencil of copies.</strong> Conjugating the copy by an operator moves it to the copy at another element, $L_a\,L(\mathfrak{k})\,L_a^{-1}=L(a\mathfrak{k}a^{-1})$. For a real invertible $a$ this is the inner automorphism of the quaternion algebra and the copy is fixed, $a\vec e_y a^{-1}=\vec e_z$ for $a=e_t+\vec e_x$; for a complex invertible it is not, $a\vec e_z a^{-1}$ has imaginary coefficients at $a=e_t+\vec e_x+i\vec e_y$, verified. So the copy is canonical once the real form is fixed, and it moves when the form moves. There is here no $\mathbb{CP}^3$ family as for the octet, and the reason is that the copy is the algebra's own, not a corner of the ambient space.</p>
+<p><strong>The family that does exist is the carriers.</strong> One minimal left ideal $S_+(\vec u)$ per axis, infinitely many of them, none singled out by the algebra. That is the sense in which the electroweak section's "doublet" is a family and not an object, and the sense in which "there is one doublet" silently chooses an axis.</p>
+<p><strong>Which involution decides which real form.</strong> The compactness of the copy comes entirely from the dagger. With the dagger the three real directions are anti-Hermitian and the copy is $\mathfrak{su}(2)$, compact, with Killing form negative definite on the three. With the natural conjugate alone the same complex span is</p>
+<p>$$
+\{a:\ a^{\natural}=-a\}=\mathbb{C}\vec e_x\oplus\mathbb{C}\vec e_y\oplus\mathbb{C}\vec e_z\cong\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C}),
+$$</p>
+<p>of complex dimension three and non-compact, the complexified rotor algebra. The two are different real forms of one complex algebra, and the choice between them is a choice of involution, exactly as the $\mathrm{SU}(3)$ note's choice between $\mathfrak{su}(3)$ and $\mathfrak{su}(2,1)$ was a choice of form on the carrier.</p>
+<p><strong>The quotient.</strong> $\mathrm{U}(2)/\mathrm{SU}(2)\cong S^1$ by the norm, and the circle of the norm meets the rotor sphere in $\{\pm e_t\}$, so the group of the algebra's unitary elements is a circle glued to the sphere along the sign. The sign is not a detail: it is the kernel of $\mathrm{Ad}$, and the reason a single rotor needs the double cover while a rotation does not.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>What the address buys.</strong> An exact operator-level answer for the group that the electroweak section names, the three addresses and their lengths, the sign of the right bracket and the reason for the minus in $J-J'$, the identification of the adjoint copy with the derivations and with the octet's rotation subgroup, and the reading of the half angle and the full angle on their own carriers.</p>
+<p><strong>What it does not buy.</strong> The group is the group of the spatial rotations, and it does not commute with the boosts,</p>
+<p>$$
+[\vec e_x,\,i\vec e_y]=2i\vec e_z\neq0 ,
+$$</p>
+<p>so it is geometric and not internal. Weak isospin must commute with the Lorentz group; this group cannot. No relabelling, no enlarged carrier inside $\mathbb{B}$ and no choice of module repairs that, because the generators are the rotation generators themselves. The corpus's ledger stands: the arena is derived, the dynamics is imported, and neither the derivation of the arena nor the import of the dynamics turns the rotation group into an internal symmetry.</p>
+<p><strong>The difference with the octet, in one sentence.</strong> $\mathrm{SU}(2)$ is already in the algebra, at length one, three times over; $\mathrm{SU}(3)$ is only in the endomorphisms, at length two, and never $\mathbb{B}$-linear. That is why the corpus reaches the first without paying and cannot reach the second at all.</p>
+<h2 id="verification">Verification</h2>
+<p>All statements below were checked numerically on the sixteen Conway words in the coefficient basis, with the frame products $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$, real unit quaternions drawn from a fixed seed, and the dagger taken as the conjugate transpose of the coefficient matrix.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(2)=\{a:a^{*}=-a,\ \mathrm{Sc}(a)=0\}$ and $\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{k}$</td>
+<td>dimensions $3$ and $4$, one hundred draws</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)=\mathrm{span}_{\mathbb{R}}\{\vec e_k\}$ is closed under the bracket, $[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ and $[T_a,T_b]=\varepsilon_{abc}T_c$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$(L_a)^{\dagger}=L_{a^{*}}$, and $L_a$ anti-Hermitian $\iff a^{*}=-a$</td>
+<td>$0$, one hundred draws</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}L_a=4\,\mathrm{Sc}(a)$ and $\det L_a=\langle a\rangle_{\natural}^{2}$</td>
+<td>$0$ and $<10^{-13}$, one hundred draws</td>
+</tr>
+<tr>
+<td>the three copies have real dimension $3$ each</td>
+<td>rank $3$, $3$, $3$</td>
+</tr>
+<tr>
+<td>$\ell(L_a)=\ell(R_b)=1$, $\ell(\mathrm{ad}_a)=2$</td>
+<td>$1,1,2$</td>
+</tr>
+<tr>
+<td>$\ell$ of one hundred random elements of $L(\mathfrak{k})\oplus R(\mathfrak{k})$</td>
+<td>$100$ of $100$ at length $2$</td>
+</tr>
+<tr>
+<td>$\ell(\mathrm{Ad}_{\tilde u})=1$ for one hundred rotors</td>
+<td>$100$ of $100$ at length $1$</td>
+</tr>
+<tr>
+<td>$[L_a,L_b]=L_{[a,b]}$, $[R_a,R_b]=-R_{[a,b]}$, $[L_a,R_b]=0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$[J^{\mathrm{tot}}_a,J^{\mathrm{tot}}_b]=\varepsilon_{abc}J^{\mathrm{tot}}_c$ with $J^{\mathrm{tot}}=J-J'$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>Casimirs $\sum_kJ_k^{2}=\sum_kJ_k^{\prime 2}=-\tfrac34\mathrm{I}_4$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4)$, dimension $6$, all real antisymmetric</td>
+<td>rank $6$, residual $0$</td>
+</tr>
+<tr>
+<td>Hodge star: $L$ self-dual, $R$ anti-self-dual</td>
+<td>$0$ on the upper triangle</td>
+</tr>
+<tr>
+<td>$L(\mathfrak{k})\cap\mathfrak{su}(3)=R(\mathfrak{k})\cap\mathfrak{su}(3)=0$, $\mathrm{ad}(\mathfrak{k})=\mathfrak{su}(3)\cap\mathfrak{so}(4)$</td>
+<td>$0,0,3$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde u}$ unitary, $\det 1$, kills $e_t$, preserves $B_V$, one hundred rotors</td>
+<td>$100$ of $100$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}$ rotation by the whole angle, trace of the $B_V$ block $1+2\cos\varphi$</td>
+<td>$<10^{-15}$</td>
+</tr>
+<tr>
+<td>spectrum of $L_{\tilde u}$: $e^{\pm i\varphi/2}$, each twice</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$L_{\tilde u}$ on $S_+$: $\operatorname{diag}(e^{-i\varphi/2},e^{+i\varphi/2})$, determinant $1$</td>
+<td>$<10^{-8}$</td>
+</tr>
+<tr>
+<td>spectrum of $\mathrm{ad}_{\vec u}$ on $B_V$: $\{0,\pm2i\}$; of $i\,\mathrm{ad}_{\vec u}/2$: $\{0,\pm1\}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{-e_t}=\mathrm{I}_4$; $P^{3}=\mathrm{I}_4$ and $P\,\mathrm{ad}_{\vec e_x}P^{-1}=\mathrm{ad}_{\vec e_y}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>conjugation fixes the copy for real invertibles, moves it for complex ones</td>
+<td>$-\vec e_y$ real; imaginary coefficients</td>
+</tr>
+<tr>
+<td>$L_{\tilde q}R_{\tilde p}\in\mathrm{SO}(4)$ for one hundred pairs of rotors</td>
+<td>$100$ of $100$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>$\mathrm{SU}(2)$ is the group of the rotors, and in the endomorphisms of the algebra it appears three times: as the left multiplications by the vector part, as the right multiplications, and as their difference, which is the derivation. The three copies are three-dimensional, closed under the bracket, and their bracket constants are $2\varepsilon_{abc}$, with the sign reversed on the right because the right regular family is an anti-homomorphism.</p>
+<p>The lengths separate them. A left multiplication is a single word, a right multiplication is a single word, and the derivation is a difference of two, so the lengths are $1,1,2$. The octet's floor of two is a floor on the corner of $\mathfrak{su}(4)$ and not on $\mathfrak{su}(4)$: $L_a$ sends the unit to $a$ and never kills it, and that single test is what the octet's generators fail.</p>
+<p>The first two copies span $\mathfrak{so}(4)$, the self-dual and anti-self-dual triples, and the third is the anti-diagonal inside them, the graph at the minus sign, and the only one of the graphs that closes under the bracket. The third is also the intersection of the octet with the real antisymmetric six, so it is the only one of the three that the octet contains. The half angle lives on the minimal left ideal and the whole angle on the vector part, and the two maps must not be confused.</p>
+<p>The group is canonical once the Hermitian form is fixed, the copy moves with the form, and the carriers form the family: one ideal per axis, which is the doublet of the electroweak section. Nothing here derives weak isospin, because the generators are the rotation generators and do not commute with the boosts.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis of $\mathbb{B}$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}$</td>
+<td>$\mathrm{span}_{\mathbb{R}}(\vec e_x,\vec e_y,\vec e_z)$, the vector part, real dimension $3$</td>
+</tr>
+<tr>
+<td>$B_V$</td>
+<td>$\mathrm{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)=e_t^{\perp}$, the complex vector part</td>
+</tr>
+<tr>
+<td>$L_a,R_b$</td>
+<td>the left and right multiplications, $L_a\tilde X=a\tilde X$, $R_b\tilde X=\tilde X b$</td>
+</tr>
+<tr>
+<td>$a[\,]b$</td>
+<td>the Conway word $L_aR_b$</td>
+</tr>
+<tr>
+<td>$c(M)$, $\ell(M)$</td>
+<td>the coefficient array of $M$ in the sixteen words, and its rank, the length</td>
+</tr>
+<tr>
+<td>$L(\mathfrak{k}),R(\mathfrak{k}),\mathrm{ad}(\mathfrak{k})$</td>
+<td>the three copies of $\mathfrak{su}(2)$ in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde Q}$</td>
+<td>$L_{\tilde Q}-R_{\tilde Q}$, the inner derivation</td>
+</tr>
+<tr>
+<td>$J_k,J'_k$</td>
+<td>$\tfrac12L_{\vec e_k}$ and $\tfrac12R_{\vec e_k}$, each spin $\tfrac12$; $J^{\mathrm{tot}}_k=J_k-J'_k$ is spin one</td>
+</tr>
+<tr>
+<td>${}^{*}$, ${}^{\dagger}$</td>
+<td>the element-level Hermitian conjugation $\bar{\cdot}\circ{}^{\natural}$, and the operator adjoint, the conjugate transpose</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{\natural}$</td>
+<td>the quaternion norm $Q_t^2+Q_x^2+Q_y^2+Q_z^2$, the determinant of the $2\times2$ display</td>
+</tr>
+<tr>
+<td>$\Pi_+(\vec u)$, $S_+(\vec u)$</td>
+<td>$\tfrac12(e_t+i\vec u)$ and $\mathbb{B}\Pi_+(\vec u)$, the idempotent and the minimal left ideal of the axis</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_{\tilde Q}$, $\mathrm{Ad}_{\tilde u}$</td>
+<td>the Hermitian pair $L_{\tilde Q}R_{\tilde Q^{*}}$, and the conjugation $L_{\tilde u}R_{\tilde u^{-1}}$ at a rotor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Operators Acting on One Side</em>, <em>Operators Acting on Two Sides</em>: the two laws, the anti-homomorphism, the generation theorem, the ladder $1,4,7,16$ and the Conway ceiling.</li>
+<li><em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>: the sixteen words as a basis, and the double centraliser that makes each one-sided family the commutant of the other.</li>
+<li><em>The Endomorphisms of the Biquaternion Algebra</em>: the automorphism group $PGL_2(\mathbb{C})$, the derivations inner, $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$.</li>
+<li><em>Operator Chirality on the Biquaternion Algebra</em>: the side-swap, the trace form, the two eigenspaces.</li>
+<li><em>The Spin Group via $4\times4$ Real Matrices</em>: the left-regular display, the four displays and their kernels, the nine sentences that must not be written.</li>
+<li><em>From the Spin Group to the Spin of a Single Rotor</em>, <em>From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides</em>: $J$ and $J'$, the Casimirs $-\tfrac34$, the pair and the two labels $0$ and $1$.</li>
+<li><em>The Spin-One Anti-Hermitian Subspace</em>: $\mathfrak{k}$, its closure $\mathbb{B}_\Phi=\mathfrak{u}(2)$, the spectrum $\{+1,-1,0\}$, and why the two spectra differ by a factor of two.</li>
+<li><em>The Spin-Half Bispinor Spaces</em>, <em>The Spin-Zero Centre Subspace</em>: the plane and the line, and the two closures that the half-angle and the trivial carrier produce.</li>
+<li><em>The Transposition of the Two Sides</em>, <em>Adjoint Pair of $L$ and $R$ Operators</em>, <em>The Hermitian Pair of Operators Acting on One Side</em>: the symmetries that exchange the two copies and the four adjoints.</li>
+<li><em>Classification of the Real Structures of the Operators of the Biquaternion Algebra</em>: the tables of subalgebras and the place of $\mathfrak{so}(4)$ and $\mathfrak{su}(2)$ in them.</li>
+<li><em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the corner, the eight generators, the floor of two, and the boundary that this note mirrors.</li>
+<li><code>SU2-migration</code>: the naming rule this note follows — the group keeps its name, and the sentence after the name says what it is in the algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

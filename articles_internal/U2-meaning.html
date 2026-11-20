@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Meaning of $\mathrm{U}(2)$ in the Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The question. The Meaning of in the Endomorphisms of the Biquaternion Algebra counts the dimensions — invertible, unitary, norm one — and names the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-meaning-of-math0-in-the-endomorphisms-of-the-biquaternion-algebra"><strong>The Meaning of $\mathrm{U}(2)$ in the Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> <em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em> counts the dimensions $8\to4\to3$ — invertible, unitary, norm one — and names the missing rung: the determinant. This note is that rung. $\mathrm{U}(2)$ appears in the corpus as the closure $\mathbb{B}_\Phi=\mathfrak{u}(2)$ of the spin-one subspace, as the slice $\{u:u^{*}u=e_t\}$, and as the four-dimensional compact form of the algebra, and no note assembles it. This one does, in the same three addresses as its two predecessors.</p>
+<p><strong>The answer in one line.</strong> The group is the anti-Hermitian slice of the algebra and the phase is its centre:</p>
+<p>$$
+\boxed{\;\mathfrak{u}(2)=\mathbb{R}(ie_t)\oplus\mathfrak{k}=\{a:\ a^{*}=-a\},\qquad
+\mathrm{U}(2)=\{u:\ u^{*}u=e_t\},\qquad
+\mathrm{U}(2)=\mathrm{U}(1)\cdot\mathrm{SU}(2),\quad \mathrm{U}(1)\cap\mathrm{SU}(2)=\{\pm e_t\}\;}
+$$</p>
+<p>and the three addresses have dimensions $4,4,3$, because the phase survives the one-sided copies and dies in the derivation:</p>
+<p>$$
+\boxed{\;\dim L(\mathfrak{u}(2))=4,\quad \dim R(\mathfrak{u}(2))=4,\quad \dim\mathrm{ad}(\mathfrak{u}(2))=3,\qquad
+\ell=1,\ 1,\ (1\ \text{on the phase},\ 2\ \text{on the triple})\;}
+$$</p>
+<p><strong>What the word "phase" adds.</strong> $\mathrm{SU}(2)$ is the rotor. $\mathrm{U}(2)$ is the rotor together with a phase, and the phase is central: it multiplies every element of the algebra by the same scalar, so it is the identity operator on the algebra under conjugation and a scalar multiple of the identity under the one-sided copies. The rotor cannot see it. A carrier on which the group acts can. That asymmetry — visible on the module, invisible on the algebra — is the whole content of the fourth direction, and it is the operator fact that a hypercharge-like $U(1)$ needs.</p>
+<p><strong>What is claimed, and what is not.</strong> Claimed: the slice, the centre, the three copies, their dimensions and lengths, the two forms, the Cartan split $8=4+4$, the windings of the determinant along the phase circle, and the two phases of the doublet. Not claimed: that the phase is hypercharge in the physical sense. The algebra fixes the direction and its blindness to the triplet; it does not fix a normalisation, so no ratio of couplings follows.</p>
+<h2 id="the-carrier-the-words-and-one-condition">The Carrier, the Words, and One Condition</h2>
+<p><strong>The carrier.</strong> $\mathbb{B}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, cyclically, and $\vec e_k^{2}=-e_t$. The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$ and $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu Q_{1\mu}Q_{2\mu}$.</p>
+<p><strong>The words and the length.</strong> The sixteen composites $e_\mu[\,]e_\nu=L_{e_\mu}R_{e_\nu}$ are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$; an operator has a coefficient array $c(M)$ in that basis and <strong>length</strong> $\ell(M)=\operatorname{rank}c(M)$.</p>
+<p><strong>The dagger.</strong> $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})=\sum_\mu X_\mu\overline{Y_\mu}$, with ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ the element-level conjugation. In the coefficient basis the operator adjoint is the conjugate transpose, so</p>
+<p>$$
+(L_a)^{\dagger}=L_{a^{*}},\qquad (R_b)^{\dagger}=R_{b^{*}},\qquad \operatorname{tr}(L_aR_b)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b).
+$$</p>
+<p><strong>One condition, at two levels.</strong> The $\mathrm{SU}(2)$ note used two conditions and got the chain $8\to4\to3$. Only the first of them survives here:</p>
+<p>$$
+\mathfrak{u}(2)=\{a\in\mathbb{B}:\ a^{*}=-a\},\qquad
+\mathfrak{su}(2)=\{a\in\mathfrak{u}(2):\ \mathrm{Sc}(a)=0\},\qquad
+\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathbb{R}(ie_t).
+$$</p>
+<p>At the group level the same pair reads $u^{*}u=e_t$ and $\langle u\rangle_{\natural}=1$, and the second is the determinant: $\langle u\rangle_{\natural}=\det\mathsf M_2(u)$ on the unitary slice. So $\mathrm{U}(2)$ is one condition, and $\mathrm{SU}(2)$ adds the determinant. <strong>Tracelessness and unit determinant are the same statement</strong>, once the first condition holds.</p>
+<p><strong>Why the phase is the trace direction.</strong> For $a\in\mathfrak{u}(2)$ the scalar part is exactly the coordinate along the centre, and on the display</p>
+<p>$$
+\operatorname{tr}\mathsf M_2(a)=2\,\mathrm{Sc}(a),
+$$</p>
+<p>so the traceless part is $\mathfrak{su}(2)$ and the trace direction is the phase. The tangent statement is the usual one, $\det(\mathrm I_2+tX)=1+t\operatorname{tr}X+O(t^{2})$: at the identity, the derivative of the determinant is the trace. <strong>The direction that changes the determinant is the direction the trace sees, and it is central.</strong></p>
+<h2 id="the-element-level-four-directions-one-of-them-central">The Element Level: Four Directions, One of Them Central</h2>
+<p><strong>The brackets.</strong> With $\vec e_a\vec e_b-\vec e_b\vec e_a=2\varepsilon_{abc}\vec e_c$ and $ie_t$ central,</p>
+<p>$$
+[\vec e_a,\vec e_b]=2\varepsilon_{abc}\vec e_c,\qquad [ie_t,\vec e_a]=0,\qquad
+\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathbb{R}(ie_t)\ \text{as Lie algebras.}
+$$</p>
+<p>The sum is direct in the strong sense: the second summand is an ideal and it is the centre, so $\mathfrak{u}(2)$ is reductive and not semisimple. Every statement the $\mathrm{SU}(2)$ note proves about the triple holds verbatim here, with one central direction added and no bracket changed.</p>
+<p><strong>The two forms disagree, and exactly on the phase.</strong> Two forms are in play and they must not be confused:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>on $(ie_t,\vec e_x,\vec e_y,\vec e_z)$</th>
+<th>rank</th>
+<th>radical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Killing $B(X,Y)=\operatorname{tr}(\mathrm{ad}_X\mathrm{ad}_Y)$</td>
+<td>$\operatorname{diag}(0,-8,-8,-8)$</td>
+<td>$3$</td>
+<td>$\mathbb{R}(ie_t)$</td>
+</tr>
+<tr>
+<td>ambient trace $2\,\mathrm{Sc}(T_aT_b)$, $T=\tfrac12(\cdot)$</td>
+<td>$-\tfrac12\,\mathrm I_4$</td>
+<td>$4$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Killing form is degenerate and its radical is the phase, as it must be for a reductive algebra with a central ideal. The ambient trace form is non-degenerate and gives the phase and the three axes <strong>the same value</strong> $-\tfrac12$. So the trace form of the carrier cannot tell the four directions apart, and the Killing form of the group can. <strong>The ambient form is a form on $\mathbb{B}$; the Killing form is a form on the group</strong>, and the phase is the single direction on which the two disagree.</p>
+<p><strong>What the degeneracy says.</strong> A degenerate Killing form is the algebraic statement that the group has an abelian factor. It is also the statement that the phase cannot be detected by any bracket: no commutator sees it, so no derivation can move it, so no conjugation can act on it. §<em>The Adjoint Copy</em> turns that into an operator count.</p>
+<h2 id="the-compact-core-math55">The Compact Core: $8=4+4$</h2>
+<p><strong>The split.</strong> The real algebra is eight-dimensional, and the dagger splits it in half:</p>
+<p>$$
+\mathbb{B}=(\text{anti-Hermitian})\oplus(\text{Hermitian})=\mathfrak{u}(2)\oplus i\,\mathfrak{u}(2),\qquad 8=4+4,
+$$</p>
+<p>with summands $\mathrm{span}_{\mathbb{R}}(ie_t,\vec e_x,\vec e_y,\vec e_z)$ and $\mathrm{span}_{\mathbb{R}}(e_t,i\vec e_x,i\vec e_y,i\vec e_z)$. The brackets close the way a Cartan decomposition requires,</p>
+<p>$$
+[\mathfrak{u}(2),\mathfrak{u}(2)]\subset\mathfrak{u}(2),\qquad
+[\mathfrak{u}(2),i\mathfrak{u}(2)]\subset i\mathfrak{u}(2),\qquad
+[i\mathfrak{u}(2),i\mathfrak{u}(2)]\subset\mathfrak{u}(2),
+$$</p>
+<p>all verified. <strong>The four unitary directions are the compact half; the four Hermitian ones are the boosts and the unit.</strong> The element $e_t$ and the three $i\vec e_k$ are not in $\mathrm{U}(2)$, and no phase repairs that: multiplying a Hermitian element by $e^{i\alpha}$ keeps it Hermitian only at $\alpha\in\pi\mathbb{Z}$.</p>
+<p><strong>The group.</strong> $\mathbb{B}^{\times}\cong\mathrm{GL}_2(\mathbb{C})$, and $\mathrm{U}(2)$ is its maximal compact subgroup; the split above is the Lie-algebra form of the polar decomposition $g=up$ with $u$ unitary and $p$ positive Hermitian. The chain of the $\mathrm{SU}(2)$ note is therefore a chain of compact cores:</p>
+<p>$$
+\underbrace{8}_{\text{invertible}}\;\longrightarrow\;\underbrace{4}_{\text{unitary, compact}}\;\longrightarrow\;\underbrace{3}_{\text{norm one}} ,
+$$</p>
+<p>and the rung this note occupies is the middle one, the compact core of the algebra's own group.</p>
+<h2 id="three-addresses-one-group">Three Addresses, One Group</h2>
+<p><strong>The table.</strong> Each row is a real subspace of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ closed under the bracket.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>address</th>
+<th>generators</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>$\ell$</th>
+<th>kernel on $\mathrm{U}(2)$</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>$L_a$, $a\in\mathfrak{u}(2)$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$\{e_t\}$</td>
+<td>faithful copy of $\mathrm{U}(2)$ in $\mathrm{U}(4)$</td>
+</tr>
+<tr>
+<td>right</td>
+<td>$R_a$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$\{e_t\}$</td>
+<td>the anti-homomorphism, faithful too</td>
+</tr>
+<tr>
+<td>adjoint</td>
+<td>$L_a-R_a$</td>
+<td>$3$</td>
+<td>$1$ on the phase, $2$ on the triple</td>
+<td>$\mathrm{U}(1)$</td>
+<td>the derivations, the rotation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the table shows at a glance.</strong> The two one-sided copies are faithful and four-dimensional; the adjoint copy is three-dimensional and its kernel is the whole phase circle. So $\mathrm{U}(2)$ is seen by $L$ and by $R$ and not seen by the rotor, and this is the sharpest difference from $\mathrm{SU}(2)$, where all three addresses were faithful up to the sign.</p>
+<p><strong>The phase has length zero in the derivation.</strong> At the central generator the difference of the two words cancels identically,</p>
+<p>$$
+\mathrm{ad}_{ie_t}=L_{ie_t}-R_{ie_t}=i\,\mathrm{I}_4-i\,\mathrm{I}_4=0,\qquad \ell\bigl(\mathrm{ad}_{ie_t}\bigr)=0,
+$$</p>
+<p>the first operator of length zero in this series of notes. The same direction has length one in the one-sided copies and length zero in the derivation: <strong>the length of one direction depends on the address</strong>, which is the cleanest proof that the length is not a function of the element.</p>
+<p><strong>The two copies share exactly the phase.</strong> The left and right copies of $\mathfrak{u}(2)$ are four-dimensional each and they intersect in one line,</p>
+<p>$$
+L(\mathfrak{u}(2))\cap R(\mathfrak{u}(2))=\mathbb{R}(i\,\mathrm I_4),
+$$</p>
+<p>so their sum is seven-dimensional and closed. The $\mathrm{SU}(2)$ note had the opposite situation: two transverse triples spanning the six-dimensional $\mathfrak{so}(4)$. The difference is the phase, and it is one line:</p>
+<p>$$
+L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4),\quad \dim 6;\qquad
+L(\mathfrak{u}(2))+R(\mathfrak{u}(2)),\quad \dim 7,\quad \text{the central line identified.}
+$$</p>
+<p>So $\mathrm{U}(2)\times\mathrm{U}(2)$ acts on $\mathbb{B}$ through the eight generators $L$ and $R$, and the only redundancy is the diagonal phase: the two copies have <strong>the same</strong> circle of scalars and two different triples of rotations.</p>
+<h2 id="the-left-copy-one-word-length-one-determinant-squared">The Left Copy: One Word, Length One, Determinant Squared</h2>
+<p><strong>The length.</strong> $L_a=a[\,]e_t$ has coefficient array $a\,e_t^{\mathsf T}$, of rank one for every $a\neq0$: the copy is at length one from end to end, the phase included.</p>
+<p><strong>The two conditions, one rung up.</strong> $(L_a)^{\dagger}=L_{a^{*}}$ and $\operatorname{tr}L_a=4\,\mathrm{Sc}(a)$, so</p>
+<p>$$
+L_a\ \text{anti-Hermitian}\iff a\in\mathfrak{u}(2),\qquad \operatorname{tr}L_a=0\iff a\in\mathfrak{su}(2),
+$$</p>
+<p>and both conditions are reproduced exactly at the operator level. The point worth pausing on is the asymmetry between them: the first condition is satisfied by the whole four-dimensional copy, so it does not select the group; only the second does. For $\mathrm{SU}(3)$ neither condition is available at the operator level, and that is the difference the corpus keeps returning to.</p>
+<p><strong>The determinant.</strong> Absolute unimodularity is a squared statement for the display:</p>
+<p>$$
+\det L_a=\langle a\rangle_{\natural}^{2},\qquad
+\det\mathsf M_2(a)=\langle a\rangle_{\natural},
+$$</p>
+<p>verified on a general complex element to $4\times10^{-16}$. So on $\mathrm{U}(2)$ both determinants are on the unit circle, and along the phase circle they wrap it a different number of times: $\det\mathsf M_2$ winds twice and $\det L$ winds four times, because $\langle e^{i\alpha}\rangle_{\natural}=e^{2i\alpha}$. §<em>The Group</em> counts the windings.</p>
+<p><strong>Where the copy lands.</strong> $L(\mathrm{U}(2))\subset\mathrm{U}(4)$ and $L(\mathrm{SU}(2))\subset\mathrm{SO}(4)$: unitarity is automatic on the slice, and reality is exactly the vanishing of the phase, because the first column of $L_u$ is $u$ itself. So</p>
+<p>$$
+L_u\in\mathrm{SO}(4)\iff u\in\mathrm{SU}(2),
+$$</p>
+<p>and the four-dimensional copy contains the three-dimensional real one as its real slice. That is the left-regular display of <em>The Spin Group via $4\times4$ Real Matrices</em>, enlarged by one circle.</p>
+<p><strong>The spectrum.</strong> For $u=e^{i\alpha}(c\,e_t+s\,\vec n)$,</p>
+<p>$$
+\operatorname{spec}L_u=\bigl\{e^{i(\alpha-\varphi/2)},\,e^{i(\alpha+\varphi/2)}\bigr\}\ \text{each twice},\qquad
+\operatorname{tr}L_u=4e^{i\alpha}\cos\tfrac{\varphi}{2},
+$$</p>
+<p>verified on fifty random elements to $10^{-12}$. The two eigenvalues of the $\mathrm{SU}(2)$ case are simply rotated by the phase, which is the operator-level form of "the phase multiplies the copy".</p>
+<h2 id="the-group-a-circle-over-a-sphere">The Group: A Circle over a Sphere</h2>
+<p><strong>The parametrisation.</strong> Every element is a phase times a real rotor,</p>
+<p>$$
+u=e^{i\alpha}\bigl(\cos\tfrac{\varphi}{2}\,e_t+\sin\tfrac{\varphi}{2}\,\vec n\bigr),\qquad \alpha,\varphi\in\mathbb{R},\ \ |\vec n|=1,
+$$</p>
+<p>four real parameters, and the map is locally a chart of rank four. The phase is free: $u^{*}u=e_t$ for every $\alpha$, so</p>
+<p>$$
+\mathrm{U}(2)=\mathrm{U}(1)\cdot\mathrm{SU}(2),\qquad \mathrm{U}(1)\cap\mathrm{SU}(2)=\{\pm e_t\},\qquad
+\mathrm{U}(2)\cong\frac{\mathrm{U}(1)\times\mathrm{SU}(2)}{\mathbb{Z}_2}.
+$$</p>
+<p><strong>The norm is the determinant.</strong> On the slice $\langle u\rangle_{\natural}=\det\mathsf M_2(u)$ has modulus one, so the quaternion norm is a homomorphism onto the circle,</p>
+<p>$$
+\langle\cdot\rangle_{\natural}:\mathrm{U}(2)\twoheadrightarrow\mathrm{U}(1),\qquad \ker=\mathrm{SU}(2),\qquad \mathrm{U}(2)/\mathrm{SU}(2)\cong\mathrm{U}(1),
+$$</p>
+<p>and it covers the circle twice because $\langle e^{i\alpha}\rangle_{\natural}=e^{2i\alpha}$.</p>
+<p><strong>The windings.</strong> Take the phase loop $\alpha\mapsto e^{i\alpha}e_t$ and read it through each address:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>address</th>
+<th>value on the loop</th>
+<th>winding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the element</td>
+<td>$e^{i\alpha}e_t$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathsf M_2$ determinant</td>
+<td>$e^{2i\alpha}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\det L$, $\det R$</td>
+<td>$e^{4i\alpha}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>the conjugation</td>
+<td>$\mathrm I_4$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four numbers are four ways of counting the same circle. <strong>The conjugation does not wind at all</strong>, which is the operator statement of "the phase is invisible to the rotor"; the display winds twice and the left copy four times, which is the operator statement of "the determinant is a square".</p>
+<p><strong>The sign is on the circle.</strong> The element that $\mathrm{SU}(2)$ called "minus the identity" is a phase,</p>
+<p>$$
+-e_t=e^{i\pi}e_t,
+$$</p>
+<p>so the two-to-one of the rotor cover is one point of the phase circle, and the loop $\alpha:0\to2\pi$ closes whereas the rotor path $\varphi:0\to2\pi$ does not. The group is connected and not simply connected, and the phase loop generates $\pi_1$; the rotor sphere inside it is simply connected and does not see the loop. <strong>That is the exact sense in which $\mathrm{U}(2)$ removes the double-valuedness of $\mathrm{SU}(2)$ and pays for it with a loop that does not contract.</strong></p>
+<h2 id="the-adjoint-copy-the-rotor-is-blind-to-the-phase">The Adjoint Copy: The Rotor Is Blind to the Phase</h2>
+<p><strong>The kernel.</strong> At the central generator the derivation vanishes, so the adjoint copy of the four is the adjoint copy of the three:</p>
+<p>$$
+\mathrm{ad}(\mathfrak{u}(2))=\mathrm{ad}(\mathfrak{su}(2))=\mathrm{span}_{\mathbb{R}}\{L_{\vec e_k}-R_{\vec e_k}\}=\mathfrak{su}(3)\cap\mathfrak{so}(4),
+$$</p>
+<p>three-dimensional, the rotor algebra, the octet's rotation subalgebra, unchanged by the phase. At the group level,</p>
+<p>$$
+\mathrm{Ad}(\mathrm{U}(2))=\mathrm{Ad}(\mathrm{SU}(2))=\mathrm{SO}(3),\qquad
+\ker\mathrm{Ad}=\mathrm{U}(1),\qquad \mathrm{U}(2)/\mathrm{U}(1)\cong\mathrm{SO}(3).
+$$</p>
+<p><strong>The comparison with the double cover.</strong> For $\mathrm{SU}(2)$ the fibre over a rotation had two points and the kernel was $\{\pm e_t\}$; here the fibre is a circle and the kernel is the whole phase. The quotient is the same group in both cases, and the two kernels are nested, $\{\pm e_t\}\subset\mathrm{U}(1)$: <strong>the sign is a point of the circle, and the circle is the kernel.</strong> A single rotor needs two labels to describe a rotation; a unitary element needs a circle of them, and one point of that circle is the sign.</p>
+<p><strong>What follows for a symmetry.</strong> A direction that acts trivially on the algebra cannot be an internal symmetry <em>of the algebra</em>: there is nothing for it to move. It can only act on a carrier. In the language of the corpus, the phase is a symmetry of the module and not of the endomorphism algebra, and the next section gives the module.</p>
+<h2 id="the-doublet-two-phases">The Doublet: Two Phases</h2>
+<p><strong>On the ideal.</strong> With the Peirce idempotent of the axis, $\tilde\Pi_+=\tfrac12(e_t+i\vec n)$, the left copy acts diagonally:</p>
+<p>$$
+L_u\big|_{S_+(\vec n)}=\operatorname{diag}\bigl(e^{i(\alpha-\varphi/2)},\,e^{i(\alpha+\varphi/2)}\bigr),\qquad
+\det=\langle u\rangle_{\natural}=e^{2i\alpha},\qquad \text{ratio}=e^{i\varphi},
+$$</p>
+<p>verified exactly at three parameter sets.</p>
+<p><strong>The reading.</strong> The two diagonal entries are the two phases of the doublet. Their <strong>product</strong> is the determinant and their <strong>ratio</strong> is the rotation. So the phase adds the mean and the rotor adds the half-difference:</p>
+<p>$$
+\text{mean phase}=\alpha,\qquad \text{half-difference}=\tfrac{\varphi}{2},\qquad
+\mathrm{SU}(2)\ \text{fixes the product},\quad \mathrm{U}(1)\ \text{fixes the ratio}.
+$$</p>
+<p>That is the exact operator content of writing a two-component carrier with two independent phases: a $2\times2$ unitary matrix is an overall phase times a determinant-one matrix, and here the overall phase is the central direction and the determinant-one part is the rotor. The $\mathrm{SU}(2)$ note's "one ideal per axis" becomes "one ideal and two phases per axis", and the family of carriers is unchanged.</p>
+<p><strong>Where the physics would attach.</strong> On the triplet the phase is the identity, and on the doublet it is a phase: that is the assignment pattern a hypercharge-like quantum number needs, with the triplet at zero and the doublet at a non-zero value. The algebra supplies the direction and the blindness. It does not supply the normalisation, so the numerical hypercharges of the corpus are not derived here, and no claim beyond the assignment pattern is made.</p>
+<h2 id="the-determinant-minus-one-half">The Determinant-Minus-One Half</h2>
+<p><strong>The fibre over $-1$.</strong> Since $\langle e^{i\alpha}q\rangle_{\natural}=e^{2i\alpha}$, the elements of determinant $-1$ are exactly the $\alpha=\tfrac{\pi}{2}$ slice,</p>
+<p>$$
+\{u\in\mathrm{U}(2):\ \langle u\rangle_{\natural}=-1\}=i\,\mathrm{SU}(2),
+$$</p>
+<p>a three-sphere, half of $\mathrm{U}(2)$ in the sense of the determinant. The corpus meets this half every time it writes a Pauli matrix:</p>
+<p>$$
+\mathsf M_2(i\vec e_k)=\sigma_k,\qquad \det\sigma_k=-1,\qquad
+(i\vec e_k)^{2}=e_t,\qquad (i\vec e_k)^{*}=i\vec e_k .
+$$</p>
+<p><strong>So the Pauli matrices are elements of $\mathrm{U}(2)$ and not of $\mathrm{SU}(2)$.</strong> Each is Hermitian, of order two, of determinant minus one, and each is a complex structure of the algebra. Nothing in the algebra prefers one of them, and the whole two-sphere</p>
+<p>$$
+\{u\in\mathrm{U}(2):\ u=u^{*}\}=\{\pm e_t\}\ \cup\ \{i\vec n:\ |\vec n|=1\}
+$$</p>
+<p>consists of complex structures, one per axis, plus the two trivial signs. <strong>Choosing a diagonal generator is choosing a point of that sphere</strong>, which is the operator-level form of the $\mathrm{SU}(2)$ note's warning about the $2\times2$ display: the display is not wrong, it is a choice, and the choice is an element of $\mathrm{U}(2)$ that $\mathrm{SU}(2)$ does not contain.</p>
+<h2 id="length-the-zero-appears">Length: The Zero Appears</h2>
+<p><strong>The four rows.</strong> Reading the length address by address:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>$\ell$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_u$, $R_u$ for any $u\in\mathrm{U}(2)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_u$ for any $u\in\mathrm{U}(2)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\vec e_k}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{ie_t}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the zero means.</strong> The length is the number of independent words a multiplication needs, and the phase needs none, because the two words that would carry it cancel. So the length spectrum of this group is $\{0,1,2\}$, and the minimum is attained exactly on the centre. In $\mathrm{SU}(2)$ the minimum was one; adding the phase creates a direction of length zero, and the direction is the kernel.</p>
+<p><strong>The group is entirely at length one.</strong> Every element, phased or not, is a single word in each of the three addresses; only the generators of the triple pay a second word, and only the generator of the circle pays nothing at all. So the slogan of the $\mathrm{SU}(3)$ note — a group element can be shorter than its generator — extends to a group element of length one whose generator has length zero.</p>
+<h2 id="no-axis-is-preferred-and-one-line-is-canonical">No Axis Is Preferred, and One Line Is Canonical</h2>
+<p><strong>The axes move.</strong> The order-three element still permutes the three axes, so no axis and no Cartan is invariant, and everything the $\mathrm{SU}(2)$ note says about the arbitrary basis holds here unchanged.</p>
+<p><strong>The phase does not move.</strong> The centre is a canonical line: it is the orthogonal complement of $\mathfrak{su}(2)$ under any invariant form, it is the radical of the Killing form, and it is the kernel of the adjoint copy. So $\mathrm{U}(2)$ is the first group in this series with a <strong>canonical direction</strong>:</p>
+<p>$$
+\mathbb{R}(ie_t)\ \text{is canonical},\qquad \text{the three axes are a choice}.
+$$</p>
+<p>That is the structural difference between the two notes in one line, and it is also the reason a $U(1)$ factor can be named without choosing anything: the phase costs no choice, while any statement singling out $\vec e_z$ costs one.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>What the address buys.</strong> An exact operator-level account of the fourth direction: the slice and its centre, the dimensions $4,4,3$, the lengths $1,1,(0,2)$, the two forms and where they disagree, the Cartan split $8=4+4$, the windings $1,2,4,0$, the kernel $\mathrm{U}(1)$ of the conjugation, and the two phases of the doublet.</p>
+<p><strong>What it does not buy.</strong> The phase direction is central, so it commutes with the boosts as well as with the rotations — unlike the three, which do not commute with the boosts and are therefore geometric. And it acts trivially on the algebra, so it is not an internal symmetry either. <strong>A direction that commutes with everything and moves nothing is a redundancy of the description, not a symmetry of the object.</strong> It can be seen only by a carrier, and the algebra supplies no principle that fixes the value it takes on that carrier. The corpus's ledger is unchanged: the arena is derived, the dynamics is imported, and the phase is a fourth coordinate of the arena and not a force.</p>
+<h2 id="verification">Verification</h2>
+<p>All statements were checked on the sixteen Conway words in the coefficient basis, symbolically where a formula is claimed and in floating point elsewhere.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{u}(2)=\{a:a^{*}=-a\}$, $\dim_{\mathbb{R}}=4$, closed under the bracket; $[ie_t,\vec e_k]=0$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\mathbb{B}=\mathfrak{u}(2)\oplus i\mathfrak{u}(2)$, $4+4$, with the three Cartan bracket inclusions</td>
+<td>exact, $200$ draws</td>
+</tr>
+<tr>
+<td>Killing form $\operatorname{diag}(0,-8,-8,-8)$, rank $3$, radical $\mathbb{R}(ie_t)$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>ambient trace form $2\,\mathrm{Sc}(T_aT_b)=-\tfrac12\delta_{ab}$ on the four, rank $4$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\dim L(\mathfrak{u}(2))=4$, $\dim R(\mathfrak{u}(2))=4$, $\dim\mathrm{ad}(\mathfrak{u}(2))=3$</td>
+<td>rank computation</td>
+</tr>
+<tr>
+<td>$L(\mathfrak{u}(2))\cap R(\mathfrak{u}(2))=\mathbb{R}(i\mathrm I_4)$; the sum has dimension $7$</td>
+<td>one singular value $0$, seven non-zero</td>
+</tr>
+<tr>
+<td>$L_a$ anti-Hermitian $\iff a^{*}=-a$; $\operatorname{tr}L_a=0\iff \mathrm{Sc}(a)=0$</td>
+<td>$0$, $100$ draws</td>
+</tr>
+<tr>
+<td>$\ell=1,1,1$ for $L,R,\mathrm{Ad}$ at every element; $\ell(\mathrm{ad}_{\vec e_k})=2$; $\ell(\mathrm{ad}_{ie_t})=0$</td>
+<td>$30$ draws, exact</td>
+</tr>
+<tr>
+<td>$u^{*}u=e_t$ on $200$ random elements; closure under the product</td>
+<td>$4.4\times10^{-16}$, $6.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\lvert\langle u\rangle_{\natural}\rvert=1$; $\det L=\langle u\rangle_{\natural}^{2}$; $\det\mathsf M_2=\langle u\rangle_{\natural}$</td>
+<td>$\lvert N\rvert=1$ to machine precision; $\det\mathsf M_2=N$ to $4.0\times10^{-16}$</td>
+</tr>
+<tr>
+<td>windings $1,2,4,0$ along the phase loop</td>
+<td>$1,2,4,0$</td>
+</tr>
+<tr>
+<td>$L_u\in\mathrm{U}(4)$ always; $L_u\in\mathrm{SO}(4)\iff u\in\mathrm{SU}(2)$</td>
+<td>$4.4\times10^{-16}$; real iff real</td>
+</tr>
+<tr>
+<td>$\operatorname{spec}L_u=\{e^{i(\alpha\mp\varphi/2)}\}$ each twice; $\operatorname{tr}L_u=4e^{i\alpha}\cos\tfrac{\varphi}{2}$</td>
+<td>$<10^{-12}$, $50$ draws</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_u$ independent of the phase; $\mathrm{Ad}(\mathrm{U}(2))=\mathrm{SO}(3)$</td>
+<td>$5.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>Peirce frame: $L_u=\operatorname{diag}(e^{i(\alpha-\varphi/2)},e^{i(\alpha+\varphi/2)},\cdot,\cdot)$, block determinant $=\langle u\rangle_{\natural}$</td>
+<td>$0$ at three parameter sets</td>
+</tr>
+<tr>
+<td>$24$ real units: $24$ left displays, $12$ conjugations, all of determinant one</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(i\vec e_k)=\sigma_k$, $\det=-1$, $(i\vec e_k)^{2}=e_t$, Hermitian</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)\cap\{\text{Hermitian}\}=\{\pm e_t\}\cup\{i\vec n\}$</td>
+<td>classification, checked on the axes</td>
+</tr>
+<tr>
+<td>the chart $(\alpha,\varphi,\vec n)\mapsto u$ has rank $4$</td>
+<td>rank $4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p>$\mathrm{U}(2)$ is the anti-Hermitian slice of the biquaternion algebra, four real dimensions, and its centre is the phase $ie_t$. The group is the rotor together with a phase, $\mathrm{U}(2)=\mathrm{U}(1)\cdot\mathrm{SU}(2)$ with the two intersecting in the sign, and the norm is the determinant, onto the circle with the rotor as its kernel.</p>
+<p>The three addresses split the four directions differently. The left and right copies are faithful and four-dimensional, they meet in exactly the central line, and their sum is seven-dimensional where $\mathrm{SU}(2)$'s two triples were transverse and summed to $\mathfrak{so}(4)$. The adjoint copy is three-dimensional: the phase is its kernel, so the rotor is blind to the phase, and the quotient is the rotation group as before. The lengths are $1,1$ for the one-sided copies, $2$ for the triple's derivations, and $0$ for the phase's — the first length-zero operator of the series, and the cleanest evidence that the length is a property of the address.</p>
+<p>The determinant is a squared statement for the display: $\det L=\langle u\rangle_{\natural}^{2}$, so the phase circle is wound twice by the $2\times2$ determinant and four times by the $4\times4$ one, and not at all by the conjugation. The determinant-minus-one half of the group is $i\,\mathrm{SU}(2)$, and inside it sit the complex structures, one per axis, whose displays are the Pauli matrices.</p>
+<p>On the doublet the phase is a phase and on the triplet it is the identity. A direction with that property can be seen only by a module, and the algebra fixes it without fixing its value. That is what the fourth direction means, and it is the exact point where the operator content stops and the physics must be imported.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}$</td>
+<td>$\mathrm{span}_{\mathbb{R}}(\vec e_x,\vec e_y,\vec e_z)$, the vector part</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)$, $\mathfrak{su}(2)$</td>
+<td>$\{a:a^{*}=-a\}$ and $\{a\in\mathfrak{u}(2):\mathrm{Sc}(a)=0\}$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)$, $\mathrm{SU}(2)$</td>
+<td>$\{u:u^{*}u=e_t\}$ and $\{u\in\mathrm{U}(2):\langle u\rangle_{\natural}=1\}$</td>
+</tr>
+<tr>
+<td>$u=e^{i\alpha}(c\,e_t+s\,\vec n)$</td>
+<td>the four parameters; $\alpha$ the phase, $\varphi$ the rotation angle</td>
+</tr>
+<tr>
+<td>$L_a,R_b$</td>
+<td>left and right multiplication; $a[\,]b=L_aR_b$ the Conway word</td>
+</tr>
+<tr>
+<td>$c(M)$, $\ell(M)$</td>
+<td>the coefficient array and its rank, the length</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde Q}$</td>
+<td>$L_{\tilde Q}-R_{\tilde Q}$, the inner derivation</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>the Killing form, $\operatorname{diag}(0,-8,-8,-8)$ on the four</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{\natural}$</td>
+<td>the quaternion norm $Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, the determinant of the display</td>
+</tr>
+<tr>
+<td>$\mathsf M_2$</td>
+<td>the $2\times2$ display, $\mathsf M_2(e_t)=\mathrm I_2$, $\mathsf M_2(\vec e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+(\vec u)$, $S_+(\vec u)$</td>
+<td>$\tfrac12(e_t+i\vec u)$ and the minimal left ideal it generates</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_u$</td>
+<td>the conjugation $L_uR_{u^{-1}}$</td>
+</tr>
+<tr>
+<td>${}^{*}$, ${}^{\dagger}$</td>
+<td>element-level conjugation $\bar{\cdot}\circ{}^{\natural}$, operator adjoint</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em>: the three copies, the lengths $1,1,2$, the chain $8\to4\to3$, and the rung this note occupies.</li>
+<li><em>Worked Cases for $\mathrm{SU}(2)$ inside the Endomorphisms of the Biquaternion Algebra</em>: the same cases without the phase, one element at a time.</li>
+<li><em>The Spin-One Anti-Hermitian Subspace</em>: $\mathfrak{k}$ and its closure $\mathbb{B}_\Phi=\mathfrak{u}(2)$, the spectrum $\{+1,-1,0\}$.</li>
+<li><em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the corner, the floor of two, and the contrast between a group that lives in the algebra and one that lives in the endomorphisms.</li>
+<li><em>Operators Acting on One Side</em>, <em>Operators Acting on Two Sides</em>: the sixteen words, the anti-homomorphism, the Conway ceiling.</li>
+<li><em>The Endomorphisms of the Biquaternion Algebra</em>: the derivations inner, $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$, and the kernel of $\mathrm{ad}$.</li>
+<li><em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>: the signature $(2,2)$ of $\langle\cdot\rangle_{\natural}$, and the forms that distinguish unitary from norm one.</li>
+<li><em>The Carriers, the Representation, the Spin and the Closure</em>: the Peirce frame, the weights, and the half angle as a spectrum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

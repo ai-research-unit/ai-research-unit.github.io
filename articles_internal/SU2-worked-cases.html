@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Cases for $\mathrm{SU}(2)$ inside the Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="Purpose. The Meaning of in the Endomorphisms of the Biquaternion Algebra states the three copies, proves the brackets and the lengths, and identifies the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-cases-for-math0-inside-the-endomorphisms-of-the-biquaternion-algebra"><strong>Worked Cases for $\mathrm{SU}(2)$ inside the Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Purpose.</strong> <em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em> states the three copies, proves the brackets and the lengths, and identifies the group with the rotor of a spatial dimension. This note does the opposite. It takes one rotor at a time, writes its arrays, and computes what it does to biquaternions. Every number below was produced by exact algebra on the sixteen Conway words and checked in floating point; the residuals are collected at the end.</p>
+<p><strong>The carrier.</strong> $\mathbb{B}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$. An element is a column $\tilde Q=(Q_t,Q_x,Q_y,Q_z)$ of four complex numbers. The multiplicative norm is $N(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=\det M(\tilde Q)$, of signature $(2,2)$; the definite form is $\langle\tilde Q\rangle_{*}=|Q_t|^{2}+|Q_x|^{2}+|Q_y|^{2}+|Q_z|^{2}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$.</p>
+<p><strong>The group.</strong> Here $\mathrm{SU}(2)$ is the set of elements with $u^{*}u=e_t$, of the shape</p>
+<p>$$
+\tilde u=\cos\tfrac{\varphi}{2}\,e_t+\sin\tfrac{\varphi}{2}\,\vec n,\qquad \vec n\ \text{a real unit vector},\quad \varphi\in\mathbb{R},
+$$</p>
+<p>and it enters the operators at three addresses: the left multiplication $L_{\tilde u}$, the right multiplication $R_{\tilde u}$, and the conjugation $\mathrm{Ad}_{\tilde u}=L_{\tilde u}R_{\tilde u^{-1}}$. The three are one group and three operators.</p>
+<p><strong>Four arrays, one element.</strong> Every case below reads whichever of the four carries the information it needs.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>size</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde u)$</td>
+<td>$4\times4$ complex</td>
+<td>left multiplication in the coefficient basis, columns $\tilde u e_\nu$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde u}$</td>
+<td>$4\times4$ real</td>
+<td>the conjugation, $\operatorname{diag}(1,R)$ with $R$ the rotation</td>
+</tr>
+<tr>
+<td>$\mathsf A(\vec n)=[\vec n]_{\times}$</td>
+<td>$3\times3$ real</td>
+<td>the <strong>axial matrix</strong> of the axis, the only non-scalar block of $L$</td>
+</tr>
+<tr>
+<td>$M_2(\tilde u)$</td>
+<td>$2\times2$ complex</td>
+<td>the element as a matrix, with $M(e_t)=\mathrm I_2$, $M(\vec e_k)=-i\sigma_k$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Conway array is the fifth reading: the coefficients $c_{\mu\nu}$ in $\mathrm{Ad}_{\tilde u}=\sum c_{\mu\nu}e_\mu[\,]e_\nu$, of rank the length $\ell$. The first two arrays are different matrices of related operators; the third is the block that makes the rotation; the fourth is the element itself. <strong>A matrix carries no tilde</strong>: the array is $L_{\mathrm{axf}}(\tilde u)$, the operator is $L_{\tilde u}$.</p>
+<p><strong>The cases at a glance.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>element</th>
+<th>what it establishes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$u=\tfrac{1}{\sqrt2}(e_t+\vec e_z)$</td>
+<td>the four arrays of one element, and one length</td>
+</tr>
+<tr>
+<td>1</td>
+<td>a general $\tilde u$</td>
+<td>the axial matrix is the whole of the rotor's display</td>
+</tr>
+<tr>
+<td>2</td>
+<td>any $\tilde u$ on a general $\tilde Q$</td>
+<td>the left, the right and the conjugated action</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$e_t$, $-e_t$, $iu$</td>
+<td>the kernels of the three addresses</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\vec e_x,\vec e_y,\vec e_z$</td>
+<td>half-turns, length one, and the multiplication table</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\vec n$</td>
+<td>Rodrigues, and the two angles $\tfrac{\varphi}{2}$ and $\varphi$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\varphi=2\pi$, $\varphi=4\pi$</td>
+<td>the full turn, seen as a minus sign on $L$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$</td>
+<td>an order-three rotation and an order-six display</td>
+</tr>
+<tr>
+<td>8</td>
+<td>the twenty-four unit quaternions</td>
+<td>twenty-four displays, twelve conjugations</td>
+</tr>
+<tr>
+<td>9</td>
+<td>any $\tilde u$ in the Peirce frame</td>
+<td>the half angle is diagonal there, and $M_2$ is the left copy</td>
+</tr>
+<tr>
+<td>10</td>
+<td>particular biquaternions</td>
+<td>what the three actions do, row by row</td>
+</tr>
+<tr>
+<td>11</td>
+<td>any $\tilde u$</td>
+<td>which structures each copy preserves</td>
+</tr>
+<tr>
+<td>12</td>
+<td>$b=\cosh\tfrac{\phi}{2}+i\sinh\tfrac{\phi}{2}\vec e_x$</td>
+<td>norm one is not unitarity</td>
+</tr>
+<tr>
+<td>13</td>
+<td>$L^{\mathsf T}$, $L^{\dagger}$</td>
+<td>transpose and adjoint are the two conjugations</td>
+</tr>
+<tr>
+<td>14</td>
+<td>lengths of elements</td>
+<td>everything here has length one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-the-four-arrays-of-one-element">1. The Four Arrays of One Element</h2>
+<p><strong>The example.</strong> Take the quarter-turn in the group,</p>
+<p>$$
+\theta=\tfrac{\pi}{2},\qquad \tilde u=\cos\tfrac{\pi}{4}\,e_t+\sin\tfrac{\pi}{4}\,\vec e_z=\tfrac{1}{\sqrt2}\bigl(e_t+\vec e_z\bigr).
+$$</p>
+<p><strong>The axis-free display.</strong> The columns are the four products $\tilde u e_\nu$:</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u)=\tfrac{1}{\sqrt2}
+\begin{pmatrix}
+1&0&0&-1\\
+0&1&-1&0\\
+0&1&1&0\\
+1&0&0&1
+\end{pmatrix}.
+$$</p>
+<p>Checks: $L^{\mathsf T}L=\mathrm I_4$ to $1.0\times10^{-17}$, $\det L=1$, $\operatorname{tr}L=2\sqrt2=4\cos\tfrac{\pi}{4}$, and the eigenvalues are $e^{\pm i\pi/4}$, each twice. The matrix is real orthogonal, of determinant one: for a real unit $\tilde u$, $L_{\mathrm{axf}}(\tilde u)$ lies in $SO(4)$.</p>
+<p><strong>The right display.</strong> The same element on the other side, columns $\vec e_\nu\tilde u$:</p>
+<p>$$
+R_{\mathrm{axf}}(\tilde u)=\tfrac{1}{\sqrt2}
+\begin{pmatrix}
+1&0&0&-1\\
+0&1&1&0\\
+0&-1&1&0\\
+1&0&0&1
+\end{pmatrix}.
+$$</p>
+<p>The two arrays agree in the first and last columns and differ by one sign in the middle block. That sign is the whole difference, and §2 names it.</p>
+<p><strong>The conjugation.</strong> The product $L_{\mathrm{axf}}(\tilde u)R_{\mathrm{axf}}(\tilde u^{-1})$ is real:</p>
+<p>$$
+\mathrm{Ad}_{\tilde u}=
+\begin{pmatrix}1&0&0&0\\0&0&-1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+$$</p>
+<p>a quarter-turn of the $(\vec e_x,\vec e_y)$ plane with $e_t$ and $\vec e_z$ fixed. This is the display of §1 of the $\mathrm{SU}(3)$ note, and here it is <em>every</em> element: the whole of $\mathrm{SU}(2)$ acts this way on the vector part.</p>
+<p><strong>The axial matrix.</strong> The block of $L$ that is not a multiple of the identity is built from</p>
+<p>$$
+\mathsf A(\vec e_z)=[\vec e_z]_{\times}=
+\begin{pmatrix}0&-1&0\\1&0&0\\0&0&0\end{pmatrix},
+$$</p>
+<p>the matrix of $\vec v\mapsto\vec e_z\times\vec v$. Its square is $\vec e_z\vec e_z^{\mathsf T}-\mathrm I_3$, its cube is $-\mathsf A$, its eigenvalues are $0,\pm i$, and its determinant is zero.</p>
+<p><strong>The element itself.</strong> With $M(e_t)=\mathrm I_2$ and $M(\vec e_k)=-i\sigma_k$,</p>
+<p>$$
+M_2(\tilde u)=\cos\tfrac{\pi}{4}\,\mathrm I_2-i\sin\tfrac{\pi}{4}\,\sigma_3
+=\operatorname{diag}\bigl(e^{-i\pi/4},\,e^{i\pi/4}\bigr),
+$$</p>
+<p>unitary of determinant one: the matrix of the element, and not of an operator on it.</p>
+<p><strong>The Conway array.</strong> Solving $\mathrm{Ad}_{\tilde u}=\sum c_{\mu\nu}e_\mu[\,]e_\nu$ over the sixteen words gives four non-zero entries, $c_{\mu\nu}=u_\mu u^{\natural}_{\nu}$ with $u^{\natural}=\tfrac{1}{\sqrt2}(1,0,0,-1)$:</p>
+<p>$$
+c=\tfrac12
+\begin{pmatrix}1&0&0&-1\\0&0&0&0\\0&0&0&0\\1&0&0&-1\end{pmatrix},
+\qquad\text{that is}\qquad
+\mathrm{Ad}_{\tilde u}=\tfrac12\bigl(e_t[\,]e_t-e_t[\,]e_z+e_z[\,]e_t-e_z[\,]e_z\bigr),
+$$</p>
+<p>of rank one. The conjugation by a unit is one word, $\mathrm{Sd}_{\tilde u}=L_{\tilde u}R_{\tilde u^{\natural}}$, and its length is one. The left copy is one word as well, the trivial one, $L_{\tilde u}=\tilde u[\,]e_t$, with Conway array $c_{\mu\nu}=u_\mu\delta_{\nu 0}$: a single non-zero column.</p>
+<p><strong>The lesson.</strong> One element, four arrays of sizes $4\times4$, $4\times4$, $3\times3$ and $2\times2$, and every one of them has length one. Nothing in this note ever leaves the length-one stratum, and that is the structural difference from the $\mathrm{SU}(3)$ note, where only a three-dimensional subgroup did.</p>
+<h2 id="2-case-1-the-axial-matrix-and-the-two-sides-of-one-rotor">2. Case 1: The Axial Matrix, and the Two Sides of One Rotor</h2>
+<p><strong>The element.</strong> Let $c=\cos\tfrac{\varphi}{2}$ and $s=\sin\tfrac{\varphi}{2}$, and let $\vec n$ be a real unit vector. The rotor is $\tilde u=c\,e_t+s\,\vec n$.</p>
+<p><strong>The displays.</strong> Writing $\vec n=(n_1,n_2,n_3)^{\mathsf T}$ and $\mathsf A=\mathsf A(\vec n)$,</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u)=
+\begin{pmatrix}
+c&-s\,\vec n^{\mathsf T}\\
+s\,\vec n&c\,\mathrm I_3+s\,\mathsf A
+\end{pmatrix},
+\qquad
+R_{\mathrm{axf}}(\tilde u)=
+\begin{pmatrix}
+c&-s\,\vec n^{\mathsf T}\\
+s\,\vec n&c\,\mathrm I_3-s\,\mathsf A
+\end{pmatrix}.
+$$</p>
+<p>Verified symbolically for independent $c,s,n_1,n_2,n_3$: the two identities are exact entry by entry, and with $c^{2}+s^{2}=1$ and $\vec n\cdot\vec n=1$ both displays are orthogonal of determinant one. <strong>The two one-sided copies of one rotor differ in one sign, and the sign sits on the axial matrix.</strong> Written out at $\vec n=\vec e_z$ the identity is the pair of arrays of §1.</p>
+<p><strong>The properties of the block.</strong> For a real unit $\vec n$,</p>
+<p>$$
+\mathsf A^{2}=\vec n\vec n^{\mathsf T}-\mathrm I_3,\qquad \mathsf A^{3}=-\mathsf A,\qquad \operatorname{spec}\mathsf A=\{0,\,i,\,-i\},
+$$</p>
+<p>each checked to $10^{-16}$ on $\vec n=(1,2,3)/\sqrt{14}$. Hence</p>
+<p>$$
+\det\bigl(c\,\mathrm I_3+s\,\mathsf A\bigr)=c\,(c+is)(c-is)=c=\cos\tfrac{\varphi}{2},
+$$</p>
+<p>while $\det L=\bigl(c^{2}+s^{2}\bigr)^{2}=1$. <strong>The block has determinant $\cos\frac{\varphi}{2}$ and the display has determinant one</strong>; the difference is carried by the scalar row and column, and it is the reason the 3×3 corner is not orthogonal on its own. The orthogonality of $L$ is a property of the coupling, not of the block: at $c=0$ the block is $s\mathsf A$, singular, and the display is still invertible.</p>
+<p><strong>The conjugation.</strong> Multiplying the two displays with $\tilde u^{-1}=c\,e_t-s\,\vec n$ leaves the scalar coordinate alone and gives the Rodrigues block,</p>
+<p>$$
+\mathrm{Ad}_{\tilde u}=
+\begin{pmatrix}
+1&0\\0&R
+\end{pmatrix},
+\qquad
+R=\cos\varphi\,\mathrm I_3+\sin\varphi\,\mathsf A(\vec n)+\bigl(1-\cos\varphi\bigr)\vec n\vec n^{\mathsf T}.
+$$</p>
+<p>Verified symbolically, and numerically on $100$ random rotors to $10^{-12}$. The angle in the block is $\varphi$; the angle in the element is $\tfrac{\varphi}{2}$; the axial matrix appears in both with the coefficient $\sin$ of <em>its own</em> angle. This is the sense in which the rotor is the square root of the rotation, written as a matrix identity.</p>
+<p><strong>The two $\frac{\varphi}{2}$'s, one of them invisible.</strong> The half angle is visible in two places only: the eigenvalues $e^{\pm i\varphi/2}$ of $L$, and the entries $c,s$ of the axial block. It is invisible in $\mathrm{Ad}$, where only $\varphi$ occurs. So the same element has a display of period $4\pi$ (in $\varphi$) and a conjugation of period $2\pi$, and the difference is a single sign, computed in §7.</p>
+<h2 id="3-case-2-the-action-on-a-general-biquaternion">3. Case 2: The Action on a General Biquaternion</h2>
+<p><strong>The element and the argument.</strong> Keep $\tilde u=c\,e_t+s\,\vec n$ and take the general $\tilde Q=Q_t\,e_t+\vec Q$ with $\vec Q=Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$.</p>
+<p><strong>The left action.</strong> Multiplying out the four products,</p>
+<p>$$
+\tilde u\tilde Q=\bigl(cQ_t-s\,\vec n\cdot\vec Q\bigr)e_t+c\,\vec Q+sQ_t\,\vec n+s\,\vec n\times\vec Q,
+$$</p>
+<p>which in columns is the array of §2 acting on the column:</p>
+<p>$$
+\begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}\longmapsto
+\begin{pmatrix}
+c&-s\,\vec n^{\mathsf T}\\
+s\,\vec n&c\,\mathrm I_3+s\,\mathsf A(\vec n)
+\end{pmatrix}
+\begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}.
+$$</p>
+<p>Verified on a random $\tilde Q$ to $0$ exactly (the identity is algebraic, and the floating-point residual was $1.1\times10^{-16}$).</p>
+<p><strong>What the case says.</strong> The scalar coordinate moves: it becomes $cQ_t-s\vec n\cdot\vec Q$, a mix of the old scalar and the old vector. The vector coordinate moves into both. <strong>The left copy is not an automorphism of the algebra and it does not preserve the scalar part</strong>; it preserves the left ideals, which is a different statement, made in §11.</p>
+<p><strong>The conjugated action.</strong> Conjugating instead,</p>
+<p>$$
+\tilde u\,\tilde Q\,\tilde u^{-1}=Q_t\,e_t+R\vec Q,
+$$</p>
+<p>with $R$ the Rodrigues block of §2. In columns the map is $\operatorname{diag}(1,R)$: the scalar coefficient is untouched and the vector coefficients are rotated. Verified on a random $\tilde Q$ to $1.1\times10^{-16}$, and the scalar coefficient is unchanged exactly.</p>
+<p><strong>The asymmetry, in one line.</strong> The left copy <em>mixes</em> the two parts of $\tilde Q$; the conjugation <em>separates</em> them. The same element, two arrays, and one of them is a rotation of three coordinates while the other is not.</p>
+<h2 id="4-case-3-the-unit-its-negative-and-the-three-kernels">4. Case 3: The Unit, Its Negative, and the Three Kernels</h2>
+<p><strong>The unit.</strong> Conjugation by $e_t$ is the identity operator and left multiplication by $e_t$ is the identity array:</p>
+<p>$$
+\mathrm{Ad}_{e_t}=\mathrm I_4,\qquad L_{e_t}=\mathrm I_4,\qquad c=\mathrm I_4\ \text{(entry }1\text{ at }e_t[\,]e_t\text{)},\qquad \ell=1 .
+$$</p>
+<p><strong>The negative.</strong> Left multiplication by $-e_t$ is minus the identity, while the conjugation is unchanged:</p>
+<p>$$
+L_{-\tilde u}=-L_{\tilde u},\qquad \mathrm{Ad}_{-\tilde u}=\mathrm{Ad}_{\tilde u},
+$$</p>
+<p>the first exactly on all twenty-four unit quaternions, the second to $2.3\times10^{-16}$ on a random element of the group. The minus signs of $(-\tilde u)\tilde X(-\tilde u)^{-1}$ cancel in the conjugation and survive in the multiplication.</p>
+<p><strong>The phase.</strong> For a complex scalar $\lambda$ of modulus one,</p>
+<p>$$
+L_{\lambda\tilde u}=\lambda L_{\tilde u},\qquad \mathrm{Ad}_{\lambda\tilde u}=\mathrm{Ad}_{\tilde u},
+$$</p>
+<p>exactly as arrays. So $iu$ and $e^{i\alpha}u$ have different left displays and the same conjugation: the conjugation cannot see the phase of the element, and the left copy sees nothing else.</p>
+<p><strong>The three kernels.</strong> On the unit elements,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>address</th>
+<th>kernel</th>
+<th>images of the twenty-four units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde u\mapsto L_{\tilde u}$</td>
+<td>$\{e_t\}$</td>
+<td>$24$</td>
+</tr>
+<tr>
+<td>$\tilde u\mapsto M_2(\tilde u)$</td>
+<td>$\{e_t\}$</td>
+<td>$24$</td>
+</tr>
+<tr>
+<td>$\tilde u\mapsto\mathrm{Ad}_{\tilde u}$</td>
+<td>$\{\pm e_t\}=\mathbb{Z}_2$</td>
+<td>$12$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The left copy and the $2\times2$ display are faithful; the conjugation is two-to-one, and the quotient is the rotation group. The three rows are the three addresses of the meaning note, counted.</p>
+<h2 id="5-case-4-the-three-half-turns">5. Case 4: The Three Half-Turns</h2>
+<p><strong>The arrays.</strong> At $\vec n=\vec e_k$ and $\varphi=\pi$ the rotor is the unit itself, and the left displays are signed permutations:</p>
+<p>$$
+L(\vec e_x)=
+\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},
+\qquad
+L(\vec e_y)=
+\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},
+\qquad
+L(\vec e_z)=
+\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+$$</p>
+<p><strong>The properties.</strong> Each is real orthogonal of determinant one, each is antisymmetric, and each squares to minus the identity:</p>
+<p>$$
+L(\vec e_k)^{\mathsf T}=-L(\vec e_k),\qquad L(\vec e_k)^{2}=-\mathrm I_4,
+$$</p>
+<p>exactly. They multiply as the units do, $L(\vec e_x)L(\vec e_y)=L(\vec e_z)$ and cyclically, so the eight units $\pm e_t,\pm\vec e_k$ give eight signed permutation matrices forming a copy of the quaternion group $Q_8$ inside $SO(4)$ — the left regular representation of the group, seen as a matrix group.</p>
+<p><strong>The conjugations.</strong> Each half-turn reverses the two axes orthogonal to its own, since $\vec e_k^{-1}=-\vec e_k$:</p>
+<p>$$
+\mathrm{Ad}_{\vec e_x}=\operatorname{diag}(1,1,-1,-1),\qquad
+\mathrm{Ad}_{\vec e_y}=\operatorname{diag}(1,-1,1,-1),\qquad
+\mathrm{Ad}_{\vec e_z}=\operatorname{diag}(1,-1,-1,1),
+$$</p>
+<p>in the coefficient order $(e_t,\vec e_x,\vec e_y,\vec e_z)$, each verified exactly: the unit coordinate keeps $+1$, the axis keeps $+1$, and the two orthogonal coordinates get $-1$. Each has determinant one and square one. <strong>These are the three half-turns of $\mathbb{R}^3$</strong>, and together with the identity they form a group of order four, not eight: two half-turns compose to a half-turn, and the three generate nothing further.</p>
+<p><strong>The lesson.</strong> At the half-turns $\pm\vec e_k$ the left display is antisymmetric and the conjugation is diagonal. Both statements are exact, and both fail away from them: the antisymmetry of $L$ holds at $c=0$ and nowhere else, and away from the axes the conjugation has off-diagonal entries.</p>
+<h2 id="6-case-5-a-rotor-rodrigues-and-the-two-angles">6. Case 5: A Rotor, Rodrigues, and the Two Angles</h2>
+<p><strong>The claim.</strong> For every real unit $\vec n$ and real $\varphi$,</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u)^{\mathsf T}L_{\mathrm{axf}}(\tilde u)=\mathrm I_4,\qquad
+\det L_{\mathrm{axf}}(\tilde u)=1,\qquad
+\operatorname{tr}L_{\mathrm{axf}}(\tilde u)=4\cos\tfrac{\varphi}{2},
+$$</p>
+<p>$$
+\operatorname{spec}L_{\mathrm{axf}}(\tilde u)=\Bigl\{e^{i\varphi/2},\,e^{-i\varphi/2}\Bigr\}\ \text{twice},\qquad
+\operatorname{spec}\mathrm{Ad}_{\tilde u}=\Bigl\{1,\,1,\,e^{i\varphi},\,e^{-i\varphi}\Bigr\}.
+$$</p>
+<p>All checked on $100$ random rotors to $10^{-12}$, and symbolically in $c,s,\vec n$.</p>
+<p><strong>The table.</strong> With $\vec n=(1,2,3)/\sqrt{14}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\varphi$</th>
+<th>$\operatorname{tr}L$</th>
+<th>$\operatorname{spec}L$</th>
+<th>$\operatorname{spec}\mathrm{Ad}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$4$</td>
+<td>$1,1,1,1$</td>
+<td>$1,1,1,1$</td>
+</tr>
+<tr>
+<td>$\tfrac{\pi}{3}$</td>
+<td>$2\sqrt3=3.4641$</td>
+<td>$e^{\pm i\pi/6}$, twice</td>
+<td>$1,1,e^{\pm i\pi/3}$</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>$0$</td>
+<td>$i,i,-i,-i$</td>
+<td>$1,1,-1,-1$</td>
+</tr>
+<tr>
+<td>$2\pi$</td>
+<td>$-4$</td>
+<td>$-1,-1,-1,-1$</td>
+<td>$1,1,1,1$</td>
+</tr>
+<tr>
+<td>$4\pi$</td>
+<td>$4$</td>
+<td>$1,1,1,1$</td>
+<td>$1,1,1,1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two angles.</strong> The element carries $\tfrac{\varphi}{2}$ and the rotation carries $\varphi$. The pair $(c,s)=\bigl(\cos\tfrac{\varphi}{2},\sin\tfrac{\varphi}{2}\bigr)$ appears in the display, and the pair $\bigl(\cos\varphi,\sin\varphi\bigr)=\bigl(c^{2}-s^{2},2cs\bigr)$ appears in the conjugation. <strong>The doubling is a squaring of the angle, and it is the whole content of the two-to-one map</strong>; writing $L$ in terms of $\cos\varphi$ is impossible without a square root.</p>
+<p><strong>The parameter count.</strong> $(\vec n,\varphi)\mapsto\tilde u$ is three real dimensional, onto the unit sphere, and two-to-one because $\varphi$ and $\varphi+2\pi$ give $\pm\tilde u$. The three real parameters are the three of $\mathfrak{su}(2)$; the group is a three-sphere and the rotation group a projective space's worth of it.</p>
+<h2 id="7-case-6-a-full-turn">7. Case 6: A Full Turn</h2>
+<p><strong>The element.</strong> At $\varphi=2\pi$,</p>
+<p>$$
+\tilde u=\cos\pi\,e_t+\sin\pi\,\vec n=-e_t .
+$$</p>
+<p><strong>The arrays.</strong></p>
+<p>$$
+L_{-e_t}=-\mathrm I_4,\qquad M_2(-e_t)=-\mathrm I_2,\qquad \mathrm{Ad}_{-e_t}=\mathrm I_4,
+$$</p>
+<p>the first and second exact, the third to $2.4\times10^{-16}$: $\mathrm{Ad}_{-e_t}=L_{-e_t}R_{(-e_t)^{-1}}=(-\mathrm I_4)(-\mathrm I_4)$.</p>
+<p><strong>What the case says.</strong> A full turn of the rotor is a minus sign on every display that carries the element, and the identity on the conjugation. At $\varphi=4\pi$ all three arrays are the identity. <strong>The sign is invisible to the rotation and visible to the two one-sided copies.</strong> That is the exact sense in which $\mathrm{SU}(2)$ is a double cover: the two elements $\pm\tilde u$ have one conjugation and two displays, so the display distinguishes the two preimages of the identity rotation and the conjugation does not.</p>
+<p><strong>The same fact in the Peirce frame.</strong> In the frame of §10 the display at $\varphi=2\pi$ is $\operatorname{diag}(-1,-1,-1,-1)$ and the conjugation is the identity: a phase $-1$ on each of the two ideals, which is what "the spinor changes sign" means concretely.</p>
+<h2 id="8-case-7-an-order-three-element">8. Case 7: An Order-Three Element</h2>
+<p><strong>The element.</strong> Take</p>
+<p>$$
+\tilde u=\tfrac12\bigl(e_t+\vec e_x+\vec e_y+\vec e_z\bigr),\qquad \tilde u^{\natural}=\tfrac12\bigl(e_t-\vec e_x-\vec e_y-\vec e_z\bigr),
+$$</p>
+<p>a unit, with $\tilde u^{3}=\pm e_t$: it is the rotor of the rotation by $\tfrac{2\pi}{3}$ about the diagonal.</p>
+<p><strong>The display.</strong></p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u)=\tfrac12
+\begin{pmatrix}
+1&-1&-1&-1\\
+1&1&-1&1\\
+1&1&1&-1\\
+1&-1&1&1
+\end{pmatrix},
+\qquad
+L^{2}=\tfrac12
+\begin{pmatrix}
+-1&-1&-1&-1\\
+1&-1&-1&1\\
+1&1&-1&-1\\
+1&-1&1&-1
+\end{pmatrix},
+\qquad
+L^{3}=-\mathrm I_4 .
+$$</p>
+<p>So $L$ has order six and eigenvalues $e^{\pm i\pi/3}$, each twice, while $\tilde u$ has order three up to sign. <strong>The display doubles the order of the element</strong>, exactly as the full turn of §7 doubles a sign.</p>
+<p><strong>The conjugation.</strong></p>
+<p>$$
+\mathrm{Ad}_{\tilde u}=
+\begin{pmatrix}1&0&0&0\\0&0&0&1\\0&1&0&0\\0&0&1&0\end{pmatrix},
+\qquad
+\mathrm{Ad}_{\tilde u}^{\,2}=
+\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&0&0&1\\0&1&0&0\end{pmatrix},
+$$</p>
+<p>with the cube the identity to $7\times10^{-16}$: the cycle $\vec e_x\mapsto\vec e_y\mapsto\vec e_z\mapsto\vec e_x$, of order three, eigenvalues $1,1,\omega,\omega^{2}$ with $\omega=e^{2\pi i/3}$.</p>
+<p><strong>The Conway array.</strong> Since $\mathrm{Ad}_{\tilde u}=L_{\tilde u}R_{\tilde u^{\natural}}$ and $\tilde u^{\natural}$ has the three vector signs reversed, $c_{\mu\nu}=\pm\tfrac14$ and all sixteen entries are non-zero:</p>
+<p>$$
+c=\tfrac14
+\begin{pmatrix}
+1&-1&-1&-1\\
+1&-1&-1&-1\\
+1&-1&-1&-1\\
+1&-1&-1&-1
+\end{pmatrix},
+$$</p>
+<p>of rank one. <strong>Sixteen non-zero words, one word needed</strong>: sparsity and length are different questions, and this element separates them in the length-one stratum.</p>
+<p><strong>What it does to the generators.</strong> Conjugating the operators as operators,</p>
+<p>$$
+\mathrm{ad}_{\vec e_x}\mapsto\mathrm{ad}_{\vec e_y}\mapsto\mathrm{ad}_{\vec e_z}\mapsto\mathrm{ad}_{\vec e_x},
+$$</p>
+<p>with coefficient exactly one and no signs, because the map is an automorphism of the Lie algebra and the triple is cycled. This is the case that forbids naming an axis: the automorphism group of the algebra acts as the full symmetric group on the triple, and this element is one of its rotations.</p>
+<h2 id="9-case-8-the-twenty-four-unit-quaternions">9. Case 8: The Twenty-Four Unit Quaternions</h2>
+<p><strong>The elements.</strong> The unit quaternions are $\pm e_t$, $\pm\vec e_k$, and the sixteen $\tfrac12(\pm e_t\pm\vec e_x\pm\vec e_y\pm\vec e_z)$.</p>
+<p><strong>The displays.</strong> Computing $L_{\mathrm{axf}}$ for all twenty-four gives <strong>twenty-four distinct arrays</strong>, because the left copy is faithful. Every one is real orthogonal of determinant one, hence in $SO(4)$. The eight units $\pm e_t,\pm\vec e_k$ give signed permutation matrices; the sixteen others give matrices whose entries are all $\pm\tfrac12$. Verified: $24$ distinct, all orthogonal to $10^{-12}$, all of determinant one to $10^{-12}$, $8$ monomial.</p>
+<p><strong>The conjugations.</strong> Computing $\mathrm{Ad}$ for all twenty-four gives <strong>twelve</strong> distinct rotations, because $\mathrm{Ad}_{-\tilde u}=\mathrm{Ad}_{\tilde u}$. Each is of the form $\operatorname{diag}(1,\Pi)$ with $\Pi$ a signed permutation in $SO(3)$.</p>
+<p><strong>The reading.</strong> One group of order twenty-four has three images: a subgroup of $SO(4)$ of order twenty-four, a subgroup of $SO(3)$ of order twelve, and itself. The two copies differ by the centre: the binary tetrahedral group $2T$ maps onto the tetrahedral rotation group $T$, and the fibre is $\{\pm e_t\}$. The count of twenty-four unit quaternions in the corpus becomes a count of twenty-four operators and twelve rotations, and the factor two is the kernel of §4.</p>
+<h2 id="10-case-9-the-peirce-frame-where-the-half-angle-is-diagonal">10. Case 9: The Peirce Frame, Where the Half Angle Is Diagonal</h2>
+<p><strong>The frame.</strong> With the root $\vec\Xi=i\vec e_z$ and $\vec\Xi^{2}=e_t$, the Peirce frame is</p>
+<p>$$
+\tilde\Pi_+=\tfrac12\bigl(e_t+i\vec e_z\bigr),\quad
+\vec\Upsilon_+=\tfrac12\bigl(i\vec e_x+\vec e_y\bigr),\quad
+\vec\Upsilon_-=\tfrac12\bigl(i\vec e_x-\vec e_y\bigr),\quad
+\tilde\Pi_-=\tfrac12\bigl(e_t-i\vec e_z\bigr).
+$$</p>
+<p>Each frame vector is a null element, $N=0$, and each is an eigenvector of the left multiplication by $\vec e_z$:</p>
+<p>$$
+L_{\vec e_z}\tilde\Pi_+=-i\tilde\Pi_+,\qquad
+L_{\vec e_z}\vec\Upsilon_+=+i\vec\Upsilon_+,\qquad
+L_{\vec e_z}\vec\Upsilon_-=-i\vec\Upsilon_-,\qquad
+L_{\vec e_z}\tilde\Pi_-=+i\tilde\Pi_-,
+$$</p>
+<p>all exact.</p>
+<p><strong>The left copy.</strong> Hence for the rotor $\tilde u=c\,e_t+s\,\vec e_z$,</p>
+<p>$$
+L_{\tilde u}\big|_{\text{Peirce}}=\operatorname{diag}\bigl(e^{-i\varphi/2},\,e^{+i\varphi/2},\,e^{-i\varphi/2},\,e^{+i\varphi/2}\bigr),
+$$</p>
+<p>and the right copy, computed the same way,</p>
+<p>$$
+R_{\tilde u}\big|_{\text{Peirce}}=\operatorname{diag}\bigl(e^{-i\varphi/2},\,e^{-i\varphi/2},\,e^{+i\varphi/2},\,e^{+i\varphi/2}\bigr),
+$$</p>
+<p>and the conjugation</p>
+<p>$$
+\mathrm{Ad}_{\tilde u}\big|_{\text{Peirce}}=\operatorname{diag}\bigl(1,\,e^{i\varphi},\,e^{-i\varphi},\,1\bigr).
+$$</p>
+<p>Verified to $0$ exactly at $\varphi=\tfrac{\pi}{3}$, $0.9$ and $2\pi$. <strong>In this frame both one-sided copies are diagonal and the half angle is the whole of the spectrum</strong>; in the coefficient frame the same operators look like rotations by $\tfrac{\varphi}{2}$ of two planes. The two descriptions are one operator, and the frame decides which of the two is visible. The diagonal shapes are the tensor displays: $L$ is $\mathrm I_2\otimes$ and $R$ is $\otimes\,\mathrm I_2$, the two Kronecker factors of the corpus.</p>
+<p><strong>The $2\times2$ display is the left copy on one ideal.</strong> For general $\vec n$,</p>
+<p>$$
+M_2(\tilde u)=
+\begin{pmatrix}
+c-isn_z&-s\,(n_y+in_x)\\
+s\,(n_y-in_x)&c+isn_z
+\end{pmatrix},
+$$</p>
+<p>unitary of determinant one to $1.1\times10^{-16}$, and for $\vec n=\vec e_z$ the left copy on the ideal $S_+=\mathbb{B}\tilde\Pi_+$ is the scalar $c-is$: the eigenvalue $-i$ of $L_{\vec e_z}$ on $\tilde\Pi_+$ is the entry $-i$ of $M_2(\vec e_z)$. <strong>That is the isomorphism</strong> between the unit elements and $\mathrm{SU}(2)$, read as the left copy on one ideal: the same three parameters, the same product, the same unimodularity. And it is why the left copy can be faithful while the conjugation is two-to-one — the ideal is a half of the algebra, and the phase that the conjugation discards is exactly the phase that acts on the ideal.</p>
+<h2 id="11-case-10-particular-biquaternions">11. Case 10: Particular Biquaternions</h2>
+<p>Take the rotor at $\varphi=\tfrac{\pi}{3}$ about $\vec n=(1,1,0)/\sqrt2$,</p>
+<p>$$
+\tilde u=\cos\tfrac{\pi}{6}\,e_t+\sin\tfrac{\pi}{6}\,\vec n=\tfrac{\sqrt3}{2}e_t+\tfrac{\sqrt2}{4}\bigl(\vec e_x+\vec e_y\bigr),
+$$</p>
+<p>whose conjugation block is</p>
+<p>$$
+\mathrm{Ad}_{\tilde u}=
+\begin{pmatrix}
+1&0&0&0\\
+0&\tfrac34&\tfrac14&\tfrac{\sqrt6}{4}\\
+0&\tfrac14&\tfrac34&-\tfrac{\sqrt6}{4}\\
+0&-\tfrac{\sqrt6}{4}&\tfrac{\sqrt6}{4}&\tfrac12
+\end{pmatrix},
+$$</p>
+<p>numerically the rotation by $\tfrac{\pi}{3}$ about $\vec n$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde Q$</th>
+<th>$L\tilde Q$</th>
+<th>$R\tilde Q$</th>
+<th>$\mathrm{Ad}\tilde Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$(0.8660,\;0.3536,\;0.3536,\;0)$</td>
+<td>$(0.8660,\;0.3536,\;0.3536,\;0)$</td>
+<td>$(1,\;0,\;0,\;0)$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$(-0.3536,\;0.8660,\;0,\;-0.3536)$</td>
+<td>$(-0.3536,\;0.8660,\;0,\;0.3536)$</td>
+<td>$(0,\;0.75,\;0.25,\;-0.6124)$</td>
+</tr>
+<tr>
+<td>$i\vec e_x$</td>
+<td>$i\,(-0.3536,\;0.8660,\;0,\;-0.3536)$</td>
+<td>$i\,(-0.3536,\;0.8660,\;0,\;0.3536)$</td>
+<td>$i\,(0,\;0.75,\;0.25,\;-0.6124)$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+$</td>
+<td>$(0.4330,\;0.1768+0.1768i,\;0.1768-0.1768i,\;0.4330i)$</td>
+<td>$(0.4330,\;0.1768-0.1768i,\;0.1768+0.1768i,\;0.4330i)$</td>
+<td>$(0.5,\;0.3062i,\;-0.3062i,\;0.25i)$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_-$</td>
+<td>$(0.4330,\;0.1768-0.1768i,\;0.1768+0.1768i,\;-0.4330i)$</td>
+<td>$(0.4330,\;0.1768+0.1768i,\;0.1768-0.1768i,\;-0.4330i)$</td>
+<td>$(0.5,\;-0.3062i,\;0.3062i,\;-0.25i)$</td>
+</tr>
+<tr>
+<td>$e_t+i\vec e_z$</td>
+<td>$(0.8660,\;0.3536+0.3536i,\;0.3536-0.3536i,\;0.8660i)$</td>
+<td>$(0.8660,\;0.3536-0.3536i,\;0.3536+0.3536i,\;0.8660i)$</td>
+<td>$(1,\;0.6124i,\;-0.6124i,\;0.5i)$</td>
+</tr>
+<tr>
+<td>$\vec e_x+\vec e_y$</td>
+<td>$(-0.7071,\;0.8660,\;0.8660,\;0)$</td>
+<td>$(-0.7071,\;0.8660,\;0.8660,\;0)$</td>
+<td>$(0,\;1,\;1,\;0)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading the rows.</strong></p>
+<p><em>The unit is fixed by the conjugation and carried by the multiplications.</em> Row one: $\mathrm{Ad}_{\tilde u}e_t=e_t$ exactly, for every element; and $L_{\tilde u}e_t=\tilde u$ and $R_{\tilde u}e_t=\tilde u$, the element itself in both cases. The first column of the left display is the element.</p>
+<p><em>The two sides differ by the axial sign, and only where the vector is not parallel to the axis.</em> Rows two and three: $\vec e_x$ goes to the same coefficients on both sides except in the last slot, $(\mp0.3536)$, which is the image of the axial term $s\,\vec n\times\vec e_x$. Last row: $\vec e_x+\vec e_y$ is parallel to $\vec n$, the cross product vanishes, and the two sides agree exactly. <strong>The whole difference between the left and the right copy of a rotor is the cross product with the axis</strong>, which is the coefficient of $\mathsf A$.</p>
+<p><em>The ideal survives the left copy; the idempotent does not.</em> Rows four and five: $L_{\tilde u}\tilde\Pi_+$ stays in the left ideal, $(\tilde u\tilde\Pi_+)\tilde\Pi_+=\tilde u\tilde\Pi_+$ to $0$ exactly, but</p>
+<p>$$
+\bigl(\tilde u\tilde\Pi_+\bigr)^{2}-\tilde u\tilde\Pi_+\ \text{has norm}\ 0.0580\ne0,
+$$</p>
+<p>so the image of a projector is not a projector. The left copy preserves the linear structure of the ideal and destroys the multiplicative structure inside it.</p>
+<p><em>The conjugation carries an idempotent to an idempotent.</em> Row four, last column:</p>
+<p>$$
+\mathrm{Ad}_{\tilde u}\tilde\Pi_+=\tfrac12\bigl(e_t+iR\vec e_z\bigr),\qquad R\vec e_z=(0.6124,\,-0.6124,\,0.5),
+$$</p>
+<p>to $3\times10^{-18}$: the projector of the rotated root. Because $\mathrm{Ad}$ is an automorphism, it permutes the idempotents and moves the null cone to itself — the opposite of what the left copy does, and the two statements are about the same element.</p>
+<p><em>The null elements.</em> Row six: $e_t+i\vec e_z$ has $N=0$. Its image under $L$ has $N=0$ as well, since $N(\tilde u\tilde Q)=N(\tilde u)N(\tilde Q)$ and $N(\tilde u)=1$; its image under $\mathrm{Ad}$ has $N=0$ too, since $\mathrm{Ad}$ preserves the product. The null cone is stable under all three, and the reason differs: multiplicativity of $N$ for the one-sided copies, automorphism for the conjugation. In the $\mathrm{SU}(3)$ note the same cone was <em>not</em> stable, and that is the sharpest contrast between the two groups.</p>
+<h2 id="12-case-11-what-each-copy-preserves">12. Case 11: What Each Copy Preserves</h2>
+<p><strong>The three lists.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>$L_{\tilde u}$</th>
+<th>$R_{\tilde u}$</th>
+<th>$\mathrm{Ad}_{\tilde u}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the product</td>
+<td>no ($1.0$)</td>
+<td>no</td>
+<td>yes ($0$)</td>
+</tr>
+<tr>
+<td>the norm $N$</td>
+<td>yes, if $N(\tilde u)=1$</td>
+<td>yes, if $N(\tilde u)=1$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the form $\langle\cdot\rangle_{*}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the scalar part of $\tilde Q$</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the left ideals</td>
+<td>yes</td>
+<td>no</td>
+<td>yes, permuted</td>
+</tr>
+<tr>
+<td>the idempotents</td>
+<td>no</td>
+<td>no</td>
+<td>yes, permuted</td>
+</tr>
+<tr>
+<td>the null cone</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The product.</strong> With $X=\vec e_x$, $Y=\vec e_y$ and $\tilde u$ the rotor of §11,</p>
+<p>$$
+L_{\tilde u}(XY)\ne L_{\tilde u}(X)\,L_{\tilde u}(Y),\qquad\text{residual }1.0,
+$$</p>
+<p>whereas</p>
+<p>$$
+\mathrm{Ad}_{\tilde u}(XY)=\mathrm{Ad}_{\tilde u}(X)\,\mathrm{Ad}_{\tilde u}(Y)
+$$</p>
+<p>to $0$ exactly. <strong>The left copy is a linear isomorphism of the carrier and not an algebra map</strong>; only the conjugation is an automorphism. This is the operator-level form of "$L$ and $R$ are not $\mathbb{B}$-linear".</p>
+<p><strong>The norm.</strong> $N(L_{\tilde u}\tilde Q)=N(\tilde u)N(\tilde Q)$, and $\det L_{\mathrm{axf}}(\tilde Q)=N(\tilde Q)^{2}$, verified on a general complex element to $10^{-14}$. So the display carries the norm as its determinant up to a square, and the norm is preserved exactly when the element is a unit. And $\langle\tilde Q\rangle_{*}$ is preserved by every $L$ and $R$ of a unit, because those displays are orthogonal, and by every conjugation, because a rotation is.</p>
+<p><strong>The scalar part.</strong> The left copy sends $Q_t$ to $cQ_t-s\vec n\cdot\vec Q$: the scalar part is not preserved, and the failure is exactly the axial coupling. The conjugation leaves it alone. So the statement "the group acts on the vector part" is true of the conjugation and false of the one-sided copies, and the two statements are both in the corpus.</p>
+<h2 id="13-case-12-a-hermitian-element-and-why-unitarity-is-the-condition">13. Case 12: A Hermitian Element, and Why Unitarity Is the Condition</h2>
+<p><strong>The element.</strong> The boost of the spin articles is Hermitian and of norm one:</p>
+<p>$$
+b=\cosh\tfrac{\phi}{2}\,e_t+i\sinh\tfrac{\phi}{2}\,\vec e_x,\qquad b^{*}=b,\qquad N(b)=\cosh^{2}\tfrac{\phi}{2}-\sinh^{2}\tfrac{\phi}{2}=1,\qquad b^{-1}=b^{\natural}.
+$$</p>
+<p><strong>The left display.</strong> With $\phi=0.8$, so that $\cosh\tfrac{\phi}{2}=1.0811$ and $\sinh\tfrac{\phi}{2}=0.4108$,</p>
+<p>$$
+L_b=
+\begin{pmatrix}
+1.0811&-0.4108i&0&0\\
+0.4108i&1.0811&0&0\\
+0&0&1.0811&-0.4108i\\
+0&0&0.4108i&1.0811
+\end{pmatrix},
+$$</p>
+<p>which is <strong>not</strong> unitary: $L_b^{\mathsf T}L_b-\mathrm I_4$ has norm $0.8881$, and $L_b^{\mathsf T}=L_{b^{\natural}}\ne L_b^{-1}$. It is of determinant one to $10^{-16}$, because $\det L=N(b)^{2}$.</p>
+<p><strong>The conjugation.</strong></p>
+<p>$$
+\mathrm{Ad}_b=
+\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&\cosh\phi&-i\sinh\phi\\
+0&0&i\sinh\phi&\cosh\phi
+\end{pmatrix},
+$$</p>
+<p>with eigenvalues $1,1,e^{\phi},e^{-\phi}=1,1,2.2255,0.4493$: real, not unimodular. It is not a rotation and not unitary; it preserves the product, hence the bilinear form, $A^{\mathsf T}DA=D$ to $4\times10^{-16}$ with $D=\operatorname{diag}(1,-1,-1,-1)$, and it preserves $N$ to $4\times10^{-16}$.</p>
+<p><strong>The reading.</strong> The same corner of $M_4(\mathbb{C})$ contains both the compact and the non-compact picture: a unit element of the algebra always conjugates, always gives an automorphism, and always preserves $N$, but the display is unitary only for the unit elements in the $*$-sense, $u^{*}u=e_t$. <strong>The condition that selects $\mathrm{SU}(2)$ is $u^{*}u=e_t$ and not $N(u)=1$</strong>, and the boost is the element that separates the two conditions. The pair of conditions is the one the meaning note states; here it is a pair of matrices.</p>
+<h2 id="14-case-13-transpose-adjoint-inverse">14. Case 13: Transpose, Adjoint, Inverse</h2>
+<p><strong>The identities.</strong> For every element, not only the units,</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=L_{\mathrm{axf}}\bigl(\tilde Q^{\natural}\bigr),\qquad
+R_{\mathrm{axf}}(\tilde Q)^{\mathsf T}=R_{\mathrm{axf}}\bigl(\tilde Q^{\natural}\bigr),
+$$</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde Q)^{\dagger}=L_{\mathrm{axf}}\bigl(\tilde Q^{*}\bigr),\qquad
+R_{\mathrm{axf}}(\tilde Q)^{\dagger}=R_{\mathrm{axf}}\bigl(\tilde Q^{*}\bigr),
+$$</p>
+<p>both pairs exact on a random complex element, and the stitch</p>
+<p>$$
+R_{\mathrm{axf}}(\tilde Q)=D\,L_{\mathrm{axf}}(\tilde Q)^{\mathsf T}D,\qquad D=\operatorname{diag}(1,-1,-1,-1),
+$$</p>
+<p>exact too: the right display is the transpose of the left one conjugated by the Gram matrix of $\beta(\tilde X,\tilde Y)=\operatorname{Sc}(\tilde X\tilde Y)$.</p>
+<p><strong>The consequences for a unit.</strong> Since $\tilde u^{*}=\tilde u^{-1}$ and $\tilde u^{\natural}=\tilde u^{-1}$ for a real unit,</p>
+<p>$$
+L^{\dagger}=L^{-1}=L^{\mathsf T},\qquad \mathrm{Ad}^{\mathsf T}=\mathrm{Ad}^{-1},
+$$</p>
+<p>the first to $2.2\times10^{-16}$, the second to $1.1\times10^{-16}$. So the display of a rotor is orthogonal, its inverse is its transpose, and the conjugation is orthogonal as well. <strong>Transpose is the quaternion conjugation and dagger is the $*$-conjugation</strong>: the two involutions of the algebra are the two involutions of the array, and for a real unit they coincide.</p>
+<h2 id="15-case-14-lengths-of-elements">15. Case 14: Lengths of Elements</h2>
+<p>The length is the rank of the Conway array.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>length</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde u}$, any $\tilde u$</td>
+<td>$1$</td>
+<td>$L_{\tilde u}=\tilde u[\,]e_t$, one word</td>
+</tr>
+<tr>
+<td>$R_{\tilde u}$, any $\tilde u$</td>
+<td>$1$</td>
+<td>$R_{\tilde u}=e_t[\,]\tilde u$, one word</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde u}$, any unit</td>
+<td>$1$</td>
+<td>$\mathrm{Sd}_{\tilde u}=L_{\tilde u}R_{\tilde u^{\natural}}$</td>
+</tr>
+<tr>
+<td>$L$ of a general complex element</td>
+<td>$1$</td>
+<td>the same trivial word</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}$ of a general complex element $a$</td>
+<td>$1$</td>
+<td>$a[\,]a^{\natural}/N(a)$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\vec e_k}$</td>
+<td>$2$</td>
+<td>$L_{\vec e_k}-R_{\vec e_k}$, two words with opposite signs</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one fact to keep.</strong> The length-one stratum is the <strong>whole</strong> of this note: every one-sided multiplication is a single word by construction, and every conjugation by a unit is a single word because the unit is its own inverse up to the natural conjugation. In the $\mathrm{SU}(3)$ note the length-one stratum was a three-dimensional subgroup of an eight-dimensional group; here there is nothing outside it. The reason is structural: $\mathrm{SU}(2)$ is the group <em>of the algebra's own units</em>, so its operators are words, whereas five of the eight $\mathrm{SU}(3)$ directions have no biquaternion behind them and are the ones of length four.</p>
+<p><strong>The one length that is not one.</strong> The derivations are two words: $\mathrm{ad}_{\vec e_k}=L_{\vec e_k}-R_{\vec e_k}$ has Conway array $c_{\mu\nu}=\delta_{\mu k}\delta_{\nu 0}-\delta_{\mu 0}\delta_{\nu k}$, of rank two. Conjugating that operator by a rotor keeps the length at two, because an automorphism permutes the sixteen words and cannot change a rank: verified on the rotor of §11, whose conjugate of $\mathrm{ad}_{\vec e_z}$ has Conway array of rank two.</p>
+<h2 id="16-what-the-cases-establish">16. What the Cases Establish</h2>
+<p><strong>The pattern.</strong> Reading the cases together:</p>
+<ol>
+<li>Every element of $\mathrm{SU}(2)$ has three operator addresses, and the three are one group of matrices of orders $4$, $4$ and $4$: the left display, the right display, and the conjugation, all real orthogonal of determinant one. The element itself has a $2\times2$ display, unitary of determinant one.</li>
+<li>The left and the right copy of one rotor differ by the sign of the axial matrix $\mathsf A(\vec n)$, and the conjugation has no axial sign left because the two cancel. The axial matrix is the whole off-scalar content of the display: every other entry of $L_{\mathrm{axf}}(\tilde u)$ is a scalar multiple of a coordinate.</li>
+<li>The half angle $\tfrac{\varphi}{2}$ lives in the element and in the one-sided displays; the angle $\varphi$ lives in the conjugation. The squaring of the angle is the squaring of $c+is$ into $c^{2}-s^{2}+2ics$, and it is the reason $\mathrm{SU}(2)$ is a double cover.</li>
+<li>The conjugation is faithful only up to sign: $24$ units give $24$ left displays and $12$ conjugations, and the kernel is $\{\pm e_t\}$.</li>
+<li>The left copy is a linear isomorphism and not an algebra map; the conjugation is the algebra map. Everything that the group preserves as an algebra — products, idempotents, the null cone, the scalar part — is preserved by $\mathrm{Ad}$ and destroyed by $L$ and $R$; everything it preserves as a metric — the norm $N$, the definite form, orthogonality — is preserved by all three on the group.</li>
+<li>Every element of the group has length one, in all three addresses, and the derivations are the only objects of length two.</li>
+</ol>
+<p><strong>The boundary, in one matrix.</strong> The left display of a rotor is a $4\times4$ real orthogonal matrix whose block is $c\,\mathrm I_3+s\mathsf A(\vec n)$: three parameters, one of them the angle and two the axis, with the axial matrix carrying the axis. The conjugation is the same three parameters in the Rodrigues block, and the sign that tells them apart is one. <strong>One element, one axis, one angle, four arrays, and a single sign between the two sides</strong> — that is the whole content of $\mathrm{SU}(2)$ inside the endomorphisms, computed case by case.</p>
+<h2 id="verification">Verification</h2>
+<p>All numbers above were computed on the sixteen Conway words in the coefficient basis with $M(\vec e_k)=-i\sigma_k$, symbolically where a formula is claimed and in floating point everywhere.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L^{\mathsf T}L=\mathrm I_4$, $\det L=1$, $\operatorname{tr}L=4\cos\tfrac{\varphi}{2}$ on $100$ random rotors</td>
+<td>$10^{-12}$; exact</td>
+</tr>
+<tr>
+<td>the block form of $L$ and $R$ in $c,s,\vec n$</td>
+<td>exact (symbolic)</td>
+</tr>
+<tr>
+<td>$\mathsf A^{2}=\vec n\vec n^{\mathsf T}-\mathrm I_3$, $\mathsf A^{3}=-\mathsf A$, $\det(c\mathrm I+s\mathsf A)=c$</td>
+<td>$10^{-16}$; exact</td>
+</tr>
+<tr>
+<td>Rodrigues block of $\mathrm{Ad}_{\tilde u}$</td>
+<td>$5.6\times10^{-16}$ (symbolic too)</td>
+</tr>
+<tr>
+<td>left action on a general $\tilde Q$ equals the block times the column</td>
+<td>$1.1\times10^{-16}$</td>
+</tr>
+<tr>
+<td>conjugation leaves the scalar coefficient and rotates the vector</td>
+<td>$1.1\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$L_{-\tilde u}=-L_{\tilde u}$, $\mathrm{Ad}_{-\tilde u}=\mathrm{Ad}_{\tilde u}$</td>
+<td>exact; $2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$L_{\lambda\tilde u}=\lambda L_{\tilde u}$, $\mathrm{Ad}_{\lambda\tilde u}=\mathrm{Ad}_{\tilde u}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$24$ units: $24$ distinct $L$, $12$ distinct $\mathrm{Ad}$, all orthogonal of determinant one</td>
+<td>exact; $10^{-12}$</td>
+</tr>
+<tr>
+<td>$L(\vec e_k)^{\mathsf T}=-L(\vec e_k)$, $L(\vec e_k)^{2}=-\mathrm I_4$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$L^{3}=-\mathrm I_4$ for the order-three element; three $3$-cycles with unit coefficients</td>
+<td>$7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>Peirce frame: $L$, $R$, $\mathrm{Ad}$ diagonal with $e^{\mp i\varphi/2}$, $e^{\mp i\varphi}$</td>
+<td>$0$ at three angles</td>
+</tr>
+<tr>
+<td>$M_2(\tilde u)$ unitary, $\det=1$</td>
+<td>$1.1\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$(L\tilde\Pi_+)\tilde\Pi_+=L\tilde\Pi_+$; $(\tilde u\tilde\Pi_+)^{2}\ne\tilde u\tilde\Pi_+$</td>
+<td>$0$; $0.0580$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde u}\tilde\Pi_+=\tfrac12(e_t+iR\vec e_z)$</td>
+<td>$3\times10^{-18}$</td>
+</tr>
+<tr>
+<td>$L_{\tilde u}(XY)\ne L_{\tilde u}(X)L_{\tilde u}(Y)$; $\mathrm{Ad}$ preserves the product</td>
+<td>$1.0$; $0$</td>
+</tr>
+<tr>
+<td>$\det L=N^{2}$ on a general complex element</td>
+<td>$10^{-14}$</td>
+</tr>
+<tr>
+<td>boost: $L_b$ not unitary; $\mathrm{Ad}_b$ has $e^{\pm\phi}$ and preserves $\beta$</td>
+<td>$0.8881$; $10^{-16}$</td>
+</tr>
+<tr>
+<td>$L^{\mathsf T}=L_{\natural}$, $L^{\dagger}=L_{*}$, $R=DL^{\mathsf T}D$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>lengths: $1,1,1$ for the three addresses; $2$ for $\mathrm{ad}_{\vec e_k}$, $2$ after conjugation</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$\tilde u=c\,e_t+s\,\vec n$</td>
+<td>a rotor: $c=\cos\tfrac{\varphi}{2}$, $s=\sin\tfrac{\varphi}{2}$, $\vec n$ real unit</td>
+</tr>
+<tr>
+<td>$L_{\tilde u}$, $R_{\tilde u}$, $L_{\mathrm{axf}}(\tilde u)$, $R_{\mathrm{axf}}(\tilde u)$</td>
+<td>left and right multiplication, the operator and its axis-free array</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde u}$</td>
+<td>the conjugation $L_{\tilde u}R_{\tilde u^{-1}}$, the rotor proper</td>
+</tr>
+<tr>
+<td>$\mathsf A(\vec n)=[\vec n]_{\times}$</td>
+<td>the axial matrix, $\vec v\mapsto\vec n\times\vec v$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\vec e_k}=L_{\vec e_k}-R_{\vec e_k}$</td>
+<td>the derivation of the unit, of length two</td>
+</tr>
+<tr>
+<td>$M_2(\tilde Q)$</td>
+<td>the $2\times2$ display, $M(e_t)=\mathrm I_2$, $M(\vec e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm$, $\vec\Upsilon_\pm$</td>
+<td>the Peirce frame of the root $i\vec e_z$</td>
+</tr>
+<tr>
+<td>$N$, $\langle\cdot\rangle_{*}$, $\beta$</td>
+<td>$Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$; $\mathrm{Sc}(\tilde Q\tilde Q^{*})$; $\operatorname{Sc}(\tilde X\tilde Y)$ with Gram $D$</td>
+</tr>
+<tr>
+<td>$\natural$, $*$</td>
+<td>the quaternion conjugation $\tilde Q_0-\vec Q$; the composite $\bar{\ }\,\circ\,\natural$</td>
+</tr>
+<tr>
+<td>$c(M)$, $\ell$</td>
+<td>the Conway array and its rank, the length</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em>: the three copies, the brackets, the lengths, the rotor as the group of a spatial dimension.</li>
+<li><em>Worked Cases for $\mathrm{SU}(3)$ inside the Endomorphisms of the Biquaternion Algebra</em>: the same exercise for the group of the vector part, where five of the eight directions have no biquaternion.</li>
+<li><em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</em>, <em>Introduction to the Operators of the Biquaternion Algebra</em>, <em>Operators Acting on One Side</em>, <em>Operators Acting on Two Sides</em>: $L$, $R$, the words, the length.</li>
+<li><em>Adjoint Pair of $L$ and $R$ Operators</em>, <em>The Hermitian Pair of Operators Acting on One Side</em>: the dagger, $\mathrm{Sd}_a$, and the natural conjugation.</li>
+<li><em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>: the signatures $(8,0)$ and $(2,2)$ that §12 and §13 separate.</li>
+<li><em>The Carriers, the Representation, the Spin and the Closure</em>: the Peirce frame, the weights, and the half angle read as a spectrum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

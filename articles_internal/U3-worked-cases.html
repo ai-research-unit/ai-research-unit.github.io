@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Cases for $\mathrm{U}(3)$ inside the Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="Purpose. The Meaning of in the Endomorphisms of the Biquaternion Algebra states the widened corner and its symmetric basis in general. This note does the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-cases-for-math0-inside-the-endomorphisms-of-the-biquaternion-algebra"><strong>Worked Cases for $\mathrm{U}(3)$ inside the Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Purpose.</strong> <em>The Meaning of $\mathrm{U}(3)$ in the Endomorphisms of the Biquaternion Algebra</em> states the widened corner and its symmetric basis in general. This note does the opposite: it writes the arrays of the nine generators, the brackets, the exponentials, the Killing form and the Casimirs, and it recomputes every number quoted there. Two errors in the circulating draft are identified and corrected in place, one algebraic and one group-theoretic, both flagged where they occur.</p>
+<p><strong>The carrier.</strong> $\mathbb B$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$. Operators are written in the sixteen Conway words $e_\mu[\,]e_\nu=L_{e_\mu}R_{e_\nu}$, the length $\ell$ is the number of nonzero coefficients, and all arrays below are in the coefficient basis $(t,x,y,z)$ with $M(e_t)=\mathrm{I}_2$, $M(\vec e_k)=-i\sigma_k$.</p>
+<p><strong>The corner.</strong> $\mathfrak u(3)$ is $\{X:\ X+X^{\dagger}=0,\ Xe_t=0\}$, of real dimension $9$. Its elements have the display $\operatorname{diag}(0,R)$ with $R\in M_3(\mathbb C)$ anti-Hermitian; the traceless ones are $\mathfrak{su}(3)$, and the single extra direction is $iP_V$.</p>
+<p><strong>The cases at a glance.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>object</th>
+<th>what it establishes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the nine generators</td>
+<td>blocks, traces, lengths, Gram</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$iP_V$</td>
+<td>the new direction, its length $4$, its failure to be a derivation</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$u_a$</td>
+<td>the equal-weight triple, three arrays, and the corrected four-word form</td>
+</tr>
+<tr>
+<td>4</td>
+<td>the trace lattice</td>
+<td>four equal-weight diagonal lines, no more</td>
+</tr>
+<tr>
+<td>5</td>
+<td>the cyclic element</td>
+<td>three free orbits of size three</td>
+</tr>
+<tr>
+<td>6</td>
+<td>the brackets</td>
+<td>all constants in $\{0,\pm\frac12,\pm1,\pm2,\pm4\}$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$u$ against $h$ and $K$</td>
+<td>the Cartan in the new letters</td>
+</tr>
+<tr>
+<td>8</td>
+<td>exponentials</td>
+<td>one-parameter families and the central phase</td>
+</tr>
+<tr>
+<td>9</td>
+<td>two group elements</td>
+<td>what $\mathrm{U}(3)$ does to a biquaternion</td>
+</tr>
+<tr>
+<td>10</td>
+<td>the Gram</td>
+<td>orthogonality of the three families, tetrahedral angle</td>
+</tr>
+<tr>
+<td>11</td>
+<td>the Killing form</td>
+<td>rank $8$, radical the centre</td>
+</tr>
+<tr>
+<td>12</td>
+<td>the Casimirs</td>
+<td>$-8/3$ against $-3$</td>
+</tr>
+<tr>
+<td>13</td>
+<td>the limits</td>
+<td>what the widening does not buy</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-the-nine-elements-in-arrays">1. The Nine Elements, in Arrays</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>block on $B_V$</th>
+<th>words</th>
+<th>trace</th>
+<th>$\lVert\cdot\rVert^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_x=L_{\vec e_x}-R_{\vec e_x}$</td>
+<td>$\left(\begin{smallmatrix}0&0&0\\0&0&-2\\0&2&0\end{smallmatrix}\right)$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$A_y$</td>
+<td>$\left(\begin{smallmatrix}0&0&2\\0&0&0\\-2&0&0\end{smallmatrix}\right)$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$A_z$</td>
+<td>$\left(\begin{smallmatrix}0&-2&0\\2&0&0\\0&0&0\end{smallmatrix}\right)$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$S_{xy}$</td>
+<td>$\left(\begin{smallmatrix}0&i&0\\ i&0&0\\0&0&0\end{smallmatrix}\right)$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$S_{xz}$</td>
+<td>$\left(\begin{smallmatrix}0&0&i\\0&0&0\\ i&0&0\end{smallmatrix}\right)$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$S_{yz}$</td>
+<td>$\left(\begin{smallmatrix}0&0&0\\0&0&i\\0&i&0\end{smallmatrix}\right)$</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$u_x$</td>
+<td>$i\operatorname{diag}(-1,1,1)$</td>
+<td>$4$</td>
+<td>$i$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$u_y$</td>
+<td>$i\operatorname{diag}(1,-1,1)$</td>
+<td>$4$</td>
+<td>$i$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$u_z$</td>
+<td>$i\operatorname{diag}(1,1,-1)$</td>
+<td>$4$</td>
+<td>$i$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first six are exactly the generators of the companion note, unchanged. The last three are new, and they are the only ones of length $4$: the Conway ceiling is attained precisely by the equal-weight directions.</p>
+<p><strong>The Gram matrix is block diagonal</strong>, in the order $A,S,u$:</p>
+<p>$$
+G=\begin{pmatrix}8\,\mathrm{I}_3&0&0\\0&2\,\mathrm{I}_3&0\\0&0&4\,\mathrm{I}_3-J_3\end{pmatrix},
+$$</p>
+<p>so the three families are mutually orthogonal for $\langle X,Y\rangle=\operatorname{Re}\operatorname{tr}(X^{\dagger}Y)$, and the third block has eigenvalues $1,4,4$: the direction $u_x+u_y+u_z$ is the short one.</p>
+<p><strong>Rank.</strong> The nine are independent: rank $9$ over $\mathbb R$ by exact elimination, which is one more than the eight of $\mathfrak{su}(3)$ and matches $\dim_{\mathbb R}\mathfrak u(3)=9$.</p>
+<h2 id="2-the-new-generator-math86">2. The New Generator $iP_V$</h2>
+<p><strong>Three arrays.</strong></p>
+<p>$$
+iP_V=\begin{pmatrix}0&0&0&0\\0&i&0&0\\0&0&i&0\\0&0&0&i\end{pmatrix}
+=i\,\frac{3E_t+E_x+E_y+E_z}{4},
+\qquad E_\mu=L_{e_\mu}R_{e_\mu}.
+$$</p>
+<p>The Conway array has four nonzero entries, all on the diagonal words: the coefficients are $\tfrac34i,\tfrac14i,\tfrac14i,\tfrac14i$, so $\ell=4$. The identity behind it is $E_t=\mathrm I_4$ and $E_x+E_y+E_z=\operatorname{diag}(-3,1,1,1)$, giving $3E_t+\sum_aE_a=4P_V$.</p>
+<p><strong>Numbers.</strong> Trace $3i$; Hilbert–Schmidt norm squared $\operatorname{tr}(P_V^{2})=3$; central in $\mathfrak u(3)$, verified as $\lVert[iP_V,X]\rVert<10^{-15}$ for all nine basis elements; fixed by $P$, $\lVert PiP_VP^{-1}-iP_V\rVert=2.4\times10^{-16}$.</p>
+<p><strong>Why it is not a derivation.</strong> Every $L_{\tilde Q}-R_{\tilde Q}$ is traceless — verified for all four $\tilde Q=e_\mu$ and true in general since $\operatorname{tr}L_{\tilde Q}=\operatorname{tr}R_{\tilde Q}=4Q_t$ — and $\operatorname{tr}iP_V=3i\neq0$. Hence $iP_V$ is not inner, and $\operatorname{Der}_{\mathbb C}(\mathbb B)=\mathbb B/\mathbb C e_t$ being all inner, it is not a derivation. It is an operator that rescales the carrier, not one that differentiates the product.</p>
+<h2 id="3-the-equal-weight-triple-three-ways">3. The Equal-Weight Triple, Three Ways</h2>
+<p><strong>Definition and arrays.</strong> With $(a,b,c)$ cyclic,</p>
+<p>$$
+u_a=\tfrac{i}{4}\bigl(E_t+3E_a-E_b-E_c\bigr)=K_a+\tfrac{i}{3}P_V
+=\tfrac{i}{3}\bigl(2E_a-E_b-E_c\bigr)+\tfrac{i}{3}P_V .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>$u_x$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>display</td>
+<td>$\operatorname{diag}(0,-i,i,i)$</td>
+</tr>
+<tr>
+<td>block</td>
+<td>$i\operatorname{diag}(-1,1,1)$</td>
+</tr>
+<tr>
+<td>Conway array</td>
+<td>coefficients $\tfrac14i,\tfrac34i,-\tfrac14i,-\tfrac14i$ on $E_t,E_x,E_y,E_z$, length $4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Verified: the display equals $i\operatorname{diag}(0,-1,1,1)$, the trace is $i$, the three axis entries have modulus $1$, and</p>
+<p>$$
+u_x+u_y+u_z=iP_V,\qquad \det\bigl(\text{axis block}\bigr)=4 .
+$$</p>
+<p>The independence of the three, despite the sum, is exactly the independence of $(-1,1,1)$, $(1,-1,1)$, $(1,1,-1)$, whose determinant is $4$: their sum is $(1,1,1)$, a fourth direction.</p>
+<p><strong>The sign bookkeeping, corrected.</strong> A draft in circulation gives the four-word form as $\tfrac{i}{2}(E_t+E_a-E_b-E_c)$ and checks it by evaluating $\tfrac{i}{2}(1+1-1-1)=0$ on $e_t$. The check is wrong, because $E_a=L_{\vec e_a}R_{\vec e_a}$ acts on the unit as $\vec e_a e_t\vec e_a=\vec e_a^{2}=-e_t$, so $E_a$ contributes $-1$ and not $+1$ at the unit slot. The correct weights follow from the four equations</p>
+<p>$$
+\alpha-\beta-\gamma-\delta=0,\quad
+\alpha-\beta+\gamma+\delta=-4,\quad
+\alpha+\beta-\gamma+\delta=4,\quad
+\alpha+\beta+\gamma-\delta=4,
+$$</p>
+<p>whose solution is $(\alpha,\beta,\gamma,\delta)=(1,3,-1,-1)$: hence $\tfrac{i}{4}$ and not $\tfrac{i}{2}$, and $3E_a$ and not $E_a$. The draft's expression is off by $iE_t$,</p>
+<p>$$
+\tfrac{i}{2}\bigl(E_t+E_a-E_b-E_c\bigr)=u_a+iE_t ,
+$$</p>
+<p>so it is not even in the corner: it gives $ie_t$ on the unit instead of $0$.</p>
+<p><strong>Correct checks of the corrected form.</strong> On $e_t$: $\tfrac{i}{4}(1-3+1+1)=0$. On $e_a$: $\tfrac{i}{4}(1-3-1-1)=-i$. On $e_b$: $\tfrac{i}{4}(1+3+1-1)=+i$.</p>
+<h2 id="4-the-trace-lattice-four-equal-weight-lines">4. The Trace Lattice: Four Equal-Weight Lines</h2>
+<p><strong>The parametrisation.</strong> A real element of the diagonal part of $\mathfrak u(3)$ reads</p>
+<p>$$
+X=i\sum_a\alpha_aE_a+\mu\,iP_V,\qquad \alpha_a\in\mathbb R,\ \sum_a\alpha_a=0,\ \mu\in\mathbb R,
+$$</p>
+<p>so its axis entries are $i(\mu-2\alpha_a)$ and the weights are $\lvert\mu-2\alpha_a\rvert$. Equal weights mean $\mu-2\alpha_a=s_ar$ for a common $r>0$ and signs $s_a=\pm1$.</p>
+<p><strong>The lattice.</strong> Since $\sum_a\alpha_a=0$ forces $\mu=\tfrac13\sum_as_ar=\tfrac r3\sum_as_a$, each sign pattern determines the element, and the eight patterns give four lines, because negating all three signs negates the element:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>signs $(s_x,s_y,s_z)$</th>
+<th>$\mu$</th>
+<th>$(\alpha_x,\alpha_y,\alpha_z)$</th>
+<th>element</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(+,+,+)$</td>
+<td>$r$</td>
+<td>$(0,0,0)$</td>
+<td>$r\,iP_V$</td>
+</tr>
+<tr>
+<td>$(-,+,+)$</td>
+<td>$\tfrac r3$</td>
+<td>$(\tfrac{2r}{3},-\tfrac r3,-\tfrac r3)$</td>
+<td>$r\,u_x$</td>
+</tr>
+<tr>
+<td>$(+,-,+)$</td>
+<td>$\tfrac r3$</td>
+<td>$(-\tfrac r3,\tfrac{2r}{3},-\tfrac r3)$</td>
+<td>$r\,u_y$</td>
+</tr>
+<tr>
+<td>$(+,+,-)$</td>
+<td>$\tfrac r3$</td>
+<td>$(-\tfrac r3,-\tfrac r3,\tfrac{2r}{3})$</td>
+<td>$r\,u_z$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The pattern $(-,-,-)$ gives $r\,iP_V$ with $r<0$, the same line as the first, and the other three rows likewise carry their negatives. So there are exactly four equal-weight lines, one central and three in a single orbit under the cyclic permutation, and the diagonal part of $\mathfrak u(3)$ is exactly three-dimensional: as many dimensions as axes.</p>
+<p><strong>Checked against the triple.</strong> For $u_x$ the parametrisation gives $\alpha_x=\tfrac23$, $\alpha_y=\alpha_z=-\tfrac13$, $\mu=\tfrac13$, hence axis entries $\mu-2\alpha_x=-1$ and $\mu-2\alpha_y=\mu-2\alpha_z=+1$: the display $i\operatorname{diag}(0,-1,1,1)$ of §3, as it must be.</p>
+<p><strong>Contrast with $\mathfrak{su}(3)$.</strong> Setting $\mu=0$ kills the three transversal lines and leaves only $r=0$. That is the whole obstruction, and it is arithmetic: three real numbers of equal modulus cannot sum to zero.</p>
+<h2 id="5-the-cyclic-element-and-three-free-orbits">5. The Cyclic Element and Three Free Orbits</h2>
+<p><strong>The element.</strong> $\tilde u=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$, of norm squared $2$ and $\tilde u^{3}=-1$, so $P=\mathrm{Ad}_{\tilde u}$ has order three. Its display is $\operatorname{diag}(1,R)$ with $R$ the permutation matrix of the $3$-cycle, and $\det P=1$: $P$ lies in $\mathrm{SU}(3)$, not merely in $\mathrm{U}(3)$.</p>
+<p><strong>The action on the nine</strong>, all verified to $4\times10^{-16}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>orbit</th>
+<th>size</th>
+<th>the cycle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rotations</td>
+<td>$3$</td>
+<td>$A_x\mapsto A_y\mapsto A_z\mapsto A_x$</td>
+</tr>
+<tr>
+<td>symmetric sums</td>
+<td>$3$</td>
+<td>$S_{xy}\mapsto S_{yz}\mapsto S_{xz}\mapsto S_{xy}$</td>
+</tr>
+<tr>
+<td>equal-weight diagonals</td>
+<td>$3$</td>
+<td>$u_x\mapsto u_y\mapsto u_z\mapsto u_x$</td>
+</tr>
+</tbody>
+</table></div>
+<p>No basis element is fixed and no orbit is smaller, so on this basis the action is free, in three orbits of size three. On the whole algebra the fixed set is one-dimensional, $\mathbb R\,iP_V$.</p>
+<p><strong>Eigenvalues.</strong> On $\mathfrak u(3)$ the operator $\mathrm{Ad}_P$ has eigenvalues $\omega=e^{2\pi i/3}$ with multiplicity $3$, $\omega^{2}$ with multiplicity $3$, and $1$ with multiplicity $3$. On $\mathfrak{su}(3)$ it has $\omega^{3},\omega^{2\cdot3},1,1$.</p>
+<h2 id="6-the-brackets-in-the-nine-element-basis">6. The Brackets in the Nine-Element Basis</h2>
+<p><strong>The rules.</strong> With $(a,b,c)$ cyclic, $S_{ab}$ the symmetric sum on the pair and $S_{\hat a}$ the symmetric sum on the two axes other than $a$:</p>
+<p>$$
+[A_a,A_b]=2\varepsilon_{abc}A_c,\qquad
+[A_a,A_a]=0,
+$$
+$$
+[A_a,S_{ab}]=2S_{ac},\qquad
+[A_a,S_{ac}]=-2S_{ab},\qquad
+[A_a,S_{bc}]=2\bigl(u_c-u_b\bigr),
+$$
+$$
+[S_{ab},S_{ac}]=\tfrac12A_a,\qquad
+[S_{ab},S_{bc}]=-\tfrac12A_b,
+$$
+$$
+[A_a,u_b]=-4S_{bc},\qquad
+[A_a,u_c]=+4S_{bc},\qquad
+[A_a,u_a]=0,
+$$
+$$
+[S_{ab},u_a]=+A_c,\qquad
+[S_{ab},u_b]=-A_c,\qquad
+[S_{ab},u_c]=0,\qquad
+[u_a,u_b]=0 .
+$$</p>
+<p><strong>Samples checked exactly</strong>, all to $10^{-12}$: $[A_x,A_y]=2A_z$; $[A_x,S_{xy}]=2S_{xz}$; $[A_x,S_{xz}]=-2S_{xy}$; $[A_x,S_{yz}]=2(u_z-u_y)$; $[S_{xy},S_{xz}]=\tfrac12A_x$; $[S_{xy},S_{yz}]=-\tfrac12A_y$; $[A_x,u_y]=-4S_{yz}$; $[A_x,u_z]=+4S_{yz}$; $[S_{xy},u_x]=+A_z$; $[S_{xy},u_y]=-A_z$; $[S_{xy},u_z]=0$; $[u_x,u_y]=0$.</p>
+<p><strong>The constants.</strong> All are in $\{0,\pm\tfrac12,\pm1,\pm2,\pm4\}$. Two features are worth naming. The rotations act on the equal-weight triple diagonally, with a single constant $4$, against the mixed $-4,+2$ they have on the two-word diagonals $h_a$. The symmetric sums act sparsely: zero unless the Cartan index is in the pair, one constant otherwise, against $-\tfrac12,+1$ on $h_a$. The extra word in $u_a$ is what buys the uniformity.</p>
+<p><strong>The closure.</strong> These brackets never leave the nine: the derived algebra of $\mathfrak u(3)$ is $\mathfrak{su}(3)$, spanned by the first six plus $u_x-u_y$ and $u_y-u_z$, and the centre contributes nothing.</p>
+<h2 id="7-the-cartan-in-the-new-letters">7. The Cartan in the New Letters</h2>
+<p><strong>Three descriptions of the same two-plane.</strong></p>
+<p>$$
+h_c=\tfrac12\bigl(u_a-u_b\bigr),\qquad K_a=u_a-\tfrac13iP_V,\qquad
+u_a=K_a+\tfrac13iP_V,\qquad (a,b,c)\ \text{cyclic},
+$$</p>
+<p>all verified exactly. So the traceless part of the equal-weight triple is the $K$ triple, and</p>
+<p>$$
+\mathfrak{su}(3)=\operatorname{span}\{A_a,S_{ab}\}\oplus\operatorname{span}\{u_x-u_y,\ u_y-u_z\}
+$$</p>
+<p>with rank $8$, while $\mathfrak u(3)$ adds $\mathbb R\,iP_V$ to reach rank $9$.</p>
+<p><strong>The weights, side by side.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>axis weights</th>
+<th>traceless?</th>
+<th>length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h_x$</td>
+<td>$0,\tfrac12,\tfrac12$</td>
+<td>yes</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$K_x$</td>
+<td>$\tfrac23,\tfrac13,\tfrac13$</td>
+<td>yes</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$u_x$</td>
+<td>$1,1,1$</td>
+<td>no, trace $i$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The progression is the progression of the trade: equal weights cost tracelessness and cost two extra words.</p>
+<p><strong>The geometry.</strong> $\lVert u_a\rVert^{2}=3$ and $\langle u_a,u_b\rangle=-1$, so $\cos\angle(u_x,u_y)=-\tfrac13$: the tetrahedral angle. For $h_a$ the cosine is $-\tfrac12$ and for $K_a$ also $-\tfrac12$ (the Mercedes frame), because those triples sum to zero and lie in a plane; $u_x+u_y+u_z=iP_V$ points out of it, and the centre is the fourth vertex.</p>
+<h2 id="8-one-parameter-families-and-group-elements">8. One-Parameter Families and Group Elements</h2>
+<p><strong>A rotation about one axis.</strong> $\exp(\theta u_x)=\operatorname{diag}(1,e^{-i\theta},e^{i\theta},e^{i\theta})$: the $x$ direction takes the phase $-1$ and the other two take $+1$. This is the traceless rotation $K_x$ times a common phase, and the split is exact:</p>
+<p>$$
+\exp(\theta u_x)=\exp\bigl(\tfrac{\theta}{3}iP_V\bigr)\exp(\theta K_x),
+$$</p>
+<p>verified at $\theta=\tfrac{\pi}{3}$ to $1.6\times10^{-16}$, where $\exp(\tfrac{\pi}{9}iP_V)=e^{i\pi/9}\mathrm I_3$ and $\exp(\tfrac{\pi}{3}K_x)=\operatorname{diag}(e^{-4\pi i/9},e^{2\pi i/9},e^{2\pi i/9})$.</p>
+<p><strong>The central family.</strong> $\exp(\theta\,iP_V)=\operatorname{diag}(1,e^{i\theta},e^{i\theta},e^{i\theta})$, with $\det=e^{3i\theta}$. This is the only one-parameter family that $\mathrm{U}(3)$ has and $\mathrm{SU}(3)$ does not, and it acts on $B_V$ by a single phase.</p>
+<p><strong>Two elements, in full.</strong></p>
+<p>$$
+g_1=\exp\bigl(\tfrac{\pi}{3}u_x\bigr)=\operatorname{diag}\bigl(1,\ \zeta^{-1},\ \zeta,\ \zeta\bigr),
+\qquad \zeta=e^{i\pi/3},\qquad \det g_1=\zeta ,
+$$</p>
+<p>$$
+g_0=g_1\exp\bigl(\tfrac{\pi}{4}A_z\bigr)=\operatorname{diag}\Bigl(1,\
+\left(\begin{smallmatrix}0&\zeta^{2}&0\\ \zeta&0&0\\0&0&\zeta\end{smallmatrix}\right)\Bigr),
+\qquad
+\det g_0=\zeta,\quad \operatorname{spec}=\{-i,\ i,\ \zeta\}.
+$$</p>
+<p>Both are unitary to $6\times10^{-16}$. Note that $\det g_1=\det g_0=\zeta$: the two elements differ in the traceless part and agree in the determinant, which is the $\mathrm{U}(1)$ coordinate of $\mathrm{U}(3)$.</p>
+<h2 id="9-what-a-math296-element-does-to-a-biquaternion">9. What a $\mathrm{U}(3)$ Element Does to a Biquaternion</h2>
+<p><strong>Images of the four basis elements.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$g$</th>
+<th>$e_t$</th>
+<th>$\vec e_x$</th>
+<th>$\vec e_y$</th>
+<th>$\vec e_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\exp(\tfrac{\pi}{3}u_x)$</td>
+<td>$e_t$</td>
+<td>$\zeta^{-1}\vec e_x$</td>
+<td>$\zeta\vec e_y$</td>
+<td>$\zeta\vec e_z$</td>
+</tr>
+<tr>
+<td>$\exp(\tfrac{\pi}{4}A_z)$</td>
+<td>$e_t$</td>
+<td>$\vec e_y$</td>
+<td>$-\vec e_x$</td>
+<td>$\vec e_z$</td>
+</tr>
+<tr>
+<td>$g_0$</td>
+<td>$e_t$</td>
+<td>$\zeta\vec e_y$</td>
+<td>$\zeta^{2}\vec e_x$</td>
+<td>$\zeta\vec e_z$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first row is the whole point of the equal-weight generator: three pure phases, of which one differs from the other two, and no axis is scaled by a modulus other than $1$. The second row is a rotation in the $xy$-plane. The third composes them.</p>
+<p><strong>What is preserved.</strong> The unit is fixed by every element, the form $\langle\cdot,\cdot\rangle_{*}$ is preserved, $B_V$ is preserved. What is not preserved is the determinant: $\det g$ is free in $\mathrm{U}(1)$, so no volume form on the carrier is preserved unless $\det g=1$.</p>
+<p><strong>What is not preserved: the product.</strong> $g(\tilde Q\tilde Q')\neq g(\tilde Q)\,g(\tilde Q')$ in general, exactly as for $\mathrm{SU}(3)$: no element of the corner is $\mathbb B$-linear, and this does not change when the trace constraint is dropped, since $\mathfrak u(3)\cap R(\mathbb B)=0$ still holds and the centre is scalar on $B_V$ and not on $\mathbb B$.</p>
+<h2 id="10-the-gram-and-the-tetrahedral-angle">10. The Gram and the Tetrahedral Angle</h2>
+<p><strong>The three Gram matrices</strong>, for the triples $h$, $K$, $u$:</p>
+<p>$$
+G_h=\begin{pmatrix}2&-1&-1\\-1&2&-1\\-1&-1&2\end{pmatrix},\quad
+G_K=\begin{pmatrix}\tfrac83&-\tfrac43&-\tfrac43\\-\tfrac43&\tfrac83&-\tfrac43\\-\tfrac43&-\tfrac43&\tfrac83\end{pmatrix},\quad
+G_u=\begin{pmatrix}3&-1&-1\\-1&3&-1\\-1&-1&3\end{pmatrix}.
+$$</p>
+<p>$G_h$ and $G_K$ are singular, with kernel the vector $(1,1,1)$: those triples sum to zero, and the three vectors span a plane with $120^{\circ}$ between neighbours. $G_u$ is nonsingular, with eigenvalues $1,4,4$: the triple is not coplanar with its own sum, and the angle is $\arccos(-\tfrac13)=109.47^{\circ}$.</p>
+<p><strong>One consequence.</strong> The symmetric triple cannot be replaced by two of its members plus the centre in a way that keeps equal weights: any sum $\alpha u_x+\beta u_y+\gamma u_z$ with real coefficients and equal weights on the three axes must be proportional to $iP_V$, as the lattice of §4 shows.</p>
+<h2 id="11-the-killing-form-and-the-radical">11. The Killing Form and the Radical</h2>
+<p><strong>The form.</strong> Computed as $\kappa(X,Y)=\operatorname{tr}(\operatorname{ad}_X\operatorname{ad}_Y)$ in the nine-element basis, the matrix has diagonal entries $-48$ on the rotations, $-12$ on the symmetric sums and $-16$ on the equal-weight diagonals, and eigenvalues</p>
+<p>$$
+-48,\ -48,\ -48,\ -24,\ -24,\ -12,\ -12,\ -12,\ 0 .
+$$</p>
+<p><strong>The radical.</strong> Rank $8$, kernel one-dimensional, spanned by $u_x+u_y+u_z=iP_V$: the radical of the Killing form of $\mathfrak u(3)$ is exactly its centre, and every eigenvalue is $\le0$, so the form is negative semidefinite and the group is compact. On the traceless part it is negative definite, as it must be for a compact semisimple algebra.</p>
+<p><strong>The numbers behind it.</strong> $[A,A]\subset\operatorname{span}A$ makes the $A$-block of $\kappa$ equal to $-48\,\mathrm I_3$; the mixing between $S$ and the Cartan part produces the two $-24$ eigenvalues; the centre contributes the single zero.</p>
+<h2 id="12-the-casimirs">12. The Casimirs</h2>
+<p><strong>On the three-dimensional block $B_V$.</strong> With the generators normalised as in the table of §1 and the Gram inverse used as the metric,</p>
+<p>$$
+C_{\mathfrak{su}(3)}=-\tfrac83\,\mathrm I_3,\qquad
+C_{\mathfrak u(3)}=-3\,\mathrm I_3,\qquad
+C_{\mathfrak u(3)}-C_{\mathfrak{su}(3)}=-\tfrac13\,\mathrm I_3 .
+$$</p>
+<p><strong>The shift.</strong> The extra $-\tfrac13$ is exactly $-\dfrac{(iP_V)^{2}}{\lVert iP_V\rVert^{2}}=-\tfrac13P_V$ restricted to $B_V$. So adding the centre to the algebra changes the quadratic Casimir by minus the square of the trace generator, normalised to unit norm — the shape of a $Y^{2}$ contribution with $Y=1$ on $B_V$ and $Y=0$ on $e_t$. This is an identity about the corner's block structure and nothing more.</p>
+<p><strong>Consistency.</strong> The value $-8/3$ is twice the standard $-4/3$ of the $3$ of $\mathrm{SU}(3)$, because the generators here are normalised with $\lVert A_a\rVert^{2}=8$ rather than $\operatorname{tr}T^{2}=\tfrac12$.</p>
+<h2 id="13-the-limits">13. The Limits</h2>
+<p><strong>The determinant is free.</strong> $\det\operatorname{diag}(1,G)=\det G$ takes every value in $\mathrm{U}(1)$, so no element of $\mathrm{U}(3)$ is required to preserve the volume form that $\mathrm{SU}(4)$ preserves, and $\mathrm{U}(3)$ is not a subgroup of $\mathrm{SU}(4)$. The group sits in $\mathrm{U}(4)$ as the stabiliser of the vector $e_t$, of dimension $9=16-7$.</p>
+<p><strong>The centre is inert.</strong> $iP_V$ is central, so it appears in no structure constant of §6; it is not a derivation, so it does not act on the multiplication; and its exponential is a common phase on $B_V$. Nothing in the algebra of $\mathbb B$ distinguishes it.</p>
+<p><strong>The symmetry was already there.</strong> $P\in\mathrm{SU}(3)$ with $\det P=1$, and it already cycles $h_x\to h_y\to h_z$. What $\mathrm{SU}(3)$ lacks is not the symmetry of the axes but a basis with equal weights; §4 shows the two are different questions.</p>
+<p><strong>No pair is stable and visible at once.</strong> The fixed space of $\mathrm{Ad}_P$ on $\mathfrak{su}(3)$ is two-dimensional, abelian, and a maximal torus — the Fourier torus of the companion note. A pair taken from it is $P$-stable with $P$ acting as the identity, and no element of it has equal weights: the best modulus spread over that torus is $2.02$. A pair that $P$ genuinely permutes does not exist, because a swap needs the eigenvalue $-1$, which an operator of order three does not have. Only the triple is both stable and visible, and in $\mathfrak u(3)$ it is also equal-weight.</p>
+<p><strong>The physics reading stays formal.</strong> The central generator is a singlet of weight $+1$ on $B_V$, and the Casimir shift $-\tfrac13$ has the shape of a hypercharge contribution. Both are facts about the block structure of a corner of $M_4(\mathbb C)$. The ceiling of <em>The Gluon: An Octet Outside the Biquaternion Algebra</em> — the compact algebra of dimension four, the odd-dimensional modules, the missing $d_{abc}$ — is unchanged by adding a central phase, and the group here remains a group of operators on the carrier.</p>
+<h2 id="14-verification">14. Verification</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nine generators independent, $\dim_{\mathbb R}\mathfrak u(3)=9$</td>
+<td>rank $9$</td>
+</tr>
+<tr>
+<td>anti-Hermitian, kill $e_t$, preserve $B_V$</td>
+<td>$<10^{-15}$</td>
+</tr>
+<tr>
+<td>traces: $0$ on $A,S$; $i$ on each $u_a$; $3i$ on $iP_V$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>lengths: $2$ on $A,S$; $4$ on $u_a$ and $iP_V$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$iP_V=\tfrac{i}{4}(3E_t+E_x+E_y+E_z)$</td>
+<td>coefficients $\tfrac34,\tfrac14,\tfrac14,\tfrac14$</td>
+</tr>
+<tr>
+<td>$u_a=\tfrac{i}{4}(E_t+3E_a-E_b-E_c)$; the draft's $\tfrac{i}{2}$ form</td>
+<td>exact; differs by $iE_t$</td>
+</tr>
+<tr>
+<td>$u_x+u_y+u_z=iP_V$; axis-block determinant</td>
+<td>$2\times10^{-16}$; $4$</td>
+</tr>
+<tr>
+<td>$u_a=K_a+\tfrac13iP_V$; $h_c=\tfrac12(u_a-u_b)$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>four equal-weight diagonal lines</td>
+<td>exactly $4$; all sign patterns checked</td>
+</tr>
+<tr>
+<td>Gram: $8\mathrm I_3$, $2\mathrm I_3$, $4\mathrm I_3-J_3$; families orthogonal</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\langle u_a,u_b\rangle=-1$, $\lVert u_a\rVert^{2}=3$, cosine $-\tfrac13$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$P$ cycles $A$, $S$, $u$; fixes $iP_V$</td>
+<td>$4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_P$ on $\mathfrak u(3)$: eigenvalues $\omega^{3},\omega^{2\cdot3},1^{3}$</td>
+<td>$\lvert\lambda\rvert=1$ to $10^{-12}$</td>
+</tr>
+<tr>
+<td>brackets of §6, all constants in $\{0,\pm\tfrac12,\pm1,\pm2,\pm4\}$</td>
+<td>exact to $10^{-12}$</td>
+</tr>
+<tr>
+<td>$\exp(\theta u_x)=\exp(\tfrac{\theta}{3}iP_V)\exp(\theta K_x)$</td>
+<td>$1.6\times10^{-16}$ at $\theta=\tfrac{\pi}{3}$</td>
+</tr>
+<tr>
+<td>$\det g_1=\det g_0=\zeta$; both unitary</td>
+<td>$\zeta$; $6\times10^{-16}$</td>
+</tr>
+<tr>
+<td>Killing form: rank $8$, radical $\mathbb R\,iP_V$, eigenvalues $-48,-24,-12,0$</td>
+<td>as stated</td>
+</tr>
+<tr>
+<td>Casimirs on $B_V$: $-8/3$ and $-3$, shift $-1/3$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>fixed space of $\mathrm{Ad}_P$ on $\mathfrak{su}(3)$: dimension $2$, abelian, maximal torus</td>
+<td>as stated; best modulus spread $2.02$</td>
+</tr>
+<tr>
+<td>$iP_V$ not inner: $\operatorname{tr}(L_{\tilde Q}-R_{\tilde Q})=0$ for all $\tilde Q$, $\operatorname{tr}iP_V=3i$</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_\mu$</td>
+<td>$L_{e_\mu}R_{e_\mu}$, with $E_t=\mathrm I$ and $E_a=\operatorname{diag}(-1,-1,1,1)$ cyclically</td>
+</tr>
+<tr>
+<td>$P_V$</td>
+<td>$\operatorname{diag}(0,1,1,1)=\tfrac14(3E_t+E_x+E_y+E_z)$</td>
+</tr>
+<tr>
+<td>$A_a,S_{ab}$</td>
+<td>the rotation $L_{\vec e_a}-R_{\vec e_a}$ and the symmetric sum $-\tfrac{i}{2}(L_{\vec e_a}R_{\vec e_b}+L_{\vec e_b}R_{\vec e_a})$</td>
+</tr>
+<tr>
+<td>$h_a$</td>
+<td>$\tfrac{i}{2}(E_b-E_c)$, $h_x+h_y+h_z=0$</td>
+</tr>
+<tr>
+<td>$K_a$</td>
+<td>$\tfrac{i}{3}(2E_a-E_b-E_c)$, $K_x+K_y+K_z=0$</td>
+</tr>
+<tr>
+<td>$u_a$</td>
+<td>$\tfrac{i}{4}(E_t+3E_a-E_b-E_c)=K_a+\tfrac13iP_V$</td>
+</tr>
+<tr>
+<td>$\omega,\zeta$</td>
+<td>$e^{2\pi i/3}$ and $e^{i\pi/3}$</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>$\mathrm{Ad}_{\tilde u}$ with $\tilde u=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$</td>
+</tr>
+<tr>
+<td>$\mathfrak t_F$</td>
+<td>the Fourier torus, fixed space of $\mathrm{Ad}_P$ on $\mathfrak{su}(3)$</td>
+</tr>
+<tr>
+<td>$\ell$</td>
+<td>Conway length, the number of nonzero coefficients in the sixteen words</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Meaning of $\mathrm{U}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the conceptual companion, and the corrected statement about $P$-stable Cartans.</li>
+<li><em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em> and <em>Worked Cases for $\mathrm{SU}(3)$ inside the Endomorphisms of the Biquaternion Algebra</em>: the eight-dimensional case, whose generators appear unchanged here.</li>
+<li><em>The Endomorphisms of the Biquaternion Algebra</em>: the inner derivations, and why a traceless condition decides derivationhood.</li>
+<li><em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>: the Conway words and the length bound of four.</li>
+<li><em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb C)$</em>: the block structure on which every array in this note lives.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

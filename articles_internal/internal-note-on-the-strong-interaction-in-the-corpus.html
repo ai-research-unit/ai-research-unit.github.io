@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Note: The Strong Interaction in the Biquaternion Corpus — Biquaternion Universe</title>
+  <meta name="description" content="The corpus transcribes the strong sector and constructs its near half, and here the boundary is a theorem. The menu draws it: The Strong Interaction is…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-note-the-strong-interaction-in-the-biquaternion-corpus">Internal Note: The Strong Interaction in the Biquaternion Corpus</h1>
+<h2 id="the-answer">The Answer</h2>
+<p><strong>The corpus transcribes the strong sector and constructs its near half, and here the boundary is a theorem.</strong> The menu draws it: <em>The Strong Interaction</em> is one of the six parts of the category, and it holds twenty-four articles. The algebra reaches $\mathrm{SU}(2)$ and it does not reach $\mathrm{SU}(3)$. Colour is outside, and the exclusion is proved twice — by dimension and by module parity — so it is not an unfinished construction but a closed door with a price list beside it.</p>
+<p><strong>The decisive correction.</strong> The non-abelian factor of the framework is the rotation group of space. Read as an internal symmetry it is weak isospin, and it fails; read as geometry it is the spatial half of a spin connection, and the corpus already has that reading. The octet of QCD is a different object in a different slot, and no relabelling of the framework's factor produces it.</p>
+<p><strong>One force, three spins.</strong> Spin $1$ supplies the eight carriers, spin $\tfrac12$ the matter they act on, spin $0$ the Goldstones of the broken chiral symmetry and the soliton that stands in for the baryon. That is why the part needs its own spin bands, and why the pion sits beside the proton rather than beside the photon.</p>
+<p><strong>The consequence, in one line.</strong> What the part can do, it does with the algebra's own $\mathrm{SU}(2)$: instantons inside the compact factor, the chiral field and its Maurer–Cartan form, the Skyrme soliton, the chiral condensate, the multiplet bookkeeping, and the shape of the running. What needs colour — the triplet, the octet's colour factor, confinement — is imported with its status marked on every article.</p>
+<h2 id="what-the-strong-interaction-is">What the Strong Interaction Is</h2>
+<p><strong>One interaction, one charge, and the charge is never seen alone.</strong> Above the confinement scale the degrees of freedom are eight massless vector fields in the adjoint of $\mathrm{SU}(3)$, and three species of coloured fermion. Below it, no coloured object is free: the spectrum is colour-singlet hadrons, and the potential between a separated pair grows with distance.</p>
+<p><strong>The group is $\mathrm{SU}(3)_c$, with $N_c=3$.</strong> Eight generators, structure constants $f_{abc}$, and the adjoint is eight-dimensional. The fundamental is three-dimensional and complex. Both of those numbers matter for the ceiling, and they matter in different ways: one is a dimension the algebra does not have, the other is a module it cannot build.</p>
+<p><strong>Two properties have no classical counterpart.</strong> Asymptotic freedom: the coupling falls with energy, so the short-distance theory is weakly coupled and computable. Confinement: the long-distance theory has no coloured asymptotic states, and no perturbative argument produces the mass gap. The two live in the same beta function with opposite signs.</p>
+<p><strong>Chiral symmetry breaking is the third pillar.</strong> The vacuum carries a fermion bilinear, the axial symmetry is broken by it, and the pions are the pseudo-Goldstones of that breaking. The framework's version of this is its strongest single result in the sector, and it is a statement about the <em>form</em> of the relation and not about the scale.</p>
+<h2 id="what-the-standard-theory-says">What the Standard Theory Says</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Standard content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group</td>
+<td>$\mathrm{SU}(3)_c$, $N_c=3$, eight gluons in the adjoint</td>
+</tr>
+<tr>
+<td>Charge</td>
+<td>colour: triplet for quarks, antitriplet for antiquarks, octet for gluons</td>
+</tr>
+<tr>
+<td>Coupling</td>
+<td>$\alpha_s$, measured at one scale and running</td>
+</tr>
+<tr>
+<td>Running</td>
+<td>$\beta_{g_s}=-g_s^3b_0/16\pi^2$ with $b_0=11-\tfrac23N_f$, negative, so asymptotic freedom</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>$\Lambda_{\mathrm{QCD}}$ by dimensional transmutation, of order a few hundred MeV</td>
+</tr>
+<tr>
+<td>Confinement</td>
+<td>no free coloured state; a string tension and a linear potential at long distance</td>
+</tr>
+<tr>
+<td>Mass</td>
+<td>the conformal anomaly: the trace of the energy–momentum tensor is proportional to the beta function</td>
+</tr>
+<tr>
+<td>Breaking</td>
+<td>chiral symmetry broken by $\langle\bar qq\rangle$; pions as pseudo-Goldstones</td>
+</tr>
+<tr>
+<td>Mass relation</td>
+<td>$m_\pi^2f_\pi^2=-(m_u+m_d)\langle\bar qq\rangle$</td>
+</tr>
+<tr>
+<td>CP</td>
+<td>a theta term with $|\bar\theta|\lesssim10^{-10}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The list is what the note measures the corpus against.</strong> Every row is either constructed, transcribed, or refused, and the rest of the note says which.</p>
+<h2 id="two-layers">Two Layers</h2>
+<h3 id="what-the-algebra-supplies">What the algebra supplies</h3>
+<p><strong>A compact four-dimensional algebra, and its derived algebra.</strong> $\mathbb{B}_\Phi=\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, four real dimensions, against the eight that $\mathrm{SU}(3)$ needs. The commutators of the units give more than the compact part:</p>
+<p>$$
+[\mathbb B,\mathbb B]=\mathrm{SL}(2,\mathbb C),\qquad \dim_\mathbb R\mathrm{SL}(2,\mathbb C)=6,
+\qquad
+\mathbb B=\mathrm{SL}(2,\mathbb C)\oplus\mathbb C_{\mathbb B},
+\qquad
+\mathrm{SU}(2)=\mathrm{span}_{\mathbb R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}.
+$$</p>
+<p>The derived algebra is six-dimensional and non-compact, and the compact factor inside it is three-dimensional. Neither number is eight, and no basis change moves either.</p>
+<p><strong>The instanton, inside the compact factor.</strong> The BPST solution is built on $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_\Phi$, with the Bogomolny bound fixing its action. The saddle of the semiclassical expansion is therefore an object the algebra makes, and not one it receives.</p>
+<p><strong>The abelian topological density, as the imaginary part of the norm.</strong> In the Maxwell sector the Pontryagin density is the framework's own invariant up to a constant:</p>
+<p>$$
+\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=\frac{4i}{c}\,I_2\ \ (\text{Lorentzian}),\qquad
+\sum_{\mu,\nu}F_{\mu\nu}\star F_{\mu\nu}=4\,I_2\ \ (\text{Euclidean}),\qquad I_2=\vec E\cdot\vec B .
+$$</p>
+<p>So the theta term's <em>density</em> is native. Its coefficient is not, and the note returns to that below.</p>
+<p><strong>The Maurer–Cartan structure, and with it the chiral field.</strong> The group-valued field $\tilde U$ takes values in the unit real quaternions, $\langle\tilde U\rangle_\natural=\tilde U\tilde U^{\natural}=e_t$, and the biquaternion norm is the invariant metric on the group. The nonlinear sigma model's target space is therefore the framework's own group, and its action is the norm of the Maurer–Cartan form. This is the part's single most native object: the target of the chiral Lagrangian, its current, and its topological charge are one construction in the algebra.</p>
+<p><strong>The pion, as the adjoint of the material sector.</strong> $\vec\pi=\sum_\eta\pi_\eta\vec e_\eta$ with $[\vec e_j,\vec e_\eta]=2\sum_l\epsilon_{j\eta l}\vec e_l$, normalised by the plain weight of the units. The triplet of pions is the adjoint three of the algebra's compact factor, which is why the isospin bookkeeping and the $\mathrm{SU}(3)$ bookkeeping agree where they overlap.</p>
+<p><strong>The Skyrme field, its current and its winding.</strong> The skyrmion field <em>is</em> the pion's chiral field, a map from spacetime to the group; the current is its Maurer–Cartan form; the topological current is the contraction of three of them,</p>
+<p>$$
+B_\mu=\frac{1}{24\pi^2}\sum_{\nu,\rho,\sigma}\varepsilon_{\mu\nu\rho\sigma}\,\mathrm{Tr}\!\left(j_\nu j_\rho j_\sigma\right),\qquad j_\mu=\tilde U^{-1}\partial/\partial R_\mu\,\tilde U ,
+$$</p>
+<p>and its conservation is an identity, not an equation of motion. Baryon number is a winding number with no colour in it.</p>
+<p><strong>The axial phase, as two opposite phases on two values.</strong> The algebra carries one chirality operator and one mass term, and the axial rotation is the pair of opposite phases on the two values. That is the framework's version of the axial anomaly's setting: two values, one coupling, one phase difference, at no cost.</p>
+<p><strong>The multiplet algebra, which is group theory and not colour.</strong> The degree formula, the mod $3$ rule, the Okubo ansatz and the Gell-Mann–Okubo relation are $\mathrm{SU}(3)$ representation theory written in the corpus's coordinates. The algebra's own $\mathrm{SU}(2)$ sits inside that $\mathrm{SU}(3)$ as the isospin subgroup, and the ceiling permits exactly that.</p>
+<p><strong>The shape of the running, and the trace anomaly.</strong> The renormalisation-group machinery supplies the <em>form</em> of the beta function, and the conformal anomaly supplies the statement that the proton's mass is the trace of the energy–momentum tensor. Neither supplies a coefficient.</p>
+<h3 id="what-is-imported">What is imported</h3>
+<p><strong>Eleven rows, and the corpus marks them so.</strong> $N_c=3$ and the colour group; the colour triplet; the Casimirs $C_A=3$, $C_F=\tfrac43$ and the index $T_R=\tfrac12$; $\alpha_s$ at one scale; $\Lambda_{\mathrm{QCD}}$ and every hadron mass; the quark masses; the four coefficients $f_\pi$, $e$, $f_a$ and $\Lambda^4$ of the three actions; the parton densities as functions and not numbers; the value of $\bar\theta$; and the dynamics that forms the condensate.</p>
+<p><strong>The distinction matters because it is the note's whole subject.</strong> A transcription is not a failure. The part exists to say precisely which half of QCD a quaternion algebra can carry, and the answer is informative in both directions: the soliton, the chiral field and the condensate are native, and the colour label is not.</p>
+<h2 id="the-four-refusals">The Four Refusals</h2>
+<p><strong>First: colour inside the algebra.</strong> Two independent proofs. The compact algebra has four real dimensions and $\mathrm{SU}(3)$ has eight. And every $\mathbb{B}$-module has even complex dimension, while the triplet and the adjoint of $\mathrm{SU}(3)$ are odd-dimensional. The second proof is the sharper one, because it does not depend on how the algebra is enlarged.</p>
+<p><strong>Second: confinement.</strong> No string tension, no area law, no mass gap. The part says so in every article that touches it, and it does not dress the absence as a research programme.</p>
+<p><strong>Third: a derivation of $\theta_{\mathrm{vac}}$.</strong> The framework supplies the density, its parity-odd character as $I_2$, its periodicity and its role in the vacuum. It does not supply the number, and the reason is structural: a coefficient of a total derivative is not fixed by an equation of motion. The measured bound $|\bar\theta|\lesssim10^{-10}$ then sits in the corpus as a fact the framework records and cannot explain.</p>
+<p><strong>Fourth: the baryon-number–colour connection.</strong> The winding exists, colour does not, so the statement that a baryon is three quarks in a colour singlet has no home here. The skyrmion is a baryon by winding and by nothing else.</p>
+<p><strong>One root under all four.</strong> Representation is a function of spin. A field's representation is fixed once its spin is fixed, so a colour triplet, which is a choice of representation independent of spin, is not available at any spin.</p>
+<h2 id="the-dimension-ceiling-at-four-levels">The Dimension Ceiling, at Four Levels</h2>
+<p><strong>The mismatch $4\ne8$ is a count, and the count is the weakest form of the argument.</strong></p>
+<p><strong>Level one: dimension.</strong> The compact algebra of $\mathbb{B}_\Phi$ is four-dimensional; $\mathrm{SU}(3)$ is eight-dimensional. This alone kills an embedding of the group into the algebra.</p>
+<p><strong>Level two: module parity.</strong> Every module over $\mathbb{B}\cong M_2(\mathbb{C})$ has even complex dimension. The colour triplet is three-dimensional and complex; the adjoint is eight-dimensional and real, odd as a complex space. So neither the fundamental nor the adjoint of $\mathrm{SU}(3)$ can be a carrier, at any spin, in any basis.</p>
+<p><strong>Level three: the derived algebra.</strong> $[\mathbb{B},\mathbb{B}]=\mathrm{SL}(2,\mathbb{C})$, of real dimension six, non-compact, and $\mathbb{B}$ is that algebra plus one central direction. The compact part is the centre and three generators. Nothing in this decomposition is eight-dimensional and compact.</p>
+<p><strong>Level four: the ambient group.</strong> Enlarging the carrier to $M_n(\mathbb{B})\cong M_{2n}(\mathbb{C})$ gives the intrinsic group $\mathrm{U}(2n)$, and any compact group of dimension at most $4n^2$ with a faithful $2n$-dimensional representation embeds. $\mathrm{SU}(3)$ embeds at $n=2$. But then the statement under test has changed: it is about the group of a matrix algebra <em>over</em> $\mathbb{B}$ and not about the group of $\mathbb{B}$. The enlarged route is a legitimate construction and it is not a refutation.</p>
+<p><strong>The three false routes, named so that they are not mistaken for arguments.</strong> "Three letters, so three colours": the three letters are the <em>adjoint</em> of $\mathrm{SU}(2)$, and colour needs three <em>fundamental</em> complex dimensions. "Eight real dimensions, and $\mathrm{SU}(3)$ has eight": a count between a carrier and a symmetry, in the wrong slot. "The octonions contain $\mathrm{SU}(3)$": true, with $\mathrm{Aut}(\mathbb{O})=G_2$ of dimension fourteen, and the price is associativity, which every construction in the corpus uses.</p>
+<h2 id="representation-is-a-function-of-spin">Representation Is a Function of Spin</h2>
+<p><strong>The root, stated once.</strong> Because the gauge group is the spin group, the representation a field carries is fixed by its spin, and the two cannot be chosen independently.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Spin</th>
+<th>Carrier in the algebra</th>
+<th>Representation of $\mathrm{Spin}(3)$</th>
+<th>QCD needs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>the line $\mathbb R e_t$, and the adjoint triplet $\vec\pi$</td>
+<td>trivial, and the adjoint three</td>
+<td>a colour singlet Goldstone, and an octet</td>
+</tr>
+<tr>
+<td>$\tfrac12$</td>
+<td>the ideal $S_+$, module $\mathbb{C}^2$</td>
+<td>spinor, both letters alike</td>
+<td>a colour triplet</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>the vector part $\mathfrak k$</td>
+<td>adjoint</td>
+<td>a colour octet</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>No row carries a colour index, and the reason is the same in all three.</strong> A colour label is a representation chosen at fixed spin, which is exactly what the framework forbids. The vector row matches QCD's <em>kinematics</em> — a massless vector with two helicities — and not its <em>representation</em>: the octet is eight-dimensional and the algebra's adjoint is three-dimensional.</p>
+<p><strong>One thing the ceiling permits, and it is worth stating.</strong> The algebra's $\mathrm{SU}(2)$ sits inside $\mathrm{SU}(3)$ as the isospin subgroup, so $\mathrm{SU}(3)$ multiplet bookkeeping can be written without a colour group. That is what the part does in the multiplet article, and it is not a route around the wall: the wall is about the group the algebra carries, not about the groups a table can be printed in.</p>
+<h2 id="three-spins-in-one-part">Three Spins in One Part</h2>
+<p><strong>The strong force is not a spin class either, and the bands are a reading aid.</strong> Three spins appear, each with a different job.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Spin</th>
+<th>Role</th>
+<th>Objects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>the carriers, so the force itself</td>
+<td>the eight gluons, and the free constituent the algebra reaches</td>
+</tr>
+<tr>
+<td>$\tfrac12$</td>
+<td>the matter acted on</td>
+<td>quarks, and the hadrons they build</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>neither carrier nor matter: the Goldstones of the broken chiral symmetry, and the soliton that stands in for the baryon</td>
+<td>pions, the sigma field, the skyrmion, the axion</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The part holds twenty-four articles and they fall six, seven, six and five</strong> across <em>Generalities</em>, <em>spin 0</em>, <em>spin 1/2</em> and <em>spin 1 and above</em>. The list below numbers all twenty-four of them.</p>
+<p><strong>The bands are a cut by object and not by spin alone.</strong> The pion, the Skyrme model and the axion sit here rather than in the electroweak part because they are QCD's low-energy sector, and the proton and the neutron sit here for the same reason. Cut by spin alone, every band would mix the two forces, and that is what the recut fixed.</p>
+<p><strong>What this costs the framework, in one line.</strong> It reaches the vector row's kinematics for the same reason it reaches Maxwell's, it reaches the spin-$0$ chiral sector natively through its own group, and it fails on every row that needs a colour index.</p>
+<h2 id="the-instanton-and-the-one-coincidence">The Instanton, and the One Coincidence</h2>
+<p><strong>The saddle is the framework's and the density is not, and the part says which is which.</strong></p>
+<p><strong>What is native.</strong> The BPST instanton inside the compact factor, its action from the Bogomolny bound, the abelian Pontryagin density as the imaginary part of the norm, and the quaternionic form of the self-duality equations $F_{12}=F_{34}$, $F_{13}=-F_{24}$, $F_{14}=F_{23}$. The ADHM construction belongs here too, and for a reason worth recording: its data are quaternionic and its moment map is the quaternionic moment map, so the algebra is the type in which that theorem is written and not a decoration on it.</p>
+<p><strong>What is not native, stated as the article states it.</strong> The non-abelian density needs the wedge of two algebra-valued two-forms, which is available, and a matrix trace over the gauge algebra, which is not: the biquaternion norm is a rank-two object and cannot play the role of a trace over an eight-dimensional colour space. The evidence is a gauge-transformation test — under $F_{\mu\nu}\mapsto\tilde UF_{\mu\nu}\tilde U^{-1}$ the norm of the representative moves from $17.1838$ to $17.3970$ on a random $\mathrm{SU}(2)$-valued two-form, while the matrix-trace density is invariant to machine precision.</p>
+<p><strong>So the boundary of the semiclassical gas is separable and checkable.</strong> The saddle, the density, the moduli and the measure are four items; the first three are the algebra's in the abelian case and the fourth is not, and the gas article draws the line exactly there.</p>
+<h2 id="numbers-and-empirical-status">Numbers and Empirical Status</h2>
+<p><strong>Four checks, and none of them is a derivation.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Relation</th>
+<th>Framework</th>
+<th>Measured</th>
+<th>Standing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gell-Mann–Oakes–Renner</td>
+<td>$m_\pi^2f_\pi^2=-(m_u+m_d)\langle\bar qq\rangle$, form supplied</td>
+<td>the numbers</td>
+<td>functional form native, scale imported</td>
+</tr>
+<tr>
+<td>Gell-Mann–Okubo</td>
+<td>$m_N+m_Ξ=2256.9$ MeV</td>
+<td>$\tfrac12(3m_\Lambda+m_\Sigma)=2270.1$ MeV</td>
+<td>$0.6\%$, the accuracy of first-order breaking</td>
+</tr>
+<tr>
+<td>Proton mass</td>
+<td>$9.0$ MeV of current quark mass</td>
+<td>$938.3$ MeV</td>
+<td>the difference is the conformal anomaly, not a sum</td>
+</tr>
+<tr>
+<td>Axion mass</td>
+<td>$m_a=\Lambda^2/f_a$, i.e. $5.79\ \mu\mathrm{eV}\times10^{12}\,\mathrm{GeV}/f_a$</td>
+<td>cosmological bounds</td>
+<td>form native, $\Lambda$ imported</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The proton mass is the part's best single paragraph, and it is a statement about what a mass is.</strong> The mass is not a sum of masses: $9.0$ against $938.3$ MeV, and the difference is the whole phenomenon. It is the conformal anomaly: a classical theory with no dimensionful parameter has a traceless energy–momentum tensor and the quantum theory does not. It is non-perturbative in a precise sense: $\Lambda_{\mathrm{QCD}}$ depends on the coupling as $e^{-2\pi/b_0\alpha_s}$, an essential singularity at $\alpha_s=0$, so no finite order produces it. And the proton's spin is a decomposition and not a fact: $\tfrac12=\tfrac12\delta\Sigma+L_q+J_g$ with $\delta\Sigma\approx0.32$.</p>
+<p><strong>No measurement separates the framework from standard physics in this sector.</strong> A test needs an input that is not algebra — a dynamics, a coupling, a scale, or a selection principle — and here the framework supplies the algebra, the representation theory and the invariant calculus, while the dynamics, the couplings and the scale all arrive from outside.</p>
+<p><strong>The measured bound that stands over the sector is $|\bar\theta|\lesssim10^{-10}$</strong>, and the neutron electric dipole moment is the observable that enforces it. The corpus records the bound and has no mechanism that would explain the smallness.</p>
+<h2 id="verdict">Verdict</h2>
+<p><strong>What is in the corpus.</strong> The ceiling and its two proofs; the instanton and the Bogomolny bound; the abelian topological density as a framework invariant; the ADHM data as quaternionic; the Maurer–Cartan structure and the chiral field; the pion as the adjoint; the Skyrme soliton and its winding; the condensate as an object the equation carries; the multiplet bookkeeping; the free constituent and the shape of the running; the trace anomaly as the proton's mass; and three actions with their pairings forced and their coefficients imported.</p>
+<p><strong>What is not.</strong> Colour, confinement, the value of $\theta_{\mathrm{vac}}$, the coefficients, the scale, and the dynamics that forms the condensate. Each refusal is a proved boundary and not a gap in the work, with one exception: the confinement and the condensate's formation are gaps that the corpus names as gaps.</p>
+<p><strong>The one sentence.</strong> The part builds everything the algebra's own $\mathrm{SU}(2)$ can carry, transcribes the rest of QCD with the boundary marked on every article, and turns the failure into a theorem with a price list attached — the octonion route costs associativity, and the enlarged carrier costs the claim.</p>
+<h2 id="what-would-count-as-a-derivation">What Would Count as a Derivation</h2>
+<p><strong>A derivation is a chain from the algebra to a number, and the chain is only as good as its weakest link.</strong> The corpus never claims a derivation where a link is missing, and this note holds itself to the same standard. The standard sits here rather than in an article, because a document whose content is a requirement is not a result.</p>
+<p><strong>Six links, in the order a derivation of colour would have to supply them.</strong></p>
+<ol>
+<li><strong>A carrier of odd complex dimension.</strong> This is the first link and the only one that is a theorem today: it is false, and every later link inherits the falsity.</li>
+<li><strong>The colour group as an endomorphism of that carrier.</strong> With the triplet available, $\mathrm{SU}(3)$ would have to act on it inside the algebra's own structure and not as an added factor.</li>
+<li><strong>The confining dynamics.</strong> A string tension, an area law, or a mass gap, from the algebra and not from a lattice.</li>
+<li><strong>The value of $\bar\theta$.</strong> A coefficient the algebra can value rather than record.</li>
+<li><strong>The coefficients.</strong> $f_\pi$, $e$, $f_a$ and $\Lambda^4$, each computed or declared, with the ledger showing which.</li>
+<li><strong>The condensate's formation.</strong> Why the vacuum carries the bilinear, from the algebra's own dynamics.</li>
+</ol>
+<p><strong>What does not count.</strong> A dimension match. An isomorphism of Lie algebras. A coincidence of counts. A relabelling of one group as another. An identification made after the result is known. Each of the first four appears somewhere in the corpus, each is labelled there as what it is, and none of them is a link.</p>
+<p><strong>The corpus against the six links.</strong> The first is proved false, which is the part's central result. The fifth is supplied in form and imported in value. The rest are open, and the third and sixth are open in the strong sense: nothing in the corpus points at a route.</p>
+<h2 id="the-one-problem-that-would-change-the-verdict">The One Problem That Would Change the Verdict</h2>
+<p><strong>A module of odd complex dimension.</strong> It is the only object whose existence would flip the ceiling, because the dimension count is the weaker of the two proofs and would fall to an enlargement, while the parity argument would fall only to a counterexample.</p>
+<p><strong>It is stated here and not proposed as an article.</strong> An article whose content is a hope is worse than a note that says where the hope lies, and the corpus has already priced the two known routes — non-associativity through the octonions, and an added factor through an enlarged carrier.</p>
+<p><strong>Why it is the only one.</strong> Every other open row asks for a number the framework must be given: a coupling, a scale, a coefficient. This one asks whether the even-dimension theorem is a theorem about $\mathbb{B}$ or only about the way the corpus builds modules over it. That is a question about the algebra, and it is the only question in this part that the algebra could still answer.</p>
+<h2 id="the-list-of-articles-in-the-corpuss-order">The List of Articles, in the Corpus's Order</h2>
+<p><strong>Twenty-four positions, all inside the part, and every one of them is a file.</strong> The part holds twenty-four articles in four bands, and the list is the menu's.</p>
+<p><strong>Two statuses, and the list says which applies to each.</strong> Unmarked means the article exists and needs nothing from this note. <em>(modified)</em> would mean this note had asked for a change; no entry carries it, because this note audits and does not edit. No entry is marked <em>to be written</em>, because none is missing.</p>
+<p><strong>One part of <code>physics.md</code>, one of six inside the category, and one of the two that carry spin bands inside it.</strong> All files in <code>articles_physics/</code>. The bands hold six, seven, six and five.</p>
+<h3 id="the-strong-interaction">The Strong Interaction</h3>
+<h4 id="generalities">Generalities</h4>
+<ol>
+<li>Instantons and Solitons in Biquaternionic Form</li>
+<li>The ADHM Construction and Biquaternion Instanton Data</li>
+<li>The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form</li>
+<li>The Theta Parameter and Strong CP in Biquaternionic Form</li>
+<li>Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</li>
+<li>Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall</li>
+</ol>
+<h4 id="particles-of-spin-0">Particles of spin 0</h4>
+<ol>
+<li>The Nonlinear Sigma Model in Biquaternionic Form</li>
+<li>The Lagrangian and the Nonlinear Sigma Model</li>
+<li>The Chiral Theory and the Lagrangian: The Pion and the Decay Constant</li>
+<li>The Skyrme Model and the Topological Baryon in Biquaternionic Form</li>
+<li>The Lagrangian and the Skyrme Model</li>
+<li>The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</li>
+<li>The Lagrangian and the Axion</li>
+</ol>
+<h4 id="particles-of-spin-12">Particles of spin 1/2</h4>
+<ol>
+<li>The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form</li>
+<li>The Neutron in Biquaternionic Form</li>
+<li>Hadron Structure from QCD: the Bound-State Problem</li>
+<li>The Proton in Biquaternionic Form</li>
+<li>The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form</li>
+<li>SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form</li>
+</ol>
+<h4 id="particles-of-spin-1-and-above">Particles of spin 1 and above</h4>
+<ol>
+<li>The Gluon: An Octet Outside the Biquaternion Algebra</li>
+<li>The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules</li>
+<li>Asymptotic Freedom and the Running of the Strong Coupling</li>
+<li>The Parton Model and Deep Inelastic Scattering</li>
+<li>Jets, the QCD Cross Section and the Infrared Structure</li>
+</ol>
+<p><strong>Nothing outside the part carries a change, and nothing here is left over.</strong> The three actions are inside the spin-$0$ band, where they belong: each is an action of the chiral or the CP-odd sector and none carries a colour label.</p>
+<p><strong>Three articles outside <code>articles_physics/</code> carry machinery this part uses without repeating it</strong>, and a physics reader will not find them by searching the physics menu: the chirality operator and its two values, the Maurer–Cartan form on the group, and the invariant metric on $\mathbb{B}$, each in <code>articles_maths/</code>. That is the argument for the sigma-model row of §<em>Two Layers</em>, and the reason the part can write the chiral field without rebuilding it.</p>
+<h2 id="what-each-article-contains">What Each Article Contains</h2>
+<p><strong>Same order, same numbers, and each entry carries its standing.</strong> Each entry is a short description, then the parenthesis that says what the article is for in the sector.</p>
+<p><strong>1. Instantons and Solitons in Biquaternionic Form..</strong> The topological charge and the Bogomolny bound; the abelian density as the imaginary part of the norm; the BPST instanton inside the compact factor; and the negative finding — the non-abelian density needs a matrix trace the norm cannot supply, with the gauge-transformation test $17.1838\to17.3970$ as the evidence. (the native sector, and where it stops)</p>
+<p><strong>2. The ADHM Construction and Biquaternion Instanton Data..</strong> The bijection between charge-$k$ self-dual connections modulo gauge and $\mu^{-1}(0)/\mathrm{U}(k)$; the self-duality equations as the quaternionic equation $F_{12}=F_{34}$, $F_{13}=-F_{24}$, $F_{14}=F_{23}$; and the moment map as the quaternionic one. (the one construction whose native language is this one)</p>
+<p><strong>3. The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form..</strong> The partition function and its four separable items: the saddle, the density, the moduli and the measure. Three are the algebra's and the fourth is not, and the article draws the line there. (the boundary drawn where a reader can check it)</p>
+<p><strong>4. The Theta Parameter and Strong CP in Biquaternionic Form..</strong> The theta term and its density; the parity-odd character as $I_2$; periodicity; the axial rotation as opposite phases on the two values; and the coefficient the framework cannot value, with $|\bar\theta|\lesssim10^{-10}$ as the measurement over it. (strong CP as a coefficient the algebra records and cannot value)</p>
+<p><strong>5. Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)..</strong> The two proofs — dimension and module parity; the three false routes named so they are not taken for arguments; the genuine route through an added factor and its price. (the theorem the part rests on)</p>
+<p><strong>6. Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall..</strong> The ceiling as a consequence for QCD: what the algebra supplies for the vector sector, what the octet would need, and where the two separate. (the consequence, article by article)</p>
+<p><strong>7. The Nonlinear Sigma Model in Biquaternionic Form..</strong> The group-valued field and the Maurer–Cartan equation; the norm as invariant metric; the target space as the framework's own group; the action at second order. (the target space is native)</p>
+<p><strong>8. The Lagrangian and the Nonlinear Sigma Model..</strong> $S=-\frac{f^{2}}{2}\int d^{4}r\,\mathrm{Sc}(\bar j_\mu j_\mu)$ with $j_\mu=\tilde U^{\natural}\partial_\mu\tilde U$; the constraint as the nonlinearity; the three degrees of freedom; and the coefficient imported. (the chiral sector's action)</p>
+<p><strong>9. The Chiral Theory and the Lagrangian: The Pion and the Decay Constant..</strong> The pion as the adjoint of the material sector; the mass term with $M$ and $M^{*}$; the cosine and hence the Gell-Mann–Oakes–Renner relation; the form supplied and the scale imported. (the sector's one genuine bridge)</p>
+<p><strong>10. The Skyrme Model and the Topological Baryon in Biquaternionic Form..</strong> The skyrmion field as the pion's chiral field; the topological current as the contraction of three Maurer–Cartan forms; the winding as baryon number; the stability requirement; and the coefficient not derived. (baryon number as a winding with no colour in it)</p>
+<p><strong>11. The Lagrangian and the Skyrme Model..</strong> $S=\int d^{4}r\,[-\frac{f^{2}}{2}\mathrm{Sc}(\bar j_\mu j_\mu)+\frac{1}{16e^{2}}\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])]$; the commutator forced by flatness; the "at most quadratic in time" condition; and $e$ imported. (the soliton's action)</p>
+<p><strong>12. The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form..</strong> The Peccei–Quinn symmetry as the central phase; the shift $a\mapsto a+2\pi f_a$ as a rotation of $\mathrm{U}(1)_\mathbb{B}$; the periodic potential and its minimum at $\bar\theta+a/f_a=0$; $m_a=\Lambda^2/f_a$ with $\Lambda$ imported; and the trap in the shift symmetry. (the one mechanism the algebra carries whole, minus its scale)</p>
+<p><strong>13. The Lagrangian and the Axion..</strong> Kinetic term, periodic potential, and $aF\tilde F/f_a$ as a total derivative; the variation as $\Box_\Phi a+V'(a)=g_s^{2}F\tilde F/(32\pi^{2}f_a)$; periodicity consistent with the anomaly because the topological charge is an integer. (the CP-odd sector's action)</p>
+<p><strong>14. The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form..</strong> The chirality-odd bilinear; the massless equation's two phases; the identification $m\leftrightarrow-2G\langle\tilde\Xi^*iR_{\mathrm{axf},\vec e_x}\tilde\Xi\rangle$; and the gap left visible — no colour, so no account of why the condensate forms. (what the condensate is, given that it forms)</p>
+<p><strong>15. The Neutron in Biquaternionic Form..</strong> The neutral spin-$\tfrac12$ field with zero charge operator; the magnetic moment as a neutral field's normalisation; and the boundary — a representation and not a composite of three coloured constituents. (the neutral hadron as a field)</p>
+<p><strong>16. Hadron Structure from QCD: the Bound-State Problem..</strong> The bound-state problem stated as such: no confining dynamics in the corpus, so structure is transcribed; what a constituent picture would have to supply; and the measurements it would face. (the gap named, and priced)</p>
+<p><strong>17. The Proton in Biquaternionic Form..</strong> The charged spin-$\tfrac12$ field; the four-part claim about the mass — not a sum, the conformal anomaly, non-perturbative in the essential-singularity sense, and the spin as a decomposition $\tfrac12=\tfrac12\delta\Sigma+L_q+J_g$. (the part's best single paragraph)</p>
+<p><strong>18. The Spin–Charge Hilbert Space and the SU(3) Supermultiplets in Biquaternionic Form..</strong> The tensor product $\mathcal{H}_S\otimes\mathcal{H}_Q\otimes\mathcal{H}_\infty$; the dimensions $(2l+1)(2\bar l+1)$; the three standings; and the line that matters for the ceiling — the charge factor carries $\mathrm{SU}(3)$ and the algebra does not. (the programme's bridge, built on top of the wall)</p>
+<p><strong>19. SU(3) Representations and the Gell-Mann–Okubo Mass Formula in Biquaternionic Form..</strong> The degree formula and the mod $3$ rule; the Okubo ansatz and its first-order truncation; the two sum rules; $2256.9$ against $2270.1$ MeV; and the boundary — group theory plus measured masses, not colour in the algebra. (bookkeeping without colour)</p>
+<p><strong>20. The Gluon: An Octet Outside the Biquaternion Algebra..</strong> The three obstructions named; the two prices computed — the octonion route and the enlarged carrier; and what is reached: the free constituent, its two helicities, and the form of the non-abelian vertex. (the octet, and the price list)</p>
+<p><strong>21. The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules..</strong> One Lagrangian with four pieces and four vertices; the colour factors $C_F=\tfrac43$, $C_A=3$, $T_R=\tfrac12$; and the check that the $\mathrm{SU}(2)$ algebra reproduces the vertex <em>shape</em> while the colour factor stays imported. (standard input with the boundary marked)</p>
+<p><strong>22. Asymptotic Freedom and the Running of the Strong Coupling..</strong> The beta function and its negative sign; $\Lambda$ by dimensional transmutation; the conformal anomaly as the trace; and every coefficient imported, with the framework supplying the shape. (the running, transcribed)</p>
+<p><strong>23. The Parton Model and Deep Inelastic Scattering..</strong> $F_2$ and its sum over flavours; the Callan–Gross relation; the Gottfried sum rule; and the standing — the corpus imports functions here, not numbers, which is a different kind of import from anywhere else. (the one article that imports functions)</p>
+<p><strong>24. Jets, the QCD Cross Section and the Infrared Structure..</strong> The $R$ ratio with its $N_c$ and its $Q_f^2$; the three-jet fraction; and the one statement whose individual terms are infinite while the sum is finite, the KLN cancellation that makes a jet cross section a prediction. (the infrared structure, transcribed)</p>
+<h2 id="verification">Verification</h2>
+<p><strong>Three commands, each under a minute.</strong></p>
+<p><strong>One: the strong part is twenty-four of the ninety-three articles of the category.</strong></p>
+<pre><code class="language-bash">python3 - &lt;&lt;'PY'
+import re
+t=open('physics.md').read()
+cat=re.search(r'(?ms)^## Biquaternion Particle Physics\n(.*?)(?=^## |\Z)',t).group(1)
+st=re.search(r'(?ms)^### The Strong Interaction\n(.*?)(?=^### |\Z)',cat).group(1)
+al=re.findall(r'href=&quot;articles_physics/[^&quot;]+\.html&quot;',cat)
+print(len(al), len(re.findall(r'href=&quot;articles_physics/[^&quot;]+\.html&quot;',st)))
+PY
+</code></pre>
+<p>The output is <code>93 24</code>.</p>
+<p><strong>Two: the list is the menu's, and every title on it is a file.</strong></p>
+<pre><code class="language-bash">python3 - &lt;&lt;'PY'
+import re
+t=open('physics.md').read()
+n=open('articles_internal/internal-note-on-the-strong-interaction-in-the-corpus.md').read()
+def band(cat,part=None):
+    s=re.search(r'(?ms)^## '+cat+r'\n(.*?)(?=^## |\Z)',t).group(1)
+    if part: s=re.search(r'(?ms)^### '+part+r'\n(.*?)(?=^### |\Z)',s).group(1)
+    return re.findall(r'articles_physics/[^&quot;]+\.html&quot;&gt;([^&lt;]+)&lt;',s)
+st=band('Biquaternion Particle Physics','The Strong Interaction')
+out=band('Biquaternion Particle Physics','The Gauge Structure')+band('Biquaternion Gravity and Cosmology')
+b=n[n.index('## The List of Articles'):n.index('## What Each Article Contains')]
+ti=re.findall(r'(?m)^\d+\. (.+?)(?: \*\(|$)',b)
+inb=[x for x in ti if x in st]
+print('entries',len(ti),'existing in the part',len(inb),'existing outside',sum(x in out for x in ti))
+print('proposed',len([x for x in ti if x not in st and x not in out]))
+print('menu order',[st.index(x) for x in inb]==sorted(st.index(x) for x in inb))
+print('menu titles missing',[x for x in st if x not in ti])
+PY
+</code></pre>
+<p>The output is <code>entries 24</code>, <code>existing in the part 24</code>, <code>existing outside 0</code>, <code>proposed 0</code>, <code>menu order True</code>, <code>menu titles missing []</code>. Twenty-four and none, and no entry is a title without a file.</p>
+<p><strong>Three: no raised index, which is a corpus rule and not a style preference.</strong> The rule is that the metric is the unit metric, which raises nothing, so a raised index would name the same index twice. Every derivative here is written $\partial/\partial R_\mu$.</p>
+<pre><code class="language-bash">grep -cE '\\partial/\\partial R\^|d/dR\^' \
+  articles_internal/internal-note-on-the-strong-interaction-in-the-corpus.md
+</code></pre>
+<p>The output is <code>0</code>. The exit status is $1$, because <code>grep -c</code> returns $1$ when it counts nothing, and counting nothing is the expected result here.</p>
+<p><strong>What the commands do not show.</strong> They show that the file exists, that the part holds twenty-four articles, that the list is the menu's, that every entry on it is a file, and that no index is raised. They do not show that any statement in this note is right. The numerical claims it rests on — the gauge-transformation test $17.1838\to17.3970$, the Gell-Mann–Okubo pair $2256.9$ and $2270.1$ MeV, the proton's $9.0$ against $938.3$ MeV, the spin decomposition and $\delta\Sigma\approx0.32$ — are the articles' own numbers and are not recomputed here. They carry the articles' standing, not this note's.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The object.</strong> The gauge group QCD needs is $\mathrm{SU}(3)$, eight-dimensional and compact, with a complex three-dimensional fundamental. The algebra's compact part is $\mathrm{U}(2)$, four-dimensional, isomorphic to $(\mathrm{Spin}(3)\times\mathrm{U}(1))/\mathbb{Z}_2$. The two are not the same group in different words.</p>
+<p><strong>The ceiling.</strong> Two proofs, dimension and module parity, and neither is lifted by a change of basis. The second is the stronger: every $\mathbb{B}$-module has even complex dimension, so the triplet cannot be a carrier at any spin. The only counterexample that would matter is a module of odd complex dimension.</p>
+<p><strong>The native half.</strong> The instanton inside the compact factor, the abelian topological density as the imaginary part of the norm, the chiral field and its Maurer–Cartan form, the pion as the adjoint, the Skyrme soliton and its winding, the condensate as an object the equation carries, the multiplet bookkeeping, and the shape of the running.</p>
+<p><strong>The imported half.</strong> $N_c$, the colour group, the triplet, the Casimirs, $\alpha_s$, $\Lambda$, every hadron mass, the four action coefficients, the parton densities, the value of $\bar\theta$, and the dynamics that forms the condensate.</p>
+<p><strong>The four refusals.</strong> Colour inside the algebra; confinement; a derivation of $\theta_{\mathrm{vac}}$; the baryon-number–colour connection. Each has a reason and each reason is stated where it is used.</p>
+<p><strong>The verdict.</strong> The part builds everything the algebra's own $\mathrm{SU}(2)$ can carry, transcribes the rest of QCD with the boundary marked on every article, and turns the failure into a theorem with a price list — non-associativity on one route, a lost claim on the other.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
