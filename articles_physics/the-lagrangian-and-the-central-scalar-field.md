@@ -32,11 +32,9 @@ the Euler–Lagrange equation is the parent's equation. The action is the standa
 
 **What is not new.** The action is the standard real scalar action. What the corpus contributes is the identification of $\Box_\Phi$ with the norm of the gradient, the componentwise reading of the central operator, and the statement of the boundary this section draws.
 
-**Declared omissions.** Slots 8 and 10 are omitted: the second variation is the Klein–Gordon article's stability statement, and the non-relativistic reading is the Schrödinger article's. Slot 13 is omitted: the scalar has one formulation in the corpus and no competing one to compare against.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the centre is the span of $e_t$ and $ie_t$, so a central element commutes with everything.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the centre is the span of $e_t$ and $ie_t$, so a central element commutes with everything.
 
 **The field.** $\xi$ is a real function of the coordinates and $\tilde\Xi=\xi e_t$ is the element it defines; a general biquaternion-valued field has four components, and the central case is the one in which all four obey the same equation.
 
@@ -64,6 +62,22 @@ and for $\tilde\Xi=\xi e_t$ each term reduces to the scalar expression above. Th
 
 **What the action does not contain.** No cubic or quartic term in $\xi$ built from the algebra, because there is no invariant of the algebra of that degree in a central element; no derivative coupling, because there is no gauge field in this sector; and no spin term, because a central scalar carries no vector index. Each absence is a statement about the algebra and not an omission.
 
+**The pairing. The pairing is the scalar part of the element product, and in the centre it is ordinary multiplication.** $\mathrm{Sc}(\tilde\Xi^{\natural}\tilde\Xi)=\xi^2$ and $\mathrm{Sc}((\tilde\nabla_\Phi\tilde\Xi)^{\natural}\tilde\nabla_\Phi\tilde\Xi)=\sum_\mu(\partial_\mu\xi)^2$, both real. There is no imaginary part to cancel and no conjugation to choose, because a central element is its own conjugate up to sign in the imaginary centre.
+
+**Why the scalar case is the degenerate case of the family's reality question.** Every other article in the family has to argue that a pairing is real and that the argument is not circular. Here the question does not arise: the field is real and the pairing is multiplication. The contrast is informative, because it isolates what the family's other reality arguments are doing.
+
+**The type of the coefficient. Three real coefficients: a mass squared, a coupling, and nothing else.** $k_m^2$ has dimension of mass squared; $g$ has the dimension that makes $g\rho\xi$ an energy density; $\rho$ is data. There is no dimensionless coupling, because there is no interaction term for it to multiply.
+
+**Why the absence of a dimensionless coupling is a statement about the algebra.** A $\xi^4$ term would have one, and the corpus permits it as a standard scalar self-coupling; but a term built from the algebra's structure constants would need two vector indices per factor, and a central element has none. The interaction the algebra could build is therefore absent, and the scalar sector is free unless a coupling is added by hand.
+
+**The selection rule. The selection rule is Poincaré invariance and reality, and they leave the three terms written.** The action is the most general one of dimension at most four for a single real scalar: a kinetic term, a mass term, a source and optionally a quartic. Nothing is selected away, and nothing is added beyond the standard list.
+
+**What reality does not buy. Reality does not buy a spin, a charge, or a self-interaction.** Three things the reality of the action does not supply:
+
+- *No spin.* The field is central and has no vector index; the spin-zero articles record that this is why the scalar lies outside the state module.
+- *No $\mathrm{U}(1)$ charge.* A real field has no phase to rotate; the complex scalar's charge is the interacting-scalar article's.
+- *No interaction of the algebra's own kind.* A quartic term can be written, and it is not the algebra's.
+
 ## The Variation: One Component, One Equation
 
 **The variation.** With $\delta\xi$ vanishing at the boundary,
@@ -85,32 +99,6 @@ which is the parent's equation with $\tilde\Xi=\xi e_t$.
 **The variational derivative's sign, checked against the static limit.** For a static source the equation reduces to $\nabla^2\xi-k_m^2\xi=-g\rho$, whose solution for a point source is a Yukawa profile $-g\,e^{-k_mr}/(4\pi r)$, negative for positive $g\rho$ and decaying at $k_m^{-1}$. The sign is the experimental fact that like sources attract, and it fixes the source term's sign in the action. The check is not decoration: the opposite sign would give a repulsive and exponentially growing solution.
 
 **The Green function, and what it is not.** The action's kernel is $\Box_\Phi-k_m^2$, so the propagator is its inverse, which the parent computes. The variation gives the equation; the inverse gives the response; the two are different objects and the article keeps them apart.
-
-## The Reality of the Action
-
-### The Pairing
-
-**The pairing is the scalar part of the element product, and in the centre it is ordinary multiplication.** $\mathrm{Sc}(\tilde\Xi^{\natural}\tilde\Xi)=\xi^2$ and $\mathrm{Sc}((\tilde\nabla_\Phi\tilde\Xi)^{\natural}\tilde\nabla_\Phi\tilde\Xi)=\sum_\mu(\partial_\mu\xi)^2$, both real. There is no imaginary part to cancel and no conjugation to choose, because a central element is its own conjugate up to sign in the imaginary centre.
-
-**Why the scalar case is the degenerate case of the family's reality question.** Every other article in the family has to argue that a pairing is real and that the argument is not circular. Here the question does not arise: the field is real and the pairing is multiplication. The contrast is informative, because it isolates what the family's other reality arguments are doing.
-
-### The Type of the Coefficient
-
-**Three real coefficients: a mass squared, a coupling, and nothing else.** $k_m^2$ has dimension of mass squared; $g$ has the dimension that makes $g\rho\xi$ an energy density; $\rho$ is data. There is no dimensionless coupling, because there is no interaction term for it to multiply.
-
-**Why the absence of a dimensionless coupling is a statement about the algebra.** A $\xi^4$ term would have one, and the corpus permits it as a standard scalar self-coupling; but a term built from the algebra's structure constants would need two vector indices per factor, and a central element has none. The interaction the algebra could build is therefore absent, and the scalar sector is free unless a coupling is added by hand.
-
-### The Selection Rule
-
-**The selection rule is Poincaré invariance and reality, and they leave the three terms written.** The action is the most general one of dimension at most four for a single real scalar: a kinetic term, a mass term, a source and optionally a quartic. Nothing is selected away, and nothing is added beyond the standard list.
-
-### What Reality Does Not Buy
-
-**Reality does not buy a spin, a charge, or a self-interaction.** Three things the reality of the action does not supply:
-
-- *No spin.* The field is central and has no vector index; the spin-zero articles record that this is why the scalar lies outside the state module.
-- *No $\mathrm{U}(1)$ charge.* A real field has no phase to rotate; the complex scalar's charge is the interacting-scalar article's.
-- *No interaction of the algebra's own kind.* A quartic term can be written, and it is not the algebra's.
 
 ## The Constraints the Action Imposes: There Are None
 

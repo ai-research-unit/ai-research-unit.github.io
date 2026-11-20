@@ -1,7 +1,5 @@
 # __The Lagrangian and the Coupled Klein–Gordon Equation in Momentum Space__
 
-**Declared omissions.** The mode form imposes no constraint beyond its own vanishing, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The variational parent records a mismatch and leaves it open, and the mismatch is not where it says it is.** *The Lagrangian and the Coupled Klein–Gordon Equation* writes, at §*The Variation in the Field*, that the action's pairing of the two factors in the temporal slot is $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ while the article's equation carries $(\partial_{R_t}-ϙa_t'/\hbar)^{2}$, and it calls the difference "one bookkeeping choice, stated rather than absorbed". The two displays differ by a cross term, and the parent is right that a cross term is at stake. It is wrong about which side of the mismatch each display belongs to.
@@ -32,7 +30,9 @@ $$
 
 **The denials are the main article's, restated once.** The transform does not exchange sectors; a symbol exists only at constant coefficients; and a Legendre transform between a field and its conjugate momentum is not a Fourier transform, so the parent's four canonical momenta are not wave numbers and no display below reads them as one.
 
-## The Action in Momentum Space: The Action's Operator
+## The Action in Momentum Space
+
+### The Action's Operator
 
 **The action's Euler–Lagrange operator is the squared one, and the measurement is decisive.** For the temporal slot with a constant $c_t$ the functional is $S_t=\int\bigl\lvert(\partial_{R_t}+c_t)\Xi\bigr\rvert^{2}$, and its variation is computed twice: once by the analytic reading $\delta S_t/\delta\Xi^{*}=(\partial_{R_t}+c_t)^{2}\Xi$, and once by differencing the functional itself at $\Xi\pm h\eta$ with $h=10^{-5}$ and a two-mode probe $\eta$. The linear term of the difference is $96.374889164$ and the analytic prediction $2\,\mathrm{Re}\langle(\partial_{R_t}+c_t)^{2}\Xi,\eta\rangle$ is $96.374889162$: a ratio of $1.000000000020$.
 
@@ -49,13 +49,13 @@ $$
 
 **The correction is an attribution and not an equation.** Nothing in the parent's displays is wrong as a display. $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ is a perfectly good operator and the article of §*The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term* identifies its symbol. What is wrong is the sentence that attaches it to the action. **The corpus's action and the corpus's equation are one operator**, and the third object is the subject of the next section.
 
-## The Action in Momentum Space: The Source's Symbol
+### The Source's Symbol
 
 **The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform.** Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{ϙ}{\hbar}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. **The source's symbol is therefore the transform of the current, and it is a convolution in every other case.**
 
 **The constant setting is the one the article uses and the one the parent uses.** There the current's transform is a coefficient at one wave number, the connection's equation is algebraic, and the fork of §*The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term* is the fork between two polynomials in the same variable. **Nothing in the source's structure decides which polynomial is the operator's**, and the article states this rather than reading a decision into the variation.
 
-## The Action in Momentum Space: The Ordering Ambiguity Is the Cross Term
+### The Ordering Ambiguity Is the Cross Term
 
 **The paired form is the product of the two charge-conjugate first-order operators.** Writing the two factors as $(\partial_{R_t}-\bar c_t)$ and $(\partial_{R_t}+c_t)$, their product is $\partial^{2}_{R_t}+\partial_{R_t}(c_t-\bar c_t)-\lvert c_t\rvert^{2}$, and for a real $c_t$ the middle term vanishes and the product is $\partial^{2}-c_t^{2}$. **The squared form is the product of one factor with itself**, $(\partial_{R_t}+c_t)^{2}=\partial^{2}+2c_t\partial+c_t^{2}$, and the two differ by
 
@@ -71,7 +71,7 @@ which is the corpus's own identity at the temporal slot and which is first order
 
 **Nothing in the parity lemma distinguishes the two readings.** Both are real in the corpus's writing, because both are built from real coefficients there. The lemma decides reality; the ordering decides the power of the response. **The article keeps them apart because they are decided by different arguments.**
 
-## The Action in Momentum Space: The Charge Ambiguity Translates the Pair
+### The Charge Ambiguity Translates the Pair
 
 **Flipping the charge translates the roots and leaves their separation.** The squared shell is $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$; at $k_m=0.7$ and $\lvert\vec\kappa\rvert=3$ its roots with $c_t=-0.31$ are $+2.770584$ and $-3.390584$, and with $c_t=+0.31$ they are $+3.390584$ and $-2.770584$. **The separation is $6.161169$ in both cases and the pair translates by $-2c_t=0.62$**; the symbol at a fixed wave number moves from $10.956100$ to $7.236100$.
 
@@ -80,6 +80,18 @@ which is the corpus's own identity at the temporal slot and which is first order
 **And it is the same operation as the reordering.** The two factors of the paired form differ in exactly the charge they carry, so exchanging them is charging one of them oppositely; flipping the sign of $c_t$ in the squared form is charging both. **The sign ambiguity and the order ambiguity are the same functional read twice**, and the parent's two sentences about the temporal slot are two descriptions of one object.
 
 **What this means for the parent's question.** The parent asks whether the temporal slot's cross term belongs to the energy or to the derivative. In momentum space the answer is that the cross term belongs to neither on its own: it is the difference between the one-charge and the two-charge readings, and the energy-versus-derivative question is the same question asked in position space, where the two readings are two operators related by an integration by parts.
+
+**The gap between the two conditions is one slot deep.** Take a real $A_t$, which is what a four-potential written in ordinary coordinates suggests. Then $c_t$ is imaginary, the action is still real, and the symbol is $(\sigma_t+i\lvert c_t\rvert)^{2}=k_t'^{2}-2ik_t'\lvert c_t\rvert-\lvert c_t\rvert^{2}$: real part $k_t'^{2}-\lvert c_t\rvert^{2}$, imaginary part $-2k_t'\lvert c_t\rvert$. **The action reports nothing and the symbol reports a complex number**, and the complex number is exactly the shape of the one the path-integral companion measures for a wrong-parity coefficient.
+
+**So the variational principle's role here is narrower than it looks.** It supplies the operator, and it does not supply the criterion. The criterion is the parity lemma, which is an observation about the square of a complex number and needs no action at all.
+
+**The pairing. Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the kinetic term here is its modulus squared. The alternative was rejected in the element article and the rejection is unchanged by the connection.
+
+**The type of the coefficient. The symbol is real only in the corpus's writing, and the difference is the whole content.** Applying the parity lemma of the main article, the squared symbol $\sum_\mu(\sigma_\mu+c_\mu)^{2}$ is real in the temporal slot when $c_t$ is real — that is, when $A_t$ is imaginary — and real in a spatial slot when $c_\eta$ is imaginary — that is, when $A_\eta$ is real. Both conditions together are $\tilde A_\Phi^{*}=-\tilde A_\Phi$. **A modulus squared is real for every $c$; a symbol is real for the anti-Hermitian $c$ and for no other.**
+
+**The selection rule. Not examined here.** A connection is not a potential: it enters the gradient, not the potential's slot, so there is no admissible sector to exclude. What the connection does do to the symbol is the next subsection's question.
+
+**What reality does not buy. The action is real for every connection, and that is an identity rather than a measurement.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. **No choice of connection can make the action complex**, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
 
 ## The Variation
 
@@ -101,29 +113,15 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Reality of the Action
+## The Constraints the Action Imposes: The Constraint Is the Vanishing Symbol
 
-**Four questions, and this article answers (b) and (d) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+**The variation at a mode is algebraic, so the constraint is not a surface in field space.** The mode form $Q$ is a quadratic form in the amplitude, and stationarity forces its bracket to vanish for every $\delta X^{*}$, by the positivity argument the action section records. Nothing is then imposed on the amplitude: where the bracket is invertible the only stationary amplitude is zero, and a zero amplitude is not a restricted configuration but the absence of one.
 
-### The Pairing
+**What the action constrains is the four-momentum.** The boxed operator is the squared one, $\bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\bigr)$, and its symbol is singular exactly where a nonzero amplitude can be carried. That set is the constraint surface of this chart, and its equation is the dispersion relation of the spectrum section read as a zero set.
 
-**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the kinetic term here is its modulus squared. The alternative was rejected in the element article and the rejection is unchanged by the connection.
+**The set carries the mass's shape and the connection's translation.** At $k_m=0$ the symbol vanishes on the cone, and a constant connection translates the cone without deforming it, because its contribution is a shift of the frequency by the temporal slot and a rotation of the wave vector by the spatial ones. At finite mass the set separates into two sheets at distance $2k_m$, and the two sheets are the two signs of the frequency: **the action fixes the square of the frequency and not its sign**, which is why the antiparticle branch is not a separate constraint.
 
-### The Type of the Coefficient
-
-**The symbol is real only in the corpus's writing, and the difference is the whole content.** Applying the parity lemma of the main article, the squared symbol $\sum_\mu(\sigma_\mu+c_\mu)^{2}$ is real in the temporal slot when $c_t$ is real — that is, when $A_t$ is imaginary — and real in a spatial slot when $c_\eta$ is imaginary — that is, when $A_\eta$ is real. Both conditions together are $\tilde A_\Phi^{*}=-\tilde A_\Phi$. **A modulus squared is real for every $c$; a symbol is real for the anti-Hermitian $c$ and for no other.**
-
-### The Selection Rule
-
-**Not examined here.** A connection is not a potential: it enters the gradient, not the potential's slot, so there is no admissible sector to exclude. What the connection does do to the symbol is the next subsection's question.
-
-### What Reality Does Not Buy
-
-**The action is real for every connection, and that is an identity rather than a measurement.** The kinetic term is $\mathrm{Sc}\big[(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi)^{*}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\big]$, a modulus squared summed over four slots, and a modulus squared is real for any complex coefficient whatsoever. **No choice of connection can make the action complex**, so no argument from the reality of the action can select a connection, and the parent's care over the temporal slot is not about the reality of $S$.
-
-**The gap between the two conditions is one slot deep.** Take a real $A_t$, which is what a four-potential written in ordinary coordinates suggests. Then $c_t$ is imaginary, the action is still real, and the symbol is $(\sigma_t+i\lvert c_t\rvert)^{2}=k_t'^{2}-2ik_t'\lvert c_t\rvert-\lvert c_t\rvert^{2}$: real part $k_t'^{2}-\lvert c_t\rvert^{2}$, imaginary part $-2k_t'\lvert c_t\rvert$. **The action reports nothing and the symbol reports a complex number**, and the complex number is exactly the shape of the one the path-integral companion measures for a wrong-parity coefficient.
-
-**So the variational principle's role here is narrower than it looks.** It supplies the operator, and it does not supply the criterion. The criterion is the parity lemma, which is an observation about the square of a complex number and needs no action at all.
+**What is absent, and why each absence is exact.** There is no Gauss law, because the connection is a fixed background at a mode and is not varied; there is no boundary condition, because a variation at one momentum cannot see one; and there is no restriction on the amplitude at a singular momentum. The whole constraint content is one determinant, and the structural consequence's claim is a statement about what that determinant leaves free.
 
 ## The Structural Consequence: They Are One Question
 

@@ -1,7 +1,5 @@
 # __The Lagrangian and the Spin-Half Fluid__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The spinor case is the one in which the action's canonical structure has a closed form, and the closed form says something the equations do not.** In [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) the fluid is a triple at each event — a density, a frame and a spin direction — and the system does not close. Here the same field is written as an action in those variables, and the action's canonical structure is computed rather than asserted: which of the triple's data are canonical and which are not, with what weights.
@@ -24,7 +22,7 @@ with $\beta=\lvert\vec v\rvert/c$, $\vec\omega_{\mathrm r}$ the rotor's body ang
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\beta=\tanh\theta_{\mathrm{rpd}}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ with $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. The action is the element action of [The Lagrangian and the Dirac Equation in Polar Variables](the-lagrangian-and-the-dirac-equation-in-polar-variables.html), and the spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow.
+**The conventions are restated here so that every sign below is checkable from this page alone.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ with $\tilde U_{\Psi,\mathrm b}=\exp(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b})$ and $\tilde u_{\mathrm r}=\exp(\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$, $\rho_{\mathrm{num}}=\varrho^{2}$, $\gamma=\cosh\theta_{\mathrm{rpd}}$, $\beta=\tanh\theta_{\mathrm{rpd}}$, $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$, and $\vec\omega_{\mathrm r}=\tilde u_{\mathrm r}^{-1}\dot{\tilde u}_{\mathrm r}$ with $\vec n_{\mathrm{rot}}=\tilde u_{\mathrm r}^{-1}\vec u_{\mathrm b}\tilde u_{\mathrm r}$. The action is the element action of [The Lagrangian and the Dirac Equation in Polar Variables](the-lagrangian-and-the-dirac-equation-in-polar-variables.html), and the spatial derivatives are set to zero: the field is homogeneous, which is the setting in which the polar flow is the parent's flow.
 
 ## The Action in the Fluid Variables: The Kinetic Term
 

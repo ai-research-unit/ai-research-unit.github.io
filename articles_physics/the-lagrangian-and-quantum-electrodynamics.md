@@ -8,8 +8,6 @@
 
 **Why write an article that stops.** Because the absence is the interesting fact, and because a reader who finds an action called QED is entitled to know which four words of the name the corpus can support. It supports *electro* and *dynamics*. It does not support *quantum*, and it does not support the perturbation theory that the name usually brings with it.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, where each of its three terms is shown real, so slot 5 is omitted, with its four subsections. The action's constraints are the ones the two parents state, and this article does not repeat them in a section of its own, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the textbook formulation is attempted beyond the parent's, so slot 13 is omitted. The open questions are folded into the last section, so slot 14 is omitted.
-
 ## Conventions
 
 **The conventions are the two parents', and they agree.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection, $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is
@@ -65,6 +63,22 @@ with the current derived in the next section.
 **The identity that makes the system consistent.** Apply $(\tilde\nabla_\Phi)^{\natural}$ to the connection's equation and take $\mathrm{Sc}$. The left side vanishes identically, so the source must satisfy $\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_\Phi\bigr)=0$, which is the continuity equation for the current. It holds because the matter equation is the current's conservation, and the two cannot disagree: one action, one symmetry, one identity.
 
 **What the variation does not give.** It does not give the commutation relations, the ordering of operators, the vacuum, or the vertex. Those are not consequences of varying an action; they are the content of a quantisation, and the corpus does not perform one.
+
+## The Constraints the Action Imposes: One Identity and One Gauss Law
+
+**The identity is what the field term's divergence does, and it is not an equation of motion.** Apply $(\tilde\nabla_\Phi)^{\natural}$ to the connection's Euler–Lagrange equation and take the scalar part. The left side becomes the divergence of $\tilde F$, which vanishes for every configuration because $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$, and the divergence of a curl is zero in the algebra exactly as it is in components. What survives is
+
+$$
+(\tilde\nabla_\Phi)^{\natural}\tilde j_\Phi=0,
+$$
+
+and it holds whether or not the equations are solved. That is the precise sense in which the action forbids an arbitrary source: the source may not be chosen, because its divergence is already spoken for.
+
+**The temporal slot's equation is a Gauss law.** The four equations of the connection come from the four slots, and the temporal one carries no second time derivative of $\tilde A_{\Phi,t}$: the field strength's temporal row is a spatial gradient, so the equation is a relation among the data at one instant rather than a rule for advancing them. Its divergence reproduces the identity above, so a configuration that satisfies the relation once satisfies it always. **The action does not fix $\tilde A_{\Phi,t}$**; it requires the data to be consistent with the charge already present.
+
+**The constraint is first class, and the count of degrees follows from that.** The density is invariant under the local shift $\tilde A_\Phi\mapsto\tilde A_\Phi-\frac{\hbar}{q}\partial\Lambda$, so the Gauss law generates that shift instead of restricting a physical variable, and a first-class constraint removes two degrees of freedom. Four slots minus two leaves the two polarisations of the field. Nothing is fixed here and no ghost is introduced: fixing needs a gauge condition, which is [the $R_\xi$ article](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html)'s subject.
+
+**What the section does not claim.** It does not claim the constraint determines the potential, and it does not claim the matter is unconstrained. The matter equations carry the connection, the connection's equation carries the matter's current, and the Gauss law is the single relation in which the two are tied at each instant.
 
 ## The Structural Consequence: Two Equations, One Current, One Constant
 

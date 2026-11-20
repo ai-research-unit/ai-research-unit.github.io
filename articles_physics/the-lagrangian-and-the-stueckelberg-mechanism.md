@@ -32,11 +32,9 @@ the stationarity conditions are the two equations above, and the action is invar
 
 **What is not new.** The mechanism is standard, and it is the abelian case of what the electroweak sector does with a doublet. What the corpus contributes is the exact biquaternionic writing of the invariant combination and the comparison of the two gauge choices on one page.
 
-**Declared omissions.** Slots 8 and 10 are omitted: the second variation is the Proca article's, since the two actions coincide in the unitary gauge, and the non-relativistic reading of a massive vector is the Proca article's. Slot 13 is omitted: the abelian theory has one formulation with two gauges, not two formulations.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$. The potential is $\tilde A_\Phi\in\mathbb{B}_\Phi$, real, with $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and $\partial_\mu=\partial/\partial R_\mu$.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$. The potential is $\tilde A_\Phi\in\mathbb{B}_\Phi$, real, with $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and $\partial_\mu=\partial/\partial R_\mu$.
 
 **The scalar.** $\xi$ is a real central scalar, dimensionless in this normalization, and the combination $A_\mu-\partial_\mu\xi/\mu$ is the invariant one. The parameter $\mu$ is the mass, with dimension of mass.
 
@@ -82,6 +80,22 @@ so the combination is invariant term by term. The invariance is exact and not up
 
 **The limit that recovers Proca.** For $\xi=0$ the action is the Proca action, and for $\mu\to0$ the scalar decouples and the action is Maxwell's. Both limits are exact, and they are the two ends of the family the parent article describes.
 
+**The pairing. The pairing is the real scalar part, and the mass term's reality is what lets the invariant be written as one square.** $\langle\tilde C_\Phi\rangle_\natural$ is real and negative-definite with the corpus's sign rule, so $-\tfrac12\mu^2\langle\tilde C_\Phi\rangle_\natural$ is real and positive. There is no imaginary part to cancel, because the combination $\tilde C_\Phi$ is a real vector in the material sector and the mass term is its norm.
+
+**Why the invariant is a single square and not a sum of two.** The Stueckelberg trick consists in replacing $A_\mu A_\mu$ by $(A_\mu-\partial_\mu\xi/\mu)^2$, and the replacement preserves reality because the shift is real. A complex scalar would require a modulus and would give a non-polynomial action; the real scalar gives a polynomial one, which is why the abelian mechanism is the simplest case.
+
+**The type of the coefficient. One mass and no new coupling.** The action has $\mu$ and one gauge coupling, and the scalar's coupling is not independent: it is fixed to $\mu$ by the requirement that the combination be invariant. A different coefficient in front of $\partial_\mu\xi$ would break the symmetry, so the scalar's normalization is not a parameter.
+
+**What that means for the parameter count.** The theory has two numbers, $e$ and $\mu$, and it had two before the scalar was introduced. The mechanism adds a field and no parameter, which is the sharpest way to say that it is a rewriting and not a new theory.
+
+**The selection rule. The selection rule is the shift symmetry, and it fixes the scalar's coupling exactly.** The action is the most general one of dimension four built from $F_{\mu\nu}$ and the invariant combination; any term with $\xi$ alone would break the shift and would give the scalar a potential. The absence of such a term is what makes the scalar non-dynamical in the unitary gauge and what makes the mechanism exact.
+
+**What reality does not buy. Reality does not buy renormalizability or a physical scalar.** Three things the reality of the action does not supply:
+
+- *No renormalizability claim.* The Stueckelberg action is renormalizable as a gauge theory and not as a Proca theory; the distinction is the whole reason the mechanism is used.
+- *No physical scalar.* The scalar is not an asymptotic state; it is the longitudinal polarization in another variable.
+- *No ghost freedom by itself.* The absence of ghosts follows from the abelian determinant being field independent, which is a property of the gauge group and not of the action's reality.
+
 ## The Variation: Two Equations, One of Them a Constraint
 
 **The variation with respect to $\tilde A_\Phi$.** Varying and integrating by parts,
@@ -111,32 +125,6 @@ which is the deformed Lorenz condition, $\partial_\mu A_\mu=\frac{1}{\mu}\Box\xi
 **The gauge redundancy of the two equations.** Because the action is invariant, the equations cannot determine $\xi$ and the longitudinal part of $A_\mu$ separately; they determine only the combination $\tilde C_\Phi$. The unitary gauge picks a representative, and that is a choice of section in the orbit, not an extra equation.
 
 **The check that would catch a missing factor.** In the unitary gauge the first equation is $\partial_\nu F_{\mu\nu}=\mu^2A_\mu$ and its divergence gives $\mu^2\partial_\mu A_\mu=0$, which is the Lorenz condition with the right sign. If the mass term had been written $\tfrac12\mu^2A_\mu A_\mu$ without the scalar, the divergence would give $\partial_\mu A_\mu=0$ as an identity, which is false; the scalar is what makes the constraint consistent with the equation.
-
-## The Reality of the Action
-
-### The Pairing
-
-**The pairing is the real scalar part, and the mass term's reality is what lets the invariant be written as one square.** $\langle\tilde C_\Phi\rangle_\natural$ is real and negative-definite with the corpus's sign rule, so $-\tfrac12\mu^2\langle\tilde C_\Phi\rangle_\natural$ is real and positive. There is no imaginary part to cancel, because the combination $\tilde C_\Phi$ is a real vector in the material sector and the mass term is its norm.
-
-**Why the invariant is a single square and not a sum of two.** The Stueckelberg trick consists in replacing $A_\mu A_\mu$ by $(A_\mu-\partial_\mu\xi/\mu)^2$, and the replacement preserves reality because the shift is real. A complex scalar would require a modulus and would give a non-polynomial action; the real scalar gives a polynomial one, which is why the abelian mechanism is the simplest case.
-
-### The Type of the Coefficient
-
-**One mass and no new coupling.** The action has $\mu$ and one gauge coupling, and the scalar's coupling is not independent: it is fixed to $\mu$ by the requirement that the combination be invariant. A different coefficient in front of $\partial_\mu\xi$ would break the symmetry, so the scalar's normalization is not a parameter.
-
-**What that means for the parameter count.** The theory has two numbers, $e$ and $\mu$, and it had two before the scalar was introduced. The mechanism adds a field and no parameter, which is the sharpest way to say that it is a rewriting and not a new theory.
-
-### The Selection Rule
-
-**The selection rule is the shift symmetry, and it fixes the scalar's coupling exactly.** The action is the most general one of dimension four built from $F_{\mu\nu}$ and the invariant combination; any term with $\xi$ alone would break the shift and would give the scalar a potential. The absence of such a term is what makes the scalar non-dynamical in the unitary gauge and what makes the mechanism exact.
-
-### What Reality Does Not Buy
-
-**Reality does not buy renormalizability or a physical scalar.** Three things the reality of the action does not supply:
-
-- *No renormalizability claim.* The Stueckelberg action is renormalizable as a gauge theory and not as a Proca theory; the distinction is the whole reason the mechanism is used.
-- *No physical scalar.* The scalar is not an asymptotic state; it is the longitudinal polarization in another variable.
-- *No ghost freedom by itself.* The absence of ghosts follows from the abelian determinant being field independent, which is a property of the gauge group and not of the action's reality.
 
 ## The Constraints the Action Imposes: One Scalar, Three Modes, No Ghost
 

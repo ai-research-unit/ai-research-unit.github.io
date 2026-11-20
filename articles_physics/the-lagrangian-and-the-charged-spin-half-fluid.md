@@ -1,7 +1,5 @@
 # __The Lagrangian and the Charged Spin-Half Fluid__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The connection is a central element, and a central element decomposes into two of the four brackets and none of the others.** That single fact is the whole of the charged spin fluid's structure — the force without a torque, the norms that survive, the vorticity that stays the frame's — and the action is the place where it is one sentence instead of five results.
@@ -18,7 +16,7 @@
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** Those of the free companion, with $\tilde A_\Phi=i a'_t e_t+\sum_\eta A_\eta\vec e_\eta\in\mathbb{B}_\Phi$, covariant derivative $\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ acting from the left, $ϙ$ the coupling and $q=-ϙ$ the electric charge. The four brackets of $\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi$ are the real scalar (the scale's), the central imaginary (the phase's), the Hermitian element (the boost's) and the real vector (the rotor's). Gauge transformations are central: $\tilde\Xi\mapsto\tilde\Xi\lambda$ with $\lambda=\exp(iϙ\Gamma/\hbar)\in\mathbb{C}$, $A_\mu\mapsto A_\mu-\partial_\mu\Gamma$.
 
 ## The Action in the Fluid Variables: The Kinetic Term and the Two Rates
 
@@ -64,8 +62,6 @@ and the first term is central imaginary while the second is Hermitian with a rea
 **The two zeros are the article's first result and they are structural.** The scale is real and the connection has no real scalar part; the rotor is a real vector and the connection has no real vector part. **No cancellation occurs and no small parameter is used**: the two brackets the coupling cannot reach are the two factors of the complete polar decomposition that carry the fluid's density and its spin.
 
 **This is the type argument of the block's charged articles, in its most economical form.** The scalar charged articles state it as one sentence about a central element reaching the phase and the boost and not the scale and the rotor; here it is a table whose two zeros are read off the decomposition of $\tilde A_\Phi$.
-
-## The Constraints the Action Imposes: Gauge Invariance Is Exact Because the Group Is Central
 
 **The invariance is one line and it rests on the gauge element's being central.** With $\tilde\Xi\mapsto\tilde\Xi\lambda$ and $\lambda\in\mathbb{C}$ central,
 

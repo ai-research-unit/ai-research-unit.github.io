@@ -29,8 +29,6 @@ with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$,
 
 **What is not claimed.** No new solution, no new prediction. The action is the standard scalar-electrodynamics action; the algebra's contribution is that the coupling is one derivative, that the current and the source are one object, and that the two equations' consistency is one line.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, where each of the three terms is shown real, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Conventions
 
 **The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection and $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ with $A_\mu$ the real components of $\tilde A_\Phi$ and $ϙ$ the charge of the field, fixed once here and never re-chosen. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$, the pure-vector part of the conjugate gradient. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4x=\mathrm{d}r'_t\,\mathrm{d}^3x$, the mass is $k_m=mc/\hbar$, and the field term's normalisation $\sqrt{\mu}$ is the Maxwell article's and is not fixed again.
@@ -59,7 +57,9 @@ exactly, because $Y^{*}Y=\mathrm{nat}(\bar Y)Y$ has scalar part $\sum_\lambda\lv
 
 **The pairing.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, the free companion's choice, and the reason is the free companion's: $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ for complex coefficients is not real and does not give a real action, so the quaternionic pairing is unavailable. The polar companion uses the same pairing.
 
-## The Variation: In the Field
+## The Variation
+
+### In the Field
 
 **The Euler–Lagrange equation.** Vary $\tilde\Xi$ and $\tilde\Xi^{*}$ independently, which is legitimate over the complex carrier and is the standard device for a complex field, and integrate by parts once per slot. The result is
 
@@ -87,7 +87,7 @@ The article states the equation as $\Box_{\mathrm{gco},\Phi}\tilde\Xi=k_m^{2}\ti
 
 **The count.** The equation is four complex equations for four complex coefficients, which is eight real equations for eight real functions. The action is real, so the variations with respect to $\tilde\Xi$ and with respect to $\tilde\Xi^{*}$ are not independent constraints: the pair gives the four complex equations and their four conjugates, and the conjugate set is the same set. The count is the free companion's, unchanged by the coupling.
 
-## The Variation: In the Connection
+### In the Connection
 
 **The source.** Varying $A_\mu$ acts only inside the covariant derivatives, through $\delta\bigl(\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi\bigr)=\frac{iϙ}{\hbar}\,\delta A_\mu\,\tilde\Xi$, and the connection's coefficient is central, so the variation does not have to choose a side. Hence
 

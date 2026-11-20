@@ -1,7 +1,5 @@
 # __The Lagrangian and the Coupled Schrödinger Equation in Momentum Space__
 
-**Declared omissions.** The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The coupled action's fixed-frequency form is the coupled symbol, and its reality is a term-by-term fact.** *The Lagrangian and the Coupled Schrödinger Equation* writes the action for $i\hbar D_t\tilde\Xi=\frac{1}{2m}\sum(-i\hbar D_\eta)^{2}\tilde\Xi$. Take a mode of one frequency and one wave vector, and the action's density becomes the symbol of *The Fourier Transform and the Coupled Schrödinger Equation in Biquaternionic Form*. **The identity is the same identity as in the free case**, with two shifted arguments.
@@ -61,6 +59,24 @@ and the density is $\sigma_{\mathrm{gco}}(\omega,\vec k)$ times $\mathrm{Sc}(\ti
 
 **What the substitution does not assume.** It does not assume that the connection is constant. A varying connection makes the density a function of position, and then the fixed-frequency reduction is a reduction in time only. **The reduction in space is a separate assumption and it is named in the mode's definition.**
 
+**The pairing. Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the three terms below are its three applications.
+
+**The type of the coefficient. The kinetic term.** The antisymmetrised covariant kinetic density is real exactly when the root is anti-Hermitian, by the free article's computation, and the covariant derivative's connection part is central so it does not change the type. **The coupling adds a real number to a real quantity.**
+
+**The gradient term.** $\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)=\sum_\mu\lvert(D_\eta\tilde\Xi)_\mu\rvert^{2}$, a sum of four moduli, which is real and non-negative. **The term is a norm and not a form**, and its positivity is what makes the kinetic energy of the field positive for every configuration.
+
+**The potential term.** $\varphi$ is real, so $ϙ\varphi\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is real and its sign is the sign of $ϙ\varphi$. **The term is the only one whose sign is not fixed**, and that is the standard statement that a potential can lower the energy without bound.
+
+**So the reality is term by term.** Each of the three terms is real on its own, so the sum is real and no cancellation between terms is needed. **That is stronger than the free case's statement**, where the antisymmetrised kinetic term was the only one and its reality was the whole content.
+
+**What the term-by-term structure forbids.** It forbids a complex action from a real connection and a Hermitian Hamiltonian. **A complex action would need a non-Hermitian coefficient or a complex $ϙ$**, and the article's licence excludes both.
+
+**The modulus is preserved by the connection.** $\lvert D_\eta\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. **That invariance is the reason the action's gauge covariance is exact and not up to a total derivative**, and the parent states it once.
+
+**The selection rule. Not examined here.** The potential is real by the licence, $\varrho\varphi$ with $\varphi$ real, so no sector is excluded. The exclusion needs a potential that is a free element, and that is the scalar family's case.
+
+**What reality does not buy. Not at issue here.** The section shows the sum is real term by term, which is stronger than the free case's statement; it does not compare the action's reality with the spectrum's.
+
 ## The Variation
 
 **The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
@@ -80,36 +96,6 @@ $$
 the symbol equation the article solves. The passage from the action to the equation is one line and it is exact: the fixed-frequency action's stationarity and the symbol equation are the same statement.
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
-
-## The Reality of the Action
-
-**Four questions, and this article answers (b) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
-
-### The Pairing
-
-**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the three terms below are its three applications.
-
-### The Type of the Coefficient
-
-**The kinetic term.** The antisymmetrised covariant kinetic density is real exactly when the root is anti-Hermitian, by the free article's computation, and the covariant derivative's connection part is central so it does not change the type. **The coupling adds a real number to a real quantity.**
-
-**The gradient term.** $\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)=\sum_\mu\lvert(D_\eta\tilde\Xi)_\mu\rvert^{2}$, a sum of four moduli, which is real and non-negative. **The term is a norm and not a form**, and its positivity is what makes the kinetic energy of the field positive for every configuration.
-
-**The potential term.** $\varphi$ is real, so $ϙ\varphi\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is real and its sign is the sign of $ϙ\varphi$. **The term is the only one whose sign is not fixed**, and that is the standard statement that a potential can lower the energy without bound.
-
-**So the reality is term by term.** Each of the three terms is real on its own, so the sum is real and no cancellation between terms is needed. **That is stronger than the free case's statement**, where the antisymmetrised kinetic term was the only one and its reality was the whole content.
-
-**What the term-by-term structure forbids.** It forbids a complex action from a real connection and a Hermitian Hamiltonian. **A complex action would need a non-Hermitian coefficient or a complex $ϙ$**, and the article's licence excludes both.
-
-**The modulus is preserved by the connection.** $\lvert D_\eta\tilde\Xi\rvert$ is unchanged when $\tilde\Xi$ is multiplied by an invertible element, so the gauge transformation cannot change the gradient term. **That invariance is the reason the action's gauge covariance is exact and not up to a total derivative**, and the parent states it once.
-
-### The Selection Rule
-
-**Not examined here.** The potential is real by the licence, $\varrho\varphi$ with $\varphi$ real, so no sector is excluded. The exclusion needs a potential that is a free element, and that is the scalar family's case.
-
-### What Reality Does Not Buy
-
-**Not at issue here.** The section shows the sum is real term by term, which is stronger than the free case's statement; it does not compare the action's reality with the spectrum's.
 
 ## The Constraints the Action Imposes: Gauge Invariance of the Symbol
 
@@ -167,20 +153,6 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## The Legendre Transform
-
-**The slope in the frequency.** $\partial\sigma_{\mathrm{gco}}/\partial\omega=\hbar$, independent of $\varphi$, of $\vec A$ and of the Hamiltonian. **The connection shifts the arguments and never the slope**, because it does not depend on the frequency.
-
-**The slope in the temporal wave number.** With $k_t'=\omega/c$ the slope is $\hbar c$, and the factor is the unit that relates the two variables. **The two slopes are one slope read in two units**, and no physics depends on which is written.
-
-**Non-degeneracy.** $\hbar\neq0$, so the Legendre map is invertible and the variational problem has no constraint and no multiplier. **The coupling does not introduce one**, because the connection enters the density as a number and not as a Lagrange multiplier.
-
-**What the slope does not see.** The slope does not see $\vec\pi$, so the mechanical momentum is not a Legendre conjugate of anything in this article. **It is a Noether momentum**, the parent's, and the two notions coincide only in a second-order theory.
-
-**The mixed derivative vanishes.** $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$, so the frequency and the wave vector are separated in the symbol. **The separation is the statement that the symbol is a sum of a frequency term and a wave-vector term**, and it is the constant-coefficient structure read on the second derivative.
-
-**Why the mixed derivative matters.** A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. **The article's class has none**, and the flatness of the second derivative is the class's mark.
-
 ## The Noether Currents: The Energy Is the Symbol at Zero Frequency
 
 **The constant setting.** The energy on a mode is $E=\mathrm{Sc}\big(\tilde X^{*}\tilde H^{\mathrm{gco}}_\Psi\tilde X\big)$, and the symbol at zero frequency is $\sigma_{\mathrm{gco}}(0)=-\tilde H^{\mathrm{gco}}_\Psi$. So
@@ -200,6 +172,20 @@ and the identity is exact by construction. **The sign is the Lagrangian's**: a L
 **What the identity does not say.** It does not say that $\sigma$ is the Hamiltonian's symbol. The Hamiltonian's symbol is $\hbar\omega$ itself; the Lagrangian's symbol is $\hbar\omega$ minus the Hamiltonian's. **The two differ by the Legendre transform of a quadratic**, and this article uses the Lagrangian's.
 
 **A check of the sign's consistency.** Composing the identity with the on-shell condition gives $E=0$ on a solution at zero frequency, which is the statement that a zero-frequency solution has zero energy under this normalisation. **The statement is a normalisation and not a physical claim**, and the article states it once.
+
+## The Legendre Transform
+
+**The slope in the frequency.** $\partial\sigma_{\mathrm{gco}}/\partial\omega=\hbar$, independent of $\varphi$, of $\vec A$ and of the Hamiltonian. **The connection shifts the arguments and never the slope**, because it does not depend on the frequency.
+
+**The slope in the temporal wave number.** With $k_t'=\omega/c$ the slope is $\hbar c$, and the factor is the unit that relates the two variables. **The two slopes are one slope read in two units**, and no physics depends on which is written.
+
+**Non-degeneracy.** $\hbar\neq0$, so the Legendre map is invertible and the variational problem has no constraint and no multiplier. **The coupling does not introduce one**, because the connection enters the density as a number and not as a Lagrange multiplier.
+
+**What the slope does not see.** The slope does not see $\vec\pi$, so the mechanical momentum is not a Legendre conjugate of anything in this article. **It is a Noether momentum**, the parent's, and the two notions coincide only in a second-order theory.
+
+**The mixed derivative vanishes.** $\partial^{2}\sigma_{\mathrm{gco}}/\partial\omega\partial k_\eta=0$, so the frequency and the wave vector are separated in the symbol. **The separation is the statement that the symbol is a sum of a frequency term and a wave-vector term**, and it is the constant-coefficient structure read on the second derivative.
+
+**Why the mixed derivative matters.** A nonzero mixed derivative would mean that the frequency's conjugate depends on the wave vector, which is what a dispersion with a velocity-dependent mass would look like. **The article's class has none**, and the flatness of the second derivative is the class's mark.
 
 ## The Limits and the Truncation’s Error
 

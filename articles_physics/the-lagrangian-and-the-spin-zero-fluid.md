@@ -1,7 +1,5 @@
 # __The Lagrangian and the Spin-Zero Fluid__
 
-**Declared omissions.** The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is computed only for the gradient energy, whose sign is what §*The Second Variation: The Gradient Energy Is Indefinite* states; the full quadratic form is not assembled, and no slot 5 is filled because the fluid's pairing is the parent's. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **At the rung above, the velocity is on a shell, and the action makes the shell an equation rather than a hypothesis.** [The Spin-Zero Fluid](the-spin-zero-fluid.html) derives the flow from a mass shell that it states as a constraint: $\sum_\mu V_{\Phi,\mu}V_{\Phi,\mu}=-c^{2}-2Q_{\mathrm{qnt}}/m$. Here the same relation is the Euler–Lagrange equation of the density, so the fluid's kinematics is a consequence of varying an action and not a condition imposed on it.
@@ -18,7 +16,7 @@
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, $\tilde V_\Phi=\tilde P_\Phi/m$, $k_m=mc/\hbar$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ with $r'_t=ct$. The temporal slot carries the $i$, so $\sum_\mu p_\mu p_\mu=-m^{2}c^{2}$ on the free shell. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the conjugations are $*$ and $^{\natural}$. The action is a functional over four-dimensional space with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$, $\rho_{\mathrm{num}}=\varrho^{2}$, $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$, $\tilde P_\Phi=\tilde\nabla_\Phi S_{\tilde\Xi}=i(E/c)e_t+\vec p$, $\tilde V_\Phi=\tilde P_\Phi/m$, $k_m=mc/\hbar$, $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial{r'_{t}}^{2}$ with $r'_t=ct$. The temporal slot carries the $i$, so $\sum_\mu p_\mu p_\mu=-m^{2}c^{2}$ on the free shell. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the conjugations are $*$ and $^{\natural}$. The action is a functional over four-dimensional space with $\mathrm{d}^4\varrho=\mathrm{d}r'_t\,\mathrm{d}^3\varrho$.
 
 ## The Action in the Fluid Variables
 
@@ -80,6 +78,30 @@ which is the block's boxed law. The action's contribution to this display is not
 
 **The count is therefore two and two, with nothing left over.** No multiplier, no subsidiary condition, no constraint surface to reduce. The rung below has the same count and reaches it differently; the rung above loses it.
 
+## The Constraints the Action Imposes: There Is No Subsidiary Condition
+
+**Two fields, two equations, and nothing left over.** The phase's variation gives continuity, the amplitude's gives the energy relation, and the acceleration law is the gradient of the second rather than a third equation. No multiplier appears, no subsidiary condition is imposed, and no constraint surface restricts the variation.
+
+**The velocity's definition is the relation that is mistaken for one.** It is a function of the phase's gradient and the potential, so it is fixed by the fields rather than constrained alongside them. **A definition carried into the action is not a condition the action imposes**, and the count of this layer depends on keeping the two apart.
+
+**The mass term adds a determination and not a constraint.** It fixes the amplitude through the energy relation and leaves the phase's rate free, so the count of two and two survives the coupling. A quadratic mass in a chart with no independent direction field has nowhere to put a constraint.
+
+**What the section does not claim.** It does not claim the fluid equals the element form in its canonical structure: the equivalence is the chart's, and the chart's velocity is what makes the counts agree. It claims that this action, in these variables, imposes nothing beyond its own two equations.
+
+## The Structural Consequence: Two Fields, Two Equations, and the Third as a Gradient
+
+**The article's claim is a count, and the count is exact.** Two real fields, $\varrho$ and $S_{\tilde\Xi}$, give two Euler–Lagrange equations: continuity, from the phase, and the mass shell, from the density. There is no constraint, because no momentum vanishes: both fields are canonical. The acceleration law that the block's article states as a separate equation is not a third equation here — it is the gradient of the shell.
+
+**The hand check.** The shell is $\sum_\mu V_\mu V_\mu=-c^{2}-2Q_{\mathrm{qnt}}/m$ with $V_\mu=\partial_\mu S/m$. Differentiating it with respect to the spatial coordinates and using $\partial_{r'_t}V_\mu=\partial_\mu V_{r'_t}$ gives
+
+$$
+\frac{\partial\vec V}{\partial r'_t}+(\vec V\cdot\vec\nabla_\Phi)\vec V=-\vec\nabla_\Phi\Bigl(\frac{Q_{\mathrm{qnt}}}{m}\Bigr),
+$$
+
+which is the acceleration law with the quantum potential as its only force beyond inertia. One differentiation, no new postulate, and the third equation is the second's gradient.
+
+**Why the count matters.** A Lagrangian with two fields and two equations is not over-determined, and a fluid whose acceleration is a consequence of its shell is a fluid with no independent pressure. Both statements are what the family needs in order to say that the scalar fluid at this rung is dust plus a quantum stress.
+
 ## The Second Variation: The Gradient Energy Is Indefinite
 
 **The sign of the second term is not uniform, and the reason is the operator's.** With the corpus's conventions the temporal component of a four-gradient carries an $i$, so
@@ -99,20 +121,6 @@ and the quadratic form is a difference and not a sum. The gradient energy is the
 *The functional has no ground state, and that is not a defect of the fluid reading.* A field theory with an indefinite quadratic form has no lowest configuration, which is why the relativistic object of this block is a field and not a fluid with a rest state. **The action says this before any quantization**, and the second category's Fock space is where the two signs become particles and antiparticles.
 
 **At the rung below the form is definite and the difference is the whole of the difference between the two rungs.** The Schrödinger fluid's gradient energy is $\frac{\hbar^{2}}{2m}\int(\vec\nabla_\Phi \varrho)^{2}$, a sum of squares, and its quantum potential is a Laplacian's. One operator, one sign, one sheet.
-
-## The Structural Consequence: Two Fields, Two Equations, and the Third as a Gradient
-
-**The article's claim is a count, and the count is exact.** Two real fields, $\varrho$ and $S_{\tilde\Xi}$, give two Euler–Lagrange equations: continuity, from the phase, and the mass shell, from the density. There is no constraint, because no momentum vanishes: both fields are canonical. The acceleration law that the block's article states as a separate equation is not a third equation here — it is the gradient of the shell.
-
-**The hand check.** The shell is $\sum_\mu V_\mu V_\mu=-c^{2}-2Q_{\mathrm{qnt}}/m$ with $V_\mu=\partial_\mu S/m$. Differentiating it with respect to the spatial coordinates and using $\partial_{r'_t}V_\mu=\partial_\mu V_{r'_t}$ gives
-
-$$
-\frac{\partial\vec V}{\partial r'_t}+(\vec V\cdot\vec\nabla_\Phi)\vec V=-\vec\nabla_\Phi\Bigl(\frac{Q_{\mathrm{qnt}}}{m}\Bigr),
-$$
-
-which is the acceleration law with the quantum potential as its only force beyond inertia. One differentiation, no new postulate, and the third equation is the second's gradient.
-
-**Why the count matters.** A Lagrangian with two fields and two equations is not over-determined, and a fluid whose acceleration is a consequence of its shell is a fluid with no independent pressure. Both statements are what the family needs in order to say that the scalar fluid at this rung is dust plus a quantum stress.
 
 ## The Noether Currents: The Stress as the Translation Current
 

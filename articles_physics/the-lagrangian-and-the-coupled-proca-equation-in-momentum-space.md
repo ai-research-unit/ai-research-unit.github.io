@@ -1,7 +1,5 @@
 # __The Lagrangian and the Coupled Proca Equation in Momentum Space__
 
-**Declared omissions.** The reality of the action is a statement about the symbol and is made there, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The coupled variational parent ends with a precise complaint and this article answers the part of it that frequency space can answer.** *The Lagrangian and the Coupled Proca Equation* states the action, proves the mass term's exact invariance, states the field term's **exact non-invariance**, and records that the symmetric pairing $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$ is invariant under the phase "only when the phase's square is one". **The complaint is that the algebra's single field strength cannot carry a complex bivector's Lagrangian.** The article's first finding is the frequency-space form of that complaint, and it is one number.
@@ -111,8 +109,6 @@ $$
 **The constraint's symbol is free of curvature and its coefficient is free of the coupling.** The trace of $\sigma_{\mathrm{gco}}$ is $-4\pi^{2}$ and carries no $F$; the longitudinal coefficient carries no $\varkappa$ except through the sign. **So the constraint is the one part of the coupled theory whose structure is exactly the free one's**, and the parent's "the constraint holds to machine precision in a background with constant field strength" is that statement's numerical form.
 
 **What the constraint is not is the gauge-fixing condition of the free theory.** The free article's constraint was the vanishing of a coefficient that the mass supplied, and it removed the direction along the wave number; here the same equation removes the gradient part of the amplitude and leaves the mass's longitudinal polarisation. **The two readings are the same equation and different bookkeeping**, and the parent says so: "the same statement in both cases with a different bookkeeping".
-
-## The Constraints the Action Imposes: The Temporal Coefficient Has No Frequency
 
 **The primary constraint survives the coupling as an absent power of $\pi_t$.** Expanding the form's diagonal,
 

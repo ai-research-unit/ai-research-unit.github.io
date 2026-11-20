@@ -1,7 +1,5 @@
 # __The Lagrangian and the Schrödinger Fluid__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the ledger, so slot 14 is omitted.
-
 ## Introduction
 
 **This article writes the action in the fluid's variables and varies them.** [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the equation and names the density, the velocity and the quantum potential. Here the same field is written as an action over the density and the phase, and the Euler–Lagrange equations are read. Nothing about the equation changes; what changes is which object is primitive.
@@ -24,7 +22,7 @@ a phase term, a kinetic term, a gradient energy and an external potential. There
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\hbar\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.
+**The conventions are restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\hbar\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.
 
 ## The Action in the Fluid Variables
 
@@ -87,6 +85,16 @@ $$
 because $\vec\nabla_\Phi(\vec\nabla_\Phi S)^{2}/2m=(\vec v\cdot\nabla)\vec v$ when the vorticity vanishes. The two displays are one statement differentiated, and the block's article says the same: continuity, energy and acceleration over-determine a fluid, and here the third is the second's gradient.
 
 **The pair is closed and the count is right.** Two real fields and two real equations, with the velocity a function of the phase. The action has no constraint and needs no multiplier, and that is the first-order rung's privilege: the word has two factors, the two factors are the two fields, and the map is a bijection away from $\varrho=0$. At the rung above, the word has four factors and the count breaks.
+
+## The Constraints the Action Imposes: The Velocity Is a Definition
+
+**The velocity is not an independent field.** It is $\vec\pi/m$, a function of the phase's gradient and the vector potential, and the substitution that produces the fluid chart carries that relation into the action. **A relation that survives because its variable was never independent is not a constraint**: it is a definition, and no multiplier appears for it.
+
+**The count that results is stated by the variation section and not by a bracket.** The density carries one time derivative, on the phase, so the density is the phase's momentum; the amplitude carries none, so its momentum vanishes and the pair is second class. Two real fields and two real equations are what remains, and the count is the count the article records.
+
+**The mass and the potential add determinations.** The shell fixes the amplitude through the energy relation and the potential shifts the phase's rate. Neither removes data, so the count of two and two survives at every rung of the chart.
+
+**The contrast that fixes the reading.** The spin-one fluid needs a multiplier because its unit condition is a genuine relation among independent variables. This fluid needs none, and the difference between the two is the difference between a definition and a constraint, which is the sharpest statement the layer offers on the question.
 
 ## The Structural Consequence: The Quantum Potential Is a Functional Derivative
 

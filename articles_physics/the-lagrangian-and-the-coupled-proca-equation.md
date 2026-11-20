@@ -1,7 +1,5 @@
 # __The Lagrangian and the Coupled Proca Equation__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The massless setting is the parent's and is not contrasted here, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 This article asks what action has the coupled Proca equation as its Euler–Lagrange equation, and what the action's symmetries give. It is the variational companion of *The Coupled Proca Equation in Biquaternionic Form*, its polar companion is *The Lagrangian and the Coupled Proca Equation in Polar Variables*, and its free counterpart is *The Lagrangian and the Proca Equation*.

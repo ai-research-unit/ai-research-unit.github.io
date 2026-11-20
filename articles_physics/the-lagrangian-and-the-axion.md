@@ -28,11 +28,9 @@ the stationarity condition is the parent's equation, and the interaction term is
 
 **What is not new.** The axion, the Peccei–Quinn mechanism and the potential are standard. What the corpus contributes is the biquaternionic writing of the periodic central field and the statement of the periodicity's consistency in the algebra's letters.
 
-**Declared omissions.** Slots 8 and 10 are omitted: the second variation is the curvature of the periodic potential at its minimum, which is the axion's mass; and there is no non-relativistic reading of a pseudoscalar with derivative couplings. Slot 11 is omitted: the potential's Fourier series is the truncation, and the parent states the leading term.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the axion is a real central scalar, which is the central-scalar article's field with a periodic potential.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the axion is a real central scalar, which is the central-scalar article's field with a periodic potential.
 
 **The field.** $a$ is real and periodic, $a\equiv a+2\pi f_a$; $f_a$ is the axion decay constant, with dimension of mass. The dimensionless angle is $\theta=a/f_a$.
 
@@ -64,6 +62,22 @@ which is a derivative coupling and therefore has the same soft behaviour as a Go
 
 **Why the potential is a cosine and not a polynomial.** The periodicity $a\equiv a+2\pi f_a$ excludes every power of $a$ except the constant, so the potential must be a function of the angle. A cosine is the leading harmonic; the exact potential is a Fourier series whose coefficients are the correlators of the topological charge at each winding number.
 
+**The pairing. The pairing is the real scalar part, and the axion being a pseudoscalar does not change it.** The field is real and the action is a real functional; the pseudoscalar character is a statement about the field's behaviour under parity and not about the action's reality. The coupling $aF\tilde F$ is a pseudoscalar density, so the integrand is a scalar and the action is real.
+
+**Why the coupling's sign is physical.** $F\tilde F$ changes sign under parity, and $a$ changes sign too, so the product is invariant. The relative sign between the coupling and the vacuum angle $\bar\theta$ is what determines whether the minimum is at zero, and it is fixed by the requirement that the CP-conserving point be the vacuum.
+
+**The type of the coefficient. Three dimensionful numbers with three different origins.** $f_a$ is the breaking scale and is the coupling's suppression; $\Lambda^4$ is the topological susceptibility and is the potential's height; $\bar\theta$ is the vacuum angle and is a parameter of the gauge sector. The axion's mass is the combination $\Lambda^2/f_a$.
+
+**Why the mass and the coupling are tied.** Both are controlled by $f_a$: the coupling is $1/f_a$ and the mass is $\Lambda^2/f_a$. The tie is the reason a light axion is also weakly coupled, and it is what makes the axion a viable dark-matter candidate in the window the corpus records.
+
+**The selection rule. The selection rule is the shift symmetry plus the anomaly, and the combination is exact.** The classical action is invariant under the shift; the measure is not, because the fermions that carry the Peccei–Quinn charge are chiral; and the anomaly's contribution is the $F\tilde F$ term. The action written above is the anomaly-included version, and the selection rule that produces it is the symmetry broken only by the anomaly.
+
+**What reality does not buy. Reality does not buy a mass, a scale, or a solution to the strong CP problem.** Three things the reality of the action does not supply:
+
+- *No mass without the gauge sector.* The potential comes from the same fields the axion couples to; without them the axion is massless.
+- *No fixed $f_a$.* The decay constant is a parameter, and the allowed window is phenomenological.
+- *No automatic solution.* The mechanism sets $\bar\theta_{\mathrm{eff}}=0$ only if the potential's minimum is there, which requires the CP symmetry of the gauge sector; the argument is the parent's.
+
 ## The Variation: The Wave Equation with a Topological Source
 
 **The variation.** With $\delta a$ vanishing at the boundary,
@@ -91,32 +105,6 @@ $$
 $$
 
 with $\varrho\in\mathbb{Z}$ the topological charge. The phase $e^{i\delta S}=1$, so the shift is a symmetry of the quantum theory, and the periodicity is consistent.
-
-## The Reality of the Action
-
-### The Pairing
-
-**The pairing is the real scalar part, and the axion being a pseudoscalar does not change it.** The field is real and the action is a real functional; the pseudoscalar character is a statement about the field's behaviour under parity and not about the action's reality. The coupling $aF\tilde F$ is a pseudoscalar density, so the integrand is a scalar and the action is real.
-
-**Why the coupling's sign is physical.** $F\tilde F$ changes sign under parity, and $a$ changes sign too, so the product is invariant. The relative sign between the coupling and the vacuum angle $\bar\theta$ is what determines whether the minimum is at zero, and it is fixed by the requirement that the CP-conserving point be the vacuum.
-
-### The Type of the Coefficient
-
-**Three dimensionful numbers with three different origins.** $f_a$ is the breaking scale and is the coupling's suppression; $\Lambda^4$ is the topological susceptibility and is the potential's height; $\bar\theta$ is the vacuum angle and is a parameter of the gauge sector. The axion's mass is the combination $\Lambda^2/f_a$.
-
-**Why the mass and the coupling are tied.** Both are controlled by $f_a$: the coupling is $1/f_a$ and the mass is $\Lambda^2/f_a$. The tie is the reason a light axion is also weakly coupled, and it is what makes the axion a viable dark-matter candidate in the window the corpus records.
-
-### The Selection Rule
-
-**The selection rule is the shift symmetry plus the anomaly, and the combination is exact.** The classical action is invariant under the shift; the measure is not, because the fermions that carry the Peccei–Quinn charge are chiral; and the anomaly's contribution is the $F\tilde F$ term. The action written above is the anomaly-included version, and the selection rule that produces it is the symmetry broken only by the anomaly.
-
-### What Reality Does Not Buy
-
-**Reality does not buy a mass, a scale, or a solution to the strong CP problem.** Three things the reality of the action does not supply:
-
-- *No mass without the gauge sector.* The potential comes from the same fields the axion couples to; without them the axion is massless.
-- *No fixed $f_a$.* The decay constant is a parameter, and the allowed window is phenomenological.
-- *No automatic solution.* The mechanism sets $\bar\theta_{\mathrm{eff}}=0$ only if the potential's minimum is there, which requires the CP symmetry of the gauge sector; the argument is the parent's.
 
 ## The Constraints the Action Imposes: Periodicity Is a Constraint on the Potential
 

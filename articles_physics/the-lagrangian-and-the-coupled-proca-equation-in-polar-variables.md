@@ -1,7 +1,5 @@
 # __The Lagrangian and the Coupled Proca Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 This article substitutes the complete polar decomposition into the coupled Proca action and reads what the substitution makes visible. It is the polar companion of *The Lagrangian and the Coupled Proca Equation*, it depends on *The Coupled Proca Equation in Biquaternionic Polar Variables* for the word and the brackets, and its free counterpart is *The Lagrangian and the Proca Equation in Polar Variables*.
@@ -73,6 +71,14 @@ in the phase slot and in the phase slot alone, with the other seven parameters' 
 
 **The second-order structure.** The action is second order in the material time, so its Hessian with respect to the eight velocities is the metric $G$ and not a matrix with zero eigenvalues. That is the formal difference from the first-order companions: there the action is linear in the velocities, the Hessian has six zero eigenvalues, and the chart's Euler–Lagrange equations are a constrained system. Here there is no such degeneracy in form, and the chart's equations are eight second-order equations for eight parameters.
 
+**The pairing. Inherited, and the connection is what the pairing now sees.** The parent pairs the field term with $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ and the mass term with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$. The chart writes the vector as a density times a unit element and the connection as four components. The mass term is $\tfrac12k_m^{2}\varrho^{2}$ and is real; the field term's $\mathrm{Re}$ is still the explicit device that keeps it real.
+
+**The type of the coefficient. Two real coefficients and four bracket conditions.** $k_m^{2}$ is real. The field term needs no coefficient beyond the metric, because $\mathrm{Re}$ does its work. The connection's four components must satisfy the reality of the covariant field term, which is a condition on their types and not on their size, and it is P1's.
+
+**The selection rule. The constraint is not a selection.** The Proca action has no free potential. The Lorenz condition is a constraint from the variation of the field itself, which *The Constraints the Action Imposes* reads; a selection rule would be a statement about which potentials are admissible, and there are none.
+
+**What reality does not buy. Reality does not enforce the constraint and does not sign the mass.** A real density is compatible with either sign of $k_m^{2}$ and with the constraint or without it. The constraint is the next section's; the sign of the conserved quantities is *The Noether Currents*'.
+
 ## The Variation: The Euler–Lagrange Equations
 
 **The count.** Eight parameters, eight equations, and each equation is second order. The two equations that the free article displays — one real equation for the modulus and one traceless equation for the frame — are the free case's reduction, and the coupling adds the connection's shift to the phase equation and to the others through it.
@@ -85,6 +91,22 @@ in the phase slot and in the phase slot alone, with the other seven parameters' 
 
 **What the chart's equations do not do.** They do not turn the coupled Proca equation into a simpler system. They turn it into a system whose variables have physical names — scale, phase, rapidity, direction, rotation — and whose coupling is one shift. Whether that is a simplification is a question about what one wants to compute, and the article's answer is that it is a simplification for reading the coupling and not for solving the equation.
 
+**The parameter basis and the four brackets.** **The material word has the same four types.** The polar decomposition of the material sector is the same word with the same parameter ranges, so its logarithmic derivative has the same four brackets:
+
+$$
+\tilde A_\Phi^{-1}\partial\tilde A_\Phi
+=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
+$$
+
+with the scale real, the phase central imaginary, the boost Hermitian and the rotor a real vector. Nothing about the brackets is specific to the scalar field: they are a property of the parameterisation and of the algebra's type decomposition, and every element field carries them.
+
+**What is specific is the bilinear.** The scalar field's action pairs $\tilde\Xi$ with itself through $\tilde\Xi^{*}\tilde\Xi$, which is a single type, so only the matching brackets survive. The Proca action is built from the square of the conjugate gradient and **a square is not a modulus**: it pairs the scalar part with the scalar part and the vector part with the vector part while keeping the cross term between them. The four brackets therefore enter with the full quadratic form of the conjugate gradient, and the antisymmetric combination the square keeps and the modulus would discard is exactly the object whose variation returns the Lorenz condition.
+
+**Why the pairing is the content of the constraint.** The middle piece of the Proca Lagrangian, $-\tfrac12S^{2}$ with $S$ the scalar part of the conjugate gradient, is the cross term. It is zero on a solution the scalar action would already allow and non-zero off it; varying it gives the condition that kills the longitudinal scalar. **The Proca action is not the scalar action with a mass: it is the scalar action's brackets with the pairing changed**, and the changed pairing is where the constraint lives.
+
+**The parameter basis is not the bracket basis.** As in the free polar article, the eight parameters are coordinates and the four brackets are types, and the Jacobian between them mixes the roles: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis, and the brackets remain the form in which each object has one type and one partner.
+
+**What the coupling adds.** The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{iϙ}{\hbar}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
 ## The Constraints the Action Imposes: The Gauge Transformation in the Chart
 
 **The exact statement.** For a constant central unit $\lambda=\exp(i\vartheta_{\mathrm{gau}})$,
@@ -117,25 +139,6 @@ with $R$ a function of the frame's angles alone. The scalar potential and the ve
 **The consequence, and it is the article's own.** Because the mass term carries no derivative, it cannot change the rank of the kinetic Hessian; because it depends on the frame, it is what makes the longitudinal direction massive. The two statements are the two halves of the Proca mechanism in this chart, and they are visible in one display: the Hessian is built from $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ and the mass term from $\varrho^{2}R$.
 
 **The hand check.** Set the frame to the identity, $\theta_{\mathrm{rpd}}=0$. Then $\vec A=0$, the Hessian vanishes, and the chart degenerates: the pure-scale configuration has no kinetic term at all. The mass term is still $\varrho^{2}R(1)$, so the configuration is a minimum of the potential and not a solution of the dynamics. That degeneration is the chart's way of saying that a Proca field with no vector part is not a field.
-
-## The Parameter Basis and the Four Brackets
-
-**The material word has the same four types.** The polar decomposition of the material sector is the same word with the same parameter ranges, so its logarithmic derivative has the same four brackets:
-
-$$
-\tilde A_\Phi^{-1}\partial\tilde A_\Phi
-=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
-$$
-
-with the scale real, the phase central imaginary, the boost Hermitian and the rotor a real vector. Nothing about the brackets is specific to the scalar field: they are a property of the parameterisation and of the algebra's type decomposition, and every element field carries them.
-
-**What is specific is the bilinear.** The scalar field's action pairs $\tilde\Xi$ with itself through $\tilde\Xi^{*}\tilde\Xi$, which is a single type, so only the matching brackets survive. The Proca action is built from the square of the conjugate gradient and **a square is not a modulus**: it pairs the scalar part with the scalar part and the vector part with the vector part while keeping the cross term between them. The four brackets therefore enter with the full quadratic form of the conjugate gradient, and the antisymmetric combination the square keeps and the modulus would discard is exactly the object whose variation returns the Lorenz condition.
-
-**Why the pairing is the content of the constraint.** The middle piece of the Proca Lagrangian, $-\tfrac12S^{2}$ with $S$ the scalar part of the conjugate gradient, is the cross term. It is zero on a solution the scalar action would already allow and non-zero off it; varying it gives the condition that kills the longitudinal scalar. **The Proca action is not the scalar action with a mass: it is the scalar action's brackets with the pairing changed**, and the changed pairing is where the constraint lives.
-
-**The parameter basis is not the bracket basis.** As in the free polar article, the eight parameters are coordinates and the four brackets are types, and the Jacobian between them mixes the roles: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis, and the brackets remain the form in which each object has one type and one partner.
-
-**What the coupling adds.** The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{iϙ}{\hbar}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
 
 ## The Noether Currents: The Currents in the Chart
 

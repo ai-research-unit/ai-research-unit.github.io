@@ -1,7 +1,5 @@
 # __The Lagrangian and the Coupled Dirac Equation__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 This article states the action whose Euler–Lagrange equations are the coupled Dirac equation, and it reads what the action's symmetries give. It is the element-form companion of *The Lagrangian and the Dirac Equation*, and it is the first of two coupled Lagrangian articles. The second substitutes the polar word into the action of this article and reads the constraint structure.

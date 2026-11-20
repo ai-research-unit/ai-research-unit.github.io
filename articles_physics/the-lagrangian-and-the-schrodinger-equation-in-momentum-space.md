@@ -1,7 +1,5 @@
 # __The Lagrangian and the Schrödinger Equation in Momentum Space__
 
-**Declared omissions.** The mode form imposes no constraint beyond its own vanishing, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The action is a functional of the field, and the transform turns it into a quadratic form.** *The Lagrangian and the Schrödinger Equation* writes one real functional whose Euler–Lagrange equation is the parent's equation. Take a field of one frequency, $\tilde\Xi=e^{-i\omega t'}\tilde X$, and the functional becomes a quadratic form in $\tilde X$ whose kernel is the symbol of *The Fourier Transform and the Schrödinger Equation in Biquaternionic Form*. **The symbol is not a second object beside the action**; it is the action's density at fixed frequency, and that identity is the first thing below.
@@ -49,6 +47,54 @@ $$
 
 **What the substitution does not do.** It does not discretise, and it does not assume a single frequency for a general field. A general field is a sum of such terms, and the action is the sum of the forms plus the cross terms that the transform's orthogonality removes. **The cross terms are the interference, and they are what makes a superposition's density not the sum of densities.**
 
+**The pairing. Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian form, and the quaternionic alternative was rejected in the reality part of §*The Action* of *The Lagrangian and the Schrödinger Equation*. The coefficient examined below is what replaces the $i$ there, and the pairing is not.
+
+**The type of the coefficient. The equation with a root.** Write $\hbar\,c\,\tilde Z\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ with $\tilde Z^{2}=-e_t$, in the parent's own form. The action that produces it has the kinetic coefficient $\hbar c\,\tilde Z$ in place of $i\hbar c$, because the variation must return the equation's own operator.
+
+**The reality condition.** With $K=\frac{\hbar c}{2}\big(\tilde\Xi^{*}\tilde Z\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde Z\tilde\Xi\big)$,
+
+$$
+K^{*}=\frac{\hbar c}{2}\Big((\partial\tilde\Xi^{*})\tilde Z^{*}\tilde\Xi-\tilde\Xi^{*}\tilde Z^{*}\partial\tilde\Xi\Big),
+$$
+
+so $K^{*}=K$ exactly when $\tilde Z^{*}=-\tilde Z$. **The action is real exactly when the root is anti-Hermitian**, and every root of $-e_t$ is.
+
+**The equivalent statement in one line.** $\tilde Z$ anti-Hermitian is the same as $i\tilde Z$ Hermitian, and the quadratic form $\mathrm{Sc}(\tilde X^{*}(i\tilde Z)\tilde X)$ is real for every $\tilde X$. Verified over one hundred draws for each of the four roots: the largest imaginary part was $7.5\times10^{-16}$ for $(\vec e_x+\vec e_z)/\sqrt2$, $6.9\times10^{-16}$ for $\vec e_x$, $5.2\times10^{-16}$ for $\vec e_z$ and $2.2\times10^{-16}$ for $i$.
+
+**The functional itself, not only its density.** The density's reality at one time is weaker than the functional's reality, because the kinetic term is antisymmetrised and integrated. On a grid of sixty-four points with a four-component field of three frequencies, the imaginary part of the whole action was at most $8.7\times10^{-16}$ for each of the four roots, against real values of order ten. **The action is real, and it is real for all four roots.**
+
+**What the reality does not use.** It does not use the centrality of the root, and it does not use any commutation with the Hamiltonian. It uses one thing: the root's type. **That is the whole content of this section, and it is why the next section can report a gap.**
+
+**The selection rule. Not examined here.** The Hamiltonian is Hermitian by the article's licence, so no sector is excluded; the anti-Hermitian potential and its complex frequency are the scalar family's, where the potential is a free element.
+
+**What reality does not buy. The stronger requirement.** The parent requires the generator $-\tilde Z\tilde H_\Psi/(\hbar c)$ to be anti-Hermitian for every Hermitian $\tilde H_\Psi$, so that the flow preserves the norm. In $t'$ the generator is $\frac{1}{\hbar}\tilde Z^{-1}\tilde H_\Psi$, and its anti-Hermiticity is
+
+$$
+\big(\tilde Z^{-1}\tilde H_\Psi\big)^{*}=-\tilde Z^{-1}\tilde H_\Psi
+\qquad\Longleftrightarrow\qquad
+\tilde H_\Psi\,\tilde Z^{-1}=\tilde Z^{-1}\tilde H_\Psi,
+$$
+
+which is commutativity of the Hamiltonian with the root. **The parent's uniformity requirement is a commutant condition, and only the central root satisfies it for every Hamiltonian.**
+
+**The spectrum's condition is the same condition.** The frequencies are the zeros of $\det\big(\hbar\omega(-i\tilde Z)-\tilde H_\Psi\big)$, and for $\tilde Z=\vec e_z$ the determinant is
+
+$$
+\Big(h_t^{2}-\big(\hbar\omega+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
+$$
+
+with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros are $\hbar\omega=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$.
+
+**The counts.** One hundred draws of a Hermitian Hamiltonian with coefficients uniform in $[-1,1]$: all roots real in $100$ draws for $i$, $32$ for $\vec e_z$, $30$ for $\vec e_x$ and $37$ for $(\vec e_x+\vec e_z)/\sqrt2$. For $\vec e_z$ the cone held in exactly the same $32$ draws, and on the cone the closed form matched to $2.0\times10^{-15}$.
+
+**So the two requirements are different requirements.** The action is real in $100$ draws out of $100$ for each root. The spectrum is real in $100$, $32$, $30$ and $37$. **A variational principle that produces the equation therefore says nothing about whether the frequencies are real**, and the gap between the two counts is the measure of how much it says nothing.
+
+**Why the two differ.** The action's reality is a statement about the kinetic coefficient's type: one of four types, decided by the root's Hermiticity. The spectrum's reality is a statement about the pencil $\hbar\omega(-i\tilde Z)-\tilde H_\Psi$: two self-adjoint arrays, one of them indefinite, and an indefinite pencil has complex zeros. **Type is weaker than definiteness**, and the article's finding is that sentence.
+
+**What the parent's argument really establishes.** The parent's uniqueness theorem is about the *flow*, and its conclusion is about the norm. Read here, it says that only the central root keeps the pencil positive for every Hamiltonian. The variational companion of this article does not contradict it and does not repeat it; it separates the two requirements that the parent's single argument carries.
+
+**A caveat in the other direction.** Reality of the spectrum does not imply that the action with that root is real for a non-Hermitian Hamiltonian, and the article makes no such claim. Both statements are about Hermitian coefficients, and both are about different objects: one about a functional, one about a pencil.
+
 ## The Variation: The Boundary Term
 
 **The boundary term.** Varying $\tilde\Xi^{*}$ and integrating the kinetic term by parts gives
@@ -76,65 +122,15 @@ and it holds for every anti-Hermitian root, for the same reason the action is re
 
 **Why the Hermitian pairing is enough.** For $X=E^{*}$ the pairing gives $\mathrm{Sc}(E^{*}E)=\sum_\mu\lvert E_\mu\rvert^{2}$, a sum of moduli, so it vanishes only for $E=0$. **The argument is the parent's and it is quoted once here.**
 
-## The Reality of the Action
+## The Constraints the Action Imposes: The Constraint Is the Frequency
 
-**Four questions, and this article answers (b) and (d) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+**At fixed frequency the variation is algebraic.** The substitution $\tilde\Xi=e^{-i\omega t'}\tilde X$ has removed the derivative, so the action $S_\omega$ is a quadratic form in the constant amplitude. Stationarity forces its bracket to vanish, and where the bracket is invertible the only stationary amplitude is zero.
 
-### The Pairing
+**The condition is the eigenvalue problem the action section states.** The bracket is $\hbar\omega\,\mathrm{Sc}(\tilde X^{*}\tilde X)-\mathrm{Sc}\bigl[\tilde X^{*}\tilde H_\Psi\tilde X\bigr]$, so its singularity is exactly the statement that $\omega$ is an eigenvalue of $\tilde H_\Psi/\hbar$. **The constraint is a condition on the frequency and on nothing else**; the amplitude is left free up to normalisation, which is not a restriction the action imposes.
 
-**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian form, and the quaternionic alternative was rejected in *The Lagrangian and the Schrödinger Equation*, §*The Reality of the Action*. The coefficient examined below is what replaces the $i$ there, and the pairing is not.
+**The set is the spectrum's zero set.** At $k_m=0$ it is the paraboloid; a constant potential translates it, and the connection's temporal slot translates it again by its own amount. The shape is fixed by the kinetic term alone, which is why the constraint of this chart can be read off the first line of the action.
 
-### The Type of the Coefficient
-
-**The equation with a root.** Write $\hbar\,c\,\tilde Z\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$ with $\tilde Z^{2}=-e_t$, in the parent's own form. The action that produces it has the kinetic coefficient $\hbar c\,\tilde Z$ in place of $i\hbar c$, because the variation must return the equation's own operator.
-
-**The reality condition.** With $K=\frac{\hbar c}{2}\big(\tilde\Xi^{*}\tilde Z\partial\tilde\Xi-(\partial\tilde\Xi^{*})\tilde Z\tilde\Xi\big)$,
-
-$$
-K^{*}=\frac{\hbar c}{2}\Big((\partial\tilde\Xi^{*})\tilde Z^{*}\tilde\Xi-\tilde\Xi^{*}\tilde Z^{*}\partial\tilde\Xi\Big),
-$$
-
-so $K^{*}=K$ exactly when $\tilde Z^{*}=-\tilde Z$. **The action is real exactly when the root is anti-Hermitian**, and every root of $-e_t$ is.
-
-**The equivalent statement in one line.** $\tilde Z$ anti-Hermitian is the same as $i\tilde Z$ Hermitian, and the quadratic form $\mathrm{Sc}(\tilde X^{*}(i\tilde Z)\tilde X)$ is real for every $\tilde X$. Verified over one hundred draws for each of the four roots: the largest imaginary part was $7.5\times10^{-16}$ for $(\vec e_x+\vec e_z)/\sqrt2$, $6.9\times10^{-16}$ for $\vec e_x$, $5.2\times10^{-16}$ for $\vec e_z$ and $2.2\times10^{-16}$ for $i$.
-
-**The functional itself, not only its density.** The density's reality at one time is weaker than the functional's reality, because the kinetic term is antisymmetrised and integrated. On a grid of sixty-four points with a four-component field of three frequencies, the imaginary part of the whole action was at most $8.7\times10^{-16}$ for each of the four roots, against real values of order ten. **The action is real, and it is real for all four roots.**
-
-**What the reality does not use.** It does not use the centrality of the root, and it does not use any commutation with the Hamiltonian. It uses one thing: the root's type. **That is the whole content of this section, and it is why the next section can report a gap.**
-
-### The Selection Rule
-
-**Not examined here.** The Hamiltonian is Hermitian by the article's licence, so no sector is excluded; the anti-Hermitian potential and its complex frequency are the scalar family's, where the potential is a free element.
-
-### What Reality Does Not Buy
-
-**The stronger requirement.** The parent requires the generator $-\tilde Z\tilde H_\Psi/(\hbar c)$ to be anti-Hermitian for every Hermitian $\tilde H_\Psi$, so that the flow preserves the norm. In $t'$ the generator is $\frac{1}{\hbar}\tilde Z^{-1}\tilde H_\Psi$, and its anti-Hermiticity is
-
-$$
-\big(\tilde Z^{-1}\tilde H_\Psi\big)^{*}=-\tilde Z^{-1}\tilde H_\Psi
-\qquad\Longleftrightarrow\qquad
-\tilde H_\Psi\,\tilde Z^{-1}=\tilde Z^{-1}\tilde H_\Psi,
-$$
-
-which is commutativity of the Hamiltonian with the root. **The parent's uniformity requirement is a commutant condition, and only the central root satisfies it for every Hamiltonian.**
-
-**The spectrum's condition is the same condition.** The frequencies are the zeros of $\det\big(\hbar\omega(-i\tilde Z)-\tilde H_\Psi\big)$, and for $\tilde Z=\vec e_z$ the determinant is
-
-$$
-\Big(h_t^{2}-\big(\hbar\omega+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
-$$
-
-with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros are $\hbar\omega=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$.
-
-**The counts.** One hundred draws of a Hermitian Hamiltonian with coefficients uniform in $[-1,1]$: all roots real in $100$ draws for $i$, $32$ for $\vec e_z$, $30$ for $\vec e_x$ and $37$ for $(\vec e_x+\vec e_z)/\sqrt2$. For $\vec e_z$ the cone held in exactly the same $32$ draws, and on the cone the closed form matched to $2.0\times10^{-15}$.
-
-**So the two requirements are different requirements.** The action is real in $100$ draws out of $100$ for each root. The spectrum is real in $100$, $32$, $30$ and $37$. **A variational principle that produces the equation therefore says nothing about whether the frequencies are real**, and the gap between the two counts is the measure of how much it says nothing.
-
-**Why the two differ.** The action's reality is a statement about the kinetic coefficient's type: one of four types, decided by the root's Hermiticity. The spectrum's reality is a statement about the pencil $\hbar\omega(-i\tilde Z)-\tilde H_\Psi$: two self-adjoint arrays, one of them indefinite, and an indefinite pencil has complex zeros. **Type is weaker than definiteness**, and the article's finding is that sentence.
-
-**What the parent's argument really establishes.** The parent's uniqueness theorem is about the *flow*, and its conclusion is about the norm. Read here, it says that only the central root keeps the pencil positive for every Hamiltonian. The variational companion of this article does not contradict it and does not repeat it; it separates the two requirements that the parent's single argument carries.
-
-**A caveat in the other direction.** Reality of the spectrum does not imply that the action with that root is real for a non-Hermitian Hamiltonian, and the article makes no such claim. Both statements are about Hermitian coefficients, and both are about different objects: one about a functional, one about a pencil.
+**What is absent.** No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one frequency cannot see one; no constraint on the amplitude at a root. The constraint is purely kinematic, and the structural consequence's claim is exactly that nothing further is imposed.
 
 ## The Structural Consequence: The Symbol Is the Quadratic Form
 
@@ -216,7 +212,7 @@ and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the 
 
 **Constant coefficients.** Every statement about the symbol needs a constant Hamiltonian, and the operator setting replaces the symbol by a convolution. The action remains real there, term by term, for the same reason; what fails is the fixed-frequency reduction, not the reality.
 
-**Hermitian coefficients.** The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument of §*The Reality of the Action* does not apply to the potential.
+**Hermitian coefficients.** The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument in the reality part of §*The Action* does not apply to the potential.
 
 **One-time functionals.** The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.
 

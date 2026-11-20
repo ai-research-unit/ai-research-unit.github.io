@@ -8,8 +8,6 @@
 
 **What is not done.** No scattering amplitude, no perturbation series, no Feynman rule, no loop, no renormalisation. This family has no quantised theory in which a four-point function could be computed, and this article does not manufacture one. What it has is the classical action, its exact equation, its exact current and its exact stress, and the observation that all three differ from the free ones in a controlled way.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, term by term, so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the textbook $\phi^{4}$ treatment is attempted, so slot 13 is omitted. The open questions are folded into the ledger, so slot 14 is omitted.
-
 ## Conventions
 
 **The conventions are the free companion's, with one addition.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$ with four complex coefficients; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian one, for the reasons the free article gives; the measure is $\mathrm{d}^{4}r$; $k_m=mc/\hbar$.
@@ -68,6 +66,16 @@ $$
 **The boundary term is the free one.** The interaction carries no derivative, so it adds nothing to the surface term; the free article's discussion applies unchanged.
 
 **Two features worth naming.** The equation is nonlinear but *semilinear*: the second derivative appears linearly and the nonlinearity is algebraic in the field. And the right side is homogeneous of degree three, so the equation is invariant under $\tilde\Xi\mapsto-\tilde\Xi$ but not under a phase rotation of the field by a real scale: the $\mathbb{Z}_2$ survives, the $U(1)$ acts as a symmetry only because $N$ is invariant.
+
+## The Constraints the Action Imposes: The Nonlinearity Is Not a Constraint
+
+**The count.** One real function, one second-order equation, an invertible momentum. The interaction changes none of the three, so the constraint structure is the free scalar's, and the free scalar's is empty.
+
+**The interaction's only structural addition is a density-dependent mass.** The added term is $-\frac{\lambda}{4}N^{2}$ with $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, which carries no derivative, so it enters the equation as a coefficient multiplying the field. **A coefficient that depends on the field is not a condition on the field**: it changes the equation and leaves the data free, and that is the whole difference between a nonlinearity and a restriction.
+
+**Why the absence is worth a section.** The constrained members of this family are the gauge fields, the Proca field and the sigma model. The interacting scalar is the case where the nonlinearity is the entire difficulty and the constraint count is the free article's, so a reader who expects a self-interaction to bring a Gauss law should be told here that it brings none.
+
+**What the section does not claim.** It does not claim the action is integrable, that its solutions are global, or that its energy is bounded below. Those are properties of the potential and they belong to the limits section; the claim here is about the count of constraints, and the count is zero.
 
 ## The Structural Consequence: The Nonlinearity Is a Density-Dependent Mass
 

@@ -1,7 +1,5 @@
 # __The Lagrangian and the Charged Spin-One Fluid__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The connection enters one of the two terms and it enters it as a derivative.** The Proca action has a derivative term and an algebraic one; the coupling replaces $\partial_\mu$ by $D_\mu$ in the first and cannot touch the second, because the second is the magnitude's and a connection reaches derivatives. **So the charged spin-one fluid keeps its pressure and loses its continuity**, which is the reverse of what the other charged articles of this layer do.
@@ -18,7 +16,7 @@
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
+**The conventions are restated here so that every sign below is checkable from this page alone.** $A_\mu$ is complex, $F_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu$, $D_\mu=\partial_\mu+\frac{iϙ}{\hbar}A^{\mathrm{ext}}_\mu$, $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A^{*}_\mu A_\mu$ in the corpus's signs, every index low. The external potential is written $\tilde A_\Phi=i a'_t e_t+\vec A$ and the coupling is $ϙ$, with $q=-ϙ$. The carrier's parameters are eight real ones; [The Charged Spin-One Fluid](the-charged-spin-one-fluid.html) records the doubling and this article does not re-derive it.
 
 ## The Action in the Fluid Variables
 
@@ -27,7 +25,7 @@
 $$
 \mathcal L=-\frac{1}{4}\sum_{\mu,\nu}F^{*}_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2}
 \;\longrightarrow\;
-\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\mu\nu}F^{\mathrm{gco}\,\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2},
+\mathcal L_{\mathrm{gco}}=-\frac{1}{4}F^{\mathrm{gco}*}_{\mu\nu}F^{\mathrm{gco}}_{\mu\nu}-\frac{k_m^{2}}{2}\lvert A\rvert^{2},
 \qquad
 F^{\mathrm{gco}}_{\mu\nu}=D_\mu A_\nu-D_\nu A_\mu .
 $$

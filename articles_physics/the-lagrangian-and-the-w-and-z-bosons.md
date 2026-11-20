@@ -39,11 +39,9 @@ because one doublet of weak isospin $\tfrac12$ produces both masses from the sam
 
 **What is not new.** The electroweak action is standard and is imported whole. What the corpus contributes is the exact $\mathrm{U}(1)$ line, the identification of the Higgs mass formula with the abelian one, and the statement of where the algebra stops.
 
-**Declared omissions.** Slots 8, 10 and 13 are omitted: the second variation of this action is the Higgs potential's stability, treated in the symmetry-breaking article; there is no non-relativistic reading of the gauge sector; and the competing formulations are the same theory in another notation, so a comparison section would not carry a corpus claim. Slot 11 is omitted: the truncation here is the tree-level evaluation of a one-loop object, which belongs to the precision-observables article.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
 
 **The group and the couplings.** $SU(2)_L$ with coupling $g$ and generators $\tau^a=\sigma^a/2$ in the doublet; $\mathrm{U}(1)_Y$ with coupling $g_{\mathrm Y}$ and hypercharge $Y$. The doublet has $Y_\varphi=\tfrac12$ and $T_3=\pm\tfrac12$ on its two components.
 
@@ -107,6 +105,22 @@ The mixing angle is not a new parameter: it is $\arctan(g_{\mathrm Y}/g)$, fixed
 
 **Why the linear combination and not another.** The mass matrix in the $(W^3,B)$ plane is $\frac{v^2}{8}\bigl(\begin{smallmatrix}g^2&-gg_{\mathrm Y}\\-gg_{\mathrm Y}&g_{\mathrm Y}^2\end{smallmatrix}\bigr)$, whose determinant is zero. A rank-one $2\times2$ matrix has one zero eigenvalue and one nonzero one, and the zero eigenvector is $(g_{\mathrm Y},g)$-normalized, which is the photon. The vanishing determinant is the statement that the unbroken subgroup is one-dimensional, and it is a consequence of the rank of the doublet's generator set and not of a tuning.
 
+**The pairing. The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_\mu(D_\mu\varphi)^{\dagger}(D_\mu\varphi)$ is a sum of squared norms, real and non-negative term by term. The gauge kinetic terms are real because $W^a_{\mu\nu}$ and $B_{\mu\nu}$ are real in components and their squares carry the corpus's sign rule.
+
+**Why the scalar needs the dagger and the gauge fields do not.** The scalar is complex, so its kinetic term needs a conjugate to be real; the gauge fields are real, so theirs does not. The asymmetry is a statement about the representations and not about the pairing.
+
+**The type of the coefficient. Three coefficients: two couplings and one vacuum value.** $g$ and $g_{\mathrm Y}$ are dimensionless; $v$ has dimension of mass. The masses are products $g\,v$, so their dimensions are right by construction, and the ratio $M_Z/M_W$ is a pure number fixed by the two couplings.
+
+**The potential's coefficients are not independent of them.** $\lambda$ sets the radial mass and $v$ sets the minimum; the combination $\sqrt{2\lambda}\,v$ is the Higgs mass, and it is the one number of the sector that the action does not relate to the gauge couplings. That independence is why the Higgs mass is a measurement and the $W$ and $Z$ masses are predictions.
+
+**The selection rule. The selection rule is local $SU(2)_L\times\mathrm{U}(1)_Y$ invariance, and it forbids exactly two things.** A gauge mass term is forbidden, which is why the masses come from the scalar; a bare fermion mass is forbidden, which is why the Yukawa couplings exist. Every term in the action is the most general one of dimension four invariant under the group, and the count of those terms is the count of parameters the sector has.
+
+**What reality does not buy. Reality does not buy the masses, the mixing angle or $\rho=1$.** Three things the reality of the action does not supply:
+
+- *No mass without a vacuum.* The action is real and symmetric; the masses appear only when a field takes a value. The symmetry of the action and the asymmetry of the vacuum are compatible because the vacuum is one of infinitely many.
+- *No prediction of $v$.* The vacuum value is measured, through $G_F$; the action accepts it.
+- *No protection of $\rho$.* The relation $\rho=1$ requires the doublet to be a single $\tfrac12$ representation; a second scalar multiplet would break it, and the action permits one.
+
 ## The Variation: The Currents Are the Sources
 
 **The variation with respect to the gauge fields.** Varying $W^a_\mu$ and integrating by parts,
@@ -130,32 +144,6 @@ the gauged Klein–Gordon equation with a potential. At the vacuum this equation
 **The self-consistency that the two variations must satisfy.** The current must be conserved, $D_\mu j^a_\mu=0$, or the equation for $W^a_\mu$ is inconsistent because the left side is divergenceless by the Bianchi identity. The conservation is not assumed: it follows from the scalar's equation combined with the antisymmetry of $W^a_{\mu\nu}$, and it holds because the scalar's covariant derivative is the same object in both equations. A mass term written by hand would break this, which is the technical reason the masses must come from the scalar.
 
 **The check that would catch a factor.** At the vacuum, $j^a_\mu=0$ for the unbroken directions and nonzero for the broken ones; the equation then reduces to $D_\nu W^a_{\mu\nu}=0$ with $W^a_\mu$ satisfying a Proca equation. The coefficient of the mass must be $\frac{g^2v^2}{4}$ and not $\frac{g^2v^2}{8}$, because the $\overleftrightarrow{D}$ convention carries a factor two; the boxed masses above are the check.
-
-## The Reality of the Action
-
-### The Pairing
-
-**The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_\mu(D_\mu\varphi)^{\dagger}(D_\mu\varphi)$ is a sum of squared norms, real and non-negative term by term. The gauge kinetic terms are real because $W^a_{\mu\nu}$ and $B_{\mu\nu}$ are real in components and their squares carry the corpus's sign rule.
-
-**Why the scalar needs the dagger and the gauge fields do not.** The scalar is complex, so its kinetic term needs a conjugate to be real; the gauge fields are real, so theirs does not. The asymmetry is a statement about the representations and not about the pairing.
-
-### The Type of the Coefficient
-
-**Three coefficients: two couplings and one vacuum value.** $g$ and $g_{\mathrm Y}$ are dimensionless; $v$ has dimension of mass. The masses are products $g\,v$, so their dimensions are right by construction, and the ratio $M_Z/M_W$ is a pure number fixed by the two couplings.
-
-**The potential's coefficients are not independent of them.** $\lambda$ sets the radial mass and $v$ sets the minimum; the combination $\sqrt{2\lambda}\,v$ is the Higgs mass, and it is the one number of the sector that the action does not relate to the gauge couplings. That independence is why the Higgs mass is a measurement and the $W$ and $Z$ masses are predictions.
-
-### The Selection Rule
-
-**The selection rule is local $SU(2)_L\times\mathrm{U}(1)_Y$ invariance, and it forbids exactly two things.** A gauge mass term is forbidden, which is why the masses come from the scalar; a bare fermion mass is forbidden, which is why the Yukawa couplings exist. Every term in the action is the most general one of dimension four invariant under the group, and the count of those terms is the count of parameters the sector has.
-
-### What Reality Does Not Buy
-
-**Reality does not buy the masses, the mixing angle or $\rho=1$.** Three things the reality of the action does not supply:
-
-- *No mass without a vacuum.* The action is real and symmetric; the masses appear only when a field takes a value. The symmetry of the action and the asymmetry of the vacuum are compatible because the vacuum is one of infinitely many.
-- *No prediction of $v$.* The vacuum value is measured, through $G_F$; the action accepts it.
-- *No protection of $\rho$.* The relation $\rho=1$ requires the doublet to be a single $\tfrac12$ representation; a second scalar multiplet would break it, and the action permits one.
 
 ## The Constraints the Action Imposes: Four Gauss Laws and One Massless Mode
 

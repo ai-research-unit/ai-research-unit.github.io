@@ -1,7 +1,5 @@
 # __The Lagrangian and the Coupled Schrödinger Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 *The Lagrangian and the Schrödinger Equation in Polar Variables* computes the free polar Lagrangian exactly,
@@ -36,7 +34,7 @@ and every other term of the Lagrangian is the free one, letter for letter. The f
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar Lagrangian article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar Lagrangian article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
 
 ## The Action in Polar Variables, Coupled
 
@@ -84,6 +82,14 @@ $$
 
 It is a functional of the eight parameters and of the two connection numbers, it is first order in the parameters' velocities, and its only dependence on the connection is through $V_{\mathrm{gco}}$.
 
+**The pairing. Inherited, and the connection is what the pairing now sees.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and its kinetic term is the anti-Hermitian time combination. In the chart that combination is a real product, $\hbar\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}$ in the uncharged case and its covariant counterpart here. The substitution changes the form of the term and not its reality.
+
+**The type of the coefficient. The Hamiltonian and the connection.** $\tilde H_\Psi$ must be Hermitian and the connection's four components must satisfy the reality of the covariant bilinear. The first condition is the uncharged article's and is unchanged; the second is the four brackets' and is not.
+
+**The selection rule. Declared.** No free potential, so nothing to exclude. The potential is the fixed operator $\tilde H_\Psi$, and the coupling is a connection.
+
+**What reality does not buy. Reality does not make the density positive.** The chart's density is real and can be negative; the sign of the charge density is *The Noether Currents*' question, and the sign of the energy is not in this section's reach.
+
 ## The Variation: The Euler–Lagrange Equations
 
 **The momenta are the free ones.** Differentiating with respect to the velocities and using $\partial(\vec\Omega\cdot\vec u_{\mathrm b})/\partial\dot\theta_{\mathrm{rpd}}=0$ (the angular velocity is the rotor's own, not the boost's):
@@ -128,6 +134,21 @@ which are the free flow's rates with the shifted numbers.
 
 **One difference in the residual's shape.** In the operator setting the residual is not a single element at a point but a differential operator, and the parameter equations then contain the gradient terms of §*The Two Settings: The Central Field in the Operator Setting*. The constant setting is where the article's structural statements live, and the operator setting is where the physics of the potential and the current lives.
 
+**The parameter basis and the four brackets.** **What survives when the field is central.** The coupled Schrödinger field is a single central coefficient, so its word has a scale and a phase, and the rotor and the boost are present only through the rapidity that the action carries. The logarithmic derivative still has four directions,
+
+$$
+\tilde\Xi^{-1}\partial\tilde\Xi=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
+$$
+
+but the rotor bracket is a real vector with no partner in a central bilinear, so it drops out of the scalar part and the action keeps three. **This is the reason the coupled chart has three vanishing momenta and one non-zero one**, and the count is a type fact rather than a computation.
+
+**Why the types pair as they do.** The kinetic term is $\mathrm{Sc}\bigl[\tilde\Xi^{*}\partial\tilde\Xi\bigr]$ and the scalar part of a product vanishes unless the types are conjugate. Scale pairs with scale, phase with phase, Hermitian with Hermitian, real vector with real vector. **A bracket contributes only through its own type**, and every cross term a naive expansion writes is zero by the algebra.
+
+**The parameter basis is not the bracket basis.** The eight parameters are coordinates and the four brackets are types, related by the word's Jacobian, which mixes them: the rapidity's derivative carries part of the scale bracket because $\cosh\theta_{\mathrm{rpd}}$ multiplies the phase term, and the rotor's derivative carries part of the boost bracket because $\sinh\theta_{\mathrm{rpd}}$ multiplies the cross term. The parameter equations are the same equations in a rotated basis; the brackets are the form in which each object has one type and one partner.
+
+**What the coupling does to them.** The connection is central and carries no velocity, so it shifts the potential's temporal slot and the potential's spatial slot and touches no bracket's kinetic term. In the chart that shows up as $V_{\mathrm{gco}}$ differing from $V$ by $-ϙ\varphi\cosh\theta_{\mathrm{rpd}}-ϙ(\vec A\cdot\vec u_{\mathrm b})\sinh\theta_{\mathrm{rpd}}$ and as nothing else changing. **The kinetic term is untouched because the coupling has no type that reaches a velocity**, and the three vanishing momenta are therefore the free chart's.
+
+**The one place the coupling does reach a bracket.** The potential's spatial slot is Hermitian, so it joins the boost bracket, and its temporal slot is real, so it joins the scale bracket. Neither reaches the phase bracket, and that is why the phase's equation is the continuity equation with no coupling term in it.
 ## The Constraints the Action Imposes: The Gauge Direction of the Chart
 
 **The action of the gauge group on the parameters.** Under $\tilde\Xi\mapsto e^{iϙ\Gamma/\hbar}\tilde\Xi$,
@@ -173,24 +194,6 @@ because the derivative is first order and the connection is central. The claim i
 **The hand check.** The operator setting's statement is $H=-(\hbar^{2}/2m)\Delta_\Phi+V$ with $p\mapsto p-ϙ\vec A$ in the covariant Laplacian; in the chart the same replacement appears as $\vec h_\Psi\mapsto\vec h_\Psi-ϙ\vec A$ inside $V$, since $\vec h_\Psi$ is the chart's symbol for the momentum. One substitution, two charts, one coupling.
 
 **Why the first-order case can say it so plainly.** A second-order derivative would produce a term quadratic in the connection, and the shift would have to be checked against it. Here there is no such term: the connection enters linearly and only through the potential, so the shift is exact and not a truncation. That is the structural difference between this chart and the Klein–Gordon one, whose coupling shifts a bracket rather than a potential.
-
-## The Parameter Basis and the Four Brackets
-
-**What survives when the field is central.** The coupled Schrödinger field is a single central coefficient, so its word has a scale and a phase, and the rotor and the boost are present only through the rapidity that the action carries. The logarithmic derivative still has four directions,
-
-$$
-\tilde\Xi^{-1}\partial\tilde\Xi=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
-$$
-
-but the rotor bracket is a real vector with no partner in a central bilinear, so it drops out of the scalar part and the action keeps three. **This is the reason the coupled chart has three vanishing momenta and one non-zero one**, and the count is a type fact rather than a computation.
-
-**Why the types pair as they do.** The kinetic term is $\mathrm{Sc}\bigl[\tilde\Xi^{*}\partial\tilde\Xi\bigr]$ and the scalar part of a product vanishes unless the types are conjugate. Scale pairs with scale, phase with phase, Hermitian with Hermitian, real vector with real vector. **A bracket contributes only through its own type**, and every cross term a naive expansion writes is zero by the algebra.
-
-**The parameter basis is not the bracket basis.** The eight parameters are coordinates and the four brackets are types, related by the word's Jacobian, which mixes them: the rapidity's derivative carries part of the scale bracket because $\cosh\theta_{\mathrm{rpd}}$ multiplies the phase term, and the rotor's derivative carries part of the boost bracket because $\sinh\theta_{\mathrm{rpd}}$ multiplies the cross term. The parameter equations are the same equations in a rotated basis; the brackets are the form in which each object has one type and one partner.
-
-**What the coupling does to them.** The connection is central and carries no velocity, so it shifts the potential's temporal slot and the potential's spatial slot and touches no bracket's kinetic term. In the chart that shows up as $V_{\mathrm{gco}}$ differing from $V$ by $-ϙ\varphi\cosh\theta_{\mathrm{rpd}}-ϙ(\vec A\cdot\vec u_{\mathrm b})\sinh\theta_{\mathrm{rpd}}$ and as nothing else changing. **The kinetic term is untouched because the coupling has no type that reaches a velocity**, and the three vanishing momenta are therefore the free chart's.
-
-**The one place the coupling does reach a bracket.** The potential's spatial slot is Hermitian, so it joins the boost bracket, and its temporal slot is real, so it joins the scale bracket. Neither reaches the phase bracket, and that is why the phase's equation is the continuity equation with no coupling term in it.
 
 ## The Noether Currents: The Coupled Charge
 

@@ -36,11 +36,9 @@ whose mass term has one derivative, one power of $m$ and one Levi-Civita symbol.
 
 **What is not new.** The parent action, the four reductions and the topologically massive Lagrangian are the source's, recomputed in the corpus's notation. What this article adds is the reading of the structure: one functional, two extrema, and the derivative count that distinguishes a topological mass from a plain one.
 
-**Declared omissions.** Slot 8 is omitted: the second variation of a first-order action is the invertibility of its kernel, which is the constraint section's subject and not a separate one. Slot 11 is omitted: there is no truncation here, because both reductions are exact.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; $\mathrm{Sc}$ and $\langle\cdot\rangle_\natural$ are the scalar part and the Minkowski square.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; $\mathrm{Sc}$ and $\langle\cdot\rangle_\natural$ are the scalar part and the Minkowski square.
 
 **The structure constants.** $\check c_{\nu\mu\lambda}$ is the corpus's chirality-odd array, antisymmetric as $\check c_{\nu\mu\lambda}-\check c_{\lambda\mu\nu}=-2i\,\varepsilon_{\nu\mu\lambda\rho}j_\rho$, and $\check\varepsilon_{\nu\mu\lambda}=\sum_\rho\varepsilon_{\nu\mu\lambda\rho}j_\rho$ is the three-dimensional Levi-Civita symbol of the slice, nonzero only when all three indices lie on it.
 
@@ -76,6 +74,22 @@ which is Maxwell plus a Chern–Simons mass. The normalization is the source's: 
 
 **The derivative count, which is the point.** A plain mass term $m^2B_\mu B_\mu$ carries no derivative. The Chern–Simons term carries one derivative and one power of $m$, and that is the signature of a topological mass: the term is first order in momentum, so it contributes to the equation at the same order as the kinetic term rather than at a lower one. This is why the topologically massive field's dispersion relation is $p^2+m^2=0$ with a definite sign for one helicity and the opposite for the other, and it is the reason the theory has one degree of freedom and not three.
 
+**The pairing. The pairing is the corpus's star bilinear, and it is what makes the two terms real.** Each term pairs a field with the conjugate of the other, so the integrand is a sum of a term and its conjugate, real by construction. The mass term pairs $G$ with $G^{*}$, which is the only way a mass can be written for a complex vector without breaking the reality of the action.
+
+**Why the star is on the derivative in one term and on the field in the other.** The two terms of the parent differ by which factor carries the conjugate, and the difference is what makes the varied equations independent. If both terms carried the conjugate on the same factor, the variation would give one equation twice.
+
+**The type of the coefficient. One mass $m$ and one shift $a$, and the combination $m-a$ is what survives.** Both are real and have dimension of mass. The three-dimensional Maxwell term carries $1/m$ and the Chern–Simons term carries $1$, so $m$ is a scale in the denominator and the numerator at once — the sign that it is not a coupling in the usual sense.
+
+**What the shift $a$ does.** The second coupling $a$ enters the derivative as a conjugation and shifts the effective mass to $m-a$. It is a parameter of the parent and not of either reduced theory, and its presence is what makes the parent's two eliminations give masses that agree. Setting $a=0$ recovers the plain case.
+
+**The selection rule. The selection rule is gauge invariance of the equations, and it is satisfied by a term that breaks the Lagrangian's invariance.** The Chern–Simons term's variation is a total derivative, so the action changes by a boundary term and the equations do not change. That is a weaker selection than exact invariance, and it is the reason a topological mass is possible at all: as an exact invariant the term does not exist in three dimensions.
+
+**What reality does not buy. Reality does not buy a local mass term, a positive-definite Hamiltonian, or uniqueness.** Three things the reality of the action does not supply:
+
+- *No local gauge-invariant mass.* The Chern–Simons term is the only mass available, and it is not an invariant of the Lagrangian.
+- *No positive-definite energy without a sign condition.* The Hamiltonian is positive for one sign of $m$ only, and the sign is a choice the action permits both ways.
+- *No uniqueness of the reduction.* Which field is eliminated is a choice, and the two choices give different-looking theories.
+
 ## The Variation: Two Eliminations, Two Theories
 
 **Varying the auxiliary field.** $\delta S/\delta H_\mu=0$ gives the first relation of the introduction. Substituting it back leaves the Dirac Lagrangian in the vector representation,
@@ -98,32 +112,6 @@ $$
 
 must be invariant under the gauge transformation of $B_\mu$, and it is, because the variation of the Chern–Simons term is a total derivative. If the factor $\tfrac{m}{2}$ were $\tfrac{m}{4}$, the equation would not reduce to the Proca equation in the appropriate limit; the boxed coefficient is the check.
 
-## The Reality of the Action
-
-### The Pairing
-
-**The pairing is the corpus's star bilinear, and it is what makes the two terms real.** Each term pairs a field with the conjugate of the other, so the integrand is a sum of a term and its conjugate, real by construction. The mass term pairs $G$ with $G^{*}$, which is the only way a mass can be written for a complex vector without breaking the reality of the action.
-
-**Why the star is on the derivative in one term and on the field in the other.** The two terms of the parent differ by which factor carries the conjugate, and the difference is what makes the varied equations independent. If both terms carried the conjugate on the same factor, the variation would give one equation twice.
-
-### The Type of the Coefficient
-
-**One mass $m$ and one shift $a$, and the combination $m-a$ is what survives.** Both are real and have dimension of mass. The three-dimensional Maxwell term carries $1/m$ and the Chern–Simons term carries $1$, so $m$ is a scale in the denominator and the numerator at once — the sign that it is not a coupling in the usual sense.
-
-**What the shift $a$ does.** The second coupling $a$ enters the derivative as a conjugation and shifts the effective mass to $m-a$. It is a parameter of the parent and not of either reduced theory, and its presence is what makes the parent's two eliminations give masses that agree. Setting $a=0$ recovers the plain case.
-
-### The Selection Rule
-
-**The selection rule is gauge invariance of the equations, and it is satisfied by a term that breaks the Lagrangian's invariance.** The Chern–Simons term's variation is a total derivative, so the action changes by a boundary term and the equations do not change. That is a weaker selection than exact invariance, and it is the reason a topological mass is possible at all: as an exact invariant the term does not exist in three dimensions.
-
-### What Reality Does Not Buy
-
-**Reality does not buy a local mass term, a positive-definite Hamiltonian, or uniqueness.** Three things the reality of the action does not supply:
-
-- *No local gauge-invariant mass.* The Chern–Simons term is the only mass available, and it is not an invariant of the Lagrangian.
-- *No positive-definite energy without a sign condition.* The Hamiltonian is positive for one sign of $m$ only, and the sign is a choice the action permits both ways.
-- *No uniqueness of the reduction.* Which field is eliminated is a choice, and the two choices give different-looking theories.
-
 ## The Constraints the Action Imposes: One Degree of Freedom from Three Components
 
 **The count.** In three dimensions a vector has three components. The gauge symmetry removes one and the Chern–Simons term makes the remaining two into one massive mode, so the count is one. A plain massive vector in three dimensions would also have two polarizations, but with both helicities at the same mass; the topological mass splits the sign, and the theory keeps one.
@@ -131,16 +119,6 @@ must be invariant under the gauge transformation of $B_\mu$, and it is, because 
 **Why the constraint survives the mass.** A plain mass term $m^2B_\mu B_\mu$ would make the temporal component propagate and would give a second degree of freedom; the Chern–Simons term does not, because it is first order and its equation is a constraint on the field strength rather than a second-order equation for the potential. The constraint's survival is the same fact as the derivative count.
 
 **The invertibility of the kinetic operator.** The parent's kernel in $G$ is $(m-a)I$ plus derivative terms, invertible for $m\neq a$; the reduced kinetic operator's invertibility is the condition for the propagator to exist, and it fails at $m=0$, where the theory is pure Maxwell and the topological term has vanished.
-
-## The Two Settings
-
-**The four-dimensional setting.** The parent action is four-dimensional, $G_\mu$ and $H_\mu$ are four-vectors, and the mass $m$ couples the two chiral halves of the s-vector. The reduction gives the Dirac theory in the vector representation, and the mass is a plain Dirac mass.
-
-**The three-dimensional setting.** The parent is three-dimensional, the duality is taken between the pairs $(G_\mu;\xi)$ and $(B_\mu;\xi)$, and the reduction gives Maxwell plus Chern–Simons with a scalar spectator. The mass is topological.
-
-**Why the two settings differ in the mass's character and not in the method.** In four dimensions the antisymmetric symbol has four indices and the one-derivative term $H^{*}\check c\,\partial H$ reduces to the Dirac mass; in three the symbol has three, the one-derivative term survives as the Chern–Simons term, and the mass stays first order. The method is the same elimination; the dimension decides whether the mass is plain or topological.
-
-**What the comparison shows.** The duality is a statement about the parent, not about the dimension. The same parent structure, read in four or in three dimensions, gives two theories whose masses differ in character, and that is the cleanest demonstration in the corpus that a mass's shape is a consequence of the term that carries it.
 
 ## The Structural Consequence: A Mass with One Derivative Is a Mass That Cannot Be Removed
 
@@ -168,15 +146,15 @@ whose divergence is $F\tilde F$; it is conserved identically in three dimensions
 
 **What there is not.** No central phase, no second gauge current, no topological charge of the winding kind. The sector's current content is one gauge current and one identically conserved topological current.
 
-## Comparisons with Other Formulations
+## The Two Settings
 
-**Dirac versus topologically massive.** The two reduced theories are not the same theory in two notations: they have different fields, different dimensions and different masses. They are the same *parent* read two ways, and the comparison's content is that a single functional can have two physically distinct extrema.
+**The four-dimensional setting.** The parent action is four-dimensional, $G_\mu$ and $H_\mu$ are four-vectors, and the mass $m$ couples the two chiral halves of the s-vector. The reduction gives the Dirac theory in the vector representation, and the mass is a plain Dirac mass.
 
-**The Proca formulation.** The family's massive vector articles write a plain mass term and count three modes in four dimensions. The topologically massive theory writes a first-order mass and counts one mode in three. The two are not variants of one another; the difference in the derivative count is the difference between them, and this article's boxed Lagrangian displays it.
+**The three-dimensional setting.** The parent is three-dimensional, the duality is taken between the pairs $(G_\mu;\xi)$ and $(B_\mu;\xi)$, and the reduction gives Maxwell plus Chern–Simons with a scalar spectator. The mass is topological.
 
-**The Stueckelberg formulation.** A Stueckelberg mass is invariant by a field redefinition; a topological mass is invariant only up to a boundary term. Both avoid the Proca obstruction, and they avoid it in opposite ways: one by adding a field, the other by weakening the invariance.
+**Why the two settings differ in the mass's character and not in the method.** In four dimensions the antisymmetric symbol has four indices and the one-derivative term $H^{*}\check c\,\partial H$ reduces to the Dirac mass; in three the symbol has three, the one-derivative term survives as the Chern–Simons term, and the mass stays first order. The method is the same elimination; the dimension decides whether the mass is plain or topological.
 
-**What the comparison settles.** The corpus has three ways to give a vector a mass — a scalar's expectation, a Stueckelberg field, and a Chern–Simons term — and the derivative count separates them cleanly. That classification is the comparison's result.
+**What the comparison shows.** The duality is a statement about the parent, not about the dimension. The same parent structure, read in four or in three dimensions, gives two theories whose masses differ in character, and that is the cleanest demonstration in the corpus that a mass's shape is a consequence of the term that carries it.
 
 ## What the Principle Adds and What It Relabels
 
@@ -193,6 +171,16 @@ whose divergence is $F\tilde F$; it is conserved identically in three dimensions
 - *The auxiliary field.* It is not a physical field; it is the variable whose elimination defines which theory one is describing.
 
 **The distinction that matters.** The parent is exact and the descriptions are partial. Each reduced theory is the parent with one field solved for, and neither reduction is privileged except by which field one calls physical.
+
+## Comparisons with Other Formulations
+
+**Dirac versus topologically massive.** The two reduced theories are not the same theory in two notations: they have different fields, different dimensions and different masses. They are the same *parent* read two ways, and the comparison's content is that a single functional can have two physically distinct extrema.
+
+**The Proca formulation.** The family's massive vector articles write a plain mass term and count three modes in four dimensions. The topologically massive theory writes a first-order mass and counts one mode in three. The two are not variants of one another; the difference in the derivative count is the difference between them, and this article's boxed Lagrangian displays it.
+
+**The Stueckelberg formulation.** A Stueckelberg mass is invariant by a field redefinition; a topological mass is invariant only up to a boundary term. Both avoid the Proca obstruction, and they avoid it in opposite ways: one by adding a field, the other by weakening the invariance.
+
+**What the comparison settles.** The corpus has three ways to give a vector a mass — a scalar's expectation, a Stueckelberg field, and a Chern–Simons term — and the derivative count separates them cleanly. That classification is the comparison's result.
 
 ## Open Questions
 

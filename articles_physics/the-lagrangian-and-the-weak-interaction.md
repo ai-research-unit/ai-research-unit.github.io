@@ -38,11 +38,9 @@ The elimination is not an approximation to the action; it is an exact Gaussian i
 
 **What is not new.** The charged current, its $V-A$ form and every rate in the parent are standard. What the corpus contributes is the identification of the projection with the algebra's chirality and the exactness statement for the contact in the element notation.
 
-**Declared omissions.** Slots 8 and 10 are omitted: the second variation of the contact is a loop object, treated in the renormalization articles, and the non-relativistic reading of the weak vertex is the beta-decay limit recorded in the parent. Slot 11 is omitted: the truncation is the momentum expansion of the contact, which is bounded below rather than expanded above, and the parent states the bound.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the fermions are elements $\tilde\Xi\in\mathbb{B}$ and the bilinear pairing is $\bar{\tilde\Xi}=\tilde\Xi^{\dagger}iC_0$.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the fermions are elements $\tilde\Xi\in\mathbb{B}$ and the bilinear pairing is $\bar{\tilde\Xi}=\tilde\Xi^{\dagger}iC_0$.
 
 **The current.** $J^{+}_\mu=\bar{\tilde\Xi}_{\mathrm u}iR_{\vec e_z}\gamma_\mu(1-\gamma_5)\tilde\Xi_{\mathrm d}$, with $\mathrm u$ the upper and $\mathrm d$ the lower member of a doublet; $J^{-}_\mu=(J^{+}_\mu)^{\dagger}$. The right multiplication by $\vec e_z$ is the corpus's chirality insertion, and the factor $(1-\gamma_5)$ is its component form.
 
@@ -69,6 +67,22 @@ The interaction is a product of a gauge field and a current and nothing else: no
 **Why the $W$ is charged.** $W^{+}_\mu$ carries one unit of electric charge and one unit of the weak ladder; its conjugate carries the opposite. The action is real because the two terms are conjugates of each other, and the factor $1/\sqrt2$ is the normalization of the ladder operators $\tau^{\pm}=(\tau^1\pm i\tau^2)/\sqrt2$.
 
 **The gauge-fixed form.** The mass term breaks the local $SU(2)_L$ of the $W$'s own sector, so the action above is written in the unitary gauge, where the $W$'s longitudinal mode is its third polarization and there is no Goldstone. In a covariant gauge the Goldstone returns and the same physics is distributed differently; that is the gauge-fixing article's, and this article uses the unitary form throughout because the vertex does not depend on the choice.
+
+**The pairing. The pairing is the Dirac bilinear, and its reality is what makes the contact real.** $J^{+}_\mu J^{-}_\mu=\lvert J^{+}_\mu\rvert^{2}$ is a squared modulus, real and non-negative term by term, so the contact action is real with a definite sign. The full action is real because the interaction term is a sum of a term and its conjugate.
+
+**Why the current is a vector and not a bilinear of two independent fields.** The current is bilinear in the fermions and linear in each; the action is quartic in the fermions after the elimination, which is the defining feature of a four-fermion theory. The quartic form is real because it is the modulus squared of the current.
+
+**The type of the coefficient. One dimensionless coupling and one mass, and their ratio is the measured $G_F$.** $g$ is dimensionless and $M_W$ has dimension of mass; $G_F$ has dimension of mass to the minus two and is their combination $g^2/(8M_W^2)$. The action has no dimensionful coupling of its own, and the contact's dimension comes from the mass it eliminated.
+
+**What that means for the theory's status.** The contact action is non-renormalizable by power counting, because a coupling of dimension minus two requires an infinite tower of counterterms. That is not a defect of the elimination; it is the statement that the $W$ must be restored above the scale where the expansion fails, and the restoration is the electroweak action.
+
+**The selection rule. The selection rule is $SU(2)_L$ and it selects one chirality.** The current contains $(1-\gamma_5)$, so only left-handed fermions couple; the right-handed components are singlets and do not. The selection is exact and it is the reason the theory is called chiral, and it is also the reason a fermion mass term is forbidden before breaking: a mass couples left to right.
+
+**What reality does not buy. Reality does not buy a rate, a mass, or a valid high-energy completion.** Three things the reality of the action does not supply:
+
+- *No rate without the phase-space integral.* The rate is a separate computation, and the parent performs it.
+- *No fermion masses.* The chiral structure forbids them; they come from the Yukawa sector.
+- *No validity above $M_W$.* The contact is an expansion, and its reality says nothing about its convergence.
 
 ## The Variation: Solving for $W$ Gives the Contact
 
@@ -103,32 +117,6 @@ $$
 with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum transfer of $100$ MeV the ratio is $1.55\times10^{-6}$, so the contact is accurate to a part per million for nuclear beta decay, and this is why the $W$ is never seen as a propagating degree of freedom in that setting.
 
 **The coefficient, counted from the action and not remembered.** The interaction carries $\frac{g}{2\sqrt2}$; squaring it gives $\frac{g^2}{8}$, and the eliminated mass supplies $M_W^{-2}$, so the contact is $-\frac{g^2}{8M_W^2}J^{+}J^{-}$ and the coefficient is $\frac{G_F}{\sqrt2}$ with no further factor. A reader who meets $\frac{4G_F}{\sqrt2}$ in a textbook is reading a current written $\bar\psi\gamma_\mu P_L\psi$: the projector $P_L$ halves the current, so the product of two such currents is four times smaller and the coefficient four times larger. With the full $(1-\gamma_5)$ current used here, the $\frac{4G_F}{\sqrt2}$ form would be wrong by that factor and the muon rate too large by sixteen. The rate computed from the coefficient above, $\Gamma=G_F^2m_\mu^5/(192\pi^3)=3.009\times10^{-19}$ GeV, is $\tau_\mu=2.187\times10^{-6}$ s against the measured $2.197\times10^{-6}$ s — $0.44\%$ short, which is the size of the radiative correction the tree-level formula omits — and that agreement is the check on the coefficient.
-
-## The Reality of the Action
-
-### The Pairing
-
-**The pairing is the Dirac bilinear, and its reality is what makes the contact real.** $J^{+}_\mu J^{-}_\mu=\lvert J^{+}_\mu\rvert^{2}$ is a squared modulus, real and non-negative term by term, so the contact action is real with a definite sign. The full action is real because the interaction term is a sum of a term and its conjugate.
-
-**Why the current is a vector and not a bilinear of two independent fields.** The current is bilinear in the fermions and linear in each; the action is quartic in the fermions after the elimination, which is the defining feature of a four-fermion theory. The quartic form is real because it is the modulus squared of the current.
-
-### The Type of the Coefficient
-
-**One dimensionless coupling and one mass, and their ratio is the measured $G_F$.** $g$ is dimensionless and $M_W$ has dimension of mass; $G_F$ has dimension of mass to the minus two and is their combination $g^2/(8M_W^2)$. The action has no dimensionful coupling of its own, and the contact's dimension comes from the mass it eliminated.
-
-**What that means for the theory's status.** The contact action is non-renormalizable by power counting, because a coupling of dimension minus two requires an infinite tower of counterterms. That is not a defect of the elimination; it is the statement that the $W$ must be restored above the scale where the expansion fails, and the restoration is the electroweak action.
-
-### The Selection Rule
-
-**The selection rule is $SU(2)_L$ and it selects one chirality.** The current contains $(1-\gamma_5)$, so only left-handed fermions couple; the right-handed components are singlets and do not. The selection is exact and it is the reason the theory is called chiral, and it is also the reason a fermion mass term is forbidden before breaking: a mass couples left to right.
-
-### What Reality Does Not Buy
-
-**Reality does not buy a rate, a mass, or a valid high-energy completion.** Three things the reality of the action does not supply:
-
-- *No rate without the phase-space integral.* The rate is a separate computation, and the parent performs it.
-- *No fermion masses.* The chiral structure forbids them; they come from the Yukawa sector.
-- *No validity above $M_W$.* The contact is an expansion, and its reality says nothing about its convergence.
 
 ## The Constraints the Action Imposes: The Contact Is a Limit with a Scale
 

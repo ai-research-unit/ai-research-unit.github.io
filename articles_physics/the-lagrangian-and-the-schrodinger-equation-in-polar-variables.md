@@ -1,7 +1,5 @@
 # __The Lagrangian and the Schrödinger Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 *The Schrödinger Equation in Biquaternionic Polar Variables* substitutes the complete polar decomposition of the field into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out. The action in element form is the companion's, *The Lagrangian and the Schrödinger Equation*:
@@ -36,7 +34,6 @@ The angle is $\theta_{\mathrm{evo}}=h_t t'/\hbar$, the scalar part of the Hamilt
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Schrödinger equation in its polar form.
 
-
 **Two notational choices, made once.** First, the rotor's angular velocity is the real vector $\vec\Omega$ defined by
 
 $$
@@ -53,9 +50,11 @@ so that the potential term of the Lagrangian is $\varrho^{2}V$. Both symbols are
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central; $\mathrm{Sc}$ is the coefficient of $e_t$; $*$ is Hermitian conjugation and $\natural$ quaternion conjugation. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the companion, and the quaternion conjugate appears only where the parents use it. The density is $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$.
 
-## The Action in Polar Variables: The General Element
+## The Action in Polar Variables
+
+### The General Element
 
 The substitution is one differentiation, but the order of the factors matters and is the first place an error enters. Since $\tilde U_{\Psi,\mathrm b}^{*}=\tilde U_{\Psi,\mathrm b}$ and $\tilde u_{\mathrm r}^{*}=\tilde u_{\mathrm r}^{\natural}=\tilde u_{\mathrm r}^{-1}$ for a real unit rotor,
 
@@ -65,7 +64,7 @@ $$
 
 with the rotor on the *left*. The other order, $\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}^{-1}$, is a different element, and the difference is not a convention.
 
-### The kinetic term
+**The kinetic term.**
 
 Differentiating the word gives
 
@@ -115,7 +114,7 @@ $$
 
 **A check that isolates the cross term.** Set $\dot\theta_{\mathrm{pha}}=0$, $\dot \varrho=0$, $\dot\theta_{\mathrm{rpd}}=0$, and let only the rotor's angle run, about an axis parallel to $\vec u_{\mathrm b}$. Then $\vec\Omega=\dot\theta_{\mathrm{axr}}\vec u_{\mathrm b}$ and the cross term equals $\tfrac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{axr}}$, which is not zero. Computed from the element, with $\varrho=1.3$, $\theta_{\mathrm{rpd}}=0.8$ and $\dot\theta_{\mathrm{axr}}=1$, the kinetic Lagrangian is $0.7504$ for parallel axes and $0.4747$ for the axes $\vec u_{\mathrm b}$ at the spherical angles $(1.1,1.2)$ and $\vec u_{\mathrm r}$ at $(2.0,1.4)$. The formula gives $0.7504$ and $\tfrac12\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec u_{\mathrm r}\cdot\vec u_{\mathrm b})=0.7504\times0.6325=0.4747$. The element was evaluated without the formula, and the formula reproduces both numbers.
 
-### The potential term
+**The potential term.**
 
 The potential density is
 
@@ -137,7 +136,7 @@ using $\mathrm{Sc}(i\vec h_\Psi\,i\vec u_{\mathrm b})=-\mathrm{Sc}(\vec h_\Psi\v
 
 **The potential does not see the rotor.** It reads the scale, the rapidity, and the angle between the boost axis and the Hamiltonian's axis. It does not read $\theta_{\mathrm{axr}}$, and it does not read the rotor's axis. This is the structural difference between the two halves of the action: the kinetic term carries the rotor through $\vec\Omega$ and the potential does not carry it at all, so the rotor's only coupling to the Hamiltonian is through the kinetic cross term.
 
-### The action
+**The action.**
 
 Collecting,
 
@@ -149,7 +148,7 @@ $$
 
 Its Lagrangian is first order in the velocities and carries no $\dot \varrho$ and no $\dot\theta_{\mathrm{rpd}}$.
 
-### The momenta
+**The momenta.**
 
 Reading the coefficients of the velocities,
 
@@ -171,7 +170,7 @@ The word "degenerate" needs care here, because the standard test does not apply.
 
 **No multiplier is needed for the unit conditions.** The two axes are unit vectors by construction, because the word parametrises them by angles; the rapidity is real and the scale is positive. Nothing in the Lagrangian is a constrained variable, so the action carries no Lagrange multiplier at all. This is the structural difference from a formulation in which a unit vector is an independent variable and its normalisation enters with a multiplier: here the normalisation is the parametrisation.
 
-### The two currents in the word
+**The two currents in the word.**
 
 The companion's two currents are read off the same four lines. The phase charge is
 
@@ -197,13 +196,13 @@ $$
 
 So the polar Hamiltonian is the parent's energy, and the two kinetic terms are the terms the momenta produce. A consequence is worth stating because it looks like an accident: on the flow $\sum_a p_a\dot q_a=H$, so the Lagrangian density vanishes identically. The $\varrho$-equation, divided by $2\varrho$, is exactly $L/\varrho^{2}=0$, so the vanishing is the equation and not a coincidence.
 
-### Why the cross term has the shape it has
+**Why the cross term has the shape it has.**
 
 The two connections have opposite algebraic types. The rotor's connection $\partial_{t'}\tilde u\,\tilde u^{-1}=\tfrac12\vec\Omega$ is a real pure quaternion, and the boost enters the kinetic term through $\tilde U^{2}=\cosh\theta_{\mathrm{rpd}}+i\sinh\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}$, whose Hermitian part is the second term. A scalar part can be formed only from the pairing of a Hermitian piece with a real vector, so only that second term contributes, and it contributes $i\sinh\theta_{\mathrm{rpd}}\,\mathrm{Sc}(\vec u_{\mathrm b}\tfrac12\vec\Omega)=-\tfrac{i}{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$. The kinetic term carries $-\hbar \varrho^{2}$ times the imaginary content of that number. The weight $\sinh\theta_{\mathrm{rpd}}$ is why the term is invisible at $\theta_{\mathrm{rpd}}=0$ and grows with the rapidity, and the contraction is with the boost axis because that is the direction the Hermitian part carries.
 
 There is no analogous term in the potential because the potential has no velocity: it is the scalar part of a product of two elements and carries no connection at all. The asymmetry between the two halves of the action is therefore not an accident of the calculation: the kinetic term is the only place where a connection can appear, and the word has two connections, one of each type.
 
-## The Action in Polar Variables: The Central Field
+### The Central Field
 
 Set $\theta_{\mathrm{rpd}}=0$ and let the rotor be a sign, $\tilde u_{\mathrm r}=\varepsilon\,e_t$ with $\varepsilon=\pm1$. Then $\tilde U_{\Psi,\mathrm b}=e_t$, $\vec\Omega=0$, $\cosh\theta_{\mathrm{rpd}}=1$ and $\sinh\theta_{\mathrm{rpd}}=0$, so the kinetic term is $-\hbar \varrho^{2}\dot\theta_{\mathrm{pha}}$ and the potential is $\varrho^{2}h_t$. The action is
 
@@ -224,6 +223,14 @@ $$
 whose Euler–Lagrange equations are the continuity equation for $\varrho^{2}$ and the Hamilton–Jacobi equation with the quantum potential $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. The subscript matters: $V_{\mathrm{op}}(\vec x)$ is the scalar potential of the operator, a function of position, while $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ is the polar potential read from the word. They coincide only when the operator's potential is the constant $h_t$. This is the standard Madelung variational principle, in the literature since 1927 and read hydrodynamically by Takabayasi and by Bohm; the article cites it and claims nothing new. The reader should note that the two gradient terms are both present: the one in $|\vec\nabla_\Phi \varrho|^{2}$ is the quantum potential's source, and it is not optional.
 
 **Why the central case cannot detect the cross term.** On the central field $\sinh\theta_{\mathrm{rpd}}=0$, so the cross term vanishes identically and the action is indistinguishable from the naive one. Every statement about the central field in this section would therefore survive the error of dropping the cross term. That is why the general element must be computed, and why the next section is the article's test.
+
+**The pairing. Inherited, and the substitution cannot disturb it.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and its kinetic term is the anti-Hermitian combination $\tfrac{i\hbar c}{2}\bigl(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-(\partial_{r'_t}\tilde\Xi^{*})\tilde\Xi\bigr)$. The chart turns that combination into a real product: with the density $\varrho^{2}$ and the phase $\theta_{\mathrm{pha}}$, the kinetic term is $\hbar\varrho^{2}\partial_{r'_t}\theta_{\mathrm{pha}}$, a real number times a real derivative. **The chart is where the anti-Hermitian device becomes a plain product**, and that is the whole of what the substitution does to the pairing.
+
+**The type of the coefficient. The Hamiltonian, and nothing else.** The action carries $\tilde H_\Psi$, and the density is real when $\tilde H_\Psi$ is Hermitian with respect to $\mathrm{Sc}(\cdot^{*}\cdot)$. In the chart its contribution is $\varrho^{2}$ times the expectation of $\tilde H_\Psi$, a real density. No coefficient of the kinetic term is free.
+
+**The selection rule. Declared.** The potential is the operator $\tilde H_\Psi$, fixed by the problem and not a free element of the algebra, so there is no inadmissible sector to exclude. The exclusion needs a potential written as a general element, which is the scalar family's situation.
+
+**What reality does not buy. Reality does not make $\tilde H_\Psi$ bounded below.** The density is real for every Hermitian $\tilde H_\Psi$, including the ones whose spectrum is unbounded below; the sign of the energy is *The Noether Currents*' question and not this section's.
 
 ## The Variation: The Euler–Lagrange Equations
 
@@ -299,9 +306,7 @@ The eight vectors $\partial\tilde\Xi/\partial p_a$ are the columns of the word's
 
 **What was checked.** The kinetic formula was recomputed from the element on a hundred random parameter points and random velocities, and the largest relative deviation was $4.6\times10^{-10}$; the potential formula, on a hundred random points, to $7\times10^{-16}$; the four vanishing momenta, on a hundred random points, to $3\times10^{-10}$; and the residual identity, on a hundred random triples of a point, a velocity and a variation, to $2.3\times10^{-9}$. The five Euler–Lagrange equations above were verified by substitution rather than numerically: the pair for $\dot\theta_{\mathrm{pha}}$ and $a$ is linear and its solution is the one displayed.
 
-## The Parameter Basis and the Four Brackets
-
-There are two bases of the tangent space at $\tilde\Xi$, and the article's last technical point is the relation between them.
+**The parameter basis and the four brackets.** There are two bases of the tangent space at $\tilde\Xi$, and the article's last technical point is the relation between them.
 
 **The bracket basis.** The logarithmic derivative of the parent decomposes as
 
@@ -326,6 +331,15 @@ and the four brackets are the real scale term, the central imaginary phase term,
 
 *The parameter equations are not the brackets.* They are the same equations in another basis. Saying that they are "the four brackets" would be an error, and the sixth section's ledger keeps the two apart.
 
+## The Constraints the Action Imposes: The Density Is the Phase's Momentum
+
+**The density carries one time derivative, on the phase.** The momentum conjugate to $S$ is therefore $-\hbar\varrho^{2}$, which is the density, so the relation is a determination of the momentum by a field and not a determination of a rate. **A momentum that is a function of the field is a primary constraint**, and the amplitude carries no time derivative at all, so its momentum vanishes identically and gives a second.
+
+**The pair is second class.** The two constraints do not commute, because the phase and the density are conjugate, and a non-vanishing bracket is the definition of second class. The canonical structure is a Dirac bracket, and the count of degrees is the two fields and two equations the variation section states rather than the naive count of four.
+
+**The coupling changes none of this.** The connection is central and carries no velocity, so it shifts the potential's temporal slot and leaves the momentum map alone. **That is why the variation section's sentence "the momenta are the free ones" is exact** and not an approximation, and why the constrained structure of this chart is the free chart's.
+
+**What the section does not claim.** It does not build the bracket, and it does not claim the chart needs a multiplier: nothing has to be imposed from outside, because the amplitude's missing momentum is the structure and not a defect to be repaired.
 
 ## The Structural Consequence: The Chart Is Diagonal on the Central Field
 

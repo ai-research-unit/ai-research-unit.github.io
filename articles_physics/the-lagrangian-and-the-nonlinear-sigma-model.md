@@ -36,11 +36,9 @@ the Euler–Lagrange condition is exactly the conservation of $j_\mu$. The actio
 
 **What is not new.** The model, its target, its current and its power counting are standard. The physics is imported whole. What the algebra supplies is the carrier: the target is a submanifold of $\mathbb{H}$, the metric on it is the biquaternion norm, and the current is an algebra-valued one-form whose flatness is a commutator identity of the algebra.
 
-**Declared omissions.** Slot 8 is omitted: the second variation is the stability question for a soliton, and it belongs to the Skyrme article, where a soliton exists at leading order. Slots 10, 11 and 13 are omitted: this is not a coupled system, has no non-relativistic reading and no competing formulation to compare against.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^{2}=-e_t$ for $\eta=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^{2}=-e_t$ for $\eta=x,y,z$, and central scalar imaginary $i$. The material sector is $\mathbb{B}_\Phi$; the group-valued field takes values in the unit real quaternions $\mathbb{H}^1_{\mathbb{B}}=\{\tilde U:\tilde U\tilde U^{\natural}=e_t\}$.
 
 **The two products used.** $\mathrm{Sc}(X)$ is the coefficient of $e_t$ in $X$; $\langle X\rangle_\natural=\mathrm{Sc}(X X^{\natural})$ is the Minkowski square of $X$. The spatial sum $\sum_\mu$ runs over $t,x,y,z$ with the corpus's sign rule $\sum_\mu X_\mu X_\mu=X_t^{2}-\sum_j X_j^{2}$.
 
@@ -102,6 +100,22 @@ so that the quadratic part is the canonical kinetic term of three real fields wi
 
 **Why no potential term.** A term $V(\tilde U)$ would have to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$, and the only invariant function of a unit quaternion is a constant. The absence of a potential is therefore not a choice of the model but a consequence of the target: on $\mathbb{H}^1$ there is no invariant to build one from, and a mass term for $\vec\pi$ requires a source outside the chiral group, which is the explicit breaking the Goldstone article treats.
 
+**The pairing. The pairing is the real scalar part, and it is forced.** The integrand $\mathrm{Sc}(\bar j_\mu j_\mu)$ is real because $\bar j_\mu j_\mu$ is the negative of a Hermitian norm: $j_\mu$ is anti-Hermitian, so $j_\mu^{\dagger}=-j_\mu$ and $\mathrm{Sc}(\bar j_\mu j_\mu)=-\mathrm{Sc}(j_\mu^{\dagger}j_\mu)=-\langle j_\mu\rangle_\natural$, a real number. No separate reality condition is needed, and no imaginary part survives the sum over $\mu$.
+
+**Why the pairing cannot be $\mathrm{Sc}(j_\mu j_\mu)$.** That form is the negative of the one above only when $j_\mu$ is anti-Hermitian, which it is, so the two differ by a sign and not by a defect. The genuine alternative, $\mathrm{Re}\,\mathrm{Sc}(j_\mu j_\mu)$ without the conjugate, would fail to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$ because the left and right factors do not commute with $j_\mu$ in the same order; the conjugated pairing is the one that survives, and this is the same selection that fixes the Dirac bilinear in the element articles.
+
+**The type of the coefficient. The coefficient is a squared decay constant, real and dimensionful.** $f^2$ has dimension of mass squared, is real by construction, and its value is fixed by the pion decay constant $f_\pi=130.2$ MeV in the corpus's normalization. It is not a coupling: it multiplies the whole action and cancels in the equation of motion, exactly as a coupling would not.
+
+**What that means for the count.** Because $f$ cancels from the equation, the classical content of the model is $f$-independent, and $f$ enters only when the field is normalized canonically — that is, only in the interactions. This is the structural fact behind the statement that the sigma model has one parameter and no coupling.
+
+**The selection rule. The selection rule is invariance under the chiral group, and it leaves one term.** The group acts by $\tilde U\mapsto g_L\tilde U g_R^{*}$ with constant unit quaternions; the current transforms as $j_\mu\mapsto g_R^{*}j_\mu g_R$, so $\mathrm{Sc}(\bar j_\mu j_\mu)$ is invariant because the trace is cyclic. Of all the invariants that can be written with two derivatives, only this one exists at leading order, and the derivative expansion of the next section is the statement that all the others carry four or more.
+
+**What reality does not buy. Reality does not buy a potential, a mass, or a coupling.** The action is real, and its reality is a statement about the integrand and not about the physics. Three things the reality of the action does not supply, stated so that the boundary is visible:
+
+- *No mass for $\vec\pi$.* A mass term is not invariant under the shift $\vec\pi\to\vec\pi+\text{const}$, and the action has no place to put one.
+- *No interaction strength.* The coefficient is $f^2$ and cancels; the strength of the four-pion vertex is fixed by $f$ in the canonical normalization and is not a new number.
+- *No quantisation.* The action is classical. Its path integral is written in the companion article and is not part of this one.
+
 ## The Variation: The Current Is Conserved, and That Is the Equation
 
 **The variation.** Write $\delta\tilde U=\tilde U\,\tilde\alpha$ with $\tilde\alpha\in\mathfrak{su}(2)$ vanishing at the boundary; the constraint $\tilde U\tilde U^{\natural}=e_t$ forces $\tilde\alpha$ anti-Hermitian, so the variation runs over the three directions of $\mathfrak{su}(2)$ and not over four. Then
@@ -130,32 +144,6 @@ $$
 which is the parent's equation. The equation and the conservation law are the same statement, and that coincidence is not an accident of this model: it is what flatness buys, because a flat connection's divergence is the equation of motion of its own norm.
 
 **The spatial form, to make it checkable.** In components the equation reads $\partial_\mu j_\mu=0$ with the corpus's sign rule, so the time component is conserved with a plus sign and each spatial component with a minus sign; a static configuration therefore obeys $\sum_j\partial_j j_j=0$, and a configuration constant in space obeys $\partial_t j_t=0$. Both are immediate from the boxed form.
-
-## The Reality of the Action
-
-### The Pairing
-
-**The pairing is the real scalar part, and it is forced.** The integrand $\mathrm{Sc}(\bar j_\mu j_\mu)$ is real because $\bar j_\mu j_\mu$ is the negative of a Hermitian norm: $j_\mu$ is anti-Hermitian, so $j_\mu^{\dagger}=-j_\mu$ and $\mathrm{Sc}(\bar j_\mu j_\mu)=-\mathrm{Sc}(j_\mu^{\dagger}j_\mu)=-\langle j_\mu\rangle_\natural$, a real number. No separate reality condition is needed, and no imaginary part survives the sum over $\mu$.
-
-**Why the pairing cannot be $\mathrm{Sc}(j_\mu j_\mu)$.** That form is the negative of the one above only when $j_\mu$ is anti-Hermitian, which it is, so the two differ by a sign and not by a defect. The genuine alternative, $\mathrm{Re}\,\mathrm{Sc}(j_\mu j_\mu)$ without the conjugate, would fail to be invariant under $\tilde U\mapsto g_L\tilde U g_R^{*}$ because the left and right factors do not commute with $j_\mu$ in the same order; the conjugated pairing is the one that survives, and this is the same selection that fixes the Dirac bilinear in the element articles.
-
-### The Type of the Coefficient
-
-**The coefficient is a squared decay constant, real and dimensionful.** $f^2$ has dimension of mass squared, is real by construction, and its value is fixed by the pion decay constant $f_\pi=130.2$ MeV in the corpus's normalization. It is not a coupling: it multiplies the whole action and cancels in the equation of motion, exactly as a coupling would not.
-
-**What that means for the count.** Because $f$ cancels from the equation, the classical content of the model is $f$-independent, and $f$ enters only when the field is normalized canonically — that is, only in the interactions. This is the structural fact behind the statement that the sigma model has one parameter and no coupling.
-
-### The Selection Rule
-
-**The selection rule is invariance under the chiral group, and it leaves one term.** The group acts by $\tilde U\mapsto g_L\tilde U g_R^{*}$ with constant unit quaternions; the current transforms as $j_\mu\mapsto g_R^{*}j_\mu g_R$, so $\mathrm{Sc}(\bar j_\mu j_\mu)$ is invariant because the trace is cyclic. Of all the invariants that can be written with two derivatives, only this one exists at leading order, and the derivative expansion of the next section is the statement that all the others carry four or more.
-
-### What Reality Does Not Buy
-
-**Reality does not buy a potential, a mass, or a coupling.** The action is real, and its reality is a statement about the integrand and not about the physics. Three things the reality of the action does not supply, stated so that the boundary is visible:
-
-- *No mass for $\vec\pi$.* A mass term is not invariant under the shift $\vec\pi\to\vec\pi+\text{const}$, and the action has no place to put one.
-- *No interaction strength.* The coefficient is $f^2$ and cancels; the strength of the four-pion vertex is fixed by $f$ in the canonical normalization and is not a new number.
-- *No quantisation.* The action is classical. Its path integral is written in the companion article and is not part of this one.
 
 ## The Constraints the Action Imposes: The Field Is Group-Valued
 

@@ -1,7 +1,5 @@
 # __The Lagrangian and the Dirac Equation in Momentum Space__
 
-**Declared omissions.** The action's only constraint is the first-order structure that the symbol's reality already carries, so slot 6 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **In momentum space the Dirac action stops being a functional of neighbouring events and becomes an algebraic quadratic form at each wave number.** *The Lagrangian and the Dirac Equation* writes the action, varies it to the chiral pair, and derives the currents. This article performs the transform on that action and reads what the transform does to the three objects the variation rests on: the real part, the integration by parts and the Hessian.
@@ -50,6 +48,27 @@ with $\tilde\Xi_{L}$ and $\tilde\Xi_{R}$ now the transforms of the two parts. Th
 
 **That is what the transform buys, and it is a bookkeeping gain rather than a physical one.** The physics is the same equation. The gain is that three questions — is the bracket real, does it need a boundary term, what is the second variation — become questions about one element at one wave number instead of questions about a functional.
 
+**The pairing. Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the reality part of §*The Action* of *The Lagrangian and the Dirac Equation* is where the quaternionic alternative was rejected.
+
+**The type of the coefficient. In position space the real part is a statement about the adjoint.** The parent's derivation shows that each kinetic density is real up to a divergence, that the divergence integrates away, and that the imaginary part of the bracket is therefore a surface term. One sentence of it is worth quoting: the $i$ inside the material time is what makes the temporal kinetic term self-adjoint without disturbing the spatial ones.
+
+**In momentum space the real part is a statement about the multiplier, and it is the same statement.** Take any element $\tilde A$ of $\mathbb{B}$ with complex coefficients and a wave-number element $\tilde K_\Phi$ off the shell. Then
+
+$$
+\mathrm{Sc}\bigl(\tilde A^{*}\,i\tilde K_\Phi\,\tilde A\bigr)
+=\overline{\mathrm{Sc}\bigl(\tilde A^{*}\,i\tilde K_\Phi\,\tilde A\bigr)} .
+$$
+
+because $i\tilde K_\Phi$ is Hermitian: $\mathrm{Sc}(\tilde A^{*}H\tilde A)$ is real for every Hermitian $H$ and every $\tilde A$. The check covered one hundred random $\tilde A$ and as many random momenta, and the largest imaginary part of the bracket was $2.2\times10^{-15}$. **So the $\mathrm{Re}$ of the momentum-space action removes nothing**, and writing it or not writing it is the same functional.
+
+**The two readings are one mechanism seen twice.** In position space the central $i$ sits in the coordinate $R_t=ir_t'$ and splits the four derivative directions into one anti-Hermitian and three Hermitian; the real part then cancels the one imaginary contribution. In momentum space the same $i$ sits in front of the symbol and makes all four directions Hermitian at once; the real part then has nothing to cancel. **One element, used in one place at a time, and the real part is the trace of where it was used.**
+
+**A reader should not conclude that the real part was a decoration.** Without it the position-space functional is not real, and the variation is not the pair; the parent shows both. The claim here is narrower: the real part's work is done by the symbol's Hermiticity once the transform is taken, so the momentum-space action needs no boundary argument and no surface term.
+
+**The selection rule. Not examined here.** The symbol is Hermitian by the article's licence; which potentials are admissible is the scalar family's question, where the potential is a free element and can be neither.
+
+**What reality does not buy. Not at issue here.** The section establishes that the real part removes nothing at a mode. That is a statement about the $\mathrm{Re}$ device and not about the gap between a real action and a real spectrum, which the limit reading measures.
+
 ## The Variation
 
 **The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
@@ -70,48 +89,15 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Reality of the Action
+## The Constraints the Action Imposes: The Constraint Is the Frequency Condition
 
-**Four questions, and this article answers (b) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+**At a mode the variation is algebraic and the constraint falls on the momentum.** The transform has replaced $\tilde\nabla_\Phi$ by $i\tilde K_\Phi$ and its adjoint by $i\tilde K_\Phi^{\natural}$, so the density is a quadratic form in the amplitude with no derivative left. Stationarity forces the form's bracket to vanish, and where the form is invertible the only stationary amplitude is zero.
 
-### The Pairing
+**The condition is an eigenvalue statement, and it is satisfied twice.** The vanishing of the bracket's determinant is a quadratic in the frequency, because the two kinetic terms carry one power of it each and the mass couples them without one. Each root is a frequency at which a nonzero mode exists, so the singular set carries two frequencies per momentum, which is the momentum-space form of the two-sidedness the element article reads off the action.
 
-**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and §*The Reality of the Action* of *The Lagrangian and the Dirac Equation* is where the quaternionic alternative was rejected.
+**The set is the dispersion surface and the connection translates it.** At $k_m=0$ the two sheets meet on the cone; at finite mass they separate by $2k_m$. The connection's temporal slot shifts the frequency and its spatial slots rotate the wave vector, so the sheet separation is a property of the mass alone.
 
-### The Type of the Coefficient
-
-**In position space the real part is a statement about the adjoint.** The parent's derivation shows that each kinetic density is real up to a divergence, that the divergence integrates away, and that the imaginary part of the bracket is therefore a surface term. One sentence of it is worth quoting: the $i$ inside the material time is what makes the temporal kinetic term self-adjoint without disturbing the spatial ones.
-
-**In momentum space the real part is a statement about the multiplier, and it is the same statement.** Take any element $\tilde A$ of $\mathbb{B}$ with complex coefficients and a wave-number element $\tilde K_\Phi$ off the shell. Then
-
-$$
-\mathrm{Sc}\bigl(\tilde A^{*}\,i\tilde K_\Phi\,\tilde A\bigr)
-=\overline{\mathrm{Sc}\bigl(\tilde A^{*}\,i\tilde K_\Phi\,\tilde A\bigr)} .
-$$
-
-because $i\tilde K_\Phi$ is Hermitian: $\mathrm{Sc}(\tilde A^{*}H\tilde A)$ is real for every Hermitian $H$ and every $\tilde A$. The check covered one hundred random $\tilde A$ and as many random momenta, and the largest imaginary part of the bracket was $2.2\times10^{-15}$. **So the $\mathrm{Re}$ of the momentum-space action removes nothing**, and writing it or not writing it is the same functional.
-
-**The two readings are one mechanism seen twice.** In position space the central $i$ sits in the coordinate $R_t=ir_t'$ and splits the four derivative directions into one anti-Hermitian and three Hermitian; the real part then cancels the one imaginary contribution. In momentum space the same $i$ sits in front of the symbol and makes all four directions Hermitian at once; the real part then has nothing to cancel. **One element, used in one place at a time, and the real part is the trace of where it was used.**
-
-**A reader should not conclude that the real part was a decoration.** Without it the position-space functional is not real, and the variation is not the pair; the parent shows both. The claim here is narrower: the real part's work is done by the symbol's Hermiticity once the transform is taken, so the momentum-space action needs no boundary argument and no surface term.
-
-### The Selection Rule
-
-**Not examined here.** The symbol is Hermitian by the article's licence; which potentials are admissible is the scalar family's question, where the potential is a free element and can be neither.
-
-### What Reality Does Not Buy
-
-**Not at issue here.** The section establishes that the real part removes nothing at a mode. That is a statement about the $\mathrm{Re}$ device and not about the gap between a real action and a real spectrum, which the limit reading measures.
-
-## Zero, Pole and the On-Shell Action: Zero and Pole Are One Object
-
-**The variational output is the zero.** The pair's compatibility condition is $(k^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions of the equation of motion are supported exactly where the central scalar vanishes. The variational principle's content in momentum space is therefore: on the shell, any amplitude solves the pair; off it, none does.
-
-**The path integral's free propagator has the pole.** The path-integral companion writes the free Dirac kernel in momentum space with the denominator $\langle\tilde K_\Phi\rangle_\natural+k_m^{2}$, which is $-k^{2}+k_m^{2}$, the negative of the second variation. The kernel is large exactly where the scalar vanishes, and its residue there is the numerator the companion computes.
-
-**The two are one function, read at its zero and at its inverse.** Writing $N(\tilde K_\Phi)=k^{2}-k_m^{2}$, the variational statement is $N=0$ and the propagator is proportional to $1/N$. Neither statement is more fundamental, and neither implies the other without the construction in between: the zero selects the support and the pole gives the weight.
-
-**This is the precise sense in which the parent's third open question is closed.** The parent asked for the path integral and did not attempt it. The answer attempted here is not the integral; it is the observation that the two objects the parent separated — the extremum's object and the sum over configurations — meet in one momentum-space function, one at its zero and the other at its pole. **The construction of the sum is the companion articles' work, and the relation is the reason the two articles describe one theory.**
+**What is absent, and why the absence is a statement about the chart.** No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one momentum cannot see one; no restriction on the amplitude at a singular momentum. The constraint content is one determinant, and the structural consequence is a claim about what that determinant leaves free.
 
 ## The Structural Consequence: The Three Objects Are One Number
 
@@ -124,6 +110,16 @@ because $i\tilde K_\Phi$ is Hermitian: $\mathrm{Sc}(\tilde A^{*}H\tilde A)$ is r
 **What it does not claim.** It does not evaluate the integral, compute a residue, or promote a bracket: the free normalisation is read, and the promotion of the bracket to a commutator remains the next category's step. It does not extend to an interacting mode, where the Hessian is no longer one number and the three objects separate.
 
 **What it corrects.** *Zero and Pole Are One Object* states that the two are one function; this section states the consequence the article owns, that the third object is not a third assumption. **A reader who takes the normalisation as an input has added a postulate the action did not need.**
+
+## Zero, Pole and the On-Shell Action: Zero and Pole Are One Object
+
+**The variational output is the zero.** The pair's compatibility condition is $(k^{2}-k_m^{2})\tilde\Xi_R=0$, so the solutions of the equation of motion are supported exactly where the central scalar vanishes. The variational principle's content in momentum space is therefore: on the shell, any amplitude solves the pair; off it, none does.
+
+**The path integral's free propagator has the pole.** The path-integral companion writes the free Dirac kernel in momentum space with the denominator $\langle\tilde K_\Phi\rangle_\natural+k_m^{2}$, which is $-k^{2}+k_m^{2}$, the negative of the second variation. The kernel is large exactly where the scalar vanishes, and its residue there is the numerator the companion computes.
+
+**The two are one function, read at its zero and at its inverse.** Writing $N(\tilde K_\Phi)=k^{2}-k_m^{2}$, the variational statement is $N=0$ and the propagator is proportional to $1/N$. Neither statement is more fundamental, and neither implies the other without the construction in between: the zero selects the support and the pole gives the weight.
+
+**This is the precise sense in which the parent's third open question is closed.** The parent asked for the path integral and did not attempt it. The answer attempted here is not the integral; it is the observation that the two objects the parent separated — the extremum's object and the sum over configurations — meet in one momentum-space function, one at its zero and the other at its pole. **The construction of the sum is the companion articles' work, and the relation is the reason the two articles describe one theory.**
 
 ## The Second Variation: One Central Scalar
 

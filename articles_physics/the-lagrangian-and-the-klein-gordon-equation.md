@@ -28,11 +28,9 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Klein–Gordon equation in its element form.
 
-**Declared omissions.** The reality of the action is checked inside *The Action in Element Form*, where the two pairings are compared, so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
 
 **The d'Alembertian, and the dispersion relation it fixes.** The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=i r'_t$, and $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ on the material sector. On a plane wave $\exp\big(-i(\omega r'_t/c-\vec k_\Phi\cdot\vec r)\big)$ the operator returns $\omega^{2}-c^{2}k_\Phi^{2}$ times the wave, so the equation requires $\omega^{2}=c^{2}k_\Phi^{2}+c^{2}k_m^{2}$. That is the parent's dispersion relation, and it fixes the sign of the mass term in the action below.
 ## The Action in Element Form
@@ -45,7 +43,7 @@ $$
 
 The signs are written out in the display, and that is deliberate. A compact form $\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}(\partial_\mu\tilde\Xi)-k_m^{2}\tilde\Xi^{*}\tilde\Xi\big]$ would need the temporal slot raised, and this corpus raises no index; the compact form therefore hides the metric in a symbol, and the article writes the two halves apart instead. The reason is the one already met: the Hermitian conjugation carries the central $i$ with it, so $(\partial_{R_t}\tilde\Xi)^{*}\partial_{R_t}\tilde\Xi=(+i)(-i)(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi$ is the temporal term with a plus, and the four-slot contraction over $R$ gives $+\lvert\partial_{r'_t}\tilde\Xi\rvert^{2}+\sum_\eta\lvert\partial_{r_\eta}\tilde\Xi\rvert^{2}$ with no relative sign. The relative sign of the two terms is therefore a property of the metric, not of the conjugation, and it is stated in the display rather than hidden in a symbol. Three properties of the action are now checked.
 
-### The variation
+**The variation.**
 
 Vary $\tilde\Xi$ and treat $\tilde\Xi^{*}$ as independent, which is legitimate over $\mathbb{C}$ and is the standard device for a first-order-in-the-conjugate action. The two kinetic terms are complex conjugates, $\mathrm{Sc}(A^{*}B)=\big(\mathrm{Sc}(B^{*}A)\big)^{*}$, so they sum to twice the real part, and after one integration by parts
 
@@ -72,13 +70,7 @@ The convention fixed in §*Conventions* is $\Box_\Phi=\Delta_\Phi-\partial^{2}_{
 
 **No factor of one half.** The overall normalization is a convention and this article fixes it once: the action above has no $\tfrac12$, so the charge and the energy below carry the constants written and no others. A factor of $\tfrac12$ in front of $S$ multiplies every Noether current by $\tfrac12$ and changes no equation.
 
-## The Reality of the Action
-
-**Four questions, and this article answers (a) and (b) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
-
-### The Pairing
-
-**The two pairings, stated once.** The bilinear $\mathrm{Sc}(A^{*}B)$ is the Hermitian form and the bilinear $\mathrm{Sc}(A^{\natural}B)$ is the quaternionic one. They agree on real coefficients and differ on complex ones, and the difference is not cosmetic. For $A=\sum_\mu a_\mu e_\mu$ with $a_\mu$ complex,
+**The pairing. The two pairings, stated once.** The bilinear $\mathrm{Sc}(A^{*}B)$ is the Hermitian form and the bilinear $\mathrm{Sc}(A^{\natural}B)$ is the quaternionic one. They agree on real coefficients and differ on complex ones, and the difference is not cosmetic. For $A=\sum_\mu a_\mu e_\mu$ with $a_\mu$ complex,
 
 $$
 \mathrm{Sc}(A^{*}A)=\sum_{\mu}\lvert a_\mu\rvert^{2},
@@ -98,9 +90,7 @@ the first real and equal to the Hermitian norm, the second complex in general. T
 
 **What the pairing does not decide.** It fixes the density's reality and nothing about the potential. Which potentials are admissible is the selection rule, and it is read on the potential's type and not on the pairing's (§*The Structural Consequence: Four Scalar Actions*).
 
-### The Type of the Coefficient
-
-**The kinetic term is real.** Every term of the display has the form $\mathrm{Sc}(A^{*}A)$ with $A$ one of the derivatives, and $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is real and non-negative. The kinetic part of the Lagrangian is the difference of two such sums, real term by term. Its temporal part is positive and its spatial part enters with a minus, which is the metric and not an ambiguity: a boost of the four-gradient reverses one sign and not the other.
+**The type of the coefficient. The kinetic term is real.** Every term of the display has the form $\mathrm{Sc}(A^{*}A)$ with $A$ one of the derivatives, and $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is real and non-negative. The kinetic part of the Lagrangian is the difference of two such sums, real term by term. Its temporal part is positive and its spatial part enters with a minus, which is the metric and not an ambiguity: a boost of the four-gradient reverses one sign and not the other.
 
 **The potential term is real.** Write the coefficient as $\tilde M\in\mathbb{B}_{\Psi}$, Hermitian, with $\tilde M=k_m^{2}e_t$ for the free field. Then
 
@@ -110,13 +100,9 @@ $$
 
 using $(\tilde\Xi^{*})^{*}=\tilde\Xi$ and $\tilde M^{*}=\tilde M$. So the density is Hermitian, and a Hermitian element has a real scalar part, because $\mathbb{B}_{\Psi}$ is the real-linear span of $e_t$ and $i\vec e_\eta$. The potential density is therefore real for every Hermitian coefficient, central or not. With $\tilde M=k_m^{2}e_t$ it is $k_m^{2}\sum_\mu\lvert\Xi_\mu\rvert^{2}$, and the action is real.
 
-### The Selection Rule
+**The selection rule. Not at issue here.** The potential is $\tilde M=k_m^{2}e_t$, central and Hermitian at once, so both sectors pass the test and no sector is excluded. The general potential is the momentum article's subject.
 
-**Not at issue here.** The potential is $\tilde M=k_m^{2}e_t$, central and Hermitian at once, so both sectors pass the test and no sector is excluded. The general potential is the momentum article's subject.
-
-### What Reality Does Not Buy
-
-**Not at issue here.** The article claims that the density is real and positive; the gap between a real action and a real spectrum opens only where the potential is a free element, which is the momentum reading.
+**What reality does not buy. Not at issue here.** The article claims that the density is real and positive; the gap between a real action and a real spectrum opens only where the potential is a free element, which is the momentum reading.
 
 ## The Variation
 
@@ -145,36 +131,15 @@ $$
 
 the parent's equation, with the mass term's sign fixed by the dispersion relation of the previous section. Varying $\tilde\Xi$ instead of $\tilde\Xi^{*}$ gives the Hermitian conjugate of the same equation, so the two variations of the real functional give one equation and its conjugate and not two equations.
 
-## Aside: The Conjugate Pair
+## The Constraints the Action Imposes: There Are None
 
-The equation is second order in the material time, so the action is second order in the velocity and the canonical momentum is not the field but its conjugate. This section states the Legendre transform, because it is the closest analogue in this problem of the parent Schrödinger article's two writings, and because it is where the closed-form exponential survives.
+**The count.** One element $\tilde\Xi$, eight real components, one second-order equation per component, and momenta that are the velocities. The relation is invertible, so there is no primary constraint, no Dirac bracket and no constraint surface.
 
-**The momentum and the Hamiltonian.** With $\Pi_\Xi=(\partial_{r'_t}\tilde\Xi)^{*}$ the conjugate in the sense $\delta L=2\,\mathrm{Re}\,\mathrm{Sc}(\Pi_\Xi\,\delta\tilde\Xi)$, the Hamiltonian is
+**Why the absence is the reference case.** The Proca readings have the Lorenz condition, the gauge readings have their Gauss laws, the sigma model has its unit surface, and the first-order readings have their second-class pairs. **The scalar has none**, and each of those constraints is easiest to read against this article, where the canonical structure is the simplest in the family.
 
-$$
-H=\int\mathrm{d}^{3}x\;\mathrm{Sc}\Big[\Pi_\Xi^{*}\Pi_\Xi+\sum_{\eta}(\partial_{r_\eta}\tilde\Xi)^{*}\partial_{r_\eta}\tilde\Xi+k_m^{2}\tilde\Xi^{*}\tilde\Xi\Big],
-$$
+**The one thing that looks like a constraint and is not.** The reality of the density. Reality is a property of the functional and is checked term by term in the action section; it restricts nothing in the variation, and a complex density would be a different action and not an inadmissible configuration.
 
-which is a sum of three non-negative terms and is non-negative for every field. The first-order action is
-
-$$
-S[\tilde\Xi,\Pi_\Xi]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\big[\Pi_\Xi^{*}\partial_{r'_t}\tilde\Xi+(\partial_{r'_t}\tilde\Xi)^{*}\Pi_\Xi\big]-H .
-$$
-
-**Its equations.** Varying $\Pi_\Xi^{*}$ gives $\partial_{r'_t}\tilde\Xi=\Pi_\Xi$ and varying $\tilde\Xi^{*}$ gives $\partial_{r'_t}\Pi_\Xi=\sum_\eta\partial^{2}_{r_\eta}\tilde\Xi-k_m^{2}\tilde\Xi$, and the two together return the Klein–Gordon equation on elimination. The elimination is exact: differentiating the first equation in $r'_t$ and substituting the second gives $\partial^{2}_{r'^{2}_t}\tilde\Xi=\Delta_\Phi\tilde\Xi-k_m^{2}\tilde\Xi$, which is $\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0$.
-
-**Why there is no second writing of the element.** The parent's Schrödinger article has two writings of one equation, with $\tilde H_\Psi$ and with $-i\tilde H_\Psi$, and both are linear in the field. The Klein–Gordon operator admits no such pair, and the parent says why in §*The Lanczos Family and the Spin-0 Member*: a first-order operator $\tilde\nabla_\Phi+\tilde F$ squares to $\Box_\Phi+(\tilde F,\tilde F)+2i(\tilde F,\vec\nabla_\Phi)$, and the cross term cannot be removed while the mass is kept. The first-order readings that do exist are two and neither is a rewriting of one element: the conjugate pair above, which doubles the state, and the spinor square root of the Dirac article, which doubles the carrier. The two doublings are different in kind. The pair keeps one element per coefficient and adds its rate, so the carrier is unchanged and the state space doubles. The root keeps one datum per coefficient and enlarges the carrier to a minimal left ideal and its conjugate, so the number of data per coefficient is unchanged. A second writing of the same element would be neither. The variational principle displays the first of them, since $\Pi_\Xi$ is a second element and the pair $(\tilde\Xi,\Pi_\Xi)$ is the pair the equation needs.
-
-**The closed form.** For a constant $k_m$ and a constant coefficient the pair propagates in closed form. On a plane-wave component of wave vector $\vec k_\Phi$ the pair obeys $\partial_{r'_t}\tilde\Xi=\Pi_\Xi$ and $\partial_{r'_t}\Pi_\Xi=-(\kappa^{2}+k_m^{2})\tilde\Xi$ with $\kappa^{2}=k_\Phi^{2}$, so with $k'_t=\sqrt{\kappa^{2}+k_m^{2}}$,
-
-$$
-\begin{pmatrix}\tilde\Xi(r'_t)\\ \Pi_\Xi(r'_t)\end{pmatrix}
-=
-\begin{pmatrix}\cos(k'_t r'_t) & \sin(k'_t r'_t)/k'_t\\ -k'_t\sin(k'_t r'_t) & \cos(k'_t r'_t)\end{pmatrix}
-\begin{pmatrix}\tilde\Xi(0)\\ \Pi_\Xi(0)\end{pmatrix},
-$$
-
-which is the parent's two frequency branches $e^{\pm i k'_t r'_t}$ recombined into a real block. The single element alone has no such closed form, and that is the precise sense in which the second-order equation needs the doubling.
+**What the section does not claim.** It does not claim the theory is trivial, only that its action imposes no relation among the canonical variables. The four scalar actions of the structural consequence inherit that property one by one, which is why the separation into components costs no constraint anywhere.
 
 ## The Structural Consequence: Four Scalar Actions
 
@@ -309,18 +274,6 @@ The ledger is short and it is the reason the article is worth writing.
 
 3. **The carrier under a non-central coefficient.** The free equation preserves the carrier: it maps $\mathbb{B}$ to $\mathbb{B}$ and each minimal left ideal to itself, since the operator is central. A non-central Hermitian $\tilde M$ acts by left multiplication and does not commute with a right ideal, so a field started in a Peirce carrier leaves it. Whether the physical restriction to a carrier survives an external potential, and in which representation, is the Klein–Gordon form of the closure question the Schrödinger article raises.
 
-## Verification
-
-**The variation.** The difference quotient of the action was compared with $2\,\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ on a periodic grid with a random biquaternion field and a random complex variation, and the two agreed to ten significant figures. The step is also exact on paper: the kinetic halves are conjugates and the boundary term of the integration by parts vanishes for a variation of compact support.
-
-**The reality of the action.** The imaginary part of $S$ vanished identically on every field tried, which is the numerical form of the statement that both terms are Hermitian and that $\mathrm{Sc}$ of a Hermitian element is real.
-
-**The current.** The identity $\sum_\mu\partial_\mu j_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ was checked off shell on a grid with four modes, where the two sides agreed to $10^{-13}$ at every point, and on an exact solution, where the divergence was zero to machine precision. The ratio $j_{r'_t}/\rho_{\mathrm{chg}}=-2k_m$ was checked on the mode $\omega=2$, $k_x=1$, $k_m=\sqrt3$ in one length unit, where it came out $-2\sqrt3$ and the derivation of §*The Noether Currents* explains why.
-
-**The stress.** On the exact plane wave the combination $\partial_{r'_t}T^{00}+\sum_\eta\partial_{r_\eta}T^{0\eta}$ vanished at the level of the finite-difference truncation, which is the numerical form of the divergence identity above.
-
-**The signs.** A cosine of each sign of $\omega$ was substituted into $\Box_\Phi\tilde\Xi-k_m^{2}\tilde\Xi$ on the case $\omega=2$, $k_x=1$, $k_m=\sqrt3$, and both branches solved the equation, which is the check that the coefficient $(1,-1,1)$ of §*The Action in Element Form* is right and the wrong choices of sign are wrong.
-
 ## Summary
 
 One action has the Klein–Gordon equation as its Euler–Lagrange equation,
@@ -374,3 +327,46 @@ The second-order structure appears in the variational principle as the conjugate
 - James D. Bjorken and Sidney D. Drell, *Relativistic Quantum Mechanics* (McGraw–Hill, 1964), for the Klein–Gordon action and the canonical quantization that follows from it.
 - Paul A. M. Dirac, *Lectures on Quantum Mechanics* (Belfer Graduate School, 1964), for the constrained systems that a first-order reading of a second-order equation produces; the conjugate pair of §*Aside: The Conjugate Pair* is the unconstrained case.
 - The companion articles: [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the equation, its operator, its plane waves and its currents; [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same equation in the eight parameters; [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), for the polar action; [The Lagrangian and the Schrödinger Equation](the-lagrangian-and-the-schrodinger-equation.html), for the first-order case, whose action is linear in the velocity and whose Noether charge is the density; [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), for the tensor, its improvement and its trace; [The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form](the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html), for the varying-coefficient case; [The Path Integral and the Klein–Gordon Equation in Biquaternionic Form](the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html), for the sum over configurations, which is a different object from the extremum; [The First-Order Root of the Biquaternion Klein–Gordon Operator](the-first-order-root-of-the-biquaternion-klein-gordon-operator.html), for why the operator does not factor over the algebra; [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html), for the spinor square root and the first-order action that the doubled field admits. [The Lagrangian and the Klein–Gordon Equation in Momentum Space](the-lagrangian-and-the-klein-gordon-equation-in-momentum-space.html), for the eigenvalue problem that the four scalar actions state in one sentence, its spectrum and the $c^{2}$ the display omits.
+
+## Aside: The Conjugate Pair
+
+The equation is second order in the material time, so the action is second order in the velocity and the canonical momentum is not the field but its conjugate. This section states the Legendre transform, because it is the closest analogue in this problem of the parent Schrödinger article's two writings, and because it is where the closed-form exponential survives.
+
+**The momentum and the Hamiltonian.** With $\Pi_\Xi=(\partial_{r'_t}\tilde\Xi)^{*}$ the conjugate in the sense $\delta L=2\,\mathrm{Re}\,\mathrm{Sc}(\Pi_\Xi\,\delta\tilde\Xi)$, the Hamiltonian is
+
+$$
+H=\int\mathrm{d}^{3}x\;\mathrm{Sc}\Big[\Pi_\Xi^{*}\Pi_\Xi+\sum_{\eta}(\partial_{r_\eta}\tilde\Xi)^{*}\partial_{r_\eta}\tilde\Xi+k_m^{2}\tilde\Xi^{*}\tilde\Xi\Big],
+$$
+
+which is a sum of three non-negative terms and is non-negative for every field. The first-order action is
+
+$$
+S[\tilde\Xi,\Pi_\Xi]=\int\mathrm{d}^{4}x\;\mathrm{Sc}\big[\Pi_\Xi^{*}\partial_{r'_t}\tilde\Xi+(\partial_{r'_t}\tilde\Xi)^{*}\Pi_\Xi\big]-H .
+$$
+
+**Its equations.** Varying $\Pi_\Xi^{*}$ gives $\partial_{r'_t}\tilde\Xi=\Pi_\Xi$ and varying $\tilde\Xi^{*}$ gives $\partial_{r'_t}\Pi_\Xi=\sum_\eta\partial^{2}_{r_\eta}\tilde\Xi-k_m^{2}\tilde\Xi$, and the two together return the Klein–Gordon equation on elimination. The elimination is exact: differentiating the first equation in $r'_t$ and substituting the second gives $\partial^{2}_{r'^{2}_t}\tilde\Xi=\Delta_\Phi\tilde\Xi-k_m^{2}\tilde\Xi$, which is $\left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0$.
+
+**Why there is no second writing of the element.** The parent's Schrödinger article has two writings of one equation, with $\tilde H_\Psi$ and with $-i\tilde H_\Psi$, and both are linear in the field. The Klein–Gordon operator admits no such pair, and the parent says why in §*The Lanczos Family and the Spin-0 Member*: a first-order operator $\tilde\nabla_\Phi+\tilde F$ squares to $\Box_\Phi+(\tilde F,\tilde F)+2i(\tilde F,\vec\nabla_\Phi)$, and the cross term cannot be removed while the mass is kept. The first-order readings that do exist are two and neither is a rewriting of one element: the conjugate pair above, which doubles the state, and the spinor square root of the Dirac article, which doubles the carrier. The two doublings are different in kind. The pair keeps one element per coefficient and adds its rate, so the carrier is unchanged and the state space doubles. The root keeps one datum per coefficient and enlarges the carrier to a minimal left ideal and its conjugate, so the number of data per coefficient is unchanged. A second writing of the same element would be neither. The variational principle displays the first of them, since $\Pi_\Xi$ is a second element and the pair $(\tilde\Xi,\Pi_\Xi)$ is the pair the equation needs.
+
+**The closed form.** For a constant $k_m$ and a constant coefficient the pair propagates in closed form. On a plane-wave component of wave vector $\vec k_\Phi$ the pair obeys $\partial_{r'_t}\tilde\Xi=\Pi_\Xi$ and $\partial_{r'_t}\Pi_\Xi=-(\kappa^{2}+k_m^{2})\tilde\Xi$ with $\kappa^{2}=k_\Phi^{2}$, so with $k'_t=\sqrt{\kappa^{2}+k_m^{2}}$,
+
+$$
+\begin{pmatrix}\tilde\Xi(r'_t)\\ \Pi_\Xi(r'_t)\end{pmatrix}
+=
+\begin{pmatrix}\cos(k'_t r'_t) & \sin(k'_t r'_t)/k'_t\\ -k'_t\sin(k'_t r'_t) & \cos(k'_t r'_t)\end{pmatrix}
+\begin{pmatrix}\tilde\Xi(0)\\ \Pi_\Xi(0)\end{pmatrix},
+$$
+
+which is the parent's two frequency branches $e^{\pm i k'_t r'_t}$ recombined into a real block. The single element alone has no such closed form, and that is the precise sense in which the second-order equation needs the doubling.
+
+## Verification
+
+**The variation.** The difference quotient of the action was compared with $2\,\mathrm{Re}\int\mathrm{Sc}[\delta\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ on a periodic grid with a random biquaternion field and a random complex variation, and the two agreed to ten significant figures. The step is also exact on paper: the kinetic halves are conjugates and the boundary term of the integration by parts vanishes for a variation of compact support.
+
+**The reality of the action.** The imaginary part of $S$ vanished identically on every field tried, which is the numerical form of the statement that both terms are Hermitian and that $\mathrm{Sc}$ of a Hermitian element is real.
+
+**The current.** The identity $\sum_\mu\partial_\mu j_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ was checked off shell on a grid with four modes, where the two sides agreed to $10^{-13}$ at every point, and on an exact solution, where the divergence was zero to machine precision. The ratio $j_{r'_t}/\rho_{\mathrm{chg}}=-2k_m$ was checked on the mode $\omega=2$, $k_x=1$, $k_m=\sqrt3$ in one length unit, where it came out $-2\sqrt3$ and the derivation of §*The Noether Currents* explains why.
+
+**The stress.** On the exact plane wave the combination $\partial_{r'_t}T^{00}+\sum_\eta\partial_{r_\eta}T^{0\eta}$ vanished at the level of the finite-difference truncation, which is the numerical form of the divergence identity above.
+
+**The signs.** A cosine of each sign of $\omega$ was substituted into $\Box_\Phi\tilde\Xi-k_m^{2}\tilde\Xi$ on the case $\omega=2$, $k_x=1$, $k_m=\sqrt3$, and both branches solved the equation, which is the check that the coefficient $(1,-1,1)$ of §*The Action in Element Form* is right and the wrong choices of sign are wrong.

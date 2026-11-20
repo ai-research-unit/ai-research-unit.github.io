@@ -36,11 +36,9 @@ the Euler–Lagrange equation is the Proca equation. The normalization is fixed 
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the sectors are $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{B}_\Psi=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; ${}^{*}$ is coefficient conjugation composed with the quaternion conjugation $\natural$; $\mathrm{Sc}$ is the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ is the quaternionic norm, real on $\mathbb{B}_\Phi$; the potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $\vec A$ and real $a'_t$, so that $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$; the derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ with $c=1/\sqrt{\epsilon\mu}$. The mass is the wave number $k_m=mc/\hbar$.
 
-**Declared omissions.** The reality of the action is settled inside *The Action in Element Form*, where the mass bilinear is shown real and the field bilinear is chosen, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The massless setting is stated only as the limit the parent takes, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian fixed subspace, where the potentials live; $\mathbb{B}_V$ is the pure-vector subspace, where the field strength lives; $\langle X\rangle_\natural=X^{\natural}X$ is the invariant length of an element, real whenever $X$ is; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot)$ is the real pairing the action uses. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=ir'_t$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ carries the metric signs. The measure is $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$, the units are those of the parent, and the mass is $k_m=mc/\hbar$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian fixed subspace, where the potentials live; $\mathbb{B}_V$ is the pure-vector subspace, where the field strength lives; $\langle X\rangle_\natural=X^{\natural}X$ is the invariant length of an element, real whenever $X$ is; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot)$ is the real pairing the action uses. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=ir'_t$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ carries the metric signs. The measure is $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$, the units are those of the parent, and the mass is $k_m=mc/\hbar$.
 
 ## The Action in Element Form
 
@@ -172,20 +170,6 @@ symmetric term by term: the improvement was needed to symmetrise the canonical f
 
 **The spin part.** The angular momentum current is $M_{\mu\nu\lambda}=R_\nu T_{\mu\lambda}-R_\lambda T_{\mu\nu}+\Sigma_{\mu\nu\lambda}$ with $\Sigma$ the vector-index part. That $\Sigma$ is the spin-one content of the field, and it is not a separate current with its own conservation law: the orbital and spin parts are separately conserved only after the improvement, and the total is the Noether current. The polar article's frame bracket is the transport of the same object read as a direction.
 
-## Aside: Exact Solutions and What They Show
-
-**Plane waves.** With $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ and $\theta_{\mathrm{pwp}}=k'_t r'_t-\vec k_\Phi\cdot\vec r$, the equation requires the dispersion relation $k'^2_t=\vec k_\Phi^2+k_m^2$ and the Lorenz condition requires the amplitude relation $a'_{t,0}=\vec k_\Phi\cdot\vec A_0/k'_t$. Three amplitude directions survive at each wavevector: two transverse and one longitudinal. These are the parent's modes, and the action adds only that they extremize it.
-
-**A toroidal family.** Because the action implies the Lorenz condition and hence the componentwise Klein–Gordon equation, solutions can be built from scalar ones. Take a real scalar $\psi$ with $(\Box_\Phi-k_m^2)\psi=0$ and set
-
-$$
-\vec A=\vec\nabla_\Phi\psi\times\vec r ,\qquad a'_t=0 .
-$$
-
-Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nabla\psi)-\vec\nabla_\Phi\psi\cdot(\vec\nabla_\Phi\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\vec\nabla_\Phi(\Box_\Phi\psi)\times\vec r=k_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(k'_t r'_t)$ and $\kappa^2=k'^2_t-k_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
-
-**No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $k_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.
-
 ## What the Principle Adds and What It Relabels
 
 **Adds.**
@@ -254,3 +238,17 @@ The divergence of the equation forces the Lorenz condition, and the variational 
 - Lev Landau and Evgeny Lifshitz, *The Classical Theory of Fields* (Pergamon, 1975), for the Proca Lagrangian, the stress tensor and the Lorenz condition.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the massive vector field and the counting of its degrees of freedom.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the field strength as a bivector and the duality structure of the action.
+
+## Aside: Exact Solutions and What They Show
+
+**Plane waves.** With $\tilde A_\Phi=\tilde A_0\cos\theta_{\mathrm{pwp}}$ and $\theta_{\mathrm{pwp}}=k'_t r'_t-\vec k_\Phi\cdot\vec r$, the equation requires the dispersion relation $k'^2_t=\vec k_\Phi^2+k_m^2$ and the Lorenz condition requires the amplitude relation $a'_{t,0}=\vec k_\Phi\cdot\vec A_0/k'_t$. Three amplitude directions survive at each wavevector: two transverse and one longitudinal. These are the parent's modes, and the action adds only that they extremize it.
+
+**A toroidal family.** Because the action implies the Lorenz condition and hence the componentwise Klein–Gordon equation, solutions can be built from scalar ones. Take a real scalar $\psi$ with $(\Box_\Phi-k_m^2)\psi=0$ and set
+
+$$
+\vec A=\vec\nabla_\Phi\psi\times\vec r ,\qquad a'_t=0 .
+$$
+
+Then $\vec\nabla_\Phi\cdot\vec A=\vec r\cdot(\vec\nabla_\Phi\times\nabla\psi)-\vec\nabla_\Phi\psi\cdot(\vec\nabla_\Phi\times\vec r)=0$, so the Lorenz condition holds identically, and $\Box_\Phi\vec A=\vec\nabla_\Phi(\Box_\Phi\psi)\times\vec r=k_m^2\vec A$ because the curl of a gradient vanishes and $\vec r$ is static. This is an exact non-plane solution: with $\psi=j_0(\kappa r)\cos(k'_t r'_t)$ and $\kappa^2=k'^2_t-k_m^2$ it is a spherical, toroidal-vector field. The identity is verified by finite differences at the level of $10^{-7}$ on a smooth configuration, which is the accuracy of the difference scheme. The family is the corpus's first exact Proca solution that is not a superposition of plane waves.
+
+**No pure-gradient solution.** Take $\tilde A_\Phi=(\tilde\nabla_\Phi)\Gamma$ for a real scalar $\Gamma$. Then $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}(\tilde\nabla_\Phi)\Gamma)=+\Box_\Phi\Gamma$ — the composition of the gradient with its conjugate is the d'Alembertian with a plus sign, since the two time derivatives each carry an $i$ and the two spatial ones do not — so the Lorenz condition forces $\Box_\Phi\Gamma=0$; the equation then forces $k_m^2(\tilde\nabla_\Phi)\Gamma=0$, that is, $\Gamma$ constant and the field zero. So the massive theory admits no non-trivial pure-gradient solution. This is the variational form of "there is no gauge freedom": in the massless theory the pure gradients are exactly the gauge orbit, and here the orbit has collapsed to a point. The statement is exact and needs no approximation.

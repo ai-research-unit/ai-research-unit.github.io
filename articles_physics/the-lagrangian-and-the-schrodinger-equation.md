@@ -26,11 +26,9 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Schrödinger equation in its element form.
 
-**Declared omissions.** The reality of the action is examined inside *The Two Writings from the Action* and inside the structural consequence, so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the depth already made with the parent is attempted, so slot 13 is omitted.
-
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i\hbar\,c\,\partial/\partial r'_t=i\hbar\,\partial/\partial t'$ is exact and is not repeated.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace, the observables, and $\mathbb{B}_{\Phi}$ the anti-Hermitian one, the generators. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The variable is $r'_t=c\,t'$ throughout; where a formula is more familiar in $t'$, the substitution $\mathrm{d}r'_t=c\,\mathrm{d}t'$ and $i\hbar\,c\,\partial/\partial r'_t=i\hbar\,\partial/\partial t'$ is exact and is not repeated.
 
 ## The Action in Element Form
 
@@ -42,7 +40,7 @@ $$
 
 The choice of variable is the parent's, and the constant multiplying the derivative is $i\hbar\,c$. Four properties must be checked, and each is a line.
 
-### The kinetic term is Hermitian
+**The kinetic term is Hermitian.**
 
 Write the kinetic density as
 
@@ -59,7 +57,7 @@ $$
 
 so $T$ is Hermitian. The scalar part of a Hermitian element is real, because $\mathrm{Sc}(X)^{*}=\mathrm{Sc}(X^{*})=\mathrm{Sc}(X)$ when $X^{*}=X$. Hence $\mathrm{Sc}(T)$ is real.
 
-### The potential term is Hermitian
+**The potential term is Hermitian.**
 
 For $\tilde H_\Psi^{*}=\tilde H_\Psi$,
 
@@ -69,11 +67,11 @@ $$
 
 so the potential density is Hermitian and its scalar part is real. The hypothesis is used here and nowhere else: a non-Hermitian $\tilde H_\Psi$ would make the potential term non-real, and the action would not be a real functional.
 
-### The action is real
+**The action is real.**
 
 Both densities are Hermitian and the scalar part of a Hermitian element is real, so the integrand is a sum of two real numbers. The action is real.
 
-### The pairing is the Hermitian form
+**The pairing is the Hermitian form.**
 
 The bilinear in the action is the Hermitian form
 
@@ -89,7 +87,7 @@ $$
 
 and an action that reproduces the equation must be built on the form for which the symbol is Hermitian. The companion article uses the same pairing throughout, and the two articles' currents are therefore comparable term by term.
 
-### The variation
+**The variation.**
 
 Treat $\tilde\Xi$ and $\tilde\Xi^{*}$ as independent over $\mathbb{C}$, which is the standard device for a first-order action. Vary $\tilde\Xi^{*}$ and hold $\tilde\Xi$ fixed. The variation of the kinetic term is
 
@@ -172,6 +170,16 @@ and $i\vec e_y$ is Hermitian, so the generator $-\tilde Z\tilde H_\Psi/(\hbar\,c
 **Unitarity is the anti-Hermiticity read back.** The flow of the equation is $\tilde Q(r'_t)=\exp\bigl(-i\tilde H_\Psi r'_t/(\hbar\,c)\bigr)=\exp(-i\theta_{\mathrm{evo}})(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi)$, and its $*$-unitarity is exactly the anti-Hermiticity of $-i\tilde H_\Psi/(\hbar\,c)$. That anti-Hermiticity is the centrality computation above, so the conservation of the norm is the variational principle's reality statement seen from the flow side. The two are one fact about $i$.
 
 The angle is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar c)$, the scalar part of the generator times the interval over $\hbar$; the vector part of the generator contributes the separate rotor angle $\theta=|\vec h_\Psi|\,r'_t/(\hbar c)$. The generator is anti-Hermitian, not Hermitian, and the anti-Hermiticity is the whole content: a purely imaginary scalar part makes the phase a real angle, and a real vector part makes the rotor a unit rotor.
+
+## The Constraints the Action Imposes: Unitarity Is a Condition on the Coefficients
+
+**The density carries one time derivative, so the momentum is the field's own adjoint.** The kinetic term is $\tfrac{i\hbar c}{2}\bigl(\tilde\Xi^{*}\partial_{r'_t}\tilde\Xi-(\partial_{r'_t}\tilde\Xi^{*})\tilde\Xi\bigr)$, and differentiating with respect to the rate gives $\pi=i\hbar c\,\tilde\Xi^{\natural}$. The map cannot be inverted for a rate, so the action imposes a primary constraint, and the bracket between the constraint and its partner does not vanish.
+
+**What the action imposes is a condition on the display and not on the data.** Reality forces the $i$ onto the derivative, and the generator's anti-Hermiticity follows from that placement rather than from a restriction on the states. A reader who takes unitarity as a condition on admissible configurations has the implication backwards: **the coefficients are constrained and the solution space is not**.
+
+**The counterexample is the test of that reading.** Replacing $i$ by a non-central root of $-e_t$ produces a flow that is not unitary on the same states, which shows the constraint falls on the coefficient. That is why the structural consequence can call reality the weakest of its four requirements: it constrains the writing of the density and leaves the Hamiltonian's spectrum alone.
+
+**What the section does not claim.** It does not build the Dirac bracket, and it does not claim the first-order pair is the whole of the canonical structure. The claim is narrower: one primary constraint per part, second class, arising from the first order and from no gauge symmetry.
 
 ## The Structural Consequence: Reality Is the Weakest of Four
 

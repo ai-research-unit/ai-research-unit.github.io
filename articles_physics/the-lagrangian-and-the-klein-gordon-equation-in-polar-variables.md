@@ -1,7 +1,5 @@
 # __The Lagrangian and the Klein–Gordon Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 This article substitutes the complete polar decomposition into the Klein–Gordon action and reads the result. The word is the one of *The Complete Polar Decomposition of an N-Regular Biquaternion*, in the exponential form of *The Complete Polar Decomposition of an N-Regular Biquaternion*:
@@ -32,7 +30,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the element-form companion: the quaternionic pairing gives $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ for complex coefficients, which is not real, and it is not used. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ with $r'_t=c\,t'$, the four-position is $\tilde R_\Phi=i r'_t e_t+\vec r$, and $k_m=mc/\hbar$. The action is a functional of the eight parameters over four-dimensional space, and the material time is $r'_t=c\,t'$ throughout, so every temporal derivative below is a derivative in a length. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
+**The conventions are restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the element-form companion: the quaternionic pairing gives $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ for complex coefficients, which is not real, and it is not used. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ with $r'_t=c\,t'$, the four-position is $\tilde R_\Phi=i r'_t e_t+\vec r$, and $k_m=mc/\hbar$. The action is a functional of the eight parameters over four-dimensional space, and the material time is $r'_t=c\,t'$ throughout, so every temporal derivative below is a derivative in a length. Every symbol is defined where it first appears, and §*Summary of Notation* collects the letters with their domains.
 
 ## The Action in Polar Variables
 
@@ -44,7 +42,7 @@ $$
 
 The substitution is a change of variables in this functional. The subsections below compute the two terms, record where the rapidity sits in each of them, and assemble the action.
 
-### The bracket form of the kinetic term
+**The bracket form of the kinetic term.**
 
 Every derivative of the word factors through one object. With $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$,
 
@@ -84,7 +82,7 @@ $$
 
 the scalar part of the frame density being what multiplies the squares and the Hermitian part what multiplies the cross terms. The factor $\cosh\theta_{\mathrm{rpd}}$ is the density in units of $\varrho^{2}$, and that is the only place the rapidity's magnitude enters the kinematics.
 
-### The parameter form: the metric
+**The parameter form: the metric.**
 
 Carrying out the product gives the kinetic Lagrangian of one direction,
 
@@ -117,13 +115,13 @@ so the amplitude and the rapidity mix without changing the volume, and the block
 
 **The check.** Six random parameter sets with random axes, all four angles varying, were compared against the boxed formula: the two agree to a relative $4\times10^{-10}$, which is the truncation of the difference quotient. Each term was also isolated separately: with only the amplitude, only the rapidity, only the phase or only the rotor varying, the value is $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ times the square of that rate, and the two cross terms appear only when both of their parameters vary.
 
-### Where the rapidity goes
+**Where the rapidity goes.**
 
 The Schrödinger companion computes a kinetic term that is linear in one velocity, $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\tfrac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$, and the factor $\cosh\theta_{\mathrm{rpd}}$ appears there multiplying the phase rate alone. Here the same factor multiplies every square, and the sinh multiplies two cross terms instead of one.
 
 The difference is the order of the action. In a first-order action the kinetic term is $\mathrm{Sc}(i\tilde\Xi^{*}\partial\tilde\Xi)$, one bracket and not two, so the only thing the boost can do is weight that one bracket: the cosh is a coefficient of a velocity. In a second-order action the kinetic term is $\mathrm{Sc}((\partial\tilde\Xi)^{*}\partial\tilde\Xi)$, a product of two brackets, so the boost's Hermitian part can multiply either of them and the same cosh becomes a metric entry. The function of the rapidity is the same function and comes from the same place, the frame density $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; it is the power of the velocity that differs.
 
-### The potential term
+**The potential term.**
 
 The potential term is $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$ with $\tilde M\in\mathbb{B}_{\Psi}$ Hermitian, and for $\tilde M=k_m^{2}e_t$ it is $k_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=k_m^{2}\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. For a general Hermitian coefficient the rotor drops out and the rapidity does not,
 
@@ -139,7 +137,7 @@ where the rotor cancels by the invariance of $\mathrm{Sc}$ under conjugation and
 
 **A remark on signs.** The rapidity term in $V$ is a $\cosh$, so a coefficient with a positive $h_t$ raises the potential energy of a boosted configuration without bound. That is the statement that a boost costs energy in a massive theory, and it is the one place in the polar form where the boost's non-compactness is a physical effect rather than a coordinate choice.
 
-### The action, assembled
+**The action, assembled.**
 
 $$
 \boxed{\;
@@ -155,6 +153,20 @@ S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl[(\partial_{r'_t}\varrho)^{2}-\lv
 $$
 
 which is Madelung's relativistic action for the pair $(\varrho,S_{\tilde\Xi})$ with $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The signs are the Minkowski ones, so the amplitude equation of the next section carries the d'Alembertian and not the Laplacian.
+
+**The pairing. Inherited, and the substitution cannot disturb it.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and carries $\mathrm{Sc}\bigl[(\partial\tilde\Xi)^{*}\partial\tilde\Xi-k_m^{2}\tilde\Xi^{*}\tilde\Xi\bigr]$. The chart writes the two real fields $\varrho$ and $\theta_{\mathrm{pha}}$, and the pair becomes a sum of two squares with the weights the metric fixes:
+
+$$
+\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,(\mathcal A_\mu\mathcal A_\mu^{*})\bigr]=\varrho^{2}\bigl[(\partial_\mu\ln\varrho)^{2}+(\partial_\mu\theta_{\mathrm{pha}})^{2}\bigr],
+$$
+
+which is what the spin-zero fluid article prints as its starting point. Both squares are real, so the density is real in the chart for the same reason it was real in the element form: the scalar part of a product of conjugates is real.
+
+**The type of the coefficient. Two coefficients, and both are fixed by the metric and not chosen.** In the element form the type question is asked of the mass and of the operator. In the chart the kinetic term's coefficients are $\pm1$ times $\varrho^{2}$, read off the sign weights $\varepsilon_\mu$, so no coefficient there is free to be the wrong type. The mass enters as $-k_m^{2}\varrho^{2}$, with $k_m^{2}$ real, which is the parent's statement in the chart's variables.
+
+**The selection rule. Declared, and argued once elsewhere.** The rule needs a potential general enough to hold an inadmissible sector. The free scalar's potential is the mass term alone, so the rule is a statement about the potentials the parent's action admits at all, and the free Klein–Gordon momentum article is where it is argued, with the anti-Hermitian sector excluded by a complex frequency $\omega^{2}/c^{2}=k_\Phi^{2}+i\lambda$. A chart cannot admit a potential the element form did not have.
+
+**What reality does not buy. Reality in the chart is not reality of the frequency.** Every density above is real, and the parent's example of a real action with a complex frequency is exactly the case this section leaves standing. What the chart adds is visibility: the two squares show that the kinetic term's reality is a statement about real fields, and it shows nothing about the sign of $\omega^{2}$.
 
 ## The Variation: The Euler–Lagrange Equations
 
@@ -204,9 +216,7 @@ For the eight parameters the statement is one line and it is exact.
 
 The equivalence holds on the $N$-regular set, and only there. At $\varrho=0$ the word has no value, the parameters are not coordinates, and the parameter equations are not defined; the Klein–Gordon equation itself is defined and regular there, and its solutions cross the nodal set without incident. So the polar action is a description of the field off its nodal set, and the element-form action of the companion is the description of the field everywhere. The two agree wherever both are defined. This is the same boundary the parent records, and the variational principle inherits it unchanged: a parametrisation cannot extend a functional past the points where the parametrisation stops.
 
-## The Parameter Basis and the Four Brackets
-
-### Two bases of one tangent space
+**The parameter basis and the four brackets.** ### Two bases of one tangent space
 
 At a point of the $N$-regular set the tangent space of the field values is eight-dimensional, and it has two natural bases.
 
@@ -248,6 +258,15 @@ so the Jacobian is diagonal and the metric is $(1,\varrho^{2})$. The two paramet
 
 **The parameter form is the Jacobian image of it.** It is the form in which the variational principle is stated over eight real functions with no auxiliary object, and it is the form in which the count is right: eight functions, eight equations, no constraint. But it is not simpler, and the parameter equations are not four equations plus four conditions; they are eight equations whose content is the brackets'.
 
+## The Constraints the Action Imposes: There Are None in This Chart Either
+
+**The count.** Two functions, the scale $\varrho$ and the phase $\theta_{\mathrm{pha}}$, two second-order equations, and momenta that are the velocities. The substitution is a bijection on the branch $\varrho>0$, so the map from rates to momenta is invertible and there is no primary constraint.
+
+**The frozen frame is a restriction on the description.** Holding the six frame parameters fixed narrows which configurations the chart covers; a constraint is a relation the variation cannot remove. The variation here removes nothing, so the chart inherits the element form's empty constraint structure.
+
+**The frame density imposes no condition.** It weights the kinetic term and carries $\cosh\theta_{\mathrm{rpd}}$, which is bounded below by one, so it vanishes nowhere on the branch the chart covers. **A factor that never vanishes is not a constraint**, and reading it as one would be reading the metric as a relation among the data.
+
+**What the chart costs, stated as a count.** The general element's equations are not recovered from the central ones, and the central article says so in its own terms. That is a loss of variables and not the appearance of a constraint, and the count stays two and two at every rung.
 
 ## The Structural Consequence: The Chart Is a Change of Variables, and That Is the Whole Claim
 

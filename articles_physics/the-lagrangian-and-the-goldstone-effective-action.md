@@ -28,11 +28,9 @@ the stationarity condition is the parent's equation, and every term in the integ
 
 **What is not new.** The theorem, the coset construction, the derivative expansion and the soft limit are standard. What the corpus contributes is the biquaternionic writing of the phase's kinetic term and the identification of the decay constant as the normalization of the canonical field.
 
-**Declared omissions.** Slots 8, 10 and 13 are omitted: the second variation of the effective action is the stability of the constant field, which is immediate; there is no non-relativistic reading of a Goldstone mode; and the effective action has one formulation, so a comparison section would not carry a corpus claim. Slot 11 is omitted: the truncation's error is the sigma-model article's derivative expansion.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the Goldstone field is the phase of a complex element, and its kinetic term is the corpus's gradient norm.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the Goldstone field is the phase of a complex element, and its kinetic term is the corpus's gradient norm.
 
 **The field.** $\vartheta_{\mathrm{fld}}$ is the canonically normalized phase, $\vartheta_{\mathrm{fld}}=\sqrt2\,\mathrm{Im}\,\ln\tilde\Xi$ in the abelian case, so that its kinetic term carries no factor of $f$. The dimensionless phase is $\vartheta_{\mathrm{fld}}/f$, and the two normalizations differ by the decay constant.
 
@@ -58,6 +56,22 @@ Each term is a power of the same invariant $X=\sum_\mu\partial_\mu\vartheta_{\ma
 
 **The two normalizations, and why both are used.** In the canonical normalization the kinetic term is $\tfrac12(\partial\vartheta)^2$ and the interaction is $c_4(\partial\vartheta)^4/f^4$; in the dimensionless normalization the kinetic term is $\tfrac{f^2}{2}(\partial\vartheta)^2$ and the interaction is $c_4(\partial\vartheta)^4$. The two differ by $\vartheta\to f\vartheta$, and each makes a different fact look simple: the first makes the canonical field obvious, the second makes the decay constant's role as a normalization obvious.
 
+**The pairing. The pairing is the real gradient norm, and it is real because the phase is real.** $\sum_\mu\partial_\mu\vartheta_{\mathrm{fld}}\partial_\mu\vartheta_{\mathrm{fld}}$ is a real number with the corpus's sign rule, and every power of it is real. No conjugation is needed and no imaginary part arises, because the field is a phase and not an element with a phase.
+
+**Why the complex writing gives the same answer.** If the field is written as $\tilde\Xi=v\,e^{i\vartheta/v}$-type, the kinetic term $|D\tilde\Xi|^2$ contains the phase's gradient and the radial field's, and integrating out the radial field leaves exactly the phase's gradient term. The two writings agree because the modulus is fixed by the constraint and only the phase fluctuates.
+
+**The type of the coefficient. One scale and a tower of dimensionless numbers.** $f$ has dimension of mass and is the only dimensionful quantity; $c_4,c_6,\dots$ are dimensionless and of order one. The expansion parameter is $p/(4\pi f)$, and the effective action is predictive below that scale.
+
+**Why the coefficients are not free in principle and are free in practice.** They are computed from the radial sector by matching, and that computation is the parent's subject. In the low-energy theory they are parameters, and the effective action's content is that their number is infinite while their effect is ordered.
+
+**The selection rule. The selection rule is the shift symmetry, and it is the only thing that selects.** Any functional invariant under a constant shift is a series in derivatives; any term that is not so invariant is excluded. The selection is exact and it is what makes the massless field massless.
+
+**What reality does not buy. Reality does not buy a mass, a coupling, or a scale.** Three things the reality of the action does not supply:
+
+- *No mass, even radiatively.* The shift symmetry protects it; that is the theorem.
+- *No fixed $f$.* The decay constant is measured, and the action accepts it.
+- *No fixed $c_4$.* The coefficient is a matching datum, not a prediction.
+
 ## The Variation: The Free Equation, Corrected
 
 **The leading variation.** For the two-derivative term alone,
@@ -75,32 +89,6 @@ which is the massless wave equation. The field propagates at the speed of light,
 **Why the correction's order matters for the soft limit.** The interaction's vertex carries four derivatives, so a process with one extra Goldstone is suppressed by $k^2/f^2$ at the amplitude level rather than by $k/f$. That suppression is stronger than the minimal one a Goldstone could have, and it follows from the interaction term's derivative count.
 
 **The check on the overall sign.** For a plane wave $\vartheta_{\mathrm{fld}}=\vartheta_0\cos(k\cdot r)$ the energy density is positive and proportional to $k^2\vartheta_0^2/2$, and the pressure equals the energy density, which is the statement that the two-derivative action is conformally invariant. The vanishing trace is the check that the sign and the normalization are right.
-
-## The Reality of the Action
-
-### The Pairing
-
-**The pairing is the real gradient norm, and it is real because the phase is real.** $\sum_\mu\partial_\mu\vartheta_{\mathrm{fld}}\partial_\mu\vartheta_{\mathrm{fld}}$ is a real number with the corpus's sign rule, and every power of it is real. No conjugation is needed and no imaginary part arises, because the field is a phase and not an element with a phase.
-
-**Why the complex writing gives the same answer.** If the field is written as $\tilde\Xi=v\,e^{i\vartheta/v}$-type, the kinetic term $|D\tilde\Xi|^2$ contains the phase's gradient and the radial field's, and integrating out the radial field leaves exactly the phase's gradient term. The two writings agree because the modulus is fixed by the constraint and only the phase fluctuates.
-
-### The Type of the Coefficient
-
-**One scale and a tower of dimensionless numbers.** $f$ has dimension of mass and is the only dimensionful quantity; $c_4,c_6,\dots$ are dimensionless and of order one. The expansion parameter is $p/(4\pi f)$, and the effective action is predictive below that scale.
-
-**Why the coefficients are not free in principle and are free in practice.** They are computed from the radial sector by matching, and that computation is the parent's subject. In the low-energy theory they are parameters, and the effective action's content is that their number is infinite while their effect is ordered.
-
-### The Selection Rule
-
-**The selection rule is the shift symmetry, and it is the only thing that selects.** Any functional invariant under a constant shift is a series in derivatives; any term that is not so invariant is excluded. The selection is exact and it is what makes the massless field massless.
-
-### What Reality Does Not Buy
-
-**Reality does not buy a mass, a coupling, or a scale.** Three things the reality of the action does not supply:
-
-- *No mass, even radiatively.* The shift symmetry protects it; that is the theorem.
-- *No fixed $f$.* The decay constant is measured, and the action accepts it.
-- *No fixed $c_4$.* The coefficient is a matching datum, not a prediction.
 
 ## The Constraints the Action Imposes: A Shift, Not a Constraint
 

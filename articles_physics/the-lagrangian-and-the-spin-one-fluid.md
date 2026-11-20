@@ -1,7 +1,5 @@
 # __The Lagrangian and the Spin-One Fluid__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **At this rung the fluid's variables are the field's own, and the action's mass term does double work.** The Proca field is $A_\mu=r\,u_\mu$: a magnitude and a direction, which are a density and a velocity. So the fluid is not a reading of a polar decomposition imposed from outside — it is the field's own parameterisation, and the action written in it is the Proca action and nothing else.
@@ -18,7 +16,7 @@
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. **No index is raised**: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.
+**The conventions are restated here so that every sign below is checkable from this page alone.** $A_\mu=r\,u_\mu$ with $r>0$ and $\sum_\mu\varepsilon_\mu u_\mu u_\mu=-1$; the temporal slot carries the $i$, so $\sum_\mu\varepsilon_\mu A_\mu A_\mu=-r^{2}$. **No index is raised**: a contraction names its summed index, weighted by $\varepsilon_\mu$ wherever a value is displayed. $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $k_m=mc/\hbar$; $\mathcal L=-\frac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}-\frac{k_m^{2}}{2}\sum_\mu\varepsilon_\mu A_\mu A_\mu$ in the corpus's signs, whose Euler–Lagrange equation is $\sum_\nu\partial_\nu F_{\nu\mu}=k_m^{2}A_\mu$. The transverse derivative is $\nabla_\mu=\sum_\nu\mathsf{P}_{\mu\nu}\partial_\nu$ with $\mathsf{P}_{\mu\nu}=g_{\mu\nu}+u_\mu u_\nu$.
 
 ## The Action in the Field's Own Variables
 
@@ -59,6 +57,16 @@ $$
 and the multiplier enters the direction's equation as $\lambda u_\mu$, which is a force along the flow. **It plays the part a pressure plays in an incompressible fluid**, and the analogy is exact in one respect: it is the constraint's force and not the fluid's own.
 
 **The contrast with the spin article is worth recording.** There the parameterisation removed the need for a multiplier and the constraints appeared as vanishing momenta; here the parameterisation cannot remove it and the constraints appear as a projection. **The difference is that a unit rotor has three parameters and a unit vector has two plus one constraint**: the word's frame is a group element, and a direction is a coset.
+
+## The Constraints the Action Imposes: The Unit Condition Is the One Constraint
+
+**The word's parameterisation postpones the unit condition rather than removing it.** With $A=ru$ the field is split into a magnitude and a direction, and the direction is described by parameters while the condition $u\cdot u=1$ remains a relation among them that the action does not supply. A multiplier is therefore needed, and this is the one place in the layer where it genuinely is.
+
+**The constraint is first class and it is the only one.** The multiplier's equation enforces the condition, the condition is preserved by the flow because the density is invariant under the reparameterisation of the direction, and no second condition follows. The count of degrees is the naive count minus the constraint's, which is why three polarisations survive where a count of the components would give four.
+
+**The mass term adds no constraint.** It is a function of the magnitude and the frame and carries no derivative of an independent variable, so it changes the equations and leaves the count alone. **That is what the structural consequence means when it says the mass term does two things**: it fixes the direction's weight in the action and it does not restrict the data.
+
+**The contrast with the spin article is why the section exists.** There the parameterisation removes the need for a multiplier and the constraint is carried by the chart itself. Here it does not, and the difference is a fact about which chart is used rather than about the field.
 
 ## The Structural Consequence: The Mass Term Does Two Things
 

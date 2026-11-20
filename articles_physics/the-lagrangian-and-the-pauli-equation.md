@@ -1,33 +1,16 @@
 # __The Lagrangian and the Pauli Equation__
-
 ## Introduction
-
 **The question.** The Dirac action is the corpus's relativistic spin-$\tfrac12$ article. The Schrödinger action is its non-relativistic one. Between them sits the Pauli action, the non-relativistic theory of a spin-$\tfrac12$ particle with a magnetic moment, and the parent — *The Non-Relativistic Limit and the Pauli Equation* — states the equation. This article derives the action from the Dirac one and states what the derivation fixes.
 
 **The answer in three sentences.** Expand the Dirac field about its rest phase, $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$, keep terms to first order in $1/m$ and eliminate the small component; what remains is the Schrödinger action with one addition, the term $(q/m)\vec S\cdot\vec B$ with $\vec S=\frac{\hbar}{2}\vec n_{\mathrm{rot}}$. The coefficient is not adjustable: it is the ratio of the spin current to the mass, both of which the Dirac kinetic term supplies. So the limit fixes $g=2$ exactly, and an action that treated $g$ as a free parameter would not be the limit of the Dirac action.
 
 **What this article is not.** It is not a derivation of the anomalous moment, which needs the quantised theory; it is not a discussion of the fine structure, which is the next order; and it is not a replacement for the polar companion, which writes the same limit in the chart's variables. It is the element-form limit, with its error term stated.
 
-**Declared omissions.** The reality of the action is inherited from the Dirac action and is not rechecked in a section of its own, so slot 5 is omitted, with its four subsections. The limit's constraints are the parent's and are not restated, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. The open questions are folded into the error section, so slot 14 is omitted.
-
 ## Conventions
-
 **The conventions are the Dirac and Schrödinger parents', and the limit is what makes them meet.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$; the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iq}{\hbar}\tilde A_\Phi$; $k_m=mc/\hbar$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ and the measure $\mathrm{d}^{4}r$.
 
 Two symbols are specific to the limit. The rest phase is $\exp(-ik_m r'_t)$, and the residual field $\tilde\chi$ is defined by $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$; it varies on the slow scale $r'_t$ and its time derivative is of order $1/m$ relative to the mass term. The spin direction is $\vec n_{\mathrm{rot}}$, the rotor's axis, and the spin vector is $\vec S=\frac{\hbar}{2}\vec n_{\mathrm{rot}}$. The magnetic field is the vector part of $\tilde F$, $\vec B=\mu\vec H$.
-
-## The Limit: The Deletion
-
-**The expansion parameter is $1/m$, and the expansion is in the rest frame.** Write $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$ and insert it into the Dirac action. The mass term cancels the rest phase's contribution exactly, and the derivative brings down $-ik_m$ plus $\partial_{r'_t}$, so each occurrence of $\partial_{r'_t}\tilde\Xi$ becomes $\bigl(-ik_m+\partial_{r'_t}\bigr)\tilde\chi$.
-
-**What is kept.** Terms of order $k_m$ — the mass term and the cross term between $-ik_m$ and the slow derivative, which is the Schrödinger kinetic term after the cancellation. Terms of order one — the spatial gradients and the connection's spatial part. Terms of order $1/k_m$ — the second time derivative of $\tilde\chi$, which is the relativistic correction and is dropped.
-
-**What is dropped.** Three things, and each is named because a limit that does not name its error is not a limit. The second time derivative of the residual field: order $1/m$. The negative-energy branch: it is not expanded, it is discarded, and its discarding is the content of "one particle". And the field's own back-reaction on the connection: the limit treats $\tilde A_\Phi$ as fixed, so it is a limit of the matter action at fixed field.
-
-**The bookkeeping, in one line.** The two-component structure survives because the rest phase does not mix the chiral parts: the projection onto the large component is the projection onto the fixed spin direction, and the small component is eliminated by its own equation of motion rather than set to zero. That elimination is what produces the magnetic moment, and it is the next section's computation.
-
 ## The Action in Element Form
-
 **The result, then the two computations that give it.**
 
 $$
@@ -42,8 +25,22 @@ with $\tilde\nabla_\Phi^{\mathrm{mech}}=\tilde\nabla_\Phi-\frac{iq}{\hbar}\vec A
 
 **Why no other term appears.** The elimination is exact to the order kept, so any additional spin-field coupling would have to come from a term the Dirac action does not have. The Dirac action has one derivative and one mass, so it has one moment, and the limit inherits exactly one.
 
-## The Variation
+**The pairing. Inherited, and the deletion is the check.** The parent's Dirac pair is $\mathrm{Sc}(\cdot^{*}\cdot)$, and this article's action keeps the Hermitian time term and the Hermitian gradient term and adds the magnetic term $\tfrac{q}{m}\vec S\cdot\vec B$. All three are real: the first two because they are the parent's, the third because $\vec S$ and $\vec B$ are spatial vectors and their dot product is a real scalar.
 
+**The type of the coefficient. Two charges and a mass, all real.** $q$, $m$, $\hbar$ are real numbers. The magnetic term's coefficient $q/m$ is real, and that is what makes the term's reality automatic rather than an accident of the truncation.
+
+**The selection rule. Declared.** The fields are fixed external fields, not a potential free enough to have an inadmissible sector. What the article selects is the *term* — the magnetic one — and that selection is the truncation's, not the reality's.
+
+**What reality does not buy. Reality does not give $g=2$.** The magnetic term is real for any coefficient; the value $g=2$ is the truncation's consequence and is the article's structural claim. A real action puts no constraint on the gyromagnetic ratio.
+
+**The expansion parameter is $1/m$, and the expansion is in the rest frame.** Write $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$ and insert it into the Dirac action. The mass term cancels the rest phase's contribution exactly, and the derivative brings down $-ik_m$ plus $\partial_{r'_t}$, so each occurrence of $\partial_{r'_t}\tilde\Xi$ becomes $\bigl(-ik_m+\partial_{r'_t}\bigr)\tilde\chi$.
+
+**What is kept.** Terms of order $k_m$ — the mass term and the cross term between $-ik_m$ and the slow derivative, which is the Schrödinger kinetic term after the cancellation. Terms of order one — the spatial gradients and the connection's spatial part. Terms of order $1/k_m$ — the second time derivative of $\tilde\chi$, which is the relativistic correction and is dropped.
+
+**What is dropped.** Three things, and each is named because a limit that does not name its error is not a limit. The second time derivative of the residual field: order $1/m$. The negative-energy branch: it is not expanded, it is discarded, and its discarding is the content of "one particle". And the field's own back-reaction on the connection: the limit treats $\tilde A_\Phi$ as fixed, so it is a limit of the matter action at fixed field.
+
+**The bookkeeping, in one line.** The two-component structure survives because the rest phase does not mix the chiral parts: the projection onto the large component is the projection onto the fixed spin direction, and the small component is eliminated by its own equation of motion rather than set to zero. That elimination is what produces the magnetic moment, and it is the computation of §*The Structural Consequence*.
+## The Variation
 **Two variations, and neither is new.** Varying $\tilde\chi^{*}$ gives the Pauli equation: the Schrödinger equation with the spin term added,
 
 $$
@@ -58,8 +55,17 @@ and varying $\tilde\chi$ gives its conjugate. The two are the parent's equations
 
 **What the variation does not give.** It does not give the connection's equation: the field is fixed in this limit, so the current computed below does not source anything here. The sourcing is the coupled article's subject and the field's own article's equation.
 
-## The Structural Consequence: $g=2$ Is Not a Parameter of the Limit
+## The Constraints the Action Imposes: No Gauss Law, Because the Field Is Fixed
 
+**The connection does not vary in this limit, so no constraint arrives from it.** That is the sharp difference from the electrodynamics article, where the variation of the same coupling produces the identity and the Gauss law. Here the field is a background: its equation is not taken, and the constraint content that would come from it is absent by construction.
+
+**The spinor's first-order form is a constraint pair.** The density carries one time derivative, in $\mathrm{Sc}\bigl[\tilde\chi^{*}(i\hbar\partial_{r'_t}-qA_t)\tilde\chi\bigr]$, so the momentum conjugate to $\tilde\chi$ is its own adjoint multiplied by the coefficient, and the map from rate to momentum cannot be inverted. The bracket between the constraint and its partner does not vanish, so the canonical structure is a Dirac bracket, and the article notes it without building it.
+
+**What the action imposes is a coefficient and not a restriction.** The $g=2$ strength is the ratio the spin term's coefficient bears to the kinetic one, read off the display. **A value is not a constraint**: it changes the equation and leaves the data free, and keeping the two apart is what makes the structural consequence's claim statable at all.
+
+**What the section does not claim.** It does not build the bracket, and it does not assert that the spinor is unconstrained: the first-order pair is a constraint. It claims that no constraint comes from the field in this limit, and that the coefficient the limit fixes is not one.
+
+## The Structural Consequence: $g=2$ Is Not a Parameter of the Limit
 **The claim.** The moment's coefficient is the ratio of the spin current to the mass current, and both come from the same Dirac kinetic term. So the limit cannot have a free $g$: it has $g=2$ or it is not the limit.
 
 **The hand check.** The spin current of the Dirac companion is $\vec p_{\mathrm{spin}}=-\hbar c\,\rho_{\mathrm{chg}}\beta\,\vec n_{\mathrm{rot}}$, whose non-relativistic value is $-\hbar\,\rho_{\mathrm{num}}\vec S/(\hbar/2)\cdot\frac{1}{2}$ up to the chart's factors, and the mass current is $\rho_{\mathrm{num}}\vec v$. Their ratio is fixed by $\hbar/2m$ and by nothing else, because both are bilinears of the same field with the same normalisation. A factor $g$ would be an independent ratio, and no term in the Dirac action supplies one.
@@ -67,9 +73,7 @@ and varying $\tilde\chi$ gives its conjugate. The two are the parent's equations
 **Why this matters.** A non-relativistic action for a spinning particle is usually written with $g$ free, because a non-relativistic theory has no reason to fix it. Here the action is derived, and the derivation fixes it: the same elimination that produces the Schrödinger kinetic term produces the moment, and the two coefficients are tied. That tie is the article's structural result, and it is checkable by reading the two coefficients in the boxed display.
 
 **What it forbids.** It forbids adding a term $\frac{g-2}{2}\frac{q}{m}\vec S\cdot\vec B$ to this action and calling the result a limit: the result would be a different theory, the one the corpus would need for an anomalous moment, and the corpus does not have the quantised theory that generates it.
-
 ## The Noether Currents
-
 **The current is the Schrödinger one, with the mechanical velocity.** The global phase is a symmetry of the limit, and its current is
 
 $$
@@ -87,9 +91,7 @@ the parent's bilinear. The spin term contributes nothing to it: it is a function
 **The stress.** The energy density is the Schrödinger one plus the spin term's contribution, $-\frac{q}{m}\vec S\cdot\vec B$ with the sign of the display. Its positivity is not automatic: the spin term can be negative, and the bound is the parent's bound plus this term. That is the price of a limit: the relativistic energy was bounded below by the mass, and the non-relativistic one is bounded below by the mass only up to the magnetic term.
 
 **The sign of the charge.** The charge's sign is $q$'s, as everywhere. The moment's sign is the product of $q$'s sign and the spin's orientation, and that product is the reason a spin-up electron and a spin-down electron have opposite magnetic moments.
-
-## The Limit: The Truncation and Its Error
-
+## The Limits and the Truncation’s Error
 **The error is of order $1/m$, and it is not uniform.** The dropped second time derivative is $\frac{\hbar^{2}}{2mc^{2}}\partial^{2}_{r'^{2}_{t}}\tilde\chi$ in energy units: small when the kinetic energy is small compared with $mc^{2}$, and not small when it is not. So the limit is a low-energy limit, and its validity is a statement about the state and not about the equation.
 
 **The cost, in three items.** The negative-energy branch is discarded, so the limit cannot describe pair creation. The field is fixed, so the limit cannot describe radiation. And the spin's dynamics is reduced to precession, so the limit cannot describe the spin current's transport. Each is a feature of the Dirac theory that the limit does not carry, and each is the subject of an article the corpus has.
@@ -99,7 +101,6 @@ the parent's bilinear. The spin term contributes nothing to it: it is a function
 **Why the truncation is stated rather than hidden.** Because a reader can check the order: the dropped term is displayed above with its coefficient, and the claim that it is small is the claim that the state's energy is small. A limit whose error is not written is a claim, not a derivation.
 
 ## What the Principle Adds and What It Relabels
-
 **What it adds.** A functional. The equation-level derivation expands the Dirac equation and reads $g=2$ off the result; the reader is asked to accept the coefficient because it came out of the algebra. The action route supplies something the equation route cannot: one object whose variation gives both the Schrödinger kinetic term and the magnetic term at once, so the coefficient is a property of a functional rather than of an expansion. That is the difference between deriving a number and displaying where it comes from.
 
 **What it relabels.** The number is not new, and the article does not claim it is. The Dirac equation already fixes $g=2$, because the spin and the mass current descend from the same kinetic term; the action states that fact as one term instead of as a consequence of the algebra, and a statement of the same fact in a better place is a relabelling. The gain is in checkability: a reader can vary the displayed action and recover the coefficient, where in the equation route the coefficient is recovered by redoing the expansion.
@@ -107,17 +108,13 @@ the parent's bilinear. The spin term contributes nothing to it: it is a function
 **What it does not decide.** The rest frame. The expansion about $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$ is a choice of chart, and the action does not supply it; the limit exists only where that choice is made. The article therefore inherits a frame from its parent and cannot claim that the Pauli theory is frame-free. The same sentence applies to the phase: the elimination of the small component is a gauge choice in the limit and not a consequence of the action.
 
 **What it does not reach.** The next order. Fine structure, the Darwin term and the spin-orbit coupling are all of order $1/m^{2}$, and an action written to order $1/m$ cannot produce them. That is a boundary of this article and not of the method: the same expansion carried one order further would give them, and the corpus's parent article states them from the equation instead.
-
 ## Summary
-
 The Pauli action is the Dirac action in the rest frame, expanded to first order in $1/m$ with the small component eliminated. It is the Schrödinger action plus $\frac{q}{m}\vec S\cdot\vec B$, with $\vec S=\frac{\hbar}{2}\vec n_{\mathrm{rot}}$, and the coefficient is fixed at $g=2$ because the spin and mass currents come from the same kinetic term. The current is the Schrödinger one, the spin precesses without a current of its own, and the error is the dropped second time derivative, of order $1/m$.
 
 $$
 S_{\mathrm{Pauli}}=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\chi^{*}(i\hbar\partial_{r'_t}-qA_t)\tilde\chi\bigr]-\frac{\hbar^{2}}{2m}\mathrm{Sc}\bigl[(\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi)^{*}\tilde\nabla_\Phi^{\mathrm{mech}}\tilde\chi\bigr]+\frac{q}{m}\vec S\cdot\vec B\Bigr\}.
 $$
-
 ## Summary of Notation
-
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
@@ -131,9 +128,7 @@ $$
 | $g$ | Gyromagnetic ratio; the limit fixes $g=2$ |
 | $\rho_{\mathrm{num}},\ \vec j$ | Density and current of the limit |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
-
 ## Further Reading
-
 - *The Non-Relativistic Limit and the Pauli Equation*, the parent, for the equation and the fine-structure terms this action does not carry.
 - *The Lagrangian and the Dirac Equation*, for the action this one limits.
 - *The Lagrangian and the Schrödinger Equation*, for the action the limit lands on.

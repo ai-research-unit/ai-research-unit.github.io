@@ -1,7 +1,5 @@
 # __The Lagrangian and the Proca Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 This article substitutes the polar word of the material sector into the Proca action and reads the result. It is the polar companion of *The Lagrangian and the Proca Equation*, and it depends on three articles: *The Proca Equation in Biquaternionic Polar Variables* for the word and the equation in the chart, that element-form Lagrangian article for the action, and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* for the carrier.
@@ -89,6 +87,14 @@ with the last term read from the branch. The three pieces are the full quadratic
 
 **The parameters.** On the timelike branch the field is $\tilde A_\Phi(q)$ with $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.
 
+**The pairing. Inherited, and the substitution cannot disturb it.** The parent pairs with $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ — the field term's reality is the explicit $\mathrm{Re}$ — and with $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass. The chart writes $\tilde A_\Phi=\varrho\,u$ with $u$ a unit element, and the mass term becomes $\tfrac12k_m^{2}\varrho^{2}$, real. The field term's $\mathrm{Re}$ still does its work: the chart's $\varrho$ is real, so the term is the real part of a product of real multiples of $\tilde F(u)\tilde F(u)$.
+
+**The type of the coefficient. The mass, and the constraint is not a coefficient.** $k_m^{2}$ is real, and the chart shows the mass as a square of the density. The other coefficient the Proca action appears to carry — the one that would fix the Lorenz condition — is not in the action at all; it is a consequence, and *The Constraints the Action Imposes* is where it is read.
+
+**The selection rule. Declared, and there is nothing to select.** The Proca action has no free potential, so no admissible-variation question arises. The condition that removes the scalar polarisation is a constraint from the action's own variation, which is a different object from a selection rule on potentials.
+
+**What reality does not buy. Reality does not remove the constraint and does not sign the energy.** A real Proca density is compatible with any sign of $k_m^{2}$ and with the Lorenz condition or its absence. The constraint belongs to *The Constraints the Action Imposes* and the sign of the four polarisations' energies to *The Noether Currents*.
+
 ## The Variation: The Euler–Lagrange Equations
 
 **The change-of-variables argument.** The word is a bijection from the parameter set onto the branch, and both are open subsets of four-dimensional spaces; it is smooth with smooth inverse away from the coordinate singularity at the pure scalar-potential line. A diffeomorphism carries a variational problem to a variational problem: if $\tilde A_\Phi=\Phi(q)$ and $S=\int\mathcal{L}(\Phi(q),\partial\Phi(q))$, then
@@ -130,6 +136,22 @@ which is the form the polar article verifies numerically. The mass term enters t
 
 **What the variation of the middle piece does.** The term $-\tfrac12S^2$ is the only piece that pairs the scalar projection with itself. Its variation produces the scalar equation that is the Lorenz condition, and the remaining pieces produce the two dynamical equations. In this sense the chart separates the three jobs that the element form performs at once: the curl term carries the propagation, the square carries the constraint, and the mass carries the scale. The separation is a rewriting, but it is a rewriting that names each job.
 
+**The parameter basis and the four brackets.** **One derivative, four types, for the material word.** The polar word of the Proca field has the same four parameter groups as the scalar field's, so its logarithmic derivative has the same four brackets:
+
+$$
+\tilde A_\Phi^{-1}\partial\tilde A_\Phi
+=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
+$$
+
+real scalar, central imaginary, Hermitian and real vector. The brackets are a property of the parameterisation and of the algebra's type decomposition; they are not a feature of any one field.
+
+**Why the Proca action keeps more of them than the scalar action.** The scalar action's bilinear $\tilde\Xi^{*}\tilde\Xi$ is one Hermitian object, so only the matching types survive. The Proca action is built from the square of the conjugate gradient, and **a square pairs the scalar part with the scalar part and the vector part with the vector part while retaining the cross term between them**. The full quadratic form of the conjugate gradient is therefore in the Lagrangian, and the antisymmetric combination it retains is the object whose variation gives the Lorenz condition. The middle piece $-\tfrac12S^{2}$ is that cross term, and it is what the element form's projection removes.
+
+**The branch is not a bracket.** The chart is a diffeomorphism onto one branch at a time, and the two branches -- timelike and spacelike -- differ by the sign of the mass term, $+\tfrac12k_m^{2}\varrho^{2}$ and $-\tfrac12k_m^{2}\varrho^{2}$. **The four brackets are identical on the two branches**; what changes is the algebraic mass term, which carries no derivative and therefore no bracket. This is the reason the bracket analysis of this article is branch-independent and the constraint analysis is not.
+
+**The parameter basis is not the bracket basis.** The eight parameters are coordinates, the four brackets are types, and the Jacobian between them mixes: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis and the brackets are the cleaner form, because each has one type and one partner.
+
+**What the reader should take from the section.** The four brackets are the reason the polar Proca action has the structure it has: a quadratic form in the eight gradients with a frame-built metric, a mass potential, and no multiplier for the unit conditions. **The parameterisation absorbs the unit conditions by construction**, so the only price the chart pays is the cross term -- and the cross term is the constraint.
 ## The Constraints the Action Imposes: The Lorenz Condition in the Chart
 
 **One equation on four parameters.** The chart's form of the condition is
@@ -172,25 +194,6 @@ an outer product of four vectors in three dimensions. Its rank is therefore at m
 The chart's gain is the first row: the boost is parametrized, not constrained, so its unit condition costs nothing, and the count it saves is one, not three. The second row is not a comparison at all — the material sector has no spin direction — and it is there exactly to say that the three multipliers usually quoted for Takabayasi are the price of a spin, not the price of a frame. The chart's non-gain is the third and fourth rows: the vector field's own constraints are untouched, and any claim that the polar form removes them would be false. This is the honest ledger, and it is the opposite of the Schrödinger case, where the *action* is first order and the constraints are the momenta's vanishing.
 
 **Why the Schrödinger case differs.** There the Lagrangian is linear in $\dot\theta_{\mathrm{pha}}$, so the momentum conjugate to $\varrho$ vanishes identically and the system is a constrained one whose closure needs Dirac analysis. Here the Lagrangian is quadratic in the velocities, the momenta are the velocities' images under a rank-three map, and there is exactly one constraint pair. The order of the Lagrangian, and not the choice of variables, is what decides.
-
-## The Parameter Basis and the Four Brackets
-
-**One derivative, four types, for the material word.** The polar word of the Proca field has the same four parameter groups as the scalar field's, so its logarithmic derivative has the same four brackets:
-
-$$
-\tilde A_\Phi^{-1}\partial\tilde A_\Phi
-=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
-$$
-
-real scalar, central imaginary, Hermitian and real vector. The brackets are a property of the parameterisation and of the algebra's type decomposition; they are not a feature of any one field.
-
-**Why the Proca action keeps more of them than the scalar action.** The scalar action's bilinear $\tilde\Xi^{*}\tilde\Xi$ is one Hermitian object, so only the matching types survive. The Proca action is built from the square of the conjugate gradient, and **a square pairs the scalar part with the scalar part and the vector part with the vector part while retaining the cross term between them**. The full quadratic form of the conjugate gradient is therefore in the Lagrangian, and the antisymmetric combination it retains is the object whose variation gives the Lorenz condition. The middle piece $-\tfrac12S^{2}$ is that cross term, and it is what the element form's projection removes.
-
-**The branch is not a bracket.** The chart is a diffeomorphism onto one branch at a time, and the two branches -- timelike and spacelike -- differ by the sign of the mass term, $+\tfrac12k_m^{2}\varrho^{2}$ and $-\tfrac12k_m^{2}\varrho^{2}$. **The four brackets are identical on the two branches**; what changes is the algebraic mass term, which carries no derivative and therefore no bracket. This is the reason the bracket analysis of this article is branch-independent and the constraint analysis is not.
-
-**The parameter basis is not the bracket basis.** The eight parameters are coordinates, the four brackets are types, and the Jacobian between them mixes: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis and the brackets are the cleaner form, because each has one type and one partner.
-
-**What the reader should take from the section.** The four brackets are the reason the polar Proca action has the structure it has: a quadratic form in the eight gradients with a frame-built metric, a mass potential, and no multiplier for the unit conditions. **The parameterisation absorbs the unit conditions by construction**, so the only price the chart pays is the cross term -- and the cross term is the constraint.
 
 ## The Noether Currents: The Stress and the Absence of a Charge
 

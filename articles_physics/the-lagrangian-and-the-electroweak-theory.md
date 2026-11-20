@@ -8,8 +8,6 @@
 
 **Why both phases in one article.** Because the breaking is a classical statement about a potential's minimum, and the corpus can make it exactly. A reader who has been told that the corpus "does not do the Standard Model" should see precisely what it does do: the classical action, its two phases, and the mass relation $m_W=gv/2$ with the count that forces it.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, where each term is shown real, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the precision observables is attempted, so slot 13 is omitted. The open questions belong to the quantised theory and are named in the ledger, so slot 14 is omitted.
-
 ## Conventions
 
 **The conventions are the corpus's, and they are the ones the menu's convention articles fix.** The gauge group is $SU(2)_L\times U(1)_Y$ with couplings $g$ and $g_{\mathrm Y}$; the gauge fields are $W_\mu^{a}$ for $a=1,2,3$ and $B_\mu$; the field strengths are $W^{a}_{\mu\nu}=\partial_\mu W^{a}_\nu-\partial_\nu W^{a}_\mu+g\epsilon^{abc}W^{b}_\mu W^{c}_\nu$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$. The doublet is $\Phi$, a complex two-component column with hypercharge $Y_\varphi=+\tfrac12$; its covariant derivative is

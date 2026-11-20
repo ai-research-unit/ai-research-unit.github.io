@@ -1,7 +1,5 @@
 # __The Lagrangian and the Klein–Gordon Equation in Momentum Space__
 
-**Declared omissions.** The scalar action imposes no constraint, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The variational parent states one sentence in passing and drops it.** At its §*The Action on the Carrier and on the Algebra* it writes that for a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, "whose four branches are the four eigenvalues". The sentence is stated, used as a remark about what a non-central coefficient would do, and not developed. This article develops it.
@@ -36,7 +34,9 @@ $$
 
 **The potential is a constant element.** Throughout, $\tilde M$ is a constant element of $\mathbb{B}$: Hermitian, $\tilde M=a\,e_t+i\vec v\cdot\vec e$ with $a$ and $\vec v$ real, or anti-Hermitian, $\tilde M=i\,a\,e_t+\vec v\cdot\vec e$. Its left multiplication $L(\tilde M)$ is complex-linear on the four-dimensional complex space $\mathbb{B}$, because $i$ is central, so it is a $4\times4$ complex matrix in the basis $e_\mu$ and its eigenvalues are ordinary complex eigenvalues.
 
-## The Action in Momentum Space: The Momentum-Space Equation Is an Eigenvalue Problem
+## The Action in Momentum Space
+
+### The Momentum-Space Equation Is an Eigenvalue Problem
 
 **Finding 1.** Substituting $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ into $(\Box_\Phi-\tilde M)\tilde\Xi=0$ and using the symbol rule gives, in one line,
 
@@ -56,7 +56,7 @@ $$
 
 **The licence travels with the finding**: everything in this section needs $\tilde M$ constant, because the symbol exists only there, and a position-dependent $\tilde M$ replaces the matrix by a convolution with no eigenvalue problem at all.
 
-## The Action in Momentum Space: The Spectrum of Left Multiplication
+### The Spectrum of Left Multiplication
 
 **Finding 2.** For a Hermitian potential $\tilde M=a\,e_t+i\vec v\cdot\vec e$ with $a$ and $\vec v$ real, the spectrum of $L(\tilde M)$ is
 
@@ -75,6 +75,31 @@ $$
 **That last sentence is the momentum-space form of the parent's own verdict.** The parent's §*Does the Second-Order Structure Fit $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$?* concludes that the split of a Klein–Gordon field into $\mathbb{B}_\Psi$ and $\mathbb{B}_\Phi$ is the real-imaginary decomposition of a complex field, two $i$-related copies of one equation. Here the same fact appears as a property of an eigenspace: the space is $i$-invariant, so it carries both sectors and is identical with neither.
 
 **The anti-Hermitian case has the same shape with $i$ in front.** For $\tilde M=i\,a\,e_t+\vec v\cdot\vec e$ the same identity gives $\operatorname{eig}L(\tilde M)=i(a\pm\lvert\vec v\rvert)$, each twice. Over three hundred draws the real part of every eigenvalue was below $8.9\times10^{-16}$ and the sorted spectrum matched $i(a\pm\lvert\vec v\rvert)$ to $3.6\times10^{-15}$. The spectrum is purely imaginary, and that is exactly what disqualifies the case in the next section.
+
+**The pairing. Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$; the quaternionic alternative and its two defects are the reality part of §*The Action* of *The Lagrangian and the Klein–Gordon Equation*, and the density here is that pairing applied to the symbol's action.
+
+**The type of the coefficient. Settled once and inherited.** The kinetic coefficient is the central $i$, anti-Hermitian by inspection, so every kinetic density at a mode is real for every field. That is the element article's computation and it is not repeated.
+
+**The selection rule. Finding 3.** The potential term of the action is $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$, and its reality is equivalent to $\tilde M$ being Hermitian. The parent's kinetic term is already real for every field, so the potential term is the only place where a sector question can arise, and this is what it decides.
+
+**The proof is the Hermiticity of the pairing.** The form $\langle A,B\rangle=\mathrm{Sc}(A^{*}B)$ is a positive-definite Hermitian form on the complex vector space $\mathbb{B}$. For a Hermitian $\tilde M$ one has $\langle\tilde\Xi,\tilde M\tilde\Xi\rangle=\langle\tilde M\tilde\Xi,\tilde\Xi\rangle$, so the number is real. For an anti-Hermitian $\tilde M$ the same computation gives $\langle\tilde\Xi,\tilde M\tilde\Xi\rangle=-\langle\tilde M\tilde\Xi,\tilde\Xi\rangle$, so the number is purely imaginary. There is no third case: the generic element splits uniquely into a Hermitian part and an anti-Hermitian part, $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$ with $\tilde Q_\Psi=\tfrac12(\tilde Q+\tilde Q^{*})$ and $\tilde Q_\Phi=\tfrac12(\tilde Q-\tilde Q^{*})$, and the quadratic form splits with it into a real and an imaginary piece. The potential's own glyph is not doubled to say the same thing: it is Hermitian or anti-Hermitian as it stands, and when it is neither, the two parts are written $\tfrac12(\tilde M+\tilde M^{*})$ and $\tfrac12(\tilde M-\tilde M^{*})$.
+
+**The count confirms both halves.** Over three hundred random pairs of a field and a Hermitian potential, the quantity $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$ had an imaginary part below $3.6\times10^{-15}$. Over three hundred random pairs with an anti-Hermitian potential, its real part was below $7.1\times10^{-15}$. The two numbers are the two halves of the selection rule, and they are structural rather than numerical: no field can defeat them.
+
+**So the material sector is excluded, and the exclusion is a selection rule.** A Klein–Gordon Lagrangian whose potential is anti-Hermitian, $\tilde M=\tfrac12(\tilde M-\tilde M^{*})\in\mathbb{B}_\Phi$, has an action whose imaginary part is $\int\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$, which is not a boundary term and does not vanish. A complex action is not a variational principle with real stationary points; it is a saddle-point problem, and its stationarity conditions are not the equation the parent derives. The exclusion is therefore not a restriction of convenience. It is the condition under which the action of §*The Action in Element Form* exists at all.
+
+**The formal consequence, stated after the exclusion and not before.** If one keeps the anti-Hermitian potential anyway, the equation still has plane-wave solutions, because the algebra does not care about the reality of an integral. Their eigenvalues are purely imaginary, by §*The Action in Momentum Space: The Spectrum of Left Multiplication*, so
+
+$$
+\frac{\omega^{2}}{c^{2}}=k_\Phi^{2}+i\,\lambda,
+\qquad \lambda\in\mathbb{R},
+$$
+
+**The result is not a wave.** The frequency is complex for every wave number, and a complex frequency is growth or decay in time with no propagation threshold, so the mode is not a wave in any sense the parent's dispersion relation recognises. That is the formal content of the excluded case; it is recorded so that a reader who meets it elsewhere can identify it, not as a candidate theory.
+
+**The comparison with the Dirac family is exact and it is instructive.** There the symbol is first order and the object that must be Hermitian is the symbol itself, because a first-order equation is a flow and a flow wants a unitary generator. Here the equation is second order, its action contains $\tilde M$ quadratically, and the object that must be real is the action's density. **Same selection rule, different quantity selected.** The scalar family selects on $S$ and the spinor family selects on $H$, and neither selection is available in the other family. **The free case is the boundary of the rule**: with $\tilde M=k_m^{2}e_t$ the potential is central and Hermitian at once, the anti-Hermitian part vanishes, and both sectors pass the test, which is why the free theory cannot tell them apart.
+
+**What reality does not buy. Not at issue here.** The action of this article is real for every admissible field, and its claim is the opposite direction: that the *symbol* is real only for a Hermitian $\tilde M$. The gap between the two is not a weakness of the action here but the content of the exclusion, and the coupled article states it as one.
 
 ## The Variation
 
@@ -96,48 +121,45 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **What is lost, and it must be said.** The variation at a mode cannot see a boundary condition, a topological charge or a spatially varying coefficient, because a mode is defined only where the coefficients are constant. Every statement in this section inherits the constant-coefficient licence that the section on limits makes explicit.
 
-## The Reality of the Action
+## The Constraints the Action Imposes: The Constraint Is the Mass Shell
 
-**Four questions, and this article answers (c) of them.** Which bilinear the action pairs with; what type the coefficient must have for the density to come out real; which potentials the action admits; and how much weaker a real action is than a real spectrum. The four are distinct questions, so they are four subsections, and the ones that do not arise here are declared rather than dropped.
+**The action's equation is an eigenvalue problem, and that is where the constraint sits.** In this chart the field equation reads $\bigl(\omega^{2}/c^{2}-k_\Phi^{2}\bigr)\tilde\Xi_0=\tilde M\tilde\Xi_0$, so the operator's symbol acts on the amplitude and the condition for a nonzero amplitude is that the symbol be singular at that momentum. Nothing is imposed on the amplitude itself.
 
-### The Pairing
+**The singular set is the mass shell.** The eigenvalue $\tilde M$ contributes $k_m^{2}$ on the central part and nothing on the spatial ones, so the singular set is $\omega^{2}/c^{2}-k_\Phi^{2}=k_m^{2}$ on the branch the amplitude occupies: the cone at $k_m=0$ and a two-sheeted surface at finite mass, the two sheets being the two signs of the frequency.
 
-**Settled once and inherited.** The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$; the quaternionic alternative and its two defects are §*The Reality of the Action* of *The Lagrangian and the Klein–Gordon Equation*, and the density here is that pairing applied to the symbol's action.
+**The mass is the only thing that separates the sheets.** A constant connection translates the frequency and rotates the wave vector and leaves the separation at $2k_m$, which is why the dispersion relation of this article and the polar article's agree after the substitution that takes one chart to the other. **The constraint is therefore one scalar equation on four numbers**, and everything else the action says is about the amplitude.
 
-### The Type of the Coefficient
-
-**Settled once and inherited.** The kinetic coefficient is the central $i$, anti-Hermitian by inspection, so every kinetic density at a mode is real for every field. That is the element article's computation and it is not repeated.
-
-### The Selection Rule
-
-**Finding 3.** The potential term of the action is $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$, and its reality is equivalent to $\tilde M$ being Hermitian. The parent's kinetic term is already real for every field, so the potential term is the only place where a sector question can arise, and this is what it decides.
-
-**The proof is the Hermiticity of the pairing.** The form $\langle A,B\rangle=\mathrm{Sc}(A^{*}B)$ is a positive-definite Hermitian form on the complex vector space $\mathbb{B}$. For a Hermitian $\tilde M$ one has $\langle\tilde\Xi,\tilde M\tilde\Xi\rangle=\langle\tilde M\tilde\Xi,\tilde\Xi\rangle$, so the number is real. For an anti-Hermitian $\tilde M$ the same computation gives $\langle\tilde\Xi,\tilde M\tilde\Xi\rangle=-\langle\tilde M\tilde\Xi,\tilde\Xi\rangle$, so the number is purely imaginary. There is no third case: the generic element splits uniquely into a Hermitian part and an anti-Hermitian part, $\tilde Q=\tilde Q_\Psi+\tilde Q_\Phi$ with $\tilde Q_\Psi=\tfrac12(\tilde Q+\tilde Q^{*})$ and $\tilde Q_\Phi=\tfrac12(\tilde Q-\tilde Q^{*})$, and the quadratic form splits with it into a real and an imaginary piece. The potential's own glyph is not doubled to say the same thing: it is Hermitian or anti-Hermitian as it stands, and when it is neither, the two parts are written $\tfrac12(\tilde M+\tilde M^{*})$ and $\tfrac12(\tilde M-\tilde M^{*})$.
-
-**The count confirms both halves.** Over three hundred random pairs of a field and a Hermitian potential, the quantity $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$ had an imaginary part below $3.6\times10^{-15}$. Over three hundred random pairs with an anti-Hermitian potential, its real part was below $7.1\times10^{-15}$. The two numbers are the two halves of the selection rule, and they are structural rather than numerical: no field can defeat them.
-
-**So the material sector is excluded, and the exclusion is a selection rule.** A Klein–Gordon Lagrangian whose potential is anti-Hermitian, $\tilde M=\tfrac12(\tilde M-\tilde M^{*})\in\mathbb{B}_\Phi$, has an action whose imaginary part is $\int\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$, which is not a boundary term and does not vanish. A complex action is not a variational principle with real stationary points; it is a saddle-point problem, and its stationarity conditions are not the equation the parent derives. The exclusion is therefore not a restriction of convenience. It is the condition under which the action of §*The Action in Element Form* exists at all.
-
-**The formal consequence, stated after the exclusion and not before.** If one keeps the anti-Hermitian potential anyway, the equation still has plane-wave solutions, because the algebra does not care about the reality of an integral. Their eigenvalues are purely imaginary, by §*The Action in Momentum Space: The Spectrum of Left Multiplication*, so
-
-$$
-\frac{\omega^{2}}{c^{2}}=k_\Phi^{2}+i\,\lambda,
-\qquad \lambda\in\mathbb{R},
-$$
-
-**The result is not a wave.** The frequency is complex for every wave number, and a complex frequency is growth or decay in time with no propagation threshold, so the mode is not a wave in any sense the parent's dispersion relation recognises. That is the formal content of the excluded case; it is recorded so that a reader who meets it elsewhere can identify it, not as a candidate theory.
-
-**The comparison with the Dirac family is exact and it is instructive.** There the symbol is first order and the object that must be Hermitian is the symbol itself, because a first-order equation is a flow and a flow wants a unitary generator. Here the equation is second order, its action contains $\tilde M$ quadratically, and the object that must be real is the action's density. **Same selection rule, different quantity selected.** The scalar family selects on $S$ and the spinor family selects on $H$, and neither selection is available in the other family. **The free case is the boundary of the rule**: with $\tilde M=k_m^{2}e_t$ the potential is central and Hermitian at once, the anti-Hermitian part vanishes, and both sectors pass the test, which is why the free theory cannot tell them apart.
-
-### What Reality Does Not Buy
-
-**Not at issue here.** The action of this article is real for every admissible field, and its claim is the opposite direction: that the *symbol* is real only for a Hermitian $\tilde M$. The gap between the two is not a weakness of the action here but the content of the exclusion, and the coupled article states it as one.
+**What is absent.** No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one momentum cannot see one; no restriction on the amplitude at a singular momentum. The constraint content is one determinant, and the structural consequence's denial is a statement about what that determinant leaves free.
 
 ## The Structural Consequence: The Denial That Survives
 
 **The informational sector is not the Fourier dual of the material sector.** Every transform in this article acts on a $\mathbb{B}$-valued function and returns a $\mathbb{B}$-valued function. No step carries a field out of its sector, and no display above identifies a coefficient's sector with a function's sector. The sector statements are statements about one constant element that multiplies, at one wave number or at one event.
 
 **A second denial belongs here because the eigenvalue problem invites the error**: the eigenvalues of $L(\tilde M)$ are complex numbers, and their real or imaginary character is a statement about $\tilde M$'s sector and not about the field's. A field in $\mathbb{B}_\Psi$ and a field in $\mathbb{B}_\Phi$ feel the same matrix, because the matrix is left multiplication on the whole algebra; what differs is only which sector their values occupy, and that is not an eigenvalue.
+
+## Zero, Pole and the On-Shell Action
+
+### The Tachyon Threshold
+
+**Finding 4.** The lower branch $a-\lvert\vec v\rvert$ is the threshold, and the condition for a non-negative spectrum is one inequality:
+
+$$
+a\geq\lvert\vec v\rvert .
+$$
+
+**The mechanism is one substitution.** With $\lambda=a-\lvert\vec v\rvert$ the dispersion is $\omega^{2}=c^{2}(k_\Phi^{2}+a-\lvert\vec v\rvert)$. At small wave number the bracket is dominated by $a-\lvert\vec v\rvert$; when that is negative, $\omega^{2}$ is negative for every $k_\Phi$ below $\sqrt{\lvert\vec v\rvert-a}$, and $\omega$ is imaginary there. The mode is evanescent in time: it does not oscillate, it grows or decays.
+
+**The threshold itself is the massless case.** At $a=\lvert\vec v\rvert$ the lower branch vanishes and its dispersion is $\omega^{2}=c^{2}k_\Phi^{2}$, the cone. The upper branch has $\lambda=2\lvert\vec v\rvert$ and its dispersion is the massive one with $k_m^{2}=2\lvert\vec v\rvert$. So the two branches are one massless and one massive cone, and the potential's two parts decide which is which.
+
+**The occurrence is common, and the count says so.** Over three hundred draws with $a$ standard normal and $\vec v$ standard normal in three dimensions, the lower branch was negative in $276$ of them. The vector part of a random Hermitian potential has three components and its length is typically larger than one component, so a positive scalar part does not by itself keep the spectrum non-negative. **A potential whose scalar part is not larger than the length of its vector part has a tachyon branch, and that is the generic case for unconstrained coefficients.** What the threshold is not: it is not a bound on the energy of a state, and it is not a statement about the sign of the charge. It is a statement about the sign of one eigenvalue of one operator, and its only consequence is the sign of $\omega^{2}$ at small $k_\Phi$. The parent's two defects — indefinite charge and negative energies — are separate, and neither is decided by this inequality.
+
+### Why the Free Case Says Nothing
+
+**Finding 5.** With $\tilde M=k_m^{2}e_t$ the four eigenvalues coincide at $k_m^{2}$, the symbol commutes with every element of $\mathbb{B}$, and no sector statement can be made. The eigenvalue problem degenerates from a matrix problem to a multiple of the identity. The count is exact and it is the point: the computed spectrum was $k_m^{2}$ four times with a residual below $10^{-15}$, and the commutator of the symbol with fifty random elements of $\mathbb{B}$ was $0.0$ in every component. A central symbol commutes with the sector projectors, so $\Box_\Phi-k_m^{2}$ acts identically on $\mathbb{B}_\Psi$ and on $\mathbb{B}_\Phi$. The equation cannot tell the sectors apart because its operator does not contain them.
+
+**This is the parent's conclusion reached in one line.** The parent's §*Does the Second-Order Structure Fit $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$?* argues in position space that the sector split gives two $i$-related copies of the same equation and is therefore not the doubling the equation needs. In momentum space the same statement is a property of a scalar multiple of the identity: an operator proportional to $I$ has one eigenspace, which is the whole space, and the whole space is where the sectors live.
+
+**The thesis of the article is this finding read backwards.** Because the free symbol is central and carries no sector content, every sector statement at Klein–Gordon level must come from the potential. The article's four other findings are the four ways in which it does: the spectrum, the multiplicity, the reality, and the threshold. Remove the potential and all four collapse to one number.
 
 ## The Noether Currents: The Charge Per Mode
 
@@ -152,28 +174,6 @@ up to the normalisation the element article fixes, so that the total charge is t
 **The energy.** The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
-
-## Zero, Pole and the On-Shell Action: The Tachyon Threshold
-
-**Finding 4.** The lower branch $a-\lvert\vec v\rvert$ is the threshold, and the condition for a non-negative spectrum is one inequality:
-
-$$
-a\geq\lvert\vec v\rvert .
-$$
-
-**The mechanism is one substitution.** With $\lambda=a-\lvert\vec v\rvert$ the dispersion is $\omega^{2}=c^{2}(k_\Phi^{2}+a-\lvert\vec v\rvert)$. At small wave number the bracket is dominated by $a-\lvert\vec v\rvert$; when that is negative, $\omega^{2}$ is negative for every $k_\Phi$ below $\sqrt{\lvert\vec v\rvert-a}$, and $\omega$ is imaginary there. The mode is evanescent in time: it does not oscillate, it grows or decays.
-
-**The threshold itself is the massless case.** At $a=\lvert\vec v\rvert$ the lower branch vanishes and its dispersion is $\omega^{2}=c^{2}k_\Phi^{2}$, the cone. The upper branch has $\lambda=2\lvert\vec v\rvert$ and its dispersion is the massive one with $k_m^{2}=2\lvert\vec v\rvert$. So the two branches are one massless and one massive cone, and the potential's two parts decide which is which.
-
-**The occurrence is common, and the count says so.** Over three hundred draws with $a$ standard normal and $\vec v$ standard normal in three dimensions, the lower branch was negative in $276$ of them. The vector part of a random Hermitian potential has three components and its length is typically larger than one component, so a positive scalar part does not by itself keep the spectrum non-negative. **A potential whose scalar part is not larger than the length of its vector part has a tachyon branch, and that is the generic case for unconstrained coefficients.** What the threshold is not: it is not a bound on the energy of a state, and it is not a statement about the sign of the charge. It is a statement about the sign of one eigenvalue of one operator, and its only consequence is the sign of $\omega^{2}$ at small $k_\Phi$. The parent's two defects — indefinite charge and negative energies — are separate, and neither is decided by this inequality.
-
-## Zero, Pole and the On-Shell Action: Why the Free Case Says Nothing
-
-**Finding 5.** With $\tilde M=k_m^{2}e_t$ the four eigenvalues coincide at $k_m^{2}$, the symbol commutes with every element of $\mathbb{B}$, and no sector statement can be made. The eigenvalue problem degenerates from a matrix problem to a multiple of the identity. The count is exact and it is the point: the computed spectrum was $k_m^{2}$ four times with a residual below $10^{-15}$, and the commutator of the symbol with fifty random elements of $\mathbb{B}$ was $0.0$ in every component. A central symbol commutes with the sector projectors, so $\Box_\Phi-k_m^{2}$ acts identically on $\mathbb{B}_\Psi$ and on $\mathbb{B}_\Phi$. The equation cannot tell the sectors apart because its operator does not contain them.
-
-**This is the parent's conclusion reached in one line.** The parent's §*Does the Second-Order Structure Fit $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$?* argues in position space that the sector split gives two $i$-related copies of the same equation and is therefore not the doubling the equation needs. In momentum space the same statement is a property of a scalar multiple of the identity: an operator proportional to $I$ has one eigenspace, which is the whole space, and the whole space is where the sectors live.
-
-**The thesis of the article is this finding read backwards.** Because the free symbol is central and carries no sector content, every sector statement at Klein–Gordon level must come from the potential. The article's four other findings are the four ways in which it does: the spectrum, the multiplicity, the reality, and the threshold. Remove the potential and all four collapse to one number.
 
 ## The Legendre Transform
 
@@ -209,7 +209,7 @@ $$
 
 ## Open Questions
 
-**One question is left open, and it is about a potential the selection rule might admit.** The exclusion of §*The Reality of the Action* is the exclusion of an anti-Hermitian part, because that part makes the action's density imaginary. An anti-Hermitian part that is a total derivative — that is, one whose contribution to the action is a boundary term — would make the action real up to a surface term, and the variation would be unaffected. Whether such a potential exists in this algebra, whether it can be written as $\tilde\nabla_\Phi\tilde\Gamma$ for some $\tilde\Gamma$, and whether its spectrum is then admissible, is not decided here. No claim is made in either direction.
+**One question is left open, and it is about a potential the selection rule might admit.** The exclusion in the reality part of §*The Action* is the exclusion of an anti-Hermitian part, because that part makes the action's density imaginary. An anti-Hermitian part that is a total derivative — that is, one whose contribution to the action is a boundary term — would make the action real up to a surface term, and the variation would be unaffected. Whether such a potential exists in this algebra, whether it can be written as $\tilde\nabla_\Phi\tilde\Gamma$ for some $\tilde\Gamma$, and whether its spectrum is then admissible, is not decided here. No claim is made in either direction.
 
 **A second question follows from the doubling, and it is narrower.** The eigenspace of a branch is a right ideal $\mathbb{B}w$, and its Hermitian representative is $ww^{*}$. Whether the physical restriction to a Peirce carrier — the question the parent's §*Open Questions* raises for a non-central coefficient — can be imposed inside one eigenspace without breaking the $i$-invariance that produces the doubling, is open as well.
 

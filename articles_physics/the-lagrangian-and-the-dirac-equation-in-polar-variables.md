@@ -1,7 +1,5 @@
 # __The Lagrangian and the Dirac Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The action imposes no constraint beyond the change of variables, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted.
-
 ## Introduction
 
 *The Dirac Equation in Biquaternionic Polar Variables* substitutes the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ into the equation. This article substitutes the same word into the *action*, and reads the Lagrangian and the Euler–Lagrange equations that come out.
@@ -32,7 +30,7 @@ The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the act
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
+**The conventions are restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $\natural$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in both element articles. Every symbol is defined where it first appears, and the table at the end collects them. The time variable is $t'$, so the derivative term is $\hbar c\,\partial_{r'_t}=\hbar\,\partial_{t'}$; the element-form companion uses $r'_t$ and the two are the same equation.
 
 **The parts, and their idempotents.** The frame declares one direction, $\vec e_z$, in order to read the value of an element. The idempotents built from it are
 
@@ -123,6 +121,14 @@ where $\vec p_{\mathrm{spin}}$ is the vector whose contraction with $\vec\omega_
 
 **The sign, and the overall factor.** The Dirac kinetic term is $+\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$; the Schrödinger one is $-\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$. The difference is one operator and one antisymmetrization. The Dirac term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}(-i\hbar c\,\partial_{t'})\tilde\Xi]$, and $-i\hbar c\,\partial_{t'}$ is self-adjoint, so its expectation has a real part and no symmetrization is needed. The Schrödinger term is $\mathrm{Re}\,\mathrm{Sc}[\tilde\Xi^{*}(i\hbar c\,\partial_{r'_t})\tilde\Xi]$, and $i\hbar c\,\partial_{r'_t}$ is anti-self-adjoint, so its expectation is purely imaginary and the action must antisymmetrize: $\tfrac{i\hbar c}{2}(\tilde\Xi^{*}\dot{\tilde\Xi}-\dot{\tilde\Xi}^{*}\tilde\Xi)$ has scalar part $-\hbar c\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}\dot{\tilde\Xi}]$, which is where the minus comes from. The sign is a fact about the two equations and not a convention, while the factor $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ is common to both and is the physical statement.
 
+**The pairing. Inherited, and the substitution cannot disturb it.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and rejected $\mathrm{Sc}(\cdot^{\natural}\cdot)$ because the quaternionic pairing makes every kinetic density a total derivative. The chart writes the field as a scale, a rapidity and a rotor, and the substitution is a change of variables in that same functional. The pair is untouched: the scale is real and the rotor is a unit element, so the two chiral densities remain conjugates of one another and their sum is real.
+
+**The type of the coefficient. The mass is real and the pair is Hermitian by construction.** The parent's two kinetic terms carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$, and their sum is real because the two are conjugates under $*$. In the chart the unit-modulus factor is written once, so the two terms are conjugates by the chart's own parametrisation rather than by a sign check. The mass $k_m$ multiplies $\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L$, a Hermitian bilinear, and it is real.
+
+**The selection rule. Declared.** No potential is free here; the action's only coefficient beyond the metric is the mass. The rule that asks which potentials are admissible belongs to the scalar family, where the potential is a free element.
+
+**What reality does not buy. A real action does not give a real energy.** The chart makes the rapidity explicit and the rapidity is real exactly when the energy is real; the parent's counterexample, a real action with a complex frequency, is a case the chart displays and does not remove.
+
 ## The Variation: The Euler–Lagrange Equations
 
 The Lagrangian is a one-form plus a potential, and that single fact is the constraint structure.
@@ -206,6 +212,32 @@ for every $\varrho>0$. One non-vanishing bracket is enough: the constraints are 
 
 **The parent's flow, at rest.** At $\theta_{\mathrm{rpd}}=0$ the two rate equations give $\dot\theta_{\mathrm{pha}}=k_m\mathcal V$ and $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=-k_m\partial_{\theta_{\mathrm{rpd}}}\mathcal V$, with $\varrho$ and the rapidity constant. The phase rate is the parent's. The rotor's rate along the boost axis comes from the potential's rapidity dependence, and the two rates transverse to it come from the rotor's own equations. Whether that reproduces the parent's gap rate is the closure question, and the article does not assume the answer.
 
+**The parameter basis and the four brackets.** Two bases of the eight-dimensional tangent space at an invertible element, and one change of basis.
+
+**The bracket basis.** The parent decomposes $\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into a real scalar, a central imaginary, a Hermitian element and a real vector: four objects of four different algebraic types, each carrying one physical role — scale, phase, boost connection, rotor connection.
+
+**The parameter basis.** The eight derivatives $\partial\tilde\Xi/\partial \varrho$, $\partial\tilde\Xi/\partial\theta_{\mathrm{pha}}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{rpd}}$, $\partial\tilde\Xi/\partial u_{\mathrm b}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{axr}}$, $\partial\tilde\Xi/\partial u_{\mathrm r}$ span the same eight directions.
+
+**Three statements about the relation.**
+
+*The equivalence is exact.* The eight parameter equations are the eight real components of the equation in the parameter basis, and the word is a bijection, so the parameter equations and the equation are the same content. This is the Jacobian's invertibility and nothing more.
+
+*The brackets are cleaner.* The four brackets are four objects of four types, each with one role. The parameter equations mix them, because the parameterisation is non-linear and the derivative of one parameter can carry pieces of several brackets: differentiating the word with respect to $\theta_{\mathrm{axr}}$ moves the rotor, which moves the boost axis as seen from the body frame, so the rotor's equation carries a piece of the boost connection.
+
+*The parameter equations are not weaker.* They are the same equations in another basis, not a subset of them. A reader who finds fewer independent parameter equations than bracket equations has counted constraints as equations, which is what the four vanishing momenta are.
+
+**What the polar action adds to this.** Nothing about the equation. The E-L equations, when closed, are the equation's components in the parameter basis; the four brackets remain the natural form, and the article does not claim that the parameter equations are simpler. The polar action's contribution is the constraint structure: it exhibits which parameters are dynamical and which are not, and that is a statement the bracket form does not make.
+
+## The Constraints the Action Imposes: The Parameters That Carry No Rate
+
+**The action is first order, so not every Euler–Lagrange equation is an evolution equation.** The momentum conjugate to a parameter is the coefficient multiplying that parameter's rate in the density. A parameter that appears without a rate has no momentum at all, and its equation is a relation among the remaining variables rather than a rule for its own motion.
+
+**Which parameters those are is the type table's answer, and nothing else supplies it.** The temporal bracket carries the momentum and the boost bracket carries the velocity; the scale and the phase carry their own rates through $\mathcal A_\mu$; the potential joins the phase bracket and the boost bracket only. So the directions the potential does not reach are the directions whose rates the density omits, and those are where the action constrains.
+
+**The count is a count of rates and not of equations.** Eight parameters and eight equations, and fewer than eight rates: the difference is the number of primary constraints, read off the coefficients rather than argued. That is why the count is stated here and not derived: it is a fact about the density's linear structure.
+
+**What it does not produce.** It does not produce the bracket algebra among the constraints, and the variation section says so instead of assuming it. The claim is narrower and exact: the momenta are the coefficients, the parameters without them are constrained, and the constraint is primary because no equation of motion removes it.
+
 ## The Structural Consequence: The Mass Term and the Fixed Direction
 
 The mass term of the element action is off-diagonal in the parts, and on the frame's parts it vanishes.
@@ -249,24 +281,6 @@ $$
 The scale enters as $\varrho^{2}$ in both terms. The phase enters only through its velocity. The boost enters through $\cosh\theta_{\mathrm{rpd}}$, through $\sinh\theta_{\mathrm{rpd}}$ and through the axis $\hat n_{\mathrm{rot}}$, and not through its own rate. The rotor enters through its body angular velocity and through the axis it carries. Nothing else enters.
 
 **The overall factor.** The element action carries $\hbar c/2$; the box has $\hbar c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §*The Kinetic Term*.
-
-## The Parameter Basis and the Four Brackets
-
-Two bases of the eight-dimensional tangent space at an invertible element, and one change of basis.
-
-**The bracket basis.** The parent decomposes $\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into a real scalar, a central imaginary, a Hermitian element and a real vector: four objects of four different algebraic types, each carrying one physical role — scale, phase, boost connection, rotor connection.
-
-**The parameter basis.** The eight derivatives $\partial\tilde\Xi/\partial \varrho$, $\partial\tilde\Xi/\partial\theta_{\mathrm{pha}}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{rpd}}$, $\partial\tilde\Xi/\partial u_{\mathrm b}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{axr}}$, $\partial\tilde\Xi/\partial u_{\mathrm r}$ span the same eight directions.
-
-**Three statements about the relation.**
-
-*The equivalence is exact.* The eight parameter equations are the eight real components of the equation in the parameter basis, and the word is a bijection, so the parameter equations and the equation are the same content. This is the Jacobian's invertibility and nothing more.
-
-*The brackets are cleaner.* The four brackets are four objects of four types, each with one role. The parameter equations mix them, because the parameterisation is non-linear and the derivative of one parameter can carry pieces of several brackets: differentiating the word with respect to $\theta_{\mathrm{axr}}$ moves the rotor, which moves the boost axis as seen from the body frame, so the rotor's equation carries a piece of the boost connection.
-
-*The parameter equations are not weaker.* They are the same equations in another basis, not a subset of them. A reader who finds fewer independent parameter equations than bracket equations has counted constraints as equations, which is what the four vanishing momenta are.
-
-**What the polar action adds to this.** Nothing about the equation. The E-L equations, when closed, are the equation's components in the parameter basis; the four brackets remain the natural form, and the article does not claim that the parameter equations are simpler. The polar action's contribution is the constraint structure: it exhibits which parameters are dynamical and which are not, and that is a statement the bracket form does not make.
 
 ## The Noether Currents: The Phase Charge and the Spin
 

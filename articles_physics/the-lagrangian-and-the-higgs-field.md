@@ -10,8 +10,6 @@
 
 **What is not done.** No loop, no renormalisation, no running, no unitarity computation, no scattering amplitude and no decay rate. The value of $\lambda$ is taken from the measured mass and is not derived. Nothing here is the Standard Model's quantised scalar sector, and the article says so at the point where the reader would expect it.
 
-**Declared omissions.** The reality of the action is settled inside *The Action*, term by term, so slot 5 is omitted, with its four subsections. The scalar imposes no constraint on the initial data beyond its own equation — it has no gauge symmetry and no Gauss law — so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the textbook $\phi^{4}$ treatment is attempted, so slot 13 is omitted. The open questions are named in the ledger and not listed, so slot 14 is omitted.
-
 ## Conventions
 
 **The conventions are the electroweak articles', with the gauge fields switched off.** The measure is $\mathrm{d}^{4}x$ and $\hbar=c=1$ throughout; a repeated low index is summed with the weight $\varepsilon=(1,-1,-1,-1)$, so $\partial_\mu\Phi^{\dagger}\partial_\mu\Phi=\sum_\mu\varepsilon_\mu\partial_\mu\Phi^{\dagger}\partial_\mu\Phi$ carries the sign the mostly-minus literature carries. The doublet is a complex two-component column,
@@ -94,6 +92,16 @@ which is the radial equation expanded about $r=v+h$ with the linear term removed
 **The boundary term, and why it is not an obstacle.** The equation is second order in time, so the variation needs $\Phi$ and its normal derivative fixed on the boundary — the same condition the Klein–Gordon article imposes, and the surface term vanishes under it. The scalar's variation is the simplest in the family for this reason: no gauge parameter, no constraint, no identity.
 
 **What the variation does not give.** It does not give the masses of the vectors, the Goldstone modes, or the count. Those come from the same action with the covariant derivative restored and the vacuum chosen, and they are the companion article's subject. What the variation gives here is the scalar's equation and, through it, the statement that the potential's derivatives are the couplings.
+
+## The Constraints the Action Imposes: The Stationary Point Is Not a Constraint
+
+**The count.** One real function in the radial chart, $r$ with $\Phi^{\dagger}\Phi=r^{2}/2$, one second-order equation, and a momentum that is the velocity. The map is invertible wherever $r\neq0$, so there is no primary constraint, no Gauss law and no constraint surface.
+
+**The potential fixes a value and does not restrict the data.** The stationary points of $V(r)=-\tfrac{\mu^{2}}{2}r^{2}+\tfrac{\lambda}{4}r^{4}$ are $r=0$ and $r^{2}=\mu^{2}/\lambda$, and the sign of $\mu^{2}$ decides whether the second lies on the real branch. That is a statement about which configuration has stationary energy; a configuration away from it is a solution with a different energy, and the action admits it.
+
+**The two notions are routinely conflated and they are different objects.** A constraint restricts initial data and cannot be removed by the equations; a stationary point selects a state and is left by moving away from it. Reading the second minimum as a constraint produces the claim that the action forbids the field from sitting at the origin, and it does not: it makes the origin unstable, which is a statement about the spectrum.
+
+**What the section does not claim.** It does not claim the vacuum is undetermined: the potential selects it and the chart's constants fix its value. It claims that the selection is by energy and not by admissibility, and that distinction is what lets the structural consequence count the excitations around the minimum.
 
 ## The Structural Consequence: One Variable, One Number, Three Measurements
 

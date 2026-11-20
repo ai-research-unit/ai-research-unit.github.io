@@ -1,9 +1,6 @@
 # __The Lagrangian and the Klein–Gordon Equation in the Non-Quantum Limit__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The constraint is the parent's and the limit neither adds nor removes one, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
-
 ## Introduction
-
 **The limit in one sentence.** Write the parent's polar action for the central field, delete the scale's kinetic term — one Lorentz scalar — and the two variations of what is left are the mass shell and the transport equation.
 
 **The parent prints both halves.** [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html) writes the action first for the general element in the parameter basis, with a metric $g_{ab}$ on the parameter space, and then for the central field, where only the scale and the angle are left. The central action has three blocks, and this article deletes one.
@@ -17,13 +14,9 @@
 **What is not new.** The relativistic Madelung action, the Lagrange-multiplier form of a mass-shell constraint, and the reading of the pair as irrotational dust are standard. Added here: the ordering of the parent's three blocks against one parameter, the observation that the deletion is a Lorentz scalar and the limit therefore covariant, and the reading of the limit as the removal of the scale's own dynamics.
 
 **The restriction is the parent's.** The central field is $\theta_{\mathrm{rpd}}=0$ with the rotor a sign, and the parent proves that class is invariant only under a central Hamiltonian. The limit is defined there, as in the other families.
-
 ## Conventions
-
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
-
+**The conventions are restated here so that every sign below is checkable from this page alone.** Those of the variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the word $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ with $\varrho>0$; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ on the material sector with $r'_{t}=ct'$; $\rho_{\mathrm{num}}=\varrho^{2}$; $k_{m}=mc/\hbar$; $\epsilon=1/(k_{\Phi}L)$ with $L^{-1}=\lvert\vec\nabla_\Phi\ln \varrho\rvert$.
 ## The Action in the Non-Quantum Limit: The Three Blocks
-
 **The parent's central action.**
 
 $$
@@ -46,7 +39,13 @@ Three blocks, and the middle one carries the phase twice.
 
 **Why the middle block cannot be the scale's partner.** In the general element the action is the sigma-model form $g_{ab}(p)\,\partial p^{a}\partial p^{b}$ with a metric on the eight parameters, and the central field is its restriction to two coordinates. **The scale's block and the angle's block are two diagonal blocks of one metric**, and the order is a property of the coordinate: derivatives of the scale are order $\epsilon$ and derivatives of the angle are order zero.
 
-## The Limit: The Deletion
+**The pairing. Inherited, and the deletion is the check.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$, and the limit's action is a sum of squares of real derivatives of $\varrho$ and $\theta_{\mathrm{pha}}$. Deleting the block that carries the second derivatives of the scale removes a real term; what remains is a real term. **A deletion that removes a real block preserves reality**, and that is the only statement the limit needs about the pairing.
+
+**The type of the coefficient. The same coefficients, one order down.** $k_m^{2}$ is real and enters the truncated action unchanged. The block deleted carried no coefficient that the kept blocks do not also carry, so no coefficient's type is decided here that the parent did not decide.
+
+**The selection rule. Declared.** The limit cannot admit a potential that the full action did not have, and the full action's potential is the mass term alone. The rule's single worked case is the free momentum article's, and a truncation is not a place to add one.
+
+**What reality does not buy. Reality does not survive the truncation as an exact property of the truncated theory.** The kept action is real at every order; the terms dropped are real too, and their absence is an error of the stated order and not a change of type. The error is the one *The Limits and the Truncation’s Error* estimates, and it is the price of the limit, not of the reality.
 
 **Delete the scale's block.**
 
@@ -62,9 +61,7 @@ $$
 **The contrast with the first-order family is one sentence.** There the deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, which a boost does not preserve, so the limit there is a statement in a chosen frame; here the limit is a statement on the manifold, and a reader who wants the covariant form of the non-quantum limit must take it from this equation.
 
 **What is not deleted, and it matters.** The phase's block keeps both signs of the material signs, so the truncated action is not a Euclidean or a static object: it carries $(\partial_{r'_{t}}\theta)^{2}$ and $-\lvert\vec\nabla_\Phi\theta\rvert^{2}$ and its Euler–Lagrange equations are the relativistic ones. **The limit is not the non-relativistic reduction**; the second truncation, in $\beta=v/c$, is a different operation performed on the truncated theory.
-
 ## The Variation: Varying the Scale: the Mass Shell
-
 **The truncated action has no $\partial \varrho$, so the scale's variation is algebraic.**
 
 $$
@@ -91,8 +88,17 @@ which divided by $2\varrho$ is $\left(\partial\theta_{\mathrm{pha}}\right)^{2}-k
 
 **The Hamiltonian of the truncated theory is the constraint.** A degenerate Lagrangian of this shape has no independent momentum for the scale, and the Legendre transform produces the mass-shell condition as the only constraint. **The limit therefore produces a reparametrisation-invariant-looking system with the mass shell as its Hamiltonian**, which is the standard form of a relativistic particle or of dust, and the corpus's phrase for it is irrotational dust.
 
-## The Structural Consequence: Varying the Phase: the Transport, Unchanged
+## The Constraints the Action Imposes: The Truncated Hamiltonian
 
+**The deleted block was the scale's kinetic term, so the scale loses its momentum.** No term of the truncated density carries a time derivative of $\varrho$, so the conjugate momentum vanishes identically and the scale's Euler–Lagrange equation is a constraint rather than an evolution equation. That equation is the truncated theory's Hamiltonian.
+
+**Keeping the block turns the constraint back into an equation.** The quantum potential is exactly $(\partial_{r'_{t}}\varrho)^{2}-\lvert\vec\nabla_\Phi\varrho\rvert^{2}$, the deleted block, so restoring it restores the missing rate and the scale propagates again. **The presence of this constraint is therefore the exact marker of the truncation**: a computation that finds the scale propagating has kept the block, and one that finds it determined has deleted it.
+
+**The constraint's content is the energy relation.** It ties the amplitude to the phase's gradient and the mass at each instant, which is what the leading-order action is built to produce, so the constraint and the limit's leading result are the same statement read twice.
+
+**What the constraint is not.** It is not a gauge condition, since the invariance here is global, and it is not a Gauss law, since no connection equation is varied. The phase's transport is untouched by the deletion, and that asymmetry is what the structural consequence records.
+
+## The Structural Consequence: Varying the Phase: the Transport, Unchanged
 **The phase's variation.**
 
 $$
@@ -106,9 +112,7 @@ which is $\partial_{r'_{t}}(\rho_{\mathrm{num}}\partial_{r'_{t}}S)-\vec\nabla_\P
 **The current follows from the same variation.** Differentiating $\varrho^{2}(\partial\theta)^{2}$ with respect to $\partial_\mu\theta$ returns $2\varrho^{2}\partial_\mu\theta$, so the current is $\rho_{\mathrm{num}}\partial_\mu S$, which is the parent's $\tilde J_\Phi=\rho_{\mathrm{num}}\tilde P_\Phi/m$ up to the mass factor. **The truncated action already knows the current**, and the transport equation is its conservation.
 
 **The pair the limit produces, in the parent's words.** Relativistic irrotational dust: a pressureless flow along the phase gradient, with the density carried by the flow and the four-velocity normalised to $mc$. The parent states that with the quantum term the fluid is not dust, and that without it the pair is dust. **This article supplies the action of the dust and nothing more.**
-
 ## The Noether Currents: Density, Charge and Energy
-
 **The current is the density times the transport velocity, and the limit makes that literal.** The phase's momentum is the density,
 $$
 \rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\ \longrightarrow\ \varrho^{2}\quad\text{in the non-quantum limit},
@@ -118,9 +122,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **The charge and the energy.** The charge is the integral of $\rho$, times the coupling where the field is charged, and it carries no mass. The energy is the mass shell's value, and it carries the mass. The split is exact in the parent and survives the limit unchanged, which is why this article's verification section can check both in one line each.
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
-
-## The Limit: The Truncation and Its Error
-
+## The Limits and the Truncation’s Error
 **The error is the deleted block, and its order is two.** The truncated action differs from the parent by $(\partial\varrho)^{2}$ in the material signs, and each factor of $\partial$ carries one power of the parameter. **The error is therefore of order $\epsilon^{2}$**, and the ratio that makes it small is the amplitude's gradient over the scale the truncation assumes: $|\partial\varrho|^{2}/(k_m^{2}\varrho^{2})$, which is small exactly when the amplitude varies slowly compared with the Compton length.
 
 **What restoring the term does.** Varying the parent's scale equation with the block present gives the same equation as the truncated one **plus a term that is a divergence of a gradient divided by the density** — the term the corpus calls the quantum potential. Its coefficient is $\hbar^{2}/2m$ in the material units, so it is a quantum correction and not a classical one, and its size relative to the mass term is $\epsilon^{2}$.
@@ -132,8 +134,6 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **What the error is not.** It is not a bound on any solution. **The expansion is asymptotic in $\epsilon$ and it is not claimed to converge**, so the statement is that the truncated equations hold to order $\epsilon^{2}$ for amplitudes that vary slowly, and not that the true solution is within a stated distance of the truncated one.
 
 **Why the section is separate from the deletion.** A reader can accept that a term is deleted and still be wrong about what the deletion costs. **The two sections answer two questions** — which term, and how much — and the article keeps them apart because the family's honesty about its limits is the whole point of the reading.
-
-## The Limit: What Survives
 
 **Everything of order zero, and it survives exactly.** The truncated action's variations give the mass-shell relation for the scale and the covariant transport for the phase, and neither is an approximation to the parent's equation: **they are the parent's equations with the order-two term set to zero**, and the difference is the quantum potential and nothing else.
 
@@ -148,7 +148,6 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **What does not survive.** The amplitude's dynamics. **Any solution whose density varies on the Compton scale is outside the truncated theory**, and the article says so in one sentence rather than leaving the reader to infer the boundary from the order count.
 
 ## What the Principle Adds and What It Relabels: By the Variational Route
-
 **Three things, and the first is this family's own.**
 
 *The deletion is covariant.* The order-two block is a Lorentz scalar, so the limit commutes with boosts and the truncated action is a covariant object. **No estimate can establish this**; it is a property of the term that was removed.
@@ -164,9 +163,35 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 *The boundary terms.* Deleting $(\partial \varrho)^{2}$ changes the natural boundary condition on the scale: the full action needs a Neumann datum on it at the boundary and the truncated one does not. The corpus states the limit on the whole of space and does not examine the boundary.
 
 *The general element.* The same rule applied to the sigma-model form would delete the scale's diagonal block of $g_{ab}$ and keep the angular blocks, because the angles' gradients are not ordered by $\epsilon$. **That truncation is not performed anywhere in the corpus**, and this article records the gap rather than performing it: on the general element the phases' and the angles' derivatives are of comparable size and the ordering would need a separate argument.
+## Summary
+The parent's central action has three blocks: the scale's kinetic term, the phase's kinetic term, and the mass term. One power of $\epsilon=1/(k_{\Phi}L)$ goes to each derivative of the scale, so the first block is order two and the other two are order zero.
 
+The limit is the deletion of the first block, which is $(\partial \varrho)^{2}$ in the material signs and is a Lorentz scalar. **The deletion commutes with boosts, and the truncated action is covariant** — the property the first-order family does not have, because there the deleted term is a spatial gradient alone.
+
+Varying the scale of the truncated action gives the mass shell as an algebraic constraint, and varying the phase gives the transport equation, unchanged term for term. The truncated action is $\varrho^{2}\left[(\partial\theta)^{2}-k_{m}^{2}\right]$, degenerate in the scale, and its content is relativistic irrotational dust with the mass shell as its Hamiltonian.
+
+The variational route's gain here is the covariance of the deletion and the visibility of what is lost: the scale's own dynamics. Its blind spot is the second parameter, which no term count can see.
+## Summary of Notation
+| Symbol | Meaning |
+|---|---|
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ | The parent's polar word on the central class |
+| $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the proper density |
+| $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ | The action |
+| $\partial^{2}$ | The material sector's invariant contraction of one gradient |
+| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
+| $r'_{t}=ct'$ | The material length |
+| $k_{m}=mc/\hbar$ | The mass wave number |
+| $S_{\mathrm{central}}$, $S_{\mathrm{cl}}$ | The parent's action; the truncated one |
+| $\epsilon=1/(k_{\Phi}L)$ | The parameter; one power per derivative of the scale |
+| $g_{ab}$ | The metric on the parameter space of the general element |
+## Further Reading
+- [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), the parent: the sigma-model action, its restriction to the central field, and the two currents.
+- [The Klein–Gordon Equation in the Non-Quantum Limit](the-klein-gordon-equation-in-the-non-quantum-limit.html), the companion: the same limit on the parent's pair, the two parameters, and the two denominators.
+- [The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit](the-lagrangian-and-the-schrodinger-equation-in-the-non-quantum-limit.html), the first-order variational companion, where the deleted term is not a scalar.
+- [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the word and the exact pair.
+- [The Non-Quantum Limit of the Biquaternion Model](the-non-quantum-limit-of-the-biquaternion-model.html), for the parameter and the difference between the limit and the approximation.
+- [The Lagrangian and the Coupled Klein–Gordon Equation in the Non-Quantum Limit](the-lagrangian-and-the-coupled-klein-gordon-equation-in-the-non-quantum-limit.html), where the connection sits in the same three blocks.
 ## Verification
-
 **Both Euler–Lagrange systems were computed, with the block and without it.**
 
 | variation | full action | truncated action |
@@ -181,37 +206,3 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **The covariance of the deletion was checked as an identity.** With $\Lambda$ a boost of the material sector, $(\partial \varrho)^{2}$ is unchanged because the contraction is taken with the sector's metric, so the deleted object is a scalar and the deletion commutes with $\Lambda$.
 
 **What was not checked.** No boundary-value problem was solved, no constraint analysis beyond the primary one was performed, and no numerical solution of the truncated system was run. The claims are about blocks and identities, and both were verified as algebra.
-
-## Summary
-
-The parent's central action has three blocks: the scale's kinetic term, the phase's kinetic term, and the mass term. One power of $\epsilon=1/(k_{\Phi}L)$ goes to each derivative of the scale, so the first block is order two and the other two are order zero.
-
-The limit is the deletion of the first block, which is $(\partial \varrho)^{2}$ in the material signs and is a Lorentz scalar. **The deletion commutes with boosts, and the truncated action is covariant** — the property the first-order family does not have, because there the deleted term is a spatial gradient alone.
-
-Varying the scale of the truncated action gives the mass shell as an algebraic constraint, and varying the phase gives the transport equation, unchanged term for term. The truncated action is $\varrho^{2}\left[(\partial\theta)^{2}-k_{m}^{2}\right]$, degenerate in the scale, and its content is relativistic irrotational dust with the mass shell as its Hamiltonian.
-
-The variational route's gain here is the covariance of the deletion and the visibility of what is lost: the scale's own dynamics. Its blind spot is the second parameter, which no term count can see.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon e_{t}$ | The parent's polar word on the central class |
-| $\varrho>0$, $\rho_{\mathrm{num}}=\varrho^{2}$ | The scale; the proper density |
-| $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$ | The action |
-| $\partial^{2}$ | The material sector's invariant contraction of one gradient |
-| $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$ | The d'Alembertian of the material sector |
-| $r'_{t}=ct'$ | The material length |
-| $k_{m}=mc/\hbar$ | The mass wave number |
-| $S_{\mathrm{central}}$, $S_{\mathrm{cl}}$ | The parent's action; the truncated one |
-| $\epsilon=1/(k_{\Phi}L)$ | The parameter; one power per derivative of the scale |
-| $g_{ab}$ | The metric on the parameter space of the general element |
-
-## Further Reading
-
-- [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), the parent: the sigma-model action, its restriction to the central field, and the two currents.
-- [The Klein–Gordon Equation in the Non-Quantum Limit](the-klein-gordon-equation-in-the-non-quantum-limit.html), the companion: the same limit on the parent's pair, the two parameters, and the two denominators.
-- [The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit](the-lagrangian-and-the-schrodinger-equation-in-the-non-quantum-limit.html), the first-order variational companion, where the deleted term is not a scalar.
-- [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the word and the exact pair.
-- [The Non-Quantum Limit of the Biquaternion Model](the-non-quantum-limit-of-the-biquaternion-model.html), for the parameter and the difference between the limit and the approximation.
-- [The Lagrangian and the Coupled Klein–Gordon Equation in the Non-Quantum Limit](the-lagrangian-and-the-coupled-klein-gordon-equation-in-the-non-quantum-limit.html), where the connection sits in the same three blocks.

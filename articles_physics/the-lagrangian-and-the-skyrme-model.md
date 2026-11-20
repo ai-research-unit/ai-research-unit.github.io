@@ -30,11 +30,9 @@ the Euler–Lagrange condition is the parent's equation. The first term is the s
 
 **What is not new.** The Skyrme model is standard, and its soliton, its topological charge and its baryon identification are imported. What the algebra supplies is that both terms are norms of one algebra-valued current and that the four-derivative combination is the norm of that current's commutator.
 
-**Declared omissions.** Slots 10 and 13 are omitted: the model has no non-relativistic reading of its own and no competing formulation inside the corpus to compare against. Slot 11 is omitted here; the truncation's error is the sigma model's derivative expansion, treated in the companion.
-
 ## Conventions
 
-**The conventions are the corpus's, restated so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ with $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$. $\mathrm{Sc}(X)$ is the coefficient of $e_t$; $\langle X\rangle_\natural=\mathrm{Sc}(XX^{\natural})$.
+**The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$ with $\tilde U^{-1}=\tilde U^{\natural}=\tilde U^{*}$. $\mathrm{Sc}(X)$ is the coefficient of $e_t$; $\langle X\rangle_\natural=\mathrm{Sc}(XX^{\natural})$.
 
 **The static frame.** Spatial coordinates are $\vec r=R_x\vec e_x+R_y\vec e_y+R_z\vec e_z$, the fields are static, $\partial\tilde U/\partial r'_t=0$, and configurations are pure gauge at spatial infinity, $\tilde U\to e_t$ as $|\vec r|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
 
@@ -78,6 +76,22 @@ $$
 
 is a total derivative and an integer; adding it to the action multiplies the path integral by a phase and changes no classical equation. It is a parameter of the quantum theory, not a term of the classical action, and the $\theta$ angle it defines is the same object as the QCD vacuum angle.
 
+**The pairing. Both pairings are the real scalar part, and both integrands are real.** $\mathrm{Sc}(\bar j_\mu j_\mu)$ is real because $j_\mu$ is anti-Hermitian; $\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])$ is real because the commutator of two anti-Hermitian elements is anti-Hermitian, and the square of an anti-Hermitian element is negative-Hermitian with a real scalar part. No reality condition is imposed; both follow from the carrier.
+
+**Why the same pairing serves both terms.** The two terms differ in the object whose norm is taken — the current, and the current's commutator — and not in the pairing. That uniformity is what allows the two coefficients $f^2$ and $1/e^2$ to be compared, and it is the reason the model has one metric and not two.
+
+**The type of the coefficient. Two coefficients of different dimension, one dimensionless ratio.** $f^2$ has dimension of mass squared; $1/e^2$ is dimensionless. Their ratio $f^2e^2$ has dimension of mass squared and fixes the soliton's mass scale; the dimensionless combination that sets its size is $1/(ef)$.
+
+**Neither coefficient is a coupling in the perturbative sense.** Both multiply the whole action and both cancel from the classical equation; the equation depends on $e$ and $f$ only through $1/(ef)^2$, which is the scale. This is the same structural fact the sigma model's article records, now with two coefficients instead of one.
+
+**The selection rule. Invariance under $\tilde U\mapsto g_L\tilde U g_R^{*}$ leaves exactly these two terms at this order.** The current transforms as $j_\mu\mapsto g_R^{*}j_\mu g_R$, the commutator as $[j_\mu,j_\nu]\mapsto g_R^{*}[j_\mu,j_\nu]g_R$, and the scalar part of either square is invariant because the trace is cyclic. Everything the group allows at two and four derivatives is here, and nothing else is.
+
+**What reality does not buy. Reality does not buy stability; the topology and the scaling do.** Three things the reality of the action does not supply:
+
+- *No soliton from one term.* The two-derivative action is real and scale invariant, and both facts are compatible with no stable configuration existing.
+- *No fixed size.* The minimiser's size is set by $1/(ef)$, and the action fixes neither number.
+- *No quantisation.* The soliton's spin and statistics come from quantising the collective coordinates, which the action makes possible and does not perform.
+
 ## The Variation: Two Terms, One Equation
 
 **The variation.** Write $\delta\tilde U=\tilde U\tilde\alpha$ with $\tilde\alpha\in\mathfrak{su}(2)$ vanishing at the boundary. Then $\delta j_\mu=\partial_\mu\tilde\alpha+[j_\mu,\tilde\alpha]$ and $\delta[j_\mu,j_\nu]=[\partial_\mu\tilde\alpha+[j_\mu,\tilde\alpha],j_\nu]+[j_\mu,\partial_\nu\tilde\alpha+[j_\nu,\tilde\alpha]]$, a Jacobi-identity rearrangement.
@@ -87,32 +101,6 @@ is a total derivative and an integer; adding it to the action multiplies the pat
 **The check that would catch a sign.** For a hedgehog configuration $\tilde U=\cos F(r)e_t+\sin F(r)\,\vec r/|\vec r|$ with $F(0)=\pi$ and $F(\infty)=0$, the two-derivative energy is proportional to $\int dr\,(r^2F'^2+2\sin^2F)$ and the four-derivative energy to $\int dr\,(\sin^2F/r^2)(2r^2F'^2+\sin^2F)$. Both are positive, and the Euler–Lagrange equation for $F$ has the two terms with opposite signs under scaling, which is what makes the minimiser exist.
 
 **Why the boundary condition is part of the variation.** The field must approach a constant at spatial infinity for the energy to be finite; the variation must respect that, so $\tilde\alpha\to0$ at infinity. The topological charge is then fixed during the variation, and the variation explores one sector at a time. Without that restriction the equation has constant solutions in every sector and no soliton.
-
-## The Reality of the Action
-
-### The Pairing
-
-**Both pairings are the real scalar part, and both integrands are real.** $\mathrm{Sc}(\bar j_\mu j_\mu)$ is real because $j_\mu$ is anti-Hermitian; $\mathrm{Sc}([j_\mu,j_\nu][j_\mu,j_\nu])$ is real because the commutator of two anti-Hermitian elements is anti-Hermitian, and the square of an anti-Hermitian element is negative-Hermitian with a real scalar part. No reality condition is imposed; both follow from the carrier.
-
-**Why the same pairing serves both terms.** The two terms differ in the object whose norm is taken — the current, and the current's commutator — and not in the pairing. That uniformity is what allows the two coefficients $f^2$ and $1/e^2$ to be compared, and it is the reason the model has one metric and not two.
-
-### The Type of the Coefficient
-
-**Two coefficients of different dimension, one dimensionless ratio.** $f^2$ has dimension of mass squared; $1/e^2$ is dimensionless. Their ratio $f^2e^2$ has dimension of mass squared and fixes the soliton's mass scale; the dimensionless combination that sets its size is $1/(ef)$.
-
-**Neither coefficient is a coupling in the perturbative sense.** Both multiply the whole action and both cancel from the classical equation; the equation depends on $e$ and $f$ only through $1/(ef)^2$, which is the scale. This is the same structural fact the sigma model's article records, now with two coefficients instead of one.
-
-### The Selection Rule
-
-**Invariance under $\tilde U\mapsto g_L\tilde U g_R^{*}$ leaves exactly these two terms at this order.** The current transforms as $j_\mu\mapsto g_R^{*}j_\mu g_R$, the commutator as $[j_\mu,j_\nu]\mapsto g_R^{*}[j_\mu,j_\nu]g_R$, and the scalar part of either square is invariant because the trace is cyclic. Everything the group allows at two and four derivatives is here, and nothing else is.
-
-### What Reality Does Not Buy
-
-**Reality does not buy stability; the topology and the scaling do.** Three things the reality of the action does not supply:
-
-- *No soliton from one term.* The two-derivative action is real and scale invariant, and both facts are compatible with no stable configuration existing.
-- *No fixed size.* The minimiser's size is set by $1/(ef)$, and the action fixes neither number.
-- *No quantisation.* The soliton's spin and statistics come from quantising the collective coordinates, which the action makes possible and does not perform.
 
 ## The Constraints the Action Imposes: Derrick's Argument and the Second Term
 

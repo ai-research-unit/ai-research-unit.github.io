@@ -1,9 +1,6 @@
 # __The Lagrangian and the Coupled Schrödinger Equation in the Non-Quantum Limit__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
-
 ## Introduction
-
 **The limit in one sentence.** Write the parent's coupled polar action, delete the one term carrying a spatial derivative of the scale, and the two variations of what is left are the covariant Hamilton–Jacobi equation and the covariant continuity equation.
 
 **The parent supplies the action and its split into three coupling pieces.** [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html) writes the coupled Lagrangian, shows that the connection enters the kinetic term through one covariant replacement, and separates that term into the free, paramagnetic and diamagnetic pieces. Its Euler–Lagrange equations are the covariant pair. This article orders the terms and deletes one.
@@ -21,13 +18,9 @@
 **The restriction is the free one.** The action is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and the parent proves that class is invariant exactly under a central Hamiltonian. The limit is defined there and nowhere else, in this family as in the other three.
 
 **The sign, stated once.** The parent's coupling is $ϙ$ with $ϙ=-q$; its action carries $+ϙ\varphi\,\varrho^{2}$, which is $-q\varphi\,\varrho^{2}$ here, and its covariant gradient is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$, which is $(\vec\nabla_\Phi S-q\vec A)/\hbar$ here. Every display below uses $q$, the electric charge, and $\vec\pi=\vec\nabla_\Phi S-q\vec A$.
-
 ## Conventions
-
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.
-
+**The conventions are restated here so that every sign below is checkable from this page alone.** Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.
 ## The Action in the Non-Quantum Limit: The Orders
-
 **The parent's action for the central field in the operator setting.**
 
 $$
@@ -55,8 +48,6 @@ with $ϙ=-q$. Five terms, and the parent's display is reproduced without change.
 
 **There is no expansion in $q$, and the reason is one sentence.** An expansion in $q$ would order the three pieces as $q^{0}$, $q^{1}$, $q^{2}$, which is a bookkeeping in the coupling rather than in the derivatives; the limit's parameter is the derivative count and the two bookkeepings are different. **A truncated series in $q$ would truncate the leading term of this limit**, and that is a different approximation of the same equation.
 
-## The Limit: The Deletion
-
 **Delete the only order-two term.** That is the whole of the limit:
 
 $$
@@ -68,9 +59,7 @@ $$
 **Nothing else changes, and no term is resealed.** The connection sits in the kinetic term exactly where the parent put it, and the potential energy keeps its coefficient.
 
 **What the truncated action is.** The action of a charged, irrotational, pressureless fluid: density $\varrho^{2}$, velocity $\vec\pi/m=(\vec\nabla_\Phi S-q\vec A)/m$, no pressure, and a body force from $\varphi$ and $\vec A$. The deleted term is the fluid's pressure, as it is in the free case, and it is the only pressure the theory has.
-
 ## The Variation: Varying the Scale: the Covariant Eikonal
-
 **The scale's variation of the truncated action.** No term of $S_{\mathrm{cl}}$ carries a derivative of $\varrho$, so the Euler–Lagrange equation is algebraic:
 
 $$
@@ -94,9 +83,7 @@ $$
 which divided by $-2\varrho$ is the parent's Hamilton–Jacobi equation with $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. **The two differ by exactly the deleted term and by nothing else**, and the potential's coefficient is the same in both.
 
 **The quantum potential does not carry the connection, and the action shows why.** The deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, a function of the scale alone. The scale is invariant under the gauge group, so its gradient is too, and the divergence that follows from it is $Q$ and nothing more. **This is the variational form of the parent's first finding**, which the equation route obtains by inspection.
-
 ## The Constraints the Action Imposes: Gauge Invariance of the Truncated Action
-
 **The transformation on the chart.** With $\Gamma$ real, the phase is translated, the vector potential shifted, and the scalar potential shifted:
 
 $$
@@ -122,9 +109,7 @@ $$
 **The two canceling pairs are the two terms that carry the time derivative.** In the action the first term shifts by $-q \varrho^{2}\dot\Gamma$ and the potential-energy term by $+q \varrho^{2}\dot\Gamma$, term for term and pointwise, so no boundary term is produced and no integration by parts is needed. **The truncated action is gauge invariant exactly**, and the parent's reading is the reason it must be: the gauge group translates one coordinate of the word and leaves the other seven, so a term built from the scale and the invariant combination of the phase cannot see it.
 
 **The limit and the gauge transformation commute.** The deletion is the removal of a term built from the scale alone, so it removes a gauge invariant quantity. **Deleting and gauging in either order gives the same action**, and that is a one-line statement here and a computation in an equation-first account.
-
 ## The Structural Consequence: Varying the Phase: the Covariant Transport, Unchanged
-
 **The phase's variation of the truncated action.**
 
 $$
@@ -142,9 +127,7 @@ the covariant continuity equation, whose current is the kinetic momentum over th
 **It is identical on the full action, and the reason is again the deleted term's content.** The deleted term contains no $\theta_{\mathrm{pha}}$ and no $\vec A$, so both derivatives of the Lagrangian with respect to the phase are unchanged. **The transport equation is not an order of an expansion**: it is invariant under the deletion, and that invariance is the variational statement that the connection changes the current's carrier and not its structure.
 
 **The paramagnetic term is what puts $\vec A$ into the current.** Differentiating $\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\rvert^{2}$ with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns the covariant gradient, so the momentum conjugate to the phase is $\hbar \varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A)=\varrho^{2}\vec\pi$, the current. **The piece that looks like a perturbation in the action is the piece that makes the current gauge invariant**, and that is why it cannot be dropped.
-
 ## The Noether Currents: Density, Charge and Energy
-
 **The current is the density times the transport velocity, and the limit makes that literal.** The phase's momentum is the density,
 $$
 \rho=\varrho^{2}\cosh\theta_{\mathrm{rpd}}\ \longrightarrow\ \varrho^{2}\quad\text{in the non-quantum limit},
@@ -154,9 +137,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **The charge and the energy.** The charge is the integral of $\rho$, times the coupling where the field is charged, and it carries no mass. The energy is the mass shell's value, and it carries the mass. The split is exact in the parent and survives the limit unchanged, which is why this article's verification section can check both in one line each.
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
-
-## The Limit: The Truncation and Its Error
-
+## The Limits and the Truncation’s Error
 **Which block is deleted, and how much it costs.** The truncated action drops the gradient of the density squared. That block carries two spatial derivatives and no time derivative, so its order is two in the parameter and its size against the kept terms is the density's curvature over the density itself. **The error is therefore second order and it is a functional of the density alone**, which is the same structure the scalar family has and the reason the two sections are worded alike.
 
 **Restoring it adds the quantum potential.** The restored term enters the equation for $\vec u_{\mathrm b}$ and not the equation for the phase, and it enters with the density in the denominator. **It is large where the density is small**, so the truncated theory cannot describe a node, and the article's section on the nodal exception is where that boundary is stated.
@@ -168,8 +149,6 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **What the error is not.** It is not a bound. **The expansion is asymptotic and convergence is not claimed**, so the statement is that the truncated equations hold to order $\epsilon^{2}$ for densities that vary slowly, and not that the solutions are close in a norm.
 
 **Why the coupling does not change the error.** The connection enters the covariant derivatives of the phase and the potential and does not enter the density's gradient. **The error is the free theory's error**, and the coupled article says so in one sentence.
-
-## The Limit: What Survives
 
 **The covariant eikonal.** The phase's variation of the truncated action gives the covariant eikonal equation, with the connection inside the covariant bracket and the potential's two slots where the article's chart puts them. **The equation survives the truncation unchanged**, because the deleted block contains no phase.
 
@@ -184,7 +163,6 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **Why this list is short.** The family deletes one block and keeps four, so the truncated theory is thin. **The article says that plainly**: the non-quantum limit of the Schrödinger family is the eikonal plus the continuity equation, and the rest of the parent's content is in the term that was removed.
 
 ## What the Principle Adds and What It Relabels: By the Variational Route
-
 **Three things, and the third is the coupling's.**
 
 *The order is a property of a term.* $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ is order two for every field of the class, and that is a statement about the term and not about a solution. The companion has to argue the smallness of $Q$ from the field; here the term's power is exact.
@@ -200,9 +178,32 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 *The slow-connection hypothesis.* The action's leading term contains $\vec\nabla_\Phi S-q\vec A$, so a connection varying as fast as the phase makes the leading term vary as fast as the scale. The truncated action cannot see the condition, because it is a statement about the field's variation and not about a term. **No article in the corpus states it as a hypothesis**, and this one records the gap.
 
 *The boundary terms.* The deletion changes the natural boundary condition on the scale: an action with $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$ needs a Neumann datum on it and the truncated one does not. The corpus states the limit on the whole of space and does not examine the boundary.
+## Summary
+The parent's coupled action has five terms: the phase's rate times the density, the covariant kinetic energy split into free, paramagnetic and diamagnetic pieces, the potential energy times the density, and the scale's gradient squared. The parameter counts spatial derivatives of the scale, so every term but the last is order zero and the last is order two.
 
+The limit is the deletion of that one term, and the deletion is a subtraction. Varying the scale of the truncated action gives the covariant Hamilton–Jacobi equation; varying the phase gives the covariant continuity equation, unchanged term for term. **One deletion changes one equation and leaves the other untouched**, in this family as in the free one.
+
+The three coupling pieces are of one order, so the coupling is leading and there is no expansion in it. The paramagnetic piece is what makes the conjugate momentum the kinetic one, and dropping it would destroy the current's gauge invariance. The truncated action is gauge invariant exactly, and the deletion and the gauge transformation commute because the deleted term is built from the scale alone.
+## Summary of Notation
+| Symbol | Meaning |
+|---|---|
+| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The parent's polar word |
+| $\varrho>0$ | The scale; the density is $\varrho^{2}$ on the central field |
+| $\theta_{\mathrm{pha}}$, $S=\hbar\theta_{\mathrm{pha}}$ | The central angle; the action |
+| $\varepsilon e_{t}$ | The rotor on the central field |
+| $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection |
+| $q$; the parent's $ϙ=-q$ | The electric charge; the parent's coupling |
+| $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Mechanical momentum; the conjugate momentum over $\varrho^{2}$ |
+| $S_{\mathrm{cpl}}$, $S_{\mathrm{cl}}$ | The parent's action; the truncated classical one |
+| $\epsilon=1/(\pi_{\Phi}L)$ | The parameter; one power per derivative of the scale |
+| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; the deleted term's equation |
+## Further Reading
+- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), the parent: the coupled Lagrangian, the three coupling pieces, and the gauge direction of the chart.
+- [The Coupled Schrödinger equation in the Non-Quantum Limit](the-coupled-schrodinger-equation-in-the-non-quantum-limit.html), the companion: the same limit on the parent's pair, the Lorentz force, the vorticity and the circulation.
+- [The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit](the-lagrangian-and-the-schrodinger-equation-in-the-non-quantum-limit.html), the free variational companion.
+- [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), for the covariant logarithmic derivative and the pair.
+- [The Non-Quantum Limit of the Biquaternion Model](the-non-quantum-limit-of-the-biquaternion-model.html), for the parameter and the difference between the limit and the approximation.
 ## Verification
-
 **Both Euler–Lagrange systems were computed, with the term and without it.**
 
 | variation | full action | truncated action |
@@ -217,34 +218,3 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **The current was checked to be the conjugate momentum.** Differentiating the kinetic term with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns $\varrho^{2}\vec\pi$, and its Euler–Lagrange equation is the divergence of that current. The paramagnetic term is what makes the conjugate momentum the kinetic one and not the canonical one.
 
 **What was not checked.** No boundary-value problem was solved and no flux was computed. The claims are about terms and identities, and both were verified as algebra.
-
-## Summary
-
-The parent's coupled action has five terms: the phase's rate times the density, the covariant kinetic energy split into free, paramagnetic and diamagnetic pieces, the potential energy times the density, and the scale's gradient squared. The parameter counts spatial derivatives of the scale, so every term but the last is order zero and the last is order two.
-
-The limit is the deletion of that one term, and the deletion is a subtraction. Varying the scale of the truncated action gives the covariant Hamilton–Jacobi equation; varying the phase gives the covariant continuity equation, unchanged term for term. **One deletion changes one equation and leaves the other untouched**, in this family as in the free one.
-
-The three coupling pieces are of one order, so the coupling is leading and there is no expansion in it. The paramagnetic piece is what makes the conjugate momentum the kinetic one, and dropping it would destroy the current's gauge invariance. The truncated action is gauge invariant exactly, and the deletion and the gauge transformation commute because the deleted term is built from the scale alone.
-
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$ | The parent's polar word |
-| $\varrho>0$ | The scale; the density is $\varrho^{2}$ on the central field |
-| $\theta_{\mathrm{pha}}$, $S=\hbar\theta_{\mathrm{pha}}$ | The central angle; the action |
-| $\varepsilon e_{t}$ | The rotor on the central field |
-| $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$ | The connection |
-| $q$; the parent's $ϙ=-q$ | The electric charge; the parent's coupling |
-| $\vec\pi=\vec\nabla_\Phi S-q\vec A$ | Mechanical momentum; the conjugate momentum over $\varrho^{2}$ |
-| $S_{\mathrm{cpl}}$, $S_{\mathrm{cl}}$ | The parent's action; the truncated classical one |
-| $\epsilon=1/(\pi_{\Phi}L)$ | The parameter; one power per derivative of the scale |
-| $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$ | Quantum potential; the deleted term's equation |
-
-## Further Reading
-
-- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), the parent: the coupled Lagrangian, the three coupling pieces, and the gauge direction of the chart.
-- [The Coupled Schrödinger equation in the Non-Quantum Limit](the-coupled-schrodinger-equation-in-the-non-quantum-limit.html), the companion: the same limit on the parent's pair, the Lorentz force, the vorticity and the circulation.
-- [The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit](the-lagrangian-and-the-schrodinger-equation-in-the-non-quantum-limit.html), the free variational companion.
-- [The Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), for the covariant logarithmic derivative and the pair.
-- [The Non-Quantum Limit of the Biquaternion Model](the-non-quantum-limit-of-the-biquaternion-model.html), for the parameter and the difference between the limit and the approximation.

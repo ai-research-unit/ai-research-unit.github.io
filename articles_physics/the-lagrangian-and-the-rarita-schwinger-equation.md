@@ -10,8 +10,6 @@
 
 **What the article still does.** It states the action's standard form by name; it lists the two multipliers the constraints require; it states the invariance the massless case demands; and it states what the action's Noether procedure would give, since those currents are known from the parent's equation and the action would have to reproduce them.
 
-**Declared omissions.** The reality of the action is not checked, because the action is not written, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. The open question is the article's subject and is not separated from the ledger, so slot 14 is omitted.
-
 ## Conventions
 
 **The conventions are the parent's, unchanged.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is a family $\tilde\Xi_\mu\in\mathbb{B}$ with $\mu=0,1,2,3$, each split into its two chiral parts; the gradient is $\tilde\nabla_\Phi$, its quaternion conjugate $(\tilde\nabla_\Phi)^{\natural}$, the d'Alembertian $\Box_\Phi$; $k_m=mc/\hbar$; the sign vector of the frame is $\varepsilon=(1,-1,-1,-1)$; the fixed direction of the trace constraint is $\vec e_z$.

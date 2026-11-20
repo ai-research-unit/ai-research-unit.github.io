@@ -1,7 +1,5 @@
 # __The Lagrangian and the Coupled Dirac Equation in Polar Variables__
 
-**Declared omissions.** The reality of the action is settled inside the action section so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 This article substitutes the complete polar decomposition into the coupled action of *The Lagrangian and the Coupled Dirac Equation* and reads what the substitution gives. It is the fourth member of the coupled quartet: the element equation, the polar equation, the element action, and this one.
@@ -92,6 +90,14 @@ with $\rho_{\mathrm{num}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. The third term
 
 **One caution about the first term's coefficient.** The coefficient $\hbar c\rho_{\mathrm{num}}$ contains the rapidity, so the action is *not* linear in the velocities in the naive sense: $\rho_{\mathrm{num}}$ depends on $\theta_{\mathrm{rpd}}$, and $\theta_{\mathrm{rpd}}$ is one of the parameters whose velocity does not appear. The action is linear in $\partial_{r'_t}\theta_{\mathrm{pha}}$ with a coefficient that depends on a coordinate. That is the standard shape of a first-order constrained system and it is the reason the Dirac analysis is needed rather than a Legendre transform.
 
+**The pairing. Inherited, and the connection is what the pairing now sees.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$. Its two chiral densities carry $\tilde\nabla_\Phi$ and $(\tilde\nabla_\Phi)^{\natural}$, and the sum is real because the two terms are conjugates. The chart writes the field as a density, a rapidity and a rotor and the connection as four components; all of the chart's variables are real or unit-modulus, so the conjugation that made the sum real in the element form is a fact about the chart's parametrisation and needs no rechecking.
+
+**The type of the coefficient. The mass is real, and the connection's four brackets are the price of the covariant derivative.** Beyond $k_m$, the only coefficients the action carries are the four components of the connection, and the requirement that both variations be real is a requirement on their types. It is P1's question and P1's answer.
+
+**The selection rule. Declared.** The coupling object is a connection and not a potential, so the action has no admissible sector to choose between. The selection rule belongs to the free scalar, where a potential is a free element.
+
+**What reality does not buy. Reality of the pair does not make the two chiral equations compatible.** The density is real term by term and the two variations are real; whether the two resulting equations can hold at once is a different question, and the article answers it in the structural consequence.
+
 ## The Variation: The Euler–Lagrange Equations
 
 **The variation is over the eight parameters.** In the chart the variables are $\varrho$, $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, the two angles of the boost axis $\hat u_{\mathrm b}$, and the three angles of the rotor $\tilde u_{\mathrm r}$. Varying the chart's action with respect to them, and using that the word is a bijection on the invertibles, returns exactly the coupled pair of the element article:
@@ -106,8 +112,37 @@ one equation per part and per material slot. The variation of the connection is 
 
 **Why the bijection is the whole argument.** A variation $\delta\tilde\Xi$ corresponds to one and only one variation of the eight parameters, because the word is a diffeomorphism from the parameter domain onto the invertible elements. So the chart's Euler–Lagrange system is the element system in other coordinates, and the change of variables adds no equation and removes none. That is the reason the polar article can claim the coupled pair without re-deriving it, and it is the first instance of the rule the whole reading obeys.
 
-**What the variation does not do.** It does not produce the constraint algebra. The eight equations determine some velocities and not others, and which is which is the subject of the next section; the variation alone cannot answer it, because the Lagrangian is linear in four of the eight rates.
+**What the variation does not do.** It does not produce the constraint algebra. The eight equations determine some velocities and not others, and which is which is the subject of §*The Constraints the Action Imposes*; the variation alone cannot answer it, because the Lagrangian is linear in four of the eight rates.
 
+**The parameter basis and the four brackets.** The four brackets are the decomposition of the logarithmic derivative, and the coupling acts on two of them. That statement is exact, it does not depend on the conjecture, and it is the article's clearest structural result.
+
+**The four brackets, with the coupling.** For each component,
+
+$$
+\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
+=\frac{1}{2}\partial_\mu\ln\rho_{\mathrm{num}}
++i\Bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu^{\,t}\Bigr)
++\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
++\frac{i\,ϙ}{\hbar}A_\mu^{\,\eta}\vec e_\eta
++\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r},
+$$
+
+where $A_\mu^{\,t}$ and $A_\mu^{\,\eta}$ are the temporal and spatial slots of the component's potential, and where the two added terms have been written beside the brackets they join.
+
+**The type table.**
+
+| bracket | type | coupling's share | meaning |
+| --- | --- | --- | --- |
+| scale | real central scalar | none | continuity |
+| phase | central imaginary | temporal slot | guidance |
+| boost | Hermitian | spatial slots | velocity transport |
+| rotor | real vector | none | spin transport |
+
+**Two of four, and the two are the momentum and the velocity.** The potential joins the phase bracket, where the momentum is read, and the boost bracket, where the velocity is read. It cannot join the scale bracket, where the density is read, and it cannot join the rotor bracket, where the spin is read. That is the polar statement of what a central connection can and cannot do, and it is a statement of algebraic type: a central scalar times a field cannot produce a real vector part.
+
+**Why the two-bracket structure is the one to read the coupling from.** It says in advance which physical quantities the potential can shift and which it must leave alone. The density is untouched because the potential is central; the spin direction is untouched for the same reason. The momentum and the velocity are shifted because the potential's two slots have exactly the two types those brackets carry. No computation of the potential's effect on the field is needed beyond the type table.
+
+**The limit of the statement.** The type table says where the potential acts; it does not say what the resulting motion is. For a constant potential the motion is a gauge phase and the shift is unobservable; for a non-constant one the shift is the Lorentz force at the level of the momentum, and the article does not derive the force from the brackets. That derivation belongs to the element companion's forces and to *Relativistic Mechanics from the Dirac Wave*.
 ## The Constraints the Action Imposes: The Structure
 
 The action is first order in eight parameters, one of which has its velocity in the action. That single fact fixes the whole constraint structure.
@@ -150,38 +185,6 @@ The second is the continuity equation with the density $\rho_{\mathrm{num}}$; th
 **No multipliers is not no constraints.** The six equations above are constraints, and they are Euler–Lagrange equations of the same functional; they are not multipliers and they are not optional. A reader who takes "no multipliers" for "no constraints" has the wrong picture, and the distinction is the article's main technical point.
 
 **What kind of constraints.** They are primary: they follow from the momenta's vanishing, not from the equations of motion. Whether they are first class or second class — whether they generate gauge transformations or restrict the initial data — has not been determined. That determination requires the Poisson brackets of the constraints among themselves, and the brackets are the ones the four-bracket structure suggests and not the ones a canonical analysis of the parameters would give. The article does not carry the computation out, and §*Open Questions* says so.
-
-## The Parameter Basis and the Four Brackets: The Bracket Expansion
-
-The four brackets are the decomposition of the logarithmic derivative, and the coupling acts on two of them. That statement is exact, it does not depend on the conjecture, and it is the article's clearest structural result.
-
-**The four brackets, with the coupling.** For each component,
-
-$$
-\tilde\Xi^{-1}\tilde\nabla_{\mathrm{gco},\Phi,\mu}\tilde\Xi
-=\frac{1}{2}\partial_\mu\ln\rho_{\mathrm{num}}
-+i\Bigl(\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu^{\,t}\Bigr)
-+\tilde u_{\mathrm r}^{-1}\bigl(\tilde U_{\Psi,\mathrm b}^{-1}\partial_\mu\tilde U_{\Psi,\mathrm b}\bigr)\tilde u_{\mathrm r}
-+\frac{i\,ϙ}{\hbar}A_\mu^{\,\eta}\vec e_\eta
-+\tilde u_{\mathrm r}^{-1}\partial_\mu\tilde u_{\mathrm r},
-$$
-
-where $A_\mu^{\,t}$ and $A_\mu^{\,\eta}$ are the temporal and spatial slots of the component's potential, and where the two added terms have been written beside the brackets they join.
-
-**The type table.**
-
-| bracket | type | coupling's share | meaning |
-| --- | --- | --- | --- |
-| scale | real central scalar | none | continuity |
-| phase | central imaginary | temporal slot | guidance |
-| boost | Hermitian | spatial slots | velocity transport |
-| rotor | real vector | none | spin transport |
-
-**Two of four, and the two are the momentum and the velocity.** The potential joins the phase bracket, where the momentum is read, and the boost bracket, where the velocity is read. It cannot join the scale bracket, where the density is read, and it cannot join the rotor bracket, where the spin is read. That is the polar statement of what a central connection can and cannot do, and it is a statement of algebraic type: a central scalar times a field cannot produce a real vector part.
-
-**Why the two-bracket structure is the one to read the coupling from.** It says in advance which physical quantities the potential can shift and which it must leave alone. The density is untouched because the potential is central; the spin direction is untouched for the same reason. The momentum and the velocity are shifted because the potential's two slots have exactly the two types those brackets carry. No computation of the potential's effect on the field is needed beyond the type table.
-
-**The limit of the statement.** The type table says where the potential acts; it does not say what the resulting motion is. For a constant potential the motion is a gauge phase and the shift is unobservable; for a non-constant one the shift is the Lorentz force at the level of the momentum, and the article does not derive the force from the brackets. That derivation belongs to the element companion's forces and to *Relativistic Mechanics from the Dirac Wave*.
 
 ## The Structural Consequence: The Brackets Count the Constraints
 

@@ -1,7 +1,5 @@
 # __The Lagrangian and the Proca Equation in Momentum Space__
 
-**Declared omissions.** The reality of the action is a statement about the symbol and is made there, so slot 5 is omitted, with its four subsections. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
-
 ## Introduction
 
 **The variational parent states its central structural fact in prose and this article puts a number on it.** *The Lagrangian and the Proca Equation* writes the action $\mathcal{L}=\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12k_m^{2}\langle\tilde A_\Phi\rangle_\natural$, derives the equation, and then says the sentence the whole subject turns on: **the mass term is the obstruction to gauge invariance**. Shifting the potential by a gradient leaves the field term alone and moves the mass term, so the action has no gauge symmetry and the equation inherits a longitudinal part. The article says the obstruction is the presence of one term in the action. **What it does not say is what the term costs.**
@@ -106,8 +104,6 @@ because $A\cdot k=[kA]$ and the two $k^{2}$ terms cancel. **So the directional d
 
 **What the form cannot say is which representative to choose.** A gauge freedom is a freedom, and a quadratic form that has a null direction does not select one. **The parent's statement that in the massless theory $S=0$ can be reached from any potential by a gauge transformation is the statement that the null direction can be removed by a shift**, and the form's version is that the kernel of the Hessian contains the wave number. The two agree and neither is deeper.
 
-## The Constraints the Action Imposes: The Temporal Coefficient Has No Frequency
-
 **The coefficient of $A_0^{2}$ contains no $\omega^{2}$, and that is the primary constraint.** Expanding the form's diagonal,
 
 $$
@@ -123,16 +119,6 @@ so the temporal coefficient is $\tfrac12(\vec k_\Phi^{2}+k_m^{2})$ and the three
 **The coupling does not add one, and that is a statement about the field strength.** $F_{0\eta}=\partial_0A_\eta-\partial_\eta A_0$ contains no $\partial_0A_0$, so no amount of minimal coupling can put an $\omega^{2}$ on $A_0$. **The variational coupled companion makes the same statement with the connection present**, and the two agree because the reason is the antisymmetry of the field strength and not the absence of a potential.
 
 **The three spatial coefficients move because they are the propagating ones.** Their frequency dependence is the dispersion relation's, read as a coefficient: on the shell the transverse coefficient vanishes, which is the symbol's rank drop. **The temporal coefficient never vanishes for a massive field**, which is why the primary constraint is not a dynamical equation at any frequency.
-
-## Zero, Pole and the On-Shell Action: Zero, Pole and Degeneracy Are One Locus
-
-**The form degenerates exactly where the symbol is singular and exactly where the propagator has its pole.** The transverse coefficient is $-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, so the form is degenerate on the Lorenz plane precisely at $k^{2}=k_m^{2}$. That is the same surface as the form companion's $\det\sigma=0$ and the same surface as the propagator's denominator's zero. **Three registers, one locus**, and the naming is *The Lagrangian and the Dirac Equation in Momentum Space*'s, whose §*Zero and Pole Are One Object* establishes it for the Dirac action.
-
-**The three statements are not equivalent and they are one function's three readings.** The action's vanishing on shell selects the support; the symbol's singularity gives the pole; the form's degeneracy says the amplitude is unconstrained there. **Write $N(k)=k^{2}-k_m^{2}$: the variational output is $N=0$, the symbol is $N$ times a projector plus $-k_m^{2}$ along $k$, and the propagator is proportional to $1/N$.** The article states the three and does not claim that any one of them implies another.
-
-**What the Proca case adds to the Dirac precedent is the projector.** In the Dirac case the second variation is one central scalar and the zero is a number's vanishing. Here the second variation is a matrix with two distinct eigenvalues, so the locus where the form degenerates is a locus where it degenerates *partially*: rank one on the shell, not rank zero. **The partial degeneracy is the three polarisations**, and the article's one addition to the precedent is that sentence.
-
-**The degeneracy is not the pole's whole story.** A propagator's residue at the pole is a projector, and here it is the transverse projector: the residue is supported on the Lorenz plane and vanishes along the wave number. **That is why the longitudinal mode's contribution to the propagator is not a pole at all** but the $-1/k_m^{2}$ term the standard treatment records, and the form's eigenvalues say so in one line.
 
 ## The Structural Consequence: The Longitudinal Coefficient Is the Mass Alone
 
@@ -170,6 +156,16 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 **The two statements differ in what they trace over.** The parent traces over the spacetime indices of a tensor; the article traces over the amplitude directions of a Hessian. **Both give the mass**, and the agreement is the reason the trace statements are not two coincidences: the mass is the only term in the action that is a multiple of the identity in the amplitude space.
 
 **What the trace does not do is vanish anywhere physical.** $\mathrm{tr}\,\sigma=0$ requires $k^{2}=\tfrac43k_m^{2}$, which is not the mass shell. **So the massive vector field's symbol is never traceless**, and the parent's conformal non-invariance is the same fact: the mass is in the trace and cannot be removed from it. A massless field has $\mathrm{tr}\,\sigma=3k^{2}$, which vanishes exactly on the cone.
+
+## Zero, Pole and the On-Shell Action: Zero, Pole and Degeneracy Are One Locus
+
+**The form degenerates exactly where the symbol is singular and exactly where the propagator has its pole.** The transverse coefficient is $-\tfrac12(k^{2}-k_m^{2})A\!\cdot\!A$, so the form is degenerate on the Lorenz plane precisely at $k^{2}=k_m^{2}$. That is the same surface as the form companion's $\det\sigma=0$ and the same surface as the propagator's denominator's zero. **Three registers, one locus**, and the naming is *The Lagrangian and the Dirac Equation in Momentum Space*'s, whose §*Zero and Pole Are One Object* establishes it for the Dirac action.
+
+**The three statements are not equivalent and they are one function's three readings.** The action's vanishing on shell selects the support; the symbol's singularity gives the pole; the form's degeneracy says the amplitude is unconstrained there. **Write $N(k)=k^{2}-k_m^{2}$: the variational output is $N=0$, the symbol is $N$ times a projector plus $-k_m^{2}$ along $k$, and the propagator is proportional to $1/N$.** The article states the three and does not claim that any one of them implies another.
+
+**What the Proca case adds to the Dirac precedent is the projector.** In the Dirac case the second variation is one central scalar and the zero is a number's vanishing. Here the second variation is a matrix with two distinct eigenvalues, so the locus where the form degenerates is a locus where it degenerates *partially*: rank one on the shell, not rank zero. **The partial degeneracy is the three polarisations**, and the article's one addition to the precedent is that sentence.
+
+**The degeneracy is not the pole's whole story.** A propagator's residue at the pole is a projector, and here it is the transverse projector: the residue is supported on the Lorenz plane and vanishes along the wave number. **That is why the longitudinal mode's contribution to the propagator is not a pole at all** but the $-1/k_m^{2}$ term the standard treatment records, and the form's eigenvalues say so in one line.
 
 ## The Noether Currents: The Stress Per Mode
 
