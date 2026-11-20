@@ -127,6 +127,16 @@ $$</p>
 <p><strong>Therefore the split is a factorization, and the operator count is its reason.</strong> The pair is not one operator applied once. The gradient acts on the part written $R$, the conjugated gradient acts on the part written $L$, and $k_m$ relates them. A first-order functional hosts one operator per slot, so the pair needs two slots, and the mass is the only term that can couple them, which is why it is off-diagonal. That is the variational reading of the parent's remark that the field is one element and the letters name two parts of it: the parts are what the action needs, they are not values, and the mass is what makes the two of them necessary.</p>
 <p><strong>The selection rule. Not examined here.</strong> The selection rule is a statement about the symbol's Hermiticity and belongs to the momentum reading, where the potential is an operator acting at a mode. In this article the potential is central and the question does not arise.</p>
 <p><strong>What reality does not buy. Not at issue here.</strong> The claim is that the action is real and that the pair has no one-element rival; how much weaker a real action is than a real spectrum is the momentum reading's question, and the limit reading's.</p>
+<h3 id="the-two-settings-the-massless-case-and-the-two-phases">The Two Settings: The Massless Case and the Two Phases</h3>
+<p>At $k_m=0$ the action has two independent phase symmetries,</p>
+<p>$$
+\tilde\Xi_L\mapsto e^{i\alpha}\tilde\Xi_L,
+\qquad
+\tilde\Xi_R\mapsto e^{i\beta}\tilde\Xi_R,
+$$</p>
+<p>with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is the electric phase; the difference is the chiral phase. For $k_m\ne0$ the mass term carries $\tilde\Xi_L^{*}\tilde\Xi_R$ and its conjugate, both invariant under the sum and neither invariant under the difference, so the chiral symmetry is broken by the mass and by nothing else.</p>
+<p><strong>The chiral current is the difference of the two part-currents</strong>, and it is conserved exactly when $k_m=0$. The article does not derive it: it is the same Noether computation as the electric one with the two signs opposite, and its conservation is the statement that the mass term is the only obstruction.</p>
+<p><strong>One caution.</strong> The chiral symmetry of this action is a symmetry of the two-part functional. Whether it is a symmetry of the parent's equation read as a single equation is the same question as whether the split is canonical, and the answer is not needed here.</p>
 <h2 id="the-variation-the-pair">The Variation: The Pair</h2>
 <p>Vary both parts, $\tilde\Xi_p\mapsto\tilde\Xi_p+\delta\tilde\Xi_p$, and take the real part. The result is</p>
 <p>$$
@@ -185,16 +195,6 @@ E=T^{t}{}_{t},
 $$</p>
 <p>with $\mathcal{L}$ the integrand of the action. Its conservation on solutions is the statement that the generator does not depend on the coordinate, and it is the Noether statement of the constant setting. The symmetric improvement of this tensor, and its agreement with the stress tensor computed from the operator, are the <em>Quantum Stress Tensor</em> article's subject and are not derived here.</p>
 <p><strong>What is deliberately absent.</strong> There is no spin current in this section. The spin of this field is the rotor's (§<em>the polar companion</em>), it is not a Noether current of the element action, and a "spin current" derived here would be a second derivation of something the polar form already states exactly. The Dirac spin current as a Noether current belongs to the polar article, where the rotor is a variable.</p>
-<h2 id="the-two-settings-the-massless-case-and-the-two-phases">The Two Settings: The Massless Case and the Two Phases</h2>
-<p>At $k_m=0$ the action has two independent phase symmetries,</p>
-<p>$$
-\tilde\Xi_L\mapsto e^{i\alpha}\tilde\Xi_L,
-\qquad
-\tilde\Xi_R\mapsto e^{i\beta}\tilde\Xi_R,
-$$</p>
-<p>with $\alpha$ and $\beta$ independent central angles. The sum $\alpha=\beta$ is the electric phase; the difference is the chiral phase. For $k_m\ne0$ the mass term carries $\tilde\Xi_L^{*}\tilde\Xi_R$ and its conjugate, both invariant under the sum and neither invariant under the difference, so the chiral symmetry is broken by the mass and by nothing else.</p>
-<p><strong>The chiral current is the difference of the two part-currents</strong>, and it is conserved exactly when $k_m=0$. The article does not derive it: it is the same Noether computation as the electric one with the two signs opposite, and its conservation is the statement that the mass term is the only obstruction.</p>
-<p><strong>One caution.</strong> The chiral symmetry of this action is a symmetry of the two-part functional. Whether it is a symmetry of the parent's equation read as a single equation is the same question as whether the split is canonical, and the answer is not needed here.</p>
 <h2 id="what-the-principle-adds-and-what-it-relabels">What the Principle Adds and What It Relabels</h2>
 <p>The honest ledger, as in the Schrödinger companion.</p>
 <p><strong>Adds.</strong> A compact statement of the pair as one variation. The two currents of the electric symmetry and the four of translation, in one derivation. The reason the split is a factorization rather than a convenience: the pair carries two operators, a first-order functional gives each operator one slot, and the one-sided functional in the same pairing is empty. The proof is the self-adjointness of the gradient; it excludes the one-element reading of the pair without excluding one-element actions in general. The proof that the mass term is the only coupling, hence that the chiral symmetry is broken by the mass alone.</p>
@@ -202,17 +202,8 @@ $$</p>
 <p><strong>What is genuinely different from the Schrödinger case.</strong> There the action is one term on one element and the equation is second order in space and first in time. Here the action is four terms on two elements and the equation is first order in both. The difference is not a choice of notation: it is what makes the split mandatory and what makes the mass a coupling rather than a potential.</p>
 <p><strong>One integral, one local.</strong> The action is a functional on the whole field configuration and its Euler–Lagrange equations are local differential equations. The variational form is not opposed to the equation; it is equivalent to it, and it delivers the currents in the same step.</p>
 <h2 id="open-questions">Open Questions</h2>
-<ol>
-<li>
-<p><strong>Which reading of the current is physical.</strong> That the current's spatial component is ambiguous is recorded in §<em>The Noether Currents</em> as a limitation of this derivation. The question that remains is the physical one: which element of the algebra the measured current is. It is not a question about conservation, which holds in both readings. An answer would have to state the two parts as functionals of one field, and the author knows of no such statement.</p>
-</li>
-<li>
+<p><strong>Which reading of the current is physical.</strong> That the current's spatial component is ambiguous is recorded in §<em>The Noether Currents</em> as a limitation of this derivation. What remains is the physical question: which element of the algebra the measured current is. It is not a question about conservation, which holds in both readings. An answer would have to state the two parts as functionals of one field, and the author knows of no such statement.</p>
 <p><strong>The operator setting.</strong> The action is written for a constant Hamiltonian, where the propagator is a closed form. With an operator Hamiltonian the same functional exists, but whether the two parts stay in $\mathbb{B}$ under a non-central potential is the parent's closure question, and the action inherits it.</p>
-</li>
-<li>
-<p><strong>The path integral.</strong> The action is the extremum's object; the path integral is the sum over configurations. The two are different objects and the second is not attempted here.</p>
-</li>
-</ol>
 <h2 id="summary">Summary</h2>
 <p>The Dirac equation of this corpus is a pair, $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$, with $k_m=mc/\hbar$. Its action is</p>
 <p>$$

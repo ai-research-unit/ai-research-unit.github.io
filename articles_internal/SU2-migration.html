@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SU(2) Migration: The Rotor Replaces the Matrix in the Electroweak Section — Biquaternion Universe</title>
+  <title>The SU(2) Migration: Name the Group, Then Write the Rotor — Biquaternion Universe</title>
   <meta name="description" content="The question. Every article of the electroweak section writes or, and none of them says what that symbol is in the algebra. The section is therefore…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,29 +69,30 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="su2-migration-the-rotor-replaces-the-matrix-in-the-electroweak-section"><strong>SU(2) Migration: The Rotor Replaces the Matrix in the Electroweak Section</strong></h1>
+        <h1 id="the-su2-migration-name-the-group-then-write-the-rotor"><strong>The SU(2) Migration: Name the Group, Then Write the Rotor</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The question.</strong> Every article of the electroweak section writes $SU(2)$ or $SU(2)_L$, and none of them says what that symbol is in the algebra. The section is therefore written in a language the corpus does not own, and a reader who knows only the biquaternions cannot tell whether the group is the rotation group, a display of it, or an imported internal symmetry. This file answers the question for all thirty-three articles and gives the rewrite, article by article.</p>
-<p><strong>The answer in one line.</strong> $SU(2)$ is the <strong>rotor group</strong>, and the gauge action on matter is <strong>left multiplication by a rotor</strong>:</p>
+<p><strong>The answer in one line.</strong> $SU(2)$ is the <strong>group</strong>, and the gauge action on matter is <strong>left multiplication by a rotor</strong>:</p>
 <p>$$
-\boxed{\;\mathrm{Rot}=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=S^3,\qquad
+\boxed{\;\mathrm{SU}(2)=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=S^3,\qquad
 \tilde\Xi\ \longmapsto\ \tilde U\,\tilde\Xi,\qquad
 \tilde U=\cos\tfrac{\varphi}{2}+\sin\tfrac{\varphi}{2}\,\vec u\; }
 $$</p>
 <p>with $\vec u$ a unit real pure quaternion and $\vec e_a$ the three generators. The same rotor also acts by the Hermitian pair $\mathrm{Sd}_{\tilde u}(\vec v)=\tilde u\,\vec v\,\tilde u^{*}$ on the vector part — written with the natural conjugate $\natural$ in the quaternion literature, which is the same thing there because $\tilde u^{*}=\tilde u^{\natural}$ at a unit real quaternion — and by the same two-sided map on a quaternion-valued scalar. Those are three actions of one group, and the section conflates them.</p>
-<p><strong>Why the symbol is not neutral.</strong> $SU(2)$ is a <strong>matrix display</strong> of the rotor group, not the group. The corpus says so in as many words: "The sentence 'the rotor group is $SU(2)$' is therefore true up to isomorphism and misleading in practice, because it makes the display look like the object… The worst of those readings is the belief that the group has a preferred axis, which it does not" (<code>the-rotor-group-via-4x4-real-matrices</code>). The display marks an axis, and the mark is a choice of complex structure on $\mathbb{H}$, that is, a point of $S^2$. A physics article that writes $\sigma_3$ everywhere has chosen that point without saying so.</p>
+<p><strong>Why the name stays and the display goes.</strong> Two objects are at stake and only one of them is the problem. $SU(2)$ is the <strong>group</strong>, correctly named, and the name is kept: it is what the literature says, and an article that never writes it cannot be matched to a paper or to a table of quantum numbers. What the article drops is the <strong>matrix display</strong>, the map $\mathsf M_2:\mathrm{SU}(2)\to SU(2)$, which marks an axis. The corpus says so in as many words: "The sentence '$SU(2)$ is $SU(2)$' is therefore true up to isomorphism and misleading in practice, because it makes the display look like the object… The worst of those readings is the belief that the group has a preferred axis, which it does not" (<code>the-spin-group-via-4x4-real-matrices</code>). The display marks a point of $S^2$, a choice of complex structure on $\mathbb{H}$; an article that writes $\sigma_3$ throughout has chosen that point without saying so. The name costs nothing. The display costs the axis.</p>
 <p><strong>What the migration is.</strong> A text migration inside the electroweak section. No slug changes, no menu changes, no new physics, no count changes. The object stays the same; the words and the equations that name it change. Nine articles take a mechanical replacement, fourteen a section-level rewrite, five a deep rewrite of an argument, and five are Lagrangian articles left to the other job.</p>
 <p><strong>What the migration is not.</strong> It does not touch the Lagrangian family, which is a separate job with its own file. It does not claim that weak isospin is derived. It does not remove the honest ledger — the section remains a record of what the algebra supplies and what it imports. The migration makes the ledger legible in the corpus's own terms; it does not change a single verdict.</p>
 <p><strong>The boundary, and its count.</strong> The section holds thirty-three anchors in <code>physics.md</code>, from <code>the-electroweak-gauge-group-and-the-hypercharge-assignment</code> to <code>the-lagrangian-and-the-electroweak-theory</code>. Every one is covered below.</p>
-<p><strong>The rule that governs every edit.</strong> A symbol is replaced only by an object of the algebra plus a <strong>named action</strong>. No replacement is allowed to introduce a matrix, a Pauli array or an unqualified group letter. Where the replacement cannot be made, the article says so and the ledger records the gap.</p>
+<p><strong>The rule that governs every edit, in three steps.</strong> First, <strong>the group is named</strong>: $SU(2)$, in the article's own text, at the point where its development starts. Second, <strong>the identification is stated in one sentence</strong>: $SU(2)$ <em>is</em> $SU(2)$ of the spatial rotations, $\mathrm{SU}(2)=\mathrm{Spin}(3)=S^3$, the unit real quaternions. Third, <strong>the development is carried in the algebra</strong>: $\tilde u$ for the element, $\vec e_a$ for the generators, $\mathrm{Sd}_{\tilde u}$ for the turning, $L_{\tilde u}$ for the carrying, $\tilde\Xi$ for the field. Two things are excluded, and neither of them is the name. A <strong>matrix display</strong> used as the working object is excluded, and a <strong>Pauli array</strong> is excluded except where the source being quoted writes one. The name is not a residue of the standard theory; it is how the reader finds the group again outside the corpus.</p>
+<p><strong>The opposite error, committed once in this job and repaired.</strong> The first pass over the section wrote $\mathrm{SU}(2)$ alone. Eight of the twenty-eight articles ended with no mention of $SU(2)$ in their own text, and in nineteen more the name appeared only inside a link title or a citation or in a sentence that refused it, so the identification sentence was missing exactly where a reader needs it. The audit in §<em>The Naming Rule, and the Audit It Implies</em> edited twenty-seven of the twenty-eight; <code>electroweak-theory-...u2-reach-and-the-chiral-wall</code> already carried the sentence. Where the replacement cannot be made at all, the article says so and the ledger records the gap.</p>
 <h2 id="the-object-one-group-four-names-and-a-quotient">The Object: One Group, Four Names, and a Quotient</h2>
-<p><strong>The names.</strong> $\mathrm{Rot}=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=S^3=\mathrm{Sp}(1)=\mathrm{Spin}(3)$. Four names, one group, real dimension three. The corpus's own inventory is <code>the-quaternion-versors-and-the-unitary-group</code> and <code>the-rotor-group-via-4x4-real-matrices</code>.</p>
+<p><strong>The names.</strong> $SU(2)$, and in the algebra $\mathrm{SU}(2)=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=S^3=\mathrm{Sp}(1)=\mathrm{Spin}(3)$. One group, five names, real dimension three. The first is the name of the group in the literature and the one every article writes at its first development of the group; the second is the name the algebra calculates with, and it says what the group <strong>is</strong> — the rotors of the spatial rotations; the last three are the names the topology and the covering theory use. The corpus's own inventory is <code>the-quaternion-versors-and-the-unitary-group</code> and <code>the-spin-group-via-4x4-real-matrices</code>.</p>
 <p><strong>Its place in the algebra.</strong> $\mathrm{U}(\mathbb{B})=\mathrm{U}(2)=S^1\cdot S^3$ with $S^1\cap S^3=\{\pm e_t\}$, so</p>
 <p>$$
 \mathrm{U}(\mathbb{B})\cong\bigl(S^1\times S^3\bigr)/\{\pm e_t\},\qquad
 \mathrm{U}(\mathbb{B})/S^3\cong S^1 ,
 $$</p>
-<p>the second by the norm map. The rotor group is the kernel of the norm on the unitary group: it is $\mathbb{H}\cap U(2)$. The quotient $\{\pm e_t\}$ is not a detail — it is the parity lock of <code>the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock</code>, and it is the double cover.</p>
+<p>the second by the norm map. $SU(2)$ is the kernel of the norm on the unitary group: it is $\mathbb{H}\cap U(2)$. The quotient $\{\pm e_t\}$ is not a detail — it is the parity lock of <code>the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock</code>, and it is the double cover.</p>
 <p><strong>Its Lie algebra, in the algebra's basis.</strong> $\mathfrak{u}(2)=\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathfrak{su}(2)$ as a direct sum of Lie algebras, with</p>
 <p>$$
 \mathfrak{su}(2)=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\},\qquad
@@ -227,22 +228,119 @@ $$</p>
 </table></div>
 <p><strong>The three carriers are not three subspaces of one kind, and the dictionary must not flatten them.</strong> The corpus's census is exact: the carrier of spin $0$ is the real line $\mathbb{R}e_t$ of real dimension $1$; the carrier of spin $\tfrac12$ is the plane $\Sigma(\vec u_{\mathrm r})$ of real dimension $2$; the carrier of spin $1$ is the vector part $\mathfrak{k}$ of real dimension $3$. Their closures are $\mathbb{C}e_t$ (real dimension $2$), the spinor space $S_+$ (real dimension $4$) and $\mathbb{B}_\Phi$ (real dimension $4$). The spin-zero and spin-one carriers are acted on by the <strong>two-sided</strong> map $\operatorname{Ad}$; the spin-half carrier by the <strong>one-sided</strong> $L$. That difference of action, and not the dimension, is what makes the spectra $\{0\}$, $\{\pm\tfrac12\}$ and $\{\pm1,0\}$ differ by the factor that the section's tables record.</p>
 <p><strong>Two consequences for the writes.</strong> First, a "doublet" is $S_+$, which is a <strong>family</strong> indexed by the axis $\vec u_{\mathrm r}$: the algebra contains infinitely many of them and none is singled out, so an article that speaks of "the" doublet has silently chosen an axis and must say so — exactly the choice the Peirce basis already makes. Second, the gauge field $\mathcal A_\mu\in\mathbb{B}_\Phi$ cannot act on $\mathbb{B}_\Phi$ itself, because $L_{\tilde A}$ keeps $\mathbb{B}_\Phi$ only at a real scalar; it acts on the ideal. The carrier of the gauge action and the space the gauge field lives in are therefore different objects, and the rewrite says which is which in one sentence.</p>
-<p><strong>Two rules of usage.</strong> First, the letter $SU(2)$ survives only in <em>citations of the standard model</em>, in the pattern "the standard theory's $SU(2)_L\times \mathrm{U}(1)_Y$, imported". Second, wherever the framework's own object is meant, the article writes $\mathrm{Rot}$ or "the rotor group", and names the side of the action. A grep that finds a bare $SU(2)$ outside an imported-standard-model sentence marks a line that has not been migrated.</p>
+<h2 id="the-naming-rule-and-the-audit-it-implies">The Naming Rule, and the Audit It Implies</h2>
+<p><strong>The rule, once, in the form an editor applies it.</strong> Name the group, state the identification, then write the algebra. Three sentences are the whole of it, and no article in scope may skip the first two:</p>
+<ol>
+<li><strong>Name.</strong> "<em>The compact factor is $SU(2)$</em>" — or the name inside the sentence that introduces the group, whichever reads better.</li>
+<li><strong>Identify.</strong> "<em>$SU(2)$ is $SU(2)$ of the spatial rotations, $\mathrm{SU}(2)=\mathrm{Spin}(3)=S^3$, the unit real quaternions</em>" — one clause, in the same paragraph, before any rotor is used.</li>
+<li><strong>Write the algebra.</strong> From there on: $\tilde u\in\mathrm{SU}(2)$; $\mathrm{Sd}_{\tilde u}(\vec v)=\tilde u\vec v\tilde u^{*}$ for the turning; $L_{\tilde u}$ for the carrying; $T_a=\tfrac12\vec e_a$ for the generators; $\tilde\Xi$ for the field. The matrix display appears only against the standard theory, and a Pauli array only where the source writes one.</li>
+</ol>
+<p><strong>What the rule permits, stated because the first pass got it wrong.</strong> $SU(2)$ may appear as often as the argument needs. It is the name of the group, it is what the literature and the tables of quantum numbers use, and a reader who meets only $\mathrm{SU}(2)$ cannot name the group in a paper. The rule forbids the <strong>display</strong> as the working object, not the <strong>name</strong>.</p>
+<p><strong>What the audit found, before the repair.</strong> Twenty-seven of the twenty-eight articles failed step 2. The failures fell in two classes.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Articles</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the group is never named in the article's own text</td>
+<td><code>...gauge-carrier...</code>, <code>...effective-potential-and-the-coleman-weinberg...</code>, <code>...fujikawa-method...</code>, <code>...neutrino-and-majorana...</code>, <code>...majorana-equation...</code>, <code>...electric-dipole-moment...</code>, <code>...left-right-symmetric-fermions...</code>, <code>...pmns-matrix...</code></td>
+<td>8</td>
+</tr>
+<tr>
+<td>the name is present but stands apart from the rotor — in a link title, a citation, or a sentence that refuses it</td>
+<td>the remaining nineteen, among them <code>...higgs-mechanism...</code>, <code>...custodial-symmetry...</code>, <code>...w-and-z-bosons...</code>, <code>...chiral-fermions...</code>, <code>...yukawa-sector...</code>, <code>...seesaw-mechanism...</code>, <code>...gauge-fixing...</code>, <code>...stueckelberg-mechanism...</code></td>
+<td>18</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the audit finds now.</strong> All twenty-eight pass: each names the group and identifies it with the rotor in one paragraph. The check is mechanical, on whitespace-collapsed text, and looks for $SU(2)$ within two hundred characters of $\mathrm{SU}(2)$ or "rotor" in either order, which catches the identification sentence wherever it was placed.</p>
+<p><strong>Three clauses the repair added, and they are the model for the Lagrangian job.</strong> The identifications were not all the same shape, and the three shapes are worth reusing.</p>
+<ul>
+<li><em>Group first, object second</em>: "the compact factor is $SU(2)$, which in this algebra is $\mathrm{SU}(2)=\mathrm{Spin}(3)$" — for an article that imports the group and then works.</li>
+<li><em>Object first, group in apposition</em>: "$SU(2)$ — $SU(2)$ under its biquaternion name — is the unit real quaternions" — for an article already written in rotors.</li>
+<li><em>Negative identification</em>: "the compact factor $SU(2)=\mathrm{SU}(2)$ acts on the spin index and identically on every generation" — for an article where the group plays no part and the point is that it plays none.</li>
+</ul>
+<p><strong>The eight articles where the framework's own group is written $SU(2)$, and the sentence that keeps it.</strong> These are the files where $SU(2)$ names the framework's compact factor in the article's own prose rather than quoting the standard theory. They keep the name, and the pass over them is a precision pass and not a replacement. Corrected counts, with <code>$\mathrm{SU}(2)$</code> included:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Article</th>
+<th>$SU(2)$</th>
+<th>what the occurrences do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form</code></td>
+<td>62</td>
+<td>$SU(2)_L\times SU(2)_R$ and $SU(2)_V$, the custodial notation of the reference theory, plus "the framework's $\mathrm{SU}(2)$ is not the chiral $SU(2)_L$"</td>
+</tr>
+<tr>
+<td><code>electroweak-theory-...u2-reach-and-the-chiral-wall</code></td>
+<td>54</td>
+<td>the decomposition $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ and its consequences, in a table</td>
+</tr>
+<tr>
+<td><code>the-higgs-mechanism-in-biquaternionic-form</code></td>
+<td>21</td>
+<td>"a singlet of $\mathrm{SU}(2)$", "cannot break $SU(2)$", "which representation of $SU(2)$ can the scalar occupy"</td>
+</tr>
+<tr>
+<td><code>electroweak-symmetry-breaking-...-gauge-boson-masses</code></td>
+<td>17</td>
+<td>the reference doublet, the comparison table, "annihilated by the $SU(2)$ action"</td>
+</tr>
+<tr>
+<td><code>the-electroweak-pair-...-the-quotient-and-the-parity-lock</code></td>
+<td>15</td>
+<td>$SU(2)\times\mathrm{U}(1)$ and the quotient, four times in displays</td>
+</tr>
+<tr>
+<td><code>the-gauge-extension-of-the-central-phase-...</code></td>
+<td>11</td>
+<td>the table row, the extension of $SU(2)$ by the central phase</td>
+</tr>
+<tr>
+<td><code>representation-is-a-function-of-spin</code></td>
+<td>5</td>
+<td>the canonical identification itself, plus the display $\mathsf M_2:\mathrm{SU}(2)\to SU(2)$</td>
+</tr>
+<tr>
+<td><code>the-w-and-z-bosons-in-biquaternionic-form</code></td>
+<td>14</td>
+<td>the decomposition, two citations, the pseudoreality sentence</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the precision pass changed, and what it left.</strong> Four sentences, all in the eight, and each for the same reason: the name was being asked to carry a property of a carrier.</p>
+<ul>
+<li>"$SU(2)$ is pseudoreal" ($W/Z$) and "the $SU(2)$ doublet is pseudoreal" ($u_2$ reach) became statements about the carrier: the rotor's spinor carrier is pseudoreal, $2\cong\bar 2$, and $\mathrm{SU}(2)$ has no independent conjugate spinor. A group is not pseudoreal; a module is.</li>
+<li>"The pseudoreality was checked on a generic $\mathrm{SU}(2)$ element" became "on a generic rotor $\tilde u\in\mathrm{SU}(2)=\mathrm{SU}(2)$", because that is what the computation did.</li>
+<li>"annihilated by the $SU(2)$ action" (Higgs) was wrong in the other direction: the central scalar is fixed by the Hermitian pair and <strong>moved</strong> by left multiplication, out of the centre. The sentence now says both, because the second half is the reason the scalar cannot be a doublet either.</li>
+</ul>
+<p>Everything else stayed. "A singlet of $\mathrm{SU}(2)$", "cannot break $SU(2)$", "the $SU(2)$ freedom to rotate the doublet" and "the manifest $SU(2)$ invariance" are correct, standard, and shorter than any rotor paraphrase; rewriting them would be the purge again, in the other direction.</p>
+<p><strong>The summaries follow the same rule.</strong> The three internal summaries of the section, the strong part and the whole category each carry one paragraph, <em>The letter, after the migration</em>, that names $SU(2)$, gives the identification, and then lists the operators the section uses. An earlier draft of those three paragraphs said the group is "written $\mathrm{SU}(2)$ and not $SU(2)$"; that was the error this section now corrects, and the sentence is gone from all three.</p>
 <h2 id="five-rotor-facts-the-section-needs-and-does-not-have">Five Rotor Facts the Section Needs and Does Not Have</h2>
 <p>These are computed, short, and each of them replaces a matrix argument in one of the articles below. They belong in the conventions block that the whole section cites.</p>
 <p><strong>(1) The symmetrised scalar part of three generators vanishes.</strong> $\mathrm{Sc}(\vec e_a\vec e_b\vec e_c)$ is fully antisymmetric in $a,b,c$ — the product of two pure units is a pure unit with an $\varepsilon$ — so the sum over the six permutations is zero. Verified on $(\vec e_x,\vec e_y,\vec e_z)$: the three even permutations give $-1$ and the three odd give $+1$. This is the biquaternion proof that there is no cubic Casimir, and it replaces the trace argument of <code>anomalies-and-anomaly-cancellation-in-biquaternionic-form</code>.</p>
-<p><strong>(2) The stabiliser of a vector is a circle.</strong> For unit $\vec u$, $\{\tilde u:\mathrm{Sd}_{\tilde u}(\vec u)=\vec u\}=S^1_{\vec u}$, a maximal torus. Hence the orbit of a unit vector is $\mathrm{Rot}/S^1\cong S^2$, and a vector-valued vacuum breaks the rotor group to a circle. This is the only symmetry-breaking pattern the algebra has, and three articles need it.</p>
-<p><strong>(3) The Haar measure and the Faddeev–Popov determinant.</strong> In angle–axis coordinates the invariant measure of the rotor group is</p>
+<p><strong>(2) The stabiliser of a vector is a circle.</strong> For unit $\vec u$, $\{\tilde u:\mathrm{Sd}_{\tilde u}(\vec u)=\vec u\}=S^1_{\vec u}$, a maximal torus. Hence the orbit of a unit vector is $\mathrm{SU}(2)/S^1\cong S^2$, and a vector-valued vacuum breaks $SU(2)$ to a circle. This is the only symmetry-breaking pattern the algebra has, and three articles need it.</p>
+<p><strong>(3) The Haar measure and the Faddeev–Popov determinant.</strong> In angle–axis coordinates the invariant measure of $SU(2)$ is</p>
 <p>$$
 d\mu(\tilde u)=\sin^2\!\tfrac{\varphi}{2}\;d\varphi\,d\Omega,\qquad \varphi\in[0,2\pi],
 $$</p>
 <p>and the determinant that the gauge-fixing article needs is $\det\bigl(1-\mathrm{Ad}_{\tilde u}\bigr)=4\sin^2\tfrac{\varphi}{2}$ on the vector part. At $\varphi=\tfrac{\pi}{2}$ both equal $2$, checked numerically. The factor is the same factor: the one-sided Jacobian is the sphere's measure.</p>
-<p><strong>(4) The double cover, and its two signs.</strong> $\mathrm{Rot}\to SO(3)$ is two-to-one with kernel $\{\pm e_t\}$. A rotor field on a non-simply-connected configuration therefore has a sign ambiguity, and the sign is the fermion's. This is the biquaternion content of the path-integral measure question in <code>the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form</code>, and it must be stated as the double cover and not as a Jacobian.</p>
+<p><strong>(4) The double cover, and its two signs.</strong> $\mathrm{SU}(2)\to SO(3)$ is two-to-one with kernel $\{\pm e_t\}$. A rotor field on a non-simply-connected configuration therefore has a sign ambiguity, and the sign is the fermion's. This is the biquaternion content of the path-integral measure question in <code>the-fujikawa-method-and-the-path-integral-anomaly-in-biquaternionic-form</code>, and it must be stated as the double cover and not as a Jacobian.</p>
 <p><strong>(5) The ladder of the rotor.</strong> In the basis $\vec e_x\pm i\vec e_y$ the Cartan generator $\tfrac12\mathrm{ad}_{i\vec e_z}$ has eigenvalues $\pm1$, so the charged fields are the rotor's own raising and lowering operators and there is no separate "charge" object. <code>the-w-and-z-bosons-in-biquaternionic-form</code> already verifies this; the rewrite makes it the definition of $W^\pm$ rather than a cross-check.</p>
 <h2 id="the-scope-and-five-rulings-that-close-the-rest">The Scope, and Five Rulings That Close the Rest</h2>
 <p><strong>The count is twenty-eight, not thirty-three.</strong> Five of the thirty-three anchors write a Lagrangian: <code>the-lagrangian-and-the-higgs-field</code>, <code>-the-w-and-z-bosons</code>, <code>-the-weak-interaction</code>, <code>-the-stueckelberg-mechanism</code>, <code>-the-electroweak-theory</code>. They belong to the Lagrangian family, which another file owns, and the corpus already says why they are different in kind: "The action is written in the component dictionary because the $\mathrm{U}(1)$ line is exact in the algebra and the $\mathrm{SU}(2)$ lines are only partly carried" (<code>internal-summary-of-the-biquaternion-particle-physics</code>, §<em>The five actions</em>). The ruling: <strong>the migration covers the twenty-eight, and the five are left untouched except for the dictionary rows, which the Lagrangian job applies.</strong> No article of the five is rewritten, retitled or reargued here.</p>
+<p><strong>The group keeps its name, and the rotor is its biquaternion form.</strong> $SU(2)$ is named wherever the group is introduced; the sentence that follows is that $SU(2)$ <em>is</em> $SU(2)$ of the spatial rotations, $\mathrm{SU}(2)=\mathrm{Spin}(3)=S^3$, the unit real quaternions. After that sentence the article writes the algebra's own objects — $\tilde u$, $\mathrm{Sd}$, $L_{\tilde u}$, $\vec e_a$ — and no matrix display. A purge of the name is a defect: the reader must be able to match the article to the literature, and a page that writes only $\mathrm{SU}(2)$ cannot be matched. All twenty-eight articles were checked for the naming sentence at their first use of the group, and twelve of them had lost it.</p>
 <p><strong>The letter is $\mathrm{Sd}$.</strong> Fixed in <code>operator-and-calculus-conventions</code>, and the corpus's own usage is $2336$ against $162$. The aliases in the sentence above are the whole of the notation question; nothing else needs a decision.</p>
-<p><strong>The conventions block goes in an existing article.</strong> <code>representation-is-a-function-of-spin</code> already carries §<em>The Group and the Carriers</em> with the census $1,2,3$ of the three carriers. The rotor block — the definition of $\mathrm{Rot}$, the four operators, the two carriers of one angle, the dagger — is appended there as §<em>The Rotor Conventions</em>, and the other twenty-seven cite it. No new file, no new slug, no menu change.</p>
+<p><strong>The conventions block goes in an existing article.</strong> <code>representation-is-a-function-of-spin</code> already carries §<em>The Group and the Carriers</em> with the census $1,2,3$ of the three carriers. The rotor block — the definition of $\mathrm{SU}(2)$, the four operators, the two carriers of one angle, the dagger — is appended there as §<em>The Rotor Conventions</em>, and the other twenty-seven cite it. No new file, no new slug, no menu change.</p>
 <p><strong>The doublet does not need an axis.</strong> All minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are isomorphic as left modules; a module has no axis. The axis $\vec u_{\mathrm r}$ is introduced only when a Peirce display is written, and the block says so in one sentence: "the ideal is $S_+(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_+(\vec u_{\mathrm r})$; different axes give isomorphic modules, so no result depends on the choice, and every display declares its axis." That discharges the family problem without a physics decision.</p>
 <p><strong>The renames are dropped.</strong> Retitling edits the anchor text and the comment in <code>physics.md</code>, the file name, the href, $76$ inbound links across the corpus, and four sitemaps, for no change of content. Three of the twelve targets are Lagrangian articles and already out of scope. Where a title is misleading, the article gets one opening sentence naming the framework's object, and the title stays.</p>
 <p><strong>The scalar question stays open, and is made computable.</strong> <code>the-higgs-mechanism-in-biquaternionic-form</code> already says "gap, left visible", and asks its own question at §<em>Open Questions</em>: which representation of the group can the scalar occupy. The rewrite does not answer it. It replaces the quoted obstacle by a computation — the central scalar is fixed by every rotor, the vector part is not closed under left multiplication, $S_+$ is closed but carries spin one-half — and it names the three candidate carriers. The verdict does not move; the ledger does not shrink.</p>
@@ -271,7 +369,7 @@ $$</p>
 <td>2</td>
 <td><code>the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock</code></td>
 <td>already the quotient, in matrix language</td>
-<td>restate as $\mathrm{Rot}\times S^1/\{\pm e_t\}$; the parity lock $q\equiv 2j$ becomes a statement about the kernel of the exponential, which is the rotor's double cover</td>
+<td>restate as $\mathrm{SU}(2)\times S^1/\{\pm e_t\}$; the parity lock $q\equiv 2j$ becomes a statement about the kernel of the exponential, which is the rotor's double cover</td>
 <td>sweep</td>
 </tr>
 <tr>
@@ -292,7 +390,7 @@ $$</p>
 <td>5</td>
 <td><code>representation-is-a-function-of-spin</code></td>
 <td>"the compact gauge algebra is $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$… the non-abelian factor is the algebra of the rotation group"</td>
-<td>already correct and already rotor-shaped. Make it the section's lead article: the group <em>is</em> the rotor group, so the trivial/spinor/adjoint tower is the rotor's own display tower, and "representation is a function of spin" is an identity and not a theorem</td>
+<td>already correct and already rotor-shaped. Make it the section's lead article: the group <em>is</em> $SU(2)$, so the trivial/spinor/adjoint tower is the rotor's own display tower, and "representation is a function of spin" is an identity and not a theorem</td>
 <td>rewrite</td>
 </tr>
 <tr>
@@ -313,7 +411,7 @@ $$</p>
 <td>8</td>
 <td><code>electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses</code></td>
 <td>$\varphi$ in $\mathbb{C}^2$, minimum a three-sphere, $SU(2)$ rotates the doublet</td>
-<td>the minimum is a three-sphere, and $S^3$ is the rotor group's own manifold; the rewrite names it, counts $3=\dim\mathrm{Rot}$, and draws the boundary with two computations: $\mathbb{B}_\Psi$ is not rotor-stable, and $S_+$ is rotor-stable but carries spin one-half. The numbers come out; the carrier does not. A manifold statement, not a derivation</td>
+<td>the minimum is a three-sphere, and $S^3$ is $SU(2)$'s own manifold; the rewrite names it, counts $3=\dim\mathrm{SU}(2)$, and draws the boundary with two computations: $\mathbb{B}_\Psi$ is not rotor-stable, and $S_+$ is rotor-stable but carries spin one-half. The numbers come out; the carrier does not. A manifold statement, not a derivation</td>
 <td>deep</td>
 </tr>
 <tr>
@@ -369,7 +467,7 @@ $$</p>
 <td>16</td>
 <td><code>the-neutrino-and-majorana-fermions-in-biquaternionic-form</code></td>
 <td>the conjugate field and its representation</td>
-<td>for the rotor group the conjugate of the spinor is equivalent to the spinor, $2\cong\bar 2$; that is why the Majorana pairing is writable at all, and why no chirality distinction survives inside one carrier</td>
+<td>for $SU(2)$ the conjugate of the spinor is equivalent to the spinor, $2\cong\bar 2$; that is why the Majorana pairing is writable at all, and why no chirality distinction survives inside one carrier</td>
 <td>rewrite</td>
 </tr>
 <tr>
@@ -432,7 +530,7 @@ $$</p>
 <td>25</td>
 <td><code>gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem</code></td>
 <td>$R_\xi$ for the standard group; framework instantiation absent</td>
-<td>give the rotor's own gauge-fixing data: the Haar measure and the Faddeev–Popov determinant of fact (3), with the Goldstones as coordinates on $\mathrm{Rot}$. This is the article where a missing rotor computation blocks a whole section</td>
+<td>give the rotor's own gauge-fixing data: the Haar measure and the Faddeev–Popov determinant of fact (3), with the Goldstones as coordinates on $\mathrm{SU}(2)$. This is the article where a missing rotor computation blocks a whole section</td>
 <td>rewrite</td>
 </tr>
 <tr>
@@ -460,7 +558,7 @@ $$</p>
 <td>29</td>
 <td><code>the-weak-interaction-in-biquaternionic-form</code></td>
 <td>charged current, $g/\sqrt2$</td>
-<td>the charged current is built on the ladder; the factor $\sqrt2$ is the normalization $T_\pm=(\vec e_x\pm i\vec e_y)/2$; no group letter needed</td>
+<td>the charged current is built on the ladder; the factor $\sqrt2$ is the normalization $T_\pm=(\vec e_x\pm i\vec e_y)/2$; the group named once, then only the ladder</td>
 <td>rewrite</td>
 </tr>
 <tr>
@@ -474,7 +572,7 @@ $$</p>
 <td>31</td>
 <td><code>the-stueckelberg-mechanism-in-biquaternionic-form</code></td>
 <td>a mass term without a scalar; abelian case built</td>
-<td>the Stueckelberg field <strong>is</strong> a rotor field $\tilde U(x)\in\mathrm{Rot}$, transforming by left multiplication, and the abelian case is its central circle. The non-abelian Stueckelberg term is then the invariant length of $\tilde U^{*}\partial_\mu\tilde U$, which exists because the rotor group is compact</td>
+<td>the Stueckelberg field <strong>is</strong> a rotor field $\tilde U(x)\in\mathrm{SU}(2)$, transforming by left multiplication, and the abelian case is its central circle. The non-abelian Stueckelberg term is then the invariant length of $\tilde U^{*}\partial_\mu\tilde U$, which exists because $SU(2)$ is compact</td>
 <td>rewrite</td>
 </tr>
 <tr>
@@ -497,14 +595,14 @@ $$</p>
 <h2 id="the-five-deep-rewrites-in-detail">The Five Deep Rewrites, in Detail</h2>
 <h3 id="8-the-three-sphere-is-the-rotor-group-and-where-the-identification-stops">§8: The Three-Sphere Is the Rotor Group, and Where the Identification Stops</h3>
 <p>The article now says "the minimum is a three-sphere". The rewrite says which three-sphere, and says where the identification stops. The second half is the part that matters, because the first half invites a claim the algebra does not support.</p>
-<p><strong>The manifold, free.</strong> The sphere is the unit sphere of a four-real-dimensional carrier. Every such carrier with a positive-definite invariant norm has $S^3$ as its unit sphere, and $S^3$ is the group manifold of the rotor group, $\mathrm{Rot}=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}$. So the three Goldstones are coordinates on $\mathrm{Rot}$, the count is $3=\dim S^3=\dim\mathrm{Rot}=\dim SO(3)$, and unitary gauge is the choice of one point. That much is a labelling, and it is free.</p>
+<p><strong>The manifold, free.</strong> The sphere is the unit sphere of a four-real-dimensional carrier. Every such carrier with a positive-definite invariant norm has $S^3$ as its unit sphere, and $S^3$ is the group manifold of $SU(2)$, $\mathrm{SU}(2)=\{\tilde u:\langle\tilde u\rangle_{\natural}=1\}$. So the three Goldstones are coordinates on $\mathrm{SU}(2)$, the count is $3=\dim S^3=\dim\mathrm{SU}(2)=\dim SO(3)$, and unitary gauge is the choice of one point. That much is a labelling, and it is free.</p>
 <p><strong>The action, and where the identification stops.</strong> The labelling earns its keep only if the gauge group acts on that sphere by left multiplication. On the carriers the framework has, it does not act the way the electroweak pattern needs. Two computations settle it.</p>
 <ul>
 <li><strong>The sector that holds the scalar is not stable.</strong> $\mathbb{B}_{\Psi}$ is spanned by $e_t$ and $i\vec e_x,i\vec e_y,i\vec e_z$ — the real scalar slot with the imaginary vector slots — so it is where a scalar field would naturally live. A rotor does not preserve it: $\vec e_x e_t=\vec e_x$ leaves the sector, and $\vec e_x(i\vec e_x)=-ie_t$ leaves it on the other side. So no left action of the rotor exists on it, and its unit sphere is a sphere with no group on it.</li>
 <li><strong>The minimal left ideal $S_+$ is stable, and carries the wrong spin.</strong> Left multiplication preserves $S_+$ because it is a left ideal, $S_+\cong\mathbb{C}^2$ carries the defining representation, its unit sphere is again $S^3$, and the action is transitive with a circle stabiliser — the electroweak numbers $3$ and $1$ come out exactly, and the residual circle is what the photon needs. But the ideal is the carrier of spin one-half, as <code>representation-is-a-function-of-spin</code> tabulates, so a field in $S_+$ is a Lorentz spinor and not a Lorentz scalar.</li>
 </ul>
 <p><strong>The numbers are reproduced and the carrier is not.</strong> Three Goldstones and one surviving circle follow from the ideal; the same three and one are what the Standard Model's doublet gives; and no carrier of the algebra is simultaneously rotor-stable and a Lorentz scalar. That is the "gap left visible" of <code>the-higgs-mechanism-in-biquaternionic-form</code>, and the point of this rewrite is that the gap is now a two-line computation on the sector split instead of a remark. The circle's appearance has a one-line explanation too, and it is worth stating: $\mathbb{C}^2$ has zero divisors and $\mathbb{H}$ does not, so a vacuum in the ideal has a stabiliser and a vacuum in the division algebra has none.</p>
-<p><strong>What the rewrite must not claim.</strong> That the doublet is derived, that the vacuum manifold "is" $\mathrm{Rot}$ in the sense of a carrier, or that unitary gauge is $\tilde U=e_t$ — $e_t$ is the vacuum of the <em>central</em> scalar, not of the ideal. The doublet is a carrier choice, the potential, $\lambda$, $v$ and $|\varphi|^2$ are imported, and the identification of $S^3$ with $\mathrm{Rot}$ is a statement about a manifold. What the rewrite buys is precision: before, "the minimum is a three-sphere" was a fact about $\mathbb{C}^2$; after, it is a fact about the rotor group, with the boundary drawn and the two carriers compared.</p>
+<p><strong>What the rewrite must not claim.</strong> That the doublet is derived, that the vacuum manifold "is" $\mathrm{SU}(2)$ in the sense of a carrier, or that unitary gauge is $\tilde U=e_t$ — $e_t$ is the vacuum of the <em>central</em> scalar, not of the ideal. The doublet is a carrier choice, the potential, $\lambda$, $v$ and $|\varphi|^2$ are imported, and the identification of $S^3$ with $\mathrm{SU}(2)$ is a statement about a manifold. What the rewrite buys is precision: before, "the minimum is a three-sphere" was a fact about $\mathbb{C}^2$; after, it is a fact about $SU(2)$, with the boundary drawn and the two carriers compared.</p>
 <h3 id="13-the-half-angle-is-the-chiral-wall">§13: The Half-Angle Is the Chiral Wall</h3>
 <p>The article argues the wall twice, by pseudoreality and by the absence of a one-dimensional module. The rewrite adds the third argument, which is the shortest and the most biquaternionic.</p>
 <p>Left multiplication by the rotor is one multiplication, and that is the whole argument. It acts on a state by multiplying it once, so the two chiral letters of a Dirac field receive the <strong>same</strong> factor; there is no side on which it can act differently on them, and no second slot to carry a different charge. On the ideal the matrix is $\mathrm{diag}(e^{-i\varphi/2},e^{i\varphi/2})$, a single rotation of the plane with one phase and its inverse — not two independent charges. A chiral action needs the generator to touch one slot:</p>
@@ -519,26 +617,27 @@ $$</p>
 <p>Before mixing there are two neutral directions. In the framework's own objects they are $\vec e_z$, the Cartan generator of the rotor's algebra, and $ie_t$, the central phase. They commute, $[\vec e_z,ie_t]=0$, so they span a two-plane in $\mathbb{B}_{\Phi}$ and any orthonormal basis of that plane is a physical choice. The Weinberg angle is that choice, and the photon is the direction along which the vacuum is invariant.</p>
 <p>This converts the article's remark that "$\mathrm{U}(2)$ is a candidate arena" into a construction: the arena is the neutral plane of $\mathrm{U}(2)$, the rotation within it is a rotation of the plane, and the value of the angle remains imported. The rewrite must say all three of those things, and must not claim the value.</p>
 <h3 id="31-the-stueckelberg-field-is-a-rotor">§31: The Stueckelberg Field Is a Rotor</h3>
-<p>A Stueckelberg mass is a mass for a gauge field without a scalar, obtained by making the would-be Goldstone a dynamical field. In rotor terms that field is $\tilde U(x)\in\mathrm{Rot}$, the gauge transformation itself promoted to a field, and the invariant one-form is</p>
+<p>A Stueckelberg mass is a mass for a gauge field without a scalar, obtained by making the would-be Goldstone a dynamical field. In rotor terms that field is $\tilde U(x)\in\mathrm{SU}(2)$, the gauge transformation itself promoted to a field, and the invariant one-form is</p>
 <p>$$
 \tilde U^{*}\partial_\mu\tilde U\in\mathfrak{su}(2),
 $$</p>
-<p>whose length is defined because the rotor group is compact. The abelian case is the central circle, and that is why the article's abelian construction worked: the circle is the centre, and the centre is the part of the group a scalar can reach. The non-abelian case needs the full rotor, and the mast term is an invariant of the rotor group.</p>
+<p>whose length is defined because $SU(2)$ is compact. The abelian case is the central circle, and that is why the article's abelian construction worked: the circle is the centre, and the centre is the part of the group a scalar can reach. The non-abelian case needs the full rotor, and the mast term is an invariant of $SU(2)$.</p>
 <h2 id="what-the-migration-does-not-fix">What the Migration Does Not Fix</h2>
 <p><strong>The rotor remains the rotation rotor.</strong> After every rewrite the compact factor is still the group of spatial rotations, it still fails to commute with the boosts, and weak isospin is still not reached. The migration makes that legible; it does not make it false.</p>
 <p><strong>Four things stay imported, and the rewrites must keep them visible.</strong> The doublet as a carrier choice; the hypercharge assignment $Y$; the value of $\theta_W$; the numerical couplings. A rewrite that produces any of these from the rotor has made an error, because the algebra has no object that could carry them.</p>
 <p><strong>The chiral coupling stays refused.</strong> No rewrite in this list produces a chiral non-abelian action. §13 gets a third argument against it, not a construction of it.</p>
 <h2 id="the-list-of-work">The List of Work</h2>
-<p><strong>Status: steps 1 to 6 are done; step 7 is partly done.</strong> Counts below are from the anchors in <code>physics.md</code>, recomputed.</p>
+<p><strong>Status: steps 1 to 7 are done, and one repair came after them.</strong> Counts below are from the anchors in <code>physics.md</code>, recomputed.</p>
 <p>Ordered, because the later steps depend on the earlier ones.</p>
 <ol>
 <li><strong>Done: the false sentence is fixed.</strong> <code>why-the-biquaternion-algebra-reaches-su-2-but-not-su-3</code> said the framework "reaches the second and third factors intrinsically: $SU(2)_L$ is the compact factor generated by the imaginary quaternions", which said $SU(2)_L$ was reached while every other article in the section said it was reached as an algebra only. The passage now separates the three claims: the <strong>algebra</strong> $\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ is the algebra's own; the <strong>group</strong> is $\mathrm{U}(2)=(SU(2)\times\mathrm{U}(1))/\mathbb Z_2$ and not the product; and the <strong>factor's group</strong> is $\mathrm{Spin}(3)$, whose name in the Standard Model is $SU(2)_L$ only by identification. The three reasons are stated in the article: $[\vec e_x,i\vec e_y]=2i\vec e_z\neq0$ so it does not commute with the boosts; left multiplication gives both chiral letters the same matrix and $\mathbb{B}$ has no one-dimensional module; and left multiplication is a rotation by $\varphi/2$. The article's summary, its summary table, its notation table and two neighbouring sentences were corrected in the same pass. The defect was one of notation as well: $\mathbb{B}_\Phi$ was written equal to $\mathrm{U}(2)$ and to $\mathrm{SU}(2)\oplus\mathrm{U}(1)$, an algebra equal to a group; those displays now read $\mathfrak{u}(2)$ and $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$. The migration can now proceed without the section contradicting itself.</li>
-<li><strong>Write the rotor block once</strong>, in <code>representation-is-a-function-of-spin</code>, §<em>The Group and the Carriers</em>: definition of $\mathrm{Rot}$, the four operators $\mathrm{Sd}$, $\operatorname{Ad}$, $\operatorname{ad}$ and $L$, the two carriers of one angle, the generator normalization $T_a=\tfrac12\vec e_a$, $f_{abc}=2\varepsilon_{abc}$, and the line that a minimal left ideal is a family over the axis and no result depends on the axis. Every other article cites it and none repeats it.</li>
-<li><strong>Apply the four dictionary replacements</strong> — $SU(2)_L$ doublet, adjoint, singlet, gauge transformation. Mechanical, all twenty-eight, one pass. This alone removes most bare $SU(2)$ occurrences; the five Lagrangian articles take the same replacements from the Lagrangian job, not from this one.</li>
+<li><strong>Write the rotor block once</strong>, in <code>representation-is-a-function-of-spin</code>, §<em>The Group and the Carriers</em>: definition of $\mathrm{SU}(2)$, the four operators $\mathrm{Sd}$, $\operatorname{Ad}$, $\operatorname{ad}$ and $L$, the two carriers of one angle, the generator normalization $T_a=\tfrac12\vec e_a$, $f_{abc}=2\varepsilon_{abc}$, and the line that a minimal left ideal is a family over the axis and no result depends on the axis. Every other article cites it and none repeats it.</li>
+<li><strong>Apply the four dictionary replacements</strong> — $SU(2)_L$ doublet, adjoint, singlet, gauge transformation. Mechanical, all twenty-eight, one pass. This alone removes most matrix-language occurrences; the name stays, the display goes; the five Lagrangian articles take the same replacements from the Lagrangian job, not from this one.</li>
 <li><strong>Rewrite in the order §8, §13, §7, §28, §31.</strong> §8 first, because it draws the section's sharpest boundary — the numbers come out and the carrier does not — and §7, §13 and §28 all cite it.</li>
-<li><strong>Then the fourteen section-level rewrites</strong>, in menu order, each with the sentence "the rotor acts by … on the …" at its first use of the group.</li>
+<li><strong>Then the fourteen section-level rewrites</strong>, in menu order, each opening with the two sentences of the naming rule — the group named, the identification stated — and then writing the action: "the rotor turns by $\mathrm{Sd}_{\tilde u}$, it carries by $L_{\tilde u}$, and the carrier is the left ideal".</li>
 <li><strong>Then the nine sweeps</strong>, batched, and no title change at any point.</li>
 <li><strong>Recompute the counts.</strong> Slug count, per-article $SU(2)$ census, and the six-list citation check of the summary files that quote this section.</li>
+<li><strong>Done: the name was restored wherever the first pass had purged it.</strong> Twenty-seven of the twenty-eight articles were missing the identification sentence, eight of them had lost the name entirely, and the three internal summaries carried a sentence that said the group is written $\mathrm{SU}(2)$ and not $SU(2)$. The rule and the audit are in §<em>The Naming Rule, and the Audit It Implies</em>; the summaries were rewritten the same day.</li>
 </ol>
 <h2 id="what-was-applied-and-what-remains">What Was Applied, and What Remains</h2>
 <p><strong>Applied, all twenty-eight in-scope articles.</strong> The depth is the one the table above assigned.</p>
@@ -576,14 +675,19 @@ $$</p>
 <td>§2, §6, §17, §19, §22, §23, §24</td>
 <td>done</td>
 </tr>
+<tr>
+<td>Naming pass</td>
+<td>twenty-seven articles, plus the three internal summaries and <code>the-spin-group-via-4x4-real-matrices</code></td>
+<td>done — every article names $SU(2)$ and identifies it with the rotor in one paragraph</td>
+</tr>
 </tbody>
 </table></div>
 <p><strong>Remaining, and none of it blocks the others.</strong></p>
 <ol>
 <li><strong>The build has not been run.</strong> Every edit is in <code>articles_physics/*.md</code>; the deployed HTML is unchanged until <code>build.py</code> runs. No slug, menu entry, article count or title changed, so the build is a rebuild and not a migration.</li>
-<li><strong>The two internal summaries.</strong> <code>internal-summary-of-the-strong-interaction</code> still needs its recount to 24 with the bands $6/7/6/5$, and <code>internal-summary-of-the-electroweak-interaction</code> needs its 33 rows to agree with the $6/6/12/9$ bands. Neither has been edited yet.</li>
+<li><strong>The three internal summaries are done.</strong> The counts were already right and were re-verified against the anchors: electroweak $33=6+6+12+9$, strong $24=6+7+6+5$, category $93=18+33+24+9+6+3$. Each now carries one paragraph, <em>The letter, after the migration</em>, so a reader of a summary meets $\mathrm{SU}(2)$, the quotient and the one-sided action without opening an article.</li>
 <li><strong>The five Lagrangian articles stay untouched</strong>, by ruling. They will inherit the dictionary when the Lagrangian job runs.</li>
-<li><strong><code>the-rotor-group-via-4x4-real-matrices</code></strong> is cited from four places and has not been read for consistency with the $\mathrm{Sd}$ notation. Worth one pass.</li>
+<li><strong><code>the-spin-group-via-4x4-real-matrices</code></strong> is cited from four places and has not been read for consistency with the $\mathrm{Sd}$ notation. Worth one pass.</li>
 </ol>
 <p><strong>Two corruptions found and repaired on the way, outside the migration.</strong> <code>the-eigenspinor-the-lorentz-rotor-as-a-function-of-proper-time</code> had a line broken inside <code>$\lvert\vec\Omega_{\mathrm{LT}}\rvert\tau$</code> and <code>torsion-contorsion-and-the-spin-connection-in-biquaternionic-form</code> had a vertical-tab byte where <code>\vec</code> belonged, in <code>$\vec e_\eta$</code>. Both are rendering defects in files this job does not otherwise touch; both are fixed.</p>
 <h2 id="verification">Verification</h2>
@@ -594,10 +698,32 @@ $$</p>
 <pre><code>awk '/^### [^#]/{sec=substr($0,5)} sec==&quot;The Electroweak Interaction&quot; &amp;&amp; /the-lagrangian-and-/{l++} END{print &quot;lagrangian:&quot;,l}' physics.md
 </code></pre>
 <p>which returns $5$. The earlier form of the first command matched <code>##</code> and returned nothing, because the section is a <code>###</code> heading and its subsections are <code>####</code>.</p>
-<p><strong>The census, before and after.</strong> The per-file count of unqualified occurrences:</p>
-<pre><code>grep -c 'SU(2)' articles_physics/&lt;slug&gt;.md
+<p><strong>The census, and a trap in the pattern.</strong> The per-file count of occurrences:</p>
+<pre><code>grep -c 'SU\}?(2)' articles_physics/&lt;slug&gt;.md
 </code></pre>
-<p>After the migration the surviving occurrences must all match the imported-standard-model pattern, which the check enumerates by hand: one per article at most, and none in §7, §8, §13, §25, §28, §31, which are the articles whose whole point is the rotor.</p>
+<p>The pattern is not <code>SU(2)</code>. Every article writes the group as <code>$\mathrm{SU}(2)$</code> as often as <code>$SU(2)$</code>, and in the LaTeX source the closing brace sits between the letters and the argument, so <code>grep 'SU(2)'</code> misses all of those. A first pass of this audit used the naive pattern and undercounted by a factor of three — $851$ against the true $331$ over the twenty-eight articles, and $20$ against $54$ in <code>electroweak-theory-...u2-reach-...</code>. Use <code>SU\}?\(2\)</code>.</p>
+<p>The count is <strong>not</strong> driven to zero, and a low count is not a result. After the repair it sits at $1$ to $62$ per article, and the number is set by how often the group is developed, not by a target. What is checked is the pair of sentences: the name must appear, and it must be identified with the rotor in one paragraph. The count in <code>custodial-symmetry-...</code> stays high because $SU(2)_L\times SU(2)_R$ and $SU(2)_V$ are the standard theory's custodial notation, which that article must quote.</p>
+<p><strong>The naming check, which is the one that replaced the purge.</strong></p>
+<pre><code class="language-python">import re, pathlib
+
+# the twenty-eight in-scope slugs, straight from the section's anchors
+phys = pathlib.Path('physics.md').read_text()
+sec = phys.split('### The Electroweak Interaction', 1)[1].split('\n### ', 1)[0]
+slugs = [s for s in re.findall(r'articles_physics/([a-z0-9-]+)\.html', sec)
+         if not s.startswith('the-lagrangian')]
+
+pat = re.compile(r'SU\}?\(2\)')
+for s in slugs:
+    t = re.sub(r'\s+', ' ', pathlib.Path('articles_physics', s + '.md').read_text())
+    ok = re.search(r'SU\}?\(2\)[^.]{0,220}(\\mathrm\{Rot\}|rotor)'
+                   r'|(\\mathrm\{Rot\}|rotor)[^.]{0,220}SU\}?\(2\)', t)
+    if len(pat.findall(t)) and not ok:
+        print('NO IDENTIFICATION:', s)
+print('checked', len(slugs), 'articles')
+</code></pre>
+<p>It prints <code>checked 28 articles</code> and nothing else. Two details make it work. The scope comes from the anchors and not from a glob over the directory, because <code>articles_physics/</code> holds some three hundred articles outside this section, about a hundred and fifteen of which use $SU(2)$ for a different purpose and would all be flagged. And the window is two hundred and twenty characters, which is what catches a display placed between the two halves of the sentence.</p>
+<p><strong>What the wider tree shows, and why it is not this job.</strong> Run without the scope filter, the same check flags about a hundred and fifteen articles outside the electroweak section. Most of them are legitimate: <code>the-little-group-of-a-massive-particle-su2</code> and the spin articles use $SU(2)$ for the rotation group and say so in their own words; the strong-interaction articles use it for isospin and for the Witten anomaly. A handful are worth a look in the strong-interaction and maths jobs, on the same rule. That is a second migration, not a defect in this one, and it is recorded here so the count is not mistaken for coverage.</p>
+<p><strong>An earlier version of this section carried the opposite test.</strong> It required that the surviving occurrences be "one per article at most, and none in §7, §8, §13, §25, §28, §31". That test encoded the purge, it passed on a tree that had lost the name in twenty-seven articles, and it is the reason the defect was not caught earlier. A test that a wrong edit passes is worse than no test; this one is quoted here so it is not reintroduced.s whose whole point is the rotor.</p>
 <p><strong>The four checks on each rewrite.</strong></p>
 <div class="table-scroll"><table>
 <thead>
@@ -625,7 +751,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The one line to audit first.</strong> In each rewritten article, the first sentence that names the group must read like: "the rotor group $\mathrm{Rot}=S^3$ acts on the carrier by left multiplication". A file where the first such sentence still reads "$SU(2)_L$ acts on the doublet" has not been migrated, whatever else changed.</p>
+<p><strong>The two sentences to audit first.</strong> In each article, the paragraph that introduces the group must name it and identify it: "<em>the compact factor is $SU(2)$, and in this algebra it is $\mathrm{SU}(2)=\mathrm{Spin}(3)=S^3$</em>". The next sentence that states an action must carry the side and the algebra: "<em>a gauge field acts on the carrier by left multiplication, $L_{\tilde u}$</em>". A file that has the second and not the first has been purged; a file that has the first and not the second has been renamed and not migrated. Both are defects, and the two sentences are checked separately.</p>
 <h2 id="appendix-an-independent-outline-compared">Appendix: An Independent Outline, Compared</h2>
 <p>A second plan for the same section was produced independently, organised by physics target in five blocks rather than by action. It agrees on the verdict and on the ledger, differs on two hierarchies, and carries three checkable errors. The comparison is recorded because the two plans are complementary and the merge is better than either.</p>
 <p><strong>Where the two plans agree.</strong></p>
@@ -686,9 +812,9 @@ $$</p>
 <p><strong>Where they differ, and which is right.</strong></p>
 <ul>
 <li><strong>The starting object.</strong> The second plan starts from the algebra — $\mathbb{B}\cong M_2(\mathbb{C})$, the Peirce basis, the bracket — and reaches the group as "$\mathfrak{su}(2)$ on $\{\vec e_x,\vec e_y,\vec e_z\}$". It never says that the group is the group of unit quaternions, never writes $S^3$, and never says that it is the rotation group. That omission is not cosmetic. It removes the three results that the section's verdicts rest on: that the factor is geometric and not internal; that representation is a function of spin, which is an identity once the group is the rotation group; and that left multiplication is a rotation by half the rotor's angle. This file's order — group first, action second, algebra third — is the one that keeps those three results visible.</li>
-<li><strong>The scalar sector.</strong> The second plan keeps the potential, the doublet breaking and the masses as "transcribed", and its caution is right. It says the rotor parameterises the manifold and does not derive the breaking, and that is exactly what the computation supports: $S^3$ is the rotor group's manifold, so the three Goldstones can be labelled by the group's three coordinates; but the check below shows that no carrier of the algebra is at once rotor-stable and a Lorentz scalar, so the carrier is imported and the identification is a statement about a manifold. This file originally claimed more — that the minimum of the potential <em>is</em> $\mathrm{Rot}$, so nothing is imported in that step — and the claim was wrong, for two reasons the second plan would have caught: $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and not over $\mathbb{R}$, and the corpus's own scalar is central and therefore a singlet. §8 above is the corrected version, and the correction turns the corpus's declared gap into a two-line computation rather than a concession.</li>
+<li><strong>The scalar sector.</strong> The second plan keeps the potential, the doublet breaking and the masses as "transcribed", and its caution is right. It says the rotor parameterises the manifold and does not derive the breaking, and that is exactly what the computation supports: $S^3$ is $SU(2)$'s manifold, so the three Goldstones can be labelled by the group's three coordinates; but the check below shows that no carrier of the algebra is at once rotor-stable and a Lorentz scalar, so the carrier is imported and the identification is a statement about a manifold. This file originally claimed more — that the minimum of the potential <em>is</em> $\mathrm{SU}(2)$, so nothing is imported in that step — and the claim was wrong, for two reasons the second plan would have caught: $\mathbb{B}$ is four-dimensional over $\mathbb{C}$ and not over $\mathbb{R}$, and the corpus's own scalar is central and therefore a singlet. §8 above is the corrected version, and the correction turns the corpus's declared gap into a two-line computation rather than a concession.</li>
 <li><strong>Chirality.</strong> The second plan puts $-iR_u$ first. <code>operator-chirality-on-the-biquaternion-algebra</code> opens by demoting exactly that route: "$-iR_u$ … its order is wrong: it produces an operator and then reads a chirality off it … an object that has a chirality cannot be what chirality means". The corpus's order is sides first, and $-iR_u$ is one example of one side. The plan's physics is unaffected — the operator is the same object — but the hierarchy is inverted, and the inversion is what lets the chiral wall be read as a normalisation problem rather than as a structural one.</li>
-<li><strong>The Peirce display.</strong> The second plan proposes "Peirce matrix units for explicit $2\times2$ display of gauge fields, field strengths, and $R_\xi$ terms". This is admissible as a display and inadmissible as a working object: the corpus's rule is that arrays are a dictionary and never objects of the algebra. It also carries a trap the plan does not flag — the Peirce idempotents are taken <em>at an axis</em>, $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, so a Peirce basis has chosen a point of $S^2$, which is exactly the "preferred axis" that <code>the-rotor-group-via-4x4-real-matrices</code> says the group does not have. A display is fine; a display mistaken for the object is the error the corpus already wrote an article against.</li>
+<li><strong>The Peirce display.</strong> The second plan proposes "Peirce matrix units for explicit $2\times2$ display of gauge fields, field strengths, and $R_\xi$ terms". This is admissible as a display and inadmissible as a working object: the corpus's rule is that arrays are a dictionary and never objects of the algebra. It also carries a trap the plan does not flag — the Peirce idempotents are taken <em>at an axis</em>, $S_\pm(\vec u)=\mathbb{B}\tilde\Pi_\pm(\vec u)$, so a Peirce basis has chosen a point of $S^2$, which is exactly the "preferred axis" that <code>the-spin-group-via-4x4-real-matrices</code> says the group does not have. A display is fine; a display mistaken for the object is the error the corpus already wrote an article against.</li>
 </ul>
 <p><strong>Two errors and one imprecision in the second plan.</strong></p>
 <ol>
@@ -704,10 +830,11 @@ $$</p>
 </ol>
 <p><strong>Three things the second plan should take from this one.</strong> The rotor as the object, with $S^3$ and the rotation-group identification stated in the first line of the conventions block; the two carriers of one angle, transcribed as the phase $e^{\mp i\varphi/2}$ on the ideal and the full rotation on the vector part, without which the two are silently exchanged; and the two-line proof that no rotor-stable carrier of the algebra is a Lorentz scalar, which turns the corpus's declared gap into a computation instead of an admission.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>The object.</strong> $SU(2)$ is the rotor group $S^3$ of unit quaternions, the group of the spatial rotations, and the section's compact factor is that group and not a display of it.</p>
+<p><strong>The object.</strong> The group is $SU(2)$ and it keeps its name. In the algebra it <strong>is</strong> $SU(2)$ $S^3$ of unit quaternions, the group of the spatial rotations, so a development of $SU(2)$ is a development of the rotors and is written with $\tilde u$, $\vec e_a$, $\mathrm{Sd}$ and $L$. The display $\mathsf M_2:\mathrm{SU}(2)\to SU(2)$ is the thing that is dropped, not the name.</p>
 <p><strong>The action.</strong> A gauge field can only act by left multiplication, $\tilde\Xi\mapsto\tilde U\tilde\Xi$; the rotation of a vector is the Hermitian pair $\mathrm{Sd}_{\tilde u}(\vec v)=\tilde u\vec v\tilde u^{*}$; a scalar is moved two-sidedly by the same map. Four maps — $L$, $R$, the general two-sided operator, and the Hermitian pair — one group, and the side and the tie are part of the statement. The Hermitian pair is the only one that keeps both sectors for every parameter, and it is an algebra automorphism only on the unitary slice, where it coincides with the change of frame $L_{\tilde U}R_{\tilde U^{-1}}$.</p>
 <p><strong>The half-angle.</strong> Two different statements, and neither substitutes for the other. On the vector part the Hermitian pair turns by the full angle $\varphi$; on the left ideal $S_+$ left multiplication has matrix $\mathrm{diag}(e^{-i\varphi/2},e^{i\varphi/2})$, which is where the half angle lives and where the factor two of $T_a=\tfrac12\vec e_a$ comes from. Left multiplication does <strong>not</strong> rotate the vector part, and writing it as a rotation by $\varphi/2$ is the error the section must not repeat.</p>
 <p><strong>The five facts.</strong> Alternating scalar part of three generators; stabiliser of a vector is a circle and the orbit is $S^2$; Haar measure $\sin^2\frac{\varphi}{2}$ with Faddeev–Popov determinant $4\sin^2\frac{\varphi}{2}$; the double cover $\{\pm e_t\}$; the ladder $\vec e_x\pm i\vec e_y$.</p>
+<p><strong>The rule.</strong> Name the group, state the identification in one sentence, then write the algebra. The first pass over the section skipped the first two steps and lost the name in twenty-seven of the twenty-eight articles; that is repaired, and the check that would have caught it is in §<em>Verification</em>.</p>
 <p><strong>The distribution.</strong> Five deep rewrites, fourteen section-level, nine terminology sweeps, over twenty-eight articles, plus five left to the Lagrangian job, with no slug and no menu change.</p>
 <p><strong>The verdict.</strong> The migration is possible for the whole section and changes no verdict. It makes the section readable in the corpus's own objects. The one inconsistent sentence it exposed in the ceiling article has since been fixed, so the section no longer contradicts itself and the rewrites can proceed in any order.</p>
       </div>

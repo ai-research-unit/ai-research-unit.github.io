@@ -83,10 +83,10 @@
 <li><strong>A pair's entanglement is changed only by a rotation that varies over a discarded label.</strong> With two branches carrying the same Bell pair and relative rotation $\varphi$, the concurrence is $\lvert\cos\varphi\rvert$ exactly and the purity is $(1+\cos^{2}\varphi)/2$, both to twelve digits.</li>
 <li><strong>So frame-dependent entanglement is a statement about the trace, not about the frame.</strong> $\tilde R$ contributes to entanglement only when it is distributed unequally across a label that is then summed out.</li>
 </ol>
-<p>The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; the impurity is $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$. A rotation by angle $\varphi$ about the unit vector $\vec n$ is written $\mathrm{Rot}_{\vec n}(\varphi)$, with $\tilde R=\mathrm{Rot}_{\vec n}(\varphi)$ the unitary rotor of the same angle. The polar split is $\tilde U=\tilde L\tilde R$. The concurrence of a two-qubit pure state $\psi=(a,b,c,d)$ is $C=2\lvert ad-bc\rvert$, and of a mixed state is the usual $\max(0,\lambda_{1}-\lambda_{2}-\lambda_{3}-\lambda_{4})$ over the roots of $\rho\tilde\rho$.</p>
+<p>The notation is that of the companions. The state is $\tilde{Ϛ}_{\Psi}=\tfrac12(e_t+i\vec s_{\Psi})$; the impurity is $N=\tfrac14(1-\lvert\vec s\rvert^{2})$; the congruence is $\mathrm{Cg}_{\tilde U}:\tilde Q\mapsto\tilde U\tilde Q\tilde U^{*}$. A rotation by angle $\varphi$ about the unit vector $\vec n$ is written $\mathrm{SU}(2)_{\vec n}(\varphi)$, with $\tilde R=\mathrm{SU}(2)_{\vec n}(\varphi)$ the unitary rotor of the same angle. The polar split is $\tilde U=\tilde L\tilde R$. The concurrence of a two-qubit pure state $\psi=(a,b,c,d)$ is $C=2\lvert ad-bc\rvert$, and of a mixed state is the usual $\max(0,\lambda_{1}-\lambda_{2}-\lambda_{3}-\lambda_{4})$ over the roots of $\rho\tilde\rho$.</p>
 <h2 id="what-the-rotation-does-to-one-state">What the Rotation Does to One State</h2>
 <h3 id="it-moves-the-vector-and-nothing-else">It moves the vector and nothing else</h3>
-<p><strong>A rotation sends $\vec s$ to $\mathrm{Rot}_{\vec n}(\varphi)\vec s$ and leaves every invariant of the single state alone.</strong> At $\vec s=(0.3,-0.5,0.6)$, $\lvert\vec s\rvert=0.836660026534076$ and $N=0.075000000000000$ in the original and after rotations of $0.4$, $1.7$ and $3.0$; the worst deviation in $\lvert\vec s\rvert$ is $1.0\times10^{-15}$ and in $N$ it is $0$.</p>
+<p><strong>A rotation sends $\vec s$ to $\mathrm{SU}(2)_{\vec n}(\varphi)\vec s$ and leaves every invariant of the single state alone.</strong> At $\vec s=(0.3,-0.5,0.6)$, $\lvert\vec s\rvert=0.836660026534076$ and $N=0.075000000000000$ in the original and after rotations of $0.4$, $1.7$ and $3.0$; the worst deviation in $\lvert\vec s\rvert$ is $1.0\times10^{-15}$ and in $N$ it is $0$.</p>
 <p><strong>The reason is that a rotation is an isometry of the ball and the ball is homogeneous under rotations.</strong> Every point of a sphere can be moved to every other by a rotation, so the orbit is the whole sphere, and a sphere has no marked point. There is no functional of one state that a rotation can change, because a rotation generates the whole space of states of a given radius.</p>
 <h3 id="so-the-statement-math65-was-applied-has-no-truth-value-for-one-state">So the statement "$\tilde R$ was applied" has no truth value for one state</h3>
 <p><strong>This is the sharp form of the claim, and it is not the weak one.</strong> The weak form would say that a rotation is hard to detect. The sharp form says that a single state does not carry the information, so there is nothing to detect: a state is a vector in a space whose symmetry group is the rotations, and the question of whether a symmetry was applied before the state was written in the frame is a question about the writing and not about the state.</p>
@@ -142,7 +142,7 @@
 <p><strong>The concurrence of a pure two-qubit state is $C=2\lvert ad-bc\rvert$, which is invariant under $U_1\otimes U_2$ for any unitaries.</strong> Starting from $(0.8,0,0,0.6)$ with $C=0.960000000000000$, three arbitrary pairs of local rotations — including the unequal pair $(2.1,0.4)$ — return $0.960000000000000$ exactly. This is the Schmidt decomposition's statement, and it holds for rotations as for any other unitaries.</p>
 <p><strong>So a Wigner rotation applied to one spin, or to both with the same angle, does nothing to the entanglement.</strong> A claim that a boost changes the entanglement of a pair must therefore explain how the boost does something other than apply one unitary to each factor.</p>
 <h3 id="the-pair-that-does-change">The pair that does change</h3>
-<p><strong>Distribute the rotation over a label and discard the label.</strong> The state is $\bigl(\lvert\Phi\rangle\lvert p_a\rangle+\lvert\Phi\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\Phi\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{Rot}_{\hat z}(\varphi)$ on both; the label is traced out.</p>
+<p><strong>Distribute the rotation over a label and discard the label.</strong> The state is $\bigl(\lvert\Phi\rangle\lvert p_a\rangle+\lvert\Phi\rangle\lvert p_b\rangle\bigr)/\sqrt2$ with $\lvert\Phi\rangle=(\lvert\uparrow\uparrow\rangle+\lvert\downarrow\downarrow\rangle)/\sqrt2$; branch $a$ gets the identity on both spins and branch $b$ gets $\mathrm{SU}(2)_{\hat z}(\varphi)$ on both; the label is traced out.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -219,11 +219,11 @@
 <td>the polar split of a frame change</td>
 </tr>
 <tr>
-<td>$\tilde R=\mathrm{Rot}_{\vec n}(\varphi)$</td>
+<td>$\tilde R=\mathrm{SU}(2)_{\vec n}(\varphi)$</td>
 <td>the unitary factor; the Wigner rotation</td>
 </tr>
 <tr>
-<td>$\vec s\mapsto\mathrm{Rot}_{\vec n}(\varphi)\vec s$</td>
+<td>$\vec s\mapsto\mathrm{SU}(2)_{\vec n}(\varphi)\vec s$</td>
 <td>the action on one state</td>
 </tr>
 <tr>

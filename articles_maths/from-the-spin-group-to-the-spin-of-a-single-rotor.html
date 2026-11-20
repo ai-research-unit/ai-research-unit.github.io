@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>From the Rotor to the Spin of the Rotor — Biquaternion Universe</title>
-  <meta name="description" content="The rotor group is the group of unit quaternions, that is the sphere. This article follows one thread from that group to the number: why an element of the…">
+  <title>From the Spin Group to the Spin of a Single Rotor — Biquaternion Universe</title>
+  <meta name="description" content="The spin group is the group of unit quaternions, that is the sphere. This article follows one thread from that group to the number: why an element of the…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -69,12 +69,12 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="from-the-rotor-to-the-spin-of-the-rotor"><strong>From the Rotor to the Spin of the Rotor</strong></h1>
+        <h1 id="from-the-spin-group-to-the-spin-of-a-single-rotor"><strong>From the Spin Group to the Spin of a Single Rotor</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The rotor group is the group of unit quaternions, that is the sphere $S^3$. This article follows one thread from that group to the number $\tfrac12$: why an element of the group must act by a two-sided product, how the three real $4\times4$ generators of left multiplication carry that action, and how the quadratic Casimir of those three generators returns spin $\tfrac12$. It then combines two rotors, and the combination returns exactly two spins, $0$ and $1$, and nothing else.</p>
-<p><strong>The thread in one paragraph.</strong> To act on an algebra while preserving its multiplication, an element must act on both sides. One-sided multiplication is not an algebra map. The two-sided product is therefore forced, and it is the only inner-type action available. The rotor group is the compact group of elements whose two-sided product is conjugation by the inverse with no scalar in front. Left multiplication by such an element is a real $4\times4$ orthogonal matrix, the three generators are real antisymmetric matrices, and the sum of their squares is a multiple of the identity. That multiple is $-\tfrac34$, and the Hermitian normalization is $+\tfrac34$. The number $\tfrac34$ is $s(s+1)$ at $s=\tfrac12$.</p>
-<p><strong>What the article does not claim.</strong> Three sentences are excluded by construction, and each is repaired in <em>Corrections</em>. The rotor group is not $SU(2)$; $SU(2)$ is one of its displays. The rotor group is not a matrix group; it is $S^3$, and a matrix group is an image of it. The three $L$-generators do not give all spins; they give one spin, on one carrier.</p>
-<p><strong>Roadmap.</strong> The forcing of the two-sided form comes first, with the four conjugations of the biquaternion algebra and the two two-sided operators that matter. Then the rotor group, its identification with the spin group, and its double cover. Then the $L$-generators, the Casimir, and the extraction of $\tfrac12$. Then two rotors, the split into $0\oplus1$, and the reason the split is forced. Then what the generators do not give, the corrections, and the numerical check.</p>
+<p>The spin group is the group of unit quaternions, that is the sphere $S^3$. This article follows one thread from that group to the number $\tfrac12$: why an element of the group must act by a two-sided product, how the three real $4\times4$ generators of left multiplication carry that action, and how the quadratic Casimir of those three generators returns spin $\tfrac12$. It then combines two rotors, and the combination returns exactly two spins, $0$ and $1$, and nothing else.</p>
+<p><strong>The thread in one paragraph.</strong> To act on an algebra while preserving its multiplication, an element must act on both sides. One-sided multiplication is not an algebra map. The two-sided product is therefore forced, and it is the only inner-type action available. The spin group is the compact group of elements whose two-sided product is conjugation by the inverse with no scalar in front. Left multiplication by such an element is a real $4\times4$ orthogonal matrix, the three generators are real antisymmetric matrices, and the sum of their squares is a multiple of the identity. That multiple is $-\tfrac34$, and the Hermitian normalization is $+\tfrac34$. The number $\tfrac34$ is $s(s+1)$ at $s=\tfrac12$.</p>
+<p><strong>What the article does not claim.</strong> Three sentences are excluded by construction, and each is repaired in <em>Corrections</em>. The spin group is not $SU(2)$; $SU(2)$ is one of its displays. The spin group is not a matrix group; it is $S^3$, and a matrix group is an image of it. The three $L$-generators do not give all spins; they give one spin, on one carrier.</p>
+<p><strong>Roadmap.</strong> The forcing of the two-sided form comes first, with the four conjugations of the biquaternion algebra and the two two-sided operators that matter. Then the spin group, its identification with the spin group, and its double cover. Then the $L$-generators, the Casimir, and the extraction of $\tfrac12$. Then two rotors, the split into $0\oplus1$, and the reason the split is forced. Then what the generators do not give, the corrections, and the numerical check.</p>
 <h2 id="why-the-two-sided-action-is-necessary">Why the Two-Sided Action Is Necessary</h2>
 <p><strong>The question.</strong> Let $A$ be an associative algebra with a unit over a field, and let $R\in A$ be invertible. The element $R$ is to act on $A$ by a map that preserves the multiplication, that is by an algebra automorphism of the form built from $R$ alone. Which forms are available?</p>
 <p><strong>Proposition (one-sided multiplication is not multiplicative).</strong> Let $\Lambda(X)=RX$. Then $\Lambda$ is multiplicative, $\Lambda(XY)=\Lambda(X)\Lambda(Y)$ for all $X,Y$, if and only if $R$ is the unit.</p>
@@ -110,19 +110,19 @@ $$</p>
 <p><strong>The rotor sector.</strong> Let $\tilde u$ be a real unit quaternion. Then $\tilde u^{*}=\tilde u^{\natural}=\tilde u^{-1}$, since $\natural$ is the quaternion conjugation of a real element and the complex conjugation does nothing. On the rotor sphere the two operators coincide, and each of them is conjugation by the inverse. This is the sense in which a rotor acts on the algebra by an inner automorphism: no scale, no choice between the two forms, and the product preserved.</p>
 <p><strong>The boost sector, and a correction.</strong> The brief that commissioned this article says that a boost satisfies $\tilde U_{\mathrm b}^{\natural}\ne\tilde U_{\mathrm b}^{-1}$ while $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$. The second half is right: a boost $\tilde U_{\mathrm b}=\cosh\tfrac\phi2\,e_t+i\sinh\tfrac\phi2\,\vec n$ with real unit $\vec n$ is Hermitian. The first half is wrong. Its $\natural$-conjugate is $\cosh\tfrac\phi2\,e_t-i\sinh\tfrac\phi2\,\vec n$, and the product of the two is $\cosh^2-\sinh^2=1$, because $(i\vec n)^2=+e_t$. So $\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1}$ as well. Both sectors sit on the norm-one surface of the $\natural$-form, and $\natural$ is the inverse on both.</p>
 <p><strong>What actually separates the sectors.</strong> The separation is not "$\natural$ versus inverse". It is which of the two operators is the one that does the job. On a boost the $\natural$-operator is conjugation by the inverse and is an automorphism; the $*$-operator is not, since $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}\ne\tilde U_{\mathrm b}^{-1}$, and it does something else: it carries the Hermitian part of the algebra to itself. On a general element of the Lorentz group, which is neither real nor Hermitian, the two operators differ from each other, and both differ from the identity. The $\natural$-operator is still the inverse-conjugation, because the whole group sits on the norm-one surface; the $*$-operator is not.</p>
-<p><strong>The statement the article keeps.</strong> The two-sided form is compulsory for any inner-type action. It is conjugation by the inverse exactly on the norm-one surface of the mark used, which for the rotor sphere holds for both marks at once. The rotor group is the compact group of elements for which the two-sided action is an automorphism with no scalar, and part of the reason the number $\tfrac12$ appears is that this group is a sphere and not a linear space.</p>
-<h2 id="the-rotor-group">The Rotor Group</h2>
-<p><strong>Definition (rotor group).</strong> The <strong>rotor group</strong> is</p>
+<p><strong>The statement the article keeps.</strong> The two-sided form is compulsory for any inner-type action. It is conjugation by the inverse exactly on the norm-one surface of the mark used, which for the rotor sphere holds for both marks at once. The spin group is the compact group of elements for which the two-sided action is an automorphism with no scalar, and part of the reason the number $\tfrac12$ appears is that this group is a sphere and not a linear space.</p>
+<h2 id="the-spin-group">The Spin Group</h2>
+<p><strong>Definition (spin group).</strong> The <strong>spin group</strong> is</p>
 <p>$$
-\mathrm{Rot}:=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=\{\tilde q\in\mathbb{H}:\lvert\tilde q\rvert=1\}=S^3,
+\mathrm{Spin}(3):=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=\{\tilde q\in\mathbb{H}:\lvert\tilde q\rvert=1\}=S^3,
 $$</p>
 <p>the unit quaternions under quaternion multiplication. Its real dimension is three. The corpus also writes it $Sp(1)$ and calls its elements versors.</p>
-<p><strong>The group and its displays.</strong> $\mathrm{Rot}$ is the sphere. It is not a set of matrices. A <strong>matrix display</strong> is a homomorphism from it into $GL(V)$, for a real or complex space $V$. The $2\times2$ complex display has image $SU(2)$, and the $4\times4$ real left-regular display has image a three-dimensional subgroup of $SO(4)$. Both are images; neither is the group.</p>
+<p><strong>The group and its displays.</strong> $\mathrm{Spin}(3)$ is the sphere. It is not a set of matrices. A <strong>matrix display</strong> is a homomorphism from it into $GL(V)$, for a real or complex space $V$. The $2\times2$ complex display has image $SU(2)$, and the $4\times4$ real left-regular display has image a three-dimensional subgroup of $SO(4)$. Both are images; neither is the group.</p>
 <p><strong>The spin group.</strong> In the Clifford algebra $\mathrm{Cl}(V)$ of a real space with a positive definite form, the <strong>spin group</strong> is</p>
 <p>$$
 Spin(n):=\{v_1v_2\cdots v_{2k}\in\mathrm{Cl}(V):\ v_i\in\mathbb{R}^n,\ \lVert v_i\rVert=1,\ k\ge0\},
 $$</p>
-<p>the group of products of an even number of unit vectors. The name <strong>rotor</strong> is the geometric-algebra name for an element of this group. For $n=3$ the two descriptions coincide: $\mathrm{Cl}(\mathbb{R}^3)$ has the even part isomorphic to $\mathbb{H}$, the unit vectors are the unit imaginary quaternions, and a product of two of them is a unit quaternion. So $Spin(3)\cong S^3=\mathrm{Rot}$. For general $n$ the spin group is not a sphere, and the identification with the rotor group is a statement about $n=3$.</p>
+<p>the group of products of an even number of unit vectors. The name <strong>rotor</strong> is the geometric-algebra name for an element of this group. For $n=3$ the two descriptions coincide: $\mathrm{Cl}(\mathbb{R}^3)$ has the even part isomorphic to $\mathbb{H}$, the unit vectors are the unit imaginary quaternions, and a product of two of them is a unit quaternion. So $Spin(3)\cong S^3=\mathrm{Spin}(3)$. For general $n$ the spin group is not a sphere, and the identification with the spin group is a statement about $n=3$.</p>
 <p><strong>Theorem (the double cover).</strong> The map</p>
 <p>$$
 \rho:Spin(n)\to SO(n),\qquad \rho(s)(v)=s\,v\,s^{-1},
@@ -163,7 +163,7 @@ $$</p>
 <p><strong>The algebra and the group.</strong> Define</p>
 <p>$$
 \mathfrak{g}_L:=\operatorname{span}_{\mathbb{R}}\{L_x,L_y,L_z\},\qquad
-\mathrm{Rot}_L:=\exp(\mathfrak{g}_L)=\{\,L(\tilde q):\tilde q\in\mathrm{Rot}\,\}\subset SO(4).
+\mathrm{Spin}(3)_L:=\exp(\mathfrak{g}_L)=\{\,L(\tilde q):\tilde q\in\mathrm{Spin}(3)\,\}\subset SO(4).
 $$</p>
 <p>The algebra has real dimension three, the group has real dimension three, and $L$ is an isomorphism of Lie groups onto its image. The image is one of the two isoclinic copies of $S^3$ in the six-dimensional $SO(4)$.</p>
 <p><strong>The exponential in closed form.</strong> For a unit imaginary quaternion $\vec u$ and real $\theta$, the matrix $U=n_xL_x+n_yL_y+n_zL_z$ satisfies $U^2=-\mathrm{I}_4$, so</p>
@@ -205,7 +205,7 @@ $$</p>
 <p>since $s\ge0$, the other root being $-\tfrac32$.</p>
 <p><strong>The weights, as a second reading.</strong> The eigenvalues of $H_z$ on $\mathbb{R}^4$ are $+\tfrac12$ twice and $-\tfrac12$ twice, so the weight set is $\{\pm\tfrac12\}$ and the carrier has complex dimension $2s+1=2$. The real dimension is $4$, twice the complex dimension, because the left-regular carrier is quaternionic: multiplication by $i$ is a real operator that commutes with the action and is not a scalar, so every complex dimension counts twice.</p>
 <p><strong>Why the number is not read off a basis.</strong> The three eigenvalues $\pm\tfrac12$ do not depend on the axis: the axis is a unit imaginary quaternion $\vec u$, the generator $U$ is conjugate to $L_z$ inside $\mathfrak{g}_L$, and conjugation preserves the spectrum. The spin is a property of the carrier, not of a direction, and no frame is chosen in the computation.</p>
-<p><strong>Why the eigenvalue is the whole story.</strong> The carrier $\mathbb{R}^4$ is irreducible for the rotor action, as proved in <em>The Rotor Group via 4×4 Real Matrices</em>. On an irreducible carrier the Casimir has one eigenvalue, so $\tfrac34$ is not an average over a spectrum but the spectrum. Had the carrier split, the sum of the squares would have had several eigenvalues and the spin would not be a single number.</p>
+<p><strong>Why the eigenvalue is the whole story.</strong> The carrier $\mathbb{R}^4$ is irreducible for the rotor action, as proved in <em>The Spin Group via 4×4 Real Matrices</em>. On an irreducible carrier the Casimir has one eigenvalue, so $\tfrac34$ is not an average over a spectrum but the spectrum. Had the carrier split, the sum of the squares would have had several eigenvalues and the spin would not be a single number.</p>
 <p><strong>The statement.</strong> The left-regular representation on $\mathbb{R}^4$ carries spin $\tfrac12$. The three $L$-generators are the spin-$\tfrac12$ generators in real $4\times4$ form, and the number is read from $\sum_kL_k^2=-3\mathrm{I}_4$ with no complex number and no array.</p>
 <h2 id="two-rotors-spin-zero-and-spin-one">Two Rotors: Spin Zero and Spin One</h2>
 <p><strong>The composite.</strong> Two rotors are two systems, each carrying spin $\tfrac12$ on its own spinor space $S$. The space $S$ is $\mathbb{R}^4$ read as a complex two-space through one of the complex structures of the previous article, and its two weight lines are the two weight spaces of $H_u$; the corpus's spinor plane is one of them, read over the reals. The composite carrier is the tensor square $S\otimes S$, of complex dimension four. The group acts by $g\cdot(x\otimes y)=gx\otimes gy$, and the generator of the axis $\vec u$ acts by</p>
@@ -321,8 +321,8 @@ $$</p>
 <h2 id="corrections">Corrections</h2>
 <p><strong>The sentences that must not be written.</strong> Each is a real error, and each is repaired by one of the sections above.</p>
 <ol>
-<li><strong>"The rotor group is $SU(2)$."</strong> The rotor group is $S^3$. $SU(2)$ is the image of one display, the $2\times2$ complex one, and the isomorphism is a choice.</li>
-<li><strong>"The rotor group is a matrix group."</strong> It is a subset of $\mathbb{H}$, which is an algebra. Every matrix group in this article is an image of it under a display.</li>
+<li><strong>"The spin group is $SU(2)$."</strong> The spin group is $S^3$. $SU(2)$ is the image of one display, the $2\times2$ complex one, and the isomorphism is a choice.</li>
+<li><strong>"The spin group is a matrix group."</strong> It is a subset of $\mathbb{H}$, which is an algebra. Every matrix group in this article is an image of it under a display.</li>
 <li><strong>"$Spin(n)$ is $S^3$."</strong> $Spin(3)$ is $S^3$. For $n\ge4$ the spin group is a cover of $SO(n)$ of dimension $\binom n2$, and it is not a sphere.</li>
 <li><strong>"The $L$-generators give all spins."</strong> They give $\tfrac12$, on $\mathbb{R}^4$. Another spin needs another carrier, and the same Casimir read there.</li>
 <li><strong>"One-sided multiplication can act by an automorphism after a normalization."</strong> It cannot, for an invertible element other than the unit; the count of factors forbids it.</li>
@@ -330,7 +330,7 @@ $$</p>
 <li><strong>"The Casimir eigenvalue is the spin."</strong> It is $s(s+1)$. The spin follows after the root is chosen, and the quadratic has two roots.</li>
 <li><strong>"The Casimir of the left-regular display is $+\tfrac34$."</strong> It is $-\tfrac34$ for the real antisymmetric generators, and $+\tfrac34$ for the Hermitian ones $H_k=iJ_k$. Both are the same invariant in two normalizations.</li>
 <li><strong>"Two rotors give spin $\tfrac12$ again, or spin $2$."</strong> They give $0$ and $1$. The tensor square of a two-dimensional carrier has dimension four, and the two integer carriers exhaust it.</li>
-<li><strong>"The sign of a full turn is a property of the rotor group."</strong> It is a property of a carrier. It is $-1$ on the single spinor plane and $+1$ on both summands of the tensor square, and the group is the same in the three cases.</li>
+<li><strong>"The sign of a full turn is a property of the spin group."</strong> It is a property of a carrier. It is $-1$ on the single spinor plane and $+1$ on both summands of the tensor square, and the group is the same in the three cases.</li>
 </ol>
 <h2 id="verification">Verification</h2>
 <p><strong>How the numbers were obtained.</strong> The two-sided identities were checked on random biquaternions with all sixteen real coefficients drawn independently, in double precision, and the algebraic ones were checked exactly with the structure constants of $\mathbb{H}$. The Casimir was formed from the three real matrices $L_k$ and from the Hermitian $H_k=iJ_k$, and the tensor square was built with the Leibniz generator $A\otimes\mathrm{I}+\mathrm{I}\otimes A$; the exponentials were computed from the series, not from the closed form.</p>
@@ -455,7 +455,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The two-sided product is forced. A one-sided multiplication is multiplicative only for the unit, since $R(XY)$ carries one factor $R$ and $(RX)(RY)$ carries two. Conjugation, $\Theta(X)=RXR^{-1}$, is multiplicative for every invertible $R$.</p>
 <p>In the biquaternion algebra two two-sided operators are available. The $\natural$-operator equals the norm times conjugation by the inverse, so it is an automorphism exactly on the norm-one surface, where it is conjugation by the inverse; the rotor sphere and the boost hyperboloid both lie on that surface. The $*$-operator always preserves the Hermitian adjoint and is conjugation by the inverse exactly on the unitary elements. On the rotor sphere the two operators coincide, because a real unit quaternion has $\tilde u^{*}=\tilde u^{\natural}=\tilde u^{-1}$; that coincidence is what makes a rotor the element whose two-sided action is unambiguous.</p>
-<p>The rotor group is $S^3$, of real dimension three, and it is the spin group $Spin(3)$; for $n\ge4$ the spin group is a different object. The double cover $S^3\to SO(3)$ has kernel $\{\pm1\}$, a full turn upstairs is $-e_t$ downstairs the identity, and two turns upstairs are the identity. The Lie algebra is spanned by the three bivectors, which in the real left-regular display are the matrices $L_x,L_y,L_z$.</p>
+<p>The spin group is $S^3$, of real dimension three, and it is $Spin(3)$; for $n\ge4$ the spin group is a different object. The double cover $S^3\to SO(3)$ has kernel $\{\pm1\}$, a full turn upstairs is $-e_t$ downstairs the identity, and two turns upstairs are the identity. The Lie algebra is spanned by the three bivectors, which in the real left-regular display are the matrices $L_x,L_y,L_z$.</p>
 <p>The Casimir of the halved generators is $\mathbf{J}^2=-\tfrac34\mathrm{I}_4$ in the real antisymmetric normalization and $\mathbf{H}^2=+\tfrac34\mathrm{I}_4$ in the Hermitian one. On the irreducible carrier $\mathbb{R}^4$ the Casimir is a scalar, $s(s+1)=\tfrac34$, and $s=\tfrac12$. The weights $\pm\tfrac12$ confirm it, and the dimension counts it twice because the carrier is quaternionic.</p>
 <p>Two rotors give the tensor square, of dimension four, which splits by the swap into the antisymmetric part of dimension one and the symmetric part of dimension three. The Casimir takes the values $0$ and $2$ there, that is $s(s+1)$ at $s=0$ and $s=1$, and the full turn is $+1$ on both summands. The composite is therefore an action of the rotation group, and its two summands are the complexified fixed line and the complexified vector part.</p>
 <p>What the $L$-generators do not give is the rest of the spectrum. They act on one carrier, they return one spin, and the same Casimir read on other carriers returns the others.</p>
@@ -489,15 +489,15 @@ $$</p>
 <td>$\tilde X\mapsto\tilde Q\tilde X\tilde Q^{\natural}$ and $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$</td>
 </tr>
 <tr>
-<td>$\mathrm{Rot}=S^3=Sp(1)=Spin(3)$</td>
-<td>the rotor group, the unit quaternions</td>
+<td>$\mathrm{Spin}(3)=S^3=Sp(1)$</td>
+<td>the spin group: unit quaternions</td>
 </tr>
 <tr>
 <td>$L(\tilde q)$, $L_x,L_y,L_z$</td>
 <td>the real left-regular matrix and its three generators</td>
 </tr>
 <tr>
-<td>$\mathfrak{g}_L$, $\mathrm{Rot}_L$</td>
+<td>$\mathfrak{g}_L$, $\mathrm{Spin}(3)_L$</td>
 <td>$\operatorname{span}_{\mathbb{R}}\{L_k\}$ and $\exp(\mathfrak{g}_L)\subset SO(4)$</td>
 </tr>
 <tr>
@@ -528,7 +528,7 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-rotor-group-via-4x4-real-matrices.html">The Rotor Group via 4×4 Real Matrices</a>, for the left-regular display, its generators, its exponential and the proof that no generator is diagonal.</li>
+<li><a href="the-spin-group-via-4x4-real-matrices.html">The Spin Group via 4×4 Real Matrices</a>, for the left-regular display, its generators, its exponential and the proof that no generator is diagonal.</li>
 <li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, for the three carriers, the spin table, the quadratic element and the identity $2s+1=\dim_\mathbb{R}$.</li>
 <li><a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a>, for the group of unit quaternions and the double cover $Sp(1)\to SO(3)$.</li>
 <li><a href="the-two-sided-operators-and-the-spin-group.html">The Two-Sided Operators and the Spin Group</a>, for the two-sided operators of the algebra and their relation to the spin group.</li>
