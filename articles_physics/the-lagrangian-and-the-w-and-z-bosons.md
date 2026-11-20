@@ -35,7 +35,7 @@ $$
 
 because one doublet of weak isospin $\tfrac12$ produces both masses from the same $v$. The relation is a consequence of the action's structure and not a fit.
 
-*Third, the $SU(2)$ factor is transcribed and not derived.* The algebra carries $\mathrm{U}(1)$ exactly and $\mathrm{SU}(2)$ only in part, so this article's action is written in components and the biquaternionic translation is claimed only where it holds. The status of each line is stated at the line.
+*Third, the group is the algebra's and the representation is imported.* The algebra carries $\mathrm{U}(1)$ exactly, and it carries $\mathrm{SU}(2)$ exactly as well, since the compact factor is the spin group $\mathrm{Spin}(3)=S^{3}$; what it cannot supply is the doublet, a representation chosen independently of the spin, nor the chiral split on one letter. So this article's action is written in components and the biquaternionic translation is claimed only where it holds. The status of each line is stated at the line.
 
 **What is not new.** The electroweak action is standard and is imported whole. What the corpus contributes is the exact $\mathrm{U}(1)$ line, the identification of the Higgs mass formula with the abelian one, and the statement of where the algebra stops.
 
@@ -223,7 +223,7 @@ with the charge operator $Q=T_3+Y$, and its conservation is exact because the un
 
 **The three findings.** The masses are not parameters but products of a coupling and the vacuum value, so the action needs no mass term and forbids one. The ratio $\rho=1$ is a consequence of the single doublet. The photon's masslessness is the zero eigenvalue of a rank-three mass matrix.
 
-**The boundary.** The $\mathrm{U}(1)$ line is carried exactly by the algebra; the $SU(2)$ lines are transcribed. The value of $v$ and the number of scalars are not derived.
+**The boundary.** Both lines are carried by the algebra, since the compact factor is the spin group; what is transcribed is the doublet's representation and its chiral split. The value of $v$ and the number of scalars are not derived.
 
 ## Summary of Notation
 
