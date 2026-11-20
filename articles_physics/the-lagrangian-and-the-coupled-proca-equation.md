@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Proca Equation__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 This article asks what action has the coupled Proca equation as its Euler–Lagrange equation, and what the action's symmetries give. It is the variational companion of *The Coupled Proca Equation in Biquaternionic Form*, its polar companion is *The Lagrangian and the Coupled Proca Equation in Polar Variables*, and its free counterpart is *The Lagrangian and the Proca Equation*.
@@ -33,6 +35,10 @@ with $\mathrm{Sc}$ the scalar part, ${}^{*}$ the Hermitian conjugation, and $\na
 *Third, the only Noether current of the free action is the energy–momentum, and the coupled action has two.* The complex carrier has a central phase, the phase is a symmetry, and the Noether charge exists. The current is the source the inhomogeneous Maxwell equation needs, and the free article's remark that the free theory has no such source is a statement about the carrier, which the coupling changes.
 
 **What is not claimed.** No new solution, no new prediction. The action is the standard minimally coupled Proca action; the algebra's contribution is that the coupling is one element, that the mass term's invariance is one line, that the current and the constraint come from the same variation, and that the field term's status is stated precisely rather than assumed.
+
+## Conventions
+
+**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the potential $\tilde A$ is a general element and the connection $\tilde A_\Phi$ is anti-Hermitian. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde A\bigr)$, a pure vector in the free case and half of a complex bivector in the coupled one, which is the difference the article's fourth section is about. The pairing is $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term and $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ for the mass term, the measure is $\mathrm{d}^4r$, and $k_m=mc/\hbar$.
 
 ## The Action in Element Form
 

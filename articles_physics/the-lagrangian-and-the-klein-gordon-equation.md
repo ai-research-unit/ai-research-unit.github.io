@@ -1,5 +1,9 @@
 # __The Lagrangian and the Klein–Gordon Equation__
 
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
+
 ## Introduction
 
 *The Klein–Gordon Equation in Biquaternionic Form* writes the equation as
@@ -28,7 +32,6 @@ Two boundaries are stated first, because both are ways of overclaiming.
 
 The formalism is that of *The Lagrangian and Hamiltonian Mechanics*, and the action principle is that of *The Lagrangian and the Non-Quantum Limit: The Action Principle*; this article applies the principle to the Klein–Gordon equation in its element form.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary, $i^{2}=-e_t$; $\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}$ is the centre; $\mathbb{B}_{\Psi}$ is the Hermitian fixed subspace and $\mathbb{B}_{\Phi}$ the anti-Hermitian one. The asterisk is Hermitian conjugation, the superscript $\natural$ is quaternion conjugation, $\mathrm{Sc}$ is the coefficient of $e_t$. The measure is $\mathrm{d}^{4}x=\mathrm{d}r'_t\,\mathrm{d}r_x\,\mathrm{d}r_y\,\mathrm{d}r_z$ with $r'_t=c\,t'$, so the material time is a length and no $c$ appears beside a temporal derivative. The four-position is $\tilde R_\Phi=i r'_t e_t+r_x\vec e_x+r_y\vec e_y+r_z\vec e_z$. Each symbol is defined where it first appears, and all of them are collected in §*Summary of Notation*.
 
 ## The Equation and Its Operator
 
@@ -107,7 +110,9 @@ The convention fixed in §*The Equation and Its Operator* is $\Box_\Phi=\Delta_\
 
 **No factor of one half.** The overall normalization is a convention and this article fixes it once: the action above has no $\tfrac12$, so the charge and the energy below carry the constants written and no others. A factor of $\tfrac12$ in front of $S$ multiplies every Noether current by $\tfrac12$ and changes no equation.
 
-## The Action on the Carrier and on the Algebra
+**Declared omissions.** The reality of the action is checked inside *The Action in Element Form*, where the two pairings are compared, and it is not given a section of its own, so slot 5 is omitted. The action imposes no constraint beyond its own equation, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
+## The Structural Consequence: Four Scalar Actions
 
 **The spin-zero action is one scalar action.** The field is central, so the Lagrangian is the ordinary complex scalar Lagrangian and the sum below has one term. The separation that follows is exact on the whole algebra, and it is recorded because it is what the restriction rules out: four terms with no cross term are four independent fields, each with its own density, its own charge and its own action, and the carrier admits one.
 
@@ -130,6 +135,33 @@ where $S$ on the right is the scalar action of one complex coefficient. There ar
 **What follows for the equation.** On the centre there is one coefficient, one action and one solution set $S$. On the whole algebra the four coefficients are independent and the solution space is $\mathbb{C}^{4}\otimes_{\mathbb{C}}S$, which is four fields; the parent's §*A value outside the centre, and the four equations* is the same statement read on the equation. The variational form adds the reason: the independence is the orthogonality of the four units under the pairing, so no choice of coefficients can produce a coupling that the Lagrangian does not contain.
 
 **What breaks it.** A non-central Hermitian coefficient $\tilde M$ in the potential term does couple the coefficients. Left multiplication by $\tilde M$ is a real-linear map of $\mathbb{B}$, Hermitian for the $\mathrm{Sc}$ pairing when $\tilde M$ is Hermitian, so the potential term is still real, but it is now a Hermitian $4\times4$ matrix in the basis $e_\mu$ rather than four numbers. The equation keeps its form, $\left(\Box_\Phi-\tilde M\right)\tilde\Xi=0$, and the four copies become four coupled channels. For a constant $\tilde M$ the plane-wave problem becomes the eigenvalue problem $(\omega^{2}-c^{2}k_\Phi^{2})\tilde\Xi_0=\tilde M\tilde\Xi_0$, whose four branches are the four eigenvalues. The free field is the case in which $\tilde M$ is central and the branches coincide.
+
+## The Variation
+
+**Vary the conjugate and integrate by parts.** The variation is taken with respect to $\tilde\Xi^{*}$, the two halves of a complex field being independent variables of the real functional. Writing $\partial_t=\partial_{r'_t}$ and summing over the spatial slots with their metric signs, the variation of the display of the previous section is
+
+$$
+\delta S=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[(\partial_t\,\delta\tilde\Xi)^{*}\partial_t\tilde\Xi-\sum_\eta(\partial_\eta\,\delta\tilde\Xi)^{*}\partial_\eta\tilde\Xi-k_m^{2}\,\delta\tilde\Xi^{*}\tilde\Xi\Bigr].
+$$
+
+Two integrations by parts, one per derivative, give
+
+$$
+\delta S=\int\mathrm{d}^{4}x\;\mathrm{Sc}\Bigl[\delta\tilde\Xi^{*}\bigl(\Delta_\Phi\tilde\Xi-\partial_t^{2}\tilde\Xi-k_m^{2}\tilde\Xi\bigr)\Bigr]
++\oint\mathrm{d}\Sigma\;\mathrm{Sc}\bigl[\delta\tilde\Xi^{*}\partial_n\tilde\Xi\bigr],
+$$
+
+with the spatial second derivative carrying the plus that the metric sign and the minus in the action cancel, and with $\Delta_\Phi=\sum_\eta\partial_\eta^{2}$.
+
+**The boundary term.** On a region whose boundary is held fixed, $\delta\tilde\Xi^{*}=0$ there and the surface term vanishes; on a region that extends to infinity the flux is killed by the fall-off of a solution. The two sentences are the whole of the boundary discussion, and the corpus uses the second.
+
+**The equation is recovered, not assumed.** The bracket is $\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi$ with $\Box_\Phi=\Delta_\Phi-\partial_t^{2}$. Stationarity for every $\delta\tilde\Xi^{*}$ forces the bracket to vanish: if it did not, choosing $\delta\tilde\Xi^{*}$ equal to the bracket itself would make $\mathrm{Sc}(\delta\tilde\Xi^{*}\cdot\text{bracket})=\sum_\mu\lvert\text{bracket}_\mu\rvert^{2}>0$. Hence
+
+$$
+\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi=0,
+$$
+
+the parent's equation, with the mass term's sign fixed by the dispersion relation of the previous section. Varying $\tilde\Xi$ instead of $\tilde\Xi^{*}$ gives the Hermitian conjugate of the same equation, so the two variations of the real functional give one equation and its conjugate and not two equations.
 
 ## The Conjugate Pair
 

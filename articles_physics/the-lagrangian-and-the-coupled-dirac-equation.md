@@ -1,5 +1,7 @@
 # __The Lagrangian and the Coupled Dirac Equation__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
 ## Introduction
 
 This article states the action whose Euler–Lagrange equations are the coupled Dirac equation, and it reads what the action's symmetries give. It is the element-form companion of *The Lagrangian and the Dirac Equation*, and it is the first of two coupled variational articles. The second substitutes the polar word into the action of this article and reads the constraint structure.
@@ -25,6 +27,10 @@ with the connection in the material sector $\mathbb{B}_\Phi$ and with central sc
 *Third, the current is settled.* The local phase's Noether current is conserved on solutions, and it is the pairing with two fixed frame units that the element form states and the Gordon article identifies. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant, is of the density sign, and is not conserved. The action does not produce it and the equation does not conserve it. The positive statement and the counterexample are both in §*The Current: What the Action Produces and What It Does Not*.
 
 **The two settings.** The action is stated for a connection that may depend on the coordinates. The two settings of the framework are distinct and are kept apart here. In the constant setting the connection is a fixed element of $\mathbb{B}_\Phi$ with constant coefficients; the equation becomes algebraic in momentum space, the propagator is a finite product of exponentials up to the gauge factor, and a constant potential is pure gauge. In the operator setting the connection is an operator or a general function of position; the equation is a partial differential equation, the propagator is not a finite product, and the variational principle is the standard field-theoretic one. The article computes in the constant setting and states where the operator setting differs. Nothing is transferred between them.
+
+## Conventions
+
+**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is the pair $(\tilde\Xi_R,\tilde\Xi_L)$ of elements of $\mathbb{B}$, the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, and the mass term is the only term that couples the two parts. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ with the connection in $\mathbb{B}_\Phi$, and it is central, so it multiplies from either side without a choice. The measure is $\mathrm{d}^4r$, the mass is $k_m=mc/\hbar$, and the two settings — constant and varying connection — are the parent's and are kept apart throughout.
 
 ## The Coupled Action
 

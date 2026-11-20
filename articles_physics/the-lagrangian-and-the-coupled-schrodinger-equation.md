@@ -1,5 +1,11 @@
 # __The Lagrangian and the Coupled Schrödinger Equation__
 
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
+
 ## Introduction
 
 *The Lagrangian and the Schrödinger Equation* gives the free field's action, its variation and its two Noether currents. This article adds the electromagnetic connection to that action and asks what the addition changes: what the variation produces, what the symmetry delivers, and what the coupling costs.
@@ -24,7 +30,6 @@ with $D_\eta=\partial_\eta+\frac{iϙ}{\hbar}A_\eta$ and $\tilde A_\Phi=i(\varphi
 
 **What is not claimed.** The action is not new: it is the standard action of a non-relativistic charged scalar field, written in the algebra's letters. The current it delivers is the element-form companion's current, not a second one. No new prediction and no new solution. The article's content is the closure of the variational statement — the action's reality, the variation's exactness, the invariance's exactness, and the current's identity with the equation's — and the honest record of the one thing it does not do, which is the local energy flux.
 
-**Conventions.** The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i\hbar\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.
 
 ## The Coupled Action
 

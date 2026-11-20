@@ -29,6 +29,10 @@ with $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$,
 
 **What is not claimed.** No new solution, no new prediction. The action is the standard scalar-electrodynamics action; the algebra's contribution is that the coupling is one derivative, that the current and the source are one object, and that the two equations' consistency is one line.
 
+## Conventions
+
+**The conventions are the free companion's, restated here for the coupled article.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection and $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ with $A_\mu$ the real components of $\tilde A_\Phi$ and $ϙ$ the charge of the field, fixed once here and never re-chosen. The field strength is $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$, the pure-vector part of the conjugate gradient. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the measure is $\mathrm{d}^4x=\mathrm{d}r'_t\,\mathrm{d}^3x$, the mass is $k_m=mc/\hbar$, and the field term's normalisation $\sqrt{\mu}$ is the Maxwell article's and is not fixed again.
+
 ## The Action
 
 **The matter term.** The free companion's action is the sum over the four slots of $\mathrm{Sc}\big[(\partial_\mu\tilde\Xi)^{*}\partial_\mu\tilde\Xi\big]$ with the metric signs of the display, minus the mass term. Covariantising the four slots gives
@@ -119,6 +123,24 @@ $$
 holds for the current as defined in this section, the companion's $J$ being this one divided by $2k_m$ and therefore carrying the same constant after the rescaling; the divergence vanishes on every solution, and the vanishing is the same statement as the scalar part of the connection's equation being zero. So the two variations of one action are mutually consistent, and the consistency is not a condition imposed on the system: it is the current's conservation, which is the matter equation read once more.
 
 **What this establishes.** A coupling between a field and a connection exists exactly when the field has a conserved current, because the connection's equation must be integrable. For the scalar, the current is the phase symmetry's, the symmetry exists because the centre of the algebra is a $\mathrm{U}(1)$, and the coupling is the localization of that symmetry. The chain is the gauge principle article's, and the coupled Klein–Gordon variational article supplies the one computation the chain needs at second order.
+
+## The Structural Consequence: The Two Equations Cannot Contradict
+
+**One action, three variations, two equations, and no possible inconsistency.** The computations are in the two sections above; what they establish together is the article's structural claim.
+
+**The claim.** The connection's equation has a left side whose scalar part vanishes identically, because that side is the divergence of a pure vector and $\Box_\Phi$ is scalar. Its right side is proportional to the matter current. So the scalar part of the connection's equation is exactly the continuity equation for that current, and the matter equation is what makes it true. The two equations therefore cannot contradict each other: any field that solves the matter equation and the connection's equation automatically satisfies the one relation that the connection's equation cannot impose.
+
+**The hand check.** Take the connection's equation, apply $(\tilde\nabla_\Phi)^{\natural}$ and take $\mathrm{Sc}$. The left side gives zero, term by term, because $\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde F\bigr)=0$ for a pure-vector $\tilde F$. The right side gives $(\varrho/\hbar)\,\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}J\bigr)$. So the identity is
+
+$$
+\mathrm{Sc}\Bigl(\bigl(\tilde\nabla_\Phi\bigr)^{\natural}J\Bigr)=0,
+$$
+
+which is $\partial_t\rho_{\mathrm{ch}}+\vec\nabla_\Phi\cdot\vec J=0$ written in the algebra.
+
+**Why this is a structural fact and not a coincidence.** It is the same identity that makes the coupling possible. A coupling that entered anywhere but inside the covariant derivative would break it, and the action would be inconsistent at the first variation. The placement of the coupling and the consistency of the two equations are one fact, seen from the action and from the equations.
+
+**Declared omissions.** The reality of the action is settled inside *The Action*, where each of the three terms is shown real, and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Gauge Invariance of the Total Action and What It Buys
 

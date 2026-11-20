@@ -36,6 +36,10 @@ the Euler–Lagrange equation is the Proca equation. The normalization is fixed 
 
 The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_t=1$, $\vec e_\eta^2=-e_t$ and central scalar imaginary $i$; the sectors are $\mathbb{B}_\Phi=\mathrm{span}_\mathbb{R}\{ie_t,\vec e_x,\vec e_y,\vec e_z\}$ and $\mathbb{B}_\Psi=\mathrm{span}_\mathbb{R}\{e_t,i\vec e_x,i\vec e_y,i\vec e_z\}$; ${}^{*}$ is coefficient conjugation composed with the quaternion conjugation $\natural$; $\mathrm{Sc}$ is the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ is the quaternionic norm, real on $\mathbb{B}_\Phi$; the potential is $\tilde A_\Phi=i\,a'_t\,e_t+\vec A$ with real $\vec A$ and real $a'_t$, so that $\langle\tilde A_\Phi\rangle_\natural=-(a'_t)^2+\vec A^2$; the derivatives are $\partial/\partial R_t=-i\,\partial/\partial r'_t$ and $\partial/\partial R_\eta=\partial/\partial r_\eta$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; and the field strength is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ with $c=1/\sqrt{\epsilon\mu}$. The mass is the wave number $k_m=mc/\hbar$.
 
+## Conventions
+
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_{\Phi}$ is the anti-Hermitian fixed subspace, where the potentials live; $\mathbb{B}_V$ is the pure-vector subspace, where the field strength lives; $\langle X\rangle_\natural=X^{\natural}X$ is the invariant length of an element, real whenever $X$ is; $\mathrm{Sc}$ is the coefficient of $e_t$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot)$ is the real pairing the action uses. The gradient is $\tilde\nabla_\Phi=e_t\,\partial/\partial R_t+\sum_\eta\vec e_\eta\,\partial/\partial r_\eta$ with $R_t=ir'_t$, so that $\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$ carries the metric signs. The measure is $\mathrm{d}^4r=\mathrm{d}r'_t\,\mathrm{d}^3r$, the units are those of the parent, and the mass is $k_m=mc/\hbar$.
+
 ## The Action in Element Form
 
 Write the action as
@@ -109,6 +113,18 @@ $$
 and neither of the last two terms vanishes for a general $\Gamma$. So the action has no gauge symmetry, and the equation inherits a longitudinal part. The Lorenz condition is the statement that this part is absent on shell, and it is a consequence of the equation rather than a condition imposed on the field.
 
 **Why this is not a gauge choice, in one sentence.** In the massless theory $S=0$ can be reached from any potential by a gauge transformation, so it is a choice of representative; here no gauge transformation exists, so $S=0$ is a property of the solution. That is the whole difference, and it is visible in the action as the presence of the mass term.
+
+## The Structural Consequence: The Constraint Removes One Degree of Freedom
+
+**The equation and its divergence are one system, and the system has three degrees of freedom.** The constraint is derived in the section above; what it establishes is a count, and the count is the article's structural claim.
+
+**The count.** The potential has four real components in the material sector. The equation is four equations, but they are not independent: applying the conjugate gradient and taking the scalar part annihilates the field term identically and leaves $k_m^{2}S=0$, where $S=\partial a'_t/\partial r'_t+\vec\nabla_\Phi\cdot\vec A$. For $k_m\neq0$ this is $S=0$, one relation among the four components.
+
+**What the relation does.** With $S=0$, the temporal component of the equation contains no second time derivative of $a'_t$: it is the statement that $a'_t$ is determined by $\vec\nabla_\Phi\cdot\vec A$ and its rate. So the four components carry three propagating modes and one determined one, and the three are the two transverse polarisations and the longitudinal one that the mass term makes physical. The massless limit is the degenerate case, where $S=0$ becomes a gauge choice rather than a determination, and the longitudinal mode decouples.
+
+**The hand check.** Put $\tilde A_\Phi=a'_t e_t$ alone, spatially constant. Then $\tilde F=0$ and the equation reads $k_m^{2}a'_t e_t=0$, so $a'_t=0$: a purely temporal, constant potential is not a solution of the massive theory, though it is a pure gauge configuration of the massless one. The mass term is what removes it, and the count above is that removal stated in general.
+
+**Declared omissions.** The reality of the action is settled inside *The Action in Element Form*, where the mass bilinear is shown real and the field bilinear is chosen, and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## No Second Current
 
