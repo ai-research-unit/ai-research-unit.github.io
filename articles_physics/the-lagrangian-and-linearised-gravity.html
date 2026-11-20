@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrangian and Linearised Gravity — Biquaternion Universe</title>
+  <meta name="description" content="The question, and the answer&#x27;s shape. Linearized Gravity in Biquaternionic Form writes the linearised Einstein equation for a metric perturbation and…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrangian-and-linearised-gravity"><strong>The Lagrangian and Linearised Gravity</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question, and the answer's shape.</strong> <em>Linearized Gravity in Biquaternionic Form</em> writes the linearised Einstein equation for a metric perturbation and exhibits its gauge freedom, its linearised curvature and its two polarisations. This article asks the family's question about it: is there an action whose Euler–Lagrange equation is that equation, what is its variation, and what does the variational principle add? The answer is yes at the level of the quadratic expansion of the Einstein–Hilbert action, and — this is the article's honest core — no at the level of a single biquaternion, because the perturbation is not one.</p>
+<p><strong>Three results.</strong> The action is the second variation of the Einstein–Hilbert action, a quadratic form in the perturbation with two derivatives. Its variation gives the linearised Einstein equation, its time-time component is a constraint and not an evolution equation, and its gauge orbit is the diffeomorphism's linearisation. The count that follows is ten minus four minus four, which is two.</p>
+<p><strong>Where the biquaternion enters and where it does not.</strong> The parent's structural finding is that the metric perturbation is carried by a frame perturbation $\delta\tilde E_{\Phi,\mu}$ — a family of four elements of $\mathbb{B}_\Phi$ — and not by the single element $\sum h_{\mu\nu}\varepsilon_\mu\varepsilon_\nu^{\natural}$, which is blind to the transverse-traceless part. So the action below is written on the frame perturbation, and its biquaternionic form is exact there. What the corpus does not have is the <em>non-linear</em> completion, the parent's stated gap, and this article does not close it.</p>
+<p><strong>What is not done.</strong> Nothing is quantised. There is no graviton operator, no Fock space, no propagator, no loop and no statement about renormalisability. The gravity articles this family draws on are classical, and the corpus's separate quantisation programme — <em>Canonical Quantization of the Biquaternion Graviton Field</em> — is a different construction and not this family's; the bridge article records what a quantisation would need.</p>
+<p><strong>Declared omissions.</strong> The reality of the action is settled inside <em>The Action</em>, where the quadratic form's reality is shown from the reality of the frame perturbation, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the non-linear theory is attempted beyond the parent's gap, so slot 13 is omitted. The open question is the non-linear completion, which is named and not separated, so slot 14 is omitted.</p>
+<h2 id="conventions">Conventions</h2>
+<p><strong>The conventions are the parent's.</strong> The metric is mostly plus, $\eta=\mathrm{diag}(-1,+1,+1,+1)$ in the length units of the material sector, with the interval $-c^{2}\mathrm{d}r'^{2}_{t}+\mathrm{d}r_x^{2}+\mathrm{d}r_y^{2}+\mathrm{d}r_z^{2}$. The perturbation is $h_{\mu\nu}$, symmetric, with $\lvert h_{\mu\nu}\rvert\ll1$; the trace is $h=\eta^{\mu\nu}h_{\mu\nu}$ and the trace-reversed variable is $\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$. Indices are raised and lowered with $\eta$.</p>
+<p>The frame perturbation is $\delta\tilde E_{\Phi,\mu}\in\mathbb{B}_\Phi$, related to the metric by $h_{\mu\nu}=\langle\varepsilon_\mu,\delta\tilde E_{\Phi,\nu}\rangle_{\natural}+\langle\delta\tilde E_{\Phi,\mu},\varepsilon_\nu\rangle_{\natural}$, the parent's dictionary. The gravitational constant enters once, through $\kappa^{2}=16\pi G/c^{4}$, and this article does not re-derive its normalisation: the Einstein–Hilbert normalisation is the gravity articles' and is quoted.</p>
+<p><strong>The literature's letters.</strong> Where the standard form of the action is quoted, it is quoted in the tensor dictionary that the parent supplies, and every step below is a step in that dictionary. The biquaternionic translation of the quadratic form is exact on the frame perturbation; the translation of the <em>non-linear</em> action is not, and that is the gap.</p>
+<h2 id="the-action">The Action</h2>
+<p><strong>The action is the quadratic expansion, and it is the second variation of the Einstein–Hilbert term.</strong> Write the Einstein–Hilbert action with the cosmological term absent and expand $\sqrt{-g}R$ to second order in $h$. The first-order term is a total derivative on shell and drops; the second-order term is the quadratic action,</p>
+<p>$$
+S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{-\tfrac12\,\partial_\lambda h_{\mu\nu}\,\partial^{\lambda}h^{\mu\nu}+\partial_\mu h^{\mu\nu}\,\partial_\nu h-\partial_\mu h^{\mu\nu}\,\partial_\lambda h^{\lambda}_{\ \nu}+\tfrac12\,\partial_\lambda h\,\partial^{\lambda}h\Bigr\},
+$$</p>
+<p>the Fierz–Pauli form with the mass set to zero. In the trace-reversed variable the same functional is one line shorter,</p>
+<p>$$
+S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\,\partial_\lambda\bar h_{\mu\nu}\,\partial^{\lambda}\bar h^{\mu\nu}-\tfrac14\,\partial_\lambda\bar h\,\partial^{\lambda}\bar h\Bigr\}
++\text{(the de Donder total derivative)},
+$$</p>
+<p>because the trace-reversed variable absorbs the two cross terms up to a surface term. The two displays are one action written twice, and the second is the one the variation uses.</p>
+<p><strong>Its reality.</strong> In the frame perturbation the quadratic form is $\mathrm{Re}\,\mathrm{Sc}$ of a product of two derivatives of $\delta\tilde E_{\Phi}$, with the metric's signature carried by the frame; each factor is in $\mathbb{B}_\Phi$ and the pairing is real. That is the biquaternionic statement of the reality of $S^{(2)}$, and it is exact on the frame perturbation.</p>
+<p><strong>Its normalisation, quoted.</strong> The factor $1/2\kappa^{2}$ is the expansion of $c^{4}/16\pi G$; it is the same constant that makes the Newtonian limit come out and it is fixed in the gravity articles. This article uses it and does not re-derive it, and says so because a reader could otherwise expect a derivation.</p>
+<p><strong>Why a quadratic action and not a linear one.</strong> A linear action in $h$ would have a first variation that does not vanish at $h=0$, and $h=0$ is flat space, a solution. So the expansion starts at the second order, and the linearised theory's action is necessarily quadratic. That is the structural reason the graviton's action looks like a free field's and not like the Maxwell action's in $A$: it is a fluctuation's action.</p>
+<h2 id="the-variation">The Variation</h2>
+<p><strong>One variation, two integrations by parts, and the linearised Einstein tensor.</strong> Varying $\bar h_{\mu\nu}$ in the second display,</p>
+<p>$$
+\delta S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\partial_\lambda\bar h_{\mu\nu}\,\partial^{\lambda}\delta\bar h^{\mu\nu}-\tfrac12\,\partial_\lambda\bar h\,\partial^{\lambda}\delta\bar h\Bigr\},
+$$</p>
+<p>and two integrations by parts move the derivatives onto the perturbation. The result is</p>
+<p>$$
+\delta S^{(2)}=-\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\delta\bar h^{\mu\nu}\Bigl(\Box\bar h_{\mu\nu}-\eta_{\mu\nu}\Box\bar h-\partial_\mu\partial^{\lambda}\bar h_{\lambda\nu}-\partial_\nu\partial^{\lambda}\bar h_{\lambda\mu}+\eta_{\mu\nu}\partial^{\lambda}\partial^{\rho}\bar h_{\lambda\rho}\Bigr),
+$$</p>
+<p>whose bracket is the linearised Einstein tensor in the trace-reversed variable, up to the factor that the trace reversal contributes. Stationarity gives $\delta G_{\mu\nu}=0$, the parent's equation.</p>
+<p><strong>The boundary term.</strong> The action carries two derivatives and the surface term is a bilinear in $\partial\delta\bar h$; it is killed by holding both the perturbation and its normal derivative fixed, which is the standard condition for a second-order action and the same one the Klein–Gordon article uses.</p>
+<p><strong>What the variation gives that the equation does not.</strong> The Bianchi identity. The bracket's divergence vanishes identically, because it is built from a diffeomorphism-invariant functional; so the equation's left side is conserved without any use of the equation. In the parent's language, the linearised Bianchi identity is the statement that the gauge symmetry of the action has a Noether identity behind it, and the variational derivation makes that visible in one line.</p>
+<p><strong>What it does not give.</strong> The non-linear terms. The same procedure applied to the exact action gives the exact Einstein equation, but the expansion truncated at second order in $h$ cannot produce the terms of order $h^{2}$ in the equation, and the parent's gap is exactly there.</p>
+<h2 id="the-constraints-the-action-imposes">The Constraints the Action Imposes</h2>
+<p><strong>The time-time equation is a constraint.</strong> Of the ten equations $\delta G_{\mu\nu}=0$, the $\mu=\nu=0$ component carries no second time derivative of $h_{ij}$: it is</p>
+<p>$$
+\partial_j\partial_k\bigl(h_{jk}-\delta_{jk}h_{ll}\bigr)+\text{(terms with one time derivative)}=0 ,
+$$</p>
+<p>a condition on the initial data at every time. That is Gauss's law's counterpart: the field's temporal component is not dynamical, and the equation that would determine it is a constraint instead.</p>
+<p><strong>The gauge orbit.</strong> The action is invariant under the linearised diffeomorphism $h_{\mu\nu}\mapsto h_{\mu\nu}-\partial_\mu\zeta_\nu-\partial_\nu\zeta_\mu$, equivalently $\bar h_{\mu\nu}\mapsto\bar h_{\mu\nu}-\partial_\mu\zeta_\nu-\partial_\nu\zeta_\mu+\eta_{\mu\nu}\partial^{\lambda}\zeta_\lambda$. Four functions, hence four directions in the kernel of the map from perturbation to linearised curvature.</p>
+<p><strong>The count.</strong> Ten components; four gauge directions; four constraints (the time-time and time-space equations, which are four conditions and not evolution equations); two remaining. The two are the transverse-traceless polarisations, and the parent's structural finding — that the single-biquaternion carrier is blind to exactly that part — is the statement that the algebra's naive carrier holds the trace and not the physics.</p>
+<p><strong>What the constraints are not.</strong> They are not the de Donder condition. The de Donder condition $\partial^{\lambda}\bar h_{\lambda\mu}=0$ is a <em>gauge choice</em>, used above to shorten the variation; the constraints are the equations' own content and hold in every gauge. Mixing the two is the standard error, and the article separates them because the count depends on it.</p>
+<h2 id="the-structural-consequence-the-count-needs-both-and-the-algebra-sees-only-one">The Structural Consequence: The Count Needs Both, and the Algebra Sees Only One</h2>
+<p><strong>The claim.</strong> The linearised theory's two degrees of freedom come from ten minus four minus four, and the algebra's single-biquaternion carrier holds the trace's part of the ten and not the transverse-traceless part. So the biquaternionic action must be written on the frame perturbation, and the single-element action is not merely inconvenient — it is blind.</p>
+<p><strong>The hand check.</strong> Take $\sum_{\mu\nu}h_{\mu\nu}\varepsilon_\mu\varepsilon_\nu^{\natural}$. The parent computes it: it equals $h\,e_t$, the trace times the time unit. A transverse-traceless perturbation has $h=0$, so its single-element image is zero, so any action written in that element assigns it zero action — including the two physical polarisations. That is a one-line refutation of the naive carrier, and it is why the action above is written on $\delta\tilde E_{\Phi,\mu}$.</p>
+<p><strong>What the frame perturbation holds.</strong> Sixteen components, of which six are the infinitesimal local Lorentz transformations and ten are the metric perturbation; the action is invariant under the six, so it is a functional of the ten. The biquaternionic writing is therefore exact, with the six-dimensional kernel an internal gauge freedom of the frame and not a physical sector.</p>
+<p><strong>What the consequence forbids.</strong> It forbids writing the graviton's action as a functional of one element, in the way the Proca action is a functional of one element. The vector case works because a vector's data is one element; the rank-two symmetric case does not, because the trace is the only part a single element can see, and the physics is in the rest.</p>
+<h2 id="the-noether-currents-and-the-sign-of-the-charge">The Noether Currents and the Sign of the Charge</h2>
+<p><strong>There is no charge and there is a stress, and the stress is not a tensor.</strong> The linearised action is invariant under diffeomorphisms, not under a phase rotation, so there is no conserved charge and no sign of a charge to fix. What translation invariance gives is the energy–momentum of the perturbation, and the honest statement is that it is gauge-dependent: a coordinate change moves energy between the perturbation and the background.</p>
+<p><strong>Why it is gauge-dependent.</strong> The perturbation is defined relative to a background, and the split of the metric into background plus perturbation is not invariant under the diffeomorphisms the action is invariant under. So the canonical stress computed from $S^{(2)}$ changes under a gauge transformation, and only its average over a region larger than the wavelength — the Isaacson stress — is meaningful.</p>
+<p><strong>What survives without averaging.</strong> The sign, in the sense that the energy of a transverse-traceless wave is positive for either polarisation, and the flux, in the sense that the averaged Poynting-like quantity is positive and directed along the wave's propagation. Those two statements are the content of "gravity waves carry positive energy", and the corpus can state them while admitting that the local density is not a tensor.</p>
+<p><strong>The contrast with the Maxwell article.</strong> There the stress is a tensor and the energy density is positive pointwise. Here it is not, and the difference is not a defect of the calculation: it is the statement that the gravitational field's energy is not localisable in a background-dependent split. The article records the contrast rather than hiding it.</p>
+<h2 id="what-the-principle-adds-and-what-it-relabels">What the Principle Adds and What It Relabels</h2>
+<p><strong>Adds.</strong> The variational derivation of the linearised equation, the Bianchi identity as a Noether identity, and the count as a consequence of an action's symmetries rather than of a list of conditions. Those are genuine gains: the constraint and the orbit are separated by their origin, and the count follows.</p>
+<p><strong>Relabels.</strong> The parent's equation, its gauge freedom, its curvature and its polarisations. Nothing predictive is added, and no constant is determined that the gravity articles did not already fix.</p>
+<p><strong>What it does not reach, and this family does not either.</strong> Two things. The non-linear completion: the parent names it as the gap, and the quadratic truncation cannot supply it. And the quantisation: a graviton's Fock space, its propagator and its ultraviolet behaviour are not in the corpus, and the bridge article states what would be needed. The first gap is the corpus's own subject; the second is the boundary the corpus shares with every other member of the family.</p>
+<h2 id="summary">Summary</h2>
+<p>The linearised gravitational field's action is the second variation of the Einstein–Hilbert action, a quadratic form with two derivatives, given above in both the metric and the trace-reversed variables. Its variation gives the linearised Einstein equation and the Bianchi identity; its time-time component is a constraint; its gauge orbit is the linearised diffeomorphism; and the count is ten minus four minus four, which is two. The biquaternionic writing is exact on the frame perturbation and blind on a single element, which is the parent's structural finding read from the action side. The non-linear completion and the quantisation are both absent.</p>
+<p>$$
+S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\;\Bigl\{\tfrac12\,\partial_\lambda\bar h_{\mu\nu}\,\partial^{\lambda}\bar h^{\mu\nu}-\tfrac14\,\partial_\lambda\bar h\,\partial^{\lambda}\bar h\Bigr\},
+\qquad
+\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h,
+\qquad
+\kappa^{2}=\frac{16\pi G}{c^{4}}.
+$$</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\eta_{\mu\nu}$</td>
+<td>Background metric, mostly plus</td>
+</tr>
+<tr>
+<td>$h_{\mu\nu}$</td>
+<td>Metric perturbation, symmetric, small</td>
+</tr>
+<tr>
+<td>$h=\eta^{\mu\nu}h_{\mu\nu}$</td>
+<td>Trace</td>
+</tr>
+<tr>
+<td>$\bar h_{\mu\nu}=h_{\mu\nu}-\tfrac12\eta_{\mu\nu}h$</td>
+<td>Trace-reversed perturbation</td>
+</tr>
+<tr>
+<td>$\delta\tilde E_{\Phi,\mu}$</td>
+<td>Frame perturbation, the exact carrier</td>
+</tr>
+<tr>
+<td>$\zeta_\mu$</td>
+<td>Gauge parameter of the linearised diffeomorphism</td>
+</tr>
+<tr>
+<td>$\kappa^{2}=16\pi G/c^{4}$</td>
+<td>Gravitational coupling</td>
+</tr>
+<tr>
+<td>$S^{(2)}$</td>
+<td>Quadratic (linearised) action</td>
+</tr>
+<tr>
+<td>$\delta G_{\mu\nu}$</td>
+<td>Linearised Einstein tensor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Linearized Gravity in Biquaternionic Form</em>, the parent, for the dictionary, the gauge freedom and the polarization content.</li>
+<li><em>The Einstein Field Equations in the Biquaternion Framework: The Linearised Dictionary and the Non-Linear Gap</em>, for the gap this article does not close.</li>
+<li><em>Canonical Quantization of the Biquaternion Graviton Field</em>, for the corpus's quantisation of the linearised field, which is a different programme and is not this family's.</li>
+<li><em>The Lagrangian and the Electromagnetic Field</em>, for the contrast between a localisable stress and this one.</li>
+<li>Charles W. Misner, Kip S. Thorne and John A. Wheeler, <em>Gravitation</em>, for the quadratic action and the Isaacson stress.</li>
+<li>Robert M. Wald, <em>General Relativity</em>, for the constraint structure and the initial-value formulation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

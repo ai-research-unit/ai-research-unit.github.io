@@ -274,6 +274,65 @@ $$</p>
 </ul>
 <p><strong>The comparison.</strong> Kimi's list is longer than this one. The difference is not a matter of taste. Four of his items are coverage claims, and the coverage exists. The items that survive are derivation claims, and the corpus states them more sharply than the criticism does.</p>
 <p><strong>The one-sentence position.</strong> The corpus covers QFT and imports it; it does not derive it; and it says so in the articles that do the work.</p>
+<h2 id="the-variational-layer-the-third-rung-and-its-new-boundary-statement">The Variational Layer: The Third Rung, and Its New Boundary Statement</h2>
+<p><strong>Three rungs, not two.</strong> The argument above maps two categories: the one-particle wave equations and the imported second-quantised theory. There is a third, and Kimi's reading of the corpus is partly a misreading of <em>which</em> rung the quoted sentence describes. The third rung is the variational layer: the forty-eight articles of the Lagrangian family, whose subject is not the equation but the action the equation comes from. Its question is <em>what does the variational principle say about this field, in these variables?</em> — and its answer is a classical action, its variation, its constraints, its currents and its counts.</p>
+<p><strong>Why the third rung matters to Kimi's objection.</strong> Kimi's strongest point is that the framework does not quantise anything by itself. The variational layer is where that point can be met or conceded in the corpus's own currency, because a quantisation has a classical half — the bracket — and the bracket <em>is</em> derivable from the action. A corpus that wants to answer "you do not quantise" must say either "we derive the bracket and we do not promote it" or "we derive nothing". The third rung, after the 2026-11 pass, says the first.</p>
+<p><strong>What the pass changed.</strong> Forty articles were re-ordered onto the frozen seventeen-slot schema and verified against forty-eight slot maps: 0 failures, every mandatory slot present, every conditional slot either present or declared in one line of the introduction. Eight frontier articles were written, and each one ends at a named absence.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what it settles</th>
+<th>what it declares absent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Lagrangian and the Electromagnetic Field</td>
+<td>one term, its sign, Gauss's law as a constraint, the gauge orbit</td>
+<td>the quantised field</td>
+</tr>
+<tr>
+<td>The Lagrangian and Quantum Electrodynamics</td>
+<td>the assembly of two classical actions and the one constant that joins them</td>
+<td>the vertex, the loop, the running</td>
+</tr>
+<tr>
+<td>The Lagrangian and the Interacting Scalar Field</td>
+<td>the quartic action, its exact nonlinear equation, the density-dependent mass</td>
+<td>the $S$-matrix, for the same reason</td>
+</tr>
+<tr>
+<td>The Lagrangian and the Electroweak Theory</td>
+<td>both phases of one action; $m_W=gv/2$ from the gradient term</td>
+<td>gauge fixing, ghosts, $R_\xi$, the precision observables</td>
+</tr>
+<tr>
+<td>The Lagrangian and the Pauli Equation</td>
+<td>$g=2$ as a ratio of currents and not a parameter</td>
+<td>pair creation, the negative branch</td>
+</tr>
+<tr>
+<td>The Lagrangian and the Rarita–Schwinger Equation</td>
+<td>why the algebra cannot write the action</td>
+<td>the action itself</td>
+</tr>
+<tr>
+<td>The Lagrangian and Linearised Gravity</td>
+<td>the quadratic action, the count ten minus four minus four</td>
+<td>the graviton operator</td>
+</tr>
+<tr>
+<td>The Lagrangian and the Second Quantisation</td>
+<td>the four steps from action to commutator, and which of them are taken</td>
+<td>the promotion and the Fock space</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The bridge article is the direct answer to the criticism.</strong> <em>The Lagrangian and the Second Quantisation: From the Action to the Commutator</em> states the route in four steps: the Peierls bracket from the action's Green functions, the Dirac bracket for the constrained cases, the promotion $\{\,,\,\}\to\frac{1}{i\hbar}[\,,\,]$, and the representation on a Fock space. It states that the family takes the first, inventories the second, and takes neither the third nor the fourth. It states that the promotion is a postulate and not a theorem. And it states, in the article and not only here, that the corpus's quantum-fields category performs the promotion and imports it rather than deriving it from these actions.</p>
+<p><strong>What this changes in the verdict, and what it does not.</strong> It changes the presentation: the absence is now a section of a public article, a row of a table, and the reason for a hub page, not a silence in a digest. It does not change the substance: the corpus still imports the quantisation, still has no native bosonic ladder, still derives no Standard Model. Kimi's objection survives at the level of derivation and is answered only at the level of coverage — and the two are now distinguished in the articles themselves, which is the most a note of this kind can do.</p>
+<p><strong>Two schema moves, rejected by test.</strong> An eighteenth slot for "the promotion to operators" and an S8 block for "the many-particle sector" were both proposed and both refused. The test is the one that governs every slot: <em>what does it state that its own action does not, checkable by hand?</em> A postulate has no hand check, and a Fock space is a representation of an algebra the family does not build. The refusal is recorded in the family map, so a later reader does not re-propose them.</p>
+<p><strong>One deviation, recorded.</strong> The migration note's item 20 specified four per-equation hubs, a fluid hub, a sector hub, a quantisation hub and a family hub. The hubs as written are the five readings, the coupled corner, the frontier and the family map. The reason is that Block A froze the readings as closed lists, and a per-equation hub would restate what <code>physics.md</code> already groups by equation: the reader who wants "the seven Lagrangian articles on the Proca equation" finds them in the menu, and the reader who wants "what the four readings do differently" finds that in a hub and nowhere else. The sector hub is folded into the family map's frontier section.</p>
 <h2 id="how-to-verify-this-note">How to Verify This Note</h2>
 <p><strong>The point of this section.</strong> Every claim in this note is checkable from the repository in under a minute, without trusting the note. The commands below are the ones that were used. Run them from the project root.</p>
 <p><strong>One: the counts and the existence of every file.</strong> The two categories are slices of <code>physics.md</code>, and every slug in each slice names a file that exists.</p>
@@ -307,6 +366,10 @@ grep -n &quot;no bosonic mode&quot; \
   articles_physics/canonical-quantization-of-the-biquaternion-klein-gordon-field.md
 </code></pre>
 <p>The first prints line 13, where the statement is bold. The second prints line 309, the notation row that reads $2\,\mathrm{Sc}(e_t)=2$ beside $2\,\mathrm{Sc}([\tilde Q_2,\tilde Q_1])=0$.</p>
+<p><strong>Six: the family's ceiling, in public.</strong> This prints the bridge's boundary sentence and the family map's row.</p>
+<pre><code class="language-bash">grep -n &quot;does not take the third&quot; articles_physics/the-lagrangian-and-the-second-quantisation.md
+grep -n &quot;| Fock space | absent |&quot; articles_physics/the-lagrangian-family-a-map.md
+</code></pre>
 <p><strong>What the commands cannot show.</strong> They show that the articles exist and that the quotes are where this note says they are. They do not show that the articles are correct. That is a separate question, and it is the one the corpus answers in the "what was checked" section of each article.</p>
 <p><strong>On the trace argument.</strong> The obstruction is usually written as $\mathrm{Tr}[A,B]=0$ in a matrix algebra. The corpus writes it in its own terms: the scalar part of a commutator vanishes, while $2\,\mathrm{Sc}(e_t)=2$. For $\mathbb{B}\cong M_2(\mathbb{C})$ the scalar part is half the trace, so the two are the same argument. The corpus's form is the one native to the framework.</p>
 <h2 id="summary">Summary</h2>
@@ -315,6 +378,7 @@ grep -n &quot;no bosonic mode&quot; \
 <p><strong>The Standard Model is present as a transcription.</strong> The <em>Particle Physics</em> category links eighty-three articles: the content, the Lagrangian, the electroweak sector, QCD, asymptotic freedom, the parton model, jets, the Higgs sector, the Yukawa sector and the nineteen parameters. The corpus states that none of it is a framework result. The algebra's own gauge group is $U(2)$, and $SU(3)$ is excluded by the dimension count and the parity of the module dimension.</p>
 <p><strong>The path integral is formally developed, not numerically.</strong> The corpus has the functional integral, the generating functional, the effective action, the functional determinant, the Feynman rules, the loop expansion and the lattice regulator. It does not have a numerical solver, and the measure and the determinant branch remain open.</p>
 <p><strong>The real gap is narrower than the criticism.</strong> There is no native bosonic ladder, no native Fock space, no native interaction, no derivation of the Standard Model and no numerical computational framework. The corpus states the first four, and it states the measure gap that blocks the fifth.</p>
+<p><strong>The third rung now states its own ceiling.</strong> The Lagrangian family's forty-eight articles carry the boundary in public: the family map's table, the bridge article's four steps, and the eight frontier articles' declarations. The family derives the classical bracket and refuses to promote it; the promotion is the corpus's import, and the import is now named where a reader of an action will meet it.</p>
 <p><strong>The fault is presentational.</strong> The standalone digest does not mention the QFT or Standard Model categories. A reader of the digest alone will conclude that the corpus has no QFT. That is the criticism's real cause, and one paragraph in the digest would remove it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

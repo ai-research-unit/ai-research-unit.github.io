@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lagrangian and Quantum Electrodynamics — Biquaternion Universe</title>
+  <meta name="description" content="What this article is, and what it is not. Quantum electrodynamics is the quantised theory of a charged spin- field and the electromagnetic field it…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-lagrangian-and-quantum-electrodynamics"><strong>The Lagrangian and Quantum Electrodynamics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this article is, and what it is not.</strong> Quantum electrodynamics is the quantised theory of a charged spin-$\tfrac12$ field and the electromagnetic field it sources. The family has the two classical actions — <em>The Lagrangian and the Coupled Dirac Equation</em> and <em>The Lagrangian and the Electromagnetic Field</em> — and it has no quantised theory at all. This article assembles the two actions into the one functional that a quantised QED would be built from, states its three variations and its two equations, and then states plainly where the corpus stops.</p>
+<p><strong>The answer in four sentences.</strong> One action, the Dirac field's with the covariant derivative plus the Maxwell field term, has the coupled Dirac equation and the inhomogeneous Maxwell equation as its Euler–Lagrange equations. The coupling is one derivative and one constant, and it is forced by the local phase symmetry rather than chosen. The current that sources the field is the same object that the matter equation conserves, so the two equations cannot contradict each other. Beyond that point the corpus has nothing: no Fock space, no photon, no electron propagator, no vertex, no renormalisation.</p>
+<p><strong>Why write an article that stops.</strong> Because the absence is the interesting fact, and because a reader who finds an action called QED is entitled to know which four words of the name the corpus can support. It supports <em>electro</em> and <em>dynamics</em>. It does not support <em>quantum</em>, and it does not support the perturbation theory that the name usually brings with it.</p>
+<p><strong>Declared omissions.</strong> The reality of the action is settled inside <em>The Action</em>, where each of its three terms is shown real, so slot 5 is omitted. The action's constraints are the ones the two parents state, and this article does not repeat them in a section of its own, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. Both settings are not contrasted, so slot 10 is omitted. No limit is taken here, so slot 11 is omitted. No comparison with the textbook formulation is attempted beyond the parent's, so slot 13 is omitted. The open questions are folded into the last section, so slot 14 is omitted.</p>
+<h2 id="conventions">Conventions</h2>
+<p><strong>The conventions are the two parents', and they agree.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\mathbb{B}_\Phi$ is the anti-Hermitian sector of the connection, $\mathbb{B}_\Psi$ the Hermitian sector of the potentials. The covariant derivative is</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,q}{\hbar}\tilde A_\Phi ,
+$$</p>
+<p>with $q$ the electron's charge, $q=-e<0$ in the corpus's convention, and with $\tilde A_\Phi$ central so that the derivative multiplies from either side without a choice. The field strength is $\tilde F=\frac{1}{\sqrt{\mu}}\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ and the field term is $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$, exactly as in the Maxwell article. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ for the matter and $\mathrm{Re}\,\mathrm{Sc}(\cdot\,\cdot)$ for the field; the measure is $\mathrm{d}^{4}r$; $k_m=mc/\hbar$.</p>
+<h2 id="the-action">The Action</h2>
+<p><strong>One functional, three terms, and no new constant.</strong></p>
+<p>$$
+S=\int\mathrm{d}^{4}r\;\Bigl\{
+\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\,\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]
++\mathrm{Sc}\bigl[\tilde\Xi_L^{*}\,(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]
+-k_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]\,i\vec v
++\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)\Bigr\},
+$$</p>
+<p>with $\vec v$ the fixed spin direction that the mass bilinear needs and that the Dirac companion derives, and with the first two terms the Dirac kinetic term split into its two parts.</p>
+<p><strong>Why this is the coupling and not a choice.</strong> Replace the phase of the field by a local one, $\tilde\Xi_{R,L}\mapsto e^{i\Lambda}\tilde\Xi_{R,L}$. The kinetic terms shift by a term in $\partial\Lambda$, and the shift is cancelled exactly by $\tilde A_\Phi\mapsto\tilde A_\Phi-\frac{\hbar}{q}\partial\Lambda$. No other placement of the connection cancels it: a coupling outside the derivative would leave a term in $\partial\Lambda$ that no shift of $\tilde A_\Phi$ can absorb. So minimal coupling is the unique local choice, and the constant $q$ is the charge that appears in both the shift and the current.</p>
+<p><strong>Why the field term is the Maxwell one.</strong> Because the photon is the Maxwell field: the same $\tilde F$, the same normalisation $\sqrt{\mu}$, the same sign, fixed in the Proca companion. QED adds no term to the field's action; it adds a source to its equation.</p>
+<p><strong>What is absent, term by term.</strong> No gauge-fixing term, no ghost term, no counterterm, no Pauli term $\bar\Xi[\gamma_\mu,\gamma_\nu]F^{\mu\nu}\Xi$, no Euler–Heisenberg term. The first three are quantum or gauge artefacts; the last two are effective terms generated by the quantised theory, and the corpus does not have the quantised theory that would generate them.</p>
+<h2 id="the-variation">The Variation</h2>
+<p><strong>Three variations, two equations, one identity.</strong> Varying the two parts of the Dirac field gives the coupled pair</p>
+<p>$$
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L=k_m\tilde\Xi_R ,
+\qquad
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R=k_m\tilde\Xi_L ,
+$$</p>
+<p>and their conjugates. Varying the connection gives</p>
+<p>$$
+\tilde\nabla_\Phi\tilde F=-\sqrt{\mu}\,\tilde J_\Phi ,
+\qquad
+\tilde J_\Phi=ic\rho_{\mathrm{chg}}\,e_t+\vec J ,
+$$</p>
+<p>with the current derived in the next section.</p>
+<p><strong>The boundary terms.</strong> The matter variation is first order in the field, so its surface term is a bilinear on the boundary and vanishes for a variation of compact support. The connection's variation produces the Maxwell surface term, killed in the same way. Neither boundary term carries a physical condition, and that is why the corpus never discusses boundary conditions for QED.</p>
+<p><strong>The identity that makes the system consistent.</strong> Apply $(\tilde\nabla_\Phi)^{\natural}$ to the connection's equation and take $\mathrm{Sc}$. The left side vanishes identically, so the source must satisfy $\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_\Phi\bigr)=0$, which is the continuity equation for the current. It holds because the matter equation is the current's conservation, and the two cannot disagree: one action, one symmetry, one identity.</p>
+<p><strong>What the variation does not give.</strong> It does not give the commutation relations, the ordering of operators, the vacuum, or the vertex. Those are not consequences of varying an action; they are the content of a quantisation, and the corpus does not perform one.</p>
+<h2 id="the-structural-consequence-two-equations-one-current-one-constant">The Structural Consequence: Two Equations, One Current, One Constant</h2>
+<p><strong>The article's claim is that QED's classical content is exhausted by three objects.</strong> One action, which is the Dirac action with one derivative replaced; one current, which is the connection's conjugate; one constant, which is the charge and appears in the covariant derivative, in the current and in the gauge transformation.</p>
+<p><strong>The hand check.</strong> Take the current's temporal component from the coupled Dirac companion,</p>
+<p>$$
+J^{t}=q\,\rho_{\mathrm{chg}},
+\qquad
+\rho_{\mathrm{chg}}=\varrho^{2}\cosh\theta_{\mathrm{rpd}} ,
+$$</p>
+<p>and the charge $Q=\int\mathrm{d}^{3}r\,J^{t}$. The same $q$ appears in the covariant derivative $\partial+\frac{iq}{\hbar}A$ and in the gauge shift $A\mapsto A-\frac{\hbar}{q}\partial\Lambda$. Three appearances, one symbol: that coincidence is what "one constant" means, and it is checkable by reading the three displays.</p>
+<p><strong>Why the current is the source.</strong> The connection multiplies the current in the action, so the connection's variation returns the current; the matter equation's phase symmetry conserves the same bilinear. That is the classical statement of what a quantised theory would call the Ward identity's ancestor: the source of the field is the Noether current of the symmetry that the field gauges.</p>
+<p><strong>What the claim forbids.</strong> It forbids a second coupling constant, an arbitrary axial admixture, or a contact term between the two fields: each would break one of the three appearances of $q$. The corpus can therefore say that classical QED has one parameter, and it can say why.</p>
+<h2 id="the-noether-currents-and-the-sign-of-the-charge">The Noether Currents and the Sign of the Charge</h2>
+<p><strong>Three currents, and only one of them is conserved when the mass is present.</strong> The vector current $J^{\mu}=q\bar\Xi\gamma^{\mu}\Xi$ in the flat language, $J^{t}=q\rho_{\mathrm{chg}}$ and $\vec J=q\rho_{\mathrm{chg}}\vec v$ in the chart, is conserved by the local phase symmetry. The axial current is conserved only at $k_m=0$: the mass term converts one chirality into the other and breaks the axial conservation explicitly. The energy–momentum is conserved by translation invariance and is the sum of the matter's stress and the field's.</p>
+<p><strong>The sign.</strong> The charge's sign is the sign of $q$, fixed once in the conventions as $q=-e$ for the electron; the density $\rho_{\mathrm{chg}}$ is positive. So the electron's $J^{t}$ is negative and the positron's is positive, and the sign convention is the same one the Maxwell article uses for the source.</p>
+<p><strong>What the mass term does.</strong> It breaks the axial current and leaves the vector current alone. That asymmetry is the classical shadow of the axial anomaly discussion elsewhere in the corpus, and it is worth stating here because it is a property of the action and not of a quantisation: the mass term is the only term that couples the two chiralities, so it is the only term that can fail to commute with the axial rotation.</p>
+<p><strong>The stress.</strong> Its temporal component is $\tfrac12(\epsilon\vec E^{2}+\vec B^{2}/\mu)$ plus the Dirac field's energy. The two add without a cross term in the constant setting, because the field's energy is quadratic in $\vec F$ and the matter's is quadratic in the field; the cross terms are the interaction's energy and they are what the coupling contributes.</p>
+<h2 id="what-the-principle-adds-and-what-it-relabels">What the Principle Adds and What It Relabels</h2>
+<p><strong>Adds.</strong> The assembly itself: one functional whose variation is the whole classical theory, with the three appearances of one constant visible in one place. That is a real gain for a reader, because it shows that QED's classical structure is not a list of rules but one action.</p>
+<p><strong>Relabels.</strong> Everything else. The two equations are the parents', the current is the parents', the stress is the parents'. No new solution, no new prediction, no new constant.</p>
+<p><strong>What a quantisation would add, and this family does not.</strong> A Fock space; the canonical commutators of the field and its conjugate; the photon's two polarisations as modes rather than as a count; the electron's spinor modes with their antiparticle reinterpretation; the propagators; the vertex; the loop integrals; the renormalisation of $q$ and $m$; the running coupling. The bridge article names the route from the action to the commutator and stops at the first step. A reader who needs QED's numbers will not find them here, and this family says so rather than dressing a classical action in quantum words. The corpus's separate quantum-fields category transcribes those numbers; it does not derive them from this action.</p>
+<h2 id="summary">Summary</h2>
+<p>QED's classical content is one action: the Dirac action with the covariant derivative, plus the Maxwell term, with one constant appearing in the derivative, the current and the gauge shift. Its variations give the coupled Dirac equation and the inhomogeneous Maxwell equation, and the scalar part of the second is the continuity equation for the first. The vector current is conserved, the axial one is broken by the mass, and the stress is positive. Nothing in the article quantises anything, and that is its subject as much as its content.</p>
+<p>$$
+S=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_L\bigr]+\mathrm{Sc}\bigl[\tilde\Xi_L^{*}(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}\tilde\Xi_R\bigr]-k_m\,\mathrm{Sc}\bigl[\tilde\Xi_R^{*}\tilde\Xi_L+\tilde\Xi_L^{*}\tilde\Xi_R\bigr]i\vec v+\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)\Bigr\}.
+$$</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_t=1,\ \vec e_\mu^{2}=-e_t$</td>
+<td>Basis and its squares</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_\Phi,\ \mathbb{B}_\Psi$</td>
+<td>Anti-Hermitian and Hermitian sectors</td>
+</tr>
+<tr>
+<td>$\tilde\Xi_R,\ \tilde\Xi_L$</td>
+<td>The two chiral parts of the Dirac field</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_{\mathrm{gco},\Phi}$</td>
+<td>Covariant derivative, $\tilde\nabla_\Phi+\frac{iq}{\hbar}\tilde A_\Phi$</td>
+</tr>
+<tr>
+<td>$q$</td>
+<td>Charge of the field; $q=-e$ for the electron</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi,\ \tilde F$</td>
+<td>Connection and field strength</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{chg}}$</td>
+<td>Charge density, $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$</td>
+</tr>
+<tr>
+<td>$J^{\mu},\ J^{t},\ \vec J$</td>
+<td>Vector current and its components</td>
+</tr>
+<tr>
+<td>$\vec v$</td>
+<td>Fixed spin direction of the mass bilinear</td>
+</tr>
+<tr>
+<td>$k_m=mc/\hbar$</td>
+<td>Mass wave number</td>
+</tr>
+<tr>
+<td>$S,\ \mathcal{L}$</td>
+<td>Action and Lagrangian density</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Lagrangian and the Coupled Dirac Equation</em>, for the matter action, its two variations and the current.</li>
+<li><em>The Lagrangian and the Electromagnetic Field</em>, for the field term, its normalisation and its sign.</li>
+<li><em>The Lagrangian and the Coupled Klein-Gordon Equation</em>, for the same coupling in the scalar case, where the current is simpler.</li>
+<li><em>The Lagrangian and the Second Quantisation: From the Action to the Commutator</em>, for the first step of the route this article does not take.</li>
+<li>Michael E. Peskin and Daniel V. Schroeder, <em>An Introduction to Quantum Field Theory</em>, for what a quantised QED contains and for the gap between the action and the perturbation theory.</li>
+<li>Julian Schwinger, <em>Quantum Electrodynamics</em>, for the source normalisation and the gauge invariance that fixes it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Lagrangian and the Schrödinger Fluid — Biquaternion Universe</title>
-  <meta name="description" content="This article writes the action in the fluid&#x27;s variables and varies them. The Schrödinger Fluid reads the equation and names the density, the velocity and…">
+  <meta name="description" content="Declared omissions. The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -70,6 +70,7 @@
     <main class="article">
       <div class="article-body">
         <h1 id="the-lagrangian-and-the-schrodinger-fluid"><strong>The Lagrangian and the Schrödinger Fluid</strong></h1>
+<p><strong>Declared omissions.</strong> The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The action imposes no constraint beyond its first-order structure, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. No limit is taken here, so slot 11 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the ledger, so slot 14 is omitted.</p>
 <h2 id="introduction">Introduction</h2>
 <p><strong>This article writes the action in the fluid's variables and varies them.</strong> <a href="the-schrodinger-fluid.html">The Schrödinger Fluid</a> reads the equation and names the density, the velocity and the quantum potential. Here the same field is written as an action over the density and the phase, and the Euler–Lagrange equations are read. Nothing about the equation changes; what changes is which object is primitive.</p>
 <p><strong>Three results, and each is a computation.</strong></p>
@@ -81,7 +82,8 @@ $$</p>
 <p><em>Second, the two variations give the fluid's two equations directly.</em> Varying $S$ gives continuity; varying $\varrho$ gives the quantum Hamilton–Jacobi equation; the acceleration law is its gradient and is not a third equation. The wave equation is nowhere in the derivation, and the fluid's equations are not a reading of it here but its Euler–Lagrange content in another chart.</p>
 <p><em>Third, the velocity is not canonical.</em> No time derivative of $\vec v$ appears, so its conjugate momentum vanishes identically on every configuration. That is the fluid form of the four vanishing momenta of <a href="the-lagrangian-and-the-dirac-equation-in-polar-variables.html">The Lagrangian and the Dirac Equation in Polar Variables</a>, at the rung where only one of the four survives to be stated.</p>
 <p><strong>Position in the block.</strong> This is the variational companion of <a href="the-schrodinger-fluid.html">The Schrödinger Fluid</a>, and the first of the eight articles that write the action in the fluid variables. It sits at the bottom of the scalar ladder: at this rung the velocity has no norm, the density is the charge density, and the quantum potential carries the Laplacian, so every statement below is unconditional.</p>
-<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\hbar\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.</p>
+<h2 id="conventions">Conventions</h2>
+<p><strong>The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\hbar\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.</p>
 <h2 id="the-action-in-the-fluid-variables">The Action in the Fluid Variables</h2>
 <p><strong>The element action is the one the polar companion varies, and the substitution is the word.</strong> With $\tilde\Xi=\varrho e^{i\theta}\varepsilon e_t$, the three bilinears that appear are</p>
 <p>$$
@@ -145,6 +147,19 @@ $$</p>
 <p><em>The quantum stress is the same object read as a pressure.</em> The block's identity $\partial_j\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_iQ$ is, in this language, the statement that a gradient energy has a stress and that the force is its divergence. The action makes the identity a definition: $\mathcal E_{\mathrm{grad}}$ is a functional of $\rho_{\mathrm{num}}$ and its gradients, so it has a functional derivative $Q$ and a stress tensor $\sigma^{Q}_{ij}$, and the two are related because the energy is a scalar. The block computes the identity directly from the wave equation; here it is the Euler–Lagrange structure's.</p>
 <p><em>The fluid is of Korteweg type and not of Euler type.</em> A Korteweg fluid is one whose stress depends on the gradients of the density, and that is exactly what the third term supplies. The literature on quantum hydrodynamics says this, and the action says why: the gradient energy is the only term the algebra permits at that order.</p>
 <p><strong>The sign is the sign of a pressure.</strong> $Q$ is positive at the centre of a localised packet and falls as the density falls, so $\vec\nabla_\Phi Q$ points inward there and the force $-\vec\nabla_\Phi Q$ points outward. The packet spreads. Nothing in the action chooses this; it is the sign of the $\hbar^{2}$ term, which is the sign that makes the energy positive.</p>
+<h2 id="the-noether-currents-mass-energy-and-what-the-quantum-potential-touches">The Noether Currents: Mass, Energy and What the Quantum Potential Touches</h2>
+<p><strong>Two currents and the quantum potential enters one of them.</strong> The phase rotation is a symmetry and its current is the mass current,</p>
+<p>$$
+\rho_{\mathrm{num}}=\varrho^{2},
+\qquad
+\vec j_{\mathrm{m}}=\rho_{\mathrm{num}}\vec v ,
+\qquad
+\vec v=\frac{\vec\nabla_\Phi S}{m},
+$$</p>
+<p>conserved by the continuity equation that the phase's variation gives. Translation invariance gives the energy–momentum, and there the quantum potential appears: the gradient energy contributes the stress $\hbar^{2}\partial_i\varrho\,\partial_j\varrho/m$ and the energy density $\hbar^{2}(\vec\nabla_\Phi\varrho)^{2}/2m$.</p>
+<p><strong>Why the split is forced.</strong> The quantum potential is a functional derivative of a term that depends on $\varrho$ and not on $S$; the mass current is the derivative of the action with respect to $\partial S$, so it cannot see that term. A current that carried the quantum potential would have to come from a term linear in $\partial S$, and there is none.</p>
+<p><strong>The sign.</strong> The density is positive and the current flows with the phase's gradient, so the mass current's sign is the orientation of $S$. There is no charge here and therefore no sign convention to fix: the fluid is neutral, and the only sign that could be chosen is the overall one of the action, which cancels.</p>
+<p><strong>What the corpus keeps.</strong> The energy is not the mass shell's value but the Legendre transform of the boxed Lagrangian, and the two differ by the quantum potential. That difference is the reason the fluid form of the Schrödinger fluid and the fluid form of the Klein–Gordon fluid do not agree term by term.</p>
 <h2 id="the-velocity-is-not-canonical">The Velocity Is Not Canonical</h2>
 <p><strong>No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid.</strong> In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes</p>
 <p>$$
