@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-empirical-status-of-the-biquaternion-framework.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/algebra-and-element-conventions.html</loc>
@@ -558,7 +558,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-measurement-problem-in-algebraic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/helicity-in-biquaternionic-form.html</loc>
@@ -730,7 +730,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-dirac-maxwell-correspondence-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/degenerate-solutions-of-the-biquaternionic-dirac-equation.html</loc>
@@ -974,7 +974,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/spin-entropy-and-the-lorentz-group-in-biquaternionic-form.html</loc>
@@ -2201,23 +2201,7 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/instantons-and-solitons-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-adhm-construction-and-biquaternion-instanton-data.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/electric-magnetic-duality-and-the-modular-group-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -2233,27 +2217,27 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-yang-mills-equation-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-electroweak-gauge-group-and-the-hypercharge-assignment.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -2273,7 +2257,15 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-electroweak-gauge-group-and-the-hypercharge-assignment.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -2289,14 +2281,6 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
@@ -2305,19 +2289,7 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/chiral-fermions-in-the-biquaternion-framework.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -2345,31 +2317,7 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-neutron-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/hadron-structure-from-qcd-the-bound-state-problem.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-proton-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-particle-roster-of-the-complex-octonionic-chain-algebra.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -2389,39 +2337,7 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/non-abelian-gauge-fields-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-yang-mills-equation-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/lattice-gauge-theory-and-the-biquaternion-path-integral.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -2438,6 +2354,66 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/instantons-and-solitons-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-adhm-construction-and-biquaternion-instanton-data.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-semiclassical-expansion-and-the-instanton-gas-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-theta-parameter-and-strong-cp-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-nonlinear-sigma-model-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-neutron-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/hadron-structure-from-qcd-the-bound-state-problem.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-proton-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-spin-charge-hilbert-space-and-the-su3-supermultiplets-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -2458,6 +2434,30 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/jets-the-qcd-cross-section-and-the-infrared-structure.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-particle-roster-of-the-complex-octonionic-chain-algebra.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-spin-mass-formula-and-the-spectrum-of-elementary-particles-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/bhabha-multi-mass-wave-equations-and-the-bivector-space-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
@@ -12402,6 +12402,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/physics.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
 </urlset>
