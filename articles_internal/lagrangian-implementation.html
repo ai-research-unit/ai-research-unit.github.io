@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagrangian Implementation: The Frozen Architecture, the Slot Tiers and the Closed Lists — Biquaternion Universe</title>
+  <meta name="description" content="The result, first. Three decisions are frozen, and they are written here so that they stop moving. The boundary of the family. The tier of each of the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lagrangian-implementation-the-frozen-architecture-the-slot-tiers-and-the-closed-lists"><strong>Lagrangian Implementation: The Frozen Architecture, the Slot Tiers and the Closed Lists</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The result, first.</strong> Three decisions are frozen, and they are written here so that they stop moving. The boundary of the family. The tier of each of the seventeen slots. The closed lists of readings, couplings, sectors and fluid charts. This file is not an argument; the argument is in <a href="lagrangian-migration.md">Lagrangian Migration</a>. This file is the contract that the rewrite is checked against, and every later batch cites it rather than re-deciding it.</p>
+<p><strong>Why a separate file.</strong> The migration note has changed its arithmetic three times: forty-six articles became thirty-two field articles plus eight fluids; seventeen slots became eleven mandatory and six conditional, and then ten and seven once the heading maps showed that slot 6 has nothing to hold in twenty of the forty articles; a second-quantised layer appeared that the seventeen do not cover. Each change was an improvement and each invalidated the previous count. A number that changes is not a plan. The three decisions below are the ones that must not change again, and separating them from the reasoning is what makes the difference visible.</p>
+<p><strong>The rule of this file.</strong> Nothing here is physics. Everything here is a name, an order or a count. If a later pass wants to change one, it changes it here, in one place, with a date, and then re-derives the batches. It does not change it inside an article.</p>
+<h2 id="the-boundary-sentence">The Boundary Sentence</h2>
+<p><strong>The sentence, verbatim.</strong></p>
+<blockquote>
+<p>The seventeen slots govern the one-particle layer; a second-quantised article is built on the bridge, not on the seventeen.</p>
+</blockquote>
+<p><strong>What it forbids.</strong> Four things, and each of them was proposed at some point in the last revision.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Forbidden</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>An eighteenth slot for the promotion to operators</td>
+<td>The promotion is not a section of a one-particle article; it is the subject of a different article</td>
+</tr>
+<tr>
+<td>A Fock-space block inside the family</td>
+<td>No field article of the family quantises its field, and a block that four articles cannot fill would be copied empty into forty-two</td>
+</tr>
+<tr>
+<td>A slot for the path integral</td>
+<td>The four path-integral articles exist and are not Lagrangian articles; the path integral is a formulation of the quantum theory, not of the classical action</td>
+</tr>
+<tr>
+<td>Growing the template when a new stratum is noticed</td>
+<td>The template has already grown twice for this reason; twice is the whole evidence needed</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What it permits.</strong> A second-quantised article quotes a slot number where the slot is genuinely the same: the action in slot 3, the currents in slot 9, the ledger in slot 12. It does not quote slots 5, 6, 7, 8, 10, 11, 13 or 14, because in a quantised article those objects are operators, brackets or measures and their one-particle names would be false.</p>
+<p><strong>The bridge, named once.</strong> <em>The Lagrangian and the Second Quantisation: From the Action to the Commutator</em>, with the Peierls bracket in slot 4, the Dirac bracket in slot 6 and the promotion in slot 7. It is the only article that joins the two templates, and it is the reason the family does not need to grow.</p>
+<h2 id="the-seventeen-slots-and-their-tiers">The Seventeen Slots and Their Tiers</h2>
+<p><strong>Seventeen slots, ten mandatory and seven conditional after the amendment of 2026-11-19.</strong> The order is fixed. The wording of a slot heading is fixed. A conditional slot is either filled or declared, never half-filled.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Slot</th>
+<th>Tier</th>
+<th>What it must contain</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Introduction</td>
+<td><strong>M</strong></td>
+<td>The parent equation in a display; the question; the answer as a short numbered list; the boundaries; the declaration of any omitted conditional slot</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Conventions</td>
+<td><strong>M</strong></td>
+<td>The signs, the metric, the unit system, the meaning of each projection</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The Action in the article's variables</td>
+<td><strong>M</strong></td>
+<td>The density, the measure, the sign rule slot by slot, the bilinear named; one display that hides no metric sign</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Variation</td>
+<td><strong>M</strong></td>
+<td>The variation, the boundary term, the recovery of the parent equation; the equation is recovered, not assumed</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The Reality of the Action</td>
+<td><strong>C</strong></td>
+<td>Which bilinear, and why the other one fails; the indefinite or complex choice named and rejected</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Constraints the Action Imposes</td>
+<td><strong>C</strong></td>
+<td>The constraint, the gauge orbit versus the gauge choice, and which of the two the article is looking at. Amended 2026-11-19: mandatory for spin one and for every coupled article, conditional elsewhere</td>
+</tr>
+<tr>
+<td>7</td>
+<td>The Structural Consequence</td>
+<td><strong>M</strong></td>
+<td>The one result the article owns, checkable by hand</td>
+</tr>
+<tr>
+<td>8</td>
+<td>The Second Variation</td>
+<td><strong>C</strong></td>
+<td>The quadratic form and its sign, computed and not asserted</td>
+</tr>
+<tr>
+<td>9</td>
+<td>The Noether Currents and the Sign of the Charge</td>
+<td><strong>M</strong></td>
+<td>Charge, energy–momentum, spin; which current the mass term kills; what the sign of the charge follows from</td>
+</tr>
+<tr>
+<td>10</td>
+<td>The Two Settings</td>
+<td><strong>C</strong></td>
+<td>Constant versus varying coefficient, massive versus massless, both displayed</td>
+</tr>
+<tr>
+<td>11</td>
+<td>The Limits and the Truncation's Error</td>
+<td><strong>C</strong></td>
+<td>The deletion, what it deletes, and the order of the error it leaves</td>
+</tr>
+<tr>
+<td>12</td>
+<td>What the Principle Adds and What It Relabels</td>
+<td><strong>M</strong></td>
+<td>The honest ledger; a relabelling is called a relabelling</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Comparisons with Other Formulations</td>
+<td><strong>C</strong></td>
+<td>Takabayasi, the tensor forms, the textbook form, and what each of them absorbs</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Open Questions</td>
+<td><strong>C</strong></td>
+<td>The one object still missing, and no list longer than the article can defend</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Summary</td>
+<td><strong>M</strong></td>
+<td>Three or four sentences and the action repeated</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Summary of Notation</td>
+<td><strong>M</strong></td>
+<td>A two-column table of every glyph that carries a meaning</td>
+</tr>
+<tr>
+<td>17</td>
+<td>Further Reading</td>
+<td><strong>M</strong></td>
+<td>The parent, the companions, the external sources</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The tier is a claim about the corpus, not a preference.</strong> An article of the family that lacks a mandatory slot is incomplete and is corrected. An article that lacks a conditional slot is complete, provided the omission is declared.</p>
+<p><strong>The declaration, in one sentence, in slot 1.</strong> The form is fixed:</p>
+<blockquote>
+<p><em>No limit is taken here, so slot 11 is omitted.</em></p>
+<p><em>The quadratic form is not computed in this reading; slot 8 is omitted.</em></p>
+<p><em>Slot 13 is omitted: no comparison is attempted beyond the parent.</em></p>
+</blockquote>
+<p><strong>Where the slots land, counted on the forty heading maps and not on an impression.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Tier</th>
+<th>Articles that already fill it</th>
+<th>Articles that must declare it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2 Conventions</td>
+<td>M</td>
+<td>8</td>
+<td><strong>32</strong></td>
+</tr>
+<tr>
+<td>7 The Structural Consequence</td>
+<td>M</td>
+<td>18</td>
+<td><strong>22</strong></td>
+</tr>
+<tr>
+<td>9 The Noether Currents</td>
+<td>M</td>
+<td>17</td>
+<td><strong>23</strong></td>
+</tr>
+<tr>
+<td>4 The Variation</td>
+<td>M</td>
+<td>20</td>
+<td><strong>20</strong></td>
+</tr>
+<tr>
+<td>6 The Constraints</td>
+<td>C</td>
+<td>20</td>
+<td><strong>20</strong></td>
+</tr>
+<tr>
+<td>12 The Ledger</td>
+<td>M</td>
+<td>34</td>
+<td><strong>6</strong></td>
+</tr>
+<tr>
+<td>3 The Action</td>
+<td>M</td>
+<td>38</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1, 15, 16, 17</td>
+<td>M</td>
+<td>40</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5 The Reality of the Action</td>
+<td>C</td>
+<td>8</td>
+<td>32</td>
+</tr>
+<tr>
+<td>8 The Second Variation</td>
+<td>C</td>
+<td>2</td>
+<td>38</td>
+</tr>
+<tr>
+<td>10 The Two Settings</td>
+<td>C</td>
+<td>10</td>
+<td>30</td>
+</tr>
+<tr>
+<td>11 The Limits</td>
+<td>C</td>
+<td>16</td>
+<td>24</td>
+</tr>
+<tr>
+<td>13 Comparisons</td>
+<td>C</td>
+<td>1</td>
+<td>39</td>
+</tr>
+<tr>
+<td>14 Open Questions</td>
+<td>C</td>
+<td>31</td>
+<td>9</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Slot 2 is the largest single gap, and it is not the gap this note predicted.</strong> Thirty-two of the forty articles have no <em>Conventions</em> section: the whole element, polar, limit and fluid groups. Only the eight momentum-space articles have one, because a transform needs its symbols declared. The family names its glyphs for the first time in <em>Summary of Notation</em>, which is slot 16, at the end.</p>
+<p><strong>Slot 7 is the second.</strong> Twenty-two articles own a claim and never give it a heading of its own: the KG element article states its reality argument in two paragraphs inside slot 3, and the Schrödinger articles state theirs inside the ledger.</p>
+<p><strong>Slot 9 is the third.</strong> Twenty-three articles compute no current, and in the limit and fluid readings that is most of them.</p>
+<p><strong>The saving, stated as arithmetic.</strong> Seventeen slots over forty articles is 680 slot positions. The measured gap is <strong>105 mandatory-slot absences</strong> and <strong>192 conditional-slot absences</strong>. The first are sections and must be written. The second are one-line declarations in slot 1, and only seven of them are sections worth writing: slot 6 in the twenty articles where a constraint exists, and slot 11 in the sixteen that take a limit. So the work is <strong>about 112 new sections, not 320</strong>, and 103 of the 105 mandatory absences fall on five slots: 2 (32), 9 (23), 7 (22), 4 (20) and 12 (6).</p>
+<p><strong>The number the rewrite is actually about.</strong> Four hundred and forty-six sections exist across the forty articles, mean 11.2. The rewrite takes that to about 560 and changes no existing sentence that carries a claim. That is the whole scale of the job, and it is a sum that can be checked against <code>articles_internal/lagrangian-maps</code> at any time.</p>
+<h2 id="the-heading-maps-and-what-they-measured">The Heading Maps, and What They Measured</h2>
+<p><strong>Forty maps, one per rewritten article, in <code>articles_internal/lagrangian-maps/</code>.</strong> Each is a three-column file: the old heading, the slot it becomes, and a note. The vocabulary is tiny.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1</code> to <code>17</code></td>
+<td>the field slot the section becomes</td>
+</tr>
+<tr>
+<td><code>P1</code>, <code>P2</code></td>
+<td>the polar block: the parameter basis and the four brackets; the reconstruction and its limits</td>
+</tr>
+<tr>
+<td><code>M1</code>, <code>M2</code>, <code>M3</code></td>
+<td>the momentum block: the symbol and the quadratic form; zero, pole and the on-shell action; the Legendre transform</td>
+</tr>
+<tr>
+<td><code>11a</code>, <code>11b</code>, <code>11c</code></td>
+<td>the non-quantum-limit block: the deletion; the scale; the phase. All three are slot 11</td>
+</tr>
+<tr>
+<td><code>KEEP</code></td>
+<td>the section survives as a result section with no slot of its own</td>
+</tr>
+<tr>
+<td><code># alias:</code></td>
+<td>a header line stating which block codes <em>are</em> a field slot in that reading — <code>M1=3</code> in the momentum articles, <code>11a=11</code> in the limit articles</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the forty maps contain.</strong> 446 sections mapped one to one, with no section lost and no section invented: every heading of every article appears exactly once, and no map row names a heading that the article does not have. Fourteen sections carry <code>KEEP</code>: three in the Klein–Gordon element article — the operator, the conjugate pair, the verification; eight in the limit articles, seven of them <em>Verification</em>; one in the coupled Dirac momentum article, <em>Why the Parent's Test Field Had Two Modes</em>; and two more in the element group, the Dirac count and the Proca solutions.</p>
+<p><strong>Two structural findings the maps produced, and both are now in the freeze.</strong></p>
+<p><strong>One: the momentum reading's first block <em>is</em> slot 3.</strong> In momentum space there is no separate action section: the action is the symbol's quadratic form, so <code>M1</code> and slot 3 are the same position. The alias line records it. The same holds for the limit reading, where the three-way block is slot 11 split into its own three parts.</p>
+<p><strong>Two: the coupled Klein–Gordon momentum article holds three sections for one slot.</strong> <em>The Ordering Ambiguity Is the Cross Term</em>, <em>The Charge Ambiguity Translates the Pair</em> and <em>They Are One Question</em> all map to <code>M1</code>, and the map says so in three notes. That is the concrete form of the migration note's abstract instruction: three orphaned sections become one section under one heading.</p>
+<p><strong>What the maps say about the family, in one line each.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Sections</th>
+<th><code>KEEP</code></th>
+<th>Mandatory absences</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Element</td>
+<td>93</td>
+<td>5</td>
+<td>2 in all eight; 7 in four; 4 in one</td>
+</tr>
+<tr>
+<td>Polar</td>
+<td>85</td>
+<td>0</td>
+<td>2 in all eight; 7 in seven; 9 in four; 4 in two</td>
+</tr>
+<tr>
+<td>Momentum</td>
+<td>106</td>
+<td>1</td>
+<td>4 in seven; 12 in six; 9 in five; 7 in four; 3 in one</td>
+</tr>
+<tr>
+<td>Non-quantum limit</td>
+<td>79</td>
+<td>8</td>
+<td>2 and 9 in all eight; 4 in seven; 7 in six; 3 in one</td>
+</tr>
+<tr>
+<td>Fluid</td>
+<td>83</td>
+<td>0</td>
+<td>2 in all eight; 9 in six; 4 in three; 7 in one</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the table by column, not by row.</strong> Slot 2 is missing from every group except the momentum group, and the momentum group has it because a transform forces its symbols to be declared. Slot 7 is missing from twenty-two articles across four groups: the claim is there and it has no heading. Slot 9 is missing from twenty-three of forty, and the element group is the only group that has it everywhere. Slot 4 is missing from twenty, concentrated in the momentum and limit readings where the action is already a form and varying it is one line. The element group has the fewest mandatory absences and the most <code>KEEP</code>s, which is the signature of the group written first.</p>
+<h2 id="amendment-register">Amendment Register</h2>
+<p><strong>Amendments to this freeze, dated, with their evidence. Nothing else may change.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Item</th>
+<th>From</th>
+<th>To</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-19</td>
+<td>slot 6, The Constraints</td>
+<td>mandatory</td>
+<td>conditional; mandatory for spin one and for every coupled article</td>
+<td>Twenty of the forty articles have no constraint to state, because the scalar and spin-half actions impose none. A mandatory slot whose content is <em>none</em> is the padding that §<em>The Freeze Binds</em> forbids</td>
+</tr>
+<tr>
+<td>2026-11-19</td>
+<td>Count of rewritten articles</td>
+<td>forty-two</td>
+<td>forty</td>
+<td>The four theory-first articles keep their title form and take the sector block in a later pass; the two level-0 articles have no field and no reading. Forty maps cover every article this pass touches</td>
+</tr>
+<tr>
+<td>2026-11-19</td>
+<td>The non-quantum-limit block</td>
+<td>three slots</td>
+<td>slot 11 split three ways, aliased</td>
+<td>In the limit reading the block <em>is</em> the truncation: the deletion, the scale and the phase are the three faces of one slot, and counting them as three made the limit articles look incomplete when they were not</td>
+</tr>
+<tr>
+<td>2026-11-19</td>
+<td>The momentum reading's first block</td>
+<td>a block beside slot 3</td>
+<td>slot 3 itself, aliased <code>M1=3</code></td>
+<td>In momentum space the action has no separate display: it is the symbol's quadratic form</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What has not been amended, and the evidence for leaving it.</strong> The boundary sentence. The four readings. The two couplings. The seven sector slots. The eight fluid charts. The ten remaining mandatory slots.</p>
+<h2 id="the-four-readings-closed">The Four Readings, Closed</h2>
+<p><strong>Four readings and a second axis of two couplings.</strong> The readings are a closed list. A fifth reading is a new decision, argued in the migration note before any article is written in it, and it changes this file first.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Reading</th>
+<th>Title suffix</th>
+<th>Slug suffix</th>
+<th>Block it adds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Element form</strong></td>
+<td>—</td>
+<td>—</td>
+<td>none: this reading is the base</td>
+</tr>
+<tr>
+<td><strong>Polar variables</strong></td>
+<td><em>in Polar Variables</em></td>
+<td><code>-in-polar-variables</code></td>
+<td><em>The Parameter Basis and the Four Brackets</em>; <em>The Reconstruction and Its Limits</em></td>
+</tr>
+<tr>
+<td><strong>Momentum space</strong></td>
+<td><em>in Momentum Space</em></td>
+<td><code>-in-momentum-space</code></td>
+<td><em>The Symbol and the Quadratic Form</em>; <em>Zero, Pole and the On-Shell Action</em>; <em>The Legendre Transform</em></td>
+</tr>
+<tr>
+<td><strong>Non-quantum limit</strong></td>
+<td><em>in the Non-Quantum Limit</em></td>
+<td><code>-in-the-non-quantum-limit</code></td>
+<td><em>The Deletion in Coordinates</em>; <em>Varying the Scale</em>; <em>Varying the Phase</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The element reading adds no block, and that is a decision.</strong> It is the reading in which the action is written in the field's own variables, and its four questions — action, variation, currents, ledger — are already slots 3, 4, 9 and 12. A block of its own would be a restatement.</p>
+<p><strong>The coupling axis, closed at two.</strong> Free and coupled. The coupled form is marked by the word <em>Coupled</em> before the equation name in the title and by <code>-coupled-</code> before the equation in the slug. There is no third value: an article is either about the free field or about the field with the connection present.</p>
+<p><strong>The grid, and it is exactly thirty-two.</strong></p>
+<p>$$
+4\ \text{equations}\times 2\ \text{couplings}\times 4\ \text{readings}=32 .
+$$</p>
+<p><strong>The four equations, closed.</strong> Klein–Gordon, Dirac, Proca, Schrödinger. A fifth equation enters only with a decision recorded here. Rarita–Schwinger and Pauli are named in the migration note as articles to write; they join the grid only by changing this line.</p>
+<h2 id="the-seven-slot-sector-block">The Seven-Slot Sector Block</h2>
+<p><strong>A sector article is the seventeen plus seven, and the seven are mandatory in that article.</strong> The block is not a reading and is not optional once the article is written as a sector article.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Sector slot</th>
+<th>Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The Lagrangian</td>
+<td>Four pieces, named before they are written</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The Covariant Derivative and the Field Strength</td>
+<td>The commutator, not the derivative, is where the self-coupling lives</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Gauge Fixing and the Ghost</td>
+<td>The gauge-fixing term is displayed, never absorbed</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Feynman Rules</td>
+<td>One rule per field and per vertex, in a table, each derived from the Lagrangian</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The Vertices Derived</td>
+<td>The count of vertices equals the count of interaction terms</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Algebra Verified</td>
+<td>The numbers are recomputed, not quoted</td>
+</tr>
+<tr>
+<td>7</td>
+<td>What the Corpus Adds and What It Imports</td>
+<td>Imported means imported</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only one article fills all seven today: <em>Quantum Chromodynamics and the Lagrangian</em>.</strong> Its headings match seven of the seven, with <em>The Three Vertices Derived</em> as the variant of slot 5 and <em>The Colour Factors</em> as a result section. <em>The Standard Model and the Lagrangian</em> fills the first slot in substance — <em>The Assembled Expression</em> is the Lagrangian under another name — and the seventh through <em>What the Expression Omits</em>, and it has no covariant-derivative section, no gauge-fixing section, no Feynman rules and no vertex count: that gap is the reason item 4 of the migration note exists. <em>The Chiral Theory and the Lagrangian</em> fills one, <em>The Chiral Lagrangian</em>, and reads its currents under the decay constant instead. <em>The Relativistic Particle and the Lagrangian</em> is not a sector article and takes none of the seven.</p>
+<p><strong>The consequence for the batch order.</strong> A sector article is converted in one pass or not at all: seventeen slots, seven sector slots, seventy-two sections. A half-converted sector article is worse than an unconverted one.</p>
+<h2 id="the-fluid-chart">The Fluid Chart</h2>
+<p><strong>Eight fluid articles, twelve slots shared, five replaced.</strong> The chart is a chart of the same functional, so the shared slots are shared literally: the same heading, the same content type, the same rule.</p>
+<p><strong>The five replaced slots, and what replaces each.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Field slot</th>
+<th>Fluid slot</th>
+<th>Why it is replaced</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>The Action in the article's variables</td>
+<td><em>The Action in the Fluid Variables</em></td>
+<td>The functional is the parent's, re-charted; the first claim is that it is the same functional</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Variation</td>
+<td><em>The Two Variations</em></td>
+<td>Amplitude and phase give two equations, and neither is an assumption</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Constraints the Action Imposes</td>
+<td><em>The Constraint the Chart Imposes</em></td>
+<td>The continuity equation is a definition wearing the action's clothes, and the article must say which</td>
+</tr>
+<tr>
+<td>7</td>
+<td>The Structural Consequence</td>
+<td><em>The Term With No Classical Counterpart</em></td>
+<td>The quantum potential, or — in the spin-half and spin-one charts — the canonical table that fails to close</td>
+</tr>
+<tr>
+<td>10</td>
+<td>The Two Settings</td>
+<td><em>The Canonical Table</em></td>
+<td>The chart, not the coupling, is what decides whether the bracket closes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The twelve shared slots.</strong> 1 Introduction, 2 Conventions, 5 The Reality of the Action, 8 The Second Variation, 9 The Noether Currents, 11 The Limits, 12 What the Principle Adds and What It Relabels, 13 Comparisons, 14 Open Questions, 15 Summary, 16 Summary of Notation, 17 Further Reading.</p>
+<p><strong>The eight charts, closed.</strong> Four carriers crossed with charge.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Carrier</th>
+<th>Uncharged</th>
+<th>Charged</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger (non-relativistic, spin zero)</td>
+<td><em>The Lagrangian and the Schrödinger Fluid</em></td>
+<td><em>The Lagrangian and the Charged Schrödinger Fluid</em></td>
+</tr>
+<tr>
+<td>Relativistic spin zero</td>
+<td><em>The Lagrangian and the Spin-Zero Fluid</em></td>
+<td><em>The Lagrangian and the Charged Spin-Zero Fluid</em></td>
+</tr>
+<tr>
+<td>Spin one half</td>
+<td><em>The Lagrangian and the Spin-Half Fluid</em></td>
+<td><em>The Lagrangian and the Charged Spin-Half Fluid</em></td>
+</tr>
+<tr>
+<td>Spin one</td>
+<td><em>The Lagrangian and the Spin-One Fluid</em></td>
+<td><em>The Lagrangian and the Charged Spin-One Fluid</em></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one sentence the fluid chart owes.</strong> What the substitution discards: the frame, the sector projectors and the global phase. The polar article of the field family keeps all three and therefore states the opposite in its slot 6. That pair — polar keeps the frame, fluid discards it — is the only reason both exist, and neither may absorb the other.</p>
+<h2 id="the-closed-lists-and-the-count">The Closed Lists, and the Count</h2>
+<p><strong>Forty-six articles, and every one is in a closed list or outside the rewrite.</strong> Nothing in the family is unclassified.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Count</th>
+<th>Rewrite batch</th>
+<th>Frozen content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Element form</td>
+<td>8</td>
+<td>C</td>
+<td>17 slots, 10 mandatory</td>
+</tr>
+<tr>
+<td>Polar variables</td>
+<td>8</td>
+<td>C</td>
+<td>17 slots plus the polar block</td>
+</tr>
+<tr>
+<td>Momentum space</td>
+<td>8</td>
+<td>C</td>
+<td>17 slots plus the momentum block</td>
+</tr>
+<tr>
+<td>Non-quantum limit</td>
+<td>8</td>
+<td>C</td>
+<td>17 slots plus the limit block; slot 11 mandatory in this reading</td>
+</tr>
+<tr>
+<td>Fluid charts</td>
+<td>8</td>
+<td>D</td>
+<td>12 shared, 5 replaced</td>
+</tr>
+<tr>
+<td>Theory-first</td>
+<td>4</td>
+<td>later</td>
+<td>17 slots plus the sector block, seven mandatory</td>
+</tr>
+<tr>
+<td>Level 0</td>
+<td>2</td>
+<td>never</td>
+<td>Own shape: no field, no reading</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>46</strong></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two level-0 articles are outside the rewrite by decision, not by omission.</strong> <em>The Lagrangian and Hamiltonian Mechanics</em> and <em>The Lagrangian and the Non-Quantum Limit: The Action Principle</em> are about the principle itself. They have no parent equation and no reading, so slots 3, 4 and 9 have no referent in them.</p>
+<p><strong>The four theory-first articles are outside this pass and inside the freeze.</strong> They keep their inverted titles and take the sector block when it is written. Their titles are a claim about where the article's weight lies, not an exception to the naming rule.</p>
+<h2 id="what-the-freeze-binds-and-what-it-leaves-free">What the Freeze Binds and What It Leaves Free</h2>
+<p><strong>Bound.</strong> The slot names and their order. The tier of each slot. The four readings and their suffixes. The two couplings. The four equations of the grid. The seven sector slots. The eight fluid charts and the five replaced slots. The boundary sentence. The count of forty-six.</p>
+<p><strong>Free.</strong> The prose of every section. The length of every article. The number of displays. Whether a given article fills a conditional slot, provided the omission is declared. The physics: no rewrite may weaken a claim, and no slot may be filled with a claim the article does not already make or cannot check.</p>
+<p><strong>Free, and deliberately.</strong> The list of articles still to be written. A new article enters under one of the closed lists above. It does not create a new list, and it does not add an eighteenth slot.</p>
+<h2 id="how-to-check-the-freeze">How to Check the Freeze</h2>
+<p><strong>Four mechanical checks, run on every batch, and they are the whole of the verification.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Rule</th>
+<th>Failure means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heading map</td>
+<td>Every heading of the old article appears in <code>lagrangian-maps/&lt;slug&gt;.tsv</code>, mapped to a slot number or to <em>KEPT AS RESULT SECTION</em></td>
+<td>The map is missing and the article is not touched</td>
+</tr>
+<tr>
+<td>Coverage</td>
+<td>Every entry of the map appears as a heading of the new article</td>
+<td>A section was lost</td>
+</tr>
+<tr>
+<td>Volume</td>
+<td>Displays do not fall; words stay within ten per cent</td>
+<td>Content was cut to fit the template</td>
+</tr>
+<tr>
+<td>Tier</td>
+<td>Every mandatory slot is present; every absent conditional slot is declared in slot 1</td>
+<td>The article is incomplete or silent about its omission</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One reading check, and it cannot be mechanised.</strong> The slot-7 question: <em>what does this article state that its parent does not?</em> One sentence, or the rewrite has spread the result over three sections or lost it.</p>
+<p><strong>The counts that must hold after every batch.</strong> Forty-six articles in the family. Forty-two titles beginning <em>The Lagrangian and</em>. Four beginning <em>The … and the Lagrangian:</em>. Zero beginning <em>The Lagrangian of</em>. 638 menu anchors plus one per article or hub added. Zero dead links in the physics section.</p>
+<h2 id="summary">Summary</h2>
+<p>The family is frozen at three decisions. The boundary: seventeen slots for the one-particle layer, a bridge for the second-quantised layer, and no growth of either. The tier: ten mandatory slots and seven conditional after the dated amendment, with a declared omission instead of an invented section. The lists: four readings, two couplings, four grid equations, seven sector slots, eight fluid charts with five replaced slots, and forty-six articles of which thirty-two are field articles, eight are fluids, four are theory-first and two are level 0.</p>
+<p>What the freeze buys is arithmetic that stops moving. The forty maps measure the gap at 105 mandatory absences and 192 declarations, so the pass writes about 112 sections and not 320; the eight fluids take the chart and not the seventeen; the four theory-first wait; the two level-0 articles are never touched. What it costs is one admission: the sixteen articles of the quantisation layer — six canonical quantisations, three Fock spaces, two quantised fields, four path integrals and the spin–statistics theorem — do not fit this architecture, and one bridge article joins them to it instead of forty-two rewrites absorbing them.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>M</strong>, <strong>C</strong></td>
+<td>Mandatory slot, conditional slot</td>
+</tr>
+<tr>
+<td>slot $n$</td>
+<td>The $n$-th of the seventeen, in the fixed order of §<em>The Seventeen Slots and Their Tiers</em></td>
+</tr>
+<tr>
+<td>element form</td>
+<td>The reading in which the action is written in the field's own variables; it adds no block</td>
+</tr>
+<tr>
+<td>polar variables</td>
+<td>The reading in which the field is written as $\varrho e^{i\theta}$ and the frame is kept</td>
+</tr>
+<tr>
+<td>momentum space</td>
+<td>The reading in which the action is a function of the symbol</td>
+</tr>
+<tr>
+<td>non-quantum limit</td>
+<td>The reading in which $\hbar$ or $c$ is deleted and the error is stated as an order</td>
+</tr>
+<tr>
+<td>grid</td>
+<td>Four equations $\times$ two couplings $\times$ four readings $=32$</td>
+</tr>
+<tr>
+<td>sector block</td>
+<td>The seven slots that a sector article adds to the seventeen</td>
+</tr>
+<tr>
+<td>chart</td>
+<td>The fluid writing of the same functional: twelve shared slots, five replaced</td>
+</tr>
+<tr>
+<td>bridge</td>
+<td><em>The Lagrangian and the Second Quantisation</em>; the article that joins this family to the quantisation layer</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="lagrangian-migration.md">Lagrangian Migration</a> — the argument, the measurements and the ordered list of work that this file freezes.</li>
+<li><a href="internal-note-on-quantum-field-theory-in-the-corpus.md">Quantum Field Theory in the Corpus</a> — what the corpus contains on the quantised side, clause by clause.</li>
+<li><a href="../articles_physics/the-lagrangian-and-the-klein-gordon-equation.md">The Lagrangian and the Klein–Gordon Equation</a> — the model of the element reading and of slots 1 to 12.</li>
+<li><a href="../articles_physics/the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.md">The Lagrangian and the Klein–Gordon Equation in Polar Variables</a> — the model of the polar block, and of the frame that survives the substitution.</li>
+<li><a href="../articles_physics/the-lagrangian-and-the-spin-zero-fluid.md">The Lagrangian and the Spin-Zero Fluid</a> — the model of the chart, where the frame does not survive.</li>
+<li><a href="../articles_physics/quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.md">Quantum Chromodynamics and the Lagrangian</a> — the only article that fills all seven sector slots.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
