@@ -339,9 +339,9 @@ The equation is standard. The algebra's contribution is the closure argument, th
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the coupling that enters once rather than twice, and for the contrast between the two carriers.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the potential biquaternion and the four-current.
-- [The Variational Principle and the Coupled Proca Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-form.html), for the action, the currents and the sign of the mass term.
-- [The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-proca-equation-in-biquaternionic-polar-variables.html), for the constrained form of the same action.
-- [The Variational Principle and the Proca Equation in Biquaternionic Form](the-variational-principle-and-the-proca-equation-in-biquaternionic-form.html), for the free action whose mass term breaks what the coupled mass term preserves.
+- [The Lagrangian and the Coupled Proca Equation](the-lagrangian-and-the-coupled-proca-equation.html), for the action, the currents and the sign of the mass term.
+- [The Lagrangian and the Coupled Proca Equation in Polar Variables](the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html), for the constrained form of the same action.
+- [The Lagrangian and the Proca Equation](the-lagrangian-and-the-proca-equation.html), for the free action whose mass term breaks what the coupled mass term preserves.
 - Alexandru Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs," *Journal de Physique et le Radium* **7** (1936) 347–353, for the massive vector equation.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Fields* (McGraw-Hill, 1965), for the standard minimally coupled massive vector field and its constraint.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the covariant derivative and the field strength in geometric algebra.

@@ -1,4 +1,3 @@
-
 # __Left-Right Symmetric Fermions from Complex Split Biquaternions and Bioctonions__
 
 ## Introduction

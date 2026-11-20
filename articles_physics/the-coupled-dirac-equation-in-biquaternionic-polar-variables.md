@@ -255,7 +255,7 @@ The gauge transformation moves the angle and nothing else, so the covariant wave
 
 The spin is the rotor, the rotor is gauge invariant, and the connection cannot turn it. The spin's transport in a background is indirect, through the boost, and the polar chart does not derive it; that is the chart's honest limit and the g=2 article's subject.
 
-The polar equation is the free pair in variables. It closes for a plane wave in a constant background and it does not close for a general field. The constraint structure enters when the action is asked for, in *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables*.
+The polar equation is the free pair in variables. It closes for a plane wave in a constant background and it does not close for a general field. The constraint structure enters when the action is asked for, in *The Lagrangian and the Coupled Dirac Equation in Polar Variables*.
 
 ## Summary of Notation
 
@@ -284,8 +284,8 @@ The polar equation is the free pair in variables. It closes for a plane wave in 
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), the element form this article re-coordinatises.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the mass-shell proposition.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
-- [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-form.html), for the action and the current.
-- [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), where the constraint structure appears.
+- [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the action and the current.
+- [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), where the constraint structure appears.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the current as a pairing.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the spin's transport in a background.
 - [Spin Hydrodynamics in Biquaternionic Form](spin-hydrodynamics-in-biquaternionic-form.html), for the spin-half-fluid reading of the four brackets.

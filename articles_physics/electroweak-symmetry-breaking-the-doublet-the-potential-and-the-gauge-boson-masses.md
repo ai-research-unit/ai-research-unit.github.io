@@ -60,7 +60,7 @@ V(\varphi)=-\mu^2\,\varphi^{\dagger}\varphi+\lambda\left(\varphi^{\dagger}\varph
 \lambda>0 ,
 $$
 
-with the two parameters of the table of article 1. Only $\varphi^\dagger\varphi$ can appear: any other invariant would need more than one power of the doublet in a way the group does not allow, and the audit of [The Standard Model Lagrangian Assembled](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html) checks that.
+with the two parameters of the table of article 1. Only $\varphi^\dagger\varphi$ can appear: any other invariant would need more than one power of the doublet in a way the group does not allow, and the audit of [The Standard Model Lagrangian Assembled](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) checks that.
 
 **Why the sign of $\mu^2$ is written this way.** A positive $\mu^2$ makes the origin a maximum and pushes the minimum away from it. A negative $\mu^2$ would make the origin the minimum, the vacuum would be $\langle\varphi\rangle=0$, and the group would be unbroken. The sign is the difference between a theory with masses and a theory without.
 
@@ -501,7 +501,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 ## Further Reading
 
 - [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_\varphi=\tfrac12$, which this article takes as given.
-- [The Standard Model Lagrangian Assembled: Four Sectors in One Expression](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html). The scalar sector in the assembled sum, and the sign rule that fixes the kinetic term.
+- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The scalar sector in the assembled sum, and the sign rule that fixes the kinetic term.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). The abelian case in full, whose gap this article fills for the electroweak group.
 - [The W and Z Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The mixing and the masses, here derived from the mass matrix.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). Where the two scalar parameters sit in the count of nineteen.
@@ -509,4 +509,4 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why the framework's central scalar is a singlet, and why a singlet breaks nothing.
 - [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The sector in ledger form, with this article's three items marked imported.
 
-The two companions that §*The Numbers* leans on — [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html), for the sector at the other end of the mass ladder, and [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html), for the $\delta r$ and $\rho$ statements used above — are both in the corpus.
+The two companions that §*The Numbers* leans on — [Quantum Chromodynamics and the Lagrangian: The Triplet, the Octet and the Feynman Rules](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html), for the sector at the other end of the mass ladder, and [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html), for the $\delta r$ and $\rho$ statements used above — are both in the corpus.

@@ -219,7 +219,7 @@ The coupled field has a charge, because the enlarged carrier has a phase and the
 
 - *The Path Integral and the Proca Equation in Biquaternionic Form*, for the free integral, the split and the ghost.
 - *The Coupled Proca Equation in Biquaternionic Form*, for the carrier change, the doubled coupling and the covariant constraint.
-- *The Variational Principle and the Coupled Proca Equation in Biquaternionic Form*, for the action and its two traces.
+- *The Lagrangian and the Coupled Proca Equation*, for the action and its two traces.
 - *The Gauge Principle in Biquaternionic Form*, for the localisation of the central phase.
 - *The Covariant Derivative and Gauge Connection in Biquaternionic Form*, for the operator identity used here.
 - *The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for a coupled integral whose carrier does not change.

@@ -178,7 +178,7 @@ The gauge transformation is a central phase at each point, its Jacobian is one, 
 
 ## Further Reading
 
-- *The Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Form*, for the action, the term-by-term invariance and the Noether current.
+- *The Lagrangian and the Coupled Schrödinger Equation*, for the action, the term-by-term invariance and the Noether current.
 - *The Coupled Schrödinger Equation in Biquaternionic Form*, for the equation, the gauge covariance and the constant setting's two shifts.
 - *The Path Integral and the Schrödinger Equation in Biquaternionic Form*, for the free integral whose determinant's power this article keeps.
 - *The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the same integral read in the word.

@@ -205,7 +205,7 @@ The divergence's square is a displayed term of the exponent and its saddle is th
 
 - *The Path Integral and the Proca Equation in Biquaternionic Form*, for the integral read here.
 - *The Proca Equation in Biquaternionic Polar Variables*, for the two-branch word, the logarithmic derivative and the pair of equations.
-- *The Variational Principle and the Proca Equation in Biquaternionic Polar Variables*, for the chart's action, the displayed divergence term and the four vanishing momenta.
+- *The Lagrangian and the Proca Equation in Polar Variables*, for the chart's action, the displayed divergence term and the four vanishing momenta.
 - *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane*, for the carrier and its complex structure.
 - *Degenerate Solutions of the Biquaternionic Proca Equation*, for the lightlike set that lies outside both branches.
 - *The Path Integral and the Klein–Gordon Equation in Biquaternionic Polar Variables*, for the scalar chart, whose measure cancellation is the linear case.

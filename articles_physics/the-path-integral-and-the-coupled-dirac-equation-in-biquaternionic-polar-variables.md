@@ -233,7 +233,7 @@ The division of labour is the polar form's contribution: the charge enters the a
 - [The Path Integral and the Dirac Equation in Biquaternionic Polar Variables](the-path-integral-and-the-dirac-equation-in-biquaternionic-polar-variables.html), for the free reading of the same four factors, the Maslov constants and the non-composition.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the type table, the kinetic momentum and the kinetic velocity that this article recovers from the integral.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the equation, the conjugate entry and the constant-potential solutions.
-- [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the coupled action in the word and the constraint structure.
+- [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), for the coupled action in the word and the constraint structure.
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, its ranges and the four brackets.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the composition of the transport with the rotor's own rate.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the covariant derivative and the sign convention.

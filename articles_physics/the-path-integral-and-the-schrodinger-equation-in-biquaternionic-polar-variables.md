@@ -161,7 +161,7 @@ The kernel's word is scale = van Vleck, angle = classical action over $\hbar$ pl
 
 - *The Path Integral and the Schrödinger Equation in Biquaternionic Form*, for the integral read here.
 - *The Schrödinger Equation in Biquaternionic Polar Variables*, for the word, the domain, the propagator's word and the half turn.
-- *The Variational Principle and the Schrödinger Equation in Biquaternionic Polar Variables*, for the polar action, the cross term and the four vanishing momenta.
+- *The Lagrangian and the Schrödinger Equation in Polar Variables*, for the polar action, the cross term and the four vanishing momenta.
 - *The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the same chart with the connection inside the derivative.
 - *The Path Integral and the Klein–Gordon Equation in Biquaternionic Polar Variables*, for the second-order chart, whose measure carries the weight this one does not.
 - *The Path Integral and the Dirac Equation in Biquaternionic Polar Variables*, for a kernel whose word is degenerate in no factor.

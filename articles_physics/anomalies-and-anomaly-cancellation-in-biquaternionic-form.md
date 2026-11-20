@@ -65,7 +65,7 @@ The framework results used here are those of the companion articles:
 
 **What the framework contributes here, and what it does not.** Every anomaly coefficient in the article carries $\epsilon_{\mu\nu\rho\sigma}$, and that tensor is the standard spinor trace, quoted from the standard calculation and written out under its gamma names in the closing legacy section. The framework contributes no new value for it. What it contributes is the identity of the object the trace is weighted by. The chirality that weights the anomaly is the algebra's own basis operator $\mathsf{V}_{\mathrm{vol}}$, the same basis operator the mass term applies, and the density that comes out is the algebra's own invariant $I_2$. So the two ingredients of the anomaly — a chiral weight and a pseudoscalar density — are both elements of the algebra rather than objects attached to it from outside.
 
-The chiral weight is settled by $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ in the section *The Traces Involved, and the One That Is Not*; the density is settled in the section that follows this one, where the axial current is exhibited as the insertion of the basis operator the mass uses.
+The chiral weight is settled by $\mathrm{tr}(\mathsf{V}_{\mathrm{vol}})=0$ in the section *The Objects Involved, and the One That Is Not*; the density is settled in the section that follows this one, where the axial current is exhibited as the insertion of the basis operator the mass uses.
 
 ## The Axial Anomaly
 
@@ -168,7 +168,7 @@ which is why it is not renormalised and why it is fixed by topology. Third, the 
 
 ## The Triangle Coefficient and the Group Factors
 
-**Two traces, two names.** Throughout, $\mathrm{tr}$ is the trace of an operator of the algebra, in its four complex dimensions, and $\mathrm{Tr}_R$ the matrix trace over the gauge representation; the anomaly is their product. The subscript-free $\mathrm{Tr}$ appears only in the inherited informational formula, whose argument is a product of algebra elements rather than of matrices.
+**Two matrices, two names.** Throughout, $\mathrm{tr}$ reads a matrix that stands in the same display: the $4\times4$ array of a basis operator, the array of the regular representation, the array of a gamma product. $\mathrm{Tr}_R$ reads the matrix of the gauge representation, and the anomaly is the product of the two. No element of the algebra carries the symbol: an element is read in $2\,\mathrm{Sc}\tilde Q=2Q_t$, and the subscript-free $\mathrm{Tr}$ stands only in the inherited formula, whose argument is a product of two elements and which is written $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$.
 
 **The general anomaly coefficient.** For a gauge theory with generators $T_a$ acting on a left-handed Weyl fermion in a representation $R$, the coefficient of the triangle anomaly is the **symmetrised trace**
 
@@ -325,7 +325,7 @@ with one factor of each left- and each right-handed field, the determinant runni
 
 **What is not treated.** The resolution of the $\mathrm{U}(1)_A$ problem in full involves the $\theta_{\mathrm{vac}}$ parameter, the vacuum angle, and — if it is a symmetry — the axion; the $\theta_{\mathrm{vac}}$ parameter belongs to the corpus's general gauge apparatus, and the axion to the spin-$0$ subcategory. This article states only the fermion-sector fact: the anomaly generates a chirally non-invariant multifermion vertex, and the divergence identity of the section *The Axial Anomaly* is its local form.
 
-## The Traces Involved, and the One That Is Not
+## The Objects Involved, and the One That Is Not
 
 **Two traces, and only two.** Every anomaly coefficient in this article is a product of two independent traces: the **spinor trace**, over the four complex dimensions of the algebra, which supplies $\epsilon_{\mu\nu\rho\sigma}$, and the **gauge trace** over the representation, which supplies $A_{abc}=\mathrm{Tr}_R[T_a\{T_b,T_c\}]$. In the abelian case the second is the cubic charge sum. The two are computed separately because they act on different indices, and the anomaly is their product.
 
@@ -337,7 +337,7 @@ $$
 
 the identity that keeps the chirality-weighted trace free of an identity term, so that the anomaly is a total derivative rather than a shift of the vacuum energy.
 
-**The trace that is not involved.** The framework's informational reduction, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is the state-and-observable pairing of the Hermitian sector $\mathbb{B}_{\Psi}$: it counts the scalar part of a product with the factor $\mathrm{Tr}\mathsf M_2(e_t)=2$. It is **not** the trace that computes an anomaly. The anomaly trace is the trace of an operator of the algebra together with the ordinary matrix trace over the gauge representation; neither is the scalar-part pairing, and substituting one for the other would be a category error. The formula of $\mathbb{B}_{\Psi}$ is used in the companion articles for expectation values of observables; the anomaly uses the traces of the algebra. The distinction is stated here because both are called "the trace" in the series.
+**The object that is not involved.** The framework's state pairing, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is the pairing of the Hermitian sector $\mathbb{B}_{\Psi}$: it is the scalar part of a product, doubled by the dimension of the $2\times2$ image. It is **not** the object that computes an anomaly. The anomaly reads two matrices, the $4\times4$ array of the algebra's regular representation and the array of the gauge representation; neither is the scalar-part pairing, and substituting one for the other would be a category error. The pairing of $\mathbb{B}_{\Psi}$ is used in the companion articles for expectation values of observables. The distinction is stated here because older places in the series call both "the trace".
 
 ## What the Framework Supplies, Transcribes, and Does Not Supply
 
@@ -442,7 +442,7 @@ The framework's **own** gauge structure is anomaly-free identically: the central
 | $\tilde\nabla_\Phi\tilde{Ξ}_{R}=k_m\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=k_m\tilde{Ξ}_{R}$ | The one-sided Dirac pair, one equation per chirality |
 | $(\tilde\nabla_\Phi)^{\natural}F=-im\bar{F}\vec e_z$ | Two-sided Dirac equation; the mass term is the basis operator applied to $\bar{F}$ |
 | $-R_{\mathrm{axf},\vec e_z}$, the four frame basis operators composed in the order $z,y,x,t$ | The fifth basis operator; the basis operator is $i$ times it |
-| $\mathrm{tr}$, $\mathrm{Tr}_R$ | Trace of an operator of the algebra in its four complex dimensions; matrix trace over the gauge representation |
+| $\mathrm{tr}$, $\mathrm{Tr}_R$ | The diagonal sum of a $4\times4$ matrix standing in the same display, and of the matrix of the gauge representation |
 | $\epsilon_{\mu\nu\rho\sigma}$ | Alternating symbol, written all-low with $\epsilon_{0123}=+1$; raising all four indices multiplies it by $g^{00}g^{11}g^{22}g^{33}=-1$, so the textbook's upper-index contraction is the negative of the all-low one, and the anomaly term carries an explicit minus in this notation |
 | $j_{\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(ie_\mu\tilde{Ξ}\vec e_{\nu(\mu)})$, $j_{5\mu}=\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}\,(e_\mu\tilde{Ξ}\vec e_z\vec e_{\nu(\mu)})$ | Vector and axial currents; the axial current is the basis operator inserted between the frame basis operator and the state, the right multiplier being $\vec e_z\vec e_{\nu(\mu)}$ in that order |
 | $\langle\tilde\nabla_\Phi,\tilde J_{\Phi,5}\rangle_{\natural}=\sum_\mu\partial j_{5\mu}/\partial R_\mu=2m\tilde{Ξ}^{\dagger}iR_{\mathrm{axf},\vec e_x}(\tilde{Ξ}\vec e_z)-\dfrac{e^2}{16\pi^2}\epsilon_{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ | Axial anomaly (ABJ), with the mass term reduced by $i(-i)=+1$; the minus is the lower-index notation, and the divergence is the plain sum, the metric being inside the frame basis operators |

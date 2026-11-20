@@ -235,7 +235,7 @@ where $\lambda_i$ are the eigenvalues of the first matrix and $\mu_j$ those of t
 
 **The two determinants.** The one-sided operator has determinant $N^{2}$, and the Hermitian pair has determinant $\lvert N\rvert^{4}$, which is $\lvert\det L_{\tilde Q}\rvert^{2}$. The pair's determinant is the squared modulus of the one-sided determinant, and it vanishes on the same set.
 
-**The trace.** The trace of the Hermitian pair is $\lvert\operatorname{tr}\rvert^{2}=4\lvert Q_t\rvert^{2}$, the squared modulus of the trace of the element: the trace of the operator reads the trace of the element twice, once per slot.
+**The diagonal sum.** The diagonal sum of the Hermitian pair's matrix is $\lvert\operatorname{tr}\rvert^{2}=4\lvert Q_t\rvert^{2}$, the squared modulus of $2Q_t$: the matrix of the pair reads the element's scalar part twice, once per slot. No element carries the symbol; its reading is $2\,\mathrm{Sc}\tilde Q=2Q_t$.
 
 **The inverse and the criterion.** In the model the left operator is invertible exactly when the matrix is invertible, and the matrix is invertible exactly when its determinant $N$ is nonzero. The model reproduces the invertibility criterion of §*The Two One-Sided Families* without an extra argument.
 

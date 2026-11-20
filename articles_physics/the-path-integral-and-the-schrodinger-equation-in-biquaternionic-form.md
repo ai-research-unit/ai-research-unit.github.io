@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The path integral is the third formulation of the same quantum dynamics, and for a field it is a functional integral rather than a sum over trajectories.** *The Variational Principle and the Schrödinger Equation in Biquaternionic Form* gives the action of the biquaternionic Schrödinger field. This article sums $\exp(iS/\hbar)$ over field configurations, computes the generating functional, identifies the free two-point function with the propagator, and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
+**The path integral is the third formulation of the same quantum dynamics, and for a field it is a functional integral rather than a sum over trajectories.** *The Lagrangian and the Schrödinger Equation* gives the action of the biquaternionic Schrödinger field. This article sums $\exp(iS/\hbar)$ over field configurations, computes the generating functional, identifies the free two-point function with the propagator, and evaluates the two kernels that can be computed exactly: the free particle and the harmonic oscillator.
 
 **The division of labour with the three companions is fixed at the start.** *The Path Integral and the Schrödinger Equation in Biquaternionic Polar Variables* reads the same integral in the word and adds nothing to its value. *The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Form* puts the electromagnetic connection into this integral, and its polar companion reads that. This article is the free element-form integral: the action, the measure, the determinant, the two-point function and the semiclassical form. No connection, no word.
 
@@ -201,7 +201,7 @@ The saddle of the field integral is source-fixed rather than boundary-fixed, whi
 
 ## Further Reading
 
-- *The Variational Principle and the Schrödinger Equation in Biquaternionic Form*, for the action integrated here and for its four reality checks.
+- *The Lagrangian and the Schrödinger Equation*, for the action integrated here and for its four reality checks.
 - *The Path Integral and the Schrödinger Equation in Biquaternionic Polar Variables*, for the same integral read in the word.
 - *The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Form*, for the connection inside this integral.
 - *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form*, for the second-order integral whose determinant is the half power of this one.

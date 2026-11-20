@@ -216,7 +216,7 @@ The transform preserves the Hermitian form, by Plancherel, and breaks the quater
 
 - *The Dirac Equation in Biquaternionic Form*, for the chiral pair, the gradient and the mass coefficient.
 - *The Dirac Equation in Biquaternionic Polar Variables*, for the word and the phase gradient.
-- *The Variational Principle and the Dirac Equation in Biquaternionic Form*, for the action, its self-adjointness and the sentence about the $i$ inside the material time.
+- *The Lagrangian and the Dirac Equation*, for the action, its self-adjointness and the sentence about the $i$ inside the material time.
 - *Degenerate Solutions of the Biquaternionic Dirac Equation*, for the null four-vector as twice an idempotent.
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and its symbol rule.
 - *Wave–Particle Duality and the Fourier Transform*, for the two forms on one element and the interval as a symbol.

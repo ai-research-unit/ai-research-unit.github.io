@@ -51,7 +51,7 @@ $$
 
 and the even-even elements are automatically trivial. Integrality of $q$ alone says the phase is a circle; the parity is the quotient.
 
-**What the product allows and the quotient forbids.** In the product the abelian charge of a multiplet is free: a doublet may be assigned any real $Y$, and the assignment is fixed by anomaly cancellation together with the observed electric charges. In the quotient the abelian charge of a doublet must be **odd** and that of a singlet **even**, in the lattice of the central phase. A framework multiplet cannot be given a charge independent of its spin.
+**What the product allows and the quotient forbids.** In the product the abelian charge of a multiplet is a free label: once the period of the circle is chosen, a doublet may carry any $Y$ on the resulting lattice, and the assignment is fixed by anomaly cancellation together with the observed electric charges. In the quotient the abelian charge of a doublet must be **odd** and that of a singlet **even**, in the lattice of the central phase. A framework multiplet cannot be given a charge independent of its spin.
 
 **The observed table passes the check.** Take the central charge to be $q=6Y$, the least step on which every observed hypercharge is an integer; the table below is *The Electroweak Gauge Group and the Hypercharge Assignment*'s, with the two added columns $q=6Y$ and $2j$.
 

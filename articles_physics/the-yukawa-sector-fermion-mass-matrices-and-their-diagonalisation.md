@@ -467,7 +467,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 
 ## Further Reading
 
-- [The Standard Model Lagrangian Assembled: Four Sectors in One Expression](the-standard-model-lagrangian-assembled-four-sectors-in-one-expression.html). The Yukawa term in the assembled sum, and the hypercharge audit this article repeats.
+- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The Yukawa term in the assembled sum, and the hypercharge audit this article repeats.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The vacuum expectation value that turns a coupling into a mass.
 - [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Where the hypercharges in the audit come from, and why $Y_\varphi=\tfrac12$.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The thirteen flavour parameters inside the count of nineteen.

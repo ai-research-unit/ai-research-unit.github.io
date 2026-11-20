@@ -32,7 +32,7 @@ gives $\rho = 1$ for the doublet, $\rho > 1$ for a $T = 1$, $T_3 = 0$ triplet ad
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the symmetry-breaking potential and the vacuum expectation value.
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone direction and the decay constant.
 - Companion article *The Nonlinear Sigma Model in Biquaternionic Form*, for the left–right action, its invariant metric and its currents.
-- Companion article *The Pion and the Chiral Lagrangian in Biquaternionic Form*, for the adjoint isospin action on a triplet and the relation of the custodial group to the chiral group.
+- Companion article *The Chiral Theory and the Lagrangian: The Pion and the Decay Constant*, for the adjoint isospin action on a triplet and the relation of the custodial group to the chiral group.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the non-abelian gauge construction and its left-multiplication action on matter.
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the field strength and the adjoint representation.
 - Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, for the boundary that this article states — no doublet, no hypercharge, no chiral $SU(2)_L$.

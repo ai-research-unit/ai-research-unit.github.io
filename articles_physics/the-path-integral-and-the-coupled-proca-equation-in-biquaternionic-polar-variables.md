@@ -169,7 +169,7 @@ The constraint's square is displayed, its saddle is the covariant Lorenz conditi
 
 - *The Path Integral and the Coupled Proca Equation in Biquaternionic Form*, for the integral read here and the carrier change.
 - *The Coupled Proca Equation in Biquaternionic Polar Variables*, for the four-factor word and the count eight against four.
-- *The Variational Principle and the Coupled Proca Equation in Biquaternionic Polar Variables*, for the chart's quadratic form, the frame-built metric and the connection's shift.
+- *The Lagrangian and the Coupled Proca Equation in Polar Variables*, for the chart's quadratic form, the frame-built metric and the connection's shift.
 - *The Path Integral and the Proca Equation in Biquaternionic Polar Variables*, for the free chart, whose missing angle this article supplies.
 - *The Proca Equation in Biquaternionic Polar Variables*, for the two branches and the logarithmic derivative.
 - *The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, for a coupled chart whose carrier was already closed.

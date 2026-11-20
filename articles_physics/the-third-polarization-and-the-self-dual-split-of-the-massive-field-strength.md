@@ -213,7 +213,7 @@ The origin of the count is the difference of carriers. The potential is a four-v
 - [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html), for the split, the projectors and the massless helicities whose massive continuation this article gives.
 - [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html), for the dispersion relation, the Lorenz condition and the three polarizations.
 - [The Proca Equation in Biquaternionic Polar Variables](the-proca-equation-in-biquaternionic-polar-variables.html), for the polar reading of a plane wave, where the frame is constant and the scale carries the oscillation.
-- [The Variational Principle and the Proca Equation in Biquaternionic Form](the-variational-principle-and-the-proca-equation-in-biquaternionic-form.html), for the stress tensor whose trace is the same measure of the mass.
+- [The Lagrangian and the Proca Equation](the-lagrangian-and-the-proca-equation.html), for the stress tensor whose trace is the same measure of the mass.
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html), for $\vec N$, the dual, and the two invariants.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the massless case and the gauge freedom that removes the third state.
 - [The Complex Potential of a Self-Dual Maxwell Field](the-complex-potential-of-a-self-dual-maxwell-field.html), for the programmes that impose duality purity and the change of carrier they require.

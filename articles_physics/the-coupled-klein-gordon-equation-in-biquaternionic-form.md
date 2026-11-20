@@ -351,9 +351,9 @@ The current is $J_\mu=\frac{i}{2k_m}\mathrm{Sc}\big(\tilde\Xi^{*}\tilde\nabla_{\
 
 - [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html), for the free equation, the current and the two defects.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the word and the pair.
-- [The Variational Principle and the Klein–Gordon Equation in Biquaternionic Form](the-variational-principle-and-the-klein-gordon-equation-in-biquaternionic-form.html), for the free action and its currents.
+- [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), for the free action and its currents.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), the polar companion of this article.
-- [The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the total action, the two variations and the source.
+- [The Lagrangian and the Coupled Klein–Gordon Equation](the-lagrangian-and-the-coupled-klein-gordon-equation.html), for the total action, the two variations and the source.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localization of the central phase.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature and the gap it records.
 - [The Coupled Proca Equation in Biquaternionic Form](the-coupled-proca-equation-in-biquaternionic-form.html), for the same coupling in the vector sector, where the carrier must change.

@@ -31,7 +31,7 @@ The findings are the following, and they are separated at the outset in the corp
 - Companion article *The Generating Functional and the Effective Action in Biquaternionic Form*, for the effective action, its Legendre structure, and the identification of its one-loop term with $\tfrac12\mathrm{Tr}\log S^{(2)}$.
 - Companion article *The Functional Determinant in Biquaternionic Form*, for the determinant, its proper-time form and its regularization.
 - Companion article *The Renormalization Group in Biquaternionic Form*, for the scale dependence of the renormalized couplings.
-- Companion article *The Trace Anomaly in Biquaternionic Form*, for the anomalous part of the one-loop effective action.
+- Companion article *The Conformal Anomaly in Biquaternionic Form*, for the anomalous part of the one-loop effective action.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the free scalar field and its Lagrangian.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the construction of the current from the central scalar action.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauging of the central phase.
@@ -197,7 +197,7 @@ $$
 \left[\mu\frac{\partial}{\partial\mu} + \beta_\lambda\frac{\partial}{\partial\lambda} + \beta_ϙ\frac{\partial}{\partial ϙ} - \gamma_\rho\,\rho\frac{\partial}{\partial \rho}\right]\mathcal{V}_\text{eff}(\rho,\lambda,ϙ,\mu) = 0 ,
 $$
 
-up to the trace anomaly of the companion article, which is a higher-order effect for the scalar sector. The framework's contribution to this equation is again the centrality of the fluctuation operator, which is what makes the anomalous dimension a single number rather than a matrix: the field $\tilde{Ξ}$ is central, so its wave-function renormalization cannot mix it with a non-central operator, and $\gamma_\rho$, the anomalous dimension of the invariant $\rho$ (twice that of the field), is a scalar. The equation itself is standard.
+up to the conformal anomaly of the companion article, which is a higher-order effect for the scalar sector. The framework's contribution to this equation is again the centrality of the fluctuation operator, which is what makes the anomalous dimension a single number rather than a matrix: the field $\tilde{Ξ}$ is central, so its wave-function renormalization cannot mix it with a non-central operator, and $\gamma_\rho$, the anomalous dimension of the invariant $\rho$ (twice that of the field), is a scalar. The equation itself is standard.
 
 **A caution on the scale.** The relation $\langle \rho\rangle = \mu^2\exp(-\tfrac12 - \lambda/(4B))$ is not a prediction of a number; it is the statement that the minimum is where the running coupling satisfies a definite condition. Quoting the minimum at one value of $\mu$ and the couplings at another is the standard way of producing a spurious scale dependence, and the companion article on the renormalization group records the same caution for the beta functions.
 
@@ -221,7 +221,7 @@ Four statements summarise what the framework contributes to the effective potent
 
 3. **The Goldstone contribution at one loop.** The treatment above uses the Landau-gauge cancellation of the massless angular mode against the gauge and ghost modes. Whether the framework's own gauge-fixing conventions, which the companion articles record as not fixed, change the bookkeeping is a finite check that has not been done here.
 
-4. **The trace anomaly's role.** The trace anomaly is a genuine one-loop effect of the same determinant, and it is not included in the Coleman–Weinberg potential above. Whether the framework's central scalar has a trace anomaly, and whether it modifies the radiative minimum, is the companion article's subject and is not settled here.
+4. **The conformal anomaly's role.** The conformal anomaly is a genuine one-loop effect of the same determinant, and it is not included in the Coleman–Weinberg potential above. Whether the framework's central scalar has a conformal anomaly, and whether it modifies the radiative minimum, is the companion article's subject and is not settled here.
 
 5. **Beyond the central scalar.** The mechanism above is the abelian one, with a central scalar that is a singlet of any non-abelian factor. The non-abelian and electroweak Coleman–Weinberg mechanism would require a scalar in a non-trivial representation, which the framework does not supply; the gap is the same one that the companion article on the Higgs mechanism leaves open.
 

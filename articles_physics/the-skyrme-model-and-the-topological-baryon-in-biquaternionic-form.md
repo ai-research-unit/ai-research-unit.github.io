@@ -29,7 +29,7 @@ so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) 
 - **Gap, left visible.** The framework supplies the group manifold, the flat current and the biquaternion norm; it does not supply the fermionic baryon, the Wess–Zumino–Witten term, or the anomaly that fixes the quantisation. Baryon number is standard topology, and the identification of the soliton with the physical nucleon is the large-$N_c$ statement, imported.
 
 - Companion article *The Nonlinear Sigma Model in Biquaternionic Form*, for the chiral field, its target and its flat current, and for the derivative expansion and the power counting.
-- Companion article *The Pion and the Chiral Lagrangian in Biquaternionic Form*, for the pion decay constant and the identification of the field with the pion.
+- Companion article *The Chiral Theory and the Lagrangian: The Pion and the Decay Constant*, for the pion decay constant and the identification of the field with the pion.
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the framework's fundamental scalar and gauge sector, and for the statement that the free scalar has no potential and therefore no fundamental soliton.
 - Companion article *The Proton in Biquaternionic Form*, for the nucleon as a spin-$\tfrac12$ state.
 - Companion article *The Neutron in Biquaternionic Form*, for the neutral member of the same isospin doublet.

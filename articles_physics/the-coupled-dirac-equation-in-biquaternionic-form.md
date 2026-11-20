@@ -32,13 +32,13 @@ with $(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natura
 
 *Second, the coupled equation is exactly gauge covariant, massive as well as massless.* The mass term is linear in the field and the local phase is one central scalar multiplying the field from the left, so the mass acquires the same factor as the derivative. The mass breaks the *relative* phase of the two parts and leaves the common one intact.
 
-*Third, the conserved current exists and it is not a product of the field with its conjugate.* The algebra supplies the current as a pairing with two fixed frame units; its vector part is the difference of the two parts' currents, not their sum. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, and it is not conserved, because it carries the sum. The derivation, the counterexample and the repaired object are *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form*, and this article states the result once and cites it.
+*Third, the conserved current exists and it is not a product of the field with its conjugate.* The algebra supplies the current as a pairing with two fixed frame units; its vector part is the difference of the two parts' currents, not their sum. The naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, and it is not conserved, because it carries the sum. The derivation, the counterexample and the repaired object are *The Lagrangian and the Coupled Dirac Equation*, and this article states the result once and cites it.
 
 What this article does **not** do is derive the polar form or the action. Those are the companion articles, and each stands on its own statements:
 
 - *The Coupled Dirac Equation in Biquaternionic Polar Variables* substitutes the polar word into the equation and reads the kinetic momentum, the kinetic velocity and the spin transport in the background.
-- *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form* states the action, derives the Noether currents, and settles the current question.
-- *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables* substitutes the word into the *coupled action* and reads the constraint structure.
+- *The Lagrangian and the Coupled Dirac Equation* states the action, derives the Noether currents, and settles the current question.
+- *The Lagrangian and the Coupled Dirac Equation in Polar Variables* substitutes the word into the *coupled action* and reads the constraint structure.
 
 **What is new here, and what is inherited.** The equation, the gauge law and the covariance proof are the gauge principle's, read as an operator statement on the Dirac field. Inherited from *The Dirac Equation in Biquaternionic Form* are the field, the pair and the value. New in this article are the solutions in a constant potential, the constants of motion for a static connection, the Larmor rate of the frame, and the theorem that separates the pair from the two-sided form. The article is therefore a structural hub and not a restatement.
 
@@ -504,8 +504,8 @@ The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, 
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator identity with the curvature.
 - [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html), for the potential biquaternion and the four-current.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the word in the background.
-- [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-form.html), for the action, the Noether currents and the current crux.
-- [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the coupled action in the chart.
+- [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the action, the Noether currents and the current crux.
+- [The Lagrangian and the Coupled Dirac Equation in Polar Variables](the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html), for the coupled action in the chart.
 - [The Gordon Decomposition of the Dirac Current in Biquaternionic Form](the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.html), for the pairing that the current is.
 - [The Classical Origin of $g=2$ in Biquaternionic Form](the-classical-origin-of-g-2-in-biquaternionic-form.html), for the derivation of the gyromagnetic ratio.
 - [Relativistic Mechanics from the Dirac Wave](relativistic-mechanics-from-the-dirac-wave.html), for the Lorentz force and the spin term at first order.

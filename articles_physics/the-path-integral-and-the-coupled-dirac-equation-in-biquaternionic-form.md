@@ -14,7 +14,7 @@ $$
 \tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,
 $$
 
-with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{B}_\Phi$, central per component in the abelian case, and $ϙ$ the charge. The action that produces this pair is *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form*, and the solutions in a constant potential are *The Coupled Dirac Equation in Biquaternionic Form*. Neither is re-derived here. This article takes the action as its input and asks what the exponential does with it.
+with $\tilde A_\Phi$ the potential biquaternion in the material sector $\mathbb{B}_\Phi$, central per component in the abelian case, and $ϙ$ the charge. The action that produces this pair is *The Lagrangian and the Coupled Dirac Equation*, and the solutions in a constant potential are *The Coupled Dirac Equation in Biquaternionic Form*. Neither is re-derived here. This article takes the action as its input and asks what the exponential does with it.
 
 **The finding, in one sentence.** The worldline integral sorts the connection into two objects and gives each a separate home: the one-form $A_\Phi$ enters the phase, and the curvature $F$ enters the spin factor. That split is the path-integral statement of the type table of *The Coupled Dirac Equation in Biquaternionic Polar Variables*, and it is why the polar reading finds the connection unable to turn the rotor while the spin still precesses in a background.
 
@@ -208,7 +208,7 @@ $$
 \ \text{per directed step},
 $$
 
-and leaves the corner weight alone. The corner is the mass insertion. **The mass term carries no derivative, so the substitution that dresses the steps cannot reach it**, and it is invariant under the local central phase without help — which is why the coupling is a repair of the kinetic term alone in *The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form*. **The corner is untouched and the step is dressed**, and that is the discrete image of the sorting of the connection into the phase.
+and leaves the corner weight alone. The corner is the mass insertion. **The mass term carries no derivative, so the substitution that dresses the steps cannot reach it**, and it is invariant under the local central phase without help — which is why the coupling is a repair of the kinetic term alone in *The Lagrangian and the Coupled Dirac Equation*. **The corner is untouched and the step is dressed**, and that is the discrete image of the sorting of the connection into the phase.
 
 **The lattice gauge invariance is exact and needs no limit.** Under $\tilde A_\Phi\mapsto\tilde A_\Phi-\tilde\nabla_\Phi\Gamma$, each step's phase changes by the difference of $ϙ\Gamma/\hbar$ at the step's two ends, and the product over the steps of a path telescopes to the two endpoint factors. The sum over paths is therefore invariant at every step size, with no continuum limit taken and no counterterm added. **The checkerboard is exactly gauge invariant, and the continuum integral is only formally so**, which is the correct order of the two statements and the reason the lattice formulation of gauge theory exists.
 
@@ -276,7 +276,7 @@ The curvature reaches the spin, and the semiclassical evaluation places it there
 
 - [The Path Integral and the Coupled Dirac Equation in Biquaternionic Polar Variables](the-path-integral-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), the companion, for this kernel read in the complete polar decomposition.
 - [The Path Integral and the Dirac Equation in Biquaternionic Form](the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html), for the free construction this article couples: the pair, the spin factor, the checkerboard and the measure.
-- [The Variational Principle and the Coupled Dirac Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-dirac-equation-in-biquaternionic-form.html), for the action used here and for the current that the action produces.
+- [The Lagrangian and the Coupled Dirac Equation](the-lagrangian-and-the-coupled-dirac-equation.html), for the action used here and for the current that the action produces.
 - [The Coupled Dirac Equation in Biquaternionic Form](the-coupled-dirac-equation-in-biquaternionic-form.html), for the equation, the covariance proof, and the constant-potential solutions.
 - [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html), for the type table that this article's sorting of $A$ and $F$ reproduces from the worldline side.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the covariant derivative, the gauge law and the sign convention inherited here.

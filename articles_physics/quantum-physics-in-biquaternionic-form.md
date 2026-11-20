@@ -457,7 +457,7 @@ which is the partial trace on the image, $\operatorname{Tr}_2(a\otimes b)=2a\,\m
 
 **8. Relativistic extension.** The Lorentz group sits in the invertible elements through its double cover $SL(2,\mathbb{C})$, and $\mathbb{B}_{\Phi}$ carries the four-vectors. The formalism of this article is the non-relativistic restriction, its state space a fixed Bloch ball that a boost moves a state off; the relativistic development is in *The Dirac Equation in Biquaternionic Form* and in *Canonical Quantization of the Biquaternion Dirac Field*.
 
-**9. Classical limit.** The limit of the qubit formalism is the classical spin vector, reached in a pure state under a precessional dynamics. The general limit needs decoherence and the correspondence principle, treated in *Decoherence as Idempotent Projection* and in *The Action Principle and the Non-Quantum Limit in Biquaternionic Form*.
+**9. Classical limit.** The limit of the qubit formalism is the classical spin vector, reached in a pure state under a precessional dynamics. The general limit needs decoherence and the correspondence principle, treated in *Decoherence as Idempotent Projection* and in *The Lagrangian and the Non-Quantum Limit: The Action Principle*.
 
 **10. Interpretation.** The natural reading is algebraic: the states and the observables are elements of $\mathbb{B}_{\Psi}$ and the quantum structure follows from the algebra. It is compatible with the Copenhagen, relational, and informational readings without committing to any of them.
 

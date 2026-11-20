@@ -257,7 +257,7 @@ the covariant Madelung pair, with the quantum potential $Q=-\hbar^{2}\Delta_\Phi
 
 - [The Schrödinger Equation in Biquaternionic Polar Variables](the-schrodinger-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the free flow that this article shifts.
 - [The Coupled Schrödinger Equation in Biquaternionic Form](the-coupled-schrodinger-equation-in-biquaternionic-form.html), the element-form companion, for the equation, the sign bookkeeping of the two slots and the current.
-- [The Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-schrodinger-equation-in-biquaternionic-polar-variables.html), where the gauge direction of the chart is what the action's symmetry acts on.
+- [The Lagrangian and the Coupled Schrödinger Equation in Polar Variables](the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html), where the gauge direction of the chart is what the action's symmetry acts on.
 - [The Schrödinger Equation in Biquaternionic Form](the-schrodinger-equation-in-biquaternionic-form.html), for the carrier, the two settings and the centrality of $i$.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the localisation of the centre that this article reads as a translation of $\theta_{\mathrm{pha}}$.
 - [The Covariant Derivative and Gauge Connection in Biquaternionic Form](the-covariant-derivative-and-gauge-connection-in-biquaternionic-form.html), for the operator whose two slots the chart reads.

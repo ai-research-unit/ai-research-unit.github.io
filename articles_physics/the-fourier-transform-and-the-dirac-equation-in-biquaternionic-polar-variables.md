@@ -143,8 +143,8 @@ The amplitude's own word has four factors, and they are constants of the mode, b
 - *The Dirac Equation in Biquaternionic Polar Variables*, for the word, its domain and the phase-gradient proposition.
 - *The Fourier Transform and the Dirac Equation in Biquaternionic Form*, for the symbol, the light cone as the idempotent variety and the two massless ideals.
 - *The Path Integral and the Dirac Equation in Biquaternionic Polar Variables*, for the momentum-space kernel's angle as a label of a region.
-- *The Variational Principle and the Dirac Equation in Biquaternionic Polar Variables*, for the canonical momenta of the word and the four vanishing constraints.
-- *The Variational Principle and the Dirac Equation in Biquaternionic Form*, for the action and the sentence about the $i$ inside the material time.
+- *The Lagrangian and the Dirac Equation in Polar Variables*, for the canonical momenta of the word and the four vanishing constraints.
+- *The Lagrangian and the Dirac Equation*, for the action and the sentence about the $i$ inside the material time.
 - *Derivatives, Fields and Transforms*, for the transform, its kernel and its symbol rule.
 - *Wave–Particle Duality and the Fourier Transform*, for the transform as a change of description and the interval as a symbol.
 - *Biquaternion Continuous Harmonic Analysis*, for the convolution theorem and Plancherel's condition.

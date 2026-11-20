@@ -167,7 +167,7 @@ The kernel in a constant background has the free scale and an angle that carries
 
 - *The Path Integral and the Coupled Schrödinger Equation in Biquaternionic Form*, for the integral read here and for the element form's four terms.
 - *The Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the covariant logarithmic derivative and the shifted potential.
-- *The Variational Principle and the Coupled Schrödinger Equation in Biquaternionic Polar Variables*, for the polar Lagrangian with the covariant bracket.
+- *The Lagrangian and the Coupled Schrödinger Equation in Polar Variables*, for the polar Lagrangian with the covariant bracket.
 - *The Path Integral and the Schrödinger Equation in Biquaternionic Polar Variables*, for the free chart, its measure and its constraints.
 - *The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, for the second-order chart and the fork this one does not have.
 - *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the line-integral phase in its geometric reading.

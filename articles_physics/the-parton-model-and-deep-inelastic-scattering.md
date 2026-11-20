@@ -23,7 +23,7 @@ Four things follow, and they organise the article.
 
 ## Kinematics: What Is Measured
 
-**The metric, stated once.** $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one these signs give. No vertex is computed in this article, so the incoming-momentum convention of [the QCD article](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html) does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.
+**The metric, stated once.** $g_{\mu\nu}=\mathrm{diag}(1,-1,-1,-1)$ throughout, so a spacelike exchange has $q^2=-Q^2<0$ and the transverse projector below is the one these signs give. No vertex is computed in this article, so the incoming-momentum convention of [the QCD article](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html) does not enter; where a trace is taken, it is the Dirac trace of a massless line and carries no sign ambiguity.
 
 **The process and the variables.** An electron of momentum $k_\Phi$ scatters off a proton of momentum $p$ and emerges with momentum $k'$. The exchanged photon (or $Z$) carries
 
@@ -240,7 +240,7 @@ $$
 P_{qq}(z)=C_F\left(\frac{1+z^2}{1-z}\right)_+ ,
 $$
 
-which is the Dokshitzer–Gribov–Lipatov–Altarelli–Parisi equation for the quark-to-quark splitting, with $C_F=\tfrac43$ from [the QCD article](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html). The plus prescription is written here in the form that subtracts the value at $z=1$, so that $\int_0^1[g(z)]_+dz=0$ for any $g$; many texts carry an extra $+\tfrac32\delta(1-z)$ together with a subtraction defined differently. The two writings are the same distribution and give the same moments — the delta term is what the different subtraction supplies back — so they are a convention and not a choice of physics. What the test below decides is whether a written form is internally consistent: $A_1=0$ must come out, quark number does not run, and a formula that gives $A_1\neq0$ has the delta term and the subtraction mismatched.
+which is the Dokshitzer–Gribov–Lipatov–Altarelli–Parisi equation for the quark-to-quark splitting, with $C_F=\tfrac43$ from [the QCD article](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html). The plus prescription is written here in the form that subtracts the value at $z=1$, so that $\int_0^1[g(z)]_+dz=0$ for any $g$; many texts carry an extra $+\tfrac32\delta(1-z)$ together with a subtraction defined differently. The two writings are the same distribution and give the same moments — the delta term is what the different subtraction supplies back — so they are a convention and not a choice of physics. What the test below decides is whether a written form is internally consistent: $A_1=0$ must come out, quark number does not run, and a formula that gives $A_1\neq0$ has the delta term and the subtraction mismatched.
 
 **Its content in one sentence.** The right side is the statement that a quark which carried fraction $x/z$ can be found at fraction $x$ after radiating a gluon that took away fraction $1-z$, and the plus prescription is the statement that the radiation is a *loss*: the virtual term is what keeps the quark number fixed while moving the momentum.
 
@@ -433,7 +433,7 @@ The framework supplies the null direction, and with it the light-cone decomposit
 ## Further Reading
 
 - [Asymptotic Freedom and the Running of the Strong Coupling](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_0$, $\alpha_s(Q^2)$ and the numbers the exponents here are built from.
-- [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html). $C_F=\tfrac43$, the vertices the splitting functions are computed from.
+- [Quantum Chromodynamics and the Lagrangian: The Triplet, the Octet and the Feynman Rules](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html). $C_F=\tfrac43$, the vertices the splitting functions are computed from.
 - [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). Why the partonic description is a description at a resolution, and what confinement does to it.
 - [The Proton in Biquaternionic Form](the-proton-in-biquaternionic-form.html). The spin-$\tfrac12$ carrier, and what the algebra does and does not say about compositeness.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The null direction and the exact unipotent null rotations that the light-cone construction uses.

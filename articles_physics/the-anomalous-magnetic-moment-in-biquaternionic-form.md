@@ -165,7 +165,7 @@ against the measured $1.15965218073\times10^{-3}$: agreement to $5\times10^{-11}
 - **The intrinsic field.** As the companion propagation and quantization articles record, an intrinsic $\mathbb{B}$-valued three-point function is not constructed; the vertex here is the one-particle object transcribed into the algebra's own objects.
 - **Whether the algebra constrains the coefficients.** No mechanism is offered by which $\mathbb{B}$ would fix $A_1$, $A_2$, or $\alpha$; the algebra's role is structural.
 - **The electroweak and hadronic contributions** to the muon anomaly are outside this subcategory and are not treated.
-- **The axial anomaly, the anomaly-cancellation conditions and the Fujikawa method** belong to the particle-physics subcategory; the trace anomaly and the functional determinant belong to the generalities subcategory. This article is the magnetic moment only, and it does not borrow their arguments.
+- **The axial anomaly, the anomaly-cancellation conditions and the Fujikawa method** belong to the particle-physics subcategory; the conformal anomaly and the functional determinant belong to the generalities subcategory. This article is the magnetic moment only, and it does not borrow their arguments.
 
 ## Verification
 

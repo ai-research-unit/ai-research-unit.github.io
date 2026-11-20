@@ -35,7 +35,7 @@ $$
 +\varrho^{2}\Bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\Bigr)-k_m^{2}\varrho^{2}\Bigr].
 $$
 
-**The factor two, stated once.** The bracket is the Madelung functional of the variational companion, *The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables*, §*The action, assembled*, which writes it without the $\hbar$ and without the $\tfrac12$. The companion's action is $\hbar$ times the half of it, so the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$. The stationarity is unaffected by the constant, and every equation below is the variational companion's.
+**The factor two, stated once.** The bracket is the Madelung functional of the variational companion, *The Lagrangian and the Klein–Gordon Equation in Polar Variables*, §*The action, assembled*, which writes it without the $\hbar$ and without the $\tfrac12$. The companion's action is $\hbar$ times the half of it, so the weight is $\exp(\tfrac{i}{2}S_{\mathrm{Madelung}})$. The stationarity is unaffected by the constant, and every equation below is the variational companion's.
 
 ## The Word on a Central Field
 
@@ -220,7 +220,7 @@ The placement table is the reading. The scale sits in the measure and in the exp
 
 - [The Path Integral and the Klein–Gordon Equation in Biquaternionic Form](the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html), the companion, for the integral read here: the configuration space, the Gaussian, the lattice regulator and the Wick rotation.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the collapse of the word on a central field, the amplitude equation and the transport equation.
-- [The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the parameter metric, the Madelung action and the current.
+- [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), for the parameter metric, the Madelung action and the current.
 - [The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form](the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html), for the two-point function that the Gaussian's inverse is.
 - [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html), for why the configuration space is the centre.
 - [Interpretation of the Wick Rotation in the Biquaternion Universe](interpretation-of-the-wick-rotation-in-the-biquaternion-universe.html), for the sector relabelling behind the Euclidean chart.

@@ -35,7 +35,7 @@ $$
 \zeta_{S^{(2)}}(s) = \sum_n \lambda_n^{-s},
 $$
 the heat-kernel and Seeley–DeWitt expansion that evaluates $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$, and the proper-time representation. None of these is the algebra's; the algebra supplies the operator on which they act.
-- **The physical faces.** Two structural consequences are recorded here because later articles use them: the **phase** of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*, and the **conformal variation** of the determinant is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*.
+- **The physical faces.** Two structural consequences are recorded here because later articles use them: the **phase** of a non-Hermitian determinant (the fermion determinant of a chiral or $\theta$-dependent operator) is the framework's route to the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*, and the **conformal variation** of the determinant is the conformal anomaly of *The Conformal Anomaly in Biquaternionic Form*.
 
 The article proceeds as follows. A section defines the determinant of a module operator and the fundamental determinant of an algebra element. A section proves the regular-representation identity and verifies it. A section connects the determinant to the Gaussian integral and the one-loop action. A section treats regularization, and a section the fermionic determinant and its phase. A section treats the conformal variation, and a section separates what is established from what is interpretation.
 
@@ -163,7 +163,7 @@ $$
 \qquad
 G_{\mathrm{prop}}(r'_t) = \mathrm{Tr}\,\exp(-r'_t S^{(2)}),
 $$
-and the small-$r'_t$ expansion $G_{\mathrm{prop}}(r'_t)\sim(4\pi r'_t)^{-d/2}\sum_n a_n {r'_{t}}^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that *The Trace Anomaly in Biquaternionic Form* uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
+and the small-$r'_t$ expansion $G_{\mathrm{prop}}(r'_t)\sim(4\pi r'_t)^{-d/2}\sum_n a_n {r'_{t}}^n$ gives $\zeta(0)$ and $\left.\frac{d\zeta}{ds}\right|_{s=0}$ in terms of the Seeley–DeWitt coefficients $a_n$. In the biquaternion framework $S^{(2)}$ acts on the module and the coefficients $a_n$ carry the module's dimension and the geometry of the sector on which the operator lives. This is the machinery that *The Conformal Anomaly in Biquaternionic Form* uses; here it is recorded as the regularization that gives the determinant its meaning. The heat-kernel method is standard (Seeley, DeWitt, Gilkey) and is cited rather than rebuilt.
 
 **A remark on scheme dependence.** Different regularizations (zeta function, proper time with a cutoff, dimensional regularization) differ by local counterterms, and the *ratios* of determinants of operators of the same type are scheme-independent. In the framework, a scheme-independent statement is one that compares two determinants taken on the same module; this is the same caveat that attends any statement about the biquaternion norm's normalization.
 
@@ -191,11 +191,11 @@ $$
 $$
 a spectral asymmetry counted by the heat-kernel regularized sum of signs of eigenvalues. This is standard (Atiyah–Patodi–Singer), and it is the analytic home of the framework's $\theta_{\mathrm{vac}}$ dependence: the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form* arises when the fermion determinant's phase depends on a background field through the eta invariant, so that $\exp(-S)$ acquires a topological phase. The biquaternion content is that the chiral structure whose asymmetry is counted is the two-minimal-left-ideal structure of the algebra, and that the mass term is the right-multiplication operator between them.
 
-**Index and anomaly.** The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the trace anomaly of *The Trace Anomaly in Biquaternionic Form*; the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.
+**Index and anomaly.** The magnitude's failure to be conformally invariant, and the phase's failure to be trivial, are two faces of the same configuration-space topology. The magnitude's conformal variation is the conformal anomaly of *The Conformal Anomaly in Biquaternionic Form*; the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum of *The Theta Vacuum in Biquaternionic Form*. Both are properties of a determinant of a module operator, and both are standard field theory written in the framework's notation.
 
 ## The Conformal Variation of the Determinant
 
-The determinant responds to a Weyl rescaling of the background, and its response is the trace anomaly; this is worth stating here because it is where the determinant and the energy-momentum trace meet.
+The determinant responds to a Weyl rescaling of the background, and its response is the conformal anomaly; this is worth stating here because it is where the determinant and the energy-momentum trace meet.
 
 Under a local rescaling of the metric, $g_{\mu\nu}\to \exp(2\sigma)g_{\mu\nu}$, the quadratic operator and hence the determinant change. For a classically conformally invariant theory the classical action is invariant, but the regularized determinant is not:
 $$
@@ -203,7 +203,7 @@ $$
 \qquad
 \big\langle \sum_\mu\varepsilon_\mu T_{\mu\mu}\big\rangle = -\frac{1}{\sqrt{g}}\sum_{\mu,\nu}g_{\mu\nu}\frac{\delta\,\Gamma_1}{\delta g_{\mu\nu}} ,
 $$
-the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the **trace anomaly**, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$, and in the biquaternion framework that coefficient carries the module's dimension and the sector structure. The computation and the interpretation of the anomaly are in *The Trace Anomaly in Biquaternionic Form*; this article records the determinant-side origin.
+the trace of the energy-momentum tensor being the conformal variation of the one-loop effective action. That this is non-vanishing for a conformally invariant classical theory is the **conformal anomaly**, and it is the statement that the regularization of the determinant breaks the classical symmetry. Its coefficient is the Seeley–DeWitt coefficient $a_{d/2}$, and in the biquaternion framework that coefficient carries the module's dimension and the sector structure. The computation and the interpretation of the anomaly are in *The Conformal Anomaly in Biquaternionic Form*; this article records the determinant-side origin.
 
 ## What Is Established and What Is Interpretation
 
@@ -213,7 +213,7 @@ the trace of the energy-momentum tensor being the conformal variation of the one
 - A central operator's determinant on the two-complex-dimensional module is the square of its single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$; a non-central operator's determinant does not factor.
 
 **Standard, and transcribed.**
-- Zeta-function regularization and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\det$; the heat-kernel and Seeley–DeWitt evaluation; the Grassmann determinant; the eta invariant and its relation to the phase; the conformal variation of $\Gamma_1$ and the trace anomaly.
+- Zeta-function regularization and $-\left.\frac{d\zeta}{ds}\right|_{s=0}=\log\det$; the heat-kernel and Seeley–DeWitt evaluation; the Grassmann determinant; the eta invariant and its relation to the phase; the conformal variation of $\Gamma_1$ and the conformal anomaly.
 
 **Interpretation.**
 - Reading the biquaternion norm as the determinant, so that zero divisors are exactly the singular elements, is the algebra's own statement. Reading the fermion determinant's phase as the analytic home of the $\theta_{\mathrm{vac}}$ vacuum is the standard Atiyah–Patodi–Singer picture applied to the framework's module.
@@ -234,7 +234,7 @@ $$
 $$
 Both were verified: for $\tilde Q=(0.7+0.2i,\,0.3-0.5i,\,-0.2+0.4i,\,0.1+0.6i)$, $\det\mathsf{M}_2(\tilde Q)=-0.180000-0.060000i$ and $\det L_{\tilde Q}=\det R_{\tilde Q}=0.0288000+0.0216000i=(\det\mathsf{M}_2(\tilde Q))^2$, with $\mathsf{M}_2(\tilde Q)$'s eigenvalues multiplying correctly.
 
-For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the trace anomaly (*The Trace Anomaly in Biquaternionic Form*) and the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum (*The Theta Vacuum in Biquaternionic Form*). None of the regularization is the algebra's; the operator on which it acts is.
+For a central fluctuation operator the module determinant is the square of the single-complex-dimension value, $\det(\kappa e_t)|_{\text{module}}=\kappa^2$, and the free one-loop effective action is $\Gamma_1=\tfrac12\mathrm{Tr}\log S^{(2)}$; for a non-central operator — the chirality-off-diagonal Dirac mass — the determinant does not factor and acquires a **phase**, the eta invariant of the operator family. Regularization is zeta-function or heat-kernel, with $\log\det=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ and the Seeley–DeWitt coefficient $a_{d/2}$ controlling the divergence; the conformal variation of the determinant is the conformal anomaly (*The Conformal Anomaly in Biquaternionic Form*) and the phase's topology is the $\theta_{\mathrm{vac}}$ vacuum (*The Theta Vacuum in Biquaternionic Form*). None of the regularization is the algebra's; the operator on which it acts is.
 
 ## Summary of Notation
 
@@ -253,7 +253,7 @@ For a central fluctuation operator the module determinant is the square of the s
 | $(\det W_{\mathrm{kinetic}})^{-1/2}$ | Gaussian normalization |
 | $\zeta_{S^{(2)}}(s)=\mathrm{Tr}(S^{(2)})^{-s}$, $\log\det S^{(2)}=-\left.\frac{d\zeta}{ds}\right|_{s=0}$ | Zeta-function regularization |
 | $G_{\mathrm{prop}}(r'_t)=\mathrm{Tr}\,\exp(-r'_t S^{(2)})$, $K\sim(4\pi r'_t)^{-d/2}\sum a_n {r'_{t}}^n$ | Heat kernel; Seeley–DeWitt coefficients |
-| $a_{d/2}$ | Coefficient controlling the divergence / trace anomaly |
+| $a_{d/2}$ | Coefficient controlling the divergence / conformal anomaly |
 | $\mathcal{F}=\begin{pmatrix}-k_m&\mathcal{F}_R\ \mathcal{F}_L&-k_m\end{pmatrix}$ | Fermionic fluctuation operator: the mass-shifted pair in the chirality basis, with the two lines' derivative parts off the diagonal |
 | $\det\mathcal{F}=|\det\mathcal{F}|\exp(i\theta_{\mathrm{pha},\mathcal{F}})$ | Complex (chiral) fermion determinant |
 | $\eta(\mathcal{F})$ | Eta invariant; spectral asymmetry of the phase |
@@ -270,4 +270,4 @@ For a central fluctuation operator the module determinant is the square of the s
 - A. S. Schwarz, "The partition function of degenerate quadratic functional and Ray–Singer invariants," *Letters in Mathematical Physics* **2** (1978) 247–252, for the phase of the determinant and the Ray–Singer torsion.
 - N. D. Birrell and P. C. W. Davies, *Quantum Fields in Curved Space* (Cambridge, 1982), for the conformal variation of the one-loop determinant.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the determinant and the biquaternion norm of the algebra and the module structure.
-- Companion articles: [The Functional Integral in Biquaternionic Form](the-functional-integral-in-biquaternionic-form.html), for the Gaussian determinant and the module; [The Generating Functional and the Effective Action in Biquaternionic Form](the-generating-functional-and-the-effective-action-in-biquaternionic-form.html), for the one-loop action $\Gamma_1$ and the proper-time form; [The Trace Anomaly in Biquaternionic Form](the-trace-anomaly-in-biquaternionic-form.html), for the conformal variation computed; [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html), for the phase and the topological term; [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the biquaternion norm and the zero-divisor cone; [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), for the regularization dependence and the scheme.
+- Companion articles: [The Functional Integral in Biquaternionic Form](the-functional-integral-in-biquaternionic-form.html), for the Gaussian determinant and the module; [The Generating Functional and the Effective Action in Biquaternionic Form](the-generating-functional-and-the-effective-action-in-biquaternionic-form.html), for the one-loop action $\Gamma_1$ and the proper-time form; [The Conformal Anomaly in Biquaternionic Form](the-conformal-anomaly-in-biquaternionic-form.html), for the conformal variation computed; [The Theta Vacuum in Biquaternionic Form](the-theta-vacuum-in-biquaternionic-form.html), for the phase and the topological term; [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the biquaternion norm and the zero-divisor cone; [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), for the regularization dependence and the scheme.

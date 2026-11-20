@@ -227,7 +227,7 @@ while massless the gradient-squared term vanishes with $2+6\zeta = 0$ and the tr
 
 Two consequences of the improvement are worth separating from its value. The improvement term is a total derivative, so it does not affect the equation of motion or the total charges, and it is what makes the trace local without changing the physics. And the trace scales with the Lagrangian exactly as $T_{\mu\nu}$ does, so the coefficient $2$ above and the coefficient $1$ of the standard normalisation are the same statement written twice; what no normalisation can change is the proportionality to the mass term and its vanishing when the mass is zero. The companion *Exercise: The Electromagnetic Energy–Momentum Tensor* records the corresponding improvement for the vector field, and notes the same $i r'_t$ caution the action article flags: the time index carries the metric's sign, and the trace must be read through the same convention as $\Box_\Phi$.
 
-A quantum caveat belongs here. The trace of the *renormalised* stress tensor of a quantised field need not vanish even in the massless limit, because the regularisation introduces a scale; this is the trace anomaly, and it is an effect of quantisation rather than of the classical action. The quantum theory's statement is therefore that the classical trace vanishes with the mass and the anomalous part is a separate, quantum, contribution. The companion articles on canonical quantisation supply the quantised tensors; nothing in this article's classical trace computation depends on the anomaly.
+A quantum caveat belongs here. The trace of the *renormalised* stress tensor of a quantised field need not vanish even in the massless limit, because the regularisation introduces a scale; this is the conformal anomaly, and it is an effect of quantisation rather than of the classical action. The quantum theory's statement is therefore that the classical trace vanishes with the mass and the anomalous part is a separate, quantum, contribution. The companion articles on canonical quantisation supply the quantised tensors; nothing in this article's classical trace computation depends on the anomaly.
 
 ## The Maxwell Case
 
@@ -328,9 +328,9 @@ The improved stress tensor has trace $\sum_\mu T_{\mu\mu} = 2k_m^{2}\xi^2$ on sh
 ## Further Reading
 
 - Philippe Di Francesco, Pierre Mathieu, and David Sénéchal, *Conformal Field Theory* (Springer, 1997), for the conformal group, the conformal weight, the two-point function, and the improvement of the stress tensor.
-- Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the conformal algebra, the transformation law of the scalar field, and the trace anomaly.
+- Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the conformal algebra, the transformation law of the scalar field, and the conformal anomaly.
 - James D. Bjorken and Sidney D. Drell, *Relativistic Quantum Fields* (McGraw–Hill, 1965), for the massless scalar and Maxwell field propagators and their scale invariance.
 - Curtis G. Callan, Sidney Coleman, and Roman Jackiw, "A New Improved Energy–Momentum Tensor", *Annals of Physics* **59** (1970), for the improvement term and the trace of the scalar stress tensor.
-- M. J. Duff, "Twenty Years of the Weyl Anomaly", *Classical and Quantum Gravity* **11** (1994), for the trace anomaly and the renormalisation-induced breaking of conformal invariance.
+- M. J. Duff, "Twenty Years of the Weyl Anomaly", *Classical and Quantum Gravity* **11** (1994), for the conformal anomaly and the renormalisation-induced breaking of conformal invariance.
 - Hugh Osborn, "Implications of Conformal Invariance in Field Theories for General Dimensions", *Annals of Physics* **272** (1999), for the conformal weights of fields and the trace of the stress tensor.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 2 (Cambridge, 1986), for the conformal compactification, the inversion, and the conformal structure of the light cone.

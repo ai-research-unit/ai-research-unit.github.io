@@ -8,7 +8,7 @@
 
 **Where the applications are.**
 
-- The strong sector, in two places. The pion is the Goldstone of the spontaneously broken chiral symmetry and its low-energy dynamics is this model: [The Pion and the Chiral Lagrangian in Biquaternionic Form](the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html). The baryon as a soliton of that field is [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html).
+- The strong sector, in two places. The pion is the Goldstone of the spontaneously broken chiral symmetry and its low-energy dynamics is this model: [The Chiral Theory and the Lagrangian: The Pion and the Decay Constant](the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html). The baryon as a soliton of that field is [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html).
 - The electroweak sector, nowhere. The electroweak scalar is a doublet with a potential, not a group-valued field, and the sigma model is not its low-energy limit in this corpus.
 
 **Why the general form is separable.** The model is a statement about a target manifold and a symmetry that is realised nonlinearly. The force enters only when the target and the symmetry are named: $SU(2)_L\times SU(2)_R\to SU(2)_V$ for the pion, and nothing else here.
@@ -75,7 +75,7 @@ with $\Lambda$ the scale of the physics that has been integrated out, of order $
 - **Imported.** The coset construction, the power counting and the effective-field-theory reading. These are standard, transcribed.
 - **Not supplied.** A force. The target, the symmetry and the decay constant are the sector's to name.
 
-**Where the applications are.** [The Pion and the Chiral Lagrangian in Biquaternionic Form](the-pion-and-the-chiral-lagrangian-in-biquaternionic-form.html) names the target and the symmetry for the pion. [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) adds the fourth-order term and reads baryon number as a winding number.
+**Where the applications are.** [The Chiral Theory and the Lagrangian: The Pion and the Decay Constant](the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html) names the target and the symmetry for the pion. [The Skyrme Model and the Topological Baryon in Biquaternionic Form](the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html) adds the fourth-order term and reads baryon number as a winding number.
 
 ## Summary of Notation
 

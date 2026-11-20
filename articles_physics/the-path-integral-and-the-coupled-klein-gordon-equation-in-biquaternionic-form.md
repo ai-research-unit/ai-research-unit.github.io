@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**This article puts the coupled scalar action into the functional integral.** *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* defines the integral over central-valued fields and evaluates the free Gaussian. *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form* supplies the action with the covariant derivative in every slot. Joining the two costs one substitution and produces one new structure, and the structure is the subject of the article.
+**This article puts the coupled scalar action into the functional integral.** *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form* defines the integral over central-valued fields and evaluates the free Gaussian. *The Lagrangian and the Coupled Klein–Gordon Equation* supplies the action with the covariant derivative in every slot. Joining the two costs one substitution and produces one new structure, and the structure is the subject of the article.
 
 **The substitution.** Minimal coupling replaces $\tilde\nabla_\Phi$ by $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$ in the kinetic term. Nothing else changes: the field stays in the centre, the measure stays flat, the mass term stays $k_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, and the phase stays central and $*$-unitary.
 
@@ -215,7 +215,7 @@ The current is the first variation of the integral with respect to the connectio
 ## Further Reading
 
 - [The Path Integral and the Klein–Gordon Equation in Biquaternionic Form](the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html), for the free functional integral, its Gaussian and its lattice regulator, all of which this article reuses.
-- [The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form](the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the coupled action, its variation in the field and in the connection, and the recorded discrepancy in the temporal slot.
+- [The Lagrangian and the Coupled Klein–Gordon Equation](the-lagrangian-and-the-coupled-klein-gordon-equation.html), for the coupled action, its variation in the field and in the connection, and the recorded discrepancy in the temporal slot.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the covariant square's split, the prohibition on central fields in a nonzero field strength, and the two readings.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the amplitude and transport equations that the integral's saddles reproduce.
 - [The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the same integral read in the chart, where the gauge transformation is a translation of one coordinate.

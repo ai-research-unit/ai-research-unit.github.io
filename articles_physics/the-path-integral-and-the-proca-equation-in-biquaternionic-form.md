@@ -30,7 +30,7 @@ $$
 S[\tilde A_\Phi]=\int d^{4}r\;\Bigl[\tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)-\tfrac12\,k_m^{2}\langle\tilde A_\Phi\rangle_\natural\Bigr].
 $$
 
-The first term is the Maxwell density $\tfrac12(\epsilon\vec E^{2}-\vec B^{2}/\mu)$, the second is the mass term, and both are real by construction. The article does not re-derive the action; it cites *The Variational Principle and the Proca Equation in Biquaternionic Form* for the variation, the two normalisation conditions and the sign of the mass term.
+The first term is the Maxwell density $\tfrac12(\epsilon\vec E^{2}-\vec B^{2}/\mu)$, the second is the mass term, and both are real by construction. The article does not re-derive the action; it cites *The Lagrangian and the Proca Equation* for the variation, the two normalisation conditions and the sign of the mass term.
 
 **The source is a material-sector element and its coupling needs no conjugation.** For $\tilde J_\Phi\in\mathbb{B}_\Phi$ the product $\tilde J_\Phi\tilde A_\Phi$ is Hermitian, so $\mathrm{Sc}(\tilde J_\Phi\tilde A_\Phi)$ is real and the source term is
 
@@ -251,7 +251,7 @@ The saddle is the classical field, whose transverse part propagates and whose lo
 ## Further Reading
 
 - *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the equation, the implied Lorenz condition and the three polarizations.
-- *The Variational Principle and the Proca Equation in Biquaternionic Form*, for the action, the two normalisation conditions and the Noether current.
+- *The Lagrangian and the Proca Equation*, for the action, the two normalisation conditions and the Noether current.
 - *The Proca Equation in Biquaternionic Polar Variables*, for the two-branch word and the logarithmic derivative.
 - *The Path Integral and the Klein–Gordon Equation in Biquaternionic Form*, for the scalar field integral whose determinant this one cubes.
 - *The Path Integral and the Dirac Equation in Biquaternionic Form*, for the fermionic integral, where the statistics is the issue and here it is not.

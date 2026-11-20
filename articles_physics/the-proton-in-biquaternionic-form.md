@@ -360,7 +360,7 @@ What the framework does not supply is everything that makes the proton a proton.
 | $\tilde J_{\Phi}=i[\tilde{Ξ}^*(\tilde\nabla_\Phi\tilde{Ξ})-(\tilde\nabla_\Phi\tilde{Ξ}^*)\tilde{Ξ}]$ | The sesquilinear current of the field, an element of $\mathbb{B}_{\Phi}$ (*Product and Form Conventions*) |
 | $T_a=\tfrac12 e_a$ | Generators of $\mathfrak{su}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}\subset\mathbb{B}_{\Phi}$; $T_a^2=-\tfrac14e_t$, values $\pm\tfrac i2$ |
 | $iT_a=\tfrac12 i e_a\in\mathbb{B}_{\Psi}$ | $(iT_a)^2=+\tfrac14e_t$, values $\pm\tfrac12$; neither is the electric charge |
-| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Inherited informational trace reading |
+| $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2^{*})$ | Inherited state-pairing reading |
 | $G_N=\sigma\exp(i\theta_{\mathrm{cen}})+\bar\sigma\exp(i\theta_{\mathrm{axr}})$, $\sigma=\tilde\Pi_+(\vec\nu)$ | Nishijima's two-parameter group of the doubled Lanczos system |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 

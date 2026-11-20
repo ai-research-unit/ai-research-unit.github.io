@@ -83,7 +83,7 @@ which is the squared reading. **The chart is the chart of the squared equation a
 
 ## What the Variational-Polar Parent Contributes
 
-**One paragraph, and it is one paragraph because the contribution is one object.** *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables* supplies the mechanical momentum as a genuine Legendre conjugate, the charge sign as the sign of the temporal conjugation, and the vorticity as the curl of the conjugate. **Each of the three is used above and none of them is a separate article**, because each is a statement about the chart's variables and the chart's variables are one substitution.
+**One paragraph, and it is one paragraph because the contribution is one object.** *The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables* supplies the mechanical momentum as a genuine Legendre conjugate, the charge sign as the sign of the temporal conjugation, and the vorticity as the curl of the conjugate. **Each of the three is used above and none of them is a separate article**, because each is a statement about the chart's variables and the chart's variables are one substitution.
 
 **The Legendre statement does not become a Fourier statement, and the denial covers it.** The parent's momenta are derivatives of the Lagrangian density with respect to the rates of the polar parameters at each event; they are not wave numbers, and the transform of this article acts on the spacetime argument and not on the parameters. **The two transforms are both invertible and they are not the same transform**, and the article states this once in §*Conventions* and does not return to it.
 
@@ -137,8 +137,8 @@ What the chart is silent on, it is silent on for one reason: its functionals are
 
 - *The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, for the word, the covariant bracket, the vorticity and the table of what the chart shows and hides.
 - *The Fourier Transform and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the parity lemma, the two symbols and the corrected shells.
-- *The Fourier Transform, the Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Form*, for the action's Euler–Lagrange operator and the ordering term.
-- *The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables*, for the mechanical momentum, the charge sign and the vorticity as a Legendre conjugate's curl.
+- *The Lagrangian and the Coupled Klein–Gordon Equation in Momentum Space*, for the action's Euler–Lagrange operator and the ordering term.
+- *The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables*, for the mechanical momentum, the charge sign and the vorticity as a Legendre conjugate's curl.
 - *The Klein–Gordon Equation in Biquaternionic Polar Variables*, for the word, the amplitude equation and the quantum potential the coupling leaves untouched.
 - *The Gauge Principle in Biquaternionic Form*, for the localization of the central phase.
 - *Landau Levels in Biquaternionic Form*, for the discrete spectrum a constant field strength produces.

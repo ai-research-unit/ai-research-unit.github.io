@@ -258,7 +258,7 @@ That table is the boundary in one line. The framework's value is not in the seco
 | The theta-vacuum construction | 17 | Arena | Arena; no value, no mechanism for smallness |
 | The CKM as a flavour-factor operator | 10–13 | Arena | Arena; the group and the phase's necessity, not the point |
 | The PMNS as the same operator | 10–13 (leptons) | Arena | Arena; and the count $4$ or $6$ as a discriminator |
-| The condensate and the trace anomaly | 18 | None | No scale mechanism; the QCD case is imported |
+| The condensate and the conformal anomaly | 18 | None | No scale mechanism; the QCD case is imported |
 | The Skyrme soliton | 1–9 | None | Ratios within a truncation, not parameters |
 | The ceiling | — | Constraint | Forbids a $\mathbb{B}$ colour triplet, which forbids nothing among the nineteen |
 

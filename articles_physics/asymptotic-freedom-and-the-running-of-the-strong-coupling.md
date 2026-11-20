@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. The one-loop coefficient is the formula of [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), and it is not re-derived here; what this article adds is the arithmetic of the coefficient in terms of the colour factors of [the QCD article](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html), the solution of the running equation, the numbers at the scales where the coupling is measured, and the one parameter that replaces the coupling.
+**The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. The one-loop coefficient is the formula of [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), and it is not re-derived here; what this article adds is the arithmetic of the coefficient in terms of the colour factors of [the QCD article](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html), the solution of the running equation, the numbers at the scales where the coupling is measured, and the one parameter that replaces the coupling.
 
 **The claim.** The strong coupling is not a constant, and its dependence on scale has a sign that makes the theory calculable. Three statements carry the article.
 
@@ -234,7 +234,7 @@ $$
 m_p=\frac{1}{2m_p}\langle p|\sum_\mu\varepsilon_\mu T_{\mu\mu}|p\rangle .
 $$
 
-**The number, and what it denies.** Lattice QCD puts the quark-mass contribution to the nucleon mass at a few per cent of $938$ MeV — of order $1\%$ for the $u$ and $d$ current masses alone, nearer $5\%$ once the pion–nucleon sigma term is used — with the rest in the energy of the colour field and in the trace anomaly, which are two distinct lines of the same decomposition. The proton is not made of quark masses; it is made of the energy of the colour field that binds them, and the coefficient that governs the anomalous part of that energy is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_p/\Lambda_3=938/142=6.6$ is a number the lattice computes rather than a coincidence.
+**The number, and what it denies.** Lattice QCD puts the quark-mass contribution to the nucleon mass at a few per cent of $938$ MeV — of order $1\%$ for the $u$ and $d$ current masses alone, nearer $5\%$ once the pion–nucleon sigma term is used — with the rest in the energy of the colour field and in the conformal anomaly, which are two distinct lines of the same decomposition. The proton is not made of quark masses; it is made of the energy of the colour field that binds them, and the coefficient that governs the anomalous part of that energy is $b_0$. This is why the proton mass is of order $\Lambda$ and not of order the quark masses, and why the ratio $m_p/\Lambda_3=938/142=6.6$ is a number the lattice computes rather than a coincidence.
 
 **Why this belongs in this article and not the next two.** The running and the mass gap are two readings of one coefficient. [The parton article](the-parton-model-and-deep-inelastic-scattering.html) takes the partonic description that asymptotic freedom licenses and computes structure functions in it, and [the jets article](jets-the-qcd-cross-section-and-the-infrared-structure.html) computes the cross sections. This one closes by noting that the same coefficient which makes the partons free at short distance is the one that makes the proton heavy at long distance.
 
@@ -276,7 +276,7 @@ The expansion dies below about $300$ MeV, where $\alpha_s=1$. At $2$ GeV the one
 
 The theory has an edge at $N_f=16.5$ and a conformal window below it; the Standard Model sits far inside, with $b_0=7$ at six flavours, and that margin is why perturbation theory works over four orders of magnitude. QED sits on the other side of the same sign with a Landau pole, and the difference is the adjoint Casimir.
 
-Two readings of the one coefficient close the article: the same $b_0$ that makes the partons free at short distance gives the proton its mass at long distance, through the trace anomaly, with $m_p=938$ MeV of which a few per cent comes from the quark masses and the rest from colour-field energy.
+Two readings of the one coefficient close the article: the same $b_0$ that makes the partons free at short distance gives the proton its mass at long distance, through the conformal anomaly, with $m_p=938$ MeV of which a few per cent comes from the quark masses and the rest from colour-field energy.
 
 The framework supplies the sign rule and the colour factors and nothing else. The beta function is imported, the regulator is imported, and the value of $\Lambda$ is supplied by nothing at all.
 
@@ -297,17 +297,17 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 | $\alpha_s^*$ | Fixed-point coupling of the conformal window |
 | $g_s$ | The coupling itself, $\alpha_s=g_s^2/4\pi$; the beta function is written for $g_s$ |
 | $N_c=3$ | Number of colours; enters $b_0$ only through $C_A=N_c$ and the normalisation $T_R=\tfrac12$ |
-| $m_p$ | Proton mass, $938$ MeV, the matrix element of the trace anomaly |
+| $m_p$ | Proton mass, $938$ MeV, the matrix element of the conformal anomaly |
 | $\sigma$ | String tension; $m_p/\sqrt\sigma$ is a pure number the theory predicts |
 | $\sum_\mu\varepsilon_\mu T_{\mu\mu}$ | Trace of the energy–momentum tensor, proportional to $G^a_{\mu\nu}G^a_{\mu\nu}$ with coefficient $b_0$ |
-| $G^a_{\mu\nu}$ | Gluon field strength, $a=1,\dots,8$; the operator of the trace anomaly |
+| $G^a_{\mu\nu}$ | Gluon field strength, $a=1,\dots,8$; the operator of the conformal anomaly |
 | $\alpha$ | Fine-structure constant, $\alpha(0)=1/137.036$; used only in the QED contrast |
 | $\delta\alpha_s$, $\delta\Lambda$ | The uncertainties, and their propagation from $M_Z$ to $\Lambda$ |
 
 ## Further Reading
 
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html). The beta functions, the regulator question and the fixed points that this article uses without repeating.
-- [The QCD Lagrangian: Colour, the Triplet, the Octet and the Feynman Rules](the-qcd-lagrangian-colour-the-triplet-the-octet-and-the-feynman-rules.html). The colour factors $C_A=3$ and $T_R=1/2$, computed from explicit Gell-Mann matrices, and the vertices the loops are built from.
+- [Quantum Chromodynamics and the Lagrangian: The Triplet, the Octet and the Feynman Rules](quantum-chromodynamics-and-the-lagrangian-the-triplet-the-octet-and-the-feynman-rules.html). The colour factors $C_A=3$ and $T_R=1/2$, computed from explicit Gell-Mann matrices, and the vertices the loops are built from.
 - [The Gluon: An Octet Outside the Biquaternion Algebra](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The adjoint representation and the embedded $\mathrm{SU}(3)$ elements.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The dimension bound behind the ledger's first row.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). Where $\alpha_s$ sits among the parameters, and at which scale.

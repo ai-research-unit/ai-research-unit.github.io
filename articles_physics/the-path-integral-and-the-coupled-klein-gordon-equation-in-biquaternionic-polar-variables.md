@@ -180,10 +180,10 @@ The chart carries the action's reading of the covariant square and cannot carry 
 
 - [The Path Integral and the Coupled Klein–Gordon Equation in Biquaternionic Form](the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-form.html), the companion, for the integral read here, its three-term split and its identification of the operator the Gaussian inverts.
 - [The Path Integral and the Klein–Gordon Equation in Biquaternionic Polar Variables](the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the free reading of the same chart, the Jacobian and the two saddles.
-- [The Variational Principle and the Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the action in the chart, the linear and quadratic interaction terms and the current.
+- [The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html), for the action in the chart, the linear and quadratic interaction terms and the current.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Polar Variables](the-coupled-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the type table, the mechanical momentum and the vorticity.
 - [The Coupled Klein–Gordon Equation in Biquaternionic Form](the-coupled-klein-gordon-equation-in-biquaternionic-form.html), for the covariant square's split, the prohibition, and the two readings.
-- [The Variational Principle and the Klein–Gordon Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the parameter metric and the free chart.
+- [The Lagrangian and the Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html), for the parameter metric and the free chart.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html), for the covariant derivative and the sign convention.
 - K. G. Wilson, "Confinement of Quarks", *Physical Review D* **10** (1974), 2445, for the link variable whose exact invariance the chart's measure has without a lattice.
 - J. Glimm and A. Jaffe, *Quantum Physics: A Functional Integral Point of View* (Springer, 1987), for the change of variables in a functional integral and the status of the measure.

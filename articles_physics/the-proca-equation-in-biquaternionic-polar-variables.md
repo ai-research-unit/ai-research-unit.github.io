@@ -360,7 +360,7 @@ with the second in the traceless part; for a fixed axis they reduce to a massive
 - [The Dirac Equation in Biquaternionic Polar Variables](the-dirac-equation-in-biquaternionic-polar-variables.html), for the word, the four brackets and the logarithmic derivative.
 - [The Klein–Gordon Equation in Biquaternionic Polar Variables](the-klein-gordon-equation-in-biquaternionic-polar-variables.html), for the scalar case and the Madelung pair that this sector does not have.
 - [Canonical Quantization of the Biquaternion Proca Field](canonical-quantization-of-the-biquaternion-proca-field.html), for the constraint structure and the polarization projector.
-- [The Variational Principle and the Proca Equation in Biquaternionic Polar Variables](the-variational-principle-and-the-proca-equation-in-biquaternionic-polar-variables.html), for the action in these variables.
+- [The Lagrangian and the Proca Equation in Polar Variables](the-lagrangian-and-the-proca-equation-in-polar-variables.html), for the action in these variables.
 - [The Third Polarization and the Self-Dual Split of the Massive Field Strength](the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html), for the third state and its place in the split.
 - Alexandre Proca, "Sur la théorie ondulatoire des électrons positifs et négatifs", *Journal de Physique et le Radium* **7** (1936) 347–353, for the original massive vector equation.
 - Erwin Madelung, "Quantentheorie in hydrodynamischer Form", *Zeitschrift für Physik* **40** (1927) 322–326, for the scalar pair that has no analogue here.
