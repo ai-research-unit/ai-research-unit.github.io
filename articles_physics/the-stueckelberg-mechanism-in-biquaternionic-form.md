@@ -39,13 +39,7 @@ so that the transformation changes the action by a term proportional to $\mu^2$.
 
 ### Where the Extra Degree of Freedom Comes From
 
-A massless vector has two polarizations and a massive vector has three. The third polarization of the Proca field is present as a dynamical mode of the four-component field: the primary constraint $\pi^0\approx0$ and the deformed Gauss law $\partial/\partial R_i\,\pi_i+\mu^2A_0\approx0$ are second class, with bracket $\{\pi^0,\partial/\partial R_i\,\pi_i+\mu^2A_0\}=-\mu^2\delta^{(3)}$, and they remove the two phase-space directions that a massless vector would remove differently, leaving three. Equivalently, the massive wave equation $(\Box_\Phi-\mu^2)\tilde{A}_{\Phi}=0$ in the Lorenz gauge propagates all three polarizations, with the completeness relation
-$$
-\sum_{r=1}^{3}\varepsilon_{r\mu}\varepsilon_{r\nu}=\delta_{\mu\nu}+\frac{p_\mu p_\nu}{\mu^2},
-\qquad
-P^2=P,\quad\mathrm{tr}\,P=3,\quad \sum_\nu P_{\mu\nu}p_\nu=0 ,
-$$
-the longitudinal projector being the term that the mass creates. In the Stueckelberg description the same third polarization is carried, before gauge fixing, by a scalar field; the two descriptions are the same physics in different variables, and this is the sense in which the Stueckelberg scalar is "the longitudinal mode made manifest".
+**The counting is the general one: a massless vector has two polarizations, a massive vector three, and the constraint analysis that removes the difference belongs to [The Stueckelberg Mechanism for a Massive Abelian Vector in Biquaternionic Form](the-stueckelberg-mechanism-for-a-massive-abelian-vector-in-biquaternionic-form.html).** What is added here is the framework's own form of the statement: the massive wave equation $(\Box_\Phi-\mu^2)\tilde{A}_{\Phi}=0$ in the Lorenz gauge propagates all three polarizations, the longitudinal projector $p_\mu p_\nu/\mu^2$ being the term that the mass creates. In the Stueckelberg description the same third polarization is carried, before gauge fixing, by a scalar field; the two descriptions are the same physics in different variables, and this is the sense in which the Stueckelberg scalar is "the longitudinal mode made manifest".
 
 ## The Shift Field and the Invariant Mass Term
 
@@ -142,11 +136,11 @@ which reduces to the Proca propagator of the companion article as $\zeta\to\inft
 
 ### The Degree-of-Freedom Count
 
-The count is the same in every gauge and is worth stating in the two ways.
+The count is the same in every gauge, and it is the count of the machinery with the framework's content inserted:
 $$
 \text{fields }(4+1)=5,\quad \text{gauge symmetry }-1,\quad \text{mass-term constraint }-1,\quad \text{physical }=3 .
 $$
-The gauge symmetry removes the scalar by fixing it to a function of the vector — in the unitary gauge to zero — and the mass term's constraint structure removes the timelike component of the vector, leaving the three polarizations that the completeness relation above enumerates. In the $R_\zeta$ gauge the same three modes are distributed as two transverse vector modes, one longitudinal mixture of vector and scalar, and an $\zeta$-dependent scalar that is not physical; the count is invariant, the distribution is not.
+The gauge symmetry removes the scalar by fixing it to a function of the vector — in the unitary gauge to zero — and the mass term's constraint structure removes the timelike component of the vector. In the $R_\zeta$ gauge the same three modes are distributed as two transverse vector modes, one longitudinal mixture of vector and scalar, and an $\zeta$-dependent scalar that is not physical; the count is invariant, the distribution is not.
 
 ## The Relation to the Abelian Higgs
 

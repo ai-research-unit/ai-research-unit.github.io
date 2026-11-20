@@ -101,27 +101,7 @@ which is a pure-gauge-like expression in the $x$-dependent kernel; the self-dual
 
 ## The Dimension of the Moduli Space
 
-The dimension of $\mathcal M_k$ follows from the counting of the data, the constraints and the gauge redundancy, and the counting is worth doing explicitly because it is the ADHM construction's sharpest quantitative statement.
-
-**Data.** $B_1$ and $B_2$ are each $k\times k$ complex, contributing $4k^2$ real dimensions in total (each has $2k^2$). $I$ is $k\times N$ complex and $J$ is $N\times k$ complex, so together they have $2kN$ complex entries, or $4kN$ real. The total real dimension of the data space is therefore
-
-$$
-\dim_{\mathbb R}\bigl(\text{data}\bigr)=4k^2+4kN .
-$$
-
-**Constraints.** The complex equation $\mu_{\mathbb C}=0$ has $k^2$ complex components, or $2k^2$ real; the real equation $\mu_{\mathbb R}=0$ is an anti-Hermitian $\mathrm{U}(k)$-valued condition with $k^2$ real components. The constraint surface therefore has real dimension
-
-$$
-\dim_{\mathbb R}\mu^{-1}(0)=4k^2+4kN-3k^2 = k^2+4kN .
-$$
-
-**Quotient.** The group $\mathrm{U}(k)$ has real dimension $k^2$, and it acts freely on a dense open set of $\mu^{-1}(0)$ (the set of **irreducible** data, those for which no proper subspace is preserved by all the data). Hence
-
-$$
-\dim_{\mathbb R}\mathcal M_k = k^2+4kN - k^2 = 4kN .
-$$
-
-This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_k=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's gauge factor $N=2$,
+The dimension follows from counting the data, the constraints and the quotient — $4k^2+4kN$ real parameters, less $3k^2$ from the two equations, less $k^2$ from $\mathrm{U}(k)$; this is the general count of [The ADHM Construction and Instanton Moduli in Biquaternionic Form](the-adhm-construction-and-instanton-moduli-in-biquaternionic-form.html), and it leaves $4kN$. This agrees with the standard formula $\dim_{\mathbb R}\mathcal M_k=4k\,h^\vee$ for a simple group of dual Coxeter number $h^\vee$, since $h^\vee=N$ for $SU(N)$. For the framework's gauge factor $N=2$,
 
 $$
 \boxed{\;\dim_{\mathbb R}\mathcal M_k = 8k ,

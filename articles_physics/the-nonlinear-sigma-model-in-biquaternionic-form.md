@@ -29,28 +29,7 @@ which was verified numerically to the finite-difference error. The two-derivativ
 
 The nonlinear sigma model is the low-energy theory of a spontaneously broken continuous symmetry, and its construction begins with the coset.
 
-Let a Lie group $G$ be spontaneously broken to a subgroup $H$, so that the vacuum manifold is the coset space $G/H$ and Goldstone's theorem gives one massless scalar for each broken generator, $\dim(G/H)$ in all. The Goldstone fields $\pi_a$ may be assembled into a **group-valued field**
-
-$$
-U(x) = \exp\!\left(\frac{i\sum_a\pi_a T_a}{f}\right),
-$$
-
-with $T_a$ the broken generators and $f$ the decay constant. The field $U$ is a representative of the coset: multiplying it on the left by $g\in G$ moves it to another representative, and the compensating $h(x)\in H$ that returns it to the chosen representative is what makes the transformation **nonlinear**,
-
-$$
-U(x) \;\longmapsto\; g\,U(x)\,h^{*}(x),
-\qquad h(x)\in H .
-$$
-
-The most general Lagrangian invariant under this action and containing two derivatives is the sigma model
-
-$$
-\mathcal{L}_2 = \frac{f^2}{2}\,\sum_{a,b}g_{ab}(\pi)\sum_\mu\partial/\partial R_{1,\mu}\,\pi_a\,\partial/\partial R_{1,\mu}\,\pi_b + \cdots,
-$$
-
-where $g_{ab}$ is the invariant metric on $G/H$ written in the coordinates $\pi_a$, and the ellipsis denotes terms with four or more derivatives. Two structural consequences follow at once. First, **every coupling of a Goldstone field carries a derivative**, so a Goldstone leg of vanishing momentum decouples: this is the soft limit, the Adler zero. Second, the Lagrangian is fixed to lowest order by the geometry and the single parameter $f$; the higher-order coefficients carry the details of whatever sector was integrated out.
-
-For a **symmetric** coset — one on which the broken generators close into the unbroken algebra in a definite way, as for the chiral and $O(N)$ cases — the group-valued field admits a left–right action of $G_L\times G_R$,
+**The coset construction, the group-valued field $U$, the nonlinear transformation $U\mapsto g\,U\,h^{*}$, the derivative counting and the Adler zero are the general theory of [The Nonlinear Sigma Model and the Chiral Field in Biquaternionic Form](the-nonlinear-sigma-model-and-the-chiral-field-in-biquaternionic-form.html).** What is added here is which coset the framework supplies and in which notation. For a **symmetric** coset — one on which the broken generators close into the unbroken algebra in a definite way, as for the chiral and $O(N)$ cases — the group-valued field admits a left–right action of $G_L\times G_R$,
 
 $$
 U(x)\;\longmapsto\; g_L\,U(x)\,g_R^{*},

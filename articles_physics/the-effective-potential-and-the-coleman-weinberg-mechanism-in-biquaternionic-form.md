@@ -78,13 +78,7 @@ Two features of this potential matter for what follows. First, its **normalizati
 
 The effective potential is a restriction of the effective action, and the restriction is worth stating precisely because it fixes what the derivatives mean in the framework.
 
-The effective action is the Legendre transform of the connected generating functional of the central scalar,
-
-$$
-\Gamma[\tilde{Ξ}_{\mathrm{cl}}] = \langle \tilde{J}_{\Phi},\tilde{Ξ}_{\mathrm{cl}}\rangle - W[\tilde{J}_{\Phi}], \qquad \tilde{Ξ}_{\mathrm{cl}} = \frac{\delta W}{\delta \tilde{J}_{\Phi}} ,
-$$
-
-and it has the loop expansion $\Gamma = S +\hbar\,\Gamma_{1}+ \cdots$, with $\Gamma_1 = \tfrac12\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]$ the logarithm of the determinant of the second variation. These are the conventions of the companion article on the generating functional and the effective action; the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact imported from it is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
+**The Legendre transform, the loop expansion and the constant-field reduction are the machinery of [The Effective Potential and the One-Loop Correction in Biquaternionic Form](the-effective-potential-and-the-one-loop-correction-in-biquaternionic-form.html), stated there for a field with no sector attached.** The conventions are those of the companion article on the generating functional and the effective action, and the classical field is written $\tilde{Ξ}_{\mathrm{cl}}$. The one structural fact that is not general, and is imported from that companion, is that a central action has a **central** second variation: the fluctuation operator of a central background has coefficients that commute with the central phase and mixes neither the material nor the informational sector, so its logarithm depends on the background only through the invariant $\rho$, and the one-loop term is the sum of the contributions of the two real components, one from each sector, each with its own field-dependent mass.
 
 For a **constant** classical field $\tilde{Ξ}_{\mathrm{cl}} = \xi_c\,e_t$ the effective action is proportional to the spacetime volume, and the effective potential is defined by
 
@@ -108,20 +102,7 @@ The second is **convexity**: the generating functional $W$ is a convex functiona
 
 ## The One-Loop Correction
 
-The one-loop term is the Gaussian determinant of the fluctuations about the constant background, and its evaluation is the whole computational content of the effective potential. Expand the action about the background,
-
-$$
-S[\tilde{Ξ}_{\mathrm{cl}} + \delta\tilde{Ξ}] = S[\tilde{Ξ}_{\mathrm{cl}}] + \frac12\left\langle \delta\tilde{Ξ},\,S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]\,\delta\tilde{Ξ}\right\rangle + O(\delta\tilde{Ξ}^{3}),
-$$
-
-and perform the Gaussian integral over $\delta\tilde{Ξ}$: the result is
-
-$$
-\Gamma_1[\tilde{Ξ}_{\mathrm{cl}}] = \frac12\,\mathrm{Tr}\log S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]
-= -\frac12\int_0^\infty\frac{ds}{s}\,\mathrm{Tr}\,\exp(-s\,S^{(2)}[\tilde{Ξ}_{\mathrm{cl}}]),
-$$
-
-the proper-time form, with the ultraviolet divergence residing in the small-$s$ end. For the central scalar the second variation is the operator
+The one-loop term is the Gaussian determinant of the fluctuations about the constant background. **The determinant, its proper-time form and the location of the divergence are the machinery of the companion article**; what is added here is the framework's fluctuation operator and the masses it gives. For the central scalar the second variation is the operator
 
 $$
 S^{(2)}[\xi_c] = -\,\Box_\Phi + \mathcal{H}(\rho_c),
@@ -132,13 +113,7 @@ S^{(2)}[\xi_c] = -\,\Box_\Phi + \mathcal{H}(\rho_c),
 \begin{pmatrix} 3\rho_c - v_0^2 & 0 \ 0 & \rho_c - v_0^2 \end{pmatrix},
 $$
 
-acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-dependent masses of the two real components of the fluctuation in the background, and the Hessian is written at the background $\xi_2 = 0$. Evaluating $\Gamma_1$ on a constant background and dividing by the volume gives the standard Coleman–Weinberg form,
-
-$$
-\mathcal{V}_1(\rho) = \frac{1}{64\pi^2}\sum_i n_i\,m_i^4(\rho)\left[\ln\frac{m_i^2(\rho)}{\mu^2} - c_i\right],
-$$
-
-where $i$ runs over the fields whose mass depends on the background, $n_i$ is the signed number of real degrees of freedom, $m_i^2(\rho)$ is the field-dependent mass-squared, written as $k_{m_i}^2(\rho)$, an inverse length squared, so that every logarithm has a dimensionless argument, $\mu$ is the renormalization scale at which the couplings are defined, and $c_i$ is a scheme constant ($c = \tfrac32$ for a real scalar and $c = \tfrac56$ for a gauge boson in the Landau gauge). This is the standard result (Coleman and Weinberg 1973; Jackiw 1974) and is transcribed, not re-derived; what the framework fixes is the field content and hence the list of masses.
+acting as a central scalar; the eigenvalues of $\mathcal{H}$ are the field-dependent masses of the two real components of the fluctuation in the background, and the Hessian is written at the background $\xi_2 = 0$. Evaluating $\Gamma_1$ on a constant background and dividing by the volume gives the Coleman–Weinberg form of the machinery, $\mathcal{V}_1(\rho)=\frac{1}{64\pi^2}\sum_i n_i m_i^4(\rho)[\ln(m_i^2(\rho)/\mu^2)-c_i]$, with $n_i$ the signed number of real degrees of freedom, $\mu$ the renormalization scale and $c_i$ a scheme constant ($c=\tfrac32$ for a real scalar, $c=\tfrac56$ for a gauge boson in the Landau gauge). **The framework fixes the field content, and hence the list of masses that enter the sum; that list is the whole of the sector's contribution.**
 
 For the framework's central scalar the field content is the scalar itself and the central gauge field, and the two field-dependent masses are read off from the tree potential and from the Higgs mechanism of the companion article.
 
@@ -184,30 +159,13 @@ $$
 
 where the omitted terms are scheme-dependent constants times $\rho^2$ and higher powers of $\rho$; they do not affect the existence or the leading location of the minimum. The potential is the classical quartic term corrected by a term whose coefficient is the fourth power of the fluctuation mass, and the competition between them is the mechanism.
 
-Differentiate once,
+The point $\rho = 0$ is stationary for every $\lambda$ and $B$, and the stationarity condition of the machinery, $\ln(\langle\rho\rangle/\mu^2)=-\frac12-\lambda/(4B)$, locates the second one; applied with the framework's coefficient it gives
 
 $$
-\frac{d\mathcal{V}_\text{eff}}{d\rho}(\rho) = \frac{\lambda}{2}\rho + B\left(2\rho\ln\frac{\rho}{\mu^2} + \rho\right)
-= \rho\left[\frac{\lambda}{2} + B\left(2\ln\frac{\rho}{\mu^2} + 1\right)\right].
+\boxed{\;\langle \rho\rangle = \mu^2\exp\!\left(-\frac12 - \frac{\lambda}{4B}\right)\;}.
 $$
 
-The point $\rho = 0$ is stationary for every $\lambda$ and $B$. A second stationary point exists when the bracket vanishes,
-
-$$
-\boxed{\;\ln\frac{\langle \rho\rangle}{\mu^2} = -\frac12 - \frac{\lambda}{4B},
-\qquad\Longrightarrow\qquad
-\langle \rho\rangle = \mu^2\exp\!\left(-\frac12 - \frac{\lambda}{4B}\right)\;}.
-$$
-
-Its curvature is read from the second derivative,
-
-$$
-\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\rho) = \frac{\lambda}{2} + B\left(2\ln\frac{\rho}{\mu^2} + 3\right),
-\qquad
-\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\langle \rho\rangle) = 2B > 0 ,
-$$
-
-so the point is a **minimum** whenever $B > 0$, which the field content above guarantees. The origin, by contrast, has $\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(0^+) = \frac{\lambda}{2} - \infty\cdot B$ in the one-loop expression: the logarithm drives the curvature negative, so $\rho = 0$ is a local maximum of the one-loop potential, and the true vacuum is the radiative minimum. The value of the potential there is
+At that point the curvature is $\frac{d^2\mathcal{V}_\text{eff}}{d\rho^2}(\langle\rho\rangle)=2B>0$, so the point is a **minimum** whenever $B>0$, which the field content above guarantees. The origin, by contrast, has its curvature driven negative by the logarithm, so $\rho=0$ is a local maximum of the one-loop potential and the true vacuum is the radiative minimum. The value of the potential there is
 
 $$
 \mathcal{V}_\text{eff}(\langle \rho\rangle) = \langle \rho\rangle^2\left[\frac{\lambda}{4} + B\ln\frac{\langle \rho\rangle}{\mu^2}\right]

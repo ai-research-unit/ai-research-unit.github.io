@@ -34,22 +34,7 @@ $$
 Z \;=\; \int \mathcal D\mathcal A\;\exp(-S[\mathcal A]),
 $$
 
-where the measure, the gauge-fixing and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. The semiclassical expansion evaluates the integral by steepest descent. Write the saddle-point condition
-
-$$
-\frac{\delta S}{\delta\mathcal A_\mu}\Big|_{\mathcal A=\mathcal A_{\mathrm{cl}}}=0 ,
-\qquad
-S[\mathcal A_{\mathrm{cl}}]=S_{\mathrm{cl}} ,
-$$
-
-and expand the field around it, $\mathcal A=\mathcal A_{\mathrm{cl}}+\delta\mathcal A$. The Gaussian integration over $\delta\mathcal A$ gives the one-loop determinant; the collective-coordinate directions, along which the action is unchanged, must be treated separately, and they are the directions along the moduli space. The result for a single saddle is
-
-$$
-Z_{\mathrm{saddle}} \;=\; \bigl(\text{one-loop determinant}\bigr)\times \exp(-S_{\mathrm{cl}})
-\times\int_{\mathcal M}\bigl(\text{measure on the moduli}\bigr).
-$$
-
-For a self-dual configuration the classical action is fixed by the topology,
+where the measure, the gauge-fixing and the ghosts are the objects constructed in the companion path-integral articles; the instanton calculus takes that construction for granted. **Steepest descent, the saddle-point condition, the one-loop determinant and the treatment of the flat directions are the machinery of [The Euclidean Semiclassical Expansion and the Dilute Gas in Biquaternionic Form](the-euclidean-semiclassical-expansion-and-the-dilute-gas-in-biquaternionic-form.html).** What is added here is the framework's saddle: a self-dual configuration, whose classical action is fixed by the topology,
 
 $$
 S_{\mathrm{cl}}=\frac{8\pi^2}{g^2}|Ϙ| ,
