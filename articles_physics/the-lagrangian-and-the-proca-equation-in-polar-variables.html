@@ -104,7 +104,7 @@ $$</p>
 <p>The conventions are those of the two companion articles: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with central $i$; the material sector $\mathbb{B}_\Phi$ anti-Hermitian; $\mathrm{Sc}$ the coefficient of $e_t$; $\langle\tilde Q\rangle_\natural=\tilde Q\tilde Q^{\natural}$ the quaternionic norm, real on $\mathbb{B}_\Phi$; $\partial/\partial R_t=-i\,\partial/\partial r'_t$; $\Box_\Phi=\Delta_\Phi-\partial^2/\partial{r'_t}^2$; $k_m=mc/\hbar$.</p>
 <h2 id="conventions">Conventions</h2>
 <p><strong>The conventions are the corpus's, restated here for the chart.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $\varrho>0$ is the scale, $\theta_{\mathrm{rpd}}\ge0$ the rapidity and $\hat u_{\mathrm b}$ the boost axis, so that $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ on the branch. The measure is $\mathrm{d}^4r$, the pairing is $\mathrm{Sc}(\cdot)$ and $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ for the field term, $k_m=mc/\hbar$, and the chart's velocities are the material-time derivatives. The branch is the timelike one; the spacelike branch is named where it matters and is not followed here.</p>
-<h2 id="the-action-in-the-chart">The Action in the Chart</h2>
+<h2 id="the-action-in-polar-variables">The Action in Polar Variables</h2>
 <p><strong>The field term.</strong> Write $\tilde F=\mathrm{Vect}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$ and $S=\mathrm{Sc}((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)$, so that the conjugate gradient is the sum of a scalar and a pure vector,</p>
 <p>$$
 (\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi=S+\tilde F .
@@ -126,7 +126,7 @@ $$</p>
 $$</p>
 <p>with the last term read from the branch. The three pieces are the full quadratic of the conjugate gradient, the negative square of its scalar part, and the mass. The middle piece is not a gauge-fixing term added by hand: it is what the projection removes, and it is present in the element form already, hidden inside $\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$. In the chart it is displayed, and displayed is where its rôle can be read: its variation is what produces the Lorenz condition as an equation.</p>
 <p><strong>The parameters.</strong> On the timelike branch the field is $\tilde A_\Phi(q)$ with $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ and the two angles parametrizing $\hat u_{\mathrm b}$; the discrete $\varepsilon$ is not varied, because it is a label and not a coordinate. On the spacelike branch $q=(\varrho,\theta_{\mathrm{rpd}},\vartheta_1,\vartheta_2)$ with the angles those of $\hat u$. In both cases four.</p>
-<h2 id="the-eulerlagrange-equations">The Euler–Lagrange Equations</h2>
+<h2 id="the-variation-the-eulerlagrange-equations">The Variation: The Euler–Lagrange Equations</h2>
 <p><strong>The change-of-variables argument.</strong> The word is a bijection from the parameter set onto the branch, and both are open subsets of four-dimensional spaces; it is smooth with smooth inverse away from the coordinate singularity at the pure scalar-potential line. A diffeomorphism carries a variational problem to a variational problem: if $\tilde A_\Phi=\Phi(q)$ and $S=\int\mathcal{L}(\Phi(q),\partial\Phi(q))$, then</p>
 <p>$$
 \frac{\delta S}{\delta q^i}=\Bigl(\frac{\delta S}{\delta\tilde A_\Phi}\Bigr)\Big|_{\tilde A_\Phi=\Phi(q)}\cdot\frac{\partial\Phi}{\partial q^i},
@@ -153,7 +153,7 @@ $$</p>
 $$</p>
 <p>which is the form the polar article verifies numerically. The mass term enters the first with the sign $+k_m^2\varrho$ on the timelike branch, as the branch's sign of the mass term requires.</p>
 <p><strong>What the variation of the middle piece does.</strong> The term $-\tfrac12S^2$ is the only piece that pairs the scalar projection with itself. Its variation produces the scalar equation that is the Lorenz condition, and the remaining pieces produce the two dynamical equations. In this sense the chart separates the three jobs that the element form performs at once: the curl term carries the propagation, the square carries the constraint, and the mass carries the scale. The separation is a rewriting, but it is a rewriting that names each job.</p>
-<h2 id="the-lorenz-condition-in-the-chart">The Lorenz Condition in the Chart</h2>
+<h2 id="the-constraints-the-action-imposes-the-lorenz-condition-in-the-chart">The Constraints the Action Imposes: The Lorenz Condition in the Chart</h2>
 <p><strong>One equation on four parameters.</strong> The chart's form of the condition is</p>
 <p>$$
 S=\varepsilon\Bigl[c\,\partial_{r'_t}\varrho-s\,\hat u_{\mathrm b}\cdot\nabla \varrho
@@ -162,7 +162,7 @@ $$</p>
 <p>with $c=\cosh\frac{\theta_{\mathrm{rpd}}}{2}$ and $s=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$. It is the divergence of the four-vector in the chart's variables, and it is the secondary constraint. On shell it removes one of the four parameters and leaves three.</p>
 <p><strong>It is implied, and the variational reading says why.</strong> In the element form the condition follows from the divergence of the equation. In the chart it follows from the variation of the $-\tfrac12S^2$ term together with the rest, and it is the statement that the longitudinal part of the field is not free. There is no multiplier attached to it, and there is no gauge orbit along which it could be reached: it is one equation among the four.</p>
 <p><strong>What it is not.</strong> It is not the continuity equation of a fluid and it is not a guidance equation, because the material sector has no phase and therefore no phase current to conserve. The scalar Madelung pair is a pair because the field is one complex function; here the field is a real four-vector, and the condition is a single divergence. The variational principle does not manufacture the missing half.</p>
-<h2 id="the-mass-term-the-branch-and-the-constraint">The Mass Term, the Branch, and the Constraint</h2>
+<h2 id="the-structural-consequence-the-mass-term-the-branch-and-the-constraint">The Structural Consequence: The Mass Term, the Branch, and the Constraint</h2>
 <p><strong>The Hessian has rank three.</strong> The kinetic part of the chart's Lagrangian is $\tfrac12\epsilon\vec E^2$ with $\vec E=-\vec\nabla_\Phi a'_t-\partial_{t'}\vec A$, so only $\vec A$ carries velocities, and</p>
 <p>$$
 \frac{\partial^2\mathcal{L}}{\partial\dot q^i\partial\dot q^j}
@@ -226,7 +226,7 @@ $$</p>
 <p><strong>The stress.</strong> Translation invariance gives the canonical energy–momentum tensor, and in the chart it is the object whose components are the energy density $\tfrac12(\epsilon\vec E^{2}+\vec B^{2}/\mu+k_m^{2}\lvert\vec A\rvert^{2})$ and the Poynting flux. Both are read off the Lagrangian of the chart with the standard formula, and neither needs the phase.</p>
 <p><strong>What the absence means.</strong> The parameter that would carry a charge is $\theta_{\mathrm{pha}}$, and the chart's Lagrangian does not contain it: the word for the Proca field is real, $\theta_{\mathrm{pha}}=0$ is not a variable of the branch, and the mass term is $\varrho^{2}R$. So the chart has seven parameters and not eight on the physical branch, and the missing one is the one that would have carried a conserved charge. That is the chart's statement of "no second current", and it agrees with the element form's.</p>
 <p><strong>The hand check.</strong> Count the conjugate momenta from the Hessian of the previous section: three non-zero and one zero. The zero one is not a charge; it is the primary constraint. A charge would be a non-zero momentum whose conservation follows from a symmetry, and there is no such symmetry here.</p>
-<h2 id="what-the-polar-variational-principle-adds-and-what-it-does-not">What the Polar Variational Principle Adds and What It Does Not</h2>
+<h2 id="what-the-principle-adds-and-what-it-relabels-in-the-polar-chart">What the Principle Adds and What It Relabels: In the Polar Chart</h2>
 <p><strong>Adds.</strong></p>
 <ul>
 <li>The action in the chart, with the mass term reduced to a definite power of the modulus. Its sign is the branch, and that is a statement the element form cannot make.</li>
