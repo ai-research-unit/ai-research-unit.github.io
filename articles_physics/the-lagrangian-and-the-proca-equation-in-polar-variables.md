@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This article substitutes the polar word of the material sector into the Proca action and reads the result. It is the polar companion of *The Lagrangian and the Proca Equation*, and it depends on three articles: *The Proca Equation in Biquaternionic Polar Variables* for the word and the equation in the chart, that element-form variational article for the action, and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* for the carrier.
+This article substitutes the polar word of the material sector into the Proca action and reads the result. It is the polar companion of *The Lagrangian and the Proca Equation*, and it depends on three articles: *The Proca Equation in Biquaternionic Polar Variables* for the word and the equation in the chart, that element-form Lagrangian article for the action, and *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane* for the carrier.
 
 **The substitution.** The element-form action is
 
@@ -173,6 +173,25 @@ The chart's gain is the first row: the boost is parametrized, not constrained, s
 
 **Why the Schrödinger case differs.** There the Lagrangian is linear in $\dot\theta_{\mathrm{pha}}$, so the momentum conjugate to $\varrho$ vanishes identically and the system is a constrained one whose closure needs Dirac analysis. Here the Lagrangian is quadratic in the velocities, the momenta are the velocities' images under a rank-three map, and there is exactly one constraint pair. The order of the Lagrangian, and not the choice of variables, is what decides.
 
+## The Parameter Basis and the Four Brackets
+
+**One derivative, four types, for the material word.** The polar word of the Proca field has the same four parameter groups as the scalar field's, so its logarithmic derivative has the same four brackets:
+
+$$
+\tilde A_\Phi^{-1}\partial\tilde A_\Phi
+=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
+$$
+
+real scalar, central imaginary, Hermitian and real vector. The brackets are a property of the parameterisation and of the algebra's type decomposition; they are not a feature of any one field.
+
+**Why the Proca action keeps more of them than the scalar action.** The scalar action's bilinear $\tilde\Xi^{*}\tilde\Xi$ is one Hermitian object, so only the matching types survive. The Proca action is built from the square of the conjugate gradient, and **a square pairs the scalar part with the scalar part and the vector part with the vector part while retaining the cross term between them**. The full quadratic form of the conjugate gradient is therefore in the Lagrangian, and the antisymmetric combination it retains is the object whose variation gives the Lorenz condition. The middle piece $-\tfrac12S^{2}$ is that cross term, and it is what the element form's projection removes.
+
+**The branch is not a bracket.** The chart is a diffeomorphism onto one branch at a time, and the two branches -- timelike and spacelike -- differ by the sign of the mass term, $+\tfrac12k_m^{2}\varrho^{2}$ and $-\tfrac12k_m^{2}\varrho^{2}$. **The four brackets are identical on the two branches**; what changes is the algebraic mass term, which carries no derivative and therefore no bracket. This is the reason the bracket analysis of this article is branch-independent and the constraint analysis is not.
+
+**The parameter basis is not the bracket basis.** The eight parameters are coordinates, the four brackets are types, and the Jacobian between them mixes: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis and the brackets are the cleaner form, because each has one type and one partner.
+
+**What the reader should take from the section.** The four brackets are the reason the polar Proca action has the structure it has: a quadratic form in the eight gradients with a frame-built metric, a mass potential, and no multiplier for the unit conditions. **The parameterisation absorbs the unit conditions by construction**, so the only price the chart pays is the cross term -- and the cross term is the constraint.
+
 ## The Noether Currents: The Stress and the Absence of a Charge
 
 **One current and not two.** The free Proca field has no phase symmetry, and the article's element companion proves it: the potential is real on the material sector, so a central phase rotation is not a symmetry of the action but a complexification, and the Noether procedure returns nothing. The chart inherits the verdict, and it is worth stating in the chart because the chart is where a reader expects a density.
@@ -201,6 +220,18 @@ The chart's gain is the first row: the boost is parametrized, not constrained, s
 - No simplification of the equations themselves. The chart's equations are nonlinear in the parameters, and they are longer than the field equation they encode. What the chart does simplify is the *identification* of the three jobs, and that is the gain recorded above and not a gain in brevity.
 
 **The distinction that matters.** The polar variational principle is a coordinate change of a standard variational problem, and its value is entirely in what the coordinates display: the sign of the mass term as the branch, the three jobs of the three pieces, and the constraint's exact location. It is not a new principle, and the article claims nothing of the kind.
+
+## The Reconstruction and Its Limits
+
+**The reconstruction is exact on a branch.** The chart is a diffeomorphism from the parameter domain onto one branch of the material sector's N-regular set, so the word can be inverted there: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. The inverse is the bijection read backwards and adds nothing to the action.
+
+**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12k_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12k_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element, so a field that reaches $\varrho=0$ leaves the chart. For the Proca field that is not a pathology but a boundary: the mass shell's two branches meet only through the origin, and the origin is excluded.
+
+**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. Neither is a convention of this article; both are properties of the parameterisation it inherits.
+
+**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow, and the article says so. **The frame's reconstruction has a further weakness here**: the mass term is a function of the frame, $R(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})\varrho^{2}$, so the reconstructed frame is constrained by the potential and is not a free coordinate. That is not a defect of the map — it is the statement that the Proca field's frame is where the mass is extremal.
 
 ## Open Questions
 

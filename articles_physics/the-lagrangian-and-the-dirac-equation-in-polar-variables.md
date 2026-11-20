@@ -218,24 +218,6 @@ for every $\varrho>0$. One non-vanishing bracket is enough: the constraints are 
 
 **The parent's flow, at rest.** At $\theta_{\mathrm{rpd}}=0$ the two rate equations give $\dot\theta_{\mathrm{pha}}=k_m\mathcal V$ and $\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}=-k_m\partial_{\theta_{\mathrm{rpd}}}\mathcal V$, with $\varrho$ and the rapidity constant. The phase rate is the parent's. The rotor's rate along the boost axis comes from the potential's rapidity dependence, and the two rates transverse to it come from the rotor's own equations. Whether that reproduces the parent's gap rate is the closure question, and the article does not assume the answer.
 
-## The Four Brackets and the Parameter Basis
-
-Two bases of the eight-dimensional tangent space at an invertible element, and one change of basis.
-
-**The bracket basis.** The parent decomposes $\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into a real scalar, a central imaginary, a Hermitian element and a real vector: four objects of four different algebraic types, each carrying one physical role — scale, phase, boost connection, rotor connection.
-
-**The parameter basis.** The eight derivatives $\partial\tilde\Xi/\partial \varrho$, $\partial\tilde\Xi/\partial\theta_{\mathrm{pha}}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{rpd}}$, $\partial\tilde\Xi/\partial u_{\mathrm b}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{axr}}$, $\partial\tilde\Xi/\partial u_{\mathrm r}$ span the same eight directions.
-
-**Three statements about the relation.**
-
-*The equivalence is exact.* The eight parameter equations are the eight real components of the equation in the parameter basis, and the word is a bijection, so the parameter equations and the equation are the same content. This is the Jacobian's invertibility and nothing more.
-
-*The brackets are cleaner.* The four brackets are four objects of four types, each with one role. The parameter equations mix them, because the parameterisation is non-linear and the derivative of one parameter can carry pieces of several brackets: differentiating the word with respect to $\theta_{\mathrm{axr}}$ moves the rotor, which moves the boost axis as seen from the body frame, so the rotor's equation carries a piece of the boost connection.
-
-*The parameter equations are not weaker.* They are the same equations in another basis, not a subset of them. A reader who finds fewer independent parameter equations than bracket equations has counted constraints as equations, which is what the four vanishing momenta are.
-
-**What the polar action adds to this.** Nothing about the equation. The E-L equations, when closed, are the equation's components in the parameter basis; the four brackets remain the natural form, and the article does not claim that the parameter equations are simpler. The polar action's contribution is the constraint structure: it exhibits which parameters are dynamical and which are not, and that is a statement the bracket form does not make.
-
 ## The Mass Term and the Fixed Direction
 
 The mass term of the element action is off-diagonal in the parts, and on the frame's parts it vanishes.
@@ -280,6 +262,24 @@ The scale enters as $\varrho^{2}$ in both terms. The phase enters only through i
 
 **The overall factor.** The element action carries $\hbar c/2$; the box has $\hbar c$. The factor is a convention on the action and cancels from every Euler–Lagrange equation, and the article writes it this way so that the phase momentum comes out $\hbar c\rho_{\mathrm{num}}\gamma$, the time component of the density current and the normalization of the standard Dirac action, whose kinetic term carries no $\tfrac12$. The sign, and the reason it is opposite to the Schrödinger companion's, is in §*The Kinetic Term*.
 
+## The Four Brackets and the Parameter Basis
+
+Two bases of the eight-dimensional tangent space at an invertible element, and one change of basis.
+
+**The bracket basis.** The parent decomposes $\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into a real scalar, a central imaginary, a Hermitian element and a real vector: four objects of four different algebraic types, each carrying one physical role — scale, phase, boost connection, rotor connection.
+
+**The parameter basis.** The eight derivatives $\partial\tilde\Xi/\partial \varrho$, $\partial\tilde\Xi/\partial\theta_{\mathrm{pha}}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{rpd}}$, $\partial\tilde\Xi/\partial u_{\mathrm b}$, $\partial\tilde\Xi/\partial\theta_{\mathrm{axr}}$, $\partial\tilde\Xi/\partial u_{\mathrm r}$ span the same eight directions.
+
+**Three statements about the relation.**
+
+*The equivalence is exact.* The eight parameter equations are the eight real components of the equation in the parameter basis, and the word is a bijection, so the parameter equations and the equation are the same content. This is the Jacobian's invertibility and nothing more.
+
+*The brackets are cleaner.* The four brackets are four objects of four types, each with one role. The parameter equations mix them, because the parameterisation is non-linear and the derivative of one parameter can carry pieces of several brackets: differentiating the word with respect to $\theta_{\mathrm{axr}}$ moves the rotor, which moves the boost axis as seen from the body frame, so the rotor's equation carries a piece of the boost connection.
+
+*The parameter equations are not weaker.* They are the same equations in another basis, not a subset of them. A reader who finds fewer independent parameter equations than bracket equations has counted constraints as equations, which is what the four vanishing momenta are.
+
+**What the polar action adds to this.** Nothing about the equation. The E-L equations, when closed, are the equation's components in the parameter basis; the four brackets remain the natural form, and the article does not claim that the parameter equations are simpler. The polar action's contribution is the constraint structure: it exhibits which parameters are dynamical and which are not, and that is a statement the bracket form does not make.
+
 ## The Noether Currents: The Phase Charge and the Spin
 
 **Two currents, and the chart gives both by differentiation.** The phase symmetry is $\theta_{\mathrm{pha}}\mapsto\theta_{\mathrm{pha}}+\text{const}$, and the conjugate momentum is read from the boxed kinetic term of the third section:
@@ -315,6 +315,26 @@ The comparison is worth stating precisely, because the two formulations are usua
 **So no multipliers are needed for the unit conditions, and the article says exactly that.** It does not say that the polar action has no constraints. The constraints are there, four of them, and they are Euler–Lagrange equations: the vanishing of the momenta conjugate to the scale and to the boost. Those constraints come from the *structure* of the kinetic term, not from an invertible element condition, and a multiplier would not remove them.
 
 **The correspondence is exact in one respect and only one.** Takabayasi's velocity field enters the Lagrangian algebraically, without a time derivative, and so does the boost here: $p_{\theta_{\mathrm{rpd}}}=0=p_{u_{\mathrm b}}$. Takabayasi's spin direction carries a transport equation, and so does the rotor here: away from rest its three momenta are non-zero, they are $\vec p_{\mathrm{spin}}=-\hbar c\,\varrho^{2}\sinh\theta_{\mathrm{rpd}}\hat n_{\mathrm{rot}}$, and its three equations are dynamical. The agreement with Takabayasi is therefore an agreement about a boosted frame. At rest the spin's momentum vanishes, and the polar action's spin sector becomes constrained as well; the article states this because the closed form makes it visible, and does not claim it for Takabayasi's formulation, where the spin momentum is not proportional to a rapidity.
+
+## The Reconstruction and Its Limits
+
+**The reconstruction here is not the scalar field's.** The word recovers the element from eight parameters, and for the Dirac field the rotor is not decoration: the kinetic term is
+
+$$
+\varrho^{2}\Bigl(\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}-\sinh\theta_{\mathrm{rpd}}\;\hat n_{\mathrm{rot}}\cdot\vec\omega_{\mathrm r}\Bigr),
+$$
+
+so the rotor's angular velocity enters the action and its reconstruction is part of what the chart must deliver. **The inverse map must recover the rotor axis as well as the angle**, and it must recover the direction $\hat n_{\mathrm{rot}}$ that couples the boost and the rotor.
+
+**The limit that this field has and the scalar field does not.** The cross term is proportional to $\sinh\theta_{\mathrm{rpd}}$, so at $\theta_{\mathrm{rpd}}=0$ it vanishes and with it every trace of the rotor's rate. **A reconstruction performed at zero rapidity cannot recover $\vec\omega_{\mathrm r}$**, because the quantity that would carry it is not in the action there. This is not a defect of the inverse map: the map recovers the rotor angle, and the action then declines to use it. The article states the distinction because a reader who saw the rotor drop out at $\theta_{\mathrm{rpd}}=0$ could conclude that it had been lost in the change of variables, and it has not.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element and the cone's apex. A field that reaches $\varrho=0$ leaves the chart, and the element form is the description that survives there.
+
+**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$, the negative real axis among them. The phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. **Both endpoints are properties of the parameterisation and neither is a convention of this article.**
+
+**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow. **For this field the gap is wider than for the scalar one**, because three momenta vanish and the constraints that replace them are what fixes the frame — and whether the reduced flow is the pair's flow is the article's open question.
+
+**One further limit of the reconstructed chart.** The reconstruction is pointwise, so it cannot see the phase's winding around a zero of $\varrho$. That is the nodal set, it belongs to the corpus's circulation article, and this article inherits the exception rather than solving it.
 
 ## Open Questions
 

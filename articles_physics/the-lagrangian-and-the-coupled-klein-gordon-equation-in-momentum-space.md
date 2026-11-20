@@ -32,6 +32,55 @@ $$
 
 **The denials are the main article's, restated once.** The transform does not exchange sectors; a symbol exists only at constant coefficients; and a Legendre transform between a field and its conjugate momentum is not a Fourier transform, so the parent's four canonical momenta are not wave numbers and no display below reads them as one.
 
+## The Action's Operator
+
+**The action's Euler–Lagrange operator is the squared one, and the measurement is decisive.** For the temporal slot with a constant $c_t$ the functional is $S_t=\int\bigl\lvert(\partial_{R_t}+c_t)\Xi\bigr\rvert^{2}$, and its variation is computed twice: once by the analytic reading $\delta S_t/\delta\Xi^{*}=(\partial_{R_t}+c_t)^{2}\Xi$, and once by differencing the functional itself at $\Xi\pm h\eta$ with $h=10^{-5}$ and a two-mode probe $\eta$. The linear term of the difference is $96.374889164$ and the analytic prediction $2\,\mathrm{Re}\langle(\partial_{R_t}+c_t)^{2}\Xi,\eta\rangle$ is $96.374889162$: a ratio of $1.000000000020$.
+
+**The action's density on a plane wave is the squared symbol and not the paired one.** With $k_t'=3$ and $c_t=-0.31$ the functional's density is $10.956100$, the squared symbol is $10.956100$, and the paired symbol is $8.903900$. The two candidates differ by $2.0522$ and the action is on the squared side by the whole of it. **The identification is exact, not approximate**, and it is what the box records:
+
+$$
+\boxed{\;
+\frac{\delta S_{\mathrm{c}}}{\delta\tilde\Xi^{*}}
+=-\Bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\Bigr)\tilde\Xi
+\;}
+$$
+
+**What this does to the parent's recorded mismatch.** The parent's second display, $(\partial_{R_t}-ϙa_t'/\hbar)^{2}$, is the action's slot with $c_t=-ϙa_t'/\hbar$, so the parent's *equation* side is the action's operator and the two agree. The parent's first display, $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$, is $\partial^{2}-c_t^{2}$: the paired form, which no functional in the parent produces. **The mismatch is real but it is not between the action and the equation**; it is between the action and a third object the parent wrote down as though it were the action's.
+
+**The correction is an attribution and not an equation.** Nothing in the parent's displays is wrong as a display. $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ is a perfectly good operator and the article of §*The Ordering Ambiguity Is the Cross Term* identifies its symbol. What is wrong is the sentence that attaches it to the action. **The corpus's action and the corpus's equation are one operator**, and the third object is the subject of the next section.
+
+## The Source's Symbol
+
+**The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform.** Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{ϙ}{\hbar}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. **The source's symbol is therefore the transform of the current, and it is a convolution in every other case.**
+
+**The constant setting is the one the article uses and the one the parent uses.** There the current's transform is a coefficient at one wave number, the connection's equation is algebraic, and the fork of §*The Ordering Ambiguity Is the Cross Term* is the fork between two polynomials in the same variable. **Nothing in the source's structure decides which polynomial is the operator's**, and the article states this rather than reading a decision into the variation.
+
+## The Ordering Ambiguity Is the Cross Term
+
+**The paired form is the product of the two charge-conjugate first-order operators.** Writing the two factors as $(\partial_{R_t}-\bar c_t)$ and $(\partial_{R_t}+c_t)$, their product is $\partial^{2}_{R_t}+\partial_{R_t}(c_t-\bar c_t)-\lvert c_t\rvert^{2}$, and for a real $c_t$ the middle term vanishes and the product is $\partial^{2}-c_t^{2}$. **The squared form is the product of one factor with itself**, $(\partial_{R_t}+c_t)^{2}=\partial^{2}+2c_t\partial+c_t^{2}$, and the two differ by
+
+$$
+\bigl(\partial+c_t\bigr)^{2}-\Bigl(\partial^{2}-c_t^{2}\Bigr)=2c_t\bigl(\partial+c_t\bigr),
+$$
+
+which is the corpus's own identity at the temporal slot and which is first order in the derivative and in the potential.
+
+**In momentum space the difference is one number per wave number.** The identity's symbol is $2c_t(\sigma_t+c_t)$, and with $\sigma_t=-k_t'$ it is $2c_t(c_t-k_t')$: real, of magnitude $2.0522$ at $k_t'=3$ and $c_t=-0.31$. **The ordering ambiguity decides whether the cross term survives**, and its survival is the difference between a linear and a quadratic response to the potential.
+
+**The paired form is the two-charge reading and the squared form is the one-charge reading.** The factor $(\partial_{R_t}+c_t)$ carries the charge $+ϙ$ and the factor $(\partial_{R_t}-\bar c_t)$ carries $-ϙ$; the squared form uses $+ϙ$ twice and the paired form uses $+ϙ$ and $-ϙ$ once each. **A second-order operator is therefore ambiguous between "the same charge twice" and "the two opposite charges once each"**, and that is the ordering ambiguity in one sentence.
+
+**Nothing in the parity lemma distinguishes the two readings.** Both are real in the corpus's writing, because both are built from real coefficients there. The lemma decides reality; the ordering decides the power of the response. **The article keeps them apart because they are decided by different arguments.**
+
+## The Charge Ambiguity Translates the Pair
+
+**Flipping the charge translates the roots and leaves their separation.** The squared shell is $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$; at $k_m=0.7$ and $\lvert\vec\kappa\rvert=3$ its roots with $c_t=-0.31$ are $+2.770584$ and $-3.390584$, and with $c_t=+0.31$ they are $+3.390584$ and $-2.770584$. **The separation is $6.161169$ in both cases and the pair translates by $-2c_t=0.62$**; the symbol at a fixed wave number moves from $10.956100$ to $7.236100$.
+
+**So the sign of the charge is the sign of the linear response.** A charge-conjugated field in the same potential shifts the other way, and the shift is the whole of the effect at first order. **The charge ambiguity is visible in momentum space as a translation of the root pair** and it is not visible as a change of the separation, which is why a mass measurement cannot see it.
+
+**And it is the same operation as the reordering.** The two factors of the paired form differ in exactly the charge they carry, so exchanging them is charging one of them oppositely; flipping the sign of $c_t$ in the squared form is charging both. **The sign ambiguity and the order ambiguity are the same functional read twice**, and the parent's two sentences about the temporal slot are two descriptions of one object.
+
+**What this means for the parent's question.** The parent asks whether the temporal slot's cross term belongs to the energy or to the derivative. In momentum space the answer is that the cross term belongs to neither on its own: it is the difference between the one-charge and the two-charge readings, and the energy-versus-derivative question is the same question asked in position space, where the two readings are two operators related by an integration by parts.
+
 ## The Variation
 
 **The variation is algebraic, and that is the whole difference from position space.** The mode form $Q$ of the previous section is a quadratic form in the amplitude: it contains the amplitude and its conjugate and no derivative of either, because the transform has replaced every derivative by a multiplier. So the variation with respect to the conjugate amplitude is
@@ -62,49 +111,6 @@ the symbol equation the article solves. The passage from the action to the equat
 
 **So the variational principle's role here is narrower than it looks.** It supplies the operator, and it does not supply the criterion. The criterion is the parity lemma, which is an observation about the square of a complex number and needs no action at all.
 
-## The Action's Operator
-
-**The action's Euler–Lagrange operator is the squared one, and the measurement is decisive.** For the temporal slot with a constant $c_t$ the functional is $S_t=\int\bigl\lvert(\partial_{R_t}+c_t)\Xi\bigr\rvert^{2}$, and its variation is computed twice: once by the analytic reading $\delta S_t/\delta\Xi^{*}=(\partial_{R_t}+c_t)^{2}\Xi$, and once by differencing the functional itself at $\Xi\pm h\eta$ with $h=10^{-5}$ and a two-mode probe $\eta$. The linear term of the difference is $96.374889164$ and the analytic prediction $2\,\mathrm{Re}\langle(\partial_{R_t}+c_t)^{2}\Xi,\eta\rangle$ is $96.374889162$: a ratio of $1.000000000020$.
-
-**The action's density on a plane wave is the squared symbol and not the paired one.** With $k_t'=3$ and $c_t=-0.31$ the functional's density is $10.956100$, the squared symbol is $10.956100$, and the paired symbol is $8.903900$. The two candidates differ by $2.0522$ and the action is on the squared side by the whole of it. **The identification is exact, not approximate**, and it is what the box records:
-
-$$
-\boxed{\;
-\frac{\delta S_{\mathrm{c}}}{\delta\tilde\Xi^{*}}
-=-\Bigl(\Box_{\mathrm{gco},\Phi}-k_m^{2}\Bigr)\tilde\Xi
-\;}
-$$
-
-**What this does to the parent's recorded mismatch.** The parent's second display, $(\partial_{R_t}-ϙa_t'/\hbar)^{2}$, is the action's slot with $c_t=-ϙa_t'/\hbar$, so the parent's *equation* side is the action's operator and the two agree. The parent's first display, $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$, is $\partial^{2}-c_t^{2}$: the paired form, which no functional in the parent produces. **The mismatch is real but it is not between the action and the equation**; it is between the action and a third object the parent wrote down as though it were the action's.
-
-**The correction is an attribution and not an equation.** Nothing in the parent's displays is wrong as a display. $\partial^{2}_{R_t}-(ϙa_t'/\hbar)^{2}$ is a perfectly good operator and the article of §*The Ordering Ambiguity Is the Cross Term* identifies its symbol. What is wrong is the sentence that attaches it to the action. **The corpus's action and the corpus's equation are one operator**, and the third object is the subject of the next section.
-
-## The Ordering Ambiguity Is the Cross Term
-
-**The paired form is the product of the two charge-conjugate first-order operators.** Writing the two factors as $(\partial_{R_t}-\bar c_t)$ and $(\partial_{R_t}+c_t)$, their product is $\partial^{2}_{R_t}+\partial_{R_t}(c_t-\bar c_t)-\lvert c_t\rvert^{2}$, and for a real $c_t$ the middle term vanishes and the product is $\partial^{2}-c_t^{2}$. **The squared form is the product of one factor with itself**, $(\partial_{R_t}+c_t)^{2}=\partial^{2}+2c_t\partial+c_t^{2}$, and the two differ by
-
-$$
-\bigl(\partial+c_t\bigr)^{2}-\Bigl(\partial^{2}-c_t^{2}\Bigr)=2c_t\bigl(\partial+c_t\bigr),
-$$
-
-which is the corpus's own identity at the temporal slot and which is first order in the derivative and in the potential.
-
-**In momentum space the difference is one number per wave number.** The identity's symbol is $2c_t(\sigma_t+c_t)$, and with $\sigma_t=-k_t'$ it is $2c_t(c_t-k_t')$: real, of magnitude $2.0522$ at $k_t'=3$ and $c_t=-0.31$. **The ordering ambiguity decides whether the cross term survives**, and its survival is the difference between a linear and a quadratic response to the potential.
-
-**The paired form is the two-charge reading and the squared form is the one-charge reading.** The factor $(\partial_{R_t}+c_t)$ carries the charge $+ϙ$ and the factor $(\partial_{R_t}-\bar c_t)$ carries $-ϙ$; the squared form uses $+ϙ$ twice and the paired form uses $+ϙ$ and $-ϙ$ once each. **A second-order operator is therefore ambiguous between "the same charge twice" and "the two opposite charges once each"**, and that is the ordering ambiguity in one sentence.
-
-**Nothing in the parity lemma distinguishes the two readings.** Both are real in the corpus's writing, because both are built from real coefficients there. The lemma decides reality; the ordering decides the power of the response. **The article keeps them apart because they are decided by different arguments.**
-
-## The Charge Ambiguity Translates the Pair
-
-**Flipping the charge translates the roots and leaves their separation.** The squared shell is $(k_t'-c_t)^{2}=\lvert\vec\kappa\rvert^{2}+k_m^{2}$; at $k_m=0.7$ and $\lvert\vec\kappa\rvert=3$ its roots with $c_t=-0.31$ are $+2.770584$ and $-3.390584$, and with $c_t=+0.31$ they are $+3.390584$ and $-2.770584$. **The separation is $6.161169$ in both cases and the pair translates by $-2c_t=0.62$**; the symbol at a fixed wave number moves from $10.956100$ to $7.236100$.
-
-**So the sign of the charge is the sign of the linear response.** A charge-conjugated field in the same potential shifts the other way, and the shift is the whole of the effect at first order. **The charge ambiguity is visible in momentum space as a translation of the root pair** and it is not visible as a change of the separation, which is why a mass measurement cannot see it.
-
-**And it is the same operation as the reordering.** The two factors of the paired form differ in exactly the charge they carry, so exchanging them is charging one of them oppositely; flipping the sign of $c_t$ in the squared form is charging both. **The sign ambiguity and the order ambiguity are the same functional read twice**, and the parent's two sentences about the temporal slot are two descriptions of one object.
-
-**What this means for the parent's question.** The parent asks whether the temporal slot's cross term belongs to the energy or to the derivative. In momentum space the answer is that the cross term belongs to neither on its own: it is the difference between the one-charge and the two-charge readings, and the energy-versus-derivative question is the same question asked in position space, where the two readings are two operators related by an integration by parts.
-
 ## They Are One Question
 
 **The one criterion that survives all the choices is the reality of the symbol.** Both readings, both signs of the charge, and both orderings give real symbols in the corpus's anti-Hermitian writing, and none of them does in a writing with a real temporal potential. **So the invariant is the parity condition**, and the variational principle's contribution is to say that it is the condition under which the operator the action produces is real-coefficient.
@@ -112,6 +118,20 @@ which is the corpus's own identity at the temporal slot and which is first order
 **The three statements of the invariant agree.** The parity lemma states it slot by slot; the anti-Hermiticity of $\tilde A_\Phi$ states it once; the requirement that the operator's coefficients be real in the $R$-slot basis states it in the language of the functional. **They are one condition written three ways**, and the article states all three because a reader arriving from any of the three directions should meet the same sentence.
 
 **What the invariant does not do is choose between the readings.** A reader who wants the variational principle to select E2 over E1 will not get it from the reality of the symbol, because both are real. **The selection, where there is one, is the action's**, and the action's operator is the squared one — that is the previous section, and it is a different kind of statement.
+
+## Zero, Pole and the On-Shell Action
+
+**The zero of the symbol is the pole of the propagator.** The mode action's kernel is the symbol, so the propagator at that wave number is the symbol's inverse, and the inverse does not exist exactly where the symbol vanishes. **The zero of the symbol and the pole of the propagator are one locus, read from two sides**, and the article treats them as one object rather than two.
+
+**Why the identification matters here.** The coupled scalar's symbol is the free one with a translated argument, so its zero is the free zero moved by the connection: $k_\mu\to k_\mu-\frac{q}{\hbar}A_\mu$. **The coupling does not create a new zero and does not remove one; it moves the existing one**, and every statement about the spectrum in the coupled theory is the free statement translated.
+
+**The on-shell action.** On a solution the amplitude is a null vector of the symbol, so the quadratic form $\langle\tilde X,\sigma\tilde X\rangle$ is zero. **The mode action vanishes on shell**, and that is not a coincidence: the action is the form, the equation is the kernel, and a kernel vector is annihilated by the form. A reader who expects the on-shell action to equal the energy has imported a non-degenerate Lagrangian from another reading; here the form is the action and its value on a solution is zero.
+
+**Degeneracy and the free case.** Where the symbol has a degenerate zero, two conditions hold at once and the propagator has a double pole. The free case is exactly that, and the article's section says so: **the free symbol's zero is degenerate, and the degeneracy is why the free case carries no information about the coupling.** A single pole in the coupled theory and a double pole in the free one are the same statement about one locus, and the article prefers the second formulation because it survives the translation.
+
+**What the section does not claim.** It does not claim that every zero is a physical mass. A zero at a negative frequency is the other branch, and the article's limits section is where that is separated. **The identification of zero with pole is a statement about the propagator and not about the spectrum**, and the spectrum needs the positivity that the limits section supplies.
+
+**One consequence for the density.** The density per mode is the symbol's derivative in the frequency, so a degenerate zero is also where the density's derivative vanishes. **The three objects — zero, pole and vanishing density — are one locus**, and the article's claim is that they coincide because they are three derivatives of one quadratic form.
 
 ## The Noether Currents: The Charge Per Mode
 
@@ -127,11 +147,21 @@ up to the normalisation the element article fixes, so that the total charge is t
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
 
-## The Source's Symbol
+## The Legendre Transform
 
-**The connection's equation is algebraic only in the constant setting, and there its symbol is the current's transform.** Varying the matter action with respect to $A_\mu$ gives $\delta S_{\mathrm{c}}/\delta A_\mu=-\frac{ϙ}{\hbar}J_\mu$, and the transform of that equation replaces the derivative by $i\tilde K_\Phi$; the current is a bilinear, so its transform is a convolution and the connection's equation is algebraic only where the current is a single mode. **The source's symbol is therefore the transform of the current, and it is a convolution in every other case.**
+**The transform inverts, and it is two-valued.** The mode action is quadratic in the frequency, so the derivative with respect to $\omega$ is linear in $\omega$ and the transform inverts: **the energy is the transform's value and the dispersion relation is the inverse image of the mass shell.** Two frequencies give the same derivative, one on each branch, and the two branches are the reading's two settings.
 
-**The constant setting is the one the article uses and the one the parent uses.** There the current's transform is a coefficient at one wave number, the connection's equation is algebraic, and the fork of §*The Ordering Ambiguity Is the Cross Term* is the fork between two polynomials in the same variable. **Nothing in the source's structure decides which polynomial is the operator's**, and the article states this rather than reading a decision into the variation.
+**Why two-valued and not double-covered.** The quadratic's two roots are $+$ and $-$; they are not the same state twice, because the density per mode carries the sign of the derivative and the two roots give opposite signs. **The pair is the particle and the antiparticle**, and the transform is where the sign becomes visible: the same form, read at positive and negative frequency, gives two energies with two densities.
+
+**What the transform does not do.** It does not choose between them. **The choice is the state, and the transform is a function of the form**, so the article records the two branches and leaves the selection to the setting. That is why the section on the two settings exists separately: a transform is a property of the action, and a setting is a property of what the reader does with it.
+
+**The coupling's place.** The connection translates the frequency and the wave number, so the transform's two branches are the free branches at the shifted arguments. **The transform inherits the translation and adds nothing to it**, and that is the honest statement of what the momentum reading can say about the coupling.
+
+**The slope and the density.** The derivative of the action with respect to $\omega$ is the density per mode, and the transform's slope is therefore the density as a function of the energy. **The transform makes the density a function of the branch**, and the free case's degenerate zero is where the two densities meet — which is exactly where the transform's two roots coincide.
+
+**One caution, and it is the one the article's limits section repeats.** The transform is taken at a fixed wave number. **A transform taken along a solution is the identity and gives the on-shell action, which is zero**, and the article does not take it. That is not an omission: on shell the form vanishes, so the transform of the on-shell form is zero for every branch and distinguishes nothing.
+
+**What the section adds.** It states where the two settings come from, and it states that they come from the form and not from the coupling. **The reading's two branches are older than the connection**, and the coupled article's contribution is that the connection moves them without splitting them.
 
 ## Limits
 

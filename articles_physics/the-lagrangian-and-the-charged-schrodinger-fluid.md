@@ -124,6 +124,20 @@ with $q$ the charge. The velocity is the mechanical one, and that is the whole o
 
 **The one thing it states that the block does not.** The block's charged article notes that the coupling adds no fourth datum and adds a redundancy. The action states the redundancy as the invariance of the density, and it lets the count be read: four terms, two of them gauge invariant only in pairs, one of them not gauge dependent at all, and one of them — the potential energy — whose partner is the phase's time derivative. **The count of independent gauge-invariant combinations is two**, $\mathcal E$ and $\vec\pi$, and they are the two the word's phase and boost would have supplied at the rung above.
 
+## What the Fluid Adds That the Element and the Limit Do Not
+
+**The coupling becomes a modification of the fluid's own velocity.** In the element reading the connection enters the covariant bracket; in the fluid reading, the corresponding statement is that **the velocity that carries the density is not the canonical velocity but the gauge-shifted one**. The minimal substitution is then not a recipe but a description: the fluid moves in the field the particle feels, not in the potential the chart names.
+
+**What it adds: the two velocities and the slip between them.** The canonical velocity and the mechanical velocity differ by the connection evaluated along the flow, and the fluid reading is where both are written side by side. **The element reading has the same two objects but does not need to distinguish them**, because it never asks which one carries the density. The fluid reading asks, and the answer — the mechanical one — is the article's contribution.
+
+**What it adds: the density fluctuation and the potential.** The charge density is the density, and the potential's coupling to it is an energy. In the fluid reading that energy is a pressure-like term in the fluid's own frame, with the temporal slot entering through the rapidity and the spatial slot through the boost. **The two slots' different types are visible here as two different pressures**, which is a statement the element reading can make only as a type fact.
+
+**What it does not add.** No new equation: **the continuity equation is the same continuity equation with a covariant divergence**, and the article says so in one line.
+
+**What it inherits.** The gauge covariance, the nodal exception, and the frame's constrained character. **The first is inherited exactly and the third is inherited with a shift**, because the potential now depends on the frame and the frame is where the potential is extremal.
+
+**What the coupling costs the fluid reading.** Nothing. **The fluid reading was already the reading in which the velocity is primary, and the coupling is a velocity shift**, so the coupled fluid is the free fluid with one word changed. The article's brevity about it is deliberate.
+
 ## Open Questions
 
 1. **The pair's rank in the operator setting.** The action above is written for a homogeneous field. In the inhomogeneous case the amplitude's gradient and the potential's gradient both carry spatial structure, and whether the Clebsch identification survives — that is, whether the potential remains a second potential when $\vec B$ varies — is not settled here. The block's charged article keeps its identity $\vec\nabla_\Phi\times\vec v=ϙ\vec B/m$ in general, so the rank statement survives; the *representation* is the part that may not.

@@ -174,6 +174,20 @@ and the three variations are these. Varying $\vec\lambda$ returns the definition
 
 **And the direction of the map matters here as it does there.** The forward map from the fluid's data to the field is exact away from the nodes: given $\rho_{\mathrm{num}}$ and $S$, the element is $\varrho e^{i\theta}\varepsilon e_t$ and there is nothing to solve. The reverse map, from an arbitrary barotropic irrotational inviscid flow to a wave, holds only on the image. The action sits on the fluid side and its stationarity conditions are the fluid's equations, so it does not need the reverse map at all; what it inherits is the map's domain. [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html) states the map and its qualification, and [The Fluid–Wave Correspondence: Which Constant Each Field Carries](the-fluid-wave-correspondence-which-constant-each-field-carries.html) states which direction is exact in which row. This article adds the observation that the action is the object the two directions share.
 
+## What the Fluid Adds That the Element and the Limit Do Not
+
+**One object, three readings, and the difference is what each takes as primary.** The element reading starts from the field and asks what its polar word is; the limit reading starts from the truncated action and asks what survives; **the fluid reading starts from the velocity field and asks what the density must do for that velocity to be a flow.** The third is the only one of the three in which the velocity is given before the potential, and that ordering is the fluid's contribution.
+
+**What it adds: the transport as an identity.** In the fluid reading the continuity equation is not derived from a variation; it is what it means for a density to be carried by a velocity field. **The equation that the limit reading spends a section deriving is the fluid reading's definition**, and a reader who wants to know why the transport survives every truncation finds the answer here: the transport is kinematics.
+
+**What it adds: the quantum potential as a pressure.** The term the limit reading deletes and the element reading carries is, in the fluid reading, the gradient of a pressure that the density's inhomogeneity exerts on itself. **Calling it a pressure changes what a reader expects its size to be**: a pressure on a slowly varying density is small, and that is the same statement as the order count, made in a language that does not need an expansion parameter.
+
+**What it adds: the rest frame.** The velocity field defines a local rest frame, and the fluid reading is the only one of the three that makes the frame explicit. **Every statement about what "the density's frame" means is inherited from here**, including the corpus's spin fluids' frame variables.
+
+**What it does not add.** No new equation. **The fluid reading's three equations are the element reading's three equations**, and the article says so: the fluid is a reading of the same content and not a different theory.
+
+**What it inherits.** The nodal exception, which is now a place where the velocity is undefined rather than where the phase is. **The same failure in a third language**, and the article's one sentence about it is that the three languages agree about where the description stops.
+
 ## Summary
 
 **The action.** $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}$, four terms, no quantum potential and no barotropic pressure.

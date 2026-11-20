@@ -123,6 +123,20 @@ $$
 
 **What the shift cannot do.** It cannot change the reality of the symbol, because $ϙ\tilde A$ is real and adding a real element to a Hermitian one keeps it Hermitian. So the coupled article's reality statements are the free ones, and the gauge invariance of the symbol is the statement that a shift by a gradient moves the zero and not the spectrum.
 
+## Zero, Pole and the On-Shell Action
+
+**At a fixed frequency the symbol is a matrix, and its zero is a condition on the wave number.** The coupled Schrödinger mode action is $\langle\tilde X,\sigma_{\mathrm{gco}}(\omega,\vec k)\tilde X\rangle$, and the symbol depends on $\omega$ and $\vec k$ through the shifted arguments only. **The form's kernel is the equation at that frequency**, so the zero of the symbol is the dispersion condition: the wave number at which a fixed frequency propagates.
+
+**Zero and pole are one locus.** The resolvent at the frequency is the form's inverse, and it fails exactly where the symbol is singular. **The pole of the resolvent is the zero of the symbol**, and the article states the identity once because every later statement about the spectrum is a statement about it.
+
+**Why the coupling only translates.** The shift is $\omega\to\omega-q\varphi$ in the temporal slot and $\vec k\to\vec k-q\vec A$ in the spatial ones, so the zero is moved and not deformed. **The coupled dispersion is the free dispersion written in the shifted variables**, and that is the whole of the coupling's effect on the spectrum. The section on the reality of the action already established that the shift is real in this setting, which is why the moved zero stays on the real frequency axis.
+
+**The on-shell action.** On a solution the amplitude is a kernel vector, so the quadratic form vanishes and the mode action is zero. **The mode action is zero on shell because the action is the form**, and the statement is the same one the free article makes, with the translated symbol in place of the free one.
+
+**What is not claimed.** The section does not claim that every zero is a bound state or that the spectrum is bounded below. **A zero of the form is a propagation condition and nothing more**, and the article's limits section is where the two settings — the fixed-frequency reading and the evolution reading — are separated.
+
+**One difference from the scalar case, stated once.** The Schrödinger symbol is first order in the frequency, so its zero is a single condition and not a quadratic one. **The pole is simple**, and a simple pole is what makes the residue — the density per mode — a first derivative rather than a ratio of two roots. That is the reason the free article's density is $\hbar$ times the norm and not a difference of two branches.
+
 ## The Noether Currents: The Charge Per Mode
 
 **The charge at a mode.** The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,

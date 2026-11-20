@@ -128,6 +128,20 @@ and $\lambda^{-1}\partial_\mu\lambda=iϙ\partial_\mu\Gamma/\hbar$ is central, so
 
 **The one asymmetry within the layer.** Of the eight articles, this is the one in which the coupling changes nothing that the canonical structure can see. That is not an accident of the formalism: the coupling's image is the phase and the boost, and the canonical structure's non-trivial rows are the phase's and the spin's. **The one row the coupling could have moved is the spin's, and the type argument is exactly what forbids it.**
 
+## What the Fluid Adds That the Element and the Limit Do Not
+
+**The connection enters the torque, and that is the article's whole contribution.** In the coupled spin-half fluid the covariant derivative is not only in the transport; it is in the torque's building blocks, so **the polarisation rotates partly because the field does work on it**. The element reading has the same term inside the covariant bracket; the fluid reading is where its effect on the frame's balance is visible.
+
+**What it adds: the two velocities again, now with spin.** The canonical velocity and the mechanical velocity differ by the connection, and in the spinning fluid the difference also enters the spin's transport. **A reader who has only the charged scalar fluid has the slip but not its consequence for the spin**, and the article's section on the torque is where the consequence is worked out.
+
+**What it adds: the charge as a density and not an integral.** The fluid reading makes the charge a local density whose conservation is the continuity equation; the element reading makes it a Noether current. **The two are the same current**, and the fluid reading is the one in which "the charge is the density" is a definition rather than a result.
+
+**What it does not add.** No new equation. **The article says in its first paragraph that every equation here is the element article's**, and the value of the reading is in the two statements above.
+
+**What it inherits.** The torque, the nodal exception, and the frame's constrained character — the last now with the potential's frame dependence, so the frame is reconstructed and then fixed by the coupling rather than by the mass alone. **That is the one place where the coupled fluid differs from the free one in kind**, and the article says so once.
+
+**Where the reading stops.** At the node and at the frame's degeneracy, where the potential's extremum is not unique. **The second failure is new in the coupled fluid**, and the article states it rather than inheriting the free fluid's silence.
+
 ## Open Questions
 
 1. **The bracket with the connection.** Whether the Dirac bracket closes when the constraints are computed with the covariant one-form — that is, whether the connection's presence changes the class of the four constraints — is not settled. The polar companion's computation is for the free field.

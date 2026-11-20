@@ -12,9 +12,17 @@ The family is one method applied to one field at a time: write the action, vary 
 - [The Non-Quantum Limit Readings](the-lagrangian-non-quantum-limit-readings.html), eight articles: the action truncated in the phase's rate.
 - [The Fluid Readings](the-lagrangian-fluid-readings.html), eight articles: density, phase, velocity, rotor.
 
-**The coupled corner.** [The Coupled Readings](the-lagrangian-coupled-readings.html) collects the twelve minimal-coupling articles, which are the same four readings applied to a matter field plus one connection.
+**The coupled corner.** [The Coupled Readings](the-lagrangian-coupled-readings.html) collects the sixteen minimal-coupling articles, which are the same four readings applied to a matter field plus one connection.
 
 **The frontier.** [Beyond the One-Particle Fields](the-lagrangian-beyond-one-particle.html) collects the eight articles that reach past the one-particle actions: the electromagnetic field, QED, the interacting scalar, the electroweak theory, the Pauli limit, the Rarita–Schwinger action, linearised gravity, and the map of the second quantisation.
+
+**The three hubs added in the last pass.**
+
+- [The Lagrangian Articles by Object: Four Fields, Nine Articles Each](the-lagrangian-articles-by-object-four-fields-nine-articles-each.html): the family read from the object instead of the reading.
+- [The Quantisation Hub: The Sixteen Articles That Import the Promotion](the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html): the articles on the far side of the boundary, in the order the operation is performed.
+- [The Sector Hub: What the Lagrangian Family Reaches in Each Sector](the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html): the four sectors and their four different answers.
+
+**The object hubs.** Each of the four objects has a page listing every article the corpus has on it, not only the family's: [Klein–Gordon](the-klein-gordon-object-every-article-on-one-equation.html), [Dirac](the-dirac-object-every-article-on-one-equation.html), [Proca](the-proca-object-every-article-on-one-equation.html), [Schrödinger](the-schrodinger-object-every-article-on-one-equation.html). These are the pages that answer the question the five reading hubs cannot answer: which eight of the sixty-four articles on this object is the family's.
 
 ## The schema
 

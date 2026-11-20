@@ -138,6 +138,34 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
+## The Truncation and Its Error
+
+**The error is the deleted block and its order is two.** The truncated action differs from the parent by the scale's kinetic term, which carries two derivatives and therefore two powers of the parameter. **The error is of order $\epsilon^{2}$**, and the ratio that makes it small is the amplitude's gradient against the mass term, $|\partial\varrho|^{2}/(k_m^{2}\varrho^{2})$.
+
+**Restoring it adds the quantum potential.** Varying the parent with the block present gives the truncated equation plus a divergence of a gradient over the density. **The correction is a quantum term with the density in its denominator**, so it is large where the density is small and it is the reason the truncated theory cannot describe a nodal region.
+
+**The error is amplitude-only and gauge invariant.** The deleted block contains no phase and no connection, and the scale is gauge invariant. **The correction therefore cannot move the transport equation, cannot move the current, and cannot break gauge covariance**, and it commutes with a boost because the block is a Lorentz scalar.
+
+**What the coupling does to the error.** Nothing, and that is worth stating: the connection sits inside the covariant bracket and the deleted block is the scale's gradient squared, which the connection does not enter. **The error is the same functional of the amplitude in the coupled theory as in the free one**, which is why the coupled article's error section is one paragraph long.
+
+**What the error is not.** It is not a bound. **The expansion is asymptotic and convergence is not claimed**, so the statement is that the truncated equations hold to order $\epsilon^{2}$ where the amplitude varies slowly, not that the solutions are close in a norm.
+
+**Why the section is separate from the deletion.** Which term is deleted and what the deletion costs are two questions, and a reader can be right about the first and wrong about the second. **The article answers them in two sections** for that reason.
+
+## What Survives
+
+**The covariant transport, verbatim.** The phase's variation of the truncated action gives the covariant transport because the deleted block contains no phase and no connection. **The equation surviving is not an approximation: it is the parent's equation with the order-two term removed**, and the removal does not touch it.
+
+**The mass shell on the truncated class.** The scale's variation gives a constant amplitude along the flow, and on that class the mass-shell relation is exact. **The truncated scale equation is the statement that the amplitude does not vary**, not an eikonal equation; the eikonal is the parent's, and it is restored by putting the deleted block back.
+
+**The currents, unchanged.** Density, charge and energy are first integrals of the transport, and the transport is untouched. **Their expressions are the parent's**, and the coupling enters them only where it entered before — through the shifted frequency in the energy and not at all in the charge.
+
+**The gauge covariance.** The truncated action is a sum of gauge-covariant blocks and the deleted block was one too, so the truncation commutes with a gauge transformation. **The truncated theory is gauge invariant**, which the article states as a separate section rather than as a remark, because it is the property that fails in the first-order family.
+
+**The covariance under boosts.** The deleted block is a scalar, so the truncation commutes with a boost. **The truncated coupled theory is Lorentz covariant**, and the article contrasts this with the family whose deleted term is a spatial gradient and whose truncation therefore singles out a frame.
+
+**What does not survive.** The amplitude's dynamics near a node, and any configuration whose density varies on the Compton scale. **The article states the boundary once**, in this section, so that the earlier sections can be read as exact statements on a restricted class rather than as approximations everywhere.
+
 ## What the Variational Route Adds
 
 **Three things, and the second is the coupling's.**

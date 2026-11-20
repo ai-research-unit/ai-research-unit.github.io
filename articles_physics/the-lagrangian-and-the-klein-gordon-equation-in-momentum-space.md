@@ -1,6 +1,6 @@
 # __The Lagrangian and the Klein–Gordon Equation in Momentum Space__
 
-**Declared omissions.** The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The scalar action imposes no constraint, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -158,6 +158,20 @@ $$
 **This is the parent's conclusion reached in one line.** The parent's §*Does the Second-Order Structure Fit $\mathbb{B}_{\Phi}/\mathbb{B}_{\Psi}$?* argues in position space that the sector split gives two $i$-related copies of the same equation and is therefore not the doubling the equation needs. In momentum space the same statement is a property of a scalar multiple of the identity: an operator proportional to $I$ has one eigenspace, which is the whole space, and the whole space is where the sectors live.
 
 **The thesis of the article is this finding read backwards.** Because the free symbol is central and carries no sector content, every sector statement at Klein–Gordon level must come from the potential. The article's four other findings are the four ways in which it does: the spectrum, the multiplicity, the reality, and the threshold. Remove the potential and all four collapse to one number.
+
+## The Legendre Transform
+
+**Quadratic in the frequency, so two-valued.** The mode action is quadratic in $\omega$, so its derivative with respect to $\omega$ is linear and the transform inverts. **The inverse image of the energy is two frequencies**, and the two are the reading's two branches: the same form, read at $+\omega$ and at $-\omega$, with densities of opposite sign.
+
+**The two branches meet at one wave number.** The quadratic's discriminant vanishes where $\vec k^{2}+k_m^{2}=0$, and there the two roots coincide. **That is the article's tachyon threshold**, and in the transform's language it is the place where the two branches become one and the density's sign stops being able to distinguish them. Below it there are two branches; above it there is none.
+
+**Why the threshold is a property of the form.** It is the discriminant of the symbol's frequency dependence, and the symbol is the form's kernel. **The threshold is therefore not a statement about a particle's mass but a statement about when the form's two roots are real**, which is why the article's section on it precedes the section on what the free case does and does not say.
+
+**What the transform adds.** The slope: the derivative of the action with respect to $\omega$ is the density per mode, so the transform maps the form's argument to its density. **The slope's sign is the branch's sign**, and the two branches therefore have opposite slopes at the same energy — the statement that makes the particle and the antiparticle distinguishable in this reading.
+
+**What the free case says, in the transform's language.** Nothing about the coupling, and the article says so. **The free transform is the coupled transform at zero connection**, so every free statement is a special case and no free statement tests the shift. That is why the coupled article's transform section is short and its zero-pole section is long.
+
+**One caution the article keeps.** The transform is taken at fixed wave number and fixed amplitude, before the equation is imposed. **On shell the form vanishes and the transform of zero is zero**, so the order matters and the article states it once.
 
 ## Limits
 

@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This article states the action whose Euler–Lagrange equations are the coupled Dirac equation, and it reads what the action's symmetries give. It is the element-form companion of *The Lagrangian and the Dirac Equation*, and it is the first of two coupled variational articles. The second substitutes the polar word into the action of this article and reads the constraint structure.
+This article states the action whose Euler–Lagrange equations are the coupled Dirac equation, and it reads what the action's symmetries give. It is the element-form companion of *The Lagrangian and the Dirac Equation*, and it is the first of two coupled Lagrangian articles. The second substitutes the polar word into the action of this article and reads the constraint structure.
 
 **The equation.** The coupled pair is
 

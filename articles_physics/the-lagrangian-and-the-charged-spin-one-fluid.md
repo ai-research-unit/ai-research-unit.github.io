@@ -124,6 +124,20 @@ and the right-hand side is not zero, is imaginary, and carries the carrier's pha
 
 **The layer's ledger, in one sentence per article.** The scalar first-order rung has one substitution in two brackets; the scalar relativistic rung has a substitution that meets the shell; the spinor rung has a substitution whose image is the phase and the boost and never the rotor; the vector rung has a substitution that reaches the derivative term and leaves the pressure alone and takes the continuity away. **Four charged articles, one connection, four different reaches** — and the reaches are read off the connection's type in the algebra, which is the same argument in all four.
 
+## What the Fluid Adds That the Element and the Limit Do Not
+
+**A charge and a constraint in the same fluid, and the article's claim is that they do not interact.** The coupled Proca fluid has a charge because the phase is coupled, and it has a constraint because the scalar part of the conjugate gradient vanishes. **The fluid reading is where the two are seen to be independent**: the charge is the phase's conjugate, the constraint is the frame's, and neither equation contains the other.
+
+**What it adds: the constraint as a statement about the flow.** In the element reading the constraint is a variation's result; in the fluid reading it says that **the fluid's velocity has no component along the direction the mass fixes**. That is a kinematic statement about a flow, and the article's section on the constraint is where it is made.
+
+**What it adds: the charge's frame independence under coupling.** The connection enters the phase's bracket and the scale's bracket and not the frame's, so the charge density is the density and the current is the shifted gradient. **The element reading has the same statement as a type fact; the fluid reading has it as the statement that the frame does not carry charge**, which is the sentence the article's comparison section contains.
+
+**What it adds: the potential's two pressures.** The temporal slot couples to the density through the rapidity and the spatial slot through the boost, so the coupling is a longitudinal pressure and a transverse one in the fluid's frame. **The two are different pressures because the two slots have different types**, and the article says so once.
+
+**What it does not add.** No new equation. **Every fluid equation is the element article's**, and the first paragraph says so.
+
+**What it inherits.** The constraint's exactness, the absent mass in the charge, and the frame's constrained character. **It does not inherit a torque**, because the spin-one fluid's frame is not a density of angular momentum, and the article's one sentence about that separates it from the spin-half family.
+
 ## Open Questions
 
 1. **The extra four parameters.** Whether the carrier's remaining freedom can be read as a second fluid, with its own density and phase, is not settled. The block's article records the doubling and leaves it.

@@ -511,6 +511,8 @@
 <a href="articles_physics/the-lagrangian-and-the-klein-gordon-equation-in-polar-variables.html">The Lagrangian and the Klein–Gordon Equation in Polar Variables</a>
 <!-- the polar action as the element action in the coordinates of the word: the bracket form $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}\mathcal{A}^{*})$ with $\mathcal{A}=\tilde\Xi^{-1}\partial\tilde\Xi$, the frame density $r^{2}\cosh\theta_{\mathrm{rpd}}$ weighting every square, and the exact metric with $\cosh\theta_{\mathrm{rpd}}$ on the four squares and $\sinh\theta_{\mathrm{rpd}}$ on the two cross terms, amplitude–rapidity and phase–rotor with the cosine between the axes; the unit determinant of the amplitude–rapidity block and why the Legendre transform is regular; the potential $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)=r^{2}V$ with the same $V$ as the Schrödinger companion; the central field as Madelung\'s action and its two equations as the transport equation and the quantum Hamilton--Jacobi equation; the exact equivalence for the general element by the invertible Jacobian, with no constraint and no multiplier, against the first-order case where four momenta vanish; the charge as the phase rate times the density and the energy as a sum of squares; two bases of one tangent space, the central field\'s diagonal Jacobian and the triangular correspondence; what the polar principle adds and does not; open questions. -->
 
+<a href="articles_physics/the-lagrangian-and-the-interacting-scalar-field.html">The Lagrangian and the Interacting Scalar Field</a>
+<!-- the free action plus $-\frac{\lambda}{4}N^{2}$; the nonlinear equation; the nonlinearity as a density-dependent mass and the dispersion shift $\lambda N$; the stability threshold; the current unchanged; the exactness and the missing $S$-matrix. -->
 <a href="articles_physics/the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html">The Path Integral and the Klein–Gordon Equation in Biquaternionic Form</a>
 <!-- the configuration space and the action; the generating functional and the free Gaussian; the semiclassical expansion; the Wick rotation and the Euclidean functional. -->
 
@@ -562,6 +564,10 @@
 <a href="articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.html">The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form</a>
 <!-- the operator and the defining equation; the poles and the four prescriptions; the retarded Green's function in position space; the advanced kernel and the boundary condition; microcausality and the Pauli–Jordan function; the Feynman propagator and time ordering. -->
 
+<a href="articles_physics/the-klein-gordon-object-every-article-on-one-equation.html">The Klein–Gordon Object: Every Article on One Equation</a>
+<!-- every article the corpus has on the Klein–Gordon equation, grouped by category: the five readings of one action, the four coupled ones, the four fluids, the propagator, the path integrals and the quantisation; the count and why it is worth stating. -->
+
+
 ### Particles of spin 1/2
 
 <a href="articles_physics/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>
@@ -599,6 +605,9 @@
 
 <a href="articles_physics/the-lagrangian-and-the-coupled-dirac-equation.html">The Lagrangian and the Coupled Dirac Equation</a>
 <!-- the coupled action as the free action with the two gradients replaced by the two covariant operators, the left part seeing $\tilde A_\Phi^{\natural}$ and the right part $\tilde A_\Phi$, the asymmetry being the conjugate operator's and not a choice; reality inherited from the parent with the connection's contribution cancelling between the field and its conjugate, so the potential buys local invariance and not realness; the coupling derived and not postulated, since the mass term is invariant under a local central phase without help while the kinetic term is not, and the repair $\delta\tilde A_\Phi=-\tilde\nabla_\Phi\Gamma$ is unique within the abelian class with the sign fixed by the gauge law's sign — the equation accepts any operator and only the functional selects the operator of a locally phased field; the variation giving the coupled pair, sixteen real equations and the compatibility condition differing from the free one only by the curvature; the local phase's Noether current, a sum over the parts in the temporal slot and a difference in the spatial ones, shown to be one object with three writings — the action's display, the chart's $\rho\cosh\theta_{\mathrm{rpd}}$ and $\rho\sinh\theta_{\mathrm{rpd}}u_{\mathrm b}$, and the Gordon pairing with two frame units — the first two agreeing by the parent polar article's evaluation and the first and third slot by slot with the letter assignment $\tilde\Xi_R=\tilde\Xi\Pi_-$, $\tilde\Xi_L=\tilde\Xi\Pi_+$; the candidate that fails, $i\tilde\Xi\tilde\Xi^{*}$, gauge invariant, of the density sign, formally right in every respect but conservation, its divergence nonzero at the same order as the current on a two-mode exact solution while the pairing's vanishes to machine precision, the mechanism being that a product carries the two parts with one sign and a current with two; the repair as a triple product with one unit between the fields and one fixed frame unit on the right, every factor of the algebra's, and the residual gap stated exactly as the choice of the two frame units, which the algebra does not single out and the frame supplies; the covariant stress tensor, conserved for a constant connection and with the Lorentz force density as its divergence otherwise; the two settings kept apart, the constant one closed with a finite product of exponentials and the action's value on a solution the free value, the operator one not closed and inheriting none of it; the loop phase and the flux quantum, with the Wilson-loop construction's different reading of a closed loop recorded as an unreconciled corpus tension. -->
+
+<a href="articles_physics/the-lagrangian-and-quantum-electrodynamics.html">The Lagrangian and Quantum Electrodynamics</a>
+<!-- the Dirac action with the covariant derivative plus the Maxwell term; why minimal coupling is the unique local choice; the three variations and the identity that makes the system consistent; three appearances of one constant; the vector current conserved and the axial one broken by the mass; the four words the corpus cannot support, quantum among them. -->
 
 <a href="articles_physics/the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html">The Lagrangian and the Coupled Dirac Equation in Polar Variables</a>
 <!-- the coupled action with the word substituted, $S=\int\mathrm{d}^{4}r[-\hbar c\rho\,\partial_{r'_t}\theta_{\mathrm{pha}}-\rho V-mc^{2}r^{2}]$ with $\rho=r^{2}\cosh\theta_{\mathrm{rpd}}$, one velocity and a coefficient that carries the rapidity, the rotor contributing nothing to the kinetic term because its bracket is a real vector and its only scalar partner is the Hermitian boost bracket; the action as a constrained system, seven of the eight momenta vanishing or fixed with $\pi_{\theta_{\mathrm{pha}}}=-\hbar c\rho$ the one genuine momentum, two Euler–Lagrange equations carrying time derivatives and six not, the six being $\partial(\rho V)/\partial p=0$ on the frame variables; the parameterisation exact, so the unit conditions need no Lagrange multiplier — the contrast with the tensor formulations' three — while the six constraints remain and are Euler–Lagrange equations, the distinction between no multipliers and no constraints being the article's main technical point; the word's phase current as the temporal slot of the element current and not the whole of it, the spatial slots coming from the boost, so the word has two flows where the action has one symmetry; the reconstruction conjecture, its statement, its strongest objection — that any conserved current can be presented as some symmetry's current, so a construction that does not single out its object has derived nothing — and its partial answer relative to a frame, with the Dirac brackets named as what would settle it and not computed; the bracket expansion with the coupling written beside the two brackets it joins and the type table giving the potential's reach in advance; the operator setting stated and not derived, with the multipliers absent and the spin-transport law the rotor bracket's equation rather than an addition, and with the closure left open. -->
@@ -714,6 +723,10 @@
 <a href="articles_physics/bhabha-scattering-in-biquaternionic-form.html">Bhabha Scattering in Biquaternionic Form</a>
 <!-- electron-positron scattering; the exchange and annihilation channels and their relative sign; the cross section and the small-angle luminosity monitoring; crossing symmetry with Møller and its numerical check; the biquaternion reading, the annihilation current and the framework's charge conjugation; positronium as the open bound-state case. -->
 
+<a href="articles_physics/the-dirac-object-every-article-on-one-equation.html">The Dirac Object: Every Article on One Equation</a>
+<!-- every article on the Dirac equation, grouped by category: the chiral pair, the two-sided form, the quaternionic reading and their readings, the coupled corner, the fluids and the quantisation; the count and why the spinor splits into three objects that look like one. -->
+
+
 ### Particles of spin 1 and above
 
 <a href="articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.html">The Proca Equation: Massive Spin 1 in Biquaternionic Form</a>
@@ -725,6 +738,8 @@
 <a href="articles_physics/the-lagrangian-and-the-proca-equation.html">The Lagrangian and the Proca Equation</a>
 <!-- the action whose Euler–Lagrange equation is the Proca equation, $S=\int d^{4}r\,[\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12k_m^{2}\langle\tilde A_\Phi\rangle_\natural]$ with the biquaternionic curl for $\tilde F$ and the quaternionic norm for the mass; the reality of both terms checked by the conjugation rules, the mass term real because the norm of a material element is real; the pairing $\mathrm{Re}\,\mathrm{Sc}(\cdot\cdot)$ chosen because the alternative quaternionic pairing gives an action whose variation is not the equation, with a numerical demonstration of the difference; the variation with respect to $\tilde A_\Phi$ giving $(\tilde\nabla_\Phi)^{\natural}\tilde F$ and its equation, four real equations for four real parameters; the absence of the Lorenz condition from the variation and its derivation from the divergence of the equation, with the $k_m\ne0$ mechanism of the secular term; the Noether currents, the gauge symmetry's vanishing current as the statement that the current is the equation's left-hand side, the space-time translations' stress tensor $\tilde T_{\mu\nu}$ with the symmetrization and the trace $-mk_mc\,\mathrm{Sc}(\tilde A_\Phi\tilde A_\Phi^{\natural})$ vanishing only at $k_m=0$, and the Lorentz rotations' angular momentum with the orbital and the intrinsic parts; the mass as the only obstruction to the conformal trace and the gauge current; and the ledger, the action standard and the currents known, the algebra's rewriting the content. -->
 
+<a href="articles_physics/the-lagrangian-and-the-electromagnetic-field.html">The Lagrangian and the Electromagnetic Field</a>
+<!-- one term, $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$; its sign and its reality; the variation and the integration by parts; Gauss's law as the scalar part and the gauge orbit as the kernel; the longitudinal part not a degree of freedom; a positive stress and no free charge; what the principle adds and what it relabels; no quantisation. -->
 <a href="articles_physics/the-lagrangian-and-the-proca-equation-in-polar-variables.html">The Lagrangian and the Proca Equation in Polar Variables</a>
 <!-- the polar word substituted into the element-form action; the field term split additively as $\tfrac12\mathrm{Re}\,\mathrm{Sc}[((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi)^{2}]-\tfrac12S^{2}$ with $S$ the Lorenz scalar, so the curl term carries the propagation, the square carries the constraint and the mass carries the scale; the mass term as a definite power of the modulus whose sign is the branch, $+\tfrac12k_m^{2}r^{2}$ timelike and $-\tfrac12k_m^{2}r^{2}$ spacelike, a statement the element form cannot make; the change-of-variables argument, the word a diffeomorphism of the branch so that $\delta S/\delta q^{i}=(\delta S/\delta\tilde A_\Phi)\cdot\partial\tilde A_\Phi/\partial q^{i}$ with invertible Jacobian, which makes the chart's Euler–Lagrange equations the transformed field equation and gives the scale equation with the frame's quadratic source and the frame transport; the Hessian $\partial^{2}\mathcal L/\partial\dot q^{i}\partial\dot q^{j}=\epsilon\,\partial\vec A/\partial q^{i}\cdot\partial\vec A/\partial q^{j}$ an outer product of four vectors in three dimensions, of rank three, whose null direction changes the scalar potential at fixed vector potential, so the chart inherits the primary constraint and the Lorenz condition is the secondary one; the count kept apart, no Lagrange multiplier for the normalization of the boost in contrast with Takabayasi's three multipliers, but no escape from the vector field's own constraint pair, against the Schrödinger polar case whose first-order Lagrangian makes the momenta themselves the constraints; the Lorenz condition in the chart displayed and read as the secondary constraint that removes one of four parameters on shell; and the limits, the spacelike branch's equations not written out, the lightlike crossing set, and the Dirac bracket not carried through in the chart. -->
 
@@ -799,6 +814,10 @@
 
 <a href="articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html">Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth</a>
 <!-- the three carriers of the base algebra named first, with the invariants $N$ and $B^2$ that each of them fixes; the algebra and its defining module; what a module can carry, that is a finite multiple of spin one-half and nothing else, and why that is a statement about modules and not about the algebra's spins; the dimension obstruction and its insufficiency, with the four-vector's weight content $1\oplus0$ as the deciding datum; the spin-zero carrier as the centre, native and not a gap, with $\Lambda^2S\cong\mathbb{C}$ and $\mathrm{End}_\mathbb{B}(S)$ as its two other descriptions, and the Einstein–Mayer claim of one equation for spins $0,\tfrac12,1,\tfrac32$ read as a claim about a tensor carrier; tensor products and the generation of higher spin, $S^{\otimes n}$, $\mathrm{sym}^{2s}(S)=(s,0)$ and the constraints that remove the admixture; the explicit cases of spin one, three-halves and two; the tensor powers of the algebra; why there is no fourth carrier — two actions, three isotypic components, and the multiplication map that kills the spin-two summand of $\mathbb{B}\otimes\mathbb{B}$; the adjoint action as a carrier and not a defect, and the impossibility of a spin-one module; the same catalogue in the Clifford algebra, $\mathbb{B}\cong\mathrm{Cl}_{1,3}^{+}$. The two commuting $\mathbb{H}$-actions are read as the two spinor index families, the failure of full bilinearity the obstruction to their independence. -->
+
+<a href="articles_physics/the-proca-object-every-article-on-one-equation.html">The Proca Object: Every Article on One Equation</a>
+<!-- every article on the Proca equation, grouped by category: the readings, the coupled corner, the fluids, the branch split and the quantisation; the constraint that removes one degree of freedom, stated once as the set's common content. -->
+
 
 ### Focus on informational aspects
 
@@ -943,6 +962,10 @@
 
 <a href="articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a>
 <!-- the algebraic locus; the locus in momentum space, in configuration space and in state space; null solutions of the free equation; what stops at the locus. -->
+
+<a href="articles_physics/the-schrodinger-object-every-article-on-one-equation.html">The Schrödinger Object: Every Article on One Equation</a>
+<!-- every article on the Schrödinger equation, grouped by category: the readings of the action, the coupled forms, the fluids, the transform and the path integral; reality as the weakest of four conditions, and why this is the set to read first. -->
+
 
 ### Particles of spin 1/2
 
@@ -1140,6 +1163,8 @@
 <a href="articles_physics/the-lagrangian-and-the-dirac-equation-in-the-non-quantum-limit.html">The Lagrangian and the Dirac Equation in the Non-Quantum Limit</a>
 <!-- the negative result that gives this family its own route: the polar action is a one-form plus a potential, so it is first order, the amplitude's derivative enters linearly through $r^{2}$, and there is no $\lvert\partial r\rvert^{2}$ group to delete — the limit here is a substitution of the symbol for the operator, not a truncation; the four vanishing momenta and the closed forms of the other four, the Hessian zero, the equations $\Omega\dot q=\mathrm{d}U$; the criterion entering through the remainder at $\epsilon$ as an operator and $\epsilon^{2}$ in the eikonal, with no commutator because there is no connection; the positive result as an extremum principle for the frame — rapidity equal to the flow's, axis equal to the momentum's, eikonal equal to the mass potential there; the rotor's momentum proportional to $\sinh\theta_{\mathrm{rpd}}$ as the variational reading of the spin's order; the constraint count unchanged, the third of the three relations the families bear to their constraints. -->
 
+<a href="articles_physics/the-lagrangian-and-the-pauli-equation.html">The Lagrangian and the Pauli Equation</a>
+<!-- the Dirac action in the rest frame to first order in $1/m$; the Schrödinger action plus $\frac{q}{m}\vec S\cdot\vec B$; $g=2$ as the ratio of two currents and not a parameter; the error term displayed; the three losses of the limit. -->
 <a href="articles_physics/the-coupled-dirac-equation-in-the-non-quantum-limit.html">The Coupled Dirac Equation in the Non-Quantum Limit</a>
 <!-- the parent's two displays confronted, the boxed constant-setting action being the operator-setting one with the gradients of $r$, $\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{axr}}$ deleted, so that the limit's ledger is printed rather than reconstructed; the type table as a prediction that the density and the spin are untouched at a point, confirmed by the equation route; seven momenta zero or fixed, two evolution equations and six constraints, with no multiplier because the parameterisation is exact -->
 
@@ -1168,6 +1193,8 @@
 <!-- the two terms of the action transforming differently under a constant phase, the ratio's argument $2\alpha$ modulo $2\pi$; the constraint as a determination and a division; the longitudinal coefficient surviving the coupling unchanged; the primary constraint surviving as an absent power of $\omega$; the charge massless and the energy mass-squared -->
 <!-- the coupled action on the mode with the truncation written on $\pi$ and not on the canonical gradient, because the shift is not small and only $\pi$ is gauge invariant, so that the truncation is gauge invariant for a structural reason; the parent's metric untouched by the connection, so that deleting the two-derivative group and shifting one gradient are two operations on different objects; the mass's frame factor $w$ with the parent's $0.7648$ independent of rapidity for collinear axes and $0.7648$, $0.7010$, $0.4401$ at rapidities $0$, $1$, $2$ for perpendicular ones, a coefficient of order zero and not a correction; the truncated density with the curvature's antisymmetric traceless form $K$; the amplitude variation, its real projection $(\pi^{2}-k_m^{2}w)\lvert a\rvert^{2}=\lvert\pi\cdot a\rvert^{2}$ and its Hessian as the Fourier symbol with a traceless shift; the phase variation $\partial_\mu[(\pi\cdot a)a^{\mu}-\pi^{\mu}\lvert a\rvert^{2}]=0$ as the Gauss law of the decomposition's redundancy and as the covariant transport once the constraint holds; the longitudinal part as what the redundancy absorbs, which is the chart's own account of the count three; the four vanishing momenta and the promotion of the phase; the traceless perturbation not moving the rank, so that the count is three with or without the field and only the directions change; and the parent's open item about the chart's own Hessian left open, every statement here being made about the truncated Hessian instead. -->
 
+<a href="articles_physics/the-lagrangian-and-the-rarita-schwinger-equation.html">The Lagrangian and the Rarita–Schwinger Equation</a>
+<!-- the action named and not written; the three debts, the index-chirality contraction, the two multipliers and the massless invariance; the count the constraints control; the boundary of the family's variational method at spin three-halves. -->
 ### Focus on informational aspects
 
 <a href="articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a>
@@ -1589,6 +1616,12 @@
 
 <a href="articles_physics/excitation-mode-function-and-the-informational-sector.html">Excitation, Mode Function, and the Informational Sector</a>
 <!-- the mode function as a definite solution; the excitation as an occupation; three objects, three homes; what is asserted to lie in $\mathbb{B}_{\Psi}$ and its verification; in what sense $\mathbb{B}_{\Psi}$ is a Hilbert space; counting the degrees of freedom. -->
+<a href="articles_physics/the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation: From the Action to the Commutator</a>
+<!-- the four steps, Peierls bracket from the Green functions, Dirac bracket for the constrained cases, promotion to a commutator, representation on a Fock space; which step the corpus takes and which it does not; the promotion as a postulate and not a theorem; the item-by-item ledger of what a quantised theory would add. -->
+
+<a href="articles_physics/the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html">The Quantisation Hub: The Sixteen Articles That Import the Promotion</a>
+<!-- the sixteen articles that turn the classical actions into a quantum field theory, in the order the operation is performed; the six canonical quantisations carry the postulate and the other ten use it; no native ladder, no native vertex, no derivation of the Standard Model. -->
+
 
 ### Particles of spin 0
 
@@ -1930,6 +1963,8 @@
 
 <a href="articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a>
 <!-- the Proca obstruction; the shift field and the invariant mass term; gauge fixing and the degree-of-freedom count; the relation to the abelian Higgs; the algebra's reading. -->
+<a href="articles_physics/the-lagrangian-and-the-electroweak-theory.html">The Lagrangian and the Electroweak Theory</a>
+<!-- the $SU(2)\times U(1)$ action in two phases; the unbroken and unitary displays; the four Gauss constraints and the count eight-plus-four to nine-plus-two-plus-one; $m_W=gv/2$ and $m_Z=\sqrt{g^{2}+g'^{2}}v/2$ as couplings times a vacuum value; $Q=T^{3}+Y/2$; what a quantisation would add and the corpus does not. -->
 
 ### The Strong Interaction
 
@@ -2030,6 +2065,10 @@
 <a href="articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a>
 <!-- the threshold a unified group must clear; the framework's own unification, electroweak and abelian; what a biquaternionic grand unification would require; the representation content and the even-dimension obstruction. -->
 
+<a href="articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html">The Sector Hub: What the Lagrangian Family Reaches in Each Sector</a>
+<!-- four sectors and four answers: the electromagnetic carried exactly, the electroweak partly, the strong not at all because the compact group is U(2), and the gravitational by a frame and not an element; the table that puts the four in two independent columns. -->
+
+
 ### The Mass Spectrum and the Ledger
 
 <a href="articles_physics/the-differentiable-field-one-primary-equation-and-the-linear-sector.html">The Differentiable Field: One Primary Equation and the Linear Sector of the Biquaternion Universe</a>
@@ -2072,6 +2111,8 @@
 <a href="articles_physics/linearized-gravity-in-biquaternionic-form.html">Linearized Gravity in Biquaternionic Form</a>
 <!-- linearized gravity in standard form; the frame route and where the perturbation lives; the graviton is not a material biquaternion; gauge freedom as the derivative of a material four-vector; the gauge-invariant field strength; the field equation and the trace-reversal step; the plane wave and the two polarizations; the external caution that the fermionic coupling is not unique and the ambiguity is first order in the perturbation. -->
 
+<a href="articles_physics/the-lagrangian-and-linearised-gravity.html">The Lagrangian and Linearised Gravity</a>
+<!-- the second variation of the Einstein–Hilbert action in the metric and trace-reversed forms; the linearised Einstein tensor and the Bianchi identity; the time-time constraint and the orbit; ten minus four minus four; the frame perturbation as the exact carrier and the single element's blindness; the stress that is not a tensor. -->
 <a href="articles_physics/gravitational-waves-in-biquaternionic-form.html">Gravitational Waves in Biquaternionic Form</a>
 <!-- the trace-reversed perturbation and the wave equation; the harmonic gauge and its residual freedom; counting the physical degrees of freedom; the two polarizations; the quadrupole formula; the wave operator, the gauge freedom and the counting in the framework. -->
 
@@ -2087,6 +2128,9 @@
 <a href="articles_physics/cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html">Cosmology in the Biquaternion Framework: The Carried Metric and the Missing Source</a>
 <!-- the three constructions a cosmology needs; what the framework already reaches; where each route stops; the cosmological constant as a term with no reading here; the two-sector structure at cosmological scale; two overclaims that would not help. -->
 
+<a href="articles_physics/the-action-problem.html">The Action Problem</a>
+<!-- the three things an action needs and which the algebra supplies; the derivative as an external operation the algebra does not carry; why the natural algebra action is not Einstein's, the two routes and where each stops; the conformal factor as the object beyond having an action; what is not the problem; what would settle it.  Filed here in this pass: the article existed and was linked from *Curved Spacetime and the Biquaternion Framework* but stood in no menu. -->
+
 <a href="articles_physics/quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature.html">Quantum Gravity in the Biquaternion Framework: The Two-Sided Obstruction and the Modular Temperature</a>
 <!-- what quantisation of the gravitational sector would require; why the gauge quantisation does not transfer, one-sided against two-sided; established, what the quantisation programme can build on; obstacles with a known route; obstacles with no route yet; the modular route to a horizon temperature; the ledger; the gaps in order. -->
 
@@ -2096,7 +2140,7 @@
 <a href="articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html">The Biquaternion Basis of a Unified-Field Fibre Bundle</a>
 <!-- the source and its principal fibre bundle $P(G,M)$ with structural group $G=[[A,B],[-B,A]]$; the three invariant tensors $J$, $g$, $\sigma_{\lambda\mu}$; the dictionary translation of its $2\times2$ matrix $Q=a_0\sigma_0-i\boldsymbol\sigma\!\cdot\!\mathbf a$ to the biquaternion $\tilde Q=a_0+\mathbf a\!\cdot\!\mathbf e$ with $a_0=p_0/m$, $\mathbf a=i\mathbf p/m$, so that its unit-norm sum $a_0^2+a_1^2+a_2^2+a_3^2=1$ and its relativistic relation $p_0^2-\mathbf p^2=m^2$ are one identity and its object is the corpus's Hermitian biquaternion of unit norm, in the informational sector; what its $G^+G=I_4$ means, namely the quaternionic conjugation and not the matrix adjoint, and why the block assembly is the regular representation of the pair and not the realification of $Q$; the Majorana transformation and its verified effect, that $G'=UGU^{-1}$ is real and symmetric because the transformed generators are purely imaginary while the $a_k$ are; the sign lost in the printed $\gamma_0$ of Eq. (28) and the two slips in the printed $G'$, the wrong sign in the $(\sigma_3a_1\pm\sigma_1a_3)$ combination and the $G'^{\mathsf T}G'=I_4$ that does not reproduce; the $\mathrm{SL}(2,\mathbb{R})$ triple and the $(2{+}2)$ inertia, whose coefficient sum $a_0^2+a_1^2-a_2^2+a_3^2=1$ reads $p_0^2-p_1^2+p_2^2-p_3^2=m^2$; the claim that the Majorana representation is tied to the signs and the corpus's mod-eight table; the non-Hermitian momentum as the source's own construction rather than the structural object; the bundle-basis claim and the naturality it must specify; the G-structure, the reduced tangent bundle whose structure group becomes the induced field theory's, the torsion-induced sign and CP, and the incompleteness of Rothstein's theorem; the Clifford-algebra interlude and the bosonic half the corpus lacks; an independent, constructed biquaternionic basis in the material sector, set beside the source's informational-sector one; the source as external evidence that the algebra appears unsought; an external source, recorded and not endorsed. -->
 
-## The Lagrangian Family
+## The Lagrangian Family: The Reading Hubs
 
 <a href="articles_physics/the-lagrangian-family-a-map.html">The Lagrangian Family: A Map of the Forty-Eight Articles</a>
 <!-- the method applied per field; the five readings and the coupled corner; the seventeen-slot schema and its slot-7 test; the completeness table; the boundary in a table, Fock space, creation operators, interacting QFT, Standard Model, quantised gravity and the path integral as a computational framework all absent; the two proposed schema moves and why both fail the test; what the family is for. -->
@@ -2122,27 +2166,5 @@
 <a href="articles_physics/the-lagrangian-beyond-one-particle.html">The Lagrangian: Beyond the One-Particle Fields</a>
 <!-- the eight frontier articles; the classical actions stated exactly and the absences stated in place; three articles whose content is the absence. -->
 
-<a href="articles_physics/the-lagrangian-and-the-electromagnetic-field.html">The Lagrangian and the Electromagnetic Field</a>
-<!-- one term, $\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)$; its sign and its reality; the variation and the integration by parts; Gauss's law as the scalar part and the gauge orbit as the kernel; the longitudinal part not a degree of freedom; a positive stress and no free charge; what the principle adds and what it relabels; no quantisation. -->
-
-<a href="articles_physics/the-lagrangian-and-quantum-electrodynamics.html">The Lagrangian and Quantum Electrodynamics</a>
-<!-- the Dirac action with the covariant derivative plus the Maxwell term; why minimal coupling is the unique local choice; the three variations and the identity that makes the system consistent; three appearances of one constant; the vector current conserved and the axial one broken by the mass; the four words the corpus cannot support, quantum among them. -->
-
-<a href="articles_physics/the-lagrangian-and-the-interacting-scalar-field.html">The Lagrangian and the Interacting Scalar Field</a>
-<!-- the free action plus $-\frac{\lambda}{4}N^{2}$; the nonlinear equation; the nonlinearity as a density-dependent mass and the dispersion shift $\lambda N$; the stability threshold; the current unchanged; the exactness and the missing $S$-matrix. -->
-
-<a href="articles_physics/the-lagrangian-and-the-electroweak-theory.html">The Lagrangian and the Electroweak Theory</a>
-<!-- the $SU(2)\times U(1)$ action in two phases; the unbroken and unitary displays; the four Gauss constraints and the count eight-plus-four to nine-plus-two-plus-one; $m_W=gv/2$ and $m_Z=\sqrt{g^{2}+g'^{2}}v/2$ as couplings times a vacuum value; $Q=T^{3}+Y/2$; what a quantisation would add and the corpus does not. -->
-
-<a href="articles_physics/the-lagrangian-and-the-pauli-equation.html">The Lagrangian and the Pauli Equation</a>
-<!-- the Dirac action in the rest frame to first order in $1/m$; the Schrödinger action plus $\frac{q}{m}\vec S\cdot\vec B$; $g=2$ as the ratio of two currents and not a parameter; the error term displayed; the three losses of the limit. -->
-
-<a href="articles_physics/the-lagrangian-and-the-rarita-schwinger-equation.html">The Lagrangian and the Rarita–Schwinger Equation</a>
-<!-- the action named and not written; the three debts, the index-chirality contraction, the two multipliers and the massless invariance; the count the constraints control; the boundary of the family's variational method at spin three-halves. -->
-
-<a href="articles_physics/the-lagrangian-and-linearised-gravity.html">The Lagrangian and Linearised Gravity</a>
-<!-- the second variation of the Einstein–Hilbert action in the metric and trace-reversed forms; the linearised Einstein tensor and the Bianchi identity; the time-time constraint and the orbit; ten minus four minus four; the frame perturbation as the exact carrier and the single element's blindness; the stress that is not a tensor. -->
-
-<a href="articles_physics/the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation: From the Action to the Commutator</a>
-<!-- the four steps, Peierls bracket from the Green functions, Dirac bracket for the constrained cases, promotion to a commutator, representation on a Fock space; which step the corpus takes and which it does not; the promotion as a postulate and not a theorem; the item-by-item ledger of what a quantised theory would add. -->
-
+<a href="articles_physics/the-lagrangian-articles-by-object-four-fields-nine-articles-each.html">The Lagrangian Articles by Object: Four Fields, Nine Articles Each</a>
+<!-- the family read from the object instead of the reading; four lists of nine, the element, polar, momentum, limit and four coupled readings plus one fluid; what the nine make in common and where the four fields differ; the caution that nine readings of one object are not nine objects. -->

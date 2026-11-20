@@ -46,6 +46,18 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, wit
 
 **The constraint.** The Lorenz condition is the scalar part of the equation, $\mathrm{Sc}(\tilde\nabla_\Phi^{\natural}\tilde A_\Phi)=0$, which in the chart is one real equation among four. **It is a constraint on the frame and on the amplitude together**, and it is the chart's version of the transversality of a massive vector field.
 
+## The Deletion
+
+**What is deleted.** The Proca action's amplitude sector is $\tfrac12(\partial\varrho)^{2}-\tfrac12k_m^{2}\varrho^{2}$ plus the frame's terms, and the limit deletes the first block: **the amplitude's kinetic term, a two-derivative object, is removed and the mass term is kept.** The frame's terms carry two derivatives as well and are kept, which is the first sign that this family is not the scalar one.
+
+**Why the deletion is the natural one.** The parameter counts spatial derivatives of the scale, so a block with two scale derivatives is order two and every block without them is order zero. **The deletion is therefore the removal of the only order-two scale block**, and it is a subtraction of one term and not a reorganisation of the action.
+
+**Why it is still a deletion and not a truncation.** In the scalar family the deleted block is small compared with the mass term, and the limit is an approximation with a stated error. **Here the two amplitude blocks are comparable at every time for a real plane wave**, with a ratio of order one, so the deletion is not a controlled approximation and the article does not present it as one. That distinction is the article's main claim, and the section exists to state the deletion before the claim is made.
+
+**What the deletion does not touch.** The frame's terms, the mass term, the constraint that the scalar part of the conjugate gradient vanishes. **None of the three carries a scale derivative**, so none of them is affected, and the truncated action's frame sector is the parent's exactly.
+
+**Why the section comes before the variations.** Because the variations of the truncated action are the variations of a different functional, and a reader has to know which term is missing before reading them. **The three variations are then three statements about the surviving blocks**, and the article's order — deletion, then variations, then what survives — is the order of the argument and not a convenience.
+
 ## The Two Variations
 
 **Two variations of one display, and a third for the constraint.** The chart's action has an amplitude block with two derivatives, a mass block with none, and the frame's sigma-model term. Varying the amplitude gives an equation with a second derivative and the mass term; varying the frame's angles gives the transport of the boost, which is the article's *What Survives*; varying the connection gives the Lorenz condition.
@@ -53,14 +65,6 @@ in the timelike branch's word $\tilde A_\Phi=\varepsilon i \varrho\tilde U$, wit
 **The boundary term.** The amplitude's variation produces one, because its block carries two derivatives; on a region with fixed amplitude on the boundary it vanishes, and on a region that reaches infinity the fall-off kills it. The frame's variation produces none, because the frame enters algebraically through $\vec A=-\varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\hat u_{\mathrm b}$ and through no derivative of its own beyond the covariant one.
 
 **Why the constraint is not a choice.** The Lorenz condition is the scalar part of the connection's variation, so it is one of the Euler–Lagrange equations and not a gauge fixing. In the massless limit the same variation gives an identity instead, and that change of status is the article's *The Truncation and Its Error* read from the variation side.
-
-## What Survives
-
-**The frame's sector.** The variation of the frame's angles returns the parent's second boxed equation, and it is the chart's genuine dynamical content. **The frame of a real massive vector field is a dynamical object and its transport is exact.**
-
-**The constraint.** The Lorenz condition is exact and it is one equation among four. **In the other families the analogous condition is the transversality of the polarisation**, and here it comes from the action's own structure.
-
-**The absence of a quantum potential.** With no small parameter there is no term that plays the role of a correction, so nothing in this family deserves the name. **The corpus's language about a quantum potential does not transfer to the free Proca chart**, and the article records that rather than inventing one.
 
 ## The Noether Currents: The Stress and No Charge
 
@@ -77,6 +81,16 @@ with $\vec E$ and $\vec B$ the chart's fields. The energy is what the frame's tr
 **What the absence says about the limit.** A non-quantum limit is usually read as a particle limit, with a density and a flux. This family has neither, so the limit's language does not transfer: what survives is a field's stress and a constraint. That is the sharpest negative result of the family, and it is why the article refuses a truncation.
 
 ## The Truncation and Its Error
+
+## What Survives
+
+**The frame's sector.** The variation of the frame's angles returns the parent's second boxed equation, and it is the chart's genuine dynamical content. **The frame of a real massive vector field is a dynamical object and its transport is exact.**
+
+**The constraint.** The Lorenz condition is exact and it is one equation among four. **In the other families the analogous condition is the transversality of the polarisation**, and here it comes from the action's own structure.
+
+**The absence of a quantum potential.** With no small parameter there is no term that plays the role of a correction, so nothing in this family deserves the name. **The corpus's language about a quantum potential does not transfer to the free Proca chart**, and the article records that rather than inventing one.
+
+
 
 **What a non-quantum limit would delete.** The amplitude's kinetic term, by analogy with every other family. **What remains is $-\tfrac12k_m^{2}\varrho^{2}$ plus the frame's terms**, that is an algebraic amplitude and a dynamical frame.
 

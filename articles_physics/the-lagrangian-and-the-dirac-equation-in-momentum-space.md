@@ -1,6 +1,6 @@
 # __The Lagrangian and the Dirac Equation in Momentum Space__
 
-**Declared omissions.** The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The action's only constraint is the first-order structure that the symbol's reality already carries, so slot 6 is not separated. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -144,6 +144,20 @@ up to the normalisation the element article fixes, so that the total charge is t
 **The energy.** The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
+
+## The Legendre Transform
+
+**A first-order form has a degenerate transform.** The mode action is linear in the frequency, so its derivative with respect to $\omega$ does not contain $\omega$; the transform therefore does not invert, and it returns a condition on the amplitude rather than an energy. **That is not a defect of this reading: it is the same statement the element article makes when it says that three momenta vanish identically.**
+
+**What the condition is.** The derivative of the form with respect to $\omega$ is the density, and the requirement that the density be the conjugate of the frequency is the constraint. **At a fixed wave number the constraint is one condition on four amplitudes**, and the remaining three are the energy's carriers. So the transform gives one constraint and three degrees of freedom, which is the Dirac field's count in the mode language.
+
+**Where the two branches are, then.** They are the two eigenvalues of the Hamiltonian at that wave number, not two roots of a quadratic. **The reading distinguishes the two by the sign of the eigenvalue and not by the sign of the root**, and the distinction is the same one in either language.
+
+**The transform's one number.** The slope of the action with respect to the frequency is $\hbar$ times the norm, which is the density per mode. **The transform is therefore the map from the form's argument to the form's density**, and it is injective on the amplitude and constant on the frequency.
+
+**Why the article still needs it.** Because the momentum reading's claim is that the mode action *is* the symbol, and a reader can test that claim only by differentiating: if the derivative in the frequency is the density and the derivative in the amplitude is the symbol, the identification is complete. **The transform is the test, not a new result.**
+
+**One caution.** On shell the form vanishes, so the transform of the on-shell form is zero. **The transform must be taken before the equation is imposed**, and the article says so once, because the opposite order gives a trivial answer that looks like a contradiction.
 
 ## Limits
 

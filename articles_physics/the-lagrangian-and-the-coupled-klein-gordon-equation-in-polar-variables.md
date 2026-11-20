@@ -163,6 +163,26 @@ No other parameter moves. The claim is that this is the *whole* of minimal coupl
 
 **What it forbids.** A coupling that entered the frame's brackets would break the gauge invariance computed in the section on the charge, because the frame is what the gauge transformation rotates. The placement is therefore forced by the symmetry and not chosen for convenience.
 
+## The Parameter Basis and the Four Brackets
+
+**One derivative, four types.** Differentiate the word and divide by it, $\tilde\Xi^{-1}\partial\tilde\Xi$, and the result is an element of the algebra like any other. Its decomposition into the four types the algebra carries is exhaustive, and each type is named for the parameter that generates it:
+
+$$
+\tilde\Xi^{-1}\partial\tilde\Xi
+=\underbrace{\partial\ln\varrho}_{\text{real scalar}}
++\underbrace{i\,\partial\theta_{\mathrm{pha}}}_{\text{central imaginary}}
++\underbrace{\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}}_{\text{Hermitian}}
++\underbrace{\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr)}_{\text{real vector}} .
+$$
+
+The four objects are the four brackets. They are not four new fields: each is a directional derivative of the one field, taken along one parameter and written in the type that parameter produces. **The scale bracket is real, the phase bracket central imaginary, the boost bracket Hermitian with zero scalar part, and the rotor bracket a real vector**; there is no fifth type and no bracket that is a mixture.
+
+**Why the pairing needs the types.** The kinetic term is $\mathrm{Sc}\bigl[(\partial\tilde\Xi)^{*}\partial\tilde\Xi\bigr]$, and the scalar part of a product vanishes unless the two factors have conjugate types. Real scalar pairs with real scalar, central imaginary with central imaginary, Hermitian with Hermitian, real vector with real vector. **A bracket therefore contributes to the action only through its own type**, and the cross terms a naive expansion would write are zero by the algebra and not by a choice. That is the whole content of the polar action's block structure, and it is why this field's action has the metric $g_{ab}(p)$ that the summary displays.
+
+**The parameter basis is not the bracket basis.** The eight parameters are coordinates; the four brackets are types. The map between them is the word's Jacobian, and it mixes: the derivative with respect to $\theta_{\mathrm{rpd}}$ carries a piece of the scale bracket as well as of the boost bracket, because $\cosh\theta_{\mathrm{rpd}}$ multiplies the phase term and $\sinh\theta_{\mathrm{rpd}}$ the cross term. **The parameter equations are the same equations in a rotated basis, and calling them "the four brackets" would be an error.**
+
+**What this article's field does with them.** The coupled Klein–Gordon connection enters the logarithmic derivative as one additive term, $\mathcal A^{\mathrm{gco}}_\mu=\mathcal A_\mu+\frac{iϙ}{\hbar}A_\mu$, and its two slots have two different types: real in the temporal slot, central imaginary in the spatial ones. It therefore joins the scale bracket and the phase bracket and reaches neither the boost nor the rotor. **That single type fact is the reason the coupling shifts the phase's gradient and nothing else**, and why the frame density and the amplitude–rapidity block are the free article's, unchanged.
+
 ## The Charge, Its Sign and Its Gauge Invariance
 
 **The charge is the phase rate times the density.** The temporal component of the current in the chart is
@@ -216,6 +236,18 @@ with $n$ the winding of the phase and $\Phi_B$ the flux enclosed. So the mechani
 - No statement about the operator setting's renormalisation, which is the quantised scalar article's.
 
 **The honest ledger.** For the central field the polar variational principle is Madelung's, and the coupling makes it Madelung's with a potential; that is standard and the article says so. For the general element the chart is exact and regular, the connection shifts two slots, and nothing about the closure changes — the closure was the chart's and it stays the chart's. The genuinely new content is small and precise: the two interaction terms' separation, and the observation that a velocity shift leaves the Legendre transform's rank alone, so the coupling cannot turn a regular system into a constrained one.
+
+## The Reconstruction and Its Limits
+
+**The reconstruction is the free one's, and that is a fact worth stating.** The word does not contain the connection, so its inverse does not either: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$, by the same formulas as in the free polar article. **The coupling is in the action and in the potential; it is not in the chart.** A reader who expected the reconstructed variables to depend on $A_\mu$ has confused the field's parameterisation with its dynamics.
+
+**What the coupling does change is which frame is reconstructed.** The potential depends on the frame variables and not on $\varrho$ or $\theta_{\mathrm{pha}}$, so the Euler–Lagrange equations for the six frame parameters are constraints rather than evolutions: the frame sits where the potential is extremal. **The reconstruction recovers the frame, and then the constraint fixes it.** Recovering and fixing are two steps, and the article keeps them apart because the first is a property of the bijection and the second a property of the coupling.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element and the cone's apex, so a field that reaches $\varrho=0$ leaves the chart. The coupled theory has no exception: the connection's term is finite at $\varrho=0$ and the chart still fails there, because the failure is in the parameterisation and not in the dynamics.
+
+**The angle's limits.** The rotor's angle must be closed at $2\pi$ or the word misses the elements whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$. Both are inherited unchanged, and the coupling does not move either endpoint.
+
+**What the reconstruction does not give.** The flow of the constrained system. The bijection makes the variation the same variation; it does not make the eight parameter equations' reduced flow the coupled pair's flow. **This is the article's open question**, stated once in the introduction and once here, because it is the one place where the polar reading of the coupled field is weaker than the element reading.
 
 ## Open Questions
 

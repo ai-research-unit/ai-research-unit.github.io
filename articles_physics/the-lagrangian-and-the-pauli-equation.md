@@ -98,6 +98,16 @@ the parent's bilinear. The spin term contributes nothing to it: it is a function
 
 **Why the truncation is stated rather than hidden.** Because a reader can check the order: the dropped term is displayed above with its coefficient, and the claim that it is small is the claim that the state's energy is small. A limit whose error is not written is a claim, not a derivation.
 
+## What the Variational Principle Adds and What It Relabels
+
+**What it adds.** A functional. The equation-level derivation expands the Dirac equation and reads $g=2$ off the result; the reader is asked to accept the coefficient because it came out of the algebra. The action route supplies something the equation route cannot: one object whose variation gives both the Schrödinger kinetic term and the magnetic term at once, so the coefficient is a property of a functional rather than of an expansion. That is the difference between deriving a number and displaying where it comes from.
+
+**What it relabels.** The number is not new, and the article does not claim it is. The Dirac equation already fixes $g=2$, because the spin and the mass current descend from the same kinetic term; the action states that fact as one term instead of as a consequence of the algebra, and a statement of the same fact in a better place is a relabelling. The gain is in checkability: a reader can vary the displayed action and recover the coefficient, where in the equation route the coefficient is recovered by redoing the expansion.
+
+**What it does not decide.** The rest frame. The expansion about $\tilde\Xi=e^{-ik_m r'_t}\tilde\chi$ is a choice of chart, and the action does not supply it; the limit exists only where that choice is made. The article therefore inherits a frame from its parent and cannot claim that the Pauli theory is frame-free. The same sentence applies to the phase: the elimination of the small component is a gauge choice in the limit and not a consequence of the action.
+
+**What it does not reach.** The next order. Fine structure, the Darwin term and the spin-orbit coupling are all of order $1/m^{2}$, and an action written to order $1/m$ cannot produce them. That is a boundary of this article and not of the method: the same expansion carried one order further would give them, and the corpus's parent article states them from the equation instead.
+
 ## Summary
 
 The Pauli action is the Dirac action in the rest frame, expanded to first order in $1/m$ with the small component eliminated. It is the Schrödinger action plus $\frac{q}{m}\vec S\cdot\vec B$, with $\vec S=\frac{\hbar}{2}\vec n_{\mathrm{rot}}$, and the coefficient is fixed at $g=2$ because the spin and mass currents come from the same kinetic term. The current is the Schrödinger one, the spin precesses without a current of its own, and the error is the dropped second time derivative, of order $1/m$.

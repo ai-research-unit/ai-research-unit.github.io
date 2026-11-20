@@ -116,6 +116,20 @@ which is the continuity equation for a density $r$ and a velocity $u_\mu$. **The
 
 **The one thing the action says that the equations cannot.** The Lorenz condition, the loss of gauge freedom, the continuity equation and the stiffness of the flow are four statements about four different objects, and in the action they are one term. **That is the strongest case in the layer for writing the fluid's Lagrangian**: not a new result, but the location of four results in one coefficient.
 
+## What the Fluid Adds That the Element and the Limit Do Not
+
+**The constraint becomes a property of the fluid's own frame.** In the element reading the vanishing of the scalar part of the conjugate gradient is a condition that the variation produces; in the fluid reading, the corresponding statement is that **the fluid's four-velocity cannot have a longitudinal component that carries the mass**. The constraint is the same equation, and the fluid reading says what it means: a pressure cannot push along the direction the fluid is already moving.
+
+**What the fluid adds: no charge.** The stress is the whole of the fluid's content, and the charge is zero. In the element reading that is a computation; in the fluid reading it is a count — **a real flow has no phase to carry a charge**, and the article's section on the absence of a charge is the statement of the count in the fluid's language.
+
+**What the fluid adds: the branch as a pressure sign.** The two branches of the Proca chart differ by the sign of the algebraic mass term, and in the fluid reading that sign is the sign of the pressure's own contribution. **A reader who has the branch as a sign of a coefficient can read it here as a sign of a pressure**, and the article says the two are the same statement.
+
+**What it does not add.** No new solution and no new equation: every fluid equation is the element equation with a word changed. **The fluid reading's claim is interpretive and the article says so in its first paragraph.**
+
+**What it inherits, and what it does not.** It inherits the frame's constrained character — the frame is fixed by the mass, not evolved — and it does not inherit the charge, which the Proca field never had. **The articles in this family that do have a charge are the coupled ones**, and the Proca fluid's silence about it is a statement rather than an omission.
+
+**One difference from the spin-half fluid.** There the torque was the new object; here the pressure is. **A spin-one fluid has no torque because its spin is a frame and not a density of angular momentum**, and the article's comparison sentence says exactly that.
+
 ## Open Questions
 
 1. **The massless limit.** The action's derivative terms survive at $k_m=0$ and the fluid reading does not, because the field becomes pure gauge and $A=ru$ is then a gauge-dependent split. Whether some gauge-fixed chart makes the limit continuous is not settled, and the block's article denies the reading without stating the obstruction in these terms.

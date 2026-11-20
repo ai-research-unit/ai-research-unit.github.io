@@ -1,6 +1,6 @@
 # __The Lagrangian and the Schrödinger Equation in the Non-Quantum Limit__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The constraint is the parent's and the limit neither adds nor removes one, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
 
 ## Introduction
 
@@ -134,6 +134,34 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **The charge and the energy.** The charge is the integral of $\rho$, times the coupling where the field is charged, and it carries no mass. The energy is the mass shell's value, and it carries the mass. The split is exact in the parent and survives the limit unchanged, which is why this article's verification section can check both in one line each.
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
+
+## The Truncation and Its Error
+
+**The deleted block, and its order.** The limit drops $(\nabla\varrho)^{2}/(2m\varrho)$, which carries two spatial derivatives and no time derivative. **Its order is two and its coefficient is $\hbar^{2}/2m$**, so the error is second order in the parameter and first order in $\hbar$ — a quantum correction in the literal sense.
+
+**Restoring it.** The restored term enters the equation for the velocity field and not the equation for the phase, and it is the gradient of the quantum potential. **It is large where the density is small**, and the article's nodal exception is the statement of where the truncated theory stops.
+
+**The error is a functional of the density alone.** The block contains no phase and no potential, so the correction cannot move the eikonal. **The eikonal therefore survives exactly and the velocity equation survives only to order $\epsilon^{2}$**, and the asymmetry is the whole of the truncation's cost.
+
+**Why the truncation is not covariant.** The block is a spatial gradient, so it distinguishes the slicing, and the truncated theory inherits the frame the Schrödinger equation already picks. **The article says so plainly**: the free Schrödinger family's non-quantum limit is not Lorentz covariant and was never meant to be.
+
+**What the error is not.** No bound and no rate. **The expansion is asymptotic and the article does not claim convergence**, so "second order" is a statement about the term's size for slowly varying densities and not about the distance between solutions.
+
+**Why the section follows the deletion.** Because the deletion names the term and this section prices it, and the price is what a reader needs before reading the surviving equations as exact.
+
+## What Survives
+
+**The eikonal, exactly.** The scale's variation of the truncated action gives the eikonal equation, and it is not an approximation to the parent's: **it is the parent's equation with the quantum potential set to zero**, and the difference is the deleted block alone.
+
+**The transport, unchanged.** The phase's variation gives the transport, and the deleted block contains no phase, so the transport is identical. **The current is the transport's own consequence**, and it survives with the parent's expression.
+
+**The density and the energy.** The conjugate quantities of the truncated action are the parent's first integrals with the density's correction removed. **Density, flux and energy keep their signs**, and the only quantity that changes is the one that depends on the density's curvature.
+
+**The frame, and the one thing that is lost.** The truncated theory inherits the slicing the Schrödinger equation already picks, so **the eikonal-plus-transport system is not Lorentz covariant and cannot be made so by a choice of variables**. The article states this as a loss and not as a technicality.
+
+**The nodal exception.** Where the density vanishes the quantum potential diverges, so the truncated theory's own equations fail there even before the parent's correction is considered. **The article's one sentence about nodes is in the section on the deletion**, and this section does not repeat it.
+
+**Why the list is short.** One block is deleted and four are kept, so the truncated theory is the eikonal plus the transport plus the currents. **That is the whole of the non-quantum limit of the Schrödinger family**, and the article's summary says exactly that in one line.
 
 ## What the Variational Route Adds
 

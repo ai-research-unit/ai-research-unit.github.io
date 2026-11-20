@@ -1,6 +1,6 @@
 # __The Lagrangian and the Klein–Gordon Equation in the Non-Quantum Limit__
 
-**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
+**Declared omissions.** The reality of the action is settled inside the action section and not in a section named for it, so slot 5 is omitted. The constraint is the parent's and the limit neither adds nor removes one, so slot 6 is omitted. The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted. No open question is separated from the verification, so slot 14 is omitted.
 
 ## Introduction
 
@@ -118,6 +118,34 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 **The charge and the energy.** The charge is the integral of $\rho$, times the coupling where the field is charged, and it carries no mass. The energy is the mass shell's value, and it carries the mass. The split is exact in the parent and survives the limit unchanged, which is why this article's verification section can check both in one line each.
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
+
+## The Truncation and Its Error
+
+**The error is the deleted block, and its order is two.** The truncated action differs from the parent by $(\partial\varrho)^{2}$ in the material signs, and each factor of $\partial$ carries one power of the parameter. **The error is therefore of order $\epsilon^{2}$**, and the ratio that makes it small is the amplitude's gradient over the scale the truncation assumes: $|\partial\varrho|^{2}/(k_m^{2}\varrho^{2})$, which is small exactly when the amplitude varies slowly compared with the Compton length.
+
+**What restoring the term does.** Varying the parent's scale equation with the block present gives the same equation as the truncated one **plus a term that is a divergence of a gradient divided by the density** — the term the corpus calls the quantum potential. Its coefficient is $\hbar^{2}/2m$ in the material units, so it is a quantum correction and not a classical one, and its size relative to the mass term is $\epsilon^{2}$.
+
+**Why the error is a functional of the amplitude alone.** The deleted block contains no phase and no potential, so the correction cannot move the phase's equation or the current. **The error is confined to the amplitude's equation**, and that is why the article can say the transport equation is untouched by the truncation and the mass-shell equation is not.
+
+**Gauge covariance of the error.** The deleted block is a Lorentz scalar built from the scale's gradient; the scale is gauge invariant. **The error is therefore gauge invariant and the truncation commutes with a gauge transformation**, which is the property the first-order family does not have and which the article's section on gauge invariance states separately.
+
+**What the error is not.** It is not a bound on any solution. **The expansion is asymptotic in $\epsilon$ and it is not claimed to converge**, so the statement is that the truncated equations hold to order $\epsilon^{2}$ for amplitudes that vary slowly, and not that the true solution is within a stated distance of the truncated one.
+
+**Why the section is separate from the deletion.** A reader can accept that a term is deleted and still be wrong about what the deletion costs. **The two sections answer two questions** — which term, and how much — and the article keeps them apart because the family's honesty about its limits is the whole point of the reading.
+
+## What Survives
+
+**Everything of order zero, and it survives exactly.** The truncated action's variations give the mass-shell relation for the scale and the covariant transport for the phase, and neither is an approximation to the parent's equation: **they are the parent's equations with the order-two term set to zero**, and the difference is the quantum potential and nothing else.
+
+**The transport, unchanged.** Varying the phase of the truncated action gives the covariant transport verbatim, because the deleted block contains no phase. **The equation is identical and not merely equal to leading order**, which is a stronger statement than the truncation needs and the article makes it anyway.
+
+**The mass shell, and what it becomes.** Varying the scale gives $\partial\varrho=0$ in the truncated action, so the amplitude is constant along the flow and the mass-shell relation is exact on that class. **The truncated equation is therefore not the eikonal equation of a varying amplitude but the statement that the amplitude does not vary**, and a reader who wants the eikonal must restore the order-two block.
+
+**The currents.** The density and the charge are the phase's conjugate quantities and come from the transport's own equation. **They survive unchanged, with the same expressions as in the parent**, because they are first integrals of the transport and the transport is untouched.
+
+**The covariance.** The truncated action is a sum of scalars, so it is Lorentz invariant; the deleted block was a scalar, so the truncation commutes with a boost. **The truncated theory is covariant**, and that is the property the article contrasts with the first-order family, where the deleted term is a spatial gradient alone and the truncation breaks the boost invariance of the kept terms.
+
+**What does not survive.** The amplitude's dynamics. **Any solution whose density varies on the Compton scale is outside the truncated theory**, and the article says so in one sentence rather than leaving the reader to infer the boundary from the order count.
 
 ## What the Variational Route Adds
 

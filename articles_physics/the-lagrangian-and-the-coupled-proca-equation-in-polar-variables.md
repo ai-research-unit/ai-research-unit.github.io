@@ -118,6 +118,25 @@ with $R$ a function of the frame's angles alone. The scalar potential and the ve
 
 **The hand check.** Set the frame to the identity, $\theta_{\mathrm{rpd}}=0$. Then $\vec A=0$, the Hessian vanishes, and the chart degenerates: the pure-scale configuration has no kinetic term at all. The mass term is still $\varrho^{2}R(1)$, so the configuration is a minimum of the potential and not a solution of the dynamics. That degeneration is the chart's way of saying that a Proca field with no vector part is not a field.
 
+## The Parameter Basis and the Four Brackets
+
+**The material word has the same four types.** The polar decomposition of the material sector is the same word with the same parameter ranges, so its logarithmic derivative has the same four brackets:
+
+$$
+\tilde A_\Phi^{-1}\partial\tilde A_\Phi
+=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
+$$
+
+with the scale real, the phase central imaginary, the boost Hermitian and the rotor a real vector. Nothing about the brackets is specific to the scalar field: they are a property of the parameterisation and of the algebra's type decomposition, and every element field carries them.
+
+**What is specific is the bilinear.** The scalar field's action pairs $\tilde\Xi$ with itself through $\tilde\Xi^{*}\tilde\Xi$, which is a single type, so only the matching brackets survive. The Proca action is built from the square of the conjugate gradient and **a square is not a modulus**: it pairs the scalar part with the scalar part and the vector part with the vector part while keeping the cross term between them. The four brackets therefore enter with the full quadratic form of the conjugate gradient, and the antisymmetric combination the square keeps and the modulus would discard is exactly the object whose variation returns the Lorenz condition.
+
+**Why the pairing is the content of the constraint.** The middle piece of the Proca Lagrangian, $-\tfrac12S^{2}$ with $S$ the scalar part of the conjugate gradient, is the cross term. It is zero on a solution the scalar action would already allow and non-zero off it; varying it gives the condition that kills the longitudinal scalar. **The Proca action is not the scalar action with a mass: it is the scalar action's brackets with the pairing changed**, and the changed pairing is where the constraint lives.
+
+**The parameter basis is not the bracket basis.** As in the free polar article, the eight parameters are coordinates and the four brackets are types, and the Jacobian between them mixes the roles: the rapidity's derivative carries part of the scale bracket, the rotor's derivative part of the boost bracket. The parameter equations are the same equations in a rotated basis, and the brackets remain the form in which each object has one type and one partner.
+
+**What the coupling adds.** The connection is central, so it passes through $\tilde A_\Phi^{-1}$ and adds $\frac{iϙ}{\hbar}A_\Phi$ to the logarithmic derivative, with a real temporal slot and central imaginary spatial slots. It therefore reaches the scale and phase brackets, leaves the boost and rotor brackets alone, and — entering as a shift and not as a factor — does not change the type pairing that produces the constraint.
+
 ## The Currents in the Chart
 
 **The charge is the momentum conjugate to the phase.** The action depends on $\theta_{\mathrm{pha}}$ only through its gradient, so the phase rotation is a symmetry and the Noether charge is the momentum conjugate to the phase:
@@ -153,6 +172,18 @@ the temporal slot of the element form's current, by the chain rule and because t
 - No constraint analysis, because there is no first-order degeneracy to analyse.
 
 **The distinction that matters.** The first-order companions' charts expose a constrained system and their variational principles are constrained systems. This one does not, and the difference is the order of the field equation and not the choice of variables. The chart's genuine gain is that the coupling becomes a shift of one coordinate and the gauge group becomes one coordinate, and its genuine cost is that the equation becomes a contraction with a field-dependent frame.
+
+## The Reconstruction and Its Limits
+
+**The reconstruction is exact on a branch.** The chart is a diffeomorphism from the parameter domain onto one branch of the material sector's N-regular set, so the word can be inverted there: the two norms give $\varrho$ and $\theta_{\mathrm{rpd}}$, the direction gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. The inverse is the bijection read backwards and adds nothing to the action.
+
+**The branch is an input and not an output.** This is the article's central qualification. The two branches differ by the sign of the algebraic mass term, $+\tfrac12k_m^{2}\varrho^{2}$ on the timelike one and $-\tfrac12k_m^{2}\varrho^{2}$ on the spacelike one, and **that sign is not a function of the eight parameters**. The chart is a chart on one branch; to move to the other the reader changes a discrete datum first and reconstructs afterwards. A reconstruction that claimed to recover the branch from the parameters would be claiming to recover a sign from a magnitude, and it cannot.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element, so a field that reaches $\varrho=0$ leaves the chart. For the Proca field that is not a pathology but a boundary: the mass shell's two branches meet only through the origin, and the origin is excluded.
+
+**The angle's limits.** The rotor's angle must be closed at $2\pi$, or the word misses every element whose rotor factor is $-e_t$; the phase ranges over a half-open interval of length $\pi$, because the element and its negative are distinct while a shift by $\pi$ is not a symmetry of the action. Neither is a convention of this article; both are properties of the parameterisation it inherits.
+
+**What the reconstruction does not give.** The flow. The bijection makes the variation the same variation, which is what the Euler–Lagrange section uses; it does not make the constrained system's flow the element equation's flow, and the article says so. **The frame's reconstruction has a further weakness here**: the mass term is a function of the frame, $R(\theta_{\mathrm{rpd}},\hat u_{\mathrm b},\theta_{\mathrm{axr}},\hat u_{\mathrm r})\varrho^{2}$, so the reconstructed frame is constrained by the potential and is not a free coordinate. That is not a defect of the map — it is the statement that the Proca field's frame is where the mass is extremal.
 
 ## Open Questions
 

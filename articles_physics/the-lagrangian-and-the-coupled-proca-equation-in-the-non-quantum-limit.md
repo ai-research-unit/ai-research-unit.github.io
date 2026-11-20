@@ -46,6 +46,19 @@ with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar
 
 **Why the asymmetry.** The amplitude is the envelope and its curvature is $\epsilon^{2}$ against the mass term. The frame's curvature is the transport law's own content and removing it would remove the dynamics. **The two curvatures are of the same order and their fates differ because of what they are**, which is a statement a term count alone cannot make.
 
+## The Deletion in the Proca Pair
+
+**The ledger across the two Proca articles.**
+
+| action | carrier | deleted block | ratio to kept blocks | exact on |
+|---|---|---|---|---|
+| free Proca | real | $\tfrac12(\partial \varrho)^{2}$ | order one | nothing |
+| coupled Proca | complex | $\tfrac12(\partial \varrho)^{2}$ | $\epsilon^{2}$ | constant envelopes |
+
+**The same block, two verdicts, and the difference is the word's second factor.** A complex word's phase absorbs the oscillation, so the amplitude's gradient is a slow gradient; a real word has no phase and the amplitude's gradient is the oscillation itself.
+
+**The exactness row deserves its sentence.** On a constant envelope the deleted term is identically zero, so the truncated action is not an approximation there but the same functional. **The limit's error is exactly the envelope's curvature and nothing else**, and that is the strongest statement available in the family.
+
 ## The Three Variations
 
 **Varying the phase.** The covariant transport,
@@ -80,19 +93,6 @@ the mass shell with the frame factor on the right. **Keeping the block would add
 
 **The hand check.** Set the connection to a pure gradient, $\tilde A_\Phi=\partial\Lambda$. The covariant derivative shifts by a central element, the field strength is unchanged, and the constraint's scalar part is unchanged, because the extra term is a divergence. The mass block never sees the connection at all. So the gauge orbit is a direction in which only the phase moves, and the structural three-way split is visible in one choice.
 
-## The Deletion in the Proca Pair
-
-**The ledger across the two Proca articles.**
-
-| action | carrier | deleted block | ratio to kept blocks | exact on |
-|---|---|---|---|---|
-| free Proca | real | $\tfrac12(\partial \varrho)^{2}$ | order one | nothing |
-| coupled Proca | complex | $\tfrac12(\partial \varrho)^{2}$ | $\epsilon^{2}$ | constant envelopes |
-
-**The same block, two verdicts, and the difference is the word's second factor.** A complex word's phase absorbs the oscillation, so the amplitude's gradient is a slow gradient; a real word has no phase and the amplitude's gradient is the oscillation itself.
-
-**The exactness row deserves its sentence.** On a constant envelope the deleted term is identically zero, so the truncated action is not an approximation there but the same functional. **The limit's error is exactly the envelope's curvature and nothing else**, and that is the strongest statement available in the family.
-
 ## The Noether Currents: The Conserved Charge of the Coupled Chart
 
 **The charge exists once the potential is complex.** The free Proca field has no phase symmetry; the coupled one does, because the potential is complex and the phase rotation is compensated by the connection. So the charge appears with the coupling and not before it, and its density is the phase's conjugate momentum,
@@ -106,6 +106,34 @@ with $q$ the parent's charge.
 **Why the coupling creates it.** In the free theory the phase is not a variable; in the coupled theory it is, and the connection absorbs its gradient. The Noether procedure then returns the current that the connection multiplies in the action, which is the same object the element article calls the source. The identity of current and source is therefore a statement about the variation, and the limit does not weaken it.
 
 **The mass in the energy only.** As in every family of the corpus, the charge carries no mass and the energy carries the mass squared. The limit's contribution is that both survive with their signs intact, and that the constraint the coupling covariantises is the one that removes the fourth degree of freedom.
+
+## The Truncation and Its Error
+
+**There is no small parameter, and the section has to say so first.** The deleted block is the amplitude's kinetic term; the kept blocks are the frame's terms and the mass. At a plane wave the ratio of the deleted block to the mass term is not $\epsilon^{2}$ but a number of order one, and it is the same number at every time. **The truncation therefore has no error estimate, and the article's claim is that it has none.**
+
+**Why the ratio is of order one.** The amplitude's gradient is the envelope's curvature, and a real carrier has no oscillation to separate from an envelope. **The two derivatives of $\varrho$ are the same size as the mass when the envelope turns on the scale $1/k_m$**, which is the only scale the theory has, so there is no regime in which the deletion is small.
+
+**What the error would be if it were small.** Restoring the block adds the quantum potential to the amplitude's equation, with the density in the denominator. **In the scalar family that term is the correction; here it is comparable to the term that was kept**, which is the technical statement of the failure.
+
+**What the failure costs the reading.** The article can still say which term is deleted and what the surviving equations are. **It cannot say that the surviving theory approximates the parent**, and every sentence about the truncated theory is restricted to that statement. That is the difference between this family and the scalar one, and the section exists to make the difference explicit rather than let a reader carry over the scalar's result.
+
+**What is not claimed.** No bound, no distance, no rate. **The word "controlled" does not appear in the article's claims about this limit**, and the section's job is to keep it out.
+
+**Why the deletion is still made.** Because the surviving equations are the ones the corpus calls the non-quantum limit, and the reader is owed a statement of what that limit is even when it is not an approximation. **The article separates the definition from the justification**, and this section is where the justification fails and is said to fail.
+
+## What Survives
+
+**Three equations and a constraint, all exact on the truncated functional.** The variations of the truncated action give the frame's transport, the constraint that the scalar part of the conjugate gradient vanishes, and the mass-shell relation on the amplitude. **They are exact solutions of the truncated action and not approximations to the parent's**, and the article says exactly that and no more.
+
+**The frame's transport.** Varying the frame parameters gives the same equations as the parent's, because the frame's blocks were not touched. **The frame's dynamics is therefore the parent's**, and that is the one sector in which the truncation costs nothing.
+
+**The constraint.** The vanishing of the scalar part of the conjugate gradient is one of the three variations and carries no scale derivative, so it survives unchanged. **The Proca field's constraint is exact in the truncated theory**, which is why the article's constraint section can be read before the limit section without loss.
+
+**The amplitude's equation, and its status.** The truncated amplitude equation is the mass term's own stationarity, $\partial\varrho$-free, and it is the equation of a different theory. **The article does not present it as an approximation to the parent's**, and a reader who has followed the error section knows why.
+
+**The currents.** Charge, energy and stress are the frame's first integrals and carry the parent's expressions. **The charge has no mass in it and the energy has mass-squared**, and both statements survive the truncation because neither integrates the deleted block.
+
+**What does not survive.** Any claim that the truncated theory describes a solution of the Proca equation whose envelope varies. **That class is outside the limit**, and the article's one sentence about it is in this section.
 
 ## What the Variational Route Adds
 
@@ -121,7 +149,7 @@ with $q$ the parent's charge.
 
 *No closed mass term.* The invariant length's dependence on the six angles is not displayed, so the frame's variation stays formal.
 
-*No constraint algebra.* As in the Dirac variational article, the constraint structure's closure is not examined.
+*No constraint algebra.* As in the Dirac Lagrangian article, the constraint structure's closure is not examined.
 
 *No derivation of the force.* The Lorentz force is read from the shell's gradient and not from the action.
 

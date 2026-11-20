@@ -193,7 +193,7 @@ The domain is the set of invertibles, asked at each event. The word exists iff $
 
 The block is thirty-five entries in six groups: the framework, which is this article; the fluid layer, which is nine articles on ordinary fluid mechanics, eight of them with no element of the algebra;
 the scalar ladder, which is the first-order pair below the spin-zero fluid and then that fluid with its stress, its nodal set and its charged companion; the spinor
-fluid with its frame, its stress and its charged companion; the vector fluid with its charged companion — each of the four rungs carrying its variational article in the fluid variables at its end, so that the eight Lagrangian articles stand beside the eight fluids they vary; and the algebra that reads all of them, with the choices the
+fluid with its frame, its stress and its charged companion; the vector fluid with its charged companion — each of the four rungs carrying its Lagrangian article in the fluid variables at its end, so that the eight Lagrangian articles stand beside the eight fluids they vary; and the algebra that reads all of them, with the choices the
 word leaves open, the sign $\varepsilon$, the locking on the degenerate sector and the boundary at which it fails.
 
 ## Summary of Notation

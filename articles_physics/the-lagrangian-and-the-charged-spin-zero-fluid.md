@@ -126,6 +126,20 @@ $$
 
 **The comparison worth recording.** The four charged articles of this layer differ in what the coupling can reach. At the first order it reaches the phase and the velocity and not the gradient energy; here it reaches the velocity and not the gradient energy either; in the spinor case it reaches the frame's transport and not the rotor's norm; in the vector case it reaches the field's own divergence and turns the Lorentz condition into a statement about the charge. **The action states each case as which variable is charged**, and the four are one sentence: the connection is central, and what is central reaches the phase and the boost's logarithm and cannot reach a modulus.
 
+## What the Fluid Adds That the Element and the Limit Do Not
+
+**The charge is the phase and nothing else, and the spin-zero fluid is where that is exact.** The charged biquaternion fluid carries a frame as well as a density and a phase, and the coupling reaches the scale bracket and the phase bracket and never the frame's. **So the fluid's charge density is the density and its current is the phase's gradient, unchanged by the frame's presence**, and the article's comparison with the charged Schrödinger fluid is the statement that the frame does not enter the charge at all.
+
+**What it adds: the frame's two pressures under a potential.** The temporal slot of the potential is real and the spatial slot is Hermitian, so in the fluid's own frame the coupling is a longitudinal pressure and a transverse one. **The element reading can say this as a type fact and does; the fluid reading says it as a stress**, and the article's section on the potential's two slots is where the two statements are put side by side.
+
+**What it adds: the anisotropy's stability.** A frame that is reconstructed from the element and not fixed by the potential is a free choice in the free fluid; in the charged fluid the potential fixes it, and the article states the condition under which the extremum is unique. **That condition is the fluid reading's own contribution**, because the element reading has no reason to ask about uniqueness.
+
+**What it does not add.** No new equation and no new charge. **The charge is the Schrödinger fluid's charge**, and the article says so in one line rather than deriving it twice.
+
+**What it inherits.** The nodal exception and the gauge covariance — the second now through the phase's covariant derivative and not through the density.
+
+**Where the reading stops.** At the frame's degeneracy, where the potential's extremum is not unique. **The article states it once**, and that statement is the difference between this fluid and its uncharged companion.
+
 ## Open Questions
 
 1. **The two signs of the charge and the two sheets.** $\rho_{\mathrm{chg}}=\gamma\rho_{\mathrm{num}}$ with $\gamma=(E+ϙ a'_t)/(mc^{2})$, so the charge density's sign is the energy's, and the action's indefiniteness is inherited. Whether a single functional covers both signs, and whether the two are related by charge conjugation, is the second category's question; the action states the problem and does not solve it.

@@ -182,7 +182,7 @@ reduced into the word's range, plus the Maslov constant. The gauge term's share 
 - The scale's blindness at first order and the rotor's role as the transport along the Lorentz path, which is the division of labour between charge and spin in one statement.
 - The compatibility of the coupling with the angle's composition and its irrelevance to the rotor's non-composition.
 
-**Does not add.** No second integral: the object read is the companion's. No prediction: the kernel is the standard coupled propagator. No measure, and no construction of the field integral's Trotter limit. No derivation of the fermionic statistics. No closure of the constrained system that the polar variational article leaves open. No kernel for a general constant field strength, and therefore no reading of the word in a field that bends the path without being a translation.
+**Does not add.** No second integral: the object read is the companion's. No prediction: the kernel is the standard coupled propagator. No measure, and no construction of the field integral's Trotter limit. No derivation of the fermionic statistics. No closure of the constrained system that the polar Lagrangian article leaves open. No kernel for a general constant field strength, and therefore no reading of the word in a field that bends the path without being a translation.
 
 ## Open Questions
 

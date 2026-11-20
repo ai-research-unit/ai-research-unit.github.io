@@ -144,7 +144,7 @@ A frame built from a rotor field, $\tilde E_{\Phi,\mu}=\tilde U\vec e_\mu\tilde 
 
 **Claim.** If $\tilde U$ is a unit-norm biquaternion field, then $\tilde U^{\natural}\partial_\mu\tilde U$ is scalar-free.
 
-**Proof.** Differentiate $\tilde U^{\natural}\tilde U=e_t$: $(\partial_\mu\tilde U^{\natural})\tilde U+\tilde U^{\natural}\partial_\mu\tilde U=0$. Let $\vec A=\tilde U^{\natural}\partial_\mu\tilde U$. Then $\vec A^{\natural}=(\partial_\mu\tilde U^{\natural})\tilde U=-\vec A$, and $\mathrm{Sc}$ is invariant under ${}^{\natural}$, so $\mathrm{Sc}(\vec A)=\mathrm{Sc}(\vec A^{\natural})=-\mathrm{Sc}(\vec A)$, hence $\mathrm{Sc}(\vec A)=0$. $\square$
+**Proof.** Differentiate $\tilde U^{\natural}\tilde U=e_t$: $(\partial_\mu\tilde U^{\natural})\tilde U+\tilde U^{\natural}\partial_\mu\tilde U=0$. Let $\vec A=\tilde U^{\natural}\partial_\mu\tilde U$. Then $\vec A^{\natural}=(\partial_\mu\tilde U^{\natural})\tilde U=-\vec A$, and $\mathrm{Sc}$ is invariant under ${}^{\natural}$, so $\mathrm{Sc}(\vec A)=\mathrm{Sc}(\vec A^{\natural})=-\mathrm{Sc}(\vec A)$, hence $\mathrm{Sc}(\vec A)=0$.
 
 The same argument gives $\partial_\mu\tilde U\,\tilde U^{\natural}$ scalar-free, and the two are related by conjugation. So both natural one-sided logarithmic derivatives live in the six-dimensional Lie subspace, which is exactly what a connection needs, and the derivative's value is $\mathbb{B}$-valued with no scalar leakage.
 

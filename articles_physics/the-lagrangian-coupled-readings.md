@@ -2,7 +2,7 @@
 
 The coupled readings add one connection to a matter field and derive both the matter's equation and the connection's. They are the family's minimal-coupling corner: one derivative replaced, one constant, and the identity that makes the two equations one system.
 
-**The twelve articles.**
+**The sixteen articles.**
 
 - [The Lagrangian and the Coupled Klein–Gordon Equation](the-lagrangian-and-the-coupled-klein-gordon-equation.html)
 - [The Lagrangian and the Coupled Klein–Gordon Equation in Polar Variables](the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html)

@@ -112,6 +112,20 @@ $$
 
 **The one comparison that matters for the layer.** The scalar relativistic article of this layer finds the shell to be an equation of motion and the stress to be a translation current. Here the analogous statements are weaker: the constraints are constraints and not equations, because the frame's variables are coordinates with no kinetic term, and the stress is a restriction of the block's. **The difference is the count of the word's factors**: two for the scalar, four for the spinor, and the two extra factors carry no kinetic term at all.
 
+## What the Fluid Adds That the Element and the Limit Do Not
+
+**The spin current is the fluid's own object.** In the element reading the spin is a density carried by the frame; in the limit reading it is a first integral; **in the fluid reading the spin has a current, and the current's divergence is a torque.** The third object — the torque — appears in no other reading of these three articles, and it is the reason this article exists.
+
+**What the torque adds.** It makes the frame's equation a balance law rather than a transport: the polarisation rotates because a torque acts on it, and the torque is built from the density's gradient and the velocity's gradient. **A reader who has only the element reading knows that the frame rotates; a reader with the fluid reading knows what rotates it**, and the difference is a physical statement rather than a restatement.
+
+**What it adds: the trace.** The stress's trace is the pressure, and the fluid reading is where the pressure and the energy density are related. **The element reading's stress has a trace too**, but nothing in that reading says it is a pressure; the fluid reading does, and the spin fluids' equation of state is the statement that the trace is the mass term.
+
+**What it does not add.** No new solution and no new equation: **every fluid equation is the element equation with one term renamed**, and the article does not claim otherwise. The value of the reading is in the naming, and the article is explicit that naming is the whole of its contribution.
+
+**What it inherits, and one thing it inherits better.** The element reading's rotation of the polarisation along the flow is, in the fluid reading, a torque balance; the element reading's constraint that the spin be transverse is, in the fluid reading, the statement that the spin is a density in the fluid's own frame. **The two statements are the same and the second is easier to test numerically**, and the article's verification section is where the test is run.
+
+**Where the reading stops.** At the node, where the velocity is undefined and the torque with it. **The spin fluid has the same exception as the scalar fluid**, and the article says so rather than inventing a mechanism that would carry it through.
+
 ## Open Questions
 
 1. **The bracket.** Whether the Dirac bracket of $(\rho_{\mathrm{num}},\vec s,\vec v)$ closes is the polar companion's open question and this article's. It is finite: the constraints are known and the one-form is known.

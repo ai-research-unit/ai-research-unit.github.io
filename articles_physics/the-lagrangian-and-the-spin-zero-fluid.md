@@ -136,6 +136,20 @@ and it splits into the two terms the action has. The first is the dust's: $\part
 
 **The one comparison worth making with the polar companion.** That article finds the polar action to be quadratic in the bracket with a metric that depends on the point, and it computes the metric for the four scalar parameters with both axes held fixed. The fluid chart replaces the rapidity by the velocity, so the metric's dependence on the point becomes the shell's dependence on $Q_{\mathrm{qnt}}$: **the point-dependent metric and the quantum potential are one object read in two charts**, and the fluid chart is the one in which it appears as an energy rather than as a metric.
 
+## What the Fluid Adds That the Element and the Limit Do Not
+
+**The full element is a fluid with a frame that is not a spin.** The biquaternion scalar field's polar word carries the boost and the rotor as well as the scale and the phase, so its fluid has a local frame in which the rapidity is an anisotropy and the rotor is a rotation of the frame about itself. **The element reading calls these parameters; the fluid reading calls the frame a state of the medium**, and the second naming is what lets a reader ask what the medium's anisotropy does to the pressure.
+
+**What it adds: the two-sided pressure.** The stress has a longitudinal and a transverse component, and they differ because the frame distinguishes a preferred direction at each point. **The element reading has the same two components in its stress**, but nothing there says which is the direction of propagation; the fluid reading does, and the anisotropy of the pressure is the article's contribution.
+
+**What it adds: the second-order formulation as a fluid statement.** The field equation is second order in the element, and in the fluid reading that order is the statement that the medium carries a stress and not only a flow. **A first-order fluid carries a momentum density; a second-order fluid carries a stress**, and the article's section on the two orders is where the distinction is made.
+
+**What it does not add.** No new equation and no new solution. **Every equation in this article is the element article's**, and the article says so in its first paragraph so that no reader looks for a new prediction.
+
+**What it inherits.** The uncharged character, the gauge invariance of the scale, and the nodal exception. **The rotor is not a charge**, and the article's comparison with the charged Schrödinger fluid is a single sentence making that point.
+
+**One thing it inherits worse.** The frame's meaning is clearer here than in the element reading, but its *determination* is not: **the frame is reconstructed from the element and not fixed by a potential**, so the fluid reading has less to say about it than the coupled fluids do.
+
 ## Open Questions
 
 1. **The two sheets and the action's domain.** $\varepsilon$ does not appear in the action, so the two branches $\varepsilon=\pm1$ are one functional's two images and the action selects neither. Whether they are two sectors of one functional or two functionals that agree on the boundary is not settled, and it is the same question the block's article poses about the density's sign.

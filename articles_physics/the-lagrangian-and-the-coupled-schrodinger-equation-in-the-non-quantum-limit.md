@@ -155,6 +155,34 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 
 **What the deletion does to the two.** The deleted term is a gradient of the scale, and a gradient cannot change a charge; it can change the energy's value at a given configuration but not its conservation. So the limit's currents are the parent's currents with the density's correction dropped, and the error in each is the order of the deleted block.
 
+## The Truncation and Its Error
+
+**Which block is deleted, and how much it costs.** The truncated action drops the gradient of the density squared. That block carries two spatial derivatives and no time derivative, so its order is two in the parameter and its size against the kept terms is the density's curvature over the density itself. **The error is therefore second order and it is a functional of the density alone**, which is the same structure the scalar family has and the reason the two sections are worded alike.
+
+**Restoring it adds the quantum potential.** The restored term enters the equation for $\vec u_{\mathrm b}$ and not the equation for the phase, and it enters with the density in the denominator. **It is large where the density is small**, so the truncated theory cannot describe a node, and the article's section on the nodal exception is where that boundary is stated.
+
+**Why the truncation is gauge invariant.** The deleted block is built from $\nabla\varrho$, and $\varrho$ is invariant under the gauge shift of the phase. **The block is therefore a gauge scalar and its deletion commutes with a gauge transformation**, which is the property the first-order family lacks.
+
+**Why it is not boost invariant.** The block is a spatial gradient and not a four-gradient, so it distinguishes the slicing. **The truncation of this family singles out a frame**, and that is a real loss even though the error is small: a small non-covariant term is still a non-covariant term.
+
+**What the error is not.** It is not a bound. **The expansion is asymptotic and convergence is not claimed**, so the statement is that the truncated equations hold to order $\epsilon^{2}$ for densities that vary slowly, and not that the solutions are close in a norm.
+
+**Why the coupling does not change the error.** The connection enters the covariant derivatives of the phase and the potential and does not enter the density's gradient. **The error is the free theory's error**, and the coupled article says so in one sentence.
+
+## What Survives
+
+**The covariant eikonal.** The phase's variation of the truncated action gives the covariant eikonal equation, with the connection inside the covariant bracket and the potential's two slots where the article's chart puts them. **The equation survives the truncation unchanged**, because the deleted block contains no phase.
+
+**The covariant continuity equation.** The variation in the frame gives the continuity equation with the covariant divergence in place of the ordinary one. **It survives unchanged for the same reason**, and the two together are the truncated theory's whole content.
+
+**The gauge covariance.** Every kept block is a gauge covariant object and the deleted block was a gauge scalar, so the truncation commutes with a gauge transformation. **The truncated theory is gauge invariant**, and the article says so in a section of its own because it is the property that fails for the first-order family.
+
+**The currents.** Density and energy are the phase's conjugate quantities, and the current is the density times the phase's gradient. **Their expressions survive verbatim**, and the coupling enters them exactly where it entered the parent.
+
+**What does not survive.** The density's dynamics. **A configuration whose density varies on the scale of the potential's curvature is outside the truncated theory**, and the article's statement of the boundary is one sentence.
+
+**Why this list is short.** The family deletes one block and keeps four, so the truncated theory is thin. **The article says that plainly**: the non-quantum limit of the Schrödinger family is the eikonal plus the continuity equation, and the rest of the parent's content is in the term that was removed.
+
 ## What the Variational Route Adds
 
 **Three things, and the third is the coupling's.**

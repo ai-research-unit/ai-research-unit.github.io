@@ -179,6 +179,20 @@ and the $k^{4}$ cancels against the $k^{4}$ inside the second term. **The cancel
 
 **What the mass term does.** It fixes the longitudinal coefficient to $k_m^{2}$ and therefore fixes the energy of the longitudinal mode; the transverse modes keep the Maxwell dispersion. That split of the stress into two pieces is the mode-level statement of the count the element article makes, and it is the reason the Proca article's *Longitudinal Coefficient* section exists.
 
+## The Legendre Transform
+
+**The transform inverts on the transverse directions and is degenerate on the longitudinal one.** The Proca mode form is quadratic in the frequency, so the transform inverts in general; but the mass term removes one degree of freedom, and the direction it removes is the one where the transform's derivative does not depend on the frequency. **The transform is therefore two-valued on the transverse form and single-valued on the longitudinal one**, and that asymmetry is what the coupled article's section calls the inversion being two-valued.
+
+**Where the two branches are.** The two roots of the quadratic are the two mass-shell branches, and they differ by the sign of the frequency. **The branches are not two particles**: they are the same form read at $\pm\omega$, and the density's sign is what distinguishes them.
+
+**The longitudinal direction's single value.** On the longitudinal direction the form reduces to $\tfrac12k_m^{2}(A\cdot A)$ and the frequency has dropped out. **The transform's derivative there is the mass and not the frequency**, so the transform returns the coefficient $k_m^{2}$ and no branch. This is the precise sense in which the Proca field has three degrees of freedom and not four: one direction is a coefficient and the other three are a form.
+
+**The slope.** The derivative of the action with respect to $\omega$ is the density per mode, and the transform's slope is therefore the density as a function of the energy. **On the transverse directions the slope changes sign between branches; on the longitudinal direction it does not**, because the density there carries the mass and not the frequency.
+
+**What the transform does not do.** It does not produce the constraint. **The constraint is already in the form** — the vanishing of the longitudinal coefficient's variation — and the transform only reports it as a coefficient that does not move. A reader who expected a Lagrange multiplier has looked for one in the wrong place: the exact parameterisation and the mass term both make it unnecessary.
+
+**One caution.** The transform is taken before the equation is imposed. **On shell the form vanishes**, so the transform of the on-shell form is zero on both branches and on the longitudinal direction alike, and the article does not take it.
+
 ## Limits
 
 **The constant-coefficient licence bounds every statement here.** The form is a form at one wave number only where the coefficients are constant. With a connection there is a form at a mode only for a constant connection, and the coupled companion treats that case.

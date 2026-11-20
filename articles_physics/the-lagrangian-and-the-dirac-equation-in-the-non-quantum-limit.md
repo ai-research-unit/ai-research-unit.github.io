@@ -106,6 +106,18 @@ using $\Pi_+^{*}=\Pi_+$, the cyclicity of $\mathrm{Sc}$, and $\Pi_-\Pi_+=0$. **N
 
 **The energy.** The Legendre transform of a first-order action is $E=U$, because $p\dot q=A\dot q$ cancels the kinetic term. So the energy of a configuration is the mass term evaluated on it, $U=\hbar c\,k_m\varrho^{2}\mathcal V$, and the equation of motion is the statement that the flow is tangent to the level surfaces of $U$ in the symplectic form $\Omega$. The energy carries the mass and the density does not, which is the limit's version of the split the element article makes.
 
+## The Error, and Why There Is None
+
+**There is no truncation error because there is no truncation.** The limit removed nothing, so the difference between the parent action and the limit's action is zero, and the difference between the parent's equations and the limit's is zero as well. **The error of this family's non-quantum limit is identically zero**, and the article says so in one sentence rather than in a section — except that the sentence needs a section, because a zero error is easy to misread as a strong result.
+
+**Why it is not a strong result.** A zero error means the limit is exact, and an exact limit carries no information about the small parameter. **The Dirac family's limit cannot be used to justify dropping anything**, because nothing was dropped; every later approximation — the envelope, the slowly varying frame, the neglect of the back-reaction — is a different approximation with its own error, and the article's other sections are where those are priced.
+
+**What a reader might expect, and why the expectation is wrong.** In the scalar family the limit's error is the quantum potential, and a reader who comes to the Dirac family expecting the same will look for a term that is absent from the parent. **The polar word has no scale-kinetic block**, so there is nothing to delete and nothing to restore, and the article's coordinates section is where that is shown.
+
+**The price, stated honestly.** The exactness is bought by the limit being vacuous as an approximation. **The article's claim is not that the Dirac family's non-quantum limit is better than the others; it is that the limit is a different kind of object**, a reading of an exact structure rather than a truncation of an approximate one.
+
+**Consequence for the family's status.** A limit that approximates nothing and deletes nothing cannot be used to argue that the theory is "almost classical" at large scales. **The Dirac family's classical appearance is a property of its order count from the start**, and the limit merely names it.
+
 ## What the Limit Reads
 
 **Nothing is deleted, so the limit is an assignment.** The two statements it makes are:

@@ -53,6 +53,30 @@ $$
 $$
 and that is the only change. The one-form's rotor term is untouched, because the connection is central and the rotor bracket is a real vector part.
 
+## The Deletion, Stated in Coordinates
+
+**What is deleted.**
+
+$$
+\Delta S=-\int\mathrm{d}^{4}\varrho\;\bigl[\text{terms in }\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}\bigr],
+$$
+
+three gradients and not eight: the phase's gradient is not among them, and neither are the rotor's angles, because those enter the one-form and not the potential.
+
+**The ledger.**
+
+| deleted | order | what it was |
+|---|---|---|
+| $\lvert\nabla \varrho\rvert^{2}$-type | $2$ | the density's curvature, the scalar quantum potential |
+| $\lvert\nabla\theta_{\mathrm{rpd}}\rvert^{2}$-type | $2$ | the velocity field's curvature |
+| $\lvert\nabla\theta_{\mathrm{axr}}\rvert^{2}$-type | $2$ | the spin field's curvature |
+
+**All three are order two and all three are quadratic in gradients**, so the deletion removes the entire order-two content and nothing else. **The limit's accuracy claim in this family is exactly "the deleted terms are the curvature of three fields"**, and it is visible in the parent's own two displays.
+
+**What survives.** One term linear in the phase's rate, the frame potential, and the mass term. **The surviving action is first order in the phase and algebraic in the frame**, so its Euler–Lagrange equations are the guidance equation and the constraints.
+
+**The guidance equation in mechanical variables.** Varying $\theta_{\mathrm{pha}}$ returns the continuity equation with $\vec v$ the kinetic velocity; varying the frame's angles returns the constraints; and the constraint surface evaluated with the coupling is the mechanical mass shell. **The chain from the boxed action to the mechanical shell goes through the constraints and not through a second-order equation**, and that is why this family's limit is a constraint-and-flow split.
+
 ## The Variation
 
 **Seven momenta and two evolution equations, from one variation.** The boxed action is first order in seven of the eight coordinates: it contains $\partial_{r'_t}\theta_{\mathrm{pha}}$ and no other rate. Varying it with respect to the coordinates gives two kinds of equation. The seven coordinates whose rates are absent give
@@ -81,30 +105,6 @@ and the Euler–Lagrange equation of the density and of the guidance angle gives
 
 **What the constraints are in the limit's language.** They are the frame's algebra: the rapidity, the boost's axis and the rotor's three angles are determined by the coordinates they are conjugate to. **Order zero's polarisation is this algebra**, seen from the action rather than from the equation.
 
-## The Deletion, Stated in Coordinates
-
-**What is deleted.**
-
-$$
-\Delta S=-\int\mathrm{d}^{4}\varrho\;\bigl[\text{terms in }\vec\nabla_\Phi \varrho,\ \vec\nabla_\Phi\theta_{\mathrm{rpd}},\ \vec\nabla_\Phi\theta_{\mathrm{axr}}\bigr],
-$$
-
-three gradients and not eight: the phase's gradient is not among them, and neither are the rotor's angles, because those enter the one-form and not the potential.
-
-**The ledger.**
-
-| deleted | order | what it was |
-|---|---|---|
-| $\lvert\nabla \varrho\rvert^{2}$-type | $2$ | the density's curvature, the scalar quantum potential |
-| $\lvert\nabla\theta_{\mathrm{rpd}}\rvert^{2}$-type | $2$ | the velocity field's curvature |
-| $\lvert\nabla\theta_{\mathrm{axr}}\rvert^{2}$-type | $2$ | the spin field's curvature |
-
-**All three are order two and all three are quadratic in gradients**, so the deletion removes the entire order-two content and nothing else. **The limit's accuracy claim in this family is exactly "the deleted terms are the curvature of three fields"**, and it is visible in the parent's own two displays.
-
-**What survives.** One term linear in the phase's rate, the frame potential, and the mass term. **The surviving action is first order in the phase and algebraic in the frame**, so its Euler–Lagrange equations are the guidance equation and the constraints.
-
-**The guidance equation in mechanical variables.** Varying $\theta_{\mathrm{pha}}$ returns the continuity equation with $\vec v$ the kinetic velocity; varying the frame's angles returns the constraints; and the constraint surface evaluated with the coupling is the mechanical mass shell. **The chain from the boxed action to the mechanical shell goes through the constraints and not through a second-order equation**, and that is why this family's limit is a constraint-and-flow split.
-
 ## The Coupling's Reach
 
 **One potential, two brackets.** The potential is one element of $\mathbb{B}_\Phi$ with a temporal slot and a spatial vector slot, so it joins the phase bracket's temporal slot and the boost bracket's spatial slots. **No second rule is needed**, and the parent's statement that no sign can be chosen independently follows from the slots.
@@ -130,6 +130,20 @@ three gradients and not eight: the phase's gradient is not among them, and neith
 **It buys the constraint structure as an exact statement.** The boxed action's equations are the frame's algebra and the guidance equation, and both are exact statements about the chart. **A variational principle that kept the gradients could not state them without invoking the discarded terms.**
 
 **It buys a comparison the corpus can make and does not make elsewhere.** The two displays are printed in the same article, so the limit's ledger is not a reconstruction but an inspection. **This is the only family in the corpus where that is so**, and it is worth saying because the reader's natural question — what exactly does the limit throw away — has a printed answer here.
+
+## What Survives
+
+**The constraints survive, and they are the limit's whole content.** The truncated functional's variations give the mass-shell relation at the shifted frequency, the condition that fixes the frame's polarisation, and the vanishing of the three momenta that the polar word never gave a kinetic term. **None of these is an approximation**: they are the parent's conditions, and the limit is their statement.
+
+**The frame's transport survives.** Varying the frame gives the transport that rotates the polarisation along the flow, with the connection inside the covariant bracket. **It survives unchanged**, because no frame block was touched — the article's whole point is that nothing was.
+
+**The charge and the spin survive.** The phase's variation gives the charge and the frame's variation gives the spin density, with the connection entering only through the covariant derivative. **Both expressions are the parent's**, and the article's section on the charge and the spin is where they are displayed.
+
+**The gauge covariance survives.** The parent action is gauge invariant and the limit touches no term, so the truncated functional is gauge invariant. **The truncation cannot break the gauge symmetry, because there is no truncation**; the section says so once and does not labour it.
+
+**What does not survive, and this is the honest part.** Nothing is lost, and nothing is gained: **the limit does not select a class of solutions, because it is not an approximation to anything.** The article's claim is that the order-zero structure is exact, and that the "non-quantum" name describes an exact structure rather than a limit of one.
+
+**Why the family is worth its own article, then.** Because the exact structure is not the classical point-particle theory: the frame is a dynamical variable, the spin is a density, and the transport is not a geodesic equation. **The non-quantum limit of the Dirac family is the closest thing the corpus has to a classical spinning particle**, and it is exact, which is why the family's three articles each end with what survives rather than with what is lost.
 
 ## What the Variational Route Does Not Do
 

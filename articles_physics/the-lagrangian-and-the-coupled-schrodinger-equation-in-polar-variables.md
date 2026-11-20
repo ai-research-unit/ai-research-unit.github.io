@@ -36,7 +36,7 @@ and every other term of the Lagrangian is the free one, letter for letter. The f
 
 ## Conventions
 
-**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar variational article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
+**The conventions are the corpus's, restated here so that every sign below is checkable from this page alone.** The algebra, the word, the parameter ranges, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$ and the letters are the free polar Lagrangian article's. The connection is $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi=c\,a'_t$, the coupling is $ϙ$, and the covariant derivative is $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=\vec p-q\vec A$ and the potential energy enters as $-ϙ\varphi$. Time is $t'$ throughout, and the article never writes $r'_t$.
 
 ## The Coupled Polar Lagrangian
 
@@ -156,7 +156,7 @@ because the factor is central and commutes with every invertible element. Seven 
 
 **What the chart's degeneracy means for the equations.** The eight parameter equations are the eight components of the field equation, and the gauge direction is not one of them: the field equation is invariant, so a family of parameters related by the gauge direction gives one equation. The counting is therefore unchanged — eight equations for eight parameters, with the gauge direction a redundancy of the description and not a new degree of freedom. The free chart's counting is the same, with the redundancy absent.
 
-**The free article's "no gauge freedom" and the coupled statement.** The free polar variational article records that the free equation fixes the phase's rate and that there is no gauge freedom to fix. The coupled statement is compatible with it and sharper: the rate is still fixed, and it is the gauge-invariant combination $\mathcal E=-\hbar\dot\theta_{\mathrm{pha}}+ϙ\varphi$ that is fixed; the phase itself is free. So the coupling converts a physical coordinate into a coordinate with a gauge direction, and the direction is the one whose conjugate momentum is the density.
+**The free article's "no gauge freedom" and the coupled statement.** The free polar Lagrangian article records that the free equation fixes the phase's rate and that there is no gauge freedom to fix. The coupled statement is compatible with it and sharper: the rate is still fixed, and it is the gauge-invariant combination $\mathcal E=-\hbar\dot\theta_{\mathrm{pha}}+ϙ\varphi$ that is fixed; the phase itself is free. So the coupling converts a physical coordinate into a coordinate with a gauge direction, and the direction is the one whose conjugate momentum is the density.
 
 ## The Structural Consequence: The Potential Shift Is the Whole of the Coupling
 
@@ -173,6 +173,24 @@ because the derivative is first order and the connection is central. The claim i
 **The hand check.** The operator setting's statement is $H=-(\hbar^{2}/2m)\Delta_\Phi+V$ with $p\mapsto p-ϙ\vec A$ in the covariant Laplacian; in the chart the same replacement appears as $\vec h_\Psi\mapsto\vec h_\Psi-ϙ\vec A$ inside $V$, since $\vec h_\Psi$ is the chart's symbol for the momentum. One substitution, two charts, one coupling.
 
 **Why the first-order case can say it so plainly.** A second-order derivative would produce a term quadratic in the connection, and the shift would have to be checked against it. Here there is no such term: the connection enters linearly and only through the potential, so the shift is exact and not a truncation. That is the structural difference between this chart and the Klein–Gordon one, whose coupling shifts a bracket rather than a potential.
+
+## The Parameter Basis and the Four Brackets
+
+**What survives when the field is central.** The coupled Schrödinger field is a single central coefficient, so its word has a scale and a phase, and the rotor and the boost are present only through the rapidity that the action carries. The logarithmic derivative still has four directions,
+
+$$
+\tilde\Xi^{-1}\partial\tilde\Xi=\partial\ln\varrho+i\,\partial\theta_{\mathrm{pha}}+\tfrac12\partial\theta_{\mathrm{rpd}}\,\vec u_{\mathrm b}+\tfrac12\bigl(\partial\theta_{\mathrm{axr}}\,\vec u_{\mathrm r}+\ldots\bigr),
+$$
+
+but the rotor bracket is a real vector with no partner in a central bilinear, so it drops out of the scalar part and the action keeps three. **This is the reason the coupled chart has three vanishing momenta and one non-zero one**, and the count is a type fact rather than a computation.
+
+**Why the types pair as they do.** The kinetic term is $\mathrm{Sc}\bigl[\tilde\Xi^{*}\partial\tilde\Xi\bigr]$ and the scalar part of a product vanishes unless the types are conjugate. Scale pairs with scale, phase with phase, Hermitian with Hermitian, real vector with real vector. **A bracket contributes only through its own type**, and every cross term a naive expansion writes is zero by the algebra.
+
+**The parameter basis is not the bracket basis.** The eight parameters are coordinates and the four brackets are types, related by the word's Jacobian, which mixes them: the rapidity's derivative carries part of the scale bracket because $\cosh\theta_{\mathrm{rpd}}$ multiplies the phase term, and the rotor's derivative carries part of the boost bracket because $\sinh\theta_{\mathrm{rpd}}$ multiplies the cross term. The parameter equations are the same equations in a rotated basis; the brackets are the form in which each object has one type and one partner.
+
+**What the coupling does to them.** The connection is central and carries no velocity, so it shifts the potential's temporal slot and the potential's spatial slot and touches no bracket's kinetic term. In the chart that shows up as $V_{\mathrm{gco}}$ differing from $V$ by $-ϙ\varphi\cosh\theta_{\mathrm{rpd}}-ϙ(\vec A\cdot\vec u_{\mathrm b})\sinh\theta_{\mathrm{rpd}}$ and as nothing else changing. **The kinetic term is untouched because the coupling has no type that reaches a velocity**, and the three vanishing momenta are therefore the free chart's.
+
+**The one place the coupling does reach a bracket.** The potential's spatial slot is Hermitian, so it joins the boost bracket, and its temporal slot is real, so it joins the scale bracket. Neither reaches the phase bracket, and that is why the phase's equation is the continuity equation with no coupling term in it.
 
 ## The Noether Currents: The Coupled Charge
 
@@ -245,6 +263,20 @@ which is the element-form companion's identity in the chart and is one line here
 **Does not add.** No new solution and no new prediction. No new closure proof: the closure is the free article's, transported. No decoupling of the four brackets from the parameter equations: the Jacobian is the free one's, because the word is the free one's. No constraint analysis: the constant-setting system's closure is the free article's open question and the coupling does not decide it — it neither creates a constraint nor removes one.
 
 **The distinction that matters, stated once.** In the constant setting the coupling is a shift of the potential, so it touches the flow's numbers and not the flow's structure. In the operator setting the coupling is a covariant gradient, so it touches the kinetic term and not the potential's shape. The two settings' statements are different, and the polar chart is the only place where both are visible in one symbol — the phase bracket — because that is where the covariant derivative and the potential both live.
+
+## The Reconstruction and Its Limits
+
+**The reconstruction, for the coupled central pair.** The word does not contain the connection, so the inverse map is the free chart's: $\varrho$ is the modulus, $\theta_{\mathrm{pha}}$ the argument, and the rapidity and rotor are recovered from the two norms as in the free polar article. **The coupling changes the potential's frame dependence and not the chart**, and a reader who expected otherwise has confused the parameterisation with the dynamics.
+
+**The node, and why the coupling makes it worse.** At $\varrho=0$ the phase is undefined and the reconstruction fails. In the free theory that failure is the nodal set, and it is the corpus's circulation article's subject. Here the potential is $V_{\mathrm{gco}}=(h_t-ϙ\varphi)\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}\,((\vec h_\Psi-q\vec A)\cdot\vec u_{\mathrm b})$, which depends on the frame and not on $\varrho$; **so the failure at the node is in the phase and not in the constraint**, and the frame is still reconstructed there. That is a real difference between the two failures and the article does not blur it.
+
+**The scale's limit.** $\varrho>0$ excludes the zero element, and the coupled chart has no exception: the connection's term is finite at $\varrho=0$ and the chart still fails, because the failure is in the parameterisation.
+
+**The angle's limits.** The rotor's angle closed at $2\pi$, the phase on a half-open interval of length $\pi$. Both inherited unchanged.
+
+**What the reconstruction does not give.** The flow, and here the gap is narrow: the two evolution equations are the continuity equation and the guidance equation with the shifted potential, and the article derives both from the action. **What it does not derive is that the reduced flow is the coupled pair's flow**, which is the article's open question. The reconstruction recovers the field; the flow is argued separately.
+
+**One limit the free article does not have.** The coupled potential depends on the frame, so the frame is reconstructed and then fixed by an extremum rather than evolved. **A reconstruction that treated the frame as a dynamical coordinate would be wrong here**, and the section exists partly to say so.
 
 ## Open Questions
 

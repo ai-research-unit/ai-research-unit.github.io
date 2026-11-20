@@ -204,6 +204,52 @@ For the eight parameters the statement is one line and it is exact.
 
 The equivalence holds on the $N$-regular set, and only there. At $\varrho=0$ the word has no value, the parameters are not coordinates, and the parameter equations are not defined; the Klein–Gordon equation itself is defined and regular there, and its solutions cross the nodal set without incident. So the polar action is a description of the field off its nodal set, and the element-form action of the companion is the description of the field everywhere. The two agree wherever both are defined. This is the same boundary the parent records, and the variational principle inherits it unchanged: a parametrisation cannot extend a functional past the points where the parametrisation stops.
 
+## The Four Brackets and the Parameter Basis
+
+### Two bases of one tangent space
+
+At a point of the $N$-regular set the tangent space of the field values is eight-dimensional, and it has two natural bases.
+
+**The bracket basis** is the decomposition of $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into its four algebraic types: a real scalar, a central imaginary, a Hermitian element along the boost axis, and a real vector along the rotor's axis. Each type carries one physical role, and each is one object and not one number.
+
+**The parameter basis** is the set of eight derivatives $\partial\tilde\Xi/\partial p^{a}$. These are eight elements of $\mathbb{B}$, not eight numbers, and they are the Jacobian columns of the word.
+
+The two are related by $\mathcal{A}_\mu=\sum_a\mathcal{A}_a\,\partial_\mu p^{a}$ with $\mathcal{A}_a=\tilde\Xi^{-1}\partial\tilde\Xi/\partial p^{a}$, so the bracket basis is the parameter basis multiplied by one more factor of $\tilde\Xi^{-1}$. The metric of the polar action is the same in both readings,
+
+$$
+g_{ab}=\mathrm{Sc}\big[\mathcal{A}_a^{*}\,\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}_b\big],
+$$
+
+which is the parameter form, and $\mathrm{Sc}(\mathcal{A}^{*}\tilde\Xi^{*}\tilde\Xi\,\mathcal{A})$ with $\mathcal{A}=\mathcal{A}_a\partial_\mu p^{a}$, which is the bracket form. The two differ by where the sum over the parameters is taken.
+
+### The central field's Jacobian, worked
+
+On the central field only $\varrho$ and $\theta_{\mathrm{pha}}$ survive, and the Jacobian is computed in one line. With $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$,
+
+$$
+\frac{\partial\tilde\Xi}{\partial \varrho}=e^{i\theta_{\mathrm{pha}}}\varepsilon e_t,
+\qquad
+\frac{\partial\tilde\Xi}{\partial\theta_{\mathrm{pha}}}=i\tilde\Xi,
+\qquad
+g_{r\varrho}=\mathrm{Sc}\big[(\partial_r\tilde\Xi)^{*}\partial_r\tilde\Xi\big]=1,
+\qquad
+g_{\theta\theta}=\mathrm{Sc}\big[(\partial_\theta\tilde\Xi)^{*}\partial_\theta\tilde\Xi\big]=\varrho^{2},
+\qquad
+g_{\varrho\theta}=0,
+$$
+
+so the Jacobian is diagonal and the metric is $(1,\varrho^{2})$. The two parameter equations are then the two brackets: the $\varrho$ equation is the real-scalar bracket's content, that is the amplitude equation, and the $\theta_{\mathrm{pha}}$ equation is the central-imaginary bracket's content, that is the transport equation.
+
+**The correspondence is triangular here.** Each parameter touches one bracket and one only, so the two parameter equations are the two brackets and the map between them is the identity. In the general element this ceases to hold: the derivatives of the amplitude carry a piece of the rapidity because of the $\sinh$ cross term, and the derivative of the phase carries a piece of the rotor's rate whenever $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\neq0$. That is what a nonlinear parameterisation does, and it is why the parameter equations mix the brackets.
+
+### Which is the natural form
+
+**The bracket form is the natural one.** The Lagrangian is one quadratic form in one object, the bracket $\mathcal{A}_\mu$, weighted by one density factor; the bracket is four objects of four types, and the four types are the four things an element of the algebra can be. The equation is the vanishing of eight residuals, and the four brackets are the four types those residuals fall into.
+
+**The parameter form is the Jacobian image of it.** It is the form in which the variational principle is stated over eight real functions with no auxiliary object, and it is the form in which the count is right: eight functions, eight equations, no constraint. But it is not simpler, and the parameter equations are not four equations plus four conditions; they are eight equations whose content is the brackets'.
+
+**The equivalence is exact.** The Jacobian is invertible on the $N$-regular set, so the two systems have the same solutions there. Neither is weaker: a solution of the brackets is a solution of the parameters and conversely, and the passage is the chain rule.
+
 ## The Currents in Polar Variables
 
 The Noether currents of the companion are one computation in the element form and one line each in these variables. That is the clearest thing the polar action adds.
@@ -259,52 +305,6 @@ which is four squares and a positive potential for $V>0$, hence non-negative for
 
 The second equation of the pair is the variation of $\varrho$, and in the polar variables it reads as the mass shell shifted by the curvature of the amplitude. So the two Euler–Lagrange equations of the polar action are the two statements of the parent's §*The Equation in Polar Variables*, and the variational principle adds to them the statement that they are two variations of one functional. The action that produces both is the one of §*The Action in Polar Variables*, and no second functional is needed.
 
-## The Four Brackets and the Parameter Basis
-
-### Two bases of one tangent space
-
-At a point of the $N$-regular set the tangent space of the field values is eight-dimensional, and it has two natural bases.
-
-**The bracket basis** is the decomposition of $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into its four algebraic types: a real scalar, a central imaginary, a Hermitian element along the boost axis, and a real vector along the rotor's axis. Each type carries one physical role, and each is one object and not one number.
-
-**The parameter basis** is the set of eight derivatives $\partial\tilde\Xi/\partial p^{a}$. These are eight elements of $\mathbb{B}$, not eight numbers, and they are the Jacobian columns of the word.
-
-The two are related by $\mathcal{A}_\mu=\sum_a\mathcal{A}_a\,\partial_\mu p^{a}$ with $\mathcal{A}_a=\tilde\Xi^{-1}\partial\tilde\Xi/\partial p^{a}$, so the bracket basis is the parameter basis multiplied by one more factor of $\tilde\Xi^{-1}$. The metric of the polar action is the same in both readings,
-
-$$
-g_{ab}=\mathrm{Sc}\big[\mathcal{A}_a^{*}\,\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}_b\big],
-$$
-
-which is the parameter form, and $\mathrm{Sc}(\mathcal{A}^{*}\tilde\Xi^{*}\tilde\Xi\,\mathcal{A})$ with $\mathcal{A}=\mathcal{A}_a\partial_\mu p^{a}$, which is the bracket form. The two differ by where the sum over the parameters is taken.
-
-### The central field's Jacobian, worked
-
-On the central field only $\varrho$ and $\theta_{\mathrm{pha}}$ survive, and the Jacobian is computed in one line. With $\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\varepsilon e_t$,
-
-$$
-\frac{\partial\tilde\Xi}{\partial \varrho}=e^{i\theta_{\mathrm{pha}}}\varepsilon e_t,
-\qquad
-\frac{\partial\tilde\Xi}{\partial\theta_{\mathrm{pha}}}=i\tilde\Xi,
-\qquad
-g_{r\varrho}=\mathrm{Sc}\big[(\partial_r\tilde\Xi)^{*}\partial_r\tilde\Xi\big]=1,
-\qquad
-g_{\theta\theta}=\mathrm{Sc}\big[(\partial_\theta\tilde\Xi)^{*}\partial_\theta\tilde\Xi\big]=\varrho^{2},
-\qquad
-g_{\varrho\theta}=0,
-$$
-
-so the Jacobian is diagonal and the metric is $(1,\varrho^{2})$. The two parameter equations are then the two brackets: the $\varrho$ equation is the real-scalar bracket's content, that is the amplitude equation, and the $\theta_{\mathrm{pha}}$ equation is the central-imaginary bracket's content, that is the transport equation.
-
-**The correspondence is triangular here.** Each parameter touches one bracket and one only, so the two parameter equations are the two brackets and the map between them is the identity. In the general element this ceases to hold: the derivatives of the amplitude carry a piece of the rapidity because of the $\sinh$ cross term, and the derivative of the phase carries a piece of the rotor's rate whenever $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\neq0$. That is what a nonlinear parameterisation does, and it is why the parameter equations mix the brackets.
-
-### Which is the natural form
-
-**The bracket form is the natural one.** The Lagrangian is one quadratic form in one object, the bracket $\mathcal{A}_\mu$, weighted by one density factor; the bracket is four objects of four types, and the four types are the four things an element of the algebra can be. The equation is the vanishing of eight residuals, and the four brackets are the four types those residuals fall into.
-
-**The parameter form is the Jacobian image of it.** It is the form in which the variational principle is stated over eight real functions with no auxiliary object, and it is the form in which the count is right: eight functions, eight equations, no constraint. But it is not simpler, and the parameter equations are not four equations plus four conditions; they are eight equations whose content is the brackets'.
-
-**The equivalence is exact.** The Jacobian is invertible on the $N$-regular set, so the two systems have the same solutions there. Neither is weaker: a solution of the brackets is a solution of the parameters and conversely, and the passage is the chain rule.
-
 ## What the Polar Variational Principle Adds and What It Does Not
 
 **Adds.** A variational derivation of the parent's pair, with the two equations as two variations of one functional. The exact metric of the parameter space, with the cosh on the squares, the two sinh cross terms and the unit determinant of the amplitude–rapidity block. The potential as $\varrho^{2}V$ with the same $V$ as the Schrödinger companion, so that the two articles' potentials are one function. The statement that the charge conservation is the phase equation and the mass shell is the amplitude equation. The statement that the unit conditions cost no multiplier, because the word is a parameterisation of the constraint surface. And the statement that the second-order polar action has no primary constraint, in contrast with the first-order case.
@@ -312,6 +312,20 @@ so the Jacobian is diagonal and the metric is $(1,\varrho^{2})$. The two paramet
 **Does not add.** No new prediction and no new solution: the equation is the parent's and the flow is the parent's. No simplification of the four brackets, which remain the natural form. No extension past the nodal set, where the word stops and the equation does not. And no claim that the parameter equations are a weaker or a stronger system than the brackets: they are the same system in another basis.
 
 **The distinction that matters.** The element-form variational principle is standard and its Noether currents are the classical ones. The polar-form one is the same functional in the coordinates of the algebra's polar decomposition, and what it delivers that the element form does not is the metric, the density weighting, and the one-line reading of the two currents. What it costs is the domain: the polar action is defined off the nodal set only.
+
+## The Reconstruction and Its Limits
+
+**The reconstruction.** The word is a bijection from the parameter domain onto the N-regular set, so it has an inverse, and the inverse is what "reconstruction" names. From the element, the two norms give the scale and the rapidity, the direction of the phase factor gives $\theta_{\mathrm{pha}}$, and the residual rotor gives $\theta_{\mathrm{axr}}$ and $\vec u_{\mathrm r}$. **The inverse is the same bijection read backwards**, and the article uses it only to say what the chart does and does not carry.
+
+**The first limit is the scale.** $\varrho>0$ excludes the zero element and the cone's apex, and it excludes them by construction rather than by a condition. A field that reaches $\varrho=0$ therefore leaves the chart, and the chart's equations cannot be continued through that point; the element form can, and the two descriptions differ exactly there. **This is the boundary the corpus's N-regularity article draws**, and it is not a defect of the chart: the polar variables are a chart on the invertibles, and a field that is not invertible is outside it.
+
+**The second limit is the rotor's angle.** At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$, so the angle's range must be closed at that point or the word misses every element whose rotor factor is $-e_t$, the negative real axis among them. **The endpoint is not a convention**: without it the map is not onto, and the change of variables is not a change of variables.
+
+**The third limit is the phase.** $\theta_{\mathrm{pha}}$ ranges over a half-open interval of length $\pi$, because the element and its negative are different elements and the interval must distinguish them, while a shift by $\pi$ in the phase is not a symmetry of the action.
+
+**What the reconstruction does not give.** The flow. The bijection makes the *variation* the same variation, and that is what the article's equivalence argument uses. It does not make the constrained system's flow the element equation's flow: the eight parameter equations determine two velocities and six constraints, and whether the reduced flow is the parent's is the article's open question, not its claim. **A reconstruction that recovers the field at each instant is not a reconstruction of the dynamics.**
+
+**One further limit, of the reading and not of the chart.** The reconstruction is local and pointwise, so it says nothing about a field whose phase winds around a zero of $\varrho$, where the phase is multivalued and the chart must be patched. That is the nodal set, and it belongs to the corpus's circulation article rather than to this one.
 
 ## Open Questions
 

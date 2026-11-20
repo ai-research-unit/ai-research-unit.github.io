@@ -1,6 +1,6 @@
 # __The Lagrangian and the Coupled Dirac Equation in Momentum Space__
 
-**Declared omissions.** The second variation is not computed, so slot 8 is omitted. The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
+**Declared omissions.** The two settings are not contrasted, so slot 10 is omitted. No comparison beyond the parent is attempted, so slot 13 is omitted.
 
 ## Introduction
 
@@ -115,6 +115,26 @@ with $\mathcal{Q}_{\mathrm{free}}$ the free article's form. **Every exact statem
 **What the relabelling is not is a gauge transformation of the field.** The translation moves the argument of the form; the field is untouched. The gauge transformation moves the field's phase and the argument together, and that is the companion's subject. **The two are different operations and the article keeps them apart**, because the temptation to call the translation a gauge transformation is strong and it is the one error this section exists to prevent.
 
 **What the relabelling costs is that the coupling is invisible.** A functional that depends on $\tilde A_\Phi$ only through $\tilde K_{\Phi,\mathrm{gco}}$ cannot distinguish "the coupling is present and the momentum is shifted" from "the coupling is absent and the momentum is the shifted one". **That is exactly right for a constant connection**, which the parent proves is pure gauge: a constant potential is removable by a phase and the two descriptions are the same physical situation.
+
+## The Symbol and the Quadratic Form
+
+**One form, one symbol.** At a wave number the coupled action is a quadratic form in the mode's amplitude, and the form's kernel is the symbol:
+
+$$
+S_{\mathrm{mode}}[\tilde X]=\bigl\langle \tilde X,\sigma(\tilde K_\Phi)\tilde X\bigr\rangle ,
+\qquad
+\sigma(\tilde K_\Phi)=i\tilde K_\Phi+\frac{iϙ}{\hbar}\tilde A_\Phi .
+$$
+
+**The symbol is the operator and the form is the action**, and there is nothing between them at a mode: no integration by parts, no boundary term, no choice of test field. The form is a number for each amplitude, and it is a quadratic function of that amplitude, so its stationarity is one linear condition.
+
+**Stationarity is the symbol's vanishing.** Varying $\tilde X$ in the form gives $2\sigma\tilde X=0$, which is the coupled Dirac equation at the wave number. **The quadratic form's kernel is therefore the equation**, and the reading's central identity — that the action at a mode is the symbol — is a statement about what a quadratic form's derivative is, not a computation.
+
+**The coupling is a translation and not a new symbol.** The only place the connection appears is inside the argument, $\tilde K_\Phi+\frac{ϙ}{\hbar}\tilde A_\Phi$, and at a constant connection that argument is a translated wave number. **The symbol's form is the free one's; its argument is shifted.** That is why the coupled article's results can be stated as translations of the free ones, and why the second variation is one number for the same reason as in the free case.
+
+**Why the form is Hermitian and the action real.** Each summand of the symbol is Hermitian, so the symbol is, so $\langle\tilde X,\sigma\tilde X\rangle$ is real for every amplitude. The article measures the largest imaginary part at $3.6\times10^{-15}$ over two hundred draws, which is a check on the arithmetic and not a proof. **The proof is the type argument**, and it is the same one the free article gives: the Hermitian part of the symbol is the whole of it.
+
+**What the section adds to the article.** It makes the "action at a mode" a defined object rather than a phrase: a quadratic form, its kernel, and the statement that the kernel is the equation. Everything later in the article is a property of that form, and the two properties it uses are that the form is Hermitian and that its argument is translated by the coupling.
 
 ## The Variation
 
@@ -303,6 +323,20 @@ up to the normalisation the element article fixes, so that the total charge is t
 **The energy.** The energy is the symbol evaluated at zero frequency, $E=\mathcal{S}(0,\vec k)$, which is the statement that the Hamiltonian is the generator of the frequency. On the shell the two agree with the dispersion relation, and off the shell the symbol is the energy the mode would have if it were on it.
 
 **What the mass term does to the two.** The mass term shifts neither the charge nor the reality of the bilinear: it enters the symbol and leaves the pairing alone. What it does is remove the zero-frequency mode from the spectrum, and that removal is the count of degrees of freedom the article's structural section states.
+
+## The Legendre Transform
+
+**What the transform is asked to do.** The mode action is a function of the frequency and the amplitude, and the Legendre transform in the frequency is the reading's way of passing from the action to the energy. For a symbol linear in $\omega$ the transform is degenerate: **the derivative with respect to $\omega$ is a function of the amplitude alone**, so the transform does not invert and it returns a constraint rather than an energy.
+
+**Why that is the right answer and not a failure.** The Dirac action is first order; a first-order action's Legendre transform is a constraint by construction, and the corpus's element articles already say so. **The mode reading inherits the degeneracy and localises it**: at a fixed wave number the transform is degenerate in one direction and invertible in the others, so the constraint is one condition on four amplitudes and the energy is the other three.
+
+**Where the two branches come from, if not from the transform.** The transform in the frequency returns one value, because the symbol is linear. **The two branches are the two eigenvalues of the Hamiltonian at that wave number**, and they are a property of the symbol's spectrum and not of the transform. A reader who expects the transform to produce $\pm$ has confused the Legendre transform of a quadratic action with the diagonalisation of a linear one.
+
+**The coupling's place in the transform.** Because the coupling only translates the argument, the transform's degeneracy is untouched and the eigenvalues are the free eigenvalues at the shifted wave number. **The transform cannot see the coupling except through the shift**, and that is the strongest statement the reading can make about it.
+
+**What the transform adds to the article.** One number: the slope of the action with respect to the frequency, which is the density per mode up to the sign convention. **The transform is not a new equation; it is the same form read as a function of its argument**, and its value here is that it makes the constraint's origin visible — the constraint is the degeneracy of a first-order form, and it would be absent if the form were quadratic.
+
+**One caution.** The transform is taken at fixed amplitude and fixed wave number. **A transform taken along a solution is a different object**, and the article does not take it, because on shell the form vanishes and the transform of zero is zero.
 
 ## Limits
 

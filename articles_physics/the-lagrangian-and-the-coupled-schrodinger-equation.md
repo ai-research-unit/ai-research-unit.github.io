@@ -196,7 +196,7 @@ which is the free article's density with the covariant gradient and the potentia
 
 **Relabels.** The equation, whose derivation is the free one with covariant letters. The current, which is the free one with covariant derivatives. The energy, which is the free one with the shifted element in the constant setting and with the covariant gradient in the operator setting. Nothing here is a new physical principle; the action is the standard one and the algebra is its notation.
 
-**The distinction that matters.** The free variational article's ledger is short because the free theory has one symmetry and one current. The coupled theory's ledger is longer in exactly one place: the connection gives the current a second definition, as the derivative of the Lagrangian, and that definition is what makes the current the source. That is the whole of what the coupling adds to the variational statement, and it is a genuine closure rather than a relabelling.
+**The distinction that matters.** The free Lagrangian article's ledger is short because the free theory has one symmetry and one current. The coupled theory's ledger is longer in exactly one place: the connection gives the current a second definition, as the derivative of the Lagrangian, and that definition is what makes the current the source. That is the whole of what the coupling adds to the variational statement, and it is a genuine closure rather than a relabelling.
 
 ## Open Questions
 
