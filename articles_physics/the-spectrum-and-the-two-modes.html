@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Spectrum and the Two Modes — Biquaternion Universe</title>
-  <meta name="description" content="This entry reads the fifth section of the mathematical category: the eigenvalue problem of one element, and the two cases it splits into.">
+  <meta name="description" content="The question is what a single element does when it multiplies. Left multiplication by is a linear operator on the algebra, so it has eigenvalues and…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
   <link rel="stylesheet" href="../assets/css/article.css">
@@ -71,15 +71,14 @@
       <div class="article-body">
         <h1 id="the-spectrum-and-the-two-modes"><strong>The Spectrum and the Two Modes</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>This entry reads the fifth section of the mathematical category: the eigenvalue problem of one element, and the two cases it splits into.</strong></p>
-<p><strong>The question is what a single element does when it multiplies.</strong> Left multiplication by $\tilde Q$ is a linear operator on the algebra, so it has eigenvalues and eigenspaces; the section computes them, decides when an eigenbasis exists, and classifies the elements for which it does not.</p>
-<p><strong>The answer has two branches and one number between them.</strong></p>
+<p>The question is what a single element does when it multiplies. Left multiplication by $\tilde Q$ is a linear operator on the algebra, so it has eigenvalues and eigenspaces; the section computes them, decides when an eigenbasis exists, and classifies the elements for which it does not.</p>
+<p>The answer has two branches and one number between them.</p>
 <p>$$
 p_{\tilde Q}(X)=X^2-2Q_tX+Q_t^2+B^2,\qquad \operatorname{disc}p_{\tilde Q}=-4B^2,\qquad \lambda_\pm=Q_t\pm iB .
 $$</p>
-<p><strong>The number is $B^2=Q_x^2+Q_y^2+Q_z^2$, the square of the vector part.</strong> It involves no scalar part, so the whole classification is blind to the trace and depends only on the direction and the modulus of the vector part.</p>
-<p><strong>The two branches are these.</strong> If $B^2\neq0$ the eigenvalues are distinct, the element is semisimple, the spectral idempotents exist, and an eigenbasis exists. If $B^2=0$ the eigenvalues have coalesced, the two-term decomposition fails, and a Jordan basis replaces the eigenbasis.</p>
-<p><strong>The single idea is that the spectrum is two numbers and the element is eight parameters.</strong> The spectrum fixes the trace and the norm and nothing else about the vector part; the eigenbasis is attached to the direction of the vector part, so it is a frame, and what the spectrum leaves free is exactly the frame. Every reading below is a consequence of that division.</p>
+<p>The number is $B^2=Q_x^2+Q_y^2+Q_z^2$, the square of the vector part. It involves no scalar part, so the whole classification is blind to the trace and depends only on the direction and the modulus of the vector part.</p>
+<p>If $B^2\neq0$ the eigenvalues are distinct, the element is semisimple, the spectral idempotents exist, and an eigenbasis exists. If $B^2=0$ the eigenvalues have coalesced, the two-term decomposition fails, and a Jordan basis replaces the eigenbasis.</p>
+<p>The single idea is that the spectrum is two numbers and the element is eight parameters. The spectrum fixes the trace and the norm and nothing else about the vector part; the eigenbasis is attached to the direction of the vector part, so it is a frame, and what the spectrum leaves free is exactly the frame. Every reading below is a consequence of that division.</p>
 <h2 id="the-source-table">The Source Table</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -115,28 +114,28 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The rows are the entry's order.</strong> The criterion first, because it states the eigenvalue problem without a module; then the centraliser, which is what commutes with the element; then the split; then the two bases, one per branch; then the worked cases.</p>
+<p>The rows are the entry's order. The criterion first, because it states the eigenvalue problem without a module; then the centraliser, which is what commutes with the element; then the split; then the two bases, one per branch; then the worked cases.</p>
 <h2 id="the-results-in-brief">The Results in Brief</h2>
 <h3 id="the-criterion">The Criterion</h3>
 <p><strong>An eigenvalue is a scalar for which a left ideal is proper, and the criterion turns that into one equation.</strong></p>
 <p>$$\lambda\ \text{is an eigenvalue of}\ \tilde Q\iff\tilde Q-\lambda e_t\ \text{is not invertible}\iff(\lambda-Q_t)^2+B^2=0 .$$</p>
-<p><strong>The proof uses no matrix.</strong> If $\tilde Q-\lambda e_t$ is invertible, the left ideal it generates is the algebra; if it generates the algebra, injectivity of left multiplication in finite dimension gives a two-sided inverse. The unit condition is decided by the conjugate product,</p>
+<p>The proof uses no matrix. If $\tilde Q-\lambda e_t$ is invertible, the left ideal it generates is the algebra; if it generates the algebra, injectivity of left multiplication in finite dimension gives a two-sided inverse. The unit condition is decided by the conjugate product,</p>
 <p>$$
 (\tilde Q-\lambda e_t)(\tilde Q-\lambda e_t)^{\natural}=\bigl((\lambda-Q_t)^2+B^2\bigr)e_t ,
 $$</p>
 <p>which is a scalar, non-zero exactly off the two roots.</p>
-<p><strong>The characteristic polynomial is quadratic, and its coefficients are the trace and the norm.</strong></p>
+<p>The characteristic polynomial is quadratic, and its coefficients are the trace and the norm.</p>
 <p>$$
 p_{\tilde Q}(X)=X^2-2Q_tX+(Q_t^2+B^2),\qquad \lambda_\pm=Q_t\pm iB,\qquad \lambda_++\lambda_-=2Q_t,\qquad \lambda_+\lambda_-=Q_t^2+B^2 .
 $$</p>
-<p><strong>Cayley–Hamilton is the same identity, and it gives the inverse.</strong></p>
+<p>Cayley–Hamilton is the same identity, and it gives the inverse.</p>
 <p>$$
 \tilde Q^2-2Q_t\tilde Q+(Q_t^2+B^2)e_t=0,\qquad \tilde Q^{-1}=\frac{\tilde Q^{\natural}}{Q_t^2+B^2}\quad\text{when } Q_t^2+B^2\neq0 .
 $$</p>
-<p><strong>The eigenspaces are right ideals.</strong> For a non-scalar element and an eigenvalue $\lambda$, the eigenvectors form $\operatorname{Ann}_\ell(\tilde Q-\lambda e_t)$, which is a non-zero proper right ideal, hence of complex dimension two.</p>
-<p><strong>Left and right eigenvalues agree.</strong> The scalars are central, so $\tilde Qv=\lambda v$ and $\tilde Qv=v\lambda$ define the same set for $\lambda\in\mathbb{C}$, and that set is the spectrum.</p>
+<p>The eigenspaces are right ideals. For a non-scalar element and an eigenvalue $\lambda$, the eigenvectors form $\operatorname{Ann}_\ell(\tilde Q-\lambda e_t)$, which is a non-zero proper right ideal, hence of complex dimension two.</p>
+<p>Left and right eigenvalues agree. The scalars are central, so $\tilde Qv=\lambda v$ and $\tilde Qv=v\lambda$ define the same set for $\lambda\in\mathbb{C}$, and that set is the spectrum.</p>
 <h3 id="the-discriminant-and-the-two-cases">The Discriminant and the Two Cases</h3>
-<p><strong>Four descriptions of one condition.</strong></p>
+<p>Four descriptions of one condition.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -164,7 +163,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The equivalence is the whole content of the split.</strong></p>
+<p>The equivalence is the whole content of the split.</p>
 <p>$$
 B^2\neq0\iff\lambda_+\neq\lambda_-\iff\tilde Q\ \text{semisimple}\iff L_{\tilde Q}\ \text{diagonalisable} .
 $$</p>
@@ -174,7 +173,7 @@ $$</p>
 $$</p>
 <p>the first taking two cone elements off the cone and the second taking two regular elements onto it. The regular case is therefore not a subgroup, and the spectral condition is not preserved by multiplication in either direction.</p>
 <h3 id="the-four-minimal-polynomials">The Four Minimal Polynomials</h3>
-<p><strong>The characteristic polynomial has two coefficients; the minimal polynomial separates what it cannot.</strong></p>
+<p>The characteristic polynomial has two coefficients; the minimal polynomial separates what it cannot.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -211,22 +210,22 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Two rows share the characteristic polynomial and two share $X^2$ after translation.</strong> The scalar row and the Jordan row have the same $p$, and only the minimal polynomial separates them; the Jordan row and the nilpotent row have the same $m$ up to the scalar shift, and only the scalar part separates them. No single invariant does both jobs.</p>
+<p>Two rows share the characteristic polynomial and two share $X^2$ after translation. The scalar row and the Jordan row have the same $p$, and only the minimal polynomial separates them; the Jordan row and the nilpotent row have the same $m$ up to the scalar shift, and only the scalar part separates them. No single invariant does both jobs.</p>
 <h3 id="the-operator-form">The Operator Form</h3>
-<p><strong>The discriminant also reads on the operators, and there it decides between a complex structure and a nilpotent.</strong></p>
+<p>The discriminant also reads on the operators, and there it decides between a complex structure and a nilpotent.</p>
 <p>$$
 L_{\vec Q}^{\,2}=R_{\vec Q}^{\,2}=-B^2\,\mathrm{id},\qquad
 m_{L_{\vec Q}}=m_{R_{\vec Q}}=
 \begin{cases}X^2+B^2,&B^2\neq0,\\ X^2,&B^2=0,\ \vec Q\neq0,\\ X,& \vec Q=0.\end{cases}
 $$</p>
 <p><strong>Off the cone the directional part is a complex structure.</strong> With $J=L_{\vec Q}/B$ one has $J^2=-\mathrm{id}$ and the eigenvalues of $L_{\vec Q}$ are $\pm iB$. On the cone the directional part is nilpotent of index two.</p>
-<p><strong>The same dichotomy in the commutator form</strong> is $\mathrm{ad}_{\vec Q}^{\,3}=-4B^2\mathrm{ad}_{\vec Q}$, nilpotent exactly on $\mathcal S$.</p>
+<p>The same dichotomy in the commutator form is $\mathrm{ad}_{\vec Q}^{\,3}=-4B^2\mathrm{ad}_{\vec Q}$, nilpotent exactly on $\mathcal S$.</p>
 <h3 id="the-spectral-decomposition-and-the-eigenbasis">The Spectral Decomposition and the Eigenbasis</h3>
 <p><strong>Off the cone the root exists, and it is the vector part rescaled to square one.</strong></p>
 <p>$$
 \vec Z=-\frac{i\vec Q}{B},\qquad \vec Z^2=e_t,\qquad \tilde Q=Q_te_t+iB\vec Z .
 $$</p>
-<p><strong>The spectral idempotents are the Lagrange idempotents, and they are unique.</strong></p>
+<p>The spectral idempotents are the Lagrange idempotents, and they are unique.</p>
 <p>$$
 \tilde\Pi_\pm=\frac{e_t\pm\vec Z}{2}=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},\qquad
 \tilde\Pi_\pm^2=\tilde\Pi_\pm,\qquad \tilde\Pi_+\tilde\Pi_-=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_t ,
@@ -234,17 +233,17 @@ $$</p>
 <p>$$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_- .
 $$</p>
-<p><strong>The eigenspaces of $L_{\tilde Q}$ are the right ideals generated by the idempotents, each of complex dimension two.</strong></p>
+<p>The eigenspaces of $L_{\tilde Q}$ are the right ideals generated by the idempotents, each of complex dimension two.</p>
 <p>$$
 \ker(L_{\tilde Q}-\lambda_\pm)=\tilde\Pi_\pm\mathbb{B} .
 $$</p>
-<p><strong>An eigenbasis is one vector in each corner, and the left and right actions are both diagonal in it.</strong></p>
+<p>An eigenbasis is one vector in each corner, and the left and right actions are both diagonal in it.</p>
 <p>$$
 \mathcal{B}(\tilde Q)=(\tilde\Pi_+,\ \vec\Upsilon_-,\ \vec\Upsilon_+,\ \tilde\Pi_-),\qquad
 L_{\tilde Q}=\operatorname{diag}(\lambda_+,\lambda_+,\lambda_-,\lambda_-),\qquad
 R_{\tilde Q}=\operatorname{diag}(\lambda_+,\lambda_-,\lambda_+,\lambda_-) .
 $$</p>
-<p><strong>The four vectors are the matrix units, and their multiplication is the corner rule.</strong></p>
+<p>The four vectors are the matrix units, and their multiplication is the corner rule.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -286,22 +285,22 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The pair is fixed only up to one scale.</strong></p>
+<p>The pair is fixed only up to one scale.</p>
 <p>$$
 \vec\Upsilon_+\vec\Upsilon_-=\tilde\Pi_-,\qquad \vec\Upsilon_-\vec\Upsilon_+=\tilde\Pi_+,\qquad \vec\Upsilon_\pm^2=0,\qquad
 (\vec\Upsilon_+,\vec\Upsilon_-)\longmapsto(\mu\vec\Upsilon_+,\mu^{-1}\vec\Upsilon_-) .
 $$</p>
-<p><strong>Every element has a unique expansion in that basis, and the coordinate map is an algebra isomorphism.</strong></p>
+<p>Every element has a unique expansion in that basis, and the coordinate map is an algebra isomorphism.</p>
 <p>$$
 \tilde Q_2=Q_{2,11}\tilde\Pi_++Q_{2,12}\vec\Upsilon_-+Q_{2,21}\vec\Upsilon_++Q_{2,22}\tilde\Pi_-,
 \qquad
 \mathsf M_2^{Q}(\tilde Q)=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix}.
 $$</p>
-<p><strong>What the basis diagonalises is exactly the pencil generated by the element.</strong></p>
+<p>What the basis diagonalises is exactly the pencil generated by the element.</p>
 <p>$$
 \tilde Q_2\ \text{diagonal in}\ \mathcal{B}(\tilde Q)\iff\tilde Q_2\in\mathbb{C}\tilde\Pi_+\oplus\mathbb{C}\tilde\Pi_-\iff\tilde Q_2\in\operatorname{span}\{e_t,\tilde Q\} .
 $$</p>
-<p><strong>The four labels are independent, and they are the corner indices.</strong></p>
+<p>The four labels are independent, and they are the corner indices.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -349,7 +348,7 @@ $$</p>
 </tbody>
 </table></div>
 <h3 id="the-centraliser">The Centraliser</h3>
-<p><strong>The centraliser is the set of elements that commute with the element, and it has three cases.</strong></p>
+<p>The centraliser is the set of elements that commute with the element, and it has three cases.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -384,18 +383,18 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The equality $C(\tilde Q)=\mathbb{C}[\tilde Q]$ is the statement that the element is nonderogatory,</strong> and it fails only at the centre, where the minimal polynomial has degree one and the centraliser has dimension four.</p>
-<p><strong>The double centraliser is the subalgebra itself, except at the centre, where it is the centre.</strong></p>
+<p>The equality $C(\tilde Q)=\mathbb{C}[\tilde Q]$ is the statement that the element is nonderogatory, and it fails only at the centre, where the minimal polynomial has degree one and the centraliser has dimension four.</p>
+<p>The double centraliser is the subalgebra itself, except at the centre, where it is the centre.</p>
 <p>$$
 C(C(\tilde Q))=C(\tilde Q)\ (Q_t^2+B^2\neq0),\qquad C(\mathbb{B})=\mathbb{C}e_t .
 $$</p>
-<p><strong>The centraliser is what makes the split unique.</strong> Both parts of a Jordan–Chevalley decomposition lie in $\mathbb{C}[\tilde Q]$, which is commutative, so two decompositions agree.</p>
+<p>The centraliser is what makes the split unique. Both parts of a Jordan–Chevalley decomposition lie in $\mathbb{C}[\tilde Q]$, which is commutative, so two decompositions agree.</p>
 <h3 id="the-semisimplenilpotent-split">The Semisimple–Nilpotent Split</h3>
 <p><strong>Every element is a semisimple part plus a commuting nilpotent part, uniquely, and both are polynomials in the element.</strong></p>
 <p>$$
 \tilde Q=\tilde Q_s+\vec\Upsilon,\qquad \tilde Q_s\vec\Upsilon=\vec\Upsilon\tilde Q_s,\qquad \tilde Q_s,\vec\Upsilon\in\mathbb{C}[\tilde Q] .
 $$</p>
-<p><strong>The four types are the four positions of the pair.</strong></p>
+<p>The four types are the four positions of the pair.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -437,62 +436,62 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>In a frame adapted to the element the split is a corner pattern.</strong></p>
+<p>In a frame adapted to the element the split is a corner pattern.</p>
 <p>$$
 \tilde Q_s=e\tilde Q_se+e'\tilde Q_se',\qquad \vec\Upsilon=e\vec\Upsilon e',\qquad \vec\Upsilon^2=0 .
 $$</p>
-<p><strong>The nilpotent index is two, never higher, and the reason is the corner rule.</strong></p>
+<p>The nilpotent index is two, never higher, and the reason is the corner rule.</p>
 <p>$$
 (e\mathbb{B}e')(e\mathbb{B}e')=e\mathbb{B}(e'e)\mathbb{B}e'=0 .
 $$</p>
-<p><strong>For an invertible element the additive split has a multiplicative form.</strong></p>
+<p>For an invertible element the additive split has a multiplicative form.</p>
 <p>$$
 \tilde Q=\tilde Q_s\tilde U,\qquad \tilde U=e_t+\tilde Q_s^{-1}\vec\Upsilon,\qquad \tilde U^{-1}=e_t-\tilde Q_s^{-1}\vec\Upsilon .
 $$</p>
-<p><strong>The hypothesis is not removable.</strong> A semisimple zero divisor has a non-invertible semisimple part, so no product exists beyond the trivial one; a nilpotent element has no semisimple factor at all.</p>
+<p>The hypothesis is not removable. A semisimple zero divisor has a non-invertible semisimple part, so no product exists beyond the trivial one; a nilpotent element has no semisimple factor at all.</p>
 <h3 id="the-degenerate-cone-and-the-jordan-basis">The Degenerate Cone and the Jordan Basis</h3>
-<p><strong>The cone is one equation read three ways.</strong></p>
+<p>The cone is one equation read three ways.</p>
 <p>$$
 \mathcal S=\{B^2=0\}=\{\vec Q^2=0\}=\{\operatorname{disc}p_{\tilde Q}=0\} .
 $$</p>
-<p><strong>Geometrically the vector part is isotropic; algebraically it is square-zero; spectrally the two eigenvalues have coalesced.</strong></p>
+<p>Geometrically the vector part is isotropic; algebraically it is square-zero; spectrally the two eigenvalues have coalesced.</p>
 <p><strong>It is a cone, not a subspace, and its singular locus is the whole scalar line.</strong></p>
 <p>$$
 \mathcal S=\mathbb{C}e_t\times\{\vec Q:\vec Q^2=0\},\qquad \dim_{\mathbb{C}}\mathcal S=3,\qquad \dim_{\mathbb{R}}\mathcal S=6 .
 $$</p>
-<p><strong>It has three strata, disjoint and exhaustive.</strong></p>
+<p>It has three strata, disjoint and exhaustive.</p>
 <p>$$
 \mathcal S^{\mathrm{s}}=\{\vec Q=0\},\qquad \mathcal S^{\mathrm{n}}=\{\vec Q\neq0,\,Q_t=0\},\qquad \mathcal S^{\mathrm{u}}=\{\vec Q\neq0,\,Q_t\neq0\} .
 $$</p>
-<p><strong>On the cone the quaternionic norm is the square of the scalar part, so the cone contains units.</strong></p>
+<p>On the cone the quaternionic norm is the square of the scalar part, so the cone contains units.</p>
 <p>$$
 \langle\tilde Q\rangle_{\natural}=Q_t^2,\qquad \tilde Q^{-1}=Q_t^{-1}\Bigl(e_t-\frac{\vec Q}{Q_t}\Bigr)\ (Q_t\neq0) .
 $$</p>
-<p><strong>The isotropic line admits no canonical complement; it flags the space instead.</strong></p>
+<p>The isotropic line admits no canonical complement; it flags the space instead.</p>
 <p>$$
 0\subset\mathbb{C}\vec Q\subset\ker L_{\vec Q}=\operatorname{im}L_{\vec Q}\subset\mathbb{B},\qquad 0\subset\mathbb{C}\vec Q\subset\vec Q^{\perp}\subset\mathbb{C}^3 .
 $$</p>
-<p><strong>A frame adapted to the element splits the flag, and the definite Hermitian form selects one such frame.</strong></p>
+<p>A frame adapted to the element splits the flag, and the definite Hermitian form selects one such frame.</p>
 <p>$$
 \tilde\Pi_+=\frac{\vec Q\vec Q^*}{2\langle\vec Q\rangle_*},\qquad \tilde\Pi_-=\frac{\vec Q^*\vec Q}{2\langle\vec Q\rangle_*},\qquad \vec\Upsilon_+=\frac{\vec Q^*}{2\langle\vec Q\rangle_*},\qquad \vec\Upsilon_-=\vec Q .
 $$</p>
-<p><strong>The Jordan basis is a pair of blocks, and the two chains are the two mixed corners.</strong></p>
+<p>The Jordan basis is a pair of blocks, and the two chains are the two mixed corners.</p>
 <p>$$
 \mathcal{J}(\tilde Q)=(\vec\Upsilon_-,\ \tilde\Pi_-,\ \tilde\Pi_+,\ \vec\Upsilon_+),\qquad L_{\tilde Q}=\operatorname{diag}\bigl(J_2(Q_t),J_2(Q_t)\bigr),\qquad J_2(Q_t)=\begin{pmatrix}Q_t&1\\0&Q_t\end{pmatrix}.
 $$</p>
-<p><strong>The exponential truncates on the cone, so there is no frequency.</strong></p>
+<p>The exponential truncates on the cone, so there is no frequency.</p>
 <p>$$
 e^{\theta\tilde Q}=e^{\theta Q_t}\bigl(e_t+\theta\vec Q\bigr),
 $$</p>
 <p>and the exponential of every element of the cone lies in the unit half $\Sigma_{10}$.</p>
 <h3 id="the-similarity-classification">The Similarity Classification</h3>
-<p><strong>Similar elements have the same spectrum, and off the cone the converse holds.</strong></p>
+<p>Similar elements have the same spectrum, and off the cone the converse holds.</p>
 <p>$$
 \tilde Q_2=S\tilde Q_1S^{-1}\ (S\ \text{an invertible element})\quad\Longrightarrow\quad \sigma(\tilde Q_2)=\sigma(\tilde Q_1) ,
 $$</p>
 <p>and off the cone the class is determined by the unordered pair $\{\lambda_+,\lambda_-\}$. On the cone the spectrum is the singleton $\{Q_t\}$ and carries no information beyond the scalar part: exactly two classes share it, the central class and the Jordan class.</p>
 <h3 id="the-worked-cases">The Worked Cases</h3>
-<p><strong>Eight elements, one per regime.</strong></p>
+<p>Eight elements, one per regime.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -571,25 +570,25 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Cases 2 to 5 share one eigenbasis.</strong> All four have $\vec Q$ a complex multiple of $\vec e_x$ with the branch chosen so that $\vec Z=-i\vec e_x$, so the idempotents are</p>
+<p>Cases 2 to 5 share one eigenbasis. All four have $\vec Q$ a complex multiple of $\vec e_x$ with the branch chosen so that $\vec Z=-i\vec e_x$, so the idempotents are</p>
 <p>$$
 \tilde\Pi_+=\tfrac12\bigl(e_t-i\vec e_x\bigr),\qquad \tilde\Pi_-=\tfrac12\bigl(e_t+i\vec e_x\bigr),
 $$</p>
 <p>for all four, and only the diagonal values differ: $(\pm i,\pm i)$ in case 2, the pair $\frac{1\pm i}{\sqrt2}$ in case 3, the real pair $\sqrt2\mp1$ in case 4, and a complex pair in case 5.</p>
-<p><strong>Cases 6 and 8 are the two halves of the Jordan type.</strong> Case 6 is unipotent with a real scalar part; case 8 is unipotent with a complex scalar part, and its vector part is null while its norm is not, so a null vector part does not give a degenerate norm.</p>
-<p><strong>Case 4 is the warning about the root.</strong> Its $B$ is imaginary and its spectrum is real, so the root need not be real for the spectrum to be real.</p>
+<p>Cases 6 and 8 are the two halves of the Jordan type. Case 6 is unipotent with a real scalar part; case 8 is unipotent with a complex scalar part, and its vector part is null while its norm is not, so a null vector part does not give a degenerate norm.</p>
+<p>Case 4 is the warning about the root. Its $B$ is imaginary and its spectrum is real, so the root need not be real for the spectrum to be real.</p>
 <h2 id="the-interpretations">The Interpretations</h2>
 <h3 id="i5a-the-eigenvalue-is-a-complex-frequency-and-math209-is-the-half-gap">I.5.a — The Eigenvalue Is a Complex Frequency, and $B$ Is the Half-Gap</h3>
-<p><strong>Read:</strong> the spectrum is the pair $\lambda_\pm=Q_t\pm iB$, so the two eigenvalues differ by $2iB$ and their product is the norm.</p>
-<p><strong>The half-gap is $iB$, not $B$.</strong> The difference is $\lambda_+-\lambda_-=2iB$; the factor $i$ is the one in the characteristic polynomial and it is not decoration. Writing the eigenvalues as complex frequencies in the convention $e^{-i\lambda t}$,</p>
+<p>Read: the spectrum is the pair $\lambda_\pm=Q_t\pm iB$, so the two eigenvalues differ by $2iB$ and their product is the norm.</p>
+<p>The half-gap is $iB$, not $B$. The difference is $\lambda_+-\lambda_-=2iB$; the factor $i$ is the one in the characteristic polynomial and it is not decoration. Writing the eigenvalues as complex frequencies in the convention $e^{-i\lambda t}$,</p>
 <p>$$
 \lambda_\pm=\omega_\pm-i\gamma_\pm,\qquad B=\frac{\gamma_--\gamma_+}{2}-\frac{i}{2}\bigl(\omega_+-\omega_-\bigr),
 $$</p>
 <p>so the real part of $B$ is half the difference of the damping rates and the imaginary part is minus half the difference of the oscillation frequencies. In the convention $e^{+i\lambda t}$ the two roles are exchanged.</p>
-<p><strong>The physical reading is that one algebraic number has three sector names.</strong> On the material sector $B$ is a momentum magnitude; on the informational sector it is a half-gap; for a complex $B$ it is a complex half-splitting, and the case is the general one, since normality is not implied by spectral regularity.</p>
-<p><strong>The boundary.</strong> The frequency reading needs an evolution convention, and the algebra supplies none. For an observable the eigenvalues are outcomes rather than frequencies, and the word <em>gap</em> is then the difference of two outcomes.</p>
+<p>The physical reading is that one algebraic number has three sector names. On the material sector $B$ is a momentum magnitude; on the informational sector it is a half-gap; for a complex $B$ it is a complex half-splitting, and the case is the general one, since normality is not implied by spectral regularity.</p>
+<p>The boundary. The frequency reading needs an evolution convention, and the algebra supplies none. For an observable the eigenvalues are outcomes rather than frequencies, and the word <em>gap</em> is then the difference of two outcomes.</p>
 <h3 id="i5b-reality-of-the-spectrum-is-a-property-of-the-sector-not-of-the-algebra">I.5.b — Reality of the Spectrum Is a Property of the Sector, Not of the Algebra</h3>
-<p><strong>Read:</strong> the eigenvalues are $Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$. Whether they are real depends on the sign of that sum, and the sign is fixed by the sector the element lives in.</p>
+<p>Read: the eigenvalues are $Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$. Whether they are real depends on the sign of that sum, and the sign is fixed by the sector the element lives in.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -621,96 +620,96 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two physical sectors give the two familiar realities.</strong> On $\mathbb{B}_\Psi$ the spectrum is real because $B$ is purely imaginary; on $\mathbb{B}_\Phi$ the spectrum is purely imaginary because $B$ is real. Neither sentence uses a matrix and neither uses a Hermiticity axiom: each is the sign of a sum of three squares in a real basis.</p>
-<p><strong>The physical reading is that "real energies" and "imaginary frequencies" are one computation.</strong> The Hermitian element has real outcomes and a complex frequency; the material element has an imaginary frequency and a real, indefinite norm. The two are not two postulates but two signs of the same expression.</p>
-<p><strong>The boundary.</strong> The sign table is a table of real bases; an element that is neither Hermitian nor anti-Hermitian has a complex $B$ and a genuinely complex pair, and no reality statement applies to it.</p>
+<p>The two physical sectors give the two familiar realities. On $\mathbb{B}_\Psi$ the spectrum is real because $B$ is purely imaginary; on $\mathbb{B}_\Phi$ the spectrum is purely imaginary because $B$ is real. Neither sentence uses a matrix and neither uses a Hermiticity axiom: each is the sign of a sum of three squares in a real basis.</p>
+<p>The physical reading is that "real energies" and "imaginary frequencies" are one computation. The Hermitian element has real outcomes and a complex frequency; the material element has an imaginary frequency and a real, indefinite norm. The two are not two postulates but two signs of the same expression.</p>
+<p>The boundary. The sign table is a table of real bases; an element that is neither Hermitian nor anti-Hermitian has a complex $B$ and a genuinely complex pair, and no reality statement applies to it.</p>
 <h3 id="i5c-the-spectrum-is-frame-blind-and-the-frame-is-what-it-does-not-see">I.5.c — The Spectrum Is Frame-Blind, and the Frame Is What It Does Not See</h3>
-<p><strong>Read:</strong> the spectrum has two complex numbers and the element has eight real parameters. It fixes the trace and the norm and nothing else.</p>
+<p>Read: the spectrum has two complex numbers and the element has eight real parameters. It fixes the trace and the norm and nothing else.</p>
 <p>$$
 \lambda_++\lambda_-=2Q_t,\qquad \lambda_+\lambda_-=Q_t^2+B^2 ,
 $$</p>
 <p>and the axis $\vec Z$ carries two free complex angles, four real parameters, on which the two eigenvalues are silent.</p>
-<p><strong>The similarity theorem is the sharp form of the blindness.</strong> Off the cone the similarity class is the unordered spectrum, so the spectrum is a complete invariant of the element up to a change of frame, and an incomplete invariant of the element. A measurement that reads the spectrum therefore determines the element up to conjugation and no further.</p>
-<p><strong>The physical reading is that a spectral measurement reads the rates and leaves the frame free.</strong> For a four-momentum the family at fixed spectrum is the two-sphere of directions at fixed energy and momentum magnitude; for a two-level system it is the sphere of Bloch directions at fixed gap. The spectrum is a frame-blind observable, and the axis is the frame.</p>
-<p><strong>The boundary.</strong> <em>Not fixed</em> is not <em>not constrained</em>. The spectrum constrains the element to a quadric and, for a four-momentum, to a sphere. And a measurement that resolves the idempotents as well is a different measurement: it reads the frame as well as the rates.</p>
+<p>The similarity theorem is the sharp form of the blindness. Off the cone the similarity class is the unordered spectrum, so the spectrum is a complete invariant of the element up to a change of frame, and an incomplete invariant of the element. A measurement that reads the spectrum therefore determines the element up to conjugation and no further.</p>
+<p>The physical reading is that a spectral measurement reads the rates and leaves the frame free. For a four-momentum the family at fixed spectrum is the two-sphere of directions at fixed energy and momentum magnitude; for a two-level system it is the sphere of Bloch directions at fixed gap. The spectrum is a frame-blind observable, and the axis is the frame.</p>
+<p>The boundary. <em>Not fixed</em> is not <em>not constrained</em>. The spectrum constrains the element to a quadric and, for a four-momentum, to a sphere. And a measurement that resolves the idempotents as well is a different measurement: it reads the frame as well as the rates.</p>
 <h3 id="i5d-the-eigenbasis-belongs-to-the-direction-not-to-the-element">I.5.d — The Eigenbasis Belongs to the Direction, Not to the Element</h3>
-<p><strong>Read:</strong> $\tilde Q'=a\tilde Q+be_t$ has the same root, the same idempotents and the same eigenbasis; only the eigenvalues change, affinely.</p>
+<p>Read: $\tilde Q'=a\tilde Q+be_t$ has the same root, the same idempotents and the same eigenbasis; only the eigenvalues change, affinely.</p>
 <p>$$
 \vec Z'=\vec Z,\qquad \mathcal{B}(\tilde Q')=\mathcal{B}(\tilde Q),\qquad \lambda_\pm'=a\lambda_\pm+b .
 $$</p>
-<p><strong>So the eigenbasis is a function on the projective space of the vector part, minus the conic.</strong> The element projects to $[\vec Q]$, the fibre of the projection is the affine line $\{a\tilde Q+be_t\}$, and on that fibre the basis is constant while the spectrum is affine.</p>
-<p><strong>The worked cases are the demonstration.</strong> Cases 2 to 5 have one direction, one root $\vec Z=-i\vec e_x$, one pair of idempotents, one eigenbasis, and four different spectra: imaginary, diagonal-complex, real, and generic-complex. Scaling the element and shifting its scalar part moved the diagonal and left the frame alone.</p>
-<p><strong>The physical reading is that a frame of modes is a frame.</strong> A change of amplitude and of zero does not change the normal modes; a change of axis does. The eigenbasis is the frame in which the element is diagonal, and the frame is attached to the direction the element points in.</p>
-<p><strong>The boundary.</strong> The basis is equivariant under inner automorphisms only up to the reciprocal rescaling of $\vec\Upsilon_\pm$, because the auxiliary vector that fixes the normalisation is fixed in the frame and is not invariant. The construction is covariant, its representative is not.</p>
+<p>So the eigenbasis is a function on the projective space of the vector part, minus the conic. The element projects to $[\vec Q]$, the fibre of the projection is the affine line $\{a\tilde Q+be_t\}$, and on that fibre the basis is constant while the spectrum is affine.</p>
+<p>The worked cases are the demonstration. Cases 2 to 5 have one direction, one root $\vec Z=-i\vec e_x$, one pair of idempotents, one eigenbasis, and four different spectra: imaginary, diagonal-complex, real, and generic-complex. Scaling the element and shifting its scalar part moved the diagonal and left the frame alone.</p>
+<p>The physical reading is that a frame of modes is a frame. A change of amplitude and of zero does not change the normal modes; a change of axis does. The eigenbasis is the frame in which the element is diagonal, and the frame is attached to the direction the element points in.</p>
+<p>The boundary. The basis is equivariant under inner automorphisms only up to the reciprocal rescaling of $\vec\Upsilon_\pm$, because the auxiliary vector that fixes the normalisation is fixed in the frame and is not invariant. The construction is covariant, its representative is not.</p>
 <h3 id="i5e-two-eigenvalues-are-two-modes-of-one-element-not-two-particles">I.5.e — Two Eigenvalues Are Two Modes of One Element, Not Two Particles</h3>
-<p><strong>Read:</strong> each eigenvalue has multiplicity two on the algebra, because each eigenspace is a right ideal of complex dimension two. The spectrum is two numbers repeated, and the element is one object.</p>
+<p>Read: each eigenvalue has multiplicity two on the algebra, because each eigenspace is a right ideal of complex dimension two. The spectrum is two numbers repeated, and the element is one object.</p>
 <p>$$
 \ker(L_{\tilde Q}-\lambda_\pm)=\tilde\Pi_\pm\mathbb{B},\qquad \dim_{\mathbb{C}}=2,\qquad
 L_{\tilde Q}\ \text{has eigenvalues}\ (\lambda_+,\lambda_+,\lambda_-,\lambda_-) .
 $$</p>
 <p><strong>The arithmetic of a sum rules out a particle count.</strong> In the lightlike decomposition of a four-momentum the two coefficients add to twice the energy, not to the energy, and the two terms are imaginary multiples of idempotents, so neither is a positive-energy state. The element carries one mass-shell condition, not two.</p>
-<p><strong>The physical reading is that a two-term spectral writing is a decomposition of one object.</strong> A second particle would need a second independent element, a tensor product, and a second mass-shell condition; the spectral writing supplies none of them.</p>
-<p><strong>The boundary.</strong> The two terms are the two lightlike components of one momentum, and the reading is licensed for the material sector. In the informational sector the same two numbers are two outcomes, and the multiplicity two is then the degeneracy of the measurement and not a pair of systems.</p>
+<p>The physical reading is that a two-term spectral writing is a decomposition of one object. A second particle would need a second independent element, a tensor product, and a second mass-shell condition; the spectral writing supplies none of them.</p>
+<p>The boundary. The two terms are the two lightlike components of one momentum, and the reading is licensed for the material sector. In the informational sector the same two numbers are two outcomes, and the multiplicity two is then the degeneracy of the measurement and not a pair of systems.</p>
 <h3 id="i5f-the-diagonal-is-the-rate-and-the-mixed-corner-is-the-shear-and-on-the-cone-the-clock-stops">I.5.f — The Diagonal Is the Rate and the Mixed Corner Is the Shear, and on the Cone the Clock Stops</h3>
-<p><strong>Read:</strong> in the adapted frame the semisimple part occupies the two diagonal corners and the nilpotent part a single mixed corner. The diagonal acts as a rate; the mixed corner acts as a shift with no rate of its own.</p>
+<p>Read: in the adapted frame the semisimple part occupies the two diagonal corners and the nilpotent part a single mixed corner. The diagonal acts as a rate; the mixed corner acts as a shift with no rate of its own.</p>
 <p>$$
 \tilde Q=\lambda_+\tilde\Pi_++\lambda_-\tilde\Pi_-+\vec\Upsilon\quad(\vec\Upsilon=0\ \text{off the cone}),\qquad
 \tilde Q\tilde\Pi_-=Q_t\tilde\Pi_-+\vec\Upsilon_- .
 $$</p>
-<p><strong>On the cone the exponential is polynomial.</strong></p>
+<p>On the cone the exponential is polynomial.</p>
 <p>$$
 e^{\theta\tilde Q}=e^{\theta Q_t}\bigl(e_t+\theta\vec Q\bigr),
 $$</p>
 <p>so there is no oscillation, no frequency and no periodic term. The root-parametrised form $\cos(B\theta)e_t+\sin(B\theta)\rho$ does not extend to $B=0$, because $\rho=\vec Q/B$ does not exist; only the entire function in $B$ does.</p>
-<p><strong>The physical reading is a rate with a shear, and at the limit a rate with no clock.</strong> The unipotent stratum is a reversible process with a defective mode; the nilpotent stratum is a pure shift with no rate at all. The two are the two halves of the cone, separated by the scalar part.</p>
-<p><strong>The boundary.</strong> The truncated exponential is exact on the cone and is not a limit of oscillating forms in a root; the boundary is a change of functional form, not a degeneration of a formula.</p>
+<p>The physical reading is a rate with a shear, and at the limit a rate with no clock. The unipotent stratum is a reversible process with a defective mode; the nilpotent stratum is a pure shift with no rate at all. The two are the two halves of the cone, separated by the scalar part.</p>
+<p>The boundary. The truncated exponential is exact on the cone and is not a limit of oscillating forms in a root; the boundary is a change of functional form, not a degeneration of a formula.</p>
 <h3 id="i5g-the-centraliser-is-what-no-frame-can-change">I.5.g — The Centraliser Is What No Frame Can Change</h3>
-<p><strong>Read:</strong> the centraliser is $\mathbb{C}[\tilde Q]$ off the centre, of complex dimension two, and it is $\mathbb{C}\times\mathbb{C}$ or the dual numbers according to the discriminant.</p>
+<p>Read: the centraliser is $\mathbb{C}[\tilde Q]$ off the centre, of complex dimension two, and it is $\mathbb{C}\times\mathbb{C}$ or the dual numbers according to the discriminant.</p>
 <p>$$
 C(\tilde Q)=\mathbb{C}[\tilde Q]\cong
 \begin{cases}\mathbb{C}\times\mathbb{C},&B^2\neq0,\\ \mathbb{C}[\varepsilon]/(\varepsilon^2),&B^2=0,\ \vec Q\neq0 .\end{cases}
 $$</p>
-<p><strong>The dimension is the statement.</strong> Two complex dimensions means that the only elements that commute with a non-central element are $e_t$ and the element itself: there is no other invariant of the element, and no larger algebra attached to it.</p>
-<p><strong>The physical reading is a statement about what can be known together.</strong> Commuting with an element is what makes a second quantity a function of the first, so the centraliser is the set of quantities that the element does not disturb. Off the cone it is a pair of scalars — the two eigenvalues, or equivalently the trace and the norm; on the cone it is a scalar and a nilpotent, which is one number and one direction, and there is no second independent invariant.</p>
-<p><strong>The sharp case is the centre.</strong> For $\tilde Q=Q_te_t$ the centraliser is the whole algebra but the double centraliser collapses to $\mathbb{C}e_t$: a central element carries no information, and the only thing that commutes with everything is the centre.</p>
-<p><strong>The boundary.</strong> <em>Commuting</em> is not <em>simultaneously measurable</em> in general. Off the cone the centraliser is a product of two fields, and the two spectral idempotents diagonalise it; on the cone it is the dual numbers, which have no non-trivial idempotents, so the two quantities cannot be separated by a projection.</p>
+<p>The dimension is the statement. Two complex dimensions means that the only elements that commute with a non-central element are $e_t$ and the element itself: there is no other invariant of the element, and no larger algebra attached to it.</p>
+<p>The physical reading is a statement about what can be known together. Commuting with an element is what makes a second quantity a function of the first, so the centraliser is the set of quantities that the element does not disturb. Off the cone it is a pair of scalars — the two eigenvalues, or equivalently the trace and the norm; on the cone it is a scalar and a nilpotent, which is one number and one direction, and there is no second independent invariant.</p>
+<p>The sharp case is the centre. For $\tilde Q=Q_te_t$ the centraliser is the whole algebra but the double centraliser collapses to $\mathbb{C}e_t$: a central element carries no information, and the only thing that commutes with everything is the centre.</p>
+<p>The boundary. <em>Commuting</em> is not <em>simultaneously measurable</em> in general. Off the cone the centraliser is a product of two fields, and the two spectral idempotents diagonalise it; on the cone it is the dual numbers, which have no non-trivial idempotents, so the two quantities cannot be separated by a projection.</p>
 <h3 id="i5h-the-two-outcomes-exist-and-they-are-not-projectors">I.5.h — The Two Outcomes Exist, and They Are Not Projectors</h3>
-<p><strong>Read:</strong> the spectral idempotents $\tilde\Pi_\pm$ are unique, orthogonal and complete, and they are the Lagrange idempotents of the element. They are idempotents, not Hermitian projectors.</p>
+<p>Read: the spectral idempotents $\tilde\Pi_\pm$ are unique, orthogonal and complete, and they are the Lagrange idempotents of the element. They are idempotents, not Hermitian projectors.</p>
 <p>$$
 \tilde\Pi_\pm=\frac{\tilde Q-\lambda_\mp e_t}{\lambda_\pm-\lambda_\mp},\qquad \tilde\Pi_+^{2}=\tilde\Pi_+,\qquad \tilde\Pi_+\tilde\Pi_-=0,\qquad \tilde\Pi_++\tilde\Pi_-=e_t .
 $$</p>
-<p><strong>The two properties are different.</strong> A Hermitian idempotent satisfies $\tilde\Pi^{*}=\tilde\Pi$; the spectral idempotent of a non-normal element does not, and the two spectral idempotents are then not orthogonal in the Hilbert form:</p>
+<p>The two properties are different. A Hermitian idempotent satisfies $\tilde\Pi^{*}=\tilde\Pi$; the spectral idempotent of a non-normal element does not, and the two spectral idempotents are then not orthogonal in the Hilbert form:</p>
 <p>$$
 \operatorname{Sc}\bigl(\tilde\Pi_+^{*}\tilde\Pi_-\bigr)\neq0\quad\text{unless}\ \tilde Q\ \text{is normal}.
 $$</p>
-<p><strong>The Petermann factor measures the failure.</strong></p>
+<p>The Petermann factor measures the failure.</p>
 <p>$$
 \kappa=\operatorname{tr}\bigl(P_\pm^{\dagger}P_\pm\bigr)=\frac{(r^{\dagger}r)(\ell^{\dagger}\ell)}{\lvert\ell^{\dagger}r\rvert^{2}}\ge1,
 $$</p>
 <p>with equality exactly in the normal case.</p>
-<p><strong>The physical reading is a measurement with two outcomes and a metric that depends on the observable.</strong> The outcome pair and the projectors exist for every element off the cone; what fails for a non-normal element is orthogonality, so the probability rule needs a second basis and a metric built from it, and that metric changes when the observable changes. The Born rule is the normal case of that rule, not the general one.</p>
-<p><strong>The boundary.</strong> The biorthogonal rule is a rule per observable, not a replacement for a Hilbert space: two observables give two inner products on the same space, and no state has an element-independent norm.</p>
+<p>The physical reading is a measurement with two outcomes and a metric that depends on the observable. The outcome pair and the projectors exist for every element off the cone; what fails for a non-normal element is orthogonality, so the probability rule needs a second basis and a metric built from it, and that metric changes when the observable changes. The Born rule is the normal case of that rule, not the general one.</p>
+<p>The boundary. The biorthogonal rule is a rule per observable, not a replacement for a Hilbert space: two observables give two inner products on the same space, and no state has an element-independent norm.</p>
 <h3 id="i5i-the-spectrum-is-copy-blind-so-chirality-is-not-a-spectral-label">I.5.i — The Spectrum Is Copy-Blind, So Chirality Is Not a Spectral Label</h3>
-<p><strong>Read:</strong> left multiplication by $\tilde Q$ acts on each spinor space with the same two eigenvalues, while right multiplication is scalar on each.</p>
+<p>Read: left multiplication by $\tilde Q$ acts on each spinor space with the same two eigenvalues, while right multiplication is scalar on each.</p>
 <p>$$
 L_{\tilde Q}\big|_{S_+}=\operatorname{diag}(\lambda_+,\lambda_-),\qquad L_{\tilde Q}\big|_{S_-}=\operatorname{diag}(\lambda_+,\lambda_-),\qquad
 \zeta_+\tilde Q=\lambda_+\zeta_+,\qquad \zeta_-\tilde Q=\lambda_-\zeta_- .
 $$</p>
-<p><strong>So the two gradings coexist and are not the same grading.</strong></p>
+<p>So the two gradings coexist and are not the same grading.</p>
 <p>$$
 \mathbb{B}=\tilde\Pi_+\mathbb{B}\oplus\tilde\Pi_-\mathbb{B}\ \ (\text{eigenspaces of }L_{\tilde Q}),\qquad
 \mathbb{B}=S_+\oplus S_-\ \ (\text{eigenspaces of }R_{\tilde Q}),\qquad
 \mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\cap S_t .
 $$</p>
-<p><strong>The physical reading is that the Peirce index is a right eigenvalue.</strong> Which column a component sits in is the eigenvalue of a right multiplication; which frequency it carries is the eigenvalue of a left multiplication. A chirality label is of the first kind and an energy label of the second, and each column of a Dirac spinor holds both frequencies.</p>
+<p>The physical reading is that the Peirce index is a right eigenvalue. Which column a component sits in is the eigenvalue of a right multiplication; which frequency it carries is the eigenvalue of a left multiplication. A chirality label is of the first kind and an energy label of the second, and each column of a Dirac spinor holds both frequencies.</p>
 <p><strong>The consequence is a prohibition.</strong> No spectral reading can produce a chirality, because the spectrum is copy-blind: knowing the frequency of a component says nothing about its copy, and knowing the copy says nothing about the frequency of the components inside it.</p>
-<p><strong>The boundary.</strong> The two spinor spaces are isomorphic as left modules and distinct as subspaces, so the copy index is a property of the embedding and not of the module. The reading is therefore about the matrix model of the element, not about an invariant of the category.</p>
+<p>The boundary. The two spinor spaces are isomorphic as left modules and distinct as subspaces, so the copy index is a property of the embedding and not of the module. The reading is therefore about the matrix model of the element, not about an invariant of the category.</p>
 <h3 id="i5j-degeneracy-is-not-non-invertibility">I.5.j — Degeneracy Is Not Non-Invertibility</h3>
-<p><strong>Read:</strong> on the cone the determinant is $Q_t^2$, so the cone contains units and the scalar part cuts it in two.</p>
+<p>Read: on the cone the determinant is $Q_t^2$, so the cone contains units and the scalar part cuts it in two.</p>
 <p>$$
 \mathcal S=\Sigma_{10}\sqcup\Sigma_{00},\qquad \Sigma_{10}=\{Q_t\neq0\},\qquad \Sigma_{00}=\{Q_t=0\},\qquad \langle\tilde Q\rangle_{\natural}=Q_t^2\ \text{on}\ \mathcal S .
 $$</p>
-<p><strong>The four sectors of the two conditions make the independence explicit.</strong></p>
+<p>The four sectors of the two conditions make the independence explicit.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -747,11 +746,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The physical reading is that reversibility and a mode basis are independent.</strong> The generic element has both; a massless element has a mode basis without being invertible; a unipotent element is invertible without a mode basis; a nilpotent has neither. The mass is a norm condition, the mode basis is a spectral condition, and no one of them implies the other.</p>
-<p><strong>The boundary.</strong> The identification of $\Sigma_{01}$ with <em>massless</em> is a material-sector dictionary and not an algebraic theorem; the algebra states $Q_t^2+B^2=0$, and the physical word for that is supplied by the sector.</p>
+<p>The physical reading is that reversibility and a mode basis are independent. The generic element has both; a massless element has a mode basis without being invertible; a unipotent element is invertible without a mode basis; a nilpotent has neither. The mass is a norm condition, the mode basis is a spectral condition, and no one of them implies the other.</p>
+<p>The boundary. The identification of $\Sigma_{01}$ with <em>massless</em> is a material-sector dictionary and not an algebraic theorem; the algebra states $Q_t^2+B^2=0$, and the physical word for that is supplied by the sector.</p>
 <h3 id="i5k-the-hermitian-sector-admits-only-diabolic-degeneracies">I.5.k — The Hermitian Sector Admits Only Diabolic Degeneracies</h3>
-<p><strong>Read:</strong> on $\mathbb{B}_\Psi$ the restriction of $B^2$ is $-(a_x^2+a_y^2+a_z^2)$ with real $a_k$, so $B^2=0$ forces $\vec Q=0$. The Hermitian sector meets the cone only on the scalar line.</p>
-<p><strong>The two degeneracies are therefore different normal forms, and only one of them is available to a Hermitian element.</strong></p>
+<p>Read: on $\mathbb{B}_\Psi$ the restriction of $B^2$ is $-(a_x^2+a_y^2+a_z^2)$ with real $a_k$, so $B^2=0$ forces $\vec Q=0$. The Hermitian sector meets the cone only on the scalar line.</p>
+<p>The two degeneracies are therefore different normal forms, and only one of them is available to a Hermitian element.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -793,25 +792,25 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The square-root law is the observable mark.</strong></p>
+<p>The square-root law is the observable mark.</p>
 <p>$$
 B(\epsilon)=\sqrt{2\epsilon(\vec Q_0,\vec Q_1)}\,\bigl(1+O(\epsilon)\bigr),\qquad \lambda_\pm(\epsilon)=Q_t(\epsilon)\pm iB(\epsilon),
 $$</p>
 <p>so a linear perturbation of the parameter produces a square-root response, because the two eigenvalues are the two branches of one square root.</p>
-<p><strong>The physical reading is a theorem about where exceptional points can occur.</strong> A degeneracy that keeps the algebra semisimple is a coincidence of two eigenvalues with the states still independent; a degeneracy that destroys the projections is a coalescence of the states themselves. The first is the Hermitian case, the second needs a non-Hermitian element, and the reason is a sign in a sum of three squares.</p>
-<p><strong>The boundary.</strong> The $\sqrt{\epsilon}$ law is generic for a family, not universal: the coefficient depends on the direction, and a direction orthogonal to $\vec Q_0$ gives a higher order. The algebra supplies the normal form at the point, not the family.</p>
+<p>The physical reading is a theorem about where exceptional points can occur. A degeneracy that keeps the algebra semisimple is a coincidence of two eigenvalues with the states still independent; a degeneracy that destroys the projections is a coalescence of the states themselves. The first is the Hermitian case, the second needs a non-Hermitian element, and the reason is a sign in a sum of three squares.</p>
+<p>The boundary. The $\sqrt{\epsilon}$ law is generic for a family, not universal: the coefficient depends on the direction, and a direction orthogonal to $\vec Q_0$ gives a higher order. The algebra supplies the normal form at the point, not the family.</p>
 <h3 id="i5l-a-real-spectrum-is-not-a-stable-system">I.5.l — A Real Spectrum Is Not a Stable System</h3>
-<p><strong>Read:</strong> case 4 of the worked examples is $\sqrt2 e_t+i\vec e_x$, with $B=i$ and eigenvalues $\sqrt2-1$ and $\sqrt2+1$. The root is $\vec Z=-i\vec e_x$, an imaginary root, and the spectrum is real.</p>
-<p><strong>The lesson is that reality of the eigenvalues is a statement about oscillation, not about stability.</strong> A real $\lambda$ in the convention $e^{-i\lambda t}$ gives a pure exponential and no oscillation; a complex $\lambda$ gives an oscillation modulated by a rate. Which of the two is stable is decided by the sign of the real part of $\lambda$, that is by $\operatorname{Re}Q_t$ together with the imaginary part of $B$, and not by the reality of the pair.</p>
-<p><strong>The same element shows that the root need not be real.</strong> $\vec Z$ is a square root of $e_t$ in the algebra, and it can be imaginary, real or complex; the branch is a convention and the two branches exchange the two eigenvalues.</p>
-<p><strong>The physical reading is that a purely exponential mode is a rate and not a non-physical solution.</strong> A pair of real eigenvalues is a pair of amplification and attenuation factors; a pair of imaginary eigenvalues is a pair of oscillations. Both are physical, and the corpus's use of imaginary frequencies for propagation and real ones for damping is the same distinction read in the two sectors.</p>
-<p><strong>The boundary.</strong> The reading depends on the evolution convention and on the sector. In the material sector the eigenvalues are imaginary for a real four-momentum, and the word <em>real spectrum</em> would describe the informational sector instead.</p>
+<p>Read: case 4 of the worked examples is $\sqrt2 e_t+i\vec e_x$, with $B=i$ and eigenvalues $\sqrt2-1$ and $\sqrt2+1$. The root is $\vec Z=-i\vec e_x$, an imaginary root, and the spectrum is real.</p>
+<p>The lesson is that reality of the eigenvalues is a statement about oscillation, not about stability. A real $\lambda$ in the convention $e^{-i\lambda t}$ gives a pure exponential and no oscillation; a complex $\lambda$ gives an oscillation modulated by a rate. Which of the two is stable is decided by the sign of the real part of $\lambda$, that is by $\operatorname{Re}Q_t$ together with the imaginary part of $B$, and not by the reality of the pair.</p>
+<p>The same element shows that the root need not be real. $\vec Z$ is a square root of $e_t$ in the algebra, and it can be imaginary, real or complex; the branch is a convention and the two branches exchange the two eigenvalues.</p>
+<p>The physical reading is that a purely exponential mode is a rate and not a non-physical solution. A pair of real eigenvalues is a pair of amplification and attenuation factors; a pair of imaginary eigenvalues is a pair of oscillations. Both are physical, and the corpus's use of imaginary frequencies for propagation and real ones for damping is the same distinction read in the two sectors.</p>
+<p>The boundary. The reading depends on the evolution convention and on the sector. In the material sector the eigenvalues are imaginary for a real four-momentum, and the word <em>real spectrum</em> would describe the informational sector instead.</p>
 <h2 id="the-limits">The Limits</h2>
-<p><strong>The frequency reading is a convention.</strong> Every statement about oscillation, damping and growth depends on whether the evolution is written $e^{-i\lambda t}$ or $e^{+i\lambda t}$, and the algebra fixes neither. The entry states the algebra and names the convention when it uses one.</p>
-<p><strong>The identification of the spectrum with a physical quantity is a sector dictionary.</strong> On $\mathbb{B}_\Phi$ the pair is a Doppler pair; on $\mathbb{B}_\Psi$ it is an outcome pair. The algebra supplies the same two numbers in both cases, and the entry does not claim that a spectral measurement of an arbitrary element has a physical meaning.</p>
+<p>The frequency reading is a convention. Every statement about oscillation, damping and growth depends on whether the evolution is written $e^{-i\lambda t}$ or $e^{+i\lambda t}$, and the algebra fixes neither. The entry states the algebra and names the convention when it uses one.</p>
+<p>The identification of the spectrum with a physical quantity is a sector dictionary. On $\mathbb{B}_\Phi$ the pair is a Doppler pair; on $\mathbb{B}_\Psi$ it is an outcome pair. The algebra supplies the same two numbers in both cases, and the entry does not claim that a spectral measurement of an arbitrary element has a physical meaning.</p>
 <p><strong>The eigenbasis exists only off the cone.</strong> Every statement about the modes, the projectors and the diagonal basis is a statement on $\{B^2\neq0\}$, which is open and dense and therefore generic, but which excludes exactly the loci the physics cares about: rest frames, null fields, and exceptional points.</p>
-<p><strong>The normalisation is not canonical.</strong> The pair $\vec\Upsilon_\pm$ is fixed only up to a reciprocal rescaling, and the two normalisations offered by the mathematics — the transverse vector and the antisymmetric part — are different choices of representative. Nothing in the entry depends on which is used, but a numerical claim about a component does.</p>
-<p><strong>The Jordan frame is chosen.</strong> On the cone the two idempotents that split the flag are not determined by the element; the definite Hermitian form selects one pair, which is a choice of a metric and not a consequence of the algebra.</p>
+<p>The normalisation is not canonical. The pair $\vec\Upsilon_\pm$ is fixed only up to a reciprocal rescaling, and the two normalisations offered by the mathematics — the transverse vector and the antisymmetric part — are different choices of representative. Nothing in the entry depends on which is used, but a numerical claim about a component does.</p>
+<p>The Jordan frame is chosen. On the cone the two idempotents that split the flag are not determined by the element; the definite Hermitian form selects one pair, which is a choice of a metric and not a consequence of the algebra.</p>
 <h2 id="summary">Summary</h2>
 <ul>
 <li>The spectrum is $\lambda_\pm=Q_t\pm iB$ with $B^2=Q_x^2+Q_y^2+Q_z^2$, and the discriminant of the characteristic polynomial is $-4B^2$.</li>
@@ -901,9 +900,9 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
-<p><strong>In the mathematics corpus.</strong> The six articles of the source table, and inside them <em>The Spectral Criterion</em>, which states the eigenvalue problem without a module, and <em>The Three Strata</em>, which is the normal-form table of the cone.</p>
-<p><strong>In this category.</strong> <em>The Modules: What the Algebra Acts On</em> supplies the right ideals that are the eigenspaces and the two spinor spaces that are the columns. <em>The Four Forms and the Four Norms</em> supplies the norm whose vanishing is the cone $\Sigma_{01}$ and the positivity the cone lacks. <em>The H Norm</em> and <em>The N Norm</em> carry the two conditions that the sector table keeps apart.</p>
-<p><strong>The sources of this entry.</strong> <a href="exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html">Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</a> is the diabolic–exceptional table and the square-root law. <a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> is the Doppler pair and the warning that two eigenvalues are not two particles. <a href="the-group-of-invertibles-the-cone-and-the-orders.html">The Group of Invertibles, the Cone and the Orders</a> is the independence of the cone from invertibility. <a href="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a> treats the non-Hermitian projectors and the Petermann factor. The gap, the three rates and the degenerate strata are stated here.</p>
+<p>In the mathematics corpus. The six articles of the source table, and inside them <em>The Spectral Criterion</em>, which states the eigenvalue problem without a module, and <em>The Three Strata</em>, which is the normal-form table of the cone.</p>
+<p>In this category. <em>The Modules: What the Algebra Acts On</em> supplies the right ideals that are the eigenspaces and the two spinor spaces that are the columns. <em>The Four Forms and the Four Norms</em> supplies the norm whose vanishing is the cone $\Sigma_{01}$ and the positivity the cone lacks. <em>The H Norm</em> and <em>The N Norm</em> carry the two conditions that the sector table keeps apart.</p>
+<p>The sources of this entry. <a href="exceptional-points-and-the-nilpotent-regime-in-the-biquaternion-spectrum.html">Exceptional Points and the Nilpotent Regime in the Biquaternion Spectrum</a> is the diabolic–exceptional table and the square-root law. <a href="four-vectors-and-the-interval.html">Four-Vectors and the Interval</a> is the Doppler pair and the warning that two eigenvalues are not two particles. <a href="the-group-of-invertibles-the-cone-and-the-orders.html">The Group of Invertibles, the Cone and the Orders</a> is the independence of the cone from invertibility. <a href="biorthogonal-quantum-mechanics-and-the-biquaternion-spectrum.html">Biorthogonal Quantum Mechanics and the Biquaternion Spectrum</a> treats the non-Hermitian projectors and the Petermann factor. The gap, the three rates and the degenerate strata are stated here.</p>
       </div>
     </main>
   </div>

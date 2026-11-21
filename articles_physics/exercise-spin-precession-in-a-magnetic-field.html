@@ -71,16 +71,16 @@
       <div class="article-body">
         <h1 id="exercise-spin-precession-in-a-magnetic-field"><strong>Exercise: Spin Precession in a Magnetic Field</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article is one of a series of <strong>worked exercises</strong> that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
+<p>This article is one of a series of worked exercises that illustrate quantum physics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
 <p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
-<p>The first exercise treated the Born rule and the measurement of spin along an arbitrary direction. This second exercise treats <strong>dynamics</strong>: the time evolution of a spin state under a time-independent Hamiltonian.</p>
+<p>The first exercise treated the Born rule and the measurement of spin along an arbitrary direction. This second exercise treats dynamics: the time evolution of a spin state under a time-independent Hamiltonian.</p>
 <h2 id="the-exercise">The Exercise</h2>
-<p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $x$-axis</strong>, and is then placed in a uniform magnetic field</p>
+<p>A spin-$\tfrac{1}{2}$ particle is prepared in the spin-up state along the $x$-axis, and is then placed in a uniform magnetic field</p>
 <p>$$
 \vec B = B_0\,\vec u_z
 $$</p>
-<p>pointing along the $z$-axis. The magnetic moment of the particle is $\vec\mu = \gamma\vec S$, where $\gamma$ is the gyromagnetic ratio and $\vec S$ is the spin operator. What is the <strong>expectation value of the spin along the $x$-axis</strong> as a function of time?</p>
-<p>This is the classic <strong>Larmor precession</strong> exercise. It exercises the Hamiltonian, the evolution operator, and the time-dependent expectation value, in a setting where the answer is a simple harmonic function of time.</p>
+<p>pointing along the $z$-axis. The magnetic moment of the particle is $\vec\mu = \gamma\vec S$, where $\gamma$ is the gyromagnetic ratio and $\vec S$ is the spin operator. What is the expectation value of the spin along the $x$-axis as a function of time?</p>
+<p>This is the classic Larmor precession exercise. It exercises the Hamiltonian, the evolution operator, and the time-dependent expectation value, in a setting where the answer is a simple harmonic function of time.</p>
 <h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
 <h3 id="step-1-the-state">Step 1: The state</h3>
 <p>The spin-up state along the $x$-axis is the eigenvalue-$+1$ eigenvector of the Pauli matrix $\sigma_1$:</p>
@@ -96,7 +96,7 @@ $$</p>
 <p>$$
 \omega_L = \gamma B_0
 $$</p>
-<p>is the <strong>Larmor frequency</strong> and $S_z =\frac{\hbar}{2}\sigma_3$.</p>
+<p>is the Larmor frequency and $S_z =\frac{\hbar}{2}\sigma_3$.</p>
 <h3 id="step-3-the-evolution">Step 3: The evolution</h3>
 <p>The evolution operator is</p>
 <p>$$
@@ -169,23 +169,37 @@ $$</p>
 <h2 id="limiting-cases">Limiting Cases</h2>
 <p>Both formulations give the same result, and both give the same limits:</p>
 <ul>
-<li><strong>$r'_t = 0$</strong> (initial time): $\langle  S_x\rangle  =\frac{\hbar}{2}$, as expected since the state is spin-up along $x$.</li>
-<li><strong>$\omega_L r'_t/c = \pi/2$</strong> (quarter period): $\langle S_x\rangle = 0$.</li>
-<li><strong>$\omega_L r'_t/c = \pi$</strong> (half period): $\langle  S_x\rangle  = -\frac{\hbar}{2}$, the state has precessed to spin-down along $x$.</li>
-<li><strong>$\omega_L r'_t/c = 2\pi$</strong> (full period): $\langle  S_x\rangle  =\frac{\hbar}{2}$, the state has returned to its initial orientation.</li>
+<li>$r'_t = 0$ (initial time): $\langle  S_x\rangle  =\frac{\hbar}{2}$, as expected since the state is spin-up along $x$.</li>
+<li>$\omega_L r'_t/c = \pi/2$ (quarter period): $\langle S_x\rangle = 0$.</li>
+<li>$\omega_L r'_t/c = \pi$ (half period): $\langle  S_x\rangle  = -\frac{\hbar}{2}$, the state has precessed to spin-down along $x$.</li>
+<li>$\omega_L r'_t/c = 2\pi$ (full period): $\langle  S_x\rangle  =\frac{\hbar}{2}$, the state has returned to its initial orientation.</li>
 </ul>
 <p>The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expected for Larmor precession.</p>
 <h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
-<p><strong>1. The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$.</strong> The observable $\tilde{S}_{\Psi,z} =\frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde H_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z}$ inherits this property. The Hamiltonian is a <strong>Hermitian element of the same subspace</strong> as the observables and the states.</p>
-<p><strong>2. The evolution operator is a unit-norm biquaternion.</strong> The exponential $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde H_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a <strong>rotor</strong> in the sense of geometric algebra.</p>
+<ol>
+<li>
+<p>The Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$. The observable $\tilde{S}_{\Psi,z} =\frac{\hbar}{2}i \vec e_z$ is an element of $\mathbb{B}_{\Psi}$, and the Hamiltonian $\tilde H_\Psi = -\gamma B_0 \tilde{S}_{\Psi,z}$ inherits this property. The Hamiltonian is a Hermitian element of the same subspace as the observables and the states.</p>
+</li>
+<li>
+<p>The evolution operator is a unit-norm biquaternion. The exponential $\tilde{U}(r'_t) = \exp(-i\theta_{\mathrm{evo}}\sigma_3/2)$ is a unit-norm element of $\mathbb{B}$, lying in the real quaternion subspace $\mathbb{H}_\mathbb{B}$ for this particular Hamiltonian (because $\tilde H_\Psi$ is proportional to $i \vec e_z$, and the exponential of $\vec e_z$ is a real quaternion). The evolution is a rotor in the sense of geometric algebra.</p>
+</li>
+</ol>
 <p>The angle is $\theta_{\mathrm{evo}}=-\omega_L r'_t/c$. It is real because a real frequency, a real interval and the real constant $c$ form it, and it is dimensionless because a frequency times a length over a speed is a number. The minus sign records the sign of the Hamiltonian, $-\frac{\hbar\omega_L}{2}i\vec e_z$; the generator $\sigma_3/2$ is dimensionless, so it adds no dimension to the exponent.</p>
-<p><strong>3. The state evolves by rotor conjugation.</strong> The evolved state is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a <strong>rotor conjugation</strong> on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.</p>
-<p><strong>4. The precession is a rotation of the Bloch vector.</strong> The evolved state has the form $\tilde{Ϛ}_{\Psi}(r'_t) = \frac{1}{2}(e_t + i\vec s_{\Psi}(r'_t))$ with</p>
+<ol>
+<li>
+<p>The state evolves by rotor conjugation. The evolved state is $\tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\tilde{Ϛ}_{\Psi}(0)\tilde Q(r'_t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a rotor conjugation on the algebra. The evolution is automatically $*$-unitary: $\tilde Q\tilde Q^{*} = e_t$ is preserved by the exponential form.</p>
+</li>
+<li>
+<p>The precession is a rotation of the Bloch vector. The evolved state has the form $\tilde{Ϛ}_{\Psi}(r'_t) = \frac{1}{2}(e_t + i\vec s_{\Psi}(r'_t))$ with</p>
+</li>
+</ol>
 <p>$$
 \boxed{\;\vec s_{\Psi}(r'_t) = \cos(\omega_L r'_t/c)\,\vec e_x - \sin(\omega_L r'_t/c)\,\vec e_y\;}.
 $$</p>
-<p>This is a <strong>unit vector rotating</strong> in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.</p>
-<p><strong>5. The expectation value is the normalised Hermitian form, read through the trace last.</strong> As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is</p>
+<p>This is a unit vector rotating in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.</p>
+<ol>
+<li>The expectation value is the normalised Hermitian form, read through the trace last. As in Exercise: Measuring Spin Along an Arbitrary Direction, the expectation value is</li>
+</ol>
 <p>$$
 \langle\tilde{S}_{\Psi,x}\rangle(r'_t) = \frac{\langle\tilde{Ϛ}_{\Psi}(r'_t),\tilde{S}_{\Psi,x}\rangle_{*}}{\langle\tilde{Ϛ}_{\Psi}(r'_t),e_t\rangle_{*}} = 2\,\mathrm{Sc}\!\left(\tilde{Ϛ}_{\Psi}(r'_t)\,\tilde{S}_{\Psi,x}\right),
 $$</p>
@@ -223,11 +237,11 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>These two exercises illustrate the two fundamental operations of the quantum formalism: <strong>measurement</strong> (Exercise: Measuring Spin Along an Arbitrary Direction) and <strong>evolution</strong> (Exercise: Spin Precession in a Magnetic Field). In both cases, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$ and $\mathbb{H}_\mathbb{B}$.</p>
+<p>These two exercises illustrate the two fundamental operations of the quantum formalism: measurement (Exercise: Measuring Spin Along an Arbitrary Direction) and evolution (Exercise: Spin Precession in a Magnetic Field). In both cases, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{B}_{\Psi}$ and $\mathbb{H}_\mathbb{B}$.</p>
 <h2 id="summary">Summary</h2>
 <p>We have solved a second exercise in quantum physics — the Larmor precession of a spin in a magnetic field — in two parallel presentations.</p>
-<p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle  S_x\rangle(r'_t) =\frac{\hbar}{2}\cos(\omega_L r'_t/c)$.</p>
-<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde H_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}_{\Psi}(r'_t)$, and the pairing formula, giving the same result.</p>
+<p>In the standard formulation, the solution proceeds through ket vectors, Pauli matrices, the Hamiltonian, the evolution operator, and the expectation value, giving $\langle  S_x\rangle(r'_t) =\frac{\hbar}{2}\cos(\omega_L r'_t/c)$.</p>
+<p>In the biquaternion formulation, the solution proceeds through the idempotent $\tilde\Pi_x$, the Hermitian Hamiltonian $\tilde H_\Psi$, the unit-norm evolution biquaternion $\tilde{U}(r'_t)$, the evolved state $\tilde{Ϛ}_{\Psi}(r'_t)$, and the pairing formula, giving the same result.</p>
 <p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the evolution: the Hamiltonian is a Hermitian element of $\mathbb{B}_{\Psi}$, the evolution operator is a unit-norm biquaternion, the evolved state is the rotor conjugate of the initial state, and the expectation value is the normalised Hermitian form, read through the trace.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

@@ -71,34 +71,34 @@
       <div class="article-body">
         <h1 id="introduction-to-the-lorentz-group-in-biquaternionic-form"><strong>Introduction to the Lorentz Group in Biquaternionic Form</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The <strong>restricted Lorentz group</strong>, written $\mathrm{SO}^{+}(1,3)$, is the group of the Lorentz transformations that preserve both the orientation of space and the direction of time in the theory of relativity. It is the group of the changes of inertial frame: the linear maps of flat spacetime that keep the interval between two events.</p>
+<p>The restricted Lorentz group, written $\mathrm{SO}^{+}(1,3)$, is the group of the Lorentz transformations that preserve both the orientation of space and the direction of time in the theory of relativity. It is the group of the changes of inertial frame: the linear maps of flat spacetime that keep the interval between two events.</p>
 <p>Every element of the group is a boost times a rotation. The same group sits inside the biquaternion algebra: its unit elements act on a four-vector by the two-sided product $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, and the operators obtained that way are exactly the transformations of $\mathrm{SO}^{+}(1,3)$.</p>
 <h2 id="the-lorentz-group">The Lorentz Group</h2>
-<p><strong>The interval.</strong> Write an event as $x_\mu=(x_0,\mathbf{x})$ with $x_0=ct$, and let</p>
+<p>The interval. Write an event as $x_\mu=(x_0,\mathbf{x})$ with $x_0=ct$, and let</p>
 <p>$$
 \eta=\operatorname{diag}(1,-1,-1,-1),\qquad
 s^2(x)=x^{\mathsf T}\eta\,x=(x_0)^2-\lvert\mathbf{x}\rvert^2 .
 $$</p>
-<p>The form is <strong>indefinite</strong>, and its zero set is the light cone. The sign of $s^2$ sorts events into those a signal can reach from the origin and those it cannot, so this one quadratic form carries the causal structure of flat spacetime.</p>
-<p><strong>The defining equation.</strong> The maps that preserve the form are the linear maps $\Lambda$ of $\mathbb{R}^4$ with</p>
+<p>The form is indefinite, and its zero set is the light cone. The sign of $s^2$ sorts events into those a signal can reach from the origin and those it cannot, so this one quadratic form carries the causal structure of flat spacetime.</p>
+<p>The defining equation. The maps that preserve the form are the linear maps $\Lambda$ of $\mathbb{R}^4$ with</p>
 <p>$$
 \boxed{\ \Lambda^{\mathsf T}\eta\,\Lambda=\eta\ }
 $$</p>
 <p>which says exactly that $s^2(\Lambda x)=s^2(x)$ for every $x$. Every such map preserves all intervals, and every map preserving all intervals is such a map, because a quadratic form is determined by its values.</p>
-<p><strong>Why this group.</strong> The condition leaves the determinant free up to sign, $\det\Lambda=\pm1$, and the time-time entry satisfies</p>
+<p>Why this group. The condition leaves the determinant free up to sign, $\det\Lambda=\pm1$, and the time-time entry satisfies</p>
 <p>$$
 \bigl(\Lambda^{0}{}_{0}\bigr)^2=1+\sum_i\bigl(\Lambda^{i}{}_{0}\bigr)^2\ \ge 1 ,
 $$</p>
 <p>so $\Lambda^{0}{}_{0}$ never vanishes and cannot change sign continuously. Two discrete signs are therefore available, and the restricted Lorentz group $\mathrm{SO}^{+}(1,3)$ is the part fixed by $\det\Lambda=+1$ and $\Lambda^{0}{}_{0}\ge1$. It is connected, it contains the identity, and no continuous motion of an observer leaves it.</p>
-<p><strong>Six parameters.</strong> The matrix $\Lambda$ has sixteen entries and the conditions form a symmetric $4\times4$ array, ten independent equations, so $16-10=6$ remain. Infinitesimally, with $\Lambda=I+\omega$,</p>
+<p>Six parameters. The matrix $\Lambda$ has sixteen entries and the conditions form a symmetric $4\times4$ array, ten independent equations, so $16-10=6$ remain. Infinitesimally, with $\Lambda=I+\omega$,</p>
 <p>$$
 \omega^{\mathsf T}\eta+\eta\,\omega=0
 \quad\Longleftrightarrow\quad
 \omega_{\mu\nu}=-\omega_{\nu\mu},
 $$</p>
-<p>an antisymmetric array with $\binom{4}{2}=6$ entries. The six belong to $\mathrm{SO}^{+}(1,3)$, since a neighbourhood of the identity lies in it, and they are three planes containing the time axis and one space direction, the <strong>boosts</strong>, and three containing two space directions, the <strong>rotations</strong>.</p>
+<p>an antisymmetric array with $\binom{4}{2}=6$ entries. The six belong to $\mathrm{SO}^{+}(1,3)$, since a neighbourhood of the identity lies in it, and they are three planes containing the time axis and one space direction, the boosts, and three containing two space directions, the rotations.</p>
 <h2 id="boosts-and-rotations">Boosts and Rotations</h2>
-<p><strong>The two families.</strong> A <strong>rotation</strong> fixes the time axis and acts on space by an orthogonal matrix; it has an axis $\hat{\mathbf n}$ and an angle $\theta$, is $R(\hat{\mathbf n},\theta)=\exp(-\theta\,\hat{\mathbf n}\cdot\mathbf J)$, and returns to the identity at $\theta=2\pi$. A <strong>boost</strong> fixes a plane through the time axis and acts on the other two directions by a hyperbolic rotation. With $\boldsymbol\beta=\beta\hat{\mathbf n}$ and $\gamma=(1-\beta^2)^{-1/2}$,</p>
+<p>The two families. A <strong>rotation</strong> fixes the time axis and acts on space by an orthogonal matrix; it has an axis $\hat{\mathbf n}$ and an angle $\theta$, is $R(\hat{\mathbf n},\theta)=\exp(-\theta\,\hat{\mathbf n}\cdot\mathbf J)$, and returns to the identity at $\theta=2\pi$. A <strong>boost</strong> fixes a plane through the time axis and acts on the other two directions by a hyperbolic rotation. With $\boldsymbol\beta=\beta\hat{\mathbf n}$ and $\gamma=(1-\beta^2)^{-1/2}$,</p>
 <p>$$
 \Lambda_{\mathrm b}(\hat{\mathbf n},w)=
 \begin{pmatrix}
@@ -108,28 +108,28 @@ $$</p>
 \qquad
 \beta=\tanh w,\quad \gamma=\cosh w .
 $$</p>
-<p><strong>Rapidity is the additive parameter.</strong> The velocity addition law is the addition theorem of the hyperbolic tangent, so two collinear boosts of rapidities $w_1$ and $w_2$ compose to one of rapidity $w_1+w_2$. This is the whole difference between the families: the parameter of a rotation is periodic and bounded, the parameter of a boost is not, so the rotations form a compact set and the boosts do not.</p>
-<p><strong>The group is made of their products.</strong> Every element of $\mathrm{SO}^{+}(1,3)$ is a boost followed by a rotation,</p>
+<p>Rapidity is the additive parameter. The velocity addition law is the addition theorem of the hyperbolic tangent, so two collinear boosts of rapidities $w_1$ and $w_2$ compose to one of rapidity $w_1+w_2$. This is the whole difference between the families: the parameter of a rotation is periodic and bounded, the parameter of a boost is not, so the rotations form a compact set and the boosts do not.</p>
+<p>The group is made of their products. Every element of $\mathrm{SO}^{+}(1,3)$ is a boost followed by a rotation,</p>
 <p>$$
 \boxed{\ \Lambda=\Lambda_{\mathrm b}(\vec\beta)\,\Lambda_{\mathrm{rot}}(\hat{\mathbf n},\theta)\ }
 $$</p>
 <p>and the three parameters are unique: the first column of $\Lambda$ is $(\gamma,-\gamma\vec\beta)$, so $\vec\beta$ is read off, and what remains after the boost is removed fixes the time axis and is therefore a rotation. So the boosts and the rotations generate the group, and two factors suffice: a frame is fixed by the velocity of the observer and the orientation of the observer's axes, and by nothing else.</p>
 <p><strong>This is not a product of groups.</strong> The boosts are not closed under composition, since two boosts about different axes compose to a boost and a rotation, so the group is not $\mathrm{Boost}\times\mathrm{SU}(2)$; what is a product is the set of elements.</p>
-<p><strong>The half-angle enters every boost.</strong> Because $\cosh w$ and $\sinh w$ factor through it, $\cosh\tfrac w2=\sqrt{(\gamma+1)/2}$ and $\sinh\tfrac w2=\sqrt{(\gamma-1)/2}$. At $\beta=0.6$ the values are $\gamma=1.25$, $w=0.693147$ and $\cosh\tfrac w2=1.060660$.</p>
+<p>The half-angle enters every boost. Because $\cosh w$ and $\sinh w$ factor through it, $\cosh\tfrac w2=\sqrt{(\gamma+1)/2}$ and $\sinh\tfrac w2=\sqrt{(\gamma-1)/2}$. At $\beta=0.6$ the values are $\gamma=1.25$, $w=0.693147$ and $\cosh\tfrac w2=1.060660$.</p>
 <h2 id="the-same-group-in-the-biquaternion-algebra">The Same Group in the Biquaternion Algebra</h2>
 <p>Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the complexified quaternion algebra, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, where $e_t$ is the identity and $\vec e_k^2=-e_t$. An element is $\tilde Q=Q_te_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z$ with complex coefficients. Let ${}^{\natural}$ fix the scalars and negate the vectors, and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ be its composition with complex conjugation.</p>
-<p><strong>The norm.</strong> The biquaternion norm is</p>
+<p>The norm. The biquaternion norm is</p>
 <p>$$
 N(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_t^2+Q_x^2+Q_y^2+Q_z^2 ,
 $$</p>
-<p>and it is <strong>multiplicative</strong>, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$.</p>
+<p>and it is multiplicative, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$.</p>
 <p>On an anti-Hermitian element the norm returns the interval with the sign of $\eta$ reversed, $N(\tilde X)=-(x_0)^2+\lvert\mathbf{x}\rvert^2=-s^2(x)$; only the invariance is used below, and it is the same for both signs.</p>
-<p><strong>The group.</strong> The unit elements are closed under multiplication, the inverse of a unit element is $\tilde U^{\natural}$, which has norm one, and $e_t$ has norm one, so they form a group</p>
+<p>The group. The unit elements are closed under multiplication, the inverse of a unit element is $\tilde U^{\natural}$, which has norm one, and $e_t$ has norm one, so they form a group</p>
 <p>$$
 G=\{\tilde U\in\mathbb{B} : N(\tilde U)=1\}\cong\mathrm{SL}(2,\mathbb{C}).
 $$</p>
 <p>One complex equation on four complex coordinates leaves complex dimension $3$, that is real dimension $6$.</p>
-<p><strong>The action is a two-sided Hermitian pair.</strong> Four-vectors are the anti-Hermitian elements, with imaginary scalar and real vector. A unit element acts by conjugation with itself and with its star,</p>
+<p>The action is a two-sided Hermitian pair. Four-vectors are the anti-Hermitian elements, with imaginary scalar and real vector. A unit element acts by conjugation with itself and with its star,</p>
 <p>$$
 \boxed{\ \tilde X\longmapsto\tilde U\,\tilde X\,\tilde U^{*}\ }
 $$</p>
@@ -143,7 +143,7 @@ $$</p>
 <p>$$
 \boxed{\ G/\{\pm e_t\}\;\cong\;\mathrm{SO}^{+}(1,3)\ }
 $$</p>
-<p><strong>The correspondence is one-to-one on operators.</strong> The two elements $\tilde U$ and $-\tilde U$ are different but give the same operator, and nothing else is lost: the operator group is exactly the restricted Lorentz group, and it acts on four-vectors by its defining representation.</p>
+<p>The correspondence is one-to-one on operators. The two elements $\tilde U$ and $-\tilde U$ are different but give the same operator, and nothing else is lost: the operator group is exactly the restricted Lorentz group, and it acts on four-vectors by its defining representation.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -179,7 +179,7 @@ $$</p>
 </tbody>
 </table></div>
 <h2 id="the-unit-element-is-a-boost-times-a-rotation">The Unit Element Is a Boost Times a Rotation</h2>
-<p><strong>The word.</strong> A boost of rapidity $\theta_{\mathrm{rpd}}$ along the unit vector $\vec u_{\mathrm b}$ and a rotation of angle $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$ are the two exponentials</p>
+<p>The word. A boost of rapidity $\theta_{\mathrm{rpd}}$ along the unit vector $\vec u_{\mathrm b}$ and a rotation of angle $\theta_{\mathrm{axr}}$ about $\vec u_{\mathrm r}$ are the two exponentials</p>
 <p>$$
 \boxed{\ \tilde U=\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
 \tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),\qquad
@@ -192,26 +192,26 @@ $$</p>
 \tilde u_{\mathrm r}=\cos\tfrac{\theta_{\mathrm{axr}}}{2}\,e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm r},
 $$</p>
 <p>so the boost factor is Hermitian, with real scalar part and imaginary vector part, and the rotation factor is real. Both have norm one, so the product has norm one, and conversely every unit element is such a product. <strong>The unit elements are the products of a boost and a rotation.</strong></p>
-<p><strong>The endpoint $2\pi$ belongs to the range.</strong> At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$ whatever the axis, and the element $-e_t$ has that rotation factor in its word, with the boost factor $e_t$. No angle below $2\pi$ produces it. A half-open interval would therefore leave $-e_t$, and every element whose rotation factor is $-e_t$, outside the image of the word. Verified: on one hundred random unit elements the word reproduces the element to $7.6\times10^{-15}$ with $\theta_{\mathrm{axr}}<2\pi$, and one hundred elements built with rotation factor $-e_t$ all require $\theta_{\mathrm{axr}}=2\pi$.</p>
-<p><strong>The product is unique.</strong> For any $\tilde U\in G$ the Hermitian positive factor is $\tilde U\tilde U^{*}$ square-rooted, and the rotation factor is what is left,</p>
+<p>The endpoint $2\pi$ belongs to the range. At $\theta_{\mathrm{axr}}=2\pi$ the rotor is $-e_t$ whatever the axis, and the element $-e_t$ has that rotation factor in its word, with the boost factor $e_t$. No angle below $2\pi$ produces it. A half-open interval would therefore leave $-e_t$, and every element whose rotation factor is $-e_t$, outside the image of the word. Verified: on one hundred random unit elements the word reproduces the element to $7.6\times10^{-15}$ with $\theta_{\mathrm{axr}}<2\pi$, and one hundred elements built with rotation factor $-e_t$ all require $\theta_{\mathrm{axr}}=2\pi$.</p>
+<p>The product is unique. For any $\tilde U\in G$ the Hermitian positive factor is $\tilde U\tilde U^{*}$ square-rooted, and the rotation factor is what is left,</p>
 <p>$$
 \tilde H=\bigl(\tilde U\tilde U^{*}\bigr)^{1/2},\qquad
 \tilde K=\tilde H^{-1}\tilde U,\qquad
 \tilde U=\tilde H\tilde K ,
 $$</p>
 <p>with $\tilde K$ a real quaternion, so $\tilde K$ fixes the time axis. This is the left polar decomposition of the matrix; the other word exists too, with different factors, and the block's convention is this one, with the boost on the left. Three parameters in each factor, which is the $3+3=6$ of the group.</p>
-<p><strong>Acting, it gives back the two transformations.</strong> Because the pair is two-sided, each factor acts by its own conjugation, and the rotation may be taken first,</p>
+<p>Acting, it gives back the two transformations. Because the pair is two-sided, each factor acts by its own conjugation, and the rotation may be taken first,</p>
 <p>$$
 \tilde X\longmapsto\tilde U_{\mathrm b}\bigl(\tilde u_{\mathrm r}\tilde X\tilde u_{\mathrm r}^{*}\bigr)\tilde U_{\mathrm b}^{*}.
 $$</p>
 <p>The congruence of $\tilde U_{\mathrm b}$ is the boost matrix written above and the congruence of $\tilde u_{\mathrm r}$ is $R(\hat{\mathbf n},\theta)$, so the algebra reproduces the group decomposition element by element. The angle is halved in the element and whole in its action, because the congruence squares it: the parameters acting on a four-vector are $\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{axr}}$, and not half of them.</p>
 <p><strong>The half-angle is not a convenience.</strong> The eigenvalues of $\tilde U_{\mathrm b}$ are $e^{\pm\theta_{\mathrm{rpd}}/2}$, and $\tilde u_{\mathrm r}$ is minus the identity at $\theta_{\mathrm{axr}}=2\pi$ while its congruence is the identity: the half is what the algebra needs so that its own elements square to the transformation, and the sign it produces is the two-to-one cover.</p>
 <h2 id="summary">Summary</h2>
-<p><strong>The group.</strong> The restricted Lorentz group is $\mathrm{SO}^{+}(1,3)$, the identity component of the set of linear maps with $\Lambda^{\mathsf T}\eta\Lambda=\eta$: six parameters, three boosts and three rotations.</p>
-<p><strong>The products.</strong> Every element is a boost times a rotation, uniquely, so the two families generate the group; but they are not a pair of subgroups, since only the rotations close.</p>
-<p><strong>The algebra.</strong> The unit biquaternions, $N(\tilde U)=1$, are the twofold cover of that group, and the multiplicativity of the norm is what preserves the interval.</p>
-<p><strong>The action.</strong> A unit element acts as the two-sided Hermitian pair $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, and the operators so obtained are exactly the transformations of $\mathrm{SO}^{+}(1,3)$.</p>
-<p><strong>The decomposition.</strong> A unit element is a boost factor times a rotation factor, $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with the two exponentials above, and under the pair those two factors are the boost and the rotation of the frame.</p>
+<p>The group. The restricted Lorentz group is $\mathrm{SO}^{+}(1,3)$, the identity component of the set of linear maps with $\Lambda^{\mathsf T}\eta\Lambda=\eta$: six parameters, three boosts and three rotations.</p>
+<p>The products. Every element is a boost times a rotation, uniquely, so the two families generate the group; but they are not a pair of subgroups, since only the rotations close.</p>
+<p>The algebra. The unit biquaternions, $N(\tilde U)=1$, are the twofold cover of that group, and the multiplicativity of the norm is what preserves the interval.</p>
+<p>The action. A unit element acts as the two-sided Hermitian pair $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$, and the operators so obtained are exactly the transformations of $\mathrm{SO}^{+}(1,3)$.</p>
+<p>The decomposition. A unit element is a boost factor times a rotation factor, $\tilde U=\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with the two exponentials above, and under the pair those two factors are the boost and the rotation of the frame.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>S. Weinberg, <em>The Quantum Theory of Fields</em>, vol. 1, chapter 2, for the group and its algebra.</li>
