@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Meaning of $\mathrm{SU}(4)$ in the Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The question. The two companion notes stop one rung short of the group they both name. The Meaning of in the Endomorphisms of the Biquaternion Algebra…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-meaning-of-math0-in-the-endomorphisms-of-the-biquaternion-algebra"><strong>The Meaning of $\mathrm{SU}(4)$ in the Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The two companion notes stop one rung short of the group they both name. <em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em> builds the group inside the algebra and counts the rungs $8\to4\to3$. <em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em> builds it in the corner of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and closes with $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, $\mathrm{SU}(4)/\mathrm{SU}(3)\cong S^{7}$, $\mathrm{SU}(4)/S(\mathrm{U}(3)\times\mathrm{U}(1))\cong\mathbb{CP}^{3}$. <em>The Meaning of $\mathrm{U}(3)$</em> widens that corner by one dimension. All three take $\mathrm{SU}(4)$ as given — dimension fifteen, host of the stabiliser — and none of them says what it is. This note does.</p>
+<p><strong>The answer in one line.</strong> $\mathrm{SU}(4)$ is neither an element of the algebra nor a corner of the endomorphisms: it is the <strong>whole group of the carrier</strong>.</p>
+<p>$$
+\boxed{\;
+\mathfrak{su}(4)=\bigl\{X\in\operatorname{End}_{\mathbb{C}}(\mathbb{B}):\;X^{\dagger}=-X,\;\operatorname{tr}X=0\bigr\},
+\qquad
+\dim_{\mathbb{R}}=15,
+\qquad
+\mathfrak{su}(4)=\mathfrak{su}(3)\oplus\mathbb{R}\,iD\oplus\mathfrak{m}
+\;}
+$$</p>
+<p>with $D=\operatorname{diag}(-3,1,1,1)$ and $\mathfrak{m}$ the off-diagonal six, so that</p>
+<p>$$
+15=8+1+6 .
+$$</p>
+<p>The group is $\mathrm{SU}(4)=\{M:M^{\dagger}M=\mathrm I_4,\ \det M=1\}$ in the same frame, and the two subgroups of the companions are the two stabilisers of the unit: $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$ of the vector, and the nine-dimensional $\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathbb{R}\,iD$ of the complex line $\mathbb{C}e_t$.</p>
+<p><strong>The three addresses, and why the third is different.</strong> The ladder is a ladder of <em>locations</em>, not of sizes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>where it lives</th>
+<th>supplied by</th>
+<th>$\dim_{\mathbb{R}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(2)$</td>
+<td>in the algebra, $\mathbb{H}\cap\mathrm{U}(2)$</td>
+<td>an element of $\mathbb{B}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)$</td>
+<td>in a corner of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>the stabiliser of a vector</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>the carrier itself</td>
+<td>$15$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two are built from the algebra's own product. The third is not built from anything: it is the unitary group of the four-dimensional complex vector space on which the algebra happens to act, and every property it has is a property of that space. This is why it is the one group of the three whose defining conditions — anti-Hermitian, traceless — mention no element of $\mathbb{B}$ at all.</p>
+<p><strong>What is claimed.</strong> That the fifteen dimensions split canonically into the three of the rotors, the five of the corner's traceless symmetric part, the six that mix the unit line with the vector part, and the one diagonal phase; that each of the fifteen is a generator of length at most three in the Conway words, and that six of them are single words; that the six off-diagonal ones are the quarter-turns of the three planes through $e_t$; and that the diagonal one exponentiates exactly onto the centre $\mathbb{Z}_4$. Every number below is verified numerically and the table at the end records the residuals.</p>
+<p><strong>What is not claimed.</strong> That $\mathrm{SU}(4)$ is a symmetry of the multiplication. It is not: $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ is six real dimensions and meets $\mathrm{SU}(4)$ in the three of $\mathfrak{so}(3)$. Nor that it is the colour group of Pati–Salam, which has the same dimension, the same name and a different carrier. §<em>The Boundary</em> states both.</p>
+<h2 id="the-carrier-the-six-words-and-the-condition">The Carrier, the Six Words, and the Condition</h2>
+<p><strong>The carrier.</strong> $\mathbb{B}$ is four complex dimensions with basis $e_t,\vec e_x,\vec e_y,\vec e_z$, $\vec e_x\vec e_y=\vec e_z$ cyclically and $\vec e_k^{2}=-e_t$. An operator is a sum of Conway words,
+$$
+M=\sum_{\mu\nu}c_{\mu\nu}\,e_\mu[\,]e_\nu,\qquad e_\mu[\,]e_\nu(\tilde X)=e_\mu\tilde X e_\nu ,
+$$
+the sixteen words are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, and the <strong>length</strong> is $\ell(M)=\operatorname{rank}c(M)$, with Conway's bound $\ell\le4$. The Hermitian form is $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})$, and in the coefficient (axis-free) frame its adjoint $\dagger$ is the conjugate transpose: this last point is the whole reason the article is written in this frame, and §<em>What the Frame Does for the Group</em> says so.</p>
+<p><strong>The group, as a condition on the display.</strong> With the dagger fixed,
+$$
+\mathfrak{su}(4)=\{X:X^{\dagger}=-X,\ \operatorname{tr}X=0\},\qquad
+\mathrm{SU}(4)=\mathrm{U}(\mathbb{B})\cap\mathrm{SL}_{4}(\mathbb{C}),
+$$
+real dimension $15$. The count is the count of anti-Hermitian $4\times4$ matrices less the trace: $16-1=15$. The Killing form is $K(X,Y)=8\operatorname{tr}(XY)$, negative definite, of inertia $(0,15)$; the algebra is simple, of rank $3$, with a zero centre and twelve roots; and the group is $\mathrm{SU}(4)\cong\mathrm{Spin}(6)$, simply connected, with centre $\mathbb{Z}_4$ and Weyl group $S_4$. None of that is special to the algebra, and all of it is used below.</p>
+<p><strong>Exactly six of the sixteen words are in the group.</strong> A word $e_\mu[\,]e_\nu$ has trace $4\mathrm{Sc}(e_\mu)\mathrm{Sc}(e_\nu)$, so among the sixteen only $e_t[\,]e_t$ has nonzero trace, namely $4$. A word is anti-Hermitian in this frame exactly when the two indices do not both lie among $x,y,z$. The two conditions together leave six:</p>
+<p>$$
+e_t[\,]e_x,\;e_t[\,]e_y,\;e_t[\,]e_z,\;e_x[\,]e_t,\;e_y[\,]e_t,\;e_z[\,]e_t ,
+\qquad\text{that is}\qquad L_{\vec e_x},L_{\vec e_y},L_{\vec e_z},R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}.
+$$</p>
+<p>The ten that are not:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>words</th>
+<th>count</th>
+<th>which condition fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t[\,]e_t=\mathrm I_4$</td>
+<td>$1$</td>
+<td>tracelessness, $\operatorname{tr}=4$</td>
+</tr>
+<tr>
+<td>$e_j[\,]e_k$, $j,k\in\{x,y,z\}$</td>
+<td>$9$</td>
+<td>anti-Hermiticity</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the six words of $\mathfrak{su}(4)$ are precisely the two regular families at the three <strong>pure</strong> units, and the scalar unit contributes the identity, which the trace deletes. That is the sharpest entry-level description of the group: <strong>six of its generators are single words, eight more are sums of two words, and the last is the three-word diagonal.</strong></p>
+<p><strong>The companions, re-read as subspaces.</strong> $\mathrm{SU}(3)$ is the stabiliser of the vector $e_t$: the eight elements that kill $e_t$ and preserve $B_V=\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)$. $\mathrm{U}(3)$ is the stabiliser of the line $\mathbb{C}e_t$: the nine that preserve the line without killing the vector. $\mathrm{SU}(2)$, in its left copy, is $L(\mathfrak{k})=\mathrm{span}\{L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}\}$, three of the six words above. So all three groups are already inside $\mathrm{SU}(4)$, and the question of this note is what the ambient space adds around them.</p>
+<h2 id="the-two-conditions-in-operator-language">The Two Conditions, in Operator Language</h2>
+<p><strong>Anti-Hermitian is "the one-parameter group is unitary".</strong> $X^\dagger=-X$ says that $\exp(tX)$ preserves the norm $\langle\tilde Q\rangle_{*}=\sum_\mu|Q_\mu|^{2}$ of the carrier for real $t$, equivalently that the spectrum of $X$ is purely imaginary. The adjoint of a word is obtained from the antipode $e_t^{*}=e_t$, $e_k^{*}=-\vec e_k$, which is $\mathbb{C}$-linear here, so</p>
+<p>$$
+\bigl(e_\mu[\,]e_\nu\bigr)^{\dagger}=e_\mu^{*}[\,]e_\nu^{*}=s_\mu s_\nu\,e_\mu[\,]e_\nu,\qquad s=(1,-1,-1,-1),
+$$</p>
+<p>and for a general element $M=\sum c_{\mu\nu}e_\mu[\,]e_\nu$,</p>
+<p>$$
+M^{\dagger}=-M\quad\Longleftrightarrow\quad c_{\mu\nu}=-\,s_\mu s_\nu\,\overline{c_{\mu\nu}} .
+$$</p>
+<p>So the <strong>Conway coefficient</strong> $c_{\mu\nu}$ must be purely imaginary on the two diagonal blocks, where $s_\mu s_\nu=+1$, and real on the two off-diagonal blocks, where $s_\mu s_\nu=-1$. This is a condition on the coefficient array and not on the matrix entries — the two differ by the frame — and it is exact only here. Applied to a word, it is the criterion of the previous section: exactly one index must be $t$.</p>
+<p><strong>Traceless is "the one-parameter group has determinant one".</strong> $\operatorname{tr}X=0$ is $\det\exp(tX)=1$: the circle lands in $\mathrm{SU}(4)$ and not merely in $\mathrm{U}(4)$. By the trace functional, $\operatorname{tr}M=4c_{tt}(M)$, so the condition deletes exactly the unit word and nothing else. On the corner the same condition reads $\operatorname{tr}A=0$ on the $3\times3$ block, and the $\mathrm{SU}(3)$ note has already shown that this is what removes the ninth direction of the stabiliser of the line.</p>
+<p><strong>What the pair leaves.</strong> Anti-Hermitian with no unit word: six single words plus nine composite elements. That is the whole of $\mathfrak{su}(4)$, and the sections that follow take the nine apart.</p>
+<h2 id="the-two-splits-math103-and-math104">The Two Splits: $15=8+7$ and $15=9+6$</h2>
+<p><strong>The block form.</strong> Write the carrier as $\mathbb{C}e_t\oplus B_V$ and an operator as a block matrix with respect to that split:
+$$
+X=\begin{pmatrix}\alpha & -\bar w^{\mathsf T}\\ w & A\end{pmatrix},
+\qquad
+\alpha\in\mathbb{C},\quad w\in\mathbb{C}^{3},\quad A\in M_3(\mathbb{C}),
+$$
+where anti-Hermiticity means $\alpha$ purely imaginary, $A$ anti-Hermitian, and the two off-diagonal blocks conjugate transposes of one another. The real counts are $1+6+9=16$ for $\mathfrak u(4)$, and the trace condition $\alpha+\operatorname{tr}A=0$ removes one:</p>
+<p>$$
+\mathfrak{su}(4):\quad 1+6+9-1 = 15 .
+$$</p>
+<p><strong>The split at a vector.</strong> Fixing the vector $e_t$ — that is, requiring $w=0$ and $\alpha=0$ — leaves $\{A:A^{\dagger}=-A,\ \operatorname{tr}A=0\}$, which is $\mathfrak{su}(3)$, dimension $8$. The complement is seven-dimensional, $6+1$, and it is not a subalgebra:
+$$
+15=8+7,\qquad \mathrm{SU}(4)/\mathrm{SU}(3)\cong S^{7},\qquad 7=6+1 .
+$$
+This is the split the $\mathrm{SU}(3)$ note uses, and the seven is the odd sphere on which the unit vector moves.</p>
+<p><strong>The split at a line, which is the useful one.</strong> Fixing the line $\mathbb{C}e_t$ — that is, requiring only $w=0$ — leaves the block diagonal part with the trace condition, dimension $1+9-1=9$. Call it $\mathfrak{h}$; it is the Lie algebra of $S(\mathrm{U}(3)\times\mathrm{U}(1))$, isomorphic to $\mathfrak u(3)$, and the complement is the off-diagonal six:
+$$
+\mathfrak{su}(4)=\mathfrak h\oplus\mathfrak m,\qquad 15=9+6,\qquad
+\mathfrak h=\Bigl\{\begin{pmatrix}\alpha&0\\0&A\end{pmatrix}:\alpha+\operatorname{tr}A=0\Bigr\}\cong\mathfrak u(3),\qquad
+\mathfrak m=\Bigl\{\begin{pmatrix}0&-\bar w^{\mathsf T}\\ w&0\end{pmatrix}\Bigr\}\cong\mathbb{C}^{3}_{\mathbb{R}} .
+$$
+The quotient is $\mathrm{SU}(4)/S(\mathrm{U}(3)\times\mathrm{U}(1))\cong\mathbb{CP}^{3}$, of real dimension six, and $\mathfrak m$ is its tangent space at the line $\mathbb{C}e_t$.</p>
+<p><strong>The two splits are different, and both are correct.</strong> The $8+7$ split stabilises a <em>point</em> of the sphere of unit vectors; the $9+6$ split stabilises a <em>line</em>. The seven of the first is the six of the second plus the diagonal direction, and the diagonal direction is the fibre of the bundle $S^{7}\to\mathbb{CP}^{3}$ — it changes the phase of $e_t$ and nothing else. Confusing the two is the standard error in this subject: "the complement of $\mathrm{SU}(3)$" has dimension seven, and "the homogeneous space $\mathbb{CP}^{3}$" has dimension six, and the difference is exactly the phase of $e_t$.</p>
+<p><strong>The involution that produces the second split.</strong> On $\mathfrak{su}(4)$,
+$$
+\theta(X)=DXD,\qquad D=\operatorname{diag}(1,-1,-1,-1),
+$$
+is an involution: $D$ is real, orthogonal, of $D^{2}=\mathrm I_4$, and conjugation by it preserves anti-Hermiticity and the trace. Its eigenspaces are
+$$
+\mathfrak h=\{X:\theta X=X\}=\{\text{block diagonal}\},\qquad
+\mathfrak m=\{X:\theta X=-X\}=\{\text{off diagonal}\},
+$$
+of dimensions $9$ and $6$, and because $\theta$ is an automorphism of the bracket,</p>
+<p>$$
+[\mathfrak h,\mathfrak h]\subseteq\mathfrak h,\qquad [\mathfrak h,\mathfrak m]\subseteq\mathfrak m,\qquad [\mathfrak m,\mathfrak m]=\mathfrak h .
+$$</p>
+<p>The pair $(\mathfrak h,\mathfrak m)$ is a <strong>symmetric pair</strong>, and the last inclusion is exact: the brackets of the six span all nine of $\mathfrak h$. This single fact organises everything below, and it also explains a failure recorded in the $\mathrm{SU}(2)$ note.</p>
+<p><strong>What $D$ is.</strong> The matrix $D$ is the array, in the coefficient frame, of the quaternion conjugation $\natural$ — the map that fixes $e_t$ and negates the three vector units. So $\theta$ is the linear involution on operators induced by the conjugation of the algebra, and the splitting $9+6$ is the splitting of an operator into the part that is even and the part that is odd under it. §<em>What the Frame Does for the Group</em> returns to this.</p>
+<h2 id="the-diagonal-one-what-tracelessness-costs">The Diagonal One: What Tracelessness Costs</h2>
+<p><strong>The direction.</strong> The block diagonal part of $\mathfrak{su}(4)$ is spanned, modulo its eight traceless-corner directions, by one element. In the coefficient frame it is the sum of the three axis involutions:</p>
+<p>$$
+iD=i\operatorname{diag}(-3,1,1,1)=i\bigl(E_x+E_y+E_z\bigr),\qquad E_a=\operatorname{diag}(-1,-1,1,1)\ \text{and its cyclic images},
+$$</p>
+<p>of trace $i(-3+1+1+1)=0$, central in $\mathfrak h$, of length $3$: three words, $E_x,E_y,E_z$, and no more is needed because the unit word cancels between the $-3$ and the three $+1$.</p>
+<p><strong>Three words, not four.</strong> The $\mathrm{U}(3)$ note spends four words on the same diagonal direction, $iP_V=i\operatorname{diag}(0,1,1,1)=\tfrac{i}{4}(3E_t+E_x+E_y+E_z)$. The fourth word is the price of killing $e_t$, which that group demands. $\mathrm{SU}(4)$ demands only tracelessness, and the trace of $iP_V$ is $3i\neq0$; removing it by adding $-3iP_t$ subtracts the unit word exactly:</p>
+<p>$$
+iD=iP_V-3iP_t,\qquad P_t=\operatorname{diag}(1,0,0,0),\qquad
+\tfrac{3}{4}-\tfrac{3}{4}=0 .
+$$</p>
+<p>So the same physical direction costs four words in the corner and three in the ambient group, and the difference is a single algebraic identity: in $\mathrm{SU}(4)$ the unit and the vector part are on the same footing, and in the corner they are not.</p>
+<p><strong>It exponentiates onto the centre.</strong> This is the one statement about $iD$ that has no counterpart in the corner:</p>
+<p>$$
+\exp(\theta\,iD)=\operatorname{diag}\bigl(e^{-3i\theta},e^{i\theta},e^{i\theta},e^{i\theta}\bigr),\qquad \det=1,
+\qquad
+\exp\bigl(\tfrac{\pi}{2}iD\bigr)=i\,\mathrm I_4,\qquad
+\exp(\pi\,iD)=-\mathrm I_4 .
+$$</p>
+<p>The determinant is $e^{-3i\theta}e^{3i\theta}=1$ at every $\theta$ — the factor three and the three vector directions cancel — so the whole circle sits in $\mathrm{SU}(4)$; and at $\theta=\pi/2$ it reaches $i\mathrm I_4$, the generator of the centre $\mathbb{Z}_4$, and at $\theta=\pi$ its square. <strong>The one diagonal dimension of the Lie algebra is, at the level of the group, the centre.</strong> The four elements $\{\mathrm I,i\mathrm I,-\mathrm I,-i\mathrm I\}$ are the image of the closed circle $\exp(\mathbb{R}\,iD)$, and no other direction of the algebra does this.</p>
+<p><strong>What it is not.</strong> It is not a $\mathfrak u(1)$ summand in the sense of the $\mathrm{U}(3)$ note. There, $\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathbb{R}\,iP_V$ is a direct sum, $iP_V$ is central, and the circle it generates sits outside $\mathrm{SU}(3)$; here the circle is inside $\mathrm{SU}(4)$, it lies wholly in $S(\mathrm U(3)\times\mathrm U(1))$, and it meets $\mathrm{SU}(3)$ in the three elements</p>
+<p>$$
+\exp\bigl(\tfrac{2\pi}{3}iD\bigr)=\operatorname{diag}(1,\omega,\omega,\omega),\qquad \omega=e^{2\pi i/3},
+$$</p>
+<p>and their powers — the copy of $\mathbb{Z}_3$ that the $\mathrm{U}(3)$ note already meets. The two statements have the same shape — one dimension, diagonal, central, a phase — and opposite bookkeeping, because $\mathrm{SU}(4)$ is the group on the other side of the wall.</p>
+<h2 id="the-off-diagonal-six">The Off-Diagonal Six</h2>
+<p><strong>The two families, one per axis.</strong> For each axis $a\in\{x,y,z\}$, let $(a,b,c)$ be cyclic and put</p>
+<p>$$
+M_a=\tfrac12\bigl(L_{\vec e_a}+R_{\vec e_a}\bigr)=\tfrac12\bigl(e_a[\,]e_t+e_t[\,]e_a\bigr),
+\qquad
+iN_a=\tfrac{i}{2}\bigl(e_b[\,]e_c-e_c[\,]e_b\bigr)=\tfrac{i}{2}\bigl(L_{\vec e_b}R_{\vec e_c}-L_{\vec e_c}R_{\vec e_b}\bigr).
+$$</p>
+<p>Each is two words, so each has $\ell=2$; each is anti-Hermitian and traceless; and each satisfies $\theta=-1$, so the six span $\mathfrak m$, verified: they are independent and six-dimensional.</p>
+<p><strong>What they are, entrywise.</strong> On the plane $\Pi_a=\mathbb{C}e_t\oplus\mathbb{C}\vec e_a$ and zero on its complement,</p>
+<p>$$
+M_a=\begin{pmatrix}0&-1\\1&0\end{pmatrix}_{\Pi_a},
+\qquad
+iN_a=\begin{pmatrix}0&i\\i&0\end{pmatrix}_{\Pi_a},
+\qquad
+M_a^{2}=(iN_a)^{2}=-\,P_{\Pi_a},
+$$</p>
+<p>with $P_{\Pi_a}$ the projector onto the plane. So $M_a$ is the real quarter-turn of the plane through the unit and the $a$-th unit, and $iN_a$ is the imaginary one: two different complex structures on the same real two-plane, and the reason the off-diagonal six is six and not three.</p>
+<p><strong>Their exponentials are the axis involutions.</strong></p>
+<p>$$
+\exp(\theta M_a)=\cos\theta\,\mathrm I_4+\sin\theta\,M_a,
+\qquad
+\exp(\pi M_a)=E_a,\qquad
+\exp(\pi\,iN_a)=E_a,\qquad
+\exp(2\pi M_a)=\exp(2\pi\,iN_a)=\mathrm I_4,
+$$</p>
+<p>the first identity on $\Pi_a$ and with the identity on the complement. Both generators are half-turns at $\theta=\pi$, both give the <em>same</em> element $E_a$, and both circles return to the identity at $2\pi$ — no double cover here, because the eigenvalues of both are $\pm i,0,0$, purely imaginary. So each axis involution of the corner lies on two different circles of the ambient group, one real and one imaginary, and the two circles meet at $\mathrm I_4$ and at $E_a$.</p>
+<p><strong>The brackets, and the reason the plus graph failed.</strong> With $(a,b,c)$ cyclic,</p>
+<p>$$
+[M_a,M_b]=\tfrac12\mathrm{ad}_{\vec e_c},
+\qquad
+[iN_a,iN_b]=\tfrac12\mathrm{ad}_{\vec e_c},
+\qquad
+[M_a,iN_b]=-\tfrac{i}{2}\bigl(\text{symmetric real on }\Pi_{ab}\bigr),
+\qquad
+[M_a,iN_a]=i\bigl(E_b+E_c\bigr),
+$$</p>
+<p>where $\Pi_{ab}=\mathrm{span}_{\mathbb{C}}(\vec e_a,\vec e_b)$ is the plane of the two vector units that appear. Every right-hand side is in $\mathfrak h$: the first two in $\mathfrak k=\mathrm{span}\{\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y},\mathrm{ad}_{\vec e_z}\}$, the third in $\mathfrak p$, the fourth in the diagonal. That is the inclusion $[\mathfrak m,\mathfrak m]=\mathfrak h$ of the previous section, in coordinates.</p>
+<p>This is also the exact reason the "plus graph" of the $\mathrm{SU}(2)$ note does not close. That note observes that $L_{\vec e_a}+R_{\vec e_a}$, which is $2M_a$, is not a Lie subalgebra of $\mathfrak{su}(4)$; the bracket of two of them lands in the rotors. The observation is now a theorem: the combinations $L+R$ at the three pure units span $\mathfrak m$, $\mathfrak m$ is the $(-1)$-eigenspace of an involutive automorphism, and the bracket of two odd elements is always even. The SU(2) note reads this as an obstruction to a second $\mathfrak{su}(2)$; it is better read as the second split of $\mathfrak{su}(4)$, and the second $\mathfrak{su}(2)$ does exist — in $\mathfrak h$, as $\mathfrak k$.</p>
+<p><strong>The six single words are graphs across the split.</strong> Combining the two sections,</p>
+<p>$$
+L_{\vec e_a}=\tfrac12\mathrm{ad}_{\vec e_a}+M_a,
+\qquad
+R_{\vec e_a}=-\tfrac12\mathrm{ad}_{\vec e_a}+M_a,
+\qquad
+L_{\vec e_a}-R_{\vec e_a}=\mathrm{ad}_{\vec e_a},
+\qquad
+L_{\vec e_a}+R_{\vec e_a}=2M_a .
+$$</p>
+<p>So the six words that are in the group straddle the two summands: each is half of an honest rotation plus a full quarter-turn of one plane, the difference of the two at the same axis is the rotation, and the sum is twice the quarter-turn. <strong>No single word lies in $\mathfrak m$, and no single word lies in $\mathfrak h$</strong>; the minimum length on $\mathfrak m$ is therefore two, attained by the six generators above.</p>
+<h2 id="the-ladder-math241">The Ladder $3+5+6+1$</h2>
+<p><strong>The four rungs.</strong> Every dimension of $\mathfrak{su}(4)$ belongs to exactly one of four blocks, and each block has a geometric name:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>$\dim$</th>
+<th>generators</th>
+<th>what it does</th>
+<th>length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak k$</td>
+<td>$3$</td>
+<td>$\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y},\mathrm{ad}_{\vec e_z}$</td>
+<td>rotates $B_V$; the algebra's own derivations</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathfrak p$</td>
+<td>$5$</td>
+<td>$i(E_{ab}+E_{ba})$, $h_a$</td>
+<td>stretches $B_V$ symmetrically; quadrupoles</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>$6$</td>
+<td>$M_a$, $iN_a$</td>
+<td>mixes the unit line with $B_V$; the $\mathbb{CP}^{3}$ directions</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}\,iD$</td>
+<td>$1$</td>
+<td>$iD$</td>
+<td>the relative phase of the unit and the vector part</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and $3+5+6+1=15$. The first two together are $\mathfrak{su}(3)$, the first alone is $\mathfrak{so}(3)=\mathrm{Lie}\operatorname{Aut}$, and the last two are what the ambient group adds to the corner.</p>
+<p><strong>The group chain, with what each step adds.</strong></p>
+<p>$$
+\mathrm{SO}(3)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4),
+\qquad
+3\subset8\subset15,
+\qquad
+8=3+5,\quad 15=8+(1+6).
+$$</p>
+<p>$\mathrm{SO}(3)$ to $\mathrm{SU}(3)$ adds the five quadrupoles. $\mathrm{SU}(3)$ to $\mathrm{SU}(4)$ adds the seven of the $S^{7}$ quotient, and those seven split as six plus one: the six that move the vector inside the sphere, and the one that only changes its phase. And alongside, in the other direction, $\mathrm{SU}(2)$'s left copy is the three of $\mathfrak k$ read as words.</p>
+<p><strong>The other chain.</strong> $\mathfrak{so}(4)\subset\mathfrak{su}(4)$ is six-dimensional and is exactly $L(\mathfrak k)\oplus R(\mathfrak k)$: the two sides at the three pure units, with real coefficients. So the six single words of the group are the six dimensions of $\mathfrak{so}(4)=\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, and $\mathrm{SU}(2)\times\mathrm{SU}(2)\subset\mathrm{SU}(4)$ is the two-sided rotor group of the corpus, sitting inside the carrier's group at length one.</p>
+<h2 id="length-in-math281">Length in $\mathrm{SU}(4)$</h2>
+<p><strong>The census.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>elements</th>
+<th>count</th>
+<th>length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the six words $L_{\vec e_a},R_{\vec e_a}$</td>
+<td>$6$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\vec e_a}$; $h_a$ (one relation); $S_{ab}$</td>
+<td>$8$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$M_a$, $iN_a$</td>
+<td>$6$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>$1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>generic element</td>
+<td>—</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The floor is one and it is attained, which is what distinguishes $\mathfrak{su}(4)$ from $\mathfrak{su}(3)$: there the floor is two, because no word kills $e_t$ and has the required rank. Here nothing kills $e_t$, and six words pass both conditions directly.</p>
+<p><strong>The ceiling is the Conway bound.</strong> A random element of $\mathfrak{su}(4)$ has $\ell=4$: on a hundred random draws every length was exactly four, and the same on a hundred random draws inside $\mathfrak m$ and inside $\mathfrak h$ separately. So a basis of short words spans a space of long elements, exactly as in the corner, and the ambient group adds no new phenomenon — it inherits the ceiling.</p>
+<p><strong>Length is not additive, and the three-word diagonal is the example.</strong> $iD$ is the sum of three length-one elements and has length three, but $iD=iP_V-3iP_t$ is a difference of a four-word element and a one-word element; a reader who chooses the wrong decomposition pays four. The floor of a <em>space</em> is a statement about the space; the length of an <em>element</em> depends on the element.</p>
+<h2 id="the-centre-the-weyl-group-and-the-four-coefficients">The Centre, the Weyl Group, and the Four Coefficients</h2>
+<p><strong>The centre.</strong> $Z(\mathrm{SU}(4))=\{i^{k}\mathrm I_4\}=\mathbb{Z}_4$, and §<em>The Diagonal One</em> has already shown that the whole of it is the image of one circle of the algebra, $\exp(\mathbb{R}\,iD)$. The two elements of order two are $\pm\mathrm I_4$, and $-\mathrm I_4$ is the value at $\theta=\pi$ of that one circle.</p>
+<p><strong>The Weyl group.</strong> $W(\mathrm{SU}(4))=S_4$ permutes the four coefficients $Q_t,Q_x,Q_y,Q_z$ — that is, the four coordinate axes of the carrier, which in the axis-free frame are $e_t,\vec e_x,\vec e_y,\vec e_z$. The permutation matrices are unitary, so all twenty-four are in $\mathrm{SU}(4)$ after a sign correction, and they act on the algebra of operators by conjugation.</p>
+<p><strong>Only the cyclic three are algebraic.</strong> The subgroup $S_3\subset S_4$ fixing the index $t$ acts on $x,y,z$; its cyclic part is an automorphism of the quaternion relations, and its transpositions are not — a transposition reverses the orientation and sends $\vec e_x\vec e_y=\vec e_z$ to $\vec e_y\vec e_x=-\vec e_z$. The remaining transpositions, those that move $t$, are not automorphisms of anything: they permute a scalar coefficient with a vector coefficient, an operation with no meaning in the algebra. So of the twenty-four of the Weyl group, three are inner-automorphic, three reverse the orientation, and eighteen mix the unit with the vector part.</p>
+<p><strong>The triple's cyclic symmetry survives.</strong> The order-three element $P$ of the $\mathrm{SU}(3)$ note is in $\mathrm{SU}(4)$ and cycles the three axes; it is one of the three above. Nothing in this note weakens the companion's conclusion: the cyclic symmetry is present, what the corner lacks is a real equal-weight basis of its diagonal, and that lack is a property of $\mathfrak{su}(3)$, not of $\mathrm{SU}(4)$.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>It is not a symmetry of the multiplication.</strong> $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})\cong SO(3,\mathbb{C})$ is of complex dimension three, and as subgroups of $GL_4(\mathbb{C})$,
+$$
+\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cap\mathrm{SU}(4)=\mathrm{SO}(3),\qquad \dim_{\mathbb{R}}=3 .
+$$
+Twelve of the fifteen dimensions of $\mathfrak{su}(4)$ are therefore not derivations. Concretely, the inner derivation $\mathrm{ad}_{\vec Q}=L_{\vec Q}-R_{\vec Q}$ is traceless for every $\tilde Q$, but the map $\tilde Q\mapsto\mathrm{ad}_{\vec Q}$ has a one-dimensional kernel, $\mathbb{C}e_t$, so $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$ is three <strong>complex</strong> dimensions; of these only the real subspace spanned by the three pure units is anti-Hermitian, and that subspace is $\mathfrak k$, three real dimensions. The five quadrupoles, the six off-diagonal and the diagonal are therefore operators without an algebraic meaning.</p>
+<p><strong>$\mathbb{B}$-linear elements are three-dimensional on each side.</strong> $X$ in $\mathfrak{su}(4)$ that is also $\mathbb{B}$-linear is of the form $L_a$ or $R_a$ with $a$ in $\mathfrak k=\mathrm{span}_{\mathbb{R}}\{\vec e_x,\vec e_y,\vec e_z\}$, so
+$$
+\mathfrak{su}(4)\cap\mathbb{B}_L=L(\mathfrak k),\qquad \mathfrak{su}(4)\cap\mathbb{B}_R=R(\mathfrak k),\qquad \dim_{\mathbb{R}}=3\ \text{each},
+$$
+and the two together are the six of $\mathfrak{so}(4)$. So the ambient group contains exactly six dimensions of operator that the algebra can explain, and nine that it cannot.</p>
+<p><strong>It is not $\mathrm{SU}(4)_{c}$.</strong> Pati–Salam unification uses $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, of dimension $15+3+3=21$, with lepton number as the fourth colour, and its $\mathrm{SU}(4)$ acts on a four-dimensional <strong>colour</strong> space with $\mathrm{SU}(3)_{c}\times\mathrm{U}(1)_{B-L}$ inside it. The dimension agrees with the fifteen of this note and nothing else does: the carrier here is $\mathbb{B}$, the four basis vectors are $e_t,\vec e_x,\vec e_y,\vec e_z$, and the subgroup singled out by the algebra is $\mathrm{SU}(3)$ at the unit, not $\mathrm{SU}(3)$ at a colour. An identification of the two would be a claim about physics that this note does not make and the corpus does not support; <em>Grand Unification in the Biquaternion Framework</em> records the failure of that embedding separately.</p>
+<p><strong>What the embedding does buy.</strong> A home for the group at operator level, the two homogeneous spaces, the symmetric pair $(\mathfrak h,\mathfrak m)$, and an exact statement of what the corner's three companions were stabilisers of. It does not buy a derivation of the group from the algebra, and no counting argument can, because fifteen is the dimension of the carrier and the carrier is $\mathbb{C}^{4}$ whatever algebra is put on it.</p>
+<h2 id="what-the-frame-does-for-the-group">What the Frame Does for the Group</h2>
+<p><strong>The dagger is the conjugate transpose, and only here.</strong> In any frame the adjoint of an operator is computed with the Gram matrix of the form; in the coefficient frame that Gram matrix is $\mathrm I_4$, so $\dagger$ is the entrywise conjugate transpose, and $\mathfrak{su}(4)$ is <em>literally</em></p>
+<p>$$
+\mathfrak{su}(4)=\{M\in M_4(\mathbb{C}):M^{\dagger}=-M,\ \operatorname{tr}M=0\}
+$$</p>
+<p>as arrays. In another frame the same algebra reads $M^{\mathsf H}G+GM=0$ with $G=\mathsf C^{\dagger}\mathsf C$, and the condition is no longer a condition on the entries. This is the one place in the corpus where the display of the group and the group agree without translation, and it is a property of the axis-free frame, not of the group.</p>
+<p><strong>$D$ is the array of $\natural$, and $\theta$ is the involution.</strong> The switch of the frame is $D=\operatorname{diag}(1,-1,-1,-1)$, which is simultaneously the Gram matrix of $\beta$, the matrix of the quaternion conjugation, and the matrix of the involution $\theta$. So the entry rule of the axis-free article,
+$$
+R_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=s_\mu s_\nu\,L_{\mathrm{axf}}(\tilde Q)_{\nu\mu},
+\qquad s=(1,-1,-1,-1),
+$$
+and the decomposition of $\mathfrak{su}(4)$ into $\mathfrak h\oplus\mathfrak m$ are the same computation: $s_\mu s_\nu$ is $+1$ exactly on the two diagonal blocks and $-1$ exactly on the two off-diagonal ones, which is the sign of $\theta$ on the corresponding words. The six words of the group are the ones carrying exactly one index $t$; the ten that are not either carry two indices from $x,y,z$ or are the identity.</p>
+<p><strong>The six signed permutations.</strong> Read as arrays, the six words of the group are real antisymmetric signed permutation matrices, and they are the only six of the sixteen with that property — anti-Hermiticity, in a real frame, is antisymmetry. That is a one-line description of $\mathfrak{so}(4)$ inside $M_4(\mathbb{Z})$: the two regular families at the three pure units, six quarter-turn arrays spanning the six of the two-sided rotor algebra.</p>
+<p><strong>The caution.</strong> The three conditions of the corner — anti-Hermitian, traceless, and the block conditions — are exact only inside the image $\mathbb{B}_L$. The conditions of this note are different in kind: anti-Hermiticity and tracelessness are exact on the whole ambient space, and the block conditions are the split of the carrier, not of the algebra. So nothing here needs the caveat that the six-subspace table of the axis-free article carries; the only frame dependence is in which arrays are anti-Hermitian, and that is the dagger.</p>
+<h2 id="verification">Verification</h2>
+<p>All statements were checked numerically on the sixteen Conway words in the coefficient frame, with the displays of the axis-free article, the dagger as the conjugate transpose, and the length as the rank of the $4\times4$ coefficient array.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the sixteen words are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>rank $16$</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(4)$ has real dimension $15$</td>
+<td>rank $15$</td>
+</tr>
+<tr>
+<td>exactly six words are anti-Hermitian and traceless</td>
+<td>$e_t[\,]e_k$, $e_k[\,]e_t$; the other ten fail one condition each</td>
+</tr>
+<tr>
+<td>$\mathrm{I}_4$ is the only word of nonzero trace</td>
+<td>$\operatorname{tr}=4$; the other fifteen $0$</td>
+</tr>
+<tr>
+<td>$W_{\mu\nu}^{\dagger}=s_\mu s_\nu W_{\mu\nu}$</td>
+<td>$16$ of $16$ words</td>
+</tr>
+<tr>
+<td>$M^{\dagger}=-M$ $\Longleftrightarrow$ $c_{\mu\nu}$ imaginary where $s_\mu s_\nu=+1$, real where $-1$</td>
+<td>$0$ violations in $200$ random skew-Hermitian traceless arrays</td>
+</tr>
+<tr>
+<td>$\mathfrak h=\{X:\theta X=X\}$ has dimension $9$, all anti-Hermitian traceless</td>
+<td>$9$; $<10^{-12}$</td>
+</tr>
+<tr>
+<td>$\mathfrak m=\{X:\theta X=-X\}$ has dimension $6$</td>
+<td>$6$; $<10^{-12}$</td>
+</tr>
+<tr>
+<td>$\mathfrak h\oplus\mathfrak m=\mathfrak{su}(4)$</td>
+<td>rank $15$; intersection $0$</td>
+</tr>
+<tr>
+<td>$[\mathfrak h,\mathfrak m]\subseteq\mathfrak m$</td>
+<td>span with $\mathfrak m$ is $6$</td>
+</tr>
+<tr>
+<td>$[\mathfrak m,\mathfrak m]=\mathfrak h$</td>
+<td>span alone $9$; with $\mathfrak h$, $9$</td>
+</tr>
+<tr>
+<td>$iD=i(E_x+E_y+E_z)=i\operatorname{diag}(-3,1,1,1)$, $\operatorname{tr}=0$, $\ell=3$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$iD$ central in $\mathfrak h$</td>
+<td>$\lVert[iD,X]\rVert<10^{-12}$</td>
+</tr>
+<tr>
+<td>$\exp(\tfrac{\pi}{2}iD)=i\mathrm I_4$, $\exp(\pi iD)=-\mathrm I_4$, $\det=1$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$M_a=\tfrac12(L_{\vec e_a}+R_{\vec e_a})$, two words, $\ell=2$, $\theta=-1$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$M_a^{2}=(iN_a)^{2}=-P_{\Pi_a}$; spectrum of both $\pm i,0,0$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$iN_a=\tfrac{i}{2}(e_b[\,]e_c-e_c[\,]e_b)$, two words, $\ell=2$, $\theta=-1$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the six $M_a,iN_a$ are independent and span $\mathfrak m$</td>
+<td>rank $6$</td>
+</tr>
+<tr>
+<td>$\exp(\theta M_a)=\cos\theta\,\mathrm I_4+\sin\theta\,M_a$ on $\Pi_a$; $\exp(\pi M_a)=\exp(\pi\,iN_a)=E_a$; period $2\pi$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$L_{\vec e_a}=\tfrac12\mathrm{ad}_{\vec e_a}+M_a$, $R_{\vec e_a}=-\tfrac12\mathrm{ad}_{\vec e_a}+M_a$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$[M_a,M_b]=[iN_a,iN_b]=\tfrac12\mathrm{ad}_{\vec e_c}$, cyclic</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$[M_a,iN_b]=-\tfrac{i}{2}$(symmetric real on $\Pi_{ab}$), $[M_a,iN_a]=i(E_b+E_c)$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\vec e_a}$ has spectrum $\pm2i,0,0$ and display $2J$ on the complementary plane</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\mathfrak k=\mathrm{span}\{\mathrm{ad}_{\vec e_a}\}$ has dimension $3$ and is $\mathrm{Lie}\operatorname{Aut}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4)=\mathfrak{su}(4)\cap\{\text{real antisymmetric}\}$</td>
+<td>$6$</td>
+</tr>
+<tr>
+<td>lengths: six words $1$; $\mathrm{ad},h,S,M,iN$ $2$; $iD$ $3$; generic $4$</td>
+<td>$100$ of $100$ random draws give $4$ in $\mathfrak h$, in $\mathfrak m$ and in $\mathfrak{su}(4)$</td>
+</tr>
+<tr>
+<td>rank, centre and roots of $\mathfrak{su}(4)$</td>
+<td>$3$; $0$; $12$</td>
+</tr>
+<tr>
+<td>Killing form $K(X,Y)=8\operatorname{tr}(XY)$</td>
+<td>inertia $(0,15)$, negative definite</td>
+</tr>
+<tr>
+<td>$\exp$ of a traceless anti-Hermitian element is unitary of determinant one</td>
+<td>$20$ of $20$ random draws</td>
+</tr>
+<tr>
+<td>dimensions of the two quotients</td>
+<td>$15-8=7$ for $S^{7}$; $15-9=6$ for $\mathbb{CP}^{3}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$B_V$</td>
+<td>$\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)=e_t^{\perp}$</td>
+</tr>
+<tr>
+<td>$e_\mu[\,]e_\nu$</td>
+<td>the Conway word $L_{e_\mu}R_{e_\nu}$, $c(M)$, $\ell(M)$ the coefficient array and its rank</td>
+</tr>
+<tr>
+<td>$\dagger$</td>
+<td>the adjoint for $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})$, the conjugate transpose in this frame</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(4)$</td>
+<td>$\{X^\dagger=-X,\ \operatorname{tr}X=0\}$, real dimension $15$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>$\{M^\dagger M=\mathrm I_4,\ \det M=1\}$, the group of the carrier</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the involution $X\mapsto DXD$ of $\mathfrak{su}(4)$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(1,-1,-1,-1)$, the switch, the array of $\natural$, the matrix of $\theta$</td>
+</tr>
+<tr>
+<td>$\mathfrak h$</td>
+<td>the $+1$ eigenspace of $\theta$, block diagonal, dimension $9$, $\cong\mathfrak u(3)$</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>the $-1$ eigenspace of $\theta$, off diagonal, dimension $6$, tangent to $\mathbb{CP}^{3}$</td>
+</tr>
+<tr>
+<td>$\mathfrak k,\mathfrak p$</td>
+<td>$\mathrm{span}\{\mathrm{ad}_{\vec e_a}\}$ and the traceless symmetric part, $3+5=8$</td>
+</tr>
+<tr>
+<td>$E_a$</td>
+<td>the axis involution $L_{\vec e_a}R_{\vec e_a}$, display $\operatorname{diag}(-1,-1,1,1)$ and cyclic images</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>$i(E_x+E_y+E_z)=i\operatorname{diag}(-3,1,1,1)$, the diagonal generator, $\ell=3$</td>
+</tr>
+<tr>
+<td>$M_a$</td>
+<td>$\tfrac12(L_{\vec e_a}+R_{\vec e_a})$, the quarter turn of $\Pi_a$, $M_a^{2}=-P_{\Pi_a}$, $\ell=2$</td>
+</tr>
+<tr>
+<td>$iN_a$</td>
+<td>$\tfrac{i}{2}(e_b[\,]e_c-e_c[\,]e_b)$, the imaginary quarter turn, $(iN_a)^{2}=-P_{\Pi_a}$, $\ell=2$</td>
+</tr>
+<tr>
+<td>$\Pi_a$</td>
+<td>$\mathbb{C}e_t\oplus\mathbb{C}\vec e_a$, the plane of the $a$-th off-diagonal generator</td>
+</tr>
+<tr>
+<td>$P_t,P_V,P_{\Pi_a}$</td>
+<td>the projectors onto $\mathbb{C}e_t$, $B_V$, and $\Pi_a$</td>
+</tr>
+<tr>
+<td>$P$</td>
+<td>the order-three cyclic element of $\mathrm{SU}(3)$ on $x,y,z$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em>: the three addresses of the rotor, $\mathrm{SU}(2)\subset\mathrm{U}(\mathbb{B})$, and the plus graph that does not close.</li>
+<li><em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the corner, the eight two-word generators, the $3+5$ split, and $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$.</li>
+<li><em>The Meaning of $\mathrm{U}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the widened corner, $iP_V$, and the cost of four words.</li>
+<li><em>$M_4(\mathbb{C})$ Axis-Free Representation</em>: the two families, the displays, $D$, and the entry rule $R_{\mu\nu}=s_\mu s_\nu L_{\nu\mu}$.</li>
+<li><em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</em>, <em>The Involution and the Hermitian Structure of $M_3(\mathbb{C})$</em>: the $1+3$ split and the element-level definitions.</li>
+<li><em>Families of Matrix Representations</em>: the change of frame, $\mathsf W_{\mathcal{F}'}=\mathsf C^{\mathsf T}D\mathsf C$, and why the dagger is the conjugate transpose only here.</li>
+<li><em>The Endomorphisms of the Biquaternion Algebra</em>: $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$, three complex dimensions, of which the three real of $\mathfrak k$ are the ones in $\mathfrak{su}(4)$.</li>
+<li><em>The Gluon: An Octet Outside the Biquaternion Algebra</em>, <em>Why the Biquaternion Algebra Reaches $\mathrm{SU}(2)$ but Not $\mathrm{SU}(3)$</em>: the ceiling, unchanged by anything in this note.</li>
+<li><em>Grand Unification in the Biquaternion Framework</em>: the Pati–Salam group, its dimension $15$, and why the name does not carry the identification.</li>
+<li><em>$\mathrm{SU}(2)$ Migration</em>: the naming rule — the group keeps its name, and the sentence after the name says what it is in the algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

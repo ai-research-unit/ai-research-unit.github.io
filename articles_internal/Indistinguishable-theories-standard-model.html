@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indistinguishable Theories and the Standard Model — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A working note, not a site article. It fixes what &quot;indistinguishable from the Standard Model&quot; can mean, lists the theories that earn…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="indistinguishable-theories-and-the-standard-model"><strong>Indistinguishable Theories and the Standard Model</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A working note, not a site article. It fixes what "indistinguishable from the Standard Model" can mean, lists the theories that earn the word, and records for each one what it adds, what it predicts and what currently bounds it. The list is short in the strict sense and long in the loose one, and the whole point of the note is to keep the two apart.</p>
+<p><strong>The answer in two lines.</strong> In the strict sense, a theory is indistinguishable when it has the same S-matrix; that set is finite, and every member of it is the Standard Model rewritten. In the loose sense, a theory is indistinguishable when its new effects sit below the present experimental reach; that set is open, and every member of it carries a scale and a date.</p>
+<p><strong>Why the note is needed.</strong> The sentence "model X is indistinguishable from the Standard Model" is used for four different claims, and they have different warrants. One is a theorem, one is a statement about global structure, one is a numerical statement about a cutoff, and one is an excuse. A corpus that mixes them will state a failed prediction as a live hypothesis, or write a live hypothesis off as dead.</p>
+<p><strong>The organising fact.</strong> The Standard Model is the most general renormalisable Lagrangian built from its fields. Every candidate completion is therefore that Lagrangian plus higher-dimension operators.</p>
+<p>$$
+\boxed{\;\mathcal{L}\;=\;\mathcal{L}^{(4)}_{\mathrm{SM}}\;+\;\sum_{d\ge5}\frac{1}{\Lambda^{d-4}}\sum_i c_i\,\mathcal{O}_i^{(d)}\;}
+$$</p>
+<p><strong>Why the fact is not a restatement.</strong> A candidate is not classified by its group, its name or its author. It is classified by the <strong>smallest dimension $d$ at which some $c_i$ is non-zero</strong>, and by the scale $\Lambda$ that suppresses it. Two candidates with the same $d$ have the same experimental footprint at leading order, whatever their internal structure. Two candidates with the same name can sit in different classes, because a model with two parameter choices is two models.</p>
+<p><strong>The one-sentence version.</strong> Indistinguishable means "same S-matrix" or "below reach", and nothing else; the first is decidable and the second is a measured bound that moves.</p>
+<p><strong>How to use it.</strong> §1 fixes the criterion, §2 to §4 give the four classes, §5 is the list with the characteristics of each entry, §6 records the candidates that were called indistinguishable and were then excluded, and §7 states what the corpus may and may not write about any of them.</p>
+<h2 id="1-the-criterion-the-same-s-matrix">1. The Criterion: the Same S-Matrix</h2>
+<p><strong>The criterion.</strong> Two theories are indistinguishable in the strict sense when they assign the same value to every scattering amplitude, at every energy and every angle, including the masses and widths that enter as poles. That is the whole definition, and it is not a slogan: the S-matrix is what an experiment measures.</p>
+<p><strong>Why it is sharp.</strong> By the LSZ reduction the S-matrix is read from the residues of Green functions at the one-particle poles. A change of integration variable in the functional integral moves the Green functions and leaves the residues alone, provided the change is invertible and leaves the asymptotic states in place. That statement is a theorem of the 1961 papers of Kamefuchi, O'Raifeartaigh and Salam and, independently, of Chisholm. It is the reason the strict list is short.</p>
+<p><strong>The theorem, stated once.</strong> A local, invertible field redefinition $\Phi\mapsto\Phi+F(\Phi,\partial\Phi)$ that preserves the symmetries and the asymptotic spectrum leaves the S-matrix invariant. The renormalised Lagrangian changes; the physics does not.</p>
+<p><strong>The three caveats, and each narrows the theorem.</strong></p>
+<ul>
+<li>The theorem assumes a <strong>mass gap</strong>, so that one-particle states are isolated and asymptotic fields exist. In a theory with only massless particles, Haag's theorem and the infraparticle structure of QED make the statement about "the same S-matrix" harder to even state. The Standard Model has both regimes, so the criterion is applied sector by sector.</li>
+<li>The theorem assumes the <strong>same asymptotic spectrum</strong>. A completion that adds an exactly stable particle with non-zero coupling changes the S-matrix at every order, and no rewriting removes it.</li>
+<li>The theorem is <strong>perturbative</strong>. It does not forbid a non-perturbative difference in the vacuum structure, in the spectrum of line operators, or in the $\theta$ periods. Those are the subject of §3.</li>
+</ul>
+<p><strong>What the criterion forbids.</strong> It forbids calling two theories indistinguishable when they differ in a coupling, a mass, a mixing angle, a representation or a particle content. Those are differences in the S-matrix, and they are measurable in principle even when they are not measurable yet.</p>
+<h2 id="2-class-0-the-same-theory-rewritten">2. Class 0: the Same Theory, Rewritten</h2>
+<p><strong>The class.</strong> Every member of this class is the Standard Model written in different letters. No experiment can separate the members, at any energy, and no future experiment can.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rewriting</th>
+<th>Why the S-matrix is untouched</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field redefinition</td>
+<td>the Kamefuchi–O'Raifeartaigh–Salam theorem</td>
+</tr>
+<tr>
+<td>Gauge choice</td>
+<td>Feynman, Landau and unitary gauges are one theory; the $\zeta$ of $R_\zeta$ is a coordinate</td>
+</tr>
+<tr>
+<td>Operator basis</td>
+<td>Fierz rearrangement, integration by parts, the equations of motion, auxiliary-field elimination</td>
+</tr>
+<tr>
+<td>Hypercharge normalisation</td>
+<td>the covariant derivative carries $g_{\mathrm Y}Y$, so $Y\mapsto\lambda Y$ with $g_{\mathrm Y}\mapsto g_{\mathrm Y}/\lambda$ moves a number between a coupling and a charge</td>
+</tr>
+<tr>
+<td>Phase convention</td>
+<td>the CKM and PMNS phases are basis choices up to the invariant $J$</td>
+</tr>
+<tr>
+<td>Higgs parametrisation</td>
+<td>polar and linear forms are one field</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{QCD}}$ shift</td>
+<td>$\theta\mapsto\theta+2\pi n$ is a relabelling; $\theta\ne0$ is not</td>
+</tr>
+<tr>
+<td>Exactly decoupled sector</td>
+<td>a sector with zero coupling appears in no amplitude</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one non-trivial member.</strong> The truncation of the higher-dimension series to $c_i=0$ is a member of this class and is not a rewriting of the Standard Model: it is the Standard Model itself, taken as exact. That is a choice, not a discovery, and §4 shows what it costs.</p>
+<p><strong>What the class is for.</strong> It is the answer to a real confusion. Two papers that write different Lagrangians for the same physics are not two theories, and the corpus should not record them as two. The test is one line: does any amplitude differ, at any order, at any energy? If not, the two are one.</p>
+<h2 id="3-class-1-the-same-s-matrix-a-different-global-structure">3. Class 1: the Same S-Matrix, a Different Global Structure</h2>
+<p><strong>The class.</strong> Theories with the same local physics, the same Feynman rules and the same perturbative amplitudes, and a different global form of the gauge group. No Feynman diagram separates them. Only non-local probes do.</p>
+<p><strong>The group, correctly written.</strong> The Standard Model's gauge group is commonly written as a product. The true group is a quotient,</p>
+<p>$$
+G_{\mathrm{SM}}=\frac{SU(3)\times SU(2)\times \mathrm{U}(1)}{\mathbb{Z}_6}=S\bigl(\mathrm{U}(3)\times \mathrm{U}(2)\bigr),
+$$</p>
+<p>because the $\mathbb{Z}_6$ acts trivially on every field of one generation. The two writings differ in which line operators, monopoles and $\theta$ periods exist, and in nothing else.</p>
+<p><strong>The corpus's own version of the same remark.</strong> The biquaternion framework's compact group is $\mathrm{U}(2)=(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, a quotient of the electroweak pair. <em>The Electroweak Pair in the Biquaternion Framework</em> reads the quotient as the parity lock $q\equiv2j\pmod 2$ on the representation labels. That article and this section make the same structural point at two different groups, and neither is a statement about dynamics.</p>
+<p><strong>What distinguishes the members.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Probe</th>
+<th>What it sees</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Perturbative amplitudes</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td>Line operators, Wilson and 't Hooft loops</td>
+<td>the centre, hence the quotient</td>
+</tr>
+<tr>
+<td>Magnetic monopoles</td>
+<td>which monopoles the group allows</td>
+</tr>
+<tr>
+<td>$\theta$ angle periodicity</td>
+<td>the quotient's instanton number</td>
+</tr>
+<tr>
+<td>Charge quantisation of added states</td>
+<td>the representation lattice</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sharp statement.</strong> The product and the quotient are indistinguishable by any Feynman diagram and distinguishable by a monopole. That is a real, physical difference, and it is the class of difference that "indistinguishable" usually hides.</p>
+<h2 id="4-class-2-below-a-stated-reach">4. Class 2: Below a Stated Reach</h2>
+<p><strong>The class.</strong> Theories whose new states are heavy, and whose effects at accessible energy are powers of $E/\Lambda$. The decoupling theorem of Appelquist and Carazzone makes this quantitative: a heavy field of mass $\Lambda$ leaves corrections of order $(E/\Lambda)^n$ in the light sector, fixed by the dimension of its lowest operator.</p>
+<p><strong>The numbers.</strong> With $E=M_Z=91.19$ GeV,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\Lambda$</th>
+<th>$d=6$</th>
+<th>$d=8$</th>
+<th>$d=10$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$ TeV</td>
+<td>$8.3\times10^{-3}$</td>
+<td>$7\times10^{-5}$</td>
+<td>$6\times10^{-7}$</td>
+</tr>
+<tr>
+<td>$10$ TeV</td>
+<td>$8.3\times10^{-5}$</td>
+<td>$7\times10^{-9}$</td>
+<td>$6\times10^{-13}$</td>
+</tr>
+<tr>
+<td>$100$ TeV</td>
+<td>$8.3\times10^{-7}$</td>
+<td>$7\times10^{-13}$</td>
+<td>$6\times10^{-19}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the table is the whole argument.</strong> "Indistinguishable" at $d=6$ and $\Lambda=100$ TeV means a correction of order $10^{-6}$ to an amplitude. The measurement precision of the electroweak sector is of order $10^{-3}$, so the statement is true today. At $\Lambda=10$ TeV the same correction is $10^{-4}$, which is at the edge of the precision programme, so the statement is true today and is expected to expire.</p>
+<p><strong>The $d=5$ exception, and it is the one that matters.</strong> Every dimension-five operator in the Standard Model field content is the Weinberg operator $LHLH/\Lambda$, which gives neutrino mass. It is the <strong>only irrelevant operator known to be non-zero</strong>, and its coefficient is fixed by the measured neutrino masses, not by a unification scale. That single fact is why the Standard Model is called an effective theory and not a theory.</p>
+<p><strong>The rule of the class.</strong> A class-2 claim is always of the form "below $\Lambda$". A claim without a $\Lambda$ is class 3 in disguise, and §6 shows what that costs.</p>
+<h2 id="5-the-candidates-with-their-characteristics">5. The Candidates, with Their Characteristics</h2>
+<p><strong>How to read the entries.</strong> Each entry gives the group or content, what it adds, what it predicts that the Standard Model does not, the smallest operator it generates, and the current bound. The status scale is the four classes of this note.</p>
+<h3 id="supersymmetry">Supersymmetry</h3>
+<p><strong>Content.</strong> The Poincaré algebra is extended by fermionic generators, and every Standard Model field gets a partner of spin differing by $\tfrac12$.</p>
+<p><strong>What it adds.</strong> A cancellation of the quadratic divergence of the Higgs mass, a dark-matter candidate in $R$-parity conserving models, and a unification of the three couplings at about $10^{16}$ GeV.</p>
+<p><strong>What it predicts.</strong> Gauginos and sfermions at a scale tied to naturalness, a light Higgs near $125$ GeV in the minimal version, and, in the constrained models, a specific pattern of mass hierarchies.</p>
+<p><strong>Smallest operator.</strong> $d=6$ and above: four-fermion contact terms, dipole moments, oblique corrections. No $d=5$ operator with $R$-parity, because lepton number is conserved.</p>
+<p><strong>Bound.</strong> Gluinos above about $2.3$ TeV and stops above about $1.3$ TeV in simplified models. Naturalness prefers them below a TeV. The two statements do not meet.</p>
+<p><strong>Status.</strong> Class 2 with a tension. The minimal version is under pressure; the split versions are safely class 2 and predict nothing accessible.</p>
+<h3 id="grand-unification">Grand unification</h3>
+<p><strong>Content.</strong> A simple group containing $SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y$: $SU(5)$, $SO(10)$, $E_6$, with ranks $4,5,6$ and dimensions $24,45,78$.</p>
+<p><strong>What it adds.</strong> One coupling at one scale, charge quantisation from the weight lattice, and, in $SO(10)$, a right-handed neutrino inside the $\mathbf{16}$.</p>
+<p><strong>What it predicts.</strong> Proton decay, through the $X$ and $Y$ leptoquark bosons. $SU(5)$ gives $\sin^2\theta_W=\tfrac38$ at the unification scale, and the same for any embedding with the same normalisation.</p>
+<p><strong>Smallest operator.</strong> $d=6$, the baryon-number-violating four-fermion operators $qqql$ and $\bar u\bar u\bar d\bar e$.</p>
+<p><strong>Bound.</strong> $p\to e^+\pi^0$ is unobserved, with $\tau/B>2.4\times10^{34}$ years. Minimal $SU(5)$ predicts about $10^{31}$ years.</p>
+<p><strong>Status.</strong> Minimal $SU(5)$ <strong>excluded</strong>. $SO(10)$ and $E_6$ are class 2, with proton decay pushed to a scale the next generation of detectors may reach.</p>
+<h3 id="leftright-symmetry-and-patisalam">Left–right symmetry and Pati–Salam</h3>
+<p><strong>Content.</strong> $SU(3)_c\times SU(2)_L\times SU(2)_R\times \mathrm{U}(1)_{B-L}$, or the Pati–Salam group $SU(4)_c\times SU(2)_L\times SU(2)_R$ of rank $5$ and dimension $21$.</p>
+<p><strong>What it adds.</strong> Parity as a broken symmetry rather than a postulate, a gauged $B-L$, and a right-handed neutrino that is required rather than optional. In Pati–Salam, hypercharge is derived, $\tfrac{Y}{2}=T_{3R}+\tfrac{B-L}{2}$, and charge in thirds follows from tracelessness on the quartet, $3Q(q)+Q(\ell)=0$.</p>
+<p><strong>What it predicts.</strong> A $W_R$, leptoquark gauge bosons, a seesaw neutrino mass, and $\sin^2\theta_W=\tfrac38$ at the unification scale.</p>
+<p><strong>Smallest operator.</strong> $d=6$: four-fermion operators with lepton-flavour violation, and the leptoquark contact terms.</p>
+<p><strong>Bound.</strong> $K_L\to\mu e$ and LHC leptoquark searches push the scale to a few TeV and beyond.</p>
+<p><strong>Status.</strong> Class 2, unconfirmed. The cleanest of the extensions, and the one whose gain is explanatory rather than numerical.</p>
+<h3 id="extra-dimensions">Extra dimensions</h3>
+<p><strong>Content.</strong> $n$ additional spatial dimensions of radius $R$, either flat (Arkani-Hamed–Dimopoulos–Dvali) or warped (Randall–Sundrum), or a large extra dimension felt only by gravity.</p>
+<p><strong>What it adds.</strong> A solution to the hierarchy problem without a light scalar partner, and a graviton that propagates in the bulk.</p>
+<p><strong>What it predicts.</strong> Kaluza–Klein towers with spacing $1/R$, and in the warped case TeV-scale resonances of the graviton and of the gauge fields.</p>
+<p><strong>Smallest operator.</strong> $d=6$ and above, suppressed by $M_*$: contact interactions and graviton exchange.</p>
+<p><strong>Bound.</strong> $M_*$ above a few TeV from LHC contact interactions and from astrophysics.</p>
+<p><strong>Status.</strong> Class 2. The Kaluza–Klein modes are the signal, and none has been seen.</p>
+<h3 id="composite-higgs-and-technicolour">Composite Higgs and technicolour</h3>
+<p><strong>Content.</strong> The Higgs is not elementary but a pseudo-Goldstone boson of a new strong sector, with decay constant $f$.</p>
+<p><strong>What it adds.</strong> A reason for the Higgs mass to be small, in the same way the pion mass is small.</p>
+<p><strong>What it predicts.</strong> Higgs coupling deviations of order $v^2/f^2$, and resonances at $4\pi f$. Technicolour instead predicts no light Higgs at all.</p>
+<p><strong>Smallest operator.</strong> $d=6$: the $\mathcal{O}_{H}$ and $\mathcal{O}_{W}$ operators that shift the Higgs couplings and the oblique parameters.</p>
+<p><strong>Bound.</strong> $f$ above roughly $1$ TeV from Higgs coupling measurements.</p>
+<p><strong>Status.</strong> Class 2. Technicolour is <strong>excluded</strong> in its simplest form by the measured Higgs and by $S$.</p>
+<h3 id="hidden-sectors-dark-photons-axions">Hidden sectors, dark photons, axions</h3>
+<p><strong>Content.</strong> A gauge sector that couples to the Standard Model only through a kinetic mixing $\varepsilon$, through a higher-dimension operator, or gravitationally.</p>
+<p><strong>What it adds.</strong> A dark-matter candidate and, for the axion, a solution to the strong CP problem through a dynamical $\theta$.</p>
+<p><strong>What it predicts.</strong> A dark photon of mass $m$ and mixing $\varepsilon$, or an axion of decay constant $f_a$ and mass $m_a\propto1/f_a$.</p>
+<p><strong>Smallest operator.</strong> $d=6$ for kinetic mixing, $d=5$ for the axion coupling to $G\tilde G$.</p>
+<p><strong>Bound.</strong> $\varepsilon$ below about $10^{-3}$ across the MeV-to-GeV range, and $f_a$ in a window from about $10^{9}$ to $10^{12}$ GeV. The axion window is open.</p>
+<p><strong>Status.</strong> Class 2, and the only entry on this list whose parameter space is being actively swept rather than bounded.</p>
+<h3 id="right-handed-neutrinos-and-the-seesaw">Right-handed neutrinos and the seesaw</h3>
+<p><strong>Content.</strong> A singlet fermion per generation, with a Majorana mass $M_R$.</p>
+<p><strong>What it adds.</strong> Neutrino mass, leptogenesis as a source of the baryon asymmetry, and the $d=5$ operator's microscopic origin.</p>
+<p><strong>What it predicts.</strong> $0\nu\beta\beta$ if the neutrino is Majorana, and lepton-flavour violation in the charged sector.</p>
+<p><strong>Smallest operator.</strong> $d=5$, the Weinberg operator, which is already known to be non-zero.</p>
+<p><strong>Bound.</strong> $M_R$ is unconstrained except by cosmology and by $0\nu\beta\beta$. The type-I seesaw works from the eV to the GUT scale.</p>
+<p><strong>Status.</strong> Class 2, and this is the one entry where the operator is <strong>known</strong> to exist. The seesaw is the default reading of the measured neutrino masses, and no competing reading is excluded.</p>
+<h3 id="vector-like-fermions-and-math130">Vector-like fermions and $Z'$</h3>
+<p><strong>Content.</strong> A fermion whose left and right parts carry the same representation, or an extra abelian gauge factor.</p>
+<p><strong>What it adds.</strong> A solution to the little hierarchy, a dark-matter candidate, and a mixing with the $Z$.</p>
+<p><strong>What it predicts.</strong> A shift in the $S$ and $T$ parameters, and a resonance in the dilepton spectrum.</p>
+<p><strong>Smallest operator.</strong> $d=6$, through mixing with the Standard Model fermions.</p>
+<p><strong>Bound.</strong> Vector-like quarks above about $1$ TeV and $Z'$ above about $4$ TeV in the dilepton channel, model-dependent.</p>
+<p><strong>Status.</strong> Class 2.</p>
+<h2 id="6-the-candidates-that-were-called-indistinguishable-and-then-excluded">6. The Candidates That Were Called Indistinguishable and Then Excluded</h2>
+<p><strong>Why this section exists.</strong> The strongest argument in this note is not the theorem. It is the record. Every entry below was described, in its time, as an extension with no observable consequence at accessible energy. Each made a sharp prediction anyway, and the prediction failed.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th>The claim of the time</th>
+<th>The prediction</th>
+<th>The verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimal $SU(5)$</td>
+<td>one coupling, no accessible signal</td>
+<td>$p\to e^+\pi^0$ at about $10^{31}$ yr</td>
+<td>excluded by Super-Kamiokande</td>
+</tr>
+<tr>
+<td>Minimal spectral-action Standard Model</td>
+<td>the whole model from a spectral triple, no new particles</td>
+<td>$m_H\simeq170$ GeV</td>
+<td>excluded by the $125$ GeV Higgs</td>
+</tr>
+<tr>
+<td>Technicolour</td>
+<td>no elementary scalar, nothing to find</td>
+<td>no light Higgs, large $S$</td>
+<td>excluded by the Higgs and the $S$ bound</td>
+</tr>
+<tr>
+<td>Minimal $SO(10)$ with one Higgs</td>
+<td>the $\mathbf{16}$ fixes everything</td>
+<td>wrong mass relations, no gauge coupling unification</td>
+<td>excluded</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The lesson, stated plainly.</strong> A completion that is indistinguishable in practice is not a completion with no consequences. It is a completion whose consequences are at a scale, and every scale is eventually probed. The word "indistinguishable" describes the experiment, not the theory.</p>
+<p><strong>The corollary for the corpus.</strong> An extension cannot be protected from falsification by calling it unobservable. If it has a prediction, it has a date. If it has no prediction, it is class 3 and should be labelled so.</p>
+<h2 id="7-what-indistinguishable-does-not-mean">7. What "Indistinguishable" Does Not Mean</h2>
+<p><strong>It does not mean equivalent.</strong> Pati–Salam implies the Standard Model below its breaking scale, and the Standard Model does not imply Pati–Salam. The implication runs one way. An embedding is a statement about a larger theory, and a larger theory with the same low-energy limit is not the same theory.</p>
+<p><strong>It does not mean the same number of parameters.</strong> The Standard Model has nineteen parameters without neutrino mass. Every extension adds its own. The exchange is always the same: fewer unexplained numbers, more measured ones. Pati–Salam computes $\sin^2\theta_W=\tfrac38$ at its scale and adds the scale that runs it to the measured value.</p>
+<p><strong>It does not survive gravity.</strong> Every massive state gravitates. Two theories with different particle content have different mass and different gravitational couplings, so they differ in principle at $M_{\mathrm{Pl}}$. The only exception is a sector with exactly zero coupling to everything, including gravity, and that sector is not a theory but a fiction. Gravity is the reason class 0 and class 1 are the only classes that do not expire.</p>
+<p><strong>It does not survive cosmology.</strong> A new light species changes $N_{\mathrm{eff}}$. A new heavy species changes the expansion history. A new coupling changes Big Bang nucleosynthesis. The cosmological probes reach scales no collider reaches, and they are the reason "heavy and decoupled" is a weaker excuse than it sounds.</p>
+<p><strong>It does not mean untested.</strong> It means tested below the stated reach, with a null result. The two are different statements, and the corpus should write the second.</p>
+<h2 id="8-the-ledger-for-the-corpus">8. The Ledger for the Corpus</h2>
+<p><strong>Four labels, and no promotion between them.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Label</th>
+<th>Content</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rewritten</td>
+<td>same S-matrix, different letters</td>
+<td>the hypercharge normalisation</td>
+</tr>
+<tr>
+<td>Same, different global form</td>
+<td>same amplitudes, different line operators</td>
+<td>the $\mathbb{Z}_6$ quotient</td>
+</tr>
+<tr>
+<td>Imported completion</td>
+<td>a specific model with a scale and a footprint</td>
+<td>Pati–Salam, $SO(10)$</td>
+</tr>
+<tr>
+<td>Refused</td>
+<td>no construction exists</td>
+<td>the framework's chiral action</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule for writing about an extension.</strong> State the group, the added content, the predicted signal, the smallest operator, and the current bound. A paragraph that names a model and does not give the bound is a paragraph that will be read as a claim of viability.</p>
+<p><strong>The corpus's own position, in one line.</strong> The framework reaches the algebra $\mathfrak{u}(2)$ and not the group, reproduces no chiral action, no hypercharge value and no scalar, and therefore sits in none of the four classes above: it is a partial reformulation of the gauge sector, not a candidate completion.</p>
+<p><strong>What the note refuses.</strong> It refuses the sentence "the framework is indistinguishable from the Standard Model, therefore it is confirmed". The premise is false in the strict sense and unsupported in the loose one. It also refuses the converse, "the framework predicts nothing, therefore it is empty": the parity lock $q\equiv2j\pmod2$ is a check a completion can fail, and it is the one item of the framework that has a falsifier.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The criterion, in one display.</strong> Two theories are indistinguishable when their S-matrices agree. The Kamefuchi–O'Raifeartaigh–Salam theorem makes that set the field redefinitions of one Lagrangian.</p>
+<p><strong>The classification, in one display.</strong> Every candidate is $\mathcal{L}^{(4)}_{\mathrm{SM}}+\sum_{d\ge5}\Lambda^{4-d}c_i\mathcal{O}_i^{(d)}$, and it is classified by the smallest $d$ with $c_i\ne0$ and by $\Lambda$.</p>
+<p><strong>The four classes.</strong></p>
+<ul>
+<li>Class 0: rewritten, indistinguishable at every energy.</li>
+<li>Class 1: same amplitudes, different global structure; separated by line operators and monopoles, never by a Feynman diagram.</li>
+<li>Class 2: below a stated reach; corrections of order $(E/\Lambda)^{d-4}$, with $8.3\times10^{-5}$ for $d=6$ at $\Lambda=10$ TeV.</li>
+<li>Class 3: no computable prediction; unfalsifiable, and not the same thing as class 2.</li>
+</ul>
+<p><strong>The single non-zero irrelevant operator.</strong> The Weinberg operator, $d=5$, fixed by the measured neutrino masses. It is the reason the Standard Model is an effective theory.</p>
+<p><strong>The refusals.</strong></p>
+<ul>
+<li>"Indistinguishable in practice" is not "no consequences"; minimal $SU(5)$ and the minimal spectral-action model are the record.</li>
+<li>"Same low-energy limit" is not "equivalent"; the implication runs one way.</li>
+<li>"Exactly decoupled" is not available once gravity is included.</li>
+</ul>
+<p><strong>The one-sentence version.</strong> The strict list is finite and consists of rewritings; the loose list is open and every entry carries a scale; and the word should never be used without saying which of the two is meant.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{L}^{(4)}_{\mathrm{SM}}$</td>
+<td>the renormalisable Standard Model Lagrangian</td>
+</tr>
+<tr>
+<td>$\mathcal{O}_i^{(d)}$</td>
+<td>a gauge-invariant operator of dimension $d$</td>
+</tr>
+<tr>
+<td>$c_i$</td>
+<td>its Wilson coefficient</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>the scale of new physics that suppresses it</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>the energy at which the operator is probed</td>
+</tr>
+<tr>
+<td>$G_{\mathrm{SM}}$</td>
+<td>$S(\mathrm{U}(3)\times\mathrm{U}(2))$, the quotient group</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}_6$</td>
+<td>the kernel of the covering of the product</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>kinetic mixing of a dark photon</td>
+</tr>
+<tr>
+<td>$f_a$, $m_a$</td>
+<td>axion decay constant and mass</td>
+</tr>
+<tr>
+<td>$M_R$</td>
+<td>right-handed neutrino Majorana mass</td>
+</tr>
+<tr>
+<td>$f$</td>
+<td>composite-Higgs decay constant</td>
+</tr>
+<tr>
+<td>$q$, $j$</td>
+<td>central charge and spin, in the parity lock $q\equiv2j\pmod2$</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{QCD}}$</td>
+<td>the strong CP angle, periodic in $2\pi$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In this order.</strong> Kamefuchi–O'Raifeartaigh–Salam (1961) for the criterion; Appelquist–Carazzone (1975) for the decoupling numbers; Weinberg (1979) for the effective-Lagrangian framing; Baez–Huerta (2010) for the global form of the group; Tong's line-operator lecture for what the quotient changes; then the review of each candidate for its bound.</p>
+<ul>
+<li>Kamefuchi, O'Raifeartaigh and Salam, "Change of variables and equivalence theorems in quantum field theories", <em>Nuclear Physics</em> <strong>28</strong> (1961) 529.</li>
+<li>J. S. R. Chisholm, "Change of variables in quantum field theories", <em>Nuclear Physics</em> <strong>26</strong> (1961) 469.</li>
+<li>T. Appelquist and J. Carazzone, "Infrared singularities and massive fields", <em>Physical Review D</em> <strong>11</strong> (1975) 2856.</li>
+<li>S. Weinberg, "Phenomenological Lagrangians", <em>Physica</em> <strong>96A</strong> (1979) 327.</li>
+<li>J. C. Baez and J. Huerta, "The algebra of grand unified theories", <em>Bulletin of the AMS</em> <strong>47</strong> (2010) 483, arXiv:0904.1556, for the quotient group and its representations.</li>
+<li>D. Tong, "Line operators in the Standard Model", arXiv:1707.00541, for what the quotient changes and what it does not.</li>
+<li>H. Georgi and S. L. Glashow, "Unity of all elementary-particle forces", <em>Physical Review Letters</em> <strong>32</strong> (1974) 438.</li>
+<li>J. C. Pati and A. Salam, "Lepton number as the fourth colour", <em>Physical Review D</em> <strong>10</strong> (1974) 275.</li>
+<li>A. H. Chamseddine and A. Connes, "Why the Standard Model", arXiv:0706.3688, for the $170$ GeV Higgs prediction and its status.</li>
+<li>A. H. Chamseddine, A. Connes and W. van Suijlekom, "Grand unification in the spectral Pati–Salam model", <em>JHEP</em> <strong>11</strong> (2015) 011, for the repair.</li>
+</ul>
+<p><strong>The traps.</strong> Do not quote "indistinguishable" without a scale, and do not quote a bound without a date. Do not treat the quotient $\mathbb{Z}_6$ as a dynamical statement. And do not read the absence of a signal as evidence for a model: every entry in §6 had the same absence.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

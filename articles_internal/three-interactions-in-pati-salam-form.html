@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Interactions in Pati–Salam Form: A Translation — Biquaternion Universe</title>
+  <meta name="description" content="The question. Can electromagnetism, the weak interaction and the strong interaction be written in the Pati–Salam formalism rather than the Standard Model…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-three-interactions-in-patisalam-form-a-translation"><strong>The Three Interactions in Pati–Salam Form: A Translation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Can electromagnetism, the weak interaction and the strong interaction be written in the Pati–Salam formalism rather than the Standard Model one, and how much of the corpus's language does that recover?</p>
+<p><strong>The answer, in four lines.</strong> Yes, completely, and the translation is not a reinterpretation but a substitution of a group for a group. Every Standard Model object has an address in $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$:</p>
+<p>$$
+\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\ \subset\ \mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R,\qquad 12\ \subset\ 21 .
+$$</p>
+<p>The translation is exact above the Pati–Salam scale and reduces to the Standard Model below it, so nothing measured changes. What changes is the <em>origin</em> of four things the Standard Model imports: the number of colours, the quantisation of charge, the hypercharge assignments, and the cancellation of anomalies. <strong>All four become consequences of one group instead of four independent facts.</strong></p>
+<p><strong>The price, named at the start.</strong> The translation rests on one identification that the corpus has explicitly refused to make: its own $\mathfrak{su}(4)$, the group of the carrier $\mathbb{B}$, is not yet the Pati–Salam $\mathrm{SU}(4)_c$. §1.3 states the refusal, states the one argument that could overturn it, and proceeds conditionally. <strong>Everything after §1.3 is a translation under that declaration, and it is flagged as such.</strong></p>
+<p><strong>What the note delivers.</strong> §2 to §4 translate the three interactions one at a time. §5 gives the couplings. §6 is the dictionary, in one table. §7 shows the anomalies collapsing. §8 is the ledger of what the translation changes in the corpus's own accounting. §9 is what it cannot do.</p>
+<h2 id="1-the-frame-and-the-one-declaration">1. The Frame and the One Declaration</h2>
+<h3 id="11-the-group-and-its-fifteen">1.1 The group and its fifteen</h3>
+<p><strong>The group.</strong></p>
+<p>$$
+G_{PS}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R,\qquad \dim=15+3+3=21,\qquad \mathrm{rank}=3+1+1=5 .
+$$</p>
+<p><strong>The fifteen, split by what each part does.</strong> Under $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ the adjoint decomposes as</p>
+<p>$$
+\mathbf{15}=\mathbf{8}_{0}\oplus\mathbf{1}_{0}\oplus\mathbf{3}_{+}\oplus\bar{\mathbf3}_{-},\qquad 15=8+1+6,
+$$</p>
+<p>and the four pieces are the four objects of the strong and lepton sectors:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>piece</th>
+<th>count</th>
+<th>what it is</th>
+<th>$B-L$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf8_0$</td>
+<td>$8$</td>
+<td>the gluons</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbf1_0$</td>
+<td>$1$</td>
+<td>the $B-L$ gauge boson</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\mathbf3_{+}\oplus\bar{\mathbf3}_{-}$</td>
+<td>$6$</td>
+<td>the leptoquark bosons, colour triplet and antitriplet</td>
+<td>carried</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the gluons and the leptoquarks are one multiplet.</strong> They are fifteen generators of one simple algebra, split only after the breaking. This is the single most consequential sentence in the translation and §2 returns to it.</p>
+<p><strong>The matter.</strong> One generation is two multiplets, and the second is the conjugate of the first:</p>
+<p>$$
+\Psi_L=(\mathbf4,\mathbf2,\mathbf1),\qquad \Psi_R=(\bar{\mathbf4},\mathbf1,\mathbf2),\qquad 8+8=16 .
+$$</p>
+<p><strong>The conjugate is the corpus's involution.</strong> $\Psi_R$ is not an independent object; it is $\Psi_L$ conjugated and given the other $\mathrm{SU}(2)$. The corpus writes transposition and conjugation as an involution $*$ between the two sides, and here the same involution appears as the bar on the $\mathbf4$. <strong>The two chiralities are the two tensor factors, and the bar is the swap.</strong></p>
+<h3 id="12-the-corpuss-math24-is-math25">1.2 The corpus's $D$ is $B-L$</h3>
+<p><strong>The corpus already displays the generator.</strong> <code>SU4-meaning.md</code> writes the abelian direction inside $\mathfrak{su}(4)$ as</p>
+<p>$$
+D=\operatorname{diag}(-3,1,1,1),
+$$</p>
+<p>the relative phase of the unit and the vector part. <strong>In the ordering where $e_t$ is the lepton</strong>, this is $-3$ times the Pati–Salam $B-L$:</p>
+<p>$$
+B-L=-\tfrac13D=\operatorname{diag}(1,-\tfrac13,-\tfrac13,-\tfrac13),\qquad \operatorname{tr}\bigl((B-L)^{2}\bigr)=\tfrac19\operatorname{tr}(D^{2})=\tfrac{12}{9}=\tfrac43 ,
+$$</p>
+<p>and the tracelessness that makes $D$ traceless is exactly the tracelessness that quantises charge. <strong>The corpus's generator and the Pati–Salam generator are the same matrix up to a factor of three and a sign</strong>, and the factor of three is the number of colours.</p>
+<p><strong>That coincidence is the hook.</strong> It is not a derivation, because §1.3 explains why it cannot be one. It is the reason the translation is worth writing.</p>
+<h3 id="13-the-declaration-and-why-the-unit-line-forces-it">1.3 The declaration, and why the unit line forces it</h3>
+<p><strong>What the corpus says, in its own words.</strong> <code>SU4-meaning.md</code> is explicit:</p>
+<blockquote>
+<p>It is not $\mathrm{SU}(4)_{c}$. […] The dimension agrees with the fifteen of this note and nothing else does: the carrier here is $\mathbb{B}$, the four basis vectors are $e_t,\vec e_x,\vec e_y,\vec e_z$, and the subgroup singled out by the algebra is $\mathrm{SU}(3)$ at the unit, not $\mathrm{SU}(3)$ at a colour. An identification of the two would be a claim about physics that this note does not make and the corpus does not support.</p>
+</blockquote>
+<p><strong>The refusal is correct and the note must not pretend otherwise.</strong> A dimension count cannot identify two groups. What follows is therefore a translation under an assumption, and the assumption must be stated before it is used.</p>
+<p><strong>The assumption, in one line.</strong></p>
+<blockquote>
+<p><strong>(A)</strong> The fourth colour of the Pati–Salam quartet is the unit line $\mathbb{C}e_t$ of $\mathbb{B}$, so the lepton is the state that sits on the canonical line.</p>
+</blockquote>
+<p><strong>The argument for it, which is structural and not verbal.</strong> The corpus proves three facts, and together they are the whole of the Pati–Salam structure:</p>
+<p>$$
+\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t),\qquad \mathrm{SU}(4)\big/\mathrm{SU}(3)\cong S^{7},\qquad \mathrm{SU}(4)\big/S(\mathrm{U}(3)\times\mathrm{U}(1))\cong\mathbb{CP}^{3}.
+$$</p>
+<p>The first says the colour group is the stabiliser of the fourth direction. The second says the carrier splits as a singlet plus a triplet. The third says the space of possible fourth directions is $\mathbb{CP}^3$, the quotient that separates Pati–Salam from left–right.</p>
+<p><strong>Now add the fact from <code>SU3-meaning.md</code>: the line $\mathbb{C}e_t$ is the only line fixed by every automorphism.</strong> Every other line — every axis, every direction in the vector part — is moved. So the question "which of the four is the lepton" has, in this algebra, exactly one frame-free answer:</p>
+<p>$$
+\text{the lepton must be the state on } \mathbb{C}e_t,\qquad \text{because it is the only line that no automorphism moves.}
+$$</p>
+<p><strong>That is the strongest available statement, and it is still an assumption.</strong> It says the identification is <em>forced once one accepts that the lepton's line must be canonical</em>; it does not prove that the fourth colour is a line in $\mathbb{B}$ at all. <strong>A derivation would need a map from $\mathbb{C}^4_{\text{colour}}$ to $\mathbb{B}$ that intertwines the two $\mathrm{SU}(3)$'s, and no such map exists in the corpus.</strong> The corpus note says the embedding fails, and this note agrees with it.</p>
+<p><strong>Everything below is written under (A).</strong> Where a statement depends on it, the dependence is stated.</p>
+<h2 id="2-the-strong-interaction-in-patisalam-form">2. The Strong Interaction in Pati–Salam Form</h2>
+<h3 id="21-gluons-are-eight-of-the-fifteen">2.1 Gluons are eight of the fifteen</h3>
+<p><strong>The statement.</strong> The gluon field is not a separate object with its own group. It is the part of the $\mathrm{SU}(4)$ gauge field that leaves the fourth direction alone:</p>
+<p>$$
+A_\mu=A_\mu^{a}T^{a}_{(4)},\qquad a=1,\dots,15,\qquad \underbrace{A^{1..8}}_{\text{gluons}}\oplus\underbrace{A^{15}}_{B-L}\oplus\underbrace{A^{9..14}}_{\text{leptoquarks}} .
+$$</p>
+<p><strong>The covariant derivative, in full.</strong></p>
+<p>$$
+D_\mu=\partial_\mu-ig_4A^{a}_\mu T^{a}_{(4)}-ig_LW^{i}_{L\mu}\tau_i-ig_RW^{i}_{R\mu}\tau_i ,
+$$</p>
+<p>and the first term is the whole of the strong and lepton-number physics, one coupling, one multiplet. <strong>There is no separate $g_3$ in the high-energy theory</strong>; there is $g_4$, and $g_3$ is its low-energy name.</p>
+<p><strong>What the strong interaction is, in this language.</strong> It is the residual of $\mathrm{SU}(4)$ after the fourth direction is fixed:</p>
+<p>$$
+\mathrm{SU}(4)\ \xrightarrow{\ \langle(4,1,2)_H\rangle\ }\ \mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L},\qquad \mathbf{4}=\mathbf{3}\oplus\mathbf{1}.
+$$</p>
+<p>The eight gluons are the stabiliser; the six leptoquarks acquire mass and leave; the one $B-L$ boson remains and mixes into hypercharge. <strong>Colour confinement is unchanged</strong>: it is a statement about $\mathrm{SU}(3)_c$ at low energy, and the low-energy group is the same group.</p>
+<h3 id="22-why-there-are-exactly-eight">2.2 Why there are exactly eight</h3>
+<p><strong>The Standard Model answer.</strong> Because $\mathrm{SU}(3)$ has $3^{2}-1=8$ generators. It is a fact about a group that is put in.</p>
+<p><strong>The Pati–Salam answer.</strong> Because</p>
+<p>$$
+8=15-1-6,
+$$</p>
+<p>the dimension of the algebra, less the abelian direction, less the six that move the fourth index into a colour index. <strong>And the three is not independent either:</strong></p>
+<p>$$
+N_c=4-1=3 .
+$$</p>
+<p><strong>The honest status of that.</strong> It explains why the number of colours is one less than the number of colours-plus-lepton, which is a genuine relation: it says the strong group is the stabiliser of a line and the line is one of the four. It does not explain why the quartet has four members. <strong>So the translation replaces "eight because $\mathrm{SU}(3)$ has eight generators" with "eight because fifteen, less one, less six", and replaces "three colours" with "four minus one".</strong> That is a real gain in unity and not a gain in number.</p>
+<h3 id="23-what-changes-and-what-does-not">2.3 What changes and what does not</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>Standard Model</th>
+<th>Pati–Salam</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>group</td>
+<td>$\mathrm{SU}(3)_c$</td>
+<td>$\mathrm{SU}(4)\supset\mathrm{SU}(3)_c$</td>
+</tr>
+<tr>
+<td>generators</td>
+<td>$8$</td>
+<td>$15$, of which $8$ are the gluons</td>
+</tr>
+<tr>
+<td>coupling</td>
+<td>$g_3$</td>
+<td>$g_4$, with $g_3=g_4$ at $M_{PS}$</td>
+</tr>
+<tr>
+<td>leptoquarks</td>
+<td>absent</td>
+<td>six, in the same multiplet as the gluons</td>
+</tr>
+<tr>
+<td>confinement</td>
+<td>assumed</td>
+<td>unchanged, same low-energy group</td>
+</tr>
+<tr>
+<td>number of colours</td>
+<td>$3$</td>
+<td>$4-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one thing that is genuinely lost.</strong> In the Standard Model the gluon is the only coloured gauge boson. In Pati–Salam the gluon has six coloured partners, and they couple quarks to leptons. <strong>That is the price of the unity, and it is the price §9 accounts for.</strong></p>
+<h2 id="3-the-electroweak-interaction-in-patisalam-form">3. The Electroweak Interaction in Pati–Salam Form</h2>
+<h3 id="31-the-doublets">3.1 The doublets</h3>
+<p><strong>The left multiplet.</strong> $\Psi_L=(\mathbf4,\mathbf2,\mathbf1)$ is a doublet of $\mathrm{SU}(2)_L$ and a singlet of $\mathrm{SU}(2)_R$. Its $\mathrm{SU}(2)_L$ indices are the ordinary weak ones:</p>
+<p>$$
+\Psi_L=\begin{pmatrix} u_L^{r}&u_L^{g}&u_L^{b}&\nu_L\\ d_L^{r}&d_L^{g}&d_L^{b}&e_L\end{pmatrix},
+$$</p>
+<p>two rows, four columns, the four columns being the quartet. <strong>The lepton doublet is a column of the same matrix as the quark doublets</strong>, and that is the literal content of "lepton number is the fourth colour".</p>
+<p><strong>The right multiplet.</strong> $\Psi_R=(\bar{\mathbf4},\mathbf1,\mathbf2)$ is the conjugate, and it is a doublet of $\mathrm{SU}(2)_R$:</p>
+<p>$$
+\Psi_R=\begin{pmatrix} u_R^{r}&u_R^{g}&u_R^{b}&\nu_R\\ d_R^{r}&d_R^{g}&d_R^{b}&e_R\end{pmatrix}.
+$$</p>
+<p><strong>The right-handed neutrino is not an addition.</strong> It is the $\mathrm{SU}(2)_R$ partner of $u_R$ in the same way that $e_R$ is the partner of $d_R$. <strong>This is the structural difference from the Standard Model, in one sentence: the Standard Model has to add $\nu_R$ as a singlet by hand, and Pati–Salam has nowhere else to put it.</strong></p>
+<h3 id="32-the-charge-formula-and-hypercharge-demoted">3.2 The charge formula, and hypercharge demoted</h3>
+<p><strong>The formula.</strong></p>
+<p>$$
+Q=T_{3L}+T_{3R}+\tfrac12(B-L),\qquad Y=T_{3R}+\tfrac12(B-L),\qquad Q=T_{3L}+Y .
+$$</p>
+<p><strong>Hypercharge is no longer fundamental.</strong> It is a combination of two generators of the high-energy group, one from each factor. In the Standard Model $Y$ is a free $\mathrm{U}(1)$ whose assignments are chosen to fit the data and checked against anomalies; here it is the diagonal survivor of the broken $\mathrm{SU}(2)_R$ mixed with $B-L$, and its assignments follow from the multiplet.</p>
+<p><strong>The verification, which is the whole content of the claim.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>$T_{3L}$</th>
+<th>$T_{3R}$</th>
+<th>$B-L$</th>
+<th>$Y$</th>
+<th>$Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu_L$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_L$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\nu_R$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$u_L$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac16$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_L$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac16$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One table, no choices.</strong> In the Standard Model this table is the input and the anomaly conditions are the check. Here the table is computed from two integers, $T_3$ and $B-L$, and the anomaly conditions become automatic — §7.</p>
+<p><strong>And the formula is parity-symmetric.</strong> Interchange $L$ and $R$ and every entry is unchanged, because $T_{3L}$ and $T_{3R}$ enter $Q$ on the same footing. <strong>The Standard Model's parity violation is therefore not in its charges; it is in its multiplets</strong>, which put $e_L$ in a doublet and $e_R$ in a singlet and discard $\nu_R$ entirely. Pati–Salam changes the multiplets and leaves the arithmetic alone.</p>
+<h3 id="33-the-two-step-breaking-and-the-boson-masses">3.3 The two-step breaking and the boson masses</h3>
+<p><strong>The chain.</strong></p>
+<p>$$
+\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
+\ \xrightarrow{\ \langle(4,1,2)_H\rangle\ }\
+\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}
+\ \xrightarrow{\ \langle(1,2,2)_H\rangle\ }\
+\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}} .
+$$</p>
+<p><strong>The first step</strong> uses a scalar in the $(\bar{\mathbf4},\mathbf1,\mathbf2)$ with a vacuum value along the fourth entry, $\langle(4,1,2)_H\rangle\propto\operatorname{diag}(0,0,0,1)$. It breaks $\mathrm{SU}(4)$ and gives mass to the six leptoquarks.</p>
+<p><strong>The second step</strong> uses a bidoublet $(1,2,2)_H$, whose two vacuum values break $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\to\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ and give the $W$ and $Z$ their masses. <strong>The bidoublet is the object the corpus cannot build</strong>, because a spin-zero carrier is a line and a line cannot carry two indices; §9.</p>
+<p><strong>The boson spectrum, in this language.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>boson</th>
+<th>number</th>
+<th>mass scale</th>
+<th>group origin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gluon</td>
+<td>$8$</td>
+<td>$0$</td>
+<td>$\mathrm{SU}(3)_c\subset\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$W_L^{\pm},Z_L$</td>
+<td>$3$</td>
+<td>$\sim246$ GeV</td>
+<td>$\mathrm{SU}(2)_L$</td>
+</tr>
+<tr>
+<td>$W_R^{\pm},Z_R$</td>
+<td>$3$</td>
+<td>$\sim M_{PS}$</td>
+<td>$\mathrm{SU}(2)_R$</td>
+</tr>
+<tr>
+<td>leptoquarks</td>
+<td>$6$</td>
+<td>$\sim M_{PS}$</td>
+<td>$\mathrm{SU}(4)/\mathrm{SU}(3)$</td>
+</tr>
+<tr>
+<td>$B-L$ boson</td>
+<td>$1$</td>
+<td>mixed</td>
+<td>$\mathrm{U}(1)_{B-L}\subset\mathrm{SU}(4)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The $Z$ is a mixture of three neutral fields</strong>, $W^3_L$, $W^3_R$ and $B$, and the mixing is fixed by the charge formula. That is the content of §4.1.</p>
+<h3 id="34-custodial-symmetry-promoted">3.4 Custodial symmetry, promoted</h3>
+<p><strong>In the Standard Model</strong> the custodial $\mathrm{SU}(2)_V$ is an <em>accidental</em> global symmetry of the scalar potential. Nothing requires it; the doublet happens to have it, and that is why $\rho=1$ to a part in a thousand.</p>
+<p><strong>In Pati–Salam</strong> the $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is a <em>gauge</em> symmetry, and the custodial $\mathrm{SU}(2)_V$ is its diagonal, which survives the breaking. <strong>So $\rho=1$ stops being an accident and becomes a consequence of a symmetry that was gauged and then broken.</strong></p>
+<p><strong>What it costs.</strong> The minimal bidoublet does not by itself give $\rho=1$ for arbitrary vacuum alignment; the usual repair is a triplet of $\mathrm{SU}(2)_R$, which is a further scalar. So the promotion of custodial symmetry from accidental to structural is real, and it is not free. <strong>A gain in principle, paid in scalars — which is the pattern of this whole translation.</strong></p>
+<h2 id="4-electromagnetism-in-patisalam-form">4. Electromagnetism in Pati–Salam Form</h2>
+<h3 id="41-the-unbroken-generator-and-the-photon-as-a-mixture">4.1 The unbroken generator and the photon as a mixture</h3>
+<p><strong>The unbroken direction.</strong> $\mathrm{U}(1)_{\mathrm{em}}$ is generated by $Q$ of §3.2, and it is the only generator that annihilates both vacuum values. The photon is the corresponding gauge field, a mixture of the three neutral ones:</p>
+<p>$$
+A_\mu=c_LW^{3}_{L\mu}+c_RW^{3}_{R\mu}+c_BB_\mu,\qquad c_L=\frac{e}{g_L},\quad c_R=\frac{e}{g_R},\quad c_B=\frac{e}{2g_{B-L}} .
+$$</p>
+<p><strong>Normalisation gives the electric charge in terms of the three couplings:</strong></p>
+<p>$$
+\frac{1}{e^{2}}=\frac{1}{g_L^{2}}+\frac{1}{g_R^{2}}+\frac{1}{4g_{B-L}^{2}},\qquad\text{equivalently}\qquad \frac1{e^2}=\frac1{g_L^2}+\frac1{g_Y^2},\qquad \frac1{g_Y^2}=\frac1{g_R^2}+\frac1{4g_{B-L}^2}.
+$$</p>
+<p><strong>The two forms agree, and that agreement is a check.</strong> The first writes the photon as a mixture of three fields; the second uses hypercharge as the intermediate step. They are the same statement because $Q=T_{3L}+Y$.</p>
+<p><strong>The two massive neutral combinations</strong> are orthogonal to the photon and are the $Z$ and the $Z_R$. <strong>So the Standard Model's $Z$ is one of three neutral states in Pati–Salam, and the count $3\to2+1$ is the count of the two-step breaking.</strong></p>
+<h3 id="42-charge-quantisation-derived">4.2 Charge quantisation, derived</h3>
+<p><strong>This is the deepest gain of the translation, and it is one line.</strong></p>
+<p><strong>In the Standard Model</strong> the hypercharges are assigned by hand. The assignment is constrained by anomaly cancellation, which fixes the ratios, but the overall normalisation is free, and the fact that the charges come out in exact thirds is a numerical accident of the assignment.</p>
+<p><strong>In Pati–Salam</strong> $B-L$ is a generator of $\mathrm{SU}(4)$, hence traceless on the quartet:</p>
+<p>$$
+\operatorname{tr}_{\mathbf4}(B-L)=3\cdot\tfrac13+(-1)=0 .
+$$</p>
+<p><strong>That single equation is charge quantisation.</strong> Read it as a relation between the quark and lepton charges:</p>
+<p>$$
+3q+\ell=0\quad\Longrightarrow\quad q=-\tfrac13\ell ,
+$$</p>
+<p>so the quark charge is <em>forced</em> to be a third of the lepton charge, and the fractional charges are not chosen but computed from the tracelessness of a diagonal matrix. <strong>The corpus's own display is the same equation</strong>: $D=\operatorname{diag}(-3,1,1,1)$ is traceless, and $-3+1+1+1=0$ is "$-3$ and three ones", which is "$-1$ and three thirds".</p>
+<p><strong>So the translation answers a question the Standard Model does not ask.</strong> "Why is the proton charge exactly minus the electron charge?" Standard Model: because the hypercharge assignments make it so. Pati–Salam: because the generator that distinguishes the fourth direction from the third is traceless, and the fourth direction carries one unit while the three carry a third each.</p>
+<h3 id="43-the-charge-table-in-patisalam-labels">4.3 The charge table in Pati–Salam labels</h3>
+<p><strong>The same sixteen fields, written with the two integers.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>$\mathrm{SU}(4)$</th>
+<th>$\mathrm{SU}(2)_L$</th>
+<th>$\mathrm{SU}(2)_R$</th>
+<th>$B-L$</th>
+<th>$Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q_L=(u_L,d_L)$</td>
+<td>$\mathbf4$</td>
+<td>$\mathbf2$</td>
+<td>$\mathbf1$</td>
+<td>$+\tfrac13$</td>
+<td>$\tfrac23,-\tfrac13$</td>
+</tr>
+<tr>
+<td>$L_L=(\nu_L,e_L)$</td>
+<td>$\mathbf4$</td>
+<td>$\mathbf2$</td>
+<td>$\mathbf1$</td>
+<td>$-1$</td>
+<td>$0,-1$</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>$\bar{\mathbf4}$</td>
+<td>$\mathbf1$</td>
+<td>$\mathbf2$</td>
+<td>$+\tfrac13$</td>
+<td>$\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$\bar{\mathbf4}$</td>
+<td>$\mathbf1$</td>
+<td>$\mathbf2$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\nu_R$</td>
+<td>$\bar{\mathbf4}$</td>
+<td>$\mathbf1$</td>
+<td>$\mathbf2$</td>
+<td>$-1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$\bar{\mathbf4}$</td>
+<td>$\mathbf1$</td>
+<td>$\mathbf2$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The column to read first is $B-L$: it is the same for a left-handed field and its right-handed partner.</strong> $u_L$ and $u_R$ both carry $+\tfrac13$; $\nu_L$ and $\nu_R$ both carry $-1$. <strong>That is why $B-L$ works as a fourth colour</strong>: it does not care about chirality, so one multiplet per chirality can hold it. The bar on the $\bar{\mathbf4}$ is anticolour and conjugation, not a sign flip on the abelian charge.</p>
+<p><strong>Two readings of the table, and the second is the point.</strong> The first is that the charges agree with the Standard Model, which they must. The second is that the table has <em>two inputs per row</em>, not four: the $\mathrm{SU}(4)$ label and the $\mathrm{SU}(2)$ label, from which $B-L$, $T_3$ and $Q$ all follow. <strong>The Standard Model's table has one free number per row and the anomaly conditions to constrain them; this table has the multiplet and nothing else.</strong></p>
+<h2 id="5-the-couplings-and-the-boundary-conditions">5. The Couplings and the Boundary Conditions</h2>
+<p><strong>At the Pati–Salam scale the four couplings collapse to two, or to one.</strong></p>
+<p>$$
+g_3(M_{PS})=g_4(M_{PS}),\qquad g_L(M_{PS})=g_R(M_{PS})\equiv g_4(M_{PS})\quad\text{(if parity is imposed)} .
+$$</p>
+<p><strong>The $B-L$ coupling is not free either</strong>, because $B-L$ sits inside $\mathrm{SU}(4)$:</p>
+<p>$$
+g_{B-L}(M_{PS})=\sqrt{\tfrac38}\,g_4(M_{PS})=0.612\,g_4(M_{PS}),\qquad \text{with }\operatorname{tr}(T^{a}T^{b})=\tfrac12\delta^{ab}.
+$$</p>
+<p><strong>The check of that number is the Weinberg angle.</strong> With $g_L=g_R=g_4$ and the $B-L$ value above, the formulas of §4.1 give</p>
+<p>$$
+\sin^{2}\theta_W(M_{PS})=\frac{3}{8},
+$$</p>
+<p>and the same value follows from the trace ratio, independently of any normalisation:</p>
+<p>$$
+\sin^{2}\theta_W=\frac{\operatorname{tr}(T_{3L}^{2})}{\operatorname{tr}(T_{3L}^{2})+\operatorname{tr}(Y^{2})}=\frac{2}{2+\tfrac{10}{3}}=\frac{6}{16}=\frac38 .
+$$</p>
+<p><strong>The counting behind the $2$ and the $\tfrac{10}{3}$.</strong></p>
+<p>$$
+\operatorname{tr}(T_{3L}^{2})=\underbrace{8\cdot\tfrac14}_{8\ \text{doublet states}}=2,\qquad
+\operatorname{tr}(Y^{2})=\underbrace{\tfrac{6}{36}}_{Q_L}+\underbrace{\tfrac{4}{3}}_{u_R}+\underbrace{\tfrac13}_{d_R}+\underbrace{\tfrac12}_{L_L}+\underbrace{1}_{e_R}=\tfrac{10}{3} .
+$$</p>
+<p><strong>What $3/8$ is and is not.</strong> It is a <em>boundary condition</em> at $M_{PS}$, not a prediction at accessible energy. Running it down to $M_Z$ reproduces $0.231$ only after the intermediate thresholds are chosen, so the theory trades a sharp boundary condition for two unknown scales. <strong>This is the same trade $\mathrm{SU}(5)$ makes, and it is the honest way to state it.</strong></p>
+<p><strong>The coupling ledger.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>Standard Model</th>
+<th>Pati–Salam at $M_{PS}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_3$</td>
+<td>free</td>
+<td>$=g_4$</td>
+</tr>
+<tr>
+<td>$g_2$</td>
+<td>free</td>
+<td>$=g_4$</td>
+</tr>
+<tr>
+<td>$g_Y$</td>
+<td>free</td>
+<td>$=\sqrt{3/5}\,g_4$, derived from $\sin^{2}\theta_W=3/8$</td>
+</tr>
+<tr>
+<td>$g_R$</td>
+<td>absent</td>
+<td>$=g_4$ if parity holds</td>
+</tr>
+<tr>
+<td>number of gauge couplings</td>
+<td>$3$</td>
+<td>$1$, or $2$ without parity</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the translation reduces three couplings to one and adds one group.</strong> Whether that is a gain depends on whether the new group's breaking scale is a prediction or a parameter — and it is a parameter.</p>
+<h2 id="6-the-dictionary">6. The Dictionary</h2>
+<p><strong>One table, every object.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Standard Model object</th>
+<th>Pati–Salam address</th>
+<th>status of the translation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gluon, $8$</td>
+<td>the $\mathbf8_0$ of the $\mathbf{15}$</td>
+<td>same field, larger multiplet</td>
+</tr>
+<tr>
+<td>$W_L^{\pm},W^{3}_L$</td>
+<td>$\mathrm{SU}(2)_L$</td>
+<td>identical</td>
+</tr>
+<tr>
+<td>$B_\mu$</td>
+<td>mixture of $W^{3}_R$ and $B-L$</td>
+<td><strong>derived, not fundamental</strong></td>
+</tr>
+<tr>
+<td>photon</td>
+<td>$c_LW^{3}_L+c_RW^{3}_R+c_BB$</td>
+<td>mixture of three</td>
+</tr>
+<tr>
+<td>$Z$</td>
+<td>one of three neutral states</td>
+<td>unchanged below $M_{PS}$</td>
+</tr>
+<tr>
+<td>Higgs doublet $\Phi$</td>
+<td>one column of the bidoublet $(1,2,2)_H$</td>
+<td><strong>a projection of a larger object</strong></td>
+</tr>
+<tr>
+<td>—</td>
+<td>$W_R^{\pm},Z_R$</td>
+<td>new</td>
+</tr>
+<tr>
+<td>—</td>
+<td>leptoquarks, $6$</td>
+<td>new</td>
+</tr>
+<tr>
+<td>$e_R$, $u_R$, $d_R$ singlets</td>
+<td>members of $(\bar{\mathbf4},\mathbf1,\mathbf2)$</td>
+<td>same fields, new multiplet</td>
+</tr>
+<tr>
+<td>$\nu_R$ (optional singlet)</td>
+<td><strong>required</strong> member of $(\bar{\mathbf4},\mathbf1,\mathbf2)$</td>
+<td><strong>promoted from optional to necessary</strong></td>
+</tr>
+<tr>
+<td>hypercharge $Y$</td>
+<td>$T_{3R}+\tfrac12(B-L)$</td>
+<td><strong>demoted from fundamental</strong></td>
+</tr>
+<tr>
+<td>charge quantisation</td>
+<td>$\operatorname{tr}_{\mathbf4}(B-L)=0$</td>
+<td><strong>derived</strong></td>
+</tr>
+<tr>
+<td>$3$ colours</td>
+<td>$4-1$</td>
+<td><strong>derived from the quartet</strong></td>
+</tr>
+<tr>
+<td>$8$ gluons</td>
+<td>$15-1-6$</td>
+<td>unchanged count, new reason</td>
+</tr>
+<tr>
+<td>custodial $\mathrm{SU}(2)_V$</td>
+<td>diagonal of a gauged $\mathrm{SU}(2)^2$</td>
+<td><strong>promoted from accidental</strong></td>
+</tr>
+<tr>
+<td>$4$ anomaly conditions</td>
+<td>automatic</td>
+<td><strong>derived</strong></td>
+</tr>
+<tr>
+<td>$g_3,g_2,g_Y$</td>
+<td>$g_4$, and $g_4,g_R$</td>
+<td><strong>reduced to one or two</strong></td>
+</tr>
+<tr>
+<td>proton stability</td>
+<td>an accident of the SM's field content</td>
+<td>structural: the gauge bosons never couple two quarks</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the dictionary shows.</strong> Thirteen rows are a change of address. Four rows — hypercharge, charge quantisation, the number of colours, the anomalies — are a change of <em>status</em>, and those four are the reason to make the translation.</p>
+<h2 id="7-anomalies-four-conditions-become-none">7. Anomalies: Four Conditions Become None</h2>
+<p><strong>The Standard Model's four conditions.</strong> With $U(1)_Y$ the only abelian factor, consistency requires</p>
+<p>$$
+\sum Y=0,\qquad \sum Y^{3}=0,\qquad \sum_{\mathbf3}Y=0,\qquad \sum_{\mathbf2}Y=0 ,
+$$</p>
+<p>the gravitational, cubic, $\mathrm{SU}(3)^{2}U(1)$ and $\mathrm{SU}(2)^{2}U(1)$ conditions, and they hold only for the specific hypercharge table. <strong>They are a miracle of the assignment: nothing forces the table, and the table happens to pass.</strong></p>
+<p><strong>In Pati–Salam all four hold identically</strong>, and the reason is that the sixteen is built from a $\mathbf4$ and a $\bar{\mathbf4}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>why it holds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gravitational $\sum(B-L)$</td>
+<td>$\operatorname{tr}_{\mathbf4}(B-L)=0$ and $\operatorname{tr}_{\bar{\mathbf4}}(B-L)=-\operatorname{tr}_{\mathbf4}(B-L)=0$</td>
+</tr>
+<tr>
+<td>cubic $\sum(B-L)^{3}$</td>
+<td>$\bigl(\tfrac{3}{27}-1\bigr)+\bigl(-\tfrac{3}{27}+1\bigr)=-\tfrac89+\tfrac89=0$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)^{2}U(1)$</td>
+<td>$\sum_{\mathbf3}(B-L)=3\cdot\tfrac13=1$ cancels against $-1$ from the $\bar{\mathbf3}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)^{2}U(1)$</td>
+<td>$\operatorname{tr}_{\mathbf4}(B-L)=0$ on each doublet, and the $\bar{\mathbf4}$ cancels the $\mathbf4$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)^{3}$</td>
+<td>the $\mathbf4$ has index $+1$ and the $\bar{\mathbf4}$ has $-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The cubic one is the sharpest.</strong> In the Standard Model $\sum Y^{3}=0$ requires the hypercharges of quarks and leptons to balance in a specific way, and the balance is only visible after the table is written. Here it cancels between the quartet and the antiquartet <em>before any table is written</em>, and it cancels because $\nu_R$ is present. <strong>Remove $\nu_R$ and the quartet is incomplete and every line of the table fails.</strong></p>
+<p><strong>So the translation makes anomaly cancellation structural.</strong> That is the fourth of the four status changes of §6, and it is the one that requires no assumption beyond (A): it is a statement about the multiplet, and the multiplet is the definition of the theory.</p>
+<h2 id="8-the-ledger-what-the-translation-changes-in-the-corpus">8. The Ledger: What the Translation Changes in the Corpus</h2>
+<p><strong>The corpus's own accounting, row by row.</strong> This is the table a reader of the corpus needs, because it says which statements of the electroweak part are superseded and which survive unchanged.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corpus statement</th>
+<th>Standard Model form</th>
+<th>Pati–Salam form</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"hypercharge is imported"</td>
+<td>a free $\mathrm{U}(1)$</td>
+<td>$T_{3R}+\tfrac12(B-L)$</td>
+<td><strong>superseded</strong></td>
+</tr>
+<tr>
+<td>"charge quantisation is imported"</td>
+<td>anomaly-fitted table</td>
+<td>tracelessness of $B-L$</td>
+<td><strong>superseded</strong></td>
+</tr>
+<tr>
+<td>"the ceiling is $\mathfrak{u}(2)\oplus\mathfrak{u}(2)$"</td>
+<td>the low-energy group</td>
+<td>the residual of $\mathrm{SU}(4)\times\mathrm{SU}(2)^2$</td>
+<td><strong>reinterpreted, not superseded</strong></td>
+</tr>
+<tr>
+<td>"$\mathrm{SU}(3)$ is not native"</td>
+<td>—</td>
+<td>$\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, still not native</td>
+<td><strong>unchanged</strong></td>
+</tr>
+<tr>
+<td>"the chiral wall: no chiral non-abelian one-sided multiplication"</td>
+<td>blocks $\mathrm{SU}(2)_L$</td>
+<td>blocks $\mathrm{SU}(2)_L$ identically</td>
+<td><strong>unchanged</strong></td>
+</tr>
+<tr>
+<td>"the spin-zero carrier is a line"</td>
+<td>blocks the doublet</td>
+<td>blocks the bidoublet, worse</td>
+<td><strong>unchanged, more costly</strong></td>
+</tr>
+<tr>
+<td>"$\rho=1$ from an accidental custodial symmetry"</td>
+<td>accidental</td>
+<td>diagonal of a gauged $\mathrm{SU}(2)^2$</td>
+<td><strong>improved</strong></td>
+</tr>
+<tr>
+<td>"four anomaly conditions must be checked"</td>
+<td>checked, and pass</td>
+<td>automatic</td>
+<td><strong>improved</strong></td>
+</tr>
+<tr>
+<td>"$\nu_R$ is optional"</td>
+<td>optional</td>
+<td>required</td>
+<td><strong>changed</strong></td>
+</tr>
+<tr>
+<td>"$m_d=m_e$ is not predicted"</td>
+<td>no relation</td>
+<td>predicted by one bidoublet, and false</td>
+<td><strong>worse</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four rows improve, four are unchanged, two get worse.</strong> That is the honest ledger, and it is a net gain of two.</p>
+<p><strong>The two that get worse are the two the corpus cannot fix</strong>, and they are worse in different ways. The mass relation is worse because Pati–Salam <em>adds</em> a false prediction — a real cost, repaired only by a $(15,2,2)$ or a second bidoublet, at the price of the $3/8$ boundary condition's cleanliness. The scalar sector is worse because Pati–Salam needs two scalar multiplets where the Standard Model needs one, and the corpus's obstruction counts multiplets.</p>
+<h2 id="9-what-the-translation-cannot-do">9. What the Translation Cannot Do</h2>
+<p><strong>Three things, and the first two are the corpus's own walls.</strong></p>
+<p><strong>It cannot build the chiral doublet.</strong> The corpus proves that a chiral non-abelian one-sided multiplication does not exist, because the centraliser of a chirality-respecting one-sided operator is abelian. Pati–Salam needs $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ to act on <em>different letters</em>, and the translation does not supply the map from a side to a letter. <strong>The wall is exactly where it was.</strong> Pati–Salam is a better address for the group; it is not a construction of the group.</p>
+<p><strong>It cannot build the scalar.</strong> Worse: the bidoublet $(1,2,2)_H$ carries two $\mathrm{SU}(2)$ indices and a spin-zero carrier in the corpus is a line. <strong>A line cannot carry two indices</strong>, so Pati–Salam's scalar requirement is strictly larger than the Standard Model's, and the corpus's obstruction is hit harder.</p>
+<p><strong>It cannot repair the mass relation.</strong> One bidoublet gives $m_d=m_e$ and $m_u=m_\nu$ at $M_{PS}$, and the observed $m_d/m_e\simeq2.2$ contradicts the first. <strong>The translation therefore imports a false prediction that the Standard Model does not make</strong>, and the repair costs an extra scalar and the clean boundary condition.</p>
+<p><strong>And one thing it cannot decide.</strong> The scale $M_{PS}$ is a parameter. The leptoquark bounds put it above roughly $10^{2}$ to $10^{3}$ TeV; nothing in the corpus puts it anywhere.</p>
+<p><strong>What the translation does not need.</strong> No new algebra, no exceptional structure, no octonion, no dimension beyond the four the carrier already has. <strong>The translation is a change of gauge group inside objects the corpus already owns</strong>, which is exactly why it is worth doing and exactly why it cannot be a derivation.</p>
+<h2 id="10-verdict">10. Verdict</h2>
+<p><strong>Yes, and the translation is worth making, with one declaration and one accounting.</strong></p>
+<p><strong>The declaration</strong> is (A): the fourth colour is the unit line. It is the only line in the algebra that no automorphism moves, so it is the only frame-free candidate for the object that distinguishes the lepton from the quark. <strong>The corpus refuses the identification, and this note agrees that it is a physics claim rather than a theorem, so the translation is a programme and not a result.</strong></p>
+<p><strong>The accounting</strong> is §8's ledger: four rows improve, four are unchanged, two get worse. <strong>Net plus two, and the two losses are the two the corpus already could not fix.</strong></p>
+<p><strong>What the corpus gains, stated as three sentences.</strong></p>
+<p>Hypercharge stops being fundamental: it is $T_{3R}+\tfrac12(B-L)$, and the assignments follow from the multiplet rather than being fitted.</p>
+<p>Charge quantisation stops being an accident: it is $\operatorname{tr}_{\mathbf4}(B-L)=0$, which is the corpus's own tracelessness of $\operatorname{diag}(-3,1,1,1)$.</p>
+<p>The anomalies stop being a miracle: they cancel between the $\mathbf4$ and the $\bar{\mathbf4}$, and the $\bar{\mathbf4}$ is the conjugate, which is the corpus's involution.</p>
+<p><strong>What the corpus does not gain, stated as two sentences.</strong></p>
+<p>The chiral wall is untouched: Pati–Salam names the two chiralities and the corpus still cannot tie a chirality to a side.</p>
+<p>The scalar carrier is untouched and more strained: the bidoublet is a two-index object and the corpus's spin-zero carrier is a line.</p>
+<p><strong>The one-sentence verdict.</strong> The three interactions translate completely, three couplings become one, four imported facts become derived, and the corpus's two walls stand exactly where they stood — <strong>so the translation is a better description of the gauge sector and no progress at all on the sector the corpus lacks.</strong></p>
+<h2 id="11-the-patisalam-migration">11. The Pati–Salam Migration</h2>
+<p><strong>What this section is.</strong> A plan for the corpus, not a plan for this article. It says which categories are renamed, which sections are created, which articles move, which are rewritten, which are added, and in what order. Every number below was measured on the tree today: twelve categories and $663$ linked articles in <code>physics.md</code>, of which $93$ are in <em>Biquaternion Particle Physics</em> and $29$ in <em>Biquaternion Electromagnetism</em>. <strong>The plan reduces the twelve to eleven, by dissolving the second of those into the first.</strong></p>
+<p><strong>The governing sentence, and it is a freeze.</strong> <em>The frame changes the menu and the framing; it does not change the physics below the Pati–Salam scale.</em> Everything measured below $M_{PS}$ is exact in the Standard Model's variables and stays written in them. A migration that rewrote $663$ articles in $\mathrm{SU}(4)$ language would be a fabrication of twelve hundred pages of algebra that is already correct.</p>
+<h3 id="111-the-four-tiers">11.1 The Four Tiers</h3>
+<p><strong>Every article in scope takes exactly one tier, and the tier is recorded.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>tier</th>
+<th>name</th>
+<th>what changes</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T0</td>
+<td>unchanged</td>
+<td>nothing; the article is frame-independent</td>
+<td>same</td>
+</tr>
+<tr>
+<td>T1</td>
+<td>moved</td>
+<td>its section only</td>
+<td>same</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>reframed</td>
+<td>a frame paragraph and a status line; equations untouched</td>
+<td>same</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>rewritten</td>
+<td>the argument is recast in the larger group</td>
+<td>same</td>
+</tr>
+<tr>
+<td>T4</td>
+<td>new</td>
+<td>a new article</td>
+<td>new</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The slug never moves.</strong> A rename changes two strings and no file: the link text in <code>physics.md</code> and the first heading of the article. The slug, the file name, the sitemap entry and every inbound link stay as they are. This is the rule <code>SU2-migration.md</code> already applies — <em>the name stays, the display goes</em> — lifted one level: <strong>the address stays, the title moves.</strong></p>
+<p><strong>Why that rule is not laziness.</strong> The corpus has $663$ menu links, three sitemaps and a nav on every page built from the stem. A slug migration would break all of them for a change of wording, and the external references that cite the corpus by URL would break with them. The title is what a reader sees; the slug is what a machine follows. Only the first is a claim about content.</p>
+<h3 id="112-the-categories-one-renamed-one-dissolved-nine-untouched">11.2 The Categories: One Renamed, One Dissolved, Nine Untouched</h3>
+<p><strong>The twelve categories, and the action on each.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th>articles</th>
+<th>action</th>
+<th>reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Biquaternion Universe</td>
+<td>$26$</td>
+<td>keep</td>
+<td>pre-gauge: the programme, the algebra, the conventions</td>
+</tr>
+<tr>
+<td>Biquaternion Relativity</td>
+<td>$101$</td>
+<td>keep</td>
+<td>the Lorentz group, unaffected by the internal group</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Quantum Theory</td>
+<td>$134$</td>
+<td>keep</td>
+<td>field equations per spin, spin-agnostic in colour</td>
+</tr>
+<tr>
+<td>Biquaternion Non Relativistic Approximation of Quantum Theory</td>
+<td>$80$</td>
+<td>keep</td>
+<td>the non-relativistic limit</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Non Quantum Approximation</td>
+<td>$30$</td>
+<td>keep</td>
+<td>the classical limit</td>
+</tr>
+<tr>
+<td>Biquaternion Non Relativistic Non Quantum Approximation</td>
+<td>$24$</td>
+<td>keep</td>
+<td>the classical non-relativistic limit</td>
+</tr>
+<tr>
+<td>~~Biquaternion Electromagnetism~~</td>
+<td>$29$</td>
+<td><strong>dissolved into the next</strong></td>
+<td>see §11.5</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Quantum Hydrodynamics</td>
+<td>$45$</td>
+<td>keep</td>
+<td>the fluid reading, spin-agnostic</td>
+</tr>
+<tr>
+<td>Biquaternion Quantum Fields</td>
+<td>$66$</td>
+<td>keep</td>
+<td>the second-quantised layer, one bridge article</td>
+</tr>
+<tr>
+<td>Biquaternion Relativistic Quantum Thermodynamics</td>
+<td>$22$</td>
+<td>keep</td>
+<td>thermality of the state, group-independent</td>
+</tr>
+<tr>
+<td><strong>Biquaternion Particle Physics</strong></td>
+<td>$93+29=122$</td>
+<td><strong>rename and restructure</strong></td>
+<td>see §11.3</td>
+</tr>
+<tr>
+<td>Biquaternion Gravity and Cosmology</td>
+<td>$13$</td>
+<td>keep</td>
+<td>the frame does not touch the metric</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Eleven categories remain, and the arithmetic closes.</strong> $26+101+134+80+30+24+45+66+22+13=541$ articles stay outside the migration and $122$ are inside it. <strong>Nothing moves between categories except the twenty-nine</strong>, and nothing leaves the corpus. The reason the other nine are untouched is structural: every category that is <em>above</em> the gauge group (Universe) or <em>below</em> it (the approximations) or <em>beside</em> it (relativity, hydrodynamics, thermodynamics, gravity) is unaffected by a change of gauge group. Only the categories that are <em>about</em> the group can move.</p>
+<p><strong>Why dissolving the category is the right move, in three arguments.</strong></p>
+<p><strong>First, the frame denies the split.</strong> Pati–Salam has no electromagnetic interaction to keep beside the strong and the weak: the photon is a mixture of three neutral generators, and $\mathrm{U}(1)_{\mathrm{em}}$ is the residual of the pair. A top-level category called <em>Biquaternion Electromagnetism</em>, standing beside <em>Biquaternion Particle Physics</em>, asserts the Standard Model's own decomposition — <strong>which is precisely the decomposition the migration replaces.</strong> Keeping it would leave the menu contradicting the frame in the one place a reader looks first.</p>
+<p><strong>Second, the size fits.</strong> At $122$ articles the merged category sits between <em>Biquaternion Relativistic Quantum Theory</em> ($134$) and <em>Biquaternion Relativity</em> ($101$), so the merge produces no outlier. The imbalance it removes is the other one: a category of $29$ beside one of $93$ that shares its subject.</p>
+<p><strong>Third, the build cost is zero, and that is checked, not assumed.</strong> <code>physics.md</code> already nests <code>###</code> inside <code>##</code> and <code>####</code> inside <code>###</code> — <em>Biquaternion Relativity</em> does exactly this — so the merge is the deletion of one <code>##</code> line and the demotion of its twenty-nine links. The slugs do not move, so the sitemaps, the per-page nav and <code>sync_index.py</code> are untouched. And <code>articles_internal/ai-physics-overview.md</code> is generated from the <code>##</code> lines by <code>build.py:write_ai_physics_overview</code>, so it regenerates itself with one block fewer and needs no hand edit.</p>
+<p><strong>What the merge costs, and what pays for it.</strong></p>
+<p><strong>The cost is discovery.</strong> Electromagnetism is the corpus's most common entry point: a reader who wants Maxwell looks for a category with that word in it, and after the merge the word appears at section level only. <strong>Three mitigations, and the first is structural.</strong> The section keeps the word in its own title — <em>Electromagnetism in Pati–Salam Form</em> — so a search for <em>electromagnetism</em> still lands on it. Its first sub-section is the field and not the frame, so a reader arriving with that intent is not made to read the group first. And the <code>toc</code> extension is enabled in <code>md_to_html</code>, so every heading carries an id and <code>physics.html#electromagnetism-in-pati-salam-form</code> is a working deep link.</p>
+<p><strong>The second cost is six stale references, listed in §11.5</strong> because they are the whole of the manual work.</p>
+<p><strong>The placement test, which is the rule behind the table.</strong> An article belongs to a category that the frame can change if and only if its subject is a <strong>gauge group, a gauge multiplet, or a breaking</strong>. Everything else is about the algebra, the limit, the sector or the metric, and none of those knows what the internal group is.</p>
+<h3 id="113-biquaternion-particle-physics-in-patisalam-form">11.3 Biquaternion Particle Physics in Pati–Salam Form</h3>
+<p><strong>The new name.</strong></p>
+<blockquote>
+<p><strong>Biquaternion Particle Physics in Pati–Salam Form</strong></p>
+</blockquote>
+<p><strong>The eight sections, in the order of the breaking chain.</strong> This is the answer to the question of order, and the reason is one sentence: <em>a section may use only groups that a previous section introduced.</em> The chain runs top down,</p>
+<p>$$
+\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\ \longrightarrow\ \mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\ \longrightarrow\ \mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}},
+$$</p>
+<p>so the strong breaking comes first, the electroweak second, and the electromagnetic residual last of the three interactions. Reading in that order means colour is met as a stabiliser before it is used as a group, $\mathrm{SU}(2)_R$ is met as a gauge factor before it is met as a broken one, and the photon is met as a mixture before it is met as a field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>section</th>
+<th>existing</th>
+<th>new</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The Unified Group</td>
+<td>$18$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The Breaking Chain and the Boson Spectrum</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The Strong Interaction in Pati–Salam Form</td>
+<td>$24$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>The Electroweak Interaction in Pati–Salam Form</td>
+<td>$33$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Electromagnetism in Pati–Salam Form</td>
+<td>$29$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>The Mass Spectrum and the Ledger</td>
+<td>$6$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>The Standard Model as the Low-Energy Phase</td>
+<td>$9$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Focus on informational aspects</td>
+<td>$3$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The arithmetic is a check, and it closes exactly.</strong> $18+24+33+29+6+9+3=122$ existing articles and $2+2+2+2+2+0+1+0=11$ new ones, with <strong>no article moving between sections</strong>. The previous draft moved three articles from the electroweak section to the electromagnetic one; the merge makes that unnecessary, which is a gain, because every article keeps the neighbours it already had.</p>
+<p><strong>What each section contains, and what moved.</strong></p>
+<p><strong>1. The Unified Group</strong> takes the eighteen articles now under <em>The Gauge Structure</em>, unchanged in title: the gauge principle, the covariant derivative, the curvature and Bianchi identity, the Hopf bundle, the index theorem, Yang–Mills and its path integral, lattice gauge theory, instantons, ADHM, the semiclassical expansion, the sigma model, the one-loop potential, the Fujikawa measure, the Stueckelberg mechanism. <strong>They are T0</strong>, because every one of them is written for a general group and reads correctly for $\mathrm{SU}(4)\times\mathrm{SU}(2)^2$. The section gains the frame article that names the group they are being applied to.</p>
+<p><strong>2. The Breaking Chain and the Boson Spectrum</strong> is new and holds no existing article, because the corpus has never written the chain as one object. It is the shortest section and the one that makes the rest readable: three scales, twenty-one generators, the count $9$ massless against $12$ massive.</p>
+<p><strong>3. The Strong Interaction in Pati–Salam Form</strong> takes the twenty-four articles now under <em>The Strong Interaction</em>. The core of them — QCD, asymptotic freedom, the parton model, jets, DIS, hadron structure, the proton and the neutron, the octet and decuplet, Gell-Mann–Okubo — are <strong>T0</strong>: they are statements about $\mathrm{SU}(3)_c$ at low energy, and the low-energy group is the same group. Three are <strong>T3</strong>: the two articles that state the colour wall and the $\mathrm{SU}(3)$ obstruction, which now say the wall relocates rather than that it stands, and the gluon article, whose opening sentence "an octet outside the biquaternion algebra" becomes "an octet inside the carrier's group and outside the algebra".</p>
+<p><strong>4. The Electroweak Interaction in Pati–Salam Form</strong> takes all thirty-three, and lends none to the next section. It keeps the whole fermion sector — Yukawa, CKM, PMNS, meson mixing, the electric dipole moment, the left–right record, the neutrino and the seesaw — as <strong>T2</strong>, because their content is unchanged and only the multiplet they are embedded in is new. It keeps the Higgs and symmetry-breaking articles as <strong>T3</strong>, because the doublet becomes a column of a bidoublet and the potential is a two-multiplet potential. It keeps the chiral-wall articles as <strong>T0 with a frame paragraph</strong>, because the wall is a theorem about one-sided multiplication and does not weaken when the group grows. <strong>And it keeps <em>The Weinberg Angle, the Neutral Current and the $Z$ Coupling</em>, <em>The W and Z Bosons</em> and <em>The Lagrangian and the W and Z Bosons</em></strong>, which the previous draft moved out: their subject is the mixing of three neutral generators, which is a statement about the pair and belongs in the pair's section.</p>
+<p><strong>5. Electromagnetism in Pati–Salam Form</strong> is the old category taken whole — twenty-nine articles, five sub-sections, and the frame at the end of the section rather than the beginning, so that a reader who came for Maxwell meets the equations first. <strong>Its internal structure, its counts and its two new articles are in §11.5.</strong></p>
+<p><strong>6. The Mass Spectrum and the Ledger</strong> is unchanged: six articles, <strong>T0</strong>.</p>
+<p><strong>7. The Standard Model as the Low-Energy Phase</strong> takes the nine articles now under <em>The Standard Model as a Whole</em>, and the rename is the substance. The old name described the corpus's subject; the new name describes its <em>status</em>. The nine articles are <strong>T2</strong>, and two of them are the two the migration is really about: <em>The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors</em> and <em>Grand Unification in the Biquaternion Framework: Where the Embedding Fails</em>.</p>
+<p><strong>8. Focus on informational aspects</strong> is unchanged: three articles, <strong>T0</strong>.</p>
+<p><strong>Two boundaries the restructuring must respect.</strong></p>
+<p><strong>The Lagrangian family does not move and does not rename.</strong> Ten of the hundred and twenty-two begin with <em>The Lagrangian</em>, and <code>lagrangian-migration.md</code> fixes that prefix, its slots and its counts. <strong>They are T0 in title and slug and may be T1 in section at most.</strong> A migration that renames them reopens a finished job.</p>
+<p><strong>The six electromagnetic exercises do not move and do not change title.</strong> They are problems, and the frame does not change a problem. They sit in sub-sections $1$ and $2$ of the electromagnetic section, where they already are.</p>
+<h3 id="114-the-eleven-new-articles">11.4 The Eleven New Articles</h3>
+<p><strong>Eleven, not a hundred. Each one exists because the frame adds a structure that no existing article states.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>slug</th>
+<th>subject</th>
+<th>section</th>
+<th>phase</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>the-fourth-colour-as-the-unit-line</code></td>
+<td>declaration (A): why the fourth colour is $\mathbb{C}e_t$, and what it rests on</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>the-pati-salam-group-in-the-biquaternion-framework</code></td>
+<td>the frame: $21=15+3+3$, the $16$, the two-sided structure</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>the-breaking-chain-in-pati-salam-form</code></td>
+<td>the three scales and the chain as one object</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>the-boson-spectrum-and-the-three-neutral-states</code></td>
+<td>$9$ massless against $12$ massive; the photon, $Z$, $Z_R$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>5</td>
+<td><code>the-leptoquark-sector-and-its-bounds</code></td>
+<td>the six, $K_L\to\mu e$, proton stability, the lower bound on $M_{PS}$</td>
+<td>$3$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>6</td>
+<td><code>the-colour-wall-restated</code></td>
+<td>what the larger group moves and what it does not</td>
+<td>$3$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>7</td>
+<td><code>the-scalar-sector-and-the-bidoublet</code></td>
+<td>$(4,1,2)$, $(1,2,2)$, $(15,2,2)$, and the line problem</td>
+<td>$4$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>8</td>
+<td><code>the-anomaly-ledger-in-pati-salam-form</code></td>
+<td>four conditions become none, with the cubic cancellation written out</td>
+<td>$4$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>9</td>
+<td><code>the-photon-as-the-unbroken-mixture</code></td>
+<td>the three neutral generators and the state that survives the breaking</td>
+<td>$5$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>10</td>
+<td><code>charge-quantisation-from-the-fourth-colour</code></td>
+<td>$\operatorname{tr}_{\mathbf4}(B-L)=0$, and $D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>$5$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>11</td>
+<td><code>the-pati-salam-ledger</code></td>
+<td>the hub: what changes, what does not, the two walls, the tiers</td>
+<td>$7$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The count is small for a reason.</strong> Ten of the eleven state something the corpus already contains in scattered form — the frame, the chain, the couplings, the anomalies, charge quantisation, the scalar obstruction, the ledger. <strong>Only the first is a new claim</strong>, and it is a declared assumption with an argument, not a result.</p>
+<p><strong>The one article that must be written before any other is number 1.</strong> It is the declaration (A) of §1.3, and every other new article depends on it. Writing the frame article first would hide the assumption inside a definition; writing the declaration first makes it inspectable and refutable.</p>
+<h3 id="115-the-electromagnetic-section-and-what-the-dissolution-costs">11.5 The Electromagnetic Section, and What the Dissolution Costs</h3>
+<p><strong>No electromagnetic article changes its title, and no equation in one is rewritten.</strong> Twenty-nine articles, zero renames, six exercises frozen. <strong>Maxwell's equations are not in Pati–Salam form and should not be</strong>: they are exact at every scale, and no breaking scale enters them. What changes is the section the twenty-nine sit in, and the gain is that the frame is stated once, in their own section, at its end.</p>
+<p><strong>The five sub-sections, with the counts checked.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>sub-section</th>
+<th>articles</th>
+<th>tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The Field, Its Invariants and Its Potentials</td>
+<td>$9$</td>
+<td>T0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Null Fields, Radiation and Congruences</td>
+<td>$9$</td>
+<td>T0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>The Field in Media</td>
+<td>$4$</td>
+<td>T0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Deformations, Speculative Sectors and External Programmes</td>
+<td>$7$</td>
+<td>T0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The Field's Gauge Origin</td>
+<td>$0$ existing, $2$ new</td>
+<td>T4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The five sum to $9+9+4+7+0=29$, which is the whole category</strong>, and the two new articles of sub-section $5$ are numbers $9$ and $10$ of §11.4.</p>
+<p><strong>The order reverses the breaking-chain rule, and the reversal is the point.</strong> Everywhere else a section may use only groups an earlier section introduced, so the frame opens the section. Here the field opens and the frame closes, because <strong>the electromagnetic equations do not need the group</strong>: a reader who wants Maxwell should meet Maxwell, and the question <em>why is the photon what it is</em> is asked only after the field has been used. <strong>This is the discovery mitigation of §11.2 turned into structure.</strong></p>
+<p><strong>What sub-section $5$ contains, and why it is only two articles.</strong> It states the photon as the unbroken combination and it states charge quantisation as tracelessness — the two facts that become <em>new</em> once the field is placed inside the group. Everything else the frame adds about electromagnetism is already written elsewhere — the photon and the three neutral states in new article $4$, the couplings and $\sin^2\theta_W(M_{PS})=\tfrac38$ in §5 of this note, the mixing in the electroweak section — and sub-section $5$ points there instead of repeating it. <strong>A section that repeated them would be the start of the thousand-page fabrication this migration refuses.</strong></p>
+<p><strong>The dissolution has five textual casualties, and they are the whole of the manual work.</strong> A category name that appears in prose does not disappear when the menu line goes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>file</th>
+<th>what is stale</th>
+<th>fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>physics.md</code></td>
+<td>the <code>## Biquaternion Electromagnetism</code> line</td>
+<td>delete it; demote its links under section $5$</td>
+</tr>
+<tr>
+<td><code>articles_internal/ai-physics-overview.md</code></td>
+<td>one <code>##</code> block</td>
+<td>none: regenerated by <code>build.py</code></td>
+</tr>
+<tr>
+<td><code>articles_physics/the-algebrodynamical-programme-…md</code></td>
+<td>"the other external programmes in <em>Biquaternion Electromagnetism</em>"</td>
+<td>name the new section</td>
+</tr>
+<tr>
+<td><code>articles_physics/the-dirac-object-every-article-on-one-equation.md</code></td>
+<td>a <code>### Biquaternion Electromagnetism</code> heading</td>
+<td>demote it and name the new section</td>
+</tr>
+<tr>
+<td><code>articles_internal/internal-note-on-the-electroweak-interaction-in-the-corpus.md</code></td>
+<td>"<em>Biquaternion Electromagnetism</em> has twenty-nine articles"</td>
+<td>say <em>the electromagnetic section</em></td>
+</tr>
+<tr>
+<td><code>articles_internal/internal-summary-of-the-biquaternion-electromagnetism.md</code></td>
+<td>its title and its opening line</td>
+<td>retitle it; the content stands</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Six rows, one of them generated, so five edits.</strong> That is a smaller job than the eight renames, and it is the price of this revision's one structural gain.</p>
+<p><strong>If the dissolution is judged too expensive, the fallback is one line.</strong> Keep <code>## Biquaternion Electromagnetism</code> and rename it <em>in Pati–Salam Form</em>, with the same five sub-sections and the same two new articles — <strong>the content of §11.3 to §11.5 then does not change at all, only which <code>##</code> line owns it.</strong> The dissolution is the better reading of the frame; the fallback is the better reading of a reader's habits. <strong>Both are defensible, and both require the two new articles and the five-sub-section structure.</strong></p>
+<h3 id="116-the-rename-list">11.6 The Rename List</h3>
+<p><strong>Eight titles change, and the list is exhaustive.</strong> All eight are in the particle category; <strong>not one of the twenty-nine electromagnetic articles is renamed</strong>, and two particle titles are deliberately kept for the reasons below.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>current title</th>
+<th>proposed title</th>
+<th>tier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Electroweak Gauge Group and the Hypercharge Assignment</td>
+<td>… <strong>in Pati–Salam Form</strong>: the Group and the Derived $Y$</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors</td>
+<td>The Standard Model <strong>as the Low-Energy Phase</strong>: The U(2) Ceiling and the Four Unbuilt Sectors</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall</td>
+<td>Quantum Chromodynamics <strong>as the Residual of $\mathrm{SU}(4)$</strong>: The Colour Wall, Restated</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>Anomalies and Anomaly Cancellation in Biquaternionic Form</td>
+<td>… <strong>in Pati–Salam Form</strong>: Four Conditions Become None</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>Custodial Symmetry and the Rho Parameter in Biquaternionic Form</td>
+<td>… <strong>: From Accidental to Gauged</strong></td>
+<td>T3</td>
+</tr>
+<tr>
+<td>The Weinberg Angle, the Neutral Current and the $Z$ Coupling</td>
+<td>The Weinberg Angle <strong>at the Pati–Salam Scale</strong>: $\tfrac38$ and the Three Neutral States</td>
+<td>T3</td>
+</tr>
+<tr>
+<td>The W and Z Bosons in Biquaternionic Form</td>
+<td>The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form</td>
+<td>T2</td>
+</tr>
+<tr>
+<td>The Gluon: An Octet Outside the Biquaternion Algebra</td>
+<td>The Gluon: An Octet <strong>Inside the Carrier's Group</strong></td>
+<td>T3</td>
+</tr>
+<tr>
+<td>The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock</td>
+<td><em>(unchanged; the parity lock is a statement about the quotient)</em></td>
+<td>T2</td>
+</tr>
+<tr>
+<td>Grand Unification in the Biquaternion Framework: Where the Embedding Fails</td>
+<td><em>(unchanged; the failure is real and the article records it)</em></td>
+<td>T3</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two entries are deliberately not renamed, and the reason matters.</strong></p>
+<p><em>The parity lock</em> is a statement about $\mathrm{U}(2)$, the quotient, and the glue $\{\pm e_t\}$; it does not depend on which larger group contains the pair, so its title stays true and only a frame paragraph is added.</p>
+<p><em>Where the Embedding Fails</em> is the corpus's recorded refusal to identify its own $\mathfrak{su}(4)$ with the Pati–Salam $\mathrm{SU}(4)_c$ — the refusal quoted in §1.3. <strong>The migration must not quietly reverse it.</strong> The article becomes T3 in the opposite direction from the rest: it gains a section stating the two readings of the failure — <em>the identification is not available</em> and <em>the identification is available once the fourth colour is declared to be the unit line</em> — and it says which one the corpus now adopts and why. <strong>An assumption that overwrites the article that documented its absence would be the single worst outcome of this migration.</strong></p>
+<h3 id="117-what-must-not-be-touched">11.7 What Must Not Be Touched</h3>
+<p><strong>Five freeze lists, each with its authority.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>frozen thing</th>
+<th>count</th>
+<th>authority</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the <em>The Lagrangian</em> prefix, its slots and its titles</td>
+<td>$60$ corpus-wide, $10$ in scope</td>
+<td><code>lagrangian-migration.md</code></td>
+</tr>
+<tr>
+<td>the group names $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$ and their identification sentences</td>
+<td>every article that names them</td>
+<td><code>SU2-migration.md</code>, <code>SU3-meaning.md</code>, <code>SU4-meaning.md</code></td>
+</tr>
+<tr>
+<td>the six electromagnetic exercises</td>
+<td>$6$</td>
+<td>they are problems, and the frame does not change a problem</td>
+</tr>
+<tr>
+<td>the articles below $M_{PS}$</td>
+<td>$541$ outside the category; of the $122$ inside it, $8$ are renamed and the rest keep title and text</td>
+<td>the physics is unchanged</td>
+</tr>
+<tr>
+<td>the slugs, the file names and the sitemaps</td>
+<td>all</td>
+<td>URL stability</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And one prohibition inside the articles in scope.</strong> No article may present the translation as a derivation. The phrase <em>derived from the algebra</em> is allowed for $\mathfrak{su}(4)$ as the group of the carrier and forbidden for the identification of that group with $\mathrm{SU}(4)_c$, which is declaration (A). <strong>The distinction is one sentence long and it is the whole integrity of the migration.</strong></p>
+<h3 id="118-the-phases">11.8 The Phases</h3>
+<p><strong>Six phases, ordered so that each one is checkable before the next begins.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>phase</th>
+<th>work</th>
+<th>articles touched</th>
+<th>check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>declare (A)</td>
+<td>$1$ new</td>
+<td>the declaration says what it rests on and what it does not claim</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>the frame and the chain</td>
+<td>$3$ new</td>
+<td>the group, the $16$ and the three scales are stated once, and $21=8+1+6+3+3$ closes against $9$ massless and $12$ massive</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>the sectors and the residual</td>
+<td>$6$ new</td>
+<td>leptoquarks, the colour wall, the bidoublet, the anomalies, the photon and charge quantisation, each verified in exact arithmetic</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>the ledger</td>
+<td>$1$ new</td>
+<td>every claim of the migration appears once, with its status</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>restructure the menu and dissolve the category</td>
+<td>$0$</td>
+<td>$122$ articles appear exactly once; the <code>##</code> count falls from $12$ to $11$; the five textual casualties of §11.5 are repaired</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>the eight renames and the framing paragraphs</td>
+<td>$8$</td>
+<td>every renamed article's first paragraph states the frame</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The order is not arbitrary.</strong> Phases $0$ to $3$ are authorship and can be done with no menu change at all, so the corpus is never in a state where a section points at a page that does not exist. <strong>Phase $4$ is the only step that touches <code>physics.md</code></strong>, and it is the deletion of one <code>##</code> line, the demotion of its links and a reordering of existing ones, which is reversible by a single git checkout.</p>
+<p><strong>The residual risk, named.</strong> A menu restructure that lands before the new articles exist produces empty sections, and an empty section is worse than a misplaced article. <strong>Phase $4$ therefore comes after phases $0$ to $3$, and the check is mechanical: every link in the new sections must resolve.</strong></p>
+<h3 id="119-what-the-migration-buys-and-what-it-costs">11.9 What the Migration Buys, and What It Costs</h3>
+<p><strong>The buy, in four lines, each already computed in this note.</strong></p>
+<p>The corpus stops describing nature with a group it cannot build: $\mathfrak{su}(4)$ is the group of its own carrier.</p>
+<p>Hypercharge becomes a combination instead of an import, $Y=T_{3R}+\tfrac12(B-L)$.</p>
+<p>Charge quantisation becomes tracelessness, $\operatorname{tr}_{\mathbf4}(B-L)=3\cdot\tfrac13-1=0$, which is the corpus's $D=\operatorname{diag}(-3,1,1,1)$.</p>
+<p>Four anomaly conditions become none, and the cubic one cancels as $-\tfrac89+\tfrac89=0$ between the quartet and its conjugate.</p>
+<p><strong>The cost, in four lines.</strong></p>
+<p>Eleven new articles, eight renames and five text repairs, which is a month of careful writing and not a weekend.</p>
+<p>One assumption becomes load-bearing: (A), the fourth colour as the unit line. <strong>Everything in phases $1$ to $5$ leans on it</strong>, and if it is wrong the corpus has a renamed menu and a false frame.</p>
+<p>One category leaves the menu, so the corpus's most common entry point becomes a section rather than a page; the section title, its first sub-section and the heading id pay for it, and the price is real (§11.2).</p>
+<p>Two walls do not move. The chiral carrier and the spin-zero carrier are exactly where they were, so the corpus's two deepest obstructions survive a migration that is otherwise its largest structural gain.</p>
+<p><strong>The verdict on the migration.</strong> Worth doing, in this order, with the declaration first and the menu last. <strong>The corpus already knows how to run a migration of this shape</strong> — the Lagrangian one renamed sixty articles and rebuilt a family under a freeze sentence, and the $\mathrm{SU}(2)$ one renamed three and rewrote twenty-eight. This one is smaller than the first and larger than the second, and it has the same discipline: <strong>one freeze sentence, one ledger, one check per phase.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The frame.</strong> $G_{PS}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, dimension $21$, rank $5$, with $\mathbf{15}=\mathbf8_0\oplus\mathbf1_0\oplus\mathbf3\oplus\bar{\mathbf3}$ and matter $\Psi_L=(\mathbf4,\mathbf2,\mathbf1)$, $\Psi_R=(\bar{\mathbf4},\mathbf1,\mathbf2)$.</p>
+<p><strong>Strong.</strong> Gluons are $8=15-1-6$ of the fifteen, in the same multiplet as the leptoquarks; $g_3=g_4$ at $M_{PS}$; $N_c=4-1$; confinement unchanged; the leptoquarks are the price.</p>
+<p><strong>Weak.</strong> $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ with the doublets of §3.1, $Q=T_{3L}+T_{3R}+\tfrac12(B-L)$, hypercharge demoted to a combination, $\nu_R$ promoted to necessary, custodial promoted from accidental to the diagonal of a gauged pair, $\rho=1$ by symmetry and repaired in scalars.</p>
+<p><strong>Electromagnetic.</strong> $1/e^{2}=1/g_L^{2}+1/g_R^{2}+1/(4g_{B-L}^{2})$, the photon as a mixture of three neutral fields, and charge quantisation from $\operatorname{tr}_{\mathbf4}(B-L)=3\cdot\tfrac13-1=0$, which is the corpus's $D=\operatorname{diag}(-3,1,1,1)$ read as a charge.</p>
+<p><strong>Couplings.</strong> $g_3=g_L=g_R=g_4$ and $g_{B-L}=\sqrt{3/8}\,g_4$ at $M_{PS}$, giving $\sin^{2}\theta_W(M_{PS})=3/8$ both from the mixing and from $\operatorname{tr}(T_{3L}^{2})/[\operatorname{tr}(T_{3L}^{2})+\operatorname{tr}(Y^{2})]=2/(16/3)$.</p>
+<p><strong>Anomalies.</strong> Four conditions, all automatic, the cubic one cancelling between the $\mathbf4$ and the $\bar{\mathbf4}$ as $-\tfrac89+\tfrac89$.</p>
+<p><strong>The declaration.</strong> (A): the fourth colour is $\mathbb{C}e_t$, the only line no automorphism moves. The corpus refuses the identification; this note states it as an assumption and translates conditionally.</p>
+<p><strong>The ledger.</strong> Four rows improve, four unchanged, two worse. The walls do not move.</p>
+<p><strong>The migration.</strong> One of the twelve categories is renamed and one is dissolved into it, leaving eleven; $122$ articles are in scope and $541$ are not; eleven articles are added, eight titles change and no slug moves. The menu is restructured last: the rewritten particle category takes eight sections in the order of the breaking chain — the unified group, the chain, then strong, electroweak and electromagnetic — so that no section uses a group a previous section has not introduced. <strong>The electromagnetic category becomes the fifth of those sections</strong>, keeping its twenty-nine articles and its six exercises unrenamed, its equations exact, and its frame stated once at its end. The declaration (A) is written before the frame, and the article that records the embedding failure is rewritten rather than overruled.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G_{PS}$</td>
+<td>$\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, dimension $21$</td>
+</tr>
+<tr>
+<td>$\mathbf4$, $\bar{\mathbf4}$</td>
+<td>the quartet and its conjugate, colour triplet plus lepton number</td>
+</tr>
+<tr>
+<td>$\mathbf8_0,\mathbf1_0,\mathbf3,\bar{\mathbf3}$</td>
+<td>the adjoint split: gluons, $B-L$ boson, leptoquarks</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>$-\tfrac13\operatorname{diag}(-3,1,1,1)$ with $e_t$ the lepton, traceless on the quartet</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>the corpus's $\operatorname{diag}(-3,1,1,1)$, the relative phase of unit and vector part</td>
+</tr>
+<tr>
+<td>$T_{3L},T_{3R}$</td>
+<td>the two Cartan generators, one per $\mathrm{SU}(2)$</td>
+</tr>
+<tr>
+<td>$Y=T_{3R}+\tfrac12(B-L)$</td>
+<td>hypercharge, a derived combination, not a fundamental $\mathrm{U}(1)$</td>
+</tr>
+<tr>
+<td>$(4,1,2)_H$</td>
+<td>the scalar that breaks $\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$(1,2,2)_H$</td>
+<td>the bidoublet that breaks the electroweak factor</td>
+</tr>
+<tr>
+<td>$\Psi_L,\Psi_R$</td>
+<td>$(\mathbf4,\mathbf2,\mathbf1)$ and $(\bar{\mathbf4},\mathbf1,\mathbf2)$, the sixteen</td>
+</tr>
+<tr>
+<td>$M_{PS}$</td>
+<td>the $\mathrm{SU}(4)$ breaking scale, a parameter</td>
+</tr>
+<tr>
+<td>(A)</td>
+<td>the declaration that the fourth colour is $\mathbb{C}e_t$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_internal/the-pati-salam-model.md</code>, for the model, the scalar sector and the observational ledger.</li>
+<li><code>articles_internal/SU4-meaning.md</code>, for $\mathfrak{su}(4)$ as the whole group of the carrier, $\mathbf{15}=\mathbf8+\mathbf1+\mathbf6$, $D=\operatorname{diag}(-3,1,1,1)$, and the explicit refusal to identify it with $\mathrm{SU}(4)_c$.</li>
+<li><code>articles_internal/SU3-meaning.md</code>, for $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$ and the canonical line.</li>
+<li><code>articles_internal/SU2-meaning.md</code>, for $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R=\exp L(\mathfrak{k})\times\exp R(\mathfrak{k})$.</li>
+<li><code>articles_internal/pati-salam-versus-left-right.md</code>, for the $\mathbb{CP}^3$ that separates Pati–Salam from the left–right model.</li>
+<li><code>articles_internal/SU2L-x-SU2R-meaning.md</code>, for the group, the two modules and the chiral wall.</li>
+<li><code>articles_internal/internal-note-on-the-electroweak-interaction-in-the-corpus.md</code>, for the four levels of the chiral wall.</li>
+<li><code>articles_physics/left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.md</code>, for the literature's construction and the corpus's warning.</li>
+<li><code>articles_internal/lagrangian-migration.md</code>, for the precedent the migration of §11 follows: one prefix, one freeze sentence, sixty articles renamed under it.</li>
+<li><code>articles_internal/SU2-migration.md</code>, for the naming rule the renames obey — the name stays, the display goes.</li>
+</ul>
+<p><strong>The traps.</strong> Do not read (A) as a derivation; the corpus explicitly refuses the identification and this note translates under a declared assumption. Do not read the reduction to one coupling as a prediction at accessible energy; $3/8$ is a boundary condition at $M_{PS}$. Do not read "hypercharge is derived" as "the Standard Model is wrong"; the Standard Model is the low-energy phase and its statements below $M_{PS}$ are unchanged. Do not read the anomaly cancellation as evidence for Pati–Salam over the Standard Model; it is evidence that the sixteen is the natural multiplet.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
