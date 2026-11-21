@@ -75,13 +75,13 @@ which is the charge spectrum of one generation's worth of states in the four mul
 The conjugate idempotent
 
 $$
-\Pi^c = \alpha_1^\dagger\alpha_2^\dagger\alpha_3^\dagger\,\alpha_3\alpha_2\alpha_1
+\Pi_c = \alpha_1^\dagger\alpha_2^\dagger\alpha_3^\dagger\,\alpha_3\alpha_2\alpha_1
 $$
 
 is also primitive, is orthogonal to $\Pi$, and generates a second eight-dimensional left ideal. The literature's interpretation takes its states to be the conjugates of the first ideal's states, with the charges negated, so that the sixteen states of the two ideals together are
 
 $$
-\boxed{\;\underbrace{1(0)+3(\tfrac13)+3(\tfrac23)+1(1)}_{S^u} \ \oplus\ \underbrace{1(0)+3(-\tfrac13)+3(-\tfrac23)+1(-1)}_{S^{u,c}}\;},
+\boxed{\;\underbrace{1(0)+3(\tfrac13)+3(\tfrac23)+1(1)}_{S^u} \ \oplus\ \underbrace{1(0)+3(-\tfrac13)+3(-\tfrac23)+1(-1)}_{S_{u,c}}\;},
 $$
 
 and this is one generation: the two neutral states, the three up-type and three down-type colour states and their conjugates, and the electron and the positron. The identification of the second ideal's spectrum with the negated spectrum of the first is the literature's bookkeeping rather than a computation reproduced in the corpus, and the mathematics article that establishes the first ideal records exactly this bookkeeping of the conjugate half as not reproduced. It is the first of two places in the construction where an interpretation is doing work.
@@ -197,7 +197,7 @@ The complex octonionic chain algebra is $\mathrm{Cl}(6)\cong M_8(\mathbb{C})$; F
 | $\Lambda_1,\dots,\Lambda_8$ | Generators of the intrinsic $\mathrm{su}(3)$ |
 | $f_{abc}$ | Structure constants of $\mathrm{su}(3)$, all three indices low |
 | $\Pi = \alpha_1\alpha_2\alpha_3\alpha_3^\dagger\alpha_2^\dagger\alpha_1^\dagger$ | Primitive idempotent; rank one |
-| $S^u = \mathrm{Cl}(6)\Pi$, $S^{u,c} = \mathrm{Cl}(6)\Pi^c$ | The two eight-dimensional minimal left ideals |
+| $S^u = \mathrm{Cl}(6)\Pi$, $S_{u,c} = \mathrm{Cl}(6)\Pi_c$ | The two eight-dimensional minimal left ideals |
 | $\mathbf 6 = \mathbf 3_{2/3}\oplus\bar{\mathbf 3}_{-2/3}$ | Branching of the six-space under $\mathrm{su}(3)\oplus\mathrm{u}(1)$ |
 | $\mathbf 4 = \mathbf 3_{1/3}\oplus\mathbf 1_{-1}$, $\bar{\mathbf 4} = \bar{\mathbf 3}_{-1/3}\oplus\mathbf 1_{1}$ | Branching of the two spinors of $\mathrm{so}(6,\mathbb{C})$ |
 | $\mathrm{so}(3,1)_{\mathbb C} \cong \mathrm{su}(2)_L\oplus\mathrm{su}(2)_R \subset \mathrm{so}(6,\mathbb{C})$ | Complexified Lorentz algebra, inside or outside the internal algebra as the interpretation chooses |

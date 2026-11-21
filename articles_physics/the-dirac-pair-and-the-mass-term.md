@@ -163,7 +163,7 @@ A Dirac field describes two spin states of a particle and two of its antiparticl
 A Majorana spinor is one that equals its own charge conjugate:
 
 $$
-\Psi=\Psi^{c},
+\Psi=\Psi_{c},
 $$
 
 which is a **reality condition** and therefore antilinear. It reduces the four complex components to four real ones, and it is available only when the conjugation is an involution on the field's space and commutes with the equation.
@@ -201,7 +201,7 @@ A Weyl spinor is one chirality; the Dirac spinor is the direct sum of the two in
 | $\gamma^{5}$ | the chirality grading, $\mathrm{diag}(-1,-1,+1,+1)$ |
 | $P_{\pm}=\tfrac12(1\pm\gamma^{5})$ | the chirality projectors |
 | $k_m=mc/\hbar$ | the mass wave number |
-| $\Psi^{c}$ | the charge conjugate |
+| $\Psi_{c}$ | the charge conjugate |
 
 ## Further Reading
 

@@ -37,7 +37,7 @@ Three blocks, and the middle one carries the phase twice.
 
 **The second block is the mass shell before it is a shell.** Its bracket is $\lvert\partial\theta_{\mathrm{pha}}\rvert^{2}$ with the material signs, so the truncated action is the statement that this bracket equals $k_{m}^{2}$ — and that is the mass shell with $S=\hbar\theta_{\mathrm{pha}}$.
 
-**Why the middle block cannot be the scale's partner.** In the general element the action is the sigma-model form $g_{ab}(p)\,\partial p^{a}\partial p^{b}$ with a metric on the eight parameters, and the central field is its restriction to two coordinates. **The scale's block and the angle's block are two diagonal blocks of one metric**, and the order is a property of the coordinate: derivatives of the scale are order $\epsilon$ and derivatives of the angle are order zero.
+**Why the middle block cannot be the scale's partner.** In the general element the action is the sigma-model form $g_{ab}(p)\,\partial p_{a}\partial p_{b}$ with a metric on the eight parameters, and the central field is its restriction to two coordinates. **The scale's block and the angle's block are two diagonal blocks of one metric**, and the order is a property of the coordinate: derivatives of the scale are order $\epsilon$ and derivatives of the angle are order zero.
 
 **The pairing. Inherited, and the deletion is the check.** The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$, and the limit's action is a sum of squares of real derivatives of $\varrho$ and $\theta_{\mathrm{pha}}$. Deleting the block that carries the second derivatives of the scale removes a real term; what remains is a real term. **A deletion that removes a real block preserves reality**, and that is the only statement the limit needs about the pairing.
 

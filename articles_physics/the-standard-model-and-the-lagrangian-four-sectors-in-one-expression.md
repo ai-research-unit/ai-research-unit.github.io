@@ -58,11 +58,11 @@ where the right-hand side is contracted with the metric $(+,-,-,-)$ of the inter
 **The field strengths.** Each factor of the product carries one,
 
 $$
-G^a_{\mu\nu}=\frac{\partial G^a_\nu}{\partial R_\mu}-\frac{\partial G^a_\mu}{\partial R_\nu}+g_s\sum_{b,c}f_{abc}G^b_\mu G^c_\nu ,
+G_{a,\mu\nu}=\frac{\partial G_{a,\nu}}{\partial R_\mu}-\frac{\partial G_{a,\mu}}{\partial R_\nu}+g_s\sum_{b,c}f_{abc}G_{b,\mu} G_{c,\nu} ,
 $$
 
 $$
-W^a_{\mu\nu}=\frac{\partial W^a_\nu}{\partial R_\mu}-\frac{\partial W^a_\mu}{\partial R_\nu}+g\sum_{b,c}\varepsilon_{abc}W^b_\mu W^c_\nu ,
+W_{a,\mu\nu}=\frac{\partial W_{a,\nu}}{\partial R_\mu}-\frac{\partial W_{a,\mu}}{\partial R_\nu}+g\sum_{b,c}\varepsilon_{abc}W_{b,\mu} W_{c,\nu} ,
 \qquad
 B_{\mu\nu}=\frac{\partial B_\nu}{\partial R_\mu}-\frac{\partial B_\mu}{\partial R_\nu} .
 $$
@@ -72,12 +72,12 @@ The colour structure constants are $f_{abc}$ and the weak ones are $\varepsilon_
 **The kinetic terms.** Three, one per factor,
 
 $$
-\mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}-\tfrac14\sum_{a,\mu,\nu}W^a_{\mu\nu}W^a_{\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu} .
+\mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\mu,\nu}G_{a,\mu\nu}G_{a,\mu\nu}-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu} .
 $$
 
 The three coefficients are equal because each factor's gauge field is normalised so that its kinetic term has unit coefficient. That normalisation is what makes the three couplings independent numbers; a rescaling of any one field moves a constant between the kinetic term and the coupling, and the product $g_sF$ is what the physics sees.
 
-**Three, not one.** The three kinetic terms do not mix. A term $G_{\mu\nu}W_{\mu\nu}$ would be forbidden by the product structure, since the two fields carry different quantum numbers and no invariant contraction exists. Mixing of the neutral fields happens at the level of the mass matrix and the currents, not at the level of the kinetic terms, and the mixing is a rotation of $W^3_\mu$ and $B_\mu$ that leaves the kinetic terms in the form above.
+**Three, not one.** The three kinetic terms do not mix. A term $G_{\mu\nu}W_{\mu\nu}$ would be forbidden by the product structure, since the two fields carry different quantum numbers and no invariant contraction exists. Mixing of the neutral fields happens at the level of the mass matrix and the currents, not at the level of the kinetic terms, and the mixing is a rotation of $W_{3,\mu}$ and $B_\mu$ that leaves the kinetic terms in the form above.
 
 ## The Fermion Sector
 
@@ -92,10 +92,10 @@ with $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ the Dirac adjoint of the corpus, a
 **The covariant gradient.** Its action on a field in the representation $(\mathbf{3}$ or $\mathbf{1},\mathbf{2}$ or $\mathbf{1},Y)$ is the one of *Operator and Calculus Conventions*, §*The Gradient*, and it reads
 
 $$
-\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\psi}=\tilde\nabla_\Phi\tilde\Xi_{\psi}+\frac{i\,ϙ}{\hbar}\Bigl(\sum_a T^a_\psi G^a+\sum_a\tau^a_\psi W^a+Y_\psi B\Bigr)\tilde\Xi_{\psi} ,
+\tilde\nabla_{\mathrm{gco},\Phi}\tilde\Xi_{\psi}=\tilde\nabla_\Phi\tilde\Xi_{\psi}+\frac{i\,ϙ}{\hbar}\Bigl(\sum_a T_{a,\psi} G_{a}+\sum_a\tau_{a,\psi} W_{a}+Y_\psi B\Bigr)\tilde\Xi_{\psi} ,
 $$
 
-with $T^a_\psi$ the colour generators in the representation of $\psi$ and $\tau^a_\psi$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.
+with $T_{a,\psi}$ the colour generators in the representation of $\psi$ and $\tau_{a,\psi}$ the weak ones. The bracket is the connection in that representation, and it is the same object for all fifteen fields of a generation, differing only in which generators act and with which hypercharge.
 
 **Why the term is one term and not fifteen.** The fifteen Weyl fields of a generation carry fifteen different connections and fifteen different hypercharges, so the display above is fifteen terms in one line. That is the whole of the fermion sector: a kinetic term per field, and no mass term.
 
@@ -116,7 +116,7 @@ with the potential and the kinetic term
 $$
 \mathcal{L}_{H}=-\sum_\mu\left(D_\mu\varphi\right)^{\dagger}\left(D_\mu\varphi\right)+\mu^2\varphi^{\dagger}\varphi-\lambda\left(\varphi^{\dagger}\varphi\right)^2 ,
 \qquad
-D_\mu\varphi=\frac{\partial\varphi}{\partial R_\mu}+i\frac{g}{2}\sum_a\tau_aW^a_\mu\varphi+i\frac{g_{\mathrm Y}}{2}B_\mu\varphi .
+D_\mu\varphi=\frac{\partial\varphi}{\partial R_\mu}+i\frac{g}{2}\sum_a\tau_aW_{a,\mu}\varphi+i\frac{g_{\mathrm Y}}{2}B_\mu\varphi .
 $$
 
 The signs are the corpus's, by the rule of §*The Dictionary*: the kinetic term carries the minus, and the potential appears with $+\mu^2$ and $-\lambda$ because $\mathcal{L}\supset -V$.
@@ -144,10 +144,10 @@ The value of $v$ is not computed here; it is the entry 18 of the parameter table
 **The term.** Three coupling matrices, one per fermion type,
 
 $$
-\mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y^{d}_{ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y^{u}_{ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y^{e}_{ab}\,e_{R,b}\Bigr)+\text{h.c.},
+\mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.},
 $$
 
-with $a,b=1,2,3$ the generation labels and $Y^{u}$, $Y^{d}$, $Y^{e}$ general complex $3\times3$ matrices.
+with $a,b=1,2,3$ the generation labels and $Y_{u}$, $Y_{d}$, $Y_{e}$ general complex $3\times3$ matrices.
 
 **The conjugate doublet.** The up-type term cannot use $\varphi$, and this is the one place in the assembly where a second scalar object is needed. The conjugate doublet is
 
@@ -170,7 +170,7 @@ and it is not an independent field: it is the same doublet read through the conj
 **The masses after breaking.** With $\langle\varphi\rangle=(0,v/\sqrt2)$, each matrix becomes a mass matrix,
 
 $$
-M_f=\frac{v}{\sqrt2}\,Y^{f},
+M_f=\frac{v}{\sqrt2}\,Y_{f},
 \qquad
 f=u,d,e ,
 $$
@@ -186,16 +186,16 @@ and the physical masses are the singular values of $M_f$, obtained by bi-unitary
 $$
 \boxed{\;
 \begin{aligned}
-\mathcal{L}_{\mathrm{SM}}={}&-\tfrac14\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}-\tfrac14\sum_{a,\mu,\nu}W^a_{\mu\nu}W^a_{\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu}\\[2pt]
+\mathcal{L}_{\mathrm{SM}}={}&-\tfrac14\sum_{a,\mu,\nu}G_{a,\mu\nu}G_{a,\mu\nu}-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu}\\[2pt]
 &+\sum_{\psi}\bar{\tilde\Xi}_{\psi}\,i\,\tilde\nabla_{\mathrm{gco},\Phi}\,\tilde\Xi_{\psi}\\[2pt]
 &-\sum_\mu\left(D_\mu\varphi\right)^{\dagger}\left(D_\mu\varphi\right)+\mu^2\varphi^{\dagger}\varphi-\lambda\left(\varphi^{\dagger}\varphi\right)^2\\[2pt]
-&-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y^{d}_{ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y^{u}_{ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y^{e}_{ab}\,e_{R,b}\Bigr)+\text{h.c.}\\[2pt]
-&+\frac{\theta_{\mathrm{QCD}}}{32\pi^2}\sum_{\mu,\nu,a}G^a_{\mu\nu}G^a_{\mathrm{dual},\mu\nu} .
+&-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}\\[2pt]
+&+\frac{\theta_{\mathrm{QCD}}}{32\pi^2}\sum_{\mu,\nu,a}G_{a,\mu\nu}G_{a,\mathrm{dual},\mu\nu} .
 \end{aligned}
 \;}
 $$
 
-**The fifth line.** The vacuum-angle term belongs to the strong sector and is separated for a reason: it is a total derivative, so it changes no equation of motion, and its effect is entirely quantum. It is written in the normalisation of [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html), with $G^a_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}G^a_{\rho\sigma}$.
+**The fifth line.** The vacuum-angle term belongs to the strong sector and is separated for a reason: it is a total derivative, so it changes no equation of motion, and its effect is entirely quantum. It is written in the normalisation of [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html), with $G_{a,\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}G_{a,\rho\sigma}$.
 
 **What the display is.** It is a Lagrangian density of dimension four, and every term in it is either a kinetic term or a term of the same dimension. That is not an accident of the list; it is the definition of renormalisability, and the next section counts what the condition permits.
 
@@ -215,8 +215,8 @@ and the analogous laws for $W_\mu$ with $U_L$ and for $B_\mu$ with the phase alo
 
 | Term | How it transforms | Why it is invariant |
 |---|---|---|
-| $-\tfrac14G^a_{\mu\nu}G^a_{\mu\nu}$ | $G_{\mu\nu}\mapsto U_cG_{\mu\nu}U_c^{\dagger}$ | the trace of a product is cyclic, and $U_c^{\dagger}U_c=1$ |
-| $-\tfrac14W^a_{\mu\nu}W^a_{\mu\nu}$ | $W_{\mu\nu}\mapsto U_LW_{\mu\nu}U_L^{\dagger}$ | the same |
+| $-\tfrac14G_{a,\mu\nu}G_{a,\mu\nu}$ | $G_{\mu\nu}\mapsto U_cG_{\mu\nu}U_c^{\dagger}$ | the trace of a product is cyclic, and $U_c^{\dagger}U_c=1$ |
+| $-\tfrac14W_{a,\mu\nu}W_{a,\mu\nu}$ | $W_{\mu\nu}\mapsto U_LW_{\mu\nu}U_L^{\dagger}$ | the same |
 | $-\tfrac14B_{\mu\nu}B_{\mu\nu}$ | $B_{\mu\nu}\mapsto B_{\mu\nu}$ | the abelian curvature is a derivative of a scalar phase |
 | fermion kinetic | $\bar{\tilde\Xi}\mapsto\bar{\tilde\Xi}U^{\dagger}$, $\tilde\nabla_\Phi\tilde\Xi\mapsto U\tilde\nabla_\Phi\tilde\Xi$ | $U^{\dagger}U=1$, and the derivative is covariant |
 | scalar kinetic | $D_\mu\varphi\mapsto U_\varphi D_\mu\varphi$ | the same, with the scalar's representation |
@@ -246,8 +246,8 @@ and the analogous laws for $W_\mu$ with $U_L$ and for $B_\mu$ with the phase alo
 | $g_s$, $g$, $g_{\mathrm Y}$ | $3$ |
 | $\mu^2$, $\lambda$ | $2$ |
 | $\theta_{\mathrm{QCD}}$ | $1$ |
-| $Y^{u}$, $Y^{d}$ | $2\times18=36$ |
-| $Y^{e}$ | $18$ |
+| $Y_{u}$, $Y_{d}$ | $2\times18=36$ |
+| $Y_{e}$ | $18$ |
 | **total written** | $\mathbf{60}$ |
 
 Each $3\times3$ complex matrix carries nine complex entries, that is eighteen real numbers, and nothing constrains them.
@@ -309,7 +309,7 @@ The sign rule is $\sum_\mu X_\mu Y_\mu=-X\cdot Y$, proved in one line from $X_t=
 
 The audit is term by term and it passes. The three kinetic terms are invariant because each curvature transforms in the adjoint; the fermion and scalar kinetic terms because each covariant derivative transforms with the same unitary that acts on its field; the potential because it depends only on the singlet $\varphi^\dagger\varphi$; the Yukawa terms because the total hypercharge vanishes in each of the three, $-1/6+1/2-1/3$, $-1/6-1/2+2/3$ and $+1/2+1/2-1$; and the vacuum-angle term because it is a colour singlet. A bare fermion mass fails the audit, and its absence is a result and not an omission.
 
-Written out, the four sectors and the vacuum-angle term carry sixty real parameters: three couplings, two scalar parameters, one vacuum angle, eighteen for $Y^e$ and thirty-six for the pair $Y^u,Y^d$. Field redefinitions remove forty-one of them — twenty-six in the quark sector through $U(3)_Q\times U(3)_u\times U(3)_d$ leaving ten, which is six masses and four mixing parameters, and fifteen in the lepton sector through $U(3)_L\times U(3)_e$ leaving three masses — so nineteen survive, which is the table of article 1. The redundancy is a freedom of flavour basis and not a small correction.
+Written out, the four sectors and the vacuum-angle term carry sixty real parameters: three couplings, two scalar parameters, one vacuum angle, eighteen for $Y_{e}$ and thirty-six for the pair $Y^u,Y_{d}$. Field redefinitions remove forty-one of them — twenty-six in the quark sector through $U(3)_Q\times U(3)_u\times U(3)_d$ leaving ten, which is six masses and four mixing parameters, and fifteen in the lepton sector through $U(3)_L\times U(3)_e$ leaving three masses — so nineteen survive, which is the table of article 1. The redundancy is a freedom of flavour basis and not a small correction.
 
 The expression omits neutrino masses, gravity and a dark sector, and each omission is a measurement rather than an oversight. The unique dimension-five operator the content allows is the neutrino mass, and it is absent only because the theory is written renormalisable. Three of the four sectors have corpus counterparts term for term, through the dictionary of this article; the colour sector has none, because the algebra's ceiling is $SU(2)$. The assembly therefore closes the ledger the parameter table opened: the arena is the algebra's, and all sixty coefficients written here are imported.
 
@@ -318,19 +318,19 @@ The expression omits neutrino masses, gravity and a dark sector, and each omissi
 | Symbol | Meaning |
 |---|---|
 | $\mathcal{L}_{\mathrm{QCD}}$, $\mathcal{L}_{\mathrm{EW}}$, $\mathcal{L}_{H}$, $\mathcal{L}_{\mathrm{Yuk}}$ | The four sectors |
-| $G^a_\mu$, $W^a_\mu$, $B_\mu$ | Colour, weak and hypercharge gauge fields |
-| $G^a_{\mu\nu}$, $W^a_{\mu\nu}$, $B_{\mu\nu}$ | Their field strengths |
+| $G_{a,\mu}$, $W_{a,\mu}$, $B_\mu$ | Colour, weak and hypercharge gauge fields |
+| $G_{a,\mu\nu}$, $W_{a,\mu\nu}$, $B_{\mu\nu}$ | Their field strengths |
 | $f_{abc}$, $\varepsilon_{abc}$ | Colour and weak structure constants |
 | $\tilde\nabla_{\mathrm{gco},\Phi}$ | The gauge-covariant gradient; the representation is that of the field it acts on |
 | $\bar{\tilde\Xi}=\tilde\Xi^{*}i\vec e_x$ | The Dirac adjoint |
 | $\varphi$, $\tilde\varphi$ | The scalar doublet of hypercharge $\tfrac12$ and its conjugate of hypercharge $-\tfrac12$ |
-| $Y^{u}$, $Y^{d}$, $Y^{e}$ | The three Yukawa matrices, general complex $3\times3$ |
-| $M_f=vY^{f}/\sqrt2$ | The mass matrix of the fermion type $f$ |
+| $Y_{u}$, $Y_{d}$, $Y_{e}$ | The three Yukawa matrices, general complex $3\times3$ |
+| $M_f=vY_{f}/\sqrt2$ | The mass matrix of the fermion type $f$ |
 | $\mu^2$, $\lambda$ | The two parameters of the potential |
 | $v^2=\mu^2/\lambda$ | The vacuum expectation value, $246.22$ GeV |
 | $M_H=\sqrt{2\lambda}\,v$ | The scalar mass |
 | $\theta_{\mathrm{QCD}}$ | The vacuum angle |
-| $G^a_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}G^a_{\rho\sigma}$ | The dual field strength |
+| $G_{a,\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}G_{a,\rho\sigma}$ | The dual field strength |
 | $\sum_\mu X_\mu Y_\mu=-X\cdot Y$ | The sign rule of §*The Dictionary* |
 | $\partial/\partial R_\mu$ | The corpus derivative, with $\partial/\partial r'_t=-i\partial/\partial R_t$ |
 

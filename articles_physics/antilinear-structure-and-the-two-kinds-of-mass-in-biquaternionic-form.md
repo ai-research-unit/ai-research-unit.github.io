@@ -122,7 +122,7 @@ The framework's module is $\mathcal{S}_{\mathrm{rep}} = S\oplus\bar{S}$, the two
 
 ## The Two Conjugates and the Two Masses
 
-The two mass terms of a single fermion species, written on the field $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$ and on its charge conjugate $\tilde{Ξ}^c$, are
+The two mass terms of a single fermion species, written on the field $\tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}$ of $\mathbb{B}$ and on its charge conjugate $\tilde{Ξ}_c$, are
 
 $$
 \mathcal{L}_{\text{Dirac}} = -m_D\,\mathrm{Sc}\big(\tilde{Ξ}^*\,i\,\tilde{Ξ}\,\vec e_x\big) ,
@@ -152,15 +152,15 @@ $$
 
 the second line because $\vec e_y^{*}=-\vec e_y$ and $\vec e_y^{2}=-e_t$, so the two conjugations and the two units cancel in pairs. The section *Two Real Structures, on Two Different Spaces* keeps the operation apart from the algebra's $\flat$.
 
-The first pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$. The second pairs $\tilde{Ξ}_{L}$ with its charge conjugate $\tilde{Ξ}_{L}^c$, a field produced from $\tilde{Ξ}_{L}$ by the antilinear map $\mathcal{C}$; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
+The first pairs $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ and is **linear**; it conserves fermion number and is invariant under the continuous phase $\tilde{Ξ}\mapsto \exp(i\theta_{\mathrm{cen}})\tilde{Ξ}$. The second pairs $\tilde{Ξ}_{L}$ with its charge conjugate $\tilde{Ξ}_{L,c}$, a field produced from $\tilde{Ξ}_{L}$ by the antilinear map $\mathcal{C}$; it changes fermion number by two units, and it is not invariant under the continuous phase — which is exactly why it can be written only for a field that is not protected by a conserved charge.
 
 | | Dirac mass | Majorana mass |
 |---|---|---|
-| pairs | $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ | $\tilde{Ξ}$ with $\tilde{Ξ}^c$ |
+| pairs | $\tilde{Ξ}_{L}$ with $\tilde{Ξ}_{R}$ | $\tilde{Ξ}$ with $\tilde{Ξ}_c$ |
 | the map it is built on | the identity, linear | charge conjugation $\mathcal{C}$, antilinear |
 | fermion number | conserved | violated by $2$ |
 | continuous phase | invariant | not invariant |
-| needs a reality condition | no | yes, $\tilde{Ξ}^c=\tilde{Ξ}$ |
+| needs a reality condition | no | yes, $\tilde{Ξ}_c=\tilde{Ξ}$ |
 | independent real components | $8$ | $4$ |
 | framework structure | the two parts named by the subscript | an antilinear real structure |
 

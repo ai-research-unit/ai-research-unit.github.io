@@ -43,7 +43,7 @@ $$
 
 physical parameters — **if** the neutrinos are Dirac. The $5$, not $6$, is the point. Six field rephasings are available, three on the charged leptons and three on the neutrinos, but the one combination that rephases all six by the *same* phase acts as the identity on $U$ and removes nothing, so five independent rephasings remove five parameters. The usual bookkeeping "$9-3-3+1$" arrives at the same number by subtracting six and adding one back; that is the same arithmetic written so that the compensating phase looks like a repair rather than what it is, the redundancy inside the six.
 
-**What changes when they are Majorana.** A Majorana mass term $\bar\nu^c\nu$ is not invariant under an arbitrary rephasing: only the sign is free. Each neutrino field therefore loses one rephasing, and the count rises by two:
+**What changes when they are Majorana.** A Majorana mass term $\bar\nu_c\nu$ is not invariant under an arbitrary rephasing: only the sign is free. Each neutrino field therefore loses one rephasing, and the count rises by two:
 
 $$
 4\ \text{Dirac}\quad\longrightarrow\quad 6\ \text{Majorana}

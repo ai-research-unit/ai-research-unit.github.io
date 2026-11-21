@@ -6,10 +6,10 @@ This article writes the massive vector bosons of the electroweak sector as the e
 
 **Its place in the sector.** The functional here is the gauge and scalar part of the sector's complete action, written in [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html). That article is the sector's action; this one is the $W$–$Z$ reading of it, and it stops at the two curvatures and the scalar's gradient term.
 
-**The equation.** The parent's equations are the Yang–Mills equations for $W^a_\mu$ and $B_\mu$ with a source,
+**The equation.** The parent's equations are the Yang–Mills equations for $W_{a,\mu}$ and $B_\mu$ with a source,
 
 $$
-D_\nu W^{a}_{\mu\nu}=\frac{g}{2}\,\varphi^{\dagger}\tau^a i\!\overleftrightarrow{D_\mu}\varphi ,
+D_\nu W_{a,\mu\nu}=\frac{g}{2}\,\varphi^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\varphi ,
 \qquad
 \partial_\nu B_{\mu\nu}=g_{\mathrm Y}\,Y_\varphi\,\varphi^{\dagger}i\!\overleftrightarrow{D_\mu}\varphi ,
 $$
@@ -18,14 +18,14 @@ where the right sides are the currents of the scalar doublet evaluated at its va
 
 **Three things are established.**
 
-*First, the action.* With $W^a_{\mu\nu}$ and $B_{\mu\nu}$ the curvatures of $SU(2)_L\times\mathrm{U}(1)_Y$ and $\varphi$ the doublet,
+*First, the action.* With $W_{a,\mu\nu}$ and $B_{\mu\nu}$ the curvatures of $SU(2)_L\times\mathrm{U}(1)_Y$ and $\varphi$ the doublet,
 
 $$
-S=\int d^4r\;\Bigl[-\tfrac14\sum_{a,\mu,\nu}W^a_{\mu\nu}W^a_{\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu}
+S=\int d^4r\;\Bigl[-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu}
 +\sum_\mu\bigl(D_\mu\varphi\bigr)^{\dagger}\bigl(D_\mu\varphi\bigr)-V(\varphi^{\dagger}\varphi)\Bigr],
 $$
 
-varying $W^a_\mu$ and $B_\mu$ gives the parent's equations with the scalar current as source, and evaluating the scalar at its minimum turns the kinetic term into a mass term for two of the four gauge fields.
+varying $W_{a,\mu}$ and $B_\mu$ gives the parent's equations with the scalar current as source, and evaluating the scalar at its minimum turns the kinetic term into a mass term for two of the four gauge fields.
 
 *Second, the masses are forced by one number.* Every mass in the sector is $g\,v/2$ or $\sqrt{g^2+g_{\mathrm Y}^2}\,v/2$, and the ratio is fixed at one,
 
@@ -43,9 +43,9 @@ because one doublet of weak isospin $\tfrac12$ produces both masses from the sam
 
 **The conventions are restated here so that every sign below is checkable from this page.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$, used for the fermion and scalar elements; the gauge fields are written in components, because the $SU(2)$ factor is not carried by a single algebra element.
 
-**The group and the couplings.** $SU(2)_L$ with coupling $g$ and generators $\tau^a=\sigma^a/2$ in the doublet; $\mathrm{U}(1)_Y$ with coupling $g_{\mathrm Y}$ and hypercharge $Y$. The doublet has $Y_\varphi=\tfrac12$ and $T_3=\pm\tfrac12$ on its two components.
+**The group and the couplings.** $SU(2)_L$ with coupling $g$ and generators $\tau_{a}=\sigma_{a}/2$ in the doublet; $\mathrm{U}(1)_Y$ with coupling $g_{\mathrm Y}$ and hypercharge $Y$. The doublet has $Y_\varphi=\tfrac12$ and $T_3=\pm\tfrac12$ on its two components.
 
-**The curvatures.** $W^a_{\mu\nu}=\partial_\mu W^a_\nu-\partial_\nu W^a_\mu+g\sum_{b,c}\varepsilon^{abc}W^b_\mu W^c_\nu$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$, with $\partial_\mu=\partial/\partial R_\mu$.
+**The curvatures.** $W_{a,\mu\nu}=\partial_\mu W_{a,\nu}-\partial_\nu W_{a,\mu}+g\sum_{b,c}\varepsilon_{abc}W_{b,\mu} W_{c,\nu}$ and $B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu$, with $\partial_\mu=\partial/\partial R_\mu$.
 
 **The vacuum.** $\langle\varphi\rangle=(0,\;v/\sqrt2)^{T}$ with $v=246.22$ GeV; the potential is $V=\lambda(\varphi^{\dagger}\varphi-v^2/2)^2$, so that $\partial V/\partial\varphi^{\dagger}=0$ at the minimum and the mass of the radial mode is $\sqrt{2\lambda}\,v$.
 
@@ -56,7 +56,7 @@ because one doublet of weak isospin $\tfrac12$ produces both masses from the sam
 **The gauge sector.** Two curvatures and their squares,
 
 $$
-\mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\mu,\nu}W^a_{\mu\nu}W^a_{\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu},
+\mathcal{L}_{\mathrm{gauge}}=-\tfrac14\sum_{a,\mu,\nu}W_{a,\mu\nu}W_{a,\mu\nu}-\tfrac14\sum_{\mu,\nu}B_{\mu\nu}B_{\mu\nu},
 $$
 
 with no mass term. A mass term $\tfrac12M^2W_\mu W_\mu$ would break the local symmetry explicitly and make the theory non-renormalizable, so the action cannot contain the masses at this stage; they must come from somewhere else, and the next paragraph is that somewhere.
@@ -66,7 +66,7 @@ with no mass term. A mass term $\tfrac12M^2W_\mu W_\mu$ would break the local sy
 $$
 \mathcal{L}_{\mathrm{scalar}}=\sum_\mu\bigl(D_\mu\varphi\bigr)^{\dagger}\bigl(D_\mu\varphi\bigr)-\lambda\Bigl(\varphi^{\dagger}\varphi-\frac{v^2}{2}\Bigr)^{2},
 \qquad
-D_\mu=\partial_\mu+ig\sum_a\tau^a W^a_\mu+i g_{\mathrm Y}Y_\varphi B_\mu .
+D_\mu=\partial_\mu+ig\sum_a\tau_{a} W_{a,\mu}+i g_{\mathrm Y}Y_\varphi B_\mu .
 $$
 
 The covariant derivative is where the masses live: it contains the gauge fields multiplied by the generators, and when $\varphi$ is replaced by its vacuum value the product becomes a constant matrix times $W_\mu W_\mu$.
@@ -74,7 +74,7 @@ The covariant derivative is where the masses live: it contains the gauge fields 
 **The mass term from the vacuum.** Writing $\varphi=\langle\varphi\rangle+\eta$ and keeping the quadratic terms,
 
 $$
-\sum_\mu\bigl(D_\mu\varphi\bigr)^{\dagger}\bigl(D_\mu\varphi\bigr)\supset\frac{v^2}{8}\Bigl[g^2\bigl(W^1_\mu W^1_\mu+W^2_\mu W^2_\mu\bigr)+\bigl(gW^3_\mu-g_{\mathrm Y}B_\mu\bigr)^{2}\Bigr],
+\sum_\mu\bigl(D_\mu\varphi\bigr)^{\dagger}\bigl(D_\mu\varphi\bigr)\supset\frac{v^2}{8}\Bigl[g^2\bigl(W_{1,\mu} W_{1,\mu}+W_{2,\mu} W_{2,\mu}\bigr)+\bigl(gW_{3,\mu}-g_{\mathrm Y}B_\mu\bigr)^{2}\Bigr],
 $$
 
 which is a mass matrix for the four gauge fields. It is rank three: one combination is massless, and that combination is the photon.
@@ -82,11 +82,11 @@ which is a mass matrix for the four gauge fields. It is rank three: one combinat
 **The diagonalization.** With
 
 $$
-W^{\pm}_\mu=\frac{1}{\sqrt2}\bigl(W^1_\mu\mp iW^2_\mu\bigr),
+W^{\pm}_\mu=\frac{1}{\sqrt2}\bigl(W_{1,\mu}\mp iW_{2,\mu}\bigr),
 \qquad
-Z_\mu=\cos\theta_W\,W^3_\mu-\sin\theta_W\,B_\mu,
+Z_\mu=\cos\theta_W\,W_{3,\mu}-\sin\theta_W\,B_\mu,
 \qquad
-A_\mu=\sin\theta_W\,W^3_\mu+\cos\theta_W\,B_\mu,
+A_\mu=\sin\theta_W\,W_{3,\mu}+\cos\theta_W\,B_\mu,
 \qquad
 \tan\theta_W=\frac{g_{\mathrm Y}}{g},
 $$
@@ -103,9 +103,9 @@ $$
 
 The mixing angle is not a new parameter: it is $\arctan(g_{\mathrm Y}/g)$, fixed by the two couplings the action already carries.
 
-**Why the linear combination and not another.** The mass matrix in the $(W^3,B)$ plane is $\frac{v^2}{8}\bigl(\begin{smallmatrix}g^2&-gg_{\mathrm Y}\\-gg_{\mathrm Y}&g_{\mathrm Y}^2\end{smallmatrix}\bigr)$, whose determinant is zero. A rank-one $2\times2$ matrix has one zero eigenvalue and one nonzero one, and the zero eigenvector is $(g_{\mathrm Y},g)$-normalized, which is the photon. The vanishing determinant is the statement that the unbroken subgroup is one-dimensional, and it is a consequence of the rank of the doublet's generator set and not of a tuning.
+**Why the linear combination and not another.** The mass matrix in the $(W_3,B)$ plane is $\frac{v^2}{8}\bigl(\begin{smallmatrix}g^2&-gg_{\mathrm Y}\\-gg_{\mathrm Y}&g_{\mathrm Y}^2\end{smallmatrix}\bigr)$, whose determinant is zero. A rank-one $2\times2$ matrix has one zero eigenvalue and one nonzero one, and the zero eigenvector is $(g_{\mathrm Y},g)$-normalized, which is the photon. The vanishing determinant is the statement that the unbroken subgroup is one-dimensional, and it is a consequence of the rank of the doublet's generator set and not of a tuning.
 
-**The pairing. The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_\mu(D_\mu\varphi)^{\dagger}(D_\mu\varphi)$ is a sum of squared norms, real and non-negative term by term. The gauge kinetic terms are real because $W^a_{\mu\nu}$ and $B_{\mu\nu}$ are real in components and their squares carry the corpus's sign rule.
+**The pairing. The pairing is the Hermitian norm, and it is what makes the scalar's kinetic term real and positive.** $\sum_\mu(D_\mu\varphi)^{\dagger}(D_\mu\varphi)$ is a sum of squared norms, real and non-negative term by term. The gauge kinetic terms are real because $W_{a,\mu\nu}$ and $B_{\mu\nu}$ are real in components and their squares carry the corpus's sign rule.
 
 **Why the scalar needs the dagger and the gauge fields do not.** The scalar is complex, so its kinetic term needs a conjugate to be real; the gauge fields are real, so theirs does not. The asymmetry is a statement about the representations and not about the pairing.
 
@@ -123,15 +123,15 @@ The mixing angle is not a new parameter: it is $\arctan(g_{\mathrm Y}/g)$, fixed
 
 ## The Variation: The Currents Are the Sources
 
-**The variation with respect to the gauge fields.** Varying $W^a_\mu$ and integrating by parts,
+**The variation with respect to the gauge fields.** Varying $W_{a,\mu}$ and integrating by parts,
 
 $$
-\delta S=\int d^4r\;\Bigl[\delta W^a_\mu\Bigl(D_\nu W^{a}_{\mu\nu}-j^{a}_{\mu}\Bigr)\Bigr],
+\delta S=\int d^4r\;\Bigl[\delta W_{a,\mu}\Bigl(D_\nu W_{a,\mu\nu}-j_{a,\mu}\Bigr)\Bigr],
 \qquad
-j^a_\mu=\frac{g}{2}\,\varphi^{\dagger}\tau^a i\!\overleftrightarrow{D_\mu}\varphi+\text{(fermion terms)},
+j_{a,\mu}=\frac{g}{2}\,\varphi^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\varphi+\text{(fermion terms)},
 $$
 
-so that the stationarity condition is $D_\nu W^a_{\mu\nu}=j^a_\mu$, and analogously for $B_\mu$. The current contains the scalar's contribution and the fermions', and the two enter on the same footing.
+so that the stationarity condition is $D_\nu W_{a,\mu\nu}=j_{a,\mu}$, and analogously for $B_\mu$. The current contains the scalar's contribution and the fermions', and the two enter on the same footing.
 
 **The variation with respect to the scalar.** Varying $\varphi^{\dagger}$ gives
 
@@ -141,13 +141,13 @@ $$
 
 the gauged Klein–Gordon equation with a potential. At the vacuum this equation is satisfied identically, which is the statement that the vacuum is stationary and that the masses computed above are consistent with it.
 
-**The self-consistency that the two variations must satisfy.** The current must be conserved, $D_\mu j^a_\mu=0$, or the equation for $W^a_\mu$ is inconsistent because the left side is divergenceless by the Bianchi identity. The conservation is not assumed: it follows from the scalar's equation combined with the antisymmetry of $W^a_{\mu\nu}$, and it holds because the scalar's covariant derivative is the same object in both equations. A mass term written by hand would break this, which is the technical reason the masses must come from the scalar.
+**The self-consistency that the two variations must satisfy.** The current must be conserved, $D_\mu j_{a,\mu}=0$, or the equation for $W_{a,\mu}$ is inconsistent because the left side is divergenceless by the Bianchi identity. The conservation is not assumed: it follows from the scalar's equation combined with the antisymmetry of $W_{a,\mu\nu}$, and it holds because the scalar's covariant derivative is the same object in both equations. A mass term written by hand would break this, which is the technical reason the masses must come from the scalar.
 
-**The check that would catch a factor.** At the vacuum, $j^a_\mu=0$ for the unbroken directions and nonzero for the broken ones; the equation then reduces to $D_\nu W^a_{\mu\nu}=0$ with $W^a_\mu$ satisfying a Proca equation. The coefficient of the mass must be $\frac{g^2v^2}{4}$ and not $\frac{g^2v^2}{8}$, because the $\overleftrightarrow{D}$ convention carries a factor two; the boxed masses above are the check.
+**The check that would catch a factor.** At the vacuum, $j_{a,\mu}=0$ for the unbroken directions and nonzero for the broken ones; the equation then reduces to $D_\nu W_{a,\mu\nu}=0$ with $W_{a,\mu}$ satisfying a Proca equation. The coefficient of the mass must be $\frac{g^2v^2}{4}$ and not $\frac{g^2v^2}{8}$, because the $\overleftrightarrow{D}$ convention carries a factor two; the boxed masses above are the check.
 
 ## The Constraints the Action Imposes: Four Gauss Laws and One Massless Mode
 
-**The constraint structure.** Each gauge field brings a first-class constraint, the Gauss law $D_j W^a_{0j}=j^a_0$, so four constraints act on eight gauge components, and the three Goldstones are not removed by the constraints but absorbed as longitudinal modes. Counting polarisation states before and after the breaking,
+**The constraint structure.** Each gauge field brings a first-class constraint, the Gauss law $D_j W_{a,0j}=j_{a,0}$, so four constraints act on eight gauge components, and the three Goldstones are not removed by the constraints but absorbed as longitudinal modes. Counting polarisation states before and after the breaking,
 
 $$
 \underbrace{8}_{\text{four vectors, massless}}+\underbrace{4}_{\text{four scalars}}\;=\;\underbrace{9}_{\text{three massive vectors}}+\underbrace{2}_{\text{photon}}+\underbrace{1}_{\text{radial scalar}}\;=\;12 ,
@@ -176,7 +176,7 @@ so no mode is lost and none is added: three of the four scalars become the longi
 **The currents of the global group.** Before gauging, the action is invariant under constant $SU(2)_L\times\mathrm{U}(1)_Y$, and the Noether currents are
 
 $$
-J^{a}_\mu=\frac{g}{2}\,\varphi^{\dagger}\tau^a i\!\overleftrightarrow{D_\mu}\varphi+\bar\psi\gamma_\mu\tau^a\psi ,
+J_{a,\mu}=\frac{g}{2}\,\varphi^{\dagger}\tau_{a} i\!\overleftrightarrow{D_\mu}\varphi+\bar\psi\gamma_\mu\tau_{a}\psi ,
 \qquad
 J^{Y}_\mu=g_{\mathrm Y}\,Y_\varphi\,\varphi^{\dagger}i\!\overleftrightarrow{D_\mu}\varphi+\bar\psi\gamma_\mu Y\psi ,
 $$
@@ -189,9 +189,9 @@ $$
 J^{\mathrm{em}}_\mu=J^3_\mu+J^{Y}_\mu ,
 $$
 
-with the charge operator $Q=T_3+Y$, and its conservation is exact because the unbroken generator annihilates the vacuum. The charged current $J^{\pm}_\mu=J^1_\mu\mp iJ^2_\mu$ is conserved as an equation of motion but not as a symmetry of the vacuum, and that difference is the reason the $W$ is massive and the photon is not.
+with the charge operator $Q=T_3+Y$, and its conservation is exact because the unbroken generator annihilates the vacuum. The charged current $J^{\pm}_\mu=J_{1,\mu}\mp iJ_{2,\mu}$ is conserved as an equation of motion but not as a symmetry of the vacuum, and that difference is the reason the $W$ is massive and the photon is not.
 
-**The sign of the charge.** The covariant derivative's sign convention $D_\mu=\partial_\mu+ig\tau^aW^a_\mu$ fixes the sign of the current, and the corpus's opposite-sign convention would reverse every current without changing the physics. The convention is declared once in *Conventions* so that the sign is checkable rather than inherited silently.
+**The sign of the charge.** The covariant derivative's sign convention $D_\mu=\partial_\mu+ig\tau_{a}W_{a,\mu}$ fixes the sign of the current, and the corpus's opposite-sign convention would reverse every current without changing the physics. The convention is declared once in *Conventions* so that the sign is checkable rather than inherited silently.
 
 **Energy–momentum.** Translation invariance gives $T_{\mu\nu}$ with contributions from the gauge and scalar sectors, and its trace is the measure of the breaking: the trace is nonzero in the broken phase because the mass terms are not conformally invariant, and the trace is the anomaly's classical part. The quantum trace is the precision-observables article's.
 
@@ -229,8 +229,8 @@ with the charge operator $Q=T_3+Y$, and its conservation is exact because the un
 
 | Symbol | Meaning |
 |---|---|
-| $W^a_\mu$, $B_\mu$ | $SU(2)_L$ triplet and $\mathrm{U}(1)_Y$ field |
-| $W^a_{\mu\nu}$, $B_{\mu\nu}$ | their curvatures |
+| $W_{a,\mu}$, $B_\mu$ | $SU(2)_L$ triplet and $\mathrm{U}(1)_Y$ field |
+| $W_{a,\mu\nu}$, $B_{\mu\nu}$ | their curvatures |
 | $g$, $g_{\mathrm Y}$ | the two couplings |
 | $\varphi$ | scalar doublet, $Y_\varphi=\tfrac12$ |
 | $v$ | vacuum value, $246.22$ GeV |

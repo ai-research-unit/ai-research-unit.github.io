@@ -39,7 +39,7 @@ $$
 
 ## The Word on a Central Field
 
-**One block of the metric survives.** The polar variational companion writes the kinetic Lagrangian as $g_{ab}(p)\partial_\mu p^{a}\partial_\mu p^{b}$ over eight parameters with the pull-back metric of the word. On a central field the rapidity vanishes, the axes are frozen and the rotor is a sign, so the metric is diagonal with $g_{r\varrho}=1$ and $g_{\theta\theta}=\varrho^{2}$ and every other entry zero. The exponent is therefore one diagonal quadratic form in two real functions.
+**One block of the metric survives.** The polar variational companion writes the kinetic Lagrangian as $g_{ab}(p)\partial_\mu p_{a}\partial_\mu p_{b}$ over eight parameters with the pull-back metric of the word. On a central field the rapidity vanishes, the axes are frozen and the rotor is a sign, so the metric is diagonal with $g_{r\varrho}=1$ and $g_{\theta\theta}=\varrho^{2}$ and every other entry zero. The exponent is therefore one diagonal quadratic form in two real functions.
 
 **The sign is bookkeeping and not a parameter.** The chart holds the angle in $(-\pi/2,\pi/2]$ and deposits the half turn in the rotor's sign, so the pair $(\varrho,\theta_{\mathrm{pha}},\varepsilon)$ with $\varepsilon=\pm1$ is a bijection onto the nonzero complex scalars. The measure below integrates the angle over a full turn; the two halves of the turn with the two signs are the same domain written twice. **The sign is a chart of the circle and contributes no factor to the measure**, and the count of parameters at each point is two.
 
@@ -140,7 +140,7 @@ and the weight is $\exp(-S_E)$. Four terms and every one of them positive. **The
 
 ## The Semiclassical Word
 
-**The saddle is the classical field and the second variation is the parameter metric.** Expanding the bracket about a solution of the pair, the quadratic term is $g_{ab}(p)\partial_\mu\delta p^{a}\partial_\mu\delta p^{b}$ evaluated at the solution, with $g$ the polar variational companion's metric. The prefactor is the inverse square root of that operator's determinant. **The chart's one-loop factor is the determinant of the metric's operator**, and it is central because $g$ is built from $\varrho$ and $\theta_{\mathrm{pha}}$ alone.
+**The saddle is the classical field and the second variation is the parameter metric.** Expanding the bracket about a solution of the pair, the quadratic term is $g_{ab}(p)\partial_\mu\delta p_{a}\partial_\mu\delta p_{b}$ evaluated at the solution, with $g$ the polar variational companion's metric. The prefactor is the inverse square root of that operator's determinant. **The chart's one-loop factor is the determinant of the metric's operator**, and it is central because $g$ is built from $\varrho$ and $\theta_{\mathrm{pha}}$ alone.
 
 **The chart's determinant is the Cartesian one times the Jacobian's square.** That is the previous section's cancellation at the level of the fluctuation operator, and it is what makes the prefactor transform correctly: the amplitude gains $\prod \varrho^{-1}$ from the determinant, the measure contributes $\prod \varrho$, and the leftover $\prod \varrho^{-1}$ is exactly the Jacobian of the change of variables in the amplitude.
 

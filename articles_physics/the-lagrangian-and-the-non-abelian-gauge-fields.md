@@ -38,7 +38,7 @@ the stationarity condition is $D_\mu F_{\mu\nu}=0$. The coefficient $\tfrac12$ a
 
 **The two traces.** $\mathrm{Tr}$ is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$; $\mathrm{Sc}$ is the coefficient of $e_t$ in the element; and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is the corpus's informational reduction, which is not used in this article's action and is the subject of the reality section.
 
-**The connection and the curvature.** $A_\mu\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi$, anti-Hermitian, with $A_\mu=A^a_\mu T_a$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+[A_\mu,A_\nu]$, also anti-Hermitian and in $\mathfrak{su}(2)$.
+**The connection and the curvature.** $A_\mu\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi$, anti-Hermitian, with $A_\mu=A_{a,\mu} T_a$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+[A_\mu,A_\nu]$, also anti-Hermitian and in $\mathfrak{su}(2)$.
 
 **The normalization.** $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$, so that $T_a=-\tfrac{i}{2}\sigma_a$ in the fundamental representation. With that normalization the coefficient of the action is $\tfrac12$ and the coupling is the one that appears in the covariant derivative.
 
@@ -67,12 +67,12 @@ $$
 **The components.** Expanding in generators gives
 
 $$
-\mathcal{L}=-\frac14\sum_{a,\mu,\nu}F^a_{\mu\nu}F^a_{\mu\nu},
+\mathcal{L}=-\frac14\sum_{a,\mu,\nu}F_{a,\mu\nu}F_{a,\mu\nu},
 \qquad
-F^a_{\mu\nu}=\partial_\mu A^a_\nu-\partial_\nu A^a_\mu+g\sum_{b,c}\varepsilon^{abc}A^b_\mu A^c_\nu ,
+F_{a,\mu\nu}=\partial_\mu A_{a,\nu}-\partial_\nu A_{a,\mu}+g\sum_{b,c}\varepsilon_{abc}A_{b,\mu} A_{c,\nu} ,
 $$
 
-which is the standard form, with $g$ absorbed into the normalization of $A^a_\mu$. The two forms are the same action; the element form makes the invariance one line and the component form makes the vertices explicit.
+which is the standard form, with $g$ absorbed into the normalization of $A_{a,\mu}$. The two forms are the same action; the element form makes the invariance one line and the component form makes the vertices explicit.
 
 **The pairing. The pairing is the matrix trace, and it is not the informational reduction.** $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on $\mathbb{B}\cong M_2(\mathbb{C})$ is a bilinear form invariant under $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{-1}$, $\tilde Q_2\mapsto\tilde Q\tilde Q_2\tilde Q^{-1}$; the corpus's reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it is not invariant under that pair of transformations.
 
@@ -96,7 +96,7 @@ which is the standard form, with $g$ absorbed into the normalization of $A^a_\mu
 
 **The element setting.** The action written as $-\tfrac12\mathrm{Tr}(FF)$ with $F$ an element of $\mathfrak{su}(2)\subset\mathbb{B}$. The invariance is one line, and the trace-versus-pairing distinction is visible.
 
-**The component setting.** The action written as $-\tfrac14\sum_aF^a_{\mu\nu}F^a_{\mu\nu}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.
+**The component setting.** The action written as $-\tfrac14\sum_aF_{a,\mu\nu}F_{a,\mu\nu}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.
 
 **Why the two settings are not a choice of notation.** They differ in what they display and in what they hide. The element form makes the gauge invariance obvious and the vertices obscure; the component form does the reverse. A reader who knows only one has a partial view of the same object, and the corpus uses both deliberately.
 
@@ -162,14 +162,14 @@ the non-abelian Gauss law, which is first class because the gauge symmetry is un
 **The current.** The action's invariance under the global $\mathrm{SU}(2)$ gives the current
 
 $$
-j^a_\mu=\sum_{b,c}\varepsilon^{abc}F^b_{\mu\nu}A^c_\nu ,
+j_{a,\mu}=\sum_{b,c}\varepsilon_{abc}F_{b,\mu\nu}A_{c,\nu} ,
 $$
 
-which is the standard non-abelian current. It is conserved on shell, $D_\mu j^a_\mu=0$, and its conservation is the equation of motion contracted with the structure constants.
+which is the standard non-abelian current. It is conserved on shell, $D_\mu j_{a,\mu}=0$, and its conservation is the equation of motion contracted with the structure constants.
 
 **Why the current carries the field.** The current is bilinear in the gauge field and contains $A$ explicitly, not only $F$. That is the statement that the gauge field carries the charge it couples to, and it is the difference from the abelian current, which contains only $F$.
 
-**Why the conservation is covariant and not ordinary.** $\partial_\mu j^a_\mu=0$ fails; $D_\mu j^a_\mu=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not gauge invariant by itself.
+**Why the conservation is covariant and not ordinary.** $\partial_\mu j_{a,\mu}=0$ fails; $D_\mu j_{a,\mu}=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not gauge invariant by itself.
 
 **Energy–momentum.** Translation invariance gives $T_{\mu\nu}=\mathrm{Tr}(F_{\mu\lambda}F_{\nu\lambda})-\tfrac14g_{\mu\nu}\mathrm{Tr}(F^2)$-type expression, symmetric and traceless at the classical level. The tracelessness is the classical scale invariance, and its quantum violation is the beta function.
 
@@ -207,13 +207,13 @@ which is the standard non-abelian current. It is conserved on shell, $D_\mu j^a_
 
 | Symbol | Meaning |
 |---|---|
-| $A_\mu=A^a_\mu T_a$ | $\mathfrak{su}(2)$-valued connection |
+| $A_\mu=A_{a,\mu} T_a$ | $\mathfrak{su}(2)$-valued connection |
 | $F_{\mu\nu}$ | curvature, $\partial_\mu A_\nu-\partial_\nu A_\mu+[A_\mu,A_\nu]$ |
 | $\mathrm{Tr}$ | matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $2\,\mathrm{Sc}(\cdot)$ | informational reduction, not used in the action |
 | $T_a$ | anti-Hermitian generators, $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$ |
 | $g$ | coupling, in the commutator's normalization |
-| $j^a_\mu$ | non-abelian current |
+| $j_{a,\mu}$ | non-abelian current |
 
 ## Further Reading
 

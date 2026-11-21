@@ -24,38 +24,38 @@ The appearance of $\sin^2\theta_W$ in that bracket is therefore not a second con
 
 ## The Two Neutral Currents
 
-**Before mixing there are two.** The electroweak sector carries four gauge fields, and two of them are neutral: $W^3_\mu$ of $SU(2)_L$ and $B_\mu$ of $\mathrm{U}(1)_Y$. Their couplings to matter are fixed by the quantum numbers of article 1 and by nothing else,
+**Before mixing there are two.** The electroweak sector carries four gauge fields, and two of them are neutral: $W_{3,\mu}$ of $SU(2)_L$ and $B_\mu$ of $\mathrm{U}(1)_Y$. Their couplings to matter are fixed by the quantum numbers of article 1 and by nothing else,
 
 $$
-\mathcal{L}_{\mathrm{neutral}}=g\,W^3_\mu J^3_\mu+g_{\mathrm Y}B_\mu J^Y_\mu ,
+\mathcal{L}_{\mathrm{neutral}}=g\,W_{3,\mu} J_{3,\mu}+g_{\mathrm Y}B_\mu J_{Y,\mu} ,
 \qquad
-J^3_\mu=\sum_f T_{3f}\,\bar f\gamma_\mu f ,
+J_{3,\mu}=\sum_f T_{3f}\,\bar f\gamma_\mu f ,
 \qquad
-J^Y_\mu=\sum_f Y_f\,\bar f\gamma_\mu f ,
+J_{Y,\mu}=\sum_f Y_f\,\bar f\gamma_\mu f ,
 $$
 
 with $T_{3f}$ the weak isospin of the left part and $Y_f$ the hypercharge. Both currents are neutral — $T_3$ and $Y$ both commute with $Q$, so neither can change a fermion's charge. That alone would not make them diagonal in flavour, since the up-type and down-type mass matrices are diagonalised by different unitary rotations; what removes the mixing is universality, the $Z$ coupling to all three generations being one set of numbers, so the vertex is proportional to the unit in flavour space and the rotations cancel as $X^\dagger X=1$. The charged current fails exactly there: $W$ joins a $u$-type field to a $d$-type one and leaves $X_u^\dagger X_d=V_{\mathrm{CKM}}$ behind, the object of [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). That asymmetry is why the neutral sector needs no mixing matrix and the charged sector does.
 
-**Two currents, one measured combination.** Neither $J^3$ nor $J^Y$ is separately observable: a $W^3$ or a $B$ boson does not propagate as a mass eigenstate, since the mass matrix of article 4 mixes them. What is observable is the coupling of the fields that do propagate, and there are two of them: the massless one and the massive one.
+**Two currents, one measured combination.** Neither $J_3$ nor $J_Y$ is separately observable: a $W_3$ or a $B$ boson does not propagate as a mass eigenstate, since the mass matrix of article 4 mixes them. What is observable is the coupling of the fields that do propagate, and there are two of them: the massless one and the massive one.
 
 **The counting already fixes part of the answer.** Two neutral fields, two mass eigenstates, one of them massless. The massless one couples to a conserved current with no axial part, because a massless vector has two polarisations and a non-conserved current would require the third. So the massless combination must be the one whose axial coupling cancels, and that is a condition on the rotation angle. The next section turns it into an equation.
 
-**The two invariants of the rotation.** A rotation of the pair $(W^3,B)$ has one angle, and the two physical couplings are the two combinations the rotation produces: one must be pure vector and pure $Q$, the other carries what is left. Two states, one angle, and therefore no freedom beyond the angle itself.
+**The two invariants of the rotation.** A rotation of the pair $(W_3,B)$ has one angle, and the two physical couplings are the two combinations the rotation produces: one must be pure vector and pure $Q$, the other carries what is left. Two states, one angle, and therefore no freedom beyond the angle itself.
 
 ## The Rotation, and Why the Angle Appears Squared
 
 **The rotation.** Write the physical fields as
 
 $$
-A_\mu=\sin\theta_W\,W^3_\mu+\cos\theta_W\,B_\mu ,
+A_\mu=\sin\theta_W\,W_{3,\mu}+\cos\theta_W\,B_\mu ,
 \qquad
-Z_\mu=\cos\theta_W\,W^3_\mu-\sin\theta_W\,B_\mu ,
+Z_\mu=\cos\theta_W\,W_{3,\mu}-\sin\theta_W\,B_\mu ,
 $$
 
 with the inverse
 
 $$
-W^3_\mu=\sin\theta_W\,A_\mu+\cos\theta_W\,Z_\mu ,
+W_{3,\mu}=\sin\theta_W\,A_\mu+\cos\theta_W\,Z_\mu ,
 \qquad
 B_\mu=\cos\theta_W\,A_\mu-\sin\theta_W\,Z_\mu .
 $$
@@ -65,13 +65,13 @@ The angle is so far a free parameter of the notation; the two conditions below f
 **Substituting, in one step.** Using $Y_f=Q_f-T_{3f}$, the neutral Lagrangian becomes
 
 $$
-\mathcal{L}_{\mathrm{neutral}}=A_\mu\Big[\big(g\sin\theta_W-g_{\mathrm Y}\cos\theta_W\big)J^3_\mu+g_{\mathrm Y}\cos\theta_W\,J^{Q}_\mu\Big]
-+Z_\mu\Big[\big(g\cos\theta_W+g_{\mathrm Y}\sin\theta_W\big)J^3_\mu-g_{\mathrm Y}\sin\theta_W\,J^{Q}_\mu\Big] ,
+\mathcal{L}_{\mathrm{neutral}}=A_\mu\Big[\big(g\sin\theta_W-g_{\mathrm Y}\cos\theta_W\big)J_{3,\mu}+g_{\mathrm Y}\cos\theta_W\,J_{Q,\mu}\Big]
++Z_\mu\Big[\big(g\cos\theta_W+g_{\mathrm Y}\sin\theta_W\big)J_{3,\mu}-g_{\mathrm Y}\sin\theta_W\,J_{Q,\mu}\Big] ,
 $$
 
-with $J^Q_\mu=\sum_fQ_f\bar f\gamma_\mu f$ the electromagnetic current. Two brackets, and the whole article is in them.
+with $J_{Q,\mu}=\sum_fQ_f\bar f\gamma_\mu f$ the electromagnetic current. Two brackets, and the whole article is in them.
 
-**The first condition.** The photon must couple as $eQ$ with no $T_3$ admixture, because the electromagnetic current is the only conserved current with no axial part and the photon is massless. Setting the $J^3$ coefficient to zero,
+**The first condition.** The photon must couple as $eQ$ with no $T_3$ admixture, because the electromagnetic current is the only conserved current with no axial part and the photon is massless. Setting the $J_3$ coefficient to zero,
 
 $$
 g\sin\theta_W=g_{\mathrm Y}\cos\theta_W
@@ -90,11 +90,11 @@ $$
 which is the electric charge expressed through either coupling, and the $Z$ bracket becomes
 
 $$
-Z_\mu\sqrt{g^2+g_{\mathrm Y}^2}\left[J^3_\mu-\frac{g_{\mathrm Y}\sin\theta_W}{\sqrt{g^2+g_{\mathrm Y}^2}}J^Q_\mu\right]
-=Z_\mu\sqrt{g^2+g_{\mathrm Y}^2}\left[J^3_\mu-\sin^2\theta_W\,J^Q_\mu\right] .
+Z_\mu\sqrt{g^2+g_{\mathrm Y}^2}\left[J_{3,\mu}-\frac{g_{\mathrm Y}\sin\theta_W}{\sqrt{g^2+g_{\mathrm Y}^2}}J_{Q,\mu}\right]
+=Z_\mu\sqrt{g^2+g_{\mathrm Y}^2}\left[J_{3,\mu}-\sin^2\theta_W\,J_{Q,\mu}\right] .
 $$
 
-**The square, and where it comes from.** The coefficient of $J^Q$ in the $Z$ coupling is
+**The square, and where it comes from.** The coefficient of $J_Q$ in the $Z$ coupling is
 
 $$
 \frac{g_{\mathrm Y}\sin\theta_W}{\sqrt{g^2+g_{\mathrm Y}^2}}
@@ -108,8 +108,8 @@ using $\sin\theta_W=g_{\mathrm Y}/\sqrt{g^2+g_{\mathrm Y}^2}$. Two powers of $g_
 **The overall $Z$ coupling.** With $\sqrt{g^2+g_{\mathrm Y}^2}=g/\cos\theta_W=e/(\sin\theta_W\cos\theta_W)$, the Lagrangian reads
 
 $$
-\mathcal{L}_Z=\frac{g}{\cos\theta_W}Z_\mu\left(J^3_\mu-\sin^2\theta_WJ^Q_\mu\right)
-=\frac{e}{\sin\theta_W\cos\theta_W}Z_\mu\left(J^3_\mu-\sin^2\theta_WJ^Q_\mu\right),
+\mathcal{L}_Z=\frac{g}{\cos\theta_W}Z_\mu\left(J_{3,\mu}-\sin^2\theta_WJ_{Q,\mu}\right)
+=\frac{e}{\sin\theta_W\cos\theta_W}Z_\mu\left(J_{3,\mu}-\sin^2\theta_WJ_{Q,\mu}\right),
 $$
 
 which is the standard form, and the combination $e/(\sin\theta_W\cos\theta_W)$ is the one measured by the $Z$ couplings to fermions.
@@ -117,7 +117,7 @@ which is the standard form, and the combination $e/(\sin\theta_W\cos\theta_W)$ i
 **The chiral decomposition.** Because $T_3$ acts only on left-handed fields and $Q$ acts on both, the bracket separates by chirality:
 
 $$
-J^3_\mu-\sin^2\theta_WJ^Q_\mu=\sum_f\bar f\gamma_\mu\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_WP_R\Big]f ,
+J_{3,\mu}-\sin^2\theta_WJ_{Q,\mu}=\sum_f\bar f\gamma_\mu\Big[\big(T_{3f}-Q_f\sin^2\theta_W\big)P_L-Q_f\sin^2\theta_WP_R\Big]f ,
 \qquad
 P_{L,R}=\tfrac12\left(1\mp\gamma^5\right).
 $$
@@ -206,9 +206,9 @@ the neutral-current excess over the charged-current excess. In the parton model,
 $$
 R^-=g_L^2-g_R^2 ,
 \qquad
-g_L^2=\left(g_L^u\right)^2+\left(g_L^d\right)^2 ,
+g_L^2=\left(g_{L,u}\right)^2+\left(g_{L,d}\right)^2 ,
 \qquad
-g_R^2=\left(g_R^u\right)^2+\left(g_R^d\right)^2 ,
+g_R^2=\left(g_{R,u}\right)^2+\left(g_{R,d}\right)^2 ,
 $$
 
 and evaluating with the table's couplings gives
@@ -347,7 +347,7 @@ against the measured $20.767$, $0.21629$ and $0.1721$. The $R_b$ value is the mo
 
 ## What the Neutral Current Measures That the Charged Current Cannot
 
-**The charged current is one number.** The $W$ couples only to left-handed fermions, with strength $g/\sqrt2$ and no dependence on charge or isospin. Its measurement, through the muon lifetime, gives $G_F$ and hence $v$; it says nothing about the $W^3$–$B$ mixing, which is not a rotation the charged current knows about.
+**The charged current is one number.** The $W$ couples only to left-handed fermions, with strength $g/\sqrt2$ and no dependence on charge or isospin. Its measurement, through the muon lifetime, gives $G_F$ and hence $v$; it says nothing about the $W_3$–$B$ mixing, which is not a rotation the charged current knows about.
 
 **The neutral current is two numbers per fermion.** The $Z$ couples with $g_L$ and $g_R$, and their ratio depends on $Q$ and $\sin^2\theta_W$. That is why the neutral current measures the angle and the charged current does not: the neutral current is the only place where the two couplings of the product group appear in one vertex.
 
@@ -388,7 +388,7 @@ Twenty measurements against four parameters is five to one, and the ratio is not
 
 ## Summary
 
-The neutral sector has two gauge fields and one angle. Writing the physical fields as $A=\sin\theta_WW^3+\cos\theta_WB$ and $Z=\cos\theta_WW^3-\sin\theta_WB$, and demanding that the photon couple as pure electric charge with no $T_3$ admixture, fixes $\tan\theta_W=g_{\mathrm Y}/g$ and gives $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The $Z$ bracket then comes out as $\sqrt{g^2+g_{\mathrm Y}^2}(J^3-\sin^2\theta_WJ^Q)$ with no further freedom, and the square arises because the coefficient is $g_{\mathrm Y}^2/(g^2+g_{\mathrm Y}^2)$: two powers from the numerator and one from each term of the denominator. The angle is therefore defined by one condition, and its appearance squared in the neutral current is a consequence of that condition and not a second convention.
+The neutral sector has two gauge fields and one angle. Writing the physical fields as $A=\sin\theta_WW_3+\cos\theta_WB$ and $Z=\cos\theta_WW_3-\sin\theta_WB$, and demanding that the photon couple as pure electric charge with no $T_3$ admixture, fixes $\tan\theta_W=g_{\mathrm Y}/g$ and gives $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$. The $Z$ bracket then comes out as $\sqrt{g^2+g_{\mathrm Y}^2}(J_3-\sin^2\theta_WJ_Q)$ with no further freedom, and the square arises because the coefficient is $g_{\mathrm Y}^2/(g^2+g_{\mathrm Y}^2)$: two powers from the numerator and one from each term of the denominator. The angle is therefore defined by one condition, and its appearance squared in the neutral current is a consequence of that condition and not a second convention.
 
 The chiral decomposition gives $g_L=T_3-Q\sin^2\theta_W$, $g_R=-Q\sin^2\theta_W$, $g_V=T_3-2Q\sin^2\theta_W$ and $g_A=T_3$. The axial coupling is the isospin exactly, because the mixing term cancels between chiralities, and that is why the neutrino's couplings are both $\tfrac12$ whatever the angle. At $\sin^2\theta_W=0.23122$ the electron's vector coupling is $-0.0376$, seven and a half per cent of its axial coupling, a near-cancellation that makes the leptonic asymmetries small; the up quark's is $+0.1917$ and the down quark's $-0.3459$.
 
@@ -406,11 +406,11 @@ The framework has no route to the angle, and the companion article says so. The 
 
 | Symbol | Meaning |
 |---|---|
-| $W^3_\mu$, $B_\mu$ | The two neutral gauge fields before mixing |
+| $W_{3,\mu}$, $B_\mu$ | The two neutral gauge fields before mixing |
 | $A_\mu$, $Z_\mu$ | The photon and the neutral massive field |
 | $\theta_W$ | $\tan\theta_W=g_{\mathrm Y}/g$, the rotation that makes the photon pure charge |
 | $e$ | $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ |
-| $J^3_\mu$, $J^Y_\mu$, $J^Q_\mu$ | The isospin, hypercharge and electromagnetic currents |
+| $J_{3,\mu}$, $J_{Y,\mu}$, $J_{Q,\mu}$ | The isospin, hypercharge and electromagnetic currents |
 | $T_{3f}$, $Q_f$, $Y_f$ | Isospin, charge and hypercharge of the fermion $f$ |
 | $g_{Lf}$, $g_{Rf}$ | $T_3-Q\sin^2\theta_W$ and $-Q\sin^2\theta_W$, the chiral $Z$ couplings |
 | $g_{Vf}$, $g_{Af}$ | $T_3-2Q\sin^2\theta_W$ and $T_3$, the vector and axial $Z$ couplings |

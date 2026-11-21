@@ -106,7 +106,7 @@ the free article's bilinear, with the same sign convention. Its conservation on 
 **The stress gains one term.** Translation invariance gives the free stress plus the interaction's contribution, which is the term $+\frac{\lambda}{4}N^{2}$ in the energy density, since the interaction is a function of the field and not of its derivatives: the canonical energy density is
 
 $$
-T^{00}=\sum_\mu\bigl\lvert\partial_\mu\tilde\Xi\bigr\rvert^{2}+k_m^{2}N+\frac{\lambda}{4}N^{2},
+T_{00}=\sum_\mu\bigl\lvert\partial_\mu\tilde\Xi\bigr\rvert^{2}+k_m^{2}N+\frac{\lambda}{4}N^{2},
 $$
 
 in the flat notation, with the metric signs of the display. For $\lambda>0$ every term is positive and the energy is bounded below by zero.
@@ -145,7 +145,7 @@ $$
 | $k_m=mc/\hbar$ | Mass wave number |
 | $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ | d'Alembertian on the material sector |
 | $j_\mu$ | Phase current, the free bilinear |
-| $T^{00}$ | Energy density |
+| $T_{00}$ | Energy density |
 | $S,\ \mathcal{L}$ | Action and Lagrangian density |
 
 ## Further Reading

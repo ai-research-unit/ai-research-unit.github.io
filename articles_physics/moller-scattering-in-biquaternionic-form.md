@@ -242,7 +242,7 @@ $$
 
 where $\sigma_L$ and $\sigma_R$ are the cross sections for left- and right-handed incident electrons.
 
-The $Z$ couples to the electron with $g_V^e=-\tfrac12Q_W^e$ and $g_A^e=-\tfrac12$. At $Q^2\ll M_Z^2$ its propagator collapses to $-1/M_Z^2$, so the $Z$ amplitude is $-\sqrt2G_{\mathrm F}$ times the same two currents with the insertion replaced by the combination $g_V^eΞ_\mu$ minus $g_A^e$ times the same insertion followed by the chirality action $Q\mapsto-iQ\vec e_z$: the vector term keeps both values of the chirality, and the axial term carries one value into the other. The asymmetry is twice the interference of the $Z$ amplitude with the photon amplitude, divided by the photon amplitude squared. Three facts follow at once, and they are the anatomy of the boxed result below: the interference carries exactly one power of $G_{\mathrm F}$ and one factor $1/\alpha$ from the two photon vertices; it is proportional to the product $g_V^eg_A^e=\tfrac14Q_W^e$, so a parity-symmetric $Z$ coupling would give nothing; and the kinematic factor is $Q^2$, which in a fixed-target experiment is $Q^2=2m_eE_{\mathrm{beam}}y$, hence the $m_eE_{\mathrm{beam}}$ in front and the $y$-dependence behind.
+The $Z$ couples to the electron with $g_{V,e}=-\tfrac12Q_{W,e}$ and $g_{A,e}=-\tfrac12$. At $Q^2\ll M_Z^2$ its propagator collapses to $-1/M_Z^2$, so the $Z$ amplitude is $-\sqrt2G_{\mathrm F}$ times the same two currents with the insertion replaced by the combination $g_{V,e}Ξ_\mu$ minus $g_{A,e}$ times the same insertion followed by the chirality action $Q\mapsto-iQ\vec e_z$: the vector term keeps both values of the chirality, and the axial term carries one value into the other. The asymmetry is twice the interference of the $Z$ amplitude with the photon amplitude, divided by the photon amplitude squared. Three facts follow at once, and they are the anatomy of the boxed result below: the interference carries exactly one power of $G_{\mathrm F}$ and one factor $1/\alpha$ from the two photon vertices; it is proportional to the product $g_{V,e}g_{A,e}=\tfrac14Q_{W,e}$, so a parity-symmetric $Z$ coupling would give nothing; and the kinematic factor is $Q^2$, which in a fixed-target experiment is $Q^2=2m_eE_{\mathrm{beam}}y$, hence the $m_eE_{\mathrm{beam}}$ in front and the $y$-dependence behind.
 
 At tree level the asymmetry is therefore
 
@@ -250,19 +250,19 @@ $$
 \boxed{\;
 A_{\mathrm{PV}} = -\,m_eE_{\mathrm{beam}}\,\frac{G_{\mathrm F}}{\sqrt2\,\pi\alpha}\,
 \frac{4\sin^2\theta}{\left(3+\cos^2\theta\right)^2}\,
-Q_W^e\;},
+Q_{W,e}\;},
 \qquad
-Q_W^e=1-4\sin^2\theta_{\mathrm W},
+Q_{W,e}=1-4\sin^2\theta_{\mathrm W},
 $$
 
-with $Q_W^e$ the weak charge of the electron, $E_{\mathrm{beam}}$ the beam energy in the laboratory — not the centre-of-mass energy $E$ of the kinematics above, since $m_eE_{\mathrm{beam}}=Q^2/(2y)$ in a fixed-target experiment — and $\theta$ the centre-of-mass scattering angle. The same formula in terms of the inelasticity $y=-t/s$, equal to $\sin^2(\theta/2)$ up to $m^2/E^2$, is
+with $Q_{W,e}$ the weak charge of the electron, $E_{\mathrm{beam}}$ the beam energy in the laboratory — not the centre-of-mass energy $E$ of the kinematics above, since $m_eE_{\mathrm{beam}}=Q^2/(2y)$ in a fixed-target experiment — and $\theta$ the centre-of-mass scattering angle. The same formula in terms of the inelasticity $y=-t/s$, equal to $\sin^2(\theta/2)$ up to $m^2/E^2$, is
 
 $$
 A_{\mathrm{PV}} = -\,m_eE_{\mathrm{beam}}\,\frac{G_{\mathrm F}}{\sqrt2\,\pi\alpha}\,
-\frac{2y(1-y)}{1+y^4+(1-y)^4}\,Q_W^e,
+\frac{2y(1-y)}{1+y^4+(1-y)^4}\,Q_{W,e},
 $$
 
-and the two forms agree by $4\sin^2\theta/(3+\cos^2\theta)^2=2y(1-y)/(1+y^4+(1-y)^4)$. With the definition adopted here, $A_{\mathrm{PV}}$ is negative for $Q_W^e>0$; MOLLER quotes the same number with the opposite convention $(\sigma_R-\sigma_L)/(\sigma_R+\sigma_L)$ and the opposite overall sign. The asymmetry is of order $10^{-7}$, a hundred parts per billion, because $m_eE_{\mathrm{beam}}\sim10^{-2}$ GeV$^2$ and $G_{\mathrm F}/(\sqrt2\pi\alpha)\sim4\times10^{-4}$ GeV$^{-2}$.
+and the two forms agree by $4\sin^2\theta/(3+\cos^2\theta)^2=2y(1-y)/(1+y^4+(1-y)^4)$. With the definition adopted here, $A_{\mathrm{PV}}$ is negative for $Q_{W,e}>0$; MOLLER quotes the same number with the opposite convention $(\sigma_R-\sigma_L)/(\sigma_R+\sigma_L)$ and the opposite overall sign. The asymmetry is of order $10^{-7}$, a hundred parts per billion, because $m_eE_{\mathrm{beam}}\sim10^{-2}$ GeV$^2$ and $G_{\mathrm F}/(\sqrt2\pi\alpha)\sim4\times10^{-4}$ GeV$^{-2}$.
 
 It was measured at SLAC (E158), which finds $A_{\mathrm{PV}}=-131\pm14\pm10$ parts per billion and determines $\sin^2\theta_{\mathrm W}$; the approved MOLLER experiment at Jefferson Laboratory is designed for $E_{\mathrm{beam}}=11$ GeV, where the same formula gives $A_{\mathrm{PV}}\approx-4\times10^{-8}$, forty parts per billion. The first discussion is due to Zel'dovich (1959). It is the cleanest experimental reason Møller scattering is still studied, and it is the physical content of the framework's statement that the photon coupling is parity-symmetric while a left-handed coupling is not.
 
@@ -410,8 +410,8 @@ In the biquaternion framework the amplitude is the contraction of two material-s
 | $E_{\mathrm{beam}}$ | Beam energy in the laboratory, as in $m_eE_{\mathrm{beam}}$ |
 | $y=Q^2/s=-t/s$ | Inelasticity; equals $\sin^2(\theta/2)$ up to $m^2/E^2$ |
 | $G_{\mathrm F}$ | Fermi constant |
-| $g_V^e=-\tfrac12Q_W^e$, $g_A^e=-\tfrac12$ | Vector and axial $Z$ couplings of the electron |
-| $Q_W^e=1-4\sin^2\theta_{\mathrm W}$ | Weak charge of the electron |
+| $g_{V,e}=-\tfrac12Q_{W,e}$, $g_{A,e}=-\tfrac12$ | Vector and axial $Z$ couplings of the electron |
+| $Q_{W,e}=1-4\sin^2\theta_{\mathrm W}$ | Weak charge of the electron |
 | $\tilde J_{\Phi}\in\mathbb{B}_{\Phi}$ | Framework's conserved material-sector current |
 | $\mathcal C$ | Charge-conjugation real structure on $\mathcal{S}_{\mathrm{rep}}=S\oplus\bar S$ |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the insertions |

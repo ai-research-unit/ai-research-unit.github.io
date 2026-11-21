@@ -111,7 +111,7 @@ $$
 
 so the amplitude and the rapidity mix without changing the volume, and the block is invertible for every rapidity. The identity $\cosh^{2}-\sinh^{2}=1$ appears here as a property of the parameter metric, which is why the Legendre transform of §*The Variation: The Euler–Lagrange Equations* is regular.
 
-**The metric is the induced one.** Writing $g_{ab}(p)=\mathrm{Sc}\big[(\partial\tilde\Xi/\partial p^{a})^{*}(\partial\tilde\Xi/\partial p^{b})\big]$ for the eight parameters $p^{a}$, the kinetic Lagrangian is $g_{ab}\sum_\mu\partial_\mu p^{a}\partial_\mu p^{b}$ with the metric signs of the action, and $g$ is the pull-back of the flat Hermitian metric of $\mathbb{C}^{4}$ by the word. Since $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is a sum of squares, $g$ is positive semi-definite in every direction, and it is positive definite wherever the word's Jacobian has full rank, which is everywhere on the $N$-regular set.
+**The metric is the induced one.** Writing $g_{ab}(p)=\mathrm{Sc}\big[(\partial\tilde\Xi/\partial p_{a})^{*}(\partial\tilde\Xi/\partial p_{b})\big]$ for the eight parameters $p_{a}$, the kinetic Lagrangian is $g_{ab}\sum_\mu\partial_\mu p_{a}\partial_\mu p_{b}$ with the metric signs of the action, and $g$ is the pull-back of the flat Hermitian metric of $\mathbb{C}^{4}$ by the word. Since $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is a sum of squares, $g$ is positive semi-definite in every direction, and it is positive definite wherever the word's Jacobian has full rank, which is everywhere on the $N$-regular set.
 
 **The check.** Six random parameter sets with random axes, all four angles varying, were compared against the boxed formula: the two agree to a relative $4\times10^{-10}$, which is the truncation of the difference quotient. Each term was also isolated separately: with only the amplitude, only the rapidity, only the phase or only the rotor varying, the value is $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ times the square of that rate, and the two cross terms appear only when both of their parameters vary.
 
@@ -141,10 +141,10 @@ where the rotor cancels by the invariance of $\mathrm{Sc}$ under conjugation and
 
 $$
 \boxed{\;
-S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p^{a}\partial_{r'_t}p^{b}-\sum_{\eta}g_{ab}(p)\,\partial_{r_\eta}p^{a}\partial_{r_\eta}p^{b}-\varrho^{2}V(p)\Bigr\}\;}
+S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{\eta}g_{ab}(p)\,\partial_{r_\eta}p_{a}\partial_{r_\eta}p_{b}-\varrho^{2}V(p)\Bigr\}\;}
 $$
 
-with $p^{a}=(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})$ and $g$ known on the slice of fixed axes, which is the boxed metric above. The functional is the element-form action in other coordinates: no term was added, no term was dropped, and the only object that changed is the measure of the parameter space.
+with $p_{a}=(\varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}},\vec u_{\mathrm b},\vec u_{\mathrm r})$ and $g$ known on the slice of fixed axes, which is the boxed metric above. The functional is the element-form action in other coordinates: no term was added, no term was dropped, and the only object that changed is the measure of the parameter space.
 
 **The central field is the case of one block.** With $\theta_{\mathrm{rpd}}=0$ and the axes frozen, $g_{r\varrho}=1$, $g_{\theta\theta}=\varrho^{2}$, and all other entries vanish, so
 
@@ -202,9 +202,9 @@ which is the parent's amplitude equation, that is, the mass shell with the quant
 
 For the eight parameters the statement is one line and it is exact.
 
-**The pull-back.** The word $p\mapsto\tilde\Xi$ is a bijection from the parameter domain onto the $N$-regular set, with a smooth inverse and a Jacobian of full rank everywhere on that set. Hence $\delta S/\delta p^{a}=0$ for all eight $a$ if and only if $\delta S/\delta\tilde\Xi=0$, and the second is the Klein–Gordon equation. The eight parameter equations are the eight real components of the equation in the parameter basis, and the change between the two bases is the Jacobian.
+**The pull-back.** The word $p\mapsto\tilde\Xi$ is a bijection from the parameter domain onto the $N$-regular set, with a smooth inverse and a Jacobian of full rank everywhere on that set. Hence $\delta S/\delta p_{a}=0$ for all eight $a$ if and only if $\delta S/\delta\tilde\Xi=0$, and the second is the Klein–Gordon equation. The eight parameter equations are the eight real components of the equation in the parameter basis, and the change between the two bases is the Jacobian.
 
-**There is no constraint, and no multiplier.** This deserves stating, because the first-order case invites the opposite guess. The polar action is second order in every parameter, and its temporal block $g_{ab}$ restricted to $(\ln \varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}})$ is the pull-back of $\mathrm{Sc}((\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi)$ by an injective map, hence positive definite with the unit-determinant block of §*The Parameter Form*. So the conjugate momenta are $p_{a}=2g_{ab}\partial_{r'_t}p^{b}$ with $g$ invertible, no momentum vanishes identically, and the Legendre transform is a diffeomorphism. There are no primary constraints to analyse. In the first-order case four momenta vanish identically and the system is degenerate in that sense; here none does, and the degeneracy of the first-order case is a property of the first-order action, not of the word.
+**There is no constraint, and no multiplier.** This deserves stating, because the first-order case invites the opposite guess. The polar action is second order in every parameter, and its temporal block $g_{ab}$ restricted to $(\ln \varrho,\theta_{\mathrm{pha}},\theta_{\mathrm{rpd}},\theta_{\mathrm{axr}})$ is the pull-back of $\mathrm{Sc}((\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi)$ by an injective map, hence positive definite with the unit-determinant block of §*The Parameter Form*. So the conjugate momenta are $p_{a}=2g_{ab}\partial_{r'_t}p_{b}$ with $g$ invertible, no momentum vanishes identically, and the Legendre transform is a diffeomorphism. There are no primary constraints to analyse. In the first-order case four momenta vanish identically and the system is degenerate in that sense; here none does, and the degeneracy of the first-order case is a property of the first-order action, not of the word.
 
 **No Lagrange multipliers for the unit conditions.** The four factors of the word are a boost of unit Hermitian norm, a rotor of unit quaternionic norm, a positive scale and an angle, so the unit conditions are solved by the parameterisation instead of being imposed. This is the contrast with Takabayasi's tensor formulation, whose spin vector and velocity are constrained unit vectors and whose variational principle therefore carries three multipliers. The parameters carry no multiplier because the parameters are coordinates on the constraint surface and not coordinates in the ambient space.
 
@@ -222,15 +222,15 @@ At a point of the $N$-regular set the tangent space of the field values is eight
 
 **The bracket basis** is the decomposition of $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$ into its four algebraic types: a real scalar, a central imaginary, a Hermitian element along the boost axis, and a real vector along the rotor's axis. Each type carries one physical role, and each is one object and not one number.
 
-**The parameter basis** is the set of eight derivatives $\partial\tilde\Xi/\partial p^{a}$. These are eight elements of $\mathbb{B}$, not eight numbers, and they are the Jacobian columns of the word.
+**The parameter basis** is the set of eight derivatives $\partial\tilde\Xi/\partial p_{a}$. These are eight elements of $\mathbb{B}$, not eight numbers, and they are the Jacobian columns of the word.
 
-The two are related by $\mathcal{A}_\mu=\sum_a\mathcal{A}_a\,\partial_\mu p^{a}$ with $\mathcal{A}_a=\tilde\Xi^{-1}\partial\tilde\Xi/\partial p^{a}$, so the bracket basis is the parameter basis multiplied by one more factor of $\tilde\Xi^{-1}$. The metric of the polar action is the same in both readings,
+The two are related by $\mathcal{A}_\mu=\sum_a\mathcal{A}_a\,\partial_\mu p_{a}$ with $\mathcal{A}_a=\tilde\Xi^{-1}\partial\tilde\Xi/\partial p_{a}$, so the bracket basis is the parameter basis multiplied by one more factor of $\tilde\Xi^{-1}$. The metric of the polar action is the same in both readings,
 
 $$
 g_{ab}=\mathrm{Sc}\big[\mathcal{A}_a^{*}\,\tilde\Xi^{*}\tilde\Xi\,\mathcal{A}_b\big],
 $$
 
-which is the parameter form, and $\mathrm{Sc}(\mathcal{A}^{*}\tilde\Xi^{*}\tilde\Xi\,\mathcal{A})$ with $\mathcal{A}=\mathcal{A}_a\partial_\mu p^{a}$, which is the bracket form. The two differ by where the sum over the parameters is taken.
+which is the parameter form, and $\mathrm{Sc}(\mathcal{A}^{*}\tilde\Xi^{*}\tilde\Xi\,\mathcal{A})$ with $\mathcal{A}=\mathcal{A}_a\partial_\mu p_{a}$, which is the bracket form. The two differ by where the sum over the parameters is taken.
 
 ### The central field's Jacobian, worked
 
@@ -275,7 +275,7 @@ so the Jacobian is diagonal and the metric is $(1,\varrho^{2})$. The two paramet
 **The check.** The word $p\mapsto\tilde\Xi$ is a bijection from the parameter domain onto the $N$-regular set, with a smooth inverse and a Jacobian of full rank everywhere on that set. The residual identity
 
 $$
-R_a=\mathrm{Sc}\Big[\Big(\frac{\partial\tilde\Xi}{\partial p^{a}}\Big)^{*}E\Big],
+R_a=\mathrm{Sc}\Big[\Big(\frac{\partial\tilde\Xi}{\partial p_{a}}\Big)^{*}E\Big],
 \qquad a=1,\dots,8,
 $$
 
@@ -341,7 +341,7 @@ whose bracket is the transport equation. So the conservation of the charge is th
 The energy density of the companion is
 
 $$
-T^{00}=(\partial_{r'_t}\varrho)^{2}+\lvert\nabla \varrho\rvert^{2}+\varrho^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)+\varrho^{2}V,
+T_{00}=(\partial_{r'_t}\varrho)^{2}+\lvert\nabla \varrho\rvert^{2}+\varrho^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}+\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)+\varrho^{2}V,
 $$
 
 which is four squares and a positive potential for $V>0$, hence non-negative for every field on both frequency branches. The contrast with the charge is now visible in one display each: the charge is linear in the phase rate and the energy is quadratic in it, so the charge changes sign when the phase runs backwards and the energy does not. Nothing about the amplitude distinguishes the branches, and $\varrho$ is the same on both.
@@ -373,7 +373,7 @@ The second equation of the pair is the variation of $\varrho$, and in the polar 
 The polar action is the element-form action in the coordinates of the word,
 
 $$
-S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p^{a}\partial_{r'_t}p^{b}-\sum_{\eta}g_{ab}(p)\,\partial_{r_\eta}p^{a}\partial_{r_\eta}p^{b}-\varrho^{2}V(p)\Bigr\},
+S=\int\mathrm{d}^{4}x\;\Bigl\{g_{ab}(p)\,\partial_{r'_t}p_{a}\partial_{r'_t}p_{b}-\sum_{\eta}g_{ab}(p)\,\partial_{r_\eta}p_{a}\partial_{r_\eta}p_{b}-\varrho^{2}V(p)\Bigr\},
 $$
 
 with the kinetic Lagrangian of one direction
@@ -383,7 +383,7 @@ $$
 =\varrho^{2}\Bigl\{\cosh\theta_{\mathrm{rpd}}\Bigl[(\partial\ln \varrho)^{2}+(\partial\theta_{\mathrm{pha}})^{2}+\frac{(\partial\theta_{\mathrm{rpd}})^{2}}{4}+\frac{(\partial\theta_{\mathrm{axr}})^{2}}{4}\Bigr]+\sinh\theta_{\mathrm{rpd}}\Bigl[(\partial\ln \varrho)(\partial\theta_{\mathrm{rpd}})-(\partial\theta_{\mathrm{pha}})(\partial\theta_{\mathrm{axr}})\,\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}\Bigr]\Bigr\}
 $$
 
-for fixed axes, whose metric $g_{ab}$ is read off by replacing each $\partial p^{a}$ with the parameter derivative, and with the potential $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ for a Hermitian coefficient $h_t e_t+i\vec h_\Psi$. The kinetic Lagrangian is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\,\sum_\mu\mathcal{A}_\mu\mathcal{A}_\mu^{*})$ with $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$: the frame density times the square of the bracket. The density factor is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, and it is the coefficient of every square.
+for fixed axes, whose metric $g_{ab}$ is read off by replacing each $\partial p_{a}$ with the parameter derivative, and with the potential $V=h_t\cosh\theta_{\mathrm{rpd}}+\sinh\theta_{\mathrm{rpd}}(\vec h_\Psi\cdot\vec u_{\mathrm b})$ for a Hermitian coefficient $h_t e_t+i\vec h_\Psi$. The kinetic Lagrangian is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi\,\sum_\mu\mathcal{A}_\mu\mathcal{A}_\mu^{*})$ with $\mathcal{A}_\mu=\tilde\Xi^{-1}\partial_\mu\tilde\Xi$: the frame density times the square of the bracket. The density factor is $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, and it is the coefficient of every square.
 
 The rapidity enters in two ways and both are needed. It multiplies all four squares through $\cosh\theta_{\mathrm{rpd}}$, and it multiplies two cross terms through $\sinh\theta_{\mathrm{rpd}}$: one between the amplitude gradient and the rapidity gradient, one between the phase gradient and the rotor's angular rate, and the second carries the cosine between the two axes. The amplitude–rapidity block has determinant $\tfrac14$, the identity $\cosh^{2}-\sinh^{2}=1$ appearing as a unit-determinant mixing. The first-order Schrödinger action has the same cosh multiplying a single velocity, because its kinetic term is one bracket; the second-order action has two brackets and the same factor becomes a metric entry.
 
@@ -414,12 +414,12 @@ For the general element the equivalence with the Klein–Gordon equation is exac
 | $\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The density ratio that weights every square |
 | $\rho_{\mathrm{num}}=2\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | The parent's density |
 | $g_{ab}(p)$ | Induced metric on the parameters |
-| $p^{a}$ | The eight parameters as coordinates |
+| $p_{a}$ | The eight parameters as coordinates |
 | $k_m=mc/\hbar$ | Mass wave number |
 | $V$ | $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)/\varrho^{2}$, real, a function of rapidity and axis |
 | $j_{r'_t},\ j_\eta$ | Charge current; $j_{r'_t}=2\rho_{\mathrm{num}}\partial_{r'_t}\theta_{\mathrm{pha}}$ |
 | $\rho_{\mathrm{chg}}=\rho_{\mathrm{num}}E/(mc^{2})$ | Charge density; $j_{r'_t}=-2k_m\rho_{\mathrm{chg}}$ |
-| $T^{00}$ | Energy density; four squares plus $\varrho^{2}V$ |
+| $T_{00}$ | Energy density; four squares plus $\varrho^{2}V$ |
 | $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ | Quantum potential of the amplitude equation |
 
 ## Further Reading

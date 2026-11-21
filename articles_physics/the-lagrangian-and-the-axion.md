@@ -7,7 +7,7 @@ This article writes the axion as the extremum of an action whose interaction ter
 **The equation.** The parent's equation is
 
 $$
-\Box_\Phi a+\frac{\partial V}{\partial a}=\frac{g_s^2}{32\pi^2 f_a}\sum_{\mu,\nu,a'}F^{a'}_{\mu\nu}F^{a'}_{\mathrm{dual},\mu\nu} ,
+\Box_\Phi a+\frac{\partial V}{\partial a}=\frac{g_s^2}{32\pi^2 f_a}\sum_{\mu,\nu,a'}F_{a'\mu\nu}F^{a'}_{\mathrm{dual},\mu\nu} ,
 $$
 
 the massive wave equation with a source that is itself a total derivative. The article asks what action has this equation and what the periodicity of $a$ requires of it.
@@ -17,7 +17,7 @@ the massive wave equation with a source that is itself a total derivative. The a
 *First, the action.* With $a$ the axion field and $V$ its periodic potential,
 
 $$
-S[a]=\int d^4r\;\Bigl[\frac12\sum_\mu\frac{\partial a}{\partial R_\mu}\frac{\partial a}{\partial R_\mu}-V(a)+\frac{a}{f_a}\frac{g_s^2}{32\pi^2}\sum_{\mu,\nu,a'}F^{a'}_{\mu\nu}F^{a'}_{\mathrm{dual},\mu\nu}\Bigr],
+S[a]=\int d^4r\;\Bigl[\frac12\sum_\mu\frac{\partial a}{\partial R_\mu}\frac{\partial a}{\partial R_\mu}-V(a)+\frac{a}{f_a}\frac{g_s^2}{32\pi^2}\sum_{\mu,\nu,a'}F_{a'\mu\nu}F^{a'}_{\mathrm{dual},\mu\nu}\Bigr],
 $$
 
 the stationarity condition is the parent's equation, and the interaction term is a total derivative because $F\tilde F$ is one.
@@ -34,7 +34,7 @@ the stationarity condition is the parent's equation, and the interaction term is
 
 **The field.** $a$ is real and periodic, $a\equiv a+2\pi f_a$; $f_a$ is the axion decay constant, with dimension of mass. The dimensionless angle is $\theta=a/f_a$.
 
-**The gauge sector.** $F^{a'}_{\mu\nu}$ are the colour field strengths, $g_s$ the strong coupling, and $\tilde F$ the dual; the density $F\tilde F=\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ is a total derivative.
+**The gauge sector.** $F_{a'\mu\nu}$ are the colour field strengths, $g_s$ the strong coupling, and $\tilde F$ the dual; the density $F\tilde F=\sum_{\mu,\nu}F_{\mu\nu}F_{\mathrm{dual},\mu\nu}$ is a total derivative.
 
 **The potential.** $V(a)=\Lambda^4\bigl(1-\cos(a/f_a+\bar\theta)\bigr)$ at leading order, with $\Lambda^4$ the topological susceptibility and $\bar\theta$ the vacuum angle.
 

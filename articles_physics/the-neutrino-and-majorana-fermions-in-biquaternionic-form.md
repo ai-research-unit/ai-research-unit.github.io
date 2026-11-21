@@ -41,7 +41,7 @@ a pure right multiplier, so it is an example of the right slot and never its def
 |---|---|---|---|
 | Dirac | none: an arbitrary element | $8$ | two, independent |
 | Weyl | one value absent, $\tilde{Ξ}=\tilde{Ξ}_{L}$ or $\tilde{Ξ}=\tilde{Ξ}_{R}$ | $4$ | one |
-| Majorana | fixed by a conjugate-linear involution, $\tilde{Ξ}=\tilde{Ξ}^c$ | $4$ | two, mutually conjugate |
+| Majorana | fixed by a conjugate-linear involution, $\tilde{Ξ}=\tilde{Ξ}_c$ | $4$ | two, mutually conjugate |
 
 **The counts are read off the algebra.** An element is four complex coefficients, hence eight real ones. A single value is two complex coefficients, hence four. An antilinear involution of the eight-dimensional real space has a fixed space of dimension four, because the multiplication by $i$ exchanges its $+1$ and $-1$ eigenspaces and the two have equal dimension. So the Majorana condition halves the field, and it does so by an antilinear structure and not by a linear constraint bolted onto a Dirac field. That is the content of the boxed count of the companion *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, restated on the element.
 
@@ -53,7 +53,7 @@ a pure right multiplier, so it is an example of the right slot and never its def
 
 - It is **conjugate-linear and involutive**, $\mathcal{C}(\alpha\tilde{Ξ})=\bar\alpha\,\mathcal{C}\tilde{Ξ}$ and $\mathcal{C}^{2}=1$. A linear map would be a symmetry of the field and not a map to the conjugate field, and a map of square $-1$ has no real fixed points at all.
 - It **exchanges the two values**. The conjugate of a left-handed field is a right-handed field; that is what makes the antiparticle of a chiral fermion carry the opposite chirality.
-- It **commutes with the kinetic operator**. If it did not, the condition $\tilde{Ξ}^c=\tilde{Ξ}$ would not be preserved by the evolution, and a field self-conjugate at one time would not stay self-conjugate.
+- It **commutes with the kinetic operator**. If it did not, the condition $\tilde{Ξ}_c=\tilde{Ξ}$ would not be preserved by the evolution, and a field self-conjugate at one time would not stay self-conjugate.
 
 **Why the pairing is writable at all, in rotor terms.** The compact factor is $SU(2)$, which in this algebra is $\mathrm{SU}(2)=\mathrm{Spin}(3)$, and its two spinor-valued objects — the module and the module conjugate to it — are **equivalent**: the defining representation of $\mathrm{Spin}(3)$ is self-conjugate, $2\cong\bar 2$, because the group has no independent conjugate spinor. So a bilinear that pairs a field with its own conjugate is a scalar of the gauge group, which is the statement the Majorana condition needs. For a group with complex representations, $\mathrm{SU}(3)$ say, the same pairing would be forbidden and the Majorana mass would have to wait for a larger structure. The self-conjugacy is thus not a convenience of the quaternions; it is the reason the framework has one carrier for the neutrino instead of a particle and a distinct antiparticle carrier.
 
@@ -85,7 +85,7 @@ The sign vector is the one that makes the square the d'Alembertian: the time dir
 **The conjugation.** The charge conjugation of this article is
 
 $$
-\boxed{\;\tilde{Ξ}^c=\mathcal{C}\tilde{Ξ}=i\,\bar{\tilde{Ξ}}\;},
+\boxed{\;\tilde{Ξ}_c=\mathcal{C}\tilde{Ξ}=i\,\bar{\tilde{Ξ}}\;},
 $$
 
 the coefficient conjugate of the element, multiplied by the central imaginary. Four checks fix it, and each is one line.
@@ -127,20 +127,20 @@ whose coefficients are purely imaginary, so $\overline{D_p}=-D_p$. The conjugati
 | involution | $\mathcal{C}^{2}=1$ | holds |
 | antilinear | $\mathcal{C}(\alpha\tilde{Ξ})=\bar\alpha\,\mathcal{C}\tilde{Ξ}$ | holds by construction |
 | value exchange | $\xi\mathcal{C}=-\mathcal{C}\xi$ | holds |
-| fixed space | $\dim_{\mathbb{R}}\{\tilde{Ξ}:\tilde{Ξ}^c=\tilde{Ξ}\}=4$ | holds |
+| fixed space | $\dim_{\mathbb{R}}\{\tilde{Ξ}:\tilde{Ξ}_c=\tilde{Ξ}\}=4$ | holds |
 | kinetic operator | $\mathcal{C}D=D\mathcal{C}$ | holds, coefficients real |
 | symbol | $\mathcal{C}D_p=-D_p\mathcal{C}$ | holds, symbol imaginary |
 
 **Why the conjugation is the bar, and not another.** The algebra has three antilinear involutions and one linear one, and the choice among them is not free. The coefficient bar is the only conjugate-linear **automorphism** of $\mathbb{B}$: it is the only one that respects the order of a product, and therefore the only one that commutes with the action of the algebra on itself by left multiplication. A real structure on a field that carries that action must commute with it. This is the criterion, and the section *Which Conjugation of the Algebra Is the Charge Conjugation?* below applies it in full.
 
-**The phase in front of the bar is free, and the article says so.** Every $\lambda\bar{\cdot}$ of unit modulus is antilinear, involutive and value-exchanging, and every one of them commutes with $D$. The checks are statements about multipliers, and a scalar multiplies none of them. What the phase moves is the fixed space, and nothing else: the phase of a real form is not an invariant, and the pattern of vanishing bilinears is decided by two parities that a scalar does not touch. So $\tilde{Ξ}^c=i\bar{\tilde{Ξ}}$ and $\tilde{Ξ}^c=\bar{\tilde{Ξ}}$ describe one structure, with one four-dimensional real form up to a phase. The value $i$ is a convention, chosen to agree with the conjugation of a column in the coefficient basis, where the conjugate of $\tilde{Ξ}$ is $i\bar{\tilde{Ξ}}$. What is not a convention is the bar: the antiautomorphisms reverse the order, and no phase rescues a reversed order.
+**The phase in front of the bar is free, and the article says so.** Every $\lambda\bar{\cdot}$ of unit modulus is antilinear, involutive and value-exchanging, and every one of them commutes with $D$. The checks are statements about multipliers, and a scalar multiplies none of them. What the phase moves is the fixed space, and nothing else: the phase of a real form is not an invariant, and the pattern of vanishing bilinears is decided by two parities that a scalar does not touch. So $\tilde{Ξ}_c=i\bar{\tilde{Ξ}}$ and $\tilde{Ξ}_c=\bar{\tilde{Ξ}}$ describe one structure, with one four-dimensional real form up to a phase. The value $i$ is a convention, chosen to agree with the conjugation of a column in the coefficient basis, where the conjugate of $\tilde{Ξ}$ is $i\bar{\tilde{Ξ}}$. What is not a convention is the bar: the antiautomorphisms reverse the order, and no phase rescues a reversed order.
 
 ## The Majorana Condition and the Mass
 
 **The condition.** A Majorana field is an element equal to its own charge conjugate,
 
 $$
-\tilde{Ξ}=\tilde{Ξ}^c=i\bar{\tilde{Ξ}} .
+\tilde{Ξ}=\tilde{Ξ}_c=i\bar{\tilde{Ξ}} .
 $$
 
 The condition is one antilinear equation on eight real parameters, and its solutions are four-real-dimensional. It ties the two values to each other: taking the $L$ part and the $R$ part of the equation gives
@@ -154,7 +154,7 @@ so each value is determined by the conjugate of the other. This is the precise s
 **The equation.** The equation of the field is
 
 $$
-D\,\tilde{Ξ}=k_m\,\tilde{Ξ}^c,
+D\,\tilde{Ξ}=k_m\,\tilde{Ξ}_c,
 $$
 
 with $D$ the operator of the previous section and $m$ real. Written on the two values it is a pair, one first-order equation for each value, and the mass couples the equation of one value to the other. The companion *The Dirac Equation in Biquaternionic Form* writes the same two values in the frame of the gradient. The two frames differ by where the central $i$ sits, and only the present frame is used below: it is the one in which the conjugation is transparent.
@@ -176,7 +176,7 @@ The equation is first order in the time derivative, so the deviation is fixed by
 **The mass shell is unchanged.** Squaring the equation and using $\mathcal{C}^{2}=1$ and $D^{2}=\Box_\Phi$,
 
 $$
-\Box_\Phi\,\tilde{Ξ}=D^{2}\tilde{Ξ}=k_mD\,\tilde{Ξ}^c=k_m^{2}\,\tilde{Ξ} ,
+\Box_\Phi\,\tilde{Ξ}=D^{2}\tilde{Ξ}=k_mD\,\tilde{Ξ}_c=k_m^{2}\,\tilde{Ξ} ,
 $$
 
 so a plane wave of the field sits on $N=-m^{2}c^{2}$, exactly as in the Dirac case. The mass shell is the one of a massive fermion, and the Majorana restriction has removed half the degrees of freedom and nothing else. The bilinear that normalises the field is the one of the companion quantisation article, and it is nonzero for $m>0$. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.
@@ -204,7 +204,7 @@ The vanishing of the vector current is the statement that a self-conjugate field
 
 ## Which Conjugation of the Algebra Is the Charge Conjugation?
 
-**The question.** The conjugation of the previous sections was written $\tilde{Ξ}^c=i\bar{\tilde{Ξ}}$ and used. The algebra supplies four conjugations, and the question is which of them can play that role and which cannot. The answer is one criterion, and the criterion is order.
+**The question.** The conjugation of the previous sections was written $\tilde{Ξ}_c=i\bar{\tilde{Ξ}}$ and used. The algebra supplies four conjugations, and the question is which of them can play that role and which cannot. The answer is one criterion, and the criterion is order.
 
 **The four conjugations.** They divide into two kinds, and the division is the whole of the answer.
 
@@ -233,7 +233,7 @@ $$
 \{\tilde{Ξ}:\tilde{Ξ}^{\flat}=\tilde{Ξ}\}=\mathbb{B}_{\Phi},
 $$
 
-each of real dimension four. So all three antilinear involutions fix a four-dimensional space, and the count that a Majorana field needs is met by all three. What distinguishes them is what the fixed space is and whether the conjugation respects the order. The bar fixes the real quaternions, and the fixed space of the charge conjugation is that space multiplied by the central phase $(1+i)/\sqrt2$, because $\tilde{Ξ}^c=\tilde{Ξ}$ reads $\tilde{Ξ}=i\bar{\tilde{Ξ}}$ and not $\tilde{Ξ}=\bar{\tilde{Ξ}}$. The phase is a relabelling of the same four-dimensional real form.
+each of real dimension four. So all three antilinear involutions fix a four-dimensional space, and the count that a Majorana field needs is met by all three. What distinguishes them is what the fixed space is and whether the conjugation respects the order. The bar fixes the real quaternions, and the fixed space of the charge conjugation is that space multiplied by the central phase $(1+i)/\sqrt2$, because $\tilde{Ξ}_c=\tilde{Ξ}$ reads $\tilde{Ξ}=i\bar{\tilde{Ξ}}$ and not $\tilde{Ξ}=\bar{\tilde{Ξ}}$. The phase is a relabelling of the same four-dimensional real form.
 
 **The conjugate field and its action.** Under a Lorentz rotor $U$ the field goes to $U\tilde{Ξ}$, and the conjugation carries that into $\bar U\,\bar{\tilde{Ξ}}$: the conjugate field carries the conjugate rotor and not the same one. For a rotor of unit norm $(\bar U)^{\natural}=U^{-1}$, so the conjugate action is the inverse one read through the quaternion conjugation. The two roles are different and neither replaces the other: the coefficient conjugation is the real structure, and the conjugate rotor is what the conjugate field transforms by.
 
@@ -253,7 +253,7 @@ and it is the algebra's own, the anti-Hermitian part carrying the four-vectors a
 
 **The tempting interpretation, and why it is wrong.** $\mathbb{B}_{\Phi}$ is the fixed space of the real structure $\flat$, it is four-real-dimensional, and the dimension matches the Majorana count exactly. The temptation is to say that a Majorana field is a field with values in $\mathbb{B}_{\Phi}$. The framework's own structure refuses it, and the reason is one line: **the operator does not preserve the sector.** The unit $\vec e_x$ is anti-Hermitian, $(\vec e_x)^{*}=-\vec e_x$, so it lies in $\mathbb{B}_{\Phi}$; its square is $\vec e_x^{2}=-e_t$, which is Hermitian and lies in $\mathbb{B}_{\Psi}$. A derivative along $x$ therefore carries a field of the material sector into the informational one, and no first-order equation with the algebra's units can be written inside either sector alone.
 
-**The fixed space of the conjugation is not a sector.** The fixed space of $\tilde{Ξ}^c=\tilde{Ξ}$ is four-real-dimensional and it is not $\mathbb{B}_{\Phi}$: it is the real-quaternion form multiplied by the central phase, and both the multiplication by $i$ and the conjugation are needed to state it. The two four-dimensional spaces are different objects, and the coincidence of their dimensions is the coincidence that makes the sector split look like a candidate. The distinction is one of kind: a sector is a fixed space of an antilinear map read on the algebra, and the Majorana real form is the fixed space of an antilinear map read on the field.
+**The fixed space of the conjugation is not a sector.** The fixed space of $\tilde{Ξ}_c=\tilde{Ξ}$ is four-real-dimensional and it is not $\mathbb{B}_{\Phi}$: it is the real-quaternion form multiplied by the central phase, and both the multiplication by $i$ and the conjugation are needed to state it. The two four-dimensional spaces are different objects, and the coincidence of their dimensions is the coincidence that makes the sector split look like a candidate. The distinction is one of kind: a sector is a fixed space of an antilinear map read on the algebra, and the Majorana real form is the fixed space of an antilinear map read on the field.
 
 **The physical test, and the answer.** The test is the one a physicist would apply: impose the condition, evolve, and see whether the condition survives. The previous section performed it, and the answer is that the condition survives because $\mathcal{C}$ commutes with the operator. A sector, by contrast, is not preserved by the operator at all, so a constraint of the form "the field lies in $\mathbb{B}_{\Phi}$" cannot be propagated. It would be violated by the first time step. The sector split therefore **obstructs** the reality condition rather than supplying it, and it cannot be used as it stands.
 
@@ -362,9 +362,9 @@ The contraction sums follow from the squares. No index is raised: the summed ind
 
 The field is an element of $\mathbb{B}$. Its chirality is a value of one operator, $\xi=-iR_{\mathrm{axf},\vec e_z}$, and the three notions are three conditions on that element: an arbitrary element is Dirac, an element of one value is Weyl, and an element fixed by the charge conjugation is Majorana.
 
-The charge conjugation is the coefficient conjugate, $\tilde{Ξ}^c=i\bar{\tilde{Ξ}}$ up to the phase discussed above. It is conjugate-linear, it squares to one, it exchanges the two values, it fixes a real four-dimensional space, and it commutes with the kinetic operator of the frame. The last property holds because every coefficient of the operator is real: the operator is built from multipliers the conjugation fixes, so the conjugation passes through it. On the symbol the same fact reads as anticommutation, and it is the reversal of the frequency that the conjugation performs on a plane wave.
+The charge conjugation is the coefficient conjugate, $\tilde{Ξ}_c=i\bar{\tilde{Ξ}}$ up to the phase discussed above. It is conjugate-linear, it squares to one, it exchanges the two values, it fixes a real four-dimensional space, and it commutes with the kinetic operator of the frame. The last property holds because every coefficient of the operator is real: the operator is built from multipliers the conjugation fixes, so the conjugation passes through it. On the symbol the same fact reads as anticommutation, and it is the reversal of the frequency that the conjugation performs on a plane wave.
 
-The Majorana condition $\tilde{Ξ}=\tilde{Ξ}^c$ is therefore consistent with a mass. The constraint is propagated, the deviation from self-conjugacy solves the equation with the reversed sign of the mass, the mass shell stays $N=-m^{2}c^{2}$, and the restriction removes half the degrees of freedom and not the mass. No single mode is self-conjugate: the condition pairs an amplitude at $p$ with its conjugate at $-p$. The vector current of the self-conjugate field vanishes, so the field carries no fermion number; the scalar pairing survives, and it is the mass term. Both statements are statements about an anticommuting field, and a commuting element gives the opposite pattern.
+The Majorana condition $\tilde{Ξ}=\tilde{Ξ}_c$ is therefore consistent with a mass. The constraint is propagated, the deviation from self-conjugacy solves the equation with the reversed sign of the mass, the mass shell stays $N=-m^{2}c^{2}$, and the restriction removes half the degrees of freedom and not the mass. No single mode is self-conjugate: the condition pairs an amplitude at $p$ with its conjugate at $-p$. The vector current of the self-conjugate field vanishes, so the field carries no fermion number; the scalar pairing survives, and it is the mass term. Both statements are statements about an anticommuting field, and a commuting element gives the opposite pattern.
 
 Which conjugation of the algebra plays the role is decided by one criterion: a real structure on a field that carries the algebra's left action must be an automorphism, and the coefficient bar is the only conjugate-linear automorphism. The Hermitian conjugation and $\flat$ reverse the order and cannot serve. The fixed space of the charge conjugation is the real-quaternion form multiplied by the central phase, and it is not the material sector: the sector split is a different decomposition of the same algebra, and the operator does not preserve it, because $\vec e_x$ is anti-Hermitian and $\vec e_x^{2}=-e_t$ is not. The split therefore obstructs the reality condition rather than supplying it.
 
@@ -389,10 +389,10 @@ The left-handedness of the neutrino is empirical, and the mass values and mixing
 | $\Box_\Phi=-\partial^2/\partial {r'_{t}}^2+\Delta_\Phi$ | d'Alembertian; $\Delta_\Phi$ is the material Laplacian |
 | $\varepsilon=(1,-1,-1,-1)$ | Sign vector of the frame |
 | $\mathcal{C}:\tilde{Ξ}\mapsto i\bar{\tilde{Ξ}}$ | Charge conjugation; $\mathcal{C}^2=1$, $\xi\mathcal{C}=-\mathcal{C}\xi$, $\mathcal{C}D=D\mathcal{C}$ |
-| $\tilde{Ξ}^c=\mathcal{C}\tilde{Ξ}$ | Charge conjugate; $\tilde{Ξ}^c=\tilde{Ξ}$ defines Majorana |
+| $\tilde{Ξ}_c=\mathcal{C}\tilde{Ξ}$ | Charge conjugate; $\tilde{Ξ}_c=\tilde{Ξ}$ defines Majorana |
 | $\tilde{Ξ}=i\bar{\tilde{Ξ}}$ | Majorana condition; equivalent to $\tilde{Ξ}_{L}=i\overline{\tilde{Ξ}_{R}}$ |
-| $D\tilde{Ξ}=k_m\tilde{Ξ}^c$ | Majorana equation |
-| $\dim_{\mathbb{R}}\{\tilde{Ξ}:\tilde{Ξ}^c=\tilde{Ξ}\}=4$ | Majorana component count |
+| $D\tilde{Ξ}=k_m\tilde{Ξ}_c$ | Majorana equation |
+| $\dim_{\mathbb{R}}\{\tilde{Ξ}:\tilde{Ξ}_c=\tilde{Ξ}\}=4$ | Majorana component count |
 | $\delta=\tilde{Ξ}-\mathcal{C}\tilde{Ξ}$ | Deviation from self-conjugacy; $D\delta=-m\delta$ |
 
 ## Further Reading

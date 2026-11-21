@@ -87,7 +87,7 @@ Here $\mathfrak{k}$ is the span of the $J$ and $\mathfrak{p}$ the span of the $K
 
 ### The Structure Constants
 
-Write $[T_a,T_b]=f_{ab}{}^{c}T_c$ with $T_a$ running over $J_x,J_y,J_z,K_x,K_y,K_z$. The nonzero constants are
+Write $[T_a,T_b]=f_{abc}T_c$ with $T_a$ running over $J_x,J_y,J_z,K_x,K_y,K_z$. The nonzero constants are
 
 $$
 f_{ij}{}^{k}=\epsilon_{ijk},\qquad f_{i,j+3}{}^{k+3}=\epsilon_{ijk},\qquad f_{i+3,j+3}{}^{k}=-\epsilon_{ijk},
@@ -95,7 +95,7 @@ $$
 
 with $\epsilon_{ijk}$ the Levi-Civita symbol and all indices cyclic in $x,y,z$. Two properties follow at once and are used in the invariant-form computation:
 
-- **Antisymmetry**, $f_{ab}{}^{c}=-f_{ba}{}^{c}$, which is the antisymmetry of the commutator.
+- **Antisymmetry**, $f_{abc}=-f_{bac}$, which is the antisymmetry of the commutator.
 - **The Jacobi identity**, which the table satisfies because it is a commutator table in an associative algebra. There is nothing to prove: any associator identity would be a theorem of the algebra, and the algebra is associative.
 
 ### The Verification
@@ -244,7 +244,7 @@ The six generators are $J_\eta=\tfrac12\vec e_\eta$, anti-Hermitian and compact,
 | $J_\eta=\tfrac12\vec e_\eta$ | the rotation generators, anti-Hermitian |
 | $K_\eta=\tfrac12 i\vec e_\eta$ | the boost generators, Hermitian |
 | $\mathfrak{k}$, $\mathfrak{p}$ | the spans of the $J$ and of the $K$ |
-| $f_{ab}{}^{c}$ | the structure constants, $[T_a,T_b]=f_{ab}{}^{c}T_c$ |
+| $f_{abc}$ | the structure constants, $[T_a,T_b]=f_{abc}T_c$ |
 | $\langle\cdot,\cdot\rangle_{\mathrm{tr}}$ | the trace form $\operatorname{Tr}(\mathsf{M}_2(T_a)\mathsf{M}_2(T_b))$ |
 | $B$ | the Killing form |
 | $C=\tfrac12(\vec K^{2}-\vec J^{2})$ | the quadratic Casimir in the anti-Hermitian convention |

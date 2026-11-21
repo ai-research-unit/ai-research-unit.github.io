@@ -148,7 +148,7 @@ $$
 \Big|\frac{g_A}{g_V}\Big|=\Big|1-4\sin^2\theta_W\Big|^{-1},
 $$
 
-and at $\sin^2\theta_W=0.23122$ the bracket is $Q_W^e=0.07512$, so the ratio is $1/|Q_W^e|=13.3$ and the vertex is far from null — invertible, with the determinant $(g_V^2-g_A^2)^2$ evaluated at that ratio. Nullness would need $4\sin^2\theta_W=0$ or $4\sin^2\theta_W=2$, that is $\sin^2\theta_W=0$, a pure vector coupling, or $\sin^2\theta_W=\tfrac12$, a pure axial one.
+and at $\sin^2\theta_W=0.23122$ the bracket is $Q_{W,e}=0.07512$, so the ratio is $1/|Q_{W,e}|=13.3$ and the vertex is far from null — invertible, with the determinant $(g_V^2-g_A^2)^2$ evaluated at that ratio. Nullness would need $4\sin^2\theta_W=0$ or $4\sin^2\theta_W=2$, that is $\sin^2\theta_W=0$, a pure vector coupling, or $\sin^2\theta_W=\tfrac12$, a pure axial one.
 
 This is not a defect of the framework but a statement about the theory, and it has a measured face. The quantity $1-4\sin^2\theta_W$ is the weak charge $Q_W$ of the electron that the Møller article's parity-violating asymmetry is proportional to; the asymmetry is small because the vector coupling is small, and it vanishes at $\sin^2\theta_W=\tfrac14$, where the vertex is purely axial. That zero is not the null point, and the distinction is worth keeping: the asymmetry vanishes when the two chiral weights stand in the ratio $0:1$, and the vertex is null when they stand in the ratio $1:1$. The criterion and the measurement are two different statements about the same pair of weights; at the physical angle the charged vertex sits exactly on the null point and the neutral one misses it by a factor of $13.3$.
 

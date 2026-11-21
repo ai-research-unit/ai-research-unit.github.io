@@ -51,7 +51,7 @@ With the rotor engaged the value departs from $\varrho^{2}$, and how it departs 
 
 $$
 \tfrac12\,\mathrm{Re}\,\mathrm{Sc}\bigl(\tilde F\tilde F\bigr)
-=\tfrac12\sum_{\mu}G^{ab}(q)\,\partial_\mu q_a\,\partial_\mu q_b
+=\tfrac12\sum_{\mu}(G^{-1})_{ab}(q)\,\partial_\mu q_a\,\partial_\mu q_b
 +\text{(terms linear in the gradients and in the connection)},
 $$
 
@@ -215,7 +215,7 @@ The chart needs no multipliers for the unit conditions, because the word is exac
 | $\varrho>0$ | Scale; $\langle\tilde A\rangle_\natural=\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$ |
 | $\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$ | Central phase; the gauge coordinate |
 | $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})=R\,\varrho^{2}$, $R(0)=1$ | The mass term in the chart; $R$ the frame's scalar |
-| $G^{ab}(q)$ | The chart's metric; the coefficient of the kinetic form |
+| $(G^{-1})_{ab}(q)$ | The inverse of the chart's metric; the coefficient of the kinetic form |
 | $\tilde A_\Phi$, $A_\mu$ | The connection and its central components |
 | $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{iϙ}{\hbar}A_\mu$ | The covariant derivative in the chart |
 | $\partial_\mu\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}A_\mu$ | The one gradient the connection shifts |

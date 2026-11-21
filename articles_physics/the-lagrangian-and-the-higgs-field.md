@@ -138,14 +138,14 @@ With $m_h\simeq125.25$ GeV and $v\simeq246.22$ GeV, $\lambda=m_h^{2}/2v^{2}\sime
 **The doublet's hypercharge current, and what becomes of it.** The action is invariant under the global phase $\Phi\mapsto e^{i\theta}\Phi$, whose current is
 
 $$
-J^{Y}_{\mu}=i\bigl(\Phi^{\dagger}\partial_\mu\Phi-\partial_\mu\Phi^{\dagger}\,\Phi\bigr),
+J_{Y,\mu}=i\bigl(\Phi^{\dagger}\partial_\mu\Phi-\partial_\mu\Phi^{\dagger}\,\Phi\bigr),
 $$
 
-conserved by the equation of motion. In the unitary chart the doublet has one real non-zero component, and $J^{Y}_{\mu}$ vanishes identically there: $\Phi^{\dagger}\partial_\mu\Phi$ is real when $\Phi$ is real, so the two terms cancel. **The physical Higgs field carries no hypercharge.**
+conserved by the equation of motion. In the unitary chart the doublet has one real non-zero component, and $J_{Y,\mu}$ vanishes identically there: $\Phi^{\dagger}\partial_\mu\Phi$ is real when $\Phi$ is real, so the two terms cancel. **The physical Higgs field carries no hypercharge.**
 
-**Where the current went.** Into the three angular directions. A general chart writes $\Phi=\frac{1}{\sqrt2}\binom{0}{r}e^{i\theta^{a}\tau^{a}/2}$-style, and the phase directions carry $J^{Y}_{\mu}$ in proportion to their gradients. Those directions are the would-be Goldstones, and the gauge field that eats them inherits the coupling: the statement that the $Z$ has a hypercharge current is the same statement as the statement that the eaten Goldstones carried one. This is the mechanism read from the current side, and it agrees with the companion's count, which reads it from the degrees of freedom.
+**Where the current went.** Into the three angular directions. A general chart writes $\Phi=\frac{1}{\sqrt2}\binom{0}{r}e^{i\theta_{a}\tau_{a}/2}$-style, and the phase directions carry $J_{Y,\mu}$ in proportion to their gradients. Those directions are the would-be Goldstones, and the gauge field that eats them inherits the coupling: the statement that the $Z$ has a hypercharge current is the same statement as the statement that the eaten Goldstones carried one. This is the mechanism read from the current side, and it agrees with the companion's count, which reads it from the degrees of freedom.
 
-**The count of currents, from the potential alone.** The potential's symmetry is $O(4)$; the minimum breaks it to $O(3)$; the number of generators that do not annihilate the vacuum is $6-3=3$. So three currents are broken and one linear combination of the four electroweak generators survives — the electromagnetic one, whose charge is $Q=T^{3}+Y/2$, with the sign of the electron's charge fixed by the hypercharge assignment and not by anything in this article. The count of currents and the count of Goldstones are the same number for the same reason.
+**The count of currents, from the potential alone.** The potential's symmetry is $O(4)$; the minimum breaks it to $O(3)$; the number of generators that do not annihilate the vacuum is $6-3=3$. So three currents are broken and one linear combination of the four electroweak generators survives — the electromagnetic one, whose charge is $Q=T_3+Y/2$, with the sign of the electron's charge fixed by the hypercharge assignment and not by anything in this article. The count of currents and the count of Goldstones are the same number for the same reason.
 
 **The stress, and the sign of the energy.** With the flat directions frozen,
 
@@ -189,7 +189,7 @@ $$
 | $m_h^{2}=2\lambda v^{2}$ | Curvature of the potential at the minimum |
 | $g_{hhh}=3m_h^{2}/v$ | Cubic self-coupling, $=6\lambda v$ |
 | $g_{hhhh}=3m_h^{2}/v^{2}$ | Quartic self-coupling, $=6\lambda$ |
-| $J^{Y}_{\mu}$ | Hypercharge current of the doublet, vanishing on the radial direction |
+| $J_{Y,\mu}$ | Hypercharge current of the doublet, vanishing on the radial direction |
 | $V(v)=-m_h^{2}v^{2}/8$ | Depth of the potential at the minimum |
 
 ## Further Reading

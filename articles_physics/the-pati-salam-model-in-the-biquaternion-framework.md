@@ -40,15 +40,106 @@ with the two-sided structure of the algebra supplying the second and third facto
 
 **It opens the section, and it is the only article here that names a particular group.** The eighteen that follow are written for a general gauge group — the principle, the connection, the curvature, the path integral, the lattice — and every one of them reads correctly for $G_{PS}$. **This one says which group they are being read for**, and it is placed first for that reason.
 
-**What is claimed.** That the twenty-one dimensions split as $15+3+3$ and the fifteen as $8+1+6$; that the two $\mathrm{SU}(2)$ factors arise from the algebra's own two-sided action and not from an import; that the fermion content is the sixteen of $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$; that one covariant derivative with one coupling covers all twenty-one; and that the group acts on a **formal copy** of the carrier's quartet, for the reason computed in §6.
+**What is claimed.** That the twenty-one dimensions split as $15+3+3$ and the fifteen as $8+1+6$; that the two $\mathrm{SU}(2)$ factors arise from the algebra's own two-sided action and not from an import; that the fermion content is the sixteen of $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$; that one covariant derivative with one coupling covers all twenty-one; and that the group acts on a **formal copy** of the carrier's quartet, for the reason computed under *The Carrier Is a Copy*.
 
-**What is not claimed.** That the algebra derives the group. It derives two of the three factors and the split of the third. **The identification of that split with the quark–lepton quartet is a declaration, with a price**, called (A) throughout and stated in §2 and §4. Nor that the group makes the theory chiral: it does not, and §7 says why the wall stands.
+**What is not claimed.** That the algebra derives the group. It derives two of the three factors and the split of the third. **The identification of that split with the quark–lepton quartet is a declaration, with a price**, called (A) throughout and stated in *The Sixteen* and *Where Each Factor Comes From*. Nor that the group makes the theory chiral: it does not, and *The Chiral Wall, Restated for This Group* says why.
 
-## 1. The Three Factors, and What Each One Is
+## Why the Corpus Adopts the Pati–Salam Model
 
-**1.1 The first factor is the carrier's own group.** $\mathrm{SU}(4)$ is the unitary group of the four-dimensional complex space on which $\mathbb B$ acts, fifteen real dimensions, defined by $M^{\dagger}M=\mathrm I$ and $\det M=1$. **The group is not an element of the algebra and not a corner of its endomorphisms; it is the whole group of the carrier.**
+**The corpus adopts an extension of the Standard Model: not a replacement, and not a slight one.** The group it uses to describe the particles is Pati–Salam, $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$. **Call it a moderate extension with a specific structural motivation**: *moderate* against the alternatives, which are larger, and moderate against the Standard Model only in the fermion sector. **Nothing the Standard Model says is dropped**, which is the part unambiguously in its favour, and no measurement below the Pati–Salam scale distinguishes the two theories.
 
-**1.2 The other two factors are the algebra's two-sided action.** Left and right multiplication by the imaginary units give two commuting $\mathfrak{su}(2)$'s inside $\mathfrak{so}(4)$:
+**The extension, in numbers.**
+
+| | Standard Model | this model | the change, honestly |
+|---|---|---|---|
+| gauge generators | $12$ | $21$ | $+9$, a factor $1.75$ — not a rounding error |
+| fermions per family | $15$ | $15$ | none: $\nu_R$ is the fourth component of the $\bar{\mathbf4}$, not an addition |
+| families | $3$ | $3$ | none; no fourth generation |
+| scalars | $4$ real degrees of freedom | $24$: eight and four complex components in a $(\mathbf4,\mathbf1,\mathbf2)$ and a $(\mathbf1,\mathbf2,\mathbf2)$ | a factor $6$, and the sector that genuinely costs |
+| surviving scalars | one Higgs | **none** in the minimal sector | the twelve components are exactly the twelve broken generators; a third field is required |
+| scales | one | two | $M_{PS}\gtrsim250$ TeV, a ratio $M_{PS}/M_{Z}\gtrsim2.7\times10^{3}$ |
+| hierarchy | the electroweak scale, unexplained | $M_{PS}$ and $M_{EW}$ both | the same problem, with a new gap to stabilise |
+
+**Three of those rows are costs and this article does not soften them.** The scalar sector grows by a factor of six and its minimal version leaves no physical scalar at all — what the corpus's ledger calls **F2** — a failure of counting, not of calculation. The new scale brings the hierarchy question in a sharper form: the model must explain why $M_{PS}/M_{EW}$ is what it is. And the leptoquark bound *pushes that scale up*, which makes both problems worse, not better.
+
+**What is genuinely small is the fermion sector, and what is genuinely cheap is the limit.** Break the larger group and the Standard Model comes out, with the same fields, the same couplings and the same Lagrangian, **so every measurement the Standard Model passes this model passes, and for the same reason.** A reader who wants the Standard Model back can have it by taking $M_{PS}\to\infty$. **The case for the extension therefore cannot rest on agreement with experiment, which it inherits; it has to rest on what the extension explains and on how it sits in the algebra.** That is what the six reasons below are about.
+
+**A framework has to describe the particles with some group, and the choice is not free.** The corpus could have stayed with $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ and treated the algebra as a language for its equations: keep $G_{\mathrm{SM}}$ as the gauge group, ask nothing of the algebra beyond notation, and let the carrier, the two-sided product and the operators stay the vocabulary in which the equations are written. **Hypercharge would remain an imported number, quarks and leptons would remain separate representations, and there would be no fourth colour, no leptoquark and no $W_R$.** Nothing would be false under that choice, and nothing would be at risk.
+
+**It is not a straw position, because it is the corpus's own default.** The $541$ articles outside this category are written that way, and so is the electromagnetic category entire: Maxwell's equations are exact at every scale and need no breaking scale to be stated. **The particle category is the only place where the question of the group arises at all**, and the reasons below are the reasons the answer there is not the Standard Model's group.
+
+**What each choice costs, stated before the reasons are given.** Staying would leave five things unexplained that the model explains without a new field — the values of hypercharge, charge quantisation, the four anomaly cancellations, the existence of $\nu_R$, and custodial symmetry — and would leave the algebra's four-dimensional carrier a coincidence. **Adopting puts one declaration under load and predicts six states that have not been seen.** The reasons are not one-sided, and they are not presented as if they were.
+
+**The six reasons, in descending order of strength**: the empirical, the structural, the compatibility with the algebra, the comparison with the competitors, the explanatory yield, and the falsifiability.
+
+**1. No measurement contradicts it.** Every place where the model differs from the Standard Model sits at or above the Pati–Salam scale, and the scale is bounded from below, not from above. The six leptoquarks mediate $K_L\to\mu e$ at tree level with no CKM suppression, and the measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ forces
+
+$$
+M_X\gtrsim 2.5\times10^{2}\ \mathrm{TeV},
+$$
+
+which is a lower bound on the new physics and therefore no bound at all on the model's consistency. **Below that scale the two theories are the same theory**: the same group content, the same couplings, the same fields.
+
+**The bound is not costless, and calling it "no bound" was too generous.** Satisfying $K_L\to\mu e$ requires $M_{PS}$ above $250$ TeV, and every cost of the model grows with $M_{PS}$: the hierarchy $M_{PS}/M_{EW}$ grows, the running in *The Number That Fails* gets worse, and the leptoquarks recede from reach. **The honest statement is that the null result is satisfied for $M_{PS}\gtrsim250$ TeV and that this pushes the model into the region where its other problems are sharpest.** It is a lower bound on the new physics and a lower bound on the model's discomfort.
+
+**Agreement with experiment is cheap** — any extension that reduces to the Standard Model agrees with it — so this reason is necessary and not sufficient. It is listed first because a candidate that failed it would need no further discussion, not because it is evidence.
+
+**2. It is the smallest extension that can do the job.** The table above already says what grows and what does not; the reason is about the choice between candidates rather than the arithmetic. **No new fermion, no fourth generation, no new dimension, no change to spacetime** — and the nine new bosons are the minimum needed to gauge the fourth colour and the right-handed weak group. A larger group, $\mathrm{SO}(10)$ or $E_6$, would add structure that buys nothing the corpus can spend; a smaller one, the Standard Model itself or the left–right group, cannot do what a gauged fourth colour does. **Minimality is not a proof, but it is the right prior when the data cannot decide**, and the corpus is explicit that the data cannot decide.
+
+**3. It is fully compatible with the algebra's formalism, and the Standard Model is not. This is the strongest reason.** *Compatible* here does not mean *not in conflict*, which is cheap and true of any extension. It means that **each of the model's three factors is a structure the algebra's carrier or product already supplies**, while one of the Standard Model's three factors is a group the algebra's own compact action provably cannot carry and another is a factor whose charge table is put in by hand.
+
+| group | generators | what supplies it |
+|---|---|---|
+| $\mathrm{SU}(4)$ | $15$ | the unitary group of the carrier, on its four complex dimensions |
+| $\mathrm{SU}(2)_L$ | $3$ | left multiplication, $\{L_{\vec e_a}\}$ — **elements of $\mathbb B$** |
+| $\mathrm{SU}(2)_R$ | $3$ | right multiplication, $\{R_{\vec e_a}\}$ — **elements of $\mathbb B$** |
+
+**The precision the slogan needs.** Six of the twenty-one generators are **elements of the algebra** — the two triplets, left and right multiplication. The other fifteen are **the unitary group of the carrier**, which is a group *of* the algebra's action and not *in* the algebra: $\dim_{\mathbb R}\mathbb B=8$, and fifteen does not fit inside eight. So the honest statement is not "twenty-one out of twenty-one live in the algebra" but **"twenty-one out of twenty-one are supplied by the algebra's carrier and product, and six of them are literally algebra elements"** — which is still a stronger claim than the Standard Model can make, and weaker than the slogan suggests. **The distinction matters because the fifteen are the factor that has to be declared**: the carrier is given, but that its four dimensions are colour is (A).
+
+**The comparison factor by factor is the substance of the reason:**
+
+| factor | in the Standard Model | in this model |
+|---|---|---|
+| colour, $8$ | a group the algebra's own compact action cannot host: $\dim\mathfrak{su}(3)=8>4=\dim\mathfrak{u}(2)$ | the stabiliser $\mathrm{Stab}_{\mathfrak{su}(4)}(e_t)$, that is $8=15-1-6$ of the carrier's group |
+| weak isospin, $3$ | the algebra's left action — the one factor the corpus derives | the left half of the two-sided product |
+| hypercharge, $1$ | the algebra has a $\mathrm{U}(1)$, but **which charge each field carries is chosen**: the step $q=6Y$ is selected to make the observed table integral | not a factor at all: $Y=T_{3R}+\tfrac12(B-L)$, with the quartet's eigenvalues fixed by $\operatorname{tr}_{\mathbf4}(B-L)=0$ |
+
+**One of the Standard Model's three factors is a structure the algebra can host; three of the model's three are.** That is what *fully compatible* means here, and it is why the model is not a larger group laid on top of the algebra but the group the algebra's own objects were shaped for: the carrier supplies the fifteen, the two-sided product supplies the six, and the fourth colour is a direction the carrier already has.
+
+**None of this is a derivation, and the difference matters.** The algebra supplies the carrier, the stabiliser, the two-sided product and the traceless diagonal; the model supplies the names of the particles that sit in them, and the identification of the fourth direction with the lepton is **declared**, not derived. **Where the corpus had a four-dimensional complex carrier and needed a group, the model is the group that uses exactly that space** — and a group chosen for the space it acts on, rather than a space chosen for the group, is the only kind of match worth anything here. The price is stated in *The Carrier Is a Copy*: the group acts on a formal copy of the quartet, because $\mathfrak{su}(4)$ commutes with the Lorentz action only in $\mathfrak{su}(2)$.
+
+**4. It is the best of the four candidates on the corpus's own criteria.** $\mathrm{SU}(5)$ puts quarks and leptons in one multiplet, has no $\nu_R$, and would need a five-dimensional carrier the algebra does not have.
+
+**$\mathrm{SO}(10)$ needs a real answer, because it contains $G_{PS}$ and its sixteen *is* the Pati–Salam sixteen.** If the algebra points at $G_{PS}$ and $G_{PS}$ sits inside $\mathrm{SO}(10)$, a reader may ask whether the algebra secretly points at $\mathrm{SO}(10)$. **Three reasons it does not, and the first is the decisive one.** The carrier has four complex dimensions; $\mathrm{SO}(10)$'s smallest spinor is sixteen-dimensional and needs a Clifford module, so the algebra would have to supply a structure it does not have — **and "does not have" here is a theorem, not a taste**: the corpus uses biquaternions and not octonions or Clifford algebras for a reason, and the reason is that $\mathbb B\cong M_2(\mathbb C)$ has a four-dimensional carrier. Second, $\mathrm{SO}(10)$'s extra twenty-four generators act on a space the algebra's carrier is not, so they would be imported in exactly the way §4 refuses. Third, **$\mathrm{SO}(10)$ is rank $5$ and so is $G_{PS}$, so the rank argument that decides between two candidate groups here does not distinguish them** — the rank is evidence that the embedding exists, not evidence that it should be used. **The containment is real and it is not an argument:** $G_{PS}\subset\mathrm{SO}(10)$ says the smaller group is available inside the larger one, and the corpus takes the smaller one because the carrier is four-dimensional.
+
+**The left–right group is the honest competitor**, and it is a closer call than $\mathrm{SO}(10)$: $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ gives the same physics below the scale, **with the $\mathrm{U}(1)$ charge put in by hand** where the model derives it from a tracelessness condition. *Why This Group and Not a Larger One* states the three refusals, and *The Carrier Is a Copy* states what the comparison costs. **Pati–Salam is what is left when the carrier is four-dimensional, the product is two-sided, and the fourth direction is gauged.**
+
+**5. It answers five questions the Standard Model leaves open — given (A), and not for free.** Hypercharge stops being an imported number and becomes $Y=T_{3R}+\tfrac12(B-L)$. Charge quantisation stops being an observation about the electron and becomes $\operatorname{tr}_{\mathbf4}(B-L)=3\cdot\tfrac13-1=0$. The four anomaly conditions stop being conditions and become identities. $\nu_R$ stops being optional and becomes the fourth component of the $\bar{\mathbf4}$. Custodial symmetry stops being accidental and becomes the diagonal of a gauged pair.
+
+**The qualifier is the same one every time, and it is not a detail.** The first two promotions need the eigenvalues of $B-L$ on the quartet to be $(1,-\tfrac13,-\tfrac13,-\tfrac13)$, and those are fixed **by the declaration that the fourth colour is the lepton**, not by the group. Without (A) the group still has a traceless diagonal; it does not know which direction is the lepton. **So the honest form of this reason is: five questions are answered given (A), and (A) is the model's one load-bearing declaration.** The anomaly cancellation is the one item that is genuinely structural — the sixteen is anomaly-free by construction, as a real multiplet of a complex group must be — but even that is a property of the multiplet the declaration chooses. **Five promotions for one assumption, not five for nothing.**
+
+**6. It is falsifiable at a price the corpus can state.** Six states with fixed charge, fixed colour and a fixed mass ratio $M_X=\sqrt2\,M_{W_R}$, and a tree-level $K_L\to\mu e$. **A frame that predicts six states with no adjustable mass can be checked**, and the check has a shape: a leptoquark search, or a better bound. The angle is a different matter, and it is the one number in the frame that fails.
+
+**The number that fails, quantified.** The frame gives $\sin^2\theta_W(M_{PS})=\tfrac38$, but that is **a boundary condition and not a prediction**: it says what the ratio of couplings must be at the scale where the group breaks, and the value at $M_{Z}$ is then a statement about the matter content in between. Run the measured couplings up with the Standard Model content, one loop, $b_{1}=\tfrac{41}{10}$ and $b_{2}=-\tfrac{19}{6}$:
+
+| quantity | value | comment |
+|---|---|---|
+| $\sin^2\theta_W(M_{Z})$ | $0.2312$ | the measurement |
+| $\sin^2\theta_W(250\ \mathrm{TeV})$ | $0.272$ | the minimal content run up to the leptoquark bound |
+| $\mu$ at which $\sin^2\theta_W=\tfrac38$ | $1.0\times10^{13}\ \mathrm{GeV}$ | seven and a half decades above the bound |
+| $\sin^2\theta_W(M_{Z})$ from $\tfrac38$ at $250$ TeV | $0.31$ | against $0.231$: $36\%$ too large |
+
+**So the failure has a size, and the size is not small.** The model needs $\tfrac38$ at $250$ TeV, where the data give $0.272$: the model's value is $38\%$ high. Equivalently, the data reach $\tfrac38$ only at $10^{13}$ GeV, **seven and a half decades above the scale the leptoquark bound forces.** Three remedies exist — extra matter between the two scales, a scale close to the bound with threshold corrections, or supersymmetry — and all three change the matter content, which is to say **the failure is a statement about what lies between the scales and not a contradiction at any one scale.** But it is a failure, and the corpus records it as one.
+
+What survives from this reason is the leptoquark prediction, which is sharp and has no free parameter beyond $M_{PS}$, and the statement that the angle is a boundary condition rather than a success. **A frame that presents $\tfrac38$ as a prediction of $0.231$ is trading on a coincidence of notation**, and this article does not.
+
+**What adoption does not mean, and the corpus says so in the same breath.** It does not mean the algebra derives the model: one declaration is load-bearing, the fourth colour as the unit line, and *The Sixteen* and *Where Each Factor Comes From* state it with its price. It does not mean the model is confirmed: **six states that should exist and have not been seen is the weakest form of failure and the most persistent one.** And it does not mean the ledger is all gains: **four rows of the corpus's own accounting improve, four are unchanged, and four get worse** — (A) becomes load-bearing for everything downstream, the minimal scalar sector leaves no physical scalar, the leptoquark bound pushes the scale into the region where the hierarchy hurts, and $\tfrac38$ lands at $0.31$ against $0.231$. **The reasons above are why the corpus adopts the model; they are not a claim that the model is right.**
+
+## The Three Factors, and What Each One Is
+
+**The first factor is the carrier's own group.** $\mathrm{SU}(4)$ is the unitary group of the four-dimensional complex space on which $\mathbb B$ acts, fifteen real dimensions, defined by $M^{\dagger}M=\mathrm I$ and $\det M=1$. **The group is not an element of the algebra and not a corner of its endomorphisms; it is the whole group of the carrier.**
+
+**The other two factors are the algebra's two-sided action.** Left and right multiplication by the imaginary units give two commuting $\mathfrak{su}(2)$'s inside $\mathfrak{so}(4)$:
 
 $$
 \mathfrak k_L=\{L_{\vec e_a}\},\qquad \mathfrak k_R=\{R_{\vec e_a}\},\qquad [L_{\vec e_a},R_{\vec e_b}]=0,\qquad \dim\mathfrak k_L=\dim\mathfrak k_R=3,
@@ -56,7 +147,7 @@ $$
 
 so that $\exp\mathfrak k_L\times\exp\mathfrak k_R=\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, six dimensions. **Nothing is imported here: the two factors are the two ways the algebra multiplies.**
 
-**1.3 The arithmetic, and it closes twice.**
+**The arithmetic, and it closes twice.**
 
 $$
 21=\underbrace{15}_{\mathrm{SU}(4)}+\underbrace{3}_{\mathrm{SU}(2)_L}+\underbrace{3}_{\mathrm{SU}(2)_R},
@@ -66,7 +157,7 @@ $$
 
 **The first equation is the frame; the second is the reason the frame can break to the Standard Model.** The $8$ will survive as colour, the $1$ will mix into hypercharge, and the $6$ will become the leptoquarks. **The ranks are $3+1+1=5$**, and the chain takes $5\to4\to3$, one rank lost at each step.
 
-## 2. The Sixteen
+## The Sixteen
 
 **The fermions are not a choice of the group; they are the smallest anomaly-free assignment, and the algebra's split selects it.**
 
@@ -78,7 +169,7 @@ $$
 
 **Read the two terms as the two chiralities.** The first holds the left-handed doublet of the quartet — three quark colours and one lepton, each doubled by $SU(2)_L$. The second holds the right-handed partners as singlets of $SU(2)_L$ and doublets of $SU(2)_R$. **So $\nu_R$ is not added: it is the fourth component of the $\bar{\mathbf 4}$, and it is required the moment the lepton is a colour.**
 
-**Why the split of §1.3 is what makes this work.** $B-L$ is a generator of the $\mathrm{SU}(4)$, with eigenvalues $(1,-\tfrac13,-\tfrac13,-\tfrac13)$ on the quartet, and $\mathbf 4\to\mathbf 3\oplus\mathbf 1$ under $\mathrm{SU}(3)$. **That is exactly the quark–lepton split**, and it is (A): the algebra supplies the split $\mathbb C e_t\oplus B_V$, and the declaration says the line is the lepton.
+**Why the split $15=8+1+6$ is what makes this work.** $B-L$ is a generator of the $\mathrm{SU}(4)$, with eigenvalues $(1,-\tfrac13,-\tfrac13,-\tfrac13)$ on the quartet, and $\mathbf 4\to\mathbf 3\oplus\mathbf 1$ under $\mathrm{SU}(3)$. **That is exactly the quark–lepton split**, and it is (A): the algebra supplies the split $\mathbb C e_t\oplus B_V$, and the declaration says the line is the lepton.
 
 **The check that the assignment is forced, and not merely possible.** Three conditions have to hold at once, and each one is a trace:
 
@@ -96,14 +187,17 @@ $$
 
 and its conjugate gives $+\tfrac29$ with the signs reversed. **The cancellation is between the quartet and its own conjugate**, which is the structural statement: a real or vector-like assignment would cancel trivially, and this one cancels because the sixteen is built from a complex representation and its conjugate in equal measure.
 
-## 3. One Covariant Derivative
+## One Covariant Derivative
 
 **The whole gauge content is one line.**
 
 $$
-D_\mu=\partial_\mu-ig_4A^a_\mu T^{(4)a}-ig_LW^i_{L\mu}\tau^i-ig_RW^i_{R\mu}\tau^i ,
-\qquad a=1,\dots,15,\quad i=1,2,3 .
+D_\mu=\partial_\mu-ig_4\sum_{a=1}^{15}A_{a,\mu}T^{(4)}_a
+-ig_L\sum_{i=1}^{3}W_{L,i,\mu}\tau_i
+-ig_R\sum_{i=1}^{3}W_{R,i,\mu}\tau_i .
 $$
+
+**Every index is low, because the metric is the identity.** The corpus has one metric, $\delta_{\mu\nu}=(1,1,1,1)$, so a raised index names the same index and the caret carries none. **The labels $a$ and $i$ are labels and not frame slots**: they count the fifteen $\mathrm{SU}(4)$ generators and the three of each $\mathrm{SU}(2)$, so they stand in the subscript like every other name. **The sums are written, because no index is summed by convention** — an index that appears twice is summed only where a $\sum$ names it and its range.
 
 **Twenty-one gauge fields, and at the Pati–Salam scale one coupling.** The unification condition is not $\mathrm{SU}(5)$'s: there is no group above, only the statement that the three factors have a common origin at $M_{PS}$ in the sense that
 
@@ -117,15 +211,15 @@ where $g_3$ is the coupling of the $\mathrm{SU}(3)$ that survives inside the $\m
 
 | block | count | $SU(3)$ | $SU(2)_L$ | $SU(2)_R$ | fate |
 |---|---|---|---|---|---|
-| $A^a$, $a$ in the $\mathfrak{su}(3)$ corner | $8$ | $\mathbf 8$ | $\mathbf 1$ | $\mathbf 1$ | the gluons |
-| $A^{15}$ | $1$ | $\mathbf 1$ | $\mathbf 1$ | $\mathbf 1$ | the $B-L$ boson, mixes into $\gamma$ and $Z$ |
-| $A^a$, $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | $\mathbf 1$ | $\mathbf 1$ | the leptoquarks |
-| $W_L^i$ | $3$ | $\mathbf 1$ | $\mathbf 3$ | $\mathbf 1$ | $W_L^{\pm}$, one neutral |
-| $W_R^i$ | $3$ | $\mathbf 1$ | $\mathbf 1$ | $\mathbf 3$ | $W_R^{\pm}$, one neutral |
+| $A_{a,\mu}$, $a$ in the $\mathfrak{su}(3)$ corner | $8$ | $\mathbf 8$ | $\mathbf 1$ | $\mathbf 1$ | the gluons |
+| $A_{15,\mu}$ | $1$ | $\mathbf 1$ | $\mathbf 1$ | $\mathbf 1$ | the $B-L$ boson, mixes into $\gamma$ and $Z$ |
+| $A_{a,\mu}$, $a$ in $\mathfrak m$ | $6$ | $\mathbf 3+\bar{\mathbf3}$ | $\mathbf 1$ | $\mathbf 1$ | the leptoquarks |
+| $W_{L,i,\mu}$ | $3$ | $\mathbf 1$ | $\mathbf 3$ | $\mathbf 1$ | $W_{L,\pm}$, one neutral |
+| $W_{R,i,\mu}$ | $3$ | $\mathbf 1$ | $\mathbf 1$ | $\mathbf 3$ | $W_{R,\pm}$, one neutral |
 
 **The table is most of the boson spectrum.** Its last three columns are the reason the spectrum counts $9$ massless against $12$ massive, and the two neutral entries in the last two rows join the $B$-$L$ boson in the mixing that produces the photon and the $Z$.
 
-## 4. Where Each Factor Comes From, and How Firmly
+## Where Each Factor Comes From, and How Firmly
 
 **Three different strengths of derivation, and the difference has to be stated or the frame overclaims.**
 
@@ -140,7 +234,7 @@ where $g_3$ is the coupling of the $\mathrm{SU}(3)$ that survives inside the $\m
 
 **The fourth row is the declaration (A) and the fifth is the chiral wall.** Neither is a defect of the frame; both are recorded so that no article downstream can quietly promote them.
 
-## 5. Why This Group and Not a Larger One
+## Why This Group and Not a Larger One
 
 **Three competitors, and the corpus's reason for each refusal, stated in one line apiece.**
 
@@ -152,7 +246,7 @@ where $g_3$ is the coupling of the $\mathrm{SU}(3)$ that survives inside the $\m
 
 **The one-line reason the frame is $\mathrm{SU}(4)$ and not the left–right group.** The algebra's carrier is four-dimensional and its stabiliser is $\mathrm{SU}(3)$; **a three-colour group inside a four-dimensional carrier with one line removed is $\mathrm{SU}(4)$, not $\mathrm{SU}(3)\times\mathrm{U}(1)$.** Whether the fourth direction is gauged is the physics question, and the frame takes the answer that it is.
 
-## 6. The Carrier Is a Copy, and Here Is the Theorem
+## The Carrier Is a Copy, and Here Is the Theorem
 
 **The objection.** If $\mathrm{SU}(4)$ acts on the same four dimensions as the Lorentz action, the two must commute, and then colour must be inside the commutant of the Lorentz algebra.
 
@@ -164,7 +258,15 @@ $$
 \qquad \dim_{\mathbb R}=3 .
 $$
 
-**Verified**: the right multiplications commute with the left ones; each $R_{\vec e_a}$ is anti-Hermitian and traceless; $R_1$ is Hermitian and not traceless, so $iR_1$ is the only further anti-Hermitian element of the commutant and it is excluded. **The full commutant of $L(\mathbb H)$ in $M_4(\mathbb C)$ is $R(\mathbb B)$, eight real dimensions, of which exactly three lie in $\mathfrak{su}(4)$.**
+**The proof, in three counts, because this is load-bearing and a sketch is not enough.**
+
+**First, the commutant.** As a module for $L(\mathbb B)\cong M_2(\mathbb C)$, the carrier is two copies of the defining representation, $\mathbb C^4\cong\mathbb C^2\otimes\mathbb C^2$, with $L(\mathbb B)$ acting on the first factor only. By Schur's lemma the commutant is $\operatorname{End}_{\mathbb C}(\mathbb C^2)=M_2(\mathbb C)$, **complex dimension four, real dimension eight**, and that commutant is exactly $R(\mathbb B)$: right multiplications commute with left ones, and eight real dimensions is all there is.
+
+**Second, Hermiticity inside it.** Of those eight dimensions, the anti-Hermitian part is four: $R_{\vec e_a}$ for $a=x,y,z$ (each anti-Hermitian, since $R_{\vec e_a}^{\dagger}=-R_{\vec e_a}$) together with $R_i=i\,\mathrm I_4$. The other four — $R_1=\mathrm I_4$ and $iR_{\vec e_a}$ — are Hermitian.
+
+**Third, tracelessness.** $\operatorname{tr}R_i=4i\neq0$, so $R_i$ is excluded by $\operatorname{tr}X=0$. Each $R_{\vec e_a}$ is traceless, because the matrix of right multiplication by an imaginary unit is two copies of a traceless block. **What remains is exactly $\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}$, three real dimensions, and that is $\mathfrak{su}(2)$.**
+
+So the count is $8\to4\to3$, each step a computation rather than a search, and the result is not a coincidence of the basis: **the two-sided product contributes a full $M_2(\mathbb C)$ to the commutant and the compact part of it is one $\mathfrak{su}(2)$.** The ceiling is three, and no choice of generators changes it.
 
 **So the ceiling is $\mathrm{SU}(2)$, and the frame must be a tensor product.**
 
@@ -178,15 +280,15 @@ where the internal quartet is a **formal copy** of the algebra's coordinate spac
 
 **What this article therefore asserts, in one sentence.** *The frame is $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ acting on a formal copy of the carrier's quartet tensored with a spinor, and the copy is licensed by the canonical split and by nothing else.*
 
-## 7. The Chiral Wall, Restated for This Group
+## The Chiral Wall, Restated for This Group
 
-**The frame does not make the theory chiral, and no renaming will.** The algebra's product is two-sided; a chiral gauge theory needs an action that distinguishes left from right at the level of the *gauge* coupling. **In $G_{PS}$ that distinction is put in by the representation**: $\mathrm{SU}(2)_L$ acts on $(\mathbf4,\mathbf2,\mathbf1)$ and $\mathrm{SU}(2)_R$ on $(\bar{\mathbf4},\mathbf1,\mathbf2)$, and the assignment is a declaration, the fifth row of §4's table.
+**The frame does not make the theory chiral, and no renaming will.** The algebra's product is two-sided; a chiral gauge theory needs an action that distinguishes left from right at the level of the *gauge* coupling. **In $G_{PS}$ that distinction is put in by the representation**: $\mathrm{SU}(2)_L$ acts on $(\mathbf4,\mathbf2,\mathbf1)$ and $\mathrm{SU}(2)_R$ on $(\bar{\mathbf4},\mathbf1,\mathbf2)$, and the assignment is a declaration, the fifth row of the table in *Where Each Factor Comes From*.
 
 **What would count as the algebra supplying it.** A one-sided action of the algebra on a chiral spinor module — the corpus's open problem, unchanged. **What would be a fake solution, and is refused.** Writing the sixteen in a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. **A real multiplet cannot be chiral**, and the sixteen is complex, which is why it works and why the algebra's own carrier, being self-conjugate, cannot supply it.
 
 **The consequence for every article downstream.** The wall is quoted, not solved. [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html) says what the larger group moves and what it does not: one of three obstructions, and the one that moves is the dimension.
 
-## 8. The Checks
+## The Checks
 
 **Every number in this article, run again.**
 
@@ -222,7 +324,7 @@ where the internal quartet is a **formal copy** of the algebra's coordinate spac
 | symbol | meaning |
 |---|---|
 | $G_{PS}$ | $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, dimension $21$, rank $5$ |
-| $T^{(4)a}$ | the fifteen $\mathrm{SU}(4)$ generators, anti-Hermitian and traceless |
+| $T^{(4)}_a$ | the fifteen $\mathrm{SU}(4)$ generators, anti-Hermitian and traceless |
 | $\mathfrak m$ | the six generators mixing $\mathbb C e_t$ with $B_V$, the leptoquark directions |
 | $iD$ | $i\operatorname{diag}(-3,1,1,1)$, the diagonal generator of the $\mathrm{SU}(4)$ |
 | $L_{\vec e_a},R_{\vec e_a}$ | left and right multiplication by the imaginary units |
@@ -233,10 +335,18 @@ where the internal quartet is a **formal copy** of the algebra's coordinate spac
 
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The general principle this frame is an instance of.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html). The connection, the curvature and the Yang–Mills action for a group of this size.
-- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The ceiling on the algebra's own compact structure, which §4 and §6 meet again.
+- [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The ceiling on the algebra's own compact structure, which *Where Each Factor Comes From* and *The Carrier Is a Copy* meet again.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). The two-sided action, before it is gauged.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). What the algebra's own action carries, and what it does not.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). The same ceiling read as a statement about unification, in both readings.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). What the larger group moves of the colour obstruction and what it leaves standing.
 
-**The traps.** Do not read "the group of the carrier" as "the group acting on spacetime"; §6 forbids it and the tensor product is the whole point. Do not read the two $\mathrm{SU}(2)$'s as the Lorentz group: in the frame they are gauged and internal, and the algebra supplies the mechanism, not the identification. Do not read $g_3=g_L=g_R$ as a prediction at accessible energy; it is a boundary condition at $M_{PS}$. Do not read the sixteen as evidence that the group is right: it is evidence that the sixteen is the natural multiplet, and a natural multiplet is not a measurement.
+**The traps, and each one is a place where a reader can be misled by a true sentence.**
+
+**Do not read "the group of the carrier" as "the group acting on spacetime."** The two cannot be the same group, and the reason is a computation, not a preference: if $\mathrm{SU}(4)$ acted on the same four dimensions as the Lorentz action, it would have to sit in that action's commutant, and the compact part of the commutant is $\mathfrak{su}(2)$ of dimension three, not fifteen. **The tensor product is therefore forced**: an internal $\mathbf4$ tensored with a spinor, the internal factor being a formal copy of the carrier's quartet.
+
+**Do not read the two $\mathrm{SU}(2)$'s as the Lorentz group.** They are gauged and internal: left and right multiplication by the imaginary units of the algebra, not the Lorentz action. **The Lorentz group does live in this framework, and it lives somewhere else** — it is the group of norm-preserving automorphisms of the algebra's Hermitian structure, the $SL(2,\mathbb C)$ acting on the spinor module. [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html) is where it is built, and the reader who wants to know which group is which should read that article beside this one. **Internal and spacetime factors are different factors of one tensor product; that is the whole architecture.**
+
+**Do not read $g_3=g_L=g_R$ as a prediction at accessible energy.** It is a boundary condition at $M_{PS}$, and the one place where the boundary condition has been checked — the angle — fails.
+
+**Do not read the sixteen as evidence that the group is right.** It is evidence that the sixteen is the natural multiplet, and a natural multiplet is not a measurement. **The same multiplet appears in $\mathrm{SO}(10)$, which is how we know that a natural multiplet does not pick out a group.**

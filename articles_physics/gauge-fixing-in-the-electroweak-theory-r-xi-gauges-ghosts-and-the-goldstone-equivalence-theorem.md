@@ -5,7 +5,7 @@
 **The claim.** The quadratic part of the electroweak Lagrangian is not invertible, because it is flat along the gauge orbits. A gauge-fixing functional is what makes it invertible, and the functional that is chosen here does two things at once: it gives the would-be Goldstones a mass $\zeta M^2$ and it cancels the derivative mixing between each Goldstone and the vector that ate it. Both jobs are done by one term, and that is why the choice is the one it is.
 
 $$
-\mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\left(\sum_\mu\frac{\partial W^a_\mu}{\partial R_\mu}-\zeta M_W\,\xi^a\right)^2-\frac{1}{2\zeta}\left(\sum_\mu\frac{\partial Z_\mu}{\partial R_\mu}-\zeta M_Z\,\xi^0\right)^2-\frac{1}{2\zeta_A}\left(\sum_\mu\frac{\partial A_\mu}{\partial R_\mu}\right)^2 .
+\mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a=1,2}\left(\sum_\mu\frac{\partial W_{a,\mu}}{\partial R_\mu}-\zeta M_W\,\xi_{a}\right)^2-\frac{1}{2\zeta}\left(\sum_\mu\frac{\partial Z_\mu}{\partial R_\mu}-\zeta M_Z\,\xi^0\right)^2-\frac{1}{2\zeta_A}\left(\sum_\mu\frac{\partial A_\mu}{\partial R_\mu}\right)^2 .
 $$
 
 **The parameter's name.** The gauges are called $R_\xi$ in the literature and the title keeps the name. The corpus writes the gauge parameter $\zeta$, as *BRST Symmetry in Biquaternionic Form* and *The Yang–Mills Path Integral and the Faddeev–Popov Procedure* do, and this article does the same, because article 4 has already spent $\xi$ on the three would-be Goldstone fields, there written $\xi_a$ with the index down. A reader comparing with a textbook should read $\xi_{\text{there}}=\zeta_{\text{here}}$, and the Goldstone fields of article 4 are unchanged; the index position differs and nothing else does.
@@ -37,10 +37,10 @@ for one massive direction of mass $M$, and the same with $M=0$ for the photon. T
 **What the broken phase adds.** Breaking the symmetry does not remove the degeneracy; it moves it. The scalar's kinetic term produces a mixing between the vector and the Goldstone, and the flat direction is now a simultaneous shift of both. With the doublet written as in article 4,
 
 $$
-\varphi=\exp\left(i\sum_a\theta_{\mathrm{gld}}^a\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
+\varphi=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
-the angle is $\theta_{\mathrm{gld}}^a=\xi^a/v$, a real Goldstone field over the real vacuum expectation value; the quadratic form in the pair $(A_\mu,\xi)$ is the vector's kernel coupled to the Goldstone by a term proportional to $p_\mu\xi$, and the vector that it annihilates is
+the angle is $\theta_{\mathrm{gld},a}=\xi_{a}/v$, a real Goldstone field over the real vacuum expectation value; the quadratic form in the pair $(A_\mu,\xi)$ is the vector's kernel coupled to the Goldstone by a term proportional to $p_\mu\xi$, and the vector that it annihilates is
 
 $$
 v=\begin{pmatrix}p_\mu\ iM\end{pmatrix},
@@ -59,28 +59,28 @@ up to the phase convention on $\xi$, which the mixing term's sign fixes and noth
 **The functional.** A single scalar function of the fields, one for each generator, set to zero:
 
 $$
-G^{a}=\sum_\mu\frac{\partial W^a_\mu}{\partial R_\mu}-\zeta M_W\xi^{a} ,
+G_{a}=\sum_\mu\frac{\partial W_{a,\mu}}{\partial R_\mu}-\zeta M_W\xi_{a} ,
 \qquad
 G^{Z}=\sum_\mu\frac{\partial Z_\mu}{\partial R_\mu}-\zeta M_Z\xi^{0} ,
 \qquad
 G^{A}=\sum_\mu\frac{\partial A_\mu}{\partial R_\mu} .
 $$
 
-**What the identity does with it.** The Faddeev–Popov identity inserts unity as $1=\mathcal{J}_{\mathrm{FP}}[A]\int\mathcal{D}U\,\delta(G[A^{U}])$, and the $\delta$-functional is then traded for a Gaussian weight $-\frac{1}{2\zeta}\sum_a(G^a)^2$, which is the term displayed in the introduction. The determinant $\mathcal{J}_{\mathrm{FP}}$ that the identity produces is the ghost sector, and §*The Ghost Sector and Its Weights* writes it.
+**What the identity does with it.** The Faddeev–Popov identity inserts unity as $1=\mathcal{J}_{\mathrm{FP}}[A]\int\mathcal{D}U\,\delta(G[A^{U}])$, and the $\delta$-functional is then traded for a Gaussian weight $-\frac{1}{2\zeta}\sum_a(G_{a})^2$, which is the term displayed in the introduction. The determinant $\mathcal{J}_{\mathrm{FP}}$ that the identity produces is the ghost sector, and §*The Ghost Sector and Its Weights* writes it.
 
-**Why each entry has the shape it has.** The first two are chosen, and the third is the ordinary Lorenz condition. The $-\zeta M_W\xi^a$ insertion is the one addition that the electroweak theory makes to the Yang–Mills functional of *The Yang–Mills Path Integral and the Faddeev–Popov Procedure*, and it is the whole of the difference: in the pure-gauge theory the functional is $\partial\cdot A$ alone.
+**Why each entry has the shape it has.** The first two are chosen, and the third is the ordinary Lorenz condition. The $-\zeta M_W\xi_{a}$ insertion is the one addition that the electroweak theory makes to the Yang–Mills functional of *The Yang–Mills Path Integral and the Faddeev–Popov Procedure*, and it is the whole of the difference: in the pure-gauge theory the functional is $\partial\cdot A$ alone.
 
-**In the unbroken basis the same object is less transparent.** Written in $(W^1,W^2,W^3,B)$, the neutral functionals are $\partial\cdot W^3-\zeta M_W\xi^3$ and $\partial\cdot B+\zeta M_Y\xi^3$, with $M_Y=g_{\mathrm Y}v/2$. Their sum of squares gives the Goldstone the mass $\zeta(M_W^2+M_Y^2)=\zeta M_Z^2$, and the orthogonal combination, the one in which the two enter with opposite weights, is the photon's condition $\partial\cdot A=0$. The two writings are the same condition expressed in two bases, and the physical basis is the one in which the masses are the eigenvalues rather than the entries.
+**In the unbroken basis the same object is less transparent.** Written in $(W_1,W_2,W_3,B)$, the neutral functionals are $\partial\cdot W_3-\zeta M_W\xi_3$ and $\partial\cdot B+\zeta M_Y\xi_3$, with $M_Y=g_{\mathrm Y}v/2$. Their sum of squares gives the Goldstone the mass $\zeta(M_W^2+M_Y^2)=\zeta M_Z^2$, and the orthogonal combination, the one in which the two enter with opposite weights, is the photon's condition $\partial\cdot A=0$. The two writings are the same condition expressed in two bases, and the physical basis is the one in which the masses are the eigenvalues rather than the entries.
 
 **The count of parameters.** Four functionals, four parameters if they are weighted independently, one if a common $\zeta$ is used. Nothing physical depends on the choice, and the rest of the article is the verification of that sentence in the cases where it can be checked exactly.
 
 **The BRST reading.** The same object is the gauge-fixing fermion of *BRST Symmetry in Biquaternionic Form*,
 
 $$
-\tilde\Xi=\sum_a\bar c^{\,a}\left(\sum_\mu\frac{\partial W^a_\mu}{\partial R_\mu}-\zeta M_W\xi^a+\frac{\zeta}{2}B^a\right),
+\tilde\Xi=\sum_a\bar c_{a}\left(\sum_\mu\frac{\partial W_{a,\mu}}{\partial R_\mu}-\zeta M_W\xi_{a}+\frac{\zeta}{2}B_{a}\right),
 $$
 
-with $B^a$ the Nakanishi–Lautrup field. Eliminating $B^a$ by its own equation of motion reproduces the $-\frac{1}{2\zeta}(G^a)^2$ term, so the two formulations differ only in whether the auxiliary field is kept. The one addition to the companion article's fermion is the $-\zeta M_W\xi^a$ insertion, and it is the same addition as before.
+with $B_{a}$ the Nakanishi–Lautrup field. Eliminating $B_{a}$ by its own equation of motion reproduces the $-\frac{1}{2\zeta}(G_{a})^2$ term, so the two formulations differ only in whether the auxiliary field is kept. The one addition to the companion article's fermion is the $-\zeta M_W\xi_{a}$ insertion, and it is the same addition as before.
 
 ## Two Jobs in One Functional
 
@@ -139,10 +139,10 @@ $$
 
 **The group element, the measure, and what the framework can compute.** The Faddeev–Popov identity integrates over the gauge group, so it needs the group as an object and a measure on it. Both exist here and neither is imported in principle: the group of the construction is $SU(2)$, which in this algebra is $\mathrm{SU}(2)=\mathrm{Spin}(3)$, the three-sphere $S^3$ — and because $\mathrm{SU}(2)$ is a compact Lie group with a bi-invariant metric, $\mathrm{Sc}(\tilde u^{*}\tilde v)$ is the **Haar measure** up to normalisation. The three real coordinates are the Goldstones' own coordinates, so the ghost determinant is the determinant of a three-by-three operator on the same manifold on which the Goldstones live, and the residual circle contributes the usual one-dimensional factor. What the framework does not supply is a computation: the determinant requires the operator's spectrum, and the corpus does not derive the covariant derivative's spectrum on $S^3$ for this connection. That is the missing rotor computation this article names, and it is why the section is transcribed rather than recomputed.
 
-**The determinant.** The Faddeev–Popov identity produces $\mathcal{J}_{\mathrm{FP}}=\det M$ with $M_{ab}=\delta G^a/\delta\alpha^b$, the variation of the functional under an infinitesimal gauge transformation. For the $R_\xi$ functionals,
+**The determinant.** The Faddeev–Popov identity produces $\mathcal{J}_{\mathrm{FP}}=\det M$ with $M_{ab}=\delta G_{a}/\delta\alpha_{b}$, the variation of the functional under an infinitesimal gauge transformation. For the $R_\xi$ functionals,
 
 $$
-M^{ab}=-\delta^{ab}\,\Pi+\zeta M_W^2\,\delta^{ab}+\cdots ,
+M_{ab}=-\delta_{ab}\,\Pi+\zeta M_W^2\,\delta_{ab}+\cdots ,
 $$
 
 so the ghost of each broken direction has the mass of the Goldstone of that direction, and the ellipsis is the gauge-field dependence that makes the determinant field-dependent.
@@ -175,7 +175,7 @@ whose determinant vanishes identically and whose trace is $\zeta M_Z^2$. Its eig
 
 **Where the ghosts live.** They are not elements of $\mathbb{B}$: the algebra is even and ungraded, and no element anticommutes with its fellows. They are elements of the Grassmann envelope $\mathbb{B}\otimes\Lambda$, and that is the companion article's statement, repeated here because the ghost sector is where it is used.
 
-**The ghost operator.** In the physical basis the quadratic part of the ghost action carries the operator $\Pi-\zeta M_a^2$ times $\delta^{ab}$, with $M_a$ the mass of the corresponding Goldstone, $M_W$ for the two charged, $M_Z$ for the neutral and $0$ for the photon, plus the gauge-field couplings that come from the covariant derivative inside $M^{ab}$. The couplings are what make the ghosts more than a bookkeeping device: they are the vertices that cancel the longitudinal gauge-field contributions in loops.
+**The ghost operator.** In the physical basis the quadratic part of the ghost action carries the operator $\Pi-\zeta M_a^2$ times $\delta_{ab}$, with $M_a$ the mass of the corresponding Goldstone, $M_W$ for the two charged, $M_Z$ for the neutral and $0$ for the photon, plus the gauge-field couplings that come from the covariant derivative inside $M_{ab}$. The couplings are what make the ghosts more than a bookkeeping device: they are the vertices that cancel the longitudinal gauge-field contributions in loops.
 
 ## The Propagators and the Three Limits
 
@@ -361,7 +361,7 @@ With the scalar present, the $s/v^2$ growth cancels against the scalar exchange 
 
 The quadratic part of the electroweak Lagrangian is degenerate along the gauge orbits. In the broken phase the flat direction is not a pure gauge transformation but the simultaneous shift $A_\mu\to A_\mu+\partial_\mu\theta$, $\xi\to\xi+M\theta$, and the corresponding zero mode of the quadratic kernel is $v=(p_\mu,\,iM)$, verified to $\lVert Kv\rVert/\lVert v\rVert=4.6\times10^{-16}$.
 
-The $R_\xi$ functional $G^a=\partial\cdot W^a-\zeta M_W\xi^a$, with the analogous neutral and photonic conditions, does two jobs with one term: its cross term $+M\xi\partial\cdot A$ cancels the mixing $-M\xi\partial\cdot A$ from the scalar kinetic term, and its $\xi^2$ term supplies the mass $\zeta M^2$ that the potential cannot. The Goldstones therefore have $M_{\xi^\pm}^2=\zeta M_W^2$ and $M_{\xi^0}^2=\zeta M_Z^2$, degenerate with the vectors at $\zeta=1$.
+The $R_\xi$ functional $G_{a}=\partial\cdot W_{a}-\zeta M_W\xi_{a}$, with the analogous neutral and photonic conditions, does two jobs with one term: its cross term $+M\xi\partial\cdot A$ cancels the mixing $-M\xi\partial\cdot A$ from the scalar kinetic term, and its $\xi^2$ term supplies the mass $\zeta M^2$ that the potential cannot. The Goldstones therefore have $M_{\xi^\pm}^2=\zeta M_W^2$ and $M_{\xi^0}^2=\zeta M_Z^2$, degenerate with the vectors at $\zeta=1$.
 
 The ghosts come from the Faddeev–Popov determinant, have the mass of the Goldstone of their direction, and carry three weights: $\det M$ in the measure, $-1$ per closed loop, and ghost number $\pm1$. The neutral ghost mass matrix has determinant zero for every $\zeta$, and the zero eigenvalue is the photon's ghost, which exists because $\mathrm{U}(1)_{\mathrm{em}}$ is unbroken.
 
@@ -379,15 +379,15 @@ The framework discharges the gauge-fixing row of the standard-model article at t
 |---|---|
 | $\zeta$ | The gauge parameter; $\xi$ of the literature |
 | $\zeta_A$ | The gauge parameter of the photon's functional |
-| $\xi^a$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields of article 4, which writes the index down |
-| $W^a_\mu$, $Z_\mu$, $A_\mu$ | The gauge fields in the broken basis: the charged pair, the neutral massive one and the photon |
+| $\xi_{a}$, $\xi^\pm$, $\xi^0$ | The would-be Goldstone fields of article 4, which writes the index down |
+| $W_{a,\mu}$, $Z_\mu$, $A_\mu$ | The gauge fields in the broken basis: the charged pair, the neutral massive one and the photon |
 | $\varphi$, $h$ | The scalar doublet and the physical scalar left after the Goldstones are eaten |
 | $v$ | $246.22$ GeV, the vacuum expectation value, entering $M_W=gv/2$ |
 | $g$, $g_{\mathrm Y}$ | The $SU(2)_L$ and $\mathrm U(1)_{\mathrm Y}$ couplings |
 | $M_W$, $M_Z$, $M_H$ | $80.377$, $91.1876$ and $125.09$ GeV, the measured boson masses |
 | $M_Y$ | $g_{\mathrm Y}v/2$, the hypercharge partner in the unbroken-basis functional |
-| $G^a$, $G^Z$, $G^A$ | The gauge-fixing functionals |
-| $B^a$ | The Nakanishi–Lautrup auxiliary field |
+| $G_{a}$, $G^Z$, $G^A$ | The gauge-fixing functionals |
+| $B_{a}$ | The Nakanishi–Lautrup auxiliary field |
 | $\tilde\Xi$ | The gauge-fixing fermion, $s$-exact |
 | $\Pi$ | $-\sum_\mu p_\mu p_\mu$, positive, equal to $M^2$ on shell |
 | $P_{\mu\nu}$, $L_{\mu\nu}$ | Transverse and longitudinal projectors, traces $3$ and $1$ |
@@ -397,7 +397,7 @@ The framework discharges the gauge-fixing row of the standard-model article at t
 | $M_{\mathrm{gh}}$ | The ghost mass, equal to $M_\xi$ |
 | $M_a$ | The Goldstone mass of direction $a$, entering the ghost operator |
 | $\mathcal{J}_{\mathrm{FP}}[A]$, $\det M$ | The Faddeev–Popov determinant |
-| $c^a$, $\bar c^{\,a}$ | Ghost and antighost, ghost numbers $+1$ and $-1$ |
+| $c_{a}$, $\bar c_{a}$ | Ghost and antighost, ghost numbers $+1$ and $-1$ |
 | $\Lambda$ | The Grassmann envelope's odd part |
 | $s$ | The nilpotent odd derivation, $s^2=0$ |
 | $\epsilon_{L,\mu}$ | The longitudinal polarisation vector |

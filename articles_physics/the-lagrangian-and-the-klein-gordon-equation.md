@@ -367,6 +367,6 @@ which is the parent's two frequency branches $e^{\pm i k'_t r'_t}$ recombined in
 
 **The current.** The identity $\sum_\mu\partial_\mu j_\mu=-2\,\mathrm{Im}\,\mathrm{Sc}[\tilde\Xi^{*}(\Box_\Phi-k_m^{2})\tilde\Xi]$ was checked off shell on a grid with four modes, where the two sides agreed to $10^{-13}$ at every point, and on an exact solution, where the divergence was zero to machine precision. The ratio $j_{r'_t}/\rho_{\mathrm{chg}}=-2k_m$ was checked on the mode $\omega=2$, $k_x=1$, $k_m=\sqrt3$ in one length unit, where it came out $-2\sqrt3$ and the derivation of §*The Noether Currents* explains why.
 
-**The stress.** On the exact plane wave the combination $\partial_{r'_t}T^{00}+\sum_\eta\partial_{r_\eta}T^{0\eta}$ vanished at the level of the finite-difference truncation, which is the numerical form of the divergence identity above.
+**The stress.** On the exact plane wave the combination $\partial_{r'_t}T_{00}+\sum_\eta\partial_{r_\eta}T_{0\eta}$ vanished at the level of the finite-difference truncation, which is the numerical form of the divergence identity above.
 
 **The signs.** A cosine of each sign of $\omega$ was substituted into $\Box_\Phi\tilde\Xi-k_m^{2}\tilde\Xi$ on the case $\omega=2$, $k_x=1$, $k_m=\sqrt3$, and both branches solved the equation, which is the check that the coefficient $(1,-1,1)$ of §*The Action in Element Form* is right and the wrong choices of sign are wrong.

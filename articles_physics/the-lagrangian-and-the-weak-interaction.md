@@ -64,7 +64,7 @@ The interaction is a product of a gauge field and a current and nothing else: no
 
 **Why the current carries the $V-A$ structure.** In the algebra the projection is the right multiplication by a unit imaginary vector, and the two chiral parts of $\tilde\Xi$ are the two eigenspaces of that insertion. The corpus's Dirac bilinear $\bar{\tilde\Xi}\gamma_\mu(1-\gamma_5)\tilde\Xi$ is the component form of the object, and the algebraic statement is that the weak vertex selects one of the two chiral halves. The selection is exact: it is a projection in the algebra and not an approximation to one.
 
-**Why the $W$ is charged.** $W^{+}_\mu$ carries one unit of electric charge and one unit of the weak ladder; its conjugate carries the opposite. The action is real because the two terms are conjugates of each other, and the factor $1/\sqrt2$ is the normalization of the ladder operators $\tau^{\pm}=(\tau^1\pm i\tau^2)/\sqrt2$.
+**Why the $W$ is charged.** $W^{+}_\mu$ carries one unit of electric charge and one unit of the weak ladder; its conjugate carries the opposite. The action is real because the two terms are conjugates of each other, and the factor $1/\sqrt2$ is the normalization of the ladder operators $\tau^{\pm}=(\tau_1\pm i\tau_2)/\sqrt2$.
 
 **The gauge-fixed form.** The mass term breaks the local $SU(2)_L$ of the $W$'s own sector, so the action above is written in the unitary gauge, where the $W$'s longitudinal mode is its third polarization and there is no Goldstone. In a covariant gauge the Goldstone returns and the same physics is distributed differently; that is the gauge-fixing article's, and this article uses the unitary form throughout because the vertex does not depend on the choice.
 
@@ -140,7 +140,7 @@ with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum t
 
 ## The Noether Currents: The Charged Current Is the Ladder Current
 
-**The current's origin.** Before breaking, the fermion sector is invariant under global $SU(2)_L$, and the Noether currents are $J^{a}_\mu=\bar{\tilde\Xi}\gamma_\mu\tau^a\tilde\Xi$. The ladder combinations $J^{\pm}_\mu=J^{1}_\mu\mp iJ^{2}_\mu$ are the charged currents, and the $W$'s interaction term is the gauging of exactly these.
+**The current's origin.** Before breaking, the fermion sector is invariant under global $SU(2)_L$, and the Noether currents are $J_{a,\mu}=\bar{\tilde\Xi}\gamma_\mu\tau_{a}\tilde\Xi$. The ladder combinations $J^{\pm}_\mu=J_{1,\mu}\mp iJ_{2,\mu}$ are the charged currents, and the $W$'s interaction term is the gauging of exactly these.
 
 **Conservation and its failure.** The charged current is conserved in the massless limit and fails to be conserved when the fermions have mass, because a mass term couples the two chiralities and the current is one of them. The divergence is proportional to the mass, and that proportionality is the statement that the axial part alone is the one with the anomaly.
 

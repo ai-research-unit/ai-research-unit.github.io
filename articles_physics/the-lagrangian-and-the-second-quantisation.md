@@ -48,7 +48,7 @@ G=G_{R}-G_{A},
 \{\phi(x),\phi(y)\}=G(x,y),
 $$
 
-is the Peierls bracket: the difference of the two Green functions is the classical bracket of the field with itself. For a conjugate pair the same construction gives $\{\phi(x),\pi(y)\}=\partial_{y^{0}}G(x,y)$, and at equal times that is a delta function.
+is the Peierls bracket: the difference of the two Green functions is the classical bracket of the field with itself. For a conjugate pair the same construction gives $\{\phi(x),\pi(y)\}=\partial_{y_0}G(x,y)$, and at equal times that is a delta function.
 
 **The hand check for the scalar.** For $\mathcal{D}=\Box_\Phi-k_m^{2}$ the difference of the Green functions is the Pauli–Jordan function,
 
@@ -69,10 +69,10 @@ which vanishes at $\Delta r'^{0}=0$ and whose time derivative there is $\delta^{
 **Constraints, and the bracket they force.** When the action is first order or has a gauge symmetry, the Legendre transform does not invert and the naive bracket is inconsistent on the constraint surface. Dirac's construction replaces it: solve the constraints, or gauge-fix them, and define
 
 $$
-\{F,G\}_{D}=\{F,G\}-\{F,\chi_a\}\,C^{ab}\,\{\chi_b,G\},
+\{F,G\}_{D}=\{F,G\}-\{F,\chi_a\}\,(C^{-1})_{ab}\,\{\chi_b,G\},
 $$
 
-with $\chi_a$ the constraints and $C^{ab}$ the inverse of their bracket matrix. The result is a bracket that is consistent on the reduced space.
+with $\chi_a$ the constraints and $(C^{-1})_{ab}$ the inverse of their bracket matrix. The result is a bracket that is consistent on the reduced space.
 
 **Where the family's constraints are.** Three places. The Proca field's Lorenz condition, which is a constraint on the vector's longitudinal part and is what removes it. The Dirac field's first-order structure, whose conjugate momenta are bilinears and whose bracket is the Dirac bracket of the spinor's components. And every gauge theory's Gauss law, which is the constraint in the Maxwell, the electroweak and the linearised-gravity articles.
 
@@ -143,7 +143,7 @@ $$
 | $G_{R},\ G_{A}$ | Retarded and advanced Green functions |
 | $G=G_{R}-G_{A}$ | Pauli–Jordan function, the bracket's kernel |
 | $\{\,,\,\}$ | Classical bracket (Peierls, or Dirac when constrained) |
-| $\chi_a,\ C^{ab}$ | Constraints and their bracket matrix (Dirac bracket) |
+| $\chi_a,\ (C^{-1})_{ab}$ | Constraints and the inverse of their bracket matrix (Dirac bracket) |
 | $\frac{1}{i\hbar}[\,,\,]$ | The promotion's commutator |
 | $a_k,\ a_k^{\dagger}$ | Annihilation and creation operators, after promotion |
 | $\lvert 0\rangle$ | The vacuum, annihilated by every $a_k$ |

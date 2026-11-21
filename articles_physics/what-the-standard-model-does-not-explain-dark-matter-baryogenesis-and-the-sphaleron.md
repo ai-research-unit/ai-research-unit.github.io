@@ -194,7 +194,7 @@ computed from $\lambda=0.22650$, $A=0.826$, $\bar\rho=0.1591$, $\bar\eta=0.3523$
 **The identity, which is exact and non-perturbative.**
 
 $$
-\sum_\mu\varepsilon_\mu\partial_\mu j_{B,\mu}=\sum_\mu\varepsilon_\mu\partial_\mu j_{L,\mu}=\frac{N_g g^2}{32\pi^2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F^a_{\mu\nu}\tilde F^a_{\mu\nu} ,
+\sum_\mu\varepsilon_\mu\partial_\mu j_{B,\mu}=\sum_\mu\varepsilon_\mu\partial_\mu j_{L,\mu}=\frac{N_g g^2}{32\pi^2}\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu F_{a,\mu\nu}\tilde F_{a,\mu\nu} ,
 \qquad
 \sum_\mu\varepsilon_\mu\partial_\mu\left(j_{B,\mu}-j_{L,\mu}\right)=0 .
 $$

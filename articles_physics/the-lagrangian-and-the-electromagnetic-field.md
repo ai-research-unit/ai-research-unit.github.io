@@ -134,7 +134,7 @@ which is central, so its vector part vanishes, so $\tilde F=0$ and the action va
 **The free field has a stress and no charge.** Translation invariance gives the energy–momentum tensor, and its temporal component is
 
 $$
-T^{00}=\tfrac12\bigl(\epsilon\vec E^{2}+\vec B^{2}/\mu\bigr)>0 ,
+T_{00}=\tfrac12\bigl(\epsilon\vec E^{2}+\vec B^{2}/\mu\bigr)>0 ,
 $$
 
 with the Poynting vector $\vec S=\vec E\times\vec H$ as the mixed components. The sign is positive and it is the sign that makes the energy bounded below; it is a statement about the stress and not about the sign of the Lagrangian, and the two signs are independent.

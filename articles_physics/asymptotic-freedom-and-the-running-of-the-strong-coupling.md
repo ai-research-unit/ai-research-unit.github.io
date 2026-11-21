@@ -225,7 +225,7 @@ so $\alpha_s(M_Z)=0.1239$ against the measured $0.1179$ — five per cent high.
 **Where the mass comes from.** For massless quarks the energy–momentum tensor has a nonzero trace, and the trace is the beta function:
 
 $$
-\sum_\mu\varepsilon_\mu T_{\mu\mu}=\frac{\beta_{g_s}}{2g_s}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu}=-\frac{b_0\alpha_s}{8\pi}\sum_{a,\mu,\nu}G^a_{\mu\nu}G^a_{\mu\nu} ,
+\sum_\mu\varepsilon_\mu T_{\mu\mu}=\frac{\beta_{g_s}}{2g_s}\sum_{a,\mu,\nu}G_{a,\mu\nu}G_{a,\mu\nu}=-\frac{b_0\alpha_s}{8\pi}\sum_{a,\mu,\nu}G_{a,\mu\nu}G_{a,\mu\nu} ,
 $$
 
 so that a scale-free classical theory acquires a mass scale in the quantum theory through the same coefficient that governs the running. The proton mass is the matrix element of that trace:
@@ -299,8 +299,8 @@ The framework supplies the sign rule and the colour factors and nothing else. Th
 | $N_c=3$ | Number of colours; enters $b_0$ only through $C_A=N_c$ and the normalisation $T_R=\tfrac12$ |
 | $m_p$ | Proton mass, $938$ MeV, the matrix element of the conformal anomaly |
 | $\sigma$ | String tension; $m_p/\sqrt\sigma$ is a pure number the theory predicts |
-| $\sum_\mu\varepsilon_\mu T_{\mu\mu}$ | Trace of the energy–momentum tensor, proportional to $G^a_{\mu\nu}G^a_{\mu\nu}$ with coefficient $b_0$ |
-| $G^a_{\mu\nu}$ | Gluon field strength, $a=1,\dots,8$; the operator of the conformal anomaly |
+| $\sum_\mu\varepsilon_\mu T_{\mu\mu}$ | Trace of the energy–momentum tensor, proportional to $G_{a,\mu\nu}G_{a,\mu\nu}$ with coefficient $b_0$ |
+| $G_{a,\mu\nu}$ | Gluon field strength, $a=1,\dots,8$; the operator of the conformal anomaly |
 | $\alpha$ | Fine-structure constant, $\alpha(0)=1/137.036$; used only in the QED contrast |
 | $\delta\alpha_s$, $\delta\Lambda$ | The uncertainties, and their propagation from $M_Z$ to $\Lambda$ |
 

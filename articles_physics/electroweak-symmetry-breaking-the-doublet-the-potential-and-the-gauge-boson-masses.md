@@ -18,7 +18,7 @@ with $v=246.22$ GeV. This article writes the mass matrix, diagonalises it, count
 
 **Three results that the single-particle articles do not state.**
 
-- **The mass matrix and its trace.** In the basis $(W^1,W^2,W^3,B)$ the squared-mass matrix is one $4\times4$ object with three non-zero eigenvalues, and it obeys the trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$.
+- **The mass matrix and its trace.** In the basis $(W_1,W_2,W_3,B)$ the squared-mass matrix is one $4\times4$ object with three non-zero eigenvalues, and it obeys the trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$.
 - **Why the photon is massless, structurally.** Not because of a tuning: the eigenvalue is zero because the generator $Q=T_3+Y$ annihilates the vacuum. The zero is a consequence of the alignment of the vacuum with the charge, and it is the only reason the electromagnetic group survives.
 - **The numbers, from three independent sets of inputs.** From $g$, $g_{\mathrm Y}$ and $v$ at $M_Z$ the values are $80.24$ and $91.51$ GeV. From $\alpha$, $G_F$ and $M_Z$ the tree value of $M_W$ is $79.83$ GeV with $\alpha$ at the Z pole and $80.94$ GeV with $\alpha$ at zero momentum, against the measured $80.377$. The two brackets miss in opposite directions by about half a GeV, and $\delta r=0.0355$ reconciles them.
 
@@ -135,7 +135,7 @@ so the quadratic term is the scalar mass and the two higher terms are the scalar
 **The derivative.** With the normalisation of article 2,
 
 $$
-D_\mu\varphi=\frac{\partial\varphi}{\partial R_\mu}+i\,g\sum_a\tau_aW^a_\mu\varphi+i\,g_{\mathrm Y}Y_\varphi B_\mu\varphi ,
+D_\mu\varphi=\frac{\partial\varphi}{\partial R_\mu}+i\,g\sum_a\tau_aW_{a,\mu}\varphi+i\,g_{\mathrm Y}Y_\varphi B_\mu\varphi ,
 \qquad
 \tau_a=\tfrac12\sigma_a ,
 $$
@@ -159,16 +159,16 @@ where $\varphi_0^{\uparrow}=\frac{1}{\sqrt2}\binom{v}{0}$ is the same doublet wi
 **The kinetic term at the vacuum.** The corpus's sign rule makes the term $-\sum_\mu(D_\mu\varphi)^\dagger(D_\mu\varphi)$, and at the vacuum the derivative carries no spacetime index of its own, so the term is a quadratic form in the four gauge fields,
 
 $$
-\mathcal{L}_{\mathrm{mass}}=-\frac{v^2}{8}\left[g^2\left(W^1_\mu\right)^2+g^2\left(W^2_\mu\right)^2+\left(gW^3_\mu-g_{\mathrm Y}B_\mu\right)^2\right] .
+\mathcal{L}_{\mathrm{mass}}=-\frac{v^2}{8}\left[g^2\left(W_{1,\mu}\right)^2+g^2\left(W_{2,\mu}\right)^2+\left(gW_{3,\mu}-g_{\mathrm Y}B_\mu\right)^2\right] .
 $$
 
-**The third bracket is the whole mechanism in one expression.** The combination $gW^3-g_{\mathrm Y}B$ is not zero and not one of the original fields; it is a specific linear combination whose orthogonal partner, $g_{\mathrm Y}W^3+gB$, is absent. The absence is the masslessness of the photon, and the presence is the mass of the $Z$.
+**The third bracket is the whole mechanism in one expression.** The combination $gW_3-g_{\mathrm Y}B$ is not zero and not one of the original fields; it is a specific linear combination whose orthogonal partner, $g_{\mathrm Y}W_3+gB$, is absent. The absence is the masslessness of the photon, and the presence is the mass of the $Z$.
 
-**Why the two charged directions carry the same coefficient.** The vacuum is neutral and the two charged directions are related by the residual $\mathrm{U}(1)_{\mathrm{em}}$, so their masses must be equal. The equality $M_{W^1}=M_{W^2}$ is not an accident of the arithmetic; it is the residual symmetry.
+**Why the two charged directions carry the same coefficient.** The vacuum is neutral and the two charged directions are related by the residual $\mathrm{U}(1)_{\mathrm{em}}$, so their masses must be equal. The equality $M_{W_1}=M_{W_2}$ is not an accident of the arithmetic; it is the residual symmetry.
 
 ## The Mass Matrix
 
-**The matrix.** Writing $\mathcal{L}_{\mathrm{mass}}=-\tfrac12\sum_{i,j}M^2_{ij}A_iA_j$ on the vector $A=(W^1,W^2,W^3,B)$,
+**The matrix.** Writing $\mathcal{L}_{\mathrm{mass}}=-\tfrac12\sum_{i,j}M^2_{ij}A_iA_j$ on the vector $A=(W_1,W_2,W_3,B)$,
 
 $$
 M^2=\frac{v^2}{4}
@@ -185,10 +185,10 @@ The matrix is real, symmetric, and block diagonal: a $2\times2$ block proportion
 **The eigenvalues, in one line each.** The charged block gives
 
 $$
-M^2_{W^1}=M^2_{W^2}=\frac{g^2v^2}{4}=M_W^2 ,
+M^2_{W_1}=M^2_{W^2}=\frac{g^2v^2}{4}=M_W^2 ,
 $$
 
-so the two real fields combine into $W^\pm=(W^1\mp iW^2)/\sqrt2$ of mass $M_W=gv/2$. The neutral block is a $2\times2$ matrix whose trace is $\tfrac{v^2}{4}(g^2+g_{\mathrm Y}^2)$ and whose determinant is zero, so its eigenvalues are $0$ and that trace:
+so the two real fields combine into $W^\pm=(W_1\mp iW_2)/\sqrt2$ of mass $M_W=gv/2$. The neutral block is a $2\times2$ matrix whose trace is $\tfrac{v^2}{4}(g^2+g_{\mathrm Y}^2)$ and whose determinant is zero, so its eigenvalues are $0$ and that trace:
 
 $$
 M^2_\gamma=0 ,
@@ -198,12 +198,12 @@ $$
 
 **The determinant zero is structural and not numerical.** The determinant of the neutral block is $\left(\tfrac{v^2}{4}\right)^2\left[g^2g_{\mathrm Y}^2-\left(-gg_{\mathrm Y}\right)^2\right]=0$ identically, for every $g$, $g_{\mathrm Y}$ and $v$. The zero eigenvalue is not a fine-tuning of the parameters; it follows from the rank of the block, which in turn follows from the one-dimensionality of the direction along which $Q$ annihilates the vacuum.
 
-**The eigenvectors.** The zero eigenvector is proportional to $(g_{\mathrm Y},g)$ in the $(W^3,B)$ basis, and the other to $(g,-g_{\mathrm Y})$. Normalising,
+**The eigenvectors.** The zero eigenvector is proportional to $(g_{\mathrm Y},g)$ in the $(W_3,B)$ basis, and the other to $(g,-g_{\mathrm Y})$. Normalising,
 
 $$
-A_\mu=\sin\theta_W\,W^3_\mu+\cos\theta_W\,B_\mu ,
+A_\mu=\sin\theta_W\,W_{3,\mu}+\cos\theta_W\,B_\mu ,
 \qquad
-Z_\mu=\cos\theta_W\,W^3_\mu-\sin\theta_W\,B_\mu ,
+Z_\mu=\cos\theta_W\,W_{3,\mu}-\sin\theta_W\,B_\mu ,
 \qquad
 \tan\theta_W=\frac{g_{\mathrm Y}}{g} ,
 $$
@@ -277,7 +277,7 @@ $$
 \varphi=\exp\left(i\sum_a\theta_{\mathrm{gld},a}\tau_a\right)\frac{1}{\sqrt2}\begin{pmatrix}0\ v+h\end{pmatrix},
 $$
 
-and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_\mu$. The combination that is gauge invariant is $W^a_\mu+\frac{2}{gv}\partial\xi_a/\partial R_\mu$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
+and the three fields $\xi_a$ are the would-be Goldstones. The angle is $\theta_{\mathrm{gld},a}=\xi_a/v$, a real Goldstone field over the real vacuum expectation value. A gauge transformation with parameter $\Gamma_a=-\frac{2}{gv}\xi_a$ removes them, at the price of shifting the gauge fields by $\partial\xi/\partial R_\mu$. The combination that is gauge invariant is $W_{a,\mu}+\frac{2}{gv}\partial\xi_a/\partial R_\mu$, and it is that combination which carries the mass. The Goldstone is not destroyed: it becomes the longitudinal part of the field that absorbed it.
 
 **Why this is a statement about a field and not about a particle.** The Goldstone mode never appears in the physical spectrum, and at the same time it is present in every gauge but the unitary one. The two statements are consistent because the mode is a gauge artefact: its presence or absence is a choice of coordinates on field space, and no observable depends on the choice. What is observable is the three polarisations of the massive vector, and those are counted in the second table.
 
@@ -482,7 +482,7 @@ For one doublet with $T=\tfrac12$ and $T_3=-\tfrac12$ the numerator is $v^2\left
 
 The electroweak group is broken to $\mathrm{U}(1)_{\mathrm{em}}$ by one complex doublet of hypercharge $\tfrac12$ with the potential $-\mu^2\varphi^\dagger\varphi+\lambda(\varphi^\dagger\varphi)^2$. The minima form a three-sphere $\varphi^\dagger\varphi=v^2/2$ with $v^2=\mu^2/\lambda$, and the vacuum $\langle\varphi\rangle=\frac{1}{\sqrt2}(0,v)^{T}$ is annihilated by $Q=T_3+Y$ and by no other generator. That single line is why the photon stays massless and the other three directions acquire mass.
 
-The mass matrix in the basis $(W^1,W^2,W^3,B)$ is $\tfrac{v^2}{4}$ times a block-diagonal matrix with the charged block $g^2\mathrm I$ and the neutral block $\binom{g^2\ -gg_{\mathrm Y}}{-gg_{\mathrm Y}\ \ g_{\mathrm Y}^2}$. Its eigenvalues are $g^2v^2/4$ twice, zero once and $(g^2+g_{\mathrm Y}^2)v^2/4$ once, giving $M_W=gv/2$, $M_\gamma=0$ and $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2=M_W/\cos\theta_W$. The zero eigenvalue is structural: the neutral block's determinant vanishes identically, because the direction along which $Q$ annihilates the vacuum is one-dimensional. The eigenvectors are the photon $A=\sin\theta_WW^3+\cos\theta_WB$ and the $Z=\cos\theta_WW^3-\sin\theta_WB$, so the mixing angle is the diagonalising angle and not an independent parameter. The trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$ is exact at tree level and closes on the numbers.
+The mass matrix in the basis $(W_1,W_2,W_3,B)$ is $\tfrac{v^2}{4}$ times a block-diagonal matrix with the charged block $g^2\mathrm I$ and the neutral block $\binom{g^2\ -gg_{\mathrm Y}}{-gg_{\mathrm Y}\ \ g_{\mathrm Y}^2}$. Its eigenvalues are $g^2v^2/4$ twice, zero once and $(g^2+g_{\mathrm Y}^2)v^2/4$ once, giving $M_W=gv/2$, $M_\gamma=0$ and $M_Z=\sqrt{g^2+g_{\mathrm Y}^2}\,v/2=M_W/\cos\theta_W$. The zero eigenvalue is structural: the neutral block's determinant vanishes identically, because the direction along which $Q$ annihilates the vacuum is one-dimensional. The eigenvectors are the photon $A=\sin\theta_WW_3+\cos\theta_WB$ and the $Z=\cos\theta_WW_3-\sin\theta_WB$, so the mixing angle is the diagonalising angle and not an independent parameter. The trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$ is exact at tree level and closes on the numbers.
 
 The counting balances at twelve. Before the breaking, four massless vectors give eight polarisations and the four real scalar components give four. After, the photon gives two, the three massive vectors nine and the physical scalar one. Three scalar components ceased to be independent fields and three gauge polarisations were gained, and the two events are one. In the unitary gauge the spectrum is a massless photon, a $W$ pair, a $Z$ and one scalar, with couplings $g_{hWW}=2M_W^2/v$, $g_{hZZ}=2M_Z^2/v$, $g_{hhh}=3M_H^2/v$ and $g_{hhhh}=3M_H^2/v^2$, all fixed by the masses.
 
@@ -504,7 +504,7 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 | $h$ | The radial excitation of the neutral component |
 | $\varphi_0$ | The vacuum $\frac{1}{\sqrt2}(0,v)^{T}$ |
 | $\tau_a=\sigma_a/2$ | Weak-isospin generators in the doublet |
-| $M^2$ | The $4\times4$ squared-mass matrix in the basis $(W^1,W^2,W^3,B)$ |
+| $M^2$ | The $4\times4$ squared-mass matrix in the basis $(W_1,W_2,W_3,B)$ |
 | $M_W$, $M_Z$, $M_H$ | The three masses; $M_Z=M_W/\cos\theta_W$, $M_H=\sqrt{2\lambda}\,v$ |
 | $A_\mu$, $Z_\mu$ | The photon and the neutral massive field |
 | $\theta_W$ | $\tan\theta_W=g_{\mathrm Y}/g$ |

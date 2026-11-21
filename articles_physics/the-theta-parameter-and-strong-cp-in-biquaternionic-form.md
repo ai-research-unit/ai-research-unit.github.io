@@ -26,7 +26,7 @@ S_\theta=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int \sum_{\mu,\nu}F_{\mu\nu}F_{\m
 F_{\mathrm{dual},\mu\nu}=\tfrac12\sum_{\rho,\sigma}\epsilon_{\mu\nu\rho\sigma}F_{\rho\sigma} ,
 $$
 
-with all indices summed in the $i r'_t$ convention as in the companion gauge articles. A quantisation statement carries the factor $\frac{1}{\hbar}$ beside the charge product. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T^aT^b)=\tfrac12\delta^{ab}$; that normalization is what makes $Ϙ$ an integer.
+with all indices summed in the $i r'_t$ convention as in the companion gauge articles. A quantisation statement carries the factor $\frac{1}{\hbar}$ beside the charge product. The trace $\mathrm{Tr}$ is the matrix trace on the gauge factor, distinguished from the trace of an element of the algebra, and it is taken in the fundamental representation with $\mathrm{Tr}(T_{a}T_{b})=\tfrac12\delta_{ab}$; that normalization is what makes $Ϙ$ an integer.
 
 Two things follow, and the article states them separately. The framework **supplies** the theta term's density and its discrete periodicity; it **does not supply** the value of $\theta_{\mathrm{vac}}$, because $\theta_{\mathrm{vac}}$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
@@ -82,7 +82,7 @@ $$
 so the theta term of the abelian theory is
 
 $$
-S_\theta^{\text{ab}}=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int d^4r\,\frac{4i}{c}I_2
+S_{\theta,\text{ab}}=\frac{\theta_{\mathrm{vac}}}{32\pi^2}\int d^4r\,\frac{4i}{c}I_2
 =\frac{i\theta_{\mathrm{vac}}}{8\pi^2 c}\int d^4r\,I_2 .
 $$
 

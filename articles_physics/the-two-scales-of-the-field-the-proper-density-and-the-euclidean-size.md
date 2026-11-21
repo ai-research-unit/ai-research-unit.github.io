@@ -38,7 +38,7 @@ with $\theta_{\mathrm{rpd}}\ge0$ the **rapidity**. The half-angle in the exponen
 
 **The two names for the density.** The block's fluid articles write $\rho_{\mathrm{num}}=\varrho^{2}$ and call it the **proper density**. The polar-variable articles write $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ and call it the **density** [The Coupled Dirac Equation in Biquaternionic Polar Variables](the-coupled-dirac-equation-in-biquaternionic-polar-variables.html). This article shows that the first is the invariant length of the current over $c$ and the second its time component over $c$, and proposes no change of letters: **the two names stay, and the relation between them is the subject.**
 
-**Units.** The field $\tilde\Xi$ carries the amplitude's units, $\varrho$ and $\langle\tilde\Xi\rangle_{*}$ their square, $\rho_{\mathrm{num}}$ and $n$ the invertibles of a number density, and $j^{0}$ density times velocity. No numerical value in this article depends on the invertibles, all statements being ratios or identities between quantities of the same dimension.
+**Units.** The field $\tilde\Xi$ carries the amplitude's units, $\varrho$ and $\langle\tilde\Xi\rangle_{*}$ their square, $\rho_{\mathrm{num}}$ and $n$ the invertibles of a number density, and $j_0$ density times velocity. No numerical value in this article depends on the invertibles, all statements being ratios or identities between quantities of the same dimension.
 
 ## The Two Numbers
 
@@ -170,18 +170,18 @@ $$
 $$
 \mathrm{Sc}(\tilde J_\Phi)=ic\,\gamma\rho_{\mathrm{num}}=ic\,\langle\tilde\Xi\rangle_{*},
 \qquad\text{so}\qquad
-\langle\tilde\Xi\rangle_{*}=\frac{\mathrm{Sc}(\tilde J_\Phi)}{ic}=\frac{j^{0}}{c},
+\langle\tilde\Xi\rangle_{*}=\frac{\mathrm{Sc}(\tilde J_\Phi)}{ic}=\frac{j_0}{c},
 $$
 
-with $j^{0}=\gamma\rho_{\mathrm{num}}c=\mathrm{Im}\,\mathrm{Sc}(\tilde J_\Phi)$ the real time component. **The first display is the form to quote; the bare $\mathrm{Sc}(\tilde J_\Phi)/c$ is wrong by a factor $i$ and would give an imaginary density.**
+with $j_0=\gamma\rho_{\mathrm{num}}c=\mathrm{Im}\,\mathrm{Sc}(\tilde J_\Phi)$ the real time component. **The first display is the form to quote; the bare $\mathrm{Sc}(\tilde J_\Phi)/c$ is wrong by a factor $i$ and would give an imaginary density.**
 
 **Checked on three words**, with $\varrho=1.3$, $\theta_{\mathrm{pha}}=0.4$ and $\theta_{\mathrm{rpd}}\in\{0,1.0986\}$, and with $\varrho=0.7$, $\theta_{\mathrm{pha}}=-2$, $\theta_{\mathrm{rpd}}=2.5$: the two sides of the second display agree to $4\times10^{-16}$, and $\mathrm{Re}\,\mathrm{Sc}(\tilde J_\Phi)$ vanishes to $0$.
 
-**Write the current's components plainly.** The element $\tilde J_\Phi$ is the corpus's biquaternion current, whose scalar coefficient is $i$ times the physical time component. Put $j^{0}=\gamma\rho_{\mathrm{num}}c$ for the number density times $c$ and $\vec j=\gamma\rho_{\mathrm{num}}\vec v$ for the flux, so that $\tilde J_\Phi=ij^{0}e_t+\vec j$. **Then $\mathrm{Sc}(\tilde J_\Phi)=ij^{0}$ and $\langle\tilde\Xi\rangle_{*}=j^{0}/c$**, the second display of this section.
+**Write the current's components plainly.** The element $\tilde J_\Phi$ is the corpus's biquaternion current, whose scalar coefficient is $i$ times the physical time component. Put $j_0=\gamma\rho_{\mathrm{num}}c$ for the number density times $c$ and $\vec j=\gamma\rho_{\mathrm{num}}\vec v$ for the flux, so that $\tilde J_\Phi=ij_0e_t+\vec j$. **Then $\mathrm{Sc}(\tilde J_\Phi)=ij_0$ and $\langle\tilde\Xi\rangle_{*}=j_0/c$**, the second display of this section.
 
-**So the pair of numbers is one four-vector's invariant length and time component.** The proper density is the invariant length over $c$; the Euclidean size is the time component over $c$; the ratio is the Lorentz factor of the flow that carries it. **The spatial components of the current are not discussed here** and are not implied by any statement above: what is claimed is the pair $(j^{0},\lvert j\rvert)$ against the two numbers, and only through the standard relation $j^{0}=\gamma\rho_{\mathrm{num}} c$ which the corpus's $\tilde V_\Phi$ already states.
+**So the pair of numbers is one four-vector's invariant length and time component.** The proper density is the invariant length over $c$; the Euclidean size is the time component over $c$; the ratio is the Lorentz factor of the flow that carries it. **The spatial components of the current are not discussed here** and are not implied by any statement above: what is claimed is the pair $(j_0,\lvert j\rvert)$ against the two numbers, and only through the standard relation $j_0=\gamma\rho_{\mathrm{num}} c$ which the corpus's $\tilde V_\Phi$ already states.
 
-**Two names, and one letter twice.** A reader who takes $\rho_{\mathrm{num}}=\varrho^{2}$ for the field's size is reading $j^{0}/\gamma$; a reader who takes $n$ for the proper density is reading $j^{0}/c$ unnormalised. **Neither name is wrong and the pair is the standard one; the error is to use one where the other is meant**, and it costs exactly the factor $\cosh\theta_{\mathrm{rpd}}$ — one at rest, and unbounded near the cone, which is precisely the regime where the two are confused.
+**Two names, and one letter twice.** A reader who takes $\rho_{\mathrm{num}}=\varrho^{2}$ for the field's size is reading $j_0/\gamma$; a reader who takes $n$ for the proper density is reading $j_0/c$ unnormalised. **Neither name is wrong and the pair is the standard one; the error is to use one where the other is meant**, and it costs exactly the factor $\cosh\theta_{\mathrm{rpd}}$ — one at rest, and unbounded near the cone, which is precisely the regime where the two are confused.
 
 ## The Scalar Rungs Show Nothing
 
@@ -216,7 +216,7 @@ $$
 \varrho\cosh\frac{\theta_{\mathrm{rpd}}}{2},\ \varrho\sinh\frac{\theta_{\mathrm{rpd}}}{2}\ \text{finite},
 $$
 
-which sends $\rho_{\mathrm{num}}\to0$ and $\langle\tilde\Xi\rangle_{*}\to$ twice the square of the surviving half-amplitude. For the chiral element the two halves are $1$ and $1$, so the Euclidean size is $2$ in the limit and $j^{0}/c$ is $2$.
+which sends $\rho_{\mathrm{num}}\to0$ and $\langle\tilde\Xi\rangle_{*}\to$ twice the square of the surviving half-amplitude. For the chiral element the two halves are $1$ and $1$, so the Euclidean size is $2$ in the limit and $j_0/c$ is $2$.
 
 **So the cone is where the ratio is undefined and the pair is not.** $\cosh\theta_{\mathrm{rpd}}$ diverges and $\varrho^{2}$ vanishes separately while $\langle\tilde\Xi\rangle_{*}$ is continuous: **a limit taken on the ratio is meaningless and a limit taken on the pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is not.** That is the boundary-value statement of [The Massless Regime](the-massless-regime.html), read as a statement about two numbers instead of about the word.
 
@@ -286,7 +286,7 @@ $$
 
 **The identities are algebraic and need no dynamics.** All of them hold for one element at one event. Nothing here is an equation of motion, a conservation law, or a statement about a solution.
 
-**The identification of $\langle\tilde\Xi\rangle_{*}$ with $j^{0}/c$ needs a rung.** It is exact at the spinor rung because the current there is $\rho_{\mathrm{num}}\tilde V_\Phi$; at the vector rung the current is the field strength's and the Euclidean size is not its time component. **The identity between the two numbers is a theorem; the reading of one of them as $j^{0}/c$ is rung-specific and is proved only where it is stated.**
+**The identification of $\langle\tilde\Xi\rangle_{*}$ with $j_0/c$ needs a rung.** It is exact at the spinor rung because the current there is $\rho_{\mathrm{num}}\tilde V_\Phi$; at the vector rung the current is the field strength's and the Euclidean size is not its time component. **The identity between the two numbers is a theorem; the reading of one of them as $j_0/c$ is rung-specific and is proved only where it is stated.**
 
 **The speed bound is the reading's, not the algebra's.** $\tanh\theta\le1$ is a property of the hyperbola $(\langle\cdot\rangle_{*},2A)$. Causality follows once $\vec v/c$ is identified with a tangent of the parametrisation, which is the fluid reading's input. **The algebra cannot be used to argue for causality and this article does not.**
 
@@ -302,7 +302,7 @@ $$
 
 **The identity is Lagrange's in four dimensions.** $\langle\tilde Q\rangle_{*}^{2}=\lvert N(\tilde Q)\rvert^{2}+4A^{2}$ with $A$ the area of the parallelogram of real and imaginary parts. **No new algebra is claimed**; what is supplied is the relation between two names the corpus already uses and the inventory of what each name does at the cone.
 
-**The two numbers are one four-vector's length and time component.** $\lvert N\rvert$ is invariant under a boost and $\langle\cdot\rangle_{*}$ transforms as $u^{0}$, verified at five angles to $1.3\times10^{-15}$; and at the spinor rung $\mathrm{Sc}(\tilde J_\Phi)=ic\langle\tilde\Xi\rangle_{*}$, exact to $4\times10^{-16}$, the $i$ being the corpus's imaginary time coefficient.
+**The two numbers are one four-vector's length and time component.** $\lvert N\rvert$ is invariant under a boost and $\langle\cdot\rangle_{*}$ transforms as $u_0$, verified at five angles to $1.3\times10^{-15}$; and at the spinor rung $\mathrm{Sc}(\tilde J_\Phi)=ic\langle\tilde\Xi\rangle_{*}$, exact to $4\times10^{-16}$, the $i$ being the corpus's imaginary time coefficient.
 
 **The scalar rungs cannot show it.** A central element has collinear real and imaginary parts, $A=0$, the ratio is one, and no boost exists in one complex dimension. **The two scales appear exactly where the element stops being central.**
 
@@ -321,11 +321,11 @@ $$
 | $\phi$, $\vec u_{\phi}$ | the rapidity of an applied boost and its real unit axis |
 | $\chi$ | the angle between that axis and the flow's axis $\vec u_{\mathrm b}$ |
 | $\rho_{\mathrm{num}}=\varrho^{2}$ | the proper density, the invariant length of the current over $c$ |
-| $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | the coordinate density, $j^{0}/c$ |
+| $n=\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ | the coordinate density, $j_0/c$ |
 | $a$, $b$ | the real and imaginary four-vectors of the coefficients |
 | $A$, $A^{2}$ | the area of the parallelogram of $a$ and $b$, with $A^{2}=\sum_{j\lt k}(a_jb_k-a_kb_j)^{2}$ |
 | $\tilde A_\Phi$ | the Proca potential, a different object from $A$ |
-| $j^{0}$, $\vec j$ | the current's time component and flux, with $\tilde J_\Phi=ij^{0}e_t+\vec j$ |
+| $j_0$, $\vec j$ | the current's time component and flux, with $\tilde J_\Phi=ij_0e_t+\vec j$ |
 
 ## Appendix: The Algebra
 
@@ -413,7 +413,7 @@ Adding the $\cos^{2}\chi$ and $\sin^{2}\chi$ terms, the first and third pieces g
 
 **Claim.** $\mathrm{Sc}(\tilde J_\Phi)=ic\,\gamma\rho_{\mathrm{num}}=ic\langle\tilde\Xi\rangle_{*}$.
 
-*Proof.* $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, so $ic\tilde U_{\Psi,\mathrm b}^{-2}=ic\cosh\theta_{\mathrm{rpd}}+c\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, whose scalar part is $ic\cosh\theta_{\mathrm{rpd}}$ and whose vector part is real. Multiplying by the central scalar $\rho_{\mathrm{num}}$ leaves the scalar part $ic\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$. By the polar ratio, $\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}=\langle\tilde\Xi\rangle_{*}$. **The $i$ is the corpus's convention that the time coefficient of a four-vector is imaginary**, as at $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$; the real time component is therefore $j^{0}=\mathrm{Im}\,\mathrm{Sc}(\tilde J_\Phi)=c\langle\tilde\Xi\rangle_{*}$.
+*Proof.* $\tilde U_{\Psi,\mathrm b}^{-2}=\cosh\theta_{\mathrm{rpd}}-i\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, so $ic\tilde U_{\Psi,\mathrm b}^{-2}=ic\cosh\theta_{\mathrm{rpd}}+c\sinh\theta_{\mathrm{rpd}}\vec u_{\mathrm b}$, whose scalar part is $ic\cosh\theta_{\mathrm{rpd}}$ and whose vector part is real. Multiplying by the central scalar $\rho_{\mathrm{num}}$ leaves the scalar part $ic\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}$. By the polar ratio, $\rho_{\mathrm{num}}\cosh\theta_{\mathrm{rpd}}=\langle\tilde\Xi\rangle_{*}$. **The $i$ is the corpus's convention that the time coefficient of a four-vector is imaginary**, as at $\tilde P_\Phi=i\frac{E}{c}e_t+\vec p$; the real time component is therefore $j_0=\mathrm{Im}\,\mathrm{Sc}(\tilde J_\Phi)=c\langle\tilde\Xi\rangle_{*}$.
 
 ### The Numerical Checks
 

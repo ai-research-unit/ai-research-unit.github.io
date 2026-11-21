@@ -88,7 +88,7 @@ $$
 $$
 which are the **bosonic** and **fermionic Matsubara frequencies**. The discrete spectrum replaces the continuous $p_0$ integral of the vacuum theory by a sum:
 $$
-\int\frac{dp^0}{2\pi}\,f(p_0) \;\longrightarrow\; \frac{1}{\beta}\sum_{n\in\mathbb{Z}} f(i\omega_n),
+\int\frac{dp_0}{2\pi}\,f(p_0) \;\longrightarrow\; \frac{1}{\beta}\sum_{n\in\mathbb{Z}} f(i\omega_n),
 $$
 and the corresponding thermal wave biquaternion is the material element $\tilde P_{\Phi,E}=i\omega_n e_t+\vec p$, whose Hermitian square is $\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=\omega_n^2+\vec p^2=k_{\mathrm{eu}}^2$.
 
@@ -123,7 +123,7 @@ The partition function is the Gaussian integral of the thermal theory, and its l
 $$
 Z(\beta) = \mathrm{Tr}\,\exp(-\beta H) = \int_{\text{periodic}}\mathcal{D}\tilde{Ξ}\;\exp(-S_E[\tilde{Ξ}]),
 $$
-the integral taken over field configurations obeying the periodicity appropriate to the grading, on $S^1_\beta\times\mathbb{R}^3$. This is the Euclidean functional integral of the previous articles with the time direction compactified, and everything said there about the module, the central quadratic operator, and the Gaussian determinant applies verbatim; only the mode set changes from $\int dp^0$ to $(1/\beta)\sum_n$.
+the integral taken over field configurations obeying the periodicity appropriate to the grading, on $S^1_\beta\times\mathbb{R}^3$. This is the Euclidean functional integral of the previous articles with the time direction compactified, and everything said there about the module, the central quadratic operator, and the Gaussian determinant applies verbatim; only the mode set changes from $\int dp_0$ to $(1/\beta)\sum_n$.
 
 **One-loop free energy.** For the free biquaternion scalar the Euclidean action is quadratic with operator $\mathcal{M}_E$, and the Gaussian integral gives
 $$
@@ -288,7 +288,7 @@ were checked numerically ($0.4463328$ and $0.3314319$ against $0.4463329$ and $0
 | $\langle\tilde P_{\Phi,E}\rangle_{\natural}=-\omega_n^2+\vec p^2$, $\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}=k_{\mathrm{eu}}^2=\omega_n^2+\vec p^2$ | the interval (indefinite) and the probability form (positive) of the same element |
 | $\mathcal{M}_E=\langle\tilde P_{\Phi,E},\tilde P_{\Phi,E}\rangle_{*}+m^2=k_{\mathrm{eu}}^2+m^2$ | Euclidean mass-shell operator (Hermitian form of the material element) |
 | $D_E=1/(k_{\mathrm{eu}}^2+m^2)$ | Euclidean (thermal) propagator |
-| $(1/\beta)\sum_n$ | Matsubara sum replacing $\int dp^0/2\pi$ |
+| $(1/\beta)\sum_n$ | Matsubara sum replacing $\int dp_0/2\pi$ |
 | $Z=\mathrm{Tr}\,\exp(-\beta H)=\int_{\text{per}}\mathcal{D}\tilde{Ξ}\,\exp(-S_E)$ | Thermal partition function |
 | $\log Z=-\beta F=-\tfrac12\mathrm{Tr}\log\mathcal{M}_E$ | Free energy (one loop) |
 | $n_{\mathrm B}=1/(\exp(\beta E)-1)$, $n_{\mathrm F}=1/(\exp(\beta E)+1)$ | Bose / Fermi occupation numbers |

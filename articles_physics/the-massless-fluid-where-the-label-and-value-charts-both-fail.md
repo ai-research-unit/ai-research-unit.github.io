@@ -257,7 +257,7 @@ $$
 \qquad
 \rho_{\mathrm{num}}=\lvert N(\tilde\Xi)\rvert=0 ,
 \qquad
-j^{0}=c\,\langle\tilde\Xi\rangle_{*}=\tfrac{c}{2}\lvert\varkappa\rvert^{2}\neq0 .
+j_0=c\,\langle\tilde\Xi\rangle_{*}=\tfrac{c}{2}\lvert\varkappa\rvert^{2}\neq0 .
 $$
 
 **A current with no density.** The time component is finite while the proper density vanishes, so the product $\gamma\rho_{\mathrm{num}}c$ is finite with $\gamma$ without a value and $\rho_{\mathrm{num}}$ zero: **the wave carries a current and has no rest frame, which is the same statement twice.** The pair $(\rho_{\mathrm{num}},\langle\tilde\Xi\rangle_{*})$ is continuous at the corner, exactly as the first article proved, and the corner is the case $\rho_{\mathrm{num}}\to0$ at fixed size.
@@ -269,7 +269,7 @@ $$
 | $N(\tilde\Xi(X))$ | $0$ at every event, forced by the kernel |
 | $\langle\tilde\Xi\rangle_{*}$ | $\tfrac12\lvert\varkappa\rvert^{2}$, constant |
 | $\rho_{\mathrm{num}}$ | $0$ |
-| $j^{0}$ | $\tfrac{c}{2}\lvert\varkappa\rvert^{2}$ |
+| $j_0$ | $\tfrac{c}{2}\lvert\varkappa\rvert^{2}$ |
 | $\gamma$ | no value |
 | $\lvert\vec v\rvert$ | no value |
 
@@ -350,7 +350,7 @@ so the entry $2ik\tilde\Pi_{-}$ in the earlier sentence is $\tilde K_\Phi$ itsel
 
 **At that value the two failures are one factorisation.** The null symbol's kernel is $\tilde\Pi\mathbb{B}$, and because $N$ is multiplicative and $N(\tilde\Pi)=0$, every element of the kernel is on the value cone: **the set the label chart keeps is inside the set the value chart refuses.** Verified to $9.2\times10^{-16}$ on two thousand random multiples, and proved in one line.
 
-**The wave carries a current and has no density.** $N(\tilde\Xi)=0$ and $\langle\tilde\Xi\rangle_{*}=\tfrac12\lvert\varkappa\rvert^{2}$ at every event, so $\rho_{\mathrm{num}}=0$ and $j^{0}=\tfrac{c}{2}\lvert\varkappa\rvert^{2}$: the corner is the place where article one's two numbers separate completely while the current stays finite.
+**The wave carries a current and has no density.** $N(\tilde\Xi)=0$ and $\langle\tilde\Xi\rangle_{*}=\tfrac12\lvert\varkappa\rvert^{2}$ at every event, so $\rho_{\mathrm{num}}=0$ and $j_0=\tfrac{c}{2}\lvert\varkappa\rvert^{2}$: the corner is the place where article one's two numbers separate completely while the current stays finite.
 
 **"One wave" is one label, two helicities and a four-real-dimensional family.** Each null label annihilates exactly one idempotent and the mirror label the mirror one, so helicity is locked to momentum by a rank count. **And the wave is the null wave, not the one-sided one**, since that word is already the Dirac chiral pair's.
 
@@ -377,7 +377,7 @@ so the entry $2ik\tilde\Pi_{-}$ in the earlier sentence is $\tilde K_\Phi$ itsel
 | $\gamma=E/(mc^{2})$ | the time-dilation factor; finite at $m>0$, absent at the cone |
 | $j_\mu$ | the current; $\tfrac{c}{2}\lvert\varkappa\rvert^{2}(1,\vec u)$ at the corner |
 | $\rho_{\mathrm{num}}=\lvert N\rvert$ | the proper density, the invariant length over $c$ |
-| $j^{0}=c\langle\tilde\Xi\rangle_{*}$ | the current's time component |
+| $j_0=c\langle\tilde\Xi\rangle_{*}$ | the current's time component |
 
 ## Appendix: The Algebra
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The claim.** The fermion masses and the quark mixing are one object seen twice. Three complex $3\times3$ matrices couple the doublets to the scalar; after the breaking each becomes a mass matrix $M_f=Y^{f}v/\sqrt2$; the masses are its **singular values**, and the mixing is the **misalignment of the left singular bases of $M_u$ and $M_d$**. Nothing else in the sector is physical.
+**The claim.** The fermion masses and the quark mixing are one object seen twice. Three complex $3\times3$ matrices couple the doublets to the scalar; after the breaking each becomes a mass matrix $M_f=Y_{f}v/\sqrt2$; the masses are its **singular values**, and the mixing is the **misalignment of the left singular bases of $M_u$ and $M_d$**. Nothing else in the sector is physical.
 
 $$
 M_u=W_u\,D_u\,V_u^{\dagger} ,
@@ -36,9 +36,9 @@ $$
 
 | Forbidden term | Why it fails | Restoring Yukawa matrix |
 |---|---|---|
-| $m_u\bar Q_Lu_R$ | $Y=-1/6+2/3\neq0$ | $Y^{u}$ with $\tilde\varphi$ |
-| $m_d\bar Q_Ld_R$ | $Y=-1/6-1/3\neq0$ | $Y^{d}$ with $\varphi$ |
-| $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y^{e}$ with $\varphi$ |
+| $m_u\bar Q_Lu_R$ | $Y=-1/6+2/3\neq0$ | $Y_{u}$ with $\tilde\varphi$ |
+| $m_d\bar Q_Ld_R$ | $Y=-1/6-1/3\neq0$ | $Y_{d}$ with $\varphi$ |
+| $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y_{e}$ with $\varphi$ |
 | $m_\nu\bar L_L\nu_R$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\nu}$ with $\tilde\varphi$ |
 
 **The last row differs in kind, and not in its quantum numbers.** All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_R$ carries $0$. What separates the last row is that $\nu_R$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
@@ -50,7 +50,7 @@ $$
 **The term.** Three matrices, one per fermion type, each $3\times3$ and complex:
 
 $$
-\mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y^{d}_{ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y^{u}_{ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y^{e}_{ab}\,e_{R,b}\Bigr)+\text{h.c.}
+\mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}
 $$
 
 with $a,b$ generation labels and $\tilde\varphi=i\sigma_2\varphi^{*}=\binom{\varphi^{0*}}{-\varphi^{+*}}$ of hypercharge $-\tfrac12$.
@@ -65,7 +65,7 @@ with $a,b$ generation labels and $\tilde\varphi=i\sigma_2\varphi^{*}=\binom{\var
 | $\bar Q_L\tilde\varphi\,u_R$ | $-1/6$ | $-1/2$ | $+2/3$ | $0$ |
 | $\bar L_L\varphi\,e_R$ | $+1/2$ | $+1/2$ | $-1$ | $0$ |
 
-**The matrices are general.** No symmetry of the gauge sector constrains $Y^{f}$ beyond $3\times3$ complex. In particular nothing requires $Y^{f}$ to be Hermitian, symmetric, or diagonal, and each of those assumptions would be an addition to the model. The three matrices are $54$ real parameters, and §*The Count of Thirteen* turns that number into thirteen.
+**The matrices are general.** No symmetry of the gauge sector constrains $Y_{f}$ beyond $3\times3$ complex. In particular nothing requires $Y_{f}$ to be Hermitian, symmetric, or diagonal, and each of those assumptions would be an addition to the model. The three matrices are $54$ real parameters, and §*The Count of Thirteen* turns that number into thirteen.
 
 **What the sector costs and what it buys.** It costs $54$ real parameters at the level of the Lagrangian, of which $41$ are removed by the freedom to redefine the flavour basis: thirteen are physical, and they are nine masses, three angles and one phase. It buys those thirteen, and nothing in the gauge sector could buy them instead. Without it the fermions are massless, the mixing is undefined and there is no CP violation in the quark sector at all.
 
@@ -74,18 +74,18 @@ with $a,b$ generation labels and $\tilde\varphi=i\sigma_2\varphi^{*}=\binom{\var
 **The substitution.** With $\langle\varphi\rangle=\frac{1}{\sqrt2}\binom{0}{v}$, the neutral component of $\varphi$ is replaced by $(v+h)/\sqrt2$ and each Yukawa term becomes a mass term plus a coupling to $h$:
 
 $$
-\mathcal{L}_{\mathrm{Yuk}}\supset-\frac{v}{\sqrt2}\sum_{a,b}\bar\psi_{L,a}Y^{f}_{ab}\psi_{R,b}\left(1+\frac{h}{v}\right)+\text{h.c.}
+\mathcal{L}_{\mathrm{Yuk}}\supset-\frac{v}{\sqrt2}\sum_{a,b}\bar\psi_{L,a}Y_{f,ab}\psi_{R,b}\left(1+\frac{h}{v}\right)+\text{h.c.}
 $$
 
 **The mass matrix.** Define
 
 $$
-M_f=\frac{v}{\sqrt2}\,Y^{f} ,
+M_f=\frac{v}{\sqrt2}\,Y_{f} ,
 $$
 
 a general complex $3\times3$ matrix. The mass term is $-\bar\psi_LM_f\psi_R+\text{h.c.}$, and the physical masses are not its diagonal entries: those depend on the flavour basis, which is a choice.
 
-**Why the matrix is not Hermitian, and what that does and does not buy.** Hermiticity of $M_f$ would mean $Y^{f\dagger}=Y^{f}$, a condition the gauge symmetry does not impose. It is worth being exact about what Hermiticity would forbid, because the tempting statement is wrong. A Hermitian $M_f$ is diagonalised by *one* unitary, so the left and right bases of a single sector would coincide and $V_f=W_f$. The mixing, however, is the misalignment between the *up* and *down* sectors: if $M_u=U_uD_uU_u^{\dagger}$ and $M_d=U_dD_dU_d^{\dagger}$ then $V_{\mathrm{CKM}}=U_u^{\dagger}U_d$, which is generic. Two Hermitian matrices need not commute. So the measured mixing is not evidence that the Yukawa matrices are non-Hermitian; it is evidence that the two sectors are not aligned in flavour space. What Hermiticity would remove is the separate right-handed basis, and with it half the parameters — nine real numbers per Hermitian matrix against eighteen per general one — which is why imposing it would be an addition to the model and not a reading of it.
+**Why the matrix is not Hermitian, and what that does and does not buy.** Hermiticity of $M_f$ would mean $Y_{f}^{\dagger}=Y_{f}$, a condition the gauge symmetry does not impose. It is worth being exact about what Hermiticity would forbid, because the tempting statement is wrong. A Hermitian $M_f$ is diagonalised by *one* unitary, so the left and right bases of a single sector would coincide and $V_f=W_f$. The mixing, however, is the misalignment between the *up* and *down* sectors: if $M_u=U_uD_uU_u^{\dagger}$ and $M_d=U_dD_dU_d^{\dagger}$ then $V_{\mathrm{CKM}}=U_u^{\dagger}U_d$, which is generic. Two Hermitian matrices need not commute. So the measured mixing is not evidence that the Yukawa matrices are non-Hermitian; it is evidence that the two sectors are not aligned in flavour space. What Hermiticity would remove is the separate right-handed basis, and with it half the parameters — nine real numbers per Hermitian matrix against eighteen per general one — which is why imposing it would be an addition to the model and not a reading of it.
 
 **One number per entry, one meaning per invariant.** A complex $3\times3$ matrix has nine complex entries, hence eighteen real numbers. Under a change of flavour basis it transforms as $M_f\mapsto U^{\dagger}M_fV$ with $U$ and $V$ unitary, and the only quantities unchanged by all such transformations are the three singular values. Those three are the masses.
 
@@ -289,7 +289,7 @@ The area of the triangle is $\lvert J\rvert/2$, which is the geometric statement
 | leptons | $18$ | $18$ | $3$ | $15$ | $3$ |
 | **total** | $\mathbf{54}$ | $\mathbf{45}$ | $\mathbf{4}$ | $\mathbf{41}$ | $\mathbf{13}$ |
 
-**The trivial parts, named.** For the quarks, the simultaneous phase rotation of $Q_L$, $u_R$ and $d_R$ leaves both matrices unchanged: one parameter, so the orbit is $27-1=26$ and $36-26=10$. For the leptons, $Y^{e}$ alone leaves $U(1)^{3}$ of the $U(3)_L\times U(3)_e$ — the three diagonal phase rotations in the basis where $Y^{e}$ is diagonal, which fix it — so the orbit is $18-3=15$ and $18-15=3$. The asymmetry with the quark row is the whole content of the two rows: with one matrix the residual symmetry of the matrix itself is what is left over, and with two matrices only the common phase survives, because the diagonal-phase freedom that fixes $Y^{u}$ does not fix $Y^{d}$.
+**The trivial parts, named.** For the quarks, the simultaneous phase rotation of $Q_L$, $u_R$ and $d_R$ leaves both matrices unchanged: one parameter, so the orbit is $27-1=26$ and $36-26=10$. For the leptons, $Y_{e}$ alone leaves $U(1)^{3}$ of the $U(3)_L\times U(3)_e$ — the three diagonal phase rotations in the basis where $Y_{e}$ is diagonal, which fix it — so the orbit is $18-3=15$ and $18-15=3$. The asymmetry with the quark row is the whole content of the two rows: with one matrix the residual symmetry of the matrix itself is what is left over, and with two matrices only the common phase survives, because the diagonal-phase freedom that fixes $Y_{u}$ does not fix $Y_{d}$.
 
 **The ten and the three.** The ten are six quark masses, three angles and one phase. The three are the charged-lepton masses. The sum is $10+3=13$, which is the flavour block of article 1's nineteen.
 
@@ -385,7 +385,7 @@ $$
 
 **The Dirac route.** Add $\nu_R$, a singlet of all three groups. Then $Y_{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
-**The Majorana route.** A term $\overline{L_L^{c}}\,\tilde\varphi^{*}\,\lambda\,\tilde\varphi^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
+**The Majorana route.** A term $\overline{L_{L,c}}\,\tilde\varphi^{*}\,\lambda\,\tilde\varphi^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
 
 **The counts.**
 
@@ -427,7 +427,7 @@ that is, the commutant of the algebra's action. So the framework says something 
 
 The Standard Model has no fermion mass term, because a Dirac mass couples fields of different $SU(2)_L$ representation and different hypercharge, and the product is not a singlet. Three complex $3\times3$ Yukawa matrices replace the forbidden terms, each with the compensating scalar of the right hypercharge, the up-type one using the conjugate doublet $\tilde\varphi$.
 
-After the breaking each matrix becomes $M_f=Y^{f}v/\sqrt2$, a general complex matrix. The physical masses are its singular values, from the bi-unitary decomposition $M_f=W_fD_fV_f^{\dagger}$, and they are the only basis-independent content of the matrix: the three coefficients of the characteristic polynomial of $M_f^{\dagger}M_f$ are invariant under $M_f\mapsto U^{\dagger}M_fV$, verified to $3.1\times10^{-15}$ over twenty random transformations. That is also the precise answer to why the nine masses stay free — a $3\times3$ complex matrix has exactly three invariants.
+After the breaking each matrix becomes $M_f=Y_{f}v/\sqrt2$, a general complex matrix. The physical masses are its singular values, from the bi-unitary decomposition $M_f=W_fD_fV_f^{\dagger}$, and they are the only basis-independent content of the matrix: the three coefficients of the characteristic polynomial of $M_f^{\dagger}M_f$ are invariant under $M_f\mapsto U^{\dagger}M_fV$, verified to $3.1\times10^{-15}$ over twenty random transformations. That is also the precise answer to why the nine masses stay free — a $3\times3$ complex matrix has exactly three invariants.
 
 The charged current is the one place where the two bases meet: the $W$ couples $u_L$ to $d_L$ and the coupling is $V_{\mathrm{CKM}}=W_u^{\dagger}W_d$, a product of the two left singular bases. The neutral currents stay diagonal, because the same rotation acts on both sides of $\bar ff$. The mixing is therefore the misalignment of the two left singular bases, and the masses and the mixing are two halves of one decomposition. The four mixing parameters are the nine of a unitary matrix minus the five rephasings, and the parametrisation in three angles and one phase is a choice of how to write them.
 
@@ -443,9 +443,9 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 
 | Symbol | Meaning |
 |---|---|
-| $Y^{u}$, $Y^{d}$, $Y^{e}$ | The three Yukawa matrices, general complex $3\times3$ |
+| $Y_{u}$, $Y_{d}$, $Y_{e}$ | The three Yukawa matrices, general complex $3\times3$ |
 | $\varphi$, $\tilde\varphi$ | The doublet and its conjugate, hypercharges $\pm\tfrac12$ |
-| $M_f$ | $Y^{f}v/\sqrt2$, the mass matrix after breaking |
+| $M_f$ | $Y_{f}v/\sqrt2$, the mass matrix after breaking |
 | $W_f$, $V_f$, $D_f$ | Left and right singular bases and the diagonal singular values |
 | $m_{f_i}$ | The three masses of sector $f$, the singular values of $M_f$ |
 | $H_u$, $H_d$ | $M_fM_f^{\dagger}$, the Hermitian products whose eigenvalues are the squared masses |

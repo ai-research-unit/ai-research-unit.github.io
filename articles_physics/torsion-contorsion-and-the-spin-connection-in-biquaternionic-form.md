@@ -8,7 +8,7 @@ The article has one job. It gives the geometry of a **connection with torsion** 
 
 One warning belongs in the introduction, because a reader who has seen an external construction may expect the opposite. There is a claim in the literature that the torsion of spacetime *is* the commutator of the quaternionic units, and that the tetrad and the contorsion are bilinear composites of one biquaternion-valued field, so that geometry emerges from matter. That construction is recorded and tested separately, in *An External Construction of Space from Quaternionic Spinors*, where the parts that do not reproduce are listed. Nothing in this article depends on it. Here the torsion is an independent tensor field, exactly as in the standard Einstein–Cartan–Sciama–Kibble programme, and the algebra's role is only that its Lie subspace can carry the connection.
 
-**Index convention.** Every display is all-low. In the three-index objects $\Gamma_{\lambda\mu\nu}$, $T_{\lambda\mu\nu}$ and $N_{\mathrm{cont},\lambda\mu\nu}$ the first index is the output, the second is the direction of the derivative and the third is the index of the differentiated object — which is why the tetrad postulate below reads $\partial/\partial x_\mu\exp(a){}_\nu-\Gamma_{\lambda\mu\nu}\exp(a){}_\lambda$, and why the torsion, the antisymmetric part in that pair, is the object of the first section. $\mathrm{Riem}_{\lambda\mu\nu\rho}$ reads the output first, then the index of the differentiated object, then the two derivative directions, and it is antisymmetric in those last two. In the mixed frame-and-world objects $\exp(a){}_\mu$, $e_{a\mu}$, $\omega^{a}{}_{b\mu}$ and its lowered form $\omega_{ab\mu}$, the frame slot comes first. In an identity the same label appears on both sides, so it names a free index and is not summed; a contraction is always written with an explicit $\sum$, and carries the sign vector $\varepsilon$ where the contraction is the metric one: $\varepsilon_t=+1$ and $\varepsilon_\eta=-1$, so that $\varepsilon_\mu A_\mu$ is the component $A_\mu$ in the frame, where $g=\eta$. No label is raised anywhere in this article. Where the literature writes the axial current raised, the display carries the weight instead, $\varepsilon_\rho A_\rho$, and where the frame letter of the spin connection sits above the two world letters, $\omega^{a}{}_{b\mu}$, the letter is a frame label and not an index of a raised kind: its lowered form $\omega_{ab\mu}=\varepsilon_a\omega^{a}{}_{b\mu}$ is the one the displays use. In a general chart the metric is the inverse metric, written out explicitly, as in the Christoffel symbols of the next section.
+**Index convention.** Every display is all-low. In the three-index objects $\Gamma_{\lambda\mu\nu}$, $T_{\lambda\mu\nu}$ and $N_{\mathrm{cont},\lambda\mu\nu}$ the first index is the output, the second is the direction of the derivative and the third is the index of the differentiated object — which is why the tetrad postulate below reads $\partial/\partial x_\mu\exp(a){}_\nu-\Gamma_{\lambda\mu\nu}\exp(a){}_\lambda$, and why the torsion, the antisymmetric part in that pair, is the object of the first section. $\mathrm{Riem}_{\lambda\mu\nu\rho}$ reads the output first, then the index of the differentiated object, then the two derivative directions, and it is antisymmetric in those last two. In the mixed frame-and-world objects $\exp(a){}_\mu$, $e_{a\mu}$, the spin-connection array $\Omega_{ab\mu}$ and its lowered form $\omega_{ab\mu}$, the frame slot comes first. In an identity the same label appears on both sides, so it names a free index and is not summed; a contraction is always written with an explicit $\sum$, and carries the sign vector $\varepsilon$ where the contraction is the metric one: $\varepsilon_t=+1$ and $\varepsilon_\eta=-1$, so that $\varepsilon_\mu A_\mu$ is the component $A_\mu$ in the frame, where $g=\eta$. No label is raised anywhere in this article. Where the literature writes the axial current raised, the display carries the weight instead, $\varepsilon_\rho A_\rho$, and the two frame slots of the spin connection are written low and in order, $\Omega_{ab\mu}$: its lowered form $\omega_{ab\mu}=\varepsilon_a\Omega_{ab\mu}$ is the one the displays use. In a general chart the metric is the inverse metric, written out explicitly, as in the Christoffel symbols of the next section.
 
 **The two conventions of the article.** The geometry is written in tensors on a manifold, with the index convention above. The algebra enters in two places: the Lie subspace of §*The Tetrad Postulate and the Spin Connection*, which carries the connection, and the pairing of §*The Spin Tensor and the Torsion–Spin Relation*, which is built from four actions, the frame basis operators of the four coordinate directions. The frame basis operator of the coordinate $x_\mu$ is the action
 
@@ -100,19 +100,19 @@ $$
 
 which says that the frame is covariantly constant in both connections at once. Solved for the spin connection — the array that results carries its first frame slot raised — with the tetrad $\exp(a){}_\lambda$ in the first slot and the inverse $e_{b\nu}$ in the second, it reads
 $$
-\omega^{a}{}_{b\mu} = \sum_{\lambda,\nu}\exp(a){}_\lambda \Gamma_{\lambda\mu\nu} e_{b\nu} + \sum_\lambda\exp(a){}_\lambda\, \partial/\partial x_\mu\, e_{b\lambda} ,
+\Omega_{ab\mu} = \sum_{\lambda,\nu}\exp(a){}_\lambda \Gamma_{\lambda\mu\nu} e_{b\nu} + \sum_\lambda\exp(a){}_\lambda\, \partial/\partial x_\mu\, e_{b\lambda} ,
 $$
 with $\Gamma_{\lambda\mu\nu}$ the connection of the previous sections, contorsion included.
 
 Splitting the affine connection into its metric and contorsion parts splits the spin connection the same way,
 $$
-\omega^{a}{}_{b\mu} = \omega^{a}{}_{b\mu}(e) + N_{\mathrm{cont}}{}^{a}{}_{b\mu} ,
+\Omega_{ab\mu} = \Omega_{ab\mu}(e) + N_{\mathrm{cont},ab\mu} ,
 \qquad
-N_{\mathrm{cont}}{}^{a}{}_{b\mu} = \sum_{\lambda,\nu}\exp(a){}_\lambda\, N_{\mathrm{cont},\lambda\mu\nu}\, e_{b\nu} ,
+N_{\mathrm{cont},ab\mu} = \sum_{\lambda,\nu}\exp(a){}_\lambda\, N_{\mathrm{cont},\lambda\mu\nu}\, e_{b\nu} ,
 $$
-with $\omega^{a}{}_{b\mu}(e)$ the Levi-Civita spin connection of the tetrad alone and $N_{\mathrm{cont}}{}^{a}{}_{b\mu}$ the contorsion in frame indices.
+with $\Omega_{ab\mu}(e)$ the Levi-Civita spin connection of the tetrad alone and $N_{\mathrm{cont},ab\mu}$ the contorsion in frame indices.
 
-**Metric compatibility is the antisymmetry of the lowered spin connection.** The solved array $\omega^{a}{}_{b\mu}$ is *not* antisymmetric. Even in the metric-compatible case, where the lowered array is antisymmetric, the two are related by $\omega^{a}{}_{b\mu}=-\varepsilon_a\varepsilon_b\,\omega^{b}{}_{a\mu}$, so the raw array is symmetric on the three boost pairs and antisymmetric on the three spatial pairs. The object that lies in the Lorentz algebra, and the one that multiplies the generators in the derivative of the field, is the antisymmetric part of the array with its first frame slot lowered. Write $\omega_{ab\mu}=\varepsilon_a\,\omega^{a}{}_{b\mu}$ for the lowered array, antisymmetric exactly in the metric-compatible case; from here on $\omega_{ab\mu}$ without a raised label means it. Write $E_{a\mu}=\varepsilon_a\exp(a){}_\mu$ for the lowered tetrad and $\mathrm{D}_\mu$ for the affine covariant derivative, which acts on the world label only and carries no frame rotation. Then
+**Metric compatibility is the antisymmetry of the lowered spin connection.** The solved array $\Omega_{ab\mu}$ is *not* antisymmetric. Even in the metric-compatible case, where the lowered array is antisymmetric, the two are related by $\Omega_{ab\mu}=-\varepsilon_a\varepsilon_b\,\Omega_{ba\mu}$, so the raw array is symmetric on the three boost pairs and antisymmetric on the three spatial pairs. The object that lies in the Lorentz algebra, and the one that multiplies the generators in the derivative of the field, is the antisymmetric part of the array with its first frame slot lowered. Write $\omega_{ab\mu}=\varepsilon_a\,\Omega_{ab\mu}$ for the lowered array, antisymmetric exactly in the metric-compatible case; from here on $\omega_{ab\mu}$ means the lowered one. Write $E_{a\mu}=\varepsilon_a\exp(a){}_\mu$ for the lowered tetrad and $\mathrm{D}_\mu$ for the affine covariant derivative, which acts on the world label only and carries no frame rotation. Then
 $$
 \omega_{ab\mu} = -\,\sum_\lambda \mathrm{D}_\mu E_{a\lambda}\; e_{b\lambda},
 $$
@@ -231,10 +231,10 @@ $$
 $$
 one has $\mathrm{Riem}_{\lambda\mu\nu\rho}(\Gamma)=0$ for every tetrad. The reason is structural and exact: in the array $E$ of the tetrad the connection is the pure-gauge form $\Gamma_\mu=E^{-1}\partial E/\partial x_\mu$ of the zero connection, and $\partial/\partial x_\mu(EE^{-1})=0$ gives $\partial E^{-1}/\partial x_\mu=-E^{-1}(\partial E/\partial x_\mu)E^{-1}$, hence $d\Gamma=-\Gamma\wedge\Gamma$ and $\mathrm{Riem}=d\Gamma+\Gamma\wedge\Gamma=0$ identically. The check is exact; no small-curvature approximation is involved.
 
-**The torsion is the contorsion relative to the Levi-Civita connection.** In the **Weitzenböck gauge** the full spin connection is set to zero, $\omega^{a}{}_{b\mu} = 0$, so the tetrad postulate forces the Levi-Civita part and the contorsion to cancel,
+**The torsion is the contorsion relative to the Levi-Civita connection.** In the **Weitzenböck gauge** the full spin connection is set to zero, $\Omega_{ab\mu} = 0$, so the tetrad postulate forces the Levi-Civita part and the contorsion to cancel,
 
 $$
-N_{\mathrm{cont}}{}^{a}{}_{b\mu} = -\,\omega^{a}{}_{b\mu}(e) ,
+N_{\mathrm{cont},ab\mu} = -\,\Omega_{ab\mu}(e) ,
 $$
 
 and the same statement holds with the first frame slot lowered on both sides.
@@ -320,8 +320,8 @@ Two statements bound the article. The commutator of the quaternion units is a co
 | $E_{a\mu}=\varepsilon_a\exp(a){}_\mu$ | tetrad with its frame slot lowered, the object whose affine derivative gives the spin connection |
 | $\mathrm{D}_\mu$ | affine covariant derivative, acting on the world label only |
 | $g_{\mu\nu} = \delta_{ab}\exp(a){}_\mu \exp(b){}_\nu$ | metric from the tetrad; the unit metric $\delta_{\mu\nu}$ for the identity tetrad |
-| $\omega^{a}{}_{b\mu}$ | spin connection one-form as solved, with the first frame slot raised |
-| $\omega_{ab\mu}=\varepsilon_a\omega^{a}{}_{b\mu}$ | the same array with the first frame slot lowered; antisymmetric in the frame pair exactly in the metric-compatible case |
+| $\Omega_{ab\mu}$ | spin connection one-form as solved, both frame slots written low |
+| $\omega_{ab\mu}=\varepsilon_a\Omega_{ab\mu}$ | the same array weighted by $\varepsilon_a$ in the first frame slot; antisymmetric in the frame pair exactly in the metric-compatible case |
 | $\omega_{ab\mu}(e)$ | its Levi-Civita part |
 | $\vec\Gamma_\mu$ | the connection as an element of the Lie subspace of $\mathbb{B}$ |
 | the frame basis operator of $x_\mu$ | the action $Q\mapsto i\,e_\mu Q\,\vec e_{\nu(\mu)}$ with $\nu(t)=x$ and $\nu(\eta)=y$: $Q\mapsto iQ\vec e_x$ at $\mu=t$ and $Q\mapsto i\vec e_\eta Q\vec e_y$ at $\mu=k$; no letter stands for it |

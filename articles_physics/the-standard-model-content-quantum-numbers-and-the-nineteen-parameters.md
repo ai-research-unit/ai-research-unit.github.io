@@ -39,8 +39,8 @@ Together the two asymmetries forbid a bare fermion mass. A term of the form $m\b
 
 | Factor | Group | Real dimension | Coupling | Gauge fields | Acts on |
 |---|---|---|---|---|---|
-| Colour | $SU(3)_c$ | $8$ | $g_s$ | eight gluons $G^a_\mu$, $a=1,\dots,8$ | colour triplets only |
-| Weak isospin | $SU(2)_L$ | $3$ | $g$ | $W^a_\mu$, $a=1,2,3$ | left-handed doublets only |
+| Colour | $SU(3)_c$ | $8$ | $g_s$ | eight gluons $G_{a,\mu}$, $a=1,\dots,8$ | colour triplets only |
+| Weak isospin | $SU(2)_L$ | $3$ | $g$ | $W_{a,\mu}$, $a=1,2,3$ | left-handed doublets only |
 | Hypercharge | $\mathrm{U}(1)_Y$ | $1$ | $g_{\mathrm Y}$ | $B_\mu$ | every field, with charge $Y$ |
 
 The three couplings are written $g_s$, $g$ and $g_{\mathrm Y}$ throughout the corpus. The reference checklist calls them $g_3$, $g_2$ and $g_1$. The symbol $g_1$ is avoided in the series because the GUT-normalised convention gives it the value $\sqrt{5/3}\,g_{\mathrm Y}$.
@@ -149,7 +149,7 @@ The cubic term is the one worth displaying, because it vanishes by cancellation 
 
 | Field | Multiplicity | Representation | Mass after breaking |
 |---|---|---|---|
-| gluons $G^a_\mu$ | $8$ | adjoint of $SU(3)_c$ | $0$, confined |
+| gluons $G_{a,\mu}$ | $8$ | adjoint of $SU(3)_c$ | $0$, confined |
 | $W^\pm_\mu$ | $2$ | off-diagonal of $SU(2)_L$ | $M_W$ |
 | $Z_\mu$ | $1$ | neutral mixture | $M_Z$ |
 | $A_\mu$ (photon) | $1$ | the orthogonal mixture | $0$ |
@@ -260,7 +260,7 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 | $T_3$ | Third weak-isospin eigenvalue, $\pm\tfrac12$ in a doublet, $0$ in a singlet |
 | $Ϙ$ | Electric charge in units of the elementary charge |
 | $ϙ$ | The framework's charge parameter of the gauge principle; the charge glyph of [Physics Units](physics-units-and-common-elements-conventions.html) |
-| $W^a_\mu$, $B_\mu$, $G^a_\mu$ | Weak, hypercharge and colour gauge fields |
+| $W_{a,\mu}$, $B_\mu$, $G_{a,\mu}$ | Weak, hypercharge and colour gauge fields |
 | $W^\pm_\mu$, $Z_\mu$, $A_\mu$ | Charged, neutral massive and electromagnetic fields after mixing |
 | $\theta_W$ | Weinberg angle, $\tan\theta_W=g_{\mathrm Y}/g$ |
 | $v$, $M_W$, $M_Z$, $M_H$ | Electroweak scale and the three boson masses |

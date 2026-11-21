@@ -113,7 +113,7 @@ and the three parameters retain the first two terms only. That truncation is the
 **The custodial relation, at the level of the self-energies.** A sector that respects the custodial symmetry has the same two-point function in its charged direction and in the neutral direction of the same isospin multiplet,
 
 $$
-\Pi_{WW}(q^2)=\Pi_{W^3W^3}(q^2)\qquad\text{for all }q^2 ,
+\Pi_{WW}(q^2)=\Pi_{W_3W_3}(q^2)\qquad\text{for all }q^2 ,
 $$
 
 each side being written in the mass eigenstates. At $q^2=0$ the photon pieces vanish and the relation reads $\Pi_{WW}(0)=c_W^2\Pi_{ZZ}(0)$, which is $M_W^2=M_Z^2c_W^2$. **One relation, evaluated and differentiated, produces the zeros of $T$ and $U$.**
@@ -142,7 +142,7 @@ $$
 
 The verification is direct: $\rho-1$ is the mismatch of the two normalisations, and $T$ is that mismatch divided by $\alpha$ so as to be dimensionless and of order one for a typical heavy sector. **$T$ is the oblique parameter of $\rho$, and $\rho$ is the tree-level value of $T$'s numerator.** For the measured $T=0.05$, $\rho-1=3.6\times10^{-4}$: the custodial relation holds to four parts in ten thousand.
 
-**$S$ is the mixing meter, and the name is half the story.** Written in the neutral self-energies the combination is a difference of slopes, and the subtraction is what removes the piece a pure isospin sector would contribute; what is left is the $W^3$–$B$ mixing. But $S$ is not the $W^3$–$B$ function alone. In the definition it appears with the coefficient $-(c_W^2-s_W^2)/(s_Wc_W)$ against $\Pi'_{Z\gamma}$ and with $-1$ against $\Pi'_{\gamma\gamma}$, so a sector whose $\Pi_{3Y}$ vanishes still contributes through $\Pi'_{ZZ}-\Pi'_{\gamma\gamma}$, which is proportional to $\Pi'_{33}-\Pi'_{YY}$. A **vector-like** singlet or doublet has equal left and right couplings, so those weights cancel and $S=0$; a **chiral** doublet does not, and it keeps $S=N_c/(6\pi)$ even when its two members are exactly degenerate. That number, $0.053$ for a lepton doublet and $0.16$ for a quark one, is the whole reason a fourth chiral generation is excluded, and it is the value at degeneracy, not away from it. What degeneracy removes is $\Pi_{3Y}$ — the trace $\sum_iT^3_iY_i$ vanishes for any doublet with a common hypercharge — and with it the $Z\gamma$ mixing, not $S$.
+**$S$ is the mixing meter, and the name is half the story.** Written in the neutral self-energies the combination is a difference of slopes, and the subtraction is what removes the piece a pure isospin sector would contribute; what is left is the $W_3$–$B$ mixing. But $S$ is not the $W_3$–$B$ function alone. In the definition it appears with the coefficient $-(c_W^2-s_W^2)/(s_Wc_W)$ against $\Pi'_{Z\gamma}$ and with $-1$ against $\Pi'_{\gamma\gamma}$, so a sector whose $\Pi_{3Y}$ vanishes still contributes through $\Pi'_{ZZ}-\Pi'_{\gamma\gamma}$, which is proportional to $\Pi'_{33}-\Pi'_{YY}$. A **vector-like** singlet or doublet has equal left and right couplings, so those weights cancel and $S=0$; a **chiral** doublet does not, and it keeps $S=N_c/(6\pi)$ even when its two members are exactly degenerate. That number, $0.053$ for a lepton doublet and $0.16$ for a quark one, is the whole reason a fourth chiral generation is excluded, and it is the value at degeneracy, not away from it. What degeneracy removes is $\Pi_{3Y}$ — the trace $\sum_iT_{3,i}Y_i$ vanishes for any doublet with a common hypercharge — and with it the $Z\gamma$ mixing, not $S$.
 
 **$U$ and why it is small.** $U$ is the same kind of difference, taken in the derivative. For a heavy sector it is suppressed relative to $S$ by $M_Z^2/M^2$, because the difference of the derivatives brings down a factor of the inverse mass squared. That is why the pairing $S$–$T$ carries nearly all the information and $U$ is quoted last, with the largest relative uncertainty.
 
@@ -293,7 +293,7 @@ so a factor of two in $M_H$ moves $S$ by $0.037$, about half the experimental un
 | Transversality of the self-energy from the Ward identity | the algebra's, via article 7's projector |
 | The projector algebra $P^2=P$, $L^2=L$, $P+L=\delta$ | article 7, recomputed there |
 | The count $8-2-3=3$ | linear algebra; available to any framework |
-| The custodial relation $\Pi_{WW}=\Pi_{W^3W^3}$ and its $q^2=0$ case | article 3's group, article 4's masses |
+| The custodial relation $\Pi_{WW}=\Pi_{W_3W_3}$ and its $q^2=0$ case | article 3's group, article 4's masses |
 | The definitions of $S$, $T$, $U$ | imported, Peskin–Takeuchi |
 | The measured values | imported, PDG |
 | The one-loop Veltman bracket, and the estimate $N_c/(6\pi)$ for a degenerate chiral doublet | imported |
@@ -314,7 +314,7 @@ so a factor of two in $M_H$ moves $S$ by $0.037$, about half the experimental un
 
 Three numbers summarise heavy new physics in the gauge sector, and their number is forced: four self-energy functions with value and slope give eight numbers, two vanish by electromagnetic gauge invariance, three are absorbed by the measured inputs $\alpha$, $G_F$ and $M_Z$, and three survive. The count is $8-2-3=3$ and it is a dimension, not a convention.
 
-$T$ is the $\rho$ parameter written as a deviation, $\alpha T=\rho-1$; with $T=0.05$ the custodial relation holds to $3.6\times10^{-4}$. $S$ is what survives the subtraction in the neutral sector — the $W^3$–$B$ mixing together with the difference $\Pi'_{ZZ}-\Pi'_{\gamma\gamma}$ — and it is largest for a degenerate chiral doublet, at $N_c/(6\pi)$; $U$ is the same kind of difference taken in the derivative, which is why $U$ is the smallest and the least measured. A custodially invariant sector has $T=U=0$ exactly, and the statement is the value and the derivative of one relation, $\Pi_{WW}(q^2)=\Pi_{W^3W^3}(q^2)$, whose $q^2=0$ case is $M_W=M_Zc_W$.
+$T$ is the $\rho$ parameter written as a deviation, $\alpha T=\rho-1$; with $T=0.05$ the custodial relation holds to $3.6\times10^{-4}$. $S$ is what survives the subtraction in the neutral sector — the $W_3$–$B$ mixing together with the difference $\Pi'_{ZZ}-\Pi'_{\gamma\gamma}$ — and it is largest for a degenerate chiral doublet, at $N_c/(6\pi)$; $U$ is the same kind of difference taken in the derivative, which is why $U$ is the smallest and the least measured. A custodially invariant sector has $T=U=0$ exactly, and the statement is the value and the derivative of one relation, $\Pi_{WW}(q^2)=\Pi_{W_3W_3}(q^2)$, whose $q^2=0$ case is $M_W=M_Zc_W$.
 
 The measured values are $S=0.00\pm0.07$, $T=0.05\pm0.06$ and $U=0.02\pm0.06$, with an $S$–$T$ correlation near $+0.9$. The strong correlation is not a detail: it means the two uncertainties cannot be combined in quadrature and that a sector moving along the ellipse is less constrained than either bound suggests.
 
@@ -335,11 +335,11 @@ The framework supplies the transversality of the self-energy through article 7's
 | $s_W$, $c_W$ | $\sin\theta_W$, $\cos\theta_W$, article 5 |
 | $\alpha$ | $1/137.036$ inside $S$, $T$ and $U$ — the definitions' normalisation; $\alpha(M_Z)=1/127.95$ elsewhere in the corpus |
 | $\rho$ | $M_W^2/(M_Z^2c_W^2)$, equal to $1+\alpha T$ at leading order |
-| $\Pi_{33}$, $\Pi_{3Y}$, $\Pi_{YY}$ | The $W^3W^3$, $W^3B$ and $BB$ self-energies, in terms of which $\Pi_{ZZ}$, $\Pi_{Z\gamma}$ and $\Pi_{\gamma\gamma}$ are written |
+| $\Pi_{33}$, $\Pi_{3Y}$, $\Pi_{YY}$ | The $W_3W_3$, $W_3B$ and $BB$ self-energies, in terms of which $\Pi_{ZZ}$, $\Pi_{Z\gamma}$ and $\Pi_{\gamma\gamma}$ are written |
 | $q^2$ | The momentum transfer squared of the self-energy |
 | $M_W$, $M_Z$ | $80.377$ and $91.1876$ GeV |
 | $G_F$ | $1.1664\times10^{-5}$ GeV$^{-2}$ |
-| $S$ | The $W^3$–$B$ mixing parameter |
+| $S$ | The $W_3$–$B$ mixing parameter |
 | $T$ | The custodial-breaking value parameter, $\alpha T=\rho-1$ |
 | $U$ | The custodial-breaking slope parameter |
 | $\delta\rho$ | The shift of $\rho$, equal to $\alpha T$ at leading order |

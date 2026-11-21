@@ -8,11 +8,11 @@ Every element of the group is a boost times a rotation. The same group sits insi
 
 ## The Lorentz Group
 
-**The interval.** Write an event as $x_\mu=(x^0,\mathbf{x})$ with $x^0=ct$, and let
+**The interval.** Write an event as $x_\mu=(x_0,\mathbf{x})$ with $x_0=ct$, and let
 
 $$
 \eta=\operatorname{diag}(1,-1,-1,-1),\qquad
-s^2(x)=x^{\mathsf T}\eta\,x=(x^0)^2-\lvert\mathbf{x}\rvert^2 .
+s^2(x)=x^{\mathsf T}\eta\,x=(x_0)^2-\lvert\mathbf{x}\rvert^2 .
 $$
 
 The form is **indefinite**, and its zero set is the light cone. The sign of $s^2$ sorts events into those a signal can reach from the origin and those it cannot, so this one quadratic form carries the causal structure of flat spacetime.
@@ -83,7 +83,7 @@ $$
 
 and it is **multiplicative**, $N(\tilde Q_1\tilde Q_2)=N(\tilde Q_1)N(\tilde Q_2)$.
 
-On an anti-Hermitian element the norm returns the interval with the sign of $\eta$ reversed, $N(\tilde X)=-(x^0)^2+\lvert\mathbf{x}\rvert^2=-s^2(x)$; only the invariance is used below, and it is the same for both signs.
+On an anti-Hermitian element the norm returns the interval with the sign of $\eta$ reversed, $N(\tilde X)=-(x_0)^2+\lvert\mathbf{x}\rvert^2=-s^2(x)$; only the invariance is used below, and it is the same for both signs.
 
 **The group.** The unit elements are closed under multiplication, the inverse of a unit element is $\tilde U^{\natural}$, which has norm one, and $e_t$ has norm one, so they form a group
 
