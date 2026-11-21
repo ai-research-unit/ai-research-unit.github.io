@@ -1,4 +1,4 @@
-# __The Pati–Salam Model in the Biquaternion Framework: Four Colours, $21$ Dimensions, One Coupling__
+# __The Pati–Salam Model in the Biquaternion Framework: Four Colours, $21$ Generators, One Coupling__
 
 ## Introduction
 
@@ -32,7 +32,7 @@ $$
 \boxed{\;
 G_{PS}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R,
 \qquad
-\dim_{\mathbb R}=15+3+3=21,
+\dim_{\mathbb R}\mathfrak g_{PS}=15+3+3=21,
 \qquad
 \operatorname{rank}=3+1+1=5
 \;}
@@ -368,7 +368,7 @@ where the internal quartet is a **formal copy** of the algebra's coordinate spac
 
 | symbol | meaning |
 |---|---|
-| $G_{PS}$ | $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, dimension $21$, rank $5$ |
+| $G_{PS}$ | $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, $21$ generators, rank $5$; the carrier stays $\mathbb C^4$, four complex dimensions |
 | $T_{a}$ | the fifteen $\mathrm{SU}(4)$ generators, anti-Hermitian and traceless |
 | $\tau_i$ | the three generators of each $\mathrm{SU}(2)$ |
 | $D$ | $\operatorname{diag}(-3,1,1,1)$, the traceless diagonal of the $\mathrm{SU}(4)$; the abelian direction is $\mathbb R\,iD$ |
