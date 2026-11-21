@@ -43,7 +43,7 @@ LEGACY_COPIES = [
      "articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html"),
 ]
 
-# One date for the whole site: the moment the last build started. build2.py
+# One date for the whole site: the moment the last build started. build_diff.py
 # reads it to decide which pages to rebuild. It lives in the source folder,
 # never in the deploy folder.
 STATE_FILE = SRC / "build_state"
@@ -258,7 +258,7 @@ def sync_index():
     hand: editing index.md is undone by the next build. Only the first heading
     differs (see INDEX_TITLE). The write is skipped when the content already
     matches, so an unchanged article leaves index.md's mtime alone and the
-    incremental build in build2.py stays incremental.
+    incremental build in build_diff.py stays incremental.
     """
     if not INDEX_SOURCE.exists():
         print(f"Warning: {INDEX_SOURCE.relative_to(SRC)} not found — index.md kept as it is.")
@@ -277,7 +277,7 @@ def newer_than(path, since):
 
 
 def write_state(moment):
-    """Record when this build started, for build2.py.
+    """Record when this build started, for build_diff.py.
 
     The start, not the end: a source edited while the build runs then carries an
     mtime past the record, so the next incremental build still sees it.

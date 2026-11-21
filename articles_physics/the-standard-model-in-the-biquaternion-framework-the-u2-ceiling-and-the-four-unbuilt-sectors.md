@@ -24,6 +24,10 @@ The discipline this forces on the article is the one the genre requires: **an ar
 
 **Status in the migration.** The ceiling this article states is unchanged, and so is every sector it finds unbuilt. What changes is the status of the whole: the Standard Model is the **low-energy phase** of $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, and the ceiling is a statement about what the algebra's own action can carry, not about what the larger group can. **The tier is T2 — a framing change, and no equation touched.**
 
+**The scope of the verdict, in the criterion's terms.** The finding above is a Layer-A finding: the group whose generators are elements of $\mathbb B$ is $\mathrm{U}(2)$, and none of the Standard Model's four structures is derived there. **That is not the frame's test.** The test asks two things: whether a generator lives in $\operatorname{End}_{\mathbb C}(\mathbb B)$, and which module its group acts on. $G_{PS}$ passes both, acting on a formal copy of the carrier; the published frame article states the test once, §*Where Each Factor Comes From, and How Firmly*. **So "the framework stops before the Standard Model" and "the framework admits $G_{PS}$" are both true**, because the Standard Model is what $G_{PS}$ breaks to and the address belongs to $G_{PS}$, not to the broken group.
+
+**And the one Standard Model structure the criterion does not reach is the one this article calls the hardest.** $\mathrm{SU}(3)$ and hypercharge are admitted — the first by the split, the second by $T_{3R}+\tfrac12(B-L)$ — but $\mathrm{SU}(2)_L$ as a *chiral* group is not, because the criterion is about where the generators live and the chirality is about the module. **The four unbuilt sectors of this article's title do not shrink to one; they shrink to two, and the chiral one is the permanent one.**
+
 ## What the Framework Already Reaches
 
 ### The abelian gauge principle and the central $\mathrm{U}(1)$

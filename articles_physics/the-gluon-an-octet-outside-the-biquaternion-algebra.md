@@ -36,6 +36,8 @@ We use the conventions of the companion articles: the algebra, the invertibles, 
 
 **Status in the migration.** The octet is now **inside the carrier's group and still outside the algebra.** Colour sits in $\mathfrak{su}(4)$ as $\mathbf8_0\subset\mathbf{15}$, which is $8=15-1-6$: the gluons share the adjoint with the $B$-$L$ boson and the six leptoquarks. The algebra's own action still cannot carry it, because $\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)=\mathfrak{su}(2)$ — so the larger group does not remove the obstruction; it turns the octet into the residual of a group rather than an object outside every group. The tier is T3.
 
+**This article's title is a Layer-A sentence, and the frame does not contradict it.** "Outside the algebra" means not an element of $\mathbb B$ and not $\mathbb B$-linear, and that stays true. **The frame's claim is that the octet has an address**: $\mathrm{SU}(3)$ acts on a formal copy of the four-dimensional carrier as $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)$, and each of its eight generators is a sum of two or three Conway words $e_\mu[\,]e_\nu$, none of them a single product. **So the octet is outside the algebra and inside the carrier's group, and both are the same fact read at two layers** — the gluon belongs to a group that the algebra's carrier and split supply and whose generators are endomorphisms the algebra does not contain. **Nothing in this article is retracted, and one sentence must be added: containment was never the test.**
+
 ## The Gluon in Standard Quantum Chromodynamics
 
 ### The Field and Its Action

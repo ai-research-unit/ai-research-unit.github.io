@@ -22,6 +22,8 @@ The four obstacles the article treats are the **colour group** (§"The Colour Gr
 
 **Status in the migration.** Colour is now a residual: $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, so the group this article calls unreachable is the stabiliser of a line the larger group does contain. **The wall is restated, and it is not removed.** Of the three obstructions the article records, only the dimension one moves, because $\dim\mathfrak{su}(3)=8<15=\dim\mathfrak{su}(4)$; the carrier obstruction stands, because $\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)=\mathfrak{su}(2)$ at the larger group exactly as at the smaller. **Every low-energy statement below — confinement, asymptotic freedom, the running — is untouched.** The tier is T3.
 
+**What "unreachable" means, layer by layer.** The three obstructions are Layer-A statements and they remain exactly true: no colour generator is an element of $\mathbb B$, and none can act $\mathbb B$-linearly on a $\mathbb B$-module. **The frame's claim is a different claim**, and it is Layer B: $\mathrm{SU}(3)$ is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)$ acting on a formal copy of the carrier, and its generators are endomorphisms of $\mathbb B$ and not elements of it — each of the eight is a sum of two or three Conway words $e_\mu[\,]e_\nu$ — two on the six off-diagonal, two or three on the Cartan — and none of them is a single product. **So the group has an address and the algebra is not entered.** *Reached* in this article means *contained*, and a reader who keeps that meaning will find the sentence "colour is now a residual" contradictory when it is not.
+
 ## What the Framework Already Reaches
 
 ### The non-abelian gauge construction

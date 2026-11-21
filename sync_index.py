@@ -7,7 +7,7 @@ first heading replaced by the landing-page title (`build.INDEX_TITLE`), so the
 landing page is the introduction and the two can never drift.
 
 Both build scripts call the same function (build.sync_index) at the top of
-main(), so a normal `python3 build.py` or `python3 build2.py` regenerates the
+main(), so a normal `python3 build.py` or `python3 build_diff.py` regenerates the
 page before reading it. This file exists to run the copy on its own:
 
     python3 sync_index.py            copy if the article changed

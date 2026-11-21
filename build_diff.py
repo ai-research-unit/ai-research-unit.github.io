@@ -59,13 +59,13 @@ def main():
     # without this test the deployed pages keep the old markup and stay stale
     # while the build reports success.
     code_changed = (build.newer_than(build.SRC / "build.py", since)
-                    or build.newer_than(build.SRC / "build2.py", since))
+                    or build.newer_than(build.SRC / "build_diff.py", since))
     if article_tpl:
         print("article_template.html changed — every article page is rebuilt.")
     if index_tpl:
         print("index_template.html changed — every root page is rebuilt.")
     if code_changed:
-        print("build.py changed — every root page and article page is rebuilt.")
+        print("build.py or build_diff.py changed — every root page and article page is rebuilt.")
 
     rebuilt = 0
 

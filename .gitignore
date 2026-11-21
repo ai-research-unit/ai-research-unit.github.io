@@ -18,6 +18,7 @@ __pycache__/
 .openhands/
 _reserve/
 articles_internal/
+articles_external/
 REVIEW-PLAN*
 BRAINSTORMING.md
 *.context
