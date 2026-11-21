@@ -97,24 +97,24 @@ $$</p>
 $$</p>
 <p>which couples the two independent chiral halves and conserves the vector (fermion-number) central phase: the phase $\exp(i\theta_{\mathrm{pha}})$ passes through $m_D$ because it is central, and the mass is invariant. In the module language the Dirac mass is a bilinear pairing $S$ with $\bar{S}$, and the fermion number $L-R$ is conserved. Here $\lambda_{m_D}=\frac{\hbar}{m_{D}\,c}$ is the Dirac mass length.</p>
 <p>Here $\theta_{\mathrm{pha}}$ is the phase of the polar form: it is the argument of the central complex scalar, a real angle taken modulo a full turn, and the exponential that carries it is $\exp(i\theta_{\mathrm{pha}})$.</p>
-<p><strong>The Majorana mass is a self-conjugate pairing.</strong> A Majorana mass pairs a field with its own charge conjugate, $\tilde{Ξ}^c=\mathcal{C}\tilde{Ξ}$, which is an antilinear involution on the module with $\mathcal{C}^2=1$; its fixed space has real dimension four. Such a mass term is permitted — the module's real structure commutes with the kinetic operator — but it violates fermion number by two units, because it converts a fermion into an antifermion. In the framework the antilinear object is the real structure, and the companion articles keep it strictly separate from the linear chiral pair; the present article does not conflate them.</p>
+<p><strong>The Majorana mass is a self-conjugate pairing.</strong> A Majorana mass pairs a field with its own charge conjugate, $\tilde{Ξ}_c=\mathcal{C}\tilde{Ξ}$, which is an antilinear involution on the module with $\mathcal{C}^2=1$; its fixed space has real dimension four. Such a mass term is permitted — the module's real structure commutes with the kinetic operator — but it violates fermion number by two units, because it converts a fermion into an antifermion. In the framework the antilinear object is the real structure, and the companion articles keep it strictly separate from the linear chiral pair; the present article does not conflate them.</p>
 <p><strong>Why the seesaw needs both.</strong> The mechanism has three ingredients, and each is a different object.</p>
 <ul>
-<li>A <strong>Dirac mass</strong> $m_D$ connecting the left-handed neutrino $\nu_L$ to a right-handed state $\nu_R^{c}$, which is the linear chiral pair.</li>
-<li>A <strong>Majorana mass</strong> $M_R$ for the right-handed singlet, $\tfrac12M_R\,\nu_R^{c\,T}C^{-1}\nu_R^{c}+\text{h.c.}$, which is the self-conjugate pairing and requires the singlet to be its own conjugate.</li>
+<li>A <strong>Dirac mass</strong> $m_D$ connecting the left-handed neutrino $\nu_L$ to a right-handed state $\nu_{R,c}$, which is the linear chiral pair.</li>
+<li>A <strong>Majorana mass</strong> $M_R$ for the right-handed singlet, $\tfrac12M_R\,\nu_{R,c}^{\mathsf T}C^{-1}\nu_{R,c}+\text{h.c.}$, which is the self-conjugate pairing and requires the singlet to be its own conjugate.</li>
 <li>The <strong>absence of a direct Majorana mass for $\nu_L$</strong> at the renormalisable level, which is the statement that the left-handed neutrino is part of an $SU(2)_L$ doublet and no renormalisable operator gives it a mass. This is standard.</li>
 </ul>
 <p>The framework supplies the first two as different objects and the third as a statement about the module's gauge quantum numbers, and it is precisely the <em>difference</em> of the two masses that produces the suppression.</p>
 <p><strong>The singlet is anomaly-silent.</strong> A right-handed neutrino is a gauge singlet: vanishing colour and weak charge and vanishing hypercharge. As the companion article on anomalies records, it therefore contributes zero to every anomaly cancellation condition, and a Majorana mass for it is forbidden by no consistency requirement. The heavy state that the seesaw needs is thus invisible to the anomaly constraints that fix the rest of the spectrum — the fermion-sector reason the mechanism is available at all.</p>
 <h2 id="the-type-i-seesaw-mass-matrix-and-diagonalisation">The Type-I Seesaw: Mass Matrix and Diagonalisation</h2>
-<p><strong>The matrix.</strong> In the basis $(\nu_L,\ \nu_R^{c})$, the mass terms of one generation are</p>
+<p><strong>The matrix.</strong> In the basis $(\nu_L,\ \nu_{R,c})$, the mass terms of one generation are</p>
 <p>$$
 -\mathcal{L}_{\mathrm{mass}} = \tfrac12
-\begin{pmatrix}\nu_L & \nu_R^{c}\end{pmatrix}
+\begin{pmatrix}\nu_L & \nu_{R,c}\end{pmatrix}
 \begin{pmatrix} 0 & m_D \ m_D & M_R \end{pmatrix}
-\begin{pmatrix}\nu_L \ \nu_R^{c}\end{pmatrix} + \text{h.c.},
+\begin{pmatrix}\nu_L \ \nu_{R,c}\end{pmatrix} + \text{h.c.},
 $$</p>
-<p>where the matrix is <strong>symmetric</strong> (both entries are Majorana-type couplings in the $(\nu_L,\nu_R^{c})$ basis, so the off-diagonal entries are equal) rather than Hermitian, and $m_D$ is the Dirac mass and $M_R$ the heavy Majorana mass. The zero in the upper-left corner is the statement that $\nu_L$ has no direct Majorana mass. This matrix is standard.</p>
+<p>where the matrix is <strong>symmetric</strong> (both entries are Majorana-type couplings in the $(\nu_L,\nu_{R,c})$ basis, so the off-diagonal entries are equal) rather than Hermitian, and $m_D$ is the Dirac mass and $M_R$ the heavy Majorana mass. The zero in the upper-left corner is the statement that $\nu_L$ has no direct Majorana mass. This matrix is standard.</p>
 <p><strong>Exact eigenvalues.</strong> A real symmetric $2\times2$ matrix has eigenvalues</p>
 <p>$$
 \boxed{\;\lambda_\pm = \frac{M_R\pm\sqrt{M_R^2+4m_D^2}}{2}\;},
@@ -167,7 +167,7 @@ $$</p>
 \qquad
 \theta \simeq \frac{m_D}{M_R} \ll 1 .
 $$</p>
-<p>The heavy state is therefore almost purely $\nu_R^{c}$ and the light state almost purely $\nu_L$, with the admixture of order $m_D/M_R\sim10^{-13}$ for the physical scales. This is the technical statement of decoupling: the heavy state is inaccessible, which is why the mechanism predicts nothing directly at laboratory energies, and it is also why a high scale is needed for any cosmological consequence.</p>
+<p>The heavy state is therefore almost purely $\nu_{R,c}$ and the light state almost purely $\nu_L$, with the admixture of order $m_D/M_R\sim10^{-13}$ for the physical scales. This is the technical statement of decoupling: the heavy state is inaccessible, which is why the mechanism predicts nothing directly at laboratory energies, and it is also why a high scale is needed for any cosmological consequence.</p>
 <p><strong>More than one generation.</strong> For $N_g$ generations $m_D$ becomes a $3\times3$ matrix and $M_R$ a symmetric $3\times3$ Majorana matrix; the mass matrix is $6\times6$, and block diagonalisation gives the light neutrino mass matrix</p>
 <p>$$
 \boxed{\;m_\nu \;\simeq\; -\,m_D\,M_R^{-1}\,m_D^{T}\;},
@@ -186,12 +186,12 @@ $$</p>
 <p><strong>Sector placement.</strong> The Dirac mass coefficient is central and lies on the scalar line $\mathbb{B}_{C}$; the light mass generated by the seesaw is likewise a coefficient of the linear chiral pair, hence central. The Majorana pairing is the antilinear object, and its sector placement is the module's reality structure rather than the algebra's sector split; the companion article on the neutrino shows that the naive identification of the Majorana condition with the material sector $\mathbb{B}_{\Phi}$ fails, because the Dirac operator does not preserve $\mathbb{B}_{\Phi}$. This article uses the module reality condition and does not place the Majorana mass in a sector of the algebra.</p>
 <p><strong>What the algebra does not decide.</strong> The algebra distinguishes the two masses and supplies the carrier of each; it does not select the heavy scale, does not forbid or require a heavy singlet, and does not relate $m_D$ to the electroweak scale. The companion article on the condensate makes the analogous point for the dynamical mass: the framework supplies the carrier, and the coefficient is empirical. Here it supplies the distinction, and both coefficients are empirical.</p>
 <h2 id="the-majorana-condition-and-the-counting-of-states">The Majorana Condition and the Counting of States</h2>
-<p><strong>The condition halves the components.</strong> A four-component Dirac spinor carries four complex components, and charge conjugation maps it to a different spinor. The Majorana condition $\tilde{Ξ}^c=\mathcal{C}\tilde{Ξ}$ identifies a spinor with its conjugate, and the fixed space of the antilinear involution $\mathcal{C}$ on $\mathcal{S}_{\mathrm{rep}}$ has real dimension four, i.e. the Majorana spinor carries <strong>two</strong> independent complex components — one Weyl spinor. The counting is the framework's own: the real structure on the module has a real fixed space of half the real dimension, and the companion article on the neutrino establishes the algebra of $\mathcal{C}$ on $\mathcal{S}_{\mathrm{rep}}$.</p>
+<p><strong>The condition halves the components.</strong> A four-component Dirac spinor carries four complex components, and charge conjugation maps it to a different spinor. The Majorana condition $\tilde{Ξ}_c=\mathcal{C}\tilde{Ξ}$ identifies a spinor with its conjugate, and the fixed space of the antilinear involution $\mathcal{C}$ on $\mathcal{S}_{\mathrm{rep}}$ has real dimension four, i.e. the Majorana spinor carries <strong>two</strong> independent complex components — one Weyl spinor. The counting is the framework's own: the real structure on the module has a real fixed space of half the real dimension, and the companion article on the neutrino establishes the algebra of $\mathcal{C}$ on $\mathcal{S}_{\mathrm{rep}}$.</p>
 <p><strong>Two Majorana fields are one Dirac field.</strong> A Dirac field is equivalent to two Majorana fields of equal mass, and the equivalence is the statement that the module splits, through the real structure, into two copies of the fixed space. The type-I seesaw is a precise realisation of this counting. When the self-conjugate mass vanishes, $M_R=0$, the mass matrix is $\begin{pmatrix}0&m_D\ m_D&0\end{pmatrix}$, whose eigenvalues are $\pm m_D$: the light and heavy Majorana states are degenerate and reassemble into one Dirac field of mass $m_D$. A nonzero $M_R$ splits the degeneracy and separates the pair into a light and a heavy Majorana state, which is the seesaw. The reassembly works exactly when the self-conjugate mass vanishes, because the degeneracy is what permits the pair to be combined into a single four-component field.</p>
 <p><strong>Degrees of freedom across the spectrum.</strong> For one generation the seesaw replaces a Dirac neutrino of four components by two Majorana neutrinos of two components each: the count is preserved. The heavy Majorana state is its own antiparticle, which is why it is invisible to the vector current and why its decays can violate lepton number — the fermion-sector facts the companion articles record and the mechanism uses. Nothing here is peculiar to the biquaternion algebra; the algebra's role is to carry the real structure $\mathcal{C}$ whose fixed space does the counting.</p>
 <h2 id="why-the-light-neutrino-cannot-be-massive-at-the-renormalisable-level">Why the Light Neutrino Cannot be Massive at the Renormalisable Level</h2>
 <p><strong>The operator analysis.</strong> A renormalisable mass term for $\nu_L$ would be a dimension-four operator of the form $\nu_L^T C^{-1}\nu_L$, i.e. a Majorana pairing of a field in the left-handed doublet with itself. It transforms as a component of a <strong>triplet</strong> of $SU(2)_L$ with hypercharge $-1$ (in the convention $Y=Ϙ-T_3$), and the Standard Model contains no such field and no triplet with which to form a gauge-invariant product; the operator is therefore forbidden. This is the standard dimension counting that opens the seesaw. The framework states it as the module's gauge quantum numbers: the field $\nu_L$ sits in a doublet with $T_3=+\tfrac12$ and $Y=-\tfrac12$, and the symmetric product $(\nu_L\nu_L)$ carries $T_3=+1$ and $Y=-1$.</p>
-<p><strong>The doublet and the singlet.</strong> The same analysis explains why the heavy state need not be a doublet. The right-handed neutrino is a total gauge singlet; the mass operator $\nu_R^{c\,T}C^{-1}\nu_R^{c}$ transforms trivially, is dimension four, and is therefore allowed. The asymmetry of the two cases — forbidden for $\nu_L$, allowed for $\nu_R$ — is the whole of the seesaw's group theory. The framework's contribution is to place the two statements on the same footing: both are statements about which of the two fields has the quantum numbers under which a symmetric self-pairing is invariant.</p>
+<p><strong>The doublet and the singlet.</strong> The same analysis explains why the heavy state need not be a doublet. The right-handed neutrino is a total gauge singlet; the mass operator $\nu_{R,c}^{\mathsf T}C^{-1}\nu_{R,c}$ transforms trivially, is dimension four, and is therefore allowed. The asymmetry of the two cases — forbidden for $\nu_L$, allowed for $\nu_R$ — is the whole of the seesaw's group theory. The framework's contribution is to place the two statements on the same footing: both are statements about which of the two fields has the quantum numbers under which a symmetric self-pairing is invariant.</p>
 <p><strong>The Higgs route.</strong> The left-handed case can be made gauge invariant by multiplying by two Higgs doublets, which is exactly the dimension-five Weinberg operator of the next section. The operator analysis is therefore a tower: dimension four for the singlet, dimension five for the doublet, and nothing below. The seesaw's scale is the price of the missing triplet, and the price is the operator's inverse power of the heavy scale.</p>
 <h2 id="the-stability-of-the-small-ratio">The Stability of the Small Ratio</h2>
 <p><strong>The singlet mass is unprotected.</strong> A Dirac mass and the Higgs mass are protected by chiral and gauge symmetries respectively, and their smallness requires an explanation. The Majorana mass of a gauge singlet is protected by nothing: no gauge symmetry forbids it, and the only symmetry that would force it to zero is lepton number. Setting $M_R\to0$ increases the symmetry — lepton number becomes exact — and 't Hooft's naturalness criterion therefore does <strong>not</strong> require $M_R$ to be small; a large $M_R$, even a scale far above the electroweak scale, is technically natural. Conversely, the smallness of $m_D$ relative to $M_R$ is protected by the same chiral symmetry that protects the electron mass.</p>
@@ -239,11 +239,11 @@ $$</p>
 <h2 id="integrating-out-the-heavy-state">Integrating Out the Heavy State</h2>
 <p><strong>The tree-level matching.</strong> The light mass can be derived rather than diagonalised. Take the renormalisable Lagrangian of one generation with a singlet $N_R$,</p>
 <p>$$
-\mathcal{L} = y\,\bar{L}\tilde H_\Psi N_R + \text{h.c.} + \frac{M_R}{2}\,\overline{N_R^{c}}N_R + \cdots ,
+\mathcal{L} = y\,\bar{L}\tilde H_\Psi N_R + \text{h.c.} + \frac{M_R}{2}\,\overline{N_{R,c}}N_R + \cdots ,
 $$</p>
-<p>where $y$ is the Yukawa coupling, $\tilde H_\Psi=i\sigma^2H^{*}$ the charge-conjugate doublet, and $L$ the lepton doublet. The field $N_R$ is heavy and has no kinetic term in the low-energy description; its classical equation of motion is</p>
+<p>where $y$ is the Yukawa coupling, $\tilde H_\Psi=i\sigma_2 H^{*}$ the charge-conjugate doublet, and $L$ the lepton doublet. The field $N_R$ is heavy and has no kinetic term in the low-energy description; its classical equation of motion is</p>
 <p>$$
-\overline{N_R^{c}} = -\frac{y}{M_R}\,\bar{L}\tilde H_\Psi ,
+\overline{N_{R,c}} = -\frac{y}{M_R}\,\bar{L}\tilde H_\Psi ,
 $$</p>
 <p>which is algebraic, so the heavy field can be eliminated exactly at tree level. Substituting it back gives a dimension-five operator among the light fields alone,</p>
 <p>$$
@@ -336,7 +336,7 @@ $$</p>
 </li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The seesaw generates a light neutrino mass from the mixing of two masses of different kinds. In biquaternionic form the two are exactly the framework's two objects: the <strong>Dirac mass</strong> is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=\lambda_{m_D}^{-1}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=\lambda_{m_D}^{-1}\tilde{Ξ}_{R}$, which conserves fermion number; the <strong>Majorana mass</strong> is the self-conjugate pairing on the spinor module's antilinear real structure $\mathcal{C}$ with $\mathcal{C}^2=1$, which violates fermion number by two units. The type-I mass matrix in the $(\nu_L,\nu_R^{c})$ basis is the symmetric matrix $\begin{pmatrix}0&m_D\ m_D&M_R\end{pmatrix}$, whose exact eigenvalues are $\lambda_\pm=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2}\,)$; the light one is $\lambda_-\simeq-m_D^2/M_R$ and the heavy one is $\lambda_+\simeq M_R$, with mixing $\theta\simeq m_D/M_R$. The values were recomputed: $m_D=100$ GeV and $M_R=10^{15}$ GeV give $m_\nu=-10^{-11}$ GeV $=0.01$ eV, and at the resolvable scale $M_R=10^6$ GeV the exact eigenvalue reproduces $-m_D^2/M_R$ exactly. For several generations the light matrix is $m_\nu\simeq-m_DM_R^{-1}m_D^{T}$, which is standard and whose diagonal case was verified.</p>
+<p>The seesaw generates a light neutrino mass from the mixing of two masses of different kinds. In biquaternionic form the two are exactly the framework's two objects: the <strong>Dirac mass</strong> is the linear, chirality-off-diagonal pair $\tilde\nabla_\Phi\tilde{Ξ}_{R}=\lambda_{m_D}^{-1}\tilde{Ξ}_{L}$, $(\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L}=\lambda_{m_D}^{-1}\tilde{Ξ}_{R}$, which conserves fermion number; the <strong>Majorana mass</strong> is the self-conjugate pairing on the spinor module's antilinear real structure $\mathcal{C}$ with $\mathcal{C}^2=1$, which violates fermion number by two units. The type-I mass matrix in the $(\nu_L,\nu_{R,c})$ basis is the symmetric matrix $\begin{pmatrix}0&m_D\ m_D&M_R\end{pmatrix}$, whose exact eigenvalues are $\lambda_\pm=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2}\,)$; the light one is $\lambda_-\simeq-m_D^2/M_R$ and the heavy one is $\lambda_+\simeq M_R$, with mixing $\theta\simeq m_D/M_R$. The values were recomputed: $m_D=100$ GeV and $M_R=10^{15}$ GeV give $m_\nu=-10^{-11}$ GeV $=0.01$ eV, and at the resolvable scale $M_R=10^6$ GeV the exact eigenvalue reproduces $-m_D^2/M_R$ exactly. For several generations the light matrix is $m_\nu\simeq-m_DM_R^{-1}m_D^{T}$, which is standard and whose diagonal case was verified.</p>
 <p>The right-handed singlet that the mechanism needs is a gauge singlet and contributes nothing to any anomaly cancellation condition, so the heavy state is unconstrained by the consistency of the spectrum. Below the heavy scale the mechanism is the unique dimension-five Weinberg operator $(LH)(LH)/\Lambda$, which gives $m_\nu=v^2/\Lambda$; with $v=174$ GeV this is $0.03$ eV at $\Lambda=10^{15}$ GeV, the observed order of magnitude. The framework supplies the distinction between the two masses and the carrier of each, and thereby the possibility of the mixing; it does not fix $m_D$, $M_R$, or $\Lambda$, does not select among the type-I, type-II, and type-III variants (whose differences are gauge representations it does not generate, and the type-II agent belongs to the spin-$0$ subcategory), and does not predict the light masses.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -360,7 +360,7 @@ $$</p>
 <td>Dirac module; left-handed Weyl module</td>
 </tr>
 <tr>
-<td>$\nu_L\in S$, $\nu_R^{c}=\mathcal{C}\nu_L$</td>
+<td>$\nu_L\in S$, $\nu_{R,c}=\mathcal{C}\nu_L$</td>
 <td>Left-handed neutrino and its conjugate</td>
 </tr>
 <tr>
@@ -368,7 +368,7 @@ $$</p>
 <td>Module real structure; charge conjugation</td>
 </tr>
 <tr>
-<td>$\tilde{Ξ}^c=\tilde{Ξ}$</td>
+<td>$\tilde{Ξ}_c=\tilde{Ξ}$</td>
 <td>Majorana condition (fixed space, real dimension four)</td>
 </tr>
 <tr>
@@ -381,7 +381,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\begin{pmatrix}0&m_D\ m_D&M_R\end{pmatrix}$</td>
-<td>Type-I mass matrix in $(\nu_L,\nu_R^{c})$</td>
+<td>Type-I mass matrix in $(\nu_L,\nu_{R,c})$</td>
 </tr>
 <tr>
 <td>$\lambda_\pm=\tfrac12(M_R\pm\sqrt{M_R^2+4m_D^2})$</td>

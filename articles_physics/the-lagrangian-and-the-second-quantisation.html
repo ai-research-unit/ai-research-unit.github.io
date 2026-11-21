@@ -97,7 +97,7 @@ G=G_{R}-G_{A},
 \qquad
 \{\phi(x),\phi(y)\}=G(x,y),
 $$</p>
-<p>is the Peierls bracket: the difference of the two Green functions is the classical bracket of the field with itself. For a conjugate pair the same construction gives $\{\phi(x),\pi(y)\}=\partial_{y^{0}}G(x,y)$, and at equal times that is a delta function.</p>
+<p>is the Peierls bracket: the difference of the two Green functions is the classical bracket of the field with itself. For a conjugate pair the same construction gives $\{\phi(x),\pi(y)\}=\partial_{y_0}G(x,y)$, and at equal times that is a delta function.</p>
 <p><strong>The hand check for the scalar.</strong> For $\mathcal{D}=\Box_\Phi-k_m^{2}$ the difference of the Green functions is the Pauli–Jordan function,</p>
 <p>$$
 G(x,y)=\int\frac{\mathrm{d}^{3}k}{(2\pi)^{3}}\;\frac{\sin\bigl(\omega_k\,\Delta r'^{0}/c\bigr)}{\omega_k}\,e^{i\vec k\cdot(\vec r-\vec r')},
@@ -110,9 +110,9 @@ $$</p>
 <h2 id="the-constraints-the-action-imposes-the-dirac-bracket">The Constraints the Action Imposes: The Dirac Bracket</h2>
 <p><strong>Constraints, and the bracket they force.</strong> When the action is first order or has a gauge symmetry, the Legendre transform does not invert and the naive bracket is inconsistent on the constraint surface. Dirac's construction replaces it: solve the constraints, or gauge-fix them, and define</p>
 <p>$$
-\{F,G\}_{D}=\{F,G\}-\{F,\chi_a\}\,C^{ab}\,\{\chi_b,G\},
+\{F,G\}_{D}=\{F,G\}-\{F,\chi_a\}\,(C^{-1})_{ab}\,\{\chi_b,G\},
 $$</p>
-<p>with $\chi_a$ the constraints and $C^{ab}$ the inverse of their bracket matrix. The result is a bracket that is consistent on the reduced space.</p>
+<p>with $\chi_a$ the constraints and $(C^{-1})_{ab}$ the inverse of their bracket matrix. The result is a bracket that is consistent on the reduced space.</p>
 <p><strong>Where the family's constraints are.</strong> Three places. The Proca field's Lorenz condition, which is a constraint on the vector's longitudinal part and is what removes it. The Dirac field's first-order structure, whose conjugate momenta are bilinears and whose bracket is the Dirac bracket of the spinor's components. And every gauge theory's Gauss law, which is the constraint in the Maxwell, the electroweak and the linearised-gravity articles.</p>
 <p><strong>What the bracket does to the count.</strong> It removes the constrained pairs from the phase space, so the count of degrees of freedom becomes the count the field articles state: two for the massless vector, three for the massive one, two for the graviton, one for the scalar. The bracket's job is to make the count a <em>phase-space</em> statement and not just a component count, and that is what a quantisation needs.</p>
 <p><strong>What this family does with this step.</strong> It states the constraints and counts with them; it does not construct the Dirac bracket. So the second step is half-taken: the inventory is complete, the construction is not performed. A reader should read the constraints articles as the prerequisites of this step and not as its execution.</p>
@@ -178,8 +178,8 @@ $$</p>
 <td>Classical bracket (Peierls, or Dirac when constrained)</td>
 </tr>
 <tr>
-<td>$\chi_a,\ C^{ab}$</td>
-<td>Constraints and their bracket matrix (Dirac bracket)</td>
+<td>$\chi_a,\ (C^{-1})_{ab}$</td>
+<td>Constraints and the inverse of their bracket matrix (Dirac bracket)</td>
 </tr>
 <tr>
 <td>$\frac{1}{i\hbar}[\,,\,]$</td>

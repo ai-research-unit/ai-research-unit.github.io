@@ -93,7 +93,7 @@ $$</p>
 <h2 id="conventions">Conventions</h2>
 <p><strong>The conventions are restated here so that every sign below is checkable from this page.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\eta^{2}=-e_t$; the material sector is $\mathbb{B}_\Phi$; the $\mathrm{SU}(2)$ factor is spanned by the anti-Hermitian generators $T_a$, $a=1,2,3$.</p>
 <p><strong>The two traces.</strong> $\mathrm{Tr}$ is the matrix trace on $\mathbb{B}\cong M_2(\mathbb{C})$; $\mathrm{Sc}$ is the coefficient of $e_t$ in the element; and $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is the corpus's informational reduction, which is not used in this article's action and is the subject of the reality section.</p>
-<p><strong>The connection and the curvature.</strong> $A_\mu\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi$, anti-Hermitian, with $A_\mu=A^a_\mu T_a$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+[A_\mu,A_\nu]$, also anti-Hermitian and in $\mathfrak{su}(2)$.</p>
+<p><strong>The connection and the curvature.</strong> $A_\mu\in\mathfrak{su}(2)\subset\mathbb{B}_\Phi$, anti-Hermitian, with $A_\mu=A_{a,\mu} T_a$; $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu+[A_\mu,A_\nu]$, also anti-Hermitian and in $\mathfrak{su}(2)$.</p>
 <p><strong>The normalization.</strong> $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$, so that $T_a=-\tfrac{i}{2}\sigma_a$ in the fundamental representation. With that normalization the coefficient of the action is $\tfrac12$ and the coupling is the one that appears in the covariant derivative.</p>
 <p><strong>The sign convention.</strong> The action enters with $-\tfrac12$, so that the energy is positive for the corpus's sign rule; the opposite sign would give a theory whose energy is unbounded below.</p>
 <h2 id="the-action-in-element-form">The Action in Element Form</h2>
@@ -111,11 +111,11 @@ $$</p>
 <p><strong>Why the commutator term makes the theory interacting.</strong> In the abelian case $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ is linear in the potential and the action is quadratic. Here the commutator makes $F$ quadratic in $A$, so the action contains cubic and quartic terms, and those terms are the gauge field's self-coupling. Nothing was added: the self-coupling is the square of a curvature that is itself nonlinear, and that nonlinearity is the statement that the gauge group is non-abelian.</p>
 <p><strong>The components.</strong> Expanding in generators gives</p>
 <p>$$
-\mathcal{L}=-\frac14\sum_{a,\mu,\nu}F^a_{\mu\nu}F^a_{\mu\nu},
+\mathcal{L}=-\frac14\sum_{a,\mu,\nu}F_{a,\mu\nu}F_{a,\mu\nu},
 \qquad
-F^a_{\mu\nu}=\partial_\mu A^a_\nu-\partial_\nu A^a_\mu+g\sum_{b,c}\varepsilon^{abc}A^b_\mu A^c_\nu ,
+F_{a,\mu\nu}=\partial_\mu A_{a,\nu}-\partial_\nu A_{a,\mu}+g\sum_{b,c}\varepsilon_{abc}A_{b,\mu} A_{c,\nu} ,
 $$</p>
-<p>which is the standard form, with $g$ absorbed into the normalization of $A^a_\mu$. The two forms are the same action; the element form makes the invariance one line and the component form makes the vertices explicit.</p>
+<p>which is the standard form, with $g$ absorbed into the normalization of $A_{a,\mu}$. The two forms are the same action; the element form makes the invariance one line and the component form makes the vertices explicit.</p>
 <p><strong>The pairing. The pairing is the matrix trace, and it is not the informational reduction.</strong> $\mathrm{Tr}(\tilde Q_1\tilde Q_2)$ on $\mathbb{B}\cong M_2(\mathbb{C})$ is a bilinear form invariant under $\tilde Q_1\mapsto\tilde Q\tilde Q_1\tilde Q^{-1}$, $\tilde Q_2\mapsto\tilde Q\tilde Q_2\tilde Q^{-1}$; the corpus's reduction $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is a different functional, and it is not invariant under that pair of transformations.</p>
 <p><strong>Why the difference matters.</strong> If the action used the reduction, its density would change under a gauge transformation and the theory would not be a gauge theory. The action works because of the trace's cyclicity, and the reduction does not have it. The two agree only in special cases — when one of the factors is a scalar — and the field strength is not a scalar.</p>
 <p><strong>The reality of the trace.</strong> For anti-Hermitian $F_{\mu\nu}$, $\mathrm{Tr}(F_{\mu\nu}F_{\mu\nu})$ is real and non-positive, so $-\tfrac12\mathrm{Tr}(FF)$ is real and non-negative. The reality follows from the anti-Hermiticity and not from an extra condition, and the positivity is what makes the energy bounded below.</p>
@@ -130,7 +130,7 @@ $$</p>
 </ul>
 <h3 id="the-two-settings">The Two Settings</h3>
 <p><strong>The element setting.</strong> The action written as $-\tfrac12\mathrm{Tr}(FF)$ with $F$ an element of $\mathfrak{su}(2)\subset\mathbb{B}$. The invariance is one line, and the trace-versus-pairing distinction is visible.</p>
-<p><strong>The component setting.</strong> The action written as $-\tfrac14\sum_aF^a_{\mu\nu}F^a_{\mu\nu}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.</p>
+<p><strong>The component setting.</strong> The action written as $-\tfrac14\sum_aF_{a,\mu\nu}F_{a,\mu\nu}$ with the structure constants explicit. The vertices are visible, and the coupling's place in the commutator is visible.</p>
 <p><strong>Why the two settings are not a choice of notation.</strong> They differ in what they display and in what they hide. The element form makes the gauge invariance obvious and the vertices obscure; the component form does the reverse. A reader who knows only one has a partial view of the same object, and the corpus uses both deliberately.</p>
 <p><strong>What the comparison shows.</strong> The passage between the two is the passage between the trace and the structure constants, and the identity that connects them is $-4\,\mathrm{Sc}(T_aT_b)=\delta_{ab}$ together with $[T_a,T_b]=\sum_c\varepsilon_{abc}T_c$. The two settings are one action read two ways, and the normalization is what makes the readings agree.</p>
 <h2 id="the-variation-the-yangmills-equation-from-the-curvatures-square">The Variation: The Yang–Mills Equation from the Curvature's Square</h2>
@@ -168,11 +168,11 @@ $$</p>
 <h2 id="the-noether-currents-the-colour-current-and-its-own-source">The Noether Currents: The Colour Current and Its Own Source</h2>
 <p><strong>The current.</strong> The action's invariance under the global $\mathrm{SU}(2)$ gives the current</p>
 <p>$$
-j^a_\mu=\sum_{b,c}\varepsilon^{abc}F^b_{\mu\nu}A^c_\nu ,
+j_{a,\mu}=\sum_{b,c}\varepsilon_{abc}F_{b,\mu\nu}A_{c,\nu} ,
 $$</p>
-<p>which is the standard non-abelian current. It is conserved on shell, $D_\mu j^a_\mu=0$, and its conservation is the equation of motion contracted with the structure constants.</p>
+<p>which is the standard non-abelian current. It is conserved on shell, $D_\mu j_{a,\mu}=0$, and its conservation is the equation of motion contracted with the structure constants.</p>
 <p><strong>Why the current carries the field.</strong> The current is bilinear in the gauge field and contains $A$ explicitly, not only $F$. That is the statement that the gauge field carries the charge it couples to, and it is the difference from the abelian current, which contains only $F$.</p>
-<p><strong>Why the conservation is covariant and not ordinary.</strong> $\partial_\mu j^a_\mu=0$ fails; $D_\mu j^a_\mu=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not gauge invariant by itself.</p>
+<p><strong>Why the conservation is covariant and not ordinary.</strong> $\partial_\mu j_{a,\mu}=0$ fails; $D_\mu j_{a,\mu}=0$ holds. The ordinary divergence differs from the covariant one by a term proportional to the connection, and that term is the statement that the current is not gauge invariant by itself.</p>
 <p><strong>Energy–momentum.</strong> Translation invariance gives $T_{\mu\nu}=\mathrm{Tr}(F_{\mu\lambda}F_{\nu\lambda})-\tfrac14g_{\mu\nu}\mathrm{Tr}(F^2)$-type expression, symmetric and traceless at the classical level. The tracelessness is the classical scale invariance, and its quantum violation is the beta function.</p>
 <p><strong>What there is not.</strong> No topological current in the classical action — the $\theta$ term is a separate total derivative — and no central phase.</p>
 <h2 id="what-the-principle-adds-and-what-it-relabels">What the Principle Adds and What It Relabels</h2>
@@ -205,7 +205,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$A_\mu=A^a_\mu T_a$</td>
+<td>$A_\mu=A_{a,\mu} T_a$</td>
 <td>$\mathfrak{su}(2)$-valued connection</td>
 </tr>
 <tr>
@@ -229,7 +229,7 @@ $$</p>
 <td>coupling, in the commutator's normalization</td>
 </tr>
 <tr>
-<td>$j^a_\mu$</td>
+<td>$j_{a,\mu}$</td>
 <td>non-abelian current</td>
 </tr>
 </tbody>
